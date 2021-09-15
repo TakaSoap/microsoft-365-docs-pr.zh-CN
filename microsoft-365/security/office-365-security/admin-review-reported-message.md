@@ -13,12 +13,12 @@ ms.collection:
 description: 了解如何查看报告的消息，并为用户提供反馈。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fb023d68e81c5592078bdd89e4826537790e7d53
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef08b07226d8ce038547b972163d87a557099478
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170017"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357558"
 ---
 # <a name="admin-review-for-reported-messages"></a>管理员审阅报告邮件
 
@@ -45,7 +45,7 @@ ms.locfileid: "59170017"
   - 组织管理或安全管理员在[Microsoft 365 Defender 门户中](permissions-microsoft-365-security-center.md)。
   - 中的组织[Exchange Online。](/Exchange/permissions-exo/permissions-exo#role-groups)
 
-- 你还需要访问 PowerShell Exchange Online。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，您将收到错误消息，指出"在域中指定 *电子邮件地址"。* 有关启用或禁用对 PowerShell Exchange Online访问的信息，请参阅下列主题：
+- 你还需要访问 PowerShell Exchange Online。 如果尝试使用的帐户无法访问 Exchange Online PowerShell，将收到错误消息，指出"在域中指定 *电子邮件地址"。* 有关启用或禁用对 PowerShell Exchange Online访问的信息，请参阅下列主题：
   - [启用或禁用对 Exchange Online PowerShell 的访问](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [客户端访问规则Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
@@ -64,9 +64,9 @@ ms.locfileid: "59170017"
 
 ## <a name="customize-the-messages-used-to-notify-users"></a>自定义用于通知用户的消息
 
-1. 在 Microsoft 365 Defender 门户中，转到"电子邮件&**协作** 策略 \> **"&"** 规则""威胁策略""其他人"部分中的"用户 \>  \> 报告 **的邮件设置**"。
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件&协作策略 \> **"&规则** \> **""威胁策略**""其他人"部分中的"用户报告 \> **的邮件设置**"。
 
-2. 在"用户提交"页面上，如果要指定发件人 显示名称，请选中"管理员审阅结果的电子邮件通知"部分下的"指定要用作发件人的 **Office 365** 电子邮件地址"框，然后输入想要使用的名称。 将在电子邮件中显示的电子邮件地址Outlook所有答复将转到该地址。
+2. 在"用户提交"页面上，如果要指定发件人 显示名称，请选中"管理员审阅结果电子邮件通知"部分下的"指定要用作发件人的 **Office 365** 电子邮件地址"框，然后输入想要使用的名称。 将在电子邮件中显示的电子邮件地址Outlook所有答复将转到该地址。
 
 3. 如果要自定义任何模板，请单击页面底部的"自定义电子邮件通知"。  在打开的标注中，只能自定义以下内容：
 

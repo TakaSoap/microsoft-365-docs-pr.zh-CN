@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '了解如何将专用邮箱转换为多个人员（而不是一个人）可以访问的共享邮箱。 '
-ms.openlocfilehash: caf3935b1ffb36989b2884c6811111531a061098
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f6f4d84b96b0c5a04cb9e8d01ece48cadd45f0d7
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169802"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356311"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 
@@ -39,19 +39,37 @@ ms.locfileid: "59169802"
 
 - 要转换的用户邮箱需要分配有许可证，然后才能将其转换为共享邮箱。 否则，将看不到用于转换邮箱的选项。 如果已删除许可证，请重新添加它，以便转换邮箱。 将邮箱转换为共享邮箱后，可以从用户帐户中删除许可证。
 
-- 共享邮箱可以具有多达 50 GB 的数据，而无需为其分配许可证。 要保留的数据超过此限制，需要为其分配许可证。 你可能需要从共享邮箱中删除一 (，例如带有附件) 缩小共享邮箱，以便你可以删除许可证。
+- 共享邮箱可以具有多达 50 GB 的数据，而无需为其分配许可证。 要保留的数据超过此限制，需要为其分配许可证。 你可能需要删除一大 (电子邮件，例如，从共享邮箱) 包含附件的电子邮件，以便你可以删除许可证。
 
 - 不要删除旧用户帐户。 这是定位共享邮箱所需的。 如果已删除用户帐户，请参阅转换已删除 [用户的邮箱](#convert-the-mailbox-of-a-deleted-user)。
 
 - 将邮箱转换为共享邮箱后，这些规则将保持不变。
 
-## <a name="use-the-exchange-admin-center-to-convert-a-mailbox"></a>使用 Exchange 管理中心转换邮箱
+## <a name="use-the-classic-exchange-admin-center-to-convert-a-mailbox"></a>使用经典Exchange管理中心转换邮箱
  
-1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
+1. 转到经典Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理中心</a>。
 
 2. 选择 **"收件人** \> **""邮箱"。**
 
 3. 选择用户邮箱。 在 **"转换为共享邮箱"下，** 选择"**转换"。**
+
+4. 如果邮箱小于 50 GB，可以从用户中删除许可证，[](../manage/remove-licenses-from-users.md)并停止付费。 不要删除用户帐户。 共享邮箱需要它作为定位标记。 如果要转换离开组织的员工的邮箱，应执行其他步骤以确保他们不再登录。 有关详细信息，请参阅从公司[中删除以前的Microsoft 365。](../add-users/remove-former-employee.md)
+    
+> [!NOTE]
+> 无需在邮箱转换期间重置用户密码。 但是，如果未重置密码，则 **完成** 邮箱转换后，原始用户名和密码将继续工作。
+
+有关有关共享邮箱的一切其他信息，请参阅关于 [共享](about-shared-mailboxes.md) 邮箱和 [创建共享邮箱](create-a-shared-mailbox.md)。
+
+> [!NOTE]
+> 共享邮箱不需要单独的许可证。 但是，如果你想要启用就地存档或将就地保留或诉讼保留置于共享邮箱，则必须向邮箱分配带有 Exchange Online Archiving 的 Exchange Online 计划 1 或 Exchange Online 计划 2 许可证。
+
+## <a name="use-the-new-exchange-admin-center-to-convert-a-mailbox"></a>使用新建Exchange管理中心转换邮箱
+
+1. 转到管理<a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank">Exchange中心</a>。
+
+2. 选择 **"收件人** \> **""邮箱"。**
+
+3. 选择用户邮箱。 在"**邮箱"** 选项卡的"更多 **操作"下**，选择 **"转换为共享邮箱"。**
 
 4. 如果邮箱小于 50 GB，可以从用户中删除许可证，[](../manage/remove-licenses-from-users.md)并停止付费。 不要删除用户帐户。 共享邮箱需要它作为定位标记。 如果要转换离开组织的员工的邮箱，应执行其他步骤以确保他们不再登录。 请参阅从[公司中删除以前的Microsoft 365。](../add-users/remove-former-employee.md)
     
@@ -65,7 +83,7 @@ ms.locfileid: "59169802"
 
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>转换已删除用户的邮箱
 
-假设你已删除用户帐户，现在想要将其旧邮箱转换为共享邮箱。 下面是你需要执行哪些工作：
+删除用户帐户后，请按照以下步骤将其旧邮箱转换为共享邮箱：
 
 1. [还原用户帐户](../add-users/restore-user.md)。
 
@@ -74,14 +92,12 @@ ms.locfileid: "59169802"
 3. 重置用户密码。
     
 4. 等待 20-30 分钟，以重新创建其邮箱。
-    
-5. 现在按照此页面上的说明将其邮箱转换为共享邮箱。
-    
-6. 完成后，可以从用户邮箱中删除许可证。 不要删除用户的旧邮箱。 共享邮箱需要它作为定位标记。
+      
+6. 在邮箱被重新创建后，从用户的邮箱中删除许可证。 不要删除用户的旧邮箱。 共享邮箱需要它作为定位标记。
     
 7. 将成员添加到共享邮箱。
 
-## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>将共享邮箱转换回用户的专用 (邮箱) 邮箱
+## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>将共享邮箱转换回用户的专用 () 邮箱
 
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
    
@@ -89,7 +105,7 @@ ms.locfileid: "59169802"
 
 3. 选择共享邮箱。 在 **"转换为常规邮箱"下，** 选择"**转换"。**
 
-4. 返回到管理中心。 在 **"用户**"下，选择与旧共享邮箱关联的用户帐户。 向帐户分配许可证，然后重置密码。
+4. 返回到管理中心。 在 **"用户**"下，选择与旧共享邮箱关联的用户帐户。 将许可证分配给帐户，然后重置密码。
 
    设置邮箱需要几分钟时间，但之后，打算使用该帐户的人就可以了。 登录后，他们会看到共享邮箱中过去的电子邮件和日历项目。
 
@@ -98,11 +114,11 @@ ms.locfileid: "59169802"
 有关将用户邮箱转换为混合环境中共享邮箱Exchange，请参阅：
 
  - [在内部部署部署环境中创建或修改远程共享邮箱Exchange Cmdlet](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
- - [在混合部署中运行目录同步后，共享邮箱意外Exchange用户邮箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ - [在混合部署中运行目录同步后，共享邮箱Exchange转换为用户邮箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
  
 
 > [!NOTE]
-> 如果您是组织管理或收件人管理角色组的成员，可以使用 Exchange 命令行管理程序将用户邮箱更改为本地共享邮箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`。
+> 如果你是组织管理或收件人管理角色组的成员，可以使用 Exchange 命令行管理程序将用户邮箱更改为本地共享邮箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`。
 
 ## <a name="related-content"></a>相关内容
 

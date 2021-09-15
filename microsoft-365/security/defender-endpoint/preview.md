@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3049d77ef7f934a254da54a63560e33fe2603e3b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18f2aa79632378e477ae79f6f621fbea72350bca
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170476"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356670"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint 预览功能
 
@@ -49,11 +49,11 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 使用公共预览版中的功能时，这些功能：
 
 - 功能可能受限或受限。 例如，此功能可能仅适用于一个平台。
-- 通常先完成功能更改，然后再正式 (GA) 。
+- 通常先完成功能更改，然后才能在 GA (中) 。
 - 完全受 Microsoft 支持。
 - 可能仅在选定的地理区域或云环境中可用。 例如，此功能可能不存在于政府云中。
 - 预览版中的单个功能可能具有更多用法和支持限制。 如果是这样，此信息通常会记录在功能文档中。
-- 预览版本提供标准支持级别，可用于生产环境。 
+- 预览版本提供标准支持级别，可用于生产环境。
 
 ## <a name="turn-on-preview-features"></a>启用预览功能
 
@@ -61,9 +61,9 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 
 启用预览体验设置，以率先体验即将推出的功能。
 
-1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **高级功能**  >  **预览功能"。**
+1. 在导航窗格中，**选择"设置** \>  \> **终结点高级功能** \> **预览功能"。**
 
 2. 切换 **开和关** 之间的 **设置，** 然后选择 **保存首选项**。
 
 > [!TIP]
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)。  
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)。

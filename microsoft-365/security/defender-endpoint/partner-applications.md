@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb3cfba661025787c9cbbbcc97dc524c7a62d355
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b4d8643a1c7e39df1d2f2250e7a61caa0535cbae
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197276"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353738"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的合作伙伴应用程序
 
@@ -31,7 +31,6 @@ ms.locfileid: "59197276"
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
@@ -75,7 +74,7 @@ Microsoft Defender for Endpoint 与现有安全解决方案无缝集成。 集�
 ![一个 Palo Alto Networks 公司徽标，即一个一位 Palo Alto Networks 公司徽标的图像。](images/demisto-logo.png)|[Isto，Palo Alto Networks 公司](https://go.microsoft.com/fwlink/?linkid=2108414)|Isto 与 Defender for Endpoint 集成，使安全团队可以安排和自动化终结点安全监视、扩充和响应
 ![Azure Functions Microsoft Flow &的图像。](images/ms-flow-logo.png)|[Microsoft Flow & Azure 函数](https://go.microsoft.com/fwlink/?linkid=2114300)|使用 Defender for Endpoint 连接器进行Azure 逻辑应用 & Microsoft Flow自动化安全过程
 ![Rapid7 InsightConnect 徽标的图像。](images/rapid7-logo.png)|[Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040)|InsightConnect 与 Defender for Endpoint 集成，以加速、简化和集成时间密集型安全流程
-![ServiceNow 徽标的图像。](images/servicenow-logo.png)|[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621)|将警报加入基于 Microsoft Graph API 集成的 ServiceNow 安全操作解决方案
+![ServiceNow 徽标的图像。](images/servicenow-logo.png)|[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621)|将警报纳入基于 Microsoft Graph API 集成的 ServiceNow 安全操作解决方案
 ![Image of一个为一个"子项目"的徽标。](images/swimlane-logo.png)|[卡里拉尼](https://go.microsoft.com/fwlink/?linkid=2113902)|最大限度地利用与 Endpoint 一起利用"一号球"和"Defender for Endpoint"的事件响应功能
 
 ### <a name="threat-intelligence"></a>威胁智能
@@ -117,7 +116,7 @@ Microsoft Defender for Endpoint 与现有安全解决方案无缝集成。 集�
 
 ## <a name="siem-integration"></a>SIEM 集成
 
-Defender for Endpoint 通过多种方法支持 SIEM 集成。 这包括具有开箱即用连接器的专用 SIEM 系统接口、支持自定义实现的通用警报 API 和启用警报状态管理的操作 API。  有关详细信息，请参阅启用 [SIEM 集成](enable-siem-integration.md)。
+Defender for Endpoint 通过多种方法支持 SIEM 集成。 这包括具有开箱即用连接器的专用 SIEM 系统接口、支持自定义实现的通用警报 API 和启用警报状态管理的操作 API。 有关详细信息，请参阅启用 [SIEM 集成](enable-siem-integration.md)。
 
 ## <a name="ticketing-and-it-service-management"></a>票证和 IT 服务管理
 
@@ -139,7 +138,7 @@ Defender for Endpoint 提供独特的自动调查和修正功能，可大规模�
 
 您可以使用来自提供程序和聚合器的威胁情报来维护和使用 ICS (泄露) 。
 
-通过 Defender for Endpoint，你可以与这些解决方案集成，并关联丰富的遥测以创建警报，对 IoCs 采取行动。  此外，还可使用防护和自动响应功能阻止执行，在有匹配项时采取修正操作。
+通过 Defender for Endpoint，你可以与这些解决方案集成，并关联丰富的遥测以创建警报，对 IoCs 采取行动。 此外，还可使用防护和自动响应功能阻止执行，在有匹配项时采取修正操作。
 
 Defender for Endpoint 当前支持文件和网络指示器的 IOC 匹配和修正。 文件指示器支持阻止。
 

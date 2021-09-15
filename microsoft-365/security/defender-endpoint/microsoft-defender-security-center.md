@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender 安全中心
-description: Microsoft Defender 安全中心是你可以访问 Microsoft Defender for Endpoint 的门户。
+description: Microsoft Defender 安全中心是可以在其中访问 Microsoft Defender for Endpoint 的门户。
 keywords: windows， defender， 安全， 中心， defender， 高级， 威胁， 保护
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f7fb73cde3afa385b0d73b35610415cacd1cad81
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 577c87aff1a5e5c95760ea169859da592d05727c
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196305"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357098"
 ---
 # <a name="microsoft-defender-security-center"></a>Microsoft Defender 安全中心
 
@@ -39,15 +39,20 @@ Microsoft Defender 安全中心是一个门户，你可以在这里访问 Micros
 
 ## <a name="in-this-section"></a>本节内容
 
-主题 | 说明
-:---|:---
-开始行动  |  了解最低要求、验证许可和完整设置、了解预览功能、了解数据存储和隐私以及如何向门户分配用户访问权限。
-[载入设备](onboard-configure.md) | 了解载入客户端、服务器和非 Windows设备。 了解如何运行检测测试、配置代理和 Internet 连接设置以及如何解决潜在的载入问题。
-[了解门户](use.md) | 了解安全操作、安全分数和威胁分析仪表板以及如何导航门户。
-调查和修正威胁 | 调查警报、设备和采取响应操作来修正威胁。
-API 和 SIEM 支持 | 使用受支持的 API 拉取和创建自定义警报，或自动化工作流。 使用受支持的 SIEM 工具从警报中拉取Microsoft Defender 安全中心。
-报告 | 创建和生成Power BI Microsoft Defender for Endpoint 数据生成报告。
-检查服务运行状况和传感器状态 | 验证服务是否正在运行，并检查设备的传感器状态。
-[配置Microsoft Defender 安全中心设置](preferences-setup.md) | 配置常规设置、启用预览体验、通知并启用其他功能。
-[访问 Microsoft Defender for Endpoint 社区中心](community.md) | 访问 Microsoft Defender for Endpoint Community 中心，了解、协作和共享产品体验。
-[服务疑难解答](troubleshoot-mdatp.md) | 本部分解决使用 Microsoft Defender for Endpoint 服务时可能出现的问题。
+<br>
+
+****
+
+|主题|说明|
+|---|---|
+|入门|了解最低要求、验证许可和完整设置、了解预览功能、了解数据存储和隐私以及如何向门户分配用户访问权限。|
+|[载入设备](onboard-configure.md)|了解载入客户端、服务器和非 Windows设备。 了解如何运行检测测试、配置代理和 Internet 连接设置以及如何解决潜在的载入问题。|
+|[了解门户](use.md)|了解安全操作、安全分数和威胁分析仪表板以及如何导航门户。|
+|调查和修正威胁|调查警报、设备和采取响应操作来修正威胁。|
+|API 和 SIEM 支持|使用受支持的 API 拉取和创建自定义警报，或自动化工作流。 使用受支持的 SIEM 工具从警报中拉取Microsoft Defender 安全中心。|
+|报告|创建和生成Power BI Microsoft Defender for Endpoint 数据生成报告。|
+|检查服务运行状况和传感器状态|验证服务是否正在运行，并检查设备的传感器状态。|
+|[配置Microsoft Defender 安全中心设置](preferences-setup.md)|配置常规设置、启用预览体验、通知并启用其他功能。|
+|[访问 Microsoft Defender for Endpoint 社区中心](community.md)|访问 Microsoft Defender for Endpoint Community 中心，了解、协作和共享产品体验。|
+|[服务疑难解答](troubleshoot-mdatp.md)|本部分解决使用 Microsoft Defender for Endpoint 服务时可能出现的问题。|
+|

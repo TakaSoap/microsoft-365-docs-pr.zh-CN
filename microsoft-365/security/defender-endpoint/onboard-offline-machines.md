@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d8e509aee364c54d1231c1a58115f65777022afb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c271aeac44e6590a4273fa9650c101a039225003
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175442"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353649"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>在无法访问 Internet 的情况下载入设备以访问 Microsoft Defender for Endpoint
 
@@ -54,25 +54,24 @@ ms.locfileid: "59175442"
 
 ## <a name="on-premises-devices"></a>本地设备
 
-- 设置 Azure Log Analytics (以前称为 OMS Gateway) 充当代理或中心：
+- 设置 Azure Log Analytics (以前称为 OMS Gateway) 充当代理或集线器：
   - [Azure Log Analytics 代理](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
   - [安装和配置Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace 密钥& ID
 
 - 同一 Azure Log Analytics 网络中的脱机设备
-  -  将 MMA 配置为指向：
-     - 作为代理的 Azure Log Analytics IP
-     - Defender for Endpoint 工作区密钥& ID
+  - 将 MMA 配置为指向：
+    - 作为代理的 Azure Log Analytics IP
+    - Defender for Endpoint 工作区密钥& ID
 
 ## <a name="azure-virtual-machines"></a>Azure 虚拟机
-- 配置和启用 [Azure Log Analytics 工作区](/azure/azure-monitor/platform/gateway)
 
-    - 设置 Azure Log Analytics Gateway (以前称为 OMS 网关) 充当代理或集线器：
-      - [Azure Log Analytics 网关](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-      - [安装和配置Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace 密钥& ID
+- 配置和启用 [Azure Log Analytics 工作区](/azure/azure-monitor/platform/gateway)
+  - 设置 Azure Log Analytics Gateway (以前称为 OMS 网关) 充当代理或集线器：
+    - [Azure Log Analytics 网关](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+    - [安装和配置Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace 密钥& ID
     - 同一网络 OMS 网关中的脱机 Azure VM
       - 将 Azure Log Analytics IP 配置为代理
       - Azure Log Analytics 工作区密钥& ID
-
     - Azure Defender
       - [安全策略 \> 日志分析工作区](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
       - [威胁 \> 检测允许终结点的 Defender 访问我的数据](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)

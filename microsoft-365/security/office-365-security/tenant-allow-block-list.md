@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中管理允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: aca302aedfaa97b9e2661716d7bc7a6e846fa6fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 511dde8921f9406f753c857e2d813ccd80976c40
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196451"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353630"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -38,9 +38,9 @@ ms.locfileid: "59196451"
 >
 > 如果你的组织没有本文中所述的欺骗功能，请参阅使用欺骗智能策略和 EOP 中的欺骗智能见解管理欺骗发件人中的旧版欺骗 [管理体验](walkthrough-spoof-intelligence-insight.md)。
 
-在Microsoft 365没有邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，您可能会对 EOP 筛选裁定有意见不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能通过错误负数 (错误) 。
+在Microsoft 365没有邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，您可能会与 EOP 筛选裁定不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能通过错误负 (错误消息) 。
 
-租户门户中的租户允许/阻止Microsoft 365 Defender提供了一种手动覆盖Microsoft 365裁定的方法。 租户允许/阻止列表在传入邮件的邮件流 (不适用于组织内部邮件) 用户单击时。 可以指定以下类型的替代：
+租户门户中的租户允许/阻止Microsoft 365 Defender提供了一种方法，可手动替代Microsoft 365裁定。 租户允许/阻止列表在传入邮件的邮件流 (不适用于组织内部邮件) 用户单击时。 可以指定以下类型的替代：
 
 - 要阻止的 URL。
 - 要阻止的文件。
@@ -50,7 +50,7 @@ ms.locfileid: "59196451"
 - 要允许的文件。
 - 要允许的发件人电子邮件或域。
 
-本文介绍如何在 Microsoft 365 Defender 门户的租户允许/阻止列表中或在 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织配置条目，这些组织的邮箱在 Exchange Online;独立 EOP PowerShell，适用于Exchange Online邮箱) 。
+本文介绍如何在 Microsoft 365 Defender 门户的租户允许/阻止列表中或在 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织配置条目，Exchange Online;独立 EOP PowerShell，适用于Exchange Online邮箱) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -98,7 +98,7 @@ ms.locfileid: "59196451"
 
 ### <a name="use-the-microsoft-365-defender-portal"></a>使用 Microsoft 365 Defender 门户
 
-In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+在Microsoft 365 Defender门户中，转到"策略"&**规则""威胁** 策略规则"部分 \>  \> "租户 \> **允许/阻止列表"。**
 
 若要添加所有块，请参阅 [在租户允许/阻止列表中添加块](manage-tenant-blocks.md)。
 
@@ -112,7 +112,7 @@ In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **P
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>查看租户允许/阻止列表中的条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. 在Microsoft 365 Defender门户中，转到"策略"&**规则""威胁** 策略规则"部分 \>  \> "租户 \> **允许/阻止列表"。**
 
 2. 选择您想要的选项卡。 可用的列取决于所选的选项卡：
 
@@ -241,7 +241,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
   例如， `t.co` 允许; `.com` 或 `contoso.` 不允许。
 
-- 不隐含子路径。
+- 不允许隐含子路径。
 
   例如， `contoso.com` 不包括 `contoso.com/a` 。
 
@@ -251,7 +251,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
     例如， `*.contoso.com` 允许 ; `*contoso.com` 不允许。
 
-  - 右通配符必须按照正斜杠 (/) 指定路径。
+  - 右通配符必须采用正斜杠 (/) 指定路径。
 
     例如， `contoso.com/*` 允许; `contoso.com*` 或 `contoso.com/ab*` 不允许。
 

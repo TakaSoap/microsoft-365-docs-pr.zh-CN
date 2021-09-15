@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 了解如何删除用户帐户以及如何处理用户的电子邮件和内容OneDrive以及是否保留产品许可证。
-ms.openlocfilehash: 81dc71c6734340146e1dd13bcd59696eed5be202
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0fc74780bfdf7d5d6f0f6e21598dd07e4662d8b3
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169938"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356385"
 ---
 # <a name="delete-a-user-from-your-organization"></a>从组织删除用户
   
@@ -42,7 +42,7 @@ ms.locfileid: "59169938"
 
 ## <a name="global-admin-delete-a-user-stop-paying-for-their-license-and-choose-what-to-do-with-their-email-and-onedrive-content"></a>全局管理员：删除用户、停止支付其许可证费用，然后选择使用电子邮件和内容OneDrive操作
 
-如果你是全局管理员，在删除用户时，还可以向另一个用户授予访问其电子邮件的访问权限，并选择使用其OneDrive内容。
+如果您是全局管理员，当您删除用户时，您还可以向其他用户授予访问其电子邮件的访问权限，并选择使用其电子邮件OneDrive操作。
 
 ### <a name="things-to-consider"></a>注意事项
 
@@ -51,11 +51,11 @@ ms.locfileid: "59169938"
 |Item | 说明 |
 |:-----|:-----|
 |产品许可证  <br/> |你可以从用户中删除许可证，并从订阅中删除该许可证，以停止支付该许可证费用。 如果选择此选项，许可证将自动从订阅中删除。  <br/><br/> **如果通过合作伙伴或** 批量许可购买了许可证，则不能删除该许可证。 如果你为年度计划付费或正在计费周期中，那么在承诺完成之前，你将无法从订阅中删除许可证。  <br/> |
-|OneDrive内容  <br/> |如果用户将文件保存到OneDrive，您可以授予其他用户对这些文件的访问权限。  <br/><br/> 你需要在为文件设置的保留期内移动OneDrive文件。 **默认情况下，保留期为 30 天。** 如果在删除用户后没有在保留期内移动文件，则OneDrive内容将被永久删除。 若要增加保留已删除帐户OneDrive保留的天数，请参阅为已删除OneDrive[设置保留时间](/onedrive/set-retention)。  <br/><br/> **重要说明！** 如果已删除的用户使用个人计算机从 SharePoint 和 OneDrive 下载文件，则你无法擦除他们存储在其计算机中的文件。 他们将继续具有对从服务器同步的任何OneDrive。           |
+|OneDrive内容  <br/> |如果用户将文件保存到OneDrive，您可以授予其他用户对这些文件的访问权限。  <br/><br/> 你需要在为文件设置的保留期内移动OneDrive文件。 **默认情况下，保留期为 30 天。** 如果在删除用户后没有在保留期内移动文件，则已删除用户的 OneDrive 将移动到网站集回收站，其中文件将保留 93 天。 在此期间，用户将无法再访问 OneDrive 中的任何共享内容。 若要还原 OneDrive，需要使用 PowerShell。 有关信息，请参阅[还原已删除的 OneDrive](/onedrive/restore-deleted-onedrive)。<br/><br/> 若要增加保留已删除帐户的 OneDrive 文件天数，请参阅为已删除OneDrive[设置保留时间](/onedrive/set-retention)。  <br/><br/> **重要说明！** 如果已删除的用户使用个人计算机从 SharePoint 和 OneDrive 下载文件，则你无法擦除他们存储在其计算机中的文件。 他们将继续具有对从服务器同步的任何OneDrive。           |
 |电子邮件  <br/> | 向其他用户提供对已删除用户的电子邮件的访问权限会将已删除用户的邮箱转换为共享邮箱。 然后，新邮箱所有者可以访问邮箱并监视新电子邮件。 还可以选择以下选项：  <br/>  <br/>更改显示名称 - 建议更改显示名称，以便轻松识别"活动用户"列表中的 **共享** 邮箱。  <br/>  启用自动答复 - 我们已经为用户撰写了一份很乐于回复的自动答复。 您可以向组织内部人员以及组织外部人员发送不同的自动答复。  <br/> <br/> 清理别名 - 别名是用户的其他电子邮件地址。 某些组织不使用它们，因此如果没有，则无需在这里执行任何其他工作。 如果用户具有别名，我们建议删除这些别名，以便可以重复使用这些电子邮件地址。 否则，在已删除邮箱的保留期过去之前，无法重复使用这些电子邮件地址。 默认情况下，已删除的邮箱可恢复 30 天。 有关详细信息，请参阅删除[或还原用户邮箱Exchange Online。](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox) <br/> |
 |Active Directory  <br/> |如果你的公司使用与 Azure AD 同步的 **Active Directory** ，则需要从 Active Directory 中删除用户帐户。 无法通过 Office 365 删除帐户。 有关说明，请参阅 [删除用户帐户](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))。  <br/> |
 
-### <a name="get-started"></a>开始行动
+### <a name="get-started"></a>入门
 
 由于指导体验将完成删除用户的步骤，下面介绍如何开始操作。
 
@@ -146,7 +146,7 @@ ms.locfileid: "59169938"
   
 - **You get an error message along the lines of "User cannot be deleted.请稍后重试。"** 仔细检查帐户是否设置了电子邮件转发，或者是否将其转换为共享邮箱。 这两者都将导致该错误。 如果帐户具有电子邮件转发或已转换为共享邮箱，请不要删除该帐户。
 
-- **你没有删除用户的相应权限** 。 只有全局Microsoft 365管理员[或用户管理管理员才能](about-admin-roles.md)删除用户。 该管理员通常是学校或企业中的技术支持人员。
+- **你没有删除用户的相应权限** 。 只有全局Microsoft 365管理员或[用户管理管理员才能](about-admin-roles.md)删除用户。 该管理员通常是学校或企业中的技术支持人员。
 
 - **删除用户后，用户姓名继续显示在全局通讯录中** 。 企业使用 Active Directory 时会出现这种情况。 您必须从 Active Directory 中删除用户帐户。 有关说明，请参阅 [删除用户帐户。](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))
 
@@ -156,6 +156,6 @@ ms.locfileid: "59169938"
 
 [Restore a user (](restore-user.md) article) \
 [永久删除邮箱 (](/exchange/permanently-delete-a-mailbox-exchange-2013-help) 文章) \
-[从新文章中Office 365 (](remove-former-employee.md)前) \
+[从本文Office 365 (](remove-former-employee.md)前) \
 [向新员工添加Office 365 (](add-new-employee.md)文章) \
 [删除用户帐户](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))：如果你的企业使用与 Azure AD 同步的 **Active Directory，** 请使用以下说明。 无法通过 Office 365 删除帐户。  (文章) 

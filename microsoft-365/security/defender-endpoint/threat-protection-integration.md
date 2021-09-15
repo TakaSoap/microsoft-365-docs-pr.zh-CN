@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 016ee07b9f57117b313b65ea89773fb84a08e99d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8f842c46f87e51d026f1e1793e3cc73d25b0739c
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162263"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357036"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender for Endpoint 和其他 Microsoft 解决方案
 
@@ -39,39 +39,48 @@ ms.locfileid: "59162263"
 Microsoft Defender for Endpoint 直接与各种 Microsoft 解决方案集成。
 
 ### <a name="azure-defender"></a>Azure Defender
-Microsoft Defender for Endpoint 提供了全面的服务器保护解决方案，包括终结点检测和响应 (EDR) 服务器上Windows功能。
+
+Microsoft Defender for Endpoint 提供了全面的服务器保护解决方案，包括终结点检测和 (EDR) 服务器上Windows功能。
 
 ### <a name="azure-sentinel"></a>Azure Sentinel
+
 Microsoft Defender for Endpoint 连接器允许你将来自 Microsoft Defender for Endpoint 的警报流式传输至 Azure Sentinel。 这将使您能够更全面分析整个组织的安全事件，并生成有效且即时响应的手册。
 
 ### <a name="azure-information-protection"></a>Azure 信息保护
+
 我们最近弃用 Azure 信息保护集成，因为我们的 Endpoint DLP 功能包含针对存储在终结点设备上敏感数据的改进的发现和保护解决方案，以便提高解决方案的可见性和集成。 这是在下面的博客中 [宣布的](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protecting-sensitive-information-on-devices/ba-p/2143555)。 我们建议客户开始使用 Endpoint DLP。
 
 ### <a name="conditional-access"></a>条件访问
-Microsoft Defender for Endpoint 的动态设备风险评分已集成到条件访问评估中，确保只有安全设备有权访问资源。 
+
+Microsoft Defender for Endpoint 的动态设备风险评分已集成到条件访问评估中，确保只有安全设备有权访问资源。
 
 ### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+
 Microsoft Cloud App Security Microsoft Defender for Endpoint 信号，以允许直接查看云应用程序使用情况，包括从所有 Microsoft Defender for Endpoint 受监视设备使用不受支持的云服务 (卷影 IT) 。
 
 ### <a name="microsoft-defender-for-identity"></a>Microsoft Defender for Identity
+
 可疑活动是用户上下文中运行的进程。 Microsoft Defender for Endpoint 和 Microsoft Defender for Identity 之间的集成提供了跨活动和标识进行网络安全调查的灵活性。
 
 ### <a name="microsoft-defender-for-office"></a>Microsoft Defender for Office
-[Defender for Office 365](/office365/securitycompliance/office-365-atp)通过 保险箱 链接、保险箱 附件、高级防钓鱼和欺骗智能功能帮助保护你的组织免受电子邮件或文件中恶意软件的攻击。 Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 之间的集成使安全分析师能够前往上游调查攻击的入口点。 通过威胁情报共享，可以包含和阻止攻击。 
 
->[!NOTE]
-> Defender for Office 365显示最近 30 天内的事件数据。 对于警报，defender for Office 365基于第一次活动时间显示数据。 此后，数据将不再在 Defender for Office 365。
+[Defender for Office 365](/office365/securitycompliance/office-365-atp)通过 保险箱 链接、保险箱 附件、高级防钓鱼和欺骗智能功能帮助保护组织免受电子邮件或文件中恶意软件的攻击。 Microsoft Defender for Office 365 和 Microsoft Defender for Endpoint 之间的集成使安全分析师能够前往上游调查攻击的入口点。 通过威胁情报共享，可以包含和阻止攻击。
+
+> [!NOTE]
+> Defender for Office 365最近 30 天内的事件显示数据。 对于警报，defender for Office 365 数据根据第一次活动时间显示。 此后，数据将不再在 Defender for Office 365。
 
 ### <a name="skype-for-business"></a>Skype for Business
+
 通过Skype for Business集成，分析人员可以通过门户中的简单按钮与可能受到威胁的用户或设备所有者进行通信。
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
-借助 Microsoft 365 Defender、Microsoft Defender for Endpoint 和各种 Microsoft 安全解决方案，形成统一的攻破前和入侵后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。 
- 
+
+借助 Microsoft 365 Defender、Microsoft Defender for Endpoint 和各种 Microsoft 安全解决方案，形成统一的攻破前和入侵后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。
+
 [详细了解Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
-
 ## <a name="related-topics"></a>相关主题
+
 - [配置集成和其他高级功能](advanced-features.md)
 - [Microsoft 365 Defender概述](/microsoft-365/security/defender/microsoft-threat-protection)
 - [打开 Microsoft 365 Defender](/microsoft-365/security/defender/mtp-enable)

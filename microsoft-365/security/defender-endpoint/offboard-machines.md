@@ -1,6 +1,6 @@
 ---
 title: 从 Microsoft Defender for Endpoint 服务载出设备
-description: 从 Microsoft Defender Windows 10服务载入 Windows 设备、服务器、非安全设备
+description: 从 Microsoft Defender Windows 10终结点服务载入 Windows 设备、服务器、非安全设备
 keywords: offboarding， Microsoft Defender for Endpoint offboarding， offboarding
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f6fd4d8a606c0059633157d529ff09c74c9a47e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ca3e2b5ca26a2d57d27d91d84493c927d6fb2021
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170955"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353647"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>从 Microsoft Defender for Endpoint 服务载出设备
 
@@ -42,20 +42,27 @@ ms.locfileid: "59170955"
 
 按照相应说明进行操作，具体取决于你的首选部署方法。
 
->[!NOTE]
-> 在载出 7 天后，设备[](fix-unhealthy-sensors.md#inactive-devices)的状态将切换到非活动状态。 <br> 已载出设备的数据 (时间线、警报、漏洞等) 将保留在门户中，直到配置的保留[期过期。](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) <br>
-> 不带数据 (设备配置文件) 将在设备 [列表中](machines-view-overview.md) 保留不超过 180 天。
-> 此外，过去 30 天内未处于活动状态的设备不会在反映组织的 危险和漏洞管理 曝光分数和 Microsoft 设备安全分数的数据中考虑。 [](tvm-exposure-score.md) <br>
-> 若要仅查看活动设备，可以按运行状况[、](machines-view-overview.md#health-state)[设备](machine-tags.md)标记或计算机[组进行筛选](machine-groups.md)。 
+> [!NOTE]
+> 在载出 7 天后，设备[](fix-unhealthy-sensors.md#inactive-devices)的状态将切换到非活动状态。
+>
+> 已载出设备的数据 (时间线、警报、漏洞等) 将保留在门户中，直到配置的保留[期过期。](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy)
+>
+> 不带数据 (的设备配置文件) 将在设备 [列表中](machines-view-overview.md) 保留不超过 180 天。
+>
+> 此外，过去 30 天内未处于活动状态的设备不会在反映组织的 危险和漏洞管理 曝光分数和 Microsoft 设备安全分数的数据中考虑。 [](tvm-exposure-score.md)
+>
+> 若要仅查看活动设备，可以按运行状况 [状态](machines-view-overview.md#health-state)、 [设备标记](machine-tags.md) 或计算机 [组进行筛选](machine-groups.md)。
 
 ## <a name="offboard-windows-10-devices"></a>载出Windows 10设备
+
 - [使用本地脚本的载出设备](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 - [使用组策略的载出设备](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [使用移动设备管理工具的载出设备](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
 
 ## <a name="offboard-servers"></a>载出服务器
+
 - [载出服务器](configure-server-endpoints.md#offboard-windows-servers)
 
 ## <a name="offboard-non-windows-devices"></a>载出非Windows设备
-- [载出非Windows设备](configure-endpoints-non-windows.md#offboard-non-windows-devices)
 
+- [载出非Windows设备](configure-endpoints-non-windows.md#offboard-non-windows-devices)

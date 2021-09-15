@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何将电子邮件、联系人和日历从 Google Workspace 迁移到 Microsoft 365 for business。
-ms.openlocfilehash: cde27ce3ab94b003d9950f1b4bc2af270dea906e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 58037d033c35bad97d5b18dc408e5450340d0c25
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195856"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357190"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>从 Google Workspace 迁移业务电子邮件和日历
 
@@ -43,14 +43,14 @@ ms.locfileid: "59195856"
 
 1. 使用 Chrome 浏览器，登录到 Google Workspace 管理[](https://admin.google.com)控制台，admin.google.com。 
 1. In a new tab or window， navigate to the [Service Accounts](https://console.developers.google.com/iam-admin/serviceaccounts) page. 
-1. 选择 **"创建项目"，** 将项目命名，然后选择"创建 **"。** 
+1. 选择 **"创建项目**"，为项目命名，然后选择"创建 **"。** 
 1. 选择 **"创建服务帐户**"，输入名称，选择 **"创建"，** 然后选择"完成 **"。** 
 1. 打开" **操作"** 菜单， **选择"编辑"，** 然后记下唯一 ID。 此过程稍后将需要此 ID。 
 1. 打开" **显示域范围的委派"** 部分。 
 1. 选择 **"启用 G Suite 域范围委派"，** 输入许可屏幕的产品名称，然后选择"保存 **"。** 
 
     > [!NOTE]
-> 迁移过程不会使用产品名称，但需要将其保存在对话框中。     
+    > 迁移过程不会使用产品名称，但需要将其保存在对话框中。     
 
 1. 再次打开 **"操作**"菜单，然后选择"**创建密钥"。** 
 1. 选择 **"JSON"，** 然后选择"**创建"。** 
@@ -64,7 +64,7 @@ ms.locfileid: "59195856"
 1. 导航到 [API 页面](https://console.developers.google.com/apis/library)。 
 1. 在搜索栏中，输入 **Gmail API**。
 1. 选择它， **然后选择启用**。
-1. 对 Google 日历 API 和联系人 API 重复此过程。 
+1. 对 Google 日历 API、人员 API 和联系人 API 重复此过程。 
 
 ### <a name="grant-access-to-the-service-account"></a>授予对服务帐户的访问权限
 
@@ -120,7 +120,7 @@ ms.locfileid: "59195856"
 完成后，即可进行迁移。 
 
 1. 在"管理中心"的 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>Microsoft 365 管理中心，向下滚动到"管理 **中心****"，然后选择"Exchange"。** 
-1. 在 **"收件人"** 下，选择 **"迁移**"，选择"**新建**"，Exchange Online"迁移"，选择 **"G Suite 迁移****"，** 然后选择"下一 **步"。** 
+1. 在 **"收件人"** 下，选择 **"迁移**"，选择"**新建**"，Exchange Online"**迁移**"，选择 **"G Suite 迁移**"，然后选择"下一 **步"。** 
 1. 创建包含要迁移的邮箱列表的 CSV 文件。 确保文件遵循以下格式： 
 
     ```CSV
@@ -133,7 +133,7 @@ ms.locfileid: "59195856"
 
 1. 选择 **"选择文件**"，导航到 CSV 文件，选择它，选择"**打开**"，然后选择"下一 **步"。** 
 1. 验证要用于测试的管理员电子邮件地址。 
-1. 选择 **"选择文件**"，导航到之前创建的 JSON 文件 (通常位于计算机上"下载"文件夹中) ，选择"打开"，然后选择"下一 **步"。**  
+1. 选择 **"选择文件**"，导航到之前创建的 JSON 文件 (通常位于计算机上下载文件夹中) ，选择它，选择"**打开**"，然后选择"下一 **步"。** 
 1. 在"新建迁移批处理 **名称"字段中输入名称**。
 1. 在"目标传递域"字段中输入创建的 **子域，** 选择"下一步 **"，然后选择**"新建 **"。** 
 1. 保存信息后，选择"确定 **"。** 

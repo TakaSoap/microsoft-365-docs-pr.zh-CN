@@ -7,18 +7,18 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 08/30/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: 3af483db6b2cc9801a56d96147a0a4aed90e33ce
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f02873148fbd6415c987aad8e5161cff34c2004b
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196336"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355821"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>开始使用 Microsoft Defender for Endpoint Plan 1 (preview) 
 
@@ -34,14 +34,14 @@ ms.locfileid: "59196336"
 
 ## <a name="the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户
 
-Microsoft 365 Defender门户 () 查看警报、管理设备和 [https://security.microsoft.com](https://security.microsoft.com) 查看报告。 当你登录到 Microsoft 365 Defender门户时，你将从主页开始，如下图所示：
+Microsoft 365 Defender门户 () ，你可以在这里查看警报、管理设备和 [https://security.microsoft.com](https://security.microsoft.com) 查看报告。 当你登录到 Microsoft 365 Defender门户时，你将从主页开始，如下图所示：
 
 :::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="Microsoft 365 Defender 门户":::
 
 主页为安全团队提供了警报、设备状态和检测到的威胁的快照聚合视图。 安全中心已设置，以便安全运营团队可以快速轻松地找到他们正在寻找的信息。
 
 > [!NOTE]
-> 本文中显示的示例可能不同于在应用程序门户中Microsoft 365 Defender的内容。 在门户中看到的内容取决于许可证和权限。 此外，安全团队可以通过添加、删除和重新设置卡片来自定义组织的门户。
+> 本文中显示的示例可能与你在应用程序门户中Microsoft 365 Defender不同。 在门户中看到的内容取决于许可证和权限。 此外，安全团队可以通过添加、删除和重新设置卡片来自定义组织的门户。
 
 ### <a name="cards-highlight-key-information-and-include-recommendations"></a>卡片突出显示关键信息并包括建议
 
@@ -49,23 +49,23 @@ Microsoft 365 Defender门户 () 查看警报、管理设备和 [https://security
 
 :::image type="content" source="../../media/mde-p1/active-incidents-card.png" alt-text="活动事件卡片":::
 
-卡片提供了一览信息，以及一个链接或按钮，您可以选择该链接或按钮查看更多详细信息。 引用我们的示例"活动事件"卡片，可以选择"查看 **所有** 事件"以导航到事件列表。
+卡片提供了一览信息，以及一个链接或按钮，您可以选择该链接或按钮查看更多详细信息。 引用我们的示例"活动事件"卡片，我们可以选择"查看 **所有** 事件"以导航到事件列表。
 
 :::image type="content" source="../../media/mde-p1/incidents.png" alt-text="事件列表":::
 
 ### <a name="navigation-bar-makes-it-easy-to-find-alerts-the-action-center-and-more"></a>导航栏便于查找警报、操作中心等
 
-利用屏幕左侧的导航栏，您可以在事件、警报、操作中心、报告和设置之间轻松移动。 下表介绍了导航栏。
+利用屏幕左侧的导航栏，您可以在事件、警报、操作中心、报告和设置之间轻松移动。 下表介绍了导航栏。<br/><br/>
 
 | 导航栏项 | 说明 |
 |:---|:---|
 | **主页** | 导航到 Microsoft 365 Defender[主页](../defender/microsoft-365-security-center-mde.md)。 |
 | **事件&警报** | 展开以显示 **事件** 和 **警报**。 |
 | **事件&警报**  > **事件** | 导航到 **"事件"** 列表。 当触发警报和/或检测到威胁时，将创建事件。 默认情况下，" **事件** "列表显示最近 30 天的数据，首先列出最近事件。 <br/><br/> 若要了解更多信息，请参阅 [事件](view-incidents-queue.md)。 |
-| **事件&警报**  > **警报** | 导航到警报 **列表** (也称为警报 **队列**) 。 当检测到可疑或恶意文件、进程或行为时，将触发警报。 默认情况下，警报 **列表** 显示最近 30 天的数据，首先列出最新警报。 <br/><br/> 若要了解更多信息，请参阅 [警报](alerts-queue.md)。 |
+| **事件&警报**  > **警报** | 导航到 **警报列表** (也称为警报 **队列**) 。 当检测到可疑或恶意文件、进程或行为时，将触发警报。 默认情况下，警报 **列表** 显示最近 30 天的数据，首先列出最新警报。 <br/><br/> 若要了解更多信息，请参阅 [警报](alerts-queue.md)。 |
 | **操作中心** | 导航到操作中心，该中心跟踪修正和手动响应操作。 操作中心将跟踪类似以下的活动： <br/>- Microsoft Defender 防病毒遇到恶意文件，然后阻止/删除该文件。 <br/>- 安全团队隔离设备。<br/>- Defender for Endpoint 检测并隔离文件。 <br/><br/> 若要了解更多信息，请参阅 [操作中心](auto-investigation-action-center.md)。 |
 | **安全分数** | 显示组织安全状况的表示形式以及改进措施和指标列表。 <br/><br/> 若要了解更多信息，请参阅 [Microsoft 安全分数](../defender/microsoft-secure-score.md)。 |
-| **Learning中心** | 导航到一个学习路径列表，你可以访问该列表来了解有关Microsoft 365功能。  |
+| **Learning中心** | 导航到可以访问的学习路径列表，以了解有关Microsoft 365功能。  |
 | **终结点**  > **搜索** | 导航到可以按设备名称搜索特定设备的页面。 在结果列表中，您可以一目了然地查看详细信息，如风险级别和运行状况。 |
 |  **终结点**  > **设备清单** | 导航到已载入到 Defender for Endpoint 的设备列表。 提供有关设备的信息，例如设备的曝光和风险级别。 <br/><br/> 若要了解更多信息，请参阅 [设备清单](machines-view-overview.md)。 |
 |  **终结点**  > **配置&基线** | 展开以显示 **安全基线和****配置管理**。 |
@@ -76,7 +76,7 @@ Microsoft 365 Defender门户 () 查看警报、管理设备和 [https://security
 | **运行状况**  > **服务运行状况** | 导航到"服务运行状况"页Microsoft 365 管理中心。 通过此页面，您可以查看组织订阅提供的所有服务的运行状况状态。   |
 | **运行状况**  > **消息中心** | 导航到邮件消息中心Microsoft 365 管理中心。 消息中心提供有关计划更改的信息。 每条消息都描述即将发生的变化、它可能会如何影响用户以及如何管理更改。 |  
 | **角色&权限** | 使您可以授予使用 Microsoft 365 Defender 门户的权限。 权限通过 Azure AD Azure Active Directory (中的角色) 。 选择一个角色，将出现一个飞出窗格。 该飞出包含 Azure AD 的链接，可在其中添加或删除角色组的成员。 <br/><br/> 若要了解更多信息，请参阅 [使用基于角色的访问控制管理门户访问](rbac.md)。  |
-| **设置** | 导航到作为安全中心 (列出的 Microsoft 365 Defender 门户的常规设置，) 和 Defender for Endpoint (列为 **终结点) 。** <br/><br/> 若要了解更多信息[，请参阅](../defender/overview-security-center.md)设置。 |
+| **设置** | 导航到列为安全中心 Microsoft 365 Defender和 Defender for Endpoint (的常规) 列为终结点 (终结点) 。  <br/><br/> 若要了解更多信息[，请参阅](../defender/overview-security-center.md)设置。 |
 | **更多资源** | 显示更多门户和中心的列表，如Azure Active Directory和Microsoft 365 合规中心。 <br/><br/> 若要了解更多信息，请参阅 [Microsoft 安全门户和管理中心](../defender/portals.md)。 |
 
 > [!TIP]
@@ -133,13 +133,13 @@ Microsoft 365 Defender门户 () 查看警报、管理设备和 [https://security
 
 ### <a name="threat-protection-report"></a>威胁防护报告
 
-若要访问威胁防护报告，在 Microsoft 365 Defender 门户中，选择"报告"，然后选择"**威胁防护"。** 威胁防护报告显示警报趋势、状态、类别等。 视图按两列排列： **警报趋势** 和 **警报状态**，如下图所示：
+若要访问威胁防护报告，在 Microsoft 365 Defender门户中，选择"报告"，然后选择"**威胁防护"。**  威胁防护报告显示警报趋势、状态、类别等。 视图按两列排列： **警报趋势** 和 **警报状态**，如下图所示：
  
 :::image type="content" source="../../media/mde-p1/threat-protection-report.png" alt-text="威胁防护报告":::
 
 向下滚动以查看每个列表中的所有视图。 
 
-- 默认情况下，"警报趋势"列中的视图显示过去 30 天的数据，但您可以设置视图以显示最近三个月、过去六个月或自定义时间范围 (最多为) 年 180 天的数据。 
+- 默认情况下，"警报趋势"列中的视图显示过去 30 天的数据，但您可以设置视图以显示最近三个月、过去六个月或自定义时间范围 (最多 180 天的数据) 。 
 - 警报状态 **列中的** 视图是前一个工作天的快照。 
 
 > [!TIP]
@@ -158,7 +158,7 @@ Microsoft 365 Defender门户 () 查看警报、管理设备和 [https://security
 
 ### <a name="web-protection-report"></a>Web 保护报告
 
-若要访问设备运行状况报告，在Microsoft 365 Defender门户中，选择"报告"，然后选择 **"Web 保护"。** Web 保护报告显示一段时间的检测，如恶意 URL 和尝试访问阻止的 URL，如下图所示： 
+若要访问设备运行状况报告，在Microsoft 365 Defender门户中，选择"报告"，然后选择 **"Web 保护"。**  Web 保护报告显示一段时间的检测，如恶意 URL 和尝试访问阻止的 URL，如下图所示： 
  
 :::image type="content" source="../../media/mde-p1/web-protection-report.png" alt-text="Web 保护报告":::
 
@@ -169,5 +169,5 @@ Microsoft 365 Defender门户 () 查看警报、管理设备和 [https://security
 
 ## <a name="next-steps"></a>后续步骤
 
-- [管理 Microsoft Defender for Endpoint Plan 1 (预览) ](mde-p1-maintenance-operations.md)
+- [管理 Microsoft Defender for Endpoint Plan 1 (preview) ](mde-p1-maintenance-operations.md)
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cc642d06d6f2cb253140e902114f4c2840a58036
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 813dff46f3ba26c32f3b704645a9ca35ca740001
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197262"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353594"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>在 macOS 或 Linux 上运行客户端分析器
 
@@ -37,7 +37,7 @@ ms.locfileid: "59197262"
 1. 将 [XMDE 客户端分析器](https://aka.ms/XMDEClientAnalyzer) 工具下载到需要调查的 macOS 或 Linux 计算机。
 
    > [!NOTE]
-   > 从上述链接下载的"XMDEClientAnalyzer.zip"的当前 SHA256 哈希为："029296D437BA97B5563D0C75DD874F8F51C563B2B5AC16745619F4DB2E064C85"。
+   > 从上述链接下载的"XMDEClientAnalyzer.zip"的当前 SHA256 哈希为："973725417D136B7B17AF4B301F1E99BA21D7F4A7DF88036DC5A731A4B768A8B2"。
 
 2. 提取计算机上XMDEClientAnalyzer.zip的内容。
 
@@ -72,9 +72,8 @@ ms.locfileid: "59197262"
 **-h** \# 帮助<br>
 \# 显示帮助消息
 
-**-p** \# 性能<br>
-\# 尚未实现的 Planned 参数。<br>
-\# 收集大量跟踪，以分析可按需重现的性能问题。
+**性能** \# 性能<br>
+\# 收集大量跟踪，以分析可按需重现的性能问题。 用于 `--length=<seconds>` 指定基准的持续时间。
 
 **-o** \# 输出<br>
 \# 指定结果文件的目标路径
@@ -113,7 +112,7 @@ ms.locfileid: "59197262"
 
 - Health.txt
 
-  说明：运行 *mdatp* 运行状况命令时显示的基本运行状况输出相同。
+  说明：与运行 *mdatp* 运行状况命令时显示的基本运行状况输出相同。
 
 - Events.xml
 
@@ -122,3 +121,7 @@ ms.locfileid: "59197262"
 - Auditd_info.txt
 
   说明：有关 Linux OS 的已审核服务和相关 [组件](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events) 的详细信息
+
+- perf_benchmark.tar.gz
+
+  说明：性能测试报告。 只有在使用 performance 参数时，才能看到此参数。

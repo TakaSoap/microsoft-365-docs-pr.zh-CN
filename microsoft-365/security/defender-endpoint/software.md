@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f14da0e999a0ec38c9be7ef36e47b2c786e12e97
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 85b162cce8655c7942a341326ff08ec112ace100
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201094"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356557"
 ---
 # <a name="software-resource-type"></a>软件资源类型
 
@@ -39,29 +39,38 @@ ms.locfileid: "59201094"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## <a name="methods"></a>方法
 
-方法 |返回类型 |说明
-:---|:---|:---
-[列出软件](get-software.md) | 软件集合 | 列出组织软件清单。
-[按 Id 获取软件](get-software-by-id.md) | 软件 | 按软件 ID 获取特定软件。
-[列出软件版本分发](get-software-ver-distribution.md)| 通讯组集合 | 按软件 ID 列出软件版本分发。
-[按软件列出计算机](get-machines-by-software.md)| MachineRef 集合 | 检索与软件 ID 关联的设备列表。
-[按软件列出漏洞](get-vuln-by-software.md) | [漏洞](vulnerability.md) 集合 | 检索与软件 ID 关联的漏洞列表。
-[查找缺失的 KBS](get-missing-kbs-software.md) | KB 集合 | 获取与软件 ID 关联的缺失的 KB 列表
+<br>
+
+****
+
+|方法|返回类型|说明|
+|---|---|---|
+|[列出软件](get-software.md)|软件集合|列出组织软件清单。|
+|[按 Id 获取软件](get-software-by-id.md)|软件|按软件 ID 获取特定软件。|
+|[列出软件版本分发](get-software-ver-distribution.md)|通讯组集合|按软件 ID 列出软件版本分发。|
+|[按软件列出计算机](get-machines-by-software.md)|MachineRef 集合|检索与软件 ID 关联的设备列表。|
+|[按软件列出漏洞](get-vuln-by-software.md)|[漏洞](vulnerability.md) 集合|检索与软件 ID 关联的漏洞列表。|
+|[查找缺失的 KBS](get-missing-kbs-software.md)|KB 集合|获取与软件 ID 关联的缺失的 KB 列表|
+|
 
 ## <a name="properties"></a>属性
 
-属性 |   类型   |   说明
-:---|:---|:---
-id | String | 软件 ID
-名称 | String | 软件名称
-供应商 | String | 软件供应商名称
-漏洞 | 长型 | 发现的漏洞数量
-publicExploit | Boolean | 存在针对某些漏洞的公共攻击
-activeAlert | Boolean | 活动警报与此软件关联
-exposedMachines | 长型 | 公开的设备数量
-impactScore | 双精度 | 此软件的曝光评分影响
+<br>
+
+****
+
+|属性|类型|说明|
+|---|---|---|
+|id|String|软件 ID|
+|名称|String|软件名称|
+|供应商|String|软件供应商名称|
+|漏洞|长型|发现的漏洞数量|
+|publicExploit|布尔值|存在针对某些漏洞的公共攻击|
+|activeAlert|Boolean|活动警报与此软件关联|
+|exposedMachines|长型|公开的设备数量|
+|impactScore|双精度|此软件的曝光评分影响|
+|

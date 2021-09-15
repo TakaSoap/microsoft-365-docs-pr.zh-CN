@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: a6be4282c2388f8a3aff3cd91bb8385f712bdea3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b64c38ac19e692fd0580c42aa89116f8c0f3421
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201077"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353644"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>解决 Microsoft Defender for Endpoint 实时响应问题
 
@@ -42,17 +42,17 @@ ms.locfileid: "59201077"
 1. 复制以下脚本代码段并将其另存为 PS1 文件：
 
     ```powershell
-    $copied_file_path=$args[0] 
+    $copied_file_path=$args[0]
     $action=Copy-Item $copied_file_path -Destination $env:TEMP -PassThru -ErrorAction silentlyContinue
-        
+
     if ($action){
          Write-Host "You copied the file specified in $copied_file_path to $env:TEMP Succesfully"
     }
-    
+
     else{
         Write-Output "Error occoured while trying to copy a file, details:"
         Write-Output  $error[0].exception.message
- 
+
     }
     ```
 
@@ -63,7 +63,7 @@ ms.locfileid: "59201077"
 
 ## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>初始连接期间实时响应会话慢或延迟
 
-实时响应利用 Defender for Endpoint 传感器注册和 WNS 服务在 Windows。 如果实时响应的连接问题，请确认以下详细信息：
+实时响应利用 Defender for Endpoint 传感器注册和 Windows 中的 WNS 服务。 如果实时响应的连接问题，请确认以下详细信息：
 
 1. `notify.windows.com` 不会在你的环境中被阻止。 有关详细信息，请参阅配置 [设备代理和 Internet 连接设置](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
 2. 未 (Windows WpnService) 推送通知系统服务。

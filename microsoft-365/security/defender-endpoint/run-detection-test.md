@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d3430dc7765dfb7d84110a3a0cbae9f53e89b379
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2c1772cc67c145b59870735910e09ae05e52b899
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197259"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357297"
 ---
-# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>在新载入的 Microsoft Defender 终结点设备上运行检测测试 
+# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>在新载入的 Microsoft Defender 终结点设备上运行检测测试
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,11 +41,12 @@ ms.locfileid: "59197259"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-载入设备是向 Microsoft Defender for Endpoint 服务添加设备的方法。 它允许设备向服务报告信号。  
+载入设备是向 Microsoft Defender for Endpoint 服务添加设备的方法。 它允许设备向服务报告信号。
 
-验证设备是否已成功添加到服务是整个部署过程中的重要步骤。 
+验证设备是否已成功添加到服务是整个部署过程中的重要步骤。
 
 ## <a name="verify-onboarding-using-a-detection-test"></a>使用检测测试验证载入
+
 在新载入的设备上运行以下 PowerShell 脚本，验证它是否正确报告给 Defender for Endpoint 服务。
 
 1. 创建文件夹："C：\test-MDATP-test"。
@@ -66,6 +67,7 @@ ms.locfileid: "59197259"
 命令提示符窗口将自动关闭。 如果成功，检测测试将标记为已完成，并且大约 10 分钟后，已载入设备的门户中将显示新警报。
 
 ## <a name="related-topics"></a>相关主题
+
 - [载入 Windows 10 设备](configure-endpoints.md)
 - [载入服务器](configure-server-endpoints.md)
 - [Microsoft Defender 终结点载入问题疑难解答](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

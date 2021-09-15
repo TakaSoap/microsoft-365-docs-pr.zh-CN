@@ -21,14 +21,14 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f94e4d5e51b6a846a0439e3833a01d252c51bd0a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae3b0e3ad09487d9b48ddab10a43eb36e5abed35
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197258"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353643"
 ---
-#  <a name="run-live-response-commands-on-a-device"></a>在设备上运行实时响应命令
+# <a name="run-live-response-commands-on-a-device"></a>在设备上运行实时响应命令
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,27 +50,27 @@ ms.locfileid: "59197258"
 
 ## <a name="limitations"></a>限制
 
-1.  此 API 的速率限制是每分钟 10 次调用 (HTTP 429 请求响应其他) 。
+1. 此 API 的速率限制是每分钟 10 次调用 (HTTP 429 请求响应其他) 。
 
-2.  25 个并发运行的 (超出限制的请求将收到"429 - 请求过多"响应) 。
+2. 25 个并发运行的 (超出限制的请求将收到"429 - 请求过多"响应) 。
 
-3.  如果计算机不可用，会话将排入队列最多 3 天。
+3. 如果计算机不可用，会话将排入队列最多 3 天。
 
-4.  RunScript 命令在 10 分钟后超时。
+4. RunScript 命令在 10 分钟后超时。
 
-5.  实时响应命令无法排入队列，一次只能执行一个。 
+5. 实时响应命令无法排入队列，一次只能执行一个。
 
-6.  如果你尝试运行此 API 调用的机器位于未分配自动修正级别的 RBAC 设备组中，你至少需要为给定的设备组启用最低修正级别。
+6. 如果你尝试运行此 API 调用的机器位于未分配自动修正级别的 RBAC 设备组中，你至少需要为给定的设备组启用最低修正级别。
 
-7.  可以在单个 API 调用中运行多个实时响应命令。 但是，当实时响应命令失败时，将不会执行所有后续操作。
+7. 可以在单个 API 调用中运行多个实时响应命令。 但是，当实时响应命令失败时，将不会执行所有后续操作。
 
 ## <a name="minimum-requirements"></a>最低要求
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的** Windows 版本。
+- **验证是否正在运行受支持的** Windows。
 
-  设备必须运行以下版本之一Windows
+  设备必须运行以下版本之一的 Windows
 
   - **Windows 10**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
@@ -80,9 +80,9 @@ ms.locfileid: "59197258"
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **WindowsServer 2019 - 仅适用于公共预览版**
-    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
-    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
-    
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
+    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
+
 ## <a name="permissions"></a>权限
 
 若要调用此 API，需要以下权限之一。 若要了解更多信息，包括如何选择权限，请参阅 [入门](apis-intro.md)。
@@ -112,7 +112,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 |评论|字符串|要与操作关联的注释。|
 |命令|数组|要运行的命令。 允许的值为 PutFile、RunScript、GetFile。|
 
-**命令**：
+## <a name="commands"></a>命令
 
 |命令类型|参数|说明|
 |---|---|---|

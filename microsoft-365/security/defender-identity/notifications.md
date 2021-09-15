@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: b4c499392bf9c48d704b1a0a960d9d92d097bd05
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dfb3c5e1edbbf77a95a1e1d5888b070a12bfd7a7
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197243"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353618"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Defender for Identity notifications in Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "59197243"
 
 1. 选择 **"运行状况问题通知"。**
 
-1. 输入收件人的电子邮件地址。 选择 **添加**。
+1. 输入收件人的电子邮件地址。 选择“**添加**”。
 
     ![输入运行状况问题的电子邮件地址。](../../media/defender-identity/health-email-recipient.png)
 
@@ -57,7 +57,7 @@ ms.locfileid: "59197243"
 
 1. 选择 **警报通知**。
 
-1. 输入收件人的电子邮件地址。 选择 **添加**。
+1. 输入收件人的电子邮件地址。 选择“**添加**”。
 
     ![输入检测到的警报的电子邮件地址。](../../media/defender-identity/alert-email-recipient.png)
 
@@ -82,7 +82,7 @@ Defender for Identity 可通过指定传感器向 Syslog 服务器发送安全�
 1. 输入以下详细信息：
 
     - **传感器** - 从下拉列表中选择将发送警报的传感器。
-    - **服务终结点** 和 **端口** - 输入 syslog 服务器的 IP 地址或完全限定 (FQDN) 并指定端口号。
+    - **服务终结点** 和 **端口** - 输入 syslog 服务器的 IP 地址或完全限定 (FQDN) 并指定端口号。 只能配置一个 Syslog 终结点。
     - **Transport** - 选择 **TCP** 或 UDP (传输) 。
     - **Format** - 选择 RFC 3164 (RFC 5424 格式) 。
 
@@ -90,7 +90,7 @@ Defender for Identity 可通过指定传感器向 Syslog 服务器发送安全�
 
 1. 选择“**保存**”。
 
-1. 配置 Syslog 服务后，可以选择向 **Syslog** 服务器发送 (警报或) 运行状况问题。
+1. 配置 Syslog 服务后，可以选择向 **Syslog** 服务器 (发送哪些类型的) 或运行状况问题。
 
     ![已配置 Syslog 服务。](../../media/defender-identity/syslog-configured.png)
 

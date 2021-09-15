@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 83e43a36df3d4b4d0efdfd655e929c8aa39aeb74
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b62dbc0881ffe1b7129c053d13ee509796aef5b9
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197277"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357379"
 ---
 # <a name="offboard-machine-api"></a>载出计算机 API
 
@@ -32,8 +32,6 @@ ms.locfileid: "59197277"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
-
-
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -47,10 +45,11 @@ ms.locfileid: "59197277"
 
 - 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
-[!include[Machine actions note](../../includes/machineactionsnote.md)]
+  [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
->[!Note]
+> [!NOTE]
 > 此 API 在 Windows 10 版本 1703 及更高版本或 Windows Server 2019 及更高版本上受支持。
+>
 > 此 API 在 MacOS 或 Linux 设备上不受支持。
 
 ## <a name="permissions"></a>权限
@@ -58,7 +57,7 @@ ms.locfileid: "59197277"
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅对 [终结点 API 使用 Defender](apis-intro.md)
 
 权限类型|权限|权限显示名称
-:---|:---|:---
+---|---|---
 应用程序|Machine.Offboard|"载出计算机"
 委派（工作或学校帐户）|Machine.Offboard|"载出计算机"
 
@@ -77,16 +76,16 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 ## <a name="request-headers"></a>请求标头
 
 名称|类型|说明
-:---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
-Content-Type|string|application/json. **必需**。
+---|---|---
+Authorization|字符串|Bearer {token}。 **必需**。
+Content-Type|string|application/json. 必需。
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
 参数|类型|说明
-:---|:---|:---
+---|---|---
 评论|字符串|要与操作关联的注释。 **必需**。
 
 ## <a name="response"></a>响应

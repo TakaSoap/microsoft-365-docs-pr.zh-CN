@@ -1,6 +1,6 @@
 ---
 title: 事件响应和Microsoft 365 Defender
-description: 调查在安全门户中跨设备、用户和邮箱Microsoft 365 Defender事件。
+description: 调查在 Microsoft 365 Defender 门户中跨设备、用户和邮箱Microsoft 365 Defender的事件。
 keywords: 事件， 警报， 调查， 分析， 响应， 相关， 攻击， 计算机， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365， 事件响应， 网络攻击
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6f55e1a30f61b8ed41ec2575b26a9346ba45cafd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 824d32b07acbba0d19a5f2afdafffcbba53baeeb
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175353"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357577"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>事件响应和Microsoft 365 Defender
 
@@ -66,7 +66,7 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 ## <a name="incidents-and-alerts-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的事件和警报
 
-在快速启动 Microsoft 365 Defender门户&事件>事件或事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
+在快速启动 Microsoft 365 Defender门户&事件>事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件门户中的Microsoft 365 Defender页面。":::
 
@@ -116,18 +116,18 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 在持续进行的基础上，确定事件队列中的最高优先级事件以进行分析和解决，并为响应做好准备。 此操作包括以下步骤：
 
-- [通过](incident-queue.md) 筛选和事件队列排序来确定最高优先级的事件的会审。
+- [通过](incident-queue.md) 筛选和事件队列排序来确定最高优先级事件的会审。
 - [通过](manage-incidents.md) 修改事件的标题、将其分配给分析员以及添加标签和注释来管理事件。
 
 1. 对于每个事件，开始 [攻击和警报调查和分析](investigate-incidents.md)：
  
-   1. 查看事件摘要，了解事件的范围和严重性，以及哪些实体受"摘要"和"Graph (预览") 影响。 
+   1. 查看事件摘要，了解事件的范围和严重性以及受"摘要"和"Graph (预览"选项卡) 实体。  
 
    1. 通过"警报"选项卡开始分析警报以了解其来源、范围 **和** 严重性。
 
    1. 根据需要，使用"设备"、"用户"和"邮箱"选项卡收集有关受影响设备、用户 **和邮箱** 的信息。
 
-   1. 使用 ["Microsoft 365 Defender"选项卡查看](m365d-autoir.md)用户是如何自动解决 **某些** 警报的。
+   1. 使用"Microsoft 365 Defender"选项卡查看用户 [如何自动](m365d-autoir.md)解决 **某些** 警报。
    
    1. 根据需要，使用事件数据集中的信息，通过"证据和响应"选项卡 **获取** 详细信息。
 
@@ -135,7 +135,7 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 3. 通过将租户资源还原到事件发生前所处的状态，尽可能从攻击中恢复。
 
-4. [解决](manage-incidents.md#resolve-an-incident) 事件并花时间了解事件后：
+4. [解决](manage-incidents.md#resolve-an-incident) 事件并花时间了解事件后情况：
 
    - 了解攻击的类型及其影响。
    - 研究威胁分析 [和安全](threat-analytics.md) 社区中的攻击，以寻找安全攻击趋势。
@@ -171,7 +171,7 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 每日、每月、季度和年度任务可用于更新或优化流程、策略和安全配置。
 
-有关详细信息[，Microsoft 365 Defender集成到安全](integrate-microsoft-365-defender-secops.md)操作中。
+有关详细信息[，Microsoft 365 Defender集成到安全](integrate-microsoft-365-defender-secops.md)操作。
 
 ### <a name="secops-resources-across-microsoft-products"></a>跨 Microsoft 产品的 SecOps 资源
 
@@ -183,21 +183,26 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 ## <a name="next-steps"></a>后续步骤
 
-**如果你是安全分析和** 事件响应的新增人员：
+根据安全团队的体验级别或角色，使用列出的步骤。
 
-- 请参阅[响应你的第](first-incident-overview.md)一个事件演练，获取有关示例攻击的 Microsoft 365 Defender 门户中分析、修正和事后评审的典型过程的引导教程。
+### <a name="experience-level"></a>体验级别
 
-**如果你有安全分析和** 事件响应的经验：
+请遵循此表，获得安全分析和事件响应的体验级别。
 
-- 从事件门户的"事件 **"页面开始** Microsoft 365 Defender队列。 在这里，你可以:
+| 级别 | 步骤 |
+|:-------|:-----|
+| **New** | <ol><li> 请参阅[响应你的](first-incident-overview.md)第一个事件演练，获取有关示例攻击的 Microsoft 365 Defender 门户中分析、修正和事后评审的典型流程的引导教程。 </li><li> 查看应基于严重性 [和](incident-queue.md) 其他因素对哪些事件进行优先排序。 </li><li> [管理事件](manage-incidents.md)，其中包括根据事件管理工作流重命名、分配、分类和添加标记和注释。</li></ol> |
+| **有经验的** | <ol><li> 从事件门户的"事件 **"页面开始** Microsoft 365 Defender队列。 从这里您可以： </li> <ul><li> 查看应基于严重性 [和](incident-queue.md) 其他因素对哪些事件进行优先排序。 </li><li> [管理事件](manage-incidents.md)，其中包括根据事件管理工作流重命名、分配、分类和添加标记和注释。 </li><li> [执行事件](investigate-incidents.md)调查。 </li></ul> </li><li> 通过威胁分析跟踪和响应新出现的 [威胁](threat-analytics.md)。 </li><li>  使用高级威胁搜寻 [主动搜寻威胁](advanced-hunting-overview.md)。 </li><li> 请参阅 [这些事件响应手册，](/security/compass/incident-response-playbooks) 获取网络钓鱼、密码加密以及应用许可授予攻击的详细指南。 </li></ol> |
 
-  - 查看应基于严重性 [和](incident-queue.md) 其他因素对哪些事件进行优先排序。 
 
-  - [管理事件](manage-incidents.md)，其中包括根据事件管理工作流重命名、分配、分类和添加标记和注释。
+### <a name="security-team-role"></a>安全团队角色
 
-  - [执行事件](investigate-incidents.md)调查。
+请根据安全团队角色遵循此表。
 
-- 了解如何将安全[Microsoft 365 Defender集成到 SOC 安全 (中) 。 ](integrate-microsoft-365-defender-secops.md)
-
-- 请参阅 [这些事件响应手册，](/security/compass/incident-response-playbooks) 获取网络钓鱼、密码加密以及应用许可授予攻击的详细指南。
+| 角色 | 步骤 |
+|:-------|:-----|
+| 第 1 层 (事件响应)  | 从事件门户的"事件 **"页面开始** Microsoft 365 Defender队列。 从这里您可以： <ul><li> 查看应基于严重性 [和](incident-queue.md) 其他因素对哪些事件进行优先排序。 </li><li> [管理事件](manage-incidents.md)，其中包括根据事件管理工作流重命名、分配、分类和添加标记和注释。 </li></ul> |
+| 第 2 层 (或分析员)  | <ol><li> 从 [事件](investigate-incidents.md)门户的"事件 **"页Microsoft 365 Defender** 事件。 </li><li> 请参阅 [这些事件响应手册，](/security/compass/incident-response-playbooks) 获取网络钓鱼、密码加密以及应用许可授予攻击的详细指南。 </li></ol> |
+| 第 3 层 (高级安全分析师或威胁)  | <ol><li>从 [事件](investigate-incidents.md)门户的"事件 **"页Microsoft 365 Defender** 事件。 </li><li> 通过威胁分析跟踪和响应新出现的 [威胁](threat-analytics.md)。 </li><li> 使用高级威胁搜寻 [主动搜寻威胁](advanced-hunting-overview.md)。 </li><li> 请参阅 [这些事件响应手册，](/security/compass/incident-response-playbooks) 获取网络钓鱼、密码加密以及应用许可授予攻击的详细指南。 |
+| SOC 管理器 | 了解如何将安全[Microsoft 365 Defender中心与 SOC (集成) 。 ](integrate-microsoft-365-defender-secops.md) |
 

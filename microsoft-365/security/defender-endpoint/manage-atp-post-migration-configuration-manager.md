@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 2d474f4cc2c990ac8ebf3a964bbb532752741160
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 11855b9ebd6a2dd4641087e2e0a711860acb76d5
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170966"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355840"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>使用 Configuration Manager 管理 Microsoft Defender for Endpoint
 
@@ -51,13 +51,12 @@ ms.locfileid: "59170966"
 |**使用 Configuration Manager 将设备载入** 到 Microsoft Defender for Endpoint <p> *如果你的设备已 (或) 尚未载入到 Microsoft Defender for Endpoint，可以使用 Configuration Manager 完成这一操作。*|[使用 Configuration Manager 载入到 Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#about-onboarding-to-atp-with-configuration-manager)|
 |**为客户端计算机和 Windows** 终结点管理反恶意软件策略 (防火墙)  <p> *配置终结点保护功能，包括适用于终结点的 Microsoft Defender、Exploit Protection、应用程序控制、反恶意软件、防火墙设置等。*|[Configuration Manager：Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection)|
 |**选择在组织设备上更新** 反恶意软件更新的方法 <p> *借助Endpoint Protection管理器，你可以选择多种方法使反恶意软件定义在组织设备上保持最新。*|[配置应用程序的定义Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-definition-updates) <p> [使用 Configuration Manager 提供定义更新](/mem/configmgr/protect/deploy-use/endpoint-definitions-configmgr)|
-|**启用网络** 保护以帮助防止员工使用 Internet 上恶意内容的应用 <p> *我们建议在 [测试环境中首先](/microsoft-365/security/defender-endpoint/evaluate-network-protection) 使用审核模式进行网络保护，以查看在推出之前哪些应用将被阻止。*|[使用 Configuration Manager 打开网络保护](/microsoft-365/security/defender-endpoint/enable-network-protection#microsoft-endpoint-configuration-manager)|
+|**启用网络** 保护，以防止员工使用 Internet 上恶意内容的应用 <p> *我们建议在 [测试环境中首先](/microsoft-365/security/defender-endpoint/evaluate-network-protection) 使用审核模式进行网络保护，以查看在推出之前哪些应用将被阻止。*|[使用 Configuration Manager 打开网络保护](/microsoft-365/security/defender-endpoint/enable-network-protection#microsoft-endpoint-configuration-manager)|
 |**配置受控文件夹访问权限** 以防范勒索软件 <p> *受控文件夹访问权限也称为反反somware保护。*|[终结点保护：受控文件夹访问权限](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <p> [在 Microsoft Endpoint Configuration Manage 中启用受控文件夹访问权限](/microsoft-365/security/defender-endpoint/enable-controlled-folders#microsoft-endpoint-configuration-manager)|
-|||
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>配置Microsoft 365 Defender门户
 
-如果尚未配置，请配置 Microsoft 365 Defender 门户以查看警报、配置威胁防护功能，并查看有关组织的整体安全状况的详细信息。 请参阅[Microsoft 365 Defender门户](microsoft-defender-security-center.md)。 还可以配置最终用户是否可以在 web 门户中查看这些功能Microsoft 365 Defender功能。
+如果尚未配置，请配置 Microsoft 365 Defender 门户以查看警报、配置威胁防护功能，并查看有关组织的整体安全状况的详细信息。 请参阅[Microsoft 365 Defender门户](microsoft-defender-security-center.md)。 还可以配置最终用户是否可以在网站门户中查看这些功能Microsoft 365 Defender功能。
 
 - [概述Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [终结点保护：Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)

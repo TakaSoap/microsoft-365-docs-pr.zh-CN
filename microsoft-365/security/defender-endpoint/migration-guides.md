@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: be05b4e477e00f1cdeafcd9b2b8d20452ac0c6c2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0aace52d05103afa490ec98b50ee9b6539e6b794
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196306"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357608"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>转换到 Microsoft Defender for Endpoint
 
@@ -36,13 +36,17 @@ ms.locfileid: "59196306"
 
 如果你正在考虑迁移到 Defender for Endpoint，我们提供了帮助指南。 在下表中，查看这些方案。 选择最适合你的情况的方案，并查看建议的指导。
 
-| 方案 | 指南 |
-|:----|:----|
-| 你还没有终结点保护解决方案，并且想要了解有关 Defender for Endpoint 的更多信息。 在环境中部署 Defender for Endpoint 之前，你想要了解它的工作原理。  | [Microsoft Defender for Endpoint 评估实验室](evaluation-lab.md)   |
-| 你已拥有适用于终结点的 Defender，并且你需要一些帮助来设置和配置所有内容。  | [Microsoft Defender for Endpoint 部署指南](deployment-phases.md)  |
-| 你计划从非 Microsoft 终结点保护解决方案切换到 Defender for Endpoint 和 Microsoft Defender 防病毒。 您希望大致了解迁移过程以及如何进行切换。 |[转换到 Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md)   |
-| 你已迁移或载入到 Defender for Endpoint。 需要一些有关下一步的帮助，例如管理安全设置、配置更多功能或微调安全策略。 | [管理 Microsoft Defender for Endpoint，迁移后](manage-atp-post-migration.md) |
+<br>
 
+****
+
+|应用场景|指南|
+|---|---|
+|你还没有终结点保护解决方案，并且想要了解有关 Defender for Endpoint 的更多信息。 在环境中部署 Defender for Endpoint 之前，你想要了解它的工作原理。|[Microsoft Defender for Endpoint 评估实验室](evaluation-lab.md)|
+|你已拥有适用于终结点的 Defender，并且你需要一些帮助来设置和配置所有内容。|[Microsoft Defender for Endpoint 部署指南](deployment-phases.md)|
+|你计划从非 Microsoft 终结点保护解决方案切换到 Defender for Endpoint Microsoft Defender 防病毒。 您希望大致了解迁移过程以及如何进行切换。|[转换到 Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md)|
+|你已迁移或载入到 Defender for Endpoint。 需要一些有关下一步的帮助，例如管理安全设置、配置更多功能或微调安全策略。|[管理 Microsoft Defender for Endpoint，迁移后](manage-atp-post-migration.md)|
+|
 
 ## <a name="do-you-have-feedback-for-us"></a>是否向我们提供反馈？
 

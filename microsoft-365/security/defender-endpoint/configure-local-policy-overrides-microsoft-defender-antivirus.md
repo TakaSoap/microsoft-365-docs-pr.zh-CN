@@ -13,15 +13,15 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 02/13/2020
+ms.date: 09/14/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: d70d35bc1e2baa795e024da79ea613087bf511d4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18260bd67d99aa372de7a14dab7decd3983d1beb
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170509"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355880"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>阻止或允许用户在本地修改Microsoft Defender 防病毒策略设置
 
@@ -38,7 +38,7 @@ ms.locfileid: "59170509"
 
 这些策略的默认设置是 **Disabled**。
 
-如果设置为"启用"，则终结点上的用户可以使用[Windows 安全中心](microsoft-defender-security-center-antivirus.md)应用、本地组策略设置和 PowerShell cmdlet 对关联的设置进行更改 (（如果适用) ）。 
+如果设置为"启用"，则终结点上的用户可以使用[Windows 安全中心](microsoft-defender-security-center-antivirus.md)应用、本地组策略设置和 PowerShell cmdlet 对关联的设置 (相应的) 。 
 
 下表列出了每个替代策略设置以及关联的功能或设置的配置说明。
 
@@ -48,27 +48,31 @@ ms.locfileid: "59170509"
 
 2. 在组 **策略管理编辑器中** ，转到计算机 **配置，** 然后单击 **管理模板**。
 
-3. 展开树以 **Windows组件**> Microsoft Defender 防病毒下表中指定的位置。 
+3. 展开树以Windows **组件**  >  **Microsoft Defender 防病毒，** 然后在本文的设置表中 (指定的位置) 。 
 
 4. 双击 **下表中指定的** 策略设置，将选项设置为所需的配置。 单击 **"确定**"，然后对任何其他设置重复上述操作。
 
 5. 像往常一样部署组策略对象。
 
-位置|Setting|文章
----|---|---|---
-MAPS|配置向 Microsoft MAPS 报告的本地设置替代|[启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md)
-Quarantine|为从隔离文件夹中删除项目配置本地设置替代|[配置扫描修正](configure-remediation-microsoft-defender-antivirus.md)
-实时保护|配置本地设置覆盖以监视您的计算机上的文件和程序活动|[启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md)
-实时保护|配置本地设置覆盖以监视传入和传出文件活动|[启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md)
-实时保护|配置用于扫描所有下载的文件和附件的本地设置替代|[启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md)
-实时保护|配置本地设置替代以启用行为监视|[启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md)
-实时保护|配置本地设置覆盖以启用实时保护|[启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md)
-修正|为运行计划的完整扫描以完成修正的时间配置本地设置替代|[配置扫描修正](configure-remediation-microsoft-defender-antivirus.md)
-扫描|为 CPU 使用率的最大百分比配置本地设置覆盖|[配置并运行扫描](run-scan-microsoft-defender-antivirus.md)
-扫描|为计划扫描日配置本地设置覆盖|[配置计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-扫描|为计划的快速扫描时间配置本地设置覆盖|[配置计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-扫描|为计划扫描时间配置本地设置覆盖|[配置计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-扫描|为要用于计划扫描的扫描类型配置本地设置覆盖|[配置计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+## <a name="table-of-settings"></a>设置表
+
+<br/><br/>
+
+| 位置 | 设置 | 文章 |
+|---|---|---|---|
+| MAPS |配置向 Microsoft MAPS 报告的本地设置替代|[启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| Quarantine|为从隔离文件夹中删除项目配置本地设置替代|[配置扫描修正](configure-remediation-microsoft-defender-antivirus.md) |
+| 实时保护|配置本地设置覆盖以监视您的计算机上的文件和程序活动|[启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 实时保护|配置本地设置覆盖以监视传入和传出文件活动 | [启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 实时保护|配置用于扫描所有下载的文件和附件的本地设置替代|[启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 实时保护|配置本地设置替代以启用行为监视|[启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 实时保护|配置本地设置覆盖以启用实时保护|[启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 修正|为运行计划的完整扫描以完成修正的时间配置本地设置替代|[配置扫描修正](configure-remediation-microsoft-defender-antivirus.md) |
+| 扫描|为 CPU 使用率的最大百分比配置本地设置覆盖|[配置并运行扫描](run-scan-microsoft-defender-antivirus.md) |
+| 扫描|为计划扫描日配置本地设置覆盖|[配置计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
+| 扫描|为计划的快速扫描时间配置本地设置覆盖|[配置计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
+| 扫描|为计划扫描时间配置本地设置覆盖|[配置计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
+| 扫描|为要用于计划扫描的扫描类型配置本地设置覆盖|[配置计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 
 <a id="merge-lists"></a>
 

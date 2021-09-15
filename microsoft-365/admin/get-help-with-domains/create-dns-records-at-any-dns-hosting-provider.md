@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-ms.openlocfilehash: 1947e8e91beb23f328e59ffe30fac0f596165121
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bced40831a9d73e0c72c6ebb232839409c8a64ea
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169783"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356292"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>添加 DNS 记录以连接你的域
 
@@ -74,7 +74,7 @@ ms.locfileid: "59169783"
 请确保将字段设置为以下值：
 
 - 记录类型：`MX`
-- 优先级：设置为可用的最高值，通常为 `0`。
+- 优先级：设置为尚未使用的任何大值。
 - 主机名：`@`
 - 指向地址：从管理中心复制值并将其粘贴到此处。
 - TTL：`3600`（或提供商的默认值）

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 54883ab437dcf01b042b5458bdc6312eaf24d179
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f85c4cd8cf5d657e4043aae80da8b3dae989a29d
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197266"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356618"
 ---
 # <a name="advanced-hunting-api"></a>高级搜寻 API
 
@@ -49,7 +49,7 @@ ms.locfileid: "59197266"
 
 4. 单个请求的最大执行时间为 10 分钟。
 
-5. 429 响应表示达到配额限制（按请求数或 CPU）。 读取响应正文，了解已达到的限制。 
+5. 429 响应表示达到请求数或 CPU 的配额限制。 读取响应正文，了解已达到的限制。
 
 6. 单个请求的最大查询结果大小不能超过 124 MB。 如果超出此限制，则显示"查询执行已超出允许的结果大小"消息的 HTTP 400 错误请求。 将显示"通过限制结果量并重试"来优化查询。
 
@@ -105,7 +105,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 
 ```json
 {
-    "Query":"DeviceProcessEvents  
+    "Query":"DeviceProcessEvents
 |where InitiatingProcessFileName =~ 'powershell.exe'
 |where ProcessCommandLine contains 'appdata'
 |project Timestamp, FileName, InitiatingProcessFileName, DeviceId

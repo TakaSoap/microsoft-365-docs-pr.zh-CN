@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 0833a616f1b6052519e92a5e46c8f36f01c80818
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1e4e32864c2541cfc0cf14602ec954d5e643f309
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196297"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357589"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻击面减少规则疑难解答
 
@@ -35,21 +35,16 @@ ms.locfileid: "59196297"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)。
 
-
 当你使用 [攻击面减少规则时](attack-surface-reduction.md) ，你可能会遇到问题，例如：
 
 - 规则阻止文件、进程或执行其他一些不应 (误报) 
-
 - 规则不能如所述工作，或不会阻止文件或进程，它应 (漏报) 
 
 解决这些问题有四个步骤：
 
 1. [确认先决条件](#confirm-prerequisites)
-
 2. [使用审核模式测试规则](#use-audit-mode-to-test-the-rule)
-
 3. [为指定的误报规则 (](#add-exclusions-for-a-false-positive) 排除项) 
-
 4. [提交支持日志](#collect-diagnostic-data-for-file-submissions)
 
 ## <a name="confirm-prerequisites"></a>确认先决条件
@@ -68,11 +63,11 @@ ms.locfileid: "59196297"
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>使用审核模式测试规则
 
-你可以访问 demo.wd.microsoft.com 上的[Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)测试场网站，以确认攻击面减少规则通常适用于设备上预配置的方案和进程，或者可以使用审核模式（启用仅报告规则）。
+你可以访问 demo.wd.microsoft.com 上的[Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)测试场网站，以确认攻击面减少规则通常适用于设备上预配置的方案和流程，或者可以使用审核模式（启用仅报告规则）。
 
 按照使用演示 [工具中的以下说明查看攻击面](evaluate-attack-surface-reduction.md) 减少规则如何工作，以测试遇到问题的特定规则。
 
-1. 为要测试的特定规则启用审核模式。 使用组策略将规则设置为审核模式 (**值：2**) 启用 [攻击面减少规则中所述](enable-attack-surface-reduction.md)。 审核模式允许规则报告文件或进程，但仍允许它运行。
+1. 为要测试的特定规则启用审核模式。 使用组策略将规则设置为审核模式 (值 **：2**) 启用 [攻击面减少规则中所述](enable-attack-surface-reduction.md)。 审核模式允许规则报告文件或进程，但仍允许它运行。
 
 2. 执行导致问题的活动 (例如，打开或执行应阻止但允许阻止的文件或) 。
 
@@ -84,9 +79,9 @@ ms.locfileid: "59196297"
 
 如果你已使用演示工具和审核模式测试了规则，并且攻击面减少规则正在预配置的方案中运行，但规则未按预期工作，请根据你的情况继续执行以下任一部分：
 
-1. 如果攻击面减少规则阻止了不应阻止的 (也称为误报) ，你可以首先添加攻击面减少[规则排除 。](#add-exclusions-for-a-false-positive)
+1. 如果攻击面减少规则阻止了它不应阻止 (也称为误报) ，你可以首先添加攻击面减少[规则排除 。](#add-exclusions-for-a-false-positive)
 
-2. 如果攻击面减少规则未阻止应阻止 (也称为漏报) ，你可以立即继续执行最后一步，收集诊断数据，将问题提交给 [我们](#collect-diagnostic-data-for-file-submissions)。
+2. 如果攻击面减少规则不会阻止应阻止 (也称为漏报) ，你可以立即继续执行最后一步，收集诊断数据，将问题提交给 [我们](#collect-diagnostic-data-for-file-submissions)。
 
 ## <a name="add-exclusions-for-a-false-positive"></a>添加误报的排除项
 
@@ -94,9 +89,9 @@ ms.locfileid: "59196297"
 
 若要添加排除项，请参阅 [自定义攻击面减少](customize-attack-surface-reduction.md)。
 
->[!IMPORTANT]
->可以指定要排除的单个文件和文件夹，但不能指定单个规则。
->这意味着排除的任何文件或文件夹都将从所有 ASR 规则中排除。
+> [!IMPORTANT]
+> 可以指定要排除的单个文件和文件夹，但不能指定单个规则。
+> 这意味着排除的任何文件或文件夹都将从所有 ASR 规则中排除。
 
 ## <a name="report-a-false-positive-or-false-negative"></a>报告误报或漏报
 
@@ -123,7 +118,5 @@ ms.locfileid: "59196297"
 ## <a name="related-articles"></a>相关文章
 
 - [攻击面减少规则](attack-surface-reduction.md)
-
 - [启用攻击面减少规则](enable-attack-surface-reduction.md)
-
 - [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
