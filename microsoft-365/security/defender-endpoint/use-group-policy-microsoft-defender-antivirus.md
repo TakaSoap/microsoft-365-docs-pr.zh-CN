@@ -1,6 +1,6 @@
 ---
 title: 使用Microsoft Defender 防病毒配置策略
-description: 了解如何使用组策略在适用于终结点的 Microsoft Defender Microsoft Defender 防病毒终结点上配置和管理帐户。
+description: 了解如何使用组策略在 Microsoft Defender for Endpoint Microsoft Defender 防病毒终结点上配置和管理用户。
 keywords: 组策略， GPO， 配置， 设置
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 881db58dc6658c7ed73201e48e7e2079dbf6aa97
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 3e3014feb80383c370aa49f387966c574df587f9
+ms.sourcegitcommit: bf801ff8b45a68edb587f1661d06acd4121ecb49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401010"
+ms.locfileid: "59407668"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>使用组策略设置配置和管理Microsoft Defender 防病毒
 
@@ -38,28 +38,28 @@ ms.locfileid: "59401010"
 
 通常，可以使用以下过程配置或更改Microsoft Defender 防病毒策略设置：
 
-1. 在组策略管理计算机上，打开组策略 [](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))管理控制台，右键单击要配置的组策略对象 (GPO) 然后单击 **编辑。**
+1. 在组策略管理计算机上，打开组策略 [](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))管理控制台，右键单击要配置的组策略 (GPO) ，然后单击 **编辑。**
 
 2. 使用组 **策略管理编辑器转到** 计算机 **配置**。
 
 3. 单击 **"管理模板"。**
 
-4. 展开树以 **Windows组件**  >  **Microsoft Defender 防病毒。**
+4. 展开树以Windows **组件**  >  **Microsoft Defender 防病毒。**
 
-5. 展开 (本主题) 包含要配置的设置的表中的"位置"部分，双击该设置将其打开，然后进行配置更改。
+5. 展开本主题 (中称为"位置"的部分) 其中包含要配置的设置，双击该设置将其打开，然后进行配置更改。
 
 6. [像平常一样部署更新的 GPO。](/windows/win32/srvnodes/group-policy) 
 
 ## <a name="group-policy-settings-and-resources"></a>组策略设置和资源
 
-本主题中的下表列出了 Windows 10 版本 1703 中提供的组策略设置，并提供指向本文档库中相应主题的链接 (（如果适用) ）。 
+本主题中的下表列出了 Windows 10 版本 1703 中提供的组策略设置，并提供指向本文档库中相应主题 (（如果适用) ）。 
 
 > [!TIP]
-> [下载组策略设置 Reference Spreadsheet for Windows 10 May 2020 Update (2004) 。 ](https://www.microsoft.com/download/101451) 此电子表格列出了 2004 年 5 月 Windows 10 更新 2004 年 5 月 (中包含的管理模板文件中包含的计算机和用户配置) 。 可以在编辑组策略对象时配置对电子表格的参考。<br/><br/>
+> [下载 2004 年 5 设置 年 5 ](https://www.microsoft.com/download/101451)Windows 10更新的组策略 (参考) 。 此电子表格列出了 2004 年 5 月 Windows 10 更新 (2004 年 5 月提供的管理模板文件中包含的计算机和用户配置) 。 可以在编辑组策略对象时配置对电子表格的参考。<br/><br/>
 
 | 位置 | 设置 | 文章 |
 |:---|:---|:---|
-| 客户端接口 | 启用无头 UI 模式 | [阻止用户查看或与用户界面Microsoft Defender 防病毒交互](prevent-end-user-interaction-microsoft-defender-antivirus.md) |
+| 客户端接口 | 启用无头 UI 模式 | [阻止用户查看或与 Microsoft Defender 防病毒交互](prevent-end-user-interaction-microsoft-defender-antivirus.md) |
 | 客户端接口 | 当客户端需要执行一个操作时，向客户端显示其他文本 | [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md) |
 | 客户端接口 | 禁止显示所有通知 | [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md) |
 | 客户端接口 | 禁止重新启动通知 | [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md) |
@@ -96,15 +96,15 @@ ms.locfileid: "59401010"
 | 修正 | 指定一天中运行计划完整扫描以完成修正的时间 | [配置计划Microsoft Defender 防病毒扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | 报告 | 关闭增强型通知 | [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
 | 根 | 关闭Microsoft Defender 防病毒 | 未 (此设置必须设置为"未配置"，以确保任何已安装的第三方防病毒应用) 
-| 根 | 定义绕过代理服务器的地址 | [配置设备代理和 Internet 连接设置](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
-| 根 | 定义代理自动 (.pac) 以连接到网络 | [配置设备代理和 Internet 连接设置](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
-| 根 | 定义用于连接到网络的代理服务器 | [配置设备代理和 Internet 连接设置](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
+| 根 | 定义绕过代理服务器的地址 | 未使用 |
+| 根 | 定义代理自动 (.pac) 以连接到网络 | 未使用 |
+| 根 | 定义用于连接到网络的代理服务器 | 未使用 |
 | 根 | 配置列表的本地管理员合并行为 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 根 | 允许反恶意软件服务以正常优先级启动 | [配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 根 | 允许反恶意软件服务始终运行 | [配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 根 | 关闭常规修正 | [配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 根 | 随机化计划任务时间 | [配置计划扫描以用于Microsoft Defender 防病毒](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| 扫描 | 允许用户暂停扫描 | [阻止用户查看](prevent-end-user-interaction-microsoft-defender-antivirus.md)或与用户Microsoft Defender 防病毒用户界面 (不支持Windows 10)  |
+| 扫描 | 允许用户暂停扫描 | [阻止用户查看](prevent-end-user-interaction-microsoft-defender-antivirus.md)或与 Microsoft Defender 防病毒 用户界面交互 (不支持Windows 10)  |
 | 扫描 | 在运行计划扫描之前检查最新的病毒和间谍软件定义 | [管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | 扫描 | 定义强制进行跟进扫描的天数 | [管理过期终结点的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
 | 扫描 | 打开"捕获完整扫描" | [管理过期终结点的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
