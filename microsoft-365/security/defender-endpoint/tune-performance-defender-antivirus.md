@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 964447ee755d5587d03c6c3ee6cb56131013d34d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0ceb715549c208ccc7f961c115083c50e56dd526
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162252"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400542"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>性能分析器Microsoft Defender 防病毒
 
@@ -43,7 +43,7 @@ ms.locfileid: "59162252"
 1. 运行性能分析器以收集终结点上Microsoft Defender 防病毒事件的性能记录。
 
    > [!NOTE]
-   > **Microsoft-antimalware-Engine** 类型的 Microsoft Defender 防病毒 事件的性能通过性能分析器进行记录。
+   > Microsoft **Microsoft Defender 防病毒-Antimalware-Engine** 类型的事件的性能通过性能分析器进行记录。
 
 2. 使用不同的录制报告分析扫描结果。
 
@@ -93,7 +93,7 @@ ms.locfileid: "59162252"
 Microsoft Defender 防病毒性能分析器具有以下先决条件：
 
 - 支持Windows版本：Windows 10、Windows 11 和 Windows Server 2016 及以上版本
-- 平台版本：4.18.2108.X+
+- 平台版本：4.18.2108.7+
 - PowerShell 版本：PowerShell 版本 5.1
 
 ## <a name="powershell-reference"></a>PowerShell 参考
@@ -412,7 +412,7 @@ Accept wildcard characters: False
 
 
 ### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess 
-指定每个顶部进程每个顶部文件的输出的顶级扫描次数，按"持续时间"排序。
+指定每个顶部进程每个顶部文件的输出（按"持续时间"排序）的顶级扫描次数。
 
 
 ```yaml

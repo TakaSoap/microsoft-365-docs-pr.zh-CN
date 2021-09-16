@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8395a9c5dd2389fe25761dcbe76a13051baaa1b4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6e918c85e50f0e6f675cc623cf7765de6518ab1d
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573015"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401286"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>针对 ATP ASR 规则报告 Microsoft Defender 并排除故障
 
@@ -32,10 +32,10 @@ ms.locfileid: "58573015"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-安全Microsoft 365中心是监视和管理 Microsoft 标识、数据、设备、应用和基础结构的安全性的新界面。 可在此处轻松查看组织的安全运行状况、配置设备、用户和应用，并获取可疑活动的警报。 Microsoft 365 安全中心旨在帮助安全管理员和安全操作团队更好地管理和保护其组织。 请访问 上Microsoft 365安全中心 <https://security.microsoft.com> 。
+安全Microsoft 365中心是监视和管理 Microsoft 标识、数据、设备、应用和基础结构的安全性的新界面。 可在此处轻松查看组织的安全运行状况、配置设备、用户和应用，并获取可疑活动的警报。 Microsoft 365 安全中心旨在帮助安全管理员和安全操作团队更好地管理和保护其组织。 请访问 Microsoft 365安全中心 <https://security.microsoft.com> 。
 
 在Microsoft 365安全中心，我们将提供你当前 ASR 规则配置和您资产中的事件的完整外观。 请注意，你的设备必须载入到 Microsoft Defender for Endpoint 服务中，以填充这些报告。
-下面是来自安全中心安全中心Microsoft 365报告 (攻击面减少 \>  \> **) 。** 在设备级别 **，从攻击** 面减少规则 **窗格中选择配置** 。 将显示以下屏幕，可在其中选择特定设备并检查其单独的 ASR 规则配置。
+下面是报告设备攻击面减少Microsoft 365下的安全 ( \>  \> **屏幕截图**) 。 在设备级别 **，从攻击** 面减少规则 **窗格中选择配置** 。 将显示以下屏幕，可在其中选择特定设备并检查其单独的 ASR 规则配置。
 
 :::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="ASR 规则屏幕。":::
 
@@ -43,11 +43,11 @@ ms.locfileid: "58573015"
 
 Microsoft Defender for Endpoint 的最强大功能之一是高级搜寻。 如果你不熟悉高级搜寻，请参阅使用高级搜寻主动 [搜寻威胁](advanced-hunting-overview.md)。
 
-高级搜寻是基于查询的 (Kusto 查询语言) 威胁搜寻工具，允许你浏览从你的设备中收集的最多 30 天的捕获 (原始) 数据。 通过高级搜寻，你可以主动检查事件以查找有趣的指示器和实体。 灵活访问数据有助于不受约束地搜寻已知威胁和潜在威胁。
+高级搜寻是基于查询的 (Kusto 查询语言) 威胁搜寻工具，允许你浏览从你的设备收集的最多 30 天的捕获 (原始) 数据。 通过高级搜寻，你可以主动检查事件以查找有趣的指示器和实体。 灵活访问数据有助于不受约束地搜寻已知威胁和潜在威胁。
 
 通过高级搜寻，可以提取 ASR 规则信息、创建报告，并获取有关给定 ASR 规则审核或阻止事件的上下文的深入信息。
 
-ASR 规则事件可从应用程序高级搜寻部分中的 DeviceEvents 表中Microsoft 365 Defender。 例如，如下所示的简单查询可以报告过去 30 天内将 ASR 规则作为数据源的所有事件，并按 ActionType 计数汇总这些事件，在这种情况下，它将是 ASR 规则的实际代码名。
+ASR 规则事件可从应用的高级搜寻部分中的 DeviceEvents 表中Microsoft 365 Defender。 例如，如下所示的简单查询可以报告过去 30 天内将 ASR 规则作为数据源的所有事件，并按 ActionType 计数汇总这些事件，在这种情况下，它将是 ASR 规则的实际代码名。
 
 :::image type="content" source="images/adv-hunt-querynew.png" alt-text="高级搜寻查询。":::
 
@@ -57,9 +57,9 @@ ASR 规则事件可从应用程序高级搜寻部分中的 DeviceEvents 表中Mi
 
 ## <a name="microsoft-defender-for-endpoint-machine-timeline"></a>Microsoft Defender for Endpoint 计算机时间线
 
-Microsoft Defender for Endpoint 计算机时间线是高级搜寻的替代方法，但范围较窄。 你可以查看过去六个月内设备的所有收集的事件，在 Microsoft 365 Defender 中，通过进入计算机列表，选择给定计算机，然后单击时间线选项卡。
+Microsoft Defender for Endpoint 计算机时间线是高级搜寻的替代方法，但范围较窄。 你可以查看过去六个月内在 Microsoft 365 Defender 中收集的所有设备事件，方式为：进入计算机列表，选择给定计算机，然后单击时间线选项卡。
 
-下图是给定终结点上这些事件的时间线视图的屏幕截图。  从此视图中，可以基于右侧窗格中的任何事件组筛选事件列表。 还可以在查看警报和滚动历史时间线时启用或禁用已标记和详细事件。
+下图是给定终结点上这些事件的时间线视图的屏幕截图。 从此视图中，可以基于右侧窗格中的任何事件组筛选事件列表。 还可以在查看警报和滚动历史时间线时启用或禁用已标记和详细事件。
 
 :::image type="content" source="images/mic-sec-def-timelinenew.png" lightbox="images/mic-sec-def-timelinenew.png" alt-text="Microsoft 365 Defender时间线。":::
 
@@ -89,9 +89,9 @@ Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Id
 
 :::image type="content" source="images/getmpref-examplenew.png" alt-text="获取 mpreference 示例。":::
 
-上面显示了设置不同于 0 的 ASR 规则的所有 (未配置) 。
+上面显示了设置不同于"0"的 ASR 规则的所有 (未配置) 。
 
-然后，下一步是列出每个 (配置) 的"阻止"或"审核"操作。
+下一步是列出配置每个 (规则) "阻止"或"审核"操作。
 
 ```powershell
 Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions
@@ -103,13 +103,13 @@ Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ac
 
 可以在管理日志中查看 ASR 规则Windows Defender事件。
 
-若要访问它，请Windows事件查看器，并浏览到应用程序和服务日志  >  **Microsoft**  >  **Windows Windows Defender**  >    >  **操作**。
+若要访问它，请Windows事件查看器，并浏览到应用程序和服务日志Microsoft Windows Windows Defender \>  \>  \>  \> **操作**。
 
 :::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="事件查看器 scr。":::
 
 ## <a name="microsoft-defender-malware-protection-logs"></a>Microsoft Defender 恶意软件保护日志
 
-您还可以通过专用的命令行工具（称为 ）查看规则Microsoft Defender 防病毒，该工具可用于管理和配置任务，并 `*mpcmdrun.exe*` 根据需要自动执行任务。
+您还可以通过专用的命令行工具（称为 Microsoft Defender 防病毒）查看规则事件，该工具可用于管理和配置任务，并 `*mpcmdrun.exe*` 根据需要自动执行任务。
 
 您可以在 *%ProgramFiles%\Windows Defender\MpCmdRun.exe找到此实用工具*。 必须从提升的命令提示符下运行 (，即以管理员角色) 。
 

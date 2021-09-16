@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/09/2021
+ms.date: 09/13/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 6ca4616cd1c2818e0a1eb0b5c286142e9f65f32b
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 8f1025ac7392e146be3486655513ce39086d3337
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353582"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400782"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>使用组策略安排防病毒扫描
 
@@ -43,8 +43,12 @@ ms.locfileid: "59353582"
 
 5. 像平常一样部署组策略对象。 如果需要有关组策略对象的帮助，请参阅 [创建组策略对象](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object)。
 
-> [!TIP]
-> 请参阅 [管理何时应下载](manage-protection-update-schedule-microsoft-defender-antivirus.md) 和应用保护更新和阻止或 [允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) 主题。
+> [!NOTE]
+> 在配置计划扫描时，设置"仅在计算机打开但没有使用时启动计划扫描"（默认启用）可以通过要求计算机先处于空闲状态来影响预期的计划时间。
+>
+> 对于每周扫描，Windows服务器的默认行为是在计算机空闲时在自动维护之外进行扫描。 默认情况下，Windows 10在计算机空闲时在自动维护期间扫描。 若要更改此行为，请通过禁用 **ScanOnlyIfIdle** 修改设置，然后定义计划。
+
+有关详细信息，请参阅管理 [何时](manage-protection-update-schedule-microsoft-defender-antivirus.md) 应下载和应用保护更新和阻止或允许用户 [本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) 主题。
 
 ## <a name="group-policy-settings-for-scheduling-scans"></a>计划扫描的组策略设置
 
@@ -69,14 +73,14 @@ ms.locfileid: "59353582"
 | 位置 | 设置 | 说明 | 如果未配置 (默认设置)  |
 |---|---|---|---|
 | 修正 | 指定一周中的哪些天运行计划的完全扫描以完成修正 | 指定运行 () 或从不运行扫描的日。 | 从不 |
-| 修正 | 指定一天中运行计划完整扫描以完成修正的时间 | 指定午夜过后的分钟数 (例如，输入 **60** 表示凌晨 1 点)  | 2 a.m. |
+| 修正 | 指定一天中运行计划完整扫描以完成修正的时间 | 例如，指定午夜后 (分钟数，输入 **60** 表示凌晨 1 )  | 2 a.m. |
 
 ## <a name="group-policy-settings-for-scheduling-daily-scans"></a>用于计划每日扫描的组策略设置
 
 | 位置 | 设置 | 说明 | 如果未配置 (默认设置)  |
 |:---|:---|:---|:---|
 | 扫描 | 指定每天运行快速扫描的间隔 | 指定下一次快速扫描之前应经过的小时数。 例如，若要每两小时运行一次，请输入 **2，** 一天一次，请输入 **24**。 输入 **0** 从不运行每日快速扫描。 | 从不 |
-| 扫描 | 指定每日快速扫描的时间 | 指定午夜过后的分钟数 (例如，输入 **60** 表示凌晨 1 点)  | 2 a.m. |
+| 扫描 | 指定每日快速扫描的时间 | 例如，指定午夜后 (分钟数，输入 **60** 表示凌晨 1 )  | 2 a.m. |
 
 ## <a name="group-policy-settings-for-scheduling-scans-after-protection-updates"></a>用于计划保护更新后扫描的组策略设置
 

@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 80d8ec3a48ea8388d6c1807f2eccb9df334394de
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 337f034dced0cad5d483b55fa279a7b220fb8e72
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196286"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401574"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>从第三方解决方案迁移时解决 Microsoft Defender 防病毒软件问题
 
@@ -37,11 +37,11 @@ ms.locfileid: "59196286"
 
 通过选择任务栏中的"搜索"图标并搜索事件查看器，打开 *事件查看器应用*。
 
-有关应用程序Microsoft Defender 防病毒的信息可在应用程序和服务日志Microsoft Windows  >    >  **Windows Defender**  >  **下找到**。
+有关应用程序Microsoft Defender 防病毒的信息可在应用程序和服务日志Microsoft Windows \>  \> **Windows Defender** \> **下找到**。
 
 从"操作"**下方选择**"打开 **"。**
 
-从详细信息窗格中选择事件将在下窗格中的"常规"和"详细信息"选项卡下 **显示有关****事件的详细信息**。
+从详细信息窗格中选择事件将在下窗格中的"常规"和"详细信息"选项卡下显示有关 **事件的详细信息**。 
 
 ## <a name="microsoft-defender-antivirus-wont-start"></a>Microsoft Defender 防病毒无法启动
 
@@ -52,23 +52,23 @@ ms.locfileid: "59196286"
 事件 ID|日志名称|说明|源
 ---|---|---|---
 15 |应用程序|更新Windows Defender状态以SECURITY_PRODUCT_STATE_OFF。|安全中心
-5007|Microsoft-Windows-Windows Defender/Operational|Windows Defender 防病毒配置已更改。  如果这是意外事件，你应该查看设置，因为这可能是恶意软件的结果。 <p> **旧值：** Default\IsServiceRunning = 0x0 p>**新值**：HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
+5007|Microsoft-Windows-Windows Defender/Operational|Windows Defender 防病毒配置已更改。 如果这是意外事件，你应该查看设置，因为这可能是恶意软件的结果。 <p> **旧值：** Default\IsServiceRunning = 0x0 <p> **新值：** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/Operational|Windows Defender 防病毒间谍软件和其他可能不需要的软件扫描处于禁用状态。|Windows Defender
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>如何判断Microsoft Defender 防病毒是否因为安装了第三方防病毒而无法启动
 
-在 Windows 10设备上，如果未使用 Microsoft Defender for Endpoint，并且已安装第三方防病毒，Microsoft Defender 防病毒将自动关闭。 如果你使用的是安装了第三方防病毒的 Microsoft Defender for Endpoint，Microsoft Defender 防病毒被动模式启动，功能会减少。
+在Windows 10设备上，如果未使用 Microsoft Defender for Endpoint，并且安装了第三方防病毒，Microsoft Defender 防病毒将自动关闭。 如果你使用的是安装了第三方防病毒的 Microsoft Defender for Endpoint，Microsoft Defender 防病毒被动模式启动，功能会减少。
 
 > [!TIP]
 > 上述方案仅适用于Windows 10。 其他版本的 Windows对第三[Microsoft Defender 防病毒](microsoft-defender-antivirus-compatibility.md)安全软件一起运行的版本有不同的响应。
 
-#### <a name="use-services-app-to-check-if-microsoft-defender-antivirus-is-turned-off"></a>使用"服务"应用检查Microsoft Defender 防病毒是否已关闭
+#### <a name="use-services-app-to-check-if-microsoft-defender-antivirus-is-turned-off"></a>使用"服务"应用检查Microsoft Defender 防病毒是否关闭
 
 若要打开"服务"应用，请从 **任务栏中选择"** 搜索"图标，然后搜索 *服务*。 您还可以通过键入 *services.msc* 从命令行打开应用程序。
 
-有关服务Microsoft Defender 防病毒将在服务应用下列出Windows Defender  >  **操作**。 防病毒服务名称是Windows Defender 防病毒 *服务*。
+有关Microsoft Defender 防病毒的信息将列在"服务"应用下"Windows Defender \> **操作"下**。 防病毒服务名称是Windows Defender 防病毒 *服务*。
 
-检查应用时，你可能会看到 Windows Defender 防病毒 *服务* 已设置为手动，但在尝试手动启动此服务时，你收到一条警告，指出"本地计算机上 Windows Defender 防病毒 服务服务已启动，然后已停止"。 *如果某些服务未由其他服务或程序* 使用，则会自动停止这些服务。
+检查应用时，你可能会看到 Windows Defender 防病毒 *Service* 已设置为手动，但在尝试手动启动此服务时，你收到一条警告，指出"本地计算机上 Windows Defender 防病毒 服务服务已启动，然后已停止"。 *如果某些服务未由其他服务或程序* 使用，则会自动停止这些服务。
 
 这表示Microsoft Defender 防病毒已自动关闭，以保留和第三方防病毒的兼容性。
 
@@ -80,28 +80,28 @@ ms.locfileid: "59196286"
 GPresult.exe /h gpresult.html
 ```
 
-这将生成位于 *./gpresult.html 的报告*。 打开此文件，你可能会看到以下结果，具体取决于Microsoft Defender 防病毒关闭方式。
+这将生成位于 *./gpresult.html* 的报告。 打开此文件，你可能会看到以下结果，具体取决于Microsoft Defender 防病毒关闭方式。
 
 ##### <a name="group-policy-results"></a>组策略结果
 
-##### <a name="if-security-settings-are-implemented-via-group-policy-gpo-at-the-domain-or-local-level-or-though-system-center-configuration-manager-sccm"></a>如果安全设置通过组策略 (GPO) 在域或本地级别实现，或者通过 System center configuration manager (SCCM) 
+##### <a name="if-security-settings-are-implemented-via-group-policy-gpo-at-the-domain-or-local-level-or-though-system-center-configuration-manager-sccm"></a>如果安全设置是通过组策略 (GPO) 在域或本地级别实现，或者通过 System center configuration manager (SCCM) 
 
 在 GPResults 报告中，在标题 Windows *Components/Windows Defender 防病毒* 下，你可能会看到如下条目，指示Microsoft Defender 防病毒关闭。
 
-Policy|Setting|获胜的 GPO
+Policy|设置|获胜的 GPO
 ---|---|---
 关闭Windows Defender 防病毒|已启用|Win10-Workstations
 
-###### <a name="if-security-settings-are-implemented-via-group-policy-preference-gpp"></a>如果安全设置通过组策略首选项 (GPP) 
+###### <a name="if-security-settings-are-implemented-via-group-policy-preference-gpp"></a>如果安全设置是通过组策略首选项 (GPP) 
 
-在标题"注册表项 (项路径 *：HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender，值名称：DisableAntiSpyware) "* 下，你可能会看到如下条目，指示Microsoft Defender 防病毒已关闭。
+在标题"注册表项 (项路径 *： HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender， 值名称： DisableAntiSpyware) "* 下，你可能会看到如下条目，指示 Microsoft Defender 防病毒 已关闭。
 
 DisableAntiSpyware|-
 ---|---
 获胜的 GPO|Win10-Workstations
 结果：成功|
 **常规**|
-Action|更新
+操作|更新
 **属性**|
 配置单元|HKEY_LOCAL_MACHINE
 密钥路径|SOFTWARE\Policies\Microsoft\Windows Defender
@@ -119,7 +119,7 @@ Action|更新
 
 ###### <a name="if-security-settings-are-set-in-windows-or-your-windows-server-image"></a>如果在服务器映像或 Windows中Windows安全设置
 
-你虚构的管理员可能已经在本地通过 *GPEdit.exe* *、LGPO.exe* 或通过修改任务序列中的注册表来设置安全策略 **[DisableAntiSpyware。](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)** 您可以为[受信任映像标识符配置](/windows-hardware/manufacture/desktop/configure-a-trusted-image-identifier-for-windows-defender)Microsoft Defender 防病毒。
+你虚构的管理员可能已经在本地通过 *GPEdit.exe* *、LGPO.exe* 或通过修改任务序列中的注册表来设置安全策略 **[DisableAntiSpyware。](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)** 您可以[为受信任映像标识符配置](/windows-hardware/manufacture/desktop/configure-a-trusted-image-identifier-for-windows-defender)Microsoft Defender 防病毒。
 
 ### <a name="turn-microsoft-defender-antivirus-back-on"></a>打开Microsoft Defender 防病毒"
 

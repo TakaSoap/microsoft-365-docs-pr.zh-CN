@@ -1,5 +1,5 @@
 ---
-title: 设置 Microsoft Defender for Endpoint 部署
+title: 设置适用于终结点的 Microsoft Defender 部署
 description: 了解如何设置 Microsoft Defender for Endpoint 的部署
 keywords: 部署， 设置， 许可验证， 租户配置， 网络配置
 search.product: eADQiWindows 10XVcnh
@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4fff8c3f461a84d7bb6616c2264120a4c8fcd0ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d7bb79ca6e04d283ee9ec9d7e01113364ebd6588
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196566"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400602"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置 Microsoft Defender for Endpoint 部署
+# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置适用于终结点的 Microsoft Defender 部署
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -52,17 +52,17 @@ ms.locfileid: "59196566"
 - 网络配置
 
 > [!NOTE]
-> 为了引导您完成典型部署，此方案将仅涉及 Microsoft Endpoint Configuration Manager。 Defender for Endpoint 支持使用其他载入工具，但不在部署指南中介绍这些方案。 有关详细信息，请参阅 [将设备载入到 Microsoft Defender for Endpoint](onboard-configure.md)。
+> 为了指导你完成典型部署，此方案将仅涉及Microsoft Endpoint Configuration Manager。 Defender for Endpoint 支持使用其他载入工具，但不在部署指南中介绍这些方案。 有关详细信息，请参阅 [将设备载入到 Microsoft Defender for Endpoint](onboard-configure.md)。
 
 ## <a name="check-license-state"></a>检查许可证状态
 
-可以通过管理中心或管理门户检查许可证状态及其是否Microsoft Azure **设置**。
+可通过管理中心或管理门户检查许可证状态及其是否Microsoft Azure **设置**。
 
 1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
    ![Azure 许可页面的图像。](images/atp-licensing-azure-portal.png)
 
-1. 或者，在管理中心中，导航到"**帐单**  >  **""订阅"。**
+1. 或者，在管理中心中，导航到"**帐单** \> **""订阅"。**
 
     在屏幕上，你将看到所有预配的许可证及其当前 **状态**。
 
@@ -111,7 +111,7 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 1. 打开组策略管理控制台。
 2. 根据组织实践创建策略或编辑现有策略。
-3. 编辑组策略并导航到"管理模板Windows组件数据收集和预览版配置连接的用户体验和遥测服务的已验证 **\> \> \> 代理使用情况**。 
+3. 编辑组策略并导航到"管理模板Windows组件数据收集和预览版配置连接的用户体验和遥测服务的已验证 **\> \> \> 代理用法**。
 
    ![组策略配置的图像。](images/atp-gpo-proxy1.png)
 
@@ -143,7 +143,7 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 > [!NOTE]
 >
 > - 这将影响所有应用程序，包括使用带默认代理的 WinHTTP 的 Windows 服务。
-> - 要更改拓扑结构 (例如：从办公室到家庭) netsh 将发生故障。 使用基于注册表的静态代理配置。
+> - 更改拓扑结构（例如 (：从办公室到家庭) netsh 将发生故障。 使用基于注册表的静态代理配置。
 
 1. 打开提升的命令行:
     1. 转到“**开始**”并键入“**cmd**”。
@@ -163,7 +163,7 @@ Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 20
 
 ### <a name="proxy-service-urls"></a>代理服务 URL
 
-仅在具有版本 1803 Windows 10更高版本的设备时，才需要包含 v20 的 URL。 例如， `us-v20.events.data.microsoft.com` 仅在设备位于版本 1803 Windows 10版本时需要。
+仅在具有版本 1803 Windows 10更高版本的设备时，才需要包含 v20 的 URL。 例如， `us-v20.events.data.microsoft.com` 仅在设备位于 Windows 10版本 1803 或更高版本时需要 。
 
 如果代理或防火墙阻止匿名流量，因为 Microsoft Defender for Endpoint 传感器从系统上下文连接，请确保允许列出的 URL 中的匿名流量。
 
@@ -196,9 +196,8 @@ Defender for Endpoint 内置于 Azure 云中，部署在以下区域：
 
 > [!NOTE]
 > 作为基于云的解决方案，IP 地址范围可能会更改。 建议移动到基于 DNS 的规则。
-
-> [!NOTE]
-> 如果你是美国政府客户，请参阅美国政府终结点 [Defender 页面中的相应](gov.md#service-backend-ip-ranges) 部分。
+>
+> 如果你是美国政府客户，请参阅美国政府 Defender [for Endpoint 页面中的相应](gov.md#service-backend-ip-ranges) 部分。
 
 ## <a name="next-step"></a>后续步骤
 

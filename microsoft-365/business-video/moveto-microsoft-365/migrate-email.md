@@ -23,11 +23,11 @@ search.appverid:
 - MOE150
 description: 了解如何将电子邮件、联系人和日历从 Google Workspace 迁移到 Microsoft 365 for business。
 ms.openlocfilehash: 58037d033c35bad97d5b18dc408e5450340d0c25
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357190"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402006"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>从 Google Workspace 迁移业务电子邮件和日历
 
@@ -72,13 +72,13 @@ ms.locfileid: "59357190"
 1. 选择 **"安全性**"，向下滚动并打开 **API 控件**。 
 1. 向下滚动并选择"**管理域范围的委派"。**
 1. 选择 **"添加新** "，然后输入之前记下的客户端 ID。
-1. 然后输入 Google API 的 OAuth 范围。 可在步骤 5 [aka.ms/GoogleWorkspaceMigration](/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) 以下选项获得这些选项：
+1. 然后输入 Google API 的 OAuth 范围。 可在步骤 5 [aka.ms/GoogleWorkspaceMigration](/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) 以下选项进行以下操作：
 
     `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing`
  
 1. 选择 **"授权"。** 
 
-### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>为要发送到邮箱的邮件创建Microsoft 365
+### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>为要发送到邮件的邮件创建Microsoft 365
 
 1. 返回到 **Google Workspace 管理** 控制台。
 1. 选择 **"域****"，"管理** 域"，然后选择"**添加域别名"。** 
@@ -119,7 +119,7 @@ ms.locfileid: "59357190"
 
 完成后，即可进行迁移。 
 
-1. 在"管理中心"的 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>Microsoft 365 管理中心，向下滚动到"管理 **中心****"，然后选择"Exchange"。** 
+1. 在"管理中心"的 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心，</a>向下滚动到"管理 **中心**"，然后选择 **"Exchange"。** 
 1. 在 **"收件人"** 下，选择 **"迁移**"，选择"**新建**"，Exchange Online"**迁移**"，选择 **"G Suite 迁移**"，然后选择"下一 **步"。** 
 1. 创建包含要迁移的邮箱列表的 CSV 文件。 确保文件遵循以下格式： 
 
@@ -133,7 +133,7 @@ ms.locfileid: "59357190"
 
 1. 选择 **"选择文件**"，导航到 CSV 文件，选择它，选择"**打开**"，然后选择"下一 **步"。** 
 1. 验证要用于测试的管理员电子邮件地址。 
-1. 选择 **"选择文件**"，导航到之前创建的 JSON 文件 (通常位于计算机上下载文件夹中) ，选择它，选择"**打开**"，然后选择"下一 **步"。** 
+1. 选择 **"选择** 文件"，导航到之前创建的 JSON 文件 (通常位于计算机上"下载"文件夹中) ，选择"打开"，然后选择"下一 **步"。**  
 1. 在"新建迁移批处理 **名称"字段中输入名称**。
 1. 在"目标传递域"字段中输入创建的 **子域，** 选择"下一步 **"，然后选择**"新建 **"。** 
 1. 保存信息后，选择"确定 **"。** 
@@ -145,5 +145,5 @@ ms.locfileid: "59357190"
 1. 该过程完成后，状态将更改为"**已完成"。** 
 1. 如果需要，可以选择" **查看详细信息** "，了解有关迁移的详细信息。 
 1. 选择“**关闭**”。 
-1. 打开Outlook验证来自 Google Workspace 的所有电子邮件是否都已成功迁移。
+1. 打开Outlook验证来自 Google Workspace 的所有电子邮件已成功迁移。
 也可以对日历项目和联系人重复此操作。

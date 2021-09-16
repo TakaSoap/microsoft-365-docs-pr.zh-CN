@@ -17,14 +17,17 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用新闻服务为组织启用自定义新闻源，为用户提供行业最新新闻标题和来自组织的信息。
-ms.openlocfilehash: 47c6f16efedbc3c5629bfe81e85cc6df66f51de2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e3c2e0526074571ffbe976c98fe57069adcdb9ab
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170413"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400578"
 ---
 # <a name="manage-industry-news"></a>管理行业新闻
+
+> [!NOTE] 
+> 必应目前&英文市场提供行业更新的最新动态。
 
 若要为用户提供有关你的行业和组织中信息的新闻标题，请使用新闻服务为组织启用自定义新闻源。 还可以启用每日行业更新电子邮件，并管理新选项卡必应和Microsoft Edge的设置。
 
@@ -54,7 +57,7 @@ ms.locfileid: "59170413"
 
 1. 在" **主题** "字段中，输入您希望查看有关新闻文章的主题。 用户不能更改这些主题。
 
-1. 您可以阻止在"排除内容"字段中包含 **关键字** 的文章。 例如，为了避免包含关键字"bake"的文章显示在新闻源中，在"排除内容"字段中添加关键字"bake"。  避免包括有关 (、IT 等的一般) ;他们可以阻止相关内容显示在企业新闻源中。
+1. 您可以阻止在"排除内容"字段中包含 **关键字** 的文章。 例如，为了避免包含关键字"bake"的文章显示在新闻源中，在"排除内容"字段中添加关键字"bake"。  避免将常规术语 () 、it 等术语;他们可以阻止相关内容显示在企业新闻源中。
 
 1. 选择“**保存**”。 可能需要 24 小时才能显示更改。
 
@@ -88,12 +91,12 @@ ms.locfileid: "59170413"
 
 :::image type="content" source="../../media/enable-news-for-edu.png" alt-text="行业新闻和热门新闻切换":::
 
-## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge选项卡页
+## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge新选项卡页
 
-当用户使用有效的工作或学校帐户Microsoft Edge (87 或) 版本 87 或更高版本时，他们可以看到专为组织定制的新闻。
+当用户使用有效的工作或学校帐户Microsoft Edge (87 或) 版本 87 或更高版本登录时，他们可以看到专为组织定制的新闻。
 
 1. In the Microsoft 365 管理中心， go to **设置**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
-2. 在"新闻 **"** 面板中，单击 **Microsoft Edge新选项卡页"。**
+2. 在"**新闻"** 面板中，Microsoft Edge **新选项卡页"。**
 3. 选择 **"Office 365选项卡页上的"允许显示内容"。** 启用后，用户可以自定义其新选项卡以显示来自Office 365的信息，包括推荐文件和最近使用的文件，以及SharePoint网站和其他信息。
 4. 选择 **"显示新选项卡页上的公司信息和行业新闻"。** 对于选择查看新选项卡上的文章的用户，将显示有关组织和行业的新闻文章。
 

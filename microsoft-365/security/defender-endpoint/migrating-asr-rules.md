@@ -16,11 +16,11 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.openlocfilehash: 0c2ffdde4ff259f2a2ef098a6d715cbcd785dfe4
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357627"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401682"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>从第三方 HIPS 迁移到 ASR 规则
 
@@ -51,7 +51,7 @@ ms.locfileid: "59357627"
 - **进程**- *
 - **操作**- 进程执行
 - **文件/文件夹、注册表项/值、进程、服务的示例：-*
-- **攻击面** 减少规则 - ASR 规则具有内置规则，可阻止从可移动驱动器启动不受信任的和未签名的程序："阻止从 USB 运行的不受信任的和未签名的进程"，GUID "b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4"。
+- **攻击面** 减少规则 - ASR 规则具有内置规则，可阻止从可移动驱动器启动不受信任的和未签名的程序："阻止从 USB 运行的不受信任的和未签名的进程"、GUID"b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4"。
 - **其他推荐功能**- 请使用 Microsoft Defender for Endpoint 探索 USB 设备和其他可移动媒体的其他控件：如何使用 Microsoft Defender for Endpoint 控制 USB 设备和其他 [可移动媒体](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)。
 
 ### <a name="block-mshta-from-launching-certain-child-processes"></a>阻止 Mshta 启动某些子进程
@@ -61,7 +61,7 @@ ms.locfileid: "59357627"
 - **操作**- 进程执行
 - **文件/文件夹、注册表项/** 值、进程、服务 - powershell.exe、cmd.exe、regsvr32.exe
 - **攻击面减少规则**- ASR 规则不包含任何特定规则来阻止子进程"mshta.exe"。 此控件位于 Exploit Protection 或 Windows Defender 应用程序控制中。
-- **其他推荐功能**- Windows Defender应用程序控制以防止mshta.exe完全执行。 如果你的组织需要"mshta.exe应用"，请配置特定的 exploit Protection Windows Defender，以防止mshta.exe启动子进程。
+- **其他推荐功能**- Windows Defender应用程序控制以防止mshta.exe完全执行。 如果你的组织需要"mshta.exe应用"，请配置特定的Windows Defender Exploit Protection 规则，mshta.exe启动子进程。
 
 ### <a name="block-outlook-from-launching-child-processes"></a>阻止Outlook启动子进程
 
@@ -96,7 +96,7 @@ ms.locfileid: "59357627"
 - **操作**- 文件读取
 - **文件/文件夹、注册表项/** 值、进程、服务 - C：\Users *\AppData**.js、C：\Users*\Downloads**.js
 - **攻击面减少** 规则 - 由于可靠性和性能问题，ASR 规则无法阻止特定进程读取特定脚本文件类型。 我们有一个规则来阻止可能源自这些方案的攻击途径。 规则名称为"阻止 JavaScript 或 VBScript 启动下载的可执行内容" (GUID "d3e037e1-3eb8-44c8-a917-57927947596d") "阻止执行可能混淆的脚本" (GUID" 5beb7efe-fd9a-4556-801d-275e5ffc04cc") 。
-- 其他推荐功能 **-** 尽管存在在这些方案中缓解某些攻击途径的特定 ASR 规则，但需要指出的是，AV 默认情况下能够通过反恶意软件扫描接口 (AMSI) 实时检查脚本 (PowerShell、Windows 脚本主机、JavaScript、VBScript 等) 。 详细信息在此处提供：[反恶意软件扫描接口 (AMSI) 。 ](/windows/win32/amsi/antimalware-scan-interface-portal)
+- 其他推荐功能 **-** 尽管在这些方案中存在特定的 ASR 规则可缓解某些攻击途径，但需要指出的是，默认情况下，AV 可以通过反恶意软件扫描接口 (AMSI) 实时检查脚本 (PowerShell、Windows Script Host、JavaScript、VBScript 等) 。 详细信息在此处提供： [反恶意软件扫描接口 (AMSI) ](/windows/win32/amsi/antimalware-scan-interface-portal)。
 
 ### <a name="block-launch-of-child-processes"></a>阻止启动子进程
 
@@ -132,7 +132,7 @@ ms.locfileid: "59357627"
 - **操作**- 进程执行
 - **文件/文件夹、注册表项/** 值、进程、服务 - tor.exe、bittorrent.exe、cmd.exe、powershell.exe 等示例
 - **攻击面减少规则**- 总的来说，ASR 规则不能作为应用程序管理器工作。
-- **其他推荐功能**- 若要阻止用户启动特定进程或程序，建议Windows Defender应用程序控制。 Microsoft Defender for Endpoint File and Cert indicators， can be used in an Incident Response scenario ( (as an application control mechanism) .
+- **其他推荐功能**- 若要阻止用户启动特定进程或程序，建议Windows Defender应用程序控制。 Microsoft Defender for Endpoint File and Cert indicators， can be used in an Incident Response scenario (as a application control mechanism) .
 
 ### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>阻止未经授权更改Microsoft Defender 防病毒配置
 

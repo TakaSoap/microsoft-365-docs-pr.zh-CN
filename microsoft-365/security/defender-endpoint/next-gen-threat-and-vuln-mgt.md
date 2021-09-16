@@ -1,7 +1,7 @@
 ---
 title: 威胁和漏洞管理
 description: 这一新功能使用基于游戏变化风险的方法来发现、确定终结点漏洞和错误配置并修复这些漏洞和错误配置。
-keywords: 威胁& 漏洞管理， 危险和漏洞管理， Microsoft Defender for Endpoint TVM， Microsoft Defender for Endpoint-TVM， 漏洞管理， 漏洞评估， 威胁和漏洞扫描， 安全配置评估， 适用于终结点的 Microsoft Defender， 终结点漏洞， 下一代
+keywords: 威胁& 漏洞管理， 危险和漏洞管理， 适用于 Endpoint TVM 的 Microsoft Defender， 适用于 Endpoint-TVM 的 Microsoft Defender， 漏洞管理， 漏洞评估， 威胁和漏洞扫描， 安全配置评估， 适用于终结点的 Microsoft Defender， 终结点漏洞， 下一代
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 06fdea1c4d84ca4cd23aeb7e715c0087f65275b1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f909d39fee3eb55caaa47ef6a636d33ff4c7f025
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162276"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400170"
 ---
 # <a name="threat-and-vulnerability-management"></a>威胁和漏洞管理
 
@@ -31,7 +31,6 @@ ms.locfileid: "59162276"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
 有效识别、评估和修正终结点缺陷是运行正常安全计划并降低组织风险的关键。 威胁和漏洞管理是减少组织风险，强化终结点表面区域和提高组织复原能力的基础结构。
@@ -40,11 +39,11 @@ ms.locfileid: "59162276"
 
 观看此视频，快速了解危险和漏洞管理。
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLsn]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLsn]
 
 ## <a name="bridging-the-workflow-gaps"></a>桥接工作流差距
 
-威胁漏洞管理内置、实时且由云支持。 它与 Microsoft 终结点安全堆栈、Microsoft Intelligent Security Graph应用程序分析知识库完全集成。
+威胁漏洞管理内置、实时且由云支持。 它与 Microsoft 终结点安全堆栈、Microsoft Intelligent Security Graph和应用程序分析知识库完全集成。
 
 漏洞管理是行业首个在修正过程中弥补安全管理和 IT 管理差距的解决方案。 通过将安全任务或票证与 Microsoft Intune 和 Microsoft Endpoint Configuration Manager 集成。
 
@@ -64,12 +63,12 @@ ms.locfileid: "59162276"
 威胁漏洞管理帮助客户确定优先级并重点关注对组织构成最紧急且风险最高的漏洞。 它将安全建议与动态威胁和业务上下文融合在一起：
 
 - **在通配符中公开新出现的攻击** - 动态对齐安全建议优先顺序。 威胁漏洞管理重点关注当前在威胁和新兴威胁中利用的漏洞，这些威胁带来最大的风险。
-- **精确定位活动** 漏洞 - 关联危险和漏洞管理EDR见解，以区分在组织内部的活动泄露中利用的漏洞的优先级。
+- **精确定位活动** 漏洞 - 关联危险和漏洞管理EDR见解，以确定在组织内部的活动泄露中利用的漏洞的优先级。
 - **保护高价值资产** - 使用业务关键应用程序、机密数据或高价值用户标识公开的设备。
 
 ### <a name="seamless-remediation"></a>无缝修正
 
-威胁和漏洞管理使安全管理员和 IT 管理员可以无缝协作以修正问题。
+威胁和漏洞管理使安全管理员和 IT 管理员能够无缝协作以修正问题。
 
 - **发送给 IT 的修正请求**- 根据特定Microsoft Intune创建修正任务。 我们计划将此功能扩展到其他 IT 安全管理平台。
 - **备用缓解** - 深入了解其他缓解，例如可降低与软件漏洞关联的风险的配置更改。
@@ -79,18 +78,23 @@ ms.locfileid: "59162276"
 
 观看此视频，全面危险和漏洞管理。
 
->[!VIDEO https://aka.ms/MDATP-TVM-Interactive-Guide]
+> [!VIDEO https://aka.ms/MDATP-TVM-Interactive-Guide]
 
 ## <a name="navigation-pane"></a>导航窗格 
 
-领域 | 说明
-:---|:---
-**仪表板**   | 获取组织曝光分数、适用于设备的 Microsoft 安全分数、设备曝光分布、顶级安全建议、最易受攻击的软件、顶级修正活动和最公开设备数据等高级视图。
-[**安全建议**](tvm-security-recommendation.md) | 请参阅安全建议和相关威胁信息列表。 当你从列表中选择一个项目时，将打开一个包含漏洞详细信息的飞出面板、一个打开软件页的链接以及修正和例外选项。 如果你的设备通过设备加入，并且你已启用 Defender for Endpoint 中的 Intune Azure Active Directory还可以在 Intune 中打开票证。
-[**修正**](tvm-remediation.md) | 请参阅已创建的修正活动和建议例外。
-[**软件库存**](tvm-software-inventory.md) | 请参阅组织中易受攻击的软件列表，以及漏洞和威胁信息。
-[**漏洞**](tvm-weaknesses.md) | 请参阅组织中有关 C CV 的常见 (曝光) 列表。
-[**活动日程表**](threat-and-vuln-mgt-event-timeline.md) | 查看可能会影响组织风险的事件。
+<br>
+
+****
+
+|领域|说明|
+|---|---|
+|**仪表板**|获取组织曝光分数、适用于设备的 Microsoft 安全分数、设备曝光分布、顶级安全建议、最易受攻击的软件、顶级修正活动和最公开设备数据等高级视图。|
+|[**安全建议**](tvm-security-recommendation.md)|请参阅安全建议和相关威胁信息列表。 当你从列表中选择一个项目时，将打开一个包含漏洞详细信息的飞出面板、一个打开软件页的链接以及修正和例外选项。 如果你的设备通过设备加入，并且你已启用 Defender for Endpoint 中的 Intune Azure Active Directory还可以在 Intune 中打开票证。|
+|[**修正**](tvm-remediation.md)|请参阅已创建的修正活动和建议例外。|
+|[**软件库存**](tvm-software-inventory.md)|请参阅组织中易受攻击的软件列表，以及漏洞和威胁信息。|
+|[**漏洞**](tvm-weaknesses.md)|请参阅组织中 C CV 的常见 (曝光) 列表。|
+|[**活动日程表**](threat-and-vuln-mgt-event-timeline.md)|查看可能会影响组织风险的事件。|
+|||
 
 ## <a name="apis"></a>API
 
@@ -110,4 +114,4 @@ ms.locfileid: "59162276"
 
 - [支持的操作系统和平台](tvm-supported-os.md)
 - [威胁和漏洞管理仪表板](tvm-dashboard-insights.md)
-- [博客：Microsoft 的威胁&漏洞管理现在可帮助成千上万的客户实时发现、确定漏洞的优先级并修正漏洞](https://www.microsoft.com/security/blog/2019/07/02/microsofts-threat-vulnerability-management-now-helps-thousands-of-customers-to-discover-prioritize-and-remediate-vulnerabilities-in-real-time/)
+- [博客：Microsoft 的威胁&漏洞管理现在可帮助数以千计的客户实时发现、确定漏洞的优先级并修正漏洞](https://www.microsoft.com/security/blog/2019/07/02/microsofts-threat-vulnerability-management-now-helps-thousands-of-customers-to-discover-prioritize-and-remediate-vulnerabilities-in-real-time/)

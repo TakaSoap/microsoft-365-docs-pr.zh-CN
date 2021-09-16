@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: ab1cb1563f3ccc0f7bfda9b1f8875c76446153e3
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357309"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399222"
 ---
 # <a name="take-response-actions-on-a-device"></a>在设备上执行响应操作
 
@@ -121,11 +121,11 @@ ms.locfileid: "59357309"
 |计划任务|包含一.CSV列出计划任务的文件，可用于标识在所选设备上自动执行的例程，以查找已设置为自动运行的可疑代码。|
 |安全事件日志|包含安全事件日志，其中包含登录或注销活动的记录，或者由系统的审核策略指定的其他与安全相关的事件。 <p><div class="alert"><b>注意：</b> 使用事件查看器日志文件事件视图。</div>|
 |服务|包含一.CSV服务及其状态的列表文件。|
-|WindowsSMB 会话 (服务器) 块|列出对文件、打印机和串行端口的共享访问，以及网络上节点之间的其他通信。 这可以帮助识别数据外排或横向移动。 <p> 包含 SMBInboundSessions 和 SMBOutboundSession 的文件。 <p> <div class="alert"><b>注意：</b> 如果入站或出站 (会话) ，您将获得一个文本文件，告知您未找到 SMB 会话。</div>|
-|系统信息|包含一SystemInformation.txt文件，其中列出了操作系统版本和网络卡等系统信息。|
+|WindowsSMB 会话 (服务器) 块|列出对文件、打印机和串行端口的共享访问以及网络上节点之间的其他通信。 这可以帮助识别数据外排或横向移动。 <p> 包含 SMBInboundSessions 和 SMBOutboundSession 的文件。 <p> <div class="alert"><b>注意：</b> 如果入站或出站 (会话) ，您将获得一个文本文件，告知您未找到 SMB 会话。</div>|
+|系统信息|包含一SystemInformation.txt列出系统信息（如操作系统版本和网络卡）的文件。|
 |临时目录|包含一组文本文件，其中列出了系统中每个用户位于 %Temp% 中的文件。 <p> 这可以帮助跟踪攻击者可能丢弃在系统上的可疑文件。 <p> <div class="alert"><b>注意：</b> 如果文件包含以下消息："系统找不到指定的路径"，这意味着此用户没有临时目录，可能是因为用户未登录到系统。</div>|
 |用户和组|提供每个表示一个组及其成员的文件的列表。|
-|WdSupportLogs|提供MpCmdRunLog.txt和MPSupportFiles.cab  <p> <div class="alert"><b>注意：</b>只有在安装了 2020 年 2 月更新汇总Windows 10版本 1709 或更高版本上，才能创建此文件夹： <ul><li>Win10 1709 (RS3) 版本 16299.1717：KB4537816 [](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) 版本 17134.1345：KB4537795 [](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) 内部版本 17763.1075：KB4537818 [](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) 内部版本 18362.693 和 [18363.693：KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
+|WdSupportLogs|提供MpCmdRunLog.txt和MPSupportFiles.cab  <p> <div class="alert"><b>注意：</b>只有在安装了 2020 年 2 月更新汇总Windows 10版本 1709 或更高版本上，才能创建此文件夹： <ul><li>Win10 1709 (RS3) 内部版本 16299.1717：KB4537816 [](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) 版本 17134.1345：KB4537795 [](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) 内部版本 17763.1075：KB4537818 [](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) 内部版本 18362.693 和 [18363.693：KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
 |CollectionSummaryReport.xls|此文件是调查包集合的摘要，它包含数据点列表、用于提取数据的命令、执行状态以及失败时的错误代码。 可以使用此报告跟踪程序包是否包含所有预期数据，并确定是否有错误。|
 |
 
@@ -135,10 +135,10 @@ ms.locfileid: "59357309"
 
 > [!IMPORTANT]
 >
-> - 此操作适用于 Windows 10 版本 1709 或更高版本上的设备。
+> - 此操作适用于版本 1709 Windows 10或更高版本上的设备。
 > - Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，无论 Microsoft Defender AV 是否是活动的防病毒解决方案。 Microsoft Defender AV 可以处于被动模式。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
-选择"运行 **防病毒** 扫描"之一，选择要快速或完整 (运行扫描类型的) 在确认扫描之前添加注释。
+选择"运行 **防病毒扫描**"之一，选择要快速或完整 (运行扫描类型的) 在确认扫描之前添加注释。
 
 ![用于选择快速扫描或完全扫描并添加注释的通知的图像。](images/run-antivirus.png)
 
@@ -157,7 +157,7 @@ ms.locfileid: "59357309"
 
 > [!IMPORTANT]
 >
-> - 此操作适用于 Windows 10 版本 1709 或更高版本上的设备。
+> - 此操作适用于版本 1709 Windows 10或更高版本上的设备。
 > - 如果组织使用此功能，则此功能Microsoft Defender 防病毒。
 > - 此操作需要满足Windows Defender控制代码完整性策略格式和签名要求。 有关详细信息，请参阅代码 [完整性策略格式和签名](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
 

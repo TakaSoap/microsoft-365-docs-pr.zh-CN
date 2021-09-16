@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解隐私管理的全局设置选项。
-ms.openlocfilehash: 071006c354d975cbed06834d60c2d647bbc5df60
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bd67dc80ab7dec2132bfffe190f64692f69076ed
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170126"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401046"
 ---
 # <a name="manage-privacy-management-settings-preview"></a>管理隐私管理设置 (预览) 
 
-隐私管理的全局设置选项位于主页右上角的齿轮图标下。 这些选项允许你设置高级首选项和自定义关键属性。 此页概述了主要类别设置类别。
+隐私管理的全局设置选项位于主页右上角的齿轮图标下。 这些选项允许你设置高级首选项和自定义关键属性。 此页面概述了主要类别设置类别。
 
 ## <a name="anonymization"></a>匿名化
 
@@ -39,17 +39,9 @@ ms.locfileid: "59170126"
 
 将Microsoft Teams功能与隐私管理集成，以增强与利益干系人之间的协作。 每次创建主题权限请求时，都会创建一个关联的团队。 可以从请求的协作者选项卡将用户添加到团队。若要了解有关主题权限请求的信息，请参阅 [管理主题权限请求](privacy-management-subject-rights-requests.md)。
 
-## <a name="power-automate-flows"></a>Power Automate流  
-
-使用Power Automate流自动管理与隐私相关的流程和任务。 可以使用内置隐私管理模板设置流"部分创建流，或使用 Power Automate 控制台创建自定义流。 若要详细了解Power Automate，[请参阅Power Automate文档](/power-automate/)。
-
 ## <a name="data-matching"></a>数据匹配  
 
-使用此部分可上载描述数据主体的属性的数据架构，这有助于在数据主体环境中搜索个人数据时Microsoft 365主体。 以 XML 格式创建和上载架构和规则包。 在"个人数据上载"下，还可以提交与提供的架构匹配的个人数据。 你可以创建和上传你自己的文件，也可以选择从 Azure 上传个人数据。 若要了解有关主题权限请求的信息，请参阅 [管理主题权限请求](privacy-management-subject-rights-requests.md)。
-
-## <a name="data-retention-periods"></a>数据保留期  
-
-对于主题权限请求，选择要保留收集的数据和生成的报告的时间。 您可以在关闭请求后的 30 到 90 天内选择。 若要了解有关主题权限请求的信息，请参阅 [管理主题权限请求](privacy-management-subject-rights-requests.md)。
+使用此部分可上载描述数据主体的属性的数据架构，这有助于在用户环境中搜索个人数据时Microsoft 365主体。 以 XML 格式创建和上载架构和规则包。 在"个人数据上载"下，还可以提交与提供的架构匹配的个人数据。 你可以创建和上传你自己的文件，也可以选择从 Azure 上传个人数据。 若要了解有关主题权限请求的信息，请参阅 [管理主题权限请求](privacy-management-subject-rights-requests.md)。
 
 ## <a name="data-review-tags"></a>数据审阅标记  
 

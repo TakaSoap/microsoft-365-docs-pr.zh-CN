@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: cf5f0a63645fccb9f3895796c8ec514efe091a94
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357024"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401562"
 ---
 # <a name="hunt-for-ransomware"></a>查寻勒索软件
 
@@ -237,7 +237,7 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 
 ![勒索软件活动的查询结果的图像。](../../media/advanced-hunting-ransomware-query.png)
 
-*显示受影响的设备和勒索软件活动的各种标志计数的查询结果*
+*显示受影响的设备和各种勒索软件活动标志计数的查询结果*
 
 默认情况下，查询结果仅列出具有两种以上类型的勒索软件活动的设备。 To see all devices with any sign of ransomware activity， modify the following `where` operator and set the number to zero (0) . 若要查看较少的设备，请设置一个更高的数量。 
 
@@ -261,7 +261,7 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 - [人工操作的勒索软件](/security/compass/human-operated-ransomware)
 - [快速防范勒索软件和勒索软件](/security/compass/protect-against-ransomware)
 - [最新Microsoft 安全智能报告](https://www.microsoft.com/securityinsights/) (第 22-24 页) 
-- **勒索软件：Microsoft 365 Defender** 门户的"威胁分析"节点中的一个持续威胁 (请参阅这些 [许可](/microsoft-365/security/defender/prerequisites#licensing-requirements)) 
+- **勒索软件：Microsoft 365 Defender** 门户的"威胁分析"节点中的 (威胁报告，请参阅这些 [)](/microsoft-365/security/defender/prerequisites#licensing-requirements)
 
 Microsoft 365：
 

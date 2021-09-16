@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5a38f1347c959cd52e0ae393fa60b4e9c371eb2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2631d68077a51df1ae3e2e7c6f4abd3a246c5d8c
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201125"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401598"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式传输存储帐户
 
@@ -52,7 +52,7 @@ ms.locfileid: "59201125"
 
 5. Choose **Forward events to Azure 存储**.
 
-6. 键入你的 **存储帐户资源 ID。** 若要获取你的 存储 帐户资源 **ID，** 请转到 [Azure](https://ms.portal.azure.com/)门户 > 属性选项卡上的 存储 帐户页面>复制 存储 **帐户资源 ID 下的文本**：
+6. 键入你的 **存储帐户资源 ID。** 若要获取你的帐户 **存储 ID，** 请转到 [Azure](https://ms.portal.azure.com/)门户属性选项卡上的你的 存储 帐户页面复制帐户存储 \> ID \> **下的文本**：
 
    ![事件中心资源 ID1 的图像。](images/storage-account-resource-id.png)
 
@@ -60,26 +60,26 @@ ms.locfileid: "59201125"
 
 ## <a name="the-schema-of-the-events-in-the-storage-account"></a>帐户内事件存储架构
 
-- 将针对每种事件类型创建 blob 容器： 
+- 将针对每种事件类型创建 blob 容器：
 
   ![事件中心资源 ID2 的图像。](images/storage-account-event-schema.png)
 
-- blob 中每行的架构为以下 JSON： 
+- blob 中每行的架构为以下 JSON：
 
-  ```
+  ```json
   {
           "time": "<The time WDATP received the event>"
           "tenantId": "<Your tenant ID>"
           "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
           "properties": { <WDATP Advanced Hunting event as Json> }
-  }               
+  }
   ```
 
 - 每个 blob 包含多行。
 
 - 每行都包含事件名称、Defender for Endpoint 收到事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为"properties"的属性。
 
-- 有关 Microsoft Defender for Endpoint 事件的架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
+- 有关适用于终结点事件的 Microsoft Defender 架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
 
 - 在高级搜寻中 **，DeviceInfo** 表有一个名为 **MachineGroup** 的列，其中包含设备组。 此处还将用此列修饰每个事件。 有关详细信息 [，请参阅](machine-groups.md) 设备组。
 
@@ -89,19 +89,20 @@ ms.locfileid: "59201125"
 
 1. 登录[以Microsoft Defender 安全中心](https://securitycenter.windows.com)转到高级[搜寻页面](https://securitycenter.windows.com/hunting-package)。
 
-2. 运行以下查询，获取每个事件的数据类型映射： 
+2. 运行以下查询，获取每个事件的数据类型映射：
 
    ```
    {EventType}
    | getschema
-   | project ColumnName, ColumnType 
+   | project ColumnName, ColumnType
    ```
 
-- 下面是设备信息事件的示例： 
+- 下面是设备信息事件的示例：
 
   ![事件中心资源 ID3 的图像。](images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>相关主题
+
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [适用于终结点流 API 的 Microsoft Defender](raw-data-export.md)
 - [将 Microsoft Defender for Endpoint 事件流式处理到 Azure 存储帐户](raw-data-export-storage.md)

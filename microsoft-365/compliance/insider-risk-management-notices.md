@@ -1,6 +1,6 @@
 ---
 title: 内部风险管理通知模板
-description: 了解管理中心中的内部风险管理通知Microsoft 365
+description: 了解企业版中的内部风险管理通知Microsoft 365
 keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -12,18 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 786878e827fed6318a70501e400a719ad9181835
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 45ea1db3979616fec6039c699f7b73e698c346f7
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196974"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399882"
 ---
 # <a name="insider-risk-management-notice-templates"></a>内部风险管理通知模板
 
-通过内部风险管理通知模板，您可以在用户的活动生成策略匹配和警报时向用户发送电子邮件。 在大多数情况下，生成警报的用户操作是无恶意错误或无意活动的结果。 通知可以让用户更加小心、提供用于刷新培训的信息或公司策略资源的链接，这一点非常简单。 通知可以是内部合规性培训计划的重要部分，并且有助于为具有定期风险活动的用户创建记录审核线索。
+通过内部风险管理通知模板，您可以在为已生成策略匹配和已确认警报的活动创建案例时自动向用户发送电子邮件。 对于大多数生成案例的警报，用户操作是错误或无意活动的结果，没有恶意。 通知可让用户更加小心、提供刷新培训信息或公司策略资源的链接， 通知可以是内部合规性培训计划的重要部分，并且有助于为具有定期风险活动的用户创建记录审核线索。
 
-如果要在问题解决过程中向用户发送策略匹配项的电子邮件提醒通知，请创建通知模板。 通知只能发送到与要审阅的特定警报关联的用户电子邮件地址。 选择要应用于策略匹配项的通知模板时，可以选择接受模板中定义的字段值或根据需要覆盖这些字段。
+如果要在案例解决过程中向用户发送策略匹配项的电子邮件提醒通知，请创建通知模板。 通知只能发送到与所审阅的特定案例关联的用户电子邮件地址。 选择要应用于策略匹配的通知模板时，可以选择接受模板中定义的字段值或根据需要覆盖字段
 
 ## <a name="notice-templates-dashboard"></a>通知模板仪表板
 
@@ -53,12 +53,12 @@ ms.locfileid: "59196974"
 
 ## <a name="create-a-new-notice-template"></a>创建新的通知模板
 
-若要创建新的内部风险管理通知模板，你将使用预览体验成员风险管理解决方案中的通知Microsoft 365 合规中心。 
+若要创建新的内部风险管理通知模板，你将使用预览体验成员风险管理解决方案中的通知创建Microsoft 365 合规中心。 
 
 完成以下步骤以创建新的内部风险管理通知模板：
 
 1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the Notice **templates** tab.
-2. 选择 **"创建通知模板** "以打开通知向导。
+2. 选择 **"创建通知模板** "以打开通知创建工具。
 3. 在" **新建通知模板"页上** ，填写下列字段：
     - **模板名称**：为通知输入友好名称。 从案例发送通知时，此名称将显示在通知仪表板上的通知列表和通知选择列表中。
     - **发件人**：输入通知的发件人电子邮件地址。 此地址将出现在发送给用户的所有通知的 **From：** 字段中，除非在从案例发送通知时发生更改。

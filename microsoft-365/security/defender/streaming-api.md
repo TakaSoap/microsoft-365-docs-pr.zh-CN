@@ -1,6 +1,6 @@
 ---
 title: 流Microsoft 365 Defender事件
-description: 了解如何配置Microsoft 365 Defender以将高级搜寻事件流式传输至事件中心或 Azure 存储帐户
+description: 了解如何配置 Microsoft 365 Defender以将高级搜寻事件流式传输至事件中心或 Azure 存储帐户
 keywords: 原始数据导出， 流式 API， API， 事件中心， Azure 存储， 存储帐户， 高级搜寻， 原始数据共享
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 431fd1271bf826ded53f88818741c5bbaa61e9b5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b8912ee40c090522a0b6228643f37b161dbde14
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170907"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401226"
 ---
 # <a name="streaming-api"></a>Streaming API
 
@@ -44,6 +44,7 @@ Microsoft 365 Defender通过高级搜寻流式处理[事件到](../defender/adva
 :---|:---
 [将事件流式处理到 Azure 事件中心](streaming-api-event-hub.md)| 了解如何在租户中启用流式处理 API，并配置Microsoft 365 Defender[将高级](../defender/advanced-hunting-overview.md)搜寻流式传输至事件中心。
 [将事件流式处理到 Azure 存储帐户](streaming-api-storage.md)| 了解如何在租户中启用流式处理 API，Microsoft 365 Defender将[高级](advanced-hunting-overview.md)搜寻流式传输至 Azure 存储帐户。
+[支持的事件类型](supported-event-types.md) | 了解流式处理 API 支持的高级搜寻事件类型。
 
 
 ## <a name="related-topics"></a>相关主题

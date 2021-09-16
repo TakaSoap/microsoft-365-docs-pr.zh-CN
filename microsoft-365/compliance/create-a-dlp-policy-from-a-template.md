@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: 本文将了解如何使用本文中包含的模板之一创建 DLP Office 365。
-ms.openlocfilehash: 1fe14035f23443a8f8f35b5c9ac9edf69bf60ffd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 29f8821316fcd4caf87ca0b7f77fb6a9c4f8c85e
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171043"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400890"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>通过模板创建 DLP 策略
 
@@ -56,7 +56,7 @@ Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规
 
 5. 选择希望 DLP 策略保护的位置，并接受每个位置的默认范围或自定义范围。 请参阅 [作用域](dlp-policy-reference.md#locations) 选项的位置。
 
-6. 选择 \> **下一步**。
+6. 选择“\> **下一步**”。
  
 1. <!-->，请执行下列操作之一：
 
@@ -83,14 +83,10 @@ Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规
     1. OneDrive
     1. Teams聊天和频道消息 
 
-10. 选择 **下一步**。
+10. 选择“**下一步**”。
 
-11. 如果需要 **，可以在** "保护操作"页上自定义策略提示通知和通知电子邮件。 启用 **当内容与策略条件匹配时**，向用户显示策略提示，然后告知他们电子邮件通知，然后选择自定义 **提示和电子邮件**。
-1. c
-1. 
-1. 
-1. 
-1. hoose **Next**.
+11. 如果需要 **，可以在** "保护操作"页上自定义策略提示通知和通知电子邮件。 启用 **当内容与策略条件匹配时**，向用户显示策略提示，然后向用户发送电子邮件通知，然后选择自定义 **提示和电子邮件**。
+12. 选择" **下一步**"。
 
 
 <!--    In this example, the U.S. PII Data template includes two predefined rules:
