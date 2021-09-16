@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: 1001081d14440f1e02800f64b891c6a988f1f10a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c340e8b1bb8e126445b802e6b03c91d595e32a43
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162167"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355956"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -153,12 +153,25 @@ ms.locfileid: "59162167"
   
 ## <a name="show-user-details-in-the-reports"></a>显示报表中的用户详细信息
 
-报告提供有关组织的使用情况数据的信息。 默认情况下，报告显示包含用户、组和网站可识别名称的信息。 从 2021 年 9 月 1 开始，我们将默认隐藏所有报告的用户信息，以持续致力于帮助公司支持其本地隐私法律。
+默认情况下，将隐藏所有报告的用户详细信息。
   
 你的用户列表将如下所示：
-  
+ 
 ![报告 - 匿名用户列表。](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+
+
+如果在生成报表时，想要取消隐藏用户级的信息，全局管理员可以在管理中心中快速进行此更改。
+
+报告提供有关组织的使用情况数据的信息。 默认情况下，报告显示包含用户、组和网站可识别名称的信息。 从 2021 年 9 月 1 开始，我们将默认隐藏所有报告的用户信息，以持续致力于帮助公司支持其本地隐私法律。
+
   
+1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">服务和&amp;加载项</a>页面。
+
+2. 选择“**组织设置**”，然后选择“**服务**”。 
+  
+3. 在“**报告**”空格中，选择“**选择用户信息显示方式**”，然后选择“**在报告中显示可识别的用户信息**”。
+  
+
 全局管理员可以恢复租户的此更改，并显示可识别的用户信息（如果其组织的隐私实践允许）。 可以按照以下步骤在 Microsoft 365 管理中心中实现此目标：
   
 1. 在管理中心，转到“**设置**”\>“**组织设置**” \>“**服务**”页面。
@@ -168,6 +181,7 @@ ms.locfileid: "59162167"
 3. 取消选中 **在所有报表中，显示用户、组和网站的已取消标识的名称**，然后保存所做的更改。  
   
 这些更改将在几分钟之后在报表仪表板中的报表上生效。 此设置还适用于 [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) 和 [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) 和 [ Microsoft Teams 管理中心中的使用情况报告的Microsoft 365使用情况报告](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)。 显示可识别的用户信息是 Microsoft 365 合规中心审核日志中的一个记录事件。   
+
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>在用户帐户关闭后，用法数据会发生什么情况？
 
