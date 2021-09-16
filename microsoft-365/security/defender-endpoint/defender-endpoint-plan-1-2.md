@@ -1,5 +1,5 @@
 ---
-title: 比较 Microsoft Defender for Endpoint Plan 1 (preview) to Plan 2
+title: 比较 Microsoft Defender for Endpoint Plan 1 (preview) 计划 2
 description: 将 Defender for Endpoint Plan 1 与 Plan 2 进行比较。 了解计划之间的差异，并选择适合组织需求的计划。
 keywords: 适用于终结点的 Defender， 高级威胁防护， 终结点保护
 search.appverid: MET150
@@ -8,18 +8,18 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 08/30/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: ab2e2e2d1ab0b2ac35a6fd99efe9ef68ea477b44
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 55fb264981dcad52856fe9115345891c2b3387b4
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196058"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400290"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-preview-and-plan-2"></a>Microsoft Defender for Endpoint Plan 1 (preview) Plan 2
 
@@ -30,7 +30,7 @@ Microsoft Defender for Endpoint 是企业终结点安全平台，旨在帮助企
 
 ## <a name="compare-defender-for-endpoint-plans"></a>比较适用于终结点的 Defender 计划
 
-下表介绍了每个计划在高级别包含哪些内容。
+下表介绍了每个计划在高级别包含哪些内容。 <br/><br/>
 
 | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) <br/> (预览)  | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) <br/> (现在)  |
 |:---|:---|
@@ -39,10 +39,10 @@ Microsoft Defender for Endpoint 是企业终结点安全平台，旨在帮助企
 | 若要尝试 Defender for Endpoint Plan 1，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 。 | 若要尝试 Defender for Endpoint Plan 2，请访问 [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial) 。 |
 
 > [!IMPORTANT]
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 此内容包括指向其他文章的链接，这些文章可能描述了 Defender for Endpoint Plan 1 (预览版中未) 。
+> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 此内容包括指向其他文章的链接，这些文章可能介绍了 Defender for Endpoint Plan 1 (预览版中未) 。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [大致了解适用于 Endpoint Plan 1 (预览) ](defender-endpoint-plan-1.md)
+- [获取适用于 Endpoint Plan 1 的 Microsoft Defender 预览版 (概述) ](defender-endpoint-plan-1.md)
 - [为终结点计划 1 设置和配置 Defender (预览) ](mde-p1-setup-configuration.md)
 - [开始使用 Defender for Endpoint Plan 1 (预览) ](mde-plan1-getting-started.md)

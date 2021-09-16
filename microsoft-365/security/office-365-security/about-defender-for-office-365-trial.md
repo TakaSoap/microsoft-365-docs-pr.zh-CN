@@ -20,11 +20,11 @@ ms.custom:
 ROBOTS: NOINDEX
 description: 管理员可以了解 Microsoft Defender for Office 365
 ms.openlocfilehash: 21cff6ecd695ef95173149eed211b40989fa47ce
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357491"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402102"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>关于 Microsoft Defender for Office 365试用版
 
@@ -53,14 +53,14 @@ Microsoft Defender for Office 365 试用版是试用 Defender for Office 365 功
 |[市场活动视图](campaigns.md)<sup>\*</sup>|调查和响应大规模的恶意电子邮件活动。|
 |[使用 Defender for Office 365功能的报告](view-reports-for-mdo.md)|查看报告，包括威胁防护状态、URL 威胁防护、邮件延迟等。|
 
-<sup>\*</sup>适用于Office 365 2 计划的 Defender 功能，作为试用版的一部分提供。
+<sup>\*</sup>Defender for Office 365 2 计划功能，作为试用版的一部分提供。
 
 > [!NOTE]
 > 本文中介绍的自动配置目前处于公共预览版中，可能在你的组织中不可用。
 
 ## <a name="terms-and-conditions"></a>条款和条件
 
-Defender for Office 365试用版的可用时间为 90 天，并且可针对所有用户启动。 有关详细信息，请参阅[Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md)。
+Defender for Office 365 试用版的可用时间为 90 天，可以针对所有用户启动。 有关详细信息，请参阅[Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md)。
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>设置 Defender for Office 365 试用版
 
@@ -82,7 +82,7 @@ Defender for Office 365试用版的可用时间为 90 天，并且可针对所�
 
 注册试用版后，可能需要 2 小时才能提供更改和更新。 管理员必须注销并重新登录才能查看更改。
 
-管理员可以通过访问"试用"卡片随时 <> 试用版。
+管理员可通过访问"试用"卡片随时禁用 <> 。
 
 ## <a name="availability"></a>可用性
 
@@ -90,9 +90,9 @@ Defender for Office 365 试用版将逐步向满足特定条件 (包括地理位
 
 ## <a name="learn-more-about-defender-for-office-365"></a>了解有关 Defender for Office 365
 
-Defender for Office 365通过提供一系列全面的功能来帮助组织保护企业。
+Defender for Office 365通过提供全面的功能，帮助组织保护企业的安全。
 
-还可以在此交互式指南中了解有关 defender for Office 365[内容。](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189)
+还可以在此交互式指南中了解有关 defender for Office 365[功能。](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189)
 
 ![Microsoft Defender for Office 365概念图。](../../media/microsoft-defender-for-office-365.png)
 
@@ -106,7 +106,7 @@ Defender for Office 365通过提供一系列全面的功能来帮助组织保护
 
 ### <a name="detection"></a>检测
 
-业界领先的 AI 可检测恶意和可疑内容，并关联攻击模式，以识别旨在规避保护的活动。
+行业领先的 AI 可检测恶意和可疑内容，并关联攻击模式，以识别旨在规避保护的活动。
 
 - [Microsoft Defender for Office 365 中的市场活动视图](campaigns.md)
 

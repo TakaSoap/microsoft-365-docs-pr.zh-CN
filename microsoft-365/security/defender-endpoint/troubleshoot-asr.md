@@ -18,11 +18,11 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.openlocfilehash: 1e4e32864c2541cfc0cf14602ec954d5e643f309
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357589"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402138"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻击面减少规则疑难解答
 
@@ -38,13 +38,13 @@ ms.locfileid: "59357589"
 当你使用 [攻击面减少规则时](attack-surface-reduction.md) ，你可能会遇到问题，例如：
 
 - 规则阻止文件、进程或执行其他一些不应 (误报) 
-- 规则不能如所述工作，或不会阻止文件或进程，它应 (漏报) 
+- 规则不能如所描述的一样工作，或者不会阻止文件或进程 (漏报) 
 
 解决这些问题有四个步骤：
 
 1. [确认先决条件](#confirm-prerequisites)
 2. [使用审核模式测试规则](#use-audit-mode-to-test-the-rule)
-3. [为指定的误报规则 (](#add-exclusions-for-a-false-positive) 排除项) 
+3. [为指定规则添加排除 (](#add-exclusions-for-a-false-positive) 用于误报) 
 4. [提交支持日志](#collect-diagnostic-data-for-file-submissions)
 
 ## <a name="confirm-prerequisites"></a>确认先决条件
@@ -57,7 +57,7 @@ ms.locfileid: "59357589"
 
 - [实时保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 已启用。
 
-- 审核模式未启用。 使用组策略将规则设置为已禁用 (值 **：0**) 启用 [攻击面减少规则中所述](enable-attack-surface-reduction.md)。
+- 审核模式未启用。 使用组策略将规则设置为已禁用 (值 **：0**) 启用攻击 [面减少规则中所述](enable-attack-surface-reduction.md)。
 
 如果满足所有先决条件，请继续执行下一步以在审核模式下测试规则。
 
@@ -79,9 +79,9 @@ ms.locfileid: "59357589"
 
 如果你已使用演示工具和审核模式测试了规则，并且攻击面减少规则正在预配置的方案中运行，但规则未按预期工作，请根据你的情况继续执行以下任一部分：
 
-1. 如果攻击面减少规则阻止了它不应阻止 (也称为误报) ，你可以首先添加攻击面减少[规则排除 。](#add-exclusions-for-a-false-positive)
+1. 如果攻击面减少规则阻止了不应阻止的攻击 (也称为误报) ，你可以首先添加攻击面减少 [规则排除](#add-exclusions-for-a-false-positive)。
 
-2. 如果攻击面减少规则不会阻止应阻止 (也称为漏报) ，你可以立即继续执行最后一步，收集诊断数据，将问题提交给 [我们](#collect-diagnostic-data-for-file-submissions)。
+2. 如果攻击面减少规则未阻止应阻止 (也称为漏报) ，你可以立即继续执行最后一步，收集诊断数据，将问题提交给 [我们](#collect-diagnostic-data-for-file-submissions)。
 
 ## <a name="add-exclusions-for-a-false-positive"></a>添加误报的排除项
 
@@ -95,7 +95,7 @@ ms.locfileid: "59357589"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>报告误报或漏报
 
-使用Windows Defender[安全智能基于](https://www.microsoft.com/wdsi/filesubmission)Web 的提交表单报告网络保护的漏报或误报。 使用 Windows E5 订阅，还可以提供[指向任何关联警报的链接](alerts-queue.md)。
+使用Windows Defender[安全智能基于](https://www.microsoft.com/wdsi/filesubmission)Web 的提交表单报告网络保护的漏报或误报。 使用 Windows E5 订阅，还可以[提供指向任何关联警报的链接](alerts-queue.md)。
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>收集文件提交的诊断数据
 

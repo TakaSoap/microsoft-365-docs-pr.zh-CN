@@ -24,11 +24,11 @@ ms.custom: migrationguides
 ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.openlocfilehash: 0b927f9bfb1ad9949adc8789b4dfd90b4e56c60b
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357048"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399390"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>切换到 Microsoft Defender for Endpoint - 阶段 1：准备
 
@@ -83,7 +83,7 @@ ms.locfileid: "59357048"
 
 3. 设置适用于终结点的 Defender 的专用云实例。 请参阅 [Defender for Endpoint setup： Tenant configuration](production-deployment.md#tenant-configuration)。
 
-4. 如果终结点 (，) 使用代理访问 Internet，请参阅[Defender for Endpoint setup： Network configuration。](production-deployment.md#network-configuration)
+4. 如果终结点 (，) 使用代理访问 Internet，请参阅 [Defender for Endpoint setup： Network configuration](production-deployment.md#network-configuration)。
 
 此时，您已准备好向将使用 Microsoft 365 Defender 门户策略的安全管理员和安全 [https://security.microsoft.com](https://security.microsoft.com) () 。
 
@@ -106,7 +106,7 @@ Microsoft 365 Defender门户 () 访问和配置 [https://security.microsoft.com]
     - [高级组策略管理](/microsoft-desktop-optimization-pack/agpm)
     - [Windows管理中心](/windows-server/manage/windows-admin-center/overview)
 
-3. 授予对网站Microsoft 365 Defender的访问权限。  (需要帮助？ 请参阅 [使用 RBAC 管理门户](rbac.md)) 。
+3. 授予对 Microsoft 365 Defender 门户的访问权限。  (需要帮助？ 请参阅 [使用 RBAC 管理门户](rbac.md)) 。
 
 ## <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 

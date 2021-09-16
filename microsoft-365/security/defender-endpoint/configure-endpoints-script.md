@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e1a681fb7d521c26327bec3d22bff233926a279f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b1e6bcd4991ea94f1b46b43f446f5f40f6f2e1d4
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201670"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399246"
 ---
 # <a name="onboard-the-windows-10-devices-using-a-local-script"></a>使用Windows 10脚本载入新设备
 
@@ -36,13 +36,12 @@ ms.locfileid: "59201670"
 > [!IMPORTANT]
 > 此脚本已优化为在最多 10 台设备上使用。
 >
-> 若要大规模部署，请使用 [其他部署选项](configure-endpoints.md)。 例如，可以使用在使用组策略的载入Windows 10中提供的脚本，将载入脚本部署到生产中的 10[多个设备](configure-endpoints-gp.md)。
+> 若要大规模部署，请使用 [其他部署选项](configure-endpoints.md)。 例如，可以使用使用组策略 载入 Windows 10 设备中提供的脚本，将载入脚本部署到生产中的 10[多个设备](configure-endpoints-gp.md)。
 
 ## <a name="onboard-devices"></a>载入设备
 
-[![显示各种部署路径的 PDF 的图像。](images/onboard-script.png)](images/onboard-script.png#lightbox)
 
-请查看[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。
+请查看[PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)或[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。
 
 1. 打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从 Defender 门户Microsoft 365[程序包](https://security.microsoft.com/)：
     1. 在导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **载入"。**
@@ -69,9 +68,9 @@ ms.locfileid: "59201670"
 
 ## <a name="configure-sample-collection-settings"></a>配置示例集合设置
 
-对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 请求提交文件进行深入分析时是否可以从设备收集示例。
+对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 提交文件进行深入分析时是否可以从设备收集示例。
 
-可以通过使用 *regedit* 或创建并运行 .reg 文件，在设备上手动配置 *示例共享* 设置。
+可以使用 *regedit* 或创建并运行 .reg 文件，在设备上手动配置 *示例共享* 设置。
 
 通过以下注册表项设置配置：
 
@@ -97,7 +96,7 @@ Value: 0 or 1
 出于安全考虑，用于"载出"设备的程序包将在下载日期 30 天后过期。 发送到设备的过期载出包将被拒绝。 下载载出包时，你将收到程序包到期日期的通知，该日期也将包含在程序包名称中。
 
 > [!NOTE]
-> 不得同时在同一设备上部署载入和载出策略，否则将导致不可预知的冲突。
+> 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
 
 1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
     1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **""载出"。**
@@ -105,7 +104,7 @@ Value: 0 or 1
     3. 在"**部署方法"** 字段中，选择"**本地脚本"。**
     4. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将文件内容.zip到设备可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
+2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
 3. 在设备上打开提升的命令行提示符并运行脚本：
    1. 转到“**开始**”并键入“**cmd**”。
@@ -135,7 +134,7 @@ Value: 0 or 1
 ## <a name="related-topics"></a>相关主题
 
 - [使用Windows 10载入设备](configure-endpoints-gp.md)
-- [使用Windows 10载入设备Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [使用Windows 10设备载入Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [使用移动设备管理工具载入 Windows 10 设备](configure-endpoints-mdm.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)
 - [在新载入的 Microsoft Defender 终结点设备上运行检测测试](run-detection-test.md)

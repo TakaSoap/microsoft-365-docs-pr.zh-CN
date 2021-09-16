@@ -1,5 +1,5 @@
 ---
-title: 隐藏Microsoft Defender 防病毒界面
+title: 隐藏Microsoft Defender 防病毒接口
 description: 可以在应用内隐藏病毒和威胁Windows 安全中心磁贴。
 keywords: ui 锁定， 无头模式， 隐藏应用， 隐藏设置， 隐藏界面
 search.product: eADQiWindows 10XVcnh
@@ -17,11 +17,11 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: af938fda518e5a7eea3cb9341f04c8573a647044
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357067"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399417"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>阻止用户查看或Microsoft Defender 防病毒用户界面
 
@@ -32,26 +32,26 @@ ms.locfileid: "59357067"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-可以使用组策略阻止终结点上的用户看到 Microsoft Defender 防病毒 界面。 还可以阻止他们暂停扫描。
+可以使用组策略阻止终结点上的用户看到 Microsoft Defender 防病毒 接口。 还可以阻止他们暂停扫描。
 
-## <a name="hide-the-microsoft-defender-antivirus-interface"></a>隐藏Microsoft Defender 防病毒界面
+## <a name="hide-the-microsoft-defender-antivirus-interface"></a>隐藏Microsoft Defender 防病毒接口
 
 在 Windows 10 版本 1703 中，隐藏界面将隐藏 Microsoft Defender 防病毒 通知，并阻止病毒 & 威胁防护磁贴显示在 Windows 安全中心 应用中。
 
 将设置设置为"**已启用"：**
 
-:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="无防护Windows 安全中心病毒和威胁防护部分的内容屏幕截图。":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="没有防护Windows 安全中心病毒和威胁防护部分的内容屏幕截图。":::
 
 将设置设置为"已 **禁用"** 或未配置：
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="具有防护Windows 安全中心和威胁防护部分进行保护的屏幕截图。":::
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="具有防护Windows 安全中心和威胁防护部分的内容屏幕截图。":::
 
 > [!NOTE]
 > 隐藏界面还会阻止Microsoft Defender 防病毒在终结点上显示通知。 Microsoft Defender for Endpoint 通知仍将显示。 还可以单独 [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
 
 在早期版本的 Windows 10 中，该设置将隐藏Windows Defender客户端接口。 如果用户尝试打开它，他们将收到一条警告，指出"你的系统管理员已限制对此应用的访问"。
 
-:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="在早于 1703 Windows 10无头模式时显示警告消息":::
+:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="在早于 1703 的 Windows 10 中启用无头模式的警告消息":::
 
 ## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>使用组策略向用户隐藏 Microsoft Defender AV 界面
 
@@ -72,7 +72,7 @@ ms.locfileid: "59357067"
 你可以阻止用户暂停扫描，这有助于确保计划扫描或按需扫描不会被用户中断。
 
 > [!NOTE]
-> 此设置在系统上不受Windows 10。
+> 此设置在系统上Windows 10。
 
 ### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>使用组策略阻止用户暂停扫描
 

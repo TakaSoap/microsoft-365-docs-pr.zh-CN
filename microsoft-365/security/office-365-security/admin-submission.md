@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: siosulli
 author: siosulli
 manager: dansimp
-ms.date: ''
 audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
@@ -19,12 +18,12 @@ ms.custom:
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7bd845f67c25dae154832dbe280b6d158b22db8c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b36497ad6abe0325ea5d8830c4e1995370161c87
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200958"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400914"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用提交门户将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft
 
@@ -35,7 +34,7 @@ ms.locfileid: "59200958"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
 
-在Microsoft 365组织中Exchange Online，管理员可以使用 Microsoft 365 Defender 门户中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
+在Microsoft 365邮箱Exchange Online，管理员可以使用 Microsoft 365 Defender 门户中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
 
 当你提交电子邮件进行分析时，你将获得：
 
@@ -110,7 +109,7 @@ ms.locfileid: "59200958"
 > [!div class="mx-imgBorder"]
 > ![新建电子邮件提交示例。](../../media/submission-url-flyout.png)
 
-### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>将可疑的电子邮件附件提交给 Microsoft
+### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>向 Microsoft 提交可疑的电子邮件附件
 
 1. 在"**选择提交类型"框中****，从下拉列表** 中选择"文件"。
 
@@ -118,18 +117,21 @@ ms.locfileid: "59200958"
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
    - **如果误报，不应 (阻止)**
-   - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，恶意软件 **是唯一** 的选择，并且会自动选中。
+   - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，" **恶意软件"是唯** 一的选择，并自动选中。
 
 4. 完成后，单击"提交 **"** 按钮。
 
 > [!div class="mx-imgBorder"]
 > ![新附件提交示例。](../../media/submission-file-flyout.png)
 
+> [!NOTE]
+> 如果恶意软件筛选将邮件附件替换为"恶意软件警报Text.txt文件，则需要从隔离区提交包含原始附件的原始邮件。 有关隔离以及如何释放带恶意软件误报的邮件的信息，请参阅以管理员角色管理隔离的邮件 [和文件](manage-quarantined-messages-and-files.md)。
+
 ## <a name="view-admin-submissions-to-microsoft"></a>查看向 Microsoft 提交的管理员
 
 1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
 
-2. 在 **"提交"** 页上，确认已选中" **已提交进行分析"** 选项卡。
+2. 在 **"提交"** 页上，确认已选择" **已提交进行分析"** 选项卡。
 
    - 可以通过单击可用列标题来对条目进行排序。 单击 **"自定义列** "最多可显示七列。 默认值标有星号（<sup>\*</sup>）：
      - **提交名称**<sup>\*</sup>
@@ -170,7 +172,7 @@ ms.locfileid: "59200958"
      - **无**
      - **类型**
      - **原因**
-     - **Status**
+     - **状态**
      - **重新扫描结果**
 
    - 若要导出条目，请单击"导出 **"。** 在出现的对话框中，保存.csv文件。
@@ -188,7 +190,7 @@ ms.locfileid: "59200958"
 
 ## <a name="view-user-submissions-to-microsoft"></a>查看向 Microsoft 提交用户
 
-如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上看到报告的用户。 [](enable-the-report-phish-add-in.md) 
+如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上查看报告哪些用户。 [](enable-the-report-phish-add-in.md) 
 
 1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
 

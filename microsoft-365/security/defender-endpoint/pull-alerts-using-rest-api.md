@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a72c7d363ab57c8c108279c71a3e1424e88a577
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 29aa8008dc3674760e4e720f155d6df82068ab55
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162269"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402174"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>使用 SIEM REST API 拉取 Microsoft Defender 的终结点检测
 
@@ -38,14 +38,16 @@ ms.locfileid: "59162269"
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
->[!Note]
->- [Microsoft Defender 终结点警报](alerts.md) 由一个或多个检测组成。
->- [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) 由设备上发生的可疑事件及其相关的警报详细信息组成。
->-Microsoft Defender for Endpoint 警报 API 是警报使用的最新 API，包含每个警报的相关证据的详细列表。 有关详细信息，请参阅[警报方法和属性和](alerts.md)[列表警报](get-alerts.md)。
+> [!NOTE]
+>
+> - [Microsoft Defender 终结点警报](alerts.md) 由一个或多个检测组成。
+> - [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) 由设备上发生的可疑事件及其相关的警报详细信息组成。
+> s-Microsoft Defender for Endpoint Alert API 是警报使用的最新 API，包含每个警报的相关证据的详细列表。 有关详细信息，请参阅[警报方法和属性和](alerts.md)[列表警报](get-alerts.md)。
 
 Microsoft Defender for Endpoint 支持 OAuth 2.0 协议从 API 拉取检测。
 
 通常，OAuth 2.0 协议支持四种类型的流：
+
 - 授权流
 - 隐式流
 - 客户端凭据流
@@ -61,10 +63,11 @@ Microsoft Defender for Endpoint 支持 _授权_ 授予流和客户端凭据流�
 
 使用 Microsoft Defender for Endpoint API 中的以下方法拉取 JSON 格式的检测。
 
->[!NOTE]
->Microsoft Defender 安全中心将类似的警报检测合并到单个警报中。 此 API 基于您设置的查询参数，以原始形式拉取警报检测，从而使您可以应用自己的分组和筛选。 
+> [!NOTE]
+> Microsoft Defender 安全中心将类似的警报检测合并到单个警报中。 此 API 基于您设置的查询参数，以原始形式拉取警报检测，从而使您可以应用自己的分组和筛选。
 
 ## <a name="before-you-begin"></a>开始之前
+
 - 在调用 Microsoft Defender for Endpoint 终结点以拉取检测之前，你需要在 AAD Azure Active Directory (启用 SIEM) 。 有关详细信息，请参阅在 [Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
 
 - 请记下 Azure 应用程序注册过程中的下列值。需要使用这些值在服务或守护程序应用中配置 OAuth 流：
@@ -74,6 +77,7 @@ Microsoft Defender for Endpoint 支持 _授权_ 授予流和客户端凭据流�
     - 在应用页面中，单击 Azure 管理门户底部的“**查看终结点**”，找到此值。终结点看起来像 `https://login.microsoftonline.com/{tenantId}/oauth2/token`。
 
 ## <a name="get-an-access-token"></a>获取访问令牌
+
 在创建对 终结点的调用之前，需要获取访问令牌。
 
 你将使用访问令牌访问受保护的资源，这是 Microsoft Defender for Endpoint 中的检测。
@@ -81,13 +85,13 @@ Microsoft Defender for Endpoint 支持 _授权_ 授予流和客户端凭据流�
 若要获取访问令牌，您需要对令牌颁发终结点执行 POST 请求。 下面是一个示例请求：
 
 ```http
-
 POST /72f988bf-86f1-41af-91ab-2d7cd011db47/oauth2/token HTTP/1.1
 Host: login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
 resource=https%3A%2F%2Fgraph.windows.net&client_id=35e0f735-5fe4-4693-9e68-3de80f1d3745&client_secret=IKXc6PxB2eoFNJ%2FIT%2Bl2JZZD9d9032VXz6Ul3D2WyUQ%3D&grant_type=client_credentials
 ```
+
 响应将包含访问令牌和过期信息。
 
 ```json
@@ -101,36 +105,41 @@ resource=https%3A%2F%2Fgraph.windows.net&client_id=35e0f735-5fe4-4693-9e68-3de80
   "access_token":"eyJ0eXaioJJOIneiowiouqSuzNiZ345FYOVkaJL0625TueyaJasjhIjEnbMlWqP..."
 }
 ```
-现在，可以在对 Defender for Endpoint API 的请求 *access_token* 字段的值。
+
+你现在可以在对 Defender for Endpoint API 的请求 *access_token* 字段的值。
 
 ## <a name="request"></a>请求
+
 借助访问令牌，你的应用可以向 Microsoft Defender for Endpoint API 提出经过身份验证的请求。 您的应用必须将访问令牌附加到各个请求的授权头中。
 
 ### <a name="request-syntax"></a>请求语法
-方法 | 请求 URI
-:---|:---|
-GET| 使用适用于你地区的 URI。 <br><br> **对于欧盟**： `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **对于美国**： `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **对于英国**： `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
+
+方法|请求 URI
+---|---
+GET|使用适用于你地区的 URI。 <p> **对于欧盟**： `https://wdatp-alertexporter-eu.windows.com/api/alerts` <p> **对于美国**： `https://wdatp-alertexporter-us.windows.com/api/alerts` <p> **对于英国**： `https://wdatp-alertexporter-uk.windows.com/api/alerts`
 
 ### <a name="request-header"></a>请求标头
-标头 | 类型 | 说明|
-:--|:--|:--
-Authorization | string | 必需。 Azure AD 访问令牌，格式为 **Bearer** &lt; *token* &gt; 。 |
+
+标头|类型|说明|
+---|---|---
+Authorization|string|必需。 Azure AD 访问令牌，格式为 **Bearer** &lt; *token* &gt; 。|
 
 ### <a name="request-parameters"></a>请求参数
 
 使用可选的查询参数指定和控制响应中返回的数据量。 如果调用此方法时不带参数，响应将包含组织中过去 2 小时内的所有警报。
 
-名称 | 值| 说明
-:---|:---|:---
-sinceTimeUtc | 日期时间 | 根据字段定义从中检索下限的警报： <br> `LastProcessedTimeUtc` <br> 该时间范围将为：从 sinceTimeUtc 时间到当前时间。 <br><br> **注意**：如果未指定，将检索过去两小时内生成的所有警报。
-untilTimeUtc | 日期时间 | 定义检索的上限警报。 <br> 该时间范围将为： `sinceTimeUtc` 从一次一 `untilTimeUtc` 次到一次。 <br><br> **注意**：如果未指定，默认值将为当前时间。
-ago | string | 在下列时间范围内拉取警报： `(current_time - ago)` 时而 `current_time` 时。 <br><br> 值应按照 ISO **8601 持续时间格式** 进行设置 <br> 示例： `ago=PT10M` 将拉取过去 10 分钟内收到的警报。
-limit | int | 定义要检索的警报数。 将基于定义的号码检索最新警报。<br><br> **注意**：如果未指定，将检索该时间范围内可用的所有警报。
-machinegroups | string | 指定要拉取警报的设备组。 <br><br> **注意**：如果未指定，将检索来自所有设备组的警报。 <br><br> 示例： <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
-DeviceCreatedMachineTags | string | 注册表中的单个设备标记。
-CloudCreatedMachineTags | string | 在活动中创建的设备Microsoft Defender 安全中心。
+名称|值|说明
+---|---|---
+sinceTimeUtc|日期时间|根据字段定义从中检索下限的警报： <p> `LastProcessedTimeUtc` <p> 该时间范围将为：从 sinceTimeUtc 时间到当前时间。 <p> **注意**：如果未指定，将检索过去两小时内生成的所有警报。
+untilTimeUtc|日期时间|定义检索的上限警报。 <p> 该时间范围将为： `sinceTimeUtc` 从一次一 `untilTimeUtc` 次到一次。 <p> **注意**：如果未指定，默认值将为当前时间。
+ago|string|在下列时间范围内拉取警报： `(current_time - ago)` 时而 `current_time` 时。 <p> 值应按照 ISO **8601 持续时间格式** 进行设置 <p> 示例： `ago=PT10M` 将拉取过去 10 分钟内收到的警报。
+limit|int|定义要检索的警报数。 将基于定义的号码检索最新警报。<p> **注意**：如果未指定，将检索该时间范围内可用的所有警报。
+machinegroups|string|指定要拉取警报的设备组。 <p> **注意**：如果未指定，将检索来自所有设备组的警报。 <p> 示例： <br><br> `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines`
+DeviceCreatedMachineTags|string|注册表中的单个设备标记。
+CloudCreatedMachineTags|string|在活动中创建的设备Microsoft Defender 安全中心。
 
 ### <a name="request-example"></a>请求示例
+
 以下示例演示如何检索组织的所有检测。
 
 ```http
@@ -146,13 +155,14 @@ Authorization: Bearer <your access token>
 ```
 
 ## <a name="response"></a>响应
+
 返回值是 JSON 格式的警报对象的数组。
 
 下面是一个返回值的示例：
 
-```json 
+```json
 [
-{        
+{
         "AlertTime": "2020-09-30T14:09:20.35743Z",
         "ComputerDnsName": "mymachine1.domain.com",
         "AlertTitle": "Suspicious File Activity",
@@ -208,7 +218,9 @@ Authorization: Bearer <your access token>
 ```
 
 ## <a name="code-examples"></a>代码示例
+
 ### <a name="get-access-token"></a>获取访问令牌
+
 以下代码示例演示如何获取用于调用适用于 Endpoint SIEM API 的 Microsoft Defender 的访问令牌。
 
 ```csharp
@@ -250,15 +262,16 @@ oAuthUri="https://login.microsoftonline.com/$tenantId/oauth2/token"
 scriptDir=$(pwd)
 
 apiResponse=$(curl -s X POST "$oAuthUri" -d "resource=$resourceAppIdUri&client_id=$appId&client_secret=$appSecret&\
-        grant_type=client_credentials" | cut -d "{" -f2 | cut -d "}" -f1)
+        grant_type=client_credentials"|cut -d "{" -f2|cut -d "}" -f1)
 IFS=","
 apiResponseArr=($apiResponse)
 IFS=":"
 tokenArr=(${apiResponseArr[6]})
-echo ${tokenArr[1]} | cut -d "\"" -f2 | cut -d "\"" -f1 >> $scriptDir/LatestSIEM-token.txt
+echo ${tokenArr[1]}|cut -d "\"" -f2|cut -d "\"" -f1 >> $scriptDir/LatestSIEM-token.txt
 ```
 
 ### <a name="use-token-to-connect-to-the-detections-endpoint"></a>使用令牌连接到检测终结点
+
 以下代码示例演示如何使用访问令牌调用 Defender for Endpoint SIEM API 获取警报。
 
 ```csharp
@@ -283,29 +296,29 @@ $dateTime = (Get-Date).ToUniversalTime().AddHours(-200).ToString("o")
 $url = 'https://wdatp-alertexporter-us.windows.com/api/alerts?limit=20&sinceTimeUtc=2020-01-01T00:00:00.000'
 
 #Set the WebRequest headers
-$headers = @{ 
+$headers = @{
     'Content-Type' = 'application/json'
     Accept = 'application/json'
-    Authorization = "Bearer $token" 
+    Authorization = "Bearer $token"
 }
 
-#Send the webrequest and get the results. 
+#Send the webrequest and get the results.
 $response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
 $response
 Write-Host
 
-#Extract the alerts from the results.  This works for SIEM API:
-$alerts =  $response.Content | ConvertFrom-Json | ConvertTo-Json
+#Extract the alerts from the results. This works for SIEM API:
+$alerts =  $response.Content|ConvertFrom-Json|ConvertTo-Json
 
 #Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
-$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}    
+$dateTimeForFileName = Get-Date -Format o|foreach {$_ -replace ":", "."}
 
 #Save the result as json and as csv
-$outputJsonPath = "$scriptDir\Latest Alerts $dateTimeForFileName.json"     
+$outputJsonPath = "$scriptDir\Latest Alerts $dateTimeForFileName.json"
 $outputCsvPath = "$scriptDir\Latest Alerts $dateTimeForFileName.csv"
 
 Out-File -FilePath $outputJsonPath -InputObject $alerts
-Get-Content -Path $outputJsonPath -Raw | ConvertFrom-Json | Select-Object -ExpandProperty value | Export-CSV $outputCsvPath -NoTypeInformation
+Get-Content -Path $outputJsonPath -Raw|ConvertFrom-Json|Select-Object -ExpandProperty value|Export-CSV $outputCsvPath -NoTypeInformation
 ```
 
 ```Bash
@@ -320,22 +333,24 @@ url='https://wdatp-alertexporter-us.windows.com/api/alerts?limit=20&sinceTimeUtc
 
 #send web requst to API and echo JSON content
 apiResponse=$(curl -s X GET "$url" -H "Content-Type: application/json" -H "Accept: application/json"\
-         -H "Authorization: Bearer $token" | cut -d "[" -f2 | cut -d "]" -f1)
+         -H "Authorization: Bearer $token"|cut -d "[" -f2|cut -d "]" -f1)
 echo "If you see Alert info in JSON format, congratulations you accessed the MDATP SIEM API!"
 echo
 echo $apiResponse
 ```
 
 ## <a name="error-codes"></a>错误代码
+
 Microsoft Defender for Endpoint REST API 返回由无效请求导致的以下错误代码。
 
-HTTP 错误代码 | 说明
-:---|:---
-401 | 请求格式不正确或令牌无效。
-403 | 未经授权异常 - 任何域不由租户管理员管理或租户状态被删除。
-500 | 服务出错。
+HTTP 错误代码|说明
+---|---
+401|请求格式不正确或令牌无效。
+403|未经授权异常 - 任何域不由租户管理员管理或租户状态被删除。
+500|服务出错。
 
 ## <a name="related-topics"></a>相关主题
+
 - [在 Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)
 - [配置 ArcSight 以拉取适用于终结点检测的 Microsoft Defender](configure-arcsight.md)
 - [将检测拉取到 SIEM 工具](configure-siem.md)

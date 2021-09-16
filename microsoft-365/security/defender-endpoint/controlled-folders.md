@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 19737781f2c22a356da2c237e2f059a362140956
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f2d9c6895abe4654270a9ae3818e2853fc00dd85
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222277"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400350"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>使用受控文件夹访问保护文重要件夹
 
@@ -62,7 +62,7 @@ ms.locfileid: "59222277"
 
 受保护的 [文件夹包括](#review-controlled-folder-access-events-in-windows-event-viewer) 公用系统文件夹 (包括启动) ，你可以 [添加更多文件夹](customize-controlled-folders.md#protect-additional-folders)。 还可以允许 [应用](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) 向它们授予对受保护文件夹的访问权限。
 
-可以使用审核 [模式评估](audit-windows-defender.md) 受控文件夹访问权限启用后对组织的影响。 您还可以访问 Windows Defender Test ground[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)以确认功能是否正常工作并查看其工作方式。
+可以使用审核 [模式评估](audit-windows-defender.md) 受控文件夹访问权限启用后对组织的影响。 您还可以访问 Windows Defender Test ground[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认该功能是否正常工作并查看其工作方式。
 
 受控文件夹访问权限支持以下版本的 Windows：
 
@@ -105,26 +105,23 @@ DeviceEvents
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在事件查看器中查看受控Windows访问事件
 
-你可以查看Windows事件日志，以查看当受控文件夹访问权限阻止 (或审核应用) 创建的事件：
+你可以查看Windows事件日志，以查看当受控文件夹访问权限阻止应用 (或审核) 创建的事件：
 
-1. 下载 [评估包](https://aka.ms/mp7z2w) ，将文件 *cfa-events.xml* 到设备上易于访问的位置。
+1. 下载 [评估包](https://aka.ms/mp7z2w) ，将文件 *cfa-events.xml* 设备上易于访问的位置。
 2. 在 **事件** 查看器中键入"开始"菜单以打开Windows事件查看器。
 3. 在左侧面板的"操作 **"下**，选择 **"导入自定义视图..."。**
-4. 导航到提取 *文件cfa-events.xml并选择* 它。 或者，[直接复制 XML。](event-views.md)
+4. 导航到提取内容 *cfa-events.xml* 并选择它。 或者，[直接复制 XML。](event-views.md)
 5. 选择“**确定**”。
 
 下表显示与受控文件夹访问权限相关的事件：
 
-<br>
-
-****
+<br/><br/>
 
 |事件 ID|描述|
 |---|---|
 |5007|更改设置时的事件|
 |1124|已审核的受控文件夹访问事件|
 |1123|阻止的受控文件夹访问事件|
-|
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>查看或更改受保护的文件夹列表
 
@@ -139,4 +136,4 @@ DeviceEvents
    - 若要删除文件夹，请选择该文件夹，然后选择"删除 **"。**
 
 > [!NOTE]
-> [Windows系统文件夹](#windows-system-folders-are-protected-by-default)默认受到保护，并且无法从列表中删除它们。
+> [Windows默认保护](#windows-system-folders-are-protected-by-default)系统文件夹，并且无法从列表中删除它们。

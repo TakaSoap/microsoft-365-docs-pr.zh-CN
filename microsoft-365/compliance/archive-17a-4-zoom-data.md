@@ -1,5 +1,5 @@
 ---
-title: 设置连接器以将"放大数据"存档到Microsoft 365
+title: 设置连接器以存档"放大"Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,22 +12,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 Zoom DataParser 连接器在 Microsoft 365 中导入和存档 Zoom 数据。
-ms.openlocfilehash: 2412969e2cbe5e6f601b9cf789585d931a4e7a3a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 310d4ec06fce7d95b457271ee37b9a21513dd6ec
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170175"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402234"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-data"></a>设置连接器以存档缩放数据
 
 使用[Zoom DataParser](https://www.17a-4.com/dataparser/) from 17a-4 LLC 将 Zoom 平台的数据导入并存档到组织中用户Microsoft 365邮箱。 DataParser 包括一个缩放连接器，该连接器配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 Zoom DataParser 连接器将 Zoom 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
 
-缩放数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 Zoom 连接器导入和存档数据Microsoft 365可帮助组织遵守政府法规策略。
+缩放数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 Zoom 连接器导入数据并存档数据Microsoft 365可帮助组织遵守政府法规策略。
 
 ## <a name="overview-of-archiving-zoom-data"></a>存档缩放数据概述
 
-以下概述介绍使用数据连接器在"缩放"文件中存档缩放Microsoft 365。
+以下概述介绍使用数据连接器在"缩放"文件中存档Microsoft 365。
 
 ![Zoom data from 17a-4 的存档工作流。](../media/ZoomDataParserConnectorWorkflow.png)
 
@@ -35,7 +35,7 @@ ms.locfileid: "59170175"
 
 2. DataParser 会定期收集 Zoom 项目。 DataParser 还会将邮件内容转换为电子邮件格式。
 
-3. 在 Microsoft 365 合规中心 创建的 Zoom DataParser 连接器连接到 DataParser，将邮件Azure 存储 Microsoft 云中的安全位置。
+3. 在 Microsoft 365 合规中心 创建的 Zoom DataParser 连接器连接到 DataParser，将邮件传输至 Microsoft 云中的Azure 存储位置。
 
 4. 在用户邮箱中创建名为 **Zoom DataParser** 的收件箱文件夹中的子文件夹，并且 Zoom 项目将导入该文件夹。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 Zoom 项目都包含此属性，该属性填充了每个参与者的电子邮件地址。
 
@@ -43,7 +43,9 @@ ms.locfileid: "59170175"
 
 - 为 Microsoft 连接器创建 DataParser 帐户。 为此，请联系 [17a-4 LLC](https://www.17a-4.com/contact/)。 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 必须在步骤 1 中创建 Zoom DataParser 连接器 (并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，不会向角色组分配此角色Exchange Online。 可以将邮箱导入导出角色添加到组织管理角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 中创建 Zoom DataParser 连接器 (并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，此角色不会分配给 Exchange Online 中的角色组。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色组"Exchange Online。
+
+- 此数据连接器可用于美国政府GCC中Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="step-1-set-up-a-zoom-dataparser-connector"></a>步骤 1：设置 Zoom DataParser 连接器
 
@@ -75,7 +77,7 @@ Zoom DataParser 连接器会自动将用户映射到Microsoft 365电子邮件地
 
 2. 单击 **"连接器"** 选项卡，然后选择您创建的"缩放数据Parser"连接器以显示该飞出页，其中包含有关连接器的属性和信息。
 
-3. 在 **"源的** 连接器状态"下， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
+3. 在 **"源的连接器状态"下**， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
 
 ## <a name="known-issues"></a>已知问题
 

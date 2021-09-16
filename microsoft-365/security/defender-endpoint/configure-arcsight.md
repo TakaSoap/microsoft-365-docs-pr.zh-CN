@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1ab7e1f31fff1e4b553d5d301eb7fbe4749de19e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 41d07ae2c6acc4bdbe828bc98d8bdfecdbf45f2e
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170097"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401718"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>配置 Micro Focus ArcSight 以拉取 Defender 进行终结点检测
 
@@ -43,7 +43,7 @@ ms.locfileid: "59170097"
 
 ## <a name="before-you-begin"></a>开始之前
 
-配置微型焦点 ArcSight 连接器工具需要多个配置文件，以从 AAD Azure Active Directory (分析) 检测。
+配置微型焦点 ArcSight 连接器工具需要多个配置文件，以拉取和分析来自 AAD Azure Active Directory (应用程序的) 检测。
 
 本部分将指导你获取正确设置和使用所需配置文件的必要信息。
 
@@ -59,7 +59,7 @@ ms.locfileid: "59170097"
   - WDATP-connector.properties
   - WDATP-connector.jsonparser.properties
 
-    当你选择 Micro Focus ArcSight 作为你在组织.zip SIEM 类型时，你将保存一个包含这两个文件的配置文件。
+    当你选择 Micro Focus ArcSight 作为你在组织.zip SIEM 类型时，你将保存一个包含这两个文件的文件。
 
 - 请确保生成以下令牌并准备好：
   - 访问令牌
@@ -85,7 +85,7 @@ ms.locfileid: "59170097"
 
 3. 打开文件资源管理器并找到启用 SIEM 集成功能时保存的两个配置文件。 将两个文件放在 FlexConnector 安装位置，例如：
 
-   - WDATP-connector.jsonparser.properties： C： \\ *folder_location*\current\user\agent\flexagent\
+   - WDATP-connector.jsonparser.properties：C：folder_location \\ \current\user\agent\flexagent\
    - WDATP-connector.properties：C：folder_location \\ \current\user\agent\flexagent\
 
    > [!NOTE]
@@ -104,7 +104,7 @@ ms.locfileid: "59170097"
    |字段|值|
    |---|---|
    |配置文件|键入客户端属性文件的名称。 该名称必须与下载的 .zip中提供的文件匹配。 <p> 例如，如果"flexagent"目录中的配置文件名为"WDATP-Connector.jsonparser.properties"，则必须键入"WDATP-Connector"作为客户端属性文件的名称。|
-   |事件 URL|根据您的数据中心位置，选择欧盟或美国 URL： <ul><li>**对于欧盟**：  `https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**对于美国**： `https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**对于英国**： `https://<i></i>wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
+   |事件 URL|根据您的数据中心位置，选择欧盟、美国或英国 URL： <ul><li>**对于欧盟**：  `https://wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**对于美国**： `https://wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**对于英国**： `https://wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
    |身份验证类型|OAuth 2|
    |OAuth 2 客户端属性文件|浏览到 *wdatp-connector.properties 文件* 的位置。 该名称必须与下载的 .zip中提供的文件匹配。|
    |刷新令牌|可以通过两种方式获取刷新令牌：从 **SIEM** 设置页生成刷新令牌，或者使用 restutil 工具。 <p> 有关从首选项设置生成刷新令牌详细信息 **，** 请参阅在 Defender for Endpoint 中启用 [SIEM 集成](enable-siem-integration.md)。 <p> **使用 restutil 工具获取刷新令牌**： <ol><li>打开命令提示符。 导航到 C： \\ *文件夹 \_ 位置*\current\bin，其中 *文件夹 \_* 位置表示安装该工具的位置。</li><li>类型： `arcsight restutil token -config` 从 bin 目录。 例如 **：arcsight restutil boxtoken -proxy proxy.location.hp.com:8080**。 将打开 Web 浏览器窗口。</li><li>键入凭据，然后单击密码字段，让页面重定向。 在登录提示中，输入凭据。</li><li>刷新令牌显示在命令提示符中。</li><li>将其复制并粘贴到 **"刷新令牌"** 字段中。|
@@ -170,7 +170,7 @@ Defender for Endpoint 检测将显示为离散事件，"Microsoft"作为供应�
 
 ## <a name="troubleshooting-micro-focus-arcsight-connection"></a>微焦点 ArcSight 连接疑难解答
 
-**问题：** 未能刷新令牌。 你可以找到位于 C： \\ *folder_location*\current\logs 中的日志，folder_location表示安装该工具的位置。 打开 _agent.log_ 并查找 `ERROR/FATAL/WARN` 。
+**问题：** 未能刷新令牌。 你可以找到位于 C： \\ *folder_location*\current\logs 中的日志folder_location表示安装该工具的位置。 打开 _agent.log_ 并查找 `ERROR/FATAL/WARN` 。
 
 **症状：** 收到以下错误消息：
 

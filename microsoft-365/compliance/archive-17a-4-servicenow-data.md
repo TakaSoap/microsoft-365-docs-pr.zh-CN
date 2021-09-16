@@ -1,5 +1,5 @@
 ---
-title: 设置连接器以将 ServiceNow 17a-4 DataParser 数据存档Microsoft 365
+title: 设置连接器以将 ServiceNow 17a-4 DataParser 数据存档到 Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 ServiceNow DataParser 连接器在 Microsoft 365 中导入和存档 ServiceNow 数据。
-ms.openlocfilehash: e2727a0146d5519310a9707e0d59a7560984305f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5cf800c10b8e4bb7631c43183ea939d8eba7cf28
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170179"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401310"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-servicenow"></a>设置连接器以从 ServiceNow 存档数据
 
@@ -43,7 +43,9 @@ ms.locfileid: "59170179"
 
 - 为 Microsoft 连接器创建 DataParser 帐户。 为此，请联系 [17a-4 LLC](https://www.17a-4.com/contact/)。 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 必须在步骤 1 (中创建 ServiceNow DataParser 连接器，并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，不会向角色组分配此角色Exchange Online。 可以将邮箱导入导出角色添加到组织管理角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 (中创建 ServiceNow DataParser 连接器并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，此角色不会分配给 Exchange Online 中的角色组。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色组"Exchange Online。
+
+- 此数据连接器可用于美国政府GCC中Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="step-1-set-up-a-servicenow-dataparser-connector"></a>步骤 1：设置 ServiceNow DataParser 连接器
 
@@ -65,7 +67,7 @@ ms.locfileid: "59170179"
 
 ## <a name="step-3-map-users"></a>步骤 3：映射用户
 
-ServiceNow DataParser 连接器会自动将用户映射到Microsoft 365电子邮件地址，然后再将数据导入Microsoft 365。
+ServiceNow DataParser 连接器会自动将用户映射到其 Microsoft 365 电子邮件地址，然后再将数据导入Microsoft 365。
 
 ## <a name="step-4-monitor-the-servicenow-dataparser-connector"></a>步骤 4：监视 ServiceNow DataParser 连接器
 
@@ -75,7 +77,7 @@ ServiceNow DataParser 连接器会自动将用户映射到Microsoft 365电子邮
 
 2. 单击 **"连接器"** 选项卡，然后选择您创建的 ServiceNow DataParser 连接器以显示该飞出页，其中包含有关连接器的属性和信息。
 
-3. 在 **"源的连接器状态"** 下， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
+3. 在 **"源的连接器状态"下**， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
 
 ## <a name="known-issues"></a>已知问题
 

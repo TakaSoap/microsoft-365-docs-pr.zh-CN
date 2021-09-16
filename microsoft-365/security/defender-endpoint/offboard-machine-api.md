@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: b62dbc0881ffe1b7129c053d13ee509796aef5b9
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357379"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399414"
 ---
 # <a name="offboard-machine-api"></a>载出计算机 API
 
@@ -65,7 +65,7 @@ ms.locfileid: "59357379"
 > 使用用户凭据获取令牌时：
 >
 > - 用户需要"全局管理员"AD 角色
-> - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 用户需要具有对设备的访问权限，根据设备组设置 (创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 80a3d5bee2f26e708969832c67982f679b95c0b4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b092db48a27407bd5e3ef3fdfd6c6eda02ef0c34
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222267"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401934"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint 设备控制可移动存储保护
 
@@ -42,7 +42,7 @@ Microsoft Defender for Endpoint 中的设备控制可移动存储保护可防止
 
 - 在设备级别和用户级别应用。 或两者。 仅允许特定人员对特定计算机上特定可移动存储执行读/写/执行访问。
 - 支持 MEM OMA-URI 和 GPO。
-- 支持的 '[Device Properties](#device-properties)' as listed.
+- 支持的'[设备属性](#device-properties)'，如所列。
 - 有关 Windows 中的功能，请参阅[可移动存储访问控制](device-control-removable-storage-access-control.md)。
 
 **支持的平台**- Windows 10
@@ -63,7 +63,7 @@ Microsoft Defender for Endpoint 中的设备控制可移动存储保护可防止
 
 - 在设备级别应用：相同的策略适用于任何登录的用户。
 - 支持Microsoft Endpoint Manager和组策略对象。
-- 支持的 '[Device Properties](#device-properties)' as listed.
+- 支持的'[设备属性](#device-properties)'，如所列。
 - 有关此Windows，请参阅如何使用 Microsoft Defender for Endpoint 控制 USB 设备和其他[可移动媒体](control-usb-devices-using-intune.md)。
 
 **支持的平台**- Windows 10
@@ -79,7 +79,7 @@ Microsoft Defender for Endpoint 中的设备控制可移动存储保护可防止
 
 **功能** - 审核、警告或阻止用户将项目或信息复制到可移动媒体或 USB 设备。
 
-**说明**- 若要详细了解Windows，请参阅了解Microsoft 365 [终结点数据丢失防护](../../compliance/endpoint-dlp-learn-about.md)。
+**说明**- 若要详细了解Windows，请参阅了解Microsoft 365 [终结点数据丢失防护。](../../compliance/endpoint-dlp-learn-about.md)
 
 **支持的平台**- Windows 10
 
@@ -98,18 +98,15 @@ Microsoft Defender for Endpoint 中的设备控制可移动存储保护可防止
 
 Microsoft Defender for Endpoint 设备控制可移动存储保护允许你根据下表中描述的属性限制可移动存储访问：
 
-<br>
+<br/><br/>
 
-****
-
-|属性名|适用的策略|适用于操作系统|描述|
+|属性名|适用的策略|适用于操作系统|说明|
 |---|---|---|---|
-|设备类|[如何使用 Microsoft Defender for Endpoint 控制 USB 设备和其他可移动媒体](control-usb-devices-using-intune.md)|Windows|有关设备 ID 格式的信息，请参阅 [设备设置类](/windows-hardware/drivers/install/overview-of-device-setup-classes)。 以下两个链接提供了设备设置类的完整列表。 "系统使用"类通常指来自工厂的计算机/计算机的设备，而"供应商"类通常指可连接到现有计算机/计算机的设备：供应商可用的系统定义的设备设置类[- Windows 驱动程序](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors)和系统定义的设备设置类（保留用于系统 - [Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use)驱动程序）。 **注意**：设备安装可以应用于任何设备，而不仅是可移动存储。|
+|设备类|[如何使用 Microsoft Defender for Endpoint 控制 USB 设备和其他可移动媒体](control-usb-devices-using-intune.md)|Windows|有关设备 ID 格式的信息，请参阅 [设备设置类](/windows-hardware/drivers/install/overview-of-device-setup-classes)。 以下两个链接提供了设备设置类的完整列表。 "系统使用"类通常指来自工厂的计算机/计算机的设备，而"供应商"类主要指可以连接到现有计算机/计算机的设备：供应商可用的系统定义的设备设置类[- Windows 驱动程序](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors)和系统定义的设备设置类（保留用于系统 - [Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use)驱动程序）。 **注意**：设备安装可以应用于任何设备，而不仅是可移动存储。|
 |主 ID|[可移动存储访问控制](device-control-removable-storage-access-control.md)|Windows|主 ID 包括可移动存储、CD/DVD 和 Windows可移植设备/WPD。|
 |设备 ID|[可移动存储访问控制](device-control-removable-storage-access-control.md); <p> [如何使用 Microsoft Defender for Endpoint 控制 USB 设备和其他可移动媒体](control-usb-devices-using-intune.md)|Windows|有关设备 ID 格式的信息，请参阅标准 [USB](/windows-hardware/drivers/install/standard-usb-identifiers)标识符，例如 USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
-|硬件 ID|[可移动存储访问控制](device-control-removable-storage-access-control.md) <p> [如何使用 Microsoft Defender for Endpoint 控制 USB 设备和其他可移动媒体](control-usb-devices-using-intune.md)|Windows|在系统中标识设备的字符串，例如 USBSTOR\DiskGeneric_Flash_Disk___8.07; **注意**：硬件 ID 不是唯一的;不同设备可能共享相同的值。|
+|硬件 ID|[可移动存储访问控制](device-control-removable-storage-access-control.md) <p> [如何使用 Microsoft Defender for Endpoint 控制 USB 设备和其他可移动媒体](control-usb-devices-using-intune.md)|Windows|一个标识系统中设备的字符串，例如 USBSTOR\DiskGeneric_Flash_Disk___8.07; **注意**：硬件 ID 不是唯一的;不同设备可能共享相同的值。|
 |实例 ID|[可移动存储访问控制](device-control-removable-storage-access-control.md) <p> 设备安装|Windows|唯一标识系统中设备的字符串，例如 USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
 |友好名称|[可移动存储访问控制](device-control-removable-storage-access-control.md)|Windows|附加到设备的字符串，例如通用闪存磁盘 USB 设备|
 |供应商 ID/产品 ID|[可移动存储访问控制](device-control-removable-storage-access-control.md)|Windows <p> macOS|供应商 ID 是 USB 委员会分配给供应商的四位数供应商代码。 产品 ID 是供应商分配给设备的四位数产品代码;支持通配符。|
 |Serial NumberId|[可移动存储访问控制](device-control-removable-storage-access-control.md)|Windows <p> macOS |例如 <SerialNumberId>，002324B534BCB431B000058A</SerialNumberId>|
-|

@@ -14,11 +14,11 @@ metadata:
   ms.date: 08/30/2021
   localization_priority: Priority
   ms.openlocfilehash: e5f759f923e5099058730311ccbbaa5ce32dfe2d
-  ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+  ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/15/2021
-  ms.locfileid: "59357223"
+  ms.lasthandoff: 09/16/2021
+  ms.locfileid: "59399558"
 landingContent:
 - title: Microsoft Defender for Endpoint
   linkLists:
@@ -34,7 +34,7 @@ landingContent:
     links:
     - text: Microsoft Defender for Endpoint 中的新增功能
       url: whats-new-in-microsoft-defender-atp.md
-    - text: '宣布推出 Microsoft Defender for Endpoint 计划 1 (预览) '
+    - text: '宣布推出 Microsoft Defender for Endpoint Plan 1 (预览) '
       url: defender-endpoint-plan-1.md
   - linkListType: video
     links:

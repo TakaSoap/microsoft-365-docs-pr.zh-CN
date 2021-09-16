@@ -21,11 +21,11 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.technology: mde
 ms.openlocfilehash: c590812ccc975206c6c278794f943f7e16c8bdd1
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357677"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400818"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>阻止模式下的终结点检测和响应 (EDR)。
 
@@ -73,13 +73,13 @@ EDR模式中的应用已与威胁& 漏洞管理[集成](next-gen-threat-and-vuln
 3. 向下滚动，然后在块模式下EDR **启用"**
 
 > [!NOTE]
-> EDR在阻止模式下只能打开Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) 或之前 [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft Defender 安全中心 () 。 不能使用注册表项、Microsoft Intune或组策略来启用或禁用EDR阻止模式。
+> EDR在阻止模式下只能打开 Microsoft 365 Defender 门户 () [https://security.microsoft.com](https://security.microsoft.com) 或 [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft Defender 安全中心 () 。 不能使用注册表项、Microsoft Intune或组策略来启用或禁用EDR阻止模式。
 
-## <a name="requirements-for-edr-in-block-mode"></a>阻止模式下EDR要求
+## <a name="requirements-for-edr-in-block-mode"></a>在阻止EDR下执行操作的要求
 
 |要求|详细信息|
 |---|---|
-|权限|必须在 "全局管理员"或"安全管理员"角色中分配[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 有关详细信息，请参阅 [基本权限](basic-permissions.md)。|
+|权限|必须在 "全局管理员"或"安全管理员"角色中[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 有关详细信息，请参阅 [基本权限](basic-permissions.md)。|
 |操作系统|设备必须运行以下版本之一Windows： <ul><li>Windows 10 (所有) </li><li>Windows服务器版本 1803 或更高版本</li><li>Windows Server 2019</li><li>Windows Server 2016 (仅在Microsoft Defender 防病毒处于活动状态时) </li></ul>|
 |Microsoft Defender for Endpoint|设备必须载入到适用于终结点的 Defender。 请参阅 [Microsoft Defender for Endpoint 的最低要求](minimum-requirements.md)。|
 |Microsoft Defender 防病毒|设备必须已安装Microsoft Defender 防病毒在主动模式或被动模式下运行。 [确认Microsoft Defender 防病毒处于主动或被动模式](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。|
@@ -96,16 +96,16 @@ EDR模式中的应用已与威胁& 漏洞管理[集成](next-gen-threat-and-vuln
 
 在阻止模式下EDR主要目的是修正非 Microsoft 防病毒产品错过的泄露后检测。 但是，我们建议保持EDR模式处于打开状态，Microsoft Defender 防病毒被动模式还是主动模式运行。
 
-- 当Microsoft Defender 防病毒处于被动模式时，EDR模式中的用户与 Microsoft Defender for Endpoint 一起提供另一层防御。
-- 当Microsoft Defender 防病毒模式时，EDR阻止模式不会提供额外的扫描，但它允许 Microsoft Defender 防病毒 对泄露后的行为或行为EDR自动操作。
+- 当Microsoft Defender 防病毒处于被动模式时，EDR处于阻止模式时，会与 Microsoft Defender for Endpoint 一起提供另一层防御。
+- 当Microsoft Defender 防病毒处于活动状态时，EDR阻止模式下的扫描不提供额外扫描，但它允许 Microsoft Defender 防病毒 对泄露后的行为或行为EDR自动操作。
 
 ### <a name="will-edr-in-block-mode-affect-a-users-antivirus-protection"></a>EDR阻止模式是否会影响用户的防病毒保护？
 
-EDR模式访问不会影响在用户设备上运行的第三方防病毒保护。 EDR如果主防病毒解决方案遗漏了某些内容，或者存在泄露后检测，则以阻止模式运行。 EDR模式运行方式与被动模式下Microsoft Defender 防病毒一样，只不过EDR模式下的阻止模式也会阻止和修正检测到的恶意项目或行为。
+EDR模式访问不会影响在用户设备上运行的第三方防病毒保护。 EDR如果主防病毒解决方案遗漏了某些内容，或者存在攻破后检测，则阻止模式下的防病毒功能有效。 EDR模式运行方式与被动模式下Microsoft Defender 防病毒一样，只不过EDR模式下的阻止模式也会阻止和修正检测到的恶意项目或行为。
 
 ### <a name="why-do-i-need-to-keep-microsoft-defender-antivirus-up-to-date"></a>为什么我需要使Microsoft Defender 防病毒保持最新状态？
 
-由于Microsoft Defender 防病毒检测并修正恶意项目，因此必须使项目保持最新状态。 为了EDR模式运行，它使用最新的设备学习模型、行为检测和启发。 [Defender for Endpoint](microsoft-defender-endpoint.md)功能堆栈以集成方式工作。 若要获取最佳保护值，Microsoft Defender 防病毒保持最新状态。 请参阅[管理Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)。
+由于Microsoft Defender 防病毒检测并修正恶意项目，因此保持其最新状态非常重要。 为了EDR模式运行，它使用最新的设备学习模型、行为检测和启发。 [Defender for Endpoint](microsoft-defender-endpoint.md)功能堆栈以集成方式工作。 若要获取最佳保护值，Microsoft Defender 防病毒保持最新状态。 请参阅[管理Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 ### <a name="why-do-we-need-cloud-protection-maps-on"></a>为什么需要云保护 (MAPS) 打开？
 
@@ -116,7 +116,7 @@ EDR模式访问不会影响在用户设备上运行的第三方防病毒保护�
 对于运行 Windows 10、Windows Server 版本 1803 或更高版本或 Windows Server 2019 的终结点，当 Microsoft Defender 防病毒 处于活动状态时，它将用作设备上的主要防病毒。 在被动模式下运行时，Microsoft Defender 防病毒不是主要的防病毒产品。 在这种情况下，威胁不会由Microsoft Defender 防病毒进行修正。
 
 > [!NOTE]
-> Microsoft Defender 防病毒设备载入到 Microsoft Defender for Endpoint 时，才能在被动模式下运行。
+> Microsoft Defender 防病毒设备载入 Microsoft Defender for Endpoint 时，才能在被动模式下运行。
 
 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](microsoft-defender-antivirus-compatibility.md)。
 
@@ -129,11 +129,11 @@ EDR模式访问不会影响在用户设备上运行的第三方防病毒保护�
 |方法|Procedure|
 |---|---|
 |PowerShell|<ol><li>选择"开始"菜单，开始键入 `PowerShell` ，然后在Windows PowerShell中打开" "。</li><li>类型 `Get-MpComputerStatus`。</li><li>在结果列表中，在 **AMRunningMode** 行中查找下列值之一：<ul><li>`Normal`</li><li>`Passive Mode`</li></ul></li></ol> <p> 若要了解更多信息，请参阅 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)。|
-|命令提示符|<ol><li>选择"开始"菜单，开始键入 `Command Prompt` ，然后在Windows打开命令提示符。</li><li>类型 `sc query windefend`。</li><li>在结果列表中的 **"状态** "行中，确认服务正在运行。</li></ol>|
+|命令提示符|<ol><li>Select the "开始"菜单， begin typing `Command Prompt` ， and then open Windows Command Prompt in the results.</li><li>类型 `sc query windefend`。</li><li>在结果列表中的 **"状态** "行中，确认服务正在运行。</li></ol>|
 
-### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>如何确认在EDR模式下已打开阻止模式，Microsoft Defender 防病毒处于被动模式？
+### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>如何确认处于EDR模式时是否处于打开状态，Microsoft Defender 防病毒处于被动模式？
 
-可以使用 PowerShell 确认阻止EDR处于阻止模式时处于打开状态，Microsoft Defender 防病毒被动模式下运行。
+可以使用 PowerShell 确认在EDR模式下打开处于阻止模式Microsoft Defender 防病毒处于被动模式。
 
 1. 选择"开始"菜单，开始键入 `PowerShell` ，然后在Windows PowerShell中打开" "。
 
@@ -144,17 +144,17 @@ EDR模式访问不会影响在用户设备上运行的第三方防病毒保护�
    > [!TIP]
    > 如果Microsoft Defender 防病毒处于活动状态，你将看到 `Normal` 而不是 `EDR Block Mode` 。 若要了解更多信息，请参阅 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)。
 
-### <a name="is-edr-in-block-mode-supported-on-windows-server-2016"></a>在EDR上是否支持阻止Windows Server 2016？
+### <a name="is-edr-in-block-mode-supported-on-windows-server-2016"></a>EDR上是否支持阻止Windows Server 2016？
 
-如果Microsoft Defender 防病毒模式或被动EDR运行，则以下版本的 Windows 支持以阻止模式Windows：
+如果Microsoft Defender 防病毒模式或被动模式下运行，EDR以下版本的服务器支持阻止模式下Windows：
 
-- Windows 10 (所有) 
+- Windows 10 (所有版本) 
 - Windows服务器版本 1803 或更高版本
 - Windows Server 2019
 
 #### <a name="what-about-windows-server-2016"></a>如何Windows Server 2016？
 
-如果Windows Server 2016在Microsoft Defender 防病毒模式下运行，并且终结点已载入到 Defender for Endpoint，则EDR支持以阻止模式运行。 但是，EDR模式模式旨在当终结点上不是Microsoft Defender 防病毒防病毒解决方案时提供额外保护。 在这种情况下，Microsoft Defender 防病毒被动模式下运行。
+如果Windows Server 2016在Microsoft Defender 防病毒模式下运行，并且终结点已载入到 Defender for Endpoint，则EDR支持以阻止模式运行。 但是，EDR阻止模式旨在当终结点上不是Microsoft Defender 防病毒防病毒解决方案时提供额外保护。 在这种情况下，Microsoft Defender 防病毒被动模式下运行。
 
 目前，Microsoft Defender 防病毒在被动模式下运行 Windows Server 2016。 若要了解更多信息，请参阅被动[模式和Windows服务器](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)Microsoft Defender 防病毒[兼容性](microsoft-defender-antivirus-compatibility.md)。
 
