@@ -2,6 +2,8 @@
   href: index.yml
 - name: Microsoft 365 合规中心更新信息
   href: whats-new.md
+- name: 合规性试用版
+  href: compliance-easy-trials.md
 - name: 入门
   items:
     - name: 实现合规性入门的快速任务
@@ -101,37 +103,45 @@
     - name: 敏感信息类型
       items:
         - name: 了解敏感信息类型
-          href: sensitive-information-type-learn-about.md
-        - name: 敏感信息类型属性定义
-          href: sensitive-information-type-entity-definitions.md
-        - name: DLP 函数查找的内容
-          href: what-the-dlp-functions-look-for.md
-        - name: 自定义内置敏感信息类型
-          href: customize-a-built-in-sensitive-information-type.md
-        - name: 使用精确数据匹配创建自定义敏感信息类型
-          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: 使用精确数据匹配架构和敏感信息类型向导
-          href: sit-edm-wizard.md
-        - name: 修改精确数据匹配架构，以使用可配置匹配
-          href: sit-modify-edm-schema-configurable-match.md
-        - name: 为精确数据匹配活动创建通知（预览）
-          href: sit-edm-notifications-activities.md
-        - name: 自定义敏感信息类型入门 - 合规中心
-          href: create-a-custom-sensitive-information-type.md
-        - name: 创建自定义敏感信息类型 - PowerShell
-          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
-        - name: 删除自定义敏感信息类型 - PowerShell
-          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
-        - name: 修改自定义敏感信息类型 - PowerShell
-          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
-        - name: 自定义敏感信息类型筛选器参考
-          href: sit-custom-sit-filters.md
-        - name: 创建关键字字典
-          href: create-a-keyword-dictionary.md
-        - name: 修改关键字词典
-          href: sit-modify-keyword-dictionary.md
-        - name: 文档指纹
-          href: document-fingerprinting.md
+          items:
+            - name: 了解敏感信息类型
+              href: sensitive-information-type-learn-about.md
+            - name: 文档指纹
+              href: document-fingerprinting.md
+        - name: 敏感信息类型入门
+          items:
+            - name: 自定义敏感信息类型入门 - 合规中心
+              href: create-a-custom-sensitive-information-type.md
+        - name: 使用敏感信息类型
+          items:
+            - name: 自定义内置敏感信息类型
+              href: customize-a-built-in-sensitive-information-type.md
+            - name: 使用精确数据匹配创建自定义敏感信息类型
+              href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+            - name: 使用精确数据匹配架构和敏感信息类型向导
+              href: sit-edm-wizard.md
+            - name: 修改精确数据匹配架构，以使用可配置匹配
+              href: sit-modify-edm-schema-configurable-match.md
+            - name: 为精确数据匹配活动创建通知（预览）
+              href: sit-edm-notifications-activities.md
+            - name: 创建自定义敏感信息类型 - PowerShell
+              href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+            - name: 删除自定义敏感信息类型 - PowerShell
+              href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+            - name: 修改自定义敏感信息类型 - PowerShell
+              href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+            - name: 创建关键字字典
+              href: create-a-keyword-dictionary.md
+            - name: 修改关键字词典
+              href: sit-modify-keyword-dictionary.md
+        - name: 敏感信息类型参考
+          items:
+            - name: 敏感信息类型属性定义
+              href: sensitive-information-type-entity-definitions.md
+            - name: DLP 函数查找的内容
+              href: what-the-dlp-functions-look-for.md
+            - name: 自定义敏感信息类型筛选器参考
+              href: sit-custom-sit-filters.md
     - name: 可训练的分类器
       items:
         - name: 了解可训练的分类器
@@ -166,7 +176,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: 启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: 针对由敏感度标签加密的文档启用共同创作（预览版）
+        - name: 针对由敏感度标签加密的文档启用共同创作
           href: sensitivity-labels-coauthoring.md
         - name: 管理 Office 应用中的敏感度标签
           href: sensitivity-labels-office-apps.md
@@ -321,7 +331,7 @@
               href: dlp-use-policies-non-microsoft-cloud-apps.md
             - name: DLP 策略条件和例外情况
               href: dlp-conditions-and-exceptions.md
-            - name: 将 Exchange Online 数据丢失防护策略迁移到合规中心(预览版)
+            - name: 将 Exchange Online 数据丢失防护策略迁移到合规中心
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: 数据丢失防护策略提示参考
               href: dlp-policy-tips-reference.md
