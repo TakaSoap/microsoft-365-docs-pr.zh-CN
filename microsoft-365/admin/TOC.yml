@@ -8,6 +8,8 @@
           href: admin-overview/sign-up-for-office-365.md
         - name: 试用或购买 Microsoft 365
           href: ../commerce/try-or-buy-microsoft-365.md
+        - name: 规划 Microsoft 365 商业版安装
+          href: setup/plan-your-setup.md
         - name: 注册 Microsoft 365 商业高级版
           items:
             - name: 注册
@@ -19,7 +21,7 @@
             - name: 注册 Microsoft 365 商业标准版
               href: ../admin/simplified-signup/signup-business-standard.md
             - name: 安装 Microsoft 365 商业标准版
-              href: ../admin/simplified-signup/signup-business-standard.md
+              href: ../admin/setup/setup-business-standard.md
             - name: 邀请用户使用 Microsoft 365 商业标准版
               href: ../admin/simplified-signup/admin-invite-business-standard.md
             - name: 接受电子邮件邀请函，使用 Microsoft 365 商业标准版
@@ -28,8 +30,6 @@
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: 将数据迁移到 Microsoft 365 商业标准版订阅
               href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: 计划安装
-          href: setup/plan-your-setup.md
         - name: 规划 Windows 365 商业版
           items:
             - name: Windows 365 商业版和云电脑入门
@@ -38,7 +38,7 @@
               href: setup/windows-365-business-sizing.md
             - name: 排查 Windows 365 云电脑设置问题
               href: setup/troubleshoot-windows-365-business.md
-        - name: 使用引导式安装为组织安装
+        - name: 为业务组织设置 Microsoft 365
           items:
             - name: Microsoft 365 商业基础版
               href: setup/setup-business-basic.md

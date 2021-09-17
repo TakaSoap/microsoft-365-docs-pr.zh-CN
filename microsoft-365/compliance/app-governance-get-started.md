@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用应用治理功能来治理你的应用。
-ms.openlocfilehash: 35a04beb04f22558ca150294ebb566a8284d5270
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d733d62927e78b99ad5289206caf51df3459522c
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171076"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401084"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>开始使用应用治理（预览版）
 
@@ -34,19 +34,18 @@ ms.locfileid: "59171076"
 
 ## <a name="step-2-sign-up-for-free-trial-of-app-governance"></a>步骤 2：注册免费试用应用管理
 
-对于新的 Microsoft 365 客户:
-
-1. 在此页面顶部，选择  **“免费账户”**  按钮。
-1. 在  **试用 Microsoft 365 商业版** 下选择 **“免费试用 1 个月”**。
-1. 完成注册步骤。
-1. 继续执行现有 Microsoft 365 客户的步骤。
-
 对于现有的 Microsoft 365 客户：
 
 1. 导航到 [“免费试用注册页”](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)。 
 1. 完成添加应用程序治理的步骤。 注册很简单，如下图所示。
 
-:::image type="content" source="../media/manage-app-protection-governance/app-governance-signup2.gif" alt-text="在账户中添加应用治理的简单步骤。":::
+:::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="在账户中添加应用治理的简单步骤。":::
+
+如果还不是 Microsoft 365 客户，则可以注册免费试用版：
+
+1. 在此页面顶部，选择  **“免费账户”**  按钮。
+1. 在  **试用 Microsoft 365 商业版** 下选择 **“免费试用 1 个月”**。
+1. 完成注册步骤。
 
 ## <a name="step-3-add-integration-with-mcas"></a>步骤 3：添加与 MCAS 的集成
 
@@ -116,9 +115,6 @@ ms.locfileid: "59171076"
 - 安全管理员
 - 安全操作员
 - 安全信息读取者（只读）
-
-> [!NOTE]
-> 只有全局管理员可以激活应用治理免费试用版。
 
 以下是每个角色的能力。
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '创建会议室或设备邮箱，使组织中的每个人都能够通过 Outlook 预留供会议或活动使用。 '
-ms.openlocfilehash: 3ee0d5dd137fa9c7be87891696d74efc9ef94512
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 7cee521b4046a3d5ca3acc6dabb657a56ccbc7d3
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355937"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400554"
 ---
 # <a name="room-and-equipment-mailboxes"></a>会议室和设备邮箱
 
@@ -124,7 +124,7 @@ ms.locfileid: "59355937"
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>会议室邮箱或设备邮箱是否需要产品许可证？
 
-否。 尽管组织中的大多数人需要许可证才能使用Microsoft 365，但无需为会议室邮箱或设备邮箱分配许可证，以防资源邮箱的大小需要大于 50 GB，或者，如果需要某些功能（安全性和合规性的保留策略，或者 Exchange Online 中的保留策略）， 或者，如果资源邮箱不需要附加联机存档。
+否。尽管组织中的大多数人需要许可证才能使用 Microsoft 365，但无需为会议室邮箱或设备邮箱分配许可证，以防资源邮箱的大小不需要大于 50 GB、或者不需要某些功能（安全性和合规性的保留策略，或者 Exchange Online 中的保留策略），或者资源邮箱不需要附加联机存档。
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>是否需要相关人员负责预定会议室或设备？
 

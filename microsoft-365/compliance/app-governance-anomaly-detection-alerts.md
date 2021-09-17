@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 调查异常检测警报。
-ms.openlocfilehash: 57e32f0fc2d50e5e1f1d4d9fb9e6b1520f0f99e6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 69f0f3cee8c818ac071204baa10cb2be8aae6336
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171096"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401778"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>调查异常检测警报
 
@@ -295,3 +295,28 @@ ms.locfileid: "59171096"
 1. 查看应用授予的范围。  
 1. 查看应用创建的任何收件箱规则操作。  
 1. 查看应用执行的任何 SharePoint 或 OneDrive 搜索活动。
+
+### <a name="app-made-high-volume-of-importance-mail-read-and-created-inbox-rule"></a>应用读取了大量重要邮件，并创建了收件箱规则
+
+**严重性：** 中等  
+
+**MITRE ID**：T1137、T1114
+
+此检测可识别应用是否同意高特权范围、创建可疑收件箱规则并通过 Graph API 进行大量重要邮件读取活动。 这可能表示试图入侵你的组织，例如攻击者尝试通过 Graph API 读取组织中的高重要性电子邮件。  
+
+**TP 还是 FP？**
+
+- **TP**：如果能够确认由高特权范围的 OAuth 应用通过 Graph API 读取大量重要电子邮件，并且该应用是从未知源传递的。  
+
+  **建议操作**：禁用和删除应用、重置密码，并删除收件箱规则。  
+
+- **FP**：如果能够确认应用已通过 Graph API 执行了高重要性电子邮件读取，并且出于合法原因创建了新的或个人外部电子邮件帐户的收件箱规则。  
+
+  **建议操作**：关闭警报  
+
+**了解违规的范围**
+
+1. 查看应用完成的所有活动。  
+1. 查看应用授予的范围。  
+1. 查看应用创建的任何收件箱规则操作。  
+1. 查看应用执行的任何高重要性电子邮件读取活动。  

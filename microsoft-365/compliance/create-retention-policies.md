@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkMAC
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 6a58092bb81f45f40f2b0bcdd76312fc1d420e4d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a6d78ea9b96bb4967ef41471cd039a4c245b4aa1
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196393"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400146"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -210,13 +210,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 如果为 SharePoint 网站或 OneDrive 账户指定位置，无需网站访问权限，且在 **编辑位置** 页上指定 URL 时不会进行任何验证。 但是，系统会在配置结束时检查你指定的 SharePoint 站点是否存在。 如果此检查失败，你将看到一条消息，指出你输入的 URL 验证失败，且在验证检查通过之前，配置流程将不会创建保留策略。 如果你看到此消息，请返回配置以更改 URL 或从保留策略中删除站点。
 
-要指定要包含或排除的个人 OneDrive 帐户，用户 OneDrive 的 URL 通常采用以下格式。 对于用户主体名称(UPN)，任何特殊字符(例如句号、逗号、空格以及 at 符号("@"))都会转换为下划线("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
-
-例如，对于 Contoso 租户中 UPN 为“rsimone@contoso.onmicrosoft.com”的用户：`https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-
-或者，如果使用的是自定义域名，则 UPN 为"rsimone@contoso.com"： `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
-
-但是，当检测到冲突时，可以将数字或 GUID 追加到 URL 中，因此最好是确认用户的 OneDrive 帐户 URL。 若要确认 URL，可以使用 Microsoft 365 管理中心 或 PowerShell。 有关详细信息，请参阅 [获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
+要指定要包括或排除的单个 OneDrive 帐户，请参阅 [获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
 
 > [!NOTE]
 > 指定单个 OneDrive 帐户以包括或排除时，请注意，除非 oneDrive 帐户已 [预配](/onedrive/pre-provision-accounts)，否则在用户首次访问其 OneDrive 之前将不会创建 URL。

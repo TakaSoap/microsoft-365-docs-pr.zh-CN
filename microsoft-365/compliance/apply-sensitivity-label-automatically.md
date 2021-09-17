@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: f3556096b77e775e783cd8d949e1ed5dc2c25024
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f8691f8e8357f7f810468007f9802c19e70dac49
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170203"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401466"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -273,18 +273,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
     ![为自动标记配置选择位置页面。](../media/locations-auto-labeling-wizard.png)
     
-    若要指定个人 OneDrive 帐户，用户的 OneDrive 的 URL 通常采用以下格式。 对于用户主体名称 (UPN)，句点、逗号、空格和 at 符号 (“@”) 等任何特殊字符都将转换为下划线 (“_”): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
-    
-    例如，对于 Contoso 租户中 UPN 为 "rsimone@contoso.onmicrosoft.com" 的用户: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`。
-    
-    或者，如果使用的是自定义域名，则 UPN 为"rsimone@contoso.com"： `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
-    
-    但是，当检测到冲突时，可以将数字或 GUID 追加到 URL 中，因此最好是确认用户的 OneDrive 帐户 URL。 若要确认 URL，可以使用 Microsoft 365 管理中心 或 PowerShell。 有关详细信息，请参阅 [获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
-    
-    > [!NOTE]
-    > 指定单个 OneDrive 帐户时，请注意，除非 oneDrive 帐户 [预配](/onedrive/pre-provision-accounts)，否则在用户首次访问其 OneDrive 之前不会创建 URL。
-    > 
-    > 此外，如果用户的 UPN 发生更改，OneDrive URL 将 [自动更改](/onedrive/upn-changes) 。 例如，更改姓名事件，如结婚。 或域名更改以支持组织的重命名或业务重组。 如果 UPN 发生更改，则需要更新此处指定的 OneDrive URL。
+    要指定单个 OneDrive 帐户，请参阅 [获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
 
 7. 对于“**设置常用或高级规则**”页面：保留“**常用规则**”的默认设置，以定义用于在所有选定位置标识要标记的内容的规则。 如果需要针对每个位置使用不同的规则，请选择“**高级规则**”。 然后选择“**下一步**”。
 

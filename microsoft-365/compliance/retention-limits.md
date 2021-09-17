@@ -18,18 +18,22 @@ search.appverid:
 - MET150
 hideEdit: true
 description: 了解策略、每个保留策略和保留标签策略项目的最大数量
-ms.openlocfilehash: 92647911cfc3435c2d88ce5caa0624a34467a60f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 322a0c711ed1838dfd5349d43b1c3bcbf656618e
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170622"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399858"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的限制
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 使用“[保留策略和保留](retention.md#retention-policies-and-retention-labels)”来自动保留或删除组织数据时，请注意一些最大数量。
+
+## <a name="maximum-number-of-retention-labels-per-tenant"></a>每个租户的最大保留标签数
+
+每个租户最多支持 1,000 个保留标签。
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>每个租户策略的最大数
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7853a7b0439ee42cbe4b653f0572b055b19c3a2b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ff68caef8989ec6159b60bba8be03fe7246fdbc
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169660"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400674"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -63,7 +63,7 @@ ms.locfileid: "59169660"
     
     ![文件和电子邮件的敏感度标签保护选项。](../media/protection-options-sensitivity-label.png)
 
-4.  对于向导的 **加密** 页面，选择下列选项之一：
+4.  在“**加密**”页上，选择下列选项之一：
     
     - **如果文件已加密，请删除加密**：仅 Azure 信息保护统一标签客户端支持此选项。 选择此选项并使用内置标签时，标签可能不会显示在应用程序中，或者会显示但未进行任何加密更改。
         
@@ -114,7 +114,7 @@ ms.locfileid: "59169660"
 
 ## <a name="configure-encryption-settings"></a>配置加密设置
 
-在向导的 **加密** 页面选择 **“配置加密设置”** 来创建或编辑敏感度标签时，选择以下选项之一：
+在 **加密页面** 选择“**配置加密设置**”来创建或编辑敏感度标签时，选择以下选项之一：
 
 - **立即分配权限**，以便可准确确定哪些用户对已应用标签的内容具有哪些权限。 有关详细信息，请参阅下一部分：[立即分配权限](#assign-permissions-now)。
 - 在用户向内容应用标签时 **允许用户分配权限**。 通过此选项，可使组织内部人员在协作处理和完成任务时具有一定程度可能需要的灵活性。 有关详细信息，请参阅下述部分：[允许用户分配权限](#let-users-assign-permissions)。
@@ -303,7 +303,7 @@ ms.locfileid: "59169660"
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>加密设置的配置示例
 
-对于后面的每个示例，请在选择 **配置加密设置** 时通过向导的 **加密** 页面进行配置：
+对于后面的每个示例，请在选择“**配置加密设置**”时通过 **加密页面** 进行配置：
 
 ![应用敏感度标签向导中的加密选项。](../media/apply-encryption-option.png)
 
@@ -319,7 +319,7 @@ ms.locfileid: "59169660"
 
 3. 如果选中，请清除复选框：**在 Word、PowerPoint 和 Excel 中提示用户指定权限**。
 
-4. 选择“**下一步**”并完成向导。
+4. 选择“**下一步**”并完成配置。
 
 ### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization"></a>示例 2：将只读权限局限于另一组织中的所有用户的标签
 
@@ -343,7 +343,7 @@ ms.locfileid: "59169660"
 
 8. 返回到“**分配权限**”窗格中，选择“**保存**”。
 
-9. 在“**加密**”窗格上，选择“**下一步**”并完成向导。
+9. 在 **加密** 页上，选择“**下一步**”并完成配置。
 
 ### <a name="example-3-add-external-users-to-an-existing-label-that-encrypts-content"></a>示例 3：将外部用户添加到加密内容的现有标签
 
@@ -363,7 +363,7 @@ ms.locfileid: "59169660"
 
 7. 返回到“**分配权限**”窗格，对要添加到此标签的每位用户（或组）重复步骤 3 到步骤 6。 然后单击“**保存**”。
 
-8. 在“**加密**”窗格上，选择“**下一步**”并完成向导。
+8. 在 **加密** 页上，选择“**下一步**”并完成配置。
 
 ### <a name="example-4-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>示例 4：对内容进行加密但不限制可访问的人员的标签
 
@@ -387,7 +387,7 @@ ms.locfileid: "59169660"
 
 7. 返回到“**分配权限**”窗格中，选择“**保存**”。
 
-8. 在“**加密**”窗格上，选择“**下一步**”并完成向导。
+8. 在 **加密** 页上，选择“**下一步**”并完成配置。
 
 ## <a name="considerations-for-encrypted-content"></a>有关加密内容的注意事项
 
@@ -401,7 +401,9 @@ ms.locfileid: "59169660"
 
 - 如果与组织外部人员共享加密文档，可能需要创建来宾帐户并修改条件访问策略。 有关详细信息，请参阅《[与外部用户共享加密的文档](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)》。
 
-- 要使多名用户同时编辑一个加密文件，这些用户必须全都在使用 Web 版 Office。 如果不是这种情况且文件已打开：
+- 当授权用户在其 Office 应用中打开加密文档时，将在其应用顶部的黄色消息栏中看到标签名称和说明。 此消息栏通知用户文档受到限制，并且通过使用“**查看权限**”按钮，可以看到已授予他们有关该文档的权限。 当加密权限扩展到组织外部的人员时，请仔细查看打开文档时将在此消息栏中显示的标签名称和说明。
+
+- 对于多个用户同时编辑一个加密文件，这些用户必须都在使用 Office 网页版。  或者，对于 Windows 和 Mac，你已 [为使用敏感度标签加密的文件启用共同创作](sensitivity-labels-coauthoring.md)，并且用户具有 [所需最低版本](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) 的 Word、Excel 和 PowerPoint。 如果不是这种情况且文件已打开：
 
   - 在 Office 应用（Windows、Mac、Android 和 iOS）中，用户会看到一条“**文件正在使用中**”消息，其中包含签出该文件的用户的姓名。 然后，他们可查看只读副本或保存和编辑文件副本，并可在文件可用时收到通知。
   - 在 Web 版 Office 中，用户会看到一则错误消息，其中指出他们可与其他人一起编辑文档。 然后，他们可选择“**在阅读视图中打开**”。
