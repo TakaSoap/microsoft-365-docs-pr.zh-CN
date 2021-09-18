@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 70ff6fd0fbfade147f23d69a0ea9684ef9b63ba7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 663180b87a9886681a1643279e49641c3fbfed3c
+ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162026"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447380"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
-[自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 你可以根据以下信息定义一个 (SIT) 类型：
+[自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 你可以根据以下信息在 SIT (自定义) 类型：
 
 - 模式
 - 如 *员工*、*徽章* 或 *ID 等关键字证据*
@@ -95,7 +95,7 @@ ms.locfileid: "59162026"
 
 #### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>以 .tsv .csv保存敏感数据
 
-1. 确定要使用的敏感信息。 将数据导出到应用（如 Microsoft Excel）中，将文件保存在文本文件中。 文件可以保存在逗号分隔.csv (值中) .tsv (制表符分隔) 值或用管道分隔 (|) 格式。 如果数据值可能包含逗号（如街道地址），则建议使用 .tsv 格式。
+1. 确定要使用的敏感信息。 将数据导出到应用（如 Microsoft Excel）中，将文件保存在文本文件中。 该文件可以保存在逗号分隔.csv (值中) .tsv (制表符分隔) 值或以管道分隔 (|) 格式。 如果数据值可能包含逗号（如街道地址），则建议使用 .tsv 格式。
 数据文件最多可包括以下内容：
    - 高达 1 亿行的敏感数据
    - 每个数据源最多 32 列（字段）
@@ -103,7 +103,7 @@ ms.locfileid: "59162026"
 
 2. 在数据库或 .tsv .csv构造敏感数据，使第一行包含用于基于 EDM 的分类的字段的名称。 在你的文件中，你可能有字段名称，如"ssn"、"birthdate"、"firstname"、"lastname"。 列标题名称不能包含空格或下划线。 例如，本文中使用的示例 .csv 文件名为 *PatientRecords.csv*，其中包含 *PatientID*、*MRN*、*LastName*、*FirstName* 和 *SSN* 等列。
 
-3. 注意敏感数据字段的格式。 特别是，如果选择了值"Seattle，WA"，则分析内容中可能包含逗号的字段（例如，包含值"Seattle，WA"的街道地址）将解析为两个单独的字段.csv格式。 若要避免这种情况，请使用 .tsv 格式，或在敏感数据表中用双引号将包含值的逗号括起来。 如果逗号包含的值也包含空格，则需要创建与相应格式匹配的自定义 SIT。 例如，用于检测包含逗号和空格的多词字符串的 SIT。
+3. 注意敏感数据字段的格式。 特别是，如果选择了".csv"格式，则分析内容中可能包含逗号的字段（例如，包含值"Seattle，WA"的街道地址）将解析为两个单独的字段。 若要避免这种情况，请使用 .tsv 格式，或在敏感数据表中用双引号将包含值的逗号括起来。 如果逗号包含的值也包含空格，则需要创建与相应格式匹配的自定义 SIT。 例如，用于检测包含逗号和空格的多词字符串的 SIT。
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定义敏感信息数据库的架构
 
@@ -174,7 +174,7 @@ ms.locfileid: "59162026"
 
 在此示例中，如果同时使用 `caseInsensitive` 和 `ignoredDelimiters`，EDM 会将 **FOO-1234** 和 **fOo#1234** 视为完全相同，并将项目归类为患者记录敏感信息类型。
 
-1. 连接安全&安全与合规中心 PowerShell 中的过程连接安全与合规& [PowerShell。](/powershell/exchange/connect-to-scc-powershell)
+1. 连接安全与&中心 PowerShell 中的过程，连接安全与合规& [PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
 2. 要上传数据库架构，请逐一运行下列 cmdlet：
 
@@ -383,7 +383,7 @@ ms.locfileid: "59162026"
 - 准备一台使用.NET 版本 4.6.2 的 Windows 10 或 Windows Server 2016 计算机，用于运行 EDMUploadAgent
 - 用于上传的计算机上应含有以下内容的目录：
   - EDMUploadAgent
-  - 您的敏感项目文件.csv .tsv 格式，PatientRecords.csv **示例中的内容**
+  - 您的敏感项目文件.csv .tsv 格式 **，PatientRecords.csv** 示例中的内容
   - 输出哈希和 salt 文件
   - 来自 **edm .xml** 文件的数据存储名称，在本示例中为 `PatientRecords`
 - 如果使用 [精确数据匹配架构和敏感信息类型向导](sit-edm-wizard.md)，您 ***必须*** 将其下载。
@@ -402,7 +402,7 @@ ms.locfileid: "59162026"
 >
 > 在开始此过程之前，请确保你是 **EDM\_DataUploaders** 安全组的成员。
 >
-> （可选）您可以通过运行：在.csv对文件或 .tsv 文件运行验证：
+> （可选）您可以通过运行：在上载之前.csv或 .tsv 文件运行验证：
 >
 > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
@@ -527,10 +527,10 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
 1. 确定刷新敏感信息数据库的流程和频率（每天或每周）。
 
-2. 将敏感数据重新导出到应用程序（如 Microsoft Excel）中，以 .csv .tsv 格式保存文件。 在按照[为敏感数据创建哈希并上传](#part-2-hash-and-upload-the-sensitive-data)中所述的步骤执行操作时，让所使用的文件名和位置保持不变。
+2. 将敏感数据重新导出到应用程序（如 Microsoft Excel）并保存为 .csv .tsv 格式的文件。 在按照[为敏感数据创建哈希并上传](#part-2-hash-and-upload-the-sensitive-data)中所述的步骤执行操作时，让所使用的文件名和位置保持不变。
 
       > [!NOTE]
-      > 如果 .csv (或 .tsv 文件 (字段名) 没有变化，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。
+      > 如果 .csv (或 .tsv 文件的结构 (字段名) ，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。
 
 3. 使用[任务计划程序](/windows/desktop/TaskSchd/task-scheduler-start-page)自动执行[创建哈希并上载敏感数据](#part-2-hash-and-upload-the-sensitive-data)流程中的步骤 2 和 3。 你可以使用多种方法来计划任务：
 
@@ -629,7 +629,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - 针对 SharePoint 的 DLP（文件）
 - Microsoft Cloud App Security DLP 策略
 - 服务器端自动标记策略 - 适用于商业云客户和政府云客户
-<!-- - Client side auto-labeling policies - available for government cloud customers -->  
+- 客户端自动标记策略 - 适用于政府云客户  
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>使用 EDM 创建 DLP 策略
 
