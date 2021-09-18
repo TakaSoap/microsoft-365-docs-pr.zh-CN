@@ -1,6 +1,6 @@
 ---
 title: 使用 Power Automate
-description: 了解电源自动化Microsoft 365 Defender以及如何使用它们。
+description: 了解自动执行Microsoft 365 Defender以及如何使用它们。
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 自定义检测， 架构， secops
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9d6b786076a218a5257bbd12669f62064ae51f2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a707de259897080f8e726aed70618ea6505bdea6
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170899"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444111"
 ---
-# <a name="use-power-automate-in-microsoft-365-defender"></a>在Power Automate Microsoft 365 Defender
+# <a name="use-power-automate-in-microsoft-365-defender"></a>在Power Automate中Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "59170899"
 > 希望体验 Microsoft 365 Defender？ 你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
-SecOps (新式安全) 团队需要自动化才能高效工作。 为了专注于搜寻和调查真实威胁，SecOps 团队Power Automate警报列表进行会审并消除不是威胁的警报。  
+SecOps (新式安全) 团队需要自动化才能高效工作。 为了专注于搜寻和调查真实威胁，SecOps 团队Power Automate警报列表分类并消除不是威胁的警报。  
 
 ## <a name="criteria-for-resolving-alerts"></a>解决警报的条件
 
@@ -64,6 +64,6 @@ SecOps (新式安全) 团队需要自动化才能高效工作。 为了专注于
 
 ## <a name="related-information"></a>相关信息
 
-- [将Power Automate与Microsoft Cloud App Security](https://aka.ms/flow-integration)
+- [将Power Automate与Microsoft Cloud App Security](/cloud-app-security/flow-integration)
 
-- [Microsoft Power Automate文档](https://aka.ms/power-automate-docs)
+- [Microsoft Power Automate文档](/power-automate)

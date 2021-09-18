@@ -21,14 +21,14 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: 了解如何解决 Windows 365 商业版云电脑的安装问题。
+description: 了解如何解决 Windows 365 商业云电脑的安装问题。
 ms.date: 08/13/2021
-ms.openlocfilehash: 701d1ce3ae97836d6687050e16a176aad85e2995
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cae971187e188e6213242481b9cfaeb7dc21c7f2
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171490"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444123"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>解决 Windows 365 商业版云电脑设置问题
 
@@ -47,9 +47,17 @@ ms.locfileid: "59171490"
 4. 如果用户 **可能将设备加入 Azure AD** 未设置为"全部"，请选择"全部"，然后选择"保存 **"。**
 5. 转到步骤[2。验证 Windows 365 BPRT 永久用户帐户是否处于活动状态](#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active)。
 
+确保 **每个用户的最大设备** 数足够高，以便你尝试设置的云电脑可以分配给指定用户。
+
+1. 在 登录 Microsoft Azure 门户 https://portal.azure.com/ 。
+2. 在 **"管理Azure Active Directory"** 下，选择"**查看"。**
+3. 在左侧导航中的"管理 **"下**，选择 **"设备"，** 然后选择"**设备设置"。**
+4. 对于 **"每个用户的最大设备数"，** 输入值。
+5. 如果进行了任何更改，请选择"保存 **"。**
+
 ## <a name="step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active"></a>步骤 2. 验证 Windows 365 BPRT 永久用户帐户是否处于活动状态
 
-首次在Windows分配 Windows 365 许可证时，将在 Azure AD 中自动创建名为 **Windows 365 BPRT 永久用户的** 系统帐户。 请勿删除此帐户或更改该帐户 (例如更改名称或 UPN) 。 如果修改或删除系统帐户，则安装将失败。 此系统帐户可确保顺利设置过程，并且除 Windows 365 商业版的范围服务功能外，其他任何写入功能或对组织的访问权限。 如果删除或修改此系统帐户，则必须使用具有 Windows 365 商业版许可证的任何帐户登录到 windows365.microsoft.com，并等待 12 小时以刷新令牌。
+首次在组织中分配 Windows 365 许可证时，将在 Azure AD 中自动创建名为 **Windows 365 BPRT 永久** 用户的系统帐户。 请勿删除此帐户或更改该帐户， (例如更改名称或 UPN) 。 如果修改或删除系统帐户，则安装将失败。 此系统帐户可确保顺利设置过程，并且除 Windows 365 商业版的范围服务功能外，其他任何写入功能或对组织的访问权限。 如果删除或修改此系统帐户，则必须使用具有 Windows 365 商业版许可证的任何帐户登录到 windows365.microsoft.com，并等待 12 小时以刷新令牌。
 
 若要确保 Windows 365 BPRT 永久用户帐户在 Azure AD 中处于活动状态，请使用以下步骤。
 
@@ -57,7 +65,7 @@ ms.locfileid: "59171490"
 2. 在左侧导航中的"管理 **"下，** 选择"**用户"。**
 3. 在搜索框中，键入 **Windows 365 BPRT 永久用户**，然后按 **Enter。**
 4. 如果存在 Windows 365 BPRT 永久用户帐户，请转到步骤[3。验证基于设备的 MFA 是否已关闭](#step-3-verify-that-device-based-mfa-is-turned-off)。
-5. 如果 Windows 365 BPRT 永久用户帐户缺失或进行了任何更改，请通过分配了 Windows 365 商业版许可证的任何帐户登录到 windows365.microsoft.com。 将在 12 Windows生成新的 365 BPRT 永久用户。 重新生成令牌后，直接转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
+5. 如果 Windows 365 BPRT 永久用户系统帐户缺失或进行了任何更改 (例如密码重置、属性更改、分配或取消分配许可证等) ，请使用在 12 小时后分配有 Windows 365 商业版许可证的任何帐户登录到 windows365.microsoft.com。 将生成Windows 365 BPRT 永久用户的新用户。 重新生成令牌后，直接转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
 
 ## <a name="step-3-verify-that-device-based-mfa-is-turned-off"></a>步骤 3. 验证基于设备的 MFA 是否已关闭
 
@@ -93,17 +101,17 @@ ms.locfileid: "59171490"
 
 如果未对步骤 1-4 进行更改，则设置失败可能是由环境中 MDM 颁发机构配置导致的。 如果是这样，则有两个途径可遵循，具体取决于你是否计划Microsoft Intune管理云电脑。
 
-- 如果你使用或计划将 Microsoft Intune 用于云电脑，请按照路径[A：确保](#path-a-use-microsoft-intune-to-manage-your-cloud-pcs)已正确配置移动 (MDM 和 MAM) 中的步骤操作。
-- 如果你不计划使用 Microsoft Intune 管理云电脑，请按照路径[B： 关闭自动 MDM](#path-b-turn-off-automatic-mdm-enrollment)注册 中的步骤操作。
+- 如果你使用或计划将 Microsoft Intune 用于云电脑，请按照路径[A：确保](#path-a-use-microsoft-intune-to-manage-your-cloud-pcs)已正确配置移动 (MDM 和 MAM) 设置中的步骤操作。
+- 如果你不计划使用 Microsoft Intune 管理云电脑，请按照路径[B： 关闭自动 MDM 注册 中的步骤操作](#path-b-turn-off-automatic-mdm-enrollment)。
 
 ### <a name="path-a-use-microsoft-intune-to-manage-your-cloud-pcs"></a>路径 A。Microsoft Intune管理云电脑
 
 如果你已使用 Microsoft Intune，或计划使用它管理 Windows 365 云电脑，请确保 Azure AD 中的移动 (MDM 和 **MAM)** 设置已正确配置。
 
 1. 在 Azure 门户中，转到<a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">"Azure Active Directory概述</a>"页。
-2. 在左侧导航导航 **中的"管理**"下，选择"移动性 (MDM 和 **MAM) "，** 然后选择 **"Microsoft Intune"。**
+2. 在左侧导航 **中，在**"管理"下，选择"移动性 (MDM **和 MAM) "，** 然后选择"Microsoft Intune"。 
 3. 在"**配置"** 页面上 **，在 MDM** 用户作用域旁边，选择 **"部分**"或"**全部**"，然后选择"保存 **"。**
-4. 在左侧导航中 **，在"** 管理"下，选择"移动性 (MDM 和 **MAM) "，** 选择"Microsoft Intune **注册**"，然后重复步骤 3。
+4. 在左侧导航中 **，在"** 管理"下，选择"移动性 (MDM 和 **MAM) "，** 选择"Microsoft Intune **注册"，** 然后重复步骤 3。
 
 分配有云电脑的用户必须分配有 Intune 许可证。 CloudPCBPRT 系统帐户无需分配 Intune 许可证。
 
@@ -127,9 +135,9 @@ ms.locfileid: "59171490"
 #### <a name="use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment"></a>使用 Azure AD 门户关闭自动 Intune 注册
 
 1. 在 Azure 门户中，转到<a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">"Azure Active Directory概述</a>"页。
-2. 在左侧导航导航 **中的"管理**"下，选择"移动性 (MDM 和 **MAM) "，** 然后选择 **"Microsoft Intune"。**
-3. 在 **"配置** "页上，你将看到两个操作之一。 如果你有一个Azure AD Premium，请选择 MDM **用户作用域** 旁边的"无"，然后选择"保存 **"。** 如果没有订阅，请选择Azure AD Premium禁用 **"。**
-4. 在左侧导航中 **，在"** 管理"下，选择"移动性 (MDM 和 **MAM) "，** 选择"Microsoft Intune **注册**"，然后重复步骤 3。
+2. 在左侧导航 **中，在**"管理"下，选择"移动性 (MDM **和 MAM) "，** 然后选择"Microsoft Intune"。 
+3. 在 **"配置** "页上，你将看到两个操作之一。 如果你有一个Azure AD Premium，**请选择** MDM 用户作用域旁边的"无"，然后选择"保存 **"。** 如果没有订阅，请选择 **"Azure AD Premium"。**
+4. 在左侧导航中 **，在"** 管理"下，选择"移动性 (MDM 和 **MAM) "，** 选择"Microsoft Intune **注册"，** 然后重复步骤 3。
 5. 转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
 
 
