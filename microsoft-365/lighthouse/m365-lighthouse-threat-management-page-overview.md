@@ -16,23 +16,23 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，请了解"威胁管理"页。
-ms.openlocfilehash: f9ed274b295b40f9784a193a02dad925462a6e9e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7f8a5ef0ebea7204b0463b921946362acfed17d9
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196099"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59443967"
 ---
 # <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse威胁管理页面概述 
 
 > [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
 **适用于：**
 
 - Windows 10
 
-Microsoft Defender 防病毒保护租户、用户和设备免受软件威胁（包括病毒、恶意软件和间谍软件）的侵害。 它是内置于 Windows 10中且包含在Microsoft 365 商业高级版。  
+Microsoft Defender 防病毒保护租户、用户和设备免受软件威胁（包括病毒、恶意软件和间谍软件）的侵害。 它是内置于 Windows 10 和 Microsoft &nbsp; 365 E3 Microsoft 365 商业高级版可靠的持续 &nbsp; 保护。  
   
 若要访问 Microsoft 365 Lighthouse 中的"威胁管理"页，请在左侧导航窗格中选择"威胁管理"以查看客户租户针对威胁的安全状态。 你将看到需要你注意的租户、用户和设备，以及有助于降低风险的建议。  
   
@@ -62,7 +62,7 @@ Microsoft Defender 防病毒保护租户、用户和设备免受软件威胁（�
 | 活动 | 威胁在设备上处于活动状态。 |
 | 无状态 | 威胁状态不可用。 在设备上运行完全扫描，Microsoft Defender 防病毒威胁。 |
 | 操作失败 | 设备没有风险。 操作已失败，但潜在威胁已停止，并且未在设备上处于活动状态。 在设备上运行完全扫描。 |
-| 需要手动步骤 | 威胁已停止，但需要手动完成步骤，例如完全扫描或设备重启。 |
+| 需要手动步骤 | 威胁已停止，但需要手动完成步骤，如完全扫描或设备重启。 |
 | 需要完全扫描 | 需要设备的完整扫描。 |
 | 需要重新启动 | 需要重新启动设备。 |
 | 使用非关键故障修正 | 威胁已修复，无需执行其他操作。 |

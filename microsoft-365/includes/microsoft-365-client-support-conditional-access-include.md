@@ -5,7 +5,7 @@
 |AZURE ACTIVE DIRECTORY 管理员|不适用|不适用|不适用|Planned|不适用|
 |公司门户|Planned|Planned|Planned|不适用|Planned|
 |CORTANA|不适用|不适用|不适用|不适用|Planned|
-|EXCEL|✔|Planned|Planned|Planned|不适用|
+|EXCEL|✔|✔|✔|✔|不适用|
 |EXCHANGE 管理员|不适用|不适用|不适用|✔|不适用|
 |FORMS|不适用|不适用|不适用|不适用|不适用|
 |KAIZALA|Planned|Planned|不适用|不适用|不适用|
@@ -15,13 +15,13 @@
 |OFFICE MOBILE|✔|Planned|不适用|不适用|不适用|
 |OFFICE.COM|不适用|不适用|不适用|不适用|Planned|
 |ONEDRIVE|✔|✔|✔|✔|Planned|
-|ONENOTE|✔|Planned|Planned|Planned|Planned|
-|OUTLOOK|✔|✔|Planned|Planned|Planned|
+|ONENOTE|✔|✔|✔|✔|✔|
+|OUTLOOK|✔|✔|Planned|✔|Planned|
 |PLANNER|Planned|Planned|不适用|不适用|不适用|
 |POWER APPS|Planned|Planned|不适用|不适用|Planned|
 |POWER AUTOMATE|Planned|Planned|不适用|不适用|不适用|
 |POWER BI|Planned|Planned|不适用|Planned|Planned|
-|POWERPOINT|✔|Planned|Planned|Planned|不适用|
+|POWERPOINT|✔|✔|✔|✔|不适用|
 |PROJECT|不适用|不适用|不适用|Planned|不适用|
 |PUBLISHER|不适用|不适用|不适用|✔|不适用|
 |SHAREPOINT 管理员|不适用|不适用|不适用|Planned|不适用|
@@ -33,6 +33,6 @@
 |TO-DO|Planned|Planned|Planned|不适用|Planned|
 |VISIO|不适用|✔|不适用|Planned|不适用|
 |WHITEBOARD|✔|Planned|不适用|不适用|Planned|
-|WORD|✔|Planned|Planned|Planned|不适用|
+|WORD|✔|✔|✔|✔|不适用|
 |工作区分析|不适用|不适用|不适用|不适用|不适用|
 |YAMMER|Planned|Planned|Planned|Planned|不适用|

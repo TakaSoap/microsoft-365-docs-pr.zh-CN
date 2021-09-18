@@ -13,16 +13,16 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 08f264a5f1c651bc336326c35332e8a8a568a4bb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 42c8a34082b2607f7803a44d444d2b4e5d0772b6
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171507"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444233"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
-企业Microsoft 365系列提供了实现 Microsoft 365 功能的指南，尤其是跨技术（包括Teams图表）的功能。
+企业Microsoft 365系列提供了实现 Microsoft 365 功能的指南，尤其是跨技术（包括 Teams 体系结构图）的功能。
 
 ## <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>面向 IT 架构师的 Microsoft 365 中的 Microsoft Teams 和相关生产力服务
 Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为主导。
@@ -33,7 +33,7 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>面向 IT 架构师的 Microsoft 365 中的组
-此图包括 IT 架构师有关组Microsoft 365的信息。 若要了解如何在组织中配置Microsoft 365组和团队进行协作，请参阅使用 Microsoft 365 设置安全协作[和](/microsoft-365/solutions/setup-secure-collaboration-with-teams)[什么是协作治理？。](/microsoft-365/solutions/collaboration-governance-overview)
+此图包括 IT 架构师有关组Microsoft 365的信息。 若要了解如何配置和管理 Microsoft 365 组和团队，以在组织中进行协作，请参阅使用 Microsoft 365 设置安全协作[和](/microsoft-365/solutions/setup-secure-collaboration-with-teams)[什么是协作治理？。](/microsoft-365/solutions/collaboration-governance-overview)
 
 | Item | 说明 |
 |:-----|:-----|
@@ -73,13 +73,13 @@ Microsoft 365包括一组广泛的信息保护和合规性功能。 这些功能
 
 | Item | 说明 |
 |:-----|:-----|
-|[![适用于终结点部署策略的 Microsoft Defender 缩略图。](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) <br>2020 年 2 月更新| 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li>
+|[![适用于终结点部署策略的 Microsoft Defender 缩略图。](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>2021 年 9 月更新| 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li>
 
 
 <a name="BKMK_O365IDP"></a>
 ## <a name="identity-and-device-protection-for-microsoft-365"></a>适用于用户的身份和设备Microsoft 365
 
-用于保护访问 azure AD 应用程序代理发布的 Microsoft 365 服务、其他 SaaS 服务和本地应用程序的标识和设备的建议功能。
+用于保护访问 Azure AD 应用程序代理发布的 Microsoft 365、其他 SaaS 服务和本地应用程序的标识和设备的建议功能。
 
 | Item | 说明 |
 |:-----|:-----|
@@ -88,7 +88,7 @@ Microsoft 365包括一组广泛的信息保护和合规性功能。 这些功能
 <a name="BKMK_ediscovery"></a>
 ## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Advanced eDiscovery体系结构Microsoft 365
 
-Advanced eDiscovery端到端工作流和数据流，Microsoft 365多地理位置环境中。
+Advanced eDiscovery端到端工作流和数据流，包括Microsoft 365多地理位置环境内。
 
 | Item | 说明 |
 |:-----|:-----|
@@ -107,7 +107,7 @@ Advanced eDiscovery端到端工作流和数据流，Microsoft 365多地理位置
 
 ## <a name="set-up-your-infrastructure-for-hybrid-work"></a>设置混合工作的基础结构
 
-借助 Microsoft 365 和其他 Microsoft 云技术，你可以向工作人员提供安全访问组织内部部署和基于云的信息、工具和资源。
+借助 Microsoft 365 和其他 Microsoft 云技术，你可以为工作人员提供安全访问组织本地和基于云的信息、工具和资源，从他们家访问。
 
 [![设置混合工作海报的基础结构。](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) <br/>
 [PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)  | [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
@@ -115,7 +115,7 @@ Advanced eDiscovery端到端工作流和数据流，Microsoft 365多地理位置
 
 有关详细信息，请参阅此海报文章：使用 Microsoft 365[设置混合工作的基础结构](empower-people-to-work-remotely.md)。
 
-## <a name="microsoft-teams-with-security-isolation"></a>Microsoft Teams隔离
+## <a name="microsoft-teams-with-security-isolation"></a>Microsoft Teams安全隔离
 
 使用 Microsoft 365，可以在 Microsoft Teams 中配置专用团队，并使用 SharePoint 网站安全设置和唯一的敏感度标签加密文件，以便只有团队成员才能解密文件。
 

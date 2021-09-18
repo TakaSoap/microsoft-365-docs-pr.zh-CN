@@ -12,16 +12,16 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 668ca8e26371d80f068c2723357ce3ee407db03a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dff13dd6c4011ec73a1976bce0af69b607e391b0
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195802"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444051"
 ---
 # <a name="manage-information-barrier-policies"></a>管理信息屏障策略
 
-定义信息[屏障策略后](information-barriers-policies.md)，可能需要更改这些策略或用户区段，作为故障排除或定期维护的一部分。 [](information-barriers-troubleshooting.md) 使用本文作为指南。
+定义信息[屏障策略后](information-barriers-policies.md)，可能需要更改这些策略或用户区段，作为故障排除或定期维护的一部分。 [](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
 
 ## <a name="what-do-you-want-to-do"></a>要执行什么操作？
 
@@ -34,7 +34,7 @@ ms.locfileid: "59195802"
 | [删除策略](#remove-a-policy) | 如果不再需要特定策略，请删除信息屏障策略。 |
 | [停止策略应用程序](#stop-a-policy-application) | 若要停止应用信息屏障策略的过程，请执行该操作。<br/> 停止策略应用程序不是即时的，它不会撤消已应用于用户的策略。 |
 | [定义信息屏障策略](information-barriers-policies.md) | 如果尚未制定此类策略，并且必须限制或限制特定用户组之间的通信，请定义信息屏障策略。 |
-| [信息屏障疑难解答](information-barriers-troubleshooting.md) | 当您遇到信息障碍的意外问题时，请参阅本文。 |
+| [信息屏障疑难解答](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | 当您遇到信息障碍的意外问题时，请参阅本文。 |
 
 > [!IMPORTANT]
 > 若要执行本文中所述的任务，您必须分配有适当的角色，例如以下角色之一：<br/>- Microsoft 365 企业版全局管理员<br/>- 全局管理员<br/>- 合规性管理员<br/>- IBM 合规性管理 (这是一个新角色！) <br><br>若要了解有关信息屏障的先决条件详细信息，请参阅S [prerequisites (for information barrier policies) ](information-barriers-policies.md#prerequisites)。<br><br> 确保连接到[安全与合规& PowerShell。](/powershell/exchange/connect-to-scc-powershell)
@@ -43,11 +43,11 @@ ms.locfileid: "59195802"
 
 使用此过程可编辑用于划分用户的属性。 例如，如果您使用的是 Department 属性，并且一个或多个用户帐户当前没有为"部门"列出任何值，则必须编辑这些用户帐户以包含部门信息。 用户帐户属性用于定义分段，以便可以分配信息屏障策略。
 
-1. 若要查看特定用户帐户的详细信息（如属性值和分配给 () ），请使用带 Identity 参数的 **Get-InformationBarrierRecipientStatus** cmdlet。
+1. 若要查看特定用户帐户的详细信息（如属性值和分配段 () ），请使用带 Identity 参数的 **Get-InformationBarrierRecipientStatus** cmdlet。
 
     |**语法**|**示例**|
     |:---------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* for *Megan* 和 *alexw* for *Alex*。 |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* 表示 *Megan，alexw* 表示 *Alex。*  |
 
 2. 确定要编辑用户帐户配置文件的属性 () 。 有关详细信息，请参阅 [信息屏障策略的属性](information-barriers-attributes.md)。 
 
@@ -94,7 +94,7 @@ ms.locfileid: "59195802"
 
     本示例将"SegmentsBlocked"更改为"SegmentsAllowed"，并指定 *HR* 段。
 
-3. 编辑完策略后，请确保应用更改。  (请参阅 [应用信息屏障策略](information-barriers-policies.md#part-3-apply-information-barrier-policies).) 
+3. 编辑完策略后，请确保应用更改。  (应用 [信息屏障策略](information-barriers-policies.md#part-3-apply-information-barrier-policies).) 
 
 ## <a name="set-a-policy-to-inactive-status"></a>将策略设置为非活动状态
 
@@ -102,7 +102,7 @@ ms.locfileid: "59195802"
 
     语法： `Get-InformationBarrierPolicy`
 
-    在结果列表中，确定要更改策略 (删除) 。 请注意策略的 GUID 和名称。
+    在结果列表中，确定要更改或删除 (策略) 。 请注意策略的 GUID 和名称。
 
 2. 若要将策略的状态设置为非活动状态，请使用带 Identity 参数的 **Set-InformationBarrierPolicy** cmdlet，将 State 参数设置为 Inactive。
 
@@ -118,7 +118,7 @@ ms.locfileid: "59195802"
 
 此时，一个或多个信息屏障策略设置为非活动状态。 在这里，你可以执行以下操作之一：
 
-- 一直 (设置为非活动状态的策略对处于非活动状态的) 
+- 一直 (设置为非活动状态的策略对用户没有) 
 - [编辑策略](#edit-a-policy) 
 - [删除策略](#remove-a-policy)
 
@@ -170,4 +170,4 @@ ms.locfileid: "59195802"
 - [详细了解 SharePoint Online 中的信息障碍](/sharepoint/information-barriers)
 - [详细了解信息障碍OneDrive](/onedrive/information-barriers)
 - [信息屏障策略的属性](information-barriers-attributes.md)
-- [信息屏障疑难解答](information-barriers-troubleshooting.md)
+- [信息屏障疑难解答](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)

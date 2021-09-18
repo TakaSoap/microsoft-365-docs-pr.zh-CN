@@ -76,14 +76,12 @@
           href: information-barriers-solution-overview.md
         - name: 了解与信息屏障相关的信息
           href: information-barriers.md
-        - name: 定义信息屏障策略
+        - name: 信息屏障入门
           href: information-barriers-policies.md
-        - name: 信息屏障策略的属性
-          href: information-barriers-attributes.md
-        - name: 信息屏障疑难解答
-          href: information-barriers-troubleshooting.md
-        - name: 编辑信息屏障策略
+        - name: 管理信息屏障
           href: information-barriers-edit-segments-policies.md
+        - name: 信息屏障属性
+          href: information-barriers-attributes.md
     - name: 特权访问管理
       items:
         - name: 概述
