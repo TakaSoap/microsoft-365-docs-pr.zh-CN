@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: 5480a5b8336c03323c26785e884da811a5d00d97
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fb1f0dad7aba15b33fce51b855a9b037478db627
+ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196897"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447332"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -355,7 +355,7 @@ ms.locfileid: "59196897"
 
 ## <a name="classic-azure-ad-group-classification"></a>经典 Azure AD 组分类
 
-为容器启用敏感度标签后，Microsoft 365 不再支持新 Microsoft 365 组和 SharePoint 网站的旧分类。 但是，除非进行转换以使用敏感度标签，否则支持敏感度标签的现有组和网站仍会显示旧分类值。
+为容器启用敏感度标签后，Microsoft 365 不再支持来自 Azure AD 的组分类，并将不会在支持敏感度标签的站点上显示。 但是，可以将旧的分类转换为敏感度标签。
 
 有关如何使用 SharePoint 的旧组分类的示例，请参阅 [SharePoint “新式”网站分类](/sharepoint/dev/solution-guidance/modern-experience-site-classification)。
 

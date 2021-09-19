@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ff68caef8989ec6159b60bba8be03fe7246fdbc
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 64957adeb242d14b2f4c986d3cffc282379c93f3
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400674"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444135"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -401,14 +401,14 @@ ms.locfileid: "59400674"
 
 - 如果与组织外部人员共享加密文档，可能需要创建来宾帐户并修改条件访问策略。 有关详细信息，请参阅《[与外部用户共享加密的文档](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)》。
 
-- 当授权用户在其 Office 应用中打开加密文档时，将在其应用顶部的黄色消息栏中看到标签名称和说明。 此消息栏通知用户文档受到限制，并且通过使用“**查看权限**”按钮，可以看到已授予他们有关该文档的权限。 当加密权限扩展到组织外部的人员时，请仔细查看打开文档时将在此消息栏中显示的标签名称和说明。
+- 当授权用户在其 Office 应用中打开加密文档时，将在其应用顶部的黄色消息栏中看到标签名称和说明。 当加密权限扩展到组织外部的人员时，请仔细查看打开文档时将在此消息栏中显示的标签名称和说明。
 
 - 对于多个用户同时编辑一个加密文件，这些用户必须都在使用 Office 网页版。  或者，对于 Windows 和 Mac，你已 [为使用敏感度标签加密的文件启用共同创作](sensitivity-labels-coauthoring.md)，并且用户具有 [所需最低版本](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) 的 Word、Excel 和 PowerPoint。 如果不是这种情况且文件已打开：
 
   - 在 Office 应用（Windows、Mac、Android 和 iOS）中，用户会看到一条“**文件正在使用中**”消息，其中包含签出该文件的用户的姓名。 然后，他们可查看只读副本或保存和编辑文件副本，并可在文件可用时收到通知。
   - 在 Web 版 Office 中，用户会看到一则错误消息，其中指出他们可与其他人一起编辑文档。 然后，他们可选择“**在阅读视图中打开**”。
 
-- 已对加密文件禁用 Office 应用（Windows、Mac、Android 和 iOS）的[自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)功能。 用户会看到一条消息，其中指出文件具有受限权限且必须删除此权限才能启用“自动保存”。
+- 已为加密文件禁用适用于 iOS 和 Android 的 Office 应用中的[自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)功能。 如果你尚未为[使用敏感度标签加密的文件启用共同创作](sensitivity-labels-coauthoring.md)，则对 Windows 和 Mac 上的加密文件也会禁用此功能。 用户会看到一条消息，其中指出文件具有受限权限且必须删除此权限才能启用“自动保存”。
 
 - 在 Office 应用（Windows、Mac、Android 和 iOS）中打开加密文件可能需要更长时间。
 

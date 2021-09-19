@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: c340e8b1bb8e126445b802e6b03c91d595e32a43
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 863ef1c40781e2bff3e9b2de6217e1dad114f46a
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355956"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59443785"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -178,7 +178,7 @@ ms.locfileid: "59355956"
 
 2. 选择“**报表**”。 
   
-3. 取消选中 **在所有报表中，显示用户、组和网站的已取消标识的名称**，然后保存所做的更改。  
+3. 取消选中语句“**在所有报表中显示隐藏的用户、组和站点名称**”，然后保存更改。  
   
 这些更改将在几分钟之后在报表仪表板中的报表上生效。 此设置还适用于 [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) 和 [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) 和 [ Microsoft Teams 管理中心中的使用情况报告的Microsoft 365使用情况报告](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)。 显示可识别的用户信息是 Microsoft 365 合规中心审核日志中的一个记录事件。   
 

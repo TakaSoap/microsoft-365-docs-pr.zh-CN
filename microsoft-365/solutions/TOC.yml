@@ -71,12 +71,20 @@
                   href: create-secure-guest-sharing-environment.md
             - name: 来宾共享参考
               href: microsoft-365-guest-settings.md
-    - name: 在 Microsoft 365 中部署威胁防护
+    - name: 为 Microsoft 365 租户部署勒索软件保护
       items:
         - name: 概述
-          href: deploy-threat-protection.md
-        - name: 威胁防护部署步骤
-          href: deploy-threat-protection-configure.md
+          href: ransomware-protection-microsoft-365.md
+        - name: 步骤 1. 配置安全基线
+          href: ransomware-protection-microsoft-365-security-baselines.md
+        - name: 步骤 2. 部署攻击检测和响应
+          href: ransomware-protection-microsoft-365-attack-detection-response.md
+        - name: 步骤 3. 保护身份
+          href: ransomware-protection-microsoft-365-identities.md
+        - name: 步骤 4. 保护设备
+          href: ransomware-protection-microsoft-365-devices.md
+        - name: 步骤 5. 保护信息
+          href: ransomware-protection-microsoft-365-information.md
     - name: 为数据隐私法规部署信息保护
       items:
         - name: 概述
