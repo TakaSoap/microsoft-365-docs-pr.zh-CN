@@ -20,12 +20,12 @@ description: 管理员可以了解如何在 Microsoft 365 Defender 门户中从�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 774f47c65f98a2e93ee6e50406afe897a315de12
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f9c54f5ac443192f094f1c1edb14273c9f226f9f
+ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170463"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447346"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>在 Microsoft 365 中从“受限的用户”门户中删除被阻止的用户
 
@@ -46,7 +46,7 @@ ms.locfileid: "59170463"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到“**受限的用户**”页面，请使用 <https://security.microsoft.com/restrictedusers>。
+- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到 **受限用户** 页，请使用 <https://security.microsoft.com/restrictedusers>。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -66,7 +66,7 @@ ms.locfileid: "59170463"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-a-user-from-the-restricted-users-list"></a>使用 Microsoft 365 Defender 门户从“受限的用户”列表中删除用户
 
-1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**” > “**检查**” > “**受限的用户**”。
+1. 在 Microsoft 365 Defender 门户中，转到 **电子邮件和协作**\>**查看**\>**受限用户**。
 
 2. 在“**受限的用户**”页面上，查找你希望取消阻止的用户并通过单击该用户进行选择。
 
