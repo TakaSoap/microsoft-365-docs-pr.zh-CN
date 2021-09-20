@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5ac9de03cec817f469fe096689e4badf615bb4c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 33df420b8b480b6957e2ec71b3bb5494f61fce63
+ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162287"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59453612"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction 资源类型
 
@@ -75,7 +75,7 @@ ms.locfileid: "59162287"
 |cancellationComment|String|取消操作时写入的注释。|
 |status|枚举|命令的当前状态。 可能的值包括："Pending"、"InProgress"、"Succeeded"、"Failed"、"TimeOut"和"Cancelled"。|
 |machineId|String|已 [执行](machine.md) 该操作的虚拟机的 ID。|
-|machineId|String|已 [执行](machine.md) 该操作计算机的名称。|
+|computerDnsName|String|已 [执行](machine.md) 该操作计算机的名称。|
 |creationDateTimeUtc|DateTimeOffset|创建该操作的日期和时间。|
 |cancellationDateTimeUtc|DateTimeOffset|取消该操作的日期和时间。|
 |lastUpdateDateTimeUtc|DateTimeOffset|上次更新操作状态的日期和时间。|
