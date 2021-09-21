@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 663180b87a9886681a1643279e49641c3fbfed3c
-ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
+ms.openlocfilehash: 4a8ebc2aedc624028cf0b5144d434185c20243b9
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59447380"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460460"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
-[自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 你可以根据以下信息在 SIT (自定义) 类型：
+[自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 您根据以下信息在 SIT (自定义) 类型：
 
 - 模式
 - 如 *员工*、*徽章* 或 *ID 等关键字证据*
@@ -95,7 +95,7 @@ ms.locfileid: "59447380"
 
 #### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>以 .tsv .csv保存敏感数据
 
-1. 确定要使用的敏感信息。 将数据导出到应用（如 Microsoft Excel）中，将文件保存在文本文件中。 该文件可以保存在逗号分隔.csv (值中) .tsv (制表符分隔) 值或以管道分隔 (|) 格式。 如果数据值可能包含逗号（如街道地址），则建议使用 .tsv 格式。
+1. 确定要使用的敏感信息。 将数据导出到应用（如 Microsoft Excel）中，将文件保存在文本文件中。 该文件可以保存在逗号分隔.csv (值中) .tsv (制表符分隔) 值，或用管道分隔 (|) 格式。 如果数据值可能包含逗号（如街道地址），则建议使用 .tsv 格式。
 数据文件最多可包括以下内容：
    - 高达 1 亿行的敏感数据
    - 每个数据源最多 32 列（字段）
@@ -108,9 +108,6 @@ ms.locfileid: "59447380"
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定义敏感信息数据库的架构
 
 如果出于商业或技术原因不希望使用 PowerShell 或命令行创建架构和 EDM 敏感信息类型模式（规则包），可以使用 [精确数据匹配架构和敏感信息类型向导](sit-edm-wizard.md) 来创建。 完成创建架构和 EDM 敏感信息类型模式后，返回以完成所有必要步骤，使基于 EDM 的敏感信息类型处于可用状态。
-
-> [!NOTE]
-> 精确数据匹配架构和敏感信息类型向导仅用于 World Wide 和 GCC。
 
 1. 以 XML 格式定义敏感信息数据库的架构（类似于下面的示例）。 命名此架构文件 **edm.xml** 并对其进行配置，确保对于数据库中的每一列，都有一行使用语法：
 

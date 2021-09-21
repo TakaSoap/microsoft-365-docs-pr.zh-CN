@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f10099fcfe2c8b4701ed5aa0981a3bb84bf5c7c3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 88582efe5e285df2b5439c6d01b63ed4c5ef7855
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170654"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460120"
 ---
 # <a name="insider-risk-management-policies"></a>预览体验计划风险管理策略
 
@@ -183,7 +183,7 @@ ms.locfileid: "59170654"
 - 心怀不满用户的数据泄露活动
 
 > [!NOTE]
-> 累积筛选检测使用全局设置中启用了内部筛选指示器，以用于预览体验风险管理和在策略中选择的筛选指示器。 因此，只会针对选中的必要筛选指示器对累积筛选检测进行评估。
+> 累积筛选检测使用全局设置中启用了内部筛选指示器，以用于预览体验风险管理和在策略中选择的筛选指示器。 因此，只会针对选中的必要筛选指示器对累积筛选检测进行评估。 在优先级内容中配置的敏感度标签[](sensitivity-labels.md)的累积筛选活动会产生更高的风险评分。
 
 当为数据盗用或数据泄露策略启用了累积泄露检测时，预览体验计划内" **用户活动** "选项卡上会显示累积泄露活动的见解。
 

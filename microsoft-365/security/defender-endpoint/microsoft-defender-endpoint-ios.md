@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4dc2d9e0d4ea06b7b51a29be11af4e6316c83bcc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 63e1f78ff3431db03ab2f7b414eca13cdca21f41
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196319"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460156"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint
 
@@ -47,9 +47,9 @@ ms.locfileid: "59196319"
 
 - 分配给最终用户的 Microsoft Defender for Endpoint 许可证 (应用的) 许可证。 请参阅 [Microsoft Defender for Endpoint 许可要求](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)。
 
-- **对于已注册设备**： (设备) 通过应用注册Intune 公司门户强制执行 Intune [](/mem/intune/user-help/enroll-your-device-in-intune-ios)设备合规性策略。 这需要为最终用户分配一个Microsoft Intune许可证。
-    - Intune 公司门户应用可以从[Apple App Store 下载](https://apps.apple.com/us/app/intune-company-portal/id719171358)。
-    - 请注意，Apple 不允许重定向用户从应用商店下载其他应用，因此在载入 Microsoft Defender for Endpoint 应用之前，用户需要完成此步骤。
+- **对于已注册设备**： (设备) 通过 Intune 公司门户 应用注册，以强制执行 [](/mem/intune/user-help/enroll-your-device-in-intune-ios)Intune 设备合规性策略。 这需要为最终用户分配一个Microsoft Intune许可证。
+    - Intune 公司门户应用可以从 Apple App Store[下载](https://apps.apple.com/us/app/intune-company-portal/id719171358)。
+    - 请注意，Apple 不允许重定向用户从应用商店下载其他应用，因此在载入 Microsoft Defender for Endpoint 应用之前，需要由用户完成此步骤。
 
 - **对于注销的设备：设备** (注册) 注册Azure Active Directory。 这要求最终用户通过应用 Microsoft Authenticator[登录](https://apps.apple.com/app/microsoft-authenticator/id983156458)。
 
@@ -59,33 +59,38 @@ ms.locfileid: "59196319"
 
 - 访问 Microsoft Defender 安全中心 门户。
 
-- 访问[Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心 ，以将应用部署到组织中注册的用户组。
+- 访问Microsoft Endpoint Manager[管理中心 ，](https://go.microsoft.com/fwlink/?linkid=2109431)以：
+   - 将应用部署到组织中注册的用户组。
+   - 在应用保护策略中配置 Microsoft Defender for Endpoint 风险信号 (MAM) 
+
 
     > [!NOTE]
-    > - Microsoft Defender for Endpoint 现在为未使用移动设备管理 (MDM) 但正在使用 Intune 管理移动应用程序的受管理应用程序内的组织数据扩展保护。 它还向使用其他企业移动性管理解决方案的客户扩展了此支持，同时仍使用 Intune 在[MAM (移动应用程序) 。 ](/mem/intune/apps/mam-faq)
+    > - 对于没有使用移动设备管理 (MDM) 但正在使用 Intune 管理移动应用程序的人，Microsoft Defender for Endpoint 现在将保护扩展到托管应用程序中的组织数据。 它还向使用其他企业移动性管理解决方案的客户扩展了此支持，同时仍使用 Intune 在[MAM (移动应用程序) 。 ](/mem/intune/apps/mam-faq)
     > - 此外，Microsoft Defender for Endpoint 已支持使用 Intune 移动设备管理在 MDM (注册) 。  
 
 **系统要求**
 
-- 运行 iOS 11.0 及以上设备的 iOS 设备。 iPad版本 1.1.15010101 之后正式支持这些设备。
+- 运行 iOS 11.0 及以上设备的 iOS 设备。 也支持 iPad。
 
 - 设备已注册到 Intune 公司门户[应用，或者](https://apps.apple.com/us/app/intune-company-portal/id719171358)通过 Azure Active Directory[注册](https://apps.apple.com/app/microsoft-authenticator/id983156458)Microsoft Authenticator。
 
 ## <a name="installation-instructions"></a>安装说明
 
 可通过使用 MEM Microsoft Endpoint Manager (在 iOS 上部署 Microsoft Defender for Endpoint) 并且支持受监督设备以及不受监督的设备。 最终用户还可以直接从 Apple 应用商店 [安装应用](https://aka.ms/mdatpiosappstore)。
-有关详细信息，请参阅在[iOS 上部署 Microsoft Defender for Endpoint。](ios-install.md)
+
+- 有关通过 iOS 或 Intune 在已注册设备上Microsoft Endpoint Manager的信息，请参阅在 iOS 上部署[Microsoft Defender for Endpoint。](ios-install.md)
+- 有关在 MAM 应用保护策略 (使用 Defender for Endpoint) ，请参阅配置应用保护策略以将 Defender for Endpoint 风险信号 ([MAM) ](ios-install-unmanaged.md)
 
 ## <a name="resources"></a>资源
 
 - 通过访问 [iOS](ios-whatsnew.md) 上的 Microsoft Defender for Endpoint 中的新增功能或我们的博客，随时了解即将发布的 [版本](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。
 
-- 通过应用内反馈系统或 [SecOps 门户提供反馈](https://securitycenter.microsoft.com)
+- 通过应用内反馈系统或统一安全控制台 [提供反馈](https://security.microsoft.com)
 
 ## <a name="next-steps"></a>后续步骤
 
-- [在 iOS 上部署 Microsoft Defender for Endpoint](ios-install.md)
-- [在 iOS 功能上配置 Microsoft Defender for Endpoint](ios-configure-features.md)
+- [通过 Intune 为已注册的设备在 iOS 上部署 Microsoft Defender for Endpoint](ios-install.md)
 - [配置应用保护策略，以将 Defender for Endpoint 风险信号 (MAM) ](ios-install-unmanaged.md)
+- [在 iOS 功能上配置 Microsoft Defender for Endpoint](ios-configure-features.md)
 - [根据 Microsoft Defender for Endpoint 中的设备风险评分配置条件访问策略](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
 - [移动应用程序管理 (MAM) 基础知识](/mem/intune/apps/app-management#mobile-application-management-mam-basics)

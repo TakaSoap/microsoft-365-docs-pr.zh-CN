@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 将Microsoft Teams与 Canvas 集成
-ms.openlocfilehash: 44ba24e5c8bd7107f9cba199ce290c10b31e0806
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8c19807034d5d063f71378dd450cfda419cd1491
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196098"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460300"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>将Microsoft Teams与 Canvas 一同使用
 
@@ -30,17 +30,27 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 > 当前的 Class Teams LTI 仅支持将 Canvas 用户与 Microsoft Azure Active Directory (AAD) 在有限范围内同步。 
 > - 你的租户必须具有 Microsoft 教育版许可证。
 > - 只有一个 Microsoft 租户可用于在 Canvas 和 Microsoft 之间映射用户。
-> - 在使用 Class) LTI 之前，学校数据同步 (SDS Teams，以避免组重复。
+> - 在使用 Class) LTI 之前，学校数据同步 (SDS Teams，以避免重复组。
+
+## <a name="grant-admin-consent"></a>授予管理员同意
+
+在内部结构 Canvas 中管理 Microsoft Teams 集成之前，必须让 Microsoft Azure 租户中的机构 Microsoft Office 365 管理员批准 Canvas 的 **Microsoft-Teams-Sync-for-Canvas** Azure 应用，然后再完成 Canvas 管理员设置。 您必须是全局管理员才能执行这些步骤。
+
+1. 导航到Azure Active Directory。
+
+2. 打开Enterprise应用程序，然后选择 **Microsoft-Teams-Sync-for-Canvas** 应用程序。
+
+3. 选择 **"权限"，** 然后选择"**授予管理员同意"。**
+
+4. 同意应用程序所需的权限，然后授予同意。
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理员
-
-在内部结构 Canvas 中管理 Microsoft Teams 集成之前，必须让 Microsoft Azure 租户中的机构 Microsoft Office 365 管理员批准 Canvas 的 **Microsoft-Teams-Sync-for-Canvas** Azure 应用，然后再完成 Canvas 管理员设置。
 
 1. 登录到 Canvas。
 
 2. 选择全局 **导航** 中的"管理员"链接，然后选择您的帐户。
 
-3. 在管理员导航中 **，选择**"设置"链接，然后选择"**集成"** 选项卡。
+3. 在管理导航中 **，选择**"设置"链接，然后选择"**集成"** 选项卡。
 
 4. 通过Microsoft Teams启用"同步"。
    
@@ -65,7 +75,7 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 
 设置 Microsoft Teams LTI 1.3 集成。
 
-作为 Canvas 管理员，你需要在你的环境中添加 Microsoft Teams 类 LTI 应用。 访问主帐户中的"开发人员密钥"列表，切换到继承的密钥，Teams LTI 工具。 记下应用的 LTI 客户端 ID。
+作为 Canvas 管理员，你需要在你的环境中添加Microsoft Teams类 LTI 应用。 访问主帐户中的"开发人员密钥"列表，切换到继承的密钥，Teams LTI 工具。 记下应用的 LTI 客户端 ID。
 
  - Microsoft Teams类 - 170000000000570
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 441e7a598e0487759dc5e48dab3e74a7b3b1ead6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afff05ac0e18ac41b1e2ba70b59ed4dfd0c6a22a
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170511"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460312"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>在 Android 功能上配置适用于终结点的 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "59170511"
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-android"></a>在 Android 上通过 Defender for Endpoint 进行条件访问
 
-Android 上的 Microsoft Defender for Endpoint 以及 Microsoft Intune 和 Azure Active Directory 支持根据设备风险级别强制执行设备合规性和条件访问策略。 Defender for Endpoint 是移动威胁防护 (MTD) 解决方案，你可以部署该解决方案以通过 Intune 利用此功能。
+Android 上的 Microsoft Defender for Endpoint 以及 Microsoft Intune 和 Azure Active Directory 支持根据设备风险级别强制执行设备合规性和条件访问策略。 Defender for Endpoint 是一种移动威胁防护 (MTD) 解决方案，你可以部署该解决方案以通过 Intune 利用此功能。
 
 若要详细了解如何在 Android 和条件访问上设置适用于终结点的 Defender，请参阅[Defender for Endpoint 和 Intune。](/mem/intune/protect/advanced-threat-protection)
 
@@ -51,6 +51,32 @@ Android 上的 Defender for Endpoint 允许 IT 管理员配置 Web 保护功能�
 > [!NOTE]
 > Android 上的 Defender for Endpoint 将使用 VPN 来提供 Web 保护功能。 这不是常规 VPN，它是不接受设备外流量的本地/自循环 VPN。
 > 有关详细信息，请参阅在运行 [Android 的设备上配置 Web 保护](/mem/intune/protect/advanced-threat-protection-manage-android)。
+
+## <a name="configure-privacy-for-malware-threat-report"></a>配置恶意软件威胁报告的隐私
+
+> [!NOTE]
+> Android 版 Defender for Endpoint 的隐私控件目前处于预览阶段，在商业发行之前可能会进行重大修改。
+
+恶意软件威胁报告的隐私控制可用于禁用从恶意软件威胁报告 (名称和程序包) 应用详细信息的集合。 这使组织能够灵活地选择是否在检测到恶意应用时收集应用名称。 *此功能当前仅适用于在 Android 设备管理员模式下 **注册** 的设备。*
+
+使用以下步骤为目标用户启用它：
+
+1. 在 [Microsoft Endpoint Manager中心中](https://go.microsoft.com/fwlink/?linkid=2109431)，转到"**设备** 配置文件""创建配置文件  >    >  "**并** 输入以下设置：
+
+   - **平台**：选择 Android 设备管理员
+   - **配置文件：** 选择"自定义"，然后单击创建
+
+2. 在"基础知识"部分，指定配置文件的名称和说明。
+3. 在配置设置中，选择添加 **OMA-URI** 设置：
+
+   - **名称**：为此 OMA-URI 设置输入唯一的名称和说明，以便你稍后可以轻松找到它。
+   - **OMA-URI：./Vendor/MSFT/DefenderATP/DefenderExcludeAppInReport**
+   - 数据类型：在下拉列表中选择"整数"。
+   - 值：输入 1 以启用隐私 (默认情况下，该值为 0) 
+
+4. 单击 **"** 下一步"，并将此配置文件分配给目标设备/用户。
+
+启用上述隐私控制不会影响设备合规性检查或条件访问，例如，具有恶意应用的设备的风险级别始终为"中等"。
 
 ## <a name="related-topics"></a>相关主题
 

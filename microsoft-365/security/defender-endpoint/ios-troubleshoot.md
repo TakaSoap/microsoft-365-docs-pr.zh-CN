@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9a77662d1473a56031a30e44a1d39df8e3964541
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6d2e0fc1ffeccfd189b95fbd5908a959e4a823a8
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197280"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460159"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>排查与 iOS 上的 Microsoft Defender for Endpoint 相关的问题并查找常见问题解答
 
@@ -46,7 +46,7 @@ ms.locfileid: "59197280"
 
 默认情况下，iOS 上的 Defender for Endpoint 包括并启用 Web 保护功能。 [Web](web-protection-overview.md) 保护有助于保护设备免受 Web 威胁，并保护用户免受网络钓鱼攻击。 iOS 上的 Defender for Endpoint 使用 VPN 来提供此保护。 请注意，这是本地 VPN，与传统 VPN 不同，网络流量不会在设备外部发送。
 
-虽然默认启用，但在某些情况下可能需要你禁用 VPN。 例如，你想要运行一些在配置 VPN 时不起作用的应用。 在这种情况下，你可以选择按照以下步骤在设备上禁用应用中的 VPN：
+虽然默认启用，但在某些情况下可能需要你禁用 VPN。 例如，你想要运行一些在配置 VPN 时不起作用的应用。 在这种情况下，你可以选择直接从 Defender for Endpoint 应用或按照以下步骤禁用 VPN：
 
 1. 在 iOS 设备上，打开 **"设置** 应用"，单击 **或点击"** 常规"，然后单击 **"VPN"。**
 1. 单击或点击 Microsoft Defender for Endpoint 的"i"按钮。
@@ -56,7 +56,7 @@ ms.locfileid: "59197280"
     > ![VPN 配置按需连接。](images/ios-vpn-config.png)
 
 > [!NOTE]
-> 禁用 VPN 后，Web 保护将不可用。 若要重新启用 Web 保护，请在设备上打开 Microsoft Defender for Endpoint 应用，然后单击或点击"启动 **VPN"。**
+> 禁用 VPN 后，Web 保护将不可用。 若要重新启用 Web 保护，请打开设备上 Microsoft Defender for Endpoint 应用并启用 Web 保护。
 
 ## <a name="co-existence-with-multiple-vpn-profiles"></a>与多个 VPN 配置文件共存
 
@@ -66,7 +66,7 @@ Microsoft Defender for Endpoint VPN 可以与配置为每应用或"个人"的其
 
 ## <a name="battery-consumption"></a>电池消耗
 
-在设置应用中，iOS 仅显示特定持续时间内对用户可见的应用的电池使用情况。 屏幕上显示的应用的电池使用情况仅在该持续时间内，由 iOS 根据大量因素（包括 CPU 和网络使用情况）计算。 Microsoft Defender for Endpoint 在后台使用本地/环回 VPN 来检查任何恶意网站或连接的 Web 流量。 来自任何应用的网络数据包都经过此检查，这会导致 Microsoft Defender for Endpoint 的电池使用情况计算不准确。 Microsoft Defender for Endpoint 的实际电池消耗远小于设备上"电池设置页面上显示的内容。
+在设置应用中，iOS 仅显示特定时间内对用户可见的应用的电池使用情况。 屏幕上显示的应用的电池使用情况仅在该持续时间内，由 iOS 根据大量因素（包括 CPU 和网络使用情况）计算。 Microsoft Defender for Endpoint 在后台使用本地/环回 VPN 来检查任何恶意网站或连接的 Web 流量。 来自任何应用的网络数据包都经过此检查，这会导致 Microsoft Defender for Endpoint 的电池使用情况计算不准确。 Microsoft Defender for Endpoint 的实际电池消耗远小于设备上"电池设置页面上显示的内容。
 
 对于在后台运行的终结点，Microsoft Defender 的平均每天电池使用量大约为当天消耗的总电池的 **8.81%。** Apple 根据最终用户设备上 Microsoft Defender for Endpoint 的实际使用情况报告此指标，并且由于上述原因，还可以将指标报告给具有网络活动的其他应用。
 
@@ -82,7 +82,7 @@ Microsoft Defender for Endpoint 使用本地/环回 VPN 检查任何恶意网站
 
 ## <a name="report-unsafe-site"></a>报告不安全网站
 
-网络钓鱼网站会模拟可信赖的网站，以获取你的个人或财务信息。 访问 ["提供有关网络保护的反馈"页](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) ，以报告可能是网络钓鱼网站的网站。
+网络钓鱼网站会模拟可信赖的网站，以获取你的个人或财务信息。 访问 ["提供有关网络保护的反馈"页](https://www.microsoft.com/wdsi/support/report-unsafe-site) ，以报告可能是网络钓鱼网站的网站。
 
 ## <a name="malicious-site-detected"></a>检测到恶意站点
 
@@ -98,9 +98,13 @@ Microsoft Defender for Endpoint 可保护你免受网络钓鱼或其他基于 We
 载入后，设备需要几个小时才能显示在 Defender for Endpoint 安全控制台的设备清单中。 此外，请确保设备已正确注册Azure Active Directory并且设备具有 Internet 连接。 若要成功载入，设备必须通过 Microsoft Authenticator 或 Intune 公司门户 并且用户需要使用在 Azure AD 中注册设备的同一帐户登录。
 
 > [!NOTE]
-> 有时，设备名称与 Intune Microsoft Endpoint Manager (控制台中的设备) 一致。 Defender for Endpoint 控制台中的设备名称采用 <username_iPhone/iPad 模式>。 还可使用 Azure AD 设备 ID 在 Defender for Endpoint 控制台中标识设备。
+> 有时，设备名称与 Intune 控制台Microsoft Endpoint Manager (设备) 一致。 Defender for Endpoint 控制台中的设备名称采用 <username_iPhone/iPad 模式>。 还可使用 Azure AD 设备 ID 在 Defender for Endpoint 控制台中标识设备。
 
 ## <a name="data-and-privacy"></a>数据和隐私
 
 有关收集的数据和隐私的详细信息，请参阅 [Privacy Information - Microsoft Defender for Endpoint on iOS](ios-privacy.md)。
+
+## <a name="issues-during-app-updates-from-the-app-store"></a>从应用商店更新应用期间的问题
+
+如果在应用通过应用商店更新应用时发现 (自动更新或手动更新) ，你可能需要重新启动设备。 如果无法解决问题，你可以禁用 Defender VPN 并执行应用更新。 还可以提供应用内反馈来报告此问题。
 

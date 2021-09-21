@@ -1,5 +1,5 @@
 ---
-title: 设置适用于终结点的 Microsoft Defender 部署
+title: 设置 Microsoft Defender for Endpoint 部署
 description: 了解如何设置 Microsoft Defender for Endpoint 的部署
 keywords: 部署， 设置， 许可验证， 租户配置， 网络配置
 search.product: eADQiWindows 10XVcnh
@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d7bb79ca6e04d283ee9ec9d7e01113364ebd6588
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: ab7007143fd472757f8f6489cb14babc8cda1129
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400602"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460168"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置适用于终结点的 Microsoft Defender 部署
+# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置 Microsoft Defender for Endpoint 部署
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -52,13 +52,13 @@ ms.locfileid: "59400602"
 - 网络配置
 
 > [!NOTE]
-> 为了指导你完成典型部署，此方案将仅涉及Microsoft Endpoint Configuration Manager。 Defender for Endpoint 支持使用其他载入工具，但不在部署指南中介绍这些方案。 有关详细信息，请参阅 [将设备载入到 Microsoft Defender for Endpoint](onboard-configure.md)。
+> 为了引导您完成典型部署，此方案将仅涉及 Microsoft Endpoint Configuration Manager。 Defender for Endpoint 支持使用其他载入工具，但不在部署指南中介绍这些方案。 有关详细信息，请参阅 [将设备载入到 Microsoft Defender for Endpoint](onboard-configure.md)。
 
 ## <a name="check-license-state"></a>检查许可证状态
 
 可通过管理中心或管理门户检查许可证状态及其是否Microsoft Azure **设置**。
 
-1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. 若要查看许可证，请转到"Microsoft Azure门户"**并** 导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
    ![Azure 许可页面的图像。](images/atp-licensing-azure-portal.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "59400602"
 
 若要获取向公司预配哪些许可证的访问权限，并检查许可证的状态，请转到管理中心。
 
-1. 从合作伙伴 **门户中，** 选择"**管理服务> Office 365"。**
+1. 在合作伙伴 **门户中，** 选择"**管理服务> Office 365"。**
 
 2. 单击"**合作伙伴门户**"链接将打开"代表管理员"选项，并授予你客户管理中心的访问权限。
 
@@ -111,7 +111,7 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 1. 打开组策略管理控制台。
 2. 根据组织实践创建策略或编辑现有策略。
-3. 编辑组策略并导航到"管理模板Windows组件数据收集和预览版配置连接的用户体验和遥测服务的已验证 **\> \> \> 代理用法**。
+3. 编辑组策略并导航到"管理模板Windows组件数据收集和预览版配置连接的用户体验和遥测服务的已验证 **\> \> \> 代理使用情况**。
 
    ![组策略配置的图像。](images/atp-gpo-proxy1.png)
 
@@ -159,11 +159,11 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>低级别设备的代理配置
 
-Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 和 Windows Server 2016 Server CB 1803 之前的 Windows Windows Server 2016 版本。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
+Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 以及 Windows Server CB 1803 之前的 Windows Server 2016 版本。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
 
 ### <a name="proxy-service-urls"></a>代理服务 URL
 
-仅在具有版本 1803 Windows 10更高版本的设备时，才需要包含 v20 的 URL。 例如， `us-v20.events.data.microsoft.com` 仅在设备位于 Windows 10版本 1803 或更高版本时需要 。
+仅在具有版本 1803 Windows 10更高版本的设备时，才需要包含 v20 的 URL。 例如， `us-v20.events.data.microsoft.com` 仅在设备位于版本 1803 Windows 10版本时需要。
 
 如果代理或防火墙阻止匿名流量，因为 Microsoft Defender for Endpoint 传感器从系统上下文连接，请确保允许列出的 URL 中的匿名流量。
 
@@ -177,27 +177,6 @@ Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 20
 |---|---|
 |![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图。](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
-
-### <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Microsoft Defender for Endpoint 服务后端 IP 范围
-
-如果网络设备不支持基于 DNS 的规则，请改为使用 IP 范围。
-
-Defender for Endpoint 内置于 Azure 云中，部署在以下区域：
-
-- AzureCloud.eastus
-- AzureCloud.eastus2
-- AzureCloud.westcentralus
-- AzureCloud.northeurope
-- AzureCloud.westeurope
-- AzureCloud.uksouth
-- AzureCloud.ukwest
-
-可以在 Azure IP 范围和服务标记 - 公共云 [中查找 Azure](https://www.microsoft.com/download/details.aspx?id=56519)IP 范围。
-
-> [!NOTE]
-> 作为基于云的解决方案，IP 地址范围可能会更改。 建议移动到基于 DNS 的规则。
->
-> 如果你是美国政府客户，请参阅美国政府 Defender [for Endpoint 页面中的相应](gov.md#service-backend-ip-ranges) 部分。
 
 ## <a name="next-step"></a>后续步骤
 

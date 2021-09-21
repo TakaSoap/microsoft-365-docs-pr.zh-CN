@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 813dff46f3ba26c32f3b704645a9ca35ca740001
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 258adabaa29420ca0b713e290926048a2ed1752d
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353594"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460012"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>在 macOS 或 Linux 上运行客户端分析器
 
@@ -39,7 +39,7 @@ ms.locfileid: "59353594"
    > [!NOTE]
    > 从上述链接下载的"XMDEClientAnalyzer.zip"的当前 SHA256 哈希为："973725417D136B7B17AF4B301F1E99BA21D7F4A7DF88036DC5A731A4B768A8B2"。
 
-2. 提取计算机上XMDEClientAnalyzer.zip的内容。
+2. 提取计算机上XMDEClientAnalyzer.zip内容。
 
 3. 打开终端会话，将目录更改为提取的位置并运行：
 
@@ -52,16 +52,26 @@ ms.locfileid: "59353594"
 
 ## <a name="running-the-analyzer-using-a-terminal-or-ssh-scenario"></a>使用终端或 SSH 方案运行分析器
 
-1. 将终端或 SSH 打开到相关计算机中。
+打开相关计算机中的终端或 SSH 并运行以下命令：
 
-2. 运行 `wget --quiet -O XMDEClientAnalyzer.zip* <https://aka.ms/XMDEClientAnalyzer> *&& unzip -q XMDEClientAnalyzer.zip && cd XMDEClientAnalyzer && chmod +x mde_support_tool.sh"`
+1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer *`
 
-3. 运行 `./mde_support_tool.sh -d` 以生成结果存档文件。
+2. `unzip -q XMDEClientAnalyzer.zip`
+
+3. `cd XMDEClientAnalyzer`
+
+4. `chmod +x mde_support_tool.sh"`
+
+3. 作为非根使用运行以安装所需的管道和 lxml 组件： `./mde_support_tool.sh`
+
+4. 若要收集实际的诊断包并生成结果存档文件，请再次作为根运行： `./mde_support_tool.sh -d`
 
 > [!NOTE]
-> 对于 Linux，分析器需要"lxml"来生成结果输出。 如果未安装，分析器将尝试从下面的 python 包的官方存储库获取它： <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
->
-> 此外，该工具当前需要安装 Python 版本 3 或更高版本。
+> - 对于 Linux，分析器需要"lxml"来生成结果输出。 如果未安装，分析器将尝试从下面的 python 包的官方存储库获取它： <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> 
+> - 此外，该工具当前需要安装 Python 版本 3 或更高版本。
+> 
+> - 如果设备位于代理后面，则只需将代理服务器作为环境变量传递到 mde_support_tool.sh 脚本。 例如：`https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 示例：
 
@@ -112,7 +122,7 @@ ms.locfileid: "59353594"
 
 - Health.txt
 
-  说明：与运行 *mdatp* 运行状况命令时显示的基本运行状况输出相同。
+  说明：运行 *mdatp* 运行状况命令时显示的基本运行状况输出相同。
 
 - Events.xml
 
