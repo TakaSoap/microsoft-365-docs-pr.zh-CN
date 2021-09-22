@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0a8d6ea1805d4783a9326ebd0eeed269ff5fef72
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 78ad8b65a7ad727417dd6152fcb34c6df34080c9
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196550"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59480852"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -33,8 +33,7 @@ ms.locfileid: "59196550"
 
 > [!IMPORTANT]
 > **Web 内容筛选当前处于公共预览阶段**<br>
-> 此预览版未提供服务水平协议，不建议用于生产工作负载。 某些功能可能不受支持，也可能具有受限功能。
-> 有关详细信息，请参阅 [Microsoft Defender for Endpoint 预览功能](preview.md)。
+> 此预览版未提供服务水平协议，不建议用于生产工作负载。 某些功能可能不受支持，也可能具有受限功能。 有关详细信息，请参阅 [Microsoft Defender for Endpoint 预览功能](preview.md)。
 
 > [!TIP]
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)。
@@ -51,13 +50,13 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 - 安全团队可以使用 Microsoft Defender for Endpoint 基于角色的访问控制设置中定义的设备组，便捷地将策略 [部署到用户组](/microsoft-365/security/defender-endpoint/rbac)
 - 安全团队可以访问位于相同中心位置的 Web 报告，并查看实际块和 Web 使用情况
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 在尝试此功能之前，请确保满足以下要求：
 
 - Windows 10 企业版E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或 Microsoft Defender for Endpoint 独立许可证。 
-- 访问 Microsoft 365 Defender 门户 (https://security.microsoft.com) 。
-- 运行 Windows 10 周年 (版本 1607) 或更高版本的设备使用最新的 MoCAMP 更新。
+- 访问Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 。
+- 运行 Windows 10 周年更新 (版本 1607) 或更高版本包含最新的防病毒[/反恶意软件更新](manage-updates-baselines-microsoft-defender-antivirus.md)。
 - Windows DefenderSmartScreen 和网络保护已启用。
 
 ## <a name="user-experience"></a>用户体验
@@ -76,13 +75,96 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若要管理策略，请转到"设置"下 (终结点  >    >  **Web** 内容) 。 
 
-使用筛选器查找包含某些阻止类别或应用于特定设备组的策略。
+可以部署策略来阻止以下任何父类别或子类别：
+
+<details>
+<summary>成人内容</summary>
+
+**网站：** 与组或运动相关的网站，这些团队或活动的成员对不同于社交接受的社交系统具有信心。 
+
+**培训：** 在线培训以及促进培训技能和实践的网站。
+
+**Nudity：** 通常以艺术形式提供全面和半录制图像或视频的网站，并且可能允许下载或出售此类材料。
+
+**黄色/广告：** 基于图像或文本形式包含明确内容的网站。 此处还列出了任何形式的面向材质的材料。
+
+性教育：以信息和非 voyeuristic 方式讨论性与性的网站，包括提供有关人类感染和性取向的教育的网站、提供防止性感染建议的网站，以及提供有关性健康问题建议的网站。
+
+**无理**：面向不适合学校儿童查看的内容的网站，或者雇主会随员工访问而感到不满意，但不一定令人信念或色情。
+
+**暴力**：显示或宣传与针对人类或动物的暴力相关的内容的网站。
+
+</details>
+
+<details>
+<summary>高带宽</summary>
+
+**下载网站**：主要功能是允许用户下载媒体内容或程序（如计算机程序）的网站。
+
+**图像共享**：主要用于搜索或共享照片的网站，包括具有社交方面的内容。
+
+**对等：** 承载 P2P (P2P) 或促进使用 P2P 软件共享文件的网站。
+
+**流&下载：** 主要功能是流式媒体分发的网站，或允许用户搜索、观看或收听流式媒体的网站。
+  
+</details>
+
+<details>
+<summary>法律责任</summary>
+
+**儿童滥用图像**：包括儿童滥用图像或滥用的网站。 
+
+**犯罪活动**：对非法活动提供说明、建议或宣传的网站。
+
+**黑客** 攻击：提供资源以非法或有问题地使用计算机软件或硬件的网站，包括分发已被盗的受版权保护材料的网站。
+
+**恶意&：** 网站宣传有关可能由种族、种族、性别、年龄、年龄、残障、经济情况、性取向、性取向或其他任何生活方式选择识别的任何部分具有攻击性、降级或滥用性观点的网站。
+
+**非法武器**：销售非法/受控非法非法者、宣传滥用或销售相关参数的站点。
+
+**非法软件**：包含或宣传使用恶意软件、间谍软件、botnet、欺诈邮件或盗用版权&的网站。
+
+**学校欺诈**：与欺骗或学校欺骗相关的网站。 
+
+**自我危害**：宣传自我危害的网站，包括包含滥用和/或威胁用户消息的网络威胁网站。
+
+**武器**：任何销售武器或宣传使用武器的网站，包括但不限于武器、武器和武器。
+
+</details>
+
+<details>
+<summary>百分百</summary>
+
+**聊天**：主要是基于 Web 的聊天室的网站。
+
+**游戏**：与视频或计算机游戏相关的网站，包括通过托管联机服务或与游戏有关的信息推广游戏的网站。
+
+**即时消息：** 可用于下载即时消息软件或基于客户端的即时消息的网站。
+
+**Professional网络**：提供专业网络服务的网站。
+
+**社交网络：** 提供社交网络服务的网站。
+
+**基于 Web 的电子邮件**：提供基于 Web 的邮件服务的网站。
+  
+</details>
+
+<details>
+<summary>未分类</summary>
+
+**新注册的** 域：过去 30 天内新注册但尚未移至其他类别的网站。
+
+**已停域**：没有内容或已等待以后使用的网站。
+  
+**注意**：未分类仅包含新注册的域和已注册的域，不包括这些类别之外的所有其他网站。
+  
+</details>
 
 ### <a name="create-a-policy"></a>创建策略
 
-添加新策略：
+若要添加新策略，请按照以下步骤操作：
 
-1. 选择 **"Web 内容** 筛选"**页上的"** 添加 **设置"。**
+1. 在"Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () ，设置  >  **Web 内容筛选**  >  **+ 添加策略"。**
 
 2. 指定名称。
 
@@ -101,7 +183,9 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 通过创建自定义指示器策略，可以覆盖 Web 内容筛选中阻止的类别以允许单个网站。 当自定义指示器策略应用于有关设备组时，它将取代 Web 内容筛选策略。
 
-1. 通过访问终结点指示器URL/域Microsoft 365 Defender，在 设置 门户中  >    >    >    >  **创建自定义指示器**。
+若要定义自定义指示器，请按照以下步骤操作：
+
+1. 在Microsoft 365 Defender门户 () ，转到设置终结点指示器 [https://security.microsoft.com](https://security.microsoft.com)   >    >    >  **URL/域**  >  **添加项"。**
 
 2. 输入网站的域。
 
@@ -113,11 +197,11 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 要争议域的类别，请导航 **到"报告** Web 保护 Web 内容  >    >  **筛选详细信息域**  >  **"。** 在"Web 内容筛选"报表的"域"选项卡上，你将在每个域旁边看到省略号。 将鼠标悬停在此省略号上，然后选择"**争议类别"。**
 
-将打开一个面板，您可以在其中选择优先级并添加其他详细信息，例如建议用于重新分类的类别。 完成表单后，选择"提交 **"。** Our team will review the request within one business day. 若要立即取消阻止，请创建自定义 [允许指示器](indicator-ip-domain.md)。
+将打开一个面板，可在其中选择优先级并添加更多详细信息，如建议重新分类的类别。 完成表单后，选择"提交 **"。** Our team will review the request within one business day. 若要立即取消阻止，请创建自定义 [允许指示器](indicator-ip-domain.md)。
 
 ### <a name="url-category-lookup"></a>URL 类别查找
 
-若要确定网站的类别，可以使用终结点搜索 下Microsoft 365 Defender门户 (https://security.microsoft.com) **URL 搜索**  >  **函数**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
+若要确定网站的类别，可以使用终结点搜索 下Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) **URL**  >  **搜索功能**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
 
 ![Web 内容筛选类别查找结果的图像。](../../media/web-content-filtering-category-lookup.png)
 
@@ -163,13 +247,13 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 ### <a name="limitations-and-known-issues-in-this-preview"></a>此预览版中的限制和已知问题
 
-- 如果你Microsoft Edge操作系统配置是 Server (  >  **systeminfo**  >  **OS Configuration**) ，则仅支持此) 。 网络保护仅在服务器设备的检查模式下受支持，服务器设备负责保护受支持的第三方浏览器上的流量。
+- 如果你Microsoft Edge操作系统配置是 Server (**cmd**  >  **Systeminfo**  >  **OS Configuration**) 。 网络保护仅在服务器设备的检查模式下受支持，它负责保护跨受支持的第三方浏览器的流量。
 
-- 未分配的设备将在报告内显示不正确的数据。 在"**报告详细信息**  >  **""** 设备组透视表"中，你可能会看到一个包含空白"设备组"字段的行。 此组包含未分配设备，然后再放入指定组。 此行的报告可能不包含设备或访问计数的准确计数。
+- 未分配的设备将在报告内显示不正确的数据。 在"**报告详细信息**  >  **""** 设备组透视表"中，你可能会看到一个包含空白设备组字段的行。 此组包含未分配设备，然后再放入指定组。 此行的报告可能不包含设备或访问计数的准确计数。
 
 - Web 内容筛选报告当前限制为显示前 5000 条记录。 例如，"域"报告最多只显示给定筛选器查询前 5000 个域（如果适用）。 
 
-
+## <a name="see-also"></a>另请参阅
 
 - [Web 保护功能概述](web-protection-overview.md)
 - [Web 威胁防护功能](web-threat-protection.md)

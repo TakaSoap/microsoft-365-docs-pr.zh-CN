@@ -45,8 +45,10 @@ additionalContent:
               url: /learn/modules/workplace-analytics-discover/
         - title: Microsoft Viva Connections
           links:
-            - text: 开始行动
+            - text: 入门
               url: /sharepoint/viva-connections-overview
+            - text: 安装
+              url: /sharepoint/guide-to-setting-up-viva-connections
             - text: 可扩展性
               url: /sharepoint/dev/spfx/viva/overview-viva-connections
             - text: 最终用户帮助&培训

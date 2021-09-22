@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 86344a570c04ed67c8811d91ca92a59dcec6102d
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 55373830a351bc3bad40a4a492101c5ac011d8b0
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460338"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479521"
 ---
 # <a name="insider-risk-management-cases"></a>内部风险管理案例
 
-案例是内部风险管理的核心，可让你深入调查和处理由策略中定义的风险指标生成的问题。 当需要进一步操作来解决用户的合规性相关问题时，根据警报手动创建案例。 每个案例的范围都为一个用户，并且可以将该用户的多个警报添加到现有案例或新案例。 
+案例是内部风险管理的核心，可让你深入调查和处理由策略中定义的风险指标生成的问题。 当需要进一步操作来解决用户的合规性相关问题时，根据警报手动创建案例。 每个案例的范围都为一个用户，并且可以将该用户的多个警报添加到现有案例或新案例。
 
 调查案件的详细信息后，可以采取以下措施：
 
@@ -125,7 +125,7 @@ Select an alert from the queue to display the **Alert detail** page.
 1. **时间筛选器**：默认情况下，在案例确认的最近六个月警报显示在用户活动图表中。 通过选择气泡图上的 *"6* 个月 *、3* 个月"或 *"1* 个月"选项卡，可以轻松筛选图表视图。
 2. **风险提醒活动和详细信息**：风险活动在用户活动图表中以彩色气泡显示。 为不同类别的风险创建气泡，而气泡大小与类别的风险活动数成比例。 选择气泡以显示每个风险活动的详细信息。 详细信息包括：
     - 风险活动的 **日期**。
-    - 风险 **活动类别**。 例如，*电子邮件 ()* 组织外部发送的附件，或者从 *SharePoint Online* 下载的文件 (文件) 附件。
+    - 风险 **活动类别**。 例如，*电子邮件 ()* 组织外部发送的附件，或者从 *SharePoint Online* 下载的文件 (文件) 文件。
     - 警报的 **风险分数**。 此分数是警报风险严重性级别的数字分数。
     - 与警报相关联的事件数。 还会提供指向与风险活动关联的每个文件或电子邮件的链接。
 3. 风险 **(预览**) ：风险活动按时间顺序是风险调查的一个重要方面，识别这些相关活动是评估组织的整体风险的重要部分。 与相关的警报活动通过连接线显示，以突出显示这些活动与较大的风险区域相关联。 这种活动视图可帮助调查人员逐字地"连接点"可能被视为独立或一次事件的风险活动。 选择序列中的任意气泡以显示所有关联风险活动的详细信息。 详细信息包括：
@@ -190,7 +190,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 ## <a name="case-actions"></a>案例操作
 
-根据案例的严重性、用户的风险历史记录和组织的风险准则，风险分析师和研究人员可以通过多种方法之一对案例采取措施。 在某些情况下，您可能需要将案例上报给用户或数据调查，以与组织的其他活动协作，并深入了解风险活动。 内部风险管理与其他合规性Microsoft 365紧密集成，以帮助你进行端到端解决方案管理。
+风险调查人员可以通过多种方法之一对案例采取措施，具体取决于该案例的严重性、用户的风险历史记录和组织的风险准则。 在某些情况下，您可能需要将案例上报给用户或数据调查，以与组织的其他活动协作，并深入了解风险活动。 内部风险管理与其他合规性Microsoft 365紧密集成，以帮助你进行端到端解决方案管理。
 
 ### <a name="send-email-notice"></a>发送电子邮件通知
 
@@ -229,7 +229,7 @@ Select an alert from the queue to display the **Alert detail** page.
 - 在 ServiceNow 中为内部风险管理案例创建记录
 - 将用户添加到内部风险策略时通知用户
 
-若要为内部风险管理案例Power Automate、管理或创建流程：
+若要运行、管理或创建Power Automate内部风险管理案例的流：
 
 1. 在 **"案例** 操作"工具栏上选择"自动"。 
 2. 选择要运行的Power Automate流，然后选择"运行 **流"。** 
@@ -237,11 +237,11 @@ Select an alert from the queue to display the **Alert detail** page.
 
 若要了解有关内部Power Automate流的信息，请参阅内部[风险管理设置入门](insider-risk-management-settings.md#power-automate-flows-preview)。
 
-### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>查看或Microsoft Teams案例的团队
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>查看或创建Microsoft Teams案例团队
 
-在Microsoft Teams启用内部风险管理集成后，Microsoft Teams每次确认警报并创建案例时，都会自动创建一个团队。 风险研究人员和分析员可以快速打开Microsoft Teams，通过在"案例操作"工具栏上选择"查看Microsoft Teams团队，直接导航 **到** 团队查看案例。
+在Microsoft Teams启用内部风险管理集成后，Microsoft Teams每次确认警报并创建案例时，都会自动创建一个团队。 风险研究人员和分析员可以快速打开Microsoft Teams并在案例操作工具栏上选择"查看Microsoft Teams团队，直接导航 **到** 团队了解案例。
 
-对于在启用 Microsoft Team 集成之前打开的事例，风险研究人员和分析员可以通过在事例操作工具栏上选择"创建Microsoft Teams团队"，为事例创建新的 Microsoft Teams 团队。 
+对于在启用 Microsoft Team 集成之前打开的事例，风险研究人员和分析师可以通过在事例操作工具栏上选择"创建Microsoft Teams团队"，为事例创建新的 Microsoft Teams 团队。 
 
 解决案例后，关联的 Microsoft 团队将自动存档 (隐藏，并打开为只读) 。
 
@@ -249,7 +249,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 ### <a name="resolve-the-case"></a>解决案例
 
-风险分析师和调查人员完成审阅和调查后，可以解决一个案例，以对当前包含在该案例内的所有警报采取行动。 解决案例会添加解决方案分类，将案例状态更改为"已关闭"，解决方案操作原因将自动添加到"案例笔记"仪表板上的案例 **注释队列中。** 案例将解决为：
+风险分析师和调查人员完成审阅和调查后，可以解决一个案例，以对当前包含在该案例内的所有警报采取行动。 解决案例会添加解决方案分类，将案例状态更改为"已关闭"，解决方案操作原因会自动添加到"案例笔记"仪表板上的案例 **注释队列中。** 案例将解决为：
 
 - **恶意**：策略匹配警报评估为低风险、非严重或误报的情况的分类。
 - **已确认** 的策略违反：对策略匹配警报评估为有风险、严重或恶意目的结果的情况的分类。

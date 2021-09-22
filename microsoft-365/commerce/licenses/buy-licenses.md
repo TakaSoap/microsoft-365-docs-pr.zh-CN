@@ -23,11 +23,11 @@ search.appverid: MET150
 description: 使用以下步骤购买更多许可证或减少企业版订阅Microsoft 365许可证数量。
 ms.date: 09/16/2021
 ms.openlocfilehash: 77c1547b279cc5367ef23106e15dc2eee0c5a471
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477704"
+ms.locfileid: "59480744"
 ---
 # <a name="buy-or-remove-licenses"></a>购买或删除许可证
 

@@ -20,12 +20,12 @@ ms.custom:
 - commerce_purchase
 description: 了解购买 Microsoft 产品或服务时注册号码和审查不足的通知。
 ms.date: 03/17/2021
-ms.openlocfilehash: a03815e8c5da48c52ef43d11d613ade86657d368b908fff9ecbce5e30291e301
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ca0ddb0111b4a95a46bc64bdd63c99f756699de9
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872991"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481008"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>关于注册号码和审核通知
 
@@ -71,28 +71,28 @@ ms.locfileid: "53872991"
 
 | 国家或地区 | 详细信息 |
 |:--|:--|
-| **亚美尼亚** | INN – 税务标识号<br>VAT 号码 – 也称为 VAT 注册号码。 这是标识注册 VAT 的业务 (或) 税务实体的应纳税人员的唯一编号。<br>公共服务号码 |
-| **Azerbaijan（阿塞拜疆）**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Azerbaijan-TIN.pdf) – 税务标识号<br>INN – 税务标识号 |
+| **亚美尼亚** | INN – 税务标识号 <br /> VAT 号码 – 也称为 VAT 注册号码。 这是标识注册 VAT 的业务 (或) 税务实体的应纳税人员的唯一编号。 <br /> 公共服务号码 |
+| **Azerbaijan（阿塞拜疆）**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Azerbaijan-TIN.pdf) – 税务标识号 <br /> INN – 税务标识号 |
 | **Belarus（白俄罗斯）**  | UNP – 这是组织的九位数 (数字、包含区域标识符的个人) 的字母数字、每个地区的串行数字和一个检查数字。 |
 |**巴西** | [CNPJ](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Brazil-TIN.pdf) – (Cadastro Nacional da Pessoa 在一起，或法律实体国家) 。 这是由巴西联邦收入部颁发给巴西公司的标识号  |
 | **中国** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/China-TIN.pdf) – 税务标识号 |
 | **匈牙利**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Hungary-TIN.pdf) – 税务标识号 |
-| **India（印度）** | 税务 ID<br>[PAN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/India-TIN.pdf) – (国家/地区) PAN 印度参与度意味着有一个组织正在印度多个位置运营。 |
+| **India（印度）** | 税务 ID <br /> [PAN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/India-TIN.pdf) – (国家/地区) PAN 印度参与度意味着有一个组织正在印度多个位置运营。 |
 | **Iraq（伊拉克）** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税务标识号 |
-| **Kazakhstan（哈萨克斯坦）**  | BIN – 银行标识号<br>IIN – 颁发者标识号 |
+| **Kazakhstan（哈萨克斯坦）**  | BIN – 银行标识号 <br /> IIN – 颁发者标识号 |
 | **吉尔吉斯斯坦**  | INN – 税务标识号 |
-| **摩尔多瓦**  | IDNO – 分配给法律实体的唯一状态标识 (也称为。 会计代码) 。<br>IDNP - 出生日期个人 ("Numarul de Identificare")  |
+| **摩尔多瓦**  | IDNO – 分配给法律实体的唯一状态标识 (也称为。 会计代码) 。 <br /> IDNP - 出生日期个人 ("Numarul de Identificare")  |
 | **缅甸** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税务标识号 |
-| **波兰**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – 税务标识号<br>[PESEL](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – 波兰语 (波兰语 Powszechny Elektroniczny 系统 Ewidencji Ludnonyci（用于注册总体身份证的通用电子系统）)  |
-| **Russia（俄罗斯）**  | [INN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) – 俄语"Individualiy Nomer Nalogoplatelshika" (的税务标识号)  |
+| **波兰**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – 税务标识号 <br /> [PESEL](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – 波兰语 (波兰 Powszechny Elektroniczny System Ewidencji Ludnonyci，通用电子系统，用于注册总体)  |
+| **Russia（俄罗斯）**  | [INN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) – 俄语"individualiy Nomer Nalogoplatelshika" (的税务标识号)  |
 | **沙特阿拉伯** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Saudi-Arabia-TIN.pdf) – 税务标识号 |
-| **南非** | TRN - 税务参考号 |
+| **南非** | [TRN](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/South-Africa-TIN.pdf) - 纳税参考号 |
 | **南苏丹** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税务标识号 |
-| **Tajikistan（塔吉克斯坦）**  | INN – 税务标识号<br>EIN – 雇主标识号<br>KPP – 这是反映组织注册原因的代码。 |
+| **Tajikistan（塔吉克斯坦）**  | INN – 税务标识号 <br /> EIN – 雇主标识号 <br /> KPP – 这是反映组织注册原因的代码。 |
 | **泰国** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税务标识号 |
-| **土耳其** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Turkey-TIN.pdf) – 税务标识号<br>NIN |
-| **乌克兰**  | EGRPOU<br>EDRPOU – 本地 ID |
-| **阿拉伯联合酋长国** | 税务 ID<br>[VAT 号码](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/UAE-TIN.pdf) - 也称为 VAT 注册号码。 这是标识注册 VAT 的业务 (或) 税务实体的应纳税人员的唯一编号。 |
+| **土耳其** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Turkey-TIN.pdf) – 税务标识号 <br /> NIN |
+| **乌克兰**  | EGRPOU <br /> EDRPOU – 本地 ID |
+| **阿拉伯联合酋长国** | 税务 ID <br /> [VAT 号码](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/UAE-TIN.pdf) - 也称为 VAT 注册号码。 这是标识注册 VAT 的业务 (或) 税务实体的应纳税人员的唯一编号。 |
 | **美国** | [EIN](https://irs.ein-forms-gov.com/?keyword=employer%20identification%20number&source=Google&network=o&device=c&devicemodel=&mobile=&adposition%5d&targetid=kwd-81501461534755:loc-190&msclkid=458d3159f6051392f5286e8e75ed79ce) – 雇主标识号 |
 | **乌兹别克斯坦**  | INN – 税务标识号 |
 | **Vietnam（越南）** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税务标识号 |

@@ -17,17 +17,17 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用新闻服务为组织启用自定义新闻源，为用户提供行业最新新闻标题和来自组织的信息。
-ms.openlocfilehash: e3c2e0526074571ffbe976c98fe57069adcdb9ab
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 0292668ad37020f9ca2049d7c011465bd7e28479
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400578"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479545"
 ---
 # <a name="manage-industry-news"></a>管理行业新闻
 
 > [!NOTE] 
-> 必应目前&英文市场提供行业更新的最新动态。
+> 必应行业&更新目前仅适用于 en-US。
 
 若要为用户提供有关你的行业和组织中信息的新闻标题，请使用新闻服务为组织启用自定义新闻源。 还可以启用每日行业更新电子邮件，并管理新选项卡必应和Microsoft Edge的设置。
 
@@ -35,7 +35,7 @@ ms.locfileid: "59400578"
 
 可以选择向用户发送每日行业更新电子邮件，并包含标题和完整文章的链接。 用户可以通过以下其他主题自定义其电子邮件更新：选择更新的交付时间、支付防火墙背后的文章除外，以及选择要查看的文章数量。
 
-转到主页的登录必应在组织的个性化信息下看到你行业的新闻源。
+转到主页的登录必应在组织的个性化信息下看到你的行业新闻源。
 
 :::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="包含来自 Web 的行业新闻的图像视频的屏幕截图。":::
 
@@ -47,7 +47,7 @@ ms.locfileid: "59400578"
 
 ## <a name="news-settings"></a>新闻设置
 
-作为管理员，你可以控制组织的新闻源设置，包括所选行业和 必应 主页、Microsoft Edge 新选项卡页 (从 Edge 87) 的发布开始，以及电子邮件体验。 
+作为管理员，你可以控制组织的新闻源设置，包括所选行业和 必应 主页、Microsoft Edge 新选项卡页 (从 Edge 87) 发布开始，以及电子邮件体验。 
 
 1. In the Microsoft 365 管理中心， go to **设置**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 
@@ -57,9 +57,9 @@ ms.locfileid: "59400578"
 
 1. 在" **主题** "字段中，输入您希望查看有关新闻文章的主题。 用户不能更改这些主题。
 
-1. 您可以阻止在"排除内容"字段中包含 **关键字** 的文章。 例如，为了避免包含关键字"bake"的文章显示在新闻源中，在"排除内容"字段中添加关键字"bake"。  避免将常规术语 () 、it 等术语;他们可以阻止相关内容显示在企业新闻源中。
+1. 您可以阻止在"排除内容"字段中包含 **关键字** 的文章。 例如，为了避免包含关键字"bake"的文章显示在新闻源中，在"排除内容"字段中添加关键字"bake"。  避免包括有关 (等的一般) ;他们可以阻止相关内容显示在企业新闻源中。
 
-1. 选择“**保存**”。 可能需要 24 小时才能显示更改。
+1. 选择 **“保存”**。 可能需要 24 小时才能显示更改。
 
 ## <a name="industry-updates-in-email"></a>电子邮件中的行业更新
 
@@ -79,7 +79,7 @@ ms.locfileid: "59400578"
 
 1. In the Microsoft 365 管理中心， go to **设置**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 
-1. 在"**新闻"** 面板中，单击 **"必应主页**"选项卡，然后选择"在主页 **必应包含"。**
+1. 在"**新闻"** 面板中，单击 **"必应主页**"选项卡，然后选择"主页"必应 **包含"。**
 
     行业新闻显示在 必应.com 上的组织的个性化信息下。
 
@@ -87,13 +87,13 @@ ms.locfileid: "59400578"
 
 1. In the Microsoft 365 管理中心， go to **设置**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 
-1. 在 **"新闻**"面板中，单击"必应主页"选项卡，可以选择是为用户提供热门新闻还是行业新闻。 
+1. 在"**新闻**"面板中，单击"必应主页"选项卡，可以选择是为用户提供热门新闻还是行业新闻。 
 
 :::image type="content" source="../../media/enable-news-for-edu.png" alt-text="行业新闻和热门新闻切换":::
 
 ## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge新选项卡页
 
-当用户使用有效的工作或学校帐户Microsoft Edge (87 或) 版本 87 或更高版本登录时，他们可以看到专为组织定制的新闻。
+当用户使用有效的工作或学校帐户Microsoft Edge (版本 87 或更高版本) 时，他们可以看到为组织定制的新闻。
 
 1. In the Microsoft 365 管理中心， go to **设置**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 2. 在"**新闻"** 面板中，Microsoft Edge **新选项卡页"。**
