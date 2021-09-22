@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 65926c72dfd61cc7a610f547d6c9a9d5fa04451e
-ms.sourcegitcommit: 3ec80aba8d5d9acf42ed9b9bf8817c2ec4ab6764
+ms.openlocfilehash: 43a2b3b3e211215e8180308360a546a8454d5bc2
+ms.sourcegitcommit: 5eecb0ccc70bf75779411d80147ed5588132b103
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "59456289"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59461604"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -72,8 +72,8 @@ ms.locfileid: "59456289"
     特定于 Exchange 的自动标记：
     
     - 与 Office 应用的手动标记或自动标记不同，系统还会根据你在自动标记策略中指定的条件来扫描 PDF 附件和 Office 附件。如果存在匹配项，则标记电子邮件，但不标记附件。
-        - 对于 PDF 文件，如果标签应用加密，则当租户[启用 PDF 附件](ome-faq.yml#are-pdf-file-attachments-supported-)时，这些文件将被加密。
-        - 支持 Word (.docx)、PowerPoint (.pptx) 和 Excel (.xlsx) 的 Office 文件。 如果标签应用加密，则这些文件会进行加密。
+        - 对于 PDF 文件，如果标签应用了加密，则当租户[启用 PDF 附件](ome-faq.yml#are-pdf-file-attachments-supported-) 时，将通过使用 [Office 365 邮件加密 (OME)](ome.md) 对这些文件进行加密。
+        - 对于这些 Office 文件，支持 Word、PowerPoint 和 Excel。 如果标签应用了加密，则通过使用 [Office 365 邮件加密 (OME)](ome.md) 进行加密。
     - 如果你拥有已应用 IRM 加密的 Exchange 邮件流规则或数据丢失防护 (DLP) 策略：当内容由这些规则或策略和自动标记策略标识时，将应用该标签。 如果该标签已应用加密，则将忽略 Exchange 邮件流规则或 DLP 策略中的 IRM 设置。 但是，如果该标签未应用加密，则除了标签之外，还会应用邮件流规则或 DLP 策略中的 IRM 设置。
     - 如果存在匹配项，则具有 IRM 加密但没有标签的电子邮件将通过自动标记替换为具有加密设置的标签。
     - 与自动标记条件匹配时，将标记传入电子邮件：
@@ -100,7 +100,7 @@ ms.locfileid: "59456289"
 |覆盖在未带标签的情况下应用的 IRM 加密|如果用户具有“导出”的最低使用权限，则为“是” |是（仅限电子邮件） |
 |标记传入电子邮件|否 |是|
 
-\*自动标记当前在所有区域中均不可用。 如果你的租户不支持此功能，则合规中心中的“**自动标记**”选项卡将不可见。
+\* 由于一个后端 Azure 依赖项，自动标记当前并非在所有区域都可用。 如果你的租户无法支持此功能，则合规中心中将不显示“**自动标记**”选项卡。 有关详细信息，请参阅 [Azure 依赖项可用性（按国家/地区）](/troubleshoot/azure/general/dependency-availability-by-country)。
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>在多个条件适用于多个标签时如何评估这些条件
 
@@ -259,7 +259,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
     ![“自动标记”选项卡。](../media/auto-labeling-tab.png)
 
     > [!NOTE]
-    > 如果看不到“**自动标记**”选项卡，则此功能当前在你的区域中不可用。
+    > 如果看不到“**自动标记**”选项卡，则此功能当前由于一个后端 Azure 依赖项而在你所在的区域中不可用。 有关详细信息，请参阅 [Azure 依赖项可用性（按国家/地区）](/troubleshoot/azure/general/dependency-availability-by-country)。
 
 3. 选择“**+ 创建自动标记策略**”。 这将启动“新建策略配置”：
 
