@@ -1,7 +1,6 @@
 ---
-title: 将设备添加到 Microsoft Defender for Endpoint 设备后运行检测测试
-description: 在最近添加到 Microsoft Defender for Endpoint 服务的设备上运行检测脚本，以验证它是否正确载入
-keywords: 检测测试， 检测， powershell， 脚本， 验证， 载入， 适用于终结点载入的 microsoft defender， 客户端， 服务器， 测试
+title: 在设备上运行检测测试，以验证设备已正确载入到 Microsoft Defender for Endpoint
+description: 在最近载入到 Microsoft Defender for Endpoint 服务的设备上运行检测测试脚本，以验证是否正确添加了该脚本。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c1772cc67c145b59870735910e09ae05e52b899
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 63c75ccb3ce8d3063235763986d5b9e85969ef45
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400794"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477631"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>在新载入的 Microsoft Defender 终结点设备上运行检测测试
 
@@ -41,11 +40,11 @@ ms.locfileid: "59400794"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-载入设备是向 Microsoft Defender for Endpoint 服务添加设备的方法。 它允许设备向服务报告信号。
+当你将设备添加到 Microsoft Defender for Endpoint 服务以用于管理时，这也称为载入设备。 载入允许设备向服务报告有关其运行状况的信号。
 
-验证设备是否已成功添加到服务是整个部署过程中的重要步骤。
+确保或验证是否已将设备成功添加到服务是整个部署过程中的关键步骤。 它可确保管理所有预期的设备。 
 
-## <a name="verify-onboarding-using-a-detection-test"></a>使用检测测试验证载入
+## <a name="verify-microsoft-defender-for-endpoint-onboarding-of-a-device-using-a-powershell-detection-test"></a>使用 PowerShell 检测测试验证设备的 Microsoft Defender 终结点载入
 
 在新载入的设备上运行以下 PowerShell 脚本，验证它是否正确报告给 Defender for Endpoint 服务。
 
@@ -64,7 +63,7 @@ ms.locfileid: "59400794"
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-命令提示符窗口将自动关闭。 如果成功，检测测试将标记为已完成，并且大约 10 分钟后，已载入设备的门户中将显示新警报。
+命令提示符窗口将自动关闭。 如果成功，检测测试将标记为已完成，在大约 10 分钟内，新警报将显示在已载入设备的门户中。
 
 ## <a name="related-topics"></a>相关主题
 

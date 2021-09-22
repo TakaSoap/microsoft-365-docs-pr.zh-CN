@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jmueller
+ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在需要新功能时将用户移动到其他订阅。
-ms.openlocfilehash: 95d3a4d8e32fb7e0e56e7318f507a911adbc59d9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 436df4d563dea3717e463dab71c3a8b7e465dd70
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200754"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477547"
 ---
 # <a name="move-users-to-different-subscriptions"></a>将用户移动到不同的订阅
 
@@ -38,6 +39,9 @@ ms.locfileid: "59200754"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
 当用户更改角色时，他们可能需要其当前订阅中Microsoft 365 商业高级版的功能。 发生这种情况时，你可以添加包含这些功能的新订阅，并将许可证分配给需要它们的用户。
+
+> [!NOTE]
+> 对于一些订阅，只能在购买或续订订阅后的有限时段取消。 如果取消时段已过，请关闭定期计费以在订阅期限结束时取消订阅。
 
 ## <a name="try-it"></a>试一试！
 
@@ -60,4 +64,4 @@ ms.locfileid: "59200754"
 
 1. In the Microsoft 365 管理中心， select **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a>.
 1. 选择要更改的订阅，然后选择"**添加/删除许可证"。**
-1. 使用向下箭头减少此订阅的许可证数量，然后选择提交 **更改**。 现在，你的用户的许可证数量正确。
+1. 使用向下箭头减少此订阅的许可证数，然后选择提交 **更改**。 现在，你的用户的许可证数量正确。

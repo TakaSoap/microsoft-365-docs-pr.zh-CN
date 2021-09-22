@@ -1,7 +1,7 @@
 ---
-title: 第一个事件响应简介
-description: 响应事件的第一个事件的基本Microsoft 365 Defender。
-keywords: 事件， 警报， 调查， 关联， 攻击， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365， 事件响应， 网络攻击
+title: 响应第一个事件
+description: 响应事件的第一个事件的Microsoft 365 Defender。
+keywords: 事件， 警报， 调查， 关联， 攻击， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365， 事件响应， 网络攻击， 自我学习， 提升， 提升， 载入， 事件响应器
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4176b718105643b59f23024c1a70cd8fe220eea9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f13569c8995433e0d629a3ce060d6c855f78700a
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195982"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477595"
 ---
-# <a name="introduction-to-responding-to-your-first-incident"></a>第一个事件响应简介
+# <a name="responding-to-your-first-incident"></a>响应第一个事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,15 +38,15 @@ ms.locfileid: "59195982"
 
 组织的事件响应策略决定了其处理破坏性不断增加的安全事件和混乱的能力。 采取预防性措施很重要，但快速采取行动以控制、抑制和从检测到的事件中恢复的能力可以最大限度地减少损失和业务损失。
 
-此事件响应演练演示了作为安全运营团队的一部分，您如何在安全运营团队内执行大部分关键事件Microsoft 365 Defender。 步骤如下：
+此事件响应演练演示如何作为安全运营团队的一部分，在安全运营团队内执行大部分关键Microsoft 365 Defender。 步骤如下：
 
 - 准备安全状态
 - 对于每个事件：
   - 步骤 1：会审和分析
-  - 步骤 2：修正 (、抑制和恢复) 
+  - 步骤 2： (控制、抑制和恢复) 
   - 步骤 3：事后评审
 
-国家标准和技术协会 NIST (NIST) 安全事件定义为"实际或潜在危及信息系统机密性、完整性或可用性的事件;或系统处理、存储或传输的信息;或构成违反安全策略、安全程序或可接受使用策略的违反或即将发生的威胁。"
+美国国家标准和技术协会 NIST () 将安全事件定义为"实际或可能危及信息系统的机密性、完整性或可用性的事件;或系统处理、存储或传输的信息;或构成违反安全策略、安全程序或可接受使用策略的违反或即将发生的威胁。"
 
 事件Microsoft 365 Defender是分析和事件响应的逻辑起点。 分析和修正事件通常包括安全运营团队大部分任务。
 
@@ -54,7 +54,7 @@ ms.locfileid: "59195982"
 
 [![准备你的组织和Microsoft 365租户。](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
 
-请确保你的组织和Microsoft 365[已做好事件处理的准备](first-incident-prepare.md)。
+确保你的组织和租户Microsoft 365[事件处理做好准备](first-incident-prepare.md)。
 
 ## <a name="see-also"></a>另请参阅
 
