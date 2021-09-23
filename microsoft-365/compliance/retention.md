@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
 ms.openlocfilehash: 3cb6548cee9b14de661faed2d4a2aa2f45de3b83
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477716"
+ms.locfileid: "59479857"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
