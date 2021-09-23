@@ -24,17 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: b6aaf63f61919c520c77a09bf3607174757d4c2b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a9b96497ab88fb6872a54468278fffb74c8fdd7b
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169800"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477583"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
 > [!NOTE]
-> 如果你的组织使用的是混合 Exchange 环境，则你应使用本地 Exchange 管理中心 (EAC) 创建和管理共享邮箱。 请参阅[在 Exchange 管理中心创建共享邮箱](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)<br><br>
+> 如果你的组织使用的是混合 Exchange 环境，则你应使用本地 Exchange 管理中心 (EAC) 创建和管理共享邮箱。 请参阅[在 Exchange 管理中心创建共享邮箱](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
+>
 > 如果不确定是应为 Outlook 创建共享邮箱还是 Microsoft 365 组，可参阅[比较组](../create-groups/compare-groups.md)获取一些指导。 请注意，暂无法将共享邮箱迁移到 Microsoft 365 组中。 如果这不是你想要的结果，请通过[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)告诉我们。
 
 创建共享邮箱很容易，通过共享邮箱，多位人员可以从一个公用电子邮件地址（如 info@contoso.com）监控和发送电子邮件。当群组中的某个人员答复发送到共享邮箱的邮件时，系统显示电子邮件来自共享邮箱，而不是单个用户。
@@ -49,39 +50,39 @@ ms.locfileid: "59169800"
 
 ::: moniker range="o365-worldwide"
 
-2. 在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。
+2. 在管理中心，转到 **Teams 和组**\><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>页。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-2. 在 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)，转到“**组**”\>“**共享邮箱**”页面。
+2. 在 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)中，转到 **Teams 和组**\>**共享邮箱** 页。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-2. 在 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)，转到“**组**”\>“**共享邮箱**”页面。
+2. 在 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)中，转到 **Teams 和组**\>**共享邮箱** 页。
 
 ::: moniker-end
     
-3. 在“**共享邮箱**”页面上，选择“**+添加邮箱**”。 输入共享邮箱的名称。 然后向导会选择电子邮件地址，但你也可以编辑电子邮件地址。
+3. 在 **共享邮箱** 页上，选择 **+ 添加共享邮箱**。 输入共享邮箱的名称。 选择电子邮件地址，但你可以根据需要对其进行编辑。
     
     ![为共享邮箱命名。](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
-4. 选择“**添加**”。 可能需要几分钟时间，才可以添加成员。
+4. 选择“**保存更改**”。 可能需要几分钟时间，才可以添加成员。
 
 5. 在“**后续步骤**”下，选择“**将成员添加到此邮箱**”。 成员能够查看此共享邮箱收到的邮件及发出的答复。
 
    ![选择“添加成员”。](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
-6. 选择“**+添加成员**”按钮。 在希望其使用共享邮箱的人员旁添加一个复选标记，然后选择“**保存**”。
+6. 选择“**+添加成员**”按钮。 将复选标记放在要使用此共享邮箱的人员旁边，然后选择 **保存**。
 
    ![向共享邮箱分配成员。](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. 选择“**关闭**”。
 
-你有一个共享邮箱，而且它包含一个共享日历。 现转到下一步：阻止登录共享邮箱帐户。
+你有一个共享邮箱，而且它包含一个共享日历。 转到下一步： [阻止共享邮箱帐户登录](#block-sign-in-for-the-shared-mailbox-account)。
 
 ## <a name="which-permissions-should-you-use"></a>您应使用哪些权限？
 
@@ -121,7 +122,7 @@ ms.locfileid: "59169800"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -130,13 +131,14 @@ ms.locfileid: "59169800"
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 ::: moniker-end
 
-1. 在用户帐户列表中，找到共享邮箱的帐户（例如，将筛选器更改为“**未经授权的用户**”）。
+2. 在用户帐户列表中，找到共享邮箱的帐户（例如，将筛选器更改为“**未经授权的用户**”）。
 
-1. 选择该用户以打开其属性窗格，然后选择“**阻止此用户**”图标 ![“阻止此用户”图标的屏幕截图。](../../media/block-user-icon.png)。
+3. 选择该用户以打开其属性窗格，然后选择“**阻止此用户**”图标 ![“阻止此用户”图标的屏幕截图。](../../media/block-user-icon.png)。
 
-   **注意**：如果已阻止该帐户，则将在顶部显示“**已阻止登录**”，并且图标将显示“**取消阻止此用户**”。
+   > [!NOTE]
+   > 如果帐户已被阻止， **登录被阻止** 将显示在顶部，图标将读 **取消阻止此用户**。
 
-1. 在“**阻止此用户?**”窗格中，选择“**阻止用户登录**”，然后选择“**保存更改**”。
+4. 在“**阻止此用户?**”窗格中，选择“**阻止用户登录**”，然后选择“**保存更改**”。
 
 有关如何使用 Azure AD PowerShell 阻止登录帐户（包括同时登录多个帐户）的说明，请参阅 [使用 Office 365 PowerShell 阻止用户帐户](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md)。
 

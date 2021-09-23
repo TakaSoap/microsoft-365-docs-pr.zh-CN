@@ -15,16 +15,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
+- admindeeplinkTEAMS
 localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 了解在 Teams 中设置团队与来宾进行任务、对话及文档协作所必需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: 142f8d9adf9423d1c9a2d8e59405fd4f39dfb751
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e0d787691ee7ec580efcbd61d6bab7bd1052e54c
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197181"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477607"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -72,7 +73,7 @@ Teams 具有用于来宾访问的主 “开/关” 开关，以及可用于控�
 1. 访问 [https://admin.microsoft.com](https://admin.microsoft.com) 登录到 Microsoft 365 管理中心。
 2. 在左侧导航窗格中，单击 **“显示所有”**。
 3. 在 **“管理中心”** 下，单击 **“Teams”**。
-4. 在 Teams 管理中心左侧导航窗格中，展开 **“组织范围设置”**，然后单击 **“来宾访问”**。
+4. 在 Teams 管理中心，在左侧导航窗格中，选择 **组织范围的设置** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**来宾访问**</a>。
 5. 确保 **在 Teams 中允许来宾访问** 设置为“**开**”。
 6. 对其他来宾设置进行任何所需的更改，然后单击“**保存**”。
 

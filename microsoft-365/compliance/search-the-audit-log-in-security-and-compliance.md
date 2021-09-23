@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: a77af4e72c5eaa5d66f120f05e91913c292051ab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: abfd937b98ff863876060fcf6bbbe38c6b64f23f
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169609"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477692"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -409,9 +409,22 @@ ms.locfileid: "59169609"
         [信息障碍活动](#information-barriers-activities)
     :::column-end:::
     :::column:::
-        [Exchange 管理员活动](#exchange-admin-audit-log)
+        [处置评审活动](#disposition-review-activities)
     :::column-end:::
 :::row-end:::
+
+:::row:::
+    :::column:::
+        [Exchange 管理员活动](#exchange-admin-audit-log)
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+:::row-end:::
+
 
 ### <a name="file-and-page-activities"></a>文件和页面活动
 
@@ -984,6 +997,8 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 ### <a name="retention-policy-and-retention-label-activities"></a>保留策略和保留标签活动
 
+下表描述了创建、重新配置或删除[保留策略和保留标签](retention.md)的配置活动。
+
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
 | 保留策略的配置设置 |NewRetentionComplianceRule |管理员已配置新保留策略的保留设置。 保留设置包括项目保留时长和保留期到期时对项目执行的操作（例如，删除项目、保留项目，或保留然后将其删除）。 此活动还对应于运行 [RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) cmdlet。|
@@ -1031,6 +1046,18 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 | 向站点添加段 | SegmentsAdded | SharePoint、全局管理员或站点所有者向站点添加一个或多个信息障碍段。 |
 | 已更改站点的段 | SegmentsChanged | SharePoint 或全局管理员更改站点的一个或多个信息障碍段。 |
 | 已从站点中删除段 | SegmentsRemoved | SharePoint 或全局管理员从站点中删除一个或多个信息障碍段。 |
+||||
+
+### <a name="disposition-review-activities"></a>处置审阅活动
+
+下表列出了处置审阅者在项目达到其配置的保留期结束时所执行的活动。 有关详细信息，请参阅[查看和处置内容](disposition.md#viewing-and-disposing-of-content)。
+
+|**友好名称**|**操作**|**说明**|
+|:-----|:-----|:-----|
+|已批准的处置|ApproveDisposal|处置审阅者已批准处置项目，以将其移动到下一个处置阶段。 如果项目处于处置评审的唯一或最后一个阶段，处置审批会将该项目标记为符合永久删除的条件。|
+|延长保留期|ExtendRetentiond|处置审阅者延长了项目的保留期。|
+|重新标记的项目|RelabelItem|处置审阅者重新标记了保留标签。|
+|添加了审阅者|AddReviewer|处置审阅者向当前处置评审阶段添加了一个或多个其他用户。|
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理员审核日志

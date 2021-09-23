@@ -15,15 +15,16 @@ ms.collection:
 f1.keywords: NOCSH
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkTEAMS
 localization_priority: Priority
 recommendations: false
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: db7622da1094dd1abf69752c6a0c41c374e80e9f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d3db87c0c01a9bddead9b7367b6ac64a7633e107
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161633"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477614"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -90,7 +91,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 ### <a name="guest-access"></a>来宾访问
 
-**导航：**[Teams 管理中心](https://admin.teams.microsoft.com) > 组织范围的设置 > 来宾访问
+**导航：**[Teams 管理中心](https://admin.teams.microsoft.com) > **组织范围设置** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**来宾访问**</a>
 
 ![Teams 来宾访问切换的屏幕截图。](../media/teams-guest-access-toggle.png)
 
@@ -100,7 +101,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 ### <a name="guest-calling"></a>来宾呼叫
 
-**导航：**[Teams 管理中心](https://admin.teams.microsoft.com) > 组织范围的设置 > 来宾访问
+**导航：**[Teams 管理中心](https://admin.teams.microsoft.com) > **组织范围设置** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**来宾访问**</a>
 
 ![Teams 来宾呼叫选项的屏幕截图。](../media/teams-guest-calling-setting.png)
 
@@ -110,7 +111,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 ### <a name="guest-meeting"></a>来宾会议
 
-**导航：**[Teams 管理中心](https://admin.teams.microsoft.com) > 组织范围的设置 > 来宾访问
+**导航：**[Teams 管理中心](https://admin.teams.microsoft.com) > **组织范围设置** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**来宾访问**</a>
 
 ![Teams 来宾会议设置的屏幕截图。](../media/teams-guest-meeting-settings.png)
 
@@ -122,7 +123,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 ### <a name="guest-messaging"></a>来宾消息传递
 
-**导航：**[Teams 管理中心](https://admin.teams.microsoft.com) > 组织范围的设置 > 来宾访问
+**导航：**[Teams 管理中心](https://admin.teams.microsoft.com) > **组织范围设置** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**来宾访问**</a>
 
 ![Teams 来宾消息传递设置的屏幕截图。](../media/teams-guest-messaging-settings.png)
 

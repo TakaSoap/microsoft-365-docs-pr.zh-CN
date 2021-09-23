@@ -23,20 +23,22 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: 许可证分配取决于是向特定用户分配产品许可证，还是向特定产品分配用户许可证。
-ms.date: 04/26/2021
-ms.openlocfilehash: 987572ae15ffdf6d2042c6e54eba586cd39ebcb9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 48763019211f1358e09f9c712f27870bd13a4435
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169760"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477535"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 
 可在“**活动用户**”页面或“**许可证**”页面上向用户分配许可证。 所使用的方法取决于是要向特定用户分配产品许可证还是向特定产品分配用户许可证。
 
 > [!NOTE]
-> 作为管理员，你不能为组织中用户购买的自助购买订阅分配或取消分配许可证。 你可以 [接管自助购买订阅](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)，然后分配或取消分配许可证。
+> 
+> - 作为管理员，你不能为组织中用户购买的自助购买订阅分配或取消分配许可证。 你可以 [接管自助购买订阅](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)，然后分配或取消分配许可证。
+> - 对于某些订阅，只能在购买或续订订阅后的有限时间段内取消。 如果取消时段已过，请在订阅期限结束时关闭定期计费以取消订阅。
 
 [了解如何同时添加用户帐户和分配许可证](../add-users/add-users.md)。
 
@@ -60,21 +62,24 @@ ms.locfileid: "59169760"
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
 
-
 2. 选择产品。
+
 3. 在产品详细信息页面上，选择“**分配许可证**”。
+
 4. 在“**向用户分配许可证**”窗格中，开始键入名称，然后从结果中将其选中，将其添加到列表中。 一次最多可添加 20 名用户。
+
 4. 选择“**打开或关闭应用和服务**”，向特定项目分配访问权限或删除其访问权限。
+
 6. 完成后，选择“分配”，然后选择“关闭”。
 
 如果出现冲突，则将显示一则消息，指出问题是什么以及如何修复它。 例如，如果选择包含冲突服务的许可证，错误消息将指示审阅随每个许可证包含的服务并重试。
@@ -89,19 +94,20 @@ ms.locfileid: "59169760"
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
 
-
 2. 在“**许可证**”页面上，选择特定用户所对应的行。
+
 3. 在右侧窗格中，选择或取消选择要授予或取消访问权限的应用和服务。
+
 4. 完成后，选择“**保存**”，然后选择“**关闭**”。
 
 ## <a name="use-the-active-users-page-to-assign-licenses"></a>使用“活动用户”页面分配许可证
@@ -118,25 +124,27 @@ ms.locfileid: "59169760"
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
-
 2. 选中要向其分配许可证的用户姓名旁边的圆圈。
+
 3. 在顶部，选择“**管理产品许可证**”。
+
 4. 在“**管理产品许可证**”窗格中，选择“**分配更多：保留现有许可证并分配更多**”\>“**下一步**”。
+
 5. 在“**许可证**”下面，选择希望所选用户拥有该许可证的框。\
     默认情况下，与这些许可证关联的所有服务都会自动分配给用户。可以限制哪些服务可供用户使用。请取消选中不希望用户拥有的服务的框。
+
 6. 在窗格底部，选择“**保存更改**”。  
     如果没有足够的许可证供所有人使用，则可能需要购买其他许可证。
-
 
 > [!NOTE]
 > 如果要为大量用户分配许可证，请使用"按 [Active Directory 中的组成员身份为用户分配许可证](/azure/active-directory/enterprise-users/licensing-groups-assign)
@@ -151,19 +159,20 @@ ms.locfileid: "59169760"
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
-
 2. 选择要向其分配许可证的用户所对应的行。
+
 3. 在右侧窗格，选择“**许可证和应用**”。
+
 4. 展开“**许可证**”部分，选择要分配的许可证的框，然后选择“**保存更改**”。
 
 ## <a name="assign-a-license-to-a-guest-user"></a>向来宾用户分配许可证
@@ -173,16 +182,26 @@ ms.locfileid: "59169760"
 > [!IMPORTANT]
 > 必须是全局管理员才能执行这些步骤。
 
-1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory 管理中心</a>
+1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory 管理中心</a>。
+
 2. 在导航窗格中，选择“**用户**”。
+
 3. 在“**用户 | 所有用户（预览）**”页面上，选择“**添加筛选器**”。
+
 4. 在“**选择字段**”菜单中，选择“**用户类型**”，然后选择“**应用**”。
+
 5. 在下一个菜单中，选择“**来宾**”。
+
 6. 在结果列表中，选择需要许可证的用户。
+
 7. 在“**管理**”下，选择“**许可证**”。
+
 8. 选择“**分配**”。
+
 9. 在“**更新许可证分配**”页面上，选择要为其分配许可证的产品。
+
 10. 在右侧，清除不希望来宾用户拥有访问权限的任何服务所对应的复选框。
+
 11. 选择“**保存**”。
 
 ## <a name="next-steps"></a>后续步骤
