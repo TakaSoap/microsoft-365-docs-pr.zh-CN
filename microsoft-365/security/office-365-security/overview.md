@@ -1,5 +1,5 @@
 ---
-title: Office 365安全性，包括 Microsoft Defender for Office 365 和 Exchange Online Protection
+title: Office 365安全，包括 Microsoft Defender for Office 365 和 Exchange Online Protection
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性, 从 EOP 到 Defender for Office 365 计划 1 和 2, 标准与严格安全配置等。 了解自己拥有的财产以及如何保护财产。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b9db76654e19309816b29e5cfe607c064b8d364
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cb20146625b0e6d42394e82c6cdd70595f18ba13
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171528"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483239"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Microsoft Defender for Office 365安全概述
 
@@ -29,12 +29,12 @@ ms.locfileid: "59171528"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
-本文将向你介绍新的 Microsoft Defender for Office 365云中的安全属性。 无论你是安全运营中心的一员，还是该领域的新手，还是想要复习一下，让我们开始吧。
+本文将向你介绍新的 Microsoft Defender for Office 365 云中的安全属性。 无论你是安全运营中心的一员，还是该领域的新手，还是想要复习一下，让我们开始吧。
 
 > [!CAUTION]
 > 如果你使用的是 **Outlook.com**、**Microsoft 365 家庭版** 或 **Microsoft 365 个人版**，并且需要 *安全链接* 或 *安全附件* 信息，***单击此链接***：[适用于 Microsoft 365 订阅者的高级 Outlook.com 安全机制](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-## <a name="what-is-defender-for-office-365-security"></a>什么是 Defender for Office 365 安全
+## <a name="what-is-defender-for-office-365-security"></a>什么是安全Office 365 Defender
 
 每一 Office 365 订阅都具有安全功能。 目标和可以采取的行动取决于这些不同订阅的重点。 在 Office 365 安全中，三种主要的安全服务（或产品）与你的订阅类型相关联：
 
@@ -85,7 +85,7 @@ Office 365 安全性的核心是 EOP 保护。 Microsoft Defender for Office 365
 
 |阻止/检测|调查|响应|
 |---|---|---|
-|技术包括：<ul><li>垃圾邮件</li><li>网络钓鱼</li><li>恶意软件</li><li>批量邮件</li><li>欺骗智能</li><li>模拟检测</li><li>管理员隔离</li><li>管理员和用户的"误报"和"漏报"提交</li><li>允许/阻止 URL 和文件</li><li>报告</li></u1>|<li>审核日志搜索</li><li>邮件跟踪</li>|<li>零时差自动清除 (ZAP)</li><li>允许列表和阻止列表精简和测试</li>|
+|技术包括：<ul><li>垃圾邮件</li><li>网络钓鱼</li><li>恶意软件</li><li>批量邮件</li><li>欺骗智能</li><li>模拟检测</li><li>管理员隔离</li><li>管理员和用户的"误报"和"漏报"提交</li><li>允许/阻止 URL 和文件</li><li>报告</li></ul>|<li>审核日志搜索</li><li>邮件跟踪</li>|<li>使用 ZAP (零时差) </li><li>允许列表和阻止列表精简和测试</li>|
 |
 
 如果您想深入了解EOP，请 **[跳至本文](exchange-online-protection-overview.md)**。
@@ -97,7 +97,7 @@ Office 365 安全性的核心是 EOP 保护。 Microsoft Defender for Office 365
 
 |阻止/检测|调查|响应|
 |---|---|---|
-|技术包括 EOP 中的所有内容及：<u1><li>安全附件</li><li>安全链接<li>适用于工作负载的 Microsoft Defender for Office 365 保护（例如 SharePoint Online、Teams、OneDrive for Business）</li><li>电子邮件、Office 客户端和 Teams 中的单击时间保护</li><li>Defender for Office 365 中的防钓鱼</li><li>用户和域模拟保护</li><li>警报和用于警报的 SIEM 集成 API</li>|<li>用于检测的 SIEM 集成 API</li><li>**实时检测工具**</li><li>URL 跟踪</li>|<li>相同</li></u1>
+|技术包括 EOP 中的所有内容及：<ul><li>安全附件</li><li>安全链接<li>适用于工作负载的 Microsoft Defender for Office 365 保护（例如 SharePoint Online、Teams、OneDrive for Business）</li><li>电子邮件、Office 客户端和 Teams 中的单击时间保护</li><li>Defender for Office 365 中的防钓鱼</li><li>用户和域模拟保护</li><li>警报和用于警报的 SIEM 集成 API</li>|<li>用于检测的 SIEM 集成 API</li><li>**实时检测工具**</li><li>URL 跟踪</li>|<li>相同</li></ul>
 
 因此，Microsoft Defender for Office 365 计划 1 * **预防** _侧进行了扩展，并添加了_ * _检测_ **的其他形式。
 
@@ -108,7 +108,7 @@ Microsoft Defender for Office 365 计划 1 还添加了 **实时检测** 以进�
 
 |阻止/检测|调查|响应|
 |---|---|---|
-|技术包括 EOP 中的所有内容和 Microsoft Defender for Office 365 计划 1 及：<u1><li>相同</li>|<li>**威胁资源管理器**</li><li>威胁跟踪器</li><li>市场活动视图</li>|<li>自动调查和响应 (AIR)</li><li>威胁资源管理器 AIR</li><li>被盗用户 AIR</li><li>用于自动化调查的 SIEM 集成 API</li>
+|技术包括 EOP 中的所有内容和 Microsoft Defender for Office 365 计划 1 及：<ul><li>相同</li>|<li>**威胁资源管理器**</li><li>威胁跟踪器</li><li>市场活动视图</li>|<li>自动调查和响应 (AIR)</li><li>威胁资源管理器 AIR</li><li>被盗用户 AIR</li><li>用于自动化调查的 SIEM 集成 API</li>
 
 因此，Microsoft Defender for Office 365 计划 2 在 ***调查和响应*** 方面进行了扩展，并增加了新的搜寻功能。 自动化。
 

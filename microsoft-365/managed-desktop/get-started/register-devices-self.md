@@ -11,16 +11,16 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9be51ab9204ac8a950bf316f716b70b824980ba8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad85439d817013fa394fcb80bd5d47dbf391601f
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196362"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484115"
 ---
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
-Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已拥有的设备 (这将要求你重新映像它们) 。 可以在应用门户Microsoft 托管桌面注册Microsoft Endpoint Manager设备。
+Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已拥有的设备 (这将要求你重新映像它们) 。 可以在 Microsoft 托管桌面 门户Microsoft Endpoint Manager设备。
 
 > [!NOTE]
 > 与合作伙伴合作获取设备 如果是这样，你无需担心获取硬件哈希;他们会负责你。 请确保你的合作伙伴与你在合作伙伴中心 [建立了关系](https://partner.microsoft.com/dashboard)。 你的合作伙伴可以在合作伙伴中心 [帮助 中了解更多信息](/partner-center/request-a-relationship-with-a-customer)。 建立此关系后，你的合作伙伴将仅代表你注册设备，无需你执行任何进一步的操作。 如果你希望查看详细信息，或者你的合作伙伴有疑问，请参阅合作伙伴 [注册设备的步骤](register-devices-partner.md)。 注册设备后，你可以继续 [检查](#check-the-image) 映像，将设备 [传送](#deliver-the-device) 给用户。
@@ -43,12 +43,12 @@ Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已�
 Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 有三个选项可获取此信息：
 
 - 请你的 OEM 供应商提供 AutoPilot 注册文件，该文件将包含硬件哈希。
-- 在每个[Windows PowerShell运行](#powershell-script-method)一个脚本，并收集文件中的结果。
+- 在每个[Windows PowerShell](#powershell-script-method)运行一个脚本，并收集文件中的结果。
 - 启动每台设备（但不完成Windows安装体验）并收集可移动闪存[驱动器上的哈希](#flash-drive-method)。
 
 #### <a name="powershell-script-method"></a>PowerShell 脚本方法
 
-可以在 PowerShell [ 库网站上 ](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)Get-WindowsAutoPilotInfo.ps1PowerShell 脚本。 有关设备标识和硬件哈希的信息，请参阅向[Autopilot](/mem/autopilot/add-devices#device-identification)Windows设备。
+可以使用 PowerShell [ 库Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) 上的 PowerShell 脚本。 有关设备标识和硬件哈希的信息，请参阅向[Autopilot](/mem/autopilot/add-devices#device-identification)Windows设备。
 
 1. 使用管理权限打开 PowerShell 提示符。
 2. 运行 `Install-Script -Name Get-WindowsAutoPilotInfo`
@@ -81,7 +81,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 
 ### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
-在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)**中，选择** 左侧导航窗格中的"设备"。 查找菜单Microsoft 托管桌面部分，**然后选择设备。** 在Microsoft 托管桌面设备"工作区中，选择 **" +** 注册设备"，这将打开一个飞入以注册新设备。
+在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)**中，选择** 左侧导航窗格中的"设备"。 查找菜单Microsoft 托管桌面部分 **并选择设备。** 在Microsoft 托管桌面设备"工作区中，选择" **+** 注册设备"，这将打开一个飞入以注册新设备。
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age.](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -94,7 +94,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 3. 选择 **注册设备**。 系统将设备添加到设备上设备列表，标记为注册 **挂起。**  注册通常少于 10 分钟，并且成功后，设备将显示为"为用户准备就绪"，这意味着它已准备好并等待用户开始使用。
 
 > [!NOTE]
-> 如果手动更改设备Azure Active Directory (AAD) 组成员身份，系统会自动将其重新分配给设备配置文件的组，并删除任何冲突组。
+> 如果你手动更改Azure Active Directory (AAD) 组成员身份，它将自动重新分配到组，用于其设备配置文件，并删除任何冲突组。
 
 你可以监视主页上的设备注册进度。 其中报告的可能状态包括：
 
@@ -114,7 +114,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 | 硬件哈希无效 | 你为此设备提供的硬件哈希格式不正确。 仔细检查硬件哈希，然后重新提交。 |
 | 设备已注册 | 此设备已注册到你的组织。 无需执行其他操作。 |
 | 由另一个组织声明的设备 | 此设备已被另一个组织声明。 请与设备供应商联系。 |
-| 意外错误 | 您的请求无法自动处理。 联系支持人员并提供请求 ID： <requestId> |
+| 意外错误 | 您的请求无法自动处理。 联系支持人员并提供请求 ID： \<requestId\> |
 
 ### <a name="check-the-image"></a>检查图像
 
@@ -124,7 +124,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 
 ### <a name="autopilot-group-tag"></a>Autopilot 组标记
 
-当你使用管理门户注册设备时，我们会自动分配Microsoft365Managed_Autopilot **Autopilot** 组标记。
+当你使用管理门户注册设备时，我们会自动分配与使用合作伙伴中心注册设备中列出的设备配置文件相关联的 Autopilot [组标记](register-devices-partner.md#register-devices-by-using-partner-center)。
 该服务每天监视Microsoft 托管桌面设备，并将组标记分配给任何尚未安装组标记的设备。
 
 ### <a name="deliver-the-device"></a>交付设备

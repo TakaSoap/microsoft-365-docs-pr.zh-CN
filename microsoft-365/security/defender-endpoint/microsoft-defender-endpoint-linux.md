@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4d3d1d913dd08a48fb70419133c0c484b3248f8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cdf022be492701e790606479877bf57f6f426094
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196318"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483575"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -43,7 +43,7 @@ ms.locfileid: "59196318"
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安装 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>必备条件
 
 - 访问 Microsoft 365 Defender 门户
 - 使用系统系统 [管理器的](https://systemd.io/) Linux 分发
@@ -52,8 +52,7 @@ ms.locfileid: "59196318"
 
 > [!NOTE]
 > Linux 代理上的 Microsoft Defender for Endpoint 独立于 [OMS 代理](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint 依赖于自己的独立遥测管道。
->
-> Linux 上的 Microsoft Defender for Endpoint 尚未集成到 Azure 安全中心。
+
 
 ### <a name="installation-instructions"></a>安装说明
 
@@ -84,7 +83,7 @@ ms.locfileid: "59196318"
   - Oracle Linux 7.2 或更高版本
 
     > [!NOTE]
-    > 未明确列出的分发和版本不受支持 (即使它们派生自正式支持的分发) 。
+    > 未明确列出的分发和版本不受支持 (即使它们派生自官方支持的分发) 。
 
 - 最低内核版本 3.10.0-327
 
@@ -128,7 +127,7 @@ ms.locfileid: "59196318"
 - 必须 `auditd` () 审核框架。
 
   > [!NOTE]
-  > 通过添加到 的规则捕获的系统事件将添加到 (，) 并可能影响主机审核和上游 `/etc/audit/rules.d/` `audit.log` 集合。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
+  > 添加到 的规则捕获的系统事件将添加到 (，) `/etc/audit/rules.d/` `audit.log` 主机审核和上游收集。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
 
 ### <a name="network-connections"></a>网络连接
 
@@ -156,7 +155,7 @@ Defender for Endpoint 可以使用以下发现方法发现代理服务器：
 > [!WARNING]
 > 不支持 PAC、WPAD 和经过身份验证的代理。 确保仅使用静态代理或透明代理。
 >
-> 出于安全考虑，也不支持 SSL 检查和截获代理。 为 SSL 检查和代理服务器配置例外，以直接将数据从 Linux 上的 Defender for Endpoint 传递到相关 URL，而不会拦截。 将拦截证书添加到全局存储将不允许拦截。
+> 出于安全考虑，也不支持 SSL 检查和截获代理。 为 SSL 检查和代理服务器配置例外，以将数据从 Linux 上的 Defender for Endpoint 直接传递到相关 URL，而不会拦截。 将拦截证书添加到全局存储将不允许拦截。
 
 有关疑难解答步骤，请参阅在 Linux 上解决 [Microsoft Defender for Endpoint 的云连接问题](linux-support-connectivity.md)。
 

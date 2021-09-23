@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 92c74ae2f7e7236138f28cf30b3e835eb10b636d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f9999fdea57465120040cb04a497f1510bcb988b
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170917"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483503"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>调查警报Microsoft 365 Defender
 
@@ -40,17 +40,17 @@ ms.locfileid: "59170917"
 
 在Microsoft 365 Defender中，相关警报聚合在一起以形成[事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。 
 
-警报 **队列** 显示当前警报集。 在快速启动 Microsoft 365 Defender ( security.microsoft.com) 时，你可以从事件&警报>警报["进入](https://security.microsoft.com)警报队列。
+警报 **队列** 显示当前警报集。 在快速 **&** 启动 Microsoft 365 Defender (security.microsoft.com) 时，你可以从事件和警报>警报中 [进入警报队列](https://security.microsoft.com)。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="警报队列的示例。":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="报告门户中的警报队列Microsoft 365 Defender示例。":::
 
 来自不同 Microsoft 安全解决方案（如 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft 365 Defender）的警报将在此处显示。
 
-默认情况下，Microsoft 365 Defender门户中的警报队列显示过去 30 天内的新警报和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
+默认情况下，Microsoft 365 Defender门户中的警报队列显示过去 30 天内的新警报和进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
 
 从默认警报队列中，可以选择"筛选器"以查看"筛选器"窗格，可以从中指定警报的子集。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="警报队列的筛选器窗格示例。":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="通知门户中警报队列的筛选器窗格Microsoft 365 Defender示例。":::
 
 你可以根据以下条件筛选警报：
 
@@ -59,14 +59,14 @@ ms.locfileid: "59170917"
 - 类别
 - 检测源
 - 标记
-- 策略
+- Policy
 - 影响的资产
 
 ## <a name="analyze-an-alert"></a>分析警报
 
 若要查看主警报页面，请选择警报的名称。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="通知门户中警报的详细信息Microsoft 365 Defender示例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="通知门户中警报的详细信息Microsoft 365 Defender示例。":::
 
 您还可以从"管理 **警报"窗格中** 选择"打开主警报 **页面"** 操作。
 
@@ -75,10 +75,10 @@ ms.locfileid: "59170917"
 - 警报情景，它是与此警报相关的事件和警报链（按时间顺序）
 - 摘要详细信息
 
-在整个警报页面中，可以选择任意实体 (**...)** 的省略号以查看可用操作，例如打开警报页面或将警报链接到其他事件。
+在整个警报页面中，可以选择任何实体 (**...)** 的省略号以查看可用操作，例如打开警报页面或将警报链接到其他事件。
 
 ### <a name="alert-sources"></a>警报源
-Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft Cloud App Security 等解决方案。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
+Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft Cloud App Security。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
 
 > [!NOTE]
 > - 预置的 GUID 仅特定于统一体验，如统一警报队列、统一警报页面、统一调查和统一事件。<br>
@@ -96,7 +96,7 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 例如：`ca123a456b-c789-1d2e-12f
 
 " **已采取** 操作"部分包含受影响资产的列表，如受此警报影响的邮箱、设备和用户。 
 
-还可以选择"在操作中心 **中** 查看"以查看操作中心的"历史记录"选项卡，Microsoft 365 Defender门户。 
+还可以选择"**在操作中心中** 查看"以查看操作中心的"历史记录"选项卡，Microsoft 365 Defender门户。 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>跟踪警报情景中的警报角色
 
@@ -115,7 +115,7 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 例如：`ca123a456b-c789-1d2e-12f
 
 若要管理警报，请在警报队列中的行中选择警报，以查看"管理 **警报"** 窗格。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="警报的摘要窗格示例。":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="通知门户中警报的摘要窗格Microsoft 365 Defender示例。":::
 
 " **管理警报** "窗格允许您指定：
 

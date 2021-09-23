@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: de9f68c193a8c7ab4d4c78fc4f2cef3cf02142ec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 01369b574dcb3b5a23b22cb662b59479c308de33
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170467"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483539"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修正邮件中传递的恶意Office 365
 
@@ -29,18 +29,18 @@ ms.locfileid: "59170467"
 **适用对象**
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 
-修正意味着对威胁采取规定操作。 发送到组织的恶意电子邮件可以通过系统、零时差自动清除 (ZAP) 或安全团队通过修正操作（如移动到收件箱、移动到垃圾邮件、移动到已删除项目、软删除或硬删除）进行 *清理*。   Microsoft Defender for Office 365计划 2/E5 使安全团队可以通过手动和自动调查来修正电子邮件和协作功能中的威胁。
+修正意味着对威胁采取规定操作。 系统、零时差自动清除 (ZAP) 或安全团队可通过修正操作（如移动到收件箱、移动到垃圾邮件、移动到已删除项目、软删除或硬删除）清理发送到组织的恶意电子邮件。    Microsoft Defender for Office 365计划 2/E5 使安全团队可以通过手动和自动调查来修正电子邮件和协作功能中的威胁。
 
 > [!NOTE]
-> 若要修正恶意电子邮件，安全团队需要分配有 *"搜索* 和清除"角色。 角色分配通过管理[门户 中的权限Microsoft 365 Defender完成](permissions-microsoft-365-security-center.md)。
+> 若要修正恶意电子邮件，安全团队需要分配有 *"搜索* 和清除"角色。 角色分配通过管理门户 中[的权限Microsoft 365 Defender完成](permissions-microsoft-365-security-center.md)。
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>开始之前您需要了解哪些信息
 
-管理员可以对电子邮件采取必需操作，但若要批准这些操作，他们必须在 Microsoft 365 Defender 门户中的电子邮件& 协作权限中为其分配搜索和清除角色。 如果没有 *向其中一* 个角色组添加"搜索和清除"角色，他们将无法执行该操作。
+管理员可以对电子邮件采取必需操作，但若要批准这些操作，他们必须在 Microsoft 365 Defender 门户的"电子邮件"&协作权限中为其分配"搜索和清除"角色。 如果没有 *向其中一* 个角色组添加"搜索和清除"角色，他们将无法执行该操作。
 
 ## <a name="manual-and-automated-remediation"></a>手动和自动修正
 
-*当安全* 团队使用资源管理器中的搜索和筛选功能手动识别威胁时，将发生手动搜寻。 确定需要修正的电子邮件集后，可以通过任何电子邮件视图 (*恶意软件*、网络钓鱼或所有电子邮件) 触发手动电子邮件修正。
+*当安全* 团队使用资源管理器中的搜索和筛选功能手动识别威胁时，将发生手动搜寻。 确定一组需要修复的电子邮件后，可以通过任何电子邮件视图 (*恶意软件*、网络钓鱼或所有电子邮件) 触发手动电子邮件修正。
 
 > [!div class="mx-imgBorder"]
 > [![按日期在Office 365资源管理器中手动搜寻。](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
@@ -64,7 +64,7 @@ ms.locfileid: "59170467"
 > [!div class="mx-imgBorder"]
 > [!["Zapped"页面中包含恶意软件的邮件显示 Zap 执行的时间。](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-所有修正 (直接审批或两步) 资源管理器中创建的审批流程，以及来自自动调查的已批准操作均显示在操作中心中。 通过"审阅操作中心"下的左侧导航 \> **面板访问它们**。
+所有修正 (直接审批或两步审批) 在资源管理器中创建，以及来自自动调查的已批准操作均显示在操作中心中。 通过"审阅操作中心"下的左侧导航 \> **面板访问它们**。
 
 > [!div class="mx-imgBorder"]
 > [![操作中心，按日期和严重性列出威胁。](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
@@ -106,7 +106,7 @@ ms.locfileid: "59170467"
 
   修正期间仅处理可修复的电子邮件。 电子邮件系统无法修复Office 365电子邮件，因为它们未存储在云邮箱中。
 
-  如有必要，管理员可以对隔离中的电子邮件采取措施，但是如果未手动清除这些电子邮件，则这些电子邮件将过期，无法隔离。 由于恶意内容而隔离的电子邮件无法被用户访问，因此安全人员不必执行任何操作来清除隔离中的威胁。 如果电子邮件是本地或外部的，可以联系用户以处理可疑电子邮件。 或者管理员可以使用单独的电子邮件服务器/安全工具进行删除。 可以通过在资源管理器中应用传递位置 = *内部外部* 筛选器来标识这些电子邮件。 对于失败或丢弃的电子邮件，或者用户无法访问的电子邮件，没有任何要缓解的电子邮件，因为这些邮件无法到达邮箱。
+  如有必要，管理员可以对隔离中的电子邮件采取措施，但是如果未手动清除这些电子邮件，则这些电子邮件将过期，无法隔离。 默认情况下，由于恶意内容而隔离的电子邮件无法被用户访问，因此安全人员不必执行任何操作来清除隔离中的威胁。 如果电子邮件是本地或外部的，可以联系用户以处理可疑电子邮件。 或者管理员可以使用单独的电子邮件服务器/安全工具进行删除。 可以通过在资源管理器中应用传递位置 = *内部外部* 筛选器来标识这些电子邮件。 对于失败或丢弃的电子邮件，或者用户无法访问的电子邮件，没有任何要缓解的电子邮件，因为这些邮件无法到达邮箱。
 
   下图显示了提交在操作中心中的外观。 修正可包含多个提交。 如果通过一个自动调查批准多个操作，则每个电子邮件或电子邮件群集操作将在同一修正中显示为不同的提交。
 

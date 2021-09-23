@@ -17,16 +17,16 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒
 description: 使用受控文件夹访问权限、MIP、DLP 和 Microsoft Cloud App Security 来保护 Microsoft 365 敏感数据。
-ms.openlocfilehash: 2221b269d5b3b775f870d7c7f8b47ea89912f388
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 9548b394f5fa2cad6ec1e55e9386905b85f0335b
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444537"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483047"
 ---
 # <a name="step-5-protect-information"></a>步骤 5. 保护信息
 
-由于勒索软件攻击者还将查看位于文件、数据库和其他类型服务器上的本地数据，因此保护该数据的最佳方法之一是将其迁移到 Microsoft 365 租户。 迁移完成后，可通过内置的缓解和恢复功能（如 [版本控制、回收站和保留库](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365)）对其进行保护。
+由于勒索软件攻击者还将查看位于文件、数据库和其他类型服务器上的本地数据，因此保护该数据的最佳方法之一是将其迁移到 Microsoft 365 租户。 迁移完成后，可通过内置的缓解和恢复功能（如 [版本控制、回收站和文件还原](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365)）对其进行保护。
 
 要在 Microsoft 365 租户中提供敏感信息的其他保护，请执行以下操作：
 
@@ -69,7 +69,7 @@ ms.locfileid: "59444537"
 根据这种典型的攻击者行为，攻击者有两个难度级别：
 
 - **低：** 攻击者可以使用低权限帐户并发现敏感信息，因为该账户在整个租户内都具有广泛的访问权限。
-- **较高：** 由于权限严格，攻击者无法使用低权限帐户并发现敏感信息。 他们必须通过确定并破解有权访问具有敏感信息位置的帐户的凭据来提升其权限，但之后可能只能执行一组有限的操作。
+- **较高：** 攻击者不能使用低权限账户并发现敏感信息，因为权限严格。他们必须通过确定并破解有权访问具有敏感信息位置的帐户的凭据来提升其权限，但之后可能只能执行有限的操作。
 
 对于敏感信息，必须尽可能提高其难度级别。
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5c63da586affc23bea26e416479fa2e3e7a26d73
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c35f8315423bd7245546835e5963c7968eb4c12
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170022"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483983"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
@@ -32,7 +32,7 @@ ms.locfileid: "59170022"
 > 希望体验 Microsoft 365 Defender？ 你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
-以下功能在最新版本的 GA (预览版) 或Microsoft 365 Defender。
+以下功能在最新版本的 (GA) 预览版或Microsoft 365 Defender。
 
 RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中：
 ```http
@@ -48,13 +48,15 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 
 
-
+## <a name="september-2021"></a>2021 年 9 月
+-  (事件) API 中Office 365 Microsoft Defender for Microsoft 365 Defender 事件数据。 你可以查看流式 API 中受支持的事件类型Microsoft 365 Defender[事件类型的可用性和状态](supported-event-types.md)。
+-  (通用) Microsoft Defender Office 365高级搜寻中提供的数据现已普遍可用。
 
 ## <a name="august-2021"></a>2021 年 8 月
 -  (预览) Microsoft Defender Office 365高级搜寻中提供的数据
 <br>电子邮件表中的新列可以更深入地了解基于电子邮件的威胁，以便使用高级搜寻进行更全面的调查。 现在可以在 `AuthenticationDetails` EmailEvents、EmailAttachmentInfo 和[](./advanced-hunting-emailevents-table.md) `FileSize` [](./advanced-hunting-emailattachmentinfo-table.md) `ThreatTypes` `DetectionMethods` [EmailPostDeliveryEvents](./advanced-hunting-emailpostdeliveryevents-table.md)表中包含该列。 
 
--  (预览) 事件图 <br>  事件 **Graph"** 摘要"选项卡上的新"开始"选项卡显示攻击的完整范围、攻击如何随着时间的推移分布于网络、开始位置以及攻击者已攻击多远。
+-  (预览) 事件图 <br>  事件 **Graph"** 摘要"选项卡上的新"报告"选项卡显示攻击的完整范围、攻击如何随着时间的推移网络分布、开始位置以及攻击者已攻击多远。
 
 ## <a name="july-2021"></a>2021 年 7 月
 - [Professional服务目录](https://sip.security.microsoft.com/interoperability/professional_services)<br>通过受支持的合作伙伴连接增强平台的检测、调查和威胁智能功能。
@@ -77,10 +79,10 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - Microsoft 365 Defender<br> 改进的[Microsoft 365 Defender](https://security.microsoft.com)门户现已可用。 此新体验将 Defender for Endpoint、Defender for Office 365、Defender for Identity 等集成到单个门户中。 这是用于管理安全控制的新主页。 [了解新增功能](./overview-security-center.md)。
 
 - [Microsoft 365 Defender威胁分析报告](threat-analytics.md)<br>
- 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解解决方案阻止的攻击尝试Microsoft 365 Defender采取预防措施，以缓解进一步暴露的风险并增加复原能力。 作为统一安全体验的一部分，威胁分析现在适用于 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 许可证持有者。
+ 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解解决方案阻止的攻击尝试Microsoft 365 Defender采取预防措施，以降低进一步暴露的风险并增加恢复能力。 作为统一安全体验的一部分，威胁分析现在适用于 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 许可证持有者。
 
 ## <a name="march-2021"></a>2021 年 3 月
-- [CloudAppEvents 表](advanced-hunting-cloudappevents-table.md) <br>查找有关应用程序涵盖的各种云应用和服务中的Microsoft Cloud App Security。 此表还包括之前在 中提供的信息 `AppFileEvents` 。
+- [CloudAppEvents 表](advanced-hunting-cloudappevents-table.md) <br>查找有关组织涵盖的各种云应用和服务中的Microsoft Cloud App Security。 此表还包括之前在 中提供的信息 `AppFileEvents` 。
 ## <a name="february-2021"></a>2021 年 2 月
--  (预览) 增强[Microsoft 365 Defender门户 (https://security.microsoft.com) ](https://security.microsoft.com)现在提供公共预览版。 这一新体验将 Defender for Endpoint 和 Defender for Office 365引入中心。 [了解有关更改的详细信息](./overview-security-center.md)。
-- **[ (预览) Microsoft 365 Defender API](api-overview.md)** - 顶级 Microsoft 365 Defender API 将使您能够基于共享事件和高级搜寻表自动执行工作流。 
+-  (预览) 增强[Microsoft 365 Defender门户 (https://security.microsoft.com) ](https://security.microsoft.com)现在可用于公共预览版。 这一新体验将 Defender for Endpoint 和 Defender for Office 365中心。 [了解有关更改的详细信息](./overview-security-center.md)。
+- **[ (预览) Microsoft 365 Defender API](api-overview.md)** - 顶级 Microsoft 365 Defender API 将使您能够根据共享事件和高级搜寻表自动执行工作流。 

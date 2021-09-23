@@ -19,12 +19,12 @@ description: 管理员可以了解如何在 Microsoft 365 Defender 门户中管�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3eb4f424ba8b9fd73f5cad62c2a136da8fd8249
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6e5980249d3df0dc94a83b8250f3be55298de5bd
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195927"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482855"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的权限
 
@@ -50,7 +50,7 @@ Microsoft 365 Defender 门户中的权限以基于角色的访问控制 (RBAC) �
 
 **角色** 授予执行一组任务的权限。
 
-**角色组** 是一组允许人们在 Microsoft 365 Defender 门户中完成工作的角色。 例如，攻击模拟器管理员角色组包括攻击模拟器管理员角色，以创建和管理攻击模拟培训的所有方面。
+**角色组** 是一组允许人们在 Microsoft 365 Defender 门户中完成工作的角色。
 
 Microsoft 365 Defender 门户包括你需要分配的最常见任务和功能的默认角色组。 通常，我们建议你只需将单个用户作为 **成员** 添加到默认角色组。
 
