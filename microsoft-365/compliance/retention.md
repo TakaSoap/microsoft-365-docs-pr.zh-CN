@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 9415b7aa8e258264095de41a7f820751d3794a13
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3cb6548cee9b14de661faed2d4a2aa2f45de3b83
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195787"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477716"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -421,6 +421,9 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 
 - 当 SharePoint，OneDrive 或 Exchange 中标记的项标记为记录或法规记录，并将其永久删除时：
     - 从 **文件和页面活动**，选择 **已删除标记为记录的文件**
+
+- 当处置审阅者对已达到其保留期的项执行操作时:
+    -  从 **处置评审活动**，选择 **已批准处置**，**扩展保留期**，**已标记项目** 或 **添加审阅者**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>用于保留策略和保留标签的 PowerShell cmdlet
 

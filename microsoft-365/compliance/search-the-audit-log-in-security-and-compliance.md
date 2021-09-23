@@ -22,11 +22,11 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 ms.openlocfilehash: abfd937b98ff863876060fcf6bbbe38c6b64f23f
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477692"
+ms.locfileid: "59479869"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -1050,7 +1050,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 ### <a name="disposition-review-activities"></a>处置审阅活动
 
-下表列出了处置审阅者在项目达到其配置的保留期结束时所执行的活动。 有关详细信息，请参阅[查看和处置内容](disposition.md#viewing-and-disposing-of-content)。
+下表列出了处置审阅者在项目达到其配置的保留期结束时所执行的活动。 有关详细信息，请参阅 [查看和处置内容](disposition.md#viewing-and-disposing-of-content)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
