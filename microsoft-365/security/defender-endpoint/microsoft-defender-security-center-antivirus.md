@@ -15,12 +15,13 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d8bc077e12d52a5194b6e698a989704bdc273c52
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 23e89bd4aee02299e0710ff65fbe496fd8535b8f
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196307"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490113"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender 防病毒应用中Windows 安全中心
 
@@ -39,7 +40,7 @@ ms.locfileid: "59196307"
 > 如果具有Microsoft Defender 防病毒或过时的第三方防病毒程序，或者卸载之前可能安装的任何第三方防病毒产品，它也可能阻止用户自行启用。
 > 这将显著降低设备的保护，并可能导致恶意软件感染。
 
-有关[可在Windows 安全中心](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center)监视的其他安全Windows，请参阅本文。
+有关[可在Windows 安全中心](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center)监视的其他 Windows 安全功能，请参阅本文。
 
 Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户端接口。 这不是用于Microsoft Defender 安全中心 Microsoft [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)的 Web 门户。
 
@@ -47,9 +48,9 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 
 :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="病毒和威胁防护应用中Windows 安全中心设置。":::
 
-1. 通过单击Windows 安全中心中的防护图标或搜索 Defender 的开始菜单打开 **应用。**
+1. 通过单击Windows 安全中心中的防护图标或搜索 Defender 的"开始"菜单打开 **应用。**
 
-2. 选择病毒 **&威胁** 防护磁贴 (或左侧菜单栏上的防护) 。
+2. 选择病毒& **威胁** 防护磁贴 (左侧菜单栏上的防护) 。
 
 以下各节介绍如何在查看或与 Windows 安全中心 应用中的 Microsoft Defender 防病毒 所提供的威胁防护交互时执行一些最常见的任务。
 
@@ -60,7 +61,7 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 
 1. 打开"Windows 安全中心"应用，搜索"安全"的"开始"菜单，然后选择 **"Windows 安全中心"。**
 
-2. 选择病毒 **&威胁** 防护磁贴 (或左侧菜单栏上的防护) 。
+2. 选择病毒& **威胁** 防护磁贴 (左侧菜单栏上的防护) 。
 
 3. 选择 **快速扫描**。 或者，若要运行完全扫描，请选择"扫描选项"，然后选择一个选项，例如"**完全扫描"。**
 
@@ -70,17 +71,17 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 
 1. 打开"Windows 安全中心"应用，搜索"安全"的"开始"菜单，然后选择 **"Windows 安全中心"。**
 
-2. 选择病毒 **&威胁** 防护磁贴 (或左侧菜单栏上的防护) 。
+2. 选择病毒& **威胁** 防护磁贴 (左侧菜单栏上的防护) 。
 
-3. 选择 **病毒&威胁防护更新**。 将显示当前安装的版本以及一些有关下载时间的信息。 你可以根据可供手动下载的最新版本检查当前版本，或查看该版本的更改日志。 请参阅[安全智能更新，Microsoft Defender 防病毒 Microsoft 反恶意软件](https://www.microsoft.com/wdsi/defenderupdates)。
+3. 选择 **病毒&威胁防护更新**。 将显示当前安装的版本以及一些有关下载时间的信息。 你可以根据可手动下载的最新版本检查当前版本，或查看该版本的更改日志。 请参阅[安全智能更新了解 Microsoft Defender 防病毒和其他 Microsoft 反恶意软件](https://www.microsoft.com/wdsi/defenderupdates)。
 
-4. 选择 **"检查更新"，** 以下载 (保护更新（如果有) ）。
+4. 选择 **"检查更新** "，以下载 (保护更新（如果有) ）。
 
-## <a name="ensure-microsoft-defender-antivirus-is-enabled-in-the-windows-security-app"></a>确保在Microsoft Defender 防病毒应用中启用Windows 安全中心
+## <a name="ensure-microsoft-defender-antivirus-is-enabled-in-the-windows-security-app"></a>确保Microsoft Defender 防病毒应用中启用了Windows 安全中心功能
 
 1. 打开"Windows 安全中心"应用，搜索"安全"的"开始"菜单，然后选择 **"Windows 安全中心"。**
 
-2. 选择病毒 **&威胁** 防护磁贴 (或左侧菜单栏上的防护) 。
+2. 选择病毒& **威胁** 防护磁贴 (左侧菜单栏上的防护) 。
 
 3. 选择 **病毒&威胁防护设置。**
 
@@ -94,9 +95,9 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 
 1. 打开"Windows 安全中心"应用，搜索"安全"的"开始"菜单，然后选择 **"Windows 安全中心"。**
 
-2. 选择病毒 **&威胁** 防护磁贴 (或左侧菜单栏上的防护) 。
+2. 选择病毒& **威胁** 防护磁贴 (左侧菜单栏上的防护) 。
 
-3. 在管理 **设置下**，选择 **病毒&威胁防护设置。**
+3. 在"**管理设置"下**，选择 **"病毒&威胁防护设置"。**
 
 4. 在"**排除项"** 设置下，选择 **"添加或删除排除项"。**
 
@@ -124,7 +125,7 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 
 1. 打开"Windows 安全中心"应用，搜索"安全"的"开始"菜单，然后选择 **"Windows 安全中心"。**
 
-2. 选择病毒 **&威胁** 防护磁贴 (或左侧菜单栏上的防护) 。
+2. 选择病毒& **威胁** 防护磁贴 (左侧菜单栏上的防护) 。
 
 3. 选择 **"保护历史记录"。** 将列出任何最近的项目。
 
@@ -132,7 +133,7 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 
 1. 打开"Windows 安全中心"应用，搜索"安全"的"开始"菜单，然后选择 **"Windows 安全中心"。**
 
-2. 选择病毒 **&威胁** 防护磁贴 (或左侧菜单栏上的防护) 。
+2. 选择病毒& **威胁** 防护磁贴 (左侧菜单栏上的防护) 。
 
 3. 在 **勒索软件保护下**，选择 **管理勒索软件保护**。
 

@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中托管防火墙报告
-description: 在安全中心托管和Microsoft 365防火墙报告。
+description: 在安全中心托管和查看Microsoft 365报告。
 keywords: windows defender， 防火墙
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -14,12 +14,13 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0ca21e782b6d6bcceb7a3cf2444e2d6663ae32d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 1095d29ba5ad24da7b4b3da8f17ae0dc7f0e6afa
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162313"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491561"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中托管防火墙报告
 
@@ -29,16 +30,16 @@ ms.locfileid: "59162313"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-如果你是管理员，你现在可以将防火墙报告托管到Microsoft 365[中心。](https://security.microsoft.com) 此功能使您能够从集中Windows 10查看 Windows Server 2019 防火墙报告。
+如果你是管理员，现在可以在安全中心托管Microsoft 365[报告](https://security.microsoft.com)。 此功能使您能够从集中Windows 10查看 Windows Server 2019 防火墙报告。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 必须在 Windows 10 server 2019 Windows运行。
+- 必须在 Server 2019 Windows 10或Windows运行。
 - 若要将设备载入到 Microsoft Defender for Endpoint 服务，请参阅 [此处](onboard-configure.md)。
 - 若要Microsoft 365安全中心开始接收数据，必须为高级安全防火墙Windows Defender审核事件： 
   - [审核筛选平台数据包丢弃](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [审核筛选平台连接](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
-- 使用组策略对象编辑器、本地安全策略或安全命令启用这些事件auditpol.exe命令。 有关详细信息，请参阅 [此处](/windows/win32/fwp/auditing-and-logging)。
+- 使用组策略对象编辑器、本地安全策略或策略命令启用这些事件auditpol.exe命令。 有关详细信息，请参阅 [此处](/windows/win32/fwp/auditing-and-logging)。
   - 两个 PowerShell 命令是：
     - **auditpol /set /subcategory："Filtering Platform Packet Drop" /failure：enable**
     - **auditpol /set /subcategory："Filtering Platform Connection" /failure：enable**
@@ -69,7 +70,7 @@ Ring0 Preview 期间支持以下方案。
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>从"连接被阻止的计算机"到设备
 
-卡片支持交互式对象。 可以通过单击设备名称（将在新选项卡中启动）来深入了解设备的活动，并直接进入"设备时间线" https://securitycenter.microsoft.com 选项卡。 
+卡片支持交互式对象。 可以通过单击设备名称（将在新选项卡中启动）来深入了解设备的活动，并直接进入"设备 https://securitycenter.microsoft.com **时间线** "选项卡。
 
 > [!div class="mx-imgBorder"]
 > ![连接被阻止的计算机。](\images\firewall-reporting-blocked-connection.png)

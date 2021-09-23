@@ -15,12 +15,13 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: c079718ea7c8dab8c8c6423fcc5877e14a1dc078
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: f0510c1c0b4ab27a77602edb2948d383592a3003
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196618"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491273"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>在 Microsoft Defender 防病毒程序内使用有限的定期扫描
 
@@ -39,7 +40,7 @@ ms.locfileid: "59196618"
 
 ## <a name="how-to-enable-limited-periodic-scanning"></a>如何启用有限定期扫描
 
-默认情况下，Microsoft Defender 防病毒如果尚未安装其他防病毒产品，或者其他产品已过期、过期或无法正常工作，Windows 10 设备上自行启用。
+默认情况下，Microsoft Defender 防病毒如果尚未安装其他防病毒产品，或者另一个产品已过期、过期或无法正常工作，Windows 10设备自行启用。
 
 如果Microsoft Defender 防病毒，将显示常用选项以在该设备上配置它：
 
@@ -47,7 +48,7 @@ ms.locfileid: "59196618"
 
 如果安装了另一个防病毒产品并正常运行，Microsoft Defender 防病毒将自行禁用。 该Windows 安全中心应用将更改病毒&威胁防护部分以显示有关 AV 产品的状态，并提供指向产品配置选项的链接。
 
-在任何第三方 AV 产品下，新链接将显示为Microsoft Defender 防病毒 **选项。** 单击此链接将展开以显示启用有限定期扫描的切换。 请注意，有限定期选项是启用或禁用定期扫描的开关。 
+在任何第三方 AV 产品下，新链接将显示为Microsoft Defender 防病毒 **选项**。 单击此链接将展开以显示启用有限定期扫描的切换。 请注意，有限定期选项是启用或禁用定期扫描的开关。 
 
 将开关滑动到 **开** 将显示第三方 AV 产品下方的标准 Microsoft Defender AV 选项。 有限定期扫描选项将显示在页面底部。
 

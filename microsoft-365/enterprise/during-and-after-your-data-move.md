@@ -3,7 +3,7 @@ title: 数据移动期间和数据移动之后
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/10/2019
+ms.date: 09/22/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 数据移动是 Microsoft 将租户的服务和关联数据移动到新的数据中心地理位置时发生的后端操作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d2c78ace4fb25d060ecaeab96903ba577a1d7316
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f90957447e9d301594f50e67ff51ae495464b63e
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170997"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491083"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -30,7 +30,7 @@ ms.locfileid: "59170997"
 > [!NOTE]
 > 对于每个服务，移动在不同的时间发生。 因此，你将在不同时间看到描述的每个服务的缩减功能。 
   
-观看Microsoft 365消息中心确认每个聊天服务、Exchange Online、SharePoint Online 和Teams移动完成。 如下表所示，注册期结束后最多可能需要 24 个月才能完成将核心客户数据移动到新的数据中心地理位置。   
+观看Microsoft 365消息中心，确认何时移动每个 Exchange Online、SharePoint Online 和 Teams 聊天服务。 如下表所示，注册期结束后最多可能需要 24 个月才能完成将核心客户数据移动到新的数据中心地理位置。   
 
 |**具有注册国家/地区的客户**|**完成的所有移动**|
 |:-----|:-----|
@@ -54,7 +54,7 @@ ms.locfileid: "59170997"
   
 ### <a name="open-shared-folder-in-outlook-web-access"></a>在 Web Access 中打开Outlook文件夹"
 
-某些用户从另一个邮箱打开共享邮件文件夹 (该邮箱具有对) Web Access 中的 Outlook 的读取或写入权限（使用"共享文件夹"功能）。 下表介绍了在邮箱移动过程中对共享文件夹的访问权限的工作方式。 请注意，对共享邮箱具有完全权限的用户可以在移动过程中使用 Outlook Web Access 打开邮箱。 
+一些用户从另一个邮箱打开共享邮件文件夹 (该邮箱文件夹的用户具有使用"共享文件夹"功能在) Outlook Web Access 中读取或写入权限。 下表介绍了在邮箱移动过程中对共享文件夹的访问权限的工作方式。 请注意，对共享邮箱具有完全权限的用户可以在移动过程中使用 Outlook Web Access 打开邮箱。 
   
 |**配置**|**说明**|
 |:-----|:-----|
@@ -87,7 +87,7 @@ ms.locfileid: "59170997"
     
 ### <a name="search"></a>搜索
 
-在移动 SharePoint Online 数据的过程中，我们会将搜索索引和搜索设置迁移到新位置。 完成你的联机 **数据** 移动SharePoint，我们将继续从原始位置的索引为用户提供服务。 在新位置中，搜索将在我们移动完你的联机数据后自动开始SharePoint爬网。 从现在起，我们将从迁移的索引中为用户提供服务。 迁移后对内容所做的更改不会包含在迁移索引中，直到爬网选取它们。 大多数客户不会注意到，完成移动 SharePoint Online 数据后，结果新鲜度较低，但一些客户在前 24-48 小时内体验的新鲜度可能会降低 
+在移动 SharePoint Online 数据的过程中，我们会将搜索索引和搜索设置迁移到新位置。 在 **移动完你的** SharePoint Online 数据之前，我们将继续从原始位置的索引为用户提供服务。 在新位置中，搜索将在我们移动完你的联机数据后自动开始SharePoint爬网。 从现在起，我们将从迁移的索引中为用户提供服务。 迁移后对内容所做的更改不会包含在迁移索引中，直到爬网选取它们。 大多数客户不会注意到，完成移动 SharePoint Online 数据后，结果新鲜度较低，但一些客户在前 24-48 小时内体验的新鲜度可能会降低 
   
 以下搜索功能受到影响：
   
@@ -103,20 +103,21 @@ ms.locfileid: "59170997"
     
 - 数据丢失防护 (DLP) ：在爬网选取更改之前，不会对发生更改的项目强制执行策略。
 
-作为迁移的一部分，默认区域将更改，所有新内容将存储在新的默认区域。 在管理中心内首次更改 SharePoint Online 数据位置后的 90 天内，现有内容将在后台移动，而不会影响你。
+作为迁移的一部分，默认区域将更改，所有新内容将存储在新的默认区域。 在管理中心内首次更改 SharePoint Online 数据位置后的 90 天内，现有内容将在后台移动，不会影响你。
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-除了 Exchange Online、SharePoint Online 和 OneDrive for Business，Microsoft 还将Teams聊天服务数据迁移到本地数据中心。
+### <a name="files-tab"></a>"文件"选项卡
 
-- Teams聊天消息，包括私人消息和频道消息。
-- Teams聊天中使用的图像。
+迁移完成后，"文件"选项卡可能需要 (7 秒) 在用户首次尝试使用它时完全加载。 
 
-Teams文件存储在 SharePoint Online 中，Teams聊天文件存储在 OneDrive for Business。 语音邮件、日历、聊天历史记录和联系人存储在Exchange Online。 在许多情况下，Exchange Online、SharePoint Online 和 OneDrive for Business 已由本地数据中心地理位置的客户使用，并且也是符合条件的客户国家/地区 Microsoft 365 迁移计划的一部分。
+### <a name="read-only-period"></a>只读时间段
+
+Teams聊天服务分别移动每个线程。  在移动过程中，线程锁定为只读状态，此状态每线程持续几秒钟。  在迁移过程中，线程仍然可访问。
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Skype for Business移动不再可用。  [Skype for Business Online 将于](/lifecycle/announcements/skype-for-business-online-retirement)2021 年 7 月 31 日停用。 在此之后，将无法再访问该服务。 
+Skype for Business不再可用。  [Skype for Business Online 将于](/lifecycle/announcements/skype-for-business-online-retirement)2021 年 7 月 31 日停用。 在此之后，将无法再访问该服务。 
   
 ## <a name="related-topics"></a>相关主题 
  

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2ca601c3c68df9f9f1cc4fb90bcfbe907850ce91
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef8a5e1b833bc1184132469f8c3b358e907974e4
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196526"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491261"
 ---
 # <a name="overview-of-microsoft-365-defender-apis"></a>Microsoft 365 Defender API 概述
 
@@ -46,7 +46,7 @@ Microsoft 365 Defender构建于集成就绪平台的顶部。
 
 - **[跨产品威胁搜寻](api-advanced-hunting.md)** - 通过创建自己的自定义查询来筛选跨多个保护产品收集的原始数据，利用安全团队的组织知识搜寻泄露的迹象。
 
-使用 [流式处理 API](../defender-endpoint/raw-data-export.md) 在单个数据流中发生时提供实例中的实时事件和警报。
+- **[事件流式处理 API](streaming-api.md)** - 在单个数据流中提供实时事件和警报。
 
 除了这些Microsoft 365 Defender API 外，我们的每个其他安全产品都公开了其他[API，](api-articles.md)以帮助你充分利用它们的独特功能。
 
@@ -62,7 +62,7 @@ Microsoft 365 Defender构建于集成就绪平台的顶部。
 | **构建应用程序** |
 | [创建"Hello world"应用](api-hello-world.md) |
 | [创建应用以Microsoft 365 Defender用户访问 API](api-create-app-user-context.md) |
-| [创建应用以在没有Microsoft 365 Defender的情况下访问用户](api-create-app-web.md) |
+| [创建应用以在没有用户Microsoft 365 Defender访问用户](api-create-app-web.md) |
 | [创建具有对 API 的多租户合作伙伴访问权限Microsoft 365 Defender应用](api-partner-access.md) |
 | **对应用进行故障排除和维护** |
 | [了解 API 错误代码](api-error-codes.md) |

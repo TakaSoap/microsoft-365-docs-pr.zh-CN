@@ -14,12 +14,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: bfdfd2badce75294376d6406ba3d3078f26a9857
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 92cb643d0e133f0b850e16e076a88901b595e426
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222273"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490951"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>自定义减少攻击面规则
 
@@ -33,7 +34,7 @@ ms.locfileid: "59222273"
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-[攻击面减少规则](enable-attack-surface-reduction.md) 有助于防止经常滥用以损害设备或网络的软件行为。 例如，攻击者可能尝试从 USB 驱动器运行未签名的脚本，或者让 Office 文档中的宏直接调用 Win32 API。 攻击面减少规则可以限制这些类型的风险行为，并改进组织的防御状态。
+[攻击面减少规则](enable-attack-surface-reduction.md) 有助于防止经常滥用以损害设备或网络的软件行为。 例如，攻击者可能会尝试从 USB 驱动器运行未签名的脚本，或者让 Office 文档中的宏直接调用 Win32 API。 攻击面减少规则可以限制这些类型的风险行为，并改进组织的防御状态。
 
 了解如何通过排除文件和文件夹或向用户计算机上[](#exclude-files-and-folders)显示的通知警报添加自定义文本[](#customize-the-notification)来自定义攻击面减少规则。
 
@@ -44,7 +45,7 @@ ms.locfileid: "59222273"
 - Windows服务器版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-可以使用组策略、PowerShell 和移动设备管理 (MDM) CSP (配置) 配置这些设置。
+可以使用组策略、PowerShell 和移动设备管理 (MDM) CSP () 配置这些设置。
 
 有关 [受支持的](enable-attack-surface-reduction.md#requirements) 操作系统和其他要求信息的信息，请参阅"启用攻击面减少规则"文章中的要求。
 
@@ -77,13 +78,13 @@ ms.locfileid: "59222273"
 |阻止滥用被攻击的易受攻击的已签名驱动程序|`56a863a9-875e-4185-98a7-b882c64b5ce5`|
 |阻止 Adobe Reader 创建子进程|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|
 |阻止所有Office应用程序创建子进程|`d4f940ab-401b-4efc-aadc-ad5f3c50688a`|
-|阻止本地安全机构子系统Windows窃取凭据 (lsass.exe) |`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|
+|阻止来自本地安全Windows子系统的凭据 (lsass.exe) |`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|
 |阻止来自电子邮件客户端和 Webmail 的可执行内容|`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`|
 |阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件|`01443614-cd74-433a-b99e-2ecdc07bfc25`|
 |阻止执行可能混淆的脚本|`5beb7efe-fd9a-4556-801d-275e5ffc04cc`|
 |阻止 JavaScript 或 VBScript 启动下载的可执行内容|`d3e037e1-3eb8-44c8-a917-57927947596d`|
 |阻止Office应用程序创建可执行内容|`3b576869-a4ec-4529-8536-b80a7769e899`|
-|阻止Office将代码注入其他进程|`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`|
+|阻止Office应用程序将代码注入其他进程|`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`|
 |阻止Office应用程序创建子进程|`26190899-1602-49e8-8b27-eb1d0a1ce869`|
 |通过 WMI 事件订阅阻止持久性|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|
 |阻止源自 PSExec 和 WMI 命令的进程创建|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|
@@ -100,7 +101,7 @@ ms.locfileid: "59222273"
 
 2. 在组 **策略管理编辑器中**，转到计算机 **配置，** 然后单击 **管理模板**。
 
-3. 展开树以 **Windows攻击** \>  \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \> **减少的组件**。
+3. 展开树以 **Windows攻击** \>  \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \> **的组件**。
 
 4. 双击从攻击 **面减少规则中排除** 文件和路径设置，将选项设置为 **已启用**。 选择 **"显示** "，在"值名称"列中 **输入每个文件或** 文件夹。 在"值"**列中为** 每个项目输入 **0。**
 

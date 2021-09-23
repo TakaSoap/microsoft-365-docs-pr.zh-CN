@@ -13,12 +13,13 @@ ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: fb61525456c01f402bebc2eb0b9934d8f8880fee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 8d9a853309c03b635896dc124c86787ae07ddafe
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222265"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490173"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>使用设备控制保护组织的数据
 
@@ -43,7 +44,7 @@ Microsoft Defender for Endpoint 设备控制通过监视和控制组织中设备
 
 ## <a name="monitor-device-control-security"></a>监视设备控制安全性
 
-Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用工具通过报告跟踪其组织的设备控制安全性。 你可以访问报告Microsoft 365设备保护，在安全中心 **>报告**。
+Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用工具通过报告跟踪其组织的设备控制安全性。 你可以访问报告设备保护Microsoft 365安全中心中的设备>**报告**。
 
 "报告"仪表板上的设备保护卡片显示过去 180 天内媒体类型生成的审核事件数。
 

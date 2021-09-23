@@ -16,12 +16,13 @@ ms.custom: nextgen
 ms.date: 06/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 143722108ef1c5df8432610ff372697fdd3407df
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: e5c0f042c81d493c420c7bb576e79b31e3e3de09
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201554"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490975"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>配置Microsoft Defender 防病毒终结点上显示的通知
 
@@ -35,10 +36,10 @@ ms.locfileid: "59201554"
 
 ## <a name="configure-antivirus-notifications-using-group-policy-or-the-windows-security-app"></a>使用组策略或应用配置Windows 安全中心通知
 
-可以在应用和组策略中配置其他通知的显示，如Windows 安全中心[威胁](microsoft-defender-security-center-antivirus.md)检测摘要。
+可以在应用和组策略中配置其他通知的显示，[如Windows 安全中心威胁](microsoft-defender-security-center-antivirus.md)检测摘要。
 
 > [!NOTE]
-> 在 Windows 10 版本 1607 中，该功能称为增强型通知，在 **Windows 设置** \> **Update & security Windows Defender** \> **下配置**。 在所有版本的通知的组策略Windows 10，通知功能称为增强 **型通知**。
+> 在 Windows 10 版本 1607 中，该功能称为增强型通知，在 Windows 设置 \> **Update & security Windows Defender** \> 下 **配置**。 在所有版本的通知的组策略Windows 10，通知功能称为增强 **型通知**。
 
 ### <a name="use-group-policy-to-disable-additional-notifications"></a>使用组策略禁用其他通知
 
@@ -59,7 +60,7 @@ ms.locfileid: "59201554"
 
 ### <a name="use-the-windows-security-app-to-disable-additional-notifications"></a>使用 Windows 安全中心 应用禁用其他通知
 
-1. 通过单击Windows 安全中心中的防护图标或搜索"安全"的"开始"菜单打开"安全 **"菜单。**
+1. 通过单击Windows 安全中心中的防护图标或搜索"安全"的"开始"菜单打开 **应用。**
 
 2. 选择 **病毒&威胁** 防护磁贴 (或左侧菜单栏上的防护图标) ，然后选择病毒防护& **威胁防护设置**
 
@@ -78,7 +79,7 @@ ms.locfileid: "59201554"
 - 隐藏终结点上的所有通知
 - 隐藏终结点上的重启通知
 
-当你无法隐藏整个通知界面时，隐藏通知Microsoft Defender 防病毒很有用。 有关详细信息[，请参阅防止用户查看 Microsoft Defender 防病毒 用户界面](prevent-end-user-interaction-microsoft-defender-antivirus.md)或与之交互。 隐藏通知将仅在策略已部署到的终结点上发生。 与必须采取的操作（ (重启）相关的) 仍将显示在监视仪表板[和报告Microsoft Endpoint Manager Endpoint Protection上](/configmgr/protect/deploy-use/monitor-endpoint-protection)。 
+当你无法隐藏整个通知界面时，隐藏通知Microsoft Defender 防病毒很有用。 有关详细信息[，请参阅防止用户查看 Microsoft Defender 防病毒 用户界面](prevent-end-user-interaction-microsoft-defender-antivirus.md)或与之交互。 隐藏通知将仅在策略已部署到的终结点上发生。 与必须采取的操作（ (重启）相关的) 仍将显示在Microsoft Endpoint Manager Endpoint Protection[仪表板和报告上](/configmgr/protect/deploy-use/monitor-endpoint-protection)。 
 
 若要将自定义联系人信息添加到终结点通知，请参阅[自定义](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)组织的 Windows 安全中心 应用。
 
@@ -94,7 +95,7 @@ ms.locfileid: "59201554"
 
 5. 双击"**取消所有通知"，** 将该选项设置为 **"已启用"。** 
 
-6. 选择“**确定**”。 这将阻止显示其他通知。
+6. 选择“确定”。 这将阻止显示其他通知。
 
 ### <a name="use-group-policy-to-hide-reboot-notifications"></a>使用组策略隐藏重启通知
 
@@ -110,5 +111,5 @@ ms.locfileid: "59201554"
 
 5. 双击取消 **重启通知，** 将选项设置为 **已启用**。 
 
-5. 选择“**确定**”。 这将阻止显示其他通知。
+5. 选择“确定”。 这将阻止显示其他通知。
 

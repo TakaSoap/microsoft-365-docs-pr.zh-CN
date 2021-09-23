@@ -15,12 +15,13 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: e78706f1c95dd507ae41a6bf89403c45dc689b73
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: cd0fac1d4dec536d33f811f5c494127a52f746c3
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400278"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491035"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>为进程打开的文件配置排除项
 
@@ -29,7 +30,7 @@ ms.locfileid: "59400278"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-可以从扫描中排除特定进程打开Microsoft Defender 防病毒文件。 请参阅[推荐定义排除](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)项，然后再定义排除列表。
+可以从扫描中排除特定进程打开Microsoft Defender 防病毒文件。 请参阅[推荐定义排除项，](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)然后再定义排除列表。
 
 本文介绍如何配置排除列表。
 
@@ -47,7 +48,7 @@ ms.locfileid: "59400278"
 
 排除项仅适用于 [始终打开实时保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md)。 它们不适用于计划扫描或按需扫描。
 
-使用组策略对排除列表所做的更改 **会显示在** Windows 安全中心 [列表中](microsoft-defender-security-center-antivirus.md)。 但是，在Windows 安全中心 **所做的更改将不会显示在** 组策略列表中。
+使用组策略对排除列表所做的更改 **将Windows 安全中心**[列表中](microsoft-defender-security-center-antivirus.md)。 但是，在Windows 安全中心所做的更改 **将不会显示在** 组策略列表中。
 
 可以在组策略、Microsoft Endpoint Configuration Manager、Microsoft Intune 以及 Windows 安全中心 应用中添加、删除和查看排除列表，并且可以使用通配符进一步自定义列表。
 
@@ -57,15 +58,15 @@ ms.locfileid: "59400278"
 
 您可以 [配置本地和](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) 全局定义的排除列表的合并方式，以允许本地更改覆盖托管部署设置。
 
-## <a name="configure-the-list-of-exclusions-for-files-opened-by-specified-processes"></a>为指定进程打开的文件配置排除项列表
+## <a name="configure-the-list-of-exclusions-for-files-opened-by-specified-processes"></a>配置由指定进程打开的文件的排除项列表
 
-### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用Microsoft Intune扫描中排除指定进程打开的文件
+### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用 Microsoft Intune从扫描中排除指定进程打开的文件
 
 有关详细信息，请参阅[Microsoft Intune](/intune/device-restrictions-configure) 和 [Microsoft Defender Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) Windows 10 防病毒设备限制设置。
 
-### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用 Microsoft Endpoint Manager从扫描中排除指定进程打开的文件
+### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用Microsoft Endpoint Manager扫描中排除指定进程打开的文件
 
-请参阅[如何创建和部署反恶意软件策略：排除](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)设置，了解有关配置当前分支Microsoft Endpoint Manager (的详细信息) 。
+请参阅[如何创建和部署反恶意软件策略：排除](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)设置，详细了解如何Microsoft Endpoint Manager (当前分支) 。
 
 ### <a name="use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用组策略从扫描中排除指定进程打开的文件
 
@@ -123,7 +124,7 @@ ExclusionProcess
 
 Set、Add和 **Remove** 的使用类似于 PowerShell 中的对应类 `Set-MpPreference` ：、、 和 `Add-MpPreference` `Remove-MpPreference` 。
 
-有关详细信息和允许的参数，请参阅Windows Defender [WMIv2 API。](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+有关详细信息和允许的参数，请参阅 Windows Defender [WMIv2 API。](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ### <a name="use-the-windows-security-app-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用Windows 安全中心应用从扫描中排除指定进程打开的文件
 
@@ -133,7 +134,7 @@ Set、Add和 **Remove** 的使用类似于 PowerShell 中的对应类 `Set-MpPre
 
 进程排除列表中的通配符的使用不同于在其他排除列表中的使用。
 
-特别是，不能使用问号 () 通配符，并且星号 () 通配符只能在完整路径的末尾 `?` `*` 使用。 在进程排除列表中定义 (时，仍可以将) 变量用作通配符 `%ALLUSERSPROFILE%` 。
+特别是，不能使用问号 () 通配符，并且星号 () 通配符只能在完整路径的末尾 `?` `*` 使用。 您仍可以使用环境变量 (，) 在进程排除列表中定义项时将变量用作 `%ALLUSERSPROFILE%` 通配符。
 
 下表介绍如何在进程排除列表中使用通配符：
 
@@ -162,9 +163,9 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> 检查 MpCmdRun 的排除项Microsoft Defender 防病毒 2018 年 12 月 (或更高版本发布的 CAMP) 4.18.1812.3。
+> 检查 MpCmdRun 的排除项需要 Microsoft Defender 防病毒 CAMP 版本 4.18.1812.3 (2018 年 12 月) 或更高版本。
 
-### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>使用 PowerShell 查看排除项列表以及所有其他Microsoft Defender 防病毒首选项
+### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>使用 PowerShell 查看所有其他首选项Microsoft Defender 防病毒列表
 
 使用以下 cmdlet：
 
@@ -189,7 +190,7 @@ $WDAVprefs.ExclusionProcess
 
 - [配置并验证扫描中的Microsoft Defender 防病毒项](configure-exclusions-microsoft-defender-antivirus.md)
 - [根据文件名、扩展名和文件夹位置配置并验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [在 Microsoft Defender 防病毒 Server 上配置Windows排除项](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [在 Microsoft Defender 防病毒 服务器上配置Windows排除项](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [定义排除时要避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [自定义、启动和查看扫描Microsoft Defender 防病毒修正的结果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

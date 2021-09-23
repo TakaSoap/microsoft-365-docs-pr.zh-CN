@@ -16,12 +16,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 890303a15618a0318db0421c9c80f270583e19bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: da8b7c2949e594fc461ca6a8ac65467bb207aae4
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162247"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59489578"
 ---
 # <a name="turn-on-protocol-recognition"></a>打开协议识别 
 
@@ -37,7 +38,7 @@ ms.locfileid: "59162247"
 
 1. 在组策略管理终结点上，打开组 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。
 
-2. 转到计算机 **配置**  >  **网络检查系统**  >  **Windows管理Microsoft Defender 防病毒**  >    >  **组件**。 
+2. 转到计算机 **配置** 管理模板  >    >  **Windows组件**  >  **Microsoft Defender 防病毒**  >  **网络检查系统**。 
 
 3. 选择 **协议识别**。 默认情况下，启用此策略。 如果设置为 **"未配置"，** 则启用定义停用。 
 

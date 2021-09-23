@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 81d9194d9e0c6677f01f34b8052efa0333270c04
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5616a2b4aecede00ca11a56d37bc7d074d260627
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196622"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491165"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -34,6 +34,11 @@ ms.locfileid: "59196622"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+
+## <a name="1120240103"></a>1.1.20240103
+- 设备运行状况卡 - 设备运行状况卡向最终用户通知任何挂起的软件更新。
+- 可用性增强功能 - 最终用户现在可以从 MSDefender 应用本身禁用 Defender for Endpoint VPN。 在此更新之前，最终用户只能从应用或应用设置 VPN。
+- Bug 修复。
 
 ## <a name="1120020101"></a>1.1.20020101
 - UX 增强功能 - 适用于终结点的 Microsoft Defender 具有新外观。
@@ -48,7 +53,7 @@ ms.locfileid: "59196622"
 ## <a name="1115140101"></a>1.1.15140101
 
 - **越狱检测** 为预览版。 有关详细信息，请参阅基于 [设备风险信号设置条件访问策略](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)。
-- **对于通过** Intune 应用程序注册的设备，VPN 配置文件的Microsoft Endpoint Manager (预览) 。 有关详细信息，请参阅为已注册的 [iOS 设备自动设置 VPN 配置文件](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
+- **对于通过** Intune 应用程序注册的设备，VPN 配置文件的自动设置Microsoft Endpoint Manager (预览) 。 有关详细信息，请参阅为已注册的 [iOS 设备自动设置 VPN 配置文件](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
 - Microsoft Defender ATP 产品名称现已更新到应用商店中的 Microsoft Defender for Endpoint。
 - 改进了登录体验。
 - Bug 修复。

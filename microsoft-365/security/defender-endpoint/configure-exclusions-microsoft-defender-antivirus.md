@@ -15,12 +15,13 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: a6df318ccf484d750ae8010f34b5c545b115cde0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 035b94722417d8abfc00f6155842f1cf001e93e6
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222374"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491059"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>配置并验证扫描Microsoft Defender 防病毒排除项
 
@@ -34,16 +35,16 @@ ms.locfileid: "59222374"
 
 若要配置和验证排除项，请参阅以下内容：
 
-- [根据文件名、扩展名和文件夹位置配置并验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。 你可以根据文件扩展Microsoft Defender 防病毒文件名或位置，从扫描中排除文件。
+- [根据文件名、扩展](configure-extension-file-exclusions-microsoft-defender-antivirus.md)名和文件夹位置配置并验证排除项。 你可以根据文件扩展名Microsoft Defender 防病毒文件名或位置，从扫描中排除文件。
 
 - [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)。 你可以从特定进程打开的扫描中排除文件。
 
 ## <a name="recommendations-for-defining-exclusions"></a>推荐排除项的定义
 
 > [!IMPORTANT]
-> Microsoft Defender 防病毒许多基于已知操作系统行为和典型管理文件（如在企业管理、数据库管理和其他企业方案和情况中使用的那些文件）的自动排除项。
+> Microsoft Defender 防病毒许多基于已知操作系统行为和典型管理文件（如在企业管理、数据库管理和其他企业方案和情况中使用的文件）的自动排除项。
 >
-> 定义排除项会降低由组织提供的Microsoft Defender 防病毒。 您应始终评估与实施排除项相关的风险，并且只应排除您确信不是恶意的文件。
+> 定义排除项会降低组织提供的Microsoft Defender 防病毒。 您应始终评估与实施排除项相关的风险，并且只应排除您确信不是恶意的文件。
 
 定义排除项时，请记住以下几点：
 
@@ -53,9 +54,9 @@ ms.locfileid: "59222374"
 
 - 理想情况下，为了避免为了主动而定义排除项。 例如，不要仅因为你认为将来可能会出现问题而排除某些内容。 仅将排除项用于特定问题，例如与排除项可以缓解的性能或应用程序兼容性有关的问题。
 
-- 查看并审核对排除项列表的更改。 安全团队应保留有关添加特定排除的原因的上下文，以避免以后混淆。 安全团队应能够提供有关排除原因的特定答案。
+- 查看并审核对排除项列表的更改。 安全团队应保留有关添加特定排除的原因的上下文，以避免以后混淆。 安全团队应能够提供特定答案，回答有关排除原因的问题。
 
 ## <a name="see-also"></a>另请参阅
 
-- [Microsoft Defender 防病毒排除Windows Server 2016](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Microsoft Defender 防病毒排除项Windows Server 2016](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [定义排除时要避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)

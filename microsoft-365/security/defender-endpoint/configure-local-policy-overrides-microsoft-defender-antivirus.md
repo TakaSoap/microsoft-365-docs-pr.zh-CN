@@ -1,5 +1,5 @@
 ---
-title: 配置 Microsoft Defender AV 设置的本地覆盖
+title: 为自定义设置配置Microsoft Defender 防病毒替代
 description: 启用或禁用用户在本地更改 Microsoft Defender AV 中的设置。
 keywords: 本地覆盖， 本地策略， 组策略， gpo， 锁定， 合并， 列表
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,13 @@ ms.custom: nextgen
 ms.date: 09/14/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 18260bd67d99aa372de7a14dab7decd3983d1beb
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 847b2085d6285299cea7f32f98c8c682dcb3fb4d
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355880"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490149"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>阻止或允许用户在本地修改Microsoft Defender 防病毒策略设置
 
@@ -48,7 +49,7 @@ ms.locfileid: "59355880"
 
 2. 在组 **策略管理编辑器中** ，转到计算机 **配置，** 然后单击 **管理模板**。
 
-3. 展开树以Windows **组件**  >  **Microsoft Defender 防病毒，** 然后在本文的设置表中 (指定的位置) 。 
+3. 展开树以Windows **组件**  >  **Microsoft Defender 防病毒，** 然后选择本文的设置表中 (指定的位置) 。 
 
 4. 双击 **下表中指定的** 策略设置，将选项设置为所需的配置。 单击 **"确定**"，然后对任何其他设置重复上述操作。
 
@@ -82,7 +83,7 @@ ms.locfileid: "59355880"
 
 默认情况下，在本地组策略和 Windows 安全中心 应用中配置的列表将与网络上部署的适当组策略对象定义的列表合并。 存在冲突时，全局定义的列表优先。
 
-你可以禁用此设置，以确保仅使用全局定义的 (如来自任何已部署的 GPO 列表) 列表。
+可以禁用此设置，以确保仅使用全局定义的 (如任何已部署的 GPO) 列表。
 
 ### <a name="use-group-policy-to-disable-local-list-merging"></a>使用组策略禁用本地列表合并
 

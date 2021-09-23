@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender 防病毒 Server 上配置Windows排除项
+title: 在 Microsoft Defender 防病毒 服务器上配置Windows排除项
 ms.reviewer: pahuijbr
 manager: dansimp
 description: Windows服务器包括基于服务器角色的自动排除项。 还可以添加自定义排除项。
@@ -16,14 +16,15 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 08/17/2021
-ms.openlocfilehash: 31a5eb4e322a4ed897f0bcc59b6dffe1f53da43d
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 3766c78e1c2af55f9e785d73cf639d9a6b1bf2a7
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401958"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491225"
 ---
-# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>在 Microsoft Defender 防病毒 Server 上配置Windows排除项
+# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>在 Microsoft Defender 防病毒 服务器上配置Windows排除项
 
 
 **适用于：**
@@ -33,7 +34,7 @@ ms.locfileid: "59401958"
 
 ## <a name="summary"></a>摘要
 
-本文概述了有关用户或Microsoft Defender 防病毒Windows Server 2016的排除项。
+本文概述了在用户或更高版本Microsoft Defender 防病毒Windows Server 2016排除项。
 
 由于Microsoft Defender 防病毒内置在Windows Server 2016中，因此会自动排除操作系统文件和服务器角色。 但是，您可以定义自定义排除项。 如有必要，还可以选择退出自动排除项。
 
@@ -51,14 +52,14 @@ ms.locfileid: "59401958"
 > 请记住以下几点：
 >
 > - 自定义排除项优先于自动排除项。
-> - 自动排除项仅适用于实时保护 (RTP) 扫描。 在完全扫描、快速扫描或按需扫描期间，自动排除项不适用。
+> - 自动排除项仅适用于 RTP 扫描 (实时) 保护。 在完全扫描、快速扫描或按需扫描期间，自动排除项不适用。
 > - 自定义排除项和重复排除项与自动排除项不冲突。
 > - Microsoft Defender 防病毒部署映像服务和管理 (DISM) 工具来确定计算机上安装了哪些角色。
 
 ## <a name="automatic-exclusions-on-windows-server-2016-or-later"></a>Windows Server 2016或更高版本上的自动排除项
 
 > [!NOTE]
-> 自动排除项仅适用于实时保护 (RTP) 扫描。 在完全扫描、快速扫描或按需扫描期间，自动排除项不适用。
+> 自动排除项仅适用于 RTP 扫描 (实时) 保护。 在完全扫描、快速扫描或按需扫描期间，自动排除项不适用。
 
 在Windows Server 2016或更高版本上，不应定义以下排除项：
 
@@ -137,7 +138,7 @@ ms.locfileid: "59401958"
 
   - `%systemroot%\SYSVOL\domain\DO_NOT_REMOVE_NtFrs_PreInstall_Directory\*\Ntfrs*\`
 
-- 分布式文件系统复制 (DFSR) 和工作文件夹。 这些文件夹由注册表项指定 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
+- 分布式文件系统复制 (DFSR) 数据库和工作文件夹。 这些文件夹由注册表项指定 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
 
   > [!NOTE]
   > 有关自定义位置，请参阅 [选择退出自动排除项](#opting-out-of-automatic-exclusions)。
@@ -162,7 +163,7 @@ ms.locfileid: "59401958"
 
 ##### <a name="hyper-v-exclusions"></a>Hyper-V排除项
 
-下表列出了安装角色角色时自动提供的文件类型排除项、文件夹排除项Hyper-V排除项。
+下表列出了安装角色角色时自动提供的文件类型排除项、文件夹排除Hyper-V排除项。
 
 <br><br/>
 
@@ -187,7 +188,7 @@ ms.locfileid: "59401958"
 
 #### <a name="active-directory-exclusions"></a>Active Directory 排除项
 
-本节列出了在 AD DS 服务器中安装 Active Directory 域服务 (自动) 。
+本节列出了在 AD DS 服务器中安装 Active Directory 域服务时 (提供的) 。
 
 ##### <a name="ntds-database-files"></a>NTDS 数据库文件
 
@@ -245,7 +246,7 @@ ms.locfileid: "59401958"
 
 #### <a name="file-and-storage-services-exclusions"></a>文件和 存储 Services 排除项
 
-本节列出了在安装 File and 存储 Services 角色时自动提供的文件和文件夹排除项。 下面列出的排除项不包括群集角色的排除项。
+本节列出了安装 File 和 存储 Services 角色时自动提供的文件和文件夹排除项。 下面列出的排除项不包括群集角色的排除项。
 
 - `%SystemDrive%\ClusterStorage`
 - `%clusterserviceaccount%\Local Settings\Temp`
@@ -312,7 +313,7 @@ ms.locfileid: "59401958"
 
 #### <a name="windows-server-update-services-exclusions"></a>Windows Server Update Services排除项
 
-此部分列出了在 WSUS Windows Server Update Services (角色时自动) 排除项。 WSUS 文件夹在注册表项中指定 `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
+此部分列出了在安装 WSUS Windows Server Update Services (角色时自动) 排除项。 WSUS 文件夹在注册表项中指定 `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
 
 - `%systemroot%\WSUS\WSUSContent`
 - `%systemroot%\WSUS\UpdateServicesDBFiles`
@@ -321,7 +322,7 @@ ms.locfileid: "59401958"
 
 ## <a name="opting-out-of-automatic-exclusions"></a>选择退出自动排除项
 
-在Windows Server 2016及更高版本中，安全智能更新提供的预定义排除项仅排除角色或功能的默认路径。 如果在自定义路径中安装了角色或功能，或者希望手动控制排除项集，请确保选择退出安全智能更新中提供的自动排除项。 但请记住，自动提供的排除项已针对 Windows Server 2016 及更高版本进行了优化。 请参阅[推荐定义排除](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)项，然后再定义排除列表。
+在Windows Server 2016及更高版本中，安全智能更新提供的预定义排除项仅排除角色或功能的默认路径。 如果在自定义路径中安装了角色或功能，或者希望手动控制排除项集，请确保选择退出安全智能更新中提供的自动排除项。 但请记住，自动提供的排除项已针对 Windows Server 2016及更高版本进行优化。 请参阅[推荐定义排除项，](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)然后再定义排除列表。
 
 > [!WARNING]
 > 选择退出自动排除可能会对性能产生不利影响，或会导致数据损坏。 自动提供的排除项针对 Windows Server 2016 和 Windows Server 2019 角色进行了优化。
@@ -330,7 +331,7 @@ ms.locfileid: "59401958"
 
 可以使用组策略、PowerShell cmdlet 和 WMI 禁用自动排除列表。
 
-### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>使用组策略在 Windows Server 2016 server 2019 Windows自动排除列表
+### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>使用组策略在 Windows Server 2016 Server 2019 Windows自动排除列表
 
 1. 在组策略管理计算机上，打开 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11))。 右键单击要配置的组策略对象， **然后选择编辑**。
 

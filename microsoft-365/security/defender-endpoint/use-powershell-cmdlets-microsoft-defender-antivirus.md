@@ -17,12 +17,13 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 41d36f93ad371842d4ffe81e02cb46adb9e12288
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: e297eb169f3b71185cc6f8fd1a867734a2ed9ca2
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201054"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490819"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>使用 PowerShell cmdlet 配置和管理Microsoft Defender 防病毒
 
@@ -33,14 +34,14 @@ ms.locfileid: "59201054"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-可以使用 PowerShell 在 Windows Defender 中执行各种Windows Defender。 与命令提示符或命令行类似，PowerShell 是基于任务的命令行 shell 和脚本语言，专为系统管理设计。 可以在 MSDN 上的 [PowerShell 中心中阅读有关它的更多信息](/previous-versions/msdn10/mt173057(v=msdn.10))。
+可以使用 PowerShell 在 Windows Defender 中执行Windows Defender。 与命令提示符或命令行类似，PowerShell 是基于任务的命令行 shell 和脚本语言，专为系统管理设计。 可以在 MSDN 上的 [PowerShell 中心中阅读有关它的更多信息](/previous-versions/msdn10/mt173057(v=msdn.10))。
 
 有关 cmdlet 及其函数和可用参数的列表，请参阅 [Defender cmdlet 主题](/powershell/module/defender) 。
 
-PowerShell cmdlet 在 Windows Server 环境中最有用，这些环境不依赖图形用户界面 (GUI) 配置软件。
+PowerShell cmdlet 在 Windows Server 环境中最有用，这些环境不依赖图形用户界面 (GUI) 来配置软件。
 
 > [!NOTE]
-> PowerShell cmdlet 不应用作完整网络策略管理基础结构（如[Microsoft Endpoint Configuration Manager、](/configmgr)组策略管理控制台或 Microsoft Defender 防病毒[](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))[组策略 ADMX 模板）的替换](https://www.microsoft.com/download/101445)。
+> PowerShell cmdlet 不应用作完整网络策略管理基础结构（如[Microsoft Endpoint Configuration Manager、](/configmgr)组策略管理控制台或 Microsoft Defender 防病毒 组[](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))策略[ADMX 模板）的](https://www.microsoft.com/download/101445)替换。
 
 使用 PowerShell 所做的更改将影响部署或进行更改的终结点上的本地设置。 这意味着，使用组策略、Microsoft Endpoint Configuration Manager或Microsoft Intune部署策略可能会覆盖使用 PowerShell 所做的更改。
 

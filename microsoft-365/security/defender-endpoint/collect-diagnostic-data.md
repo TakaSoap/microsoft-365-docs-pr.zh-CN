@@ -1,6 +1,6 @@
 ---
 title: 收集诊断数据Microsoft Defender 防病毒
-description: 使用工具来收集数据以排查Microsoft Defender 防病毒
+description: 使用工具收集数据以排查Microsoft Defender 防病毒
 keywords: 疑难解答， 错误， 修复， 更新合规性， oms， 监视器， 报告， Microsoft Defender av， 组策略对象， 设置， 诊断数据
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: a7f85d20dfa59fbe21f811d8bef30a6c21a69125
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 3edaf6f63e2d5f2ab312bc61591e95c91a58e4c0
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201593"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491071"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>收集 Microsoft Defender AV 诊断数据
 
@@ -37,7 +38,7 @@ ms.locfileid: "59201593"
 > [!NOTE]
 > 作为调查或响应过程的一部分，你可以从设备收集调查包。 操作说明： [从设备收集调查包](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)。
 
-在至少两个遇到相同问题的设备上，通过执行.cab获取诊断文件：
+在至少两个遇到相同问题的设备上，.cab以下步骤获取诊断文件：
 
 1. 打开命令提示符的管理员级别版本，如下所示：
 
@@ -70,7 +71,7 @@ ms.locfileid: "59201593"
 >
 > 在更新合规性中使用 Microsoft Defender 防病毒时，我遇到以下问题：
 >
-> 我至少在以下位置.cab 2 个支持文件：
+> 我至少提供了 2 个支持.cab以下位置的文件：
 >
 > \<accessible share, including access details such as password\>
 >
@@ -98,7 +99,7 @@ mpcmdrun.exe -GetFiles -SupportLogLocation <path>
 
 ****
 
-|字段|描述|
+|字段|说明|
 |---|---|
 |path|命令行中指定的路径或从配置中检索的路径|
 |MMDD|收集诊断数据的月份和日 (例如，0530) |
@@ -111,7 +112,7 @@ mpcmdrun.exe -GetFiles -SupportLogLocation <path>
 
 ## <a name="specify-location-where-diagnostic-data-is-created"></a>指定创建诊断数据的位置
 
-还可以指定使用组策略对象.cab GPO 文件创建诊断 (文件) 。
+还可以指定使用组策略.cab GPO 文件创建诊断 (文件) 。
 
 1. 打开本地组策略编辑器，并找到 SupportLogLocation GPO，位置为： `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation` 。
 

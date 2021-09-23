@@ -15,13 +15,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.date: 09/14/2021
+ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 87200c519aa27a2f8472a025f90a283978fd21a0
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 7434a37985a9e47cc16795c6aa24d6a7d48f66a7
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399810"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490867"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>配置 Microsoft Defender 防病毒软件扫描选项
 
@@ -31,7 +32,7 @@ ms.locfileid: "59399810"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>使用Microsoft Intune配置扫描选项
 
-有关详细信息，[请参阅在](/intune/device-restrictions-configure)[Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)中Microsoft Intune配置Microsoft Defender 防病毒设备Windows 10设置。
+有关详细信息，[请参阅在](/intune/device-restrictions-configure)[Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)中Microsoft Intune配置Microsoft Defender 防病毒设备限制Windows 10设置。
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>使用Microsoft Endpoint Manager配置扫描选项
 
@@ -45,7 +46,7 @@ ms.locfileid: "59399810"
 
 3. 在组 **策略管理编辑器中** ，转到计算机 **配置，** 然后单击 **管理模板**。
 
-4. 展开树以 **Windows** 组件 \> **Microsoft Defender 防病毒，** 然后选择一个位置 (请参阅本文设置和位置) 。 [](#settings-and-locations)
+4. 展开树以 **Windows** 组件Microsoft Defender 防病毒，然后选择一个位置 (请参阅本文设置的位置 \> 和) 。 [](#settings-and-locations)
 
 5. 编辑策略对象。
 
@@ -72,9 +73,9 @@ ms.locfileid: "59399810"
 
 ## <a name="use-powershell-to-configure-scanning-options"></a>使用 PowerShell 配置扫描选项
 
-若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒，请参阅
+若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一起使用，请参阅
 
-- [使用 PowerShell cmdlet Microsoft Defender 防病毒管理服务](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [使用 powerShell cmdlet Microsoft Defender 防病毒管理服务](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Defender cmdlet](/powershell/module/defender/)
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>使用 WMI 配置扫描选项
@@ -83,13 +84,13 @@ ms.locfileid: "59399810"
 
 ## <a name="email-scanning-limitations"></a>电子邮件扫描限制
 
-电子邮件扫描支持在按需扫描和计划Outlook客户端使用的电子邮件文件扫描。 电子邮件中的嵌入对象 (附件和存档文件) 扫描。 可以扫描和修正以下文件格式类型：
+电子邮件扫描支持在按需扫描和计划Outlook客户端使用的电子邮件文件扫描。 还会扫描电子邮件 (嵌入对象，如附件) 存档文件。 可以扫描和修正以下文件格式类型：
 
 - DBX
 - MBX
 - MIME
 
-Outlook 2003 或 (其中存档类型设置为非 unicode) 的 PST 文件也会被扫描，但 Microsoft Defender 防病毒 无法修正在 PST 文件中检测到的威胁。
+也会扫描 Outlook 2003 或较旧版本 (其中存档类型设置为非 unicode) 的 PST 文件，但 Microsoft Defender 防病毒 无法修正在 PST 文件中检测到的威胁。
 
 如果你Microsoft Defender 防病毒电子邮件内检测到威胁，它将显示以下信息来帮助你识别遭到入侵的电子邮件，以便你可以手动修正威胁：
 
@@ -98,7 +99,7 @@ Outlook 2003 或 (其中存档类型设置为非 unicode) 的 PST 文件也会�
 
 ## <a name="scanning-mapped-network-drives"></a>扫描映射的网络驱动器
 
-在任何操作系统上，仅扫描在系统级别映射的网络驱动器。 不扫描用户级别映射的网络驱动器。 用户级别的映射网络驱动器是用户在会话中手动使用自己的凭据映射的驱动器。
+在任何操作系统上，仅扫描在系统级别映射的网络驱动器。 不扫描用户级别映射的网络驱动器。 用户级别的映射网络驱动器是用户手动使用自己的凭据在会话中映射的驱动器。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：新终结点 Web 服务不包含特定应用场景的少量终结点。
 hideEdit: true
-ms.openlocfilehash: 76bfc947460d4c513207c3a53b2f4536282c65e1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e01bf3522d148e71fd4968029e1bbc9204ef9a6a
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195763"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491237"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务中未包含的其他终结点
 
@@ -53,7 +53,7 @@ ms.locfileid: "59195763"
 |2|[Microsoft Support and Recovery Assistant for Office 365](https://diagnostics.office.com/#/)|<https://autodiscover.outlook.com> <br> <https://officecdn.microsoft.com> <br> <https://api.diagnostics.office.com> <br> <https://apibasic.diagnostics.office.com> <br> <https://autodiscover-s.outlook.com> <br> <https://cloudcheckenabler.azurewebsites.net> <br> <https://login.live.com> <br> <https://login.microsoftonline.com> <br> <https://login.windows.net> <br> <https://o365diagtelemetry.trafficmanager.net> <br> <https://odc.officeapps.live.com> <br> <https://offcatedge.azureedge.net> <br> <https://officeapps.live.com> <br> <https://outlook.office365.com> <br> <https://outlookdiagnostics.azureedge.net>|出站服务器流量|
 |3|Azure AD Connect（带有 SSO 选项） - WinRM 和远程 PowerShell|客户 STS 环境（AD FS 服务器和 AD FS 代理）\| TCP 端口 80 和 443|入站服务器流量|
 |4 |ST FS，例如 AD FS 代理服务器（仅限联盟客户）|客户 STS（例如 AD FS 代理）\| 端口 TCP 443 或 TCP 49443，带有 ClientTLS|入站服务器流量|
-|5 |[Exchange Online 统一消息/SBC 集成](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers)|本地会话边界控制器和 \* .um.outlook.com|仅出站服务器流量|
+|5|[Exchange Online 统一消息/SBC 集成](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers)|本地会话边界控制器和 \* .um.outlook.com|仅出站服务器流量|
 |6 |邮箱迁移。 从内部部署[Exchange](/exchange/exchange-deployment-assistant)混合到 Office 365 启动邮箱迁移时，Office 365 将连接到已发布的 Exchange Web 服务 (EWS) /Mailbox Replication Services (MRS) 服务器。 如果需要 Exchange Online 服务器使用的 NAT IP 地址来限制来自特定源 IP 范围的入站连接，它们列在 Office 365 [URL & IP](urls-and-ip-address-ranges.md)范围中的"Exchange Online"服务区域下。 <p> 应小心以确保在限制来自特定源 IP 范围的 TCP 443 连接之前，MRS 代理解析为单独的 FQDN 和公共 IP 地址，以确保对已发布的 EWS 终结点（如 OWA）的访问不会受到影响。|客户本地 EWS/MRS 代理 <br> TCP 端口 443|入站服务器流量|
 |7 |[Exchange 混合部署](/exchange/exchange-deployment-assistant)共存功能，例如忙/闲共享。|客户本地 Exchange 服务器|入站服务器流量|
 |8 |[Exchange 混合部署](/exchange/exchange-deployment-assistant)代理身份验证|客户本地 STS|入站服务器流量|
@@ -71,7 +71,7 @@ ms.locfileid: "59195763"
 |20|使用由世纪互联在中国运营的 [Azure AD Connect](/azure/active-directory/hybrid/) 将本地用户帐户同步到 Azure AD。|\*.digicert.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <br> secure.aadcdn.partner.microsoftonline-p.cn:443 <br> \*.partner.microsoftonline.cn:443 <p> 另请参阅[对 Azure AD 连接问题进行入口故障排除](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity)。|仅出站服务器流量|
 | 21|Microsoft Stream（需要 Azure AD 用户令牌）。 <br> Office 365 全球（包括 GCC）|\*.cloudapp.net <br> \*.api.microsoftstream.com <br> \*.notification.api.microsoftstream.com <br> amp.azure.net <br> api.microsoftstream.com <br> az416426.vo.msecnd.net <br> s0.assets-yammer.com <br> vortex.data.microsoft.com <br> web.microsoftstream.com <br> TCP 端口 443|入站服务器流量|
 |22|将 MFA 服务器用于多重身份验证请求，包括服务器的新安装以及使用 Active Directory 域服务 (AD DS) 进行设置。|请参阅 [Azure AD 多重身份验证服务器入门](/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment)。|仅出站服务器流量|
-|23|Microsoft Graph 更改通知 <p> 开发人员可通过[更改通知](/graph/webhooks?context=graph%2fapi%2f1.0&view=graph-rest-1.0) 来订阅 Microsoft Graph 中的事件。|\*.cloudapp.net <br> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228 <p> Public Cloud: 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223, 23.100.95.104, 40.113.95.219, 104.214.32.10, 168.63.237.145, 52.161.110.176, 52.174.177.183, 13.85.192.59, 13.85.192.123, 13.86.37.15, 13.89.108.233, 13.89.104.147, 20.44.210.83, 20.44.210.146, 40.76.162.99, 40.76.162.42, 40.74.203.28, 40.74.203.27, 51.104.159.213, 51.104.159.181, 51.124.75.43, 51.124.73.177, 51.138.90.7, 51.138.90.52, 52.139.153.222, 52.139.170.157, 52.139.170.47, 52.142.114.29,52.142.115.31, 52.147.213.251, 52.147.213.181, 52.148.24.136, 52.148.27.39, 52.148.115.48, 52.148.114.238, 52.154.246.238, 52.159.23.209, 52.159.17.84, 52.184.94.140 <p> Microsoft Cloud for US Government：52.244.231.173， 52.238.76.151、52.244.250.211、52.238.78.108、52.243.147.249、52.243.148.19、 52.243.157.104、52.243.157.105、52.244.33.45、 52.244.35.174、52.244.111.156、52.244.111.170 <p> 德国 Microsoft 云：51.4.231.136、51.5.243.223、 51.4.226.154、51.5.244.215、51.4.150.206、51.4.150.235、51.5.147.130、51.5.148.103 <p> 由世纪互联网运营的 Microsoft 云中国：139.219.15.33， 42.159.154.223、42.159.88.79、42.159.155.77、40.72.155.199、40.72.155.216、 40.125.138.23、40.125.136.69、42.159.72.35、42.159.72.47、42.159.180.55、42.159.180.56 <br> TCP 端口 443 <p> 注意：创建订阅时，开发人员可指定其他端口。|入站服务器流量|
+|23|Microsoft Graph 更改通知 <p> 开发人员可通过[更改通知](/graph/webhooks?context=graph%2fapi%2f1.0&view=graph-rest-1.0) 来订阅 Microsoft Graph 中的事件。|Public Cloud: 52.159.23.209, 52.159.17.84, 52.147.213.251, 52.147.213.181, 13.85.192.59, 13.85.192.123, 13.89.108.233, 13.89.104.147, 20.96.21.67, 20.69.245.215, 137.135.11.161, 137.135.11.116, 52.162.219.103, 52.162.218.180, 52.229.38.131, 52.183.67.212, 52.142.114.29, 52.142.115.31, 51.124.75.43, 51.124.73.177, 20.44.210.83, 20.44.210.146, 40.80.232.177, 40.80.232.118, 20.48.12.75, 20.48.11.201, 104.215.13.23, 104.215.6.169, 52.148.24.136, 52.148.27.39, 40.76.162.99,40.76.162.42, 40.74.203.28, 40.74.203.27, 13.86.37.15, 52.154.246.238, 20.96.21.98, 20.96.21.115, 137.135.11.222, 137.135.11.250, 52.162.219.149, 52.162.219.167, 52.151.30.78, 52.191.173.85, 51.104.159.213, 51.104.159.181, 51.138.90.7, 51.138.90.52, 52.148.115.48, 52.148.114.238, 40.80.233.14, 40.80.239.196, 20.48.14.35, 20.48.15.147, 104.215.18.55, 104.215.12.254 <p> Microsoft Cloud for US Government：52.244.33.45、52.244.35.174、52.243.157.104、 52.243.157.105、52.182.25.254、52.182.25.110、52.181.25.67、52.181.25.66、 52.244.111.156、52.244.111.170、52.243.147.249、52.243.148.1 9、52.182.32.51、52.182.32.143、52.181.24.199、52.181.24.220 <p> 由世纪互联网运营的 Microsoft 云中国：42.159.72.35、42.159.72.47、 42.159.180.55、42.159.180.56、40.125.138.23、40.125.136.69、40.72.155.199、40.72.155.216 <br> TCP 端口 443 <p> 注意：创建订阅时，开发人员可指定其他端口。|入站服务器流量|
 |
 
 ## <a name="related-topics"></a>相关主题

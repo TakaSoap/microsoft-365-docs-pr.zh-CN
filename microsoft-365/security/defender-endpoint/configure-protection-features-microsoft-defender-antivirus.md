@@ -15,12 +15,13 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 776a3ba076abdb5727a878fd37dabf96407ce1ae
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 0ec8e42d0e5b9e8ddf402d09791f84c7c76d06ab
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401238"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59489501"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>配置方案、高要求和实时保护
 
@@ -32,14 +33,14 @@ ms.locfileid: "59401238"
 Microsoft Defender 防病毒使用多种方法来提供威胁防护：
 
 - 用于快速检测和阻止新威胁和新兴威胁的云保护
-- 始终扫描，使用文件和进程行为监视以及其他启发 (也称为"实时保护") 
+- 始终打开扫描，使用文件和进程行为监视以及其他启发 (也称为"实时保护") 
 - 基于机器学习、人工和自动化大数据分析，以及深入的威胁抵御研究的专用保护更新
 
 你可以配置如何Microsoft Defender 防病毒组策略、System Center配置管理、PowerShell cmdlet 和 WMI Windows Management Instrumentation (这些方法) 。
 
 本部分介绍始终扫描的配置，包括如何检测和阻止被视为不安全但可能不会被检测为恶意软件的应用。
 
-请参阅[通过云保护Microsoft Defender 防病毒](cloud-protection-microsoft-defender-antivirus.md)下一代云技术，了解如何启用和配置Microsoft Defender 防病毒云保护。
+请参阅[通过云保护](cloud-protection-microsoft-defender-antivirus.md)Microsoft Defender 防病毒下一代云技术，了解如何启用和配置Microsoft Defender 防病毒云保护。
 
 ## <a name="in-this-section"></a>本节内容
 

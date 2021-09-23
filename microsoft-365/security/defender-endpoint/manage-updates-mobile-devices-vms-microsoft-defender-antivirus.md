@@ -15,12 +15,13 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d00c4a541951ee1c241a52a19b8ec27301b793a1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 212a746e217e071c4770e4830bd101f18bb27f3e
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196018"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491177"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>管理移动设备和虚拟机 （VM） 的更新
 
@@ -45,9 +46,9 @@ ms.locfileid: "59196018"
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>选择在没有 WSUS 连接的情况下在移动计算机上加入 Microsoft 更新
 
-当运行 Microsoft Defender 防病毒 的移动设备未连接到企业网络或没有 WSUS 连接时，可以使用 Microsoft 更新使安全智能保持最新。
+当运行 Microsoft Defender 防病毒 未连接到企业网络或没有 WSUS 连接时，可以使用 Microsoft 更新使这些设备的安全智能保持最新。
 
-这意味着，保护更新可以通过 Microsoft 更新 (设备) 即使你已设置 WSUS 覆盖 Microsoft 更新。
+这意味着，即使将 WSUS 设置为覆盖 Microsoft 更新， (Microsoft 更新) 保护更新也可以传递到设备。
 
 可以通过以下方法之一选择在移动设备上使用 Microsoft 更新：
 
@@ -75,7 +76,7 @@ ms.locfileid: "59196018"
 
 ### <a name="manually-opt-in-to-microsoft-update"></a>手动选择加入 Microsoft 更新
 
-1. 在 **Windows选择** 加入 **&** 更新"中打开"更新"和"安全设置"。
+1. 在 **Windows选择** 加入 **&** 更新"中打开"更新""安全设置"。
 
 2. 选择 **"高级选项** "。
 
@@ -99,5 +100,5 @@ ms.locfileid: "59196018"
 
 ## <a name="related-articles"></a>相关文章
 
-- [管理Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [管理Microsoft Defender 防病毒更新并应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [更新和管理Microsoft Defender 防病毒中的Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)

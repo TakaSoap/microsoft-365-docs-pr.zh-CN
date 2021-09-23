@@ -1,5 +1,5 @@
 ---
-title: 云保护和示例中Microsoft Defender 防病毒
+title: 云保护和示例中的Microsoft Defender 防病毒
 description: 了解云提供的保护和Microsoft Defender 防病毒
 keywords: Microsoft Defender 防病毒， 下一代技术， 防病毒示例提交， 下一代 av， 机器学习， 反恶意软件， 安全性， defender， 云， 云保护
 search.product: eADQiWindows 10XVcnh
@@ -15,14 +15,15 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 08/31/2021
-ms.openlocfilehash: 5d9f6ace79d05eff795041732e045abf18d5f792
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 946027419feca235442476db41533fb29adc6007
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175474"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490747"
 ---
-# <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>云保护和示例中Microsoft Defender 防病毒
+# <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>云保护和示例中的Microsoft Defender 防病毒
 
 **适用于：**
 
@@ -31,15 +32,15 @@ ms.locfileid: "59175474"
 
 Microsoft Defender 防病毒许多智能机制来检测恶意软件。 最强大的功能之一是应用云的强大功能来检测恶意软件和执行快速分析。 云保护和自动提交示例与 Microsoft Defender 防病毒共同帮助抵御新的和新出现的威胁。 
 
-如果检测到可疑或恶意文件，示例会发送到云服务进行分析，Microsoft Defender 防病毒阻止该文件。 一旦确定（这很快就会发生）就会被用户释放或Microsoft Defender 防病毒。 
+如果检测到可疑或恶意文件，将示例发送到云服务进行分析，Microsoft Defender 防病毒阻止该文件。 一旦确定（这很快就会发生）就会被用户释放或Microsoft Defender 防病毒。 
 
-本文概述了云保护和云解决方案中的自动Microsoft Defender 防病毒。 若要了解有关云保护的更多信息，请参阅云[保护和Microsoft Defender 防病毒。](cloud-protection-microsoft-defender-antivirus.md)
+本文概述了云保护以及云解决方案中的自动Microsoft Defender 防病毒。 若要了解有关云保护的更多信息，请参阅云[保护和Microsoft Defender 防病毒。](cloud-protection-microsoft-defender-antivirus.md)
 
 ## <a name="how-cloud-protection-and-sample-submission-work-together"></a>云保护和示例提交如何协同工作
 
 若要了解云保护如何与示例提交协同工作，了解 Defender for Endpoint 如何抵御威胁可能会很有帮助。 Microsoft Intelligent Security Graph监视来自大量传感器网络的威胁数据。 Microsoft 层基于云的机器学习模型，可基于来自客户端的信号以及智能安全中心中广泛的传感器和数据网络评估Graph。 此方法使 Defender for Endpoint 能够阻止许多之前未发现的威胁。 
 
-下图描述了云保护和示例提交流程Microsoft Defender 防病毒：
+下图描述了云保护流和示例提交Microsoft Defender 防病毒：
 
 :::image type="content" source="images/cloud-protection-flow.png" alt-text="云提供的保护流":::
 
@@ -60,10 +61,10 @@ Microsoft Defender 防病毒和云保护通过以下方法自动阻止大多数�
       - 可以是同步的，也可以异步的。 对于同步，在云呈现裁定之前，文件不会打开。 对于异步，文件将在云保护执行其分析时打开。
       - 元数据可以包括 PE 属性、静态文件属性、动态和上下文属性 (请参阅发送到云保护服务应用程序的元数据[) 。](#examples-of-metadata-sent-to-the-cloud-protection-service)
 
-   2. 在检查元数据后，如果Microsoft Defender 防病毒无法做出结论，它可以请求文件示例以进一步检查。 此请求遵守示例提交的设置配置：
+   2. 检查元数据后，如果Microsoft Defender 防病毒无法做出结论，它可以请求文件示例以进一步检查。 此请求遵守示例提交的设置配置：
 
       1. **自动发送安全示例** (默认) 
-         - 保险箱示例是通常不包含 PII 数据的示例，例如：.bat、.scr、.dll、.exe。
+         - 保险箱被视为通常不包含 PII 数据的示例，例如：.bat、.scr、.dll、.exe。
          - 如果文件可能包含 PII，用户将收到允许提交文件示例的请求。
          - 此选项是 Windows macOS 和 Linux 上的默认选项。
 
@@ -135,7 +136,7 @@ Microsoft Defender 防病毒和云保护通过以下方法自动阻止大多数�
 
 | 方案 | 说明 |
 |:---|:---|
-|Microsoft 365 Defender 门户中的手动文件示例集合 | 将设备载入到 Defender for Endpoint 时，你可以为终结点检测和响应配置[ (EDR) 。 ](overview-endpoint-detection-response.md) 例如，有一个从设备启用示例集合的设置，这很容易与本文中介绍的示例提交设置混淆。 <br/><br/>此设置EDR通过 Microsoft 365 Defender 门户请求时，控制设备中的文件示例集合，并受已建立的角色和权限限制。 此设置可以允许或阻止终结点中的文件集合，以使用门户中的深入分析Microsoft 365 Defender功能。 如果未配置此设置，则默认为启用示例集合。 <br/><br/>了解适用于终结点的 Defender 配置设置，请参阅：在 Defender for Endpoint 中为 Windows 10[设备载入工具和方法](configure-endpoints.md) |
+|Microsoft 365 Defender 门户中的手动文件示例集合 | 将设备载入到 Defender for Endpoint 时，你可以为终结点检测和响应配置[ (EDR) 。 ](overview-endpoint-detection-response.md) 例如，有一个从设备启用示例集合的设置，这很容易与本文中介绍的示例提交设置混淆。 <br/><br/>该EDR设置控制通过 Microsoft 365 Defender 门户请求时来自设备的文件示例集合，并受已建立的角色和权限限制。 此设置可以允许或阻止终结点中的文件集合，以便获得功能，如 Microsoft 365 Defender 门户。 如果未配置此设置，则默认为启用示例集合。 <br/><br/>了解 Defender for Endpoint 配置设置，请参阅：在 Defender for Endpoint 中为 Windows 10[设备载入工具和方法](configure-endpoints.md) |
 | 自动调查和响应内容分析 | 当[](automated-investigations.md)自动调查在设备上运行时 (当配置为自动运行以响应警报或手动运行) 时，可以从终结点收集标识为可疑的文件，以进一步检查。 如有必要，可在自动调查门户中禁用用于自动调查Microsoft 365 Defender功能。 <br/><br/> 还可以修改文件扩展名，以添加或删除将在自动调查期间自动提交的其他文件类型的扩展名。 <br/><br/> 若要了解更多信息，请参阅 [管理自动化文件上载](manage-automation-file-uploads.md)。 |
 
 ## <a name="see-also"></a>另请参阅

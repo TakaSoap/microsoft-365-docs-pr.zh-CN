@@ -17,12 +17,13 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: f2d9c6895abe4654270a9ae3818e2853fc00dd85
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 34c293884a30912485e380da8b7408593435f28c
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400350"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490209"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>使用受控文件夹访问保护文重要件夹
 
@@ -62,14 +63,14 @@ ms.locfileid: "59400350"
 
 受保护的 [文件夹包括](#review-controlled-folder-access-events-in-windows-event-viewer) 公用系统文件夹 (包括启动) ，你可以 [添加更多文件夹](customize-controlled-folders.md#protect-additional-folders)。 还可以允许 [应用](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) 向它们授予对受保护文件夹的访问权限。
 
-可以使用审核 [模式评估](audit-windows-defender.md) 受控文件夹访问权限启用后对组织的影响。 您还可以访问 Windows Defender Test ground[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认该功能是否正常工作并查看其工作方式。
+可以使用审核 [模式评估](audit-windows-defender.md) 受控文件夹访问权限启用后对组织的影响。 您还可以访问 Windows Defender 测试场网站[demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)以确认功能是否正常工作并查看其工作方式。
 
 受控文件夹访问权限支持以下版本的 Windows：
 
 - [Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)及更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-## <a name="windows-system-folders-are-protected-by-default"></a>Windows默认保护系统文件夹
+## <a name="windows-system-folders-are-protected-by-default"></a>Windows系统文件夹受默认保护
 
 Windows默认保护系统文件夹以及其他一些文件夹：
 
@@ -84,7 +85,7 @@ Windows默认保护系统文件夹以及其他一些文件夹：
 - `c:\Users\<username>\Favorites`
 
 > [!NOTE]
-> 可以将其他文件夹配置为受保护，但不能删除Windows系统文件夹。
+> 你可以将其他文件夹配置为受保护，但无法删除Windows受保护的系统文件夹。
 
 ## <a name="requirements-for-controlled-folder-access"></a>受控文件夹访问权限的要求
 
@@ -92,7 +93,7 @@ Windows默认保护系统文件夹以及其他一些文件夹：
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>在管理门户中查看受控文件夹Microsoft 365 Defender事件
 
-Defender for Endpoint 提供事件的详细报告和阻止，作为其警报[](investigate-alerts.md)调查方案的一Microsoft 365 Defender门户。  ([.Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)中的 Microsoft Defender for Endpoint ) 
+Defender for Endpoint 提供事件的详细报告和阻止，作为其警报[](investigate-alerts.md)调查方案的一Microsoft 365 Defender门户。  (请参阅[Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).) 
 
 可以使用高级搜寻查询 Microsoft Defender 的终结点 [数据](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)。 如果你使用的是审核[模式](audit-windows-defender.md)，可以使用高级搜寻来查看受控[](advanced-hunting-overview.md)文件夹访问权限设置在启用后将如何影响你的环境。
 
@@ -105,13 +106,13 @@ DeviceEvents
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在事件查看器中查看受控Windows访问事件
 
-你可以查看Windows事件日志，以查看当受控文件夹访问权限阻止应用 (或审核) 创建的事件：
+你可以查看Windows事件日志，以查看当受控文件夹访问权限阻止应用 (或审核应用) 创建的事件：
 
-1. 下载 [评估包](https://aka.ms/mp7z2w) ，将文件 *cfa-events.xml* 设备上易于访问的位置。
+1. 下载 [评估包](https://aka.ms/mp7z2w) ，将文件 *cfa-events.xml* 到设备上易于访问的位置。
 2. 在 **事件** 查看器中键入"开始"菜单以打开Windows事件查看器。
 3. 在左侧面板的"操作 **"下**，选择 **"导入自定义视图..."。**
-4. 导航到提取内容 *cfa-events.xml* 并选择它。 或者，[直接复制 XML。](event-views.md)
-5. 选择“**确定**”。
+4. 导航到 *提取文件cfa-events.xml* 并选择它。 或者，[直接复制 XML。](event-views.md)
+5. 选择“确定”。
 
 下表显示与受控文件夹访问权限相关的事件：
 
@@ -127,7 +128,7 @@ DeviceEvents
 
 可以使用该Windows 安全中心查看受受控文件夹访问权限保护的文件夹列表。
 
-1. 在 Windows 10 设备上，打开Windows 安全中心应用。
+1. 在 Windows 10 设备上，打开 Windows 安全中心 应用。
 2. 选择“**病毒和威胁防护**”。
 3. 在 **勒索软件保护下**，选择 **管理勒索软件保护**。
 4. 如果关闭受控文件夹访问权限，你需要将其打开。 选择 **受保护的文件夹**。
@@ -136,4 +137,4 @@ DeviceEvents
    - 若要删除文件夹，请选择该文件夹，然后选择"删除 **"。**
 
 > [!NOTE]
-> [Windows默认保护](#windows-system-folders-are-protected-by-default)系统文件夹，并且无法从列表中删除它们。
+> [Windows系统文件夹](#windows-system-folders-are-protected-by-default)默认受到保护，并且无法从列表中删除它们。

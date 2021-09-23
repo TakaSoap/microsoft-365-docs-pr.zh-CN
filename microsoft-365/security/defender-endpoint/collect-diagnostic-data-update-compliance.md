@@ -1,6 +1,6 @@
 ---
 title: 收集更新合规性和更新更新的诊断Windows Defender Microsoft Defender 防病毒
-description: 使用工具收集数据，以在使用"评估"加载项时解决Microsoft Defender 防病毒合规性问题
+description: 使用工具收集数据，解决在使用"评估"Microsoft Defender 防病毒更新合规性问题
 keywords: 疑难解答， 错误， 修复， 更新合规性， oms， 监视器， 报告， Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 273dc08dd3778451f14f9c78c984be8affc2d8fd
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 7d7c795bdcb8c6d4378cc2a4b13c2671c2d767c6
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510009"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490771"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>收集更新合规性诊断数据进行Microsoft Defender 防病毒评估
 
@@ -34,7 +35,7 @@ ms.locfileid: "58510009"
 
 在尝试此过程之前，请确保已阅读疑难解答[Microsoft Defender 防病毒报告](troubleshoot-reporting.md)，满足所有先决条件，并采取了任何其他建议的疑难解答步骤。
 
-在至少两个未在更新合规性中报告或显示的设备上，通过执行以下步骤.cab诊断文件：
+在至少两台未在更新合规性中报告或显示的设备上，.cab以下步骤获取诊断文件：
 
 1. 打开命令提示符的管理员级别版本，如下所示：
 

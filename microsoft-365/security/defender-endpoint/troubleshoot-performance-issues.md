@@ -16,12 +16,13 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 6fa4ff040bb6c863fab88e25728c69bcf920a07b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 4418b91bb72549db5bb11b9a36a1d3d5c55cb741
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170048"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490795"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>解决与实时保护相关的性能问题
 
@@ -67,9 +68,9 @@ ms.locfileid: "59170048"
 |MaxTimeFile|此进程访问的文件的路径，其中记录了持续时间最长的 `MaxTime` 扫描|
 |EstimatedImpact|在此过程遇到扫描活动的时间段外，扫描此进程访问的文件所花费的时间百分比|
 
-如果性能影响很大，请尝试按照配置并验证应用扫描的排除项中的步骤将进程添加到Microsoft Defender 防病毒[排除项](collect-diagnostic-data.md)。
+如果性能影响很大，请尝试按照配置并验证排除项以扫描中的步骤将进程添加到路径[/Microsoft Defender 防病毒排除项](collect-diagnostic-data.md)。
 
-如果上一步不能解决问题，可以通过以下部分中的进程监视器或Windows[记录器](#capture-performance-logs-using-windows-performance-recorder)来收集[](#capture-process-logs-using-process-monitor)更多信息。
+如果上一步无法解决问题，您可以通过以下部分中的进程监视器或Windows[记录器](#capture-performance-logs-using-windows-performance-recorder)来收集[](#capture-process-logs-using-process-monitor)更多信息。
 
 ## <a name="capture-process-logs-using-process-monitor"></a>使用进程监视器捕获进程日志
 
@@ -78,7 +79,7 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
 1. 将 [进程监视器 v3.60](/sysinternals/downloads/procmon) 下载到类似 的文件夹 `C:\temp` 。
 
 2. 若要删除文件的 Web 标记，请进行以下操作：
-    1. 右键单击 **"ProcessMonitor.zip** 并选择"属性 **"。**
+    1. 右键单击 **"ProcessMonitor.zip"，** 然后选择"**属性"。**
     1. 在"*常规"选项卡* 下，查找"安全性 *"。*
     1. 选中"取消阻止 **"旁边的框**。
     1. 选择“**应用**”。
@@ -87,7 +88,7 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
 
 3. 在 中解压缩文件 `C:\temp` ，使文件夹路径为 `C:\temp\ProcessMonitor` 。
 
-4. 将 **ProcMon.exe** 复制到要Windows的 Windows 客户端或服务器。
+4. 将 **ProcMon.exe** 复制到Windows故障排除Windows客户端或服务器。
 
 5. 在运行 ProcMon 之前，请确保已关闭与 CPU 使用率高问题不相关的所有其他应用程序。 执行此操作将最大程度地减少要检查的进程数。
 
@@ -121,7 +122,7 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
         >
         > ![最小化 Procmon。](images/procmon-minimize.png)
 
-7. 执行步骤 6 中的其中一个过程后，你将看到设置筛选器的选项。 选择“**确定**”。 捕获完成后，你始终可以筛选结果。
+7. 执行步骤 6 中的其中一个过程后，你将看到设置筛选器的选项。 选择“确定”。 捕获完成后，你始终可以筛选结果。
 
     ![将进程名称筛选掉为"系统排除"。](images/procmon-filter-options.png)
 
@@ -152,7 +153,7 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
 
 可以使用 WPR Windows记录器 (WPR) 向 Microsoft 支持人员提交其他信息。 WPR 是一款功能强大的录制工具，可创建记录Windows跟踪。
 
-WPR 是 Windows ADK (Windows部署工具包的一) ，可以从下载并安装 Windows [ADK 下载](/windows-hardware/get-started/adk-install)。 也可以下载它作为 Windows 10 Sdk 中软件开发工具包Windows 10[一部分](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)。
+WPR 是 Windows ADK (Windows部署工具包的一) ，可以从下载并安装 Windows [ADK 下载](/windows-hardware/get-started/adk-install)。 也可以下载它作为 Windows 10 SDK 中Windows 10工具包[的一部分](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)。
 
 可以按照使用 WPR UI 捕获性能日志中的步骤使用 [WPR 用户界面](#capture-performance-logs-using-the-wpr-ui)。
 
@@ -165,7 +166,7 @@ WPR 是 Windows ADK (Windows部署工具包的一) ，可以从下载并安装 W
 
 1. 下载并安装 WPR。
 
-2. 在 *Windows工具包"* 下，右键单击Windows **录制器"。**
+2. 在 *Windows工具包"* 下，右键单击Windows **记录器"。**
 
     !["开始"菜单。](images/wpr-01.png)
 
@@ -202,7 +203,7 @@ WPR 是 Windows ADK (Windows部署工具包的一) ，可以从下载并安装 W
     > [!IMPORTANT]
     > 如果用户可以直接 *重现* 性能问题，则应该选择"文件"以使用文件日志记录模式。 大多数问题属于此类别。 但是，如果用户无法直接重现问题，但在出现问题后很容易注意到该问题，则用户应选择"内存"以使用内存日志记录模式。 这可确保跟踪日志不会由于长时间运行而过度增长。
 
-9. 现在，你已准备好收集数据。 退出与重现性能问题不相关的所有应用程序。 可以选择隐藏 **选项** ，使 WPR 窗口所占用的空间保持较小。
+9. 现在，你已准备好收集数据了。 退出与重现性能问题不相关的所有应用程序。 可以选择" **隐藏选项** "，将 WPR 窗口所占用的空间保持较小。
 
     ![隐藏选项。](images/wpr-08.png)
 
@@ -247,7 +248,7 @@ WPR 是 Windows ADK (Windows部署工具包的一) ，可以从下载并安装 W
 
 1. 将 **[Microsoft Defender for Endpoint 分析](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** 配置文件的性能跟踪下载到本地目录中名为 的文件，例如 `MDAV.wprp` `C:\traces` 。
 
-2. 右键单击"**开始"** 菜单图标并选择"Windows PowerShell (") "命令提示符 **(") "** 管理员"命令提示符窗口。
+2. 右键单击"**开始**"菜单图标并选择"Windows PowerShell (") "命令提示 **(") "** 管理员"命令提示符窗口。
 
 3. 当出现"用户帐户控制"对话框时，选择"**是"。**
 
@@ -258,7 +259,7 @@ WPR 是 Windows ADK (Windows部署工具包的一) ，可以从下载并安装 W
     ```
 
     > [!WARNING]
-    > 如果您的 Windows 服务器具有 64 GB 或 RAM 或更多，请分别使用配置文件， `WDForLargeServers.Light` `WDForLargeServers.Verbose` 而不是配置文件和 `WD.Light` `WD.Verbose` 。 否则，你的系统可能会占用大量未分页的池内存或缓冲区，这可能会导致系统不稳定。
+    > 如果你的 Windows 服务器具有 64 GB 或 RAM 或更多，请分别使用配置文件而不是配置文件和 `WDForLargeServers.Light` `WDForLargeServers.Verbose` `WD.Light` `WD.Verbose` 。 否则，你的系统可能会占用大量未分页的池内存或缓冲区，这可能会导致系统不稳定。
 
 5. 重现问题。
 

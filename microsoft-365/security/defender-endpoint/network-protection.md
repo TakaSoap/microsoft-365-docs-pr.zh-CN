@@ -16,12 +16,13 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
-ms.openlocfilehash: 44f75b2912a8e54df6584a8f97d0f6e76cac6b15
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: ab658009d5459093477dede8fdab5e8da4186eb6
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175445"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491153"
 ---
 # <a name="protect-your-network"></a>保护你的网络
 
@@ -35,9 +36,9 @@ ms.locfileid: "59175445"
 
 ## <a name="overview-of-network-protection"></a>网络保护概述
 
-网络保护有助于保护设备免受基于 Internet 的事件的影响。 网络保护是攻击面减少功能。 它有助于防止员工通过应用程序访问危险域。 在 Internet 上托管欺诈邮件、攻击和其他恶意内容的域被视为危险。 网络保护扩展 Microsoft Defender SmartScreen 以[](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)阻止所有尝试基于域或主机名 (低信誉源的出站 HTTP () ) 。
+网络保护有助于保护设备免受基于 Internet 的事件的影响。 网络保护是攻击面减少功能。 它有助于防止员工通过应用程序访问危险域。 在 Internet 上托管欺诈邮件、攻击和其他恶意内容的域被视为危险。 网络保护扩展[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)以阻止所有基于域或主机名 (尝试连接到低信誉源 (的出站 HTTP) ) 。
 
-网络保护将 Web 保护 [中的保护扩展到](web-protection-overview.md) 操作系统级别。 它为其他受支持的浏览器和非浏览器应用程序提供 Edge 中的 Web 保护功能。 此外，当与终结点检测和响应 一 (时，网络保护) ICS 威胁指示器的可见性和 [阻止](overview-endpoint-detection-response.md)。 例如，网络保护 [适用于可用于阻止](manage-indicators.md) 特定域或主机名的自定义指示器。
+网络保护将 Web 保护 [中的保护扩展到](web-protection-overview.md) 操作系统级别。 它为其他受支持的浏览器和非浏览器应用程序提供 Edge 中的 Web 保护功能。 此外，网络保护在用于终结点检测和响应时 (ICS) 的可见性和阻止[指示器。](overview-endpoint-detection-response.md) 例如，网络保护 [适用于可用于阻止](manage-indicators.md) 特定域或主机名的自定义指示器。
 
 > [!TIP]
 > 有关网络保护的工作原理，demo.wd.microsoft.com Microsoft Defender [](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) for Endpoint 测试站点。
@@ -52,10 +53,10 @@ ms.locfileid: "59175445"
 
 |Windows 版本|Microsoft Defender 防病毒|
 |---|---|
-|Windows 10版本 1709 或更高版本 <p> Windows服务器 1803 或更高版本|[Microsoft Defender 防病毒必须启用](configure-real-time-protection-microsoft-defender-antivirus.md)实时[保护和云提供的](enable-cloud-protection-microsoft-defender-antivirus.md)保护|
+|Windows 10版本 1709 或更高版本 <p> Windows服务器 1803 或更高版本|[Microsoft Defender 防病毒必须启用](configure-real-time-protection-microsoft-defender-antivirus.md)实时保护和[云提供的保护](enable-cloud-protection-microsoft-defender-antivirus.md)|
 |
 
-启用服务后，可能需要配置网络或防火墙，以允许服务和设备之间的连接 (也称为终结点) 。
+启用服务后，可能需要配置网络或防火墙，以允许服务和设备（也称为 (终结点）) 。
 
 - `.smartscreen.microsoft.com`
 - `.smartscreen-prod.microsoft.com`
@@ -85,11 +86,11 @@ DeviceEvents
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>在事件查看器中查看Windows保护事件
 
-你可以查看Windows事件日志，以查看网络保护阻止对恶意 IP 或域 (或审核) IP 或域时创建的事件：
+你可以查看Windows事件日志，以查看网络保护阻止访问恶意 IP 或 (或审核) IP 或域时创建的事件：
 
 1. [直接复制 XML。](event-views.md)
 
-2. 选择“**确定**”。
+2. 选择“确定”。
 
 此过程将创建一个自定义视图，该视图筛选为只显示与网络保护相关的以下事件：
 
@@ -106,19 +107,19 @@ DeviceEvents
 
 ## <a name="network-protection-and-the-tcp-three-way-handshake"></a>网络保护和 TCP 三向握手
 
-使用网络保护，确定是允许还是阻止访问站点是在通过 [TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip)完成三向握手之后。 因此，当网站被网络保护阻止时，你可能会在 Microsoft 365 Defender 门户中看到 操作类型，即使网站已被 `ConnectionSuccess` `NetworkConnectionEvents` 实际阻止。 `NetworkConnectionEvents` 从 TCP 层而不是从网络保护报告。 三向握手完成后，网络保护将允许或阻止对站点的访问。
+使用网络保护，确定是允许还是阻止对站点的访问是在通过 [TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip)完成三向握手之后。 因此，当网站被网络保护阻止时，你可能会在 Microsoft 365 Defender 门户中看到 操作类型，即使网站已被 `ConnectionSuccess` `NetworkConnectionEvents` 实际阻止。 `NetworkConnectionEvents` 从 TCP 层而不是从网络保护报告。 三向握手完成后，网络保护将允许或阻止对站点的访问。
 
 下面是工作原理的示例：
 
-1. 假设用户尝试访问其设备上的网站。 该站点恰好托管在一个危险域中，应受到网络保护阻止。  
+1. 假设用户尝试访问其设备上的网站。 该站点恰好托管在一个危险域中，应该受到网络保护阻止。  
 
 2. 通过 TCP/IP 开始三向握手。 在操作完成之前， `NetworkConnectionEvents` 将记录操作，其 `ActionType` 列为 `ConnectionSuccess` 。 但是，一旦完成三向握手过程，网络保护就会阻止访问站点。 所有这些操作都非常快。 类似过程[发生在以下](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)Microsoft Defender SmartScreen;当三向握手完成时，即已做出确定，并阻止或允许对网站的访问。
 
-3. 在Microsoft 365 Defender门户中，警报队列列出了[警报](alerts-queue.md)。 该警报的详细信息包括 和 `NetworkConnectionEvents` `AlertEvents` 。 可以看到网站被阻止，即使你还有 ActionType 为 `NetworkConnectionEvents` 的项目 `ConnectionSuccess` 。
+3. 在Microsoft 365 Defender门户中，警报队列[列出了警报](alerts-queue.md)。 该警报的详细信息包括 和 `NetworkConnectionEvents` `AlertEvents` 。 可以看到网站被阻止，即使你还有 ActionType 为 `NetworkConnectionEvents` 的项目 `ConnectionSuccess` 。
 
-## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>在多Windows中运行Windows 10 企业版桌面的注意事项
+## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>在多Windows运行时Windows 10 企业版虚拟桌面的注意事项
 
-由于用户的多用户特性Windows 10 企业版，请记住以下几点：
+由于应用程序具有多用户Windows 10 企业版，请记住以下几点：
 
 1. 网络保护是设备范围内的一项功能，不能面向特定的用户会话。
 
@@ -132,7 +133,7 @@ DeviceEvents
 
 ### <a name="alternative-option-for-network-protection"></a>网络保护的备用选项
 
-对于Windows 10 企业版会话 1909 及之后（在 Azure 上的 Windows 虚拟桌面中使用）中，可以使用以下方法启用 Microsoft Edge 的网络保护：
+对于Windows 10 企业版会话 1909 及以下时间（在 Azure 上的 Windows 虚拟桌面中使用）中，可以使用以下方法启用 Microsoft Edge 的网络保护：
 
 1. 使用 ["打开网络保护](enable-network-protection.md) "并按照说明应用策略。
 

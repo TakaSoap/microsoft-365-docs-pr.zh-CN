@@ -16,12 +16,13 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 44c3b0a208c8c870343fc551728f105d4f380de4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 3edca602d9e49d8ddc67da0e740c862364b0d6b4
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175457"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491345"
 ---
 # <a name="manage-event-based-forced-updates"></a>管理基于事件的强制更新
 
@@ -74,7 +75,7 @@ Set-MpPreference -CheckForSignaturesBeforeRunningScan
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>使用 Windows Management Instruction (WMI) 在运行扫描之前检查保护更新
 
-对 [以下属性MSFT_MpPreference类的 **Set**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))方法：
+对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
 
 ```WMI
 CheckForSignaturesBeforeRunningScan
@@ -92,7 +93,7 @@ CheckForSignaturesBeforeRunningScan
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以Windows **安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
+4. 展开树以Windows **安全** \> **Microsoft Defender 防病毒** \> **更新的组件**。
 
 5. 双击启动时 **检查最新的病毒和** 间谍软件定义，将选项设置为 **已启用**。
 
@@ -108,13 +109,13 @@ CheckForSignaturesBeforeRunningScan
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以Windows **安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
+4. 展开树以Windows **安全** \> **Microsoft Defender 防病毒** \> **更新的组件**。
 
 5. 双击启动时 **启动安全智能更新** ，将选项设置为 **已启用**。
 
 6. 单击“确定”。
 
-### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>当不存在更新时，使用 PowerShell cmdlet Microsoft Defender 防病毒下载更新
+### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>当不存在 PowerShell cmdlet 时，Microsoft Defender 防病毒下载更新
 
 使用以下 cmdlet：
 
@@ -124,9 +125,9 @@ Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 
 有关详细信息，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)管理 Microsoft Defender 防病毒 和[Defender cmdlet，](/powershell/module/defender/index)详细了解如何将 PowerShell 与 Microsoft Defender 防病毒。
 
-### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>使用 Windows Management Instruction (WMI) ，在 Microsoft Defender 防病毒不存在时下载更新
+### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>使用 Windows Management Instruction (WMI) ，以在 Microsoft Defender 防病毒 不存在时下载更新
 
-对 [以下属性MSFT_MpPreference类的 **Set**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))方法：
+对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
 
 ```WMI
 SignatureDisableUpdateOnStartupWithoutEngine
@@ -150,7 +151,7 @@ Microsoft Defender AV 可以基于云保护更改其保护。 此类更改可能
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以Windows **安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
+4. 展开树以Windows **安全** \> **Microsoft Defender 防病毒** \> **更新的组件**。
 
 5. 双击允许基于 Microsoft **MAPS** 报告进行实时安全智能更新，将选项设置为 **已启用**。 单击" **确定**"。
 
@@ -162,7 +163,7 @@ Microsoft Defender AV 可以基于云保护更改其保护。 此类更改可能
 ## <a name="see-also"></a>另请参阅
 
 - [部署Microsoft Defender 防病毒](deploy-manage-report-microsoft-defender-antivirus.md)
-- [管理Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [管理Microsoft Defender 防病毒更新并应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [管理何时应下载和应用保护更新](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 - [管理过期终结点的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)

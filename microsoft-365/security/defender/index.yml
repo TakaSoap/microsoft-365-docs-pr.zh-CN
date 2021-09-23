@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft 365 Defender
-summary: 了解解决方案中可靠的安全Microsoft 365 Defender，以便你可以跨攻击面更好地保护企业。
+summary: 了解安全机制中可靠的Microsoft 365 Defender，以便你可以跨攻击面更好地保护企业。
 metadata:
   title: Microsoft 365 Defender文档
-  description: 了解解决方案中可靠的安全Microsoft 365 Defender，以便你可以跨攻击面更好地保护企业。
+  description: 了解安全机制中可靠的Microsoft 365 Defender，以便你可以跨攻击面更好地保护企业。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 4ce4681ff5008cc3209789139bacd8441a7f724f
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: bf167feb138be131ac565817767da2d1b1dd5be7
+  ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59175349"
+  ms.lasthandoff: 09/23/2021
+  ms.locfileid: "59491417"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -30,7 +30,7 @@ landingContent:
       url: overview-security-center.md
   - linkListType: whats-new
     links:
-    - text: 新增功能Microsoft 365 Defender
+    - text: Microsoft 365 Defender 的新增功能
       url: ../defender/whats-new.md
   - linkListType: video
     links:
@@ -44,7 +44,7 @@ landingContent:
       url: eval-overview.md
     - text: 在生产中运行试验项目
       url: eval-overview.md
-- title: 开始行动
+- title: 入门
   linkLists:
   - linkListType: get-started
     links:
@@ -110,5 +110,5 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: 'Microsoft 365 Defender预览 (API) '
+    - text: Microsoft 365 DefenderAPI
       url: api-overview.md

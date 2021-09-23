@@ -1,6 +1,6 @@
 ---
-title: 打开定义停用以用于Microsoft Defender 防病毒
-description: 打开定义停用以用于Microsoft Defender 防病毒。
+title: 打开定义停用功能Microsoft Defender 防病毒
+description: 为定义启用停用Microsoft Defender 防病毒。
 keywords: Microsoft Defender 防病毒， 反恶意软件， 安全性， defender， 定义停用
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,12 +16,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 505270d319a78de20bf6fed01b7ca79c9fc2b400
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 48636954f3f9127d5c79047ad160cf5a0133efd5
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162248"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490939"
 ---
 # <a name="turn-on-definition-retirement"></a>启用定义停用
 
@@ -37,7 +38,7 @@ ms.locfileid: "59162248"
 
 1. 在组策略管理终结点上，打开组 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。
 
-2. 转到计算机 **配置**  >  **网络检查系统**  >  **Windows管理Microsoft Defender 防病毒**  >    >  **组件**。 
+2. 转到计算机 **配置**  >  **网络检查Windows**  >  **管理Microsoft Defender 防病毒**  >    >  **组件**。 
 
 3. 选择 **启用定义停用**。 默认情况下，启用此策略。 如果设置为 **"未配置"，** 则启用定义停用。 
 

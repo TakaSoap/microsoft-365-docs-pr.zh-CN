@@ -16,12 +16,13 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 402ae897717e935b59f0f63a48f7307a2ff522e4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: b006b5e402033bda44be35446dfb8b6253bae671
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201689"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491095"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则来避免感染恶意软件
 
@@ -60,7 +61,7 @@ ms.locfileid: "59201689"
 
 ## <a name="warn-mode-for-users"></a>用户警告模式
 
- (**新**！) 警告模式功能之前，已启用的攻击面减少规则可以设置为审核模式或阻止模式。 使用新的警告模式，只要内容被攻击面减少规则阻止，用户就会看到一个指示内容被阻止的对话框。 该对话框还允许用户选择取消阻止内容。 然后，用户可以重试其操作，操作完成。 当用户取消阻止内容时，该内容将保持取消阻止状态 24 小时，然后阻止恢复。
+ (**NEW**！) 在警告模式功能之前，已启用的攻击面减少规则可以设置为审核模式或阻止模式。 使用新的警告模式，只要内容被攻击面减少规则阻止，用户就会看到一个指示内容被阻止的对话框。 该对话框还允许用户选择取消阻止内容。 然后，用户可以重试其操作，操作完成。 当用户取消阻止内容时，该内容将保持取消阻止状态 24 小时，然后阻止恢复。
 
 警告模式可帮助组织制定攻击面减少规则，而不会阻止用户访问执行其任务所需的内容。
 
@@ -71,18 +72,18 @@ ms.locfileid: "59201689"
 - [Windows 10 版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)或更高版本
 - [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)或更高版本
 
-Microsoft Defender 防病毒必须在活动模式下使用实时[保护运行](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
+Microsoft Defender 防病毒在活动模式下使用实时[保护运行](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
 
-此外，请确保[Microsoft Defender 防病毒反恶意软件更新](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)。
+此外，请确保[Microsoft Defender 防病毒反恶意软件](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)更新。
 
 - 最低平台发布要求： `4.18.2008.9`
 - 最低引擎发布要求： `1.1.17400.5`
 
-有关详细信息和获取更新，请参阅 [Microsoft Defender 反恶意软件平台的更新](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)。
+有关详细信息和获取更新，请参阅 Microsoft Defender 反 [恶意软件平台的更新](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)。
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>不支持警告模式的情况
 
-在三个攻击面减少规则中配置警告模式时，三个攻击面减少规则Microsoft Endpoint Manager。  (如果使用组策略配置攻击面减少规则，则支持警告模式。) 在 Microsoft Endpoint Manager 中配置时不支持警告模式的三个规则如下所示：
+当你在三个攻击面减少规则中配置警告模式时，它们不受Microsoft Endpoint Manager。  (如果使用组策略配置攻击面减少规则，则支持警告模式。) 在配置时不支持警告模式的三个规则Microsoft Endpoint Manager如下所示：
 
 - [阻止 JavaScript 或 VBScript 使用](attack-surface-reduction-rules.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) GUID (下载的可执行 `d3e037e1-3eb8-44c8-a917-57927947596d`) 
 - [通过 WMI 事件订阅和 GUID](attack-surface-reduction-rules.md#block-persistence-through-wmi-event-subscription) (阻止 `e6db77e5-3df2-4cf1-b95a-636979351e5b` 持久性) 
@@ -145,9 +146,9 @@ DeviceEvents
 
 3. 在 **"操作"** 下，**选择"导入自定义视图..."。**
 
-4. Select the file *cfa-events.xml* from where it was extracted. 或者，[直接复制 XML。](event-views.md)
+4. 选择从 *cfa-events.xml* 文件的位置创建的文件。 或者，[直接复制 XML。](event-views.md)
 
-5. 选择“**确定**”。
+5. 选择“确定”。
 
 您可以创建一个自定义视图，该视图筛选事件以只显示下列事件，所有这些事件均与受控文件夹访问权限相关：
 

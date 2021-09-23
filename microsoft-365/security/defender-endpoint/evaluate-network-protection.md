@@ -14,12 +14,13 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: be5cbc03fa75d65d2c3fabbbf42594098d0d9d69
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: e671a870805e324cfbf149876c4fca74231a9840
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201534"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491597"
 ---
 # <a name="evaluate-network-protection"></a>网络保护功能评估
 
@@ -29,18 +30,18 @@ ms.locfileid: "59201534"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[网络](network-protection.md) 保护有助于防止员工使用任何应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。
+[网络](network-protection.md) 保护有助于防止员工使用任意应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。
 
 本文通过启用该功能并引导您访问测试站点，帮助你评估网络保护。 此评估文章中的网站并非恶意网站。 它们是专门创建的网站，冒充恶意网站。 网站将复制用户访问恶意站点或域时将发生的行为。
 
 > [!TIP]
-> 还可以访问 Microsoft Defender Testground 网站[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)，demo.wd.microsoft.com 其他保护功能如何工作。
+> 还可以访问 Microsoft Defender Testground 网站[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)，demo.wd.microsoft.com 了解其他保护功能如何工作。
 
 ## <a name="enable-network-protection-in-audit-mode"></a>在审核模式下启用网络保护
 
 在审核模式下启用网络保护，以查看哪些 IP 地址和域已被阻止。 你可以确保它不会影响业务线应用，或了解阻止出现的时间。
 
-1. 在 **脚本中键入 powershell"开始"菜单****右键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"管理"中"开始"菜单 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
@@ -64,7 +65,7 @@ ms.locfileid: "59201534"
 
 若要查看已阻止的应用，请打开事件查看器，并筛选 Microsoft-Windows-Windows-Defender/Operational 日志中的事件 ID 1125。 下表列出了所有网络保护事件。
 
-| 事件 ID | 提供/源 | 描述 |
+| 事件 ID | 提供/源 | 说明 |
 |---|---|---|
 | 5007 | Windows Defender (操作)  | 更改设置时的事件 |
 | 1125 | Windows Defender (操作)  | 审核网络连接时的事件 |
@@ -72,7 +73,7 @@ ms.locfileid: "59201534"
 
 ## <a name="see-also"></a>另请参阅
 
-- [网络保护](network-protection.md)
+- [网络保护功能](network-protection.md)
 
 - [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 

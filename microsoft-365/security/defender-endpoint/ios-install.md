@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf043741e2d066c8eaa7c4919b194a6ffd6d857d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5dde826fcf5ecfd5e1c18c9efefd6c456ba6ecab
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201194"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491489"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>在 iOS 上部署 Microsoft Defender for Endpoint
 
@@ -35,9 +35,9 @@ ms.locfileid: "59201194"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-本主题介绍如何在已注册的设备上在 iOS Intune 公司门户 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅在 Intune 中注册 [iOS/iPadOS 设备](/mem/intune/enrollment/ios-enroll)。
+本主题介绍在已注册的设备上在 iOS Intune 公司门户 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅在 Intune 中注册 [iOS/iPadOS 设备](/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 确保你有权访问 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
@@ -61,7 +61,7 @@ ms.locfileid: "59201194"
 
 1. 选择 **iOS 11.0** 作为最低操作系统。 查看有关应用的其他信息，然后单击下一 **步**。
 
-1. 在"*分配"* 部分，转到"**必需"** 部分，然后选择"**添加组"。** 然后，你可以选择要 (iOS) Defender for Endpoint 的用户组。 单击 **"选择**"，然后单击"下一 **步"。**
+1. 在"*分配"* 部分，转到"**必需"** 部分，然后选择"**添加组"。** 然后，你可以选择你要 (iOS) Defender for Endpoint 的用户组。 单击 **"选择**"，然后单击"下一 **步"。**
 
     > [!NOTE]
     > 所选用户组应由 Intune 注册的用户组成。
@@ -104,9 +104,9 @@ ms.locfileid: "59201194"
 
     ![自动生成的智能手机描述的屏幕截图。](images/41627a709700c324849bf7e13510c516.png)
 
-2. 点击 MSDefender (Defender for Endpoint 应用) 并按照屏幕上的说明完成载入步骤。 详细信息包括最终用户接受 iOS 上终结点的 Defender 所需的 iOS 权限。
+2. 点击 MSDefender (Defender for Endpoint 应用图标) 并按照屏幕上的说明完成载入步骤。 详细信息包括最终用户接受 iOS 上终结点的 Defender 所需的 iOS 权限。
 
-3. 成功载入后，设备将开始显示在设备门户的"设备"Microsoft 365 Defender上。
+3. 成功载入后，设备将开始显示在 Microsoft 365 Defender 列表中。
 
     > [!div class="mx-imgBorder"]
     > ![自动生成的手机描述的屏幕截图。](images/device-inventory-screen.png)
@@ -149,22 +149,11 @@ Intune 允许你通过应用配置策略配置适用于 iOS 的 Defender 应用�
 
    部署到用户组时，用户必须在应用策略之前登录设备。
 
-   单击“**下一步**”。
+   单击“下一步”。
 
 1. 在"**审阅 + 创建**"页上，完成后，选择"创建 **"。** 新配置文件显示在配置文件列表中。
 
-1. 接下来，为了增强防钓鱼功能，可以在受监督的 iOS 设备上部署自定义配置文件。 请按照以下步骤操作：
-    - 从下载配置配置文件 [https://aka.ms/mdatpiossupervisedprofile](https://aka.ms/mdatpiossupervisedprofile)
-    - 导航到 **设备**  ->  **iOS/iPadOS**  ->  **配置文件**  ->  **创建配置文件**
-
-    > [!div class="mx-imgBorder"]
-    > ![管理Microsoft Endpoint Manager中心 7 的图像。](images/ios-deploy-7.png)
-
-    - 提供配置文件的名称。 当系统提示导入配置文件时，请选择上面下载的文件。
-    - 在 **"分配** "部分，选择要应用此配置文件的设备组。 最佳做法是，这应该应用于所有托管的 iOS 设备。 单击“**下一步**”。
-    - 在"**审阅 + 创建**"页上，完成后，选择"创建 **"。** 新配置文件显示在配置文件列表中。
-
 ## <a name="next-steps"></a>后续步骤
 
-- [配置应用保护策略，以将 Defender for Endpoint 风险信号 (MAM) ](ios-install-unmanaged.md)
+- [将应用保护策略配置为将 Defender for Endpoint 风险信号 (MAM) ](ios-install-unmanaged.md)
 - [在 iOS 功能上为终结点配置 Defender](ios-configure-features.md)
