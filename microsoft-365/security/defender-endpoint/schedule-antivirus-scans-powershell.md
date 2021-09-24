@@ -16,12 +16,13 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 73ba654dd312c63651f0cf43244796e94e8ad55b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 1c9dc7f6b5b34fbfd2eb2c6b76b62650d0d213ca
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197255"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498228"
 ---
 # <a name="schedule-antivirus-scans-using-powershell"></a>使用 PowerShell 安排防病毒扫描
 
@@ -77,6 +78,6 @@ Set-MpPreference -RemediationScheduleTime
 Set-MpPreference -ScanScheduleQuickScanTime
 ```
 
-若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一起使用，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender cmdlet。](/powershell/module/defender/)
+若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一Microsoft Defender 防病毒，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender cmdlet。](/powershell/module/defender/)
 
 

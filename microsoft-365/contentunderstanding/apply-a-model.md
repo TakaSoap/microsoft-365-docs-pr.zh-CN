@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Normal
 description: 了解如何将已发布的模型应用到 Microsoft SharePoint 中的文档SharePoint Syntex。
-ms.openlocfilehash: 048197b8f477b62527b2f379a5361d1765c70a3b
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2cc4719720693f6aa386abfc191e2b26b75f813f
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399909"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498086"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中应用文档理解模型
 
@@ -59,17 +59,15 @@ ms.locfileid: "59399909"
 
 5. 选择 **“添加”** 将模型应用到库中。
 
-6. 在模型主页上的"**应用** 模型的地方"部分，应看到列出的SharePoint的名称。
+6. 在模型主页上的"**应用** 模型位置"部分，应看到列出的SharePoint的名称。
 
-7. 转到你的文档库，并确保你处于模型的文档库视图中。 请注意，如果选择文档库名称旁的“信息”按钮，会显示一条消息，说明文档库已应用一个模型。
+7. 转到你的文档库，并确保你处于模型的文档库视图中。 选择 **"自动化**  >  **查看文档了解模型"。**
 
-    ![信息视图。](../media/content-understanding/info-du.png) 
+8. 在"**审阅模型和应用新模型"** 页上，选择"已应用"选项卡以查看应用于文档库的模型。
 
-    你可以选择 **“查看活动模型”** 来查看应用于文档库的任何模型的详细信息。
+    ![Screenshot showing the Applied tab selected and the applied models.](../media/content-understanding/applied-models.png) 
 
-8. 在 **“活动模型”** 窗格中，你可以看到应用于文档库的模型。 选择一个模型以查看关于它的更多详细信息，例如模型的描述、发布该模型的人，以及该模型是否将保留标签应用于它所分类的文件。
-
-    !["活动模型"窗格。](../media/content-understanding/active-models.png) 
+9. 选择 **"** 查看模型详细信息"可查看有关模型的信息，例如模型说明、模型发布者以及模型是否将保留标签或敏感度标签应用于它分类的文件。
 
 将模型应用到文档库之后，你可以开始将文档上传到网站并查看结果。
 
@@ -81,7 +79,7 @@ ms.locfileid: "59399909"
 
 1. 在文档库中，选择要由模型处理的文件和文件夹。
 
-2. 选择文件和文件夹后 **，"分类和提取** "将显示在文档库功能区中。 选择 **“分类和提取”**。
+2. 选择文件和文件夹后 **，"** 分类和提取"将显示在文档库功能区中。 选择 **“分类和提取”**。
 
       ![显示"分类和提取"选项的屏幕截图。](../media/content-understanding/extract-classify.png) 
 
@@ -96,7 +94,7 @@ ms.locfileid: "59399909"
 
    ![显示"分类日期"列的文档库的屏幕截图。](../media/content-understanding/class-date-column.png) 
 
-"分类 **日期**"字段由"当 [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)文件由内容理解模型分类时"触发器使用，在 Syntex 内容理解模型完成对文件或文件夹的处理并更新"分类日期"字段后，运行 Power Automate流。
+"分类 **日期**"字段由"当 [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)文件由内容理解模型分类时"触发器使用，在 Syntex 内容理解模型完成对文件或文件夹的处理并更新了"分类日期"字段后，运行Power Automate 流。
 
    ![Flow触发器。](../media/content-understanding/trigger.png)
 

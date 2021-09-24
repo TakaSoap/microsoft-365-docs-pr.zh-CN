@@ -15,12 +15,13 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: d10399c3064697ab383133cd17cc14dc7dd43cc4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 98477c3f9137c175a46f6e050041974ef6a2b8f1
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170057"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497784"
 ---
 # <a name="troubleshoot-network-protection"></a>网络保护疑难解答
 
@@ -42,7 +43,7 @@ ms.locfileid: "59170057"
 
 1. 确认先决条件
 2. 使用审核模式测试规则
-3. 为指定的误报规则 (排除项) 
+3. 为指定规则添加排除 (用于误报) 
 4. 提交支持日志
 
 ## <a name="confirm-prerequisites"></a>确认先决条件
@@ -55,7 +56,7 @@ ms.locfileid: "59170057"
 > - 终结点将 Microsoft Defender 防病毒用作唯一的防病毒保护应用。 [查看使用非 Microsoft 防病毒解决方案时会发生什么情况](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 > - [实时保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 已启用。
 > - [云提供的保护](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 已启用。
-> - 审核模式未启用。 使用 [组策略](enable-network-protection.md#group-policy)将规则设置为已禁用 (值 **：0**) 。
+> - 审核模式未启用。 使用 [组策略](enable-network-protection.md#group-policy)将规则设置为禁用 (值 **：0**) 。
 
 ## <a name="use-audit-mode"></a>使用审核模式
 
@@ -67,7 +68,7 @@ ms.locfileid: "59170057"
    Set-MpPreference -EnableNetworkProtection AuditMode
    ```
 
-2. 执行导致问题的连接活动 (例如，尝试访问站点，或者连接到您这样做或不希望阻止访问的 IP) 。
+2. 执行导致问题的连接活动 (例如，尝试访问站点，或者连接到您或不希望阻止访问的 IP) 。
 
 3. [查看网络保护事件](network-protection.md#review-network-protection-events-in-windows-event-viewer) 日志，以查看如果该功能已设置为"已启用"，该功能是否阻止 **了连接**。
 
@@ -79,7 +80,7 @@ ms.locfileid: "59170057"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>报告误报或漏报
 
-如果已使用演示网站和审核模式测试了功能，并且网络保护适用于预配置的方案，但无法按预期为特定连接工作，请使用[基于 Windows Defender 安全](https://www.microsoft.com/wdsi/filesubmission)智能 Web 的提交表单报告网络保护的漏报或误报。 使用 E5 订阅，还可以 [提供指向任何关联警报的链接](alerts-queue.md)。
+如果已使用演示网站和审核模式测试了该功能，并且网络保护适用于预配置的方案，但无法按预期为特定连接工作，请使用[基于 Windows Defender 安全](https://www.microsoft.com/wdsi/filesubmission)智能 Web 的提交表单报告网络保护的漏报或误报。 使用 E5 订阅，还可以 [提供指向任何关联警报的链接](alerts-queue.md)。
 
 请参阅在 Microsoft Defender for Endpoint 中解决 [误报/负数](defender-endpoint-false-positives-negatives.md)。
 

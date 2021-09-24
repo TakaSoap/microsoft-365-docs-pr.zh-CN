@@ -17,12 +17,13 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 1e4e32864c2541cfc0cf14602ec954d5e643f309
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 52223916ba94959f15fb5bf8fb351ff4fda8c62e
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402138"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498302"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻击面减少规则疑难解答
 
@@ -38,13 +39,13 @@ ms.locfileid: "59402138"
 当你使用 [攻击面减少规则时](attack-surface-reduction.md) ，你可能会遇到问题，例如：
 
 - 规则阻止文件、进程或执行其他一些不应 (误报) 
-- 规则不能如所描述的一样工作，或者不会阻止文件或进程 (漏报) 
+- 规则不能如所述工作，或不会阻止应 (漏报的文件或) 
 
 解决这些问题有四个步骤：
 
 1. [确认先决条件](#confirm-prerequisites)
 2. [使用审核模式测试规则](#use-audit-mode-to-test-the-rule)
-3. [为指定规则添加排除 (](#add-exclusions-for-a-false-positive) 用于误报) 
+3. [为指定的误报规则添加 (](#add-exclusions-for-a-false-positive) 排除项) 
 4. [提交支持日志](#collect-diagnostic-data-for-file-submissions)
 
 ## <a name="confirm-prerequisites"></a>确认先决条件
@@ -63,7 +64,7 @@ ms.locfileid: "59402138"
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>使用审核模式测试规则
 
-你可以访问 demo.wd.microsoft.com 上的[Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)测试场网站，以确认攻击面减少规则通常适用于设备上预配置的方案和流程，或者可以使用审核模式（启用仅报告规则）。
+你可以访问 demo.wd.microsoft.com 上的[Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)测试场网站，以确认攻击面减少规则通常适用于设备上预配置的方案和进程，或者可以使用审核模式（它仅启用报告规则）。
 
 按照使用演示 [工具中的以下说明查看攻击面](evaluate-attack-surface-reduction.md) 减少规则如何工作，以测试遇到问题的特定规则。
 
@@ -79,9 +80,9 @@ ms.locfileid: "59402138"
 
 如果你已使用演示工具和审核模式测试了规则，并且攻击面减少规则正在预配置的方案中运行，但规则未按预期工作，请根据你的情况继续执行以下任一部分：
 
-1. 如果攻击面减少规则阻止了不应阻止的攻击 (也称为误报) ，你可以首先添加攻击面减少 [规则排除](#add-exclusions-for-a-false-positive)。
+1. 如果攻击面减少规则阻止不应阻止 (也称为误报) ，你可以首先添加攻击面减少 [规则排除](#add-exclusions-for-a-false-positive)。
 
-2. 如果攻击面减少规则未阻止应阻止 (也称为漏报) ，你可以立即继续执行最后一步，收集诊断数据，将问题提交给 [我们](#collect-diagnostic-data-for-file-submissions)。
+2. 如果攻击面减少规则未阻止应阻止 (也称为漏报) ，你可以立即进入最后一步，收集诊断数据，将问题提交给 [我们](#collect-diagnostic-data-for-file-submissions)。
 
 ## <a name="add-exclusions-for-a-false-positive"></a>添加误报的排除项
 
@@ -95,7 +96,7 @@ ms.locfileid: "59402138"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>报告误报或漏报
 
-使用Windows Defender[安全智能基于](https://www.microsoft.com/wdsi/filesubmission)Web 的提交表单报告网络保护的漏报或误报。 使用 Windows E5 订阅，还可以[提供指向任何关联警报的链接](alerts-queue.md)。
+使用Windows Defender安全智能[基于](https://www.microsoft.com/wdsi/filesubmission)Web 的提交表单报告网络保护的漏报或误报。 使用 Windows E5 订阅，还可以[提供指向任何关联警报的链接](alerts-queue.md)。
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>收集文件提交的诊断数据
 

@@ -13,12 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d1a0b8af6dbf725623986582f5ee8e0b3912f0b5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: e60ca593f9cea750473212daca834b2e63711ace
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170471"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497604"
 ---
 # <a name="device-control-printer-protection"></a>设备控制打印机保护
 
@@ -26,7 +27,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 ## <a name="licensing"></a>授权
 
-在开始使用打印机保护之前，你应该[确认你的Microsoft 365订阅。](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) 若要访问和使用打印机保护，您必须具有以下各项：
+在开始使用打印机保护之前，你应该[确认你的Microsoft 365订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 若要访问和使用打印机保护，您必须具有以下各项：
 
 - Microsoft 365 E3/策略部署
 - Microsoft 365 E5报告功能
@@ -43,7 +44,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 - 全局安全管理员
 - 安全管理员
-- 安全读取者
+- 安全信息读取者
 
 ## <a name="prepare-your-endpoints"></a>准备终结点
 
@@ -54,7 +55,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
     - For Windows 1909： install Windows Update [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1)
     - 对于 Windows 2004 或更高版本
 
-2. 如果你计划通过组策略部署策略，则必须将设备载入 Microsoft Defender，以加入终结点;如果你计划通过 Microsoft Endpoint Manager 部署策略，则必须使用 Microsoft Intune。
+2. 如果你计划通过组策略部署策略，则必须将设备载入加入适用于终结点的 Microsoft Defender;如果你计划通过 Microsoft Endpoint Manager 部署策略，则必须使用 Microsoft Intune。
 
 ## <a name="deploy-device-control-printer-protection-policy"></a>部署设备控制打印机保护策略
 
@@ -64,7 +65,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 ****
 
-|标题|说明|云解决方案提供商支持 | GPO 支持 | 基于用户的支持 | 基于计算机的支持 |
+|标题|描述|云解决方案提供商支持 | GPO 支持 | 基于用户的支持 | 基于计算机的支持 |
 |---|---|:---:|:---:|:---:|:---:|
 |**启用设备控制打印限制**|阻止用户通过非公司打印机打印|是|是|是|是|
 |**已批准的 USB 连接打印设备列表**\*|允许特定 USB 打印机|是|是|是|是|
@@ -134,7 +135,7 @@ CSP 支持字符串，包含 `<enabled/>` ：
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>在 Microsoft Defender 终结点门户中查看设备控制打印机保护数据
 
-安全[Microsoft 365显示](https://security.microsoft.com)上述设备控制打印机保护策略阻止的打印。
+安全[Microsoft 365显示](https://security.microsoft.com)上面的设备控制打印机保护策略阻止的打印。
 
 ```kusto
 DeviceEvents

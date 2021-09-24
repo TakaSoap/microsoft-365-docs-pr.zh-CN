@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft 365 Defender
-summary: 了解安全机制中可靠的Microsoft 365 Defender，以便你可以跨攻击面更好地保护企业。
+summary: 了解解决方案中可靠的安全Microsoft 365 Defender，以便你可以跨攻击面更好地保护企业。
 metadata:
   title: Microsoft 365 Defender文档
-  description: 了解安全机制中可靠的Microsoft 365 Defender，以便你可以跨攻击面更好地保护企业。
+  description: 了解解决方案中可靠的安全Microsoft 365 Defender，以便你可以跨攻击面更好地保护企业。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: bf167feb138be131ac565817767da2d1b1dd5be7
-  ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+  ms.openlocfilehash: e2aa6e0546af05d9265d2aece406f18bd498c997
+  ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/23/2021
-  ms.locfileid: "59491417"
+  ms.lasthandoff: 09/24/2021
+  ms.locfileid: "59497761"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -68,13 +68,13 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 什么是 Defender for Office 365？
+    - text: 什么是 Microsoft Defender for Office 365？
       url: ../office-365-security/defender-for-office-365.md
-    - text: Defender for Office 365 服务说明
+    - text: Microsoft Defender for Office 365 服务说明
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-    - text: Microsoft 365 Defender 中的 Defender for Office 365
+    - text: Microsoft Defender for Office 365 in Microsoft 365 Defender
       url: microsoft-365-security-center-mdo.md
-    - text: 重定向 Defender for Office 365 in Microsoft 365 Defender
+    - text: 重定向 Microsoft Defender for Office 365 Microsoft 365 Defender
       url: microsoft-365-security-mdo-redirection.md
 - title: Microsoft Defender for Endpoint
   linkLists:
