@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f12a416a95f55a73bd0bbd80bfb1a4fe5121aeec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2510ca3289cf6b6f7ed774b1d87aa2692e8b3f5d
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175306"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484055"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -154,7 +154,7 @@ ms.locfileid: "59175306"
      |**在主题行前面追加文本**：向邮件的主题行开头添加文本。 邮件递送到邮箱，并移动到“垃圾邮件”文件夹。<sup>1、2</sup> <p> 稍后将在 **“在主题行前面添加此文本作为前缀”** 框中输入文本。|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)|
      |**将邮件重定向到电子邮件地址**：将邮件发送给其他收件人，而不是目标收件人。 <p> 稍后将在 **“重定向到此电子邮件地址”** 框中指定收件人。|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
      |**删除邮件**：无提示删除整个邮件，包括所有附件。|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)|
-     |**隔离邮件**：将邮件发送到隔离，而不是目标收件人。 <p> 稍后将在 **“隔离”** 框中指定所需的邮件隔离时长。|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)|
+     |**隔离邮件**：将邮件发送到隔离，而不是目标收件人。 <p> 稍后将在 **“隔离”** 框中指定所需的邮件隔离时长。 <p> 在出现的“**选择策略** 框中指定 [隔离策略](quarantine-policies.md)，以将其应用于垃圾邮件筛选器裁定的隔离邮件。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。<sup>3</sup>|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)|
      |**无操作**|||||![复选标记](../../media/checkmark.png)|
      |
 
@@ -163,9 +163,10 @@ ms.locfileid: "59175306"
      > 在 EOP 保护本地 Exchange 邮箱的混合环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[在混合环境中将 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
      >
      > <sup>2</sup>可以将此使用值用作邮件流规则（亦称为“传输规则”）中的条件来筛选或路由邮件。
+     >
+     > <sup>3</sup> 空白的 **选择策略** 值表示使用该特定裁定的默认隔离策略。 稍后编辑反垃圾邮件策略或查看设置时，将显示默认隔离策略名称。 有关用于垃圾邮件筛选器裁定的默认隔离策略的详细信息，请参阅 [此表](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)。
 
    - **将垃圾邮件保留在隔离区内此天数**：指定在你选择“**隔离邮件**”作为垃圾邮件筛选裁定操作时将邮件放在隔离区内的时长。 在此时间段到期后，邮件就会被删除。 默认值为 30 天。 有效值介于 1 和 30 天之间。 若要了解隔离，请参阅以下文章：
-
      - [EOP 中隔离的邮件](quarantine-email-messages.md)
      - [在 EOP 中以管理员身份管理已隔离邮件和文件](manage-quarantined-messages-and-files.md)
      - [在 EOP 中以用户身份查找和释放已隔离邮件](find-and-release-quarantined-messages-as-a-user.md)
@@ -191,7 +192,8 @@ ms.locfileid: "59175306"
      - **为钓鱼邮件启用 ZAP**：默认情况下，为钓鱼检测启用 ZAP，但可通过清除复选框来禁用它。
      - **为垃圾邮件启用 ZAP**：默认情况下，为垃圾邮件检测启用 ZAP，但可通过清除复选框来禁用它。
 
-   - **启用最终用户垃圾邮件通知**：有关详细信息，请参阅本文后面的 [配置最终用户垃圾邮件通知](#configure-end-user-spam-notifications)部分。
+   > [!NOTE]
+   > 最终用户垃圾邮件通知已替换为隔离策略中的 _隔离通知_，这些通知包含有关所有受支持保护功能（而不仅仅是反垃圾邮件策略裁定）的隔离邮件的信息。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
 
    完成后，单击“**下一步**”。
 
@@ -313,36 +315,6 @@ ms.locfileid: "59175306"
 
 4. 完成后，单击策略详细信息浮出控件中的“**关闭**”。
 
-### <a name="configure-end-user-spam-notifications"></a>配置最终用户垃圾邮件通知
-
-> [!NOTE]
-> 组不支持最终用户垃圾邮件通知。
-
-如果垃圾邮件筛选裁定隔离了邮件，你可以配置最终用户垃圾邮件通知，让收件人知道向他们发送的邮件发生了什么。 若要详细了解这些通知，请参阅 [ EOP 中的最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
-
-1. 在 Microsoft 365 Defender 门户中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>的“**反垃圾邮件**”。
-
-2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择反垃圾邮件策略：
-   - 你创建的自定义策略，其中“**类型**”列中的值为“**自定义反垃圾邮件策略**”。
-   - 名为“**反垃圾邮件入站策略（默认）**”的默认策略。
-
-3. 在出现的策略详细信息浮出控件中，单击“**操作**”部分中的“**编辑**”。 在出现的“**操作**”浮出控件中，配置下列设置：
-
-   - **启用最终用户垃圾邮件通知**：选中此复选框可启用通知，或清除此复选框可禁用通知。 选中该复选框时，将显示以下附加设置：
-
-     - **发送最终用户垃圾邮件通知的间隔天数**：选择通知发送频率。 默认值为 3 天。 可输入介于 1 和 15 天之间的值。
-
-       在 24 小时内，有 3 个从以下时间开始计时的最终用户垃圾邮件通知周期：01:00 UTC、08:00 UTC 和 16:00 UTC。
-
-       > [!NOTE]
-       > 如果我们在上一个周期中错过了通知，则后续周期会推送通知。 这可能会在同一天内显示多个通知。
-
-     - **语言**：单击下拉列表，并从列表中选择可用语言。 默认值是“默认”（即英语）。
-
-   完成时，请单击“保存”。
-
-4. 返回策略详细信息浮出控件，单击“**关闭**”。
-
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-anti-spam-policies"></a>使用 Microsoft 365 Defender 门户删除自定义反垃圾邮件策略
 
 当你使用 Microsoft 365 Defender 门户删除自定义反垃圾邮件策略时，垃圾邮件筛选规则和相应的垃圾邮件筛选策略都将被删除。无法删除默认反垃圾邮件策略。
@@ -366,7 +338,6 @@ ms.locfileid: "59175306"
 以下反垃圾邮件策略设置仅在 PowerShell 中可配置：
 
 - 默认情况下，_MarkAsSpamBulkMail_ 参数的值为 `On`。 本文前面的“[使用 Microsoft 365 Defender 门户创建反垃圾邮件策略](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)”部分中介绍了此设置的效果。
-
 - 以下设置用于最终用户垃圾邮件隔离通知：
   - _DownloadLink_ 参数：显示或隐藏 Outlook 垃圾邮件报告工具的链接。
   - _EndUserSpamNotificationCustomSubject_ 参数：可用于自定义通知的主题行。
@@ -397,7 +368,7 @@ New-HostedContentFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments
 
 下面的示例使用以下设置创建名为“Contoso Executives”的垃圾邮件筛选策略：
 
-- 当垃圾邮件筛选裁定为“垃圾邮件”或“高可信度垃圾邮件”时隔离邮件。
+- 当垃圾邮件筛选裁定为垃圾邮件或高可信度垃圾邮件时隔离邮件，并使用隔离邮件的默认 [隔离策略](quarantine-policies.md)（不使用 _SpamQuarantineTag_ 或 _HighConfidenceSpamQuarantineTag_ 参数）。
 - BCL 7、8 或 9 触发群发电子邮件垃圾邮件筛选裁定对应的操作。
 
 ```PowerShell
@@ -405,6 +376,9 @@ New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamActi
 ```
 
 若要详细了解语法和参数，请参阅 [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy)。
+
+> [!NOTE]
+> 有关指定要在垃圾邮件筛选策略中使用的 [隔离策略](quarantine-policies.md) 的详细说明，请参阅 [使用 PowerShell 在反垃圾邮件策略中指定隔离策略](quarantine-policies.md#anti-spam-policies-in-powershell)。
 
 #### <a name="step-2-use-powershell-to-create-a-spam-filter-rule"></a>第 2 步：使用 PowerShell 创建垃圾邮件筛选规则
 
@@ -499,6 +473,9 @@ Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
 若要详细了解语法和参数，请参阅 [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)。
+
+> [!NOTE]
+> 有关指定要在垃圾邮件筛选策略中使用的 [隔离策略](quarantine-policies.md) 的详细说明，请参阅 [使用 PowerShell 在反垃圾邮件策略中指定隔离策略](quarantine-policies.md#anti-spam-policies-in-powershell)。
 
 ### <a name="use-powershell-to-modify-spam-filter-rules"></a>使用 PowerShell 修改垃圾邮件筛选规则
 

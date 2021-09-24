@@ -20,12 +20,12 @@ ms.custom:
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04a3831ec923ec24846eb6d0e76273d1010862c6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3fcd6cb3eb6aee387fd1e4943c837f855abc5f34
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196489"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483659"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 
@@ -38,7 +38,7 @@ ms.locfileid: "59196489"
 
 无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。有关详细信息，请参与 [在 EOP 中隔离](quarantine-email-messages.md)。
 
-如下表所述，普通用户（不是管理员）作为隔离邮件的收件人可对邮件执行以下操作：
+作为普通用户(非管理员)，下表描述了作为已隔离邮件的收件人可用的 **默认** 功能:
 
 <br>
 
@@ -46,12 +46,29 @@ ms.locfileid: "59196489"
 
 |隔离原因：|查看|发布|删除|
 |---|:---:|:---:|:---:|
+|**反垃圾邮件策略**||||
 |批量邮件|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
 |垃圾邮件|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
-|钓鱼(非高可信度钓鱼)|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
+|高可信度垃圾邮件|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
+|网络钓鱼|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
+|高可信度网络钓鱼||||
+|**反网络钓鱼策略**||||
+|EOP 中的欺骗智能保护|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
+|Defender for Office 365 中的模拟用户保护|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
+|Defender for Office 365 中的模拟域保护|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
+|Defender for Office 365 中的邮箱智能保护|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
+|**反恶意软件策略**||||
+|包含隔离为恶意软件的附件的电子邮件。||||
+|**Defender for Office 365 中的安全附件**||||
+|将包含恶意附件的电子邮件隔离为恶意软件的安全附件策略。||||
+|将恶意文件隔离为恶意软件的 SharePoint、OneDrive 以及 Microsoft Teams 的安全附件。||||
+|**邮件流规则(传输规则)**||||
+|隔离电子邮件的邮件流规则。||||
 |
 
-你可以在“Microsoft 365 Defender 门户”或[最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)（如果管理员已对此进行了设置）中查看和管理隔离的邮件。
+_隔离策略_ 根据在 [受支持功能](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) 中隔离邮件的原因定义允许用户对已隔离邮件执行的操作。 默认的隔离策略会强制执行上表中所述的历史功能。 管理员可以创建并应用自定义隔离策略，这些策略为受支持功能中的用户定义限制少或多的功能。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
+
+可以在 Microsoft 365 Defender 门户或来自隔离策略的隔离通知(如果管理员已设置)中查看并管理隔离邮件。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -59,13 +76,12 @@ ms.locfileid: "59196489"
 
 - 管理员可以配置邮件在永久删除前的隔离期限（反垃圾邮件策略）。 隔离到期的邮件不可恢复。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
-- 此外，管理员还可以在反垃圾邮件策略中[启用最终用户垃圾邮件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。 原始邮件收件人可以直接从这些通知 *释放* 隔离的垃圾邮件。 原始邮件收件人可以直接从这些通知中 *查看* 隔离的网络钓鱼邮件（非高可信度网络钓鱼邮件）。 有关详细信息，请参阅 [EOP 中的最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
-
-- 只有管理员才能访问因为是高可信度网络仿冒邮件、恶意软件或根据邮件流规则（亦称为“传输规则”）被隔离的邮件，用户看不到这些内容。 有关详细信息，请参阅[在 EOP 中以管理员身份管理已隔离邮件](manage-quarantined-messages-and-files.md)。
-
-- 可以释放邮件，并将它报告为误报（非垃圾邮件），但只能执行一次。
+- 默认情况下，为高可信度网络钓鱼、恶意软件隔离的或由邮件流规则隔离的邮件仅对管理员可用，且对用户不可见。 有关详细信息，请参阅 [在 EOP 中以管理员身份管理已隔离邮件和文件](manage-quarantined-messages-and-files.md)。
 
 ## <a name="view-your-quarantined-messages"></a>查看已隔离邮件
+
+> [!NOTE]
+> 查看已隔离邮件的能力由应用于隔离邮件类型的 [隔离策略](quarantine-policies.md) 控制(出于隔离原因，这可能是 [默认的隔离策略](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features))。
 
 1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**检查**”\>“**隔离**”。
 2. 在“**隔离**”页上，可以通过单击可用的列标题对结果进行排序。 单击“**自定义列**”以更改显示的列。 默认值标有星号（<sup>\*</sup>）：
@@ -138,7 +154,7 @@ ms.locfileid: "59196489"
 - **发件人地址**
 - **接收时间**：收到邮件的日期/时间。
 - **主题**
-- **隔离原因**：显示邮件是否被标识为“**垃圾邮件**”，“**批量邮件**”或“**钓鱼邮件**”。
+- **隔离原因**
 - **策略类型**：策略的类型。 例如，**反垃圾邮件策略**。
 - **收件人计数**
 - **收件人**：如果邮件有多个收件人，需要单击“预览邮件”或“查看邮件头”，以查看完整的收件人列表。
@@ -152,6 +168,9 @@ ms.locfileid: "59196489"
 > ![已隔离邮件详细信息浮出控件中的向上和向下箭头。](../../media/quarantine-message-details-flyout-up-down-arrows.png)
 
 ### <a name="take-action-on-quarantined-email"></a>对已隔离电子邮件执行操作
+
+> [!NOTE]
+> 对已隔离邮件执行操作的能力由应用于隔离邮件类型的[隔离策略](quarantine-policies.md) 控制(出于隔离原因，这可能是 [默认的隔离策略](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features))。 本节会介绍所有可用操作。
 
 从列表中选择隔离邮件后，详细信息浮出控件中将提供以下操作：
 

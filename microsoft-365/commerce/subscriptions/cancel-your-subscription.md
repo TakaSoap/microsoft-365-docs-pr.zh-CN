@@ -19,13 +19,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: 如果你的用户的许可证少于 25 个，则你可以在管理中心取消 Microsoft 365 商业版试用或付费订阅。
-ms.date: 04/08/2021
-ms.openlocfilehash: 900fd5f544a405b5f337623ba35a353cefaf9bab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 932cac44b9bf1b8632116d544cf4b33c0cb19a27
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201414"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481032"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -37,7 +37,9 @@ ms.locfileid: "59201414"
 *退款：* 在下一个计费周期内，将向你退还所有按比例分配的信用额度。
 
 > [!NOTE]
-> 如果同一产品（例如 Microsoft 365 商业高级版）有多个订阅，取消其中一个订阅不会影响其他订阅内的已购买的许可证或服务。
+> 
+> - 如果同一产品（例如 Microsoft 365 商业高级版）有多个订阅，取消其中一个订阅不会影响其他订阅内的已购买的许可证或服务。
+> - 对于某些订阅，只能在购买或续订订阅后的有限时间段内取消。 如果取消时段已过，请在订阅期限结束时关闭定期计费以取消订阅。
 
 ## <a name="before-you-begin"></a>开始之前
 
@@ -66,7 +68,9 @@ ms.locfileid: "59201414"
 ::: moniker-end
 
 2. 找到要取消的订阅。 选择三个点（更多操作），然后选择“**取消订阅**”。
+
 3. 在“**取消订阅**”窗格中，选择取消原因。可选择提供任何反馈。
+
 4. 选择“**保存**”。
 
 你的订阅现显示为“**禁用**”状态，且在删除之前功能缩减。 若要深入了解在取消付费 Microsoft 365 商业版订阅后会发生什么情况，请参阅 [我的 Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)

@@ -31,8 +31,10 @@
           href: set-language-time-zones.md
     - name: 应用 Bookings 应用
       href: get-bookings-app.md
-    - name: Microsoft Teams 中的 Bookings 应用和虚拟参观
+    - name: 在 Microsoft Teams 中管理 Bookings 应用
       href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
+    - name: 使用 Microsoft Teams 和 Bookings 应用进行虚拟访问
+      href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits
     - name: 比较图 - web 应用程序与 Teams 应用程序
       href: comparison-chart.md
     - name: 删除预订日历

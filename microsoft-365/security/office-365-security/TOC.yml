@@ -288,6 +288,8 @@
           href: mfi-slow-mail-flow-rules-insight.md
         - name: 以管理员身份管理隔离的邮件和文件
           href: manage-quarantined-messages-and-files.md
+        - name: 隔离策略
+          href: quarantine-policies.md
         - name: 从“受限的用户”门户中删除被阻止的用户
           href: removing-user-from-restricted-users-portal-after-spam.md
         - name: 使用除名门户将自己从阻止的发件人名单中删除
@@ -330,7 +332,7 @@
           href: backscatter-messages-and-eop.md
         - name: 批量投诉级别(BCL)
           href: bulk-complaint-level-values.md
-        - name: 最终用户垃圾邮件通知
+        - name: 隔离通知
           href: use-spam-notifications-to-release-and-report-quarantined-messages.md
         - name: 出站传递池
           href: high-risk-delivery-pool-for-outbound-messages.md

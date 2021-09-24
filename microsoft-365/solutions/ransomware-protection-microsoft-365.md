@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件， 人为操作的勒索软件， 人工运营的勒索软件， HumOR， 勒索攻击， 勒索软件攻击， 加密， 加密病毒
 description: 逐步保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: e7adafd8c60e55c7bb1acc60afcd4ca5cadedb85
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 0e5238c4e675dbbec796a19ecbb2c8354f259c42
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444525"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483611"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>为 Microsoft 365 租户部署勒索软件保护
 
@@ -82,7 +82,7 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 
    适用于 SharePoint 和 OneDrive 的完整自助式恢复解决方案，允许管理员和最终用户从过去 30 天内的任何时间点还原文件。
 
-   若要最大程度地减轻安全和 IT 支持人员的负担，请培训用户如何进行[SharePoint 和 OneDrive 的数据保留](/microsoft-365/compliance/retention-policies-sharepoint)。
+   要最大程度地减轻安全和 IT 支持人员的负担，请对用户进行有关[文件还原](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436) 的培训。
 
 
 对于 OneDrive 和 SharePoint 文件，如果你受到大规模攻击，Microsoft 可以回退到最多 14 天内的上一时间点。
@@ -158,7 +158,7 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 
 | 功能或特性 | 说明 | 帮助检测和响应... | 颁发许可 |
 |:-------|:-----|:-------|:-------|
-| Microsoft 365 Defender | 合并信号并将功能整合到一个解决方案中 <br><br> 使安全专业人员能够将威胁信号汇集在一起，并确定威胁的完整范围和影响 <br><br> 自动执行操作，以防止或停止攻击并自我修复受影响的邮箱、终结点和用户身份 | 事件是组合起来的构成的攻击的警报和数据。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
+| Microsoft 365 Defender | 合并信号并将功能整合到一个解决方案中 <br><br> 支持安全专业人员汇集威胁信号，并确定威胁的完整范围和影响 <br><br> 自动执行操作，以防止或停止攻击并自我修复受影响的邮箱、终结点和用户身份 | 事件是组合起来的构成的攻击的警报和数据。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
 | Microsoft Defender for Identity |  通过基于云的安全接口使用你的本地 Active Directory 域服务 (AD DS)信号来识别、检测和调查针对组织的高级威胁、被盗用的身份和恶意内部行为 | AD DS 帐户的凭据泄露。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
 | Microsoft Defender for Office 365 | 保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 <br><br> 防范恶意软件、网络钓鱼、欺骗和其他攻击类型 | 网络钓鱼攻击。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
 | Microsoft Defender for Endpoint | 启用跨终结点(设备)对高级威胁的检测和响应  | 恶意软件安装和设备入侵。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
@@ -228,47 +228,47 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 
 来自 Microsoft 的关键信息：
 
-- [勒索软件的威胁不断增加](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/)，Microsoft 于 2021 年 7 月 20 日发布的有关此问题的博客文章 
-- [人为操作的勒索软件](/security/compass/human-operated-ransomware)
+- [日趋严重的勒索软件威胁](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/)，2021 年 7 月 20 日 Microsoft 关于问题的博客文章
+- [人工操作的勒索软件](/security/compass/human-operated-ransomware)
 - [快速防范勒索软件和勒索](/security/compass/protect-against-ransomware)
-- [最新 Microsoft 安全智能报告](https://www.microsoft.com/securityinsights/) (请参阅第 22-24 页) 
-- **勒索软件：普遍且持续的威胁**，Microsoft 365 Defender 门户的“**威胁分析**”节点中的报告（请参阅这些 [许可要求](/microsoft-365/security/defender/prerequisites#licensing-requirements)）
+- [最新 Microsoft 安全智能报告](https://www.microsoft.com/securityinsights/)（请参阅第 22-24 页）
+- Microsoft 365 Defender 门户的 **威胁分析** 节点中的 **勒索软件：普遍且持续的威胁** 报告（请参阅这些 [许可要求](/microsoft-365/security/defender/prerequisites#licensing-requirements)）
 
-Microsoft 365:
+Microsoft 365：
 
 - [从勒索软件攻击中恢复](/microsoft-365/security/office-365-security/recover-from-ransomware)
 - [恶意软件和勒索软件防护](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [保护你的 Windows 10 电脑免受勒索软件攻击](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [在 SharePoint Online 中处理勒索软件](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 
-Microsoft 365 Defender:
+Microsoft 365 Defender：
 
 - [使用高级搜寻查找勒索软件](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 
-Microsoft Azure:
+Microsoft Azure：
 
 - [针对勒索软件攻击的 Azure 防御](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [备份和还原计划以防范勒索软件](/security/compass/backup-plan-to-protect-against-ransomware)
-- [使用 Microsoft Azure 备份帮助防范勒索软件](https://www.youtube.com/watch?v=VhLOr2_1MCg)(26 分钟的视频) 
-- [从系统性身份泄露中恢复](/azure/security/fundamentals/recover-from-identity-compromise)
+- [使用 Microsoft Azure 备份帮助防范勒索软件](https://www.youtube.com/watch?v=VhLOr2_1MCg)（26 分钟视频）
+- [从系统性标识泄露中恢复](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Azure Sentinel 中的高级多阶段攻击检测](/azure/sentinel/fusion#ransomware)
-- [Azure Sentinel 中的勒索软件融合检测](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Azure Sentinel 中勒索软件融合检测](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security:
+Microsoft Cloud App Security：
 
 -  [在 Cloud App Security 中创建异常检测策略](/cloud-app-security/anomaly-detection-policy)
 
-Microsoft 安全团队博客文章:
+Microsoft 安全团队博客文章：
 
-- [防范和从勒索软件中恢复的 3 个步骤 (2021 年 9 月)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-- [了解网络安全风险以增加抵抗力: 第 4 部分 - 应对当前威胁(2021 年 5 月)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+- [防范和从勒索软件中恢复的 3 个步骤（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [通过了解网络安全风险以增强恢复能力：第 4 部分 - 浏览当前威胁（2021 年 5 月）](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   请参阅 **勒索软件** 部分。
 
-- [人为操作的勒索软件攻击：可预防的灾难 (2020 年 3 月)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+- [人为操作的勒索软件攻击：可预防的灾难（2020 年 3 月）](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-  包括实际攻击的攻击链分析。
+  包括对实际攻击的攻击链分析。
 
-- [勒索软件应对 - 是否支付勒索金额？ (2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
-- [Norsk Hydro 公开应对勒索软件攻击 (2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [勒索软件应对 - 是否支付勒索金额？（2019 年 12 月）](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Norsk Hydro 以透明方式应对勒索软件攻击（2019 年 12 月）](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 

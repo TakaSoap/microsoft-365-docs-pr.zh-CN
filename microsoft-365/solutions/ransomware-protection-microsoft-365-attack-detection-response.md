@@ -17,16 +17,18 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒
 description: 使用 Microsoft 365 Defender 及其安全信号源保护 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: 7380e546733a299e7cf888946d502c43074822f5
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 09b2e7930d6fbe0295dcf8343a559a19b680f547
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444526"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481092"
 ---
 # <a name="step-2-deploy-attack-detection-and-response"></a>步骤 2. 部署攻击检测和响应
 
-启用、配置和使用这些工具进行勒索软件攻击检测和响应。
+在 Microsoft 365 租户中勒索软件攻击检测和响应时，强烈建议第一步[设置试用环境](/microsoft-365/security/defender/eval-overview)来评估 Microsoft 365 Defender 的特性和功能。
+
+有关详细信息，请参阅下列资源。
 
 | 功能 | 说明 | 从何处开始？ | 如何将其用于检测和响应 |
 |:-------|:-----|:-------|:-------|
@@ -76,8 +78,6 @@ ms.locfileid: "59444526"
 - Microsoft Cloud App Security
 
 Microsoft 365 Defender 将威胁信号合并到警报中，并将连接的警报合并到事件中，以便安全分析师可以更快地检测、调查和修正勒索软件攻击的阶段。
-
-可以 [设置试用环境](/microsoft-365/security/defender/eval-overview) 来评估 Microsoft 365 Defender 的特性和功能。
 
 ## <a name="resulting-configuration"></a>生成的配置
 

@@ -17,14 +17,15 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkTEAMS
 recommendations: false
 description: 了解如何部署具有基线保护级别的团队。
-ms.openlocfilehash: 24bdb7a5d5f4c124365a6b5b7cdc67d53adf8278
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a21aa9bf3aeb5d5f5cb2efbc90589cafe2a11be1
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196449"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479737"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>配置具有基线保护的团队
 
@@ -53,7 +54,7 @@ ms.locfileid: "59196449"
 1. 访问 [https://admin.microsoft.com](https://admin.microsoft.com) 登录到 Microsoft 365 管理中心。
 2. 在左侧导航中，单击“**显示全部**”。
 3. 在“**管理中心**”下，单击“**团队**”。
-4. 在 Teams 管理中心左侧导航中，展开“**组织范围的设置**”，然后单击“**来宾访问**”。
+4. 在 Teams 管理中心的左侧导航中，展开“**组织范围设置**” > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">“**来宾访问**”</a>。
 5. 确保 **在 Teams 中允许来宾访问** 设置为“**开**”。
 6. 对其他来宾设置进行任何所需的更改，然后单击“**保存**”。
 

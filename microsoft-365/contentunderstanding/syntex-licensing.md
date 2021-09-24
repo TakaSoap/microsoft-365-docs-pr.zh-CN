@@ -13,16 +13,19 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 了解 SharePoint Syntex 的许可
-ms.openlocfilehash: 1ab7ab290ca00ba6b47510dfc43f18412b528b0c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c44545136a7ca67a63315a8378389212a160373
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195765"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484043"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>SharePoint Syntex 的许可
 
 若要使用 SharePoint 整合，您的组织必须具有 SharePoint Syntex 订阅，并且每个 Syntex 用户必须具有许可证。 如果将来（或试用版过期）取消 SharePoint Syntex 订阅，用户将无法创建、发布或运行文档了解或表单处理模型。 此外，术语库报表、SKOS 分类导入和内容类型推送将不再可用。 将不会删除任何模型、内容或元数据，并且不会更改网站权限。
+ 
+> [!NOTE] 
+> SharePoint Syntex 是一个加载项许可证，要求用户还应具有 Microsoft 365 许可证。
  
 ## <a name="tasks-requiring-a-license"></a>需要许可证的任务
  
@@ -33,7 +36,7 @@ ms.locfileid: "59195765"
 - 将内容上传到已应用文档理解或表单处理模型的库
 - 按需运行文档理解模型
 - 使用文档理解或表单处理模型查看从文件中提取的元数据。 （用户必须获得访问和使用与已处理文件关联的元数据的许可，无论文件移动到何处。）
-- 使用高级分类服务。 （高级分类服务包括基于 SKOS 的术语集导入、将企业内容类型推送到与中心关联的网站和术语库报表。）
+- 使用高级分类服务。（高级分类服务包括基于 SKOS 的术语集导入、将企业内容类型推送到与中心关联的网站和术语库报表。）
 
 未经许可的用户可以被授予访问内容中心的权限，并可在其中创建文档理解模型，但无法将其应用于文档库。
  
