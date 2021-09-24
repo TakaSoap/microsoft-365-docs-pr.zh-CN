@@ -352,13 +352,13 @@
               items:
                 - name: ServiceNow 集成概述
                   href: ./tickets.md
-        - name: Microsoft 365 Defender API（预览版）
+        - name: Microsoft 365 Defender API
           items:
-            - name: Microsoft 365 Defender API 概述（预览版）
+            - name: Microsoft 365 Defender API 概述
               href: api-overview.md
-            - name: 支持的 Microsoft 365 Defender API
+            - name: 受支持的 Microsoft 365 Defender API
               href: api-supported.md
-            - name: Microsoft 365 Defender API 入门（预览版）
+            - name: Microsoft 365 Defender API 入门
               items:
                 - name: Microsoft 365 Defender API 许可证和使用条款
                   href: api-terms.md
@@ -374,7 +374,7 @@
                   href: api-partner-access.md
                 - name: 其他 API 资源
                   href: api-articles.md
-            - name: Microsoft 365 Defender API 和架构（预览版）
+            - name: Microsoft 365 Defender API 和架构
               items:
                 - name: 常见的 REST API 错误代码
                   href: api-error-codes.md

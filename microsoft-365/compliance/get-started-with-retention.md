@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？请阅读一些实用指南来入门。
-ms.openlocfilehash: a58b50aeea2cfd223e54d1dd4d2c4aa91026afe8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fdcae8f3879beea5ba7b80f34378b2a3b1452fcb
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171360"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497616"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>开始使用保留策略和保留标签
 
@@ -48,7 +48,7 @@ ms.locfileid: "59171360"
 
 许多不同的订阅都支持保留策略和保留标签，用户的许可要求取决于你使用的功能。
 
-若要查看许可用户以便受益于 Microsoft 365 合规性功能的选项，请参阅 [Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。 对于保留，请参阅[信息管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance)部分和相关 PDF 或 Excel 下载内容，以了解功能级别许可要求。
+若要查看许可用户以便受益于 Microsoft 365 合规性功能的选项，请参阅 [Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。 对于保留，请参阅[信息治理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance)部分和相关 PDF 下载内容，以了解功能级别许可要求。
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>创建和管理保留策略和保留标签所需的权限
 

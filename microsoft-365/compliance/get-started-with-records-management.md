@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要用于管理高价值内容的 Microsoft 365 记录管理解决方案以满足法律、业务或法规方面的义务，但不确定从哪里入手？请阅读一些实用指南来入门。
-ms.openlocfilehash: 8e6f32a7f1bc68449f1b43531725f07999043b82
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0af5391a7964e242067d70e559d082ede0c9fb3a
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171361"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497762"
 ---
 # <a name="get-started-with-records-management"></a>记录管理入门
 
@@ -45,7 +45,7 @@ ms.locfileid: "59171361"
 
 许多不同的订阅都支持记录管理，并且用户的许可要求取决于你使用的功能。
 
-若要查看许可用户以便受益于 Microsoft 365 合规性功能的选项，请参阅 [Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。 对于记录保留，请参阅[记录管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)部分和相关 PDF 或 Excel 下载内容，以了解功能级别许可要求。
+若要查看许可用户以便受益于 Microsoft 365 合规性功能的选项，请参阅 [Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。 对于记录管理，请参阅[记录管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)部分和相关 PDF 下载内容，以了解功能级别许可要求。
 
 ## <a name="permissions-required-for-records-management"></a>记录管理所需的权限
 

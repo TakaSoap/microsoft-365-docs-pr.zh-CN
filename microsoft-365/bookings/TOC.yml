@@ -9,6 +9,8 @@
           href: enter-business-information.md
         - name: 定义服务套餐
           href: define-service-offerings.md
+        - name: 配置短信文本通知
+          href: bookings-sms.md
         - name: 向 Bookings 添加员工
           href: add-staff.md
         - name: 安排业务关闭和休假

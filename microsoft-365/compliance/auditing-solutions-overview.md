@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 了解如何审核 Microsoft 365 组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f89303e22432f2e3297bec01912710daf21d7379
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afed2a8a12f158ff7e283e7d82d1abe7c35a0732
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162076"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498108"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 中的审核解决方案
 
@@ -103,6 +103,7 @@ Microsoft 365 提供两种审核解决方案：基本审核和高级审核。
 - Microsoft 365 教育版 A3 订阅
 - Microsoft 365 政府版 G3 订阅
 - Microsoft 365 政府版 G1 订阅
+- Microsoft 365 Frontline F1 或 F3 订阅，或 F5 安全加载项
 - Office 365 企业版 E3 订阅
 - Office 365 企业版 E1 订阅
 - Office 365 教育版 A1 订阅
@@ -119,6 +120,7 @@ Microsoft 365 提供两种审核解决方案：基本审核和高级审核。
 - Microsoft 365 政府版 G5 订阅
 - Microsoft 365 政府版 G5 订阅 + Microsoft 365 G5 合规性附加内容
 - Microsoft 365 政府版 G5 订阅 + Microsoft 365 G5 电子数据展示和审核加载项
+- Microsoft 365 Frontline F5 合规性或 F5 安全与合规加载项
 - Office 365 企业版 E5 订阅
 - Office 365 教育版 A5 订阅
 - Office 365 企业版 E3 订阅和 Office 365 高级合规版附加设备（不再适用于新订阅）
