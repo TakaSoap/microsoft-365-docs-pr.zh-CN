@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -21,12 +20,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: 某些域注册机构提供有限的服务，这意味着并非所有 Microsoft 功能都适用于每个域。
-ms.openlocfilehash: 3af1503b99290611d04b1012ce5087f719f01315
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7fe6b047773e47964b5a00728b8c1443bdeef36e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247265"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774588"
 ---
 # <a name="domain-registrars-with-setup-limitations"></a>具有设置限制的域注册机构
 
@@ -62,7 +61,7 @@ MyDomain 网站不支持 SRV 记录，这意味着多个 Teams 和电子邮件�
 
 ## <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>当域由 Google (Go Daddy) 托管时，创建 DNS 记录
 
-如果在注册 Google Apps for Work 帐户时通过 Google 购买了的域，那么 DNS 记录由 Google 托管，但使用 eNom 进行注册。 可以通过 Google" 域"页面访问 eNom 并创建 DNS。
+如果在注册 Google Apps for Work 帐户时通过 Google 购买了域，则 DNS 记录由 Google 管理，但注册到 eNom。可以通过 Google 域页面访问 eNom 并创建 DNS。
 
 ## <a name="create-dns-records-at-11-ionos-for-microsoft"></a>在 1&1 IONOS 为 Microsoft 创建 DNS 记录
 

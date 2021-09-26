@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: SharePoint Syntex 文档理解模型 REST API 概述。
-ms.openlocfilehash: e661df76828db0d05f7c3492880259117b9f8bf1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b77e882163810a389e734f63b45418a4e682dd88
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161998"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775680"
 ---
 # <a name="sharepoint-syntex-document-understanding-model-rest-api"></a>SharePoint Syntex 文档理解模型 REST API
 
@@ -44,7 +44,8 @@ SharePoint Online（和本地 SharePoint 2016 及更高版本）REST 服务支�
 - [获取模型和库信息](rest-getmodelandlibraryinfo.md) - 获取有关模型及应用该模型的库的信息。
 - [UpdateModelSettings](rest-updatemodelsettings-method.md) - 更新 SharePoint Syntex 文档理解模型的可用模型设置（关联的保留标签和模型说明）。
 - [BatchDelete](rest-batchdelete-method.md) – 从一个或多个库中删除应用的文档理解模型。
-- [创建分类请求](rest-createclassificationrequest.md) - 创建使用应用的模型对一个指定文件或多个文件进行分类的请求。
+- [创建文件分类请求](rest-createclassificationrequest.md) - 使用应用的模型创建对指定的文件或多个文件进行分类的请求。
+- [创建文件夹分类请求](rest-createclassificationrequest.md) - 使用应用的模型创建对整个文件夹进行分类的请求。
 
 ## <a name="scenarios"></a>应用场景
 
