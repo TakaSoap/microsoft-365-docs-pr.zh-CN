@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
@@ -26,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 管理电子邮件签名，包括进入或离开组织的所有电子邮件的法律免责声明或披露声明。
-ms.openlocfilehash: 47087f2d09428214237dba226e680aa3c332625d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5dd51435a67cb26353c6794bc9fe01509ef283a1
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169732"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776460"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围内的签名和免责声明
 
@@ -116,7 +115,7 @@ ms.locfileid: "59169732"
   
 ## <a name="more-resources"></a>更多资源
 
-有关使用 PowerShell 的信息，请参阅组织范围内的邮件免责声明、[签名](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)、页脚或 Exchange Online。
+有关使用 PowerShell 的信息，请参阅组织范围内的邮件免责声明、签名、页脚或[Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
 
 ## <a name="related-content"></a>相关内容
 

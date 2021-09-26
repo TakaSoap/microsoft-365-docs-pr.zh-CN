@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 深入了解 Microsoft SharePoint Syntex 中的短语列表、正则表达式和接近度解释类型。
-ms.openlocfilehash: 405080575f48f439e7d978a8fc7ca00ecf956be0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 178f56ea0513d0cc8ba0c47a3c9cde3a24796899
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195778"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786391"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的说明类型
 
@@ -138,6 +138,9 @@ Redmond, WA 98034<br>
 使用邻近度说明来定义电话号码说明的距离，以便更好地识别文档中的街道地址编号。
 
 ![邻近度说明。](../media/content-understanding/proximity.png)
+
+> [!NOTE]
+> 目前，正则表达式不能与邻近解释类型一起使用。
 
 #### <a name="what-are-tokens"></a>什么是令牌？
 

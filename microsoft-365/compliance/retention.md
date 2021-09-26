@@ -13,18 +13,17 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-- m365solution-mig
 - m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 3cb6548cee9b14de661faed2d4a2aa2f45de3b83
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 6403cd288c005e4601c5642ab8ce37fdbe380b02
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480600"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786259"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -148,7 +147,7 @@ ms.locfileid: "59480600"
     - 与所创建的查询匹配的特定关键字。
     - 可训练分类器的模式匹配。
 
-- **从内容被标记时开始计算保留期**，适用于 SharePoint 网站和 OneDrive 帐户中的文档，以及除日历项外的电子邮件项。 如果你将具有此配置的保留标签应用于日历项，保留期从日历项发送时开始计算。
+- **从 SharePoint 网站和 OneDrive 帐户中的文档以及电子邮件项目中的内容标记为** 开始保留期。
 
 - **从事件发生时开始计算保留期**，如员工离开组织或合同到期。
 
@@ -157,8 +156,6 @@ ms.locfileid: "59480600"
 此外，保留标签支持跨 Microsoft 365 应用和服务对电子邮件和文档实施[记录管理](records-management.md)。 可使用保留标签将项目标记为记录。 如果发生这种情况，而内容仍保留在 Microsoft 365 中，则标签会对内容进行进一步的限制，这可能是监管原因所致。 有关详细信息，请参阅[比较对允许或阻止的操作的限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。
 
 如果内容被移动到 Microsoft 365 之外，则保留标签将不会继续存在，这一点与[敏感度标签](sensitivity-labels.md)是不同的。
-
-租户支持的保留标签数没有限制。但是，租户支持的最大策略数为 10,000，其中包括应用标签的策略（保留标签策略和自动应用保留策略）以及保留策略。
 
 #### <a name="classifying-content-without-applying-any-actions"></a>对内容分类但不执行任何操作
 

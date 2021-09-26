@@ -9,17 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- Adm_TOC
+ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 description: 购买Microsoft 365 商业标准版并设置您的组织。
-ms.openlocfilehash: 498906bf227aa4cfd6a964212bb9553932d32602
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: a809dcabe26a24231e12e4d3d14d544f83bb2c91
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401838"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775932"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>注册 Microsoft 365 商业标准版订阅
 
@@ -33,14 +32,14 @@ ms.locfileid: "59401838"
 
 ## <a name="sign-up-steps"></a>注册步骤
 
-若要注册和购买Microsoft 365 商业标准版 (或Microsoft 365 应用版) 或购买产品，请完成以下步骤。
+若要注册并购买Microsoft 365 商业标准版 (或Microsoft 365 应用版) 或购买产品，请完成以下步骤。
 
 > [!IMPORTANT]
 > 注册 Microsoft 365 商业版的人员（通常是业务所有者）自动成为组织的技术管理员。 如果希望帮助管理 Microsoft 365 服务，可以将其他人添加为管理员。 有关详细信息，请查看 [添加管理员](../../business-video/add-admin.md)。
 
 1. On the [Microsoft 365 for business page，](https://go.microsoft.com/fwlink/?linkid=2109654)select **See plans & pricing**.
 2. 在下一页上，找到每月成本，然后向下滚动页面以查找有关网站中包含的内容Microsoft 365。 在Microsoft 365 商业标准版下，选择立即 **购买**。
-3. 在"**感谢您选择Microsoft 365 商业标准版** 页上，输入你的信息以开始。 选择“**下一步**”。
+3. 在 **"感谢您选择Microsoft 365 商业标准版** 页上，输入你的信息以开始。 选择“**下一步**”。
 4. 输入已使用的电子邮件地址。 这可以是您希望 Microsoft 在设置期间用于与您通信的任何地址。 这也是我们会将帐单和续订相关信息发送给你的地址。 然后选择"**设置帐户"。**
 5. 输入你的姓名、公司电话号码、公司规模、公司名称和位置。 你的国家/地区确定你从 Microsoft 获得的确切服务，完成此步骤后无法更改。 选择“**下一步**”。
 
@@ -61,11 +60,11 @@ ms.locfileid: "59401838"
 
 1. 下一页上创建密码，然后选择" **创建帐户"** 继续。 下一页，阅读我们如何处理你的数据，并选择是否希望 Microsoft 合作伙伴联系你。 选择“**下一步**”。
 
-2. 选择组织Microsoft 365 商业标准版许可证数量，然后选择"**添加** 付款方式"，然后继续查看下 **订单**。
+2. 选择组织Microsoft 365 商业标准版许可证数量，然后选择"**添加** 付款方式"，然后继续查看"下 **订单"。**
 
-3. 在 **"确认详细信息** "页面上，我们将提供有关订阅的一些详细信息。 现在，你可以转到Microsoft 365 管理中心添加用户、Office应用、邀请团队使用 Microsoft 365 等。 我们还将向您发送一封电子邮件，包含有关Microsoft 365 商业标准版。
+3. 在 **"确认详细信息** "页面上，我们将提供有关订阅的一些详细信息。 现在，你可以转到Microsoft 365 管理中心添加用户、Office应用、邀请团队使用 Microsoft 365等。 我们还将向您发送一封电子邮件，包含有关Microsoft 365 商业标准版。
 
-此选项提供了开始使用 Office 桌面套件、Teams、表单和 OneDrive 云存储的核心功能的最简单OneDrive方式。 对于不需要立即使用品牌电子邮件的小型企业，或者已使用来自其他提供商的品牌电子邮件并且不打算切换为使用 Microsoft Exchange，建议使用此选项。
+此选项提供了开始使用 Office 桌面套件、Teams、表单和 OneDrive 云存储的核心功能的最简单OneDrive方式。 对于不需要立即使用品牌电子邮件的非常小型企业，或者已使用来自其他提供商的品牌电子邮件并且不打算切换为使用 Microsoft Exchange。
 
 <!--This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.-->
 
@@ -74,7 +73,7 @@ ms.locfileid: "59401838"
 - 品牌电子邮件、企业内的共享日历、预订约会日程安排和会议录制
 - 共享文档存储和SharePoint网站
 - Microsoft Planner 和 Microsoft Lists
-- 非 Microsoft 应用的最广泛集成 (例如 Salesforce、Adobe) ，适用于 Teams 和 Office。
+- 在 Teams 和 Office 内工作的非 Microsoft 应用 (如 Salesforce、Adobe) 等。
 
 #### <a name="next-steps"></a>后续步骤
 
@@ -98,7 +97,7 @@ ms.locfileid: "59401838"
 
 ### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>什么是业务电子邮件以及设置一个业务电子邮件的优点是什么？
 
-商务电子邮件是使用你自己的域名的电子邮件。 例如，如果你拥有域名 ，可以使用 url 构建网站，但也可以拥有自定义电子邮件地址，如 `contoso.com` `www.contoso.com` yourname@contoso.com。 这称为品牌企业电子邮件，因为它为您的电子邮件提供了专业外观。
+商务电子邮件是使用你自己的域名的电子邮件。 例如，如果你拥有域名 ，可以使用 url 构建网站，但也可以拥有自定义电子邮件地址，如 `contoso.com` `www.contoso.com` yourname@contoso.com。 这称为品牌业务电子邮件，因为它为您的电子邮件提供了专业外观。
 
 ### <a name="how-do-i-get-a-new-business-email-address"></a>如何获取新的企业电子邮件地址？
 
@@ -110,13 +109,13 @@ ms.locfileid: "59401838"
 
 ### <a name="why-might-i-need-to-verify-my-domain-to-create-a-business-email"></a>为什么需要验证我的域以创建商业电子邮件？
 
-如果选择使用已拥有的域，可以将它用于电子邮件地址和Microsoft 365。 作为注册过程的一部分，我们要求你验证域，以便你可以通过电子邮件Microsoft 365。  这将确认你是使用该标识发送电子邮件的域的所有者，这将增强安全性并防止欺诈活动。
+如果您选择使用已拥有的域，可以将该域用于电子邮件地址Microsoft 365。 作为注册过程的一部分，我们要求你验证域，以便你可以通过电子邮件Microsoft 365。  这将确认你是使用该标识发送电子邮件的域的所有者，这将增强安全性并防止欺诈活动。
 
 ### <a name="is-there-a-benefit-to-paying-monthly-vs-annually"></a>与按年支付相比，是否有好处？
 
 为了为客户提供最大的灵活性，提供了不同的支付选项。
 
-- Microsoft 365 商业基础版、适用于企业的应用、商业标准版高级版计划可用于按月承诺付款或按年承诺付款。
+- Microsoft 365 商业基础版、企业应用、商业标准版高级版计划可用于按月承诺付款或按年承诺付款。
 - 每月承诺付款：按月支付，可以随时取消。
 - 年度承诺付款：注册一年订阅，但可以选择按月支付，也可以选择在注册时支付全年费用。 使用此付款方式有折扣。
 

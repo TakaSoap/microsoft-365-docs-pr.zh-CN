@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -20,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以在添加多个用户时创建并使用模板来节省时间和标准化设置。
-ms.openlocfilehash: 3ce70f6d37036a2f71bdc2d41bfb5677a54b8db9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6ef35bb395417597d10b8b33c042e1baceeb40db
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169941"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773483"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>创建和使用模板来添加用户
 
@@ -43,8 +42,8 @@ ms.locfileid: "59169941"
 - 许可证位置
 - 许可证选择
 - 应用程序选择
-- Role
-- 大多数配置文件信息，例如作业 **配置文件**、**部门****、Office、Office****电话** 和 **街道地址** 
+- 角色
+- 大多数配置文件信息，例如作业 **配置文件**、**部门**、Office、Office **电话** 和 **街道地址** 
 
 以下信息特定于用户，不会保存在模板中：
 
@@ -54,7 +53,7 @@ ms.locfileid: "59169941"
 - 选择通过电子邮件发送密码以及向谁发送密码电子邮件
 - 移动电话号码
 
-如果选择不输入部分中设置的信息，该值将为空，并且该设置不会显示在模板中。 例如， **如果将"职务** "留空，在查看模板时以及使用模板时，" **职务"将** 完全不显示。 如果将"配置文件 **"部分的所有** 设置都留空，" **配置文件** "部分将显示最终 **模板中** 提供的"无"。
+如果选择不输入部分中设置的信息，该值将为空，并且该设置不会显示在模板中。 例如， **如果将"职务** "留空，在查看模板时以及使用模板时，" **职务"将** 完全不显示。 如果将所有 **"配置文件"** 部分设置留空，" **配置文件** "部分将显示最终 **模板中** 提供的"无"。
 
 通过选择"添加模板"选项创建模板 **时** ，可以选择要完成的值。 任何保留为空的内容都将显示为 **模板中提供的** "无"。
 
@@ -64,7 +63,7 @@ ms.locfileid: "59169941"
 
 1. 在管理中心中，选择"**用户**  >  **""活动用户"。**
 
-2. 选择 **"用户模板**"，然后从下拉列表中选择模板。  (列表将仅包含您创建的模板，不包含由其他管理员创建的模板。) 
+2. 选择 **"用户模板**"，然后从下拉列表中选择模板。  (列表将仅包含你创建的模板，而不包含由其他管理员创建的模板。) 
 
    > [!NOTE]
    > You can also use a template to add a user by selecting **User templates** Manage  >  **templates，** selecting a template， and then selecting **Use template**.

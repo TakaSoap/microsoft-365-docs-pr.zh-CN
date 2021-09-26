@@ -12,22 +12,21 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 使用Windows PowerShell获取有关组织中基本移动和安全设备的详细信息。
-ms.openlocfilehash: 231eeb87d3f72ca4107c0ee6bef5bd60c713bb3f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef9a98e4ce1df1e95716c36cf489b8e8ae500722
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169883"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773879"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>获取有关基本移动性和安全性托管设备的详细信息
 
-本文演示如何使用 Windows PowerShell获取有关您为基本移动性和安全性设置的组织中设备的详细信息。
+本文演示如何使用 Windows PowerShell获取组织中为基本移动性和安全性设置的设备的详细信息。
 
 以下是可供你使用的设备详细信息的细目。
 
@@ -47,9 +46,9 @@ ms.locfileid: "59169883"
 
 ### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>步骤 1：下载并安装Azure Active Directory模块Windows PowerShell
 
-有关这些步骤详细信息，请参阅 [连接Microsoft 365 PowerShell 进行更新](/office365/enterprise/powershell/connect-to-office-365-powershell)。
+有关这些步骤详细信息，请参阅 连接 [Microsoft 365 PowerShell。](/office365/enterprise/powershell/connect-to-office-365-powershell)
 
-1. 转到 IT [Microsoft Online Services Sign-In RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)的"Microsoft Online Services   助手"，然后选择"Microsoft Online Services **助手"。**
+1. 转到 IT [Microsoft Online Services Sign-In RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)的"Microsoft Online Services助手"，然后选择"Microsoft Online Services    **助手"。**
 
 2. 安装用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，具体步骤如下：
 
@@ -199,7 +198,7 @@ ms.locfileid: "59169883"
    .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
    ```
 
-信息作为 CSV 文件导出Windows桌面。 可以使用其他参数指定 CSV 的文件名和路径。
+信息作为 CSV 文件导出Windows桌面桌面。 可以使用其他参数指定 CSV 的文件名和路径。
 
 ## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>运行脚本获取一组用户的设备信息
 
@@ -223,7 +222,7 @@ ms.locfileid: "59169883"
    .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
    ```
 
-信息作为 CSV 文件导出Windows桌面。 可以使用其他参数指定 CSV 的文件名和路径。
+信息作为 CSV 文件导出Windows桌面桌面。 可以使用其他参数指定 CSV 的文件名和路径。
 
 ## <a name="related-topics"></a>相关主题
 

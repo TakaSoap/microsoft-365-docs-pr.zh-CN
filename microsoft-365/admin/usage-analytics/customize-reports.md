@@ -1,5 +1,5 @@
 ---
-title: 自定义使用情况Microsoft 365中的报告
+title: 在使用情况分析中Microsoft 365报告
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -20,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: 了解如何在浏览器和浏览器中自定义Power BI Desktop。
-ms.openlocfilehash: 5dcdee05fbb413c7f1925f5e81c7e6596da111e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7fbd31af1dc59cb8161e981bb27d0bac132be755
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171193"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773927"
 ---
-# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>自定义使用情况Microsoft 365中的报告
+# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>在使用情况分析中Microsoft 365报告
 
 Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了解用户如何采用和使用Microsoft 365。 这个仪表板只是与使用情况数据进行交互的起点。 可以自定义报表，从而获得更加个性化的见解。
 
@@ -39,11 +38,11 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 ### <a name="modify-an-existing-visual"></a>修改现有视觉对象
 
-本示例演示如何修改"激活/许可 **"** 报告中 **的"激活"选项卡** 。
+此示例演示如何修改"激活/许可 **"** 报告中 **的"激活"选项卡** 。
 
 1. 在" **激活/许可"** 报告中，选择" **激活"** 选项卡。
 
-2. 通过选择页面上的"编辑 **"** 按钮，进入编辑模式，方法为单击"更多页面" ![ 按钮Power BI。](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 按钮。
+2. 通过选择页面上的"编辑 **"** 按钮，进入编辑模式，方法为单击"更多页面"按钮 ![ Power BI。](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 按钮。
 
     ![单击右上方导航栏上的"编辑报表"。](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
 
@@ -113,7 +112,7 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
     **注意：** 报告 API 为预览版，在进入生产阶段之前可能会更改。
 
-    ![适用于桌面桌面的 OData Power BI URL。](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
+    ![桌面版 OData Power BI URL。](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
 
 3. 输入你的Microsoft 365 (或学校) 管理员凭据，以在Microsoft 365时进行身份验证。
 
@@ -141,7 +140,7 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 3. 输入管理员凭据以在系统Microsoft 365进行身份验证。
 
-     有关允许谁访问使用情况分析报告Microsoft 365详细信息。
+     有关允许谁访问使用情况分析Microsoft 365详细信息。
 
     获得授权后，将刷新 Power BI 文件中的数据。
 

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: admindeeplinkMAC
 search.appverid:
 - BCS160
@@ -20,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何管理Microsoft 365组，包括添加删除组的成员、编辑电子邮件地址、组名称或说明，以及自定义组的工作方式。
-ms.openlocfilehash: c7f38a6a0b2eb3f6c0466858b60ac0beb2143bc0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8b9e3492409322b77d7a64c73bd90f09a0f4daad
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169858"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774948"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>管理用户中的Microsoft 365 管理中心
 
-创建组[和Microsoft 365后](create-groups.md)，可以配置组。 您可以编辑组名称或说明、管理所有者或成员，并指定外部发件人是否可以向组发送电子邮件以及是否将组对话的副本发送给成员。
+创建组[和Microsoft 365组的成员](create-groups.md)后，可以配置组。 可以编辑组名称或说明、管理所有者或成员，并指定外部发件人是否可以向组发送电子邮件以及是否将组对话的副本发送给成员。
 
 转到 上 [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心。
 
@@ -55,7 +54,7 @@ ms.locfileid: "59169858"
 
 ## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>将对话副本发送到组成员的收件箱
   
-使用管理中心创建组时，默认情况下，用户不会收到发送到收件箱的组电子邮件副本，但用户会获得发送到其收件箱的组会议邀请的副本。 他们需要转到组以查看对话。 可以在管理中心更改此设置。
+使用管理中心创建组时，默认情况下，用户不会获得发送到收件箱的组电子邮件副本，但用户获取发送到其收件箱的组会议邀请的副本。 他们需要转到组以查看对话。 可以在管理中心更改此设置。
 
 打开此设置后，组成员将获取发送到其"收件箱"的组电子邮件和会议Outlook副本。 他们可以阅读并删除该电子邮件的副本，不影响任何人。 在"组"收件箱中，电子邮件的副本仍然存在。
 
@@ -65,7 +64,7 @@ ms.locfileid: "59169858"
 
 2. 单击要管理的组的名称以打开设置窗格。
 
-3. 如果您希望 **设置** 收件箱中的组邮件和日历项目的副本，请在"组"选项卡上，选择"将组对话和事件的副本发送给组成员"。
+3. 如果您希望 **设置** 自己的收件箱中接收组邮件和日历项目的副本，请在"设置"选项卡上，选择"将组对话和事件的副本发送给组成员"。
 
 4. 选择“**保存**”。
 
@@ -77,7 +76,7 @@ ms.locfileid: "59169858"
 
 2. 单击要管理的组的名称以打开设置窗格。
 
-3. 在管理中心组列表中，选择要更改的组的名称，然后在"设置"选项卡上，选择"**允许外部** 发件人向 **此组发送电子邮件"。**
+3. 在管理中心组列表中，选择要更改的组的名称，然后在"设置"选项卡上，选择"允许外部发件人向此组发送电子邮件 **"。**
     
 4. 选择“**保存**”。
 
@@ -106,11 +105,11 @@ Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 
 [创建 Microsoft 365 组](create-groups.md)
 
-[管理来宾对组Microsoft 365访问](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[管理对组Microsoft 365访问](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [选择创建组时Microsoft 365域](../../solutions/choose-domain-to-create-groups.md)
 
-[允许成员代表组以组Microsoft 365发送](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[允许成员以组或组Microsoft 365发送](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
 [将通讯组列表升级到Microsoft 365组](../manage/upgrade-distribution-lists.md)
 

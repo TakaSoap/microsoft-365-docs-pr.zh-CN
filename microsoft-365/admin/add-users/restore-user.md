@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -24,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: 删除用户帐户后 30 天内，可以还原该帐户以及所有数据，并且用户可以使用同一帐户登录。
-ms.openlocfilehash: e37f913bcc6a54bdcc1e0f52168fe1aab0c8afdd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9426b1fde7be3ba5b8608af0db71741434898c5e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169911"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774107"
 ---
 # <a name="restore-a-user"></a>还原用户
    

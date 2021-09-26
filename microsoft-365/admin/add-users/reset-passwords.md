@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - MSStore_Link
@@ -27,17 +26,17 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 使用 Microsoft 365 管理员帐户登录，重置 Microsoft 365 商业版订阅中的用户密码。
-ms.openlocfilehash: 64382d94ae92373d8d814eae0e9f6aa7c6e0043b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 使用你的 Microsoft 365 管理员帐户登录，以重置 Microsoft 365 for business 订阅中的用户的密码。
+ms.openlocfilehash: 50b964826b59287405c86a7918609535edb87b4f
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169912"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775320"
 ---
 # <a name="reset-passwords"></a>重置密码
 
-本文介绍了当你拥有适用于企业订阅的订阅时，如何为你自己和用户Microsoft 365密码。
+本文介绍如何在拥有适用于企业订阅的 Microsoft 365重置密码。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -55,7 +54,7 @@ ms.locfileid: "59169912"
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>步骤：重置用户的业务密码
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在"**活动用户"** 页上，选择用户，然后选择"**重置密码"。**
 
@@ -69,7 +68,7 @@ ms.locfileid: "59169912"
 
 ## <a name="reset-my-admin-password"></a>重置我的管理员密码
 
-如果你忘记了密码，但能够登录密码，Microsoft 365，例如，密码保存在浏览器中：
+如果你忘记了密码，但能够登录密码，请使用Microsoft 365，例如，密码保存在浏览器中：
 
 1. Select your name (icon) in upper right corner > **My Account**  >  **Personal Info**.
 
@@ -92,9 +91,9 @@ ms.locfileid: "59169912"
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同时重置组织中每个人的所有业务密码
 <a name="bkmk_forgot"> </a>
 
-这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分"批量重置密码 (最多 40 个用户一次重置) 。
+这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分有关批量重置密码 (一次最多 40 个用户重置) 。
   
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择"显示名称 **"旁边的** 选项以选择企业中的每个人。 然后取消选中你自己。 重置其他所有用户的密码时无法重置自己的密码。
 
@@ -111,7 +110,7 @@ ms.locfileid: "59169912"
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-有关概述信息，请参阅[使用 PowerShell Microsoft 365管理服务](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
+有关概述信息，请参阅[使用 PowerShell Microsoft 365管理部署](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>为企业中的所有用户强制更改密码
 
@@ -126,5 +125,5 @@ ms.locfileid: "59169912"
 [允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
 [重置密码](../add-users/reset-passwords.md)（文章）\
 [将个人用户密码设置为永不过期](set-password-to-never-expire.md)（文章）\
-[为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) \
+[为组织设置密码过期策略 (](../manage/set-password-expiration-policy.md) 文章) \
 [Microsoft 365 商业版培训视频](../../business-video/index.yml)(链接页面)

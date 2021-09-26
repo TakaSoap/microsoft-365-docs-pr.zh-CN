@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365使用情况报告中的活动用户
+title: 活动用户Microsoft 365使用情况报告中
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -10,7 +10,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -18,18 +17,18 @@ search.appverid:
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: 了解活动用户Microsoft 365使用情况分析、活动报告和采用指标。
-ms.openlocfilehash: 21663722d1a3850389db2ad79321daf363d314c6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ddbfc487089aed89c8dde8fe60b25e13dc94d4d0
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200777"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776676"
 ---
-# <a name="active-user-in-microsoft-365-usage-reports"></a>Microsoft 365使用情况报告中的活动用户
+# <a name="active-user-in-microsoft-365-usage-reports"></a>活动用户Microsoft 365使用情况报告中
 
 ## <a name="active-user-in-usage-reports"></a>使用情况报告中的活动用户
 
-管理中心中Microsoft 365使用情况Microsoft 365活动报表的活动[](usage-analytics.md)用户定义如下。 [](../activity-reports/activity-reports.md) 
+管理中心中Microsoft 365使用情况Microsoft 365活动报表的活动用户[](usage-analytics.md)定义如下。 [](../activity-reports/activity-reports.md) 
   
 |**产品**|**活动用户的定义**|**注释**|
 |:-----|:-----|:-----|
@@ -38,8 +37,8 @@ ms.locfileid: "59200777"
 |OneDrive for Business  <br/> |通过创建、修改、查看、删除、内部或外部共享，或与客户端同步来与文件进行交互的任何用户。  <br/> ||
 |Yammer  <br/> |在 Yammer 上对消息进行阅读、发布或点赞的任何用户。  <br/> ||
 |Skype for Business  <br/> |参与对等会话（包括即时消息、音频和视频通话、应用程序共享和文件传输）或组织或参加会议的任何用户。  <br/> ||
-|Office  <br/> |至少一个设备上Microsoft 365 Pro用户Visio Pro或Project Pro订阅的用户。  <br/> ||
-|Microsoft 365 组  <br/> |具有邮箱活动（如果已向组发送邮件）的任何组成员  <br/> |此定义将在组网站上通过组网站文件活动和 Yammer 组活动 (文件活动以及张贴到与组关联的 Yammer 组的消息进行增强。) 此数据当前在 Microsoft 365 使用情况分析模板应用中不可用  <br/> |
+|Office  <br/> |在至少一台设备上Microsoft 365 Pro或Visio Pro或Project Pro订阅的任何用户。  <br/> ||
+|Microsoft 365 组  <br/> |具有邮箱活动（如果已向组发送邮件）的任何组成员  <br/> |此定义将增强组网站文件活动和组网站上 Yammer 组活动 (文件活动，以及向与组关联的 Yammer 组发布的消息。) 此数据当前在 Microsoft 365 使用情况分析模板应用中不可用  <br/> |
 |Microsoft Teams  <br/> |参与聊天消息、私人聊天消息、通话、会议或其他活动的任何用户。 其他活动定义为用户进行的其他团队活动的数量，其中一些活动包括但不限于：喜欢消息、应用、处理文件、搜索、跟踪团队和频道以及支持他们。  <br/> ||
    
 ## <a name="adoption-metrics"></a>采用指标

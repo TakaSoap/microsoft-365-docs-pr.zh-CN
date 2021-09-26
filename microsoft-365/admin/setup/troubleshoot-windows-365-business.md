@@ -13,7 +13,6 @@ monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 description: 了解如何解决 Windows 365 商业云电脑的安装问题。
 ms.date: 08/13/2021
-ms.openlocfilehash: cae971187e188e6213242481b9cfaeb7dc21c7f2
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: b1fa084debc71209e58530a10b79ea4f0ef29003
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444123"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774131"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>解决 Windows 365 商业版云电脑设置问题
 
@@ -57,7 +56,7 @@ ms.locfileid: "59444123"
 
 ## <a name="step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active"></a>步骤 2. 验证 Windows 365 BPRT 永久用户帐户是否处于活动状态
 
-首次在组织中分配 Windows 365 许可证时，将在 Azure AD 中自动创建名为 **Windows 365 BPRT 永久** 用户的系统帐户。 请勿删除此帐户或更改该帐户， (例如更改名称或 UPN) 。 如果修改或删除系统帐户，则安装将失败。 此系统帐户可确保顺利设置过程，并且除 Windows 365 商业版的范围服务功能外，其他任何写入功能或对组织的访问权限。 如果删除或修改此系统帐户，则必须使用具有 Windows 365 商业版许可证的任何帐户登录到 windows365.microsoft.com，并等待 12 小时以刷新令牌。
+首次在Windows分配 Windows 365 许可证时，将在 Azure AD 中自动创建名为 **Windows 365 BPRT 永久用户的** 系统帐户。 请勿删除此帐户，也不对该帐户 (如更改名称或 UPN) 。 如果修改或删除系统帐户，则安装将失败。 此系统帐户可确保顺利设置过程，并且除 Windows 365 商业版的范围服务功能外，其他任何写入功能或对组织的访问权限。 如果删除或修改此系统帐户，则必须 windows365.microsoft.com 具有 Windows 365 商业版许可证的任何帐户登录，并等待 12 小时，以刷新令牌。
 
 若要确保 Windows 365 BPRT 永久用户帐户在 Azure AD 中处于活动状态，请使用以下步骤。
 
@@ -80,14 +79,14 @@ ms.locfileid: "59444123"
 
 如果你没有包含条件访问Azure AD Premium P1许可证，请转到步骤[5。确保 MDM 颁发机构配置已正确设置](#step-5-make-sure-mdm-authority-configuration-is-set-up-correctly)。 如果不知道订阅是否包含Azure AD Premium P1，请参阅我[拥有哪些订阅？](../admin-overview/what-subscription-do-i-have.md)
 
-如果你有包含条件访问的 Azure AD Premium P1 许可证，请在完成本文中的其余步骤后选择一个用户作为第一个登录到 Windows 365 主页 [https://windows365.microsoft.com](https://windows365.microsoft.com) 的用户。 确保第一个用户没有 MFA 条件访问策略。 在任何设置尝试过程中，MFA 必须保持关闭状态。 在整个组织中成功设置所有云电脑后，你可以为此用户启用 MFA。 若要了解有关条件访问策略的更多信息，请参阅什么是条件访问[Azure Active Directory？。](/azure/active-directory/conditional-access/overview)
+如果你有包含条件Azure AD Premium P1许可证，请在完成本文中的其余步骤后选择一个用户作为第一个登录到 Windows 365 主页 [https://windows365.microsoft.com](https://windows365.microsoft.com) 的用户。 确保第一个用户没有 MFA 条件访问策略。 在任何设置尝试过程中，MFA 必须保持关闭状态。 在整个组织中成功设置所有云电脑后，你可以为此用户启用 MFA。 若要了解有关条件访问策略的更多信息，请参阅什么是条件访问[Azure Active Directory？。](/azure/active-directory/conditional-access/overview)
 
 若要检查条件访问策略，请使用以下步骤。
 
 1. 在 Azure 门户中，转到" <a href="https://go.microsoft.com/fwlink/p/?linkid=2169290" target="_blank">条件访问策略"</a> 页。
 2. 如果未列出任何策略，请继续执行步骤 [5。确保 MDM 颁发机构配置已正确设置](#step-5-make-sure-mdm-authority-configuration-is-set-up-correctly)。
 3. 如果页面上列出了任何策略，请选择策略名称。
-4. 在"**访问控制"****部分中的"** 授予"下，如果显示"已选择 0 个控件"，则返回到策略列表并选择下一个策略。 否则，继续执行步骤 5。
+4. 在"**访问控制"****部分中的"** 授予"下，如果显示"选择 0 个控件"，返回到策略列表并选择下一个策略。 否则，继续执行步骤 5。
 5. 在" **访问控制"** 部分中的" **授予"** 下，如果显示选中了多个控件，请选择 **_"n_ 个控件"所选** 链接。
 6. 在右侧窗格中 **，如果选中** 了"需要多重身份验证"，请清除该复选框，然后选择"选择 **"** 按钮。
    > [!TIP]
@@ -99,24 +98,24 @@ ms.locfileid: "59444123"
 
 如果根据本文前面步骤 1-4 进行了更改，则现在可以解决根本原因。 若要验证该问题是否得到解决，请转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
 
-如果未对步骤 1-4 进行更改，则设置失败可能是由环境中 MDM 颁发机构配置导致的。 如果是这样，则有两个途径可遵循，具体取决于你是否计划Microsoft Intune管理云电脑。
+如果未对步骤 1-4 进行更改，则设置失败可能是由环境中 MDM 颁发机构配置导致的。 如果是这样，有两个途径可遵循，具体取决于你是否计划Microsoft Intune管理云电脑。
 
-- 如果你使用或计划将 Microsoft Intune 用于云电脑，请按照路径[A：确保](#path-a-use-microsoft-intune-to-manage-your-cloud-pcs)已正确配置移动 (MDM 和 MAM) 设置中的步骤操作。
-- 如果你不计划使用 Microsoft Intune 管理云电脑，请按照路径[B： 关闭自动 MDM 注册 中的步骤操作](#path-b-turn-off-automatic-mdm-enrollment)。
+- 如果你使用或计划将 Microsoft Intune 用于云电脑，请按照路径[A：确保](#path-a-use-microsoft-intune-to-manage-your-cloud-pcs)已正确配置移动 (MDM 和 MAM) 中的步骤操作。
+- 如果你不计划使用 Microsoft Intune 管理云电脑，请按照路径[B： 关闭自动 MDM](#path-b-turn-off-automatic-mdm-enrollment)注册 中的步骤操作。
 
 ### <a name="path-a-use-microsoft-intune-to-manage-your-cloud-pcs"></a>路径 A。Microsoft Intune管理云电脑
 
 如果你已使用 Microsoft Intune，或计划使用它管理 Windows 365 云电脑，请确保 Azure AD 中的移动 (MDM 和 **MAM)** 设置已正确配置。
 
 1. 在 Azure 门户中，转到<a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">"Azure Active Directory概述</a>"页。
-2. 在左侧导航 **中，在**"管理"下，选择"移动性 (MDM **和 MAM) "，** 然后选择"Microsoft Intune"。 
+2. 在左侧导航中 **，在"** 管理"下，选择"移动性 (MDM 和 **MAM) "，** 然后选择"Microsoft Intune"。 
 3. 在"**配置"** 页面上 **，在 MDM** 用户作用域旁边，选择 **"部分**"或"**全部**"，然后选择"保存 **"。**
-4. 在左侧导航中 **，在"** 管理"下，选择"移动性 (MDM 和 **MAM) "，** 选择"Microsoft Intune **注册"，** 然后重复步骤 3。
+4. 在左侧导航 **中，在**"管理"下，选择"移动性 (MDM **和 MAM) "，** 选择"Microsoft Intune **注册**"，然后重复步骤 3。
 
 分配有云电脑的用户必须分配有 Intune 许可证。 CloudPCBPRT 系统帐户无需分配 Intune 许可证。
 
 > [!IMPORTANT]
-> 若要分配许可证，你必须是全局管理员或许可管理员，或者具有许可权限的角色。
+> 若要分配许可证，你必须是全局管理员或许可管理员，或者具有具有许可权限的角色。
 
 1. In the [Microsoft Endpoint Manager admin center，](https://go.microsoft.com/fwlink/p/?linkid=2169290)select **Users**  >  **All Users**.
 2. 在" **所有用户"** 列表中，选择一个用户。
@@ -135,9 +134,9 @@ ms.locfileid: "59444123"
 #### <a name="use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment"></a>使用 Azure AD 门户关闭自动 Intune 注册
 
 1. 在 Azure 门户中，转到<a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">"Azure Active Directory概述</a>"页。
-2. 在左侧导航 **中，在**"管理"下，选择"移动性 (MDM **和 MAM) "，** 然后选择"Microsoft Intune"。 
-3. 在 **"配置** "页上，你将看到两个操作之一。 如果你有一个Azure AD Premium，**请选择** MDM 用户作用域旁边的"无"，然后选择"保存 **"。** 如果没有订阅，请选择 **"Azure AD Premium"。**
-4. 在左侧导航中 **，在"** 管理"下，选择"移动性 (MDM 和 **MAM) "，** 选择"Microsoft Intune **注册"，** 然后重复步骤 3。
+2. 在左侧导航中 **，在"** 管理"下，选择"移动性 (MDM 和 **MAM) "，** 然后选择"Microsoft Intune"。 
+3. 在 **"配置** "页上，你将看到两个操作之一。 如果你有一个已Azure AD Premium，请选择 MDM **用户作用域** 旁边的"无"，然后选择"保存 **"。** 如果没有订阅，请选择 **"Azure AD Premium"。**
+4. 在左侧导航导航 **中，在**"管理"下，选择"移动性 (MDM 和 **MAM**) "，Microsoft Intune **注册**"，然后重复步骤 3。
 5. 转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
 
 

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -25,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照以下步骤将前员工的电子邮件转发给其他员工或转换为共享邮箱。
-ms.openlocfilehash: f9d5cefd761d95a3df03864aa14de1bcfb608d04
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f0a779a4fcc27d99e99f28836418ad62d338b227
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169925"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773423"
 ---
 # <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>步骤 3 - 将前员工的电子邮件转发给其他员工或转换为共享邮箱
 
@@ -38,7 +37,7 @@ ms.locfileid: "59169925"
 
 ## <a name="convert-former-employees-mailbox-to-a-shared-mailbox"></a>将以前员工的邮箱转换为共享邮箱
 
-将用户的邮箱转换为共享邮箱时，将保留所有现有电子邮件和日历。 现在，它才在一个共享邮箱中，多个人员将能够访问它，而不是一个人。 如果需要，可以在以后 (共享) 将共享邮箱转换回专用邮箱。
+将用户的邮箱转换为共享邮箱时，将保留所有现有电子邮件和日历。 现在，它才在一个共享邮箱中，多个人员将能够访问它，而不是一个人。 如果需要，可以在以后将共享 (转换为) 邮箱中的用户。
 
 - 创建共享邮箱是一种较为便宜的方法，因为 **只要邮箱小于 50 GB** ，就不必支付许可证费用。如果超过 50 GB 就需向其分配许可证。
 - 如果将邮箱转换为共享邮箱，则所有的旧电子邮件也仍然可用。这会占用大量空间。

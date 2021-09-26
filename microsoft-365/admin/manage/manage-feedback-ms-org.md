@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -21,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理你的用户可以向 Microsoft 发送有关 Microsoft 产品的反馈。
-ms.openlocfilehash: 7d6d607182a546e869a9f92e84adfa31f7e02a26
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f6923f4f20ec445980a40aeb2d731f8b1a2085a
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170422"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775776"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>为组织管理 Microsoft 反馈
 
@@ -63,7 +62,7 @@ ms.locfileid: "59170422"
 
 :::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="屏幕截图：产品内客户研究问题示例":::
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 你的设备必须采用最低内部版本号，以使用这些策略。 有关详细信息，请参阅下表。
 
@@ -100,7 +99,7 @@ ms.locfileid: "59170422"
 
 如果使用组策略，这些策略设置也可用。 若要使用这些策略设置，请至少下载 2021 年 3 月 22 日发布的管理模板文件 [ (ADMX/ADML) ](https://www.microsoft.com/download/details.aspx?id=49030)5146.1000 版本。
 
-您可以在"用户配置 -> 策略 -> 管理模板 -> Microsoft Office 2016 -> 隐私 -> 信任中心"下找到这些策略设置。
+您可以在用户配置 -> 策略 -> 管理模板 -> Microsoft Office 2016 -> 隐私 -> 信任中心下找到这些策略设置。
 
 > [!NOTE]
 > 客户端应用程序需要几个小时才能更新。

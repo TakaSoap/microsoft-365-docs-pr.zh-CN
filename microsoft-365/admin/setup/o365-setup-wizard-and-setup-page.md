@@ -12,20 +12,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: 了解安装向导和"安装"页的区别。
-ms.openlocfilehash: a4936dded4e13b6cf748a1b4d33513480bf382a9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解安装向导和"设置"页的区别。
+ms.openlocfilehash: 85cf10d767655b1ff5b211b130cc0749558c350c
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169718"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59772809"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>安装向导和"安装"页的区别
 
@@ -48,7 +47,7 @@ Microsoft 365两种设置体验：
 
 2. 选择并验证您的域，例如 contoso.com。
 
-3. 添加新用户并为其分配许可证，以便他们可以下载并安装Microsoft 365应用程序。
+3. 添加新用户并为其分配许可证，以便他们可以下载和安装Microsoft 365应用。
 
 4. 连接域。
 
@@ -58,14 +57,14 @@ Microsoft 365两种设置体验：
 
 你将看到按逻辑类别排列的安装任务的完整列表，包括你在安装向导中完成的任务。
 
-![Microsoft 365企业设置"页。](../../media/o365b-setup-page.png)
+![Microsoft 365"企业设置"页。](../../media/o365b-setup-page.png)
 
 选择 **"查看** "查看任何任务，获取概览信息，如任务说明、用户影响、先决条件、实现努力以及安全性和采用统计信息，以帮助你在继续之前了解后果和影响。
 
-You'll also see the status of the task (**Started**， **Not started yet**， or **Completed**) . 如果是多任务任务，在几天内处理任务，或者有多个管理员在执行任务，可以通过一目了然地查看哪些任务已完成以及哪些任务仍然需要关注来跟踪完成情况。 
+You'll also see the status of the task (**Started**， **Not started yet**， or **Completed**) . 如果是多任务任务、在几天内处理任务，或者有多个管理员在执行任务，则可以通过一目了然地查看哪些任务已完成以及哪些任务仍然需要关注来跟踪完成情况。 
 
 若要访问有关要设置的功能的综合文章，请选择任何"了解更多" **链接** 。 任务集合始终位于此处，因此您随时都可以返回到"设置"页以进一步浏览资源。
 
-准备好完成任务后，选择"开始"以完成配置过程。 完成任务后，"开始"按钮将更改为"管理"按钮，从而允许您根据需要管理任务。
+准备好完成任务后，选择"开始"以演练配置过程。 完成任务后，"开始"按钮将更改为"管理"按钮，从而允许您根据需要管理任务。
 
 ![显示概览信息的任务视图。](../../media/o365b-at-a-glance.png)

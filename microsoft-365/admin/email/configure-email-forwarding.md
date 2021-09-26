@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -23,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
-description: 通过电子邮件转发，你可以将发送到用户邮箱Microsoft 365电子邮件转发到组织内部或外部的另一个邮箱。
-ms.openlocfilehash: c2715f42a32eb4a4a3743016d54b7ad42c424835
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+description: 通过电子邮件转发，你可以将发送到 Microsoft 365 用户邮箱的电子邮件转发到组织内部或外部的另一个邮箱。
+ms.openlocfilehash: 6703e37c1f576a5f3b0671def764deafa7e2daa2
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356323"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774684"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>配置电子邮件转发Microsoft 365
 
@@ -48,7 +47,7 @@ ms.locfileid: "59356323"
 
 - 电子邮件转发要求 from  *帐户*  具有许可证。 如果由于用户已离开组织而设置电子邮件转发，另一个选项是将其邮箱 [转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)。 这样一来，多个人员就可以访问它。 但是，共享邮箱不能超过 50GB。
 
-您必须是 Exchange 管理员或全局管理员Microsoft 365才能执行这些步骤。 有关详细信息，请参阅关于 [管理员角色的主题](../add-users/about-admin-roles.md)。
+您必须是 Exchange管理员或全局管理员Microsoft 365才能执行这些步骤。 有关详细信息，请参阅关于 [管理员角色的主题](../add-users/about-admin-roles.md)。
 
 ::: moniker range="o365-worldwide"
 
@@ -117,7 +116,7 @@ ms.locfileid: "59356323"
 
 [Create a shared mailbox (](../email/create-a-shared-mailbox.md) article) \
 [从不同地址发送电子邮件， (](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) 文章) \
-[更改用户名和电子邮件地址 (](../add-users/change-a-user-name-and-email-address.md) 文章) \
-[控制自动外部电子邮件转发Microsoft 365 (](/microsoft-365/security/office-365-security/external-email-forwarding)文章) 
+[Change a user name and email address (](../add-users/change-a-user-name-and-email-address.md) article) \
+[控制电子邮件中的自动外部电子邮件Microsoft 365 (](/microsoft-365/security/office-365-security/external-email-forwarding)文章) 
 
 

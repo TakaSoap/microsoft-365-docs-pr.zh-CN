@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: 了解如何使用导航选项卡和筛选器查看报告。
-ms.openlocfilehash: 4cd39fea09f4204701b4183d02cd64d87d591933
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4d197eaf6923c77df58575f0bdb61103a9d96f8c
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170849"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775644"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>导航和利用 Microsoft 365 使用情况分析中的报表
 
@@ -61,7 +60,7 @@ ms.locfileid: "59170849"
 
 - 使用基础[数据集](usage-analytics-data-model.md)创建自己的视觉对象。
 
-- 使用 Power BI Desktop引入您自己的数据源。
+- 使用 Power BI Desktop 引入您自己的数据源。
 
 若要共享报告，只需选择"共享"按钮 ![Power BI共享图标。](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) 位于页面顶部。
 

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -23,21 +22,21 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 了解如何创建、编辑或删除安全组。
-ms.openlocfilehash: c2056996eb3954777654c5ea829379ecf005276a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5456dbcee245647cbb12bfbcfc0c82ebcf19f037
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169796"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774648"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>创建、编辑或删除安全Microsoft 365 管理中心
 
-在"Microsoft 365组"页上，可以创建用户帐户组，这些用户帐户组可用于在 SharePoint Online 和 CRM Online 中分配相同的权限。 例如，管理员可以创建一个安全组，以向特定用户组授予对 SharePoint 网站的访问权限。 只有全局管理员和"用户管理"管理员拥有创建、编辑或删除安全组的权限；有关管理员角色的详细信息，请参阅[分配管理员角色](../add-users/assign-admin-roles.md)。 
+在Microsoft 365 **组**"页上，可以创建用户帐户组，这些用户帐户组可用于在 SharePoint Online 和 CRM Online 中分配相同的权限。 例如，管理员可以创建一个安全组，以向特定用户组授予对 SharePoint 网站的访问权限。 只有全局管理员和"用户管理"管理员拥有创建、编辑或删除安全组的权限；有关管理员角色的详细信息，请参阅[分配管理员角色](../add-users/assign-admin-roles.md)。 
   
 也存在您可以用于向用户组发送电子邮件或分配权限的 [Exchange Online 和 SharePoint Online 中的组](#groups-in-exchange-online-and-sharepoint-online)和向用户授权对网站和网站集的权限和访问权限的 [Exchange Online 和 SharePoint Online 中的组](#groups-in-exchange-online-and-sharepoint-online)。 
   
 > [!IMPORTANT]
->  计划使用网站邮箱？ 通过安全组添加到 SharePoint 网站而不是单独添加的所有用户只能从 SharePoint 使用网站邮箱。 这些用户将无法从 Outlook 访问网站邮箱。 有关详细信息，请参阅 Use [Microsoft 365 Groups instead of Site Mailboxes。](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b) 
+>  计划使用网站邮箱？ 通过安全组添加到 SharePoint 网站而不是单独添加的所有用户只能从 SharePoint 使用网站邮箱。 这些用户将无法从 Outlook 访问网站邮箱。 有关详细信息，请参阅 Use [Microsoft 365 Groups instead of Site Mailboxes](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b)。 
   
 ## <a name="manage-security-groups-in-the-admin-center"></a>管理管理中心中的安全组
 
@@ -89,22 +88,22 @@ ms.locfileid: "59169796"
     
 在管理中心内创建通讯组和启用邮件的安全Exchange，其名称和用户列表将显示在"安全组 **"** 页上。 您可以在这两个位置删除这些组，但是只能在 Exchange 管理中心编辑它们。 动态通讯组不会显示在"安全组 **"** 页上。 
   
- SharePoint 组是在您创建网站集时自动创建的。 默认组使用 SharePoint 中的默认权限级别（有时称为 SharePoint 角色）向用户授予权限和访问权限。 有关详细信息，请参阅[Default SharePoint groups in SharePoint Online。](/sharepoint/default-sharepoint-groups)
+ SharePoint 组是在您创建网站集时自动创建的。 默认组使用 SharePoint 中的默认权限级别（有时称为 SharePoint 角色）向用户授予权限和访问权限。 有关详细信息，请参阅 Default [SharePoint groups in SharePoint Online。](/sharepoint/default-sharepoint-groups)
   
 ## <a name="how-is-a-security-group-different-from-security-groups-i-create-in-sharepoint"></a>安全组与我在安全组中创建的安全组SharePoint？
 
-安全组可以与 SharePoint、Exchange MDM、Windows 等一同使用。 仅在网站集中SharePoint安全组SharePoint识别。
+安全组可以与 SharePoint、Exchange MDM、Windows 等一同使用。 仅在网站集中SharePoint安全组才能识别SharePoint组。
   
 ## <a name="do-i-have-to-use-security-groups-for-my-organization-to-be-secure"></a>是否必须使用安全组来保证我的组织的安全？
 
-否。 这只是您可以为组织管理安全性的另外一种方法。 您始终可以单独授予用户权限和网站访问权限。 但是，使用安全组，可以轻松管理更大的用户组。
+不正确。 这只是您可以为组织管理安全性的另外一种方法。 您始终可以单独授予用户权限和网站访问权限。 但是，使用安全组，可以轻松管理更大的用户组。
   
 ## <a name="can-i-send-email-to-a-security-group"></a>我能否向安全组发送电子邮件？
 
-能。 但是，如果你想要将组用于电子邮件和协作，我们建议你改为创建Microsoft 365[组](../create-groups/create-groups.md)。 
+是。 但是，如果你想要将组用于电子邮件和协作，我们建议你改为创建Microsoft 365[组](../create-groups/create-groups.md)。 
 
 ## <a name="related-content"></a>相关内容
 
-[在本文Microsoft 365 管理中心 (](../create-groups/create-groups.md)创建) \
+[在文章 Microsoft 365 管理中心 (](../create-groups/create-groups.md)创建) \
 [向Microsoft 365解释组 (](../create-groups/explain-groups-knowledge-worker.md)文章) \
-[管理组在 Microsoft 365 管理中心](../create-groups/manage-groups.md) (文章中) 
+[在管理组Microsoft 365 管理中心 (](../create-groups/manage-groups.md)管理) 

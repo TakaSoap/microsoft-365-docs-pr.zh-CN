@@ -13,18 +13,17 @@ monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 description: 如何使用工作效率分数保护隐私。
-ms.openlocfilehash: 5b5997532ddcd1fdf43b4124f8e2d8183bb3d89e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d849f4cc8924aac09ca41f30682e32babfcc7f13
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170338"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776112"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>工作效率分数的隐私控件
 
@@ -51,7 +50,7 @@ ms.locfileid: "59170338"
 - 报告读取者
 - 使用情况摘要报告阅读器
 
-将"报告读取者"或"使用率摘要报告读取者"角色分配给负责变更管理和采用的任何人员，但不必是 IT 管理员。 通过此角色，他们可以访问管理中心内Microsoft 365分数体验。
+将"报告读取者"或"使用率摘要报告读取者"角色分配给负责变更管理和采用的任何人员，但不必是 IT 管理员。 通过此角色，他们可以访问管理中心中Microsoft 365分数体验。
 
 "使用率摘要报告读取者"角色必须经过 PowerShell cmdlet 分配，直到它在 2020 年Microsoft 365 管理中心分配。
 

@@ -12,31 +12,30 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: 设置基本移动性和安全性，通过执行远程擦除设备等操作保护和管理用户的移动设备。
-ms.openlocfilehash: 47f2f393c3d7147bb1444e8cad32d2d6a0d31133
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 07f8283353432b06aea67ba9cf8bbc505d6c3012
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169872"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775128"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>设置基本移动性和安全性
 
 内置的基本移动性和安全性 Microsoft 365可帮助你保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 电话。 可以创建和管理设备安全策略，远程擦除设备，以及查看详细的设备报告。
 
-有问题？ 有关帮助解决常见问题的常见问题解答，请参阅基本移动性和安全性常见问题解答 ([常见问题) 。 ](frequently-asked-questions.yml) 请注意，不能使用委派管理员帐户管理基本移动性和安全性。 有关详细信息，请参阅合作伙伴 [：提供委派管理](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e)。 
+有问题？ 有关帮助解决常见问题的常见问题解答，请参阅 Basic [Mobility and Security 常见问题 ](frequently-asked-questions.yml)解答 (FAQ) 。 请注意，不能使用委派管理员帐户管理基本移动性和安全性。 有关详细信息，请参阅合作伙伴 [：提供委派管理](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e)。 
 
 设备管理是安全与合规&的一部分，因此你需要前往开始基本移动性和安全性设置。
 
 ## <a name="activate-the-basic-mobility-and-security-service"></a>激活基本移动性和安全性服务
 
-1. 登录以Microsoft 365全局管理员帐户登录。
+1. Sign in to Microsoft 365 with your global admin account.
 
 2. 转到 [激活基本移动性和安全性](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。
 
@@ -62,7 +61,7 @@ ms.locfileid: "59169872"
 
 2. 在浏览器类型中  [https://protection.office.com](https://protection.office.com/) ：。
 
-3. 选择  **"数据丢失防护**   >  **""设备管理**"，然后选择"**适用于 iOS 设备的 APNs 证书"。**
+3. 选择  **"数据丢失防护**   >  **""设备管理"，** 然后选择 **"适用于 iOS 设备的 APNs 证书"。**
 
 4. 在"Apple 推送通知证书设置页上，选择"下一 **步"。**
 
@@ -91,11 +90,11 @@ ms.locfileid: "59169872"
 
 ### <a name="step-3-recommended-set-up-multi-factor-authentication"></a>步骤 3： (推荐) 设置多重身份验证
 
-MFA 通过要求第二种形式的身份验证Microsoft 365移动设备注册保护登录安全。 正确输入工作帐户密码后，用户需要确认其移动设备上的电话呼叫、短信或应用通知。 他们只能在完成第二种形式的身份验证后注册设备。 在基本移动性和安全性中注册用户设备后，用户Microsoft 365工作帐户访问资源。
+MFA 通过要求第二种形式的身份验证Microsoft 365登录以确保移动设备注册的安全。 正确输入工作帐户密码后，用户需要确认其移动设备上的电话呼叫、短信或应用通知。 他们只能在完成第二种形式的身份验证后注册设备。 在基本移动性和安全性中注册用户设备后，用户Microsoft 365工作帐户访问资源。
 
 若要了解如何在 Azure AD 门户中启用 MFA，请参阅 [设置多重身份验证](../security-and-compliance/set-up-multi-factor-authentication.md)。
 
-设置 MFA 后，返回到安全与&中心并导航到数据丢失防护 设备管理 **** 设备策略以完成下一   >     >  ****   步。
+设置 MFA 后，返回到安全与合规&并导航到数据丢失防护 设备管理 **** 设备策略以完成下一   >     >  ****   步。
 
 ### <a name="step-4-recommended-manage-device-security-policies"></a>步骤 4： (建议) 管理设备安全策略
 
@@ -117,16 +116,16 @@ MFA 通过要求第二种形式的身份验证Microsoft 365移动设备注册保
 >
 > - 在向组织中的每个人部署新策略之前，我们建议在少量用户使用的设备上测试该策略。
 >
-> - 此外，在部署策略之前，请让组织了解在基本移动性和安全性中注册设备的潜在影响。 根据你设置策略 (，可能会阻止不符合策略) 设备访问Microsoft 365。 不兼容的设备可能还安装了应用、照片和其他个人信息，在注册的设备上，如果擦除设备，这些应用、照片和其他个人信息可能会被删除。 有关详细信息，请参阅 [Basic Mobility and Security](wipe-mobile-device.md)中的擦除移动设备。
+> - 此外，在部署策略之前，请让组织了解在基本移动性和安全性中注册设备的潜在影响。 根据策略的设置方式， (不符合策略的设备) 访问Microsoft 365。 不兼容的设备可能还安装了应用、照片和其他个人信息，在注册的设备上，如果擦除设备，这些应用、照片和其他个人信息可能会被删除。 有关详细信息，请参阅 [Basic Mobility and Security](wipe-mobile-device.md)中的擦除移动设备。
 
 ## <a name="make-sure-users-enroll-their-devices"></a>确保用户注册其设备
 
 创建并部署移动设备管理策略后，组织中应用设备策略的每个许可 Microsoft 365 用户下次从移动设备登录 Microsoft 365 时会收到注册消息。 他们必须完成注册和激活步骤，然后才能访问Microsoft 365文档。 有关详细信息，请参阅使用基本 [移动性和安全性注册移动设备](enroll-your-mobile-device.md)。
 
 > [!IMPORTANT]
-> 如果注册过程不支持用户的首选语言，则用户可能会以另一种语言在移动设备上收到注册通知和步骤。 移动设备的注册Microsoft 365支持的语言。
+> 如果注册过程不支持用户的首选语言，则用户可能会以另一种语言在移动设备上收到注册通知和步骤。 移动设备的注册过程Microsoft 365支持的语言。
 
-使用 Android 或 iOS 设备的用户需要安装 公司门户 应用，这是注册过程的一部分。
+使用 Android 或 iOS 设备的用户需要安装 公司门户 应用作为注册过程的一部分。
 
 ## <a name="related-content"></a>相关内容
 

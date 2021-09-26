@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用租户切换器视图和多租户视图，这让你能够从单个位置管理租户。
-ms.openlocfilehash: 6dbad8dbfaa84d490983cd5eccaf5ecf5d6979e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 78ab8be76d02b813ee81fe444c97d1451375e4ee
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170353"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786247"
 ---
 # <a name="multi-tenant-management"></a>多租户管理
 
@@ -38,7 +39,7 @@ ms.locfileid: "59170353"
 
 ## <a name="move-between-tenants"></a>在租户之间移动
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心</a>中，选择"组织名称"。
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心"</a>中，选择组织名称。
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="多租户切换器。":::
 

@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - Lean
 - MSStore_Link
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '创建会议室或设备邮箱，使组织中的每个人都能够通过 Outlook 预留供会议或活动使用。 '
-ms.openlocfilehash: 7cee521b4046a3d5ca3acc6dabb657a56ccbc7d3
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2255d6b509e56f5a8e573ee8e88766c4ad59ada0
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400554"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776028"
 ---
 # <a name="room-and-equipment-mailboxes"></a>会议室和设备邮箱
 
@@ -50,7 +49,7 @@ ms.locfileid: "59400554"
     
 3. 在“收件人”字段中，除你想要邀请的与会者以外，键入要预订的会议室或设备的名称。
 
-   或者，单击“**收件人**”，然后从列表中双击会议室或设备。 然后，选择“**确定**”。
+   或者，选择 **到** 然后双击列表中的会议室或设备。然后选择 **"确定"**。
 
    ![在 Outlook 中保留会议室邮箱。](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
   
@@ -58,7 +57,7 @@ ms.locfileid: "59400554"
     
 5. 更改“**位置**”值或保留原样。 
     
-6. 更改“**开始时间**”和“**结束时间**”。 或者，选择“**全天事件**”。 若要重复会议或预订，请选择顶部的“**定期**”。
+6. 更改 **开始时间** 和 **结束时间**。或者，选择 **全天事件**。若要使会议或预留重复，请选择顶部的 **定期** 。
  
    ![保留会议时间。](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
@@ -66,7 +65,7 @@ ms.locfileid: "59400554"
     
 8. 若要允许其他人联机加入或拨入会议，单击“**Skype 会议**”。
     
-9. 若要确保已邀请的会议室、设备和人员均可用，单击顶部的“**日程安排助理**”。 然后在日历中选择一个可用时间。
+9. 若要确保你邀请的会议室、设备和人员可用，请选择顶部 **日程安排助理** 。然后选择日历中的可用时间。
 
    ![检查房间设备是否可用。](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)
 
@@ -77,7 +76,7 @@ ms.locfileid: "59400554"
     
 ## <a name="set-up-room-and-equipment-mailboxes"></a>设置会议室和设备邮箱
 
-若要设置会议室或设备邮箱，请转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>。 （需要具有管理员权限才能执行此操作。）创建邮箱，并让所有人都知道他们可以通过预订，用于会议和活动。
+若要设置会议室或设备邮箱，请转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>。（需要具有管理员权限才能执行此操作。）创建邮箱，让每个人都知道他们可以开始为会议和活动保留邮箱。
   
 1. 在管理中心，转到“**资源**”\> [会议室和设备](https://go.microsoft.com/fwlink/p/?linkid=2067334)页面。
   
@@ -112,7 +111,7 @@ ms.locfileid: "59400554"
 
 ### <a name="how-can-you-tell-when-the-room-or-equipment-is-available"></a>如何判断会议室或设备何时可用？
 
-打开 Outlook，然后创建新会议。 将会议室或设备作为人员添加到会议，然后选择“**日程安排助理**”，查看会议室或设备可用性的实时日历视图。 如果时段未标颜色，则可用；如果是蓝色，则已预订。 
+打开 Outlook 并创建新会议。将会议室或设备添加到会议中，就像是一个人一样，然后选择 **日程安排助理** 查看会议室或设备可用性的实时日历视图。如果小时槽是清除的，则可用;如果为蓝色，则保留。 
   
 ### <a name="how-do-you-cancel-a-room-or-equipment-request"></a>如何取消会议室或设备请求？
 

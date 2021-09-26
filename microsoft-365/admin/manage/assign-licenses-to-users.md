@@ -13,6 +13,7 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - TopSMBIssues
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: 许可证分配取决于是向特定用户分配产品许可证，还是向特定产品分配用户许可证。
 ms.date: 09/16/2021
-ms.openlocfilehash: 48763019211f1358e09f9c712f27870bd13a4435
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: b9fb8a670b649437a894619369731a5085c36804
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477535"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59785935"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 

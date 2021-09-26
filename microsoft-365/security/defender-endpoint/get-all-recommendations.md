@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: da9286d548cbe1f2566bfdac1397178d40ae9dc8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a57a9be69401368a6b6b893e0850a3ba8c6aaf9a
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201522"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776976"
 ---
 # <a name="list-all-recommendations"></a>列出所有建议
 
@@ -42,6 +42,19 @@ ms.locfileid: "59201522"
 
 检索影响组织的所有安全建议的列表。
 
+
+## <a name="api-description"></a>API 说明
+
+返回有关影响组织的所有安全建议的信息。
+
+*URL：* GET：/api/recommendations
+<br>支持 [OData V4 查询](https://www.odata.org/documentation/)。
+<br>OData 支持的运算符：
+<br>```$filter``````id``` ```productName``` ```vendor``` ```recommendedVersion``` on：、、、、、、、、、、 ```recommendationCategory``` ```subCategory``` ```severityScore``` ```remediationType``` ```recommendedProgram``` ```recommendedVendor``` 和 ```status``` 属性。
+<br>```$top``` 最大值为 10，000。
+<br>```$skip```.
+<br>请参阅 Microsoft [Defender for Endpoint 的 OData 查询示例](exposed-apis-odata-samples.md)。
+
 ## <a name="permissions"></a>权限
 
 若要调用此 API，需要以下权限之一。 若要了解详细信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md) 了解详细信息。
@@ -61,7 +74,7 @@ GET /api/recommendations
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

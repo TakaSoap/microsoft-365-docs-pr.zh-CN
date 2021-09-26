@@ -12,23 +12,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: 会议详细信息 - 人员体验生产力分数。
-ms.openlocfilehash: 47a29ee208f9c6957a3fcf7d1a4b0c71518c680b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b5106b03e3fa4abc3c10a543dc4cc3cd5353d8d7
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170343"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776532"
 ---
 # <a name="meetings--people-experiences"></a>会议 – 人员体验
 
-生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。 你的组织的分数反映了人员和技术体验指标，可以与类似你组织的基准进行比较。 会议类别是人员体验度量的一部分。 若要了解更多信息，请查看生产力 [分数概述并](productivity-score.md) 阅读 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
+生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。 你的组织的分数反映了人员和技术体验指标，并可以与类似你组织的基准进行比较。 会议类别是人员体验度量的一部分。 若要了解更多信息，请查看生产力 [分数概述并](productivity-score.md) 阅读 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -38,7 +37,7 @@ ms.locfileid: "59170343"
 
 有关详细信息，请参阅 [向用户分配许可证](../manage/assign-licenses-to-users.md)。
 
-用户过去 28 天内Teams活动状态至少一次后，你将开始看到见解。
+用户过去 28 天内Teams活动一次后，你将开始看到见解。
 
 ## <a name="why-your-organizations-meetings-score-matters"></a>为什么组织的会议分数很重要
 
@@ -59,38 +58,38 @@ Microsoft Teams日历Outlook集成，并提供一系列功能，使会议更具�
 3. **可视化 (当前状态) ：**
 
       - 在此水平条形图中，蓝色 (颜色) 部分表示标题中显示的百分比
-      - 分数 (/分母) 用于计算页眉中显示的百分比
-         - 数字：联机会议Microsoft Teams包括组织中已使用视频或屏幕共享的人）的数量。
-         - 分母：Microsoft Teams最近 28 天内召开的联机会议（包括组织人员）的数量。
+      - 数字 (/分母) 分数值用于计算页眉中显示的百分比
+         - 数字：联机Microsoft Teams会议的数量，包括组织中已使用视频或屏幕共享的人。
+         - Denominator：在线Microsoft Teams会议的数量，包括过去 28 天内召开的组织人员。
       - 关键指标的对等基准值也显示为百分比。
 1. **指向资源的链接：** 选择此链接可查看帮助内容。
 
 #### <a name="trend-visualization-of-the-primary-insight"></a>主要见解的趋势可视化
 
-下图显示了主要见解中关键指标的分子和分母的趋势线。 换言之，它显示了具有最佳做法（如视频或屏幕共享）的在线 Microsoft Teams 会议的数量，以及过去 180 天内召开的联机 Microsoft Teams 会议总数。 图表上的每个数据点都是最近 28 天的活动聚合。
+下图显示了主要见解中关键指标的分子和分母的趋势线。 换言之，它显示了具有最佳做法的在线 Microsoft Teams 会议（如视频或屏幕共享）的数量，以及过去 180 天内召开的联机 Microsoft Teams 会议总数。 图表上的每个数据点都是最近 28 天的活动聚合。
 
-:::image type="content" source="../../media/number-meeting-over-time.png" alt-text="显示最近 28 Teams联机会议数的图表。":::
+:::image type="content" source="../../media/number-meeting-over-time.png" alt-text="显示最近 28 Teams在线会议数的图表。":::
 
 ### <a name="scoring-framework"></a>记分框架
 
-组织的会议分数衡量组织中在线会议Microsoft Teams最近 28 天内遵循最佳做法的程度。 它根据组织中的参加会议人数和会议持续时间进行加权。
+组织的会议分数衡量最近 28 Microsoft Teams组织中联机会议遵循最佳做法的程度。 它根据组织中的参加会议人数和会议持续时间进行加权。
 
 ## <a name="explore-more-about-meetings-in-your-organization"></a>浏览有关组织中会议的信息
 
-我们还为您提供了支持信息，以便你了解组织中人员（作为聚合）如何召开会议。 这些额外的指标不会直接影响你的工作效率分数，但可以帮助你创建作为数字化转型一部分的行动计划。
+我们还为您提供了支持信息，以便你了解组织内部人员（作为聚合）如何召开会议。 这些额外指标不会直接影响你的工作效率分数，但可以帮助你创建作为数字化转型一部分的行动计划。
 
 ### <a name="breakdown-of-how-many-meetings-follow-best-practices"></a>遵循最佳做法的会议细分
 
 :::image type="content" source="../../media/videouse-meetings.png" alt-text="显示会议的主要见解的图表 - 人员体验。":::
 
-1. **标头：** 突出显示使用主要见解和Microsoft Teams中考虑的视频最佳做法的在线会议占联机会议百分比。
+1. **标头：** 突出显示使用主要见解和Microsoft Teams中考虑的视频最佳做法的在线会议百分比。
 2. **正文：** Hrovide 提供有关在会议期间使用这些做法使其更具吸引力的价值的信息。 
-3. **可视化：** 可视化中的细分旨在表示联机Microsoft Teams会议遵循以下每个最佳做法的程度： 
-    - **视频**：彩色部分和分数表示打开视频Microsoft Teams联机会议百分比。 分数的构造方式为： 
-        - 数字：联机Microsoft Teams最近 28 天内召开的会议，其中至少一个参与者开启了视频。 
-        - 分母：最近 28 天内Microsoft Teams组织中召开的联机会议总数 
-    - **屏幕共享**：彩色部分和小数表示Microsoft Teams使用屏幕共享功能的在线会议百分比。 该分数包括： 
-        - 数字：Microsoft Teams最近 28 天内召开的至少一个参与者共享其屏幕的会议。
+3. **可视化：** 可视化中的细分旨在表示联机会议Microsoft Teams遵循以下每个最佳做法的程度： 
+    - **视频**：彩色部分和小数表示打开视频Microsoft Teams联机会议百分比。 分数的构造方式为： 
+        - 数字：Microsoft Teams最近 28 天召开的联机会议，其中至少一个参与者开启了视频。 
+        - Denominator：过去 28 天内Microsoft Teams组织中召开的联机会议总数 
+    - **屏幕共享**：彩色部分和小数表示用户Microsoft Teams屏幕共享功能的在线会议百分比。 该分数包括： 
+        - 数字：联机Microsoft Teams最近 28 天召开的至少一个参与者共享其屏幕的会议。
         - Denominator：过去 28 天内Microsoft Teams组织中召开联机会议总数
 
 
@@ -109,7 +108,7 @@ Microsoft Teams日历Outlook集成，并提供一系列功能，使会议更具�
 
 :::image type="content" source="../../media/distribution-meetinglength.png" alt-text="显示会议长度分布的图表。":::
 
-1. **标头：** 显示最近 28 (30 分钟) 联机会议Microsoft Teams会议之前未安排的即时消息的百分比。
+1. **标头：** 显示最近 28 (30 分钟) 联机Microsoft Teams会议之前未安排的即时消息的百分比。
 2. **正文：** 提供有关使用即时会议快速解决问题的价值的信息。
 3. **可视化：** 提供过去 28 (组织中) 的即时和计划会议的时长分布，以分钟数表示。 分发将每个会议分为 1-15 分钟、16-30 分钟、31-60 分钟和超过 60 分钟。
 
@@ -123,22 +122,22 @@ Microsoft Teams日历Outlook集成，并提供一系列功能，使会议更具�
 
 1. **标头：** 突出显示前 28 天Microsoft Teams在线会议时间少于 30 分钟的会议所占的百分比。
 2. **正文：** 提供有关在频道功能中使用"现在开会Microsoft Teams &quot; &quot; 的信息。
-3. **可视化：** 显示参加联机会议或会议的任何联机会议Microsoft Teams类型。 每种会议类型都表示为水平条，其中的颜色部分和分数表示以下内容：
+3. **可视化：** 显示参加任何联机会议或联机会议Microsoft Teams类型的会议。 每种会议类型都表示为水平条，其中的颜色部分和分数表示以下内容：
     - **即时 1：1 呼叫**：
         - 数字：过去 28 天内参与 1：1 呼叫的人数
-        - Denominator：过去 28 天内参加任何联机Microsoft Teams会议的数量
+        - Denominator：过去 28 天内参加任何在线Microsoft Teams会议的数量
    - **即时组呼叫**：
         - 数字：过去 28 天内参与组呼叫的人数
-        - Denominator：过去 28 天内Microsoft Teams在线会议人数
+        - Denominator：过去 28 天内参加任何在线Microsoft Teams会议的数量
    - **立即在频道中开会**：
         - 数字：过去 &quot; 28 天内，频道Microsoft Teams会议 (会议) 会议的数量 &quot;
-        - Denominator：过去 28 天内参加任何联机Microsoft Teams会议的数量
+        - Denominator：过去 28 天内参加任何在线Microsoft Teams会议的数量
     - **安排的一次会议：**
         - 数字：过去 28 天内Microsoft Teams日历上参加 (一) 会议的数量
-        - Denominator：过去 28 天内参加任何联机Microsoft Teams会议的数量
+        - Denominator：过去 28 天内参加任何在线Microsoft Teams会议的数量
     - **安排定期会议：**
-        - 数字：过去 28 天内其日历上定期会议 () 次数
-        - Denominator：过去 28 天内参加任何联机Microsoft Teams会议的数量
+        - 数字：过去 28 天内参加日历上定期会议 () 次数
+        - Denominator：过去 28 天内参加任何在线Microsoft Teams会议的数量
 
 ## <a name="related-content"></a>相关内容
 

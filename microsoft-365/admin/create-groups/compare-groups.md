@@ -24,18 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 组成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
-ms.openlocfilehash: 0b622f791de7615e45e49faec47558b0e67067f2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c805084afcf3ad8538decd0859d91a6a65cfe00
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169863"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59785959"
 ---
 # <a name="compare-groups"></a>比较组
 
 在 Microsoft 365 管理中心的 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**组**</a>部分中，可创建和管理以下类型的组： 
 
-- **Microsoft 365 组** 用于公司内部和外部用户之间的协作。 它们包括协作服务，如 SharePoint 和 Planner。
+- **Microsoft 365 组** 用于公司内外用户之间的协作。 它们包括协作服务，如 SharePoint 和 Planner。
 - **通讯组** 用于向一组人员发送电子邮件通知。
 - **安全组** 用于授予对资源（如 SharePoint 网站）的访问权限。
 - **启用邮件的安全组** 用于授予对资源（如 SharePoint）的访问权限，并向这些用户发送电子邮件通知。
@@ -52,17 +52,17 @@ ms.locfileid: "59169863"
 
 ## <a name="microsoft-365-groups"></a>Microsoft 365 组
 
-Microsoft 365 组用于公司内部和外部用户之间的协作。 对于每个 Microsoft 365 组，成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区、流和规划器。
+Microsoft 365 组用于公司内外用户之间的协作。 对于每个 Microsoft 365 组，成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区、流和规划器。
 
 只要[管理员启用](manage-guest-access-in-groups.md)了此功能，你就可以将组织外部的人员添加到组中。 还可以允许外部发件人向组电子邮件地址发送电子邮件。
 
-可[为 Azure Active Directory中的动态成员身份](/azure/active-directory/users-groups-roles/groups-change-type)配置 Microsoft 365 组，以便根据部门、位置、职衔等等用户属性自动添加或删除组成员。
+Microsoft 365 组可以 [配置为Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type)中的动态成员身份，从而允许根据用户属性（如部门、位置、标题等）自动添加或删除组成员。
 
 可通过移动应用（如 Outlook for iOS 和 Outlook for Android）访问 Microsoft 365 组。
 
 如果[管理员启用了](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)此功能，则组成员可以作为组或代表组发送电子邮件地址。
 
-Microsoft 365 组不支持与其他 Microsoft 365 组、通讯组或安全组嵌套。
+Microsoft 365 组不支持与其他Microsoft 365 组或通讯组或安全组进行嵌套。
 
 ## <a name="distribution-groups"></a>通讯组
 
@@ -70,11 +70,11 @@ Microsoft 365 组不支持与其他 Microsoft 365 组、通讯组或安全组嵌
 
 通讯组最适用于需要将信息广播给一组人员的情况，例如 "构建 A 中的人" 或 "Contoso 中的每个人"。
 
-通讯组可[升级到 Microsoft 365 组](../manage/upgrade-distribution-lists.md)。
+可以将通讯组 [升级到 Microsoft 365 组](../manage/upgrade-distribution-lists.md)。
 
 通讯组可添加到 Microsoft Teams 中的团队中。
 
-Microsoft 365 组不能是通讯组成员。
+Microsoft 365 组不能是通讯组的成员。
 
 ## <a name="security-groups"></a>安全组
 
@@ -106,11 +106,11 @@ Microsoft 365 组不能是安全组成员。
 
 如果管理员已授予用户执行该操作的权限，具有组邮箱权限的用户可以作为或代表邮箱电子邮件地址发送。 这对帮助和支持邮箱尤其有用，因为用户可从 "Contoso 支持" 或 "构建 A 接待台" 发送电子邮件。
 
-暂无法将共享邮箱迁移到 Microsoft 365 组中。 
+无法将共享邮箱迁移到Microsoft 365组。 
 
 ## <a name="related-content"></a>相关内容
 
-[了解 Microsoft 365 组](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[了解Microsoft 365 组](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [在 Outlook 中将通讯组列表升级为 Microsoft 365 组](/microsoft-365/admin/manage/upgrade-distribution-lists)
 

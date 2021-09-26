@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - IT_Networking
@@ -25,16 +24,16 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 了解如何使用文档库、列表和SharePoint自定义、组织和管理团队网站。
-ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fc6aad3408df0f9c14f9d87984a60ae4c5c715b5
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169731"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775836"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自定义用于文件存储和共享的团队网站
 
-如果您的小型企业具有一些员工，则设置和推动文件共享和联机协作的最佳方法之一是同时使用 OneDrive 和SharePoint团队网站。 我们建议创建连接到组组Microsoft 365网站。 如果要使用聊天，可以通过在聊天室内创建团队来创建Microsoft Teams。 有关此内容[Teams，请参阅视频：什么是Microsoft Teams？。](https://support.microsoft.com/office/b98d533f-118e-4bae-bf44-3df2470c2b12) 如果不想使用网站Teams，可以从"开始"SharePoint网站。 
+如果你拥有一家具有少量员工的小型企业，设置和推动文件共享和联机协作的最佳方法之一是同时使用 OneDrive 和SharePoint团队网站。 我们建议创建连接到组组Microsoft 365网站。 如果要使用聊天，可以通过在聊天室创建团队来创建Microsoft Teams。 有关此内容[Teams，请参阅视频：什么是Microsoft Teams？。](https://support.microsoft.com/office/b98d533f-118e-4bae-bf44-3df2470c2b12) 如果不想使用网站Teams，可以从"开始"SharePoint网站。 
   
 [什么是 SharePoint 团队网站？](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)
   
@@ -45,9 +44,9 @@ ms.locfileid: "59169731"
  
 ## <a name="customize-your-team-site"></a>自定义您的工作组网站
 
-为了进一步查看工作组网站上的数据，你可以自定义SharePoint起始页，以帮助你和员工快速获取你需要的信息。 例如，您可能有一个指向员工 OneDrive 文件夹的链接，以及指向文档、联系人、任务、日历以及存储会议议程和备注的 OneNote 笔记本的链接。
+为了进一步查看工作组网站上的数据，你可以自定义SharePoint起始页，以帮助你和员工快速获取你需要的信息。 例如，您可能具有指向员工 OneDrive 文件夹的链接，以及指向文档、联系人、任务、日历以及存储会议议程和备注的 OneNote 笔记本的链接。
   
-有关自定义起始页的外观的信息，请参阅更改你的SharePoint[的外观](https://support.microsoft.com/office/06bbadc3-6b04-4a60-9d14-894f6a170818)。
+有关自定义起始页的外观的信息，请参阅更改网站SharePoint[外观](https://support.microsoft.com/office/06bbadc3-6b04-4a60-9d14-894f6a170818)。
   
 使用自定义网站中的导航来[改进SharePoint导航](https://support.microsoft.com/office/3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca)。
   
@@ -111,7 +110,7 @@ SharePoint可添加到网站的列表（如链接列表、日历、联系人或�
   
 ## <a name="next-steps"></a>后续步骤
 
-你必须在设备上Office应用，以便可以从平板电脑或手机编辑存储在团队网站中的文件。 如果平板电脑或手机未安装 Office 应用，那么只能查看团队网站上的文件，但不能对其进行编辑。 
+你必须在设备上Office应用，以便可以从平板电脑或手机编辑存储在团队网站上的文件。 如果平板电脑或手机未安装 Office 应用，那么只能查看团队网站上的文件，但不能对其进行编辑。 
     
   - [在 Android Office安装并设置Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

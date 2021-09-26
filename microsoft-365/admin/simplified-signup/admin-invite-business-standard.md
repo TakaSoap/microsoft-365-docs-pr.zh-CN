@@ -9,23 +9,22 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- Adm_TOC
+ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 description: 邀请用户加入Microsoft 365 商业标准版组织
-ms.openlocfilehash: 8b344ee324063dd2694c04e25a4e8549b987ba2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e3fa00edd87f98dd67159e4fa6f7c9c3ba916876
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196224"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776616"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>邀请用户Microsoft 365 商业标准版 (管理员) 
 
 作为订阅Microsoft 365 商业标准版，您可以邀请同事和同事共享和使用 Microsoft 365 商业版订阅。 邀请同事和同事加入订阅时，将共享以下所有功能和服务：
 
-- 获取桌面版本的 Office 应用，包括 Outlook、Word、Excel、PowerPoint 和 OneNote (以及仅适用于 PC Publisher 的 Access 和) 。
+- 获取桌面版本的 Office 应用，包括 Outlook、Word、Excel、PowerPoint 和 OneNote (以及 Publisher（仅适用于电脑) ）。
 - 创建团队合作中心，以使用 Microsoft Teams。
 - 存储和共享每个用户具有 1 TB OneDrive云存储空间的文件。
 - 使用一个许可证覆盖在五Office、五台平板电脑和每个用户五台 PC 或 Mac 上安装的完全安装的应用。
@@ -42,7 +41,7 @@ ms.locfileid: "59196224"
 
 1. In the Microsoft 365 管理中心， select **Invite people to Microsoft 365**.
 
-2. 为要邀请的人添加用户名和电子邮件地址，然后选择"发送 **"。** 邀请电子邮件将发送给你选择的所有用户，以将其用户帐户信息添加到Microsoft 365。
+2. 为要邀请的人添加用户名和电子邮件地址，然后选择"发送 **"。** 邀请电子邮件将发送给你选择的所有用户，以便向用户添加其用户帐户Microsoft 365。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -71,18 +70,18 @@ ms.locfileid: "59196224"
 
 ### <a name="how-do-i-help-someone-install-microsoft-office"></a>如何帮助某人安装Microsoft Office？
 
-向用户发送本文以帮助他们安装Office：在电脑或 MAC Microsoft 365 Office或 Office [2019 下载和安装 2019。](https://support.microsoft.com/office/download-and-install-or-reinstall-microsoft-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658)
+向用户发送本文，以帮助他们安装Office：在电脑或 MAC Microsoft 365 Office或 Office [2019 下载和安装](https://support.microsoft.com/office/download-and-install-or-reinstall-microsoft-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658)。
 
 ### <a name="how-do-i-meet-common-gdpr-general-data-protection-regulation-obligations-for-my-organization"></a>如何履行共同的 GDPR (一般数据保护条例) 我的组织的义务？
 
 根据 GDPR，员工或客户可能会要求你在 Microsoft 云中检索或删除有关他们的所有信息。 有关详细信息，请查看数据 [主体请求](/compliance/regulatory/gdpr-data-subject-requests)。
 
-若要搜索作为 Microsoft 365 商业版订阅的一部分保存在 Microsoft 云中的数据，你和受邀的每个用户将需要访问以在 OneDrive [https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy) 等位置搜索数据。  此外， (或管理员) 可能需要搜索保存在 Azure Active Directory[门户中的员工帐户数据](/compliance/regulatory/gdpr-dsr-office365)。
+若要搜索作为 Microsoft 365 商业版订阅的一部分保存在 Microsoft 云中的数据，你和受邀的每个用户将需要访问 以在 OneDrive 等位置搜索数据。 [https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy)  此外， (或管理员) 可能需要搜索保存在企业门户 中的员工Azure Active Directory[数据](/compliance/regulatory/gdpr-dsr-office365)。
 
-根据你和其他用户保存文档方式，你和受邀的每个用户可能需要使用内置搜索和删除功能来发现在 Windows 电脑或 Mac 上、智能手机上的业务应用以及非 Microsoft 应用和网站上保存的内容。
+根据你和其他用户保存文档方式，你和受邀的每个用户可能需要使用内置搜索和删除功能来发现保存在 Windows 电脑或 Mac 上、智能手机上的业务应用以及非 Microsoft 应用和网站上的内容。
 
 > [!NOTE]
-> 一旦附加域，并且你和用户使用业务帐户将数据保存到 Microsoft 云中，你可以代表所有用户执行数据主体请求，按照 gdpR 和[CCPA](/compliance/regulatory/gdpr-dsr-office365)的 Office 365 数据主体请求主题中的指导进行操作。
+> 一旦附加了域，并且你和你的用户使用业务帐户将数据保存到 Microsoft 云中，你可以代表所有用户执行数据主体请求，按照 gdpR 和[CCPA](/compliance/regulatory/gdpr-dsr-office365)的 Office 365 数据主体请求主题中的指导进行操作。
 
 ## <a name="related-content"></a>相关内容
 

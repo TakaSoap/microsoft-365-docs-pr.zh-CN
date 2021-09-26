@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - okr_smb
@@ -28,18 +27,18 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 了解如何将管理员角色分配给企业中的一个或多个用户，以便他们可以在管理中心执行特定任务。
-ms.openlocfilehash: 0eeafd8c91a9430db09713902fb55d9491dcac8d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bea417900374fe627d3a1a6b40697959b7c3671f
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169945"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773867"
 ---
 # <a name="assign-admin-roles"></a>分配管理员角色
 
 如果你是购买 Microsoft 商业版订阅的人，你是全局管理员。这意味着你可以无限制地控制订阅中的产品，并且可以访问大部分数据。
 
-有关详细信息，请参阅[关于管理员角色](about-admin-roles.md)。
+有关详细信息，请参阅 [关于管理员角色](about-admin-roles.md)。
 
 添加新用户时，如果你没有为其分配管理员角色，则他们担任用户角色，并且没有任何 Microsoft管理中心的管理员权限。 但是，如果你需要有关完成工作的帮助，你可以将管理员角色分配给用户。 例如，如果需要某人来帮助重置密码，则不应为其分配全局管理员角色，而应为其分配密码管理员角色。 全局管理员太多，且可无限访问数据和在线业务，因此存在安全风险。
 
@@ -61,7 +60,7 @@ ms.locfileid: "59169945"
 1. 在管理中心中，转到"<a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**角色分配"。**</a> 选择 **Azure AD 或** **Intune** 选项卡以查看适用于你的组织的管理员角色。
 2. 选择要为其分配用户的管理员角色。
 3. 选择 **分配管理员添加**  >  。
-4. 键入用户的 **显示名称** 或 **用户名**，然后从建议列表中选择用户。
+4. 键入 **用户的显示名称或****用户名**，然后从建议列表中选择用户。
 5. 添加多个用户，直到完成。
 6. 选择 **"** 保存"，然后将用户添加到分配的管理员列表中。
 
@@ -81,7 +80,7 @@ ms.locfileid: "59169945"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -108,5 +107,5 @@ ms.locfileid: "59169945"
 
 [关于 Microsoft 365 管理员角色](about-admin-roles.md)（文章）\
 [Azure AD 内置角色 (](/azure/active-directory/roles/permissions-reference) 文章) \
-[使用 PowerShell 向用户帐户分配角色](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (文章) \
+[使用 PowerShell 向用户帐户分配](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) 角色 (文章) \
 [授权或删除本文 (](../misc/add-partner.md) 的) 

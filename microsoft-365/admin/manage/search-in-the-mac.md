@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何使用管理中心中的搜索功能获得更快速的结果。
-ms.openlocfilehash: eca365ed7c25ac908fe5ea1679ceedb9765fb3c7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c530d3e041800ef2e9b0c36169ec15366b9b3b1d
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170398"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786031"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中搜索
 
-作为组织管理员Microsoft 365，您可以使用搜索来查找用户、执行操作、导航到不同的设置和阅读文档。 借助新的搜索功能，搜索速度已提高，现在可以从管理中心的每一页进行搜索。 搜索框已移动到管理中心顶部的横幅区域。 可以使用 **Alt+S 快捷方式从** 任何页面使用搜索。
+作为组织管理员Microsoft 365，您可以使用搜索来查找用户、执行操作、导航到不同的设置并阅读文档。 借助新的搜索功能，搜索速度已提高，现在可以从管理中心的每一页进行搜索。 搜索框已移动到管理中心顶部的横幅区域。 可以使用 **Alt+S 快捷方式从** 任何页面使用搜索。
 
 :::image type="content" source="../../media/search-bar.png" alt-text="Screenshot： Search bar in the Microsoft 365 管理中心":::
 
@@ -40,7 +41,7 @@ ms.locfileid: "59170398"
 
 ## <a name="users"></a>用户
 
-用户可以通过用户名、姓氏显示名称名字、用户名、主电子邮件地址或电子邮件别名来找到。 选择用户的名称编辑以编辑用户的详细信息。
+用户可以通过姓名、姓氏显示名称名字、用户名、主电子邮件地址或电子邮件别名来找到。 选择用户的名称编辑以编辑用户的详细信息。
 
 :::image type="content" source="../../media/User-search-stock-picture-domain-blanked.png" alt-text="Screenshot： Search for a user Felix Henderson":::
 

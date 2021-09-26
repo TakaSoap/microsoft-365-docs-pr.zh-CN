@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 search.appverid:
 - BCS160
 - MET150
@@ -24,16 +23,16 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: 在通讯组中创建通讯组或Microsoft 365 管理中心以便你可以向组发送电子邮件，而无需键入每个收件人的姓名。
-ms.openlocfilehash: 87b3f375f5e90ec7fc97332abb801d814bf4939b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 43453f54a9ae6c8bea90f58a2a3774b5c8cdca91
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170300"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775356"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在通讯组中Microsoft 365 管理中心
   
-在您希望向一组人员发送电子邮件而无需键入每个收件人的姓名时，通讯组 (通讯组) 按特定讨论主题 (例如"Marketing") 或按共享需要他们经常通信的常见工作的用户组织。 通讯组列表还提供一种自动向多个电子邮件地址转发电子邮件的方式。
+当您希望向一组人员发送电子邮件而无需键入每个收件人的姓名时，通讯组 (通讯组) 按特定的讨论主题 (例如 ("Marketing") 或按共享需要他们经常通信的公用工作的用户组织。 通讯组列表还提供一种自动向多个电子邮件地址转发电子邮件的方式。
 
 通讯组有时称为通讯组列表。
   
@@ -71,7 +70,7 @@ ms.locfileid: "59170300"
     
 6. 若要将用户添加到通讯组列表，请参阅向通讯组添加 [用户或联系人](../email/add-user-or-contact-to-distribution-list.md)。
     
-在"使用联系人组Outlook 2016 Outlook 网页版之前 (通讯组列表) 中查看[Outlook。](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
+在"使用联系人组Outlook 2016 Outlook 网页版之前通讯组 (通讯组列表中查看) [组](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39)Outlook。 
   
 请查看通讯 [组问题，](/office365/troubleshoot/groups/distribution-list-issues) 帮助解决通讯组列表问题。 
 

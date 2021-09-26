@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: 尝试以下步骤以跟踪基本移动性和安全性问题
-ms.openlocfilehash: b8df8c17f3a2fc5b7b6cce21769ca20742dbd397
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 533e2d60d3c23809bdfbf6dda5a64e43082c739e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169869"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775104"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>基本移动性和安全性疑难解答
 
@@ -41,9 +40,9 @@ ms.locfileid: "59169869"
 
 - 请确保你已设置 APNs 证书。 有关详细信息，请参阅为 [iOS 设备创建 APNs 证书](create-an-apns-certificate-for-ios-devices.md)。
 
-- 在 **设置**   >  **配置文件**   >  ** (或设备**) 中，确保尚未安装管理配置文件。 如果是，请将其删除。
+- 在 **设置**   >  **配置文件 (**   >  **或设备**) 中，确保尚未安装管理配置文件。 如果是，请将其删除。
 
-- 如果看到错误消息"设备注册失败"，请登录 Microsoft 365并确保已将包含 Exchange Online 的许可证分配给登录设备的用户。
+- 如果看到错误消息"设备注册失败"，请登录到 Microsoft 365并确保已向登录到设备的用户分配了包含 Exchange Online 的许可证。
 
 - 如果看到错误消息"配置文件安装失败"，请尝试以下操作之一：
 
@@ -53,15 +52,15 @@ ms.locfileid: "59169869"
 
 ## <a name="windows-rt"></a>Windows RT
 
-- 请确保你的域已设置为Microsoft 365移动性和安全性。 有关详细信息，请参阅设置 [基本移动性和安全性](set-up.md)。
+- 请确保你的域已Microsoft 365基本移动性和安全性。 有关详细信息，请参阅设置 [基本移动性和安全性](set-up.md)。
     
 - 确保用户选择"打开 **"，**   而不是选择"加入 **"。**
 
 ## <a name="windows-10-pc"></a>Windows 10电脑
 
-- 请确保你的域已设置为Microsoft 365移动性和安全性。 有关详细信息，请参阅设置 [基本移动性和安全性](set-up.md)。
+- 请确保你的域已Microsoft 365基本移动性和安全性。 有关详细信息，请参阅设置 [基本移动性和安全性](set-up.md)。
     
-- 除非你已Azure Active Directory Premium，否则请确保用户选择仅在设备管理中注册 ****   ， **而不是** 选择连接。
+- 除非你已Azure Active Directory Premium，否则请确保用户选择仅在设备管理中注册 ****   ，而不是选择连接。 ****
 
 ## <a name="android-phone-or-tablet"></a>Android 手机或平板电脑
 
@@ -69,6 +68,6 @@ ms.locfileid: "59169869"
 
 - 确保 Chrome 是最新的，并设置为默认浏览器。
 
-- 如果看到错误消息"我们无法注册此设备"，请登录到 Microsoft 365并确保已向登录到设备的用户分配了包含 Exchange Online 的许可证。
+- 如果看到错误消息"我们无法注册此设备"，请登录 Microsoft 365并确保已向登录到设备的用户分配了包含 Exchange Online 的许可证。
 
 - 检查设备上的通知区域，以查看任何所需的最终用户操作是否挂起，如果是，则完成这些操作。

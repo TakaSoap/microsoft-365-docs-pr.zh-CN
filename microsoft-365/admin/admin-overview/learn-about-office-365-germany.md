@@ -13,7 +13,6 @@ monikerRange: o365-germany
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
@@ -21,19 +20,19 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: 了解德国Office 365。
-ms.openlocfilehash: e08d3b72e8a87fa9cd5e5a1cc25d8178e4bd2183
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9aa7fc76be39f9ea0aee373ebbecb72387f47610
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169899"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773951"
 ---
 # <a name="learn-about-office-365-germany"></a>了解 Office 365 Germany
 
 > [!NOTE]
-> Office 365德国不再接受新客户或部署新服务。 德国的新云区域（2020 年第一季度针对 Microsoft 365 和 Office 365 提供）将提供在德国的核心客户数据驻留，以及到 Microsoft 全球云网络的完整连接。
+> Office 365德国不再接受新客户或部署新服务。 德国的新云区域（2020 年第一季度针对 Microsoft 365 和 Office 365 提供）将在德国提供核心客户数据驻留，以及与 Microsoft 全球云网络的完整连接。
 
-Office 365德国是欧洲提供Office 365的一个区别选项。 它帮助满足德国、欧盟 (欧盟) 和欧洲自由贸易联盟 (EFTA) 中监管最严格的客户的需求，提供来自德国数据中心的数字工作的行业领先的生产力服务，在德国提供数据驻留，以及通过受德国法律约束的唯一数据受托人模型严格的数据访问和控制措施。
+Office 365德国是欧洲可用的Office 365的一个区别选项。 它帮助满足德国、欧盟 (欧盟) 和欧洲自由贸易联盟 (欧洲自由贸易联盟 (EFTA) 中监管最严格的客户的需求，提供来自德国数据中心、数据驻留在德国的行业领先的数字工作生产力服务，以及通过受德国法律约束的唯一数据受托人模型严格的数据访问和控制措施。
   
 数据被信任方 T-Systems International 是一家独立的德国公司，同时也是德国电信的子公司，负责控制对客户数据的物理和逻辑访问。 未经数据受托人的批准或监督，不能访问客户数据，而该数据受德国法律约束。
   
@@ -41,7 +40,7 @@ Office 365德国是欧洲提供Office 365的一个区别选项。 它帮助满�
   
 ## <a name="which-microsoft-online-services-are-available-in-office-365-germany"></a>在德国提供哪些 Microsoft Office 365服务？
 
-Office 365德国计划产品在此隔离环境中尽可能与全球产品/服务保持一致。 例外包括：与 Yammer 相关的计划、即将到期的计划，以及通过非营利规划提供的计划。 Office 365 E5在德国通用后，将可以使用 Office 365 服务。 
+Office 365德国计划产品在此隔离环境中尽可能与全球产品/服务保持一致。 例外包括：与 Yammer 相关的计划、即将到期的计划，以及通过非营利规划提供的计划。 Office 365 E5一般版本（德国）后，将Office 365 SPE 和其他服务。 
   
 某些 [Office 365 Germany 订阅计划](https://go.microsoft.com/fwlink/p/?linkid=839016)中提供以下服务和功能。此外，请参阅[联机服务条款](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46)。
   
@@ -85,11 +84,11 @@ Office 365德国计划产品在此隔离环境中尽可能与全球产品/服务
     
 - Delve
     
-<sup>1</sup>Office 365 Germany 计划包括在最终用户的设备（"客户端软件应用程序" (") ）上安装和运行的客户端软件应用程序，如 Microsoft 365 企业应用版、Office 2013 和 Office 2016。 客户端软件应用程序不会只在德国数据中心内专门运营，并且可以使最终用户访问不是[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)的联机服务。 考虑到你与 Microsoft 之间的协议，客户端软件应用程序不是[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。 德国数据被信任方提供的德语数据驻留承诺和访问控制仅适用于[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。
+<sup>1</sup>Office 365 Germany 计划包括在最终用户的设备上安装和运行的客户端软件应用程序 ("客户端软件应用程序") ，如 Microsoft 365 企业应用版、Office 2013 和 Office 2016。 客户端软件应用程序不会只在德国数据中心内专门运营，并且可以使最终用户访问不是[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)的联机服务。 考虑到你与 Microsoft 之间的协议，客户端软件应用程序不是[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。 德国数据被信任方提供的德语数据驻留承诺和访问控制仅适用于[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。
   
 ## <a name="general-information"></a>一般信息
 
-|Item|信息|
+|项目|信息|
 |-----|-----|
 |登录门户  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |订阅、帐单和技术支持  <br/> |德语和英语中提供了基于德国的支持。有关详细信息，请参阅联系商业版产品支持 [人员 - 管理员帮助](../../business-video/get-help-support.md)。  <br/> |
@@ -100,4 +99,4 @@ Office 365德国计划产品在此隔离环境中尽可能与全球产品/服务
 |从内部购买域Microsoft 365  <br/> |不可用。  <br/> |
 |SharePoint 应用商店  <br/> |Microsoft 应用商店中可用的所有应用均由 Microsoft 或第三方应用发行商提供，且需遵守单独的隐私声明以及条款和条件。通过使用 Microsoft 应用商店和任意应用提供的数据可由 Microsoft 或第三方应用发行商访问（若适用），并且此数据传输到、存储和处理的地点可能在美国，也可能在 Microsoft 或应用发行商及其关联公司或服务提供商驻地的任何其他国家/地区。请与应用发行商协作，确保它符合 Office 365 Germany 部署。  <br/> |
    
-有关每个服务计划可用的服务Microsoft 365，请参阅服务Microsoft 365[说明](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。
+有关每个服务计划可用的服务Microsoft 365，请参阅服务Microsoft 365[说明。](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)

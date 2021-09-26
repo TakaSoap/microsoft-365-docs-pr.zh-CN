@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: 0aace52d05103afa490ec98b50ee9b6539e6b794
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 1fd410be19a8b5181cb2ef2b88d53e198753c7a3
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401658"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776736"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>转换到 Microsoft Defender for Endpoint
 
@@ -36,11 +36,9 @@ ms.locfileid: "59401658"
 
 如果你正在考虑迁移到 Defender for Endpoint，我们提供了帮助指南。 在下表中，查看这些方案。 选择最适合你的情况的方案，并查看建议的指导。
 
-<br>
+<br/><br/>
 
-****
-
-|应用场景|指南|
+|方案|指南|
 |---|---|
 |你还没有终结点保护解决方案，并且想要了解有关 Defender for Endpoint 的更多信息。 在环境中部署 Defender for Endpoint 之前，你想要了解它的工作原理。|[Microsoft Defender for Endpoint 评估实验室](evaluation-lab.md)|
 |你已拥有适用于终结点的 Defender，并且你需要一些帮助来设置和配置所有内容。|[Microsoft Defender for Endpoint 部署指南](deployment-phases.md)|

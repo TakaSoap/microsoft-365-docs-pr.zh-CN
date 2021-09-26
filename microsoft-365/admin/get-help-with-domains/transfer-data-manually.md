@@ -12,23 +12,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: 了解如何在更改计划或公司名称，或将多个订阅组合为一Microsoft 365帐户之间手动传输数据。
-ms.openlocfilehash: e06136195481abcce66afa6ecc21d1c3c54415d7
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: a400784db27fabfdb57f5ece04236a035b43b168
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400135"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775380"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>在两个帐户之间手动传输数据
 
-准备在日历上汇总并阻止一段时间：在两个 Microsoft 365 帐户之间传输数据是一个手动、复杂且耗时的过程。 这不是自动化或受支持的过程。 我们将开始。
+准备在日历上汇总和阻止一段时间：在两个 Microsoft 365 帐户之间传输数据是一个手动、复杂且耗时的过程。 这不是自动化或受支持的过程。 我们将开始。
   
 > [!CAUTION]
 > 在此过程期间，电子邮件、Skype for Business和托管在 Microsoft 365 上的公共网站将不起作用。 用户将获取新的用户名和密码，并且他们需要重置Outlook。
@@ -50,7 +49,7 @@ ms.locfileid: "58400135"
 |从旧订阅中删除自定义Microsoft 365域。  <br/> | 在 [删除域](remove-a-domain.md) 之前，请按照所需步骤从用户电子邮件地址中删除域名，并删除电子邮件的 DNS 记录以及自定义域的 Lync 记录。 如果在主机上托管公共Microsoft 365，则还需要删除指向它的 CNAME 记录。  <br/> > [!IMPORTANT]> 删除将电子邮件路由到此自定义域的 MX 记录后，电子邮件将停止工作，直到你将域添加到新帐户、设置新的 MX 记录并设置用户。 删除 Lync 的 DNS 记录时，Lync 将停止工作。 删除指向公共网站的 CNAME 记录后，该记录将不可用。           [删除域](remove-a-domain.md) 。  <br/> |
 |设置新订阅的自定义域，并设置用户。  <br/> | 设置新订阅，包括为自定义域创建所需的 DNS 记录。  <br/>  使用自定义域上的电子邮件地址创建用户。  <br/> |
 |将数据从旧订阅转移到新订阅。  <br/> | 在单独的浏览器窗口中登录这两个帐户：  <br/>  右键单击浏览器图标，然后打开两个专用浏览器窗口。 可以在两个窗口中使用不同的凭据登录这两个帐户。  <br/> [在订阅之间传输管理设置](#email) <br/> [转移团队网站结构和数据](#transfer-team-site-structure-and-data) <br/> [在订阅之间传输公共网站](#transfer-a-public-website-between-subscriptions) <br/> [在订阅之间传输管理设置](#email) <br/> |
-|通过致电 Microsoft 支持团队取消已完成计划的Microsoft 365。  <br/> | 验证新订阅是否正常工作，并且所有数据已转移。  <br/>  [联系客户支持](../../business-video/get-help-support.md) 以取消旧订阅。  <br/> |
+|通过致电 Microsoft 支持团队取消你已完成计划的Microsoft 365。  <br/> | 验证新订阅是否正常工作，并且所有数据已转移。  <br/>  [联系客户支持](../../business-video/get-help-support.md) 以取消旧订阅。  <br/> |
 
 ## <a name="transfer-administrative-settings-between-subscriptions"></a>在订阅之间传输管理设置
 
@@ -60,7 +59,7 @@ ms.locfileid: "58400135"
   
 对于Microsoft 365 企业版和Microsoft 365中型企业：
   
-|**Location**|**用途**|
+|**位置**|**用途**|
 |:-----|:-----|
 |**管理员** \>**Microsoft 365** \>**服务设置** <br/> |为邮件、网站、Lync、用户软件、密码、社区、权限管理和移动设置选择每个选项卡。  <br/> |
 |**管理员** \>**Exchange** <br/> | Exchange Online设置  <br/> |
@@ -69,7 +68,7 @@ ms.locfileid: "58400135"
 
 For Microsoft 365 Small Business
   
-|**Location**|**用途**|
+|**位置**|**用途**|
 |:-----|:-----|
 |**管理员** \>**管理组织范围的设置** <br/> |管理设置  <br/> |
 
@@ -78,7 +77,7 @@ For Microsoft 365 Small Business
 如果你有一个公共网站托管在 Microsoft 365，你需要保存它，然后在你的新订阅上重新创建它。
   
 > [!NOTE]
-> 如果公共网站托管在 DNS 托管提供商中，则无需任何更改。 它将不会受你的转换影响。
+> 如果公共网站托管在 DNS 托管提供商中，则无需进行更改。 它将不会受你的转换影响。
   
 若要将文档库或列表内容从 SharePoint Online 环境保存到文件共享或本地计算机，请参阅手动迁移 SharePoint [Online 内容](/sharepoint/troubleshoot/migration-tool/content-manual-migration)。
   
@@ -89,13 +88,13 @@ For Microsoft 365 Small Business
 
 有几种方法可以保存或传输团队网站数据：
   
-- 您可以将旧网站另存为模板，将模板导入新网站。
+- 可以将旧网站另存为模板，将模板导入新网站。
 
 - 若要传输文档，请首先手动在新建网站上重新创建层次结构。 然后，您可以同时打开SharePoint网站，使用资源管理器打开这两Windows库，并复制和粘贴文档。 请参阅 [视频：使用资源管理器打开来复制或移动库文件](../../business-video/store-files.md)。
 
 - 若要传输列表数据，请保存 [列表模板](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)，并使用保存的模板在新建网站上重新创建列表。
 
-- 若要将文档库或列表内容从 SharePoint Online 环境 (OneDrive for Business 或工作组网站) 保存到文件共享或本地计算机，请参阅有关手动迁移 SharePoint [Online 内容的信息](/sharepoint/troubleshoot/migration-tool/content-manual-migration)。
+- 若要将 SharePoint Online 环境 (OneDrive for Business 或工作组网站) 中的文档库或列表内容保存到文件共享或本地计算机，请参阅有关手动迁移 SharePoint [Online](/sharepoint/troubleshoot/migration-tool/content-manual-migration)内容的信息。
 
 ## <a name="transfer-users-data-between-subscriptions"></a>在订阅之间传输用户数据
 
@@ -109,4 +108,4 @@ For Microsoft 365 Small Business
 
 ### <a name="onenote"></a>OneNote 
 
-要求用户[备份OneNote](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us)[将笔记从备份](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us)还原到其新订阅。
+要求用户[备份OneNote](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us)[将笔记从](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us)备份还原到其新订阅。

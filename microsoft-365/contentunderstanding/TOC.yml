@@ -94,5 +94,7 @@
       href: rest-api/rest-updatemodelsettings-method.md
     - name: BatchDelete
       href: rest-api/rest-batchdelete-method.md
-    - name: 创建分类请求
+    - name: 创建文件分类请求
       href: rest-api/rest-createclassificationrequest.md
+    - name: 创建文件夹分类请求
+      href: rest-api/rest-createfolderclassificationrequest.md

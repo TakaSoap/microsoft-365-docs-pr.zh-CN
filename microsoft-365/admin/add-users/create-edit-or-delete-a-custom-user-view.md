@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: 了解如何使用筛选器创建、编辑或删除自定义用户Microsoft 365。
-ms.openlocfilehash: b4177a561d13d76f6d5a0a1077fe8037d469ee48
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b668bd34b35cbb8b3bfda0a152b981bdcf8df5f
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169939"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773855"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>创建、编辑或删除自定义用户视图
 
@@ -64,12 +63,12 @@ ms.locfileid: "59169939"
     
 - **出错的用户** 选中此框可显示可能有设置错误的用户。 
     
-- **未授权用户** 选中此框可查找尚未分配许可证的所有用户。 此视图的结果还可以包括拥有邮箱Exchange但没有许可证的用户。 若要专门跟踪这些用户，请使用筛选器"未授权用户 **Exchange邮箱或存档"**。 此视图的结果还可以包括具有存档Exchange但没有许可证的用户。
+- **未授权用户** 选中此框可查找尚未分配许可证的所有用户。 此视图的结果还可以包括拥有邮箱Exchange但没有许可证的用户。 若要专门跟踪这些用户，请使用筛选器"未授权用户Exchange **邮箱或存档。** 此视图的结果还可以包括具有存档Exchange但没有许可证的用户。
     
-- **具有邮箱或存档Exchange未授权用户** 选中此框可显示在 Exchange Online 中创建的用户帐户，Exchange邮箱，但没有分配Microsoft 365许可证。 此筛选器的结果包括拥有或分配了存档Exchange用户。 
+- **具有邮箱或存档Exchange未授权用户** 选中此框可显示在 Exchange Online 中创建的用户帐户Exchange但是未分配Microsoft 365许可证。 此筛选器的结果包括拥有或分配了存档Exchange用户。 
 
 > [!NOTE]
-> 在 **符合以下条件时，具有Exchange许可证的用户筛选器** 可以正常工作：
+> 在 **符合以下条件时，具有Exchange许可证的用户筛选器** 将正常工作：
 1. 邮箱最近从共享转换为 **用户，** 并且没有许可证。 
 2. 邮箱最近已迁移到 Microsoft 365但尚未分配许可证。
 3. 邮箱已使用 PowerShell 创建，尚未分配许可证。

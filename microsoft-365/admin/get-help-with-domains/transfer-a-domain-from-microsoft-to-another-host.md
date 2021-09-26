@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -22,12 +21,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: '在此处查找将域从 Microsoft 转移到另一个注册机构的步骤。 '
-ms.openlocfilehash: f34e9733ab53c8bdc6f4432c96e6232ecc26ee06
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f36203326f3b6cdd6a1b1bcfc52bfcee01ad1a80
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169766"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774432"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>将域从 Microsoft 转移到其他主机
 
@@ -40,7 +39,7 @@ ms.locfileid: "59169766"
 
 ## <a name="transfer-a-domain"></a>转移域
 
-1. 在管理中心中，转到   **"设置**   >  **域"。**
+1. 在管理中心，  **转到"设置**   >  **域"。**
 
 2. On the **Domains** page， select the Microsoft 365 domain that you want to transfer to another domain registrar， and then select **Check health**.
 
@@ -59,7 +58,7 @@ ms.locfileid: "59169766"
     您可以在"域"页面上找到授权代码"注册" **选项卡Microsoft 365。**
     
     > [!TIP]
-    > .uk 域需要不同的过程。 请联系 Microsoft 支持部门并请求 **IPS 标记更改** ，以匹配要管理域的注册机构。 标记更改后，域将立即转移到新注册机构。 然后，你需要与新的注册机构合作来完成转移，可能支付转移费用，并借助你的新注册机构将已转移的域添加到你的帐户。
+    > .uk 域需要不同的过程。 请联系 Microsoft 支持部门并请求 **IPS 标记更改** ，以匹配要管理域的注册机构。 标记更改后，域将立即转移到新注册机构。 然后，你需要与新注册机构一起完成转移，可能会支付转移费用，并借助你的新注册机构将已转移的域添加到你的帐户。
 
 9. 传输完成后，你将在新的域注册机构续订域。
 

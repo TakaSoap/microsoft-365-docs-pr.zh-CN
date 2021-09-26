@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: '了解如何使用 PowerShell 为组织中所有用户或特定用户启用或禁用待筛选Exchange功能。 '
-ms.openlocfilehash: 91098047bdf2ab8190283990bdc6b0292e3e57ba
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 055e02cd9a53dfcb8dd5bc3d3b7b601e3efe53ad
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169808"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774672"
 ---
 # <a name="configure-clutter-for-your-organization"></a>为组织配置待筛选邮件
 
@@ -60,7 +59,7 @@ ms.locfileid: "59169808"
 ## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>何时向用户显示待筛选邮件打开/关闭Outlook 网页版？
 <a name="bkmk_onoff"> </a>
 
-作为管理员，您可以使用 PowerShell 重新启用待筛选Exchange功能。 完成此操作后，重点收件箱将关闭，待筛选邮件功能将再次处于活动状态。 
+作为管理员，您可以使用 PowerShell 重新启用待筛选邮件Exchange功能。 完成此操作后，重点收件箱将关闭，待筛选邮件功能将再次处于活动状态。 
   
  **如果你将 Outlook 网页版订阅Microsoft 365 商业高级版：**
   
@@ -100,6 +99,6 @@ ms.locfileid: "59169808"
     
 ## <a name="related-content"></a>相关内容
 
-[使用待筛选邮件对邮件中的低优先级Outlook (](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)文章) \
-[使用待筛选邮件对 OWA 邮件](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce) 中的低优先级邮件进行排序 (文章) \
+[使用待筛选邮件对邮件中的](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)低优先级Outlook (，) \
+[使用待筛选邮件对 OWA 中的](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce) 低优先级邮件进行排序 (文章) \
 [关闭待筛选邮件Outlook (](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)文章) 

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - TopSMBIssues
@@ -28,21 +27,21 @@ search.appverid:
 - MOL140
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
-description: 了解如何从 Gmail 或其他电子邮件提供商导入联系人、日历和电子邮件，并迁移到Microsoft 365。
-ms.openlocfilehash: adf36aea78019a98f8b5b49e316eeb64b3f05cbc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解如何从 Gmail 或其他电子邮件提供商导入联系人、日历和电子邮件，并迁移到 Microsoft 365。
+ms.openlocfilehash: d74d643c17973fba4a1c964f0c494033d339a33e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170290"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776688"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>将电子邮件和联系人迁移到 Microsoft 365
 
-将电子邮件从 Gmail 或其他电子邮件提供商导入或迁移到 Microsoft 365。
+将电子邮件从 Gmail 或其他电子邮件提供商导入或迁移到Microsoft 365。
   
- **需要有关此的帮助？**  [联系Microsoft 365联系商业支持人员](../../business-video/get-help-support.md)。 
+ **需要有关此的帮助？**  [请联系Microsoft 365商业支持人员](../../business-video/get-help-support.md)。 
   
-对于此任务，你需要Outlook桌面安装的版本。 Outlook大多数计划都包含Microsoft 365[计划](https://go.microsoft.com/fwlink/p/?LinkId=723731)。
+你需要使用安装在桌面上的Outlook版本执行此任务。 Outlook大多数计划都包含Microsoft 365[计划](https://go.microsoft.com/fwlink/p/?LinkId=723731)。
   
 ### <a name="migrate-gmail-to-microsoft-365"></a>将 Gmail 迁移到 Microsoft 365
 
@@ -72,13 +71,13 @@ ms.locfileid: "59170290"
     
 2. [将联系人导入到 Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
-若要启动此过程，请打开 **Outlook并选择"** 文件 \> **""打开 &amp; 导出** \> **导入/导出"。**
+若要启动此过程，请打开"Outlook **并选择"文件** \> **""打开 &amp; 导出** \> **导入/导出"。**
   
 ![文件菜单中Outlook 2016。](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Open &amp; Export command in Outlook 2016](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![导入/导出按钮Outlook 2016](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
 ## <a name="see-other-email-accounts-in-outlook"></a>请参阅电子邮件中的其他Outlook
 
-只想查看来自其他提供商的电子邮件， (Gmail、Yahoo 或 Live.com) Outlook？ 无需导入或迁移。 你可以设置Outlook或Outlook Web App，以便你可以从 Microsoft 365 邮箱相同的位置访问其他帐户，并发送、接收和阅读发送到这些帐户的电子邮件。
+只想查看来自其他提供商的电子邮件， (Gmail、Yahoo 或 Live.com) 中的Outlook？ 无需导入或迁移。 你可以设置Outlook或Outlook Web App，以便你可以从与 Microsoft 365 邮箱相同的位置访问其他帐户，并发送、接收和阅读发送到这些帐户的电子邮件。
   
 ### <a name="outlook-desktop"></a>Outlook (桌面) 
 
@@ -96,6 +95,6 @@ ms.locfileid: "59170290"
 
 ## <a name="related-content"></a>相关内容
 
-[Plan your setup of Microsoft 365 for business (](plan-your-setup.md) article) \
-[Install Office applications (](install-applications.md) link page) \
+[Plan your setup of Microsoft 365 for business](plan-your-setup.md) (article) \
+[Install Office applications](install-applications.md) (link page) \
 [Microsoft 365 管理中心概述](../../business-video/admin-center-overview.md)（视频）

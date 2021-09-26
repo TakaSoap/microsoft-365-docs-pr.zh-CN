@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: 在基本移动性和安全性中管理 iOS 设备。
-ms.openlocfilehash: 84f3589593ef26325397f5b6e90d5b21662d2352
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c7fa6a83690483d5e3b286688f4d6ed46495b096
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169891"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773903"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>为 iOS 设备创建 APNs 证书
 
@@ -29,7 +28,7 @@ ms.locfileid: "59169891"
 
 2. 在浏览器中，键入  <https://protection.office.com/> 。
 
-3. 选择  **"数据丢失防护**   >  **""设备管理"，** 然后选择 **"适用于 iOS 设备的 APNs 证书"。**
+3. 选择  **"数据丢失防护**   >  **""设备管理**"，然后选择"**适用于 iOS 设备的 APNs 证书"。**
 
 4. 在"Apple 推送通知证书设置页上，选择"下一 **步"。**
 
@@ -46,7 +45,7 @@ ms.locfileid: "59169891"
 
     3. 选择  **"创建证书**   "并接受使用条款。
 
-    4. 浏览到您从 Microsoft 365 下载到计算机的证书签名请求，然后选择 **"Upload"。**
+    4. 浏览到从 Microsoft 365 下载到计算机的证书签名请求，然后选择 **"Upload"。**
 
        将 Apple Push Certificate Portal 创建的 APNs 证书下载到您的计算机。
 

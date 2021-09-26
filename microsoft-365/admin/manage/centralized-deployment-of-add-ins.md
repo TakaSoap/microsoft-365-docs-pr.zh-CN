@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,17 +20,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
-description: 确定租户和用户是否满足要求，以便可以使用集中部署Office加载项。
-ms.openlocfilehash: 79acef4454428daba68d42b0161d060b7e28ee56
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 确定租户和用户是否满足要求，以便可以使用集中部署来部署Office外接程序。
+ms.openlocfilehash: 9bddbf7f11d01bdf18f4b09f1d92e8f99e82ae5a
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169754"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774420"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定外接程序的集中部署是否适用于您的组织
 
-对于大多数客户来说，集中部署是推荐且功能最丰富的方法，Office向组织内的用户和组部署外接程序。 如果你是管理员，请使用本指南确定组织和用户是否满足要求，以便可以使用集中部署。
+对于大多数客户来说，集中部署是推荐且功能最丰富的方法Office向组织内的用户和组部署外接程序。 如果你是管理员，请使用本指南确定组织和用户是否满足要求，以便可以使用集中部署。
 
 集中部署有以下优点：
 
@@ -47,7 +46,7 @@ ms.locfileid: "59169754"
 
 ## <a name="before-you-begin"></a>开始之前
 
-外接程序的集中部署要求用户使用 Microsoft 365 企业版 SKUS：E3/E5/F3 或业务 SK：Business Basic、Business Standard、Business 高级版 (，并且使用其组织 ID) 登录 Office，并且具有 Exchange Online 和活动的 Exchange Online 邮箱。 订阅目录必须位于 中，或已联合到Azure Active Directory。
+外接程序的集中部署要求用户使用 Microsoft 365 企业版 SKUs：E3/E5/F3 或 Business SKUs：Business Basic、Business Standard、Business 高级版 (，并且使用其组织 ID) 登录到 Office，并且具有 Exchange Online 和Exchange Onlinemailboxes。 订阅目录必须位于 中，或已联合Azure Active Directory。
 可以查看以下版本和Office Exchange，或使用集中[部署兼容性检查器](#centralized-deployment-compatibility-checker)。
 
 集中部署不支持以下内容：
@@ -58,24 +57,24 @@ ms.locfileid: "59169754"
 - 部署到 SharePoint 的加载项
 - Teams应用
 - 部署组件对象模型 (COM) 或Visual Studio Tools for Office (VSTO) 加载项。
-- 不包含Microsoft 365 SK：Exchange Online For Business 和 Microsoft 365 应用版 for Enterprise 等 Microsoft 365 应用版 部署。
+- 不包含Microsoft 365的部署，Exchange Online SK：Microsoft 365 应用版 for Business 和 Microsoft 365 应用版 for Enterprise。
 
 ### <a name="office-requirements"></a>Office要求
 
-- 对于 Word、Excel 和 PowerPoint 加载项，用户必须使用下列项之一：
+- 对于 Word、Excel 和 PowerPoint 外接程序，您的用户必须使用下列项之一：
   - 在 Windows 设备上，版本 1704 或更高版本的 Microsoft 365 企业版 SK：E3/E5/F3 或 Business SKUs：Business Basic、Business Standard、Business 高级版。
   - 在 Mac 版本 15.34 或更高版本上。
 
 - 对于Outlook，用户必须使用下列方法之一：
   - SKUS 的版本 1701 或Microsoft 365 企业版：E3/E5/F3 或 Business SKUs：Business Basic、Business Standard、Business 高级版。
   - 2019 年 Office 专业增强版 2019 或 Office Standard 版本 1808 或更高版本。
-  - MSI 版本 16.0.4494.1000 或更高版本Office 专业增强版 2016 (MSI) 或 Office 标准版 2016 (MSI) \*
-  - MSI 2013 或 OFFICE PROFESSIONAL PLUS 2013 版本 15.0.4937.1000 (MSI) 或 Office Standard 2013 () \*
+  - MSI 版本 16.0.4494.1000 或更高版本OFFICE 专业增强版 2016 (MSI) 或 Office 标准版 2016 (MSI) \*
+  - MSI 2013 或 Office Professional Plus 2013 版本 15.0.4937.1000 (MSI) 或 Office Standard 2013 () \*
   - 版本 16.0.9318.1000 或更高版本Office 2016 for Mac
 - 适用于 iOS 的 Outlook 2.75.0 版或更高版本
 - Android 移动版 2.2.145 Outlook更高版本
 
-    *MSI 版本的 Outlook在相应的"加载项"功能Outlook显示管理员安装的加载项，而不是"我的加载项"部分。
+    *MSI 版本的 Outlook在相应的 Outlook 功能区中显示管理员安装的外接程序，而不是"我的外接程序"部分。
 
 ### <a name="exchange-online-requirements"></a>Exchange Online要求
 
@@ -103,7 +102,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   此命令会提示您输入  *_TenantDomain_* (例如 *TailspinToysIncorporated.onmicrosoft。 </span>com*)  *_和 TenantAdmin_* (使用全局管理员凭据) ，然后请求同意。
+   此命令会提示您输入  *_TenantDomain_* (例如 *TailspinToysIncorporated.onmicrosoft。 </span>com*) 和  *_TenantAdmin_* (使用全局管理员凭据) ，然后请求同意。
 
    > [!NOTE]
    > 检查器可能需要数分钟或数小时时间来完成检查，具体取决于租户中的用户数。 
@@ -127,7 +126,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 
 ## <a name="user-and-group-assignments"></a>用户和组分配
 
-集中部署功能当前支持大多数受 Azure Active Directory支持的组，Microsoft 365组、通讯组列表和安全组。
+集中部署功能当前支持大多数受 Azure Active Directory 支持的组，Microsoft 365组、通讯组列表和安全组。
 
 > [!NOTE]
 > 当前不支持未启用邮件的安全组。
@@ -153,12 +152,12 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 
 ### <a name="contacting-microsoft-for-support"></a>联系 Microsoft 以获取支持
 
-如果你或你的用户在使用已集中部署的 Office Web (Word、Excel 等 ) 应用时遇到加载加载项的问题，你可能需要联系 Microsoft 支持人员 (了解如何) 。 [](../../business-video/get-help-support.md) 在支持票证中提供有关Microsoft 365环境的信息。
+如果你或你的用户在使用已集中部署的 Office Web (Word、Excel 等 ) 应用时遇到加载加载项的问题，你可能需要联系 Microsoft 支持人员 (了解如何) 。 [](../../business-video/get-help-support.md) 在支持票证中提供有关Microsoft 365环境的以下信息。
 
 | 平台 | 调式信息 |
 |:-----|:-----|
 |Office | Charles/Fiddler 日志  <br/>  租户 ID ([了解如何) ](/onedrive/find-your-office-365-tenant-id)  <br/>  CorrelationID。 查看其中一个 Office 页面的源并查找相关 ID 值并将其发送给支持人员：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
-|丰富的客户端（Windows、Mac） | Charles/Fiddler 日志  <br/>  最好将客户端应用 (内部版本号作为文件/帐户设置 **中的**)  |
+|丰富的客户端（Windows、Mac） | Charles/Fiddler 日志  <br/>  最好将客户端应用 (生成号作为"文件 **/** 帐户"或"帐户")  |
 
 ## <a name="related-content"></a>相关内容
 

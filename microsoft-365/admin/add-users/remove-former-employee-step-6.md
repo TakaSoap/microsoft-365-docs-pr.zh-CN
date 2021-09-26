@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -25,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照以下步骤删除Microsoft 365员工授予的许可证。
-ms.openlocfilehash: 7303c881e93d3ecb0c6637936ad12d8da227392c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cf75d12ba425701528ec4f07d6d7e6b91e4dc585
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169919"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775332"
 ---
 # <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>步骤 6 - 删除Microsoft 365员工的许可证
 
@@ -42,7 +41,7 @@ ms.locfileid: "59169919"
 2. 选择要阻止的员工的姓名，然后选择"许可证 **和应用"** 选项卡。
 3. 清除要删除 (许可证) 复选框，然后选择"保存 **更改"。**
 
-**若要在聘用其他人** 之前减少你支付的许可证数量，请执行以下步骤：
+**若要在聘用** 其他人之前减少你支付的许可证数量，请执行以下步骤：
 
 1. 在管理中心，转到" **帐单** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">""产品"页面</a> ，然后选择" **产品"** 选项卡。
 2. 选择要从中删除许可证的订阅。
@@ -52,7 +51,7 @@ ms.locfileid: "59169919"
 
 向 [企业添加其他人](add-users.md) 时，系统会提示你同时购买许可证，只需一个步骤！
 
-有关管理 Microsoft 365 for business 的用户许可证的信息，请参阅Assign [licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md)和[Unassign licenses from users in Microsoft 365 for business。](../manage/remove-licenses-from-users.md)
+有关管理 Microsoft 365 for business 的用户许可证的信息，请参阅Assign [licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md)和[Unassign licenses from users in Microsoft 365 for business](../manage/remove-licenses-from-users.md)。
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>已删除的员工帐户如何影响 Skype for Business
 

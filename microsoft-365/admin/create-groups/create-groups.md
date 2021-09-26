@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -24,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何创建和删除Microsoft 365组、添加和删除组的成员，以及自定义组的工作方式。
-ms.openlocfilehash: 76131f434b3c4210578fe44ff7dd4e435f1fbe6b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5abe83570121ae6c1837e0037521be3d1da8580c
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169861"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775056"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>在"管理"中Microsoft 365 管理中心
   
-尽管用户可以从Microsoft 365或其他应用中创建Outlook组，但作为管理员，你可能需要创建或删除组、添加或删除成员以及自定义其工作。 Microsoft 365 管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">是</a>进行此操作的位置。 
+尽管用户可以从 Microsoft 365或其他应用中Outlook组，但作为管理员，你可能需要创建或删除组、添加或删除成员以及自定义其工作。 Microsoft 365 管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">是</a>进行此操作的位置。 
 
 > [!TIP]
 > Microsoft 365连接Yammer组必须在Yammer中创建，但可以在其他Microsoft 365 管理中心组中管理Microsoft 365组。 若要了解更多信息，请参阅Yammer[组Microsoft 365组。](/yammer/manage-yammer-groups/yammer-and-office-365-groups) 
@@ -72,7 +71,7 @@ ms.locfileid: "59169861"
     
 5. 单击“关闭”三次。 
     
-该组将显示在"Outlook中，并为其分配成员。
+该组将显示在Outlook中，并为其分配成员。
 
 ## <a name="who-can-delete-email-from-the-group-inbox"></a>Who组收件箱中删除电子邮件？
 
@@ -84,10 +83,10 @@ ms.locfileid: "59169861"
 
 ## <a name="next-steps"></a>后续步骤
 
-创建新组并添加成员后，可以进一步配置组，例如编辑组名称或说明、更改所有者或成员，以及指定外部发件人是否可以向组发送电子邮件以及是否将组对话的副本发送给成员。 请参阅[管理Microsoft 365组](manage-groups.md)了解相关信息。
+创建新组并添加成员后，可以进一步配置组，例如编辑组名称或说明、更改所有者或成员，以及指定外部发件人是否可以向组发送电子邮件以及是否将组对话的副本发送给成员。 有关[信息，请参阅Microsoft 365组](manage-groups.md)。
 
 ## <a name="related-content"></a>相关内容
 
-[管理来宾对 Microsoft 365 组的访问权限](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (文章) \
+[管理来宾对 Microsoft 365 组](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (文章) \
 [选择创建组时Microsoft 365域 (](../../solutions/choose-domain-to-create-groups.md)文章) \
 [将通讯组列表Microsoft 365文章 (](../manage/upgrade-distribution-lists.md)组) 

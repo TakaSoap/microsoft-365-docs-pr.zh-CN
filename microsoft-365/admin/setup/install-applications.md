@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 search.appverid:
 - MET150
 - MOE150
@@ -23,26 +22,26 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: 现在，你已设置Microsoft 365，了解如何在 Mac、OFFICE或移动设备上安装单独的应用程序。
-ms.openlocfilehash: dc32009bd42027890457bee97e19cdd94f49c6b7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a8d6aa4624285503340b5a22392c601c57acc439
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169727"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776016"
 ---
 # <a name="install-office-applications"></a>安装 Office 应用程序
 
-现在，你已设置Microsoft 365，可以在 Mac、Office或移动设备上安装单独的应用程序。
+现在，你已设置Microsoft 365，可以在 Mac、OFFICE或移动设备上安装单独的应用程序。
   
 若要了解如何执行下列步骤，请遵循以下链接：
   
 - 安装Office应用程序[：在Office或 Mac 上安装客户端](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
-- 安装其他应用[：Project、Visio](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281)或[](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710) [Skype for Business](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
+- 安装其他应用[：Project、Visio](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281)[](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710)或[Skype for Business](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
 
 - 设置移动设备：Microsoft 365[移动设备设置 - 帮助](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
 
-- 在 Outlook[中设置](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)Windows[或 Mac](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)
+- 在 Outlook：Windows 或 Mac[中](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)[设置电子邮件](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)
  
 - [将用户升级到最新应用](upgrade-users-to-latest-office-client.md) 
 
@@ -54,4 +53,4 @@ ms.locfileid: "59169727"
 
 ## <a name="related-content"></a>相关内容
   
-[本文Office Microsoft 365 (](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)安装和) 
+[疑难解答Office Microsoft 365 (](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)安装和) 

@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - TRN_SMB
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -29,13 +30,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: 了解适用于 Microsoft 365 商业高级版 的安装步骤，包括添加域和用户、设置安全策略等。
-ms.openlocfilehash: 7e01a27361ba681a6475c5e0165d8efbb16371a8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解适用于 Microsoft 365 商业高级版的安装步骤，包括添加域和用户、设置安全策略等。
+ms.openlocfilehash: 3336b75e1810f5f1323e69d2a1ba7feee36ec7c8
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170304"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786355"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在Microsoft 365 商业高级版向导中设置网站
 
@@ -69,7 +70,7 @@ ms.locfileid: "59170304"
     !["个性化您的登录"页面的屏幕截图。](../../media/adddomain.png)
 
     
-4. 按照向导中的步骤，在验证您是否拥有该域的任何 DNS Microsoft 365创建[DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)记录。 如果你知道域主机，另请参阅[向Microsoft 365](/microsoft-365/admin/setup/add-domain)添加域。
+4. 按照向导中的步骤在验证您拥有该域的任何 DNS Microsoft 365创建[DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)记录。 如果你知道域主机，另请参阅[向Microsoft 365](/microsoft-365/admin/setup/add-domain)添加域。
 
     如果你的托管服务提供商是 GoDaddy 或启用了 [domain connect](/office365/admin/get-help-with-domains/domain-connect) 的其他主机，则此过程很简单，系统会自动要求你登录并让 Microsoft 代表你进行身份验证。
 
@@ -85,7 +86,7 @@ ms.locfileid: "59170304"
 
 ![向导中"添加新用户"页的屏幕截图。](../../media/addnewuserspage.png)
 
-1. 如果你Microsoft 365 商业高级版订阅的现有用户 (，例如，如果你已使用 Azure AD 连接) ，则你现在可以选择为其分配许可证。 继续操作，并为这些用户添加许可证。
+1. 如果你Microsoft 365 商业高级版订阅的现有 (，例如，如果你已使用 Azure AD 连接) ，则你现在可以选择为其分配许可证。 继续操作，并为这些用户添加许可证。
 
 2. 添加用户之后，还将显示与添加的新用户共享凭据的选项。可以选择打印、通过电子邮件发送或下载凭据。
 
@@ -109,7 +110,7 @@ ms.locfileid: "59170304"
 
 在向导中设置的策略将自动应用于名为 ["](/office365/admin/create-groups/compare-groups#security-groups) 所有用户" *的安全组*。 还可以创建其他组，以在管理中心向分配策略。
 
-1. 在 **"增强对高级** 网络威胁的保护"上，建议接受默认设置，让高级威胁防护Office 365 [](../../security/office-365-security/defender-for-office-365.md)扫描应用中的文件和Office链接。
+1. 在 **"增强对高级** 网络威胁的保护"上，建议你接受默认设置，Office 365 [高级](../../security/office-365-security/defender-for-office-365.md)威胁防护扫描应用中的文件和Office链接。
 
     !["增加保护"页面的屏幕截图。](../../media/increasetreatprotection.png)
 
@@ -123,13 +124,13 @@ ms.locfileid: "59170304"
 
 ## <a name="secure-windows-10-pcs"></a>保护 Windows 10 电脑
 
-在左侧导航上，选择"**设置**"，然后在"登录和安全"下，选择"保护 **Windows 10计算机"。** 选择 **"视图** "开始。 有关[完整说明，Windows 10](secure-win-10-pcs.md)保护计算机安全。
+在左侧导航中，选择"**设置**"，然后在"登录和安全"下，选择"保护 **Windows 10计算机"。** 选择 **"视图** "开始。 请参阅[保护Windows 10计算机](secure-win-10-pcs.md)，了解完整说明。
 
 ## <a name="deploy-office-365-client-apps"></a>部署Office 365客户端应用
 
-如果你选择在安装期间自动安装 Office 应用，则当用户使用工作凭据从 Windows 设备登录到 Azure AD 后，这些应用将安装在 Windows 10 设备上。
+如果选择在安装过程中自动安装 Office 应用，则当用户使用工作凭据从 Windows 设备登录到 Azure AD 后，这些应用将安装在 Windows 10 设备上。
 
-若要在Office iOS 或 Android 设备上安装移动设备，请参阅为 Microsoft 365 商业高级版[设置移动设备](set-up-mobile-devices.md)。
+若要在Office iOS 或 Android 设备上安装移动设备，请参阅为用户[Microsoft 365 商业高级版移动设备。](set-up-mobile-devices.md)
 
 也可以单独安装Office安装。 有关[说明Office在电脑或 Mac 上](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)安装设备。
 

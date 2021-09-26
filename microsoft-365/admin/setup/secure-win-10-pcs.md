@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - TRN_SMB
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何在设置Windows 10后保护电脑Microsoft 365 商业高级版。
-ms.openlocfilehash: 23b2879b22299ad6c43ae5a8e03ee8060ec26789
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7579ec2b846f58fefcd61c744a56808ece591dc7
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170284"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786205"
 ---
 # <a name="secure-windows-10-computers"></a>保护 Windows 10 计算机
 
@@ -39,12 +40,12 @@ ms.locfileid: "59170284"
 ## <a name="to-secure-your-windows-10-computers"></a>保护你的Windows 10计算机
 
 1. 使用全局管理员凭据登录到 [Microsoft 365 管理中心](https://admin.microsoft.com)。 
-2. 在左侧导航上，选择"**设置**"，然后在"登录和安全"下，选择"保护 **Windows 10计算机"。** 选择 **"视图** "开始。
-3. 在 **"保护Windows 10** 计算机"页上，阅读所有信息以了解要打开的内容以及用户的影响。
+2. 在左侧导航中，选择"**设置**"，然后在"登录和安全"下，选择"保护 **Windows 10计算机"。** 选择 **"视图** "开始。
+3. 在 **"保护Windows 10** 计算机"页上，阅读所有信息，了解要打开的内容以及用户的影响。
 
     在页面顶部，选择"**开始使用"。**
 
-4. 在"**保护Windows 10** 计算机"窗格中，选择要打开的选项。 有关设置详细信息，请参阅安全[Windows 10设备](../misc/secure-windows-10-devices.md) (文章) \
+4. 在 **"保护Windows 10** 计算机"窗格中，选择要打开的选项。 有关设置详细信息，请参阅安全[Windows 10设备](../misc/secure-windows-10-devices.md) (文章) \
 ). 
     
     对于大多数组织来说，此处的选项提供了良好的安全级别，但是，如果你的组织具有更复杂的安全需求，则还可以使用预定义的安全基线来保证Windows 10安全。 有关详细信息，请参阅[安全基线Windows 10设备](/mem/intune/protect/security-baselines)。   

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -25,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 收集创建 DNS 记录所需的值/信息，以将域连接到 Microsoft 365 订阅。
-ms.openlocfilehash: aea4cbcff76ec499b9e9e5618646774f56785cb9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c56120e446ccde93d353bd4e36fd03493cda4688
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169771"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774444"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>收集创建 DNS 记录所需的信息
 
@@ -64,7 +63,7 @@ ms.locfileid: "59169771"
     
 5. 转到 ["添加 DNS 记录"以连接域](create-dns-records-at-any-dns-hosting-provider.md)，然后按照步骤在 DNS 主机的网站上添加记录。
     
-6. 按照在 DNS 主机上 (TXT 记录或 MX 记录) 的步骤操作，然后将域验证回 Microsoft 365。
+6. 按照在 DNS 主机上 (TXT 记录或 MX 记录) 的步骤操作，然后在域中重新Microsoft 365。
 
 7. 在 DNS 主机 (域) 后，从 DNS 主机中删除 TXT 记录或 MX Microsoft 365。
     

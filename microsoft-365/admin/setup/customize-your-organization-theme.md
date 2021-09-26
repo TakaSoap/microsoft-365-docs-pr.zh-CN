@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -22,23 +21,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: 了解如何更改导航栏中导航栏顶部的默认主题Microsoft 365自定义它以匹配公司徽标或颜色。
-ms.openlocfilehash: 62a658929faaf130e85df5a2eb9637bf6a6c8a0a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解如何更改导航栏中导航栏顶部的默认主题Microsoft 365自定义该主题以匹配公司徽标或颜色。
+ms.openlocfilehash: f90f38546cce24d5bef11d7fb0ab7bc88a824bca
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170297"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773215"
 ---
-# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>为Microsoft 365自定义主题
+# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自定义Microsoft 365主题
 
 作为组织的管理员，你可以为组织成员创建多个主题，并选择哪些主题适用于组织的不同成员。 组织主题是显示在组织中人员的顶部导航栏中的主题。
 
-可以添加或更新适用于组织内部所有人的默认主题。还可以创建最多四个其他组主题，这些主题可分配给多个Microsoft 365组。
+可以添加或更新适用于组织内部所有人的默认主题。还可以创建多达四个其他组主题，这些主题可分配给多个Microsoft 365组。
   
 ## <a name="add-or-update-your-organizations-theme"></a>添加或更新组织的主题
 
-1. In the admin center， go to the **设置** \> **Org 设置** page， and then choose the Organization **profile** tab.
+1. 在管理中心，转到"设置 \> **组织** 设置"页面，然后选择"组织 **配置文件"** 选项卡。
 
 2. 在"**组织配置文件"** 选项卡上，选择"**自定义主题"。**
 
@@ -46,7 +45,7 @@ ms.locfileid: "59170297"
 
 |**Tab**|**What can you do?**|
 |:-----|:-----|
-|[常规](#general-modify-a-theme) <br/> |修改主题名称，并分配最多五个组 (如果适用) 。  <br/> |
+|[常规](#general-modify-a-theme) <br/> |修改主题名称，并分配最多五个组 (（如果适用) ）。  <br/> |
 |[徽标](#logos-specify-your-theme-logos) <br/> |添加组织徽标，包括深色主题的备用徽标。  <br/> |
 |[Colors](#colors-choose-theme-colors) <br/> |通过指定导航栏、强调文字和图标颜色自定义配色方案。 <br/> |
 
@@ -58,9 +57,9 @@ ms.locfileid: "59170297"
 
 默认主题是显示的第一个主题。  
 
-1. 如果以前为组织自定义了主题，请选择"默认主题"，然后使用保存的自定义项之一，或者选择"**添加主题"。**
+1. 如果以前为组织自定义了主题，请选择"默认主题"并使用保存的自定义项之一，或者选择"**添加主题"。**
 2. 在 **"常规** "页上，可以阻止用户覆盖其主题，并显示用户显示名称。
-3. 选择“**保存**”以保存所做的更改。  
+3. 选择 **保存** 以保存所做的更改。  
 
 > [!IMPORTANT]
 > 默认主题是唯一的，不能重命名，并且适用于组织内部的每个人。 若要删除默认主题，您必须首先删除所有其他主题。
@@ -73,7 +72,7 @@ ms.locfileid: "59170297"
 
 1. 在 **"常规** "页面上，输入新主题的名称。
 
-2. 在 **"** 组"下，Microsoft 365查看你的组主题的最多 5 个组，而不是使用默认主题。 您还可以阻止用户覆盖其主题和显示用户显示名称。
+2. 在 **"** 组"下，你最多可以选择 5 Microsoft 365查看你的组主题的组，而不是使用默认主题。 您还可以阻止用户覆盖其主题和显示用户显示名称。
 
 3. 选择“**保存**”。
 
@@ -87,7 +86,7 @@ ms.locfileid: "59170297"
 - **备用徽标**：添加指向徽标的 URL 位置。 应优化备用徽标，以用于Office主题。 与默认徽标的要求相同。
 - **单击链接**：添加指向徽标的 URL 位置。 可以将徽标用作指向任何公司资源（例如，贵公司的网站）的链接。 如果未选择徽标的 URL 位置，它将默认为 Office主页。
 
-选择“**保存**”以保存所做的更改。
+选择 **保存** 以保存所做的更改。
 
 :::image type="content" source="../../media/Logos_Tab.png" alt-text="Screenshot： Logos tab showing the logo options":::
 
@@ -100,7 +99,7 @@ ms.locfileid: "59170297"
 - **导航栏颜色**：选择要用于导航栏背景的颜色。 导航栏显示在每页的顶部。
 - **文本和图标颜色**：选择要用于顶部导航栏上的文本和图标的颜色。
 - **主题色**：选择一个在白色或浅色背景上显示良好的颜色。 主题色用于为在白色或浅色背景上显示的链接和按钮设置颜色。 例如，主题色用于为用户收件箱及其 Office.com 门户页面上的元素设置颜色。
-- **重置颜色**：选择此链接将颜色重置为默认颜色。
+- **重置颜色**：选择此链接以将颜色重置为默认颜色。
 
 :::image type="content" source="../../media/default-theme-colors1.png" alt-text="Screenshot： Colors tab showing default theme colors for your organization":::
 
@@ -127,7 +126,7 @@ ms.locfileid: "59170297"
 
 ### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>能否手动分配独立于组Microsoft 365主题？  
 
-否，必须将新的组主题映射到一个或多个Microsoft 365组。 作为组Microsoft 365用户将获取应用于其组的主题。 通过[进入管理中心中的](../create-groups/create-groups.md)"Microsoft 365组"，设置"组"并 ****   >  **** 添加新成员。
+否，必须将新的组主题映射到一个或多个Microsoft 365组。 作为组Microsoft 365用户将获取应用于其组的主题。 通过[进入管理中心中的](../create-groups/create-groups.md)"Microsoft 365组"，设置 ****   >  **成员并** 将其添加到组。
 
 ### <a name="what-happens-if-a-user-is-assigned-to-multiple-group-themes"></a>如果将用户分配给多个组主题，会发生什么情况？  
 
@@ -139,15 +138,15 @@ ms.locfileid: "59170297"
 
 ### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>为什么我每次上载徽标 URL 时都会收到错误消息。  
 
-请确保你使用的徽标指定为可公开地址 URL。 请按照以下步骤将徽标[上传到 Azure Blob](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)存储或 Office 365 内容分发网络 Online SharePoint[应用](../../enterprise/use-microsoft-365-cdn-with-spo.md)。
+请确保你使用的徽标指定为可公开地址 URL。 请按照以下步骤将徽标上传到[Azure Blob](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)存储或 Office 365 内容分发网络 Online [SharePoint应用](../../enterprise/use-microsoft-365-cdn-with-spo.md)。
 
 ### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>为什么我收到消息"不满足最小颜色对比率 4.5：1"？
 
 文本、图标或按钮颜色与背景色之间的建议对比率为 4.5：1。 你可以替代此建议，但仍保存主题，因为这不是一项要求。
 
-### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>如果我定义一个主题，将在Microsoft 365哪个位置？
+### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>如果我定义主题，将在Microsoft 365哪个位置？
 
-作为套件标题的一部分，组织的顶部导航栏中将显示所有Microsoft 365主题。  
+任何主题在顶部导航栏中显示，供组织所有人使用，作为Microsoft 365页眉的一部分。  
   
 ## <a name="related-content"></a>相关内容
 

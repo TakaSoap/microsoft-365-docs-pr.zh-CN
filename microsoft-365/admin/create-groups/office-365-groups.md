@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -22,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 通过Microsoft 365组，可以通过向一组人员Microsoft 365共享资源集合来推动整个团队协作。
-ms.openlocfilehash: 08e90d5197e59f6c1cf6dc89343b263194925bf4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 通过Microsoft 365组，你可以为一组Microsoft 365共享资源集合提供访问权限，从而推动整个团队的团队合作。
+ms.openlocfilehash: 66026d3626eecdf9cc80dce0b0b25003e9847726
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169852"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774888"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>面向管理员的 Microsoft 365 组概述
 
@@ -55,7 +54,7 @@ Microsoft 365组是跨组织推动所有团队合作的基础Microsoft 365。 �
 - **Members** - 成员可以访问组内的所有内容，但无法更改组设置。 默认情况下，团队成员可以邀请来宾加入你的组，但你可以 [控制该设置](manage-guest-access-in-groups.md)。
 - **来宾** - 组来宾是组织外部的成员。
 
-只有全局管理员、用户管理员和组管理员才能在"组<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">"Microsoft 365 管理中心。</a> 你不能是委派管理员（例如代表管理员的顾问）。
+只有全局管理员、用户管理员和组管理员才能在<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 管理中心。</a> 你不能是委派管理员（例如代表管理员的顾问）。
 
 作为管理员，您可以：
 
@@ -63,13 +62,13 @@ Microsoft 365组是跨组织推动所有团队合作的基础Microsoft 365。 �
 - [为贵组织的组创建命名策略](../../solutions/groups-naming-policy.md)
 - [创建组时选择使用哪个域](../../solutions/choose-domain-to-create-groups.md)
 - [管理对组的来宾访问](manage-guest-access-in-groups.md)
-- [恢复已删除组 (](restore-deleted-group.md) 删除后 30 天内) 
+- [删除后 30](restore-deleted-group.md) (恢复已删除组) 
 
-如果更希望采用自动化的方式来管理组Microsoft 365，可以使用过期策略以特定时间间隔使组过期。 组所有者将在组到期前 30、15 和 1 天收到一封电子邮件，允许他们根据需要续订组。 请参阅[：Microsoft 365组过期策略](../../solutions/microsoft-365-groups-expiration-policy.md)。
+如果更希望采用自动化的方式来管理组Microsoft 365，可以使用过期策略以特定时间间隔使组过期。 组所有者将在组过期前 30、15 和 1 天收到一封电子邮件，允许他们续订组（如果仍然需要）。 请参阅[：Microsoft 365组过期策略](../../solutions/microsoft-365-groups-expiration-policy.md)。
 
-可以从组管理组，Microsoft 365 管理中心[PowerShell 管理](../../enterprise/manage-microsoft-365-groups-with-powershell.md)组。
+可以从管理组或Microsoft 365 管理中心[PowerShell 管理组](../../enterprise/manage-microsoft-365-groups-with-powershell.md)。
 
-如果您有很多用户（例如，在大型企业或企业中）中，则您可能有许多用户出于各种目的创建组。 我们强烈建议您查看规划Microsoft 365[组以](../../solutions/collaboration-governance-overview.md)获得最佳方案。
+如果您有很多用户（例如，在大型企业或企业中）中，则您可能有许多用户出于各种目的创建组。 我们强烈建议您查看规划Microsoft 365[组，以](../../solutions/collaboration-governance-overview.md)获得最佳方案。
 
 ## <a name="group-limits"></a>组限制
 
@@ -87,7 +86,7 @@ Microsoft 365组是跨组织推动所有团队合作的基础Microsoft 365。 �
 
 组织可以拥有的默认Microsoft 365数是 500，000。 若要超出默认限制，必须联系 Microsoft 支持部门。 有关组限制Microsoft 365，请参阅Microsoft 365[组 - 管理员帮助](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 
-如果您Microsoft 365组使用情况的可操作信息，则管理你的组会更有效。 The Microsoft 365 管理中心 has a reporting tool that lets you see storage use， how many active groups you have， and how users are using the groups. 有关详细信息[Microsoft 365请参阅管理中心中的](../activity-reports/office-365-groups.md)报表。
+如果您Microsoft 365组使用情况的可操作信息，则管理你的组会更有效。 该Microsoft 365 管理中心有一个报告工具，可用于查看存储用途、你拥有的活动组数以及用户如何使用组。 有关详细信息[Microsoft 365请参阅管理中心](../activity-reports/office-365-groups.md)中的报告。
 
 ## <a name="sensitivity-labels"></a>敏感度标签
 
@@ -106,10 +105,10 @@ Microsoft 365组是跨组织推动所有团队合作的基础Microsoft 365。 �
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>哪些Microsoft 365计划包括组？
 
-任何Microsoft 365和 Exchange Online online SharePoint订阅都将支持组。 这包括商业基础版和商业高级版计划，以及 Enterprise E1、E3 和 E5 计划。 组负责授权创建组 (也称为组"组织者") 。 只要组织者拥有所需的组具有的任何功能的正确许可证，该许可证就会传达给组。
+任何Microsoft 365和 Exchange Online online SharePoint订阅都将支持组。 这包括商业基础版和商业高级版计划，以及 Enterprise E1、E3 和 E5 计划。 组负责授权创建组 (也称为组"组织者"的组) 。 只要组织者拥有所需的组具有的任何功能的正确许可证，该许可证就会传达给组。
 
 > [!NOTE]
-> 有关服务系列Microsoft 365和计划的更多详细信息，请参阅Microsoft 365[计划选项。](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> 有关服务系列Microsoft 365和计划的更多详细信息，请参阅Microsoft 365[计划选项](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)。
 
 如果你有仅Exchange计划，你仍然可以获取 Outlook 中的组的共享收件箱和共享日历功能，但你无法获取文档库、Planner 或其他任何功能。
 
@@ -123,6 +122,6 @@ Microsoft 365组使用Azure Active Directory。 你获取的组功能取决于Az
 
 [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article) \
 [Upgrade distribution lists to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md) (article) \
-[使用 PowerShell Microsoft 365组](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (文章) \
-[SharePoint Online 限制 (](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)文章) \
+[Manage Microsoft 365 Groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article) \
+[SharePoint Online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (文章) \
 [在 Microsoft Stream 中组织组](/stream/groups-channels-organization) 和频道 (文章) 

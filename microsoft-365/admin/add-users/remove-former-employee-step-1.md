@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -24,15 +23,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 阻止以前的员工登录并阻止访问 Microsoft 365 服务。
-ms.openlocfilehash: da1ad9236a8380dd3ce5bdebb86675b7c6e09cbd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 阻止以前的员工登录并阻止访问Microsoft 365服务。
+ms.openlocfilehash: b33f3aa74ebdcf785b75889f5f3263e91b127cdc
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169931"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773447"
 ---
-# <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>步骤 1 - 阻止以前的员工登录并阻止Microsoft 365访问
+# <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>步骤 1 - 阻止以前的员工登录并阻止Microsoft 365服务
 
 如果需要立即阻止用户的登录访问，应重置其密码。 在此步骤中，强制注销用户Microsoft 365。
 
@@ -44,10 +43,10 @@ ms.locfileid: "59169931"
 3. 输入新密码，然后选择"重置 **"。**  (不要将其发送给他们。) 
 4. 选择要转到其属性窗格的用户名称，在"帐户"选项卡上，选择"**注销所有会话"。**
 
-在一小时内或离开当前Microsoft 365页面后，系统会提示他们重新登录。 访问令牌适合一小时，因此时间线取决于该令牌所剩的时间，以及他们是否导航到当前网页。
+在一小时内（或离开当前Microsoft 365页面后）系统会提示他们重新登录。 访问令牌适合一小时，因此时间线取决于该令牌所剩的时间，以及他们是否导航到当前网页。
   
 > [!IMPORTANT]
-> 如果用户在邮箱Outlook 网页版，只需单击其邮箱中的四处，可能不会立即退出。 当他们选择其他磁贴（如OneDrive或刷新浏览器）时，即会启动注销。
+> 如果用户在邮箱Outlook 网页版，只需单击其邮箱中的四处，他们可能不会立即启动。 当他们选择其他磁贴（如OneDrive或刷新浏览器）时，即会启动注销。
   
 若要使用 PowerShell 立即注销用户，请参阅 [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) cmdlet。
   
@@ -58,7 +57,7 @@ ms.locfileid: "59169931"
 > [!IMPORTANT]
  > 阻止帐户可能需要 24 小时才能生效。 如果需要立即阻止用户的登录访问，请按照上述步骤操作并重置其密码。
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 2. 选择要阻止的员工的姓名，在用户名下，选择"阻止此 **用户"的符号**。
 3. 选择 **"阻止用户登录"，** 然后选择"保存 **"。**
 
@@ -68,7 +67,7 @@ ms.locfileid: "59169931"
   
 1. 转到 <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange 管理中心</a>。
 2. 在 Exchange 管理中心 中，导航到" **收件人** "\>" **邮箱** "。
-3. 从列表中选择用户邮箱，然后在右侧"详细信息窗格" (，选择"电子邮件) "下的"管理 **电子邮件** 应用程序 **设置"。**  关闭 **所有** 选项的滑块;**移动****(Exchange ActiveSync) 、Outlook 网页版、Outlook****桌面 (MAPI) 、Exchange** **Web 服务****、POP3** 和 **IMAP。**
+3. 从列表中选择用户邮箱，然后在右侧"详细信息窗格" (，选择"电子邮件) "下的"管理电子邮件应用程序 **设置"。**   关闭 **所有** 选项的滑块;**移动****(Exchange ActiveSync) 、Outlook 网页版、Outlook****桌面 (MAPI) 、Exchange** **Web 服务****、POP3** 和 **IMAP。**
 4. 选择“**保存**”。
 
 ## <a name="related-content"></a>相关内容

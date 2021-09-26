@@ -11,7 +11,6 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -22,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: 将电子邮件作为通讯组列表Microsoft 365以便当成员回复邮件时，邮件看起来好像来自通讯组列表。
-ms.openlocfilehash: 021f44591805385f0575d6fa2ca550289a72c82d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4f41368d5b769c783c7c05aa662199bbcafd7b1e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170397"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776040"
 ---
 # <a name="send-email-as-a-distribution-list"></a>以通讯组列表方式发送电子邮件
 
@@ -35,9 +34,9 @@ ms.locfileid: "59170397"
   
 ## <a name="before-you-begin"></a>开始之前
 
-执行这些步骤之前，请确保你已添加到Microsoft 365通讯组列表，并且你已被授予以发送方式发送权限。
+执行这些步骤之前，请确保你已添加到Microsoft 365通讯组列表，并且你已被授予对该列表的发送权限。
   
- **管理员**：确保你已按照将 [Microsoft 365](../email/add-user-or-contact-to-distribution-list.md)用户或联系人添加到列表和允许成员以 [Microsoft 365 组](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group)组方式发送电子邮件主题中的步骤操作，并将正确的人员添加到通讯组列表。
+ **管理员**：确保你已按照将 [Microsoft 365](../email/add-user-or-contact-to-distribution-list.md)用户或联系人添加到列表和允许成员以 [Microsoft 365 组](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group)成员方式发送电子邮件主题中的步骤操作，并将正确的人员添加到通讯组列表。
   
 ## <a name="outlook-on-the-web"></a>Outlook 网页版
 

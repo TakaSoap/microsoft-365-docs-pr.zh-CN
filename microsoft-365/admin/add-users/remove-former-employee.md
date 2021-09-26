@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -26,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照此解决方案中的步骤从员工Microsoft 365并保护组织的数据。
-ms.openlocfilehash: 7c9667b771300a75a91588727f1d333ff2215302
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef89160f52c03bfe92a48b5432e3fdad700b1b40
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169917"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775344"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概述：删除以前的员工和安全数据
 
@@ -41,7 +40,7 @@ ms.locfileid: "59169917"
 
 您需要是全局管理员才能完成此解决方案中的步骤。
 
-若要完成本系列中的步骤，请使用这些功能Microsoft 365功能。
+若要完成本系列中的步骤，请使用Microsoft 365功能。
 
 |产品或组件|功能或特性|
 |---|---|
@@ -64,10 +63,10 @@ ms.locfileid: "59169917"
 
 |步骤|为什么执行此操作|
 |---|---|
-|[步骤 1 - 阻止以前的员工登录并阻止Microsoft 365访问](remove-former-employee-step-1.md)|这会阻止以前的员工登录Microsoft 365并阻止该员工访问Microsoft 365服务。|
+|[步骤 1 - 阻止以前的员工登录并阻止Microsoft 365服务](remove-former-employee-step-1.md)|这会阻止以前的员工登录Microsoft 365并阻止该员工访问Microsoft 365服务。|
 |[步骤 2 - 保存以前员工的邮箱的内容](remove-former-employee-step-2.md)|这对将要接管员工工作或者存在诉讼的人很有用。|
 |[步骤 3 - 将前员工的电子邮件转发给其他员工或转换为共享邮箱](remove-former-employee-step-3.md)|这可保证前员工的电子邮件地址处于活动状态。如果客户或合作伙伴仍向以前员工的地址发送电子邮件，此功能可让他们发送给接管该工作的员工。|
-|[步骤 4 - 向另一名员工授予OneDrive和Outlook权限](remove-former-employee-step-4.md)|如果仅删除用户的许可证但不删除其帐户，则甚至 30 天后仍可访问该用户的 OneDrive 中的内容。 <p> 在删除帐户之前，应该向其他用户授予OneDrive Outlook访问权限。 删除员工帐户后，其OneDrive和Outlook内容将保留 **30** 天。 但是，在这 30 天内，您可以还原用户帐户并访问其内容。 如果还原用户帐户，OneDrive Outlook 30 天后仍可供你访问。|
+|[步骤 4 - 向另一名员工授予OneDrive和Outlook数据的访问权限](remove-former-employee-step-4.md)|如果仅删除用户的许可证但不删除其帐户，则甚至 30 天后仍可访问该用户的 OneDrive 中的内容。 <p> 在删除帐户之前，应该向另一OneDrive授予Outlook访问权限。 删除员工帐户后，其OneDrive Outlook内容将保留 **30** 天。 但是，在这 30 天内，您可以还原用户帐户并访问其内容。 如果还原用户帐户，OneDrive Outlook 30 天后仍可供你访问。|
 |[步骤 5 - 擦除和阻止前员工的移动设备](remove-former-employee-step-5.md)|从手机或平板电脑删除业务数据。|
 |[步骤 6 - 删除Microsoft 365员工的许可证](remove-former-employee-step-6.md)|移除许可证后，可将许可证分配给其他人。也可删除许可证，以便在聘用其他人员之前，无需为其付费。  <p> 移除或删除许可证时，用户的旧电子邮件、联系人和日历将保留 **30 days** ，然后永久删除。如果删除许可证但不删除其帐户，则在 30 天后仍可以访问该用户的 OneDrive 中的内容。  |
 |[步骤 7 - 删除以前员工的用户帐户](remove-former-employee-step-7.md)|这会从管理中心中删除帐户。 进行清除，保持干净。|

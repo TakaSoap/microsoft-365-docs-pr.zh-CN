@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -21,18 +20,18 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: Exchange管理员管理组织的电子邮件和邮箱。 例如，他们恢复用户邮箱中的已删除项目。
-ms.openlocfilehash: 58f0da87c0db57a3df62834a4375d561e20a98f8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 310074403c57e4c2d8eddc4942d76ebca4181630
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169957"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773675"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>关于Exchange Online管理员角色
 
-为了帮助你管理Microsoft 365，可以从管理中心向用户分配[](assign-admin-roles.md)管理组织的电子邮件[和Exchange权限](/exchange/exchange-admin-center)。 为此，可将其分配到Exchange管理员角色。
+为了帮助你管理Microsoft 365，可以从管理中心向用户[](assign-admin-roles.md)分配管理组织的电子邮件[和Exchange权限](/exchange/exchange-admin-center)。 为此，可将其分配到Exchange管理员角色。
   
- **提示**：将某人分配给Exchange管理员角色时，还要将其分配到服务管理员角色。 这样，他们就可以在 Microsoft 365 管理中心中查看重要信息，如 Exchange Online 服务的运行状况，以及更改和发布通知。
+ **提示**：在将某人分配给 Exchange管理员角色时，还要将其分配到服务管理员角色。 这样，他们就可以在 Microsoft 365 管理中心中查看重要信息，如 Exchange Online 服务的运行状况，以及更改和发布通知。
 
 下面是用户在被分配到管理员角色时可以执行Exchange任务：
   
