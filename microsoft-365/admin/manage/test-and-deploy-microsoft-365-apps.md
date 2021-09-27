@@ -1,5 +1,5 @@
 ---
-title: 在集成Microsoft 365 应用版中测试并部署合作伙伴的部署
+title: 在集成Microsoft 365 应用版中测试并部署合作伙伴部署的应用
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -9,21 +9,21 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: ''
+ms.collection: Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 从组织中集成应用门户中查找、测试和部署组织中用户和组的 Microsoft 和 Microsoft 合作伙伴Microsoft 365 管理中心。
-ms.openlocfilehash: 13276923c55632145207b61032583a26e3553e06
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6ab2b2a81fe54b38f6c2d6352a976b83cd2e84a9
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170388"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933995"
 ---
-# <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>在集成Microsoft 365 应用版中测试并部署合作伙伴的部署
+# <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>在集成Microsoft 365 应用版中测试并部署合作伙伴部署的应用
 
-通过Microsoft 365 管理中心，你可以灵活地从单个位置部署单个应用商店应用、自定义业务线应用Microsoft 365合作伙伴应用。 可以在 Microsoft 管理中心设置中，在集成应用中访问该位置。 通过集成应用门户查找、测试和完全部署由 Microsoft 合作伙伴购买和许可的应用，可为组织保持业务服务的定期更新和高效运行带来便利和好处。
+通过Microsoft 365 管理中心，你可以灵活地从一个位置部署单个应用商店应用、自定义业务线应用Microsoft 365合作伙伴应用。 可以在 Microsoft 管理中心设置中，在集成应用中访问该位置。 通过集成应用门户查找、测试和完全部署由 Microsoft 合作伙伴购买和许可的应用，可为组织保持业务服务的定期更新和高效运行带来便利和好处。
 
 有关从组织的合作伙伴购买和Microsoft 365应用的其他信息，请参阅从 Microsoft 365 应用版[管理和](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324)部署Microsoft 365 管理中心。
 
@@ -31,9 +31,9 @@ ms.locfileid: "59170388"
 
 集成应用门户仅可供全局管理员访问，并且仅适用于全球客户。 此功能在自主云和政府云中不可用。
 
-集成应用门户显示应用列表，其中包括单个应用Microsoft 365部署你的组织的合作伙伴提供的应用。 仅列出 web SPFx、Office、加载项Teams应用程序。 对于 Web 应用，你可以看到两种类型的应用。
+集成应用门户显示应用列表，其中包括单个应用和Microsoft 365部署你的组织的合作伙伴提供的应用。 仅列出 web SPFx、Office应用程序、Teams和外接程序。 对于 Web 应用，你可以看到两种类型的应用。
 
-- SaaS 应用可在 appsource.microsoft.com 中提供，并且由管理员代表组织进行部署。
+- SaaS 应用在 appsource.microsoft.com 中提供，并且由管理员代表组织进行部署。
 - 与 Office 加载项链接的 SAML 库应用。
 
 ## <a name="manage-apps-in-the-integrated-apps-portal"></a>在集成应用门户中管理应用
@@ -93,7 +93,7 @@ ms.locfileid: "59170388"
 
 1. 在管理中心的左侧导航中，选择"设置"**集成****应用"。**
 
-2. 选择 **Upload应用"。** 仅支持 Word、PowerPoint、Excel 和 Outlook 应用的自定义行。
+2. 选择 **Upload自定义应用"**。 仅支持 Word、PowerPoint、Excel 和 Outlook 应用的自定义行。
 
 3. Upload设备添加清单文件或添加 URL 链接。 某些应用要求你先添加用户，然后才能选择部署。
 
@@ -107,7 +107,7 @@ ms.locfileid: "59170388"
 
 ## <a name="prepare-to-deploy-add-ins-in-integrated-apps"></a>准备在集成应用中部署外接程序
 
-Office加载项有助于个性化设置文档，并简化访问 Web 上信息 (请参阅开始使用 Office 加载项) 。 
+Office外接程序可帮助您个性化设置文档并简化访问 Web 上信息的方式 (请参阅开始使用 Office 外接程序) 。 
 
 外接程序具有以下优点： 
 
@@ -115,37 +115,37 @@ Office加载项有助于个性化设置文档，并简化访问 Web 上信息 (�
 
 - 如果管理员关闭或删除外接程序，或者如果用户从 Azure Active Directory 或外接程序分配到的组中删除，则用户将不再显示外接程序。 
 
-外接程序在三个桌面平台中受支持，Windows、Mac 和 Online Office应用。 它还在 iOS 和 Android (Outlook仅移动外接程序中) 。 
+外接程序在三个桌面平台中受支持，Windows、Mac 和 Online Office应用。 它还在 iOS 和 Android (Outlook移动外接程序仅支持) 。 
 
 外接程序最多可能需要 24 小时才能显示给所有用户的客户端。 
 
-现在，Exchange管理员和全局管理员都可以从集成应用部署外接程序。   
+现在Exchange管理员和全局管理员都可以从集成应用部署外接程序。   
 
-### <a name="before-you-begin"></a>开始之前
+### <a name="before-you-begin"></a>准备工作
 
-部署外接程序要求用户使用 Microsoft 365 企业版 许可证 (E3/E5/F3) 或 Microsoft 365 Business (Business Basic、Business Standard、Business 高级版) 。 用户还需要使用其组织 ID Office登录到) ，并且Exchange Online活动Exchange Online邮箱。 订阅目录必须位于或联合到Azure Active Directory。 
+部署外接程序要求用户使用 Microsoft 365 企业版 许可证 (E3/E5/F3) 或 Microsoft 365 Business (Business Basic、Business Standard、Business 高级版) 。 用户还需要使用其组织 ID Office登录) 邮箱Exchange Online活动Exchange Online邮箱。 你的订阅目录必须位于 中，或联合到 Azure Active Directory。 
 
 部署不支持以下内容： 
 
 - 针对 Office 2013 中 Word、Excel 或 PowerPoint 的加载项 
 - 本地目录服务 
-- 部署到内部部署Exchange的外接程序部署 
+- 部署到内部部署Exchange的外接程序 
 - 部署组件对象模型 (COM) 或Visual Studio Tools for Office (VSTO) 加载项。 
 - 不包含Microsoft 365（如 Exchange Online for Business 和 Microsoft 365 应用版 for Microsoft 365 应用版 for Enterprise）的部署。  
 
 ### <a name="office-requirements"></a>Office要求 
 
-对于 Word、Excel 和 PowerPoint 加载项，用户必须使用下列项之一： 
-- 在 Windows 设备上，Microsoft 365 企业版 许可证版本 1704 或更高版本 (E3/E5/F3) 或 Microsoft 365 商业版许可证 (Business Basic、Business Standard、Business 高级版) 。 
+对于 Word、Excel 和 PowerPoint 加载项，用户必须使用下列加载项之一： 
+- 在 Windows 设备上，版本 1704 或更高版本的 Microsoft 365 企业版 许可证 (E3/E5/F3) 或 Microsoft 365 商业版许可证 (Business Basic、Business Standard、Business 高级版) 。 
 - 在 Mac 版本 15.34 或更高版本上。 
 
 对于Outlook，用户必须使用下列方法之一： 
 - 版本 1701 或更高版本的 Microsoft 365 企业版 许可证 (E3/E5/F3) 或 Microsoft 365 Business (Business Basic、Business Standard、Business 高级版) 。 
-- 2019 年 Office 专业增强版 2019 或 Office Standard 版本 1808 或更高版本。 
+- 2019 年 Office 专业增强版 2019 Office Standard 版本 1808 或更高版本。 
 - MSI 版本 16.0.4494.1000 或更高版本Office 专业增强版 2016 (MSI) 或 Office 标准版 2016 (MSI) 。
     > [!NOTE]
     > MSI 版本的 Outlook在相应的"加载项"功能Outlook显示管理员安装的加载项，而不是"我的加载项"部分。  
-- MSI 2013 Office Professional Plus 2013 版本 15.0.4937.1000 或更高版本 (MSI) 或 Office Standard 2013 (MSI) 。
+- MS) I 2013 (2013 或 Office Professional Plus Office Standard 201 (3 Office Standard 版本 15.0.4937.1000) 。
 - 版本 16.0.9318.1000 或更高版本Office 2016 for Mac。 
 - 适用于 iOS 的移动版 2.75.0 Outlook更高版本。 
 - Android 移动版 2.2.145 Outlook更高版本。 
@@ -158,7 +158,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 请与组织的 Exchange 管理员联系，了解正在使用哪个配置。 可以使用 [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity)   PowerShell cmdlet 验证每个用户的 OAuth 连接。 
 
 ### <a name="user-and-group-assignments"></a>用户和组分配
-外接程序部署当前受 Azure Active Directory 支持的大多数组，Microsoft 365组、通讯组列表和安全组。 部署支持顶级组或没有父组的组的用户，但支持嵌套组或具有父组的组的用户。 
+外接程序部署当前受外接程序支持的大多数组Azure Active Directory，Microsoft 365组、通讯组列表和安全组。 部署支持顶级组或没有父组的组的用户，但支持嵌套组或具有父组的组的用户。 
 
 > [!NOTE]
 > 当前不支持未启用邮件的安全组。 
@@ -169,11 +169,11 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>找出一个组是否包含嵌套组
 
-若要找出一个组是否包含嵌套组，最简单的方法是查看 Outlook 内的组联系人卡片。 如果在电子邮件的"到"字段中输入 **** 组名称，然后在解析时选择组名称，它将显示该组是否包含用户或   嵌套组。 在下面的示例中，测试组 **** Outlook联系人卡片的"成员"选项卡不会显示任何用户，而只显示两个   子组。 
+若要找出一个组是否包含嵌套组，最简单的方法是查看 Outlook 内的组联系人卡片。 如果在电子邮件的"到"字段中输入 **** 组名称，然后在解析时选择组名称，它将显示该组是否包含用户或   嵌套组。 在下面的示例中，"测试 **** 组"Outlook"联系人卡片的"成员"选项卡不会显示任何用户，而只显示两个   子组。 
 
 ![联系人卡片Outlook"选项卡。](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
-可以解析某个组，查看该组是否是任何组的成员，从而进行反向查询。 在下面的示例中，你可以看到子组 1 <b></b>是测试组Outlook   联系人卡片的成员身份选项卡下。 
+可以解析某个组，查看该组是否是任何组的成员，从而进行反向查询。 在下面的示例中，可以在联系人卡片的"成员身份 <b></b>"选项卡Outlook子组 1 是测试组   的成员。 
 
 ![联系人卡片Outlook选项卡。](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
@@ -191,7 +191,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>使用管理中心部署 Office 加载项 
 
-1. 在管理中心中，选择"设置"，然后选择"**集成应用"。** 
+1. 在管理中心中，选择 **"设置"，** 然后选择"**集成应用"。** 
 
 2. 选择 **页面顶部的** "获取应用"。 AppSource 将采用嵌入格式加载。 搜索外接程序，或者通过单击左侧导航导航上的"产品"找到它。  如果外接程序已被 ISV 链接到 SaaS 应用或其他应用和外接程序，并且 SaaS 应用是付费应用，则将显示一个对话框，用于购买许可证或部署。 无论你是否已购买许可证，都可以继续部署。 选择“**部署**”。  
 
@@ -206,7 +206,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 7. 部署外接程序时，将显示一个绿色"刻度线"图标。 按照页面上的说明测试外接程序。 
 
 > [!NOTE]
-> 用户可能需要重新启动Office，以查看应用程序功能区上的外接程序图标。 Outlook外接程序最多可能需要 24 小时才能显示在应用程序功能区上。 
+> 用户可能需要重新启动Office应用程序功能区上的外接程序图标。 Outlook外接程序最多可能需要 24 小时才能显示在应用程序功能区上。 
 
 最佳做法是通知用户和组已部署的外接程序可用。 请考虑发送描述何时以及如何使用外接程序的电子邮件。 包含或链接以帮助用户在加载项出现问题时可能帮助的内容或常见问题解答。 
 
@@ -224,13 +224,13 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 
 适合贵组织的选项取决于您的配置。 但是，我们建议使用组进行分配。 作为管理员，您可能会发现使用组并控制这些组的成员身份（而不是每次分配单个用户）可以更轻松地管理外接程序。 在某些情况下，您可能希望通过手动分配用户来向特定用户分配分配，从而限制一小组用户的访问权限。 
 
-### <a name="more-about-office-add-ins-security"></a>有关Office加载项安全性 
+### <a name="more-about-office-add-ins-security"></a>详细了解Office安全性 
 Office 加载项结合了一个包含加载项相关元数据的 XML 清单文件，但最重要的是它指向包含所有代码和逻辑的 Web 应用程序。加载项的功能范围很广。例如，加载项可以：
 - 显示数据。 
 - 读取用户文档以提供上下文服务。 
 - 从用户文档读取数据并向用户文档写入数据，以便向该用户提供价值。  
 
-有关 Office 外接程序的类型和功能详细信息，请参阅 [Office 外接程序](/office/dev/add-ins/overview/office-add-ins)平台概述，尤其是"Office 外接程序剖析"一节。 
+有关 Office 加载项的类型和功能详细信息，请参阅 [Office 加载项](/office/dev/add-ins/overview/office-add-ins)平台概述，尤其是"Office 加载项剖析"一节。 
 
 若要与用户文档进行交互，外接程序需要在清单中声明所需的权限。 五级 JavaScript API 访问权限模型为任务窗格加载项用户的隐私和安全性提供了基础。Office Store 中的大多数加载项都是 ReadWriteDocument 级别，几乎所有加载项都至少支持 ReadDocument 级别。 有关权限级别的详细信息，请参阅S [requesting permissions for API use in content and task pane add-ins。](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins) 
 
@@ -239,13 +239,13 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
 加载项更新的情况如下： 
 - **业务线** 外接程序：在这种情况下，如果管理员显式上载了清单，则外接程序要求管理员上载新的清单文件以支持元数据更改。 相关 Office 应用程序下次启动时，该加载项会更新。 Web 应用程序可以随时更改。 
 
-- **Office 应用商店** 外接程序：当管理员从 Office 应用商店选择外接程序时，如果 Office 应用商店中的外接程序更新，则下次相关 Office 应用程序启动时，外接程序将更新。 Web 应用程序可以随时更改。 
+- **Office应用商店** 外接程序：当管理员从 Office 应用商店选择外接程序时，如果 Office 应用商店中的外接程序更新，则下次相关 Office 应用程序启动时，外接程序将更新。 Web 应用程序可以随时更改。 
 
 > [!NOTE]
 > 对于 Word、Excel 和 PowerPoint 使用 [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)应用程序目录向本地环境中的用户部署外接程序，而不需要连接到 Microsoft 365 和/或支持   SharePoint 外接程序。 For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.  
 
 ## <a name="add-in-states"></a>加载项状态
-加载项可以"开"或" ****    **关"**   状态。 
+加载项可以"开"或"关 ****    **"**   状态。 
 
 | 状态 | 此状态如何出现 | 影响 |
 |:-----|:-----|:-----|
@@ -255,11 +255,11 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
  
 如果没有人再使用加载项，请考虑将其删除。 例如，如果外接程序仅在一年的特定时间使用，则关闭外接程序可能有意义。 
 
-## <a name="manage-an-office-add-in-using-the-admin-center"></a>使用Office管理中心管理加载项
+## <a name="manage-an-office-add-in-using-the-admin-center"></a>使用Office中心管理加载项
 
 部署后，管理员还可以管理用户对外接程序的访问权限。 
 
-1. 在管理中心中，选择"设置"，然后选择"**集成应用"。** 
+1. 在管理中心中，选择 **"设置"，** 然后选择"集成 **应用"。** 
 2. 在"集成应用"页面上，它将显示应用列表，这些应用可能是单个加载项，或者是已与其他应用链接的加载项。 
 3. 选择"状态 **"**   为 **"更多可用应用"的应用**   ，以打开 **"管理"**   窗格。 通过 **更多可用应用** 的状态，你可以知道来自 ISV 的更多集成   尚未部署。 
 4. 在" **概述"选项卡**   上，选择"部署 **"。** 某些应用要求你先添加用户，然后才能选择部署。 
@@ -274,7 +274,7 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
 
 您还可以删除已部署的外接程序。
 
-1. 在管理中心中，选择 **"设置"，** 然后选择"**集成应用"。**
+1. 在管理中心中，选择 **"设置"，** 然后选择"集成 **应用"。**
 2. 选择任意行以显示管理窗格。 
 3. 选择" **配置"** 选项卡。 
 4. 选择要删除的外接程序，然后选择"删除 **"。**  
@@ -286,7 +286,7 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
 
 有两种情况Exchange管理员无法部署外接程序：
 - 如果加载项需要 MS 权限Graph API 并需要获得全局管理员同意。
-- 如果外接程序链接到两个或多个外接程序和 webapp，并且至少有一个外接程序由另一个管理员 (exchange/global) 部署，并且用户分配不统一。 只有当所有已部署的应用的用户分配相同时，我们才允许部署外接程序。  
+- 如果外接程序链接到两个或多个外接程序和 webapp，并且至少其中一个外接程序由另一个管理员 (exchange/global) 且用户分配不统一。 只有当所有已部署的应用的用户分配相同时，我们才允许部署外接程序。  
 
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
@@ -308,7 +308,7 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
 
 ### <a name="can-administrators-delete-or-remove-apps"></a>管理员能否删除或删除应用？
 
-能。 全局管理员可以删除或删除应用。
+是。 全局管理员可以删除或删除应用。
 
 - 从列表视图中选择应用。 在" **配置"** 选项卡上，选择要删除的应用。  
 

@@ -11,6 +11,7 @@ ms.service: o365-administration
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 localization_priority: Normal
 ms.custom:
 - Core_O365Admin_Migration
@@ -26,16 +27,16 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 了解如何使用 Windows AutoPilot 为Windows 10设置新设备，以便员工可以使用这些设备。
-ms.openlocfilehash: 1a2350e836a84870a9eb304196d6c72831f52d60
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ba80deb2f1af5f0edc6969674e64df5259cbd44
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169847"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933779"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用分步指南添加 Autopilot 设备和配置文件
 
-可以使用 Windows AutoPilot 为Windows 10设置新的设备，以便当你将这些设备供员工使用时，这些设备可供使用。
+可以使用 Windows AutoPilot 为Windows 10设置新的设备，以便当你将这些设备授予员工时，这些设备可供使用。
   
 ## <a name="device-requirements"></a>设备要求
 
@@ -43,7 +44,7 @@ ms.locfileid: "59169847"
   
 - Windows 10版本 1703 或更高版本
     
-- 尚未体验全新体验Windows全新体验的新设备
+- 未体验全新体验Windows全新体验的新设备
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>使用设置指南创建设备和配置文件
 
@@ -92,9 +93,9 @@ ms.locfileid: "59169847"
     
     选择" **下一步**"。
     
-6. **你已完成指示** 你创建 (或选择) 的配置文件将应用到通过上传设备列表创建的设备组。 设置将在设备用户下次登录时生效。 选择“关闭”。
+6. **你已完成指示** 你创建的配置文件 (选择) 将应用于通过上传设备列表创建的设备组。 设置将在设备用户下次登录时生效。 选择“关闭”。
 
 ## <a name="related-content"></a>相关内容
 
 [有关 AutoPilot 配置文件设置 (](autopilot-profile-settings.md) 文章) \
-[用于保护设备和应用数据的选项 (](../devices/choose-device-security.md) 文章) 
+[用于保护设备和应用数据的选项 (](../devices/choose-device-security.md) 本文) 

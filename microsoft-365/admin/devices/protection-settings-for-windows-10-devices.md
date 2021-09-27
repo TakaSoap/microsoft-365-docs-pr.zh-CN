@@ -16,6 +16,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -29,14 +30,14 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: 了解如何创建或编辑应用管理策略，并保护用户的个人Windows 10文件。
-ms.openlocfilehash: 66ddde8321742d7bcaf6294e905fdd9601482c0a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7525cf1194022e5712f1a661c7176c8066de84e8
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169830"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933743"
 ---
-# <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>为设备设置或编辑Windows 10保护设置
+# <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>设置或编辑设备的应用程序Windows 10设置
 
 本文适用于Microsoft 365 商业高级版。
 
@@ -59,7 +60,7 @@ ms.locfileid: "59169830"
 6. 将自动打开" **加密工作文件**"。 
 7. 如果不希望用户在其电脑上保存工作文件，请将" **阻止用户将公司数据复制到个人文件，并强制其将工作文件保存到 OneDrive for Business**"设置为" **开**"。 
 9. 展开 **恢复设备Windows上的数据**。 建议 **将其打开。**
-    必须先创建一个数据恢复代理证书，才能浏览到该证书的位置。 有关说明，请参阅 [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](/windows/security/information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate)。
+    必须先创建一个数据恢复代理证书，才能浏览到该证书的位置。 有关说明，请参阅 Create [and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](/windows/security/information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate)。
     
     默认情况下，使用存储在设备上并与用户配置文件相关联的密钥对工作文件进行加密。 只有该用户可以打开和解密文件。 但是，如果设备丢失或用户被删除，文件可能停滞在加密状态。 管理员可以使用数据恢复代理 (DRA) 解密文件。
     

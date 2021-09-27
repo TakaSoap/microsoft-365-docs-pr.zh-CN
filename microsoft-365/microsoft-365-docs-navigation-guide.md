@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365文档导航提示
-description: 使用技巧 Microsoft 365 技术文档的一些技巧 - 介绍了中心页、目录、页眉等内容，以及如何使用痕迹导航和如何使用版本筛选器。
+description: 使用技巧导航 Microsoft 365 技术文档的一些技巧 - 介绍了中心页、目录、页眉等内容，以及如何使用痕迹导航和如何使用版本筛选器。
 ms.date: 08/12/2020
 ms.prod: sql
 ms.technology: release-landing
@@ -10,12 +10,13 @@ ms.topic: conceptual
 author: samanro
 ms.author: samanro
 manager: pamgreen
-ms.openlocfilehash: 23d8750b05781df858328b581056a9502b4f685e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: Adm_TOC
+ms.openlocfilehash: 4e1b03d0424a7d1007e972c6d571fb12560da81f
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201237"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934019"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365文档导航指南
 
@@ -25,7 +26,7 @@ ms.locfileid: "59201237"
 
 可在 Microsoft 365中心页面，它是查找相关内容Microsoft 365 [https://aka.ms/microsoft365docs](./index.yml) 入口点。
 
-始终可以通过从技术文档集内Microsoft 365页顶部的页眉中选择"Microsoft 365导航回此页面：
+始终可以通过从技术文档Microsoft 365中每个页面顶部的页眉中选择"Microsoft 365导航回此页面：
 
 ![Microsoft 365页眉中。](media/m365-header-cursor.png)
 
@@ -43,7 +44,7 @@ ms.locfileid: "59201237"
 ![使用筛选框。](media/m365-filter-by-title.png)
 
 ## <a name="version-filter"></a>版本筛选器
-本Microsoft 365文档提供了其他产品的内容，包括 Office 365 Germany 和由世纪Office 365中国世纪 (运营) 。 这些版本之间的功能可能会有所不同，因此，有时内容本身会有所不同。
+本Microsoft 365文档提供了其他产品的内容，包括 Office 365 Germany 和 Office 365 by 21 Vianet (China) 。 这些版本之间的功能可能会有所不同，因此，有时内容本身会有所不同。
 
 可以使用版本筛选器来确保看到适用于相应版本版本Microsoft 365：
 
@@ -69,7 +70,7 @@ ms.locfileid: "59201237"
 
 ## <a name="contribute-to-microsoft-365-documentation"></a>参与Microsoft 365文档
 
-您是否知道您可以自己编辑 docs.microsoft.com 内容？ 如果这样做，我们的文档不仅会得到改进，而且还会作为页面参与者进行信用额度。 若要开始，请参阅：
+您是否知道您可以自己编辑 docs.microsoft.com 内容？ 如果这样做，我们的文档不仅会改进，而且还会作为页面参与者进行信用额度。 若要开始，请参阅：
 
 - [Microsoft Docs 参与者指南](/contribute/)
 

@@ -10,20 +10,21 @@ ms.topic: article
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- Adm_TOC
 ms.service: o365-administration
 ms.custom: admindeeplinkMAC
 localization_priority: Normal
 description: 作为全局管理员，你最多可以将三个应用固定到用户的应用启动器。
-ms.openlocfilehash: bbb41dfcb72849287bb9ce87ab2c9d250b1b4d99
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e9975b13f66f39abd61a238cb30463baa9ed34e
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170406"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933359"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>将应用固定到用户的应用启动器
 
-可以使用 Azure Active Directory 门户中的控件将最多三个应用固定到 Office.com，以及组织中所有用户的应用启动器。 还可以组织应用程序组。 你添加的任何应用稍后都可以由用户随时取消固定。 若要为用户固定应用，你必须是云应用程序管理员、Azure Active Directory管理员或 Office 365 中的全局管理员。 有关管理员角色详细信息，请参阅[Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)和 Microsoft 365 中的[管理员角色](../add-users/about-admin-roles.md)。 
+可以使用 Azure Active Directory 门户中的控件将最多三个应用固定到 Office.com，以及组织中所有用户的应用启动器。 还可以组织应用程序组。 你添加的任何应用稍后都可以由用户随时取消固定。 若要为用户固定应用，你必须是云应用程序管理员、Azure Active Directory应用程序管理员或 Office 365。 有关管理员角色详细信息，请参阅[Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)和 Microsoft 365 中的[管理员角色](../add-users/about-admin-roles.md)。 
 
 有关应用启动器和 Office.com 的信息，请参阅了解应用启动器和[](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)office.com 和 Office 365[应用](https://techcommunity.microsoft.com/t5/office-365-blog/updates-to-office-com-and-the-office-365-app-launcher/ba-p/1150503)启动器博客文章。
 
@@ -42,12 +43,12 @@ ms.locfileid: "59170406"
 > [!NOTE]
 > 用户界面将指示是否需要购买其他 Azure AD 许可证以使用此功能。 有关详细信息，请参阅Azure Active Directory[定价](https://azure.microsoft.com/pricing/details/active-directory/)。
 
-1. In **Azure Active Directory，** choose **Enterprise applications**  >  **New application** on the top of the All **applications** page.
-2. 在"**添加应用程序"** 页上，选择"非库应用程序"或"创建您自己的应用程序"（如果位于 Azure Active Directory 预览版中）。 
+1. In **Azure Active Directory，** choose **Enterprise applications** New  >  **application** on the top of the All **applications** page.
+2. 在"**添加应用程序"页上**，选择"非库应用程序"或"创建您自己的应用程序"（如果位于 Azure Active Directory 预览版中）。 
 3. 键入应用程序的名称，然后在"用户和组"选项卡 **中分配** 用户。
-4. 使用" **属性** "选项卡上载应用的图标。
+4. 使用" **属性** "选项卡上传应用的图标。
 5. 若要向应用分配 URL，请在"单一登录 **"选项卡中选择** "链接 **"，然后** 输入 URL。
-6. 选择“**保存**”。
+6. 选择“保存”。
 
 ## <a name="create-application-collections"></a>创建应用程序集合
 

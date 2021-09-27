@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -24,18 +25,18 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: 了解如何使用Microsoft 365企业版在Windows 10重置出厂设置，在购买时将其恢复为原始设置。
-ms.openlocfilehash: 29d5b8758ef7d86c7ac283460d0a1a87bffaf5f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 64f0ea1f6b39ec4ea6cc817bbe96ee78b3b96cdb
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169827"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933323"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>将 Windows 10 设备重置为其出厂设置
 
 本文适用于Microsoft 365 商业高级版。
 
-"恢复出厂设置"会将设备恢复为购买设备时的原始设置。 这将删除购买设备后安装的所有应用和数据。 可以使用企业Microsoft 365重置出厂设置Windows 10管理的设备。
+"恢复出厂设置"会将设备恢复为购买设备时的原始设置。 这将删除购买设备后安装的所有应用和数据。 可以使用适用于Microsoft 365重置出厂设置Windows 10管理的设备。
   
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。
     

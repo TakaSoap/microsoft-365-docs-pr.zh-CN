@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何安排与外部Teams会议。
-ms.openlocfilehash: e4fec84613dc968298569284c7f026de47005ce3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3e1c856d69ecc7f8935925f46c46c69235ee7c99
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171161"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934211"
 ---
 # <a name="schedule-a-teams-meeting-with-external-users"></a>安排Teams用户召开会议
 
@@ -35,7 +36,7 @@ ms.locfileid: "59171161"
 
 ## <a name="try-it"></a>试一试！
 
-若要安排与员工、客户端、外部用户和其他来宾的会议，请使用Microsoft Teams。 
+若要安排与员工、客户、外部用户和其他来宾的会议，请使用Microsoft Teams。 
 
 1. In Microsoft Teams， in the left navigation， choose **Meetings**.
 2. 选择 **"安排会议"。**

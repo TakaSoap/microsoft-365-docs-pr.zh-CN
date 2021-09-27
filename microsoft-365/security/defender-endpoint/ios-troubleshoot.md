@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c7ee6f1debaf697c49e292068ba88c436714addf
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 840ea513980d3167d34437c048eb8d8164a2d57b
+ms.sourcegitcommit: e001934654119e15149ed29b3079b1019849f59c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491119"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934661"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>排查与 iOS 上的 Microsoft Defender for Endpoint 相关的问题并查找常见问题解答
 
@@ -44,13 +44,13 @@ ms.locfileid: "59491119"
 ## <a name="apps-dont-work-when-vpn-is-turned-on"></a>打开 VPN 后，应用无法工作
 某些应用在检测到活动 VPN 时停止运行。 可以在使用此类应用时禁用 VPN。 
 
-默认情况下，iOS 上的 Defender for Endpoint 包括并启用 Web 保护功能。 [Web](web-protection-overview.md) 保护有助于保护设备免受 Web 威胁，并保护用户免受网络钓鱼攻击。 iOS 上的 Defender for Endpoint 使用 VPN 来提供此保护。 请注意，这是本地 VPN，与传统 VPN 不同，网络流量不会在设备外部发送。
+默认情况下，iOS 上的 Defender for Endpoint 包括并启用 Web 保护功能。 [Web](web-protection-overview.md) 保护有助于保护设备免受 Web 威胁，并保护用户免受网络钓鱼攻击。 iOS 上的 Defender for Endpoint 使用 VPN 来提供此保护。 请注意，这是本地 VPN，与传统 VPN 不同，网络流量不会发送到设备外部。
 
 虽然默认启用，但在某些情况下可能需要你禁用 VPN。 例如，你想要运行一些在配置 VPN 时不起作用的应用。 在这种情况下，你可以选择直接从 Defender for Endpoint 应用或按照以下步骤禁用 VPN：
 
 1. 在 iOS 设备上，打开 **"设置应用**"，单击 **或点击"** 常规"，然后单击 **"VPN"。**
 1. 单击或点击 Microsoft Defender for Endpoint 的"i"按钮。
-1. 关闭 **"连接按需"以** 禁用 VPN。
+1. 关闭 **"连接按需"** 以禁用 VPN。
 
     > [!div class="mx-imgBorder"]
     > ![VPN 配置按需连接。](images/ios-vpn-config.png)
@@ -58,7 +58,7 @@ ms.locfileid: "59491119"
 > [!NOTE]
 > 禁用 VPN 后，Web 保护将不可用。 若要重新启用 Web 保护，请打开设备上 Microsoft Defender for Endpoint 应用并启用 Web 保护。
 
-## <a name="co-existence-with-multiple-vpn-profiles"></a>与多个 VPN 配置文件共存
+## <a name="coexistence-with-multiple-vpn-profiles"></a>与多个 VPN 配置文件共存
 
 Apple iOS 不支持多个 **设备范围的** VPN 同时处于活动状态。 虽然设备上可以存在多个 VPN 配置文件，但一次只能有一个 VPN 处于活动状态。
 
@@ -66,9 +66,9 @@ Microsoft Defender for Endpoint VPN 可以与配置为每应用或"个人"的其
 
 ## <a name="battery-consumption"></a>电池消耗
 
-在设置应用中，iOS 仅显示特定时间内对用户可见的应用的电池使用情况。 屏幕上显示的应用的电池使用情况仅在该持续时间内，由 iOS 根据大量因素（包括 CPU 和网络使用情况）计算。 Microsoft Defender for Endpoint 在后台使用本地/环回 VPN 来检查任何恶意网站或连接的 Web 流量。 来自任何应用的网络数据包都经过此检查，这会导致 Microsoft Defender for Endpoint 的电池使用情况计算不准确。 Microsoft Defender for Endpoint 的实际电池消耗远小于设备上"电池设置页面上显示的内容。
+在设置应用中，iOS 仅显示特定持续时间内对用户可见的应用的电池使用情况。 屏幕上显示的应用的电池使用量仅在该持续时间内，由 iOS 根据大量因素（包括 CPU 和网络使用情况）计算。 Microsoft Defender for Endpoint 在后台使用本地/环回 VPN 来检查任何恶意网站或连接的 Web 流量。 来自任何应用的网络数据包都经过此检查，这会导致 Microsoft Defender for Endpoint 的电池使用情况计算不准确。 Microsoft Defender for Endpoint 的实际电池消耗远小于设备上"电池设置页面上显示的内容。
 
-对于在后台运行的终结点，Microsoft Defender 的平均每天电池使用量大约为当天消耗的总电池的 **8.81%。** Apple 根据最终用户设备上 Microsoft Defender for Endpoint 的实际使用情况报告此指标，并且由于上述原因，还可以将指标计算到具有网络活动的其他应用。
+对于在后台运行的终结点，Microsoft Defender 的平均每天电池使用量大约为当天消耗的总电池的 **8.81%。** Apple 根据最终用户设备上 Microsoft Defender for Endpoint 的实际使用情况报告此指标，并且由于上述原因，还可以将指标报告给具有网络活动的其他应用。
 
 此外，使用的 VPN 是本地 VPN，与传统 VPN 不同，网络流量不会发送到设备外部。
 
@@ -82,7 +82,7 @@ Microsoft Defender for Endpoint 使用本地/环回 VPN 检查任何恶意网站
 
 ## <a name="report-unsafe-site"></a>报告不安全网站
 
-网络钓鱼网站会模拟可信赖的网站，以获取你的个人或财务信息。 访问 ["提供有关网络保护的反馈"页](https://www.microsoft.com/wdsi/support/report-unsafe-site) ，以报告可能是网络钓鱼网站的网站。
+网络钓鱼网站会模拟可信赖的网站来获取你的个人或财务信息。 访问 ["提供有关网络保护的反馈"页](https://www.microsoft.com/wdsi/support/report-unsafe-site) ，以报告可能是网络钓鱼网站的网站。
 
 ## <a name="malicious-site-detected"></a>检测到恶意站点
 
@@ -98,7 +98,7 @@ Microsoft Defender for Endpoint 可保护你免受网络钓鱼或其他基于 We
 载入后，设备需要几个小时才能显示在 Defender for Endpoint 安全控制台的设备清单中。 此外，请确保设备已正确注册Azure Active Directory并且设备具有 Internet 连接。 若要成功载入，设备必须通过 Microsoft Authenticator 或 Intune 公司门户 并且用户需要使用在 Azure AD 中注册设备的同一帐户登录。
 
 > [!NOTE]
-> 有时，设备名称与 Intune 控制台Microsoft Endpoint Manager (设备) 一致。 Defender for Endpoint 控制台中的设备名称采用 <username_iPhone/iPad模式>。 还可使用 Azure AD 设备 ID 在 Defender for Endpoint 控制台中标识设备。
+> 有时，设备名称与 Intune 控制台Microsoft Endpoint Manager (设备) 一致。 Defender for Endpoint 控制台中的设备名称采用 <username_iPhone/iPad 模式>。 还可使用 Azure AD 设备 ID 在 Defender for Endpoint 控制台中标识设备。
 
 ## <a name="data-and-privacy"></a>数据和隐私
 
@@ -110,5 +110,18 @@ Microsoft Defender for Endpoint 可保护你免受网络钓鱼或其他基于 We
 
 ## <a name="issues-during-app-updates-from-the-app-store"></a>从应用商店更新应用期间的问题
 
-如果在应用通过应用商店更新应用时发现 (自动更新或手动更新) ，可能需要重新启动设备。 如果无法解决问题，你可以禁用 Defender VPN 并执行应用更新。 还可以提供应用内反馈来报告此问题。
+如果在应用通过应用商店更新应用时发现 (自动更新或手动更新) ，你可能需要重新启动设备。 如果无法解决问题，你可以禁用 Defender VPN 并执行应用更新。 还可以提供应用内反馈来报告此问题。
+
+## <a name="send-in-app-feedback"></a>发送应用内反馈
+
+如果用户面临以上部分中尚未解决的问题，或者无法使用列出的步骤解决问题，则用户可以提供应用内反馈和诊断数据。 然后，我们团队将调查日志以提供正确的解决方案。 用户可以使用以下步骤发送回退：
+
+  - 在 iOS/iPadOS 设备上打开 MSDefender 应用。
+  - 点击左上角 (菜单) 配置文件图标。
+  - 点击 **"发送反馈"。**
+  - 从给定选项中进行选择。 若要报告问题，请选择 **"我不喜欢某些内容"。**
+  - 提供你所面临的问题的详细信息，并检查发送 **诊断数据**。 我们建议你包含你的电子邮件地址，以便团队可以联系你以寻求解决方案或跟进。
+  - 点击 **提交** 以成功发送反馈。
+
+
 

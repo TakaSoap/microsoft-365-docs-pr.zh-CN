@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: daedf3ebbf88c70cf5b3889a9d7560800ad16f5f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 81be4d293398b264dfa72bbca0eb74b0429add71
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222411"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934115"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>排查 Android 上 Microsoft Defender for Endpoint 的问题
 
@@ -44,7 +44,7 @@ ms.locfileid: "59222411"
 
 **登录失败：意外***错误，请稍后尝试*
 
-![登录失败错误意外错误的图像。](images/f9c3bad127d636c1f150d79814f35d4c.png)
+:::image type="content" alt-text="登录失败错误意外错误的图像。" source="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **消息：**
 
@@ -62,7 +62,7 @@ ms.locfileid: "59222411"
 
 **登录失败：许可证***无效，请联系管理员*
 
-![登录失败的图像请联系管理员。](images/920e433f440fa1d3d298e6a2a43d4811.png)
+:::image type="content" alt-text="登录失败的图像请联系管理员。" source="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
 **邮件：***许可证无效，请联系管理员*
 
@@ -140,3 +140,29 @@ ms.locfileid: "59222411"
    ![找到"Microsoft Defender 终结点"，然后选择"不开发"。](images/select-dont-optimise.png)
 
 返回到 Microsoft Defender 终结点载入屏幕，选择" **允许"，** 你将重定向到仪表板屏幕。
+
+## <a name="send-in-app-feedback"></a>发送应用内反馈
+
+如果用户面临以上部分中尚未解决的问题，或者无法使用列出的步骤解决问题，则用户可以提供应用内 **反馈以及诊断****数据**。 然后，我们团队可以调查日志以提供正确的解决方案。 用户可以按照以下步骤执行相同的操作：
+
+1.  在 **设备上打开 MDE** 应用程序，然后单击左上角的配置文件图标。
+
+    :::image type="content" alt-text="单击配置文件图标。" source="images/select-profile-icon-1.jpg":::
+
+2.  选择"帮助&反馈"。
+
+    :::image type="content" alt-text="选择帮助和反馈。" source="images/selecthelpandfeedback2.png":::
+
+3.  选择"向 Microsoft 发送反馈"。
+
+    :::image type="content" alt-text="选择&quot;向 Microsoft 发送反馈&quot;。" source="images/send-feedback-to-microsoft-3.jpg":::
+
+4.  从给定选项中进行选择。 若要报告问题，请选择"我想报告问题"。
+
+    :::image type="content" alt-text="报告问题。" source="images/report-issue-4.jpg":::
+
+5.  提供你所面临的问题的详细信息并检查"发送诊断数据"。 我们建议选中"包括你的电子邮件地址"，以便团队可以使用解决方案或跟进联系你。
+
+    :::image type="content" alt-text="添加详细信息并附加诊断数据。" source="images/finalsubmit5.png":::
+
+6.  单击"提交"以成功发送反馈。

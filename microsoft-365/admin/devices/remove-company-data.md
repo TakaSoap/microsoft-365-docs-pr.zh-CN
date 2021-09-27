@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -23,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: 了解如何使用 Microsoft 365 企业应用删除用户设备或电脑Windows数据。
-ms.openlocfilehash: f249af524dcdc00601357428425c57da3b3f738c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解如何使用 Microsoft 365 企业应用来删除用户设备或电脑Windows数据。
+ms.openlocfilehash: bd3995b97803725c3d7d91e420387ff114876f26
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169828"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933251"
 ---
 # <a name="remove-company-data-from-devices"></a>从设备中删除公司数据
 
@@ -37,7 +38,7 @@ ms.locfileid: "59169828"
 
 ## <a name="remove-company-data"></a>删除公司数据
 
-可以使用适用于Microsoft 365来删除用户具有的设备或受 Windows 保护的 PC[](app-protection-settings-for-android-and-ios.md)上的公司Microsoft 365。 [](protection-settings-for-windows-10-devices.md) **从设备中删除公司数据后，该数据不可恢复** 。 
+可以使用适用于Microsoft 365来删除用户具有的设备或受 Windows 保护的 PC 上的[](app-protection-settings-for-android-and-ios.md)公司Microsoft 365。 [](protection-settings-for-windows-10-devices.md) **从设备中删除公司数据后，该数据不可恢复** 。 
   
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。
     

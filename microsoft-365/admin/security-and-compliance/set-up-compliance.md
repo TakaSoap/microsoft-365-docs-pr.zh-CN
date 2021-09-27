@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - MiniMaven
 - MSB365
@@ -22,16 +23,16 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置合规性功能以防止数据丢失，并帮助保护你和客户敏感信息的安全。
-ms.openlocfilehash: 5e5aff344326874cef426e7a1a40656766564e7e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a7241c4abe3236b14935e42ab518c629a2558d21
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170317"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934175"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
-你的Microsoft 365 商业高级版附带用于保护你的数据和设备的功能，并且有助于保护你和客户敏感信息的安全。
+你的Microsoft 365 商业高级版附带用于保护你的数据和设备的功能，并且可帮助你保护你和客户敏感信息的安全。
 
 ## <a name="set-up-dlp-features"></a>设置 DLP 功能
 
@@ -59,7 +60,7 @@ DLP 附带许多适用于许多不同区域设置的现成策略模板。 例如
 
 ## <a name="set-up-sensitivity-labels"></a>设置敏感度标签
 
-敏感度标签随 Azure 信息保护 (AIP) 计划 1 提供，通过应用标签帮助你分类文档和电子邮件，并选择性地保护文档和电子邮件。 标签可自动由定义规则和条件的管理员应用，由用户手动应用，也可结合使用为用户提供建议。
+敏感度标签随 Azure 信息保护 (AIP) 计划 1 提供，可帮助你通过应用标签分类文档和电子邮件，并选择性地保护文档和电子邮件。 标签可自动由定义规则和条件的管理员应用，由用户手动应用，也可结合使用为用户提供建议。
 
 若要设置敏感度标签，请 [观看创建和管理敏感度标签](../../business-video/create-sensitivity-labels.md) 视频。
 
@@ -69,7 +70,7 @@ DLP 附带许多适用于许多不同区域设置的现成策略模板。 例如
 
 若要手动安装 AIP 客户端，请执行以下操作：
 
-1. 从 **microsoftAzinfoProtection_UL.exe**[下载中心 下载文件](https://www.microsoft.com/download/details.aspx?id=53018)。
+1. 从 **AzinfoProtection_UL.exe**[下载中心下载文件](https://www.microsoft.com/download/details.aspx?id=53018)。
  
 2. 您可以通过查看 Word 文档并确保"开始"选项卡上提供"敏感度"选项来验证安装 **是否** 有效。
 <br/>![Word 文档中的"保护"选项卡下拉列表。](../../media/word-sensitivity.png)
