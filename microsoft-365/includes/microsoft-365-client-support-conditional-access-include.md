@@ -25,7 +25,7 @@
 |PROJECT|不适用|不适用|不适用|Planned|不适用|
 |PUBLISHER|不适用|不适用|不适用|✔|不适用|
 |SHAREPOINT 管理员|不适用|不适用|不适用|Planned|不适用|
-|SHAREPOINT|Planned|Planned|不适用|不适用|不适用|
+|SHAREPOINT|Planned|不适用|不适用|不适用|不适用|
 |便笺|不适用|不适用|不适用|不适用|Planned|
 |STREAM|Planned|Planned|不适用|不适用|不适用|
 |SWAY|不适用|不适用|不适用|不适用|Planned|
