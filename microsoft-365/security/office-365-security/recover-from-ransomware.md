@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365管理员可以了解如何从勒索软件攻击中恢复。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ee90b01580115bff7050b0f101e8c9e049841bbb
-ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
+ms.openlocfilehash: 755086b039a95770ef1f615733f46c3c782214fc
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59447345"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941922"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>从 Microsoft 365 中的勒索软件攻击中Microsoft 365
 
@@ -31,21 +31,26 @@ ms.locfileid: "59447345"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-即使你采取一切预防措施来保护你的组织，你仍然可能会遭受勒索软件 [攻击](/windows/security/threat-protection/intelligence/ransomware-malware) 。 勒索软件是一个大企业，并且攻击非常复杂。
+即使你采取一切预防措施来保护你的组织，你仍然可能会遭受勒索软件 [攻击](/windows/security/threat-protection/intelligence/ransomware-malware) 。 勒索软件是一个大企业，在当今的威胁形势中Microsoft 365复杂的攻击的目标[不断增加](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf)。
+
 
 本文中的步骤将为您提供恢复数据和停止内部感染传播的最佳机会。 在开始之前，请考虑以下事项：
 
 - 无法保证支付勒索金额将返回对文件的访问权限。 事实上，支付勒索金额可能会成为更多勒索软件的目标。
 
-  如果已付款，但在没有使用攻击者的解决方案的情况下恢复，请与银行联系，看看他们能否阻止交易。
+  如果你已付款，但在没有使用攻击者的解决方案的情况下恢复，请与银行联系，看看他们能否阻止交易。
 
   我们还建议您向执法机构、欺诈报告网站和 Microsoft 报告勒索软件攻击，如本文稍后所述。
 
 - 快速响应攻击及其后果非常重要。 等待的时间越长，恢复受影响数据的可能性就越小。
 
-## <a name="step-1-verify-your-backups"></a>步骤 1：验证备份
+## <a name="step-1-verify-your-third-party-backups"></a>步骤 1：验证第三方备份
 
-如果具有脱机备份，在从环境中删除勒索软件有效负载 (恶意软件) 还原加密数据。
+Microsoft 365 合规性工具套件旨在符合组织的法律和法规标准，因此作为最佳实践，我们建议[](/microsoft-365/compliance/)你使用第三方应用和服务定期备份 Microsoft 365 内容和[](https://www.microsoft.com/servicesagreement)数据。
+
+为了确保你能够还原数据，定期测试备份并验证它们能否在攻击时还原很重要。 在实际攻击的情况下，在从环境中删除勒索软件有效负载 (恶意软件) 之后，以及验证 Microsoft 365 环境中没有未经授权的访问之前，不应完成这些还原。 
+
+为了确保备份不受勒索软件影响，应从环境中空空测试第三方服务。
 
 如果没有备份，或者备份也受勒索软件影响，可以跳过此步骤。
 
@@ -63,7 +68,7 @@ ms.locfileid: "59447345"
 
 - [为用户启用或禁用 POP3 或 IMAP4 访问](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-暂停OneDrive 同步有助于防止云数据被潜在感染的设备更新。 有关详细信息，请参阅如何在 OneDrive 中[暂停和恢复OneDrive。](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
+暂停OneDrive 同步有助于防止云数据被潜在感染的设备更新。 有关详细信息，请参阅如何暂停[和恢复](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)OneDrive。
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>步骤 3：从受影响的设备中删除恶意软件
 
@@ -71,23 +76,23 @@ ms.locfileid: "59447345"
 
 不要忘记扫描正在同步数据的设备或映射的网络驱动器的目标。
 
-你可以将[Windows Defender](https://www.microsoft.com/windows/comprehensive-security)或 (客户端) Microsoft Security Essentials。 [](https://www.microsoft.com/download/details.aspx?id=5201)
+你可以[将Windows Defender或](https://www.microsoft.com/windows/comprehensive-security) (客户端) Microsoft Security Essentials。 [](https://www.microsoft.com/download/details.aspx?id=5201)
 
 此外，还可以帮助你删除勒索软件或恶意软件的替代方法是[MSRT (恶意软件) 。 ](https://www.microsoft.com/download/details.aspx?id=9905)
 
-如果这些选项不起作用，可以尝试脱机Windows Defender检测并删除[恶意软件](https://support.microsoft.com/help/17466)[时出现问题](https://support.microsoft.com/help/4466982)。
+如果这些选项不起作用，可以尝试脱机Windows Defender检测并删除[](https://support.microsoft.com/help/17466)恶意软件[时出现问题](https://support.microsoft.com/help/4466982)。
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>步骤 4：在已清理的计算机或设备上恢复文件
 
-完成上一步以将勒索软件有效负载从你的环境 (这将阻止勒索软件加密或删除文件) 后，可以使用 Windows 10 和 Windows 8.1 中的文件历史记录或 Windows 7 中的系统保护尝试恢复本地文件和文件夹。 [](https://support.microsoft.com/help/17128)
+完成上一步以将勒索软件有效负载从环境 (这将阻止勒索软件加密或删除文件) 后，可以使用 Windows 10 和 Windows 8.1 中的文件历史记录或 Windows 7[](https://support.microsoft.com/help/17128)中的系统保护尝试恢复本地文件和文件夹。
 
 **注意**：
 
 - 某些勒索软件还会加密或删除备份版本，因此你无法使用文件历史记录或系统保护来还原文件。 如果发生这种情况，你需要在不受勒索软件或软件影响的外部驱动器或OneDrive备份，如下一节中所述。
 
-- 如果文件夹已同步OneDrive，并且您没有使用最新版本的 Windows，则使用"文件历史记录"可能有一些限制。
+- 如果文件夹已同步OneDrive并且您没有使用最新版本的 Windows，则使用文件历史记录可能有一些限制。
 
-## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步骤 5：恢复用户OneDrive for Business
+## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步骤 5：恢复OneDrive for Business
 
 文件还原OneDrive for Business使您可以将整个OneDrive还原到过去 30 天内以前的时间点。 有关详细信息，请参阅“还原你的 OneDrive”[](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
 
@@ -101,7 +106,7 @@ ms.locfileid: "59447345"
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>步骤 7：重新启用Exchange ActiveSync OneDrive 同步
 
-在清理计算机和设备并恢复数据后，可以重新启用Exchange ActiveSync OneDrive 同步之前在步骤 2 中禁用的 Exchange ActiveSync[和 OneDrive 同步。](#step-2-disable-exchange-activesync-and-onedrive-sync)
+清理计算机和设备并恢复数据后，可以重新启用Exchange ActiveSync OneDrive 同步之前在步骤[2](#step-2-disable-exchange-activesync-and-onedrive-sync)中禁用的 Exchange ActiveSync 和 OneDrive 同步。
 
 ## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>步骤 8 (可选) ：OneDrive 同步文件扩展名阻止访问
 
@@ -135,7 +140,7 @@ ms.locfileid: "59447345"
 
 - 美国 [：On Guard Online](http://www.onguardonline.gov/)
 
-如果你的国家/地区未列出，请向当地或联邦执法机构询问。
+如果你的国家/地区未列出，请咨询当地或联邦执法机构。
 
 ### <a name="submit-email-messages-to-microsoft"></a>将电子邮件提交到 Microsoft
 
@@ -145,17 +150,17 @@ ms.locfileid: "59447345"
 
 来自 Microsoft 的关键信息：
 
-- [勒索软件的威胁不断增加](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/)，Microsoft 关于问题博客文章 2021 年 7 月 20 日
+- [日趋严重的勒索软件威胁](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/)，2021 年 7 月 20 日 Microsoft 关于问题的博客文章
 - [人工操作的勒索软件](/security/compass/human-operated-ransomware)
-- [快速防范勒索软件和勒索软件](/security/compass/protect-against-ransomware)
-- [最新Microsoft 安全智能报告](https://www.microsoft.com/securityinsights/) (第 22-24 页) 
-- **勒索软件：Microsoft 365 Defender** 门户的"威胁分析"节点中的一个持续威胁 (请参阅这些 [许可](/microsoft-365/security/defender/prerequisites#licensing-requirements)) 
+- [快速防范勒索软件和勒索](/security/compass/protect-against-ransomware)
+- [最新 Microsoft 安全智能报告](https://www.microsoft.com/securityinsights/)（请参阅第 22-24 页）
+- Microsoft 365 Defender 门户的 **威胁分析** 节点中的 **勒索软件：普遍且持续的威胁** 报告（请参阅这些 [许可要求](/microsoft-365/security/defender/prerequisites#licensing-requirements)）
 
 Microsoft 365：
 
-- [为租户部署勒索软件Microsoft 365保护](/microsoft-365/solutions/ransomware-protection-microsoft-365)
+- [为 Microsoft 365 租户部署勒索软件保护](/microsoft-365/solutions/ransomware-protection-microsoft-365)
 - [恶意软件和勒索软件防护](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [保护你的Windows 10电脑免受勒索软件](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [保护你的 Windows 10 电脑免受勒索软件攻击](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [在 SharePoint Online 中处理勒索软件](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 
 Microsoft 365 Defender：
@@ -164,12 +169,12 @@ Microsoft 365 Defender：
 
 Microsoft Azure：
 
-- [勒索软件攻击的 Azure 防御](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
-- [防止勒索软件备份和还原计划](/security/compass/backup-plan-to-protect-against-ransomware)
+- [针对勒索软件攻击的 Azure 防御](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [备份和还原计划以防范勒索软件](/security/compass/backup-plan-to-protect-against-ransomware)
 - [使用 26 分钟的视频Microsoft Azure备份 (](https://www.youtube.com/watch?v=VhLOr2_1MCg)保护免受勒索软件) 
-- [从身份泄露中恢复](/azure/security/fundamentals/recover-from-identity-compromise)
+- [从系统性标识泄露中恢复](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Azure Sentinel 中的高级多阶段攻击检测](/azure/sentinel/fusion#ransomware)
-- [Azure Sentinel 中的勒索软件融合检测](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Azure Sentinel 中勒索软件融合检测](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
 Microsoft Cloud App Security：
 
@@ -177,14 +182,14 @@ Microsoft Cloud App Security：
 
 Microsoft 安全团队博客文章：
 
-- [2021 年 9 月 3 (防止和从勒索软件中恢复的 3) ](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-- [通过了解网络安全风险恢复能力：第 4 部分- (2021 年 5 月) ](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+- [防范和从勒索软件中恢复的 3 个步骤（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [通过了解网络安全风险以增强恢复能力：第 4 部分 - 浏览当前威胁（2021 年 5 月）](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   请参阅 **勒索软件** 部分。
 
-- [由人为操作的勒索软件攻击：2020 年 3 月 (可阻止的) ](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+- [人为操作的勒索软件攻击：可预防的灾难（2020 年 3 月）](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-  包括实际攻击的攻击链分析。
+  包括对实际攻击的攻击链分析。
 
-- [勒索软件响应 - 是否付费？ (2019 年 12 月) ](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
-- [Norsk 在 2019 年 12 月 (透明响应勒索软件) ](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [勒索软件应对 - 是否支付勒索金额？（2019 年 12 月）](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Norsk Hydro 以透明方式应对勒索软件攻击（2019 年 12 月）](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
