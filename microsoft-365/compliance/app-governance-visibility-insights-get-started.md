@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用可见性和见解。
-ms.openlocfilehash: ac99e9112dc7e0278243121a8530326c88f333dc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82c099c2955545f6546f978ded9e2d07a74b48cf
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171072"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941953"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>开始使用可见性和见解
 
@@ -52,7 +52,7 @@ ms.locfileid: "59171072"
 
 ## <a name="view-app-insights"></a>查看应用见解
 
-应用治理的主要价值点之一是能够快速查看应用警报和见解。 若要查看应用的见解，请执行以下操作：
+应用治理的主要价值点之一是能够快速查看应用警报和见解。要查看应用的见解，请：
 
 1. 在应用治理门户页面上，选择“**应用**”。
 1. 使用“**类别**”下拉列表，从以下选项中进行选择：
@@ -62,12 +62,14 @@ ms.locfileid: "59171072"
     - 未经验证的发布者
     - 仅限应用
     - 新应用
-1. 选择应用名称以查看详细信息。 你可以在应用名称左侧放置复选标记来选择多个应用，以将其另存为已保存的查询。 选择应用名称将打开右侧的详细信息窗格，如下图所示。
+1. 选择应用名称以查看详细信息。 选择应用名称将打开右侧的详细信息窗格，如下图所示。
 
 :::image type="content" source="../media/manage-app-protection-governance/app-governance-app-insight.png" alt-text="显示所选应用的详细信息窗格的图像。":::
 
 > [!NOTE]
 > 列出的应用将取决于租户中存在的应用。
+
+通过保存查询，可以在当前视图中保存定义的筛选器列表。 这可以节省将来选择数据子集的时间。
 
 通过详细信息窗格，还可以查看应用在过去 30 天内的使用情况、已同意使用该应用的用户以及分配给该应用的权限。 管理员可以查看正在生成警报的应用的活动和权限，并决定是否使用“详细信息”窗格中的“**禁用应用**”按钮来禁用该应用。
 
