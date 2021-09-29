@@ -2,8 +2,8 @@
 title: 邮件流仪表板中的未送达报告
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的"未送达详细信息"报告来监视未送达报告 (也称为"未送达报告"中最常遇到的错误代码) 或退回来自组织中发件人的邮件。
+description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的"未送达详细信息"报告来监视未送达报告中最常遇到的错误代码 (也称为"未送达报告"或"退回来自组织中发件人的邮件) "。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e49fa403789f7c923bfbdd86b4b1555400a8a99
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 02b745943b57965941e38c4e5c5ec6ae503972ec
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197200"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988519"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>安全与合规中心&未送达报告
 
@@ -30,7 +30,7 @@ ms.locfileid: "59197200"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全与合规中心内"邮件[](mail-flow-insights-v2.md)流"仪表板中的"未送达"报告显示未送达报告 (也称为"未送达"或退回邮件) （对于组织用户）中遇到的错误代码。 [&](https://protection.office.com) 此报告显示了 NDR 的详细信息，因此您可以解决电子邮件传递问题。
+安全与合规中心内"邮件[](mail-flow-insights-v2.md)流"仪表板中的"未送达"报告显示未送达报告 (也称为"未送达报告"或"退回邮件) "中遇到次数最多的错误代码。 [&](https://protection.office.com) 此报告显示了 NDR 的详细信息，因此您可以解决电子邮件传递问题。
 
 ![安全与合规中心的"邮件流"仪表板中的"未送达&小组件。](../../media/mfi-non-delivery-report-widget.png)
 
@@ -40,7 +40,7 @@ ms.locfileid: "59197200"
 
 默认情况下，将显示所有错误代码的活动。 If you click **Show data for**， you can select a specific error code from the dropdown.
 
-如果将鼠标悬停在图表中 (特定) 显示的错误代码，你将看到错误消息的总数。
+如果您将鼠标悬停在图表中 (特定) 显示的错误代码，则会看到该错误的消息总数。
 
 ![未接受域报告中的报告视图。](../../media/mfi-non-delivery-report-overview-view.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "59197200"
 
 如果单击 **视图中的"** 查看详细信息报表视图，将显示以下信息：
 
-- **Date**
+- **日期**
 - **未送达报告代码**
 - **Count**
 - **示例邮件**：受影响邮件示例的邮件 ID。

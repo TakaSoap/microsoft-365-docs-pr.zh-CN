@@ -2,23 +2,23 @@
 title: 邮件流仪表板中的邮件流见解
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: 管理员可以了解安全与合规中心内"邮件流"仪表板中提供的见解&报告。
+description: 管理员可以了解安全与合规中心内邮件流仪表板中提供的见解&报告。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c960b34933c6a90dcf4a1675ced63dd43f00c07
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 060cbc7a55257a0fbb1510fd8b2f5d325a396a86
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195938"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988939"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
@@ -80,6 +80,6 @@ ms.locfileid: "59195938"
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>在哪里可以找到邮件流仪表板
 
-打开安全& <https://protection.office.com> 合规中心，展开"**邮件流**"，然后选择"仪表板 **"。**
+打开安全& <https://protection.office.com> 合规中心，展开 **"邮件流**"，然后选择"仪表板 **"。**
 
 若要直接转到邮件流仪表板，请打开 <https://protection.office.com/mailflow/dashboard> 。

@@ -2,8 +2,8 @@
 title: 邮件流仪表板中的未接受域报告
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -11,17 +11,17 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的"非接受域"报告监视来自未在 Microsoft 365 中配置发件人域内部部署组织的邮件。
+description: 管理员可以了解如何使用安全 & 合规中心中的"邮件流"仪表板中的"未接受域"报告来监视来自未在 Microsoft 365 中配置发件人域内部部署组织的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3b2ddbc6215ebbc3b1a2b2ccff4a5bc8ad7118c3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b9bab55ddf23f991179245837f4ecb4e7d28b8f1
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170889"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988351"
 ---
-# <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>安全与合规中心中的未接受&报告
+# <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>安全与合规中心内未接受&报告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -42,7 +42,7 @@ Microsoft 365有数据可以证明这些邮件的意图是恶意的，则系统�
 
 默认情况下，将显示所有受影响的连接器的活动。 If you click **Show data for**， you can select a specific connector from the dropdown.
 
-如果将鼠标悬停在图表中 () 的数据点上，则会看到连接器的邮件总数。
+如果将鼠标悬停在图表中 () 的数据点上，你将看到连接器的邮件总数。
 
 ![未接受域报告中的报告视图。](../../media/mfi-non-accepted-domain-report-overview-view.png)
 
@@ -50,7 +50,7 @@ Microsoft 365有数据可以证明这些邮件的意图是恶意的，则系统�
 
 如果单击 **视图中的"** 查看详细信息报表视图，将显示以下信息：
 
-- **Date**
+- **日期**
 - **入站连接器名称**
 - **发件人域**
 - **邮件计数**

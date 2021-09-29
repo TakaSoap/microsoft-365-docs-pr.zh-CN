@@ -2,8 +2,8 @@
 title: 智能报告、见解 - Microsoft 365安全&合规中心
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
-description: 了解安全与合规中心提供的智能报告和见解&，以及如何使用它们查看和浏览数据并快速采取措施。
+description: 了解安全与合规中心提供的智能报告和见解&，以及如何使用它们查看和浏览数据以及快速操作。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef92717dc43e5af7a6c98d497405160fec45b7cd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 627ca557e7df0d12565f833287c7a6aad18854f1
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170452"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988747"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>安全与合规中心内的智能报告和见解
 
@@ -35,19 +35,19 @@ ms.locfileid: "59170452"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-如果你是组织的 Microsoft 365 商业版安全团队的成员，并且拥有在安全 [&](permissions-in-the-security-and-compliance-center.md)合规中心中分配的必要权限，可以访问各种报告，包括智能报告和见解。 阅读本文可大致了解这些报告和见解，以及在何处了解有关特定报告的信息。
+如果你是组织的 Microsoft for 365 商业版安全团队的成员，并且拥有在安全 [&](permissions-in-the-security-and-compliance-center.md)合规中心中分配的必要权限，可以访问各种报告，包括智能报告和见解。 阅读本文可大致了解这些报告和见解，以及在何处了解有关特定报告的信息。
 
 ## <a name="smart-reports-and-insights-overview"></a>智能报告和见解概述
 
-安全与合规中心提供的监视功能&智能报告和见解，使合规性和安全管理员能够重点关注高优先级问题，如安全攻击或可疑活动增加。 在仪表板中，智能报表和见解类似于下图：
+安全与合规中心&监视功能包括智能报告和见解，使合规性和安全管理员能够重点关注高优先级问题，如安全攻击或可疑活动增加。 在仪表板中，智能报表和见解类似于下图：
 
 ![安全与合规中心&仪表板。](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
 
-除了突出显示问题区域外，智能报告和见解还包括用于查看和浏览数据的建议和链接，以及快速操作。 例如，如果组织突然有大量电子邮件被最终用户标记为垃圾邮件，可能会建议你重新访问反垃圾邮件策略，以确保正确的保护级别已到位。
+除了突出显示问题区域之外，智能报告和见解还包括用于查看和浏览数据的建议和链接，以及快速操作。 例如，如果组织突然有大量电子邮件被最终用户标记为垃圾邮件，可能会建议你重新访问反垃圾邮件策略，以确保正确的保护级别已到位。
 
 ## <a name="types-of-reports-in-the-security--compliance-center"></a>安全与合规中心&类型
 
-安全与合规中心提供了各种&报告。  (**转到报告** 安全报告，获取一个全部视图。) 下表列出了可用的报告以及  >  用于了解更多信息的链接：
+安全与合规中心提供了各种&报告。  (转到报告安全报告，获取一个全部视图。) 下表列出了可用的报告以及用于  >  了解更多信息的链接：
 
 <br>
 
@@ -55,7 +55,7 @@ ms.locfileid: "59170452"
 
 |信息类型|如何到达那里|在何处了解更多信息|
 |---|---|---|
-|**安全&合规中心报告 (** 所有)  <p> 顶级见解和建议，以及指向安全与&报告的链接，包括数据丢失防护报告、标签、电子邮件安全报告、Defender for Office 365 报告等|在安全与&中心，转到"报告 **仪表板** \> **"**|[安全与合规中心中的报告](../../compliance/reports-in-security-and-compliance.md)|
+|**安全&合规中心报告 (** 所有)  <p> 顶级见解和建议，以及指向安全与&报告的链接，包括数据丢失防护报告、标签、电子邮件安全报告、Defender for Office 365 报告等|在安全与&中心，转到" **报告仪表板** \> **"**|[安全与合规中心中的报告](../../compliance/reports-in-security-and-compliance.md)|
 |**数据丢失防护** <p> 数据丢失防护策略匹配、误报和覆盖以及用于创建或编辑策略的链接|在安全&中心，转到 **数据丢失防护** \> **策略**|[查看数据丢失防护报告](../../compliance/view-the-dlp-reports.md)|
 |**数据管理** <p> 有关如何应用标签、分类为记录的标签、标签趋势等方面的信息|在安全与&中心，转到 **"信息治理仪表板** \> **"**|[查看数据管理报告](../../compliance/view-the-data-governance-reports.md)|
 |**威胁管理 (** 也称为安全仪表板)  <p> 威胁检测、恶意软件趋势、主要目标用户、有关已发送和已接收电子邮件的详细信息等|在安全与&中心，转到 **漏洞管理** \> **仪表板**|[查看 Defender for Office 365](view-reports-for-mdo.md)|

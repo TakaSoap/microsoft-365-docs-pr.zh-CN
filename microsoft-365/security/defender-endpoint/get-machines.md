@@ -16,12 +16,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8ffeca3d13b42e39f539e96d563aceabd464aeaf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2e5b4b67980c3d1450832e84ab0d2a1396c2a69d
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170974"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988375"
 ---
 # <a name="list-machines-api"></a>列出计算机 API
 
@@ -41,7 +41,7 @@ ms.locfileid: "59170974"
 
 支持 [OData V4 查询](https://www.odata.org/documentation/)。
 
-OData 的查询在 上受支持 `$filter` `computerDnsName` `id` `version` `deviceValue` `aadDeviceId` `machineTags` ：、、、和 `lastSeen` `exposureLevel` `lastIpAddress` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` 。
+OData 的查询 `$filter` 在 上受支持：、 `computerDnsName` `id` `version` 和 `deviceValue` `aadDeviceId` `machineTags` `lastSeen` `exposureLevel` `onboardingStatus` `lastIpAddress` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` 。
 <br>```$stop``` 最大值为 10，000
 <br>```$skip``` 有关示例， [请参阅使用 Defender for Endpoint 的 OData 查询](exposed-apis-odata-samples.md)
 
@@ -64,7 +64,7 @@ OData 的查询在 上受支持 `$filter` `computerDnsName` `id` `version` `devi
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -76,7 +76,7 @@ GET https://api.securitycenter.microsoft.com/api/machines
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|字符串|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

@@ -20,12 +20,12 @@ description: 管理员可以了解如何查找和使用 Defender for Office 365�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2613b8547d27ce39a14bccfb5e3bfe63f66de36f
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: da89b5421171eefe56363f38e1959cede2ef5afb
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942085"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988475"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>在门户中Office 365 Defender for Microsoft 365 Defender报告
 
@@ -62,12 +62,12 @@ Microsoft Defender for Office 365 organizations (for example， Microsoft 365 E5
 ## <a name="safe-attachments-file-types-report"></a>保险箱附件文件类型报告
 
 > [!NOTE]
-> **"保险箱附件文件类型"** 报告最终将消失。 威胁防护状态报告中提供了 [相同的信息](#threat-protection-status-report)。
+> 此报告已被弃用。 威胁防护状态报告中提供了 [相同的信息](#threat-protection-status-report)。
 
 ## <a name="safe-attachments-message-disposition-report"></a>保险箱附件邮件处置报告
 
 > [!NOTE]
-> 最终 **保险箱附件邮件** 处置报告将消失。 威胁防护状态报告中提供了 [相同的信息](#threat-protection-status-report)。
+> 此报告已被弃用。 威胁防护状态报告中提供了 [相同的信息](#threat-protection-status-report)。
 
 ## <a name="mail-latency-report"></a>邮件延迟报告
 
@@ -111,17 +111,19 @@ Microsoft Defender for Office 365 organizations (for example， Microsoft 365 E5
 - **邮件计数**
 - **总体延迟**
 
+在主报告页面上，" ![ 导出"图标。](../../media/m365-cc-sc-download-icon.png) **["](view-email-security-reports.md#export-report)** 导出"按钮可用。
+
 ## <a name="threat-protection-status-report"></a>威胁防护状态报告
 
-威胁 **防护状态** 报告是一个单一视图，将有关 Exchange Online Protection () for Office 365 的 [恶意](exchange-online-protection-overview.md)内容和恶意电子邮件的信息汇集在一起。 有关详细信息，请参阅威胁 [防护状态报告](view-email-security-reports.md#threat-protection-status-report)。
+威胁 **防护状态** 报告是一个单一视图，将有关 [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) 和 Microsoft Defender for Office 365 检测并阻止的恶意内容和恶意电子邮件的信息汇集在一起。 有关详细信息，请参阅威胁 [防护状态报告](view-email-security-reports.md#threat-protection-status-report)。
 
 ## <a name="url-protection-report"></a>URL 保护报告
 
-URL **保护报告提供** 检测到的威胁的摘要和趋势视图，以及作为链接的一部分对 URL [单击保险箱视图](safe-links.md)。 此报告不会包含应用了"链接"策略保险箱"**不跟踪用户** 单击"选项的用户的单击数据。
+URL **保护报告提供** 检测到的威胁的摘要和趋势视图，以及作为链接的一部分对 URL [单击保险箱视图](safe-links.md)。 此报告不会包含应用了"链接"策略保险箱"不跟踪用户单击"选项的用户的 **单击** 数据。
 
 若要查看报告，请打开Microsoft 365 Defender [门户](https://security.microsoft.com)，**转到报告** \> **电子邮件&协作** \> **电子邮件&协作报告**。 在"**电子邮件&协作报告**"页上，找到 **"URL 保护"页**，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/URLProtectionActionReport> 。
 
-!["电子邮件和协作报告"& URL 保护报告小组件。](../../media/url-protection-report-widget.png)
+!["电子邮件和协作报告"页上& URL 保护报告小组件。](../../media/url-protection-report-widget.png)
 
 以下各节介绍了 **URL 保护** 报告页面上的可用视图。
 
@@ -162,6 +164,8 @@ If you click **Filters**， you can modify the report and the details table by s
 - **操作**
 - **应用**
 
+在主报告页面上，创建 ![ 计划图标。](../../media/m365-cc-sc-create-icon.png) **[创建计划](view-email-security-reports.md#schedule-report)**， ![ 请求报告图标。](../../media/m365-cc-sc-download-icon.png) **[请求报告](view-email-security-reports.md#request-report)**，以及 ![ "导出"图标。](../../media/m365-cc-sc-download-icon.png) **["](view-email-security-reports.md#export-report)** 导出"按钮可用。
+
 ### <a name="view-data-by-url-click-by-application"></a>按 URL 单击应用程序查看数据
 
 ![URL 保护报告中的应用程序视图单击 URL。](../../media/url-threat-protection-report-url-click-by-application-view.png)
@@ -193,6 +197,8 @@ If you click **Filters**， you can modify the report and the details table by s
 - **URL**
 - **操作**
 - **应用**
+
+在主报告页面上，创建 ![ 计划图标。](../../media/m365-cc-sc-create-icon.png) **[创建计划](view-email-security-reports.md#schedule-report)**， ![ 请求报告图标。](../../media/m365-cc-sc-download-icon.png) **[请求报告](view-email-security-reports.md#request-report)**，以及 ![ "导出"图标。](../../media/m365-cc-sc-download-icon.png) **["](view-email-security-reports.md#export-report)** 导出"按钮可用。
 
 ## <a name="additional-reports-to-view"></a>要查看的其他报告
 

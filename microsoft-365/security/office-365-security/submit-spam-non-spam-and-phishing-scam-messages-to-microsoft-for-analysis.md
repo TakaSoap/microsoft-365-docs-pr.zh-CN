@@ -2,8 +2,8 @@
 title: 手动将邮件提交给 Microsoft 进行分析
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -14,16 +14,16 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: 管理员和最终用户可以了解如何发送电子邮件， (标记为错误或错误的邮件允许向 Microsoft 发送) 邮件进行分析。
+description: 管理员和最终用户可以了解如何通过电子邮件将 (标记为错误或错误的邮件，以便) Microsoft 进行分析。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 91ec2807db4a4c384dabcf20634162b3a838274e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea2aa0fd8d325113a1891d40e392ac5e3be6e35b
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195915"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988219"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手动将邮件提交给 Microsoft 进行分析
 
@@ -39,7 +39,7 @@ ms.locfileid: "59195915"
 
 如果组织的用户在收件箱中收到垃圾邮件 (垃圾邮件) 或钓鱼邮件，或者他们因被标记为垃圾邮件而未收到合法电子邮件，可能很令人沮丧。 我们会不断微调垃圾邮件筛选器，以更加准确。
 
-你和用户可以通过向 Microsoft 提交误报 (标记为错误) 、漏报 (允许的) 错误邮件和钓鱼邮件来帮助此过程。
+你和用户可以通过向 Microsoft 提交误报 (标记为错误) 、漏报 (允许的) 错误邮件和网络钓鱼邮件来帮助此过程。
 
 > [!NOTE]
 > 由于我们收到的提交量很高，我们可能无法回答所有分析请求。
@@ -56,13 +56,13 @@ ms.locfileid: "59195915"
    - **垃圾邮件**： `junk@office365.microsoft.com`
    - **网络钓鱼**： `phish@office365.microsoft.com`
 
-2. 将垃圾邮件或网络钓鱼邮件拖放到新邮件中。 这会将垃圾邮件或网络钓鱼邮件另存为新邮件中的附件。 请勿复制和粘贴邮件内容，或将邮件转发 (我们需要原始邮件，以便检查邮件头) 。
+2. 将垃圾邮件或网络钓鱼邮件拖放到新邮件中。 这会将垃圾邮件或网络钓鱼邮件另存为新邮件中的附件。 请勿复制和粘贴邮件内容或转发邮件 (我们需要原始邮件，以便检查邮件头) 。
 
    > [!NOTE]
    >
    > - 可以在新邮件中附加多个邮件。 确保所有邮件类型相同：网络钓鱼邮件或垃圾邮件。
    > - 保留新的邮件正文空白。
-   > - 在附加 (Web (格式Outlook使用 .msg) 或 .eml (Outlook 默认) 格式。
+   > - 使用 .msg (默认 Outlook 格式) 或 .eml (默认 Outlook，) 附加邮件的 Web 格式。
 
 3. 完成后，单击"发送 **"。**
 
@@ -78,13 +78,13 @@ ms.locfileid: "59195915"
 
 1. 创建一封作为收件人的新 `not_junk@office365.microsoft.com` 空白电子邮件。
 
-2. 将错误标识的邮件拖放到新邮件中。 这会将错误标识的邮件另存为新邮件中的附件。 请勿复制和粘贴邮件内容，或将邮件转发 (我们需要原始邮件，以便检查邮件头) 。
+2. 将错误标识的邮件拖放到新邮件中。 这会将错误标识的邮件另存为新邮件中的附件。 请勿复制和粘贴邮件内容或转发邮件 (我们需要原始邮件，以便检查邮件头) 。
 
    > [!NOTE]
    >
    > - 可以在新邮件中附加多个邮件。 确保所有邮件类型相同：网络钓鱼邮件或垃圾邮件。
    > - 保留新的邮件正文空白。
-   > - 在附加 (Web (格式Outlook使用 .msg) 或 .eml (Outlook 默认) 格式。
+   > - 使用 .msg (默认 Outlook 格式) 或 .eml (默认 Outlook，) 附加邮件的 Web 格式。
 
 3. 完成后，单击"发送 **"。**
 

@@ -14,15 +14,15 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: 管理员可以了解如何使用 Exchange Online Protection (EOP) 中的高级传递策略识别不应在特定的支持方案中筛选的邮件 (第三方网络钓鱼模拟以及传递到安全操作 (SecOps) 邮箱的邮件。
+description: 管理员可以了解如何使用 Exchange Online Protection (EOP) 中的高级传递策略识别不应在支持的特定方案中筛选的邮件 (第三方网络钓鱼模拟和传递到安全操作 (SecOps) 邮箱的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: baea981e712a02bfffb6b664d4bb6a3d8c9b5ae5
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 5045e3ce38c1ae1a0d1f59aaa4a0daddde112d6a
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59481044"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988951"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>配置向用户传递第三方网络钓鱼模拟以及将未筛选邮件发送到 SecOps 邮箱
 
@@ -34,7 +34,7 @@ ms.locfileid: "59481044"
 若要在默认情况下保证[](secure-by-default.md)组织安全，Exchange Online Protection (EOP) 不允许对标识为恶意软件或高可信度网络钓鱼的邮件进行安全列表或筛选绕过。 但是，有一些特定方案需要传递未筛选的邮件。 例如：
 
 - **第三方网络钓鱼模拟**：模拟攻击可以帮助你在真实攻击影响组织之前识别易受攻击的用户。
-- **SecOps (安全**) ：安全团队用于收集和分析未筛选邮件的专用邮箱 (无论邮件好还是坏) 。
+- **SecOps (** 安全) ：安全团队用于收集和分析未筛选邮件的专用邮箱 (无论邮件好还是坏) 。
 
 在邮件 _中，可以使用_ Microsoft 365策略来阻止筛选这些 _特定方案中的_ 入站邮件。 <sup>\*</sup>高级传递策略可确保这些方案中的邮件获得以下结果：
 
@@ -52,7 +52,7 @@ ms.locfileid: "59481044"
 
 由高级传递策略标识的邮件不是安全威胁，因此邮件使用系统替代进行标记。 由于网络钓鱼模拟系统覆盖或 **SecOps** 邮箱系统覆盖，管理员体验将显示这些邮件。 管理员可以在下列体验中筛选和分析这些系统替代：
 
-- [威胁资源管理器/实时检测在 Defender for Office 365 计划 2：](threat-explorer.md)管理员可以筛选系统覆盖源并选择网络钓鱼 **模拟** 或 **SecOps 邮箱**。
+- [威胁资源管理器/实时检测在 Defender for Office 365计划 2：](threat-explorer.md)管理员可以筛选系统替代源并选择 **网络钓鱼模拟** 或 **SecOps 邮箱**。
 - 威胁资源管理器 [/](mdo-email-entity-page.md)实时检测中的电子邮件实体页面：管理员可以查看 **SecOps** 邮箱或钓鱼模拟在"覆盖"部分中的"租户替代"下 (组织策略) **的邮件。**
 - 威胁[防护状态报告](view-email-security-reports.md#threat-protection-status-report)：管理员可以在下拉菜单中按系统覆盖查看数据进行筛选，并选择查看由于网络钓鱼模拟系统覆盖而允许的邮件。 To see messages allowed by the SecOps mailbox override， you can select **chart breakdown by delivery location** in the chart breakdown by **reason** drop down menu.
 - [Microsoft Defender for Endpoint 中的](../defender-endpoint/advanced-hunting-overview.md)高级搜寻：网络钓鱼模拟和 SecOps 邮箱系统覆盖在 EmailEvents 中的 OrgLevelPolicy 中将显示为选项。
@@ -68,14 +68,14 @@ ms.locfileid: "59481044"
   - 若要在高级传递策略中创建、修改或删除配置的设置，您需要是 Microsoft 365 Defender 门户中安全管理员角色组的成员以及 **Exchange Online** 中的组织管理角色 **组的成员**。 
   - 若要对高级传递策略进行只读访问，你需要是全局读者或安全读者 **角色组** 的成员。
 
-  有关详细信息，请参阅 Microsoft 365 Defender[门户中的权限](permissions-microsoft-365-security-center.md)Exchange Online。 [](/exchange/permissions-exo/permissions-exo)
+  有关详细信息，请参阅 Microsoft 365 Defender[门户中的权限](permissions-microsoft-365-security-center.md)和 Exchange Online 中[的权限](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
   > 将用户添加到相应的 Azure Active Directory 角色会为用户提供在 Microsoft 365 Defender _门户中_ 所需的权限，以及用户对 Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>使用 Microsoft 365 Defender门户在高级传递策略中配置 SecOps 邮箱
 
-1. 在 Microsoft 365 Defender 门户中，转到"规则"部分中的"电子邮件&协作策略& \> **规则** 威胁 \> **策略** 高级 \> 传递"。 
+1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Advanced delivery** in the **Rules** section.
 
 2. 在" **高级传递"** 页上，确认 **"SecOps** 邮箱"选项卡已选中，然后执行下列步骤之一：
    - 单击 ![ "编辑"图标。](../../media/m365-cc-sc-edit-icon.png) **编辑**。
@@ -83,7 +83,7 @@ ms.locfileid: "59481044"
 
 3. 在打开的"编辑 **SecOps** 邮箱"飞出控件上，输入要指定为 SecOps 邮箱的现有 Exchange Online 邮箱，具体步骤如下：
    - 在框中单击，让邮箱列表解析，然后选择邮箱。
-   - 单击框中开始键入邮箱 (名称、显示名称、别名、电子邮件地址、帐户名等 ) 的标识符，然后从结果中选择 (显示名称) 邮箱标识符。
+   - 单击框中开始键入邮箱 (名称、显示名称、别名、电子邮件地址、帐户名等 ) 的标识符，然后从结果中选择邮箱 (显示名称) 。
 
      根据需要重复执行此步骤（次数不限）。 不允许通讯组。
 
@@ -95,7 +95,7 @@ ms.locfileid: "59481044"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>使用Microsoft 365 Defender门户在高级传递策略中配置第三方网络钓鱼模拟
 
-1. 在 Microsoft 365 Defender 门户中，转到"规则"部分中的"电子邮件&协作策略& \> **规则** 威胁 \> **策略** 高级 \> 传递"。 
+1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Advanced delivery** in the **Rules** section.
 
 2. 在" **高级传递"** 页上，选择" **网络钓鱼模拟** "选项卡，然后执行下列步骤之一：
    - 单击 ![ "编辑"图标。](../../media/m365-cc-sc-edit-icon.png) **编辑**。
@@ -103,12 +103,12 @@ ms.locfileid: "59481044"
 
 3. 在打开 **的"编辑第三方网络钓鱼** 模拟"飞出控件上，配置以下设置：
 
-   - 域：展开此设置并输入至少一个电子邮件地址域 (例如，单击该框，输入值，然后按 Enter 或选择显示在框下方的值来输入 contoso.com) 。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。
+   - 域：展开此设置并输入至少一个电子邮件地址域 (例如，单击该框，输入一个值，然后按 Enter 或选择框下方显示的值来输入 contoso.com) 。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。
 
      > [!NOTE]
-     > 使用地址 (也称为邮件发件人地址、P1 发件人或信封发件人) ，用于邮件的 SMTP 传输或由网络钓鱼模拟供应商指定的域密钥识别邮件 `5321.MailFrom` ( DKIM) 域。 
+     > 使用地址 (也称为邮件发件人地址、P1 发件人或信封发件人) ，用于邮件的 SMTP 传输或由网络钓鱼模拟供应商指定的域密钥识别邮件 `5321.MailFrom` (DKIM) 域。 
 
-   - **发送 IP：** 展开此设置，并输入至少一个有效的 IPv4 地址，方法是单击框，输入值，然后按 Enter 或选择框下方显示的值。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。 有效值为：
+   - **发送 IP：** 展开此设置并输入至少一个有效的 IPv4 地址，方法是单击框，输入值，然后按 Enter 或选择框下方显示的值。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。 有效值为：
      - 单个 IP：例如，192.168.1.1。
      - IP 范围：例如，192.168.0.1-192.168.0.254。
      - CIDR IP：例如，192.168.0.1/25。
@@ -120,12 +120,12 @@ ms.locfileid: "59481044"
    > 若要在高级传递中配置第三方网络钓鱼模拟，需要提供以下信息：
    > 
    > - 至少来自 **以下任** 一源的一个域：
-   >   - 地址 `5321.MailFrom` (MAIL FROM 地址、P1 发件人或信封发件人) 。
+   >   - 地址 `5321.MailFrom` (MAIL FROM 地址、P1 发件人或信封发件人地址) 。
    >   - DKIM 域。
    > - 至少一个 **发送 IP**。
    > 
    > 可以选择包括模拟 **URL，以确保** 不会阻止模拟消息中的 URL。
-   > 每个字段最多可以指定 10 个条目。
+   > 您可以为每个字段指定最多 10 个条目。
    > 在至少一个域和一个发送 **IP** 上必须存在匹配项，但不会维护值之间的关联。
 
 4. 完成后，请执行下列步骤之一：
@@ -138,7 +138,7 @@ ms.locfileid: "59481044"
 
 除了高级传递策略可以帮助你的两种方案之外，还有其他一些方案可能需要绕过筛选：
 
-- **第三方筛选器**：如果你的域的 MX记录没有指向Office 365 (邮件将路由到其他第一) ，则默认情况下安全 [](secure-by-default.md)*不可用*。 如果要添加保护，则需要启用连接器的增强筛选 (也称为跳过 *列表*) 。 有关详细信息，请参阅[使用第三](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)方云服务管理邮件流Exchange Online。 如果您不希望增强连接器筛选功能，请使用邮件流规则 (也称为传输规则) ，以绕过 Microsoft 筛选已由第三方筛选评估的邮件。 有关详细信息，请参阅使用[邮件流规则设置邮件中的 SCL。](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
+- **第三方筛选器**：如果你的域的 MX记录没有指向Office 365 (邮件将路由到其他首先) ，则默认情况下安全 [](secure-by-default.md)*不可用*。 如果要添加保护，则需要启用连接器的增强筛选 (也称为跳过 *列表*) 。 有关详细信息，请参阅[使用第三](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)方云服务管理邮件流Exchange Online。 如果您不希望增强连接器筛选功能，请使用邮件流规则 (也称为传输规则) ，以绕过 Microsoft 筛选已由第三方筛选评估的邮件。 有关详细信息，请参阅使用[邮件流规则设置邮件中的 SCL。](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
 
 - 正在审查 **的** 误报：你可能希望暂时允许 Microsoft 通过管理员提交仍在分析的某些邮件，以报告被 [](admin-submission.md)错误地标记为对 Microsoft (误报) 。 与所有替代一样， **_我们强烈建议这些_** 允许是临时的。
 
@@ -190,7 +190,7 @@ New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
 ```
 
 > [!NOTE]
-> 无论指定 Name 值如何，规则名称将为 _SecOpsOverrideRule，_ 其中唯一的 GUID 值为 (例如 \<GUID\> \<GUID\> ，6fed4b63-3563-495d-a481-b24a311f8329) 。
+> 无论指定 Name 值如何，规则名称都将为 _SecOpsOverrideRule，_ 其中是唯一的 GUID 值 (例如 \<GUID\> \<GUID\> ，6fed4b63-3563-495d-a481-b24a311f8329) 。
 
 有关语法和参数的详细信息，请参阅 [New-SecOpsOverrideRule](/powershell/module/exchange/new-secopsoverriderule)。
 
@@ -214,7 +214,7 @@ Get-SecOpsOverrideRule
 
 尽管上一个命令只应返回一个规则，但结果中也可能包含任何等待删除的规则。
 
-本示例标识一个规则 (规则) 无效的规则。
+本示例标识一个规则 (规则) 无效规则。
 
 ```powershell
 Get-SecOpsOverrideRule | Format-Table Name,Mode
@@ -298,7 +298,7 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 2. 创建钓鱼模拟替代规则，该规则指定：
    - 规则应用于的策略。
    - 网络钓鱼模拟邮件的源 IP 地址。
-3. （可选）标识应允许的网络钓鱼模拟 URL (，即未阻止或扫描) 。
+3. （可选）标识应允许的网络钓鱼 (URL，即未阻止或扫描) 。
 
 #### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>步骤 1：使用 PowerShell 创建网络钓鱼模拟覆盖策略
 
@@ -317,10 +317,10 @@ New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
 使用以下语法：
 
 ```powershell
-New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
 ```
 
-不论您指定的 Name 值如何，规则名称都是 _PhishSimOverrideRule，_ 其中是唯一的 GUID 值 (例如 \<GUID\> \<GUID\> ，a0eae53e-d755-4a42-9320-b9c6b55c5011) 。
+无论指定 Name 值如何，规则名称都是 _PhishSimOverrideRule，_ 其中是唯一的 GUID 值 (例如 \<GUID\> \<GUID\> ，a0eae53e-d755-4a42-9320-b9c6b55c5011) 。
 
 有效的 IP 地址条目是下列值之一：
 
@@ -331,7 +331,7 @@ New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePoli
 此示例使用指定的设置创建网络钓鱼模拟替代规则。
 
 ```powershell
-New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
 ```
 
 有关语法和参数的详细信息，请参阅 [New-PhishSimOverrideRule](/powershell/module/exchange/new-phishsimoverriderule)。
@@ -341,12 +341,12 @@ New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePoli
 使用以下语法：
 
 ```powershell
-New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URLN>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URL10>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
 ```
 
 有关 URL 语法的详细信息，请参阅 [租户允许/阻止列表的 URL 语法](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)。
 
-此示例为指定的第三方网络钓鱼模拟 URL 添加一个 URL 允许条目，但该条目没有过期时间。
+此示例为指定的第三方网络钓鱼模拟 URL 添加一个 URL 允许条目，没有过期时间。
 
 ```powershell
 New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries *.fabrikam.com -NoExpiration
@@ -374,7 +374,7 @@ Get-PhishSimOverrideRule
 
 尽管上一个命令只应返回一个规则，但结果中也可能包含任何等待删除的规则。
 
-本示例标识一个规则 (规则) 无效的规则。
+本示例标识一个规则 (规则) 无效规则。
 
 ```powershell
 Get-PhishSimOverrideRule | Format-Table Name,Mode
@@ -420,7 +420,7 @@ Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b
 
 此示例使用下列设置修改指定的网络钓鱼模拟替代规则：
 
-- 添加域条目 blueyonderairlines.com。
+- 将域条目 blueyonderairlines.com。
 - 删除 IP 地址条目 192.168.1.55。
 
 请注意，这些更改不会影响现有条目。
@@ -435,13 +435,13 @@ Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b
 
 不能直接修改 URL 值。 您可以[删除现有 URL 条目并](#use-powershell-to-remove-the-allowed-phishing-simulation-url-entries)[添加新的 URL](#step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow)条目，如本文所述。
 
-若要修改允许的网络钓鱼模拟 URL 条目的其他属性 (例如到期日期或注释) ，请使用以下语法：
+若要修改允许的网络钓鱼模拟 URL 条目的其他 (例如到期日期或注释) ，请使用以下语法：
 
 ```powershell
 Set-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery <[-NoExpiration] | [-ExpirationDate <DateTime>]> [-Notes <String>]
 ```
 
-通过 _Entries_ 参数)  (或 **Get-TenantAllowBlockListItems** cmdlet 的输出中的 Identity 值（ (_Ids_ 参数 (标识值）标识要修改的条目) 。
+通过 _Entries_ 参数)  (或 **Get-TenantAllowBlockListItems** cmdlet 输出的 Identity 值（ (_Ids_ 参数) ），可以标识要修改的条目 (条目。
 
 本示例修改了指定条目的到期日期。
 
@@ -485,7 +485,7 @@ Remove-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-932
 Remove-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery
 ```
 
-通过 _Entries_ 参数)  (或 **Get-TenantAllowBlockListItems** cmdlet 的输出中的 Identity 值（ (_Ids_ 参数 (标识值）标识要修改的条目) 。
+通过 _Entries_ 参数)  (或 **Get-TenantAllowBlockListItems** cmdlet 输出的 Identity 值（ (_Ids_ 参数) ），可以标识要修改的条目 (条目。
 
 本示例修改了指定条目的到期日期。
 
@@ -494,4 +494,3 @@ Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –
 ```
 
 有关语法和参数的详细信息，请参阅 [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems)。
-

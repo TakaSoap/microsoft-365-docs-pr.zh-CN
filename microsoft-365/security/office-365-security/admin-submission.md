@@ -2,8 +2,8 @@
 title: 管理提交
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -18,12 +18,12 @@ ms.custom:
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b36497ad6abe0325ea5d8830c4e1995370161c87
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 756b26a6d7b2a735cc7ac232348048ce76a1aa1b
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400914"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988723"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用提交门户将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft
 
@@ -44,7 +44,7 @@ ms.locfileid: "59400914"
 - **成绩分析**：由人工评分人员完成审阅，以确认邮件是否是恶意邮件。
 
 > [!IMPORTANT]
-> 负载信誉/触发和成绩分析并非在所有租户中都完成。 如果出于合规性目的数据不应离开租户边界，则阻止信息进入组织外部。
+> 负载信誉/触发和成绩分析并非在所有租户中都完成。 当数据出于合规性目的不应离开租户边界时，将阻止信息进入组织外部。
 
 有关向 Microsoft 提交电子邮件、URL 和附件的其他方法，请参阅向 Microsoft 报告 [邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "59400914"
 - 访问 <https://security.microsoft.com/> 打开 Microsoft 365 Defender 门户。 若要直接转到 **提交页面，** 请使用 <https://security.microsoft.com/reportsubmission> 。
 
 - 若要向 Microsoft 提交邮件和文件，你需要是以下角色组之一的成员：
-  - **组织管理** 或 **安全读者** Microsoft 365 Defender [门户](permissions-microsoft-365-security-center.md)。
+  - **组织管理** 或 **安全读者** Microsoft 365 Defender [门户。](permissions-microsoft-365-security-center.md)
   
     请注意，查看自定义邮箱的用户提交需要此角色组的 [成员身份，如](#view-user-submissions-to-microsoft) 本文稍后所述。
 
@@ -77,13 +77,13 @@ ms.locfileid: "59400914"
 1. 在 **"选择提交类型"** 框中，确认 **"电子邮件** "在下拉列表中已选中。
 
 2. 在 **"添加网络邮件 ID 或上载电子邮件文件** "部分，使用以下选项之一：
-   - 添加电子邮件网络邮件 **ID：** 这是一个 GUID 值，可用于邮件中的 **X-MS-Exchange-Organization-Network-Message-Id** 标头或隔离邮件中的 **X-MS-Office365-Filtering-Correlation-Id** 头。
+   - 添加电子邮件网络邮件 **ID：** 这是一个 GUID 值，可在邮件的 **X-MS-Exchange-Organization-Network-Message-Id** 标头中或在隔离邮件的 **X-MS-Office365-Filtering-Correlation-Id** 头中提供。
    - **Upload电子邮件文件 (.msg 或 .eml) ：单击"浏览****文件"。** 在打开的对话框中，查找并选择 .eml 或 .msg 文件，然后单击"打开 **"。**
 
 3. 在 **"选择具有问题的** 收件人"框中，指定要针对其运行策略检查的收件人。 策略检查将确定电子邮件是否由于用户或组织策略而绕过扫描。
 
 4. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **如果误报，不应 (阻止)**
+   - **不应阻止误报 (错误)**
    - **应已被** 阻止：在"电子邮件应已分类为出现的部分"中，选择以下值之一 (如果你不确定，请使用最佳判断) ：
      - **网络钓鱼**
      - **垃圾邮件**
@@ -101,7 +101,7 @@ ms.locfileid: "59400914"
 2. 在出现的 **"URL"** 框中，输入完整的 URL (例如 `https://www.fabrikam.com/marketing.html` ，) 。
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **如果误报，不应 (阻止)**
+   - **不应阻止误报 (错误)**
    - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，选择"**网络钓鱼**"或"恶意软件 **"。**
 
 4. 完成后，单击"提交 **"** 按钮。
@@ -116,7 +116,7 @@ ms.locfileid: "59400914"
 2. 在出现的 **"文件**"部分，单击"**浏览文件"。** 在打开的对话框中，查找并选择文件，然后单击"打开 **"。**
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **如果误报，不应 (阻止)**
+   - **不应阻止误报 (错误)**
    - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，" **恶意软件"是唯** 一的选择，并自动选中。
 
 4. 完成后，单击"提交 **"** 按钮。
@@ -131,7 +131,7 @@ ms.locfileid: "59400914"
 
 1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
 
-2. 在 **"提交"** 页上，确认已选择" **已提交进行分析"** 选项卡。
+2. 在 **"提交"** 页上，确认已选中" **已提交进行分析"** 选项卡。
 
    - 可以通过单击可用列标题来对条目进行排序。 单击 **"自定义列** "最多可显示七列。 默认值标有星号（<sup>\*</sup>）：
      - **提交名称**<sup>\*</sup>
@@ -170,7 +170,7 @@ ms.locfileid: "59400914"
 
    - 若要对条目进行分组 **，请单击"** 分组"，然后从下拉列表中选择下列值之一：
      - **无**
-     - **类型**
+     - **Type**
      - **原因**
      - **状态**
      - **重新扫描结果**
@@ -190,7 +190,7 @@ ms.locfileid: "59400914"
 
 ## <a name="view-user-submissions-to-microsoft"></a>查看向 Microsoft 提交用户
 
-如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上查看报告哪些用户。 [](enable-the-report-phish-add-in.md) 
+如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上查看报告的用户。 [](enable-the-report-phish-add-in.md) 
 
 1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
 

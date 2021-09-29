@@ -2,8 +2,8 @@
 title: 邮件流地图
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何使用安全 & 合规中心中的"邮件流"仪表板中的"邮件流"映射，直观呈现和跟踪通过连接器（不使用连接器）在组织中往来的邮件流。
+description: 管理员可以了解如何使用安全 & 合规中心中的"邮件流"仪表板中的"邮件流"映射，直观呈现和跟踪邮件如何通过连接器和不使用连接器从组织流动。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bdde117d8984db3a71624ab48a6ed88ba8367054
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 45182b6da5a20780673f5e84aeffaa9c3e6a6fe5
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171538"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988579"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>安全与合规中心&流程图
 
@@ -30,9 +30,9 @@ ms.locfileid: "59171538"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全 **与合规** 中心的 ["邮件流](mail-flow-insights-v2.md) "仪表板中的"邮件流 ["&可](https://protection.office.com) 深入了解邮件在组织中如何流动。 您可以使用此信息了解模式、识别异常并修复发生的问题。
+安全 **与合规中心的**["邮件流](mail-flow-insights-v2.md)"仪表板中的"邮件流 ["&可](https://protection.office.com)深入了解邮件在组织中如何流动。 您可以使用此信息了解模式、识别异常并修复发生的问题。
 
-![安全与合规中心内"邮件流"仪表板中的"邮件流&小组件。](../../media/mfi-mail-flow-map-widget.png)
+![安全与合规中心内"邮件流"仪表板中的"邮件&小组件。](../../media/mfi-mail-flow-map-widget.png)
 
 默认情况下，小部件在称为 *Sankey* 图表的图表中显示前一天的邮件流模式。 可以使用向左箭头 ![ 。](../../media/scc-left-arrow.png) 和向右 ![ 箭头 ](../../media/scc-right-arrow.png) 显示不同日期的信息。 每种不同的颜色表示通过不同入站或出站连接器的邮件流 (或不使用连接器) 。 如果将鼠标悬停在特定颜色上，将显示该类型的连接器的消息数。
 
@@ -54,13 +54,13 @@ ms.locfileid: "59171538"
 
 若要将特定日期范围的报告通过电子邮件发送给一个或多个收件人，请单击"请求 **下载"。**
 
-相关见解显示在邮件流映射下方（如果它们可用 (例如，修复可能的邮件 [循环见解](mfi-mail-loop-insight.md)) 。
+相关见解显示在邮件流映射下方（如果可用 (例如，修复可能的邮件 [循环见解](mfi-mail-loop-insight.md)) 。
 
 ## <a name="details-table-view-for-the-mail-flow-map"></a>邮件流映射的详细信息表视图
 
 如果单击 **视图中的"** 查看详细信息报表视图，将显示以下信息：
 
-- **Date**
+- **日期**
 - **类别**
 - **连接器/第三方服务提供商**
 - **发件人/收件人域**
@@ -78,4 +78,4 @@ ms.locfileid: "59171538"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心内& [见解](mail-flow-insights-v2.md)。

@@ -8,18 +8,18 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: 为计划程序设置Microsoft 365。
-ms.openlocfilehash: 08083937255d9af3499016a32959e2690a222919
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 01e574fd2f4cd766b3347c6fa56149f6bcd600d5
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170541"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988819"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>设置 Microsoft 365 专属计划员
 
 租户管理员需要设置计划程序助理邮箱，并获取会议组织者的计划程序许可证，才能为计划程序启用Microsoft 365计划程序。 
 
-## <a name="licensing"></a>授权
+## <a name="licensing"></a>颁发许可
 
 了解更多信息[：Microsoft 365计划程序](https://www.microsoft.com/microsoft-365/meeting-scheduler-pricing)
 
@@ -30,13 +30,13 @@ ms.locfileid: "59170541"
 
 | 先决条件 | 说明 |
 |-------------------|-------------|
-|租户的计划程序助理邮箱 |一Exchange类型资源邮箱，用作租户的计划程序助理邮箱，用于发送和接收发送到或发送Cortana。 根据保留策略Cortana发送到租户的所有电子邮件Cortana租户邮箱中。 计划程序助理邮箱通常命名为"Cortana"或"Cortana计划程序"，因为助理发送的所有电子邮件都将Cortana。<ul><li>创建资源邮箱Exchange类型</li><li>将邮箱的名称显示名称主 SMTP 地址或 `Cortana <cortana@yourdomain.com>` `Cortana Scheduler <cortana.scheduler@yourdomain.com>` 。</li></ul>**注意：** 计划程序助理邮箱不需要Microsoft 365计划程序许可证。|
+|租户的计划程序助理邮箱 |一Exchange类型资源邮箱，用作租户的计划程序助理邮箱，用于发送和接收发自Cortana。 根据保留策略Cortana发送到用户的所有Cortana将保留在租户的邮箱中。 计划程序助理邮箱通常命名为"Cortana"或"Cortana计划程序"，因为助理发送的所有电子邮件都将在Cortana。<ul><li>创建资源邮箱Exchange类型</li><li>将邮箱的名称显示名称主 SMTP 地址或 `Cortana <cortana@yourdomain.com>` `Cortana Scheduler <cortana.scheduler@yourdomain.com>` 。</li></ul>**注意：** 计划程序助理邮箱不需要Microsoft 365计划程序许可证。|
 |Exchange Online 邮箱 |通常，会议组织者Exchange Online邮箱和日历作为其许可证的一Microsoft 365一部分。 此外，会议组织者必须具有计划程序许可证。 计划程序许可证使计划程序助理可以使用会议组织者的邮箱和日历来安排其会议。<br/><br/> 有关许可和Microsoft 365，请参阅计划程序。  <br/><br/>**注意：** 与会者不需要计划程序或Microsoft 365许可证。 与会者可以是租户的内部或外部人员。 与会者只需访问电子邮件地址。|
 
 
 ## <a name="setting-up-the-scheduler-assistant-mailbox"></a>设置计划程序助理邮箱
 
-计划程序助理邮箱是一Exchange设备类型邮箱，不需要额外的Microsoft 365许可证。 the 显示名称 and the primary SMTP address of the mailbox should contain Cortana since all the emails from the Scheduler assistant will be signed Cortana (，即 `Cortana <cortana@yourdomain.com>` ，or `Cortana Scheduler <cortana.scheduler@yourdomain.com>`) . 创建计划程序助理邮箱后，必须将该邮箱指定为计划程序助理邮箱。 指定计划程序助理邮箱后，Cortana助理邮箱可以代表用户安排会议。
+计划程序助理邮箱是一Exchange设备类型邮箱，不需要额外的Microsoft 365许可证。 the 显示名称 and the primary SMTP address of the mailbox should contain Cortana since all the emails from the Scheduler assistant will be signed Cortana (，即 `Cortana <cortana@yourdomain.com>` ，or `Cortana Scheduler <cortana.scheduler@yourdomain.com>`) . 创建计划程序助理邮箱后，必须将该邮箱指定为计划程序助理邮箱。 指定计划程序助理邮箱后，Cortana将可以代表用户安排会议。
 
 - 使用Microsoft 365 管理中心创建用户邮箱。 建议使用 30 天的保留策略。 
 - 使用邮箱Cortana SMTP 地址中的名称。 建议使用 、 `Cortana@yourdomain.com` `CortanaScheduler@contoso.com` 或 `Cortana.Scheduler@yourdomain.com` 等名称。
@@ -70,7 +70,7 @@ Set-CalendarProcessing Cortana@$domain -DeleteNonCalendarItems $false
 Set-mailbox cortana@$domain -SchedulerAssistant:$true
 ```
 
-在计划程序助理邮箱Cortana"set"命令后，将在邮箱上设置一个新的"PersistedCapability"，以表明此邮箱是"SchedulerAssistant"。
+在 Cortana 计划程序助理邮箱上运行此"set"命令后，将在邮箱上设置一个新的"PersistedCapability"，以表明此邮箱是"SchedulerAssistant"。
 
 > [!Note]
 > 若要了解如何将组织连接到 PowerShell，请参阅：连接[Microsoft 365 PowerShell 进行连接](/microsoft-365/enterprise/connect-to-microsoft-365-powershell)
@@ -80,7 +80,7 @@ Set-mailbox cortana@$domain -SchedulerAssistant:$true
 验证是否创建了计划程序助理邮箱
 
 ```PowerShell
-Get-CalendarProcessing cortana$domain <cortana>@microsoft.com   | fl DeleteNonCalendarItems`
+Get-CalendarProcessing cortana$domain | fl DeleteNonCalendarItems
 ```
 
 结果应为"false"。
@@ -88,7 +88,7 @@ Get-CalendarProcessing cortana$domain <cortana>@microsoft.com   | fl DeleteNonCa
 <br>
 
 ```PowerShell
-Get-Mailbox -Identity <cortana>@microsoft.com$domain -Organization microsoft.com$domain | fl *type*
+Get-Mailbox -Identity cortana$domain | fl *type*
 ```
 
 结果应为
@@ -118,11 +118,11 @@ Get-Mailbox -ResultSize Unlimited | where {$_.PersistedCapabilities -Match "Sche
 - Microsoft 365 E3、A3、E5、A5
 - Business Basic、Business、Business Standard、Business 高级版
 - Office 365 E1、A1、E3、A3、E5、A5
-- 商业基础、商业高级版
+- 商业基本要素、商业高级版
 - Exchange Online计划 1 或计划 2 许可证。 
 
 > [!Note]
-> Microsoft 365计划程序仅适用于英语的全球多租户环境。 **用户Microsoft 365** 计划程序：
+> Microsoft 365计划程序仅适用于以英语表示的全球多租户环境。 **用户Microsoft 365** 计划程序：
 > 
 > - Microsoft 365由世纪银行在中国运营
 > - Microsoft 365使用数据被信任方德国电信的德国云

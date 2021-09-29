@@ -2,8 +2,8 @@
 title: 修复可能的邮件循环见解
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何 &使用安全与合规中心内"邮件流"仪表板中的"修复可能的邮件循环见解"来标识和修复其组织的邮件循环。
+description: 管理员可以 &了解如何使用安全与合规中心内"邮件流"仪表板中的"修复可能的邮件循环见解"来标识和修复其组织的邮件循环。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0c866dbec4a406c47bec072225dbe038510d71de
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 338c76e751ad8fd504ff8182c59fe2a4d8dfb9d8
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197203"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988231"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>修复安全与合规中心内可能&见解
 

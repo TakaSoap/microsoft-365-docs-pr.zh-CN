@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 840ea513980d3167d34437c048eb8d8164a2d57b
-ms.sourcegitcommit: e001934654119e15149ed29b3079b1019849f59c
+ms.openlocfilehash: 1a7900256207dd50f64a4bb8fe43b86bcf2b2913
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934661"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988267"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>排查与 iOS 上的 Microsoft Defender for Endpoint 相关的问题并查找常见问题解答
 
@@ -50,7 +50,7 @@ ms.locfileid: "59934661"
 
 1. 在 iOS 设备上，打开 **"设置应用**"，单击 **或点击"** 常规"，然后单击 **"VPN"。**
 1. 单击或点击 Microsoft Defender for Endpoint 的"i"按钮。
-1. 关闭 **"连接按需"** 以禁用 VPN。
+1. 关闭 **"连接按需"以** 禁用 VPN。
 
     > [!div class="mx-imgBorder"]
     > ![VPN 配置按需连接。](images/ios-vpn-config.png)
@@ -60,15 +60,15 @@ ms.locfileid: "59934661"
 
 ## <a name="coexistence-with-multiple-vpn-profiles"></a>与多个 VPN 配置文件共存
 
-Apple iOS 不支持多个 **设备范围的** VPN 同时处于活动状态。 虽然设备上可以存在多个 VPN 配置文件，但一次只能有一个 VPN 处于活动状态。
+Apple iOS 不支持多个 **设备范围的** VPN 同时处于活动状态。 虽然设备上可以存在多个 VPN 配置文件，但一次只能有一个 VPN 处于活动状态。 如果你需要在设备上使用另一个 VPN，可以在使用另一个 VPN 时禁用终结点 VPN 的 Defender。
 
 Microsoft Defender for Endpoint VPN 可以与配置为每应用或"个人"的其他 VPN *共存*。
 
 ## <a name="battery-consumption"></a>电池消耗
 
-在设置应用中，iOS 仅显示特定持续时间内对用户可见的应用的电池使用情况。 屏幕上显示的应用的电池使用量仅在该持续时间内，由 iOS 根据大量因素（包括 CPU 和网络使用情况）计算。 Microsoft Defender for Endpoint 在后台使用本地/环回 VPN 来检查任何恶意网站或连接的 Web 流量。 来自任何应用的网络数据包都经过此检查，这会导致 Microsoft Defender for Endpoint 的电池使用情况计算不准确。 Microsoft Defender for Endpoint 的实际电池消耗远小于设备上"电池设置页面上显示的内容。
+在设置应用中，iOS 仅显示特定时间内对用户可见的应用的电池使用情况。 屏幕上显示的应用的电池使用量仅在该持续时间内，由 iOS 根据大量因素（包括 CPU 和网络使用情况）计算。 Microsoft Defender for Endpoint 在后台使用本地/环回 VPN 来检查任何恶意网站或连接的 Web 流量。 来自任何应用的网络数据包都经过此检查，这会导致 Microsoft Defender for Endpoint 的电池使用情况计算不准确。 Microsoft Defender for Endpoint 的实际电池消耗远小于设备上"电池设置页面上显示的内容。
 
-对于在后台运行的终结点，Microsoft Defender 的平均每天电池使用量大约为当天消耗的总电池的 **8.81%。** Apple 根据最终用户设备上 Microsoft Defender for Endpoint 的实际使用情况报告此指标，并且由于上述原因，还可以将指标报告给具有网络活动的其他应用。
+对于在后台运行的终结点，Microsoft Defender 的平均每天电池使用量大约为当天消耗的总电池的 **8.81%。** Apple 根据最终用户设备上 Microsoft Defender for Endpoint 的实际使用情况报告此指标，并且由于上述原因，还可以将指标计算到具有网络活动的其他应用。
 
 此外，使用的 VPN 是本地 VPN，与传统 VPN 不同，网络流量不会发送到设备外部。
 
