@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9a1d888ceee527960cb8b894b1bc6bcde5c73d9b
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: f202eae985ea1dbf0057a0c1ee5663931ea134d9
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460036"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011197"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -39,12 +39,11 @@ ms.locfileid: "59460036"
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>支持应用中的敏感度标签功能
 
-下表列出了使用内置标签支持敏感度标签所需的最低 Office 版本。 或者，如果标签功能是公共预览版，或正在审查将来的版本。 使用 Microsoft [365 产品指南](https://aka.ms/MIPC/Roadmap) 详细了解将来的版本。
+下表列出了使用内置标签支持敏感度标签所需的最低 Office 版本。 或者，如果标签功能是公共预览版，或正在审查将来的版本。 使用 [Microsoft 365 路线图](https://aka.ms/MIPC/Roadmap)了解有关计划用于未来版本的新功能的详细信息。
 
-不同更新频道在不同时间提供新版本的 Office 应用。 有关详细信息（包括如何配置更新频道，以便可以测试您感兴趣的新标签功能），请参阅 [Microsoft 365 应用更新频道概述](/DeployOffice/overview-update-channels)。 表中不包括专用预览版中的新功能，但通过选择组织参加 [Microsoft 信息保护专用预览计划，](https://aka.ms/mip-preview)。
+不同更新频道在不同时间提供新版本的 Office 应用。 对于 Windows，当使用当前频道或每月企业频道而不是半年企业频道时，将更早地获得新功能。 一个更新频道与下一个更新频道的最低版本号也可能不同。 有关详细信息，请参阅 [Microsoft 365 应用版的更新频道概述](/deployoffice/overview-update-channels)和[Microsoft 365 应用版更新历史记录](/officeupdates/update-history-microsoft365-apps-by-date)。
 
-> [!NOTE]
-> 2020 年 5 月，Office 应用程序的更新通道名称发生更改。 例如，每月频道现在是当前频道，Office 预览体验计划现在是 Beta 频道。 有关详细信息，请参阅[对 Microsoft 365 应用版的更新频道所做的更改](/deployoffice/update-channels-changes)。
+表中不包括专用预览版中的新功能，但通过选择组织参加 [Microsoft 信息保护专用预览计划，](https://aka.ms/mip-preview)。
 
 Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)。
 
@@ -57,59 +56,61 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Word、Excel 和 PowerPoint 中的敏感度标签功能
 
-列出的数字是每个功能所需的最低 Office 应用程序版本。
+列出的数字是每个功能所需的最低 Office 应用程序版本。 
 
-|功能                                                                                                        |Windows<sup>\*</sup> |Mac |iOS    |Android      |Web                                                         |
-|------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
-|[手动应用、更改或删除标签](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[将默认标签应用于](sensitivity-labels.md#what-label-policies-can-do) 新建文档                                         | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|<[将默认标签应用于](sensitivity-labels.md#what-label-policies-can-do) 已有文档 | 预览版：推出到 [Beta 版频道](https://office.com/insider)           | 预览版：推出到 [Beta 版频道](https://office.com/insider) | 审阅中 | 审阅中 | 推出：[是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[需要两端对齐来更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[提供指向自定义帮助页面的帮助链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[带变量的动态标记](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[现在分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[允许用户分配权限：权限 <br /> - 提示用户](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | 审阅中   | 审阅中         | 审阅中                                                        |
-|[审核标签相关的用户活动](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | 16.0.13628+ | 是 <sup>\*\*</sup>                                                        |
-|[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | 16.45+         | 2.47+ | 16.0.13628+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md)                                            
-|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用敏感信息类型                    | 2009+                                  | 16.44+  | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用可训练分类器                    | 2009+                                  | 审阅中 | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[支持对标记文档和加密](sensitivity-labels-coauthoring.md) 创作和自动保存 | 2107+ |  16.51+ | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+> [!NOTE]
+> 对于 Windows 和半年企业频道，支持的最低版本号可能尚未发布。 [了解详细信息](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+ 
+|功能 |Windows |Mac |iOS |Android |Web |
+|-----------|-------:|----|----|--------|----|
+|[手动应用、更改或删除标签](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[将默认标签应用于](sensitivity-labels.md#what-label-policies-can-do) 新建文档                                         | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
+|<[将默认标签应用于](sensitivity-labels.md#what-label-policies-can-do) 已有文档 | 预览版：推出到 [Beta 版频道](https://office.com/insider) | 预览版：推出到 [Beta 版频道](https://office.com/insider) | 审阅中 | 审阅中 | 推出：[是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[需要两端对齐来更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 当前频道：1910+ <br /><br> 每月企业频道：1910+  <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[提供指向自定义帮助页面的帮助链接](sensitivity-labels.md#what-label-policies-can-do)                       | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[带变量的动态标记](#dynamic-markings-with-variables)                                              | 当前频道：2010+ <br /><br> 每月企业频道：2010+ <br /><br> 半年企业频道：2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[现在分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[允许用户分配权限：权限 <br /> - 提示用户](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |当前频道：2004+ <br /><br> 每月企业频道：2004+ <br /><br> 半年企业频道：2008+ | 16.35+   | 审阅中   | 审阅中         | 审阅中                                                        |
+|[审核标签相关的用户活动](data-classification-activity-explorer.md)                      | 当前频道：2011+ <br /><br> 每月企业频道：2011+ <br /><br> 半年企业频道：2108+ | 16.43+ | 2.46+ | 16.0.13628+ | 是的 <sup>\*</sup>                                                        |
+|[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 当前频道：2101+ <br /><br> 每月企业频道：2101+ <br /><br> 半年企业频道：2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md)                                            
+|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用敏感信息类型                    | 当前频道：2009+ <br /><br> 每月企业频道：2009+ <br /><br> 半年企业频道：2102+ | 16.44+  | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用可训练分类器                    | 当前频道：2105+ <br /><br> 每月企业频道：2105+ <br /><br> 半年企业频道：2018+ | 审阅中 | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[支持对标记文档和加密](sensitivity-labels-coauthoring.md) 创作和自动保存 | 当前频道：2107+ <br /><br> 每月企业频道：2107+ <br /><br> 半年企业频道：正在审阅 |  16.51+ | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **脚注:**
 
-<sup>\*</sup>版本号适用于 **当前频道**。 新发布的功能通常会转到下一个每月企业频道，然后转到半年企业频道。 但是，情况并非总是如此，因为每个更新频道都有新功能的发布条件。 [了解更多](/deployoffice/overview-update-channels)
-<br /><br />
-<sup>\*\*</sup> 目前，不包括用于删除标签或降低分类级别的两端对齐文本
+<sup>\*</sup> 目前，不包括用于删除标签或降低分类级别的两端对齐文本
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook 中的敏感度标签功能
 
-列出的数字是每个功能所需的最低 Office 应用程序版本。
+列出的数字是每个功能所需的最低 Office 应用程序版本。 
 
-|功能                                                                                                        |Outlook for Windows<sup>\*</sup> |Outlook for Mac |iOS 版 Outlook |Android 版 Outlook |Outlook 网页版 |
-|------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
-|[手动应用、更改或删除标签](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
-|[应用默认标签](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
-|[需要两端对齐来更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
-|[提供指向自定义帮助页面的帮助链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
-|[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
-|[带变量的动态标记](#dynamic-markings-with-variables)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
-|[现在分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
-|[允许用户分配权限： <br /> - 不转发](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
-|[允许用户分配权限： <br /> - 仅加密](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ <sup>\*\*</sup> | 4.2112.0+  | 4.2112.0+ | 是 |
-|[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*\*</sup>                    | 4.2111+            | 4.2111+                | 是                |
-|[审核标签相关的用户活动](data-classification-activity-explorer.md) | 2011+ | 16.51+ <sup>\*\*</sup> | 4.2126+ | 4.2126+ | 是 |
-|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用敏感信息类型                    | 2009+                      | 16.44+ <sup>\*\*</sup>                    | 审阅中           | 审阅中               | 是 |
-|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用可训练分类器                    | 2009+                      | 审阅中                    | 审阅中           | 审阅中               | 是 |
-|[默认标签和强制标签的不同设置](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43+ <sup>\*\*</sup>                   | 4.2111+           | 4.2111+               | 是 |
+> [!NOTE]
+> 对于 Windows 和半年企业频道，支持的最低版本号可能尚未发布。 [了解详细信息](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+
+|功能 |Outlook for Windows |Outlook for Mac |iOS 版 Outlook |Android 版 Outlook |Outlook 网页版 |
+|-----------|-------------------:|----------------|---------------|-------------------|-------------------|
+|[手动应用、更改或删除标签](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[应用默认标签](sensitivity-labels.md#what-label-policies-can-do)                                         | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[需要两端对齐来更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[提供指向自定义帮助页面的帮助链接](sensitivity-labels.md#what-label-policies-can-do)                       | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[带变量的动态标记](#dynamic-markings-with-variables)                                              | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[现在分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[允许用户分配权限： <br /> - 不转发](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[允许用户分配权限： <br /> - 仅加密](encryption-sensitivity-labels.md#let-users-assign-permissions)  | 当前频道：2011+ <br /><br> 每月企业频道：2011+ <br /><br> 半年企业频道：2108+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | 是 |
+|[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 当前频道：2101+ <br /><br> 每月企业频道：2101+ <br /><br> 半年企业频道：2108+ | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | 是                |
+|[审核标签相关的用户活动](data-classification-activity-explorer.md) | 当前频道：2111+ <br /><br> 每月企业频道：2011+ <br /><br> 半年企业频道：正在审阅 | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | 是 |
+|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用敏感信息类型                    | 当前频道：2009+ <br /><br> 每月企业频道：2009+ <br /><br> 半年企业频道：2102+ | 16.44+ <sup>\*</sup>                    | 审阅中           | 审阅中               | 是 |
+|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用可训练分类器                    | 当前频道：2105+ <br /><br> 每月企业频道：2105+ <br /><br> 半年企业频道：2108+ | 审阅中                    | 审阅中           | 审阅中               | 是 |
+|[默认标签和强制标签的不同设置](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 当前频道：2105+ <br /><br> 每月企业频道：2105+ <br /><br> 半年企业频道：2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | 是 |
 |
 
 **Footnotes:**
 
-<sup>\*</sup>版本号适用于 **当前频道**。 新发布的功能通常会转到下一个每月企业频道，然后转到半年企业频道。 但是，情况并非总是如此，因为每个更新频道都有新功能的发布条件。 [了解更多](/deployoffice/overview-update-channels)
-<br /><br />
-<sup>\*\*</sup> 需要新的 [Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
+<sup>\*</sup> 需要新的 [Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 内置标签客户端和其他标签解决方案
