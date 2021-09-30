@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解Microsoft 365哪个订阅适合你的组织。
-ms.openlocfilehash: 2c269ff7dc620da0c638f2c82a836ae9b0406780
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4c1bd7ac67cd44baa8317295ade0e5525764b523
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200742"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011400"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>选择Microsoft 365订阅
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfzL9?autoplay=false]
 
-选择正确的Microsoft 365订阅是使服务获得最大功能的关键。 下面&#39;如何比较选项并选择适合&#39;适合你的业务的计划。
+选择正确的Microsoft 365订阅是使服务获得最大功能的关键。 下面&#39;比较选项并选择适合&#39;的计划。
 
 ## <a name="try-it"></a>试一试！
 
@@ -47,7 +47,7 @@ ms.locfileid: "59200742"
 | 服务区域 | 功能 | Microsoft 365 商业标准版 | Microsoft 365 商业高级版 | Office 365 企业版 E3 |
 | --- | --- | --- | --- | --- |
 | **可用的许可证** | 最大用户数 | 300 | 300 | 无限制 |
-| **Office 应用** | 在 Office多达 5 台电脑/Mac 上安装 (Word、Excel、PowerPoint、OneNote、Access) 、Office Online 的最多 5 台电脑/Mac | 商业版 | 商业版 | ProPlus |
+| **Office 应用** | 在最多 5 台电脑/Mac 上安装 (Word、Excel、PowerPoint、OneNote、Access) 、Office Online 上的 Office。 | 商业版 | 商业版 | ProPlus |
 | **电子邮件 &amp; 日历** | Outlook、Exchange Online | 50 GB | 50 GB | 100 GB |
 | **团队合作中心** | 基于聊天的工作区、联机会议等Microsoft Teams | 是 | 是 | 是 |
 | **文件存储** | OneDrive for Business | 每个用户 1 TB | 每个用户 1 TB | 无限制 |
@@ -64,12 +64,12 @@ ms.locfileid: "59200742"
 | **信息保护** | Office 365数据丢失防护 | 否 | 是 | 是 |
  | Azure 信息保护计划 1，BitLocker 强制 | | 否 | 是 | 否 |
 | **本地 CAL 权限** | ECAL 套件 (Exchange、SharePoint、Skype)  | 否 | 否 | 是 |
-| **合规性** | 无限制电子邮件存档\*\*\* | 否 | 是 | 是 |
+| **合规性** | 其他电子邮件存档\*\*\* | 否 | 是 | 是 |
 
-\*指示Microsoft 365 商业标准版计划 1 的功能，Office 365 企业版 E3 具有计划 2。
+\*指示Microsoft 365 商业标准版计划 1 的功能，并且Office 365 企业版 E3 具有计划 2。
 
 \*\* 在美国、英国、加拿大提供。
 
-\*\*\* 打开自动扩展时无限制存档。
+\*\*\* 启用自动扩展存档时的额外存档存储空间。
 
-若要Microsoft 365 商业高级版其他产品（包括其他Microsoft 365计划）进行比较，请参阅[licensing Microsoft 365 for small-medium-businesses](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)。
+若要Microsoft 365 商业高级版其他产品（包括其他Microsoft 365计划）进行比较，请参阅Microsoft 365[和中型企业的许可计划](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)。

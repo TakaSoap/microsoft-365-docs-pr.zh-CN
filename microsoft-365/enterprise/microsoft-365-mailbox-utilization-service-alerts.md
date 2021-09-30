@@ -17,30 +17,30 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: 使用邮箱使用率服务警报监视达到其邮箱配额的保留邮箱。
-ms.openlocfilehash: afae43f0c589d6c025fb0e1d20a7c5cf81eacbe2
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 32536cf8a034867ecb82e44487f34280a9b591ac
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480768"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011460"
 ---
-# <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>邮箱使用情况的服务警报Exchange Online监视
+# <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Exchange Online 监视中邮箱利用率的服务警报
 
-我们发布了新的 Exchange Online 服务警报，通知处于保留状态、有达到或超出配额的风险的邮箱。 这些服务警报提供组织中可能需要管理员干预的邮箱数量的可见性。
+我们发布了新的 Exchange Online 服务警报，通知您处于保留状态、有达到或超出配额的风险的邮箱。 这些服务警报提供组织中可能需要管理员干预的邮箱数量的可见性。
 
 这些服务警报显示在Microsoft 365 管理中心。 若要查看这些服务警报，请转到运行状况服务  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**运行状况**</a>Exchange Online  >  然后单击"**活动问题"** 选项卡。下面是邮箱利用率服务警报的示例。
 
-![邮箱利用率服务警报](../media/MailboxUtilizationServiceAlert.png)
+:::image type="content" alt-text="邮箱利用率服务警报。" source="../media/MailboxUtilizationServiceAlert.png" lightbox="../media/MailboxUtilizationServiceAlert.png":::
 
-若要显示即将达到存储配额的邮箱列表 (邮箱使用情况 *报告) ，* 请单击以下屏幕截图中的突出显示链接。 此链接显示在服务警报中。
+若要显示即将达到存储配额的邮箱列表 (邮箱使用情况报告) ，请单击以下屏幕截图中的突出显示链接。 此链接显示在服务警报中。
 
-![指向邮箱使用情况报告的链接](../media/LinkToMailboxUsageReport.png)
+:::image type="content" alt-text="链接到邮箱使用情况报告。" source="../media/LinkToMailboxUsageReport.png" lightbox="../media/LinkToMailboxUsageReport.png":::
 
 或者，指向邮箱使用情况报告的直接 URL 是 <https://admin.microsoft.com/Adminportal/Home?source=applauncher#/reportsUsage/MailboxUsage> 。
 
 ## <a name="what-do-these-service-alerts-indicate"></a>这些服务警报表示什么？
 
-邮箱使用率服务警报通知管理员即将达到邮箱存储配额的保留邮箱。 可置于邮箱上的保留类型包括诉讼保留、电子数据展示保留和 Microsoft 365 保留策略 (配置为保留数据) 。 当邮箱置于保留状态时， (或自动) 无法从邮箱中永久删除数据。 相反，管理员必须在 Exchange Online (中与数据保留) 相关的组织合规性策略内联配置 MRM 保留策略，才能将数据从用户的主邮箱移动到存档邮箱。 如果没有，且保留邮箱达到关键或警告状态，管理员必须启用存档邮箱并启用自动[](../compliance/enable-archive-mailboxes.md)扩展存档，然后确保[](../compliance/enable-unlimited-archiving.md)分配给将电子邮件从主邮箱移动到存档邮箱) 的邮箱 (的存档策略的保留期足够短。 如果未执行任何操作来解决邮箱利用率服务警报所标识的配额问题，则用户可能无法发送或接收电子邮件或会议邀请。
+邮箱使用率服务警报通知管理员有关即将达到邮箱存储配额的保留邮箱。 可置于邮箱上的保留类型包括诉讼保留、电子数据展示保留和 Microsoft 365 保留策略 (配置为保留) 。 当邮箱置于保留状态时， (或自动) 无法从邮箱中永久删除数据。 相反，管理员必须在 Exchange Online (中与数据保留) 相关的组织合规性策略内联配置 MRM 保留策略，才能将数据从用户的主邮箱移动到存档邮箱。 如果没有，且保留邮箱达到关键或警告状态，管理员必须启用存档邮箱并启用自动[](../compliance/enable-archive-mailboxes.md)扩展存档，然后确保[](../compliance/enable-autoexpanding-archiving.md)分配给将电子邮件从主邮箱移动到存档邮箱) 的邮箱 (的存档策略的保留期足够短。 如果未执行任何操作来解决邮箱利用率服务警报所标识的配额问题，则用户可能无法发送或接收电子邮件或会议邀请。
 
 邮箱使用率服务警报包含有关接近配额的邮箱数量的表。 以下各节介绍了这些表中的信息以及管理员为帮助确保这些邮箱不会超出其配额而可采取的操作。
 
@@ -56,7 +56,7 @@ ms.locfileid: "59480768"
 | 2             | 2             | 1                 | 0               |
 ||||
 
-管理员可针对这些邮箱采取的操作是启用存档邮箱，并确保 MRM 存档策略 (这是 Exchange Online 中将项目移动到存档邮箱) 的 MRM 保留策略，以便项目移动到存档邮箱。 有关详细信息，请参阅设置 [邮箱的存档和删除策略](../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)。
+管理员可针对这些邮箱执行的操作是启用存档邮箱，并确保将 MRM 存档策略 (（这是 Exchange Online 中用于将项目移动到存档邮箱) 的 MRM 保留策略）应用于邮箱，以便项目移动到存档邮箱。 有关详细信息，请参阅设置 [邮箱的存档和删除策略](../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)。
 
 启用存档邮箱后，建议您考虑增加"可恢复的项目"文件夹的配额。 这有助于防止超过置于保留状态邮箱的"可恢复的项目"文件夹的配额。 有关详细信息，请参阅[增加置于保留状态的邮箱可恢复项目的配额](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)。
 
@@ -69,7 +69,7 @@ ms.locfileid: "59480768"
 | 1             | 1             | 6                  | 0               |
 ||||
 
-管理员可以为这些邮箱执行的操作是增加"可恢复的项目"文件夹的配额。 有关详细信息，请参阅[增加置于保留状态的邮箱可恢复项目的配额](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)。
+管理员可以为这些邮箱采取的操作是增加"可恢复的项目"文件夹的配额。 有关详细信息，请参阅[增加置于保留状态的邮箱可恢复项目的配额](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)。
 
 管理员还应确保将项目移动到存档邮箱的 MRM 存档策略也应用于邮箱，并且存档策略的保留期足够短，以便项目在移动到存档之前不会在主邮箱中保留太长时间。
 
@@ -99,11 +99,11 @@ ms.locfileid: "59480768"
    Get-RetentionPolicy <GUID> | FL
    ```
 
-   **Name** 属性的值是管理中心中"保留策略"页上显示的保留Exchange的名称。 
+   **Name** 属性的值是保留策略的名称，显示在管理中心的"保留策略"Exchange页上。 
 
 - **MailboxType：** 指定策略分配到的邮箱类型。 值包括 *没有* (存档邮箱的主邮箱) *或 PrimaryWithArchive* (存档邮箱) 。 如果此列中的值为 *Primary*，应为邮箱启用存档 ("邮箱"列指示分配了策略) 邮箱数。 否则，存档策略或个人存档标记将不起作用，因为没有要将项目移动到的存档。
 
-- **HasMoveDumpsterToArchiveTag**：指示保留策略包含保留标记，用于将"可恢复的项目"文件夹 (（也称为"垃圾 *站") ）* 中的项目移动到存档中的"可恢复的项目"文件夹。 此类型的保留标记由管理员设置。如果"可恢复的项目"标记的保留期太长，则缩短保留期应该有助于防止邮箱接近"可恢复邮件"文件夹的配额。 例如，如果将保留期设置为 30 天，那么将保留期减少为 3 天或 5 天可能会有所帮助。  有关详细信息，请参阅[增加置于保留状态的邮箱可恢复项目的配额](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)。
+- **HasMoveDumpsterToArchiveTag**：指示保留策略包含保留标记，用于将"可恢复的项目"文件夹 (（也称为"垃圾站") ）中的项目移动到存档中的"可恢复的项目"文件夹。 此类型的保留标记由管理员设置。如果"可恢复的项目"标记的保留期太长，则缩短保留期应该有助于防止邮箱接近"可恢复邮件"文件夹的配额。 例如，如果将保留期设置为 30 天，那么将保留期减少为 3 天或 5 天可能会有所帮助。  有关详细信息，请参阅[增加置于保留状态的邮箱可恢复项目的配额](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)。
 
 - **HasMovePrimaryToArchiveTag**：指示是否有默认的"移动到存档"保留标记 (也称为保留策略中包含的) 策略标记。  在这种情况下，邮件会从主邮箱中的常规文件夹移动到存档邮箱。 此类型的保留标记由管理员设置。同样，如果此标记的保留期太长，则用户可能遇到持续达到其主邮箱的配额的问题。 缩短存档策略的保留期有助于解决此问题。
 

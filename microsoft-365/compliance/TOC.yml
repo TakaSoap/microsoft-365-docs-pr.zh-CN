@@ -84,6 +84,14 @@
           href: information-barriers-edit-segments-policies.md
         - name: 信息屏障属性
           href: information-barriers-attributes.md
+        - name: 信息屏障和 Microsoft 365 服务
+          items:
+            - name: Microsoft Teams 和信息屏障
+              href: /microsoftteams/information-barriers-in-teams?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+            - name: OneDrive 和信息屏障
+              href: /onedrive/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+            - name: SharePoint 和信息屏障
+              href: /sharepoint/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
     - name: 特权访问管理
       items:
         - name: 概述
@@ -545,10 +553,10 @@
       items:
         - name: 启用存档邮箱
           href: enable-archive-mailboxes.md
-        - name: 无限制存档概述
-          href: unlimited-archiving.md
-        - name: 启用无限制存档
-          href: enable-unlimited-archiving.md
+        - name: 自动扩展存档概述
+          href: autoexpanding-archiving.md
+        - name: 启用自动扩展存档
+          href: enable-autoexpanding-archiving.md
         - name: 设置邮箱的存档和删除策略
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: 管理非活动邮箱

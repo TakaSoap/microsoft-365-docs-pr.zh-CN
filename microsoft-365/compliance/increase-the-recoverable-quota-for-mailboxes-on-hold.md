@@ -16,40 +16,40 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 启用存档邮箱并启用自动扩展存档，以增加邮箱中邮箱的"可恢复的项目"文件夹Microsoft 365。
-ms.openlocfilehash: e46575fcf4335b7429db2370012e44957fb07db3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 32ebebfbf7255e965c18585755a85f07e9bf75a1
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169632"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011280"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>为置于保留状态的邮箱增加可恢复项目的配额
 
 自动Exchange新邮箱的默认保留策略（名为"*默认 MR Exchange Online M* 策略）"包含名为"可恢复的项目 14 天移动到存档"的保留标记。 此保留标记在项目的 14 天保留期到期后，将项目从用户主邮箱中的"可恢复的项目"文件夹移动到用户存档邮箱中的"可恢复的项目"文件夹。 为此，必须启用用户的存档邮箱。 如果未启用存档邮箱，则不执行任何操作，这意味着保留邮箱的"可恢复的项目"文件夹中的项目在 14 天保留期到期后不会移动到存档邮箱。 由于不会从保留邮箱中删除任何内容，因此可能会超出"可恢复的项目"文件夹的存储配额，尤其是在用户的存档邮箱未启用的情况下。
 
-为了帮助降低超出此限制的可能性，当邮箱处于保留状态时，"可恢复的项目"文件夹的存储配额会自动从 30 GB 增加到 100 GB Exchange Online。 如果存档邮箱已启用，则存档邮箱中"可恢复的项目"文件夹的存储配额也将从 30 GB 增加到 100 GB。 如果启用用户存档中的自动扩展存档Exchange Online，则用户存档中"可恢复的项目"文件夹的存储配额将不受限制。
+为帮助降低超出此限制的可能性，当邮箱处于保留状态时，"可恢复的项目"文件夹的存储配额会自动从 30 GB 增加到 100 GB Exchange Online。 如果存档邮箱已启用，则存档邮箱中"可恢复的项目"文件夹的存储配额也将从 30 GB 增加到 100 GB。 如果启用用户存档中的自动扩展存档Exchange Online，则用户存档中"可恢复的项目"文件夹的存储配额为 1.5 TB。
 
  下表总结了"可恢复的项目"文件夹的存储配额。
 
 |**"可恢复的项目"文件夹的位置**|**邮箱未置于保留状态**|**保留的邮箱**|
 |:-----|:-----|:-----|
 |主邮箱  <br/> |30 GB  <br/> |100 GB  <br/> |
-|存档邮箱<sup>\*</sup> <br/> |无限制  <br/> |无限制  <br/> |
-|**"可恢复的项目"文件夹的总存储配额** <br/> |无限制  <br/> |无限制  <br/> |
+|存档邮箱<sup>\*</sup> <br/> |1.5 TB  <br/> |1.5 TB  <br/> |
+|**"可恢复的项目"文件夹的总存储配额** <br/> |1.5 TB  <br/> |1.5 TB  <br/> |
 
 > [!NOTE]
-> <sup>\*</sup>对于拥有存档邮箱许可证的用户，存档邮箱的初始存储配额Exchange Online（计划 2） GB。 但是，当为保留邮箱启用自动扩展存档时，存档邮箱和"可恢复的项目"文件夹的存储配额将增加到 110 GB。 如有必要，将设置额外的存档存储空间，这将产生无限数量的存档存储空间。 有关自动扩展存档的信息，请参阅 overview [of unlimited archiving in Office 365](unlimited-archiving.md)。
+> <sup>\*</sup>存档邮箱的初始存储配额是 100 GB（对于拥有 Exchange Online（计划 2） 许可证的用户）。 但是，当为保留邮箱启用自动扩展存档时，存档邮箱和"可恢复的项目"文件夹的存储配额将增加到 110 GB。 如有必要，将预配高达 1.5 TB 的额外存档存储空间。 有关自动扩展存档的信息，请参阅 [自动扩展存档概述](autoexpanding-archiving.md)。
 
 当置于保留状态的邮箱的主邮箱"可恢复的项目"文件夹的存储配额接近其限额时，可以执行以下操作：
 
-- **启用存档邮箱并启用自动扩展存档。** 只需启用存档邮箱，然后启用 ExchangeOnline 中的自动扩展存档功能，就可以为“可恢复的项目”文件夹开启无限制存储容量。 这导致主邮箱中的"可恢复的项目"文件夹达到 110 GB，并且用户存档中的"可恢复的项目"文件夹的存储容量不受限制。 请参阅如何[：启用存档邮箱和](enable-archive-mailboxes.md)[启用无限制存档](enable-unlimited-archiving.md)。
+- **启用存档邮箱并启用自动扩展存档。** 只需启用存档邮箱，然后打开存档邮箱中的自动扩展存档功能，就可以为"可恢复的项目"文件夹启用Exchange Online。 这导致主邮箱中的"可恢复的项目"文件夹为 110 GB，用户存档中的"可恢复的项目"文件夹的存储容量高达 1.5 TB。 请参阅如何[：启用存档邮箱和](enable-archive-mailboxes.md)[启用自动扩展存档](enable-autoexpanding-archiving.md)。
 
     > [!NOTE]
-    > 为接近超出"可恢复的项目"文件夹存储配额的邮箱启用存档后，您可能需要运行托管文件夹助理以手动触发助理处理邮箱，以便过期项目移动到存档邮箱中的"可恢复的项目"文件夹。 有关[说明，请参阅步骤 4。](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) 注意，用户邮箱中的其他项目可能会移至新的存档邮箱。 请考虑告知用户启用存档邮箱后可能会发生这种情况。
+    > 为即将超过"可恢复的项目"文件夹存储配额的邮箱启用存档后，您可能需要运行托管文件夹助理以手动触发助理处理邮箱，以便过期项目移动到存档邮箱中的"可恢复的项目"文件夹。 有关[说明，请参阅步骤 4。](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) 注意，用户邮箱中的其他项目可能会移至新的存档邮箱。 请考虑告知用户启用存档邮箱后可能会发生这种情况。
 
 - **为保留Exchange邮箱创建自定义保留策略。** 除了为诉讼保留或 In-Place 保留的邮箱启用存档邮箱和自动扩展存档外，您可能还需要为保留邮箱创建自定义 Exchange 保留策略。 这使你可以将保留策略应用于保留的邮箱，该策略不同于应用于未置于保留状态邮箱的默认 MRM 策略，并允许您应用为保留邮箱设计的保留标记。 其中包括为"可恢复的项目"文件夹创建新的保留标记。
 
-本主题的其余部分介绍了为保留邮箱创建自定义邮箱保留Exchange策略的分步过程。
+本主题的其余部分介绍了为保留邮箱创建自定义保留Exchange策略的分步过程。
 
 [步骤 1：为"可恢复的项目"文件夹创建自定义保留标记](#step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder)
 
@@ -61,7 +61,7 @@ ms.locfileid: "59169632"
 
 ## <a name="step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder"></a>步骤 1：为"可恢复的项目"文件夹创建自定义保留标记
 
-第一步是为"可恢复的项目"文件夹 (保留策略标记或 RPT) 保留标记。 如前所述，此 RPT 将项目从用户主邮箱中的"可恢复的项目"文件夹移动到用户存档邮箱中的"可恢复的项目"文件夹。 您必须使用 PowerShell 为"可恢复的项目"文件夹创建 RPT。 不能使用 Exchange 管理中心 (EAC)。
+第一步是为"可恢复 ("文件夹创建自定义保留标记) 保留标记或 RPT 标记。 如前所述，此 RPT 将项目从用户主邮箱中的"可恢复的项目"文件夹移动到用户存档邮箱中的"可恢复的项目"文件夹。 您必须使用 PowerShell 为"可恢复的项目"文件夹创建 RPT。 不能使用 Exchange 管理中心 (EAC)。
 
 1. [使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
 
@@ -159,7 +159,7 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
 
 ### <a name="use-exchange-online-powershell-to-apply-the-new-retention-policy"></a>使用 Exchange Online PowerShell 应用新的保留策略
 
-可以使用 PowerShell Exchange Online单个邮箱应用新的保留策略。 但是 PowerShell 的真正功能是，您可以使用它快速识别组织中置于诉讼保留或 In-Place 保留状态的所有邮箱，然后在单个命令中将新的保留策略应用于所有保留邮箱。 下面是使用 PowerShell 将保留Exchange应用于一个或多个邮箱的一些示例。 所有示例都应用在步骤 2 中创建的保留策略。
+可以使用 PowerShell Exchange Online单个邮箱应用新的保留策略。 但 PowerShell 的真正功能是，您可以使用它快速识别组织中置于诉讼保留或 In-Place 保留状态的所有邮箱，然后在单个命令中将新的保留策略应用于所有保留邮箱。 下面是使用 PowerShell 将保留Exchange应用于一个或多个邮箱的一些示例。 所有示例都应用在步骤 2 中创建的保留策略。
 
 本示例将新的保留策略应用于 Pilar Pinilla 的邮箱。
 
@@ -189,7 +189,7 @@ $InPlaceHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for M
 
 您可以使用 **Get-Mailbox** cmdlet 验证是否应用了新的保留策略。
 
-下面是一些示例，用于验证之前示例中的命令是否将"保留邮箱的 MRM 策略"保留策略应用于诉讼保留的邮箱和置于保留In-Place邮箱。
+下面是一些示例，用于验证之前示例中的命令是否将"保留邮箱的 MRM 策略"保留策略应用于诉讼保留邮箱和保留In-Place邮箱。
 
 ```powershell
 Get-Mailbox "Pilar Pinilla" | Select RetentionPolicy
@@ -205,7 +205,7 @@ Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | F
 
 ## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a> (可选) 步骤 4：运行托管文件夹助理以应用新的保留设置
 
-将新的 Exchange 保留策略应用于保留邮箱后，托管文件夹助理最多可能需要 Exchange Online 7 天时间才能使用新保留策略中的设置处理这些邮箱。 无需等待托管文件夹助理运行，您可以使用 **Start-ManagedFolderAssistant** cmdlet 手动触发助理，以处理应用了新保留策略的邮箱。
+将新的 Exchange 保留策略应用于保留邮箱后，托管文件夹助理最多可能需要 Exchange Online 7 天的时间才能使用新保留策略中的设置处理这些邮箱。 无需等待托管文件夹助理运行，您可以使用 **Start-ManagedFolderAssistant** cmdlet 手动触发助理，以处理应用了新保留策略的邮箱。
 
 运行以下命令以启动 Pilar Pinilla 邮箱的托管文件夹助理。
 
@@ -225,6 +225,6 @@ $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 
 ## <a name="more-information"></a>更多信息
 
-- 启用用户的存档邮箱后，请考虑告知用户其邮箱中的其他项目 ("可恢复的项目"文件夹中的项目) 可能会移动到存档邮箱。 这是因为分配给 Exchange Online 邮箱的默认 MRM 策略包含名为"默认 2 年"的保留标记 (移动到存档) ，该标记在邮件传递到邮箱或由用户创建项目两年后将项目移动到存档邮箱。 有关详细信息，请参阅默认[保留策略Exchange Online](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
+- 启用用户的存档邮箱后，请考虑告知用户，其邮箱中的其他项目 ("可恢复的项目"文件夹中的项目) 可能会移动到存档邮箱。 这是因为分配给 Exchange Online 邮箱的默认 MRM 策略包含名为"默认 2 年"的保留标记 (移动到存档) ，该标记在邮件传递到邮箱或由用户创建项目两年后将项目移动到存档邮箱。 有关详细信息，请参阅默认[保留策略Exchange Online](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
 
-- 启用用户的存档邮箱后，您还可以告诉用户他们可以恢复其存档邮箱中"可恢复的项目"文件夹中的已删除项目。 他们可以通过选择存档邮箱Outlook"已删除邮件"文件夹，然后单击"开始"选项卡上的"从服务器恢复已删除邮件"，来在邮箱 **中** 执行这一操作。有关恢复已删除项目的信息，请参阅 Recover [deleted items in Outlook for Windows](https://go.microsoft.com/fwlink/p/?LinkId=624829)。
+- 启用用户的存档邮箱后，您还可以告诉用户他们可以恢复其存档邮箱中"可恢复的项目"文件夹中的已删除项目。 他们可以通过选择存档邮箱Outlook"已删除邮件"文件夹，然后单击"开始"选项卡上的"从服务器恢复已删除邮件"，来在邮件 **中执行这** 一操作。有关恢复已删除项目的信息，请参阅 Recover [deleted items in Outlook for Windows](https://go.microsoft.com/fwlink/p/?LinkId=624829)。

@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - MSStore_Link
@@ -26,17 +27,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 使用你的 Microsoft 365 管理员帐户登录，以重置 Microsoft 365 for business 订阅中的用户的密码。
-ms.openlocfilehash: 50b964826b59287405c86a7918609535edb87b4f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: 使用 Microsoft 365 管理员帐户登录，重置 Microsoft 365 商业版订阅中的用户密码。
+ms.openlocfilehash: 03081e4a0465206ae66cc8201411206932d15e8c
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775320"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011198"
 ---
 # <a name="reset-passwords"></a>重置密码
 
-本文介绍如何在拥有适用于企业订阅的 Microsoft 365重置密码。
+本文介绍了当你拥有适用于企业订阅的订阅时，如何为自己和用户Microsoft 365密码。
+
+> [!NOTE]
+> 您还可以为用户设置自助服务密码重置，以便他们可以重置自己的密码。 若要了解更多信息，请参阅 [允许用户重置自己的密码](let-users-reset-passwords.md)。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -64,11 +68,11 @@ ms.locfileid: "59775320"
 
 ## <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
-强烈建议设置自助服务密码重置。通过此方式，无需为用户手动重置密码。若要了解操作方式，请参阅[允许用户在 Office 365 中重置其密码](let-users-reset-passwords.md)。
+强烈建议设置自助服务密码重置。 通过此方式，无需为用户手动重置密码。 减少工作量！ 若要了解操作方式，请参阅[允许用户在 Office 365 中重置其密码](let-users-reset-passwords.md)。
 
 ## <a name="reset-my-admin-password"></a>重置我的管理员密码
 
-如果你忘记了密码，但能够登录密码，请使用Microsoft 365，例如，密码保存在浏览器中：
+如果忘记了密码，但能够登录密码，请使用Microsoft 365，例如，密码保存在浏览器中：
 
 1. Select your name (icon) in upper right corner > **My Account**  >  **Personal Info**.
 
@@ -91,7 +95,7 @@ ms.locfileid: "59775320"
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同时重置组织中每个人的所有业务密码
 <a name="bkmk_forgot"> </a>
 
-这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分有关批量重置密码 (一次最多 40 个用户重置) 。
+这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分"批量重置密码 (一次最多 40 个用户重置) 。
   
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
@@ -116,7 +120,7 @@ ms.locfileid: "59775320"
 
 请参阅这篇由 Microsoft MVP Vasil Michev 撰写的出色博客文章：[为 Office 365 中的所有用户强制更改密码](https://go.microsoft.com/fwlink/?linkid=853693)。
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>我并没有适用于Microsoft 365订阅
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>我并没有适用于Microsoft 365订阅的订阅
 
 请尝试阅读此文：[我忘记了 Office 所用的帐户用户名或密码。](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   

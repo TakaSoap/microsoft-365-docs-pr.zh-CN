@@ -19,12 +19,12 @@ description: 管理员可以了解如何查找和使用电子邮件门户中提�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6486059702875e4bf318d04da9be0249dc6cb7df
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 9f3861cc57276cec6dcd09ba843ede35ab9dd583
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942137"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011484"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在电子邮件门户中查看Microsoft 365 Defender报告
 
@@ -160,7 +160,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"邮件流状态摘要**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/mailflowStatusReport> 。
 
-!["电子邮件和协作报告"页面上的邮件流&摘要小组件。](../../media/mail-flow-status-report-widget.png)
+!["电子邮件和协作报告"页上的"邮件流&摘要"小组件。](../../media/mail-flow-status-report-widget.png)
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>邮件流状态报告的类型视图
 
@@ -188,7 +188,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 通过单击"筛选器"，并选择出现的一个或多个以下值，可以筛选图表和详细信息表：
 
-- **DATE (UTC)**： **Start date** and End **date**.
+- **DATE (UTC)**： **Start date** and **End date**.
 - **邮件方向**： **入站** 和 **出站**。
 - **类型**：
   - **良好的邮件**
@@ -198,7 +198,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
   - **规则邮件**
   - **钓鱼电子邮件**
 
-配置完筛选器后，请单击"应用"、"**取消**"或"**清除筛选器"。**
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
 返回到主报告页面，如果单击"选择类别 **"** 了解更多详细信息，您可以从以下值中选择：
 
@@ -220,7 +220,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 通过单击"筛选器"，并选择出现的一个或多个以下值，可以筛选图表和详细信息表：
 
-- **DATE (UTC)**： **Start date** and End **date**.
+- **DATE (UTC)**： **Start date** and **End date**.
 - **邮件方向**： **入站** 和 **出站**。
 - **类型**：
   - **良好的邮件**
@@ -230,7 +230,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
   - **规则邮件**
   - **钓鱼电子邮件**
 
-配置完筛选器后，请单击"应用"、"**取消**"或"**清除筛选器"。**
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
 返回到主报告页面，如果单击"选择类别 **"** 了解更多详细信息，您可以从以下值中选择：
 
@@ -243,7 +243,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 ### <a name="mailflow-view-for-the-mailflow-status-report"></a>邮件流状态报告的邮件流视图
 
-邮件 **流** 视图显示 Microsoft 的电子邮件威胁防护功能如何筛选组织中传入和传出的电子邮件。 此视图使用称为 _Sankey_ 图表 (的水平流程图) 提供有关电子邮件总数以及配置的威胁防护功能（包括边缘保护、反恶意软件、反网络钓鱼、反垃圾邮件和反欺骗）对此计数有何影响的详细信息。
+邮件 **流** 视图显示 Microsoft 的电子邮件威胁防护功能如何筛选组织中传入和传出的电子邮件。 此视图使用水平流程图 (称为 _Sankey_ 图表) ，提供有关电子邮件总数以及配置的威胁防护功能（包括边缘保护、反恶意软件、反网络钓鱼、反垃圾邮件和反欺骗）对此计数有何影响的详细信息。
 
 ![邮件流状态报告中的邮件流视图。](../../media/mail-flow-status-report-mailflow-view.png)
 
@@ -293,7 +293,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **Date (UTC)** **Start date** and **End date**.
 - **方向**：**出站和****入站**。
 
-配置完筛选器后，请单击"应用"、"**取消**"或"**清除筛选器"。**
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
 返回到主报告页面，可以单击"显示趋势"，在出现的"邮件流趋势"飞出 **内容中** 查看趋势图。
 
@@ -409,13 +409,13 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 ## <a name="threat-protection-status-report"></a>威胁防护状态报告
 
-威胁 **防护状态报告** 在 EOP 和 Defender for Office 365;但是，报告包含不同的数据。 例如，EOP 客户可以查看有关电子邮件中检测到的恶意软件的信息，但不能查看有关 保险箱 Attachments 针对 SharePoint、OneDrive 和 Microsoft Teams 检测到的恶意[Microsoft Teams。](mdo-for-spo-odb-and-teams.md)
+威胁 **防护状态报告** 在 EOP 和 Defender for Office 365;但是，报告包含不同的数据。 例如，EOP 客户可以查看有关电子邮件中检测到的恶意软件的信息，但不能查看有关 SharePoint、OneDrive 和 Microsoft Teams 的 保险箱 附件检测到的恶意[文件的信息](mdo-for-spo-odb-and-teams.md)。
 
 该报告提供包含恶意内容的电子邮件（如反恶意软件引擎阻止的文件或网站地址 (URL) 、零时差自动清除[ (ZAP) ](zero-hour-auto-purge.md)和 Defender 等 Office 365 功能（如 保险箱[链接](safe-links.md)[、保险箱](safe-attachments.md)附件和防钓鱼策略中的模拟保护功能）的计数。 [](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 您可以使用此信息来确定趋势或确定组织策略是否需要调整。
 
 **注意**：如果邮件发送给五个收件人，则我们将邮件计为五个不同邮件，而不是一封邮件，了解这一点很重要。
 
-To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作** 报告"页上，找到 **"威胁防护状态**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开以下 URL 之一：
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"威胁防护状态**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开以下 URL 之一：
 
 - Defender for Office 365：<https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP： <https://security.microsoft.com/reports/TPSAggregateReport>
@@ -471,7 +471,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 在" **通过电子邮件查看数据" \>** 和"按检测技术查看图表细分 **"** 视图中，图表中显示了以下信息：
 
-- **URL 恶意信誉** <sup>\*</sup> ：来自 Defender 的恶意 URL 信誉Office 365客户的其他用户Microsoft 365触发。
+- **URL 恶意信誉** <sup>\*</sup> ：来自 Defender 的恶意 URL 信誉Office 365客户的其他Microsoft 365触发。
 - **高级筛选器**：基于机器学习的网络钓鱼信号。
 - **常规筛选器**：基于分析员规则的网络钓鱼信号。
 - **欺骗组织内部**：发件人正在尝试欺骗收件人域。
@@ -602,7 +602,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **主题**
 - **发件人**
 - **Recipients**
-- **Detection tecchnology**
+- **检测技术**
 - **传递状态**
 - **发件人 IP**
 - **Tags**
@@ -699,7 +699,7 @@ In the **View data by Email \> Phish，** **View data by Email \> Spam**， or *
 
 <sup>\*</sup>仅 defender for Office 365
 
-配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
+配置完筛选器后，请单击"应用"、"**取消**"或"**清除筛选器"。**
 
 在主报告页面上，创建 ![ 计划图标。](../../media/m365-cc-sc-create-icon.png) **[创建计划](#schedule-report)**， ![ 请求报告图标。](../../media/m365-cc-sc-download-icon.png) **[请求报告](#request-report)**，以及 ![ "导出"图标。](../../media/m365-cc-sc-download-icon.png) **["](#export-report)** 导出"按钮可用。
 
@@ -782,7 +782,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
 
 在 **"按内容恶意软件查看 \>** 数据"视图中，以下信息显示在 Microsoft Defender for Office 365图表中：
 
-- **反恶意软件引擎**：在 SharePoint、OneDrive 和 Microsoft Teams 中内置病毒检测 [检测到的恶意](virus-detection-in-spo.md)Microsoft 365。
+- **反恶意软件引擎**：在 SharePoint、OneDrive 和 Microsoft Teams 中通过内置病毒检测 [检测到的恶意](virus-detection-in-spo.md)Microsoft 365。
 - **文件爆炸**：附件检测到的恶意保险箱 [文件SharePoint、OneDrive和Microsoft Teams。](mdo-for-spo-odb-and-teams.md)
 
 在图表下面的详细信息表中，提供了以下信息：
@@ -900,7 +900,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
 
 <sup>\*</sup>仅 defender for Office 365
 
-配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
+配置完筛选器后，请单击"应用"、"**取消**"或"**清除筛选器"。**
 
 在主报告页面上，" ![ 导出"图标。](../../media/m365-cc-sc-download-icon.png) **["](#export-report)** 导出"按钮可用。
 
@@ -908,7 +908,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
 
 " **热门恶意软件** "报告显示 [EOP](anti-malware-protection.md)中的反恶意软件保护检测到的各种恶意软件。
 
-To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到"**热门恶意软件**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/TopMalware> 。
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"热门恶意软件**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/TopMalware> 。
 
 !["电子邮件和协作报告"页面上&恶意软件小组件。](../../media/top-malware-report-widget.png)
 
@@ -936,9 +936,9 @@ URL **保护报告** 仅在 Microsoft Defender for Office 365。 有关详细信
 
 用户 **报告的邮件** 报告显示有关用户使用报告邮件外接程序或报告网络钓鱼外接程序报告为垃圾邮件、网络钓鱼尝试或良好邮件 [的电子邮件的信息](enable-the-report-phish-add-in.md)。 [](enable-the-report-message-add-in.md)
 
-To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"用户报告的邮件**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/userSubmissionReport> 。 若要转到管理 [门户中的管理员Microsoft 365 Defender，请单击](admin-submission.md)**"转到提交"。**
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"用户报告的邮件**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/userSubmissionReport> 。 To go to [admin submissions in the Microsoft 365 Defender portal，](admin-submission.md)click **Go to Submissions**.
 
-!["电子邮件和协作报告"页面上的用户&小组件。](../../media/user-reported-messages-widget.png)
+!["电子邮件和协作报告"页上&"用户报告的邮件"小组件。](../../media/user-reported-messages-widget.png)
 
 通过单击"筛选器"，并选择出现的一个或多个以下值，可以筛选图表和详细信息表：
 
@@ -954,7 +954,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
   - **垃圾邮件**
 - **网络钓鱼模拟**： **是** 或 **否**
 
-配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
+配置完筛选器后，请单击"应用"、"**取消**"或"**清除筛选器"。**
 
 若要对条目进行分组 **，请单击"** 分组"，然后从下拉列表中选择下列值之一：
 
@@ -994,11 +994,11 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **组织管理**
 - **安全管理员**
 - **安全信息读取者**
-- **全局读者**
+- **全局读取者**
 
 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
-**注意**：向 Microsoft 365 管理中心 中的相应 Azure Active Directory 角色添加用户会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+**注意**：将用户添加到 Azure Active Directory 中的相应 Microsoft 365 管理中心 可为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告未显示数据，该做什么？
 
@@ -1029,7 +1029,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 若要管理已创建的计划报告，请执行以下步骤：
 
-1. 在 Microsoft 365 Defender 门户中，转到"报告 **"展开"** 电子邮件 \> **&"选择** \> "管理 **计划"。**
+1. 在Microsoft 365 Defender门户中，转到"报告 **"展开"** 电子邮件 \> **&选择"管理** \> **计划"。**
 
    若要直接转到"管理 **计划"页** ，请使用 <https://security.microsoft.com/ManageSubscription> 。
 
@@ -1080,7 +1080,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 ### <a name="download-reports"></a>下载报表
 
-1. 在 Microsoft 365 Defender 门户中，转到"报告"展开"电子邮件 \> **&协作"** \> 选择"报告 **"进行下载**。
+1. 在 Microsoft 365 Defender 门户中，转到"报告 **"展开"** 电子邮件 \> **&选择** \> "报告 **"进行下载**。
 
    若要直接转到" **报告"下载页面，** 请使用 <https://security.microsoft.com/ReportsForDownload> 。
 
@@ -1095,7 +1095,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 ## <a name="export-report"></a>导出报告
 
-1. 在主报告页上，单击"导出 ![ 图标"。](../../media/m365-cc-sc-download-icon.png) **如果该** (可用，则导出) 。
+1. 在主报告页上，单击"导出 ![ 图标"。](../../media/m365-cc-sc-download-icon.png) **如果** (链接可用，则导出) 。
 
 如果单击主报告页，将显示"导出 **条件** "飞出，您可以在其中配置以下设置：
 

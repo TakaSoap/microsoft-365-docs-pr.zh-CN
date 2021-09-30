@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 面向管理员：了解如何使用网络上传将多个 PST 文件批量导入 Microsoft 365 中的用户邮箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 625d9e37246fa6c4e24754be2e3bc830740124a2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fbe16615c4497babee9c7d1ce905b8cd4d2c23cd
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196848"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011472"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用网络上传将组织的 PST 文件导入到 Microsoft 365
 
@@ -316,7 +316,7 @@ Azure 存储资源管理器独立应用程序通常是可用的。 可以使用�
 
   - 它允许你将 Microsoft 365 合规性功能应用于你导入的 PST 文件中的数据，从而帮助满足你组织的合规性需求。这包括：
 
-  - 启用[存档邮箱](enable-archive-mailboxes.md)和[自动展开存档](enable-unlimited-archiving.md)，从而向用户提供额外的邮箱存储空间来存储你导入的数据。
+  - 启用[存档邮箱](enable-archive-mailboxes.md)和[自动展开存档](enable-autoexpanding-archiving.md)，从而向用户提供额外的邮箱存储空间来存储你导入的数据。
 
   - 使邮箱处于“[诉讼保留](./create-a-litigation-hold.md)”状态以保留导入的数据。
 
