@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 988b1177932a67f10f79651cc0190fd665de4c17
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e2b6d88f7cd443c7fb093d791a7904baafeb9c1d
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162243"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010125"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>规划支持端软件和硬件版本的危险和漏洞管理
 
@@ -41,7 +41,7 @@ ms.locfileid: "59162243"
 
 安全与 IT 管理员必须协同工作，并确保组织的软件清单配置为获得最佳结果、合规性和正常的网络生态系统。 他们应检查删除或替换已到达停止支持的应用的选项，并更新不再受支持的版本。 最好在支持日期结束之前 **创建** 和实施计划。
 
->[!NOTE]
+> [!NOTE]
 > 支持终止功能当前仅适用于Windows产品。
 
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>查找不再受支持的软件或软件版本

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5a3ea32227f64fbf00563f2b48f99b0a21e5510e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e1dc8c9cb2ad868c0ef8a1265150abc5f2d1d8b8
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196548"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009465"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -37,8 +37,7 @@ ms.locfileid: "59196548"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
-方法|返回类型 |说明
-:---|:---|:---
-[列出与用户相关的警报](get-user-related-alerts.md) | [警报](alerts.md)集合 |  列出与用户关联的所有 [警报](user.md)。
-[列出与用户相关的设备](get-user-related-machines.md) | [计算机](machine.md) 集合 | 列出用户登录的所有 [设备](user.md)。
+方法|返回类型|说明
+---|---|---
+[列出与用户相关的警报](get-user-related-alerts.md)|[警报](alerts.md)集合|列出与用户关联的所有 [警报](user.md)。
+[列出与用户相关的设备](get-user-related-machines.md)|[计算机](machine.md) 集合|列出用户登录的所有 [设备](user.md)。

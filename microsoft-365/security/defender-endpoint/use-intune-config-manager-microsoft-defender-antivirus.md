@@ -18,12 +18,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 112d4b8336456dd3668e3b1ad6abdd04788991ff
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: b2ab5052d51e966cc34fe6f1cfa292aa38f3be5a
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490831"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009597"
 ---
 # <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>使用Microsoft Endpoint Manager配置和管理Microsoft Defender 防病毒
 
@@ -34,7 +34,7 @@ ms.locfileid: "59490831"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-可以使用[Microsoft Endpoint Manager配置](/mem/endpoint-manager-overview)Microsoft Defender 防病毒扫描。 [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)和 Configuration [Manager](/mem/configmgr/core/understand/introduction)现在属于Endpoint Manager。  
+可以使用自定义[Microsoft Endpoint Manager](/mem/endpoint-manager-overview)配置Microsoft Defender 防病毒扫描。 [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)和 Configuration [Manager](/mem/configmgr/core/understand/introduction)现在属于Endpoint Manager。
 
 ## <a name="configure-microsoft-defender-antivirus-scans-in-endpoint-manager"></a>在Microsoft Defender 防病毒中配置Endpoint Manager
 
@@ -44,7 +44,7 @@ ms.locfileid: "59490831"
 
 3. 在 **"管理"** 下，**选择"防病毒"。**
 
-4. 选择你的Microsoft Defender 防病毒策略。 
+4. 选择你的Microsoft Defender 防病毒策略。
 
 5. 在“**管理**”下，选择“**属性**”。
 
@@ -54,10 +54,8 @@ ms.locfileid: "59490831"
 
 8. 选择 **"审阅 + 保存"**
 
-
 > [!TIP]
 > 需要帮助？ 请参阅[管理终结点安全Microsoft Intune。](/mem/intune/protect/endpoint-security)
-
 
 ## <a name="related-articles"></a>相关文章
 

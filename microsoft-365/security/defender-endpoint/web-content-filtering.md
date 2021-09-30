@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bbf230d7ae21bd694fb3568b51903d6fa6581ab9
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: a394fadc5728258208abe2e9de5e94f849dd921e
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988783"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009573"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -66,11 +66,11 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 ## <a name="turn-on-web-content-filtering"></a>打开 Web 内容筛选
 
-从左侧导航菜单中，选择"设置  >  **终结点**  >  **常规**  >  **高级功能"。** 向下滚动，直到您看到用于 Web 内容 **筛选的条目**。 将开关切换到 **开** 和 **保存首选项**。
+从左侧导航菜单中，选择"设置 \> **终结点** \> **常规** \> **高级功能"。** 向下滚动，直到您看到用于 Web 内容 **筛选的条目**。 将开关切换到 **开** 和 **保存首选项**。
 
 ### <a name="configure-web-content-filtering-policies"></a>配置 Web 内容筛选策略
 
-Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若要管理策略，请转到"设置"下 (终结点  >    >  **Web** 内容) 。 
+Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若要管理策略，请转到"设置"下 (终结点 \>  \> **Web** 内容) 。 
 
 可以部署策略来阻止以下任何父类别或子类别：
 
@@ -172,9 +172,10 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 5. 查看摘要并保存策略。 策略刷新可能需要 2 个小时才能应用到所选设备。
 
 > [!NOTE]
+>
 > - 无需在设备组上选择任何类别即可部署策略。 此操作将创建仅审核策略，以帮助你在创建阻止策略之前了解用户行为。
 > - 如果同时删除策略或更改设备组，这可能会导致策略部署延迟。
-> - 阻止"未分类"类别可能会导致意外和意外的结果。  
+> - 阻止"未分类"类别可能会导致意外和意外的结果。
 
 ## <a name="end-user-experience"></a>最终用户体验
 
@@ -186,29 +187,29 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 若要定义自定义指示器，请按照以下步骤操作：
 
-1. 在Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () ，转到设置终结点指示器  >    >    >  **URL/域**  >  **添加项"。**
+1. 在Microsoft 365 Defender门户 () ，转到设置终结点指示器 <https://security.microsoft.com>  \>  \>  \> **URL/域** \> **添加项"。**
 
 2. 输入网站的域。
 
-3. 将策略操作设置为 **"允许"。**  
+3. 将策略操作设置为 **"允许"。**
 
 ### <a name="dispute-categories"></a>争议类别
 
-如果遇到未正确分类的域，可以直接在门户中就类别进行争议。 
+如果遇到未正确分类的域，可以直接在门户中就类别进行争议。
 
-要争议域的类别，请导航 **到"报告** Web 保护 Web 内容  >    >  **筛选详细信息域**  >  **"。** 在"Web 内容筛选"报表的"域"选项卡上，你将在每个域旁边看到省略号。 将鼠标悬停在此省略号上，然后选择"**争议类别"。**
+要争议域的类别，请导航 **到"报告** Web 保护 Web 内容 \>  \> **筛选详细信息域** \> **"。** 在"Web 内容筛选"报表的"域"选项卡上，你将在每个域旁边看到省略号。 将鼠标悬停在此省略号上，然后选择"**争议类别"。**
 
 将打开一个面板，可在其中选择优先级并添加更多详细信息，如建议重新分类的类别。 完成表单后，选择"提交 **"。** Our team will review the request within one business day. 若要立即取消阻止，请创建自定义 [允许指示器](indicator-ip-domain.md)。
 
 ### <a name="url-category-lookup"></a>URL 类别查找
 
-若要确定网站的类别，可以使用终结点搜索 下Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) **URL**  >  **搜索功能**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
+若要确定网站的类别，可以使用终结点搜索 下 Microsoft 365 Defender 门户 () <https://security.microsoft.com> **URL** \> **搜索函数**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
 
 ![Web 内容筛选类别查找结果的图像。](../../media/web-content-filtering-category-lookup.png)
 
 ## <a name="web-content-filtering-cards-and-details"></a>Web 内容筛选卡和详细信息
 
-选择 **"**  >  **报告 Web 保护**"以查看包含有关 Web 内容筛选和 Web 威胁防护信息的卡片。 以下卡片提供有关 Web 内容筛选的摘要信息。
+选择 **"** \> **报告 Web 保护** "以查看包含有关 Web 内容筛选和 Web 威胁防护信息的卡片。 以下卡片提供有关 Web 内容筛选的摘要信息。
 
 ### <a name="web-activity-by-category"></a>按类别分类的 Web 活动
 
@@ -246,11 +247,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 ### <a name="known-issues-and-limitations"></a>已知问题和限制
 
-- 如果你Microsoft Edge操作系统配置是 Server (**cmd**  >  **Systeminfo**  >  **OS Configuration**) 。 网络保护仅在服务器设备的检查模式下受支持，服务器设备负责保护受支持的第三方浏览器上的流量。
-
-- 未分配的设备将在报告内显示不正确的数据。 在"**报告详细信息**  >  **""** 设备组透视表"中，你可能会看到一个包含空白"设备组"字段的行。 此组包含未分配设备，然后再放入指定组。 此行的报告可能不包含设备或访问计数的准确计数。
-
-- Web 内容筛选报告当前限制为显示前 5000 条记录。 例如，"域"报告最多只显示给定筛选器查询前 5000 个域（如果适用）。 
+如果你Microsoft Edge操作系统配置是 Server (**cmd** \> **Systeminfo** \> **OS Configuration**) 。 网络保护仅在服务器设备的检查模式下受支持，服务器设备负责保护受支持的第三方浏览器上的流量。
 
 ## <a name="see-also"></a>另请参阅
 

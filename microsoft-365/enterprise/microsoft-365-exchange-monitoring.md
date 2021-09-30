@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: 使用 Exchange Online 监视获取有关 Microsoft 365 中电子邮件事件或通报信息。
-ms.openlocfilehash: 0f3b93d13d503ef09edc98f3f9c90f9a1f2a0a32
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 2c97e161c46998f9a78e14b1efc2eb0e701e5b01
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933821"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988243"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>用于 Microsoft 365 的 Exchange Online 监视
 
@@ -70,7 +70,6 @@ ms.locfileid: "59933821"
   - iOS 版和 Android 版的本机邮件客户端
   - 用于 iOS 和 Android 的 Outlook 移动应用
   - Outlook Mac 客户端
-  - 使用 Outlook 网页版打开
 
    通过这些客户端，你可以根据阅读电子邮件的用户以及仪表板中的事件数和建议，查看最近 30 分钟内的活动用户数。 此数据将与前一周的相同间隔进行比较，以查看是否存在问题。
 
@@ -113,11 +112,11 @@ Exchange 许可方案会检查优先级帐户是否由于无效的许可证问�
 
 在受影响的帐户窗格中，**状态** 列具有以下值:
 
-- 已修复: 已为优先级帐户解决导致公告或事件的问题。 不再有问题。 
+- 已修复：已为优先级帐户解决导致公告或事件的问题。 
 
-- 活动: 对于优先级帐户，导致公告或事件的问题仍在继续。 此问题仍然存在。 
+- 活动：导致优先级帐户出现公告或事件的问题仍在继续。问题仍然存在。 
 
-- 已延迟: 尚未在 96 小时内为优先级帐户解决导致公告或事件的问题，因此该问题已推迟。 此问题仍然存在。 
+- 已延迟：尚未在 96 小时内为优先级帐户解决导致公告或事件的问题，因此该问题已推迟。问题仍然存在。 
 
 以下是示例。
 

@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 98477c3f9137c175a46f6e050041974ef6a2b8f1
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: f520d3ed090b878c2d3cd9294bc04ee8c375972e
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497784"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010149"
 ---
 # <a name="troubleshoot-network-protection"></a>网络保护疑难解答
 
@@ -115,24 +115,24 @@ ms.locfileid: "59497784"
 由于网络保护运行的环境，Microsoft 无法查看操作系统代理设置。 在某些情况下，网络保护客户端无法访问云服务。 要解决网络保护的连接问题，请配置以下注册表项之一，以便网络保护能够识别代理配置：
 
 ```powershell
-reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+Set-MpPreference -ProxyServer <proxy IP address: Port>
 ```
 
 ---OR---
 
 ```powershell
-reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+Set-MpPreference -ProxyPacUrl <Proxy PAC url>
 ```
 
 可以使用 PowerShell、注册表项或组策略Microsoft Endpoint Manager注册表项。 以下是一些可帮助的资源：
 
 - [使用注册表项](/powershell/scripting/samples/working-with-registry-keys)
-- [配置自定义客户端设置Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
+- [配置终结点保护的自定义客户端设置](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [使用组策略设置来管理Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
 
 ## <a name="see-also"></a>另请参阅
 
-- [网络保护](network-protection.md)
+- [网络保护功能](network-protection.md)
 - [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 - [网络保护功能评估](evaluate-network-protection.md)
 - [启用网络保护](enable-network-protection.md)

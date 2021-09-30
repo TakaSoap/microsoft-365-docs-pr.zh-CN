@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0f2acedd03cab105c150f3f43d183b749c487d65
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 184fa373afbc793faf19baaef72cf15a7462c8ca
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201074"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009477"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>支持的操作系统、平台和功能 - 适用于危险和漏洞管理
 
@@ -40,28 +40,33 @@ ms.locfileid: "59201074"
 开始之前，请确保满足以下操作系统或平台要求危险和漏洞管理以便正确考虑设备中的活动。
 
 > [!NOTE]
-> 支持用于测试的危险和漏洞管理和平台可能不同于 Microsoft Defender [for Endpoint](minimum-requirements.md)列表的最低要求。
+> 支持用于终结点的危险和漏洞管理和平台可能不同于[Microsoft Defender for Endpoint](minimum-requirements.md)列表的最低要求。
 
-## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>支持的操作系统和平台 (操作系统) 功能
+## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>每个支持的操作系统和操作系统 (操作系统) 和平台的功能
 
 在下表中，"是"危险和漏洞管理该行上的操作系统或平台支持此功能。
 
-支持的操作系统或平台|操作系统漏洞|软件产品漏洞|操作系统配置评估|安全控制配置评估|软件产品配置评估
-:---|:---|:---|:---|:---|:---
-Windows 7|是|不支持|不支持|不支持|不支持
-Windows 8.1|是|是|是|是|是
-Windows 10，版本 1607-1703|是|不支持|不支持|不支持|不支持
-Windows 10版本 1709 或更高版本|是|是|是|是|是
-Windows Server 2008 R2|是|是|是|是|是
-Windows Server 2012 R2|是|是|是|是|是
-Windows Server 2016|是|是|是|是|是
-Windows Server 2019|是|是|是|是|是
-macOS 10.14 "Mojave"及以上|是|是|是|是|是 
-Red Hat Enterprise Linux 7.2 或更高版本 (请参阅下面的"重要 \* ") |是|是|是|是|是
-CentOS 7.2 或更高版本|是|是|是|是|是
-Ubuntu 16.04 LTS 或更高版本 LTS|是|是|是|是|是
-Oracle Linux 7.2 或更高版本|是|是|是|是|是
-SUSE Linux Enterprise Server 12 或更高版本|是|是|是|是|是
+<br>
+
+****
+
+|支持的操作系统或平台|操作系统漏洞|软件产品漏洞|操作系统配置评估|安全控制配置评估|软件产品 |配置评估|
+|---|---|---|---|---|---|
+|Windows 7|是|不支持|不支持|不支持|不支持|
+|Windows 8.1|是|是|是|是|是|
+|Windows 10，版本 1607-1703|是|不支持|不支持|不支持|不支持|
+|Windows 10版本 1709 或更高版本|是|是|是|是|是|
+|Windows Server 2008 R2|是|是|是|是|是|
+|Windows Server 2012 R2|是|是|是|是|是|
+|Windows Server 2016|是|是|是|是|是|
+|Windows Server 2019|是|是|是|是|是|
+|macOS 10.14 "Mojave"及以上|是|是|是|是|是|
+|Red Hat Enterprise Linux 7.2 或更高版本 (请参阅下面的"重要 \* ") |是|是|是|是|是|
+|CentOS 7.2 或更高版本|是|是|是|是|是|
+|Ubuntu 16.04 LTS 或更高版本 LTS|是|是|是|是|是|
+|Oracle Linux 7.2 或更高版本|是|是|是|是|是|
+|SUSE Linux Enterprise Server 12 或更高版本|是|是|是|是|是|
+|
 
 > [!NOTE]
 > 某些功能不适用于低级别操作系统，请查看 Microsoft 365 Defender 门户，了解有关受支持的操作系统的更多详细信息。

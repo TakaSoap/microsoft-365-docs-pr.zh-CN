@@ -22,16 +22,17 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何为 Microsoft 365 商业版订阅获取在线或电话支持。 必须是企业订阅的管理员才能获得支持。
-ms.openlocfilehash: a83085a9cc7abc66aa3505208b8480c94f7b692a
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: e224b5a6224dc182d36a99f0b7943a586c64b08a
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934055"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988603"
 ---
 # <a name="get-support"></a>获取支持
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="watch-get-help-or-support"></a>观看：获取帮助或支持
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
@@ -76,6 +77,12 @@ ms.locfileid: "59934055"
 如果上面未列出适合你的支持电话号码，请使用下面的下拉菜单，查找你所在的国家或地区的号码。
 
 [!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
+
+## <a name="small-business-support-with-business-assist"></a>支持小型企业的商业助手
+
+通过小型企业专家提供的专家建议充分利用订阅。
+
+Microsoft 365 商业助手专为小型企业设计，从加入到日常使用，小型企业专家将全天候帮助你和员工发展业务。 若要了解详细信息，请参阅[商业助手](../admin/misc/business-assist.md)。
 
 ::: moniker-end
 
@@ -239,7 +246,6 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 你也可以[搜索 Microsoft 365 商业版社区论坛](https://go.microsoft.com/fwlink/p/?LinkId=518605)，查找已知问题和新潮主题，或发帖提出新问题。社区论坛由训练有素的 Microsoft 支持专员监管，他们可以帮助你解决问题。
 
 ::: moniker-end
-
 
 ## <a name="related-content"></a>相关内容
 

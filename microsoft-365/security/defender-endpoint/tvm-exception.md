@@ -1,7 +1,7 @@
 ---
 title: 创建和查看安全建议例外 - 危险和漏洞管理
-description: 创建并监视安全建议在安全危险和漏洞管理。
-keywords: Microsoft Defender for Endpoint tvm 修正， Microsoft Defender for Endpoint tvm， 危险和漏洞管理， 威胁 & 漏洞管理， 威胁 & 漏洞管理 修正， tvm 修正 intune， tvm 修正 sccm
+description: 在安全报告中创建和监视安全建议危险和漏洞管理。
+keywords: Microsoft Defender for Endpoint tvm remediation， Microsoft Defender for Endpoint tvm， 危险和漏洞管理， threat & 漏洞管理， threat & 漏洞管理 remediation， tvm remediation intune， tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de458eed2b52b6043a4f5aaa5f8593b6136f9d37
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aaa1c8cf1d54fe589adfd06939fc3f4c4398b18e
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162240"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009489"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>创建和查看安全建议例外 - 危险和漏洞管理
 
@@ -35,14 +35,13 @@ ms.locfileid: "59162240"
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
-当建议此时不相关时，作为修正请求的替代方法，你可以为建议创建例外。 如果你的组织具有设备组，你将能够将异常范围范围缩小到特定设备组。 可以针对所选设备组或过去和现在的所有设备组创建例外。  
+当建议此时不相关时，作为修正请求的替代方法，你可以为建议创建例外。 如果你的组织具有设备组，你将能够将异常范围范围缩小到特定设备组。 可以针对所选设备组或过去和现在的所有设备组创建例外。
 
-为建议创建例外时，建议在例外持续时间结束之前不会处于活动状态。 建议状态将更改为"完全 **异常**"或"部分异常 (组设置) 。
+为建议创建例外时，建议在例外持续时间结束之前不会处于活动状态。 建议状态将更改为"完全 **异常**"或"部分异常 (按设备组) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 只有具有"异常处理"权限的用户才能管理异常 (包括创建或取消) 。 [详细了解 RBAC 角色](user-roles.md)。
 
@@ -50,7 +49,7 @@ ms.locfileid: "59162240"
 
 ## <a name="create-an-exception"></a>创建异常
 
-选择要创建例外的安全建议，然后选择" **异常** 选项"并填写表单。  
+选择要创建例外的安全建议，然后选择" **异常** 选项"并填写表单。
 
 ![显示"异常选项"按钮在安全建议飞出控件中的位置。](images/tvm-exception-options.png)
 
@@ -64,7 +63,7 @@ ms.locfileid: "59162240"
 
 如果你已按任意页面的设备组进行危险和漏洞管理，则只有经过筛选的设备组将显示为选项。
 
-这是要按设备组筛选任意页面的危险和漏洞管理按钮： 
+这是要按设备组筛选任意页面的危险和漏洞管理按钮：
 
 ![显示所选设备组筛选器。](images/tvm-selected-device-groups.png)
 
@@ -93,7 +92,7 @@ ms.locfileid: "59162240"
 - 如果建议在全局例外下，则设备组的新创建异常将暂停，直到全局异常过期或取消。 此后，新的设备组例外将生效，直到它们过期。
 - 如果建议已具有特定设备组的例外，并且创建了全局例外，则设备组异常将暂停，直到它过期，或者全局异常在过期之前被取消。
 
-### <a name="justification"></a>Justification
+### <a name="justification"></a>理由
 
 选择需要提交异常的理由，而不是修正相关安全建议。 填写理由上下文，然后设置例外持续时间。
 
@@ -126,9 +125,9 @@ ms.locfileid: "59162240"
 
 ![显示如何选择特定设备组。](images/tvm-exception-device-group-hover.png)
 
-## <a name="view-impact-after-exceptions-are-applied"></a>应用例外后查看影响
+## <a name="view-impact-after-exceptions-are-applied&quot;></a>应用例外后查看影响
 
-在"安全推荐"页中，选择"自定义列"，并选中"在异常发生后公开 ("和"在) 后影响 ("复选框 **) 。**
+在&quot;安全推荐页上，选择&quot;自定义列&quot;，并选中&quot;在异常发生后公开 (&quot;和") 后影响 **("** 复选框) 。
 
 ![显示自定义列选项。](images/tvm-after-exceptions.png)
 

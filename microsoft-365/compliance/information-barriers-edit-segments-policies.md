@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: dff13dd6c4011ec73a1976bce0af69b607e391b0
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 79f82ba1133af3c3cfe1d8c7b05b481528bcb003
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444051"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010101"
 ---
 # <a name="manage-information-barrier-policies"></a>管理信息屏障策略
 
@@ -27,7 +27,7 @@ ms.locfileid: "59444051"
 
 |**操作**|**说明**|
 |:---------|:--------------|
-| [编辑用户帐户属性](#edit-user-account-attributes) | 在可用于定义Azure Active Directory填充属性。<br/>当用户未包含在自己本该在的区段时，请编辑用户帐户属性，以更改用户所在的区段，或使用不同的属性定义区段。 |
+| [编辑用户帐户属性](#edit-user-account-attributes) | 在可用于定义Azure Active Directory中填写属性。<br/>当用户未包含在自己本该在的区段时，请编辑用户帐户属性，以更改用户所在的区段，或使用不同的属性定义区段。 |
 | [编辑区段](#edit-a-segment) | 希望更改区段定义方式时编辑区段。 <br/>例如，您可能最初使用 *Department* 定义了分段，但现在想要使用另一个属性，例如 *MemberOf*。 |
 | [编辑策略](#edit-a-policy) | 想要更改策略的工作方式时，编辑信息屏障策略。<br/>例如，你可能决定只允许在某些分段之间发生通信，而不是阻止两个段之间的通信。 |
 | [将策略设置为非活动状态](#set-a-policy-to-inactive-status) |在想要更改策略时，或者不希望策略生效时，将策略设置为非活动状态。 |
@@ -37,7 +37,7 @@ ms.locfileid: "59444051"
 | [信息屏障疑难解答](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | 当您遇到信息障碍的意外问题时，请参阅本文。 |
 
 > [!IMPORTANT]
-> 若要执行本文中所述的任务，您必须分配有适当的角色，例如以下角色之一：<br/>- Microsoft 365 企业版全局管理员<br/>- 全局管理员<br/>- 合规性管理员<br/>- IBM 合规性管理 (这是一个新角色！) <br><br>若要了解有关信息屏障的先决条件详细信息，请参阅S [prerequisites (for information barrier policies) ](information-barriers-policies.md#prerequisites)。<br><br> 确保连接到[安全与合规& PowerShell。](/powershell/exchange/connect-to-scc-powershell)
+> 若要执行本文中所述的任务，您必须分配有适当的角色，例如以下角色之一：<br/>- Microsoft 365 企业版全局管理员<br/>- 全局管理员<br/>- 合规性管理员<br/>- IBM 合规性管理 (这是一个新角色！) <br><br>若要了解有关信息屏障的先决条件详细信息，请参阅先决条件 ([了解信息屏障策略) 。 ](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)<br><br> 确保连接到[安全与合规& PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>编辑用户帐户属性
 
@@ -47,7 +47,7 @@ ms.locfileid: "59444051"
 
     |**语法**|**示例**|
     |:---------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* 表示 *Megan，alexw* 表示 *Alex。*  |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* for *Megan* 和 *alexw* for *Alex*。 |
 
 2. 确定要编辑用户帐户配置文件的属性 () 。 有关详细信息，请参阅 [信息屏障策略的属性](information-barriers-attributes.md)。 
 
@@ -76,7 +76,7 @@ ms.locfileid: "59444051"
     |:---------|:----------|
     | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <p> 此示例中，对于 GUID *为 c96e0837-c232-4a8a-841e-ef45787d8fcd* 的段，我们将部门名称更新为"HRDept"。 |
 
-为组织完成编辑分段后，可以[定义或](information-barriers-policies.md#part-2-define-information-barrier-policies)[编辑](#edit-a-policy)信息屏障策略。
+为组织完成编辑分段后，可以[定义或](information-barriers-policies.md#step-3-define-information-barrier-policies)[编辑](#edit-a-policy)信息屏障策略。
 
 ## <a name="edit-a-policy"></a>编辑策略
 
@@ -94,7 +94,7 @@ ms.locfileid: "59444051"
 
     本示例将"SegmentsBlocked"更改为"SegmentsAllowed"，并指定 *HR* 段。
 
-3. 编辑完策略后，请确保应用更改。  (应用 [信息屏障策略](information-barriers-policies.md#part-3-apply-information-barrier-policies).) 
+3. 编辑完策略后，请确保应用更改。  (应用 [信息屏障策略](information-barriers-policies.md#step-4-apply-information-barrier-policies).) 
 
 ## <a name="set-a-policy-to-inactive-status"></a>将策略设置为非活动状态
 
@@ -102,7 +102,7 @@ ms.locfileid: "59444051"
 
     语法： `Get-InformationBarrierPolicy`
 
-    在结果列表中，确定要更改或删除 (策略) 。 请注意策略的 GUID 和名称。
+    在结果列表中，确定要更改策略 (或删除) 。 请注意策略的 GUID 和名称。
 
 2. 若要将策略的状态设置为非活动状态，请使用带 Identity 参数的 **Set-InformationBarrierPolicy** cmdlet，将 State 参数设置为 Inactive。
 
@@ -118,7 +118,7 @@ ms.locfileid: "59444051"
 
 此时，一个或多个信息屏障策略设置为非活动状态。 在这里，你可以执行以下操作之一：
 
-- 一直 (设置为非活动状态的策略对用户没有) 
+- 一直 (设置为非活动状态的策略对处于非活动状态的) 
 - [编辑策略](#edit-a-policy) 
 - [删除策略](#remove-a-policy)
 

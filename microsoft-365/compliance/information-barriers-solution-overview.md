@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: a0f806da62378ca21c1693fd96105bb89eaf5708
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 930b508b8e923baadff68701e88fc09af6a5051a
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171346"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010077"
 ---
 # <a name="information-barriers-in-microsoft-365"></a>信息障碍Microsoft 365
 
@@ -41,10 +41,10 @@ Microsoft Teams、SharePoint Online 和 OneDrive for Business 支持信息屏障
 ![内部风险解决方案信息屏障步骤。](../media/ir-solution-ib-steps.png)
 
 1. 了解[信息障碍](information-barriers.md)Microsoft 365
-2. 配置 [先决条件和权限](information-barriers-policies.md#prerequisites)
-3. 划分 [组织中用户](information-barriers-policies.md#part-1-segment-users)
-4. 创建和配置 [信息屏障策略](information-barriers-policies.md#part-2-define-information-barrier-policies)
-5. 应用 [信息屏障策略](information-barriers-policies.md#part-3-apply-information-barrier-policies)
+2. 配置 [先决条件和权限](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)
+3. 划分 [组织中用户](information-barriers-policies.md#step-2-segment-users-in-your-organization)
+4. 创建和配置 [信息屏障策略](information-barriers-policies.md#step-3-define-information-barrier-policies)
+5. 应用 [信息屏障策略](information-barriers-policies.md#step-4-apply-information-barrier-policies)
 
 ## <a name="more-information-about-information-barriers"></a>有关信息屏障详细信息
 

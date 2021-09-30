@@ -1,7 +1,7 @@
 ---
 title: 搜索暴露的设备
 description: 了解如何危险和漏洞管理安全管理员、IT 管理员和 SecOps 协作。
-keywords: 适用于 Endpoint-tvm 方案的 Microsoft Defender， 适用于终结点的 Microsoft Defender， tvm， tvm 方案， 减少威胁 & 漏洞暴露， 减少威胁和漏洞， 改进安全配置， 提高 Microsoft 设备安全分数， 增加威胁 & 漏洞 Microsoft 设备安全分数， Microsoft 设备安全分数， 曝光分数， 安全控制
+keywords: 适用于 Endpoint-tvm 方案的 Microsoft Defender、适用于终结点的 Microsoft Defender、电视、电视方案、减少威胁 & 漏洞暴露、减少威胁和漏洞、改进安全配置、提高 Microsoft 设备的安全分数、增加威胁 & 漏洞 Microsoft 设备安全分数、设备 Microsoft 安全分数、曝光分数、安全控件
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bec319f840728599f01680c32561bf3998d59381
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2bf488957b35a9d0a914ff4c211a02058cde761c
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162235"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010113"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>搜寻公开的设备 - 危险和漏洞管理
 
@@ -45,7 +45,7 @@ ms.locfileid: "59162235"
 
 - [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - 设备上安装的软件清单，包括其版本信息和停止支持状态。
 
-- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - 在设备上发现的软件漏洞以及可解决每个漏洞的可用安全更新列表。
+- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - 设备上发现的软件漏洞以及可解决每个漏洞的可用安全更新列表。
 
 - [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - 公开披露漏洞的知识库，包括攻击代码是否公开可用。
 
@@ -55,7 +55,7 @@ ms.locfileid: "59162235"
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>检查高严重性警报中涉及的设备
 
-1. 从导航  >  **门户** 的左侧导航窗格中转到搜寻高级Microsoft 365 Defender。
+1. 从导航 \> **门户的** 左侧导航窗格中转到搜寻高级Microsoft 365 Defender。
 
 2. 向下滚动到 TVM 高级搜寻架构，以熟悉列名称。
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4180b57ac053fffe3ea1b7ac584799c65c94ea95
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad582fe34f4fa3b7943dc90ffd6fd12e7615c618
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196278"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010205"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>缓解零日漏洞 - 危险和漏洞管理
 
@@ -39,13 +39,13 @@ ms.locfileid: "59196278"
 
 零日漏洞是公开披露的漏洞，尚未发布正式的修补程序或安全更新程序。 零日漏洞通常具有高严重性级别，并且被主动利用。
 
-威胁漏洞管理仅显示其拥有相关信息的零日漏洞。
+威胁和漏洞管理将仅显示其拥有相关信息的零日漏洞。
 
 ## <a name="find-information-about-zero-day-vulnerabilities"></a>查找有关零日漏洞的信息
 
-一旦发现零日漏洞，相关信息将在企业门户中通过以下Microsoft 365 Defender传达。
+一旦发现零日漏洞，有关该漏洞的信息将在 Microsoft 365 Defender 门户中传达。
 
->[!NOTE]
+> [!NOTE]
 > 0 天漏洞功能当前仅适用于Windows产品。
 
 ### <a name="threat-and-vulnerability-management-dashboard"></a>威胁和漏洞管理仪表板
@@ -72,7 +72,7 @@ ms.locfileid: "59196278"
 
 查找带零日标记的软件。 按"零日"标记进行筛选，以仅查看具有零日漏洞的软件。
 
-:::image type="content" alt-text="软件清单页Windows Server 2016零日示例。" source="images/tvm-zero-day-software-inventory.png" lightbox="images/tvm-zero-day-software-inventory.png":::
+:::image type="content" alt-text="软件清单Windows Server 2016零日示例。" source="images/tvm-zero-day-software-inventory.png" lightbox="images/tvm-zero-day-software-inventory.png":::
 
 ### <a name="software-page"></a>"软件"页
 
@@ -84,13 +84,13 @@ ms.locfileid: "59196278"
 
 查看有关修正和缓解选项的清晰建议，包括解决方法（如果存在）。 按"零日"标记进行筛选，以仅查看解决零日漏洞的安全建议。
 
-如果有软件具有零日漏洞和其他要解决的漏洞，你将获得关于所有漏洞的一个建议。
+如果有软件具有零日漏洞和其他要解决的漏洞，你将获得有关所有漏洞的一个建议。
 
 :::image type="content" alt-text="安全建议Windows Server 2016零日事件示例。" source="images/tvm-zero-day-security-recommendation.png" lightbox="images/tvm-zero-day-security-recommendation.png":::
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>解决零日漏洞
 
-转到安全建议页面，然后选择一个零日建议。 将打开一个空出场，并提供有关该软件的零日和其他漏洞的信息。
+转到安全建议页面，然后选择一个零日建议。 将打开一个飞出场，并提供有关该软件的零日和其他漏洞的信息。
 
 如果缓解选项和解决方法可用，将会提供相关链接。 在可以部署修补程序或安全更新之前，解决方法可能会帮助降低此零日漏洞带来的风险。
 

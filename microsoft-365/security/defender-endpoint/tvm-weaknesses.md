@@ -1,6 +1,6 @@
 ---
 title: 我的组织中漏洞 - 危险和漏洞管理
-description: 列出 CVE 的常见漏洞 () 组织中运行的软件中发现漏洞的 ID。 由 Microsoft Defender for Endpoint 危险和漏洞管理发现。
+description: 列出 CVE 的常见漏洞 () 在组织中运行的软件中发现漏洞的 ID。 由 Microsoft Defender for Endpoint 危险和漏洞管理发现。
 keywords: Microsoft Defender for Endpoint threat & 漏洞管理， 危险和漏洞管理， Microsoft Defender for Endpoint tvm vulnerabilites page， finding vulnerabilites through tvm， tvm vulnerability list， vulnerability details in tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 30e1229db1af93c74731678723b60d7d20640f9b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2d6831cfaec813f5ab2598087c2777d867a5f8a7
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196279"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009417"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>我的组织中漏洞 - 危险和漏洞管理
 
@@ -36,15 +36,15 @@ ms.locfileid: "59196279"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
-威胁漏洞管理使用 Defender 终结点保护中的相同信号扫描和检测漏洞。
+威胁和漏洞管理使用 Defender for Endpoint 终结点保护中的相同信号扫描和检测漏洞。
 
-" **漏洞** "页通过列出 CVE 中"常见漏洞和曝光" (CVE) 漏洞。 还可以查看严重性、常见漏洞评分系统 (CVSS) 分级、组织中的普遍程度、相应的漏洞、威胁见解等。
+" **漏洞** "页列出了你的设备公开的软件漏洞，其中列出了 CVE (的常见) 漏洞。 还可以查看严重性、常见漏洞评分系统 (CVSS) 分级、组织中的普遍程度、相应的漏洞、威胁见解等。
 
->[!NOTE]
->如果没有为漏洞分配正式的 CVE-ID，则此漏洞名称由 危险和漏洞管理。
+> [!NOTE]
+> 如果没有为漏洞分配正式的 CVE-ID，则此漏洞名称由 危险和漏洞管理。
 
->[!TIP]
->若要获取有关新漏洞事件的电子邮件，请参阅在 Microsoft [Defender for Endpoint](configure-vulnerability-email-notifications.md)中配置漏洞电子邮件通知
+> [!TIP]
+> 若要获取有关新漏洞事件的电子邮件，请参阅在 Microsoft [Defender for Endpoint](configure-vulnerability-email-notifications.md)中配置漏洞电子邮件通知
 
 ## <a name="navigate-to-the-weaknesses-page"></a>导航到"漏洞"页面
 
@@ -76,13 +76,13 @@ ms.locfileid: "59196279"
 
 当图标为红色时，在"威胁"列中查看任何相关的泄露和威胁见解。
 
- >[!NOTE]
- > 始终对与持续威胁相关的建议设置优先级。 这些建议使用威胁见解图标"简单 ![ 绘制红色 Bug"进行标记。](images/tvm_bug_icon.png) 和泄露见解图标 ![ 简单绘制一个指向目标的箭头 ](images/tvm_alert_icon.png) 。  
+ > [!NOTE]
+ > 始终对与持续威胁相关的建议设置优先级。 这些建议使用威胁见解图标"简单 ![ 绘制红色 Bug"进行标记。](images/tvm_bug_icon.png) 和泄露见解图标 ![ 简单绘制一个指向目标的箭头 ](images/tvm_alert_icon.png) 。
 
 如果在组织中发现漏洞，则突出显示"泄露见解"图标。
 ![将鼠标悬停在图标上时可能会显示泄露见解文本的示例。 其中显示"可能的活动警报与此建议关联。"](images/tvm-breach-insights.png)
 
-如果在组织中发现漏洞存在关联攻击，则突出显示威胁见解图标。 将鼠标悬停在图标上可显示威胁是攻击工具包的一部分，还是连接到特定高级永久市场活动或活动组。 如果可用，有一个指向威胁分析报告的链接，该报告包含零日攻击新闻、披露或相关安全公告。  
+如果在组织中发现漏洞存在关联攻击，则突出显示威胁见解图标。 将鼠标悬停在图标上可显示威胁是攻击工具包的一部分，还是连接到特定高级永久市场活动或活动组。 如果可用，有一个指向威胁分析报告的链接，该报告包含零日攻击新闻、披露或相关安全公告。
 
 ![将鼠标悬停在图标上时可能显示的威胁见解文本。 此文本具有多个项目符号点和链接文本。](images/tvm-threat-insights.png)
 
@@ -97,17 +97,17 @@ ms.locfileid: "59196279"
 
 ### <a name="software-that-isnt-supported"></a>不支持的软件
 
-当前不受威胁威胁支持的软件的& 漏洞管理"漏洞"页中仍然存在。 由于软件不受支持，因此只有有限的数据可用。
+当前不受威胁威胁支持的软件的 & 漏洞管理"漏洞"页中仍然存在。 由于软件不受支持，因此只有有限的数据可用。
 
 使用不受支持的软件的 CES 不会提供公开的设备信息。 通过选择"公开设备"部分中的"不可用"选项，按不受支持的软件进行筛选。
 
 :::image type="content" alt-text="公开的设备筛选器。" source="images/tvm-exposed-devices-filter.png":::
 
-## <a name="view-common-vulnerabilities-and-exposures-cve-entries-in-other-places"></a>查看其他位置的 CVE (项) 漏洞和曝光
+## <a name="view-common-vulnerabilities-and-exposures-cve-entries-in-other-places"></a>查看其他位置的 CVE (项) 的常见漏洞和曝光
 
 ### <a name="top-vulnerable-software-in-the-dashboard"></a>仪表板中最易受攻击的软件
 
-1. 转到 [仪表板危险和漏洞管理，](tvm-dashboard-insights.md)然后向下滚动到 **"最易受攻击的软件"小组件**。 你将看到每个软件中发现漏洞的数量，以及威胁信息和设备曝光的一段时间的高级别视图。
+1. Go to the [危险和漏洞管理 dashboard](tvm-dashboard-insights.md) and scroll down to the Top **vulnerable software** widget. 你将看到每个软件中发现漏洞的数量，以及威胁信息和设备曝光的一段时间的高级别视图。
 
     ![具有四列的主要易受攻击的软件卡：软件、漏洞、威胁、公开的设备。](images/tvm-top-vulnerable-software500.png)
 
@@ -139,7 +139,7 @@ ms.locfileid: "59196279"
 
 #### <a name="cve-detection-logic"></a>CVE 检测逻辑
 
-与软件证据类似，我们现在显示了在设备上应用的检测逻辑，以表明该设备易受攻击。 新部分称为"检测逻辑"， (设备页面发现的任何漏洞中发现) 显示检测逻辑和来源。
+与软件证据类似，我们现在显示了在设备上应用的检测逻辑，以表明该设备易受攻击。 新部分称为"检测逻辑" (发现的设备页中发现的任何漏洞) 显示检测逻辑和来源。
 
 相关方案中也显示了"OS 功能"类别。 只有在启用了特定操作系统组件时，CVE 才会影响运行易受攻击的操作系统的设备。 假设 Windows Server 2019 在其 DNS 组件中具有漏洞。 借助此新功能，我们将仅将此 CVE 附加到 Windows Server 2019 设备，这些设备的 OS 中启用了 DNS 功能。
 
