@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 SharePoint 和 OneDrive 的保留的工作原理。
-ms.openlocfilehash: 77d7d3eebaa4678e6d90897aab8a41554530e858
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 406cb6f0f9fb31aad21c918db213b2f2f4a054e0
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196917"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011424"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>了解用于 SharePoint 和 OneDrive 的保留
 
@@ -61,14 +61,14 @@ ms.locfileid: "59196917"
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>用于 SharePoint 和 OneDrive 的保留的工作原理
 
-若要存储需要保留的内容，SharePoint 和 OneDrive 会创建一个保留库（如果不存在）。 你可在网站集的最顶级网站中的“**网站内容**”上查看此库。 大多数用户都无法查看保留库，因为此库仅对网站集管理员可见。
+若要存储需要保留的内容，SharePoint 和 OneDrive 会创建一个保留库（如果站点不存在）。 保留库不是为交互使用而设计的，而是出于合规性原因要自动存储文件。
 
 具有标准保留标签（不声明项目为记录）的 SharePoint 中的项目不需要保留库，因为这些项将保持在其原始位置。 当应用保留标签配置为保留内容时，SharePoint 会防止用户删除项目，而 SharePoint 版本控制功会在编辑项目时保留较旧版本。 但是对于其他方案，当项目必须保留时，会使用保留库：
 - OneDrive 中具有标准保留标签的项目
-- SharePoint 或 OneDrive 中具有声明其为记录且该项目未锁定用于编辑的保留标签的项目
+- SharePoint 或 OneDrive 中具有保留标记为记录标签的项目，并且该项目未锁定可以用于编辑
 - 受保留策略管理的项目
 
-若要在用户尝试更改或删除内容时保留此内容，会检查自应用保留设置起内容是否发生更改。 如果这是自应用保留设置以来的首次更改，则会将内容复制到保留库中，用户可以在其中更改或删除原始内容。 可以将网站集中的任何内容复制到保留库中，而不管保留设置如何。
+若要在用户尝试更改或删除内容时保留此内容，会检查自应用保留设置起内容是否发生更改。 如果这是自应用保留设置以来的首次更改，则会将内容复制到保留库中，用户可以在其中更改或删除原始内容。
   
 计时器作业会定期清理保留库。 对于在保留库中保留超过 30 天的内容，此作业将内容与该内容的保留设置所使用的全部查询进行比较。 早于其配置的保留期的内容将从保留库和原始位置（如果仍在该位置）中删除。 此计时器作业每 7 天运行一次，这意味着在最少 30 天内，从保留库中删除内容可能需要多达 37 天。
 
@@ -76,9 +76,6 @@ ms.locfileid: "59196917"
   
 如果用户尝试删除受保留的库、列表、文件夹或网站，则会看到错误消息。 如果用户首次移动或删除文件夹中受该策略约束的任何文件，可删除一个文件夹。
 
-> [!NOTE]
-> 由于保存保留库仅在需要时创建，而不是在应用保留策略或保留标签时创建，因此若要使其正常工作，必须先编辑或删除受保留限制的项目。然后浏览至保留库以查看保留的副本。
-  
 在向 OneDrive 帐户或 SharePoint 网站中的内容分配保留设置后，内容路径取决于保留设置是“保留后删除”、“仅保留”还是“仅删除”。
 
 如果保留设置为“保留后删除”：

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: cb693fb60277e5262578cc442df7e1c5ba3f3c16
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c6aede6ba25ebd7f28008e4c52450bd3e4b74c2d
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170201"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009453"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -149,8 +149,10 @@ ms.locfileid: "59170201"
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>将标签自动应用于包含特定类型敏感信息的内容
 
-> [!WARNING]
-> 该配置当前存在一个已知限制，即选定的敏感信息类型有匹配时，所有未标记的电子邮件始终应用所选的保留标签。 例如，即使将自动应用策略的范围限定于特定用户，或者为该策略选择了 Exchange 以外的位置，如果匹配，标签始终会应用于未标记的电子邮件。
+> [!IMPORTANT]
+> 对于通过识别敏感信息自动应用的电子邮件，不支持将策略范围限定为包含或排除特定收件人；此策略配置仅支持"**所有收件人**"设置。 特定于此策略配置，**所有收件人** 均包括来自 Microsoft 365 组的邮箱。
+> 
+> 此外，特定于此策略配置，如果选择"**Microsoft 365 组**"位置，则仅包括连接到 Microsoft 365 组的 SharePoint 站点，不包括来自 Microsoft 365 组的邮箱。
 
 为敏感信息创建自动应用保留标签策略时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 每个策略模板都是预配置的，用于查找特定类型的敏感信息。 在下面的示例中，敏感信息类型来自" **隐私信息** "类别， **美国个人身份信息 （PII） 数据** 模板：
 
@@ -169,6 +171,8 @@ ms.locfileid: "59170201"
 使用敏感信息类型自动应用保留标签时要考虑的事项：
 
 - 如果使用自定义敏感信息类型，则这些类型不能自动标记 SharePoint 和 OneDrive 中的现有项目。
+
+- 对于电子邮件，无法选择要包含或排除的特定收件人；仅支持"**所有收件人**"设置，并且仅对于此配置，它包含来自Microsoft 365 组的邮箱。 
 
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>将标签自动应用于包含关键字或可搜索属性的内容
 

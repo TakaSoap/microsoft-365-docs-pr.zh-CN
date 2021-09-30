@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: 了解如何使用 Microsoft 365 合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
-ms.openlocfilehash: efb51aebcca5d724b8a1f8ecaabb6eeb5f31e8dd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da5d795c2b2babb2f2ff89bb1cdd5531d4818b1b
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169635"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011268"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 
@@ -92,7 +92,7 @@ ms.locfileid: "59169635"
 
 - 通过允许你执行以下操作，将电子邮件数据导入到 Microsoft 365 有助于满足组织的合规性需求：
 
-  - 启用[存档邮箱](enable-archive-mailboxes.md)和[无限存档](unlimited-archiving.md)，为用户提供额外的邮箱存储空间。
+  - 启用[存档邮箱](enable-archive-mailboxes.md)和[自动扩展存档](autoexpanding-archiving.md)，为用户提供额外的邮箱存储空间。
 
   - 将邮箱置于“[诉讼保留](./create-a-litigation-hold.md)”以保留内容。
 
