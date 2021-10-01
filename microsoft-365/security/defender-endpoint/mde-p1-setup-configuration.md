@@ -7,24 +7,24 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 09/13/2021
+ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 53d8742b411c500705434fcef181793df591eb19
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: b0b11d43b0736224a26c2863afa6de6be31e4a63
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490963"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069121"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>为终结点计划 1 设置和配置 Microsoft Defender (预览) 
 
 > [!TIP]
-> 如果你已Microsoft 365 E3但没有Microsoft 365 E5，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 注册预览计划！
+> 如果你已Microsoft 365 E3 A3，Microsoft 365 E5或 A5，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 注册预览计划！
 
 本文介绍如何为终结点计划 1 设置和配置 Defender (预览) 。 无论你是否获得帮助，都可以将本文用作整个部署的指南。  
 
@@ -41,7 +41,7 @@ ms.locfileid: "59490963"
 | 2 | [规划部署](#plan-your-deployment) | 列出要考虑的几种部署方法，并包括指向更多资源的链接，以帮助您决定使用哪种方法  |
 | 3 | [设置租户环境](#set-up-your-tenant-environment) | 列出设置租户环境的任务 |
 | 4  | [分配角色和权限](#assign-roles-and-permissions) | 列出要考虑的安全团队的角色和权限 <br/><br/>**提示**：分配角色和权限后，安全团队就可以开始使用 Microsoft 365 Defender 门户。 若要了解更多信息，请参阅 [入门](mde-plan1-getting-started.md)。 |
-| 5 | [载入到适用于终结点的 Defender](#onboard-to-defender-for-endpoint) | 列出操作系统载入到 Defender for Endpoint Plan 1 的几种方法，并包括指向每个方法的更多详细信息的链接  |
+| 5 | [载入到适用于终结点的 Defender](#onboard-to-defender-for-endpoint) | 列出操作系统载入 Defender for Endpoint Plan 1 的几种方法，并包括指向每个方法的更多详细信息的链接  |
 | 6  | [配置下一代保护](#configure-next-generation-protection) | 介绍如何在环境中配置下一代保护Microsoft Endpoint Manager  |
 | 7  | [配置攻击面减少功能](#configure-your-attack-surface-reduction-capabilities)        | 列出你可以配置的攻击面减少功能类型，并包括包含指向更多资源的链接的过程  |
 
@@ -54,7 +54,7 @@ ms.locfileid: "59490963"
 
 | 要求 | 说明 |
 |:---|:---|
-| 许可要求 |  Endpoint 计划 1（预览版）的定义程序 <br/><br/>*如果已Microsoft 365 E3，可以加入预览计划。* |
+| 许可要求 |  Endpoint 计划 1（预览版）的定义程序 <br/><br/>*如果已Microsoft 365 E3 A3，可以加入预览计划。* |
 | 浏览器要求 | Microsoft Edge <br/> Internet Explorer版本 11 <br/> Google Chrome |
 | 操作系统 | Windows 10版本 1709 或更高版本 <br/>macOS：11.5 (Big Sur) 、10.15.7 (加泰罗尼亚语) 或 10.14.6 (Mojave)  <br/>iOS <br/>Android OS  |
 | 数据中心版 | 以下数据中心位置之一： <br/>- 欧盟 <br/>- 英国 <br/>- 美国 |
@@ -93,7 +93,7 @@ ms.locfileid: "59490963"
 
 ## <a name="assign-roles-and-permissions"></a>分配角色和权限
 
-若要访问安全Microsoft 365 Defender、配置 Defender for Endpoint 的设置或执行任务（如对检测到的威胁采取响应操作）必须分配适当的权限。 Defender for Endpoint[使用 Azure Active Directory 中的内置角色](/azure/active-directory/roles/permissions-reference)。 
+若要访问安全Microsoft 365 Defender、配置 Defender for Endpoint 的设置或执行任务（例如，对检测到的威胁采取响应操作）必须分配适当的权限。 Defender for Endpoint[使用 Azure Active Directory 中的内置角色](/azure/active-directory/roles/permissions-reference)。 
 
 Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过使用基本权限管理，或者通过使用基于角色的访问控制或 RBAC [](rbac.md) (分配) 。 
 
@@ -103,9 +103,9 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 下表介绍了组织中 Defender for Endpoint 要考虑的关键角色： <br/><br/>
 
-| Role | 说明 |
+| 角色 | 说明 |
 |:---|:---|
-| 全局管理员 (也称为全局管理员)  <br/><br/> *最佳做法是限制全局管理员的数量。* | 全局管理员可以执行所有类型的任务。 默认情况下，为公司注册 Microsoft 365 或 Microsoft Defender for Endpoint Plan 1 的人是全局管理员。 <br/><br/> 全局管理员能够跨所有门户访问/Microsoft 365设置，例如： <br/>- [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心 ()  <br/>- Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) ()  <br/>- Microsoft Endpoint Manager管理中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ()   |
+| 全局管理员 (也称为全局管理员)  <br/><br/> *最佳做法是限制全局管理员的数量。* | 全局管理员可以执行所有类型的任务。 默认情况下，为公司注册 Microsoft 365或 Microsoft Defender for Endpoint Plan 1 的人是全局管理员。 <br/><br/> 全局管理员能够跨所有门户访问/Microsoft 365设置，例如： <br/>- [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心 ()  <br/>- Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) ()  <br/>- Microsoft Endpoint Manager管理中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ()   |
 | 安全管理员 (也称为安全管理员)  | 安全管理员可以执行安全操作员任务以及以下任务： <br/>- 监视与安全相关的策略 <br/>- 管理安全威胁和警报 <br/>- 查看报告 |
 | 安全操作员 | 安全操作员可以执行安全读者任务以及以下任务： <br/>- 查看有关检测到的威胁的信息 <br/>- 调查和响应检测到的威胁  |
 | 安全读者 | 安全读者可以执行以下任务： <br/>- 查看跨服务的安全Microsoft 365策略 <br/>- 查看安全威胁和警报 <br/>- 查看报告  |
@@ -156,13 +156,13 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 | [勒索软件缓解](#ransomware-mitigation) | 通过配置受控文件夹访问权限来设置勒索软件缓解功能，这有助于保护组织有价值的数据免受恶意应用和威胁（如勒索软件）的侵害。 | 
 | [设备控制](#device-control) | 为组织配置设备控制设置，以允许或阻止可移动设备 (如 USB 驱动器) 。 | 
 | [网络保护](#network-protection) | 设置网络保护以防止组织成员使用访问 Internet 上危险域或恶意内容的应用程序。 |
-| [Web 保护功能](#web-protection) | 设置 Web 威胁防护来保护组织设备免受网络钓鱼网站、攻击站点和其他不受信任的或低信誉网站的威胁。 设置 Web 内容筛选，以根据网站的内容类别（如 (、高带宽、成人内容或法律责任) ）跟踪和) 。 |
+| [Web 保护功能](#web-protection) | 设置 Web 威胁防护来保护组织设备免受网络钓鱼网站、攻击站点和其他不受信任的或低信誉网站的威胁。 设置 Web 内容筛选，以根据网站的内容类别（如 (、高带宽、成人内容或法律责任等）跟踪和) 。 |
 | [网络防火墙](#network-firewall) | 使用规则配置网络防火墙，这些规则确定允许哪些网络流量进入或来自组织的设备。 |
-| [应用程序控制](#application-control)  | 如果要仅允许受信任的应用程序和进程在受信任的设备上运行，请配置Windows规则。    |
+| [应用程序控制](#application-control)  | 如果希望仅允许受信任的应用程序和进程在受信任的设备上运行，请配置Windows规则。    |
 
 ### <a name="attack-surface-reduction-rules"></a>攻击面减少规则
 
-攻击面减少规则适用于运行攻击Windows。 我们建议使用Microsoft Endpoint Manager，如下图所示：
+攻击面减少规则适用于运行 Windows。 我们建议使用Microsoft Endpoint Manager，如下图所示：
 
 :::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="攻击面减少规则Microsoft Endpoint Manager":::
 
@@ -170,7 +170,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 2. 选择 **终结点安全**  >  **攻击面减少**  >  **+ 创建策略**。
 
-3. 对于 **"平台****"，Windows 10和更高版本。**
+3. 对于 **"平台****"，Windows 10"和"更高版本"。**
 
 4. 对于 **配置文件**，选择 **攻击面减少规则**， **然后选择创建**。
 
@@ -182,9 +182,9 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 8. 在" **范围标记** "选项卡上，如果组织正在使用范围标记，请选择 **"+ 选择** 范围标记"，然后选择想要使用的标记。 然后，选择"下 **一步"。** 
    
-   若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 ([RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
+   若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 [ (RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
 
-9. 在"**分配**"选项卡上，指定应应用策略的用户和组，然后选择"下一步 **"。**  (若要了解有关分配的信息，请参阅在 .Microsoft Intune 中分配[用户](/mem/intune/configuration/device-profile-assign)和设备) 
+9. 在"**分配**"选项卡上，指定应应用策略的用户和组，然后选择"下一步 **"。**  (若要了解有关分配的信息，请参阅在 .Microsoft Intune 中分配用户[和设备](/mem/intune/configuration/device-profile-assign)) 
 
 10. 在"**查看 + 创建"** 选项卡上，查看设置，然后选择"创建 **"。**
 
@@ -222,9 +222,9 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 7. 在" **范围标记** "选项卡上，如果组织正在使用范围标记，请选择 **"+ 选择** 范围标记"，然后选择想要使用的标记。 然后，选择"下 **一步"。** 
    
-   若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 ([RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
+   若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 [ (RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
 
-8. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备) 
+8. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备组。) 
 
 9. 在"**查看 + 创建**"选项卡上，查看策略的设置，然后选择"创建 **"。** 该策略将应用于不久后载入到 Defender for Endpoint 的任何终结点。
 
@@ -252,9 +252,9 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 8. 在" **范围标记** "选项卡上，如果组织正在使用范围标记，请选择 **"+ 选择** 范围标记"，然后选择想要使用的标记。 然后，选择"下 **一步"。** 
    
-   若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 ([RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
+   若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 [ (RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
 
-9. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备) 
+9. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备组。) 
 
 10. 在"**查看 + 创建**"选项卡上，查看策略的设置，然后选择"创建 **"。** 该策略将应用于不久后载入到 Defender for Endpoint 的任何终结点。
 
@@ -263,7 +263,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 ### <a name="network-protection"></a>网络保护
 
-借助网络保护，可帮助保护组织免受可能承载 Internet 上欺诈邮件、攻击和其他恶意内容危险域的攻击。 我们建议使用Microsoft Endpoint Manager启用网络保护。
+借助网络保护，可帮助保护组织免受在 Internet 上承载网络钓鱼欺诈、攻击和其他恶意内容危险域的攻击。 我们建议使用Microsoft Endpoint Manager启用网络保护。
 
 :::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="终结点保护配置文件Microsoft Endpoint Manager":::
 
@@ -283,7 +283,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
    然后选择“**下一步**”。
 
-6. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备) 
+6. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备组。) 
 
 7. 在" **适用性规则"** 选项卡上，设置规则。 你配置的配置文件将仅应用于符合你指定的组合条件的设备。 
 
@@ -306,7 +306,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
  
 2. 选择 **"终结点安全**  >  **攻击面减少"，** 然后选择 **"+ 创建策略"。**
 
-3. 选择平台（如Windows 10和更高版本）选择 **Web 保护** 配置文件，然后选择"创建 **"。** 
+3. 选择平台（如 Windows 10 和 **更高版本**）选择 **Web 保护** 配置文件，然后选择"创建 **"。** 
 
 4. 在"**基本信息"** 选项卡上，指定名称和说明，然后选择"下一步 **"。**
 
@@ -321,7 +321,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 6. 在" **范围标记** "选项卡上，如果组织正在使用范围标记，请选择 **"+ 选择** 范围标记"，然后选择想要使用的标记。 然后，选择"下 **一步"。** 
    
-   若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 ([RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
+   若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 [ (RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
 
 7. 在"**分配**"选项卡上，指定要接收 Web 保护策略的用户和设备，然后选择"下一步 **"。**
 
@@ -364,7 +364,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 2. 选择 **"终结点安全**  >  **防火墙"，** 然后选择 **"+ 创建策略"。**
 
-3. 选择平台（如 Windows 10 和 **更高版本**）选择 Microsoft **Defender 防火墙** 配置文件，然后选择"创建 **"。** 
+3. 选择平台（如 Windows 10 **及更高版本**）选择 **Microsoft Defender 防火墙** 配置文件，然后选择"创建 **"。** 
 
 4. 在"**基本信息"** 选项卡上，指定名称和说明，然后选择"下一步 **"。**
 
@@ -382,9 +382,9 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 7. 在" **范围标记** "选项卡上，如果组织正在使用范围标记，请选择 **"+ 选择** 范围标记"，然后选择想要使用的标记。 然后，选择"下 **一步"。** 
    
-   若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 ([RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
+   若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 [ (RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
 
-8. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备) 
+8. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备组。) 
 
 9. 在"**查看 + 创建"** 选项卡上，查看策略设置，然后选择"创建 **"。**
 
@@ -393,7 +393,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 ### <a name="application-control"></a>应用程序控制
 
-Windows Defender应用程序控制 (WDAC) 仅允许受信任的应用程序和进程运行，帮助保护 Windows 终结点。 大多数组织都使用 WDAC 的分阶段部署。 也就是说，大多数组织最初不会在所有 Windows中推出 WDAC。 实际上，根据组织的 Windows 终结点是完全托管、轻型托管还是"自带设备"终结点，你可以在所有或某些终结点上部署 WDAC。
+Windows Defender应用程序控制 (WDAC) 仅允许受信任的应用程序和进程运行，帮助保护 Windows 终结点。 大多数组织都使用 WDAC 的分阶段部署。 也就是说，大多数组织最初不会在所有 Windows推出 WDAC。 实际上，根据组织的 Windows 终结点是完全托管、轻型托管还是"自带设备"终结点，你可以在所有或某些终结点上部署 WDAC。
 
 若要帮助规划 WDAC 部署，请参阅以下资源：
 

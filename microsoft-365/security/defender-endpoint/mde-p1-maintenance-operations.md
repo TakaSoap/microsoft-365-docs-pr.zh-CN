@@ -1,5 +1,5 @@
 ---
-title: '管理 Microsoft Defender for Endpoint Plan 1 (预览) '
+title: '管理 Microsoft Defender for Endpoint Plan 1 (preview) '
 description: 维护和更新终结点计划 1 的 Defender。 管理设置、获取更新并解决误报/负面影响。
 search.appverid: MET150
 author: denisebmsft
@@ -14,17 +14,17 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d589a196f261d817cff3717cab613658c1533417
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: cdfe95466eeb9151fac1047850a32f5e657f4c94
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489537"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069097"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-plan-1-preview"></a>管理 Microsoft Defender for Endpoint Plan 1 (预览) 
+# <a name="manage-microsoft-defender-for-endpoint-plan-1-preview"></a>管理 Microsoft Defender for Endpoint Plan 1 (preview) 
 
 > [!TIP]
-> 如果你已Microsoft 365 E3但没有Microsoft 365 E5，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 注册预览计划！
+> 如果你已Microsoft 365 E3 A3，Microsoft 365 E5或 A5，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 注册预览计划！
 
 当你在组织中使用 Defender for Endpoint Plan 1 (预览) 时，你的安全团队可以采取某些步骤来维护你的安全解决方案。 当安全团队将维护和操作计划汇集在一起时，请确保至少包括以下活动：
 

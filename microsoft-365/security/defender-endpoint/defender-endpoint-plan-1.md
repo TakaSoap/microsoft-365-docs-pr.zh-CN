@@ -1,5 +1,5 @@
 ---
-title: '适用于终结点计划 1 的 Microsoft Defender 预览版 (概述) '
+title: '适用于 Endpoint Plan 1 的 Microsoft Defender 预览 (概述) '
 description: 获取适用于 Endpoint Plan 1 的 Defender 的概述。 了解此终结点保护订阅中包含的特性和功能。
 search.appverid: MET150
 author: denisebmsft
@@ -7,24 +7,24 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 09/13/2021
+ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2ae91e32be7d010e5b8014ba2dde47f302d0c474
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 5edc3db69c8c1f0f6f0a5f79a0838d2b054c9e91
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491381"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069109"
 ---
-# <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>适用于终结点计划 1 的 Microsoft Defender 预览版 (概述) 
+# <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>适用于 Endpoint Plan 1 的 Microsoft Defender 预览 (概述) 
 
 > [!TIP]
-> 如果你已Microsoft 365 E3但没有Microsoft 365 E5，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 注册预览计划！
+> 如果你已Microsoft 365 E3 A3，Microsoft 365 E5或 A5，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 注册预览计划！
 
 Microsoft Defender for Endpoint 是一个企业终结点安全平台，旨在帮助类似你的组织防止、检测、调查和响应高级威胁。 我们很高兴宣布 Defender for Endpoint 现已在两个计划中可用： 
 
@@ -53,7 +53,7 @@ Defender for Endpoint Plan 1 (preview) 包括以下功能：
 - **[下一代保护](#next-generation-protection)** ，包括行业领先的可靠反恶意软件和防病毒保护
 - **[检测到威胁](#manual-response-actions)** 时，安全团队可以对设备或文件执行手动响应操作（如将文件发送到隔离区）
 - **[攻击面减少功能](#attack-surface-reduction)** ，可强化设备、防止零时差攻击，并提供对终结点访问和行为精细的控制
-- **[集中配置和管理与](#centralized-management)** Microsoft 365 Defender 门户，并集成Microsoft Endpoint Manager
+- **[集中配置和管理](#centralized-management)** 与 Microsoft 365 Defender 门户，并集成Microsoft Endpoint Manager
 - **[对各种平台的保护](#cross-platform-support)**，包括Windows、macOS、iOS 和 Android 设备
 
 以下各节提供有关这些功能的更多详细信息。 
@@ -152,7 +152,7 @@ Defender for Endpoint Plan 1 (preview) 包括以下功能：
 
 ### <a name="application-control"></a>应用程序控制
 
-应用程序控件通过仅在系统核心Windows内核中运行受信任的应用程序和代码来保护 (终结点) 。 安全团队可以定义考虑应用程序属性的应用程序控制规则，例如其代码签名证书、信誉、启动过程等。 应用程序控件在 Windows 10或更高版本中可用。
+应用程序控件通过仅在系统核心Windows内核中运行受信任的应用程序和代码来保护 (终结点) 。 安全团队可以定义考虑应用程序属性的应用程序控制规则，如其代码签名证书、信誉、启动过程等。 应用程序控件在 Windows 10或更高版本中可用。
 
 若要了解更多信息，请参阅应用程序[控件Windows。](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 
@@ -168,12 +168,12 @@ Defender for Endpoint Plan 1 (preview) 包括 Microsoft 365 Defender 门户，�
 
 若要了解更多信息，请参阅 [使用基于角色的访问控制管理门户访问](rbac.md)。
 
-### <a name="reporting"></a>报告
+### <a name="reporting"></a>报表
 
-通过Microsoft 365 Defender门户 () 可轻松访问有关检测到的威胁和操作的信息 [https://security.microsoft.com](https://security.microsoft.com) ，以应对这些威胁。 
+通过Microsoft 365 Defender门户 () 可以轻松访问有关检测到的威胁和 [https://security.microsoft.com](https://security.microsoft.com) 操作的信息，以解决这些威胁。 
 
 - **主页** 包含卡片，可一目了然地显示哪些用户或设备处于风险中、检测到的威胁数量以及创建哪些警报/事件。
-- **"事件&警报**"部分列出了因触发的警报而创建的任何事件。 当跨设备检测到威胁时，将生成警报和事件。
+- " **事件&警报** "部分列出了因触发的警报而创建的任何事件。 当跨设备检测到威胁时，将生成警报和事件。
 - 操作 **中心** 列出了已采取的修正操作。 例如，如果文件被发送到隔离区，或 URL 被阻止，每个操作都列在"历史记录"选项卡上的"操作 **中心** "中。
 - " **报告** "部分包括显示检测到的威胁及其状态的报告。 
 
@@ -196,7 +196,7 @@ Defender for Endpoint Plan 1 (preview) 包括 Microsoft 365 Defender 门户，�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [比较 Microsoft Defender 终结点计划 1 (预览) 计划 2](defender-endpoint-plan-1-2.md)
+- [比较 Microsoft Defender for Endpoint Plan 1 (preview) to Plan 2](defender-endpoint-plan-1-2.md)
 - [为终结点计划 1 设置和配置 Defender (预览) ](mde-p1-setup-configuration.md)
 - [开始使用 Defender for Endpoint Plan 1 (preview) ](mde-plan1-getting-started.md)
 - [管理 Defender for Endpoint Plan 1 (预览) ](mde-p1-maintenance-operations.md)
