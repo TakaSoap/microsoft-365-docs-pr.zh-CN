@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c271aeac44e6590a4273fa9650c101a039225003
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: eb74f3fab320364c1311efa1a629e43eb90a1aae
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353649"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042754"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>在无法访问 Internet 的情况下载入设备以访问 Microsoft Defender for Endpoint
 
@@ -42,9 +42,9 @@ ms.locfileid: "59353649"
 > 以下步骤仅适用于运行早期版本的设备Windows例如：Windows Server 2016及更早版本或Windows 8.1版本。
 
 > [!NOTE]
-> - 如果通过"TelemetryProxyServer"注册表或 GPO 配置，则 OMS 网关服务器不能用作断开连接的 Windows 10 或 Windows Server 2019 设备的代理。
-> - For Windows 10 or Windows Server 2019 - while you may use TelemetryProxyServer， it must point to a standard proxy device or appliance.
-> - 此外，Windows 10环境中Windows服务器 2019 的服务器必须能够通过内部文件或 Web 服务器脱机更新证书信任列表。
+> - 如果通过"TelemetryProxyServer"注册表或 GPO 配置，则 OMS 网关服务器不能用作断开连接的 Windows 10 或 Windows Server 2019 或 Windows Server 2022 设备的代理。
+> - For Windows 10 or Windows Server 2019， or Windows Server 2022 - while you may use TelemetryProxyServer， it must point to a standard proxy device or appliance.
+> - 此外，Windows 10或 Windows Server 2019 或断开连接的环境中的 Windows Server 2022 必须能够通过内部文件或 Web 服务器脱机更新证书信任列表。
 > - 有关脱机更新 CTLS 的信息，请参阅配置文件或 [Web 服务器以下载 CTL 文件](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)。
 
 有关载入方法详细信息，请参阅以下文章：
@@ -54,21 +54,21 @@ ms.locfileid: "59353649"
 
 ## <a name="on-premises-devices"></a>本地设备
 
-- 设置 Azure Log Analytics (以前称为 OMS Gateway) 充当代理或集线器：
+- 设置 Azure Log Analytics (以前称为 OMS Gateway) 充当代理或中心：
   - [Azure Log Analytics 代理](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - [安装和配置Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace 密钥& ID
+  - [安装和配置 Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace 密钥& ID
 
 - 同一 Azure Log Analytics 网络中的脱机设备
   - 将 MMA 配置为指向：
     - 作为代理的 Azure Log Analytics IP
-    - Defender for Endpoint 工作区密钥& ID
+    - Defender for Endpoint workspace key & ID
 
 ## <a name="azure-virtual-machines"></a>Azure 虚拟机
 
 - 配置和启用 [Azure Log Analytics 工作区](/azure/azure-monitor/platform/gateway)
-  - 设置 Azure Log Analytics Gateway (以前称为 OMS 网关) 充当代理或集线器：
+  - 设置 Azure Log Analytics Gateway (以前称为 OMS Gateway) 充当代理或集线器：
     - [Azure Log Analytics 网关](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-    - [安装和配置Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace 密钥& ID
+    - [安装和配置 Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace 密钥& ID
     - 同一网络 OMS 网关中的脱机 Azure VM
       - 将 Azure Log Analytics IP 配置为代理
       - Azure Log Analytics 工作区密钥& ID

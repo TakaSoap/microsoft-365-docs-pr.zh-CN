@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: fb1f0dad7aba15b33fce51b855a9b037478db627
-ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
+ms.openlocfilehash: 5e8e18d85a0161542d988107c450a6abb9f7c7d4
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59447332"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010325"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -35,6 +35,7 @@ ms.locfileid: "59447332"
 - 从 SharePoint 网站进行外部共享
 - 非托管设备的访问
 - 身份验证内容（预览）
+- SharePoint 网站的默认共享链接（仅限 PowerShell 的配置）
 
 > [!IMPORTANT]
 > 非托管设备和身份验证上下文的设置与 Azure Active Directory 条件访问结合使用。 如果要对这些设置使用敏感度标签，必须配置此依赖功能。 下面的说明中提供了其他信息。
@@ -74,7 +75,7 @@ ms.locfileid: "59447332"
 
 ## <a name="how-to-configure-groups-and-site-settings"></a>如何配置组和网站设置
 
-按照前一章节的内容为容器启用敏感度标签后，你可以在敏感度标签向导中为组和网站配置保护设置。 在为容器启用敏感度标签之前，设置在向导中可见，但你无法对其进行配置。
+按照前一章节的内容为容器启用敏感度标签后，你可以在敏感度标签配置中为组和网站配置保护设置。 设置在为容器启用敏感度标签之前为可见，但你无法对其进行配置。
 
 1. 请遵循一般说明来 [创建或编辑敏感度标签](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，并确保为标签的作用域选择“**组和网站**”： 
     
@@ -132,7 +133,7 @@ ms.locfileid: "59447332"
 
 例如，如果你的租户被配置为“**允许仅限 Web 的受限访问**”，则允许完全访问权限的标签设置将不起作用，因为其限制性较弱。 对于此租户级设置，请选择可阻止访问的标签设置（限制性更强）或可实现受限访问的标签设置（与租户设置相同）。
 
-由于可以独立于标签配置来配置该 SharePoint 设置，因此在敏感度标签向导中不会检查依赖项是否已就位。 这些依赖项可在创建和发布标签，甚至应用标签后配置。 但是，如果已应用标签，则标签设置要在用户下次进行身份验证后才会生效。
+由于可以独立于标签配置来配置该 SharePoint 设置，因此在敏感度标签配置中不会检查依赖项是否已就位。 这些依赖项可在创建和发布标签，甚至应用标签后配置。 但是，如果已应用标签，则标签设置要在用户下次进行身份验证后才会生效。
 
 ##### <a name="more-information-about-the-dependencies-for-the-authentication-context-option"></a>有关身份验证上下文选项依赖项的详细信息
 
@@ -172,6 +173,53 @@ ms.locfileid: "59447332"
     
     - 使用 Power Apps 或 Power Automate 的工作流
     - 第三方应用
+
+### <a name="configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings"></a>使用 PowerShell 高级设置为网站的默认共享链接配置设置
+
+除了可从合规中心配置的站点和组的标签设置外，还可以配置网站的默认共享链接类型和共享链接权限。
+
+若要详细了解这些设置的工作原理，请参阅[更改网站的默认链接类型](/sharepoint/change-default-sharing-link)。
+
+共享链接的这些附加标签设置当前仅作为 PowerShell *AdvancedSettings* 参数和来自 [安全合规中心 PowerShell](/powershell/exchange/scc-powershell) 的 [set-Label](/powershell/module/exchange/set-label) 和 [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlet：
+
+- **DefaultSharingScope**：可用值为：
+    - **SpecificPeople**：将此网站的默认共享链接设置为“特定人员”链接
+    - **Organization**：将此网站的默认共享链接设置为“组织”链接或公司的可共享链接
+    - **Anyone**：将此网站的默认共享链接设置为“匿名访问”或“任何人”链接
+
+- **DefaultShareLinkPermission**:  可用值为：
+    - **View**：将网站的默认链接权限设置为“查看”权限。
+    - **Edit**：将网站的默认链接权限设置为“编辑”权限
+
+这两个设置和值等效于来自 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet 的 *DefaultSharingScope* 和 *DefaultShareLinkPermission* 参数。
+
+PowerShell 示例，其中敏感度标签 GUID 为 **8faca7b8-8d20-48a3-8ea2-0f96310a848e**：
+
+- 若要将共享链接类型设置为 SpecificPeople，请执行以下操作：
+    
+    ````powershell
+    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope="SpecificPeople"}
+    ````
+
+- 若要将共享链接权限设置为“编辑”，请执行以下操作：
+    
+    ````powershell
+    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
+    ````
+
+#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>指定高级设置的 PowerShell 提示
+
+虽然可以按其名称指定敏感度标签，但我们建议使用标签 GUID 以避免在指定标签名称或显示名称时可能产生的混淆。 若要查找 GUID，请执行以下操作：
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
+
+要删除敏感度标签中的任意一项高级设置，请使用相同的 AdvancedSettings 参数语法，同时指定一个空字符串值。例如：
+
+````powershell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScop=""}
+````
 
 ## <a name="sensitivity-label-management"></a>敏感度标签管理
 
@@ -355,7 +403,7 @@ ms.locfileid: "59447332"
 
 ## <a name="classic-azure-ad-group-classification"></a>经典 Azure AD 组分类
 
-为容器启用敏感度标签后，Microsoft 365 不再支持来自 Azure AD 的组分类，并将不会在支持敏感度标签的站点上显示。 但是，可以将旧的分类转换为敏感度标签。
+为容器启用敏感度标签后，Microsoft 365 不再支持来自 Azure AD 的组分类，并且不会显示在支持敏感度标签的站点上。但是，你可以将旧分类转换为敏感度标签。
 
 有关如何使用 SharePoint 的旧组分类的示例，请参阅 [SharePoint “新式”网站分类](/sharepoint/dev/solution-guidance/modern-experience-site-classification)。
 

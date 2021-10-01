@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 01e7c83a797930ed0137aeb864f22485f1cc581d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 06e7c1bc2fec29ad679ea12194f83a22954a5a02
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196513"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043055"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>查看 Microsoft Defender for Endpoint 体系结构要求和关键概念
 
@@ -50,9 +50,9 @@ ms.locfileid: "59196513"
 :---|:---|
 1 | 设备通过受支持的管理工具之一进行。 
 2 | On-boarded devices provide and respond to Microsoft Defender for Endpoint signal data.
-3 | 托管设备已加入和/或已注册Azure Active Directory。
-4  | 已加入域Windows 10设备使用 Azure Active Directory 同步到Azure Active Directory 连接。
-5  | Microsoft Defender for Endpoint 警报、调查和响应在 Microsoft 365 Defender。
+3 | 托管设备已加入和/或注册Azure Active Directory。
+4  | 已加入域Windows设备使用 Azure Active Directory 同步到Azure Active Directory 连接。
+5 | Microsoft Defender for Endpoint 警报、调查和响应在 Microsoft 365 Defender。
 
 ## <a name="understand-key-concepts"></a>了解关键概念
 
@@ -65,8 +65,8 @@ ms.locfileid: "59196513"
 终结点检测和响应 | 终结点检测和响应功能提供接近实时且可操作的高级攻击检测。 | [终结点检测和响应功能概述](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 行为阻止和抑制 | 行为阻止和抑制功能可帮助根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 | [行为阻止和控制](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
 自动调查和响应 | 自动调查使用各种基于安全分析员所使用的流程的检查算法，旨在检查警报并立即采取措施来解决违规问题。 | [使用自动调查调查和修正威胁](/microsoft-365/security/defender-endpoint/automated-investigations)
-高级搜寻 | 高级搜寻是一种基于查询的威胁搜寻工具，允许你浏览最多 30 天的原始数据，以便你可以主动检查网络中事件以查找威胁指示器和实体。 | [高级搜寻概述](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
-威胁分析 | 威胁分析是来自专家 Microsoft 安全研究人员的一组报告，涉及最相关的威胁。 | [跟踪并响应新出现的威胁](/microsoft-365/security/defender-endpoint/threat-analytics)
+高级搜寻 | 高级搜寻是基于查询的威胁搜寻工具，允许你浏览最多 30 天的原始数据，以便你可以主动检查网络中事件以查找威胁指示器和实体。 | [高级搜寻概述](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
+威胁分析 | 威胁分析是一组来自专业 Microsoft 安全研究人员的报告，涉及最相关的威胁。 | [跟踪并响应新出现的威胁](/microsoft-365/security/defender-endpoint/threat-analytics)
 
 
 有关 Microsoft Defender for Endpoint 中包含的功能的更多详细信息，请参阅什么是[Microsoft Defender for Endpoint。](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 99a07b1517058b0e5ab241aaae9c6899e2994432
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 88d91e2434871014cf286bbb27812e60036cb5cb
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162219"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042718"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -50,9 +50,9 @@ ms.locfileid: "59162219"
 | `ClientVersion` | string | 计算机上运行的终结点代理或传感器的版本 |
 | `PublicIP` | string | 已载入计算机用于连接到 Microsoft Defender for Endpoint 服务的公共 IP 地址。 这可能是计算机本身、NAT 设备或代理的 IP 地址 |
 | `OSArchitecture` | string | 计算机上运行的操作系统的体系结构 |
-| `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7 |
+| `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10和 Windows 7。 |
 | `OSBuild` | string | 计算机上运行的操作系统的生成版本 |
-| `IsAzureADJoined` | 布尔 | 用于指示计算机是否已加入域的布尔Azure Active Directory |
+| `IsAzureADJoined` | boolean | 指示计算机是否已加入到计算机中的布尔Azure Active Directory |
 | `AadObjectId` | string | Azure AD 中设备的唯一标识符 |
 | `LoggedOnUsers` | string | 事件时以 JSON 数组格式登录的所有用户的列表 |
 | `RegistryDeviceTag` | string | 通过注册表添加的机器标记 |

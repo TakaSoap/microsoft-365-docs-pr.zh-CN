@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ae3b0e3ad09487d9b48ddab10a43eb36e5abed35
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 7f18d72907ec8f2775ee258906c9185672bfa9be
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353643"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041692"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>在设备上运行实时响应命令
 
@@ -50,9 +50,9 @@ ms.locfileid: "59353643"
 
 ## <a name="limitations"></a>限制
 
-1. 此 API 的速率限制是每分钟 10 次调用 (HTTP 429 请求响应其他) 。
+1. 此 API 的速率限制是每分钟 10 次 (HTTP 429 请求响应其他) 。
 
-2. 25 个并发运行的 (超出限制的请求将收到"429 - 请求过多"响应) 。
+2. 25 个并发 (超过限制的请求将收到"429 - 请求过多"响应) 。
 
 3. 如果计算机不可用，会话将排入队列最多 3 天。
 
@@ -68,20 +68,22 @@ ms.locfileid: "59353643"
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的** Windows。
+- **验证是否正在运行受支持的 Windows** 版本。
 
-  设备必须运行以下版本之一的 Windows
+  设备必须运行以下版本之一Windows
 
   - **Windows 10**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
     - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [版本 1809 (RS 5 ](/windows/whats-new/whats-new-windows-10-version-1809)) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [版本 1809 (RS 5) ](/windows/whats-new/whats-new-windows-10-version-1809) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **WindowsServer 2019 - 仅适用于公共预览版**
-    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
     - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
+    
+  - **Windows Server 2022**
 
 ## <a name="permissions"></a>权限
 
@@ -102,7 +104,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |名称|类型|说明|
 |---|---|---|
-|Authorization|String|Bearer\<token>\. 必需。|
+|Authorization|字符串|Bearer\<token>\. 必需。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文

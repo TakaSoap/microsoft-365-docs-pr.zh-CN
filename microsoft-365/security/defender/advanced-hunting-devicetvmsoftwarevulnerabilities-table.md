@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 17faffc45cfd1f472dec3f423681aaa3f64944a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 603594e80b85dbcc63c73944d369d00c16da4e52
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196266"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042947"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -39,7 +39,7 @@ ms.locfileid: "59196266"
 >[!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-高级 `DeviceTvmSoftwareVulnerabilities` 搜寻架构中的表包含已安装 [软件](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) &漏洞的威胁和漏洞管理列表。 此表还包括操作系统信息、CVE ID 和漏洞严重性信息。 例如，您可以使用此表来搜寻涉及其软件中具有严重漏洞的设备的事件。 使用此参考来构建从该表返回信息的查询。
+高级 `DeviceTvmSoftwareVulnerabilities` 搜寻架构中的表包含已安装 [软件&](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 漏洞的威胁和漏洞管理列表。 此表还包括操作系统信息、CVE ID 和漏洞严重性信息。 例如，您可以使用此表来搜寻涉及其软件中具有严重漏洞的设备的事件。 使用此参考来构建从该表返回信息的查询。
 
 >[!NOTE]
 > 和 `DeviceTvmSoftwareInventory` `DeviceTvmSoftwareVulnerabilities` 表已替换 `DeviceTvmSoftwareInventoryVulnerabilities` 表。 前两个表一起包含更多列，可用于帮助通知 vulnerablity 管理活动或搜寻易受攻击的设备。
@@ -50,7 +50,7 @@ ms.locfileid: "59196266"
 |-------------|-----------|-------------|
 | `DeviceId` | string | 服务中的计算机的唯一标识符 |
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
-| `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
+| `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10和 Windows 7。 |
 | `OSVersion` | string | 计算机上运行的操作系统版本 |
 | `OSArchitecture` | string | 计算机上运行的操作系统的体系结构 |
 | `SoftwareVendor` | string | 软件供应商的名称 |
@@ -59,7 +59,7 @@ ms.locfileid: "59196266"
 | `CveId` | string | 通用漏洞披露 (CVE) 系统下分配给安全漏洞的唯一标识符 |
 | `VulnerabilitySeverityLevel` | string | 基于 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别 |
 | `RecommendedSecurityUpdate` | string | 软件供应商提供的用于解决漏洞的安全更新的名称或说明 |
-| `RecommendedSecurityUpdateId` | string | 相应指南或知识库文章的适用安全更新或 (标识符) 标识符 |
+| `RecommendedSecurityUpdateId` | string | 相应指南或知识库的适用安全更新或标识符的标识符 (KB) 文章 |
 
 
 

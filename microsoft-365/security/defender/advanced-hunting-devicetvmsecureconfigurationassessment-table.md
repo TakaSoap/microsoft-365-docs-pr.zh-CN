@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2e3e649911cb2ce63c2a49be0ebc93e35e8055d6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae7dac229aba0d5c4cbfc32782fe1a4ad5613c8f
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161956"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043283"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -46,16 +46,16 @@ ms.locfileid: "59161956"
 |-------------|-----------|-------------|
 | `DeviceId` | string | 服务中设备的唯一标识符 |
 | `DeviceName` | string | 设备的完全限定 (FQDN) FQDN |
-| `OSPlatform` | string | 在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。|
+| `OSPlatform` | string | 在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10和 Windows 7。|
 | `Timestamp` | datetime | 生成记录的日期和时间 |
 | `ConfigurationId` | string | 特定配置的唯一标识符 |
 | `ConfigurationCategory` | string | 配置所属的类别或分组：应用程序、OS、网络、帐户、安全控件 |
 | `ConfigurationSubcategory` | string | 配置所属的子类别或子组。 在许多情况下，它用于描述特定的功能。 |
 | `ConfigurationImpact` | string | 配置对总体配置评分的影响程度 (1-10) |
 | `IsCompliant` | boolean | 指示是否正确配置了配置或策略 |
-| `IsApplicable` | 布尔 | 指示配置或策略是否适用于设备 |
+| `IsApplicable` | boolean | 指示配置或策略是否适用于设备 |
 | `Context` | string | 有关配置或策略的其他上下文信息 |
-| `IsExpectedUserImpact` | 布尔 | 指示应用配置或策略时是否会影响用户 |
+| `IsExpectedUserImpact` | boolean | 指示应用配置或策略时是否会影响用户 |
 
 ## <a name="related-topics"></a>相关主题
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: 3ccb0bf5392bcfd8b520c1124d5daa568f1bc8be
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2d60897d00b2b0228fd1a716dd9b4b7bb12a7bb9
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201702"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041668"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>通过模拟攻击体验 Microsoft Defender for Endpoint 
 
@@ -42,7 +42,7 @@ ms.locfileid: "59201702"
 
 在将多个设备载入服务之前，你可能想要体验 Defender for Endpoint。 为此，可以在一些测试设备上运行受控攻击模拟。 运行模拟攻击后，你可以查看 Defender for Endpoint 如何显示恶意活动，并探索它如何启用有效的响应。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 若要运行任何提供的模拟，你至少需要一 [个已载入的设备](onboard-configure.md)。
 
@@ -69,4 +69,4 @@ ms.locfileid: "59201702"
 ## <a name="related-topics"></a>相关主题
 
 - [载入设备](onboard-configure.md)
-- [载入 Windows 10 设备](configure-endpoints.md)
+- [载入Windows设备](configure-endpoints.md)

@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1e754f43cc1963ae7991a72a65fef2aefa833305
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 3f4a0c8fbcfe58a252bb393fdba837e6ecad85ab
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498060"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041644"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>关于 Microsoft Defender 防病毒软件的报告
 
@@ -33,21 +33,21 @@ ms.locfileid: "59498060"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender 防病毒内置于 Windows 10、Windows Server 2019 和 Windows Server 2016。 Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 中的下一代保护。 下一代保护可帮助保护设备免受电子邮件、应用、云和 Web 中的软件威胁，如病毒、恶意软件和间谍软件。
+Microsoft Defender 防病毒内置于 Windows 10、Windows Server 2019、Windows Server 2022 和 Windows Server 2016。 Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 中的下一代保护。 下一代保护可帮助保护设备免受电子邮件、应用、云和 Web 中的软件威胁，如病毒、恶意软件和间谍软件。
 
-通过Microsoft Defender 防病毒，你可以查看保护状态和警报的几个选项。 可以使用此Microsoft Endpoint Manager[监视Microsoft Defender 防病毒](/configmgr/protect/deploy-use/monitor-endpoint-protection)[或创建电子邮件警报](/configmgr/protect/deploy-use/endpoint-configure-alerts)。 或者，您可以使用 Microsoft Intune 监视[保护](/intune/introduction-intune)。
+通过Microsoft Defender 防病毒，你可以选择多个选项来查看保护状态和警报。 可以使用此Microsoft Endpoint Manager[监视Microsoft Defender 防病毒](/configmgr/protect/deploy-use/monitor-endpoint-protection)[或创建电子邮件警报](/configmgr/protect/deploy-use/endpoint-configure-alerts)。 或者，您可以使用 Microsoft Intune 监视[保护](/intune/introduction-intune)。
 
-Microsoft Operations Management Suite 具有[一个更新](/windows/deployment/update/update-compliance-get-started)合规性加载项，可报告关键Microsoft Defender 防病毒问题，包括保护更新和实时保护设置。
+Microsoft Operations Management Suite 具有[更新](/windows/deployment/update/update-compliance-get-started)合规性加载项，可报告关键Microsoft Defender 防病毒问题，包括保护更新和实时保护设置。
 
-如果你有 SIEM 服务器的第三方安全 (事件) ，还可以使用Windows Defender[事件](/windows/win32/events/windows-events)。
+如果你拥有 SIEM 服务器的第三方安全 (事件) ，还可以使用Windows Defender[事件](/windows/win32/events/windows-events)。
 
-Windows 事件由多个安全事件源组成，包括安全帐户管理器 (SAM) 事件 (增强了[Windows 10，](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)另请参阅安全审核主题) 和 Windows Defender[](/windows/device-security/auditing/security-auditing-overview)[事件](troubleshoot-microsoft-defender-antivirus.md)。
+Windows 事件由多个安全事件源组成，包括安全帐户管理器 (SAM) 事件 ([增强了 Windows 10，](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)另请参阅安全审核主题) 和 Windows Defender[](/windows/device-security/auditing/security-auditing-overview)[事件](troubleshoot-microsoft-defender-antivirus.md)。
 
 可以使用事件收集器 集中聚合Windows[事件](/windows/win32/wec/windows-event-collector)。 通常，SIEM 服务器具有用于Windows事件的连接器，从而使你可以关联 SIEM 服务器中的所有安全事件。
 
 您还可以使用 [Log Analytics 中的恶意软件评估解决方案监视恶意软件事件](/azure/log-analytics/log-analytics-malware)。
 
-有关使用 PowerShell、WMI 或 Microsoft Azure 监视或确定状态的信息，请参阅 ([Deployment， management， and reporting options table) ](deploy-manage-report-microsoft-defender-antivirus.md#ref2)。
+有关使用 PowerShell、WMI 或 Microsoft Azure 监视或确定状态的信息， (部署、管理和报告选项[表) 。 ](deploy-manage-report-microsoft-defender-antivirus.md#ref2)
 
 ## <a name="related-articles"></a>相关文章
 

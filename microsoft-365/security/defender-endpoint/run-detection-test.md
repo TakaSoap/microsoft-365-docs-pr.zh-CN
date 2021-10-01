@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 63c75ccb3ce8d3063235763986d5b9e85969ef45
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: 11b7339dce44d3fb55593e7b54a5d38982f957cd
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477631"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043295"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>在新载入的 Microsoft Defender 终结点设备上运行检测测试
 
@@ -34,7 +34,8 @@ ms.locfileid: "59477631"
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows服务器版本 1803
-- WindowsServer， 2019
+- Windows Server 2019
+- Windows Server 2022
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

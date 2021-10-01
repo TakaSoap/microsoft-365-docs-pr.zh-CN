@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a2652b3a324bd13ce8e438641b54eef5aa97125e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 62f62e421c789f419eeabe174b0d05ae36e3dd4b
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196016"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042598"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新增功能
 
@@ -34,7 +34,7 @@ ms.locfileid: "59196016"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)。
 
-以下功能在最新版本的 Microsoft Defender 终结点 (GA) 中为预览版或通用版本，Windows 10 Windows Server 中的安全功能。
+以下功能在最新版本的 Microsoft Defender 终结点 (GA) 中为预览版或通用版本提供，Windows 10 Windows Server 中的安全功能。
 
 有关预览功能的详细信息，请参阅预览 [功能](preview.md)。
 
@@ -62,7 +62,7 @@ ms.locfileid: "59196016"
 
 ## <a name="august-2021"></a>2021 年 8 月
 
--  (预览) [Microsoft Defender for Endpoint 计划 1 ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (preview) 是一款终结点保护解决方案，包括下一代保护、攻击面减少、集中管理和报告以及 API。 Defender for Endpoint Plan 1 (preview) 是一款新产品，适用于想要试用终结点保护功能、拥有 Microsoft 365 E3 且尚未使用 Microsoft 365 E5 的客户。 
+-  (适用于终结点) [1 的 Microsoft Defender 预览版 ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (preview) 是一款终结点保护解决方案，包括下一代保护、攻击面减少、集中管理和报告以及 API。 Defender for Endpoint Plan 1 (preview) 是一款新产品，适用于想要试用终结点保护功能、拥有 Microsoft 365 E3 且尚未使用 Microsoft 365 E5 的客户。 
 
    若要了解更多信息，请参阅 [Microsoft Defender for Endpoint Plan 1 (preview) ](defender-endpoint-plan-1.md)。 现有的 [Defender for Endpoint](microsoft-defender-endpoint.md) 功能称为 Defender for Endpoint Plan 2。 
 
@@ -74,9 +74,9 @@ ms.locfileid: "59196016"
 
 ## <a name="june-2021"></a>2021 年 6 月
 
-- [Delta 导出软件漏洞评估](get-assessment-methods-properties.md#31-methods) API <br> 导出漏洞和安全配置 API 集合 [评估的](get-assessment-methods-properties.md) 新增内容。 <br> 与完整的软件漏洞评估 (JSON 响应) （用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 API 调用仅用于获取所选日期和当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞"或"向组织添加了多少新漏洞"。
+- [Delta 导出软件漏洞评估](get-assessment-methods-properties.md#31-methods) API <br> 导出漏洞和安全配置 API 集合 [评估的](get-assessment-methods-properties.md) 新增内容。 <br> 与完整的软件漏洞评估 (JSON 响应) （用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 API 调用仅用于获取所选日期与当前日期之间发生的更改 ("增量"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞"或"向组织添加了多少新漏洞"。
 
-- [导出漏洞和安全配置评估](get-assessment-methods-properties.md) API <br> 添加 API 集合，这些 API 危险和漏洞管理每个设备提取数据。 不同的 API 调用用于获取不同类型的数据：安全配置评估、软件清单评估和软件漏洞评估。 每个 API 调用都包含组织中设备的必要数据。
+- [导出漏洞和安全配置评估](get-assessment-methods-properties.md) API <br> 添加 API 集合，用于危险和漏洞管理提取数据。 不同的 API 调用用于获取不同类型的数据：安全配置评估、软件清单评估和软件漏洞评估。 每个 API 调用都包含组织中设备的必要数据。
 
 - [修正活动](get-remediation-methods-properties.md) API <br>  添加包含响应的 API 集合，危险和漏洞管理已在租户中创建的修正活动。 响应信息类型包括一个按 ID 的修正活动、所有修正活动以及一个修正活动的公开设备。
 
@@ -95,9 +95,9 @@ ms.locfileid: "59196016"
 
 
 ## <a name="march-2021"></a>2021 年 3 月
-- [使用管理程序管理防Microsoft Defender 安全中心](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> 您可以使用名为租户附加 Windows 10 Windows Server 2016 Windows Server 2019 上管理防 *篡改保护设置*。
+- [使用管理程序管理防Microsoft Defender 安全中心](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> 您可以使用称为租户附加 的方法在 Windows 10、Windows Server 2016、Windows Server 2019 和 Windows Server 2022 上管理防篡改 *保护设置*。
 
 
 ## <a name="january-2021"></a>2021 年 1 月
 
-- [Windows 虚拟桌面](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint 现在添加了对虚拟桌面Windows支持。
+- [Windows 虚拟桌面](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint 现在增加了对虚拟Windows的支持。

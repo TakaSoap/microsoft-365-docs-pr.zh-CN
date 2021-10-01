@@ -18,12 +18,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 34c293884a30912485e380da8b7408593435f28c
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 325859d8bbaed92baafebf81c1f38c8100dd4bbe
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490209"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043139"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>使用受控文件夹访问保护文重要件夹
 
@@ -37,7 +37,7 @@ ms.locfileid: "59490209"
 
 ## <a name="what-is-controlled-folder-access"></a>什么是受控文件夹访问权限？
 
-受控文件夹访问权限有助于保护你有价值的数据免受恶意应用和威胁（如勒索软件）的侵害。 受控文件夹访问权限通过针对已知受信任应用列表检查应用来保护你的数据。 在 Windows Server 2019 和 Windows 10 客户端上支持，可针对托管设备) 使用 Windows 安全中心 应用、Microsoft Endpoint Configuration Manager 或 Intune (打开受控文件夹) 。
+受控文件夹访问权限有助于保护你有价值的数据免受恶意应用和威胁（如勒索软件）的侵害。 受控文件夹访问权限通过针对已知受信任应用列表检查应用来保护你的数据。 在 Windows Server 2019、Windows Server 2022 和 Windows 10 客户端上支持，可针对托管设备) 使用 Windows 安全中心 应用、Microsoft Endpoint Configuration Manager 或 Intune (打开受控文件夹访问权限。
 
 > [!NOTE]
 > 脚本引擎不受信任，你无法允许它们访问受控的受保护文件夹。 例如，即使允许使用证书和文件指示器，PowerShell 也不受受控文件夹访问权限 [信任](/microsoft-365/security/defender-endpoint/indicator-certificates)。
@@ -63,14 +63,15 @@ ms.locfileid: "59490209"
 
 受保护的 [文件夹包括](#review-controlled-folder-access-events-in-windows-event-viewer) 公用系统文件夹 (包括启动) ，你可以 [添加更多文件夹](customize-controlled-folders.md#protect-additional-folders)。 还可以允许 [应用](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) 向它们授予对受保护文件夹的访问权限。
 
-可以使用审核 [模式评估](audit-windows-defender.md) 受控文件夹访问权限启用后对组织的影响。 您还可以访问 Windows Defender 测试场网站[demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)以确认功能是否正常工作并查看其工作方式。
+可以使用审核 [模式评估](audit-windows-defender.md) 受控文件夹访问权限启用后对组织的影响。 您还可以访问 Windows Defender Test ground 网站，demo.wd.microsoft.com[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认该功能是否正常工作并查看其工作方式。
 
 受控文件夹访问权限支持以下版本的 Windows：
 
 - [Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)及更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- Windows Server 2022
 
-## <a name="windows-system-folders-are-protected-by-default"></a>Windows系统文件夹受默认保护
+## <a name="windows-system-folders-are-protected-by-default"></a>Windows默认保护系统文件夹
 
 Windows默认保护系统文件夹以及其他一些文件夹：
 
@@ -111,7 +112,7 @@ DeviceEvents
 1. 下载 [评估包](https://aka.ms/mp7z2w) ，将文件 *cfa-events.xml* 到设备上易于访问的位置。
 2. 在 **事件** 查看器中键入"开始"菜单以打开Windows事件查看器。
 3. 在左侧面板的"操作 **"下**，选择 **"导入自定义视图..."。**
-4. 导航到 *提取文件cfa-events.xml* 并选择它。 或者，[直接复制 XML。](event-views.md)
+4. 导航到提取 *文件cfa-events.xml并选择* 它。 或者，[直接复制 XML。](event-views.md)
 5. 选择“确定”。
 
 下表显示与受控文件夹访问权限相关的事件：
@@ -126,9 +127,9 @@ DeviceEvents
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>查看或更改受保护的文件夹列表
 
-可以使用该Windows 安全中心查看受受控文件夹访问权限保护的文件夹列表。
+可以使用 Windows 安全中心 应用查看受受控文件夹访问权限保护的文件夹列表。
 
-1. 在 Windows 10 设备上，打开 Windows 安全中心 应用。
+1. 在 Windows 10 设备上，打开Windows 安全中心应用。
 2. 选择“**病毒和威胁防护**”。
 3. 在 **勒索软件保护下**，选择 **管理勒索软件保护**。
 4. 如果关闭受控文件夹访问权限，你需要将其打开。 选择 **受保护的文件夹**。
@@ -137,4 +138,4 @@ DeviceEvents
    - 若要删除文件夹，请选择该文件夹，然后选择"删除 **"。**
 
 > [!NOTE]
-> [Windows系统文件夹](#windows-system-folders-are-protected-by-default)默认受到保护，并且无法从列表中删除它们。
+> [Windows默认保护](#windows-system-folders-are-protected-by-default)系统文件夹，并且无法从列表中删除它们。

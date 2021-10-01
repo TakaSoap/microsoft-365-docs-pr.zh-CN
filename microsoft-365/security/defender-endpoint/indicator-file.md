@@ -1,7 +1,7 @@
 ---
 title: 创建文件指示器
 ms.reviewer: ''
-description: 创建文件哈希的指示器，以定义实体的检测、防范和排除。
+description: 为定义实体的检测、防范和排除的文件哈希创建指示器。
 keywords: 文件， 哈希， 管理， 允许， 阻止， 阻止， 清理， 恶意， 文件哈希， ip 地址， url， 域
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8c8de260ebd8d16d7b402465e91a37d78e9d904b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 34c2e3a797dd463ad44fbc5d8576bc2b77b75f5c
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170497"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042646"
 ---
 # <a name="create-indicators-for-files"></a>创建文件指示器
 
@@ -44,19 +44,19 @@ ms.locfileid: "59170497"
 - 通过使用文件详细信息页中的添加指示器按钮创建上下文指示器
 - 通过指示器 [API 创建指示器](ti-indicator.md)
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在创建文件指示器之前，了解以下先决条件很重要：
 
-- 如果你的组织在活动模式下使用 **Microsoft Defender 防病毒 (，)** 启用基于云的 **保护，则此功能可用**。 有关详细信息，请参阅 [管理基于云的保护](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+- 如果你的组织在活动模式下使用 **Microsoft Defender 防病毒 (，) 启用** 基于云的保护，则此功能 **可用**。 有关详细信息，请参阅 [管理基于云的保护](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 
 - 反恶意软件客户端版本必须为 4.18.1901.x 或更高版本。 请参阅 [每月平台和引擎版本](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- 在具有 Windows 10 版本 1703 或更高版本、Windows Server 2016 2019 的设备上受支持。
+- 在具有 Windows 10 版本 1703 或更高版本、Windows Server 2016、2019 和 Windows Server 2022 的设备上受支持。
 
-- 若要开始阻止文件，首先需要打开"阻止或允许" [功能设置。](advanced-features.md)
+- 若要开始阻止文件，首先需要打开"阻止或允许 ["设置。](advanced-features.md)
 
-此功能旨在防止从 (下载可疑恶意软件或) 恶意文件。 它目前支持可移植的可执行 (PE) 文件，包括.exe和.dll文件。 覆盖范围将随着时间的推移而延长。
+此功能旨在防止从 (下载可疑的恶意软件) 或潜在的恶意文件。 它当前支持可移植的可执行 (PE) 文件，包括.exe和.dll文件。 覆盖范围将随着时间的推移而延长。
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>从设置页创建文件指示器
 
@@ -75,14 +75,14 @@ ms.locfileid: "59170497"
 
 ## <a name="create-a-contextual-indicator-from-the-file-details-page"></a>从文件详细信息页面创建上下文指示器
 
-对文件执行响应 [操作的选项](respond-file-alerts.md)之一是   添加文件指示器。 为文件添加指示器哈希时，可以选择引发警报，并阻止组织中设备尝试运行该文件。
+对文件执行响应 [操作的选项](respond-file-alerts.md)之一   是添加文件指示器。 为文件添加指示器哈希时，可以选择引发警报，并阻止组织中设备尝试运行该文件。
 
 由指示器自动阻止的文件不会显示在文件的"操作中心"中，但警报仍显示在警报队列中。
 
 ## <a name="public-preview-alerting-on-file-blocking-actions"></a>公共预览版：针对文件阻止操作发出警报
 
 > [!IMPORTANT]
-> 本节中的信息 (自动调查和修正引擎的公共预览 **版) 预** 发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
+> 本节中 (公共预览版 **自动** 调查和修正引擎) 与预发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
 文件 IOC 当前支持的操作包括允许、审核、阻止和修正。
 选择阻止文件后，可以选择是否需要触发警报。 这样，你将能够控制向安全运营团队发出警报的数量，并确保只引发所需的警报。
@@ -108,7 +108,7 @@ In Microsoft 365 Defender， go to 设置 > Endpoints > Indicators > add new Fil
 ## <a name="public-preview-advanced-hunting-capabilities"></a>公共预览版：高级搜寻功能
 
 > [!IMPORTANT]
-> 本节中 (自动调查和修正引擎的公共预览 **版) 与** 预发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
+> 本节中的信息 (公共预览版 **自动** 调查和修正引擎) 预发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
 你可以提前搜寻查询响应操作活动。 下面是一个示例高级搜寻查询：
 
@@ -137,19 +137,19 @@ Timestamp > ago(30d)
 
 证书和文件 IoC 策略处理冲突将遵循以下顺序：
 
-- 如果应用程序控制和 AppLocker Windows Defender策略不允许该文件，**则阻止**
-- 否则，如果文件由用户排除Microsoft Defender 防病毒，则 **Allow**
+- 如果应用程序控制和 AppLocker Windows Defender文件强制实施模式策略/策略，则 **阻止**
+- 否则，如果文件由用户排除Microsoft Defender 防病毒，**则** Allow
 - 否则，如果阻止或警告文件 IoC 阻止或警告文件，则 **阻止/警告**
 - 否则，如果允许文件 IoC 策略允许该文件 **，则允许**
 - 否则，如果该文件被 ASR 规则、CFA、AV、SmartScreen 阻止，则 **阻止**
-- Else **Allow** (AppLocker Windows Defender应用程序控制&，任何 IoC 规则都不适用于它) 
+- Else **允许** (应用Windows Defender AppLocker &，则应用任何 IoC 规则) 
 
-如果存在具有相同强制类型和目标的冲突文件 IoC 策略，则更安全的策略 (将应用) 哈希。 例如，如果 SHA-256 文件哈希 IoC 策略定义相同的文件，则策略将超过 MD5 文件哈希 IoC 策略。
+如果存在具有相同强制类型和目标的冲突文件 IoC 策略，则更安全的文件 ioC 策略 (这意味着将应用) 哈希时间更长。 例如，如果 SHA-256 文件哈希 IoC 策略定义同一个文件，则它将超过 MD5 文件哈希 IoC 策略。
 
 > [!WARNING]
 > 文件和证书的策略冲突处理与域/URL/IP 地址的策略冲突处理不同。
 
-威胁漏洞管理阻止易受攻击的应用程序功能使用文件 IoC 进行强制执行，并遵循上述冲突处理顺序。
+威胁漏洞管理阻止易受攻击的应用程序功能使用文件 IoC 进行强制执行，并且将遵循上述冲突处理顺序。
 
 ### <a name="examples"></a>示例
 

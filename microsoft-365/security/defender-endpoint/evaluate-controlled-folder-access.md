@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9533cff93c3e7f5a1859834d93541a1f818eca21
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 708d7d271e03b127460d5b2aa2745568d920a198
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489579"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042874"
 ---
 # <a name="evaluate-controlled-folder-access"></a>受控文件夹访问评估
 
@@ -33,7 +33,7 @@ ms.locfileid: "59489579"
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
 
-[受控文件夹](controlled-folders.md) 访问权限是一项有助于保护文档和文件免受可疑或恶意应用修改的功能。 受控文件夹访问权限在 Windows Server 2019 和 Windows 10 客户端上受支持。
+[受控文件夹](controlled-folders.md) 访问权限是一项有助于保护文档和文件免受可疑或恶意应用修改的功能。 受控文件夹访问权限在 Windows Server 2019、Windows Server 2022 和 Windows 10 客户端上受支持。
 
 它尤其有助于防范尝试加密文件并[](https://www.microsoft.com/wdsi/threats/ransomware)阻止其成为勒索软件。
 
@@ -53,12 +53,12 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 ```
 
 > [!TIP]
-> 如果你想要完全审核受控文件夹访问权限在组织中如何工作，则需要使用管理工具将此设置部署到网络中设备 () 。
+> 如果你想要完全审核受控文件夹访问权限在组织中如何工作，你将需要使用管理工具将此设置部署到网络 (设备) 。
 您还可以使用组策略、Intune、移动设备管理 (MDM) 或 Microsoft Endpoint Manager 配置和部署设置，如主要的受控文件夹[访问权限主题中所述](controlled-folders.md)。
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在事件查看器中查看受控Windows访问事件
 
-以下受控文件夹访问权限事件显示在 Microsoft/Windows/Windows/Windows Defender/Operational 文件夹下的事件查看器中。
+以下受控文件夹访问权限事件显示在 microsoft/Windows/Windows/Windows Defender/Operational 文件夹下的事件查看器中。
 
 事件 ID | 描述
 -|-

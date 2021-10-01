@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 02/07/2020
+ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: e61e525f23cf1e763c64fae1828e7d505d51a5cb
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 9a5ef03cf94501d83340f159ecd1b54f26f68b0a
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401994"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042923"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>使用配置Windows 10载入新设备
 
@@ -33,7 +33,7 @@ ms.locfileid: "59401994"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Endpoint Configuration Manager当前分支
-- 系统中心 2012 R2 配置管理器
+- System Center 2012 R2 Configuration Manager
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)。
 
@@ -53,19 +53,20 @@ ms.locfileid: "59401994"
   - Windows Server 2016
   - Windows Server 2016版本 1803 或更高版本
   - Windows Server 2019
+  - Windows Server 2022
 
 > [!NOTE]
-> 若要详细了解如何载入 Windows Server 2012 R2、Windows Server 2016 和 Windows Server 2019，请参阅载入[Windows 服务器](configure-server-endpoints.md)。
+> 若要详细了解如何载入 Windows Server 2012 R2、Windows Server 2016、Windows Server 2019 和 Windows Server 2022，请参阅载入[Windows 服务器](configure-server-endpoints.md)。
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>使用移动设备载入System Center Configuration Manager
 
 请查看[PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)或[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Microsoft Defender for Endpoint 的各种路径。
 
-1. 打开 Configuration Manager 配置.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的文件。 还可以从门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
-    1. 在导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **载入"。**
+1. 打开 Configuration Manager 配置.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的文件。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
+    1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **载入"。**
     2. 选择Windows 10作为操作系统。
-    3. 在 **"部署方法"** 字段中，选择 **"System Center Configuration Manager 2012/2012 R2/1511/1602"。**
-    4. 选择 **"下载** 程序包"，然后保存.zip文件。
+    3. 在"**部署方法"** 字段中，选择 **"System Center Configuration Manager 2012/2012 R2/1511/1602"。**
+    4. 选择 **"下载程序包**"，然后保存.zip文件。
 
 2. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATPOnboardingScript.cmd 的文件*。
 
@@ -74,10 +75,10 @@ ms.locfileid: "59401994"
    选择要将程序包部署到的预定义设备集合。
 
 > [!NOTE]
-> 在 OOBE 体验阶段，Defender for Endpoint[不支持 (载入) 。](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 确保用户在运行完安装或升级Windows OOBE。
+> 在 OOBE 的"开箱即用体验"阶段，Defender [ (OOBE) ](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 载入。 确保用户在运行完安装或升级后Windows OOBE。
 >
 > 请注意，在 Configuration Manager 应用程序上创建检测规则可以持续检查设备是否已载入。 应用程序是一种与包和程序不同的对象类型。
-> 如果由于挂起的 OOBE (或其他任何原因) ，设备尚未载入，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
+> 如果由于挂起的 OOBE (任何其他原因) ，设备尚未载入，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
 >
 > 通过创建检测规则检查"OnboardingState"注册表值是否为 (= 1，REG_DWORD) 实现此行为。
 > 此注册表值位于"HKLM\SOFTWARE\Microsoft\Windows高级威胁防护\状态"下。
@@ -147,7 +148,7 @@ Value: 0 or 1
 
 在审核或阻止模式下启用网络保护之前，请确保已安装反恶意软件平台更新，该更新可以从支持 [页面获取](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
 
-#### <a name="controlled-folder-access"></a>受控文件夹访问
+#### <a name="controlled-folder-access"></a>文件夹限制访问
 
 在审核模式下启用该功能至少 30 天。 在此时间段后，检查检测并创建允许写入受保护目录的应用程序列表。
 
@@ -166,15 +167,15 @@ Value: 0 or 1
 
 ### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>使用当前分支Microsoft Endpoint Manager载设备
 
-如果使用 Microsoft Endpoint Manager当前分支，请参阅[创建载出配置文件](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
+如果使用Microsoft Endpoint Manager分支，请参阅创建[载出配置文件](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>使用 System Center 2012 R2 Configuration Manager 的载出设备
 
 1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
     1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **""载出"。**  
     1. 选择Windows 10作为操作系统。
-    1. 在 **"部署方法"** 字段中，选择 **"System Center Configuration Manager 2012/2012 R2/1511/1602"。**
-    1. 选择 **"下载** 程序包"，然后保存.zip文件。
+    1. 在"**部署方法"** 字段中，选择 **"System Center Configuration Manager 2012/2012 R2/1511/1602"。**
+    1. 选择 **"下载程序包**"，然后保存.zip文件。
 
 2. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
@@ -189,9 +190,9 @@ Value: 0 or 1
 
 如果你正在使用当前分支Microsoft Endpoint Manager，请使用 Configuration Manager 控制台中的内置 Defender for Endpoint 仪表板。 有关详细信息，请参阅 [Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
 
-如果使用的是 System Center 2012 R2 Configuration Manager，则监控由两部分组成：
+如果您使用的是 System Center 2012 R2 Configuration Manager，则监控由两部分组成：
 
-1. 确认配置包已正确部署，并且正在 (或已成功) 在网络中设备上运行配置包。
+1. 确认配置包已正确部署，并且正在 (或已成功) 网络中设备上运行配置包。
 
 2. 检查设备是否符合 Defender for Endpoint 服务 (这可确保设备可以完成载入过程，并可以继续将数据报告给服务) 。
 
@@ -223,7 +224,7 @@ Name: "OnboardingState"
 Value: "1"
 ```
 
-有关详细信息，请参阅 introduction [to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))。
+有关详细信息，请参阅 Introduction [to compliance settings in System Center 2012 R2 Configuration Manager。](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))
 
 ## <a name="related-topics"></a>相关主题
 

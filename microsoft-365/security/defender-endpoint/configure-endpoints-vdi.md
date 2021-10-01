@@ -1,6 +1,6 @@
 ---
 title: 载入非持久性虚拟桌面基础结构 (VDI) 设备。
-description: 在 VDI (虚拟桌面基础结构) 包，以便它们可以载入到 Microsoft Defender for Endpoint 服务。
+description: 在 VDI (虚拟桌面基础结构上) 包，以便它们可以载入到 Microsoft Defender for Endpoint 服务。
 keywords: configure virtual desktop infrastructure (VDI) device， vdi， device management， configure Microsoft Defender for Endpoint， endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 04/16/2020
+ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: c2d33c40cba675f36f9be3a181db655e8087a811
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 494cfb352d8ccbf6dd0640d559083c9e733fa9b7
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222379"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041622"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>载入非永久性虚拟桌面基础结构设备
 
@@ -33,7 +33,7 @@ ms.locfileid: "59222379"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - 虚拟桌面基础结构 (VDI) 设备
-- Windows 10、Windows Server 2019、Windows Server 2008R2/2012R2/2016
+- Windows 10、Windows Server 2019、Windows Server 2022、Windows Server 2008R2/2012R2/2016
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)。
 
@@ -60,22 +60,22 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 > [!WARNING]
 > 对于资源配置较低的环境，VDI 启动过程可能会减慢 Defender for Endpoint 传感器载入的速度。
 
-### <a name="for-windows-10-or-windows-server-2019"></a>For Windows 10 or Windows Server 2019
+### <a name="for-windows-10-or-windows-server-2019-or-windows-server-2022"></a>For Windows 10 or Windows Server 2019， or Windows Server 2022
 
-1. 打开 VDI 配置.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的文件。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
-   1. 在导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **载入"。**
-   2. 选择Windows 10作为操作系统。
+1. 打开 VDI 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
+   1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **载入"。**
+   2. 选择Windows 10操作系统。
    3. 在 **"部署方法"** 字段中，选择 **"非永久性终结点的 VDI 载入脚本"。**
    4. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将文件从从 .zip 文件中提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 。
+2. 将文件从从 .zip 文件提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。
     1. 如果要为每台设备实现多个条目（每个会话一个条目），请复制 WindowsDefenderATPOnboardingScript.cmd。
     2. 如果你要针对每台设备实现单个条目，请同时复制 Onboard-NonPersistentMachine.ps1 和 WindowsDefenderATPOnboardingScript.cmd。
 
     > [!NOTE]
     > 如果看不到该文件夹 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` ，它可能处于隐藏状态。 你需要从文件资源管理器中选择显示隐藏 **文件和** 文件夹选项。
 
-3. 打开本地组策略编辑器窗口并导航 **到计算机配置** \> **Windows 设置** \> **脚本** \> **启动**。
+3. 打开本地组策略编辑器窗口并 **导航到计算机** 配置 \> **Windows 设置** \> **脚本** \> **启动**。
 
    > [!NOTE]
    > 域组策略还可用于载入非永久性 VDI 设备。
@@ -95,12 +95,12 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
    3. 从设备注销。
    4. 使用其他用户登录到设备。
    5. 根据你要实现的方法，请按照相应步骤操作：
-      - 对于每台设备的单个条目：在门户中仅检查Microsoft 365 Defender条目。
+      - For single entry for each device： Check only one entry in Microsoft 365 Defender portal.
       - For multiple entries for each device： Check multiple entries in Microsoft 365 Defender portal.
 
 6. 单击 **导航窗格上的** "设备列表"。
 
-7. 通过输入设备名称并选择设备作为搜索类型 **来** 使用搜索函数。
+7. 输入设备名称并选择"设备"作为搜索类型 **，** 以使用搜索函数。
 
 ## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>对于下层 SKUs (Windows Server 2008 R2/2012 R2/2016) 
 
@@ -138,7 +138,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 - [使用 DISM Windows映像](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [DISM 映像管理Command-Line选项](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [减小脱机映像中组件存储Windows大小](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [减小脱机映像中的组件存储Windows大小](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 如果脱机服务不是非永久性 VDI 环境的可行选项，应执行以下步骤以确保一致性和传感器运行状况：
 
@@ -152,7 +152,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 3. 根据需要为映像提供服务。
 
-4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能累积 https://download.sysinternals.com/files/PSTools.zip) 的网络文件夹内容：
+4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能 https://download.sysinternals.com/files/PSTools.zip) 累积的网络文件夹内容：
 
     ```console
     PsExec.exe -s cmd.exe
@@ -167,7 +167,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ## <a name="related-topics"></a>相关主题
 
 - [使用Windows 10载入设备](configure-endpoints-gp.md)
-- [使用Windows 10载入设备Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [使用Windows 10载入Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [使用移动设备管理工具载入 Windows 10 设备](configure-endpoints-mdm.md)
 - [使用本地脚本载入 Windows 10 设备](configure-endpoints-script.md)
 - [Microsoft Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)

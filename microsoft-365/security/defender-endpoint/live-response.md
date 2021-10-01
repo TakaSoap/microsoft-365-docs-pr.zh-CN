@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71fd1428df73686f59199c70d988599f511faaf3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5e77cecfe06606f974c4e488bcec14e12c9ce0de
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161964"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043331"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -34,13 +34,13 @@ ms.locfileid: "59161964"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-实时响应使安全运营团队可以即时访问 (，也称为计算机) 使用远程 shell 连接。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。
+实时响应使安全运营团队可以即时访问 (也称为计算机) 使用远程 shell 连接的设备。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。
 
 实时响应旨在通过使安全运营团队能够收集取证数据、运行脚本、发送可疑实体进行分析、修正威胁和主动搜寻新出现的威胁来增强调查。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW]
 
-使用实时响应，分析员可以执行以下所有任务：
+通过实时响应，分析员可以执行以下所有任务：
 
 - 运行基本和高级命令以在设备上执行调查工作。
 - 下载恶意软件示例和 PowerShell 脚本结果等文件。
@@ -48,24 +48,27 @@ ms.locfileid: "59161964"
 - Upload PowerShell 脚本或可执行文件到库，然后从租户级别在设备上运行它。
 - 执行或撤消修正操作。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的** Windows 版本。
+- **验证是否正在运行受支持的 Windows** 版本。
 
   设备必须运行以下版本之一Windows
 
   - **Windows 10**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
     - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [版本 1809 (RS 5 ](/windows/whats-new/whats-new-windows-10-version-1809)) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [版本 1809 (RS 5) ](/windows/whats-new/whats-new-windows-10-version-1809) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **WindowsServer 2019 - 仅适用于公共预览版**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
-    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
+    
+  - **Windows Server 2022**
+       
 
 - **从高级设置页面启用实时响应**。
 
@@ -87,7 +90,7 @@ ms.locfileid: "59161964"
 
   ![错误消息的图像。](images/live-response-error.png)
 
-- **启用实时响应未签名脚本执行 (** 可选) 。
+- **启用实时响应未签名脚本执行** (可选) 。
 
   > [!WARNING]
   > 允许使用未签名脚本可能会增加你面临的威胁。
@@ -99,7 +102,7 @@ ms.locfileid: "59161964"
   只有已预配了相应权限的用户才能启动会话。 有关角色分配详细信息，请参阅 [创建和管理角色](user-roles.md)。
 
   > [!IMPORTANT]
-  > 将文件上载到库的选项仅适用于具有"管理安全管理设置"权限的用户。
+  > 将文件上载到库的选项仅适用于具有"管理安全性设置"权限的用户。
   > 对于仅具有委派权限的用户，按钮显示为灰色。
 
   根据已授予的角色，可以运行基本或高级实时响应命令。 用户权限由 RBAC 自定义角色控制。
@@ -219,7 +222,7 @@ ms.locfileid: "59161964"
 
 |命令|功能|
 |---|---|
-|`getfile "C:\windows\some_file.exe" &`|开始下载 *在后台some_file.exe文件* 。|
+|`getfile "C:\windows\some_file.exe" &`|开始在后台下载名为 *some_file.exe* 的文件。|
 |`fg 1234`|将命令 ID 为 *1234* 的下载返回到前台。|
 |
 
@@ -233,7 +236,7 @@ ms.locfileid: "59161964"
 
 #### <a name="to-upload-a-file-in-the-library"></a>上载库中的文件
 
-1. 单击 **Upload文件到库。**
+1. 单击 **Upload文件到库"**。
 
 2. 单击 **"** 浏览"，然后选择文件。
 
@@ -256,7 +259,7 @@ ms.locfileid: "59161964"
 
 ## <a name="run-a-powershell-script"></a>运行 PowerShell 脚本
 
-在运行 PowerShell 脚本之前，必须先将其上载到库。
+必须先将其上载到库中，然后才能运行 PowerShell 脚本。
 
 将脚本上载到库后，使用 `run` 命令运行脚本。
 
@@ -291,7 +294,7 @@ ms.locfileid: "59161964"
   <command name> -type file -id <file path> - auto
   ```
 
-  或
+  或者
 
   ```powershell
   remediate file <file path> - auto`
