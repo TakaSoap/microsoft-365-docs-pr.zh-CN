@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用应用治理功能来治理你的应用。
-ms.openlocfilehash: c0e5b92f534533fb03505421b5e6a49208891443
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: b57d5b36266a5facebe8136b14d01014cfe68b03
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942022"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042778"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>开始使用应用治理（预览版）
 
@@ -72,7 +72,7 @@ ms.locfileid: "59942022"
 
 ## <a name="licensing-and-administrator-role-prerequisites"></a>许可和管理员角色先决条件
 
-1. 验证帐户是否具有 [适当的许可级别](#licensing-for-app-governance)。 应用治理是 Microsoft Cloud App Security (MCAS) 的附加功能，因此 MCAS 必须作为独立产品或作为各种许可证包的一部分存在于帐户中。
+1. 验证账户是否有[适当的许可级别](#licensing-for-app-governance)。应用治理是 Microsoft Cloud App Security (MCAS) 的附加功能，因此 MCAS 必须作为独立产品或作为各种许可证包的一部分存在于帐户中。
 1. 必须具有下面列出的 [管理员角色](#administrator-roles) 之一才能访问门户中的应用治理页面。
 1. 组织的帐单地址必须在[北美、欧洲或非洲的支持地区](app-governance-countries.md) 之一，以便激活免费试用。
 
@@ -81,27 +81,13 @@ ms.locfileid: "59942022"
 在开始使用应用治理之前，应该先确认 [Microsoft 365 管理中心 - 订阅](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) 和任何加载项。 若要访问和使用应用治理，你的组织必须拥有以下订阅或加载项之一：
 
 - Microsoft Cloud App Security
-- Microsoft 365 E5
-- Microsoft 365 E5 合规
-- Microsoft 365 E5 开发者（不包括 Windows 和音频会议）
-- Microsoft 365 E5 信息保护和治理
-- Microsoft 365 E5 安全性
-- Microsoft 365 E5（含呼叫分钟数）
-- 不含音频会议的 Microsoft 365 E5
-- Microsoft 365 A5 合规中心教职员工版
-- Microsoft 365 A5 合规中心学生版
-- Microsoft 365 A5 教职员工版
-- Microsoft 365 A5 学生版
-- Microsoft 365 A5 信息保护和治理教职员工版
-- Microsoft 365 A5 信息保护和治理学生版
-- Microsoft 365 A5 安全中心教职员工版
-- Microsoft 365 A5 安全中心学生版
-- Microsoft 365 A5 学生版使用权益
-- Microsoft 365 A5（含呼叫分钟数）教职员工版
-- Microsoft 365 A5（含呼叫分钟数）学生版
-- Microsoft 365 A5（不包括音频会议）教职员工版
-- Microsoft 365 A5（包括音频会议）学生版
-- Microsoft 365 A5（不包括音频会议）学生版使用权益
+- Microsoft 365 E5/A5
+- Microsoft 365 E5/A5 合规
+- Microsoft 365 E5/A5 信息保护和治理
+- Microsoft 365 E5/A5 安全性
+- Microsoft 365 F5 合规加载项
+- Microsoft 365 F5 安全性 + 合规加载项
+
 
 ### <a name="administrator-roles"></a>管理员角色
 
@@ -146,7 +132,7 @@ ms.locfileid: "59942022"
 1. 在 Microsoft 365 管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**你的产品**</a>”。
 1. 导航到应用治理试用版，单击三个点，然后选择“**取消订阅**”。
 1. 在生成的浮出窗格中，提供取消原因、任何其他反馈，然后选择“**取消订阅**”。
-1. 在生成的弹出屏幕中选择“**取消订阅**”。 你的试用版已取消，你将失去对应用治理的访问权限，并将删除你的应用治理数据（用于创建应用治理见解和检测的日志数据 - 不会影响电子邮件或其他文件）。
+1. 在生成的弹出屏幕中选择“**取消订阅**”。你的试用版已取消，你将失去对应用治理的访问权限，并将删除你的应用治理数据（用于创建应用治理见解和检测的日志数据 - 不会影响电子邮件或其他文件）。
 
 ## <a name="known-issues-for-the-public-preview"></a>公共预览版的已知问题
 

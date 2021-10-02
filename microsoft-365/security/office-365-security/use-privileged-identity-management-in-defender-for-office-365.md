@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender for Office 365 中使用 Privileged Identity Management (PIM)。
+title: 使用 Microsoft Defender for Office 365 中的 Azure Privileged Identity Management (PIM) 来限制管理员对网络安全工具的访问。
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: 了解如何集成 PIM，以便向用户授予即时、限时访问权限以在 Microsoft Defender for Office 365 中执行已提升特权任务，从而降低数据风险。
+description: 了解如何集成 Azure PIM，以便向用户授予即时、限时访问权限以在 Microsoft Defender for Office 365 中执行已提升特权任务，从而降低数据风险。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 22fbb2dd57c8bd3d6ac9b25b219895bc480c266c
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 45fec4fef733fe302f34c470ce2a264c257b67f7
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444256"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042682"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) 以及将其与 Microsoft Defender for Office 365 配合使用的原因
@@ -37,14 +37,14 @@ Privileged Identity Management (PIM) 为 Azure 功能，设置后，用户便可
 
 ## <a name="steps-to-use-pim-to-grant-just-in-time-access-to-defender-for-office-365-related-tasks"></a>使用 PIM 授予对 Defender for Office 365 相关任务的即时访问权限的步骤
 
-通过将 PIM 设置为与 Defender for Office 365 配合使用，管理员会创建流程，以便用户请求访问权限以执行所需操作。 用户必须 *证明* 提升其特权的必要性。
+通过将 PIM 设置为与 Defender for Office 365 配合使用，管理员会创建流程，以便用户请求访问权限以执行所需操作。用户必须 *证明* 提升其特权的必要性。
 
 在此示例中，我们将为 Alex 进行配置，他是我们安全团队的成员，在 Office 365 中没有永久访问权限，但可以提升为日常操作所需的角色，例如[威胁搜寻](threat-hunting-in-threat-explorer.md) ，然后在不太频繁但敏感的操作中可以提升特权级别， 例如，需要[修正恶意传递的电子邮件](remediate-malicious-email-delivered-office-365.md)。
 
 > [!NOTE]
 > 这将指导你完成为安全分析师设置 PIM 所需的步骤，该分析师需能够在 Microsoft Defender for Office 365 中使用威胁资源管理器清除电子邮件。相同步骤可用于安全与合规门户中的其他 RBAC 角色。 例如，此流程适用于信息工作者，其需要日常访问电子数据展示以执行搜索和案例工作，但偶尔只需已提升权限以从租户中导出数据。
 
-***步骤 1***。 在订阅的 Azure PIM 控制台中，将用户(Alex)添加到 Azure 安全信息读取者角色，并配置与激活相关的安全设置。
+***步骤 1***：在订阅的 Azure PIM 控制台中，将用户(Alex)添加到 Azure 安全信息读取者角色，并配置与激活相关的安全设置。
 
 1. 登录 [Azure AD 管理中心](https://aad.portal.azure.com/)，然后选择 **Azure Active Directory** > **角色和管理员**。
 2. 在角色列表中选择 **安全信息读取者**，然后选择 **设置** > **编辑**
@@ -60,7 +60,7 @@ Privileged Identity Management (PIM) 为 Azure 功能，设置后，用户便可
 
 :::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="请确保在 Privileged Access Management 中审查安全信息读取者角色的设置。此处，你将看到 PIM 激活的最长持续时间为 8 小时。":::
 
-***步骤 2***。 为其他任务创建所需的第二个(已提升)权限组并分配资格。
+***步骤 2***：为其他任务创建所需的第二个(已提升)权限组并分配资格。
 
 使用[特权访问组](/azure/active-directory/privileged-identity-management/groups-features)，我们现在可以创建自己的自定义组并在需要时合并权限或增加粒度以满足组织做法和需求。
 

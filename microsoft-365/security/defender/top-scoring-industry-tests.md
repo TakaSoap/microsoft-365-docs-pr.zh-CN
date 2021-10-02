@@ -2,7 +2,7 @@
 title: 在行业测试中得分最高 - Microsoft 365 Defender
 ms.reviewer: ''
 description: 查看 Microsoft 365 Defender 的最新得分和分析。 它在独立测试（AV-TEST、AV 比较系统、SE 实验室、MITRE ATT&CK）中不断取得高分。 查看最新的分数和分析。
-keywords: Microsoft Defender 防病毒，Windows Defender 防病毒, av 检查, 防病毒测试, av 测试, 最新 av 分数, 检测分数, 安全产品测试, 安全行业测试, 行业防病毒测试, 最佳防病毒, av 测试, av 比较, SE 实验室, MITRE ATT & CK，终结点保护平台, EPP, 终结点检测和响应, EDR, Windows 10, Microsoft Defender 防病毒, WDAV, Microsoft Defender for Endpoint, Microsoft 365 Defender，安全性, 恶意软件, av, 防病毒, 分数, 计分, 下一代保护, 排名, 成功
+keywords: Microsoft Defender 防病毒, Windows Defender 防病毒, av 检查, 防病毒测试, av 测试, 最新 av 分数, 检测分数, 安全产品测试, 安全行业测试, 行业防病毒测试, 最佳防病毒, av 测试, av 比较, SE 实验室, MITRE ATT & CK，终结点保护平台, EPP, 终结点检测和响应, EDR, Windows 10, Windows 11 Microsoft Defender 防病毒, WDAV, Microsoft Defender for Endpoint, Microsoft 365 Defender，安全性, 恶意软件, av, 防病毒, 分数, 计分, 下一代保护, 排名, 成功
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,25 +15,25 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 4d49772eb3932ae98840d2be94c447183e94fade
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8f51fe73d25ac0ab3568b1896a0c35efdd14a40f
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170906"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042694"
 ---
 # <a name="top-scoring-in-industry-tests"></a>在行业测试中得分最高
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> 希望体验 Microsoft 365 Defender？ 你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
+> 想要体验 Microsoft 365 Defender？你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
 [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) 技术在独立测试中一直取得高分，从而展示了其企业威胁防护功能的优势。 Microsoft 旨在公开这些测试分数的信息。 此页面汇总了结果并提供了分析。
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-365-defender.md) 是一款统一的预防和防御攻击的企业防御套件。 结合检测、预防、调查和应急为一体，可针对终结点、标识、电子邮件和应用程序提供集成的保护，抵御复杂的攻击。
+[Microsoft 365 Defender](microsoft-365-defender.md) 是一款统一的漏洞前和漏洞后企业防御套件，结合检测、预防、调查和应急为一体，可针对终结点、标识、电子邮件和应用程序提供集成的保护，抵御复杂的攻击。
 
 Microsoft 365 Defender 将 [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)、 [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection)、 [Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/)、[Azure Active Directory 标识保护](/azure/active-directory/identity-protection/overview-identity-protection)和 [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) 的功能结合到单个解决方案中。
 
@@ -49,7 +49,7 @@ MITRE 的测试方法核心就是模拟实际攻击，以便了解解决方案�
 
 [Microsoft Defender 防病毒](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)在独立测试中一直表现出色，并展示了它如何成为防病毒市场的首选。 请记住，这些测试仅提供防病毒的结果，不测试其他安全保护。
 
-Microsoft Defender 防病毒是 [Microsoft Defender for Endpoint Windows 10 安全堆栈](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)中的[下一代保护](https://www.youtube.com/watch?v=Xy3MOxkX_o4)功能，可解决当今最新、最复杂的威胁。 在某些情况下，客户甚至可能不知道他们受到了保护，因为网络攻击在[活动开始数毫秒后](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)就被阻止。 这是因为 Defender for Endpoint 中的 Microsoft Defender 防病毒和其他[终结点防护平台 (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) 功能可在第一时间检测并阻止恶意软件。 他们使用[机器学习](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering)、 [人工智能](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)、行为分析和其他高级技术。
+Microsoft Defender 防病毒是 [Microsoft Defender for Endpoint Windows 安全堆栈](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)中的[下一代保护](https://www.youtube.com/watch?v=Xy3MOxkX_o4)功能，可解决当今最新、最复杂的威胁。 在某些情况下，客户甚至可能不知道他们受到了保护，因为网络攻击在[活动开始数毫秒后](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)就被阻止。 这是因为 Defender for Endpoint 中的 Microsoft Defender 防病毒和其他[终结点防护平台 (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) 功能可在第一时间检测并阻止恶意软件。 他们使用[机器学习](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering)、 [人工智能](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)、行为分析和其他高级技术。
 
 ### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>AV-TEST：最新测试中的防护分数为 6.0/6.0
 
@@ -57,7 +57,7 @@ AV-TEST 产品审查和认证报告测试以下三个类别：防护、性能和
 
 - 2020 年 11 月 - 12 月 AV-TEST 业务用户测试：[防护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2020/microsoft-defender-antivirus-4.18-205017/) <sup>**最新**</sup>
 
-    Microsoft Defender 防病毒在 11 月和 12 月获得满分分数 6.0/6.0。 使用了 11,382 个恶意软件示例。
+    Microsoft Defender 防病毒在 11 月和 12 月获得满分分数 6.0/6.0。使用了 11,382 个恶意软件示例。
 
 - 2020 年 9 月 - 10 月 AV-TEST 业务用户测试：[防护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/)
 
