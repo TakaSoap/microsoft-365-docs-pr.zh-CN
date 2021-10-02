@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 06/02/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: aec229a8286113b78b39f8aad330ca3545bc92a6
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 230e70000e4561c7b88bcedb7bab143b03b95b49
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490843"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042886"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>检测并阻止可能不需要的应用程序
 
@@ -42,7 +42,7 @@ ms.locfileid: "59490843"
 > [!TIP]
 > 有关更多示例和讨论我们用于标记应用程序以引起对安全功能特别关注的条件，请参阅 [Microsoft 如何识别恶意软件和可能不需要的应用程序](/windows/security/threat-protection/intelligence/criteria)。
 
-可能不需要的应用程序会增加网络受到实际恶意软件感染的风险，使恶意软件感染更加难以识别，或浪费 IT 资源清理它们。 Windows 10、Windows Server 2019 和 Windows Server 2016 支持 PUA 保护。 在 Windows 10（版本 2004 和更高版本）中，Microsoft Defender 防病毒软件会默认为企业 (E5) 设备阻止 PUA 应用。
+可能不需要的应用程序会增加网络受到实际恶意软件感染的风险，使恶意软件感染更加难以识别，或浪费 IT 资源清理它们。 Windows 10、Windows Server 2019、Windows Server 2022 和 Windows Server 2016 支持 PUA 保护。 在 Windows 10（版本 2004 和更高版本）中，Microsoft Defender 防病毒软件会默认为企业 (E5) 设备阻止 PUA 应用。
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -74,7 +74,7 @@ ms.locfileid: "59490843"
 Microsoft Defender 防病毒软件中可能不需要的应用程序 (PUA) 保护功能可检测和阻止网络中终结点上的 PUA。
 
 > [!NOTE]
-> Windows 10、Windows Server 2019 和 Windows Server 2016 中提供此功能。
+> Windows 10、Windows Server 2019、Windows Server 2022 和 Windows Server 2016 中提供此功能。
 
 Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下载、移动、运行或安装它们的任何尝试。 阻止的 PUA 文件随即移动到隔离区。 在终结点上检测到 PUA 文件时，Microsoft Defender 防病毒软件会以与其他威胁检测相同的格式向用户发送通知（[除非通知已禁用](configure-notifications-microsoft-defender-antivirus.md)）。 以通知的字体作为 `PUA:` 以指示其内容。
 
@@ -122,7 +122,7 @@ Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下�
 
 7. 选择 **启用** 以启用 PUA 保护。
 
-8. 在 **选项** 中，选择 **阻止** 以阻止可能不需要的应用程序，或选择 **审核模式** 测试设置在环境中的工作方式。 选择“**确定**”。
+8. 在“**选项**”中，选择“**阻止**”以阻止可能不需要的应用程序，或选择“**审核模式**”以测试设置在环境中的工作方式。选择“**确定**”。
 
 9. 如通常一样部署组策略对象。
 
@@ -183,7 +183,7 @@ PSComputerName   :
 
 ## <a name="view-pua-events-using-advanced-hunting"></a>使用高级搜寻查看 PUA 事件
 
-如果你正在使用 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)，你可以使用高级搜寻查询来查看 PUA 事件。 示例查询如下：
+如果你正在使用 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)，则可以使用高级搜寻查询来查看 PUA 事件。以下是查询示例：
 
 ```console
 DeviceEvents
