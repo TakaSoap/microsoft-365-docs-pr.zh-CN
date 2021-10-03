@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 72238bd3f9ccabc64e0846f0384397d14f752bd9
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: b30d29e9ac5d318e2bcee7226db10f7ca24882a2
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988291"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069155"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -67,7 +67,7 @@ ms.locfileid: "59988291"
     - 租户中每天最多自动标记 25,000 个文件。
     - 每个租户最多 100 个自动标记策略，每个策略在单独指定时最多面向 100 个网站（SharePoint 或 OneDrive）。 也可以指定所有站点，这种配置不受 100 个站点上限的限制。
     - 无论是在模拟模式下还是在应用标签时，可修改的现有值、修改者和修改日期都不会因自动标记策略而发生变化。
-    - 标签应用加密时，[权限管理颁发者和权限管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)是最后修改文件的帐户。
+    - 标签应用加密时，[权限管理颁发者和权限管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)是最后修改文件的帐户。 如果此帐户不再在 Azure Active Directory 中，将不会应用标签，因为无法设置这些值。
 
     特定于 Exchange 的自动标记：
     
@@ -134,7 +134,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 ### <a name="configuring-sensitive-info-types-for-a-label"></a>配置标签的敏感信息类型
 
-当你选择“**敏感信息类型**”选项时，可看到与创建数据丢失防护 (DLP) 策略时相同的敏感信息类型列表。 例如，你可以将“高度机密”标签自动应用到任何包含客户个人信息的内容（如信用卡号、社会保险号码或护照号码）：
+选择“**敏感信息类型**”选项时，会看到与创建数据丢失防护 (DLP) 策略时相同的敏感信息类型列表。例如，可以自动将高度机密标签应用于任何包含客户个人信息的内容，例如信用卡号、社保编号或护照号：
 
 ![Office 应用中的自动标记的敏感信息类型。](../media/sensitivity-labels-sensitive-info-types.png)
 
@@ -144,7 +144,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 可通过以下 DLP 文档了解有关这些配置选项的详细信息：[调整规则，使它们更易或更难匹配](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
 
-同样与配置 DLP 策略时类似的是，你可以选择某项条件是必须删除所有敏感信息类型还是只删除其中一种。 要使条件更灵活或更复杂，可添加[组并在组之间使用逻辑运算符](data-loss-prevention-policies.md)。
+此外，与 DLP 策略配置类似，可以选择条件是必须检测所有敏感信息类型，还是仅检测其中一种。为了使条件更加灵活或复杂，可以添加[组并在组之间使用逻辑运算符](data-loss-prevention-policies.md)。
 
 > [!NOTE]
 > 基于自定义敏感信息类型的自动标签仅适用于 OneDrive 和 SharePoint 中新创建或修改的内容，而不适用于现有内容。此限制也适用于自动标签策略。
@@ -206,8 +206,8 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 ### <a name="prerequisites-for-auto-labeling-policies"></a>自动标记策略的先决条件
 
 - 模拟模式：
-  - 必须启用 Microsoft 365 审核。 如果你需要启用审核，或者不确定是否已启用审核，请参阅[启用或禁用审核日志搜索](turn-audit-log-search-on-or-off.md)。
-  - 若要在源视图中查看文件或电子邮件内容，必须具有 **内容浏览器内容查看器** 角色。 默认情况下，全局管理员不具有此角色。 如果你没有此权限，在“**匹配项**”选项卡中选择一个项目时，将不会看到预览器窗格。
+  - 必须启用 Microsoft 365。如果你需要启用审核，或者不确定是否已启用审核，请参阅[启用或禁用审核日志搜索](turn-audit-log-search-on-or-off.md)。
+  - 要在源视图中查看文件或电子邮件内容，则必须具有 **内容浏览器内容查看器** 角色。默认情况下，全局管理员没有此角色。如果你没有此权限，则从“**匹配项**”选项卡中选择一个项时，将看不到“预览器”窗格。
 
 - 如何自动标记 SharePoint 和 OneDrive 中的文件：
   - 你已[启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
@@ -217,7 +217,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
   - 自定义敏感性信息类型仅适用于创建自定义敏感性信息类型后在 SharePoint 或 OneDrive 中添加或修改的内容。
   - 若要测试新的自定义敏感信息类型，请在创建自动标记策略前创建它们，然后创建新文档（其中包含用于测试的示例数据）。
 
-- 你可以为自动标记策略选择一个或多个[已创建和发布](create-sensitivity-labels.md)（至少向一个用户发布）的敏感度标签。 对于这些标签：
+- 你可以为自动标记策略选择一个或多个[已创建和发布](create-sensitivity-labels.md)（至少向一个用户发布）的敏感度标签。对于这些标签而言：
   - 启用或禁用 Office 应用标签设置中的自动标记无关紧要，因为该标签设置会补充自动标记策略，如简介中所述。
   - 如果要用于自动标记的标签被配置为使用视觉标记（页眉、页脚、水印），请注意它们不会应用于文档。
   - 如果标签应用“[加密](encryption-sensitivity-labels.md)”：
@@ -262,7 +262,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
     ![“自动标记”选项卡。](../media/auto-labeling-tab.png)
 
     > [!NOTE]
-    > 如果看不到“**自动标记**”选项卡，则此功能当前由于一个后端 Azure 依赖项而在你所在的区域中不可用。 有关详细信息，请参阅 [Azure 依赖项可用性（按国家/地区）](/troubleshoot/azure/general/dependency-availability-by-country)。
+    > 如果看不到“**自动标记**”选项卡，则此功能当前由于一个后端 Azure 依赖项而在你所在的区域中不可用。如需了解更多信息，请参阅 [各国家和地区的 Azure 依赖项可用性](/troubleshoot/azure/general/dependency-availability-by-country)。
 
 3. 选择“**+ 创建自动标记策略**”。 这将启动“新建策略配置”：
 
@@ -278,7 +278,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
     
     要指定单个 OneDrive 帐户，请参阅 [获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
 
-7. 对于“**设置常用或高级规则**”页面：保留“**常用规则**”的默认设置，以定义用于在所有选定位置标识要标记的内容的规则。 如果需要针对每个位置使用不同的规则，请选择“**高级规则**”。 然后选择“**下一步**”。
+7. 对于“**设置常用或高级规则**”页面：保留“**常用规则**”的默认设置，以定义用于在所有选定位置标识要标记的内容的规则。如果每个位置需要不同的规则，请选择“**高级规则**”，然后选择“**下一步**”。
 
     这些规则使用包含敏感信息类型和共享选项的条件：
     - 对于敏感信息类型，你可以选择内置和自定义敏感信息类型。
@@ -311,7 +311,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 9. 对于“**选择要自动应用的标签**”页面：选择“**+ 选择标签**”，从“**选择敏感度标签**”窗格中选择一个标签，然后选择“**下一步**”。
 
-10. 对于“**决定是立即还是以后测试策略**”页面：如果现在已准备好运行自动标记策略，请在模拟模式中选择“**在模拟模式下运行策略**”。 否则，请选择“**保持策略关闭**”。 选择“**下一步**”：
+10. 对于“**决定是立即还是以后测试策略**”页面：如果现在已准备好运行自动标记策略，请在模拟模式中选择“**在模拟模式下运行策略**”。否则，请选择“**让策略保持关闭状态**”。选择“**下一步**”：
 
     ![测试配置的自动标记策略。](../media/simulation-mode-auto-labeling-wizard.png)
 

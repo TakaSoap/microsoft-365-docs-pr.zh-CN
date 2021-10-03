@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 6403cd288c005e4601c5642ab8ce37fdbe380b02
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 4537662d9f2268602baaea5d207af854d88657b4
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786259"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069177"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -140,7 +140,7 @@ ms.locfileid: "59786259"
   
 使用保留标签，你可以：
   
-- **允许组织中的人员将保留标签手动应用于** Outlook 和 Outlook 网页版、OneDrive、SharePoint​​ 和 Microsoft 365 组中的内容。 用户通常最了解自己处理的内容的类型，因此他们可以对内容进行分类，并应用适当的保留设置。 
+- **允许组织中的人员将保留标签手动应用于** Outlook 和 Outlook 网页版、OneDrive、SharePoint​​ 和 Microsoft 365 组中的内容。用户通常最了解自己处理的内容的类型，因此他们可以对内容进行分类，并应用适当的保留设置。 
     
 - **将保留标签自动应用于** 符合特定条件的内容，如内容包含： 
     - 特定类型敏感信息。
@@ -173,7 +173,7 @@ ms.locfileid: "59786259"
 
 #### <a name="retention-labels-and-policies-that-apply-them"></a>保留标签和应用它们的策略
 
-在你发布保留标签后，它们将包含在 **保留标签策略** 中，以便管理员和用户将其应用至内容。 如下图所示：
+在你发布保留标签后，它们将包含在 **保留标签策略** 中，以便管理员和用户将其应用至内容。如以下图表所示：
 
 1. 一个保留标签可包含在多个保留标签策略中。
 
@@ -190,11 +190,10 @@ ms.locfileid: "59786259"
 | 如果保留标签是… | 可以将标签策略应用于… |
 |:-----|:-----|
 |发布给管理员和最终用户  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 组  <br/> |
-|根据敏感信息类型或可训练的分类器自动应用  <br/> |Exchange（仅全部邮箱）、SharePoint 和 OneDrive  <br/> |
-|根据查询自动应用  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 组  <br/> |
+|根据敏感信息类型或可训练的分类器自动应用  <br/> |Exchange、SharePoint、OneDrive  <br/> |
+|根据关键字或查询自动应用  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 组  <br/> |
    
-在 Exchange 中，自动应用保留标签仅应用于新发送的邮件（传输中的数据），而不是邮箱中当前的所有邮件（其余数据）。此外，对敏感信息类型和可培训的分类器自动应用保留标签适用于所有邮箱;你无法选择特定邮箱。
-  
+
 Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签。 若要保留并从这些位置中删除内容，请改用保留策略。
 
 #### <a name="only-one-retention-label-at-a-time"></a>一次只能分配一个保留标签
@@ -222,7 +221,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 
 #### <a name="monitoring-retention-labels"></a>监视保留标签
 
-从 Microsoft 365 合规中心选择“**数据分类**”和“**概述**”页面来监视保留标签在租户中的使用方式，并确定已标记项目的位置。 有关包括重要先决条件在内的详细信息，请参阅 [了解数据分类](data-classification-overview.md)。
+从 Microsoft 365 合规中心选择“**数据分类**”和“**概述**”页面来监视保留标签在租户中的使用方式，并确定已标记项目的位置。如需了解更多信息，包括重要的先决条件，请参阅 [详细了解数据分类](data-classification-overview.md)。
 
 然后，你可以通过使用[内容资源管理器](data-classification-content-explorer.md)和[活动资源管理器](data-classification-activity-explorer.md)来深入了解详细信息。
 
@@ -233,7 +232,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 
 在将保留标签应用到内容后（无论是由用户应用还是自动应用），你都可以通过内容搜索来查找已经应用特定保留标签的所有项目。
 
-创建内容搜索时，选择“**保留标签**”条件，然后输入完整的保留标签名称或标签名称的一部分，并使用通配符。 有关详细信息，请参阅[适用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
+创建内容搜索时，请选择“**保留标签**”条件，再输入完整或部分保留标签名称，并使用通配符。有关详细信息，请参阅 [适用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   
 ![保留标签条件。](../media/retention-label-condition.png)
 
@@ -261,7 +260,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 
 **脚注：**
 
-<sup>\*</sup> 对于不将内容标记为记录或法规记录的保留标签，审核事件仅限于 SharePoint 中的项或OneDrive 应用、更改或删除标签时。 有关保留标签的审核详细信息，请参阅此页上的[审核保留操作](#auditing-retention-actions)部分。
+<sup>\*</sup> 对于不将内容标记为记录或法规记录的保留标签，审核事件仅限于 SharePoint 中的项或OneDrive 应用、更改或删除标签时。如需了解有保留标签的审计详细信息，请参阅此页面上的[审计保留操作](#auditing-retention-actions)部分。
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>组合保留策略和保留标签
 
@@ -311,7 +310,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
     
     电子邮件将保留五年，因为此保留操作优先于删除操作。 由于保留操作生效时暂停的删除操作，电子邮件在五年到期时被永久删除。
 
-2. **优选最长的保留期。** 如果内容遵循多个在不同时间段内保留内容的保留设置，内容将一直保留到该项最长保留期结束。
+2. **最长的保留期限胜出。** 如果内容遵循多个在不同时间段内保留内容的保留设置，内容将一直保留到该项最长保留期结束。
     
     > [!NOTE]
     > 保留策略或标签中 5 年的保留期可能会超过保留策略或标签中 7 年的保留期，因为 5 年期限配置为从上次修改文件时开始，而 7 年期限配置为从创建文件时开始。
@@ -340,7 +339,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
         
         由于两个保留策略都已确定范围，因此无法在此级别确定何时永久性删除此文档。
 
-4. **最短删除期优先。** 适用于确定何时从保留策略中删除项目以及从上一级别无法解决结果：在该项最短保留期结束时永久性删除内容。
+4. **最短的保留期限胜出。** 适用于确定何时从保留策略中删除项目以及从上一级别无法解决结果：在该项最短保留期结束时永久性删除内容。
     
     > [!NOTE]
     > 保留期为 7 年的保留策略可能超过 5 年的保留策略，因为第一个策略配置为从创建文件时开始保留期，第二个保留策略从上次修改文件时开始。
@@ -424,7 +423,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>用于保留策略和保留标签的 PowerShell cmdlet
 
-若要使用保留 cmdlet，必须先[连接到 Office 365 安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。 然后，使用以下任何 cmdlet：
+若要使用保留 cmdlet，必须先[连接到 Office 365 安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。然后使用以下任意 cmdlets：
 
 - [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
 
