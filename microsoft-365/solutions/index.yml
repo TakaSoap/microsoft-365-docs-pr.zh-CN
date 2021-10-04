@@ -14,12 +14,12 @@ metadata:
   audience: ITPro
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 4f5608ed017abecf5e55e19b3892c2929a687bac
-  ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+  ms.openlocfilehash: 70bc99dd449dd4c03e8d42d466cc283fdbfd5bb6
+  ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/18/2021
-  ms.locfileid: "59443931"
+  ms.lasthandoff: 10/04/2021
+  ms.locfileid: "60087913"
 landingContent:
 - title: 基础解决方案指南
   linkLists:
@@ -59,12 +59,20 @@ landingContent:
       url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: 将文件共享迁移到 Microsoft 365
       url: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-- title: 团队合作和协作解决方案指南
+- title: 会议和通信解决方案指南
   linkLists:
   - linkListType: deploy
     links:
     - text: 计划和部署 Teams 语音解决方案
       url: deploy-voice.md
+  - linkListType: overview
+    links:
+    - text: 组织通信
+      url: /sharepoint/corporate-communications-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: 团队合作和协作解决方案指南
+  linkLists:
+  - linkListType: deploy
+    links:
     - text: 为业务管理合同
       url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md
   - linkListType: overview

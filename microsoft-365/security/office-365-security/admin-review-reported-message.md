@@ -13,19 +13,16 @@ ms.collection:
 description: 了解如何查看报告的消息，并为用户提供反馈。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef08b07226d8ce038547b972163d87a557099478
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: de83846e596185687817af6e89957f455ce7b9a1
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401022"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60087817"
 ---
 # <a name="admin-review-for-reported-messages"></a>管理员审阅报告邮件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-> [!NOTE]
-> 本文中的信息与在商业发行之前可能会进行重大修改的预览产品相关。 本文档仅供评估和探索之用。
 
 **适用对象**
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
@@ -45,7 +42,7 @@ ms.locfileid: "59401022"
   - 组织管理或安全管理员[。Microsoft 365 Defender门户](permissions-microsoft-365-security-center.md)。
   - 中的组织[Exchange Online。](/Exchange/permissions-exo/permissions-exo#role-groups)
 
-- 你还需要访问 Exchange Online PowerShell。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，您将收到错误消息，指出"在域中指定 *电子邮件地址"。* 有关启用或禁用对 PowerShell Exchange Online访问的信息，请参阅下列主题：
+- 你还需要访问 PowerShell Exchange Online权限。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，您将收到错误消息，指出"在域中指定 *电子邮件地址"。* 有关启用或禁用对 PowerShell Exchange Online访问的信息，请参阅下列主题：
   - [启用或禁用对 Exchange Online PowerShell 的访问](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [客户端访问规则Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
@@ -64,9 +61,9 @@ ms.locfileid: "59401022"
 
 ## <a name="customize-the-messages-used-to-notify-users"></a>自定义用于通知用户的消息
 
-1. 在 Microsoft 365 Defender 门户中，转到"电子邮件&**协作** 策略 \> **"&"** 规则""威胁策略""其他人"部分中的"用户 \>  \> 报告 **的邮件设置**"。
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件&**协作** 策略 \> **"&规则** \> **""** 威胁策略""其他人"部分中的"用户报告 \> **的邮件设置**"。
 
-2. 在"用户提交"页面上，如果要指定发件人 显示名称，请选中"管理员审阅结果的电子邮件通知"部分下的"指定要用作发件人的 **Office 365** 电子邮件地址"框，并输入想要使用的名称。 将在电子邮件中显示的电子邮件地址Outlook所有答复将转到该地址。
+2. 在"用户提交"页上，如果要指定发件人 显示名称，请选中"管理员审阅结果电子邮件通知"部分下的"指定要用作发件人的 **Office 365** 电子邮件地址"框，然后输入想要使用的名称。 将在电子邮件中显示的电子邮件地址Outlook所有答复将转到该地址。
 
 3. 如果要自定义任何模板，请单击页面底部的"自定义电子邮件通知"。  在打开的标注中，只能自定义以下内容：
 

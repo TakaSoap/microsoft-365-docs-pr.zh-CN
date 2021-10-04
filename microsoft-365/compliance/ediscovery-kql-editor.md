@@ -1,5 +1,5 @@
 ---
-title: 使用 KQL 编辑器构建搜索查询
+title: 使用 KQL 编辑器生成搜索查询
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以使用 KQL 编辑器在内容搜索、核心电子数据展示和搜索查询中配置电子数据Advanced eDiscovery。
-ms.openlocfilehash: 185ab0396166d54e4a1e11f03a3e3613d24fff4b
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 571612cc2032b6241923cb6bba2a730a5d821c8a
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59989092"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088213"
 ---
-# <a name="use-the-kql-editor-to-build-search-queries"></a>使用 KQL 编辑器构建搜索查询
+# <a name="use-the-kql-editor-to-build-search-queries-preview"></a>使用 KQL 编辑器构建搜索查询 (预览) 
 
 在内容搜索、核心电子数据展示Microsoft 365搜索中生成搜索查询时，Microsoft 365电子数据展示工具搜索中的新 KQL 查询体验可提供Advanced eDiscovery。 在编辑器中键入查询时，它将为受支持的可搜索属性和条件提供自动完成，并提供标准属性和条件的支持值列表。 例如，如果在查询中指定 email 属性，编辑器将显示一个 `kind` 可以选择的支持值列表。 KQL 编辑器还会实时显示潜在的查询错误，您可以在运行搜索之前修复这些错误。 最好将复杂查询直接粘贴到编辑器中，而无需使用标准条件生成器中的关键字和条件卡手动生成查询。
   
@@ -45,9 +45,9 @@ ms.locfileid: "59989092"
 
 ![内容搜索和核心电子数据展示中的 KQL 编辑器](../media/KQLEditorCore.png)
 
-### <a name="kql-editor-in-advanced-ediscovery"></a>KQL 编辑器Advanced eDiscovery
+### <a name="kql-editor-in-advanced-ediscovery"></a>Advanced eDiscovery 中的 KQL 编辑器
 
-![KQL 编辑器Advanced eDiscovery](../media/KQLEditorAdvanced.png)
+![Advanced eDiscovery 中的 KQL 编辑器](../media/KQLEditorAdvanced.png)
 
 ## <a name="using-the-kql-editor"></a>使用 KQL 编辑器
 
@@ -59,7 +59,7 @@ ms.locfileid: "59989092"
 
 ![KQL 编辑器建议支持的属性](../media/KQLEditorAutoCompleteProperties.png)
 
-此外，编辑器还建议在输入完整属性 (时提供支持的运算符列表，如) 和 `:` `=` `<>` 。 例如，以下屏幕截图显示了属性的建议 `Date` 运算符。
+此外，编辑器还建议提供支持的运算符列表， (键入完整属性名称时，) 、和 。 `:` `=` `<>` 例如，以下屏幕截图显示了属性的建议 `Date` 运算符。
 
 ![KQL 编辑器建议运算符](../media/KQLEditorOperatorSuggestions.png)
 
@@ -71,7 +71,7 @@ KQL 编辑器提供某些属性的可能值的建议。 例如，以下屏幕截
 
 ![KQL 编辑器建议某些属性的值](../media/KQLEditorValueSuggestions.png)
 
-编辑器还建议在键入电子邮件收件人属性 (、、和) UPN 格式的用户列表 `From` `To` `Recipients` `Participants` 。
+编辑器还建议在键入电子邮件收件人属性 (、、和) UPN 格式的用户 `From` `To` `Recipients` 列表 `Participants` 。
 
 ![KQL 编辑器为用户提供收件人电子邮件属性建议](../media/KQLEditorRecipientSuggestions.png)
 

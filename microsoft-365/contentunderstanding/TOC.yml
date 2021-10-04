@@ -26,6 +26,8 @@
       href: rename-an-extractor.md
     - name: 说明类型
       href: explanation-types-overview.md
+    - name: 使用说明模板
+      href: explanation-templates.md
     - name: 应用文档理解模型
       href: apply-a-model.md
     - name: 创建表单处理模型
