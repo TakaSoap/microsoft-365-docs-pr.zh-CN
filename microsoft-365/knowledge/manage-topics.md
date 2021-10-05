@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: None
+localization_priority: medium
 description: 了解如何在主题中心中管理主题Microsoft Viva主题。
-ms.openlocfilehash: 87e944c232d552f5a0808765a1303750eb840387
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a35e9db8f6d806f4212581be6ab609e40b46fd62
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170563"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126970"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>管理主题中心中的主题Microsoft Viva主题
 
@@ -64,7 +64,7 @@ ms.locfileid: "59170563"
 若要在主题中心管理主题，需要：
 - 拥有 Viva 主题许可证。
 
-- 拥有 [**Who主题权限**](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva Topics 主题权限设置中向用户授予此权限。 
+- 拥有Who [**主题权限**](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva Topics 主题权限设置中向用户授予此权限。 
 
 除非您具有管理主题的权限，否则将无法在主题中心Who **管理主题** 页面。
 
@@ -72,7 +72,7 @@ ms.locfileid: "59170563"
 
 ## <a name="suggested-topics"></a>建议的主题
 
-在"**管理主题**"页上，在指定的源SharePoint发现的主题将列在"建议 **"** 选项卡上。如果需要，知识经理可以审阅未确认的主题，并选择确认或删除它们。
+在"**管理主题**"页上，在指定的源SharePoint发现的主题将列在"建议 **"选项卡上**。如果需要，知识经理可以审阅未确认的主题，并选择确认或删除它们。
 
    ![建议主题的屏幕截图。](../media/knowledge-management/quality-score.png) 
 
@@ -96,7 +96,7 @@ ms.locfileid: "59170563"
 
 "建议的主题" **页上显示的每个** 主题都分配有质量分数。 质量分数反映了普通用户将看到有关该主题的信息的信息量，同时请记住，每个用户可能会看到更多或更少的信息，因为他们可能拥有或可能不会查看主题中信息的权限。 
 
-质量分数可帮助深入了解包含最多信息的主题，并且可用于查找可能需要手动编辑的主题。 例如，质量分数较低的主题可能是由于某些用户对 AI 包含SharePoint的文件或网站没有权限。 然后，参与者可编辑该主题以包含该信息 (在适当的时候)，然后所有可查看该主题的用户都可以查看。
+质量分数可帮助深入了解包含最多信息的主题，并且可用于查找可能需要手动编辑的主题。 例如，质量分数较低的主题可能是由于某些用户SharePoint相关文件或网站的权限，而 AI 已包含在主题中。 然后，参与者可编辑该主题以包含该信息 (在适当的时候)，然后所有可查看该主题的用户都可以查看。
 
 ### <a name="impressions"></a>展现量
 
@@ -116,7 +116,7 @@ ms.locfileid: "59170563"
 
 ## <a name="published-topics"></a>已发布的主题
 
-在"**管理主题**"页上，在指定的源SharePoint发现的主题将列在"已发布"**选项卡** 上。已发布的主题已经过编辑，以便始终向遇到页面的任何人显示特定信息。 手动创建的主题也会在此列出。
+在"**管理主题**"页上，在指定的源SharePoint中发现的主题将列在"已发布"**选项卡** 上。已发布的主题已经过编辑，以便始终向遇到页面的任何人显示特定信息。 手动创建的主题也会在此列出。
 
    ![管理主题。](../media/knowledge-management/manage-topics-new.png)
 

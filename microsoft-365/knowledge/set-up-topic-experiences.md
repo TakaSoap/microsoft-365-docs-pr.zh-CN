@@ -8,25 +8,25 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
-description: 了解如何设置Microsoft Viva主题
-ms.openlocfilehash: fc5647b65a62afdff55c22b8a8b5526a7ddfa14a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+localization_priority: medium
+description: 了解如何设置Microsoft Viva主题。
+ms.openlocfilehash: ba0bf7c9bec785f359e3a5f9a43ee0f7063b25dd
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170984"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126838"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>设置Microsoft Viva主题
 
-可以使用此Microsoft 365 管理中心设置和配置[主题](topic-experiences-overview.md)。 
+可以使用自定义Microsoft 365 管理中心设置和配置[主题](topic-experiences-overview.md)。 
 
-规划在环境中设置和配置主题的最佳方法非常重要。 在开始本文中[的过程之前，请务必](plan-topic-experiences.md)阅读规划Microsoft Viva主题。
+规划在环境中设置和配置主题的最佳方法非常重要。 在开始本文中的过程[之前，请务必](plan-topic-experiences.md)阅读规划Microsoft Viva主题。
 
 您必须订阅[Viva 主题](https://www.microsoft.com/microsoft-viva/topics)，并且必须是全局管理员或 SharePoint管理员才能访问Microsoft 365 管理中心设置主题。
 
 > [!IMPORTANT]
-> 如果你已配置SharePoint托管[设备](/sharepoint/control-access-from-unmanaged-devices)，则必须从托管设备设置主题。
+> 如果你已配置SharePoint托管设备，则必须从托管[](/sharepoint/control-access-from-unmanaged-devices)设备设置主题。
 
 ## <a name="video-demonstration"></a>视频演示
 
@@ -50,10 +50,10 @@ ms.locfileid: "59170984"
 
 3. 在 **"许可证"** 下，**选择"Viva 主题"。**
 
-4. 在 **"应用"****下，确保Graph** 索引连接器搜索 (Viva 主题) 和 **Viva** 主题。
+4. 在 **"应用"** 下，确保Graph索引连接器搜索 **("Viva** 主题) "和 **"Viva** 主题"。
 
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Viva中的主题许可证Microsoft 365 管理中心。](../media/topic-experiences-licenses.png)
+   > ![Microsoft Viva主题中的主题Microsoft 365 管理中心。](../media/topic-experiences-licenses.png)
 
 5. 单击“**保存更改**”。
 
@@ -74,7 +74,7 @@ ms.locfileid: "59170984"
 
     ![入门。](../media/k-get-started.png) 
 
-4. 在" **选择 Viva 主题如何查找** 主题"页上，您将配置主题发现。 在"**选择SharePoint** 源"部分，选择将在发现SharePoint哪些网站作为主题的源进行爬网。 从以下项中进行选择：
+4. 在" **选择 Viva 主题如何查找** 主题"页上，您将配置主题发现。 在"**选择SharePoint** 源"部分，选择将在发现SharePoint哪些网站作为主题源进行爬网。 从以下项中进行选择：
     - **所有网站**：组织内的所有 SharePoint 网站。 这其中包括当前和未来的网站。
     - **全部，所选网站除外**：键入要排除的网站的名称。  还可以上载想要从发现中退出的网站列表。 将来创建的网站将包含为主题发现源。 
     - **仅选定网站**：键入要包含的网站的名称。 您还可以上载网站列表。 将不包含未来创建的网站作为发现源。
@@ -99,7 +99,7 @@ ms.locfileid: "59170984"
     在 CSV 模板中，输入与要排除的主题相关的以下信息：
 
     - **名称**：键入要排除的主题的名称。 可以通过两种方式来执行此操作：
-        - 完全匹配：可以包括确切的名称或缩写 (例如 *Contoso* 或 *ATL*) 。
+        - 完全匹配：可以包含确切的名称或缩写 (，例如 *Contoso* 或 *ATL*) 。
         - 部分匹配：可以排除其中包含特定单词的所有主题。  例如 *，arc 将* 排除包含单词 *arc* 的所有主题，如弧 *形圆*、*弧* 形圆或 *培训弧*。请注意，它将不会排除将文本作为单词的一部分包含的主题，例如体系结构 *。*
     - **代表 (可选**) ：如果要排除首字母缩写词，请键入首字母缩写词代表的单词。
     - **MatchType-Exact/Partial**：键入您输入 *的名称是精确* 匹配类型还是 *部分* 匹配类型。
@@ -108,7 +108,7 @@ ms.locfileid: "59170984"
     
     选择“**下一步**”。
 
-6. 在Who **查看** 主题，以及他们在哪里可以看到主题页面，你将配置主题可见性。 在Who **主题** 设置中，可以选择谁有权访问主题详细信息，例如突出显示的主题、主题卡片、搜索中的主题答案和主题页面。 可以选择：
+6. 在Who **查看主题**，以及他们在哪里可以看到主题页面，你将配置主题可见性。 在Who **主题** 设置中，可以选择谁有权访问主题详细信息，例如突出显示的主题、主题卡片、搜索中的主题答案和主题页面。 可以选择：
     - **我的组织中的每个人**
     - **仅选定人员或安全组**
     - **没人**
@@ -118,14 +118,14 @@ ms.locfileid: "59170984"
     > [!Note] 
     > 虽然此设置允许你选择组织的任何用户，但只有分配了主题体验许可证的用户才能查看主题。
 
-7. 在" **主题管理的权限** "页中，选择能够创建、编辑或管理主题的用户。 在 **"Who主题"部分**，可以选择：
+7. 在" **主题管理的权限** "页中，选择能够创建、编辑或管理主题的用户。 在 **"Who和编辑主题"** 部分中，可以选择：
     - **我的组织中的每个人**
     - **仅选定人员或安全组**
     - **没人**
 
     ![主题管理权限，可以创建和编辑主题。](../media/ksetup3.png) 
 
-8. 在 **"Who主题"部分中**，可以选择：
+8. 在 **"Who主题"部分**，可以选择：
     - **我的组织中的每个人**
     - **仅选定人员或安全组**
 
@@ -152,11 +152,11 @@ ms.locfileid: "59170984"
 
 ## <a name="manage-topic-experiences"></a>管理主题体验
 
-设置主题后，可以在"设置"中更改在设置[过程中Microsoft 365 管理中心。](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) 请参阅以下参考：
+设置主题后，可以在"设置"中更改在设置过程中[Microsoft 365 管理中心。](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) 请参阅以下参考：
 
 - [管理主题主题Microsoft Viva主题](topic-experiences-discovery.md)
-- [管理主题主题Microsoft Viva主题](topic-experiences-knowledge-rules.md)
-- [管理主题主题Microsoft Viva主题权限](topic-experiences-user-permissions.md)
+- [管理主题主题中的Microsoft Viva可见性](topic-experiences-knowledge-rules.md)
+- [管理主题主题Microsoft Viva主题](topic-experiences-user-permissions.md)
 - [在"主题"中更改Microsoft Viva的名称](topic-experiences-administration.md)
 
 ## <a name="see-also"></a>另请参阅

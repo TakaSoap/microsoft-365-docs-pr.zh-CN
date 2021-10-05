@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d09ce01bc8d9409d4537df8eaabb50915538aa6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 58991b732a76079b5c2de12d7cca332c5dc0d752
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196023"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126958"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的资源
 
@@ -97,7 +97,7 @@ ms.locfileid: "59196023"
 
 可以通过命令行完成重要任务，如控制产品设置和触发按需扫描：
 
-|组|方案|命令|
+|组|应用场景|命令|
 |---|---|---|
 |配置|打开/关闭实时保护|`mdatp config real-time-protection --value [enabled/disabled]`|
 |配置|打开/关闭云保护|`mdatp config cloud --value [enabled/disabled]`|
@@ -109,11 +109,14 @@ ms.locfileid: "59196023"
 |配置|打开 PUA 保护|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
 |配置|关闭 PUA 保护|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
 |配置|打开 PUA 保护的审核模式|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
-|配置|打开/关闭 passiveMode|`mdatp config passive-mode --value enabled [enabled/disabled]`|
+|配置|打开/关闭防病毒被动模式|`mdatp config passive-mode --value [enabled/disabled]`|
+|配置|配置按需扫描的并行度|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
+|配置|在安全智能更新后打开/关闭扫描|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|配置|仅按需扫描 (/关闭存档) |`mdatp config scan-archives --value [enabled/disabled]`|
 |诊断|更改日志级别|`mdatp log level set --level [error/warning/info/verbose]`|
 |诊断|生成诊断日志|`mdatp diagnostic create --path [directory]`|
-|健康|检查产品的运行状况|`mdatp health`|
-|健康|检查spefic产品属性|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
+|运行状况|检查产品的运行状况|`mdatp health`|
+|运行状况|检查spefic产品属性|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
 |Protection|扫描路径|`mdatp scan custom --path [path] [--ignore-exclusions]`|
 |Protection|执行快速扫描|`mdatp scan quick`|
 |Protection|执行完全扫描|`mdatp scan full`|
@@ -159,4 +162,4 @@ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>适用于终结点的 Microsoft Defender 门户信息
 
-[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的新功能现已到达，位于 Microsoft Defender for Endpoint 博客上，提供有关 Microsoft Defender for Endpoint 安全中心中预期内容的详细指南。
+[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的一些功能现已在 Microsoft Defender for Endpoint 博客上提供在适用于终结点安全中心的 Microsoft Defender 中预期内容的详细指南。

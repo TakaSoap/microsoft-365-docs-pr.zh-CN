@@ -1,6 +1,6 @@
 ---
 title: 在任务中处理高级搜寻Microsoft 365 Defender
-description: 充分利用高级搜寻在查询中返回的查询Microsoft 365 Defender
+description: 充分利用高级搜寻在搜索中返回的查询Microsoft 365 Defender
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 自定义检测， 架构， kusto， 可视化， 图表， 筛选器， 深化
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 713a2c8b824b5c8fbffb1dcb35465d8f19f727d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 98e7fd75dcbb080f12232fb01cf8d00c0e4355fa
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196531"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126826"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>使用高级搜寻查询结果
 
@@ -108,7 +108,7 @@ EmailEvents
 将 `summarize` 运算符与 `bin()` 函数一同使用，可以检查一段时间内是否涉及特定指示器的事件。 下面的查询以 30 分钟的间隔对涉及文件的事件进行计数，以显示与该文件 `invoice.doc` 相关的活动峰值：
 
 ```kusto
-AppFileEvents
+CloudAppEvents
 | union DeviceFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
@@ -155,7 +155,7 @@ AppFileEvents
 应用筛选器以修改查询并运行查询后，将相应更新结果。
 
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender"](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开Microsoft 365 Defender](m365d-enable.md)更多数据源来搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a396f704405b062954b5d51fff4e69e85807e621
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 1da7c59ad7702482b1edbf52da821e474addd601
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444183"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126862"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -44,7 +44,7 @@ ms.locfileid: "59444183"
 
 ## <a name="configuration-profile-structure"></a>配置文件结构
 
-配置文件是一个 *.plist* 文件，它由键 (标识的条目表示首选项名称) 后跟一个值，具体取决于首选项的性质。 值可以是简单的 (，如数值) 或复杂，如嵌套的首选项列表。
+配置文件是一个 *.plist* 文件，它由键 (标识的条目表示首选项) 的名称，后跟一个值，具体取决于首选项的性质。 值可以是简单的 (，如数值) 或复杂，如嵌套的首选项列表。
 
 > [!CAUTION]
 >配置文件的布局取决于你使用的管理控制台。 以下各节包含 JAMF 和 Intune 的配置文件示例。
@@ -62,9 +62,9 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|antivirusEngine|
+|**Key**|antivirusEngine|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |||
 
 #### <a name="enable--disable-real-time-protection"></a>启用/禁用实时保护
@@ -78,25 +78,9 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|enableRealTimeProtection|
-|**数据类型**|布尔值|
-|**可能的值**|true (default)  <p> false|
-|||
-
-#### <a name="run-a-scan-after-definitions-are-updated"></a>更新定义后运行扫描
-指定是否在设备上下载新的安全智能更新后启动进程扫描。 启用此设置将在设备的运行进程上触发防病毒扫描。
-
-<br>
-
-****
-
-|节|值|
-|---|---|
-|**域**|`com.microsoft.wdav`|
-|**键**|scanAfterDefinitionUpdate|
-|**数据类型**|布尔值|
-|**可能的值**|false（默认值） <p> true|
-|**Comments**|适用于终结点版本 101.41.10 或更高版本的 Microsoft Defender 中可用。|
+|**Key**|enableRealTimeProtection|
+|**数据类型**|Boolean|
+|**可能的值**|true (默认)  <p> false|
 |||
 
 #### <a name="enable--disable-passive-mode"></a>启用/禁用被动模式
@@ -116,12 +100,63 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|passiveMode|
-|**数据类型**|布尔值|
+|**Key**|passiveMode|
+|**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|适用于终结点版本 100.67.60 或更高版本的 Microsoft Defender 中可用。|
 |||
-  
+
+#### <a name="run-a-scan-after-definitions-are-updated"></a>更新定义后运行扫描
+
+指定是否在设备上下载新的安全智能更新后启动进程扫描。 启用此设置将在设备的运行进程上触发防病毒扫描。
+
+<br>
+
+****
+
+|节|值|
+|---|---|
+|**域**|`com.microsoft.wdav`|
+|**Key**|scanAfterDefinitionUpdate|
+|**数据类型**|Boolean|
+|**可能的值**|true (默认)  <p> false|
+|**Comments**|适用于终结点版本 101.41.10 或更高版本的 Microsoft Defender 中可用。|
+|||
+
+#### <a name="scan-archives-on-demand-antivirus-scans-only"></a>扫描存档 (按需防病毒扫描仅扫描) 
+
+指定在按需防病毒扫描过程中是否扫描存档。
+
+<br>
+
+****
+
+|节|值|
+|---|---|
+|**域**|`com.microsoft.wdav`|
+|**Key**|scanArchives|
+|**数据类型**|Boolean|
+|**可能的值**|true (默认)  <p> false|
+|**Comments**|适用于终结点版本 101.41.10 或更高版本的 Microsoft Defender 中可用。|
+|||
+
+#### <a name="degree-of-parallelism-for-on-demand-scans"></a>按需扫描的并行度
+
+指定按需扫描的并行度。 这与用于执行扫描并影响 CPU 使用率的线程数以及按需扫描的持续时间相对应。
+
+<br>
+
+****
+
+|节|值|
+|---|---|
+|**域**|`com.microsoft.wdav`|
+|**Key**|maximumOnDemandScanThreads|
+|**数据类型**|整数|
+|**可能的值**|2 (默认值) 。 允许的值是介于 1 和 64 之间的整数。|
+|**Comments**|适用于终结点版本 101.41.10 或更高版本的 Microsoft Defender 中可用。|
+|||
+
 #### <a name="exclusion-merge-policy"></a>排除合并策略
 
 指定排除项的合并策略。 它可以是管理员定义的排除项和用户定义的排除项 () 管理员定义的排除项 `merge` `admin_only` () 。 此设置可用于限制本地用户定义自己的排除项。
@@ -133,7 +168,7 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|exclusionsMergePolicy|
+|**Key**|exclusionsMergePolicy|
 |**数据类型**|String|
 |**可能的值**|合并 (默认)  <p> admin_only|
 |**Comments**|适用于终结点版本 100.83.73 或更高版本的 Microsoft Defender 中可用。|
@@ -142,7 +177,7 @@ ms.locfileid: "59444183"
 #### <a name="scan-exclusions"></a>扫描排除项
 
 指定被扫描排除的实体。 排除项可以通过完整路径、扩展名或文件名指定。
- (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量的元素) 
+ (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量的元素。) 
 
 <br>
 
@@ -151,9 +186,9 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|排除项|
+|**Key**|排除项|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |||
 
 ##### <a name="type-of-exclusion"></a>排除类型
@@ -167,7 +202,7 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|$type|
+|**Key**|$type|
 |**数据类型**|String|
 |**可能的值**|excludedPath <p> excludedFileExtension <p> excludedFileName|
 |||
@@ -183,7 +218,7 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|path|
+|**Key**|path|
 |**数据类型**|String|
 |**可能的值**|有效路径|
 |**Comments**|仅在 *排除$type**时适用*|
@@ -216,7 +251,7 @@ ms.locfileid: "59444183"
 
 |通配符|说明|示例|匹配|不匹配|
 |---|---|---|---|---|
-|\*|匹配任意数目的任何字符，包括无 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`|
+|\*|匹配任意数目的任何字符，包括无字符 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`|
 |?|匹配任何单个字符|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`|
 ||||||
 
@@ -231,8 +266,8 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|isDirectory|
-|**数据类型**|布尔值|
+|**Key**|isDirectory|
+|**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|仅在 *排除$type**时适用*|
 |||
@@ -248,15 +283,15 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|extension|
+|**Key**|extension|
 |**数据类型**|String|
 |**可能的值**|有效的文件扩展名|
-|**Comments**|仅在排除 *$type FileExtension 时适用*|
+|**Comments**|仅在 *排除**$type FileExtension 时适用*|
 |||
 
 ### <a name="process-excluded-from-the-scan"></a>从扫描中排除的进程
 
-指定一个进程，所有文件活动都从扫描中排除。 可以通过进程的名称指定进程， (例如) 路径或完整 (`cat` 例如 `/bin/cat`) 。
+指定一个进程，所有文件活动都从扫描中排除。 可以通过进程的名称（例如 (，例如) 或完整路径 `cat` (，例如 `/bin/cat`) 。
 
 <br>
 
@@ -265,7 +300,7 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|name|
+|**Key**|name|
 |**数据类型**|String|
 |**可能的值**|任何字符串|
 |**Comments**|仅在排除 *$type FileName 时适用*|
@@ -282,7 +317,7 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|allowedThreats|
+|**Key**|allowedThreats|
 |**数据类型**|字符串数组|
 |||
 
@@ -297,7 +332,7 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|disallowedThreatActions|
+|**Key**|disallowedThreatActions|
 |**数据类型**|字符串数组|
 |**可能的值**|允许 (限制用户允许威胁)  <p> restore (限制用户从隔离网站还原) |
 |**Comments**|适用于终结点版本 100.83.73 或更高版本的 Microsoft Defender 中可用。|
@@ -314,9 +349,9 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|threatTypeSettings|
+|**Key**|threatTypeSettings|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |||
 
 ##### <a name="threat-type"></a>威胁类型
@@ -330,7 +365,7 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|注册表项|
+|**Key**|注册表项|
 |**数据类型**|String|
 |**可能的值**|potentially_unwanted_application <p> archive_bomb|
 |||
@@ -350,14 +385,14 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|值|
+|**Key**|值|
 |**数据类型**|String|
 |**可能的值**|审核 (默认)  <p> block <p> off|
 |||
 
 #### <a name="threat-type-settings-merge-policy"></a>威胁类型设置合并策略
 
-指定威胁类型设置的合并策略。 这可以是管理员定义的设置和用户定义的设置的组合， () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
+指定威胁类型设置的合并策略。 它可以是管理员定义的设置和用户定义的设置的组合， () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
 
 <br>
 
@@ -366,7 +401,7 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|threatTypeSettingsMergePolicy|
+|**Key**|threatTypeSettingsMergePolicy|
 |**数据类型**|String|
 |**可能的值**|合并 (默认)  <p> admin_only|
 |**Comments**|适用于终结点版本 100.83.73 或更高版本的 Microsoft Defender 中可用。|
@@ -383,7 +418,7 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|scanResultsRetentionDays|
+|**Key**|scanResultsRetentionDays|
 |**数据类型**|String|
 |**可能的值**|90 (默认值) 。 允许的值从 1 天到 180 天。|
 |**Comments**|适用于终结点版本 101.07.23 或更高版本的 Microsoft Defender 中可用。|
@@ -400,7 +435,7 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|scanHistoryMaximumItems|
+|**Key**|scanHistoryMaximumItems|
 |**数据类型**|String|
 |**可能的值**|10000 (默认值) 。 允许的值从 5000 个项目到 15000 个项目。|
 |**Comments**|适用于终结点版本 101.07.23 或更高版本的 Microsoft Defender 中可用。|
@@ -417,9 +452,9 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|cloudService|
+|**Key**|cloudService|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |||
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>启用/禁用云保护
@@ -433,9 +468,9 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|enabled|
-|**数据类型**|布尔值|
-|**可能的值**|true (default)  <p> false|
+|**Key**|enabled|
+|**数据类型**|Boolean|
+|**可能的值**|true (默认)  <p> false|
 |||
 
 #### <a name="diagnostic-collection-level"></a>诊断集合级别
@@ -449,14 +484,14 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|diagnosticLevel|
+|**Key**|diagnosticLevel|
 |**数据类型**|String|
 |**可能的值**|可选 (默认)  <p> 必需|
 |||
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>启用/禁用自动示例提交
 
-确定是否将 (可能包含威胁的可疑) 发送到 Microsoft。 如果提交的文件可能包含个人信息，系统将提示你。
+确定是否将 (可能包含威胁的可疑) 发送给 Microsoft。 如果提交的文件可能包含个人信息，系统将提示你。
 
 <br>
 
@@ -465,9 +500,9 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|automaticSampleSubmission|
-|**数据类型**|布尔值|
-|**可能的值**|true (default)  <p> false|
+|**Key**|automaticSampleSubmission|
+|**数据类型**|Boolean|
+|**可能的值**|true (默认)  <p> false|
 |||
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>启用/禁用自动安全智能更新
@@ -480,9 +515,9 @@ ms.locfileid: "59444183"
 
 |节|值|
 |---|---|
-|**键**|automaticDefinitionUpdateEnabled|
-|**数据类型**|布尔值|
-|**可能的值**|true (default)  <p> false|
+|**Key**|automaticDefinitionUpdateEnabled|
+|**数据类型**|Boolean|
+|**可能的值**|true (默认)  <p> false|
 |||
 
 ### <a name="user-interface-preferences"></a>用户界面首选项
@@ -496,9 +531,9 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|userInterface|
+|**Key**|userInterface|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |||
 
 #### <a name="show--hide-status-menu-icon"></a>显示/隐藏状态菜单图标
@@ -512,8 +547,8 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|hideStatusMenuIcon|
-|**数据类型**|布尔值|
+|**Key**|hideStatusMenuIcon|
+|**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 |||
 
@@ -528,7 +563,7 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|userInitiatedFeedback|
+|**Key**|userInitiatedFeedback|
 |**数据类型**|String|
 |**可能的值**|已启用 (默认)  <p> disabled|
 |**Comments**|适用于终结点版本 101.19.61 或更高版本的 Microsoft Defender 中可用。|
@@ -536,7 +571,7 @@ ms.locfileid: "59444183"
 
 ### <a name="endpoint-detection-and-response-preferences"></a>终结点检测和响应首选项
 
-管理 macOS 上 Microsoft Defender for Endpoint (EDR) 终结点检测和响应组件首选项。
+管理 macOS 上 Microsoft Defender for Endpoint (EDR) 终结点检测和响应的首选项。
 
 <br>
 
@@ -545,9 +580,9 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|edr|
+|**Key**|edr|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |||
 
 #### <a name="device-tags"></a>设备标记
@@ -563,9 +598,9 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|标记|
+|**Key**|标记|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |||
 
 ##### <a name="type-of-tag"></a>标记类型
@@ -579,7 +614,7 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|注册表项|
+|**Key**|注册表项|
 |**数据类型**|String|
 |**可能的值**|`GROUP`|
 |||
@@ -595,7 +630,7 @@ ms.locfileid: "59444183"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|值|
+|**Key**|值|
 |**数据类型**|String|
 |**可能的值**|任何字符串|
 |||
@@ -609,12 +644,12 @@ ms.locfileid: "59444183"
 
 若要开始，我们建议你的企业采用以下配置，以利用 Microsoft Defender for Endpoint 提供的所有保护功能。
 
-以下配置文件 (，或者，对于 JAMF，可以上载到自定义设置配置文件中的属性列表) ：
+以下配置文件 (，或者，对于 JAMF，可上载到自定义设置配置文件中的属性列表) ：
 
 - 启用实时保护 (RTP) 
 - 指定如何处理以下威胁类型：
   - **阻止 PUA (可能不需要)** 的应用程序
-  - **存档 (** 高压缩率的文件) Microsoft Defender 终结点日志进行审核
+  - **存档 (** 高压缩率的文件) 审核到 Microsoft Defender 终结点日志
 - 启用自动安全智能更新
 - 启用云保护
 - 启用自动提交示例
@@ -711,8 +746,6 @@ ms.locfileid: "59444183"
                     <true/>
                     <key>passiveMode</key>
                     <false/>
-                    <key>ScanAfterDefinitionUpdate</key>
-                    <false/>
                     <key>threatTypeSettings</key>
                     <array>
                         <dict>
@@ -746,7 +779,7 @@ ms.locfileid: "59444183"
 
 ## <a name="full-configuration-profile-example"></a>完整配置文件示例
 
-以下模板包含本文档中所述的所有设置的条目，并且可用于更高级的方案，你想要在 macOS 上对 Microsoft Defender for Endpoint 进行更多控制。
+以下模板包含本文档中所述的所有设置的条目，可用于更高级的方案，你想要在 macOS 上对 Microsoft Defender for Endpoint 进行更多控制。
 
 ### <a name="property-list-for-jamf-full-configuration-profile"></a>JAMF 完整配置文件的属性列表
 
@@ -761,8 +794,10 @@ ms.locfileid: "59444183"
         <true/>
         <key>passiveMode</key>
         <false/>
-        <key>ScanAfterDefinitionUpdate</key>
-        <false/>
+        <key>scanAfterDefinitionUpdate</key>
+        <true/>
+        <key>scanArchives</key>
+        <true/>
         <key>maximumOnDemandScanThreads</key>
         <integer>1</integer>
         <key>exclusions</key>
@@ -915,6 +950,10 @@ ms.locfileid: "59444183"
                     <true/>
                     <key>passiveMode</key>
                     <false/>
+                    <key>scanAfterDefinitionUpdate</key>
+                    <true/>
+                    <key>scanArchives</key>
+                    <true/>
                     <key>maximumOnDemandScanThreads</key>
                     <integer>1</integer>
                     <key>exclusions</key>
@@ -1039,7 +1078,7 @@ com.microsoft.wdav.plist: OK
 
 ### <a name="jamf-deployment"></a>JAMF 部署
 
-从 JAMF 控制台中，打开 **计算机** 配置文件，导航到你要使用的配置文件， \> 然后选择自定义设置。  使用 创建用作 `com.microsoft.wdav` 首选项域的条目并上载之前生成的 *.plist。*
+从 JAMF 控制台中，打开 **计算机** 配置文件，导航到你要使用的配置文件，然后选择自定义 \> 设置。  使用 创建用作 `com.microsoft.wdav` 首选项域的条目并上载之前生成的 *.plist。*
 
 > [!CAUTION]
 > 必须输入正确的首选项域 `com.microsoft.wdav` () ;否则，Microsoft Defender for Endpoint 无法识别首选项。

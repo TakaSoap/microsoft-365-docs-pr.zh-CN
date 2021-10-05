@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 0bfbd44e0e097148800501c5bed3b1b3db2dbbc9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d5d713b142ca65500366bca43564d35edf18a450
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196598"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126946"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -38,6 +38,15 @@ ms.locfileid: "59196598"
 > [!IMPORTANT]
 > 在 macOS 11 (Sur) 上，Microsoft Defender for Endpoint 需要额外的配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署此页中列出的其他 [配置文件](mac-sysext-policies.md)。
 
+## <a name="1014110-20121072141100"></a>101.41.10 (20.121072.14110.0) 
+
+- 向命令行工具添加了新开关：
+  - 控制按需扫描的并行度。 这可以通过 进行配置 `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` 。 默认情况下，使用 的并行 `2` 度。
+  - 控制启用还是禁用安全智能更新后的扫描。 这可以通过 进行配置 `mdatp config scan-after-definition-update --value [enabled/disabled]` 。 默认情况下，这设置为 `enabled` 。
+  - 控制在按需扫描过程中是否扫描存档。 这可以通过 进行配置 `mdatp config scan-archives --value [enabled/disabled]` 。 默认情况下，这设置为 `enabled` 。
+- 更改产品日志级别现在需要提升
+- Bug 修复&性能改进
+
 ## <a name="1014084-20121071140840"></a>101.40.84 (20.121071.14084.0) 
 
 - M1 芯片本机支持
@@ -49,11 +58,11 @@ ms.locfileid: "59196598"
 
 ## <a name="1013428-20121061134280"></a>101.34.28 (20.121061.13428.0) 
 
-- Bug 修复
+- 错误修补程序
 
 ## <a name="1013427-20121052134270"></a>101.34.27 (20.121052.13427.0) 
 
-- Bug 修复
+- 错误修补程序
 
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0) 
 
@@ -70,8 +79,8 @@ ms.locfileid: "59196598"
 - 从此版本开始，在通过命令行客户端触发的按需防病毒扫描期间检测到的威胁将自动修正。 扫描期间通过用户界面触发的威胁仍然需要手动操作。
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
-  - `--top N`：显示前 N 个 (仅在还指定了 `--sort` 值时) 
-- 性能改进 (在将一些 BUG 修复) &使用时的性能改进
+  - `--top N`：显示前 N 个 (仅在指定了值 `--sort` 时) 
+- 性能改进 (功能专门用于在 BUG 修复) &使用时
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0) 
 
@@ -80,7 +89,7 @@ ms.locfileid: "59196598"
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0) 
 
 - macOS 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。
-- 性能改进 (专为使用 XCode 模拟器应用修复错误) &的情况。
+- 性能改进 (XCode 模拟器应用用于修复错误) &的情况。
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
 
@@ -105,7 +114,7 @@ ms.locfileid: "59196598"
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0) 
 
-- Bug 修复
+- 错误修补程序
 
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0) 
 
@@ -117,11 +126,11 @@ ms.locfileid: "59196598"
 
 - 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 清单到内核内核错误时的条件
 - 修复了在 Mac 11 和 Big Sur (运行时 Endpoint Security 系统扩展) 
-- Bug 修复
+- 错误修补程序
 
 ## <a name="1011072"></a>101.10.72
 
-- Bug 修复
+- 错误修补程序
 
 ## <a name="1010961"></a>101.09.61
 
@@ -156,7 +165,7 @@ ms.locfileid: "59196598"
 
 - 修复了在用户界面中自动提交示例未标记为托管的错误
 - 添加了用于控制防病毒扫描历史记录中项目的保留的新设置。 现在可以指定 [在扫描](mac-preferences.md#antivirus-scan-history-retention-in-days) 历史记录中保留项目的天数，并指定扫描历史记录中 [的最大项目数](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
-- Bug 修复
+- 错误修补程序
 
 ## <a name="1010663"></a>101.06.63
 
@@ -176,7 +185,7 @@ ms.locfileid: "59196598"
 
 - 对快速扫描逻辑的改进，可显著减少扫描的文件数
 - 添加了 [对命令行](mac-resources.md#how-to-enable-autocompletion) 工具的自动完成支持
-- Bug 修复
+- 错误修补程序
 
 ## <a name="1010312"></a>101.03.12
 
@@ -198,10 +207,10 @@ ms.locfileid: "59196598"
 
 ## <a name="1009027"></a>100.90.27
 
-- 现在， [你可以为](mac-updates.md#set-the-channel-name) macOS 上的 Microsoft Defender for Endpoint 设置与系统范围的更新通道不同的更新通道
+- 现在可以在 macOS [上](mac-updates.md#set-the-channel-name) 为 Microsoft Defender for Endpoint 设置与系统范围的更新通道不同的更新通道
 - 新产品图标
 - 其他用户体验改进
-- Bug 修复
+- 错误修补程序
 
 ## <a name="1008692"></a>100.86.92
 
@@ -221,7 +230,7 @@ ms.locfileid: "59196598"
 
 ## <a name="1008373"></a>100.83.73
 
-- 为 IT 管理员添加了更多有关排除[管理](mac-preferences.md#exclusion-merge-policy)、威胁类型[](mac-preferences.md#threat-type-settings-merge-policy)设置管理和禁止[威胁操作的控制](mac-preferences.md#disallowed-threat-actions)
+- 为 IT 管理员添加了更多有关排除[管理](mac-preferences.md#exclusion-merge-policy)、威胁类型[](mac-preferences.md#threat-type-settings-merge-policy)设置管理和禁止威胁操作[的控制](mac-preferences.md#disallowed-threat-actions)
 - 当设备上未启用"完全磁盘访问"时，现在状态菜单中将显示一条警告
 - Bug 修复&性能改进
 
@@ -231,7 +240,7 @@ ms.locfileid: "59196598"
 
 ## <a name="1008042"></a>100.80.42
 
-- Bug 修复
+- 错误修补程序
 
 ## <a name="1007942"></a>100.79.42
 
@@ -247,7 +256,7 @@ ms.locfileid: "59196598"
 
 ## <a name="1007215"></a>100.72.15
 
-- Bug 修复
+- 错误修补程序
 
 ## <a name="1007099"></a>100.70.99
 
