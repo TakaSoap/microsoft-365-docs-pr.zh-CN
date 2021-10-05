@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: dc10c8ee9147cbee0a2946eaf28d91f80743f4f5
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 7c27e1264de8673e1cc366df29ecd57e0cf8431a
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489581"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099689"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -35,7 +35,7 @@ ms.locfileid: "59489581"
 
 [网络](network-protection.md) 保护有助于防止员工使用任何应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。 可以在 [测试环境中](evaluate-network-protection.md) 审核网络保护，以查看在启用应用之前将阻止哪些应用。
 
-[了解有关网络筛选配置选项的详细信息](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[了解有关网络筛选配置选项的详细信息。](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## <a name="check-if-network-protection-is-enabled"></a>检查网络保护是否已启用
 
@@ -43,9 +43,9 @@ ms.locfileid: "59489581"
 
 1. 选择任务栏 **中的** "开始"按钮，然后键入 **regedit** 以打开注册表编辑器。
 
-2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"选项"。
+2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"开始"菜单。
 
-3. 在嵌套菜单中导航到 **软件** 策略 \>  \> **Microsoft** \> **Windows Defender Windows Defender** \> **Exploit Guard** \> **网络保护**。
+3. 导航到软件策略 \>  \> **Microsoft** \> **Windows Defender Windows Defender** \> **Exploit Guard** \> **网络保护**。
 
 4. 选择 **EnableNetworkProtection** 以查看设备上网络保护的当前状态：
 
@@ -53,7 +53,7 @@ ms.locfileid: "59489581"
    - 1 或 **On**
    - 2 或 **审核** 模式
 
-    ![网络保护注册表项。](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
+    :::image type="content" alt-text="网络保护注册表项。" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
 
 ## <a name="enable-network-protection"></a>启用网络保护
 
@@ -61,12 +61,14 @@ ms.locfileid: "59489581"
 
 - [PowerShell](#powershell)
 - [移动设备管理 (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Microsoft Endpoint Manager /Intune](#microsoft-endpoint-manager-formerly-intune)
 - [组策略](#group-policy)
+- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
 ### <a name="powershell"></a>PowerShell
 
-1. 在"管理"中"开始"菜单 **powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
+1. 在 **"管理"中"开始"菜单 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
+
 2. 输入以下 cmdlet：
 
     ```PowerShell
@@ -95,7 +97,7 @@ ms.locfileid: "59489581"
 
 4. 转到 **"终结点保护**  >  **基础知识"，** 为配置文件提供名称，然后选择"下一 **步"。**
 
-5. 在"**配置设置"** 部分，转到 **"Microsoft Defender 攻击防护**  >    >  **网络筛选网络保护**  >  **启用或****审核"。** 选择“**下一步**”。
+5. 在"**配置设置"** 部分，转到 **"Microsoft Defender 攻击防护**  >  **网络筛选**  >  **网络保护**  >  **启用或****审核"。** 选择“**下一步**”。
 
 6. 根据组织 **需要****，选择** 适当的 **范围** 标记、分配和适用性规则。 管理员可以设置更多要求。
 
@@ -113,7 +115,7 @@ ms.locfileid: "59489581"
 
 2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-3. 展开树以 **Windows Exploit** Guard \> **网络** \> **Microsoft Defender 防病毒Windows Defender** \> **组件**。
+3. 展开树以 **Windows Exploit** Guard \> **网络Microsoft Defender 防病毒Windows Defender** \>  \> **组件**。
 
    > [!NOTE]
    > 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
@@ -123,8 +125,8 @@ ms.locfileid: "59489581"
     - **禁用 (默认)** - 网络保护功能不起作用。 不会阻止用户访问恶意域。
     - **审核模式**- 如果用户访问恶意 IP 地址或域，事件将记录在Windows日志中。 但是，不会阻止用户访问地址。
 
-> [!IMPORTANT]
-> 若要完全启用网络保护，必须将组策略选项设置为 **已启用**，还要在选项下拉菜单中选择阻止。
+   > [!IMPORTANT]
+   > 若要完全启用网络保护，必须将组策略选项设置为 **已启用**，还要在选项下拉菜单中选择阻止。
 
 使用注册表编辑器确认在本地计算机上启用网络保护：
 
@@ -136,6 +138,45 @@ ms.locfileid: "59489581"
    - 0=Off
    - 1=打开
    - 2=审核
+
+### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
+
+1. 打开 Configuration Manager 控制台。
+
+2. 转到 **资产和合规性**  >    >  **Endpoint Protection Windows Defender攻击防护。** 
+
+3. 从 **功能区选择** "创建攻击防护策略"以创建新策略。
+   - 若要编辑现有策略，请选择该策略，然后从功能区或右键单击菜单中选择"属性"。 编辑" **网络保护"选项卡** 中的"配置 **网络保护"** 选项。  
+
+4. 在 **"常规** "页上，指定新策略的名称并验证 **"网络保护** "选项是否已启用。 
+
+5. 在 **"网络保护** "页上，为"配置网络保护"选项选择以下 **设置之** 一：
+   - **阻止**
+   - **审核**
+   - **Disabled**
+   
+6. 完成其余步骤，并保存策略。 
+
+7. 从功能区中， **选择"部署** "以将策略部署到集合。
+
+> [!IMPORTANT]
+> 从 Configuration Manager 部署攻击防护策略后，如果你删除部署，将不会从客户端中删除攻击防护设置。 `Delete not supported` 如果你删除客户端的 Exploit Guard 部署，则记录在 Configuration Manager 客户端的 ExploitGuardHandler.log 中。 <!--CMADO8538577-->
+> 以下 PowerShell 脚本可以在系统上下文下运行，以删除这些设置：<!--CMADO9907132-->
+>
+> ```powershell
+> $defenderObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_Defender02" -Filter "InstanceID='Defender' and ParentID='./Vendor/MSFT/Policy/Config'"
+> $defenderObject.AttackSurfaceReductionRules = $null
+> $defenderObject.AttackSurfaceReductionOnlyExclusions = $null
+> $defenderObject.EnableControlledFolderAccess = $null
+> $defenderObject.ControlledFolderAccessAllowedApplications = $null
+> $defenderObject.ControlledFolderAccessProtectedFolders = $null
+> $defenderObject.EnableNetworkProtection = $null
+> $defenderObject.Put()
+>
+> $exploitGuardObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_ExploitGuard02" -Filter "InstanceID='ExploitGuard' and ParentID='./Vendor/MSFT/Policy/Config'"
+> $exploitGuardObject.ExploitProtectionSettings = $null
+> $exploitGuardObject.Put()
+>```  
 
 ## <a name="see-also"></a>另请参阅
 

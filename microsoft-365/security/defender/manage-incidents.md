@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 41a0c893e193c8690c0c50e5b12ecc8630b9a899
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a3d2254915203ea112d304e9fc45a6f1c4482d9b
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170042"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099715"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>管理事件Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "59170042"
 
 事件管理对于确保包含和解决威胁至关重要。
 
-在 Microsoft 365 Defender **>** (security.microsoft.com Microsoft 365 Defender security.microsoft.com) 快速启动时，可以管理事件&警报) 。 [](https://security.microsoft.com) 下面是一个示例。
+在 **&** 快速启动 Microsoft 365 Defender > (security.microsoft.com) ) 时，你可以管理事件 ([警报事件。](https://security.microsoft.com) 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。":::
 
@@ -47,7 +47,7 @@ ms.locfileid: "59170042"
 
 - [编辑事件名称](#edit-the-incident-name)
 - [添加事件标记](#add-incident-tags)
-- [将事件分配给自己](#assign-incidents)
+- [将事件分配给用户帐户](#assign-an-incident)
 - [解决这些事件](#resolve-an-incident)
 - [设置其分类并确定](#set-the-classification-and-determination)
 - [添加注释](#add-comments)
@@ -78,14 +78,14 @@ Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影�
 
 开始键入时，您可以选择从所选标记列表进行选择。
 
-## <a name="assign-incidents"></a>分配事件
+## <a name="assign-an-incident"></a>分配事件
 
-若要分配事件，请选择"**分配给我"。** 这样做会向用户帐户分配事件的所有权以及与其关联的所有警报。
+如果尚未分配事件，可以选择"分配给"框，并指定用户帐户 (预览) 。 Te re-assign an incident， remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. 分配事件的所有权会为与其关联的所有警报分配相同的所有权。
 
 通过筛选事件队列，您可以获取分配给您的事件列表。 
 
 1. 从事件队列中，选择"筛选器 **"。**
-2. 在"**事件分配"** 部分，清除 **"全选**"，然后选择 **"分配给我"。**
+2. 在"**事件分配"** 部分，清除 **"全选**"，然后选择"**分配给我"。**
 3. 选择 **"应用**"，然后关闭" **筛选器"** 窗格。
 
 然后，您可以将生成的 URL 保存为书签，以快速查看分配给您的事件列表。

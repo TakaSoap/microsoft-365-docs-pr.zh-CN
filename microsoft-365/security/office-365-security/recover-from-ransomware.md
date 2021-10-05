@@ -15,14 +15,14 @@ ms.collection:
 description: Microsoft 365管理员可以了解如何从勒索软件攻击中恢复。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94f45fd03d33fb5c1111e8a9098acc21b4830b01
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 9659a68e69f732203a20853320b2e35cd268a7c8
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041704"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099741"
 ---
-# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>从 Microsoft 365 中的勒索软件攻击中Microsoft 365
+# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>从 Microsoft 365 中的勒索软件Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -31,8 +31,7 @@ ms.locfileid: "60041704"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-即使你采取一切预防措施来保护你的组织，你仍然可能会遭受勒索软件 [攻击](/windows/security/threat-protection/intelligence/ransomware-malware) 。 勒索软件是一个大企业，在当今的威胁Microsoft 365是复杂攻击[的不断增加的目标](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf)。
-
+即使你采取一切预防措施来保护你的组织，你仍然可能会遭受勒索软件 [攻击](/windows/security/threat-protection/intelligence/ransomware-malware) 。 勒索软件是一项大业务，在当今的威胁Microsoft 365是复杂攻击[的不断增加的目标](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf)。
 
 本文中的步骤将为您提供恢复数据和停止内部感染传播的最佳机会。 在开始之前，请考虑以下事项：
 
@@ -44,13 +43,9 @@ ms.locfileid: "60041704"
 
 - 快速响应攻击及其后果非常重要。 等待的时间越长，恢复受影响数据的可能性就越小。
 
-## <a name="step-1-verify-your-third-party-backups"></a>步骤 1：验证第三方备份
+## <a name="step-1-verify-your-backups"></a>步骤 1：验证备份
 
-Microsoft 365 合规性工具套件旨在符合组织的法律和法规标准，因此作为最佳实践，我们建议[](/microsoft-365/compliance/)你使用第三方应用和服务定期备份 Microsoft 365 内容和[](https://www.microsoft.com/servicesagreement)数据。
-
-为了确保能够还原数据，定期测试备份并验证在攻击时可以还原备份非常重要。 在实际攻击的情况下，在从环境中删除勒索软件有效负载 (恶意软件) 之后，以及验证 Microsoft 365 环境中没有未经授权的访问之前，不应完成这些还原。 
-
-为了确保备份不受勒索软件影响，应从环境中空空测试第三方服务。
+如果你有脱机备份，你可能会在从环境中删除勒索软件有效负载 (恶意软件) 后，以及验证 Microsoft 365 环境中没有未经授权的访问后还原加密数据。 
 
 如果没有备份，或者备份也受勒索软件影响，可以跳过此步骤。
 
@@ -68,7 +63,7 @@ Microsoft 365 合规性工具套件旨在符合组织的法律和法规标准，
 
 - [为用户启用或禁用 POP3 或 IMAP4 访问](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-暂停OneDrive 同步有助于防止云数据被潜在感染的设备更新。 有关详细信息，请参阅如何暂停[和恢复](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)OneDrive。
+暂停OneDrive 同步有助于防止云数据被潜在感染的设备更新。 有关详细信息，请参阅如何暂停[和恢复OneDrive。](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>步骤 3：从受影响的设备中删除恶意软件
 
@@ -76,11 +71,11 @@ Microsoft 365 合规性工具套件旨在符合组织的法律和法规标准，
 
 不要忘记扫描正在同步数据的设备或映射的网络驱动器的目标。
 
-你可以[对Windows Defender旧](https://www.microsoft.com/windows/comprehensive-security) (客户端) Microsoft Security Essentials。 [](https://www.microsoft.com/download/details.aspx?id=5201)
+你可以将[Windows Defender](https://www.microsoft.com/windows/comprehensive-security)或 (用于) Microsoft Security Essentials。 [](https://www.microsoft.com/download/details.aspx?id=5201)
 
-此外，还可以帮助你删除勒索软件或恶意软件的替代方法是 MSRT (恶意软件[) 。 ](https://www.microsoft.com/download/details.aspx?id=9905)
+此外，还可以帮助你删除勒索软件或恶意软件的替代方法是[MSRT (恶意软件) 。 ](https://www.microsoft.com/download/details.aspx?id=9905)
 
-如果这些选项不起作用，可以尝试Windows Defender[脱机](https://support.microsoft.com/help/17466)"或[解决检测和删除恶意软件的问题](https://support.microsoft.com/help/4466982)。
+如果这些选项不起作用，可以尝试Windows Defender[脱机](https://support.microsoft.com/help/17466)"或["解决检测和删除恶意软件的问题"。](https://support.microsoft.com/help/4466982)
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>步骤 4：在已清理的计算机或设备上恢复文件
 
