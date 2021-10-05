@@ -1,7 +1,7 @@
 ---
-title: Windows 10 设备的装载工具和方法
-description: 载入Windows 10设备，以便它们可以将传感器数据发送到 Microsoft Defender for Endpoint 传感器
-keywords: 载入Windows 10设备， 组策略， 终结点配置管理器， 移动设备管理， 本地脚本， gp， sccm， mdm， intune
+title: 适用于移动设备的载入Windows方法
+description: 载入Windows设备，以便它们可以将传感器数据发送到 Microsoft Defender for Endpoint 传感器
+keywords: 载入Windows设备， 组策略， 终结点配置管理器， 移动设备管理， 本地脚本， gp， sccm， mdm， intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eb71cc8ee014c1e96f4e57fb58785e0c15b4602a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a07bd5cf5d3c3a021811841ccf3fffe054823ffa
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222378"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124717"
 ---
-# <a name="onboarding-tools-and-methods-for-windows-10-devices-in-defender-for-endpoint"></a>适用于 Defender for Endpoint 中 Windows 10设备的载入工具和方法
+# <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>适用于 Defender for Endpoint 中 Windows设备的载入工具和方法
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

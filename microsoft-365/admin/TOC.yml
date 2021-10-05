@@ -30,14 +30,6 @@
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: 将数据迁移到 Microsoft 365 商业标准版订阅
               href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: 规划 Windows 365 商业版
-          items:
-            - name: Windows 365 商业版和云电脑入门
-              href: setup/get-started-windows-365-business.md
-            - name: Windows 365 商业版大小调整选项
-              href: setup/windows-365-business-sizing.md
-            - name: 排查 Windows 365 云电脑设置问题
-              href: setup/troubleshoot-windows-365-business.md
         - name: 为业务组织设置 Microsoft 365
           items:
             - name: Microsoft 365 商业基础版

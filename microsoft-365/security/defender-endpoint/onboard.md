@@ -3,7 +3,6 @@ title: 配置和管理适用于终结点的 Microsoft Defender 功能
 ms.reviewer: ''
 description: 配置和管理适用于终结点的 Microsoft Defender 功能，例如攻击面减少和下一代保护
 keywords: 配置， 管理， 功能， 攻击面减少， 下一代保护， 安全控制， 终结点检测和响应， 自动调查和修正， 安全控制， 控制
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -19,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 18d3023900d624afe9b85c71d350c6e8e89f552386a23acc6f5b623d03e7b1f9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 946be62b418e3162de8ee6d51edb3114e6f81ca7
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898055"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124468"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>配置和管理适用于终结点的 Microsoft Defender 功能
 

@@ -1,7 +1,6 @@
 ---
 title: 在设备上运行检测测试，以验证设备已正确载入到 Microsoft Defender for Endpoint
 description: 在最近载入到 Microsoft Defender for Endpoint 服务的设备上运行检测测试脚本，以验证是否正确添加了该脚本。
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 11b7339dce44d3fb55593e7b54a5d38982f957cd
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 3eb8a028372fce56cb586c51829e506db040f0ca
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043295"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124309"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>在新载入的 Microsoft Defender 终结点设备上运行检测测试
 
@@ -30,6 +29,7 @@ ms.locfileid: "60043295"
 
 
 **适用于：**
+- Windows 11
 - 支持Windows 10版本
 - Windows Server 2012 R2
 - Windows Server 2016
@@ -68,6 +68,6 @@ ms.locfileid: "60043295"
 
 ## <a name="related-topics"></a>相关主题
 
-- [载入 Windows 10 设备](configure-endpoints.md)
+- [载入Windows设备](configure-endpoints.md)
 - [载入服务器](configure-server-endpoints.md)
 - [Microsoft Defender 终结点载入问题疑难解答](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

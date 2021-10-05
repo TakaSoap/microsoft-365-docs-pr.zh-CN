@@ -2,7 +2,6 @@
 title: 创建载入或载出通知规则
 description: 在使用本地载入或载出脚本时获取通知。
 keywords: 载入， 载出， 本地， 脚本， 通知， 规则
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9b00d971afa714b89a473ff75cf6022f8bba9ef8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2fc605a57d1bce1b1653f5e15bf8600cd9e1d831
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175434"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124277"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>使用本地载入或载出脚本时创建通知规则
 
@@ -41,7 +40,7 @@ ms.locfileid: "59175434"
 
 创建通知规则，以便当使用本地载入或载出脚本时，将通知你。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 你将需要具有访问权：
 
@@ -52,7 +51,7 @@ ms.locfileid: "59175434"
 
 1. 在 [flow.microsoft.com](https://flow.microsoft.com/)中。
 
-2. 导航到 **"我>计划>新流 - 从空白。**
+2. 导航到 **"我的流>新>计划 - 从空白。**
 
     ![流的图像。](images/new-flow.png)
 
@@ -174,10 +173,10 @@ ms.locfileid: "59175434"
 
     ```
 
-10. 从 JSON 调用中提取值，并检查已载入设备 (是否) /已在 SharePoint 列表注册，例如：
+10. 从 JSON 调用中提取值，并检查已载入设备 (是否) /已在 SharePoint 列表中注册，例如：
 
     - 如果是，则不触发任何通知
-    - 如果否，将在 SharePoint列表中 (新的已载入) 设备，并且会向 Defender for Endpoint 管理员发送通知
+    - 如果否，将在 (列表中) 新载入SharePoint设备，并且会向 Defender for Endpoint 管理员发送通知
 
     ![适用于每个图像的图像。](images/flow-apply.png)
 
@@ -210,5 +209,5 @@ ms.locfileid: "59175434"
 
 您可以拆分为两个查询：
 
-1. 对于"出载"，只需使用此 OData $filter，并且仅在满足条件时通知。
-2. 查看过去一小时内最后看到的所有设备，并检查第一次看到的属性 (如果第一次看到的属性是过去一小时，则最后一次看到的设备必须太) 。
+1. 对于载出，使用 OData $filter此间隔，并且仅在满足条件时通知。
+2. 查看过去一小时内最后看到的所有设备，并检查第一次看到的属性 (如果第一次看到的属性是过去一小时，则最后一次看到的设备必须位于) 。

@@ -1,8 +1,7 @@
 ---
-title: 使用本地脚本载入 Windows 10 设备
+title: 使用Windows脚本载入设备
 description: 使用本地脚本在设备上部署配置包，以允许将设备载入服务。
 keywords: 使用本地脚本配置设备， 设备管理， 为终结点设备配置 Microsoft Defender
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b1e6bcd4991ea94f1b46b43f446f5f40f6f2e1d4
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 1bcc9c51f37c9d76009b4c949a40b564617dd563
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399246"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124789"
 ---
-# <a name="onboard-the-windows-10-devices-using-a-local-script"></a>使用Windows 10脚本载入新设备
+# <a name="onboard-the-windows-devices-using-a-local-script"></a>使用Windows脚本载入新设备
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,16 +35,16 @@ ms.locfileid: "59399246"
 > [!IMPORTANT]
 > 此脚本已优化为在最多 10 台设备上使用。
 >
-> 若要大规模部署，请使用 [其他部署选项](configure-endpoints.md)。 例如，可以使用使用组策略 载入 Windows 10 设备中提供的脚本，将载入脚本部署到生产中的 10[多个设备](configure-endpoints-gp.md)。
+> 若要大规模部署，请使用 [其他部署选项](configure-endpoints.md)。 例如，可以使用使用组策略 载入 Windows 设备中提供的脚本，将载入脚本部署到生产中的 10[多个设备](configure-endpoints-gp.md)。
 
 ## <a name="onboard-devices"></a>载入设备
 
 
-请查看[PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)或[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。
+请查看[PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)或[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 的各种路径。
 
 1. 打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从 Defender 门户Microsoft 365[程序包](https://security.microsoft.com/)：
     1. 在导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **载入"。**
-    2. 选择Windows 10作为操作系统。
+    2. 选择Windows 10或Windows 11 作为操作系统。
     3. 在"**部署方法"** 字段中，选择"**本地脚本"。**
     4. 单击 **下载程序包** 并保存.zip文件。
 
@@ -100,7 +99,7 @@ Value: 0 or 1
 
 1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
     1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **""载出"。**
-    2. 选择Windows 10作为操作系统。
+    2. 选择Windows 10或Windows 11 作为操作系统。
     3. 在"**部署方法"** 字段中，选择"**本地脚本"。**
     4. 单击 **下载程序包** 并保存.zip文件。
 
@@ -133,9 +132,9 @@ Value: 0 or 1
 
 ## <a name="related-topics"></a>相关主题
 
-- [使用Windows 10载入设备](configure-endpoints-gp.md)
-- [使用Windows 10设备载入Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [使用移动设备管理工具载入 Windows 10 设备](configure-endpoints-mdm.md)
+- [使用Windows策略载入设备](configure-endpoints-gp.md)
+- [使用Windows载入设备Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [使用Windows管理工具载入设备](configure-endpoints-mdm.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)
 - [在新载入的 Microsoft Defender 终结点设备上运行检测测试](run-detection-test.md)
 - [Microsoft Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)

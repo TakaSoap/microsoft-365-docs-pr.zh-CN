@@ -2,7 +2,6 @@
 title: 载入至 Microsoft Defender for Endpoint 服务
 description: 了解如何将终结点载入到 Microsoft Defender for Endpoint 服务
 keywords: microsoft defender for endpoint， onboard， deploy
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 173135d9cc1ecf45ad5c0485b2bab4bb39b88a5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e56bb5f8647e9504c18fdc280b8e85b9764bc6c4
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175433"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124270"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>载入至 Microsoft Defender for Endpoint 服务
 
@@ -35,7 +34,7 @@ ms.locfileid: "59175433"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-了解部署 Microsoft Defender for Endpoint 的各个阶段，以及如何在解决方案中配置功能。
+了解部署 Microsoft Defender for Endpoint 的各个阶段以及如何在解决方案中配置功能。
 
 部署适用于终结点的 Defender 的过程分三个阶段：
 
@@ -65,7 +64,7 @@ ms.locfileid: "59175433"
 
 下表列出了基于需要载入的终结点的可用工具。
 
-|终结点|工具选项|
+|端点|工具选项|
 |---|---|
 |**Windows**|[本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ 移动设备管理器](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md) <br> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[本地脚本](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [移动设备管理](mac-install-with-other-mdm.md)|

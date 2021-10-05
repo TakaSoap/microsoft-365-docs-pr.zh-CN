@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ab3405022dac71843ecd4e8b630d3738fe69fcaa
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 827ea407d51f657914161056d97be648b3282190
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043079"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124765"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "60043079"
 本主题介绍如何在 Mac 上安装、配置、更新和使用 Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Mac 上的 Microsoft Defender for Endpoint 旁边运行其他第三方终结点保护产品可能会导致性能问题和不可预知的副作用。 如果在你的环境中，非 Microsoft 终结点保护是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Mac 上的 Defender for Endpoint EDR[功能](mac-preferences.md#enable--disable-passive-mode)。
+> 在 Mac 上的 Microsoft Defender for Endpoint 旁边运行其他第三方终结点保护产品可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Mac 上的 Defender for Endpoint EDR[功能](mac-preferences.md#enable--disable-passive-mode)。
 
 ## <a name="whats-new-in-the-latest-release"></a>最新版本的新增功能
 
@@ -50,7 +50,7 @@ ms.locfileid: "60043079"
 > [!TIP]
 > 如果你有任何要共享的反馈，请通过在你的设备上打开 Mac 上的 Microsoft Defender for Endpoint 并导航到"帮助发送反馈"来 \> **提交它**。
 
-若要获取最新功能（包括预览功能 (如适用于 Mac 设备的终结点检测和响应) ，请配置运行 Microsoft Defender for Endpoint 的 macOS 设备作为"预览体验成员"设备。
+若要获取最新功能，包括预览功能 (如适用于 Mac 设备) 的终结点检测和响应，请配置运行 Microsoft Defender for Endpoint 的 macOS 设备为"预览体验成员"设备。
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>如何在 Mac 上安装 Microsoft Defender for Endpoint
 
@@ -80,7 +80,7 @@ ms.locfileid: "60043079"
 > 在 macOS 11 (Sur) 上，Microsoft Defender for Endpoint 需要额外的配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署 [macOS Catalina](mac-sysext-policies.md)的新配置文件和较新版本的 macOS 中列出的其他配置文件。
 
 > [!IMPORTANT]
-> 截至 2021 年 2 月 15 (对) 的 macOS 10.13 支持已终止。
+> 截至 2021 年 2 月 15 (对) MacOS 10.13) 的支持已终止。
 
 - 11 (大) ，10.15 (加泰罗尼亚语) ，10.14 (Mojave) 
 - 磁盘空间：1GB
@@ -99,6 +99,7 @@ Mac 上的 Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可�
 - Microsoft 365 E5 安全性
 - Microsoft 365 A5 (M365 A5) 
 - Windows 10 企业版E5
+- Windows 11
 - Microsoft Defender for Endpoint
 
 > [!NOTE]
@@ -119,7 +120,7 @@ Microsoft Defender for Endpoint 可以通过以下发现方法发现代理服务
 - Web 代理自动发现协议 (WPAD)
 - 手动静态代理配置
 
-如果代理或防火墙阻止匿名流量，请确保允许匿名流量位于前面列出的 URL 中。
+如果代理或防火墙阻止匿名流量，请确保前面列出的 URL 中允许匿名流量。
 
 > [!WARNING]
 > 不支持经过身份验证的代理。 确保仅使用 PAC、WPAD 或静态代理。
@@ -141,7 +142,7 @@ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https:
  `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
-> 建议在客户端设备上使 [系统完整性 (](https://support.apple.com/HT204899) SIP) 启用。 SIP 是内置的 macOS 安全功能，可防止对操作系统进行低级篡改，并且默认启用。
+> 建议您在客户端设备上保持 [启用 (](https://support.apple.com/HT204899) SIP) 系统完整性保护。 SIP 是内置的 macOS 安全功能，可防止对操作系统进行低级篡改，并且默认启用。
 
 安装 Microsoft Defender for Endpoint 后，可通过在终端中运行以下命令来验证连接性：
 

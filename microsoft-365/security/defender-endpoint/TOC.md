@@ -48,14 +48,14 @@
 ### [Windows 和 Windows Server 上的 Microsoft Defender for Endpoint]()
 #### [将设备载入到 Microsoft Defender for Endpoint](onboard-configure.md)
 #### [载入以前版本的 Windows](onboard-downlevel.md)
-#### [载入 Windows 10 设备]()
+#### [载入 Windows 设备]()
 ##### [载入工具和方法](configure-endpoints.md)
 ##### [使用组策略载入设备](configure-endpoints-gp.md)
 ##### [使用 Microsoft Endpoint Configuration Manager 载入设备](configure-endpoints-sccm.md)
 ##### [使用移动设备管理工具载入设备](configure-endpoints-mdm.md)
 ##### [使用本地脚本载入设备](configure-endpoints-script.md)
 ##### [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)
-##### [在 Windows 虚拟桌面中载入 Windows 10 多会话设备](Onboard-Windows-10-multi-session-device.md)
+##### [在 Windows 虚拟桌面中载入 Windows 多会话设备](onboard-windows-multi-session-device.md)
 #### [载入 Windows 服务器](configure-server-endpoints.md)
 
 #### [无需访问 Internet 载入设备](onboard-offline-machines.md)
@@ -63,6 +63,9 @@
 #### [在设备上运行模拟攻击](attack-simulations.md)
 #### [配置代理和 Internet 连接设置](configure-proxy-internet.md)
 #### [创建载入或载出通知规则](onboarding-notification.md)
+
+#### [应用程序许可条款](mde-terms-windows.md)
+
 
 ### [其他操作系统上的 Microsoft Defender for Endpoint]()
 #### [载入非 Windows 设备](configure-endpoints-non-windows.md)
@@ -103,7 +106,7 @@
 
 ##### [隐私](mac-privacy.md)
 ##### [资源](mac-resources.md)
-
+##### [应用程序许可条款](mde-terms-mac.md)
 
 #### [iOS 上的 Microsoft Defender for Endpoint]()
 ##### [iOS 上的 Microsoft Defender for Endpoint 概述](microsoft-defender-endpoint-ios.md)
@@ -165,6 +168,9 @@
 
 ##### [疑难解答]()
 ###### [解决问题](android-support-signin.md)
+
+##### [Microsoft Defender for Endpoint 应用程序许可条款](mde-terms-mobile.md) 
+
 
 ### [解决载入问题]()
 #### [解决载入期间的问题](troubleshoot-onboarding.md)
@@ -321,9 +327,6 @@
 ##### [解决性能问题](troubleshoot-performance-issues.md)
 ##### [查看事件日志和错误代码，解决 Microsoft Defender 防病毒软件问题](troubleshoot-microsoft-defender-antivirus.md)
 ##### [从第三方解决方案迁移时解决 Microsoft Defender 防病毒软件问题](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
-#### [基于硬件的隔离]()
-##### [Windows 10 中基于硬件的隔离](overview-hardware-based-isolation.md)
 
 #### [漏洞保护]()
 ##### [保护设备免遭攻击](exploit-protection.md)

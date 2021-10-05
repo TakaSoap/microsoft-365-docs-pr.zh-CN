@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint 数据存储和隐私
 description: 了解 Microsoft Defender for Endpoint 如何处理它收集的隐私和数据。
 keywords: Microsoft Defender for Endpoint， 数据存储和隐私， 存储， 隐私， 许可， 地理位置， 数据保留， 数据
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1ad4dd1bacb301ad50b5a6aa52e6a49eacb647f1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9cbe0ca481b582a2161480d8e7aa1ecc1d4164ff
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195672"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124465"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint 数据存储和隐私
 
@@ -36,7 +34,7 @@ ms.locfileid: "59195672"
 本部分涵盖有关 Defender for Endpoint 的隐私和数据处理的一些最常见的问题。
 
 > [!NOTE]
-> 本文档介绍与 Defender for Endpoint 相关的数据存储和隐私详细信息。 有关适用于终结点的 Defender 以及其他产品和服务（如 Microsoft Defender 防病毒 和 Windows 10）的信息，请参阅[Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=827576)。 有关详细信息[，Windows 10](https://go.microsoft.com/fwlink/?linkid=827577)隐私常见问题解答。
+> 本文档介绍与 Defender for Endpoint 相关的数据存储和隐私详细信息。 有关适用于终结点的 Defender 以及其他产品和服务（如 Microsoft Defender 防病毒 和 Windows）的信息，请参阅[Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=827576)。 有关详细信息[，Windows](https://go.microsoft.com/fwlink/?linkid=827577)隐私常见问题解答。
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Microsoft Defender for Endpoint 会收集哪些数据？
 
@@ -44,7 +42,7 @@ Microsoft Defender for Endpoint 将在特定于服务的客户专用和隔离租
 
 收集的信息包括文件数据 (如文件名、大小和哈希) 、进程数据 (正在运行的进程、哈希) 、注册表数据、网络连接数据 (主机 IP 和端口) 以及设备详细信息 (例如设备标识符、名称和操作系统版本) 。
 
-Microsoft 安全地存储此数据Microsoft Azure Microsoft 隐私实践和[Microsoft 信任中心策略进行维护](https://go.microsoft.com/fwlink/?linkid=827578)。
+Microsoft 安全地存储此数据Microsoft Azure并按 Microsoft 隐私做法和[Microsoft 信任中心策略进行维护](https://go.microsoft.com/fwlink/?linkid=827578)。
 
 此数据使 Defender for Endpoint 能够：
 
@@ -84,11 +82,11 @@ Defender for Endpoint 在Microsoft Azure、英国或美国的数据中心运行�
 
 此外，Microsoft 对某些操作人员执行后台验证检查，并限制根据后台验证级别对应用程序、系统和网络基础结构的访问。 当运营人员在履行职责时需要访问客户的帐户或相关信息时，他们会遵循正式的流程。
 
-对 Microsoft Azure 政府数据中心中部署的服务的数据的访问仅授予经过筛选和批准以处理符合某些政府法规和要求（如 FedRAMP、NIST 800.171 (DIB) 、ITAR、IRS 1075、DoD L4 和 CJIS）的操作人员。
+对 Microsoft Azure 政府数据中心中部署的服务的数据的访问权限仅授予经过筛选和批准以处理符合某些政府法规和要求（如 FedRAMP、NIST 800.171 (DIB) 、ITAR、IRS 1075、DoD L4 和 CJIS）的操作人员。
 
 ## <a name="is-data-shared-with-other-customers"></a>数据是否与其他客户共享？
 
-否。 客户数据与其他客户隔离，不共享。 但是，有关由 Microsoft 处理产生的数据（不包含任何特定于客户的数据）的见解可能会与其他客户共享。 每个客户只能访问从其自己的组织收集的数据和 Microsoft 提供的一般数据。
+不需要。 客户数据与其他客户隔离，不共享。 但是，有关由 Microsoft 处理产生的数据（不包含任何特定于客户的数据）的见解可能会与其他客户共享。 每个客户只能访问从其自己的组织收集的数据和 Microsoft 提供的一般数据。
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Microsoft 将存储我的数据多久？ 什么是 Microsoft 的数据保留策略？
 

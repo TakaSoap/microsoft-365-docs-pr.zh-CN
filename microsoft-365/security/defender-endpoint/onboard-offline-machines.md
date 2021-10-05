@@ -3,8 +3,6 @@ title: 在无法访问 Internet 的情况下载入设备以访问 Microsoft Defe
 ms.reviewer: ''
 description: 在没有 Internet 访问的情况下载入设备，以便它们可以将传感器数据发送到 Microsoft Defender for Endpoint 传感器
 keywords: onboard， 服务器， vm， 本地， oms 网关， 日志分析， azure log analytics， mma
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eb74f3fab320364c1311efa1a629e43eb90a1aae
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 9eb7930c3c31aa65bd2091d6f68767551cd22026
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042754"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124489"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>在无法访问 Internet 的情况下载入设备以访问 Microsoft Defender for Endpoint
 
@@ -42,9 +40,9 @@ ms.locfileid: "60042754"
 > 以下步骤仅适用于运行早期版本的设备Windows例如：Windows Server 2016及更早版本或Windows 8.1版本。
 
 > [!NOTE]
-> - 如果通过"TelemetryProxyServer"注册表或 GPO 配置，则 OMS 网关服务器不能用作断开连接的 Windows 10 或 Windows Server 2019 或 Windows Server 2022 设备的代理。
-> - For Windows 10 or Windows Server 2019， or Windows Server 2022 - while you may use TelemetryProxyServer， it must point to a standard proxy device or appliance.
-> - 此外，Windows 10或 Windows Server 2019 或断开连接的环境中的 Windows Server 2022 必须能够通过内部文件或 Web 服务器脱机更新证书信任列表。
+> - 如果通过"TelemetryProxyServer"注册表或 GPO Windows或 Windows Server 设备，则 OMS 网关服务器不能用作代理。
+> - 对于 Windows 或 Windows Server - 尽管可以使用 TelemetryProxyServer，但它必须指向标准代理设备或设备。
+> - 此外，Windows环境中Windows服务器或服务器必须能够通过内部文件或 Web 服务器脱机更新证书信任列表。
 > - 有关脱机更新 CTLS 的信息，请参阅配置文件或 [Web 服务器以下载 CTL 文件](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)。
 
 有关载入方法详细信息，请参阅以下文章：
@@ -54,24 +52,24 @@ ms.locfileid: "60042754"
 
 ## <a name="on-premises-devices"></a>本地设备
 
-- 设置 Azure Log Analytics (以前称为 OMS Gateway) 充当代理或中心：
+- 设置 Azure Log Analytics (以前称为 OMS 网关) 充当代理或中心：
   - [Azure Log Analytics 代理](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - [安装和配置 Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace 密钥& ID
+  - [安装和配置Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace key & ID
 
 - 同一 Azure Log Analytics 网络中的脱机设备
   - 将 MMA 配置为指向：
     - 作为代理的 Azure Log Analytics IP
-    - Defender for Endpoint workspace key & ID
+    - Defender for Endpoint 工作区密钥& ID
 
 ## <a name="azure-virtual-machines"></a>Azure 虚拟机
 
 - 配置和启用 [Azure Log Analytics 工作区](/azure/azure-monitor/platform/gateway)
   - 设置 Azure Log Analytics Gateway (以前称为 OMS Gateway) 充当代理或集线器：
     - [Azure Log Analytics 网关](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-    - [安装和配置 Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace 密钥& ID
+    - [安装和配置Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace key & ID
     - 同一网络 OMS 网关中的脱机 Azure VM
       - 将 Azure Log Analytics IP 配置为代理
-      - Azure Log Analytics 工作区密钥& ID
+      - Azure Log Analytics Workspace 密钥& ID
     - Azure Defender
       - [安全策略 \> 日志分析工作区](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
       - [威胁 \> 检测允许终结点的 Defender 访问我的数据](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)

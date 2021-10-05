@@ -2,7 +2,6 @@
 title: 使用 Microsoft Endpoint Manager 载入
 description: 了解如何使用 Microsoft Defender for Endpoint Microsoft Endpoint Manager
 keywords: 载入， 配置， 部署， 部署， 终结点管理器， Microsoft Defender for Endpoint， 集合创建， 终结点检测响应， 下一代保护， 攻击面减少， Microsoft 终结点管理器
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e1a598f0a87a4bb0bd7882d2b402c43b276a24f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75bbf7e0d121a7d0ed71124179367243e8aff777
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175437"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124801"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 载入
 
@@ -49,13 +48,13 @@ ms.locfileid: "59175437"
 
 本主题指导用户：
 
-- 步骤 1：在 MEM 中创建组以将设备载入Microsoft Endpoint Manager (MEM) 分配配置
+- 步骤 1：在 MEM 中通过创建组将设备载入服务Microsoft Endpoint Manager () 分配配置
 - 步骤 2：使用 Microsoft Endpoint Manager
 
 本载入指南将指导你完成在使用应用时需要执行Microsoft Endpoint Manager：
 
 - [标识目标设备或用户](#identify-target-devices-or-users)
-  - 为用户Azure Active Directory设备 (组) 
+  - 创建用户Azure Active Directory设备 (组) 
 - [创建配置文件](#step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities)
   - 在Microsoft Endpoint Manager中，我们将指导你为每种功能创建单独的策略。
 
@@ -69,7 +68,7 @@ ms.locfileid: "59175437"
 
 有关此Microsoft Endpoint Manager，请查看以下资源：
 
-- [Microsoft Endpoint Manager页面](/mem/)
+- [Microsoft Endpoint Manager页](/mem/)
 - [有关 Intune 和 ConfigMgr 聚合的博客文章](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [MEM 简介视频](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
@@ -102,7 +101,7 @@ ms.locfileid: "59175437"
 
 5. 从" **组>所有组"窗格中** ，打开新组。
 
-6. 选择 **"添加>的成员"。**
+6. 选择 **">添加成员"。**
 
 7. 查找测试用户或设备并选择它。
 
@@ -133,7 +132,7 @@ ms.locfileid: "59175437"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal4 的图像。](images/58dcd48811147feb4ddc17212b7fe840.png)
 
-3. 在 **"平台"下，Windows 10"和"稍后"，选择"配置文件 - 终结点检测和响应>创建"。**
+3. 在 **"平台"下，Windows 10和更高版本、配置文件 - 终结点检测和响应>创建"。**
 
 4. 输入名称和说明，然后选择"下一 **步"。**
 
@@ -302,7 +301,7 @@ ms.locfileid: "59175437"
 9. 选择 **查看并创建>创建**。
 
     > [!div class="mx-imgBorder"]
-    > ![portal31 Microsoft Endpoint Manager图像。](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
+    > ![Microsoft Endpoint Manager portal31 的图像。](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
 
 10. 查看策略。
 
@@ -322,17 +321,17 @@ ms.locfileid: "59175437"
 1. 打开 MEM 门户并导航到相关策略，如上述步骤所示。 以下示例显示了下一代保护设置。
 
     > [!div class="mx-imgBorder"]
-    > [![Microsoft Endpoint Manager portal33 的图像。](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
+    > [![portal33 Microsoft Endpoint Manager图像。](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
 
 2. 选择 **配置策略** 以查看策略状态。
 
     > [!div class="mx-imgBorder"]
-    > [![Microsoft Endpoint Manager portal34 的图像。](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
+    > [![portal34 Microsoft Endpoint Manager图像。](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
 
 3. 选择  **"设备状态** "以查看状态。
 
     > [!div class="mx-imgBorder"]
-    > [![portal35 Microsoft Endpoint Manager图像。](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
+    > [![Microsoft Endpoint Manager portal35 的图像。](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
 
 4. 选择  **"用户状态** "以查看状态。
 
@@ -393,7 +392,7 @@ ms.locfileid: "59175437"
 
     ![命令行 1 的图像。](images/cb0260d4b2636814e37eee427211fe71.png)
 
-3. 在测试设备上应用该策略后，打开 PowerShell Windows并键入 `Get-MpPreference` 。
+3. 在测试设备上应用该策略后，打开 PowerShell Windows键入 `Get-MpPreference` 。
 
 4. 这应该会以以下行作为响应，内容如下所示：
 
@@ -407,7 +406,7 @@ ms.locfileid: "59175437"
 
     ![命令行 3 的图像。](images/196a8e194ac99d84221f405d0f684f8c.png)
 
-3. 应用策略后，打开 PowerShell Windows并键入 `(Get-MpPreference).EnableNetworkProtection` 。
+3. 应用该策略后，打开 PowerShell Windows并键入 `(Get-MpPreference).EnableNetworkProtection` 。
 
 4. 响应结果应为 1，如下所示。
 

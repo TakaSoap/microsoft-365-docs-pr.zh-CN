@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 494cfb352d8ccbf6dd0640d559083c9e733fa9b7
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 57d029e55759a08d84efe1eb684b67caf3e8653a
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041622"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124681"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>载入非永久性虚拟桌面基础结构设备
 
@@ -33,7 +33,7 @@ ms.locfileid: "60041622"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - 虚拟桌面基础结构 (VDI) 设备
-- Windows 10、Windows Server 2019、Windows Server 2022、Windows Server 2008R2/2012R2/2016
+- Windows 10、Windows 11、Windows Server 2019、Windows Server 2022、Windows Server 2008R2/2012R2/2016
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)。
 
@@ -60,11 +60,11 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 > [!WARNING]
 > 对于资源配置较低的环境，VDI 启动过程可能会减慢 Defender for Endpoint 传感器载入的速度。
 
-### <a name="for-windows-10-or-windows-server-2019-or-windows-server-2022"></a>For Windows 10 or Windows Server 2019， or Windows Server 2022
+### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>对于 Windows 10、Windows 11、Windows Server 2019 或 Windows Server 2022
 
 1. 打开 VDI 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
    1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **载入"。**
-   2. 选择Windows 10操作系统。
+   2. 选择Windows 10或Windows 11 作为操作系统。
    3. 在 **"部署方法"** 字段中，选择 **"非永久性终结点的 VDI 载入脚本"。**
    4. 单击 **下载程序包** 并保存.zip文件。
 
@@ -102,7 +102,7 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 7. 输入设备名称并选择"设备"作为搜索类型 **，** 以使用搜索函数。
 
-## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>对于下层 SKUs (Windows Server 2008 R2/2012 R2/2016) 
+## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>对于下层 SKUS (Windows Server 2008 R2/2012 R2/2016) 
 
 > [!NOTE]
 > 以下注册表仅在目标是实现"每个设备的单个条目"时相关。
@@ -122,7 +122,7 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 2. 按照 [服务器载入过程操作](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)。
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>使用 VDI 映像更新 (虚拟) 基础结构
+## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>使用 VDI 映像更新非永久性 () 基础结构
 
 作为最佳实践，我们建议使用脱机维护工具修补黄金/主映像。
 
@@ -136,9 +136,9 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 有关 DISM 命令和脱机服务的详细信息，请参阅以下文章：
 
-- [使用 DISM Windows映像](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [使用 DISM Windows图像](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [DISM 映像管理Command-Line选项](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [减小脱机映像中的组件存储Windows大小](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [减小脱机映像中组件存储Windows大小](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 如果脱机服务不是非永久性 VDI 环境的可行选项，应执行以下步骤以确保一致性和传感器运行状况：
 
@@ -152,7 +152,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 3. 根据需要为映像提供服务。
 
-4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能 https://download.sysinternals.com/files/PSTools.zip) 累积的网络文件夹内容：
+4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能累积 https://download.sysinternals.com/files/PSTools.zip) 的网络文件夹内容：
 
     ```console
     PsExec.exe -s cmd.exe
@@ -166,8 +166,8 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 ## <a name="related-topics"></a>相关主题
 
-- [使用Windows 10载入设备](configure-endpoints-gp.md)
-- [使用Windows 10载入Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [使用移动设备管理工具载入 Windows 10 设备](configure-endpoints-mdm.md)
-- [使用本地脚本载入 Windows 10 设备](configure-endpoints-script.md)
+- [使用Windows载入设备](configure-endpoints-gp.md)
+- [使用Windows载入设备Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [使用Windows管理工具载入设备](configure-endpoints-mdm.md)
+- [使用Windows脚本载入设备](configure-endpoints-script.md)
 - [Microsoft Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)
