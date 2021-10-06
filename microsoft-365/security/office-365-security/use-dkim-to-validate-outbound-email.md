@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25c83dedaa9f1606744e54459a0ebfb5627be752
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 61368c5a2f6a54f58505760f42f14cb46a1ae832
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162183"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099773"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -73,14 +73,14 @@ DKIM 允许你在邮件头中为出站电子邮件添加数字签名。配置 DK
 ## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing"></a>DKIM 如何能够比单独使用 SPF 更有效地防止恶意欺骗
 <a name="HowDKIMWorks"> </a>
 
-SPF 将信息添加到邮件信封中，但 DKIM 是在邮件头中 *加密* 签名。 当你转发邮件时，转发服务器可能会截除邮件信封部分。 由于数字签名作为电子邮件头的一部分与电子邮件同时存在，因此即使当邮件进行了转发，DKIM 也仍在运行，如以下示例所示。
+虽然 SPF 将信息添加到邮件信封中，但 DKIM 在邮件头中 *加密签名*。当你转发邮件时，转发服务器可能会截除邮件信封部分。由于数字签名作为电子邮件头的一部分与电子邮件同时存在，因此即使当邮件已如以下示例所示进行了转发，DKIM 也仍在工作。
 
 ![关系图显示转发邮件在 SPF 检查失败的情况下传递 DKIM 身份验证。](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
 
 在此示例中，如果您只发布了域的一条 SPF TXT 记录，收件人的邮件服务器可能已将您的电子邮件标记为垃圾邮件，并生成一个误报结果。**在这种情况下，添加 DKIM 可以减少 *误报* 垃圾邮件** 报告。由于 DKIM 依赖于公钥加密（而不仅仅对 IP 地址加密）进行身份验证，DKIM 被认为是比 SPF 更强大的身份验证形式。建议在部署中同时使用 SPF、DKIM 以及 DMARC。
 
 > [!TIP]
-> DKIM 使用私钥将加密的签名插入邮件头。 在邮件头中，将签名域或出站域作为 **d =** 字段中的值插入。 然后，验证域或收件人的域使用 **d=** 字段从 DNS 中查找公钥，对邮件进行身份验证。 如果邮件已经过验证，则 DKIM 检查通过。
+> DKIM 使用私钥将加密的签名插入邮件头中。在邮件头中，将签名域或出站域作为 **d=** 字段中的值插入。然后，验证域或收件人域使用 **d=** 字段从 DNS 中查找公钥，并对邮件进行身份验证。如果邮件已经过验证，则通过 DKIM 检查。
 
 ## <a name="steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal"></a>从 Microsoft 365 Defender 门户创建、启用和禁用 DKIM 的步骤
 
@@ -295,7 +295,7 @@ TTL:                3600
 ## <a name="to-configure-dkim-for-more-than-one-custom-domain"></a>为多个自定义域配置 DKIM 的具体步骤
 <a name="DKIMMultiDomain"> </a>
 
-如果你在将来决定添加其他自定义域，并且想要为新域启用 DKIM，必须为每个域完成本文中介绍的步骤。 具体而言，完成[手动设置 DKIM 需要执行的操作](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)中的所有步骤。
+如果你在将来决定添加其他自定义域，并且想要为新域启用 DKIM，必须为每个域完成本文中介绍的步骤。尤其需要完成 [手动设置 DKIM 需要执行的操作](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365) 中的所有步骤。
 
 ## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>为自定义域禁用 DKIM 签名策略
 <a name="DisableDKIMSigningPolicy"> </a>
@@ -350,7 +350,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
     b=<signed field>;
 ```
 
-在此示例中，主机名和域包含在 fabrikam.com 的 DKIM 签名由域管理员启用情况下 CNAME 将指向的值。 最终，每封发送自 Microsoft 365 的邮件都会进行 DKIM 签名。 如果您自行启用 DKIM，该域将与发件人地址（此例中为 fabrikam.com）中的域相同。 如果不自行启用，该域将不同于发件人地址中的域，而是会使用组织的初始域。 有关确定初始域的信息，请参阅[关于域的常见问题](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)。
+在此示例中，主机名和域包含在 fabrikam.com 的 DKIM 签名由域管理员启用情况下 CNAME 将指向的值。发送自 Microsoft 365 的每封邮件将最终进行 DKIM 签名。如果自行启用 DKIM，该域将与发件人地址（此例中为 fabrikam.com）中的域相同。如果不自行启用，该域将不同于发件人地址中的域，而是会使用组织的初始域。有关如何确定初始域的信息，请参阅 [域常见问题解答](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)。
 
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>设置 DKIM 以便第三方服务可以代表自定义域发送或假冒电子邮件
 <a name="SetUp3rdPartyspoof"> </a>
@@ -374,7 +374,7 @@ Return-Path: <communication@bulkemailprovider.com>
 
 3. 发送电子邮件时，批量电子邮件提供商使用相应的私钥对密钥进行签名。这样一来，批量电子邮件提供商可以将 DKIM 签名附加到邮件头中。
 
-4. 接收电子邮件系统通过对 From 中的域进行 DKIM-Signature d=\<domain\> 值验证来执行 DKIM 检查：(5322.From) 邮件的地址。 在此示例中，值匹配：
+4. 接收电子邮件系统通过对电子邮件键的收件人：(5322.From) 地址中的域验证 DKIM-Signature d=\<domain\> 值来执行 DKIM 检查。在此示例中，该值匹配：
 
    > sender@**contoso.com**
 
@@ -393,8 +393,10 @@ Return-Path: <communication@bulkemailprovider.com>
 ## <a name="next-steps-after-you-set-up-dkim-for-microsoft-365"></a>后续步骤：为 Microsoft 365 设置 DKIM 后
 <a name="DKIMNextSteps"> </a>
 
-尽管 DKIM 旨在帮助防止欺骗，但 DKIM 与 SPF 和 DMARC 协同工作效果更佳。 设置了 DKIM 后，如果你尚未设置 SPF，则应执行此操作。 若要了解 SPF 的快速简介及其快速配置方法，请参阅[在 Microsoft 365 中设置 SPF 以防欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 若要更深入地了解 Microsoft 365 如何使用 SPF，或要了解故障排除或非标准部署（如混合部署），请从 [Microsoft 365 如何使用发件人策略框架 (SPF) 以防欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)入手。 接下来，请参阅[使用 DMARC 验证电子邮件](use-dmarc-to-validate-email.md)。 [反垃圾邮件邮件头](anti-spam-message-headers.md)包括 Microsoft 365 用来执行 DKIM 检查的语法和头字段。
+尽管 DKIM 旨在帮助防止欺骗，但 DKIM 与 SPF 和 DMARC 协同工作效果更佳。设置了 DKIM 后，如果你尚未设置 SPF，则应执行此操作。有关 SPF 的简要介绍以及快速配置 SPF 的信息，请参阅 [**在 Microsoft 365 中设置 SPF 以帮助防止欺骗**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。有关 Microsoft 365 如何使用 SPF 的更深入了解，或者有关故障排除或非标准部署（如混合部署）的信息，请首先阅读 [Microsoft 365 如何使用发件人策略框架 (SPF) 来防止欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)。然后请参阅 [**使用 DMARC 验证电子邮件**](use-dmarc-to-validate-email.md)。[反垃圾邮件标头](anti-spam-message-headers.md) 包括了 Microsoft 365 进行 DKIM 检查所使用的语法和标头字段。
 
 ## <a name="more-information"></a>更多信息
 
 通过 PowerShell 进行密钥轮换：[Rotate DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig) 
+
+[使用 DMARC 验证电子邮件](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)

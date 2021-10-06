@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint
 description: Microsoft Defender for Endpoint 是企业终结点安全性平台，可帮助抵御高级持久性威胁。
 keywords: Microsoft Defender for Endpoint 简介，Microsoft Defender for Endpoint 简介，网络安全，高级持久性威胁，企业安全性，计算机行为传感器，云安全性，分析，威胁智能，攻击面减少，下一代保护，自动调查和修复，Microsoft 威胁专家，安全分数，高级搜寻，Microsoft 365 Defender，网络威胁搜寻
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ae0d38eec976abb88638eea3c3d2166c7203647e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e87c13b8d5b4afe2dc14664b680900f7b30b3d02
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196316"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124549"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -32,8 +30,6 @@ ms.locfileid: "59196316"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
-
-> 有关 Windows 10 企业版特性和功能的详细信息，请参阅 [Windows 10 企业版](https://www.microsoft.com/WindowsForBusiness/buy)。
 
 Microsoft Defender for Endpoint 是企业终结点安全平台，旨在帮助企业网络阻止、检测、调查和响应高级威胁。
 
@@ -80,7 +76,7 @@ Defender for Endpoint 使用内置于 Windows 10 和 Microsoft 的可靠云服�
 > [!TIP]
 >
 > - 了解 Defender for Endpoint 中的最新增强功能：[Microsoft Defender for Endpoint 中的新增功能](whats-new-in-microsoft-defender-atp.md)。
-> - Microsoft Defender for Endpoint 在最近的 MITRE 评估中演示了业界领先的光学和检测功能。 阅读：[来自基于 MITRE ATT&CK 的评估的见解](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
+> - Microsoft Defender for Endpoint 在最近的 MITRE 评估中演示了业界领先的光学和检测功能。请参阅：[来自基于 MITRE ATT&CK 的评估的见解](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
 
 <a name="tvm"></a>
 

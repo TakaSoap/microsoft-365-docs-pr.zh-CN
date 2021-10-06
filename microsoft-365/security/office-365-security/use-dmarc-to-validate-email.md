@@ -18,12 +18,12 @@ ms.collection:
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC) 以验证从你的组织发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a92c6ec50fb60d15e027a11163aad6b2186e5304
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 68a3f9bc2b7752ee59c040ebaca54e58008479e9
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197182"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099737"
 ---
 # <a name="use-dmarc-to-validate-email"></a>使用 DMARC 验证电子邮件
 
@@ -211,7 +211,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
    DMARC通过在DNS中以TXT记录的形式发布策略来实现，并且是分层的（例如，为contoso.com发布的策略将适用于sub.domain.contonos.com，除非为子域明确定义了不同的策略）。 此功能很有用，因为组织可以指定较少数量的高级 DMARC 记录以扩大覆盖面。 如果不想让子域继承顶级域的 DMARC 记录，应注意配置明确的子域 DMARC 记录。
 
-   此外，当子域不应该发送电子邮件时，还可通过添加 `sp=reject` 值来添加 DMARC 的通配符类型策略。 例如：
+   此外，当子域不应发送电子邮件时，还可通过添加 `sp=reject` 值来添加 DMARC 的通配符类型策略。例如：
 
    ```text
    _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
@@ -219,7 +219,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Microsoft 365 如何处理未通过 DMARC 的出站电子邮件
 
-如果邮件是从 Microsoft 365 出站的而且未通过 DMARC，并且你已将策略设置为 p=quarantine 或 p=reject，则该邮件通过[出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)进行路由。 出站电子邮件不存在任何替代方法。
+如果邮件是从 Microsoft 365 出站而且未通过 DMARC，并且你已将策略设置为 p=quarantine 或 p=reject，则该邮件通过 [出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md) 进行路由。
 
 如果你发布 DMARC 拒绝策略 (p=reject)，则 Microsoft 365 中的任何其他客户都无法欺骗你的域，因为通过服务中继出站邮件时邮件将无法通过你的域的 SPF 或 DKIM。不过，如果你发布 DMARC 拒绝策略，但并非所有电子邮件均通过 Microsoft 365 进行了验证，部分可能会被标记为入站电子邮件的垃圾邮件（如上所述），或者如果你不发布 SPF 且尝试通过服务将其中继到出站，邮件将被拒绝。例如，当你生成 DMARC TXT 记录时，如果你忘记包括代表你的域发送邮件的服务器和应用的某些 IP 地址，就会出现这种情况。
 
@@ -274,6 +274,6 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 [Microsoft 365 如何使用发件人策略框架 (SPF) 来防止欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)
 
-[在 Microsoft 365 中设置 SPF 以防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+[**在 Microsoft 365 中设置 SPF 以防止欺骗**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-[使用 DKIM 在 Microsoft 365 中验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)
+[**使用 DKIM 在 Microsoft 365 中验证从自定义域发送的出站电子邮件**](use-dkim-to-validate-outbound-email.md)

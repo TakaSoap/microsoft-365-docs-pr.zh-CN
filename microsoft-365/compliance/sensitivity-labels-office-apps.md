@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f202eae985ea1dbf0057a0c1ee5663931ea134d9
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: 22fa76c56e1cca84fc62784ac31a6acae8b65421
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011197"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124297"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -59,7 +59,7 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 列出的数字是每个功能所需的最低 Office 应用程序版本。 
 
 > [!NOTE]
-> 对于 Windows 和半年企业频道，支持的最低版本号可能尚未发布。 [了解详细信息](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+> 对于 Windows 和半年企业频道，支持的最低版本号可能尚未发布。[了解更多](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
  
 |功能 |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
@@ -88,7 +88,7 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 列出的数字是每个功能所需的最低 Office 应用程序版本。 
 
 > [!NOTE]
-> 对于 Windows 和半年企业频道，支持的最低版本号可能尚未发布。 [了解详细信息](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+> 对于 Windows 和半年企业频道，支持的最低版本号可能尚未发布。[了解更多](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
 
 |功能 |Outlook for Windows |Outlook for Mac |iOS 版 Outlook |Android 版 Outlook |Outlook 网页版 |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
@@ -102,7 +102,7 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |[允许用户分配权限： <br /> - 不转发](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[允许用户分配权限： <br /> - 仅加密](encryption-sensitivity-labels.md#let-users-assign-permissions)  | 当前频道：2011+ <br /><br> 每月企业频道：2011+ <br /><br> 半年企业频道：2108+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | 是 |
 |[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 当前频道：2101+ <br /><br> 每月企业频道：2101+ <br /><br> 半年企业频道：2108+ | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | 是                |
-|[审核标签相关的用户活动](data-classification-activity-explorer.md) | 当前频道：2111+ <br /><br> 每月企业频道：2011+ <br /><br> 半年企业频道：正在审阅 | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | 是 |
+|[审核标签相关的用户活动](data-classification-activity-explorer.md) | 当前频道：2011+ <br /><br> 每月企业频道：2011+ <br /><br> 半年企业频道：正在审阅 | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | 是 |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用敏感信息类型                    | 当前频道：2009+ <br /><br> 每月企业频道：2009+ <br /><br> 半年企业频道：2102+ | 16.44+ <sup>\*</sup>                    | 审阅中           | 审阅中               | 是 |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用可训练分类器                    | 当前频道：2105+ <br /><br> 每月企业频道：2105+ <br /><br> 半年企业频道：2108+ | 审阅中                    | 审阅中           | 审阅中               | 是 |
 |[默认标签和强制标签的不同设置](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 当前频道：2105+ <br /><br> 每月企业频道：2105+ <br /><br> 半年企业频道：2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | 是 |
@@ -150,7 +150,7 @@ Office 内置标签客户端从以下管理中心下载敏感度标签和敏感�
 通过使用组策略或 [Office 云策略服务](/DeployOffice/overview-office-cloud-policy-service)部署此设置。
 
 > [!NOTE]
-> 若要使用组策略设置“**使用 Office 中的敏感度功能来应用和查看敏感度标签**”，并将其设置为“**1**”，则在某些情况下，Azure 信息保护客户端可能仍会在 Office 应用中加载。 在每个应用中阻止加载项加载可以防止这种情况的发生。
+> 若要使用组策略设置“**使用 Office 中的敏感度功能来应用和查看敏感度标签**”，并将其设置为“**1**”，则在某些情况下，Azure 信息保护客户端可能仍会在 Office 应用中加载。在每个应用中阻止加载项加载可阻止这种情况发生。
 
 或者，可以通过交互方式从 Word、Excel、PowerPoint 和 Outlook 禁用或删除“**Microsoft Azure 信息保护**”Office 加载项。 此方法适用于单台计算机和临时测试。 有关说明，请参阅 [Office 程序中查看、管理和安装加载项](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)。 
 
@@ -160,7 +160,7 @@ Office 内置标签客户端从以下管理中心下载敏感度标签和敏感�
 
 ## <a name="office-file-types-supported"></a>支持的 Office 文件类型
 
-具有 Word、Excel 和 PowerPoint 文件的内置标签的 Office 应用支持开放 XML 格式（如 .docx 和 .xlsx），但不支持 Microsoft Office 97-2003 格式（如 .doc 和 .xls）、开放文档格式（如 .odt 和 .ods）或其他格式。 当文件类型不受支持内置标签时，**敏感度** 按钮在 Office 应用中不可用。
+具有 Word、Excel 和 PowerPoint 文件的内置标签的 Office 应用支持开放 XML 格式（如 .docx 和 .xlsx），但不支持 Microsoft Office 97-2003 格式（如 .doc 和 .xls）、开放文档格式（如 .odt 和 .ods）或其他格式。当文件类型不支持使用内置标签进行标记时，“**敏感度**”按钮在 Office 应用中不可用。
 
 Azure 信息保护统一标签客户端同时支持 Open XML 格式和 Microsoft Office 97-2003 格式。 有关详细信息，请参阅 azure [保护统一标签客户端](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) 管理员指南中支持的类型。
 
@@ -279,9 +279,9 @@ Azure 信息保护统一标签客户端同时支持 Open XML 格式和 Microsoft
 
 ### <a name="conditional-access-policies"></a>条件访问策略
 
-如果组织已实施 [Active Directory 条件访问](/azure/active-directory/conditional-access/overview)，请检查这些策略的配置。 如果策略包括 **Microsoft Azure 信息保护** 并且该策略扩展到外部用户，则这些外部用户在租户中必须具有来宾帐户，即使他们在其自己的租户中拥有 Azure AD 帐户。
+如果你的组织已实施 [Microsoft Azure Active Directory 条件访问策略](/azure/active-directory/conditional-access/overview)，请检查相应策略的配置。如果策略包括 **Microsoft Azure 信息保护** 并且该策略扩展到外部用户，则这些外部用户在租户中必须具有来宾帐户，即使他们在其自己的租户中拥有 Azure AD 帐户。
 
-如果没有此来宾帐户，他们无法打开加密文档并看到错误消息。 消息文本可能会告知他们需要将其帐户添加为租户中的外部用户，且此方案说明不正确 **请注销，然后使用不同的 Azure Active Directory 用户帐户**。
+如不使用该访客帐户，则他们无法打开加密的文档并看到错误消息。消息文本可能会告知他们需要将其帐户添加为租户中的外部用户，且此方案说明不正确 **请注销，然后使用不同的 Azure Active Directory 用户帐户**。
 
 如果无法针对需要打开通过标签加密的文档的外部用户，在租户中创建和配置来宾帐户，则必须从条件访问策略中删除 Azure 信息保护，或者从策略中排除外部用户。
 
@@ -319,7 +319,7 @@ Office 应用应用的内容标记和加密与敏感度标签不同，具体取�
 > [!IMPORTANT]
 > 目前，并非所有平台上的应用都支持动态内容标记，可标记页眉、页脚和水印。 对于不支持此功能的应用，其将标记应用为标签配置中指定的原始文本，而不是解决变量。
 > 
-> Azure 信息保护统一标签客户端支持动态标记。 有关内置 Office 的标签，请参阅此页面中 [功能](#support-for-sensitivity-label-capabilities-in-apps) 部分中的表，以了解支持的最低版本。
+> Azure 信息保护统一标签客户端支持动态标记。对于内置于 Office 应用的标签，请参阅此页面上[功能](#support-for-sensitivity-label-capabilities-in-apps)中的表格，了解支持的最低版本。
 
 为标记内容配置敏感度标签时，可以在文本字符串中为页眉、页脚或水印使用以下变量：
 
@@ -371,7 +371,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 > [!IMPORTANT]
 > 
-> [Azure 信息保护统一标记客户端](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)支持此配置，也称为强制标签。 有关内置 Office 应用的标签，请参阅此页面中 [功能](#support-for-sensitivity-label-capabilities-in-apps) 部分中有关最低版本的表。
+> [Azure 信息保护统一标签客户端](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)支持该配置（也称为“必需标签”）。对于内置于 Office 应用的标签，请参阅此页面上的[功能](#support-for-sensitivity-label-capabilities-in-apps)部分中的表格，了解最低版本要求。
 >
 > 要对文档而不是电子邮件使用强制标签，请参阅下一节中说明如何配置 Outlook 特定选项的指示。
 > 
@@ -404,7 +404,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 ## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>Outlook 特定的默认标签和强制标签选项
 
-对于内置标签，请使用此页上的 [Outlook 功能表](#sensitivity-label-capabilities-in-outlook)以及 **默认标签和强制标签的不同设置** 行来标识支持这些功能的最低版本 Outlook。 所有版本的 Azure 信息保护统一标签客户端都支持这些特定于 Outlook 的选项。
+对于内置标签，请使用此页上的 [Outlook 功能表](#sensitivity-label-capabilities-in-outlook)以及 **默认标签和强制标签的不同设置** 行来标识支持这些功能的最低版本 Outlook。Azure 信息保护统一标签客户端的所有版本均支持这些特定于 Outlook 的选项。
 
 Outlook 应用支持的默认标签设置与文档的默认标签设置不同时：
 
