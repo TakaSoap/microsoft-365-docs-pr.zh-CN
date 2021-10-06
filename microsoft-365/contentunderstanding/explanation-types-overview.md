@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 深入了解 Microsoft SharePoint Syntex 中的短语列表、正则表达式和接近度解释类型。
-ms.openlocfilehash: 178f56ea0513d0cc8ba0c47a3c9cde3a24796899
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 99b3160e29a4c81a50d152187863d1dfb0cfa405
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786391"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088009"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的说明类型
 
@@ -71,7 +71,7 @@ ms.locfileid: "59786391"
 ![仅完全匹配的大写。](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> 请使用 [说明库](explanation-types-overview.md#use-explanation-templates)，以使用常见短语列表的短语列表模板，如 *日期*、*电话号码*、*信用卡号码*，而不是手动创建短语列表说明。
+> 请使用 [说明库](explanation-templates.md)，以使用常见短语列表的短语列表模板，如 *日期*、*电话号码*、*信用卡号码*，而不是手动创建短语列表说明。
 
 ## <a name="regular-expression"></a>正则表达式
 
@@ -153,7 +153,7 @@ Redmond, WA 98034<br>
 |`Dog`|1|单个单词，无标点符号或空格。|
 |`RMT33W`|1|记录定位器编号。其中可能包含数字和字母，但不包含标点符号。|
 |`425-555-5555`|5|电话号码。 每个标点符号是一个令牌，因此 `425-555-5555` 是 5 个令牌：<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
-|`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
+|`https://luis.ai`|7 |`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
 
 #### <a name="configure-the-proximity-explanation-type"></a>配置邻近度说明类型
 
@@ -212,73 +212,6 @@ Redmond, WA 98034<br>
 
     在查看器中，可以手动调整选择框以包括出现短语的位置。 对于此设置，需要选择一个 **开始** 和 **结束** 位置。 这些值表示从文档开头开始的令牌数。 尽管可以手动输入这些值，但在查看器中手动调整选择框更加方便。
 
-## <a name="use-explanation-templates"></a>使用说明模板
+### <a name="see-also"></a>另请参阅
 
-可手动添加各个短语列表值进行解释，但使用解释库中提供模板更为轻松。
-
-例如，可以使用 *日期* 的短语列表模板添加 *日期* 的所有变体，而不是通过手动添加，因为模板中已包含许多短语列表值：
-
-![说明库。](../media/content-understanding/explanation-template.png)
-
-说明库包含常用的 *短语列表* 说明，包括：
-
-- 日期：日历日期，所有格式。 包括文本和数字（例如，“2020 年 12 月 9 日”）。
-- 日期（数值）：日历日期，所有格式。 包含数字（例如 1-11-2020）。
-- 时间：12 和 24 小时格式。
-- 数字：正数和负数（最多 2 位小数）。
-- 百分比：表示百分比的模式列表。 例如，1%、11%、100% 或 11.11%。
-- 电话号码：常用的美国和国际格式。 例如，000 000 0000、000-000-0000、(000)000-0000 或 (000) 000-0000。
-- 邮政编码：美国邮政编码格式。 例如，11111、11111-1111。
-- 句首词：最多 9 个字符单词的常用模式。
-- 句尾：句子结尾的常用标点符号。
-- 信用卡：常用的信用卡卡号格式。 例如，1111-1111-1111-1111。
-- 社会安全号码：美国社会安全号码格式。例如，111-11-1111。
-- 复选框：表示已填充复选框上变体的短语列表。 例如，_X_、_ _X_。
-- 货币：主要国际符号。 例如：$。
-- 电子邮件抄送：带有术语“CC：”的短语列表，通常位于邮件发送给的其他人员或组的姓名或电子邮件地址附近。
-- 电子邮件日期：带有术语“发送于：”的短语列表，通常位于发送电子邮件日期附近。
-- 电子邮件问候语：电子邮件的常见打开行。
-- 电子邮件收件人：带有术语“收件人：”的短语列表，通常位于邮件发送到的人员或组的姓名或电子邮件地址附近。
-- 电子邮件发件人：带有术语“发件人：”的短语列表，通常位于发件人姓名或电子邮件地址附近。
-- 电子邮件主题：带有术语“主题：”的短语列表，通常位于电子邮件的主题附近。
-
-说明库还包含常用的 *正则表达式* 说明，包括：
-
-- 6 到 17 位数字：匹配任何长度为 6 到 17 位的数字。 美国银行账号适合此模式。
-- 电子邮件地址：匹配常见类型的电子邮件地址，如 meganb@contoso.com。
-- 美国纳税人 ID 编号：匹配以 9 开头的 3 位数字，后跟以 7 或 8 开头的 6 位数字
-- Web 地址 (URL)：匹配以 http://或 https:// 开头的 web 地址格式。
-
-此外，说明库还包含三种自动模板类型，用于处理示例文件中标记的数据：
-
-- 标记后：示例文件中标签后发生的字词或字符。
-- 标签之前：示例文件中标签前发生的字词或字符。
-- 标签：示例文件前 10 个标签。
-
-为提供自动模板工作方式的示例，以下示例文件中将使用“标签之前”说明模板，以帮助向模型提供更多信息，从而获得更准确的匹配。
-
-![示例文件。](../media/content-understanding/before-label.png)
-
-选择标签之前说明模板时，将查找示例文件中标签之前显示的第一组字词。 在示例中，第一个示例文件中标识的字词为"截至"。
-
-![在标签模板之前。](../media/content-understanding/before-label-explanation.png)
-
-可选择" **添加** 模板创建解释。  添加更多示例文件时，将在短语列表中标识并添加其他字词。
-
-![添加标签。](../media/content-understanding/before-label-add.png)
-
-#### <a name="to-use-a-template-from-the-explanation-library"></a>若要使用说明库中的模板
-
-1. 从模型的“**培训**”页面的“**说明**”部分中，选择“**新建**”，然后选择“**通过模板**”。
-
-   ![添加前标签。](../media/content-understanding/from-template.png)
-
-2.  在“**说明模板**”页面上，选择要使用的说明，然后选择“**添加**”。
-
-    ![选择模板。](../media/content-understanding/phone-template.png)
-
-3. 所选模板的信息显示在“**创建说明**”页面。 如果需要，可编辑解释名称，并从短语列表中添加或删除项目。
-
-    ![编辑模板。](../media/content-understanding/phone-template-live.png)
-
-4. 完成后，选择“**保存**”。
+[在 SharePoint Syntex 中使用解释模板](explanation-templates.md)

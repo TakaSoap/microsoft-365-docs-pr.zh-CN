@@ -473,7 +473,7 @@
               href: archive-xslt-xml-data.md
             - name: Yieldbroker
               href: archive-yieldbroker-data.md
-            - name: YouTube (预览)
+            - name: YouTube
               href: archive-youtube-data.md
             - name: Zoom 会议
               href: archive-zoommeetings-data.md
@@ -638,7 +638,7 @@
               href: content-search-reference.md
             - name: 关键字查询和搜索条件
               href: keyword-queries-and-search-conditions.md
-            - name: 使用 KQL 编辑器生成搜索查询
+            - name: 使用 KQL 编辑器生成搜索查询（预览）
               href: ediscovery-kql-editor.md
             - name: 配置搜索权限筛选
               href: permissions-filtering-for-content-search.md
@@ -716,7 +716,7 @@
               href: assign-ediscovery-permissions.md
             - name: 关键字查询和搜索条件
               href: keyword-queries-and-search-conditions.md
-            - name: 使用 KQL 编辑器生成搜索查询
+            - name: 使用 KQL 编辑器生成搜索查询（预览）
               href: ediscovery-kql-editor.md
             - name: 设置合规性边界
               href: set-up-compliance-boundaries.md
@@ -811,7 +811,7 @@
               href: collection-statistics-reports.md
             - name: 生成搜索查询内容集合
               href: building-search-queries.md
-            - name: 使用 KQL 编辑器生成搜索查询
+            - name: 使用 KQL 编辑器生成搜索查询（预览）
               href: ediscovery-kql-editor.md
             - name: 关键字查询和搜索条件
               href: keyword-queries-and-search-conditions.md
