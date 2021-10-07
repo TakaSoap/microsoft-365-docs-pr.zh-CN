@@ -11,19 +11,19 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: b8acad4520fc588517083574d41465e277b9c96a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6eef2485379544233db29fe94539c5c07499f9fc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169650"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167254"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -258,7 +258,7 @@ ms.locfileid: "59169650"
 
 - 要面向的 AAD 用户帐户和一台已将本地 OneDrive 文件夹与 OneDrive 云存储同步的已载入 Windows 10 计算机。
 - 目标 Windows 10 计算机上安装的 Microsoft Word
-- 配置和发布的敏感度标签。 请参阅[敏感度标签入门](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels)和[创建和配置敏感度标签及其策略](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)
+- 敏感度标签配置和发布。请参阅[敏感度标签入门](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels)和[创建和配置敏感度标签及其策略](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)
 
 共有三个步骤。
 
@@ -289,7 +289,7 @@ ms.locfileid: "59169650"
 > [!NOTE]
 > DLP 自动隔离将为每个不允许的应用创建文件的子文件夹。 因此，如果在不允许的应用列表中同时有 *Notepad* 和 *OneDrive* ，将为 **\OneDrive** 创建一个子文件夹，并为 **\Notepad** 创建另一个子文件夹。
 
-8. 选择 **将文件替换为包含以下文本 的 .txt 文件**，并在占位符文件中输入所需的文本。 例如，对于名为 auto quar 1.docx *的文件，*：
+8. 选择 **将文件替换为包含以下文本 的 .txt 文件**，并在占位符文件中输入所需的文本。例如，名为 *auto quar 1.docx* 的文件：
     
 **%%FileName%% 包含你的组织正在使用数据丢失防护 （DLP） 策略 %%PolicyName%% 保护的敏感信息，并已移动到隔离文件夹： %%QuarantinePath%%。** 
 
@@ -322,7 +322,7 @@ ms.locfileid: "59169650"
     
 8. 选择 **保存**，然后 **下一步**。
 
-9. 选择 **立即将其打开**。 选择“**下一步**”。
+9. 选择 **立即将其打开**。选择 **下一个**。
 
 10. 查看设置，然后选择“**提交**”。
 

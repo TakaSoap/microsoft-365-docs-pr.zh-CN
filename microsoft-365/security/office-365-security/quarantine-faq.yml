@@ -9,23 +9,23 @@ metadata:
   ms.date: 
   audience: ITPro
   ms.topic: troubleshooting
-  localization_priority: Normal
+  ms.localizationpriority: medium
   search.appverid:
   - MET150
   ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
   ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-  description: 管理员可以查看有关 EOP 电子邮件中隔离邮件的Exchange Online Protection (常见问题) 。
+  description: 管理员可以查看有关 EOP 电子邮件中隔离邮件的常见问题Exchange Online Protection (解答) 。
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 640a019c86e5313b81003136b2d9842d8784e29a
-  ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+  ms.openlocfilehash: 149fd46d21626dbed91bd2a94490169123fc5acb
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/23/2021
-  ms.locfileid: "59483558"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60199401"
 title: 隔离邮件常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -40,7 +40,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  本主题为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织或没有邮箱的独立 Exchange Online Protection (EOP) 组织提供有关隔离Exchange Online常见问题和解答。
+  本主题提供有关在 Exchange Online 中拥有邮箱的 Microsoft 365 组织或没有邮箱的独立 Exchange Online Protection (EOP) 组织的隔离Exchange Online常见问题和解答。
 
 
   有关反垃圾邮件保护的问题和解答，请参阅 [反垃圾邮件保护常见问题解答](anti-spam-protection-faq.yml)。
@@ -59,7 +59,7 @@ sections:
       默认情况下，只有管理员才能管理因恶意软件隔离的邮件。 有关详细信息，请参阅 [以管理员角色管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。
 
 
-      但是，管理员可以创建隔离策略， _将_ 隔离策略应用于为用户定义更多功能的反恶意软件策略。 有关详细信息，请参阅隔离 [策略](quarantine-policies.md)。
+      但是，管理员可以创建隔离策略， _将_ 隔离策略应用于为用户定义更多功能的反恶意软件策略。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
   - question: >
       如何隔离垃圾邮件？
     answer: >
@@ -71,7 +71,7 @@ sections:
   - question: >
       最终用户可以在隔离中访问哪些邮件？
     answer: >
-      隔离策略根据邮件被隔离的原因来定义用户是否可以访问隔离的邮件 ([支持的功能) 。](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) 有关详细信息，请参阅隔离 [策略](quarantine-policies.md)。
+      隔离策略根据邮件被隔离的原因来定义用户是否可以访问隔离的邮件 ([支持的功能) 。](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
 
 
       默认情况下，用户可以访问以下类型的已隔离邮件，这些邮件是收件人：
@@ -92,7 +92,7 @@ sections:
 
       - **反恶意软件策略**
 
-      - **保险箱 Defender (附件Office 365) ：** 来自 保险箱 附件策略的电子邮件和来自 SharePoint、OneDrive 和 Microsoft Teams 保险箱 附件中的文件。
+      - **保险箱 Defender (附件Office 365) ：** 来自 保险箱 附件策略的电子邮件和来自 保险箱 Attachments for SharePoint、OneDrive 和 Microsoft Teams 的文件。
 
       - **邮件流规则 (传输规则) ：** 由于邮件流规则中的"将邮件传递 **至** 托管隔离"操作而隔离的邮件。
 
@@ -111,17 +111,17 @@ sections:
   - question: >
       能否一次释放或报告多个隔离邮件？
     answer: >
-      在 Microsoft 365 Defender 门户中，一次可以选择并释放最多 100 条消息。
+      在 Microsoft 365 Defender 门户中，一次最多可以选择并释放 100 条消息。
 
 
       管理员可以使用 Exchange Online PowerShell 或独立 EOP PowerShell 中的[Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)和[Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) cmdlet 批量查找并释放隔离邮件，并批量报告误报。
   - question: >
       搜索隔离邮件时是否支持通配符？ 能否搜索特定域的隔离邮件？
     answer: >-
-      通配符在应用程序门户中Microsoft 365 Defender支持。 例如，在搜索发件人时，需要指定完整的电子邮件地址。 但是，可以在 PowerShell 或独立 EOP PowerShell Exchange Online通配符。
+      通配符在应用程序门户中不受Microsoft 365 Defender支持。 例如，在搜索发件人时，需要指定完整的电子邮件地址。 但是，可以在 PowerShell 或独立 EOP PowerShell Exchange Online通配符。
 
 
-      例如，将以下 PowerShell 代码复制到记事本，将文件另存为 .ps1，位置便于您查找 (例如，C:\Data\QuarantineRelease.ps1) 。
+      例如，将以下 PowerShell 代码复制到记事本中，将文件另存为 .ps1，位置便于您查找 (例如，C:\Data\QuarantineRelease.ps1) 。
 
 
       然后，在连接到 Exchange Online [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)或[Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)后，运行以下命令以运行脚本：
@@ -137,7 +137,7 @@ sections:
       该脚本执行以下操作：
 
 
-      - 查找从 fabrikam 域中所有发件人隔离为垃圾邮件的未发布邮件。 最大结果数为 50，000， (50 页（包含 1000 个) ）。
+      - 查找从 fabrikam 域中所有发件人隔离为垃圾邮件的未发布邮件。 最大结果数为 50，000， (50 页（包含 1000 个结果) ）。
 
       - 将结果保存到 CSV 文件。
 

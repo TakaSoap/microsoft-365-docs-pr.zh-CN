@@ -8,30 +8,30 @@ ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 了解 Microsoft Defender for Office 365 计划 2 中的自动调查和响应Office 365操作。
+description: 了解 Microsoft Defender for Office 365 计划 2 中的自动调查和响应功能中的修正操作。
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 987771616acfd2f2faf425e525505b320155388e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4d81fe5e2baa4146136d7e55461290a31ef2462b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195959"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196617"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>在管理中查看和管理Office 365
 
 **适用对象**
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 
-由于自动调查电子邮件&协作内容会导致裁定（如 *恶意* 或可疑）时，会创建某些修正操作。 在 Microsoft Defender for Office 365中，修正操作可能包括：
+由于自动调查电子邮件&协作内容会导致裁定（如恶意或可疑）时，会创建某些修正操作。 在 Microsoft Defender for Office 365 中，修正操作可能包括：
 
 - 软删除电子邮件或群集
 - 关闭外部邮件转发
@@ -85,13 +85,13 @@ ms.locfileid: "59195959"
 有两种不同的方法可以重新考虑提交的操作：
 
 - 通过统 [一操作中心](https://security.microsoft.com/action-center)。
-- 但是[，Office操作中心 。](https://security.microsoft.com/threatincidents)
+- 但是[，Office操作中心](https://security.microsoft.com/threatincidents)。
 
 ## <a name="change-or-undo-through-the-unified-action-center"></a>通过统一操作中心更改或撤消
 
 1. 转到统 [一操作中心](https://security.microsoft.com/action-center) 并登录。
 2. 在 **"历史记录** "选项卡上，选择要更改或撤消的操作。
-3. 在屏幕右侧窗格中，选择相应的操作 (移动到 **收件箱**、移动到垃圾邮件、移动到已删除项目、软删除或硬删除) 。   
+3. 在屏幕右侧窗格中，选择相应的操作 (移动到 **收件箱**、移动到垃圾邮件、移动到已删除项目、软删除或硬) 。   
 
 ## <a name="change-or-undo-through-the-office-action-center"></a>通过操作中心Office或撤消
 

@@ -11,7 +11,7 @@ ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 7d9dad6b2f2f1b37525faf0a4a90d143650c49d1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: af80bd0c8c6bcfab823d3391d99c33f35d3e5557
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196077"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197025"
 ---
 # <a name="behavioral-blocking-and-containment"></a>行为阻止和控制
 
@@ -36,7 +36,7 @@ ms.locfileid: "59196077"
 
 ## <a name="overview"></a>概述
 
-如今的威胁形势被无文件恶意软件所溢出[](/windows/security/threat-protection/intelligence/fileless-threats)，并位于陆地外，其变化速度比传统解决方案快的高度多态威胁，以及适应攻击者在遭到入侵的设备上发现的攻击。 传统安全解决方案不足以阻止此类攻击;你需要人工智能 (AI) 和设备学习 (ML) 支持的功能，如行为阻止和抑制，包含在[Defender for Endpoint 中](/windows/security)。
+如今的威胁形势被无文件恶意软件所溢出[](/windows/security/threat-protection/intelligence/fileless-threats)，并位于陆地外，其变化速度比传统解决方案快的高度多态威胁，以及适应攻击者在受到威胁的设备上找到的内容的人为攻击。 传统安全解决方案不足以阻止此类攻击;你需要人工智能 (AI) 和设备学习 (ML) 支持的功能，例如行为阻止和抑制，包含在[Defender for Endpoint 中](/windows/security)。
 
 行为阻止和抑制功能可帮助根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 下一代保护、EDR和适用于终结点的 Defender 组件和功能在行为阻止和抑制功能中协同工作。
 
@@ -48,7 +48,7 @@ ms.locfileid: "59196077"
 
 - [终结点检测和响应 (EDR) ](overview-endpoint-detection-response.md)网络、设备和内核行为接收安全信号。 检测到威胁时，将创建警报。 同一类型的多个警报聚合到事件中，这便于安全运营团队调查和响应。
 
-- [Defender for Endpoint](overview-endpoint-detection-response.md)具有广泛的光学系统，包括标识、电子邮件、数据和应用，以及通过 EDR 接收的网络、终结点和内核行为信号。 适用于终结点[Microsoft 365 Defender](../defender/microsoft-365-defender.md)Defender 处理和关联这些信号、引发检测警报以及连接事件中的相关警报的组件。
+- [Defender for Endpoint](overview-endpoint-detection-response.md)具有广泛的光学镜头，包括标识、电子邮件、数据和应用，以及通过 EDR 接收的网络、终结点和内核行为信号。 适用于终结点[Microsoft 365 Defender](../defender/microsoft-365-defender.md)Defender 处理和关联这些信号、引发检测警报以及连接事件中的相关警报的组件。
 
 借助这些功能，可以阻止或阻止更多威胁，即使它们开始运行。 只要检测到可疑行为，就会包含威胁，创建警报，并停止威胁。
 
@@ -58,11 +58,11 @@ ms.locfileid: "59196077"
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>行为阻止和包含的组件
 
-- **客户端上策略驱动的 [攻击面减少规则](attack-surface-reduction.md)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在 Microsoft 365 Defender门户中 () [https://security.microsoft.com](https://security.microsoft.com) 信息警报。 默认情况下不会启用攻击面减少规则;在策略门户 中Microsoft 365 Defender[策略](microsoft-defender-security-center.md)。
+- **客户端上策略驱动的 [攻击面减少规则](attack-surface-reduction.md)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在 Microsoft 365 Defender门户中 () [https://security.microsoft.com](https://security.microsoft.com) 信息警报。 默认情况下不会启用攻击面减少规则;在门户 中配置[Microsoft 365 Defender策略](microsoft-defender-security-center.md)。
 
 - **[客户端行为阻止](client-behavioral-blocking.md)** 终结点上的威胁通过机器学习进行检测，然后自动阻止和修正。  (启用客户端行为阻止。) 
 
-- **[反馈循环阻止](feedback-loop-blocking.md)** (也称为快速保护) 行为智能观察到威胁检测。 威胁将停止并阻止在其他终结点上运行。  (启用反馈循环阻止。) 
+- **[反馈循环阻止 (](feedback-loop-blocking.md)** 也称为快速保护，) 行为智能观察到威胁检测。 威胁将停止并阻止在其他终结点上运行。  (启用反馈循环阻止。) 
 
 - **[终结点检测和响应 (EDR) 阻止模式](edr-in-block-mode.md)** 通过泄露后保护观察到的恶意项目或行为将被阻止和包含。 EDR阻止模式运行，即使Microsoft Defender 防病毒不是主要的防病毒解决方案。  (EDR在阻止模式下运行，默认情况下不启用;在 Microsoft 365 Defender.) 
 
@@ -103,11 +103,11 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 
 ### <a name="example-2-ntlm-relay---juicy-potato-malware-variant"></a>示例 2：NTLM 中继 - Juicy Malware 恶意软件变体
 
-如最近的博客文章行为阻止和抑制： [将](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection)光学镜头转换为保护中所述，2020 年 1 月，Defender for Endpoint 检测到组织中设备上的权限提升活动。 触发了名为"使用 NTLM 中继的可能特权升级"的警报。
+如最近的博客文章行为阻止和抑制： [将](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection)光学镜头转换为保护中所述，2020 年 1 月，Defender for Endpoint 检测到组织中设备上的权限提升活动。 触发了名为"使用 NTLM 中继的可能特权提升"的警报。
 
 :::image type="content" alt-text="Juicy Malware 恶意软件的 NTLM 警报。" source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
 
-威胁已变成恶意软件;它是名为 Juicy 为的黑客攻击工具的一个新、之前未见的变体，攻击者使用该工具在设备上获取特权提升。
+威胁已变成恶意软件;它是名为 Juicy 为的黑客工具的一个之前未发现的新变体，攻击者使用该工具在设备上获取特权提升。
 
 警报触发后的几分钟内，将分析文件并确认为恶意文件。 其进程已停止和阻止，如下图所示：
 

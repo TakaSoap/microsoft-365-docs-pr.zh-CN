@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: landing-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 search.appverid:
 - MET150
 - MOE150
@@ -21,13 +22,13 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
-description: 现在，你已设置Microsoft 365，了解如何在 Mac、OFFICE或移动设备上安装单独的应用程序。
-ms.openlocfilehash: a8d6aa4624285503340b5a22392c601c57acc439
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: 现在，你已设置Microsoft 365，了解如何在 Mac、PC 或移动设备上Office安装单独的应用程序。
+ms.openlocfilehash: da2a91d682d5bd565db65b86226a90d47a84d51b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776016"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199209"
 ---
 # <a name="install-office-applications"></a>安装 Office 应用程序
 
@@ -47,10 +48,10 @@ ms.locfileid: "59776016"
 
 ::: moniker range="o365-21vianet"
 
-如果你购买了Azure Active Directory Premium (AADP) 计划 1 或计划 2，则符合Microsoft Identity Manager (MIM) 。 若要下载MIM，请转到下载[中心](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498)。
+如果你购买了Azure Active Directory Premium (AADP) 计划 1 或计划 2，则符合使用 Microsoft Identity Manager (MIM) 。 若要下载MIM，请转到下载[中心](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498)。
 
 ::: moniker-end
 
 ## <a name="related-content"></a>相关内容
   
-[疑难解答Office Microsoft 365 (](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)安装和) 
+[本文Office Microsoft 365 (](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)安装和) 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 09/03/2021
 audience: ITPro
 ms.topic: article
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何集成 Azure PIM，以便向用户授予即时、限时访问权限以在 Microsoft Defender for Office 365 中执行已提升特权任务，从而降低数据风险。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 45fec4fef733fe302f34c470ce2a264c257b67f7
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 9ea618a24c14aa49973ae05287a65cbb756f5467
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042682"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196281"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) 以及将其与 Microsoft Defender for Office 365 配合使用的原因

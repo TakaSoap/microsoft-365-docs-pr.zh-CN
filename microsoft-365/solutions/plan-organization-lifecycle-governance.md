@@ -1,5 +1,5 @@
 ---
-title: 为组和用户规划Microsoft 365和生命周期Microsoft Teams
+title: 规划组和组织的组织和生命周期Microsoft 365和Microsoft Teams
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,22 +16,22 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 与协作工具的生命周期管理选项Microsoft 365
-ms.openlocfilehash: 5421f12109fb40e4e5cc6f68568a3b5f1873c7ce
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c1389b7dd787df6b4aab4cd5bb00377e05b99ff6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196236"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199269"
 ---
-# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>为组和用户规划Microsoft 365和生命周期Microsoft Teams
+# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>规划组和组织的组织和生命周期Microsoft 365和Microsoft Teams
 
 Microsoft 365组具有一组丰富的工具来实施组织所需的管理功能。 
 
-下一节介绍了这些功能、推荐了最佳做法，并提供了指导，以提出正确的问题来确定治理要求以及如何满足这些要求。
+下一节介绍这些功能、建议最佳实践并提供指导，以提出正确的问题以确定管理要求以及如何满足这些要求。
 
 ## <a name="control-who-can-create-microsoft-365-groups"></a>控制哪些人可以创建Microsoft 365组
 
-最终用户可以从多个终点创建组，包括Outlook、SharePoint、Teams和其他环境。
+最终用户可以从多个终点创建组，包括Outlook、SharePoint Teams和其他环境。
 
 ![图像 desc。](../media/04.png)
 
@@ -51,7 +51,7 @@ Microsoft 365组具有一组丰富的工具来实施组织所需的管理功能�
 
 如果已制定保留策略来保留聊天、文件或邮件，则删除组后将保留这些项目。 有关详细信息 [，请参阅了解](../compliance/retention.md) 保留策略。
 
-如果要删除组，但保留一个或多个与组连接的服务[中](end-life-cycle-groups-teams-sites-yammer.md)的内容，请参阅存档组、团队和Yammer信息。
+如果要删除组，但保留一个或多个已连接组的服务[中](end-life-cycle-groups-teams-sites-yammer.md)的内容，请参阅存档组、团队和Yammer获取信息。
 
 ## <a name="group-naming-policy"></a>组命名策略
 

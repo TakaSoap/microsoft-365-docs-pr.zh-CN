@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何修改 edm 架构以使用可配置匹配项。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d470b986d4a94206935efb832deec7171f8e404
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ce02113cd8e6b0d0e2b2b5b950a78e2958b95004
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200529"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167206"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>修改精确数据匹配架构，以使用可配置匹配项
 
@@ -66,7 +66,7 @@ ms.locfileid: "59200529"
 
 在上面的示例中，如果同时添加 `caseInsensitive` 和 `ignoredDelimiters`，则不再需要原始 `PolicyNumber` 列的变体。
 
-若要更新此架构以便 EDM 使用可配置匹配项，请使用 `caseInsensitive` 和 `ignoredDelimiters` 标志。  其外观如下：
+若要更新此架构以便 EDM 使用可配置匹配项，请使用 `caseInsensitive` 和 `ignoredDelimiters` 标志。 如下所示：
 
 ```xml
 <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -104,7 +104,7 @@ ms.locfileid: "59200529"
 6. 使用[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
 
 > [!NOTE]
-> 如果您的组织已在[租户级别（公共预览）设置了Microsoft 365的客户密钥](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview)，则精确数据匹配将自动使用其加密功能。 这仅适用于商业云中 E5 许可的租户。
+> 如果你的组织已在[租户级别（公共预览）设置了 Microsoft 365 的客户密钥](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview)，则精确数据匹配将自动使用其加密功能。这仅适用于商业云中 E5 许可的租户。
 
 7. 通过一次运行以下 cmdlet 中的一个来更新架构：
 

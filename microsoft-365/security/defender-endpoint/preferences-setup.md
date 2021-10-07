@@ -2,26 +2,24 @@
 title: 配置Microsoft Defender 安全中心设置
 description: 使用设置页配置常规设置、权限、api 和规则。
 keywords: 设置， 常规设置， 权限， api， 规则
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c032c54f8b80114e00fcff432a0da37a9d836f35
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aa6c7b8b0235be3304e7f941864e4a0928eb4ab6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170950"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196825"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>配置Microsoft Defender 安全中心设置
 

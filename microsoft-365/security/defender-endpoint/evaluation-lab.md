@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5ddd486bb062c86b21891c8a1678a5f2cc8226dd
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: df517e07242bfd15ec0feccbd0de9d682c74d381
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124501"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60184697"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 评估实验室
 
@@ -111,7 +111,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 如果你在实验室设置期间选择添加威胁模拟器，所有设备都将在添加的设备上安装威胁模拟器代理。
 
-设备将自动载入到你的租户，同时Windows启用推荐的安全组件并进入审核模式，无需你付出任何努力。
+设备将自动载入到你的租户，同时Windows启用推荐的安全组件，并进入审核模式， 无需任何努力。
 
 在测试设备中预配置以下安全组件：
 
@@ -119,13 +119,13 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 - [首次看到时阻止](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 - [受控文件夹访问](controlled-folders.md)
 - [漏洞保护](enable-exploit-protection.md)
-- [网络保护功能](network-protection.md)
+- [网络保护](network-protection.md)
 - [可能不需要的应用程序检测](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 - [云端保护](cloud-protection-microsoft-defender-antivirus.md)
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> Microsoft Defender 防病毒不在审核 (审核模式下，将打开) 。 如果Microsoft Defender 防病毒阻止你运行你的模拟，则可以通过以下方法在设备上关闭Windows 安全中心。 有关详细信息，请参阅配置 [始终打开保护](configure-real-time-protection-microsoft-defender-antivirus.md)。
+> Microsoft Defender 防病毒不在审核 (审核模式下，将打开) 。 如果Microsoft Defender 防病毒阻止运行模拟，则可以通过以下方法在设备上关闭Windows 安全中心。 有关详细信息，请参阅配置 [始终打开保护](configure-real-time-protection-microsoft-defender-antivirus.md)。
 
 自动调查设置将取决于租户设置。 默认情况下，它将配置为半自动化。 有关详细信息，请参阅 [自动调查概述](automated-investigations.md)。
 

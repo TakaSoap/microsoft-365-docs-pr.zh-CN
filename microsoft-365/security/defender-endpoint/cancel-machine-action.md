@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 22b0a82d8101c0a2a9e21c05413b64cd7dca4e9a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d21ee0365d27c990e1e96422a67e201443f73eba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170098"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197001"
 ---
 # <a name="cancel-machine-action-api"></a>取消计算机操作 API
 
@@ -57,7 +57,7 @@ ms.locfileid: "59170098"
 
 |权限类型|权限|权限显示名称|
 |---|---|---|
-|应用程序|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|收集取证 <br>隔离计算机<br>限制代码执行<br>  扫描计算机<br>  卸载计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
+|Application|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|收集取证 <br>隔离计算机<br>限制代码执行<br>  扫描计算机<br>  卸载计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
 |委派（工作或学校帐户）|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|收集取证<br> 隔离计算机<br>  限制代码执行<br> 扫描计算机<br>卸载计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -70,7 +70,7 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 |名称|类型|说明|
 |---|---|---|
-|Authorization|String|Bearer {token}。必需。|
+|Authorization|字符串|Bearer {token}。必需。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文

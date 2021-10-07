@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,16 +21,16 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 2ea5db8cbd68a6c0dd600730fac408dc4bb75e2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1d0c8c007a9e1e06980f06c7db0add1830c28ae0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200650"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198933"
 ---
 # <a name="tax-information"></a>税务信息
 
-购买Microsoft 365服务时，所支付税款由以下两项之一决定：您的业务地址或送货地址（如果不同）。 如果您的组织位于美国，则必须向 FEIN 组织提供联邦 (号) 。
+购买Microsoft 365服务时，所支付税款由以下两项之一决定：您的业务地址或发货地址（如果不同）。 如果您的组织位于美国，则必须向 FEIN 组织提供联邦 (号) 。
 
 以下国家/地区的企业可以提供其 VAT 号码或本地等效项：
 
@@ -104,11 +104,11 @@ ms.locfileid: "59200650"
 
 在 EMEA Microsoft 365购买服务时，此购买可能受 VAT Value-Added税款 () 。
   
-- 如果您位于欧盟成员国家/地区亚美尼亚、白俄罗斯、挪威、土耳其或阿拉伯联合酋长国，并且您不提供有效的当地 VAT ID，Microsoft Ireland Operations Ltd. 将基于您的帐户设置为的计费国家/地区应用当前的当地 VAT 税率。
+- 如果您位于欧盟成员国家/地区亚美尼亚、白俄罗斯、挪威、土耳其或阿拉伯联合酋长国，并且您不提供有效的当地 VAT ID，Microsoft Ireland Operations Ltd. 将基于您的帐户设置为的计费国家/地区，应用当前的当地 VAT 税率。
 
 - 如果你位于列支敦士登、俄罗斯、塞尔维亚、南非或瑞士，则应用 VAT，无论你是否提供 VAT ID。
 
-- 对于欧盟客户，在我们可以验证 VAT ID 之前，它必须可用于 VAT 信息 Exchange System (VIES) 。 如果无法验证 VAT ID，请联系当地税务机构。
+- 对于欧盟客户，在我们可以验证 VAT ID 之前，它必须可用于 VAT 信息 Exchange 系统 (VIES) 。 如果无法验证 VAT ID，请联系当地税务机构。
 
 如果符合以下条件，你可能有资格享受 VAT 零分级：
   
@@ -122,7 +122,7 @@ ms.locfileid: "59200650"
 
 如果由 Microsoft 区域销售办公室计费，则"Microsoft Regional Sales Pte"。 Ltd." 显示在发票上，你可能需要支付任何适用的增值税、销售税或类似税款。
   
-如果从以下位置之一进行计费，则应用当前当地税。 位置包含在 [你的发票上](view-your-bill-or-invoice.md)：
+如果从以下位置之一进行计费，则应用当前本地税。 位置包含在 [你的发票上](view-your-bill-or-invoice.md)：
   
 - 印度
 - 日本
@@ -134,7 +134,7 @@ ms.locfileid: "59200650"
 
 在美国、加拿大、墨西哥、智利和哥伦比亚，根据产品性质和你的位置，各种税率适用。
   
-如果你的帐单由 Microsoft Corporation (查看你的发票[) ，](view-your-bill-or-invoice.md)并且你在美国、加拿大、波多黎各、智利和哥伦比亚之外注册了 Microsoft 365，则通常不收取税款。
+如果你的帐单由 Microsoft Corporation (查看你的发票[) ，](view-your-bill-or-invoice.md)并且你在美国、加拿大、波多黎各、智利和哥伦比亚之外的 Microsoft 365 注册，则通常不收取税款。
 
 ## <a name="add-your-vat-id"></a>添加 VAT ID
 
@@ -162,7 +162,7 @@ ms.locfileid: "59200650"
 
 |国家/地区或区域设置 | 文档 |
 |------------------|----------------|
-| 加拿大 | 豁免证书 (或等效授权书)  |
+| 加拿大 | 豁免证书 (授权书或同等授权)  |
 | 智利 | ICO status/RUT (Registro Unico Tribu一)  |
 | 哥伦比亚 | ICO status/RUT (Registro Unico Tribu一)  |
 | 持有免税的国际标准组织 | 来自当地税务机构的认证/信函确认 |

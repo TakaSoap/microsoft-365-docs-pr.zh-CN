@@ -9,27 +9,27 @@ f1.keywords:
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 40ceb768836b7bb597620229bd30358df2977592
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 846efb6da0bc955ea2f93f38f71fb2f4348f2c96
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196087"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197109"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>让用户做好使用设备的准备
 
-一Microsoft 托管桌面设备由用户控制后，开始使用该设备将变得快速而简单。 设备预配置了当前版本的 Windows配置和应用在用户完成设置时从云进行安装。 
+一旦Microsoft 托管桌面设备由用户控制，开始使用该设备将变得快速而简单。 设备预配置了当前版本的 Windows配置和应用在用户完成设置时从云中安装。 
  
-为简化此操作，我们提供了指导，指导用户完成初始设置，并根据需要提供设置和供以后使用的帮助资源。 你可以自定义本指南，以包含特定于你的组织的特定详细信息。 然后，将指南直接分发给用户及其设备。 
+为了简化此操作，我们提供了指导，指导用户完成初始设置，并根据需要提供设置和供以后使用的帮助资源。 你可以自定义本指南，以包含特定于你的组织的特定详细信息。 然后，将指南直接分发给用户及其设备。 
 
 ## <a name="to-prepare-the-guide"></a>准备指南
 
 1. 下载指南[：Microsoft 托管桌面 - 开始使用你的设备](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)。
 2. 使用能够打开 PDF 文件的任何应用填写与组织相关的详细信息：
     - 用户应连接到的网络的名称，以便继续安装 (指南中的步骤 3) 
-    - 本指南中的步骤 4 (组织的 Azure 租户帐户) 
+    - 本指南中的步骤 4 中 (组织的 Azure 租户帐户) 
     - 位于第二页顶部的组织内部 IT (联系人) 
 3. 保存编辑的 PDF，然后分发给用户。 
 
@@ -42,7 +42,7 @@ ms.locfileid: "59196087"
 此时，你可以继续部署应用：
 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用Microsoft 托管桌面
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
 
 1. 访问 [管理员门户](access-admin-portal.md)。
 1. [在管理门户中添加和验证管理员联系人](add-admin-contacts.md)。

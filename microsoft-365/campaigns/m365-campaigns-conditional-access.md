@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解安全默认值如何通过提供预配置的安全设置来帮助保护组织免受与标识相关的攻击。
-ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 49b20e4880774ce97d99dc95e60c0cb417b213bc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170794"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198974"
 ---
 # <a name="turn-on-security-defaults"></a>打开安全默认值
 
@@ -43,9 +43,9 @@ ms.locfileid: "59170794"
 
 1. 使用全局管理员<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>登录帐户。
 
-2. 在左侧窗格中，选择"全部 **显示**"，然后在"管理中心"**下，选择****"Azure Active Directory"。**
+2. 在左窗格中，选择"全部 **显示**"，然后在"管理中心"下，选择 **"Azure Active Directory"。**
 
-3. 在管理中心左侧窗格中 **，Azure Active Directory选择****"Azure Active Directory"。**
+3. 在管理中心的左窗格中 **，Azure Active Directory选择****"Azure Active Directory"。**
 
 4. 从仪表板的左侧菜单中的"管理"**部分**，选择"属性 **"。**
 

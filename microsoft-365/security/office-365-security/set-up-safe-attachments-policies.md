@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -18,12 +18,12 @@ description: 了解如何定义附件保险箱保护组织免受电子邮件中�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8fcfb578f69062d39caa44886b63a84e926f9635
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 2eefdbdfd9121bdc778425fe63ea35d3f97a4adc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483359"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196437"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 保险箱设置附件策略Office 365
 
@@ -34,29 +34,29 @@ ms.locfileid: "59483359"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> 本文适用于拥有 [Microsoft Defender for Office 365](whats-new-in-defender-for-office-365.md)的企业客户。 如果你是一位家庭用户，正在查找有关 Outlook 中的附件扫描的信息，请参阅[Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Microsoft Defender for Office 365](whats-new-in-defender-for-office-365.md)的企业客户。 如果你是一位家庭用户，正在查找有关电子邮件中的附件扫描Outlook，请参阅 Advanced [Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-保险箱附件是 Microsoft [Defender for Office 365](whats-new-in-defender-for-office-365.md)中的一项功能，该功能使用虚拟环境在[Exchange Online Protection (EOP) ](anti-malware-protection.md)中经过反恶意软件保护扫描之后，在发送给收件人之前，使用虚拟环境检查入站电子邮件中的附件。 有关详细信息，请参阅 microsoft Defender 保险箱[中的附件Office 365。](safe-attachments.md)
+保险箱附件是 Microsoft [Defender for Office 365](whats-new-in-defender-for-office-365.md)中的一项功能，该功能使用虚拟环境在[Exchange Online Protection (EOP) ](anti-malware-protection.md)中经过反恶意软件保护扫描之后，在发送给收件人之前，使用虚拟环境检查入站电子邮件中的附件。 有关详细信息，请参阅 microsoft [Defender 保险箱中的附件Office 365。](safe-attachments.md)
 
 附件策略没有内置或默认保险箱。 若要保险箱电子邮件附件的附件扫描，需要创建一个或多个保险箱附件策略，如本文所述。
 
-您可以在 保险箱 Microsoft 365 Defender 门户中或在 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置附件Exchange Online;适用于没有邮箱且Exchange Online Defender for Office 365加载项订阅的组织的独立 EOP PowerShell) 。
+可以在 保险箱 Microsoft 365 Defender 门户中或在 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置附件Exchange Online;适用于没有邮箱且Exchange Online Defender for Office 365加载项订阅的组织的独立 EOP PowerShell) 。
 
 "附件"策略保险箱元素包括：
 
-- 安全附件策略：指定未知恶意软件检测的操作、是否将带有恶意软件附件的邮件发送到指定的电子邮件地址，以及是否保险箱附件扫描无法完成时传递邮件。
+- **安全附件** 策略：指定未知恶意软件检测的操作、是否将带恶意软件附件的邮件发送到指定的电子邮件地址，以及是否保险箱附件扫描无法完成时传递邮件。
 - **安全附件规则**：指定策略应用于 (的优先级和收件人) 。
 
-当你在邮件门户中管理"附件"保险箱时，这两个元素Microsoft 365 Defender明显：
+当你在邮件门户中管理"附件"保险箱，这两个元素Microsoft 365 Defender并不明显：
 
-- 创建"保险箱"策略时，实际上是同时对两者使用相同的名称创建安全附件规则和相关的安全附件策略。
+- 创建"保险箱"策略时，实际上是同时使用同一名称创建安全附件规则和相关的安全附件策略。
 - 修改附件保险箱时，与名称、优先级、启用或禁用以及收件人筛选器相关的设置将修改安全附件规则。 所有其他设置修改关联的安全附件策略。
-- 删除"附件保险箱时，安全附件规则和相关的安全附件策略将被删除。
+- 删除附件保险箱时，安全附件规则和相关的安全附件策略将被删除。
 
-在 Exchange Online PowerShell 或独立 EOP PowerShell 中，单独管理策略和规则。 有关详细信息，请参阅本文稍后的使用[Exchange Online PowerShell 或独立 EOP PowerShell](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies)配置 保险箱 附件策略一节。
+在 Exchange Online PowerShell 或独立 EOP PowerShell 中，单独管理策略和规则。 有关详细信息，请参阅本文稍后的使用[Exchange Online PowerShell 或独立 EOP PowerShell](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies)配置 保险箱 附件策略部分。
 
 > [!NOTE]
-> 在"附件"设置的全局保险箱区域中，配置不依赖于"附件"保险箱的功能。 有关[说明，请参阅](turn-on-mdo-for-spo-odb-and-teams.md)在 Microsoft 365 E5 中保险箱"SharePoint、OneDrive 和 Microsoft Teams 保险箱[文档Microsoft 365 E5。](safe-docs.md)
+> 在"附件"设置的全局保险箱区域中，配置不依赖于"附件"保险箱的功能。 有关说明，请参阅[打开保险箱中的SharePoint、OneDrive Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)和保险箱[文档](safe-docs.md)Microsoft 365 E5。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -66,16 +66,16 @@ ms.locfileid: "59483359"
 
 - 您需具有权限，然后才能执行本文中的过程：
   - 若要创建、修改和删除 保险箱 附件策略，您需要是 Microsoft 365 Defender 门户中组织管理或安全管理员角色组的成员以及 Exchange Online 中的组织管理角色组的成员。 
-  - 若要对附件策略保险箱只读访问权限，您需要是该门户中全局读取者或安全读者角色Microsoft 365 Defender的成员。 
+  - 若要对"附件"保险箱只读访问权限，你需要是"附件"门户中全局读取者或安全读者角色Microsoft 365 Defender的成员。
 
-  有关详细信息，请参阅 Microsoft 365 Defender[门户中的权限](permissions-microsoft-365-security-center.md)Exchange Online。 [](/exchange/permissions-exo/permissions-exo)
+  有关详细信息，请参阅 Microsoft 365 Defender[门户中的权限](permissions-microsoft-365-security-center.md)和 Exchange Online 中[的权限](/exchange/permissions-exo/permissions-exo)。
 
-  **注意**：
+  **注意**:
 
-  - 将用户添加到 Azure Active Directory 中的相应 Microsoft 365 管理中心 可为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  - 将用户添加到 Azure Active Directory 中的相应 Microsoft 365 管理中心 可为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
-- 有关附件策略的建议保险箱，请参阅附件[保险箱附件设置](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)。
+- 有关我们针对附件策略保险箱设置，请参阅保险箱[附件设置。](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
 
 - 最多允许应用新策略或更新策略 30 分钟。
 
@@ -83,7 +83,7 @@ ms.locfileid: "59483359"
 
 在 保险箱 门户中创建自定义附件Microsoft 365 Defender会同时使用同一名称创建安全附件规则和相关的安全附件策略。
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&策略"保险箱"附件"中的"协作 \>  \>  \> **策略"。**
+1. 在 Microsoft 365 Defender 门户中，转到"策略 **"&** 中的"电子邮件&协作策略"保险箱"附件 \>  \>  \> **"。**
 
 2. 在 **"保险箱"页上**，单击" ![ 创建图标"。](../../media/m365-cc-sc-create-icon.png) **Create**。
 
@@ -93,7 +93,7 @@ ms.locfileid: "59483359"
 
    完成后，单击“**下一步**”。
 
-4. 在 **出现的"用户** 和域"页上，标识策略应用于以下收件人 (内部) ：
+4. 在 **出现的"** 用户和域"页上，标识策略应用于以下收件人 (内部) ：
    - **用户**：你的组织内指定的邮箱、邮件用户或邮件联系人。
    - **组**：你的组织内指定的通讯组、启用邮件的安全组或 Microsoft 365 组。
    - **域**：你的组织内指定的 [接受域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)中的所有收件人。
@@ -111,25 +111,25 @@ ms.locfileid: "59483359"
 5. 在“**设置**”页上，配置下列设置：
 
    - **保险箱附件未知恶意软件响应**：选择下列值之一：
-     - **关闭**：通常，不建议使用此值。
+     - **关闭**：通常不建议使用此值。
      - **监视器**
-     - **Block**：这是默认值，以及 Standard 和 Strict 预设安全策略 [中的建议值](preset-security-policies.md)。
+     - **Block**：这是默认值，也是"标准"和"严格"预设 [安全策略中的建议值](preset-security-policies.md)。
      - **Replace**
      - **动态传递 (预览功能)**
 
      这些值在附件策略[保险箱中进行了介绍](safe-attachments.md#safe-attachments-policy-settings)。
 
-   - **隔离策略**：选择适用于由"附件"保险箱隔离的邮件的隔离策略 (阻止、替换或动态 **传递) 。**   隔离策略定义用户可以对隔离邮件执行哪些操作。 有关详细信息，请参阅隔离 [策略](quarantine-policies.md)。
+   - **隔离策略**：选择适用于由"附件"保险箱隔离的邮件的隔离策略 (阻止、替换或动态 **传递) 。**   隔离策略定义用户可以对隔离邮件执行哪些操作。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
 
-     空值 (表示在 AdminOnlyAccessPolicy 中，默认隔离策略保险箱附件) 。 稍后编辑"附件保险箱或查看设置时，将显示默认隔离策略名称。
+     空值表示默认隔离策略在 AdminOnlyAccessPolicy (，用于通过"附件"保险箱检测) 。 以后编辑"附件保险箱或查看设置时，将显示默认隔离策略名称。
 
    - 重定向带检测到的附件的邮件：如果选择"启用重定向"，可以在"将包含阻止、监视或替换附件的邮件发送到指定电子邮件地址"框中指定电子邮件地址，以发送包含恶意软件附件的邮件进行分析和调查。 
 
-     对于"标准"和"严格"策略设置，建议启用重定向。 有关详细信息，请参阅附件[保险箱设置。](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
+     对于"标准"和"严格"策略设置，建议启用重定向。 有关详细信息，请参阅附件[保险箱附件设置](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)。
 
-   - 如果扫描无法完成 (超时或错误 **) ，** 则应用 保险箱 附件检测响应：即使 **保险箱** 附件扫描无法完成，保险箱 附件未知恶意软件响应也将会对邮件执行。 如果选择此选项，请始终选择" **启用重定向** "并指定电子邮件地址以发送包含恶意软件附件的邮件。 否则，邮件可能会丢失。
+   - 如果 **扫描无法完成 (** 超时或错误) ，则应用 保险箱 附件检测响应：即使 **保险箱** 附件扫描无法完成，保险箱 附件未知恶意软件响应也将会对邮件执行。 如果选择此选项，请始终选择" **启用重定向** "并指定电子邮件地址以发送包含恶意软件附件的邮件。 否则，邮件可能会丢失。
 
-   完成后，请单击“**下一步**”。
+   完成后，单击“**下一步**”。
 
 6. 在出现的“**审阅**”页面上，查看你的设置。 可以在每个部分中选择“**编辑**”来修改该部分中的设置。 或者，可以单击“**返回**”或选择向导中的特定页面。
 
@@ -139,7 +139,7 @@ ms.locfileid: "59483359"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>使用 Microsoft 365 Defender 门户查看保险箱附件策略
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&策略"保险箱"附件"中的"协作 \>  \>  \> **策略"。**
+1. 在 Microsoft 365 Defender 门户中，转到"策略 **"&** 中的"电子邮件&协作策略"保险箱"附件 \>  \>  \> **"。**
 
 2. 在 **保险箱附件**"页上，策略列表中将显示以下属性：
    - **名称**
@@ -150,7 +150,7 @@ ms.locfileid: "59483359"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>使用Microsoft 365 Defender门户修改保险箱附件策略
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&策略"保险箱"附件"中的"协作 \>  \>  \> **策略"。**
+1. 在 Microsoft 365 Defender 门户中，转到"策略 **"&** 中的"电子邮件&协作策略"保险箱"附件 \>  \>  \> **"。**
 
 2. On the **保险箱 Attachments** page， select a policy from the list by clicking on the name.
 
@@ -160,7 +160,7 @@ ms.locfileid: "59483359"
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>启用或禁用保险箱附件策略
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&策略"保险箱"附件"中的"协作 \>  \>  \> **策略"。**
+1. 在 Microsoft 365 Defender 门户中，转到"策略 **"&** 中的"电子邮件&协作策略"保险箱"附件 \>  \>  \> **"。**
 
 2. On the **保险箱 Attachments** page， select a policy from the list by clicking on the name.
 
@@ -176,17 +176,17 @@ ms.locfileid: "59483359"
 
 ### <a name="set-the-priority-of-safe-attachments-policies"></a>设置"附件保险箱的优先级
 
-默认情况下，保险箱附件策略的优先级基于它们在 (中的创建顺序，而较新的策略的优先级低于旧策略) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
+默认情况下，保险箱附件策略的优先级取决于它们在 (中的创建顺序，而较新的策略的优先级低于旧策略) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
 有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 
-保险箱附件策略按其处理顺序显示 (优先级值为 0 的附件) 。 
+保险箱附件策略按其处理顺序显示 (第一个策略的 **优先级值为** 0) 。
 
-**注意**：在Microsoft 365 Defender门户中，只能在创建"附件保险箱策略的优先级。 在 PowerShell 中，您可以在创建安全附件规则策略时替代默认优先级 (这可能会影响现有规则) 。
+**注意**：在Microsoft 365 Defender门户中，只能更改"附件保险箱策略的优先级。 在 PowerShell 中，您可以在创建安全附件规则策略时替代默认优先级 (这可能会影响现有规则) 。
 
 若要更改策略的优先级，请单击策略属性中的“**提高优先级**”或“**降低优先级**”（不能直接修改 Microsoft 365 Defender 门户中的“**优先级**”数字）。 只有当你有多个策略时，更改策略的优先级才有意义。
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&策略"保险箱"附件"中的"协作 \>  \>  \> **策略"。**
+1. 在 Microsoft 365 Defender 门户中，转到"策略 **"&** 中的"电子邮件&协作策略"保险箱"附件 \>  \>  \> **"。**
 
 2. On the **保险箱 Attachments** page， select a policy from the list by clicking on the name.
 
@@ -199,9 +199,9 @@ ms.locfileid: "59483359"
 
 4. 完成后，单击策略详细信息浮出控件中的“**关闭**”。
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>使用 Microsoft 365 Defender 门户删除保险箱附件策略
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>使用Microsoft 365 Defender门户删除保险箱附件策略
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&策略"保险箱"附件"中的"协作 \>  \>  \> **策略"。**
+1. 在 Microsoft 365 Defender 门户中，转到"策略 **"&** 中的"电子邮件&协作策略"保险箱"附件 \>  \>  \> **"。**
 
 2. On the **保险箱 Attachments** page， select a custom policy from the list by clicking on the name of the policy.
 
@@ -226,13 +226,13 @@ ms.locfileid: "59483359"
 1. 创建安全附件策略。
 2. 创建安全附件规则，该规则指定应用该规则的安全附件策略。
 
- **注意**：
+ **注意**:
 
 - 可以创建新的安全附件规则，并为其分配现有的未关联的安全附件策略。 安全附件规则不能与多个安全附件策略关联。
 
-- 可以在 PowerShell 中的新安全附件策略上配置以下设置，这些设置在 Microsoft 365 Defender门户中不可用，直到创建策略之后：
+- 可以在 PowerShell 中的新安全附件策略上配置以下设置，这些设置在 Microsoft 365 Defender创建策略之前在 Microsoft 365 Defender 门户中不可用：
   - 在 `$false` **New-SafeAttachmentRule** cmdlet (上创建禁用的新策略) 。
-  - 在 _\<Number\>_ **New-SafeAttachmentRule** cmdlet cmdlet (中) 策略的优先级) 。
+  - 在 _\<Number\>_ **New-SafeAttachmentRule** cmdlet (中) 策略的优先级) 。
 
 - 在 PowerShell 中新建的安全附件策略在 Microsoft 365 Defender中不可见，除非将策略分配给安全附件规则。
 
@@ -246,7 +246,7 @@ New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "
 
 此示例创建一个名为 Contoso All 的安全附件策略，并具有以下值：
 
-- 在未使用 _Action_ 参数保险箱文档扫描 (阻止发现包含恶意软件的邮件，默认值为 `Block`) 。
+- 阻止在未使用 _Action_ 参数保险箱扫描 (发现包含恶意软件的邮件，默认值为 `Block`) 。
 - 默认 [隔离策略](quarantine-policies.md) (AdminOnlyAccessPolicy) ，因为我们没有使用 _QuarantineTag_ 参数。
 - 启用重定向，发现包含恶意软件的邮件将发送到 sec-ops@contoso.com 进行分析和调查。
 - 如果保险箱附件扫描不可用或遇到错误，请不要传递邮件 (我们未使用 _ActionOnError_ 参数，默认值为 `$true`) 。
@@ -271,7 +271,7 @@ New-SafeAttachmentRule -Name "<RuleName>" -SafeAttachmentPolicy "<PolicyName>" <
 本示例创建名为 Contoso All 的安全附件规则，并满足以下条件：
 
 - 该规则与名为 Contoso All 的安全附件策略相关联。
-- 该规则适用于域中的所有 contoso.com 收件人。
+- 该规则适用于域中的所有 contoso.com。
 - 因为我们没有使用 _Priority_ 参数，所以使用默认优先级。
 - 如果规则 (_Enabled_ 参数，则启用该规则，默认值为 `$true`) 。
 
@@ -337,7 +337,7 @@ Get-SafeAttachmentRule -Identity "Contoso Executives" | Format-List
 
 ### <a name="use-powershell-to-modify-safe-attachment-policies"></a>使用 PowerShell 修改安全附件策略
 
-如果 **Set-SafeAttachmentPolicy** cmdlet 没有 Name 参数，则 (PowerShell 中的安全附件策略) 。 在安全保险箱中重命名"附件"Microsoft 365 Defender，只需重命名安全附件 _规则_。
+如果 **Set-SafeAttachmentPolicy** cmdlet 没有 Name 参数，则 (PowerShell 中的安全附件策略) 。 当你在 保险箱 门户中重命名Microsoft 365 Defender附件策略时，你仅重命名安全附件 _规则_。
 
 否则，创建安全附件策略时可用的设置相同，如本文前面步骤 [1：使用 PowerShell](#step-1-use-powershell-to-create-a-safe-attachment-policy) 创建安全附件策略部分所述。
 
@@ -406,7 +406,7 @@ Set-SafeAttachmentRule -Identity "<RuleName>" -Priority <Number>
 Set-SafeAttachmentRule -Identity "Marketing Department" -Priority 2
 ```
 
-**注意**：若要在创建新规则的优先级时设置它，请改为使用 **New-SafeAttachmentRule** cmdlet 上的 _Priority_ 参数。
+**注意**：若要在创建新规则的优先级时设置它，请改为对 **New-SafeAttachmentRule** cmdlet 使用 _Priority_ 参数。
 
 有关语法和参数的详细信息，请参阅 [Set-SafeAttachmentRule](/powershell/module/exchange/set-safeattachmentrule)。
 
@@ -450,9 +450,9 @@ Remove-SafeAttachmentRule -Identity "Marketing Department"
 
 若要验证您是否已成功创建、修改或删除附件保险箱，请执行下列任一步骤：
 
-- 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&策略"&"规则威胁策略保险箱 \>  \>  \> **附件****"。** 验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请通过单击名称从列表中选择策略，然后查看飞出中的详细信息。
+- 在 Microsoft 365 Defender 门户中，转到"策略 **"&** 中的"电子邮件&协作策略"保险箱"附件 \>  \>  \> **"。** 验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请通过单击名称从列表中选择策略，并查看飞出中的详细信息。
 
-- 在Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，将 替换为策略或规则的名称，运行以下命令并 \<Name\> 验证设置：
+- 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，将 替换为策略或规则的名称，运行以下命令并 \<Name\> 验证设置：
 
   ```PowerShell
   Get-SafeAttachmentPolicy -Identity "<Name>" | Format-List
@@ -462,4 +462,4 @@ Remove-SafeAttachmentRule -Identity "Marketing Department"
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-若要验证附件保险箱扫描邮件，请检查可用的 Defender，查看Office 365报告。 有关详细信息，请参阅查看 Defender [for Office 365](view-reports-for-mdo.md)报告和在 Microsoft 365 Defender[门户中使用资源管理器](threat-explorer.md)。
+若要验证附件保险箱扫描邮件，请检查可用的 Defender，查看Office 365报告。 有关详细信息，请参阅查看 Defender [for Office 365](view-reports-for-mdo.md)报告和在 Microsoft 365 Defender[门户中的使用资源管理器](threat-explorer.md)。

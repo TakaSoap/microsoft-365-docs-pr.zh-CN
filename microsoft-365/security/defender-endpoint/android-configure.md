@@ -2,27 +2,25 @@
 title: 在 Android 功能上配置 Microsoft Defender for Endpoint
 description: 介绍如何在 Android 上配置适用于终结点的 Microsoft Defender
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mde， android， 配置
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: afff05ac0e18ac41b1e2ba70b59ed4dfd0c6a22a
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 4db57a39d6270608a5107a77f41ce11fdd139c78
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460312"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186628"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>在 Android 功能上配置适用于终结点的 Defender
 
@@ -34,7 +32,7 @@ ms.locfileid: "59460312"
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-android"></a>在 Android 上通过 Defender for Endpoint 进行条件访问
 
-Android 上的 Microsoft Defender for Endpoint 以及 Microsoft Intune 和 Azure Active Directory 支持根据设备风险级别强制执行设备合规性和条件访问策略。 Defender for Endpoint 是一种移动威胁防护 (MTD) 解决方案，你可以部署该解决方案以通过 Intune 利用此功能。
+Android 上的 Microsoft Defender for Endpoint 以及 Microsoft Intune 和 Azure Active Directory 启用基于设备风险级别的设备合规性和条件访问策略。 Defender for Endpoint 是一种移动威胁防护 (MTD) 解决方案，你可以部署该解决方案以通过 Intune 利用此功能。
 
 若要详细了解如何在 Android 和条件访问上设置适用于终结点的 Defender，请参阅[Defender for Endpoint 和 Intune。](/mem/intune/protect/advanced-threat-protection)
 
@@ -57,11 +55,11 @@ Android 上的 Defender for Endpoint 允许 IT 管理员配置 Web 保护功能�
 > [!NOTE]
 > Android 版 Defender for Endpoint 的隐私控件目前处于预览阶段，在商业发行之前可能会进行重大修改。
 
-恶意软件威胁报告的隐私控制可用于禁用从恶意软件威胁报告 (名称和程序包) 应用详细信息的集合。 这使组织能够灵活地选择是否在检测到恶意应用时收集应用名称。 *此功能当前仅适用于在 Android 设备管理员模式下 **注册** 的设备。*
+恶意软件威胁报告的隐私控制可用于禁用从恶意软件威胁报告 (名称和程序包) 应用详细信息集合。 这使组织能够灵活地选择是否在检测到恶意应用时收集应用名称。 *此功能当前仅适用于在 Android 设备管理员模式下 **注册** 的设备。*
 
 使用以下步骤为目标用户启用它：
 
-1. 在 [Microsoft Endpoint Manager中心中](https://go.microsoft.com/fwlink/?linkid=2109431)，转到"**设备** 配置文件""创建配置文件  >    >  "**并** 输入以下设置：
+1. In [Microsoft Endpoint Manager admin center，](https://go.microsoft.com/fwlink/?linkid=2109431) go to **Devices**  >  **Configuration profiles** Create  >  **profile** and enter the following settings：
 
    - **平台**：选择 Android 设备管理员
    - **配置文件：** 选择"自定义"，然后单击创建

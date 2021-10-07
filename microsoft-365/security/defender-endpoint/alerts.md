@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5d7fe37cfb4dc923bd7ddc73db9ff8443bca0a0a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 96f5f043ba49e01bd03f23c8eb430e56f88a5856
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170517"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197145"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 
@@ -77,19 +77,19 @@ ms.locfileid: "59170517"
 |investigationState|Nullable Enum|调查 的当前 [状态](automated-investigations.md)。 可能的值包括："Unknown"、"Terminated"、 "SuccessfullyRemediated"、"Benign"、"Failed"、"PartiallyRemediated"、"Running"、"PendingApproval"、"PendingResource"、"PartiallyInvestigated"、"TerminatedByUser"、"TerminatedBySystem"、"Queued"、"InnerFailure"、"PreexistingAlert"、"UnsupportedOs"、"UnsupportedAlertType"和"SuppressedAlert"。|
 |assignedTo|String|警报的所有者。|
 |rbacGroupName|String|RBAC 设备组名称。|
-|mitreTechniques|String|Mitre Enterprise技术 ID。|
+|mitreTechniques|字符串|Mitre Enterprise技术 ID。|
 |relatedUser|String|与特定警报相关的用户的详细信息。|
 |severity|枚举|警报的严重性。 可能的值包括："UnSpecified"、"Informational"、"Low"、"Medium"和"High"。|
 |status|枚举|指定警报的当前状态。 可能的值包括："Unknown"、"New"、"InProgress"和"Resolved"。|
 |classification|Nullable Enum|警报的规范。 可能的值是："Unknown"、"FalsePositive"、"TruePositive"。|
 |确定|Nullable Enum|指定警报的确定。 可能的值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"。|
 |“类别”|String|警报的类别。|
-|detectionSource|String|检测源。|
+|detectionSource|字符串|检测源。|
 |threatFamilyName|String|威胁系列。|
 |threatName|String|威胁名称。|
-|machineId|String|与 [警报关联的](machine.md) 计算机实体的 ID。|
+|machineId|字符串|与 [警报关联的](machine.md) 计算机实体的 ID。|
 |computerDnsName|String|[计算机](machine.md) 完全限定的名称。|
-|aadTenantId|String|Azure Active Directory ID。|
+|aadTenantId|String|用户Azure Active Directory ID。|
 |一个|String|触发警报的检测器的 ID。|
 |comments|警报注释列表|Alert Comment 对象包含：注释字符串、createdBy 字符串和 createTime 日期时间。|
 |证据|警报证据列表|与警报相关的证据。 请参阅下面的示例。|

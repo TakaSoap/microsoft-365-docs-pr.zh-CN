@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5f61b092ab8c8ce23694f566b7b11f4bca80b79e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c675486652e25e832685218caefe869739681e25
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195981"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196749"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>网络钓鱼电子邮件攻击的示例
 
@@ -54,7 +54,7 @@ Microsoft 365 Defender可以帮助检测通过电子邮件传递的恶意附件�
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="警报详细信息的示例。"::: 
 
-这会将分析师打开"威胁管理"页，其中显示电子邮件"主题、收件人、发件人和其他信息"。 **"特殊****操作"下的** ZAP 告诉分析师"零时差自动清除"功能已实现。 ZAP 自动检测并删除整个组织邮箱中的恶意邮件和垃圾邮件。 有关详细信息，请参阅 ([中的零时差自动清除) ZAP Exchange Online。](../office-365-security/zero-hour-auto-purge.md)
+这会将分析师打开"威胁管理"页，其中显示电子邮件"主题、收件人、发件人和其他信息"。 **"特殊****操作"下的** ZAP 告诉分析师"零时差自动清除"功能已实现。 ZAP 自动检测并删除整个组织邮箱中的恶意邮件和垃圾邮件。 有关详细信息，请参阅 EXCHANGE ONLINE 中的零[时差自动清除 (ZAP) 。](../office-365-security/zero-hour-auto-purge.md)
 
 可以通过选择操作 来对特定邮件执行其他 **操作**。 
  

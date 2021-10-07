@@ -11,7 +11,7 @@ ms.topic: overview
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 description: 此解决方案将告知您最常见的网络安全攻击在Microsoft 365如何响应它们
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65ff75253f45ae2d0f051dafe73c6e665f89827a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef36caca62935dbeca6640c5fa9ed2edaae9528b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196466"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196485"
 ---
 # <a name="security-incident-response"></a>安全事件响应
 
@@ -35,7 +35,7 @@ ms.locfileid: "59196466"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
- **摘要：** 此解决方案将告知您有关 Office 365 中最常见的网络安全攻击的指示器、如何积极确认任何给定攻击以及如何响应它。
+ **摘要：** 此解决方案将告知您有关 Office 365 中最常见的网络安全攻击的指示器、如何积极确认任何给定的攻击以及如何响应它。
 
 ## <a name="learn-how-to-respond-to-cyberattacks"></a>了解如何响应网络攻击
 
@@ -45,7 +45,7 @@ ms.locfileid: "59196466"
 
 - 攻击是什么及其工作方式。
 
-- IOC 支持哪些 (泄露) ，用于查找和查找它们。
+- IOC (泄露) ，用于查找和查找它们。
 
 - 如何积极确认攻击。
 

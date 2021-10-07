@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d04590eee8f771fe8001f44dfae490645e270e64
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f48e3b0f7546936af55b50cf53db650e0af548fc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171251"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60184565"
 ---
 # <a name="list-indicators-api"></a>列表指示器 API
 
@@ -57,8 +57,8 @@ OData 的查询在以下项上受支持 `$filter` ：、 `application` `createdB
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Ti.ReadWrite|"读取和写入指示器"
-应用程序|Ti.ReadWrite.All|"读取和写入所有指示器"
+Application|Ti.ReadWrite|"读取和写入指示器"
+Application|Ti.ReadWrite.All|"读取和写入所有指示器"
 委派（工作或学校帐户）|Ti.ReadWrite|"读取和写入指示器"
 
 ## <a name="http-request"></a>HTTP 请求

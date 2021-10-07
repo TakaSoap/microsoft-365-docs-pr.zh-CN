@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a84a3ec88cb4eb0fa3b4e04f3ce0c62b73dd7fb5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a58da36cfe0abd88a615e81d96360a6f789ad638
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201149"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196917"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>托管安全服务提供商合作关系机会
 
@@ -38,7 +38,7 @@ ms.locfileid: "59201149"
 安全性被视为运行企业的关键组件，但是某些组织可能没有能力或专长来专门拥有安全运营团队来管理其终结点和网络的安全性，而其他组织可能希望有第二个眼睛来查看其网络中警报。
 
 
-为了满足此需求，MSSP (服务提供商) 提供托管检测和响应 (MDR) 服务，并基于 Defender for Endpoint。 
+为满足此需求，MSSP (托管安全服务提供商) 在 Defender for Endpoint 上提供托管检测和响应 (MDR) 服务。 
 
 
 Defender for Endpoint 增加了此方案的合作关系机会，并允许 MSSP 执行以下操作：

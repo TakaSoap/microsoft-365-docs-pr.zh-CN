@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4ff9056421d32abf83970356f9f99d9aea2adc3f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b194ebef7e1262aca62a6fd5a70688fb6975e4dc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170711"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198813"
 ---
 # <a name="payment-information-for-new-zealand"></a>新西兰的付款信息
 
@@ -34,7 +34,7 @@ ms.locfileid: "59170711"
 **银行代码：31**  
 **分支代码** ：2840  
 **SWIFT 代码：** NZNZ2X  
-**后缀 (3 位) ：004**  
+**后缀 (3 位数字) ：004**  
 **后缀 (2 位) ：04**  
 **帐户编号：0026181**  
 **帐户名称：** MICROSOFT
@@ -44,5 +44,5 @@ ms.locfileid: "59170711"
 **Bank：** Bank， N.A. 新西兰分支  
 **SWIFT 代码：** CTINZ2X  
 **BSB：312825**  
-**帐号：0008655083**  
+**帐户编号：0008655083**  
 **帐户名称：** MICROSOFT

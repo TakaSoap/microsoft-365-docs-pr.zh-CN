@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 49c5dcacc12e6811fa692aade9cf6d462fc963fe
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: e089a38d0a9abc6a6713b82a77d3678d781ed456
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509877"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197073"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>查看自动调查的详细信息和结果
 
@@ -40,7 +40,7 @@ ms.locfileid: "58509877"
 最近更新了调查页面，以包含跨设备、电子邮件和协作内容的信息。 新的统一调查页面定义通用语言，并提供跨[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)和 Microsoft Defender for Office 365 进行自动[调查的统一体验](/microsoft-365/security/office-365-security/office-365-atp)。
 
 > [!TIP]
-> 若要了解有关变化内容的信息，请参阅"新建 [ (！) 统一调查"页](/microsoft-365/security/mtp/mtp-autoir-results)。
+> 若要了解有关变化内容的信息，请参阅 ([ NEW！) 统一调查页](/microsoft-365/security/mtp/mtp-autoir-results)。
 
 ## <a name="open-the-investigation-details-view"></a>打开调查详细信息视图
 
@@ -51,7 +51,7 @@ ms.locfileid: "58509877"
 
 ### <a name="select-an-item-in-the-action-center"></a>选择操作中心中的项目
 
-改进的操作[中心](auto-investigation-action-center.md)将跨设备、电子邮件[](manage-auto-investigation.md#remediation-actions)、协作内容和标识&修正操作汇集在一起。 列出的操作包括自动或手动采取的修正操作。 在操作中心中，可以查看等待审批的操作以及已获得批准或已完成的操作。 还可以导航到更多详细信息，如调查页面。
+改进的操作[中心](auto-investigation-action-center.md)将跨设备、电子邮件[](manage-auto-investigation.md#remediation-actions)、协作内容和标识&修正操作汇集在一起。 列出的操作包括自动或手动采取的修正操作。 在操作中心中，可以查看正在等待审批的操作以及已批准或已完成的操作。 还可以导航到更多详细信息，如调查页面。
 
 1. 转到 <https://security.microsoft.com> 并登录。
 2. 在“导航”窗格中，选择“操作中心”。
@@ -67,7 +67,7 @@ ms.locfileid: "58509877"
 使用事件详细信息页面查看有关事件的详细信息，包括触发的有关任何受影响的设备、用户帐户或邮箱的信息的警报。
 
 1. 转到 <https://security.microsoft.com> 并登录。
-2. 在导航窗格中，选择"**事件&事件** \> **"。**
+2. 在导航窗格中，选择"事件 **&事件** \> **"。**
 3. 选择列表中的某个项目，然后选择"打开 **事件页面"。**
 4. 选择 **"调查"** 选项卡，然后在列表中选择调查。 将打开其飞出窗格。
 5. 选择 **"打开调查"页**。
@@ -83,13 +83,13 @@ ms.locfileid: "58509877"
 
 |选项卡|说明|
 |---|---|
-|**调查图**|提供调查的可视化表示形式。 描述实体并列出发现的威胁，以及警报以及是否正在等待批准任何操作。 <p> 可以选择图形上的项目以查看更多详细信息。 例如，选择 **"证据**"图标将你带至"证据"选项卡，可在其中查看检测到的实体及其裁定。|
-|**警告**|列出与调查相关的警报。 警报可能来自用户设备上的威胁防护功能、Office应用、云应用安全和其他Microsoft 365 Defender功能。|
-|**Devices**|列出包含在调查中的设备及其修正级别。  (修正级别对应于设备组[.) ](automation-levels.md)|
+|**调查图**|提供调查的直观表示。 描述实体并列出找到的威胁及警报，以及是否有任何待批准的操作。 <p> 可以选择图形上的项目以查看更多详细信息。 例如，选择 **"证据**"图标将你带至"证据"选项卡，可在其中查看检测到的实体及其裁定。|
+|**警告**|列出与调查相关的警报。 警报可能来自用户设备上 Office 应用、云应用安全，以及来自其他 Microsoft 365 Defender 功能中的威胁防护功能。|
+|**Devices**|列出包含在调查中的设备及其修正级别。  (修正级别对应于设备[组 .) ](automation-levels.md)|
 |**邮箱**|列出受检测到的威胁影响的邮箱。|
 |**用户**|列出受检测到的威胁影响的用户帐户。|
 |**证据**|列出由警报/调查引发的证据片段。 包括有关 *(、**可疑或**未找到* 威胁) 和修正状态裁定。|
-|**Entities**|提供有关每个已分析实体的详细信息，包括每个实体类型裁定 (*恶意*、可疑或未找到 *任何威胁*) 。 |
+|**Entities**|提供有关每个已分析实体的详细信息，包括每个实体类型裁定 (*恶意*、可疑或未找到任何威胁) 。 |
 |**Log**|提供触发警报后执行的所有调查操作按时间顺序的详细视图。|
 |**挂起的操作**|列出需要审批的项目以继续。 转到操作中心 <https://security.microsoft.com/action-center> () 审批挂起的操作。|
 

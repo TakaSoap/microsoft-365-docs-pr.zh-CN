@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: fca661342bfa6ba16da12aeb34b0c3ae804fc860
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7572095572c8c1dc8d285105020c6e164205cf7b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196599"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196977"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS 加泰罗尼亚语和较新版本的 macOS 的新配置文件
 
@@ -36,7 +36,7 @@ ms.locfileid: "59196599"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-为了与 macOS 演变保持一致，我们正在准备利用系统扩展而非内核扩展的 macOS 更新上的 Microsoft Defender for Endpoint。 此更新仅适用于 macOS Catalina (10.15.4) macOS 及更高版本。
+为了与 macOS 演变保持一致，我们正在准备利用系统扩展而非内核扩展的 macOS 更新上的 Microsoft Defender for Endpoint。 此更新仅适用于 macOS 10.15.4 (macOS) macOS 版本。
 
 如果你通过 JAMF、Intune 或其他 MDM 解决方案 (托管环境中在 macOS 上部署了 Microsoft Defender for Endpoint) ，则必须部署新的配置文件。 如果不执行这些步骤，则会导致用户收到运行这些新组件的审批提示。
 
@@ -46,7 +46,7 @@ ms.locfileid: "59196599"
 
 若要批准系统扩展，请创建以下有效负载：
 
-1. In **Computers > Configuration Profiles** select Options > System **Extensions**.
+1. 在 **"计算机>配置文件"中选择****"系统>选项"。**
 2. 从 **"系统扩展类型"** 下拉列表 **中选择** "允许的系统扩展"。
 3. 将 **UBF8T346G9 用于** 团队 ID。
 4. 将以下捆绑包标识符添加到允许 **的系统扩展** 列表中：
@@ -195,14 +195,14 @@ ms.locfileid: "59196599"
 
    ![系统配置文件屏幕截图。](images/mac-system-extension-intune2.png)
 
-5. 在 `Assignments` 选项卡中，将此配置文件分配给"所有用户 **&所有设备"。**
+5. 在 `Assignments` 选项卡中，将此配置文件分配给"所有 **&所有用户"。**
 6. 查看并创建此配置文件。
 
 ### <a name="create-and-deploy-the-custom-configuration-profile"></a>创建和部署自定义配置文件
 
 以下配置文件启用网络扩展，并授予对终结点安全系统扩展的完全磁盘访问权限。
 
-将以下内容保存到名为sysext.xml **的文件中**：
+将以下内容保存到名为sysext.xml **：**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -317,5 +317,5 @@ sysext.xml: OK
 
     ![Intune 中的系统扩展屏幕截图。](images/mac-system-extension-intune.png)
 
-5. 在 `Assignments` 选项卡中，将此配置文件分配给"所有用户 **&所有设备"。**
+5. 在 `Assignments` 选项卡中，将此配置文件分配给"所有 **&所有用户"。**
 6. 查看并创建此配置文件。

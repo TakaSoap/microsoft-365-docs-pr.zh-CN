@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a87b890191861677db604050814dd89fb39a93fc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31bea9de531c12b2e49543953b3d768cf06f6d24
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175365"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196761"
 ---
 # <a name="evaluate-microsoft-defender-for-identity-overview"></a>评估 Microsoft Defender 标识概述
 
@@ -34,7 +34,7 @@ ms.locfileid: "59175365"
 **适用于：**
 - Microsoft 365 Defender
 
-本文概述了启用和试用 Microsoft Defender for Identity 的过程。 在开始此过程之前，请确保你已查看评估项目Microsoft 365 Defender并且你已创建了Microsoft 365 Defender[](eval-overview.md)[评估环境](eval-create-eval-environment.md)。 
+本文概述了启用和试用 Microsoft Defender for Identity 的过程。 在开始此过程之前，请确保你已查看评估项目Microsoft 365 Defender并且已创建Microsoft 365 Defender[评估环境](eval-create-eval-environment.md)。 [](eval-overview.md) 
 <br>
 
 使用以下步骤启用和试用 Microsoft Defender for Identity。

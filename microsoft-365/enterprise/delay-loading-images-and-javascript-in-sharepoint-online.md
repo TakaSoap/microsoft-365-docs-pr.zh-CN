@@ -7,7 +7,7 @@ ms.date: 12/3/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -20,17 +20,17 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: 了解如何通过使用 JavaScript 延迟加载图像和非必要的 JavaScript 来减少 SharePoint Online 页面的加载时间。
-ms.openlocfilehash: 7be256db8bce115b130322d1dd34131d845ef165
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解如何通过使用 JavaScript 延迟加载图像和非必要的 JavaScript 来SharePoint Online 页面的加载时间。
+ms.openlocfilehash: 6b8eb479ae33b47081e33e45338c02d46f36e055
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200418"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197421"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>在 SharePoint Online 中延迟加载图像和 JavaScript
 
-本文介绍如何通过使用 JavaScript 延迟加载图像，以及等到页面加载后加载非必要的 JavaScript 来缩短 SharePoint Online 页面的加载时间。
+本文介绍如何通过使用 JavaScript 延迟加载图像，以及等到页面加载后加载非必要的 JavaScript 来减少 SharePoint Online 页面的加载时间。
   
 图像可能会对 SharePoint Online 上的页面加载速度产生负面影响。 默认情况下，大多数现代 Internet 浏览器在加载 HTML 页面时预取图像。 如果图像在屏幕上不可见，直到用户向下滚动，这可能会导致页面加载速度不必要地变慢。 图像可以阻止浏览器加载页面的可见部分。 若要解决此问题，可以先使用 JavaScript 跳过加载图像。 此外，加载非必要的 JavaScript 也会减慢页面的下载SharePoint速度。 本主题介绍一些可用于在 SharePoint Online 中通过 JavaScript 改进页面加载时间的方法。
   
@@ -62,7 +62,7 @@ function isElementInViewport(el) {
 }
 ```
 
-接下来，在 loadItemsInView () 函数中，使用 **isElementInViewport** **()** 对象。 **loadItemsInView ()** 函数将加载具有 data-src 属性的值的所有图像（如果它们位于用户可见的浏览器部分）。 将以下函数添加到文本文件：
+接下来，在 **loadItemsInView** () 函数中，使用 **isElementInViewport ()** 对象。 **loadItemsInView ()** 函数将加载具有 data-src 属性的值的所有图像（如果它们位于用户可见的浏览器部分）。 将以下函数添加到文本文件：
   
 ```javascript
 function loadItemsInView() {
@@ -97,7 +97,7 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-将文本文件另存为扩展名为 .js JavaScript 文件，delayLoadImages.js。
+将文本文件另存为扩展名为 .js JavaScript 文件，例如delayLoadImages.js。
   
 编写完文件delayLoadImages.js，您可以将文件内容添加到 SharePoint Online 中的母版页。 为此，在母版页中添加指向页眉的脚本链接。 在母版页中发布后，JavaScript 将应用于 SharePoint Online 网站中使用该母版页布局的所有页面。 或者，如果你希望仅在网站的一个页面上使用它，请使用脚本编辑器Web 部件 JavaScript 嵌入页面。 有关详细信息，请参阅以下主题：
   

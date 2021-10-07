@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: daedba79bb2fd9ac452cbef08d74d4d876122478
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 949fbfa6b34fe78e7d5a575756547fdadfef8c8f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196262"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199497"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>在操作中心查看和管理操作
 
@@ -36,7 +36,7 @@ ms.locfileid: "59196262"
 **适用于：**
 - Microsoft 365 Defender
 
-威胁防护功能Microsoft 365 Defender某些修正操作。 下面是一些示例：
+威胁防护功能Microsoft 365 Defender会导致某些修正操作。 下面是一些示例：
 
 - [自动调查](m365d-autoir.md) 可能会导致自动执行修正操作或等待您的批准。
 - 防病毒、反恶意软件和其他威胁防护功能可能会导致修正操作，例如阻止文件、URL 或进程，或将项目发送到隔离区。

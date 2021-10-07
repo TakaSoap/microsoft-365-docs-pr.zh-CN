@@ -7,7 +7,7 @@ ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -20,13 +20,13 @@ ms.custom:
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: 本文将了解如何使用 PowerShell 向未授权Microsoft 365许可证。
-ms.openlocfilehash: 2af81099b2771c69b642308fb50500b358d64780
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 本文将了解如何使用 PowerShell 向未授权Microsoft 365分配许可证。
+ms.openlocfilehash: b9f076e4856820d9f10e4cf92718dd6ddd3971c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196380"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186773"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户分配许可证
 
@@ -40,10 +40,10 @@ ms.locfileid: "59196380"
 
 - Microsoft 365 管理员中心
  - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
- - Azure [门户 (](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) Active **Directory** 用户>  >  配置文件>  >  **联系人信息**"  >  **的** 用户帐户) 。
+ - Azure [门户 (](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) Active **Directory**>  >  用户帐户>**配置文件** 联系人  >  **信息**  >  **""国家/地区") 。**
 
 >[!Note]
->[了解如何使用用户帐户分配许可证Microsoft 365 管理中心。](../admin/manage/assign-licenses-to-users.md) 有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
+>[了解如何使用用户帐户分配许可证Microsoft 365 管理中心。](../admin/manage/assign-licenses-to-users.md) 有关其他资源的列表，请参阅管理 [用户和组](/admin)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
@@ -87,7 +87,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-请注意，当此模块的功能在适用于 Graph 模块的更高版本的[PowerShell](/powershell/azuread/v2/azureactivedirectory)中可用时，我们将Azure Active Directory弃用此模块。 我们建议创建新 PowerShell 脚本的客户使用较新的模块而不是此模块。
+请注意，当此模块的功能在适用于 Graph 模块的更高版本[的 PowerShell](/powershell/azuread/v2/azureactivedirectory)中可用时，我们将开始Azure Active Directory弃用此模块。 我们建议创建新 PowerShell 脚本的客户使用较新的模块而不是此模块。
 
 首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
@@ -133,7 +133,7 @@ Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-此示例将 **litwareinc：ENTERPRISEPACK** (Office 365 企业版 E3) 许可计划中的许可证分配给未授权用户 **belindan \@** litwareinc.com：
+此示例将 **litwareinc：ENTERPRISEPACK** (Office 365 企业版 E3 许可) 许可证计划中的许可证分配给未授权用户 **belindan \@** litwareinc.com：
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -184,7 +184,7 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 
 确定用户当前 (FROM) 订阅订阅的订阅，以及用户 (TO 订阅) 。
 
-最后，指定 SKU 部件 (TO 和 FROM) 并运行这些命令。
+最后，使用 SKU (指定 TO 和 FROM) 并运行这些命令。
 
 ```powershell
 $subscriptionFrom="<SKU part number of the current subscription>"

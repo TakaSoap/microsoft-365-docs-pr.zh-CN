@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: 07/21/2021
 audience: Admin
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性, 从 EOP 到 Defender for Office 365 计划 1 和 2, 标准与严格安全配置等。 了解自己拥有的财产以及如何保护财产。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb20146625b0e6d42394e82c6cdd70595f18ba13
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: bc444ee36cabf7d148c51d1bceac02f299d89ad9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483239"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196461"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Microsoft Defender for Office 365安全概述
 
@@ -29,12 +29,12 @@ ms.locfileid: "59483239"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
-本文将向你介绍新的 Microsoft Defender for Office 365 云中的安全属性。 无论你是安全运营中心的一员，还是该领域的新手，还是想要复习一下，让我们开始吧。
+本文将向你介绍新的 Microsoft Defender，Office 365云中的安全属性。 无论你是安全运营中心的一员，还是该领域的新手，还是想要复习一下，让我们开始吧。
 
 > [!CAUTION]
 > 如果你使用的是 **Outlook.com**、**Microsoft 365 家庭版** 或 **Microsoft 365 个人版**，并且需要 *安全链接* 或 *安全附件* 信息，***单击此链接***：[适用于 Microsoft 365 订阅者的高级 Outlook.com 安全机制](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-## <a name="what-is-defender-for-office-365-security"></a>什么是安全Office 365 Defender
+## <a name="what-is-defender-for-office-365-security"></a>什么是 Defender for Office 365 安全
 
 每一 Office 365 订阅都具有安全功能。 目标和可以采取的行动取决于这些不同订阅的重点。 在 Office 365 安全中，三种主要的安全服务（或产品）与你的订阅类型相关联：
 
@@ -112,7 +112,7 @@ Microsoft Defender for Office 365 计划 1 还添加了 **实时检测** 以进�
 
 因此，Microsoft Defender for Office 365 计划 2 在 ***调查和响应*** 方面进行了扩展，并增加了新的搜寻功能。 自动化。
 
-在 Microsoft Defender for Office 365 计划 2 中，主要的搜索工具称为 **威胁浏览器** 而不是实时检测。 如果你在导航到应用门户时看到威胁资源管理器Microsoft 365 Defender，你将在 Microsoft Defender for Office 365 P2。
+在 Microsoft Defender for Office 365 计划 2 中，主要的搜索工具称为 **威胁浏览器** 而不是实时检测。 如果你在导航到安全中心门户时看到威胁资源管理器Microsoft 365 Defender，你将在 Microsoft Defender for Office 365 P2。
 
 如果深入了解 Microsoft Defender for Office 365 计划 1 和 2，请 **[跳至本文](defender-for-office-365.md)**。
 

@@ -7,7 +7,7 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,13 +21,13 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: 作为管理员，查找有关设置 Skype for Business Online 部分（包括网络、会议和 IM 以及用户的外部访问）的帮助。
-ms.openlocfilehash: 3464f137459544d521fdbe43a2a6e590ed11b904
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: 作为管理员，查找有关设置 Skype for Business Online 部分的帮助，包括你的网络、会议和 IM 以及用户的外部访问。
+ms.openlocfilehash: 00ddd9072fccf07d7d0d5d2c148950112d40e075
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355852"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197217"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365 中的 Skype for Business Online - 管理员帮助
 

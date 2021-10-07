@@ -1,6 +1,6 @@
 ---
 title: 自动调查的详细信息和结果
-description: 查看自动调查的结果和主要Microsoft 365 Defender
+description: 查看自动调查的结果和关键Microsoft 365 Defender
 keywords: 自动化， 调查， 结果， 分析， 详细信息， 修正， autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 028c099dc046d6402d187e5bde0a1536e44657a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7eaf3c7f1b712bc6b3f0c1d17869ccf434a74d89
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197235"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199485"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自动调查的详细信息和结果
 
@@ -45,7 +45,7 @@ ms.locfileid: "59197235"
 
 - Office 365 安全与&中心 () [https://protection.office.com](https://protection.office.com)
 - Microsoft Defender 安全中心 () [https://securitycenter.windows.com](https://securitycenter.windows.com)
-- Microsoft 365 Defender 门户或 () [https://security.microsoft.com](https://security.microsoft.com)
+- Microsoft 365 Defender 门户或 (操作中心 [https://security.microsoft.com](https://security.microsoft.com) () 
 
 ## <a name="open-the-investigation-details-view"></a>打开调查详细信息视图
 
@@ -79,7 +79,7 @@ ms.locfileid: "59197235"
 
 1. 转到 [https://security.microsoft.com](https://security.microsoft.com) 并登录。 
 
-2. 在导航窗格中，选择"事件 **&事件**  >  **"。** 
+2. 在导航窗格中，选择"**事件&事件**  >  **"。** 
 
 3. 选择列表中的某个项目，然后选择"打开 **事件页面"。**
 
@@ -102,13 +102,13 @@ ms.locfileid: "59197235"
 > [!NOTE]
 > 你在调查详细信息页面中看到的特定选项卡取决于你的订阅包括的内容。 例如，如果你的订阅不包括 Microsoft Defender for Office 365计划 2，你将看不到"邮箱 **"** 选项卡。
 
-| Tab | 说明 |
+| 选项卡 | 说明 |
 |:--------|:--------|
 | **调查图** | 提供调查的直观表示。 描述实体并列出找到的威胁及警报，以及是否有任何待批准的操作。<br/>可以选择图形上的项目以查看更多详细信息。 例如，选择 **"证据**"图标将你带至"证据"选项卡，可在其中查看检测到的实体及其裁定。 |
 | **警告** | 列出与调查相关的警报。 警报可能来自用户设备上的威胁防护功能、Office、Microsoft Cloud App Security和其他Microsoft 365 Defender功能。|
 | **Devices** | 列出包含在调查中的设备及其修正级别。  (修正级别对应于设备[组 .) ](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) |
 | **邮箱** |列出受检测到的威胁影响的邮箱。  |
-| **Users**  | 列出受检测到的威胁影响的用户帐户。 |
+| **用户**  | 列出受检测到的威胁影响的用户帐户。 |
 | **证据** | 列出由警报或调查引发的证据片段。 包括有关 *(、可疑*、*未知* 或未找到威胁) 和修正状态裁定。 |
 | **Entities** | 提供有关每个已分析实体的详细信息，包括每个实体类型裁定 (*恶意*、可疑或未找到任何威胁) 。 |
 |**Log** | 提供触发警报后执行的所有调查操作按时间顺序的详细视图。|
