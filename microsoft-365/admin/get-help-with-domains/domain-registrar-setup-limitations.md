@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: 某些域注册机构提供有限的服务，这意味着并非所有 Microsoft 功能都适用于每个域。
-ms.openlocfilehash: 7fe6b047773e47964b5a00728b8c1443bdeef36e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 2d192f03c5a586e4355c1f9a08d312a07af3d501
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774588"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164725"
 ---
 # <a name="domain-registrars-with-setup-limitations"></a>具有设置限制的域注册机构
 
@@ -84,7 +84,7 @@ MyDomain 网站不支持 SRV 记录，这意味着多个 Teams 和电子邮件�
 
 1.  首先，将创建自动发现子域。 在“**子域概述**”部分中，选择“**创建子域**”。
 
-1.  在新子域的“**创建子域**”框中，只键入或复制并粘贴下表中的“**创建​​子域**”值。 （将在后面一个步骤中添加“**Alias**”值。）
+1.  在新子域的“**创建子域**”框中，只键入或复制并粘贴下表中的“**创建​​子域**”值。（将在后一步中添加“**别名**”值。）
 
     |创建子域|别名|
     |:----|:----|
@@ -116,7 +116,7 @@ MyDomain 网站不支持 SRV 记录，这意味着多个 Teams 和电子邮件�
 
 1.  在“**子域概述**”部分中，选择“**创建子域**”。
 
-1.  在新子域的“**创建子域**”框中，只键入或复制并粘贴下表中的“**创建​​子域**”值。 （将在后面一个步骤中添加“**Alias**”值。）
+1.  在新子域的“**创建子域**”框中，只键入或复制并粘贴下表中的“**创建​​子域**”值。（将在后一步中添加“**别名**”值。）
 
     |创建子域|别名|
     |:----|:----|
@@ -126,7 +126,7 @@ MyDomain 网站不支持 SRV 记录，这意味着多个 Teams 和电子邮件�
 
 1.  在“域中心”页面上，选择“**管理子域**”。
 
-1.  在“**子域概述**”部分中，找到刚才创建的“lyncdiscover”子域，然后选择该子域的“面板(v)”控件。 在“**子域设置**”区域中，选择“**编辑 DNS 设置**”。
+1.  在 **子域概述** 部分中，找到刚刚创建的 lyncdiscover 子域，然后选择该子域的面板 (v) 控件。在 **子域设置** 区域中，选择“**编辑 DNS 设置**”。
 
 1.  在“**A/AAAA 记录(IP 地址)**”部分的“**IP 地址(A 记录)**”区域中，选择“**CNAME**”。
 
@@ -144,7 +144,7 @@ MyDomain 网站不支持 SRV 记录，这意味着多个 Teams 和电子邮件�
 
 1.  在“**子域概述**”部分中，选择“**创建子域**”。
 
-1.  在新子域的“**创建子域**”框中，只键入或复制并粘贴下表中的“**创建​​子域**”值。 （将在后面的步骤中添加“**Alias**”值。）
+1.  在新子域的“**创建子域**”框中，只键入或复制并粘贴下表中的“**创建​​子域**”值。（将在后面一个步骤中添加“**别名**”值。）
 
     |创建子域|别名|
     |:----|:----|

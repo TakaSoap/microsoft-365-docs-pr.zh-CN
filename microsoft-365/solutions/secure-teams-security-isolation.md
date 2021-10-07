@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
-ms.openlocfilehash: 2a6285b63c67572ec363303e1d850c08d9c8e0c5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 83672c1d723103c3b6b72db7b9c67374a2223593
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171505"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206393"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 
@@ -86,7 +86,7 @@ ms.locfileid: "59171505"
 3. 选择“**从头开始构建团队**”。
 4. 在“**敏感度**”列表中，保留默认值。
 5. 在“**隐私**”下，单击“**专用**”。
-6. 键入与敏感项目相关的团队的名称。 例如，**Project Saturn**。
+6. 键入与敏感项目相关的团队的名称。例如，**Project Saturn**。
 7. 单击“**创建**”。
 8. 将用户添加到团队，然后单击“**关闭**”。
 

@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 如何通过以下方法使用保留标签来管理 SharePoint 中的文档的生命周期：使用元数据对内容进行分类、自动应用标签，以及使用基于事件的保留来开始保留期。
-ms.openlocfilehash: 8c34e8fe860f3704ac96e852393e6661115bb58a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fe24f13609752dd5a5e73f4631644bd1cf4d4e6c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162072"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151346"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>使用保留标签管理存储在 SharePoint 中的文档的生命周期
 
@@ -63,7 +63,7 @@ ms.locfileid: "59162072"
 [ ![产品文档库。](../media/SPRetention3.png) ](../media/SPRetention3.png#lightbox)
 
 > [!NOTE]
-> 在此方案中，制造公司可以为每个产品使用 Microsoft 团队以支持团队成员之间的协作（例如持久聊天），而不是使每个产品都有一个 SharePoint 网站，它还可使用团队中的“**文件**”选项卡进行文档管理。 在本文中，我们只重点介绍文档，因此我们将只使用一个网站。
+> 在此方案中，制造公司可以为每个产品使用 Microsoft 团队以支持团队成员之间的协作（例如持久聊天），而不是为每个产品建立一个 SharePoint 网站，它还可使用 Teams 中的“**文件**”选项卡进行文档管理。在本文中，我们将仅关注文档，因此我们将仅使用一个网站。
 
 以下是旋转小组件产品的文档库视图：
 
@@ -124,7 +124,7 @@ ms.locfileid: "59162072"
 
     ![“为产品规范标签新建事件类型”对话框。](../media/SPRetention6.png)
 
-3. 在“**命名事件类型**”页面上，输入“**产品停产**” 和可选说明。 然后选择 “**下一步**”、“**提交**”和“**完成**”。
+3. 在 **为事件类型命名** 页上，输入 **产品停产** 和可选说明。然后依次选择“**下一步**”、**提交** 和“**完成**”。
 
 4. 返回到“**定义保留设置**”页面，对于“**启动保留期，基于：**”一项，请使用下拉框选择所创建的“**产品停产**”事件类型。
 
@@ -168,7 +168,7 @@ ms.locfileid: "59162072"
 
 如果你要查找的已爬网属性未显示在 SharePoint 管理中心的“管理搜索架构”部分中：
 
-- 可能是由以下原因之一造成的。 你可以通过转到“**文档库设置**” > “**高级设置**”来强制重新编制库的索引。
+- 可能尚未对文档编制索引。可以通过转到“**文档库设置**” > “**高级设置**”来强制重新编制库的索引。
 
 - 如果文档库位于新式网站中，请确保 SharePoint 管理员也是网站集管理员。
 
@@ -219,7 +219,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
    [![选择“标签”页面上的“自动应用标签”](../media/SPRetention16.png)](../media/SPRetention16.png#lightbox)
 
-2. 在“创建自动标记策略向导”中，在“**命名你的自动标记策略**”页面上，输入一个名称，如“**自动应用产品规范标签**”和可选说明。 然后选择“**下一步**”。
+2. 在创建自动标记策略向导中，在“**命名你的自动标记策略**”页面上，输入一个名称，如 **自动应用产品规范标签** 和可选说明。然后选择“**下一步**”。
 
 3. 在“**选择要向其应用此标签的内容类型**”页面上，选择“**将标签应用于包含特定字词或短语或者属性的内容**”，然后选择“**下一步**”。
 
@@ -240,7 +240,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 6. 在“**选择要自动应用的标签**”页面上，选择“**添加标签**”。
 
-7. 从保留标签列表中，选择“**产品规范**”。 然后选择“**添加**”和“**下一步**”。
+7. 从保留标签列表中，选择“**产品规范**”。然后选择“**添加**”和“**下一步**”。
 
 8. 查看设置：
 

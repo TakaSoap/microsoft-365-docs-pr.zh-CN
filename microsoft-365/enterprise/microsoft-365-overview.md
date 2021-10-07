@@ -9,16 +9,16 @@ ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 介绍 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: 404670e42f46b249b748d0a54f882c631c6f91ee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: baa31d972a4722390e72798c582f41df5133a98b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162350"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152726"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -106,7 +106,7 @@ Microsoft 365 E3 用户可以使用这些加载项来利用 Microsoft 365 E5 包
 
 - 与 FastTrack 合作
 
-   通过 FastTrack，Microsoft 工程师可按照你的节奏帮助你移动到云。 请参阅[适用于 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。
+   借助 FastTrack，Microsoft 工程师可帮助你按照自己的节奏迁移到云。请参阅 [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365)。
 
 - 在 Microsoft 咨询服务或 [Microsoft 合作伙伴](https://partner.microsoft.com/)的协助下进行
 

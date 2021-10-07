@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 MailItemsAccessed 邮箱审核操作对被盗用的用户账户进行司法鉴定调查。
-ms.openlocfilehash: b0fac6e4ac5d6cc4bb20b6853cb67cf301c6295a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: eeb52058a9937b9ba59b53c7491ccf652cac5288
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170160"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152966"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>使用“高级审核”来调查被盗用的帐户
 
@@ -31,7 +31,7 @@ ms.locfileid: "59170160"
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>MailItemsAccessed 邮箱审核操作
 
-新的 MailItemsAccessed 操作是新“[高级审核](advanced-audit.md)”功能的一部分。 它是“[Exchange 邮箱审核](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions)”的一部分，并默认为分配了 Office 365 或 Microsoft 365 E5 许可证的用户或拥有 Microsoft 365 E5 合规加载项订阅的组织启用。
+新的 MailItemsAccessed 操作是新的 [高级审核](advanced-audit.md) 功能的一部分。它是 [Exchange 邮箱审核](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) 的一部分，并在默认情况下为分配有 Office 365 或 Microsoft 365 E5 许可证的用户，或具有 Microsoft 365 E5 合规加载项订阅的组织启用。
 
 MailItemsAccessed 邮箱审核操作包含所有邮件协议：POP、IMAP、 MAPI、EWS、Exchange ActiveSync 和 REST。 还包含了两种存取邮件的类型：*同步* 和 *绑定*。
 
@@ -149,7 +149,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*MailAccessType:Bind*"} | FL
    ```
 
-   被存取的电子邮件通过它们的 internet 邮件 id 进行标识。还可检查任何审核记录与其他攻击者活动拥有相同的上下文。 有关详细信息，请参阅“[识别不同审核记录的存取上下文](#identifying-the-access-contexts-of-different-audit-records)”一节。
+   所访问的电子邮件由其 Internet 邮件 ID 标识。你还可以检查是否有任何审核记录具有与其他攻击者活动的相同上下文。有关详细信息，请参阅 [识别不同审核记录的访问上下文](#identifying-the-access-contexts-of-different-audit-records) 部分。
 
    可以使用审核数据采用两种方式进行绑定操作：
 

@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: d4a0bed84e3a88b92fdb7def20fd5ea7dac03e28
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 15d2ac283f3687863355d44016a468f69d8efe7f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773687"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156086"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -58,7 +59,7 @@ ms.locfileid: "59773687"
 
 ::: moniker-end
 
-2. 在服务（如电子邮件或 OneDrive）的一览式活动卡上，单击“**查看更多**”按钮以查看报告详细信息的页面。 在那里，选项卡中提供了服务的不同报告。
+2. 从某项服务（如电子邮件或 OneDrive）的一览式活动卡片中单击“**查看更多**”按钮以查看报表详细信息页。在此处，选项卡中提供了服务的不同报表。
 
    :::image type="content" alt-text="使用情况仪表板" source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::。
 

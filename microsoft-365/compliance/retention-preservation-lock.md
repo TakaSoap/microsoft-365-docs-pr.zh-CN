@@ -10,17 +10,17 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: 使用带有保留策略和保留标签策略的保存锁来帮助满足监管要求，并防范恶意管理员。
-ms.openlocfilehash: eb842a3d5add719338773f088b07dcf4c32ede53
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 71cd5aaa4b868d85f94f92370c50ef57253cc084
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196914"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179003"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>使用保留锁定来限制对保留策略和保留标签策略的更改
 
@@ -58,7 +58,7 @@ ms.locfileid: "59196914"
 
 1. [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
-2. 通过运行 [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)，找到所需锁定的策略名称。 例如：
+2. 通过运行 [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)，找到所需锁定的策略名称。例如：
     
    ![PowerShell 中的保留策略列表。](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
@@ -82,7 +82,7 @@ ms.locfileid: "59196914"
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 ```
 
-应看到 **RestrictiveRetention** 设置为 **True**。 例如：
+应会看到 **RestrictiveRetention** 设置为 **True**。例如：
 
 ![已在 PowerShell 中显示所有参数的锁定策略。](../media/retention-policy-preservation-lock-locked-policy.PNG)
 

@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解 Microsoft 365 for Business 订阅到期、禁用或取消后对我的数据的影响。
 ms.date: 09/16/2021
-ms.openlocfilehash: 089caf11d590d38cc729466f53f91c1123f8b596
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 491a279aac94b4242252df801bd9f65fcb9f8a5b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480996"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151238"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for Business 订阅结束后对我的数据和访问有何影响？
 
@@ -109,11 +109,11 @@ ms.locfileid: "59480996"
   
 ### <a name="state-disabled"></a>状态：已禁用
 
-**预期结果：** 如果未重新激活处于已过期阶段的订阅，则订阅将进入已停用阶段，这一阶段在大多数国家和地区的大多数订阅中将持续 90 天。 对于批量许可产品，禁用期将持续 30 天。
+**预期结果：** 如果在订阅过期时不重新激活，订阅将进入禁用阶段，在大多数国家和地区中，此阶段将持续 90 天。对于批量许可产品，禁用阶段将持续 30 天。
 
 在此状态下，访问量会大大降低。 用户无法登录，也无法访问电子邮件或 SharePoint Online 等服务。 Office 应用程序最终会进入只读的缩减功能模式，并显示 [未授权产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 你仍然可以登录并进入管理中心，但不能为用户分配许可证。 你的客户数据 (包括团队网站上的所有用户数据、电子邮件和文件) 都仅向你和其他管理员开放。
 
-作为全局管理员或账务管理员， 可以 [重新激活订阅](reactivate-your-subscription.md) 继续使用 Microsoft 365，并保留所有客户数据完好无损。 如果选择不重新激活，请 [备份你的数据](back-up-data-before-switching-plans.md)。
+作为全局管理员或帐务管理员，你可以 [重新激活订阅](reactivate-your-subscription.md) 并继续使用 Microsoft 365，而且在此期间你的所有客户数据保持不变。如果选择不重新激活，请务必 [备份数据](back-up-data-before-switching-plans.md)。
 
 ### <a name="state-deleted"></a>状态：已删除
   

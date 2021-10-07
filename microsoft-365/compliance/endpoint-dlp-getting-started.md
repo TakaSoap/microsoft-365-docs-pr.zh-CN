@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 终结点数据丢失防护，以监视文件活动，并将针对这些文件的保护措施实施到终结点。
-ms.openlocfilehash: 53054e32803bb3722674c043a84eb7f410a77d06
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0d7902076885bd79d4a2d57e7be85fffbc5770fd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169653"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200517"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>终结点数据丢失防护入门
 
@@ -114,7 +114,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 
 必须先启用设备监视功能并载入终结点，然后才能监视和保护设备上的敏感项目。 这两项操作都在 Microsoft 365 合规门户中完成。
 
-当你想载入尚未载入的设备时，你需要下载适当的脚本并将其部署到那些设备上。 按照[载入设备程序](endpoint-dlp-getting-started.md#onboarding-devices)进行操作。
+当你想载入尚未载入的设备时，你需要下载适当的脚本并将其部署到那些设备上。按照[载入设备程序](endpoint-dlp-getting-started.md#onboarding-devices)进行操作。
 
 已载入到 [Microsoft Defender for Endpoint](/windows/security/threat-protection/) 的设备将显示在“托管设备”列表中。 请按照“[与设备载入到 Microsoft Defender for Endpoint 的过程](?source=docs&view=o365-worldwide#with-devices-onboarded-into-microsoft-defender-for-endpoint)”进行操作。
 

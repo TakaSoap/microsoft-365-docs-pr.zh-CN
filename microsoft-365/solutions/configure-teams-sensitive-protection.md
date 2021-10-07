@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何部署具有敏感数据保护的团队。
-ms.openlocfilehash: a3f715cb05ad1d5acf3c93c58959f12ebec46978
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: edeeb0fc0f93ae962b85e113734dea1844b11d04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200889"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213417"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>配置具有敏感数据保护的团队
 
@@ -66,7 +66,7 @@ ms.locfileid: "59200889"
 1. 打开 [Microsoft 365 合规中心](https://compliance.microsoft.com)。
 2. 在“**解决方案**”下，单击“**信息保护**”。
 3. 单击“**创建标签**”。
-4. 为标签命名。 建议使用“**敏感**”，但如果该名称已在使用，则可以选择其他名称。
+4. 为标签命名。建议使用“**敏感**”，但如果该名称已在使用，则可以选择其他名称。
 5. 添加显示名称和说明，然后单击“**下一步**”。
 6. 在“**定义此标签页的搜索范围**”中，选择“**文件和电子邮件**”和“**组和站点**”，然后单击“**下一步**”。
 7. 在“**选择文件和电子邮件的防护设置**”页面中，单击“**下一步**”。

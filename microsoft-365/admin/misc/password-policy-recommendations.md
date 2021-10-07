@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 加强组织对密码攻击的防护，禁用常见密码并启用基于风险的多重身份验证。
-ms.openlocfilehash: bf722e665950be87ed652f4df7fa7e5b2298959c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d05b642455369cda3897733044727719e671a619
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170368"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171755"
 ---
 # <a name="password-policy-recommendations"></a>密码策略建议
 
@@ -113,7 +113,7 @@ ms.locfileid: "59170368"
   
 ### <a name="ban-common-passwords"></a>禁用常见密码
 
-创建密码时，应对用户采用的最重要的密码要求是禁用常见密码，以使你的组织更不容易受到蛮力密码攻击。 常见用户密码包括：**abdcefg**、**password** 和 **monkey**。
+创建密码时，应对用户采用的最重要的密码要求是禁用常见密码，以使你的组织更不容易受到暴力破解密码攻击。常见用户密码包括：“**abcdefg**”、“**password**”、“**monkey**”。
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>指导用户不要在任何其他位置重复使用组织密码
 

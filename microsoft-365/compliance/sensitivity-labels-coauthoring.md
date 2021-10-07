@@ -8,17 +8,17 @@ manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: 3a538f866be9d43088ab22923b41c6b070855ea3
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: fc519ea7a8d76135b4d536a64e6a411844bd3e47
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356121"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151046"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
@@ -112,7 +112,7 @@ ms.locfileid: "59356121"
 - 目前不支持适用于 iOS 和 Android 的 Office 应用。
 
 - 不支持共同创作和自动保存，并且不支持标签和加密的 Office 文档，这些文档使用下列任何 [配置加密](encryption-sensitivity-labels.md#configure-encryption-settings)：
-    - **允许用户在应用标签权限** Word、PowerPoint 和 Excel **复选框时分配权限，提示用户** 权限。 此配置有时称为"用户定义的权限"。
+    - **让用户在应用标签时分配权限** 并选中 **在 Word、PowerPoint 和 Excel 中提示用户指定权限** 的复选框。此配置有时称为“用户定义的权限”。
     - **将内容的访问权限设置为** 一个值，则对内容 **从不**。
     - **选择了双** 加密技术。
     

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: 5e8e18d85a0161542d988107c450a6abb9f7c7d4
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: fff0326df591ad5cd414be73afe9f365b1bc04b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010325"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150998"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -106,7 +106,7 @@ ms.locfileid: "60010325"
     
     - **控制来自标记为 SharePoint 网站或网站** 的外部共享：选择此选项，然后选择对任何人、新来宾和现有来宾、现有来宾或仅对组织内部人员的外部共享。 有关此配置和设置的详细信息，请参阅 SharePoint 文档，[为网站开启或关闭外部共享](/sharepoint/change-external-sharing-site)。
     
-    - **使用 Azure AD 条件访问保护已标记的 SharePoint 的网站**：仅当你的组织已配置并且使用 [Azure Active Directory 条件访问](/azure/active-directory/conditional-access/overview)时，才选择此选项。 然后，选择以下一项设置：
+    - **使用 Azure AD 条件访问保护已标记的 SharePoint 网站**：仅当你的组织已配置并且使用 [Azure Active Directory 条件访问](/azure/active-directory/conditional-access/overview) 时才选择此选项。然后选择以下设置之一：
     
         - **确定用户是否可以从非托管设备访问 SharePoint 网站**：此选项使用利用 Azure AD 条件访问来阻止或限制从非托管设备访问 SharePoint 和 OneDrive 内容的 SharePoint 功能。 有关详细信息，请参阅 SharePoint 文档中的[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 为此标签设置指定的选项等效于运行针对网站的 PowerShell 命令，如 SharePoint 说明中的[阻止或限制对特定 SharePoint 网站或 OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) 部分的步骤 3-5 所述。
             
@@ -209,7 +209,7 @@ PowerShell 示例，其中敏感度标签 GUID 为 **8faca7b8-8d20-48a3-8ea2-0f9
 
 #### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>指定高级设置的 PowerShell 提示
 
-虽然可以按其名称指定敏感度标签，但我们建议使用标签 GUID 以避免在指定标签名称或显示名称时可能产生的混淆。 若要查找 GUID，请执行以下操作：
+虽然可以按其名称指定敏感度标签，但我们建议使用标签 GUID 以避免在指定标签名称或显示名称时可能产生的混淆。要查找 GUID，请：
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid

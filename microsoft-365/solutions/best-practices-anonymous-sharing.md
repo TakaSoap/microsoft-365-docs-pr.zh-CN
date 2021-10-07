@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: 在本文中，你将了解与身份未经验证的用户共享文件和文件夹的最佳做法。
-ms.openlocfilehash: 19791a532b6ea9a7167ac85dfe1eb1b58b9f8f1b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 40bf61820f28656e6f038e76f066e9b122b30177
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197183"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149630"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>有关与身份未经验证用户共享文件和文件夹的最佳做法
 
@@ -64,7 +64,7 @@ ms.locfileid: "59197183"
 
 ## <a name="set-link-permissions"></a>设置链接权限
 
-默认情况下，文件的 *任何人* 链接允许用户编辑文件，而文件夹的 *任何人* 链接允许用户编辑和查看其中的文件以及向文件夹上传新文件。 可单独将这些文件和文件夹的权限更改为“仅查看”。
+默认情况下，文件的 *Anyone* 链接允许用户编辑文件，文件夹的 *Anyone* 链接则允许用户编辑和查看文件，并将新文件上传到文件夹。可以将文件和文件夹的这些权限单独更改为仅查看。
 
 如果希望允许未经身份验证共享，但担心未经身份验证的人员修改组织的内容，可考虑将文件和文件夹权限设置为“**查看**”。
 

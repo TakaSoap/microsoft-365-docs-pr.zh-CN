@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: 了解可用于在 Microsoft 365 中创建安全来宾共享环境的选项，提供来宾访问以改进协作。
-ms.openlocfilehash: 1986140e2aa809e81415a8e581ce626c5100809d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 775a5f1376df1bca553bc1b3b9cd92072736ac60
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170435"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203731"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 
@@ -168,7 +168,7 @@ ms.locfileid: "59170435"
 8. 在“**选择**”边栏选项卡上，选择“**Microsoft Teams**”和“**Outlook Groups**”，然后单击“**选择**”。
 9. 在“**分配**”下，单击“**条件**”。
 10. 在“**条件**”边栏选项卡上，单击“**客户端应用**”。
-11. 在“**客户端应用**”边栏选项卡上，为“**配置**”单击“**是**”，然后选择“**移动应用和桌面客户端**”、“**Exchange ActiveSync 客户端**”和“**其他客户端**”设置。 清除“**浏览器**”复选框。
+11. 在“**客户端应用**”边栏选项卡上，为“**配置**”单击“**是**”，然后选择“**移动应用和桌面客户端**”、“**Exchange ActiveSync 客户端**”和“**其他客户端**”设置。清除“**浏览器**”复选框。
 
     ![Azure AD 条件访问客户端应用设置的屏幕截图。](../media/azure-ad-conditional-access-client-mobile.png)
 

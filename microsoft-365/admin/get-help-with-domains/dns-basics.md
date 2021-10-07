@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 域名系统将计算机主机名映射到 IP 地址，了解 DNS 和域注册机构基本信息可帮助管理域。
-ms.openlocfilehash: 42c93ba7c0edd76b1371015ea9c3b2dd1e4f8bbb
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 3195e6ba1e8483a5444eb0f8046add1e3e7725f3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774600"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164772"
 ---
 # <a name="dns-basics"></a>DNS 基础
 
@@ -195,7 +195,7 @@ Microsoft 365 需要几个 DNS 记录才能使用你的域。除了设置你的�
   
 可[查找值列表](information-for-dns-records.md)来设置域。 它们包含在 <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Microsoft 365 管理中心</a> 中。 
   
-或者，如果您正在筹划部署，您可能希望查看 Microsoft 365 所需的所有 DNS 记录的列表、其函数和示例值。 查看 “[Microsoft 365 的外部域名系统记录](../../enterprise/external-domain-name-system-records.md)”。
+或者，如果正在计划部署，可能需要查看 Microsoft 365 所需的所有 DNS 记录的列表、其功能以及示例值。请查看[Microsoft 365 的外部域名系统记录](../../enterprise/external-domain-name-system-records.md)。
   
 ## <a name="next-steps"></a>后续步骤
 
@@ -208,4 +208,4 @@ Microsoft 365 需要几个 DNS 记录才能使用你的域。除了设置你的�
 
 [域常见问题解答](../setup/domains-faq.yml)（文章）\
 [查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）\
-[管理域](index.yml)（链接页）
+[管理域](/admin)（链接页）

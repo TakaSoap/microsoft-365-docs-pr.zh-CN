@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: 5892932bc3fe35cfc6739c266db9f6379d08ee6b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bca5495b60bcd3fe84c7faf05ec124f2eb037994
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171390"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151286"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
-Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-compliance.md)功能可让组织深入了解 Microsoft 365 众多服务中的不同类型审核活动。 高级审核可帮助组织进行法庭取证和合规性调查，方法是增加进行调查所需的审核日志保留期，提供对确定泄露范围有帮助的关键事件的访问权限（通过在 Microsoft 365 合规中心和 Office 365 管理活动 API 中使用审核日志搜索），以及提供对 Office 365 管理活动 API 更快地访问。
+通过 Microsoft 365 中的 [统一审核功能](search-the-audit-log-in-security-and-compliance.md)，组织可以了解 Microsoft 365 众多不同服务中许多类型的审核活动。高级审核通过增加执行调查所需的审核日志保留期来帮助组织执行取证和合规性调查，提供对有助于确定泄露范围和更快访问 Office 365 管理活动 API 的重要事件的访问（通过使用 Microsoft 365 合规中心和 Office 365 管理活动 API）。
 
 > [!NOTE]
 > 高级审核适用于具有 Office 365 E5/A5/G5 或 Microsoft 365 企业版 E5/A5/G5 订阅的组织。 应向用户分配 Microsoft 365 E5/A5/G5 合规性或 E5/A5/G5 电子数据展示和审核附加许可证，以获取高级审核功能，例如长期保留审核日志以及用于调查的关键高级审核事件访问权限。 有关许可的详细信息，请参阅：<br/>- [高级审核许可要求](auditing-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
@@ -135,7 +135,7 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 此外，还可在 Exchange Online PowerShell 中运行[Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog)。
 
 > [!NOTE]
-> 必须启用对 SearchQueryInitiatedExchange 进行记录，从而在审核日志中搜索此事件。 有关说明，请参阅[设置高级审核](set-up-advanced-audit.md#step-2-enable-advanced-audit-events)。
+> 必须启用对 SearchQueryInitiatedExchange 进行记录，以便可以在审核日志中搜索此事件。有关说明，请参阅 [设置高级审核](set-up-advanced-audit.md#step-2-enable-advanced-audit-events)。
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -158,7 +158,7 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 此外，还可在 Exchange Online PowerShell 中运行[Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog)。
 
 > [!NOTE]
-> 必须启用对 SearchQueryInitiatedSharePoint 进行记录，从而在审核日志中搜索此事件。 有关说明，请参阅[设置高级审核](set-up-advanced-audit.md#step-2-enable-advanced-audit-events)。
+> 必须启用对 SearchQueryInitiatedSharePoint 进行记录，以便可以在审核日志中搜索此事件。有关说明，请参阅 [设置高级审核](set-up-advanced-audit.md#step-2-enable-advanced-audit-events)。
 
 ### <a name="other-advanced-audit-events-in-microsoft-365"></a>Microsoft 365 中的其他高级审核事件
 
