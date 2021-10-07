@@ -8,17 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: 将Outlook、OneDrive Teams数据迁移到Microsoft 365 商业标准版
-ms.openlocfilehash: 2cec4a98172fe472d48c7726cb8b0c1887d88a6f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: fcd3047014204c1115481dfd411be502a7409fb9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775944"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196157"
 ---
 # <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>将数据迁移到 Microsoft 365 商业标准版订阅
 
@@ -27,16 +28,16 @@ ms.locfileid: "59775944"
 > [!IMPORTANT]
 > 你仍然可以将数据保留在你的个人帐户中。 一旦创建新的企业电子邮件帐户并迁移数据，你的个人帐户中的数据将不会过期。 可以将所有数据移动到新的业务帐户，也可以移动部分数据。 例如，可以将工作文档移动到业务帐户，但将个人家庭照片保留在你的个人帐户中。
 
-## <a name="move-files-to-onedrive-for-business"></a>将文件移动到OneDrive企业
+## <a name="move-files-to-onedrive-for-business"></a>将文件OneDrive企业
 
-本节介绍如何将存储在你的个人Microsoft 365中的文件移动到你的Microsoft 365帐户。 将两OneDrive帐户同步到设备后，你可以轻松拖放两个文件夹之间的OneDrive文件。
+本部分介绍如何将存储在你的个人Microsoft 365中的文件移动到你的Microsoft 365帐户。 将两OneDrive帐户同步到设备后，你可以轻松拖放两个文件夹之间的OneDrive文件夹。
 
 1. 选择OneDrive通知区域中的"Windows"云图标，并确保你的OneDrive帐户已同步到设备。
 
     :::image type="content" source="../../media/ssu-onedrive-icons.png" alt-text="Screenshot： Select white cloud icon in the Windows notification area":::
 
     > [!NOTE]
-    > 可能需要选择通知区域旁边的"显示隐藏图标"箭头，以查看OneDrive图标。 如果该图标未显示在通知区域中，OneDrive可能未运行。 选择 **"** 开始OneDrive，在搜索框中键入"OneDrive"，然后在搜索结果中选择"开始"。
+    > 可能需要选择通知区域 **旁边的"显示** 隐藏图标"箭头，以查看OneDrive图标。 如果该图标未显示在通知区域中，OneDrive可能未运行。 选择 **"** 开始OneDrive，在搜索框中键入"OneDrive"，然后在搜索结果中选择"开始"。
 
 2. 若要添加新的业务帐户，请选择"帮助  >  **& 设置设置"。**
 
@@ -53,7 +54,7 @@ ms.locfileid: "59775944"
 
 ### <a name="drag-and-drop-files-in-onedrive"></a>拖放文件OneDrive
 
-将你的Microsoft 365帐户和业务帐户同步到设备后，你现在可以将文件从个人 OneDrive 文件夹移动到新的业务OneDrive文件夹。
+将你的Microsoft 365帐户和业务帐户同步到设备后，你现在可以将文件从个人 OneDrive 文件夹移动到新的业务 OneDrive 文件夹。
 
 1. 在文件资源管理器中，打开包含OneDrive同步的文件文件夹。
 
@@ -65,9 +66,9 @@ ms.locfileid: "59775944"
 
 - 如果要移动大量文件，建议分批移动文件，每个文件不超过 100 个。
 
-- 从个人OneDrive移动到OneDrive的文件被视为新文件，因此，这些文件不会保留元数据详细信息，如"修改者"和"修改者"。
+- 从个人OneDrive移动到OneDrive的文件被识别为新文件，因此，这些文件不会保留元数据详细信息，如"修改者"和"修改者"。
 
-- 如果之前在OneDrive共享文件，则需要在移动这些文件后，在OneDrive新文件中再次共享这些文件。 此外，共享这些文件后，我们建议您从文件中删除原始OneDrive。 这样，用户将无法引用之前与用户共享的文件的过期副本。
+- 如果之前在OneDrive共享文件，则需要在移动这些文件后，在OneDrive新文件中再次共享这些文件。 此外，共享这些文件后，建议您从文件中删除原始OneDrive。 这样，用户将无法引用之前与用户共享的文件的过期副本。
 
 ## <a name="step-set-up-outlook-for-email"></a>观看：设置 Outlook，以使用电子邮件功能
 
@@ -115,15 +116,15 @@ ms.locfileid: "59775944"
 
 1. 打开 Microsoft Teams，选择个人资料图标，然后 **添加工作或学校帐户**。
 
-2. 按照步骤将新帐户添加到Teams工作。 有关详细信息[，请查看登录和Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937)入门。
+2. 按照步骤将新帐户添加到Teams工作。 有关详细信息[，请查看登录并开始Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937)登录。
 
 ### <a name="access-teams-chats"></a>访问Teams聊天
 
-当你开始使用Teams工作帐户时，你的数据将不会迁移。 查看旧聊天的最好办法就是并排打开旧Teams帐户和新的工作帐户。 为此，选择帐户右上角的"ME"Teams选择要打开的帐户。 您可以开始与Teams一起使用新工作帐户。 请务必告诉与您聊天的其他用户开始使用新的工作帐户Teams联系您。
+当你开始使用Teams工作帐户时，你的数据将不会迁移。 查看旧聊天的最佳方法就是并行打开旧Teams帐户和新的工作帐户。 为此，选择帐户右上角的"ME"图标Teams选择要打开的帐户。 您可以开始与Teams一起使用新工作帐户。 请务必告诉与您聊天的其他用户使用新的工作帐户Teams联系您。
 
 ### <a name="microsoft-teams-meetings"></a>Microsoft Teams会议
 
-设置新的会议Microsoft Teams帐户后，可以在日历中重新创建Teams会议。 请记住，删除旧用户帐户中的原始Teams会议。 这将允许你访问更丰富的功能，例如，计划时日历可用性以及录制会议的功能。 只能从自己的会议日历Teams会议，因此请确保让有会议的人知道你将重新创建会议。 在转换到使用新的 Teams 帐户参加会议时，如果缺少应加入会议的人，请与他们联系以确保他们尚未加入旧会议链接。
+设置新的Microsoft Teams帐户后，可以在日历中重新创建Teams会议。 请记住，删除旧用户帐户中的原始Teams会议。 这将允许你访问更丰富的功能，例如，计划时日历可用性以及录制会议的功能。 只能从自己的日历中删除会议Teams日历，因此请确保让有会议的人知道你将重新创建会议。 在转换以将新的 Teams 帐户用于会议时，如果缺少应加入会议的人，请与他们联系以确保他们尚未加入旧会议链接。
 
 ### <a name="migrating-contacts"></a>迁移联系人
 

@@ -1,5 +1,5 @@
 ---
-title: 针对企业测试环境Microsoft 365全局管理员帐户
+title: 在企业测试环境中Microsoft 365全局管理员帐户
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -9,28 +9,28 @@ ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用这些步骤来保护企业测试环境中Microsoft 365管理员帐户。
-ms.openlocfilehash: d9de3cb42a7473167c5e8c6dda5489aca2241909
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e529304b9f897e4cac7a0cec5f32821b88cd297d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196101"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195313"
 ---
-# <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>针对企业测试环境Microsoft 365全局管理员帐户
+# <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>在企业测试环境中Microsoft 365全局管理员帐户
 
-*本测试实验室指南仅适用于企业Microsoft 365测试环境。*
+*本测试实验室指南只能用于Microsoft 365测试环境。*
 
 您可以通过确保管理员帐户尽可能安全来防止对组织的数字攻击。 
 
-本文介绍如何使用 Azure AD Azure Active Directory (条件) 保护全局管理员帐户。
+本文介绍如何使用 Azure AD Azure Active Directory (条件访问) 保护全局管理员帐户。
 
-在企业测试环境中Microsoft 365全局管理员帐户包括两个阶段：
+在企业测试Microsoft 365中保护全局管理员帐户包括两个阶段：
 - [第 1 阶段：构建Microsoft 365测试环境](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [阶段 2：配置条件访问策略](#phase-2-configure-conditional-access-policies)
 
@@ -52,7 +52,7 @@ ms.locfileid: "59196101"
 
 首先，创建一个新的用户帐户作为专用全局管理员。
 
-1. 在单独的选项卡上[，打开](https://admin.microsoft.com/)Microsoft 365 管理中心。
+1. 在单独的选项卡上[，打开Microsoft 365 管理中心](https://admin.microsoft.com/)。
 2. 选择 **"用户**  >  **""** 活动用户"，然后选择"**添加用户"。**
 3. 在"**添加用户"** 窗格中，在"名字"、"显示名称"和"用户名"框中输入 **DedicatedAdmin。** 
 4. 选择 **"密码****"，选择"允许我创建密码**"，然后输入强密码。 在安全位置记录此新帐户的密码。
@@ -63,7 +63,7 @@ ms.locfileid: "59196101"
 
 接下来，创建一个名为 GlobalAdmins 的新组，并添加 DedicatedAdmin 帐户。
 
-1. 在 **"Microsoft 365 管理中心"** 选项卡上 **，选择左侧** 导航中的"组"，然后选择"组 **"。**
+1. 在 **"Microsoft 365 管理中心"** 选项卡上，选择左侧导航中的"组"，然后选择"组 **"。**
 2. 选择 **"添加组"。**
 3. 在"**选择组类型"窗格中**，选择"**安全性"，** 然后选择"下一 **步"。**
 4. 在"**设置基础知识"窗格中**，选择"**创建组**"，然后选择"关闭 **"。**

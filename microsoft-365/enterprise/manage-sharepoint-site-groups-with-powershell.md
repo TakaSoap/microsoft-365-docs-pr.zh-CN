@@ -7,7 +7,7 @@ ms.date: 12/17/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 本文将介绍使用 PowerShell for Microsoft 365管理 SharePoint Online 网站组的过程。
-ms.openlocfilehash: 975c6ee7e1b3d62bf5a4c06791ed510b8fa61c31
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 26ac87fe258e0340e95be0e83710f7810bc437a8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201314"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195373"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 网站用户组
 
@@ -33,7 +33,7 @@ ms.locfileid: "59201314"
 
 尽管您可以使用 Microsoft 365 管理中心，但您也可以使用 PowerShell for Microsoft 365管理 SharePoint Online 网站组。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 本文中的过程需要您连接到 SharePoint Online。 有关说明，请参阅[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
 
@@ -41,8 +41,8 @@ ms.locfileid: "59201314"
 
 SharePoint Online 管理中心提供一些易于使用的方法来管理网站组。 例如，假设您要查看网站的组和 `https://litwareinc.sharepoint.com/sites/finance` 组成员。 下面是您必须执行以下工作：
 
-1. 从SharePoint管理中心，单击 **"活动网站**"，然后单击网站的 URL。
-2. 在网站页面上，单击位于设置右上角 ("网站"图标，) "网站 **权限"。**
+1. 从SharePoint管理中心，单击 **"活动站点**"，然后单击网站的 URL。
+2. 在网站页面上，单击 **设置位于 (** 右上角的"网站"图标，) "网站 **权限"。**
 
 然后对您要查看的下一个网站重复此过程。
 
@@ -74,7 +74,7 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 这些是为网站创建的所有组，以及 `https://litwareinc.sharepoint.com/sites/finance` 分配给这些组的所有用户。 组名为黄色，以帮助你从其成员中辨别组名。
 
-另一个示例是，下面是一个命令集，用于列出所有联机网站的所有组SharePoint成员身份。
+另一个示例是，下面是一个命令集，用于列出所有 SharePoint Online 网站的组和组成员身份。
 
 ```powershell
 $x = Get-SPOSite

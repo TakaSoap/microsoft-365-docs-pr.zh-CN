@@ -1,5 +1,5 @@
 ---
-title: '使用 Outlook、Yahoo、Gmail 或其他用户帐户接受Microsoft 365 商业标准版订阅组织的电子邮件 (用户) '
+title: '使用 Microsoft 365 商业标准版、Yahoo、Gmail 或其他用户帐户接受Outlook组织的电子邮件邀请 (用户) '
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -8,19 +8,20 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-description: 接受电子邮件邀请，以使用 Microsoft 365 商业标准版、Yahoo、Gmail 或其他帐户Outlook组织。
-ms.openlocfilehash: 7bbf6565b71be3c6741f9b6637599560550497e9
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: 接受电子邮件邀请，以使用 Microsoft 365 商业标准版、Yahoo、Gmail Outlook帐户加入组织。
+ms.openlocfilehash: 2faea6a0d9089eb1a9f42d3d52bc877636ead50a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774372"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196117"
 ---
-# <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>使用 Outlook、Yahoo、Gmail 或其他用户帐户接受Microsoft 365 商业标准版订阅组织的电子邮件 (用户) 
+# <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>使用 Microsoft 365 商业标准版、Yahoo、Gmail 或其他用户帐户接受Outlook组织的电子邮件邀请 (用户) 
 
 当有人将你添加到Microsoft 365组织时，你收到包含如何加入的步骤的电子邮件邀请。 在此方案中，你加入的组织没有针对用户的不同专业电子邮件。 你将使用常规电子邮件帐户登录。
 
@@ -53,7 +54,7 @@ ms.locfileid: "59774372"
 
 ### <a name="the-webpage-is-asking-me-to-agree-that-my-business-has-access-to-my-name-sign-in-and-other-information--what-does-that-mean"></a>网页要求我同意我的企业有权访问我的姓名、登录和其他信息- 这是什么意思？
 
-几乎所有情况下，你的技术管理员无法访问你保存到 Microsoft 365 云 (OneDrive、Teams) 使用 Gmail、Outlook、Yahoo 或其他电子邮件帐户的任何文档和聊天。 您拥有您的文档和聊天。
+在几乎所有情况下，你的技术管理员无法访问你使用 Gmail、Outlook、Yahoo 或其他电子邮件帐户保存到 Microsoft 365 云 (OneDrive、Teams) 的任何文档和聊天。 您拥有您的文档和聊天。
 
 但是，作为设置 Microsoft 365 业务的一部分，你同意你的技术管理员将有权访问有限数量的帐户信息，特别是你的帐户信息，例如你的姓名、个人资料图片、电子邮件地址以及你的登录详细信息和活动。
 
@@ -84,7 +85,7 @@ ms.locfileid: "59774372"
 
 联系我们的小型企业支持专家，他们可以帮助你升级你的Microsoft 365订阅。 有关详细信息，请 [获取支持](../../business-video/get-help-support.md)。
 
-### <a name="the-gmail-outlook-yahoo-or-other-email-account-that-im-using-as-a-microsoft-account-already-has-some-personal-files-in-it-can-the-technical-administrator-or-business-owner-see-these"></a>我Outlook Microsoft 帐户的 Gmail、Outlook、Yahoo 或其他电子邮件帐户中已包含一些个人文件。 技术管理员或企业所有者能否看到这些？
+### <a name="the-gmail-outlook-yahoo-or-other-email-account-that-im-using-as-a-microsoft-account-already-has-some-personal-files-in-it-can-the-technical-administrator-or-business-owner-see-these"></a>我Outlook Microsoft 帐户的 Gmail、microsoft 帐户、Yahoo 或其他电子邮件帐户中已包含一些个人文件。 技术管理员或企业所有者能否看到这些？
 
 **否**。 管理员无法访问保存在 Microsoft 365 云 (OneDrive、Teams) 旧 Gmail、Outlook、Yahoo 或其他电子邮件帐户下的任何文档或聊天。   您拥有您的文档和聊天。
 
@@ -94,6 +95,6 @@ ms.locfileid: "59774372"
 
 否，您仍可以像以前一样以相同方式登录。
 
-### <a name="how-can-i-send-and-receive-emails-with-microsoft-365-business"></a>如何通过商业组织发送和接收Microsoft 365电子邮件？
+### <a name="how-can-i-send-and-receive-emails-with-microsoft-365-business"></a>如何通过 Microsoft 365 Business 发送和接收电子邮件？
 
 你仍将使用 Gmail、Outlook Yahoo 或其他电子邮件帐户。  可以像以前一样在浏览器中继续访问电子邮件。 为了获得最佳体验，[请将这些电子邮件帐户连接到 Microsoft Outlook。](https://support.microsoft.com/office/add-an-email-account-to-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b)

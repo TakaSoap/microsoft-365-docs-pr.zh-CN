@@ -2,15 +2,13 @@
 title: JAMF 的设备控制策略示例
 description: 了解如何使用可以使用 JAMF 的示例使用设备控制策略。
 keywords: microsoft， defender， 终结点， 适用于终结点的 Microsoft Defender， mac， 设备， 控制， usb， 可移动， 媒体， jamf
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e85a3728213af4fdb47dbfb47e40af8894a0effc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c7306782d62f91cea528a70ff0c3754085d0d3c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170482"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195241"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>JAMF 的设备控制策略示例
 

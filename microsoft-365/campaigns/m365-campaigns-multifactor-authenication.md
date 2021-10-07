@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置多重身份验证。
-ms.openlocfilehash: 81a6ff75cfa5ea0250962f3e21da7890ed795ccb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 60e44b28a235dc3dfca82c05e567fcedbb3f7d68
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170793"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195877"
 ---
 # <a name="set-up-multifactor-authentication-on-your-mobile-device"></a>在移动设备上设置多重身份验证
 
@@ -37,8 +37,8 @@ ms.locfileid: "59170793"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-有关详细信息，请参阅在 Microsoft 365[中设置多重Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+有关详细信息[，请参阅在](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)Microsoft 365
 
-## <a name="use-the-outlook-app-in-your-devices"></a>在Outlook应用
+## <a name="use-the-outlook-app-in-your-devices"></a>在Outlook应用中使用应用
 
-在管理员要求你使用 MFA 并且你已设置验证器应用作为第二种形式的身份验证后，我们建议你安装并仅使用 Outlook 应用来访问 Microsoft 365 电子邮件。 请参阅[设置移动设备，](../business/set-up-mobile-devices.md)了解如何在手机上Office应用，Outlook移动设备。
+在你的管理员要求你使用 MFA 并且你已设置验证器应用作为第二种形式的身份验证后，我们建议你安装并仅使用 Outlook 应用来访问 Microsoft 365 电子邮件。 请参阅[设置移动设备，](../business/set-up-mobile-devices.md)了解如何在手机上Office应用，Outlook移动设备。

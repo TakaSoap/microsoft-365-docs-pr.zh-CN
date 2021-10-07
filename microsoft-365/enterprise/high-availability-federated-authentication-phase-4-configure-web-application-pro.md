@@ -7,23 +7,23 @@ ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 摘要：为 web 应用程序中的 web 应用程序代理服务器配置高可用性Microsoft 365联合Microsoft Azure。
-ms.openlocfilehash: 17efeb414208afac9ce9dcb0b7136a4c962a0268
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea50a48fe4bebd997ecf6b472a60e57772bf2b0f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162371"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195397"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性联合身份验证阶段 4：配置 Web 应用程序代理
 
-在部署 Azure 基础结构服务中Microsoft 365身份验证的这一阶段，将创建一个内部负载平衡器以及两个 AD FS 服务器。
+在部署 Azure 基础结构服务中Microsoft 365身份验证的这一阶段，创建一个内部负载平衡器以及两个 AD FS 服务器。
   
 必须先完成此阶段，然后才能进入阶段[5：为](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)Microsoft 365 配置联合身份验证。 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
   
@@ -64,13 +64,13 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
   
 在拥有联合身份验证服务 FDQN 之后，创建联合身份验证服务 FDQN 的公用 DNS 域 A 记录，该完全限定的域名可解析为面向 Internet 的 Azure 负载均衡器的公用 IP 地址。
   
-|**名称**|**类型**|**TTL**|**值**|
+|**Name**|**类型**|**TTL**|**值**|
 |:-----|:-----|:-----|:-----|
 |联合身份验证服务 FDQN  <br/> |A  <br/> |3600  <br/> |面向 Internet 的 Azure 负载均衡器的公用 IP 地址（通过上一节中的 **Write-Host** 命令显示) <br/> |
    
 下面是一个示例：
   
-|**名称**|**类型**|**TTL**|**值**|
+|**Name**|**类型**|**TTL**|**值**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -160,7 +160,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 ## <a name="next-step"></a>后续步骤
 
-使用[阶段 5：为用户配置Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)以继续配置此工作负载。
+使用[阶段 5：为](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)Microsoft 365配置联合身份验证以继续配置此工作负荷。
   
 ## <a name="see-also"></a>另请参阅
 

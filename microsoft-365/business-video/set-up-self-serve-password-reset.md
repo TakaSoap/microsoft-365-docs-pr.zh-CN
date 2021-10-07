@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何让用户在 Microsoft 365 商业高级版 中重置Microsoft 365 商业高级版。
-ms.openlocfilehash: 815c35098253f7286a1ab99ad99cb0d23009473c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解如何让用户在 Microsoft 365 商业高级版 中重置自己的Microsoft 365 商业高级版。
+ms.openlocfilehash: b593421946488200b0df25929a1e302204456a5f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196160"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195925"
 ---
 # <a name="set-up-self-service-password-reset"></a>设置自助式密码重置
 
@@ -46,7 +46,7 @@ ms.locfileid: "59196160"
 
 ## <a name="related-content"></a>相关内容
 
-[设置组织的密码过期策略， (](/microsoft-365/admin/manage/set-password-expiration-policy) 文章) 
+[为组织设置密码过期策略， (](/microsoft-365/admin/manage/set-password-expiration-policy) 文章) 
 
 [将个人用户密码设置为永不过期](/microsoft-365/admin/add-users/set-password-to-never-expire)（文章）
 

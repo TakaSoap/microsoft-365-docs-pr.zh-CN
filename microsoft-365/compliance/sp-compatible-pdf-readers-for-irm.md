@@ -9,7 +9,7 @@ ms.date: 1/5/2017
 audience: End User
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - OSU150
@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: dd197d58-5bf6-4d18-b9f8-d16db603fae2
 description: 了解信息权限管理 (IRM) 如何保护上载到 Microsoft SharePoint 2013 中受 IRM 保护的库并下载的 PDF 文档。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e1e5516e3eca1043715a7d553488b8ea4004137677a0064767e1e62eddde8ac3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 70bc0979aca31a735e2c4eb7bfd79e70b2d80b09
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807596"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195517"
 ---
 # <a name="sharepoint-compatible-pdf-readers-that-support-microsoft-information-rights-management-services"></a>SharePoint-Compatible Microsoft 信息权限管理服务的 PDF 阅读器
 
-Microsoft SharePoint 2013 支持信息权限管理 (IRM) 保护 PDF 文档。 借助该支持，用户可以将 PDF 文档上载到受 IRM 保护的库中，下载后，这些文件将Microsoft Office IRM。
+Microsoft SharePoint 2013 支持信息权限管理 (IRM) PDF 文档的保护。 借助该支持，用户可以将 PDF 文档上载到受 IRM 保护的库中，下载后，这些文件将Microsoft Office IRM。
   
 若要使用所有者使用 IRM 保护的库中的 PDF 文件，用户需要获取以下 PDF 兼容读者之一：
   

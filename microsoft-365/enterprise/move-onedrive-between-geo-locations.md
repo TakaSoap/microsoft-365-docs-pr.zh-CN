@@ -13,22 +13,22 @@ ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 查找有关将OneDrive网站移动到其他地理位置的信息，包括如何计划站点移动和向用户传达预期。
-ms.openlocfilehash: 50c23555a91aecfbbaf6aa30bae2c3a741a18c45
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 232654ac0cea95fee6dfef036ecb87768e5768d9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196105"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195349"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>将 OneDrive 站点移动到其他地理位置 
 
-通过OneDrive移动，你可以将用户OneDrive移动到其他地理位置。 OneDrive由联机管理员或全局SharePoint执行Microsoft 365移动。 在开始异OneDrive移动之前，请务必通知OneDrive移动的用户，并建议他们在移动期间关闭所有文件。  (如果用户在移动过程中使用 Office 客户端打开了一个文档，那么移动完成后，文档将需要保存到新位置。) 如果需要，可以将移动安排在将来的时间。
+通过OneDrive移动，你可以将用户OneDrive移动到其他地理位置。 OneDrive由 SharePoint Online 管理员或全局管理员Microsoft 365移动。 在开始异地OneDrive移动之前，请务必通知OneDrive移动的用户，并建议他们在移动期间关闭所有文件。  (如果用户在移动过程中使用 Office 客户端打开了一个文档，那么在移动完成时，文档将需要保存到新位置。) 如果需要，可以将移动安排在将来的时间。
 
-服务OneDrive Azure Blob 存储存储内容。 与存储关联的 OneDrive blob 将在目标地理位置可供用户使用的 40 天内OneDrive目标地理位置。 一旦目标 OneDrive可用，将恢复OneDrive的访问权限。
+该OneDrive服务使用 Azure Blob 存储存储内容。 存储与用户的 OneDrive 关联的 blob 将在目标地理位置可供用户使用的 40 天内OneDrive目标地理位置。 一旦目标 OneDrive可用，将恢复对OneDrive的访问权限。
 
-在OneDrive移动窗口 (大约 2-6) 用户的移动OneDrive设置为只读。 用户仍可通过 OneDrive 同步 应用或 OneDrive Online SharePoint文件。 完成OneDrive移动后，当用户导航到 Microsoft 365 应用启动器中的 OneDrive 时，他们将自动连接到目标地理位置的 OneDrive。 同步应用将自动从新位置开始同步。
+在OneDrive移动窗口 (大约 2-6) 用户的移动OneDrive设置为只读。 用户仍可通过 OneDrive 同步 应用或 OneDrive Online SharePoint文件。 完成OneDrive OneDrive移动后，当用户导航到 OneDrive 应用启动器中的 OneDrive 时，该用户将自动连接到目标地理位置的 Microsoft 365。 同步应用将自动从新位置开始同步。
 
 执行本文中的步骤需要安装 [Microsoft SharePoint Online PowerShell 模块](https://www.microsoft.com/download/details.aspx?id=35588)。
 
@@ -108,7 +108,7 @@ ms.locfileid: "59196105"
 
 ## <a name="cancel-a-onedrive-geo-move"></a>取消 OneDrive 异地移动 
 
-如果移动尚未完成或尚未完成，可以使用 cmdlet 停止OneDrive移动的用户移动：
+如果移动未进行或OneDrive cmdlet，可以停止用户移动的地理位置移动：
 
 `Stop-SPOUserAndContentMove – UserPrincipalName <UserPrincipalName>`
 
@@ -116,7 +116,7 @@ ms.locfileid: "59196105"
 
 ## <a name="determining-current-status"></a>确定当前状态
 
-可以通过使用 OneDrive cmdlet 检查你连接到的地理位置Get-SPOUserAndContentMoveState状态。
+可以使用 OneDrive cmdlet 检查你连接到的地理位置Get-SPOUserAndContentMoveState状态。
 
 下表描述了这些移动状态。
 
@@ -167,13 +167,13 @@ ms.locfileid: "59196105"
 
 ### <a name="permissions-on-onedrive-content"></a>OneDrive 内容权限
 
-在移动过程中OneDrive完成之后，有权访问内容的用户将继续具有该内容的访问权限。
+在移动过程中OneDrive内容完成后，有权访问内容的用户将继续具有该内容的访问权限。
 
 ### <a name="onedrive-sync-app"></a>OneDrive 同步应用 
 
 一OneDrive 同步异地移动完成后，OneDrive自动检测同步并无缝OneDrive转移到新位置。 用户无需再次登录或执行任何其他操作。   (需要同步应用的版本 17.3.6943.0625 或) 
 
-如果用户在进行异地移动OneDrive更新文件，则同步应用将通知他们在移动进行时文件上载挂起。
+如果用户在异地移动OneDrive更新文件，则同步应用将在移动进行时通知用户文件上传挂起。
 
 ### <a name="sharing-links"></a>共享链接 
 
@@ -193,7 +193,7 @@ OneDrive 异地移动完成后，OneNote win32 客户端和 UWP（通用）应�
 
 在 OneDrive 异地移动完成后，用户将可以访问其在 Teams 应用上的 OneDrive 文件。此外，在异地移动前通过 Teams 聊天从其 OneDrive 中共享的文件将可在移动完成后继续使用。
 
-### <a name="onedrive-mobile-app-ios"></a>OneDriveiOS (移动应用)  
+### <a name="onedrive-mobile-app-ios"></a>OneDrive移动应用 (iOS)  
 
 在 OneDrive 异地移动完成后，用户需要在 iOS 移动应用上注销并重新登录，以同步到新的 OneDrive 位置。
 
@@ -203,4 +203,4 @@ OneDrive 异地移动完成后，OneNote win32 客户端和 UWP（通用）应�
 
 ### <a name="delve-geo-url-updates"></a>Delve地理位置 URL 更新
 
-只有在用户的 PDL Delve移动到新地理位置后，用户OneDrive发送到相应的地理位置。
+只有在用户的 PDL Delve移动到新地理位置后，用户OneDrive地理位置。

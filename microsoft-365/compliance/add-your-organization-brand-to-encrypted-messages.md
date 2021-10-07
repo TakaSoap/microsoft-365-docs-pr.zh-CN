@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 4/1/2020
 search.appverid:
 - MET150
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-jun2020
 - admindeeplinkMAC
 description: 了解Office 365管理员如何将组织的品牌应用于加密电子邮件&加密门户的内容。
-ms.openlocfilehash: 87f6ffe0eed66e6cac329e71ad923355233eb657
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 063a46c94578cbd3cd01184d25086d5246da3fa8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171392"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195769"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>向企业邮件加密加密邮件Microsoft 365组织品牌
 
@@ -59,7 +59,7 @@ ms.locfileid: "59171392"
 
 - 是否希望发送给外部收件人的电子邮件在指定的天数后过期。
 
-创建模板后，可以使用自定义邮件流规则将其应用于加密Exchange电子邮件。 如果已Office 365 高级邮件加密，可以撤销使用这些模板打造品牌的任何电子邮件。
+创建模板后，可以使用自定义邮件流规则将其应用于加密Exchange电子邮件。 如果已Office 365 高级邮件加密，可以撤消使用这些模板打造品牌的任何电子邮件。
 
 ## <a name="work-with-ome-branding-templates"></a>使用 OME 品牌模板
 
@@ -75,7 +75,7 @@ ms.locfileid: "59171392"
 
 1. 使用在组织中具有全局管理员权限的工作或学校帐户，启动Windows PowerShell会话并连接到Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 按照 [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration) 中所述使用 Set-OMEConfiguration cmdlet，或使用以下图形和表作为指南。
+2. 按照 [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration) 中所述使用 Set-OMEConfiguration cmdlet，或使用以下图形和表作为指导。
 
 ![可自定义的电子邮件部件。](../media/ome-template-breakout.png)
 
@@ -92,7 +92,7 @@ ms.locfileid: "59171392"
 |为此自定义模板启用或禁用一次传递代码的身份验证|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <br/> **示例：** <br/>为此自定义模板启用一次密码 <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> 为此自定义模板禁用一次密码 <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
 |为此自定义模板启用或禁用 Microsoft、Google 或 Yahoo 标识的身份验证|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <br/> **示例：** <br/>为此自定义模板启用社交 ID <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> 为此自定义模板禁用社交 ID <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
-## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>使用高级邮件加密功能创建 OME (模板) 
+## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>使用高级邮件加密 (OME 品牌模板) 
 
 如果已Office 365 高级邮件加密，可以使用[New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) cmdlet 为组织创建自定义品牌模板。 创建模板后，使用 Set-OMEConfiguration cmdlet 修改模板，如修改 [OME 品牌模板 中所述](#modify-an-ome-branding-template)。 可以创建多个模板。
 
@@ -163,13 +163,13 @@ ms.locfileid: "59171392"
 
 - 如果电子邮件是由邮件流规则或数据丢失Exchange自动加密的
 
-若要了解如何创建应用加密Exchange邮件流规则，请参阅 Define [mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md)。
+若要了解如何创建应用加密Exchange邮件流规则，请参阅定义邮件流规则以加密电子邮件[Office 365。](define-mail-flow-rules-to-encrypt-email.md)
 
 1. 在 Web 浏览器中，使用已被授予全局管理员权限的工作或学校帐户登录[Office 365。](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)
 
 2. 选择" **管理"** 磁贴。
 
-3. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心"</a>中，选择"**管理中心** \> **Exchange"。**
+3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心，</a>choose **Admin centers** \> **Exchange**.
 
 4. 在 EAC 中，**转到"邮件** 流 \> ""规则"，然后选择 **"新建"** ![ 图标。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**创建新规则**。 有关使用 EAC 的信息，请参阅 Exchange[中的管理Exchange Online。](/exchange/exchange-admin-center)
 
@@ -185,7 +185,7 @@ ms.locfileid: "59171392"
 
 8.  (可选) 您可以配置邮件流规则以应用加密和自定义品牌。 From **Do the following，** select **Modify the message security**， and then choose Apply Office 365 邮件加密 and **rights protection**. 从列表中选择 RMS 模板，选择"保存 **"，** 然后选择"确定 **"。**
   
-   模板列表包括默认模板和选项以及您创建的任何自定义模板。 如果列表为空，请确保你已设置Office 365 邮件加密新功能。 有关说明，请参阅[设置新的Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。 有关默认模板的信息，请参阅 [配置和管理 Azure 信息保护的模板](/information-protection/deploy-use/configure-policy-templates)。 有关"不要转发 **"选项的信息** ，请参阅电子邮件 [的"不要转发"选项](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。 有关仅加密 **选项** 的信息，请参阅 [加密仅电子邮件选项](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
+   模板列表包括默认模板和选项以及您创建的任何自定义模板。 如果列表为空，请确保你已Office 365 邮件加密新功能进行设置。 有关说明，请参阅[设置新的Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。 有关默认模板的信息，请参阅 [配置和管理 Azure 信息保护的模板](/information-protection/deploy-use/configure-policy-templates)。 有关"不要转发 **"选项的信息** ，请参阅电子邮件 [的"不要转发"选项](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。 有关仅加密 **选项** 的信息，请参阅 [加密仅电子邮件选项](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
 
    如果要 **指定其他** 操作，请选择"添加操作"。
 

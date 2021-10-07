@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用租户切换器视图和多租户视图，这让你能够从单个位置管理租户。
-ms.openlocfilehash: 78ab8be76d02b813ee81fe444c97d1451375e4ee
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: d30d352376bb10e142d478e21ddd550577f536ca
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786247"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195169"
 ---
 # <a name="multi-tenant-management"></a>多租户管理
 
@@ -49,7 +49,7 @@ ms.locfileid: "59786247"
 
 ## <a name="view-all-tenants-page"></a>查看所有租户页面
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心"</a>左侧导航中，选择"**所有租户"。**
+1. 在Microsoft 365 管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">中</a>，在左侧导航中，选择"**所有租户"。**
 - 在 **"所有租户"** 页面上，可以
   - 评估服务运行状况
   - 查看许可证使用情况
@@ -70,7 +70,7 @@ ms.locfileid: "59786247"
     - 可以在"所有服务" **或"** 所有问题"选项卡 **下查看** 问题。
 
     :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="&quot;多租户服务运行状况&quot;页。":::
-1. 在"所有服务"或"所有问题"选项卡上选择事件，获取有关"概述"选项卡上的任何 **事件** 详细信息。选择 **"受影响的租户"** 选项卡，获取受影响租户的列表。
+1. 选择"所有服务"或"所有问题"选项卡上的事件，获取有关"概述"选项卡上的任何 **事件** 详细信息。选择 **"受影响的租户"** 选项卡，获取受影响租户的列表。
 
     :::image type="content" source="../../media/tenantsaffected.png" alt-text="受服务运行状况问题影响的租户列表。":::
 
@@ -78,7 +78,7 @@ ms.locfileid: "59786247"
 
 ## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>查看租户中的单个Microsoft 365 管理中心
 
-你可以从"所有Microsoft 365 管理中心"页面返回任意 **租户的** 租户列表。
+你可以从"所有Microsoft 365 管理中心"页面返回任意租户 **的** 租户列表。
 
 1. 在 **"所有租户"** 页面上，选择要查看其管理中心的租户名称。
 2. 你将定向到该租户的管理中心。
