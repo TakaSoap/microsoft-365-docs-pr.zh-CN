@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: 数据丢失防护的规划过程概述
-ms.openlocfilehash: 130675ad15a872ed14041289fb24aeec471014ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 144f07a75bc7ab2ae5cd06b04328f91f06c9a91f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175545"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201897"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>规划 DLP (数据丢失) 
 
@@ -28,7 +28,7 @@ ms.locfileid: "59175545"
 
 ## <a name="multiple-starting-points"></a>多个起点
 
-许多组织选择实施 DLP 以遵守各种政府或行业法规。 例如，欧盟的一般数据保护条例 (GDPR) 、健康保险可移植性和责任法案 (HIPAA) 或加州消费者隐私法案 (CCPA) 。 它们还实施数据丢失防护来保护其知识产权。 但是 DLP 旅程中的起始位置和最终目的地有所不同。 
+许多组织选择实施 DLP 以遵守各种政府或行业法规。 例如，欧盟的一般数据保护条例 (GDPR) 、《健康保险便利和责任法》 (HIPAA) 或加州消费者隐私法案 (CCPA) 。 它们还实施数据丢失防护来保护其知识产权。 但是 DLP 旅程中的起始位置和最终目的地有所不同。 
 
 组织可以开始其 DLP 旅程：
 
@@ -36,7 +36,7 @@ ms.locfileid: "59175545"
 - 了解他们希望优先保护哪些敏感信息（如医疗保健记录）并直接定义保护策略
 - 在不知道敏感信息是什么、敏感信息位于何处以及谁对敏感信息执行哪些操作的情况下，他们从发现和分类开始，采取更系统的方法
 - 他们不知道敏感信息是什么、什么位置或谁在使用它做什么，但他们直接进入定义策略，将那些结果用作起点，然后从这些位置优化其策略
-- 知道他们需要实现完整的信息保护Microsoft 365，因此打算采用更长期、有条理的方法
+- 知道他们需要实现信息保护Microsoft 365，因此打算采用更长期、有条理的方法
 
 这些只是客户如何处理 DLP 的一些示例，从何处开始并不重要，Microsoft 365 DLP 足够灵活，足以适应从开始到完全实现的数据丢失防护策略的各种类型的信息保护之旅。 
 
@@ -148,7 +148,7 @@ start small and always in test mode. Note that DLP policies can feed into inside
 - Microsoft Cloud App Security
 - 本地存储库
 
-**示例** 组织的内部审核员正在跟踪一组信用卡号。 它们将其电子表格放在安全的安全SharePoint网站中。 一些员工在网站中复制并OneDrive for Business工作，该网站将同步到Windows 10设备。 其中一个将其中 14 个人的列表粘贴到电子邮件中，并尝试将其发送给外部审核员进行审阅。 您希望将策略应用于安全安全SharePoint、所有内部审核员OneDrive for Business帐户、Windows 10设备以及Exchange电子邮件。
+**示例** 组织的内部审核员正在跟踪一组信用卡号。 它们将其电子表格放在安全的安全SharePoint中。 一些员工会进行复制，并将其保存到工作OneDrive for Business网站，该站点会同步到Windows 10设备。 其中一个将其中 14 个人的列表粘贴到电子邮件中，并尝试将其发送给外部审核员进行审阅。 您希望将策略应用于安全安全SharePoint、所有内部审核员OneDrive for Business帐户、Windows 10设备和Exchange电子邮件。
 
 ##### <a name="what-is-your-organizations-tolerance-for-leakage"></a>组织对泄露的容忍度如何？
 
@@ -162,18 +162,18 @@ start small and always in test mode. Note that DLP policies can feed into inside
 
 - [开始进行本地扫描仪的数据丢失防护（预览）](dlp-on-premises-scanner-get-started.md#before-you-begin)
 - [终结点数据丢失防护入门](endpoint-dlp-getting-started.md#before-you-begin)
-- [Microsoft 合规性扩展预览版 (入门) ](dlp-chrome-get-started.md#before-you-begin)
-- [使用非 Microsoft 云应用数据丢失防护策略 (预览) ](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
+- [Microsoft 合规性扩展和预览版 (入门) ](dlp-chrome-get-started.md#before-you-begin)
+- [对非 Microsoft 云应用使用数据丢失防护策略 (预览) ](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
 
 #### <a name="policy-deployment"></a>策略部署
 
-创建 DLP 策略时，您应考虑逐步部署策略，在完全强制执行策略之前评估其影响，并测试其有效性。 例如，您不希望新的 DLP 策略无意中阻止对成千上万个文档的访问或破坏现有业务流程。
+创建 DLP 策略时，您应考虑逐步部署策略，在完全强制执行策略之前评估其影响，并测试其有效性。 例如，您不希望新的 DLP 策略无意中阻止对数千个文档的访问或破坏现有业务流程。
   
 如果你创建的 DLP 策略具有较大的潜在影响，建议你按以下顺序执行操作：
   
 1. **在不使用策略提示的情况下启动测试模式**，然后使用 DLP 报告和任何事件报告评估影响。 您可以使用 DLP 报告查看匹配策略的次数、位置、类型和严重性。 根据结果，您可以根据需要微调策略。 在测试模式下，DLP 策略不会影响您组织内的工作人员的工作效率。 此外，使用此阶段测试您的工作流，进行 DLP 事件审阅并发出修正。
     
-2. **使用通知和** 策略策略使用技巧移动到测试模式，以便你可以开始向用户学习合规性策略，并为将要应用的策略做好准备。 通过指向组织策略页的链接，在策略提示中提供有关策略的更多详细信息，这非常有用。 在此阶段，您还可以要求用户报告误报，以便可以进一步优化策略。 当您确定策略应用程序的结果与利益干系人牢记的结果一致后，移动到此阶段。 
+2. **使用通知和** 策略策略使用技巧移动到测试模式，以便你可以开始向用户学习合规性策略，并为将要应用的策略做好准备。 通过指向组织策略页的链接，该链接在策略提示中提供有关策略的更多详细信息，这非常有用。 在此阶段，您还可以要求用户报告误报，以便可以进一步优化策略。 一旦确定策略应用程序的结果与利益干系人记住的结果一致，就进入此阶段。 
     
 3. **开始完全强制执行策略**，以便应用规则中的操作，并保护内容。 继续监视 DLP 报告及任何事件报告或通知，确保结果是你所期望的。 
 
@@ -201,7 +201,7 @@ start small and always in test mode. Note that DLP policies can feed into inside
 |---------|---------|
 |**Contoso Bank** 是一个高度管控的行业，在许多不同位置具有许多不同类型的敏感项目。 </br> - 了解敏感信息类型是最高优先级。 </br> - 随着策略的推出，必须最大限度地减少业务中断。 </br> - 具有 IT 资源，可以雇用专家来帮助规划、设计部署 </br> - 与 Microsoft 签订顶级支持合同| - 花时间了解他们必须遵守哪些法规以及如何遵守。 </br> -花时间了解信息保护堆栈的Microsoft 365价值 </br> - 为优先项目制定敏感度标签方案并应用 </br> - 涉及业务流程所有者 </br>- 设计/代码策略，在测试模式下部署，培训用户 </br>- 重复|
 |**TailSpin Toys** 不知道它们是什么或在哪里，并且很少甚至没有资源深度。 它们广泛使用Teams、OneDrive for Business和Exchange应用。     |- 从优先位置的简单策略开始。 </br>- 监视识别哪些项 </br>- 相应地应用敏感度标签 </br>- 优化策略，培训用户       |
-|**Fabrikam** 是一家小型初创公司，希望保护其知识产权，并且必须快速移动。 他们愿意投入一些资源，但无法承受聘用外部专家。 </br>- 敏感项目全部Microsoft 365 OneDrive for Business/SharePoint </br>- 应用OneDrive for Business和SharePoint速度较慢，员工/影子 IT 使用 DropBox 和 Google 驱动器共享/存储项目 </br>- 员工在数据保护规范方面的价值工作速度 </br>- 客户清除并购买所有 18 名员工Windows 10设备     |- 利用默认 DLP 策略Teams </br>- 对项目使用默认设置SharePoint受限 </br>- 部署阻止外部共享的策略 </br>- 将策略部署到优先位置 </br>- 将策略部署到Windows 10设备 </br>- 阻止上载到非OneDrive for Business云存储      |
+|**Fabrikam** 是一家小型初创公司，希望保护其知识产权，并且必须快速移动。 他们愿意投入一些资源，但无法承受聘用外部专家。 </br>- 敏感项目全部Microsoft 365 OneDrive for Business/SharePoint </br>- 应用OneDrive for Business和SharePoint速度较慢，员工/影子 IT 使用 DropBox 和 Google 驱动器来共享/存储项目 </br>- 员工在数据保护规范方面的价值工作速度 </br>- 客户清除并购买所有 18 名员工Windows 10设备     |- 利用默认 DLP 策略Teams </br>- 对项目使用默认设置SharePoint受限 </br>- 部署阻止外部共享的策略 </br>- 将策略部署到优先位置 </br>- 将策略部署到Windows 10设备 </br>- 阻止上载到非OneDrive for Business云存储      |
 
 <!--
 

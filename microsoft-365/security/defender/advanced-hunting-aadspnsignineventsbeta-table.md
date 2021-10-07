@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a148e2fb1cc0e8fb88797b44ee4d08745728aa34
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82557f955626436236401f622de6f2dc19aba9c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196001"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202663"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -33,9 +33,9 @@ ms.locfileid: "59196001"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> 该表当前处于 beta 版本，并短期提供，以便你可以通过 Azure Active Directory (AAD) 服务主体和托管身份登录事件进行 `AADSpnSignInEventsBeta` 搜寻。 我们最终将所有登录架构信息移动到 `IdentityLogonEvents` 表中。
+> 该表当前处于 beta 版本，并短期提供，以允许你通过 Azure Active Directory (AAD) 服务主体和托管身份登录事件 `AADSpnSignInEventsBeta` 进行搜寻。 我们最终将所有登录架构信息移动到 `IdentityLogonEvents` 表中。
 
-高级 `AADSpnSignInEventsBeta` 搜寻架构中的表包含有关Azure Active Directory主体和托管标识登录的信息。可以在登录活动报表 -预览 中了解有关不同类型的Azure Active Directory[的详细信息](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。
+高级 `AADSpnSignInEventsBeta` 搜寻架构中的表包含有关Azure Active Directory主体和托管标识登录的信息。可以在登录活动报表 -预览 中了解有关Azure Active Directory[登录的详细信息](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。
 
 使用此参考来构建从该表返回信息的查询。
 
@@ -49,23 +49,23 @@ ms.locfileid: "59196001"
 |---|---|---|
 |`Timestamp`|datetime|生成记录的日期和时间|
 |`Application`|string|执行录制的操作的应用程序|
-|`ApplicationId`|字符串|应用程序的唯一标识符|
+|`ApplicationId`|string|应用程序的唯一标识符|
 |`IsManagedIdentity`|boolean|指示登录是否由托管标识启动|
 |`ErrorCode`|int|包含登录错误时的错误代码。 若要查找特定错误代码的说明，请访问 <https://aka.ms/AADsigninsErrorCodes> 。|
-|`CorrelationId`|字符串|登录事件的唯一标识符|
-|`ServicePrincipalName`|字符串|启动登录的服务主体的名称|
-|`ServicePrincipalId`|字符串|启动登录的服务主体的唯一标识符|
-|`ResourceDisplayName`|字符串|访问的资源的显示名称|
-|`ResourceId`|字符串|访问的资源的唯一标识符|
-|`ResourceTenantId`|字符串|访问的资源的租户的唯一标识符|
-|`IPAddress`|字符串|分配给终结点的 IP 地址，在相关的网络通信期间使用|
-|`Country`|字符串|指示客户端 IP 地址已异地地理位置的两个字母的代码|
-|`State`|字符串|登录发生的位置（如果可用）|
-|`City`|字符串|帐户用户所在的城市|
-|`Latitude`|字符串|登录位置的北向南部坐标|
-|`Longitude`|字符串|登录位置的从西到西坐标|
-|`RequestId`|字符串|请求的唯一标识符|
-|`ReportId`|字符串|事件的唯一标识符|
+|`CorrelationId`|string|登录事件的唯一标识符|
+|`ServicePrincipalName`|string|启动登录的服务主体的名称|
+|`ServicePrincipalId`|string|启动登录的服务主体的唯一标识符|
+|`ResourceDisplayName`|string|访问的资源的显示名称|
+|`ResourceId`|string|访问的资源的唯一标识符|
+|`ResourceTenantId`|string|访问的资源的租户的唯一标识符|
+|`IPAddress`|string|分配给终结点的 IP 地址，在相关的网络通信期间使用|
+|`Country`|string|指示客户端 IP 地址已异地地理位置的两个字母的代码|
+|`State`|string|登录发生的位置（如果可用）|
+|`City`|string|帐户用户所在的城市|
+|`Latitude`|string|登录位置的北向南部坐标|
+|`Longitude`|string|登录位置的从西到西坐标|
+|`RequestId`|string|请求的唯一标识符|
+|`ReportId`|string|事件的唯一标识符|
 ||||
 
 ## <a name="related-articles"></a>相关文章

@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: aadda22c397839c39e95732b02dcc9d6e681e82f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 568373291a739a5bdedf37dd8b2b74bec590212c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201442"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201393"
 ---
 # <a name="get-recommendation-by-id"></a>按 ID 获取建议
 
@@ -45,7 +45,7 @@ ms.locfileid: "59201442"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|SecurityRecommendation.Read.All|"读取威胁和漏洞管理安全建议信息"
+Application|SecurityRecommendation.Read.All|"读取威胁和漏洞管理安全建议信息"
 委派（工作或学校帐户）|SecurityRecommendation.Read|"读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -58,7 +58,7 @@ GET /api/recommendations/{id}
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|字符串|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e207978dbb65863764c66c5afc5c467552100461
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 89ff7984e009f022984f4004a0195176c68a9bad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201113"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194017"
 ---
 # <a name="advanced-hunting-using-powershell"></a>通过 PowerShell 高级搜寻
 
@@ -40,7 +40,7 @@ ms.locfileid: "59201113"
 
 在此部分中，我们将共享 PowerShell 示例以检索令牌并使用它运行查询。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 首先需要 [创建应用](apis-intro.md)。
 
 ## <a name="preparation-instructions"></a>准备说明
@@ -76,7 +76,7 @@ $aadToken = $response.access_token
 
 其中
 - $tenantId：要代表其运行查询的租户的 ID (即，查询将针对此租户数据运行) 
-- $appId：Azure AD 应用的 ID (应用必须具有 Defender for Endpoint) 
+- $appId：Azure AD 应用的 ID (应用必须拥有对 Defender for Endpoint) 
 - $appSecret：Azure AD 应用机密
 
 ## <a name="run-query"></a>运行查询
@@ -99,12 +99,12 @@ $results = $response.Results
 $schema = $response.Schema
 ```
 
-- $results查询的结果
+- $results包含查询结果
 - $schema包含查询结果的架构
 
 ### <a name="complex-queries"></a>复杂查询
 
-如果要运行复杂查询 (或多行查询) ，请保存文件中查询，而不是上述示例中的第一行，运行以下命令：
+如果要在多行或多 (中运行复杂查询) ，请保存文件中查询，而不是上述示例中的第一行，运行以下命令：
 
 ```
 $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to your file
@@ -120,7 +120,7 @@ $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to yo
 $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
 ```
 
-若要以 JSON 格式以 jSON 格式输出查询结果，file1.js以下操作：
+若要以 JSON 格式输出 file1.json 格式的查询结果，可执行下列操作：
 
 ```
 $results | ConvertTo-Json | Set-Content file1.json

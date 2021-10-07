@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: 按照以下说明创建约会，并通过 Microsoft Bookings 应用分配员工。
-ms.openlocfilehash: 9af9b28eb1f00bfc41dbdff2d7df4111cb8bdd13
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c71a3f96aa79e55c857078aad77a14e37d9009b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171191"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202137"
 ---
 # <a name="create-a-manual-booking"></a>创建手动预订
 
@@ -36,7 +36,7 @@ Bookings 可通过两种不同的方式安排和调配人员。 第一种方式�
 
    ![员工列表 UI 的图像。](../media/bookings-staff-list.png)
 
-1. 输入服务详细信息，包括日期、时间、位置和其他相关信息。 Once you enter a valid email address for the customer， the **Save** button will change to **Send**， and you'll see a note that you that a confirmation will be sent to the customer. 客户确认包括要添加到其日历的附件。 所选员工还将收到包含约会信息的会议邀请，以便可以将其添加到其个人日历中。
+1. 输入服务详细信息，包括日期、时间、位置和其他相关信息。 Once you enter a valid email address for the customer， the **Save** button will change to **Send**， and you'll see a note that you that a confirmation will be sent to the customer. 客户确认包括要添加到其日历的附件。 所选员工还将收到包含约会信息的会议邀请，以便将其添加到其个人日历中。
 
 1. 选择 **"添加电子邮件提醒"。**
 

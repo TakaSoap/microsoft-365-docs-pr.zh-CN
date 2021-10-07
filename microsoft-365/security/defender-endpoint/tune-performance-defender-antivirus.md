@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-smandalika
 author: v-smandalika
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0ceb715549c208ccc7f961c115083c50e56dd526
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 7c61f0fa0ac3e8017a96b9d5ed57fe7ec970af8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400542"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193981"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>性能分析器Microsoft Defender 防病毒
 
@@ -43,7 +43,7 @@ ms.locfileid: "59400542"
 1. 运行性能分析器以收集终结点上Microsoft Defender 防病毒事件的性能记录。
 
    > [!NOTE]
-   > Microsoft **Microsoft Defender 防病毒-Antimalware-Engine** 类型的事件的性能通过性能分析器进行记录。
+   > **Microsoft-antimalware-Engine** 类型的 Microsoft Defender 防病毒 事件的性能通过性能分析器进行记录。
 
 2. 使用不同的录制报告分析扫描结果。
 
@@ -70,7 +70,7 @@ ms.locfileid: "59400542"
 
 ### <a name="performance-tuning-data-and-information"></a>性能优化数据和信息
 
-基于查询，用户将能够查看扫描计数、持续时间 (总/分钟/平均/最大值/中值) 、路径、进程和扫描原因的数据。 下图显示了扫描影响前 10 个文件的简单查询的示例输出。 
+根据查询，用户将能够查看扫描计数、持续时间 (总/分钟/平均/最大值/中值) 、路径、进程和扫描原因的数据。 下图显示了扫描影响前 10 个文件的简单查询的示例输出。 
 
 :::image type="content" source="images/example-output.png" alt-text="基本 TopFiles 查询的示例输出":::
 
@@ -412,7 +412,7 @@ Accept wildcard characters: False
 
 
 ### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess 
-指定每个顶部进程每个顶部文件的输出（按"持续时间"排序）的顶级扫描次数。
+指定每个顶部进程每个顶部文件的输出的顶级扫描次数，按"持续时间"排序。
 
 
 ```yaml

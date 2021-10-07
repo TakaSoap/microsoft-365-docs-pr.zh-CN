@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 10ec4562063c7352b337cdb6f5d11b76985ae19d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3bc58ec36775065b03ab368b65b833bc4ccaad5c
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159218"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217074"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>解决订阅和门户访问问题
 
@@ -44,7 +44,7 @@ ms.locfileid: "60159218"
 - Windows E5 和 Office E5 许可证是分开的。
 - 许可证已购买，但没有预配到此 Azure AD 实例。
   - 这可能是许可证预配问题。
-  - 这可能是您无意中将许可证预配到与Microsoft Azure AD身份验证所使用的许可证不同的证书。
+  - 可能是您无意中将许可证预配到与用于Microsoft Azure AD身份验证的许可证不同。
 
 对于这两种情况，你应联系 Microsoft 支持部门，地址为 [适用于终结点的一](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) 般 Microsoft Defender 或 [批量许可证支持](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)。
 
@@ -74,7 +74,7 @@ ms.locfileid: "60159218"
 
 ![数据图像当前不可用。](images/atp-data-not-available.png)
 
-你需要允许 及其下的所有 `security.windows.com` 子域。 例如，`*.security.windows.com`。
+你需要在 Web 浏览器上允许 及其 `security.windows.com` 下的所有子域。 例如，`*.security.windows.com`。
 
 ## <a name="portal-communication-issues"></a>门户通信问题
 

@@ -1,6 +1,6 @@
 ---
 title: DeviceFromIP () 高级搜寻功能Microsoft 365 Defender
-description: 了解如何使用 DeviceFromIP () 函数获取已分配特定 IP 地址的设备
+description: 了解如何使用 DeviceFromIP () 函数获取已分配了特定 IP 地址的设备
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 设备， devicefromIP， 函数， 扩充
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3ea951e35555721a989001b2a5235df5b89a8a55
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f472b42a5ce967e67c4b4cbe3511e493ac86d42c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162224"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208465"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -43,7 +43,7 @@ ms.locfileid: "59162224"
 
 此函数返回具有以下列的表：
 
-| 列 | 数据类型 | 说明 |
+| Column | 数据类型 | 说明 |
 |------------|-------------|-------------|
 | `IP` | string | IP 地址  |
 | `DeviceId` | string | 服务中设备的唯一标识符 |

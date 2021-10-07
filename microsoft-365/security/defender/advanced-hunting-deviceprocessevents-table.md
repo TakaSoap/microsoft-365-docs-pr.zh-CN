@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceProcessEvents 表
 description: 了解高级搜寻架构的 DeviceProcessEventstable 中生成或创建事件的过程
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， processcreationevents， DeviceProcessEvents， 进程 ID， 命令行， DeviceProcessEvents
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， processcreationevents， DeviceProcessEvents， process id， 命令行， DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b5e57fec83217c8df00d333bb4c71f375cac23bb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b034b4aea611e94268a85b4aa4963b76379b9c09
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162211"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202651"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -65,7 +65,7 @@ ms.locfileid: "59162211"
 | `ProcessVersionInfoFileDescription` | string | 新创建的过程的版本信息中的说明 |
 | `ProcessId` | int | 新 (的进程) PID 进程 ID |
 | `ProcessCommandLine` | string | 用于创建新过程的命令行 |
-| `ProcessIntegrityLevel` | string | 新创建的过程的完整性级别。 Windows根据某些特征（例如是否从下载的 Internet 启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
+| `ProcessIntegrityLevel` | string | 新创建的过程的完整性级别。 Windows某些特征（例如是否从下载的 Internet 启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
 | `ProcessTokenElevation` | string | 指示应用于新创建进程的令牌提升的类型。 可能的值：TokenElevationTypeLimited (restricted) 、TokenElevationTypeDefault (standard) 和 TokenElevationTypeFull (提升)  |
 | `ProcessCreationTime` | datetime | 创建过程的日期和时间 |
 | `AccountDomain` | string | 帐户的域 |
@@ -77,27 +77,27 @@ ms.locfileid: "59162211"
 | `InitiatingProcessAccountDomain` | string | 运行负责事件的进程的帐户的域 |
 | `InitiatingProcessAccountName` | string | 运行负责事件的进程的帐户的用户名 |
 | `InitiatingProcessAccountSid` | string | 安全 (SID) 运行负责事件的进程的帐户的 SID 标识符 |
-| `InitiatingProcessAccountUpn` | string | 用户主体 (UPN) 负责事件的进程的帐户的名称 |
+| `InitiatingProcessAccountUpn` | string | 用户主体 (UPN) 运行负责事件的进程的帐户的名称 |
 | `InitiatingProcessAccountObjectId` | string | 运行负责事件的进程的用户帐户的 Azure AD 对象 ID |
 | `InitiatingProcessLogonId` | string | 启动事件的进程的登录会话的标识符。 此标识符仅在重新启动之间在同一计算机上是唯一的。 |
-| `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows根据某些特征（例如是否从 Internet 下载中启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
+| `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows某些特征（例如是否从 Internet 下载启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
 | `InitiatingProcessTokenElevation` | string | 指示是否存在用户访问控制的令牌类型 (UAC) 启动事件的进程应用的特权提升 |
-| `InitiatingProcessSHA1` | string | 启动事件 (映像文件) SHA-1 |
+| `InitiatingProcessSHA1` | string | 启动事件 (映像) SHA-1 |
 | `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
-| `InitiatingProcessMD5` | string | 启动事件的进程和 (文件的 MD5) 哈希 |
+| `InitiatingProcessMD5` | string | 启动事件的进程 (MD5) 文件哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
 | `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
 | `InitiatingProcessVersionInfoCompanyName` | string | 进程版本信息中的公司名称 (负责) 文件 |
 | `InitiatingProcessVersionInfoProductName` | string | 进程版本信息中的产品名称 (负责) 文件 |
 | `InitiatingProcessVersionInfoProductVersion` | string | 进程版本信息中的产品版本 (负责) 文件 |
 | `InitiatingProcessVersionInfoInternalFileName` | string | 进程版本信息中的内部文件名 (负责) 文件 |
-| `InitiatingProcessVersionInfoOriginalFileName` | string | 负责事件的进程版本信息 (文件) 文件的原始文件名 |
-| `InitiatingProcessVersionInfoFileDescription` | string | 负责事件的进程版本信息 (映像) 说明 |
-| `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的进程的 PID |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 进程版本信息的原始文件名 (负责) 文件 |
+| `InitiatingProcessVersionInfoFileDescription` | string | 来自负责事件的进程 (文件) 说明 |
+| `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的过程的 PID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动事件的过程的日期和时间 |
 | `InitiatingProcessFolderPath` | string | 包含启动事件 (进程) 文件的文件夹 |
-| `InitiatingProcessParentId` | int | 进程 ID (PID) 生成负责事件的进程的父进程的 PID |
+| `InitiatingProcessParentId` | int | 生成 (事件的) 的父进程的 PID 进程 ID |
 | `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |
 | `InitiatingProcessParentCreationTime` | datetime | 启动负责事件的进程的父级的日期和时间 |
 | `InitiatingProcessSignerType` | string | 启动事件的进程 (文件) 签名者的类型 |

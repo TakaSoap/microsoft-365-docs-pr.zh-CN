@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - m365initiative-coredeploy
 ms.custom: it-pro
-description: 为租户设置租户Microsoft 365。
-ms.openlocfilehash: d041c87e12bfb3025592cb14cda5413c805dc880
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 设置租户的Microsoft 365。
+ms.openlocfilehash: c5afecd62d466f38c5504c1d485651fa5a31cb30
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170582"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202735"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>租户的租户Microsoft 365
 
@@ -31,13 +31,13 @@ ms.locfileid: "59170582"
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>设置 Microsoft 365 租户
 
-在确保优化网络以同时针对本地和远程工作人员访问 Microsoft 365 后，下一个重大任务是为 DNS 域名、公共服务以及支持安全用户登录的标识基础结构规划并配置 Microsoft 365 租户。
+在确保针对内部部署和远程工作人员对 Microsoft 365 的访问进行了优化后，下一项重大任务是为 DNS 域名、公共服务以及支持安全用户登录的标识基础结构规划并配置 Microsoft 365 租户。
 
 ### <a name="plan"></a>计划
 
 若要规划租户实施，请执行：
 
-- [了解 Azure AD 租户Azure Active Directory (订阅、) 许可证](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
+- [了解 Azure AD 租户Azure Active Directory (、) 许可证](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [了解如何使用第三方 SSL 证书](plan-for-third-party-ssl-certificates.md)
 - [了解租户租户Microsoft 365 Azure AD 服务集成的方式](integrated-apps-and-azure-ads.md)
 - [规划客户端应用支持](microsoft-365-client-support-certificate-based-authentication.md)
@@ -66,7 +66,7 @@ Microsoft 继续打开新的数据中心地理位置 (地理位置) 服务Micros
 
 有关详细信息，请参阅 [Microsoft 365 多地理位置](microsoft-365-multi-geo.md)。
 
-## <a name="manage-multiple-microsoft-365-tenants"></a>管理多个Microsoft 365租户 
+## <a name="manage-multiple-microsoft-365-tenants"></a>管理多个 Microsoft 365 租户 
 
 尽管拥有单个租户进行组织组织是理想选择，但你可能是拥有多个租户的许多组织之一。 原因可能包括合并和收购、您希望管理隔离，或者您具有分散的 IT。
 

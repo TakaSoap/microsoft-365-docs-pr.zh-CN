@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 recommendations: false
 description: 了解 DLP (函数) 数据丢失防护功能。
-ms.openlocfilehash: 787abc1e7fb4c95392a76f7514ceffd3f7f4dda0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 94e7ec97083a8e914ba2155d087d1c7820336805
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196827"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201777"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 函数查找的内容
 
-DLP 策略 (数据丢失) 可以使用敏感信息类型标识敏感项目。 信用卡号和欧盟借记卡号是敏感信息类型的示例。 敏感信息类型查找特定模式。 敏感信息类型通过查看数据的格式、校验和来验证数据，并查找相关的关键字或其他信息。 某些功能由内部函数执行。 例如，信用卡号敏感信息类型使用 函数查找格式设置为到期日期的日期。 这有助于确定数字是信用卡号。
+DLP 策略 (数据丢失) 可以使用敏感信息类型来标识敏感项目。 信用卡号和欧盟借记卡号是敏感信息类型的示例。 敏感信息类型查找特定模式。 敏感信息类型通过查看数据的格式、校验和来验证数据，并查找相关的关键字或其他信息。 某些功能由内部函数执行。 例如，信用卡号敏感信息类型使用 函数查找格式设置为到期日期的日期。 这有助于确定数字是信用卡号。
 
 本文介绍这些函数查找的功能，以帮助您了解预定义敏感信息类型如何工作。 有关详细信息，请参阅 [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)
 
@@ -236,7 +236,7 @@ Func_us_date查找采用通用美国格式的日期。 常用格式为"month/day
 
 ## <a name="func_eu_date"></a>Func_eu_date
 
-Fund_eu_dates E.U 中查找日期 格式 (美国及美国以外的大多数) ，例如"day/month/year"、"day-month-year"和"day month year"。 月份的名称或缩写不区分大小写。
+Fund_eu_dates E.U 中查找日期 格式 (美国以外以及美国) ，例如"day/month/year"、"day-month-year"和"day month year"。 月份的名称或缩写不区分大小写。
 
 示例：
 
@@ -272,7 +272,7 @@ Fund_eu_dates E.U 中查找日期 格式 (美国及美国以外的大多数) ，
   - enero、febrero、marzo、abril、mayo、junio、mayio、agosto、juniembre、octubre、no一mbre、diciembre
   - enero 2 月。 marzo abr。 mayo jun. 7。 agosto9./set。 oct. nov. dic.
 
-## <a name="func_eu_date1-deprecated"></a>Func_eu_date1 (弃用) 
+## <a name="func_eu_date1-deprecated"></a>Func_eu_date1 (弃) 
 
 > [!NOTE]
 > 此函数已弃用，因为它仅支持葡萄牙语月份名称，现在该名称已包含在上面的  `Func_eu_date` 函数中。

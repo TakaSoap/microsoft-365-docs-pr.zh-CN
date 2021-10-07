@@ -2,15 +2,13 @@
 title: 解决 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警报问题
 description: 解决 Linux 上的 Microsoft Defender for Endpoint 中缺少的事件或警报问题。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 事件
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 mms.collection:
@@ -18,12 +16,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 554767c1db2d4122c7bc77c47a55772e4ddaa0a6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e53f959e75551fdd5b065514a1c990663a667201
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196614"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194137"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警报问题
 
@@ -33,9 +31,9 @@ ms.locfileid: "59196614"
 
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 
-本文提供了一些常规步骤，以减少事件或警报在 Microsoft 365 Defender[门户](https://security.microsoft.com/)中。
+本文提供了一些常规步骤，以减少事件门户中缺少Microsoft 365 Defender[警报](https://security.microsoft.com/)。
 
-在 **设备上** 正确安装 Microsoft Defender for Endpoint 后 _，将在门户_ 中生成设备页面。 可以在设备页面的时间线选项卡或高级搜寻页面中查看所有记录的事件。 本节将解决缺失某些或所有预期事件的情况。
+在 **设备上** 正确安装 Microsoft Defender for Endpoint 后 _，将在门户_ 中生成设备页面。 可以在设备页面的时间线选项卡或高级搜寻页面中查看所有记录的事件。 本节解决缺失某些或所有预期事件的情况。
 例如，如果缺少 _所有 CreatedFile_ 事件。
 
 ## <a name="missing-network-and-login-events"></a>缺少网络和登录事件

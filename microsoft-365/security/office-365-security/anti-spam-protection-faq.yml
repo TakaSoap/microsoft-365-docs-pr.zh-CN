@@ -8,7 +8,7 @@ metadata:
   manager: dansimp
   audience: ITPro
   ms.topic: troubleshooting
-  localization_priority: Normal
+  ms.localizationpriority: medium
   search.appverid:
   - MET150
   ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
@@ -17,15 +17,15 @@ metadata:
   - m365initiative-defender-office365
   ms.custom:
   - seo-marvel-apr2020
-  description: 管理员可以查看有关 EOP 中反垃圾邮件保护的常见问题Exchange Online Protection (解答) 。
+  description: 管理员可以查看 EOP 管理中心中有关反垃圾邮件保护的Exchange Online Protection (常见问题) 。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: b15e7409c275810a9d5e70d1376a9c3accd07ab9
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: efcca5d8834c8d4bf67dbf3ee98a07380733bf5f
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59197222"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60202521"
 title: 反垃圾邮件保护常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -56,12 +56,12 @@ sections:
   - question: >
       默认情况下，检测到垃圾邮件的邮件会发生什么情况？
     answer: >
-      **对于入站邮件：** 大多数垃圾邮件都通过连接筛选（基于源电子邮件服务器的 IP 地址）删除。 反垃圾邮件策略 (也称为垃圾邮件筛选器策略或内容筛选器策略) 垃圾邮件、批量邮件或网络钓鱼邮件。 默认情况下，分类为垃圾邮件或批量邮件将传递到收件人的"垃圾邮件"文件夹，而分类为网络钓鱼的邮件将被隔离。 您可以修改适用于所有收件人) 的默认反垃圾邮件策略 (，也可以为特定用户组创建具有更严格设置的自定义反垃圾邮件策略 (例如，您可以隔离发送给主管人员) 的垃圾邮件。 有关详细信息，请参阅配置[反垃圾邮件策略和](configure-your-spam-filter-policies.md)[推荐的反垃圾邮件策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)。
+      **对于入站邮件：** 大多数垃圾邮件都通过连接筛选（基于源电子邮件服务器的 IP 地址）删除。 反垃圾邮件策略 (垃圾邮件筛选器策略或内容筛选器策略) 垃圾邮件、批量邮件或网络钓鱼邮件。 默认情况下，分类为垃圾邮件或批量邮件将传递到收件人的"垃圾邮件"文件夹，而分类为网络钓鱼的邮件将被隔离。 您可以修改适用于所有收件人) 的默认反垃圾邮件策略 (，也可以为特定用户组创建具有更严格设置的自定义反垃圾邮件策略 (例如，您可以隔离发送给主管人员) 的垃圾邮件。 有关详细信息，请参阅配置[反垃圾邮件策略和](configure-your-spam-filter-policies.md)[推荐的反垃圾邮件策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)。
 
 
       > [!IMPORTANT]
 
-      > 在 EOP 保护内部部署 Exchange 邮箱的混合部署中，您需要在本地 Exchange 组织中配置两个 Exchange 邮件流规则 (也称为传输规则) ，以检测添加到邮件中的 EOP 垃圾邮件筛选头。 有关详细信息，请参阅[在混合环境中将 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
+      > 在 EOP 保护内部部署 Exchange 邮箱的混合部署中，您需要在本地 Exchange 组织中配置两个 Exchange 邮件流规则 (也称为传输规则) ，以检测添加到邮件中的 EOP 垃圾邮件筛选标头。 有关详细信息，请参阅[在混合环境中将 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
        **对于出站邮件：** 邮件要么通过高风险传递池进行 [](high-risk-delivery-pool-for-outbound-messages.md)路由，要么通过未送达报告（也称为 NDR）或退回邮件 (退回给发件人) 。 有关出站垃圾邮件保护详细信息，请参阅 [出站垃圾邮件控制](outbound-spam-controls.md)。
   - question: >
@@ -76,7 +76,7 @@ sections:
   - question: >
       是否需要配置该服务以提供反垃圾邮件保护？
     answer: >
-      注册服务并添加域后，将自动启用垃圾邮件筛选。 默认情况下，对垃圾邮件筛选进行调整以保护您，无需任何其他配置 (混合环境中独立 EOP 独立客户的例外除外) 。 作为管理员，您可以编辑默认垃圾邮件筛选设置，以最好地满足组织的需求。 更精细地来说，您还可以创建适用于组织中指定用户、组或域的反垃圾邮件策略和出站反垃圾邮件策略。 虽然自定义策略的优先级始终高于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
+      注册服务并添加域后，将自动启用垃圾邮件筛选。 默认情况下，对垃圾邮件筛选进行调整以保护您，无需任何其他配置 (混合环境中独立 EOP 独立客户的前面提到的例外除外) 。 作为管理员，您可以编辑默认垃圾邮件筛选设置，以最好地满足组织的需求。 更精细地来说，您还可以创建适用于组织中指定用户、组或域的反垃圾邮件策略和出站反垃圾邮件策略。 虽然自定义策略的优先级始终高于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
 
 
       有关详细信息，请参阅下列主题：
@@ -99,54 +99,54 @@ sections:
   - question: >
       批量电子邮件筛选是否自动启用？
     answer: >
-      能。 For more information about bulk email, see [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+      是。 For more information about bulk email, see [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
   - question: >
       服务是否提供 URL 筛选？
     answer: >
       是的，该服务具有一个 URL 筛选器，用于检查邮件中的 URL。 如果检测到与已知垃圾邮件或恶意内容关联的 URL，则邮件被标记为垃圾邮件。
   - question: >
-      使用此服务的客户如何向 Microsoft 发送 (误报) 非 (邮件) 误报？
+      使用此服务的客户如何向 Microsoft 发送 (漏报) 非 (邮件) 误报？
     answer: >
       垃圾邮件和非垃圾邮件可以通过多种方式提交给 Microsoft 进行分析。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
   - question: >
       我能否收到垃圾邮件报告？
     answer: >
-      是，例如，可以在邮件中收到垃圾邮件检测Microsoft 365 管理中心。 此报告以唯一邮件计数显示垃圾邮件量。 有关报告详细信息，请参阅以下链接：
+      是，例如，您可以在电子邮件中获取垃圾邮件检测Microsoft 365 管理中心。 此报告以唯一邮件计数显示垃圾邮件量。 有关报告详细信息，请参阅以下链接：
 
 
       Exchange Online客户[：监视、报告和邮件跟踪Exchange Online](/exchange/monitoring/monitoring)
 
 
-      独立 EOP 客户[：Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
+      独立 EOP 客户：[电子邮件中的报告和Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
   - question: >
       有人向我发送了一封邮件，我找不到它。 我怀疑它已被检测为垃圾邮件。 是否有可用于查找的工具？
     answer: >
       可以，邮件跟踪工具使您能够在电子邮件通过服务时跟踪它们，以便了解它们发生了什么。 有关如何使用邮件跟踪工具了解邮件被标记为垃圾邮件的原因，请参阅邮件被标记为 [垃圾邮件吗？](/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
   - question: >
-      如果我的用户发送出站 (，) 限制我的邮件的速率限制吗？
+      如果我的用户发送出站 (，服务) 限制我的邮件速率限制吗？
     answer: >
-      如果 EOP 确定用户在特定时间范围内通过服务发送的邮件超过一半 (例如每小时) ，将阻止用户发送邮件。 在大多数情况下，如果出站邮件被确定为垃圾邮件，则通过高风险传送池进行路由，这会降低正常的出站 IP 池添加到阻止列表的可能性。
+      如果 EOP 确定用户在特定时间范围内通过服务发送的邮件超过一半 (例如每小时) ，则用户将被阻止发送邮件。 在大多数情况下，如果出站邮件被确定为垃圾邮件，则通过高风险传送池进行路由，这会降低正常的出站 IP 池添加到阻止列表的可能性。
 
 
       当发件人被阻止发送出站垃圾邮件时，您可以发送通知到一个特定的电子邮件地址。 有关此设置的详细信息，请参阅[配置出站垃圾邮件策略](configure-the-outbound-spam-policy.md)。
   - question: >
       能否将第三方反垃圾邮件和反恶意软件提供程序与 Exchange Online？
     answer: >
-      能。 尽管我们建议你将 MX 记录指向 Microsoft，但我们知道将你的电子邮件路由到 Microsoft 第一个地址有合法业务原因。
+      是。 尽管我们建议你将 MX 记录指向 Microsoft，但我们知道将你的电子邮件路由到 Microsoft 第一个地址有合法业务原因。
 
 
-      - **入站**：将 MX 记录更改为指向第三方提供程序，然后将邮件重定向到 EOP 进行其他处理。 有关详细信息，请参阅[增强的筛选连接器在Exchange Online。](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+      - **入站**：将 MX 记录更改为指向第三方提供程序，然后将邮件重定向到 EOP 进行其他处理。 有关详细信息，请参阅[增强的筛选连接器Exchange Online。](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
 
       - **出站**：配置从Microsoft 365到目标第三方提供程序的智能主机路由。
   - question: >
       Microsoft 是否拥有任何有关如何保护自己免受网络钓鱼诈骗之害的文档？
     answer: >
-      能。 有关详细信息，请参阅保护 [Internet 上的隐私](https://support.microsoft.com/help/4091455)
+      是。 有关详细信息，请参阅保护 [Internet 上的隐私](https://support.microsoft.com/help/4091455)
   - question: >
       是否正在调查垃圾邮件和恶意软件邮件的发送者，或将其转移到执法机构实体？
     answer: >
-      该服务专注于垃圾邮件和恶意软件检测和删除，但我们有时可能会调查特别危险或破坏性的垃圾邮件或攻击活动，并寻求破坏者。 这可能涉及与法律和数字犯罪单位合作，以关闭垃圾邮件制造者机器人网络、阻止垃圾邮件制造者使用服务 (（如果他们使用服务) 发送出站电子邮件) ，以及将信息传递给执法机构进行刑事犯罪。
+      该服务专注于垃圾邮件和恶意软件检测和删除，但我们有时可能会调查特别危险或破坏性的垃圾邮件或攻击活动，并寻求破坏者。 这可能涉及与法律和数字犯罪单位合作，以关闭垃圾邮件制造者机器人网络，阻止垃圾邮件制造者使用服务 (（如果他们使用服务) 发送出站电子邮件) ，以及将相关信息传递给执法机构进行犯罪犯罪。
   - question: >
       确保传递我的邮件的一组最佳出站邮件做法是什么？
     answer: >-
@@ -221,7 +221,7 @@ sections:
 
       - **设置出站退回邮件的格式。**
 
-        生成传递状态通知 (邮件（也称为未送达报告、未送达报告或退回邮件) ）时，发件人应遵循 [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt)中指定的退回格式。
+        生成传递状态通知 (也称为未送达报告、未送达报告或退回邮件) 时，发件人应遵循 [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt)中指定的退回格式。
 
       - **清除退回的不存在用户的电子邮件地址。**
 

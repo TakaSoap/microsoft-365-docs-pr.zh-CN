@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何通过限制到 SharePoint Online 服务终结点的调用数量来优化 SharePoint Online 中的新式和经典发布网页。
-ms.openlocfilehash: 7c3872e0860b089f52d9597a06bced71ea6eb523
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 298e928f339d82f472f73e22998b8762461cc209
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196770"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208261"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>在 SharePoint Online 新式发布网页和经典发布网页中优化页面调用
 
@@ -58,7 +58,7 @@ SharePoint Online 新式和经典发布网页都包含从 SharePoint 功能和 C
 
 ## <a name="remediate-performance-issues-related-to-too-many-calls-on-a-page"></a>修正与页面上调用过多相关的性能问题
 
-如果页面包含的调用过多，可以使用"请求 **SharePoint"** 结果中的 URL 列表来确定是否存在任何重复的调用、应批处理的调用或返回应缓存数据的调用。
+如果页面包含的调用过多，可以使用"请求 **SharePoint"** 结果中的 URL 列表来确定是否有重复的调用、应批处理的调用或返回应缓存数据的调用。
 
 “**批处理 REST 调用**”可帮助减少性能开销。 要详细了解 API 调用批处理，请参阅[使用 REST API 进行批处理请求](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis)。
 

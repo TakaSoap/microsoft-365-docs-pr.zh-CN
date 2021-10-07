@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 了解如何管理Office 365终结点，以便它们与企业组织网络体系结构一起工作。
-ms.openlocfilehash: 6a8460dbc9dbbc8b7b7a5a8e720b8c55c0ed918c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 01fb9f067bd94e564deb182338fdcde055edb153
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161995"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201693"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
@@ -33,7 +33,7 @@ Microsoft 建议您使用 Office 365 IP 地址和 URL Web 服务访问 Office 36
 
 无论如何管理重要的 Office 365 网络流量，Office 365 都需要 Internet 连接。 [Office 365 IP 地址和 URL Web 服务中未包括的其他终结点](additional-office365-ip-addresses-and-urls.md)列出了需要连接的其他网络终结点。
 
-如何使用 Office 365 网络终结点将取决于你的企业组织网络体系结构。 本文概述了企业网络体系结构可以与 Office 365 IP 地址和 URL 集成的几种方式。 选择要信任的网络请求的最简单方法是在每个办公室位置使用支持自动配置Office 365 SD-WAN 设备。
+如何使用 Office 365 网络终结点将取决于你的企业组织网络体系结构。 本文概述了企业网络体系结构可以与 Office 365 IP 地址和 URL 集成的几种方式。 选择要信任的网络请求的最简单方法是在每个办公室位置使用支持自动Office 365配置的 SD-WAN 设备。
 
 ## <a name="sd-wan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>用于重要网络通信的本地分支出口Office 365 SD-WAN
 
@@ -90,7 +90,7 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 
 在 PAC 文件不用于直接出站通信的情况下，你仍然希望通过配置代理服务器来绕过网络外围上的处理。 如 [Office 365 网络合作伙伴计划](microsoft-365-networking-partner-program.md)中所述，某些代理服务器供应商已启用此功能的自动配置。
 
-如果手动执行此操作，则需要从 Office 365 IP 地址和 URL Web 服务获取"优化和允许终结点"类别数据，并配置代理服务器以绕过对这些数据的处理。 对于“优化和允许”类别的终结点，避免 SSL 中断以及检查和代理身份验证很重要。
+如果手动执行此操作，则需要从 Office 365 IP 地址和 URL Web 服务获取优化和允许终结点类别数据，并配置代理服务器以绕过对这些数据的处理。 对于“优化和允许”类别的终结点，避免 SSL 中断以及检查和代理身份验证很重要。
   
 <a name="bkmk_changes"> </a>
 ## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Office 365 IP 地址和 URL 的变更管理
@@ -113,14 +113,14 @@ Office 365 IP 地址和 URL Web 服务提供了一个 RSS 源，你可以在 Out
 
 ### <a name="change-notification-and-approval-review-using-power-automate"></a>使用"更改通知"和"审批Power Automate
 
-我们理解，你可能仍需要手动处理每个月进行的网络终结点更改。 您可以使用Power Automate创建通过电子邮件通知您的流，并可以选择在网络终结点发生更改时Office 365审批流程。 审核完成后，可以通过流程自动将更改通过电子邮件发送给防火墙和代理服务器管理团队。
+我们理解，你可能仍需要手动处理每个月进行的网络终结点更改。 可以使用Power Automate创建一个流，以通过电子邮件通知您，并可以选择在网络终结点发生更改时Office 365审批流程。 审核完成后，可以通过流程自动将更改通过电子邮件发送给防火墙和代理服务器管理团队。
 
-有关示例和Power Automate的信息，请参阅 Use [Power Automate to receive an email for changes to Office 365 IP addresses and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)。
+有关示例和Power Automate的信息，请参阅使用 Power Automate 接收对 ip 地址和 URL Office 365[更改的电子邮件](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)。
   
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Office 365 网络终结点常见问题
 
-请参阅以下有关网络连接Office 365常见问题。
+请参阅有关网络连接的Office 365问题。
   
 ### <a name="how-do-i-submit-a-question"></a>如何提交问题？
 
@@ -146,12 +146,12 @@ Office 365 IP 地址和 URL Web 服务提供了一个 RSS 源，你可以在 Out
 1. 使用 CIDR 计算器检查该 IP 地址是否包含在较大的已发布范围内，如 [IPv4](https://www.ipaddressguide.com/cidr) 或 [IPv6](https://www.ipaddressguide.com/ipv6-cidr) 的 IP 地址。 例如，40.96.0.0/13 包括 IP 地址40.103.0.1，尽管40.96 与 40.103 不匹配。
 2. 查看合作伙伴是否拥有含 [whois 查询](https://dnsquery.org/)的 IP。 如果该 IP 为 Microsoft 所有，则它可能是内部合作伙伴。 许多伙伴网络终结点被列为属于 _默认_ 类别，其 IP 地址未发布。
 3. 该 IP 地址可能不是 Office 365 的一部分或与其无从属关系。 Office 365 网络终结点发布不包括所有 Microsoft 网络终结点。
-4. 检查证书。 使用浏览器，使用 HTTPS:// 连接到 IP *\<IP_ADDRESS\>* 地址，并检查证书中列出的域，了解哪些域与 IP 地址相关联。 如果它是 Microsoft 拥有的 IP 地址，但不在 Office 365 IP 地址列表中，则 IP 地址很可能与 Microsoft CDN（如 *MSOCDN.NET）* 或另一个 Microsoft 域关联，而未发布 IP 信息。 如果发现证书上的域确实是我们宣称列出 IP 地址的域，请告知我们。
+4. 检查证书。 通过浏览器，使用 HTTPS:// 连接到 IP *\<IP_ADDRESS\>* 地址，并检查证书中列出的域，了解哪些域与 IP 地址相关联。 如果它是 Microsoft 拥有的 IP 地址，而不是 Office 365 IP 地址列表中，则 IP 地址可能是与 Microsoft CDN（如 *MSOCDN.NET）* 或另一个 Microsoft 域关联的，而未发布 IP 信息。 如果发现证书上的域确实是我们宣称列出 IP 地址的域，请告知我们。
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>某些 Office 365 URL 指向 CNAME 记录，而不是 DNS 中的 A 记录。 我与 CNAME 记录有什么关系？
 
-客户端计算机需要 DNS A 或 AAAA 记录，) 一个或多个 IP 地址 (一) 连接到云服务。 Office 365 中包含的某些 URL 显示 CNAME 记录，而不是 A 或 AAAA 记录。 这些 CNAME 记录是中间记录，记录链中可能有多个此类记录。 它们最终将始终解析为 IP 地址的 A 或 AAAA 记录。 例如，考虑以下 DNS 记录系列，这些记录最终将解析为 IP 地址 _IP_1_：
+客户端计算机需要 DNS A 或 AAAA 记录) 包括一个或多个 IP 地址 (一) 连接到云服务。 Office 365 中包含的某些 URL 显示 CNAME 记录，而不是 A 或 AAAA 记录。 这些 CNAME 记录是中间记录，记录链中可能有多个此类记录。 它们最终将始终解析为 IP 地址的 A 或 AAAA 记录。 例如，考虑以下 DNS 记录系列，这些记录最终将解析为 IP 地址 _IP_1_：
 
 ```console
 serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.com -> A: IP_1
@@ -161,7 +161,7 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 代理服务器验证初始 URL，如上例 serviceA.office.com，此 URL 将包含在Office 365中。 代理服务器请求将该 URL 的 DNS 解析为 IP 地址，并将收到 IP_1。 它不会验证中间的 CNAME 重定向记录。
 
-不建议使用硬编码配置或基于间接 FQN Office 365允许列表，不受 Microsoft 支持，并且已知会导致客户连接问题。 阻止 CNAME 重定向或错误地解析 Office 365 DNS 条目的 DNS 解决方案可以通过启用了 DNS 递归的 DNS 转发器或通过使用 DNS 根提示来解决。 许多第三方网络外围产品在本机集成了推荐的 Office 365 终结点，以使用 Office 365 IP 地址和[URL Web 服务](microsoft-365-ip-web-service.md)在配置中包括允许列表。
+不建议使用硬编码配置或基于间接 FQN Office 365允许列表，不受 Microsoft 支持，并且已知会导致客户连接问题。 阻止 CNAME 重定向或错误地解析 Office 365 DNS 条目的 DNS 解决方案可以通过启用了 DNS 递归的 DNS 转发器或通过使用 DNS 根提示来解决。 许多第三方网络外围产品本机集成了推荐的 Office 365 终结点，以使用 Office 365 IP 地址和[URL Web 服务](microsoft-365-ip-web-service.md)在配置中包括允许列表。
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>为什么会在 Microsoft 域名中看到 nsatc.net 或 akadns.net 等名称？

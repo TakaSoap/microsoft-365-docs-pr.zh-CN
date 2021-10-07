@@ -2,27 +2,25 @@
 title: 解决 Android 上的 Microsoft Defender for Endpoint 上的问题
 description: 解决 Android 上的 Microsoft Defender for Endpoint 的问题
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mde， android， 云， 连接， 通信
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 81be4d293398b264dfa72bbca0eb74b0429add71
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 7868b57b03a237a3cd65841040ee741b2cdd0c12
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934115"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194305"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>排查 Android 上 Microsoft Defender for Endpoint 的问题
 
@@ -145,7 +143,7 @@ ms.locfileid: "59934115"
 
 如果用户面临以上部分中尚未解决的问题，或者无法使用列出的步骤解决问题，则用户可以提供应用内 **反馈以及诊断****数据**。 然后，我们团队可以调查日志以提供正确的解决方案。 用户可以按照以下步骤执行相同的操作：
 
-1.  在 **设备上打开 MDE** 应用程序，然后单击左上角的配置文件图标。
+1.  在设备上 **打开 MDE** 应用程序，然后单击左上角的配置文件图标。
 
     :::image type="content" alt-text="单击配置文件图标。" source="images/select-profile-icon-1.jpg":::
 

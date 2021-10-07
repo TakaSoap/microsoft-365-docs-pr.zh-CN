@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用 PowerShell 修改自定义敏感信息。
-ms.openlocfilehash: 9f8a9ef119e632c695113320ab86a3bdfef8a197
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dfecd8ab6bf24c00e0bdc01a20f798c29f18c446
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200530"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60187985"
 ---
 # <a name="modify-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 修改自定义敏感信息类型
 

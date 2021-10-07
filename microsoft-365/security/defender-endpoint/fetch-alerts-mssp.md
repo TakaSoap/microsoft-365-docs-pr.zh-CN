@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: a8e67bda0a33699f3d1934d943dd52db5a3354be
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 51e0f8dacff3eb7a1e360fd999913f33619c4a56
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196340"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201414"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>从 MSSP 客户租户提取警报
 
@@ -72,7 +72,7 @@ ms.locfileid: "59196340"
 
 7. 将值从应用程序客户端 **(ID)** 复制到安全位置，下一步中将需要此值。
 
-8. 选择 **"&** 应用程序面板中的"证书"和"密码"。
+8. Select **Certificate & secrets** in the new application panel.
 
 9. 单击 **"新建客户端密码"。**
 
@@ -83,7 +83,7 @@ ms.locfileid: "59196340"
 
 ### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>步骤 2：从客户的租户获取访问和刷新令牌
 
-本部分指导你如何使用 PowerShell 脚本从客户的租户获取令牌。 此脚本使用上一步中的应用程序，使用 OAuth 授权代码和刷新令牌Flow。
+本部分指导你如何使用 PowerShell 脚本从客户的租户获取令牌。 此脚本使用上一步中的应用程序，使用 OAuth 授权代码令牌获取访问令牌和Flow。
 
 提供凭据后，你需要同意应用程序，以便应用程序在客户的租户中预配。
 
@@ -148,7 +148,7 @@ ms.locfileid: "59196340"
 
 6. 输入以下命令： `.\MsspTokensAcquisition.ps1 -clientId <client_id> -secret <app_key> -tenantId <customer_tenant_id>`
 
-    - 将 \<client_id\> 替换为 **上一 ()** 应用程序客户端客户端 ID。
+    - 将 \<client_id\> 替换为 **上一 ()** 应用程序客户端 ID。
     - 将 \<app_key\> 替换为在上一步中创建的客户端密码。
     - 将 \<customer_tenant_id\> 替换为客户的租户 **ID。**
 
@@ -158,7 +158,7 @@ ms.locfileid: "59196340"
 
 ### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>步骤 3：允许应用程序Microsoft 365 Defender
 
-你需要允许你在应用程序中创建的应用程序Microsoft 365 Defender。
+你需要允许在应用程序中创建的应用程序Microsoft 365 Defender。
 
 你需要具有管理门户 **系统设置权限** 才能允许应用程序。 否则，你将需要请求客户允许应用。
 
@@ -175,7 +175,7 @@ ms.locfileid: "59196340"
 现在，你可以下载 SIEM 的相关配置文件并连接到 Defender for Endpoint API。 有关详细信息，请参阅将 [警报拉取到 SIEM 工具](configure-siem.md)。
 
 - 在 ArcSight 配置文件/Splunk 身份验证属性文件中，通过设置密码值手动编写应用程序密钥。
-- 使用上一步中的脚本获取刷新令牌， (获取刷新令牌，而不是在门户中获取刷新) 。
+- 使用上一步中的脚本获取刷新令牌，而不是在门户中获取刷新令牌 (或通过其他方法获取刷新) 。
 
 ## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>使用 API 从 MSSP 客户的租户提取警报
 

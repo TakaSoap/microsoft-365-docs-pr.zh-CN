@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,23 +19,23 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3b111fe66e35bcd87898eefa2d336b8031651098
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 22dcd3345e4a58a4ee38a4e9e8f20fb4d76f3f60
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161933"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202557"
 ---
-# <a name="get-started-with-microsoft-365-for-defender"></a>适用于 Defender Microsoft 365入门
+# <a name="get-started-with-microsoft-365-for-defender"></a>Defender Microsoft 365入门
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender是一种统一的体验，可在其中监视和管理整个企业的安全性。 通过跨标识、终结点、数据、应用、电子邮件和协作工具的集成警报， 调查和响应威胁现在发生在中心位置。 
+Microsoft 365 Defender是一种统一的体验，可在其中监视和管理企业的安全性。 通过跨标识、终结点、数据、应用、电子邮件和协作工具的集成警报， 调查和响应威胁现在发生在中心位置。 
 
-无论你是不熟悉 Microsoft 安全产品套件还是熟悉各个工作流，本主题都将指导你完成开始使用 Microsoft 365 Defender 所需的简单步骤。
+无论你是不熟悉 Microsoft 安全产品套件还是熟悉各个工作流，本主题都会指导你完成开始使用安全Microsoft 365 Defender。
 
 ![开始执行步骤Microsoft 365 Defender的图像。](../../media/mtp/get-started-m365d.png)
 
@@ -47,7 +47,7 @@ Microsoft 365 Defender是一种统一的体验，可在其中监视和管理整�
     然后，您将完成一些简单的设置，然后您可以确认服务是否打开。
 
 - **[步骤 2：部署支持的服务](deploy-supported-services.md)** <br>
-    完成初始步骤后，你需要部署支持的服务以及Microsoft 365 Defender。 有效地部署服务可提升你在整个网络中对来自资产的信号的可见性。
+    完成初始步骤后，你需要部署支持的服务（Microsoft 365 Defender）。 有效地部署服务可提升你在整个网络中对来自资产的信号的可见性。
 
 
 ## <a name="key-capabilities"></a>关键功能

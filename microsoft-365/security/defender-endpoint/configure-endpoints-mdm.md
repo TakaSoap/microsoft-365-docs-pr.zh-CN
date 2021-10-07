@@ -8,18 +8,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6cb99f300c7d87497f31729507695a9a633b345a
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 6aaa510df9b3155015979f4d3a5278c601b56223
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124693"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217122"
 ---
 # <a name="onboard-the-windows-devices-using-mobile-device-management-tools"></a>使用Windows管理工具载入新设备
 
@@ -85,7 +85,7 @@ ms.locfileid: "60124693"
    - 日期类型：String
    - 值：[复制并粘贴文件内容中的WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding 文件]
 
-有关策略设置Microsoft Intune，请参阅 Windows 10[中的策略Microsoft Intune。](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+有关策略设置Microsoft Intune，请参阅 Windows 10[中的策略Microsoft Intune。](/mem/intune/configuration/custom-settings-windows-10)
 
 > [!NOTE]
 > " **载出设备的运行状况状态"策略** 使用只读属性，并且无法修正。

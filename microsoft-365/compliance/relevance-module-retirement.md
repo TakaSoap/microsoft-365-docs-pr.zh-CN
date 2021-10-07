@@ -8,22 +8,22 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 description: Advanced eDiscovery中的相关性模块将于 2021 年 3 月 10 日停用。 本文介绍在停用相关性之前要执行哪些工作。 具体而言，通过运行批计算完成任何未完成的模型，以便可以保留模型中的元数据。
-ms.openlocfilehash: 1005c7a1c065adba039f6f07197dbca758d20ea4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ed8e65f7dcf17c49d1a3f8b9af920272bd1692b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565400"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177347"
 ---
 # <a name="retirement-of-the-relevance-module-in-advanced-ediscovery"></a>停用中的相关性模块Advanced eDiscovery
 
-2021 年 3 月 10 日，我们将于 2021 年 3 月 10 日停用 Advanced eDiscovery。 此停用意味着组织将无法再访问相关性模块 (，方法为在 Advanced eDiscovery 案例中管理审阅集相关性) 或能够访问任何现有相关性  >  模型。 即将停用的当前相关性模块将在 2021 年第 2 季度替换为新的预测编码解决方案。 这一新功能将允许组织在更轻松、更直观的工作流中构建自己的预测编码模型。
+2021 年 3 月 10 日，我们将停用 Advanced eDiscovery 中的相关性模块。 此停用意味着组织将不再能够访问相关性模块 (通过访问 Advanced eDiscovery 案例的"管理审阅集相关性") 或能够访问任何现有相关性  >  模型。 即将停用的当前相关性模块将在 2021 年第 2 季度替换为新的预测编码解决方案。 这一新功能将允许组织在更轻松、更直观的工作流中构建自己的预测编码模型。
 
 若要准备即将停用，我们建议使用相关性模块的组织通过运行所有现有模型的批处理计算，在停用日期之前导出其模型的输出。 模型的所有相关性分数将永久存储在相应的审阅集内，在导出文档时可访问。 相关性分数也会作为元数据保留在加载文件中。 此外，您仍能够基于相关性分数筛选审阅集内的内容，并有权访问相关性模型生成的所有元数据。
 

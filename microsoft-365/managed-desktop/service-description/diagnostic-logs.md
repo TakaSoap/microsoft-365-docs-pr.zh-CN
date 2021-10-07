@@ -4,27 +4,27 @@ description: 在疑难解答期间可能从设备收集的日志及其存储方�
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ef7d19fef989610c10323c2a9820a5314d5e1641
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5c890ea42da4bb13c163e7b8b123080e0264d025
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196665"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201525"
 ---
 # <a name="diagnostic-logs"></a>诊断日志
 
-当我们对由 Microsoft 托管桌面 管理的设备上的问题进行故障排除时，无论你已报告问题还是由服务识别的问题，我们可能需要从设备中收集某些诊断日志，而无需用户干预。 我们不会从用户目录中收集任何用户生成的内容或信息。 我们仅收集与设备运行状况和状态有关诊断和日志数据。
+当我们在由 Microsoft 托管桌面 管理的设备上解决问题时，无论你已报告问题还是由服务识别的问题，我们可能需要从设备中收集某些诊断日志，而无需用户干预。 我们不会从用户目录中收集任何用户生成的内容或信息。 我们仅收集与设备运行状况和状态有关诊断和日志数据。
 
 我们将收集的任何日志存储 28 天，然后将其删除。 我们将按照数据处理标准处理从设备 [收集的任何日志](privacy-personal-data.md)。
 
 ## <a name="data-collected"></a>收集的数据
 
-此列表包括所有文件夹、事件日志、可执行文件或注册表Microsoft 托管桌面可能会从其中收集诊断日志。 收集的实际数据将是此列表的子集，具体取决于已识别的问题。
+此列表包括所有文件夹、事件日志、可执行文件或注册表位置，Microsoft 托管桌面收集诊断日志。 收集的实际数据将是此列表的子集，具体取决于已识别的问题。
 
 ### <a name="registry-keys"></a>注册表项
 
@@ -91,7 +91,7 @@ ms.locfileid: "59196665"
 
 ### <a name="event-logs"></a>事件日志
 
-- 应用程序
+- Application
 - Microsoft-Windows-AppLocker/EXE 和 DLL
 - Microsoft-Windows-AppLocker/MSI 和脚本
 - Microsoft-Windows-AppLocker/封装应用部署
@@ -99,14 +99,14 @@ ms.locfileid: "59196665"
 - Microsoft-Windows-Bitlocker/Bitlocker Management
 - Microsoft-Windows-SENSE/Operational
 - Microsoft-Windows-SenseIR/Operational
-- 安装
-- 系统警报
+- 设置
+- System
 
 ### <a name="files"></a>文件
 
 - %ProgramData% \\ Microsoft \\ DiagnosticLogCSP \\ Collectors \\ \* .etl
 - %ProgramData% \\ Microsoft \\ IntuneManagementExtension \\ Logs \\ \* .\*
-- %ProgramData% \\ Microsoft \\ Windows Defender \\ 支持 \\MpSupportFiles.cab
+- %ProgramData% \\ Microsoft Windows Defender Support \\ \\ \\MpSupportFiles.cab
 - %ProgramData% \\ Microsoft \\ Windows \\ WlanReport \\wlan-report-latest.html
 - %ProgramData% \\ Microsoft \\ Windows \\ WlanReport -SourceFileName wlan-report-latest.html
 - %windir% \\ ccm \\ logs \* .log

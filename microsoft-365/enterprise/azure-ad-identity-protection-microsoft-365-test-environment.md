@@ -1,5 +1,5 @@
 ---
-title: 适用于企业测试环境的 Microsoft 365 Azure AD Identity Protection
+title: 适用于企业测试环境Microsoft 365 Azure AD Identity Protection
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -9,20 +9,20 @@ ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
 description: 配置 Azure AD Identity Protection 并分析企业测试Microsoft 365中的当前帐户。
-ms.openlocfilehash: 446462215069c0bcc72e36c7c62260de0694f600
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bba9567b8257d112f71875fc39a93f2bea90e6ef
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175514"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208345"
 ---
-# <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业测试环境的 Microsoft 365 Azure AD Identity Protection
+# <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业测试环境Microsoft 365 Azure AD Identity Protection
 
 *本测试实验室指南只能用于Microsoft 365测试环境。*
 
@@ -45,11 +45,11 @@ ms.locfileid: "59175514"
 如果要在模拟的企业中测试 Azure AD Identity Protection，请按照传递身份验证 [中的说明操作](pass-through-auth-m365-ent-test-environment.md)。
   
 > [!NOTE]
-> 测试 Azure AD Identity Protection 不需要模拟的企业测试环境，该环境包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 的目录同步。 它在此处作为一个选项提供，以便你可以测试 Azure AD Identity Protection，在代表典型组织的环境中试验它。
+> 测试 Azure AD Identity Protection 不需要模拟的企业测试环境，该环境包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试 Azure AD Identity Protection，在代表典型组织的环境中试验它。
   
 ## <a name="phase-2-use-azure-ad-identity-protection"></a>阶段 2：使用 Azure AD Identity Protection
 
-1. 打开浏览器的专用实例，然后使用适用于企业测试Microsoft 365全局管理员帐户登录到 Azure [https://portal.azure.com](https://portal.azure.com) 门户 。
+1. 打开浏览器的专用实例，然后使用适用于企业测试环境的 Microsoft 365 的全局管理员帐户 [https://portal.azure.com](https://portal.azure.com) 登录到 Azure 门户。
 2. 在 Azure 门户中， **在搜索框中** 键入标识保护，然后选择 **Azure AD Identity Protection**。
 3. 在 **"Identity Protection - 概述"** 边栏选项卡中，选择每个报告以查看报告内容。
 4. 在 **"通知"** 下 **，选择"处于风险中检测到警报的用户"。**

@@ -1,5 +1,5 @@
 ---
-title: '管理 Microsoft Defender for Endpoint Plan 1 (preview) '
+title: '管理 Microsoft Defender for Endpoint Plan 1 (预览) '
 description: 维护和更新终结点计划 1 的 Defender。 管理设置、获取更新并解决误报/负面影响。
 search.appverid: MET150
 author: denisebmsft
@@ -10,18 +10,18 @@ ms.topic: overview
 ms.date: 09/13/2021
 ms.prod: m365-security
 ms.technology: mdep1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cdfe95466eeb9151fac1047850a32f5e657f4c94
-ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
+ms.openlocfilehash: 298f63a0df664cada6cf6d2a67a06770b66ea6ea
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60069097"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194113"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-plan-1-preview"></a>管理 Microsoft Defender for Endpoint Plan 1 (preview) 
+# <a name="manage-microsoft-defender-for-endpoint-plan-1-preview"></a>管理 Microsoft Defender for Endpoint Plan 1 (预览) 
 
 > [!TIP]
 > 如果你已Microsoft 365 E3 A3，Microsoft 365 E5或 A5，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 注册预览计划！

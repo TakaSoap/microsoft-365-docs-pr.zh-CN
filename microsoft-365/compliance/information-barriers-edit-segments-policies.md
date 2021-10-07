@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
-localization_priority: None
+ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 79f82ba1133af3c3cfe1d8c7b05b481528bcb003
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: e5a8eac15ebb76d9b3c2c95b3eff2cf3bd29772e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010101"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188177"
 ---
 # <a name="manage-information-barrier-policies"></a>管理信息屏障策略
 
@@ -37,7 +37,7 @@ ms.locfileid: "60010101"
 | [信息屏障疑难解答](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | 当您遇到信息障碍的意外问题时，请参阅本文。 |
 
 > [!IMPORTANT]
-> 若要执行本文中所述的任务，您必须分配有适当的角色，例如以下角色之一：<br/>- Microsoft 365 企业版全局管理员<br/>- 全局管理员<br/>- 合规性管理员<br/>- IBM 合规性管理 (这是一个新角色！) <br><br>若要了解有关信息屏障的先决条件详细信息，请参阅先决条件 ([了解信息屏障策略) 。 ](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)<br><br> 确保连接到[安全与合规& PowerShell。](/powershell/exchange/connect-to-scc-powershell)
+> 若要执行本文中所述的任务，您必须分配有适当的角色，例如以下角色之一：<br/>- Microsoft 365 企业版全局管理员<br/>- 全局管理员<br/>- 合规性管理员<br/>- IBM 合规性管理 (这是一个新角色！) <br><br>若要了解有关信息屏障的先决条件详细信息，请参阅S [prerequisites (for information barrier policies) ](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)。<br><br> 确保连接到[安全与合规& PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>编辑用户帐户属性
 
@@ -47,7 +47,7 @@ ms.locfileid: "60010101"
 
     |**语法**|**示例**|
     |:---------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* for *Megan* 和 *alexw* for *Alex*。 |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* 表示 *Megan，alexw* 表示 *Alex。*  |
 
 2. 确定要编辑用户帐户配置文件的属性 () 。 有关详细信息，请参阅 [信息屏障策略的属性](information-barriers-attributes.md)。 
 
@@ -94,7 +94,7 @@ ms.locfileid: "60010101"
 
     本示例将"SegmentsBlocked"更改为"SegmentsAllowed"，并指定 *HR* 段。
 
-3. 编辑完策略后，请确保应用更改。  (应用 [信息屏障策略](information-barriers-policies.md#step-4-apply-information-barrier-policies).) 
+3. 编辑完策略后，请确保应用更改。  (请参阅 [应用信息屏障策略](information-barriers-policies.md#step-4-apply-information-barrier-policies).) 
 
 ## <a name="set-a-policy-to-inactive-status"></a>将策略设置为非活动状态
 
@@ -102,7 +102,7 @@ ms.locfileid: "60010101"
 
     语法： `Get-InformationBarrierPolicy`
 
-    在结果列表中，确定要更改策略 (或删除) 。 请注意策略的 GUID 和名称。
+    在结果列表中，确定要更改策略 (删除) 。 请注意策略的 GUID 和名称。
 
 2. 若要将策略的状态设置为非活动状态，请使用带 Identity 参数的 **Set-InformationBarrierPolicy** cmdlet，将 State 参数设置为 Inactive。
 

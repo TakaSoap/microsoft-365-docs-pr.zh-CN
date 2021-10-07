@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: dc5cd2b57ce3c282c69b5a1cfac77baf27717416
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 211c450b718414608e9e16890f7e080db5bda111
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490891"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201453"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>管理Microsoft Defender 防病毒中的业务
 
@@ -37,7 +37,7 @@ ms.locfileid: "59490891"
 可以使用以下工具Microsoft Defender 防病毒和配置自定义设置：
 
 - [Microsoft Intune (](/mem/intune/protect/endpoint-security-antivirus-policy)现在属于Microsoft Endpoint Manager) 
-- [Microsoft Endpoint Configuration Manager (](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)部分Microsoft Endpoint Manager) 
+- [Microsoft Endpoint Configuration Manager (](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)现在属于Microsoft Endpoint Manager) 
 - [组策略](./use-group-policy-microsoft-defender-antivirus.md)
 - [PowerShell cmdlet](./use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [WindowsManagement Instrumentation (WMI) ](./use-wmi-microsoft-defender-antivirus.md)

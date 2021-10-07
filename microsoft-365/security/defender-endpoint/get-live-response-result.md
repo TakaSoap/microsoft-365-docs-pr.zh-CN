@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 91a4e2cd0d0a19fcbceb36560fea5c49ad904237
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 09e7cb8f05796994e1b68d59ceea312b8735a3cc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042899"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201429"
 ---
 # <a name="get-live-response-results"></a>获取实时响应结果
 
@@ -55,14 +55,14 @@ ms.locfileid: "60042899"
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的版本Windows。**
+- **验证是否正在运行受支持的 Windows** 版本。
 
-  设备必须运行以下版本之一的 Windows
+  设备必须运行以下版本之一Windows
 
   - **Windows 10**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
     - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [版本 1809 (RS 5) ](/windows/whats-new/whats-new-windows-10-version-1809) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [版本 1809 (RS 5 ](/windows/whats-new/whats-new-windows-10-version-1809)) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
@@ -78,8 +78,8 @@ ms.locfileid: "60042899"
 
 |权限类型|权限|权限显示名称|
 |---|---|---|
-应用程序|Machine.Read.All|"'读取所有计算机配置文件'"
-应用程序|"Machine.ReadWrite.All|"读取和写入所有计算机信息"
+Application|Machine.Read.All|"'读取所有计算机配置文件'"
+Application|"Machine.ReadWrite.All|"读取和写入所有计算机信息"
 |委派（工作或学校帐户）|Machine.LiveResponse|在特定的计算机上运行实时响应|
 
 ## <a name="http-request"></a>HTTP 请求

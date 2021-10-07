@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附传递身份验证的先决条件。
-ms.openlocfilehash: da97f8b18105b148eb5c87fecef12335eacd8f07
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bbaa3fcf2333661f2ff077f80ac617cc0f9090df
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196758"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214149"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中传递身份验证的标识和设备访问先决条件
 
@@ -37,7 +37,7 @@ ms.locfileid: "59196758"
 4. 配置密码写回服务
 5. 配置自助密码重置
 6. 配置多重身份验证
-7. 启用已加入域的计算机的Windows注册
+7. 启用已加入域的计算机的自动Windows注册
 8. 配置 Azure AD 密码保护 
 9. 启用 Azure AD Identity Protection
 10. 为 Exchange Online 和 Skype for Business Online 启用新式身份验证
@@ -90,7 +90,7 @@ ms.locfileid: "59196758"
 
 ## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>阶段 7：启用已加入域的计算机的Windows注册 
 
-按照[以下说明](/azure/active-directory/devices/hybrid-azuread-join-plan)启用已加入域的计算机的Windows注册。
+按照[以下说明](/azure/active-directory/devices/hybrid-azuread-join-plan)启用已加入域的计算机的自动Windows注册。
 
 ## <a name="phase-8-configure-azure-ad-password-protection"></a>第 8 阶段：配置 Azure AD 密码保护 
 

@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 29aa8008dc3674760e4e720f155d6df82068ab55
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2ca1f3d257e40fab340972b3b0d96ce0f7b9977b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402174"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194029"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>使用 SIEM REST API 拉取 Microsoft Defender 的终结点检测
 
@@ -66,7 +66,7 @@ Microsoft Defender for Endpoint 支持 _授权_ 授予流和客户端凭据流�
 > [!NOTE]
 > Microsoft Defender 安全中心将类似的警报检测合并到单个警报中。 此 API 基于您设置的查询参数，以原始形式拉取警报检测，从而使您可以应用自己的分组和筛选。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 在调用 Microsoft Defender for Endpoint 终结点以拉取检测之前，你需要在 AAD Azure Active Directory (启用 SIEM) 。 有关详细信息，请参阅在 [Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
 
@@ -106,7 +106,7 @@ resource=https%3A%2F%2Fgraph.windows.net&client_id=35e0f735-5fe4-4693-9e68-3de80
 }
 ```
 
-你现在可以在对 Defender for Endpoint API 的请求 *access_token* 字段的值。
+现在，可以在对 *Defender* for Endpoint API 的请求access_token字段的值。
 
 ## <a name="request"></a>请求
 

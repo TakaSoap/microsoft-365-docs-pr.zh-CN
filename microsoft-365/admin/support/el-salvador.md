@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4151df013ffd1116a65740dc44aed1707c6f3950
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3d606c04e4e03ecf32e8b8465bacc381a63d1b92
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197137"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202245"
 ---
 # <a name="contact-support-for-el-salvador"></a>联系萨尔瓦多的支持人员
 
@@ -30,7 +30,7 @@ ms.locfileid: "59197137"
 
 输入代码 7007
 
-## <a name="hours"></a>小时
+## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
 西班牙语：Mon-Fri上午 9 点到下午 5 点

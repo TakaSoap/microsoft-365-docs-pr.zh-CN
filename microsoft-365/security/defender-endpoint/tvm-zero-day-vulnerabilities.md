@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ad582fe34f4fa3b7943dc90ffd6fd12e7615c618
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 197dba88c8944559f152772b20935450b6f30c9b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010205"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193897"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>缓解零日漏洞 - 危险和漏洞管理
 
@@ -39,7 +39,7 @@ ms.locfileid: "60010205"
 
 零日漏洞是公开披露的漏洞，尚未发布正式的修补程序或安全更新程序。 零日漏洞通常具有高严重性级别，并且被主动利用。
 
-威胁和漏洞管理将仅显示其拥有相关信息的零日漏洞。
+威胁漏洞管理将仅显示其拥有相关信息的零日漏洞。
 
 ## <a name="find-information-about-zero-day-vulnerabilities"></a>查找有关零日漏洞的信息
 
@@ -100,7 +100,7 @@ ms.locfileid: "60010205"
 
 ## <a name="track-zero-day-remediation-activities"></a>跟踪零日修正活动
 
-转到["危险和漏洞管理"](tvm-remediation.md)页以查看修正活动项。 如果选择"注意需要"修正选项，则没有进度栏、票证状态或截止日期，因为我们可以监视任何实际操作。 您可以按修正类型（如"软件更新"或"需要注意"）进行筛选，以查看同一类别的所有活动项。
+转到["危险和漏洞管理"](tvm-remediation.md)页面查看修正活动项。 如果选择"注意需要"修正选项，则没有进度栏、票证状态或截止日期，因为我们可以监视任何实际操作。 您可以按修正类型（如"软件更新"或"需要注意"）进行筛选，以查看同一类别的所有活动项。
 
 ## <a name="patching-zero-day-vulnerabilities"></a>修补零日漏洞
 
@@ -110,7 +110,7 @@ ms.locfileid: "60010205"
 
 ## <a name="related-articles"></a>相关文章
 
-- [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威胁漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [仪表板](tvm-dashboard-insights.md)
 - [安全性建议](tvm-security-recommendation.md)
 - [软件库存](tvm-software-inventory.md)

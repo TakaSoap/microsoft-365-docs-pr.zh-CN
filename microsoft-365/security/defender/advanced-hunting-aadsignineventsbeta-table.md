@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9913f431c0a20d239019d645f04328e75b548b12
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: d5e5ee451920f996dd3cc710cd6a0dbe9aaf3c50
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042730"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202675"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -49,16 +49,16 @@ ms.locfileid: "60042730"
 |`Timestamp`|datetime|生成记录的日期和时间|
 |`Application`|string|执行录制的操作的应用程序|
 |`ApplicationId`|string|应用程序的唯一标识符|
-|`LogonType`|string|登录会话的类型，特别是 RDP (、) 、网络、批处理和服务中的远程交互式会话|
+|`LogonType`|string|登录会话的类型，特别是交互式、远程交互式 (RDP) 、网络、批处理和服务|
 |`ErrorCode`|int|包含登录错误时的错误代码。 若要查找特定错误代码的说明，请访问 <https://aka.ms/AADsigninsErrorCodes> 。|
 |`CorrelationId`|string|登录事件的唯一标识符|
 |`SessionId`|string|在访问或会话期间由网站服务器分配给用户的唯一号码|
 |`AccountDisplayName`|string|通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间名首字母和姓氏或姓氏的组合。|
 |`AccountObjectId`|string|Azure AD 中帐户的唯一标识符|
-|`AccountUpn`|string|帐户 (UPN) 用户主体名称|
+|`AccountUpn`|string|帐户 (UPN) 的用户主体名称|
 |`IsExternalUser`|int|指示登录的用户是否位于外部。 可能的值：-1 (未) ，0 (外部) ，1 (外部) 。|
 |`IsGuestUser`|boolean|指示登录的用户是否是租户中的来宾|
-|`AlternateSignInName`|string|本地用户主体 (UPN) 登录 Azure AD 的用户名称|
+|`AlternateSignInName`|string|本地用户主体名称 (登录 Azure AD) UPN 帐户|
 |`LastPasswordChangeTimestamp`|datetime|上次登录的用户更改其密码的日期和时间|
 |`ResourceDisplayName`|string|访问的资源的显示名称|
 |`ResourceId`|string|访问的资源的唯一标识符|
@@ -70,16 +70,16 @@ ms.locfileid: "60042730"
 |`IsManaged`|int|指示启动登录的设备是否是托管设备 (1) 0 (托管) |
 |`IsCompliant`|int|指示启动登录的设备是否符合 (1) 0 (不兼容) |
 |`AuthenticationProcessingDetails`|string|有关身份验证处理器的详细信息|
-|`AuthenticationRequirement`|string|登录所需的身份验证类型。 可能的值：需要 multiFactorAuthentication (MFA，) singleFactorAuthentication (不需要 MFA) 。|
+|`AuthenticationRequirement`|string|登录所需的身份验证类型。 可能的值：multiFactorAuthentication (需要 MFA) ，singleFactorAuthentication (不需要 MFA) 。|
 |`TokenIssuerType`|int|指示令牌颁发者是否Azure Active Directory (0) Active Directory 联合身份验证服务 (1) |
 |`RiskLevelAggregated`|int|登录期间聚合的风险级别。 可能的值：0 (未设置) 、1 (无) 、10 (低) 、50 (medium) 或 100 (high) 。|
 |`RiskDetails`|int|有关登录用户的风险状态的详细信息|
-|`RiskState`|int|指示有风险的用户状态。 可能的值：0 (无) 、1 (经确认的安全) 、2 (已修复) 、3 (已消除) 、4 (存在风险) 或 5 (确认遭到入侵) 。|
+|`RiskState`|int|指示有风险的用户状态。 可能的值：0 (无) 、1 (确认安全) 、2 (已修复) 、3 (已消除) 、4 (存在风险) 或 5 (确认已泄露) 。|
 |`UserAgent`|string|来自 Web 浏览器或其他客户端应用程序的用户代理信息|
 |`ClientAppUsed`|string|指示使用的客户端应用|
 |`Browser`|string|有关用于登录的浏览器版本的详细信息|
 |`ConditionalAccessPolicies`|string|应用于登录事件的条件访问策略的详细信息|
-|`ConditionalAccessStatus`|int|应用于登录的条件访问策略的状态。 可能的值是 0 (应用) ，1 (尝试应用策略失败) ，或 2 (策略未) 。|
+|`ConditionalAccessStatus`|int|应用于登录的条件访问策略的状态。 可能的值是 0 (应用) 策略，1 (尝试应用策略失败) ，或 2 (策略未) 。|
 |`IPAddress`|string|分配给终结点的 IP 地址，在相关的网络通信期间使用|
 |`Country`|string|指示客户端 IP 地址已异地地理位置的两个字母的代码|
 |`State`|string|登录发生的位置（如果可用）|

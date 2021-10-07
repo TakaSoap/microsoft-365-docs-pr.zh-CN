@@ -15,18 +15,18 @@ ms.collection:
 - SPO_Content
 - m365solution-scenario
 - m365solution-spintranet
-localization_priority: Normal
-description: 了解Teams多地理位置Microsoft 365工作原理。
-ms.openlocfilehash: 6df7d20b8541ec6aefca1f30d7fbfe6bf7c3f6c9
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.localizationpriority: medium
+description: 了解如何Teams多地理位置Microsoft 365工作。
+ms.openlocfilehash: e561332052f226fe98d0304bd6a76d6b76cfd1c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043007"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177275"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>云中的多地理位置Microsoft Teams
 
-多地理位置功能Teams允许Teams聊天数据以静止状态存储在指定地理位置。 聊天数据由聊天消息（包括私人消息、频道消息和聊天中使用的图像）组成。
+利用云中的多Teams，Teams聊天数据可以存储在指定地理位置中的静止状态。 聊天数据由聊天消息（包括私人消息、频道消息和聊天中使用的图像）组成。
 
 Teams用户和组 (PDL) 首选数据位置，以确定存储数据的位置。 如果未设置 PDL 或 PDL 无效，则数据存储在租户的中心位置。
 
@@ -37,7 +37,7 @@ Teams用户和组 (PDL) 首选数据位置，以确定存储数据的位置。 �
 
 用户聊天包括一对一、一对多和私人会议消息。
 
-当创建一个新用户时，Teams读取用户的 PDL，并存储其所有聊天数据。
+在新建用户时，Teams读取用户的 PDL，并存储其所有聊天数据。
 
 对于现有用户，如果管理员添加或修改用户的 PDL，该用户的聊天数据将添加到迁移队列中以移动到指定的地理位置。
 
@@ -51,13 +51,13 @@ Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 
 ## <a name="channel-messages"></a>频道消息
 
-每个Microsoft 365组都有 PDL (首选数据位置) 该位置表示要存储数据的地理位置。 Teams与每个团队关联的组使用 PDL 来确定在何处存储该团队的频道消息数据。 这包括私人频道以及频道会议内发生的聊天。
+每个Microsoft 365组都有一个首选数据 (PDL) 它表示要存储数据的地理位置。 Teams使用与每个团队关联的组的 PDL 来确定在何处存储该团队的频道消息数据。 这包括私人频道以及频道会议内发生的聊天。
 
-当用户创建新团队时，该用户的 PDL 将确定分配给该组的 PDL Microsoft 365。 组 PDL 确定团队数据的存储位置。 如果该用户的 PDL 稍后发生更改，则组的 PDL 不会更改。
+当用户创建新团队时，该用户的 PDL 将确定分配给该组Microsoft 365 PDL。 组 PDL 确定团队数据的存储位置。 如果该用户的 PDL 稍后发生更改，则组的 PDL 不会更改。
 
 对于现有团队，如果管理员添加或修改支持团队的 Microsoft 365 组的 PDL，该团队的频道消息数据将添加到迁移队列中，以移动到指定地理位置。
 
-更改组组的 PDL Microsoft 365将Teams数据排入队列，以迁移到所选位置。 但是，这不会自动SharePoint组关联的网站或文件。 必须按照将网站移动到其他地理位置中SharePoint[移动网站。](/microsoft-365/enterprise/move-sharepoint-between-geo-locations) 请务必执行这两个步骤，以避免Teams组的数据SharePoint访问数据。
+更改组组的 PDL Microsoft 365将Teams数据排入队列，以迁移到所选位置。 但是，这不会迁移SharePoint组关联的网站或文件。 必须按照将网站移动到其他地理位置SharePoint[移动网站。](/microsoft-365/enterprise/move-sharepoint-between-geo-locations) 请务必执行这两个步骤，以避免Teams组的数据SharePoint访问数据。
 
 若要查找团队数据的当前位置，请连接到 Teams [PowerShell](/powershell/module/teams/connect-microsoftteams)并运行以下命令：
 

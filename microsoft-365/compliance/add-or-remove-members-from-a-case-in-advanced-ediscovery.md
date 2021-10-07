@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何在管理案例时添加或删除可以访问Advanced eDiscovery的成员。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3571adf6c9bbba791ba5d76f4eba5428dc9f453c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 13a97af715a3f81b5570617f18b10cd8e35f9aec
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175463"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217098"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>向事例添加成员或从事例中删除成员
 
-可添加或删除成员，管理可以访问此案例的人。 但是，在成员可以访问 Advanced eDiscovery case (并执行) 情况下的任务之前，您必须将用户添加到安全与合规中心的"权限"页上的"电子数据展示管理员"角色组。  有关详细信息，请参阅[分配电子数据展示权限](./assign-ediscovery-permissions.md)。
+可添加或删除成员，管理可以访问此案例的人。 但是，在成员可以访问 Advanced eDiscovery case (并执行) 情况下的任务之前，您必须将用户添加到 Microsoft 365 合规中心 中"权限"页上的"电子数据展示管理员"角色组中。  有关详细信息，请参阅[分配电子数据展示权限](./assign-ediscovery-permissions.md)。
 
 1. 在 **高级电子数据** 页面上，转到你想要将成员添加到的大小写。
 
@@ -44,3 +44,6 @@ ms.locfileid: "60175463"
 6. 选择要添加为案例成员的人或角色组后，单击"添加 **"。**
 
 7. 在 **管理此案例** 弹出页面中， **保存** 以保存新的案例成员列表。
+
+> [!IMPORTANT]
+> 如果在已添加为案例成员的角色组中添加或删除角色，则角色组将自动删除为案例 (或角色组是) 成员的任何情况。 这样做的原因是保护组织避免无意中向案件的成员提供其他权限。 同样，如果删除了某个角色组，则它将从它作为成员的所有事例中删除。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases)。

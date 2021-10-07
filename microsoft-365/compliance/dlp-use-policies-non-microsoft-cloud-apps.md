@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将 dlp 策略用于非 Microsoft 云应用。
-ms.openlocfilehash: 5817bad8e02e0aeee6aab88ca1a4cabe45822b51
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 314520ce48b53d4629d0ebd2fa2bed0cdb798c8a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175537"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177575"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>对非 Microsoft 云应用使用数据丢失防护策略
 
-数据丢失防护 (DLP) 策略到非 Microsoft 云应用是 DLP 功能Microsoft 365的一部分;使用这些功能，可以跨服务发现和保护Microsoft 365项。 有关所有 Microsoft DLP 产品/服务的信息，请参阅了解 [数据丢失防护](dlp-learn-about-dlp.md)。
+DLP (策略) Microsoft 云应用的数据丢失防护是 DLP 功能Microsoft 365的一部分;使用这些功能，可以跨服务发现和保护Microsoft 365项。 有关所有 Microsoft DLP 产品/服务的信息，请参阅了解 [数据丢失防护](dlp-learn-about-dlp.md)。
 
 您可以使用 DLP 策略对非 Microsoft 云应用进行监视和检测，以监视和检测何时通过非 Microsoft 云应用使用和共享敏感项目。 使用这些策略可为你提供所需的可见性和控制，以确保正确使用和保护它们，并且有助于防止可能损害它们的风险行为。
 
@@ -37,7 +37,7 @@ ms.locfileid: "59175537"
 
 ### <a name="skusubscriptions-licensing"></a>SKU/订阅许可
 
-开始对非 Microsoft 云应用使用 DLP 策略之前，Microsoft 365[订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)和任何加载项。 若要访问和使用此功能，你必须拥有以下订阅或加载项之一：
+开始将 DLP 策略用于非 Microsoft 云应用之前，Microsoft 365[订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)和任何加载项。 若要访问和使用此功能，你必须拥有以下订阅或加载项之一：
 
 - Microsoft 365 E5
 - Microsoft 365 E5 合规
@@ -63,10 +63,10 @@ ms.locfileid: "59175537"
 - [连接Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
 - [连接Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 
-将云应用连接到 云应用安全 后，Microsoft 365创建 DLP 策略。
+将云应用连接到云应用安全，您可以为Microsoft 365创建 DLP 策略。
 
 > [!NOTE]
-> 此外，还可使用 Microsoft Cloud App Security Microsoft 云应用创建 DLP 策略。 但是，建议使用 Microsoft 365 Microsoft 云应用创建和管理 DLP 策略。
+> 此外，还可使用 Microsoft Cloud App Security Microsoft 云应用创建 DLP 策略。 但是，建议使用 dlp Microsoft 365 Microsoft 云应用创建和管理 DLP 策略。
 
 ## <a name="create-a-dlp-policy-to-a-non-microsoft-cloud-app"></a>创建对非 Microsoft 云应用的 DLP 策略
 
@@ -79,7 +79,7 @@ ms.locfileid: "59175537"
 
    ![Box-US 和 Box-General。](../media/2-dlp-non-microsoft-cloud-app-box.png)
 
-你可以为每种受支持的非 Microsoft 云应用选择各种操作。 对于每一个应用，可能的操作 (取决于云应用 API) 。
+你可以为每种受支持的非 Microsoft 云应用选择各种操作。 对于每一个应用，都有不同的可能 (取决于云应用 API) 。
 
 ![创建规则。](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
 

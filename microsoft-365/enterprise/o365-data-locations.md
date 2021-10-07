@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定 Microsoft 365 客户数据在全球范围内的存储位置
-ms.openlocfilehash: 675717eceb1d7de80a66aad18429bd8bb03c2b34
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a48afdceef482a124131495d3f1148f9e8da4d9f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196771"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201585"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客户数据的存储位置
 
@@ -156,7 +156,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -252,7 +252,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -588,7 +588,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -756,7 +756,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -924,7 +924,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -972,7 +972,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -1068,7 +1068,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -1260,7 +1260,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -1284,7 +1284,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -1308,7 +1308,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -1428,7 +1428,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -1908,7 +1908,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -2028,7 +2028,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -2316,7 +2316,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -2580,7 +2580,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -2676,7 +2676,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -2964,7 +2964,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -3084,7 +3084,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -3348,7 +3348,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -3372,7 +3372,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -3444,7 +3444,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -3636,7 +3636,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -3756,7 +3756,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -3804,7 +3804,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -3828,7 +3828,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -3900,7 +3900,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -4020,7 +4020,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -4044,7 +4044,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -4068,7 +4068,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -4164,7 +4164,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -4188,7 +4188,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -4236,7 +4236,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -4308,7 +4308,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -4332,7 +4332,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -4740,7 +4740,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -4932,7 +4932,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -5028,7 +5028,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -5148,7 +5148,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -5292,7 +5292,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -5364,7 +5364,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -5388,7 +5388,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -5436,7 +5436,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -5460,7 +5460,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -5604,7 +5604,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -5796,7 +5796,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -5844,7 +5844,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -5892,7 +5892,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |
@@ -5916,7 +5916,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
-| Microsoft Planner | 全球地理位置 2 – 亚太地区 |
+| Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
 | Yammer | 美国 |
 | OneNote 服务 | 全球地理位置 2 – 亚太地区 |

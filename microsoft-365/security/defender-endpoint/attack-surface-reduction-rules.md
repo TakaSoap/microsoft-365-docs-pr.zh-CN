@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b73fe25f7ff8ce6ef43c34cdfa2b8806f48f66e4
-ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
+ms.openlocfilehash: d84a234a07edddf22f560bc55b5efb5f5dbb62de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60069085"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201513"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻击面减少规则
 
@@ -41,7 +41,7 @@ ms.locfileid: "60069085"
 
 > [!Note]
 >
-> - 除非另有说明，否则最低 Windows 10 内部版本为版本 &nbsp; 1709 (RS3，内部版本 16299) 或更高版本;最低 Windows Server 内部版本为 &nbsp; 版本 1809 或更高版本。
+> - 除非另有说明，否则最低 Windows 10 内部版本为版本 &nbsp; 1709 (RS3、内部版本 16299) 或更高版本;最低 Windows Server 内部版本为 &nbsp; 版本 1809 或更高版本。
 >
 > - \* 除非另有说明，否则所有规则都支持文件和文件夹排除。
 
@@ -101,7 +101,7 @@ ms.locfileid: "60069085"
 
 此规则阻止应用程序将易受攻击的已签名驱动程序写入磁盘。 具有获取内核访问权限的足够权限的本地应用程序可能会利用易受攻击的、易受攻击的 \-  \- 驱动程序。 易受攻击的已签名驱动程序使攻击者能够禁用或规避安全解决方案，最终导致系统泄露。
 
-阻止 **滥用被攻击的易受** 攻击的已签名驱动程序规则不会阻止加载系统中已存在的驱动程序。
+阻止 **滥用被攻击的易受攻击的** 已签名驱动程序规则不会阻止加载系统中已存在的驱动程序。
 
 > [!NOTE]
 >
@@ -127,7 +127,7 @@ Dependencies:
 
 此规则通过阻止 Adobe Reader 创建进程来阻止攻击。
 
-通过社交工程或攻击，恶意软件可以下载和启动有效负载，并退出 Adobe Reader。 通过阻止 Adobe Reader 生成子进程，尝试将其用作矢量的恶意软件可以防止传播。
+通过社交工程或攻击，恶意软件可以下载和启动有效负载，并退出 Adobe Reader。 通过阻止 Adobe Reader 生成子进程，尝试将其用作矢量的恶意软件可防止传播。
 
 Intune 名称： `Process creation from Adobe Reader (beta)`
 
@@ -146,7 +146,7 @@ GUID：`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 此规则阻止Office创建子进程。 Office包括 Word、Excel、PowerPoint、OneNote 和 Access。
 
-创建恶意子进程是常见的恶意软件策略。 滥用作为Office的恶意软件通常会运行 VBA 宏并攻击代码以下载并尝试运行更多有效负载。 但是，某些合法的业务线应用程序也可能出于恶意目的生成子进程;例如生成命令提示符或使用 PowerShell 配置注册表设置。
+创建恶意子进程是常见的恶意软件策略。 滥用作为Office的恶意软件通常会运行 VBA 宏，并利用代码下载并尝试运行更多有效负载。 但是，某些合法的业务线应用程序也可能出于恶意目的生成子进程;例如生成命令提示符或使用 PowerShell 配置注册表设置。
 
 Intune 名称： `Office apps launching child processes`
 
@@ -165,7 +165,7 @@ GUID：`d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 此规则通过锁定 LSASS 服务中的本地安全机构子系统服务 (凭据) 。
 
-LSASS 对在计算机中登录Windows进行身份验证。 Microsoft Defender Credential Guard Windows 10通常会阻止尝试从 LSASS 提取凭据。 但是，某些组织无法在所有计算机上启用 Credential Guard，因为自定义智能卡驱动程序或其他加载到本地安全机构 (LSA) 的程序的兼容性问题。 在这些情况下，攻击者可以使用 Mimikatz 等黑客工具从 LSASS 中清除明文密码和 NTLM 哈希。
+LSASS 对登录 Windows进行身份验证。 Microsoft Defender Credential Guard Windows 10通常会阻止尝试从 LSASS 提取凭据。 但是，某些组织无法在所有计算机上启用 Credential Guard，因为自定义智能卡驱动程序或其他加载到本地安全机构 (LSA) 。 在这些情况下，攻击者可以使用 Mimikatz 等黑客工具从 LSASS 中清除明文密码和 NTLM 哈希。
 
 > [!NOTE]
 > 在某些应用中，该代码枚举所有正在运行的进程，并尝试以详尽的权限打开它们。 此规则拒绝应用的进程打开操作，将详细信息记录到安全事件日志中。 此规则会产生大量噪音。 如果你的应用仅枚举 LSASS，但在功能方面没有实际影响，则无需将其添加到排除列表。 此事件日志条目本身不一定表示恶意威胁。
@@ -187,7 +187,7 @@ GUID：`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 此规则阻止从 Microsoft Outlook 应用程序、Outlook.com 和其他热门 Web 邮件提供程序内打开的电子邮件启动以下文件类型：
 
-- 可执行 (文件，例如 .exe、.dll 或 .scr) 
+- 可执行文件 (，如 .exe、.dll 或 .scr) 
 - 脚本文件 (如 PowerShell .ps、Visual Basic .vbs 或 JavaScript .js文件) 
 
 Intune 名称： `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
@@ -280,9 +280,9 @@ GUID：`d3e037e1-3eb8-44c8-a917-57927947596d`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>阻止Office应用程序创建可执行内容
 
-此规则通过Office恶意代码写入磁盘，Excel和PowerPoint Word、Excel 和 PowerPoint 等应用创建潜在恶意可执行内容。
+此规则Office Word、Excel 和 PowerPoint 等应用创建潜在恶意可执行内容，从而阻止将恶意代码写入磁盘。
 
-滥用作为Office的恶意软件可能会尝试破坏安全Office恶意组件保存到磁盘。 这些恶意组件在计算机重新启动后将一直保留于系统。 因此，此规则可防御常见的持久性技术。
+滥用作为Office的恶意软件可能会尝试Office恶意组件保存到磁盘。 这些恶意组件在计算机重新启动后将一直保留于系统。 因此，此规则可防御常见的持久性技术。
 
 Intune 名称： `Office apps/macros creating executable content`
 
@@ -297,7 +297,7 @@ GUID：`3b576869-a4ec-4529-8536-b80a7769e899`
 
 依赖项：MDAV、RPC
 
-### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>阻止Office应用程序将代码注入其他进程
+### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>阻止Office将代码注入其他进程
 
 此规则阻止代码注入尝试Office应用注入其他进程。
 
@@ -369,7 +369,7 @@ GUID：`e6db77e5-3df2-4cf1-b95a-636979351e5b`
 此规则阻止通过 [PsExec](/sysinternals/downloads/psexec) 和 [WMI 创建](/windows/win32/wmisdk/about-wmi) 的进程运行。 PsExec 和 WMI 都可以远程执行代码，因此存在恶意软件滥用此功能以用于命令和控制目的，或在整个组织的网络中传播感染的风险。
 
 > [!WARNING]
-> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置[管理器Microsoft Endpoint Configuration Manager管理](/configmgr)不兼容，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
+> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置管理器[Microsoft Endpoint Configuration Manager，](/configmgr)因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
 
 Intune 名称： `Process creation from PSExec and WMI commands`
 
@@ -386,7 +386,7 @@ GUID：`d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>阻止从 USB 运行的不受信任的和未签名的进程
 
-通过此规则，管理员可以阻止未签名或不受信任的可执行文件从 USB 可移动驱动器（包括 SD 卡）运行。 阻止的文件类型包括可执行 (文件，如 .exe、.dll 或 .scr) 
+通过此规则，管理员可以阻止未签名或不受信任的可执行文件从 USB 可移动驱动器（包括 SD 卡）运行。 阻止的文件类型包括可执行 (文件，.exe、.dll .scr) 
 
 Intune 名称： `Untrusted and unsigned processes that run from USB`
 

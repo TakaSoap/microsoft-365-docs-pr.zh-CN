@@ -10,15 +10,15 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Strat_SP_gtc
 description: 了解如何使用 Region 参数配置电子数据展示，以在多地理位置的附属Microsoft 365使用。
-ms.openlocfilehash: 4d3481fe8b72bb970893ce065293a7a2cc717331
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1bdf03a7c639e659d1b4ec12c691c65863318ad7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195738"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177263"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 多地理位置电子数据展示配置
 

@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: medium
 description: 了解文档理解模型和表单处理模型之间的主要区别。
-ms.openlocfilehash: e9f9c417d8603be0d933607ccf527c6d821bcc72
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: HT
+ms.openlocfilehash: 7f79bc12c21162d294aaf15df0ef7d1434889faf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171019"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201729"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文档理解与表单处理模型之间的差异 
 

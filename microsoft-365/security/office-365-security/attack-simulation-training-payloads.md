@@ -6,18 +6,18 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 中为攻击模拟培训创建自定义负载。
 ms.technology: mdo
-ms.openlocfilehash: d67da825862cc026b8dd3bc5b7a2f603606f1a4a
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 62783abb7d3361c654d5c959c1acb046754c4973
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010291"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202497"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>创建用于攻击模拟培训的自定义负载
 
@@ -45,10 +45,10 @@ Microsoft 为各种社交工程技术提供了可靠的有效负载目录，以�
 
 格式文本编辑器可用于创建有效负载。 还可以导入预先创建的电子邮件。 创建电子邮件正文时，请利用动态标记将电子邮件个性化到目标。 单击 **"网络钓鱼"** 链接，将以前选择的网络钓鱼 URL 添加到邮件正文中。
 
-![在 Microsoft Defender for Office 365 的有效负载创建中突出显示的网络钓鱼链接和Office 365。](../../media/attack-sim-preview-payload-email-body.png)
+![在 Microsoft Defender for Office 365 有效负载创建中突出显示的网络钓鱼链接和Office 365。](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
-> 为了节省时间，请切换为将电子邮件中所有链接 **替换为网络钓鱼链接 的选项**。
+> 为了节省时间，请切换为将电子邮件中所有链接替换为 **网络钓鱼链接 的选项**。
 
 完成有效负载生成后，单击"下一 **步"。**
 

@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,14 +19,14 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 search.appverid: MET150
-description: 了解如何更新帐单邮寄地址或用于接收商业Microsoft 365通知的电子邮件地址。
+description: 了解如何更新帐单邮寄地址或用于接收适用于Microsoft 365帐单通知的电子邮件地址。
 ms.date: 04/07/2021
-ms.openlocfilehash: 383e8febffa2a65e01c1ae0c543d7b984a96eb26
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: abc86bdaad0f28bf0590e19d8a7d37fbc21239b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200681"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202053"
 ---
 # <a name="change-your-billing-addresses"></a>更改帐单邮寄地址
 
@@ -110,7 +110,7 @@ ms.locfileid: "59200681"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
 
-    如果你在中国使用由世纪Office 365运营的帐单，请参阅查看帐单或获取由世纪Office 365运营的[发票](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md)。
+    如果你在中国使用由世纪Office 365运营的帐单，请参阅查看帐单或获取由世纪Office 365运营的[发票。](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md)
 
 ::: moniker-end
 
@@ -163,6 +163,6 @@ ms.locfileid: "59200681"
 ## <a name="related-content"></a>相关内容
 
 [查看帐单或发票](view-your-bill-or-invoice.md)（文章）\
-[了解帐单或发票](understand-your-invoice2.md) (文章) \
+[了解帐单或发票 (](understand-your-invoice2.md) 文章) \
 [支付订阅费用](pay-for-your-subscription.md) (文章) \
-[订阅和计费 - 管理员帮助](../index.yml) (链接页) 
+[订阅和计费 - 管理员帮助](../index.yml) (链接页面) 

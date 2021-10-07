@@ -12,37 +12,37 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 search.appverid: ''
-localization_priority: medium
+ms.localizationpriority: medium
 description: 了解如何在"主题"中创建新Microsoft Viva主题。
-ms.openlocfilehash: a66fa4e3b278187df266ddcdd69dd8a6f15a365a
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: cfc0eabb13af569c603de231a5e8b5e1750c8c1e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126850"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214161"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>在"主题"Microsoft Viva主题
 
 在 Viva 主题中，如果尚未通过索引发现一个主题，或者 AI 技术没有找到足够证据来将它确定为主题，你可以创建新主题。
 
 > [!Note] 
-> 虽然 AI 收集的主题中的信息是经过安全[](topic-experiences-security-trimming.md)修整的，但请注意，手动创建的主题中的主题说明和人员信息对有权查看该主题的所有用户可见。 
+> 虽然 AI 收集的主题信息是经过安全修整[](topic-experiences-security-trimming.md)的，但请注意，手动创建的主题中的主题说明和人员信息对有权查看该主题的所有用户可见。 
 
 
 ## <a name="requirements"></a>要求
 
 若要创建新主题，您需要：
 - 拥有 Viva 主题许可证。
-- 具有创建或 [**Who主题的权限**](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva Topics 主题权限设置中向用户授予此权限。 
+- 具有创建Who [**编辑主题的权限**](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva Topics 主题权限设置中向用户授予此权限。 
 
 > [!Note] 
-> 具有在主题中心管理主题的权限的用户 (知识) 已拥有创建和编辑主题的权限。
+> 具有主题中心主题管理权限的用户 (知识) 已拥有创建和编辑主题的权限。
 
 ## <a name="to-create-a-topic"></a>创建主题
 
 可以从两个位置创建新主题：
 
-- 主题中心主页：具有 **Who** 的任何许可用户可以创建或编辑主题权限 (参与者) 可以通过选择"新建"菜单并选择"主题"页面，从主题中心创建新 **主题**。  
+- 主题中心主页：具有 **Who** 的任何许可用户可以创建或编辑主题权限 (参与者) 可以通过选择"新建"菜单并选择"主题"页面，从主题中心创建新主题。   
 
     ![主题中心中的新主题。](../media/knowledge-management/new-topic.png)  
 
@@ -74,12 +74,12 @@ ms.locfileid: "60126850"
 
    ![固定的文件和页面。](../media/knowledge-management/pinned-files-and-pages.png)
  
-    若要添加新文件，请选择"添加"，SharePoint"常用或关注的网站"中选择"网站"，然后从网站的文档库中选择该文件。
+    若要添加新文件，请选择"添加"，从SharePoint"或"关注的网站"中选择"网站"，然后从网站的文档库中选择该文件。
 
     还可使用“**来自链接**”选项，以通过提供 URL 来添加文件或页面。 
 
     > [!Note] 
-    > 你添加的文件和页面必须位于同一个Microsoft 365租户中。 如果要在主题中添加指向外部资源的链接，可以通过步骤 8 中的画布图标添加该链接。
+    > 您添加的文件和页面必须位于同一Microsoft 365租户中。 如果要在主题中添加指向外部资源的链接，可以通过步骤 8 中的画布图标添加该链接。
 
 
 6.  “**相关网站**”部分显示具有主题相关信息的网站。 

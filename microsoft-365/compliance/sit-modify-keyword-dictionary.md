@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何在合规性中心内修改Microsoft 365词典。
-ms.openlocfilehash: e060b09f271615f98fe43002029144b119013439
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3cf6a2df702a109a5e63c641f7ac64a9f9ab7b4f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200526"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60187997"
 ---
 # <a name="modify-a-keyword-dictionary"></a>修改关键字词典
 
@@ -31,7 +31,7 @@ ms.locfileid: "59200526"
 
 ## <a name="modify-a-keyword-dictionary-in-compliance-center"></a>在合规中心修改关键字词典
 
-关键字词典可以用作或用作 SIT 模式 (`Primary elements` `Supporting elements` 敏感信息) 类型。 可以在创建 SIT 时或现有 SIT 中编辑关键字词典。 例如，编辑现有关键字词典：
+关键字字典可以用作或用作 SIT 模式 (`Primary elements` `Supporting elements` 敏感信息) 类型。 可以在创建 SIT 时或现有 SIT 中编辑关键字词典。 例如，编辑现有关键字词典：
 
 1. 打开包含要更新的关键字词典的模式。
 2. 找到要更新的关键字词典并选择"编辑"。 

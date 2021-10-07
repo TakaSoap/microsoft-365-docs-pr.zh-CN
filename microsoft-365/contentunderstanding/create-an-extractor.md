@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: medium
 description: 了解如何在 Microsoft SharePoint Syntex 中创建提取程序。
-ms.openlocfilehash: 645ecafc1ebad3031dc7ca3b70f5ceb95e72af39
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: HT
+ms.openlocfilehash: d7d4352283645a80844e0dcc8cd2715a8357b5be
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171021"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177311"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建提取程序
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,29 +23,29 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: 获取Microsoft 365，以便你可以保护你的市场活动免受电子邮件、数据和通信的网络安全威胁。
-ms.openlocfilehash: 3d70fef721417dd823dc272bbb7b08c04c037f98
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 获取Microsoft 365，以便你可以保护市场活动免受电子邮件、数据和通信的网络安全威胁。
+ms.openlocfilehash: e89be7c15cd00279a0b78323f992c1d3e2195f89
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170803"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202077"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>获取Microsoft 365活动信息
 
-具有此Microsoft 365 商业高级版可以使用本指南为电子邮件和协作配置额外的安全性。 但是，美国的宣传活动和政治派对有资格享受特别优惠Microsoft 365。 目前，此特殊定价可用于：
+任何具有Microsoft 365 商业高级版人员都可以使用本指南为电子邮件和协作配置额外的安全性。 但是，美国的宣传活动和政治派对有资格享受特别优惠Microsoft 365。 目前，此特殊定价可用于：
 
 - 美国、加拿大和新西兰的国家/地区级政治派对
 - 美国和新西兰的国家/或联邦政治宣传活动
-- 美国州范围内的政治宣传活动 (例如：寻求调控机构、州律师或律师) *
+- 美国州范围内的政治宣传活动 (例如：寻求调控机构、州律师或律师职务的) *
 
-    *由于当地法规，我们现在无法Microsoft 365以下州的活动活动：CO、DE、IL、OK、WI & WY。 我们鼓励这些州的活动在适用于商业的 Microsoft 365[产品/服务](https://www.office.com/business)。
+    *由于当地法规，我们现在无法Microsoft 365以下州的活动活动：CO、DE、IL、OK、WI & WY。 我们鼓励这些州的活动在适用于商业的 Microsoft 365[探索其他产品/服务](https://www.office.com/business)。
 
 - 美国的州一级政治派对
 
-如果你的活动或政治派对符合资格Microsoft 365，则适用于市场活动的计划是 Microsoft 提供的成本最低计划。 请参阅[注册Microsoft 365活动。](m365-campaigns-sign-up.md)  
+如果你的市场活动或政治派对符合资格Microsoft 365，则适用于市场活动的计划是 Microsoft 提供的成本最低计划。 请参阅[注册Microsoft 365活动。](m365-campaigns-sign-up.md)  
 
-如果您不符合特殊定价条件，Microsoft 365 商业高级版获得协作环境的全面安全性的最经济有效方式。 请参阅[设置Microsoft 365 商业高级版，](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json)然后使用此库配置额外的安全性并帮助团队安全地协作。
+如果您不符合特殊定价条件，Microsoft 365 商业高级版还是获得协作环境的全面安全性的最经济有效方式。 请参阅[设置Microsoft 365 商业高级版，](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json)然后使用此库配置额外的安全性并帮助团队安全地协作。
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>市场活动Microsoft 365包括哪些内容？
 
@@ -70,4 +70,4 @@ ms.locfileid: "59170803"
 2. 填写表单后，需要几天时间查看你的信息。
 3. 确认你代表国家级别政治宣传活动或派对后，你将收到来自 Microsoft 的电子邮件邀请。 你的邀请包括特定于你的组织的注册链接。
 
-当你收到邀请时，请[注册Microsoft 365市场活动。](m365-campaigns-sign-up.md)
+当你收到邀请时，[请注册Microsoft 365市场活动。](m365-campaigns-sign-up.md)

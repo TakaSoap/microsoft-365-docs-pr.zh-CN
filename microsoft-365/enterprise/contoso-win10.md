@@ -8,22 +8,22 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 来部署 Windows 10 企业版的就地升级。
-ms.openlocfilehash: 9315e57fb08f0adda39f1a08107d8d96e1c2bc24
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7fe6efd176e156b75337ba79db6c1db839b0ed03
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200441"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208309"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso Windows 10 企业版部署
 
-在广泛推出 Microsoft 365 企业版之前，Contoso 具有与 Windows 兼容的电脑和设备，这些设备混合运行 Windows 7 (10%) 、Windows 8.1 (65%) 和 Windows 10 (25%) 。 Contoso 希望升级其电脑Windows 10 企业版利用高级安全性并降低自动部署更新的 IT 开销。 
+在广泛推出 Microsoft 365 企业版之前，Contoso 具有混合运行 Windows 7 (10%) 、Windows 8.1 (65%) 和 Windows 10 (25%) 的 Windows 兼容电脑和设备。 Contoso 希望升级其电脑Windows 10 企业版利用高级安全性并降低自动部署更新的 IT 开销。 
 
 在评估其基础结构和业务需求之后，Contoso 确定了这些部署的关键要求：
 
@@ -62,7 +62,7 @@ Contoso 使用 Windows Analytics 中的升级就绪情况来确定已安装的�
 
 1. 为 Configuration Manager 启用对等缓存。
 2. 基于来自批量许可服务中心的图像创建自定义 Windows 程序包。
-3. 使用 Configuration Manager 将Windows包部署到跨其网络的分发点，将内部版本部署到三个验证和部署暂存组。
+3. 使用 Configuration Manager 将 Windows 包部署到跨其网络的分发点，将内部版本部署到三个验证和部署暂存组。
 4. 使用 Windows Analytics 的设备运行状况和更新合规性解决方案，为三个验证和部署暂存环中的电脑和设备执行成功评估。
 5. 基于 Windows 分析信息，Contoso 确定了Windows 10 企业版广泛部署组部署的版本。
 6. 运行 Configuration Manager 部署任务序列，将Windows包部署到广泛部署组。
@@ -82,7 +82,7 @@ Contoso 使用 Windows Analytics 中的升级就绪情况来确定已安装的�
 
 ## <a name="next-step"></a>后续步骤
 
-了解 Contoso 如何利用其 Configuration Manager 基础结构在整个组织中[部署](contoso-o365pp.md)Microsoft 365 企业应用版保持最新状态。 
+了解 Contoso 如何利用其 Configuration Manager[](contoso-o365pp.md)基础结构在整个组织中部署Microsoft 365 企业应用版保持最新状态。 
 
 ## <a name="see-also"></a>另请参阅
 

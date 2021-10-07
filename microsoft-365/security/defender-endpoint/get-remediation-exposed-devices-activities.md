@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1ee64608e9ce6ce24dc40f1729303ef99b162cab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 393e0596531f8706c0cb0f5e620702d0ab7ef124
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171268"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194161"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>列出修正活动的暴露设备
 
@@ -56,7 +56,7 @@ ms.locfileid: "59171268"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|RemediationTasks.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
+Application|RemediationTasks.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
 委派（工作或学校帐户）|RemediationTask.Read.Read|\'阅读威胁和漏洞管理漏洞信息\'
 
 ## <a name="properties-details"></a>属性详细信息
@@ -64,9 +64,9 @@ ms.locfileid: "59171268"
 属性 (id) |数据类型|说明|示例
 :---|:---|:---|:---
 id|String|设备 ID|w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName|String|设备名称|PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform|String|设备操作系统|WindowsServer2012R2
-rbacGroupName|String|与此设备关联的设备组的名称|服务器
+computerDnsName|字符串|设备名称|PC-SRV2012R2Foo.UserNameVldNet.local
+osPlatform|字符串|设备操作系统|WindowsServer2012R2
+rbacGroupName|字符串|与此设备关联的设备组的名称|服务器
 
 ## <a name="example"></a>示例
 

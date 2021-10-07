@@ -8,24 +8,24 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 06/11/2020
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 作为管理员和邮件发件人，您可以撤销某些使用邮件加密Office 365 高级邮件加密。
-ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 作为管理员和邮件发件人，可以吊销某些使用邮件加密Office 365 高级邮件加密。
+ms.openlocfilehash: 86231857b01cc4f505f19063fe59cd58b75e263b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195777"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201813"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>撤销通过高级邮件加密加密的电子邮件
 
-电子邮件吊销作为电子邮件吊销的一Office 365 高级邮件加密。 Office 365 高级邮件加密[包含在 Microsoft 365 企业版 E5、Office 365 E5、Microsoft 365 E5 (](https://www.microsoft.com/microsoft-365/enterprise/home)非营利组织员工定价) 、Office 365 企业版 E5 (非营利组织员工定价) 和 Office 365 教育版 A5 中。 如果你的组织订阅不包含 Office 365 高级邮件加密，可以使用 Microsoft 365 E3 的 Microsoft 365 E5 合规 SKU 加载项、Microsoft 365 E3 (非营利组织员工定价) 或 Microsoft 365 E3、Microsoft 365 E3 (非营利组织员工定价) 或 Office 365 SKU 的 Office 365 高级合规版 SKU 加载项购买它。
+电子邮件吊销作为电子邮件吊销的一Office 365 高级邮件加密。 Office 365 高级邮件加密[包含在 Microsoft 365 企业版 E5、Office 365 E5、Microsoft 365 E5 (](https://www.microsoft.com/microsoft-365/enterprise/home)非营利组织员工定价) 、Office 365 企业版 E5 (非营利组织员工定价) 和 Office 365 教育版 A5 中。 如果你的组织订阅不包含 Office 365 高级邮件加密，可以使用 Microsoft 365 E3 的 Microsoft 365 E5 合规 SKU 加载项、Microsoft 365 E3 (非营利组织员工定价) 或 Microsoft 365 E3 的 Office 365 高级合规版 SKU 加载项、Microsoft 365 E3 (非营利组织员工定价) 或 Office 365 SKU 购买它。
 
 本文是有关本文的更多系列文章的一[Office 365 邮件加密。](ome.md)
 
@@ -37,19 +37,19 @@ ms.locfileid: "59195777"
 
 收件人是否收到基于链接的体验或内联体验取决于收件人标识类型：Office 365 和 Microsoft 帐户收件人 (例如，outlook.com 用户) 受支持的 Outlook 客户端获得内联体验。 所有其他收件人类型（如 Gmail 和 Yahoo 收件人）都获得基于链接的体验。
 
-管理员和邮件发件人可以吊销使用直接来自邮件的加密进行加密Outlook 网页版。 例如，使用"仅加密"选项加密的邮件。
+管理员和邮件发件人可以撤销使用直接来自邮件的加密进行加密Outlook 网页版。 例如，使用"仅加密"选项加密的邮件。
 
 :::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Screenshot showing Encrypt Only option in Outlook 网页版.":::
 
 ## <a name="recipient-experience-for-revoked-encrypted-emails"></a>已吊销加密电子邮件的收件人体验
 
-撤消电子邮件后，收件人在通过 Office 365 邮件加密 门户访问加密电子邮件时会收到一个错误："发件人已吊销该邮件"。
+撤消电子邮件后，收件人在通过 Office 365 邮件加密 门户访问加密电子邮件时收到错误："发件人已吊销该邮件"。
 
 ![显示已吊销的加密电子邮件的屏幕截图。](../media/revoked-encrypted-email.png)
 
 ## <a name="how-to-revoke-an-encrypted-message-that-you-sent"></a>如何撤销已发送的加密邮件
 
-您可以撤消发送给使用社交帐户（如邮箱或邮箱）的单个收件人 gmail.com yahoo.com。 换句话说，您可以撤消发送给接收基于链接的体验的单个收件人的电子邮件。
+您可以撤消发送给使用社交帐户（如邮箱或邮箱）的单个 gmail.com yahoo.com。 换句话说，您可以撤消发送给接收基于链接的体验的单个收件人的电子邮件。
 
 您无法撤消发送给使用 Office 365 或 Microsoft 365 工作或学校帐户的收件人或使用 Microsoft 帐户（例如，outlook.com 帐户）的用户的邮件。 
 
@@ -85,11 +85,11 @@ Microsoft 365管理员按照以下常规步骤撤销符合条件的加密电子�
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-trace-in-the-security-amp-compliance-center"></a>使用安全与合规中心内的邮件跟踪标识要撤销的电子邮件的邮件 &amp; ID
 
-1. 使用安全与合规中心中的"新建邮件跟踪"按发件人 [或&电子邮件](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)。
+1. 使用安全与合规中心中的"新建邮件跟踪"按发件人 [&电子邮件](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)。
 
 2. 找到电子邮件后，选择它可显示"邮件 **跟踪详细信息"** 窗格。 展开 **"详细信息** "以查找邮件 ID。
 
-#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>使用安全与合规中心中的"邮件加密"报告Office要撤销的电子邮件的邮件 &amp; ID
+#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>使用安全与合规中心中的"邮件加密Office标识要撤销的电子邮件 &amp; 的邮件 ID
 
 1. 在安全 &amp; 与合规中心中，导航到"**邮件加密报告"。** 有关此报告的信息，请参阅在安全与 [合规中心查看电子邮件 &amp; 安全报告](../security/office-365-security/view-email-security-reports.md)。
 
@@ -99,7 +99,7 @@ Microsoft 365管理员按照以下常规步骤撤销符合条件的加密电子�
 
 ### <a name="step-2-verify-that-the-mail-is-revocable"></a>步骤 2. 验证邮件是否可撤销
 
-若要验证是否可以吊销邮件，请检查安全与合规中心的"详细信息"表中的"加密"报告中是否显示"吊销状态 &amp; "字段。
+若要验证是否可以吊销邮件，请检查安全与合规中心内"详细信息"表中的"加密"报告中是否显示"吊销状态 &amp; "字段。
 
 若要验证是否可以通过使用电子邮件来撤销特定Windows PowerShell，请完成这些步骤。
 
@@ -121,7 +121,7 @@ Microsoft 365管理员按照以下常规步骤撤销符合条件的加密电子�
 
 ### <a name="step-3-revoke-the-mail"></a>步骤 3. 撤销邮件
 
-一旦知道要撤销的电子邮件的邮件 ID，并且已验证该邮件是可撤销的，可以使用安全与合规中心或 &amp; Windows PowerShell。
+一旦知道要撤销的电子邮件的邮件 ID，并且已验证该邮件可撤销，可以使用安全与合规中心或安全中心 &amp; Windows PowerShell。
 
 使用安全与合规中心 &amp; 撤销邮件
 
@@ -139,7 +139,7 @@ Microsoft 365管理员按照以下常规步骤撤销符合条件的加密电子�
     Set-OMEMessageRevocation -Revoke $true -MessageId "<messageId>"
     ```
 
-3. 若要检查电子邮件是否已吊销，请Get-OMEMessageStatus cmdlet，如下所示：
+3. 若要检查电子邮件是否已吊销，请运行Get-OMEMessageStatus cmdlet，如下所示：
 
     ```powershell
     Get-OMEMessageStatus -MessageId "<messageId>" | ft -a  Subject, Revoked
@@ -151,7 +151,7 @@ Microsoft 365管理员按照以下常规步骤撤销符合条件的加密电子�
      Revoked: True
      ```
 
-## <a name="more-information-about-office-365-advanced-message-encryption"></a>有关 Office 365 高级邮件加密
+## <a name="more-information-about-office-365-advanced-message-encryption"></a>有关Office 365 高级邮件加密
 
 - [Office 365 高级邮件加密](ome-advanced-message-encryption.md)
 

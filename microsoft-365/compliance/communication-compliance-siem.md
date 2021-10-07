@@ -1,5 +1,5 @@
 ---
-title: SIEM 解决方案的通信合规性
+title: 带有 SIEM 解决方案的通信合规性
 description: 了解与 SIEM 解决方案的通信合规性集成。
 f1.keywords:
 - NOCSH
@@ -11,31 +11,31 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 97401e58d5f75707d92325fc768d28d049e69b47
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 0e49935ff1d280adf4c1567a2064496a475c6033
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484164"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216942"
 ---
-# <a name="communication-compliance-with-siem-solutions"></a>SIEM 解决方案的通信合规性
+# <a name="communication-compliance-with-siem-solutions"></a>带有 SIEM 解决方案的通信合规性
 
-[通信合规性](communication-compliance.md)是组织中一种内部风险Microsoft 365，可帮助您检测、捕获和操作组织中不适当的邮件，从而有助于将通信风险降至最低。 SIEM 安全 (事件) 解决方案（如 [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel) 或 [Splunk）](https://www.splunk.com/) 通常用于聚合和跟踪组织内部的威胁。
+[通信合规性](communication-compliance.md)是 Microsoft 365中的内部风险解决方案，可帮助您检测、捕获和操作组织中不适当的邮件，从而将通信风险降至最低。 SIEM (安全信息和事件) 解决方案（如 [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel) 或 [Splunk）](https://www.splunk.com/) 通常用于聚合和跟踪组织内部的威胁。
 
-组织常见的需要是集成通信合规性警报和这些 SIEM 解决方案。 通过此集成，组织可以在 SIEM 解决方案中查看通信合规性警报，然后在通信合规性工作流和用户体验中修正警报。 例如，员工向另一名员工发送冒犯性消息，该邮件由通信合规性策略监控检测为冒犯性语言。 这些事件在通信合规性解决方案Microsoft 365统一审核日志中跟踪，并导入 SIEM 解决方案中。 然后，通过与通信合规性警报关联的 Microsoft 365 统一审核日志中监视的事件，在组织的 SIEM 解决方案中触发警报。 向研究人员通知 SIEM 解决方案中的警报，然后调查并修正通信合规性解决方案中的警报。
+组织常见的需要是集成通信合规性警报和这些 SIEM 解决方案。 通过此集成，组织可以在 SIEM 解决方案中查看通信合规性警报，然后在通信合规性工作流和用户体验中修正警报。 例如，员工向另一名员工发送冒犯性消息，该邮件由通信合规性策略监控检测为冒犯性语言。 这些事件通过通信合规性解决方案Microsoft 365审核 (称为"统一 审核日志") ，并导入 SIEM 解决方案。 然后，在组织的 SIEM 解决方案中，从与通信合规性警报Microsoft 365监视的事件触发警报。 调查人员在 SIEM 解决方案中收到警报通知，然后调查并修正通信合规性解决方案中的警报。
 
-## <a name="communication-compliance-alerts-in-the-microsoft-365-unified-audit-logs"></a>统一审核日志中Microsoft 365合规性警报
+## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>审核中的通信合规性Microsoft 365警报
 
-所有通信合规性策略匹配项都捕获到统一Microsoft 365审核日志中。 以下示例显示所选通信合规性策略匹配活动的详细信息：
+所有通信合规性策略匹配项都捕获在Microsoft 365审核中。 以下示例显示所选通信合规性策略匹配活动的详细信息：
 
-**冒犯性审核日志模板的条目匹配的示例：**
+**不良审核日志模板的条目匹配的示例：**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
@@ -51,7 +51,7 @@ IsValid: True
 ObjectState: Unchanged
 ```
 
-**自定义关键字审核日志匹配自定义敏感信息类型策略的 (条目) ：**
+**自定义关键字Microsoft 365匹配策略的审核日志条目示例 (自定义敏感信息类型) ：**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
@@ -67,24 +67,24 @@ IsValid: True
 ObjectState: Unchanged
 ```
 
->[!NOTE]
->目前，在 Microsoft 365 统一 审核日志 中记录策略匹配的时间与在通信合规性中调查策略匹配项的时间之间最多可能有 24 小时延迟。
+> [!NOTE]
+> 目前，在 Microsoft 365 审核中记录策略匹配的时间与在通信合规性中调查策略匹配项的时间之间最多可能有 24 小时延迟。
 
 ## <a name="configure-communication-compliance-and-azure-sentinel-integration"></a>配置通信合规性和 Azure Sentinel 集成
 
-使用 Azure Sentinel 聚合通信合规性策略匹配项时，Sentinel 使用 Microsoft 365 统一审核日志作为数据源。 若要将通信合规性警报与 Sentinel 集成，请完成以下步骤：
+使用 Azure Sentinel 聚合通信合规性策略匹配项时，Sentinel Microsoft 365 Audit 作为数据源。 若要将通信合规性警报与 Sentinel 集成，请完成以下步骤：
 
 1. [载入到 Azure Sentinel](/azure/sentinel/quickstart-onboard)。 作为载入过程的一部分，您将配置数据源。
-2. 配置 Azure Sentinel [Microsoft Office 365数据连接器，在](/azure/sentinel/data-connectors-reference#microsoft-office-365)连接器配置下，选择"Exchange"。 
+2. 配置 Azure Sentinel [Microsoft Office 365数据连接器，在](/azure/sentinel/data-connectors-reference#microsoft-office-365)连接器配置下，选择 *"Exchange"。*
 3. 配置搜索查询以检索通信合规性警报。 例如：
 
-    *|OfficeActivity |其中 OfficeWorkload == "Exchange" and Operation == "SupervisionRuleMatch" |按 TimeGenerated 排序*
+    *|OfficeActivity |其中 OfficeWorkload == "Exchange"和 Operation == "SupervisionRuleMatch" |按 TimeGenerated 排序*
 
     若要筛选特定用户，请使用以下查询格式：
 
     *|OfficeActivity |其中 OfficeWorkload == "Exchange" and Operation == "SupervisionRuleMatch" and UserId == "User1@Contoso.com" |按 TimeGenerated 排序*
 
-有关 Azure Sentinel 收集的Office 365日志，请参阅[Azure Monitor Logs reference](/azure/azure-monitor/reference/tables/OfficeActivity)。
+有关 Azure Sentinel 收集Microsoft 365审核日志Office 365，请参阅[Azure Monitor Logs reference](/azure/azure-monitor/reference/tables/OfficeActivity)。
 
 ## <a name="configure-communication-compliance-and-splunk-integration"></a>配置通信合规性和 Splunk 集成
 
@@ -111,7 +111,7 @@ ObjectState: Unchanged
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>配置与其他 SIEM 解决方案的通信合规性
 
-若要从统一审核日志中检索Microsoft 365合规性策略匹配项，可以使用 PowerShell 或[Office 365 管理 API。](/office/office-365-management-api/office-365-management-activity-api-reference)
+若要从审核中检索通信合规性Microsoft 365匹配，可以使用 PowerShell 或[Office 365 管理 API。](/office/office-365-management-api/office-365-management-activity-api-reference)
 
 使用 PowerShell 时，您可以将这些参数中的任一参数与 **Search-UnifiedAuditLog** cmdlet 一审核日志通信合规性活动筛选事件。
 

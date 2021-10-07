@@ -6,22 +6,22 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 使用此页面创建员工列表并管理员工详细信息，例如姓名、电话号码和电子邮件地址。
-ms.openlocfilehash: 3b61c2f3e5597208ace2a87a7d203e8d724e4f5f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea9025edd20289aa404471f6c1d245e7bf5c7d4e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196186"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202149"
 ---
 # <a name="add-staff-to-bookings"></a>向 Bookings 添加员工
 
 Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（如姓名、电话号码和电子邮件地址）的地方。 您还可以在此处为每位员工设置工作时间。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-尽管 Bookings 是一项Microsoft 365功能，但并非所有员工成员都需要拥有一个Microsoft 365帐户。 所有员工都必须具有有效的电子邮件地址，以便他们可以接收预订和计划更改。
+尽管 Bookings 是一项Microsoft 365功能，但并非所有员工成员都需要拥有Microsoft 365帐户。 所有员工都必须具有有效的电子邮件地址，以便他们可以接收预订和计划更改。
 
 ## <a name="watch-add-your-staff-to-bookings"></a>观看：将员工添加到 Bookings
 
@@ -62,14 +62,14 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
 
 8. 选择 **"使用营业时间**"将员工的所有可预订时间设置为仅在"业务信息"页上的"营业时间"部分中设置的营业时间内。
 
-    通过取消选中此框，可以给员工提供自定义小时数，以进一步限制可以预订的时间。 这适用于以下情形：员工只能在星期二和星期三开会，或者将上午专用于一种类型的约会，以及安排其他类型的约会。
+    通过取消选中此框，可以给员工提供自定义小时数，以进一步限制可以预订的时间。 这适用于以下情形：员工可能只能在星期二和星期三开会，或者将上午专用于一种类型的约会，以及安排其他类型的约会。
 
     > [!NOTE]
     > 在向服务分配员工时，只会显示添加到员工页面的前 31 名员工。
 
 ## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>使 Bookings 用户成为超级用户，而不将用户添加为 Bookings 中的 Staff
 
-你可能想要在 Bookings 中将人员添加到员工列表中，而不向客户或客户提供此人。 一旦使他们成为超级用户，他们将成为预订邮箱的管理员。 作为预订邮箱管理员的定义是拥有对预订邮箱的完全访问权限和发送权限。
+你可能想要在 Bookings 中将人员添加到员工列表中，而不向客户或客户提供。 一旦使他们成为超级用户，他们将成为预订邮箱的管理员。 作为预订邮箱管理员的定义是拥有对预订邮箱的完全访问权限和发送权限。
 
 > [!NOTE]
 > 这些步骤仅在所添加的用户尚未在 Bookings 中 **分配查看者** 角色时运行。

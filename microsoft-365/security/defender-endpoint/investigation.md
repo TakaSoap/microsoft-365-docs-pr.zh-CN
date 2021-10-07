@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 54e060f1cc98f62ca048ce8d561247c47f189f24
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 069e74b8ad0aef33caab411b92c24c4d0b72f022
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197281"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194149"
 ---
 # <a name="investigation-resource-type"></a>调查资源类型
 
@@ -58,7 +58,7 @@ ms.locfileid: "59197281"
 id|String|调查实体的标识。 
 startTime|DateTime Nullable|创建调查的日期和时间。
 endTime|DateTime Nullable|调查完成的日期和时间。
-cancelledBy|String|取消调查的用户/应用程序的 ID。
+cancelledBy|字符串|取消调查的用户/应用程序的 ID。
 state|枚举|调查的当前状态。 可能的值包括："Unknown"、"Terminated"、 "SuccessfullyRemediated"、"Benign"、"Failed"、"PartiallyRemediated"、"Running"、"PendingApproval"、"PendingResource"、"PartiallyInvestigated"、"TerminatedByUser"、"TerminatedBySystem"、"Queued"、"InnerFailure"、"PreexistingAlert"、"UnsupportedOs"、"UnsupportedAlertType"和"SuppressedAlert"。
 statusDetails|String|有关调查状态的其他信息。
 machineId|String|执行调查的设备 ID。

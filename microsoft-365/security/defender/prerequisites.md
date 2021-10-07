@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 09817ff370af6a813b6473edf874a10a510f7185
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 452129ac5bb6116f23e9a2791ff7147cd74adee6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043031"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181003"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender先决条件
 
@@ -35,10 +35,10 @@ ms.locfileid: "60043031"
 **适用于：**
 - Microsoft 365 Defender
 
-了解有关预配和使用 Microsoft 365 Defender[的许可和其他要求](microsoft-365-defender.md)。
+了解预配和使用应用程序的许可和其他[Microsoft 365 Defender。](microsoft-365-defender.md)
 
 ## <a name="licensing-requirements"></a>许可要求
-通过以下任一许可证，Microsoft 365 Defender门户中的Microsoft 365 Defender访问这些功能，而无需额外付费：
+通过这些许可证中的任一许可证，Microsoft 365 Defender门户中的Microsoft 365 Defender功能，而无需额外付费：
 
 - Microsoft 365 E5 或 A5
 - Microsoft 365 E3加载项Microsoft 365 E5 安全性加载项
@@ -63,12 +63,12 @@ ms.locfileid: "60043031"
 > 你需要分配有[Azure AD](/azure/active-directory/roles/permissions-reference)中的帐单管理员或全局读者角色，才能看到许可证信息。  如果遇到访问问题，请联系全局管理员。
 
 ## <a name="required-permissions"></a>所需权限
-您必须是 **全局管理员** 或安全管理员Azure Active Directory才能启用Microsoft 365 Defender。 有关使用数据库所需的角色Microsoft 365 Defender以及如何控制数据访问的信息，请阅读有关管理对 Microsoft 365 Defender[的访问](m365d-permissions.md)。
+您必须是 **全局管理员** 或安全管理员Azure Active Directory才能启用Microsoft 365 Defender。 有关使用管理角色Microsoft 365 Defender以及如何控制数据访问的信息，请阅读有关管理对 Microsoft 365 Defender[的访问](m365d-permissions.md)。
 
 ## <a name="browser-requirements"></a>浏览器要求
-使用 Microsoft 365 Defender、Microsoft 365 Defender 11 Microsoft Edge 11 Internet Explorer任何符合 HTML 5 的 Web 浏览器访问 Microsoft 365 Defender 门户中的网站。
+使用 Microsoft 365 Defender、Microsoft 365 Defender 11 Microsoft Edge、Internet Explorer HTML 5 兼容的 Web 浏览器访问 Microsoft 365 Defender 门户中的网站。
 
-## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>是否向美国GCC、GCC高及其他美国政府机构提供
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>是否向美国GCC、GCC High 以及其他美国政府机构提供
 目前，Microsoft 365 Defender *不适用于：*
 - 美国政府社区云 (GCC) 
 - 美国政府社区云高 (GCC高) 
@@ -76,7 +76,7 @@ ms.locfileid: "60043031"
 - 所有拥有商业许可证的美国政府机构
 
 
-目前，以下数据中心Office 365无法将 Microsoft Defender Microsoft 365 Defender集成到统一的 Office 365 功能：
+目前，以下Office 365数据中心位置的客户无法Microsoft 365 Defender Microsoft Defender for Office 365集成统一部署功能：
 
 - 巴西 
 - 德国 

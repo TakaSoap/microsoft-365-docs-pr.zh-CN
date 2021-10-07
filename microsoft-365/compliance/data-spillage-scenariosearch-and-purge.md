@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用电子数据展示和搜索工具管理和响应组织中发生的数据泄漏事件。
-ms.openlocfilehash: 340bf10dc57737c024d1ffcb3a441ba53bc917d6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 51fe6119acff7007f879b2ef323f263865458dfa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196385"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177611"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列：数据泄漏方案 - 搜索和清除
 
@@ -27,7 +27,7 @@ ms.locfileid: "59196385"
   
 ## <a name="data-spillage-scenario"></a>数据泄漏方案
 
-你是 Contoso 首席信息安全官。 你收到数据泄漏情况通知，即员工在不知情的情况下通过电子邮件与多个人共享了高度机密文档。 您希望快速评估在内部和外部接收此文档的人。 确定后，你要与其他调查人员共享案例结果进行审阅，然后从调查组永久Office 365。 调查完成后，您需要生成一份包含永久删除证据和其他案例详细信息的报告，供将来参考。
+你是 Contoso 首席信息安全官。 你收到数据泄漏情况通知，即员工在不知情的情况下通过电子邮件与多个人共享了高度机密文档。 您希望快速评估在内部和外部接收此文档的人。 确定后，你要与其他调查人员共享案例发现结果，然后从该调查Office 365。 调查完成后，您需要生成一份包含永久删除证据和其他案例详细信息的报告，供将来参考。
   
 ### <a name="scope-of-this-article"></a>本文的范围
 
@@ -50,11 +50,11 @@ ms.locfileid: "59196385"
 
 ## <a name="things-to-know-before-you-start"></a>在启动之前需要知道的一些内容
 
-- 当邮箱处于保留状态时，已删除邮件将保留在"可恢复的项目"文件夹中，直到保留期过期或保留解除。 [步骤 6](#step-6-prepare-the-mailboxes) 介绍如何从邮箱中删除保留。 在删除保留之前，请与记录管理或法律部门核实。 您的组织可能拥有一个策略，用于定义邮箱是置于保留状态还是数据泄漏事件优先。 
+- 当邮箱处于保留状态时，已删除的邮件将保留在"可恢复的项目"文件夹中，直到保留期过期或保留解除。 [步骤 6](#step-6-prepare-the-mailboxes) 介绍如何从邮箱中删除保留。 在删除保留之前，请与记录管理或法律部门核实。 您的组织可能拥有一个策略，用于定义邮箱是置于保留状态还是数据泄漏事件优先。 
     
 - 若要控制数据泄漏调查人员可以搜索和管理可以访问该案例的用户邮箱，可以设置合规性边界并创建自定义角色组，如步骤 [1 中所述](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)。 为此，您必须是组织管理角色组的成员或分配有角色管理角色。 如果您或贵组织的管理员已设置合规性边界，您可以跳过步骤 1。
     
-- 若要创建案例，您必须是电子数据展示管理员角色组的成员，或者是分配了案例管理角色的自定义角色组的成员。 如果你不是成员，请让Microsoft 365管理员将你添加到[电子数据展示管理员角色组](assign-ediscovery-permissions.md)。
+- 若要创建案例，您必须是电子数据展示管理员角色组的成员，或者是分配了案例管理角色的自定义角色组的成员。 如果你不是成员，请让Microsoft 365[管理员将你添加到电子数据展示管理员角色组](assign-ediscovery-permissions.md)。
     
 - 若要创建并运行内容搜索，您必须是电子数据展示管理员角色组的成员，或者分配有“合规性搜索”管理角色。 若要删除邮件，您必须是组织管理角色组的成员或分配有“搜索并清除”管理角色。 有关向角色组添加用户的信息，请参阅分配 [电子数据展示权限](./assign-ediscovery-permissions.md)。
     
@@ -62,7 +62,7 @@ ms.locfileid: "59196385"
     
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a> (可选) 步骤 1：管理谁可以访问案例并设置合规性边界
 
-根据组织实践，需要控制谁可以访问用于调查数据泄漏事件和设置合规性边界的电子数据展示案例。 执行此操作的最简单方法是将调查人员添加为 Microsoft 365 合规中心中现有角色组的成员，然后将该角色组添加为电子数据展示案例的成员。 有关内置电子数据展示角色组以及如何向电子数据展示案例添加成员的信息，请参阅分配 [电子数据展示权限](assign-ediscovery-permissions.md)。
+根据组织实践，需要控制谁可以访问用于调查数据泄漏事件和设置合规性边界的电子数据展示案例。 执行此操作的最简单方法是将调查人员添加为 Microsoft 365 合规中心 中现有角色组的成员，然后将该角色组添加为电子数据展示案例的成员。 有关内置电子数据展示角色组以及如何向电子数据展示案例添加成员的信息，请参阅分配 [电子数据展示权限](assign-ediscovery-permissions.md)。
   
 还可以创建一个符合组织需求的新角色组。 例如，你可能希望组织中一组数据泄漏调查人员访问所有数据泄漏案例并展开协作。 为此，你可以创建"数据泄漏调查人员"角色组，分配适当的角色 (导出、RMS 解密、审阅、预览、合规性搜索和案例管理) ，将数据泄漏调查人员添加到角色组，然后将该角色组添加为数据泄漏电子数据展示案例的成员。 有关如何[进行此操作的](set-up-compliance-boundaries.md)详细说明，请参阅在 Office 365 中设置电子数据展示调查的合规性边界。 
   
@@ -87,7 +87,7 @@ ms.locfileid: "59196385"
   
 如果每个邮箱超过 1，000 个邮箱或 100 多封电子邮件要审阅，可以使用其他关键字或条件（如日期范围或发件人/收件人）将初始搜索划分为多个搜索，并单独查看每个搜索的结果。 请确保记下在步骤 7 中删除邮件时将使用的所有 [搜索查询](#step-7-permanently-delete-the-spilled-data)。
 
-如果为保管人或最终用户分配了Office 365 E5许可证，则您可以使用此许可证一次检查最多 10，000 Advanced eDiscovery。 如果超过 10，000 封要审阅的电子邮件，您可以按日期范围划分搜索查询并单独查看每个结果，因为搜索结果按日期排序。 在Advanced eDiscovery中，可以使用预览面板中的"标签为"功能标记搜索结果，并按标记筛选搜索结果。 这在您与辅助审阅者协作时很有用。 通过使用 Advanced eDiscovery 中的其他分析工具（如光学字符识别、电子邮件线程和预测编码）可以快速处理和查看数千封邮件，并标记它们以进一步查看。 请参阅[Quick setup for Advanced eDiscovery](./get-started-with-advanced-ediscovery.md)。
+如果为保管人或最终用户分配了Office 365 E5许可证，则您可以使用此许可证同时检查最多 10，000 Advanced eDiscovery。 如果超过 10，000 封要审阅的电子邮件，您可以按日期范围划分搜索查询并单独查看每个结果，因为搜索结果按日期排序。 在Advanced eDiscovery中，可以使用预览面板中的"标签为"功能标记搜索结果，并按标记筛选搜索结果。 这在您与辅助审阅者协作时很有用。 通过使用 Advanced eDiscovery 中的其他分析工具（如光学字符识别、电子邮件线程和预测编码）可以快速处理和查看数千封邮件，并标记它们以进一步查看。 请参阅[Quick setup for Advanced eDiscovery](./get-started-with-advanced-ediscovery.md)。
 
 当您找到包含溢出数据的电子邮件时，请检查邮件的收件人以确定该邮件是否与外部共享。 若要进一步跟踪邮件，可以收集发件人信息和日期范围，以便可以使用邮件跟踪日志。 此过程在步骤 [5 中介绍](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)。
 
@@ -119,7 +119,7 @@ ms.locfileid: "59196385"
 
 若要进一步调查是否共享了包含泄漏数据的电子邮件，您可以选择使用你在步骤 4 中收集的发件人信息和日期范围信息查询邮件跟踪日志。 对于实时数据，邮件跟踪的保留期为 30 天，历史数据的保留期为 90 天。
   
-可以在安全与合规中心内使用邮件跟踪，或在 PowerShell Exchange Online cmdlet。 需要注意的是，邮件跟踪无法完全保证返回的数据的完整性。 有关使用邮件跟踪的信息，请参阅： 
+可以在安全与合规中心内使用邮件跟踪，或在 PowerShell 中Exchange Online cmdlet。 需要注意的是，邮件跟踪无法完全保证返回的数据的完整性。 有关使用邮件跟踪的信息，请参阅： 
   
 - [安全与合规中心内的消息跟踪](../security/office-365-security/message-trace-scc.md)
     
@@ -172,7 +172,7 @@ ms.locfileid: "59196385"
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>步骤 7：永久删除溢出的数据
 
-使用在步骤 6 中收集和准备的邮箱位置以及步骤 3 中创建和优化的搜索查询来查找包含泄漏数据的电子邮件，现在可以永久删除溢出的数据。  如前所述，若要删除邮件，您必须是组织管理角色组的成员或分配有"搜索和清除"管理角色。 有关向角色组添加用户的信息，请参阅分配 [电子数据展示权限](./assign-ediscovery-permissions.md)。
+使用在步骤 6 中收集和准备的邮箱位置和在步骤 3 中创建和优化的搜索查询来查找包含泄漏数据的电子邮件，现在可以永久删除溢出的数据。  如前所述，若要删除邮件，您必须是组织管理角色组的成员或分配有"搜索和清除"管理角色。 有关向角色组添加用户的信息，请参阅分配 [电子数据展示权限](./assign-ediscovery-permissions.md)。
 
 若要删除溢出的邮件，请参阅搜索 [和删除电子邮件](search-for-and-delete-messages-in-your-organization.md)。
 
@@ -187,7 +187,7 @@ ms.locfileid: "59196385"
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>步骤 8：验证、提供删除证明和审核
 
-工作流中用于管理数据泄漏事件的最后一步是，通过访问电子数据展示案例并重新运行用于删除该数据的相同搜索查询来验证是否从邮箱中永久删除了溢出的数据，以确认未返回任何结果。 确认已永久删除溢出的数据后，可以导出报告， (连同原始报告一) 作为删除证明。 然后， [如果将来必须](close-reopen-delete-core-ediscovery-cases.md) 引用案例，可以关闭允许重新打开该案例。 此外，您还可以将邮箱恢复为以前的状态，删除用于查找溢出数据的搜索查询，并搜索管理数据泄漏事件时所执行任务的审核记录。
+工作流中用于管理数据泄漏事件的最后一步是，通过访问电子数据展示案例并重新运行用于删除该数据的相同搜索查询来验证是否从邮箱中永久删除了溢出的数据，以确认未返回任何结果。 确认已永久删除溢出的数据后，可以导出报告， (报告以及原始报告) 作为删除证明。 然后， [如果将来必须](close-reopen-delete-core-ediscovery-cases.md) 引用案例，可以关闭允许重新打开该案例。 此外，您还可以将邮箱恢复为以前的状态，删除用于查找溢出数据的搜索查询，并搜索管理数据泄漏事件时所执行任务的审核记录。
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>将邮箱恢复为以前的状态
 
@@ -205,7 +205,7 @@ ms.locfileid: "59196385"
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>审核数据泄漏调查过程
 
-你可以搜索审核日志调查期间执行电子数据展示活动。 您还可以搜索该审核日志返回在步骤 7 中运行以删除溢出数据的 **New-ComplianceSearchAction -Purge** 命令的审核记录。 有关详细信息，请参阅：
+你可以搜索审核日志调查期间执行电子数据展示活动。 您还可以搜索该审核日志返回在步骤 7 中运行以删除泄漏数据的 **New-ComplianceSearchAction -Purge** 命令的审核记录。 有关详细信息，请参阅：
 
 - [搜索审核日志](search-the-audit-log-in-security-and-compliance.md)
 

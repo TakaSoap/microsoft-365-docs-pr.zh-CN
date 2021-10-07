@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: ellevin
 author: levinec
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b67a2551e592e2fd1186985590759d44bdcc177b
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: d95a2d526dc9a696f52c75f9358e6cc56038c1f0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356797"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194089"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>网络设备发现和漏洞管理
 
@@ -42,13 +42,13 @@ ms.locfileid: "59356797"
 
 网络发现功能位于安全中心和 Microsoft 365控制台的"设备Microsoft 365 Defender部分中。
 
-指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 一旦发现，适用于终结点的 defender 危险和漏洞管理 功能将提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。
+指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 发现后，适用于终结点的 defender 危险和漏洞管理 功能将提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。
 
 发现网络设备并进行分类后，安全管理员将能够接收最新的安全建议，并查看最近在组织中部署的网络设备上发现的漏洞。
 
 ## <a name="approach"></a>方法
 
-由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备将使用 SNMP (只读) 对网络设备执行经过身份验证的扫描。
+由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备会使用 SNMP 或只读 (对网络设备执行经过身份验证) 。
 
 需要记住两种类型的设备：
 
@@ -78,7 +78,7 @@ ms.locfileid: "59356797"
 
 2. 必须允许 Defender for Endpoint 评估设备和目标网络设备之间的 SNMP 流量 (例如，防火墙) 。
 
-3. 确定将评估哪些网络设备是否具有 (例如：Cisco 交换机或 Palo Alto Networks 防火墙) 。
+3. 确定将评估哪些网络设备以发现漏洞 (例如：Cisco 交换机或 Palo Alto Networks 防火墙) 。
 
 4. 确保在所有已配置的网络设备上启用 SNMP 只读，以允许 Defender for Endpoint 评估设备查询配置的网络设备。 此功能的正确功能不需要"SNMP 写入"。
 
@@ -100,11 +100,11 @@ ms.locfileid: "59356797"
 
 ## <a name="permissions"></a>权限
 
-若要配置评估作业，需要以下用户权限选项： **在安全中心管理安全设置**。 可以通过访问角色 来查找 **设置** \> **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
+若要配置评估作业，需要以下用户权限选项： **在安全中心管理安全设置**。 可以通过访问角色 来设置 \> **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
 
 ## <a name="install-the-network-scanner"></a>安装网络扫描程序
 
-1. 转到 **"Microsoft 365"设置"** 网络评估"下 (\>  \>  \> **终结点评估**) 。
+1. 转到 **"Microsoft 365网络设置** 下 (安全 \>  \>  \> **终结点评估**) 。
     1. 在Microsoft 365 Defender门户中，转到"设置 >作业"页。
 
 2. 下载网络扫描程序，将其安装在指定的 Defender for Endpoint 评估设备上。
@@ -114,7 +114,7 @@ ms.locfileid: "59356797"
 
 ## <a name="network-scanner-installation--registration"></a>网络扫描程序安装&注册
 
-登录过程可以在指定的评估设备本身或其他任何设备（例如，你的个人客户端设备 (）上) 。
+登录过程可以在指定的评估设备本身或其他任何设备（例如， (客户端设备）上) 。
 
 要完成网络扫描程序注册过程，请执行以下操作：
 
@@ -140,7 +140,7 @@ ms.locfileid: "59356797"
 
 1. 选择"评估作业"名称和"评估设备"，其中安装了网络扫描程序。 此设备将定期执行经过身份验证的扫描。
 
-2. 添加要扫描的目标网络设备的 IP 地址， (部署这些设备的子网) 。
+2. 添加要扫描的目标网络设备的 IP 地址 (或将这些设备部署到的子网) 。
 
 3. 添加目标网络设备所需的 SNMP 凭据。
 
@@ -172,7 +172,7 @@ ms.locfileid: "59356797"
 
 验证所需的 URL 是否添加到防火墙设置中的允许域。 此外，请确保代理设置已配置，如配置 [设备代理和 Internet 连接设置 中所述](configure-proxy-internet.md)。
 
-### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>Microsoft.com/devicelogin 网页未显示
+### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>未 Microsoft.com/devicelogin Web 页
 
 验证所需的 URL 是否添加到防火墙中的允许域。 此外，请确保代理设置已配置，如配置 [设备代理和 Internet 连接设置 中所述](configure-proxy-internet.md)。
 

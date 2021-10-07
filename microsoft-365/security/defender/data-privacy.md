@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 196c3d5ddcec082433d3e459a0b122e2f7052e9d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0e90a1e8eed376fc267c044e54419e0de01934fd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196522"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202581"
 ---
 # <a name="microsoft-365-defender-data-security-and-privacy"></a>Microsoft 365 Defender数据安全和隐私
 
@@ -35,7 +35,7 @@ ms.locfileid: "59196522"
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender在Microsoft Azure、英国和美国数据中心内运行。 服务收集的客户数据存储在 (a) 预配期间标识的租户地理位置中，或者 (b) 如果 Microsoft 365 Defender 使用另一个 Microsoft 联机服务处理此类数据，即该其他联机服务的数据存储规则定义的地理位置。
+Microsoft 365 Defender在Microsoft Azure、英国和美国的中心数据中心运行。 服务收集的客户数据存储在 (a) 预配期间标识的租户地理位置中，或者 (b) 如果 Microsoft 365 Defender 使用另一个 Microsoft 联机服务处理此类数据，即该其他联机服务的数据存储规则定义的地理位置。
 
 假名形式的客户数据也可能存储在美国的中央存储和处理系统中。
 

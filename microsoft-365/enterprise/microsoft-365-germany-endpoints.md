@@ -7,7 +7,7 @@ ms.date: 09/28/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: 本文将介绍在德国使用 Office 365的终结点。
 hideEdit: true
-ms.openlocfilehash: 39ed851f6cf17a459e33bd5726371432b23ac530
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 9b998595dca1b838de91d9727d2260fe6298c465
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009513"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201633"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany 终结点
 
@@ -35,11 +35,11 @@ Office 365 要求连接到 Internet。 对于使用德国计划的客户，应Of
 
 > [!NOTE]
 > 对于正在转换到德国新数据中心Microsoft 365的客户，终结点将发生变化。
-> 有关其他信息，请参阅从德国 Microsoft 云迁移到Office 365[新的德国数据中心区域部署服务](ms-cloud-germany-transition.md)。
+> 有关其他信息，请参阅从德国 Microsoft 云迁移到Office 365[新的德国数据中心区域。](ms-cloud-germany-transition.md)
   
  **Office 365 终结点：**[全球（包括 GCC）](urls-and-ip-address-ranges.md)  | [由世纪互联运营的 Office 365](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Germany* | [Office 365 美国政府版 DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 美国政府版 GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
-**Last updated：** 09/28/2021 - ![ RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+**上次更新时间：** 2021 年 9 月 28 日 -![ RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 **下载：** 一个 [JSON 格式](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)列表中的所有必需和可选目标。
 

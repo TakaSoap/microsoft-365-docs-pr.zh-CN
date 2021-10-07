@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 author: jweston-1
 ms.author: v-jweston
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 08/11/2021
-ms.openlocfilehash: 79129d25c730f7948269c4291e53e3fc953af329
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ad1a58b47b6e84366cbaf7bceea19ec9fe6bc52
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170094"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213828"
 ---
 # <a name="configure-attack-surface-reduction-capabilities"></a>配置攻击面减少功能
 
@@ -56,7 +56,7 @@ Defender for Endpoint 包括多种攻击面减少功能。 若要了解更多信
 
    1. 获取高级安全[Windows Defender防火墙的概述](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。
    2. 使用[Windows Defender防火墙](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide)设计指南决定您希望如何设计防火墙策略。
-   3. 使用[Windows Defender防火墙](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)部署指南设置组织的高级安全防火墙。
+   3. 使用[Windows Defender 防火墙](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)部署指南设置组织的高级安全防火墙。
 
 > [!TIP]
 > 在大多数情况下，配置攻击面减少功能时，可以从以下几种方法中选择：

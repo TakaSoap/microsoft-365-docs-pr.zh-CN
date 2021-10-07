@@ -11,12 +11,12 @@ metadata:
   author: twerner
   ms.author: twernermsft
   ms.date: 12/16/2020
-  localization_priority: Priority
+  ms.localizationpriority: high
 productDirectory:
   items:
-    - title: 开始行动
+    - title: 入门
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: 规划移动到Microsoft 365企业。
+      summary: 规划向Microsoft 365迁移。
       url: what-is-microsoft-365.md
     - title: 设置 Microsoft 365 商业版
       imageSrc: 'https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg'

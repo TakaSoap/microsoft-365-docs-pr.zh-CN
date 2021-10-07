@@ -9,23 +9,23 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 本文定义审阅集内文档的元数据字段，例如Advanced eDiscovery Microsoft 365。
-ms.openlocfilehash: ed7652ecf720e32a7ddfaffbd0ff2db29b582b69
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 本文定义审阅集内文档的元数据字段，例如Advanced eDiscovery文档Microsoft 365。
+ms.openlocfilehash: 0dd0c11360a1e815c950e6e01448d95a79a8e266
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200597"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177539"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
-下表列出了审阅集内文档的元数据字段（在 Advanced eDiscovery 中）。 该表提供以下信息：
+下表列出了审阅集内文档的元数据字段，其中一种情况Advanced eDiscovery。 该表提供以下信息：
 
 - **字段名称和****显示字段名称**：元数据字段的名称以及查看审阅集内选定文档的文件元数据时显示的字段名称。 查看文档的文件元数据时，不包含某些元数据字段。 这些字段用星号* (突出显示) 。
 
@@ -42,7 +42,7 @@ ms.locfileid: "59200597"
 
 ****
 
-|字段名和显示字段名|可搜索字段名称|导出的字段名称|描述|
+|字段名和显示字段名|可搜索字段名称|导出的字段名称|说明|
 |---|---|---|---|
 |附件内容 ID|AttachmentContentId||项目的附件内容 ID。|
 |律师客户特权分数|AttorneyClientPrivilegeScore||律师-客户特权模型内容分数。|
@@ -53,13 +53,13 @@ ms.locfileid: "59200597"
 |复合路径|CompoundPath|Compound_path|描述项目源的可读路径。|
 |内容*|内容||已提取项目的文本。|
 |对话正文|ConversationBody||项目的对话正文。|
-|对话 ID|ConversationId|Conversation_ID|邮件的对话 ID。 对于Teams一对一和群聊，同一对话内的所有转录文件及其系列项目共享同一对话 ID。 有关详细信息，请参阅 Advanced eDiscovery[中的内容的工作流Microsoft Teams。](teams-workflow-in-advanced-ediscovery.md)|
+|对话 ID|ConversationId|Conversation_ID|邮件的对话 ID。 对于Teams一对一和群组聊天，同一对话内的所有转录文件及其系列项目共享同一对话 ID。 有关详细信息，请参阅 Advanced eDiscovery[中的内容的工作流Microsoft Teams。](teams-workflow-in-advanced-ediscovery.md)|
 |对话索引||Conversation_index|邮件的对话索引。|
-|对话名称||ConversationName|频道中频道Teams。 名称的格式取决于通道的类型： <br>Teams频道聊天和私人频道聊天：\<Name of team, name of channel\> <br>Teams一对一和群聊：所有聊天参与者的显示名称和电子邮件地址<br>Yammer社区：Community姓名 + 帖子的前 120 个字符<br>Yammer私有：发件人姓名和电子邮件地址 + 邮件的前 120 个字符|
+|对话名称||ConversationName|频道中频道Teams。 名称的格式取决于通道的类型： <br>Teams频道聊天和私人频道聊天：\<Name of team, name of channel\> <br>Teams一对一和群聊：所有聊天参与者的显示名称和电子邮件地址<br>Yammer社区：Community名称 + 帖子的前 120 个字符<br>Yammer私有：发件人姓名和电子邮件地址 + 邮件的前 120 个字符|
 |对话 Pdf 时间|ConversationPdfTime||创建对话的 PDF 版本的日期。|
 |对话修订消耗时间|ConversationRedactionBurnTime||为聊天创建对话的 PDF 版本的日期。|
 |对话主题|ConversationTopic||项目的对话主题。|
-|对话类型|ConversationType|ConversationType|聊天对话的类型。 值为： <br> Teams一对一和群组聊天及Yammer对话：**分组** 针对<br>Teams频道和专用频道：**频道**|
+|对话类型|ConversationType|ConversationType|聊天对话的类型。 值为： <br> Teams 1：1 和群聊及Yammer对话：**分组** 针对<br>Teams频道和专用频道：**频道**|
 |包含已编辑邮件|ContainsEditedMessage|ContainsEditedMessage|指示聊天脚本Teams脚本是否包含已编辑的消息
 |||Converted_file_path|转换后的导出文件的路径。 对于内部 Microsoft，请使用 。|
 |Custodian|Custodian|Custodian|与项目关联的保管人的名称。|
@@ -78,7 +78,7 @@ ms.locfileid: "59200597"
 |重复子集||Duplicate_subset|完全重复项的组 ID。|
 |EmailAction*||Email_action|值为 **None、Reply** 或 **Forward;** 基于邮件的主题行。|
 |请求的电子邮件传递回执||Email_delivery_receipt|Internet 邮件头中提供的电子邮件地址，用于送达回执。|
-|Importance|EmailImportance|Email_importance|邮件的重要性 **：0** - 低; **1** - 正常; **2** - 高|
+|重要性|EmailImportance|Email_importance|邮件的重要性 **：0** - 低; **1** - 正常; **2** - 高|
 |忽略处理错误|ErrorIgnored|Error_Ignored|错误已忽略且未修正。|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|电子邮件的完整电子邮件头集|
 |EmailLevel*||Email_level|指示邮件所属电子邮件线程中的邮件级别;attachments 继承其父邮件的值。|
@@ -129,13 +129,13 @@ ms.locfileid: "59200597"
 |本机文件名|NativeFileName|Native_file_name|项的本机文件名。|
 |NativeMD5||Native_MD5|MD5 哈希 (文件流) 128 位哈希值。|
 |NativeSHA256||Native_SHA_256|SHA256 哈希 (文件流中的 256) 哈希值。|
-|ND/ET 排序：排除附件|NdEtSortExclAttach|ND_ET_sort_excl_attach|将电子邮件线程串联 (ET) 设置和近 (ND) 集。 此字段用于在审阅时进行有效的排序。 D 的前缀为 ND 集 **，E** 为 ET 集前缀。|
-|ND/ET 排序：包括附件|NdEtSortInclAttach|ND_ET_sort_incl_attach|将电子邮件线程串联在一 (ET) 设置和近 (ND) 集。 此字段用于在审阅时进行有效的排序。 D 的前缀为 ND 集 **，E** 为 ET 集前缀。 ET 集合中的每个电子邮件项目后跟相应的附件。|
+|ND/ET 排序：排除附件|NdEtSortExclAttach|ND_ET_sort_excl_attach|连接电子邮件线程连接 ET () 设置和近 (ND) 集。 此字段用于在审阅时进行有效的排序。 D 的前缀为 ND 集 **，E** 为 ET 集前缀。|
+|ND/ET 排序：包括附件|NdEtSortInclAttach|ND_ET_sort_incl_attach|连接电子邮件线程 (ET) 设置和近 (ND) 集。 此字段用于在审阅时进行有效的排序。 D 的前缀为 ND 集 **，E** 为 ET 集前缀。 ET 集合中的每个电子邮件项目后跟相应的附件。|
 |近重复集||ND_set|与透视文档类似的项目共享相同的ND_set。|
-|O365 作者||O365_authors|作者SharePoint。|
-|O365 创建者||O365_created_by|由用户SharePoint。|
+|O365 作者||O365_authors|创作自SharePoint。|
+|O365 创建者||O365_created_by|由 SharePoint。|
 |O365 创建日期||O365_date_created|创建日期SharePoint。|
-|O365 修改日期||O365_date_modified|自上次修改日期起SharePoint。|
+|O365 修改日期||O365_date_modified|上次修改日期（SharePoint）。|
 |修改者 O365||O365_modified_by|修改者SharePoint。|
 |其他保管人|DedupedCustodians|Deduped_custodians|与电子邮件完全相同的文档保管人 (，基于内容;基于哈希值对文档) 。|
 |其他文件 ID|DedupedFileIds|Deduped_file_IDs|与电子邮件完全相同的文档的文件 (列表（基于内容）;基于哈希值对文档) 。|
@@ -159,7 +159,7 @@ ms.locfileid: "59200597"
 |相关性标记|RelevanceTag||基于相关性的文档的相关性分数。|
 |代表 ID|RepresentativeId||每组精确重复项的数字标识符。|
 |||Row_number|加载文件中项的行号。|
-|发件人|发件人|Email_sender|"发件人 (邮件) 发件人"字段。 格式为 **DisplayName \<SmtpAddress>**。|
+|发件人|发件人|Email_sender|邮件 (发件人) "字段。 格式为 **DisplayName \<SmtpAddress>**。|
 |发件人/作者|SenderAuthor||计算字段，由项目的发件人或作者组成。|
 |发件人域|SenderDomain|Email_sender_domain|发件人的域。|
 |发件箱|发件箱|Email_date_sent|邮件的发送日期。<br>聊天：脚本的开始日期|
@@ -181,4 +181,4 @@ ms.locfileid: "59200597"
 |||||
 
 > [!NOTE]
-> 有关在收集 Advanced eDiscovery 案例的数据时Office 365搜索内容位置时可搜索的属性，请参阅关键字查询和内容搜索[的搜索条件](keyword-queries-and-search-conditions.md)。
+> 有关在收集 Advanced eDiscovery 案例的数据时Office 365搜索内容位置时可搜索属性Advanced eDiscovery请参阅关键字查询和内容搜索[的搜索条件](keyword-queries-and-search-conditions.md)。

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae7dac229aba0d5c4cbfc32782fe1a4ad5613c8f
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 193bfb6b535ebafa0056c416a55a4c32af53bf84
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043283"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202627"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -55,7 +55,7 @@ ms.locfileid: "60043283"
 | `IsCompliant` | boolean | 指示是否正确配置了配置或策略 |
 | `IsApplicable` | boolean | 指示配置或策略是否适用于设备 |
 | `Context` | string | 有关配置或策略的其他上下文信息 |
-| `IsExpectedUserImpact` | boolean | 指示应用配置或策略时是否会影响用户 |
+| `IsExpectedUserImpact` | boolean | 指示应用配置或策略时是否将影响用户 |
 
 ## <a name="related-topics"></a>相关主题
 

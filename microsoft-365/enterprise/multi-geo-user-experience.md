@@ -13,14 +13,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解 Microsoft 365 多地理位置环境中的 SharePoint、OneDrive 和 Exchange 用户体验。
-ms.openlocfilehash: 5ecdfd41c496149e04bfb9586f76807db7957d0d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: eff55ba327e1484b5aa3fd344f904c0e11f8f954
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195733"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177143"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>多地理位置环境中的用户体验
 
@@ -48,7 +48,7 @@ OneDrive 同步应用 (版本 17.3.6943.0625 及更高版本) 将自动为用户
 
 ## <a name="onedrive-location"></a>OneDrive位置
 
-用户将拥有在OneDrive数据位置预配的数据。 如果用户导航到包含错误地理位置 (的 OneDrive URL（如上一地理位置) 中的书签）时，他们会自动重定向到相应地理位置中的 OneDrive。
+用户将在首选OneDrive预配其数据配置。 如果用户导航到包含错误地理位置 (的 OneDrive URL（如上一地理位置) 中的书签）时，他们会自动重定向到相应地理位置中的 OneDrive。
 
 ## <a name="onedrive-ios-and-android"></a>OneDrive iOS 和 Android 
 
@@ -78,7 +78,7 @@ OneDrive 移动客户端可感知多地理位置，并显示来自所有地理�
 
 ## <a name="sharepoint-home"></a>SharePoint 主页 
 
-In SharePoint Multi-Geo your SharePoint your SharePoint hosted in the location where the user resides as determined by their OneDrive location. 例如：如果用户拥有在欧洲附属OneDrive托管的用户，则其SharePoint主页将呈现自欧洲。 SharePoint 主页包括与用户相关的所有内容，无论它们的地理位置如何。 
+In SharePoint Multi-Geo your SharePoint your SharePoint hosted in the location where the user resides as determined by their OneDrive location. 例如，如果用户拥有在欧洲附属OneDrive托管的用户，则其SharePoint主页将呈现自欧洲。 SharePoint 主页包括与用户相关的所有内容，无论它们的地理位置如何。 
 
 **关注的网站、网站新闻、最近访问的网站、经常访问的网站和推荐网站**
 

@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: medium
 description: 了解如何查找和使用文档理解模型的使用情况分析。
-ms.openlocfilehash: d39b2417a90716200d33831bfef7e9cb2ff1d523
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: HT
+ms.openlocfilehash: 3dd77f760f70812045841ab56afbb13b02044d91
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201605"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201753"
 ---
 # <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的文档理解模型使用情况分析
 

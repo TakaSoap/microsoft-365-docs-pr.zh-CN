@@ -1,5 +1,5 @@
 ---
-title: 关闭你的帐户
+title: 关闭帐户
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,18 +21,18 @@ ms.custom:
 search.appverid: MET150
 description: 关闭 Microsoft 帐户时，将删除与帐户相关的所有信息，包括许可证、用户和用户数据。
 ms.date: 04/02/2021
-ms.openlocfilehash: f46a35ca9a8b4ca0a68a3260f1a79bbf3717b552
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b19328ffaf785479b81d6253c602c8f80fca99ae
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171144"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202017"
 ---
-# <a name="close-your-account"></a>关闭你的帐户
+# <a name="close-your-account"></a>关闭帐户
 
 当关闭你的 Microsoft 帐户时，与你的帐户相关的所有信息都将被删除。 此信息包括订阅、许可证、付款方式、用户和用户数据。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 开始此过程之前，请确保备份要保留的所有数据。
 

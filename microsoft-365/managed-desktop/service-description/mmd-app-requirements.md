@@ -5,16 +5,16 @@ keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 322a46ce48cce4d080e51f482178462934d5c8f2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4a7db8f26d3f7201087a7e4390b56637af37dc08
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196663"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208117"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 托管桌面应用要求
 
@@ -28,8 +28,8 @@ Microsoft 托管桌面要求我们使用特定方法管理设备，以确保设�
 |管理区域  |Microsoft 托管桌面方法  |
 |---------|---------|
 |设备配置或策略管理     |  Microsoft Intune       |
-|应用管理     | Microsoft Intune 和 公司门户        |
-|驱动程序部署     |  设备、更新或 intune Windows驱动程序       |
+|应用程序管理     | Microsoft Intune 和 公司门户        |
+|驱动程序部署     |  设备、更新或 Intune Windows驱动程序       |
 |设备安全性     | 请参阅 [设备安全性](security.md#device-security)      |
 |标识和访问管理     | 请参阅 [标识和访问管理](security.md#identity-and-access-management)        |
 |网络安全性     | 请参阅 [网络安全](security.md#network-security)        |

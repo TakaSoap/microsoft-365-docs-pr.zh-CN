@@ -7,7 +7,7 @@ ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,13 +17,13 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (德国) Office 365迁移后活动。
-ms.openlocfilehash: 3659ce8ffa3424c3521c8f8954be88c7d53d0a51
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 摘要：从德国 Microsoft 云 (德国) 迁移到新的德国数据中心Office 365服务后迁移活动。
+ms.openlocfilehash: 234631b9169b29a557ab3b08f29dd67788575eee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171320"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201609"
 ---
 # <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的迁移后活动
 
@@ -53,7 +53,7 @@ The following table provides an overview about which endpoints will replace the 
 
 | 步骤 ()  | 说明 | 影响 |
 |:-------|:-------|:-------|
-| 从 Microsoft 云德国 AD FS 中删除信赖方信任。 | 完成到 Azure AD 的切分后，组织将完全Office 365服务，并且不再连接到德国 Microsoft 云。 此时，客户需要删除对德国 Microsoft 云终结点的信赖方信任。 只有在将 Azure AD 用作标识提供者或 IdP (时，客户的应用程序均不指向德国 Microsoft 云终结点，才能) 。 | 联合身份验证组织 | 
+| 从 Microsoft 云德国 AD FS 中删除信赖方信任。 | 完成到 Azure AD 的切分后，组织将完全使用 Office 365 服务，并且不再连接到德国 Microsoft 云。 此时，客户需要删除对德国 Microsoft 云终结点的信赖方信任。 只有在将 Azure AD 用作标识提供者或 IdP (时，客户的应用程序均不指向德国 Microsoft 云终结点，才能) 。 | 联合身份验证组织 | 
 ||||
 
 <!--
@@ -81,5 +81,5 @@ The following table provides an overview about which endpoints will replace the 
 
 | 步骤 ()  | 说明 | 影响 |
 |:-------|:-------|:-------|
-| 更新合作伙伴和第三方服务，Office 365终结点。 | <ul><li>指向德国的第三方服务和合作伙伴Office 365更新为指向 Office 365 服务终结点。 示例：重新注册应用程序库应用程序版本（如果可用）以与供应商和合作伙伴一致。 </li><li>将利用 api 的所有自定义Graph从 指向 `graph.microsoft.de` `graph.microsoft.com` 。 如果利用，还需要更新终结点已更改的其他 API。 </li><li>更改所有非第一方企业应用程序以重定向到全球终结点。 </li></ul>| 必需操作。 如果不这样做，可能会导致服务或软件客户端失败。 |
+| 更新合作伙伴和第三方服务，Office 365服务终结点。 | <ul><li>指向德国的第三方服务和合作伙伴Office 365更新为指向 Office 365 服务终结点。 示例：重新注册应用程序库应用版本（如果可用）以与供应商和合作伙伴一致。 </li><li>将利用 api 的所有自定义Graph从 指向 `graph.microsoft.de` `graph.microsoft.com` 。 如果利用，还需要更新终结点已更改的其他 API。 </li><li>更改所有非第一方企业应用程序以重定向到全球终结点。 </li></ul>| 必需操作。 如果不这样做，可能会导致服务或软件客户端失败。 |
 ||||

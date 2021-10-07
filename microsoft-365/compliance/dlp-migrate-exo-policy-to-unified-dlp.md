@@ -1,5 +1,5 @@
 ---
-title: 将Exchange Online数据丢失防护策略迁移到合规中心
+title: 将 Exchange Online 数据丢失防护策略迁移到合规中心
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -11,25 +11,25 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
 search.appverid:
 - MET150
-description: 了解如何计划和将联机数据丢失防护Exchange迁移到 Microsoft 365 DLP。
-ms.openlocfilehash: 2cf06b7aee9adb63ff85259427bcac818807cc7c
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+description: 了解如何在 DLP 中计划和Exchange联机数据丢失防护策略Microsoft 365策略。
+ms.openlocfilehash: c1929af423259de770d561421945d471c9022ab4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400518"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201873"
 ---
-# <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center"></a>将Exchange Online数据丢失防护策略迁移到合规中心
+# <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center"></a>将 Exchange Online 数据丢失防护策略迁移到合规中心
 
-[Exchange Online DLP (策略) 数据丢失](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)防护。 [更丰富的 DLP 功能](dlp-learn-about-dlp.md)（Exchange Online DLP）在 Microsoft 365[中心提供](https://compliance.microsoft.com/datalossprevention?viewid=policies)。 您可以使用 DLP 策略迁移向导，帮助您将 Exchange Online DLP 策略带到您将管理这些策略的合规性中心。
+[Exchange Online DLP (策略) ](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)数据丢失防护。 [更丰富的 DLP 功能](dlp-learn-about-dlp.md)（Exchange Online DLP）在 Microsoft 365[中心提供](https://compliance.microsoft.com/datalossprevention?viewid=policies)。 您可以使用 DLP 策略迁移向导来帮助将 Exchange Online DLP 策略带到您将管理这些策略的合规性中心。
 
-迁移向导的工作方式是读取 DLP 策略在 Exchange，然后在合规性中心创建重复的策略。 默认情况下，该向导在测试模式下创建新版本的策略，以便你可以查看它们对环境的影响，而无需强制执行任何操作。 准备好完全过渡到合规中心版本后，**_你必须：_**
+迁移向导的工作方式是阅读 DLP 策略的配置，Exchange然后在合规性中心创建重复的策略。 默认情况下，该向导在测试模式下创建新版本的策略，以便你可以查看它们对环境的影响，而无需强制执行任何操作。 准备好完全过渡到合规中心版本后，**_你必须：_**
 
 1. 在 EAC 管理中心Exchange停用或删除 (源) 。
 1. 编辑策略的合规中心版本，将状态从"测试"**更改为****"强制"。** 
@@ -47,12 +47,12 @@ ms.locfileid: "59400518"
 1. 准备迁移
     1. 评估和比较 EXO Exchange Online (DLP 策略) 合规性中心 DLP 策略是否重复。
     1. 确定要完全按照它们显示哪些 EXO DLP 策略，可以使用向导迁移这些策略。
-    1. 确定要合并哪些 EXO DLP 策略，并Exchange管理中心中，然后使用迁移向导将其引入合规中心。
+    1. 确定要合并哪些 EXO DLP 策略并合并到 Exchange 管理中心，然后使用迁移向导将其引入合规中心。
 1. 执行迁移 - 使用向导
 1. 测试和验证 - 检查结果
 1. 激活迁移的策略
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 ### <a name="licensing-and-versions"></a>许可和版本
 
@@ -68,7 +68,7 @@ ms.locfileid: "59400518"
 - Microsoft 365 E5 信息保护和治理
 - Microsoft 365 A5 信息保护和治理
 
-有关 DLP 许可要求的详细列表，请参阅Microsoft 365安全与[&、数据丢失防护的许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
+有关 DLP 许可要求的详细列表，请参阅Microsoft 365合规性、数据丢失防护&[许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
 
 ### <a name="permissions"></a>权限
@@ -88,7 +88,7 @@ ms.locfileid: "59400518"
 |---------|---------|---------|
 |是否仍然需要该策略？    |如果不是，请删除或停用它 |不迁移|
 |是否与任何其他策略或Exchange DLP 策略重叠？     |如果是，可以合并重叠策略吗？         |- 如果与另一Exchange策略重叠，请手动在管理中心Exchange合并 DLP 策略，然后使用迁移向导。 </br> - 如果与现有合规中心策略重叠，可以修改现有合规中心策略以匹配，不要迁移Exchange版本|
-|DLP Exchange是否具有严格的作用域，并且其是否具有明确定义的条件、操作、包含和排除？     |如果是，这是使用向导迁移的良好候选项，请记下该策略，以便以后记住返回以将其删除         | 使用向导进行迁移|
+|DLP Exchange是否具有严格的作用域，并且是否具有明确定义的条件、操作、包含和排除？     |如果是，这是使用向导迁移的良好候选项，请记下该策略，以便以后记住返回以将其删除         | 使用向导进行迁移|
 
 ## <a name="migration"></a>迁移
 
@@ -100,10 +100,10 @@ ms.locfileid: "59400518"
 4. 选择要迁移的策略。 可以单独迁移它们，或者使用分阶段方法分组迁移它们，也可以一次全部迁移。 选择“**下一步**”。
 5. 查看飞出窗格，查看是否有警告或消息。 在继续操作之前解决任何问题。
 6. 选择您希望在 中创建的新合规性中心策略的模式，即 **"活动****"、"测试**"或"**已禁用"。**  默认值为 **测试**。 选择“**下一步**”。
-7. 如果需要，可以创建基于其他统一 DLP 位置的 Exchange DLP 策略的其他策略。 这将为迁移的部署策略创建一个新的统一 DLP 策略Exchange一个新的统一 DLP 策略，为您在此处选择的其他位置创建一个新的统一 DLP 策略。
+7. 如果需要，可以创建基于其他统一 DLP 位置的 Exchange DLP 策略的其他策略。 这将为迁移的部署策略创建一个新的统一 DLP 策略Exchange一个新的统一 DLP 策略，以及您在此处选取的其他任何位置的一个新的统一 DLP 策略。
 
 > [!IMPORTANT]
-> 任何Exchange DLP 策略条件和操作不受其他 DLP 位置（如设备、SharePoint、OneDrive、本地、MCAS 或 Teams 聊天和频道消息）支持，都将从其他策略中删除。 此外，还必须为其他位置执行预工作。 请参阅：
+> Exchange DLP 位置（如设备、SharePoint、OneDrive、本地、MCAS 或 Teams 聊天和频道消息）不支持的任何 DLP 策略条件和操作都将从其他策略中删除。 此外，还必须为其他位置执行预工作。 请参阅：
 >- [了解 Microsoft 365 终结点数据丢失防护](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
 >- [终结点数据丢失防护入门](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 >- [使用端点数据丢失防护](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
@@ -146,7 +146,7 @@ Get-DlpDetailReport -StartDate <dd/mm/yyyy> -EndDate <dd/mm/yyyy> -PageSize 5000
 
 1. 打开Exchange管理中心 DLP 控制台。
 2. 停用或删除源策略。
-3. 打开 Microsoft 365[合规中心](https://compliance.microsoft.com/datalossprevention?viewid=policies)DLP 控制台，选择要使其处于活动状态的策略进行编辑。
+3. 打开[Microsoft 365 合规中心](https://compliance.microsoft.com/datalossprevention?viewid=policies)DLP 控制台，选择要使其处于活动状态的策略进行编辑。
 4. 将状态更改为 **"打开"。**
 
 ## <a name="related-articles"></a>相关文章

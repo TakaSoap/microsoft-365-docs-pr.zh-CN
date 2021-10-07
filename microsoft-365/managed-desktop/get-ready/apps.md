@@ -4,18 +4,18 @@ description: 介绍如何处理应用，包括如何打包、部署和支持它�
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c8a501c178ae0cffb98870d4fccd44028cbf6ec0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e3ac937a4ff98d853ad16ef4ae5854da70fa4d99
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161984"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213957"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 托管桌面中的应用
 
@@ -25,17 +25,17 @@ ms.locfileid: "59161984"
  
 ## <a name="apps-generally"></a>应用一般
 
-Microsoft 包括某些关键应用以及Microsoft 365 E3或 E5 许可证所需的 Microsoft 托管桌面。 但是，即使我们提供这些应用，你仍然具有某些责任和操作需要完成。
+Microsoft 包括某些关键应用，以及Microsoft 365 E3加入应用所需的 E5 或 Microsoft 托管桌面。 但是，即使我们提供这些应用，你仍然具有某些责任和操作需要完成。
 
-此外，还可以向用户部署其他非 Microsoft 应用，以便通过 公司门户 或所需的后台安装进行自助服务，所有这些都使用 Microsoft Intune部署管道。 
+此外，还可以向用户部署其他非 Microsoft 应用，以便通过 公司门户 或所需的后台安装进行自助服务，所有这些应用Microsoft Intune部署的管道。 
 
 ## <a name="apps-provided-by-microsoft"></a>Microsoft 提供的应用
 
-Microsoft 托管桌面 许可证中包含的应用程序是 Microsoft 365 企业应用版 Standard Suite (Word、Excel、PowerPoint、Outlook、Publisher、Access、Teams 和 OneNote.) 即点即用版本的 Microsoft Project 和 Visio 中的 64 位版本，但你可以请求添加它们。  有关这些应用的信息，请参阅在 Microsoft Project 设备上Visio [Microsoft Microsoft 托管桌面安装](../get-started/project-visio.md)。
+Microsoft 托管桌面 许可证包含 Microsoft 365 企业应用版 Standard Suite (Word、Excel、PowerPoint、Outlook、Publisher、Access、Teams 和 OneNote.) 即点即用版本的 Microsoft Project 和 Visio 中的 64 位版本，但您可以请求添加它们。  有关这些应用详细信息，请参阅在 Microsoft Project 设备上Visio [Microsoft Microsoft 托管桌面安装](../get-started/project-visio.md)。
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Microsoft 为支持我们提供的应用而做哪些工作
 
-Microsoft 将为包含的应用的部署、更新和支持提供Microsoft 365 企业应用版服务。 默认情况下不包含 Microsoft Project 和 Visio 即点即用版本，但Microsoft 托管桌面 将提供部署组，使 IT 管理员能够管理许可证并为组织适当地部署这些应用程序。 Microsoft 将支持这些应用程序的用户通过Microsoft 托管桌面支持渠道。
+Microsoft 将为包含的 Microsoft 365 企业应用版 应用提供部署、更新和支持的完整服务。 默认情况下不包含 Microsoft Project 和 Visio 即点即用版本，但Microsoft 托管桌面 将提供部署组，让 IT 管理员能够管理许可证并为组织适当地部署这些应用程序。 Microsoft 将支持这些应用程序的用户通过Microsoft 托管桌面支持渠道。
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>需要执行哪些工作来支持我们提供的应用
 
@@ -43,7 +43,7 @@ Microsoft 将为包含的应用的部署、更新和支持提供Microsoft 365 �
 
 - **分配** 许可证 - 你负责获取适当的许可证并将其分配给用户进行Microsoft 365 企业应用版。
 - **将用户添加到安全组**- 如果使用 Microsoft Project 或 Visio，则 IT 管理员必须将这些用户添加到相应的部署组。 IT 管理员还负责在用户离开公司时回收这些用户的许可证。
-- **Deploy Microsoft 365 Add-ons** - 如果你需要任何 Microsoft 365 企业应用版 应用的任何加载项，请集中部署它们，就像任何其他 Windows 32 应用一样。 
+- **Deploy Microsoft 365 Add-ons** - If you need any Add-ons for any of the Microsoft 365 企业应用版 apps， deploy them centrally like any other Windows 32 app. 
 
 ## <a name="apps-you-provide"></a>你提供的应用
 
@@ -53,7 +53,7 @@ Microsoft 将为包含的应用的部署、更新和支持提供Microsoft 365 �
 查看应用，检查：
 
 - 任何应用都不被禁止或具有受限行为，如Microsoft 托管桌面[要求中所述](../service-description/mmd-app-requirements.md)。
-- 应用必须已准备好通过管理Microsoft Intune。 有关本主题的详细信息，请参阅使用[Windows 10 部署应用](/intune/apps-windows-10-app-deploy)和Microsoft Intune[应用Microsoft Intune。](/intune/apps-add)
+- 应用必须已准备好通过管理Microsoft Intune。 有关本主题的详细信息，请参阅Windows 10[应用部署和](/intune/apps-windows-10-app-deploy)Microsoft Intune应用[Microsoft Intune。](/intune/apps-add)
 - 其他预打包要求，如提供许可证密钥、与许可条款的协议以及预先设置服务器连接。
 
 ## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>准备使用Microsoft 托管桌面

@@ -7,17 +7,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: cf9b1e1a485000bee7bf672690af5979767fb34b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1fcbdb702035913cf1a3317dd9b3619ef020ebab
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196717"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208141"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的网络配置
 
@@ -30,7 +30,7 @@ Microsoft 托管桌面云托管服务。 有一组终结点Microsoft 托管桌�
 
 客户可以通过直接通过防火墙或代理Microsoft 365所有受信任的网络请求、绕过身份验证和所有其他数据包级检查或处理来优化其网络。 这样可减少延迟和外围容量要求。 
 
-此外，为了Microsoft 托管桌面基于云的服务的性能，这些终结点需要客户客户端浏览器及其边缘网络中设备进行特殊处理。 这些设备包括防火墙、SSL 中断和检查、数据包检查设备和数据丢失防护系统。
+此外，为了优化Microsoft 托管桌面基于云的服务，这些终结点需要客户客户端浏览器及其边缘网络中设备进行特殊处理。 这些设备包括防火墙、SSL 中断和检查、数据包检查设备和数据丢失防护系统。
 
 ### <a name="proxy-requirement"></a>代理要求
 
@@ -56,7 +56,7 @@ Microsoft 支持和恢复助手 | \*.apibasic.diagnostics.office.com  <br>\*.api
 
 Microsoft 服务 | 文档
 --- | ---
-Windows 10 企业版包括Windows更新 for Business | [管理版本 1803 Windows 10连接终结点](/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理连接终结点Windows 10 版本 1809](/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理版本 1903 Windows 10连接终结点](/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 Windows 10 版本 2004 的连接终结点](/windows/privacy/manage-windows-2004-endpoints)
+Windows 10 企业版包括Windows更新 for Business | [管理版本 1803 Windows 10连接终结点](/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理连接终结点Windows 10 版本 1809](/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理版本 1903 Windows 10连接终结点](/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 2004 Windows 10版本的连接终结点](/windows/privacy/manage-windows-2004-endpoints)
 传递优化 | [配置传递优化以Windows 10更新](/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365URL 和 IP 地址范围](../../enterprise/urls-and-ip-address-ranges.md)
 Azure Active Directory | [混合标识所需的端口和协议](/azure/active-directory/hybrid/reference-connect-ports) 以及 [Active Directory 和 Active Directory 域服务端口要求](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772723(v=ws.10)) 

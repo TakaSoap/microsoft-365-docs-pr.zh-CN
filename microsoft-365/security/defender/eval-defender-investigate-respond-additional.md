@@ -1,7 +1,7 @@
 ---
 title: 尝试Microsoft 365 Defender环境中使用事件响应功能
 description: 在威胁检测中Microsoft 365 Defender事件响应功能，确定事件的优先级并管理事件、自动调查和使用高级搜寻。
-keywords: Microsoft 365 Defender试用版， 试用 Microsoft 365 Defender， 评估 Microsoft 365 Defender， Microsoft 365 Defender 评估实验室， Microsoft 365 Defender 试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+keywords: Microsoft 365 Defender试用版，请尝试Microsoft 365 Defender，评估Microsoft 365 Defender，Microsoft 365 Defender实验室，Microsoft 365 Defender试点， 网络安全性， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
@@ -22,19 +22,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 57106e33f244ad1e549fcfd7f361c82863f9e3a9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a075b653e3eeae9287f4fdbf83ed9e5e2133df99
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195985"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208453"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>尝试Microsoft 365 Defender环境中使用事件响应功能
 
 **适用于：**
 - Microsoft 365 Defender
 
-本文是使用试验环境对事件进行调查和响应过程中第 2 步Microsoft 365 Defender [2](eval-defender-investigate-respond.md)步。 有关此过程详细信息，请参阅 [概述](eval-defender-investigate-respond.md) 文章。
+本文是使用试验环境对事件进行调查和响应的过程中第 2 步Microsoft 365 Defender [2](eval-defender-investigate-respond.md)步。 有关此过程详细信息，请参阅 [概述](eval-defender-investigate-respond.md) 文章。
 
 对模拟攻击[执行事件](eval-defender-investigate-respond-simulate-attack.md)响应后，下面是一些Microsoft 365 Defender功能：
 
@@ -48,7 +48,7 @@ ms.locfileid: "59195985"
 
 ## <a name="prioritize-incidents"></a>确定事件优先级
 
-在快速启动 Microsoft 365 Defender 门户&事件>事件和事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
+在快速启动 Microsoft 365 Defender (**>** security.microsoft.com) 时，你可以从事件&警报和事件Microsoft 365 Defender [事件](https://security.microsoft.com)队列。 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。":::
 
@@ -60,7 +60,7 @@ ms.locfileid: "59195985"
 
 - 使用筛选专注于特定方案或威胁。 对事件队列应用筛选器可帮助确定需要立即关注的事件。 
 
-从默认事件队列中，选择"**筛选器**"以查看"筛选器"窗格，可以从中指定一组特定的事件。 下面是一个示例。
+从默认事件队列中，选择"**筛选器**"以查看"筛选器"窗格，可以从中指定一组特定的事件。 以下是示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="事件队列的筛选器窗格示例。":::
 
@@ -149,27 +149,27 @@ ms.locfileid: "59195985"
 
 3. 配置测试设备：
 
-    a. 确保使用的是 Windows 10 1903 或更高版本。
+    a. 确保使用的是 Windows 10版本 1903 或更高版本。
 
     b. 将测试设备加入测试域。
 
-    c. [打开Windows Defender 防病毒。](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) 如果无法启用Windows Defender 防病毒，请参阅[此疑难解答主题](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
+    c. [打开"Windows Defender 防病毒"。](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) 如果无法启用Windows Defender 防病毒，请参阅[此疑难解答主题](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
     d. [载入到 Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 
 ### <a name="run-the-simulation"></a>运行模拟
 
-1. 从外部电子邮件帐户，将电子邮件发送到在搜寻环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型包括.pdf、.exe(（如果) ）或Office文档类型（如 Word 文件）。 <i> </i> <i></i>
+1. 从外部电子邮件帐户，将电子邮件发送到在搜寻环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型包括<i>.pdf、.exe(（) ）</i>或 Office 文档类型（如 Word 文件）。 <i></i>
 
 2. 打开从设备发送的电子邮件，如搜寻环境要求部分的步骤 3 中的定义。 打开附件或将文件保存到设备。
 
 #### <a name="go-hunting"></a>转到搜寻
 
-1. 打开[Microsoft 365 Defender门户](https://security.microsoft.com/)。
+1. 打开Microsoft 365 Defender[门户](https://security.microsoft.com/)。
 
-2. 从导航窗格中，选择"搜寻 **>高级搜寻"。**
+2. 从导航窗格中，选择"搜寻>**高级搜寻"。**
 
-3. 生成一个查询，该查询从收集电子邮件事件开始。
+3. 构建一个查询，该查询从收集电子邮件事件开始。
 
    1. 选择 **"查询>新建"。**
 
@@ -191,7 +191,7 @@ ms.locfileid: "59195985"
         > [!NOTE]
         > 高级搜寻将查询结果显示为表格数据。 还可以选择查看其他格式类型（如图表）的数据。
 
-   1. 查看结果，并查看能否识别打开的电子邮件。 邮件最多可能需要两个小时才能显示在高级搜寻中。 若要缩小结果范围，可以将 **where** 条件添加到查询中，以仅查找"yahoo.com"为 SenderMailFromDomain 的电子邮件。 下面是一个示例。
+   1. 查看结果，并查看能否识别打开的电子邮件。 邮件最多可能需要两个小时才能显示在高级搜寻中。 若要缩小结果范围，可以将 **where** 条件添加到查询中，以仅查找"yahoo.com"为 SenderMailFromDomain 的电子邮件。 以下是示例。
 
       ```console
       EmailEvents
@@ -224,7 +224,7 @@ ms.locfileid: "59195985"
 
 6. 接下来，使用 **EmailAttachmentInfo** 表中的 **SHA256** 值查找针对该哈希 (终结点上发生的 **DeviceFileEvents**) 文件操作。 此处的常用字段是附件的 SHA256 哈希。
 
-   生成的表现在包含终结点 (Microsoft Defender for Endpoint) 的详细信息，例如设备名称、在此例中 (已执行哪些操作、已筛选为仅包括 FileCreated 事件) 以及文件存储位置。 还将包含与进程关联的帐户名称。
+   生成的表现在包含终结点 (Microsoft Defender for Endpoint) 的详细信息，例如设备名称、 (在这种情况下已执行哪些操作、已筛选为仅包括 FileCreated 事件) 以及文件存储位置。 还将包含与进程关联的帐户名称。
 
    ```console
    EmailEvents

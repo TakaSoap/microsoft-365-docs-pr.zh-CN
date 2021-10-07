@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: 了解如何激活、续订或向企业版订阅Microsoft 365许可证。
 ms.date: 10/21/2020
-ms.openlocfilehash: 78524b47b32d1b827cc6d525e4aa8e3feb499557
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e93638bfc8a5f88ff3575a2f0bccc2ab75171fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175673"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177623"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>输入从 Microsoft Open 购买的产品密钥
 
@@ -35,13 +35,13 @@ ms.locfileid: "59175673"
   
  **需要其他内容？**
  
- **有关家庭Microsoft 365或个人** 的帮助，请参阅将产品密钥与产品 [Office。](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)
+ **有关家庭Microsoft 365或个人** 的帮助，请参阅 [将产品密钥与产品Office。](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)
   
- **有关从零Microsoft 365 商业标准版购买的产品的帮助**，请参阅输入从零售 [商店购买的产品密钥](enter-your-product-key.md)。 
+ **有关从零Microsoft 365 商业标准版购买的产品的帮助**，请参阅输入从零售商店购买 [的产品密钥](enter-your-product-key.md)。 
   
 ## <a name="activate-renew-or-add-licenses-to-a-subscription-purchased-from-microsoft-open"></a>激活、续订或添加从 Microsoft Open 购买的订阅的许可证
 
-如果从 Microsoft Microsoft 365许可证计划购买许可证，系统会在您激活、续订或向订阅添加许可证时自动输入密钥。
+如果从 Microsoft Microsoft 365许可证计划购买了许可证，系统会在激活、续订或向订阅添加许可证时自动输入密钥。
   
 1. 从合作伙伴购买密钥Microsoft 365，检查收件箱中是否包含来自 Microsoft 的包含激活链接的电子邮件。
     
@@ -55,7 +55,7 @@ ms.locfileid: "59175673"
   
 ## <a name="whats-next"></a>下一步做什么？
 
-如果你是第一次Microsoft 365，请了解如何为组织[设置Microsoft 365服务](../admin/setup/setup.md)。
+如果你是第一次Microsoft 365企业用户，请了解如何为Microsoft 365[设置服务](../admin/setup/setup.md)。
   
 ## <a name="still-having-trouble-with-product-keys"></a>仍在使用产品密钥方面遇到问题？
 

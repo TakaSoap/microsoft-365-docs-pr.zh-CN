@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ description: 了解如何使用威胁资源管理器和实时检测报告来调�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae46d8540ec0d2bd9ae8d906a9a44fd0e397ee2f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 959d3d676f07a7816b622d5db53252c846340d2a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161915"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202437"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 
@@ -37,10 +37,10 @@ ms.locfileid: "59161915"
 
 [威胁](threat-explorer.md) (和实时检测报告) 是一款功能强大的近实时工具，可帮助安全运营团队调查和响应 Microsoft 365 Defender 门户中的威胁。 Explorer (和实时检测报告) 显示有关 Office 365 中电子邮件和文件中可疑恶意软件和网络钓鱼的信息，以及组织面临的其他安全威胁和风险。
 
-- 如果你有 Microsoft [Defender for Office 365](defender-for-office-365.md)计划 2，则你有资源管理器。
+- 如果你有[Microsoft Defender for Office 365](defender-for-office-365.md)计划 2，则你有资源管理器。
 - 如果你有 Microsoft Defender for Office 365计划 1，则你有实时检测。
 
-首次打开资源管理器 (或实时检测报告) ，默认视图会显示过去 7 天内的电子邮件恶意软件检测。 此报告还可以显示 Microsoft Defender 进行Office 365检测，例如由["保险箱"链接](safe-links.md)检测到的恶意 URL，以及"附件"保险箱[文件](safe-attachments.md)。 此报告可修改为显示过去 30 天内使用 Microsoft Defender (P2 付费订阅Office 365的数据) 。 试用版订阅仅包含过去七天的数据。
+首次打开 Explorer (或实时检测报告) 时，默认视图会显示过去 7 天的电子邮件恶意软件检测。 此报告还可以显示 Microsoft Defender 进行Office 365检测，如[保险箱 链接](safe-links.md)检测到的恶意 URL，以及由"附件"保险箱[恶意文件](safe-attachments.md)。 可以修改此报告以显示过去 3 (0 天内使用 Microsoft Defender Office 365 P2 付费订阅) 。 试用版订阅仅包含过去七天的数据。
 
 ****
 
@@ -54,7 +54,7 @@ ms.locfileid: "59161915"
 |
 
 > [!NOTE]
-> 我们即将扩展 Explorer (实时检测，) 试用租户的数据保留和搜索限制从 7 天扩展到 30 天。 此更改作为第 70544 号路线图项的一部分进行跟踪，当前处于推出阶段。
+> 我们即将扩展 Explorer (和实时检测，) 试用租户的数据保留和搜索限制从 7 天扩展到 30 天。 此更改作为第 70544 号路线图项的一部分进行跟踪，当前处于推出阶段。
 
 使用 **"视图** "菜单更改显示的信息。 工具提示可帮助您确定要使用哪个视图。
 
@@ -80,7 +80,7 @@ ms.locfileid: "59161915"
 
 ## <a name="email--phish"></a>电子邮件>钓鱼邮件
 
-若要查看此报告，在资源管理器 (或实时检测中，) **查看** \> **电子邮件** \> **钓鱼邮件**"。 此视图显示标识为网络钓鱼尝试的电子邮件。
+若要查看此报告，在 Explorer (或实时检测中，) **查看** \> **电子邮件** \> **钓鱼邮件**"。 此视图显示标识为网络钓鱼尝试的电子邮件。
 
 ![查看有关标识为网络钓鱼尝试的电子邮件的数据。](../../media/phish.png)
 
@@ -104,7 +104,7 @@ ms.locfileid: "59161915"
 
 ![用户报告的电子邮件。](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
 
-单击 **"** 发件人"打开查看选项列表。 使用此列表可查看发件人、收件人、报告 (用户确定电子邮件是垃圾邮件、非垃圾邮件或网络钓鱼邮件等) 的信息。
+单击 **"** 发件人"打开查看选项列表。 使用此列表可查看发件人、收件人、报告类型 (用户确定电子邮件是垃圾邮件、非垃圾邮件或钓鱼邮件) 等。
 
 例如，若要查看有关报告为网络钓鱼尝试的电子邮件的信息，请单击"发件人报告类型"，选择"网络钓鱼"， \> 然后单击"刷新"按钮。
 
@@ -118,12 +118,12 @@ ms.locfileid: "59161915"
 
 ## <a name="email--all-email"></a>电子邮件>所有电子邮件
 
-若要查看此报告，在资源管理器中，选择 **查看** \> **电子邮件** \> **所有邮件**。 此视图显示电子邮件活动的全视图，包括由于网络钓鱼或恶意软件而标识为恶意的电子邮件，以及所有非恶意 (电子邮件、垃圾邮件和批量邮件) 。
+若要查看此报告，在资源管理器中，选择 **查看** \> **电子邮件** \> **所有邮件**。 此视图显示电子邮件活动（包括由于网络钓鱼或恶意软件而标识为恶意的电子邮件）以及所有非恶意邮件 (普通电子邮件、垃圾邮件和批量邮件) 。
 
 > [!NOTE]
 > 如果收到读取要显示 **的数据** 过多的错误，请添加筛选器，如有必要，缩小正在查看的日期范围。
 
-若要应用筛选器，请选择" **发件人**"，选择列表中的某个项目，然后单击"刷新"按钮。 在我们的示例中，我们使用了 **检测技术** 作为筛选器 (提供了多个可用的) 。 查看发件人、发件人的域、收件人、主题、附件文件名、恶意软件系列、Office 365) 中威胁防护功能和策略采取的保护状态 (操作、检测技术 (检测) 恶意软件的行为等。
+若要应用筛选器，请选择" **发件人**"，选择列表中的某个项目，然后单击"刷新"按钮。 在我们的示例中， **我们将检测技术** 用作筛选器 (提供了多个可用的) 。 查看发件人、发件人域、收件人、主题、附件文件名、恶意软件系列、Office 365) 中威胁防护功能和策略采取的保护状态 (操作、检测技术 (检测) 等。
 
 ![通过检测技术查看有关检测到的电子邮件的数据。](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 
@@ -131,7 +131,7 @@ ms.locfileid: "59161915"
 
 ## <a name="content--malware"></a>恶意软件>内容
 
-若要查看此报告，在资源管理器 (或实时检测中，) 查看 \> **内容** \> **恶意软件"。** 此视图显示 Microsoft Defender 在[Office 365 Online、SharePoint](mdo-for-spo-odb-and-teams.md)和 OneDrive for Business 中Microsoft Teams恶意Microsoft Teams。
+若要查看此报告，在资源管理器 (或实时检测中，) 查看 \> **内容** \> **恶意软件"。** 此视图显示 Microsoft Defender 在 Office 365 Online、SharePoint 和 OneDrive for Business Microsoft Teams 中被 Microsoft Defender 标识[为恶意Microsoft Teams。](mdo-for-spo-odb-and-teams.md)
 
 按恶意软件系列、检测技术 (检测恶意软件) ，以及工作负荷 (OneDrive、SharePoint或Teams) 。
 
@@ -149,7 +149,7 @@ ms.locfileid: "59161915"
 
 ![已筛选为仅显示 Defender 的Office 365触发结果。](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-在此视图中，我们正在寻找由附件 触发保险箱[数据](safe-attachments.md)。 在图表下方，我们可以看到有关附件由"附件"检测到的特定保险箱的详细信息。
+在此视图中，我们现在查看由附件 触发保险箱[数据](safe-attachments.md)。 在图表下方，我们可以看到有关附件由"附件"检测到的特定保险箱的详细信息。
 
 ![有关带检测到附件的电子邮件的特定详细信息。](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 

@@ -7,19 +7,19 @@ ms.date: 07/17/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
 ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
-description: 摘要：了解为什么必须使用 PowerShell 管理Microsoft 365，在某些情况下可以更高效地管理，而在某些情况下，必须这样管理。
-ms.openlocfilehash: 361900d66c1cb8f41a27f661241a63d7d806e99b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 摘要：了解为什么必须使用 PowerShell 来管理Microsoft 365，在某些情况下可以更高效地管理，而在某些情况下，必须这样管理。
+ms.openlocfilehash: 79beabad5b588ae47d9de70cb8a9cce6862a1c1d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195675"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208189"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>为什么需要使用 PowerShell for Microsoft 365
 
@@ -41,7 +41,7 @@ ms.locfileid: "59195675"
 
 - 跨服务管理
 
-请记住，PowerShell for Microsoft 365 是一组用于 Windows PowerShell 的模块，它是基于 Windows 服务和平台的命令行环境。 此环境创建一种命令行管理程序语言，该语言可以使用其他模块进行扩展。 它提供了一种执行简单或复杂的命令或脚本的方法。 例如，安装 powerShell Microsoft 365模块并连接到 Microsoft 365 订阅后，可以运行以下命令列出 Microsoft Exchange Online：
+请记住，PowerShell for Microsoft 365 是一组用于 Windows PowerShell 的模块，它是基于 Windows 服务和平台的命令行环境。 此环境创建一种命令行管理程序语言，该语言可以使用其他模块进行扩展。 它提供了一种执行简单或复杂的命令或脚本的方法。 例如，为模块安装 PowerShell Microsoft 365并连接到 Microsoft 365 订阅后，可以运行以下命令列出 Microsoft Exchange Online：
 
 ```powershell
 Get-Mailbox
@@ -63,11 +63,11 @@ PowerShell for Microsoft 365 旨在帮助您管理Microsoft 365，而不是替�
 
 ## <a name="powershell-for-microsoft-365-can-reveal-information-that-you-cant-see-with-the-microsoft-365-admin-center"></a>PowerShell for Microsoft 365可以显示你无法通过 Microsoft 365 管理中心
 
-该Microsoft 365 管理中心显示许多有用的信息。 但它不会显示存储在用户、Microsoft 365邮箱和网站的所有可能的信息。 下面是用户和组中 *用户* 和Microsoft 365 管理中心：
+该Microsoft 365 管理中心显示许多有用的信息。 但它不会显示用户、Microsoft 365邮箱和网站的所有可能信息。 下面是用户和组中 *用户* 和Microsoft 365 管理中心：
 
 ![用户和组在用户和组的显示Microsoft 365 管理中心。](../media/o365-powershell-users-and-groups.png)
 
-此视图提供在许多情况下您需要的信息。 但是，有时你需要了解更多。 例如，Microsoft 365许可 (以及Microsoft 365用户可用的) 功能部分取决于用户的地理位置。 可以扩展到居住在美国的用户的策略和功能可能与可以扩展到印度或比利时的用户的策略和功能不同。 按照下面的步骤Microsoft 365 管理中心确定用户的地理位置：
+此视图提供在许多情况下您需要的信息。 但是，有时你需要了解更多。 例如，Microsoft 365许可 (以及Microsoft 365用户可用的) 功能部分取决于用户的地理位置。 可以扩展到居住在美国的用户的策略和功能可能与可以扩展到印度或比利时的用户的策略和功能不同。 请按照以下Microsoft 365 管理中心确定用户的地理位置：
 
 1. 双击用户的"显示名称"。
 
@@ -89,7 +89,7 @@ Get-AzureADUser | Select DisplayName, UsageLocation
 
 
 >[!Note]
->PowerShell Core 不支持模块Microsoft Azure Active Directory模块Windows PowerShell名称中具有 *Msol* 的 cmdlet。 您必须从应用程序运行这些 cmdlet Windows PowerShell。
+>PowerShell Core 不支持 Microsoft Azure Active Directory 模块Windows PowerShell名称中具有 *Msol* 的 cmdlet。 您必须从应用程序运行这些 cmdlet Windows PowerShell。
 >
 
 下面是一个结果示例：
@@ -143,7 +143,7 @@ David Longmuir                                        BR
 Fabrice Canel                                         BR
 ```
 
-此 PowerShell 命令的解释是：获取当前 Microsoft 365 订阅中位置为 Brazil (**{$ 的所有用户 \_ 。UsageLocation -eq "BR"}**) ，然后显示每个用户的名称和位置。
+此 PowerShell 命令的解释是：获取当前订阅Microsoft 365其位置为 Brazil (**Where {$ \_ 的所有用户。UsageLocation -eq "BR"}**) ，然后显示每个用户的名称和位置。
 
  **有关大型域的注释**
 
@@ -164,11 +164,11 @@ $x | Select DisplayName, UsageLocation
 
 这组 PowerShell 命令的解释是：
 1. 获取当前订阅中的Microsoft 365，将信息存储在名为 $x (**$x = Get-AzureADUser**) 的变量中。
-1.  将变量的内容显示为 $x *，但* 仅包括每个用户的用户名和 **($x |选择 DisplayName、UsageLocation**) 。
+1.  显示变量的内容$x *，但* 仅包括每个用户的用户名和位置 **($x |选择 DisplayName、UsageLocation**) 。
 
 ## <a name="microsoft-365-has-features-that-you-can-only-configure-with-powershell-for-microsoft-365"></a>Microsoft 365只能使用 PowerShell 为用户配置Microsoft 365
 
-此Microsoft 365 管理中心旨在提供对适用于大多数环境的常见、有用的管理任务的访问权限。 换句话说，设计Microsoft 365 管理中心，以便典型的管理员能够执行最常见的管理任务。 但有些任务无法通过管理中心完成。
+此Microsoft 365 管理中心旨在提供对适用于大多数环境的常见、有用的管理任务的访问权限。 换句话说，设计Microsoft 365 管理中心，以便典型的管理员能够执行最常见的管理任务。 但是有些任务在管理中心中无法完成。
 
 例如，Skype for Business Online 管理中心提供了一些创建自定义会议邀请的选项：
 
@@ -193,9 +193,9 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConference
 
 此 PowerShell 命令的解释为：
 
-1. 在 **Set-CsMeetingConfigur) ation** (的新 Skype for Business Online 会议设置中，禁用允许匿名用户自动进入 (**-AdmitAnonymousUsersByDefault** $False) 。
+1. 在 **Set-CsMeetingConfigur) ation** (的新 Skype for Business Online 会议设置中，禁用允许匿名用户自动进入会议 (**-AdmitAnonymousUsersByDefault $False**) 。
 2.  禁止与会者在会议记录 (**-AllowConferenceRecording** $False) 。
-3. 不要将您组织的所有用户指定为 (**-DesignateAsPresenter "None"**) 。
+3. 不要将组织中所有用户指定为 **-DesignateAsPresenter ("None") 。**
 
 若要还原这些默认设置 (启用选项) ，请运行以下命令：
 
@@ -207,11 +207,11 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceR
 
 ## <a name="powershell-for-microsoft-365-is-great-for-bulk-operations"></a>PowerShell for Microsoft 365非常适用于批量操作
 
-当您有一个Microsoft 365 管理中心操作时，例如 Microsoft 365 管理中心 这样的可视化接口最为有价值。 例如，如果需要禁用一个用户帐户，可以使用管理中心快速找到并清除复选框。 这可能比在 PowerShell 中执行类似的操作要容易。
+当您有一个Microsoft 365 管理中心操作时，visual interfaces（例如 Microsoft 365 管理中心）最有价值。 例如，如果需要禁用一个用户帐户，可以使用管理中心快速找到并清除复选框。 这可能比在 PowerShell 中执行类似的操作要容易。
 
-但是，如果您必须更改大量其他一组内容中的许多内容或某些选定内容，Microsoft 365 管理中心可能不是最佳工具。 例如，假设你必须更改数千个电话号码上的前缀，或者从你的所有联机网站中删除特定SharePoint Ken *Myer。* 如何在管理中Microsoft 365 管理中心？
+但是，如果您必须更改一大组其他内容中的许多内容或某些选定内容，Microsoft 365 管理中心可能不是最佳工具。 例如，假设你必须更改数千个电话号码上的前缀，或者从你的所有联机网站中删除特定SharePoint Ken *Myer。* 如何在管理中Microsoft 365 管理中心？
 
-对于最后一个示例，假设你拥有数百SharePoint Online 网站，并且不知道 Ken Meyer 是哪个网站的成员。 您必须从以下步骤Microsoft 365 管理中心，然后针对每个网站执行此过程：
+对于最后一个示例，假设你拥有数百SharePoint Online 网站，而你不知道 Ken Meyer 是哪个网站的成员。 您必须从以下步骤Microsoft 365 管理中心，然后针对每个网站执行此过程：
 
 1. 选择 **网站的 URL。**
 
@@ -225,7 +225,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceR
 
 5. 在"**共享对象"** 对话框中，选择"高级 **"。**
 
-6. 向下滚动用户列表，查找并选择 Ken Myer (假定他拥有对网站集) 权限，然后选择"删除 **用户权限"。**
+6. 向下滚动用户列表，查找并选择 Ken Myer (假定他拥有访问网站) ，然后选择"删除 **用户权限"。**
 
 对于几百 *个网站，* 这可能需要很长时间。
 
@@ -238,23 +238,23 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 > [!NOTE]
 > 此命令要求安装 SharePoint [Online PowerShell 模块](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
 
-此 PowerShell 命令的解释是：在当前 Microsoft 365 订阅 (**Get-SPOSite**) 中获取所有 SharePoint 网站，并针对每个网站从可以访问它的用户列表中删除 Ken Meyer (**ForEach {Remove-SPOUser -Site $ 。 \_Url -LoginName "kenmyer \@ litwareinc.com"}) 。**
+此 PowerShell 命令的解释是：在当前 Microsoft 365 订阅 (**Get-SPOSite**) 中获取所有 SharePoint 网站，并针对每个网站从可以访问它的用户列表中删除 Ken Meyer (**ForEach {Remove-SPOUser -Site $ \_ 。Url -LoginName "kenmyer \@ litwareinc.com"}) 。**
 
 我们Microsoft 365从每个网站删除 Ken Meyer，包括他无法访问的网站。 因此，结果将显示他无法访问的网站的错误。 我们可以在此命令上使用附加条件，以仅从登录列表中具有 Ken Meyer 的站点中删除 Ken Meyer。 但返回的错误不会损害网站本身。 此命令可能需要几分钟才能针对数百个网站运行，而不是在运行 Microsoft 365 管理中心。
 
-下面是另一个批量操作示例。 使用此命令将新管理员 *为 SharePoint的一* 位用户）添加到组织的所有网站：
+下面是另一个批量操作示例。 使用此命令将新管理员 *为SharePoint用户）* 添加到组织的所有网站：
 
 ```powershell
 Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}
 ```
 
-此 PowerShell 命令的解释是：在当前 Microsoft 365 订阅中获取所有 SharePoint 网站，并针对每个网站，通过将她登录名添加到网站 (**ForEach {Add-SPOUser -Site $ 的 Members 组来允许其访问。 \_Url -LoginName "bkearney \@ litwareinc.com" -Group "Members"}**) 。
+此 PowerShell 命令的解释是：在当前 Microsoft 365 订阅中获取所有 SharePoint 网站，并针对每个网站，通过将用户登录名添加到网站 (**ForEach {Add-SPOUser -Site $ 的 Members 组，允许其访问每个网站。 \_Url -LoginName "bkearney \@ litwareinc.com" -Group "Members"}**) 。
 
 ## <a name="powershell-for-microsoft-365-is-great-at-filtering-data"></a>PowerShell for Microsoft 365非常出色的筛选数据
 
 The Microsoft 365 管理中心 provides several ways to filter your data to easily locate a targeted subset of information. 例如，可以通过 Exchange 轻松筛选用户邮箱的几乎所有属性。 例如，下面是居住在布卢明顿市的所有用户的邮箱列表：
 
-![在" 邮箱"中Microsoft 365 管理中心为居住在布卢明顿市的所有用户的邮箱列表执行高级搜索的示例。](../media/o365-powershell-advanced-search.png)
+![在" 邮箱"中Microsoft 365 管理中心对居住在布卢明顿市的所有用户的邮箱列表执行高级搜索的示例。](../media/o365-powershell-advanced-search.png)
 
 Exchange 管理中心还允许您组合筛选条件。 例如，您可以查找居住在布卢明顿并工作于财务部门的所有用户的邮箱。
 
@@ -277,7 +277,7 @@ Julian Isla                              Bloomington
 Rob Young                                Bloomington
 ```
 
-此 PowerShell 命令的解释是：获取当前 Microsoft 365 订阅中拥有圣地亚哥或布卢明顿市邮箱的所有用户 (**{$ \_ 。RecipientTypeDetails -eq "UserMailbox" -and ($ \_ .City -eq "San Diego" -or $ \_ .City -eq "Bloomington") }**) ，然后显示每个字段的名称和城市 (**选择 DisplayName，City**) 。
+此 PowerShell 命令的解释是：获取当前 Microsoft 365 订阅中在圣地亚哥或布卢明顿市拥有邮箱的所有用户 (**{$ \_ 。RecipientTypeDetails -eq "UserMailbox" -and ($ \_ .City -eq "San Diego" -or $ \_ .City -eq "Bloomington") }**) ，然后显示每个名称的名称和城市 (**选择 DisplayName， City**) 。
 
 下面是为居住在布卢明顿以外的任何地方的用户列出所有邮箱的命令：
 
@@ -304,13 +304,13 @@ Garth Fort                                Tulsa
 Janet Schorr                              Bellevue
 ```
 
-此 PowerShell 命令的解释是：获取当前 Microsoft 365 订阅中邮箱未位于布卢明顿市的所有用户 (**{$ \_ 。RecipientTypeDetails -eq "UserMailbox" -and $ \_ .City -ne "Bloomington"}**) ，然后显示每个名称及城市。
+此 PowerShell 命令的解释是：获取当前 Microsoft 365 订阅中邮箱未位于布卢明顿市 (**{$ 的所有用户 \_ 。RecipientTypeDetails -eq "UserMailbox" -and $ \_ .City -ne "Bloomington"}**) ，然后显示每个名称和城市。
 
 ### <a name="use-wildcards"></a>使用通配符
 
 您还可以在 PowerShell 筛选器中使用通配符来匹配部分名称。 例如，假设您要查找用户帐户。 你只记得用户的姓氏是 *Anderson，* 也可能是 *Henderson* 或 *Jorgenson*。
 
-通过使用搜索工具并执行三种不同的Microsoft 365 管理中心，可以在搜索工具中跟踪该用户：
+通过使用搜索工具并执行三Microsoft 365 管理中心搜索，可以在搜索工具中跟踪该用户：
 
 - 一次是搜索  *Anderson*
 
@@ -324,7 +324,7 @@ Janet Schorr                              Bellevue
 Get-User -Filter '{LastName -like "*son"}'
 ```
 
-此 PowerShell 命令的解释是：在当前 Microsoft 365 订阅中获取所有用户，但使用仅列出姓氏以"son"结尾的用户的筛选器 (**-Filter '{LastName -like " \* son"}'**) 。 \*代表任意一组字符，这些字符是用户姓氏中的字母。
+此 PowerShell 命令的解释是：获取当前 Microsoft 365 订阅中的所有用户，但使用仅列出姓氏以"son"结尾的用户的筛选器 (**-Filter '{LastName -like " \* son"}'**) 。 \*代表任意一组字符，这些字符是用户姓氏中的字母。
 
 ## <a name="powershell-for-microsoft-365-makes-it-easy-to-print-or-save-data"></a>PowerShell for Microsoft 365可以轻松打印或保存数据
 
@@ -334,7 +334,7 @@ The Microsoft 365 管理中心 lets you view lists of data. 下面是显示已�
 
 若要将该信息保存到文件中，必须将其粘贴到文档或Microsoft Excel工作表中。 这两种情况都可能需要其他格式。 此外，Microsoft 365 管理中心无法直接打印显示的列表。
 
-幸运的是，您可以使用 PowerShell 不仅显示列表，还可以将其保存到可轻松导入到Excel。 下面是一个将 Skype for Business Online 用户数据保存到逗号分隔值 (CSV) 文件的示例命令，随后可以轻松地将其导入到 Excel 工作表中：
+幸运的是，您可以使用 PowerShell 不仅显示列表，还可以将其保存到可轻松导入到Excel。 下面的示例命令将 Skype for Business Online 用户数据保存到逗号分隔值 (CSV) 文件中，然后可以轻松地将其导入到 Excel 工作表中：
 
 ```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export-Csv -Path "C:\Logs\SfBUsers.csv" -NoTypeInformation
@@ -342,9 +342,9 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export
 
 下面是一个结果示例：
 
-![为保存到逗号分隔值文件的 Excel Online Skype for Business导入工作表的表示例。](../media/o365-powershell-data-in-excel.png)
+![导入工作表的表示例Excel保存到Skype for Business逗号分隔值文件的 Online 用户数据。](../media/o365-powershell-data-in-excel.png)
 
-此 PowerShell 命令的解释是：使用 **Get-CsOnlineUser** Skype for Business 获取当前 Microsoft 365 订阅 (所有) ;仅获取 Select **DisplayName、UserPrincipalName、UsageLocation** (用户名、UPN 和) ;然后将该信息保存在名为 C： LogsSfBUsers.csv (\\ \\ **Export-Csv -Path "C： \\ Logs \\SfBUsers.csv" -NoTypeInformation**) 。
+此 PowerShell 命令的解释是：使用 **Get-CsOnlineUser** Skype for Business 获取当前 Microsoft 365 订阅 (所有) ;仅获取 Select **DisplayName、UserPrincipalName、UsageLocation** (用户名、UPN 和) ;然后将该信息保存在名为 C： LogsSfBUsers.csv (\\ \\ **Export-Csv -Path "C： Logs \\ \\SfBUsers.csv" -NoTypeInformation**) 。
 
 您还可以使用选项将此列表另存为 XML 文件或 HTML 页。 事实上，通过其他 PowerShell 命令，您可以直接将其另存为Excel文件，并设置任何自定义格式。
 
@@ -364,7 +364,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
 
 ## <a name="powershell-for-microsoft-365-lets-you-manage-across-server-products"></a>PowerShell for Microsoft 365允许你跨服务器产品进行管理
 
-组成组件的组件Microsoft 365协同工作。 例如，假设您向用户Microsoft 365，并指定了诸如用户的部门和电话号码这样的信息。 如果您访问以下任一服务中的用户信息，该信息将Microsoft 365：Skype for Business Online、Exchange 或 SharePoint。
+构成Microsoft 365旨在协同工作。 例如，假设您向用户Microsoft 365，并指定诸如用户的部门和电话号码这样的信息。 如果您访问以下任一服务中的用户信息，该信息Microsoft 365：Skype for Business Online、Exchange 或 SharePoint。
 
 不过，此规则适用于跨产品套件的一般信息。 特定于产品的信息（如有关用户邮箱Exchange）通常无法跨套件使用。 例如，有关用户邮箱是否已启用的信息仅在管理中心Exchange可用。
 
@@ -378,7 +378,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
 
 - 用户是否已启用 Skype for Business Online
 
-您无法轻松地在报告生成此类Microsoft 365 管理中心。 相反，您必须创建一个单独的文档来存储信息，例如一个Excel工作表。 然后，从 Microsoft 365 管理中心 获取所有用户名和许可信息，从 Exchange 管理中心获取邮箱信息，从 Skype for Business Online 管理中心获取 Skype for Business Online 信息，然后合并该信息。
+您无法轻松地在报告生成此类Microsoft 365 管理中心。 相反，您必须创建单独的文档来存储信息，如Excel工作表。 然后，从 Microsoft 365 管理中心 获取所有用户名和许可信息，从 Exchange 管理中心获取邮箱信息，从 Skype for Business Online 管理中心获取 Skype for Business Online 信息，然后合并该信息。
 
 替代方法是使用 PowerShell 脚本来编译报告。
 
@@ -417,11 +417,11 @@ Molly Dempsey           False        True               False
 此 PowerShell 脚本的解释为：
 
 1. 获取当前 Microsoft 365 订阅中的所有用户，将信息存储在名为 *$x* (**$x = Get-AzureADUser**) 的变量中。
-1. 启动一个循环，该循环在 $x (**foreach** ($i 中的$x) ) 。
+1. 启动一个循环，该循环在 $x) $x (**foreach** ($i 中$x) ) 。
 1. 定义一个名为 *$y* 的变量， ($y **= Get-Mailbox -Identity $i.UserPrincipalName) 。**
 1. 向名为 *IsMailBoxEnabled* 的用户信息添加新属性。 将此属性设置为用户邮箱 ($i | Add-Member **-MemberType NoteProperty -Name IsMailboxEnabled -Value $y.IsMailboxEnabled) 的 IsMailBoxEnabled** 属性的值。
-1. 定义一个名为 *$y* 的变量， ($y = Get-CsOnlineUser **-Identity $i.UserPrincipalName**) 中存储用户的 Skype for Business Online 信息。
-1. 向名为 *EnabledForSfB* 的用户信息添加新属性。 将此属性设置为用户的 Skype for Business Online 信息的 Enabled 属性值 (**$i | Add-Member -MemberType NoteProperty -Name EnabledForSfB -Value $y.Enabled**) 。
+1. 定义一个名为 *$y* 的变量， ($y **= Get-CsOnlineUser -Identity $i.UserPrincipalName**) 中存储用户的 Skype for Business Online 信息。
+1. 向名为 *EnabledForSfB* 的用户信息添加新属性。 将此属性设置为用户的 Skype for Business Online 信息 (**$i | Add-Member -MemberType NoteProperty -Name EnabledForSfB -Value $y.Enabled**) 属性的值。
 1. 显示用户列表，但仅包括其姓名、是否获得许可以及指示其邮箱是否已启用以及是否已启用 Skype for Business Online ($x | **选择 DisplayName、IsLicensed、IsMailboxEnabled、EnabledforSfB**) 。
 
 ## <a name="see-also"></a>另请参阅

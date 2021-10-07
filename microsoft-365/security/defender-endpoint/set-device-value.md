@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 480ac20e3fe6ac9b3b8c7aa66b759b361a96a595
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: faad84ceb24e1e06d2fa73c3179be0386c822102
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201102"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193993"
 ---
 # <a name="set-device-value-api"></a>设置设备值 API
 
@@ -55,14 +55,14 @@ ms.locfileid: "59201102"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："管理安全性设置"。 有关详细信息， (请参阅创建 [和管理](user-roles.md) 角色，了解) 
-> - 用户需要具有计算机访问权限，根据计算机组设置 (请参阅创建和管理计算机组，了解) [](machine-groups.md)
+> - 用户需要有权访问计算机，根据计算机组设置 (创建和管理计算机组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -74,16 +74,16 @@ POST https://api.securitycenter.microsoft.com/api/machines/{machineId}/setDevice
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 Content-Type|string|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|描述
+参数|类型|说明
 :---|:---|:---
-DeviceValue|枚举|设备值。 允许的值包括："Normal"、"Low"和"High"。 **必需**。
+DeviceValue|枚举|设备值。 允许的值包括："Normal"、"Low"和"High"。 必需。
 
 ## <a name="response"></a>响应
 

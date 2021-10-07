@@ -7,7 +7,7 @@ ms.date: 11/9/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,22 +17,22 @@ ms.custom:
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: 本文介绍应用程序尝试Office for Mac终结点和 URL，以及提供的服务。
-ms.openlocfilehash: abb744d4ee75b06e66ac6a9aa43c7fd18d8a452f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 37071b0aaf9e6f172d99a10cb4a1506f1627ef03
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170104"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177071"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Office for Mac 中的网络请求
 
-Office for Mac应用程序在 macOS 平台上提供本机应用体验。 每个应用都设计为适用于各种方案，包括当网络访问不可用时状态。 当计算机连接到网络时，应用程序会自动连接到一系列基于 Web 的服务以提供增强功能。 以下信息描述了应用程序尝试到达的终结点和 URL，以及提供的服务。 此信息在解决网络配置问题和为网络代理服务器设置策略时很有用。 本文中的详细信息旨在补充 Office 365 [URL](urls-and-ip-address-ranges.md)和地址范围文章，其中包括运行 Microsoft Windows 的计算机的Windows。 除非另有说明，否则本文中的信息也适用于 Office 2019 for Mac 和 Office 2016 for Mac，可从零售商店或批量许可协议一次购买。 
+Office for Mac应用程序在 macOS 平台上提供本机应用体验。 每个应用都设计为适用于各种方案，包括当网络访问不可用时状态。 当计算机连接到网络时，应用程序会自动连接到一系列基于 Web 的服务以提供增强功能。 以下信息描述了应用程序尝试到达的终结点和 URL，以及提供的服务。 此信息在解决网络配置问题和为网络代理服务器设置策略时很有用。 本文中的详细信息旨在补充 Office 365 [URL](urls-and-ip-address-ranges.md)和地址范围文章，其中包括运行 Microsoft Windows 的计算机的Windows。 除非另有说明，否则本文中的信息也适用于 Office 2019 for Mac 和 Office 2016 for Mac，可从零售商店或批量许可协议进行一次购买。 
 
   
-本文中的大多数内容是详细介绍该终结点提供的服务或功能的网络 URL、类型和说明的表。 每个 Office 应用在其服务和终结点使用情况方面可能有所不同。 下表定义了以下应用：
+本文中的大多数内容是详细介绍该终结点提供的服务或功能的网络 URL、类型和说明的表。 每个 Office应用在其服务和终结点使用情况方面可能有所不同。 下表定义了以下应用：
   
 - W：Word
-- P： PowerPoint
+- P：PowerPoint
 - X：Excel
 - O：Outlook
 - N：OneNote
@@ -43,7 +43,7 @@ URL 类型定义如下：
     
 - SS：Semi-Static - URL 作为网页或重定向器的一部分进行编码。
     
-- CS： Config Service - URL 作为 Office Configuration Service 的一部分返回。
+- CS：配置服务 - URL 作为 Office Configuration Service 的一部分返回。
 
     
 ## <a name="office-for-mac-default-configuration"></a>Office for Mac默认配置
@@ -75,11 +75,11 @@ URL 类型定义如下：
 |```https://templateservice.office.com/```  <br/> |WXP  <br/> |CS  <br/> |Office模板服务 - 为用户提供联机文档模板。  <br/> |
 |```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |CS  <br/> |Office模板下载 - 存储 PNG 模板图像。  <br/> |
 |```https://store.office.com/```  <br/> |WXP  <br/> |CS  <br/> |应用商店应用的Office配置。  <br/> |
-|```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Office文档集成服务 (主领域发现中的服务和) 列表。  <br/> |
+|```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Office文档集成服务目录 (主领域发现中的服务和) 列表。  <br/> |
 |```https://cdn.odc.officeapps.live.com/```  <br/> |WXPON  <br/> |CS  <br/> |家庭领域发现 v2 (15.40 及更高版本)   <br/> |
 |```https://officecdn.microsoft.com/```  <br/> |WXPON  <br/> |ST  <br/> |Microsoft AutoUpdate 清单 - 检查是否有可用的更新  <br/> |
 |```https://ajax.aspnetcdn.com/```  <br/> |WXPO  <br/> |SS  <br/> |Microsoft Ajax JavaScript 库  <br/> |
-|```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |SS  <br/> |用于配置Office的 Wikipedia 应用程序。  <br/> |
+|```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |SS  <br/> |用于配置Office的维基百科应用程序。  <br/> |
 |```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SS  <br/> |必应映射应用Office配置和资源。  <br/> |
 |```https://peoplegraph.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SS  <br/> |用户Graph应用Office配置和资源。  <br/> |
 |```https://www.onenote.com/```  <br/> |网络  <br/> |ST  <br/> |What's New content for OneNote.  <br/> |
@@ -92,7 +92,7 @@ URL 类型定义如下：
 |```https://r1.res.office365.com/```  <br/> |O  <br/> |ST  <br/> |加载项Outlook图标。  <br/> |
    
 > [!NOTE]
-> Office配置服务充当所有客户端的自动发现服务Microsoft Office客户端，而不仅是 Mac 客户端。 响应中返回的终结点是半静态的，该更改很少发生，但仍可能。 
+> Office配置服务充当所有客户端的自动发现Microsoft Office，而不仅是 Mac 客户端。 响应中返回的终结点是半静态的，该更改很少发生，但仍可能。 
   
  **登录**
   
@@ -105,8 +105,8 @@ URL 类型定义如下：
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
 |```https://login.windows.net/```  <br/> |WXPON  <br/> |ST  <br/> |Windows授权服务  <br/> |
-|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |ST  <br/> |Microsoft 365登录服务 (OrgID)   <br/> |
-|```https://login.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Microsoft 帐户登录服务 (MSA)   <br/> |
+|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |ST  <br/> |Microsoft 365OrgID (登录服务)   <br/> |
+|```https://login.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |MICROSOFT 帐户登录服务 (MSA)   <br/> |
 |```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |CS  <br/> |MICROSOFT 帐户登录服务帮助程序 (MSA)   <br/> |
 |```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Microsoft 365OrgID (登录)   <br/> |
 |```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |文档和位置存储定位器  <br/> |
@@ -117,7 +117,7 @@ URL 类型定义如下：
   
  **产品激活**
   
-以下网络终结点适用于订阅Microsoft 365零售许可证激活。 具体来说，这不适用于批量许可证安装。
+以下网络终结点适用于Microsoft 365订阅和零售许可证激活。 具体来说，这不适用于批量许可证安装。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -196,7 +196,7 @@ URL 类型定义如下：
    
  **Office应用 (加载项)**
   
-以下网络终结点适用于Microsoft 365应用程序外接程序受信任时Office订阅和零售/批量许可证激活。
+以下网络终结点适用于Microsoft 365应用加载项受信任时Office订阅和零售/批量许可证激活。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -234,7 +234,7 @@ URL 类型定义如下：
    
  **崩溃报告**
   
-以下网络终结点适用于订阅Office零售/Microsoft 365批量许可证激活的所有应用程序。 当进程意外崩溃时，将生成报告并发送到 Watson 服务。
+以下网络终结点适用于所有 Office 应用程序，Microsoft 365订阅和零售/批量许可证激活。 当进程意外崩溃时，将生成报告并发送到 Watson 服务。
   
 |**URL**|**类型**|**说明**|
 |:-----|:-----|:-----|
@@ -313,13 +313,13 @@ Microsoft 非常重视你的隐私。 可以在 上了解 Microsoft 的数据收
   
 ### <a name="updates"></a>更新
   
-Microsoft 会Office for Mac发布更新， (每月发布一次) 。 我们强烈建议用户和 IT 管理员使计算机保持最新，以确保安装了最新的安全修补程序。 当 IT 管理员希望严格控制和管理计算机更新时，可以设置以下首选项以防止 AutoUpdate 过程自动检测和提供产品更新：
+Microsoft 会Office for Mac定期发布更新 (通常每月发布一) 。 我们强烈建议用户和 IT 管理员使计算机保持最新，以确保安装了最新的安全修补程序。 当 IT 管理员希望严格控制和管理计算机更新时，可以设置以下首选项以防止 AutoUpdate 过程自动检测和提供产品更新：
   
 ```defaults write com.microsoft.autoupdate2 HowToCheck -string 'Manual'```
 
 ### <a name="blocking-requests-with-a-firewallproxy"></a>使用防火墙/代理阻止请求
   
-如果组织阻止通过防火墙或代理服务器对 URL 的请求，请确保将本文档中列出的 URL 配置为允许的 URL，或以 40X 响应 (例如 403 或 404) 中列出的 URL。 40X 响应将允许 Office 应用程序正常接受无法访问资源，并且提供比简单地放弃连接更快速的用户体验，而连接反过来会导致客户端重试。
+如果组织阻止通过防火墙或代理服务器对 URL 的请求，请确保将本文档中列出的 URL 配置为允许，或阻止以 40X 响应 (例如 403 或 404) 。 40X 响应将允许 Office 应用程序正常接受无法访问资源，并且提供更快的用户体验，而不是直接放弃连接，这反过来会导致客户端重试。
   
 如果代理服务器需要身份验证，407 响应将返回到客户端。 为了获得最佳体验，请确保使用的是 Office for Mac 版本 15.27 或更高版本，因为它们包含使用 NTLM 和 Kerberos 服务器的特定修补程序。
   

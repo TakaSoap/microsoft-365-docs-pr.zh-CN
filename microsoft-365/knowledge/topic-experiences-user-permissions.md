@@ -1,5 +1,5 @@
 ---
-title: 管理主题主题Microsoft Viva主题权限
+title: 管理主题主题Microsoft Viva主题
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,18 +8,18 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解如何管理主题主题Microsoft Viva主题权限。
-ms.openlocfilehash: 9a391d3a51d5ed7a8b4e17f4f310600284c87f54
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 40c573d8740a35923f649079920ce57b6c4ba2dc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196722"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202759"
 ---
-# <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>管理主题主题Microsoft Viva主题权限
+# <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>管理主题主题Microsoft Viva主题
 
-可以在"管理"中管理[主题Microsoft 365 管理中心。](https://admin.microsoft.com) 您必须是全局管理员或SharePoint才能执行这些任务。
+可以在"管理"中管理主题[Microsoft 365 管理中心。](https://admin.microsoft.com) 您必须是全局管理员或SharePoint才能执行这些任务。
 
 通过主题权限设置，可以选择：
 
@@ -28,7 +28,7 @@ ms.locfileid: "59196722"
 
 ## <a name="to-access-topics-management-settings"></a>要访问主题管理设置，请执行以下操作：
 
-1. In the Microsoft 365 管理中心， click **设置**， then **Org settings**.
+1. 在"Microsoft 365 管理中心中，单击"设置"，**然后单击"****组织设置"。**
 2. 在"**服务"** 选项卡上，单击 **"主题体验"。**
 
     ![连接了解知识。](../media/admin-org-knowledge-options-completed.png) 
@@ -53,7 +53,7 @@ ms.locfileid: "59196722"
 
 若要更新有权管理主题的用户，请执行以下操作：
 
-1. 在"**主题权限"** 选项卡上的"Who **可以管理主题"下，** 选择"编辑 **"。**
+1. 在"**主题权限"** 选项卡上的"Who **可以管理主题"下，选择**"编辑 **"。**
 2. 在 **"Who主题"页上**，可以选择：
     - **组织中的所有人**
     - **所选人员或安全组**
@@ -66,6 +66,6 @@ ms.locfileid: "59196722"
 
 [管理主题主题Microsoft Viva主题](topic-experiences-discovery.md)
 
-[管理主题主题Microsoft Viva主题](topic-experiences-knowledge-rules.md)
+[管理主题主题Microsoft Viva可见性](topic-experiences-knowledge-rules.md)
 
 [在"主题"中更改Microsoft Viva的名称](topic-experiences-administration.md)

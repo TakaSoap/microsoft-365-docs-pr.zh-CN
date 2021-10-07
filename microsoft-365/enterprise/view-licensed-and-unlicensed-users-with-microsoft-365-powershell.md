@@ -7,7 +7,7 @@ ms.date: 07/21/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,13 +19,13 @@ ms.custom:
 - PowerShell
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: 本文介绍如何使用 PowerShell 查看用户帐户的许可和Microsoft 365许可。
-ms.openlocfilehash: 0f1b590dade1d07499ac6c9b5f8888d7cab7ecd6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 本文介绍如何使用 PowerShell 查看用户帐户的许可和Microsoft 365授权。
+ms.openlocfilehash: 015cb63fd692131d77799fe30fc94c6214bb01d3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195682"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208201"
 ---
 # <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>使用 PowerShell 查看许可Microsoft 365未授权的用户
 
@@ -43,7 +43,7 @@ ms.locfileid: "59195682"
 Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
 ```
 
-若要查看组织中已分配给许可用户的任何许可计划的所有用户帐户 (许可) ，请运行以下命令：
+若要查看组织中已分配给许可用户的任何许可计划的所有用户帐户列表 (许可) ，请运行以下命令：
   
 ```powershell
 Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }

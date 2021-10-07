@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解适用于企业Microsoft 365管理员角色。
-ms.openlocfilehash: 47fe5628bb8464053111078891fc1038fcdd8fa6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d63a8728ef3f4989d2753238d749371abff587ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170808"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193573"
 ---
 # <a name="what-is-a-microsoft-365-admin"></a>什么是Microsoft 365管理员？
 
@@ -42,19 +42,19 @@ ms.locfileid: "59170808"
 
 下面将用户角色更改为管理员角色：
 
-1. 登录后Microsoft 365，选择应用启动器。 如果看到"管理员"按钮，则你是管理员。
+1. 登录应用Microsoft 365，选择应用启动器。 如果看到"管理员"按钮，则你是管理员。
 1. 选择 **"** 管理员"以转到Microsoft 365 管理中心。
 1. 在左侧导航窗格中，选择"用户  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户"。**</a>
 1. 选择要成为管理员的人。用户的详细信息显示在正确的对话框中。
 1. 选择 **"管理角色"。**
-1. 清除" **用户 (管理员) "** 复选框，然后选择其中一个管理员角色。 若要详细了解角色，请将鼠标悬停在感叹号 (！) 并阅读工具提示。 若要向用户授予与用户相同的角色，请选择"全局 **管理员"。**
+1. 清除 **" (没有管理员访问权限**) 复选框，然后选择其中一个管理员角色。 若要详细了解角色，请将鼠标悬停在感叹号 (！) 并阅读工具提示。 若要向用户授予与用户相同的角色，请选择"全局 **管理员"。**
 1. 选择“**保存更改**”。
 
 ### <a name="create-an-admin-account"></a>创建管理员帐户 
 
 还可以为 IT 人员或服务创建专用管理员帐户：
 
-1. 登录后Microsoft 365，选择应用启动器。
+1. 登录应用Microsoft 365，选择应用启动器。
 1. 选择 **"** 管理员"以转到Microsoft 365 管理中心。
 1. 在左侧导航窗格中，选择"用户  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户"。**</a>
 1. 选择 **"添加用户"。**
