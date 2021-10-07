@@ -7,7 +7,7 @@ ms.date: 11/01/2018
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:
 - MET150
@@ -24,12 +24,12 @@ f1.keywords:
 - NOCSH
 description: 本文提供的资源可帮助您从 Office 2007 服务器和客户端进行升级，因为对 Office 2007 的支持已结束。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c3f90bed99816378d4e44bb714b4c6104a9302b7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cb303fcf5051ce1c54437818ce8b1751c41a8d72
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196736"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211557"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>帮助您从 Office 2007 服务器和客户端升级的资源
 
@@ -39,7 +39,7 @@ ms.locfileid: "59196736"
       
 ## <a name="office-2007-planning-roadmaps"></a>Office 2007 规划路线图
   
-2007 Office 2007 产品和服务的支持已结束。 以下路线图可帮助您现在规划升级。
+2007 Office服务的支持已结束。 以下路线图可帮助您现在规划升级。
 
 |**规划内容**|**结束日期支持**|
 |:-----|:-----|
@@ -56,7 +56,7 @@ ms.locfileid: "59196736"
 - 免费或付费的协助支持选项 (包括自定义支持协议) 
 - 新的联机技术内容更新
 
-无论你是企业组织还是个人家庭用户，都有几个需要考虑的选项。
+无论你是企业组织还是个人家庭用户，都有几个要考虑的选项。
 
 ## <a name="im-a-home-user-what-do-i-do"></a>我是一位家庭用户。 我怎么办？
 

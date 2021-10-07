@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,16 +17,16 @@ ms.technology: mde
 ms.topic: article
 ms.date: 09/22/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 85c3aee098786d75a7a2f17d1c9c4d11c0c87aeb
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 55f2ca89c04fb35c853ef39255ef97a9e811138a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490903"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213105"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>定义排除时要避免的常见错误
 
-你可以为不希望扫描的项目定义Microsoft Defender 防病毒列表。 此类排除项目可能包含使设备易受攻击的威胁。 本文介绍定义排除项时应避免的一些常见错误。
+你可以为不希望扫描的项目定义排除Microsoft Defender 防病毒列表。 此类排除项目可能包含使设备易受攻击的威胁。 本文介绍定义排除项时应避免的一些常见错误。
 
 定义排除列表之前，请参阅推荐[排除项。](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)
 
@@ -73,9 +73,9 @@ ms.locfileid: "59490903"
 
 `C:\Users\*`
 
-`C:\Users\<UserProfileName>\AppData\Local\Temp\`**请注意以下例外情况SharePoint：** 在文件级别防病毒保护中 `C:\Users\ServiceAccount\AppData\Local\Temp` SharePoint。 [](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
+`C:\Users\<UserProfileName>\AppData\Local\Temp\`**请注意以下例外SharePoint：** 在应用程序内使用文件级防病毒保护时 `C:\Users\ServiceAccount\AppData\Local\Temp` ，SharePoint。 [](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
 
-`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`**请注意以下例外情况SharePoint：** 在文件级别防病毒保护中 `C:\Users\Default\AppData\Local\Temp` SharePoint。 [](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
+`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`**请注意以下例外SharePoint：** 在应用程序内使用文件级防病毒保护时 `C:\Users\Default\AppData\Local\Temp` ，SharePoint。 [](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
 
 `%Windir%\Prefetch`
 
@@ -282,7 +282,7 @@ ms.locfileid: "59490903"
 
 ## <a name="using-just-the-file-name-in-the-exclusion-list"></a>仅使用排除列表中的文件名
 
-恶意软件的名称可能与信任并想要从扫描中排除的文件的名称相同。 因此，为了避免从扫描中排除潜在的恶意软件，请使用要排除的文件的完全限定路径，而不只是使用文件名。 例如，如果要从扫描 `Filename.exe` 中排除，请使用文件的完整路径，例如 `C:\program files\contoso\Filename.exe` 。
+恶意软件可能与信任并想要从扫描中排除的文件同名。 因此，为了避免从扫描中排除潜在的恶意软件，请使用要排除的文件的完全限定路径，而不只是使用文件名。 例如，如果要从扫描 `Filename.exe` 中排除，请使用文件的完整路径，例如 `C:\program files\contoso\Filename.exe` 。
 
 ## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>将单个排除列表用于多个服务器工作负载
 
@@ -290,6 +290,6 @@ ms.locfileid: "59490903"
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>在文件名和文件夹路径或扩展名排除列表中将不正确的环境变量用作通配符
 
-Microsoft Defender 防病毒服务使用 LocalSystem 帐户在系统上下文中运行，这意味着它从系统环境变量而不是用户环境变量获取信息。 将环境变量用作排除列表的通配符仅限于系统变量和那些适用于作为 NT AUTHORITY\SYSTEM 帐户运行的进程。 因此，在添加文件夹和进程排除项时，不要Microsoft Defender 防病毒变量作为通配符。 有关系统环境变量 [的完整](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) 列表，请参阅系统环境变量下的表。
+Microsoft Defender 防病毒服务使用 LocalSystem 帐户在系统上下文中运行，这意味着它从系统环境变量而不是用户环境变量获取信息。 将环境变量用作排除列表的通配符仅限于系统变量和那些适用于作为 NT AUTHORITY\SYSTEM 帐户运行的进程。 因此，在添加文件夹和进程排除项时，Microsoft Defender 防病毒变量作为通配符。 有关系统环境变量 [的完整](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) 列表，请参阅系统环境变量下的表。
 
 请参阅 [在文件名和文件夹路径](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 或扩展名排除列表中使用通配符，了解如何在排除列表中使用通配符。

@@ -2,26 +2,24 @@
 title: 在 Microsoft Defender for Endpoint 中配置高级功能
 description: 打开 Microsoft Defender for Endpoint 中的阻止文件等高级功能。
 keywords: 高级功能， 设置， 阻止文件， 自动调查， 自动解决， skype， microsoft defender for identity， office 365， azure 信息保护， intune
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f9fbeb7d0fbaee05e86c89749ffc62695e8ff9e9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 432819930a1472d6241c62b275a940cb35c3cb37
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170527"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211425"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -66,9 +64,9 @@ ms.locfileid: "59170527"
 
 ## <a name="always-remediate-pua"></a>始终修正 PUA
 
-PUA (可能不需要) 是一类软件，可能会导致你的计算机运行缓慢、显示意外广告，或者最差时安装其他软件（可能是意外的或不需要的）。
+PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、显示意外广告或最差时安装其他软件（可能是意外的或不需要的）。
 
-启用此功能，以便 (PUA) 在租户中所有设备上进行修正，即使未在设备上配置 PUA 保护。 这有助于防止用户无意中在设备上安装不需要的应用程序。 关闭后，修正取决于设备配置。
+启用此功能，以便 (PUA) 在租户中所有设备上修正可能不需要的应用程序，即使未在设备上配置 PUA 保护。 这有助于防止用户无意中在设备上安装不需要的应用程序。 关闭后，修正取决于设备配置。
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>限制与作用域内设备组之间的关联
 
@@ -118,7 +116,7 @@ PUA (可能不需要) 是一类软件，可能会导致你的计算机运行缓�
 
 启用此功能后，您可以创建 IP 地址、域或 URL 的指示器，这些指示器根据自定义指示器列表确定是否允许或阻止它们。
 
-若要使用此功能，设备必须运行Windows 10版本 1709 或更高版本。 它们还应具有阻止模式和反恶意软件平台版本 4.18.1906.3 或更高版本的网络保护，请参阅 [KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834)。
+若要使用此功能，设备必须运行Windows 10版本 1709 或更高版本，或 Windows 11。 它们还应具有阻止模式和反恶意软件平台版本 4.18.1906.3 或更高版本的网络保护，请参阅 [KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834)。
 
 有关详细信息，请参阅管理 [指示器](manage-indicators.md)。
 
@@ -130,7 +128,7 @@ PUA (可能不需要) 是一类软件，可能会导致你的计算机运行缓�
 
 防篡改保护实质上Microsoft Defender 防病毒和防止通过应用和方法更改安全设置。
 
-如果你的组织使用基于云的保护Microsoft Defender 防病毒启用基于云的保护，则此功能可用。 有关详细信息，请参阅通过云保护在 Microsoft Defender 防病毒[中使用下一代技术](cloud-protection-microsoft-defender-antivirus.md)。
+如果你的组织使用基于云的保护Microsoft Defender 防病毒则此功能可用。 有关详细信息，请参阅通过云保护在 Microsoft Defender 防病毒[中使用下一代技术](cloud-protection-microsoft-defender-antivirus.md)。
 
 保持防篡改功能打开，以防止对安全解决方案及其基本功能进行不必要的更改。
 
@@ -146,7 +144,7 @@ PUA (可能不需要) 是一类软件，可能会导致你的计算机运行缓�
 
 ## <a name="skype-for-business-integration"></a>Skype for Business 集成
 
-通过启用Skype for Business集成，可以使用电子邮件、电子邮件或Skype for Business与用户进行通信。 当你需要与用户通信并降低风险时，这很方便。
+通过启用Skype for Business集成，可以使用电子邮件、Skype for Business或电话与用户进行通信。 当你需要与用户通信并降低风险时，这很方便。
 
 > [!NOTE]
 > 当设备与网络隔离时，有一个弹出窗口，你可以选择启用 Outlook 和 Skype 通信，这将允许用户在断开与网络的连接时与其通信。 此设置适用于设备在Skype Outlook时的通信和通信。
@@ -171,17 +169,17 @@ PUA (可能不需要) 是一类软件，可能会导致你的计算机运行缓�
 
 ## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft 威胁专家 - 目标攻击通知
 
-在两个 Microsoft 威胁专家组件中，目标攻击通知一般可用。 专家按需功能仍处于预览阶段。 如果你已申请预览，并且你的应用程序已获得批准，你只能使用专家按需功能。 可以通过 Defender for Endpoint 门户的警报仪表板Microsoft 威胁专家接收来自你的终结点门户的定向攻击通知（如果已配置的话）。
+在两个 Microsoft 威胁专家组件中，目标攻击通知一般可用。 专家按需功能仍处于预览阶段。 如果你已申请预览，并且你的应用程序已获得批准，你只能使用专家按需功能。 可以通过 Defender for Endpoint 门户的警报仪表板接收来自 Microsoft 威胁专家 的定向攻击通知，如果已配置，可以通过电子邮件接收。
 
 > [!NOTE]
-> Defender for Endpoint Microsoft 威胁专家 的 Microsoft 威胁专家 功能随适用于 企业移动性 + 安全性 的 E5[许可证一企业移动性 + 安全性。](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+> Defender for Endpoint Microsoft 威胁专家的 Microsoft 威胁专家 功能随适用于 企业移动性 + 安全性 的 E5[许可证一企业移动性 + 安全性。](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
-启用此设置将 Defender for Endpoint 信号转发到Microsoft Cloud App Security深入了解云应用程序使用情况。 转发数据的存储和处理位置与转发数据云应用安全相同。
+启用此设置将 Defender for Endpoint 信号转发到Microsoft Cloud App Security深入了解云应用程序使用情况。 转发数据的存储和处理位置与转发数据云应用安全位置。
 
 > [!NOTE]
-> 在运行 Windows 10 版本 1709 (OS 内部版本 16299.1085（具有[KB449344) 1](https://support.microsoft.com/help/4493441)版本）的设备上，此功能将随 企业移动性 + 安全性 一起提供。 Windows 10，版本 1803 (OS 内部版本 17134.704（带[KB4493464](https://support.microsoft.com/help/4493464)) 、Windows 10 版本 1809 (OS 内部版本 17763.379，KB4489899) 或更高版本 Windows 10）。 [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) [](https://support.microsoft.com/help/4489899)
+> 此功能将随 E5 许可证一起提供[，企业移动性 + 安全性](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)运行 Windows 10， 版本 1709 (OS 内部版本 16299.1085（具有[KB4493441](https://support.microsoft.com/help/4493441)) 、Windows 10、版本 1803 (OS 内部版本 17134.704，带[KB4493464](https://support.microsoft.com/help/4493464)) ，Windows 10 版本 1809 (OS 内部版本 17763.379） [KB4489899](https://support.microsoft.com/help/4489899)) 更高版本Windows 10版本或 Windows 11。
 
 ## <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -206,7 +204,7 @@ PUA (可能不需要) 是一类软件，可能会导致你的计算机运行缓�
 
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>与 Microsoft 合规中心共享终结点警报
 
-将终结点安全警报及其会审状态转发到 Microsoft 合规中心，从而通过警报增强内部风险管理策略，并修正内部风险，然后再造成危害。 转发的数据将处理并存储在与传输数据Office 365位置。
+将终结点安全警报及其会审状态转发到 Microsoft 合规中心，从而通过警报增强内部风险管理策略，并修正内部风险，然后再造成危害。 转发的数据将处理并存储在与转发数据相同的Office 365位置。
 
 在内部风险管理 [设置中](/microsoft-365/compliance/insider-risk-management-settings#indicators) 配置安全策略违反指示器后，适用于终结点的 Defender 警报将共享与适用用户的内部风险管理。
 
@@ -219,8 +217,8 @@ Defender for Endpoint 可以[](/intune/what-is-intune)与 Microsoft Intune[集�
 
 此功能仅在具有以下功能时可用：
 
-- 许可租户，适用于 企业移动性 + 安全性 E3 或 Windows E5 (或 Microsoft 365 企业版 E5) 
-- 一个Microsoft Intune环境，与已加入 Azure AD Windows 10 [Intune 托管的设备](/azure/active-directory/devices/concept-azure-ad-join/)。
+- 许可租户，企业移动性 + 安全性 E3 E5 Windows E5 (或 Microsoft 365 企业版 E5) 
+- 一个Microsoft Intune环境，与已加入 Azure AD Windows [Intune 托管的设备](/azure/active-directory/devices/concept-azure-ad-join/)。
 
 ### <a name="conditional-access-policy"></a>条件访问策略
 

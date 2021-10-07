@@ -3,26 +3,24 @@ title: 管理指示器
 ms.reviewer: ''
 description: 管理定义实体检测、防护和排除的文件哈希、IP 地址、URL 或域的指示器。
 keywords: import， indicator， list， ioc， csv， manage， allowed， block， clean， malicious， file hash， ip address， urls， domain
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7463ea7cd8a6d458e467ab213560be7d0f16a394
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 69f96b4393a25e57fcbfd2e9adfbd652a5aa191d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196623"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211113"
 ---
 # <a name="manage-indicators"></a>管理指示器
 
@@ -36,7 +34,7 @@ ms.locfileid: "59196623"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)。
 
-1. 在导航窗格中，选择"设置"下 (\>  \> 终结点) 。 
+1. 在导航窗格中，选择"设置 \> **规则"** 下 (\> 终结点) 。 
 
 2. 选择要管理的实体类型的选项卡。
 
@@ -48,7 +46,7 @@ ms.locfileid: "59196623"
 
 下载示例 CSV，了解受支持的列属性。
 
-1. 在导航窗格中，选择"设置"下 (\>  \> 终结点) 。 
+1. 在导航窗格中，选择"设置 \> **规则"** 下 (\> 终结点) 。 
 
 2. 选择要导入其指示器的实体类型的选项卡。
 
@@ -66,13 +64,13 @@ indicatorType|枚举|指示器的类型。 可能的值是："FileSha1"、"FileS
 indicatorValue|String|Indicator [实体的](ti-indicator.md) 标识。 **Required**
 action|枚举|如果在组织中发现指示器，将采取的操作。 可能的值包括："Alert"、"AlertAndBlock"和"Allowed"。 **Required**
 title|String|指示器警报标题。 **Required**
-说明|String| 指示器的说明。 **Required**
+说明|字符串| 指示器的说明。 **Required**
 expirationTime|DateTimeOffset|指示器的过期时间，格式为 YYYY-MM-DDTHH：MM：SS.0Z。 **可选**
 severity|枚举|指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。 **可选**
-recommendedActions|String|TI 指示器警报建议操作。 **可选**
+recommendedActions|字符串|TI 指示器警报建议操作。 **可选**
 rbacGroupNames|String|将应用指示器的 RBAC 组名称的逗号分隔列表。 **可选**
-“类别”|String|警报的类别。 示例包括：执行和凭据访问。 **可选**
-mitretechniques|String|MITRE 技术代码/id (逗号分隔) 。 有关详细信息，请参阅Enterprise[策略](https://attack.mitre.org/tactics/enterprise/)。 **可选** 建议在 MITRE 技术时在类别中添加值。
+“类别”|字符串|警报的类别。 示例包括：执行和凭据访问。 **可选**
+mitretechniques|String|MITRE 技术代码/id (逗号分隔) 。 有关详细信息，请参阅策略[Enterprise策略](https://attack.mitre.org/tactics/enterprise/)。 **可选** 建议在 MITRE 技术时在类别中添加值。
 
 有关详细信息，请参阅 [Microsoft Defender for Endpoint 警报类别现在与 MITRE ATT&CK！](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748)一致。
 

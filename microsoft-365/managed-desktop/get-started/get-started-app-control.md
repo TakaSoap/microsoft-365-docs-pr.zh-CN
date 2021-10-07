@@ -8,14 +8,14 @@ ms.author: jaimeo
 manager: laurawi
 audience: ITpro
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 83681c2258a140c4e7bc4757e0d4f9f63c9991db
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 375357e52e7aedf416b4a0d9988da18f39bda5ec
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170543"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211521"
 ---
 # <a name="get-started-with-app-control"></a>开始使用应用程序控制
 
@@ -29,7 +29,7 @@ Microsoft 托管桌面关注获取安全基本策略的更具挑战性方面，�
 
 ### <a name="devices-not-yet-in-use"></a>尚未使用的设备
 
-如果你尚未使用任何设备，请打开一个服务票证，Microsoft 托管桌面操作请求我们启用应用控制。 按照此计划，操作将逐步将策略部署到部署组：
+如果你尚未使用任何设备，请打开一个服务票证，Microsoft 托管桌面操作请求我们打开应用控制。 按照此计划，操作将逐步将策略部署到部署组：
 
 |部署组  |策略类型  |Timing  |
 |---------|---------|---------|
@@ -57,7 +57,7 @@ Microsoft 托管桌面关注获取安全基本策略的更具挑战性方面，�
 
 你始终可以打开另一个服务请求，以在推出期间随时暂停或回滚此部署的一部分。
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用Microsoft 托管桌面
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
 
 1. 访问 [管理员门户](access-admin-portal.md)。
 1. [在管理门户中添加和验证管理员联系人](add-admin-contacts.md)。

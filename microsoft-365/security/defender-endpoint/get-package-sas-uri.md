@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2a3a1817b1a56ed5c3b529179a6f5253677211de
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b18d62b7fe5279c7655144c228fe155e36b89007
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201445"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212949"
 ---
 # <a name="get-package-sas-uri-api"></a>获取程序包 SAS URI API
 
@@ -52,15 +52,15 @@ ms.locfileid: "59201445"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Machine.Read.All|"'读取所有计算机配置文件'"
-应用程序|"Machine.ReadWrite.All|"读取和写入所有计算机信息"
+Application|Machine.Read.All|"'读取所有计算机配置文件'"
+Application|"Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.CollectForensics|"收集取证"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："警报调查" (请参阅创建和管理角色，了解) [](user-roles.md)
-> - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户需要具有对设备的访问权限，根据设备组设置 (创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -72,7 +72,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action 
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 
@@ -80,7 +80,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 200 正常响应代码，该对象在"value"参数中保存指向包的链接。 此链接的有效时间非常短，应该立即用于将程序包下载到本地存储。 如果集合计算机操作存在，但无法完成，则返回 404 未找到。
+如果成功，此方法返回 200 正常响应代码，该对象在"value"参数中保存指向包的链接。 此链接的有效时间非常短，应该立即用于将程序包下载到本地存储。 如果集合计算机操作存在，但无法完成，则返回"404 未找到"。
 
 ## <a name="example"></a>示例
 

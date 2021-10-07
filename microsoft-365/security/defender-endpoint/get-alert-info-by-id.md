@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a9a4505ec4609dc42ec75159c2d905d16e01b559
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a7d2574cf97d6eb2c38348d2e291fee82d0adb43
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170078"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213673"
 ---
 # <a name="get-alert-information-by-id-api"></a>通过 ID API 获取警报信息
 
@@ -51,8 +51,8 @@ ms.locfileid: "59170078"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Alert.Read.All|"读取所有警报"
-应用程序|Alert.ReadWrite.All|"读取和写入所有警报"
+Application|Alert.Read.All|"读取所有警报"
+Application|Alert.ReadWrite.All|"读取和写入所有警报"
 委派（工作或学校帐户）|Alert.Read|"读取警报"
 委派（工作或学校帐户）|Alert.ReadWrite|"读取和写入警报"
 
@@ -60,7 +60,7 @@ ms.locfileid: "59170078"
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -72,7 +72,7 @@ GET /api/alerts/{id}
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

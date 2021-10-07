@@ -4,17 +4,17 @@ description: 作为注册的一部分，你需要将已获得的许可证分配�
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bb41361d58ccdac9c1fe0ecdca12927752214651
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28a29f0e1b8160995b8bbccdae868a86135a0577
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196702"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211533"
 ---
 # <a name="assign-licenses"></a>分配许可证
 
@@ -25,7 +25,7 @@ ms.locfileid: "59196702"
 
 如果你对许可证分配有任何困难，请联系管理员 [支持](../working-with-managed-desktop/admin-support.md)人员。
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用Microsoft 托管桌面
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
 
 1. 访问 [管理员门户](access-admin-portal.md)。
 1. [在管理门户中添加和验证管理员联系人](add-admin-contacts.md)。

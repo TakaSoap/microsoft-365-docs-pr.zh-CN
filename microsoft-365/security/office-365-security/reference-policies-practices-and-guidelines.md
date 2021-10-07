@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
@@ -17,12 +17,12 @@ ms.collection:
 description: Microsoft 已制定各种策略、过程，并采用多个行业最佳做法来帮助保护我们的用户免受滥用、不需要或恶意电子邮件的干扰。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f1a71b891829a2c9ea31502342c855db4126a6b5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 21b1918155755d7786f7b797ae7c705ca8c0ec39
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196258"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211989"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>参考：策略、实践和指南
 
@@ -39,7 +39,7 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="general-microsoft-policies"></a>Microsoft 一般性策略
 
-发送给用户Microsoft 365用户的电子邮件必须遵守管理电子邮件传输和使用电子邮件Microsoft 365。
+发送给用户Microsoft 365用户的电子邮件必须遵守管理电子邮件传输和使用电子邮件传输Microsoft 365。
 
 - 适用于服务条款Microsoft 365;特别是，禁止使用服务发送垃圾邮件或分发恶意软件。
 
@@ -55,13 +55,13 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="technical-guidelines"></a>技术指南
 
-发送到 Microsoft 365 的电子邮件应符合以下文档中列出的适用建议 (某些链接仅提供英文) 。
+发送到 Microsoft 365 的电子邮件应符合以下文档中所列的适用建议 (某些链接仅提供英文) 。
 
 - [RFC 2505:Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920:SMTP Service Extension for Command Pipelining](https://www.ietf.org/rfc/rfc2920.txt)
 
-此外，连接到 Microsoft 365服务器必须遵守以下要求：
+此外，连接到 Microsoft 365 服务器必须遵守以下要求：
 
 - 发件人应符合互联网电子邮件传输的所有技术标准，该标准由互联网协会的互联网工程任务组 (IETF) 发布，包括 RFC 5321、RFC 5322 和其他。
 
@@ -83,7 +83,7 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="microsoft-365-limits"></a>Microsoft 365限制
 
-发件人必须遵守 Microsoft 365 限制 中列出的Exchange Online Protection[限制](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)。
+发件人必须遵守Microsoft 365限制中列出的Exchange Online Protection[限制](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)。
 
 ## <a name="email-delivery-resources-and-organizations"></a>电子邮件传送资源和组织
 

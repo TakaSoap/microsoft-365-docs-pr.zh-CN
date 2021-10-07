@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ef8a5e1b833bc1184132469f8c3b358e907974e4
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 2ce2e6e1efc87f0bcbfdbe6d650f35ea91da8422
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491261"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213561"
 ---
 # <a name="overview-of-microsoft-365-defender-apis"></a>Microsoft 365 Defender API 概述
 
@@ -61,9 +61,9 @@ Microsoft 365 Defender构建于集成就绪平台的顶部。
 | [访问Microsoft 365 Defender API](api-access.md) |
 | **构建应用程序** |
 | [创建"Hello world"应用](api-hello-world.md) |
-| [创建应用以Microsoft 365 Defender用户访问 API](api-create-app-user-context.md) |
-| [创建应用以在没有用户Microsoft 365 Defender访问用户](api-create-app-web.md) |
-| [创建具有对 API 的多租户合作伙伴访问权限Microsoft 365 Defender应用](api-partner-access.md) |
+| [创建应用以Microsoft 365 Defender访问 API](api-create-app-user-context.md) |
+| [创建应用以在没有Microsoft 365 Defender的情况下访问用户](api-create-app-web.md) |
+| [创建具有对应用程序 API 的多租户Microsoft 365 Defender应用程序](api-partner-access.md) |
 | **对应用进行故障排除和维护** |
 | [了解 API 错误代码](api-error-codes.md) |
 | [使用 Azure Key Vault 管理应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/) |

@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell Microsoft 365用户帐户
+title: 使用 powerShell Microsoft 365用户帐户
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -20,14 +20,14 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 了解如何使用 PowerShell 以不同方式查看、Microsoft 365或显示用户帐户。
-ms.openlocfilehash: b10b143b3608efa88eb27346b65fd4b80100020c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da1ae30f04ba2c5ee69047361113fe468938c4ad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195677"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212757"
 ---
-# <a name="view-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户
+# <a name="view-microsoft-365-user-accounts-with-powershell"></a>使用 powerShell Microsoft 365用户帐户
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
@@ -86,7 +86,7 @@ Get-AzureADUser | Select DisplayName,Department,UsageLocation
   
 1. 获取 **Get-AzureADUser** (用户帐户的所有信息) 并将其发送到下一个 **|** () 。
     
-1.  仅显示用户帐户名、部门以及使用位置 (**选择 DisplayName、Department、UsageLocation**) 。
+1.  仅显示用户帐户名称、部门以及使用情况位置 (**选择 DisplayName、Department、UsageLocation**) 。
   
 To see all the properties for a specific user account， use the **Select** cmdlet and the wildcard character (*) . 下面是一个示例：
   
@@ -133,7 +133,7 @@ Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
   
 1. 获取 **Get-AzureADUser** (用户帐户的所有信息) 并将其发送到下一个 **|** () 。
     
-1. 在 Where {$ 中查找未指定使用位置 (**用户帐户 \_ 。UsageLocation -eq $Null}**) 。 在大括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
+1. 在 Where {$ 中查找未指定使用位置 (**用户帐户 \_ 。UsageLocation -eq $Null}**) 。 在括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
     
 **UsageLocation** 属性只是与用户帐户关联的众多属性之一。 若要显示特定用户帐户的所有属性，请使用 **Select** cmdlet 和通配符 (*) 。 下面是一个示例：
   
@@ -215,7 +215,7 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null}
   
 1. 获取 **Get-MsolUser** (用户帐户) 并将其发送到下一个 **|** () 。
     
-1. 在 Where {$ 中查找具有未指定使用位置 (**用户帐户 \_ 。UsageLocation -eq $Null}**) 。 在括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
+1. 在 Where {$ 中查找所有未指定使用 (**用户帐户 \_ 。UsageLocation -eq $Null}**) 。 在括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
     
 应获取与以下类似的信息：
   
@@ -258,7 +258,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 
 - isLicensed
 
-如果您需要其他属性（如用户工作部门以及他们使用 Microsoft 365 服务的国家/地区），您可以运行 **Get-MsolUser** 和 **Select** cmdlet 以指定用户帐户属性的列表。 下面是一个示例：
+如果您需要其他属性（如用户工作部门以及他们使用 Microsoft 365 服务的国家/地区），您可以结合 **Select** cmdlet 运行 **Get-MsolUser** 以指定用户帐户属性列表。 下面是一个示例：
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
@@ -266,9 +266,9 @@ Get-MsolUser | Select DisplayName, Department, UsageLocation
 
 此命令指示 PowerShell：
   
-1. 获取 **Get-MsolUser** (用户帐户) 并将其发送到下一个 **|** () 。
+1. 获取 **Get-MsolUser** (用户帐户的所有) 并将其发送到下一个 **|** () 。
     
-1. 仅显示用户帐户名、部门以及使用位置 (**选择 DisplayName、Department、UsageLocation**) 。
+1. 仅显示用户帐户名称、部门以及使用情况位置 (**选择 DisplayName、Department、UsageLocation**) 。
     
 应获取与以下类似的信息：
   
@@ -297,11 +297,11 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Departme
 
 此命令指示 PowerShell：
   
-1. 获取 **Get-MsolUser** (用户帐户的所有信息) 并将其发送到下一个 **|** () 。
+1. 获取 **Get-MsolUser** (用户帐户) 并将其发送到下一个 **|** () 。
     
-1. 在 Where {$ 中查找未指定使用位置 (**用户帐户 \_ 。UsageLocation -eq $Null}**) ，并将生成的信息发送到下一个命令 **|** () 。 在大括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
+1. 查找具有未指定使用位置的所有用户帐户 (**Where {$ \_ 。UsageLocation -eq $Null}**) ，并将结果信息发送到下一个命令 **|** () 。 在括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
     
-1. 仅显示用户帐户名、部门以及使用位置 (**选择 DisplayName、Department、UsageLocation**) 。
+1. 仅显示用户帐户名称、部门以及使用情况位置 (**选择 DisplayName、Department、UsageLocation**) 。
     
 应获取与以下类似的信息：
   
@@ -312,7 +312,7 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-如果要使用目录同步创建和管理 Microsoft 365 用户，可以显示已从其中Microsoft 365用户的本地帐户。 以下示例假定：
+如果使用目录同步创建和管理 Microsoft 365 用户，可以显示已计划Microsoft 365的本地帐户。 以下示例假定：
 
 - Azure AD 连接配置为使用 ObjectGUID 的默认源定位标记。  (有关配置源定位标记的信息，请参阅[Azure AD 连接：设计概](/azure/active-directory/hybrid/plan-connect-design-concepts)念) 。
 - 已安装用于 PowerShell 的 Active Directory 域服务模块 ([RSAT 工具](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)) 。

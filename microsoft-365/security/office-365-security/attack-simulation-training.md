@@ -6,18 +6,18 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理员可以了解如何使用 Microsoft Defender for Office 365 中的攻击模拟培训其用户模拟网络钓鱼Office 365。
+description: 管理员可以了解如何在 Microsoft Defender for Office 365 中通过攻击模拟培训其用户进行网络钓鱼防护。
 ms.technology: mdo
-ms.openlocfilehash: 304baf82d2b951ada35dc6cb97add1ac85b27236
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: fec06f65c67f0ec4c470660689a1f3fc1d9bfbcd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988711"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213501"
 ---
 # <a name="simulate-a-phishing-attack"></a>模拟网络钓鱼攻击
 
@@ -27,7 +27,7 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 
 有关攻击模拟培训的入门信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
-若要启动模拟网络钓鱼攻击，请打开 Microsoft 365 Defender 门户 () ，转到电子邮件 & 协作攻击模拟培训，然后切换到模拟 <https://security.microsoft.com/>  \> 选项卡。 **[](https://security.microsoft.com/attacksimulator?viewid=simulations)**
+若要启动模拟网络钓鱼攻击，请打开 Microsoft 365 Defender 门户 () ，转到电子邮件 & 协作攻击模拟培训，然后切换到 <https://security.microsoft.com/>  \> **[模拟](https://security.microsoft.com/attacksimulator?viewid=simulations)** 选项卡。
 
 在 **"模拟"** 下，选择 **"+ 启动模拟"。**
 
@@ -59,13 +59,14 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 
 有效负载具有多个数据点，可帮助你选择：
 
+- **语言** 显示有效负载内容的语言。 Microsoft 的有效负载目录 (全局) 提供 10 多种语言（也可以筛选）的有效负载。
 - **单击率** 计算单击此有效负载的人数。
-- **预测的泄露率** 根据 Microsoft Defender 中负载的历史数据来预测受此负载危害的百分比，Office 365客户。
+- **预测的泄露率** 根据 Microsoft Defender 中负载的历史数据预测受此负载危害的百分比，Office 365客户。
 - **模拟启动** 计算此有效负载在其他模拟中使用的次数。
 - **复杂度**（通过 **筛选器提供**）根据有效负载中的指示器数量计算，这些指示器可提示攻击中的目标。 指示器越多，复杂性越低。
 - **Source**（通过 **筛选器提供**）指示有效负载是在租户上创建的，还是 Microsoft 预先存在的有效负载目录的一部分， (全局) 。
 
-![在攻击门户中攻击模拟培训中Microsoft 365 Defender负载。](../../media/attack-sim-preview-select-payload.png)
+![在攻击门户中，在攻击模拟Microsoft 365 Defender有效负载。](../../media/attack-sim-preview-select-payload.png)
 
 从列表中选择一个有效负载，以查看有效负载的预览，并提供有关它的其他信息。
 
@@ -94,13 +95,13 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 > [!NOTE]
 > 如果你选择自己选择课程和模块，你仍然可以看到推荐的内容以及所有可用的课程和模块。
 >
-> ![在攻击门户中的攻击模拟培训中添加Microsoft 365 Defender培训。](../../media/attack-sim-preview-add-training.png)
+> ![在攻击模拟门户中添加建议Microsoft 365 Defender培训。](../../media/attack-sim-preview-add-training.png)
 
 在以下步骤中，如果选择自己选择培训，将需要添加培训，并自定义培训登陆页面。 你将能够预览培训登陆页面，并更改其标头和正文。
 
 ## <a name="launch-details-and-review"></a>启动详细信息和查看
 
-现在，一切已配置完成，你可以立即启动此模拟或安排它稍后进行。 你还需要选择何时结束此模拟。 在选定时间后，我们将停止捕获此模拟的交互。
+现在，一切都已配置完成，你可以立即启动此模拟或安排在以后日期进行。 你还需要选择何时结束此模拟。 在选定时间后，我们将停止捕获此模拟的交互。
 
 **启用区域感知时区传递** ，以根据员工的区域在工作时间向员工传递模拟攻击邮件。
 

@@ -1,6 +1,6 @@
 ---
 title: 从第三方 HIPS 迁移到 ASR 规则
-description: 介绍如何从第三方主机入侵防护系统或 HIPS (解决方案) 迁移到 ASR 规则。
+description: 介绍如何将第三方主机入侵防护系统或 HIPS (解决方案) 迁移到 ASR 规则。
 keywords: 攻击面减少规则， asr， asr 规则， hips， 主机入侵防护系统， 保护规则， 反攻击， 攻击， 感染防护， Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.topic: article
@@ -8,7 +8,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 audience: ITPro
 author: lovina-saldanha
 ms.author: v-lsaldanha
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9a0885f40fdec9520683ff8083f2ca778213e3e3
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: ec28153c25b6c9108a62ea7d3c63336d4ff1ddb7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490161"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210909"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>从第三方 HIPS 迁移到 ASR 规则
 
@@ -70,16 +70,16 @@ ms.locfileid: "59490161"
 - **进程**- outlook.exe
 - **操作**- 进程执行
 - **文件/文件夹、注册表项/值、进程、服务**- powershell.exe
-- **攻击面** 减少规则 - ASR 规则具有内置规则，可阻止 Office 通信应用 (Outlook、Skype 和 Teams) 启动子进程："阻止 Office 通信应用程序创建子进程"，GUID "26190899-1602-49e8-8b27-eb1d0a1ce869"。
+- **攻击面** 减少规则 - ASR 规则具有内置规则，可阻止 Office 通信应用 (Outlook、Skype 和 Teams) 启动子进程："阻止 Office 通信应用程序创建子进程"、GUID "26190899-1602-49e8-8b27-eb1d0a1ce869"。
 - **其他推荐功能**- 我们建议启用 PowerShell 约束语言模式，以最大限度地降低 PowerShell 的攻击面。
 
-### <a name="block-office-apps-from-launching-child-processes"></a>阻止Office启动子进程
+### <a name="block-office-apps-from-launching-child-processes"></a>阻止Office应用启动子进程
 
 - **适用于**- Office
 - **进程**- winword.exe、powerpnt.exe、excel.exe
 - **操作**- 进程执行
 - **文件/文件夹、注册表项/** 值、进程、服务 - powershell.exe、cmd.exe、wscript.exe、mshta.exe、EQNEDT32.EXE、regsrv32.exe
-- **攻击面** 减少规则 - ASR 规则内置了阻止 Office 应用启动子进程的规则："阻止所有 Office 应用程序创建子进程"、GUID "d4f940ab-401b-4efc-aadc-ad5f3c50688a"。
+- **攻击面** 减少规则 - ASR 规则内置了阻止 Office 应用启动子进程的规则："阻止所有 Office 应用程序创建子进程"，GUID "d4f940ab-401b-4efc-aadc-ad5f3c50688a"。
 - **其他推荐功能**- N/A
 
 ### <a name="block-office-apps-from-creating-executable-content"></a>阻止Office应用创建可执行内容
@@ -87,7 +87,7 @@ ms.locfileid: "59490161"
 - **适用于**- Office
 - **进程**- winword.exe、powerpnt.exe、excel.exe
 - **操作**- 文件创建
-- **文件/文件夹、注册表项/值的示例 进程、** 服务 - C：\Users *\AppData **.exe、C：\ProgramData**.exe、C：\ProgramData**.com、C：\Users* AppData\Local\Temp **.com、C：\Users*\Downloads**.exe、C：\Users *\AppData **.scf、C：\ProgramData .scf、C：\Users\Public***.exe、C：\Users*\Desktop***.exe
+- **文件/文件夹、注册表项/值的示例 进程、** 服务 - C：\Users *\AppData **.exe、C：\ProgramData**.exe、C：\ProgramData**.com、C：\Users* AppData\Local\Temp **.com、C：\Users*\Downloads**.exe、C：\Users ***\AppData .scf、C：\ProgramData**.scf、C：\Users\Public*.exe、C：\Users*\Desktop***.exe
 - **攻击面减少规则**- N/A。
 
 ### <a name="block-wscript-from-reading-certain-types-of-files"></a>阻止 Wscript 读取某些类型的文件
@@ -96,8 +96,8 @@ ms.locfileid: "59490161"
 - **进程**- wscript.exe
 - **操作**- 文件读取
 - **文件/文件夹、注册表项/** 值、进程、服务 - C：\Users *\AppData**.js、C：\Users*\Downloads**.js
-- **攻击面减少** 规则 - 由于可靠性和性能问题，ASR 规则无法阻止特定进程读取特定脚本文件类型。 我们有一个规则来阻止可能源自这些方案的攻击途径。 规则名称为"阻止 JavaScript 或 VBScript 启动下载的可执行内容" (GUID "d3e037e1-3eb8-44c8-a917-57927947596d") 和"阻止执行可能混淆的脚本" (GUID" 5beb7efe-fd9a-4556-801d-275e5ffc04cc") 。
-- 其他推荐功能 **-** 尽管在这些方案中存在特定的 ASR 规则可缓解某些攻击途径，但需要指出的是，默认情况下，AV 可以通过反恶意软件扫描接口 (AMSI) 实时检查脚本 (PowerShell、Windows 脚本主机、JavaScript、VBScript 等) 。 详细信息在此处提供： [反恶意软件扫描接口 (AMSI) ](/windows/win32/amsi/antimalware-scan-interface-portal)。
+- **攻击面减少** 规则 - 由于可靠性和性能问题，ASR 规则无法阻止特定进程读取特定脚本文件类型。 我们有一个规则来阻止可能源自这些方案的攻击途径。 规则名称为"阻止 JavaScript 或 VBScript 启动下载的可执行内容" (GUID "d3e037e1-3eb8-44c8-a917-57927947596d"。 ) 和"阻止执行可能混淆的脚本" (GUID" 5beb7efe-fd9a-4556-801d-275e5ffc04cc") 。
+- 其他推荐功能 **-** 尽管存在在这些方案中缓解某些攻击途径的特定 ASR 规则，但需要指出的是，AV 默认情况下能够通过反恶意软件扫描接口 (AMSI) 实时检查脚本 (PowerShell、Windows Script Host、JavaScript、VBScript 等) 。 详细信息在此处提供：[反恶意软件扫描接口 (AMSI) 。 ](/windows/win32/amsi/antimalware-scan-interface-portal)
 
 ### <a name="block-launch-of-child-processes"></a>阻止启动子进程
 
@@ -122,9 +122,9 @@ ms.locfileid: "59490161"
 - **应用于**- 所有进程
 - **进程**- *
 - **操作**- 进程终止
-- **文件/** 文件夹、注册表项/值、进程、服务 - MsSense.exe、MsMpEng.exe、NisSrv.exe、svchost.exe*、services.exe、csrss.exe、smss.exe、wininit.exe 等示例。
-- **攻击面** 减少规则 - ASR 规则不支持这些方案，因为它们受内置Windows 10保护。
-- 其他 **推荐** 功能 - ELAM (提前启动反恶意软件) 、PPL (Protection Process Light) 、PPL AntiMalware Light 和 System Guard。
+- 文件/文件夹、注册表项/值、**进程、服务**- MsSense.exe、MsMpEng.exe、NisSrv.exe、svchost.exe*、services.exe、csrss.exe、smss.exe、wininit.exe 等示例。
+- **攻击面** 减少规则 - ASR 规则不支持这些方案，因为它们受Windows 10内置安全保护的保护。
+- **其他推荐** 功能 - ELAM (提前启动反恶意软件) 、PPL (Protection Process Light) 、PPL AntiMalware Light 和 System Guard。
 
 ### <a name="block-specific-launch-process-attempt"></a>阻止特定启动进程尝试
 
@@ -133,7 +133,7 @@ ms.locfileid: "59490161"
 - **操作**- 进程执行
 - **文件/文件夹、注册表项/** 值、进程、服务 - tor.exe、bittorrent.exe、cmd.exe、powershell.exe 等示例
 - **攻击面减少规则**- 总的来说，ASR 规则不能作为应用程序管理器工作。
-- **其他推荐功能**- 若要阻止用户启动特定进程或程序，建议Windows Defender应用程序控制。 Microsoft Defender for Endpoint File and Cert indicators， can be used in an Incident Response scenario ( (shouldn't be seen as an application control mechanism) .
+- **其他建议的功能**- 若要阻止用户启动特定进程或程序，建议Windows Defender应用程序控制。 Microsoft Defender for Endpoint File and Cert indicators， can be used in an Incident Response scenario ( (as an application control mechanism) .
 
 ### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>阻止未经授权更改Microsoft Defender 防病毒配置
 

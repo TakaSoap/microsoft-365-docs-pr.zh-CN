@@ -9,7 +9,7 @@ f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: msfttracyp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 363abb059acc656de7ebdf074729374e75f84cff
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: adde107d9259999a231ec4940c762a13d40dfbc0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011448"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211797"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -57,7 +57,7 @@ ms.locfileid: "60011448"
   - [管理员体验视频](https://youtu.be/vnar4HowfpY)
   - [最终用户体验视频](https://youtu.be/s-vozLO43rI)
   - 此博客文章介绍隔离体验中即将提供的其他新功能： [简化隔离体验](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388)。
-  - 门户重定向默认开始，将用户从安全与合规&重定向到 <https://security.microsoft.com> Microsoft 365 Defender。 有关详细信息，请参阅：将帐户[Office 365安全与](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)合规中心重定向到Microsoft 365 Defender
+  - 门户重定向默认开始，将用户从安全&合规性重定向到 <https://security.microsoft.com> Microsoft 365 Defender。 有关详细信息，请参阅：将帐户从[Office 365安全与](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)合规中心重定向到Microsoft 365 Defender
 
 ## <a name="august-2021"></a>2021 年 8 月
 
@@ -77,27 +77,27 @@ ms.locfileid: "60011448"
   - [ZAP 的新警报策略](../../compliance/new-defender-alert-policies.md)
 - Microsoft Defender for Office 365 警报现已集成到 Microsoft 365 Defender - Microsoft 365 Defender 统一警报队列和[统一警报队列](../defender/investigate-alerts.md)
 - [用户](user-tags.md)标记现已集成到 Microsoft Defender 中，用于 Office 365 警报体验，包括：Office 365 安全 & 合规性中的警报队列和详细信息，以及将自定义警报策略范围限制到用户标记以创建目标警报策略。 
-  - Microsoft Defender for Microsoft 365 Defender Center 中的统一警报队列中 (Microsoft Defender for Office 365 计划 2) 
+  - Microsoft Defender for Office 365 计划 2 中Microsoft 365 Defender中心 (统一警报Office 365标记) 
 
 ## <a name="june-2021"></a>2021 年 6 月
 
-- 反网络钓鱼策略安全提示第一个联系人策略设置。 当安全提示第一次收到发件人发送的电子邮件或不经常收到发件人发送的电子邮件时，将显示此通知。 有关此设置以及如何配置它的信息，请参阅以下文章：
+- 反网络钓鱼策略安全提示第一个联系人策略设置。 当安全提示第一次收到来自发件人的电子邮件或不经常收到发件人发送的电子邮件时，将显示此通知。 有关此设置以及如何配置它的信息，请参阅以下文章：
   - [第一个联系人安全提示](set-up-anti-phishing-policies.md#first-contact-safety-tip)
   - [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)
-  - [在 Microsoft Defender 中为用户配置防钓鱼Office 365](configure-mdo-anti-phishing-policies.md)
+  - [在 Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>2021 年 4 月/5 月
 
 - [电子邮件实体页面](mdo-email-entity-page.md)：电子邮件的统一 360 度视图，包含有关威胁、身份验证和检测、触发详细信息以及全新的电子邮件预览体验的丰富信息。
 - [Office 365 API：](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events)更新 EmailEvents (RecordType 28) 添加传递操作、原始和最新的传递位置以及更新的检测详细信息。
-- [适用于 Office 365](/microsoft-365/security/defender/threat-analytics)的 Defender 威胁分析：查看活动威胁参与者、热门技术和攻击面，以及 Microsoft 研究人员有关正在进行的活动的广泛报告。
+- [适用于 Defender for Office 365](/microsoft-365/security/defender/threat-analytics)的威胁分析：查看活动威胁参与者、热门技术和攻击面，以及 Microsoft 研究人员有关正在进行的活动的广泛报告。
 
 ## <a name="februarymarch-2021"></a>2021 年 2 月/3 月
 
 - 警报 ID 集成 (在搜寻体验中使用警报 ID Alert-Explorer导航 [) 搜索](threat-explorer.md)
 - 将搜寻体验中记录的导出限制从 9990 提高至 200，000 [](threat-explorer.md)
-- 扩展 Explorer (和实时检测) 试用租户的数据保留和搜索限制，从之前限制 7 天 (到) 30 [天](threat-explorer.md)
-- Explorer (中称为 **模拟** 域和模拟用户的新搜寻透视表和实时) 搜索针对受保护的用户或域的模拟攻击。 有关详细信息，请参阅 [详细信息](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。  (Microsoft Defender for Office 365 计划 1 或计划 2) 
+- 将资源管理器 (和实时检测) 试用租户的数据保留和搜索限制从之前的 7 天 (个限制) 到 30 [天](threat-explorer.md)
+- Explorer (中称为 **模拟** 域和模拟用户的新搜寻透视表和实时) 搜索针对受保护用户或域的模拟攻击。 有关详细信息，请参阅 [详细信息](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。  (Microsoft Defender for Office 365 计划 1 或计划 2) 
 
 
 ## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 计划 1 和计划 2

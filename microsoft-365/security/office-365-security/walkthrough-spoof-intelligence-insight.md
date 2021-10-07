@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d23e6ab170b200626b422163daaafdbdd11e5fca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 51a52c931e70d0d3da5f87c0c5a702002bc9d377
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196243"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211869"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>使用 EOP 中的欺骗智能策略和欺骗智能见解管理欺骗发件人
 
@@ -36,13 +36,13 @@ ms.locfileid: "59196243"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> 本文介绍在"反垃圾邮件策略"页上 (欺骗智能策略替换的旧版欺骗 **发件人管理**) 。  有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
+> 本文介绍在"反垃圾邮件策略"页面 (替换的旧版欺骗发件人管理) 。   有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
 
-在 Microsoft 365 组织中，从 2018 年 10 日起，在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱的入站电子邮件将自动受到 EOP 的欺骗保护。 EOP **使用欺骗智能** 作为组织防御网络钓鱼的整体防御的一部分。 有关详细信息，请参阅 [EOP 中的反欺骗保护](anti-spoofing-protection.md)。
+在 Microsoft 365 组织中，从 2018 年 10 日起，在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱的入站电子邮件将自动防止 EOP 欺骗。 EOP **使用欺骗智能** 作为组织抵御网络钓鱼的整体防御的一部分。 有关详细信息，请参阅 [EOP 中的反欺骗保护](anti-spoofing-protection.md)。
 
-默认 (且仅) **欺骗** 智能策略有助于确保合法发件人发送的欺骗性电子邮件不会在 EOP 垃圾邮件筛选器中被发现，同时保护用户免受垃圾邮件或网络钓鱼攻击。 您还可以使用欺骗智能见解快速确定哪些外部发件人从未通过 SPF、DKIM 或 DMARC 检查的域合法地向您发送未经身份验证 (电子邮件) 。
+默认 (仅) 欺骗智能策略有助于确保合法发件人发送的欺骗性电子邮件不会在 EOP 垃圾邮件筛选器中被发现，同时保护用户免受垃圾邮件或网络钓鱼攻击。 您还可以使用欺骗智能见解快速确定哪些外部发件人从未通过 SPF、DKIM 或 DMARC 检查的域合法地向您发送未经身份验证的电子邮件 (邮件) 。
 
-您可以在企业门户中或在 PowerShell Microsoft 365 Defender PowerShell 中管理欺骗智能， (Exchange Online PowerShell 中Microsoft 365邮箱的 Exchange Online;独立 EOP PowerShell，适用于Exchange Online邮箱) 。
+可以在企业门户中或在 PowerShell Microsoft 365 Defender PowerShell 中管理欺骗智能 (Exchange Online，Microsoft 365邮箱在 Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -81,7 +81,7 @@ ms.locfileid: "59196243"
 ### <a name="manage-spoofed-senders-in-the-spoof-intelligence-policy"></a>管理欺骗智能策略中的欺骗发件人
 
 > [!IMPORTANT]
-> 本文介绍在"反垃圾邮件策略"页上 (欺骗智能策略替换的旧版欺骗 **发件人管理**) 。  有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
+> 本文介绍在"反垃圾邮件策略"页面 (替换的旧版欺骗发件人管理) 。   有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
 
 1. 在 Microsoft 365 Defender 门户中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>的“**反垃圾邮件**”。
 
@@ -105,7 +105,7 @@ ms.locfileid: "59196243"
 
    您看到的列和值如下列表所示：
 
-   - **欺骗用户**：被欺骗的用户帐户。 这是"发件人"地址 (也称为电子邮件 `5322.From`) 中显示的地址发件人。 SPF 不检查此地址的有效性。
+   - **欺骗用户**：被欺骗的用户帐户。 这是"发件人"地址 (也称为电子邮件 `5322.From`) 中显示的地址。 SPF 不检查此地址的有效性。
      - 在 **"你的域** "选项卡上，值包含一个电子邮件地址，或者，如果源电子邮件服务器欺骗多个用户帐户，则它包含 **多个**。
      - 在 **"外部域** "选项卡上，值包含欺骗用户的域，而不是完整的电子邮件地址。
 
@@ -126,16 +126,16 @@ ms.locfileid: "59196243"
 
    - **允许欺骗？：** 你在此处看到的值是：
      - **是**：允许来自欺骗用户和发送基础结构组合的邮件，并且不会被视为欺骗电子邮件。
-     - **否**：来自欺骗用户和发送基础结构组合的邮件被标记为欺骗邮件。 该操作由默认的防钓鱼策略或自定义防钓鱼策略控制 (默认值为"将邮件移动到垃圾邮件文件夹") 。  有关详细信息，请参阅下一节。
+     - **否**：来自欺骗用户和发送基础结构组合的邮件被标记为欺骗邮件。 该操作由默认的防钓鱼策略或自定义防钓鱼策略控制，默认值 ("将邮件移动到垃圾邮件文件夹") 。  有关详细信息，请参阅下一节。
 
-     - **某些用户** (你的域"选项卡) ：发送基础结构正在欺骗多个用户，其中允许一些欺骗用户，另一些不允许。 使用 **"详细** "选项卡查看特定地址。
+     - **某些用户** (你的域"选项卡) ：发送基础结构正在欺骗多个用户，其中一些欺骗用户是允许的，另一些则不允许。 使用 **"详细** "选项卡查看特定地址。
 
 6. 完成时，请单击“保存”。
 
 #### <a name="use-powershell-to-manage-spoofed-senders"></a>使用 PowerShell 管理欺骗性发件人
 
 > [!IMPORTANT]
-> 本文介绍在"反垃圾邮件策略"页上 (欺骗智能策略替换的旧版欺骗 **发件人管理**) 。  有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
+> 本文介绍在"反垃圾邮件策略"页面 (替换的旧版欺骗发件人管理) 。   有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
 
 若要查看欺骗智能中允许和阻止的发件人，请使用以下语法：
 
@@ -185,7 +185,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 ### <a name="manage-spoofed-senders-in-the-spoof-intelligence-insight"></a>在欺骗智能见解中管理欺骗发件人
 
 > [!IMPORTANT]
-> 本文介绍在"反垃圾邮件策略"页上 (欺骗智能策略替换的旧版欺骗 **发件人管理**) 。  有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
+> 本文介绍在"反垃圾邮件策略"页上 (替代的旧版欺骗发件人管理) 。   有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
 
 1. 在安全与&中心，转到"**威胁管理仪表板** \> **"。**
 
@@ -208,20 +208,20 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
    - **可疑域**：
      - **高可信度欺骗**：根据历史发送模式和域的信誉分数，我们高度确信这些域是欺骗，来自这些域的邮件更有可能是恶意邮件。
      - **中等** 可信度欺骗：根据历史发送模式和域的信誉分数，我们确信这些域是欺骗的，并且从这些域发送的邮件是合法的。 在此类别中，误报的可能性大于高可信度欺骗。
-   - **非可疑域**：域未通过显式电子邮件身份验证检查 [SPF、DKIM](how-office-365-uses-spf-to-prevent-spoofing.md)和 [DMARC](use-dmarc-to-validate-email.md)) 。 [](use-dkim-to-validate-outbound-email.md) 但是，该域已通过我们的隐式电子邮件身份验证检查 ([身份验证) 。](email-validation-and-authentication.md#composite-authentication) 因此，未对邮件执行反欺骗操作。
+   - **非可疑域**：域未通过显式电子邮件身份验证检查 [SPF、DKIM](how-office-365-uses-spf-to-prevent-spoofing.md)和 [DMARC](use-dmarc-to-validate-email.md)) 。 [](use-dkim-to-validate-outbound-email.md) 但是，域已通过隐式电子邮件身份验证检查， ([身份验证) 。](email-validation-and-authentication.md#composite-authentication) 因此，未对邮件执行反欺骗操作。
 
 #### <a name="view-detailed-information-about-suspicious-and-nonsuspicious-domains"></a>查看有关可疑域和非可疑域的详细信息
 
 1. 在"欺骗智能见解"上，单击" **可疑** 域或非 **可疑** 域"以转到" **欺骗智能见解"** 页面。 " **欺骗智能见解** "页包含以下信息：
 
    - **欺骗性** 域：电子邮件客户端的"来源"框中显示的欺骗用户的域。  此地址也称为 `5322.From` 地址。
-   - **基础结构**：也称为发送 _基础结构_。 反向 DNS 查找中的域 (PTR) 源电子邮件服务器的 IP 地址。 如果源 IP 地址没有 PTR 记录，则发送基础结构标识为 \<source IP\> /24 (例如，192.168.100.100/24) 。
+   - **基础结构**：也称为发送 _基础结构_。 反向 DNS 查找中的域 (源) IP 地址的 PTR 记录。 如果源 IP 地址没有 PTR 记录，则发送基础结构标识为 \<source IP\> /24 (例如，192.168.100.100/24) 。
    - **邮件计数**：过去 7 天内从发送基础结构发送到包含指定欺骗域的组织的邮件数量。
    - **上次看到** 时间：从包含欺骗域的发送基础结构接收邮件的最后日期。
    - **欺骗类型**：此值为 **External**。
    - **允许欺骗？：** 你在此处看到的值是：
      - **是**：允许来自欺骗用户域和发送基础结构组合的邮件，且不会被视为欺骗电子邮件。
-     - **否**：来自欺骗用户域和发送基础结构组合的邮件被标记为欺骗邮件。 该操作由默认的防钓鱼策略或自定义防钓鱼策略控制 (默认值为"将邮件移动到垃圾邮件文件夹") 。 
+     - **否**：来自欺骗用户域和发送基础结构组合的邮件被标记为欺骗邮件。 该操作由默认防钓鱼策略或自定义防钓鱼策略控制， (默认值为"将邮件移动到垃圾邮件文件夹") 。 
 
 2. 在列表中选择一个项目，在飞出视图中查看有关域/发送基础结构对的详细信息。 这些信息包括：
    - 我们为什么捕获到此。

@@ -1,5 +1,5 @@
 ---
-title: 主题主题中的主题Microsoft Viva概述
+title: 主题中心概述Microsoft Viva主题
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,18 +11,18 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority: medium
 description: 在"主题"中了解Microsoft Viva中心。
-ms.openlocfilehash: 5456ef27b23ff36cd1919274424c179f8ec3d683
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 928152a2b11b2bb25d0e70f12e39277400c9a4e1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200386"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213249"
 ---
-# <a name="topic-center-overview-in-microsoft-viva-topics"></a>主题主题中的主题Microsoft Viva概述
+# <a name="topic-center-overview-in-microsoft-viva-topics"></a>主题中心概述Microsoft Viva主题
 
-在Microsoft Viva主题中，主题中心是一个SharePoint新式网站，可用作组织的一个知识中心。 它在[Viva 主题设置期间在](set-up-topic-experiences.md)Microsoft 365 管理中心。
+在Microsoft Viva主题中，主题中心是一个SharePoint新式网站，充当组织的一个知识中心。 它在[Viva 主题设置期间在](set-up-topic-experiences.md)Microsoft 365 管理中心。
 
 主题中心具有一个包含主题 **Web** 部件的默认主页，所有许可用户都可以查看他们具有连接的主题。
 
@@ -40,7 +40,7 @@ ms.locfileid: "59200386"
 
 3. 选择" **主题中心"** 选项卡。在 **"网站地址** "下是指向主题中心的链接。
 
-    ![knowledge-network-settings.](../media/knowledge-network-settings-topic-center.png)
+    ![knowledge-network-settings。](../media/knowledge-network-settings-topic-center.png)
 
 ## <a name="home-page"></a>主页
 

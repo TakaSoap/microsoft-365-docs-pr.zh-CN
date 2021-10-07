@@ -6,17 +6,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c817805994662b080f530b76b76cbb111ee36795
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f7e729659cf96845646f3f3c3e8f03c650a244e2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162332"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212709"
 ---
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 
@@ -25,7 +25,7 @@ ms.locfileid: "59162332"
 
 合作伙伴过程记录在合作伙伴 [注册设备的步骤中](register-devices-partner.md)。
 
-Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已拥有的设备 (这将要求你重新映像它们) 。 可以在应用门户Microsoft 托管桌面注册Microsoft Endpoint Manager设备。
+Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已经拥有的设备 (这将要求你重新映像它们) 。 可以在应用门户Microsoft 托管桌面注册Microsoft Endpoint Manager设备。
 
 ## <a name="prepare-to-register-existing-devices"></a>准备注册现有设备
 
@@ -43,7 +43,7 @@ Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已�
 Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 有四个选项用于从你已在使用的设备获取此信息：
 
 - 请你的 OEM 供应商提供 AutoPilot 注册文件，该文件将包含硬件哈希。
-- 在 中[Microsoft Endpoint Configuration Manager。](#microsoft-endpoint-configuration-manager)
+- 在 Microsoft Endpoint Configuration Manager 中[收集信息](#microsoft-endpoint-configuration-manager)。
 - 运行Windows PowerShell脚本（通过使用[Active Directory](#active-directory-powershell-script-method)或在每台设备上手动[](#manual-powershell-script-method)运行）并收集文件中的结果。
 - 启动每台设备（但不完成Windows安装体验）并收集可移动闪存[驱动器上的哈希](#flash-drive-method)。
 
@@ -58,9 +58,9 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 
 1. 在 Configuration Manager 控制台中，选择"监视 **"。** 
 2. 在"监控"工作区中，展开" **报告"** 节点，展开" **报告**"，然后选择" **硬件 - 常规"** 节点。 
-3. 运行报告，Windows **Autopilot 设备信息**，并查看结果。
+3. 运行报告 **，Windows Autopilot 设备信息**，并查看结果。
 4. 在报告查看器中，选择"导出"图标，然后选择 **"CSV** (逗号分隔) 选项。
-5. 保存文件后，你将需要仅筛选结果到你计划向 Microsoft 托管桌面 注册的设备，并将数据上载到Microsoft 托管桌面。 打开Microsoft Endpoint Manager并导航到 **"设备**"菜单，然后查找"Microsoft 托管桌面部分并选择 **"设备"。** 选择 **+ 注册设备**，这将打开一个飞入以注册新设备。
+5. 保存文件后，你将需要仅筛选结果到计划向 Microsoft 托管桌面 注册的设备，并将数据上载到Microsoft 托管桌面。 打开Microsoft Endpoint Manager并导航到 **"设备**"菜单，然后查找"Microsoft 托管桌面部分并选择 **"设备"。** 选择 **+ 注册设备**，这将打开一个飞入以注册新设备。
 
 
 有关详细信息 [，请参阅使用管理门户注册](#register-devices-by-using-the-admin-portal) 设备。
@@ -68,7 +68,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 
 #### <a name="active-directory-powershell-script-method"></a>Active Directory PowerShell 脚本方法
 
-在 Active Directory 环境中，可以使用 `Get-WindowsAutoPilotInfo` PowerShell cmdlet 通过 WinRM 远程收集 Active Directory 组中设备的信息。 您还可以使用 cmdlet 并获取目录中包含的特定 `Get-AD Computer` 硬件型号名称的筛选结果。 在继续之前，首先确认这些先决条件，然后继续执行以下步骤：
+在 Active Directory 环境中，可以使用 `Get-WindowsAutoPilotInfo` PowerShell cmdlet 通过 WinRM 从 Active Directory 组的设备中远程收集信息。 您还可以使用 cmdlet 并获取目录中包含的特定 `Get-AD Computer` 硬件型号名称的筛选结果。 在继续之前，首先确认这些先决条件，然后继续执行以下步骤：
 
 - WinRM 已启用。
 - 你想要注册的设备在网络设备上处于活动状态 (也就是说，它们未断开连接或) 。
@@ -77,7 +77,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 
     1. 打开 **"Windows Defender防火墙**"控制面板，然后选择"允许应用或功能通过Windows Defender **防火墙"。**
 
-    2. 在 **列表中Windows Management Instrumentation (WMI**) ，同时启用 **"** 专用"和"公用"，然后选择"确定 **"。**
+    2. 在 **列表中Windows Management Instrumentation** (WMI) ，同时启用 **"** 专用"和"公用"，然后选择"确定 **"。**
 
 1. 使用管理权限打开 PowerShell 提示符。
 
@@ -148,7 +148,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 3. 选择 **注册设备**。 系统将设备添加到设备边栏选项卡上的设备列表，标记为 **注册挂起**。  注册通常少于 10 分钟，并且成功后，设备将显示为"为用户准备就绪"，这意味着它已准备好并等待用户开始使用。
 
 > [!NOTE]
-> 如果手动更改设备Azure Active Directory (AAD) 组成员身份，系统会自动将其重新分配给设备配置文件的组，并删除任何冲突组。
+> 如果你手动更改设备Azure Active Directory (AAD) 组成员身份，它将自动重新分配到设备配置文件的组，并删除任何冲突组。
 
 你可以监视主页上的设备注册进度。 其中报告的可能状态包括：
 
@@ -156,7 +156,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 |---------------|-------------|
 | Registration Pending | 注册尚未完成。 请稍后再查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息 [，请参阅设备](#troubleshooting-device-registration) 注册疑难解答。 |
-| 为用户准备就绪 | 注册成功，设备现在已准备好传递给用户。 Microsoft 托管桌面指导用户完成首次设置，因此无需执行任何进一步准备。 |
+| 为用户准备就绪 | 注册成功，设备现在已准备好传递给用户。 Microsoft 托管桌面将指导用户完成首次设置，因此无需执行任何进一步准备。 |
 | 活动 | 设备已传递给用户，并且他们已在租户中注册。 这还指示他们定期使用设备。 |
 | 非活动 | 设备已传递给用户，并且他们已在租户中注册。 但是，他们在最近 7 天内 (使用过该设备) 。  | 
 

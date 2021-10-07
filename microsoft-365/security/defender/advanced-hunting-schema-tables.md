@@ -1,5 +1,5 @@
 ---
-title: 高级搜寻Microsoft 365 Defender中的数据表
+title: 高级搜寻架构Microsoft 365 Defender表中的数据表
 description: 了解高级搜寻架构中的表，以了解可运行威胁搜寻查询的数据
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 数据
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4dcbb7051325483a220c39fdebaae53aba9c37f4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6974af0dbf6f4c8bc4b22ccf9292a562902a524f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196529"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212265"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解高级搜寻架构
 

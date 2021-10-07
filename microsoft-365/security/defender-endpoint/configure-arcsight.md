@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41d07ae2c6acc4bdbe828bc98d8bdfecdbf45f2e
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: ce8c28a76ffc3348d5500f25820f4632ee862782
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401718"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211276"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>配置 Micro Focus ArcSight 以拉取 Defender 进行终结点检测
 
@@ -41,7 +41,7 @@ ms.locfileid: "59401718"
 > - [Defender for Endpoint Alert](alerts.md) 由一个或多个检测组成
 > - [Defender for Endpoint Detection](api-portal-mapping.md) 由设备上发生的可疑事件及其相关的警报详细信息组成。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 配置微型焦点 ArcSight 连接器工具需要多个配置文件，以拉取和分析来自 AAD Azure Active Directory (应用程序的) 检测。
 
@@ -59,7 +59,7 @@ ms.locfileid: "59401718"
   - WDATP-connector.properties
   - WDATP-connector.jsonparser.properties
 
-    当你选择 Micro Focus ArcSight 作为你在组织.zip SIEM 类型时，你将保存一个包含这两个文件的文件。
+    当你选择 Micro Focus ArcSight 作为你在组织.zip SIEM 类型时，你将保存一个包含这两个文件的配置文件。
 
 - 请确保生成以下令牌并准备好：
   - 访问令牌
@@ -71,7 +71,7 @@ ms.locfileid: "59401718"
 
 以下步骤假定你已完成开始之前的所有 [必需步骤](#before-you-begin)。
 
-1. 安装最新的 32 位 Windows FlexConnector 安装程序。 可在 HPE 软件中心找到它。 该工具通常安装在以下默认位置 `C:\Program Files\ArcSightFlexConnectors\current\bin` ：。</br></br>您可以选择保存工具的位置，例如 C：folder_location \\ \current\bin，其中 folder_location表示安装位置。
+1. 安装最新的 32 位 Windows FlexConnector 安装程序。 可在 HPE 软件中心找到它。 该工具通常安装在以下默认位置 `C:\Program Files\ArcSightFlexConnectors\current\bin` ：。</br></br>您可以选择保存工具的位置，例如 C：folder_location \\ \current\bin，folder_location表示安装位置。 
 
 2. 按照安装向导完成以下任务：
    - 简介
@@ -120,9 +120,9 @@ ms.locfileid: "59401718"
 
 9. 选择 **ArcSight 管理器 (加密)** 作为目标，然后单击下一 **步**。
 
-10. 在管理器主机名中键入目标 IP/主机名，在参数表单中键入凭据。  表单中的所有其他值都应保留为默认值。 单击“**下一步**”。
+10. 在管理器主机名中键入目标 IP/主机名，在参数表单中键入凭据。  表单中的所有其他值都应保留为默认值。 单击“下一步”。
 
-11. 在连接器详细信息表单中键入连接器的名称。 表单中的所有其他值都是可选的，可以留空。 单击“**下一步**”。
+11. 在连接器详细信息表单中键入连接器的名称。 表单中的所有其他值都是可选的，可以留空。 单击“下一步”。
 
 12. 将显示 ESM 管理器导入证书窗口。 选择 **"将证书从目标导入连接器"，然后单击**"下一 **步"。** 将显示 **"添加连接器摘要** "窗口，并导入证书。
 
@@ -130,9 +130,9 @@ ms.locfileid: "59401718"
 
 14. 选择 **"安装为服务"，** 然后单击"下一 **步"。**
 
-15. 在"服务内部名称" **字段中键入** 名称。 窗体中的所有其他值都可以使用默认值保留或留空。 单击“**下一步**”。
+15. 在"服务内部名称" **字段中键入** 名称。 窗体中的所有其他值都可以使用默认值保留或留空。 单击“下一步”。
 
-16. 键入服务参数，然后单击下一 **步**。 将显示一个 **包含"安装服务摘要"** 的窗口。 单击“**下一步**”。
+16. 键入服务参数，然后单击下一 **步**。 将显示一个 **包含"安装服务摘要"** 的窗口。 单击“下一步”。
 
 17. 通过选择"退出"和"下一 **步"完成****安装**。
 
@@ -170,7 +170,7 @@ Defender for Endpoint 检测将显示为离散事件，"Microsoft"作为供应�
 
 ## <a name="troubleshooting-micro-focus-arcsight-connection"></a>微焦点 ArcSight 连接疑难解答
 
-**问题：** 未能刷新令牌。 你可以找到位于 C： \\ *folder_location*\current\logs 中的日志folder_location表示安装该工具的位置。 打开 _agent.log_ 并查找 `ERROR/FATAL/WARN` 。
+**问题：** 未能刷新令牌。 你可以找到位于 C： \\ *folder_location*\current\logs 中的日志，folder_location表示安装该工具的位置。 打开 _agent.log_ 并查找 `ERROR/FATAL/WARN` 。
 
 **症状：** 收到以下错误消息：
 

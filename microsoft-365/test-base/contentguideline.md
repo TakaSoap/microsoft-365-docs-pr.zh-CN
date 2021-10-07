@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 5aaaa0ae3c36e04a73f65df114c8927e59b6a259
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 156122ad2b5d92a4a093e92c64b55219238c8ee0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196430"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211773"
 ---
 # <a name="test-package-guidelines"></a>测试包指南
 
@@ -71,9 +71,9 @@ ms.locfileid: "59196430"
 
 ## <a name="2-script-execution"></a>2. 脚本执行
 
-**开箱后测试：** 应用程序包至少需要包含三个 PowerShell 脚本。 这些脚本将执行无人参与的安装、启动和关闭应用程序及其依赖项。 每个脚本都应检查自己的先决条件、验证自己的成功，并在必要时 (清理) 。
+**Out-of-Box 测试：** 应用程序包至少需要包含三个 PowerShell 脚本。 这些脚本将执行无人参与的安装、启动和关闭应用程序及其依赖项。 每个脚本都应检查自己的先决条件、验证自己的成功，并在必要时 (清理) 。
 
-**功能测试：** 应用程序包至少需要包含一个 PowerShell 脚本。 如果提供了多个脚本，脚本将按上载顺序运行，并且特定脚本中的失败将阻止后续脚本执行。
+**功能测试：** 应用程序包至少需要包含一个 PowerShell 脚本。 如果提供了多个脚本，脚本将按上载顺序运行，并且特定脚本中的失败将阻止后续脚本的执行。
 
 ### <a name="script-requirements"></a>脚本要求
 
@@ -107,7 +107,7 @@ ms.locfileid: "59196430"
 
 任何二进制文件和依赖项都应包含在单个 zip 文件中。
 
-这些二进制文件应包括安装应用程序安装程序所需的一 (例如，应用程序安装程序) 。 如果应用程序依赖于任何框架，如 .NET Core/Standard 或 .NET Framework，则这些框架应包含在文件中，并正确引用提供的脚本。
+这些二进制文件应包括安装应用程序组件所需的一 (，例如应用程序安装程序) 。 如果应用程序依赖于任何框架，如 .NET Core/Standard 或 .NET Framework，则这些框架应包含在文件中，并正确引用提供的脚本。
 
 > [!NOTE]
 > 上载的 zip 文件的名称中不能包含任何空格或特殊字符
@@ -116,4 +116,4 @@ ms.locfileid: "59196430"
 
 前进到下一篇文章以查看一些常见问题 (**常见问题)**
 > [!div class="nextstepaction"]
-> [后续步骤](faq.md)
+> [下一步](faq.md)

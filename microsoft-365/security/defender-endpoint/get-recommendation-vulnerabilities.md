@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8325f848281a37099e7a89eeda05d738c686b011
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b74a5e4861e068bca7c31465c4ba7c8f4169a983
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170066"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212903"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>按建议列出漏洞
 
@@ -45,7 +45,7 @@ ms.locfileid: "59170066"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Vulnerability.Read.All  |"读取威胁和漏洞管理安全建议信息"
+Application|Vulnerability.Read.All  |"读取威胁和漏洞管理安全建议信息"
 委派（工作或学校帐户）|Vulnerability.Read|"读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -58,7 +58,7 @@ GET /api/recommendations/{id}/vulnerabilities
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

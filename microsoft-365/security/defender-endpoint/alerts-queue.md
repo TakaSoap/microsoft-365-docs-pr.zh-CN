@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: bf92c1764ed2b81b1f4409efc2e7bc7fae94185d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cf035e6799a70bc0fa81328ce85e97bfed1a08b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170518"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211317"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>查看并组织 Microsoft Defender for Endpoint 警报队列
 
@@ -59,7 +59,7 @@ ms.locfileid: "59170518"
 警报严重性|说明
 ---|---
 高 <br>  (红色) |通常看到的与 APT 高级永久性威胁 (警报) 。 这些警报表明存在高风险，因为它们可能会损坏设备的严重性。 例如：凭据盗窃工具活动、未与任何组关联的勒索软件活动、篡改安全传感器或任何恶意活动，这些活动会指示人类对手。
-Medium <br>  (橙色) |终结点检测和响应泄露后行为的警报，这些警报可能是 APT 高级永久性威胁 (的一) 。 这包括观察到的攻击阶段的典型行为、异常注册表更改、执行可疑文件等。 尽管其中一些可能是内部安全测试的一部分，但它需要进行调查，因为它也可能属于高级攻击。
+中型 <br>  (橙色) |终结点检测和响应泄露后行为的警报，这些警报可能是 APT (高级永久性威胁) 。 这包括观察到的攻击阶段的典型行为、异常注册表更改、执行可疑文件等。 尽管其中一些可能是内部安全测试的一部分，但它需要进行调查，因为它也可能属于高级攻击。
 低 <br>  (黄色) |与流行恶意软件相关的威胁警报。 例如，黑客工具、非恶意软件黑客工具（如运行探索命令、清除日志等）通常不会指示面向组织的高级威胁。 它还可能来自组织中用户隔离的安全工具测试。
 信息 <br>  (灰色) |可能被视为对网络有害的警报，但可以提升组织对潜在安全问题的安全意识。
 
@@ -67,14 +67,14 @@ Medium <br>  (橙色) |终结点检测和响应泄露后行为的警报，这些
 
 Microsoft Defender 防病毒 (Microsoft Defender AV) 和 Defender for Endpoint 警报严重性是不同的，因为它们表示不同的范围。
 
-威胁Microsoft Defender 防病毒表示检测到的威胁 (恶意软件) 的绝对严重性，如果受感染，则根据单个设备的潜在风险进行分配。
+威胁Microsoft Defender 防病毒威胁严重性表示检测到的威胁 (恶意软件) 的绝对严重性，并基于单个设备的潜在风险（如果受感染）进行分配。
 
 Defender for Endpoint 警报严重性表示检测到的行为的严重性，即设备的实际风险，但更重要的是对组织带来潜在风险。
 
 例如：
 
-- 有关检测到的已完全阻止Microsoft Defender 防病毒未感染设备的已检测到威胁的 Defender for Endpoint 警报的严重性归类为"信息"，因为没有实际损害。
-- 有关商业恶意软件的警报在执行时被检测到，但被 Microsoft Defender AV 阻止和修正，被分类为"低"，因为它可能给单个设备造成一些损坏，但不构成组织威胁。
+- 有关已完全阻止且未感染设备的 Microsoft Defender 防病毒 检测到的威胁的 Defender for Endpoint 警报的严重性归类为"信息"，因为没有实际损害。
+- 有关商业恶意软件的警报在执行时被检测到，但被 Microsoft Defender AV 阻止和修复，被分类为"低"，因为它可能给单个设备造成一些损坏，但不构成组织威胁。
 - 有关在执行时检测到的恶意软件的警报，不仅会对单个设备造成威胁，而且会对组织造成威胁，无论最终是否被阻止，都将被排名为"中"或"高"。
 - 根据相同的组织威胁注意事项，未阻止或修正的可疑行为警报将被排名为"低"、"中"或"高"。
 
@@ -90,7 +90,7 @@ Defender for Endpoint 警报严重性表示检测到的行为的严重性，即�
 |命令和控件|CommandAndControl|连接到攻击者控制的网络基础结构以中继数据或接收命令。|
 |凭据访问|CredentialAccess|获取有效凭据以扩展对网络中设备和其他资源的控制。|
 |防御者|DefenseEvasion|例如，通过关闭安全应用、删除芯片和运行 rootkit 来避免安全控制。|
-|Discovery|Discovery|收集有关重要设备和资源（如管理员计算机、域控制器和文件服务器）的信息。|
+|发现|发现|收集有关重要设备和资源（如管理员计算机、域控制器和文件服务器）的信息。|
 |执行|执行|启动攻击者工具和恶意代码，包括 RAT 和后门。|
 |外泄|外泄|将数据从网络提取到外部攻击者控制的位置。|
 |攻击|攻击|攻击代码和可能的利用活动。|
@@ -117,7 +117,7 @@ Defender for Endpoint 警报严重性表示检测到的行为的严重性，即�
 
 ### <a name="assigned-to"></a>分配到
 
-你可以选择显示分配给你的警报还是自动显示。
+可以选择显示分配给你的警报还是自动显示。
 
 ### <a name="detection-source"></a>检测源
 

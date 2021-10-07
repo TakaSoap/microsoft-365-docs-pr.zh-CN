@@ -9,21 +9,21 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 7db257ddd1645c5a2ba8ecd992a65d08962660c7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 99868e53e98bded9139ecedea9c9d62e9d48fd2f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196429"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211749"
 ---
 # <a name="windows-server-application-testing"></a>Windows服务器应用程序测试
 
-现在，通过 Microsoft 365 Base for Microsoft 365，可以针对 2019 和 2019 Windows Server 2016应用程序，包括服务器核心！
+现在，通过 Microsoft 365 Base for Windows Server 2016 2019 验证应用程序，包括服务器核心！
 
 若要开始针对 Microsoft 365 测试基上的 Windows Server 2016 和 2019 操作系统的预发布更新验证上载的应用程序，请遵循以下步骤：
 
@@ -45,4 +45,4 @@ ms.locfileid: "59196429"
 
 前进到下一篇文章，开始 **进行功能测试**
 > [!div class="nextstepaction"]
-> [后续步骤](functional.md)
+> [下一步](functional.md)

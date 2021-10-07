@@ -2,26 +2,24 @@
 title: Microsoft Defender 终结点载入问题疑难解答
 description: 解决在载入设备或 Microsoft Defender for Endpoint 服务期间可能出现的问题。
 keywords: 载入疑难解答， 载入问题， 事件查看器， 数据收集和预览版本， 传感器数据和诊断
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3fe7610d35114200a5bed515f82bb7a4453cf4fa
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 9c9d731fa8a1632ab6804ebed9fdb2594564eaf8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042971"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212421"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender 终结点载入问题疑难解答
 
@@ -52,7 +50,7 @@ ms.locfileid: "60042971"
 
 如果脚本成功完成，请参阅解决设备上载入问题 [，](#troubleshoot-onboarding-issues-on-the-device) 了解可能会发生的其他错误。
 
-### <a name="troubleshoot-onboarding-issues-when-deploying-with-microsoft-endpoint-configuration-manager"></a>使用部署工具进行部署时解决载入Microsoft Endpoint Configuration Manager
+### <a name="troubleshoot-onboarding-issues-when-deploying-with-microsoft-endpoint-configuration-manager"></a>在使用部署工具进行部署时解决载入Microsoft Endpoint Configuration Manager
 
 使用以下版本的 Configuration Manager 载入设备时：
 
@@ -99,7 +97,7 @@ ms.locfileid: "60042971"
 
 ### <a name="troubleshoot-onboarding-issues-using-microsoft-intune"></a>使用工具解决载入Microsoft Intune
 
-可以使用Microsoft Intune检查错误代码并尝试对问题的原因进行故障排除。
+您可以使用Microsoft Intune检查错误代码并尝试对问题的原因进行故障排除。
 
 如果你在 Intune 中配置了策略，并且这些策略未在设备上传播，你可能需要配置自动 MDM 注册。
 
@@ -119,11 +117,11 @@ ms.locfileid: "60042971"
 
 |错误代码十六进制|错误代码 Dec|Error Description|OMA-URI|可能的原因和疑难解答步骤|
 |:---:|---|---|---|---|
-|0x87D1FDE8|-2016281112|修正失败|载入 <p> 载出|**可能的原因：** 载入或载出在错误的 blob 上失败：签名错误或缺少 PreviousOrgIds 字段。 <p> **疑难解答步骤：** <p> 在"查看设备事件日志中的代理载入错误"部分检查[事件 ID。](#view-agent-onboarding-errors-in-the-device-event-log) <p> 检查下表中的 MDM 事件日志或按照诊断 MDM 故障中的说明操作[Windows 10。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)|
+|0x87D1FDE8|-2016281112|修正失败|载入 <p> 载出|**可能的原因：** 载入或载出在错误的 blob 上失败：签名错误或缺少 PreviousOrgIds 字段。 <p> **疑难解答步骤：** <p> 在"查看设备事件日志中的代理载入错误"部分检查[事件 ID。](#view-agent-onboarding-errors-in-the-device-event-log) <p> 检查下表中的 MDM 事件日志或按照诊断 MDM 故障中的说明操作[Windows。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)|
 ||||载入 <p> 载出 <p> SampleSharing|**可能的原因：** Microsoft Defender for Endpoint Policy 注册表项不存在，或者 OMA DM 客户端没有写入它的权限。 <p> **疑难解答步骤：** 确保存在以下注册表项： `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <p> 如果不存在，请打开提升的命令并添加密钥。|
-||||SenseIsRunning <p> OnboardingState <p> OrgId|**可能的原因：** 尝试通过只读属性修正。 载入失败。 <p> **疑难解答步骤：** 查看解决设备上载入 [问题中的疑难解答步骤](#troubleshoot-onboarding-issues-on-the-device)。 <p> 检查下表中的 MDM 事件日志或按照诊断 MDM 故障中的说明操作[Windows 10。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)|
-||||全部|**可能的原因：** 尝试在不支持的 SKU/平台上部署 Microsoft Defender for Endpoint，尤其是全息 SKU。 <p> 当前支持的平台： <p> Enterprise、教育以及Professional。<p> 不支持服务器。|
-|0x87D101A9|-2016345687|SyncML (425) ：请求的命令失败，因为发件人没有足够的访问控制权限 (对收件人) ACL 权限。|全部|**可能的原因：** 尝试在不支持的 SKU/平台上部署 Microsoft Defender for Endpoint，尤其是全息 SKU。<p> 当前支持的平台： <p> Enterprise、教育以及Professional。|
+||||SenseIsRunning <p> OnboardingState <p> OrgId|**可能的原因：** 尝试通过只读属性修正。 载入失败。 <p> **疑难解答步骤：** 查看解决设备上载入 [问题中的疑难解答步骤](#troubleshoot-onboarding-issues-on-the-device)。 <p> 检查下表中的 MDM 事件日志或按照诊断 MDM 故障中的说明操作[Windows。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)|
+||||所有|**可能的原因：** 尝试在不支持的 SKU/平台上部署 Microsoft Defender for Endpoint，尤其是全息 SKU。 <p> 当前支持的平台： <p> Enterprise、教育Professional。<p> 不支持服务器。|
+|0x87D101A9|-2016345687|SyncML (425) ：请求的命令失败，因为发件人对收件人没有足够的访问控制权限 (ACL) 权限。|全部|**可能的原因：** 尝试在不支持的 SKU/平台上部署 Microsoft Defender for Endpoint，尤其是全息 SKU。<p> 当前支持的平台： <p> Enterprise、教育Professional。|
 |
 
 #### <a name="known-issues-with-non-compliance"></a>不合规的已知问题
@@ -137,7 +135,7 @@ ms.locfileid: "60042971"
 |情况|症状|可能的原因和疑难解答步骤|
 |:---:|---|---|
 |`1`|设备符合 SenseIsRunning OMA-URI。 但不符合 OrgId、Onboarding 和 OnboardingState OMA-URI。|**可能的原因：** 检查用户在安装或升级后Windows OOBE。 在 OOBE 载入期间无法完成，但 SENSE 已在运行。 <p> **疑难解答步骤：** 等待 OOBE 完成。|
-|`2`|设备符合 OrgId、Onboarding 和 OnboardingState OMA-URI，但不符合 SenseIsRunning OMA-URI。|**可能的原因：** Sense 服务的启动类型设置为"延迟启动"。 有时，当系统Microsoft Intune DM 会话时，这会使服务器将设备报告为不符合 SenseIsRunning。 <p> **疑难解答步骤：** 该问题应在 24 小时内自动修复。|
+|`2`|设备符合 OrgId、Onboarding 和 OnboardingState OMA-URI，但不符合 SenseIsRunning OMA-URI。|**可能的原因：** Sense 服务的启动类型设置为"延迟启动"。 有时，当系统Microsoft Intune DM 会话时，这会导致服务器将设备报告为不符合 SenseIsRunning。 <p> **疑难解答步骤：** 该问题应在 24 小时内自动修复。|
 |`3`|设备不兼容|**疑难解答步骤：** 确保未在同一设备上同时部署载入和载出策略。|
 |
 
@@ -172,7 +170,7 @@ ms.locfileid: "60042971"
 
 1. 单击 **"开始**"，**键入事件查看器**，然后按 **Enter。**
 
-2. 在事件 **查看器 (本地)** 窗格中，展开应用程序和服务日志Microsoft Windows \>  \>  \> **SENSE**。
+2. 在"**事件查看器 (本地)** 窗格中，展开"应用程序和服务日志Microsoft Windows \>  \>  \> **SENSE"。**
 
    > [!NOTE]
    > SENSE 是内部名称，用于引用支持 Microsoft Defender for Endpoint 的行为传感器。
@@ -204,7 +202,7 @@ ms.locfileid: "60042971"
    |`27`|未能在终结点模式下启用 Microsoft Defender Windows Defender。 载入过程失败。 失败代码：变量|请联系支持人员。|
    |`29`|未能读取 offboarding参数。 错误类型：%1，错误代码：%2，说明：%3|确保设备可以访问 Internet，然后再次运行整个载出过程。|
    |`30`|在 Microsoft Defender for Endpoint (禁用 $ build.sense.productDisplayName) 模式失败。 失败代码：%1|请联系支持人员。|
-   |`32`|$ (build.sense.productDisplayName) 服务在板载过程后无法请求自行停止。 失败代码：%1|验证服务启动类型是手动的，然后重新启动设备。|
+   |`32`|$ (build.sense.productDisplayName) 服务在离开过程后无法请求自行停止。 失败代码：%1|验证服务启动类型是手动的，然后重新启动设备。|
    |`55`|未能创建安全 ETW 自动记录器。 失败代码：%1|重新启动设备。|
    |`63`|更新外部服务的启动类型。 名称：%1，实际开始类型：%2，预期开始类型：%3，退出代码：%4|确定导致上述服务启动类型发生更改的原因。 如果退出代码不为 0，请手动将启动类型修复为预期的开始类型。|
    |`64`|启动已停止的外部服务。 名称：%1，退出代码：%2|如果事件一直重新显示，请联系支持人员。|
@@ -218,13 +216,13 @@ ms.locfileid: "60042971"
 
 ### <a name="ensure-the-diagnostic-data-service-is-enabled"></a>确保诊断数据服务已启用
 
-如果设备未正确报告，你可能需要检查Windows 10数据服务是否设置为自动启动并且正在设备上运行。 该服务可能已被其他程序或用户配置更改禁用。
+如果设备未正确报告，你可能需要检查Windows数据服务是否设置为自动启动并且正在设备上运行。 该服务可能已被其他程序或用户配置更改禁用。
 
-首先，应检查服务是否设置为在 Windows 启动时自动启动，然后应检查服务当前是否正在运行 (如果未运行，则启动) 。
+首先，应检查服务是否设置为在 Windows 启动时自动启动，然后检查服务当前是否正在运行 (如果未运行该服务，则启动) 。
 
 ### <a name="ensure-the-service-is-set-to-start"></a>确保服务设置为启动
 
-**使用命令行检查诊断Windows 10服务启动类型**：
+**使用命令行检查诊断Windows服务启动类型**：
 
 1. 在设备上打开提升的命令行提示符：
 
@@ -244,7 +242,7 @@ ms.locfileid: "60042971"
 
    如果未设置为 ，则需要将服务设置为 `START_TYPE` `AUTO_START` 自动启动。
 
-**使用命令行将诊断数据Windows 10设置为自动启动：**
+**使用命令行将诊断数据Windows设置为自动启动：**
 
 1. 在设备上打开提升的命令行提示符：
 
@@ -293,7 +291,7 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 
 **症状**：载入成功完成，但在尝试启动服务时看到错误 577 或错误 1058。
 
-解决方案 **：如果你** 的设备正在运行第三方反恶意软件客户端，Microsoft Defender for Endpoint 代理需要启用早期启动反恶意软件 (ELAM) 驱动程序。 必须确保系统策略未将其关闭。
+**解决方案**：如果你的设备运行的是第三方反恶意软件客户端，Microsoft Defender for Endpoint 代理需要启用"提前启动反恶意软件 (ELAM) 驱动程序。 必须确保系统策略未将其关闭。
 
 - 根据用于实现策略的工具，需要验证是否清除以下Windows Defender策略：
 
@@ -315,7 +313,7 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
     ![注册表项的图像Microsoft Defender 防病毒。](images/atp-disableantispyware-regkey.png)
 
    > [!NOTE]
-   > wdboot Windows Defender wdboot (wdfilter、wdnisdrv、wdnissvc 和 windefend) 所有服务都应在默认状态下。 更改这些服务的启动不受支持，可能会强制你重新映像系统。
+   > wdboot (wdboot、wdfilter、wdnisdrv、wdnissvc 和 windefend) 的所有服务都应在默认状态下。 Windows Defender 更改这些服务的启动不受支持，可能会强制你重新映像系统。
    >
    > WdBoot 和 WdFilter 的默认配置示例：
    >
@@ -340,7 +338,7 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 
 - 检查 **事件** \> **查看器应用程序和服务日志** \> **操作管理器** ，以查看是否有错误。
 
-- 在 **"** 服务"中 **，Microsoft Monitoring Agent服务器** 是否在服务器上运行。 例如，
+- 在 **"** 服务"中，检查 **Microsoft Monitoring Agent** 服务器是否正在运行。 例如，
 
     ![服务的图像。](images/atp-services.png)
 
@@ -362,15 +360,15 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 - 在此方案中，SENSE 服务不会自动启动，即使已部署载入包
 
 > [!NOTE]
-> OOBE 后的用户登录不再需要 SENSE 服务启动以下或更新的 Windows 版本：Windows 10 版本 1809 或 Windows Server 2019，或 Windows Server 2022（包含[2021](https://support.microsoft.com/kb/5001384)年 4 月 22 日更新汇总）。 Windows 10 2021 年 4 月更新汇总[的版本 1909。](https://support.microsoft.com/kb/5001396) Windows 10 2021 年 4 月 28 日更新汇总发布[版本 2004/20H2。](https://support.microsoft.com/kb/5001391) 
+> OOBE 后的用户登录不再需要 SENSE 服务启动以下或最新的 Windows 版本：Windows 10 版本 1809 或 Windows Server 2019，或 Windows Server [2022（2021](https://support.microsoft.com/kb/5001384)年 4 月 22 日更新汇总）。 Windows 10 2021 年 4 月更新汇总[版本 1909。](https://support.microsoft.com/kb/5001396) Windows 10 2021 年 4 月 28 日更新汇总发布[版本 2004/20H2。](https://support.microsoft.com/kb/5001391) 
 
 
 > [!NOTE]
-> 以下步骤仅在使用 Microsoft Endpoint Configuration Manager。 有关使用应用载入的Microsoft Endpoint Configuration Manager，请参阅 Microsoft Defender [for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
+> 以下步骤仅在使用 Microsoft Endpoint Configuration Manager 时Microsoft Endpoint Configuration Manager。 有关使用应用载入的Microsoft Endpoint Configuration Manager，请参阅 Microsoft Defender [for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
 
 1. 在应用程序中创建Microsoft Endpoint Configuration Manager。
 
-    ![Microsoft Endpoint Configuration Manager 1 的图像。](images/mecm-1.png)
+    ![Microsoft Endpoint Configuration Manager配置 1 的图像。](images/mecm-1.png)
 
 2. 选择 **"手动指定应用程序信息"。**
 
@@ -382,15 +380,15 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 
 4. 指定有关软件中心的信息，然后选择"下一 **步"。**
 
-    ![Microsoft Endpoint Configuration Manager configuration4 的图像。](images/mecm-4.png)
+    ![Microsoft Endpoint Configuration Manager配置 4 的图像。](images/mecm-4.png)
 
 5. 在 **"部署类型"中，** 选择"**添加"。**
 
-    ![配置 5 Microsoft Endpoint Configuration Manager的图像。](images/mecm-5.png)
+    ![Microsoft Endpoint Configuration Manager配置5 的图像。](images/mecm-5.png)
 
 6. 选择 **"手动指定部署类型信息"，** 然后选择"下一 **步"。**
 
-    ![Microsoft Endpoint Configuration Manager configuration6 的图像。](images/mecm-6.png)
+    ![Microsoft Endpoint Configuration Manager配置 6 的图像。](images/mecm-6.png)
 
 7. 指定有关部署类型的信息，然后选择"下一 **步"。**
 
@@ -398,7 +396,7 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 
 8. 在 **内容** \> **安装程序中** ，指定命令 `net start sense` ：。
 
-    ![Microsoft Endpoint Configuration Manager配置8 的图像。](images/mecm-8.png)
+    ![Microsoft Endpoint Configuration Manager configuration8 的图像。](images/mecm-8.png)
 
 9. 在 **检测方法** 中，**选择"配置规则以检测此部署类型是否存在"，** 然后选择"**添加子句"。**
 
@@ -440,7 +438,7 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 
     ![Microsoft Endpoint Configuration Manager configuration18 的图像。](images/mecm-18.png)
 
-    然后将显示状态 ![ ：configuration19 Microsoft Endpoint Configuration Manager的图像。](images/mecm-19.png)
+    然后将显示状态 ![ ：configuration19 Microsoft Endpoint Configuration Manager图像。](images/mecm-19.png)
 
 19. 在 **"完成"** 中，选择"**关闭"。**
 
@@ -466,19 +464,19 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 
     ![Microsoft Endpoint Configuration Manager配置25 的图像。](images/mecm-25.png)
 
-25. 在 **用户体验中，** 选择"在截止时间或维护时段内提交更改 (需要重启) ，然后选择"**下一****步"。**
+25. 在 **用户体验中，** 选择"在截止时间或维护时段内提交更改 (需要重启) ，然后选择"下 **一****步"。**
 
-    ![Microsoft Endpoint Configuration Manager configuration26 的图像。](images/mecm-26.png)
+    ![Microsoft Endpoint Configuration Manager配置26 的图像。](images/mecm-26.png)
 
 26. 在 **警报中选择下** 一 **步**。
 
-    ![Microsoft Endpoint Configuration Manager configuration27 的图像。](images/mecm-27.png)
+    ![Microsoft Endpoint Configuration Manager配置27 的图像。](images/mecm-27.png)
 
 27. 在 **"摘要"中**，选择"下一 **步"。**
 
     ![Microsoft Endpoint Configuration Manager配置28 的图像。](images/mecm-28.png)
 
-    然后显示状态"配置 ![ Microsoft Endpoint Configuration Manager图像29。](images/mecm-29.png)
+    然后显示状态"配置 ![ Microsoft Endpoint Configuration Manager图像。](images/mecm-29.png)
 
 28. 在 **"完成"** 中，选择"**关闭"。**
 

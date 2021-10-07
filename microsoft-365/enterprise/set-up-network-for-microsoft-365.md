@@ -7,7 +7,7 @@ ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -20,22 +20,22 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 查找指向文章的链接，这些文章包含可帮助您为 Microsoft 365设置网络的信息，包括网络连接概述和终结点列表。
-ms.openlocfilehash: 52de26081b4e61346ab584e1600893349b47fd17
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0608fed03721a12d89fdac7d9bdd1574e34471b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196737"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213225"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>为用户设置Microsoft 365
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-载入的一Microsoft 365一部分是为了确保网络和 Internet 连接已设置为优化访问。 将本地网络配置为访问全局分布式软件即服务 (SaaS) 云不同于针对到内部部署数据中心的流量和中央 Internet 连接进行优化的传统网络。 
+载入的一Microsoft 365一部分是为了确保网络和 Internet 连接已设置为优化访问。 将本地网络配置为访问全局分布式软件即服务 (SaaS) 云与针对到内部部署数据中心的流量和中央 Internet 连接进行了优化的传统网络不同。 
 
 使用以下文章来理解它们之间的关键区别，并修改你的边缘设备、客户端计算机和内部网络，以为本地用户获得最佳性能。
 
-## <a name="how-microsoft-365-networking-works"></a>网络Microsoft 365工作原理
+## <a name="how-microsoft-365-networking-works"></a>网络Microsoft 365的工作原理
 
 请参阅以下文章，大致了解Microsoft 365：
 

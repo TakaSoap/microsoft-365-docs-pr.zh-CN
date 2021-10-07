@@ -6,21 +6,21 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1654998a69b364ebf399c2aabac185bc98fb9388
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e07b5fda65a457ab38cf5d2387bbec0aaa039248
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162327"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211377"
 ---
 # <a name="validate-new-devices"></a>验证新设备
 
-无论你是完全Microsoft 托管桌面还是长期订阅者，最好测试首次在服务中注册的任何设备模型的示例。 无论你是订购全新的设备还是重新使用现有设备（包括建议在购买商业Microsoft 托管桌面购买Windows 10 专业版[的设备](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)）都是如此。 在该网站中，查看建议用于服务的设备，方法为展开"按筛选"区域中的功能，然后选择 **"Microsoft 托管桌面"。** 验证设备可确保它们能够提供你期望的用户体验。
+无论你完全不是Microsoft 托管桌面订阅者还是长期订阅者，最好测试首次在服务中注册的任何设备型号的示例。 无论你是订购全新的设备还是重新使用现有设备（包括建议在购买商业Microsoft 托管桌面购买Windows 10 专业版[的设备](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)）都是如此。 在该网站中，通过展开"按筛选"区域中的功能，然后选择"选项"，查看建议 **用于服务Microsoft 托管桌面。** 验证设备可确保它们能够提供你期望的用户体验。
 
 ## <a name="validate-devices"></a>验证设备
 

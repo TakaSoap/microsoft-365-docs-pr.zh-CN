@@ -3,27 +3,25 @@ title: Linux 资源上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 介绍 Linux 上的 Microsoft Defender for Endpoint 的资源，包括如何卸载它、如何收集诊断日志、CLI 命令以及产品的已知问题。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8596cf95c7aa4479d1900ba99c98bc10025ee738
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 89178fc9c8ec44da0f9f51e2c4bfc6b1dfbab138
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170490"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211065"
 ---
 # <a name="resources"></a>资源
 
@@ -108,7 +106,7 @@ ms.locfileid: "59170490"
 
 ****
 
-|组|方案|命令|
+|组|应用场景|命令|
 |---|---|---|
 |配置|打开/关闭实时保护|`mdatp config real-time-protection --value [enabled\|disabled]`|
 |配置|打开/关闭行为监视|`mdatp config behavior-monitoring --value [enabled\|disabled]`
@@ -129,7 +127,7 @@ ms.locfileid: "59170490"
 |配置|打开 PUA 保护的审核模式|`mdatp threat policy set --type potentially_unwanted_application --action audit`|
 |诊断|更改日志级别|`mdatp log level set --level verbose [error|warning|info|verbose]`|
 |诊断|生成诊断日志|`mdatp diagnostic create --path [directory]`|
-|健康|检查产品的运行状况|`mdatp health`|
+|运行状况|检查产品的运行状况|`mdatp health`|
 |Protection|扫描路径|`mdatp scan custom --path [path] [--ignore-exclusions]`|
 |Protection|执行快速扫描|`mdatp scan quick`|
 |Protection|执行完全扫描|`mdatp scan full`|
@@ -145,7 +143,7 @@ ms.locfileid: "59170490"
 |终结点检测和响应|设置未使用的 (预览) |`mdatp edr early-preview [enable|disable]`|
 |终结点检测和响应|设置 group-id|`mdatp edr group-ids --group-id [group-id]`|
 |终结点检测和响应|Set/Remove 标记，仅 `GROUP` 受支持|`mdatp edr tag set --name GROUP --value [tag]`|
-|终结点检测和响应|根 (列表) |`mdatp edr exclusion list [processes|paths|extensions|all]`|
+|终结点检测和响应|根目录 (列表) |`mdatp edr exclusion list [processes|paths|extensions|all]`|
 |
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>适用于终结点的 Microsoft Defender 门户信息
@@ -171,7 +169,7 @@ ms.locfileid: "59170490"
 
 ### <a name="known-issues"></a>已知问题
 
-- 你可能会在门户的"计算机信息"页中看到"无传感器数据，通信受损"Microsoft 365 Defender，即使产品运行正常。 我们正在解决此问题。
+- 你可能会在门户的"计算机信息"页中看到"无传感器数据，通信受损"Microsoft 365 Defender，即使产品正在正常工作。 我们正在解决此问题。
 - 登录的用户不会显示在Microsoft 365 Defender门户中。
 - 在 SUSE 分发中，如果 *libatomic1* 安装失败，应验证操作系统是否注册：
 

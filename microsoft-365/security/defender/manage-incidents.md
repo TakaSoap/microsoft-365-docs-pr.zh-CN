@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a3d2254915203ea112d304e9fc45a6f1c4482d9b
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: 89a294766f4472c4a23d7149ff2ca843d4e7cc38
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099715"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212085"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>管理事件Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "60099715"
 
 事件管理对于确保包含和解决威胁至关重要。
 
-在 **&** 快速启动 Microsoft 365 Defender > (security.microsoft.com) ) 时，你可以管理事件 ([警报事件。](https://security.microsoft.com) 下面是一个示例。
+在快速启动 &  > Microsoft 365 Defender (security.microsoft.com) 时，管理来自事件>事件[的事件](https://security.microsoft.com)。 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。":::
 

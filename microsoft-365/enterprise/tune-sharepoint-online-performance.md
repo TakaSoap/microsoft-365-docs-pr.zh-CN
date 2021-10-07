@@ -7,7 +7,7 @@ ms.date: 10/2/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - SPO160
@@ -19,16 +19,16 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: 包含指向其他文章的链接，这些文章介绍了如何提高 SharePoint Online 的页面下载时间。
-ms.openlocfilehash: 9ce463898b81e1653932864276be2fa8d6ce830b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4dc8ac31361261320fa806b18a0721951f0b2244
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170577"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211593"
 ---
 # <a name="tune-sharepoint-online-performance"></a>优化 SharePoint Online 性能
 
-本文包含指向其他文章的链接，这些文章介绍了如何提高 SharePoint Online 的页面下载时间。 本文是 Network [planning and performance tuning for Office 365的一](./network-planning-and-performance.md)部分。
+本文包含指向其他文章的链接，这些文章介绍了如何提高 SharePoint Online 的页面下载时间性能。 本文是 Network [planning and performance tuning for Office 365的一](./network-planning-and-performance.md)部分。
 
 ## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>有关微调联机性能SharePoint的文章
 

@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fb023ab3d4ec4115411b1c8d12ef1c2ef1b1eece
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7d1c235c66472d5c09e8993783c92a134fc0d05b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201545"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211293"
 ---
 # <a name="delete-indicator-api"></a>删除指示器 API
 
@@ -52,8 +52,8 @@ ms.locfileid: "59201545"
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-应用程序 | Ti.ReadWrite | "读取和写入 TI 指示器"
-应用程序 | Ti.ReadWrite.All | "读取和写入指示器"
+Application | Ti.ReadWrite | "读取和写入 TI 指示器"
+Application | Ti.ReadWrite.All | "读取和写入指示器"
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -67,7 +67,7 @@ Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 
 名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

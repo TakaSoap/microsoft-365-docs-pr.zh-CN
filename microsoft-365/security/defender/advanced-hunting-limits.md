@@ -1,5 +1,5 @@
 ---
-title: 中高级搜寻配额和使用Microsoft 365 Defender
+title: 搜索中的高级搜寻配额和使用Microsoft 365 Defender
 description: 了解各种配额和使用参数 (服务) 使高级搜寻服务保持响应
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构， kusto， CPU 限制， 查询限制， 资源， 最大结果， 配额， 参数， 分配
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7563a8299bbe7d543b065bb25eeb3bc90a854b9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bd9ad3186b5bb8d65d0dd712fece2bee0ce4e020
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161939"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212241"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>高级搜寻配额和使用参数
 
@@ -35,7 +35,7 @@ ms.locfileid: "59161939"
 **适用于：**
 - Microsoft 365 Defender
 
-为保持服务性能高且响应迅速，高级搜寻设置各种配额和使用 (也称为"服务限制") 。 这些配额和参数分别应用于手动运行的查询和使用自定义检测规则 [运行的查询](custom-detection-rules.md)。 定期运行多个查询的客户应注意这些限制，并 [应用](advanced-hunting-best-practices.md) 优化最佳做法以最大限度地减少中断。
+为保持服务性能高且响应迅速，高级搜寻设置各种配额和使用参数 (也称为"服务限制") 。 这些配额和参数分别应用于手动运行的查询和使用自定义检测规则 [运行的查询](custom-detection-rules.md)。 定期运行多个查询的客户应注意这些限制，并 [应用](advanced-hunting-best-practices.md) 优化最佳做法以最大限度地减少中断。
 
 请参阅下表以了解现有配额和使用参数。
 

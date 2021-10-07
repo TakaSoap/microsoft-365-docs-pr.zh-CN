@@ -11,19 +11,19 @@ ms.sitesec: library
 ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 2415bace353e3ee5596117e37eb860c7a206c96b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 87e27933d051a0e1ed8b69c9e7e7dbe37a9d11e5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175470"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211269"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置自动调查和修正功能
 
@@ -35,7 +35,7 @@ ms.locfileid: "59175470"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
-如果你的组织使用[Microsoft Defender for Endpoint](/windows/security/threat-protection/) (Defender for Endpoint) ，自动调查和修正功能可以节省你的安全操作团队时间和精力。 [](/microsoft-365/security/defender-endpoint/automated-investigations) 如本 [博客文章所述](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)，这些功能模拟安全分析师调查和修正威胁的理想步骤。 [详细了解自动调查和修正](/microsoft-365/security/defender-endpoint/automated-investigations)。
+如果你的组织使用[Microsoft Defender for Endpoint (](/windows/security/threat-protection/) Defender for Endpoint [](/microsoft-365/security/defender-endpoint/automated-investigations)) ，自动调查和修正功能可以节省你的安全操作团队时间和精力。 如本 [博客文章所述](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)，这些功能模拟安全分析师调查和修正威胁的理想步骤。 [详细了解自动调查和修正](/microsoft-365/security/defender-endpoint/automated-investigations)。
 
 配置自动调查和修正：
 
@@ -57,7 +57,7 @@ ms.locfileid: "59175470"
    - 为设备组指定名称和说明。
    - 在 **"自动化级别"列表中**，选择一个级别，例如"完全 **- 自动修正威胁"。** 自动化级别确定是自动执行修正操作，还是仅在批准后执行修正操作。 若要了解更多信息，请参阅 [自动化调查和修正中的自动化级别](automation-levels.md)。
    - 在 **"成员** "部分，使用一个或多个条件来标识和包括设备。
-   - 在 **"用户访问"** 选项卡上 [，Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)应有权访问所创建设备组的用户组。
+   - 在 **"用户访问"**[选项卡上，Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)应有权访问所创建设备组的用户组。
 4. 完成 **设备** 组的设置后，选择"完成"。
 
 ## <a name="next-steps"></a>后续步骤

@@ -3,27 +3,25 @@ title: 解决 Linux 上的 Microsoft Defender for Endpoint 的云连接问题
 ms.reviewer: ''
 description: 解决 Linux 上的 Microsoft Defender for Endpoint 的云连接问题
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 云， 连接， 通信
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 02ed42cf2d95a2693949ee6dd9e7aeaae314e4bd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cbd0e45a44f3053e48b3714bb526e70d5d634502
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196040"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210984"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的云连接问题
 
@@ -64,7 +62,7 @@ Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 
 如果连接测试失败，请检查设备是否具有 Internet 访问权限，以及[](microsoft-defender-endpoint-linux.md#network-connections)代理或防火墙是否阻止了产品所需的任何终结点。
 
-错误 35 或 60 的失败表示证书固定被拒绝。 请检查连接是否位于 SSL 或 HTTPS 检查下。 如果是这样，将 Microsoft Defender for Endpoint 添加到允许列表。
+错误 35 或 60 的失败指示证书固定被拒绝。 请检查连接是否位于 SSL 或 HTTPS 检查下。 如果是这样，将 Microsoft Defender for Endpoint 添加到允许列表。
 
 ## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy"></a>无代理或具有透明代理的环境疑难解答步骤
 

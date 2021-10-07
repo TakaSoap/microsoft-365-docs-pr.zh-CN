@@ -1,5 +1,5 @@
 ---
-title: FileProfile () 高级搜寻功能Microsoft 365 Defender
+title: FileProfile () 高级搜寻中的函数Microsoft 365 Defender
 description: 了解如何使用 FileProfile () 丰富有关高级搜寻查询结果中的文件的信息
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， FileProfile， 文件配置文件， 函数， 扩充
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 67295529cdb7b8a3e93e663f2a8a28d27a8f6737
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 97db42060d694168edbd6ed7e86c67706bf62ddb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201038"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212253"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -37,24 +37,24 @@ ms.locfileid: "59201038"
 
 函数 `FileProfile()` 是高级搜寻中的扩充 [函数](advanced-hunting-overview.md) ，用于将以下数据添加到查询找到的文件。
 
-| 列 | 数据类型 | 说明 |
+| Column | 数据类型 | 说明 |
 |------------|---------------|-------------|
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
 | `SHA256` | string | 已应用录制操作的文件的 SHA-256 |
-| `MD5` | 字符串 | 已记录操作所应用到的文件的 MD5 哈希 |
+| `MD5` | string | 已记录操作所应用到的文件的 MD5 哈希 |
 | `FileSize` | int | 文件大小（以字节为单位） |
 | `GlobalPrevalence` | int | Microsoft 全局观察到的实体实例数 |
 | `GlobalFirstSeen` | datetime | Microsoft 全局首次观测到实体的日期和时间 |
 | `GlobalLastSeen` | datetime | Microsoft 全局上次观测到实体的日期和时间 |
-| `Signer` | 字符串 | 有关文件签名者的信息 |
-| `Issuer` | 字符串 | 有关 CA 证书颁发机构 (的信息)  |
-| `SignerHash` | 字符串 | 标识签名者的唯一哈希值 |
+| `Signer` | string | 有关文件签名者的信息 |
+| `Issuer` | string | 有关 CA 证书颁发机构 (的信息)  |
+| `SignerHash` | string | 标识签名者的唯一哈希值 |
 | `IsCertificateValid` | 布尔 | 用于对文件进行签名的证书是否有效 |
 | `IsRootSignerMicrosoft` | 布尔 | 指示根证书的签名者是否是 Microsoft |
-| `SignatureState` | 字符串 | 文件签名的状态：SignedValid - 使用有效签名对文件进行签名，SignedInvalid - 文件已签名，但证书无效，未签名 - 文件未签名，未知 - 无法检索有关文件的信息
-| `IsExecutable` | 布尔 | 文件是否是可移植可执行 (PE) 文件 |
-| `ThreatName` | 字符串 | 找到的任何恶意软件或其他威胁的检测名称 |
-| `Publisher` | 字符串 | 发布该文件的组织的名称 |
+| `SignatureState` | string | 文件签名的状态：SignedValid - 使用有效签名对文件进行签名，SignedInvalid - 文件已签名，但证书无效，未签名 - 文件未签名，未知 - 无法检索有关文件的信息
+| `IsExecutable` | 布尔 | 该文件是否是可移植可执行文件 (PE) 文件 |
+| `ThreatName` | string | 找到的任何恶意软件或其他威胁的检测名称 |
+| `Publisher` | string | 发布该文件的组织的名称 |
 | `SoftwareName` | string | 软件产品的名称 |
 
 ## <a name="syntax"></a>语法
@@ -70,7 +70,7 @@ invoke FileProfile(x,y)
 
 
 >[!TIP]
-> 扩充函数仅在可用时显示补充信息。 信息的可用性各不相同，具体取决于许多因素。 请确保在查询或创建自定义检测 () FileProfile 属性时考虑这一点。 为获得最佳结果，我们建议将 FileProfile () 函数与 SHA1 一同使用。
+> 扩充函数仅在可用时显示补充信息。 信息的可用性各不相同，具体取决于许多因素。 确保在查询或创建自定义检测 () FileProfile 属性时考虑这一点。 为了获得最佳结果，我们建议将 FileProfile () 函数与 SHA1 一同使用。
 
 ## <a name="examples"></a>示例
 

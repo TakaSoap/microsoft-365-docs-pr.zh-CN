@@ -1,6 +1,6 @@
 ---
 title: 停止和隔离文件 API
-description: 了解如何停止在设备上运行文件，并删除 Microsoft Defender for Endpoint 中的文件。 请参阅示例。
+description: 了解如何停止在设备上运行文件，并删除 Microsoft Defender for Endpoint 中的文件。 请参阅 示例。
 keywords: api， 图形 api， 受支持的 api， 停止和隔离文件
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d4ed33a26bcc7583146d810db7625ed3164d7544
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2c89aa8951cce3ba5c66528a66b3ff9e463d2b88
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170466"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210897"
 ---
 # <a name="stop-and-quarantine-file-api"></a>停止和隔离文件 API
 
@@ -59,9 +59,9 @@ ms.locfileid: "59170466"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Machine.StopAndQuarantine|"停止和隔离"
-应用程序|Machine.Read.All|"读取所有计算机配置文件"
-应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+Application|Machine.StopAndQuarantine|"停止和隔离"
+Application|Machine.Read.All|"读取所有计算机配置文件"
+Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.StopAndQuarantine|"停止和隔离"
 
 > [!NOTE]
@@ -80,7 +80,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|字符串|Bearer {token}。 **必需**。
 Content-Type|string|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -88,8 +88,8 @@ Content-Type|string|application/json. **必需**。
 
 参数|类型|说明
 :---|:---|:---
-评论|字符串|要与操作关联的注释。 **必需**。
-Sha1|String|在设备上停止和隔离的文件的 Sha1。 **必需**。
+评论|字符串|要与操作关联的注释。 必需。
+Sha1|字符串|在设备上停止和隔离的文件的 Sha1。 **必需**。
 
 ## <a name="response"></a>响应
 

@@ -1,5 +1,5 @@
 ---
-title: 如何处理更新Microsoft 托管桌面
+title: 如何在更新中处理Microsoft 托管桌面
 description: 保持Microsoft 托管桌面是速度和稳定性的平衡。
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
@@ -9,16 +9,16 @@ f1.keywords:
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f817831cda584dc1aa6c968d7332939c68f48e8b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 992ad102e07dbbca5aa0e1e4243ebade268906b1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170537"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211365"
 ---
-# <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何处理更新Microsoft 托管桌面
+# <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何在更新中处理Microsoft 托管桌面
 
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/update-rings); do not delete.-->
@@ -28,7 +28,7 @@ ms.locfileid: "59170537"
 Microsoft 托管桌面设备连接到基于云的现代基础结构。 保持Windows、Office、驱动程序、固件适用于企业的 Microsoft Store应用程序是速度和稳定性的平衡。 我们使用更新组来确保以安全方式推出操作系统更新和策略。 有关详细信息，请参阅更改和Microsoft 托管桌面[过程的视频](https://www.microsoft.com/videoplayer/embed/RE4mWqP)。 
 
 Microsoft 发布的更新是累积更新，并归类为质量更新或功能更新。
-有关详细信息，请参阅 Windows [Update for Business： Update types](/windows/deployment/update/waas-manage-updates-wufb#update-types)。 
+有关详细信息，请参阅适用于Windows[更新：更新类型](/windows/deployment/update/waas-manage-updates-wufb#update-types)。 
 
 ## <a name="update-groups"></a>更新组
 
@@ -55,7 +55,7 @@ Microsoft 托管桌面四个 Azure AD 组来管理更新：
     - 可以通过在管理门户中提交票证来Microsoft 托管桌面兼容性问题。
     - 功能和质量更新独立暂停。 默认情况下，暂停生效 35 天，但可以减小或延长，具体取决于问题是否得到缓解。
 3. 取消对组暂停后，将按照表中的计划恢复部署。
-4. 用户可以响应设置时段的重启通知 (称为截止时间，从向设备) 提供更新的时间开始计算，在此期间设备将在使用时段外自动重启。 此期限到期后，将到达截止时间，设备将在下一次可用机会时重启，而不考虑使用时段。 质量更新的截止时间为三天;对于功能更新，需要 5 天。
+4. 用户可以响应设置时段的重启通知 (称为截止时间，从向设备) 提供更新的时间开始计算，在此期间设备仅在使用时段外自动重启。 此期限到期后，将到达截止时间，设备将在下一次可用机会时重启，而不考虑使用时段。 质量更新的截止时间为三天;对于功能更新，需要 5 天。
 
 虽然每个更新的时间线各不相同，但此部署过程适用于功能和质量更新。
 
@@ -75,7 +75,7 @@ Microsoft 托管桌面四个 Azure AD 组来管理更新：
 >[!NOTE]
 >这些延迟期是特意设计的，以确保所有用户都符合高安全性和性能标准。 此外，根据在所有 Microsoft 托管桌面 设备上收集的数据以及更新的不同范围和影响，Microsoft 托管桌面 保留临时修改任何和所有部署组的上述延迟期长度的灵活性。
 >
->Microsoft 托管桌面针对每个托管租户Windows独立评估功能版本，以评估其的必要性和实用性。 因此，Microsoft 托管桌面部署所有功能更新，Windows部署。 
+>Microsoft 托管桌面针对每个功能版本Windows独立评估，以评估其管理租户的必要性和实用性。 因此，Microsoft 托管桌面部署所有功能更新Windows部署。 
 
 ## <a name="windows-insider-program"></a>Windows 预览体验计划
 

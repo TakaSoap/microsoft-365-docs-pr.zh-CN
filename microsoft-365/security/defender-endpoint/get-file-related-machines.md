@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 722c4a28ab477b34fc3e52cb3eb3efddf319d0d8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3f8a30dc09ab3bfd18b5d65335788a18984e1574
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201474"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213669"
 ---
 # <a name="get-file-related-machines-api"></a>获取与文件相关的计算机 API
 
@@ -44,7 +44,7 @@ ms.locfileid: "59201474"
 ## <a name="limitations"></a>限制
 
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
-2. 只有 SHA-1 哈希函数 (MD5 或 SHA-256) 。
+2. 只有 SHA-1 哈希函数 (MD5 或 SHA-256 哈希) 。
 
 ## <a name="permissions"></a>权限
 
@@ -52,8 +52,8 @@ ms.locfileid: "59201474"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Machine.Read.All|"读取所有计算机配置文件"
-应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+Application|Machine.Read.All|"读取所有计算机配置文件"
+Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.Read|"读取计算机信息"
 委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 
@@ -61,7 +61,7 @@ ms.locfileid: "59201474"
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

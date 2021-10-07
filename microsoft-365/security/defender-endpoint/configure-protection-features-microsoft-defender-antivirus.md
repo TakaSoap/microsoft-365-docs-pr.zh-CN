@@ -1,14 +1,14 @@
 ---
 title: 启用和配置Microsoft Defender 防病毒保护功能
 description: 在 Microsoft Defender AV 中启用基于行为的启发式实时保护。
-keywords: 启发式， 机器学习， 行为监视器， 实时保护， 始终打开， Microsoft Defender 防病毒， 反恶意软件， 安全性， defender
+keywords: 启发式， 机器学习， 行为监视器， 实时保护， 始终打开， Microsoft Defender 防病毒， 反恶意软件， 安全， defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0ec8e42d0e5b9e8ddf402d09791f84c7c76d06ab
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: beb7b022bd8e0dbd9296e18cbc4befa19690e492
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489501"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212553"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>配置方案、高要求和实时保护
 
@@ -33,7 +33,7 @@ ms.locfileid: "59489501"
 Microsoft Defender 防病毒使用多种方法来提供威胁防护：
 
 - 用于快速检测和阻止新威胁和新兴威胁的云保护
-- 始终打开扫描，使用文件和进程行为监视以及其他启发 (也称为"实时保护") 
+- 始终扫描，使用文件和进程行为监视以及其他启发 (也称为"实时保护") 
 - 基于机器学习、人工和自动化大数据分析，以及深入的威胁抵御研究的专用保护更新
 
 你可以配置如何Microsoft Defender 防病毒组策略、System Center配置管理、PowerShell cmdlet 和 WMI Windows Management Instrumentation (这些方法) 。

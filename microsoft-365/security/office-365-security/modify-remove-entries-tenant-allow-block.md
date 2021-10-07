@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何修改和删除安全门户中租户允许/阻止列表中的条目。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2d5ce65836accd94dec497e5be0087a94742ca0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f2662ac41e5df5cf2eb36413d8a58568ff336841
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171529"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212001"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>修改和删除租户允许/阻止列表中的条目
 
@@ -38,7 +38,7 @@ ms.locfileid: "59171529"
 
 ### <a name="modify-entries-in-the-tenant-allowblock-list"></a>修改租户允许/阻止列表中的条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. 选择包含要修改的条目类型的选项卡：
    - **发件人) 
@@ -58,14 +58,14 @@ ms.locfileid: "59171529"
      - **可选注释**
    - **网络钓鱼**
      - **操作**：可以将值更改为"允许 **"或**"阻止 **"。**
-4. 完成后，单击“保存”。
+4. 完成时，请单击“保存”。
 
 > [!NOTE]
 > 创建日期后最多只能延长 30 天。 阻止可延长最多 90 天，但与允许不同，也可以设置为永不过期。
 
 ### <a name="remove-entries-from-the-tenant-allowblock-list"></a>从租户允许/阻止列表中删除条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. 选择包含要删除的条目类型的选项卡：
    - **发件人**
