@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 44aea2241c1ff1fdcaf5d5839970c1c90fa42e17
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cbd284670e426934c76cffd6668e80962e736aa5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195642"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180125"
 ---
 # <a name="contact-support-for-guatemala"></a>联系危地马拉支持人员
 
@@ -30,7 +30,7 @@ ms.locfileid: "59195642"
 
 输入代码 5002
 
-## <a name="hours"></a>小时
+## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
 西班牙语：Mon-Fri上午 9 点到下午 5 点

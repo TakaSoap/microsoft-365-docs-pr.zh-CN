@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 合规性扩展可扩展对 Google Chrome 浏览器文件活动和保护操作的监视和控制
-ms.openlocfilehash: cf7a3cd2e26f2e7d7a116e4a609f98aeea78be19
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ff0df602e68338315becabd0c5b65f981fe4dd43
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175594"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179183"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>了解 Microsoft 合规性扩展
 

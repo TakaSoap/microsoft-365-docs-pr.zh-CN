@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何查找适用于管理员的管理员Microsoft 365 商业高级版。
-ms.openlocfilehash: 18a50c34f87fa47fe5777e87f8dafa62fb0ac04b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1c42b59b66d95fbcc978664bbabc3d16d69f3544
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200722"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192435"
 ---
 # <a name="find-docs-and-training"></a>查找文档和培训
 
@@ -42,6 +42,6 @@ ms.locfileid: "59200722"
 
 ## <a name="join-the-community"></a>加入社区
 
-通过加入 Microsoft Small [Business](https://smallbusiness.microsoft.com/)Microsoft 365开始对话、关注讨论，并与其他小型企业用户Community。
+通过加入 Microsoft Small Business Microsoft 365开始对话、关注讨论并与其他小型企业用户[Community。](https://smallbusiness.microsoft.com/)
 
-如果你有关于其他产品和服务的具体问题，请发布问题，并按照 Microsoft Community 进行[相关讨论](https://answers.microsoft.com)。
+如果你有关于其他产品和服务的特定问题，请发布问题，并按照 Microsoft Community 进行[相关讨论](https://answers.microsoft.com)。

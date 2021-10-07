@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 了解用户对应用的同意，以及如何启用它们以允许第三方应用访问用户Microsoft 365信息。
-ms.openlocfilehash: 629e64494c6d72a13c3b155370a8f47505e9fa20
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d9a07eb333b0abdb3cb6a890ac2de3d19ad3685b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170355"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192639"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>管理用户对应用程序中应用Microsoft 365
 
@@ -41,11 +41,11 @@ ms.locfileid: "59170355"
 
 下面将了解如何打开或关闭用户对应用的同意。
 
-1. In the admin center， go to the **设置** \> **Org settings**  >  [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) page， and then select **User consent to apps**.
+1. 在管理中心中，转到"设置组织设置服务"页， \>   >  [](https://go.microsoft.com/fwlink/p/?linkid=2053743)然后选择"**用户同意应用"。**
 
 2. 在" **用户同意应用"页上** ，选择打开或关闭用户同意的选项。
 
 ## <a name="related-content"></a>相关内容 
 
-[配置管理员同意工作流 (](/azure/active-directory/manage-apps/configure-admin-consent-workflow) 文章) \
-[管理对应用程序的同意并评估](/azure/active-directory/manage-apps/manage-consent-requests) 同意请求 (文章) 
+[配置管理员同意工作流](/azure/active-directory/manage-apps/configure-admin-consent-workflow) (文章) \
+[管理对应用程序的同意并评估](/azure/active-directory/manage-apps/manage-consent-requests) 同意请求 (本文) 

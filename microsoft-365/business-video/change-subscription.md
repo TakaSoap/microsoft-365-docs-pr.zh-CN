@@ -9,7 +9,7 @@ ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 description: 了解如何在需要新功能时将用户移动到其他订阅。
 ms.date: 09/16/2021
-ms.openlocfilehash: 436df4d563dea3717e463dab71c3a8b7e465dd70
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: a04532747b2685826bf7a7a07c6930a40c57ccde
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477547"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179735"
 ---
 # <a name="move-users-to-different-subscriptions"></a>将用户移动到不同的订阅
 
@@ -41,7 +41,7 @@ ms.locfileid: "59477547"
 当用户更改角色时，他们可能需要其当前订阅中Microsoft 365 商业高级版的功能。 发生这种情况时，你可以添加包含这些功能的新订阅，并将许可证分配给需要它们的用户。
 
 > [!NOTE]
-> 对于一些订阅，只能在购买或续订订阅后的有限时段取消。 如果取消时段已过，请关闭定期计费以在订阅期限结束时取消订阅。
+> 对于某些订阅，只能在购买或续订订阅后的有限时间段内取消。 如果取消时段已过，请在订阅期限结束时关闭定期计费以取消订阅。
 
 ## <a name="try-it"></a>试一试！
 

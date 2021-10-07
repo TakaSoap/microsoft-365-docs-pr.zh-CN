@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0a875e6dcbe41237d86cd1e0003e8d9f6549e18f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bbc035a4076cb1f6171a057d18297c5347f83e9e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201505"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192840"
 ---
 # <a name="get-device-secure-score"></a>获取设备安全分数
 
@@ -47,7 +47,7 @@ ms.locfileid: "59201505"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Score.Read.All|"读取威胁和漏洞管理分数"
+Application|Score.Read.All|"读取威胁和漏洞管理分数"
 委派（工作或学校帐户）|Score.Read|"读取威胁和漏洞管理分数"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -60,7 +60,7 @@ GET /api/configurationScore
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|字符串|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

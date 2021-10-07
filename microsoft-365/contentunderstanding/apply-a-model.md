@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解如何将已发布的模型应用到 Microsoft SharePoint 中的文档SharePoint Syntex。
-ms.openlocfilehash: 2cc4719720693f6aa386abfc191e2b26b75f813f
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 23a885194a1bfa6c0f468188944dd00d309f3a09
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498086"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194401"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中应用文档理解模型
 
@@ -59,7 +59,7 @@ ms.locfileid: "59498086"
 
 5. 选择 **“添加”** 将模型应用到库中。
 
-6. 在模型主页上的"**应用** 模型位置"部分，应看到列出的SharePoint的名称。
+6. 在模型主页上的"**应用** 模型的地方"部分，应看到列出的SharePoint的名称。
 
 7. 转到你的文档库，并确保你处于模型的文档库视图中。 选择 **"自动化**  >  **查看文档了解模型"。**
 
@@ -79,7 +79,7 @@ ms.locfileid: "59498086"
 
 1. 在文档库中，选择要由模型处理的文件和文件夹。
 
-2. 选择文件和文件夹后 **，"** 分类和提取"将显示在文档库功能区中。 选择 **“分类和提取”**。
+2. 选择文件和文件夹后 **，"分类和提取** "将显示在文档库功能区中。 选择 **“分类和提取”**。
 
       ![显示"分类和提取"选项的屏幕截图。](../media/content-understanding/extract-classify.png) 
 
@@ -94,7 +94,7 @@ ms.locfileid: "59498086"
 
    ![显示"分类日期"列的文档库的屏幕截图。](../media/content-understanding/class-date-column.png) 
 
-"分类 **日期**"字段由"当 [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)文件由内容理解模型分类时"触发器使用，在 Syntex 内容理解模型完成对文件或文件夹的处理并更新了"分类日期"字段后，运行Power Automate 流。
+"分类 **日期**"字段由"当 [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)文件由内容理解模型分类时"触发器使用，在 Syntex 内容理解模型完成对文件或文件夹的处理并更新"分类日期"字段后，运行 Power Automate流。
 
    ![Flow触发器。](../media/content-understanding/trigger.png)
 

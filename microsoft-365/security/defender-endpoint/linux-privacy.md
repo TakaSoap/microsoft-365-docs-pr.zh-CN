@@ -2,26 +2,24 @@
 title: Linux 上的 Microsoft Defender for Endpoint 的隐私
 description: 隐私控制，如何配置影响隐私的策略设置，以及 Linux 上的 Microsoft Defender for Endpoint 中收集的诊断数据信息。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 隐私， 诊断
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3d6ce59ec83e8271ff0c665386bd33942084d9ad
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1c15e5ba5b48380e20ddfd6c291df5c5afafa251
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197279"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191751"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的隐私
 
@@ -67,7 +65,7 @@ Microsoft 致力于提供你在 Linux 上使用 Defender for Endpoint 时，选�
 有三个级别用于控制示例提交：
 
 - **无**：不会向 Microsoft 提交任何可疑样本。
-- **保险箱：** 仅自动提交不包含个人身份信息 (个人身份) 的可疑样本。 这是此设置的默认值。
+- **保险箱：** 只有不包含个人身份信息或个人身份信息的可疑 (将自动) 提交。 这是此设置的默认值。
 - **全部**：所有可疑示例都提交到 Microsoft。
 
 ## <a name="manage-privacy-controls-with-policy-settings"></a>通过策略设置管理隐私控件
@@ -76,7 +74,7 @@ Microsoft 致力于提供你在 Linux 上使用 Defender for Endpoint 时，选�
 
 The privacy controls for the various types of data described in the preceding section are described in [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
 
-与任何新的策略设置一样，应在受限的受控环境中仔细测试它们，以确保在组织中更广泛地实现策略设置之前，所配置的设置具有所需的效果。
+与任何新策略设置一样，应在受限的受控环境中仔细测试它们，以确保在组织中更广泛地实现策略设置之前，所配置的设置具有所需的效果。
 
 ## <a name="diagnostic-data-events"></a>诊断数据事件
 
@@ -88,7 +86,7 @@ The privacy controls for the various types of data described in the preceding se
 
 以下字段被视为通用于所有事件：
 
-|字段|描述|
+|字段|说明|
 |---|---|
 |平台|应用运行平台的广泛分类。 允许 Microsoft 确定在哪些平台上可能会发生问题，以便可以正确地确定问题的优先级。|
 |machine_guid|与设备关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定安装以及有多少用户受到影响。|
@@ -113,7 +111,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|描述|
+|字段|说明|
 |---|---|
 |correlation_id|与安装关联的唯一标识符。|
 |version|程序包的版本。|
@@ -125,7 +123,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|描述|
+|字段|说明|
 |---|---|
 |antivirus_engine.enable_real_time_protection|是否在设备上启用实时保护。|
 |antivirus_engine.passive_mode|是否在设备上启用被动模式。|
@@ -147,7 +145,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|描述|
+|字段|说明|
 |---|---|
 |from_version|原始安全智能版本。|
 |to_version|新的安全智能版本。|
@@ -162,7 +160,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|描述|
+|字段|说明|
 |---|---|
 |version|Linux 上适用于终结点的 Defender 版本。|
 |instance_id|内核扩展启动时生成的唯一标识符。|
@@ -188,7 +186,7 @@ The privacy controls for the various types of data described in the preceding se
 
 如果你选择向我们发送可选诊断数据，则还需要包括必需的诊断数据。
 
-可选诊断数据的示例包括 Microsoft 收集有关产品配置 (例如设备) 上设置的排除数的数据 (以及有关产品) 组件性能的聚合度量。
+可选诊断数据的示例包括 Microsoft 收集有关产品配置 (例如，在设备) 上设置的排除数以及产品性能 (聚合了有关产品配置组件性能) 。
 
 #### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>可选诊断数据的软件安装和清单数据事件
 
@@ -196,7 +194,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|描述|
+|字段|说明|
 |---|---|
 |connection_retry_timeout|与云通信时的连接重试时间。|
 |file_hash_cache_maximum|产品缓存的大小。|
@@ -218,7 +216,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|描述|
+|字段|说明|
 |---|---|
 |how_to_check|确定如何检查产品更新 (例如自动或手动) 。|
 |channel_name|更新与设备关联的通道。|
@@ -231,18 +229,18 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|描述|
+|字段|说明|
 |---|---|
 |sha256|支持日志的 SHA256 标识符。|
-|size|支持日志的大小。|
-|original_path|始终在 */var/opt/microsoft/mdatp/wdavdiag/ (下* 的支持日志) 。|
+|大小|支持日志的大小。|
+|original_path|始终 (在 */var/opt/microsoft/mdatp/wdavdiag/)* 下的支持日志路径。|
 |format|支持日志的格式。|
 
 #### <a name="diagnostic-log-upload-completed-report"></a>诊断日志上载已完成报告
 
 将会收集以下字段：
 
-|字段|描述|
+|字段|说明|
 |---|---|
 |request_id|支持日志上载请求的相关 ID。|
 |sha256|支持日志的 SHA256 标识符。|
@@ -250,7 +248,7 @@ The privacy controls for the various types of data described in the preceding se
 
 #### <a name="product-and-service-performance-data-events-for-product-service-and-usage"></a>产品服务和使用情况的产品和服务性能数据事件
 
-**意外的应用程序退出 (崩溃) ：**
+**应用程序意外退出 (崩溃) ：**
 
 应用程序意外退出以及发生这种情况时的应用程序状态。
 
@@ -258,7 +256,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|描述|
+|字段|说明|
 |---|---|
 |pkt_ack_timeout|以下属性是聚合的数值，表示自内核扩展启动后发生的事件数。|
 |pkt_ack_conn_timeout||

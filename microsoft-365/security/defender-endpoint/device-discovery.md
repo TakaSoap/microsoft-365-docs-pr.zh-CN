@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4c1d24119ee8f403b168d6b2f2d97b9842f89d9b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 90e2c3ddf2ba44af00c95ef1112e7406f665a7b5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222259"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192879"
 ---
 # <a name="device-discovery-overview"></a>设备发现概述
 
@@ -111,7 +111,7 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 设备发现将适用于终结点载入设备的 Microsoft Defender 用作网络数据源，将活动属性化为未载入的设备。 这意味着，如果 Microsoft Defender for Endpoint 已载入设备与非载入设备通信，则未载入的设备上的活动可以在时间线上和通过高级搜寻 DeviceNetworkEvents 表看到。
 
-新事件是传输控制协议 (TCP) 基于连接，并适合当前的 DeviceNetworkEvents 方案。 从启用了非 Microsoft Defender for Endpoint 的设备进入启用终结点的 Microsoft Defender 设备的 TCP。 
+新事件是传输控制协议 (TCP) 基于连接，并且适合当前的 DeviceNetworkEvents 方案。 从启用了非 Microsoft Defender for Endpoint 的设备进入启用终结点的 Microsoft Defender 设备的 TCP。 
 
 还添加了以下操作类型：
 
@@ -133,7 +133,7 @@ DeviceNetworkEvents
 1. 未载入到 Microsoft Defender 到终结点的设备应显示在设备清单、高级搜寻和 API 查询中。 这可能会显著增加查询结果的大小。
     1. 高级搜寻中的"DeviceInfo"和"DeviceNetworkInfo"表现在将保留发现的设备。 可以使用"OnboardingStatus"属性筛选出这些设备。
     2. 已发现的设备应显示在流式 API 查询结果中。 可以使用查询中的筛选器筛选出 `OnboardingStatus` 这些设备。
-2. 非托管设备将基于定义的条件分配给现有设备组。
+2. 非托管设备将基于定义的条件分配到现有设备组。
 3. 在极少数情况下，标准发现可能会触发网络监视器或安全工具上的警报。 如果遇到此类事件，请提供反馈以帮助防止这些问题定期发生。 你可以明确排除特定目标或整个子网，不由标准发现主动探测。
 
 ## <a name="next-steps"></a>后续步骤

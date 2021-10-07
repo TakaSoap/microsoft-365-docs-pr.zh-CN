@@ -8,23 +8,23 @@ ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 在自动调查期间Microsoft 365，可以查看结果和关键发现。
+description: 在自动调查期间Microsoft 365，您可以查看结果和关键发现。
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef91a3b218c2dda671bf7d07bf2615001bd20ebc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 80c58c0e4c084199537dcfbb9097541a0cba71a0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175321"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191415"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>自动调查的详细信息和Microsoft 365
 
@@ -49,14 +49,14 @@ ms.locfileid: "59175321"
 |---|---|
 |**即将开始**|已触发调查并等待开始运行。|
 |**正在运行**|调查过程已开始，正在进行中。 当挂起的操作得到批准时 [，也会发生](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) 此状态。|
-|**未找到威胁**|调查已完成，未 (用户帐户、电子邮件、URL 或文件) 威胁。 <p> **提示**：如果怀疑某些内容 (漏报，例如漏报) ，可以使用威胁 [资源管理器采取措施](threat-explorer.md)。|
-|**发现威胁**|自动调查发现了问题，但没有具体的修正操作来解决这些问题。 <p> 当 **标识了** 某种类型的用户活动但没有可用的清理操作时，可能会发生"已发现威胁"状态。 示例包括以下任一用户活动： <ul><li>[数据丢失防护](../../compliance/dlp-learn-about-dlp.md)事件</li><li>电子邮件发送异常</li><li>已发送恶意软件</li><li>已发送钓鱼邮件</li></ul> <p> 该调查未发现要修正的恶意 URL、文件或电子邮件，也没有要修复的邮箱活动，例如关闭转发规则或委派。 <p> **提示**：如果怀疑某些内容 (漏报（如漏报) ，可以使用威胁资源管理器进行调查 [并采取措施](threat-explorer.md)|
+|**未找到威胁**|调查已完成，未 (用户帐户、电子邮件、URL 或文件) 威胁。 <p> **提示**：如果怀疑某些内容 (漏报（如漏报) ，可以使用威胁 [资源管理器采取措施](threat-explorer.md)。|
+|**发现威胁**|自动调查发现了问题，但没有具体的修正操作来解决这些问题。 <p> 当 **标识了** 某种类型的用户活动但没有可用的清理操作时，可能会发生"已发现威胁"状态。 示例包括以下任一用户活动： <ul><li>[数据丢失防护](../../compliance/dlp-learn-about-dlp.md)事件</li><li>电子邮件发送异常</li><li>已发送恶意软件</li><li>已发送钓鱼邮件</li></ul> <p> 该调查未发现要修正的恶意 URL、文件或电子邮件，也没有要修复的邮箱活动，例如关闭转发规则或委派。 <p> **提示**：如果怀疑某些内容 (漏报（如漏报) ，可以使用威胁资源管理器进行调查并 [采取措施](threat-explorer.md)|
 |**已由系统终止**|调查已停止。 调查可能会因多种原因停止： <ul><li>调查的挂起操作已过期。 等待审批一周后挂起的操作将退出</li><li>操作过多。 例如，如果单击恶意 URL 的用户过多，可能会超出调查运行所有分析器的能力，因此调查将停止</li></ul> <p> **提示**：如果调查在操作之前停止，请尝试使用威胁资源管理器查找 [](threat-explorer.md)并解决威胁。|
 |**挂起的操作**|调查已找到一个威胁（如恶意电子邮件、恶意 URL 或有风险的邮箱设置）以及一项修正该威胁的操作正在等待 [审批](air-review-approve-pending-completed-actions.md)。 <p> 当 **找到具有** 相应操作的任何威胁时，将触发挂起的操作状态。 但是，随着调查的运行，挂起操作的列表可能会增加。 查看调查详细信息，查看其他项目是否仍等待完成。|
-|**已修正**|调查已完成，并且所有修正操作均 (为完全修正) 。 <p> **注意**：已批准的修正操作可能会出现错误，阻止采取这些操作。 无论修正操作是否成功完成，调查状态不会更改。 查看调查详细信息。|
+|**已修正**|调查已完成，并且所有修正操作均 (为完全修正) 。 <p> **注意**：已批准的修正操作可能会出现错误，阻止采取这些操作。 无论修正操作是否成功完成，调查状态都不会改变。 查看调查详细信息。|
 |**部分修正**|调查的结果是修正操作，其中一些已获得批准并已完成。 其他操作仍处于挂起 [状态](air-review-approve-pending-completed-actions.md)。|
 |**失败**|至少有一个调查分析器遇到了无法正确完成的问题。 <p> **注意** 如果在修正操作获得批准后调查失败，则修正操作可能仍成功。 查看调查详细信息。|
-|**按限制排队**|正在队列中进行调查。 其他调查完成后，将开始排队调查。 限制有助于避免服务性能不佳。  <p> **提示**：挂起的操作可以限制可以运行的新调查数量。 确保批准 [ (或拒绝) 挂起的操作](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)。|
+|**按限制排队**|正在队列中进行调查。 其他调查完成后，将开始排队调查。 限制有助于避免服务性能不佳。  <p> **提示**：挂起的操作可以限制可以运行的新调查数量。 确保批准 [或拒绝 (挂起) 操作](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)。|
 |**已终止限制**|如果队列中的调查时间太长，将停止。 <p> **提示**：你可以 [从威胁资源管理器开始调查](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。|
 |
 

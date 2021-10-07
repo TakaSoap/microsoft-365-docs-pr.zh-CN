@@ -9,7 +9,7 @@ ms.reviewer: shegu, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,19 +20,19 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 ms.date: 08/27/2021
-ms.openlocfilehash: b3d5e5cd3aa6c2531d515d665d10ad01298d0a23
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.openlocfilehash: 674874a6e27afa6e08ca4ee77de4ecac51796de8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747451"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179627"
 ---
 # <a name="manage-licenses-for-devices"></a>管理设备的许可证
 
-如果你拥有Microsoft 365 企业应用版 (设备) 或 Microsoft 365 应用版 for Education () ，可以使用 Azure AD 组向设备分配许可证。 当设备具有许可证时，使用该设备的任何人都可以使用Microsoft 365 企业应用版 (之前Office 365 专业增强版) 。 例如，假设你拥有 20 台笔记本电脑和平板电脑，供组织人员使用。 向每台设备分配许可证时，登录到其中一台设备的每个人将使用Microsoft 365 企业应用版而无需自己的许可证。
+如果你拥有Microsoft 365 企业应用版 (设备) 或 Microsoft 365 应用版 for Education () ，可以使用 Azure AD 组向设备分配许可证。 当设备具有许可证时，使用该设备的任何人都可以使用Microsoft 365 企业应用版 (以前Office 365 专业增强版) 。 例如，假设你拥有 20 台笔记本电脑和平板电脑，供组织人员使用。 向每台设备分配许可证时，登录到其中一台设备的每个人将使用Microsoft 365 企业应用版而无需自己的许可证。
 
 > [!IMPORTANT]
-> 某些商业客户Microsoft 365 企业应用版教育版客户的基于设备的许可仅作为附加许可证提供。 对于商业客户，许可证Microsoft 365 企业应用版 (*设备*) ，并且仅通过 企业协议/企业协议 订阅提供。 对于教育行业客户，许可证Microsoft 365 应用版 *教育 (设备*) ，并且仅通过注册教育版解决方案 (EES) 。 有关详细信息，请阅读有关教育可用性 [的博客文章](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education)。 要获得商业可用性，请联系你的 Microsoft 帐户代表。
+> 某些商业客户Microsoft 365 企业应用版教育版客户的基于设备的许可仅作为附加许可证提供。 对于商业客户，许可证Microsoft 365 企业应用版 (*设备*) ，并且仅通过 企业协议/企业协议 订阅提供。 对于教育版客户，许可证Microsoft 365 应用版 *教育版 (设备*) 并且仅通过注册教育版解决方案 (EES) 。 有关详细信息，请阅读有关教育可用性 [的博客文章](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education)。 要获得商业可用性，请联系你的 Microsoft 帐户代表。
 
 首先，在管理中心Azure Active Directory组，然后将设备分配给该组。 若要了解有关设备许可（包括设备要求、可以使用的组类型以及如何配置 Microsoft 365 企业应用版 以使用设备许可）的信息，请参阅基于设备的许可[Microsoft 365 企业应用版。](/deployoffice/device-based-licensing)
 

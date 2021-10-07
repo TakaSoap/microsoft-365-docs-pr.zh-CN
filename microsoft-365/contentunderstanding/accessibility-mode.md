@@ -7,20 +7,20 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: Normal
-description: 了解如何在培训 SharePoint Syntex 中的模型时使用辅助功能SharePoint Syntex。
-ms.openlocfilehash: 73a867c3157d3debc584995708a337c36b6b0028
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+description: 了解如何在 SharePoint Syntex 中培训模型时使用辅助功能SharePoint Syntex。
+ms.openlocfilehash: 6a27615e0b676fdcefb617d76a206d9f47c6f882
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175518"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178991"
 ---
 # <a name="sharepoint-syntex-accessibility-mode"></a>SharePoint 整合辅助功能模式
 
-在[SharePoint Syntex](index.md)中，用户可以在使用示例文档时，在模型 (、标签、培训、测试) 所有阶段启用辅助功能模式。 使用辅助功能模式可帮助低视力用户在文档查看器中导航和标记项目时更轻松地使用键盘辅助功能。
+在[SharePoint Syntex](index.md)中，用户可以在使用示例文档时在模型 (、标签、培训和测试) 启用辅助功能模式。 使用辅助功能模式可帮助低视力用户在文档查看器中导航和标记项目时更轻松地使用键盘辅助功能。
 
-这可帮助用户使用键盘在文档查看器中浏览文本，并不仅听到所选值的旁白，还有助于听到操作 (例如标记或删除选定文本) 中的标签，或者使用其他示例文档训练模型时预测的标签值。 
+这可帮助用户使用键盘在文档查看器中浏览文本，并不仅听到所选值的旁白，还帮助用户听到操作 (例如标记或删除所选文本) 中的标签，或者使用其他示例文档训练模型时预测的标签值。 
 
 
 ![辅助功能模式。](../media/content-understanding/accessibility-mode.png)

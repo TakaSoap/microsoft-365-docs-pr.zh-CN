@@ -2,8 +2,6 @@
 title: 使用组策略对象管理 Microsoft Defender for Endpoint
 description: 了解如何使用组策略对象管理 Microsoft Defender for Endpoint
 keywords: 迁移后， 管理， 操作， 维护， 利用率， PowerShell， Microsoft Defender for Endpoint， edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/23/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 37dbc72c7a88a2108eb40c29280e346859927baf
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 94eb6e7bf031a9c59fa66eb24b64298ea9a0465c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773759"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191727"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>使用组策略对象管理 Microsoft Defender for Endpoint
 
@@ -38,7 +36,7 @@ ms.locfileid: "59773759"
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 > [!NOTE]
-> 我们建议[Microsoft Endpoint Manager组织](/mem)威胁防护功能，这些功能 (也称为终结点) 。 Endpoint Manager包括[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)和[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)。 **[详细了解如何Endpoint Manager。](/mem/endpoint-manager-overview)**
+> 我们建议使用[Microsoft Endpoint Manager](/mem)管理组织对也称为终结点 (的设备的威胁防护) 。 Endpoint Manager包括[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)和[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)。 **[详细了解如何Endpoint Manager。](/mem/endpoint-manager-overview)**
 
 可以使用域服务中的组策略Azure Active Directory管理 Microsoft Defender for Endpoint 中的某些设置。
 
@@ -56,13 +54,13 @@ ms.locfileid: "59773759"
 |**管理 Exploit Protection 设置** <br/><br/> *你可以自定义 Exploit Protection 设置、导入配置文件，然后使用组策略部署该配置文件。*|[自定义 Exploit Protection 设置](/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/> [导入、导出和部署 Exploit Protection 配置](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml) <br/><br/> [使用组策略分发配置](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)|
 |**启用网络** 保护，以防止员工使用 Internet 上恶意内容的应用 <br/><br/> *我们建议在 [测试环境中首先](/microsoft-365/security/defender-endpoint/evaluate-network-protection) 使用审核模式进行网络保护，以查看在推出之前哪些应用将被阻止。*|[使用组策略打开网络保护](/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)|
 |**配置受控文件夹访问权限** 以防范勒索软件 <br/><br/> *[受控文件夹访问权限](/microsoft-365/security/defender-endpoint/controlled-folders) 也称为反反somware保护。*|[使用组策略启用受控文件夹访问权限](/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy)|
-|**配置Microsoft Defender SmartScreen** 以抵御 Internet 上的恶意站点和文件。|[配置Microsoft Defender SmartScreen组策略和移动设备管理 (MDM) 设置使用组策略](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)|
-|**配置加密和 BitLocker** 以保护在组织中运行 Windows|[BitLocker 组策略设置](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
+|**配置Microsoft Defender SmartScreen** 以抵御 Internet 上的恶意站点和文件。|[使用Microsoft Defender SmartScreen策略配置 MDM (mdm) 组策略和移动设备管理](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)|
+|**配置加密和 BitLocker** 以保护在组织中运行加密Windows|[BitLocker 组策略设置](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
 |**配置 Microsoft Defender Credential Guard** 以防止凭据盗窃攻击|[使用Windows Defender启用 Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>配置Microsoft 365 Defender门户
 
-如果尚未配置，请配置 Microsoft 365 Defender 门户以查看警报、配置威胁防护功能以及查看有关组织整体安全状况的详细信息。 请参阅[Microsoft 365 Defender。](microsoft-defender-security-center.md) 还可以配置最终用户是否可以在 web 门户中查看这些功能Microsoft 365 Defender功能。
+如果尚未配置，请配置 Microsoft 365 Defender 门户以查看警报、配置威胁防护功能，并查看有关组织整体安全状况的详细信息。 请参阅[Microsoft 365 Defender。](microsoft-defender-security-center.md) 还可以配置最终用户是否可以在 web 门户中查看这些功能Microsoft 365 Defender功能。
 
 - [概述Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [终结点保护：Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)

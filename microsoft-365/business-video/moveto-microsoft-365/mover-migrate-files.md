@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用 Mover 将 Google Microsoft 365迁移到企业。
-ms.openlocfilehash: 6791655f5ee8a9fc867266d5fe153cde6ec9adaa6148191c4c0eb3aedbfe0141
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4bec723d024468f76bdfcc60934eb42c445fe0f5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843487"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194809"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>将 Google 文件迁移到 Microsoft 365 for Business 
 
@@ -66,9 +66,9 @@ ms.locfileid: "53843487"
 
     Mover 显示发现的团队驱动器和用户驱动器的数量。 
 
-1. 在 **"选择目标"** 下，选择"**授权新** 连接器"，**找到Office 365"，** 然后选择"授权 **"。**
-1. 若要在你的应用中向 Mover 应用授予Azure Active Directory，[请导航到](https://aka.ms/Office365MoverAuth)aka.ms/Office365MoverAuth。
-1. 选择 **Office 365 Mover、****权限、****授予公司管理员同意**。
+1. 在"**选择目标"** 下，选择"**授权新** 连接器"，**找到Office 365"，** 然后选择"授权 **"。**
+1. 若要在你的应用中向 Mover 应用授予Azure Active Directory，请导航到["aka.ms/Office365MoverAuth"。](https://aka.ms/Office365MoverAuth)
+1. 选择 **Office 365 Mover、****权限、****为公司授予管理员许可**。
 1. 选择你的帐户，查看权限，**然后选择接受。**
 1. 选择 **"** 属性"，并验证 **"需要用户分配** ？"是否打开。
 1. 返回到 Mover 应用，更改显示名称 ，如果需要，请选择授权 **，然后选择** Microsoft 管理员帐户。
@@ -78,7 +78,7 @@ ms.locfileid: "53843487"
 
     Mover 应用将尝试将驱动器从 Google 中的源路径映射到 Microsoft 365。 
 
-    如果驱动器未自动映射，请将其目标路径添加到 CSV 文件，我们稍后会使用该路径将共享驱动器迁移到SharePoint库。 
+    如果驱动器未自动映射，请将其目标路径添加到 CSV 文件，我们稍后将使用该文件将共享驱动器迁移到SharePoint库。 
 
 1. 在这种情况下，我们添加了一SharePoint迁移文件的网站，并记下了文档页面的 URL。 
 1. 然后，我们使用"源路径"、"目标路径"和"标记"格式创建了 CSV 文件。 

@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: ''
 search.appverid:
 - MOE150
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: 在调查期间，可以使用"重试"按钮解决内容位置错误的内容搜索。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee60ab8aa5dad32360303f31924995f110ed99cc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c433dfa6bf842f1d62350e3b518177d1bdca6d7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195786"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192159"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>重试内容搜索以解决内容位置错误
 
@@ -60,7 +60,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 - 搜索查询可能从邮箱检索太多内容。 如果可能，请尝试使用关键字、日期范围和搜索条件缩小搜索范围。
 
-- 使用关键字列表 创建搜索查询时，关键字或 [关键字短语过多](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches)。 当您运行使用关键字列表的搜索查询时，该服务实际上对关键字列表中的每一行运行单独的搜索，以便可以生成统计信息。 如果您在搜索查询中使用关键字列表，请最大程度地减少关键字列表中的行数，或将数字关键字划分为较小的列表，并为每个关键字列表创建不同的搜索。
+- 使用关键字列表 创建搜索查询时，关键字或 [关键字短语过多](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches)。 当您运行使用关键字列表的搜索查询时，该服务实际上对关键字列表中的每一行运行单独的搜索，以便可以生成统计信息。 如果在搜索查询中使用关键字列表，请最大程度地减少关键字列表中的行数或将数字关键字划分为较小的列表，并为每个关键字列表创建不同的搜索。
 
   > [!NOTE]
   > 为了帮助减少由大型关键字列表导致的问题，现在搜索查询的关键字列表中最多只能有 20 行。

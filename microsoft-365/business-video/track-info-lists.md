@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: 了解Microsoft Lists。 使用Microsoft Lists，你可以跟踪客户详细信息，如客户类型、订单履行和订单进度。
-ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d8d09549751efddf1c2d1576d5a7b3c75981562a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170812"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194725"
 ---
 # <a name="use-microsoft-lists-to-track-business-info"></a>使用Microsoft Lists跟踪业务信息
 
@@ -29,7 +29,7 @@ ms.locfileid: "59170812"
 
 ## <a name="try-it"></a>试用
 
-跟踪信息并组织使用Microsoft Lists。 从零开始、从Excel、从现有列表或模板创建列表。 可以从 Microsoft 365、Microsoft Teams 或 SharePoint 开始。
+跟踪信息并组织使用Microsoft Lists。 从零开始、从Excel、从现有列表或模板创建列表。 你可以从 Microsoft 365、Microsoft Teams 或 SharePoint 开始。
 
 ### <a name="add-an-item-to-the-list"></a>向列表中添加项
 
@@ -56,7 +56,7 @@ ms.locfileid: "59170812"
 1. 在列表上方，选择"自动化 **"。**
 1. 选择 **"创建规则"。**
 1. 选择适当的条件以触发要创建的规则。
-1. 使用你需要的特定信息（如更新列表时要通知的人的姓名）自定义规则。
+1. 使用所需的特定信息（如更新列表时要通知的人的姓名）自定义规则。
 1. 选择 **"创建** "以保存规则。
 
 ### <a name="sort-and-group-list-items"></a>对列表项进行排序和分组

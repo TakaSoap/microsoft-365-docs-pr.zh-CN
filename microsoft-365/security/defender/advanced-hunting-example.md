@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d3ac49b4afde0951e7a034c5c11114afbc52c293
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0226be17f475250d5d50d363596bd115f27ce6cd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170045"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191535"
 ---
 # <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 高级搜寻示例
 
@@ -43,7 +43,7 @@ ms.locfileid: "59170045"
    - 反恶意软件
    - 防网络钓鱼
    - 反垃圾邮件
-2. 设置名称中保险箱"值的所有内容。
+2. 设置名称中具有"保险箱"的所有内容。
    - 安全链接
    - 安全附件
 3. 保护工作负载（例如 SharePoint联机、OneDrive和Teams) 。

@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 110b86974badde65450f4264daf9373f46f8993d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ada4ebd15d9a84241ca68b6e2664475f97ab7d6f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171254"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191823"
 ---
 # <a name="list-software-inventory-api"></a>列出软件清单 API
 
@@ -40,7 +40,7 @@ ms.locfileid: "59171254"
 检索组织软件清单。
 <br>支持 [OData V4 查询](https://www.odata.org/documentation/)。
 <br>OData 支持的运算符：
-<br>```$filter``` on：  ```id``` ```name``` 、 和 ```vendor``` properties。
+<br>```$filter``` on：  ```id``` ```name``` 、 和 ```vendor``` 属性。
 <br>```$top``` 最大值为 10，000。
 <br>```$skip```.
 <br>请参阅 Microsoft [Defender for Endpoint 的 OData 查询示例](exposed-apis-odata-samples.md)。
@@ -51,7 +51,7 @@ ms.locfileid: "59171254"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Software.Read.All|"读取威胁和漏洞管理软件信息"
+Application|Software.Read.All|"读取威胁和漏洞管理软件信息"
 委派（工作或学校帐户）|Software.Read|"读取威胁和漏洞管理软件信息"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -64,7 +64,7 @@ GET /api/Software
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|字符串|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

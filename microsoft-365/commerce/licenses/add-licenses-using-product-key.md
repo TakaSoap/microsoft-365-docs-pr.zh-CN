@@ -9,7 +9,7 @@ ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid: MET150
 description: 了解如何使用产品密钥向订阅添加许可证或扩展订阅。
 ROBOTS: NOINDEX
 ms.date: 04/07/2021
-ms.openlocfilehash: 7f1a1977eb5e20d09a22ef616937abdc483c431e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a3d6f2d87952a9601a422854c1df2f96f497efdf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171141"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194713"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>使用产品密钥向订阅添加许可证或延长付费订阅
 
@@ -55,7 +55,7 @@ ms.locfileid: "59171141"
 
 2. 在 **"产品** "选项卡上，选择要添加许可证的订阅。
 3. On the subscription details page， in the **Licenses** section， select **Add more licenses**.
-4. 在"**添加更多许可证"窗格中**，**选择"使用新的和未使用的** 产品密钥"，然后选择"下一 **步"。**
+4. 在"**添加更多许可证"窗格中**，选择 **"使用新的和未使用的产品密钥"，** 然后选择"下一 **步"。**
 5. 输入产品密钥，然后选择下一 **步**。
     > [!NOTE]
     > 如果有多个产品密钥，可以选择" **添加其他产品密钥**"以输入产品密钥。

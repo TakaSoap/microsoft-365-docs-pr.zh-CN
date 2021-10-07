@@ -3,7 +3,7 @@ title: Microsoft SharePoint Syntex 的应用场景和用例
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: laurieellis
+ms.reviewer: lauris
 ms.date: ''
 audience: admin
 ms.topic: article
@@ -13,14 +13,14 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: ''
-localization_priority: Normal
-description: 查找有关在组织中如何使用SharePoint Syntex应用场景。
-ms.openlocfilehash: 619acd5d71bc6f3ab1aa99d3b7fd068faa51d696
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+description: 查找有关在组织中如何使用SharePoint Syntex的方案。
+ms.openlocfilehash: 16688f08183e55c8e2f52cdbcd50919dff680c1b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169606"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192051"
 ---
 # <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 的应用场景和用例
 
@@ -36,7 +36,7 @@ ms.locfileid: "59169606"
 
 ## <a name="scenario-track-data-from-invoices-with-form-processing"></a>应用场景：通过表单处理跟踪发票数据
 
-例如，你可以设置一个流程，SharePoint Syntex和Power Automate功能来跟踪和监视发票。
+例如，您可以使用一个使用 SharePoint Syntex 和 Power Automate 功能来跟踪和监视发票的过程。
 
 1. 设置用于存储发票文档的库。
 1. 训练模型以识别文档中的字段。
@@ -63,7 +63,7 @@ ms.locfileid: "59169606"
 1. 模型完成后，将模型应用到可在其中上载合约的库。
 1. 将保留标签应用于日期字段，以便合同在库中保留所需时间。
 
-![使用标签和保留标签跟踪SharePoint Syntex合同。](../media/content-understanding/process-contracts-flow.png)
+![使用标签和保留标签SharePoint Syntex和监视合同。](../media/content-understanding/process-contracts-flow.png)
 
 当您自动执行此方案时，您可以：
 
@@ -79,7 +79,7 @@ ms.locfileid: "59169606"
 - 审核收据、合同等，以确保遵守公司策略。
 - 确保项目具有合规性所需的全部文档。
 
-设置一些流程以遵守SharePoint Syntex，以捕获和适当分类、审核和标记需要更好治理的文档和表单。 您可以依赖SharePoint Syntex来自动对内容进行分类，而不是依赖最终用户手动标记，或者依赖合规性团队手动应用管理规则和存档。 您可以启用简化的搜索体验、管理数据卷、应用记录管理和保留策略、确保合规性以及最佳实践存档和清除实践。
+设置一些流程以遵守SharePoint Syntex，以捕获和适当分类、审核和标记需要更好治理的文档和表单。 您可以依赖SharePoint Syntex对内容进行自动分类，而不是依赖最终用户手动标记，或者依赖合规性团队手动应用管理规则和存档。 您可以启用简化的搜索体验、管理数据卷、应用记录管理和保留策略、确保合规性以及最佳实践存档和清除实践。
 
 当您自动执行此方案时，您感觉安全：
 

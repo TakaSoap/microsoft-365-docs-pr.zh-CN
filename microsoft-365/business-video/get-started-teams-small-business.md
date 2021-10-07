@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在小型企业Microsoft Teams企业。
-ms.openlocfilehash: 75e5c4aad1ef65e63ed7809cc667fce4b48934e2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 011162269f42c722cf6f1e8ae63b4a6f2901ef3f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171448"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179699"
 ---
 # <a name="get-started-with-teams"></a>Teams 入门
 
-如果你刚刚开始将业务更改为远程工作，那么这里就对了。 借助 Microsoft 365，你可以虚拟地管理业务，并通过联机会议、聊天、文件共享和呼叫在 Microsoft Teams 中与员工、合作伙伴[](https://www.microsoft.com/microsoft-teams/instant-messaging?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline)和客户保持联系。 
+如果你刚刚开始将业务更改为远程工作，那么这里就对了。 通过Microsoft 365，你可以虚拟地管理业务，并通过联机会议、聊天、文件共享和呼叫在 Microsoft Teams 中与员工、合作伙伴[](https://www.microsoft.com/microsoft-teams/instant-messaging?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline)和客户保持联系。 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ueMh?autoplay=false]
 
@@ -39,7 +39,7 @@ ms.locfileid: "59171448"
 
 ### <a name="chat-from-anywhere"></a>随时随地聊天
 
-连接 1：1 私人聊天、群组聊天或对整个团队可见的频道对话进行实时聊天。 聊天历史记录随时可用于回顾过去的讨论和决策。 这为进入团队的新成员或希望重新访问对话上下文的当前团队成员增加了大量价值。
+连接 1：1 私人聊天、群组聊天或整个团队可见的频道对话中实时进行聊天。 聊天历史记录随时可用于回顾过去的讨论和决策。 这为进入团队的新成员或希望重新访问对话上下文的当前团队成员增加了大量价值。
 
 ### <a name="collaborate-with-customers-and-employees"></a>与客户和员工协作
 
@@ -49,13 +49,13 @@ ms.locfileid: "59171448"
 
 ### <a name="create-and-organize-teams"></a>创建和组织团队
 
-Microsoft Teams团队旨在将一组紧密协作以完成工作的人汇集在一起。 Teams基于项目的工作 (，即产品发布) ，或基于公司的部门或办公地点进行。 还可以设置组织范围的团队，以将组织中的每个人纳入其中。
+Microsoft Teams团队旨在将一组紧密协作以完成工作的人汇集在一起。 Teams基于项目的工作，例如 (产品发布) ，或基于公司的部门或办公地点进行。 还可以设置组织范围的团队，以将组织中的每个人纳入其中。
 
 频道是团队中的专用部分，用于保持按特定主题、项目或专业组织的对话。 每个频道的对话、文件和笔记仅对该组的成员可见。
 
 ### <a name="store-and-share-files"></a>存储和共享文件
 
-当团队远程协作时，你将拥有你想要在公司内外共享和协作的文件。 Microsoft Teams可以轻松共享文件并一起处理它们。 如果您的文档是 Word，Excel或PowerPoint您的同事和客户甚至可以直接在文档内查看、编辑和协作Microsoft Teams。
+当团队远程协作时，你将拥有你想要在公司内外共享和协作的文件。 Microsoft Teams可以轻松共享文件并一起处理它们。 如果文档是 Word，Excel或PowerPoint客户甚至可以直接在文档内查看、编辑和协作处理Microsoft Teams。
 
 确保公司的关键文档保存在云中，并准备好安全地与客户、客户、合作伙伴、供应商和业务中的其他人共享。 将文件保留到云中还意味着你受益于备份以及从硬盘故障、勒索软件攻击和其他错误中恢复的能力。
 
@@ -65,7 +65,7 @@ Microsoft Teams团队旨在将一组紧密协作以完成工作的人汇集在�
 
 ### <a name="secure-your-business-as-it-runs-remotely"></a>在业务远程运行时保护业务
 
-高度推荐的安全功能是 MFA (多重) 。 为远程员工添加 MFA 需要他们在登录时输入文本、电话呼叫或身份验证应用Microsoft 365。 如果黑客通过网络钓鱼攻击持有某人的密码，则他们无法使用它来访问你的公司帐户和数据。 你可以从中心添加 MFA [Microsoft 365 管理：为移动设备设置 MFA。](set-up-mfa.md)
+高度推荐的安全功能是 MFA (多重) 。 为远程员工添加 MFA 要求他们在登录时输入文本、电话呼叫或身份验证应用Microsoft 365。 如果黑客通过网络钓鱼攻击持有某人的密码，则他们无法使用它来访问你的公司帐户和数据。 你可以从中心添加 MFA [Microsoft 365 管理：为移动设备设置 MFA。](set-up-mfa.md)
 
 ### <a name="microsoft-teams-templates"></a>Microsoft Teams模板
 

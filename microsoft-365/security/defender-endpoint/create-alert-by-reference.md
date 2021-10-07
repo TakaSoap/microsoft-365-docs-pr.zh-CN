@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ab53061a7880d5ba35c16203cffc7d6eb8e7b718
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fb30a5dbc2d5a6859343a1b382cdbd0106819cd2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222276"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191943"
 ---
 # <a name="create-alert-api"></a>创建警报 API
 
@@ -58,14 +58,14 @@ ms.locfileid: "59222276"
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-应用程序 | Alert.ReadWrite.All | "读取和写入所有警报"
+Application | Alert.ReadWrite.All | "读取和写入所有警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："警报调查" (请参阅创建和管理角色，了解) [](user-roles.md)
-> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -77,23 +77,23 @@ POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 
 名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 必需。
 Content-Type | String | application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供以下值 (所有项) ：
+在请求正文中，提供以下值 (所有请求) ：
 
-属性 | 类型 | 描述
+属性 | 类型 | 说明
 :---|:---|:---
 eventTime | DateTime (UTC)  | 事件作为字符串的精确时间，从高级搜寻获取。 例如， ```2018-08-03T16:45:21.7115183Z``` **必需**。
-reportId | String | 事件的 reportId，从高级搜寻获取。 **必需**。
-machineId | String | 标识事件的设备 ID。 **必需**。
-severity | String | 警报的严重性。 属性值为："Low"、Medium 和"High"。 **必需**。
-title | String | 警报的标题。 **必需**。
-说明 | String | 警报的说明。 **必需**。
-recommendedAction| String | 建议安全人员在分析警报时采取的操作。 **必需**。
-“类别”| String | 警报的类别。 属性值包括："General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"Exfiltration"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity"（ **必需**）。
+reportId | 字符串 | 事件的 reportId，从高级搜寻获取。 必需。
+machineId | 字符串 | 标识事件的设备 ID。 **必需**。
+severity | 字符串 | 警报的严重性。 属性值为："Low"、Medium 和"High"。 **必需**。
+title | String | 警报的标题。 必需。
+说明 | 字符串 | 警报的说明。 **必需**。
+recommendedAction| String | 建议安全人员在分析警报时采取的操作。 必需。
+“类别”| 字符串 | 警报的类别。 属性值包括："General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"Exfiltration"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity"（ **必需**）。
 
 ## <a name="response"></a>响应
 

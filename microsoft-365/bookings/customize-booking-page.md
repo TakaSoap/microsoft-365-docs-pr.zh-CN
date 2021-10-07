@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: 在 Microsoft Bookings 应用中更改预订页面的颜色主题。
-ms.openlocfilehash: 5faf769eeee8a34989e1fc3f1d5859c9770f85a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 91ce865df7cff3029dc9f48080cbcc08e453bd7d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171190"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192483"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>定制并发布预订页面
 
@@ -44,9 +44,9 @@ ms.locfileid: "59171190"
 
 - **可用性** 此选项可设置服务的特定时间和日期范围的可用性。 否则，Bookings 将默认为营业时间。 你可以在此处 **对假日** 或延长时间等方案使用可用性选项。
 
-- **自定义页面** 选择页面页面上显示的颜色Self-Service徽标，例如，确保品牌一致性。
+- **自定义页面** 选择显示在页面上的颜色和Self-Service，例如，确保品牌一致性。
 
-- **区域设置和时区设置** 你可以在此处为"会议"页面设置时区和Self-Service首选项。 我们建议设置本地时区。 对于您的 Self-Service页面的访问者，Bookings 会自动检测其本地时区，并会在各自的时区向用户显示可用性。 例如，如果约会在 PST 下午 1：00 可用，则 CST 中的人员将看到可用时间显示为 3：00pm CST。
+- **区域设置和时区设置** 你可以在此处为"开始"页面设置时区和语言Self-Service首选项。 我们建议设置本地时区。 对于您的 Self-Service页面的访问者，Bookings 会自动检测其本地时区，并会在其自己的时区显示其可用性。 例如，如果约会在 PST 下午 1：00 可用，则 CST 中的人员将看到可用时间显示为 3：00pm CST。
 
 发布预订页面后，客户将看到预订页面，他们可以在这里与自己预订约会。 面向客户的预订页面如下所示：
 
@@ -60,7 +60,7 @@ ms.locfileid: "59171190"
 
 1. In Microsoft 365， select the app launcher， and then select **Bookings**.
 
-1. 在导航窗格中，选择"**预订页面"。**
+1. 在导航窗格中，选择"预订 **页面"。**
 
 1. 验证计划策略是否正确。 有关详细信息 [，请参阅设置](set-scheduling-policies.md) 日程安排策略。
 

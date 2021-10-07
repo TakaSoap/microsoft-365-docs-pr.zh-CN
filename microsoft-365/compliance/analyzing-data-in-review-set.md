@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解分析文档集时可用于组织文档集Advanced eDiscovery的信息。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7c63e7eca2e032bfa11c4d4e6f961bb7a7700a4e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 865f5c014e25b0a2abee0ed3ce9d6eb1748c6a6b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171102"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194557"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>分析审阅集内Advanced eDiscovery
 
@@ -46,7 +46,7 @@ ms.locfileid: "59171102"
 
 您可以在案例的"作业"选项卡 **上** 检查分析进度。
 
- 分析完成后，可以查看分析报告，对分析的输出运行审阅集内的查询 (请参阅查看集 [) ](review-set-search.md) 中的查询，并查看给定文档的相关文档 (请参阅审阅集 [) ](reviewing-data-in-review-set.md) 中的数据。
+ 分析完成后，可以查看分析报告，对分析的输出运行审阅集内的查询 (请参阅在审阅集 [) ](review-set-search.md) 中查询，并查看给定文档的相关文档 (请参阅审阅集 [) ](reviewing-data-in-review-set.md) 中的数据。
 
 ## <a name="analytics-report"></a>分析报告
 

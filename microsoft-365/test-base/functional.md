@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: cfa07a795e99144e168b06b99e9f1feacd7fa9be
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f64480d66cd91dc4b08f9694331cfe0d9c130ee4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162179"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191261"
 ---
 # <a name="functional-testing"></a>功能测试
 
@@ -31,7 +31,7 @@ ms.locfileid: "59162179"
 
 若要使用此功能，请按照以下步骤操作：
 
-1. Upload文件 (包) 二进制文件、依赖项和.zip脚本。
+1. Upload文件 (一个包) 二进制文件、依赖项和.zip脚本。
 2. 选择是否要在各种执行点 (虚拟机) 虚拟机。
 3. 管理脚本的可用选项。
 4. 选择何时在Windows虚拟机上应用更新。
@@ -49,21 +49,21 @@ To get started， navigate to the Upload page， select Upload new application u
 
 ![选择功能测试选项卡。](Media/functional_testing_tab1.png)
 
-选项卡 2 - Upload通过上传包含整个测试文件（二进制文件、依赖项、脚本等）的 (zip 文件来) 。 
+选项卡 2 - Upload通过上传包含整个测试文件、二进制文件、依赖项、脚本等的 zip 文件来 (包) 。 
 
 有关详细信息 aka.ms/usl-package-outline 请参阅 aka.ms/usl-package-outline。  (注意：开箱即用测试脚本和功能测试内容应放在相同的 zip 文件中) 。 目前，文件大小限制为 2GB。
 
-选项卡 3 - 配置开箱即用和功能测试任务。 在此处，选择 () 到 PowerShell 脚本的路径，这些脚本将安装、启动、关闭和卸载适用于开箱即用) 的应用程序 (，以及所有自定义脚本的 () 路径，以执行功能测试。 **(注意：用于卸载应用程序的脚本是可选的) 。**
+选项卡 3 - 配置开箱即用和功能测试任务。 在此处，选择将安装、启动、关闭和卸载应用程序 (for Out-of-Box) 的 PowerShell 脚本的 () 路径，以及所有自定义脚本的 () 路径，以执行功能测试。 **(注意：用于卸载应用程序的脚本是可选的) 。**
 
-目前，您可以上载 1 到 8 个脚本，用于功能测试。  (需要更多脚本，请对此文章进行评论！) 
+目前，您可以上载 1 到 8 个脚本，用于功能测试。  (脚本，请对此文章添加好评论！) 
 
-![Upload最多 8 个脚本和功能测试。](Media/functional_testing_tab3.png)
+![Upload 8 个脚本的功能测试。](Media/functional_testing_tab3.png)
 
  (可选) 安装后配置重启。 某些应用程序需要在安装后重新启动。 
 
 如果希望在执行该脚本后重新启动，请在"任务"选项卡中选择特定 ```Reboot After Execution``` 脚本。
 
-选项卡 4 - 选择Windows更新时间：在选择任何脚本之前，Windows更新修补程序的应用完成。 建议在应用程序安装Windows安装更新，以密切模仿实际的应用程序使用方案。
+选项卡 4 - 选择Windows更新时间：在选择任何脚本之前，Windows更新修补程序的应用完成。 建议您在应用程序安装Windows安装更新，以密切模仿实际的应用程序使用方案。
 
 ![可以在Windows脚本后安装该更新。](Media/functional_testing_tab4.png)
 
@@ -75,8 +75,8 @@ To get started， navigate to the Upload page， select Upload new application u
 
 验证过程最多可能需要 24 小时。 验证完成后，您可以在菜单中看到状态 ```Manage packages``` ，该状态可以是两个条目之一：
 
-1. 验证成功：程序包将针对所选操作系统版本Windows预发布更新进行自动测试。
-或
+1. 验证成功：将针对所选操作系统内部版本Windows预发行版更新自动测试程序包。
+或者
 2. 验证失败：你将需要调查失败的原因、修复问题，然后重新上传你的程序包。
 
 你还将通过 Azure 门户中的通知图标收到任一结果的通知。

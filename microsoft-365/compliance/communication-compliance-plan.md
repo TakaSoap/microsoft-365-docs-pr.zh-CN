@@ -11,19 +11,19 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d64edc9d80722080db18c45127bfc82110d1ea9e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b26d983bf73a968a06566f18c20d4df24b7763a8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162029"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179315"
 ---
 # <a name="plan-for-communication-compliance"></a>通信合规性规划
 
@@ -42,7 +42,7 @@ ms.locfileid: "59162029"
 
 ## <a name="plan-for-the-investigation-and-remediation-workflow"></a>规划调查和修正工作流
 
-选择专门的利益干系人，以定期监视和查看警报和案件[Microsoft 365 合规中心。](https://compliance.microsoft.com/) 请务必了解如何将用户和利益干系人分配到组织中不同的通信合规性角色组。
+选择专门的利益干系人，以定期在"报告"中监视和[查看Microsoft 365 合规中心。](https://compliance.microsoft.com/) 请务必了解如何将用户和利益干系人分配到组织中不同的通信合规性角色组。
 
 根据希望管理通信策略和警报方式，需要为管理员、审阅者和调查人员将用户分配到一个或多个角色组。 您可以选择将用户分配给特定角色组，以管理不同的通信合规性功能集。 或者，您可以决定将所有通信合规性用户分配给 Communication Compliance 角色组。 使用单个角色组或多个组以最适合合规性管理要求。
 
@@ -71,4 +71,4 @@ ms.locfileid: "59162029"
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 
-若要为 Microsoft 365 组织配置通信合规性，请参阅为[Microsoft 365](communication-compliance-configure.md)配置通信合规性或查看[Contoso](communication-compliance-case-study.md)的案例研究，以及他们如何快速配置通信合规性策略来监视 Microsoft Teams、Exchange Online 和 Yammer 通信中的冒犯性语言。
+若要为 Microsoft 365 组织配置通信合规性，请参阅为[Microsoft 365](communication-compliance-configure.md)配置通信合规性或查看[Contoso](communication-compliance-case-study.md)的案例研究，以及他们如何快速配置通信合规性策略以监视 Microsoft Teams、Exchange Online 和 Yammer 通信中的冒犯性语言。

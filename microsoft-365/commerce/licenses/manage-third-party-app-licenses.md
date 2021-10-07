@@ -9,7 +9,7 @@ ms.reviewer: argani
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -18,22 +18,22 @@ ms.custom:
 - commerce_licensing
 search.appverid:
 - MET150
-description: 了解如何管理独立软件供应商 (ISV) 应用程序中的Microsoft 365 管理中心。
+description: 了解如何管理独立软件供应商 (ISV) 应用中的Microsoft 365 管理中心。
 ms.date: 06/15/2021
-ms.openlocfilehash: e19277a34c896d918d545cca27b1c435ca221e6f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4738c0fa2c21c189922087e54d8b00260cd68c93
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171130"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179567"
 ---
 # <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>管理应用程序中的 ISV Microsoft 365 管理中心
 
-ISV 应用程序 (独立软件) 是一款从除 Microsoft 外的软件供应商购买的应用。
+独立软件供应商 (ISV) 应用是一款从除 Microsoft 外的软件供应商购买的应用。
 
 ## <a name="before-you-begin"></a>准备工作
 
-你必须是全局、许可证或用户管理员才能分配许可证。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+你必须是全局、许可证或用户管理员才能分配许可证。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="assign-isv-app-licenses-to-users-or-groups"></a>向用户或组分配 ISV 应用程序许可证
 
@@ -64,5 +64,5 @@ ISV 应用程序许可证由应用供应商管理。 请与供应商联系，添
 
 ## <a name="related-content"></a>相关内容
 
-[向用户分配 (](../../admin/manage/assign-licenses-to-users.md) 文章) \
-[取消分配用户许可证 (](../../admin/manage/remove-licenses-from-users.md) 本文) 
+[向用户分配许可证](../../admin/manage/assign-licenses-to-users.md) (文章) \
+[取消分配用户许可证 (](../../admin/manage/remove-licenses-from-users.md) 文章) 

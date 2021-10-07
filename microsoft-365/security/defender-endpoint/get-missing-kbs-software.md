@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 15c3ad6eef732f36a425a54673a694613c0f4b66
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 971bb3946c2a146c61c4b98bc0102e8c52e25c42
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201714"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191835"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>通过软件 ID 获取缺失的 KB
 
@@ -35,7 +35,7 @@ ms.locfileid: "59201714"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-检索缺少的 (，) 软件 ID 更新
+按软件 ID (缺少的) 更新
 
 ## <a name="permissions"></a>权限
 
@@ -43,7 +43,7 @@ ms.locfileid: "59201714"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Software.Read.All|"读取威胁和漏洞管理软件信息"
+Application|Software.Read.All|"读取威胁和漏洞管理软件信息"
 委派（工作或学校帐户）|Software.Read|"读取威胁和漏洞管理软件信息"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -56,7 +56,7 @@ GET /api/Software/{Id}/getmissingkbs
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|字符串|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

@@ -1,10 +1,10 @@
 ---
 title: Microsoft 安全门户和管理中心
 description: 查找适当的 Microsoft 管理中心或门户，以管理与安全相关的Microsoft 365服务
-keywords: 安全， 门户， Microsoft 365， M365， 安全中心， 管理中心， URL， 链接， Microsoft 365 Defender， Microsoft Defender for Endpoint， Microsoft Defender 安全中心， Microsoft Defender for Identity， Microsoft Defender for Office 365， MCAS， WDSI， SCC， Intune， MDM， MEM， ASC， 云应用安全， Azure AD， 安全 & 合规中心
+keywords: 安全， 门户， Microsoft 365， M365， 安全中心， 管理中心， URL， 链接， Microsoft 365 Defender， Microsoft Defender for Endpoint， Microsoft Defender 安全中心， Microsoft Defender for Identity， Microsoft Defender for Office 365， MCAS， WDSI， SCC， Intune， MDM， MEM， ASC，云应用安全、Azure AD、安全&合规中心
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: lomayor
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 81fe9d058a1144c67a1d95d02a3e8b47e3c2104b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 873753f1802fce9480c16d6df33092284156a820
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195970"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191429"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft 安全门户和管理中心
 
@@ -31,7 +31,7 @@ ms.locfileid: "59195970"
 尽管[Microsoft 365 Defender](overview-security-center.md)门户是跨标识、数据、设备和应用监视和管理安全性的新主页，但你需要访问各种门户，以执行某些专门任务。
 
 > [!TIP] 
-> 若要从导航门户访问Microsoft 365 Defender相关门户，请在导航窗格中 **选择"更多** 资源"。
+> 若要从导航门户访问Microsoft 365 Defender门户，请在导航窗格中 **选择"更多** 资源"。
 
 ## <a name="security-portals"></a>安全门户
 
@@ -50,13 +50,13 @@ ms.locfileid: "59195970"
 
 ## <a name="portals-for-other-workloads"></a>其他工作负载的门户
 
-虽然这些门户并非专用于管理安全性，但是它们支持可影响安全性的各种工作负载和任务。 访问这些门户以管理标识、权限、设备设置和数据处理策略。
+虽然这些门户并非专用于管理安全性，但是它们支持可能会影响安全性的各种工作负载和任务。 访问这些门户以管理标识、权限、设备设置和数据处理策略。
 <p></p>
 
 | 门户名称 | 说明 | 链接 | 
 |---|---|---| 
 | Azure 门户 | 查看和管理[Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)所有[Azure 资源](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Microsoft 365 合规中心 | 管理数据处理策略并确保 [遵守法规](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
-| Microsoft 365 管理中心 | 配置Microsoft 365服务;管理角色、许可证和跟踪对 Microsoft 365 服务的更新 | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
+| Microsoft 365 管理中心 | 配置Microsoft 365服务;管理角色、许可证和跟踪对服务Microsoft 365更新 | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
 | Microsoft Endpoint Manager 管理中心 | 使用[Microsoft Endpoint Manager](/mem/configmgr/) Intune 和 Configuration Manager 组合功能管理和保护设备 | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
 | Microsoft Intune门户 | 使用[Microsoft Intune](/intune/fundamentals/what-is-intune)部署设备策略并监视设备合规性 | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)

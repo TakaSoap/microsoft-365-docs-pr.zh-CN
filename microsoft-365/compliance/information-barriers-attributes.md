@@ -9,25 +9,25 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
-localization_priority: None
+ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e4309b7973b3f74ba43d178b6761449c91856d06
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 33143e85bf17a707ade6dd0d6d0c66886fd85373
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59443943"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179147"
 ---
 # <a name="information-barriers-attributes"></a>信息屏障属性
 
-网站中的Azure Active Directory可用于划分用户。 定义段后，这些线段可以用作信息屏障策略的筛选器。 例如，可以使用部门按组织内部的部门定义用户细分 (假定没有单个员工同时为两个部门工作) 。
+用户可以使用Azure Active Directory中的某些属性来划分用户。 定义段后，这些线段可以用作信息屏障策略的筛选器。 例如，可以使用部门按组织内部的部门定义用户细分 (假定没有单个员工同时为两个部门工作) 。
 
 本文介绍如何将属性与信息障碍一同使用，并提供了可以使用的属性列表。 若要了解有关信息屏障详细信息，请参阅以下资源：
 
 - [信息屏障](information-barriers.md)
-- [定义信息屏障的策略Microsoft Teams](information-barriers-policies.md)
+- [定义信息屏障策略Microsoft Teams](information-barriers-policies.md)
 - [编辑（删除）信息屏障策略](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>如何在信息屏障策略中使用属性
@@ -82,7 +82,7 @@ ms.locfileid: "59443943"
 | MSExchExtensionCustomAttribute3 | ExtensionCustomAttribute3 |
 | MSExchExtensionCustomAttribute4 | ExtensionCustomAttribute4 |
 | MSExchExtensionCustomAttribute5 | ExtensionCustomAttribute5 |
-| MailNickname | Alias |
+| MailNickname | 别名 |
 | PhysicalDeliveryOfficeName | Office |
 | PostalCode | PostalCode |
 | ProxyAddresses | EmailAddresses |
@@ -96,6 +96,6 @@ ms.locfileid: "59443943"
 
 ## <a name="resources"></a>资源
 
-- [定义信息屏障的策略Microsoft Teams](information-barriers-policies.md)
+- [定义信息屏障策略Microsoft Teams](information-barriers-policies.md)
 - [信息屏障疑难解答](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
 - [信息屏障](information-barriers.md)

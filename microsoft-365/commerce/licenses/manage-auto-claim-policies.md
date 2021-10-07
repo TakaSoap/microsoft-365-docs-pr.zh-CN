@@ -9,7 +9,7 @@ ms.review: yinggiy, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +19,12 @@ ms.custom:
 description: 了解如何创建和管理自动声明策略，这些策略会自动将许可证分配给特定应用的用户。
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: b104700905b3753466036411368951f12a7012d8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 41d11c6c67d35766e61106bd2beefd69462a42ff
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171131"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179675"
 ---
 # <a name="manage-auto-claim-policies"></a>管理自动声明策略
 
@@ -42,7 +42,7 @@ ms.locfileid: "59171131"
 > [!IMPORTANT]
 > 自动声明策略当前仅适用于Microsoft Teams。 将来将有更多的产品可供使用。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 您必须是全局管理员、用户管理员或许可证管理员才能创建和管理自动声明策略。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../../admin/add-users/about-admin-roles.md)。
 
@@ -147,7 +147,7 @@ ms.locfileid: "59171131"
 
 1. 在管理中心，转到"帐单 **""** 许可证" \> 页面，然后选择"<a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">自动声明策略"</a>选项卡。
 2. 选择要编辑的策略。
-3. 在详细信息窗格中的"产品许可证 **"部分，** 选择要移动的产品旁边的框，然后选择"**上** 移"或"**下移"。**
+3. 在详细信息窗格中的"产品许可证"部分，选择要移动的产品旁边的框，然后选择"**上** 移"或"**下移"。**
 4. 对要重新排序的每个产品重复步骤 3。
 5. 完成产品重新排序后，选择"保存"关闭详细信息窗格。
 

@@ -8,25 +8,25 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: 使用 Configuration Manager 在设备上部署配置包，以便它们可以载入服务。
-ms.openlocfilehash: 309f6b7ee396baba0fcec0061d48f062510d7350
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 15561e21dd93f8742dea48cf8c2eac2eef7e13fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175586"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194509"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>使用 Configuration Manager 载入 Windows 10 设备
 
 **适用于：**
 
 - [Microsoft 365DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
-- 系统中心 2012 R2 配置管理器
+- System Center 2012 R2 Configuration Manager
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>使用移动设备载入System Center Configuration Manager
 
@@ -40,18 +40,18 @@ ms.locfileid: "59175586"
 
 5. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *DeviceComplianceOnboardingScript.cmd 的文件*。
 
-6. 按照 Package [and Programs in System Center 2012 R2 Configuration Manager一文中的步骤部署](/previous-versions/system-center/system-center-2012-R2/gg699369(v=technet.10))程序包。
+6. 按照 Package [and Programs in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369(v=technet.10))一文中的步骤部署程序包。
 
 7. 选择要将程序包部署到的预定义设备集合。
 
 > [!NOTE]
-> Microsoft 365在[OOBE](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87)体验阶段，终结点数据丢失防护不支持 (载入) 载入。 确保用户在运行完安装或升级后Windows OOBE。
+> Microsoft 365在[OOBE](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87)体验阶段，终结点数据丢失防护不支持 (载入) 阶段。 确保用户在运行完安装或升级后Windows OOBE。
 
 > [!TIP]
 > 载入设备后，你可以选择运行检测测试来验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)设备运行检测测试。
 >
 > 请注意，在 Configuration Manager 应用程序上创建检测规则可以持续检查设备是否已载入。 应用程序是一种与包和程序不同的对象类型。
-> 如果由于挂起的 OOBE (任何其他原因) ，设备尚未载入，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
+> 如果由于挂起的 OOBE (任何其他原因) 未载入设备，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
 >
 > 通过创建检测规则检查"OnboardingState"注册表值是否为 (= 1，REG_DWORD) 实现此行为。
 > 此注册表值位于"HKLM\SOFTWARE\Microsoft\Windows高级威胁防护\状态"下。
@@ -115,7 +115,7 @@ Value: 0 or 1
 > [!NOTE]
 > 阻止这些活动可能会中断合法的业务流程。 最佳方法是设置要审核的所有内容，确定哪些内容可安全打开，然后在没有误报检测的终结点上启用这些设置。
 
-**网络保护功能**
+**网络保护**
 
 在审核或阻止模式下启用网络保护之前，请确保已安装反恶意软件平台更新，该更新可以从支持 [页面获取](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
 
@@ -132,11 +132,11 @@ Value: 0 or 1
 出于安全考虑，用于"载出"设备的程序包将在下载日期 30 天后过期。 发送到设备的过期载出包将被拒绝。 下载载出包时，你将收到程序包到期日期的通知，并且该日期也将包含在程序包名称中。
 
 > [!NOTE]
-> 不得同时在同一设备上部署载入和载出策略，否则将导致不可预知的冲突。
+> 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
 
 ### <a name="offboard-devices-using-microsoft-endpoint-configuration-manager-current-branch"></a>使用当前分支Microsoft Endpoint Configuration Manager载设备
 
-如果使用Microsoft Endpoint Configuration Manager分支，请参阅创建[载出配置文件](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
+如果使用 Microsoft Endpoint Configuration Manager当前分支，请参阅[创建载出配置文件](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>使用 System Center 2012 R2 Configuration Manager 的载出设备
 
@@ -144,7 +144,7 @@ Value: 0 or 1
 
 2. 在导航窗格中，选择 **"设置**  >   **载入** >  **""载出"。**
 
-3. 选择Windows 10作为操作系统。
+3. 选择Windows 10操作系统。
 
 4. 在"**部署方法"** 字段中，选择 **"Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602"。**
 
@@ -152,7 +152,7 @@ Value: 0 or 1
 
 6. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
-7. 按照 Package [and Programs in System Center 2012 R2 Configuration Manager一文中的步骤部署](/previous-versions/system-center/system-center-2012-R2/gg699369(v=technet.10))程序包。
+7. 按照 Package [and Programs in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369(v=technet.10))一文中的步骤部署程序包。
 
 8. 选择要将程序包部署到的预定义设备集合。
 
@@ -164,7 +164,7 @@ Value: 0 or 1
 
 如果你正在使用当前分支Microsoft Endpoint Configuration Manager，请使用 Configuration Manager 控制台中的内置 Microsoft Defender for Endpoint 仪表板。 有关详细信息，请参阅 [Microsoft Defender 高级威胁防护 - 监视](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
 
-如果使用的是 System Center 2012 R2 Configuration Manager，则监控由两部分组成：
+如果使用 2012 R2 配置System Center，则监控由两部分组成：
 
 1. 确认配置包已正确部署，并且正在 (或已成功) 网络中设备上运行配置包。
 
@@ -199,7 +199,7 @@ Path: “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status”
 Name: “OnboardingState”
 Value: “1”
 ```
-有关详细信息，请参阅 introduction [to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10))。
+有关详细信息，请参阅 Introduction [to compliance settings in System Center 2012 R2 Configuration Manager。](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10))
 
 ## <a name="related-topics"></a>相关主题
 - [使用Windows 10载入设备](dlp-configure-endpoints-gp.md)

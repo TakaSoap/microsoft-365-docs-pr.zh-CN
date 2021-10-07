@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2ab33603f0e4dc1d435a73209e87cd8bf7172233
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9124d4d35d10cf344ec6f4cde8afb9021a373a65
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196206"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194881"
 ---
 # <a name="contact-support-for-slovenia"></a>联系斯洛文尼亚支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "59196206"
 ## <a name="phone-number"></a>电话号码
 080 080 922
 
-## <a name="hours"></a>小时
+## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

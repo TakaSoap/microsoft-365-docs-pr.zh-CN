@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何更改针对你的企业订阅的计费频率。
 ms.date: 04/02/2021
-ms.openlocfilehash: 52bf7f3eda473e241f5fef7c5d7c8e7417ab841e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: adc1d5478db07d148a7f83c4a0e6f5d9509447a0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200685"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194701"
 ---
 # <a name="change-your-billing-frequency"></a>更改计费频率
 
@@ -43,4 +43,4 @@ ms.locfileid: "59200685"
 [查看帐单或发票](../../commerce/billing-and-payments/view-your-bill-or-invoice.md)（文章）\
 [支付订阅费用](../../commerce/billing-and-payments/pay-for-your-subscription.md) (文章) \
 [了解如何查找和查看帐单或](view-your-bill-or-invoice.md) 发票 (文章) \
-[更改帐单邮寄 (](change-your-billing-addresses.md) 文章) 
+[更改帐单邮寄地址](change-your-billing-addresses.md) (文章) 

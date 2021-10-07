@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,27 +19,27 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何管理组织的免费自助注册订阅。
 ms.date: 03/17/2021
-ms.openlocfilehash: b942d21fb3c4a6d6b8ab27fafb2af00a095c2a608909142788e46dbe60cdfa9d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 24f852a1eb9983e211000b59bda32eaa2c6bf0fa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852147"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192375"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>管理自助服务注册订阅
 
 ## <a name="what-are-self-service-sign-up-subscriptions"></a>什么是自助服务注册订阅？
 
-您的组织中的用户可以注册有限数量的免费自助注册订阅。 用户只能自行注册和使用自助注册订阅。 通过阻止用户注册以及删除用户已注册的免费订阅，你可以管理自助服务注册订阅。 有关自助注册和可用订阅的信息，请参阅在组织中使用自助服务 [注册](../../admin/misc/self-service-sign-up.md)。
+您的组织中的用户可以注册有限数量的免费自助注册订阅。 用户只能自行注册和使用自助注册订阅。 通过阻止用户注册以及删除用户已注册的免费订阅，你可以管理自助服务注册订阅。 有关自助服务注册和可用订阅的信息，请参阅在组织中使用自助服务 [注册](../../admin/misc/self-service-sign-up.md)。
 
 ## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>查看自助服务注册订阅列表
 
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+1. 在管理中心中，转到 **“账单”** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">“你的产品”</a>页面。
 2. 在"**产品"** 选项卡上，选择筛选器图标，然后选择"免费 **"。** 将显示所有自助注册订阅的列表。
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>这些订阅与自助服务购买订阅如何不同？
 
-自助服务注册订阅是免费的，可用于比自助服务购买订阅更大的产品列表。 当用户注册自助服务购买订阅时，他们负责支付该订阅费用。 自助服务购买订阅仅适用于 Power Platform (Power BI、Power Apps、Power Automate) 、Project 和 Visio。 有关详细信息，请参阅 [自助服务购买常见问题解答](self-service-purchase-faq.yml)。
+自助服务注册订阅是免费的，可用于比自助服务购买订阅更大的产品列表。 当用户注册自助服务购买订阅时，他们负责支付该订阅费用。 自助服务购买订阅仅适用于 Power Platform (Power BI、Power Apps 和 Power Automate) 、Project 和 Visio。 有关详细信息，请参阅 [自助服务购买常见问题解答](self-service-purchase-faq.yml)。
 
 ## <a name="block-users-from-signing-up"></a>阻止用户注册
 
@@ -50,12 +50,12 @@ ms.locfileid: "53852147"
 > [!IMPORTANT]
 > 当您删除自助服务注册订阅时，将阻止所有用户访问其数据和电子邮件，并删除所有数据和电子邮件。
 
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+1. 在管理中心中，转到 **“账单”** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">“你的产品”</a>页面。
 2. 在"**产品"** 选项卡上，选择筛选器图标，然后选择"免费 **"。**
 3. 选择要删除的自助服务注册订阅。 
 4. On the subscription details page， in the **Subscriptions and payment settings** section， select **Delete subscription**.
-5. 在"**删除订阅"** 窗格中，选中复选框，然后选择"删除 **订阅"。**
+5. 在"**删除订阅"** 窗格中，选中该复选框，然后选择"删除 **订阅"。**
 
-## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>我有一个自助式注册订阅，可阻止删除目录
+## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>我拥有阻止目录删除的自助注册订阅
 
-单个用户可以注册的自助服务注册产品还可以在 Azure AD 目录中创建来宾用户进行身份验证。 为了避免数据丢失，这些自助式产品会阻止删除目录，直到从目录中完全删除。 它们只能由 Azure AD 管理员删除。有关详细信息，请参阅删除[目录中的Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-delete-howto)
+单个用户可以注册的自助服务注册产品还可以在 Azure AD 目录中创建来宾用户进行身份验证。 为了避免数据丢失，这些自助式产品会阻止删除目录，直到从目录中完全删除它们。 它们只能由 Azure AD 管理员删除。有关详细信息，请参阅从中删除[Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-delete-howto)

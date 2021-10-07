@@ -9,22 +9,22 @@ ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 设置云服务的路线图Microsoft 365。
-ms.openlocfilehash: 050dc8e622bbfe9f1a065a74f4dffcdd3647074a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 943235898cc3d1bf1ad9232d6d8196fd9202ff11
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170612"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192030"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>云解决方案云服务Microsoft 365
 
 若要获得企业用户对Microsoft 365的创造力、团队合作和生产力优势，请部署最符合组织需求的云服务。
 
-如果您具有适用于 Exchange、SharePoint 或 Skype for Business 的现有基于服务器的部署，并且想要将整个组织迁移到 Microsoft 365 企业版，请参阅客户端和服务器[软件路线图](client-server-software-roadmap-microsoft-365.md)。 此路线图包括Microsoft Office客户端产品、本地 Office Server 产品和基于 Microsoft Windows &ndash; 的设备。
+如果您具有适用于 Exchange、SharePoint 或 Skype for Business 的现有基于服务器的部署，并且想要将整个组织迁移到 Microsoft 365 企业版，请参阅客户端和服务器[软件路线图](client-server-software-roadmap-microsoft-365.md)。 此路线图Microsoft Office客户端产品、本地 Office Server 产品和基于 Microsoft Windows &ndash; 的设备。
 
 ## <a name="deploy"></a>部署
 

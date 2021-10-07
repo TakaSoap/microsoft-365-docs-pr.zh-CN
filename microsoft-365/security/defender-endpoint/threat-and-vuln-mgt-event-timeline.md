@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9397eeaf9edd58903a50cf3f9194b995c56d216
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e74989d85919e0f8c89f28e67c5bbbf7cec7ff04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162265"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191667"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>事件时间线 - 危险和漏洞管理
 
@@ -45,11 +45,11 @@ ms.locfileid: "59162265"
 
 ## <a name="navigate-to-the-event-timeline-page"></a>导航到"事件时间线"页
 
-还有三个入口点来自 危险和漏洞管理[仪表板](tvm-dashboard-insights.md)：
+还有三个入口点来自危险和漏洞管理[仪表板](tvm-dashboard-insights.md)：
 
 - **组织曝光分数卡**：将鼠标悬停在"时间曝光分数"图中的事件点上，然后选择"查看这一天的所有事件"。 这些事件表示软件漏洞。
-- **Microsoft 设备安全分数**：将鼠标悬停在"你的设备时间分数"图中的事件点上，然后选择"查看当天的所有事件"。 这些事件表示新的配置评估。
-- **Top events card**： Select "Show more" at the bottom of the top events table. 卡片显示最近 7 天内影响最大的三个事件。 如果事件影响大量设备，或者它是一个关键漏洞，则可包括有影响的事件。
+- **Microsoft 设备安全分数**：将鼠标悬停在"设备一段时间的分数"图中的事件点上，然后选择"查看这一天的所有事件"。 这些事件表示新的配置评估。
+- **Top events card**： Select "Show more" at the bottom of the top events table. 卡片显示最近 7 天内影响最大的三个事件。 如果事件影响大量设备，或者它是一个关键漏洞，则可包括影响事件。
 
 ### <a name="exposure-score-and-microsoft-secure-score-for-devices-graphs"></a>设备曝光分数和 Microsoft 安全分数图
 
@@ -84,7 +84,7 @@ ms.locfileid: "59162265"
 
 ![事件时间线页面。](images/tvm-event-timeline-overview-mixed-type.png)
 
-### <a name="columns"></a>列
+### <a name="columns"></a>列数
 
 - **日期**：月、日、年
 - **事件**：影响的事件，包括组件、类型和受影响设备的数量
@@ -132,7 +132,7 @@ ms.locfileid: "59162265"
 
 ## <a name="related-topics"></a>相关主题
 
-- [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威胁漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [仪表板](tvm-dashboard-insights.md)
 - [风险评分](tvm-exposure-score.md)
 - [安全性建议](tvm-security-recommendation.md)

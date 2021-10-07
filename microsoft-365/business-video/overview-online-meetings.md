@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何为企业主持联机会议。
-ms.openlocfilehash: 9874e22724dd04255fb6109b5fb268ac2dcd3f95
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9988caf32fe36d74b90da217ffb6114f2986f7f8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171177"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194749"
 ---
 # <a name="host-online-meetings-for-your-business"></a>为企业主持联机会议
 
@@ -58,12 +58,12 @@ ms.locfileid: "59171177"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn?autoplay=false]
 
-使用 Microsoft Teams 可以同时与公司内的员工和公司外部的客户加入会议。 试一试：
+使用 Microsoft Teams 可以加入与公司内员工和公司外部客户的会议。 试一试：
 
 1. In Microsoft Teams， in the left navigation， choose **Meetings**.
-1. 打开要加入的会议，然后选择"加入 **Microsoft Teams会议"。**
+1. 打开要加入的会议，然后选择"加入Microsoft Teams **会议"。**
 1. 当会议打开时，选择"立即 **加入"。**
-1. 受邀加入会议的任何客户端都将在日历中打开会议、选择会议链接、下载 Teams 应用或在 Web 上打开它、输入其名称，然后选择"加入 **"。**
+1. 受邀加入会议的任何客户端都将在日历中打开会议，选择会议链接，下载 Teams 应用或在 Web 上打开它，输入其名称，然后选择"加入 **"。**
 1. 当你看到客户端出现在大厅中时，选择" **允许** "以允许他们进入。
 1. 只要每个人都加入，就可以开始会议。
  

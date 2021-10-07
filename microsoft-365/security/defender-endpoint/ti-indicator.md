@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3dc075caccc5724ed3ea76e5d3c06f3a5b6f7f2e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d7805ad7a2c1aae750b6588a6dd2c4141c9b93c3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162255"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191631"
 ---
 # <a name="indicator-resource-type"></a>指示器资源类型
 
@@ -57,7 +57,7 @@ indicatorType|枚举|指示器的类型。 可能的值是："FileSha1"、"FileS
 应用程序|String|与指示器关联的应用程序。
 action|枚举|如果在组织中发现指示器，将采取的操作。 可能的值包括："Warn"、"Block"、"Audit"、"Alert"、"AlertAndBlock"、"BlockAndRemediate"和"Allowed"。
 |externalID|String|客户可以在自定义关联请求中提交的 ID。|
-sourceType|枚举|"用户"（如果由用户创建的指示器 (例如从门户) 创建的指示器，例如"AadApp"（如果通过 API 使用自动应用程序提交）。
+sourceType|枚举|"用户"（如果由用户创建的指示器 (例如，从门户) ，"AadApp"，以防它通过 API 使用自动应用程序提交。
 createdBySource|string|提交指示器的用户/应用程序的名称。
 createdBy|String|提交指示器的用户/应用程序的唯一标识。
 lastUpdatedBy|String|上次更新指示器的用户/应用程序的标识。
@@ -67,17 +67,17 @@ lastUpdateTime|DateTimeOffset|上次更新指示器的时间。
 severity|枚举|指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。
 title|String|指示器标题。
 说明|String|指示器的说明。
-recommendedActions|String|指示器的建议操作。
+recommendedActions|字符串|指示器的建议操作。
 rbacGroupNames|字符串列表|RBAC 设备组名称，其中指示器已公开且处于活动状态。 空列表，以防它向所有设备公开。
 rbacGroupIds|字符串列表|RBAC 设备组 ID，其中指示器已公开且处于活动状态。 空列表，以防它向所有设备公开。
 ## <a name="public-preview-indicator-types"></a>公共预览版：指示器类型
 
 > [!IMPORTANT]
-> 本节中的信息 (公共预览版自动调查和修正 **引擎) 预** 发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
+> 本节中 (公共预览版 **自动** 调查和修正引擎) 预发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
 API 支持的指示器操作类型为：
 
-- 允许
+- Allowed
 - 通知
 - AlertAndBlock
 - Audit
@@ -87,14 +87,14 @@ API 支持的指示器操作类型为：
 
 操作类型的 API 列表包含新的响应操作以及 AlertAndBlock 和 Alert (之前的) 。 有关响应操作类型的说明详细信息，请参阅创建 [指示器](manage-indicators.md)。
 
-允许、警告、阻止和 BlockAndRemediate IoC 响应操作在公共预览版中。 有关公共预览版的详细信息，请参阅公共预览版：自定义文件 IoC 增强功能和[API 架构更新 - Microsoft 技术Community。](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/public-preview-custom-file-ioc-enhancements-and-api-schema/ba-p/2676997)
+允许、警告、阻止和 BlockAndRemediate IoC 响应操作在公共预览版中。 有关公共预览版的详细信息，请参阅公共预览版：自定义文件 IoC 增强功能和 API 架构更新[- Microsoft 技术Community。](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/public-preview-custom-file-ioc-enhancements-and-api-schema/ba-p/2676997)
 
 
 
 
 > [!Note]
 >
-> AlertAndBlock (响应操作，当功能) GAed 时，将删除 Alert) 。 估计的 GA 日期（宽限期）为 2021 年 10 月。  我们建议尽快更新任何现有模板或脚本。
+> 当功能达到 GAed 时 (AlertAndBlock 和 Alert) 响应操作将被删除。 估计的 GA 日期（宽限期）为 2021 年 10 月。  我们建议尽快更新任何现有模板或脚本。
 
 ## <a name="json-representation"></a>Json 表示形式
 

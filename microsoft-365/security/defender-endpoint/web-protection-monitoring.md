@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6a134dced8eb749bebdf7e486c6d06c9cc19048b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5bf6cc1f64cfbc7c4238e01ad7d623e3164639c8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175417"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191547"
 ---
 # <a name="monitor-web-browsing-security"></a>监视 Web 浏览安全性
 
@@ -33,7 +33,7 @@ ms.locfileid: "59175417"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)。
 
-通过 Web 保护，可以通过报告门户中"报告 web > **Web** 保护"下的报告监视Microsoft 365 Defender安全。 该报告包含提供 Web 威胁检测统计信息的卡片。
+通过 Web 保护，可以通过"报告"和"Web 保护"下的报表>**组织的 Web** 浏览Microsoft 365 Defender安全。 该报告包含提供 Web 威胁检测统计信息的卡片。
 
 - **随着时间的推移进行** Web 威胁防护检测 - 此趋势卡片显示在所选时间段（"过去 30 天 (最近 30 天、过去 3 个月、过去 6 个月）内按类型检测到的 Web 威胁) 
 

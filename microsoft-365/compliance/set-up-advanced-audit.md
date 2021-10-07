@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-audit
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何设置高级审核，以便可以在用户帐户泄露时执行取证调查或调查其他与安全相关的事件。
-ms.openlocfilehash: 45eef36cd0577708869846308c88f2dd0926d43e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 34ae98eaafcc3eeb3d6a25a457f017999b8c6078
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196894"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192063"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>在"管理"中设置Microsoft 365
 
@@ -55,7 +55,7 @@ ms.locfileid: "59196894"
 
 ## <a name="step-2-enable-advanced-audit-events"></a>步骤 2：启用高级审核事件
 
-当用户在 Exchange Online 和 SharePoint Online 中执行搜索时，必须启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint) 中的两个高级审核事件。 ( 若要为用户审核这两个事件，请为在 PowerShell 中 (每个用户) 以下[Exchange Online命令](/powershell/exchange/connect-to-exchange-online-powershell)：
+当用户在 Exchange Online 和 SharePoint Online 中执行搜索时，必须启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint) 两个高级审核事件。 ( 若要为用户审核这两个事件，请对 ([PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中每个用户) 运行Exchange Online命令：
 
 ```powershell
 Set-Mailbox <user> -AuditOwner @{Add="SearchQueryInitiated"}

@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何定义和管理数据丢失防护策略的警报。
-ms.openlocfilehash: ee04f6080edcde86dc39c7f4aa43130223fee8bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1692467ac882b563cedd51ad3770312ba883ccd9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175566"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194497"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>配置和查看数据丢失防护策略警报
 
-DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。 对敏感项目采取操作时，可以通过配置 DLP 警报来通知您。 本文演示如何定义与 DLP 策略或 DLP 策略的数据丢失防护 () 策略。 你将看到如何使用新 DLP 警报管理仪表板Microsoft 365 合规中心 DLP 策略违反的[警报、事件和](https://compliance.microsoft.com/)关联元数据。
+DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。 对敏感项目采取操作时，可以通过配置 DLP 警报来通知您。 本文演示如何定义与 DLP 策略或 DLP 策略的数据丢失防护 () 策略。 你将看到如何使用新 DLP 警报管理仪表板Microsoft 365 合规中心查看 DLP 策略违反的警报、[事件和](https://compliance.microsoft.com/)关联元数据。
 
 <!-- LEFT OFF HERE-->
 
@@ -37,7 +37,7 @@ DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。
 
 以下功能是以下功能的一部分：
 
--   **DLP 警报管理仪表板**：在 [](https://compliance.microsoft.com/)Microsoft 365 合规中心中，此仪表板显示对以下工作负载强制执行的 DLP 策略的警报：
+-   **DLP 警报管理仪表板**[：](https://compliance.microsoft.com/)在Microsoft 365 合规中心中，此仪表板显示对以下工作负载强制执行的 DLP 策略的警报：
 
     -   Exchange
     -   SharePoint
@@ -46,7 +46,7 @@ DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。
     -   设备
 -   **高级警报配置选项**：这些选项是 DLP 策略创作流的一部分。 使用它们创建丰富的警报配置。 你可以根据事件数或泄露数据的大小创建单个事件警报或聚合警报。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在开始之前，请确保你具有必要的先决条件：
 
@@ -56,9 +56,9 @@ DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>DLP 警报管理仪表板的许可
 
-DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 To get started， you should be eligible for Office 365 DLP for Exchange Online， SharePoint Online， and OneDrive for Business. 有关 DLP 的许可要求Office 365，请参阅哪些许可证为用户提供从服务中获益[的权利？。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)
+DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 若要开始，你应该有资格使用 Office 365 DLP Exchange Online SharePoint Online 和 OneDrive for Business。 有关 DLP 的许可要求Office 365，请参阅哪些许可证为用户提供从服务中获益[的权利？。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)
 
-使用符合[使用 DLP](endpoint-dlp-learn-about.md)条件Teams在[DLP](dlp-microsoft-teams.md)警报管理仪表板中，Teams终结点 DLP 策略警报和 DLP 策略警报。
+使用符合[使用 DLP](endpoint-dlp-learn-about.md)条件Teams [DLP](dlp-microsoft-teams.md)的客户将在 DLP 警报管理仪表板中查看其Teams DLP 策略警报和 DLP 策略警报。
 
 ### <a name="licensing-for-alert-configuration-options"></a>警报配置选项的许可
 
@@ -78,7 +78,7 @@ DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 To get
 -   合规数据管理员
 -   安全管理员
 -   安全操作员
--   安全读取者
+-   安全信息读取者
 
 若要访问 DLP 警报管理仪表板，您需要管理警报角色和以下角色之一：
 
@@ -91,7 +91,7 @@ DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 To get
 
 :::image type="content" source="../media/incident-reports-options-aggregated-alerts.png" alt-text="Screenshot showing options for incident reports for users who are eligible for aggregated alert configuration options." border="false":::
 
-可以使用这些警报配置选项来配置一个设置，该设置定义 DLP 规则匹配在触发警报之前发生的时间。 通过此配置，您可以设置一个策略，以在活动符合策略条件或超出特定阈值时（基于活动数或根据已筛选数据量）生成警报。
+可以使用这些警报配置选项来配置一个设置，该设置定义 DLP 规则匹配在触发警报之前发生的时间。 通过此配置，您可以设置一个策略，以在活动符合策略条件或超出特定阈值时（基于活动数或根据已过滤数据的量）生成警报。
 
 如果符合单事件警报配置选项[](#licensing-for-alert-configuration-options)的条件，则会看到 DLP 策略创作体验中的以下警报配置选项。 使用此选项可创建每次因用户活动而发生 DLP 规则匹配时都会触发的警报。
 
@@ -120,7 +120,7 @@ DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 To get
     |                   | 位置                      | 检测到事件的工作负荷                                      | 所有事件                               |
     |                   | 活动时间              | 导致 DLP 冲突的用户活动时间                    | 所有事件                               |
     |*影响的实体*||
-    |  | User                          | 导致 DLP 冲突的用户                                          | 所有事件                               |
+    |  | 用户                          | 导致 DLP 冲突的用户                                          | 所有事件                               |
     |                   | 主机名称                      | 检测到 DLP 违反情况的机器的主机名              | 设备事件                           |
     |                   | IP 地址                    | 计算机 IP 地址                                                  | 设备事件                           |
     |                   | 文件路径                     | 冲突所涉及的文件的绝对路径                        | SharePoint、OneDrive 和设备事件 |
@@ -128,7 +128,7 @@ DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 To get
     |                   | 电子邮件主题                 | 违反 DLP 策略的电子邮件主题                          | Exchange事件                          |
     |                   | 电子邮件附件             | 电子邮件中违反 DLP 策略的附件的名称         | Exchange事件                          |
     |                   | 网站所有者                    | 网站所有者的名称                                                     | SharePoint 和 OneDrive 事件           |
-    |                   | 网站 URL                      | 网站或网站SharePoint的完整ONEDRIVE URL                                | SharePoint 和 OneDrive 事件           |
+    |                   | 网站 URL                      | SharePoint 或 OneDrive 的完整 URL                                | SharePoint 和 OneDrive 事件           |
     |                   | 已创建文件                  | 文件创建时间                                                      | SharePoint 和 OneDrive 事件           |
     |                   | 上次修改文件            | 上次修改文件的时间                                  | SharePoint 和 OneDrive 事件           |
     |                   | 文件大小                     | 文件大小                                                           | SharePoint 和 OneDrive 事件           |
@@ -143,7 +143,7 @@ DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 To get
     
 1.  选择 **"敏感信息类型"** 选项卡以查看有关内容中检测到的敏感信息类型的详细信息。 详细信息包括可信度和计数。
 
-2.  调查警报后，选择"管理警报"以更改 **(、** 正在调查、已消除或已 **解决) 。** 您还可以添加注释并将警报分配给您的组织中的某人。
+2.  调查警报后，选择"管理警报"以更改 (**活动**、正在调查、已消除或已解决) 。  您还可以添加注释并将警报分配给您的组织中的某人。
 
     -   若要查看工作流管理的历史记录，请选择"管理 **日志"。**
     -   对警报执行所需操作后，将警报的状态设置为"已解决 **"。**

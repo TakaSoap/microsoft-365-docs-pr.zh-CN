@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 364dbb4f3cb077f1428e76251554090c06b0f0cf
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: f59c91e75dd573e9f32d05a9673dd3efb5c10af7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497580"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191698"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>使用组策略安排防病毒扫描
 
@@ -30,11 +30,11 @@ ms.locfileid: "59497580"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-本文介绍如何使用组策略配置计划扫描。 若要了解有关计划扫描和扫描类型有关详细信息，请参阅配置计划的快速或完全Microsoft Defender 防病毒[扫描](schedule-antivirus-scans.md)。 
+本文介绍如何使用组策略配置计划扫描。 若要了解有关计划扫描和扫描类型有关详细信息，请参阅配置计划的快速或完整扫描[Microsoft Defender 防病毒扫描](schedule-antivirus-scans.md)。 
 
 ## <a name="configure-antivirus-scans-using-group-policy"></a>使用组策略配置防病毒扫描
 
-1. 在组策略管理计算机上，在组策略编辑器中，转到计算机配置管理模板 \>  \> **Windows 组件** \> **Microsoft Defender 防病毒** \> **扫描**。
+1. 在组策略管理计算机上，在组策略编辑器中，转到计算机配置管理模板 Windows 组件 Microsoft Defender 防病毒 \>  \>  \>  \> **扫描**。
 
 2. 右键单击要配置的组策略对象， **然后选择编辑**。
 
@@ -47,7 +47,7 @@ ms.locfileid: "59497580"
 > [!NOTE]
 > 在配置计划扫描时，设置"仅在计算机打开但没有使用时启动计划扫描"（默认启用）可以通过要求计算机先处于空闲状态来影响预期的计划时间。
 >
-> 对于每周扫描，Windows服务器的默认行为是在计算机空闲时在自动维护之外进行扫描。 默认情况下，Windows 10在计算机处于空闲状态时在自动维护期间扫描。 若要更改此行为，请通过禁用 **ScanOnlyIfIdle** 修改设置，然后定义计划。
+> 对于每周扫描，Windows服务器的默认行为是在计算机空闲时在自动维护之外进行扫描。 默认情况下，Windows 10在计算机空闲时在自动维护期间扫描。 若要更改此行为，请通过禁用 **ScanOnlyIfIdle** 修改设置，然后定义计划。
 
 有关详细信息，请参阅管理 [何时](manage-protection-update-schedule-microsoft-defender-antivirus.md) 应下载和应用保护更新和阻止或允许用户 [本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) 主题。
 

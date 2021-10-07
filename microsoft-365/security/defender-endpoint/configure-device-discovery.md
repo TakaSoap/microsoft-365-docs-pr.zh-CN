@@ -1,6 +1,6 @@
 ---
 title: 配置设备发现
-description: 了解如何使用基本或标准发现Microsoft 365 Defender设备发现
+description: 了解如何使用基本或标准发现在 Microsoft 365 Defender中配置设备发现
 keywords: 基本， 标准， 配置终结点发现， 设备发现
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5c70a21ad3e47b2e2347c3f88ba276b3e9fd9801
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 261f5128c0ef26843f20e1d94b26ba86f0850349
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201678"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192975"
 ---
 # <a name="configure-device-discovery"></a>配置设备发现
 

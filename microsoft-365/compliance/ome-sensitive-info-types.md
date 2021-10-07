@@ -9,7 +9,7 @@ ms.date: 8/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection:
@@ -18,16 +18,16 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 了解如何使用策略为组织创建敏感信息类型Office 365 邮件加密。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ad570f64122aecd245b912b1b6545a5950e838cc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7b04747a6aa51b963bd031fde616d4463dbb7aaa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196935"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179063"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>使用邮件加密为组织创建敏感信息类型策略
 
-您可以使用邮件流规则Exchange或数据丢失防护 (DLP) 创建包含此策略的敏感信息Office 365 邮件加密。 若要创建Exchange流规则，可以使用 EAC Exchange管理 (或 PowerShell) 管理中心。
+您可以使用 DLP Exchange规则或数据丢失防护 (DLP) 创建包含此策略的Office 365 邮件加密。 若要创建Exchange流规则，可以使用 EAC Exchange管理 (或 PowerShell) 管理中心。
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>使用 EAC 中的邮件流规则创建策略
 
@@ -39,7 +39,7 @@ ms.locfileid: "59196935"
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>使用 PowerShell 创建的邮件流规则示例
 
-在 PowerShell 中运行以下命令，创建一个 Exchange 邮件流规则，如果电子邮件或附件包含以下敏感信息类型，则使用"仅加密"选项自动加密在组织外部发送的电子邮件：
+在 PowerShell 中运行以下命令，创建一个 Exchange 邮件流规则，如果电子邮件或附件包含以下敏感信息类型，则使用"仅加密"选项自动加密发送到组织外部的电子邮件：
 
 - ABA 路由号码
 - 信用卡号

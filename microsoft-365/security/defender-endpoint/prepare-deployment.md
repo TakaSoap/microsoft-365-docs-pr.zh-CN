@@ -2,15 +2,13 @@
 title: 准备 Microsoft Defender for Endpoint 部署
 description: 为部署 Microsoft Defender for Endpoint 准备利益干系人审批、日程表、环境注意事项和采用顺序
 keywords: 部署， 准备， 利益干系人， 时间线， 环境， 终结点， 服务器， 管理， 采用
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2fe6fa150967973cce58dec9cc47c625305462fc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0e577108f92abe0c704cd812e61445f8d0f83f13
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196300"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191739"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>准备 Microsoft Defender for Endpoint 部署
 
@@ -60,10 +58,10 @@ ms.locfileid: "59196300"
 
 ****
 
-|名称|Role|Action|
+|名称|Role|操作|
 |---|---|---|
-|输入名称和电子邮件|**CISO (** 首席) 一名执行代表，他作为新技术部署 *的组织内部发起人。*|SO|
-|输入名称和电子邮件|**网络防御运营中心 (CDOC)** CDOC 团队的代表，负责定义此更改如何与客户安全运营团队中的流程 *保持一致。*|SO|
+|输入名称和电子邮件|**CISO (** 首席信息安全) 一名执行代表，他作为新技术部署 *的组织内部发起人。*|SO|
+|输入名称和电子邮件|**网络防御操作中心 (CDOC)** CDOC 团队的代表，负责定义此更改如何与客户安全运营团队中的流程 *保持一致。*|SO|
 |输入名称和电子邮件|**安全** 架构师 来自安全团队的代表，负责定义此更改如何与组织中 *的核心安全体系结构保持一致。*|R|
 |输入名称和电子邮件|**工作区** 架构师 来自 IT 团队的代表，负责定义此变更如何与组织中的核心 *工作场所体系结构保持一致。*|R|
 |输入名称和电子邮件|**安全***分析师 来自 CDOC* 团队的代表，可以从安全操作角度提供有关此更改的检测功能、用户体验和整体实用性的输入。|I|
@@ -82,7 +80,7 @@ ms.locfileid: "59196300"
 |终结点计数|按操作系统表示的终结点总数。|
 |服务器计数|按操作系统版本表示的服务器总数。|
 |管理引擎|管理引擎名称和版本 (例如，System Center Configuration Manager Current Branch 1803) 。|
-|CDOC 分发|高级 CDOC 结构 (例如，第 1 层外包到 Contoso，第 2 层和 3 层内部分布于欧洲和亚洲) 。|
+|CDOC 分发|高级 CDOC 结构 (，例如，第 1 层外包到 Contoso，第 2 层和 3 层内部分布于欧洲和亚洲) 。|
 |SIEM 安全 (事件) |使用的 SIEM 技术。|
 |||
 
@@ -94,7 +92,7 @@ Microsoft 建议使用最小特权的概念。 Defender for Endpoint 利用内�
 
 ****
 
-|Personas|角色|如有必要， (Azure AD 角色) |分配到|
+|Personas|角色|如果需要， (Azure AD 角色) |分配到|
 |---|---|---|---|
 |安全管理员||||
 |安全分析师||||
@@ -107,7 +105,7 @@ Microsoft[建议使用Privileged Identity Management](/azure/active-directory/ac
 
 Defender for Endpoint 支持两种权限管理方法：
 
-- **基本权限管理**：将权限设置为完全访问或只读。 对于基本权限管理，具有 Globa 管理员或安全管理员角色的用户Azure Active Directory具有完全访问权限，而安全读者角色具有只读访问权限。
+- **基本权限管理**：将权限设置为完全访问或只读。 对于基本权限管理，拥有 Globa Administrator 或 Security Administrator 角色的用户Azure Active Directory具有完全访问权限，而安全读者角色具有只读访问权限。
 
 - 基于角色的访问控制 **(RBAC) ：** 通过定义角色、将 Azure AD 用户组分配给角色并授予用户组对设备组的访问权限来设置粒度权限。 有关详细信息。 请参阅 [使用基于角色的访问控制管理门户访问](rbac.md)。
 
@@ -132,7 +130,7 @@ Microsoft 建议利用 RBAC 来确保只有具有业务理由的用户才能访�
 
 在许多情况下，组织将拥有现有的终结点安全产品。 每个组织至少应该是防病毒解决方案。 但在某些情况下，组织可能还已经EDR解决方案。
 
-过去，由于与应用程序层和基础结构依赖项的紧密关联，替换任何安全解决方案会非常耗时且难以实现。 但是，由于 Defender for Endpoint 内置于操作系统中，因此替换第三方解决方案现在很容易实现。
+过去，由于与应用程序层和基础结构依赖关系紧密，替换任何安全解决方案会非常耗时且难以实现。 但是，由于 Defender for Endpoint 内置于操作系统中，因此替换第三方解决方案现在很容易实现。
 
 选择要使用的 Defender for Endpoint 组件并删除不适用的组件。 下表指示 Microsoft 建议如何启用终结点安全套件的顺序。
 
@@ -147,7 +145,7 @@ Microsoft 建议利用 RBAC 来确保只有具有业务理由的用户才能访�
 |NGP (下一代) |Microsoft Defender 防病毒是内置反恶意软件解决方案，可为台式机、便携计算机和服务器提供下一代保护。 Microsoft Defender 防病毒包括以下功能： <ul><li>云提供的保护功能，用于近乎即时地检测和阻止新出现的威胁。 在机器学习和 Intelligent Security Graph 功能的基础上，Microsoft Defender 防病毒的下一代技术包括云提供的保护功能。</li><li>始终使用高级文件和进程行为监视以及其他启发式扫描 (也称为"实时保护") 。</li><li>基于机器学习、人工和自动化大数据分析，以及深入的威胁抵御研究的专用保护更新。</li></ul> <p> [了解详细信息](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)。|3|
 |攻击面减少 (ASR) |Microsoft Defender for Endpoint 中的攻击面减少功能可帮助保护组织的设备和应用程序免受新的和新出现的威胁。 <br> [了解更多信息。](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)|4 |
 |AIR &自动 (修正) |Microsoft Defender for Endpoint 使用自动调查显著减少需要单独调查的警报数量。 自动调查功能利用各种检查算法和分析人员 (例如) 手册）来检查警报并立即采取修正措施来解决违规问题。 这将极大地减少警报量，使安全操作专家能够专注于更复杂的威胁和其他高价值计划。 <p> [了解更多信息。](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)|不适用|
-|Microsoft 威胁专家 (MTE) |Microsoft 威胁专家是一项托管搜寻服务，可为安全操作中心 (SOC) 提供专家级别的监视和分析，以帮助他们确保不会错过其独特环境中的关键威胁。 <p> [了解更多信息。](/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)|不适用|
+|Microsoft 威胁专家 (MTE) |Microsoft 威胁专家是一项托管搜寻服务，可为安全操作中心 (SOC) 提供专家级别的监视和分析，以帮助他们确保不会错过独特环境中的关键威胁。 <p> [了解更多信息。](/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)|不适用|
 
 ## <a name="next-step"></a>后续步骤
 

@@ -2,27 +2,25 @@
 title: 在 iOS 功能上部署 Microsoft Defender for Endpoint
 description: 介绍如何在注销的 iOS 设备上部署适用于终结点的 Microsoft Defender。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， ios， 配置， 功能， ios
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: sunasing
 author: sunasing
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7057de56de516843fa91e87a50d56e03a2d88e50
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 32063caceaf74a3924585aac0142958736dcc5c8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941919"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192699"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>在注销的 iOS 设备上部署 Microsoft Defender for Endpoint
 
@@ -37,18 +35,18 @@ ms.locfileid: "59941919"
 > [!NOTE]
 > iOS 上的 Defender for Endpoint 使用 VPN 来提供 Web 保护功能。 这不是常规 VPN，它是不接受设备外流量的本地/自循环 VPN。
 
-## <a name="configure-microsoft-defender-for-endpoint-risk-signals-in-app-protection-policy-mam"></a>在应用保护策略中配置 Microsoft Defender 的终结点风险信号 (MAM) 
+## <a name="configure-microsoft-defender-for-endpoint-risk-signals-in-app-protection-policy-mam"></a>在应用保护策略中为 Microsoft Defender 配置 MAM (终结点) 
 
-Microsoft Defender for Endpoint 可以配置为发送要用于应用保护策略 (APP（也称为 iOS/iPadOS 上的 MAM) MAM） 中的威胁信号。 借助此功能，也可使用 Microsoft Defender for Endpoint 保护从注销的设备访问公司数据。
+Microsoft Defender for Endpoint 可以配置为发送要用于应用保护策略 (APP（也称为 iOS/iPadOS 上的 MAM) MAM）。 借助此功能，也可使用 Microsoft Defender for Endpoint 保护从注销的设备访问公司数据。
 
 ### <a name="pre-requisites"></a>先决条件
 
-1. **验证连接器是否已启用**。 <br> 在统 [一安全控制台上](https://security.microsoft.com)，转到设置  >  **终结点**  >  **高级功能**，并确保Microsoft Intune **连接** 已启用。
+1. **验证连接器是否已启用**。 <br> 在统 [一安全控制台上](https://security.microsoft.com)，转到设置  >  **终结点**  >  **高级功能**，并确保Microsoft Intune **连接**。
 2. **验证连接器在 Intune 门户上是否已启用**。 <br> 在 [Microsoft Endpoint manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，转到终结点 **安全** Microsoft Defender  >  **for Endpoint** 并确保连接状态已启用。
 
 使用以下步骤使用 Microsoft Defender for Endpoint 设置应用保护策略：
 
-1. 设置从你的 Microsoft Endpoint Manager 租户到 Microsoft Defender for Endpoint 的连接。 在 [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心 中，转到"设置) "下的"跨平台) 或 Endpoint Security Microsoft Defender for Endpoint ("下的"租户管理连接器和令牌 \>  \> **Microsoft Defender for Endpoint**  \>  ("，然后打开适用于 **iOS** 的应用保护策略 设置 下的切换。
+1. 设置从你的 Microsoft Endpoint Manager 租户到 Microsoft Defender for Endpoint 的连接。 在 [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心中，转到"设置) "下的"跨平台) 或 Endpoint \>  \> **Security** Microsoft Defender for Endpoint ("下的"适用于终结点的 **Microsoft Defender** (租户管理连接器和令牌"，然后打开适用于 \> **iOS** 的应用保护策略 设置 下的切换。
 1. 选择“**保存**”。 应看到"**连接状态**"现在设置为"**已启用"。**
 1. 创建应用保护策略：完成 Microsoft Defender for Endpoint 连接器设置后，导航到策略 (下的应用应用保护策略) 以创建新策略或更新 \> 现有策略。
 1. 选择组织为策略 **所需的** 平台、应用、数据保护、访问要求设置。

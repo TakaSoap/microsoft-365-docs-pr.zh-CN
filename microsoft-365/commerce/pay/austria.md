@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ca3b04b0ff104760aea224c6fd2739d6f1d7ef0d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 94bd04299328827d54ae8a4aeff6ef234bc1f419
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175717"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194677"
 ---
 # <a name="payment-information-for-austria"></a>奥地利的付款信息
 
@@ -26,7 +26,7 @@ ms.locfileid: "59175717"
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**Please pay in EUR and reference invoice number () on your payment invoice.**
+**Please pay in EUR and reference invoice number (s) on your payment invoice.**
 
 如果你有由 **Microsoft Ireland Operations Limited** 计费的发票，请使用此银行信息：
 
@@ -34,7 +34,7 @@ ms.locfileid: "59175717"
 **SWIFT 代码：** 一百万  
 **IBAN 代码：** GB31CITI18500812207591  
 **SORT 代码：185008**  
-**帐户号：12207591**  
+**帐户编号：12207591**  
 **帐户名称：** MICROSOFT
 
 如果你有从 2021 年 3 月 1 日至 2021 年 3 月 1 日由 **MICROSOFT Ichsterreich GmbH** 计费的发票，请使用此银行信息：
@@ -42,7 +42,7 @@ ms.locfileid: "59175717"
 **Bank：** Bank Europe plc  
 **SWIFT 代码：** 一台或多张  
 **IBAN 代码：** IE81CITI99005170000124  
-**帐户编号：70000124**  
+**帐号：70000124**  
 **帐户名称：** MICROSOFT  
 
 从本地 Microsoft 子公司颁发的发票使用标准 VAT/销售税/GST 费率颁发，并被视为用于 VAT/销售税/GST 的国内服务提供。

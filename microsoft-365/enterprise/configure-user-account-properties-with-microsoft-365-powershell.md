@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 使用 PowerShell for Microsoft 365配置租户中单个或多个用户帐户Microsoft 365属性。
-ms.openlocfilehash: b638a3afafd3c1701cf11f5868d0413d3995eadd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 01b17837e4babc31d385be66f9387129baf87da1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161997"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178907"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>使用 Microsoft 365 PowerShell 配置用户帐户属性
 
@@ -87,15 +87,15 @@ Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName | More
 
 此命令指示 PowerShell：
   
-1. 获取 **Get-AzureADUser** (用户帐户的所有信息) 并将其发送到下一个 **|** () 。
+1. 获取 **Get-AzureADUser** (用户帐户) 并将其发送到下一个 **|** () 。
 
-1. 按字母顺序对 **UserPrincipalName** (列表进行排序，) 并将其发送到下一个 **|** () 。
+1. 按字母顺序对 **UserPrincipalName** (用户主体名称列表进行排序) 并将其发送到下一个 **|** () 。
 
-1. 只显示每个帐户的 User Principal Name 属性 (**Select UserPrincipalName**) 。
+1. 只显示 Select **UserPrincipalName** (帐户的用户主体名称) 。
 
-1. 一次显示一个屏幕， (**更多**) 。
+1. 一次显示一个屏幕 (**更多**) 。
 
-若要显示帐户的用户主体名称，显示名称 (和姓氏) ，请运行以下命令。 填写 *$userName* 变量，然后删除 \< and > 字符：
+若要根据帐户的用户名和姓氏显示名称 (用户主体名称) ，请运行以下命令。 填写 *$userName* 变量，然后删除 \< and > 字符：
   
 ```powershell
 $userName="<Display name>"
@@ -109,7 +109,7 @@ $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-通过使用 *$upn* 变量，可以基于单个帐户的 显示名称。 下面的示例将 *Belinda Newman* 的使用位置设置到法国。 但它指定其显示名称，而不是用户主体名称：
+通过使用 *$upn* 变量，可以基于单个帐户的用户帐户显示名称。 下面的示例将 *Belinda Newman* 的使用位置设置到法国。 但它指定其显示名称而不是用户主体名称：
   
 ```powershell
 $userName="Belinda Newman"
@@ -141,15 +141,15 @@ Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -Usag
 
 此命令指示 PowerShell：
   
-1. 从 **Get-AzureADUser** (获取用户帐户) ，并将其发送到下一个 **|** () 。
+1. 获取 **Get-AzureADUser** (用户帐户) ，并将其发送到下一个 **|** () 。
 
-1.  在 Where {$_中查找 *其 Department* 属性设置为"Accounting" (**用户帐户。Department -eq "Accounting"}**) ，并将生成的信息发送到下一个命令 **|** () 。
+1.  在 Where {$_中查找其 *Department* 属性设置为"Accounting" (**用户帐户。Department -eq "Accounting"}**) ，并将生成的信息发送到下一个命令 **|** () 。
 
 1. 将用户位置设置为法国 (**Set-AzureADUser -UsageLocation "FR"**) 。
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-若要使用 Microsoft Azure Active Directory Module for Windows PowerShell 配置用户帐户的属性，请使用 **Set-MsolUser** cmdlet 并指定要设置或更改的属性。
+若要为用户帐户配置 Microsoft Azure Active Directory 模块Windows PowerShell，请使用 **Set-MsolUser** cmdlet 并指定要设置或更改的属性。
 
 首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
   
@@ -208,13 +208,13 @@ Get-MSolUser | Sort UserPrincipalName | Select UserPrincipalName | More
   
 1. 获取 **Get-MsolUser** (用户帐户) 并将其发送到下一个 **|** () 。
 
-1. 按字母顺序对 **UserPrincipalName** (列表进行排序，) 并将其发送到下一个 **|** () 。
+1. 按字母顺序对 **UserPrincipalName** (用户主体名称列表进行排序) 并将其发送到下一个 **|** () 。
 
-1. 只显示每个帐户的 User Principal Name 属性 (**Select UserPrincipalName**) 。
+1. 只显示 Select **UserPrincipalName** (帐户的用户主体名称) 。
 
-1. 一次显示一个屏幕， (**更多**) 。
+1. 一次显示一个屏幕 (**更多**) 。
 
-若要显示帐户的用户主体名称，显示名称 (和姓氏) ，请运行以下命令。 填写 *$userName* 变量，然后删除 \< and > 字符。
+若要根据帐户的用户名和姓氏显示名称 (用户主体名称) ，请运行以下命令。 填写 *$userName* 变量，然后删除 \< and > 字符。
   
 ```powershell
 $userName="<Display name>"
@@ -228,7 +228,7 @@ $userName="Caleb Sills"
 Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-通过使用 *$upn* 变量，可以基于单个帐户的 显示名称。 下面是一个示例，将 *Belinda Newman* 的使用位置设置为 *法国*，但指定她显示名称而不是用户主体名称：
+通过使用 *$upn* 变量，可以基于单个帐户的用户帐户显示名称。 下面是一个示例，将 *Belinda Newman* 的使用位置设置为 *法国*，但指定她显示名称而不是用户主体名称：
   
 ```powershell
 $userName="<display name>"
@@ -262,7 +262,7 @@ Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocat
   
 1. 获取 **Get-MsolUser** (用户帐户) 并将其发送到下一个 **|** () 。
 
-1. 在 Where {$_中查找其 *Department* 属性设置为"Accounting" (**用户帐户。Department -eq "Accounting"}**) 并将生成的信息发送到下一个命令 **|** () 。
+1. 在 Where {$_中查找其 *Department* 属性设置为"Accounting" (**用户帐户。Department -eq "Accounting"}**) ，并将生成的信息发送到下一个命令 **|** () 。
 
 1. 将用户位置设置为法国 (**Set-MsolUser -UsageLocation "FR"**) 。
 

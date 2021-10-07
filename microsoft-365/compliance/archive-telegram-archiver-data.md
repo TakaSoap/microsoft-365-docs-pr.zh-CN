@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理员可以设置 TeleMessage 连接器，以在邮箱中导入和存档 Microsoft 365。 这样，您就可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 20732bedee07369a05bd26deca6154f08981ef34
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 管理员可以设置 TeleMessage 连接器，以在邮箱中导入和存档 Microsoft 365。 这样，您可以在 Microsoft 365中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
+ms.openlocfilehash: 753dba06ced9c3369054a1712371fb309c11671e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170674"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192315"
 ---
 # <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>设置连接器以存档安装通信数据
 
@@ -39,7 +39,7 @@ ms.locfileid: "59170674"
 
 4. 连接器将移动通信项目导入到特定用户的邮箱。 将在特定用户的邮箱中创建名为"Archiver"的新文件夹，并且项目将导入到该文件夹中。 连接器使用"用户的电子邮件地址"属性的值 *执行此映射* 。 每个电子邮件都包含此属性，该属性填充了电子邮件每个参与者的电子邮件地址。
 
-> 除了使用"用户的电子邮件地址"属性的值进行自动用户映射之外，您还可以通过上载 CSV 映射文件来定义自定义映射。 此映射文件应包含用户的移动电话号码和每个用户Microsoft 365相应的邮箱地址。 如果启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件，针对每个电子邮件项目。 如果找不到与用户Microsoft 365用户对应的有效邮件，连接器将使用电子邮件项目的"用户的电子邮件地址"属性。 如果连接器在自定义映射文件或Microsoft 365项的电子邮件地址属性中找不到有效的邮件用户，该项目将不会导入。 
+> 除了使用"用户的电子邮件地址"属性的值进行自动用户映射之外，您还可以通过上载 CSV 映射文件来定义自定义映射。 此映射文件应包含用户的移动电话号码和每个用户Microsoft 365相应的邮箱地址。 如果启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件，针对每个电子邮件项目。 如果找不到与用户Microsoft 365用户对应的有效用户，连接器将使用电子邮件项目的"用户的电子邮件地址"属性。 如果连接器在自定义映射文件或Microsoft 365项的电子邮件地址属性中找不到有效的邮件用户，该项目将不会导入。 
 
 ## <a name="before-you-set-up-a-connector"></a>设置连接器之前
 
@@ -49,13 +49,13 @@ ms.locfileid: "59170674"
 
 - 在员工的移动电话上安装"Archiver"应用并激活它。 通过"英语存档器"应用，他们能够与其他"英语"用户进行通信和聊天。
 
-- 必须在步骤 3 中为在步骤 3 中创建邮件存档器连接器的用户分配邮箱导入导出Exchange Online。 在"数据连接器"页的"数据连接器"**页中添加连接器** Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 3 中为在步骤 3 中创建"存档器"连接器的用户分配邮箱导入导出Exchange Online。 在"数据连接器"页的"数据连接器"页中添加连接器Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 - 此数据连接器可用于美国政府GCC云Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="create-a-telegram-archiver-connector"></a>创建一个 Archiver 连接器
 
-完成上一部分中所述的先决条件后，可以在"存档程序"Microsoft 365 合规中心。 连接器使用您提供的信息连接到 TeleMessage 网站，将用户通信数据传输至 Microsoft 365 中的相应用户邮箱。
+完成上一部分中所述的先决条件后，可以在"存档程序"Microsoft 365 合规中心。 该连接器使用你提供的信息连接到 TeleMessage 网站，将用户通信数据传输至 Microsoft 365 中的相应用户邮箱框。
 
 1. 转到 ， <https://compliance.microsoft.com> 然后单击数据连接器>**Telegram Archiver**。
 

@@ -1,27 +1,25 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中配置警报通知
 description: 可以使用 Microsoft Defender for Endpoint 根据严重性和其他条件配置安全警报的电子邮件通知设置。
-keywords: 电子邮件通知， 配置警报通知， 适用于终结点的 Microsoft Defender， 适用于终结点的 Microsoft Defender 通知， 适用于终结点的 Microsoft Defender 警报， windows 10 企业版， windows 10 教育版
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+keywords: 电子邮件通知， 配置警报通知， 适用于终结点的 Microsoft Defender， 适用于终结点的 Microsoft Defender 通知， 适用于终结点的 Microsoft Defender 警报， windows 企业版， windows 教育版
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 857df1a9f088c316349fbbe02618a7345df5a075
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d598687edbb4268bc02a4f0bd8c752405cf22dee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201674"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192963"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置警报通知
 
@@ -38,7 +36,7 @@ ms.locfileid: "59201674"
 > [!NOTE]
 > 只有具有"管理安全设置"权限的用户才能配置电子邮件通知。 如果选择使用基本权限管理，则具有安全管理员或全局管理员角色的用户可以配置电子邮件通知。
 
-你可以设置触发通知的警报严重性级别。 您还可以添加或删除电子邮件通知的收件人。 新收件人将收到有关在添加后触发的警报的通知。 有关警报详细信息，请参阅 [查看和组织警报队列](alerts-queue.md)。
+你可以设置触发通知的警报严重性级别。 您还可以添加或删除电子邮件通知的收件人。 新收件人收到有关在添加后触发的警报的通知。 有关警报详细信息，请参阅 [查看和组织警报队列](alerts-queue.md)。
 
 如果使用基于角色的访问控制 (RBAC) ，则收件人将仅根据通知规则中配置的设备组接收通知。
 具有适当权限的用户只能创建、编辑或删除仅限于其设备组管理作用域的通知。
@@ -46,7 +44,7 @@ ms.locfileid: "59201674"
 
 电子邮件通知包括有关警报的基本信息和指向门户的链接，可在其中执行进一步调查。
 
-## <a name="create-rules-for-alert-notifications"></a>创建警报通知规则
+## <a name="create-rules-for-alert-notifications"></a>创建通知通知规则
 可以创建规则，以确定要发送电子邮件通知的设备以及通知收件人的警报严重性。
 
 
@@ -66,7 +64,7 @@ ms.locfileid: "59201674"
     - **设备** - 选择是通知收件人有关所有设备上警报 (全局管理员角色) 或所选设备组。 有关详细信息，请参阅创建 [和管理设备组](machine-groups.md)。
     - **警报严重性** - 选择警报严重性级别。
 
-4. 单击“**下一步**”。
+4. 单击“下一步”。
 
 5. 输入收件人的电子邮件地址，然后单击"**添加收件人"。** 可添加多个电子邮件地址。
 

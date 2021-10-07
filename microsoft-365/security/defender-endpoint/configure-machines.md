@@ -2,26 +2,24 @@
 title: 确保设备配置正确
 description: 正确配置设备以提升抵御威胁的整体恢复能力，并增强检测和响应攻击的能力。
 keywords: 载入， Intune 管理， Microsoft Defender for Endpoint， Microsoft Defender， Windows Defender， 攻击面减少， ASR， 安全基线
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b9d00ec13a08751882e7c699a4e029083dc08bc6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 06fa097275453e3ae7b64f0e0cb142fe7592c88b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201562"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191955"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>确保设备配置正确
 
@@ -45,7 +43,7 @@ ms.locfileid: "59201562"
 
 *设备配置管理页*
 
-可以通过指向 Microsoft Intune 和 Microsoft 365 安全中心上的设备管理页面的直接深层链接，在组织级别跟踪配置状态并快速采取措施，以响应载入范围不佳、合规性问题以及攻击面缓解的不优化情况。
+可以通过指向 Microsoft Intune 和 Microsoft 365 安全中心上的设备管理页面的直接深层链接，在组织级别跟踪配置状态并快速采取措施，以响应载入范围不佳、合规性问题以及攻击面缓解的不优化。
 
 在执行此操作时，您将受益于：
 
@@ -56,9 +54,9 @@ ms.locfileid: "59201562"
 
 ## <a name="enroll-devices-to-intune-management"></a>将设备注册到 Intune 管理
 
-设备配置管理与 Intune 设备管理密切合作，以建立组织中设备的清单和基线安全配置。 你将能够在 Intune 托管的设备上跟踪和管理Windows 10问题。
+设备配置管理与 Intune 设备管理密切合作，以建立组织中设备的清单和基线安全配置。 你将能够在 Intune 托管的设备上跟踪和管理Windows问题。
 
-在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows 10注册选项。 有关 Intune 注册选项的详细信息，请阅读有关[为设备Windows注册。](/intune/windows-enroll)
+在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows注册选项。 有关 Intune 注册选项的详细信息，请阅读有关为设备设置[Windows的信息](/intune/windows-enroll)。
 
 > [!NOTE]
 > 若要Windows设备注册到 Intune，管理员必须已分配有许可证。 [阅读有关分配设备注册许可证的信息](/intune/licenses-assign)。

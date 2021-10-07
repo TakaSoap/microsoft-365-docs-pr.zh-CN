@@ -9,19 +9,19 @@ titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
 description: 获取有关在高级电子数据展示中设置相关性定型的建议，以计算文件相关性分数并生成分析结果。
-ms.openlocfilehash: 9a6dd5cee08ea795d8f7b2381145d2b7303ae2fb61dde395974dfc7aa6f00cdf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bed912c0631511e9d3d4839e5d6925de79554163
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842167"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194413"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>管理高级电子数据展示（经典）中的相关性设置
 

@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 高级 eDiscovery 作业帮助跟踪与执行各种高级 eDiscovery 任务相关的长期运行进程状态。
-ms.openlocfilehash: 27ac98d1f98e85800c8ca3dfc91cc5e0803ae2e8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d5b2facdead3be1369cd261392117fc33fa1a4fb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170632"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192195"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>管理高级 eDiscovery 中的作业
 
@@ -28,7 +28,7 @@ ms.locfileid: "59170632"
 
 | 作业类型            | 说明     |
 | :----------------- | :----------     |
-|正在添加数据到审阅集。 | 用户向审阅集添加集合。 此作业包括 2 个子作业： </br>• **Export** - 生成集合中的项列表。 </br>• **Ingestion & Indexing** - 在名为) 的进程中，与搜索查询匹配的集合中的项复制到 Azure 存储 位置 *(，* 然后对 Azure 存储 位置中的这些项目重新编制索引。 新索引将用于在数据集中查询和分析项目。 </br></br>有关详细信息，请参阅 [添加搜索结果到审阅集](add-data-to-review-set.md)。 |
+|正在添加数据到审阅集。 | 用户向审阅集添加集合。 此作业包括 2 个子作业： </br>• **Export** - 生成集合中的项列表。 </br>• **Ingestion & Indexing** - 集合中与搜索查询匹配的项在名为) 的过程中复制到 Azure 存储 位置 *(，* 然后对 Azure 存储 位置中的那些项重新编制索引。 新索引将用于在数据集中查询和分析项目。 </br></br>有关详细信息，请参阅 [添加搜索结果到审阅集](add-data-to-review-set.md)。 |
 |正在将数据添加到另一审阅集 | 用户将一个审阅集中的文档添加到同一案例中的另一个不同的审阅集。 有关详细信息，请参阅 [将其它审阅集中数据添加到审阅集](add-data-to-review-set-from-another-review-set.md)。|
 |正在将非 Microsoft 365 数据添加到审阅集。 | 用户将非 Microsoft 365 数据上传到审阅集。 在此进程中还会编制数据的索引。 例如，将本地文件服务器或客户端计算机的文件上传到审阅集。 有关详细信息，请参阅 [加载非 Microsoft 365 数据到审阅集](load-non-office-365-data-into-a-review-set.md)。| 
 |正在将已修正数据添加到审阅集 | 已修正出现处理错误的数据，并且已将其加载回审阅集。 有关详细信息，请参阅：</br>• [处理数据时修正错误](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [单个项目错误修正](single-item-error-remediation.md)| 
