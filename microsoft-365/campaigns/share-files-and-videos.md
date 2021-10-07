@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 与用户和用户共享市场活动Microsoft Teams SharePoint。
-ms.openlocfilehash: 20e232f1ca8a8392efa236d21b26259f47382148
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 在市场活动中与用户共享文件和Microsoft Teams SharePoint。
+ms.openlocfilehash: fa76261377f4ae52a53a4ff2375afc670086a449
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170226"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191009"
 ---
 # <a name="share-files-and-videos"></a>共享文件和视频
 
@@ -38,7 +38,7 @@ ms.locfileid: "59170226"
 
 ![菜单窗口的Microsoft Teams，显示"文件"选项卡和菜单上的"获取"链接。](../media/m365-democracy-teams-sharefiles.png)
 
-使用文件和Microsoft Teams SharePoint，还可以一起处理文件并查看对方的更改。 使用Microsoft Teams在公司、业务或市场活动内共享文件。 如果需要与组织外部人员进行外部共享，可以将他们作为来宾添加到团队，或向他们发送一个安全SharePoint链接。
+使用文件和Microsoft Teams SharePoint，还可以一起处理文件并查看对方的更改。 使用Microsoft Teams在公司、业务或市场活动内共享文件。 如果需要与组织外部人员进行外部共享，可以将他们作为来宾添加到团队，或向他们发送安全SharePoint链接。
 
 您还可以使用 Microsoft Stream 在内部存储和共享视频。 这些视频不向公众显示，因此非常适合内部宣传活动消息传送。
 
@@ -47,8 +47,8 @@ ms.locfileid: "59170226"
 使用这些方法可以安全地共享文件和视频：
 
 1. 将文件存储在Microsoft Teams或SharePoint中，并确保只有需要访问这些文件的人拥有这些文件。
-2. 想要共享时，请勿将文件附加到电子邮件。 相反，选择 **"从网站Microsoft Teams** 或SharePoint"链接，然后通过电子邮件发送该链接。
-3. 若要在外部共享文件，将用户作为来宾添加到你的团队，或使用 SharePoint 获取仅共享该文件的安全链接。
+2. 想要共享时，请勿将文件附加到电子邮件。 相反，选择 **"从** Microsoft Teams或SharePoint"链接，然后通过电子邮件发送链接。
+3. 若要在外部共享文件，将用户作为来宾添加到团队，或使用 SharePoint 获取安全链接以仅共享该文件。
 4. 使用 Microsoft Stream 托管希望市场活动查看的视频。
 5. 使用 Microsoft Teams 或 SharePoint 存储你需要团队协作或共享的视频文件。
 
@@ -58,7 +58,7 @@ ms.locfileid: "59170226"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-若要与来宾共享安全链接，无需Microsoft Teams，请按照以下步骤操作。
+若要与来宾共享安全链接（无需Microsoft Teams，请按照以下步骤操作。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0]
 
@@ -66,6 +66,6 @@ ms.locfileid: "59170226"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
-下载 PDF 或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079435)信息[](https://go.microsoft.com/fwlink/?linkid=2079438)图，以快速概览共享文件的方法。
+下载 PDF 或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079435)信息[](https://go.microsoft.com/fwlink/?linkid=2079438)图，快速概览共享文件的方法。
 
 [![插图：与不同用户共享文件。](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

@@ -9,7 +9,7 @@ ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 使用现有付款方式，或在 Microsoft 365 管理中心添加新的付款方式，购买 Microsoft 的业务产品或服务。
 ms.date: 04/02/2021
-ms.openlocfilehash: e944547e69ea8774690852d1b3123578d40bd3c0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1008beb9caf42b68e741406bef3be9efbe2fa2de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200661"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190955"
 ---
 # <a name="manage-payment-methods"></a>管理支付方式
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何将域连接到Microsoft 365。
-ms.openlocfilehash: 377bb0444582f8efe15583fa522eceb9d675e474
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d54b3bbf00dd0cf37006924e2884f2861c345d3e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195857"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191069"
 ---
 # <a name="connect-your-domain-to-microsoft-365-for-business"></a>连接域Microsoft 365企业
 
@@ -35,14 +35,14 @@ ms.locfileid: "59195857"
 
 设置邮箱并Microsoft 365 Google Workspace 中移动电子邮件数据后，可以将你的域连接到Microsoft 365。 
 
-首先，你需要从 Google 中删除现有 DNS 记录，然后我们可以从 Microsoft 365。
+首先，你需要从 Google 删除现有 DNS 记录，然后我们可以从 Microsoft 365。
 
 ## <a name="try-it"></a>试一试！
 
-1. 登录到 Google Workspace 管理控制台[，admin.google.com。](https://admin.google.com)
+1. 登录到 Google Workspace 管理控制台，位置为[admin.google.com。](https://admin.google.com)
 1. 选择 **"域****"、"管理域****"、"查看详细信息**"和"**管理域**"，然后在左侧导航中选择 **"DNS"。**
 1. 向下滚动到" **综合记录"，** 打开 **"Google Workspace"，** 选择 **"删除**"，然后 **再次"删除** "。
-1. 向下滚动到 **"自定义资源** 记录"并删除出现的任何现有 DNS 记录，包括之前可能为自定义资源Microsoft 365。
+1. 向下滚动到 **"自定义资源** 记录"并删除出现的任何现有 DNS 记录，包括之前可能为自定义资源记录Microsoft 365。
 1. 转到["Microsoft 365 管理中心"。](https://admin.microsoft.com)
 1. 在左侧导航中，选择"显示 **所有**  >  **设置**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"。**</a>
 1. 然后选择默认域。

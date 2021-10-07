@@ -10,20 +10,20 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 您可以使用 KQL 编辑器在内容搜索、核心电子数据展示和搜索查询中配置电子数据Advanced eDiscovery。
-ms.openlocfilehash: 571612cc2032b6241923cb6bba2a730a5d821c8a
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: cc63b0d945d6807178a801d8e6e1a69311916365
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088213"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190972"
 ---
-# <a name="use-the-kql-editor-to-build-search-queries-preview"></a>使用 KQL 编辑器构建搜索查询 (预览) 
+# <a name="use-the-kql-editor-to-build-search-queries-preview"></a>使用 KQL 编辑器生成搜索查询（预览）
 
 在内容搜索、核心电子数据展示Microsoft 365搜索中生成搜索查询时，Microsoft 365电子数据展示工具搜索中的新 KQL 查询体验可提供Advanced eDiscovery。 在编辑器中键入查询时，它将为受支持的可搜索属性和条件提供自动完成，并提供标准属性和条件的支持值列表。 例如，如果在查询中指定 email 属性，编辑器将显示一个 `kind` 可以选择的支持值列表。 KQL 编辑器还会实时显示潜在的查询错误，您可以在运行搜索之前修复这些错误。 最好将复杂查询直接粘贴到编辑器中，而无需使用标准条件生成器中的关键字和条件卡手动生成查询。
   
@@ -45,9 +45,9 @@ ms.locfileid: "60088213"
 
 ![内容搜索和核心电子数据展示中的 KQL 编辑器](../media/KQLEditorCore.png)
 
-### <a name="kql-editor-in-advanced-ediscovery"></a>Advanced eDiscovery 中的 KQL 编辑器
+### <a name="kql-editor-in-advanced-ediscovery"></a>KQL 编辑器Advanced eDiscovery
 
-![Advanced eDiscovery 中的 KQL 编辑器](../media/KQLEditorAdvanced.png)
+![KQL 编辑器Advanced eDiscovery](../media/KQLEditorAdvanced.png)
 
 ## <a name="using-the-kql-editor"></a>使用 KQL 编辑器
 
@@ -71,7 +71,7 @@ KQL 编辑器提供某些属性的可能值的建议。 例如，以下屏幕截
 
 ![KQL 编辑器建议某些属性的值](../media/KQLEditorValueSuggestions.png)
 
-编辑器还建议在键入电子邮件收件人属性 (、、和) UPN 格式的用户 `From` `To` `Recipients` 列表 `Participants` 。
+编辑器还建议在键入电子邮件收件人属性 (UPN 格式) 用户列表，如 、 和 `From` `To` `Recipients` `Participants` 。
 
 ![KQL 编辑器为用户提供收件人电子邮件属性建议](../media/KQLEditorRecipientSuggestions.png)
 

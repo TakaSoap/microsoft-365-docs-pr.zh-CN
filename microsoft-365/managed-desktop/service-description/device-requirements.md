@@ -1,27 +1,27 @@
 ---
 title: 设备要求
-description: 设备与移动设备一起运行的最低硬件和软件Microsoft 托管桌面
+description: 设备使用软件的最低硬件和软件要求Microsoft 托管桌面
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f51208b8376ef160fe83a41e5a2ac74eb843c2f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ce5f0c3782b8e8082d0e1ede53339a190b7259f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196674"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209461"
 ---
 # <a name="device-requirements"></a>设备要求
 
-Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文介绍设备必须满足的硬件和软件要求才能使用Microsoft 托管桌面。 你可以根据这些要求查看已批准用于服务的特定设备的列表。 筛选Microsoft 托管桌面[购买商业Windows 10 专业版站点上的筛选器](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)
+Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文介绍了设备必须满足的硬件和软件要求，才能使用Microsoft 托管桌面。 你可以根据这些要求查看已批准用于服务的特定设备的列表。 筛选Microsoft 托管桌面[商店Windows Pro商业设备"网站上显示的内容](https://www.microsoft.com/en-us/windows/business/devices)
 
 > [!NOTE]
-> 这些要求可能随时更改，但我们会提前 30 天通知任何硬件要求更改。 最近更改的要求标有 **\*** 。 
+> 这些要求可能随时更改，但我们会提前 30 天通知任何硬件要求更改。 最近更改的要求标有 <b>\*</b> 。 
 
 ## <a name="check-hardware-requirements"></a>检查硬件要求
 
@@ -45,13 +45,11 @@ Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文
 
 设备必须预安装此软件：
 
-- Windows 10 企业版、Pro 或 Pro Workstation Edition
+- <b>\*</b>Windows 10或 Windows 11：Enterprise、Pro 或 Pro Workstation 版本
 - 64 位版本的 Microsoft 365 企业应用版 
 - 所有适用的设备驱动程序
 
-> [!NOTE]
-> Windows 11 一旦达到通用版本，它将是预安装软件的其他选项。
->
+
 ### <a name="physical-features"></a>物理功能
 
 设备必须具有以下功能：
@@ -65,7 +63,7 @@ Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文
 
 > [!NOTE]
 >- ARM处理器不受支持。
->- Windows 11 具有其他[硬件要求](/windows/whats-new/windows-11-requirements)。
+>- <b>\*</b>Windows 11 具有其他[硬件要求](/windows/whats-new/windows-11-requirements)。
 
 设备应满足或超过以下存储和内存限制：
 
@@ -73,7 +71,7 @@ Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文
 - 启动驱动器的容量必须至少为 128 GB。
 - 内部设备内存 (RAM) 必须等于或超过 8 GB。
 
-如果设备是在 2020 年 7 月 1 日之后进行，它还应具有 IR 相机、指纹读取器或两者，以便支持[Windows Hello。](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
+如果设备是在 2020 年 7 月 1 日之后制造，它还应具有 IR 相机、指纹读取器或两者，[以便](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)支持Windows Hello。
 
 ## <a name="recommended-features"></a>推荐的功能
 
@@ -81,7 +79,7 @@ Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文
 
 - Intel vPro 平台处理器或 AMD Ryzen Pro处理器
 - 容量至少为 256 GB 的 SSD 类型的启动驱动器
-- 内部设备内存 (内存) 至少为 16 GB
+- 内部设备内存 (RAM) 至少为 16 GB
 - 对现代待机的支持
 - 设备为安全核心电脑类型
 - 支持内核 DMA 保护

@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.topic: article
 author: dansimp
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: efdc9114398151cbb939f3cb88f29a7fa71d4a0a
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: b6b39dfe3a080b339ca5f4bbaf91c3db7d84c8d9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124827"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209329"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>在Windows Azure 虚拟桌面中载入多会话设备
 
@@ -53,7 +53,7 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 有几种方法可以载入 WVD 主机：
 
-- 在黄金映像中运行脚本 (在启动期间从共享) 运行脚本。
+- 在黄金映像中运行脚本 (在启动期间从共享) 运行。
 - 使用管理工具运行脚本。
 - 通过与 [Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)
 
@@ -74,7 +74,7 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 1. 打开 VDI 配置包.zip文件 (WindowsDefenderATPOnboardingPackage.zip) 
 
-    1. 在"Microsoft 365 Defender门户"导航窗格中，选择"设置管理"下 (终结点 \>  \> ) 。 
+    1. 在"Microsoft 365 Defender门户"导航窗格中，选择"设置管理"下 (终结点载入 \>  \> ) 。 
     1. 选择Windows 10或Windows 11 作为操作系统。
     1. 在" **部署方法"** 字段中，选择"非永久性终结点的 VDI 载入脚本"。
     1. 单击 **下载程序包** 并保存.zip文件。
@@ -87,13 +87,13 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 2. 在组策略管理编辑器中，转到计算机 **配置** \> **首选项** \> **控制面板设置**。
 
-3. 右键单击 **计划任务**，单击 **新建**，然后单击立即任务 (至少Windows 7) 。
+3. 右键单击 **计划任务**，单击 **新建**，**然后单击即时任务** (至少Windows 7) 。
 
 4. 在打开的任务窗口中，转到常规 **选项卡** 。在" **安全选项"** 下 **，单击"更改用户或组"，** 然后键入"系统"。 单击 **"检查名称"，** 然后单击"确定"。 NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。
 
 5. Select **Run whether user is logged on or not and** check the Run with highest **privileges** check box.
 
-6. 转到"操作 **"** 选项卡，然后单击"新建 **"。** 确保在 **"操作"** 字段中选择了"启动程序"。 输入以下信息：
+6. 转到"操作 **"选项卡**，然后单击"新建 **"。** 确保在 **"操作"** 字段中选择了"启动程序"。 输入以下信息：
 
    `Action = "Start a program"`
 
@@ -155,8 +155,8 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 #### <a name="licensing-requirements"></a>许可要求
 
-许可注意事项：使用 Windows Enterprise 多会话时，根据你的要求，你可以选择让所有用户通过 Microsoft Defender 针对终结点 (（针对每个用户) 、Windows Enterprise E5、Microsoft 365 安全或 Microsoft 365 E5）获得许可，或者通过 Azure Defender 许可 VM。
-Microsoft Defender 终结点的许可要求位于： [许可要求](minimum-requirements.md#licensing-requirements)。
+许可注意事项：使用 Windows Enterprise 多会话时，根据你的要求，你可以选择让所有用户通过 Microsoft Defender 针对终结点 (进行授权（针对每个用户) 、Windows Enterprise E5、Microsoft 365 安全或 Microsoft 365 E5）或拥有通过 Azure Defender 许可的 VM。
+有关 Microsoft Defender 终结点的许可要求，可位于： [许可要求](minimum-requirements.md#licensing-requirements)。
 
 #### <a name="related-links"></a>相关链接
 

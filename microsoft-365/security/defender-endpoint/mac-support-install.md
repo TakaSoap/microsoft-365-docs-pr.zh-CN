@@ -2,15 +2,13 @@
 title: 解决 Mac 上 Microsoft Defender for Endpoint 的安装问题
 description: 解决 Mac 上的 Microsoft Defender for Endpoint 中的安装问题。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 安装
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 776cd18146fa4f726ef5d25433c564510b8a0e67
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8371129ff1b64681aee018802205a5f5a359fd86
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196604"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209473"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的安装问题
 
@@ -61,7 +59,7 @@ preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP 安装日志缺失或未更新
 
 在极少数情况下，安装不会在 MDATP 的 /Library/Logs/Microsoft/mdatp/install.日志文件。
-你可以验证安装是否发生，并分析可能的错误，通过查询 macOS 日志 (当没有客户端 UI 时，这对 MDM 部署) 。 建议您使用较窄的时间窗口来运行查询，并按日志记录进程名称进行筛选，因为将会存在大量信息。
+当没有客户端 UI 部署时，可以通过查询 macOS 日志来验证安装是否 (分析可能的错误，这些日志在 MDM 部署中) 。 建议您使用一个较窄的时间窗口来运行查询，并按日志记录进程名称进行筛选，因为将会存在大量信息。
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log

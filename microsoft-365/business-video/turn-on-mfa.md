@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何启用多重身份验证（有时称为双因素身份验证）。
-ms.openlocfilehash: ec9edd8664f35d3731f1f3c90ff2c60e8b2d2e3d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3759afb3ab90ba397a7b009e578d10dcaea520f0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170810"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191057"
 ---
 # <a name="turn-on-multifactor-authentication"></a>启用多重身份验证
 
@@ -34,7 +34,7 @@ ms.locfileid: "59170810"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
-多重身份验证意味着你和员工必须提供多种登录方法Microsoft 365这是保护业务的最简单方法之一。
+多重身份验证意味着你和员工必须提供多种登录Microsoft 365是保护业务的最简单方法之一。
 
 ## <a name="try-it"></a>试一试！
 

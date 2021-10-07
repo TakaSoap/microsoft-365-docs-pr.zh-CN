@@ -9,18 +9,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 33df420b8b480b6957e2ec71b3bb5494f61fce63
-ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
+ms.openlocfilehash: 0d2da96b421dfa594836698f2849f615e8f0ccf5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "59453612"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209437"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction 资源类型
 
@@ -66,7 +66,7 @@ ms.locfileid: "59453612"
 |ID|Guid|计算机 [操作实体的](machineaction.md) 标识。|
 |type|枚举|操作的类型。 可能的值包括："RunAntiVirusScan"、"Offboard"、"Live Response"、"CollectInvestigationPackage"、"Isolate"、"Unisolate"、"StopAndQuarantineFile"、"RestrictCodeExecution"和"UnrestrictCodeExecution"。|
 |scope|string|操作的范围。 "完全"或"选择性"用于隔离，"快速"或"完全"用于防病毒扫描。|
-|requestor|String|执行该操作的人的身份。|
+|requestor|字符串|执行该操作的人的身份。|
 |externalID|String|客户可以在自定义关联请求中提交的 ID。|
 |requestSource|string|提交操作的用户/应用程序的名称。|
 | 命令|数组|要运行的命令。 允许的值为 PutFile、RunScript、GetFile。|
@@ -74,8 +74,8 @@ ms.locfileid: "59453612"
 |requestorComment|String|发出操作时写入的注释。|
 |cancellationComment|String|取消操作时写入的注释。|
 |status|枚举|命令的当前状态。 可能的值包括："Pending"、"InProgress"、"Succeeded"、"Failed"、"TimeOut"和"Cancelled"。|
-|machineId|String|已 [执行](machine.md) 该操作的虚拟机的 ID。|
-|computerDnsName|String|已 [执行](machine.md) 该操作计算机的名称。|
+|machineId|字符串|已 [执行](machine.md) 该操作的虚拟机的 ID。|
+|computerDnsName|字符串|已 [执行](machine.md) 该操作计算机的名称。|
 |creationDateTimeUtc|DateTimeOffset|创建该操作的日期和时间。|
 |cancellationDateTimeUtc|DateTimeOffset|取消该操作的日期和时间。|
 |lastUpdateDateTimeUtc|DateTimeOffset|上次更新操作状态的日期和时间。|
