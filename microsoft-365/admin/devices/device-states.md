@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: 了解适用于企业管理员主页的"设备操作"列表中的Microsoft 365状态。
-ms.openlocfilehash: 60e21081b9da3825756f14d4ae8b095419f7f4cc
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: c70740077e42d2dc7b8b15ac7e563d8e245ac455
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933539"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165516"
 ---
 # <a name="device-states"></a>设备状态
 
@@ -45,7 +45,7 @@ ms.locfileid: "59933539"
 |**状态**|**说明**|
 |:-----|:-----|
 |由 Intune 托管  <br/> |由 Microsoft 365 商业高级版。  <br/> |
-|等待停用  <br/> |Microsoft 365 商业高级版准备好从设备中删除公司数据。  <br/> |
+|等待停用  <br/> |Microsoft 365 商业高级版准备从设备中删除公司数据。  <br/> |
 |正在停用  <br/> |Microsoft 365 商业高级版正在从设备中删除公司数据。  <br/> |
 |停用失败  <br/> | 删除公司数据操作失败。  <br/> |
 |已取消停用  <br/> |已取消停用操作。  <br/> |

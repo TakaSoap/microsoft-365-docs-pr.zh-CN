@@ -9,7 +9,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: '从共享邮箱中删除许可证，以将其分配给其他用户或返回许可证，以便不支付许可证费用。 '
 ms.date: 05/11/2021
-ms.openlocfilehash: 574650c2b483be299d316ee73687a48115485e7f
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 384e5d68d2b964278244fe5c2ec7f87097325540
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786163"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164904"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>从共享邮箱中删除许可证
 

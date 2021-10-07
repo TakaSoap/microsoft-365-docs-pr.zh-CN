@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - TRN_M365B
@@ -25,18 +26,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 了解如何设置策略以允许用户使用自助服务密码重置工具重置自己的密码。
-ms.openlocfilehash: 16259d7cca85a8a12baea3aac5c2d748c4e64c36
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: a30c32239cb1c995beaaf725aaf5dc3821beec8e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773459"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161770"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
 作为Microsoft 365管理员，你可以让用户使用自助服务密码重置工具，这样[](https://go.microsoft.com/fwlink/p/?LinkId=522677)你就不必重置其密码。 减少工作量！
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
   
 - 你可以免费为云用户重置自助服务密码 **，Microsoft 365商业**、教育或非营利组织付费计划。 它不能与试用版Microsoft 365一。
 
@@ -58,9 +59,9 @@ ms.locfileid: "59773459"
 
 以下步骤将为企业中的所有人启用自助密码重置。
 
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">中心</a>中，转到  >  **"设置"组织设置**"页面。
+1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">中心</a>中，转到  >  **"设置"组织设置"** 页面。
 
-2. 在"组织设置"页面 **顶部** ，选择"安全& **隐私"** 选项卡。
+2. 在"组织设置"页 **的顶部** ，选择"安全& **隐私"** 选项卡。
   
 3. 选择 **"自助密码重置"。**
 
@@ -72,6 +73,6 @@ ms.locfileid: "59773459"
 
 ## <a name="related-content"></a>相关内容
 
-[为组织设置密码过期策略 (](../manage/set-password-expiration-policy.md) 文章) \
+[设置组织的密码过期策略 (](../manage/set-password-expiration-policy.md) 文章) \
 [将个人用户密码设置为永不过期](set-password-to-never-expire.md)（文章）\
 [Microsoft 365业务培训视频 (](../../business-video/index.yml)链接页) 

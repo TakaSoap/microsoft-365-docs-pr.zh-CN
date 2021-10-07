@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -24,16 +24,16 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 了解如何使用文档库、列表和SharePoint自定义、组织和管理团队网站。
-ms.openlocfilehash: fc6aad3408df0f9c14f9d87984a60ae4c5c715b5
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: ee556de76b7a4dee52feef388c84b0c4222d960d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775836"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161386"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自定义用于文件存储和共享的团队网站
 
-如果你拥有一家具有少量员工的小型企业，设置和推动文件共享和联机协作的最佳方法之一是同时使用 OneDrive 和SharePoint团队网站。 我们建议创建连接到组组Microsoft 365网站。 如果要使用聊天，可以通过在聊天室创建团队来创建Microsoft Teams。 有关此内容[Teams，请参阅视频：什么是Microsoft Teams？。](https://support.microsoft.com/office/b98d533f-118e-4bae-bf44-3df2470c2b12) 如果不想使用网站Teams，可以从"开始"SharePoint网站。 
+如果您的小型企业具有一些员工，则设置和推动文件共享和联机协作的最佳方法之一是同时使用 OneDrive 和 SharePoint 团队网站。 我们建议创建连接到组组Microsoft 365网站。 如果要使用聊天，可以通过在聊天室创建团队来创建Microsoft Teams。 有关此内容[Teams，请参阅视频：什么是Microsoft Teams？。](https://support.microsoft.com/office/b98d533f-118e-4bae-bf44-3df2470c2b12) 如果不想使用网站Teams，可以从"开始"SharePoint网站。 
   
 [什么是 SharePoint 团队网站？](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)
   
@@ -52,11 +52,11 @@ ms.locfileid: "59775836"
   
 若要提高网站的可发现性，请将其添加为网站开始页上的SharePoint链接。 有关信息，请参阅[将特别推荐的链接添加到SharePoint页面](/sharepoint/change-links-list-on-sharepoint-home-page)。
   
-若要将图像添加到团队网站起始页，请参阅将图片或图像文件添加到SharePoint[页面](https://support.microsoft.com/office/4a9b0e98-c89a-4a41-8adb-b7750dccca16)。
+若要将图像添加到团队网站起始页，请参阅将[图片或图像文件](https://support.microsoft.com/office/4a9b0e98-c89a-4a41-8adb-b7750dccca16)添加到SharePoint页面。
   
 若要向网站添加页面，请参阅 [向网站添加页面](https://support.microsoft.com/office/b3d46deb-27a6-4b1e-87b8-df851e503dec)。
   
-若要了解团队网站设置，请参阅[管理SharePoint团队网站设置。](https://support.microsoft.com/office/8376034D-D0C7-446E-9178-6AB51C58DF42)
+若要了解团队网站设置，请参阅[管理SharePoint团队网站设置](https://support.microsoft.com/office/8376034D-D0C7-446E-9178-6AB51C58DF42)。
   
 ## <a name="work-with-document-libraries"></a>使用文档库
 
@@ -70,13 +70,13 @@ ms.locfileid: "59775836"
   
 ## <a name="work-with-lists-to-organize-data"></a>使用列表组织数据
 
-SharePoint可添加到网站的列表（如链接列表、日历、联系人或任务列表）的许多模板。
+SharePoint可添加到网站的列表（如链接、日历、联系人或任务列表）的许多模板。
   
 了解如何在["列表"SharePoint。](https://support.microsoft.com/office/0D397414-D95F-41EB-ADDD-5E6EFF41B083#ID0EAAGAAA=Online)
   
 有关使用更多列扩展列表的信息，请参阅在列表或库中SharePoint[列](https://support.microsoft.com/office/2b0361ae-1bd3-41a3-8329-269e5f81cfa2)。
   
-如果要在列表中存储大量数据，请参阅在列表中管理大型列表[和SharePoint。](https://support.microsoft.com/office/B8588DAE-9387-48C2-9248-C24122F07C59)
+如果要在列表中存储大量数据，请参阅在列表中管理大型列表和[SharePoint。](https://support.microsoft.com/office/B8588DAE-9387-48C2-9248-C24122F07C59)
   
 查看有关将日历添加到网站的视频，请参阅 [创建共享日历](https://support.microsoft.com/office/61b96006-70e2-4535-a34f-ee4fc772f798)。
 
@@ -86,7 +86,7 @@ SharePoint可添加到网站的列表（如链接列表、日历、联系人或�
   
 中心网站让你可以添加和关联网站。 有关详细信息，请参阅[什么是SharePoint中心网站？。](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f)
   
-准备好构建中心网站，请参阅在 SharePoint [Online 中创建中心网站](/sharepoint/create-hub-site)。
+准备好构建中心网站，请参阅在[SharePoint Online 创建中心网站](/sharepoint/create-hub-site)。
   
 若要了解如何将网站添加到中心网站，请参阅将SharePoint[网站与中心网站关联](https://support.microsoft.com/office/ae0009fd-af04-4d3d-917d-88edb43efc05)。
   

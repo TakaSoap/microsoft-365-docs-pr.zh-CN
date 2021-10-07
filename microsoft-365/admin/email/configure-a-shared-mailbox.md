@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 创建共享邮箱并配置其用户的一些设置，例如电子邮件转发和自动答复。
-ms.openlocfilehash: 8cc5b59222e5a14c55ba20e087090f876cfef650
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 201291adddf588bde955cbba7e2c0075e5ca7c88
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774817"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165108"
 ---
 # <a name="configure-shared-mailbox-settings"></a>配置共享邮箱设置
 
@@ -123,7 +124,7 @@ ms.locfileid: "59774817"
 
 4. 执行下列操作之一：
    - 若要向其他会员授予该权限，请选择"添加权限"，搜索或选择要添加的成员，然后选择"保存 **"。**
-   - 若要从成员中删除权限，请使用"搜索"框在必要时搜索该成员，选择成员名称旁边的 **"X"，** 然后选择"保存 **"。** 
+   - 若要从成员中删除权限，请使用"搜索"框搜索该成员（如有必要，请选择成员名称旁边的 **"X"，** 然后选择"保存 **"。** 
 
 4. 再次 **选择"保存** "。
 
@@ -140,7 +141,7 @@ ms.locfileid: "59774817"
 4. 选择“**保存**”。
 
 > [!NOTE]
-> 隐藏地址列表中的共享邮箱会使新的共享邮箱成员无法将隐藏邮箱添加到其 Outlook 配置文件，直到共享邮箱再次显示在地址列表中。 
+> 隐藏地址列表中的共享邮箱会使新的共享邮箱成员无法将隐藏邮箱添加到其 Outlook 配置文件中，直到共享邮箱再次显示在地址列表中。 
 
 ## <a name="related-content"></a>相关内容
 

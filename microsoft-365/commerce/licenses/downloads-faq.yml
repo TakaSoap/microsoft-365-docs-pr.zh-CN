@@ -10,22 +10,22 @@ metadata:
   ms.topic: article
   ms.service: o365-administration
   ms.custom: commerce_vl
-  localization_priority: Normal
+  ms.localizationpriority: medium
   description: 有关下载Microsoft 365 管理中心常见问题。
-  ms.openlocfilehash: c9ac712e84fd60e96ba3fa8749cacda76aa0c354
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 5ac5fb32f968902e772c5f98beb425d74f154ac8
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59171140"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60163632"
 title: 下载常见问题
 summary: ''
 sections:
-- name: 概要
+- name: 一般信息
   questions:
   - question: >
       从应用程序下载软件的要求Microsoft 365 管理中心？
-    answer: "您必须为计划下载的产品购买许可证，并有权访问有效的产品密钥，每个许可证才能完成安装。 在下载产品之前验证许可协议。\n\n你可以找到每个产品的系统要求，登录管理中心并进入你的产品下载页面>  >  **产品说明**。 \n\n> [!NOTE]\n> 并非所有产品都需要产品密钥。\n"
+    answer: "您必须为计划下载的产品购买许可证，并有权访问有效的产品密钥，每个许可证才能完成安装。 在下载产品之前验证许可协议。\n\n你可以找到每个产品的系统要求，登录管理中心并进入你的产品下载页面>  >  **产品说明。** \n\n> [!NOTE]\n> 并非所有产品都需要产品密钥。\n"
   - question: >
       可从管理中心下载哪些产品？
     answer: >
@@ -62,11 +62,11 @@ sections:
   - question: "如何下载Office for Mac？ \n"
     answer: >
       若要运行批量许可版本的 Office for Mac，必须下载并安装以下文件：
-        - 批量[许可证 (VL) ](/deployoffice/mac/volume-license-serializer)下载文件中Office for Mac序列化程序包。
+        - 批量[许可证 (VL) ](/deployoffice/mac/volume-license-serializer)下载文件中包含的序列化Office for Mac程序包。
         - 安装[Office for Mac包 。](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac) 单个应用程序的安装程序程序包文件也可在 Microsoft 365 管理中心。 Office for Mac不需要产品密钥，因为 VL 序列化程序用于激活批量许可版本的 Office for Mac。
   - question: >
       如何在管理中心下载产品？
-    answer: "若要在管理中心下载产品：\n1. 选择 **批量许可**，然后选择产品或 **查看下载**。\n2. 在 **\"下载**\"下，选择组件并选择下载操作或下载图标。 \n\n若要访问管理中心中的下载，贵组织的 VLSC 管理员可以将你分配到以下角色之一来提供访问权限：\n  - 管理员\n  - 下载\n  - 软件保障管理器\n"
+    answer: "若要在管理中心下载产品：\n1. 选择 **批量许可**，然后选择产品或 **查看下载**。\n2. 在 **\"下载**\"下，选择组件并选择下载操作或下载图标。 \n\n若要访问管理中心中的下载，贵组织的 VLSC 管理员可以将您分配到以下角色之一来提供访问权限：\n  - 管理员\n  - 下载\n  - 软件保障管理器\n"
   - question: >
       如何更改下载设置？
     answer: >
@@ -89,7 +89,7 @@ sections:
       如果你将电脑与 Windows操作系统一起使用，则无需其他软件来刻录 CD-R 或 DVD-R。 双击下载的 ISO 文件，然后按照映像刻录器向导中的步骤操作。
 
 
-      如果你使用的是除操作系统外的任何操作系统Windows，你可能需要其他软件。 如果你的计算机配备了 CD/DVD 刻录机，该软件可能会加载到电脑上。 大多数 CD-R/DVD-R 写入软件都允许您从映像文件创建磁盘。 选择一个菜单项（ **如将图像复制到 CD** 或 **刻录图像）** 以访问此功能。
+      如果你使用的是除操作系统外的任何操作系统Windows，你可能需要其他软件。 如果你的计算机配备了 CD/DVD 刻录机，则该软件可能会加载到电脑上。 大多数 CD-R/DVD-R 写入软件都允许您从映像文件创建磁盘。 选择一个菜单项（ **如将图像复制到 CD** 或 **刻录图像）** 以访问此功能。
   - question: >
       如何作为虚拟设备装载和访问 ISO 文件？
     answer: >

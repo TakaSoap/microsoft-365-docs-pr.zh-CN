@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -21,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: 使用 Microsoft 365 登录你的管理员帐户，将一些个人用户密码设置为永不Windows PowerShell。
-ms.openlocfilehash: 8574571564ddfd98e5a5cfe7c232353e0d82f85c
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: 登录你的 Microsoft 365 管理员帐户，使用密码将一些个人用户密码设置为永不Windows PowerShell。
+ms.openlocfilehash: 480ab751b9ccc97f0a4fcd51d3f7a698790cf675
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775296"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157202"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>设置单个用户的密码永不过期
 
@@ -50,7 +51,7 @@ Microsoft 云服务的全局管理员可以使用 Azure Active Directory [PowerS
 
 运行下列命令之一：
 
-- 若要了解单个用户的密码是否设置为永不过期，请通过使用 UPN (例如 *，user@contoso.onmicrosoft.com*) 或要检查的用户 ID 运行以下 cmdlet：
+- 若要了解单个用户的密码是否设置为永不过期，请通过使用 UPN (例如 user@contoso.onmicrosoft.com *)* 或要检查的用户 ID 运行以下 cmdlet：
 
     ```powershell
     Get-AzureADUser -ObjectId <user id or UPN> | Select-Object UserprincipalName,@{
@@ -82,7 +83,7 @@ Microsoft 云服务的全局管理员可以使用 Azure Active Directory [PowerS
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```
 
-- 获取当前用户桌面上 CSV 中 PasswordNeverExpires 的所有用户的报告，并添加ReportPasswordNeverExpires.csv
+- 获取当前用户桌面上 CSV 中 PasswordNeverExpires 的所有用户的报告，并ReportPasswordNeverExpires.csv
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -128,4 +129,4 @@ Run one of the following commands:
 
 [允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
 [重置密码](../add-users/reset-passwords.md)（文章）\
-[为组织设置密码过期策略 (](../manage/set-password-expiration-policy.md) 文章) 
+[为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) 

@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f80aa4fb43c0e1becd24d58713e6f0ad9251bc1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 07aec0c4ff4c6ea42fcc6e4bb95357bd98bf5cba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162291"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162598"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的设备运行状况和合规性报告
 
@@ -34,7 +34,7 @@ ms.locfileid: "59162291"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-设备状态报告提供有关组织中设备的高级别信息。 该报告包括显示传感器运行状况状态、防病毒状态、操作系统平台Windows 10信息。
+设备状态报告提供有关组织中设备的高级别信息。 该报告包括显示传感器运行状况状态、防病毒状态、操作系统平台和 Windows 10信息。
 
 仪表板分为两个部分：
 
@@ -52,7 +52,7 @@ ms.locfileid: "59162291"
 
 ## <a name="device-trends"></a>设备趋势
 
-默认情况下，设备趋势显示从最后一整天结束的 30 天期间的设备信息。 为了更好地了解组织中出现的趋势，您可以通过调整所显示的时间段来微调报告期间。 若要调整时间段，请从下拉列表选项中选择一个时间范围：
+默认情况下，设备趋势显示从最后一整天结束的 30 天期间的设备信息。 为了更好地了解组织中发生的趋势，您可以通过调整所显示的时间段来微调报告期间。 若要调整时间段，请从下拉列表选项中选择一个时间范围：
 
 - 30 天
 - 3 个月
@@ -93,7 +93,7 @@ ms.locfileid: "59162291"
 
 例如，若要显示有关Windows 10传感器运行状况状态的设备的数据：
 
-1. 在 **筛选器>传感器运行状况状态>处于活动状态**。
+1. Under **Filters > Sensor health state > Active**.
 2. 然后选择操作系统 **平台> Windows 10。**
 3. 选择“**应用**”。
 

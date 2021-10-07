@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - MSStore_Link
@@ -24,13 +25,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: 通过购买域名并添加域名 tom@fourthcoffee.com 将电子邮件地址更改为友好电子邮件地址，Microsoft 365。
-ms.openlocfilehash: f14bc47950c18aeccdc0c73fbee498be6bf32f3f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: 通过购买域名并添加到 tom@fourthcoffee.com，将电子邮件地址更改为友好电子邮件地址，Microsoft 365。
+ms.openlocfilehash: 71269513bce69ec81cf6e4a3030fb3327c32c88d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774818"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165132"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>将电子邮件地址更改为使用您的自定义域
 
@@ -50,11 +51,11 @@ ms.locfileid: "59774818"
 
 ::: moniker range="o365-21vianet"
 
-由世纪Office 365中的初始电子邮件地址包括 partner.onmschina.cn，tom@fourthcoffee.partner.onmschina.cn。 你可以将地址更改为更友好的地址，tom@fourthcoffee.cn。 你将需要自己的域名，如 fourthcoffee.cn 域名。 如果您已有一个，太好了！ 如果没有，您可以了解如何[从域注册机构购买](../get-help-with-domains/buy-a-domain-name.md)。
+由世纪Office 365运营的 partner.onmschina.cn 中的初始电子邮件地址 tom@fourthcoffee.partner.onmschina.cn。 你可以将地址更改为更友好的地址，tom@fourthcoffee.cn。 你将需要自己的域名，如 fourthcoffee.cn 域名。 如果您已有一个，太好了！ 如果没有，您可以了解如何[从域注册机构购买](../get-help-with-domains/buy-a-domain-name.md)。
 
 ::: moniker-end
 
-当您将域的电子邮件更改为发送到 Microsoft 365 时，在设置期间通过更新域的 MX 记录，发送到该域的所有电子邮件都将开始Microsoft 365。 在更改 MX 记录之前，请确保Microsoft 365域中拥有电子邮件的每个人添加用户并创建了邮箱。 不想将域中的每个人的电子邮件移动到Microsoft 365？ 你可以采取一些[步骤来Microsoft 365几个电子邮件地址进行试点](../misc/pilot-microsoft-365-from-my-custom-domain.md)。
+当您将域的电子邮件更改为发送到 Microsoft 365，在设置期间更新域的 MX 记录时，发送到该域的所有电子邮件都将开始Microsoft 365。 在更改 MX 记录之前，请确保Microsoft 365域中拥有电子邮件的每个人添加用户并创建邮箱。 不想将域中的每个人的电子邮件移动到Microsoft 365？ 你可以采取一些[步骤来Microsoft 365一些电子邮件地址进行试点](../misc/pilot-microsoft-365-from-my-custom-domain.md)。
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>将电子邮件地址更改为使用自定义域Microsoft 365 管理中心
 
@@ -89,10 +90,10 @@ ms.locfileid: "59774818"
 6. 选择用户以编辑其用户名，并更改为你刚刚添加的域。
 
 > [!NOTE]
-> 如果未使用 Exchange许可证，则不能使用域从租户发送或接收Microsoft 365电子邮件。
+> 如果未使用 Exchange许可证，则不能使用域从 Microsoft 365 租户发送或接收电子邮件。
   
 ## <a name="related-content"></a>相关内容
 
 [使用自定义域Microsoft 365 (](../get-help-with-domains/buy-a-domain-name.md)购买) \
-[管理域](../get-help-with-domains/index.yml) (链接页) \
+[管理域 (](/admin) 链接页面) \
 [域常见问题](../setup/domains-faq.yml) （文章）

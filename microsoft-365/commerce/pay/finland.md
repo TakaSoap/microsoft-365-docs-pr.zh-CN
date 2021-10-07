@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 046c6e75253d1ad51fb6fb4a8fb55c694473f7ea
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d341e7d64f74656553ae0d73d30faf76a34c0621
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195851"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163608"
 ---
 # <a name="payment-information-for-finland"></a>芬兰的付款信息
 
@@ -41,7 +41,7 @@ ms.locfileid: "59195851"
 **Bank：** Bank Europe plc  
 **SWIFT 代码：** 一台或多张  
 **IBAN 代码：** IE97CITI99005170000127  
-**帐户编号：70000127**  
+**帐户号：70000127**  
 **帐户名称：** MICROSOFT
 
 从本地 Microsoft 子公司颁发的发票使用标准 VAT/销售税/GST 费率颁发，并被视为用于 VAT/销售税/GST 的国内服务提供。

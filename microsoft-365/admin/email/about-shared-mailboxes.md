@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 当多个用户需要访问同一个邮箱时，会使用共享邮箱。 在创建共享邮箱之前，了解您需要了解的内容。
-ms.openlocfilehash: d00c234179b67961da3003b5fccbe886158d11df
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: 11251ccc964e02a656a9978170443f6492ac1deb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011241"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165264"
 ---
 # <a name="about-shared-mailboxes"></a>关于共享邮箱
 
@@ -36,7 +36,7 @@ ms.locfileid: "60011241"
 
 如果管理员已授予用户执行该操作的权限，具有组邮箱权限的用户可以作为或代表邮箱电子邮件地址发送。 这对帮助和支持邮箱尤其有用，因为用户可从 "Contoso 支持" 或 "构建 A 接待台" 发送电子邮件。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 创建 [共享邮箱之前](create-a-shared-mailbox.md)，应了解以下一些情况：
 
@@ -64,7 +64,7 @@ ms.locfileid: "60011241"
 
 
 > [!NOTE]
-> 若要访问共享邮箱，用户必须具有Exchange Online许可证，但共享邮箱不需要单独的许可证。 每个共享邮箱都有相应的用户帐户。 注意到你在创建共享邮箱时未被要求提供密码？ 该帐户有一个密码，但密码是系统生成的（未知）。 不应使用该帐户登录共享邮箱。 没有许可证，共享邮箱限制为 50 GB。 若要将大小限制增加到 100 GB，必须将共享邮箱分配给 Exchange Online Plan 2 许可证。 Exchange Online附加许可证的 Exchange Online Archiving 计划 1 许可证只会增加存档邮箱的大小。 这还使您能够为额外的存档存储容量启用自动扩展存档。 同样，如果要将共享邮箱置于诉讼保留状态，共享邮箱必须具有 Exchange Online 计划 2 许可证或 Exchange Online 计划 1 许可证以及 Exchange Online Archiving 附加设备许可证。 如果要应用高级功能（如 Microsoft Defender for Office 365、Advanced eDiscovery 或自动保留策略），共享邮箱必须获得这些功能的许可。
+> 若要访问共享邮箱，用户必须具有Exchange Online许可证，但共享邮箱不需要单独的许可证。 每个共享邮箱都有相应的用户帐户。 注意到你在创建共享邮箱时未被要求提供密码？ 该帐户有一个密码，但密码是系统生成的（未知）。 不应使用该帐户登录共享邮箱。 没有许可证，共享邮箱限制为 50 GB。 若要将大小限制增加到 100 GB，必须将共享邮箱分配给 Exchange Online Plan 2 许可证。 使用Exchange Online附加许可证Exchange Online Archiving计划 1 许可证只会增加存档邮箱的大小。 这还使您能够为额外的存档存储容量启用自动扩展存档。 同样，如果要将共享邮箱置于诉讼保留状态，共享邮箱必须具有 Exchange Online 计划 2 许可证或 Exchange Online 计划 1 许可证以及 Exchange Online Archiving 附加设备许可证。 如果要应用高级功能（如 Microsoft Defender for Office 365、Advanced eDiscovery 或自动保留策略），共享邮箱必须获得这些功能的许可。
 
 ## <a name="related-content"></a>相关内容
 

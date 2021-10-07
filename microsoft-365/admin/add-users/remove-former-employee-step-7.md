@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照以下步骤删除以前员工的用户帐户。
-ms.openlocfilehash: aaca61e7b3d781413355bbf8ed8a884c6d14835c
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 631405b66c777060463a4e98620ff3c8b06c7e77
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774119"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157238"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>步骤 7 - 删除以前员工的用户帐户
 
@@ -69,8 +70,8 @@ ms.locfileid: "59774119"
 |可执行的操作|实现方式|
 |:-----|:-----|
 |终止会话（如 Outlook 网页版、Outlook、Exchange Active Sync 等）并强制打开一个新的会话|重置密码|
-|终止会话并阻止对未来会话的访问（针对所有协议）|禁用帐户。 例如， (管理Exchange使用 PowerShell) ： <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
-|针对特定协议终止会话（如 ActiveSync）|禁用协议。 例如， (管理Exchange使用 PowerShell) ： <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|终止会话并阻止对未来会话的访问（针对所有协议）|禁用帐户。 例如， (管理Exchange或 PowerShell) ： <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|针对特定协议终止会话（如 ActiveSync）|禁用协议。 例如， (管理Exchange或 PowerShell) ： <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
 |
 
 可在三处完成上述操作：

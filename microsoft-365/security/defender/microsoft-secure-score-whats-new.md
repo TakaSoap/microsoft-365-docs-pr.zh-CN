@@ -4,7 +4,7 @@ description: 介绍 Microsoft 安全分数在安全中心门户中Microsoft 365 
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， microsoft 安全分数， Microsoft 365 Defender门户
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 4ff06a12d6d0639b00091a93b9ba7162d7cb6264
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 59ff0e516bb6b0a5f5c89e07fb972184a5a6c837
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175338"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162298"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分数中的新增功能
 
@@ -41,7 +41,7 @@ ms.locfileid: "59175338"
 ### <a name="added-improvement-action-related-to-microsoft-teams"></a>添加了与项目相关的改进Microsoft Teams
 
 - 限制拨入用户绕过会议厅
-- 限制外部参与者在会议Teams控制权
+- 限制外部参与者在会议Teams控制
 - 限制匿名用户启动Teams会议
 - 要求为会议设置Teams大厅
 - 配置允许哪些用户参加Teams会议
@@ -51,7 +51,7 @@ ms.locfileid: "59175338"
 - 修复适用于 macOS 的 Microsoft Defender for Endpoint 传感器数据收集
 - 修复 MacOS 的终结点通信受损的 Microsoft Defender
 - 在 macOS 中将最小密码长度设置为 15 个或多个字符
-- 在 macOS 中将"强制实施密码历史记录"设置为"24 (密码) "。
+- 在 macOS 中，将"强制实施密码历史记录"设置为" (24) 密码"。
 - 在 macOS 中，将"最长密码使用时间"设置为"90 天或更少天，但不设置为 0"
 - 在 macOS 中将帐户锁定阈值设置为 5 或更低
 - 打开 macOS 上的防火墙
@@ -63,19 +63,19 @@ ms.locfileid: "59175338"
 - 保护家庭文件夹
 - 打开Microsoft Defender 防病毒 macOS 实时保护
 - 在 macOS Microsoft Defender 防病毒模式下打开 PUA 保护
-- 启用Microsoft Defender 防病毒云提供的 macOS 保护
+- 为 macOS Microsoft Defender 防病毒云保护
 - 更新 Microsoft Defender 防病毒 macOS 的定义
 - 修复适用于 Linux 的 Microsoft Defender for Endpoint 传感器数据收集
 - 修复适用于 Linux 的终结点通信受损的 Microsoft Defender
 - 无限制访问帐户
 - 打开Microsoft Defender 防病毒 Linux 实时保护
-- 在 Linux Microsoft Defender 防病毒模式打开 PUA 保护
-- 为 linux Microsoft Defender 防病毒云提供的保护
-- 更新Microsoft Defender 防病毒 Linux 的定义
+- 在阻止Microsoft Defender 防病毒 Linux 中打开 PUA 保护
+- 为 linux Microsoft Defender 防病毒云保护
+- 更新Microsoft Defender 防病毒 Linux 的发布定义
 
 ## <a name="june-2021"></a>2021 年 6 月
 
-### <a name="removed-improvement-action-related-to-microsoft-cloud-app-security"></a>删除了与项目相关的Microsoft Cloud App Security
+### <a name="removed-improvement-action-related-to-microsoft-cloud-app-security"></a>删除了与项目相关的改进Microsoft Cloud App Security
 
 - 使用云应用安全检测异常行为。
 
@@ -87,7 +87,7 @@ ms.locfileid: "59175338"
 
 ## <a name="january-2021"></a>2021 年 1 月
 
-### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>添加了针对安全保护的第一个Microsoft Teams
+### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>添加了针对安全保护的第一Microsoft Teams
 
 Microsoft Teams安全分数中的一项新改进操作，客户会看到"限制匿名用户加入会议"。
 
@@ -96,7 +96,7 @@ Microsoft Teams安全分数中的一项新改进操作，客户会看到"限制�
 ### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>为 Microsoft Defender for Endpoint 添加了六个与帐户相关的改进操作：
 
 - 将"最小密码长度"设置为"14 个或多个字符"
-- 将"强制实施密码历史记录"设置为"24 (密码) "
+- 将"强制实施密码历史记录"设置为"24 个或多个密码 (") "
 - 将"最大密码使用时间"设置为"60 天或更少天，但不设置为 0"
 - 将"最短密码使用时间"设置为"1 天或 (天) "
 - 禁用内置管理员帐户
@@ -150,7 +150,7 @@ Microsoft Teams安全分数中的一项新改进操作，客户会看到"限制�
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 
-如果有任何问题，请通过发布在安全、隐私和合规性社区中& [告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
+如果有任何问题，请通过在安全、隐私和合规性社区中发布& [告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
 
 ## <a name="related-resources"></a>相关资源
 

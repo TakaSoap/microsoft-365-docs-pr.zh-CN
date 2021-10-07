@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +22,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 获取SharePoint使用率报告，了解用户存储在 SharePoint 网站中的文件数、当前使用的文件数以及使用的总存储量。
-ms.openlocfilehash: 116b4521408fd8cd41e22a959a7b530dbce01174
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 3b84a31b787e3ccf855e26befcf570e364a9e148
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356097"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162034"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365管理中心中的报告 - SharePoint网站使用情况
 
-作为Microsoft 365管理员，"报表"仪表板将显示组织中各种产品的活动概述。 使用该仪表板，能够更深入细致地了解特定于每个产品的活动。 例如，您可以获取从 SharePoint 获取的值的高级别视图，其中包括用户在 SharePoint 网站中存储的文件总数、当前使用的文件数以及所有这些网站中使用的存储。 然后，你可以向下钻取 SharePoint 网站使用情况报告，了解所有网站的趋势和每个网站级别的详细信息。 
+作为Microsoft 365管理员，"报表 **"仪表板将显示** 组织中各种产品的活动概述。 使用该仪表板，能够更深入细致地了解特定于每个产品的活动。 例如，您可以获取从 SharePoint 获取的值的高级别视图，其中包括用户存储在 SharePoint 网站中的文件总数、当前使用的文件数以及所有这些网站中使用的存储。 然后，你可以向下钻取 SharePoint 网站使用情况报告，了解所有网站的趋势和每个网站级别的详细信息。 
   
 > [!NOTE]
 > 您必须是 Microsoft 365 中的全局管理员、全局读取者或报告读取者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。
-Microsoft 365管理中心中的报告不受高级GCC DoD 租户的支持。
+Microsoft 365高租户和 DoD 租户GCC管理中心中的报告。
  
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>如何访问 SharePoint 网站使用情况报表
 
@@ -60,7 +60,7 @@ Microsoft 365管理中心中的报告不受高级GCC DoD 租户的支持。
   
 ## <a name="interpret-the-sharepoint-site-usage-report"></a>解释SharePoint使用率报告
 
-You can view the site usage in the SharePoint by choosing the **Site usage** tab.
+您可以通过选择"网站使用率"选项卡SharePoint网站 **使用率报告。**
 
 :::image type="content" alt-text="Microsoft 365报告 - Microsoft SharePoint网站使用率报告。" source="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png" lightbox="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png":::
 
@@ -88,7 +88,7 @@ You can view the site usage in the SharePoint by choosing the **Site usage** tab
 |页面视图  |在网站中查看页面次数。  |
 |访问的页面  |访问网站上的唯一页面数。  |
 |匿名链接计数  |网站上使用"具有链接的任何人"共享文档或文件夹次数。  |
-|公司链接计数  |网站上使用"组织中的人员及链接"共享文档或文件夹次数。  |
+|公司链接计数  |使用网站上"组织中的人员及链接"共享文档或文件夹次数。  |
 |来宾计数的安全链接  |使用网站上"特定人员"共享文档或文件夹次数。  |
 |成员计数的安全链接  |使用网站上"特定人员"共享文档或文件夹次数。  |
 |根网站模板  |用于创建网站的模板。  <br/> 注意：如果要按不同的网站类型筛选数据，请导出数据并使用"根 Web 模板"列。 |

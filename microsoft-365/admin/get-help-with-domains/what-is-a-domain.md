@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3582c74eca0c87b40f28491d2e4991c5f28a47b6
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: eef9c82593d75ecebb4d07b5bcaaf39ff59cb350
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774408"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164556"
 ---
 # <a name="what-is-a-domain"></a>什么是域？
 
@@ -65,6 +65,6 @@ ms.locfileid: "59774408"
 
 [在本文Microsoft 365 (](../setup/add-domain.md)域) 
 
-[本文Microsoft 365我的自定义域 (](../misc/pilot-microsoft-365-from-my-custom-domain.md)试用) 
+[本文Microsoft 365我的自定义](../misc/pilot-microsoft-365-from-my-custom-domain.md)域 (试用) 
 
 

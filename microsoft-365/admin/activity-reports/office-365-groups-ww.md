@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: 获取Microsoft 365组报告，了解组及其活动。
-ms.openlocfilehash: 8c96d0bdbc42e4cebec47bde532afd6288d29613
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 62d2ed90a29a75062dcce98346aa5ed3f5460428
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169975"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157334"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365管理中心中的报告 - Microsoft 365组
 
-"Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在Microsoft 365组中，你可以深入了解组织中组的活动，并查看正在创建和使用的组数。
+"Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在Microsoft 365组中，可以深入了解组织中组的活动，并查看创建和使用的组数。
   
 > [!NOTE]
-> 您必须是 Microsoft 365 中的全局管理员、全局读取者或报告读取者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。  
+> 您必须是 Microsoft 365 中的全局管理员、全局读取者或报告读者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。  
   
 ## <a name="how-to-get-to-the-groups-report"></a>如何访问组报告
 
@@ -58,24 +58,24 @@ You can view the activations in the Office 365 by choosing the **Groups activity
 |组名称 |组的名称。 |
 |Deleted |已删除的组数。 如果该组被删除，但在报告时间段中有活动，它将显示在网格中，并显示设置为 true 的标记。 |
 |组所有者 |组所有者的名称。 |
-|上次活动日期 (UTC)  |组收到邮件的最近日期。 - 这是电子邮件对话、活动或网站中Yammer日期。 |
+|上次活动日期 (UTC)  |组收到邮件的最近日期。 - 这是电子邮件对话、电子邮件或网站中Yammer发生的最新日期。 |
 |类型 |组的类型。 可以是私有组，也可以是公用组。 |
-|收到的电子邮件Exchange |组接收的邮件数。|
+|在邮件中收到Exchange |组接收的邮件数。|
 |电子邮件总数Exchange ()  |组邮箱中的项目总数。 |
-|用于存储 EXCHANGE (MB)  |组邮箱使用的存储。 |
+|邮箱存储，Exchange (MB)  |组邮箱使用的存储。 |
 |SharePoint文件 (总数)  |组网站中存储SharePoint的数量。 |
-|SharePoint活动 (文件)  |报告期间对 SharePoint 组网站中已查看或修改 (、同步、在内部或外部共享) 文件数。 |
-|用于存储的站点总SharePoint (MB)  |报告期间使用的存储量（以 MB 为单位）。 |
+|SharePoint活动 (文件)  |报告期间在 SharePoint 组网站中 (查看或修改、同步、在内部或外部共享) 文件数。 |
+|用于总网站存储 SharePoint (MB)  |报告期间使用的存储量（以 MB 为单位）。 |
 |邮件Yammer (中)  |报告期间在报告组中Yammer的邮件数。 |
-|邮件Yammer (阅读)  |报告期间在报告Yammer组中读取的对话数。 |
-|邮件Yammer (喜欢)  |报告期间"组"中Yammer的消息数。 |
+|邮件Yammer (阅读)  |报告期间在报告组中Yammer的对话数。 |
+|邮件Yammer (喜欢)  |报告期间"组"Yammer的消息数。 |
 |Members |组中成员的数量。 |
 |外部成员 |组中外部用户的数量。|
 
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365管理中心中的报表 (](activity-reports.md)文章) \
+[Microsoft 365管理中心中的报告 (](activity-reports.md)文章) \
 [安全与合规中心&报告](../../compliance/reports-in-security-and-compliance.md) (文章) \
 [Microsoft 365中心中的报表 -](../../admin/activity-reports/active-users-ww.md)活动用户 (文章) 
 

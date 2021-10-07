@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: 了解如何将用户Microsoft 365联系人（如员工、合作伙伴或供应商）添加到电子邮件通讯组。
-ms.openlocfilehash: 2ef6e1d389ad902a767786a480b05345f26e61f9
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: b66f599ec2fd59aeb5749e98473c8fba4a8ecb0d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774840"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165168"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>向通讯组添加用户或联系人
 

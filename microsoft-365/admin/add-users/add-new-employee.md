@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -22,22 +23,22 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 向企业Microsoft 365电子邮件、Skype和Office新员工。
-ms.openlocfilehash: a5fee97b37ba56ad8d8c96420cec3610a3483cec
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 83565c6db281ee9366d9ba383ead2c3a0ba1ee1b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773627"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161986"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>向员工添加Microsoft 365
 
-本文帮助你为新员工入职培训Microsoft 365培训。 我们假设你是管理员，并且你已完成Microsoft 365[设置](../setup/setup.md)，现在你有一位新加入你的公司。
+本文帮助你为新员工入职培训Microsoft 365培训。 我们假设你是管理员，并且你已完成Microsoft 365[设置](../setup/setup.md)，现在你已经有一位新加入公司的人。
   
-如果新员工需要 Microsoft 365，则适合你，并且你正在使用 Microsoft 365 计划，该计划允许你在计算机上安装[Office](https://products.office.com/business/compare-office-365-for-business-plans)应用（如 Word 和 Excel）。 
+如果你的新员工需要 Microsoft 365，并且你正在使用 Microsoft 365 计划，你可以在计算机上安装[Office](https://products.office.com/business/compare-office-365-for-business-plans)应用（如 Word 和 Excel）。 
   
  **不是管理员？** [了解如何Microsoft 365](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)企业用户和家庭用户进行设置。 
   
- **计划中Office应用？** 请按照以下步骤操作，但跳过安装应用的各个部分。 请[改为使用联机版本的 Office。](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804) 
+ **计划中Office没有应用？** 请按照以下步骤操作，但跳过安装应用的各个部分。 请[改为使用联机版本的 Office。](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804) 
   
 以下是快速概述： 
   
@@ -81,9 +82,9 @@ ms.locfileid: "59773627"
 |登录 Office  <br/> |转到 [https://www.office.com](https://www.office.com) ，选择 **登录**，然后输入你的用户 ID 和密码。  <br/> |
 |将Office应用安装到您的计算机上。  <br/><br/> |登录时，主页具有一个链接，用于下载和安装 Word 和 Outlook。  选择 **"安装Office"。**         有关说明，请参阅[如何安装Office。](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)  <br/> |
 |在 中设置Outlook 2016。  <br/> |在计算机上Office应用后，设置电子邮件。 有关说明，[请参阅如何设置Outlook。](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)  <br/> |
-|设置Skype for Business，以便你可以与公司或世界各地的同事或业务合作伙伴联系。 可以使用 IM、语音或视频呼叫开始对话。  <br/> |[在Skype for Business安装客户端](https://support.microsoft.com/office/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)。  <br/> <br/>若要了解如何使用 Skype for Business，[请观看视频。](https://support.microsoft.com/office/3a21eca4-434d-41f1-ab06-3d4a268573b7) <br/> <br/>是否设置了Skype for Business以便员工可以联系企业外部使用免费应用Skype人员？ 如果没有，请告知新员工，以便他们了解使用 Skype for Business。  <br/> |
-|如果你想要获取电子邮件或在手机上使用 Skype for Business安装应用。  <br/> |如果你想要设置移动设备Outlook，以便可以通过手机获取电子邮件。 有关说明，请参阅[iOS、Android、Windows Phone](https://support.microsoft.com/office/b2de2161-cc1d-49ef-9ef9-81acd1c8e234) [](https://support.microsoft.com/office/886db551-8dfa-4fd5-b835-f8e532091872) [](https://support.microsoft.com/office/181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>如果要在移动设备上Skype for Business，请下载并安装移动应用。 有关说明，请参阅[iOS、Android、Windows Phone](https://support.microsoft.com/office/3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS) [](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android) [](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
-|完成OneDrive for Business培训，帮助你了解如何在云中存储和组织文档、演示文稿和电子表格。  <br/> |使用文档保留云中与业务相关的OneDrive for Business。 你始终可以访问你的内容，即使你已登录到另一Microsoft 365登录。 [观看视频，了解如何使用OneDrive for Business](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **培训：OneDrive for Business**[培训](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (选择OneDrive for Business) 。  <br/> |
+|设置Skype for Business，以便你可以与公司或世界各地的同事或业务合作伙伴联系。 可以使用 IM、语音或视频呼叫开始对话。  <br/> |[在Skype for Business安装客户端](https://support.microsoft.com/office/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)。  <br/> <br/>若要了解如何使用 Skype for Business，[请观看视频。](https://support.microsoft.com/office/3a21eca4-434d-41f1-ab06-3d4a268573b7) <br/> <br/>是否设置了Skype for Business，以便员工可以联系企业外部使用免费应用Skype人员？ 如果没有，请告知新员工，以便他们了解使用 Skype for Business。  <br/> |
+|如果你想要获取电子邮件或在手机上使用Skype for Business安装应用。  <br/> |如果你想要设置移动设备Outlook，以便可以通过手机获取电子邮件。 有关说明，请参阅[iOS、Android、Windows Phone](https://support.microsoft.com/office/b2de2161-cc1d-49ef-9ef9-81acd1c8e234) [](https://support.microsoft.com/office/886db551-8dfa-4fd5-b835-f8e532091872) [](https://support.microsoft.com/office/181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>如果要在移动设备上Skype for Business，请下载并安装移动应用。 有关说明，请参阅[iOS、Android、Windows Phone](https://support.microsoft.com/office/3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS) [](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android) [](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
+|完成OneDrive for Business培训，帮助你了解如何在云中存储和组织文档、演示文稿和电子表格。  <br/> |使用文档保留云中与业务相关的OneDrive for Business。 你始终可以访问内容，即使你已登录到另一Microsoft 365访问内容。 [观看视频，了解如何使用OneDrive for Business](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **培训：OneDrive for Business**[培训](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (选择OneDrive for Business) 。  <br/> |
 |完成 SharePoint Online 培训，帮助你与同事协作并共享内容。  <br/> |保存您的同事也将访问的文档的最佳位置是 SharePoint Online。  <br/> <br/>**培训：**[视频：使用 SharePoint Online 协作处理团队内容](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **了解：** 你的组织如何使用 SharePoint Online，以及存储哪些类型的文档。 此外，哪些文档存储在OneDrive for Business。  <br/> |
 
 ## <a name="related-content"></a>相关内容

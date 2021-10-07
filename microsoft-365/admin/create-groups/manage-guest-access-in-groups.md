@@ -8,10 +8,11 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 了解如何将来宾添加到 Microsoft 365 组、查看来宾用户和使用 PowerShell 控制来宾访问。
-ms.openlocfilehash: 5d4e28234f539a8b4674b2fb3e2d01919fd0afdf
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 99c0a9f46abfffe56f8c751ca614287181f39a5d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774900"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165744"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>管理来宾组中来宾Microsoft 365访问
 
@@ -55,7 +56,7 @@ ms.locfileid: "59774900"
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>从管理中心Microsoft 365来宾添加到组
 
-如果目录中已存在来宾，你可以将它们添加到你的<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 管理中心。</a>  (动态成员身份的[组必须在](/azure/active-directory/enterprise-users/groups-create-rule).Azure Active Directory .) 
+如果目录中已存在来宾，你可以将它们添加到你的<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 管理中心。</a>  (动态成员身份的组必须在 .Azure Active Directory [.) ](/azure/active-directory/enterprise-users/groups-create-rule)
   
 1. 在管理中心，转到组  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**组**</a>。
   
@@ -67,11 +68,11 @@ ms.locfileid: "59774900"
 
 如果你想要将来宾直接添加到目录，可以在[Azure 门户Azure Active Directory B2B 协作用户。](/azure/active-directory/b2b/add-users-administrator)
 
-如果要编辑任何来宾的信息，可以使用 "添加或更新用户个人资料[Azure Active Directory"](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+如果要编辑来宾的任何信息，可以使用 "添加或更新用户个人资料[Azure Active Directory"](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
 ## <a name="related-content"></a>相关内容
 
 [阻止特定组的来宾用户 (](../../solutions/per-group-guest-access.md) 文章) \
-[管理组成员身份，Microsoft 365 管理中心 (](add-or-remove-members-from-groups.md)中) \
+[管理组成员身份，Microsoft 365 管理中心 (](add-or-remove-members-from-groups.md)文章) \
 [Azure Active Directory访问评审](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (文章) \
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (文章) 

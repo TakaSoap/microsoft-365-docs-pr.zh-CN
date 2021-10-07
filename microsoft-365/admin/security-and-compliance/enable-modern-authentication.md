@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -21,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
-description: 了解如何设置注册表项，为已安装 2013 Microsoft Office新式验证。
-ms.openlocfilehash: 502f6854a6c557f0905e1672e9369ab6e790e373
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: 了解如何设置注册表项，以对已安装 2013 Microsoft Office新式验证。
+ms.openlocfilehash: eac974571d75c2d0ea1eddf889d3c1b581e98a16
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773108"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161398"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>在 Windows 设备上启用适用于 Office 2013 的新式验证
 
@@ -40,7 +41,7 @@ ms.locfileid: "59773108"
   
 若要为运行 Windows 且安装了 Microsoft Office 2013 的任何设备（例如笔记本电脑和平板电脑）启用新式验证，需设置以下注册表项。必须在每台要启用新式验证的设备上设置注册表项：
   
-|**注册表项**|**类型**|**值** |
+|**注册表项**|**Type**|**值** |
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
@@ -53,7 +54,7 @@ ms.locfileid: "59773108"
 
 若要在设备上禁用新式验证，请在设备上设置以下注册表项：
   
-|**注册表项**|**类型**|**值**|
+|**注册表项**|**Type**|**值**|
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL |REG_DWORD|0|
    

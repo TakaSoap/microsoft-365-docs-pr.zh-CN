@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -17,12 +17,12 @@ search.appverid:
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
 description: 更新组织的联系人信息，然后选择Microsoft 365接收的产品相关通信的信息。
-ms.openlocfilehash: afb69c52ba89c2a9e6ff7af014a74b0abfda4e5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: eeda3d78dcc4b33995a78e1dc5763fee07109caa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169752"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164448"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>针对来自 Microsoft 的通信更改联系人首选项
 
@@ -43,9 +43,9 @@ ms.locfileid: "59169752"
 4. 键入您要在其中接收这些通信的业务电话、业务移动电话或业务电子邮件。
     可以使用任何电子邮件地址（包括 Microsoft 电子邮件地址）接收这些通信。 如果没有添加用作联系人首选项的电子邮件地址，将会使用备选电子邮件地址（位于" **个人信息**"页面）。
 
-5. 选择“**保存**”。
+5. 选择“保存”。
   
-对于 Office 365 企业版、Microsoft 365 商业标准版 和 Microsoft 365 商业基础版，首次注册为 Microsoft 365 的管理员时，你的用户可能会自动注册以接收与产品相关的通信，具体取决于你组织中用户的国家/地区。
+对于 Office 365 企业版、Microsoft 365 商业标准版 和 Microsoft 365 商业基础版，首次注册为 Microsoft 365 的管理员时，根据组织中用户的国家/地区，用户可能会自动注册以接收与产品相关的内容通信。
   
 有关账单问题的解答，请参阅：
   

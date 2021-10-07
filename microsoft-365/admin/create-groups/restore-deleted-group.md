@@ -1,5 +1,5 @@
 ---
-title: 还原已删除的Microsoft 365组
+title: 还原已删除Microsoft 365组
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
@@ -8,7 +8,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 已删除的组将保留 30 天，您仍可以还原该组。 30 天后，该组及其内容将永久删除。
-ms.openlocfilehash: fb703240ebec219c0a1d15791782ea72be88a3a4
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: 926cfa18972a7ca72009258b02b565bd28a183be
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60087769"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165696"
 ---
-# <a name="restore-a-deleted-microsoft-365-group"></a>还原已删除的Microsoft 365组
+# <a name="restore-a-deleted-microsoft-365-group"></a>还原已删除Microsoft 365组
 
 如果已删除某个组，默认情况下该组将保留 30 天。 此 30 天期限被视为"软删除"，因为您仍可以还原组。 30 天后，该组及其关联内容将永久删除且无法还原。
 
@@ -49,7 +49,7 @@ ms.locfileid: "60087769"
     
 - Teams
 
-- Yammer组和组 (如果Microsoft 365组是Yammer) 
+- Yammer组和组内容 (如果Microsoft 365组是Yammer) 
 
 - Power BI[经典工作区](/power-bi/collaborate-share/service-create-workspaces)
 
@@ -83,11 +83,11 @@ ms.locfileid: "60087769"
 
 ## <a name="got-questions-about-microsoft-365-groups"></a>对组Microsoft 365问题？
 
-请访问[Microsoft 技术Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups)发布问题并参与有关用户Microsoft 365对话。 
+请访问[Microsoft 技术Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups)发布问题并参与有关 Microsoft 365 组的对话。 
   
 ## <a name="related-content"></a>相关内容
 
-[使用 PowerShell Microsoft 365组](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (文章) \
+[Manage Microsoft 365 Groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article) \
 [使用 Remove-UnifiedGroup cmdlet 删除](/powershell/module/exchange/remove-unifiedgroup) (文章) \
 [管理与组连接的团队网站设置](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) (文章) \
 [删除本文Outlook (](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f)中的) 

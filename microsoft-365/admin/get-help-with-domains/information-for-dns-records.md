@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 收集创建 DNS 记录所需的值/信息，以将域连接到 Microsoft 365 订阅。
-ms.openlocfilehash: c56120e446ccde93d353bd4e36fd03493cda4688
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 52d3dfdf0e964c750a0aecd67d2fb6064eb0625e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774444"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164676"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>收集创建 DNS 记录所需的信息
 
@@ -63,7 +63,7 @@ ms.locfileid: "59774444"
     
 5. 转到 ["添加 DNS 记录"以连接域](create-dns-records-at-any-dns-hosting-provider.md)，然后按照步骤在 DNS 主机的网站上添加记录。
     
-6. 按照在 DNS 主机上 (TXT 记录或 MX 记录) 的步骤操作，然后在域中重新Microsoft 365。
+6. 按照在 DNS 主机上 (TXT 记录或 MX 记录) 的步骤操作，然后重新在Microsoft 365。
 
 7. 在 DNS 主机 (域) 后，从 DNS 主机中删除 TXT 记录或 MX Microsoft 365。
     
@@ -103,4 +103,4 @@ ms.locfileid: "59774444"
 
 [域常见问题解答](../setup/domains-faq.yml)（文章）\
 [查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）\
-[管理域](index.yml)（链接页）
+[管理域](/admin)（链接页）

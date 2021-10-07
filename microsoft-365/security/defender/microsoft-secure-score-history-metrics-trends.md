@@ -4,7 +4,7 @@ description: 深入了解影响 Microsoft 安全分数的活动。 发现趋势�
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， microsoft 安全分数， Microsoft 365 Defender门户， 改进操作
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 0bb4b57e3f212820852f23af2665f11f99e5be95
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d1f1c36eeaa010981ffd44ccad75e0d73a7159f6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170023"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162358"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>跟踪 Microsoft 安全分数历史记录并实现目标
 
@@ -50,7 +50,7 @@ ms.locfileid: "59170023"
 
 ## <a name="discover-trends-and-set-goals"></a>发现趋势并设定目标
 
-在 **"指标&** 趋势"选项卡中，有几个图表可让你进一步查看趋势和设置目标。 你可以为整个可视化页面设置日期范围。 可视化效果包括：
+在 **"指标&** 趋势"选项卡中，提供多个图表和图表，可让你进一步查看趋势和设置目标。 你可以为整个可视化页面设置日期范围。 可视化效果包括：
 
 * **安全分数区域** - 根据组织目标和良好、正常和错误分数范围的定义进行自定义。
 * **回归趋势** - 由于配置、用户或设备更改而已回归的点的时间线。  
@@ -60,7 +60,7 @@ ms.locfileid: "59170023"
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>将分数与类似你的组织的分数进行比较
 
-有两个地方可以了解分数与你类似的组织之间的比较情况。 在这两个图表中，都可以选择" **管理比较** "以查看和编辑组织的信息。 还可以根据行业、组织规模、许可证和地区创建自定义比较。
+有两个地方可以了解分数与你类似的组织之间的比较情况。 在这两个图表中，都可以选择" **管理比较** "以查看和编辑组织的信息。 您还可以根据行业、组织规模、许可证和地区创建自定义比较。
 
 #### <a name="comparison-bar-chart"></a>比较条形图
 
@@ -68,7 +68,7 @@ ms.locfileid: "59170023"
 
 ![相似组织的分数的条形图。](../../media/secure-score/secure-score-comparison-bar.png)
 
-- **组织喜欢你的** 组织：如果我们至少有五 (个租户来比较符合以下条件) 租户的平均得分，
+- **类似你的** 组织：如果我们至少有五个或五 (个租户来比较符合以下条件) 租户的平均得分，
     1. 同一行业
     2. 组织规模相同
     3. 所有区域
@@ -93,7 +93,7 @@ ms.locfileid: "59170023"
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 
-如果有任何问题，请通过发布在安全、隐私和合规性社区中& [告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
+如果有任何问题，请通过发布到安全、隐私和合规性社区 [&告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
 
 ## <a name="related-resources"></a>相关资源
 

@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: 了解如何设置企业的计划策略。 计划策略包括约会长度以及可接受的潜在客户和取消时间。
-ms.openlocfilehash: 82cc9a66e82665040a1f0d08635cae10cd413d4b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e2d59feec2cb50bd51f4b6d2a411b48183a5d549
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200781"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164003"
 ---
 # <a name="set-your-scheduling-policies"></a>设置日程安排策略
 
@@ -28,14 +28,14 @@ ms.locfileid: "59200781"
 
 | Policy | 说明 |
 |---|---|
-| 时间增量 | 确定约会之间的间隔。 可以将时间增量从 5 分钟设置为 4 小时。 还可以设置自己的自定义时间增量。 例如，间隔 15 分钟意味着客户可以在 8：00、8：15、8：30 等时间安排 60 分钟的约会。 相反，60 分钟的间隔意味着只能在一小时进行约会。  (若要设置服务持续时间，请参阅 [定义服务](define-service-offerings.md)产品 /)  |
-| 前导时间（以小时表示） | 基于安排的约会构建员工计划，因此必须提前知道在任何特定日期有多少客户来提供服务。 提前时间策略使您可以指定客户必须提前预定或取消约会的小时数。 |
+| 时间增量 | 确定约会之间的间隔。 可以将时间增量从 5 分钟设置为 4 小时。 还可以设置自己的自定义时间增量。 例如，间隔 15 分钟意味着客户可以在 8：00、8：15、8：30 等时间安排 60 分钟的约会。 相反，60 分钟的间隔意味着只能在一小时进行约会。  (若要设置服务持续时间，请参阅 [定义服务](define-service-offerings.md)产品/)  |
+| 前导时间（以小时表示） | 基于安排的约会构建员工计划，因此必须提前知道在任何特定日期有多少客户要提供服务。 提前时间策略使您可以指定客户必须提前预定或取消约会的小时数。 |
 | 提前的最大天数 | 如果你想要限制客户提前预订约会的远远，那么这就是你的设置！ 可以将最大值设置为 365 天或更长。 |
 | 创建或更改预订时通知 | 如果希望每当客户预约或更改现有约会时接收电子邮件，请选择此选项。 电子邮件将转到"业务信息"页上指定的邮箱。 有关详细信息 [，请参阅输入你的](enter-business-information.md) 业务信息。 |
 
 ## <a name="set-your-policies"></a>设置策略
 
-1. 在Microsoft 365中，选择应用启动器，然后选择 Bookings。
+1. In Microsoft 365， select the app launcher， and then select Bookings.
 
 1. 在导航窗格中，选择"**预订页面"。**
 

@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8bfccfba0dbe3d00829c6e668830551c66d3f893
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 7fe31fe2e8e982c1ba8b8bff1aa3e08ce4f94fca
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491369"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163044"
 ---
 # <a name="view-attack-surface-reduction-events"></a>查看攻击面减少活动
 
@@ -40,7 +40,7 @@ ms.locfileid: "59491369"
 
 本文列出了所有事件及其关联的功能或设置，并介绍如何创建自定义视图以筛选到特定事件。
 
-获取事件、阻止和警告的详细报告，Windows 安全中心 E5 订阅并使用[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)。
+获取事件、阻止和警告的详细报告，Windows 安全中心 E5 订阅并使用[Microsoft Defender for Endpoint。](microsoft-defender-endpoint.md)
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>使用自定义视图查看攻击面减少功能
 
@@ -82,7 +82,7 @@ ms.locfileid: "59491369"
 
 4. 将您希望从中筛选事件的功能的 XML 代码粘贴到 XML 部分。
 
-5. 选择“确定”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
+5. 选择“**确定**”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻击面减少规则事件的 XML
 
@@ -144,7 +144,7 @@ ms.locfileid: "59491369"
 可以在事件查看器中Windows这些事件：
 
 1. 打开" **开始"** 菜单并 **键入事件查看器**，然后选择 **事件查看器** 结果。
-2. 展开 **Microsoft >** 应用程序和服务日志> Windows然后转到下表中的提供程序 **/源** 下列出的文件夹。
+2. 展开 **"Microsoft** >服务日志> Windows然后转到下表中的"提供程序 **/源**"下列出的文件夹。
 3. 双击子项以查看事件。 滚动浏览事件以查找你正在查找的事件。
 
    ![使用事件查看器显示动画。](images/event-viewer.gif)
@@ -170,7 +170,7 @@ ms.locfileid: "59491369"
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |13|EAF 审核|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |14 |EAF 强制|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |15 |EAF+ 审核|
-|漏洞保护|Security-Mitigations (内核模式/用户模式) |16 |EAF+ 强制|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |16|EAF+ 强制|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |17 |IAF 审核|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |18 |IAF 强制|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |19|ROP StackPivot 审核|
@@ -180,7 +180,7 @@ ms.locfileid: "59491369"
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |23|ROP SimExec 审核|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |24|ROP SimExec 强制|
 |漏洞保护|WER-诊断|5|CFG 阻止|
-|漏洞保护|Win32K (Operational) |260|不受信任的字体|
+|漏洞保护|Win32K (操作) |260|不受信任的字体|
 |网络保护|Windows Defender (操作) |5007|更改设置时的事件|
 |网络保护|Windows Defender (操作) |1125|在审核模式下触发网络保护时的事件|
 |网络保护|Windows Defender (操作) |1126|在阻止模式下触发网络保护时的事件|

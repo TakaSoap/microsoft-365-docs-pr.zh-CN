@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: 从 Bookings 日历安排办公室关闭和员工请假，以便员工在指定的时间标记为不进行预订。
-ms.openlocfilehash: bdd00d2bc97de1e981b2de7f5f21325de6967aa7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 30f43af083da6a41ab8458e377bdc9fc99690678
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171184"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164064"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>安排公司关闭、休假和休假时间
 

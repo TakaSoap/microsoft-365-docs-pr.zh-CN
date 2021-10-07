@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 11/20/2020
-ms.openlocfilehash: 15b29887fcfd301e303d0918e5f3efc2acd7e908
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b60bbf3cd626b81f03c4b0706247d8ada03a8246
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200657"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163655"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>墨西哥商业Microsoft 365计费信息
 
@@ -36,7 +36,7 @@ ms.locfileid: "59200657"
 > [!IMPORTANT]
 > 如果希望发票包含 RFC，则必须在购买确认之前添加它。
 
-## <a name="2-how-can-i-add-my-rfc-registro-federal-de-contribuyentes-to-the-invoice-i-get-for-the-purchase-of-microsoft-365-for-business"></a>2. 如何将 RFC (Registro Federal de Contribuyentes) 添加到我购买商业Microsoft 365的发票？
+## <a name="2-how-can-i-add-my-rfc-registro-federal-de-contribuyentes-to-the-invoice-i-get-for-the-purchase-of-microsoft-365-for-business"></a>2. 如何将 RFC (Registro Federal de Contribuyentes) 添加到我为购买 Microsoft 365 for business 而获取的发票？
 
 ### <a name="during-the-purchase-process-checkout"></a>在购买过程中 (签出) 
 
@@ -53,7 +53,7 @@ ms.locfileid: "59200657"
 
 请务必在购买之前添加或修改 RFC。 在生成适用于Microsoft 365发票后，你无法添加或修改 RFC 信息。
 
-## <a name="4-why-dont-i-get-a-cfdi-comprobante-fiscal-digital-por-internet"></a>4. 为什么我未收到" (会计数字""Internet 数字) ？
+## <a name="4-why-dont-i-get-a-cfdi-comprobante-fiscal-digital-por-internet"></a>4. 为什么我没有获得" (会计数字""Internet 数字) ？
 
 Microsoft Corporation 作为居住在美国的税务人员，仅能根据管辖法律签发发票，并且不必提供一个 MICROSOFTI 电子发票。
 
@@ -64,4 +64,4 @@ Microsoft Corporation 作为居住在美国的税务人员，仅能根据管辖�
 ## <a name="related-content"></a>相关内容
 
 [查看帐单或发票](view-your-bill-or-invoice.md)（文章）\
-[了解适用于企业Microsoft 365的](understand-your-invoice2.md)帐单 (发票) 
+[了解适用于企业Microsoft 365帐单 (发票](understand-your-invoice2.md)) 

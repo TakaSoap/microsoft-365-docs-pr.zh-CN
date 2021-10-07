@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 37a0ff60f9f12bd2738d6d587d5cad5e6d55af55
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ce55054e921d3c97133dc1cdf3660e32f6b73d92
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201682"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163140"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>访问操作中心以查看修正操作
 
@@ -48,7 +48,7 @@ ms.locfileid: "59201682"
 |---------|---------|
 |在一个位置列出设备和电子邮件的挂起和已完成操作 <br/> (Microsoft [Defender for Endpoint 和](microsoft-defender-endpoint.md) [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)) |列出设备的挂起和已完成操作 <br/>  (Microsoft [Defender for Endpoint) ](microsoft-defender-endpoint.md)   |
 |位于：<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |位于：<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| 在安全Microsoft 365，选择"**操作中心"。** <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="导航到安全中心Microsoft 365中心。"::: | In the Microsoft Defender 安全中心， choose **Automated investigations**  >  **Action center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="从导航到操作Microsoft Defender 安全中心。":::  |
+| 在安全Microsoft 365，选择"**操作中心"。** <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="导航到安全中心Microsoft 365中心。"::: | In the Microsoft Defender 安全中心， choose **Automated investigations**  >  **Action center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="从操作中心导航到Microsoft Defender 安全中心。":::  |
 
 统一操作中心将跨 Defender for Endpoint 和 Defender for Office 365。 它定义所有修正操作的共同语言，并提供统一的调查体验。
 
@@ -70,10 +70,10 @@ ms.locfileid: "59201682"
 
 当你访问操作中心时，你将看到两个选项卡：**挂起的操作和****历史记录**。 下表总结了您将在每个选项卡上看到的内容：
 
-|Tab|说明|
+|选项卡|说明|
 |---|---|
-|**挂起**|显示需要关注的操作的列表。 可以一次批准或拒绝一个操作，也可以选择多个操作（如果他们的操作类型与隔离文件 (相同 **，) 。** <p> **提示**：确保尽快 [审阅](manage-auto-investigation.md) (批准或拒绝) 挂起的操作，以便可以及时完成自动调查。|
-|**历史记录**|充当审核日志的操作的一个组，例如： <ul><li>由于自动调查而采取的修正操作</li><li>安全运营团队批准的修正操作</li><li>运行的命令和在实时响应会话期间应用的修正操作</li><li>威胁防护功能在威胁防护中采取的Microsoft Defender 防病毒</li></ul> <p> 提供了一种撤消某些操作 (请参阅[Undo completed actions) 。](manage-auto-investigation.md#undo-completed-actions)|
+|**挂起**|显示需要关注的操作的列表。 可以一次批准或拒绝一个操作，也可以选择多个操作（如果他们的操作类型与隔离文件 (相同) 。  <p> **提示**： [确保尽快审阅](manage-auto-investigation.md) (批准或拒绝) 挂起的操作，以便可以及时完成自动调查。|
+|**历史记录**|充当审核日志的操作的一个组，例如： <ul><li>由于自动调查而采取的修正操作</li><li>安全运营团队批准的修正操作</li><li>运行的命令和在实时响应会话期间应用的修正操作</li><li>Microsoft Defender 防病毒 中威胁防护功能采取的修正Microsoft Defender 防病毒</li></ul> <p> 提供了一种撤消某些操作 (请参阅[Undo completed actions) 。](manage-auto-investigation.md#undo-completed-actions)|
 
 可以在操作中心中自定义、排序、筛选和导出数据。
 

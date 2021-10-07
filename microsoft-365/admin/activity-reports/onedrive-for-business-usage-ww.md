@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: '获取OneDrive for Business使用情况报告，了解整个组织使用的文件和存储的总数。 '
-ms.openlocfilehash: 1dd5e595e1e7766bb3f4a4a3e67af02605bb7768
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5e69791057eae44ec2b9565c73b61c4b8c2131a1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169971"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157250"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365管理中心中的报告 - OneDrive for Business使用情况
 
@@ -49,9 +49,9 @@ You can view the usage in the OneDrive by choosing the **Usage** tab.<br/>![Micr
 
 选择 **"选择要在** 报表中添加或删除列的列"。  <br/> ![OneDrive使用情况报表 - 选择列。](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
 
-您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
+您还可以通过选择"导出"链接将报告数据导出到Excel .csv **文件**。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
   
-|Item|说明|
+|项目|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |URL  <br/> |用户地址的 web OneDrive。 <br/> |
@@ -61,5 +61,5 @@ You can view the usage in the OneDrive by choosing the **Usage** tab.<br/>![Micr
 |上次活动日期 (UTC)   <br/> | 文件活动在文件中执行的最新OneDrive。 如果 OneDrive 不曾有文件活动，其值将为空。  <br/> |
 |文件  <br/> |文件中文件OneDrive。 <br/>|
 |活动文件  <br/> | 该时段内的活动文件数。<br/> 注意：如果在报告的指定时段内删除了文件，则报告中显示的活动文件数可能大于当前报告OneDrive。 >  删除的用户会继续显示在报表中，为期 180 天。  <br/> |
-|存储已 (MB)   <br/> |应用程序使用OneDrive MB 的数量。 |
+|存储已 (MB)   <br/> |应用程序使用的存储OneDrive MB。 |
 |||

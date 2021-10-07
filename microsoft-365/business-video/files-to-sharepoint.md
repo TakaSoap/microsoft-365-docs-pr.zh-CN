@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何将公司文件移动到SharePoint。
-ms.openlocfilehash: e7a778fea9d358d2c5b3e7944edfbb8b2b7fb0f1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bf7cac00b588cc1025c032755b94fd210a1d8170
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200725"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156914"
 ---
 # <a name="move-files-to-sharepoint"></a>将文件移动到SharePoint
 
@@ -35,13 +35,13 @@ ms.locfileid: "59200725"
 
 ## <a name="try-it"></a>试一试！
 
-1. 打开Microsoft Teams，然后打开企业中的每个人都可以访问的团队。
+1. 打开Microsoft Teams，然后打开企业中的每个人都有权访问的团队。
 2. 选择 **"文件**"，然后选择"**打开SharePoint"。**
 3. 选择  **"** 文档"以转到网站中存储所有内容的位置。
 4. 选择 **"同步**"，然后选择"**是"。** 这会将网站SharePoint同步到您的计算机。
-5. 在文件资源管理器中，&#39;现在可以看到公司中的同步文档文件夹&#39;SharePoint网站。 如果同步其他SharePoint网站，它们会显示在此网站的上方或下方。 右键单击已同步的文档文件夹，在一个新窗口中打开该文件夹，以查看它与要移动的公司文件并排显示。
+5. 在文件资源管理器中，&#39;现在，你将看到公司中的同步&#39;文件夹SharePoint网站。 如果同步其他SharePoint网站，它们会显示在此网站上方或下方。 右键单击已同步的文档文件夹，在一个新窗口中打开该文件夹，以查看它与要移动的公司文件并排显示。
 6. 选择要移动的所有文件，然后将其拖动到已同步SharePoint文件夹中。 文件旁边的蓝色圆形箭头表示它们&#39;同步到SharePoint网站。 完成&#39;后，将显示绿色选中标记。
-7. 返回到SharePoint网站，查看已同步到云的文件。
+7. 返回到你的SharePoint网站，以查看已同步到云的文件。
 
 除了直接从计算机处理文件外，还可以在任意计算机的 Web 浏览器中访问这些文件。
 

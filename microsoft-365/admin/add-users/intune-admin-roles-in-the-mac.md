@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -17,12 +17,12 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，服务管理员可打开 Microsoft 的支持票证。
-ms.openlocfilehash: c5aaa27dee2aea6ea1c8383a0a729a7bd0465f8b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 650a46c20acaf207f757ebbbe8f8b7179c29158f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773471"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161794"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的 Intune 管理员角色
 

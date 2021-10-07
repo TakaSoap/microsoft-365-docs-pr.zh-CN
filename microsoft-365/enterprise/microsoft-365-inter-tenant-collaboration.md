@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - M365-subscription-management
@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: 了解Microsoft 365组织之间的协作如何工作，从而允许不同组织安全地协同工作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05a1756d4707ba51d1175f0f5f5701f89fd7f5a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9cb91b6bcaac212eeaf0ef4051f466751d8dbbd9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196777"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163332"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365租户间协作
 
@@ -44,39 +44,39 @@ Microsoft 365租户间协作选项包括使用文件和对话的中心位置、�
 
 | 共享目标 | 管理操作 | 使用说明信息 |
 |:-----|:-----|:-----|
-|与外部用户共享网站和文档 | 管理员在租户或网站集级别为经过身份验证的 Microsoft 帐户、经过身份验证的工作或学校帐户或来宾帐户配置共享 |  <ul><li> [管理 SharePoint Online 环境的外部共享](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) </li><li> [按域限制 SharePoint 和 OneDrive 内容的共享](/sharepoint/restricted-domains-sharing) </li><li> [将 SharePoint Online 用作企业到企业 (B2B) Extranet 解决方案](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) </li></ul> |
-|跟踪和控制最终用户的外部共享 | OneDrive for Business文件所有者和 SharePoint Online 最终用户配置网站和文档共享并建立跟踪共享的通知 |  <ul><li> [为外部共享配置OneDrive for Business](https://support.office.com/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) </li><li> [共享 SharePoint 文件或文件夹](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) </li></ul> |
+|与外部用户共享网站和文档 | 管理员在租户或网站集级别为经过身份验证的 Microsoft 帐户、经过身份验证的工作或学校帐户或来宾帐户配置共享 |  <ul><li> [管理 SharePoint Online 环境的外部共享](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) </li><li> [按域限制 SharePoint 和 OneDrive 内容的共享](/sharepoint/restricted-domains-sharing) </li><li> [使用 SharePoint Online 作为企业到企业 (B2B) Extranet 解决方案](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) </li></ul> |
+|跟踪和控制最终用户的外部共享 | OneDrive for Business文件所有者和 SharePoint Online 最终用户配置网站和文档共享并建立跟踪共享的通知 |  <ul><li> [配置外部共享通知以用于OneDrive for Business](https://support.office.com/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) </li><li> [共享 SharePoint 文件或文件夹](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) </li></ul> |
 
 ## <a name="skype-for-business-collaboration-options"></a>Skype for Business协作选项
 
 | 共享目标 | 管理操作 | 使用说明信息 |
 |:-----|:-----|:-----|
 |Skype for Business联机 - 即时消息、呼叫和与其他Skype for Business状态 | 管理员可以允许其 Skype for Business Online 用户进行 IM、进行音频/视频呼叫以及查看其他租户中用户Microsoft 365状态。 | [允许用户连接外部 Skype for Business 用户](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)|
-|Skype for Business联机 - 与消费者和用户Skype (即时消息、) 状态 | 管理员可以允许其 Skype for Business Online 用户通过即时消息、拨打电话和查看在线状态Skype (用户) 状态。 | [允许 Skype for Business 用户添加 Skype 联系人](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)|
+|Skype for Business联机 - 与消费者用户Skype (即时消息、) 状态 | 管理员可以允许其 Skype for Business Online 用户通过即时消息、拨打电话和查看状态Skype (使用者) 用户。 | [允许 Skype for Business 用户添加 Skype 联系人](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)|
 
 ## <a name="azure-ad-b2b-collaboration-options"></a>Azure AD B2B 协作选项
 
 | 共享目标 | 管理操作 | 使用说明信息 |
 |:-----|:-----|:-----|
-|Azure AD B2B 协作 - 通过将外部用户添加到组织目录中的组来共享内容 | 一个 Microsoft 365 租户的 **Azure AD DC** 管理员、安全管理员、用户管理员、云应用程序管理员或全局管理员可以邀请另一个 Microsoft 365 租户中的用户加入他们的目录，将那些外部用户添加到组，并授予对内容（如组的 SharePoint 网站和库）的访问权限。   |  <ul><li> [什么是 Azure AD B2B 协作预览？](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) </li><li> [Azure AD B2B：新更新使跨业务排序规则变得简单](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) </li><li> [外部共享和Azure Active Directory B2B 协作](/azure/active-directory/active-directory-b2b-o365-external-user) </li><li> [Azure Active DirectoryB2B 协作 API 和自定义](/azure/active-directory/active-directory-b2b-api) </li><li> [Azure AD 和标识显示：Azure AD B2B 协作 (企业到企业](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) </li></ul> |
+|Azure AD B2B 协作 - 通过将外部用户添加到组织目录中的组来共享内容 | 一个 Microsoft 365 租户的 **Azure AD** DC 管理员、安全管理员、用户管理员、云应用程序管理员或 **全局** 管理员可以邀请另一个 Microsoft 365 租户中的人员加入他们的目录，将那些外部用户添加到组，并授予对内容（如组的 SharePoint 网站和库）的访问权限。  |  <ul><li> [什么是 Azure AD B2B 协作预览？](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) </li><li> [Azure AD B2B：新更新使跨业务排序规则变得简单](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) </li><li> [外部共享和Azure Active Directory B2B 协作](/azure/active-directory/active-directory-b2b-o365-external-user) </li><li> [Azure Active DirectoryB2B 协作 API 和自定义](/azure/active-directory/active-directory-b2b-api) </li><li> [Azure AD 和标识显示：Azure AD B2B 协作 (企业到企业](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) </li></ul> |
 
 ## <a name="microsoft-365-collaboration-options"></a>Microsoft 365协作选项
 
 | 共享目标 | 管理操作 | 使用说明信息 |
 |:-----|:-----|:-----|
-|Microsoft 365组 - 集中的位置OneNote电子邮件、日历、日历和共享文件 | 组在商业基础版、商业高级版、教育版Enterprise E1、E3 和 E5 计划中受支持。 一个Microsoft 365租户中的用户可以创建一个组，并邀请另一Microsoft 365租户中的人员作为来宾用户。 也适用于 Dynamics CRM。 |  <ul><li> [了解 Microsoft 365 组](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) </li><li> [来宾组中来宾Microsoft 365访问](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6) </li><li> [部署Microsoft 365组](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn896591(v=crm.8)) </li></ul> |
+|Microsoft 365组 - 集中位置OneNote、日历、日历和共享文件 | 组在商业基础版、商业高级版、教育版Enterprise E1、E3 和 E5 计划中受支持。 一个租户中的Microsoft 365可以创建组，并邀请另一个租户Microsoft 365作为来宾用户。 也适用于 Dynamics CRM。 |  <ul><li> [了解 Microsoft 365 组](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) </li><li> [来宾组中来宾Microsoft 365访问](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6) </li><li> [部署Microsoft 365组](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn896591(v=crm.8)) </li></ul> |
 
 ## <a name="yammer-collaboration-options"></a>Yammer协作选项
 
 | 共享目标 | 管理操作 | 使用说明信息 |
 |:-----|:-----|:-----|
-|Yammer - 通过企业社交媒体进行协作 | 除非 Yammer 管理员禁用了创建外部组的能力，否则用户可以创建外部组以通过对话、喜欢和关注帖子、共享文件和在线聊天等功能在 Yammer 中协作。 | [在 Yammer 中创建和管理外部组](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a)|
+|Yammer - 通过企业社交媒体进行协作 | 除非 Yammer 管理员禁用了创建外部组的能力，否则用户可以创建外部组以通过对话、喜欢和关注帖子、共享文件和在线聊天等方式在 Yammer 中协作。 | [在 Yammer 中创建和管理外部组](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a)|
 
 ## <a name="teams-collaboration-options"></a>Teams协作选项
 
 |共享目标|管理操作|使用说明信息|
 |:-----|:-----|:-----|
-|与Teams外部的用户进行协作 | 邀请 **用户****租户的用户管理员** 或全局管理员Microsoft 365需要在 Teams 中启用外部Teams。 全局管理员和团队所有者现在能够邀请具有电子邮件地址的任何人在 Teams。  <br/> 管理员还可以管理和编辑租户中已有的来宾。 |  <ul><li> [授权来宾访问](/microsoftteams/teams-dependencies) </li><li> [打开或关闭来宾访问Teams](/microsoftteams/set-up-guests) </li><li> [使用 PowerShell 控制来宾访问](/microsoftteams/guest-access-powershell) </li><li> [来宾访问清单](/microsoftteams/guest-access-checklist) </li><li> [查看来宾用户](/microsoftteams/view-guests) </li><li> [编辑来宾用户信息](/microsoftteams/edit-guests-information) </li></ul> |
+|与Teams外部的用户进行协作 | 邀请 **用户** 租户的用户管理员或全局管理员Microsoft 365需要在租户中启用外部Teams。 全局管理员和团队所有者现在能够邀请具有电子邮件地址的任何人在 Teams。  <br/> 管理员还可以管理和编辑租户中已有的来宾。 |  <ul><li> [授权来宾访问](/microsoftteams/teams-dependencies) </li><li> [打开或关闭来宾访问Teams](/microsoftteams/set-up-guests) </li><li> [使用 PowerShell 控制来宾访问](/microsoftteams/guest-access-powershell) </li><li> [来宾访问清单](/microsoftteams/guest-access-checklist) </li><li> [查看来宾用户](/microsoftteams/view-guests) </li><li> [编辑来宾用户信息](/microsoftteams/edit-guests-information) </li></ul> |
 |团队所有者可以邀请并管理来宾在团队中的协作方式。  |团队所有者对来宾可以在团队中执行哪些操作有其他控制。 |  <ul><li> [添加来宾](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [向团队添加来宾](/microsoftteams/add-guests) </li><li> [管理来宾访问Teams](/microsoftteams/manage-guests) </li><li> [查看谁在团队或频道中](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
 |来自其他租户的来宾可以查看 Teams中的内容并与其他成员协作 | 无。 | [来宾访问体验](/microsoftteams/guest-experience)|
 
@@ -84,7 +84,7 @@ Microsoft 365租户间协作选项包括使用文件和对话的中心位置、�
 
 | 共享目标 | 管理操作 | 使用说明信息 |
 |:-----|:-----|:-----|
-|Power BI允许外部来宾用户使用通过链接共享的内容。 这使组织的用户能够安全地在组织中分发内容。<br/> | 管理员Power BI管理员可以控制用户是否可以邀请外部用户查看组织内部的内容。| [使用 Power BI AD B2B 将内容分发给外部来宾用户](/power-bi/service-admin-azure-ad-b2b) |
+|Power BI允许外部来宾用户使用通过链接共享的内容。 这使组织的用户能够安全地在组织中分发内容。<br/> | 管理员Power BI可以控制用户是否可以邀请外部用户查看组织内部的内容。| [使用 Power BI AD B2B 将内容分发给外部来宾用户](/power-bi/service-admin-azure-ad-b2b) |
 
 ## <a name="points-to-be-aware-of-about-microsoft-365-inter-tenant-collaboration"></a>请注意有关租户Microsoft 365协作的要点
 
@@ -94,13 +94,13 @@ Microsoft 365租户间协作选项包括使用文件和对话的中心位置、�
 
 - **用户帐户：** 在本地 Active Directory 域服务中的租户或分区之间不能共享或复制帐户。
 
-- **许可证 &amp;** 订阅：在 Microsoft 365 中，许可计划 (（也称为 SKUS 或 Microsoft 365 计划) ）中的许可证允许用户访问为这些计划定义的 Microsoft 365 服务。
+- **许可证 &amp;** 订阅：在 Microsoft 365 中，许可计划 (中的许可证也称为 SKUS 或 Microsoft 365 计划) 可让用户访问为这些计划定义的 Microsoft 365 服务。
 
 - **存储：** 在Microsoft 365计划中，SharePoint Online 的软件边界和限制独立于邮箱存储限制进行管理。 邮箱存储限制是通过使用邮箱存储Exchange Online。 在这两种方案中，无法跨租户共享存储。
 
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>我们能否跨多个租户Microsoft 365命名空间？
 
-否。 组织域名（如 fabrikam.com 或 tailspintoys.com）只能与单个租户关联Microsoft 365使用。 每个租户都必须有自己的命名空间。 无法在租户之间共享 UPN、SMTP 和 SIP 命名空间。
+不需要。 组织域名（如 fabrikam.com 或 tailspintoys.com）只能与单个租户关联Microsoft 365使用。 每个租户都必须有自己的命名空间。 无法在租户之间共享 UPN、SMTP 和 SIP 命名空间。
 
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>混合组件和租户Microsoft 365协作呢？
 

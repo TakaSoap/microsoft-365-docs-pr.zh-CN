@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何将电子邮件、联系人和日历从 Google Workspace 迁移到 Microsoft 365 for business。
-ms.openlocfilehash: 58037d033c35bad97d5b18dc408e5450340d0c25
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: a5ceccfde47b5084326aae9346b1c645cef7114a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402006"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163751"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>从 Google Workspace 迁移业务电子邮件和日历
 
@@ -72,13 +72,13 @@ ms.locfileid: "59402006"
 1. 选择 **"安全性**"，向下滚动并打开 **API 控件**。 
 1. 向下滚动并选择"**管理域范围的委派"。**
 1. 选择 **"添加新** "，然后输入之前记下的客户端 ID。
-1. 然后输入 Google API 的 OAuth 范围。 可在步骤 5 [aka.ms/GoogleWorkspaceMigration](/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) 以下选项进行以下操作：
+1. 然后输入 Google API 的 OAuth 范围。 可在步骤 5 [aka.ms/GoogleWorkspaceMigration](/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) 以下选项获得这些选项：
 
     `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing`
  
 1. 选择 **"授权"。** 
 
-### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>为要发送到邮件的邮件创建Microsoft 365
+### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>为要发送到邮箱的邮件创建Microsoft 365
 
 1. 返回到 **Google Workspace 管理** 控制台。
 1. 选择 **"域****"，"管理** 域"，然后选择"**添加域别名"。** 
@@ -119,8 +119,8 @@ ms.locfileid: "59402006"
 
 完成后，即可进行迁移。 
 
-1. 在"管理中心"的 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心，</a>向下滚动到"管理 **中心**"，然后选择 **"Exchange"。** 
-1. 在 **"收件人"** 下，选择 **"迁移**"，选择"**新建**"，Exchange Online"**迁移**"，选择 **"G Suite 迁移**"，然后选择"下一 **步"。** 
+1. 在"管理中心"的 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心，向下滚动</a>到"管理中心 **"，然后选择"Exchange"。**  
+1. 在 **"收件人"** 下，选择 **"迁移**"，选择"**新建**"，Exchange Online"迁移"，选择 **"G Suite 迁移****"，** 然后选择"下一 **步"。** 
 1. 创建包含要迁移的邮箱列表的 CSV 文件。 确保文件遵循以下格式： 
 
     ```CSV
@@ -133,7 +133,7 @@ ms.locfileid: "59402006"
 
 1. 选择 **"选择文件**"，导航到 CSV 文件，选择它，选择"**打开**"，然后选择"下一 **步"。** 
 1. 验证要用于测试的管理员电子邮件地址。 
-1. 选择 **"选择** 文件"，导航到之前创建的 JSON 文件 (通常位于计算机上"下载"文件夹中) ，选择"打开"，然后选择"下一 **步"。**  
+1. 选择 **"文件**"，导航到之前创建的 JSON 文件 (通常位于计算机上下载文件夹中) ，选择它，选择"**打开**"，然后选择"下一 **步"。** 
 1. 在"新建迁移批处理 **名称"字段中输入名称**。
 1. 在"目标传递域"字段中输入创建的 **子域，** 选择"下一步 **"，然后选择**"新建 **"。** 
 1. 保存信息后，选择"确定 **"。** 

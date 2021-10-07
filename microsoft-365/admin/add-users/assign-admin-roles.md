@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - okr_smb
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 了解如何将管理员角色分配给企业中的一个或多个用户，以便他们可以在管理中心执行特定任务。
-ms.openlocfilehash: bea417900374fe627d3a1a6b40697959b7c3671f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: e06533b70ddd7101f2ba160aa6796ee77e250c17
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773867"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161902"
 ---
 # <a name="assign-admin-roles"></a>分配管理员角色
 
@@ -60,7 +61,7 @@ ms.locfileid: "59773867"
 1. 在管理中心中，转到"<a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**角色分配"。**</a> 选择 **Azure AD 或** **Intune** 选项卡以查看适用于你的组织的管理员角色。
 2. 选择要为其分配用户的管理员角色。
 3. 选择 **分配管理员添加**  >  。
-4. 键入 **用户的显示名称或****用户名**，然后从建议列表中选择用户。
+4. 键入 **用户的显示名称****或用户名**，然后从建议列表中选择用户。
 5. 添加多个用户，直到完成。
 6. 选择 **"** 保存"，然后将用户添加到分配的管理员列表中。
 
@@ -108,4 +109,4 @@ ms.locfileid: "59773867"
 [关于 Microsoft 365 管理员角色](about-admin-roles.md)（文章）\
 [Azure AD 内置角色 (](/azure/active-directory/roles/permissions-reference) 文章) \
 [使用 PowerShell 向用户帐户分配](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) 角色 (文章) \
-[授权或删除本文 (](../misc/add-partner.md) 的) 
+[授权或删除 (](../misc/add-partner.md) 文章) 

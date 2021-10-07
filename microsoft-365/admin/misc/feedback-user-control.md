@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解你的用户可以向 Microsoft 发送有关 Microsoft 产品的反馈。
-ms.openlocfilehash: 7654922e2d48034801143e9219a1d1931dfe82d5
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 85eb9d9360026aaa7eb19c626c90f985a12af582
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775824"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161530"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>了解组织的 Microsoft 反馈
 
@@ -56,7 +56,7 @@ ms.locfileid: "59775824"
 
 详细且可操作的反馈对于更改和改进 Microsoft 产品至关重要。 如果你的用户对如何改进有问题或建议，我们希望听到它。 下面是发送给 Microsoft 的可操作反馈的一些提示和示例。
 
-- **简洁的描述性标题**   描述性标题和特定标题可帮助我们了解报告的问题。 示例：Excel的 **"最近** 使用的文件"列表不包括最近添加OneDrive文件。
+- **简洁的描述性标题**   描述性标题和特定标题可帮助我们了解报告的问题。 示例：Excel的 **"最近** 使用的文件"列表不包含最近添加OneDrive文件。
 - **一次只关注一个问题**   针对一个问题或一次提供一个项目的建议提供反馈。 这可确保每次提交时都收到正确的日志和数据，并可以分配进行跟踪。 如果你有多个问题，请针对每个问题提交新的反馈请求。 这有助于我们确定收到的特定问题的反馈量。
 - **在"说明"框中写入详细信息**   有关你的设备、操作系统和应用的信息会自动包含在每个报告的反馈中。 添加有关你认为非常重要的问题的其他任何信息。 例如，包括重现问题的详细步骤。
 
@@ -85,7 +85,7 @@ Microsoft 使用反馈来改进 Microsoft 产品。 我们以问题、问题、�
 
 ## <a name="how-can-i-see-my-users-feedback"></a>如何查看用户的反馈？
 
-为了履行 Microsoft 与客户的法律义务，我们正致力于在 Microsoft 365 管理中心 中提供一种新体验，使管理员能够查看、删除和导出其组织的反馈数据。 作为其数据控制者职责的一部分，客户拥有所有用户反馈数据，此功能将帮助管理员提供其用户体验与 Microsoft 365 产品的直接透明度，并使用户能够将用户反馈数据作为任何数据主体请求的一部分提供。 全局管理员和合规性数据管理员将可以查看、导出和删除用户反馈。 所有其他管理员和读者将能够查看和导出反馈数据，但不能执行合规性相关任务或查看有关发布反馈 (如用户名、电子邮件或设备名称) 的信息。 若要访问组织的反馈数据，请登录到 Microsoft 365 管理中心并自定义导航以显示运行状况节点。 通过在"运行状况"节点下选择 **"产品反馈** "来访问此体验。
+为了履行 Microsoft 与客户的法律义务，我们正致力于在 Microsoft 365 管理中心 中提供一种新体验，使管理员能够查看、删除和导出其组织的反馈数据。 作为其数据控制者职责的一部分，客户拥有所有用户反馈数据，此功能将帮助管理员提供其用户体验与 Microsoft 365 产品的直接透明度，并使用户能够将用户反馈数据作为任何数据主体请求的一部分提供。 全局管理员和合规性数据管理员将可以查看、导出和删除用户反馈。 所有其他管理员和读者将能够查看和导出反馈数据，但不能执行合规性相关任务或查看有关发布反馈 (如用户名、电子邮件或设备名称) 。 若要访问组织的反馈数据，请登录到 Microsoft 365 管理中心并自定义导航以显示运行状况节点。 通过在"运行状况"节点下选择 **"产品反馈** "来访问此体验。
 
 ## <a name="data-handling-and-privacy"></a>数据处理和隐私
 

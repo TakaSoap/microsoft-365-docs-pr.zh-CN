@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -23,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 了解如何从域中删除旧域Microsoft 365将用户和组移动到另一个域或取消订阅。
-ms.openlocfilehash: 6b572adb5d1ed45be473552e74adb25c54b3cae7
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 1077f7c2cec8b99581c28b177e73f9c7b32f50c6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775416"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164628"
 ---
 # <a name="remove-a-domain"></a>删除域
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。
 
-是否要删除域，因为你想要将其添加到不同的订阅Microsoft 365计划？ 或者只是想取消订阅？ 可[更改计划或订阅](../../commerce/subscriptions/switch-to-a-different-plan.md)，也可[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。
+是否要删除域，因为你想要将其添加到不同的订阅Microsoft 365计划中？ 或者只是想取消订阅？ 可[更改计划或订阅](../../commerce/subscriptions/switch-to-a-different-plan.md)，也可[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。
 
 ### <a name="step-1-move-users-to-another-domain"></a>步骤 1：将用户移动到另一个域
 
@@ -151,11 +152,11 @@ ms.locfileid: "59775416"
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>删除域需要多长时间？
 
-如果域未在很多位置（如安全组、通讯组列表、用户和 Microsoft 365 组）被引用，Microsoft 365删除域可能需要 5 分钟。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
+如果域未在安全组、通讯组列表、用户和通讯组等很多位置引用，Microsoft 365删除域可能需要 5 分钟Microsoft 365。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
 
 如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain)。
 
-## <a name="still-need-help"></a>仍然需要帮助？
+## <a name="still-need-help"></a>是否仍需要帮助？
 
 ::: moniker range="o365-worldwide"
 
@@ -188,6 +189,6 @@ ms.locfileid: "59775416"
 
 [域常见问题](../setup/domains-faq.yml) （文章）
 
-[切换到其他业务Microsoft 365， (](../../commerce/subscriptions/switch-to-a-different-plan.md)文章) 
+[切换到适用于Microsoft 365计划的不同 (](../../commerce/subscriptions/switch-to-a-different-plan.md)文章) 
 
 [取消订阅 (](../../commerce/subscriptions/cancel-your-subscription.md) 文章) 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: 了解如何在设备上使用 AutoPilot Microsoft 365 商业高级版。 你可以将配置文件分配给设备或一组设备。
-ms.openlocfilehash: f578e1879d851e7b07129f7a1ba6a1d098cea16a
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 96034ca50da114adca60169ae29da5948793b498
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933551"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165552"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>创建和编辑 AutoPilot 设备
 
@@ -44,7 +44,7 @@ ms.locfileid: "59933551"
   
 - Windows 10版本 1703 或更高版本
     
-- 尚未体验全新体验Windows全新体验的新设备
+- 尚未体验全新Windows全新体验的新设备
 
 1. In the Microsoft 365 管理中心， choose **Devices** \> **AutoPilot**.
   

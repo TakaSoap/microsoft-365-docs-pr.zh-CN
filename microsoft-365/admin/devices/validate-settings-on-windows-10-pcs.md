@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 了解如何验证Microsoft 365应用保护设置是否对用户的设备Windows 10生效。
-ms.openlocfilehash: c0d5ded2eeda022984f86c33429572fa4a8671bb
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 311da3efec8cd3ad57e722aea5a8c3888d1af7b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933371"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165324"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>验证电脑的设备Windows 10设置
 
@@ -44,17 +44,17 @@ ms.locfileid: "59933371"
     
     ![所有"重启"选项都灰显。](../../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. Go to **设置** \> **Update &amp; security** \> **Windows Update** Advanced \> **options** and confirm that all settings are grayed out. 
+2. Go to **设置** \> **Update security &amp; Windows** \> **Update** \> **Advanced options** and confirm that all settings are grayed out. 
     
     ![Windows高级更新选项全部灰显。](../../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
-3. Go to **设置** \> **Update &amp; security** \> **Windows Update** Advanced \> **options** Choose how \> **updates are delivered**.
+3. Go to **设置** \> **Update security &amp; Windows** \> **Update** \> **Advanced options** \> **Choose how updates are delivered**.
     
-    确认你能看到红色 (显示) 一些设置被组织隐藏或管理，并且所有选项都显示为灰色。
+    确认你能看到红色 (显示) 某些设置被组织隐藏或管理，并且所有选项都显示为灰色。
     
     ![选择更新的传递方式页面指示组织隐藏或管理设置。](../../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. 若要打开Windows Defender安全中心，请转到设置更新安全中心Windows Defender打开Windows Defender病毒线程保护 \> **&amp;** \>  \>  \> **&amp;** \> **病毒 &amp; 威胁防护设置"。** 
+4. 若要打开Windows Defender安全中心"，**请转到** 设置更新安全中心Windows Defender"打开Windows Defender病毒线程保护 \> **&amp;** \>  \>  \> **&amp;** \> **病毒 &amp; 威胁防护设置"。** 
     
 5. 验证所有选项是否灰显。 
     
@@ -62,5 +62,5 @@ ms.locfileid: "59933371"
   
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365文档和资源](./index.yml)\
+[Microsoft 365文档和资源](/admin)\
 [设置 Windows 10 电脑的设备配置](protection-settings-for-windows-10-pcs.md)

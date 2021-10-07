@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 59499379a91fd267a12b64edb57dfa44036cd618
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: eff066610d87dd637a861906b8f6a4a4c73ae2ae
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042959"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162394"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -54,13 +54,13 @@ ms.locfileid: "60042959"
 | `AccountObjectId` | string | Azure Active Directory |
 | `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间启动和姓氏或姓氏的组合。 |
 | `IsAdminOperation` | string | 指示活动是否由管理员执行 |
-| `DeviceType` | string | 基于目的和功能的设备类型，例如"网络设备"、"工作站"、"服务器"、"移动"、"游戏控制台"或"打印机" | 
-| `OSPlatform` | string | 在设备上运行的操作系统的平台。 此列指示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10 和 Windows 7。 |
+| `DeviceType` | string | 基于用途和功能的设备类型，例如"网络设备"、"工作站"、"服务器"、"移动"、"游戏控制台"或"打印机" | 
+| `OSPlatform` | string | 在设备上运行的操作系统的平台。 此列指示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10和 Windows 7。 |
 | `IPAddress` | string | 分配给终结点的 IP 地址，在相关的网络通信期间使用 |
 | `IsAnonymousProxy` | string | 指示 IP 地址是否属于已知匿名代理 |
 | `CountryCode` | string | 指示客户端 IP 地址已异地地理位置的两个字母的代码 |
 | `City` | string | 已异地分配客户端 IP 地址的城市 |
-| `Isp` | string | 与 IP 地址 (ISP) 服务提供商 |
+| `Isp` | string | Internet 服务提供商 (ISP) IP 地址相关联 |
 | `UserAgent` | string | 来自 Web 浏览器或其他客户端应用程序的用户代理信息 |
 | `ActivityType` | string | 触发事件的活动类型 |
 | `ActivityObjects` | string | 记录的活动所涉及的对象列表，如文件或文件夹 |

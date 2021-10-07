@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
-description: 了解如何在更改计划或公司名称，或将多个订阅组合为一Microsoft 365帐户之间手动传输数据。
-ms.openlocfilehash: a400784db27fabfdb57f5ece04236a035b43b168
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: 了解如何在更改计划或公司名称，或将多个订阅组合为一个Microsoft 365帐户之间手动传输数据。
+ms.openlocfilehash: 36156a83f1d6a3d52561689cc4a82ac5098ceae9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775380"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164580"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>在两个帐户之间手动传输数据
 
@@ -45,7 +45,7 @@ ms.locfileid: "59775380"
 
 |**Tasks**|**Steps**|
 |:-----|:-----|
-|购买要移动到的计划。  <br/> |注册时，指定要用于初始域名的公司名称  *：yourcompany*  *.onmicrosoft.com、yourcompany*  -public.sharepoint.com 和  *yourcompany*  .sharepoint.com。 你需要使用与任何现有  *订阅*  不同的公司名称。  <br/> > [!NOTE]>取消订阅后，通常需要至少几个月的时间从我们的系统发布使用  *你的*  公司的初始域名。 即使你计划从旧 Microsoft 365 订阅中保存所有数据并取消该订阅，旧的 *company* 值不会立即用于新订阅。           |
+|购买要移动到的计划。  <br/> |注册时，指定要用于初始域名的公司名称  *：yourcompany*  *.onmicrosoft.com、yourcompany*  -public.sharepoint.com 和  *yourcompany*  .sharepoint.com。 你需要使用与任何现有  *订阅*  不同的公司名称。  <br/> > [!NOTE]>取消订阅后，通常需要至少几个月的时间从我们的系统发布使用  *你的*  公司的初始域名。 即使你计划保存旧 Microsoft 365 订阅的所有数据并取消该订阅，旧的 *company* 值不会立即用于新订阅。           |
 |从旧订阅中删除自定义Microsoft 365域。  <br/> | 在 [删除域](remove-a-domain.md) 之前，请按照所需步骤从用户电子邮件地址中删除域名，并删除电子邮件的 DNS 记录以及自定义域的 Lync 记录。 如果在主机上托管公共Microsoft 365，则还需要删除指向它的 CNAME 记录。  <br/> > [!IMPORTANT]> 删除将电子邮件路由到此自定义域的 MX 记录后，电子邮件将停止工作，直到你将域添加到新帐户、设置新的 MX 记录并设置用户。 删除 Lync 的 DNS 记录时，Lync 将停止工作。 删除指向公共网站的 CNAME 记录后，该记录将不可用。           [删除域](remove-a-domain.md) 。  <br/> |
 |设置新订阅的自定义域，并设置用户。  <br/> | 设置新订阅，包括为自定义域创建所需的 DNS 记录。  <br/>  使用自定义域上的电子邮件地址创建用户。  <br/> |
 |将数据从旧订阅转移到新订阅。  <br/> | 在单独的浏览器窗口中登录这两个帐户：  <br/>  右键单击浏览器图标，然后打开两个专用浏览器窗口。 可以在两个窗口中使用不同的凭据登录这两个帐户。  <br/> [在订阅之间传输管理设置](#email) <br/> [转移团队网站结构和数据](#transfer-team-site-structure-and-data) <br/> [在订阅之间传输公共网站](#transfer-a-public-website-between-subscriptions) <br/> [在订阅之间传输管理设置](#email) <br/> |
@@ -55,7 +55,7 @@ ms.locfileid: "59775380"
 
 转到每个帐户上的以下页面，然后根据旧帐户的设置设置新帐户。
   
-如果要将数据从企业版Microsoft 365到Microsoft 365中型企业版Microsoft 365 企业版，则管理页面的结构会有所不同。 观看视频[：介绍Microsoft 365 企业版，](../index.yml)然后转到以下位置查看管理员设置。
+如果要将数据从企业Microsoft 365到Microsoft 365中型企业版Microsoft 365 企业版，则管理页面的结构会有所不同。 观看视频[：介绍Microsoft 365 企业版，](../index.yml)然后转到以下位置查看管理员设置。
   
 对于Microsoft 365 企业版和Microsoft 365中型企业：
   
@@ -77,7 +77,7 @@ For Microsoft 365 Small Business
 如果你有一个公共网站托管在 Microsoft 365，你需要保存它，然后在你的新订阅上重新创建它。
   
 > [!NOTE]
-> 如果公共网站托管在 DNS 托管提供商中，则无需进行更改。 它将不会受你的转换影响。
+> 如果公共网站托管在 DNS 托管提供商中，则无需任何更改。 它将不会受你的转换影响。
   
 若要将文档库或列表内容从 SharePoint Online 环境保存到文件共享或本地计算机，请参阅手动迁移 SharePoint [Online 内容](/sharepoint/troubleshoot/migration-tool/content-manual-migration)。
   
@@ -88,13 +88,13 @@ For Microsoft 365 Small Business
 
 有几种方法可以保存或传输团队网站数据：
   
-- 可以将旧网站另存为模板，将模板导入新网站。
+- 您可以将旧网站另存为模板，将模板导入新网站。
 
 - 若要传输文档，请首先手动在新建网站上重新创建层次结构。 然后，您可以同时打开SharePoint网站，使用资源管理器打开这两Windows库，并复制和粘贴文档。 请参阅 [视频：使用资源管理器打开来复制或移动库文件](../../business-video/store-files.md)。
 
 - 若要传输列表数据，请保存 [列表模板](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)，并使用保存的模板在新建网站上重新创建列表。
 
-- 若要将 SharePoint Online 环境 (OneDrive for Business 或工作组网站) 中的文档库或列表内容保存到文件共享或本地计算机，请参阅有关手动迁移 SharePoint [Online](/sharepoint/troubleshoot/migration-tool/content-manual-migration)内容的信息。
+- 若要将 SharePoint Online 环境 (OneDrive for Business或工作组网站) 中的文档库或列表内容保存到文件共享或本地计算机，请参阅有关手动迁移[SharePoint Online](/sharepoint/troubleshoot/migration-tool/content-manual-migration)内容的信息。
 
 ## <a name="transfer-users-data-between-subscriptions"></a>在订阅之间传输用户数据
 

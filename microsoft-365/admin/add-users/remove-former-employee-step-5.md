@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -24,16 +25,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照以下步骤阻止以前员工的移动设备访问。
-ms.openlocfilehash: 4ccfb4d013cb35263748ef3fcf4187c68faffb97
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: de4c291093af47144e3f0f8c5441052a0f68361c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774143"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161590"
 ---
 # <a name="step-5---wipe-and-block-a-former-employees-mobile-device"></a>步骤 5 - 擦除和阻止前员工的移动设备
 
-如果以前的员工拥有组织电话，可以使用 Exchange 管理中心擦除和阻止该设备，以便从设备中删除所有组织数据，并且它无法再连接到 Office 365。 如果您的组织使用基本移动性和安全性来管理移动设备，您可以使用基本移动性和安全性擦除和阻止这些设备。
+如果你以前的员工有组织电话，可以使用 Exchange 管理中心擦除和阻止该设备，以便从设备中删除所有组织数据，并且它无法再连接到Office 365。 如果您的组织使用基本移动性和安全性来管理移动设备，您可以使用基本移动性和安全性擦除和阻止这些设备。
 
 ## <a name="wipe-mobile-device-using-the-exchange-admin-center"></a>使用管理中心擦除Exchange移动设备
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: 了解如何将流量路由到 Microsoft 外部托管的现有公共网站（如果已设置 Microsoft 管理自定义域的 DNS 记录）。
-ms.openlocfilehash: d54aa4583862ce19907a3b8494a333bbb925e436
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bd318710b20373abafc0d27bbd9f91d5b42c7be6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169817"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165276"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>更新 DNS 记录以便利用当前的托管提供商继续托管网站
 
@@ -67,4 +67,4 @@ ms.locfileid: "59169817"
   
 [将域的 NS 记录更新](../setup/add-domain.md) 为指向 Microsoft。 
   
-当 NS 记录更新为指向 Microsoft 时，域已全部设置。 电子邮件将路由到 Microsoft，并且发送到你的网站地址的流量将继续转到你的当前网站主机。
+当 NS 记录更新为指向 Microsoft 时，域已全部设置。 电子邮件将路由到 Microsoft，并且发送到你的网站地址的流量将继续转到当前网站主机。

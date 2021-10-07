@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 255162daf05801e5162fd036e2c4e470b79b38ee
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: f5347bb3b671473f6d16d9f50578a9a7a2c5ebe1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498012"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162490"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>配置计划的快速或完整的 Microsoft Defender 防病毒软件扫描
 
@@ -55,7 +55,7 @@ ms.locfileid: "59498012"
 
 |快速扫描|完全扫描|自定义扫描|
 |---|---|---|
-| (推荐) 快速扫描将查找所有可能注册为从系统启动的恶意软件的位置，例如注册表项和已知Windows文件夹。 <p> 与始终启用实时保护相结合，可在打开和关闭文件时以及用户导航到文件夹时查看文件，快速扫描可帮助提供强大的保护，防止因系统和内核级别恶意软件而启动的恶意软件。 <p> 在大多数情况下，快速扫描已足够，是计划扫描的推荐选项。|完整扫描首先运行快速扫描，然后继续对已装载的所有固定磁盘和可移动/网络驱动器进行连续文件扫描 (如果完全扫描配置为执行此扫描) 。 <p> 完整扫描可能需要几个小时或几天才能完成，具体取决于需要扫描的数据的数量和类型。 <p> 完全扫描完成后，新的安全智能可用，然后需要新的扫描以确保新安全智能不会检测到任何其他威胁。 <p> 由于完全扫描所涉及的时间和资源，Microsoft 通常不建议安排完全扫描。|自定义扫描是在指定的文件和文件夹上运行的快速扫描。 例如，你可以选择扫描 USB 驱动器或设备本地驱动器上的特定文件夹。|
+| (推荐) 快速扫描将查找所有可能注册为从系统启动的恶意软件的位置，例如注册表项和已知Windows文件夹。 <p> 与始终启用实时保护相结合，可在打开和关闭文件时以及用户导航到文件夹时查看文件，快速扫描可帮助提供强大的保护，防止由系统和内核级别恶意软件启动的恶意软件。 <p> 在大多数情况下，快速扫描已足够，是计划扫描的推荐选项。|完整扫描首先运行快速扫描，然后继续对已装载的所有固定磁盘和可移动/网络驱动器进行连续文件扫描 (如果完全扫描配置为执行) 。 <p> 完整扫描可能需要几个小时或几天才能完成，具体取决于需要扫描的数据的数量和类型。 <p> 完全扫描完成后，新的安全智能可用，然后需要新的扫描以确保新安全智能不会检测到任何其他威胁。 <p> 由于完全扫描所涉及的时间和资源，Microsoft 通常不建议安排完全扫描。|自定义扫描是在指定的文件和文件夹上运行的快速扫描。 例如，你可以选择扫描 USB 驱动器或设备本地驱动器上的特定文件夹。|
 |
 
 > [!NOTE]
@@ -69,9 +69,9 @@ ms.locfileid: "59498012"
 
 ****
 
-|方案|推荐的扫描类型|
+|应用场景|推荐的扫描类型|
 |---|---|
-|想要设置定期计划扫描|快速扫描 <p> 快速扫描检查设备上的过程、内存、配置文件和特定位置。 与 [始终开启的](configure-real-time-protection-microsoft-defender-antivirus.md)实时保护相结合，快速扫描有助于为以系统开头的恶意软件和内核级恶意软件提供强大的覆盖范围。 实时保护在打开和关闭文件时以及用户导航到文件夹时检查文件。|
+|想要设置定期计划扫描|快速扫描 <p> 快速扫描检查设备上的过程、内存、配置文件和特定位置。 与 [始终开启的](configure-real-time-protection-microsoft-defender-antivirus.md)实时保护相结合，快速扫描可帮助针对以系统开头的恶意软件和内核级恶意软件提供强大的覆盖范围。 实时保护在打开和关闭文件时以及用户导航到文件夹时检查文件。|
 |在单个设备上检测到恶意软件等威胁|快速扫描 <p> 在大多数情况下，快速扫描将捕获并清理检测到的恶意软件。|
 |想要运行 [按需扫描](run-scan-microsoft-defender-antivirus.md)|快速扫描|
 |你想要确保便携式设备（如 USB 驱动器）不包含恶意软件|自定义扫描 <p> 自定义扫描使你能够选择特定位置、文件夹或文件，并运行快速扫描。|

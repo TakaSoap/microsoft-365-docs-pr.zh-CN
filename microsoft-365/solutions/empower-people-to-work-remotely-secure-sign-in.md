@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 要求混合工作者使用多重身份验证 (MFA) 登录。
-ms.openlocfilehash: d59f990cd7acf576247d75e6544ad045179e3c81
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 586a4f1782cec2baf305b9e72cc3b4a4c732b7f3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170879"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162070"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>步骤 1 为使用 MFA 的混合工作者提高登录安全性
 

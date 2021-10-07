@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解可在 DLP 策略中使用敏感度标签作为条件的服务和项目类型
-ms.openlocfilehash: aa9b936f7c40227245d0ffd9fbbc951e51c49321
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b74911765d9249834553c09bbd4efdd02e5f97ce
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200605"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163392"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>在 DLP 策略中使用敏感度标签作为条件
 

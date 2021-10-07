@@ -4,18 +4,18 @@ description: 针对工具找到的每个问题要采取的详细操作
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 32e750dc824484624a5f0d953b75f242639c3e23
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: d2e055b553e3358107283236d634d9d46d33de4d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009501"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163152"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修复准备情况评估工具发现的问题
 
@@ -38,7 +38,7 @@ ms.locfileid: "60009501"
 
 ### <a name="autopilot-deployment-profile"></a>Autopilot 部署配置文件
 
-不应有任何面向已分配或动态组的现有 Autopilot 配置文件Microsoft 托管桌面设备。 Microsoft 托管桌面 Autopilot 预配新设备。 如果你有现有的 Autopilot 部署配置文件，必须将"将所有目标设备转换为 Autopilot"设置设置为"否"，Autopilot 的托管桌面准备情况测试才能成功。
+你不应具有面向分配的任何现有 Autopilot 配置文件或具有Microsoft 托管桌面动态组。 Microsoft 托管桌面 Autopilot 预配新设备。 如果你有现有的 Autopilot 部署配置文件，必须将"将所有目标设备转换为 Autopilot"设置设置为"否"，Autopilot 的托管桌面准备情况测试才能成功。
 
 **未就绪**
 
@@ -46,12 +46,12 @@ ms.locfileid: "60009501"
 
 **公告**
 
-确保你的 Autopilot 配置文件面向分配或动态的 Azure AD 组，该组不包含Microsoft 托管桌面组。 有关步骤，请参阅在[Intune Windows Autopilot 注册Windows设备](/mem/autopilot/enrollment-autopilot)。 注册Microsoft 托管桌面，设置 Autopilot 配置文件以排除 **现代工作区设备 -所有** Azure AD 组。
+确保你的 Autopilot 配置文件面向不包括任何设备的已分配或Microsoft 托管桌面 Azure AD 组。 有关步骤，请参阅在[Intune Windows Autopilot 注册Windows设备](/mem/autopilot/enrollment-autopilot)。 注册Microsoft 托管桌面，设置 Autopilot 配置文件以排除现代 **工作区设备 -所有** Azure AD 组。
 
 
 ### <a name="certificate-connectors"></a>证书连接器
 
-如果你有任何证书连接器将由你想要在 Microsoft 托管桌面 中注册的设备使用，则连接器不应有任何错误。 只有以下公告之一适用于你的情况，因此请仔细检查它们。
+如果你有任何证书连接器将由你想要在 Microsoft 托管桌面 中注册的设备使用，则连接器不应有任何错误。 只有以下其中一条公告适用于你的情况，因此请仔细检查它们。
 
 **公告**
 
@@ -68,16 +68,16 @@ ms.locfileid: "60009501"
 
 ### <a name="company-portal"></a>公司门户
 
-Microsoft 托管桌面要求 IT 管理员使用 Intune 公司门户 为用户安装Microsoft 托管桌面服务器。 
+Microsoft 托管桌面 IT 管理员要求 IT 管理员Intune 公司门户为用户安装 Microsoft 托管桌面 设备。 
 
 **未就绪**
 
-您未公司门户安装您的用户。 购买公司门户并强制 Intune 和 适用于企业的 Microsoft Store。 有关详细信息，请参阅 Install [Intune 公司门户 on devices。](../get-started/company-portal.md)
+您尚未为公司门户安装任何内容。 购买公司门户并强制 Intune 和 适用于企业的 Microsoft Store。 有关详细信息，请参阅 Install [Intune 公司门户 on devices。](../get-started/company-portal.md)
 
 
 ### <a name="conditional-access-policies"></a>条件访问策略
 
-条件访问策略不得Microsoft 托管桌面 Intune 和 Azure AD (Azure AD) Azure AD 组织。
+条件访问策略不得Microsoft 托管桌面 Intune 和 Azure AD (租户) 管理 Azure AD 组织。
 
 **未就绪**
 
@@ -85,7 +85,7 @@ Microsoft 托管桌面要求 IT 管理员使用 Intune 公司门户 为用户安
 
 **公告**
 
-您具有可能阻止用户管理 Microsoft 托管桌面服务的条件Microsoft 托管桌面策略。 注册期间，我们会从Microsoft 托管桌面条件访问策略中排除服务帐户，并应用新的条件访问策略来限制访问这些帐户。 有关这些服务帐户的更多信息，请参阅 [标准操作过程](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
+您具有可能会阻止用户管理 Microsoft 托管桌面 服务的条件Microsoft 托管桌面策略。 注册期间，我们会从Microsoft 托管桌面条件访问策略中排除服务帐户，并应用新的条件访问策略来限制访问这些帐户。 有关这些服务帐户的更多信息，请参阅 [标准操作过程](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
 **错误**
 
@@ -104,7 +104,7 @@ Azure AD 组织中 Intune 设备合规性策略可能会影响Microsoft 托管�
 
 **公告**
 
-您至少有一个适用于所有用户的合规性策略。 Microsoft 托管桌面还包括将应用于你的 Microsoft 托管桌面 设备的合规性策略。 查看组织创建的所有适用于Microsoft 托管桌面合规性策略，以确保没有冲突。 有关步骤，请参阅在[策略Microsoft Intune。](/mem/intune/protect/create-compliance-policy)
+您至少有一个适用于所有用户的合规性策略。 Microsoft 托管桌面还包括将应用于你的设备Microsoft 托管桌面策略。 查看组织创建的所有适用于Microsoft 托管桌面合规性策略，以确保没有冲突。 有关步骤，请参阅[在策略Microsoft Intune。](/mem/intune/protect/create-compliance-policy)
 
 
 
@@ -128,7 +128,7 @@ Microsoft 托管桌面设备必须在 Intune 中注册。
 
 **未就绪**
 
-你当前至少配置了一个注册限制策略，Windows Intune 中注册。 按照为面向用户的每个 [注册](/mem/intune/enrollment/enrollment-restrictions-set)限制策略设置注册Microsoft 托管桌面中的步骤操作，Windows (**MDM**) 设置为 **允许**。 但是，你可以将 MDM设备Windows (个人拥有 **)** 设置为阻止 **。** 
+你当前至少配置了一个注册限制策略，Windows Intune 中注册。 按照为面向用户的每个 [注册](/mem/intune/enrollment/enrollment-restrictions-set)限制策略设置注册Microsoft 托管桌面中的步骤操作，Windows (**MDM**) 设置更改为 **"允许"。** 但是，你可以将 MDM设备上个人拥有 **Windows ()** 设置为 **阻止**。 
 
 
 ### <a name="enrollment-status-page"></a>注册状态页
@@ -149,11 +149,11 @@ YOU currently have the Enrollment Status Page (ESP) enabled. 如果打算参加�
 
 **未就绪**
 
-适用于企业的 Microsoft Store未启用或未与 Intune 同步。 有关详细信息，请参阅如何在设备上使用 适用于企业的 Microsoft Store[管理](/mem/intune/apps/windows-store-for-business)Microsoft Intune购买Intune 公司门户[的应用](../get-started/company-portal.md)。
+适用于企业的 Microsoft Store未启用或未与 Intune 同步。 有关详细信息，请参阅[如何使用](/mem/intune/apps/windows-store-for-business)适用于企业的 Microsoft Store 管理批量购买的应用Microsoft Intune在设备上Intune 公司门户[购买的应用](../get-started/company-portal.md)。
 
 ### <a name="multifactor-authentication"></a>多重身份验证
 
-多重身份验证不得阻止Microsoft 托管桌面 Intune 和 Azure AD (租户) Azure AD 组织。
+多重身份验证不得阻止Microsoft 托管桌面 Intune 和 Azure AD (Azure AD) Azure AD 组织。
 
 
 **未就绪**
@@ -177,11 +177,11 @@ Intune 管理员角色没有足够的权限进行此检查。 你还需要分配
 
 ### <a name="powershell-scripts"></a>PowerShell 脚本
 
-Windows PowerShell脚本无法以面向特定设备的方式Microsoft 托管桌面分配。  
+Windows PowerShell无法以面向特定设备的方式分配Microsoft 托管桌面脚本。  
 
 **公告**
 
-请确保 Azure AD Windows PowerShell中的脚本不面向任何 Microsoft 管理桌面设备或用户。 不要将 PowerShell 脚本分配给所有用户、所有设备或两者。 更改策略以使用面向特定 Azure AD 组（不包括任何设备或用户Microsoft 托管桌面分配）。 有关详细信息，请参阅在[Intune Windows 10设备上使用 PowerShell 脚本](/mem/intune/apps/intune-management-extension)。
+请确保 Azure AD Windows PowerShell中的脚本不面向任何 Microsoft 管理桌面设备或用户。 不要将 PowerShell 脚本分配给所有用户、所有设备或两者。 将策略更改为使用面向不包括任何设备或用户的特定 Azure AD Microsoft 托管桌面分配。 有关详细信息，请参阅在[Intune Windows 10设备上使用 PowerShell 脚本](/mem/intune/apps/intune-management-extension)。
 
 ### <a name="region"></a>区域
 
@@ -202,11 +202,11 @@ Azure AD 组织所在的一个或多个国家/地区不受 Microsoft 托管桌�
 
 **未就绪**
 
-你有一个面向所有用户、所有设备或两者的安全基线配置文件。 更改策略以使用面向不包括任何设备的特定 Azure AD Microsoft 托管桌面分配。 有关步骤，请参阅[使用安全基线在 Intune Windows 10配置设备](/mem/intune/protect/security-baselines)。 在注册期间，我们将新的安全基线应用于所有Microsoft 托管桌面设备。 注册后，你可以查看Microsoft 托管桌面配置策略区域的安全 **基线** 策略Microsoft Endpoint Manager。
+你有一个面向所有用户、所有设备或两者的安全基线配置文件。 更改策略以使用面向不包含任何设备配置的特定 Azure AD Microsoft 托管桌面分配。 有关步骤，请参阅[使用安全基线配置Windows 10 Intune 中的设备](/mem/intune/protect/security-baselines)。 在注册期间，我们将新的安全基线应用于所有Microsoft 托管桌面设备。 注册后，你可以查看 Microsoft 托管桌面 配置策略区域中 **的** Microsoft Endpoint Manager。
 
 **公告**
 
-确保你拥有的任何安全基线策略都Microsoft 托管桌面设备。 有关步骤，请参阅[使用安全基线在 Intune Windows 10配置设备](/mem/intune/protect/security-baselines)。 在注册期间，我们将新的安全基线应用于所有Microsoft 托管桌面设备。 现代 **工作区设备 - 所有** Azure AD 组是注册 Microsoft 托管桌面 时创建的动态组，因此你必须在注册后返回以排除此组。 
+确保你已排除任何安全基线策略Microsoft 托管桌面设备。 有关步骤，请参阅[使用安全基线配置Windows 10 Intune 中的设备](/mem/intune/protect/security-baselines)。 在注册期间，我们将新的安全基线应用于所有Microsoft 托管桌面设备。 现代 **工作区设备 - 所有** Azure AD 组是注册 Microsoft 托管桌面 时创建的动态组，因此你必须在注册后返回以排除此组。 
 
 ### <a name="unlicensed-admins"></a>未经授权的管理员
 
@@ -224,16 +224,16 @@ Azure AD 组织所在的一个或多个国家/地区不受 Microsoft 托管桌�
 
 你应该准备希望用户拥有的应用Microsoft 托管桌面清单。 由于这些应用必须由 Intune 部署，因此请评估是否重新使用现有 Intune 应用。 请考虑使用[公司门户 (请参阅在](../get-started/company-portal.md)设备上Intune 公司门户安装应用和注册状态页 (ESP) 将应用分发给你的用户。 有关详细信息，请参阅[Autopilot](../get-started/esp-first-run.md) [Microsoft 托管桌面](apps.md)和注册状态页的应用和首次运行体验。
 
-你可以让 Microsoft 帐户代表在 Microsoft Endpoint Configuration Manager中确定准备迁移到 Intune 或需要调整的应用。
+你可以要求 Microsoft 帐户代表在 Microsoft Endpoint Configuration Manager中确定准备迁移到 Intune 或需要调整的应用。
 
 
 ### <a name="windows-hello-for-business"></a>Windows Hello 企业版
 
-Microsoft 托管桌面需要Windows Hello企业用户。
+Microsoft 托管桌面需要Windows Hello For Business。
 
 **公告**
 
-Windows Hello或未设置适用于 Business 的组。 按照 Create [a Windows Hello for Business policy 中的步骤启用它](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)。
+Windows Hello禁用或不设置适用于 Business 的组。 按照 Create [a Windows Hello for Business policy 中的步骤启用它](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)。
 
 
 ### <a name="windows-10-update-rings"></a>Windows 10更新圈
@@ -242,16 +242,16 @@ Intune Windows 10更新圈"策略不得面向任何Microsoft 托管桌面设备�
 
 **未就绪**
 
-你有一个面向所有设备、所有用户或两者同时面向的"更新圈"策略。 更改策略以使用面向不包括任何设备的特定 Azure AD Microsoft 托管桌面分配。 有关步骤，请参阅[在 Intune Windows 10软件更新。](/mem/intune/protect/windows-update-for-business-configure)
+你有一个面向所有设备、所有用户或两者同时面向的"更新圈"策略。 更改策略以使用面向不包含任何设备配置的特定 Azure AD Microsoft 托管桌面分配。 有关步骤，请参阅[在 Intune Windows 10软件更新。](/mem/intune/protect/windows-update-for-business-configure)
 
 **公告**
 
-确保你拥有的任何更新圈策略不包括现代 **工作区设备 -所有** Azure AD 组。 如果你已向这些策略分配了 Azure AD 用户组，请确保你已排除所有更新圈策略，并且你已排除将 Microsoft 托管桌面 用户添加到 (或等效组) 的新式 **工作区 -** 所有 Azure AD 组。 有关步骤，请参阅[在 Intune Windows 10软件更新。](/mem/intune/protect/windows-update-for-business-configure) 现代 **工作区设备 -全部** 和现代工作区 **-所有** Azure AD 组都是我们在注册 Microsoft 托管桌面 时创建的组，因此你必须在注册后返回以排除此组。
+确保你拥有的任何更新圈策略不包括现代 **工作区设备 -所有** Azure AD 组。 如果你已向这些策略分配了 Azure AD 用户组，请确保你已排除任何更新圈策略，并且你已排除将 Microsoft 托管桌面 用户添加到 (或等效组) 的新式 **工作区 -** 所有 Azure AD 组。 有关步骤，请参阅[在 Intune Windows 10软件更新。](/mem/intune/protect/windows-update-for-business-configure) 现代 **工作区设备 -全部** 和现代工作区 **-所有** Azure AD 组都是我们在注册 Microsoft 托管桌面 时创建的组，因此你必须在注册后返回以排除此组。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory设置
 
-可以在 Azure Azure Active Directory访问[自定义设置](https://portal.azure.com)。
+可以在 Azure Azure Active Directory 访问[自定义设置](https://portal.azure.com)。
 
 ### <a name="intune-enrollment"></a>Intune 注册
 
@@ -259,7 +259,7 @@ Windows 10 Azure AD 组织的设备必须能够在 Intune 中自动注册。
 
 **公告**
 
-确保 MDM **用户作用域设置为****"** 部分"或"**全部"，** 而不是"**无"。** 如果选择"**一些**"，请在注册后返回，然后为"组"选择"新式工作区 **-** 所有 Azure AD"组，或选择面向你的所有用户的Microsoft 托管桌面组。  请参阅[使用 Windows 设置设备注册Microsoft Intune。](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+确保 MDM **用户作用域设置为****"** 部分"或"**全部"，** 而不是"**无"。** 如果你选择 **"一些**"，请在注册后返回，然后为组选择"新式 **工作区 -** 所有 Azure AD"组，或选择面向所有用户的Microsoft 托管桌面组。   请参阅[使用 Windows 设置设备注册Microsoft Intune。](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 ### <a name="ad-hoc-subscriptions"></a>临时订阅
 
@@ -276,7 +276,7 @@ Enterprise应启用状态漫游。
 
 **公告**
 
-确保为"Enterprise"组或"所选组"启用状态 **漫游**。 有关详细信息，请参阅 Enable [Enterprise State Roaming in Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable)。
+确保为"Enterprise"**组** 或"所选组"启用状态 **漫游**。 有关详细信息，请参阅 Enable [Enterprise State Roaming in Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable)。
 
 ### <a name="guest-invitation-settings"></a>来宾邀请设置
 
@@ -286,13 +286,21 @@ Microsoft 托管桌面建议调整来宾邀请设置，因为默认设置允许�
 
 **应启用分配给特定管理员角色** 的成员用户和用户可以邀请来宾用户，包括具有成员权限的来宾。 有关步骤，请参阅 [来宾帐户的先决条件](/microsoft-365/managed-desktop/get-ready/guest-accounts)。
 
+### <a name="guest-user-access"></a>来宾用户访问
+
+Microsoft 托管桌面建议调整来宾用户访问，因为默认设置允许目录中的所有来宾用户与成员具有相同的访问权限。
+
+**公告**
+
+**应启用来宾用户对目录对象的属性** 和成员身份的有限访问权限。 有关步骤，请参阅 [来宾帐户的先决条件](/microsoft-365/managed-desktop/get-ready/guest-accounts)。
+
 ### <a name="licenses"></a>许可证
 
 需要大量许可证才能使用Microsoft 托管桌面。
 
 **未就绪**
 
-你并没有使用所需的全部许可证Microsoft 托管桌面。 有关详细信息，请参阅Microsoft 托管桌面[和](../intro/technologies.md)[关于许可证的更多信息](prerequisites.md#more-about-licenses)。
+没有使用许可证所需的全部许可证Microsoft 托管桌面。 有关详细信息，请参阅Microsoft 托管桌面[和](../intro/technologies.md)[关于许可证的更多信息](prerequisites.md#more-about-licenses)。
 
 
 ### <a name="microsoft-managed-desktop-service-accounts"></a>Microsoft 托管桌面服务帐户
@@ -328,11 +336,11 @@ Azure Active Directory中的Microsoft 托管桌面将阻止用户管理设备。
 
 ### <a name="self-service-password-reset"></a>自助服务密码重置
 
-SSPR (可) SSPR 帐户的自助服务密码重置Microsoft 托管桌面服务帐户Microsoft 托管桌面用户。 有关详细信息，请参阅[教程：允许用户](/azure/active-directory/authentication/tutorial-enable-sspr)使用自助密码重置解锁Azure Active Directory重置密码。
+SSPR 帐户 (SSPR) 可以启用自助服务密码重置Microsoft 托管桌面服务帐户Microsoft 托管桌面用户。 有关详细信息，请参阅[教程：允许用户](/azure/active-directory/authentication/tutorial-enable-sspr)使用自助密码重置解锁Azure Active Directory重置密码。
 
 **公告**
 
-确保"SSPR **选择**"设置包含Microsoft 托管桌面但不包括Microsoft 托管桌面帐户。 Microsoft 托管桌面启用 SSPR 后，服务帐户将无法正常工作。  
+确保"SSPR **选择**"设置包括Microsoft 托管桌面但不包括Microsoft 托管桌面帐户。 Microsoft 托管桌面启用 SSPR 后，服务帐户将无法正常工作。  
 
 
 ### <a name="standard-user-role"></a>标准用户角色
@@ -347,7 +355,7 @@ Microsoft 托管桌面注册后，用户将不会在 Microsoft 托管桌面 设�
 
 ### <a name="onedrive"></a>OneDrive
 
-"**仅允许在加入特定域的 PC** 上同步"设置将Microsoft 托管桌面。 可以在管理OneDrive访问OneDrive[设置](https://admin.onedrive.com)。
+"**仅允许在加入特定域** 的 PC 上同步"设置将与Microsoft 托管桌面。 可以在管理OneDrive访问OneDrive[设置](https://admin.onedrive.com)。
 
 **公告**
 

@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -24,14 +25,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 阻止以前的员工登录并阻止访问Microsoft 365服务。
-ms.openlocfilehash: b33f3aa74ebdcf785b75889f5f3263e91b127cdc
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 326188e0000d3c59eb411222d3e3c47177b383ed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773447"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161686"
 ---
-# <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>步骤 1 - 阻止以前的员工登录并阻止Microsoft 365服务
+# <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>步骤 1 - 阻止以前的员工登录并阻止Microsoft 365访问
 
 如果需要立即阻止用户的登录访问，应重置其密码。 在此步骤中，强制注销用户Microsoft 365。
 
@@ -46,7 +47,7 @@ ms.locfileid: "59773447"
 在一小时内（或离开当前Microsoft 365页面后）系统会提示他们重新登录。 访问令牌适合一小时，因此时间线取决于该令牌所剩的时间，以及他们是否导航到当前网页。
   
 > [!IMPORTANT]
-> 如果用户在邮箱Outlook 网页版，只需单击其邮箱中的四处，他们可能不会立即启动。 当他们选择其他磁贴（如OneDrive或刷新浏览器）时，即会启动注销。
+> 如果用户在邮箱Outlook 网页版，只需在邮箱中四处单击，可能不会立即退出。 当他们选择其他磁贴（如OneDrive或刷新浏览器）时，即会启动注销。
   
 若要使用 PowerShell 立即注销用户，请参阅 [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) cmdlet。
   
@@ -67,7 +68,7 @@ ms.locfileid: "59773447"
   
 1. 转到 <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange 管理中心</a>。
 2. 在 Exchange 管理中心 中，导航到" **收件人** "\>" **邮箱** "。
-3. 从列表中选择用户邮箱，然后在右侧"详细信息窗格" (，选择"电子邮件) "下的"管理电子邮件应用程序 **设置"。**   关闭 **所有** 选项的滑块;**移动****(Exchange ActiveSync) 、Outlook 网页版、Outlook****桌面 (MAPI) 、Exchange** **Web 服务****、POP3** 和 **IMAP。**
+3. 从列表中选择用户邮箱，然后在右侧"详细信息窗格" ("电子邮件) "电子邮件应用程序"下选择"管理电子邮件应用程序 **设置"。**   关闭 **所有** 选项的滑块;**移动****(Exchange ActiveSync) 、Outlook 网页版、Outlook****桌面 (MAPI) 、Exchange** **Web 服务****、POP3** 和 **IMAP。**
 4. 选择“**保存**”。
 
 ## <a name="related-content"></a>相关内容

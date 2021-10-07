@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: 了解如何使用筛选器创建、编辑或删除自定义用户Microsoft 365。
-ms.openlocfilehash: 6b668bd34b35cbb8b3bfda0a152b981bdcf8df5f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: e0d809e4f21f8fac798029a403242504b394fb68
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773855"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161830"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>创建、编辑或删除自定义用户视图
 
@@ -44,7 +44,7 @@ ms.locfileid: "59773855"
   
 ## <a name="choose-the-filters-for-your-custom-user-view"></a>为自定义用户视图选择筛选器
 
-您可以在"自定义筛选器"窗格中创建 **和编辑自定义视图** 。 如果选择多个筛选选项，则得到的结果将包含匹配所有选定条件的用户。 以下示例演示如何创建一个名为"Canada users"的自定义视图，该视图显示位于加拿大的特定域中的所有用户。 
+您可以在"自定义筛选器"窗格中创建 **和编辑自定义视图** 。 如果选择多个筛选器选项，将获取包含匹配所有选定条件的用户的结果。 以下示例演示如何创建一个名为"Canada users"的自定义视图，该视图显示位于加拿大的特定域中的所有用户。 
 
   
  **A - 域** 如果您的组织有多个域，您可以从可用的域下拉列表中选择。 
@@ -63,16 +63,16 @@ ms.locfileid: "59773855"
     
 - **出错的用户** 选中此框可显示可能有设置错误的用户。 
     
-- **未授权用户** 选中此框可查找尚未分配许可证的所有用户。 此视图的结果还可以包括拥有邮箱Exchange但没有许可证的用户。 若要专门跟踪这些用户，请使用筛选器"未授权用户Exchange **邮箱或存档。** 此视图的结果还可以包括具有存档Exchange但没有许可证的用户。
+- **未授权用户** 选中此框可查找尚未分配许可证的所有用户。 此视图的结果还可以包括拥有邮箱Exchange但没有许可证的用户。 若要专门跟踪这些用户，请使用筛选器"未授权用户Exchange **邮箱或存档"**。 此视图的结果还可以包括具有存档Exchange但没有许可证的用户。
     
-- **具有邮箱或存档Exchange未授权用户** 选中此框可显示在 Exchange Online 中创建的用户帐户Exchange但是未分配Microsoft 365许可证。 此筛选器的结果包括拥有或分配了存档Exchange用户。 
+- **具有邮箱或存档Exchange未授权用户** 选中此框可显示在 Exchange Online 中创建的用户帐户，Exchange邮箱，但没有分配Microsoft 365许可证。 此筛选器的结果包括拥有或分配了存档Exchange用户。 
 
 > [!NOTE]
-> 在 **符合以下条件时，具有Exchange许可证的用户筛选器** 将正常工作：
+> 在 **符合以下条件时，具有Exchange许可证的用户筛选器** 可以正常工作：
 1. 邮箱最近从共享转换为 **用户，** 并且没有许可证。 
 2. 邮箱最近已迁移到 Microsoft 365但尚未分配许可证。
 3. 邮箱已使用 PowerShell 创建，尚未分配许可证。
-4. 为用户设置使用 New-RemoteMailbox cmdlet 在内部部署中创建的新邮箱。
+4. 为用户设置使用 New-RemoteMailbox cmdlet 在内部创建的新邮箱。
     
 > [!TIP]
 > 如果创建的自定义视图返回的用户数超过 2，000，则生成的用户列表不会排序。 在这种情况下，使用搜索框查找用户或编辑自定义视图以优化搜索。 

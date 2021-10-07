@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '了解如何将专用邮箱转换为多个人员（而不是一个人）可以访问的共享邮箱。 '
-ms.openlocfilehash: 67a4ce19e355b8a227e9471f164344ad22deffbc
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 48799e99bca316dd3a5a073be2c24f1057a07151
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774660"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165048"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 
 将用户的邮箱转换为共享邮箱时，将保留所有现有电子邮件和日历。 现在，它才在一个共享邮箱中，多个人员将能够访问它，而不是一个人。 稍后，可以将共享邮箱转换回专用 (用户) 邮箱。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 **以下是您需要了解的一些非常重要的事情：**
 
@@ -46,7 +47,7 @@ ms.locfileid: "59774660"
 
 ## <a name="use-the-classic-exchange-admin-center-to-convert-a-mailbox"></a>使用经典Exchange管理中心转换邮箱
  
-1. 转到经典Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理中心</a>。
+1. 转到经典<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理中心</a>。
 
 2. 选择 **"收件人** \> **""邮箱"。**
 
@@ -110,14 +111,14 @@ ms.locfileid: "59774660"
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>在混合环境中转换用户邮箱
 
-有关将用户邮箱转换为混合环境中共享邮箱Exchange，请参阅：
+有关在混合环境中将用户邮箱转换为共享邮箱Exchange，请参阅：
 
  - [在内部部署部署环境中创建或修改远程共享邮箱Exchange Cmdlet](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
  - [在混合部署中运行目录同步后，共享邮箱Exchange转换为用户邮箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
  
 
 > [!NOTE]
-> 如果你是组织管理或收件人管理角色组的成员，可以使用 Exchange 命令行管理程序 将用户邮箱更改为本地共享邮箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`。
+> 如果你是组织管理或收件人管理角色组的成员，可以使用 Exchange 命令行管理程序将用户邮箱更改为本地共享邮箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`。
 
 ## <a name="related-content"></a>相关内容
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: 了解如何创建 AutoPilot 配置文件，并应用到设备，以及编辑或删除配置文件或者从设备中删除配置文件。
-ms.openlocfilehash: 685773fbdac454af039478c17232e6e88333dc74
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 481c59797a1959ed72dbe5c7b81f5d2480def490
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933563"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165528"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>创建和编辑 AutoPilot 配置文件
 
@@ -55,7 +55,7 @@ ms.locfileid: "59933563"
   
 1. 在" **准备 Windows**"页面上，选择" **设备**"选项卡。 
     
-2. 选中设备名称旁边的复选框，在"设备"面板中，从"分配配置文件"下拉列表"保存"中选择 \> **配置文件**。
+2. 选中设备名称旁边的复选框，在"设备"面板中，从"已分配配置文件"下拉列表"保存"中选择 \> **配置文件**。
     
     ![In the Device panel, select an Assigned profile to apply it.](../../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   

@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -21,13 +21,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 使用隐私和同意声明为用户自定义登录Microsoft 365。
-ms.openlocfilehash: 652566ca1caf46cd224e5205da3bebfd7b25cefa
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 使用隐私和同意声明自定义登录页面，Microsoft 365。
+ms.openlocfilehash: 003853e0577b2c23fc8240d2b19918c3235eade8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170232"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156782"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>使用隐私和同意通知自定义登录页面
 

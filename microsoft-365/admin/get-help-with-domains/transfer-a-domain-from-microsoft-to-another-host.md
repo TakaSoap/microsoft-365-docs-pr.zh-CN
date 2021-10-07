@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -21,16 +22,16 @@ search.appverid:
 - MOE150
 - GEA150
 description: '在此处查找将域从 Microsoft 转移到另一个注册机构的步骤。 '
-ms.openlocfilehash: f36203326f3b6cdd6a1b1bcfc52bfcee01ad1a80
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: c6e74f654c1bbd35f69b071a2076c95cb651f476
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774432"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164616"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>将域从 Microsoft 转移到其他主机
 
-在从 Microsoft 购买域Microsoft 365 60 天内，你无法将域转移到另一个注册机构。
+从 Microsoft 购买域后，Microsoft 365域 60 天内无法转移到另一个注册机构。
 
 > [!NOTE]
 > Whois _查询_   显示 Microsoft 购买的域注册机构为"Wild West Domains LLC"。 但是，应仅就你购买Microsoft 365联系 Microsoft。
@@ -58,7 +59,7 @@ ms.locfileid: "59774432"
     您可以在"域"页面上找到授权代码"注册" **选项卡Microsoft 365。**
     
     > [!TIP]
-    > .uk 域需要不同的过程。 请联系 Microsoft 支持部门并请求 **IPS 标记更改** ，以匹配要管理域的注册机构。 标记更改后，域将立即转移到新注册机构。 然后，你需要与新注册机构一起完成转移，可能会支付转移费用，并借助你的新注册机构将已转移的域添加到你的帐户。
+    > .uk 域需要不同的过程。 请联系 Microsoft 支持部门并请求 **IPS 标记更改** ，以匹配要管理域的注册机构。 标记更改后，域将立即转移到新注册机构。 然后，你需要与新的注册机构合作来完成转移，可能支付转移费用，并借助你的新注册机构将已转移的域添加到你的帐户。
 
 9. 传输完成后，你将在新的域注册机构续订域。
 

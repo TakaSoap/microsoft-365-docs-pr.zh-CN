@@ -1,6 +1,6 @@
 ---
 title: 通过管理Microsoft 威胁专家配置和管理Microsoft 365 Defender
-description: 通过安全中心Microsoft 365 Defender Microsoft 威胁专家，以在日常安全操作和安全管理工作中配置、管理和使用它。
+description: 通过安全管理Microsoft 365 Defender Microsoft 威胁专家，以在日常安全操作和安全管理工作中配置、管理和使用它。
 keywords: Microsoft 威胁专家， 托管威胁搜寻服务， MTE， Microsoft 托管搜寻服务
 search.product: Windows 10
 search.appverid: met150
@@ -10,16 +10,16 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 1137ef50c5e3fb72b6bc0532b021de05c7eff1ce
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b62f847a1a8b7bef15c33f97d5d64a9ec58dd7cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162206"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162252"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>通过管理Microsoft 威胁专家配置和管理Microsoft 365 Defender
 
@@ -32,24 +32,24 @@ ms.locfileid: "59162206"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 > [!IMPORTANT]
 > 在应用之前，请务必与 Microsoft 技术服务提供商和帐户团队讨论 Microsoft 威胁专家 - 目标攻击通知托管威胁搜寻服务的资格要求。
 
-若要接收目标攻击通知，你需要已Microsoft 365 Defender部署攻击通知。 然后，通过 M365 门户提交应用程序，Microsoft 威胁专家 - 目标攻击通知。
+若要接收目标攻击通知，你需要已Microsoft 365 Defender部署目标攻击通知。 然后，通过 M365 门户提交应用程序，Microsoft 威胁专家目标攻击通知。
 
-联系你的帐户团队或 Microsoft 代表，订阅 Microsoft 威胁专家专家按需订阅。 按需专家让你可以咨询我们的威胁专家，了解如何保护你的组织免受相关检测和攻击。
+联系你的帐户团队或 Microsoft 代表，订阅Microsoft 威胁专家专家按需订阅。 按需专家让你可以咨询我们的威胁专家，了解如何保护你的组织免受相关检测和攻击。
 
 ## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>适用于 Microsoft 威胁专家 - 目标攻击通知服务
 
-如果你已拥有适用于终结点的 Microsoft Defender 和 Microsoft 365 Defender，可以通过其Microsoft 威胁专家应用目标攻击Microsoft 365 Defender通知。  目标攻击通知可让你获得特殊的见解和分析，以帮助识别组织面临的最关键威胁，以便你可以快速响应它们。
+如果你已拥有适用于终结点的 Microsoft Defender 和 Microsoft 365 Defender，则可以通过Microsoft 威胁专家应用目标攻击Microsoft 365 Defender通知。  目标攻击通知可让你获得特殊的见解和分析，以帮助识别组织面临的最关键威胁，以便你可以快速响应它们。
 
-1. 从导航窗格中，转到设置 >终结点>常规>高级> Microsoft 威胁专家 - 目标 **攻击通知。**
+1. 从导航窗格中，转到"设置 >终结点">">高级> Microsoft 威胁专家 - 目标 **攻击通知"。**
 
 2. 选择“**应用**”。
 
-    ![图像Microsoft 威胁专家设置。](../../media/mte/mte-collaboratewithmte.png)
+    ![设置Microsoft 威胁专家的图像。](../../media/mte/mte-collaboratewithmte.png)
 
 3. 输入你的姓名和电子邮件地址，以便 Microsoft 可以就你的应用程序联系你。
 
@@ -61,7 +61,7 @@ ms.locfileid: "59162206"
 
 5. 收到欢迎电子邮件后，将自动开始接收目标攻击通知。
 
-6. 可以通过访问"常规"和"高级 **"设置 >终结点>验证>状态**。 获得批准后，Microsoft 威胁专家 - 目标 **攻击** 通知切换将可见并切换 **为打开**。
+6. 可以通过访问"常规"和"高级 **"设置 >终结点>验证>状态**。 获得批准后，Microsoft 威胁专家 - 目标 **攻击** 通知切换将可见，并切换 **为打开**。
 
 ## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>你将在什么位置看到来自你的目标攻击Microsoft 威胁专家
 
@@ -87,11 +87,11 @@ ms.locfileid: "59162206"
 
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>订阅Microsoft 威胁专家 - 专家按需
 
-如果你已经是适用于 Endpoint 的 Microsoft Defender 客户，你可以联系你的 Microsoft 代表，以订阅 Microsoft 威胁专家 - 专家按需。
+如果你已经是适用于 Endpoint 的 Microsoft Defender 客户，你可以联系你的 Microsoft 代表来订阅 Microsoft 威胁专家 - 专家按需。
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>咨询 Microsoft 威胁专家，了解组织中可疑的网络安全活动
 
-你可以从 Microsoft 威胁专家 门户内Microsoft 365 Defender联系人。 专家可以帮助你了解复杂的威胁和目标攻击通知。 与专家合作，进一步了解有关警报和事件的详细信息，或提供有关处理泄露的建议。 深入了解门户仪表板描述的威胁情报上下文。
+你可以从Microsoft 威胁专家内联系Microsoft 365 Defender联系人。 专家可以帮助你了解复杂的威胁和目标攻击通知。 与专家合作，进一步了解有关警报和事件的详细信息，或提供有关处理泄露的建议。 深入了解门户仪表板描述的威胁情报上下文。
 
 > [!NOTE]
 >
@@ -102,7 +102,7 @@ ms.locfileid: "59162206"
 
 2. 从顶部菜单中， **选择？咨询威胁专家**。
 
-    ![菜单中Microsoft 威胁专家专家按需提供的图像。](../../media/mte/incidents-action-mte-highlighted.png)
+    ![菜单Microsoft 威胁专家专家按需提供的图像。](../../media/mte/incidents-action-mte-highlighted.png)
 
     将打开一个飞出屏幕。
 
@@ -141,7 +141,7 @@ ms.locfileid: "59162206"
 ### <a name="threat-intelligence-details"></a>威胁情报详细信息
 
 - 我们检测到一封钓鱼电子邮件，该电子邮件向用户传递了恶意 Word 文档。 文档引发了一系列可疑事件，从而触发了针对特定恶意软件系列的多个警报。 你是否有关于此恶意软件的信息？ 如果是，能否向我们发送链接？
-- 我们最近看到一篇有关面向我们行业的威胁的博客文章。 你可以帮助我们了解针对此威胁Microsoft 365 Defender提供哪些保护？
+- 我们最近看到一篇有关针对我们行业的威胁的博客文章。 你可以帮助我们了解针对此威胁Microsoft 365 Defender提供哪些保护？
 - 我们最近观察到了针对我们的组织进行的网络钓鱼活动。 能否告诉我们这是专门针对我们的公司还是垂直市场？
 
 ### <a name="microsoft-threat-experts-alert-communications"></a>Microsoft 威胁专家警报通信
@@ -153,7 +153,7 @@ ms.locfileid: "59162206"
 > [!NOTE]
 > Microsoft 威胁专家是托管威胁搜寻服务，而不是事件响应服务。 但是，您可以与自己的事件响应团队合作，以解决需要事件响应的问题。 如果你没有自己的事件响应团队，并且希望获得 Microsoft 的帮助，你可以与 CIRT (CSS 网络安全事件响应) 。 他们可以打开票证来帮助解决你的查询问题。
 
-## <a name="scenario"></a>方案
+## <a name="scenario"></a>应用场景
 
 ### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>接收有关托管搜寻查询的进度报告
 

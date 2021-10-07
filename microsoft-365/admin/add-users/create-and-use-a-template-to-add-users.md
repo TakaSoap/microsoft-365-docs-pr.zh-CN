@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以在添加多个用户时创建并使用模板来节省时间和标准化设置。
-ms.openlocfilehash: 6ef35bb395417597d10b8b33c042e1baceeb40db
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: cacb3fc6ef2a145cbfe4c4131b2e5e38eca2c257
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773483"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161842"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>创建和使用模板来添加用户
 
@@ -42,8 +43,8 @@ ms.locfileid: "59773483"
 - 许可证位置
 - 许可证选择
 - 应用程序选择
-- 角色
-- 大多数配置文件信息，例如作业 **配置文件**、**部门**、Office、Office **电话** 和 **街道地址** 
+- Role
+- 大多数个人资料信息，例如作业 **配置文件**、**部门****、Office、Office****电话和****街道地址** 
 
 以下信息特定于用户，不会保存在模板中：
 
@@ -63,7 +64,7 @@ ms.locfileid: "59773483"
 
 1. 在管理中心中，选择"**用户**  >  **""活动用户"。**
 
-2. 选择 **"用户模板**"，然后从下拉列表中选择模板。  (列表将仅包含你创建的模板，而不包含由其他管理员创建的模板。) 
+2. 选择 **"用户模板**"，然后从下拉列表中选择模板。  (列表将仅包含你创建的模板，而不包含由其他管理员创建的模板) 
 
    > [!NOTE]
    > You can also use a template to add a user by selecting **User templates** Manage  >  **templates，** selecting a template， and then selecting **Use template**.
@@ -90,5 +91,5 @@ ms.locfileid: "59773483"
 
 [同时添加用户和分配许可证](add-users.md)
 
-[从员工中删除以前的Microsoft 365](remove-former-employee.md)
+[从公司中删除以前的Microsoft 365](remove-former-employee.md)
   

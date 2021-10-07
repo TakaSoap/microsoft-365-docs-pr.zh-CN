@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在手机上Microsoft 365 管理移动应用。
-ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 528c6714153ded0e06441b2027312c874361038a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170836"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156926"
 ---
 # <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>将Microsoft 365 管理移动应用安装在手机上
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
-可以使用 Microsoft 365 管理移动应用管理用户、监视服务运行状况以及从手机执行其他管理任务。
+可以使用移动Microsoft 365 管理管理用户、监视服务运行状况以及从手机执行其他管理任务。
 
 ## <a name="try-it"></a>试一试！
 

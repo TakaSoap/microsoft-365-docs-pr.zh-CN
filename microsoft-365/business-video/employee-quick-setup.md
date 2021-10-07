@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 帮助员工了解如何设置Office使用应用获取Microsoft 365 商业高级版。
-ms.openlocfilehash: 7c7f28a13438d2cd5974d212d56c6885d8d4850c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2a1c3c082cfb676b33e7b033c6516f2f4c37980e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171180"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156950"
 ---
 # <a name="employee-quick-setup"></a>员工快速设置
 
@@ -34,7 +34,7 @@ ms.locfileid: "59171180"
 
 :::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="显示快速员工设置步骤的图像。":::
 
-## <a name="1-sign-in-to-office"></a>1. 登录到 Office
+## <a name="1-sign-in-to-office"></a>1. 登录Office
 
 1. 转到 [Office.com](https://office.com) 并选择" **登录**"。
 1. 键入你的Microsoft 365和密码，然后 **登录**。
@@ -61,15 +61,15 @@ ms.locfileid: "59171180"
 
 ## <a name="4-save-or-copy-files-to-onedrive"></a>4. 将文件保存或复制到OneDrive
 
-- 将文档保存到 **OneDrive****应用中的"** 另存为"Office菜单中。
+- 保存 **文档OneDrive****应用中的"** 另存为"Office菜单中。
     :::image type="content" source="../media/save-onedrive.png" alt-text="与如何另存为以OneDrive。":::
 
 - 或将文件从桌面或文档复制到" **OneDrive**"。
 
-    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="显示如何保存以从OneDrive文件夹保存的图像。":::
+    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="显示如何从&quot;文档&quot;OneDrive文件的图像。":::
 
     > [!TIP]
-    > 您还可以将文件存储在网站[中的Microsoft 365。](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)
+    > 您还可以将文件存储在网站[中的](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)Microsoft 365。
 
 ## <a name="5-share-documents"></a>5. 共享文档
 

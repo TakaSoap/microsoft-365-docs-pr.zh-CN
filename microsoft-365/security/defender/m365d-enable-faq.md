@@ -1,7 +1,7 @@
 ---
 title: 打开"打开"功能时Microsoft 365 Defender
 description: 获取有关授权、权限、初始设置以及其他与启用权限相关的产品和服务的最常见Microsoft 365 Defender
-keywords: 常见问题， 常见问题， GCC， 入门， 启用 Microsoft 365 Defender， Microsoft 365 Defender， M365， 安全， 数据位置， 所需权限， 许可证资格， 设置页面
+keywords: 常见问题， 常见问题， GCC， 入门， 启用 Microsoft 365 Defender， Microsoft 365 Defender， M365， 安全性， 数据位置， 所需权限， 许可证资格， 设置页面
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e630b2cdb7164157e2dd42e8f1ee8d09676dfbfb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ac26e2528698cc671c5cb45eb507d01900a77ec4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195979"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162322"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>打开"打开"功能时Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "59195979"
 **适用于：**
 - Microsoft 365 Defender
 
-阅读对有关打开 Microsoft 365 Defender 的最常见问题的回复，包括所需的许可证和权限[、](microsoft-365-defender.md)部署支持服务和初始设置。
+阅读对有关打开许可证的最常见问题的回复，Microsoft 365 Defender所需的许可证[](microsoft-365-defender.md)和权限、部署支持服务以及初始设置。
 
 有关如何打开服务的说明，请阅读打开[Microsoft 365 Defender。](m365d-enable.md)
 
@@ -52,16 +52,16 @@ ms.locfileid: "59195979"
 
 ## <a name="do-i-need-to-install-or-deploy-anything-to-start-using-microsoft-365-defender"></a>是否需要安装或部署任何内容以开始使用Microsoft 365 Defender？
 
-否，Microsoft 365 Defender已Microsoft 365部署的安全服务的数据进行合并。 启用后，事件、自动化和搜寻体验将开始在已部署产品范围内工作。 如果没有正确部署这些产品，Microsoft 365 Defender将不会显示任何数据，并且无法执行任何操作。
+否，Microsoft 365 Defender已部署Microsoft 365安全服务的数据进行合并。 启用后，事件、自动化和搜寻体验将开始在已部署产品范围内工作。 如果没有正确部署这些产品，Microsoft 365 Defender将不会显示任何数据，并且无法执行任何操作。
 
-若要优化你的Microsoft 365 Defender体验，我们建议部署所有受支持的Microsoft 365[安全产品和服务](deploy-supported-services.md)。 
+若要优化你的Microsoft 365 Defender体验，*我们建议部署所有* 受支持的Microsoft 365 [安全产品和服务](deploy-supported-services.md)。
 
 ## <a name="where-does-microsoft-365-defender-process-and-store-my-data"></a>在哪里Microsoft 365 Defender和存储我的数据？
 
 Microsoft 365 Defender为处理和存储合并数据的数据中心自动选择一个最佳位置。 如果你有适用于终结点的 Microsoft Defender，它将选择 Defender for Endpoint 所使用的相同位置。
 
 >[!NOTE]
->通过 Azure Defender 启用后，Microsoft Defender for Endpoint (欧盟) 数据中心自动进行设置。 Microsoft 365 Defender将在同一欧盟数据中心中为已使用 Microsoft Defender for Endpoint 预配的客户自动预配此配置。
+>Microsoft Defender for Endpoint 在通过 Azure Defender 打开 (欧盟) 数据中心自动进行设置。 Microsoft 365 Defender将在同一个欧盟数据中心中为已使用此方式预配 Microsoft Defender for Endpoint 的客户自动进行预配。
 
 数据中心位置显示在服务预配之前和之后，位于 **Microsoft 365 Defender (设置 > Microsoft 365 Defender) 。** 如果你想要使用另一个数据中心位置，请选择"需要帮助？"，Microsoft 365 Defender联系 Microsoft 支持人员。
 
@@ -86,7 +86,7 @@ Microsoft 365 Defender为处理和存储合并数据的数据中心自动选择�
 
 默认情况下，Microsoft 365 Defender UTC 时区显示时间信息。 你可以更改此设置以使用本地时区。 [了解如何设置时区](m365d-time-zone.md)
 
-## <a name="how-can-i-learn-about-new-microsoft-365-defender-feature-and-ui-updates"></a>如何了解新的自定义Microsoft 365 Defender和 UI 更新？
+## <a name="how-can-i-learn-about-new-microsoft-365-defender-feature-and-ui-updates"></a>如何了解新的 Microsoft 365 Defender 和 UI 更新？
 
 Microsoft 会定期通过各种渠道提供相关信息，包括：
 
@@ -95,7 +95,7 @@ Microsoft 会定期通过各种渠道提供相关信息，包括：
 
 打开预览功能，获取最新公开 [可用体验](preview.md)。
 
-## <a name="is-microsoft-365-defender-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>此Microsoft 365 Defender是否适用于美国政府社区云 (GCC) 或GCC高？
+## <a name="is-microsoft-365-defender-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>是否Microsoft 365 Defender高政府社区云 (GCC) 或GCC？
 
 目前不可用。
 

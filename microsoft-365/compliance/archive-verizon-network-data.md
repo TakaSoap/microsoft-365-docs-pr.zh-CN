@@ -9,21 +9,21 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理员可以设置 TeleMessage 连接器，以在 Microsoft 365 中从 Verizon 网络导入和存档短信和彩信Microsoft 365。 这样，您就可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: d95b78267dc74fb78eb9db6fcf3df25c4a4ac59a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 管理员可以设置 TeleMessage 连接器，以在 Microsoft 365 中从 Verizon 网络导入和存档短信和彩信Microsoft 365。 这样，您可以在 Microsoft 365中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
+ms.openlocfilehash: 10e416825b9241c26f26ab37a254cddbd22fa836
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170663"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163488"
 ---
 # <a name="set-up-a-connector-to-archive-verizon-network-data"></a>设置连接器以存档 Verizon 网络数据
 
 使用 Microsoft 365 合规中心 中的 TeleMessage 连接器从 Verizon 网络导入和存档短信服务 (SMS) 和彩信服务 (MMS) 数据。 设置和配置连接器后，它将每天连接到组织的 Verizon 网络一次，并导入短信和彩信数据到 Microsoft 365 中的邮箱。
 
-将 Verizon 网络连接器数据存储在用户邮箱中后，可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索和 Microsoft 365 保留策略）应用于 Verizon 数据。 例如，您可以使用内容搜索搜索 Verizon 短信和彩信，或将包含 Verizon 网络数据的邮箱与案例的保管人Advanced eDiscovery关联。 使用 Verizon 网络连接器在 Microsoft 365 导入和存档数据可帮助组织遵守政府及法规策略。
+将 Verizon 网络连接器数据存储在用户邮箱中后，可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索和 Microsoft 365 保留策略）应用于 Verizon 数据。 例如，您可以使用内容搜索搜索 Verizon 短信和彩信，或将包含 Verizon 网络数据的邮箱与案例的保管人Advanced eDiscovery关联。 使用 Verizon 网络连接器在 Microsoft 365 导入和存档数据可帮助组织遵守政府法规策略。
 
 ## <a name="overview-of-archiving-verizon-network-data"></a>存档 Verizon 网络数据概述
 
@@ -31,15 +31,15 @@ ms.locfileid: "59170663"
 
 ![Verizon 网络存档工作流。](../media/VerizonNetworkConnectorWorkflow.png)
 
-1. 你的组织与 TeleMessage 和 Verizon 合作以设置 Verizon 网络连接器。 有关详细信息，请参阅 [Verizon Network Archiver](https://www.telemessage.com/office365-activation-for-verizon-network-archiver/)。
+1. 你的组织与 TeleMessage 和 Verizon 合作以设置 Verizon 网络连接器。 有关详细信息，请参阅[Verizon Network Archiver。](https://www.telemessage.com/office365-activation-for-verizon-network-archiver/)
 
 2. 每 24 小时发送一次，来自您组织的 Verizon 网络的短信和彩信将复制到 TeleMessage 站点。
 
-3. 在 Microsoft 365 合规中心 中创建的 Verizon 网络连接器每天连接到 TeleMessage 站点，将短信和彩信从过去 24 小时转移到 Microsoft 云中的安全 Azure 存储 位置。 连接器还会将短信和彩信的内容转换为电子邮件格式。
+3. 在 Microsoft 365 合规中心 创建的 Verizon 网络连接器每天连接到 TeleMessage 站点，将过去 24 小时内的短信和彩信转移到 Microsoft 云中的安全 Azure 存储 位置。 连接器还会将短信和彩信的内容转换为电子邮件格式。
 
-4. 连接器将移动通信项目导入到特定用户的邮箱。 名为 **"Verizon SMS/MMS 网络** 存档器"的新文件夹将创建于特定用户的邮箱中，并且项目将导入到该文件夹中。 连接器使用"用户的电子邮件地址"属性的值 *执行此映射* 。 每个短信和彩信都包含此属性，该属性填充了邮件每个参与者的电子邮件地址。
+4. 连接器将移动通信项目导入到特定用户的邮箱。 名为 **Verizon SMS/MMS 网络** 存档器的新文件夹将创建于特定用户的邮箱中，并且项目将导入到该文件夹中。 连接器使用"用户的电子邮件地址"属性的值 *执行此映射* 。 每个短信和彩信都包含此属性，该属性填充了邮件每个参与者的电子邮件地址。
 
-   除了使用"用户的电子邮件地址"属性的值进行自动用户映射之外，您还可以通过上载 CSV 映射文件来实现自定义映射。 此映射文件包含您Microsoft 365的移动电话号码和相应的电子邮件地址。 如果同时启用自动用户映射和自定义映射，连接器将首先针对每个 Verizon 项查看自定义映射文件。 如果找不到与Microsoft 365移动电话号码对应的有效邮件用户，连接器将使用其尝试导入的项目的电子邮件地址属性中的值。 如果连接器在自定义映射文件或 Verizon 项目的电子邮件地址Microsoft 365查找到有效的用户，该项目将不会导入。
+   除了使用"用户的电子邮件地址"属性的值进行自动用户映射之外，您还可以通过上载 CSV 映射文件来实现自定义映射。 此映射文件包含您Microsoft 365的移动电话号码和相应的电子邮件地址。 如果同时启用自动用户映射和自定义映射，连接器将首先针对每个 Verizon 项查看自定义映射文件。 如果找不到与Microsoft 365移动电话号码对应的有效用户，连接器将使用其尝试导入的项目的电子邮件地址属性中的值。 如果连接器在自定义映射文件或 Verizon 项目的电子邮件地址属性中找不到Microsoft 365用户，该项目将不会导入。
 
 ## <a name="before-you-set-up-a-connector"></a>设置连接器之前
 
@@ -53,7 +53,7 @@ ms.locfileid: "59170663"
 
 - 员工必须在 Verizon 移动网络上拥有公司拥有和负责企业的移动电话。 在 BYOD Microsoft 365中存档消息不适用于员工拥有的设备或自带设备 (BYOD) 设备。
 
-- 必须为创建 Verizon 网络连接器的用户分配邮箱导入导出Exchange Online。 在"数据连接器"页的"数据连接器"**页中添加连接器** Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到邮箱管理角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须为创建 Verizon 网络连接器的用户分配邮箱导入导出Exchange Online。 在"数据连接器"页的"数据连接器"页中添加连接器Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 - 此数据连接器可用于美国政府GCC中Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 

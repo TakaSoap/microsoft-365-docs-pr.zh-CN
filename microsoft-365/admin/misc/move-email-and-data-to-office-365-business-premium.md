@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 了解如何将数据转移到新的业务标识。
-ms.openlocfilehash: 4f105e00ab6496a5d1d3edfc0e0f1abd4eced412
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d9729237f05436192928b9f5935053e329f886cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170369"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164304"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>将电子邮件和数据移动到Microsoft 365 商业标准版
 
@@ -38,7 +38,7 @@ ms.locfileid: "59170369"
 ## <a name="onedrive"></a>[OneDrive](#tab/OneDrive)
   
  **复制 OneDrive 数据**
-1. 在硬盘驱动器上创建一个临时文件夹，临时存储要迁移到企业Microsoft 365的文件。
+1. 在硬盘驱动器上创建一个临时文件夹，以临时存储要迁移到企业Microsoft 365的文件。
     
 2. 转到 [https://onedrive.live.com/](https://onedrive.live.com/) 并使用用于访问你的订阅的 Microsoft 帐户Microsoft 365 家庭版登录。 
     
@@ -50,11 +50,11 @@ ms.locfileid: "59170369"
 2. 在左上角选择" **应用启动器**"图标，然后选择" **OneDrive**"。
   
     > [!TIP]
-    > 第一次打开 OneDrive for Business 时，需要设置 OneDrive。 如果发生这种情况，请在"欢迎使用 **OneDrive for Business** 页上，选择"下一 **步"。** 设置OneDrive后，选择 **"OneDrive就绪"。** 
+    > 第一次打开 OneDrive for Business 时，需要设置 OneDrive。 如果发生这种情况，请在"欢迎使用 **OneDrive for Business，** 选择"下一 **步"。** 设置OneDrive后，选择 **"OneDrive准备就绪"。** 
   
 3. 你将转到一个空的 OneDrive 文件夹。 如果要创建子文件夹，请选择"新建 **文件夹** \> **"。**
 
-4. 选择 **Upload** 从硬盘驱动器复制文件，其中OneDrive文件。 
+4. 选择 **Upload"** 以从硬盘驱动器复制文件，其中OneDrive文件。 
   
     > [!NOTE]
     >  可以一次上传一个文件，也可以同时上传多个文件（如特定文件夹中的所有文件），但不能将文件夹复制到 OneDrive for Business。而需要在 OneDrive for Business 上创建所需的文件夹结构。 >  如果想将文件复制到步骤 4 中创建的文件夹，请先打开该文件夹，然后再上传文件。否则会将文件上传到根文件夹。上传文件之后，你也可以在 OneDrive for Business 中的各文件夹之间移动文件。 

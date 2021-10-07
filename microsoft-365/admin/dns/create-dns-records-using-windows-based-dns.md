@@ -1,5 +1,5 @@
 ---
-title: 使用基于 DNS Windows Microsoft 创建 DNS 记录
+title: 使用基于 Windows 的 DNS 为 Microsoft 创建 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,33 +23,33 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录Windows Microsoft 的基于 DNS。
-ms.openlocfilehash: 3a1b11eb9663a68f7787b026c7c7402db8ef4a854e4b9ecdb3356bb1074e2610
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43cc3679f33a929545ed3d9deec388126aec853c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826203"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165288"
 ---
-# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用基于 DNS Windows Microsoft 创建 DNS 记录
+# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用基于 Windows 的 DNS 为 Microsoft 创建 DNS 记录
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
    
 如果使用基于 Windows 的 DNS 托管自己的 DNS 记录，请遵循本文中的步骤为电子邮件、Skype for Business Online 等设置记录。
   
-To get started， you need to [find your DNS records in Windows based DNS](#find-your-dns-records-in-windows-based-dns) so you can update them. 此外，如果你计划将本地 Active Directory 与 Microsoft 同步，请参阅在本地 [Active Directory](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory)中用作 UPN 的不可路由电子邮件地址。
+若要开始，你需要在基于 DNS Windows DNS 中查找[DNS](#find-your-dns-records-in-windows-based-dns)记录，以便可以更新它们。 此外，如果你计划将本地 Active Directory 与 Microsoft 同步，请参阅在本地 [Active Directory](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory)中用作 UPN 的不可路由电子邮件地址。
   
 添加 DNS 记录后遇到邮件流问题或其他问题，请参阅对更改域名或 DNS 记录后的问题 [进行故障排除](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>在基于 Windows 的 DNS 中查找 DNS 记录
-<a name="BKMK_find_your_dns_1"></a>转到包含域的 DNS 记录的页面。 If you're working in Windows Server 2008， go to **Start**  >  **Run**. 如果在运行中工作，请按 Windows Server 2012 键Windows **r。** 键入 **dnsmgmnt.msc，** 然后选择"确定 **"。** 在 DNS 管理器中，展开 **\<DNS server name\> \> "前向查找区域"。** 选择域。 现在已准备好创建 DNS 记录。
+<a name="BKMK_find_your_dns_1"></a>转到包含域的 DNS 记录的页面。 If you're working in Windows Server 2008， go to **Start**  >  **Run**. 如果在 Windows Server 2012 中工作，请按 Windows 徽标键和 **r**。 键入 **dnsmgmnt.msc**，然后选择 **确定**。 在 DNS 管理器中，展开 **\<DNS server name\> \> "前向查找区域"。** 选择域。 现在已准备好创建 DNS 记录。
    
 ## <a name="add-mx-record"></a>添加 MX 记录
 <a name="BKMK_add_MX"> </a>
 
 添加 MX 记录，以便你的域的电子邮件发送到 Microsoft。
-- 您将添加的 MX 记录包括一 ("指向地址"值) 如下所示 \<MX token\> ：.mail.protection.outlook.com，其中 是 \<MX token\> 类似于 MSxxxxxxx 的值。 
-- 从 Microsoft"添加 DNS 记录Exchange Online"部分"MX"行中，复制"指向地址"下列出的值。 您将在此任务创建的记录中使用此值。 
-- 在域的"DNS 管理器"页面上，转到 **"操作**""邮件交换器 ( >  **MX) "。** 若要查找域的此页面，请参阅在基于 DNS Windows[查找 DNS 记录](#find-your-dns-records-in-windows-based-dns)。  
+- 您将添加的 MX 记录包括一 (指向地址值) 的值，如下所示 \<MX token\> ：.mail.protection.outlook.com，其中 是 \<MX token\> 类似于 MSxxxxxxx 的值。 
+- 从 Microsoft"添加 DNS Exchange Online"页的"地址"部分中的"MX"行中，复制"指向地址"下列出的值。 您将在此任务创建的记录中使用此值。 
+- 在域的"DNS 管理器"页面上，转到"**操作""** 邮件交换器 ( >  **MX) "。** 若要查找域的此页面，请参阅在基于 DNS Windows[查找 DNS 记录](#find-your-dns-records-in-windows-based-dns)。  
 - 在 **"新建资源记录** "对话框中，确保字段精确地设置为以下值： 
     - 主机名： 
     - @Address：粘贴你刚刚从 Microsoft 复制的"指向地址"值。  
@@ -136,20 +136,20 @@ To get started， you need to [find your DNS records in Windows based DNS](#find
 
 为 Skype for Business Online Web 会议添加 SIP SRV 记录。  <br/> 
 -  在域的"DNS 管理器"页上，转到"**操作** \> **""其他新记录"。** 
--   在"**资源记录类型"** 窗口中，选择 **"SRV** (服务) ，然后选择"**创建记录"。** 
+-   在"**资源记录类型"** 窗口中，选择 **"SRV** (位置) ，然后选择"**创建记录"。** 
 -   在 **"新建资源记录** "对话框中，确保字段精确地设置为以下值：  
     -  服务：_sip
     -  协议：_tls
     -  优先级： 100
     -  权重： 1
-    -  端口：443
+    -  端口： 443
     -  目标 (主机名) ：sipdir.online.lync.com
 -  选择“**确定**”。 
 
 
 为 Skype for Business Online 联盟添加 SIP SRV 记录。  
 -  在域的"DNS 管理器"页上，转到"**操作** \> **""其他新记录"。**  
--  在"**资源记录类型"** 窗口中，选择 **"SRV** (服务) ，然后选择"**创建记录"。** 
+-  在"**资源记录类型"** 窗口中，选择 **"SRV** (位置) ，然后选择"**创建记录"。** 
 -   在 **"新建资源记录** "对话框中，确保字段精确地设置为以下值：  
     -  服务：_sipfederationtls
     -  协议：_tcp
@@ -211,5 +211,5 @@ To get started， you need to [find your DNS records in Windows based DNS](#find
 ## <a name="related-content"></a>相关内容
 
 [将域从 Micrsoft 365](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) 转移到其他主机 (文章) \
-[从Microsoft 365域管理文章中](../misc/pilot-microsoft-365-from-my-custom-domain.md) (试用) \
+[从Microsoft 365域管理中](../misc/pilot-microsoft-365-from-my-custom-domain.md)试用 (文章) \
 [域常见问题](../setup/domains-faq.yml) （文章）

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 了解如何创建、编辑或删除应用管理策略，并保护 Android 或 iOS 设备上的工作文件。
-ms.openlocfilehash: f11782a4a2671f1a5e5dc467f181421817634880
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 716995861963480b2d9fbf019db1bd80cfa5cff4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933275"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165624"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>设置 Android 或 iOS 设备的应用保护设置
 
@@ -47,7 +47,7 @@ ms.locfileid: "59933275"
     
 4. 在 **"策略类型**"下，选择 **"Android** 应用程序管理"或" **适用于 iOS** 的应用程序管理"，具体取决于要创建的策略集。 
     
-5. 展开 **"在设备丢失或** 被盗时保护工作文件"和"管理用户Office **访问移动设备上的文件。** 配置您喜欢的设置。 **管理用户在移动设备上Office** 访问文件方式默认为"关闭"，但我们建议你将其打开并接受默认值。  有关详细信息，请参阅可用 [设置](#available-settings)。 
+5. Expand **Protect work files when devices are lost or stolen** and Manage how users access Office files on mobile **devices**. 配置您喜欢的设置。 **管理用户在移动设备上Office** 访问文件方式默认为"关闭"，但我们建议你将其打开并接受默认值。  有关详细信息，请参阅可用 [设置](#available-settings)。 
     
     始终可使用" **重置默认设置**"链接返回到默认设置。 
     
@@ -87,7 +87,7 @@ ms.locfileid: "59933275"
 |设置  <br/> |说明  <br/> |
 |:-----|:-----|
 |在以下天数后，从非活动的设备删除工作文件  <br/> |如果设备不用于你在此处指定的天数，则将自动删除设备上存储的任何工作文件。  <br/> |
-|强制要求用户将所有的工作文件保存到 OneDrive for Business  <br/> |如果此设置为 **"打开"，** 则工作文件的唯一可用保存OneDrive for Business。  <br/> |
+|强制要求用户将所有的工作文件保存到 OneDrive for Business  <br/> |如果此设置为 **"打开"，** 则工作文件的唯一可用保存位置OneDrive for Business。  <br/> |
 |对工作文件进行加密  <br/> |将此设置保持为" **打开**"，可通过加密保护工作文件。 即使设备丢失或被盗，也没有人可以读取你的公司数据。  <br/> |
    
 ### <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>用于控制用户如何在移动设备上访问 Office 文件的设置

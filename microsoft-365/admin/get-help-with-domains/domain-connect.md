@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: 了解如何使用启用了域连接，以及如何将域添加到Microsoft 365。
-ms.openlocfilehash: 035107654a8b66b2a6e36e5e049179259adcb976
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 6203292332d895d99131c4ab324fc342da9aaeed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775536"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164784"
 ---
 # <a name="using-domain-connect"></a>使用域连接
 
@@ -39,7 +39,7 @@ ms.locfileid: "59775536"
 > [!NOTE]
 > 在开始此设置向导前，请确保你已禁用浏览器中的任何弹出窗口阻止程序。
 
-## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>域连接注册机构与 Microsoft 365
+## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>与连接的域注册机构Microsoft 365
 
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
@@ -47,7 +47,7 @@ ms.locfileid: "59775536"
 - [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
-- SecureServer 或 WildWestDomains (使用 SecureServer DNS 托管客户端的 GoDaddy 经销商) 
+- SecureServer 或 WildWestDomains (SecureServer DNS 托管服务与 GoDaddy 经销商) 
   - [MadDog Web 托管](https://maddogwebhosting.com/domains/)
   - [CheapNames](https://www.cheapnames.com)
 

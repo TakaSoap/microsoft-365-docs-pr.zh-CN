@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b7a339c3083c69b926f46134061a263bdb5bfeba
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75194ec1c0d549ba5bb8727db31e182a381187f8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201517"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162634"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>按计算机和软件列出漏洞
 
@@ -54,7 +54,7 @@ ms.locfileid: "59201517"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Vulnerability.Read.All|"读取威胁和漏洞管理漏洞信息"
+Application|Vulnerability.Read.All|"读取威胁和漏洞管理漏洞信息"
 委派（工作或学校帐户）|Vulnerability.Read|"读取威胁和漏洞管理漏洞信息"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -75,7 +75,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 200 OK，并返回正文中的漏洞列表。
+如果成功，此方法在正文中返回 200 OK 和漏洞列表。
 
 ## <a name="example"></a>示例
 

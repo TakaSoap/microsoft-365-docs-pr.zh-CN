@@ -10,16 +10,16 @@ metadata:
   ms.prod: microsoft-365-business
   ms.collection: M365-subscription-management
   ms.custom: AdminSurgePortfolio
-  localization_priority: Normal
+  ms.localizationpriority: medium
   audience: microsoft-business 
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
   ms.date: 07/21/2020
-  ms.openlocfilehash: 3ae49578e98ed69a9fb240d2e323790247bd2f69
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 86b2628c56434071ea7176fbece168651c0c72b3
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59170370"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60161446"
 title: Microsoft 365 商业高级版常见问题
 summary: ''
 sections:
@@ -43,7 +43,7 @@ sections:
       **Enterprise级设备管理和安全性功能**：
 
 
-      - 通过 Microsoft Defender for Office 365 计划 1 和高级软件，帮助防范外部威胁，如网络钓鱼Microsoft Defender 攻击防护。
+      - 通过 Microsoft Defender for Office 365 计划 1 和 Microsoft Defender 攻击防护，帮助防范外部威胁（如网络钓鱼和复杂Microsoft Defender 攻击防护。
 
       - 利用数据丢失防护策略和 Azure 信息保护计划 1，帮助控制和管理访问和传输敏感信息的方式。
 
@@ -51,11 +51,11 @@ sections:
 
       - 通过 Intune 应用保护为 Office 和其他移动应用提供应用保护。
 
-      - 使用 Intune Windows 10管理管理适用于电脑、macOS 和移动设备的设备管理。
+      - 使用 Intune Windows 10管理用于电脑、macOS 和移动设备的设备管理。
 
       - 通过多重身份验证、自助式密码重置和条件访问实现身份保护。
 
-      - 跨设备保护公司数据的跨 &mdash; 设备的一致安全配置;Microsoft Defender 防病毒，始终为打开状态且为最新状态。
+      - 跨设备保护公司数据的跨 &mdash; 设备的一致安全配置;Microsoft Defender 防病毒，始终为最新状态。
 
 
       **简化了设备部署和用户设置**：
@@ -142,7 +142,7 @@ sections:
       - **适用于 iOS、Android & macOS** 的设备管理功能可帮助企业安全地管理各种设备生态系统，包括 iOS、Android、Windows 和 macOS 设备。
   - question: Microsoft 365 商业高级版如何帮助保护组织中的电脑免受恶意攻击？
     answer: >
-      使用安全Microsoft 365 商业高级版电脑受 Microsoft Defender 防病毒保护，这是"否"。 具备 Windows 10 中一流的防病毒功能，与任何其他解决方案相比，它可以保护更多计算机免受病毒、恶意软件、间谍软件和其他威胁。 通过Microsoft 365 商业高级版，组织可以确保Microsoft Defender 防病毒所有设备上运行最新的安全保护Windows 10更新。
+      使用安全Microsoft 365 商业高级版电脑受 Microsoft Defender 防病毒保护，这是"否"。 具备 Windows 10 中一流的防病毒功能，与任何其他解决方案相比，它可以保护更多计算机免受病毒、恶意软件、间谍软件和其他威胁。 通过Microsoft 365 商业高级版，组织可以确保Microsoft Defender 防病毒所有设备上运行最新的 Windows 10 保护。
 
 
       Windows 10 商业版还包括Microsoft Defender 攻击防护一组新的入侵防护功能。 它的其中一项功能是受控文件夹访问权限，通过锁定文件夹并阻止未经授权的应用访问用户的重要文件来停止勒索软件。
@@ -167,14 +167,14 @@ sections:
     answer: 现有 Microsoft 365 商业高级版试用版适用于 CSP。 稍后将针对直接客户提供试用版。
   - question: 在组织内运行 Microsoft 365 商业高级版之前，客户和合作伙伴应该了解哪些内容？
     answer: >
-      希望体验 Microsoft 365 商业高级版 的完整功能的客户必须在其现有Windows运行 Windows 7、8.1 或 10 Pro<sup>2。</sup> 现有的 Windows 10 专业版电脑应该运行创意者更新（如果还没有运行）。
+      想要体验 Microsoft 365 商业高级版 的完整功能的客户必须在其现有Windows运行 Windows 7、8.1 或 10 Pro<sup>2。</sup> 现有的 Windows 10 专业版电脑应该运行创意者更新（如果还没有运行）。
 - name: 部署
   questions:
   - question: 客户在规划 Microsoft 365 商业高级版部署时应该考虑什么？
     answer: >
       成功部署 Microsoft 365 商业高级版的最直接途径是与 Microsoft 合作伙伴交流。 他们参加过与各种客户方案相关的大量培训并有丰富的相关经验，最能够了解你的环境和需求。
   - question: Microsoft 365 商业高级版是否包括 Microsoft Intune 的全部功能？
-    answer: 是的，Microsoft 365 商业高级版订阅者获得使用适用于 iOS、Android、macOS 和其他跨平台设备管理的完整 Intune 功能的许可。 Microsoft 365 商业高级版 中简化的管理控制台中不可用的功能（如第三方应用管理、Wi-Fi 配置文件的配置和 VPN 证书）可以在完整的 Intune 控制台中进行管理。
+    answer: 是的，Microsoft 365 商业高级版订阅者已获得使用适用于 iOS、Android、macOS 和其他跨平台设备管理的完整 Intune 功能的许可。 Microsoft 365 商业高级版 中简化的管理控制台中不可用的功能（如第三方应用管理、Wi-Fi 配置文件的配置和 VPN 证书）可以在完整的 Intune 控制台中进行管理。
   - question: Azure Active Directory (Azure AD) 高级版 P1 是否Microsoft 365 商业高级版？
     answer: 是的，Azure AD Premium P1 Microsoft Business 高级版。
   - question: Microsoft 365 商业高级版是否允许客户管理 Mac？
@@ -185,13 +185,13 @@ sections:
 - name: 兼容性
   questions:
   - question: 能否将 Office 365 加载项添加到 Microsoft 365 商业高级版中？
-    answer: 所有可以添加到 Microsoft 365 商业标准版的加载项都可以添加到 Microsoft 365 商业高级版中。 这意味着你可以购买Office 365 云应用安全、高级合规性、威胁智能、MyAnalytics、Power BI Pro音频会议。
+    answer: 所有可以添加到 Microsoft 365 商业标准版的加载项都可以添加到 Microsoft 365 商业高级版中。 这意味着你可以购买Office 365 云应用安全、高级合规性、威胁智能、MyAnalytics、Power BI Pro和音频会议。
   - question: 能否将“电话系统”和“呼叫计划”添加到 Microsoft 365 商业高级版中？
     answer: >
-      可以，你可以购买商务语音订阅。 [商务语音](/microsoftteams/business-voice/whats-business-voice)是一种电话解决方案，专为中小型企业设计，最多包含 300 个用户，电话系统、音频会议、国内通话套餐等。 电话系统功能包括语音邮件、呼叫者 ID、呼叫助理、呼叫转发、自动助理和呼叫队列。 <br> 若要了解商务语音在你的国家/地区是否可用，请参阅商务语音的"国家[/地区可用性"。](/microsoftteams/business-voice/country-region-availability) 有关定价信息，请参阅[Pricing for Business Voice。](https://go.microsoft.com/fwlink/?linkid=2127221)
+      可以，你可以购买商务语音订阅。 [商务语音](/microsoftteams/business-voice/whats-business-voice)是一种电话解决方案，专为中小型企业设计，最多 300 个用户将 电话系统、音频会议、国内通话套餐等捆绑在一起。 电话系统功能包括语音邮件、呼叫者 ID、呼叫助理、呼叫转发、自动助理和呼叫队列。 <br> 若要了解商务语音在你的国家/地区是否可用，请参阅商务语音的"国家[/地区可用性"。](/microsoftteams/business-voice/country-region-availability) 有关定价信息，请参阅[Pricing for Business Voice。](https://go.microsoft.com/fwlink/?linkid=2127221)
   - question: 客户Microsoft 365 商业高级版使用 Microsoft Defender for Endpoint 吗？
     answer: >
-      是的，从 microsoft Defender for Endpoint 购买时，Microsoft 365 商业高级版加载项[Microsoft 云解决方案提供商。](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)
+      是的，从 microsoft Defender for Endpoint 购买时，Microsoft 365 商业高级版加载项作为加载项[Microsoft 云解决方案提供商。](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)
 - name: 合作伙伴机会
   questions:
   - question: 在哪里可以了解有关成为 Microsoft 合作伙伴所具有的机会和好处的详细信息？
@@ -228,7 +228,7 @@ sections:
     answer: Microsoft 365 商业高级版不会使其他非正版 Windows 成为正版。 Microsoft 365 商业高级版将提供升级权益，允许那些运行正版 Windows 7、8 或 8.1 专业版的客户升级到最新正版 Windows 10 专业版。
   - question: 什么是 GDPR，Microsoft 365 商业高级版如何帮助客户履行合规义务？
     answer: >
-      一般数据保护条例 (GDPR) 是一项全面的新隐私法，使欧盟 (EU) 居民能够更好地控制其“个人资料”，并要求组织保持个人资料的完整性。 对于控制或处理与欧盟居民相关的个人资料的组织，GDPR 要求其只使用符合 GDPR 的个人资料处理要求的第三方数据处理器。 2017 年 3 月，Microsoft 提供了合同规定的担保以提供这些保证。 如果客户对 Microsoft 如何帮助他们履行其他 GDPR 义务有疑问，应了解 Microsoft 365 商业高级版 (中提供的高级合规性和管理功能，例如 Azure 信息保护、数据丢失防护、Office 365 Defender for) 等 (例如 Microsoft 365 企业版 E5) 。 若要了解详细信息，请访问 [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr)。
+      一般数据保护条例 (GDPR) 是一项全面的新隐私法，使欧盟 (EU) 居民能够更好地控制其“个人资料”，并要求组织保持个人资料的完整性。 对于控制或处理与欧盟居民相关的个人资料的组织，GDPR 要求其只使用符合 GDPR 的个人资料处理要求的第三方数据处理器。 2017 年 3 月，Microsoft 提供了合同规定的担保以提供这些保证。 如果客户对 Microsoft 如何帮助他们履行其他 GDPR 义务有疑问，应了解 Microsoft 365 商业高级版 (中提供的高级合规性和管理功能，例如 Azure 信息保护、数据丢失防护、Office 365 Defender for) 和其他套件 (例如 Microsoft 365 企业版 E5) 。 若要了解详细信息，请访问 [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr)。
 additionalContent: >-
   ## <a name="footnotes"></a>脚注
 

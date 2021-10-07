@@ -2,15 +2,13 @@
 title: 设置 Microsoft Defender for Endpoint 部署
 description: 了解如何设置 Microsoft Defender for Endpoint 的部署
 keywords: 部署， 设置， 许可验证， 租户配置， 网络配置
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab7007143fd472757f8f6489cb14babc8cda1129
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 22b4e1c1609264a5eef17e2149b4b6e50d707999
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460168"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162562"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置 Microsoft Defender for Endpoint 部署
 
@@ -56,9 +54,9 @@ ms.locfileid: "59460168"
 
 ## <a name="check-license-state"></a>检查许可证状态
 
-可通过管理中心或管理门户检查许可证状态及其是否Microsoft Azure **设置**。
+可以通过管理中心或管理门户检查许可证状态及其是否Microsoft Azure **设置**。
 
-1. 若要查看许可证，请转到"Microsoft Azure门户"**并** 导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
    ![Azure 许可页面的图像。](images/atp-licensing-azure-portal.png)
 
@@ -72,7 +70,7 @@ ms.locfileid: "59460168"
 
 若要获取向公司预配哪些许可证的访问权限，并检查许可证的状态，请转到管理中心。
 
-1. 在合作伙伴 **门户中，** 选择"**管理服务> Office 365"。**
+1. 在合作伙伴 **门户中，** 选择"管理服务 **> Office 365"。**
 
 2. 单击"**合作伙伴门户**"链接将打开"代表管理员"选项，并授予你客户管理中心的访问权限。
 
@@ -163,7 +161,7 @@ Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 20
 
 ### <a name="proxy-service-urls"></a>代理服务 URL
 
-仅在具有版本 1803 Windows 10更高版本的设备时，才需要包含 v20 的 URL。 例如， `us-v20.events.data.microsoft.com` 仅在设备位于版本 1803 Windows 10版本时需要。
+仅在你拥有 11 Windows 10版本 1803 或 Windows 11 设备时，才需要包含 v20 的 URL。 例如， `us-v20.events.data.microsoft.com` 仅在设备位于版本 1803 或 Windows 10 11 Windows才需要。
 
 如果代理或防火墙阻止匿名流量，因为 Microsoft Defender for Endpoint 传感器从系统上下文连接，请确保允许列出的 URL 中的匿名流量。
 

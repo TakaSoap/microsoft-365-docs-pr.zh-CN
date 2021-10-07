@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -28,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 使用 Microsoft 365 管理员帐户登录，重置 Microsoft 365 商业版订阅中的用户密码。
-ms.openlocfilehash: 03081e4a0465206ae66cc8201411206932d15e8c
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: 84bb282f7b86036e2743d4af7998a4ce887e5b11
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011198"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157214"
 ---
 # <a name="reset-passwords"></a>重置密码
 
@@ -72,7 +72,7 @@ ms.locfileid: "60011198"
 
 ## <a name="reset-my-admin-password"></a>重置我的管理员密码
 
-如果忘记了密码，但能够登录密码，请使用Microsoft 365，例如，密码保存在浏览器中：
+如果你忘记了密码，但能够登录密码，Microsoft 365，例如，密码保存在浏览器中：
 
 1. Select your name (icon) in upper right corner > **My Account**  >  **Personal Info**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "60011198"
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同时重置组织中每个人的所有业务密码
 <a name="bkmk_forgot"> </a>
 
-这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分"批量重置密码 (一次最多 40 个用户重置) 。
+这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分，其中"批量重置密码" (一次最多重置 40) 。
   
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 

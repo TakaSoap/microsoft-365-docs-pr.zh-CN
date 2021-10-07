@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 市场活动的分步Microsoft 365注册。 保护你的市场活动免受电子邮件、数据和通信的网络安全威胁。
-ms.openlocfilehash: deaf91850ae5dbd3ed2a4637e0eb157d29215992
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7ef49e686a152cd4bc56d39e7edff107dfbb2ea7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170236"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156878"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>注册Microsoft 365活动 
 
@@ -46,9 +46,9 @@ ms.locfileid: "59170236"
 
 ## <a name="steps-to-sign-up"></a>注册步骤
 
-1. 在邀请你为Microsoft 365电子邮件时，选择 **注册你的组织>。** 此操作将Microsoft 365注册。
+1. In your invitation to Microsoft 365 for Campaigns email， select **ENROLL YOUR ORGANIZATION >**. 此操作将Microsoft 365注册。
     > [!NOTE]
-    > 如果你已有 Microsoft 365 商业版订阅，并且你想要将 Microsoft 365 for Campaigns 优惠添加到它，请转到将Microsoft 365市场活动的 Microsoft 365 添加到[现有订阅](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)。
+    > 如果你已有适用于Microsoft 365订阅，并且想要将 Microsoft 365 for Campaigns 优惠添加到它，请转到将Microsoft 365市场活动的订阅添加到[现有订阅](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)。
 1. **在"Microsoft 365商业版"页上**，输入你的业务详细信息。 对于 **企业电子邮件地址**，请使用当前电子邮件地址。 我们只需要此地址，在设置过程中就与你们保持联系。 选择“**下一步**”。
 1. **在"创建用户 ID"页上**：
     1. 在 **"** 用户名"中，输入电子邮件地址的名称或别名。 例如，你可能只希望称为 Alice 或 Rob。 在较大的宣传活动中，AliceC 或 AliceChavez 可能更有意义。
@@ -59,7 +59,7 @@ ms.locfileid: "59170236"
     > 如果你的市场活动或派对没有域，并且你已决定需要哪一个域，你现在可以通过选择它来购买一个域。
 
 4. **证明。你已。不是。机器人。页面**：
-    1. 准备好手机，然后选择"为我发送 **("** 或"如果愿意，) "。 然后输入你的电话号码。 
+    1. 准备好手机， **然后选择"为我** 发送 **("** 或"如果愿意，) 。" 然后输入你的电话号码。 
     2. When you select **Text me**， we'll send you a verification code. 或者，如果您选择"呼叫我"，我们将通过代码 **呼叫你**。
     3. Enter the code from your text message (or call) and select **Next**. 预计稍等一会。 
 5. **你将在哪里使用此页**：输入活动的主要工作位置详细信息和电话号码。 选择“**下一步**”。
@@ -74,15 +74,15 @@ ms.locfileid: "59170236"
 
 ## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>将市场活动Microsoft 365添加到现有订阅的步骤
 
-如果你已拥有适用于Microsoft 365（例如 Microsoft 365 商业标准版）的现有订阅，可以使用 Microsoft 365 for Campaigns 产品/服务向它添加许可证。
+如果你已有和现有的商业Microsoft 365订阅，例如Microsoft 365 商业标准版，可以使用 Microsoft 365 for Campaigns 产品/服务向它添加许可证。
 > [!IMPORTANT]
-> 你不能将Microsoft 365市场活动产品/服务添加到现有Microsoft 365帐户。
+> 你无法将Microsoft 365市场活动产品/服务添加到现有Microsoft 365帐户。
 
-1. 在邀请你为Microsoft 365电子邮件时，选择 **注册你的组织>。** 此操作将Microsoft 365注册。
+1. In your invitation to Microsoft 365 for Campaigns email， select **ENROLL YOUR ORGANIZATION >**. 此操作将Microsoft 365注册。
 2. 在 **"欢迎，让我们了解你** "页面上，单击或点击" **想要将其添加到现有订阅？"登录**。
     
     ![选择右上角的"登录"。](../media/addtoexisting.png)
-3. 在登录页面上，输入现有订阅的管理员别名，例如 Alice@VoteContoso *<span></span> .org，* 选择"下一步"，输入密码，然后选择"**登录"。** 
+3. 在登录页面上，输入现有订阅的管理员别名，例如 Alice@VoteContoso *<span></span> .org，* 选择"下一步"，输入密码，然后选择"**登录"。**
 4. On the **How does this look？** enter the number of users you have and choose **Next**. 你不必在此处输入促销代码，因为它已包含在邀请 URL 中。
 5. 在" **想要如何支付？"页面上** ，输入付款方式，然后选择下 **订单**。
 

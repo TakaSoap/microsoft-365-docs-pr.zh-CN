@@ -2,15 +2,13 @@
 title: iOS 上的 Microsoft Defender for Endpoint 的新增功能
 description: 了解 iOS 上早期版本的 Microsoft Defender for Endpoint 的主要更改。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 安装， macos， whatsnew
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: sunasing
 author: sunasing
-localization_priority: normal
+ms.localizationpriority: medium
 manager: sunasing
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 5616a2b4aecede00ca11a56d37bc7d074d260627
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: e6352992d0aeed9df7e64f331a4936ae4b29c223
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491165"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162610"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -37,7 +35,7 @@ ms.locfileid: "59491165"
 
 ## <a name="1120240103"></a>1.1.20240103
 - 设备运行状况卡 - 设备运行状况卡向最终用户通知任何挂起的软件更新。
-- 可用性增强功能 - 最终用户现在可以从 MSDefender 应用本身禁用 Defender for Endpoint VPN。 在此更新之前，最终用户只能从应用或应用设置 VPN。
+- 可用性增强功能 - 最终用户现在可以从 MSDefender 应用本身禁用 Defender for Endpoint VPN。 在此更新之前，最终用户必须仅从 设置禁用 VPN。
 - Bug 修复。
 
 ## <a name="1120020101"></a>1.1.20020101
@@ -53,7 +51,7 @@ ms.locfileid: "59491165"
 ## <a name="1115140101"></a>1.1.15140101
 
 - **越狱检测** 为预览版。 有关详细信息，请参阅基于 [设备风险信号设置条件访问策略](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)。
-- **对于通过** Intune 应用程序注册的设备，VPN 配置文件的自动设置Microsoft Endpoint Manager (预览) 。 有关详细信息，请参阅为已注册的 [iOS 设备自动设置 VPN 配置文件](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
+- **对于通过** Intune 应用程序注册的设备，VPN 配置文件的Microsoft Endpoint Manager (预览) 。 有关详细信息，请参阅为已注册的 [iOS 设备自动设置 VPN 配置文件](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
 - Microsoft Defender ATP 产品名称现已更新到应用商店中的 Microsoft Defender for Endpoint。
 - 改进了登录体验。
 - Bug 修复。

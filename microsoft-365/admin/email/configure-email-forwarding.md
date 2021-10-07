@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -22,20 +23,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
-description: 通过电子邮件转发，你可以将发送到 Microsoft 365 用户邮箱的电子邮件转发到组织内部或外部的另一个邮箱。
-ms.openlocfilehash: 6703e37c1f576a5f3b0671def764deafa7e2daa2
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: 电子邮件转发允许您将发送到用户邮箱Microsoft 365电子邮件转发到组织内部或外部的另一个邮箱。
+ms.openlocfilehash: 442213151f38ee834b663b4d77411680c1350b5c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774684"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165072"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>配置电子邮件转发Microsoft 365
 
 作为组织的管理员，您可能有公司要求为用户邮箱设置电子邮件转发。 通过电子邮件转发，你可以将发送到用户邮箱的电子邮件转发到组织内部或外部的其他用户邮箱。
 
 > [!IMPORTANT]
-> 您可以使用出站垃圾邮件筛选器策略来控制自动转发给外部收件人。 有关详细信息，请参阅在电子邮件中[控制自动外部](/microsoft-365/security/office-365-security/external-email-forwarding#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls)Microsoft 365。
+> 您可以使用出站垃圾邮件筛选器策略来控制自动转发给外部收件人。 有关详细信息，请参阅在邮件中[控制自动外部电子邮件Microsoft 365。](/microsoft-365/security/office-365-security/external-email-forwarding#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls)
 
 ## <a name="configure-email-forwarding"></a>配置电子邮件转发
 
@@ -47,7 +48,7 @@ ms.locfileid: "59774684"
 
 - 电子邮件转发要求 from  *帐户*  具有许可证。 如果由于用户已离开组织而设置电子邮件转发，另一个选项是将其邮箱 [转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)。 这样一来，多个人员就可以访问它。 但是，共享邮箱不能超过 50GB。
 
-您必须是 Exchange管理员或全局管理员Microsoft 365才能执行这些步骤。 有关详细信息，请参阅关于 [管理员角色的主题](../add-users/about-admin-roles.md)。
+您必须是全局Exchange管理员或全局Microsoft 365才能执行这些步骤。 有关详细信息，请参阅关于 [管理员角色的主题](../add-users/about-admin-roles.md)。
 
 ::: moniker range="o365-worldwide"
 
@@ -61,7 +62,7 @@ ms.locfileid: "59774684"
 
     **若要转发到多个电子邮件地址**，可以要求用户在邮箱中设置Outlook转发到地址。 
     
-    1.  打开 **Outlook** > **主页** > **规则**>选择 **"管理&通知"**  
+    1.  打开 **Outlook** > **主页** > **规则**>选择 **"管理规则&通知"**  
     1. 选择 **"新建** > **规则" 选择"** 在列表底部附近收到的邮件上应用规则"，然后单击"下一步 **"。**
     1. 当 **系统** 询问"是"时，单击"是"：此规则将应用于你收到的每封邮件。 
     1. On the next list select the actions **redirect it to people or public group** and stop processing more **rules**

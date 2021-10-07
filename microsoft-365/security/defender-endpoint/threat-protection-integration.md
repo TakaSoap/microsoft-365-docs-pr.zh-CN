@@ -10,18 +10,18 @@ search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8f842c46f87e51d026f1e1793e3cc73d25b0739c
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: ff3fa21735649b0c90bd2f9d07aa2c3307024f5a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400638"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162502"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender for Endpoint 和其他 Microsoft 解决方案
 
@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint 连接器允许你将来自 Microsoft Defender f
 
 Microsoft Defender for Endpoint 的动态设备风险评分已集成到条件访问评估中，确保只有安全设备有权访问资源。
 
-### <a name="microsoft-cloud-app-security"></a>Microsoft 云应用安全
+### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 Microsoft Cloud App Security Microsoft Defender for Endpoint 信号，以允许直接查看云应用程序使用情况，包括从所有 Microsoft Defender for Endpoint 受监视设备使用不受支持的云服务 (卷影 IT) 。
 
@@ -64,7 +64,7 @@ Microsoft Cloud App Security Microsoft Defender for Endpoint 信号，以允许�
 
 ### <a name="microsoft-defender-for-office"></a>Microsoft Defender for Office
 
-[Defender for Office 365](/office365/securitycompliance/office-365-atp)通过 保险箱 链接、保险箱 附件、高级防钓鱼和欺骗智能功能帮助保护组织免受电子邮件或文件中恶意软件的攻击。 Microsoft Defender for Office 365 和 Microsoft Defender for Endpoint 之间的集成使安全分析师能够前往上游调查攻击的入口点。 通过威胁情报共享，可以包含和阻止攻击。
+[Defender for Office 365](/office365/securitycompliance/office-365-atp)通过 保险箱 链接、保险箱 附件、高级防钓鱼和欺骗智能功能帮助保护你的组织免受电子邮件或文件中恶意软件的攻击。 Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 之间的集成使安全分析师能够前往上游调查攻击的入口点。 通过威胁情报共享，可以包含和阻止攻击。
 
 > [!NOTE]
 > Defender for Office 365最近 30 天内的事件显示数据。 对于警报，defender for Office 365基于第一次活动时间显示数据。 此后，数据将不再在 Defender for Office 365。

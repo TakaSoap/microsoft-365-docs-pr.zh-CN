@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: '了解如何使用 PowerShell 为组织中所有用户或特定用户启用或禁用待筛选Exchange功能。 '
-ms.openlocfilehash: 055e02cd9a53dfcb8dd5bc3d3b7b601e3efe53ad
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 5037e7cb6518ca90f3d12c183fcff3c838c29907
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774672"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165080"
 ---
 # <a name="configure-clutter-for-your-organization"></a>为组织配置待筛选邮件
 
@@ -35,7 +36,7 @@ ms.locfileid: "59774672"
   
 作为管理员，您可能必须管理待筛选邮件功能Microsoft 365。 若要为组织的用户打开/关闭待筛选邮件功能，必须使用 Exchange PowerShell。  (个人可以使用以下说明将其打开/关闭：关闭/打开待筛选邮件[Outlook。](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
   
-请参阅将[PowerShell](/powershell/exchange/exchange-online-powershell)与 Exchange Online 一连接 Exchange Online [PowerShell，](/powershell/exchange/connect-to-exchange-online-powershell)详细了解如何Exchange PowerShell。 您需要具有至少具有 Exchange 服务管理员角色且能够使用 PowerShell 连接到 Exchange Online 的帐户。 
+请参阅将[PowerShell](/powershell/exchange/exchange-online-powershell)与 Exchange Online 一连接 Exchange Online [PowerShell，](/powershell/exchange/connect-to-exchange-online-powershell)详细了解如何Exchange PowerShell。 您需要具有至少具有 Exchange 服务管理员角色且能够使用 PowerShell Exchange Online帐户。 
   
 ## <a name="turn-clutter-on-using-exchange-powershell"></a>使用 PowerShell 启用待筛选Exchange功能
 
@@ -56,10 +57,10 @@ ms.locfileid: "59774672"
 
 如果使用 PowerShell 批量创建用户，则需要针对每个用户的邮箱运行 [Set-Clutter](/powershell/module/exchange/set-clutter) 以管理待筛选邮件。 
   
-## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>何时向用户显示待筛选邮件打开/关闭Outlook 网页版？
+## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>何时对用户显示待筛选邮件打开/关闭Outlook 网页版？
 <a name="bkmk_onoff"> </a>
 
-作为管理员，您可以使用 PowerShell 重新启用待筛选邮件Exchange功能。 完成此操作后，重点收件箱将关闭，待筛选邮件功能将再次处于活动状态。 
+作为管理员，您可以使用 PowerShell 重新启用待筛选Exchange功能。 完成此操作后，重点收件箱将关闭，待筛选邮件功能将再次处于活动状态。 
   
  **如果你将 Outlook 网页版订阅Microsoft 365 商业高级版：**
   
@@ -73,7 +74,7 @@ ms.locfileid: "59774672"
     
 - 如果"待筛选邮件"或"重点收件箱"均未启用： 
     
-  - 待筛选邮件和重点收件箱都显示为用户的邮件服务中的设置
+  - 待筛选邮件和重点收件箱均显示为用户邮件邮箱中的设置
     
  **如果你使用的是 Outlook.com：**
   
@@ -87,7 +88,7 @@ ms.locfileid: "59774672"
     
 - 如果"待筛选邮件"或"重点收件箱"均未启用： 
     
-  - 待筛选邮件和重点收件箱都显示为用户的邮件服务中的设置
+  - 待筛选邮件和重点收件箱均显示为用户邮件邮箱中的设置
     
 - 如果用户在过去某一时间点启用重点收件箱：
     
@@ -99,6 +100,6 @@ ms.locfileid: "59774672"
     
 ## <a name="related-content"></a>相关内容
 
-[使用待筛选邮件对邮件中的](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)低优先级Outlook (，) \
-[使用待筛选邮件对 OWA 中的](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce) 低优先级邮件进行排序 (文章) \
+[使用待筛选邮件对邮件中的低优先级Outlook (](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)文章) \
+[使用待筛选邮件对 OWA 邮件](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce) 中的低优先级邮件进行排序 (文章) \
 [关闭待筛选邮件Outlook (](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)文章) 

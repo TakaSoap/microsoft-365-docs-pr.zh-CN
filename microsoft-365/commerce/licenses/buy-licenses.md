@@ -9,7 +9,7 @@ ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_o365
@@ -22,25 +22,25 @@ ms.custom:
 search.appverid: MET150
 description: 使用以下步骤购买更多许可证或减少企业版订阅Microsoft 365许可证数量。
 ms.date: 09/16/2021
-ms.openlocfilehash: 77c1547b279cc5367ef23106e15dc2eee0c5a471
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 6cdcad3c37db8475bcb64fa7a33e287f502dcd66
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480744"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163644"
 ---
 # <a name="buy-or-remove-licenses"></a>购买或删除许可证
 
 可以通过以下步骤购买更多许可证或减少订阅的许可证数量。
 
 > [!NOTE]
-> 对于一些订阅，只能在购买或续订订阅后的有限时段取消。 如果取消时段已过，请关闭定期计费以在订阅期限结束时取消订阅。
+> 对于某些订阅，只能在购买或续订订阅后的有限时间段内取消。 如果取消时段已过，请在订阅期限结束时关闭定期计费以取消订阅。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 你必须是全局管理员或帐单管理员才能执行本文中所述的任务。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 - 可以 [同时添加用户和分配许可证](../../admin/add-users/add-users.md)。
-- 如果你通过第三Microsoft 365购买了企业版或Office 365 企业版计划，则必须通过该合作伙伴购买其他许可证。
+- 如果你通过第三Microsoft 365购买了Office 365 企业版商业版或商业版计划，则必须通过该合作伙伴购买其他许可证。
 
 ## <a name="watch-buy-new-licenses"></a>观看：购买新许可证
 
@@ -78,7 +78,7 @@ ms.locfileid: "59480744"
 
 4. 若要购买或删除许可证，请在"许可证总数"框中 **的"** 新数量"下，输入要用于此订阅的许可证总数。 例如，如果你有 100 个许可证，并且想要再添加 5 个，请输入 105。 如果要删除其中五个，请输入 95。
 
-5. 选择 **“保存”**。
+5. 选择“**保存**”。
 
 > [!NOTE]
 > 如果当前所有许可证都分配给用户，则不能减少订阅的许可证数量。 若要减少许可证数量，首先取消 [分配](../../admin/manage/remove-licenses-from-users.md)用户的一个或多个许可证，然后从订阅中删除许可证。
@@ -91,7 +91,7 @@ ms.locfileid: "59480744"
 |---------|---------|---------|
 |正在等待信用检查。 |如果正在等待信用检查，在信用检查完成之前，你无法购买或删除许可证。  | 稍后再回来查看是否已完成信用检查。 信用检查通常需要两个工作日才能完成。<br/>完成信用检查后，你应该会看到"购买许可证" **和** " **删除许可证"** 按钮。 |
 |你使用产品密钥激活了订阅。| 如果订阅是使用 25 个字符的产品密钥购买并激活的，你将在"你的产品"页面的"购买频道"列中看到"预 **付费"** 一词。  |请参阅 [使用产品密钥向付费订阅添加许可证](add-licenses-using-product-key.md)。 |
-|你通过经销商购买了订阅。| 你将在"你的产品"页面的"购买 **渠道** "列中 **看到"经销商"** 一词。 | 如果订阅是通过云解决方案提供商云解决方案提供商 (云解决方案) 购买，请与云解决方案提供商合作伙伴联系，以购买更多许可证。        |
+|你通过经销商购买了订阅。| 你将在"你的产品"页面的"购买 **渠道** "列中 **看到"经销商"** 一词。 | 如果订阅是通过云解决方案提供商云解决方案提供商 (云解决方案) 购买，请联系你的云解决方案提供商合作伙伴以购买更多许可证。        |
 |你有试用版订阅。 | 若要查看试用版订阅，请选择筛选器按钮，**然后选择试用版。** | 首先购买试用版订阅，然后可以购买更多许可证。|
 
 ## <a name="when-will-the-new-licenses-be-available-to-assign"></a>何时可以分配新许可证？
@@ -115,4 +115,4 @@ ms.locfileid: "59480744"
 
 [向用户分配许可证](../../admin/manage/assign-licenses-to-users.md)
 [了解订阅和许可证](subscriptions-and-licenses.md)（文章）\
-[尝试或购买Microsoft 365订阅 (](../try-or-buy-microsoft-365.md)文章) 
+[试用或购买Microsoft 365订阅 (](../try-or-buy-microsoft-365.md)文章) 

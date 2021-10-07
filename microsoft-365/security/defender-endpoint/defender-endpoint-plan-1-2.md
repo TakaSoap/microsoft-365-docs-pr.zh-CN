@@ -1,5 +1,5 @@
 ---
-title: 比较 Microsoft Defender for Endpoint Plan 1 (preview) 计划 2
+title: 比较 Microsoft Defender for Endpoint Plan 1 (preview) Plan 2
 description: 将 Defender for Endpoint Plan 1 与 Plan 2 进行比较。 了解计划之间的差异，并选择适合组织需求的计划。
 keywords: 适用于终结点的 Defender， 高级威胁防护， 终结点保护
 search.appverid: MET150
@@ -11,16 +11,16 @@ ms.topic: overview
 ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mdep1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c5be94c73e99cdb67c9db3a1b067c9723a4e2945
-ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
+ms.openlocfilehash: b6c0b77cfc83b9d5ebcc0f3d437a992b14eced48
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60069073"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163068"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-preview-and-plan-2"></a>Microsoft Defender for Endpoint Plan 1 (preview) Plan 2
 
@@ -36,7 +36,7 @@ Microsoft Defender for Endpoint 是企业终结点安全平台，旨在帮助企
 | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) <br/> (预览)  | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) <br/> (现在)  |
 |:---|:---|
 | [下一代保护](defender-endpoint-plan-1.md#next-generation-protection) <br/> (包括反恶意软件和防病毒)  <p> [减少攻击面](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [手动响应操作](defender-endpoint-plan-1.md#manual-response-actions) <p> [集中管理](defender-endpoint-plan-1.md#centralized-management) <p>[安全报告](defender-endpoint-plan-1.md#reporting) <p>[API](defender-endpoint-plan-1.md#apis)  | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)， plus： <p> [设备发现](device-discovery.md) <p> [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md) <p> [自动调查和响应](automated-investigations.md) <p> [高级搜寻](advanced-hunting-overview.md) <p> [终结点检测和响应](overview-endpoint-detection-response.md) <p> [Microsoft 威胁专家](microsoft-threat-experts.md)  |
-| [支持 Windows 10、iOS、Android OS 和 macOS 设备](defender-endpoint-plan-1.md#cross-platform-support) | 支持Windows (客户端和服务器) 和非Windows平台<br/>  (macOS、iOS、Android 和 Linux)  |
+| [支持 Windows 10、iOS、Android OS 和 macOS 设备](defender-endpoint-plan-1.md#cross-platform-support) | 支持Windows (客户端和服务器) 非Windows平台<br/>  (macOS、iOS、Android 和 Linux)  |
 | 若要尝试 Defender for Endpoint Plan 1，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 。 | 若要尝试 Defender for Endpoint Plan 2，请访问 [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial) 。 |
 
 > [!IMPORTANT]
@@ -44,6 +44,6 @@ Microsoft Defender for Endpoint 是企业终结点安全平台，旨在帮助企
 
 ## <a name="next-steps"></a>后续步骤
 
-- [大致了解适用于 Endpoint Plan 1 (预览版) ](defender-endpoint-plan-1.md)
+- [获取适用于 Endpoint Plan 1 的 Microsoft Defender (预览版) ](defender-endpoint-plan-1.md)
 - [为终结点计划 1 设置和配置 Defender (预览) ](mde-p1-setup-configuration.md)
-- [开始使用 Defender for Endpoint Plan 1 (preview) ](mde-plan1-getting-started.md)
+- [开始使用 Defender for Endpoint Plan 1 (预览) ](mde-plan1-getting-started.md)

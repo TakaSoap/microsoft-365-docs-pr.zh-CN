@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
 description: 了解如何删除或还原用户的帐户Microsoft 365帐户。
-ms.openlocfilehash: 78566f9e16d7bd10540fdbbf7fcee1691b30c4b6e5e1c6d0ebafafde9e9f957a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 991e9dd21b35aad54bd35532dfad114d977107f3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824163"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164316"
 ---
 # <a name="quick-help-deleted-user"></a>快速帮助：已删除的用户
 
@@ -36,30 +36,30 @@ ms.locfileid: "53824163"
   
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 2. 选择一个用户，然后在用户列表上方选择三个点 (执行更多) ，然后选择"删除 **用户"。**
   
-3. 在删除确认窗格中，选择"**删除用户"。** <br/>[阅读完整文章。](../add-users/delete-a-user.md)
+3. 在删除确认窗格中，选择"删除 **用户"。** <br/>[阅读完整文章。](../add-users/delete-a-user.md)
 
   
 ## <a name="restore-a-user"></a>还原用户
 
-您可以通过在主页上搜索已删除的用户，在结果中选择"已删除用户"，或者从左侧导航导航到"已删除用户"页面并选择要还原的用户来还原用户。  [阅读完整文章](../add-users/delete-a-user.md)。
+您可以通过在主页上搜索已删除的用户，在结果中选择"已删除的用户"，或者从左侧导航栏中进入"已删除用户"页面并选择要还原的用户来还原用户。  [阅读完整文章](../add-users/delete-a-user.md)。
   
 ## <a name="what-are-deleted-users"></a>什么是已删除的用户？
 
@@ -83,4 +83,4 @@ ms.locfileid: "53824163"
   
 ## <a name="how-do-i-restore-a-user"></a>如何还原用户？
 
-您可以通过在主页上搜索已删除的用户，在结果中选择"已删除用户"，或者从左侧导航导航到"已删除用户"页面并选择要还原的用户来还原用户。  [阅读完整文章](../add-users/delete-a-user.md)。
+您可以通过在主页上搜索已删除的用户，在结果中选择"已删除的用户"，或者从左侧导航栏中进入"已删除用户"页面并选择要还原的用户来还原用户。  [阅读完整文章](../add-users/delete-a-user.md)。

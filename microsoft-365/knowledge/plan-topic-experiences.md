@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: medium
+ms.localizationpriority: medium
 description: 了解如何规划主题Microsoft Viva主题。
-ms.openlocfilehash: c237717d50dfda5b89f7b12b1222e59ed5bc16d4
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: dd7b56342a3881c25be65a62028d024aa55c35ce
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126982"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163188"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>规划Microsoft Viva主题
 
@@ -100,7 +100,7 @@ Site name,URL
 
 *主题查看器*
 
-主题查看者可以在搜索结果和主题页等内容中突出显示主题时查看SharePoint的信息。 只有在用户有权访问发现主题的文件和页面时，他们才能看到已发现的主题。
+主题查看者可以在搜索结果和主题页面等内容中突出显示主题SharePoint信息。 只有在用户有权访问发现主题的文件和页面时，他们才能看到已发现的主题。
 
 设置主题查看器时，可以选择：
 
@@ -114,15 +114,15 @@ Site name,URL
 
 作为管理员，你可以从主题体验中排除某些主题。 如果希望使敏感数据不显示在主题中，这将非常有用。 虽然知识管理员可以排除主题中心中的主题，但管理员排除的主题甚至对知识管理员不可见。  (管理员还可以在发现之后删除主题中心中) 
 
-如果要排除管理员级别的主题，则必须将它们添加到.csv文件并上载该文件。 可以在安装过程中或以后执行这些操作。
+如果要排除管理员级别的主题，则必须将它们添加到一个.csv文件并上载该文件。 可以在安装过程中或以后执行这些操作。
 
-the .csv file must contain the following parameters：
+.csv文件必须包含以下参数：
 
 - **名称**：键入要排除的主题的名称。 可以通过两种方式来执行此操作：
 - **MatchType-Exact/Partial**：键入您输入 *的名称是精确* 匹配类型还是 *部分* 匹配类型。
-    - 完全匹配：可以包括确切的名称或缩写 (例如 *Contoso* 或 *ATL*) 。
+    - 完全匹配：可以包含确切的名称或缩写 (，例如 *Contoso* 或 *ATL*) 。
     - 部分匹配：可以排除其中包含特定单词的所有主题。  例如 *，arc 将* 排除包含单词 *arc* 的所有主题，如弧 *形圆*、*弧* 形圆或 *培训弧*。请注意，它将不会排除将文本作为单词的一部分包含的主题，例如体系结构 *。*
-- **代表 (** 可选) ： (也称为扩展 *)* 如果要排除首字母缩写词，请键入首字母缩写词代表的单词。
+- **代表 (可选**) ： (也称为 *扩展) 如果要* 排除首字母缩写词，请键入首字母缩写词代表的单词。
 
     ![排除 CSV 模板中的主题。](../media/exclude-topics-csv.png) 
 

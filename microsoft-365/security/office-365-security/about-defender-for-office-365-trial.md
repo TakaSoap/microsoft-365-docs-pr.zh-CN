@@ -8,7 +8,7 @@ audience: Admin
 ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdo
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理员可以了解 Microsoft Defender for Office 365
-ms.openlocfilehash: 21cff6ecd695ef95173149eed211b40989fa47ce
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: a7e8efc38722b3dc6342255a0193634f307eec27
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402102"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162178"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>关于 Microsoft Defender for Office 365试用版
 
@@ -35,7 +35,7 @@ Microsoft Defender for Office 365保护你的组织免受电子邮件、链接�
 - **威胁调查和响应功能**：使用前沿工具调查、理解、模拟和阻止威胁。
 - **自动化调查和响应功能**：节省时间和精力来调查和缓解威胁。
 
-Microsoft Defender for Office 365 试用版是试用 Defender for Office 365 功能的最简单方法，设置它只需单击几下。 完成试用设置后，组织的所有 Defender for Office 365 计划 1 和计划 2 功能可在最多 90 天内使用。 以下列表描述了这些高级功能：
+Microsoft Defender for Office 365 试用版是试用 Defender for Office 365 功能的最简单方法，设置它只需单击几下。 完成试用设置后，组织中所有适用于 Office 365 计划 1 和计划 2 的 Defender 功能可在最多 90 天内使用。 以下列表描述了这些高级功能：
 
 <br>
 
@@ -47,20 +47,20 @@ Microsoft Defender for Office 365 试用版是试用 Defender for Office 365 功
 |[安全附件](safe-attachments.md)|在受控的爆炸环境中检查电子邮件附件和其他文件，以捕获新的和具有威胁性的恶意软件。|
 |[安全链接](safe-links.md)|执行单击时间检查，以确保可能已经通过初始检查的 URL 尚未被武器化。|
 |[威胁跟踪器](threat-trackers.md)<sup>\*</sup>|使用信息小组件和视图来确定可能会影响组织的网络安全问题。|
-|[威胁资源管理器](threat-explorer.md)<sup>\*</sup>|使用有关电子邮件中威胁的Office 365信息进行搜寻。|
+|[威胁资源管理器](threat-explorer.md)<sup>\*</sup>|使用有关电子邮件中威胁的近实时信息Office 365。|
 |[AIR (自动调查和) ](office-365-air.md)<sup>\*</sup>|触发警报时自动查找和修正威胁对象。|
 |[攻击模拟培训](attack-simulation-training.md)<sup>\*</sup>|培训用户识别网络钓鱼攻击并做出相应的响应。|
 |[市场活动视图](campaigns.md)<sup>\*</sup>|调查和响应大规模的恶意电子邮件活动。|
 |[使用 Defender for Office 365功能的报告](view-reports-for-mdo.md)|查看报告，包括威胁防护状态、URL 威胁防护、邮件延迟等。|
 
-<sup>\*</sup>Defender for Office 365 2 计划功能，作为试用版的一部分提供。
+<sup>\*</sup>适用于 Office 365 2 计划的 Defender 功能，作为试用版的一部分提供。
 
 > [!NOTE]
 > 本文中介绍的自动配置目前处于公共预览版中，可能在你的组织中不可用。
 
 ## <a name="terms-and-conditions"></a>条款和条件
 
-Defender for Office 365 试用版的可用时间为 90 天，可以针对所有用户启动。 有关详细信息，请参阅[Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md)。
+Defender for Office 365试用版的可用时间为 90 天，可以针对所有用户启动。 有关详细信息，请参阅[Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md)。
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>设置 Defender for Office 365 试用版
 
@@ -68,29 +68,29 @@ Defender for Office 365 试用版的可用时间为 90 天，可以针对所有�
 
 默认情况下，这些策略的范围为组织中所有用户，但管理员可以在设置期间或之后自定义策略，以便它们仅适用于特定用户。
 
-在设置过程中，Office 365 Defender (P2 的 Defender Office 365 或等效) 也会为整个组织设置。 无需策略范围。
+在设置过程中，Office 365 Defender (在 Defender for Office 365 P2 或等效) 中为整个组织设置响应功能。 无需策略范围。
 
-## <a name="licensing"></a>许可
+## <a name="licensing"></a>授权
 
 作为试用设置的一部分，Office 365 Defender 许可证将自动应用于组织。 许可证在前 90 天内免费。
 
 ## <a name="permissions"></a>权限
 
-若要开始或结束试用版，你需要是 Azure Active Directory 中的全局管理员或安全管理员角色的成员。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+若要开始或结束试用版，你需要是 Azure Active Directory 中的全局管理员或安全管理员角色的成员。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="additional-information"></a>其他信息
 
-注册试用版后，可能需要 2 小时才能提供更改和更新。 管理员必须注销并重新登录才能查看更改。
+注册试用版后，更改和更新最多可能需要 2 小时才会可用。 管理员必须注销并重新登录才能查看更改。
 
-管理员可通过访问"试用"卡片随时禁用 <> 。
+管理员可通过访问"试用"卡片随时 <> 试用版。
 
 ## <a name="availability"></a>可用性
 
-Defender for Office 365 试用版将逐步向满足特定条件 (包括地理位置) 且其订阅中不包含现有 Defender for Office 365 计划 1 或计划 2 许可证 (或作为加载项) 的现有客户推出。
+Defender for Office 365 试用版将逐步向满足特定条件的现有客户推出 (包括地理位置) 以及其订阅中或作为加载项) 不包含现有 Defender for Office 365 计划 1 或计划 2 许可证 (的客户。
 
 ## <a name="learn-more-about-defender-for-office-365"></a>了解有关 Defender for Office 365
 
-Defender for Office 365通过提供全面的功能，帮助组织保护企业的安全。
+Defender for Office 365通过提供一系列全面的功能来帮助组织保护企业。
 
 还可以在此交互式指南中了解有关 defender for Office 365[功能。](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189)
 
@@ -136,7 +136,7 @@ Defender for Office 365通过提供全面的功能，帮助组织保护企业的
 建议的模板和配置见解帮助客户获得和保持安全。
 
 - [在 EOP 和 Microsoft Defender for Office 365](preset-security-policies.md)
-- [EOP 和 Microsoft Defender for Office 365 中的保护策略的配置Office 365。](configuration-analyzer-for-security-policies.md)
+- [EOP 和 Microsoft Defender for Office 365 中的保护策略的配置分析器](configuration-analyzer-for-security-policies.md)。
 
 ## <a name="give-feedback"></a>提供反馈
 
