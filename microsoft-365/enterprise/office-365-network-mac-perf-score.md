@@ -7,19 +7,19 @@ ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365网络评估
-ms.openlocfilehash: 00ce0bb2f0f6b93df9f0eeb8e8bd63629edae9d7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18a175f0eef62793cb2aba8e0ed46ce08eea8e9f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196760"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202867"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365网络评估
 
@@ -30,7 +30,7 @@ ms.locfileid: "59196760"
 > [!div class="mx-imgBorder"]
 > ![网络评估值。](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
-非常低的网络评估值表明Microsoft 365客户端在连接到租户或维护响应式用户体验时将遇到严重问题。 较高的值表示配置正确的网络，并且存在一些持续的性能问题。 值 80% 表示正常基线，超过该值时，不应因网络性能而收到有关 Microsoft 365 连接或响应的常规用户投诉。 随着迭代网络连接改进，此值将随用户体验一起增加。
+非常低的网络评估值表明Microsoft 365客户端在连接到租户或维护快速响应用户体验时将遇到严重问题。 较高的值表示配置正确的网络，并且存在一些持续的性能问题。 值 80% 表示正常基线，超过该值时，不应因网络性能而收到有关 Microsoft 365 连接或响应的常规用户投诉。 随着迭代网络连接改进，此值将随用户体验一起增加。
 
 | 网络评估 | 预期的用户体验 |
 | :----------------- | :----------------------- |
@@ -63,7 +63,7 @@ ms.locfileid: "59196760"
 
 ## <a name="exchange-online"></a>Exchange Online
 
-例如Exchange Online，将测量从客户端计算机到 Exchange前端的 TCP 延迟。 网络通过客户 LAN 和 WAN 传输的距离会影响此延迟。 它还受网络中介设备或服务的影响，从而延迟连接或导致重新发送数据包。 它受最近的服务Exchange距离的影响。 中值 (前三天进行的所有测量) 第 50 个百分点或 P50 度量值。
+例如Exchange Online，将测量从客户端计算机到 Exchange 服务前端的 TCP 延迟。 网络通过客户 LAN 和 WAN 传输的距离会影响此延迟。 它还受网络中介设备或服务的影响，从而延迟连接或导致重新发送数据包。 它受最近的服务Exchange距离的影响。 中值 (前三天的所有度量值都) 第 50 个百分点值或 P50 度量值。
 
 评估Exchange Online下表进行。 阈值之间的任何 TCP 延迟数在带内以线性方式分配点。
 
@@ -78,7 +78,7 @@ ms.locfileid: "59196760"
 
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-For SharePoint Online the download speed for a user to access a document from SharePoint or OneDrive is measured. 这受客户端计算机和 Microsoft 网络之间的网络电路上可用带宽的影响。 它通常还受网络拥塞的影响，网络拥塞存在于复杂的网络设备的瓶颈中，或者网络区域覆盖Wi-Fi不足。 下载速度以兆字节/秒为单位测量，大约为每秒兆位率的电路的十分之一。 每秒的 MbByte 单位非常有用，因为您可以直接查看在 1 秒钟内可以下载的大小文件。 第 25 (个百分点值也称为 P25 度量值) 前三天进行的所有测量。 此 25 个百分点值有助于降低随时间变化拥塞的影响。
+For SharePoint Online the download speed for a user to access a document from SharePoint or OneDrive is measured. 这受客户端计算机和 Microsoft 网络之间的网络电路上可用带宽的影响。 它通常还受网络拥塞的影响，网络拥塞存在于复杂的网络设备的瓶颈中，或者网络区域覆盖Wi-Fi不足。 下载速度以兆字节/秒为单位测量，大约为每秒兆位率的电路的十分之一。 每秒的 MbByte 单位非常有用，因为您可以直接查看在 1 秒钟内可以下载的大小文件。 第 25 (个百分点值也称为 P25 度量值) 前三天的所有测量都进行测量。 此 25 个百分点值有助于降低随时间变化拥塞的影响。
 
 联机SharePoint评估使用下表进行。 阈值之间的任何下载速度编号在带内以线性方式分配点。
 
@@ -93,7 +93,7 @@ For SharePoint Online the download speed for a user to access a document from Sh
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-例如Microsoft Teams网络质量测量为 UDP 延迟、UDP 抖动和 UDP 数据包丢失。 UDP 用于呼叫和会议音频和视频媒体连接，Microsoft Teams。 除了网络 UDP 支持中的连接差异外，这受延迟和下载速度的相同因素影响，因为 UDP 单独配置为更常见的 TCP 协议。 中值 (前三天进行的所有测量) 第 50 个百分点或 P50 度量值。 
+例如Microsoft Teams网络质量测量为 UDP 延迟、UDP 抖动和 UDP 数据包丢失。 UDP 用于呼叫和会议音频和视频媒体连接，Microsoft Teams。 除了网络 UDP 支持中的连接差异外，这受延迟和下载速度的相同因素影响，因为 UDP 单独配置为更常见的 TCP 协议。 中值 (前三天的所有度量值都) 第 50 个百分点值或 P50 度量值。 
 
 我们计算这些 UDP 度量中从 1 到 5 的一个平均意见得分。 然后，我们将该范围映射到网络评估的 0-100 Microsoft Teams范围。  总体好于 87.5 点，整体坏值低于 50 点。
 
@@ -103,6 +103,6 @@ For SharePoint Online the download speed for a user to access a document from Sh
 
 [Microsoft 365预览版 (网络性能) ](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365预览版 (网络连接) ](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365预览版中 (网络连接) ](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365网络连接位置服务 (预览) ](office-365-network-mac-location-services.md)

@@ -7,7 +7,7 @@ ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: 使用适用于 SharePoint 的页面诊断工具SharePoint预定义的性能标准集来分析 SharePoint Online 新式门户和经典发布页面。
-ms.openlocfilehash: e741e8e2da62d2361578e31edcb6dbbafafbb7dc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e1931b7cdc661b5e0a6ed8751a26f8a77e4bc2e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196365"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199965"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>使用适用于用户的页面诊断SharePoint工具
 
@@ -36,7 +36,7 @@ ms.locfileid: "59196365"
 - **Chrome** [ (Chrome 扩展)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
 
 >[!TIP]
->版本 **2.0.0** 及更高版本包括对新式页面以及经典网站页面的支持。 如果你不确定使用哪种版本的工具，可以选择"关于"链接或省略号 (...) 验证你的版本。  **使用该工具时，始终** 更新到最新版本。
+>版本 **2.0.0** 及更高版本包括对新式页面以及经典网站页面的支持。 如果你不确定使用哪种版本的工具，可以选择关于链接或省略号 (...) 验证你的版本。 **使用该工具时，始终** 更新到最新版本。
 
 适用于 SharePoint 的页面诊断工具是一款面向新 Microsoft Edge（https://www.microsoft.com/edge) 和 Chrome 浏览器）的浏览器扩展，可用于分析 SharePoint Online 新式门户和经典发布网站页面。 此工具仅适用于 SharePoint Online，不能用于 SharePoint 系统页面。
 
@@ -47,7 +47,7 @@ ms.locfileid: "59196365"
 > [!div class="mx-imgBorder"]
 > ![必须在页面SharePoint运行。](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
 
-此工具没有错误，因为评估库或系统页面没有任何价值。 请导航到SharePoint网站页面以使用该工具。 如果此错误发生在SharePoint页上，请检查母版页以确保尚未SharePoint元标记。
+此工具没有错误，因为评估库或系统页面没有任何价值。 请导航到SharePoint网站页面以使用该工具。 如果此错误发生在SharePoint页上，请检查母版页以确保尚未删除SharePoint元标记。
 
 若要提供有关工具的反馈，请选择工具右上角的省略号，然后选择"提供[反馈"。](https://go.microsoft.com/fwlink/?linkid=874109)
 
@@ -56,23 +56,23 @@ ms.locfileid: "59196365"
   
 ## <a name="install-the-page-diagnostics-for-sharepoint-tool"></a>安装适用于 SharePoint 的页面诊断工具
 
-本节中的安装过程适用于 Chrome 和 Microsoft Edge 浏览器。
+本节中的安装过程适用于 Chrome 和 Microsoft Edge浏览器。
 
 > [!IMPORTANT]
 > Microsoft 不会读取页面诊断 for SharePoint 工具分析的数据或页面内容，并且我们不会捕获任何个人信息、网站或下载信息。 该工具记录到 Microsoft 的唯一可识别信息是租户名称、失败的规则计数以及工具运行的日期和时间。 Microsoft 使用此信息来更好地了解新式门户和发布网站使用趋势以及常见的性能问题。
 
-1. 安装适用于 SharePoint Edge 扩展 Microsoft Edge ( [或](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) **Chrome**) Chrome 扩展 ([诊断](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)) 。 请查看应用商店中的说明页面上提供的用户隐私策略。 将工具添加到浏览器时，你将看到以下权限通知。
+1. 安装适用于 SharePoint Edge 扩展Microsoft Edge (Chrome ) [或](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) **Chrome** ([部件](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)版扩展) 。 请查看应用商店中的说明页面上提供的用户隐私策略。 将工具添加到浏览器时，你将看到以下权限通知。
 
     > [!div class="mx-imgBorder"]
     > ![扩展权限。](../media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
-    此通知已就位，因为页面可能包含来自 SharePoint位置的内容，具体取决于页面上的 Web 部件和自定义项。 这意味着，在单击"开始"按钮时，该工具将读取请求和响应，并且仅针对SharePoint运行该工具的活动"开始"选项卡读取请求和响应。 此信息由 Web 浏览器本地捕获，并且可通过工具的"网络跟踪"选项卡中的"导出到 **JSON"** 或"导出到 **HAR"** 按钮 _提供给你。_ 此信息不会发送到 Microsoft 或由 **Microsoft** 捕获。  (该工具遵守可从此处访问的 Microsoft[隐私策略) ](https://go.microsoft.com/fwlink/p/?linkid=857875)
+    此通知就位是因为页面可能包含来自网站外部SharePoint，具体取决于页面上的 Web 部件和自定义项。 这意味着，当单击"开始"按钮时，该工具将读取请求和响应，并且仅适用于SharePoint运行该工具的活动"开始"选项卡。 此信息由 Web 浏览器本地捕获，并且可通过工具的"网络跟踪"选项卡中的"导出到 **JSON"** 或"导出到 **HAR"** 按钮 _提供给你。_ 此信息不会发送到 Microsoft 或由 **Microsoft** 捕获。  (该工具遵守可在此处访问的 Microsoft 隐私[策略) ](https://go.microsoft.com/fwlink/p/?linkid=857875)
 
     " _管理下载"_ 权限涵盖了工具的 **"导出到 JSON"功能的** 使用。 在组织外部共享 JSON 文件之前，请遵循贵公司的隐私准则，因为结果包含 URL，并且可将其分类为个人身份信息 (PII) 。
 1. 如果要在 Incognito 或 InPrivate 模式下使用该工具，请按照浏览器的过程操作：
     1. In Microsoft Edge， navigate to **Extensions** or type _edge://extensions_ in the URL bar and select **Details** for the extension. 在扩展设置中，选中 **InPrivate 中的"允许"复选框**。
-    1. 在 Chrome 中 **，导航到** "扩展" _或_ chrome://extensions URL 栏中键入"扩展"，然后选择 **"扩展** 的详细信息"。 在扩展设置中，选择允许 **Incognito 中的滑块**。
-1. 导航到 SharePoint Online 上要SharePoint的网站页面。 我们已允许在页面上"延迟加载"项目;因此，该工具不会自动停止 (这是为适应所有页面加载方案) 。 若要停止集合，请选择"停止 **"。** 请确保在停止数据收集之前已完成页面加载，否则您将只捕获部分跟踪。
+    1. 在 Chrome 中 **，导航到** "扩展"或 _chrome://extensions_ URL 栏中键入"详细信息"，然后选择 **扩展** 的详细信息。 在扩展设置中，选择允许 **Incognito 中的滑块**。
+1. 导航到 SharePoint Online 上要SharePoint查看的"网站"页面。 我们已允许在页面上"延迟加载"项目;因此，该工具不会自动停止 (这是为适应所有页面加载方案) 。 若要停止集合，请选择"停止 **"。** 请确保在停止数据收集之前已完成页面加载，否则您将只捕获部分跟踪。
 1. 单击扩展的工具栏按钮 ![徽标的页面SharePoint诊断。](../media/page-diagnostics-for-spo/pagediag-icon32.png) 加载该工具，你将被显示以下扩展弹出窗口：
 
     ![页面诊断工具弹出窗口。](../media/page-diagnostics-for-spo/pagediag-Landing.png)
@@ -83,7 +83,7 @@ ms.locfileid: "59196365"
 
 1. 单击工具右上角 (...) 省略号以查找以下链接：
    1. " **其他资源** "链接提供有关工具的一般指南和详细信息，包括本文的链接。
-   1. "**提供反馈**"链接提供指向"网站SharePoint _协作用户语音_"网站的链接。
+   1. "**提供反馈**"链接提供指向"网站SharePoint _协作用户语音"_ 网站的链接。
    1. " **关于** "链接包括当前安装的工具版本和指向工具的第三方通知的直接链接。  
 1. 相关 **ID、SPRequestDuration、SPIISLatency、****页面** 加载时间和 **URL** 详细信息是信息性的，可用于几个目的。
 
@@ -92,9 +92,9 @@ ms.locfileid: "59196365"
 
    - **CorrelationID** 是使用 Microsoft 支持时的重要元素，因为它允许他们收集特定页面的其他诊断数据。
    - **SPRequestDuration** 是用户SharePoint页面所花时间。 结构导航、大型图像和大量 API 调用都可能导致持续时间较长。
-   - **SPIISLatency** 是联机启动SharePoint加载页面所花的时间（以毫秒为单位）。 此值不包括 Web 应用程序响应所花时间。
+   - **SPIISLatency** 是联机加载页面SharePoint所花的时间（以毫秒为单位）。 此值不包括 Web 应用程序响应所花时间。
    - **页面加载** 时间是页面从请求时间到接收响应并呈现在浏览器中时记录的总时间。 此值受各种因素影响，包括网络延迟、计算机的性能以及浏览器加载页面所花的时间。
-   - 统 **一** (定位器) URL 是当前页面的 Web 地址。
+   - 统 **一** (定位器) Url 是当前页面的 Web 地址。
 
 1. "[**诊断测试**](#how-to-use-the-diagnostic-tests-tab)"选项卡按三个类别显示分析结果;**无需任何操作**，**改进机会****和关注也是必需的**。 每个测试结果由这些类别中的某个项目表示，如下表所述：
 
@@ -111,7 +111,7 @@ ms.locfileid: "59196365"
 
 ## <a name="how-to-use-the-diagnostic-tests-tab"></a>如何使用"诊断测试"选项卡
 
-使用 SharePoint 页面诊断工具分析 SharePoint 新式门户页面或经典发布网站页面时，会使用预定义的规则来分析结果，这些规则将结果与基线值进行比较，并显示在"诊断测试"选项卡中。 某些测试的规则可能会对新式门户和经典发布网站使用不同的基线值，具体取决于这两者的特定性能特征如何不同。
+使用 SharePoint 页面诊断工具分析 SharePoint 新式门户页面或经典发布网站页面时，会使用预定义的规则分析结果，这些规则将结果与基线值进行比较，并显示在"诊断测试"选项卡中。某些测试的规则可能会对新式门户和经典发布网站使用不同的基线值，具体取决于这两者的特定性能特征如何不同。
 
 显示在"改进机会"或"需要关注"类别中的测试结果指示了应针对建议做法进行审阅的区域，并且可以通过选择这些区域来显示有关结果的其他信息。 每个项目的详细信息包括" _了解详细信息_ "链接，该链接将引导你直接查看与测试相关的相应指导。 显示在"不需要操作 **"** 类别中的测试结果表示符合相关规则，并且选中后不显示其他详细信息。
 
@@ -141,7 +141,7 @@ ms.locfileid: "59196365"
 
 2. **测试项目加载时间**。 在某些情况下，没有时间或颜色指示器，因为项目已被浏览器缓存。 若要正确测试这一点，请打开页面，清除浏览器缓存，然后单击"开始"，因为这会强制加载"冷"页面，并真正反映初始页面加载。 然后，这应该与"温"页面负载进行比较，因为这也将有助于确定正在页面上缓存哪些项目。
 
-3. **与可以帮助调查问题的其他人共享相关详细信息**。 若要与开发人员或技术支持人员共享此工具中提供的详细信息或信息，建议使用"允许导出到 HTTP 存档" (**HAR)** 推荐方法。 
+3. **与可以帮助调查问题的其他人共享相关详细信息**。 若要与开发人员或技术支持人员共享此工具中提供的详细信息或信息，建议使用"允许导出到 HTTP 存档 (**HAR**) "是推荐的方法。 
 
    > [!div class="mx-imgBorder"]
    > ![允许导出到 HAR。](../media/page-diagnostics-for-spo/pagediag-submithar.png)
@@ -162,14 +162,14 @@ ms.locfileid: "59196365"
 
 ### <a name="to-enable-the-microsoft-support-level-feature"></a>启用 Microsoft 支持级别功能
 
-1. 打开适用于用户的页面诊断SharePoint工具。
+1. 打开页面诊断SharePoint工具。
 2. 在键盘上，按 **Alt-Shift-L。** 这将显示" **启用支持日志记录"** 复选框。
 3. 选中该复选框，然后单击 **"开始"** 以重新加载页面并生成详细日志记录。
 
    > [!div class="mx-imgBorder"]
    > ![支持选项已启用。](../media/page-diagnostics-for-spo/pagediag-support.png)
   
-    你应该注意显示在 (应用程序顶部的 CorrelationID) 并将其提供给你的支持代表，以便他们能够收集有关诊断会话的其他信息。
+    你应该注意显示在工具 (顶部的 CorrelationID) 并将其提供给你的支持代表，以便他们能够收集有关诊断会话的其他信息。
 
 ## <a name="related-topics"></a>相关主题
 

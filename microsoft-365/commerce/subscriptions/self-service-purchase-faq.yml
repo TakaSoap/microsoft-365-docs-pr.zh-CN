@@ -10,7 +10,7 @@ metadata:
   audience: Admin
   ms.topic: article
   ms.service: o365-administration
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection: M365-subscription-management
   ms.custom:
   - AdminSurgePortfolio
@@ -20,15 +20,15 @@ metadata:
   - MET150
   description: 查找有关自助服务购买的常见问题的解答。
   ms.date: 09/15/2020
-  ms.openlocfilehash: 7dcf16ff51854b595f61c2797a62632a3003b7c9
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 603f50b95ef16e7484f87bcb437416f258073165
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59170702"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60188405"
 title: 自助服务购买常见问题解答
 summary: >
-  自助购买为用户提供了尝试新技术和开发最终使大型组织受益的解决方案的机会。 中央采购和 IT 团队对通过以下渠道购买和部署自助式购买解决方案的<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">所有用户Microsoft 365 管理中心。</a> 管理员可以通过 PowerShell 基于每个产品关闭自助服务购买。 若要了解更多信息，请参阅 [将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块](allowselfservicepurchase-powershell.md)。
+  自助购买为用户提供了尝试新技术和开发最终使大型组织受益的解决方案的机会。 通过管理中心采购和 IT 团队，所有购买和部署自助式购买解决方案<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">的用户Microsoft 365 管理中心。</a> 管理员可以通过 PowerShell 基于每个产品关闭自助服务购买。 若要了解更多信息，请参阅 [将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块](allowselfservicepurchase-powershell.md)。
 
 
   自助服务购买适用于 Power Platform (Power BI、Power Apps 和 Power Automate) 、Project 和 Visio。
@@ -36,14 +36,14 @@ summary: >
 
   > [!NOTE]
 
-  > 自助购买不适用于印度或政府或教育客户。 Project Visio以及卢旺达共和国的自助服务购买。
+  > 自助购买不适用于印度或政府或教育客户。 Project Visio和卢旺达共和国提供自助服务购买。
 sections:
 - name: 进行自助服务购买
   questions:
   - question: >
       客户如何进行自助购买？
     answer: >
-      客户可以从产品网站或应用内购买提示在线进行自助购买。 首先要求客户输入电子邮件地址，以确保他们是现有 AD 租户Azure Active Directory (用户) 用户。 接下来，他们被定向到使用其 Azure AD 凭据登录。 登录后，要求客户选择要购买的订阅数并提供信用卡付款。 购买完成后，他们可以开始使用其订阅。 购买者有权访问有限视图的<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心可以在其中</a>将产品许可证分配给其组织的其他人员。
+      客户可以从产品网站或应用内购买提示在线进行自助购买。 首先要求客户输入电子邮件地址，以确保他们是现有 AD 租户Azure Active Directory (用户) 用户。 接下来，他们被定向到使用其 Azure AD 凭据登录。 登录后，要求客户选择要购买的订阅数并提供信用卡付款。 购买完成后，他们可以开始使用其订阅。 购买者有权访问有限的产品视图<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心可以在其中</a>将产品许可证分配给其组织的其他人员。
   - question: >
       自助服务购买的付款选项是什么？
     answer: >
@@ -66,7 +66,7 @@ sections:
   - question: >
       Who自助服务购买者能否将许可证分配给他们？
     answer: >
-      自助服务购买者只能向同一 Azure AD 租户中的用户分配许可证。 购买者可以访问有限视图的许可证<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>分配许可证。 购买者可以将许可证分配给通过自助购买购买的产品，并且只能向同一 Azure AD 租户中的用户分配这些许可证。
+      自助服务购买者只能向同一 Azure AD 租户中的用户分配许可证。 购买者可以访问有限视图的许可证<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心分配许可证</a>。 购买者可以将许可证分配给通过自助购买购买的产品，并且只能向同一 Azure AD 租户中的用户分配这些许可证。
   - question: >
       自助服务购买者在哪里查看和管理他们的购买？
     answer: >
@@ -95,7 +95,7 @@ sections:
     answer: >
       管理员根据数据管理和合规性要求维持对租户中可用服务和产品的控制。 组织启用的所有数据管理和访问策略均适用于可用的自助购买服务。
   - question: >
-      Who拥有通过自助服务购买创建的产品数据？
+      Who由自助服务购买创建的产品数据？
     answer: >
       从通过自助购买购买的产品创建的数据归组织所有和控制。
   - question: >

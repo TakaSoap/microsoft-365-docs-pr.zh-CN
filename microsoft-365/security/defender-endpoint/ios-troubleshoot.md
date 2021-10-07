@@ -2,27 +2,25 @@
 title: 排查问题并查找与 iOS 上的 Microsoft Defender for Endpoint 相关的常见问题解答
 description: 疑难解答和常见问题解答 - 适用于 iOS 上的终结点的 Microsoft Defender
 keywords: microsoft， defender， Microsoft Defender for Endpoint， ios， 疑难解答， 如何
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1a7900256207dd50f64a4bb8fe43b86bcf2b2913
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 809954847f1ef96f3efae1b243061af4f573a21e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988267"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199797"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>排查与 iOS 上的 Microsoft Defender for Endpoint 相关的问题并查找常见问题解答
 
@@ -50,7 +48,7 @@ ms.locfileid: "59988267"
 
 1. 在 iOS 设备上，打开 **"设置应用**"，单击 **或点击"** 常规"，然后单击 **"VPN"。**
 1. 单击或点击 Microsoft Defender for Endpoint 的"i"按钮。
-1. 关闭 **"连接按需"以** 禁用 VPN。
+1. 关闭 **"连接按需"** 以禁用 VPN。
 
     > [!div class="mx-imgBorder"]
     > ![VPN 配置按需连接。](images/ios-vpn-config.png)
@@ -98,7 +96,7 @@ Microsoft Defender for Endpoint 可保护你免受网络钓鱼或其他基于 We
 载入后，设备需要几个小时才能显示在 Defender for Endpoint 安全控制台的设备清单中。 此外，请确保设备已正确注册Azure Active Directory并且设备具有 Internet 连接。 若要成功载入，设备必须通过 Microsoft Authenticator 或 Intune 公司门户 并且用户需要使用在 Azure AD 中注册设备的同一帐户登录。
 
 > [!NOTE]
-> 有时，设备名称与 Intune 控制台Microsoft Endpoint Manager (设备) 一致。 Defender for Endpoint 控制台中的设备名称采用 <username_iPhone/iPad 模式>。 还可使用 Azure AD 设备 ID 在 Defender for Endpoint 控制台中标识设备。
+> 有时，设备名称与 Intune Microsoft Endpoint Manager (控制台中的设备) 一致。 Defender for Endpoint 控制台中的设备名称采用 <username_iPhone/iPad 模式>。 还可使用 Azure AD 设备 ID 在 Defender for Endpoint 控制台中标识设备。
 
 ## <a name="data-and-privacy"></a>数据和隐私
 
@@ -106,7 +104,7 @@ Microsoft Defender for Endpoint 可保护你免受网络钓鱼或其他基于 We
 
 ## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>安装了内容筛选器配置文件的受监督设备的问题
 
-在安装了 Defender for Endpoint 内容筛选器的受监督设备上存在问题。 如果发现此类设备上集间连接速度变慢或延迟，请卸载或删除设备中的内容筛选器配置文件。 我们正在努力解决此问题，并且将在我们解决后更新此位置。 
+在安装了 Defender for Endpoint 内容筛选器的受监督设备上存在问题。 如果发现此类设备的 Internet 连接速度变慢或延迟，请卸载或删除设备中的内容筛选器配置文件。 我们正在努力解决此问题，并且将在我们解决后更新此位置。 
 
 ## <a name="issues-during-app-updates-from-the-app-store"></a>从应用商店更新应用期间的问题
 
@@ -114,7 +112,7 @@ Microsoft Defender for Endpoint 可保护你免受网络钓鱼或其他基于 We
 
 ## <a name="send-in-app-feedback"></a>发送应用内反馈
 
-如果用户面临以上部分中尚未解决的问题，或者无法使用列出的步骤解决问题，则用户可以提供应用内反馈和诊断数据。 然后，我们团队将调查日志以提供正确的解决方案。 用户可以使用以下步骤发送回退：
+如果用户面临以上部分中尚未解决的问题，或者无法使用列出的步骤解决问题，则用户可以提供应用内反馈和诊断数据。 然后，我们团队将调查日志以提供正确的解决方案。 用户可以使用以下步骤发送反馈：
 
   - 在 iOS/iPadOS 设备上打开 MSDefender 应用。
   - 点击左上角 (菜单) 配置文件图标。

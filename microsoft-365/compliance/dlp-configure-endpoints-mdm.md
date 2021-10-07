@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: 使用移动设备管理工具在设备上部署配置包，以便它们可以载入到服务。
-ms.openlocfilehash: 1ad1115308257fa3ce63f10edebb9129638fd52f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7d1d51ef048c619f700f5c04d30804ec15f4c15d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175590"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204367"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具载入 Windows 10 设备
 
@@ -27,10 +27,10 @@ ms.locfileid: "59175590"
 
 - [Microsoft 365DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
 
-可以使用移动设备管理 (MDM) 配置设备。 Microsoft 365终结点数据丢失防护通过提供用于创建OMA-URIs管理设备的策略来支持 MDM。
+可以使用移动设备管理 (MDM) 配置设备。 Microsoft 365终结点数据丢失防护通过提供创建OMA-URIs来管理设备的策略，从而支持 MDM。
 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 如果你使用的是 mdm Microsoft Intune，则必须注册设备 MDM。 否则，设置将不会成功应用。 
 
 有关使用移动设备启用 MDM Microsoft Intune，请参阅设备[注册 (Microsoft Intune) 。 ](/mem/intune/enrollment/device-enrollment)
@@ -47,7 +47,7 @@ ms.locfileid: "59175590"
 出于安全考虑，用于"载出"设备的程序包将在下载日期 30 天后过期。 发送到设备的过期载出包将被拒绝。 下载载出包时，你将收到程序包到期日期的通知，该日期也将包含在程序包名称中。
 
 > [!NOTE]
-> 不得同时在同一设备上部署载入和载出策略，否则将导致不可预知的冲突。
+> 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
 
 1. 从 Microsoft 合规性中心获取 [载出包](https://compliance.microsoft.com/)。
 

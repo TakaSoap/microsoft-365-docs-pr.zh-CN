@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell Microsoft 365用户帐户
+title: 使用 powerShell Microsoft 365用户帐户
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,14 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: 如何使用 PowerShell 阻止和取消阻止对帐户Microsoft 365访问。
-ms.openlocfilehash: fd9eba96b09a73b2fb6e87b30096dbf8186caceb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0ecfdfb8f99175ce5312769593c7637a7d1ae25b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171009"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189185"
 ---
-# <a name="block-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户
+# <a name="block-microsoft-365-user-accounts-with-powershell"></a>使用 powerShell Microsoft 365用户帐户
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
@@ -98,7 +98,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-在下列命令中，示例文本文件为 *C：\My Documents\Accounts.txt*。 将此文件名替换为文本文件的路径和文件名。
+在下列命令中，示例文本文件为 *C：\My Documents\Accounts.txt。* 将此文件名替换为文本文件的路径和文件名。
 
 若要阻止访问该文本文件中列出的帐户，请运行以下命令：
 
@@ -125,7 +125,7 @@ Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential
 ```
 
 >[!Note]
->PowerShell Core 不支持模块Microsoft Azure Active Directory模块Windows PowerShell名称中具有 *Msol* 的 cmdlet。 您必须从应用程序运行这些 cmdlet Windows PowerShell。
+>PowerShell Core 不支持 Microsoft Azure Active Directory 模块Windows PowerShell名称中具有 *Msol* 的 cmdlet。 您必须从应用程序运行这些 cmdlet Windows PowerShell。
 
 此示例阻止对用户帐户 *fabricec litwareinc.com。 \@*
 
@@ -155,7 +155,7 @@ tjohnston@contoso.com
 kakers@contoso.com
 ```
 
-在下列命令中，示例文本文件为 *C：\My Documents\Accounts.txt*。 将此文件名替换为文本文件的路径和文件名。
+在下列命令中，示例文本文件为 *C：\My Documents\Accounts.txt。* 将此文件名替换为文本文件的路径和文件名。
 
 若要阻止对文本文件中列出的帐户的访问，请运行以下命令：
 

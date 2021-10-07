@@ -3,27 +3,25 @@ title: 隐私信息 - 适用于 iOS 上的终结点的 Microsoft Defender
 ms.reviewer: ''
 description: 介绍 iOS 上适用于终结点的 Microsoft Defender 的隐私信息
 keywords: microsoft， defender， Microsoft Defender for Endpoint， ios， 策略， 概述
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e1983e023a0236ea1e0ad9ac82b8d089e120cd7d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dcfa13256807e5a3f55d2f26fb5c7bafd4645cda
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201186"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188885"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>隐私信息 - 适用于 iOS 上的终结点的 Microsoft Defender
 
@@ -54,11 +52,11 @@ iOS 上的 Defender for Endpoint 从已配置的 iOS 设备收集信息，并存
 
 ### <a name="device-and-account-information"></a>设备和帐户信息
 
-- 诸如日期、&、iOS 版本、CPU 信息和设备标识符等设备信息，其中设备标识符为以下项之一：
+- 设备信息，如&时间、iOS 版本、CPU 信息和设备标识符，其中设备标识符为以下项之一：
   - Wi-Fi适配器 MAC 地址
-  - GUID 对象中随机生成的 (唯) 
+  - GUID 记录中随机生成的 (唯) 
 - 租户、设备和用户信息
-  - Azure Active Directory (AD) 设备 ID 和 Azure 用户 ID - 唯一标识设备，即 Azure Active Directory 中的用户。
+  - Azure Active Directory (AD) 设备 ID 和 Azure 用户 ID - 唯一标识设备，即 Azure Active directory 中的用户。
   - Azure 租户 ID - 标识组织内部Azure Active Directory。
   - Microsoft Defender for Endpoint 组织 ID - 与设备所属的企业关联的唯一标识符。 允许 Microsoft 确定是否有影响一组选定企业的问题以及受到影响的企业数量。
   - 用户主体名称 - 用户的电子邮件 ID。

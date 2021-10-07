@@ -15,16 +15,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
-description: 了解如何配置Microsoft 365应用程序Teams、OneDrive SharePoint组织外部人员进行协作。
-ms.openlocfilehash: 291a5e6d75ac1b1a12a2403a9aeece9cb658afd0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解如何配置Microsoft 365应用程序Teams、OneDrive和SharePoint组织外部人员进行协作。
+ms.openlocfilehash: 0a67eff5c201eaa82e36152c5a429df00c3ec876
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196242"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203718"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>与组织外部人员进行协作
 
@@ -32,8 +32,8 @@ Microsoft 365中的外部共享功能为组织内部人员提供了与合作伙�
 
 与组织外部人员协作由两个主要部分组成：
 
-- **启用共享**- 跨 Azure Active Directory、Teams、Microsoft 365 组和 SharePoint 配置共享控件，以允许组织的共享级别。
-- 启用 **其他** 安全性 - 虽然基本共享功能可以配置为要求组织外部人员进行身份验证，Microsoft 365 提供了许多其他安全性和合规性功能，以帮助您在外部共享时保护数据和维护管理策略。
+- **启用共享**- 配置跨 Azure Active Directory、Teams、Microsoft 365 组和 SharePoint 的共享控件，以允许组织达到希望的共享级别。
+- 启用 **其他** 安全性 - 虽然基本共享功能可以配置为要求组织外部人员进行身份验证，但 Microsoft 365 提供了许多其他安全性和合规性功能，以帮助您在外部共享时保护数据和维护管理策略。
 
 阅读[设置与 Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams)和 Microsoft Teams 的安全协作，了解外部共享如何与整体Microsoft 365协作指南。
 
@@ -41,8 +41,8 @@ Microsoft 365中的外部共享功能为组织内部人员提供了与合作伙�
 
 默认情况下，在Microsoft 365，将启用与组织外部人员共享。 许多外部共享方案无需进一步配置即可工作。 若要确认你使用的方案的设置或启用新方案，请从以下选项中进行选择：
 
-- [协作处理](collaborate-on-documents.md)文档 - 了解如何配置Microsoft 365以允许与组织外部人员共享和协作 (来宾和未经身份验证的用户) 文件和文件夹。
-- [在网站中协作](collaborate-in-site.md)- 了解如何配置Microsoft 365以启用与SharePoint共享网站。
+- [协作处理](collaborate-on-documents.md)文档 - 了解如何配置Microsoft 365以允许与组织外部人员共享和 (来宾和未经身份验证的用户) 文件和文件夹。
+- [在网站中协作](collaborate-in-site.md)- 了解如何配置Microsoft 365以启用与来宾SharePoint网站共享。
 - [以团队方式协作](collaborate-as-team.md)- 了解如何配置Microsoft 365以在 Teams 中启用来宾Teams。
 
 有关跨组织提供的来宾共享设置的全面Microsoft 365，请参阅Microsoft 365[来宾共享设置参考](microsoft-365-guest-settings.md)。
@@ -61,7 +61,7 @@ Microsoft 365中的外部共享功能为组织内部人员提供了与合作伙�
 
 ## <a name="limit-sharing"></a>限制共享
 
-如果网站中的某些共享功能Microsoft 365管理策略冲突，请参阅限制共享Microsoft 365了解限制[](microsoft-365-limit-sharing.md)共享的选项。
+如果共享策略中的某些Microsoft 365您的管理策略冲突，请参阅限制共享Microsoft 365了解限制共享[](microsoft-365-limit-sharing.md)的选项。
 
 ## <a name="related-topics"></a>相关主题
 

@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: 了解如何使用 Microsoft 服务信任门户中的合规性管理器来满足数据保护和管理法规要求。
 ms.custom: seo-marvel-apr2020
 ROBOTS: NOINDEX
-ms.openlocfilehash: fa4ed459f713761e648454c42c8ded91391f7cff
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a4d38c827fb2941516c2d84389204723599db44b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556164"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203215"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合规性管理器（经典）
 
@@ -264,9 +264,9 @@ ms.locfileid: "58556164"
 |风险级别|控制分数值|
 |---|:---:|
 |低|1-3|
-|中等|6|
-|高|8|
-|严重|10|
+|中等|6 |
+|高|8 |
+|严重|10 |
 
 通过按合规性分数值从高到低的顺序确定评估控制措施的优先级，组织可以最高风险项为重点，并相应地获得更高正反馈，即完成的每项控制措施评估累积到评估总合规性分数中的分数更多。
 

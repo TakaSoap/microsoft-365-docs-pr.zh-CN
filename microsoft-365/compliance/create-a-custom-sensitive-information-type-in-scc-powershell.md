@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: 41f36354fa94da9cae8e7794dca778c1bfe8ac2e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c0e7efb9770c870210265b951a74012fb21e1b2e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171047"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203239"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -397,7 +397,7 @@ Microsoft 365公开常用 SIT 的函数处理器作为验证程序。 以下是�
 </Entity>
 ```
 
-Microsoft 365提供了两个通用验证程序
+Microsoft 365两个通用验证程序
 
 ### <a name="checksum-validator"></a>校验和验证程序
 

@@ -5,17 +5,17 @@ keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: feba220d4e31443c85e600a7ab367a5f3c970e16
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 81de89a704c8ff8717439d83e70504ba2fe8e410
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196716"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188909"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备打印资源
 
@@ -36,7 +36,7 @@ ms.locfileid: "59196716"
     - 需要为设备部署的所有共享打印机位置的 UNC Microsoft 托管桌面路径
     - 需要访问这些共享打印机的用户组
 3. 使用管理门户，我们将告知你请求完成时间。 最初，我们将仅将配置部署到测试部署组的设备。
-4. 必须测试并确认配置是否正常工作。 使用支持 **请求中的** "讨论"选项卡进行回复，以在测试完成时告诉我们。
+4. 必须测试并确认配置是否如预期工作。 使用支持 **请求中的** "讨论"选项卡进行回复，以在测试完成时告诉我们。
 5. 然后，我们将配置部署到其他部署组。
 
 ## <a name="steps-to-get-ready"></a>准备步骤

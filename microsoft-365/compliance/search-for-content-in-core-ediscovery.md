@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 搜索可能与核心电子数据展示案例相关的内容。
-ms.openlocfilehash: 1637d5dafcf088dd2b069cda5e951aef3a2fcd1e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fdf623ec56f3f40ba3316fd546f044610829bbc2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169616"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189281"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>搜索核心电子数据展示案例中的内容
 
@@ -32,7 +32,7 @@ ms.locfileid: "59169616"
   
 1. 转到 ，然后使用用户帐户的凭据登录，该帐户已分配有相应的电子数据展示权限，并且是案例 <https://compliance.microsoft.com> 的成员。
 
-2. 在导航窗格的左侧导航窗格中，Microsoft 365 合规中心全部显示"，然后单击"电子数据展示>**核心"。**
+2. 在左侧导航窗格中，单击 **Microsoft 365 合规中心全部显示**"，然后单击"电子数据展示>**核心"。**
 
 3. 在"**核心电子数据展示**"页上，选择要创建关联搜索的案例，然后单击"打开 **案例"。**
 
@@ -78,8 +78,8 @@ ms.locfileid: "59169616"
 
 ## <a name="more-information-about-searching-content-locations"></a>有关搜索内容位置详细信息
 
-- 单击" **选择用户、组或** 团队"以指定要搜索的邮箱时，显示的邮箱选取器为空。 这种设计旨在增强性能。 若要向此列表添加收件人，请单击"选择用户、组或团队"，在搜索框中键入至少三个字符 () ，选中名称旁边的复选框，然后单击"选择 **"。**
+- 单击" **选择用户、组或** 团队"以指定要搜索的邮箱时，显示的邮箱选取器为空。 这种设计旨在增强性能。 To add recipients to this list， click **Choose users， groups， or teams**， type a name (a minimum of three characters) in the search box， select the check box next to the name， and then click **Choose**.
 
-- 您可以将非活动邮箱、Microsoft Teams、Yammer 组Office 365组和通讯组添加到要搜索的邮箱列表中。 不支持动态通讯组。 如果添加Microsoft Teams组Yammer组或Office 365组，将搜索组或团队邮箱;不搜索其成员的邮箱。
+- 您可以将非活动邮箱、Microsoft Teams、Yammer 组Office 365组和通讯组添加到要搜索的邮箱列表中。 不支持动态通讯组。 如果添加Microsoft Teams、Yammer组或Office 365组，将搜索组或团队邮箱;不搜索其成员的邮箱。
 
-- 若要将网站添加到搜索，请打开切换，然后单击选择 **网站**。 键入要搜索的每个网站的 URL。 还可以为 Microsoft 团队、SharePoint组或 Office 365 组添加 Yammer 网站的 URL。
+- 若要将网站添加到搜索，请打开切换，然后单击选择 **网站**。 键入要搜索的每个网站的 URL。 还可以为 Microsoft 团队、SharePoint组或 Yammer 组添加 Office 365 URL。

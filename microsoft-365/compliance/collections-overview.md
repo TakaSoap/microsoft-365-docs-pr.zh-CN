@@ -1,5 +1,5 @@
 ---
-title: Advanced eDiscovery
+title: 集合概述Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -10,18 +10,18 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 使用 Advanced eDiscovery 中的集合来搜索和收集与案例或调查相关的内容。
-ms.openlocfilehash: dabc321f432996d888686b16e05d8ad6cb6cfc3f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8988f2806a0a7c13ae94560f6202330c0d619582
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162041"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188273"
 ---
 # <a name="learn-about-collections-in-advanced-ediscovery"></a>了解 Advanced eDiscovery
 
@@ -32,17 +32,17 @@ ms.locfileid: "59162041"
 
 收集工作流在从本机位置和源提取内容方面带来了重大技术挑战。 在常见诉讼或调查方案的评估和策略中，这也是一个关键点。 当组织开始评估调查时，第一个问题询问了哪些人参与？ 确定所涉及的人员后，可以快速将这些保管人置于保留状态以保留相关内容。 下一个问题是什么？ 要回答任何调查的第二个基本问题，经理必须转向该数据。 为了快速评估与所发生问题最相关的内容，经理开始优化问题的目标，以确保收集结果全面，而不会过于宽泛。
 
-Advanced eDiscovery中的集合可帮助电子数据展示管理员快速确定跨电子邮件、文档和其他内容搜索Microsoft 365。 集合为经理提供与案例相关的内容的估计值。 这使经理能够做出有关与案例相关的内容大小和范围的快速、明智的决策。 电子数据展示管理员可创建一个集合来搜索诸如邮箱和 SharePoint 网站 () 等高级数据源) 并且通过使用特定的搜索条件 (如关键字和日期范围) 来快速定义其集合的范围。
+Advanced eDiscovery中的集合可帮助电子数据展示管理员快速将搜索范围从电子邮件、文档和其他内容Microsoft 365。 集合为经理提供与案例相关的内容的估计值。 这使经理能够做出有关与案例相关的内容大小和范围的快速、明智的决策。 电子数据展示管理员可创建一个集合来搜索诸如邮箱和 SharePoint 网站 () 等高级数据源) 并且通过使用特定的搜索条件 (如关键字和日期范围) 来快速定义其集合的范围。
 
 定义集合后，电子数据展示管理员可以将集合另存为草稿并获取估计值，包括数据量估计值、包含结果的内容位置以及搜索查询条件的命中数。 这些见解有助于在继续电子数据展示工作流中的审阅和分析阶段之前，告知是否应修改集合以缩小或扩展集合的范围。
 
 当经理对集合的范围和可能做出响应的估计内容量感到满意时，经理可以将内容添加或提交到审阅集。  将集合提交到审阅集时，该经理还可以选择包括聊天对话、云附件和文档版本。 在将集合中的内容纳入审阅集期间，该集合中的内容也会经历另一个处理级别。 集合将更新为最终集合摘要。 将内容添加到审阅集后，电子数据展示管理员可继续查询、分组和优化中的内容，以帮助实现最小化和审阅。 此外，该集合还更新了与提交到审阅集的内容有关的信息和统计信息。 这将提供有关集合中内容的历史参考。
 
-随着集合在集合中的发布Advanced eDiscovery，"搜索"选项卡已重命名为"集合"，Advanced eDiscovery一种情况Microsoft 365 合规中心。 定义集合的范围和大小的步骤遵循与搜索相同的过程来定义位置和条件。 另存为草稿并获取预览估计值可在将完全搜索和集合提交到审阅集中之前快速验证集合的目标范围。 这样，可以改进作业管理和目标迭代，以便开始在搜索和收集过程中最小化内容。
+随着集合在集合中的发布Advanced eDiscovery，"搜索"选项卡已重命名为"集合"，Advanced eDiscovery中为Microsoft 365 合规中心。  定义集合的范围和大小的步骤遵循与搜索相同的过程来定义位置和条件。 另存为草稿并获取预览估计值可在将完全搜索和集合提交到审阅集中之前快速验证集合的目标范围。 这样，可以改进作业管理和目标迭代，以便开始在搜索和收集过程中最小化内容。
 
 ## <a name="collections-workflow"></a>集合工作流
 
-若要开始使用 Advanced eDiscovery 集合，下面是一个基本工作流以及过程中每个步骤的说明。
+若要开始使用 Advanced eDiscovery 中的集合，下面是一个基本工作流以及过程中每个步骤的说明。
 
 ![Advanced eDiscovery 中的集合工作流。](../media/CollectionsWorkflow.png)
 
@@ -60,4 +60,4 @@ Advanced eDiscovery中的集合可帮助电子数据展示管理员快速确定�
 
    有关详细信息，请参阅 [将草稿集合提交到审阅集](commit-draft-collection.md)。
 
-5. **查看集合摘要和统计信息**。 将集合提交到审阅集后，将保留有关该集合的信息，例如有关提取的项目的统计信息、深度索引、用于集合的搜索查询以及从中收集项目的内容位置。 此外，无法编辑或重新运行已提交的集合。 只能复制或删除它们。 保留集合提供已添加到审阅集的已收集项目的历史记录。 有关详细信息，请参阅已提交 [集合的统计信息和报告](collection-statistics-reports.md#statistics-and-reports-for-committed-collections)。
+5. **查看集合摘要和统计信息**。 将集合提交到审阅集后，将保留有关该集合的信息，例如有关提取项的统计信息、深度索引、用于集合的搜索查询以及从中收集项目的内容位置。 此外，无法编辑或重新运行已提交的集合。 只能复制或删除它们。 保留集合提供已添加到审阅集的已收集项目的历史记录。 有关详细信息，请参阅已提交 [集合的统计信息和报告](collection-statistics-reports.md#statistics-and-reports-for-committed-collections)。

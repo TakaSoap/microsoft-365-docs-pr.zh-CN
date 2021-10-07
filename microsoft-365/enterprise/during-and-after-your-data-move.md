@@ -10,18 +10,18 @@ ms.service: o365-administration
 ms.collection: SPO_Content
 search.appverid:
 - MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: 数据移动是 Microsoft 将租户的服务和关联数据移动到新的数据中心地理位置时发生的后端操作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f90957447e9d301594f50e67ff51ae495464b63e
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 68c73d8931f0f1813ebecfa0415b037f91065626
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491083"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189149"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -54,7 +54,7 @@ ms.locfileid: "59491083"
   
 ### <a name="open-shared-folder-in-outlook-web-access"></a>在 Web Access 中打开Outlook文件夹"
 
-一些用户从另一个邮箱打开共享邮件文件夹 (该邮箱文件夹的用户具有使用"共享文件夹"功能在) Outlook Web Access 中读取或写入权限。 下表介绍了在邮箱移动过程中对共享文件夹的访问权限的工作方式。 请注意，对共享邮箱具有完全权限的用户可以在移动过程中使用 Outlook Web Access 打开邮箱。 
+某些用户从另一个邮箱打开共享邮件文件夹 (该邮箱文件夹是用户使用"共享文件夹"功能在) Outlook Web Access 中拥有读取或写入权限的邮件文件夹。 下表介绍了在邮箱移动过程中对共享文件夹的访问权限的工作方式。 请注意，对共享邮箱具有完全权限的用户可以在移动过程中使用 Outlook Web Access 打开邮箱。 
   
 |**配置**|**说明**|
 |:-----|:-----|
@@ -63,7 +63,7 @@ ms.locfileid: "59491083"
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-移动 SharePoint Online 时，还会移动以下服务的数据：
+当SharePoint Online 时，还会移动以下服务的数据：
   
 - OneDrive for Business
     
@@ -87,7 +87,7 @@ ms.locfileid: "59491083"
     
 ### <a name="search"></a>搜索
 
-在移动 SharePoint Online 数据的过程中，我们会将搜索索引和搜索设置迁移到新位置。 在 **移动完你的** SharePoint Online 数据之前，我们将继续从原始位置的索引为用户提供服务。 在新位置中，搜索将在我们移动完你的联机数据后自动开始SharePoint爬网。 从现在起，我们将从迁移的索引中为用户提供服务。 迁移后对内容所做的更改不会包含在迁移索引中，直到爬网选取它们。 大多数客户不会注意到，完成移动 SharePoint Online 数据后，结果新鲜度较低，但一些客户在前 24-48 小时内体验的新鲜度可能会降低 
+在移动 SharePoint Online 数据的过程中，我们会将搜索索引和搜索设置迁移到新位置。 完成你的联机 **数据** 移动SharePoint，我们将继续从原始位置的索引为用户提供服务。 在新位置中，搜索将在我们移动完你的联机数据后自动开始SharePoint爬网。 从现在起，我们将从迁移的索引中为用户提供服务。 迁移后对内容所做的更改不会包含在迁移索引中，直到爬网选取它们。 大多数客户不会注意到，完成移动 SharePoint Online 数据后，结果新鲜度较低，但一些客户在前 24-48 小时内的新鲜度可能会降低 
   
 以下搜索功能受到影响：
   
@@ -109,7 +109,7 @@ ms.locfileid: "59491083"
 
 ### <a name="files-tab"></a>"文件"选项卡
 
-迁移完成后，"文件"选项卡可能需要 (7 秒) 在用户首次尝试使用它时完全加载。 
+迁移完成后，"文件"选项卡可能需要 (7 秒) 在用户第一次尝试使用它时完全加载。 
 
 ### <a name="read-only-period"></a>只读时间段
 

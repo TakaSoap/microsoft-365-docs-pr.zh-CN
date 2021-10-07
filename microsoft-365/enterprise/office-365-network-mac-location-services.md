@@ -7,7 +7,7 @@ ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 description: Microsoft 365网络连接位置服务
-ms.openlocfilehash: 025a4a158378335271ac50e6cd8199d2b9f36106
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 71908e5c0f697aac3068af205adc998f88a00c85
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196763"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199917"
 ---
 # <a name="microsoft-365-network-connectivity-location-services"></a>Microsoft 365网络连接位置服务
 
@@ -28,11 +28,11 @@ ms.locfileid: "59196763"
 
 ## <a name="location-in-network-measurements"></a>网络测量中的位置
 
-组织的管理员可以选择将位置包含在此功能所使用的网络度量中。 这允许自动发现每个办公室所在的城市。 位置信息并不精确，并模糊处理为 300m，并按城市分类。 在设备上捕获位置Windows时，设备将在工具托盘中显示"位置使用中"图标。  管理员可能需要通知用户此图标的外观。 通过此处理，该位置将被视为组织办公地点，而不是人员或设备的位置。 可以在这些发现的办公地点城市显示网络见解。 如果希望建议的准确性更高，可以输入特定的办公地点地址。 网络见解将聚合到这些位置。 Office位置聚合的距离不能超过 300 米。
+组织的管理员可以选择将位置包含在此功能所使用的网络度量中。 这允许自动发现每个办公室所在的城市。 位置信息并不精确，被模糊处理为 300m，并按城市分类。 在设备上捕获位置时Windows设备将在工具托盘中显示"位置使用中"图标。  管理员可能需要通知用户此图标的外观。 通过此处理，该位置将被视为组织办公地点，而不是人员或设备的位置。 可以在这些发现的办公地点城市显示网络见解。 如果希望建议的准确性更高，可以输入特定的办公地点地址。 网络见解将聚合到这些位置。 Office聚合的位置不能超过 300 米。
 
 ## <a name="location-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中的位置
 
-在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>中，必应地图控件用于显示组织办公地点。 这些控件还显示选定办公地点的网络外围拓扑。 当管理员为办公地点添加特定地址详细信息时，必应地图还可用于建议地址，以便更轻松地输入数据。
+在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>中，必应地图控件用于显示组织办公地点。 这些控件还显示选定办公地点的网络外围拓扑。 当管理员为办公地点添加特定地址详细信息时，必应地图还用于建议地址，以便更轻松地输入数据。
 
 ## <a name="terms-of-use"></a>使用条款
 
@@ -46,6 +46,6 @@ ms.locfileid: "59196763"
 
 [Microsoft 365预览版 (网络性能) ](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365网络评估 (预览) ](office-365-network-mac-perf-score.md)
+[Microsoft 365预览 (网络) ](office-365-network-mac-perf-score.md)
 
 [Microsoft 365预览版中的Microsoft 365 管理中心 (连接) ](office-365-network-mac-perf-onboarding-tool.md)

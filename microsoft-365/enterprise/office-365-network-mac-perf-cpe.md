@@ -7,21 +7,21 @@ ms.date: 03/10/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365网络路由
-ms.openlocfilehash: bccac9dae56bb4a44df7a96144eb84ae7c19a84b
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.openlocfilehash: 4781acd78e314592ca33cdad77e1f270e86e002c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58744997"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199905"
 ---
-# <a name="microsoft-365-informed-network-routing-preview"></a>Microsoft 365智能网络路由 (预览) 
+# <a name="microsoft-365-informed-network-routing-preview"></a>Microsoft 365网络路由 (预览) 
 
 智能网络路由是一项功能，可以将各种 Microsoft 365 应用程序与第三方软件定义的网络 (SD-WAN) 解决方案集成，以优化和改进与 Microsoft 服务终结点的网络连接。 优化的 SD-WAN 连接可能会改进用户体验和性能。
 
@@ -30,16 +30,16 @@ ms.locfileid: "58744997"
 
 ## <a name="overview"></a>概述
 
-智能网络路由在 Microsoft 和 SD-WAN 解决方案之间提供双向数据共享通道。 对于您配置的每个办公室位置和 Internet 线路，Microsoft 会定期与 SD-WAN 解决方案共享有关与每个特定 Internet 线路关联的网络流量的选定 Microsoft 365 应用程序体验质量的反馈。 使用此反馈，SD-WAN 解决方案随后可以通过通过备用可用链接Microsoft 365应用程序流量执行智能恢复操作。 
+智能网络路由在 Microsoft 和 SD-WAN 解决方案之间提供双向数据共享通道。 对于您配置的每个办公室位置和 Internet 线路，Microsoft 会定期与 SD-WAN 解决方案共享有关与每个特定 Internet 线路关联的网络流量的选定 Microsoft 365 应用程序体验质量的反馈。 使用此反馈，SD-WAN 解决方案随后可以通过备用可用链接Microsoft 365应用程序流量执行智能恢复操作。 
 
 很难持续检测特定 Internet 线路的服务质量下降，如延迟增加或数据包丢失率高。 这些降级可能会对应用程序（如应用程序、Exchange Online、SharePoint、OneDrive 和 Microsoft Teams）的Microsoft Teams。 常见症状包括搜索内容Exchange速度较慢、与 SharePoint 或 OneDrive 文档库交互时传输时间长，或者呼叫或会议质量Microsoft Teams。
 
 通知网络路由中的反馈和恢复机制旨在动态地实时检测此类问题，并通知部署的 SD-WAN 解决方案执行自动恢复操作。
 
-数据共享通道还用于定期接收来自 SD-WAN 解决方案的网络级光学数据，包括与设备和连接的电路关联的配置信息和使用情况统计信息。 不收集或存储任何个人信息。 收集的所有信息将聚合到办公室位置和连接的 Internet 线路。 此信息可帮助 Microsoft 更有效地解决报告使用 Microsoft 365 服务和应用程序的问题。
+数据共享通道还用于定期接收来自 SD-WAN 解决方案的网络级光学数据，包括与设备和连接的电路关联的配置信息和使用情况统计信息。 不收集或存储任何个人信息。 收集的所有信息将聚合到办公室位置和连接的 Internet 线路。 此信息可帮助 Microsoft 更有效地解决报告使用 Microsoft 365服务和应用程序的问题。
 
 >[!NOTE]
->Microsoft 365网络路由支持 WW 商业云中的租户，GCC中等、GCC高、DoD、德国或中国云。
+>Microsoft 365网络路由支持 WW 商业云中的租户，但GCC中等、GCC高、DoD、德国或中国云。
 
 ## <a name="requirements"></a>要求
 
@@ -59,7 +59,7 @@ Microsoft 正在与各种合作伙伴合作，以便能够与Microsoft 365网络
 
 ### <a name="application-usage"></a>应用程序使用情况
 
-应用程序体验 (通过网络质量指标) 通过特定 Microsoft 客户端应用程序进行收集。 Exchange指标反映 Outlook 客户端的使用情况，以及一些Outlook Web App使用情况。 SharePoint和OneDrive指标反映租户特定终结点SharePoint的使用情况，而不考虑客户端应用程序。 Teams指标反映桌面客户端Teams使用情况。 在评估网络线路的运行状况时，不会考虑其他应用程序流量。
+应用程序体验 (通过网络质量指标反映) 通过特定 Microsoft 客户端应用程序进行收集。 Exchange指标反映 Outlook 客户端的使用情况，以及一些Outlook Web App使用情况。 SharePoint和OneDrive指标反映租户特定终结点SharePoint的使用情况，而不考虑客户端应用程序。 Teams指标反映桌面客户端Teams使用情况。 在评估网络线路的运行状况时，不会考虑其他应用程序流量。
 
 ## <a name="enabling-informed-network-routing"></a>启用智能网络路由
 
@@ -68,18 +68,18 @@ Microsoft 正在与各种合作伙伴合作，以便能够与Microsoft 365网络
 准备好在服务器中启用通知网络路由Microsoft 365 管理中心，请确保你 **拥有必要的用户** 管理员或 **全局管理员** 权限。
 
 >[!IMPORTANT]
->为了向选定的 SD-WAN 解决方案授予必要的租户级应用程序权限，以访问通知的网络路由数据共享通道，必须以全局管理员角色执行以下步骤。
+>为了向选定的 SD-WAN 解决方案提供必要的租户级应用程序权限同意以访问通知的网络路由数据共享通道，必须以全局管理员角色执行以下步骤。
 
 
 ### <a name="step-1-open-sd-wan-solution-configuration-options"></a>步骤 1：打开 SD-WAN 解决方案配置选项
 
 In the [Microsoft 365 管理中心](https://admin.microsoft.com/)， select **Health > Network connectivity** in the left-hand navigation pane.
 
-管理中心的这一部分为组织提供了聚合的网络连接指标，并指导如何提高连接性。 有关[管理中心内提供的](office-365-network-mac-perf-overview.md)这些功能) ，请参阅 Microsoft 365 管理 Center (preview) 中的网络连接。
+管理中心的这一部分为组织提供了聚合的网络连接指标，并指导如何提高连接性。 有关[管理中心内](office-365-network-mac-perf-overview.md)提供的这些功能) ，请参阅 Microsoft 365 管理 Center (预览版中的网络连接。
 
-选择 **设置 > SD-WAN 解决方案"** 以打开通知网络路由配置窗格。 "管理中心"下设置选项适用于管理中心中的一般网络连接指南，不需要这些选项来启用智能网络路由。
+选择 **设置 > SD-WAN 解决方案"** 以打开通知网络路由配置窗格。 "管理中心"下设置选项适用于管理中心中的一般网络连接指南，并且不需要这些选项来启用明智的网络路由。
 
-在配置窗格中，选择"将 **SD-WAN 解决方案 (预览) "。**
+在配置窗格中，选择"将 **SD-WAN 解决方案添加到 (预览) "。**
 
 ### <a name="step-2-select-your-sd-wan-solution-and-data-storage-location"></a>步骤 2：选择 SD-WAN 解决方案和数据存储位置
 
@@ -113,9 +113,9 @@ In the [Microsoft 365 管理中心](https://admin.microsoft.com/)， select **He
 
 您将对 SD-WAN 解决方案中的明智网络路由执行大部分配置，例如配置在正常情况下应该如何路由流量，以及检测到问题时应该使用的备用路径。 有关这些配置步骤的详细信息，请咨询您的 SD-WAN 解决方案提供商。
 
-每个办公室位置都必须在服务器配置Microsoft 365 管理中心以便通知网络路由可以正确地识别与提供这些位置连接的网络电路相关的流量。
+每个办公室位置都必须在服务器配置Microsoft 365 管理中心以便智能网络路由可以正确识别与提供这些位置连接的网络电路相关的流量。
 
-Office位置可能会自动检测为 Microsoft 正在进行的网络遥测集合的一部分。 因此，某些位置可能会预先填充到租户的管理中心。 
+Office位置可能会自动检测为 Microsoft 正在进行的网络遥测集合的一部分。 因此，某些位置可能会预先填充在租户的管理中心中。 
 
 如果这些位置准确，则只需为每个所需位置启用通知网络路由功能，并配置 Internet 线路及其公用 IP 地址。 
 
@@ -146,7 +146,7 @@ Office位置可能会自动检测为 Microsoft 正在进行的网络遥测集合
 
 ### <a name="step-1-open-sd-wan-solution-configuration-options"></a>步骤 1：打开 SD-WAN 解决方案配置选项
 
-In the [Microsoft 365 管理中心](https://admin.microsoft.com/)select **Health > Network connectivity** in the left-left navigation pane.
+In the [Microsoft 365 管理中心](https://admin.microsoft.com/)select **Health > Network connectivity** in the left-hand navigation pane.
 
 选择 **设置 > SD-WAN 解决方案"** 以打开通知网络路由配置窗格。
 
@@ -171,6 +171,6 @@ In the [Microsoft 365 管理中心](https://admin.microsoft.com/)select **Health
 
 ## <a name="related-topics"></a>相关主题
 
-[Microsoft 365 管理中心 (预览) ](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理中心 (预览版中的网络连接) ](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365网络连接位置服务 (预览) ](office-365-network-mac-location-services.md)

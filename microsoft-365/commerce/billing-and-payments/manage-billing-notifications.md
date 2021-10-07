@@ -9,7 +9,7 @@ ms.reviewer: prkalid, guyb
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,20 +21,20 @@ search.appverid:
 - MET150
 description: 了解如何管理接收帐单通知电子邮件和发票附件的人。
 ms.date: 03/17/2021
-ms.openlocfilehash: a49598cd1b361a85af8455b0aff19e11fcf96526
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0f33029d874ee3564eed272cbc670aacaf10b283
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200673"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189677"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>管理帐单通知和发票附件
 
-通过 **"帐单** 通知"页面，你可以管理接收组织的帐单通知电子邮件的人。 该页面还提供了以电子邮件附件方式接收 [组织的发票的选项](#receive-your-organizations-invoices-as-email-attachments)。
+帐单 **通知** 页面允许你管理谁接收组织的帐单通知电子邮件。 该页面还提供了以电子邮件附件方式接收 [组织的发票的选项](#receive-your-organizations-invoices-as-email-attachments)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-你必须是全局管理员才能执行本文中所述的步骤。 计费管理员可以进行其中一些更改，如以下部分所述。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+你必须是全局管理员才能执行本文中所述的步骤。 计费管理员可以进行其中一些更改，如以下部分所述。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="change-the-language-you-receive-email-in"></a>更改接收电子邮件的语言
 
@@ -88,7 +88,7 @@ ms.locfileid: "59200673"
 > [!NOTE]
 > 帐单管理员还可以执行本部分中的步骤。
 
-当新发票准备就绪时，你可以将组织的发票副本作为 PDF 文件附加到发票通知电子邮件中。 使用以下步骤接收作为附件的发票。
+在准备好新发票时，你可以将组织的发票副本作为 PDF 文件附加到发票通知电子邮件中。 使用以下步骤接收作为附件的发票。
 
 1. 在管理中心中，转到“**账单**”  >  “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。
 2. 在 **"帐单通知设置"下**，选择 **"编辑通知设置"。**
@@ -98,9 +98,9 @@ ms.locfileid: "59200673"
 
 ## <a name="what-if-i-have-a-billing-profile"></a>如果我有计费配置文件，应该怎么做？
 
-如果你有计费配置文件，那么本文中介绍的一些步骤对于你的某些订阅可能略有不同。 本节介绍这些差异。 [我如何知道我是否具有计费配置文件？](manage-billing-profiles.md)
+如果你有计费配置文件，那么本文中介绍的一些步骤对于你的一些订阅可能略有不同。 本节介绍这些差异。 [我如何知道我是否具有计费配置文件？](manage-billing-profiles.md)
 
-### <a name="who-receives-billing-notifications"></a>Who接收帐单通知？
+### <a name="who-receives-billing-notifications"></a>Who帐单通知？
 
 帐单通知电子邮件将发送到分配了以下角色之一的用户的主电子邮件地址和备用电子邮件地址：
 
@@ -112,7 +112,7 @@ ms.locfileid: "59200673"
 
 若要更改接收您组织的帐单通知的用户，请使用以下步骤更改分配给用户的角色。
 
-1. 在管理中心中，转到"帐单 **""**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单&付款</a>"页面。
+1. In the admin center， go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing & payments</a> page.
 2. 在" **计费配置文件"** 选项卡上，选择计费配置文件。
 3. 在"**计费配置文件角色**"部分，为"**计费配置文件所有者**"、"计费配置文件参与者"或"发票管理员"分配 **或删除角色**。
 
@@ -120,7 +120,7 @@ ms.locfileid: "59200673"
 
 若要将发票作为发票通知的附件接收，请使用以下步骤为特定的计费配置文件启用此设置。
 
-1. 在管理中心中，转到"帐单 **""**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单&付款</a>"页面。
+1. In the admin center， go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing & payments</a> page.
 2. 选择" **计费配置文件** "选项卡，然后从列表中选择计费配置文件。
 3. 在计费配置文件详细信息页面上，在获取 **电子邮件附件中的发票下**，将开关切换到 **开**。
 

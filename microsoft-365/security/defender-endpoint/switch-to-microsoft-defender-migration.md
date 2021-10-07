@@ -2,15 +2,13 @@
 title: 将非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
 description: 转换到 Microsoft Defender for Endpoint，其中包含Microsoft Defender 防病毒解决方案的解决方案。
 keywords: 迁移， windows defender， 高级终结点保护， 防病毒， 反恶意软件， 被动模式， 主动模式
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -24,12 +22,12 @@ ms.custom: migrationguides
 ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: e9562ae976e4eeac1197c5280caebef449ae0180
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: e7b6777970102b71f61fcaed7a8a13daf8d73fa7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776760"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205195"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>将非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
 
@@ -37,7 +35,7 @@ ms.locfileid: "59776760"
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="将终结点保护解决方案切换到 Defender for Endpoint。":::
 
-当你切换到 Defender for Endpoint 时，你首先在活动模式下使用非 Microsoft 防病毒/反恶意软件保护。 然后，在被动Microsoft Defender 防病毒配置你的设备，然后将你的设备载入到 Defender for Endpoint。 接下来，配置终结点保护功能，将Microsoft Defender 防病毒设置为活动模式，并验证一切是否正常运行。 最后，删除非 Microsoft 解决方案。
+当你切换到 Defender for Endpoint 时，你首先在活动模式下使用非 Microsoft 防病毒/反恶意软件保护。 然后，在被动Microsoft Defender 防病毒配置设备，然后将设备载入 Defender for Endpoint。 接下来，配置终结点保护功能，将Microsoft Defender 防病毒设置为活动模式，并验证一切是否正常运行。 最后，删除非 Microsoft 解决方案。
 
 ## <a name="the-migration-process"></a>迁移过程
 
@@ -61,7 +59,7 @@ ms.locfileid: "59776760"
 
 |功能|说明|
 |---|---|
-|[威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)|威胁& 漏洞管理功能有助于识别、评估和修正终结点（如 (设备）中的) 。|
+|[威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)|威胁& 漏洞管理功能有助于识别、评估和修正跨终结点（如 (设备）中的) 。|
 |[减少攻击面](overview-attack-surface-reduction.md)|攻击面减少规则有助于保护组织的设备和应用程序免受网络威胁和攻击。|
 |[下一代保护](microsoft-defender-antivirus-in-windows-10.md)|下一代保护包括Microsoft Defender 防病毒帮助阻止威胁和恶意软件。|
 |[终结点检测和响应](overview-endpoint-detection-response.md)|终结点检测和响应功能可检测、调查和响应入侵尝试和主动泄露。|

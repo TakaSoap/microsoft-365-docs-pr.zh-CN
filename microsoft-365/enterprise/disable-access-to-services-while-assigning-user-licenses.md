@@ -8,7 +8,7 @@ audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 f1.keywords:
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: 了解如何使用 PowerShell for Microsoft 365 同时向用户帐户分配许可证和禁用特定服务Microsoft 365。
-ms.openlocfilehash: cf3ae327000f2f0bdb93dfdad8429c741a52c30f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5b7130930097970f5cfabc9a7599c211393b7c7a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162380"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189161"
 ---
 # <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>在分配用户Microsoft 365禁用对服务的访问权限
 
@@ -81,7 +81,7 @@ Get-MsolAccountSku
 
 在命令的  `Get-MsolAccountSku` 显示中：
 
-- **AccountSkuId** 是您的组织的订阅，格式 \<OrganizationName> \<Subscription> 为 ： 。 \<OrganizationName>是当你在组织中注册时提供Microsoft 365，并且对于你的组织是唯一的。 \<Subscription>该值用于特定订阅。 例如，对于 litwareinc：ENTERPRISEPACK，组织名称为 litwareinc，订阅名称为 ENTERPRISEPACK (Office 365 企业版 E3) 。
+- **AccountSkuId** 是组织采用 ： \<OrganizationName> 格式 \<Subscription> 的订阅。 \<OrganizationName>是当你在组织中注册时提供Microsoft 365，并且对于你的组织是唯一的。 \<Subscription>该值用于特定订阅。 例如，对于 litwareinc：ENTERPRISEPACK，组织名称为 litwareinc，订阅名称为 ENTERPRISEPACK (Office 365 企业版 E3) 。
 
 - **ActiveUnits** 是已购买订阅的许可证数。
 
@@ -89,7 +89,7 @@ Get-MsolAccountSku
 
 - **ConsumedUnits** 是已分配给订阅用户的许可证数。
 
-请注意包含要许可的用户Microsoft 365订阅的 AccountSkuId。 此外，请确保有足够的许可证可分配 (**ActiveUnits** 值减去 **ConsumedUnits) 。**
+请注意包含要许可的用户Microsoft 365订阅的 AccountSkuId。 此外，还要确保有足够的许可证来从 **ActiveUnits** (**分配 ConsumedUnits**) 。
 
 接下来，运行此命令以查看有关所有Microsoft 365中可用的服务计划的详细信息：
 
@@ -147,7 +147,7 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 
 ### <a name="for-multiple-users"></a>对于多个用户
 
-若要为多个用户执行此管理任务，请为包含 UserPrincipalName 和 UsageLocation (CSV) 文本文件创建一个逗号分隔值。 下面是一个示例：
+若要为多个用户执行此管理任务，请为包含 UserPrincipalName 和 UsageLocation (CSV) 创建一个逗号分隔值。 下面是一个示例：
 
 ```powershell
 UserPrincipalName,UsageLocation

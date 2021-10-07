@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c0147071c79acd29db52f86aebdff2dfcf5762f0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d6ce6d8f081141214c8d10ea21898fb66e3e0c10
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170967"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205363"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>管理 Microsoft Defender for Endpoint 警报
 
@@ -80,7 +80,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 2. 选择 **"创建抑制规则"。**
 
-    可以使用这些属性创建抑制条件。 在每种条件之间应用 AND 运算符，因此仅在满足所有条件时，才进行抑制。
+    可以使用这些属性创建抑制条件。 在每种条件之间应用 AND 运算符，因此仅在满足所有条件时才进行抑制。
 
     - 文件 SHA1
     - 文件名 - 支持通配符
@@ -115,7 +115,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 例如，团队主管可以审阅所有 **新** 警报，并决定将其分配给进行中 **队列** ，以进一步分析。
 
-或者，如果团队领导知道警报是无害的、来自与安全管理员 (无关的设备（例如属于安全管理员) 的设备）或正在通过早期警报处理，则他们可以将警报分配给已解决队列。
+或者，如果团队领导知道警报是无害的、来自与安全管理员 (（例如属于安全管理员) 的设备）无关，或者正在通过早期警报处理，则他们可以将警报分配给已解决队列。
 
 ## <a name="alert-classification"></a>警报分类
 

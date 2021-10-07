@@ -9,21 +9,21 @@ ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom:
 - AdminSurgePortfolio
 - commerce_ssp
 search.appverid:
 - MET150
-description: 用户可以了解如何管理自助购买。
+description: 用户可以了解如何管理其自助购买。
 ms.date: 03/17/2021
-ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e4d8fe771340efa1e5084e77a1870e4db20bfe67
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171397"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203347"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助购买（用户）
 
@@ -160,14 +160,14 @@ ms.locfileid: "59171397"
 
 ### <a name="update-an-existing-payment-method"></a>更新现有的付款方式
 
-1. 在管理中心中，转到"帐单 **""**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单&付款</a>"页面。
+1. In the admin center， go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing & payments</a> page.
 2. 在" **付款方式"** 选项卡上，从列表中选择现有的付款方式。
 3. 在右侧窗格中，选择"编辑 **"。** 你可以更改安全代码、到期日期、卡片上的名称和地址。
 4. 进行任何所需的更改，然后选择"保存 **"。**
 
 ### <a name="add-a-new-payment-method"></a>添加新的付款方式
 
-1. 在管理中心中，转到"帐单 **""**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单&付款</a>"页面。
+1. In the admin center， go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing & payments</a> page.
 2. 在"**付款方式"** 选项卡上，选择 **"添加付款方式"。**
 3. 在 **"添加付款方式"** 窗格中，输入新付款方式的信息，然后选择"添加 **"。**
 

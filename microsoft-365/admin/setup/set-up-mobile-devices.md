@@ -1,5 +1,5 @@
 ---
-title: 为商业用户设置Microsoft 365移动设备
+title: 为企业用户设置Microsoft 365移动设备
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -26,17 +26,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: 在 Office 或 Android 手机上iPhone你的工作文件，Office中的工作文件将受适用于Microsoft 365保护。
-ms.openlocfilehash: b60fc1e0d228e66e4403a932426000b44e4b9354
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+description: 在 Office 或 Android 手机上iPhone，Office 应用中的工作文件将受适用于Microsoft 365保护。
+ms.openlocfilehash: f50126363722b5c1b2a988c6ec0707e2e2c6b7ac
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59785947"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188825"
 ---
-# <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>为商业用户设置Microsoft 365移动设备
+# <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>为企业用户设置Microsoft 365移动设备
 
-按照标签中的说明在 iPhone 或 Android 手机上安装 Office。 按照这些步骤操作后，在Office中创建的工作文件将受适用于Microsoft 365保护。
+按照标签中的说明在 iPhone 或 Android 手机上安装 Office。 执行这些步骤后，在 Office 中创建的工作文件将受适用于Microsoft 365保护。
 
 此示例适用于 Outlook，但也适用于要安装的任何其他 Office 应用程序。
   
@@ -44,7 +44,7 @@ ms.locfileid: "59785947"
 
 ## <a name="iphone"></a>[iPhone](#tab/iPhone)
   
-观看简短视频，了解如何在适用于Office iOS 设备上设置 Microsoft 365 应用。<br><br>
+观看有关如何使用适用于Office在 iOS 设备上设置 Microsoft 365 应用的简短视频。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
@@ -60,9 +60,9 @@ ms.locfileid: "59785947"
   
 安装完成后，点击" **打开**"按钮打开 Outlook，然后点击" **开始使用**"。
   
-![具有"Outlook"按钮入门屏幕截图。](../../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
+![按钮Outlook按钮入门屏幕截图。](../../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-在"添加电子邮件帐户"屏幕上的"添加帐户"上输入你的工作电子邮件地址， \> 然后输入Microsoft 365企业凭据的 \> **"登录"。**
+在"添加电子邮件帐户"屏幕上的"添加帐户"上输入你的工作电子邮件地址， \> 然后Microsoft 365你的企业凭据 \> **"登录"。**
   
 ![登录到你的工作帐户。](../../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -90,7 +90,7 @@ Enter Microsoft Outlook in the Google Play search box and tap **Install**. 完�
   
 ![点击"打开"打开Outlook应用。](../../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-在 Outlook 应用中，点击"入门"，然后Microsoft 365你的企业电子邮件帐户"继续"， \> 然后使用你的组织凭据登录。
+在 Outlook 应用中，点击"入门"，然后Microsoft 365你的企业电子邮件帐户"继续"， \> 然后使用组织凭据登录。
   
 ![登录组织帐户Outlook。](../../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -100,7 +100,7 @@ Enter Microsoft Outlook in the Google Play search box and tap **Install**. 完�
   
 在 Play Store 中，安装Intune 公司门户。
   
-![Screenshot that shows the install button for Intune 公司门户 in Google Play Store.](../../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
+![显示 Google Play 应用商店中 Intune 公司门户的安装按钮的屏幕截图。](../../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   
 再次打开 Outlook，然后输入并确认 PIN。现在即可开始使用 Outlook 应用。
   

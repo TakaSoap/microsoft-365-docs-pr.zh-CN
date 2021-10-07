@@ -9,7 +9,7 @@ ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 description: 了解如何购买新的商业Microsoft 365许可证。
 ms.date: 09/16/2021
-ms.openlocfilehash: 51f90e3d2f5a49ce8d20c0ab905bd72c0494f653
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: 7a6be3ea1c7592b2c05983a0648b8eee87ab2049
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477571"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204787"
 ---
 # <a name="buy-microsoft-365-licenses"></a>购买Microsoft 365许可证
 
@@ -39,14 +39,14 @@ ms.locfileid: "59477571"
 添加新用户时，将需要为这些用户购买Microsoft 365许可证。
 
 > [!NOTE]
-> 对于一些订阅，只能在购买或续订订阅后的有限时段取消。 如果取消时段已过，请关闭定期计费以在订阅期限结束时取消订阅。
+> 对于某些订阅，只能在购买或续订订阅后的有限时间段内取消。 如果取消时段已过，请在订阅期限结束时关闭定期计费以取消订阅。
 
 ## <a name="try-it"></a>试一试！
 
 1. In the Microsoft 365 管理中心， choose **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your Products**</a>， and then select your subscription.
 1. 选择 **"购买许可证"。**
 1. 输入要购买的许可证数。
-1. 选择 **“保存”**。
+1. 选择“**保存**”。
 1. 然后关闭窗口。
 1. 新许可证将添加到你的订阅。
 1. 若要分配新许可证，请选择分配 **许可证**。

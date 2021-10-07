@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8066fe3cbb0a8c6662048e5f349f834428f419e9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 639b2255b7bef0e673a5816aed0da48715c682f6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196619"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204067"
 ---
 # <a name="isolate-machine-api"></a>隔离计算机 API
 
@@ -51,8 +51,8 @@ ms.locfileid: "59196619"
 
 > [!IMPORTANT]
 >
-> - 完全隔离适用于版本 1703 Windows 10上的设备。
-> - 选择性隔离适用于 Windows 10 版本 1709 或更高版本上的设备。
+> - 完全隔离适用于 Windows 10 版本 1703 上的设备。
+> - 选择性隔离适用于 Windows 10版本 1709 或更高版本上的设备。
 > - 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议对适用于终结点的 Microsoft Defender 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
 
 ## <a name="permissions"></a>权限
@@ -61,7 +61,7 @@ ms.locfileid: "59196619"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Machine.Isolate|"隔离计算机"
+Application|Machine.Isolate|"隔离计算机"
 委派（工作或学校帐户）|Machine.Isolate|"隔离计算机"
 
 > [!NOTE]
@@ -80,8 +80,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/isolate
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
-Content-Type|string|application/json. **必需**。
+Authorization|String|Bearer {token}。 必需。
+Content-Type|string|application/json. 必需。
 
 ## <a name="request-body"></a>请求正文
 

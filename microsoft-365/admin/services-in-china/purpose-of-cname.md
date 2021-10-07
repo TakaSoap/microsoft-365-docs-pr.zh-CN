@@ -12,7 +12,7 @@ ms.collection:
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +20,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 深入了解 Office 365 中的"MSOID"CNAME 记录，该记录将你引导至针对身份验证过程的最佳服务器，以便你获得更快的响应。
 monikerRange: o365-21vianet
-ms.openlocfilehash: a1d587abc9db03c9a1f7c5f66711fde3648a0e96
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: HT
+ms.openlocfilehash: e51847065ac3f91f44b8be35932869e9418e8a70
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169735"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188789"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>MSOID 的 Office 365 CNAME 记录有什么用途？
 

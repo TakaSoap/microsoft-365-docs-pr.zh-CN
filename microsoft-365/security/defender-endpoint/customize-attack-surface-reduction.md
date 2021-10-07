@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4158541714807c67ae446435b6d1234ddc5a3c7f
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 6f5cc7bb514001666bc1223630738faa2f94e8df
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043115"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204031"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>自定义减少攻击面规则
 
@@ -42,7 +42,7 @@ ms.locfileid: "60043115"
 
 - Windows 10 专业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - Windows 10 企业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
-- Windows服务器版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
+- WindowsServer 版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - Windows Server 2022
 
@@ -79,13 +79,13 @@ ms.locfileid: "60043115"
 |阻止滥用被攻击的易受攻击的已签名驱动程序|`56a863a9-875e-4185-98a7-b882c64b5ce5`|
 |阻止 Adobe Reader 创建子进程|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|
 |阻止所有Office应用程序创建子进程|`d4f940ab-401b-4efc-aadc-ad5f3c50688a`|
-|阻止来自本地安全Windows子系统的凭据 (lsass.exe) |`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|
+|阻止本地安全机构子系统Windows窃取凭据 (lsass.exe) |`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|
 |阻止来自电子邮件客户端和 Webmail 的可执行内容|`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`|
 |阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件|`01443614-cd74-433a-b99e-2ecdc07bfc25`|
 |阻止执行可能混淆的脚本|`5beb7efe-fd9a-4556-801d-275e5ffc04cc`|
 |阻止 JavaScript 或 VBScript 启动下载的可执行内容|`d3e037e1-3eb8-44c8-a917-57927947596d`|
 |阻止Office应用程序创建可执行内容|`3b576869-a4ec-4529-8536-b80a7769e899`|
-|阻止Office应用程序将代码注入其他进程|`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`|
+|阻止Office将代码注入其他进程|`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`|
 |阻止Office应用程序创建子进程|`26190899-1602-49e8-8b27-eb1d0a1ce869`|
 |通过 WMI 事件订阅阻止持久性|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|
 |阻止源自 PSExec 和 WMI 命令的进程创建|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|
@@ -102,7 +102,7 @@ ms.locfileid: "60043115"
 
 2. 在组 **策略管理编辑器中**，转到计算机 **配置，** 然后单击 **管理模板**。
 
-3. 展开树以 **Windows攻击** \>  \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \> **减少的组件**。
+3. 展开树以 **Windows攻击** \>  \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \> **的组件**。
 
 4. 双击从攻击 **面减少规则中排除** 文件和路径设置，将选项设置为 **已启用**。 选择 **"显示** "，在"值名称"列中 **输入每个文件或** 文件夹。 在"值"**列中为** 每个项目输入 **0。**
 
@@ -111,7 +111,7 @@ ms.locfileid: "60043115"
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>使用 PowerShell 排除文件和文件夹
 
-1. 在 **"管理"中"开始"菜单 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"管理"中"开始"菜单 powershell，** 右键 **单击**"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell

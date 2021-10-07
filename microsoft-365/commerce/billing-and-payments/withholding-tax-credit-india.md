@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: None
+ms.localizationpriority: ''
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 1856f9b7d56f39dbc4326c9175c2e70fc8c7c0c7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cf4e742dfae6866a20690b900604042a1c411503
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171149"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189629"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>向印度客户申请预扣税 (预扣) 
 
@@ -34,7 +34,7 @@ ms.locfileid: "59171149"
 >
 > 如果你的组织不位于印度，请参阅申请帐户预扣税的信用 ([全球 ](withholding-tax-credit-global.md)客户) 。
 
-印度客户收到由 Microsoft Regional Sales Pte Ltd. 新加坡 (MRS) 计费的 Web Direct (Azure 和 Microsoft 365) 发票，然后向新加坡进行跨边界付款以结算发票。 如果你在汇寄该付款时预扣了税款，本文将介绍使用 MRS 在帐户中申请预扣税 (WHT) 的信用的过程。
+印度客户会收到由 Microsoft Regional Sales Pte Ltd. 新加坡 (MRS) 计费的 Web Direct (Azure 和 Microsoft 365) 发票，然后向新加坡进行跨边界付款以结算发票。 如果你在汇寄付款时预扣了税款，本文将介绍使用 MRS 在帐户中申请预扣税 (WHT) 的信用的过程。
 
 ## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>对于通过支票或线路支付发票的客户
 
@@ -72,7 +72,7 @@ ms.locfileid: "59171149"
 > [!IMPORTANT]
 >
 > - 客户在支付发票后只能提交 WHT 金额退款请求。
-> - 预扣税信用表上的发票金额必须与 TDS 证书中标识的发票金额相匹配。 如果两个窗体之间的发票金额不同，则必须在预扣税额度表单中指定差异的原因。 审查团队会检查此信息，他们可能会提出明确的问题（如果需要）。
+> - 预扣税信用表上的发票金额必须与 TDS 证书中标识的发票金额匹配。 如果两个窗体之间的发票金额不同，则必须在预扣税额度表单中指定差异的原因。 审查团队会检查此信息，他们可能会提出明确的问题（如果需要）。
 > - TDS 证书文件必须采用以下文件格式之一：.PDF或仅 Image (。JPEG、.PNG 或 .GIF) 。 此外，文件名不得包含空格或特殊字符。 文件大小不能超过 1 MB。
 
 提交请求后，它将进入审批流程，审批过程要么批准完成，要么发送回你进行更正。

@@ -2,7 +2,7 @@
 title: 预览体验计划风险管理策略
 description: 了解 Microsoft 365 中的预览体验计划风险管理策略
 keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2f9a299faad33dbba09d9e32f3c860f9f7bd6311
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: ce78ca3459088907b497c540f438fdc960d3d350
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60087805"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204283"
 ---
 # <a name="insider-risk-management-policies"></a>预览体验计划风险管理策略
 
@@ -144,7 +144,7 @@ ms.locfileid: "60087805"
 
 在策略向导中创建预览体验计划风险管理策略时，可以从以下优先级中选择：
 
-- **SharePoint 网站**：与所定义的 SharePoint 网站中所有文件类型关联的任何活动都将被分配更高的风险分数。 配置策略并选择优先级 Share Point 网站的用户可以选择SharePoint他们有权访问的网站。 如果SharePoint当前用户无法选择策略中的网站，则具有所需权限的另一个用户稍后可以选择策略的网站，或者应向当前用户授予对所需网站的访问权限。
+- **SharePoint 网站**：与所定义的 SharePoint 网站中所有文件类型关联的任何活动都将被分配更高的风险分数。 配置策略并选择优先级 Share Point 网站的用户可以选择SharePoint他们有权访问的网站。 如果SharePoint当前用户无法选择策略中的网站，则具有所需权限的另一个用户稍后可以选择策略的网站，或者应为当前用户授予访问所需网站的权限。
 - **敏感信息类型**：与包含 [敏感信息类型](sensitive-information-type-entity-definitions.md)的内容相关的任何活动都被分配了较高的风险评分。
 - **敏感度标签**：与具有特定标签 [敏感度标签](sensitivity-labels.md) 的任何活动都将被分配更高的风险分数。
 
@@ -287,7 +287,7 @@ ms.locfileid: "60087805"
     - **敏感度标签**： 选择 **添加敏感度标签**，然后选择要设置优先级的标签。 例如， *机密* ， *"机密*。
 
     >[!NOTE]
-    >配置策略并选择优先级 Share Point 网站的用户可以选择SharePoint他们有权访问的网站。 如果SharePoint当前用户无法选择策略中的网站，则具有所需权限的另一个用户稍后可以选择策略的网站，或者应向当前用户授予对所需网站的访问权限。
+    >配置策略并选择优先级 Share Point 网站的用户可以选择SharePoint他们有权访问的网站。 如果SharePoint当前用户无法选择策略中的网站，则具有所需权限的其他用户稍后可以选择策略的网站，或者应为当前用户授予对所需网站的访问权限。
 
 12. 选择“**下一步**”以继续。
 13. 在 **指标及触发事件** 页面上，你将在 **预览体验计划风险设置** > **指标** 页面看到到您定义为可用的 [指标](insider-risk-management-settings.md#indicators)。 如果在向导开头选择了 *数据泄露* 模板，则必须从 **DLP 策略** 下拉列表中选择 DLP 策略，以启用触发策略指示器或选择内置触发事件。

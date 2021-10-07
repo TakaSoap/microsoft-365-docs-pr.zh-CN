@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何通过安全链接安全地将业务文件共享给组织外部人员。
-ms.openlocfilehash: 17875dc403c96caac55a5487cf5649d6778ec160
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8881040da7074a6d348698b4b0ac5d005517efc8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196164"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188621"
 ---
 # <a name="securely-share-files-externally"></a>在外部安全地共享文件
 
@@ -33,11 +33,11 @@ ms.locfileid: "59196164"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0?autoplay=false]
 
-在Microsoft 365中，很容易与组织人员共享文件，但有时还需要与组织外部人员共享文件。 若要与客户安全地共享文件，可以发送安全链接。
+在Microsoft 365中，与组织人员共享文件很容易，但有时你还需要与组织外部人员共享文件。 若要与客户安全地共享文件，可以发送安全链接。
 
 ## <a name="try-it"></a>试一试！
 
-1. 在"文档"库顶部，单击"SharePoint"，然后选择"文件夹 **"。** 
+1. 在"文档"库顶部，单击SharePoint"新建"，然后选择"文件夹 **"。**
 1. 为文件夹命名，然后单击"创建 **"。**
 1. Upload要共享的文件共享到新库，或选择"新建"直接在库中创建新文档。
 1. 在"文档"库中选择新文件夹，然后单击"共享 **"** 按钮。

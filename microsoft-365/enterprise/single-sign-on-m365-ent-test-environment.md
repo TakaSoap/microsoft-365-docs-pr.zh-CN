@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,20 +18,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录。
-ms.openlocfilehash: f6fb0ac24f571c329070dd1667f6370c2067d4fd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4a420da5251ecef900f2efe9573db1d51a6bd597
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170592"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202819"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录
 
-*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版测试环境。*
+*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
 
-Azure AD 无缝Sign-On (无缝 SSO) 当用户位于连接到其组织网络的 PC 或设备上时自动登录。 Azure AD 无缝 SSO 使用户能够轻松访问基于云的应用程序，而无需任何其他本地组件。
+Azure AD 无缝Sign-On (无缝 SSO) 当用户位于连接到其组织网络的 PC 或设备上时，可自动登录用户。 Azure AD 无缝 SSO 使用户能够轻松访问基于云的应用程序，而无需任何其他本地组件。
 
-本文介绍如何为 Azure AD Microsoft 365 SSO 配置测试环境。
+本文介绍如何为 Azure AD 无缝 SSO Microsoft 365测试环境。
 
 设置 Azure AD 无缝 SSO 涉及两个阶段：
 - [阶段 1：为 Microsoft 365 测试环境配置密码哈希同步](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -58,7 +58,7 @@ Azure AD 无缝Sign-On (无缝 SSO) 当用户位于连接到其组织网络的 P
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>阶段 2：为 APP1 上的 Azure AD Connect 配置 Azure AD 无缝 SSO
 
-在此阶段，在 APP1 连接 Azure AD 无缝 SSO 配置 Azure AD 连接，然后验证它是否正常工作。
+在此阶段中，在 APP1 连接 Azure AD 无缝 SSO 配置 Azure AD 策略，然后验证其是否正常工作。
 
 ### <a name="configure-azure-ad-connect-on-app1"></a>在 APP1 上配置 Azure AD Connect
 
@@ -76,7 +76,7 @@ Azure AD 无缝Sign-On (无缝 SSO) 当用户位于连接到其组织网络的 P
 
 7. 在"**启用单一登录"页上**，选择 **"输入凭据"。**
 
-8. 在 **"Windows 安全中心"** 对话框中，输入 **user1** 和 user1 帐户的密码，选择"**确定**"，然后选择"下一步 **"。**
+8. 在 **"Windows 安全中心"** 对话框中，输入 **user1** 和 user1 帐户的密码，选择"**确定**"，然后选择"下一 **步"。**
 
 9. 在"**准备配置"页上，** 选择"配置 **"。**
 
@@ -94,7 +94,7 @@ Azure AD 无缝Sign-On (无缝 SSO) 当用户位于连接到其组织网络的 P
 
 4. 在本地 **Intranet 中**，选择"**高级"。**
 
-5. 在 **"将此网站添加到区域**"中，输入 **https <span>：//</span>autologon.microsoftazuread-sso.com**，选择 **"添加**  >  **关闭**  >  **确定**  >  **"。**
+5. 在 **"将此网站添加到区域"中**，输入 **https <span>：//</span>autologon.microsoftazuread-sso.com**，选择 **"添加**  >  **关闭**  >  **确定**  >  **"。**
 
 6. 注销，再重新登录，这次指定不同的帐户。
 
@@ -108,7 +108,7 @@ Azure AD 无缝Sign-On (无缝 SSO) 当用户位于连接到其组织网络的 P
 
 此配置包括：
 
-- 使用Microsoft 365 E5测试标签的试用或付费订阅。\<*your domain name*> 。
+- 使用Microsoft 365 E5测试标签试用或付费订阅。\<*your domain name*> 。
 - 连接到 Internet 的简化的组织 Intranet，由 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机组成。
 - 在 APP1 上运行的 Azure AD Connect，用于将 Azure AD 租户中的帐户和组列表从 Microsoft 365 订阅同步到 TESTLAB AD DS 域。
 - Azure AD 无缝 SSO 已启用，以便模拟 Intranet 上的计算机无需指定用户帐户密码Microsoft 365登录到云资源。

@@ -9,28 +9,28 @@ ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: 使用用户标识、设备和威胁防护服务防止个人数据Microsoft 365。
-ms.openlocfilehash: 5e08ef574e199769e572b3836b3323dc88fc4bbd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 使用安全机制的标识、设备和威胁防护服务防止个人数据Microsoft 365。
+ms.openlocfilehash: a5aa97637b0d44b762d1a1146effdefb932ab47d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197175"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204967"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>使用标识、设备和威胁防护进行数据隐私管理
 
-Microsoft 365提供了许多标识、设备和威胁防护功能，组织可以使用这些功能来帮助遵守与数据隐私相关的合规性法规。 本文介绍数据隐私法规在这些方面要求哪些内容，并提供相关Microsoft 365功能和服务列表，并提供了可帮助您满足实现要求详细信息的链接。
+Microsoft 365提供了许多标识、设备和威胁防护功能，组织可以使用这些功能来帮助遵守与数据隐私相关的合规性法规。 本文介绍数据隐私法规在这些方面要求哪些内容，并提供相关功能Microsoft 365列表，并提供了可帮助您满足实现要求详细信息的链接。
 
 ## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>标识、设备和威胁防护与数据隐私法规如何关联
 
-虽然数据隐私法规的特有性有所不同，但它们所要求的本质是，GDPR 第 5 (1)  (f) 条指出：
+虽然数据隐私法规的特有性有所不同，但它们所要求的本质是，GDPR 第 5 (1)  () 条指出：
 
 - 个人数据的处理方式应该确保个人数据的适当安全性，包括防止未经授权的或非法处理，以及防止意外丢失、销毁或损坏，使用适当的技术或组织措施 (完整性和保密性) 。
 
@@ -48,7 +48,7 @@ Microsoft 365提供了许多标识、设备和威胁防护功能，组织可以�
 
 使用 [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/)标识和 **控件** 访问类别，可以使用这些类别：
 
-- 实施防重播 (，以防止"中间人"攻击) 
+- 实施防重播的身份验证 (防止"中间人"攻击) 
 - 阻止旧式身份验证。
 - 配置用户风险和用户登录风险策略。
 - 为管理员和非管理员启用 MFA (条件) 多重身份验证。
@@ -58,11 +58,11 @@ Microsoft 365提供了许多标识、设备和威胁防护功能，组织可以�
 - 审核用户帐户和状态更改。
 - 查看角色组和管理更改。
 
-对 [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)和"**管理设备**"类别使用"管理设备"类别，可进行以下操作：
+将 [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)用于设备和 **"管理设备"** 类别，可通过这些类别：
 
 - 阻止已越狱且具有 root 权限的移动设备。
 - 配置 Intune 进行移动设备管理。
-- 为 Android、iOS、macOS 和 Windows策略。
+- 为 Android、iOS、macOS 和 Windows合规性策略。
 - 为 Android、iOS、macOS 和 Windows配置文件。
 - 创建适用于 iOS 和 Windows 的应用保护策略。
 - 使用锁屏界面隐藏信息。
@@ -70,7 +70,7 @@ Microsoft 365提供了许多标识、设备和威胁防护功能，组织可以�
 - 要求移动设备在非活动时锁定。
 - 要求移动设备在多个登录失败时进行擦除。
 
-使用 [Exchange Online Protection 和 Microsoft Defender Office 365"](../security/office-365-security/defender-for-office-365.md)抵御 **威胁**"类别，你可以借助这些类别：
+使用 [Exchange Online Protection 和 Microsoft Defender Office 365"](../security/office-365-security/defender-for-office-365.md)威胁防护"**类别，** 你可以借助这些类别：
 
 - 启用 SPF (DMARC 和 DKIM 身份验证) 。
 - 设置 Microsoft Defender Office 365防钓鱼策略。

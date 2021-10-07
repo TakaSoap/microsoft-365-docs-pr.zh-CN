@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e25c6bfb3efabfd53d1babc10c20a46e1f6c0f78
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2980eb4d5fe2d16d38237d3166b9c25810985fab
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195960"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205099"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>威胁分析Microsoft 365 Defender 
 
@@ -35,7 +35,7 @@ ms.locfileid: "59195960"
 **适用于：**
 - Microsoft 365 Defender
 
-> 希望体验 Microsoft 365 Defender？ 你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
+> 想要体验 Microsoft 365 Defender？你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -91,7 +91,7 @@ _威胁分析仪表板。还可以单击"搜索"图标，在与你要阅读的�
 - [**相关事件**](#related-incidents-view-and-manage-related-incidents)
 - [**影响的资产**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
 - [**阻止的电子邮件尝试**](#prevented-email-attempts-view-blocked-or-junked-threat-emails)
-- [**缓解措施**](#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
+- [**缓解**](#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
 
 ### <a name="overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses"></a>概述：快速了解威胁、评估其影响并审查防御
 
@@ -109,7 +109,7 @@ _威胁分析报告的概述部分_
   - 活动警报数及其关联的活动事件数
   - 活动事件的严重性
 - **一段时间的警报** 显示一段时间的相关 **活动****警报和已** 解决警报数。 已解决的警报数指示组织响应与威胁关联的警报的有多快。 理想情况下，图表应显示几天内解决的警报。
-- **影响的资产**— 显示当前至少具有一个与 (关联的活动警报) 邮箱中不同设备和电子邮件帐户的数量。 对于收到威胁电子邮件的邮箱，将触发警报。 查看组织级别和用户级别的策略，查看导致发送威胁电子邮件的覆盖。
+- **影响的资产**— 显示当前至少具有一个与 (关联的活动警报) 邮箱中的不同设备和电子邮件帐户的数量。 对于收到威胁电子邮件的邮箱，将触发警报。 查看组织级别和用户级别的策略，查看导致发送威胁电子邮件的覆盖。
 - **阻止的电子邮件尝试**— 显示过去七天内在传递前被阻止或传递到垃圾邮件文件夹的电子邮件数量。
 
 #### <a name="review-security-resilience-and-posture"></a>查看安全恢复和状态
@@ -127,7 +127,7 @@ _威胁分析报告的概述部分_
 - **报告** 类型 — 帮助您根据特定报告类型查看最相关的报告。 例如，涵盖工具和技术的所有报告。 
 - **筛选器**- 帮助你高效地查看威胁报告列表，并基于特定威胁标记或报告类型筛选视图。 例如，查看与勒索软件类别相关的所有威胁报告或包含漏洞的威胁报告。
 
-##### <a name="how-does-it-work"></a>它的工作原理是什么？
+##### <a name="how-does-it-work"></a>它的工作原理
 
 Microsoft 威胁智能团队向每个威胁报告添加了威胁标记：
 
@@ -168,7 +168,7 @@ _威胁分析报告的相关事件部分_
 如果资产受活动的未解析警报的影响，则认为该资产受到影响。 " **影响的资产"** 选项卡列出了以下类型的受影响资产：
 
 - **影响的设备**- 具有未解析的 Microsoft Defender for Endpoint 警报的终结点。 这些警报通常在看到已知威胁指示器和活动时触发。
-- **影响邮箱**— 已接收已触发 Microsoft Defender for Office 365警报的邮箱。 触发警报的多数消息通常会被阻止，但用户或组织级别的策略可以覆盖筛选器。
+- **影响邮箱**— 已接收已触发 Microsoft Defender for Office 365警报的电子邮件。 触发警报的多数消息通常会被阻止，但用户或组织级别的策略可以覆盖筛选器。
 
 ![威胁分析报告的影响资产部分的图像。](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
@@ -194,7 +194,7 @@ _威胁分析报告的"阻止的电子邮件尝试"部分_
   - PUA 保护 (可能不需要) 应用程序
   - 实时保护
 
-本节中的缓解信息包含来自 危险和漏洞管理[](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的数据，它还提供报告中各个链接的详细向下钻取信息。
+本节中的缓解信息包含来自 危险和漏洞管理[](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的数据，其中还提供了报告中各个链接的详细深化信息。
 
 ![显示安全配置详细信息的威胁分析报告的缓解部分的图像。](../../media/threat-analytics/ta_mitigations_mtp.png)
 
@@ -207,11 +207,11 @@ _威胁分析报告的缓解部分_
 > [!NOTE]
 > 作为统一安全体验的一部分，威胁分析现在不仅适用于 Microsoft Defender for Endpoint，还适用于适用于 Office E5 许可证持有者的 Microsoft Defender。
 >
-> 如果你未使用 Microsoft 365 安全门户 (Microsoft 365 Defender) ，则还可以在 Microsoft Defender 安全中心 门户 (适用于终结点) 的 Microsoft Defender 安全中心 门户中查看报告详细信息 (，而无需 Microsoft Defender for Office data) 。
+> 如果不使用 Microsoft 365 安全门户 (Microsoft 365 Defender) ，则还可以在 Microsoft Defender 安全中心 门户 (适用于 Endpoint) 的 Microsoft Defender 安全中心 门户中查看报告详细信息 (，而无需 Microsoft Defender for Office) 数据。
 
 若要访问威胁分析报告，你需要某些角色和权限。 有关详细信息[，请参阅基于角色的访问控制中的Microsoft 365 Defender](custom-roles.md)角色。
 
-- 若要查看警报、事件或受影响的资产数据，你需要具有针对 Office 或适用于终结点警报数据的 Microsoft Defender 的权限，或同时拥有这两者的权限。
+- 若要查看警报、事件或受影响的资产数据，你需要具有 Microsoft Defender for Office 或 Microsoft Defender for Endpoint 警报数据的权限，或同时拥有这两者的权限。
 - 若要查看阻止的电子邮件尝试，你需要拥有 Microsoft Defender 的权限，才能Office数据。 
 - 若要查看缓解，你需要具有在 Microsoft Defender for Endpoint 危险和漏洞管理数据的权限。
 

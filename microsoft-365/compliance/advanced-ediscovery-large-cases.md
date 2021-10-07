@@ -10,22 +10,22 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 在管理中Advanced eDiscovery大的情况，以便可以添加更多项目来审阅集，并充分利用其他增加的限制。
-ms.openlocfilehash: 43211dbeed7621de64d696e21fa647d5023350bb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9481f268e47f10955d4438a0088d7153ebf9d21b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171387"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203335"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>在预览版Advanced eDiscovery (大) 
 
-越来越多的组织将 Advanced eDiscovery 解决方案用于Microsoft 365电子数据展示流程。 这包括响应法规请求、调查和诉讼。 随着Advanced eDiscovery数量的增加，常见的客户要求是扩展可在单个网站集中管理的内容Advanced eDiscovery量。 为了帮助容纳数据总量和项目总数情况下的显著增加，你现在可以在创建大案例时选择大Advanced eDiscovery格式。  
+越来越多的组织将 Advanced eDiscovery 解决方案用于Microsoft 365电子数据展示流程。 这包括响应法规请求、调查和诉讼。 随着Advanced eDiscovery增加，常见的客户要求是增加可在单个网站集中管理Advanced eDiscovery量。 为了帮助容纳数据总量和项目总数情况下的显著增加，你现在可以在创建大案例时选择大Advanced eDiscovery格式。  
 
 ## <a name="create-a-large-case"></a>创建大案例
 
@@ -33,9 +33,9 @@ ms.locfileid: "59171387"
 
 1. 转到 <https://compliance.microsoft.com> 并登录。
 
-2. 在导航窗格的左侧导航窗格中，Microsoft 365 合规中心"**电子数据展示>高级"。**
+2. 在页面的左侧导航窗格中 **，Microsoft 365 合规中心"电子数据展示>高级"。**
 
-3. 在 **"Advanced eDiscovery"** 页上，单击"事例 **"** 选项卡，然后单击"**创建事例"。**
+3. 在 **"Advanced eDiscovery"** 页上，单击"**事例"** 选项卡，然后单击"**创建事例"。**
 
    将显示 **"新建电子数据展示案例** "飞出页。 " **大小写格式** "部分提供用于创建大案例的选项。 如果需要在短时间内收集大量内容，请选择此案例类型。
 
@@ -63,7 +63,7 @@ ms.locfileid: "59171387"
 
 ## <a name="known-issues"></a>已知问题
 
-- 将内容导出为 Loose 文件和 **PST** 的选项当前不支持，但在大多数情况下 (选项显示为灰色) 。 即将支持适用于大案例的此导出选项。 有关导出内容的信息，请参阅从 Advanced eDiscovery[审阅集导出文档](export-documents-from-review-set.md)。
+- 将内容导出为 Loose 文件和 **PST** 的选项当前不支持，但在大多数情况下 (选项显示为灰色) 。 即将支持适用于大案例的此导出选项。 有关导出内容的信息，请参阅从网站中的审阅集[导出Advanced eDiscovery。](export-documents-from-review-set.md)
 
 - 在将保管人和非托管数据源添加到事例时发生的高级索引在大型情况下当前不受支持。 索引作业已创建，但无法完成。 大情况下的高级索引将很快受到支持。 有关高级索引功能的信息，请参阅 [保管人数据的高级索引](indexing-custodian-data.md)。
 

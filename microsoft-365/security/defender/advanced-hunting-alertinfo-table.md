@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 AlertInfo 表
 description: 了解高级搜寻架构的 AlertInfo 表中的警报生成事件
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， AlertInfo， 警报， 严重性， 类别， MITRE， ATT&CK， Microsoft Defender for Endpoint， Microsoft Defender for Office 365， Microsoft Cloud App Security， MCAS， 和 Microsoft Defender for Identity
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， table， column， 数据类型， 说明， AlertInfo， alert， severity， category， MITRE， ATT&CK， Microsoft Defender for Endpoint， Microsoft Defender for Office 365， Microsoft Cloud App Security， MCAS， and Microsoft Defender for Identity
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 69c9201dbc3458cd4ad09a72f2ea0d7ea3bb2d2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae168a74e4f01ebe9a6e62d3aa7105167064e25e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195999"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205135"
 ---
 # <a name="alertinfo"></a>AlertInfo
 

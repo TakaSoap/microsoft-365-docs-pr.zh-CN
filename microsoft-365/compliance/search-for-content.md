@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 使用 Microsoft 365 合规中心 中的内容搜索电子数据展示工具可快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档以及 Skype for Business 中的即时消息对话。
-ms.openlocfilehash: 577b3af2bbeb1856f55de31123b71f2597c6604a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6a49dffccb701958912fb0185eec4a8312f22429
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169614"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202999"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>使用内容搜索工具搜索内容
 
-使用 Microsoft 365 合规中心 中的内容搜索工具可快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档以及 Skype for Business 中的即时消息对话。 您可以使用内容搜索工具在协作工具（如组和组）中搜索电子邮件、文档和Microsoft Teams Microsoft 365对话。
+使用 Microsoft 365 合规中心 中的内容搜索工具可快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档以及 Skype for Business 中的即时消息对话。 可以使用内容搜索工具在协作工具（如组和组）中搜索电子邮件、文档和Microsoft Teams Microsoft 365对话。
   
 ## <a name="search-for-content"></a>搜索内容
 
@@ -72,11 +72,11 @@ ms.locfileid: "59169614"
 
 ## <a name="use-scripts-for-advanced-scenarios"></a>将脚本用于高级方案
 
-有时，您必须执行更高级、更复杂且重复的内容搜索任务。 在这些情况下，使用安全与合规中心 PowerShell 中的命令&快捷。 为了帮助简化这一过程，我们创建了多个安全与合规& PowerShell 脚本，以帮助你完成与内容搜索相关的复杂任务。
+有时，您必须执行更高级、更复杂且重复的内容搜索任务。 在这些情况下，使用安全与合规中心 PowerShell 中的命令&快捷。 为了帮助简化这一过程，我们已创建多个安全与合规& PowerShell 脚本，以帮助你完成与内容搜索相关的复杂任务。
 
-- [当您确信响应](use-content-search-for-targeted-collections.md) 案例的项目位于该文件夹中时 (特定邮箱和网站文件夹) 称为 *目标集合"
+- [当您确信对](use-content-search-for-targeted-collections.md) 案例做出响应 (位于该文件夹中时，搜索特定邮箱和网站文件夹) 称为 *目标集合的邮箱和网站文件夹
 
-- [在邮箱和OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)位置搜索用户列表
+- [搜索邮箱OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)搜索用户列表
 
 - [创建、报告并删除多个搜索](create-report-on-and-delete-multiple-content-searches.md) ，以快速高效地标识和剔除搜索数据
 

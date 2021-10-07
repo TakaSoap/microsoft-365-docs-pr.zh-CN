@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: 了解如何在多地理位置环境中配置搜索。 只有某些客户端（OneDrive）可以在多地理位置环境中返回结果。
-ms.openlocfilehash: a991638e5f0b1270950b50823def61eb4d60669b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d6d6895c6dc393bb1f28dff60dea996bf80aad5a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170604"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204175"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>为 Microsoft 365 多地理位置配置搜索
 

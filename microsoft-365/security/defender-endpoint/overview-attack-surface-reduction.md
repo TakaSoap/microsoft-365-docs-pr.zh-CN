@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: jweston-1
 ms.author: v-jweston
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -19,12 +19,12 @@ ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: 336fbbbbbe07747a8dbe12c46fd3bbe2483c08b9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5950dba146260f69256f5b64a2a44f666060a18b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175430"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204003"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>攻击面减少功能概述
 
@@ -48,9 +48,9 @@ ms.locfileid: "59175430"
 
 | 文章 | 说明 |
 |:---|:---|
-| [基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 使用容器隔离Microsoft Edge帮助防范恶意网站。 |
+| [基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 使用容器隔离Microsoft Edge保护恶意网站。 |
 | [应用程序控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | 使用应用程序控制，以便应用程序必须获得信任才能运行。 |
-| [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑的应用 (包括文件加密勒索软件恶意软件) 更改关键系统文件夹中的文件 (要求Microsoft Defender 防病毒)  |
+| [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑 (包括文件加密勒索软件恶意软件) 更改关键系统文件夹中的文件 (需要Microsoft Defender 防病毒)  |
 | [网络保护](network-protection.md) | 将保护扩展到组织设备上网络流量和连接。  (需要Microsoft Defender 防病毒)  |
 | [漏洞保护](exploit-protection.md) | 帮助保护组织使用的操作系统和应用免遭攻击。 Exploit Protection 还适用于第三方防病毒解决方案。 |
 | [攻击面减少规则](attack-surface-reduction.md) | 使用有助于停止恶意软件的智能规则，减少应用程序中的漏洞（攻击面）。  (需要Microsoft Defender 防病毒) 。 |

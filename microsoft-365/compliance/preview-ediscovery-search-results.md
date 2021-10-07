@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 预览 Microsoft 365 合规中心中内容搜索或核心电子数据展示搜索返回的结果示例。
-ms.openlocfilehash: ac9929ee8639c4d653f8e9dfe680a5df5c6c3a7d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: af0811d0c442d6f064fd336d4261d1f7b2337dc8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196924"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189341"
 ---
 # <a name="preview-ediscovery-search-results"></a>预览电子数据展示搜索结果
 

@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为团队创建一个协作空间，Microsoft Teams。
-ms.openlocfilehash: c787f2c493643dcba2bbd5985fa518210aa8a5c6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad0c9c938d7c5766bffc6fc960197b0568eb9cb5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170238"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189701"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>创建团队以在 Microsoft Teams
 
@@ -60,7 +60,7 @@ Microsoft Teams是一款协作应用，可帮助员工从任何设备保持有�
 创建团队时，将创建以下其他内容：
 
 - 新Microsoft 365[组](/MicrosoftTeams/office-365-groups)
-- 用于[SharePoint团队](/MicrosoftTeams/sharepoint-onedrive-interact)文件的联机网站和文档库
+- 一[SharePoint Online](/MicrosoftTeams/sharepoint-onedrive-interact)网站和文档库来存储团队文件
 - 共享[Exchange Online](/MicrosoftTeams/exchange-teams-interact)日历
 - OneNote 笔记本
 - 与其他应用Office 365，如 Planner 和 Power BI
@@ -88,7 +88,7 @@ Microsoft Teams是一款协作应用，可帮助员工从任何设备保持有�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-若要详细了解Microsoft Teams，请参阅[Microsoft Teams技术文档](/microsoftteams/microsoft-teams)
+若要详细了解Microsoft Teams，请参阅[Microsoft Teams文档](/microsoftteams/microsoft-teams)
 
 ## <a name="admin-settings"></a>管理员设置
 

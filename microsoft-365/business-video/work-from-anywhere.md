@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 概述Microsoft 365随时随地进行工作。
-ms.openlocfilehash: 1b8bfe4f452b1a7d9501ba7b92554f86492a36e6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7312f74bb27ba166650356ed6fa835c079ce0b76
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200709"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188561"
 ---
 # <a name="work-from-anywhere---overview"></a>随时随地工作 - 概述
 
@@ -45,7 +45,7 @@ ms.locfileid: "59200709"
 
 ## <a name="install-outlook-and-keep-in-touch"></a>安装Outlook并保持联系
 
-你可以随时在手机上使用Outlook电子邮件和约会。 下载应用，然后启动、登录并设置帐户。
+你可以随时在手机上使用 Outlook电子邮件和约会。 下载应用，然后启动、登录并设置帐户。
 
 获取有关如何在手机上安装Outlook[的详细信息](install-apps-android.md)。
 
@@ -55,8 +55,8 @@ ms.locfileid: "59200709"
 
 **设置SharePoint和Microsoft Teams移动应用**
 
-- 获取[SharePoint移动应用 。](https://support.microsoft.com/office/539608ac-4725-455e-aea0-9ca1f769849f)
-- 获取[Microsoft Teams移动应用。](https://support.microsoft.com/office/set-up-your-teams-mobile-apps-1ba8dce3-1122-47f4-8db6-00a4f93117e8)
+- 获取[SharePoint移动应用](https://support.microsoft.com/office/539608ac-4725-455e-aea0-9ca1f769849f)。
+- 获取[Microsoft Teams移动应用](https://support.microsoft.com/office/set-up-your-teams-mobile-apps-1ba8dce3-1122-47f4-8db6-00a4f93117e8)。
 
 你可以将个人文件存储在 OneDrive，然后从手机进行同步。
 
@@ -65,15 +65,15 @@ ms.locfileid: "59200709"
 1. 打开OneDrive并登录。
 1. 按照说明完成设置并开始同步。
 
-需要一些帮助？ 获取有关[在何处存储文件、](store-files.md)如何使用 OneDrive[移动应用](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e)以及如何同步文件和[文件夹的建议](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)。
+需要一些帮助？ 获取有关[文件存储位置、](store-files.md)如何使用 OneDrive[移动应用](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e)以及如何[同步文件和文件夹的建议](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)。
 
 ## <a name="open-and-edit-your-files-from-any-device"></a>从任何设备打开和编辑文件
 
 ### <a name="work-on-your-phone-or-tablet"></a>在手机或平板电脑上工作
 
-在Office或平板电脑上安装应用程序并随时随地工作。 下载应用，然后启动、登录并设置帐户。
+在Office或平板电脑上安装应用程序，随时随地工作。 下载应用，然后启动、登录并设置帐户。
 
-详细了解如何安装以下[Office 应用：Android](install-apps-android.md)  |  [iOS。](install-apps-ios.md)
+了解有关在以下设备上安装[Office 应用：Android](install-apps-android.md)  |  [iOS。](install-apps-ios.md)
 
 不确定在手机或平板电脑上可以做什么？ 阅读有关使用应用Office的信息：
 
@@ -86,9 +86,9 @@ ms.locfileid: "59200709"
 
 ### <a name="work-in-a-browser"></a>在浏览器中工作
 
-您还可以直接在浏览器中创建和编辑文档。 在 Word、Excel 和 PowerPoint 中打开文件、编辑文本、调整格式、添加图片和PowerPoint。 当您与同事或客户共享文件时，甚至可以同时处理文档。 [](overview-file-sharing.md)
+您还可以直接在浏览器中创建和编辑文档。 打开文件、编辑文本、调整格式、添加图片，以及创建 Word、Excel 和 PowerPoint。 当您与同事或客户共享文件时，甚至可以同时处理文档。 [](overview-file-sharing.md)
 
-1. 使用你的[Office 帐户](https://office.com)登录 Microsoft 365.com。
+1. 使用你的[Office.com](https://office.com) Microsoft 365登录。
 1. 启动Office 应用开始工作。
 
 **在浏览器中使用 Office Online**
@@ -106,6 +106,6 @@ ms.locfileid: "59200709"
 
 从手机：
 
-- 在会议之前和会议期间，你将在聊天列表中看到会议通知，或在会议过程中看到Microsoft Teams。
+- 在会议之前和会议期间，你将在聊天列表中或在会议结束后的频道对话Microsoft Teams。
 
     你可以从会议通知或会议日历 :::image type="icon" source="../media/meetings-icon.png" border="false"::: 加入

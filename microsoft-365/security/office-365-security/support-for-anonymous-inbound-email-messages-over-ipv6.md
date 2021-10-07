@@ -7,7 +7,7 @@ ms.author: chrisda
 manager: chrisda
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何配置对来自 Exchange Online 和 Exchange Online Protection 中来自 IPv6 源的匿名入站Exchange Online Protection。
+description: 管理员可以了解如何配置对来自 iPv6 源的匿名入站电子邮件的支持，Exchange Online Exchange Online Protection。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80fdcc9dcfe3006ef8b21aa19856fe8c0ea3ff70
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6ba52efb6ad18bc0515084b3aee4a8bbdd6c7312
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162187"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203863"
 ---
-# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>添加对通过 IPv6 中的匿名入站电子邮件Microsoft 365
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>在电子邮件中添加对通过 IPv6 的匿名入站Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "59162187"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365具有 Exchange Online 邮箱和独立 EOP Exchange Online Protection () 组织Exchange Online IPv6 支持匿名入站电子邮件。 源 IPv6 电子邮件服务器必须满足以下两个要求：
+Microsoft 365邮箱和独立 Exchange Online EOP Exchange Online Protection (组织) 没有 Exchange Online 邮箱的组织支持通过 IPv6 发送的匿名入站电子邮件。 源 IPv6 电子邮件服务器必须满足以下两个要求：
 
 - 源 IPv6 地址必须具有有效的反向 DNS (PTR) 记录，该记录允许目标从 IPv6 地址查找域名。
 

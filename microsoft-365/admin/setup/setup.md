@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: landing-page
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: 了解如何设置 Microsoft 商业高级版、Microsoft 365 商业标准版、Microsoft 365 商业基础版、Microsoft 365 商业应用版或 Office 365 教育版订阅。
-ms.openlocfilehash: 639d752acaa5592bd27bcd940b165009277c985f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: c493d0a95c544b2abfd0da7171e2fc906e9f7464
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776652"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188705"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>设置 Microsoft 365 商业版
 
@@ -44,6 +44,6 @@ ms.locfileid: "59776652"
 
 ## <a name="related-content"></a>相关内容
 
-[入门](../setup/index.yml)（链接页）\
+[入门](/admin)（链接页）\
 [如何注册 - 管理员帮助](../admin-overview/sign-up-for-office-365.md)（视频）\
 [试用或购买 Microsoft 365 商业版订阅](../../commerce/try-or-buy-microsoft-365.md)（文章）

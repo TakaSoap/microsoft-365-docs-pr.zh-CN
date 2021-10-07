@@ -9,21 +9,21 @@ ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 使用此测试实验室指南在测试环境中注册Microsoft 365并远程管理设备。
-ms.openlocfilehash: 5e27f2eecc9edda0a0fe7225d4ed47c7431eee77
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7610348febcc8c2054c50d7f7a6f1433e9b62306
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170995"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189113"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>在适用于企业测试Microsoft 365注册 iOS 和 Android 设备
 
-*本测试实验室指南仅适用于企业Microsoft 365测试环境。*
+*本测试实验室指南只能用于Microsoft 365测试环境。*
 
 本文介绍如何在适用于企业测试环境的 Microsoft 365 注册和测试 iOS/iPadOS 和 Android 设备的基本移动设备管理功能。
 
@@ -44,7 +44,7 @@ ms.locfileid: "59170995"
 如果要在模拟的企业中注册 iOS/iPadOS 和 Android 设备，请按照传递 [身份验证 中的说明操作](pass-through-auth-m365-ent-test-environment.md)。
   
 > [!NOTE]
-> 测试自动许可和组成员身份不需要模拟的企业测试环境，该环境中包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 目录同步。 它在此处作为一个选项提供，以便你可以测试自动许可和组成员身份，并且可以在代表典型组织的环境中试验它。
+> 测试自动许可和组成员身份不需要模拟的企业测试环境，该环境包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试自动许可和组成员身份，并且可以在代表典型组织的环境中试验它。
 
 ## <a name="phase-2-enroll-your-ios-and-android-devices"></a>阶段 2：注册 iOS 和 Android 设备
 
@@ -58,8 +58,8 @@ ms.locfileid: "59170995"
 如果你已准备好使用 Intune 进行设备管理，并且需要一些指南，则以下信息可能会有所帮助：
 
 - [设备管理概述](/mem/intune/fundamentals/what-is-device-management)
-- [教程：演练 Intune Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
-- [部署指南：设置或移动到Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
+- [教程：Microsoft Endpoint Manager 中的 Intune 演练](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
+- [部署指南：安装或移动到Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 
 ## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>第 3 阶段：远程管理 iOS 和 Android 设备
 

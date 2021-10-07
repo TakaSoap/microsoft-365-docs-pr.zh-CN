@@ -10,21 +10,21 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7bf8c07230747906bb7380ef2e98871993100707
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b4142e3fe3a0565dd08a4c62909c59b2bb15b5f6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175713"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204715"
 ---
 # <a name="payment-information-for-azerbaijan"></a>阿塞拜疆的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-Please pay in USD only and reference your invoice number (s) on your invoice invoice invoice.
+Please pay in USD only and reference your invoice number () on your invoice invoice invoice.
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 

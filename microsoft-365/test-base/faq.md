@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 2f4cfd4cb55d6a89acf8f78d60006851c14e603f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 668631563b35a848df5bfbdfd930be17efce8c04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200873"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203659"
 ---
 # <a name="test-base-faq"></a>测试基础常见问题解答
 
@@ -31,15 +31,15 @@ ms.locfileid: "59200873"
 
 有关详细信息，请参阅载入用户指南，或联系我们的团队 <testbasepreview@microsoft.com> 获取帮助和详细信息。
 
-**问：OOB 测试什么是 (开箱) 测试？**
+**问：OOB 测试 (开箱) 是什么？**
 
-**答：** Out-of-of- (OOB) test are standardized， default test runs where application packages are installed， launched and closed (30) times， and then uninstalled. 
+**答：** 开箱即用 OOB (测试) 标准化的默认测试运行，安装、启动和关闭应用程序包 30 (30 次) 卸载。 
 
 为测试库创建的程序包将具有以下测试脚本：安装、启动、关闭和（可选）卸载脚本。 
 
 开箱即用 OOB (测试) 应用程序上的标准化遥测，以跨内部版本Windows比较。
 
-**问：我们能否在开箱测试之外提交测试 (安装、启动、关闭、卸载测试脚本) ？**
+**问：我们能否在安装、启动、关闭、卸载测试脚本 (外部的开箱测试) ？**
 
 **答：** 是的，客户还可以通过自助服务门户仪表板上载用于功能测试的应用程序包。
 **功能** 测试是使客户能够执行其脚本以在应用程序上运行自定义功能的测试。
@@ -77,7 +77,7 @@ ms.locfileid: "59200873"
 
 **答：** 是的，我们的过程支持在安装后重新启动。 在载入门户上设置任务时，请务必从"可选设置"下拉列表中选择此选项。
 
-对于开箱即 (OOB) 测试，可以指定安装脚本是否需要 _重新启动。_
+对于开箱即 (OOB) 测试，您可以指定安装脚本是否需要 _重新启动。_
 
 ![重新启动图片。](Media/reboot.png)
 
@@ -87,11 +87,11 @@ ms.locfileid: "59200873"
 
 **问：Windows支持哪些版本？**
 
-**答：** 我们目前支持 Windows 10、Windows Server 2016、Windows Server 2016 Core Windows Server 2019 和 Windows Server 2019 Core 版本。
+**答：** 我们目前Windows 10支持 Windows 10、Windows Server 2016、Windows Server 2016 Core 版本、Windows Server 2019 和 Windows Server 2019 Core 版本。
 
 **问：安全更新测试与功能更新测试之间有什么区别？**
 
-**答：** 对于安全更新测试，我们针对每月预发布 **<ins></ins>** 安全更新进行测试Windows这些更新侧重于确保我们的用户始终安全和受保护。 对于功能更新测试，我们针对两年一 **<ins></ins>** 次预发布功能更新进行测试，这些更新引入了新特性Windows。
+**答：** 对于安全更新测试，我们针对每月预发布 **<ins></ins>** 安全更新进行测试Windows这些更新侧重于确保我们的用户始终安全和受保护。 对于功能更新测试，我们将针对两年一 **<ins></ins>** 次预发布功能更新进行测试，这些更新在功能更新中引入了新的Windows。
 
 ## <a name="debugging-options"></a>调试选项
 
@@ -133,7 +133,7 @@ ms.locfileid: "59200873"
 
 **问：服务是否有相关成本？**
 
-**答：** 测试基础服务在通用发布或 GA (之前) 。 此时，我们将宣布一个成本结构，该结构将作用于所有客户。 
+**答：** 测试基础服务将一直由用户免费使用，直到通用 (GA) 。 此时，我们将宣布一个成本结构，该结构将作用于所有客户。 
 
 **问：如何提供有关测试基础的反馈？**
 

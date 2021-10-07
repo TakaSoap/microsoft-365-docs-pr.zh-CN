@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: medium
 description: 了解如何在 Microsoft SharePoint Syntex 中创建分类器。
-ms.openlocfilehash: e9c8a08fe3583f4692edcc4649854a26950eb717
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: HT
+ms.openlocfilehash: 1fe4200c68d6458d20a71b834bd2a0b08319ecb2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162393"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203011"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建分类器
 

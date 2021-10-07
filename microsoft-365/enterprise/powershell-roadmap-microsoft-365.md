@@ -9,16 +9,16 @@ ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: 使用 PowerShell 进行Microsoft 365。
-ms.openlocfilehash: e1e862c73c126faaccee7ee74cec0ab776de1e4b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: 使用 PowerShell for Microsoft 365。
+ms.openlocfilehash: 08f28bd4ecbaabe6485a2f95dcb3f1e88e9c8daf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356200"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199845"
 ---
 # <a name="powershell-roadmap-for-microsoft-365"></a>PowerShell Microsoft 365
 

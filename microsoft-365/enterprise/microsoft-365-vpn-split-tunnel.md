@@ -7,7 +7,7 @@ ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 指导如何使用 Office 365 VPN 拆分隧道为远程用户优化 Office 365 连接。
-ms.openlocfilehash: bfb774f6404f8eec1c517b2e2e4e434694f9673f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 09900e1650ee1221d9b9877903a08e18af7154b3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170111"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200073"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>使用 VPN 拆分隧道为远程用户优化 Office 365 连接
 <!---
@@ -76,7 +76,7 @@ _图 2：适用于远程用户的公共 VPN 解决方案，其中所有流量都
 
 COVID-19 危机加剧了此问题，需要立即为绝大多数组织提供解决方案。 许多客户发现强制 VPN 模型的缩放性或性能不足以实现 100% 的远程工作场景，例如这次危机所需的远程工作场景。 若要使这些组织继续高效运行，需要快速的解决方案。
 
-对于 Office 365 服务，Microsoft 为服务设计连接要求时完全牢记这一问题，其中一组集中、严格控制且相对静态的服务终结点可以非常简单快速地进行优化，以便为访问服务的用户提供高性能，同时减轻 VPN 基础结构的负担，以便仍需要该服务的流量可以使用它。
+对于 Office 365 服务，Microsoft 已针对此问题为服务设计连接要求，其中一组集中、严格控制且相对静态的服务终结点可以非常简单快速地进行优化，以便为访问服务的用户提供高性能，同时减轻 VPN 基础结构的负担，以便仍需要该服务的流量可以使用它。
 
 Office 365 将 Office 365 所需的终结点分为三类：**优化**、**允许** 和 **默认**。 **优化** 终结点是我们的重点，具有以下特征：
 

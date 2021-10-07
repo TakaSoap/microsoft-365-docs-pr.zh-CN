@@ -10,25 +10,25 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用内容搜索电子数据展示工具通过创建查询来搜索导入到第三Microsoft 365数据源中邮箱的项目。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: afed5e519b789baffca4f16b95c842ccfe575b4f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 068a6e3164154129ba9148b41138d50c518042ed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196855"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202975"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>使用内容搜索搜索自定义合作伙伴连接器导入的第三方数据
 
 您可以使用内容搜索[电子数据](content-search.md)展示工具Microsoft 365 合规中心第三方数据源搜索导入到 Microsoft 365 中的邮箱的项目。 可以创建查询来搜索所有导入的第三方数据项，也可以创建查询来搜索特定的第三方数据项。 此外，还可以创建基于查询的保留策略或基于查询的电子数据展示保留，以保留第三方数据。
   
-有关与合作伙伴合作以导入第三方数据和可以导入到 Microsoft 365 的第三方数据类型列表，请参阅与合作伙伴合作以在 Office 365 中存档[第三方数据](work-with-partner-to-archive-third-party-data.md)。
+有关与合作伙伴合作以导入第三方数据和可以导入到 Microsoft 365 的第三方数据类型列表，请参阅与合作伙伴合作以在 Office 365 中存档第[三方数据](work-with-partner-to-archive-third-party-data.md)。
 
 > [!IMPORTANT]
 > 本文中的指南仅适用于由自定义合作伙伴连接器导入的第三方数据。 本文不适用于使用 Microsoft 合规中心中的第三方数据连接器导入的第三方[](archiving-third-party-data.md#third-party-data-connectors)数据。

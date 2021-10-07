@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e6c1fec6eea7bf1335eec061d6812d02df16556
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 936f92b796db275eaaf697a4028e670b902c6e5d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776832"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205075"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>配置Microsoft 365 Defender将高级搜寻事件流式传输至 Azure 事件中心
 
@@ -33,7 +33,7 @@ ms.locfileid: "59776832"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 1. 在 [租户中创建](/azure/event-hubs/) 事件中心。
 
@@ -45,15 +45,15 @@ ms.locfileid: "59776832"
 
 创建事件中心命名空间后，你将需要：
 
-1. 将要登录的用户定义为参与者Microsoft 365 Defender用户。
+1. 将要登录的用户定义为Microsoft 365 Defender用户。
 
-2. 如果要连接到应用程序，请添加应用注册服务主体作为读者，Azure 事件中心数据接收器 (此操作也可在资源组或订阅级别) 。
+2. 如果要连接到应用程序，请添加应用注册服务主体作为读者、Azure 事件中心数据接收器 (这也可在资源组或订阅级别) 。
 
-    转到事件 **中心命名空间>访问控制 (IAM) >添加** 并验证角色 **分配下**。
+    转到事件 **中心命名空间>访问控制 (IAM**) >添加并验证角色 **分配下**。
 
 ## <a name="enable-raw-data-streaming"></a>启用原始数据流
 
-1. 以 *[全局Microsoft 365 Defender](https://security.microsoft.com) **_** 或 __*_ 安全管理员 **登录到安全中心。
+1. 以 * [Microsoft 365 Defender](https://security.microsoft.com) **_** 或 __*_ 安全管理员 **登录到安全中心。
 
 2. 转到流 [式处理 API 设置页面](https://security.microsoft.com/settings/mtp_settings/raw_data_export)。
 
@@ -71,7 +71,7 @@ ms.locfileid: "59776832"
 
    ![事件中心资源 Id1 的图像。](../defender-endpoint/images/event-hub-resource-id.png)
 
-8. 转到事件流[API Microsoft 365 Defender](supported-event-types.md)支持的事件类型，查看事件流 API 中事件Microsoft 365状态。
+8. 转到事件流[API Microsoft 365 Defender](supported-event-types.md)支持的事件类型，查看事件流式处理 API 中事件Microsoft 365状态。
 
 9. 选择要流式传输的事件，然后单击"保存 **"。**
 
@@ -93,9 +93,9 @@ ms.locfileid: "59776832"
 
 - Azure 事件中心中的每个事件中心消息都包含记录列表。
 
-- 每条记录都包含事件名称、Microsoft 365 Defender接收事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为 **"properties"** 的属性。
+- 每条记录都包含事件名称、Microsoft 365 Defender接收事件的时间、它所属的租户 (你将仅从租户) 获取事件，事件以 JSON 格式包含在名为 **"properties"** 的属性中。
 
-- 有关事件架构Microsoft 365 Defender，请参阅高级搜寻[概述](advanced-hunting-overview.md)。
+- 有关事件架构Microsoft 365 Defender，请参阅高级[搜寻概述](advanced-hunting-overview.md)。
 
 - 在高级搜寻中 **，DeviceInfo** 表有一个名为 **MachineGroup** 的列，其中包含设备组。 此处还将用此列修饰每个事件。
 
@@ -122,6 +122,6 @@ ms.locfileid: "59776832"
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [Microsoft 365 Defender流式处理 API](streaming-api.md)
 - [事件Microsoft 365 Defender API 中支持的事件类型](supported-event-types.md)
-- [将Microsoft 365 Defender流式处理到 Azure 存储帐户](streaming-api-storage.md)
+- [将Microsoft 365 Defender流式传输至 Azure 存储帐户](streaming-api-storage.md)
 - [Azure 事件中心文档](/azure/event-hubs/)
 - [解决连接问题 - Azure 事件中心](/azure/event-hubs/troubleshooting-guide)

@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用标识即服务 (IDaaS)，并为其员工提供基于云的身份验证以及为其合作伙伴和客户提供联合身份验证。
-ms.openlocfilehash: b8943f0af678ed3d86d1428fe44cd6ab67554470
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 73b58f21ef24465332b902a36bba3d100d06d5b6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200466"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202915"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的标识
 
@@ -27,7 +27,7 @@ Microsoft 通过 Azure AD (跨云) 提供标识即服务Azure Active Directory (
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>Contoso Active Directory 域服务林
 
-Contoso 将单个 Active Directory 域服务 (AD DS) 林用于具有七个子域的 contoso com，每个子域分别用于 \. 世界上的一个子域。 总部、区域中心办事处和分支办事处包含用于本地身份验证和授权的域控制器。
+Contoso 将单个 Active Directory 域服务 (AD DS) 林用于具有七个子域的 contoso com，每个子域分别用于世界上的一 \. 个子域。 总部、区域中心办事处和分支办事处包含用于本地身份验证和授权的域控制器。
 
 下面是 Contoso 林，其中包含包含区域中心的世界不同区域的区域域。
 
@@ -42,7 +42,7 @@ Contoso 允许：
 - 客户使用其 Microsoft、Facebook 或 Google Mail 帐户登录到公司的公共网站。
 - 供应商和合作伙伴使用其 LinkedIn、Salesforce 或 Google Mail 帐户登录到公司的合作伙伴 Extranet。
 
-下面是 Contoso DMZ，其中包含公共网站、合作伙伴 Extranet 和一组 Active Directory 联合身份验证服务 (AD FS) 服务器。 DMZ 连接到包含客户、合作伙伴和 Internet 服务的 Internet。
+下面是 Contoso DMZ，其中包含一个公共网站、一个合作伙伴 Extranet 和一组 Active Directory 联合身份验证服务 (AD FS) 服务器。 DMZ 连接到包含客户、合作伙伴和 Internet 服务的 Internet。
 
 ![Contoso 支持客户和合作伙伴的联合身份验证。](../media/contoso-identity/contoso-identity-fig2.png)
  
@@ -54,9 +54,9 @@ Contoso 决定保留此基础结构，并专用于客户和合作伙伴身份验
 
 Contoso 想要使用其本地 AD DS 林进行身份验证，以Microsoft 365云资源。 它决定在 PHS (密码哈希) 。
 
-PHS 将本地 AD DS 林与 Microsoft 365 的 Azure AD 租户同步，以用于企业订阅、复制用户和组帐户以及哈希版本的用户帐户密码。
+PHS 将本地 AD DS 林与 Microsoft 365 的 Azure AD 租户同步，用于企业订阅、复制用户和组帐户以及用户帐户密码的哈希版本。
 
-为执行目录同步，Contoso 在其巴黎数据中心的连接部署了 Azure AD 连接工具。
+为了执行目录同步，Contoso 在其巴黎数据中心的连接部署了 Azure AD 连接 工具。
 
 下面是运行 Azure AD 的服务器，连接 Contoso AD DS 林中查看更改，然后将这些更改与 Azure AD 租户同步。
 

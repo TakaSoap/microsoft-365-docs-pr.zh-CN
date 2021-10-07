@@ -8,7 +8,7 @@ metadata:
   audience: Admin
   ms.topic: article
   ms.prod: microsoft-365-lighthouse
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection:
   - M365-subscription-management
   - Adm_O365
@@ -16,13 +16,13 @@ metadata:
   - AdminSurgePortfolio
   - M365-Lighthouse
   search.appverid: MET150
-  description: 对于 Managed Service Providers (MSP) using Microsoft 365 Lighthouse，请获取有关 Microsoft 365 Lighthouse 的常见问题 (常见问题) 解答。
-  ms.openlocfilehash: f1373ba23149583b1730499bcf9a222554ec91a0
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  description: 对于托管服务提供商 (MSP) 使用 Microsoft 365 Lighthouse，请获取有关 (常见问题解答) 常见问题Microsoft 365 Lighthouse。
+  ms.openlocfilehash: 2a42dc6b0bec6b1b88b175eee8e2cb0b4b291e8c
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59196100"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60188945"
 title: 'Microsoft 365 Lighthouse常见问题解答 (常见问题) '
 summary: >
   > [!NOTE]
@@ -30,7 +30,7 @@ summary: >
   > 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
 
-  本文包含常见问题解答 (常见问题) 与Microsoft 365 Lighthouse。
+  本文包含常见问题解答 (常见问题解答) Microsoft 365 Lighthouse。
 
 
   如果找不到问题的答案，请留下评论告诉我们，我们会将其添加到本文中。
@@ -39,19 +39,19 @@ sections:
   questions:
   - question: 什么是Microsoft 365 Lighthouse？
     answer: >
-      Microsoft 365 Lighthouse 是一个管理门户，可帮助托管服务提供商 (MSP) 为使用 Microsoft 365 商业高级版 或 Microsoft 365 E3 的中小型商业 (SMB) 客户大规模保护和管理设备、数据和用户。  Lighthouse 通过推荐针对 SMB 定制的安全配置基线并跨所有客户环境提供多租户视图，简化了租户载入。 有关详细信息，请参阅概述[Microsoft 365 Lighthouse。](m365-lighthouse-overview.md)
+      Microsoft 365 Lighthouse 是一个管理门户，可帮助托管服务提供商 (MSP) 为使用 Microsoft 365 商业高级版 或 Microsoft 365 E3 的中小型商业 (SMB) 客户大规模保护和管理设备、数据和用户。  Lighthouse 通过推荐针对 SMB 定制的安全配置基线并跨所有客户环境提供多租户视图，简化了租户载入。 有关详细信息，请参阅概述[Microsoft 365 Lighthouse](m365-lighthouse-overview.md)。
   - question: Microsoft 365 Lighthouse和 Azure Lighthouse 之间有什么区别？
     answer: >
-      Microsoft 365 Lighthouse侧重于Microsoft 365服务，而不是 Azure 服务。 Azure Lighthouse 内置于 Azure 门户中，并允许 IT 合作伙伴管理 Azure 的多个租户，而 Microsoft 365 Lighthouse 是一个独立的门户，可帮助 MSP 管理多个 Microsoft 365 商业高级版 或 Microsoft 365 E3 客户租户。 有关此Microsoft 365 Lighthouse，请参阅概述[Microsoft 365 Lighthouse](m365-lighthouse-overview.md)。 有关 Azure Lighthouse 的信息，请参阅 [什么是 Azure Lighthouse？](/azure/lighthouse/overview)
+      Microsoft 365 Lighthouse侧重于Microsoft 365服务，而不是 Azure 服务。 Azure Lighthouse 内置于 Azure 门户中，并允许 IT 合作伙伴管理 Azure 的多个租户，而 Microsoft 365 Lighthouse 是一个独立的门户，可帮助 MSP 管理多个 Microsoft 365 商业高级版 或 Microsoft 365 E3 客户租户。 有关此Microsoft 365 Lighthouse，请参阅[概述Microsoft 365 Lighthouse](m365-lighthouse-overview.md)。 有关 Azure Lighthouse 的信息，请参阅 [什么是 Azure Lighthouse？](/azure/lighthouse/overview)
   - question: 需要多少Microsoft 365 Lighthouse？
     answer: >
-      使用 Lighthouse 的预览版本来管理 Microsoft 365 商业高级版 服务Microsoft 365 E3连接的设备不会增加任何成本。 Lighthouse 目前处于预览阶段，可供服务于中小型企业的 MSP 使用，并且与云解决方案提供商 (CSP) 关系。 请注意，Lighthouse 当前不支持间接提供商。 有关详细信息，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
+      使用 Lighthouse 预览版来管理 Microsoft 365 商业高级版 服务Microsoft 365 E3连接的设备不会增加任何成本。 Lighthouse 目前处于预览阶段，可供服务于中小型企业的 MSP 使用，并且与云解决方案提供商 (CSP) 关系。 请注意，Lighthouse 当前不支持间接提供商。 有关详细信息，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
   - question: 使用解决方案的要求Microsoft 365 Lighthouse？
     answer: >
       有关当前要求的列表，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
   - question: 哪些国家和地区Microsoft 365 Lighthouse可用？
     answer: >
-      Lighthouse 在提供Microsoft 365国家/地区可用，中国和美国国家/地区除外。 但是，Lighthouse 中的功能（如设备管理和威胁管理）依赖于 Microsoft Intune，用户管理依赖于 Azure Active Directory (Azure AD) ，而 Intune 和 Azure AD 可能在某些国家和地区不可用。 有关 Azure AD Microsoft 365 Intune 可用性的完整列表，请参阅[国际可用性](https://www.microsoft.com/microsoft-365/business/international-availability)。
+      Lighthouse 在提供Microsoft 365国家/地区可用，中国和以色列颁发机构除外。 但是，Lighthouse 中的功能（如设备管理和威胁管理）依赖于 Microsoft Intune，用户管理依赖于 Azure Active Directory (Azure AD) ，Intune 和 Azure AD 可能在某些国家和地区不可用。 有关应用、Microsoft 365和 Intune 可用性的完整列表，请参阅[国际可用性](https://www.microsoft.com/microsoft-365/business/international-availability)。
 
 
       浅色不可用于国家云。
@@ -63,7 +63,7 @@ sections:
       在 Lighthouse 内加载客户租户数据可能需要 48 小时。 如果载入时间已过 48 小时，请联系我们的支持团队寻求帮助。 完成载入后，需要让他们知道，并提供所有相关的屏幕截图和日志。 有关详细信息，请参阅获取对 Microsoft 365 Lighthouse[的帮助和支持](m365-lighthouse-get-help-and-support.md)。
   - question: 为什么我会看到某些客户租户的数据，而不是其他租户的数据？
     answer: >
-      若要使客户租户数据显示在浅楼中，合作伙伴必须通过合作伙伴中心 (DAP) 建立委派管理员权限。 有关详细信息，请参阅在合作伙伴 [中心中请求与客户建立经销商关系](/partner-center/request-a-relationship-with-a-customer)。 租户还必须至少拥有一个 Microsoft 365 商业高级版 或 Microsoft 365 E3 订阅，并且其租户中的许可用户数少于 500。 有关详细信息，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
+      若要在 Lighthouse 中显示客户租户数据，合作伙伴必须通过合作伙伴中心与客户 (DAP) 委派管理员权限。 有关详细信息，请参阅在合作伙伴 [中心中请求与客户建立经销商关系](/partner-center/request-a-relationship-with-a-customer)。 租户还必须至少拥有一个 Microsoft 365 商业高级版 或 Microsoft 365 E3 订阅，并且其租户中拥有的许可用户数少于 500。 有关详细信息，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
   - question: 如果你不想在租户中查看某些租户Microsoft 365 Lighthouse？
     answer: >
       如果不想在 Lighthouse 中查看某些租户及其数据，可以停用这些租户。 若要停用租户，请按照以下步骤操作：
@@ -77,10 +77,10 @@ sections:
           > [!NOTE]
           > 停用租户后，在停用完成之前，无法对租户采取措施。 停用可能需要 48 小时才能完成。
 
-      若要了解有关租户的更多信息，请参阅Microsoft 365 Lighthouse[租户列表概述](m365-lighthouse-tenant-list-overview.md)。
+      若要详细了解租户，请参阅租户[Microsoft 365 Lighthouse概述](m365-lighthouse-tenant-list-overview.md)。
   - question: 如果我Microsoft 365 Lighthouse租户拥有除订阅或订阅之外的其他订阅，Microsoft 365 商业高级版Microsoft 365 E3？
     answer: >
-      Lighthouse 可帮助你管理为用户Microsoft 365 商业高级版或Microsoft 365 E3许可证的客户租户。 对于没有商业版或 E3 高级版租户中的用户，Lighthouse 功能将受到限制。 例如，如果用户缺少包含 Intune 的许可证，该用户的设备、设备符合性状态和威胁状态将不可用;如果用户缺少包含 Azure AD P1 的许可证，该用户的密码和登录管理将不可用。 有关详细信息，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
+      Lighthouse 可帮助你管理具有用户Microsoft 365 商业高级版或Microsoft 365 E3许可证的客户租户。 对于没有商业版或 E3 高级版租户中的用户，Lighthouse 功能将受到限制。 例如，如果用户缺少包含 Intune 的许可证，该用户的设备、设备符合性状态和威胁状态将不可用;如果用户缺少包含 Azure AD P1 的许可证，该用户的密码和登录管理将不可用。 有关详细信息，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
   - question: 如何有资格管理客户云Microsoft 365 Lighthouse？
     answer: >
       如果你满足使用 Lighthouse 的要求，那么你有资格在 Lighthouse 中管理客户云电脑。 有关当前要求的列表，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
@@ -89,6 +89,6 @@ sections:
       可以通过所有Windows Microsoft 商业销售渠道购买 365 个许可证。 购买的一个许可证相当于购买一台云电脑。 目前，只能为每个用户分配一台相同 SKU 类型的云电脑，但如果它们具有不同的 SKU 类型，则他们可分配多个云电脑。 若要比较 Windows 365 计划和定价，请参阅获取Windows适合你的[Windows 365 云电脑](https://www.microsoft.com/windows-365/business/compare-plans-pricing)。
   - question: 如何获得帮助和支持？
     answer: >
-      In Lighthouse， select the **？** 图标打开帮助 **窗格** 。 你可以在此处访问自助文章或联系支持人员。 有关帮助和支持选项的详细信息，请参阅获取有关[帮助和支持Microsoft 365 Lighthouse。](m365-lighthouse-get-help-and-support.md)
+      In Lighthouse， select the **？** 图标打开帮助 **窗格** 。 你可以在此处访问自助文章或联系支持人员。 有关帮助和支持选项的详细信息，请参阅获取对 Microsoft 365 Lighthouse[的帮助和支持](m365-lighthouse-get-help-and-support.md)。
   - question: 在哪里可以提交反馈和想法？
     answer: 您的反馈非常重要，并且对我们非常重要！ 通过 Intune 反馈页面 提交Microsoft Endpoint Manager[或功能想法](https://go.microsoft.com/fwlink/?linkid=2151507)。 你可以开始有关 Lighthouse 和 Windows 365 功能的对话、向其他合作伙伴或 Microsoft 员工提问、提供功能反馈等。

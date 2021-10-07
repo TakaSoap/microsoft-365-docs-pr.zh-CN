@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,17 +23,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 使用移动设备保护 BYOD (非托管) 自带Microsoft 365。
-ms.openlocfilehash: 40e94e2f961ab34827de4ce5e43e100af53a7340
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 使用 BYOD (保护非托管) 自带Microsoft 365。
+ms.openlocfilehash: 0f14112356313dcbad56f5a78bd2c837987d234f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200694"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204751"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>保护非托管的 Windows 10 电脑和 Mac
 
-可以通过在 Microsoft Intune 中注册 Windows 10 电脑和 Mac 来管理它们，这允许你在访问环境中的数据之前确保它们正常运行和安全。 但是，许多市场活动和小型企业都包括自带设备办公 (BYOD) ，这将不由组织管理。 对于这些非托管电脑和 Mac，请使用本文确保配置最低安全性功能。
+可以通过在 Microsoft Intune 中Windows 10电脑和 Mac 来管理它们，这允许你在访问环境中的数据之前确保它们正常运行和安全。 但是，许多市场活动和小型企业都包括自带设备办公 (BYOD) ，这将不由组织管理。 对于这些非托管电脑和 Mac，请使用本文确保配置最低安全性功能。
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 
@@ -46,25 +46,25 @@ ms.locfileid: "59200694"
 
 <!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365, or a Mac, the Microsoft 365 protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
 -->
-如果你Windows 10电脑或 Mac 不由组织管理，请确保配置这些安全功能。
+如果你Windows 10电脑或 Mac 不由你的组织管理，请确保配置这些安全功能。
 
 ## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
 
 **打开设备加密**<p>
 
-设备加密适用于各种Windows，并且有助于通过加密数据来保护数据。 如果启用设备加密，则只有经过授权的个人才能访问你的设备和数据。 有关 [说明，请参阅打开设备](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 加密。
+设备加密适用于各种Windows设备，并且有助于通过加密数据来保护数据。 如果启用设备加密，则只有经过授权的个人才能访问你的设备和数据。 有关 [说明，请参阅打开设备](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 加密。
 
- 如果设备加密在你的设备上不可用，你可以改为打开标准 [BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 加密。  (BitLocker 在 Windows 10 家庭版 edition.)  
+ 如果设备加密在你的设备上不可用，你可以改为打开标准 [BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 加密。  (BitLocker 在 Windows 10 家庭版 版本上)  
 
 **使用安全保护Windows 安全中心**<p>
-如果已Windows 10，你将使用最新防病毒Windows 安全中心。 首次启动Windows 10时，Windows 安全中心通过扫描恶意软件、恶意软件 (、病毒和安全威胁) 并主动帮助保护电脑。 Windows 安全中心实时保护扫描你在电脑上下载或运行的所有内容。
+如果已Windows 10，你将使用最新防病毒Windows 安全中心。 首次启动Windows 10时，Windows 安全中心将打开并主动通过扫描恶意软件 (恶意软件、病毒和安全威胁) 保护电脑。 Windows 安全中心实时保护扫描你在电脑上下载或运行的所有内容。
 
 Windows 更新网站会自动下载 Windows 安全的更新，以帮助保护电脑的安全，防止其遭到威胁。
 
-如果你有早期版本的 Windows并且正在使用Microsoft Security Essentials，则建议移动到 Windows 安全中心。 有关详细信息，请参阅使用"帮助[保护我的设备Windows 安全中心"。](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)
+如果你有早期版本的 Windows并且正在使用Microsoft Security Essentials，则建议移动到 Windows 安全中心。 有关详细信息，请参阅使用帮助[保护我的设备Windows 安全中心。](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)
 
-**打开Windows防火墙**<p>
-即使已打开其他Windows，也应始终运行防火墙。 如果Windows防火墙， (和网络连接，) 未经授权访问。 有关[说明Windows打开或关闭防火墙](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)。
+**打开 Windows 防火墙**<p>
+即使其他防火墙Windows，也应始终运行防火墙。 如果Windows防火墙， (和网络连接，) 未经授权访问。 有关[说明Windows打开或关闭防火墙](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)。
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
 

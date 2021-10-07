@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77cbd23197b60c3a74c97cf2030f41c943741a1c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: df66a35cdce846ba9ca00e323f7c78e7d4d0ee73
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197260"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203995"
 ---
 # <a name="run-antivirus-scan-api"></a>运行防病毒扫描 API
 
@@ -47,7 +47,7 @@ ms.locfileid: "59197260"
 
 > [!IMPORTANT]
 >
-> - 此操作适用于 Windows 10 版本 1709 或更高版本上的设备。
+> - 此操作适用于版本 1709 Windows 10版本上的设备。
 > - Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，Microsoft Defender 防病毒是活动的防病毒解决方案。 Microsoft Defender 防病毒处于被动模式。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
 ## <a name="permissions"></a>权限
@@ -56,14 +56,14 @@ ms.locfileid: "59197260"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Machine.Scan|"扫描计算机"
+Application|Machine.Scan|"扫描计算机"
 委派（工作或学校帐户）|Machine.Scan|"扫描计算机"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："活动修正操作" (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 用户需要具有对设备的访问权限，根据设备组设置 (创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -85,7 +85,7 @@ Content-Type|string|application/json
 参数|类型|说明
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 **必需**。
-ScanType|String|定义扫描的类型。 **必需**。
+ScanType|String|定义扫描的类型。 必需。
 
 **ScanType** 控制要执行扫描的类型，可以是下列类型之一：
 

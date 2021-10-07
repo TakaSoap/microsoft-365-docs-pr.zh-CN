@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -22,27 +22,27 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: ''
 description: 使用本文了解有关在 Office 365 中启用和配置特权访问管理Office 365。
-ms.openlocfilehash: e66a7e66c3505145b1fa4eb3e16db9ec63c3c1e4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28e1e6a399f4491ad63094ac5e589c9746dd58cf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201394"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189329"
 ---
 # <a name="get-started-with-privileged-access-management"></a>特权访问管理入门
 
 本主题指导你完成在组织中启用和配置特权访问管理。 可以使用 Microsoft 365 管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">或</a>Exchange PowerShell 管理和使用特权访问。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在开始使用特权访问管理之前，应该先Microsoft 365[订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何加载项。 若要访问和使用特权访问管理，组织必须具有以下订阅或加载项之一：
 
 - Microsoft 365 E5 订阅（付费或试用版本）
-- Microsoft 365 E3订阅 (或 Office 365 E3 订阅 + Enterprise 移动性和安全性 E3 订阅) + Microsoft 365 E5 合规 加载项
+- Microsoft 365 E3 (或 Office 365 E3 订阅 + Enterprise Mobility and Security E3 订阅) + Microsoft 365 E5 合规 加载项
 - 任何Microsoft 365、Office 365、Exchange、SharePoint 或 OneDrive for Business 订阅 + Microsoft 365 E5 Insider Risk Management 加载项
 - Microsoft 365 A5 订阅（付费或试用版本）
-- Microsoft 365 A3 (或 Office 365 A3 订阅 + Enterprise Mobility and Security A3 订阅) + Microsoft A5 合规性加载项
-- 任何 Microsoft 365、Office 365、Exchange、SharePoint 或 OneDrive for Education 订阅 + Microsoft 365 A5 Insider Risk Management 加载项
+- Microsoft 365 A3 (或 Office 365 A3 订阅 + Enterprise 移动性和安全性 A3 订阅) + Microsoft A5 合规性加载项
+- 任何Microsoft 365、Office 365、Exchange、SharePoint 或 OneDrive for Education 订阅 + Microsoft 365 A5 Insider Risk Management 加载项
 - Office 365 企业版 E5 订阅（付费或试用版本）
 - Office 365 企业版 E3 订阅 + Office 365 高级合规版加载项（新订阅已不再可用，请参阅注释）
 
@@ -51,7 +51,7 @@ ms.locfileid: "59201394"
 > [!IMPORTANT]
 > Office 365 高级合规版已不再作为独立订阅销售。 当前订阅到期后，客户应过渡到以上订阅之一，其中包含了相同的或其它合规性功能。
 
-如果你没有现有的 Office 365 企业版 E5 计划，并且想要尝试特权访问管理，可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有 Office 365 订阅或注册 Microsoft 365 企业版 E5 的试用版。 [](https://www.microsoft.com/microsoft-365/enterprise)
+如果你没有现有的 Office 365 企业版 E5 计划，并且想要尝试特权访问管理，可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有 Office 365 订阅或注册 Microsoft 365 企业版 E5 试用版。 [](https://www.microsoft.com/microsoft-365/enterprise)
 
 ## <a name="enable-and-configure-privileged-access-management"></a>启用和配置特权访问管理
 
@@ -59,7 +59,7 @@ ms.locfileid: "59201394"
 
 - [步骤 1：创建审批者组](privileged-access-management-configuration.md#step1)
 
-    在开始使用特权访问之前，决定需要审批机构授予权限以完成提升和特权任务的人员。 审批者组的任何用户都有权批准访问请求。 此组通过在此邮箱中创建启用邮件的安全Office 365。
+    在开始使用特权访问之前，决定需要审批机构授予权限以完成提升和特权任务的人员。 审批者组的任何用户都有权批准访问请求。 此组通过在此邮箱中创建启用邮件的安全组Office 365。
 
 - [步骤 2：启用特权访问](privileged-access-management-configuration.md#step2)
 
@@ -76,7 +76,7 @@ ms.locfileid: "59201394"
 在获得批准后，发出请求的用户可以执行目标任务，特权访问会授权并代表用户执行该任务。 批准有效期为请求时长（默认为 4 小时），在此期间，请求者可以多次执行目标任务。 所有这些执行操作会被记录，供安全和合规性审计所用。
 
 > [!NOTE]
-> 如果要使用 Exchange Management PowerShell 启用和配置特权访问，请按照 连接 中的步骤使用多重身份验证连接到[Exchange Online PowerShell，](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)以使用 Office 365 凭据连接到 Exchange Online PowerShell。 在连接到 PowerShell 时，无需为组织启用多重身份验证，只需按照步骤启用特权Exchange Online访问。 通过多重身份验证进行连接将创建一个 OAuth 令牌，该令牌由特权访问用于对请求进行签名。
+> 如果要使用 Exchange Management PowerShell 启用和配置特权访问，请按照 连接 中的步骤使用多重身份验证连接到[Exchange Online PowerShell，](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)以使用 Office 365 凭据连接到 Exchange Online PowerShell。 在连接到 PowerShell 时，无需为组织启用多重身份验证，只需按照步骤Exchange Online特权访问。 通过多重身份验证进行连接将创建一个 OAuth 令牌，该令牌由特权访问用于对请求进行签名。
 
 <a name="step1"> </a>
 
@@ -100,7 +100,7 @@ ms.locfileid: "59201394"
 
 ### <a name="in-the-microsoft-365-admin-center"></a>在Microsoft 365 管理中心
 
-1. 使用组织中[Microsoft 365 管理](https://admin.microsoft.com)帐户的凭据登录到管理中心。
+1. 使用组织中[Microsoft 365 管理](https://admin.microsoft.com)帐户的凭据登录中心。
 
 2. 在管理中心中，转到  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**"设置"设置"&"隐私**</a>  >  **特权访问"。**
 
@@ -135,9 +135,9 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ### <a name="in-the-microsoft-365-admin-center"></a>在Microsoft 365 管理中心
 
-1. 使用组织中[Microsoft 365 管理](https://admin.microsoft.com)帐户的凭据登录到管理中心。
+1. 使用组织中[Microsoft 365 管理](https://admin.microsoft.com)帐户的凭据登录中心。
 
-2. 在管理中心中，转到"设置  >  **组织** 设置  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**安全&特权**</a>  >  **访问"。**
+2. 在管理中心中，**转到"设置**  >  **组织** 设置  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**安全**</a>&  >  **特权访问"。**
 
 3. 选择 **"管理访问策略和请求"。**
 
@@ -159,7 +159,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ### <a name="in-exchange-management-powershell"></a>在 Exchange Management PowerShell 中
 
-若要创建和定义审批策略，请运行 PowerShell 中的以下Exchange Online命令：
+若要创建和定义审批策略，在 PowerShell 中Exchange Online命令：
 
 ```PowerShell
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\<exchange management cmdlet name>' -ApprovalType <Manual, Auto> -ApproverGroup '<default/custom approver group>'
@@ -183,7 +183,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 1. 使用凭据[Microsoft 365 管理](https://admin.microsoft.com)登录中心。
 
-2. 在管理中心中，转到"设置  >  **组织** 设置  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**安全&特权**</a>  >  **访问"。**
+2. 在管理中心中，**转到"设置**  >  **组织** 设置  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**安全**</a>&  >  **特权访问"。**
 
 3. 选择 **"管理访问策略和请求"。**
 
@@ -223,7 +223,7 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 
 1. Sign into the [Microsoft 365 管理中心](https://admin.microsoft.com)with your credentials.
 
-2. 在管理中心中，转到  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**"设置"设置"&"隐私**</a>  >  **特权访问"。**
+2. 在管理中心中，转到  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**"设置"设置"&"**</a>  >  **隐私特权访问"。**
 
 3. 选择 **"管理访问策略和请求"。**
 
@@ -251,7 +251,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 1. Sign into the [Microsoft 365 管理中心](https://admin.microsoft.com)with your credentials.
 
-2. 在管理中心中，转到  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**"设置"设置"&"隐私**</a>  >  **特权访问"。**
+2. 在管理中心中，转到  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**"设置"设置"&"**</a>  >  **隐私特权访问"。**
 
 3. 选择 **"管理访问策略和请求"。**
 
@@ -273,7 +273,7 @@ Approve-ElevatedAccessRequest -RequestId <request id> -Comment '<approval commen
 Approve-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<approval comment>'
 ```
 
-若要拒绝提升授权请求，请运行 PowerShell 中的以下Exchange Online命令：
+若要拒绝提升授权请求，在 PowerShell 中Exchange Online命令：
 
 ```PowerShell
 Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
@@ -293,7 +293,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 1. 使用[Microsoft 365 管理中心管理员](https://admin.microsoft.com)帐户的凭据登录登录帐户。
 
-2. 在管理中心中，转到  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**"设置"设置"&"隐私**</a>  >  **特权访问"。**
+2. 在管理中心中，转到  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**"设置"设置"&"**</a>  >  **隐私特权访问"。**
 
 3. 选择 **"管理访问策略和请求"。**
 
@@ -305,7 +305,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 ### <a name="in-exchange-management-powershell"></a>在 Exchange Management PowerShell 中
 
-若要删除特权访问策略，在 Powershell 中Exchange Online命令：
+若要删除特权访问策略，请运行 Powershell 中的以下Exchange Online命令：
 
 ```PowerShell
 Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
@@ -319,7 +319,7 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 1. 使用[Microsoft 365 管理中心管理员](https://admin.microsoft.com)帐户的凭据登录登录帐户。
 
-2. 在管理中心中，**转到"设置**  >  **组织** 设置  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**安全&特权**</a>  >  **访问"。**
+2. In the Admin Center， go to **设置**  >  **Org 设置** Security &  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Privacy**</a>  >  **Privileged access**.
 
 3. 启用 **"需要批准特权访问控制** "。
 

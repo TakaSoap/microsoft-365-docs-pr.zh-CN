@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d901366e74969b0b128a49a6bd65a56046049085
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e5d22bba679d604b0b3a78a9555cc8a2277a66ac
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162264"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205183"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>了解威胁智能概念
 
@@ -48,7 +48,7 @@ ms.locfileid: "59162264"
 IIC 是单独已知的恶意事件，指示网络或设备已被破坏。 与警报定义不同，这些指示器被视为泄露的证据。 通常，在攻击已发生且达到目标（例如，攻击发生）后，它们经常看到。 在取证调查期间，跟踪 IIC 也很重要。 尽管它可能不会提供干预攻击链的能力，但是收集这些指示器对于为可能的未来攻击创建更好的防护非常有用。
 
 ## <a name="relationship-between-alert-definitions-and-iocs"></a>警报定义和 ICS 之间的关系
-在 Microsoft Defender for Endpoint 的上下文中，警报定义是 IOC 的容器并定义警报，包括在进行特定 IOC 匹配时引发元数据。 各种元数据作为警报定义的一部分提供。 诸如攻击的警报定义名称、严重性和说明等元数据以及其他选项一起提供。
+在 Microsoft Defender for Endpoint 的上下文中，警报定义是 IOC 的容器并定义警报，包括在进行特定 IOC 匹配时引发元数据。 各种元数据作为警报定义的一部分提供。 诸如攻击的警报定义名称、严重性和说明等元数据与其他选项一起提供。
 
 每个 IOC 都基于其类型和值及其操作定义具体的检测逻辑，确定如何匹配它。 它绑定到特定警报定义，该定义定义如何在 Microsoft Defender for Endpoint 控制台上将检测显示为警报。
 
@@ -66,7 +66,7 @@ IIC 与警报定义具有多对一关系，因此警报定义可以具有许多�
 [将检测拉取到 SIEM 工具](configure-siem.md)| 了解拉取检测的不同方法。
 [在 Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)| 了解如何在门户的 设置 页面中启用 SIEM 集成功能，以便可以使用和生成配置支持的 SIEM 工具所需的信息。 
 [配置 Splunk 以拉取 Microsoft Defender 进行终结点检测](configure-siem.md)| 了解如何安装 REST API 模块化输入应用和其他配置设置，以使 Splunk 能够拉取 Microsoft Defender for Endpoint 检测。
-[配置 HP ArcSight 以拉取 Microsoft Defender 进行终结点检测](configure-arcsight.md)| 了解如何安装 HP ArcSight REST FlexConnector 程序包以及配置 ArcSight 以拉取 Microsoft Defender 进行终结点检测所需的文件。
+[配置 HP ArcSight 以拉取 Microsoft Defender 进行终结点检测](configure-arcsight.md)| 了解如何安装 HP ArcSight REST FlexConnector 程序包，以及配置 ArcSight 以拉取 Microsoft Defender 进行终结点检测所需的文件。
 [适用于终结点检测字段的 Microsoft Defender](api-portal-mapping.md) | 了解哪些数据字段作为警报 API 的一部分公开，以及如何映射到Microsoft Defender 安全中心。
 [使用 REST API 拉取 Microsoft Defender 的终结点检测](pull-alerts-using-rest-api.md) | 使用客户端凭据 OAuth 2.0 流，使用 REST API 从 Microsoft Defender for Endpoint 拉取检测。
 [SIEM 工具集成问题疑难解答](troubleshoot-siem.md) | 解决在使用 SIEM 集成功能时可能遇到的问题。

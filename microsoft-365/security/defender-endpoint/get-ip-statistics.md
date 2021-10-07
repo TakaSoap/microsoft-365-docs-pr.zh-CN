@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6bcabc069bd79444802ca7487de93719cb2bee00
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 48b0f40f6d995e2a197c6220b71192d5179eb5ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201454"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204055"
 ---
 # <a name="get-ip-statistics-api"></a>获取 IP 统计信息 API
 
@@ -50,7 +50,7 @@ ms.locfileid: "59201454"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Ip.Read.All|"读取 IP 地址配置文件"
+Application|Ip.Read.All|"读取 IP 地址配置文件"
 委派（工作或学校帐户）|Ip.Read.All|"读取 IP 地址配置文件"
 
 > [!NOTE]
@@ -67,13 +67,13 @@ GET /api/ips/{ip}/stats
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-uri-parameters"></a>请求 URI 参数
 
-名称|类型|描述
+名称|类型|说明
 :---|:---|:---
-lookBackHours|Int32|定义我们重新搜索以获取统计信息的小时数。 默认为 30 天。 **可选。**
+lookBackHours|Int32|定义我们重新搜索以获取统计信息的小时数。 默认为 30 天。 **可选**。
 
 ## <a name="request-body"></a>请求正文
 

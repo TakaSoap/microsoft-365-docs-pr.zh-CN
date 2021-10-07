@@ -6,14 +6,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解如何在 Microsoft Bookings 中为客户端、客户和合作伙伴配置短信通知。
-ms.openlocfilehash: 2b23ed2bd39cd301bfa1df3e15f325c676f1462d
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: be5d1d93754707be8217c5c3e17ec7d9f158e501
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491624"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204835"
 ---
 # <a name="configure-sms-text-notifications-and-reminders-in-microsoft-bookings"></a>在 Microsoft Bookings 中配置短信通知和提醒
 
@@ -28,7 +28,7 @@ ms.locfileid: "59491624"
 ## <a name="configure-sms-notification-in-microsoft-bookings"></a>在 Microsoft Bookings 中配置短信通知
 
 > [!IMPORTANT]
-> 在 2022 年 2 月 28 日前，Microsoft Bookings 将为拥有 Bookings 许可证的客户提供无限制的短信通知。 随着我们接近促销期的结束，我们将提供有关许可要求的其他详细信息。 有关 Bookings 许可详细信息，请参阅 [Bookings 许可](/microsoft-365/bookings/bookings-faq?view=o365-worldwide#who-has-access-to-microsoft-bookings-)。
+> 在 2022 年 2 月 28 日前，Microsoft Bookings 将针对拥有 Bookings 许可证的客户提供无限制的短信通知。 随着我们接近促销期的结束，我们将提供有关许可要求的其他详细信息。 有关 Bookings 许可详细信息，请参阅 [Bookings 许可](/microsoft-365/bookings/bookings-faq?view=o365-worldwide#who-has-access-to-microsoft-bookings-)。
 
 可以通过多种方式在 Bookings 中配置短信通知：
 
@@ -39,11 +39,11 @@ ms.locfileid: "59491624"
 ## <a name="tracking-and-metrics-for-sms-notifications"></a>短信通知的跟踪和指标
 
 > [!NOTE]
-> 你需要是一名Teams才能在Teams中心查看Teams和预订数据。
+> 你需要成为管理员Teams才能在Teams中心查看Teams和预订数据。
 
 可以在管理中心跟踪组织中有关短信通知使用情况Teams数据。 使用情况报告包括发送时间和日期、来源编号、邮件类型、事件类型和传递状态等数据。 您可以在促销期间使用 SMS 通知遥测来帮助预测 2022 年 3 月 1 日之后短信通知的预算。
 
-1. On the Teams admin center， **Virtual Visits SMS notifications**.
+1. 在管理Teams"虚拟访问 **短信通知"上**。
 
 2. 在" **分析&"页上** ，选择"短信通知使用情况"。
 

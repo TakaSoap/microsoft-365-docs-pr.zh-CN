@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -18,14 +18,14 @@ ms.custom:
 - commerce_subscriptions
 - admindeeplinkMAC
 search.appverid: MET150
-description: 了解如何与 Microsoft 认证的解决方案提供商 (合作伙伴) 购买和管理组织或学校的产品和服务。
+description: 了解如何与 Microsoft 认证的解决方案提供商 (合作伙伴) 为组织或学校购买和管理产品和服务。
 ms.date: 04/13/2021
-ms.openlocfilehash: f7fd5cda68ce5312f284e7f86e1cfbd3716cc8d4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 19068c87693fbcda06a520b4e41baaad3fef651b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171124"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203443"
 ---
 # <a name="manage-partner-relationships"></a>管理合作伙伴关系
 
@@ -35,9 +35,9 @@ ms.locfileid: "59171124"
 2. 合作伙伴会向客户发送电子邮件请求，以建立合作关系。
 3. 客户接受邀请，Microsoft 365 管理中心开始与合作伙伴合作。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-你必须是全局管理员或帐单管理员才能执行这些步骤。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。
+你必须是全局管理员或帐单管理员才能执行这些步骤。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>合作伙伴可以为我的组织或学校做什么？
 
@@ -51,7 +51,7 @@ ms.locfileid: "59171124"
 | 合作伙伴 | 在租户中为合作伙伴提供用户帐户，他们代表你Microsoft 服务其他帐户。 |
 | 顾问 | 合作伙伴可以重置密码并处理支持事件。 |
 | MPSA &合作伙伴 (Microsoft 产品和服务) 协议 | 如果你通过 MPSA 计划与多个合作伙伴合作，你可以允许他们查看彼此进行购买。 |
-| LOB 业务线 (LOB) 合作伙伴 | 合作伙伴可以开发、提交和管理特定于你的组织或学校的 LOB 应用。 |
+| 业务线 (LOB) 合作伙伴 | 合作伙伴可以开发、提交和管理特定于你的组织或学校的 LOB 应用。 |
 
 ## <a name="find-a-partner"></a>查找合作伙伴
 
@@ -60,7 +60,7 @@ ms.locfileid: "59171124"
 3. 选择一个或多个合作伙伴，然后选择"**联系所选提供商"。**
 4. 填写表单以描述业务需求，然后选择"发送 **"。**
 
-合作伙伴会联系你，让你有机会详细了解他们。 如果你决定使用它们，他们将向您发送一封电子邮件邀请，以建立合作关系。
+合作伙伴会联系你，让你有机会了解有关他们更多信息。 如果你决定使用它们，他们将向您发送一封电子邮件邀请，以建立合作关系。
 
 ## <a name="review-and-accept-a-partner-relationship-and-microsoft-customer-agreement"></a>查看并接受合作关系和 Microsoft 客户协议
 

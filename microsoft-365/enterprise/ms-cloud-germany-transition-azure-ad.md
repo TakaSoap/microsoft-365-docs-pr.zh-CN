@@ -1,5 +1,5 @@
 ---
-title: 有关Azure Active Directory德国 Microsoft 云的迁移的其他详细信息
+title: 有关Azure Active Directory德国 Microsoft 云的其他详细信息
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 12/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,21 +17,21 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 摘要：从德国 microsoft 云Azure Active Directory德国 Microsoft 云 (迁移到新的德国数据中心) Office 365服务时的其他详细信息。
-ms.openlocfilehash: 88a151b61a93b4b65e16bbd100a126d44282e513
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 摘要：从德国 Microsoft 云Azure Active Directory德国 Microsoft 云 (迁移到新的德国数据中心) Office 365服务时的其他详细信息。
+ms.openlocfilehash: 349df1366c76eb23c8aaaf0447ef90a031e6e52d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171315"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189053"
 ---
-# <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>有关Azure Active Directory德国 Microsoft 云的迁移的其他详细信息
+# <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>有关Azure Active Directory德国 Microsoft 云的其他详细信息
 
 若要完成从 Azure 德国云到 Azure 公共云的迁移，我们建议在 OpenID 连接 (OIDC) 终结点开始报告商业云终结点时，将应用程序的身份验证终结点、Azure Active Directory (Azure AD) Graph 和 MS Graph 终结点更新为商业云终结点。 `https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration` 
  
 **何时应进行此更改？**
 
-当你的租户完成从德国云到商业云的迁移Office Azure/Office门户中，你将收到一条通知。 你在收到此通知后 30 天内完成这些更新，以便应用继续适用于从 Azure Germany 云迁移到 Azure 公共云的租户。
+当你的租户完成从德国云到商业云的迁移Office Azure/云门户中，你将收到一条通知。 你在收到此通知后 30 天内完成这些更新，以便应用继续适用于从 Azure Germany 云迁移到 Azure 公共云的租户。
  
 更新登录权限有三个先决条件：
 
@@ -59,7 +59,7 @@ ms.locfileid: "59171315"
 
 **我需要更新哪些内容？**
 
-1. 如果你要在德国 Azure 中托管用于对 Azure 德国或德国Office 365身份验证的应用程序，请确保在身份验证上下文中用作 `https://login.microsoftonline.com` 颁发机构。
+1. 如果你要在德国 Azure 中托管用于对 Azure 德国或 Office 365用户进行身份验证的应用程序，请确保在身份验证上下文中用作 `https://login.microsoftonline.com` 颁发机构。
 
     - 请参阅 Azure AD 身份验证上下文。
     - 这既适用于对应用程序的身份验证，也适用于对应用程序可能调用 (（即 Microsoft Graph、Azure AD Graph、Azure 资源管理器) ）的任何 API 的身份验证。
@@ -68,7 +68,7 @@ ms.locfileid: "59171315"
 
 3. 将 Microsoft Graph 终结点更新为 `https://graph.microsoft.com` 。
 
-4. 将任何德国云终结点 (，如 Exchange Online 和 SharePoint Online) 的终结点，应用程序使用它们作为公共云终结点。
+4. 将任何德国云终结点 (，例如 Exchange Online 和 SharePoint Online) ，应用程序使用它们作为公共云终结点。
 
 5. 更新要更新的环境 `AzurePublic` (，) `AzureGermany` 管理工具和脚本中更新这些参数：
 
@@ -83,7 +83,7 @@ ms.locfileid: "59171315"
 
 **在迁移期间添加新的多租户应用程序如何？**
 
-如果要使用由另一个组织发布的新应用程序 (多租户应用程序) 你将在迁移过程（第 2 阶段至第 9 阶段）期间 (限制你添加该应用程序) 。  当你的组织完成第 9 阶段并完全转换到 Azure 公共实例时，你可以执行此任务。
+如果你想要使用由另一个组织发布的新应用程序 (多租户应用程序) 你将在迁移过程（第 2 阶段至第 9 阶段）期间 (限制你添加该应用程序) 。  当你的组织完成第 9 阶段并完全转换到 Azure 公共实例时，你可以执行此任务。
 
 ## <a name="additional-considerations"></a>其他注意事项
 
@@ -91,7 +91,7 @@ ms.locfileid: "59171315"
 
 - 对于联合身份验证：
 
-  - 在租户转换过程中，不得创建、升级或降级联合域。 在租户完全完成 (Azure AD 服务迁移完成后，) 可以继续管理联盟域。
+  - 在租户转换过程中，不得创建、升级或降级联合域。 在租户完全完成迁移 (Azure AD 服务) ，可以恢复管理联盟域。
 
   - 如果对 Active Directory 联合身份验证服务 (AD FS) 使用联合身份验证，则不应对用于迁移期间本地 Active Directory 域服务 (AD DS) 的所有身份验证的颁发者 URI 进行更改。 更改颁发者 URI 将导致域中用户的身份验证失败。 颁发者 URI 可以直接在 AD FS 中更改，或在将域从托管域转换为联盟域时更改，反之亦然。 Microsoft 建议客户不要在要迁移的 Azure AD 租户中添加、删除或转换联合域。 完全完成迁移后，可更改颁发者 URI。
 
@@ -104,30 +104,30 @@ ms.locfileid: "59171315"
 
 - 对于条件访问： 
 
-  - 在最终完成[Azure AD](ms-cloud-germany-transition.md#how-is-the-migration-organized)迁移阶段Office 365完成到 (服务迁移之前，不支持具有以下授予控制的条件访问) ：
+  - 在最终完成[Azure AD](ms-cloud-germany-transition.md#how-is-the-migration-organized)迁移阶段完成后Office 365完成 (以下授予控制的条件访问策略不受) ：
 
     - 需要兼容设备
     - 需要批准的应用
     - 需要应用保护策略
     
-  - 条件访问策略接口会针对为租户启用安全默认值（即使已禁用）以及租户已存在的条件访问策略，提供一个假警告。 应忽略警告或使用 Office 365门户管理条件访问策略。 
+  - 条件访问策略接口会针对为租户启用安全默认值（即使已禁用）以及租户已存在的条件访问策略，提供一个假警告。 应忽略该警告或使用 Office 365门户管理条件访问策略。 
 
 - 租户迁移完成后，仅针对全球终结点支持 Intune 方案，包括所有 Office 工作负载迁移。
 
-- 对 MFA 请求使用移动应用通知方法的 Microsoft 云德国用户会看到用户的 ObjectId (GUID) 而不是 Microsoft Authenticator 应用中的用户主体名称 (UPN) 。 完成 Azure AD 租户的迁移并托管在 Office 365 服务中后，新的 Microsoft Authenticator 激活将显示用户的 UPN。 现有Microsoft Authenticator帐户将继续显示用户 ObjectId，但它们将继续用于移动应用通知。 
+- 对 MFA 请求使用移动应用通知方法的 Microsoft 云德国用户在 Microsoft Authenticator 应用中会看到用户的 ObjectId (GUID) 而不是用户主体名称 (UPN) 。 完成 Azure AD 租户的迁移并托管在 Office 365 服务中后，新的 Microsoft Authenticator 激活将显示用户的 UPN。 现有Microsoft Authenticator帐户将继续显示用户 ObjectId，但它们将继续用于移动应用通知。 
 
 - 对于在 2019 年 10 月 22 日之后创建的租户，当租户迁移到 Office 365 服务时，可能会为租户自动启用安全默认值。 租户管理员可以选择保持启用安全默认值并注册 MFA，或者可以禁用该功能。 有关详细信息，请参阅 [禁用安全默认值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults)。 
 
   > [!NOTE]
   > 迁移期间未自动启用的组织将来可能仍可以自动注册，因为启用安全默认值的功能在 Office 365 服务中推出。 选择显式禁用或启用安全默认值的管理员可以通过更新"属性"下的"Azure Active Directory >**来这样做**。 在管理员显式启用该功能后，它将不会自动启用。
 
-- 租户迁移后，将在 Office 365 Germany 门户和 Office 365 门户中显示有关 Azure AD 连接 版本的警告。 如果迁移完成后版本警告不再显示警告，可以忽略此警告。 如果在迁移之前或之后在任一门户中出现警告，则必须连接 Azure AD 帐户。 警告消息显示："我们检测到你正在使用过时的目录同步工具。 我们建议你转到 Microsoft 下载中心，获取最新版 Azure AD 连接。"
+- 在租户迁移后，连接德国门户以及 Office 365 Office 365 门户中都会显示有关 Azure AD 连接 版本的警告。 如果迁移完成后版本警告不再显示警告，可以忽略此警告。 如果在迁移之前或之后在任一门户中出现警告，则必须连接 Azure AD 帐户。 警告消息显示："我们检测到你正在使用过时的目录同步工具。 我们建议你转到 Microsoft 下载中心，获取最新版 Azure AD 连接。"
 
 ## <a name="more-information"></a>更多信息
 
 入门：
 
-- [从德国 Microsoft 云Office 365新的德国数据中心区域部署服务](ms-cloud-germany-transition.md)
+- [从德国 Microsoft 云迁移到Office 365新的德国数据中心区域部署服务](ms-cloud-germany-transition.md)
 - [德国 Microsoft 云迁移助手](https://aka.ms/germanymigrateassist)
 - [如何选择加入迁移](ms-cloud-germany-migration-opt-in.md)
 - [迁移期间客户体验](ms-cloud-germany-transition-experience.md)

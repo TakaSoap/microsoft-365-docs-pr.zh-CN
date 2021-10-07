@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何在内容资源管理器中向可训练分类器提供反馈。
-ms.openlocfilehash: 7c021a1fb7a79e335f53fd99b162c9062c4f43a0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 00162bcce2f8291ff151d1f8a9f692581c9ee9b2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162055"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203275"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新训练内容资源管理器中的分类器
 
@@ -50,7 +50,7 @@ ms.locfileid: "59162055"
 ## <a name="overall-workflow"></a>总体工作流
 
 > [!IMPORTANT]
-> 您可以在内容资源管理器中提供反馈，以自动应用保留标签策略Exchange项并使用分类器作为条件。 **如果你没有自动将保留标签应用于项目并使用分类Exchange分类器作为条件的保留策略，请在此处停止。**
+> 您可以在内容资源管理器中提供反馈，以自动应用保留标签策略Exchange项并使用分类器作为条件。 **如果没有保留策略，该保留策略自动将保留标签应用于Exchange并使用分类器作为条件，请在此处停止。**
 
 使用分类器时，可能需要提高分类器所分类的精度。 为此，可评估对已标识为匹配项或不匹配项进行的分类质量。 对分类器进行 30 次评估后，它将接受该反馈并自动自我重新培训。
 
@@ -61,7 +61,7 @@ ms.locfileid: "59162055"
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新训练内容资源管理器中的分类器
 
-1. Sign in to Microsoft 365 合规中心 with compliance admin or security admin role access and open **Microsoft 365 合规中心**  >  **Data classification** Content  >  **explorer**. 
+1. 登录以使用Microsoft 365 合规中心管理员或安全管理员角色访问权限登录，**然后打开Microsoft 365 合规中心**  >  **数据分类**  >  **内容资源管理器"。** 
 2. 在"**筛选标签、信息类型** 或类别"列表下，展开 **"可训练分类器"。**
 
 > [!IMPORTANT]
@@ -80,7 +80,7 @@ ms.locfileid: "59162055"
 5. 选择 **"提供反馈"。**
 6. 在"**详细反馈"** 窗格中，如果项目为真正的正数，请选择"匹配 **"。**  如果项目为误报，即分类中未正确包含，请选择"**不匹配"。**
 7. 如果有另一个分类器更适用于该项目，您可以从"建议其他可训练分类器"**列表中选择它。** 这将触发其他分类器来评估该项目。
-8. 选择 **"发送** 反馈"发送对 `match` 、 `not a match` 分类的评估，并推荐其他可训练分类器。 向分类器提供 30 个反馈实例后，分类器将自动重新播放。 重新培训可能需要 1 到 4 个小时。 每天只能重新对分类器进行两次重新分类。
+8. 选择 **"发送** 反馈"发送对 `match` 、分类的评估， `not a match` 并建议其他可训练分类器。 向分类器提供 30 个反馈实例后，分类器将自动重新播放。 重新培训可能需要 1 到 4 个小时。 每天只能重新对分类器进行两次重新分类。
 
 > [!IMPORTANT]
 > 此信息将转到租户中的分类器 **，不会返回到 Microsoft。**

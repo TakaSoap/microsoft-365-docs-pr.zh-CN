@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceFileEvents 表
 description: 了解高级搜寻架构的 DeviceFileEvents 表中与文件相关的事件
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， filecreationevents， DeviceFileEvents， 文件， 路径， 哈希， sha1， sha256， md5
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， 文件创建事件， DeviceFileEvents， 文件， 路径， 哈希， sha1， sha256， md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1b716a37aa39dffc8dc541335f42265ae47fe989
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4d6c47c3afa3ab32fc227442e93d61b1f66fd2e4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162225"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205123"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -39,7 +39,7 @@ ms.locfileid: "59162225"
 高级 `DeviceFileEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关文件创建、修改和其他文件系统事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关表支持的事件类型 () ，请使用安全中心中提供的内置架构 `ActionType` 参考。
+> 有关表支持 (事件) 类型的详细信息，请使用安全中心中提供的内置 `ActionType` 架构参考。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -65,8 +65,8 @@ ms.locfileid: "59162225"
 | `InitiatingProcessAccountSid` | string | 安全 (SID) 运行负责事件的进程的帐户的 SID 标识符 |
 | `InitiatingProcessAccountUpn` | string | 用户主体 (UPN) 运行负责事件的进程的帐户的名称 |
 | `InitiatingProcessAccountObjectId` | string | 运行负责事件的进程的用户帐户的 Azure AD 对象 ID |
-| `InitiatingProcessMD5` | string | 启动事件的进程和 (文件的 MD5) 哈希 |
-| `InitiatingProcessSHA1` | string | 启动事件 (映像文件) SHA-1 |
+| `InitiatingProcessMD5` | string | 启动事件的进程 (MD5) 文件哈希 |
+| `InitiatingProcessSHA1` | string | 启动事件 (映像) SHA-1 |
 | `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `InitiatingProcessFolderPath` | string | 包含启动事件 (进程) 文件的文件夹 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
@@ -75,12 +75,12 @@ ms.locfileid: "59162225"
 | `InitiatingProcessVersionInfoProductName` | string | 进程版本信息中的产品名称 (负责) 文件 |
 |` InitiatingProcessVersionInfoProductVersion` | string | 进程版本信息中的产品版本 (负责) 文件 |
 |` InitiatingProcessVersionInfoInternalFileName` | string | 进程版本信息中的内部文件名 (负责) 文件 |
-| `InitiatingProcessVersionInfoOriginalFileName` | string | 负责事件的进程版本信息 (文件) 文件的原始文件名 |
-| `InitiatingProcessVersionInfoFileDescription` | string | 负责事件的进程版本信息 (映像) 说明 |
-| `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的进程的 PID |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 进程版本信息的原始文件名 (负责) 文件 |
+| `InitiatingProcessVersionInfoFileDescription` | string | 来自负责事件的进程 (文件) 说明 |
+| `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的过程的 PID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动事件的过程的日期和时间 |
-| `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows某些特征（例如是否从 Internet 下载中启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
+| `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows某些特征（例如是否从 Internet 下载启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
 | `InitiatingProcessTokenElevation` | string | 指示是否存在用户访问控制的令牌类型 (UAC) 启动事件的进程应用的特权提升 |
 | `InitiatingProcessParentId` | int | 进程 ID (PID) 生成负责事件的进程的父进程的 PID |
 | `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |

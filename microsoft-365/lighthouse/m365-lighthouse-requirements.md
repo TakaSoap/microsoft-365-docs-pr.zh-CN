@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，获取使用托管服务提供商Microsoft 365 Lighthouse。
-ms.openlocfilehash: 610b8cee89576b1112e9b5e3e49d59fa4becd3a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 70aaefc7e19268a5ad4c33c50b2e165361f2c362
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170551"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188921"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse
 
 > [!NOTE]
 > 本文中所述的功能在预览版中可能会更改，并且仅对满足本文中列出的要求的合作伙伴可用。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
-Microsoft 365 Lighthouse是一个管理门户，可帮助托管服务提供商 (MSP) 为中小型商业 (SMB 客户大规模保护和管理设备、数据和) 用户。  
+Microsoft 365 Lighthouse是一个管理门户，可帮助托管服务提供商 (MSP)  (为中小型商业组织 SMB) 客户大规模保护和管理设备、数据和用户。  
 
 MSP 必须以间接经销商或直接帐单合作伙伴云解决方案提供商 (云解决方案提供商计划) 注册，以使用 Lighthouse。  
 
@@ -42,18 +42,18 @@ MSP 必须以间接经销商或直接帐单合作伙伴云解决方案提供商 
 
 若要在设备管理页面上查看客户租户设备，MSP 必须：    
 
-- 在 MEM Microsoft Endpoint Manager (注册) 。有关详细信息，请参阅在 Microsoft Intune[中注册设备](/mem/intune/enrollment/)。
+- 在 MEM 中注册Microsoft Endpoint Manager (客户) 。有关详细信息，请参阅在[Microsoft Intune 中注册设备](/mem/intune/enrollment/)。
 - 将合规性策略分配给所有客户设备。有关详细信息，请参阅在策略[Microsoft Intune。](/mem/intune/protect/create-compliance-policy) 
 
 ## <a name="requirements-for-enabling-usermanagement"></a>启用用户管理的要求 
 
-若要使客户数据显示在用户管理页面上的报告（包括风险用户、多重身份验证和密码重置）中，客户租户必须具有 Azure Active Directory 高级版 P1 或更高版本的许可证。 Azure AD Premium P1 和 Microsoft 365 E3 中包含Microsoft 365 商业高级版。   
+若要使客户数据显示在用户管理页面上的报告中，包括风险用户、多重身份验证和密码重置，客户租户必须具有 Azure Active Directory 高级版 P1 或更高版本的许可证。 Azure AD Premium P1 和 Microsoft 365 商业高级版 Microsoft 365 E3。   
 
 ## <a name="requirements-for-enablingthreat-management"></a>启用威胁管理的要求 
 
 若要在威胁管理页面上查看客户租户设备和威胁，必须在 Microsoft Endpoint Manager (MEM) 注册所有客户租户设备，并运行 Microsoft Defender 防病毒。  
 
-有关详细信息，请参阅在 Microsoft Intune[中注册设备](/mem/intune/enrollment/)。  
+有关详细信息，请参阅在[Microsoft Intune 中注册设备](/mem/intune/enrollment/)。  
 
 Microsoft Defender 防病毒是 Windows操作系统的一部分，并且默认情况下在运行 Windows 10 的设备上启用。  
 

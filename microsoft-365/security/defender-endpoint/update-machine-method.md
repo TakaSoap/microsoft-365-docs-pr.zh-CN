@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7ffd136bd770369248b2f0735deb42e62f372632
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 12e4935c38a2c4748b05226237c5e31be756676c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196267"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203983"
 ---
 # <a name="update-machine"></a>更新计算机 
 
@@ -55,7 +55,7 @@ ms.locfileid: "59196267"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Machine.ReadWrite.All|"读取和写入所有计算机的计算机信息"
+Application|Machine.ReadWrite.All|"读取和写入所有计算机的计算机信息"
 委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 
 > [!NOTE]
@@ -73,7 +73,7 @@ PATCH /api/machines/{machineId}
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|字符串|Bearer {token}。 必需。
 Content-Type|String|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -86,7 +86,7 @@ Content-Type|String|application/json. **必需**。
 
 属性|类型|说明
 :---|:---|:---
-machineTags|String collection|计算机 [标记](machine.md) 集。
+machineTags|字符串集合|计算机 [标记](machine.md) 集。
 deviceValue|Nullable Enum|[设备 的值](tvm-assign-device-value.md)。 可能的值包括："Normal"、"Low"和"High"。
 
 ## <a name="response"></a>响应

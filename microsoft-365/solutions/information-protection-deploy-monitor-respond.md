@@ -9,7 +9,7 @@ ms.date: 01/04/2021
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用审核和警报策略和数据主体请求来监视和响应个人数据事件。
-ms.openlocfilehash: 4070cd772d243bcfba33bfb164fd05e1f0911b3b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 74efff60bb8e0ad6f170b57c86e384d3b689eee1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196240"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204981"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>监视和响应组织中数据隐私事件
 
@@ -56,10 +56,10 @@ Microsoft 365功能可帮助您在操作相关功能时监视、调查和响应�
 
 您的组织可能还希望出于其他目的（如其他合规性需求或出于业务原因）执行监视和响应活动。 应制定数据隐私的监视和响应方案，作为整体监视和响应规划、实施和管理的一部分。
 
-为了帮助你开始使用 Microsoft 365 中针对数据隐私法规的监视和响应方案，本文列出了 Microsoft 365 中用于回答以下问题的有用功能： 
+为了帮助你开始使用 Microsoft 365 隐私法规中的监视和响应方案，本文列出了 Microsoft 365 中用于回答以下问题的有用功能： 
 
 - 对于不同的数据类型和源，提供了哪类日常监视、调查和报告技术？
-- 需要哪些机制来处理 DSR (数据主体) 以及任何修正操作（如匿名、修订和删除）。
+- 需要哪些机制来处理 DSR (数据主体) 以及任何修正操作（如匿名化、修订和删除）。
 
 ## <a name="auditing-and-alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心中的审核和警报策略
 
