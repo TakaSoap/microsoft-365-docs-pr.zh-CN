@@ -10,19 +10,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何查看和解释相关性培训状态和结果，了解 Advanced eDiscovery。
-ms.openlocfilehash: ac575ebf073afa8eb4ba13e63202f8b634c52f60
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7a2786a727fd233b6617779bae95a26c1b62644e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196871"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175007"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery"></a>跟踪数据中的相关性Advanced eDiscovery
   
@@ -59,14 +59,14 @@ ms.locfileid: "59196871"
 
 ### <a name="reaching-stable-training-levels"></a>达到稳定的培训级别
 
-评估文件获得稳定级别的培训后，Advanced eDiscovery准备批量计算。
+在评估文件获得稳定级别的培训后，Advanced eDiscovery准备批量计算。
   
 > [!NOTE]
 > 通常，在三个稳定的培训示例之后，下一步是"批量计算"。 可能有例外情况，例如，在先前示例中对文件标记进行了更改或添加了种子文件时。 
   
 ### <a name="performing-batch-calculation"></a>执行批处理计算
 
-当进度栏显示稳定培训状态、工具提示中的选中标记和稳定状态时，批计算作为下一步执行。) 批处理计算将相关性培训期间获取的知识应用于整个文件填充，以评估文件的相关性并分配相关性分数。 (
+当进度栏显示稳定培训状态、工具提示中的选中标记和稳定状态时，批计算将在成功完成 (后执行，作为下一步。) 批处理计算将相关性培训期间获得的知识应用于整个文件填充，以评估文件的相关性并分配相关性分数。
   
 当存在多个问题时，将按问题进行批量计算。 在批计算过程中，在处理所有文件时将监视进度。 
   
@@ -108,9 +108,9 @@ ms.locfileid: "59196871"
   
 ### <a name="keywords"></a>关键字
 
-关键字是文件中唯一的字符串、字词、短语或单词序列，Advanced eDiscovery标识为文件是否相关的重要指标。 "包含"列列出标记为"相关"的文件的关键字和权重，"排除"列列出了标记为"不相关"的文件中关键字和权重。
+关键字是文件中唯一的字符串、字词、短语或字词序列，Advanced eDiscovery标识为文件是否相关的重要指标。 "包含"列列出标记为"相关"的文件的关键字和权重，"排除"列列出了标记为"不相关"的文件中关键字和权重。
   
-Advanced eDiscovery指定负关键字权重值或正关键字权重值。 权重越高，在批计算过程中为关键字出现的文件分配的相关性分数越高。
+Advanced eDiscovery负值或正关键字权重值。 权重越高，在批计算过程中为关键字出现的文件分配的相关性分数越高。
   
 关键字Advanced eDiscovery列表可用于补充由专家构建的列表，或作为文件审阅过程中任何时间点的间接性检查。
   

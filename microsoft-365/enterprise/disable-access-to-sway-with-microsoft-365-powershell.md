@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell for Microsoft 365
+title: 使用 PowerShell 禁用对 Sway Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -18,14 +18,14 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
 description: 了解在何处下载 ManageSway.ps1 PowerShell 脚本，该脚本允许你在组织中禁用对 Sway Microsoft 365访问。
-ms.openlocfilehash: c441e3087ce85e2f41b200ce0a76f5f6196ea4cf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b7222ebca92d9ae154d8930f800d49d5f0f61ace
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162375"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173435"
 ---
-# <a name="disable-access-to-sway-with-powershell-for-microsoft-365"></a>使用 PowerShell for Microsoft 365
+# <a name="disable-access-to-sway-with-powershell-for-microsoft-365"></a>使用 PowerShell 禁用对 Sway Microsoft 365
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 

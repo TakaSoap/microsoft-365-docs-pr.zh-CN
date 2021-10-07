@@ -9,7 +9,7 @@ ms.date: 9/20/2018
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 市场活动或其他Microsoft 365 商业高级版的安装程序概述
-ms.openlocfilehash: 41d3f0829829233c70e091f27225f7756a0e4f46
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 272f4728214feaf3868b6861cdf990ea87442fad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170233"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173819"
 ---
 # <a name="set-up-microsoft-365"></a>设置Microsoft 365
 
@@ -42,9 +42,9 @@ ms.locfileid: "59170233"
 
 ![设置项目Microsoft 365。](../media/M365-democracy-SetUpProcess.png)
 
-对于符合特殊定价资格的市场活动，请从请求[Microsoft](https://m365forcampaigns.microsoft.com/)邀请开始，然后注册Microsoft 365[活动。](m365-campaigns-sign-up.md) 若要完成设置 [，请运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) 以配置核心设置。
+对于符合特殊定价资格的市场活动，请从[](https://m365forcampaigns.microsoft.com/)Microsoft 请求邀请开始，然后注册Microsoft 365[活动。](m365-campaigns-sign-up.md) 若要完成设置 [，请运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) 以配置核心设置。
 
-对于所有其他组织，注册 Microsoft 365 商业高级版[后，](../business-video/sign-up.md)通过运行安装向导配置核心设置来完成设置。 [](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)
+对于所有其他组织，在注册[Microsoft 365 商业高级版后，](../business-video/sign-up.md)通过运行安装向导配置核心设置来完成设置。 [](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)
 
 对于所有组织，通过：保护管理员帐户、[](m365-campaigns-protect-admin-accounts.md)保护对邮件和数据的访问[](m365-campaigns-conditional-access.md)以及增强[威胁防护来提升安全保护](m365-campaigns-increase-protection.md)。
 

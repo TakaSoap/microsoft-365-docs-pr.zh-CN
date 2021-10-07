@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附仅限云的身份验证的先决条件。
-ms.openlocfilehash: 5fc29acce595cab33086ea868d927b93b9281167
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c684e8598f7dd23218143f9f7707c815d834fda5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175485"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172007"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中仅限云的标识和设备访问先决条件
 
@@ -35,7 +35,7 @@ ms.locfileid: "59175485"
 2. 配置命名位置
 3. 配置自助密码重置
 4. 配置多重身份验证
-5. 启用已加入域的计算机的Windows注册
+5. 启用已加入域的计算机的自动Windows注册
 6. 配置 Azure AD 密码保护 
 7. 启用 Azure AD Identity Protection
 8. 为 Exchange Online 和 Skype for Business Online 启用新式身份验证

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 76f0478167c020d470fec32f2f2020a9263b0b44
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 66f5992dfd3b2d5d54fb4d98e68f357c3b02b454
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175397"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174491"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "59175397"
 高级 `EmailEvents` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关在 Microsoft Defender for Office 365 上处理电子邮件的事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关表支持 (事件) 类型的详细信息，请使用安全中心中提供的内置 `ActionType` 架构参考。
+> 有关表支持的事件 (值) ，请使用安全中心中提供的内置架构 `ActionType` 参考。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -68,7 +68,7 @@ ms.locfileid: "59175397"
 | `ThreatTypes` | string | 关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定 |
 | `ThreatNames` | string |找到的恶意软件或其他威胁的检测名称 |
 | `DetectionMethods` | string | 用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法 |
-| `ConfidenceLevel` | string | 任何垃圾邮件或网络钓鱼裁定的可信度列表。 对于垃圾邮件，此列显示垃圾邮件可信度 (SCL) ，指示电子邮件是否跳过 (-1) 、发现不是垃圾邮件 (0，1) 、被识别为可信度中等的垃圾邮件 (5，6) ，或发现为高可信度垃圾邮件 (9) 。 对于网络钓鱼，此列显示可信度是"高"还是"低"。 |
+| `ConfidenceLevel` | string | 任何垃圾邮件或网络钓鱼裁定的可信度列表。 对于垃圾邮件，此列显示垃圾邮件可信度 (SCL) ，指示电子邮件是否跳过 (-1) 、发现不是垃圾邮件 (0，1) 、被识别为可信度中等的垃圾邮件 (5，6) 或发现为高可信度 (9) 的垃圾邮件。 对于网络钓鱼，此列显示可信度是"高"还是"低"。 |
 | `EmailAction` | string | 基于筛选器裁定、策略和用户操作对电子邮件执行的最后操作：将邮件移到垃圾邮件文件夹、添加 X 标头、修改主题、重定向邮件、删除邮件、发送到隔离区、未执行任何操作、密件抄送邮件 |
 | `EmailActionPolicy` | string | 生效的操作策略：反垃圾邮件高可信度、反垃圾邮件、反垃圾邮件批量邮件、反垃圾邮件、反垃圾邮件钓鱼、防钓鱼域模拟、防钓鱼用户模拟、防钓鱼欺骗、防钓鱼图形模拟、反恶意软件、安全附件、企业传输规则 (ETR) |
 | `EmailActionPolicyGuid` | string | 确定最后邮件操作的策略的唯一标识符 |
@@ -81,7 +81,7 @@ ms.locfileid: "59175397"
 | `UserLevelAction` | string | 对电子邮件采取的操作，以响应与收件人定义的邮箱策略的匹配 |
 | `UserLevelPolicy` | string | 触发对电子邮件采取的操作最终用户邮箱策略 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。 |
-| `AuthenticationDetails` | string | 电子邮件身份验证协议（如 DMARC、DKIM、SPF 或 CompAuth (组合）的通过或失败裁定)  |
+| `AuthenticationDetails` | string | 按电子邮件身份验证协议（如 DMARC、DKIM、SPF 或 CompAuth (组合）的通过或失败裁定)  |
 
 ## <a name="related-topics"></a>相关主题
 

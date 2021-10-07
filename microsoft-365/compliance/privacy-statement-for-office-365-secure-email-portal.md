@@ -9,25 +9,25 @@ ms.date: 10/12/2018
 audience: End User
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: Last Updated： May 2017
-ms.openlocfilehash: ac7bc50b621930244e7e549c27489436c4bbf6a19302c3cd16310d9f69108b1b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b881c1e73955ee83f49f8f326f1a184cced46a1f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895291"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172259"
 ---
 # <a name="privacy-statement-for-secure-email-portal"></a>安全电子邮件门户隐私声明
 
 Last Updated： May 2017
   
-本隐私声明管理新 OME Office 365门户 ("新 OME 功能门户") 。 以前的版本称为 OME Office 365 邮件加密 (OME) 和"OME 门户"。 本隐私声明不适用于其他联机或脱机 Microsoft 网站、产品或服务。 其他隐私声明还适用于通过新的 OME 功能门户处理的数据，例如 Microsoft 帐户 (（如果它用于身份验证) 或与设备关联的隐私声明）。
+本隐私声明管理"Office 365 OME 功能门户 ("新 OME 功能门户") 。 以前的版本称为 OME Office 365 邮件加密 (OME) 和"OME 门户"。 本隐私声明不适用于其他联机或脱机的 Microsoft 网站、产品或服务。 其他隐私声明还适用于通过新的 OME 功能门户处理的数据，例如 Microsoft 帐户 (（如果它用于身份验证) 或与设备关联的隐私声明）。
   
 ## <a name="collection-processing-and-use-of-your-information"></a>信息的收集、处理和使用
 
@@ -37,7 +37,7 @@ Microsoft 帐户、工作或学校帐户或 Gmail 帐户的凭据信息以及一
   
 在解密过程中，新 OME 功能门户不会存储您收到的加密邮件;它随时不会传输到新的 OME 功能门户之外。
   
-在某些情况下，门户可能会收集有关新 OME 功能 (的使用和性能的数据点，例如，查看加密邮件的频繁度、使用的浏览器或应用，以及) 遇到的任何错误（为了改进此和其他 Microsoft 应用、产品或服务的质量、安全性和完整性，可能会对其进行汇总分析）。 此信息不用于向用户标识、联系或定向广告。
+在某些情况下，新的 OME 功能 门户可能会收集有关新 OME 功能 (的使用和性能的数据点，例如，查看加密邮件的频繁度、使用的浏览器或应用，以及遇到的任何) 错误（为了改进此应用和其他 Microsoft 应用的质量、安全性和完整性，可能会对其进行汇总分析） 产品或服务。 此信息不用于向用户标识、联系或定向广告。
   
 ## <a name="for-more-information"></a>详细信息
 

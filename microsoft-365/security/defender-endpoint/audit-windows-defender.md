@@ -1,13 +1,13 @@
 ---
 title: 测试 Microsoft Defender for Endpoint 功能在审核模式下如何工作
-description: 审核模式可帮助你查看 Microsoft Defender for Endpoint 在启用后如何保护设备。
+description: 审核模式可帮助你查看 Microsoft Defender for Endpoint 在启用后如何保护你的设备。
 keywords: 攻击防护， 审核， 审核， 模式， 已启用， 禁用， 测试， 演示， 评估， 实验室
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ ms.topic: article
 ms.technology: mde
 ms.date: 09/22/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 746d3ecca3d61634cd11cc7df87d677c4667ad8d
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: b261625215fa5f4f84daac7850f50569d8826cb6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491023"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174863"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中测试攻击面减少
 
@@ -53,7 +53,7 @@ ms.locfileid: "59491023"
 可以使用组策略、PowerShell 和配置服务提供程序和 CSP (启用) 。
 
 > [!TIP]
-> 您还可以访问 Testground Windows Defender[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认这些功能是否正常工作并查看它们如何工作。
+> 还可以访问 Testground Windows Defender[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认这些功能是否正常工作并查看它们如何工作。
 
 |审核选项|如何启用审核模式|如何查看事件|
 |---|---|---|

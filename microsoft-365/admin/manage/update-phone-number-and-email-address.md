@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 如果要重置自己的管理员密码，请更新管理中心中的管理员电话号码和电子邮件地址。
-ms.openlocfilehash: e74a3494c27e4a1bce02d2a289c05fe2c87e2a41
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 2ebd4dd17be376bc79f252055c8aeb50082f7f94
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775806"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174107"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新管理员电话号码和电子邮件地址
 
@@ -45,7 +46,7 @@ ms.locfileid: "59775806"
 
 2. 在标头中，选择配置文件图标 \> **"我的帐户** \> **安全信息"。**
 
-3. 在"**安全信息"** 选项卡中，**选择"添加** 电话 \>  \> **备用** 电话 **或"电子邮件**"添加详细信息。 若要更新您的移动、电话和备用电子邮件地址详细信息，请选择"更改 **"。** 请确保将 Microsoft 电子邮件地址外的其他内容用于备用电子邮件地址。
+3. 在"**安全信息"** 选项卡中，**选择"添加** 电话备用电话 \>  \> **或"电子邮件****"** 添加详细信息。 若要更新您的移动、电话和备用电子邮件地址详细信息，请选择"更改 **"。** 请确保将 Microsoft 电子邮件地址外的其他内容用于备用电子邮件地址。
 
     > [!IMPORTANT]
     > 重置管理员密码时需要备用电子邮件地址和移动电话号码 (计算机管理员密码) 。
@@ -62,5 +63,5 @@ ms.locfileid: "59775806"
 
 [将用户名和电子邮件地址 (](../add-users/change-a-user-name-and-email-address.md) 视频) \
 [将新员工添加到 (](../add-users/add-new-employee.md) 视频) \
-[删除前员工](../add-users/remove-former-employee.md) (视频) \
-[访问和备份以前](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) 用户的数据 (文章) 
+[删除以前员工](../add-users/remove-former-employee.md) (视频) \
+[访问和备份以前用户](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) 的数据 (文章) 

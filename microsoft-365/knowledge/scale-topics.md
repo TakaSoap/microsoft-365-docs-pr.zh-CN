@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: medium
+ms.localizationpriority: medium
 description: 了解使用 Viva 主题管理组织中许多主题的最佳实践。
-ms.openlocfilehash: e076c8a29070fbfe0db5e21bbca842716afe69fd
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: f1e5a284d94f1afc2c67882a7fd24def7718e5ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126814"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173243"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>在主题中大规模Microsoft Viva主题
 
@@ -80,7 +80,7 @@ ms.locfileid: "60126814"
 
    ![显示建议主题并包括建议人员、文件和页面的页面。](../media/knowledge-management/scale-topics-sample-page-suggested-topic.png)
 
-- 对于显示的文件和页面，系统会标识在文档中提及主题多少次，但还必须在标识对特定类型 (例如项目或工作组) 的主题的引用的特定上下文中提及该主题。 这是 AI 的证据。 系统还会考虑主题名称在文档标题、文档类型和其他分析功能（如视图 (）) 。
+- 对于显示的文件和页面，系统会标识在文档中提及该主题多少次，但还必须在标识对特定类型 (如项目或工作组) 的主题的引用的特定上下文中提及该主题。 这是 AI 的证据。 系统还会考虑主题名称在文档标题、文档类型和其他分析功能（如视图 (）) 。
 
    ![显示"建议"主题和已发现Microsoft Viva横幅的图像。](../media/knowledge-management/scale-topics-suggested-you-have-access.png)
 

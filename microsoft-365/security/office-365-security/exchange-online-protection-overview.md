@@ -8,19 +8,19 @@ manager: dansimp
 ms.date: 09/18/2020
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: 了解Exchange Online Protection (EOP) 如何在独立和混合环境中帮助保护本地电子邮件组织。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 006be2cf23735f6ec44c749de869e87d55be2123
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 0fa4aa1d724ad13b3c43f84a0c6d2a7e8002983f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483095"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174359"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概述
 
@@ -48,13 +48,13 @@ Exchange Online Protection (EOP) 是基于云的筛选服务，可保护组织�
 
 1. 传入邮件进入 EOP 时，最初会通过连接筛选，这将检查发件人的信誉。 大多数垃圾邮件此时停止，并遭 EOP 拒绝。 有关详细信息，请参阅[配置连接筛选](configure-the-connection-filter-policy.md)。
 
-2. 然后检查邮件是否有恶意软件。 如果在邮件或附件中发现恶意软件， (邮件) 邮件传递到隔离区。 默认情况下，只有管理员可以查看恶意软件隔离邮件并与之交互。 但是，管理员可以创建并使用 [隔离策略](quarantine-policies.md) 来指定允许用户对隔离邮件执行哪些操作。 若要了解有关恶意软件保护的更多信息，请参阅 [EOP 中的反恶意软件保护](anti-malware-protection.md)。
+2. 然后检查邮件是否有恶意软件。 如果在邮件或附件中发现恶意软件 (邮件) 邮件传递到隔离区。 默认情况下，只有管理员可以查看恶意软件隔离邮件并与之交互。 但是，管理员可以创建并使用 [隔离策略](quarantine-policies.md) 来指定允许用户对隔离邮件执行哪些操作。 若要了解有关恶意软件保护的更多信息，请参阅 [EOP 中的反恶意软件保护](anti-malware-protection.md)。
 
-3. 邮件将继续通过策略筛选，其中根据任何邮件流规则（也称为 (创建的邮件流规则) 规则）进行评估。 例如，当邮件从特定发件人到达时，规则可以向经理发送通知。
+3. 邮件将继续通过策略筛选，其中将针对任何邮件流规则（也称为 (创建的邮件流规则) 规则）进行评估。 例如，当邮件从特定发件人到达时，规则可以向经理发送通知。
 
-   在拥有 CAL with Services 许可证Exchange Enterprise内部部署组织中，此时也会 ([EOP 中的数据丢失](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)防护) DLP) 检查。
+   在具有 CAL with Services Exchange Enterprise内部部署组织中，此时也会 ([EOP](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)中的数据丢失防护) DLP) 检查。
 
-4. 邮件通过内容筛选 (反垃圾邮件和反欺骗) 其中有害的邮件被标识为垃圾邮件、高可信度垃圾邮件、网络钓鱼、高可信度网络钓鱼或反垃圾邮件策略) 或反网络钓鱼策略) 中的批量 (反垃圾邮件策略 (欺骗设置。 您可以配置基于筛选裁定 (隔离、移动到垃圾邮件文件夹等 ) 对邮件的操作，以及用户可以使用隔离策略对隔离邮件执行哪些 [操作](quarantine-policies.md)。 有关详细信息，请参阅在 EOP 中配置 [反垃圾邮件策略](configure-your-spam-filter-policies.md) 和配置 [反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
+4. 邮件通过内容筛选 (反垃圾邮件和反欺骗) 其中有害的邮件被标识为垃圾邮件、高可信度垃圾邮件、网络钓鱼、高可信度网络钓鱼或批量 (反垃圾邮件策略) 或反网络钓鱼策略) 中的欺骗 (欺骗设置。 您可以配置基于筛选裁定 (隔离、移动到垃圾邮件文件夹等 ) ，以及用户可以使用隔离策略对隔离邮件执行哪些[操作。](quarantine-policies.md) 有关详细信息，请参阅在 EOP 中配置 [反垃圾邮件策略](configure-your-spam-filter-policies.md) 和配置 [反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
 
 成功通过所有这些保护层的邮件将传递给收件人。
 
@@ -67,7 +67,7 @@ EOP 在数据中心的全球网络中运行，旨在提供最好的可用性。 
 EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如果在一个区域中设置，将使用该区域的邮件路由处理所有邮件。下面的列表显示了 EOP 数据中心的区域邮件路由如何工作：
 
 - 在欧洲、中东和非洲 (EMEA)，所有 Exchange Online 邮箱均位于 EMEA 数据中心，所有邮件均通过 EMEA 数据中心路由以进行 EOP 筛选。
-- 在 Asia-Pacific (APAC) 中，所有 Exchange Online 邮箱都位于 APAC 数据中心，并且邮件当前通过 APAC 数据中心进行路由，以用于 EOP 筛选。
+- 在 Asia-Pacific (APAC) 中，Exchange Online 邮箱都位于 APAC 数据中心，并且邮件当前通过 APAC 数据中心进行路由，以用于 EOP 筛选。
 - 在美洲，服务分布在以下位置：
   - 南非：Exchange Online邮箱位于巴西和智利的数据中心。 所有邮件均通过本地数据中心进行 EOP 筛选。 隔离邮件存储在租户所在的数据中心中。
   - 加拿大：Exchange Online位于加拿大的数据中心。 所有邮件均通过本地数据中心进行 EOP 筛选。 隔离邮件存储在租户所在的数据中心中。
@@ -80,7 +80,7 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 
 有关所有 EOP 订阅计划的要求、重要限制以及功能可用性的信息，请参阅 Exchange Online Protection[服务说明](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
-**注意**：
+**注意**:
 
 - EOP 使用多个 URL 阻止列表，帮助检测邮件中的已知恶意链接。
 - EOP 使用已知的大量域列表来发送垃圾邮件。
@@ -99,10 +99,10 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 |入站反垃圾邮件|[EOP 中的反垃圾邮件保护](anti-spam-protection.md) <p> [反垃圾邮件保护常见问题](anti-spam-protection-faq.yml) <p> [在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
 |出站反垃圾邮件|[EOP 中的出站垃圾邮件保护](outbound-spam-controls.md) <p> [在 EOP 中配置出站垃圾邮件筛选](configure-the-outbound-spam-policy.md) <p> [控制邮件中的自动外部电子邮件Microsoft 365](external-email-forwarding.md)|
 |连接筛选|[配置连接筛选](configure-the-connection-filter-policy.md)|
-|防网络钓鱼|[Microsoft 365](set-up-anti-phishing-policies.md) <p> [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)|
+|防网络钓鱼|[邮件中的防钓鱼Microsoft 365](set-up-anti-phishing-policies.md) <p> [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)|
 |防欺骗保护|[EOP 中的欺骗智能见解](learn-about-spoof-intelligence.md) <p> [管理租户允许/阻止列表](tenant-allow-block-list.md)|
 |零时差自动清除 (恶意软件) 垃圾邮件和网络钓鱼邮件的 ZAP 策略|[ZAP in Exchange Online](zero-hour-auto-purge.md)|
-|预设安全策略|[在 EOP 和 Microsoft Defender for Office 365](preset-security-policies.md) <p> [EOP 和 Microsoft Defender for Office 365 中的保护策略的配置Office 365](configuration-analyzer-for-security-policies.md)|
+|预设安全策略|[在 EOP 和 Microsoft Defender for Office 365](preset-security-policies.md) <p> [EOP 和 Microsoft Defender for Office 365 中的保护策略的配置分析器](configuration-analyzer-for-security-policies.md)|
 |租户允许/阻止列表|[管理租户允许/阻止列表](tenant-allow-block-list.md)|
 |阻止邮件发件人列表|[在 EOP 中创建阻止的发件人列表](create-block-sender-lists-in-office-365.md)|
 |允许邮件发件人列表|[在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)|
@@ -118,9 +118,9 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 |连接器|[使用邮箱中的连接器配置Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)|
 |增强了连接器的筛选功能|[增强的连接器筛选Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)|
 |**监视**||
-|邮件跟踪|[Message trace](message-trace-scc.md) <p> [邮件管理中心Exchange跟踪](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
+|邮件跟踪|[Message trace](message-trace-scc.md) <p> [管理中心内Exchange跟踪](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
 |电子邮件&协作报告|[查看电子邮件安全报告](view-email-security-reports.md)|
-|邮件流报告|[查看邮件流报告](view-mail-flow-reports.md) <p> [管理中心内Exchange流报告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
+|邮件流报告|[查看邮件流报告](view-mail-flow-reports.md) <p> [邮件管理中心Exchange流报告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 |邮件流见解|[邮件流见解](mail-flow-insights-v2.md) <p> [管理中心内的邮件Exchange见解](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
 |审核报告|[管理中心Exchange审核报告](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|
 |警报策略|[警报策略](../../compliance/alert-policies.md)|

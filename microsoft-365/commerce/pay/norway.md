@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 06d850153cf07202111571342068854ebd867ada
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f142e4f63f09875a4ce5bcd0e445feed61a32c62
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170219"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171083"
 ---
 # <a name="payment-information-for-norway"></a>挪威的付款信息
 
@@ -26,14 +26,14 @@ ms.locfileid: "59170219"
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**Please pay in NOK and reference invoice number (s) on your payment invoice.**
+**Please pay in NOK and reference invoice number (s) on your payment payment payment.**
 
 如果你有由 **Microsoft Ireland Operations Limited** 计费的发票，请使用此银行信息：
 
 **Bank：** 年，伦敦  
 **SWIFT 代码：** 一百万  
 **IBAN 代码：** GB94CITI18500812207621  
-**帐户编号：12207621**  
+**帐号：12207621**  
 **帐户名称：** MICROSOFT
 
 如果你有从 2021 年 3 月 1 日至 2021 年 3 月 1 日由 **Microsoft Norge AS** 计费的订单和消耗的发票，请使用此银行信息：

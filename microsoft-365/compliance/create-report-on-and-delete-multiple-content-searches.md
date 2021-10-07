@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
@@ -19,22 +19,22 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 了解如何自动执行内容搜索任务，如使用安全与合规中心 PowerShell &和运行报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fff69aac3ab30e0fe1ea60f9d097602a5390ba87
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 602997114c46a68be13182a504d0b123e98d2be2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171384"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172475"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>创建、报告和删除多个内容搜索
 
- 快速创建和报告发现搜索通常是当您尝试了解基础数据以及搜索的丰富和质量时，电子数据展示和调查的重要步骤。 为帮助您完成此操作，安全与&中心 PowerShell 提供了一组 cmdlet 来自动执行耗时的内容搜索任务。 这些脚本提供了一种快速而简单的方式来创建多个搜索，然后运行估计搜索结果报告，可帮助您确定相关数据的数量。 您还可以使用脚本创建不同版本的搜索，以比较每个版本的结果。 这些脚本可帮助你快速高效地标识和剔除数据。
+ 快速创建和报告发现搜索通常是当您尝试了解基础数据以及搜索的丰富和质量时，电子数据展示和调查的重要步骤。 为帮助您完成此操作，安全&中心 PowerShell 提供了一组 cmdlet 来自动执行耗时的内容搜索任务。 这些脚本提供了一种快速而简单的方式来创建多个搜索，然后运行估计搜索结果报告，可帮助您确定相关数据的数量。 您还可以使用脚本创建不同版本的搜索，以比较每个版本的结果。 这些脚本可帮助你快速高效地标识和剔除数据。
 
 ## <a name="before-you-create-a-content-search"></a>创建内容搜索之前
 
-- 您必须是 Microsoft 365 合规中心 中电子数据展示管理员角色组的成员，以运行本主题中介绍的脚本。
+- 您必须是 Microsoft 365 合规中心 电子数据展示管理员角色组的成员，以运行本主题中介绍的脚本。
 
-- 若要收集组织中可添加到 CSV 文件的步骤 1 中的 OneDrive for Business 网站的 URL 列表，请参阅创建组织中所有 OneDrive[位置的列表](/onedrive/list-onedrive-urls)。
+- 若要收集组织中可添加到 CSV 文件的 OneDrive for Business 网站的 URL 列表，请参阅在步骤 1 中创建组织中所有 OneDrive 位置[的列表](/onedrive/list-onedrive-urls)。
 
 - 请务必将本主题创建的所有文件保存到同一文件夹中。 这样更易于运行脚本。
 
@@ -44,7 +44,7 @@ ms.locfileid: "59171384"
 
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>步骤 1：创建一个 CSV 文件，其中包含有关要运行的搜索的信息
 
-在此步骤 (CSV) 文件的逗号分隔值包含要搜索的每个用户的行。 可以搜索用户的邮箱Exchange Online邮箱 (存档邮箱（如果已启用存档) 及其OneDrive for Business邮箱）。 或者，您可以只搜索邮箱或OneDrive for Business网站。 还可以搜索 SharePoint Online 组织的任何网站。 在步骤 3 中运行的脚本将为 CSV 文件的每一行创建单独的搜索。
+在此步骤 (CSV) 文件的逗号分隔值包含要搜索的每个用户的行。 可以搜索用户的邮箱Exchange Online邮箱 (包括存档邮箱（如果已启用存档) 及其OneDrive for Business邮箱）。 或者，您可以只搜索邮箱或OneDrive for Business网站。 您还可以搜索 SharePoint Online 组织的任何网站。 在步骤 3 中运行的脚本将为 CSV 文件的每一行创建单独的搜索。
 
 1. 使用记事本将以下文本复制并.txt文件。 将此文件保存到本地计算机的文件夹中。 你还会将其他脚本保存到此文件夹。
 
@@ -58,7 +58,7 @@ ms.locfileid: "59171384"
    ,https://contoso-my.sharepoint.com/personal/janets_contoso_onmicrosoft_com,,1/1/2015,
    ```
 
-   文件的第一行（即标题行）列出了 **New-ComplianceSearch** cmdlet (在步骤 3) 中创建新的内容搜索中使用的参数。 每个参数名称都用逗号分隔开。 确保标题行中没有任何空格。 标题行下的每一行表示每个搜索的参数值。 请务必将 CSV 文件的占位符数据替换为实际数据。
+   文件的第一行（即标题行）列出了 **New-ComplianceSearch** cmdlet cmdlet (在步骤 3) 中用于创建新的内容搜索的参数。 每个参数名称都用逗号分隔开。 确保标题行中没有任何空格。 标题行下的每一行表示每个搜索的参数值。 请务必将 CSV 文件的占位符数据替换为实际数据。
 
 2. 在.txt中打开Excel文件，然后使用下表中的信息编辑包含每个搜索的信息的文件。
 
@@ -85,7 +85,7 @@ ms.locfileid: "59171384"
 
 - **搜索组 ID** - 此名称提供了组织从 CSV 文件创建的搜索的简便方法。 创建的每个搜索都使用搜索组 ID 命名，然后向搜索名称追加一个数字。 例如，如果为搜索组 ID 输入 **ContosoCase，** 则搜索将命名为 **ContosoCase_1、ContosoCase_2、ContosoCase_3** 等。  请注意，键入的名称区分大小写。 当您使用步骤 4 和步骤 5 中的搜索组 ID 时，您必须使用与创建它时相同的大小写。
 
-- **CSV 文件** - 在步骤 1 中创建的 CSV 文件的名称。 请务必包括使用完整文件名，包括.csv扩展名;例如，  `ContosoCase.csv` 。
+- **CSV 文件** - 在步骤 1 中创建的 CSV 文件的名称。 请确保包含使用完整文件名，包括.csv扩展名;例如，  `ContosoCase.csv` 。
 
 若要运行该脚本，请执行下列操作：
 
@@ -166,7 +166,7 @@ ms.locfileid: "59171384"
    }
    ```
 
-2. In Windows PowerShell， go to the folder where you saved the script in the previous step， and then run the script;例如：
+2. 在Windows PowerShell中，转到上一步中保存脚本的文件夹，然后运行脚本;例如：
 
    ```Powershell
    .\CreateSearches.ps1
@@ -241,7 +241,7 @@ ms.locfileid: "59171384"
    }
    ```
 
-2. In Windows PowerShell， go to the folder where you saved the script in the previous step， and then run the script;例如：
+2. 在Windows PowerShell中，转到上一步中保存脚本的文件夹，然后运行脚本;例如：
 
    ```Powershell
    .\SearchReport.ps1
@@ -249,7 +249,7 @@ ms.locfileid: "59171384"
 
 3. 在搜索 **组 ID** 提示符下，键入搜索组名称，然后按 **Enter**;例如  `ContosoCase` 。 请记住，此名称区分大小写，因此您必须键入它的方式与在步骤 3 中运行脚本时相同。
 
-4. 在"文件路径"将报告保存到 CSV 文件 (保留为空以仅显示报告 **)** 提示符，键入完整文件名路径 (包括 .csv 文件扩展名) （如果要将报告保存到 CSV 文件）。 CSV 文件的名称，包括.csv扩展名。 例如，可以键入 以将其保存到当前目录，也可以键入 以  `ContosoCaseReport.csv`  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` 将其保存到其他文件夹。 还可以将提示留空以显示报告，但不将其保存到文件中。
+4. 在将报告保存到 CSV 文件的文件路径 **中 (** 保留为空以仅显示报告) 提示符，键入完整文件名路径 (包括 .csv 文件扩展名) （如果要将报告保存到 CSV 文件）。 CSV 文件的名称，包括.csv扩展名。 例如，可以键入 以将其保存到当前目录，也可以键入 以  `ContosoCaseReport.csv`  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` 将其保存到其他文件夹。 还可以将提示留空以显示报告，但不将其保存到文件中。
 
 5. 按 Enter 键。
 
@@ -280,7 +280,7 @@ ms.locfileid: "59171384"
    }
    ```
 
-2. In Windows PowerShell， go to the folder where you saved the script in the previous step， and then run the script;例如：
+2. 在Windows PowerShell中，转到上一步中保存脚本的文件夹，然后运行脚本;例如：
 
    ```Powershell
    .\DeleteSearches.ps1

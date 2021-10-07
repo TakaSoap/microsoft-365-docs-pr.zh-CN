@@ -7,7 +7,7 @@ ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,16 +20,16 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
 description: 使用集中部署 PowerShell cmdlet 可帮助你为 Office 组织部署和管理Microsoft 365外接程序。
-ms.openlocfilehash: 37a60ffe7d17f09ecbdb70c80c880b2c7bd51645
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6d99b3867560f7eba0f143933d996e4e30b8c7c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195694"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173219"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>使用集中部署 PowerShell cmdlet 管理外接程序
 
-作为Microsoft 365管理员，可以通过集中部署功能将 Office 加载项部署到用户 (请参阅在管理中心部署[Office](../admin/manage/manage-deployment-of-add-ins.md)加载项) 。 除了通过 Office部署加载项Microsoft 365 管理中心，您还可以使用 Microsoft PowerShell。 安装适用于 Windows PowerShell 的[O365 集中Add-In部署Windows PowerShell。](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
+作为Microsoft 365管理员，可以通过集中部署功能将 Office 加载项部署到用户 (请参阅在管理中心部署[Office](../admin/manage/manage-deployment-of-add-ins.md)加载项) 。 除了通过 Office部署加载项外，Microsoft 365 管理中心 Microsoft PowerShell。 安装[适用于 Windows PowerShell 的 O36 Add-In 5 集中部署Windows PowerShell。](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
 
 下载模块后，打开常规Windows PowerShell窗口并运行以下 cmdlet：
 
@@ -39,7 +39,7 @@ ms.locfileid: "59195694"
     
 ## <a name="connect-using-your-admin-credentials"></a>连接管理员凭据
 
-使用集中部署 cmdlet 之前，需要登录。
+在可以使用集中部署 cmdlet 之前，需要登录。
   
 1. 启动 PowerShell。
     
@@ -60,7 +60,7 @@ ms.locfileid: "59195694"
   ```
 
 > [!NOTE]
-> 有关使用 PowerShell 的信息，请参阅 连接[Microsoft 365 PowerShell。](./connect-to-microsoft-365-powershell.md) 
+> 有关使用 PowerShell 的信息，请参阅[连接Microsoft 365 PowerShell。](./connect-to-microsoft-365-powershell.md) 
   
 ## <a name="upload-an-add-in-manifest"></a>Upload加载项清单
 
@@ -86,7 +86,7 @@ New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale '
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-若要确定 _AssetId_ 参数的值，可以从外接程序的 Office 应用商店网页的 URL 复制它。 AssetIds 始终以"WA"开头，后跟数字。 例如，在上一示例中，WA104099688 的 AssetId 值源是外接程序的 Office Store 网页 [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) URL：。
+若要确定 _AssetId_ 参数的值，可以从外接程序的 Office 应用商店网页的 URL 复制它。 AssetIds 始终以"WA"开头，后跟数字。 例如，在上一示例中，ASSETId 值 WA104099688 的源是外接程序的 Office Store 网页 [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) URL：。
   
 _Locale_ 参数和 _ContentMarket_ 参数的值相同，表示您尝试安装外接程序的国家/地区。 格式为 en-US、fr-FR。 等等。 
   

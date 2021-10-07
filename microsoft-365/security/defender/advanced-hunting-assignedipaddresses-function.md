@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d3ebd301d6c79bf5286d9293e04e4073b99d1e35
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 48dda6faf9d0cfc5b301a766dd07f8cb4e15d394
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195997"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174551"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -39,7 +39,7 @@ ms.locfileid: "59195997"
 
 此函数返回具有以下列的表：
 
-| 列 | 数据类型 | 说明 |
+| Column | 数据类型 | 说明 |
 |------------|-------------|-------------|
 | `Timestamp` | datetime | 使用 IP 地址观测到设备的最新时间 |
 | `IPAddress` | string | 设备使用的 IP 地址 |
@@ -67,7 +67,7 @@ AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
 ### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>获取设备使用的 IP 地址并查找与设备通信的设备
-此查询使用 函数获取特定日期或 () 或之前为设备分配的 `AssignedIPAddresses()` IP `example-device-name` `example-date` () 。 然后，它使用 IP 地址查找与其他设备启动的设备的连接。 
+此查询使用 函数获取特定日期或 () 或之前的设备分配的 `AssignedIPAddresses()` IP `example-device-name` `example-date` () 。 然后，它使用 IP 地址查找与其他设备启动的设备的连接。 
 
 ```kusto
 let Date = datetime(example-date);

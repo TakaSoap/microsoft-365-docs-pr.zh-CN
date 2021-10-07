@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b6c8ef3f67bd7cb2fe996262f5e4395e036650fc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e90653849c64c44086ddb82e7e5adb48b4ccbdac
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162102"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171071"
 ---
 # <a name="payment-information-for-portugal"></a>葡萄牙的付款信息
 
@@ -32,5 +32,5 @@ ms.locfileid: "59162102"
 **SWIFT 代码/BIC：** 一百万  
 **IBAN：** GB31CITI18500812207591  
 **SORT 代码：185008**  
-**帐户号：12207591**  
+**帐号：12207591**  
 **帐户名称：** MICROSOFT

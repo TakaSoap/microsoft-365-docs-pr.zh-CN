@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,19 +17,19 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 了解如何使用Advanced eDiscovery电子邮件发送和跟踪合法保留通知，以及监视义务状态。
-ms.openlocfilehash: 43c2474bdc485a87c30d1fa2a31c3d008d2a383e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解如何使用 Advanced eDiscovery通过电子邮件发送和跟踪合法保留通知，以及监视义务状态。
+ms.openlocfilehash: 57cda6e88968fc90845965a8554f55d80bd3ded0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197019"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175571"
 ---
 # <a name="acknowledge-a-hold-notification"></a>确认保留通知
 
-在响应法规请求或调查时，您可能需要通知保管人其保存电子存储的信息 (ESI) 的义务，以及可能与活动或即将发生的法律事务相关的任何材料。 发送后，法律团队必须知道每个保管人已收到、阅读、理解并同意遵循给定的说明。
+在响应法规请求或调查时，您可能需要通知保管人其保存电子存储的信息 (ESI) 以及可能与活动或即将发生的法律事务相关的任何材料的义务。 发送后，法律团队必须知道每个保管人已收到、阅读、理解并同意遵循给定的说明。
 
-为了帮助减少跟进保管人的时间、成本和工作量，Advanced eDiscovery允许通过电子邮件发送和跟踪合法保留通知。 除了电子邮件通知之外，每个保管人将有权访问个性化合规性门户，从而让保管人随时了解其义务状态的变化。
+为了帮助减少跟进保管人的时间、成本和工作量，Advanced eDiscovery通过电子邮件发送和跟踪合法保留通知。 除了电子邮件通知之外，每个保管人将有权访问个性化合规性门户，从而让保管人随时了解其义务状态的变化。
 
 ## <a name="email-notifications"></a>电子邮件通知
 

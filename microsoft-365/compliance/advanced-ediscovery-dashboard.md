@@ -9,27 +9,27 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: 使用Advanced eDiscovery仪表板查看集来快速分析文档集，以确定将帮助您制定审阅策略的趋势或关键统计信息。
-ms.openlocfilehash: 6466e33964969d6cd75addba7092ee95e0c321ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b7bc487e95c2dbae1a65aaad94face6bee19d39b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171388"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175475"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscovery审阅集的仪表板
 
-在某些情况下，Advanced eDiscovery可能需要查看大量文档和电子邮件。 在开始审阅过程之前，您可能需要快速分析文档集，以确定将帮助您制定审阅策略的趋势或关键统计信息。 为此，可以使用审阅集Advanced eDiscovery仪表板来快速分析文档集。
+在某些情况下，Advanced eDiscovery可能需要查看大量文档和电子邮件。 在开始审阅过程之前，您可能需要快速分析文档集，以确定将帮助您制定审阅策略的趋势或关键统计信息。 为此，可以使用审阅Advanced eDiscovery仪表板来快速分析文档集。
 
 ## <a name="step-1-create-a-widget-on-the-review-set-dashboard"></a>步骤 1：在审阅集仪表板上创建小组件
 
-1. 在Microsoft 365 合规中心中，转到 **"电子数据展示**> Advanced eDiscovery以显示组织中事例的列表。
+1. 在Microsoft 365 合规中心中，转到"**电子** 数据展示> Advanced eDiscovery以显示组织中事例的列表。
   
 2. 选择现有案例。
   

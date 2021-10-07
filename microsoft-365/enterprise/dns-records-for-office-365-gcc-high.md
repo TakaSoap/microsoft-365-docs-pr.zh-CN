@@ -7,7 +7,7 @@ ms.date: 05/19/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：高Office 365 GCC DNS 记录
 hideEdit: true
-ms.openlocfilehash: 9edcda4616d50d05331db0e2d6c4d89967b02fdc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 103d6157bdb11f787b46b649a048b9fdd3fde5cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171000"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174875"
 ---
 # <a name="dns-records-for-office-365-gcc-high"></a>Office 365 GCC High DNS 记录
 
@@ -33,7 +33,7 @@ ms.locfileid: "59171000"
 
 作为加入高Office 365 GCC的一部分，您需要将 SMTP 和 SIP 域添加到联机服务租户。  你将使用 Azure AD PowerShell 中的 New-MsolDomain cmdlet 完成此操作，或使用 [Azure](https://portal.azure.us) 政府门户启动添加域和证明所有权的过程。
 
-将域添加到租户并进行验证后，请使用以下指南为以下服务添加相应的 DNS 记录。  您可能需要修改下表，以满足贵组织对入站 MX 记录 () 以及您已有的任何现有 Exchange 自动发现 () 的需求。  我们强烈建议与邮件团队协调这些 DNS 记录，以避免电子邮件出现任何中断或错误传递。
+将域添加到租户并进行验证后，请使用以下指南为以下服务添加相应的 DNS 记录。  您可能需要修改下表，以满足组织对入站 MX 记录 () 以及您已有的任何现有 Exchange 自动发现 () 的需求。  我们强烈建议与邮件团队协调这些 DNS 记录，以避免电子邮件出现任何中断或错误传递。
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -45,7 +45,7 @@ ms.locfileid: "59171000"
 
 ### <a name="exchange-autodiscover-record"></a>Exchange自动发现记录
 
-如果在本地Exchange Server，我们建议在迁移到 Exchange Online 时保留现有记录，并完成迁移后更新该记录。 
+如果在本地Exchange Server，建议在迁移到 Exchange Online 时保留现有记录，完成迁移后更新该记录。 
 
 ### <a name="exchange-online-mx-record"></a>Exchange OnlineMX 记录
 

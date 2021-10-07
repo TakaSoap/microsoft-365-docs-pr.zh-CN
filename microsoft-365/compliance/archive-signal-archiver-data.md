@@ -9,25 +9,25 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理员可以设置 TeleMessage 连接器，以导入信号通信数据并存档Microsoft 365。 这样，您就可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: be070c16c74375c2dad3fc09ebd549d2b9df359d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 管理员可以设置 TeleMessage 连接器，以在远程传输服务中导入和存档Microsoft 365。 这样，您可以在 Microsoft 365中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
+ms.openlocfilehash: 250ec748839afd70c24128ed70a644d2e3d05533
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169694"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175391"
 ---
 # <a name="set-up-a-connector-to-archive-signal-communications-data"></a>设置连接器以存档信号通信数据
 
-使用邮箱中的 TeleMessage Microsoft 365 合规中心导入和存档信号聊天、附件、文件以及已删除的消息和呼叫。 设置和配置连接器后，它将连接到您组织的 TeleMessage 帐户，并且使用 TeleMessage 信号存档器将员工的移动通信导入 Microsoft 365 中的邮箱。
+使用邮箱中的 TeleMessage Microsoft 365 合规中心导入和存档信号聊天、附件、文件以及已删除的消息和呼叫。 设置和配置连接器后，它将连接到组织的 TeleMessage 帐户，并且使用 TeleMessage 信号存档器将员工的移动通信导入 Microsoft 365 中的邮箱。
 
 在信号存档连接器数据存储在用户邮箱中之后，可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索和 Microsoft 365 保留策略）应用于信号通信数据。 例如，您可以使用内容搜索搜索信号通信，或将包含信号存档器连接器数据的邮箱与案例的保管人Advanced eDiscovery关联。 使用信号存档器连接器在 Microsoft 365导入和存档数据可帮助组织遵守公司管理法规和法规策略。
 
 ## <a name="overview-of-archiving-signal-communications-data"></a>存档信号通信数据概述
 
-以下概述介绍使用连接器将信号通信数据存档在 Microsoft 365。
+以下概述介绍使用连接器在信号传输服务中存档信号通信Microsoft 365。
 
 ![信号通信存档工作流。](../media/SignalConnectorWorkflow.png)
 
@@ -47,9 +47,9 @@ ms.locfileid: "59169694"
 
 - 在 TeleMessage 帐户中注册需要信号存档的所有用户。 注册用户时，请确保使用用于其帐户Microsoft 365电子邮件地址。
 
-- 在员工的移动电话上安装信号存档器应用并激活它。 信号存档器应用允许他们与其他信号用户进行通信和聊天。
+- 在员工的移动电话上安装信号存档器应用并激活它。 信号存档器应用允许他们与其他信号用户通信和聊天。
 
-- 必须在步骤 3 中为在步骤 3 中创建信号存档器连接器的用户分配邮箱导入导出Exchange Online。 在"数据连接器"页的"数据连接器"**页中添加连接器** Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 3 中为在步骤 3 中创建信号存档器连接器的用户分配邮箱导入导出Exchange Online。 在"数据连接器"页的"数据连接器"页中添加连接器Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 - 此数据连接器可用于美国政府GCC云Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 

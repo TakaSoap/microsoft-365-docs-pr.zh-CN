@@ -7,7 +7,7 @@ ms.date: 7/13/2017
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -19,19 +19,19 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: 了解如何管理 ExpressRoute for Office 365，包括配置前缀筛选、安全性和合规性等常见区域。
-ms.openlocfilehash: e8de0763df7d592bc41802b1ead48df06891e6dc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bffe82249a9d8a531ee85525f9db0eb38a344d50
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196373"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173316"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>管理 ExpressRoute for Office 365 的连接性
 
-ExpressRoute for Office 365提供了一种备用路由路径，无需所有流量即可访问许多 Office 365 服务，而无需所有流量进入 Internet。 尽管仍然需要到 Office 365 的 Internet 连接，但 Microsoft 通过 BGP 向网络播发的特定路由使 ExpressRoute 线路成为首选，除非网络中还有其他配置。 要管理此路由，可能需要配置的三个常见区域包括前缀筛选、安全性和合规性。
+ExpressRoute for Office 365提供了一种备用路由路径，无需所有流量即可访问许多 Office 365 服务，而无需所有流量都进入 Internet。 尽管仍然需要到 Office 365的 Internet 连接，但 Microsoft 通过 BGP 向网络播发的特定路由使 ExpressRoute 线路成为首选，除非网络中还有其他配置。 要管理此路由，可能需要配置的三个常见区域包括前缀筛选、安全性和合规性。
   
 > [!NOTE]
-> Microsoft 更改了查看 Azure ExpressRoute 的 Microsoft 对等路由域。 从 2017 年 7 月 31 日开始，所有 Azure ExpressRoute 客户都可以直接从 Azure 管理控制台或通过 PowerShell 启用 Microsoft 对等。 启用 Microsoft 对等后，任何客户都可以创建路由筛选器，以接收 Dynamics 365 Customer Engagement 应用程序的 BGP 路由 (以前称为 CRM Online) 。 需要 Azure ExpressRoute for Office 365客户必须先获得 Microsoft 审查，然后才能创建适用于 Office 365 的路由Office 365。 请联系你的 Microsoft 帐户团队，了解如何请求有关启用 ExpressRoute Office 365审查。 尝试为用户创建路由筛选器Office 365的未授权订阅将收到[错误消息](https://support.microsoft.com/kb/3181709)
+> Microsoft 更改了查看 Azure ExpressRoute 的 Microsoft 对等路由域。 从 2017 年 7 月 31 日开始，所有 Azure ExpressRoute 客户都可以直接从 Azure 管理控制台或通过 PowerShell 启用 Microsoft 对等。 启用 Microsoft 对等后，任何客户都可以创建路由筛选器，以接收 Dynamics 365 Customer Engagement 应用程序（以前称为 CRM Online (）的 BGP 路由) 。 需要 Azure ExpressRoute for Office 365客户必须先获得 Microsoft 审查，然后才能创建适用于 Office 365。 请联系你的 Microsoft 帐户团队，了解如何请求有关启用 ExpressRoute Office 365审查。 尝试为用户创建路由筛选器Office 365的未授权订阅将收到[错误消息](https://support.microsoft.com/kb/3181709)
   
 ## <a name="prefix-filtering"></a>前缀筛选
 
@@ -63,12 +63,12 @@ Microsoft 建议为从 ExpressRoute 公共和 Microsoft 对等连接维护你自
   
 #### <a name="outbound-from-customer-to-microsoft"></a>从客户到 Microsoft 的出站邮件
   
-当计算机连接到Office 365时，无论连接是通过 Internet 还是 ExpressRoute 电路进行，计算机都会连接到同一组终结点。 无论使用何种电路，Microsoft 建议将Office 365服务视为比通用 Internet 目标信任度高。 出站安全控制应侧重于端口和协议，以减少曝光并最大限度地减少持续维护。 所需的端口信息可在Office 365[参考文章中](./urls-and-ip-address-ranges.md)获取。
+当计算机连接到Office 365时，无论连接是通过 Internet 还是 ExpressRoute 电路进行，计算机都会连接到同一组终结点。 无论使用何种电路，Microsoft 都建议您将Office 365服务视为比一般 Internet 目标更受信任的服务。 出站安全控制应侧重于端口和协议，以减少曝光并最大限度地减少持续维护。 有关所需的端口信息，请参阅Office 365[参考](./urls-and-ip-address-ranges.md)文章。
   
-对于添加的控件，可以在代理基础结构内使用 FQDN 级别筛选来限制或检查发往 Internet 或 Office 365 的一些或所有网络请求。 在发布功能和 Office 365 产品/服务时维护 FQN 列表需要更稳固的更改管理和对已发布的 Office 365[终结点的更改跟踪](./urls-and-ip-address-ranges.md)。
+对于添加的控件，可以在代理基础结构内使用 FQDN 级别筛选来限制或检查发往 Internet 或 Office 365。 随着功能发布和 Office 365 产品/服务不断发展，维护 FQN 列表需要更稳固的更改管理和对已发布的 Office 365[终结点的更改跟踪](./urls-and-ip-address-ranges.md)。
   
 > [!CAUTION]
-> Microsoft 建议不要仅依赖 IP 前缀来管理出站Office 365。
+> Microsoft 建议不要仅依赖 IP 前缀来管理出站安全Office 365。
 
 |**选项**|**复杂度**|**更改控件**|
 |:-----|:-----|:-----|
@@ -86,13 +86,13 @@ Microsoft 建议为从 ExpressRoute 公共和 Microsoft 对等连接维护你自
 
 - 从租户Exchange Online本地主机的邮件。
 
-- SharePoint从 SharePoint Online 向本地主机发送联机邮件。
+- SharePoint从 SharePoint Online 到本地主机的联机邮件发送。
 
 - [SharePoint联合混合搜索](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online)。
 
 - [SharePoint混合BCS](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution)。
 
-- [Skype for Business混合和](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)/或[Skype for Business联合身份验证](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features)。
+- [Skype for Business混合](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)和/或[Skype for Business联合身份验证](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features)。
 
 - [Skype for Business云连接器](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition)。
 
@@ -100,7 +100,7 @@ Microsoft 建议通过 Internet 线路而不是 ExpressRoute 电路接受这些�
   
 ### <a name="compliance"></a>合规性
 
-我们不依赖你用于任何合规性控制措施的路由路径。 无论你是通过 ExpressRoute Office 365还是通过 Internet 线路连接到服务，我们的合规性控制都不会改变。 应查看不同的合规性和安全认证级别，Office 365确定满足组织需求的最佳选择。
+我们不依赖你用于任何合规性控制措施的路由路径。 无论你是通过 ExpressRoute Office 365连接到服务，我们的合规性控制都不会改变。 应查看不同的合规性和安全认证级别，Office 365确定满足组织需求的最佳选择。
   
 以下是可以用于返回的简短链接：[https://aka.ms/manageexpressroute365]()
   

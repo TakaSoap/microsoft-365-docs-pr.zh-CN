@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: MFA (多重身份验证) 密码（应该很强）和其他验证方法。
-ms.openlocfilehash: 85b8234d62e41489480695b71463e2474442b834
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 4ffc5dc427b56b0148dd57c22e5306f3be6169d0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775704"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172991"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>用于身份验证的多重Microsoft 365
 
@@ -42,7 +43,7 @@ ms.locfileid: "59775704"
 
 在验证用户密码之前，不会采用其他验证方法。 使用 MFA，即使强用户密码受到威胁，攻击者也无需智能手机或指纹来完成登录。
 
-## <a name="mfa-support-in-microsoft-365"></a>MFA 支持Microsoft 365
+## <a name="mfa-support-in-microsoft-365"></a>Microsoft 365 中的 MFA 支持
 
 默认情况下，Microsoft 365和Office 365都支持用户帐户的 MFA，使用：
 
@@ -62,14 +63,14 @@ ms.locfileid: "59775704"
 |---|---|---|
 |所有Microsoft 365计划|使用安全默认值，这要求所有用户帐户使用 MFA。 <p> 还可以对单个用户帐户配置每用户 MFA，但不建议这样做。|小型企业|
 |Microsoft 365 商业高级版 <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) 高级版 P1 许可证|使用条件访问策略根据组成员身份、应用或其他条件要求用户帐户进行 MFA。|小型企业到企业|
-|Microsoft 365 E5 <p> Azure AD Premium P2许可证|使用 Azure AD Identity Protection 根据登录风险条件要求 MFA。|企业|
+|Microsoft 365 E5 <p> Azure AD Premium P2许可证|使用 Azure AD Identity Protection 根据登录风险条件要求 MFA。|企业版|
 ||||
 
 ### <a name="security-defaults"></a>安全性默认值
 
 安全性默认值是在 2019 年 10 月 21 日之后创建的 Microsoft 365 和 Office 365 付费或试用版订阅的一项新功能。 这些订阅启用安全默认值，即：
 
-- 要求所有用户将 MFA 与 Microsoft Authenticator应用一同使用。
+- 要求所有用户将 MFA 与 Microsoft Authenticator应用。
 - 阻止旧式身份验证。
 
 用户有 14 天的时间从其智能手机中通过 Microsoft Authenticator 应用登录 MFA，自启用安全性默认值后首次登录起计。 14 天后，除非 MFA 注册完成，否则用户将无法登录。
@@ -102,14 +103,14 @@ ms.locfileid: "59775704"
 
 - Microsoft 365 商业高级版
 - Microsoft 365 E3 和 E5
-- Azure AD Premium P1和Azure AD Premium P2许可证
+- Azure AD Premium P1许可证Azure AD Premium P2许可证
 
 对于具有 Microsoft 365 商业高级版 的小型企业，可以通过以下步骤轻松使用条件访问策略：
 
 1. 创建一个组以包含需要 MFA 的用户帐户。
 2. 启用" **要求全局管理员使用 MFA"** 策略。
 3. 使用这些设置创建基于组的条件访问策略：
-    - 分配>用户和组：上面的步骤 1 中的组名称。
+    - 工作>用户和组：上面的步骤 1 中的组名称。
     - 分配>云应用或操作：所有云应用。
     - 访问控制>授予>授予>要求多重身份验证的权限。
 4. 启用策略。
@@ -139,9 +140,9 @@ ms.locfileid: "59775704"
 
 ### <a name="legacy-per-user-mfa-not-recommended"></a>不建议使用旧版每 (MFA) 
 
-你应该使用安全默认值或条件访问策略来要求用户帐户登录使用 MFA。但是，如果无法使用其中任一种，Microsoft 强烈建议为具有管理员角色的用户帐户（尤其是 全局管理员角色）执行 MFA。
+你应该使用安全默认值或条件访问策略来要求用户帐户登录使用 MFA。但是，如果无法使用其中任一种，Microsoft 强烈建议为具有管理员角色的用户帐户（尤其是具有管理员角色的用户帐户）全局管理员角色 MFA。
 
-从"活动用户"窗格的"活动用户<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>"窗格中，为各个用户帐户Microsoft 365 管理中心。
+从活动用户窗格中启用单个用户帐户的 MFA Microsoft 365 管理中心。 <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>
 
 !["活动用户"页面上多重身份验证选项的图片。](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
@@ -158,7 +159,7 @@ ms.locfileid: "59775704"
 |**不建议使用旧版每 (MFA)**|替代每次登录时要求 MFA 的安全默认值和条件访问策略|由安全默认值和条件访问策略替代|由用户在 MFA 注册期间指定|
 ||||
 
-如果启用安全默认值，将提示所有新用户进行 MFA 注册，并提示他们Microsoft Authenticator登录时使用新应用。
+如果启用安全默认值，将提示所有新用户进行 MFA 注册，并提示他们Microsoft Authenticator登录时使用安全应用。
 
 ## <a name="ways-to-manage-mfa-settings"></a>管理 MFA 设置的方法
 
@@ -173,7 +174,7 @@ ms.locfileid: "59775704"
 
 ## <a name="next-steps"></a>后续步骤
 
-[为 MFA 设置Microsoft 365](set-up-multi-factor-authentication.md)
+[为组织设置 MFA Microsoft 365](set-up-multi-factor-authentication.md)
 
 ## <a name="related-content"></a>相关内容
 

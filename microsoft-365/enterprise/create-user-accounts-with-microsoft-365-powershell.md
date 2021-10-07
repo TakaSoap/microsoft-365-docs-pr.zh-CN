@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 如何使用 PowerShell 创建单个或多个Microsoft 365用户帐户。
-ms.openlocfilehash: c096b5b4966bfde9973173b9a0a0c5bf1f0d786c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7396e98e597491910b639e5a0d0c57b8f685bc02
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200429"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171995"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户
 
@@ -37,17 +37,17 @@ ms.locfileid: "59200429"
 |**属性名称**|**是否必需？**|**说明**|
 |:-----|:-----|:-----|
 |**DisplayName** <br/> |是  <br/> |这是显示名称服务中使用的Microsoft 365。 例如 *，Caleb Sills*。 <br/> |
-|**UserPrincipalName** <br/> |是  <br/> |这是用于登录服务的帐户Microsoft 365名称。 例如 *，CalebS \@ contoso.onmicrosoft.com*。  <br/> |
+|**UserPrincipalName** <br/> |是  <br/> |这是用于登录到服务Microsoft 365名称。 例如 *，CalebS \@ contoso.onmicrosoft.com*。  <br/> |
 |**FirstName** <br/> |否  <br/> ||
 |**LastName** <br/> |否  <br/> ||
-|**LicenseAssignment** <br/> |否  <br/> |这是许可计划 (也称为许可证计划或 SKU) 从中向用户帐户分配可用许可证。 许可证定义Microsoft 365帐户可用的服务。 创建帐户时，不必向用户分配许可证，但该帐户必须具有许可证才能访问Microsoft 365服务。 创建用户帐户后，您有 30 天的时间可以对该用户帐户授权。 |
+|**LicenseAssignment** <br/> |否  <br/> |这是许可计划 (也称为许可证计划或 SKU) ，从其中向用户帐户分配可用许可证。 许可证定义Microsoft 365帐户可用的服务。 创建帐户时，不必向用户分配许可证，但该帐户必须具有许可证才能访问Microsoft 365服务。 创建用户帐户后，您有 30 天的时间可以对该用户帐户授权。 |
 |**密码** <br/> |否  <br/> | 如果您没有指定密码，将向用户帐户分配一个随机密码，且该密码将显示在命令结果中。 如果指定密码，则密码需要为 8 到 16 个以下类型的 ASCII 文本字符：小写字母、大写字母、数字和符号。<br/> |
-|**UsageLocation** <br/> |否  <br/> |这是一个由两位字母组成的有效 ISO 3166-1 国家/地区代码。 例如 *，US* 代表美国 *，FR* 代表法国。 提供此值非常重要，因为某些 Microsoft 365服务在某些国家/地区不可用。 无法将许可证分配给用户帐户，除非该帐户已配置此值。 有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。<br/> |
+|**UsageLocation** <br/> |否  <br/> |这是一个由两位字母组成的有效 ISO 3166-1 国家/地区代码。 例如 *，US* 代表美国 *，FR* 代表法国。 提供此值很重要，因为某些 Microsoft 365服务在某些国家/地区不可用。 无法将许可证分配给用户帐户，除非该帐户已配置此值。 有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。<br/> |
 
 >[!Note]
 >[了解如何使用 Microsoft 365 管理中心。](../admin/add-users/add-users.md)
 > 
-> 有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
+> 有关其他资源的列表，请参阅管理 [用户和组](/admin)。
 >   
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
@@ -83,7 +83,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core 不支持模块Microsoft Azure Active Directory模块Windows PowerShell名称中具有 *Msol* 的 cmdlet。 从 Windows PowerShell 运行这些 cmdlet。
+>PowerShell Core 不支持 Microsoft Azure Active Directory 模块Windows PowerShell名称中具有 *Msol* 的 cmdlet。 从 Windows PowerShell 运行这些 cmdlet。
 >
 
 若要列出可用的许可计划名称，请使用此命令：
@@ -110,9 +110,9 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
      ```
 
    >[!NOTE]
-   >列名及其在 CSV 文件第一行中的顺序是任意的。 但请确保文件其余部分的数据顺序与列名称的顺序相匹配。 在 PowerShell for Microsoft 365 命令中将列名称用于参数值。
+   >列名及其在 CSV 文件第一行中的顺序是任意的。 但请确保文件其余部分的数据顺序与列名称的顺序相匹配。 并使用 PowerShell for Microsoft 365 命令中的参数值列名称。
     
-2. 使用以下语法:
+2. 使用以下语法：
     
     ```powershell
      Import-Csv -Path <Input CSV File Path and Name> | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId [-Password $_.Password]} | Export-Csv -Path <Output CSV File Path and Name>

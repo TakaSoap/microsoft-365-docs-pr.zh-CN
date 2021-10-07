@@ -9,23 +9,23 @@ ms.date: 4/17/2018
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: 了解如何保护用户和设备访问数据Microsoft 365服务，并防御数据丢失。
+description: 了解如何保护用户和设备访问 Microsoft 365服务，并防御数据丢失。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd8bbb62bc87ff59594e2fb2a3e21311c2452d9f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6f7d3c8af6526e5766086c7db5f6a7285f215162
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201377"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172247"
 ---
 # <a name="protect-user-and-device-access"></a>保护用户和设备的访问权限
 
-保护对Microsoft 365和服务的访问对于防御网络攻击和防止数据丢失至关重要。 相同的保护可应用于环境中的其他 SaaS 应用程序，甚至适用于使用应用程序代理发布的Azure Active Directory应用程序。
+保护对Microsoft 365和服务的访问对于防御网络攻击和防止数据丢失至关重要。 相同的保护可以应用于环境中的其他 SaaS 应用程序，甚至应用于使用 Azure Active Directory 应用程序代理发布的本地应用程序。
   
 ## <a name="step-1-review-recommendations"></a>步骤 1：查看建议
 
@@ -34,7 +34,7 @@ ms.locfileid: "59201377"
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多语言](https://www.microsoft.com/download/details.aspx?id=55032)
   
 ## <a name="step-2-protect-administrator-accounts-and-access"></a>步骤 2：保护管理员帐户和访问权限
-用于管理你的管理环境的管理帐户Microsoft 365提升的权限。 这些是黑客和网络攻击的有价值目标。 
+用于管理环境的管理帐户Microsoft 365提升的权限。 这些是黑客和网络攻击的有价值目标。 
 
 首先，仅将管理员帐户用于管理。 管理员应具有单独的用户帐户，用于常规的非管理用途，并且仅在必要时使用其管理帐户来完成与其工作职能相关联的任务。
 
@@ -61,9 +61,9 @@ MFA (和) 访问策略的多重身份验证是抵御帐户损坏和未授权访�
 
 实现 Intune 设备合规性需要设备注册。 通过管理设备，可以确保设备正常运行且合规，然后再允许它们访问环境中的资源。 请参阅 [在 Intune 中注册设备以管理](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
 
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>步骤 4：配置SharePoint访问策略
+## <a name="step-4-configure-sharepoint-device-access-policies"></a>步骤 4：SharePoint设备访问策略
 
-Microsoft 建议通过设备访问控制SharePoint敏感和高度管控的内容来保护网站中的内容。 有关详细信息，请参阅[用于保护网站和文件SharePoint策略建议](../security/office-365-security/sharepoint-file-access-policies.md)。
+Microsoft 建议通过设备访问控制SharePoint敏感和高度管控内容保护网站中的内容。 有关详细信息，请参阅[用于保护网站和文件SharePoint策略建议](../security/office-365-security/sharepoint-file-access-policies.md)。
 
 
 

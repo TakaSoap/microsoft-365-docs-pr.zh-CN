@@ -9,18 +9,18 @@ audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用和管理模板在 Microsoft 合规性管理器中生成评估。 使用格式化的文件创建和修改Excel模板。
-ms.openlocfilehash: 2118f527cafe97153b9a8185da6d12d8f6f3d9da
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 56bbe69b6baaa996a1b63e20ca657641b9da9038
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171052"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173555"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>在合规性管理器中使用评估模板
 
@@ -42,7 +42,7 @@ ms.locfileid: "59171052"
 合规性管理器中包含两类模板：包含模板和高级模板。
 
 1. **包含的** 模板由合规性管理器许可证授予，涵盖了关键法规和要求。 若要了解有关根据许可协议提供哪些模板的详细信息，请参阅 [许可详细信息](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
-2. **高级版模板**，以满足其他需要和方案，可以通过购买模板许可证获得。
+2. **高级版模板** 来涵盖其他需求和方案，可以通过购买模板许可证获得。
 
 开始创建评估时，合规性管理器将跟踪处于活动状态的模板数，以便你可以监视使用情况。 若要了解更多信息，请参阅 [活动模板和非活动模板](compliance-manager-templates.md#active-and-inactive-templates)。
 
@@ -54,14 +54,14 @@ ms.locfileid: "59171052"
 
 **商业和GCC中等**
 
-商业和GCC中等帐户可以在管理中心购买模板 ([了解有关](/microsoft-365/commerce/)订阅、许可证和帐单) 。 选择要购买的许可证数量和付款计划。
+商业和GCC中等帐户可以在管理中心购买模板许可证 ([了解有关](/microsoft-365/commerce/)订阅、许可证和帐单) 。 选择要购买的许可证数量和付款计划。
 
 购买链接：
 
 - [商业](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
 - [GCC中等](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
 
-您还可以通过参与计划或批量许可[云解决方案提供商获取](https://partner.microsoft.com/membership/cloud-solution-provider)[许可证](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)。
+您还可以通过参与许可计划或批量许可[云解决方案提供商获取](https://partner.microsoft.com/membership/cloud-solution-provider)[许可证](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)。
 
 **GCC高帐户和 DOD 帐户**
 
@@ -120,7 +120,7 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 
 ##### <a name="template-tab"></a>"模板"选项卡
 
-" **模板** "选项卡是必需的。 此选项卡中的信息提供有关模板的元数据。 有四个必需列。 列必须保留工作表中Excel的顺序，如下所示。 您可以在这四列 **后** 添加您自己的列以提供您自己的维度。 如果这样做，请务必将它们添加到" **维度"** 选项卡。
+" **模板** "选项卡是必需的。 此选项卡中的信息提供有关模板的元数据。 有四个必需列。 列必须保留工作表上Excel，如下所示。 您可以在这四列 **后** 添加您自己的列以提供您自己的维度。 如果这样做，请务必将它们添加到" **维度"** 选项卡。
 
 - **title**：这是模板的标题，必须是唯一的。 它不能与合规性管理器中拥有的另一个模板共享名称，包括你自己的模板或合规性管理器模板。
 
@@ -145,20 +145,20 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 
 - **controlDescription：** 提供控件的说明。
 
-- **controlActionTitle：** 这是要与此控件相关的操作的标题。 可以通过用两个分号分隔来添加多个操作，两者之间没有空格。 您列出每个控件都必须包含至少一个操作，并且该操作必须存在 (这意味着您可以列出您在同一电子表格的"操作"选项卡上列出的操作、存在于不同模板中的操作或由 Microsoft) 创建的操作。 不同的控件可以引用相同的操作。
+- **controlActionTitle：** 这是要与此控件相关的操作的标题。 可以通过用两个分号分隔来添加多个操作，两者之间没有空格。 您列出每个控件都必须包含至少一个操作，并且该操作必须存在 (这意味着您可以列出您在同一电子表格的"操作"选项卡上列出的操作、存在于其他模板中的操作或由 Microsoft) 创建的操作。 不同的控件可以引用相同的操作。
 
 ##### <a name="actions-tab"></a>"操作"选项卡
 
 " **操作** "选项卡是必需的。  它指定了由组织管理的改进操作，而不是 Microsoft 的改进操作，这些改进操作已存在于合规性管理器中。 此选项卡的必需列必须遵循示例电子表格中提供的顺序：
 
-- **actionTitle：** 这是操作的标题，是必填字段。 你提供的标题必须是唯一的。 **重要** 提示：如果你引用了自己已有的操作 (如在另一个模板) 并修改后续列中的任何元素，这些更改将传播到其他模板中的同一操作。
+- **actionTitle：** 这是操作的标题，是必填字段。 你提供的标题必须是唯一的。 **重要** 提示：如果你引用了自己已有的操作， (如在另一个模板) 并修改后续列中的任何元素，这些更改将传播到其他模板中的同一操作。
 
 - **implementationType：** 在此必填字段中，列出以下三种实现类型之一：
     - **操作** - 人员和流程实施的用于保护组织系统、资产、数据和人员的机密性、完整性和可用性 (例如：安全意识和培训) 
     - **技术** - 使用信息系统的硬件、软件或固件组件中包含的技术和机制完成的操作，以保护组织系统和数据的机密性、完整性和可用性 (例如：多重身份验证) 
-    - **文档** - 通过记录的策略和过程实施的操作，这些策略和过程建立和定义保护组织系统、资产、数据和人员的机密性、完整性和可用性所需的控件 (例如：信息安全策略) 
+    - **文档** - 通过已记录的策略和过程实施的操作，这些策略和过程建立和定义保护组织系统、资产、数据和人员的机密性、完整性和可用性所需的控件 (例如：信息安全策略) 
 
-- **actionScore：** 在此必填字段中，为操作提供一个数值分数值。 该值必须是一个从 1 到 99 的全数;不能为 0、null 或空白。 数字越大，其改进合规性状态的价值就越高。 下图演示合规性管理器如何对控件进行评分：
+- **actionScore：** 在此必填字段中，为操作提供一个数值分数值。 该值必须是从 1 到 99 的整个数字;不能为 0、null 或空白。 数字越大，其改进合规性状态的价值就越高。 下图演示合规性管理器如何对控件进行评分：
 
   ![合规性管理器控制点值。](../media/compliance-score-action-scoring.png "合规性管理器控制点值")
 
@@ -191,7 +191,7 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 2. 选择 **"创建新模板"。** 将打开模板创建向导。
 3. 选择要创建的模板类型。 在这种情况下，请选择"**创建自定义模板"，** 然后选择"下一 **步"。**
 4. 在 **"Upload文件**"屏幕上，选择"浏览"查找并上载包含所有所需Excel模板数据的格式化文件。
-5. 如果文件没有问题，将显示上载的文件的名称。 选择“**下一步**”以继续。  (如果需要更改文件，请选择"更改Upload **文件) 。**
+5. 如果文件没有问题，将显示上载的文件的名称。 选择“**下一步**”以继续。  (如果需要更改文件，请选择"更改Upload **文件") 。**
     - 如果文件出错，顶部的错误消息将说明错误。 你将需要修复文件并再次上传它。 如果电子表格的格式不正确，或者某些字段中的信息无效，则会导致错误。
 6. " **审阅和完成"** 屏幕显示改进操作和控件的数量以及模板的最大分数。 准备好批准后，选择" **创建模板"。**  (如果需要进行更改，请选择"上 **一** 步") 
 7. 最后一个屏幕确认已创建一个新模板。 选择 **"完成** "退出向导。
@@ -269,7 +269,7 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 #### <a name="add-an-improvement-action"></a>添加改进操作
 
 1. 转到" **操作"** 选项卡。将信息添加到现有操作下第一个空行的必填字段中。
-2. 转到 **"ControlFamily"** 选项卡。查找包含改进操作映射到的控件的行。 将新操作添加到该行的 **controlActionTitle** 列 (请记住，用两个分号分隔此字段中的多个操作，两者之间没有) 。
+2. 转到 **"ControlFamily"** 选项卡。查找包含改进操作映射到的控件的行。 将新操作添加到该行的 **controlActionTitle** 列 (请记住，用两个分号分隔此字段中的多个操作，两者之间没有空格) 。
 3. 保存电子表格。
 
 #### <a name="edit-an-improvement-actions-information"></a>编辑改进操作的信息
@@ -329,12 +329,12 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 您的模板现在将包含您所做的更改。 使用此修改后模板的任何评估现在将显示挂起的更新，你将需要接受对评估的更新以反映在模板中所做的更改。 详细了解评估 [更新](compliance-manager-assessments.md#accept-updates-to-assessments)。
 
 > [!NOTE]
-> 如果使用英语版本外的其他语言使用合规性管理器，则你会注意到，导出模板进行自定义时，某些文本显示为Excel。 操作标题 (改进操作，如果适用，Microsoft) 必须为英语，控件必须识别。 如果对操作标题进行更改，请确保以英语编写它，以便正确导入文件。
+> 如果使用英语版本外的其他语言使用合规性管理器，则你会注意到，导出模板进行自定义时，某些文本以英语Excel。 操作标题 (改进操作，如果适用，Microsoft) 必须英语，控件必须识别这些操作。 如果对操作标题进行更改，请确保以英语编写它，以便正确导入文件。
 
 ## <a name="export-a-template"></a>导出模板
 
-您可以导出Excel模板数据的所有模板文件。 你将需要导出模板才能修改它，因为这将是你在修改过程中编辑Excel[上传的文件。](#modify-a-template) 如果要在构造新的自定义模板时使用模板的数据，还可以导出模板作为参考。
+您可以导出Excel模板数据的所有模板文件。 你需要导出模板才能修改它，因为这将是你在修改过程中编辑Excel上传的模板[文件](#modify-a-template)。 如果要在构造新的自定义模板时使用模板的数据，还可以导出模板作为参考。
 
-若要导出模板，请转到模板详细信息页面并选择"**导出到** Excel按钮。
+若要导出模板，请转到模板详细信息页面并选择"**导出** 到Excel按钮。
 
 请注意，导出从合规性管理器模板扩展的模板时，导出的文件将仅包含您添加到模板的属性。 导出的文件不包括 Microsoft 提供的原始模板数据。 若要获取此类报告，请参阅导出 [评估报告的说明](compliance-manager-assessments.md#export-an-assessment-report)。

@@ -9,29 +9,29 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何将非Microsoft 365数据导入审阅集，以在Advanced eDiscovery分析。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 65244b74cd868c4ec308327d15a070e67b9ac551
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9de9c4044b9c8ba4af5112475e51e517d0c73946
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170637"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175139"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>将非 Microsoft 365 数据加载到审阅集
 
-并非所有需要分析的文档Advanced eDiscovery都位于Microsoft 365。 使用高级电子数据展示中的非 Microsoft 365 数据导入功能，可以将不在 Microsoft 365 中的文档上传到审阅集。 本文演示如何将非文档Microsoft 365文档引入Advanced eDiscovery进行分析。
+并非所有需要在文档中分析Advanced eDiscovery文档都位于Microsoft 365。 使用高级电子数据展示中的非 Microsoft 365 数据导入功能，可以将不在 Microsoft 365 中的文档上传到审阅集。 本文演示如何将非文档Microsoft 365文档Advanced eDiscovery进行分析。
 
 ## <a name="requirements-to-upload-non-office-365-content"></a>上载非内容Office 365要求
 
 使用本文Microsoft 365上传非网站功能需要具备以下各项：
 
-- 必须为要关联非托管内容的所有保管Microsoft 365分配适当的许可证。 有关详细信息，请参阅开始[Advanced eDiscovery。](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)
+- 必须为要关联非托管Microsoft 365的所有保管人分配适当的许可证。 有关详细信息，请参阅开始[Advanced eDiscovery。](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)
 
 - 现有Advanced eDiscovery案例。
 
@@ -47,13 +47,13 @@ ms.locfileid: "59170637"
    - c:\nonO365\jewell.gordon@contoso.com
    - c:\nonO365\staci.gonzalez@contoso.com
 
-   其中 abraham.mcmahon@contoso.com、jewell.gordon@contoso.com 和 staci.gonzalez@contoso.com 是本例中保管人的 SMTP 地址。
+   其中 abraham.mcmahon@contoso.com、jewell.gordon@contoso.com 和 staci.gonzalez@contoso.com 是情况下保管人 SMTP 地址。
 
    ![非Microsoft 365数据上载文件夹结构。](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
 - 分配给电子数据展示管理员角色组的帐户 (添加为电子数据展示管理员) 。
 
-- AzCopy v8.1 工具安装在有权访问非内容文件夹Microsoft 365的计算机上。 若要安装 AzCopy，请参阅使用[AzCopy v8.1](/previous-versions/azure/storage/storage-use-azcopy)传输数据Windows。 请务必将 AzCopy 安装在默认位置，即 **%ProgramFiles (x86) %\Microsoft SDKs\Azure\AzCopy**。 必须使用 AzCopy v8.1。 AzCopy 的其他版本在加载非 Microsoft 365 数据时可能Advanced eDiscovery。
+- AzCopy v8.1 工具安装在有权访问非内容文件夹Microsoft 365的计算机上。 若要安装 AzCopy，请参阅使用[AzCopy v8.1](/previous-versions/azure/storage/storage-use-azcopy)传输数据Windows。 请务必在默认位置安装 AzCopy，即 **%ProgramFiles (x86) %\Microsoft SDKs\Azure\AzCopy**。 必须使用 AzCopy v8.1。 AzCopy 的其他版本在加载非 Microsoft 365 数据时可能Advanced eDiscovery。
 
 
 ## <a name="upload-non-microsoft-365-content-into-advanced-ediscovery"></a>Upload非Microsoft 365内容放入Advanced eDiscovery
@@ -74,11 +74,11 @@ ms.locfileid: "59170637"
  
 5. 单击“**下一步：上传文件**”。
 
-6. 在 **Upload文件"** 页上，执行以下操作：
+6. 在 **"Upload文件**"页上，执行以下操作：
 
    ![非Microsoft 365导入：Upload文件。](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-   a. 在 **"文件的位置** 的路径"框中，验证或键入存储要上载的非Microsoft 365文件夹的位置。 例如，对于"开始之前"部分中显示的示例文件的位置，在O365 上键入 **%USERPROFILE\Downloads\n** 文件。 提供正确的位置可确保正确更新路径下的框中显示的 AzCopy 命令。
+   a. 在 **"文件的位置** 的路径"框中，验证或键入要上载的非文件存储Microsoft 365文件夹的位置。 例如，对于"开始之前"部分中显示的示例文件的位置，键入 **%USERPROFILE\Downloads\nonO365**。 提供正确的位置可确保正确更新路径下的框中显示的 AzCopy 命令。
 
    b. 单击 **"复制到剪贴板** "以复制显示在框中的命令。
 
@@ -87,9 +87,9 @@ ms.locfileid: "59170637"
    ![非Microsoft 365导入：AzCopy。](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
-   > 如前所述，您必须使用 AzCopy v8.1 成功使用"文件"页上Upload **命令**。 如果提供的 AzCopy 命令失败，请参阅疑难解答[AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md)。
+   > 如前所述，必须使用 AzCopy v8.1 成功使用"文件"页上Upload **命令**。 如果提供的 AzCopy 命令失败，请参阅疑难解答[AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md)。
 
-8. 返回到"文件Microsoft 365 合规中心，然后单击向导中的"下一步 **： 处理** 文件"。  此操作将启动对已上传到 Azure 存储位置的非 Microsoft 365 文件的处理、文本提取和编制索引。  
+8. 返回到"文件Microsoft 365 合规中心，然后单击向导中的"下一步 **：** 处理文件"。  此操作将启动对已上传到 Azure 存储位置的非 Microsoft 365 文件的处理、文本提取和编制索引。  
 
 9. 通过查看名为将非文件数据添加到审阅集的作业，跟踪"进程文件"页或"作业"**选项卡Microsoft 365处理文件的进度**。  作业完成后，新文件将在审阅集内可用。
 

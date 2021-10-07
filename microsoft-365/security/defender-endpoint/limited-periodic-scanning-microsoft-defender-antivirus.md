@@ -1,12 +1,12 @@
 ---
 title: 启用有限定期Microsoft Defender 防病毒扫描功能
-description: 有限定期扫描使你除了Microsoft Defender 防病毒安装的 AV 提供程序之外，还能够使用
+description: 有限定期扫描使你除了Microsoft Defender 防病毒安装的 AV 提供程序之外，还可以使用
 keywords: lps， 受限， 定期， 扫描， 兼容性， 第三方， 其他 av， 禁用
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1b9dea20a6b56be70ba044b7e5f15fcc5cb9c8e5
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: b2ad3b7d1ff4ae2be4aff5e970395a9db2dc42de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041680"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174683"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>在 Microsoft Defender 防病毒程序内使用有限的定期扫描
 
@@ -40,7 +40,7 @@ ms.locfileid: "60041680"
 
 ## <a name="how-to-enable-limited-periodic-scanning"></a>如何启用有限定期扫描
 
-默认情况下，Microsoft Defender 防病毒如果尚未安装其他防病毒产品，或者其他产品过期、过期或无法正常工作，Windows 10 设备上自行启用。
+默认情况下，Microsoft Defender 防病毒如果尚未安装其他防病毒产品，或者其他产品已过期、过期或无法正常工作，Windows 10 设备自行启用。
 
 如果Microsoft Defender 防病毒，将显示常用选项以在该设备上配置它：
 
@@ -48,7 +48,7 @@ ms.locfileid: "60041680"
 
 如果安装了另一个防病毒产品并正常运行，Microsoft Defender 防病毒将自行禁用。 该Windows 安全中心应用将更改病毒&威胁防护部分以显示有关 AV 产品的状态，并提供指向产品配置选项的链接。
 
-在任何第三方 AV 产品下，新链接将显示为Microsoft Defender 防病毒 **选项。** 单击此链接将展开以显示启用有限定期扫描的切换。 请注意，有限定期选项是启用或禁用定期扫描的开关。 
+在任何第三方 AV 产品下，新链接将显示为Microsoft Defender 防病毒 **选项**。 单击此链接将展开以显示启用有限定期扫描的切换。 请注意，有限定期选项是启用或禁用定期扫描的开关。 
 
 将开关滑动到 **开** 将显示第三方 AV 产品下方的标准 Microsoft Defender AV 选项。 有限定期扫描选项将显示在页面底部。
 

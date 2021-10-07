@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: martyav
 ms.author: v-maave
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cbfb672795dc64a4bb6e4d4541b8eb72511e128b
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 0f2923d03a101d6ec55bfa4090ce22e9d1353e6e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497630"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174599"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>从第三方解决方案迁移时解决 Microsoft Defender 防病毒软件问题
 
@@ -38,11 +38,11 @@ ms.locfileid: "59497630"
 
 通过选择任务栏中的"搜索"图标并搜索事件查看器，打开 *事件查看器应用*。
 
-有关应用程序Microsoft Defender 防病毒的信息，请参阅Microsoft Windows Windows Defender \>  \>  \> 应用程序和服务 **日志**。
+有关应用程序Microsoft Defender 防病毒的信息，请参阅Microsoft Windows Windows Defender \>  \>  \> 的应用程序 **和服务日志**。
 
 从"操作"**下方选择**"打开 **"。**
 
-从详细信息窗格中选择事件将在下窗格中的"常规"和"详细信息"选项卡下 **显示有关****事件的详细信息**。
+从详细信息窗格中选择事件将在下窗格中的"常规"和"详细信息"选项卡下显示有关 **事件的详细信息**。 
 
 ## <a name="microsoft-defender-antivirus-wont-start"></a>Microsoft Defender 防病毒无法启动
 
@@ -52,13 +52,13 @@ ms.locfileid: "59497630"
 
 事件 ID|日志名称|说明|源
 ---|---|---|---
-15 |应用程序|更新Windows Defender状态以SECURITY_PRODUCT_STATE_OFF。|安全中心
+15 |Application|更新Windows Defender状态以SECURITY_PRODUCT_STATE_OFF。|安全中心
 5007|Microsoft-Windows-Windows Defender/Operational|Windows Defender 防病毒配置已更改。 如果这是意外事件，你应该查看设置，因为这可能是恶意软件的结果。 <p> **旧值：** Default\IsServiceRunning = 0x0 <p> **新值：** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/Operational|Windows Defender 防病毒间谍软件和其他可能不需要的软件扫描处于禁用状态。|Windows Defender
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>如何判断Microsoft Defender 防病毒是否因为安装了第三方防病毒而无法启动
 
-在Windows 10设备上，如果未使用 Microsoft Defender for Endpoint，并且安装了第三方防病毒，Microsoft Defender 防病毒将自动关闭。 如果你使用的是安装了第三方防病毒的 Microsoft Defender for Endpoint，Microsoft Defender 防病毒被动模式启动，功能会减少。
+在Windows 10设备上，如果未使用 Microsoft Defender for Endpoint，并且安装了第三方防病毒，Microsoft Defender 防病毒将自动关闭。 如果你使用的是安装了第三方防病毒的 Microsoft Defender for Endpoint，Microsoft Defender 防病毒被动模式启动，但功能会减少。
 
 > [!TIP]
 > 上述方案仅适用于Windows 10。 其他版本的 Windows对第[三Microsoft Defender 防病毒](microsoft-defender-antivirus-compatibility.md)安全软件一起运行的版本有不同的响应。
@@ -67,7 +67,7 @@ ms.locfileid: "59497630"
 
 若要打开"服务"应用，请从 **任务栏中选择"** 搜索"图标，然后搜索 *服务*。 您还可以通过键入 *services.msc* 从命令行打开应用程序。
 
-有关Microsoft Defender 防病毒的信息将在"服务"应用下"Windows Defender \> **操作"中列出**。 防病毒服务名称是Windows Defender 防病毒 *服务*。
+有关服务Microsoft Defender 防病毒将在服务应用下列出Windows Defender \> **操作**。 防病毒服务名称是Windows Defender 防病毒 *服务*。
 
 检查应用时，你可能会看到 Windows Defender 防病毒 *服务* 已设置为手动，但在尝试手动启动此服务时，你收到一条警告，指出"本地计算机上 Windows Defender 防病毒 服务服务已启动，然后已停止"。 *如果某些服务未由其他服务或程序* 使用，则会自动停止这些服务。
 
@@ -93,9 +93,9 @@ Policy|设置|获胜的 GPO
 ---|---|---
 关闭Windows Defender 防病毒|已启用|Win10-Workstations
 
-###### <a name="if-security-settings-are-implemented-via-group-policy-preference-gpp"></a>如果安全设置是通过组策略首选项 (GPP) 
+###### <a name="if-security-settings-are-implemented-via-group-policy-preference-gpp"></a>如果安全设置通过组策略首选项 (GPP) 
 
-在标题"注册表项 (项路径 *：HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender，值名称：DisableAntiSpyware) "* 下，你可能会看到如下条目，指示 Microsoft Defender 防病毒 已关闭。
+在标题"注册表项 (*项路径：HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender，值名称：DisableAntiSpyware) "* 下，你可能会看到如下条目，指示Microsoft Defender 防病毒已关闭。
 
 DisableAntiSpyware|-
 ---|---
@@ -104,7 +104,7 @@ DisableAntiSpyware|-
 **常规**|
 操作|更新
 **属性**|
-配置单元|HKEY_LOCAL_MACHINE
+Hive|HKEY_LOCAL_MACHINE
 密钥路径|SOFTWARE\Policies\Microsoft\Windows Defender
 值名称|DisableAntiSpyware
 值类型|REG_DWORD
@@ -120,16 +120,16 @@ DisableAntiSpyware|-
 
 ###### <a name="if-security-settings-are-set-in-windows-or-your-windows-server-image"></a>如果在服务器映像或 Windows中Windows安全设置
 
-你虚构的管理员可能已经通过 *GPEdit.exe* *、LGPO.exe* 在本地或通过修改任务序列中的注册表来设置安全策略 **[DisableAntiSpyware。](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)** 您可以为[受信任的映像标识符配置](/windows-hardware/manufacture/desktop/configure-a-trusted-image-identifier-for-windows-defender)Microsoft Defender 防病毒。
+你虚构的管理员可能已经通过 *GPEdit.exe* *、LGPO.exe* 在本地或通过修改任务序列中的注册表来设置安全策略 **[DisableAntiSpyware。](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)** 您可以[为受信任映像标识符配置](/windows-hardware/manufacture/desktop/configure-a-trusted-image-identifier-for-windows-defender)Microsoft Defender 防病毒。
 
 ### <a name="turn-microsoft-defender-antivirus-back-on"></a>打开Microsoft Defender 防病毒"
 
 Microsoft Defender 防病毒当前没有处于活动状态的防病毒，则会自动打开该防病毒。 你需要完全关闭第三方防病毒，以确保Microsoft Defender 防病毒完整功能运行。
 
 > [!WARNING]
-> 建议编辑 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services 中的wdboot、wdfilter、wdnisdrv、wdnissvc 和 *windefend* 的 Windows Defender 开始值的解决方案不受支持，并可能强制你重新映像系统。   
+> 建议编辑 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services 中的wdboot、wdfilter、wdnisdrv、wdnissvc 和 *windefend* 的 Windows Defender 启动值的解决方案不受支持，并可能强制你重新映像系统。   
 
-如果你开始将 Microsoft Defender for Endpoint 和第三方防病毒与 Microsoft Defender 防病毒 一起使用，则被动模式可用。 被动模式允许 Microsoft Defender 扫描文件并自行更新，但它不会修正威胁。 此外，通过实时保护的行为[](configure-real-time-protection-microsoft-defender-antivirus.md)监视在被动模式下不可用，除非部署了 DLP ([终结点](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview)) 数据丢失防护。
+如果你开始将 Microsoft Defender for Endpoint 和第三方防病毒与应用一起使用，则被动Microsoft Defender 防病毒。 被动模式允许 Microsoft Defender 扫描文件并自行更新，但它不会修正威胁。 此外，通过实时保护的行为[](configure-real-time-protection-microsoft-defender-antivirus.md)监视在被动模式下不可用，除非部署了 DLP ([终结点](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview)) 数据丢失防护。
 
 另一个称为[有限定期](limited-periodic-scanning-microsoft-defender-antivirus.md)扫描的功能在设置为自动关闭Microsoft Defender 防病毒最终用户可用。 此功能允许Microsoft Defender 防病毒检测次数有限的第三方防病毒一起定期扫描文件。
 

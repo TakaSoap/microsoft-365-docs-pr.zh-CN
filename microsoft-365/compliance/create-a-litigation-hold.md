@@ -9,23 +9,23 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: 了解如何将邮箱置于诉讼保留状态，在调查期间保留所有邮箱内容。
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 4a3271952a1f517f97e6b0a13044d2fac102e8ec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0bd436106f4bb5dedecd1008aeeb768887dbe599
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171039"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175343"
 ---
 # <a name="create-a-litigation-hold"></a>创建诉讼保留
 
-可以将邮箱置于诉讼保留状态，以保留所有邮箱内容，包括已删除项目和已修改项目的原始版本。 当您将用户邮箱置于诉讼保留时，用户的存档邮箱中的内容 (如果已启用，) 也会保留。 创建保留时，您可以指定保留持续时间 *(* 也称为基于时间保留) 以便已删除和修改的项目将保留指定的时间段，然后从邮箱中永久删除。 或者，您可以无限期保留内容 (称为"无限期 *保留")* 或删除诉讼保留。 如果您指定了保留持续时间，则从收到邮件或创建邮箱项目的日期开始计算。 
+可以将邮箱置于诉讼保留状态，以保留所有邮箱内容，包括已删除项目和已修改项目的原始版本。 当您将用户邮箱置于诉讼保留时，用户的存档邮箱中的内容 (如果已启用，) 内容也会保留。 创建保留时，您可以指定保留持续时间 (也称为基于时间保留 *)* 以便已删除和修改的项目保留指定的时间段，然后从邮箱中永久删除。 或者，您可以无限期地保留 (称为"无限期 *保留")* 或删除诉讼保留。 如果您指定了保留持续时间，则从收到邮件或创建邮箱项目的日期开始计算。 
   
 下面是创建诉讼保留时发生的情况。
   
@@ -42,7 +42,7 @@ ms.locfileid: "59171039"
 若要将Exchange Online邮箱置于诉讼保留状态，必须为其分配一个Exchange Online 2 许可证。 如果为邮箱分配了Exchange Online计划 1 许可证，您必须为其分配单独的Exchange Online Archiving许可证才能将其置于保留状态。
 
 > [!NOTE]
-> 对于Office 365 教育版组织，诉讼保留在 Office 365 A1订阅中受支持，其中包括Exchange Online附加功能的 Exchange Online 计划 1 许可证。 有关详细信息，请参阅服务说明 中的"Exchange Online[功能"Office 365 教育版部分](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features)。
+> 对于Office 365 教育版组织，诉讼保留在 Office 365 A1 订阅中受支持，其中包括一个Exchange Online计划 1 许可证以及补充功能。 有关详细信息，请参阅服务Exchange Online中的"Office 365 教育版[功能"部分](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features)。
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>将邮箱置于诉讼保留状态
 
@@ -60,11 +60,11 @@ ms.locfileid: "59171039"
 
 5. 在" **管理诉讼保留** "飞出页面上，选中" **启用诉讼保留** "复选框，然后输入以下可选信息：
 
-    1. **保留 (天) ：** 使用此框创建基于时间保留，并指定邮箱项目在置于诉讼保留时保留的时间。 持续时间从接收或创建邮箱项目的日期开始计算。 当特定项目的保留期到期时，将不再保留该项目。 如果保留此框为空，项目将无限期保留或一直保留到删除保留。 使用天指定持续时间。
+    1. **保留 (天数) ：** 使用此框可以创建基于时间保留，并指定邮箱项目在置于诉讼保留时保留的时间。 持续时间从接收或创建邮箱项目的日期开始计算。 当特定项目的保留期到期时，将不再保留该项目。 如果保留此框为空，项目将无限期保留或一直保留到删除保留。 使用天指定持续时间。
 
-    2. **Note visible to the user**： Use this box to inform the user their mailbox is on Litigation hold. 如果用户使用的是 Outlook 2010 或更高版本，则注释将显示在用户邮箱的"帐户信息"页上。 若要访问此页面，用户可以单击"Outlook"。 
+    2. **Note visible to the user**： Use this box to inform the user their mailbox is on Litigation hold. 如果用户使用的是 2010 或更高版本，则注释将显示在用户邮箱的"帐户信息"Outlook页上。 若要访问此页，用户可以 **单击**"Outlook"。
 
-    3. **包含用户详细信息的网页**：使用此框将用户引导到网站，详细了解诉讼保留。 如果用户使用的是 Outlook 2010 或更高版本，则此 URL 将显示在用户邮箱的"帐户信息"页上。 若要访问此页面，用户可以单击"Outlook"。 
+    3. **包含用户详细信息的网页**：使用此框将用户引导到网站，详细了解诉讼保留。 如果用户使用的是 Outlook 2010 或更高版本，则此 URL 将显示在用户邮箱的"帐户信息"页上。 若要访问此页，用户可以 **单击**"Outlook"。
 
 6. 单击 **"诉讼****保留"飞** 出页面上的"保存更改"以创建保留。 
 

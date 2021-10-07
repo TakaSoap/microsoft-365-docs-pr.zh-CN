@@ -1,8 +1,8 @@
 ---
 title: 内部风险解决方案
-description: 了解如何使用 Microsoft 365 中的内部风险解决方案帮助最大程度地降低Microsoft 365。
+description: 了解如何在组织中通过内部风险解决方案帮助最大程度地降低Microsoft 365。
 keywords: Microsoft 365、内部风险、合规性
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 40d1076f9c6706b9a24c1a6af23a32b02809c7ba
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ab7f0b26770c78298d620fa1f7d991dc5c7cae4b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196968"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175235"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 内部风险解决方案
 
@@ -48,7 +48,7 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 ## <a name="microsoft-365-insider-risk-solutions"></a>Microsoft 365 内部风险解决方案
 
-若要帮助组织抵御内部风险，请使用Microsoft 365功能。
+若要帮助组织抵御内部风险，请使用Microsoft 365和特性。
 
 ### <a name="communication-compliance"></a>通信合规性
 
@@ -80,9 +80,9 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 合规加载项
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 预览体验成员风险管理加载项
 - Microsoft 365 G5 订阅（付费或试用版本）
-- Microsoft 365 G3订阅 + Microsoft 365 G5 合规性加载项
-- Microsoft 365 G3订阅 + Microsoft 365 G5 内部风险管理加载项
-- Office 365 E3 + Enterprise移动性和安全性 E3 + Microsoft 365 E5 合规加载项
+- Microsoft 365 G3 订阅 + Microsoft 365 G5 合规加载项
+- Microsoft 365 G3 订阅 + Microsoft 365 G5 预览体验成员风险管理加载项
+- Office 365 E3 订阅 + 企业移动性和安全性 E3 + Microsoft 365 E5 合规加载项
 
 ### <a name="information-barriers"></a>信息屏障
 
@@ -102,7 +102,7 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 ### <a name="privileged-access-management"></a>特权访问管理
 
-利用特权访问管理，可以精细地控制特权Exchange Online管理任务Office 365。 它可以帮助保护你的组织免受具有永久访问敏感数据或访问关键配置设置权限的现有特权管理账户带来的安全问题。
+Privileged access management allows granular access control over privileged Exchange Online admin tasks in Office 365. 它可以帮助保护你的组织免受具有永久访问敏感数据或访问关键配置设置权限的现有特权管理账户带来的安全问题。
 
 特权访问管理在下列订阅中可用：
 
@@ -117,7 +117,7 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>部署Microsoft 365内部风险解决方案
 
-若要帮助组织抵御内部风险，请设置和部署以下Microsoft 365解决方案：
+为了帮助保护组织免受内部风险，请设置和部署以下Microsoft 365解决方案：
 
 ![内部风险解决方案深度防御。](../media/ir-solution-defense-in-depth.png)
 
@@ -128,7 +128,7 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 ## <a name="illustrations-with-examples"></a>包含示例的图示
 
-为了帮助你规划实施内部风险Microsoft 365集成策略，请下载Microsoft 365 *信息* 保护和合规性功能集的图示。 有关内部风险功能，请参阅体系结构图示第 5-7 页。 可随时根据自己的使用情况来修改这些插图。
+为帮助你规划实施内部风险Microsoft 365集成策略，请下载Microsoft 365 *信息* 保护和合规性功能集的图示。 有关内部风险功能，请参阅体系结构图示第 5-7 页。 可随时根据自己的使用情况来修改这些插图。
 
 | 项目 | 说明 |
 |:-----|:------------|

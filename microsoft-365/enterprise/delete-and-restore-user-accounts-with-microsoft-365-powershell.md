@@ -7,7 +7,7 @@ ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: 了解如何在 PowerShell 中使用不同的模块来删除Microsoft 365用户帐户。
-ms.openlocfilehash: 30d69fa8a65207b7eb73bfc36d36733789fcb72f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dc1e5c53f2d356f0585da5a0a5285b9af28dc8f0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195754"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171911"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户
 
@@ -34,7 +34,7 @@ ms.locfileid: "59195754"
 >[!Note]
 >了解如何使用[Microsoft 365 管理中心。](../admin/add-users/restore-user.md)
 >
->有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
+>有关其他资源的列表，请参阅管理 [用户和组](/admin)。
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell

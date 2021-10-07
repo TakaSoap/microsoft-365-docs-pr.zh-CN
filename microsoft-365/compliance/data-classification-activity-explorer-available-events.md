@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 活动资源管理器中可用的标签活动列表。
-ms.openlocfilehash: 163231d4d1e7c6a2d1b75c0f81a17443cfafe246
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ed1b207f4d0879185d757e2481cc3e8879293710
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169669"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173471"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>活动资源管理器中可用的标记活动
 
@@ -36,7 +36,7 @@ ms.locfileid: "59169669"
 - 还可以通过"标签"事件类型字段和筛选器监视升级和 *降级标签操作* 。   
 
 
-|源  |在活动资源管理器中报告 | 注意  |
+|Source  |在活动资源管理器中报告 | 注意  |
 |---------|---------|---------|
 | Word、Excel、PowerPoint|是 |
 |Outlook| 是 | |
@@ -45,7 +45,7 @@ ms.locfileid: "59169669"
 |Azure 信息保护 (AIP) 统一客户端和 AIP 统一扫描程序 |是 |AIP *新标签* 操作映射到活动 *资源管理器中* 应用的标签   |
 |Microsoft 信息保护 (MIP) SDK         |是|AIP *新标签* 操作映射到活动 *资源管理器中* 应用的标签|
 |权限管理服务 (RMS)          |不适用         | |
-|Power BI桌面和 Web        | 否| 在审核日志中Microsoft 365访问         |
+|Power BI桌面和 Web        | 否| 可访问Microsoft 365审核日志         |
 |Microsoft Cloud App Security (MCAS)         |否|         |
 
 ## <a name="sensitivity-label-changed"></a>敏感度标签已更改
@@ -57,10 +57,10 @@ ms.locfileid: "59169669"
 - 在本机应用程序和 Web 应用程序中的保存Office捕获它。 
 - 在 Azure 信息保护统一客户端加载项和扫描程序实施中出现时捕获
 - 还可以通过"标签"事件类型字段和筛选器监视升级和 *降级标签操作* 。 除了 *SharePoint* Online 和 OneDrive 之外，还将捕获对齐文本。
-- 在本机应用中Office敏感度Outlook会收集在文件保存/电子邮件发送操作之前生成的最后一个操作。 例如，如果用户在发送电子邮件之前多次更改电子邮件的标签，电子邮件发送时在电子邮件上找到的最后一个标签将捕获到 审核日志 然后在活动资源管理器中报告。 
+- 在 Office 上的本机应用中Outlook敏感度标记会收集在文件保存/电子邮件发送操作之前生成的最后一个操作。 例如，如果用户在发送电子邮件前多次更改电子邮件标签，电子邮件发送时在电子邮件上找到的最后一个标签将捕获到 审核日志 然后在活动资源管理器中报告。 
 
 
-|源  |在活动资源管理器中报告|注意  |
+|Source  |在活动资源管理器中报告|注意  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |是         |
 |Outlook         |是         |
@@ -70,7 +70,7 @@ ms.locfileid: "59169669"
 |AIP 统一扫描程序         |是         |
 |MIP SDK         |是         |
 |RMS 服务         |不适用         |
-|Power BI桌面和 Web         |否         |在审核日志中Microsoft 365访问 |
+|Power BI桌面和 Web         |否         |可访问Microsoft 365审核日志 |
 |MCAS     |否         |         |
 
 ## <a name="sensitivity-label-removed"></a>删除了敏感度标签
@@ -79,9 +79,9 @@ ms.locfileid: "59169669"
 
 - 在本机应用程序和 Web 应用程序中保存Office捕获此事件。
 - 在 Azure 信息保护加载项中出现时捕获它。 
-- 敏感度标签（Office本机 MIP 标签Outlook收集在文件保存/电子邮件发送操作之前生成的最后一个标签事件。
+- 敏感度标签（Office本机 MIP 标签Outlook收集上次在文件保存/电子邮件发送操作之前生成的标记事件。
 
-|源  |在活动资源管理器中报告 | 注意  |
+|Source  |在活动资源管理器中报告 | 注意  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |是         |
 |Outlook         |是         ||
@@ -91,7 +91,7 @@ ms.locfileid: "59169669"
 |AIP 统一扫描程序         |是         |AIP *删除标签* 操作已映射到活动资源管理器 *中的标签* 删除操作 |
 |MIP SDK         |是         |AIP *删除标签* 操作已映射到活动资源管理器 *中的标签* 删除操作 |
 |RMS 服务         |不适用         |
-|Power BI桌面和 Web         |否         |在审核日志中Microsoft 365访问 |
+|Power BI桌面和 Web         |否         |可访问Microsoft 365审核日志 |
 |MCAS     |否         |         |
  
 
@@ -99,7 +99,7 @@ ms.locfileid: "59169669"
 
 每次打开标记为或受保护的文档的敏感度文档时，将生成此事件。
 
-|源  |在活动资源管理器中报告 | 注意  |
+|Source  |在活动资源管理器中报告 | 注意  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |是         |
 |Outlook         |否         |
@@ -109,7 +109,7 @@ ms.locfileid: "59169669"
 |AIP 统一扫描程序         |是         |AIP *访问* 操作映射到活动 *资源管理器中的文件读取* 操作|
 |MIP SDK         |是         |AIP *访问* 操作映射到活动 *资源管理器中的文件读取* 操作|
 |RMS 服务         |是         |访问 *操作* 映射到活动 *资源管理器中的文件读取* 操作 |
-|Power BI桌面和 Web         |否         |在审核日志中Microsoft 365访问 |
+|Power BI桌面和 Web         |否         |可访问Microsoft 365审核日志 |
 |MCAS     |否         |         |
 
 
@@ -117,7 +117,7 @@ ms.locfileid: "59169669"
 
 每次发现文件时，当使用 AIP 扫描程序扫描不同位置的敏感数据并查找文件时，将生成此事件。
 
-|源  |在活动资源管理器中报告 | 注意  |
+|Source  |在活动资源管理器中报告 | 注意  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |不适用         |
 |Outlook         |不适用         |
@@ -135,7 +135,7 @@ ms.locfileid: "59169669"
 
 每次重命名具有敏感度标签的文档时，将生成此事件。 
 
-|源  | 在活动资源管理器中报告 | 注意  |
+|Source  | 在活动资源管理器中报告 | 注意  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |是         |
 |Outlook         |不适用         |
@@ -153,7 +153,7 @@ ms.locfileid: "59169669"
 
 每次 AIP 扫描程序检测到之前扫描的文件已删除时，将生成此事件。
 
-|源  |在活动资源管理器中报告 | 注意  |
+|Source  |在活动资源管理器中报告 | 注意  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |不适用         |
 |Outlook         |不适用         |
@@ -170,7 +170,7 @@ ms.locfileid: "59169669"
 
 此事件生成首次保护时手动添加到没有标签的项。
 
-|源  |在活动资源管理器中报告 | 注意  |
+|Source  |在活动资源管理器中报告 | 注意  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |否         |
 |Outlook         |否         |
@@ -187,7 +187,7 @@ ms.locfileid: "59169669"
 
 每次手动更改未标记文档的保护时，将生成此事件。
 
-|源  |在活动资源管理器中报告 |
+|Source  |在活动资源管理器中报告 |
 |---------|---------| 
 |Word、Excel、PowerPoint         |否         |
 |Outlook         |否         |
@@ -204,7 +204,7 @@ ms.locfileid: "59169669"
 
 每次手动更改未标记文档的保护时，将生成此事件。
 
-|源  |在活动资源管理器中报告 |
+|Source  |在活动资源管理器中报告 |
 |---------|---------| 
 |Word、Excel、PowerPoint         |否         |
 |Outlook         |否         |
@@ -221,7 +221,7 @@ ms.locfileid: "59169669"
 
 每次在文档或电子邮件上匹配 DLP 策略时，将生成此事件。
 
-|源  |在活动资源管理器中报告 |
+|Source  |在活动资源管理器中报告 |
 |---------|---------| 
 |Exchange         |是       |
 |SharePoint Online|是          |
@@ -232,7 +232,7 @@ ms.locfileid: "59169669"
 |本地         |否|
 |MCAS     |否        | 
 
-终结点 DLP Windows 10设备 (事件) 为：
+Windows 10 终结点 DLP (事件) 为：
 
 - 文件已删除
 - 已创建文件
@@ -251,7 +251,7 @@ ms.locfileid: "59169669"
 
 - 它在保存文档时和发送电子邮件时捕获。
 
-|源  |在活动资源管理器中报告 |
+|Source  |在活动资源管理器中报告 |
 |---------|---------| 
 |Exchange         |否       |
 |SharePoint Online|是          |
@@ -263,7 +263,7 @@ ms.locfileid: "59169669"
 
 - 它在保存文档时和发送电子邮件时捕获。
 
-|源  |在活动资源管理器中报告 |
+|Source  |在活动资源管理器中报告 |
 |---------|---------| 
 |Exchange         |否       |
 |SharePoint Online|是          |
@@ -275,7 +275,7 @@ ms.locfileid: "59169669"
 
 - 它在保存文档时和发送电子邮件时捕获。
 
-|源  |在活动资源管理器中报告 |
+|Source  |在活动资源管理器中报告 |
 |---------|---------| 
 |Exchange         |否       |
 |SharePoint Online|是          |
@@ -286,6 +286,6 @@ ms.locfileid: "59169669"
   
 - 向最终用户显示推荐的标签工具提示时，不会捕获它。 但是，如果用户选择应用建议的标签，标签将显示在"如何应用"字段下 *，显示为**"推荐"*  
 
-- 从敏感度标签降级和从敏感度标签降级时，SharePoint文本OneDrive。  
+- 敏感度标签降级中目前不可用理由文本SharePoint OneDrive。  
 
 - 敏感信息类型当前不适用于 Word、Excel、PowerPoint 和 Outlook、SharePoint Online 和 OneDrive 中的自动标记OneDrive。

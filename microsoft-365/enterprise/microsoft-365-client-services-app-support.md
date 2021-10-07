@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
@@ -15,12 +15,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: 本文查找有关客户端Microsoft 365服务应用支持的详细信息。
-ms.openlocfilehash: e380efffc1bf29cbd4d3a77d32e4d1f8b2994da3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4ae294865bb506ae9e8a25e8f5ab28fff967171e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161993"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173320"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365客户端和服务应用支持
 
@@ -30,7 +30,7 @@ Microsoft 支持多种安全、身份验证和合规性功能，以确保客户�
 
 ### <a name="continuous-access-evaluation-preview"></a>连续访问评估 (预览) 
 
-连续访问评估通过启用服务（如 Exchange Online、SharePoint Online 和 Teams）来订阅 Azure Active Directory 中的关键事件，以便几乎可以实时评估和强制执行这些事件。 关键事件评估不依赖于条件访问策略，因此可在任何租户中使用。
+连续访问评估通过启用服务（如 Exchange Online、SharePoint Online 和 Teams）来订阅 Azure Active Directory 中的关键事件，以便几乎可以实时地评估和强制执行这些事件。 关键事件评估不依赖于条件访问策略，因此可在任何租户中使用。
 
 当前评估以下事件：
 
@@ -46,15 +46,15 @@ Microsoft 支持多种安全、身份验证和合规性功能，以确保客户�
 
 ### <a name="certificate-based-authentication"></a>基于证书的身份验证
 
-CBA (基于证书) 身份验证是在授予对资源、网络、应用程序或服务的访问权限之前，使用数字证书标识用户、计算机或设备。 在用户身份验证中，它通常与用户名和密码等传统方法协调部署。
+CBA (基于证书) 是使用数字证书在授予对资源、网络、应用程序或服务的访问权限之前标识用户、计算机或设备。 在用户身份验证中，它通常与用户名和密码等传统方法协调部署。
 
 某些传统解决方案仅适用于用户，例如生物识别以及 OTP (一) 。 使用基于证书的身份验证，可针对所有终结点使用相同的解决方案;用户、设备和不断增多的物联网 (IoT) 。
 
-有关客户端和服务应用支持的基于证书的身份验证Microsoft 365请参阅客户端应用支持：基于证书[的身份验证](microsoft-365-client-support-certificate-based-authentication.md)。
+有关客户端和服务应用支持的基于证书的身份验证Microsoft 365请参阅客户端[应用支持：基于证书的身份验证](microsoft-365-client-support-certificate-based-authentication.md)。
 
 ### <a name="conditional-access"></a>条件访问
 
-条件访问是一种工具，Azure Active Directory将信号汇集在一起、做出决策并实施组织访问策略。 条件访问是新的标识驱动控件模型的核心。
+条件访问是组织用来将信号Azure Active Directory、做出决策以及强制执行组织访问策略的工具。 条件访问是新的标识驱动控件模型的核心。
 
 条件访问策略是 if-then 语句，用于授予对资源的访问权限。 如果用户希望访问资源，则用户必须完成一个操作。 条件访问在做出策略访问决策时可以使用的常见信号包括：
 
@@ -86,9 +86,9 @@ CBA (基于证书) 身份验证是在授予对资源、网络、应用程序或�
 
 用户访问组织数据时，组织必须确保应用组织策略（如配置策略和保护策略）以帮助保护设备上的组织数据。 此外，用户设备上的个人内容应保持在组织控制之外。
 
-对于组织管理的内容，您可以应用应用程序管理策略，以控制如何使用 Microsoft Intune 访问、共享和使用Microsoft Intune。 例如，支持以下操作：
+对于组织管理的内容，您可以应用应用程序管理策略，以控制如何使用 Microsoft Intune 访问、共享和使用数据。 例如，支持以下操作：
 
-- 远程擦除托管组织内容 (也称为组织数据) 
+- 远程擦除托管组织 (也称为组织数据) 
 - 防止将组织内容粘贴到非组织位置
 - 需要 PIN 来访问组织内容
 - 阻止托管应用在已越狱或获得 root 权限的设备上运行
@@ -102,7 +102,7 @@ CBA (基于证书) 身份验证是在授予对资源、网络、应用程序或�
 
 ### <a name="multi-factor-authentication"></a>多重身份验证
 
-[MFA (多重身份验证) 一种计算机访问控制方法，在该方法中，只有在向身份验证机制成功提供多个单独证据后，用户才被授予访问权限。 此方法通常至少使用下列两种类别：
+[MFA (多重身份验证) 是计算机访问控制的一种方法，在该方法中，只有在向身份验证机制成功呈现多个单独证据后，用户才被授予访问权限。 此方法通常至少使用下列两种类别：
 
 - 知识 (他们了解) 
 - 拥有 (他们拥有) 
@@ -112,15 +112,15 @@ CBA (基于证书) 身份验证是在授予对资源、网络、应用程序或�
 
 ### <a name="single-sign-on"></a>单一登录
 
-SSO (单一登录) 当用户登录到 SSO 中的应用程序时，可添加安全性和Azure Active Directory。 借助单一登录，用户可以使用一个帐户登录一次，以访问组织中本地 Active Directory 域服务 (AD DS) 已加入域的设备、软件即服务 (SaaS) 应用程序和 Web 应用程序。
+SSO (单一登录) 当用户登录到 SSO 中的应用程序时，可添加安全性和Azure Active Directory。 借助单一登录，用户可以使用一个帐户登录一次，以访问本地 Active Directory 域服务 (AD DS) 已加入域的设备、软件即服务 (SaaS) 应用程序和您组织的 Web 应用程序。
 
-有关客户端和服务应用支持的单一登录Microsoft 365，请参阅客户端应用支持：[单一登录](microsoft-365-client-support-single-sign-on.md)。
+有关客户端和服务应用支持的单一登录信息，请参阅Microsoft 365[客户端应用支持：单一登录。](microsoft-365-client-support-single-sign-on.md)
 
 ## <a name="services-support"></a>服务支持
 
 ### <a name="modern-authentication"></a>新式验证
 
-新式身份验证使客户能够针对 Office 365 进行身份验证的新方案，以及允许租户管理员在整个租户Office 365特定的身份验证要求，例如：
+新式身份验证使客户能够针对 Office 365 进行身份验证的新方案，以及租户管理员在整个租户Office 365特定的身份验证要求，例如：
 
 - 对与租赁和服务的管理交互以及最终用户与应用程序及其数据的交互的多重身份验证支持
 - 条件访问
@@ -139,7 +139,7 @@ Azure Active Directory (Azure AD) 条件访问规则允许客户根据设备合�
 - 基于 Azure AD 位置的条件访问
 - 基于 Azure AD 设备的条件访问
 
-Azure AD 条件访问规则适用于每个应用程序，客户可以使用这些规则根据不同的条件控制访问。 使用移动设备管理 (MDM) 或[Intune，](/mem/intune/fundamentals/what-is-device-management)客户必须能够将 Microsoft 365 的访问权限限制为仅针对使用组织设备或已注册其个人设备进行管理的用户。 例如，客户可以配置条件访问规则以强制执行如下控件：
+Azure AD 条件访问规则适用于每个应用程序，客户可以使用这些规则根据不同的条件控制访问。 使用[移动设备管理 (MDM) 或 Intune，](/mem/intune/fundamentals/what-is-device-management)客户必须能够将 Microsoft 365 的访问权限限制为仅针对使用组织设备或已注册其个人设备进行管理的用户。 例如，客户可以配置条件访问规则以强制执行如下控件：
 
 - 仅允许从已加入域或符合域的设备访问
 - 强制对服务的所有访问进行多重Exchange Online身份验证

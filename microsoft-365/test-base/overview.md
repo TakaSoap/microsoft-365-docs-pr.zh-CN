@@ -9,28 +9,28 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: edec6726ef2db0f0efffe131886a653cd164cf6f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b235fcb0de470f23afd75d8abd91d07451d040bd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162175"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174119"
 ---
 # <a name="what-is-test-base-for-microsoft-365"></a>什么是测试基础Microsoft 365？
 
 测试基础Microsoft 365 (测试) 是 Microsoft 基于安全 Azure 环境的验证服务。
 借助测试库，软件供应商 (SV) 和系统集成商 (SIS) 可以针对预发布的 Windows 安全和功能版本加快其应用程序的验证。 这是 SV 合作伙伴与 Microsoft 之间高度参与的协作，支持联合测试、验证和修正。
 
-测试库提供了一个在 Azure 上构建和维护安全验证服务的机会，客户和合作伙伴可以在该服务中根据我们预发布的安全更新对应用程序工作负载进行阶段和测试。
+测试基础提供了一个在 Azure 上构建和维护安全验证服务的机会，客户和合作伙伴可以在该服务中根据我们预发布的安全更新对应用程序工作负载进行阶段和测试。
 
-借助测试基础，SV 可以更深入了解可能妨碍其应用程序 (s) 在 Microsoft 将更新发布给市场之前，其应用程序) 在其新操作系统版本上运行最佳状态的潜在问题。
+借助测试基础，SV 可以更深入了解潜在的问题，这些问题可能会妨碍其应用程序 () 在 Microsoft 向市场发布更新之前，在其新操作系统版本上实现最佳性能。
 
-这项新服务将帮助 SV 简化测试工作并提高效率。 Enterprise在协作环境中一起从 SV 和 Microsoft 测试中获益，并更加放心地确保他们的应用程序能够正常工作。
+这项新服务将帮助 SV 简化测试工作并提高效率。 Enterprise在协作环境中一起从 SV 和 Microsoft 测试中获益，并更加相信他们的应用程序将如期工作。
 
 **优势 测试基础提供企业及其 SV 合作伙伴包括**：
 
@@ -65,4 +65,4 @@ ms.locfileid: "59162175"
 
 按照链接开始
 > [!div class="nextstepaction"]
-> [后续步骤](createaccount.md)
+> [下一步](createaccount.md)

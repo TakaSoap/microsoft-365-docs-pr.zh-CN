@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -19,12 +19,12 @@ description: 了解如何从一个审阅集选择文档，并单独在另一个�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 830f107a3935db23f771e2691fe6e83a5d8d2eff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4f230c5a9a4a202fc417ad4e16ca5bee5f7e433b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197017"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171023"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>从另一审阅集将数据添加到审阅集
 
@@ -44,7 +44,7 @@ ms.locfileid: "59197017"
 
 ## <a name="step-2-specify-options-for-adding-to-another-review-set"></a>步骤 2：指定用于添加到另一审阅集的选项
 
-在" **添加到其他审阅集选项** "飞出页中，选择要将项目添加到的审阅集。 选择是添加"**所有搜索结果"还是**"**所选项目"。**  其他信息提供了一些选项，用于包含项目的所有元数据，以及是否在将文档添加到新审阅集时从源审阅集选中) 标签"复选框来包括标记 (。  
+在" **添加到其他审阅集选项** "飞出页中，选择要将项目添加到的审阅集。 选择是添加"**所有搜索结果"还是**"**所选项目"。**  其他信息提供了一些选项，用于包含项目的所有元数据，以及是否包含标记 (，在将文档添加到新审阅集时，从源审阅集选中"标签"复选框) 。  
 
 ![用于将数据添加到另一审阅集的选项。](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
 

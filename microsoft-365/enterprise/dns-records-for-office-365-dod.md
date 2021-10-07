@@ -7,7 +7,7 @@ ms.date: 05/19/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -20,16 +20,16 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：DoD Office 365 DNS 记录
 hideEdit: true
-ms.openlocfilehash: 656fb5aff3365dfb5f975f7d3ad1c222b36e1e56
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0e8fa63ec2a89f2bd807f661a43d20e6546c6621
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171003"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173399"
 ---
 # <a name="dns-records-for-office-365-dod"></a>Office 365 DoD DNS 记录
 
-*本文适用于 doD Office 365 DoD Microsoft 365 DoD*
+*本文适用于 doD Office 365 doD Microsoft 365 DoD*
 
 作为加入 DoD Office 365的一部分，您需要将 SMTP 和 SIP 域添加到联机服务租户。  你将使用 Azure AD PowerShell 中的 New-MsolDomain cmdlet 完成此操作，或使用 [Azure](https://portal.azure.us) 政府门户启动添加域和证明所有权的过程。
 
@@ -45,7 +45,7 @@ ms.locfileid: "59171003"
 
 ### <a name="exchange-autodiscover-record"></a>Exchange自动发现记录
 
-如果在本地Exchange Server，我们建议在迁移到 Exchange Online 时保留现有记录，并完成迁移后更新该记录。
+如果在本地Exchange Server，建议在迁移到 Exchange Online 时保留现有记录，完成迁移后更新该记录。
 
 ### <a name="exchange-online-mx-record"></a>Exchange OnlineMX 记录
 

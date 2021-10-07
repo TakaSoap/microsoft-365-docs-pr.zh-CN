@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解隐私管理的全局设置选项。
-ms.openlocfilehash: bd67dc80ab7dec2132bfffe190f64692f69076ed
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: e7bcbdc3054b69e320ce35d1df5e1e52501f5736
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401046"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175091"
 ---
 # <a name="manage-privacy-management-settings-preview"></a>管理隐私管理设置 (预览) 
 
-隐私管理的全局设置选项位于主页右上角的齿轮图标下。 这些选项允许你设置高级首选项和自定义关键属性。 此页面概述了主要类别设置类别。
+隐私管理的全局设置选项位于主页右上角的齿轮图标下。 这些选项允许你设置高级首选项和自定义关键属性。 此页面概述了主要类别设置概述。
 
 ## <a name="anonymization"></a>匿名化
 

@@ -8,7 +8,7 @@ ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6ed752f9514f1d2c8cadeb7cbbd1d7b9311b1b5f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7b1c0501bb044129c4fa626428dfc616ea8414e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200950"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174371"
 ---
 # <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的自定义或第三方报告Office 365
 
@@ -40,9 +40,9 @@ ms.locfileid: "59200950"
 
 |资源|说明|
 |:---|:---|
-|[Office 365 管理 API 概述](/office/office-365-management-api/office-365-management-apis-overview)|管理Office 365 API 提供了有关用户、管理员、系统和策略操作以及活动日志中各种Microsoft 365 Azure Active Directory事件的信息。|
+|[Office 365 管理 API 概述](/office/office-365-management-api/office-365-management-apis-overview)|管理Office 365 API 提供了有关用户、管理员、系统和策略操作以及活动日志中各种用户Microsoft 365 Azure Active Directory事件的信息。|
 |[Office 365 管理 API 入门](/office/office-365-management-api/get-started-with-office-365-management-apis)|应用程序Office 365 API 使用 Azure AD 为应用程序提供身份验证服务，以访问Microsoft 365数据。 请按照本文中的步骤进行设置。|
-|[Office 365 管理活动 API 参考](/office/office-365-management-api/office-365-management-activity-api-reference)|可以使用管理活动 API Office 365 Azure AD 活动日志中检索有关用户、管理员、系统和策略操作Microsoft 365事件的信息。 阅读本文可了解有关此工作原理的更多信息。|
+|[Office 365 管理活动 API 参考](/office/office-365-management-api/office-365-management-activity-api-reference)|可以使用 Office 365 管理活动 API 从 Microsoft 365 和 Azure AD 活动日志中检索有关用户、管理员、系统和策略操作和事件的信息。 阅读本文可了解有关此工作原理的更多信息。|
 |[Office 365 管理活动 API 架构](/office/office-365-management-api/office-365-management-activity-api-schema)|大致了解通用架构和[](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) [Defender for Office 365 威胁](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)调查和响应架构，以了解通过 Office 365 管理活动 API 提供的特定数据类型。|
 |
 

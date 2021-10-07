@@ -9,22 +9,22 @@ ms.date: 04/26/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 8831293d1b17649ae387aab9ab99063ba31bef15
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2801840e0329233ad79abdae607b81094db5e282
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170992"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173303"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 和 Office 365 部署实验室工具包
 
-Windows 10和 Office 365 部署实验室工具包旨在帮助您规划、测试和验证运行 Windows 10 企业版 和 Microsoft 365 企业应用版 的桌面的部署Microsoft 365 企业应用版。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、桌面分析、Office自定义工具、OneDrive、Windows Autopilot 等。
+Windows 10和 Office 365 部署实验室工具包旨在帮助你规划、测试和验证运行 Windows 10 企业版 和 Microsoft 365 企业应用版 的桌面的部署Microsoft 365 企业应用版。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、桌面分析、Office自定义工具、OneDrive、Windows Autopilot 等。
 
 强烈建议准备升级到 Windows 8.1 的组织Windows 10。 如果当前使用的是 2019 Windows 10、Microsoft 365 企业应用版 (或 Office 365 专业增强版) ，Office适用。 作为隔离环境，生成的实验室非常适合探索部署工具更新和测试与部署相关的自动化。
 
@@ -64,7 +64,7 @@ Windows 10和 Office 365 部署实验室工具包旨在帮助您规划、测试�
 
 ### <a name="prepare-configuration"></a>准备配置
 
-- 优化Windows 10传递
+- 优化 Windows 10 更新交付
 - 使用Windows 10维护服务
 - 使用Windows 10服务Microsoft Intune
 - 使用Windows 10管理器维护服务
@@ -99,7 +99,7 @@ Windows 10和 Office 365 部署实验室工具包旨在帮助您规划、测试�
 
 - 准备、部署、优化
 
-## <a name="where-to-find-the-windows-10-and-office-365-deployment-lab-kit"></a>在哪里可以找到Windows 10 Office 365和部署实验室工具包
+## <a name="where-to-find-the-windows-10-and-office-365-deployment-lab-kit"></a>在哪里可以找到Windows 10 Office 365实验室工具包
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 

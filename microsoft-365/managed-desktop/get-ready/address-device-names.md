@@ -6,17 +6,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: cf885a3d0bba2cf3abe85bc54f5e761f286716b9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8642fd7c7c154359a31386fa5491932e19de7a43
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161991"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173135"
 ---
 # <a name="address-device-name-dependency"></a>地址设备名称依赖关系
 
@@ -37,4 +37,4 @@ Microsoft 托管桌面注册设备时应用标准化名称格式，如果以后�
 1. [准备应用](apps.md)。
 1. [准备映射的驱动器](mapped-drives.md)。
 1. [准备打印资源](printing.md)。
-1. 地址 [设备名称 (本文) 。
+1. Address [device names (this article) .

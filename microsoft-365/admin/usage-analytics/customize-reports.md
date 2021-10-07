@@ -1,5 +1,5 @@
 ---
-title: 在使用情况分析中Microsoft 365报告
+title: 自定义使用情况Microsoft 365中的报告
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -19,14 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: 了解如何在浏览器和浏览器中自定义Power BI Desktop。
-ms.openlocfilehash: 7fbd31af1dc59cb8161e981bb27d0bac132be755
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 32cf44c8d72160a583a841e26c2ad6934bd7eef2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773927"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175727"
 ---
-# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>在使用情况分析中Microsoft 365报告
+# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>自定义使用情况Microsoft 365中的报告
 
 Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了解用户如何采用和使用Microsoft 365。 这个仪表板只是与使用情况数据进行交互的起点。 可以自定义报表，从而获得更加个性化的见解。
 
@@ -38,11 +39,11 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 ### <a name="modify-an-existing-visual"></a>修改现有视觉对象
 
-此示例演示如何修改"激活/许可 **"** 报告中 **的"激活"选项卡** 。
+本示例演示如何修改"激活/许可 **"** 报告中 **的"激活"选项卡** 。
 
 1. 在" **激活/许可"** 报告中，选择" **激活"** 选项卡。
 
-2. 通过选择页面上的"编辑 **"** 按钮，进入编辑模式，方法为单击"更多页面"按钮 ![ Power BI。](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 按钮。
+2. 通过选择顶部的"编辑 **"** 按钮，通过"编辑"按钮进入编辑 ![ Power BI。](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 按钮。
 
     ![单击右上方导航栏上的"编辑报表"。](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
 
@@ -62,11 +63,11 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 1. 使用左侧 **导航导航** 转到"产品使用情况"报告，**然后选择"Yammer** 选项卡。
 
-2. 通过选择编辑模式中的 ![ "更多页面"按钮切换到Power BI。](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 和编辑。
+2. 通过选择"编辑模式"中的 ![ "更多页面"按钮切换到Power BI。](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 和编辑。
 
 3. 在页面底部，选择 ![页面中的"添加页面"Power BI。](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 创建新页面。
 
-4. 在右侧 **"可视化"** 区域中，选择顶部 (的堆积条形图，从左到左) 。
+4. 在右侧 **"可视化"** 区域中，选择最上面 (的堆积条形图，从左到左) 。
 
     ![选择"条形图"。](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
 
@@ -104,11 +105,11 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 ### <a name="use-the-reporting-apis"></a>使用报告 API
 
-首先，你可以从为这些报告提供Microsoft 365直接连接到 ODATA 报告 API。
+你可以从为这些报告提供Microsoft 365直接连接到 ODATA 报告 API。
 
 1. 转到" **获取数据**"\>" **其他**"\>" **ODATA 源**"\>" **连接**"。
 
-2. 在"URL"窗口中输入 <i></i> "https:// reports.office.com/pbi/v1.0/" \<tenantid\>
+2. 在"URL"窗口中，输入 <i></i> "https:// reports.office.com/pbi/v1.0/" \<tenantid\>
 
     **注意：** 报告 API 为预览版，在进入生产阶段之前可能会更改。
 
@@ -116,7 +117,7 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 3. 输入你的Microsoft 365 (或学校) 管理员凭据，以在Microsoft 365时进行身份验证。
 
-    有关[允许](usage-analytics.md#faq)谁访问"采用"模板应用报告Microsoft 365常见问题解答。
+    有关[允许](usage-analytics.md#faq)谁访问应用采用模板应用报告Microsoft 365常见问题解答。
 
 4. 授权连接后，将看到显示可连接到的数据集的"导航器"窗口。
 
@@ -126,9 +127,9 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
     ![报告 API 中提供的 ODATA 值。](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
 
-### <a name="use-the-microsoft-365-usage-analytics-template"></a>使用Microsoft 365使用情况分析模板
+### <a name="use-the-microsoft-365-usage-analytics-template"></a>使用Microsoft 365分析模板
 
-您还可以使用与Power BI使用情况分析报告相对应的Microsoft 365模板文件作为连接数据的起点。 使用 pbit 文件的优点是它已建立连接字符串。 也可以利用已创建的所有自定义度量值，在基础架构所返回数据的基础上进一步进行构建。
+您还可以使用与Power BI使用情况分析报告相对应的 Microsoft 365 模板文件作为连接数据的起点。 使用 pbit 文件的优点是它已建立连接字符串。 也可以利用已创建的所有自定义度量值，在基础架构所返回数据的基础上进一步进行构建。
 
 可以从 Microsoft Power BI下载模板[文件](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。 下载模板Power BI后，请按照以下步骤开始：
 

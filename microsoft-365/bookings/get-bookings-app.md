@@ -6,25 +6,25 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 01b79cb0-e206-4a3a-aaef-b10941770f87
 description: Bookings 移动应用尚未在全球可用。 本文列出了这些应用现在可用的区域设置。
-ms.openlocfilehash: 4c00d7559c4f2e7f0a20878fa40d03ebc5f79be4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3eb13338f933a650d723b749f2e3a1786f82e506
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196181"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172835"
 ---
 # <a name="get-the-microsoft-bookings-app-for-ios-and-android"></a>获取适用于 iOS 和 Android 的 Microsoft Bookings 应用
 
 Microsoft Bookings 作为 iOS 和 Android 移动应用提供。 Apple 支持的所有地区和国家/地区都提供适用于 iOS 的 Bookings 应用。 可以从 [iTunes 应用商店下载应用](https://apps.apple.com/app/microsoft-bookings/id1065657468)。 可以从美国和加拿大的 [Google Play 商店](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) 下载适用于 Android 的 Bookings 应用。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在开始使用之前，你需要在 Web 上设置 Bookings。
 
-1. 从应用启动器中，选择"所有应用"，查看Microsoft 365应用的字母列表。 从该搜索中，你可以搜索特定应用
+1. 从应用启动器中，选择"所有应用"以查看可供你Microsoft 365应用的字母列表。 从该搜索中，你可以搜索特定应用
 
    ![应用启动器的图像。](../media/bookings-all-apps-launcher.png)
 

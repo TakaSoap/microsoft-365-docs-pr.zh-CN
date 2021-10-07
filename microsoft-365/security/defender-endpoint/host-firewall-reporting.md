@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.topic: article
 author: dansimp
@@ -15,12 +15,12 @@ ms.author: dansimp
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8400ef9e910afa6683c30221342d1c9d0ed11012
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 6dc04eb51346b078218117d35f1b7a5b2d1c9268
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041621"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174731"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中托管防火墙报告
 
@@ -36,7 +36,7 @@ ms.locfileid: "60041621"
 
 - 必须运行 Windows 10 Server 2019 Windows 或 Windows Server 2022。
 - 若要将设备载入到 Microsoft Defender for Endpoint 服务，请参阅 [此处](onboard-configure.md)。
-- 若要Microsoft 365安全中心开始接收数据，必须为高级安全防火墙Windows Defender审核事件：
+- 若要Microsoft 365安全中心开始接收数据，必须为高级安全防火墙Windows Defender审核事件： 
   - [审核筛选平台数据包丢弃](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [审核筛选平台连接](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - 使用组策略对象编辑器、本地安全策略或策略命令启用这些事件auditpol.exe命令。 有关详细信息，请参阅 [此处](/windows/win32/fwp/auditing-and-logging)。
@@ -66,11 +66,11 @@ Ring0 Preview 期间支持以下方案。
 > [!div class="mx-imgBorder"]
 > !["主机防火墙报告"页。](\images\host-firewall-reporting-page.png)
 
-也可以访问这些报告，方式为，访问位于"防火墙阻止的入站连接 (底部的) 报告安全报告 \>  \> **设备**"部分。
+也可以访问这些报告，方式为访问"报告安全报告设备 ("部分) 位于"防火墙阻止的入站连接"卡 \>  \> 底部。 
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>从"连接被阻止的计算机"到设备
 
-卡片支持交互式对象。 可以通过单击设备名称（将在新选项卡中启动）来深入了解设备的活动，并直接进入"设备 https://securitycenter.microsoft.com **时间线** "选项卡。
+卡片支持交互式对象。 可以通过单击设备名称（将在新选项卡中启动）来深入了解设备的活动，并直接进入"设备时间线" https://securitycenter.microsoft.com 选项卡。 
 
 > [!div class="mx-imgBorder"]
 > ![连接被阻止的计算机。](\images\firewall-reporting-blocked-connection.png)

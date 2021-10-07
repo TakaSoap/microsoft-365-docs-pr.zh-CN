@@ -9,26 +9,26 @@ ms.date: ''
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 解决 Azure AzCopy 在加载非 Office 365 数据时的错误，以在 Advanced eDiscovery。
+description: 解决在加载非 Azure AzCopy 时Office 365错误修正错误Advanced eDiscovery。
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 87f4e62f05e29147213d70b28e1778ea9e3ea683
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 45f82482f92e740383eca774671f1abd55535675
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196861"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174971"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>AzCopy in Advanced eDiscovery
 
-在 Advanced eDiscovery 中加载非 Microsoft 365 数据或文档进行错误修正时，用户界面会提供 Azure AzCopy 命令，该命令包含参数，其中包含要上载的文件的存储位置以及文件将上载到的 Azure 存储位置的参数。 若要上载文档，请复制此命令，然后在本地计算机的命令提示符中运行它。  以下屏幕截图显示了 AzCopy 命令的示例：
+在 Advanced eDiscovery 中加载非 Microsoft 365 数据或文档进行错误修正时，用户界面会提供 Azure AzCopy 命令，该命令包含参数，其中包含要上载的文件的存储位置和文件将上载到的 Azure 存储位置的参数。 若要上载文档，请复制此命令，然后在本地计算机的命令提示符中运行它。  以下屏幕截图显示了 AzCopy 命令的示例：
 
 ![Upload非Microsoft 365文件。](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
@@ -44,7 +44,7 @@ ms.locfileid: "59196861"
 
 > 系统找不到指定的路径。
 
-如果本地计算机上未安装 AzCopy，可以在"使用[AzCopy v8.1](/previous-versions/azure/storage/storage-use-azcopy)传输数据"中Windows。 请务必将其安装在默认位置。
+如果本地计算机上未安装 AzCopy，可以在使用[AzCopy v8.1](/previous-versions/azure/storage/storage-use-azcopy)传输数据中Windows。 请务必将其安装在默认位置。
 
 如果安装了 AzCopy，但它安装在不同于默认位置的位置，您可以复制该命令，将其粘贴到文本文件，然后将路径更改为安装 AzCopy 的位置。 例如，如果 Azcopy 位于 中，您可以将命令的第一部分 `%ProgramFiles%` 从 更改为 `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy.exe` `%ProgramFiles%\Microsoft SDKs\Azure\AzCopy` 。 进行此更改后，从文本文件复制它，然后运行命令提示符。
 

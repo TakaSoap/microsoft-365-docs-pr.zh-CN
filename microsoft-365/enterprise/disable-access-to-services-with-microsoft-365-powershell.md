@@ -7,7 +7,7 @@ ms.date: 07/27/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,19 +19,19 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: 本文中，了解如何使用 PowerShell 为用户Microsoft 365访问服务。
-ms.openlocfilehash: 7caab5fc6bc4522f210d788d0293c4594997f13d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 本文将了解如何使用 PowerShell 为用户禁用对 Microsoft 365 服务的访问权限。
+ms.openlocfilehash: bce02c40bf6ca99d74b8747fb0c5eb5c0b485888
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162378"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173459"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>使用 PowerShell Microsoft 365访问服务
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-当Microsoft 365从许可计划分配许可证时，Microsoft 365该许可证会为用户提供所有服务。 但是，您可以控制Microsoft 365访问的服务。 例如，即使许可证允许访问 SharePoint Online 服务，也可以禁用对它的访问。 可以使用 PowerShell 为特定许可计划禁用对任意数目的服务的访问：
+当Microsoft 365从许可计划分配许可证时，Microsoft 365该许可证为用户提供了服务。 但是，您可以控制Microsoft 365访问的服务。 例如，即使许可证允许访问 SharePoint Online 服务，也可以禁用对它的访问。 可以使用 PowerShell 为特定许可计划禁用对任意数目的服务的访问：
 
 - 单个帐户。
 - 一组帐户。
@@ -64,15 +64,15 @@ PowerShell 脚本可自动执行本主题中描述的过程。 具体而言，�
     
 ### <a name="disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan"></a>为特定Microsoft 365计划禁用特定用户的特定服务
   
-若要为用户禁用一组Microsoft 365特定许可计划的服务，请执行以下步骤：
+若要为用户禁用Microsoft 365一组特定的许可计划服务，请执行以下步骤：
   
-#### <a name="step-1-identify-the-undesirable-services-in-the-licensing-plan-by-using-the-following-syntax"></a>步骤 1：使用下面的语法标识许可计划中不需要的服务：
+#### <a name="step-1-identify-the-undesired-services-in-the-licensing-plan-by-using-the-following-syntax"></a>步骤 1：使用下面的语法标识许可计划中不经考虑的服务：
     
 ```powershell
-$LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
+$LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesiredService1>", "<UndesiredService2>"...
 ```
 
-下面的示例创建一个 **LicenseOptions** 对象，该对象禁用名为 Office SharePoint E3 (Office 365 企业版 的许可计划中 `litwareinc:ENTERPRISEPACK`) 。
+以下示例创建一个 **LicenseOptions** 对象，该对象在名为 Office SharePoint E3) 的许可计划中禁用 Office 和 `litwareinc:ENTERPRISEPACK` (Office 365 企业版 Online) 。
     
 ```powershell
 $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"

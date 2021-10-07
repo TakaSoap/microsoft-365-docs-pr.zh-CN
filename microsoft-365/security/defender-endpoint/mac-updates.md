@@ -2,15 +2,13 @@
 title: 在 Mac 上部署 Microsoft Defender for Endpoint 更新
 description: 控制企业环境中 Mac 上的 Microsoft Defender for Endpoint 的更新。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 更新， 部署
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ae8909f2533394e347a1885f2fb1354f6ce4cfae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2abd270aeee07e84cf31711494d68ca15885515
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196597"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174671"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -69,7 +67,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 > [!IMPORTANT]
 > 在 Microsoft AutoUpdate 版本 4.29 之前，频道具有不同的名称：
 >
-> - `Beta` 已 (`InsiderFast` Insider Fast) 
+> - `Beta` 被命名为 `InsiderFast` (Insider Fast) 
 > - `Preview` 被命名为 `External` (Insider Slow) 
 > - `Current` 已命名 `Production`
 
@@ -141,7 +139,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
 |**Key**|EnableCheckForUpdatesButton|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|为 (默认值)  <p> False|
 |||
 
@@ -157,7 +155,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
 |**Key**|DisableInsiderCheckbox|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|False (默认值)  <p> True|
 |||
 
@@ -173,7 +171,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
 |**Key**|SendAllTelemetryEnabled|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|为 (默认值)  <p> False|
 |||
 

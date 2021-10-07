@@ -8,7 +8,7 @@ ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6cc38a571fb987273c382596b60cc613bafc9a1b
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 9162c0c6fa3afd74a00b9e0ee75b3d0a3fbd2a6d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491429"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174791"
 ---
 # <a name="enable-controlled-folder-access"></a>启用受控文件夹访问
 
@@ -57,7 +57,7 @@ ms.locfileid: "59491429"
 
 1. 在任务栏Windows 安全中心防护图标，打开应用。 还可以搜索 Defender 的"开始" **菜单**。
 
-2. 选择病毒& **威胁** 防护磁贴 (或左侧菜单栏上的防护图标) 选择勒索 **软件保护**。
+2. 选择病毒& **威胁** 防护磁贴 (或左侧菜单栏上的防护图标) 然后选择勒索 **软件保护**。
 
 3. 将受控文件夹访问权限 **的开关设置为****开**。
 
@@ -68,7 +68,7 @@ ms.locfileid: "59491429"
 
 ## <a name="endpoint-manager"></a>Endpoint Manager
 
-1. 登录到 [安全Endpoint Manager并](https://endpoint.microsoft.com)打开 **终结点安全**。
+1. 登录到 [安全Endpoint Manager并](https://endpoint.microsoft.com)打开 **Endpoint Security**。
 
 2. 转到攻击 **面减少** \> **策略**。
 
@@ -93,11 +93,11 @@ ms.locfileid: "59491429"
 
 ## <a name="mobile-device-management-mdm"></a>移动设备管理 (MDM)
 
-使用 [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) 配置服务提供程序 (CSP) 以允许应用对受保护的文件夹进行更改。
+使用 [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) 配置服务提供程序 (CSP) 允许应用对受保护的文件夹进行更改。
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager， go to **Assets and Compliance** \> **Endpoint Protection** Windows Defender Exploit \> **Guard**.
+1. In Microsoft Endpoint Configuration Manager， go to **Assets and Compliance** \> **Endpoint Protection** Windows Defender \> **Exploit Guard**.
 
 2. 选择 **"主页** \> **创建攻击防护策略"。**
 
@@ -123,8 +123,8 @@ ms.locfileid: "59491429"
 4. 双击配置受控文件夹 **访问权限** 设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
    - **启用** - 不允许恶意和可疑应用对受保护文件夹中的文件进行更改。 将在事件日志中提供Windows通知。
    - **禁用 (默认)** - 受控文件夹访问权限功能将不起作用。 所有应用都可以对受保护的文件夹中的文件进行更改。
-   - **审核模式** - 如果恶意或可疑应用尝试更改受保护文件夹中的文件，将允许更改。 但是，它将记录在Windows事件日志中，您可以在其中评估对组织的影响。
-   - **仅阻止磁盘修改**- 不受信任的应用尝试写入磁盘扇区将记录在Windows日志中。 可以在 Microsoft 应用程序和服务日志中找到这些日志 \> \> \> Windows Windows Defender ID \> \> 1123。
+   - **审核模式** - 如果恶意或可疑应用尝试更改受保护文件夹中的文件，将允许更改。 但是，它将被记录在Windows事件日志中，您可以在其中评估对组织的影响。
+   - **仅阻止磁盘修改**- 不受信任的应用尝试写入磁盘扇区将记录在Windows日志中。 可以在 Microsoft Windows  Windows Defender \> 操作 ID \> \> \> \> 1123 的应用程序和服务日志中找到这些日志。
    - **仅** 审核磁盘修改 - 仅在应用程序和服务日志Microsoft Windows Windows Defender Operational ID \>  \>  \>  \>  \> **1124**) 下的 Windows (事件日志中记录写入受保护磁盘扇区的尝试。 不会记录修改或删除受保护文件夹中的文件的尝试。
 
       ![在下拉列表中选择的组策略选项启用和审核模式的屏幕截图。](../../media/cfa-gp-enable.png)

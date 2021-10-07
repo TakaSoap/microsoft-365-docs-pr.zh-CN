@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,31 +17,31 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何从演示文稿或外部Advanced eDiscovery审阅集选择和导出内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5021428dc1ee82b5fb0aeed58d4e055710dec2ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dba9708bfda6d1b98a2861615e56518067822100
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171382"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175163"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>从审阅集导出文档Advanced eDiscovery
 
 导出允许用户在从 Advanced eDiscovery 审阅集导出文档时自定义下载包中Advanced eDiscovery。
 
-从审阅集导出文档：
+要从审阅集中导出文档，请执行以下操作：
 
 1. In the Microsoft 365 合规中心， open the Advanced eDiscovery case， select the **Review sets** tab， and then select the review set that you want to export.
 
 2. 在审阅集内，单击"**操作导出**  >  **"。**
 
-   "导出"工具显示包含用于配置导出的设置的飞出页。 默认情况下会选择某些选项，但可以更改这些选项。 有关可以配置的导出选项的说明，请参阅以下部分。
+   导出工具显示浮出控件页，其中包含用于配置导出的设置。 默认情况下会选择某些选项，但可以更改这些选项。 有关可以配置的导出选项的说明，请参阅以下部分。
 
    ![用于从审阅集导出项目的配置选项。](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-3. 配置导出后，单击" **导出** "开始导出过程。 根据在"输出选项"部分选择的选项，可以通过直接下载或组织的"导出Azure 存储文件。
+3. 配置导出后，单击" **导出** "开始导出过程。 根据在"输出选项"部分选择的选项，可以通过直接下载或组织的 Azure 存储 帐户访问导出文件。
 
 > [!NOTE]
-> 导出作业在案例的生命周期内保留。 但是，您必须在导出作业完成后的 30 天内从导出作业下载内容。
+> 导出作业在案例的生存期内保留。 但是，必须在导出作业完成后的 30 天内从导出作业下载内容。
 
 ## <a name="export-options"></a>导出选项
 
@@ -67,7 +67,7 @@ ms.locfileid: "59171382"
   
   - 压缩目录结构：导出文件并包含在下载中。
   
-  - 导出到您的 Azure 存储 帐户的压缩目录结构：文件将导出到您组织的 Azure 存储 帐户。 对于此选项，你必须提供要将文件导出到的 Azure 存储 帐户中的容器的 URL。 此外，还必须为帐户提供共享访问签名 (SAS) 令牌Azure 存储令牌。 有关详细信息，请参阅将审阅集[内的文档导出到Azure 存储帐户。](download-export-jobs.md)
+  - 导出到您的 Azure 存储 帐户的压缩目录结构：文件将导出到组织的 Azure 存储 帐户。 对于此选项，你必须提供要将文件导出到的 Azure 存储 帐户中的容器的 URL。 此外，还必须为帐户的 SAS () 共享Azure 存储签名。 有关详细信息，请参阅将审阅集[内的文档导出到Azure 存储帐户。](download-export-jobs.md)
 
 - **Include**
   
@@ -75,7 +75,7 @@ ms.locfileid: "59171382"
   
   - 文本文件：此选项包括导出中的本机文件的提取文本版本。
   
-  - 将修订的本机替换为转换后的 PDF：如果在审阅过程中生成了修订的 PDF 文件，则这些文件可供导出。 可以选择仅导出已修订的本机文件 (不选择此选项) 也可以选择此选项以导出包含实际修订的 PDF 文件。
+  - 将修订的本机替换为转换后的 PDF：如果在审阅过程中生成了修订的 PDF 文件，则这些文件可供导出。 可以选择不选择此选项 (导出已修订的本机文件) 也可以选择此选项以导出包含实际修订的 PDF 文件。
 
   - 对话 PDF 而不是单个聊天消息：选中此复选框以导出 PDF 文件中聊天对话。 同一对话的所有聊天消息都在同一 PDF 文件中导出。 如果保留此复选框为未选中状态，则聊天对话中每个唯一的消息都导出为独立项目。 以与邮箱中相同的格式导出文件。 对于特定对话，您将收到多个 .msg 文件。
 
@@ -85,7 +85,7 @@ ms.locfileid: "59171382"
 
 如果选择此导出选项，则导出的内容按以下结构进行组织：
 
-- Summary.csv：包括从审阅集导出的内容摘要
+- Summary.csv：包含从审阅集导出的内容摘要
 
 - 根文件夹：此文件夹的名称为 [Export Name] x，z.zip每个 ZIP 文件分区重复此文件夹。
   
@@ -95,15 +95,15 @@ ms.locfileid: "59171382"
   
   - Exchange：此文件夹包含 PST Exchange中存储的所有内容。 此选项不能包含修订的 PDF 文件。 如果在审阅集内选择了附件，将导出附加附件的父电子邮件。
   
-  - SharePoint：此文件夹包含本地SharePoint的所有本机内容。 此选项不能包含修订的 PDF 文件。
+  - SharePoint：此文件夹包含本地SharePoint格式的所有本机内容。 此选项不能包含修订的 PDF 文件。
 
 ### <a name="condensed-directory-structure"></a>压缩目录结构
 
-- Summary.csv：包括从审阅集导出的内容摘要
+- Summary.csv：包含从审阅集导出的内容摘要
 
 - 根文件夹：此文件夹的名称为 [Export Name] x，z.zip每个 ZIP 文件分区重复此文件夹。
   
-  - Export_load_file_xz.csv：元数据文件，还包括存储在 ZIP 文件中每个文件的位置。
+  - Export_load_file_xz.csv：元数据文件，还包括 ZIP 文件中存储的每个文件的位置。
   
   - 警告和错误 x z.csv：此文件包含有关尝试从审阅集导出时遇到的错误的信息。
 

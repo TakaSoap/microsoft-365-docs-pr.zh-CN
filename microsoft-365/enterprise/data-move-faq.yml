@@ -7,20 +7,20 @@ metadata:
   audience: ITPro
   ms.topic: article
   ms.service: o365-administration
-  localization_priority: Normal
+  ms.localizationpriority: medium
   search.appverid:
   - MET150
   ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
   f1.keywords:
   - NOCSH
-  description: 查找常见问题解答 (常见问题解答) 将核心数据移动到新的数据中心Office 365地理位置。
+  description: 查找有关将核心数据 (数据中心) 的常见问题解答Office 365常见问题解答。
   ms.custom: seo-marvel-mar2020
-  ms.openlocfilehash: 12c486e94b6039b2ee9914f83d51dec21b32d422
-  ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+  ms.openlocfilehash: 3d8d11449a1375e9137cf1319b0d9e3cc67882af
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/24/2021
-  ms.locfileid: "59498288"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60171971"
 title: 数据移动常见问题解答
 summary: 下面是有关将静止的核心客户数据移动到新数据中心地理位置的一般问题的答案。
 sections:
@@ -29,10 +29,10 @@ sections:
   - question: >
       哪些客户有资格请求移动？
     answer: >
-      选择Microsoft 365数据中心地理位置的国家/地区的现有商业客户将能够请求移动。 该计划 Microsoft 365仅适用于分配有符合条件的国家/地区代码的租户，这些租户将符合条件的工作负载的其余核心客户数据迁移到相应的Microsoft 365地理位置。 请参阅如何请求 [数据移动页面](request-your-data-move.md) 以确认国家/地区资格。 
+      选择Microsoft 365数据中心地理位置的国家/地区的现有商业客户将能够请求移动。 此计划仅适用于具有分配给 Microsoft 365 租户的符合条件的国家/地区代码的租户，用于将符合条件的工作负载的其余核心客户数据迁移到相应的Microsoft 365地理位置。 请参阅如何请求 [数据移动页面](request-your-data-move.md) 以确认国家/地区资格。 
   - question: >
       如何定义核心客户数据？
-    answer: "核心客户数据是一个术语，指在\"客户术语\"中定义的一Microsoft Online Services [子集](https://aka.ms/ost)：\n- Exchange Online邮箱 (电子邮件正文、日历条目以及电子邮件附件内容) \n- SharePoint联机网站内容和存储在该网站中的文件\n- 上载到OneDrive for Business\n"
+    answer: "核心客户数据是一个术语，它引用在\"客户术语\"中定义的Microsoft Online Services [子集](https://aka.ms/ost)：\n- Exchange Online邮箱 (电子邮件正文、日历条目以及电子邮件附件内容) \n- SharePoint联机网站内容和存储在该网站中的文件\n- 上载到OneDrive for Business\n"
   - question: >
       迁移的范围Teams是什么？
     answer: >
@@ -43,11 +43,11 @@ sections:
       - Teams聊天中使用的图像。
 
 
-      Teams文件存储在 SharePoint Online 中，Teams聊天文件存储在 OneDrive for Business。 语音邮件、日历和联系人存储在Exchange Online。 在许多情况下，Exchange Online、SharePoint Online 和 OneDrive for Business 已由本地数据中心地理位置的客户使用，并且也是符合条件的客户国家/地区 Microsoft 365 迁移计划的一部分。
+      Teams存储在 SharePoint Online 中，Teams聊天文件存储在 OneDrive for Business。 语音邮件、日历和联系人存储在Exchange Online。 在许多情况下，Exchange Online、SharePoint Online 和 OneDrive for Business 已由本地数据中心地理位置的客户使用，并且也是符合条件的客户国家/地区 Microsoft 365 迁移计划的一部分。
   - question: >
       我的迁移在什么时间点完成，以便我的租户的核心客户数据存储在我的新地理位置中？
     answer: >
-      由于 Exchange Online 和 SharePoint Online/OneDrive for Business 之间的共享依赖关系，在迁移这两个服务之前，任何迁移均无法视为已完成。 Exchange Online和 SharePoint Online/OneDrive for Business 通常分别在单独的时间进行迁移。 客户租户管理员在每个服务迁移完成时在消息中心收到确认，并且随时可以在管理中心查看数据位置卡，以确认每个服务的其余位置的核心客户数据。
+      由于 Exchange Online 和 SharePoint Online/OneDrive for Business 之间存在共享依赖关系，在迁移这两个服务之前，任何迁移均无法视为已完成。 Exchange Online online/SharePoint/OneDrive for Business通常在单独的时间单独迁移。 客户租户管理员在每个服务迁移完成时在消息中心收到确认，并且随时可以在管理中心查看数据位置卡，以确认每个服务的其余位置的核心客户数据。
   - question: >
       如何确保在移动期间我的客户数据是安全的，并且不会经历停机时间？
     answer: >
@@ -58,11 +58,11 @@ sections:
   - question: >
       将不同的服务位于不同的地理位置会有什么影响？
     answer: >
-      对于某些Microsoft 365客户以及进行移动过程的客户，某些服务可能位于不同的地理位置。 我们的服务相互独立运行，如果是这样，则不会影响用户体验。但是，出于数据驻留目的，在将 Exchange Online 和 SharePoint Online/OneDrive for Business 迁移到同一数据中心地理位置之前，租户迁移不能视为已完成。
+      对于某些Microsoft 365客户以及进行移动过程的客户，某些服务可能位于不同的地理位置。 我们的服务相互独立运行，如果是这样，则不会影响用户体验。但是，出于数据驻留目的，在将 Exchange Online 和 SharePoint Online/OneDrive for Business 迁移到同一数据中心地理位置之前，租户迁移不能被视为已完成。
   - question: >
       我的核心客户数据位于何处？
     answer: >
-      客户租户管理员可以随时在管理中心内查看数据位置卡，以确认每个服务（特别是针对其租户）的其余位置的核心客户数据。我们还在 Microsoft 365 交互式数据中心映射上发布了数据中心地理位置、数据中心和 [Office 365](https://office.com/datamaps)客户数据的位置，作为新租户的其余位置的当前默认核心客户数据的参考。 可以通过"组织配置文件"下的"数据位置"部分验证客户数据在Microsoft 365 管理中心。  
+      客户租户管理员可以随时在管理中心内查看数据位置卡，以确认每项服务（特别是针对其租户）的其余位置的核心客户数据。我们还在 Microsoft 365 交互式数据中心映射上发布了数据中心地理位置、数据中心和 [Office 365](https://office.com/datamaps)客户数据的位置，作为新租户的其余位置的当前默认核心客户数据的参考。 可以通过"组织配置文件"下的"数据位置"部分验证客户数据在Microsoft 365 管理中心。  
   - question: >
       我何时可以请求移动？
     answer: >
@@ -70,7 +70,7 @@ sections:
   - question: >
       如何请求移动？
     answer: >
-      符合条件的客户将看到其主页[中的Microsoft 365 管理中心。](https://admin.microsoft.com/) 有关如何 [请求移动的说明，](request-your-data-move.md) 请参阅如何请求数据移动。
+      符合条件的客户将在他们的页面中[看到Microsoft 365 管理中心。](https://admin.microsoft.com/) 有关如何 [请求移动的说明，](request-your-data-move.md) 请参阅如何请求数据移动。
   - question: >
       在请求移动后，我能否更改选择？
     answer: >
@@ -106,7 +106,7 @@ sections:
   - question: >
       我是一Microsoft 365数据中心地理位置的客户，但在注册时，我选择了不同的国家/地区。 如何移动到新的数据中心地理位置？
     answer: >
-      无法更改与租户关联的注册国家/地区。 相反，你需要使用新订阅Microsoft 365租户，并手动将用户和数据移动到新租户。
+      无法更改与租户关联的注册国家/地区。 相反，你需要使用新订阅Microsoft 365新租户，并手动将用户和数据移动到新租户。
   - question: >
       如果在迁移期间我们正将电子邮件数据迁移到 Microsoft 365，Exchange Online会发生什么？
     answer: >
@@ -127,9 +127,9 @@ sections:
     answer: >
       否，这是不可能的。 已移动到新地理位置数据中心的客户无法移回。 作为任何地理位置的客户，你将体验与之前相同的服务质量、性能和安全控制。 [Microsoft 365多](https://aka.ms/multi-geo)地理位置作为加载项提供给一些客户，允许单个租户创建多个附属地理位置，并借助数据驻留承诺将用户数据移动到这些地理位置。
   - question: >
-      Microsoft 365新数据中心托管的租户将可供外部用户使用吗？
+      Microsoft 365新数据中心托管的租户可供外部用户使用吗？
     answer: >
-      是。 Microsoft 维护了一个大型全球网络，其公共 Internet 连接位于全球 35 个国家/地区中的 130 多个位置，与超过 2，700 个 Internet 服务提供商 (ISP) 。 用户将能够从 Internet 上任何位置访问数据中心。
+      是。 Microsoft 维护一个大型全球网络，其公共 Internet 连接位于全球 35 个国家/地区中的 130 多个位置，与超过 2，700 个 Internet 服务提供商 (ISP) 。 用户将能够从 Internet 上任何位置访问数据中心。
   - question: >
       我的租户已配置多地理位置加载项。 我能否仍在我的租户中注册移动Microsoft 365移动计划？更改我的默认地理位置，将附属区域外的任何用户移动到新的默认地理位置？
     answer: >

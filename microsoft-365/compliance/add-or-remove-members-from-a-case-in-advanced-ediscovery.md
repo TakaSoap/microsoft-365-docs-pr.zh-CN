@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何在管理案例时添加或删除可以访问Advanced eDiscovery的成员。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d4fbd3700a74da8975f46174405c73511d16af3b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3571adf6c9bbba791ba5d76f4eba5428dc9f453c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197009"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175463"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>向事例添加成员或从事例中删除成员
 
-可添加或删除成员，管理可以访问此案例的人。 但是，在成员可以访问 Advanced eDiscovery 案例 (并执行) 情况下的任务之前，您必须将用户添加到安全与合规中心的"权限"页上的"电子数据展示管理员"角色组中。  有关详细信息，请参阅[分配电子数据展示权限](./assign-ediscovery-permissions.md)。
+可添加或删除成员，管理可以访问此案例的人。 但是，在成员可以访问 Advanced eDiscovery case (并执行) 情况下的任务之前，您必须将用户添加到安全与合规中心的"权限"页上的"电子数据展示管理员"角色组。  有关详细信息，请参阅[分配电子数据展示权限](./assign-ediscovery-permissions.md)。
 
 1. 在 **高级电子数据** 页面上，转到你想要将成员添加到的大小写。
 

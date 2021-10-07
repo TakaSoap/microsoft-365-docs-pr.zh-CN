@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: 在Outlook OneDrive计划Yammer备份SharePoint、Yammer和Microsoft 365内容。
+description: 在Outlook OneDrive计划Yammer备份SharePoint、Microsoft 365内容。
 ms.date: 03/17/2021
-ms.openlocfilehash: 86953f3235d8725ecdd6b5294611c0e5a378b17d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c65c0ce533739f5d39314dc575d407d8d1af9ca8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200617"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171047"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>在切换业务Microsoft 365之前备份数据
 
@@ -48,11 +48,11 @@ ms.locfileid: "59200617"
   
 ## <a name="save-yammer-information"></a>保存Yammer信息
 
-管理员可以将所有邮件、笔记、文件、主题、用户和组导出到.zip文件中。 有关详细信息，请参阅从数据库[导出Yammer Enterprise。](/yammer/manage-security-and-compliance/export-yammer-enterprise-data) 开发人员可以使用 Yammer [API](https://go.microsoft.com/fwlink/p/?linkid=842495)来这样做。
+管理员可以将所有邮件、笔记、文件、主题、用户和组导出到.zip文件中。 有关详细信息，请参阅从数据库[导出Yammer Enterprise。](/yammer/manage-security-and-compliance/export-yammer-enterprise-data) 开发人员可以使用[Yammer API](https://go.microsoft.com/fwlink/p/?linkid=842495)来这样做。
   
 ## <a name="how-to-save-sharepoint-information"></a>如何保存SharePoint信息
 
-如果用户从具有 SharePoint Online 的订阅切换到没有订阅的订阅，SharePoint磁贴将不再显示在其"Microsoft 365"菜单中。 
+如果用户从具有 SharePoint Online 的订阅切换到没有订阅的订阅，SharePoint 磁贴将不再显示在其"Microsoft 365"菜单中。
   
 但是，只要新订阅与切换自的订阅位于同一个组织中，用户仍可以访问SharePoint网站。 他们可以使用指向工作组网站的直接 URL 查看和更新笔记本、文档、任务和日历。
   
@@ -67,6 +67,6 @@ https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 
 其中  _\<orgDomain\>_ 是组织的 URL。
   
-例如，如果组织的域为 contoso.onmicrosoft.com，则指向团队网站的直接 URL 为 `https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx` 。
+例如，如果组织的域为 contoso.onmicrosoft.com，则团队网站的直接 URL 为 `https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx` 。
   
-当然，用户还SharePoint将联机文档从 SharePoint 网站下载到本地计算机或其他位置。
+当然，用户还可以SharePoint网站将 SharePoint Online 文档下载到本地计算机或其他位置。

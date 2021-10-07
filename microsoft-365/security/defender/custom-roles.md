@@ -1,7 +1,7 @@
 ---
 title: 基于角色的访问控制的自定义角色
 description: 了解如何在自定义门户中管理Microsoft 365 Defender角色
-keywords: access， 权限， Microsoft 365 Defender， M365， 安全， MCAS， 云应用安全， Microsoft Defender for Endpoint， 作用域， 作用域， RBAC， 基于角色的访问， 基于自定义角色的访问， 基于角色的身份验证， MDO 中的 RBAC， 角色， 角色组， 权限继承， 精细的权限
+keywords: access， 权限， Microsoft 365 Defender， M365， 安全， MCAS， 云应用安全， Microsoft Defender for Endpoint， 作用域， RBAC， 基于角色的访问， 基于角色的自定义访问， 基于角色的身份验证， MDO 中的 RBAC， 角色， 角色组， 权限继承， 精细权限
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 699d8c1d8ea7ac6928c96b6c98226ab82e0725fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 95fa7c4821f28775c78175aa18a413b8cd1928e5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196525"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174407"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>基于角色的访问控制中的自定义角色Microsoft 365 Defender
 
@@ -41,13 +41,13 @@ ms.locfileid: "59196525"
 - **全局Azure Active Directory (AD) 角色**
 - **自定义角色**
 
-在 AAD Microsoft 365 Defender中，可以使用全局角色集中管理Azure Active Directory ([角色) ](m365d-permissions.md)
+可以通过Microsoft 365 Defender AAD 角色中的全局角色来共同[Azure Active Directory (对) ](m365d-permissions.md)
 
-如果您需要更大的灵活性和对特定产品数据的访问的控制，Microsoft 365 Defender每个安全门户通过创建自定义角色管理访问。  
+如果您需要更大的灵活性和对特定产品数据的访问权限的控制，Microsoft 365 Defender每个安全门户创建自定义角色，也可以管理对特定产品数据的访问权限。  
 
-例如，通过 Microsoft Defender for Endpoint 创建的自定义角色将允许访问相关的产品数据，包括 Microsoft 365 Defender 数据。 同样，通过 Microsoft Defender for Office 365创建的自定义角色将允许访问相关产品数据，包括 & 门户中的电子邮件Microsoft 365 Defender数据。
+例如，通过 Microsoft Defender for Endpoint 创建的自定义角色将允许访问相关产品数据，包括 Microsoft 365 Defender 数据。 同样，通过 Microsoft Defender for Office 365创建的自定义角色将允许访问相关产品数据，包括 & 门户中的电子邮件Microsoft 365 Defender协作数据。
 
-具有现有自定义角色的用户可根据现有Microsoft 365 Defender访问网站门户中的数据，无需其他配置。
+具有现有自定义角色的用户可根据现有工作负载权限Microsoft 365 Defender门户中的数据，无需其他配置。
 
 ## <a name="create-and-manage-custom-roles"></a>创建和管理自定义角色
 可以通过以下每个安全门户创建并单独管理自定义角色和权限： 
@@ -59,7 +59,7 @@ ms.locfileid: "59196525"
 通过单个门户创建的每个自定义角色都允许访问相关产品门户的数据。 例如，通过 Microsoft Defender for Endpoint 创建的自定义角色将仅允许访问 Defender for Endpoint 数据。
 
 > [!TIP]
-> 通过从导航窗格中选择"权限"Microsoft 365 Defender角色&访问权限和角色。 对 MCAS Microsoft Cloud App Security (的访问权限) MCAS 门户进行管理，并控制对 Microsoft Defender for Identity 的访问。  请参阅[Microsoft Cloud App Security](/cloud-app-security/manage-admins)
+> 通过从导航窗格中选择"权限"Microsoft 365 Defender角色&访问权限和角色。 对 mcAS Microsoft Cloud App Security (MCAS) 的访问权限通过 MCAS 门户进行管理，并控制对 Microsoft Defender for Identity 的访问。  请参阅[Microsoft Cloud App Security](/cloud-app-security/manage-admins)
 
 > [!NOTE]
 > 在 Microsoft Microsoft Cloud App Security创建的自定义角色也有权访问 Microsoft Defender for Identity 数据。 具有用户组管理员或应用/实例管理员Microsoft Cloud App Security用户无法通过 Microsoft Cloud App Security 门户访问Microsoft 365 Defender数据。

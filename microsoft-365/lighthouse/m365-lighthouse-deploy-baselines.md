@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -15,20 +15,20 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，了解如何部署Microsoft 365 Lighthouse基线。
-ms.openlocfilehash: 62fc9afcbf10a0cd77c2fe2d2f7140b5197dd42a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，了解如何部署Microsoft 365 Lighthouse基线。
+ms.openlocfilehash: d449a7677e478111590a2fbeedfbd211e07d7027
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171296"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173195"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>部署Microsoft 365 Lighthouse基线 
 
 > [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
-Microsoft 365 Lighthouse基线，您可以部署标准托管租户配置，以确保客户租户中的用户、设备和数据安全。 Lighthouse 有六种标准的默认基线配置：
+Microsoft 365 Lighthouse基线，您可以部署标准托管租户配置，以确保客户租户中的用户、设备和数据的安全。 Lighthouse 有六种标准的默认基线配置：
 
 - 要求管理员使用 MFA
 - 要求最终用户使用 MFA
@@ -37,7 +37,7 @@ Microsoft 365 Lighthouse基线，您可以部署标准托管租户配置，以�
 - 为设备配置 Defender 防病毒Windows策略
 - 为设备配置Windows策略
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 确保你和客户租户满足要求中所列的要求[Microsoft 365 Lighthouse。](m365-lighthouse-requirements.md)
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解 GDPR 一般数据保护 () 管理未成年人个人数据的一般数据保护条例。
-ms.openlocfilehash: e7f53a5a6b64f29f5029f0080fef44439c926edb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 84a1ecc9eb5d29ae1c2e4597b8299430cc3de038
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170407"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173063"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>次要加载项和从应用商店获取加载项
 
@@ -50,7 +50,7 @@ GDPR 一般 (条例) 欧盟法规，于 2018 年 5 月 25 日生效。 它为用
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
 |Office 网页版  <br/> |不适用  <br/> |
    
- **对于Outlook：** 
+ **例如Outlook：** 
   
 |**平台** <br/> |**内部版本号** <br/> |
 |:-----|:-----|
@@ -63,7 +63,7 @@ GDPR 一般 (条例) 欧盟法规，于 2018 年 5 月 25 日生效。 它为用
 
  **Office 2013 要求**
   
-如果启用了 Active Directory 身份验证库 (ADAL) ，适用于 Windows 的 Word、Excel 和 PowerPoint 2013 将支持相同的次要检查。 有两种合规性选项，如下文说明。
+如果启用了 Active Directory 身份验证库 (ADAL) ，适用于 Windows 的 Word、Excel 和 PowerPoint 2013 将支持相同的次要) 检查。 有两种合规性选项，如下文说明。
   
 - **启用 ADAL**。 本文介绍如何为 Office 2013 启用 ADAL：Microsoft 365[客户端使用新式Office身份验证](../../enterprise/modern-auth-for-office-2013-and-2016.md)。<br/>还需要设置注册表项以启用 ADAL，如在 Windows 设备上为[Office 2013 启用新式验证Windows说明](../security-and-compliance/enable-modern-authentication.md)。<br/>此外，还需要安装 2013 年 4 月Office更新：
     
@@ -71,7 +71,7 @@ GDPR 一般 (条例) 欧盟法规，于 2018 年 5 月 25 日生效。 它为用
     
   - [2018 年 4 月 3 日，Office 2013 (KB4018333) ](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
     
-- **不要启用 ADAL**。 如果无法在 Office 2013 中启用 ADAL，则建议使用组策略为 Office 客户端关闭应用商店。 有关关闭应用以启用Office的信息位于[此处](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15))。
+- **不要启用 ADAL**。 如果无法在 Office 2013 中启用 ADAL，则建议使用组策略为 Office 关闭应用商店。 有关关闭应用以启用Office的信息位于[此处](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15))。
 
 ## <a name="related-articles"></a>相关文章
 

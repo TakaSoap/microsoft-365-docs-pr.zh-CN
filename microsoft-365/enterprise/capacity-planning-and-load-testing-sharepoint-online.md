@@ -7,7 +7,7 @@ ms.date: 04/10/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -19,24 +19,24 @@ search.appverid:
 - MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: 本文介绍如何部署到 SharePoint Online，而无需执行传统的负载测试，因为它是不允许的。
-ms.openlocfilehash: fb54864168b35fed290ccb1139cb6c607969820d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f9bf4c508e862d9d99bac2935cfea32878a93762
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196818"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172019"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>容量规划和负载测试 SharePoint Online
-本文介绍如何在不进行传统负载测试SharePoint部署到 SharePoint Online，因为不允许在 SharePoint Online 上执行负载测试。 SharePoint联机是一种云服务，负载功能、服务中的负载运行状况和总体平衡由 Microsoft 管理。
+本文介绍如何在没有传统负载测试SharePoint部署到 SharePoint Online，因为不允许在 SharePoint Online 上执行负载测试。 SharePoint联机是一种云服务，负载功能、服务中的负载运行状况和总体平衡由 Microsoft 管理。
   
 确保成功启动网站的最佳方法是遵循在门户启动推出计划中突出显示的指导原则、实践 [和建议](planportallaunchroll-out.md)。
 
 ## <a name="overview-of-how-sharepoint-online-performs-capacity-planning"></a>SharePoint Online 如何执行容量规划的概述 
-与本地部署SharePoint Online 的主要好处之一是云弹性以及分布式区域用户的优化。 我们的大型环境每天设置为为数百万用户提供服务，因此，我们通过平衡和扩展服务器场有效处理容量非常重要。
+与本地部署SharePoint Online 的主要好处之一是云的弹性以及分布式区域用户的优化。 我们的大型环境每天设置为为数百万用户提供服务，因此，我们通过平衡和扩展服务器场有效处理容量非常重要。
   
 尽管对于任何一个服务器场中的任一租户，增长通常不可预测，但随着时间的推移，总请求总和是可预测的。 通过确定 SharePoint Online 的增长趋势，我们可以规划未来的扩展。
   
-为了高效地使用容量并应对意外增长，在任何服务器场中，我们都有用于跟踪和监视服务的各种元素的自动化。 利用多个指标，其中一个主要指标是 CPU 负载，它用作向上扩展前端服务器的信号。 此外，我们建议采用分阶段[/wave](planportallaunchroll-out.md)方法，因为 SQL 环境将随着时间的负载和增长进行扩展，并且按照阶段和波形允许该负载和增长的正确分布。 
+为了高效地使用容量并应对意外增长，在任何服务器场中，我们都有用于跟踪和监视服务的各种元素的自动化功能。 利用多个指标，其中一个主要指标是 CPU 负载，它用作向上扩展前端服务器的信号。 此外，我们建议采用分阶段[/wave](planportallaunchroll-out.md)方法，因为 SQL 环境将随着时间的负载和增长进行扩展，并且遵循阶段和波允许该负载和增长的正确分布。 
 
 容量不仅仅是为了持续添加更多硬件，还涉及管理和控制该容量以确保其为有效负载请求提供服务。 我们建议客户遵循推荐的指南，以确保他们获得最佳体验。 它还意味着我们具有限制模式和控件，以确保我们不允许在服务中"滥用"行为。 尽管并不是所有"不良"行为都是有意为之，但我们必须确保限制该行为的影响。 有关限制以及如何避免限制的进一步信息，请查看如何避免受限制的 [指南](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online) 文章。
 

@@ -8,23 +8,23 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 本文提供可以编码为自定义敏感信息类型的筛选器列表。
-ms.openlocfilehash: 6dfa562d581f14c0b1ac41c4ce803e2367a94636
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c91ff4a31f8e80b4798743169d5c30195dcdcde
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200538"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174995"
 ---
 # <a name="custom-sensitive-information-type-filters-reference"></a>自定义敏感信息类型筛选器参考
 
-在 Microsoft 中，可以在使用 SIT 策略创建自定义敏感信息类型时定义筛选器 () 。
+在 Microsoft 中，可以在使用 SIT 策略创建自定义敏感信息类型时定义 (或其他) 。
 
 ## <a name="list-of-supported-filters-and-use-cases"></a>支持的筛选器和用例列表
 
@@ -151,7 +151,7 @@ ms.locfileid: "59200538"
 
 说明：允许您禁止某些匹配以防止它们触发规则。 例如，将4111111111111111信用卡匹配列表中排除。
 
-例如，要排除信用卡号（如 4111111111111111）3241891031113111列表，如下所示：
+例如，要排除信用卡号（如 4111111111111111 和 3241891031113111列表，如下所示：
 
 - 4485 3647 3952 7352
 - 4111111111111111
@@ -234,7 +234,7 @@ ms.locfileid: "59200538"
 
 说明：允许你定义应始终包含或排除的以下字符。 例如，如果信用卡号后跟"/xuid"，则从有效匹配项中删除匹配项。
 
-例如，如果列表中还有 5 个包含四个数字的实例作为后缀，则排除顶部，如下所示：
+例如，如果列表中还有 5 个包含四个数字的实例作为后缀，则顶部排除，如下所示：
 
 - 1234-5678-9321 4500 9870 6321 48925566
 - 1234-5678-9321

@@ -7,15 +7,15 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.custom: admindeeplinkMAC
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: 了解如何在 Microsoft 365 中访问 Microsoft Bookings。
-ms.openlocfilehash: a5c5e0bbac10352d3e526bbde88db66e6a253e28
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8a92f156406a7c3aa4539036ae31d883a6db766f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196178"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173903"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>打开或关闭 Microsoft Bookings
 
@@ -71,12 +71,12 @@ ms.locfileid: "59196178"
 
 此策略中包含的用户可以创建新的 Bookings 日历，并可以添加为任何容量的用户 (包括管理员角色) 现有 Bookings 日历。 未包含在此策略中的用户将无法创建新的 Bookings 日历，并且如果他们尝试这样做，将收到错误消息。
 
-你需要使用 PowerShell 运行Exchange Online命令。 有关运行 cmdlet Exchange Online，请参阅 连接[Exchange Online PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
+你需要使用 PowerShell 运行Exchange Online命令。 有关运行 cmdlet Exchange Online，请参阅 连接 Exchange Online [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
 
 > [!IMPORTANT]
 > 以下步骤假定尚未在组织中Outlook Web App (其他) OWA 邮箱策略。
 
-1. 为应允许其创建 Bookings 日历的用户创建新的邮箱策略。  (新邮箱策略默认允许创建 Bookings 日历。) 
+1. 为应允许其创建 Bookings 日历的用户创建新的邮箱策略。  (新邮箱策略默认情况下允许创建 Bookings 日历。) 
 
    ```PowerShell
    New-OwaMailboxPolicy -Name "BookingsCreators"
@@ -104,4 +104,4 @@ ms.locfileid: "59196178"
 
 - [在Outlook 网页版邮箱策略Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
 
-- [对邮箱中的Outlook 网页版应用或删除邮箱策略Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [应用或删除Outlook 网页版邮箱的邮箱策略Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)

@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何在 EOP 管理中心中查看和管理所有用户Exchange Online Protection (隔离) 。 使用 Microsoft Defender for Office 365 的组织的管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中管理隔离Microsoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 66ae5d7a5b13495aabbd071f03e87efc5b239294
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: 7bf5b4fa2c339e1132efb71c53a5eaf62f9646ad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088272"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174431"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -39,11 +39,11 @@ ms.locfileid: "60088272"
 
 管理员可以查看、释放和删除所有用户的所有类型的隔离邮件。 管理员还可以向 Microsoft 报告误报。
 
-默认情况下，只有管理员才能管理被隔离为恶意软件、高可信度网络钓鱼的邮件，或由于邮件流规则 (也称为传输规则) 。 但是， _管理员可以根据邮件_ 被隔离的原因来定义允许哪些用户对隔离邮件执行隔离 (支持的功能) 。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
+默认情况下，只有管理员才能管理被隔离为恶意软件、高可信度网络钓鱼或由于邮件流规则 (也称为传输规则) 。 但是，管理员可以使用 _隔离_ 策略根据邮件被隔离的原因来定义允许用户对隔离邮件执行哪些操作 (支持的功能) 。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
 
-使用 Microsoft Defender for Office 365 的组织的管理员还可以管理由[保险箱 Attachments](mdo-for-spo-odb-and-teams.md)隔离的文件，SharePoint、OneDrive 和 Microsoft Teams 。
+使用 Microsoft Defender for Office 365 的组织的管理员还可以管理由 保险箱 Attachments 隔离的文件（SharePoint、OneDrive 和[Microsoft Teams）。](mdo-for-spo-odb-and-teams.md)
 
-在 Microsoft 365 Defender 门户中或在 PowerShell (Exchange Online PowerShell 中查看和管理隔离的邮件，Microsoft 365邮箱在 Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
+在 Microsoft 365 Defender 门户中或在 PowerShell 中查看和管理隔离邮件 (Exchange Online PowerShell，Microsoft 365邮箱在 Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -61,12 +61,12 @@ ms.locfileid: "60088272"
 
   - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
-  - <sup>\*</sup>[Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal)门户中电子邮件 &协作角色中的隔离管理员角色组的成员还需要是 Exchange Online 中清洁管理角色组的成员，才能在[Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) PowerShell 中执行隔离过程。
+  - <sup>\*</sup>Microsoft 365 Defender 门户中电子邮件 &协作角色中的隔离管理员角色组的成员还需要是[Exchange Online](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal)中清洁管理角色组的成员，才能在[Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) PowerShell 中执行隔离过程。
 
 - 隔离邮件在被自动删除之前将保留一段默认时间：
-  - 由反垃圾邮件策略隔离的邮件的 30 (垃圾邮件、网络钓鱼和批量电子邮件) 。 这是默认值和最大值。 若要配置 (此值) ，请参阅 [配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+  - 由反垃圾邮件策略隔离的邮件的 30 (垃圾邮件、网络钓鱼和批量电子邮件) 。 这是默认值和最大值。 若要配置 (此值) ，请参阅配置 [反垃圾邮件策略](configure-your-spam-filter-policies.md)。
   - 包含恶意软件的邮件的 15 天。
-  - 对于在 Defender for 保险箱 中SharePoint、OneDrive 和 Microsoft Teams 附件Microsoft Teams 15 Office 365。
+  - 15 天，对于在 Defender for 保险箱 中由 SharePoint、OneDrive 和 Microsoft Teams 附件隔离Office 365。
 
   当邮件从隔离区过期时，你无法恢复它。
 
@@ -151,12 +151,12 @@ ms.locfileid: "60088272"
 - **发件人地址**
 - **接收时间**：收到邮件的日期/时间。
 - **主题**
-- **隔离原因**：显示邮件被标识为垃圾邮件、批量邮件、钓鱼邮件、匹配邮件流规则 (**传输** 规则) 或标识为包含恶意软件 **。**
+- **隔离原因**：显示邮件被标识为垃圾邮件、批量邮件、网络钓鱼邮件、匹配邮件流规则 (**传输** 规则) 或标识为包含恶意软件 **。**
 - **策略类型**
 - **策略名称**
 - **收件人计数**
 - **收件人**：如果邮件有多个收件人，需要单击“预览邮件”或“查看邮件头”，以查看完整的收件人列表。
-- **收件人标记**：有关详细信息，请参阅 Microsoft Defender for Office 365 中的 [用户标记](user-tags.md)。
+- **收件人标记**：有关详细信息，请参阅 Microsoft Defender 中的用户标记 [Office 365。](user-tags.md)
 - **到期时间**：邮件自动从隔离中永久删除的日期/时间。
 - **已释放到的位置**：邮件已释放到的所有电子邮件地址（若有）。
 - **尚未释放到的位置**：邮件尚未释放到的所有电子邮件地址（若有）。
@@ -186,7 +186,7 @@ ms.locfileid: "60088272"
 
   - **将邮件提交给 Microsoft** 以改进检测 (误报) ：此选项默认选中，将错误隔离的邮件报告给 Microsoft 作为误报。 如果邮件被隔离为垃圾邮件、批量邮件、网络钓鱼邮件或包含恶意软件，也会将邮件报告给 Microsoft 垃圾邮件分析团队。 根据分析结果的不同，可能会调整服务范围内的垃圾邮件筛选规则以允许邮件通过。
 
-  - **允许如下所示的消息**：此选项默认处于关闭状态 (![ 关闭 ](../../media/scc-toggle-off.png) 。) 。 打开" (打开") 以暂时阻止隔离具有类似 ![ ](../../media/scc-toggle-on.png) URL、附件和其他属性的邮件。 打开此选项时，可以使用以下选项：
+  - **允许如下所示的邮件**：此选项默认处于关闭状态 (![ 关闭 ](../../media/scc-toggle-off.png) 。) 。 打开" (打开") 以暂时阻止隔离具有类似 ![ ](../../media/scc-toggle-on.png) URL、附件和其他属性的邮件。 打开此选项时，可以使用以下选项：
     - **删除时间**：选择您希望允许类似以下邮件的多久。 选择 **"1 天到** **30 天"。** 默认值为 30。
     - **可选说明**：输入允许的有用说明。
 
@@ -219,14 +219,14 @@ ms.locfileid: "60088272"
   - **选择提交类型**： **电子邮件** (默认 **) 、URL** 或 **文件**。
   - **添加网络消息 ID 或上载电子邮件文件**：选择下列选项之一：
     - **将电子邮件网络邮件 ID** (默认值，框中会显示相应的) 
-    - **Upload电子邮件文件 (.msg 或 eml) ：单击"浏览文件"** 查找并选择要提交的 .msg 或 .eml 邮件文件。
-  - **选择具有问题的** 收件人：选择一 (首选) 邮件的一个或多个原始收件人，以分析应用于他们的策略。
+    - **Upload电子邮件文件 (.msg 或 eml) ：单击"** 浏览文件"查找并选择要提交的 .msg 或 .eml 邮件文件。
+  - **选择具有问题的** 收件人：选择一 (首选) 或邮件的一个或多个原始收件人，以分析应用于他们的策略。
   - **选择提交到 Microsoft 的原因**：选择以下选项之一：
-    - **不应阻止误报 (误报)  (** 默认) ：以下选项可用：
-      - **允许如下所示的消息**：此选项默认处于关闭状态 (![ 关闭 ](../../media/scc-toggle-off.png) 。) 。 打开" (打开") 以暂时阻止隔离具有类似 ![ ](../../media/scc-toggle-on.png) URL、附件和其他属性的邮件。 打开此选项时，可以使用以下选项：
+    - **默认情况下，不应** 阻止 (误报)  () 选项：
+      - **允许如下所示的邮件**：此选项默认处于关闭状态 (![ 关闭 ](../../media/scc-toggle-off.png) 。) 。 打开" (打开") 以暂时阻止隔离具有类似 ![ ](../../media/scc-toggle-on.png) URL、附件和其他属性的邮件。 打开此选项时，可以使用以下选项：
         - **删除时间**：选择您希望允许类似以下邮件的多久。 选择 **"1 天到** **30 天"。** 默认值为 30。
         - **可选说明**：输入允许的有用说明。
-    - **应已被阻止 (漏报) 。**
+    - **应已被阻止 (假负)**。
 
   完成后，请单击“**提交**”。
 
@@ -275,17 +275,17 @@ ms.locfileid: "60088272"
 - ![下载电子邮件图标。](../../media/m365-cc-sc-download-icon.png) **下载邮件**
 - ![仅提交图标。](../../media/m365-cc-sc-create-icon.png) **仅提交**
 
-## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>使用 Microsoft 365 Defender 门户在 Defender for Office 365
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>使用 Microsoft 365 Defender 门户在 Defender for Office 365 中管理隔离Office 365
 
 > [!NOTE]
-> 本部分中隔离文件的过程仅适用于 Microsoft Defender for Office 365 计划 1 或计划 2 订阅者。
+> 此部分中隔离文件的过程仅适用于 Microsoft Defender for Office 365 计划 1 或计划 2 订阅者。
 
 在具有 Defender for Office 365 的组织中，管理员可以管理由 保险箱 Attachments 隔离的文件SharePoint、OneDrive和Microsoft Teams。 若要启用对这些文件的保护，请参阅打开保险箱[附件SharePoint、OneDrive和Microsoft Teams。](turn-on-mdo-for-spo-odb-and-teams.md)
 
 ### <a name="view-quarantined-files"></a>查看隔离文件
 
 1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**检查**”\>“**隔离**”。
-2. 在" **隔离** "页面上 **，选择"** 文件"选项卡 **("电子邮件** 是默认选项卡") 。
+2. 在" **隔离** "页上 **，选择"** 文件"选项卡 **("电子邮件** 是默认选项卡") 。
 
 3. 若要对结果进行排序，可以单击可用列标题。 单击 **"自定义** 列"以更改显示的列。 默认列标有星号 <sup>\*</sup> () ：
    - **用户**<sup>\*</sup>
@@ -301,7 +301,7 @@ ms.locfileid: "60088272"
    完成后，单击"应用 **"** 或"取消 **"。**
 
 4. 要筛选结果，请单击“**筛选器**”。 在出现的 **筛选器** 中提供了以下筛选器：
-   - **接收时间****：开始时间和** 结束 **(日期**) 。
+   - **接收时间****：开始时间和** 结束 **(** 日期) 。
    - **Expires**： **Start time** and End **time (** date) .
    - **隔离原因**：唯一可用的值为 **Malware**。
    - **策略类型**
@@ -343,7 +343,7 @@ ms.locfileid: "60088272"
 
 ![隔离文件的详细信息飞出中的可用操作。](../../media/quarantine-file-details-flyout-actions.png)
 
-- ![发布文件图标。](../../media/m365-cc-sc-check-mark-icon.png) **发布文件**：在出现的飞出窗格中，打开或关闭向 Microsoft 报告文件进行分析， <sup>\*</sup> 然后单击"发布 **"。** 
+- ![发布文件图标。](../../media/m365-cc-sc-check-mark-icon.png) **发布文件**：在出现的飞出窗格中，打开或关闭向 Microsoft 报告文件进行分析， <sup>\*</sup> 然后单击"释放 **"。** 
 - ![发布文件图标。](../../media/m365-cc-sc-check-mark-icon.png)
 - ![下载文件图标。](../../media/m365-cc-sc-download-icon.png) **下载文件**：在出现的飞出文件中，选择"我了解 **下载** 此文件的风险"，然后单击"下载"以保存文件的本地副本。
 - ![从隔离图标中删除。](../../media/m365-cc-sc-delete-icon.png) **从隔离区** 删除 ：在 **出现的警告中** 单击"是"后，将立即删除文件。
@@ -351,11 +351,11 @@ ms.locfileid: "60088272"
 
 <sup>\*</sup>此选项不适用于已发布的文件， (状态值为 **Released** **) 。**
 
-如果不释放或删除文件，则默认隔离保留期到期后将删除该文件 (如"过期"列) 。 
+如果未释放或删除文件，则默认隔离保留期过期后将 (如"过期"列中所示) 。 
 
 #### <a name="take-action-on-multiple-quarantined-files"></a>对多个隔离文件采取措施
 
-当通过单击"主题"列左侧的空白区域选择列表中的多个隔离文件 (最多 100) "时，将显示"批量操作"下拉列表，您可以在其中执行以下操作： 
+当您通过单击"主题"列左侧的空白区域选择列表中的多个隔离文件 (最多 100) "时，将显示"批量操作"下拉列表，您可以在其中执行以下操作：
 
 ![隔离中的文件的批量操作下拉列表。](../../media/quarantine-file-bulk-actions.png)
 
