@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9caa80c2f0f768f2d89bb4a1fdc3f43beb225cf2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cdd0ecc5ea8ae550b53a02a09b9a063bbb4369d8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195631"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189977"
 ---
 # <a name="contact-support-for-mexico"></a>联系墨西哥支持人员
 
@@ -27,7 +27,7 @@ ms.locfileid: "59195631"
 
 800 563 0605
 
-## <a name="hours"></a>小时
+## <a name="hours"></a>工作时间
 
 ### <a name="billing-support"></a>计费支持：
 

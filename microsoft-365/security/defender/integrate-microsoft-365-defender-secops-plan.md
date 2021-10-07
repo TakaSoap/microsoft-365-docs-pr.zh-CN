@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3e8bf320bd25dacb3312605d5bc6428ad15210fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: db4b5b7518f3a79a37222764c0b7d627078aba5f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175346"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197997"
 ---
 # <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>步骤 1. 规划Microsoft 365 Defender准备情况
 
@@ -42,7 +42,7 @@ ms.locfileid: "59175346"
 
 ## <a name="provide-situational-awareness-of-modern-threats"></a>提供现代威胁的情境感知
 
-SOC 团队准备并搜寻新的和传入的威胁，以便他们可以与组织合作以建立对策和响应。 你的 SOC 团队应具有在新式攻击方法和技术方面经过高度培训的人员，并了解威胁参与者。 共享威胁情报和框架（如 [网络](https://www.microsoft.com/security/blog/2016/11/28/disrupting-the-kill-chain/) 击杀链或 [MITRE ATT&CK](https://attack.mitre.org/) 框架）可增强威胁分析员和威胁威胁情报人员的员工。
+SOC 团队准备并搜寻新的和传入的威胁，以便他们可以与组织合作以建立对策和响应。 你的 SOC 团队应具有在新式攻击方法和技术方面经过高度培训并且了解威胁参与者的人员。 共享威胁情报和框架（如 [网络](https://www.microsoft.com/security/blog/2016/11/28/disrupting-the-kill-chain/) 击杀链或 [MITRE ATT&CK](https://attack.mitre.org/) 框架）可增强威胁分析员和威胁情报人员的员工。
 
 ## <a name="provide-first-second-and-potentially-third-level-responses-to-cyber-incidents-and-events"></a>提供对网络事件和事件的一级、二级和可能的三级响应
 
@@ -54,7 +54,7 @@ SOC 是安全事件和事件的防护线。 当事件、威胁、攻击、策略
 
 ## <a name="establish-red-blue-and-purple-team-operational-readiness"></a>建立红色、蓝色和紫色团队操作准备情况
 
-每个 SOC 团队都应在响应网络事件时测试其准备情况。 可通过培训练习完成测试，例如与 IT、安全性和业务级别的不同人员一起运行的表格和做法。 个人培训练习团队基于代表性角色创建，并扮演防御者 (蓝队) 、攻击者 (红队) 的角色，或者作为寻求通过练习 (紫色团队) 中发现的优势和弱点改进蓝队和红队的方法和技术的探索者。
+每个 SOC 团队都应在响应网络事件时测试其准备情况。 可通过培训练习完成测试，例如与 IT、安全性和业务级别的不同人员一起运行的表格和做法。 个人培训练习团队基于代表性角色创建，并扮演防御者 (蓝队) 、攻击者 (红队) 的角色，或者作为寻求通过练习 (紫色团队) 中发现的优势和弱点来改进蓝队和红队的方法和技术的人。
 
 ## <a name="next-step"></a>后续步骤
 

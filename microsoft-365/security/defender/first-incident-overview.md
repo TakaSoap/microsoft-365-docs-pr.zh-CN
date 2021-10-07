@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f13569c8995433e0d629a3ce060d6c855f78700a
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: be0d0070f094a238114dd5d483e2a8ed29e043a0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477595"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198021"
 ---
 # <a name="responding-to-your-first-incident"></a>响应第一个事件
 
@@ -38,7 +38,7 @@ ms.locfileid: "59477595"
 
 组织的事件响应策略决定了其处理破坏性不断增加的安全事件和混乱的能力。 采取预防性措施很重要，但快速采取行动以控制、抑制和从检测到的事件中恢复的能力可以最大限度地减少损失和业务损失。
 
-此事件响应演练演示如何作为安全运营团队的一部分，在安全运营团队内执行大部分关键Microsoft 365 Defender。 步骤如下：
+此事件响应演练演示了作为安全运营团队的一部分，您如何在安全运营团队内执行大部分关键Microsoft 365 Defender。 步骤如下：
 
 - 准备安全状态
 - 对于每个事件：

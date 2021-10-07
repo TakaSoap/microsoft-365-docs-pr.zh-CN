@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 组、团队和团队的生命周期结束Yammer。
-ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 883af3878bd0bc68aa539fc1cc36b66c4f1cfe9e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171520"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190121"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>组、团队和团队的生命周期结束Yammer
 
@@ -34,10 +34,10 @@ Microsoft 365组和Microsoft Teams使用多个连接的服务。 删除组或团
 |服务|内容的类型|
 |:------|:---------------|
 |Teams|频道对话、频道中的文件|
-|表单|调查结构和结果|
+|Forms|调查结构和结果|
 |OneNote|笔记本|
 |Outlook|邮件和日历|
-|规划器|Project状态和任务信息|
+|Planner|Project状态和任务信息|
 |Power Automate|工作流|
 |Power BI|数据、报表和仪表板|
 |Project网页|Project计划|
@@ -58,7 +58,7 @@ Microsoft 365组和Microsoft Teams使用多个连接的服务。 删除组或团
 
 团队和组所有者以及 IT 管理员在删除组或团队时需要考虑三个关键方面。
 
-**Content**
+**内容**
 
 团队不再存在后，是否需要保留内容？ 是否足以依赖保留功能Microsoft 365，还是应用和服务中无法提供保留的一些内容？ 是否需要保留内容以用于记录管理、存档或将来使用和参考目的？
 
@@ -66,7 +66,7 @@ Microsoft 365组和Microsoft Teams使用多个连接的服务。 删除组或团
 
 **服务**
 
-内容是否需要保持其当前工作形式？ 例如，Power BI报告是否需要继续可访问？ 窗体结果是否需要在可视摘要视图中可用？ 列表中列表是否SharePoint链接或嵌入到任何位置？
+内容是否需要保持其当前工作形式？ 例如，Power BI报告是否需要继续可供访问？ 窗体结果是否需要在可视摘要视图中可用？ 列表中列表是否SharePoint链接或嵌入到任何位置？
 
 在删除基础组之前，必须提出这些问题，因为导出内容可能不够用。
 
@@ -76,7 +76,7 @@ Microsoft 365组和Microsoft Teams使用多个连接的服务。 删除组或团
 
 团队或组所有者可以通过将组织外部的某人添加到团队来Azure Active Directory成为团队中的来宾。 但是，团队所有者无法从用户中删除Azure Active Directory。 删除帐户只能由全局管理员或用户管理员执行。
 
-执行来宾评审并了解在团队删除时是否需要从来宾Azure Active Directory很重要。 可能存在来宾保留在目录中的有效情况，例如是其他团队的成员，或者使用其他 Microsoft 365 Azure 服务。
+执行来宾评审并了解在团队删除时是否需要从来宾Azure Active Directory很重要。 可能存在来宾保留在目录中的有效情况，例如是其他团队的成员，或者使用其他 Microsoft 365 或 Azure 服务。
 
 ## <a name="teams"></a>Teams
 
@@ -84,30 +84,30 @@ Teams内容主要是对话形式。
 
 频道中的对话无法复制或移动使用本机Microsoft Teams功能。 但是，可以使用 Graph API 导出它们。
 
-此外，如果将保留策略应用于Teams，对话将保留并通过电子数据展示搜索提供。 使用高级电子数据展示，你可以[重新构建Teams对话。](/microsoft-365/compliance/conversation-review-sets)
+此外，如果将保留策略应用于Teams，则保留对话并通过电子数据展示搜索提供。 使用高级电子数据展示，可以[重新构建Teams聊天对话](/microsoft-365/compliance/conversation-review-sets)。
 
 
 ### <a name="archiving-a-team"></a>存档团队
 
-存档 [团队的好处是](/microsoftteams/archive-or-delete-a-team) ，它可以像现在一样提供对团队的完全访问权限。 用户仍可以浏览频道对话并打开文件，即使他们未处于活动状态。 此外，如果需要继续处理团队， (例如，如果项目已扩展为) 。
+存档 [团队的好处是](/microsoftteams/archive-or-delete-a-team) ，它可以像现在一样提供对团队的完全访问权限。 用户仍可以浏览频道对话并打开文件，即使他们未处于活动状态。 此外，如果需要继续处理团队，可以取消存档 (例如，如果项目已) 。
 
-当所有者存档团队时，对于团队中的内容和关联的网站（如果选中）的成员，该团队SharePoint只读。 此操作的目标是确保频道中的对话保持其现有状态，以及基于SharePoint的内容（如文件和 Wiki）。
+当所有者存档团队时，对于团队中的内容以及关联的网站（如果选中）的成员，该团队SharePoint只读。 此操作的目标是确保频道中的对话保持其现有状态，以及基于SharePoint的内容（如文件和 Wiki）。
 
-在SharePoint网站中没有任何可见更改。 但是，不能更改任何文件或列表，因为 SharePoint 组的权限设置为Microsoft 365 **网站访问者**。 这包括团队OneNote笔记本，存储在网站内的网站资产库中SharePoint笔记本。
+在SharePoint网站中没有任何可见更改。 但是，无法更改任何文件或列表，因为 SharePoint 组的权限设置为Microsoft 365 **网站访问者**。 这包括团队OneNote笔记本，存储在网站内的网站资产库中SharePoint笔记本。
 
-存档团队后，基础 Microsoft 365 组仍受过期策略 (如果设置为) ，则所有者必须继续续订团队。
+存档团队后，基础 Microsoft 365 组仍受过期策略 (如果设置为) ，因此所有者必须继续续订团队。
 
 虽然团队的频道对话和SharePoint网站内容设置为只读，但不适用于其他关联服务：
 
 - 规划器存储桶和任务仍可创建、修改和删除。
 - 表单仍可接收提交。
-- 邮箱Outlook仍可以接收电子邮件。
+- 邮箱Outlook仍可接收电子邮件。
 - Power BI仪表板、报表和数据仍可修改。
 - 仍可以在 Web 上的Project编辑项目和路线图。
 - 视频仍可在 Stream 中上载、修改和删除。
-- Power Automate流仍可创建、修改、删除，并且将继续运行。  (，但是，如果需要将邮件张贴到存档团队的频道，他们将) 
+- Power Automate流仍可创建、修改、删除，并且将继续运行。  (如果需要将邮件张贴到存档团队的频道，他们将失败。) 
 
-## <a name="forms"></a>表单
+## <a name="forms"></a>Forms
 
 虽然窗体可以从单个帐户移动到一个组，但无法从一个组移动或复制到另一个组。 删除团队时，有三个选项可用于表单。
 
@@ -117,7 +117,7 @@ Teams内容主要是对话形式。
 
 **将结果导出到电子表格**
 
-如果需要保留表单响应的数据，则可以通过将结果导出到电子表格Excel[实现](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af)。 这将仅将问题及其响应导出为数据，不包括由 Forms 创建的图形。
+如果需要保留表单响应的数据，可以通过将结果导出到一个电子表格Excel[实现](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af)。 这将仅将问题及其响应导出为数据，不包括由 Forms 创建的图形。
 
 **删除表单**
 
@@ -149,19 +149,19 @@ Teams内容主要是对话形式。
 
 **导出邮件和日历**
 
-团队或团队成员可以将邮箱和日历的内容导出到 PST [Outlook/个人](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)存储 (PST) 文件。 然后，此文件可以存储在其他位置，也可以将内容导入到其他邮箱中。 不建议使用前者，因为 PST 文件的内容如果不在 Outlook 中打开，则不可搜索，并且文件本身会随着时间的推移而损坏。
+团队或团队成员可以将邮箱和日历的内容导出到 pst [Outlook/Personal 存储 (PST](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)) 文件。 然后，此文件可以存储在其他位置，也可以将内容导入到其他邮箱中。 不建议使用前者，因为 PST 文件的内容如果不在 Outlook 中打开，则不可搜索，并且文件本身会随着时间的推移而损坏。
 
 **IT 执行的内容迁移**
 
 管理员可以使用第三方工具在邮箱之间迁移电子邮件和日历内容，而无需任何用户干预。 一个潜在的存储位置可能是完全作为组邮箱内容的"存档"创建的共享邮箱。
 
-## <a name="planner"></a>规划器
+## <a name="planner"></a>Planner
 
 每个组或团队可以有多个计划。 在离开过程中，确保满足每个计划的保留要求非常重要。 与其他服务一样，Planner 中的内容有若干种离开的方法。
 
 **将计划导出到电子表格**
 
-如果只需要保留计划副本以用于保留记录，最简单的方法是将计划导出到一个Excel[电子表格](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a)。 这是单向操作 - 无法从电子表格导入计划。
+如果只需要保留计划副本以便保留记录，最简单的方法是将计划导出到一个Excel[电子表格](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a)。 这是单向操作 - 无法从电子表格导入计划。
 
 > [!IMPORTANT]
 > 将计划导出Excel将在计划中获取大部分信息，但不包括注释、链接或文件。
@@ -192,7 +192,7 @@ Power BI数据和工作区可以独立于组和团队运行，并且与其他工
 
 **将报告复制到其他工作区**
 
-如果在删除组或工作组后需要报表，可以将报表从现有工作区复制到其他工作区[Power BI。](/power-bi/connect-data/service-datasets-copy-reports)
+如果在删除组或工作组后需要报表，可以将报表从现有工作区复制到[Power BI。](/power-bi/connect-data/service-datasets-copy-reports)
 
 **从仪表板或报表导出数据**
 
@@ -200,11 +200,11 @@ Power BI数据和工作区可以独立于组和团队运行，并且与其他工
 
 ## <a name="project"></a>Project
 
-在 Web Project 中创建的项目和路线图与 Microsoft 365 组相关联，并且具有类似于Power BI。
+在 Web Project 中创建的项目和路线图与 Microsoft 365 组相关联，并且具有类似于 Power BI 的方法。
 
 **将项目分配给另一个组**
 
-如果需要在组或工作组的生命周期之外保持项目的功能状态，可以将其分配给不同的Microsoft 365[组](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project)。 这可以使用 Dynamics 365 管理中心完成。
+如果需要在组或工作组的生命周期后将项目保持其功能状态，可以将其分配给不同的Microsoft 365[组](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project)。 这可以使用 Dynamics 365 管理中心完成。
 
 **从项目或路线图导出数据**
 
@@ -221,7 +221,7 @@ Power BI数据和工作区可以独立于组和团队运行，并且与其他工
 - 频道中的文件 – 文档库
 - Wiki 网页 – Teams Wiki 数据库
 
-如果网站具有一个或多个子网站，则需要针对每个子网站重复执行离开过程。 如果团队包含私人频道，则每个频道SharePoint一个单独的网站。
+如果网站具有一个或多个子网站，则需要针对每个子网站重复执行离开过程。 如果团队包含私人频道，则每个频道SharePoint单独的网站。
 
 从组或团队删除文件时，必须考虑它们可能会与不是组或团队成员的用户共享。 你可能希望与他们传达即将发生的更改。
 
@@ -231,11 +231,11 @@ Power BI数据和工作区可以独立于组和团队运行，并且与其他工
 
 **移动文件**
 
-此外，可以将文件移动到网站中的[另一SharePoint如不同网站中的库](https://support.office.com/article/00e2f483-4df3-46be-a861-1f5f0c1a87bc)。
+此外，可以将文件移动到网站中的SharePoint[如不同网站中的库](https://support.office.com/article/00e2f483-4df3-46be-a861-1f5f0c1a87bc)。
 
 **导出列表**
 
-存储在列表SharePoint中的数据可以导出到 Excel[电子表格](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9)，并再次导入到另一个站点中的列表。
+存储在列表SharePoint中的数据可以导出到 Excel[电子表格](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9)，并再次导入到另一个网站中的列表。
 
 或者，第三方工具可用于在网站之间迁移列表，以便保留功能、列表视图、格式设置和其他属性。
 
@@ -245,7 +245,7 @@ Power BI数据和工作区可以独立于组和团队运行，并且与其他工
 
 ## <a name="microsoft-stream"></a>Microsoft Stream
 
-与Power Automate一样，Stream 中与组或团队关联的视频实际上并不归组所有，在删除组时不会删除。 Stream 中的视频归上传或创建视频的用户所有，即使他们添加用户或组作为所有者。 在频道中Teams会议归开始录制的人所有。
+与 Power Automate一样，Stream 中与组或团队关联的视频实际上并不归组所有，在删除组时不会删除。 Stream 中的视频归上传或创建视频的用户所有，即使他们添加用户或组作为所有者。 在频道中Teams会议归开始录制的人所有。
 
 **添加其他所有者**
 
@@ -257,11 +257,11 @@ Power BI数据和工作区可以独立于组和团队运行，并且与其他工
 
 ## <a name="yammer"></a>Yammer
 
-与用户Microsoft Teams不同，Yammer为用户和管理员提供了移动或导出对话的选项。
+与 Microsoft Teams 中的Yammer不同，Yammer为用户和管理员提供了移动或导出对话的选项。
 
 **将对话移动到其他组或社区**
 
-对话可以通过任何用户Yammer移动到另一个组，而不只是所有者或管理员。 这一点在经典[Yammer](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872) [和新的 Yammer](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680)接口中都可行。
+对话可以移动到其他用户Yammer组，而不只是所有者或管理员。 这一点在经典[Yammer](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872)[和新的 Yammer](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680)接口中都可行。
 
 **导出网络数据**
 

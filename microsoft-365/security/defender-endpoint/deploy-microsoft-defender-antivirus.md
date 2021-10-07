@@ -1,13 +1,13 @@
 ---
 title: 部署和启用 Microsoft Defender 防病毒软件
-description: 使用 Microsoft Defender 防病毒、Microsoft Endpoint Configuration Manager、组策略、PowerShell cmdlet 或 WMI 部署 Microsoft Intune，以保护终结点。
+description: 部署Microsoft Defender 防病毒，以使用 Microsoft Intune、Microsoft Endpoint Configuration Manager、组策略、PowerShell cmdlet 或 WMI 保护终结点。
 keywords: 部署、启用、Microsoft Defender 防病毒
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 84b739256ffe1bae3e663cb6be9fe1ec5471be7d
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 10d68a0da554b8c9e2a107581b5cdbc78a3958d7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491189"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190541"
 ---
 # <a name="deploy-and-enable-microsoft-defender-antivirus"></a>部署和启用 Microsoft Defender 防病毒软件
 
@@ -36,9 +36,9 @@ ms.locfileid: "59491189"
 
 有关如何使用[Microsoft Intune、Microsoft Endpoint Configuration Manager、](deploy-manage-report-microsoft-defender-antivirus.md#ref2)组策略、Active Directory、Microsoft Azure、PowerShell cmdlet 和 Windows Management Instruction (WMI) 启用保护的说明，请参阅 Microsoft Defender 防病毒 上的表。
 
-一些方案需要有关如何成功部署或配置 Microsoft Defender 防病毒 保护的更多指南，例如虚拟桌面基础结构 (VDI) 环境。
+某些方案需要有关如何成功部署或配置 Microsoft Defender 防病毒 保护的更多指南，例如虚拟桌面基础结构 (VDI) 环境。
 
-本节中的其余文章提供有关在 VDI 或远程桌面服务[ (RDS) ](deployment-vdi-microsoft-defender-antivirus.md)环境中虚拟机 (VM) 上设置 Microsoft Defender 防病毒 的端到端建议和最佳做法。
+本节中的其余文章提供有关在 VDI 或远程桌面服务[ (RDS) ](deployment-vdi-microsoft-defender-antivirus.md)环境中在虚拟机 (VM) 上设置 Microsoft Defender 防病毒 的端到端建议和最佳做法。
 
 ## <a name="related-articles"></a>相关文章
 

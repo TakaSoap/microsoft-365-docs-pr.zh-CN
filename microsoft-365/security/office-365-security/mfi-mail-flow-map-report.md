@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何使用安全 & 合规中心中的"邮件流"仪表板中的"邮件流"映射，直观呈现和跟踪邮件如何通过连接器和不使用连接器从组织流动。
+description: 管理员可以了解如何使用安全 & 合规中心内的邮件流仪表板中的邮件流映射，直观呈现和跟踪邮件如何通过连接器（不使用连接器）从组织流动和流出。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 45182b6da5a20780673f5e84aeffaa9c3e6a6fe5
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 03a8b6199adec6df5471f7537bc28809142c6550
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988579"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197889"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>安全与合规中心&流程图
 
@@ -54,13 +54,13 @@ ms.locfileid: "59988579"
 
 若要将特定日期范围的报告通过电子邮件发送给一个或多个收件人，请单击"请求 **下载"。**
 
-相关见解显示在邮件流映射下方（如果可用 (例如，修复可能的邮件 [循环见解](mfi-mail-loop-insight.md)) 。
+相关见解显示在邮件流映射下方（如果它们 (例如，修复可能的邮件 [循环见解](mfi-mail-loop-insight.md)) 。
 
 ## <a name="details-table-view-for-the-mail-flow-map"></a>邮件流映射的详细信息表视图
 
-如果单击 **视图中的"** 查看详细信息报表视图，将显示以下信息：
+如果单击 **视图中的"** 查看详细信息"报表视图，将显示以下信息：
 
-- **日期**
+- **Date**
 - **类别**
 - **连接器/第三方服务提供商**
 - **发件人/收件人域**

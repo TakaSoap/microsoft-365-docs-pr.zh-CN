@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何使用工作效率分数保护隐私。
-ms.openlocfilehash: d849f4cc8924aac09ca41f30682e32babfcc7f13
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 1bbc9c7459d29e9aef8dea102d1d98eed9c30550
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776112"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178223"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>工作效率分数的隐私控件
 
@@ -77,7 +77,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 若要选择退出：
 
 1. 在管理中心，**转到"组织**   >   **设置设置**  >  **工作效率分数"。**
-2. 取消选中显示"允许Microsoft 365 **数据以用于用户体验见解"的框**。 若要了解如何在 Intune 配置管理器中修改 Endpoint Analytics 的数据共享设置，请选择"**了解更多"。**
+2. 取消选中显示"允许使用Microsoft 365 **数据以用于用户体验见解"的框**。 若要了解如何在 Intune 配置管理器中修改 Endpoint Analytics 的数据共享设置，请选择"**了解更多"。**
 3. 选择"**保存"。**
 
 :::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="组织设置页面，可在其中选择退出人员体验。":::

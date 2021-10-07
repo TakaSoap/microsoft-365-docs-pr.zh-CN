@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 88d91e2434871014cf286bbb27812e60036cb5cb
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 2e71699e35339fe6fcf81b9eeaa93e84737e026d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042718"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190421"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -52,7 +52,7 @@ ms.locfileid: "60042718"
 | `OSArchitecture` | string | 计算机上运行的操作系统的体系结构 |
 | `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10和 Windows 7。 |
 | `OSBuild` | string | 计算机上运行的操作系统的生成版本 |
-| `IsAzureADJoined` | boolean | 指示计算机是否已加入到计算机中的布尔Azure Active Directory |
+| `IsAzureADJoined` | 布尔 | 指示计算机是否已加入到计算机中的布尔Azure Active Directory |
 | `AadObjectId` | string | Azure AD 中设备的唯一标识符 |
 | `LoggedOnUsers` | string | 事件时以 JSON 数组格式登录的所有用户的列表 |
 | `RegistryDeviceTag` | string | 通过注册表添加的机器标记 |

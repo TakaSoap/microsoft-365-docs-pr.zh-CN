@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 04/18/2016
 audience: ITPro
 ms.topic: troubleshooting
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: 本文将了解如何使用除名门户将自己从阻止的Microsoft 365名单中删除。
+description: 本文将了解如何使用除名门户将自己从阻止的Microsoft 365列表中。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e825c859253b759e5436dbc5419f98f0c863fa3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 78e25da9a8f04d1ad730cd049ca38df596ab2f03
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196246"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190217"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>使用除名门户将自己从阻止的发件人名单中删除
 
@@ -40,7 +40,7 @@ ms.locfileid: "59196246"
 
 ## <a name="what-is-the-blocked-senders-list"></a>阻止的发件人名单是什么？
 
-Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、欺诈和网络钓鱼网站的攻击。 您的邮件服务器的 IP 地址（即您的邮件服务器在 Internet 上用于标识自身的地址）被标记为可能Microsoft 365威胁，原因有多种。 当Microsoft 365 IP 地址添加到列表中时，它会阻止该 IP 地址与任何客户通过我们的数据中心进行进一步的通信。
+Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、欺诈和网络钓鱼网站的攻击。 您的邮件服务器的 IP 地址（即邮件服务器在 Internet 上用于标识自身的地址）被标记为可能Microsoft 365威胁，原因有多种。 当Microsoft 365 IP 地址添加到列表中时，它会阻止 IP 地址与任何客户通过我们的数据中心进行进一步的通信。
 
 在您收到包含类似于以下错误的邮件回复时，您就知道自己已被添加到该列表中：
 

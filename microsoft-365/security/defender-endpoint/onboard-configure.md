@@ -8,18 +8,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 49109b7671cc4ecd1891cb942dcd6b678d7b5c11
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 52083cbd8b7e94c09c21ef434634376966102df6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124525"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178319"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>将设备载入到 Microsoft Defender for Endpoint 服务
 
@@ -50,7 +50,7 @@ ms.locfileid: "60124525"
 
 |端点|工具选项|
 |---|---|
-|**Windows**|[本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <p> [组策略](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/移动设备管理器](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [VDI 脚本](configure-endpoints-vdi.md) <p> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)|
+|**Windows**|[本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <p> [组策略](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ 移动设备管理器](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [VDI 脚本](configure-endpoints-vdi.md) <p> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[本地脚本](mac-install-manually.md) <p> [Microsoft Endpoint Manager](mac-install-with-intune.md) <p> [JAMF Pro](mac-install-with-jamf.md) <p> [移动设备管理](mac-install-with-other-mdm.md)|
 |**Linux Server**|[本地脚本](linux-install-manually.md) <p> [百分百](linux-install-with-puppet.md) <p> [Ansible](linux-install-with-ansible.md)|
 |**iOS**|[基于应用](ios-install.md)|
@@ -61,7 +61,7 @@ ms.locfileid: "60124525"
 主题|说明
 :---|:---
 [载入以前版本的 Windows](onboard-downlevel.md)|将 Windows 7 和 Windows 8.1设备载入到 Defender for Endpoint。
-[载入Windows设备](configure-endpoints.md)|你需要载入设备，以向 Defender for Endpoint 服务报告。 了解可用于在企业中配置设备的工具和方法。
+[载入 Windows 设备](configure-endpoints.md)|你需要载入设备，以向 Defender for Endpoint 服务报告。 了解可用于在企业中配置设备的工具和方法。
 [载入服务器](configure-server-endpoints.md)|将 Windows Server 2008 R2 SP1、Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC) 版本 1803 和更高版本、Windows Server 2019 及更高版本以及 Windows Server 2019 核心版本载入 Defender for Endpoint。
 [载入非 Windows 设备](configure-endpoints-non-windows.md)|Defender for Endpoint 为用户和非 Windows平台提供了集中式安全Windows体验。 你将能够查看来自各种受支持操作系统 (操作系统) Microsoft Defender 安全中心更好地保护组织的网络。 此体验利用第三方安全产品的传感器数据。
 [在新载入的设备上运行检测测试](run-detection-test.md)|在新载入的设备上运行脚本，验证它是否正确报告给 Defender for Endpoint 服务。

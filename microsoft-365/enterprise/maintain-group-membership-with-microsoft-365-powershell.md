@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -18,21 +18,21 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 了解如何使用 PowerShell 维护组Microsoft 365成员身份。
-ms.openlocfilehash: 0a66db0748c50d296ff9d26969ae8b3caa7f310f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3637fb7d2e68091c43e624e9b6780d032c1930bc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196117"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208789"
 ---
 # <a name="maintain-security-group-membership-with-powershell"></a>使用 PowerShell 维护安全组成员身份
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-可以使用 PowerShell for Microsoft 365作为安全组Microsoft 365 管理中心维护安全组成员身份的Microsoft 365。 
+可以使用 PowerShell for Microsoft 365作为安全组Microsoft 365 管理中心，以维护安全组Microsoft 365。 
 
 >[!Note]
->[了解如何使用Microsoft 365维护组](../admin/create-groups/add-or-remove-members-from-groups.md)Microsoft 365 管理中心。 有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
+>[了解如何使用Microsoft 365维护组](../admin/create-groups/add-or-remove-members-from-groups.md)Microsoft 365 管理中心。 有关其他资源的列表，请参阅管理 [用户和组](/admin)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
@@ -56,7 +56,7 @@ $groupName="<display name of the group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $userName }).ObjectID -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-若要通过 **用户帐户的 UPN** 删除用户帐户，请填写用户帐户 UPN (示例：belindan@contoso.com) 和组 显示名称，在 PowerShell 窗口或 PowerShell ISE 中运行这些命令。
+若要通过 UPN 删除用户帐户，请填写用户帐户 **UPN** (示例：belindan@contoso.com) 和组 显示名称，在 PowerShell 窗口或 PowerShell ISE 中运行这些命令。
 
 ```powershell
 $userUPN="<UPN of the user account to remove>"
@@ -64,7 +64,7 @@ $groupName="<display name of the group>"
 Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-若要 **通过** 显示名称 删除用户帐户，请填写用户帐户 显示名称 (示例：Belinda Newman) 和组 显示名称在 PowerShell 窗口或 PowerShell ISE 中运行这些命令。
+若要通过用户帐户的 **显示名称** 删除用户帐户，请填写用户帐户 显示名称 (示例：Belinda Newman) 和组 显示名称，在 PowerShell 窗口或 PowerShell ISE 中运行这些命令。
 
 ```powershell
 $userName="<display name of the user account to remove>"
@@ -74,9 +74,9 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>添加或删除组作为组的成员
 
-安全组可以包含其他组作为成员。 Microsoft 365组不能。 本节包含 PowerShell 命令，用于仅为安全组添加或删除组。
+安全组可以包含其他组作为成员。 Microsoft 365组，但不能。 本节包含 PowerShell 命令，用于仅为安全组添加或删除组。
 
-若要按组的 **显示名称** 添加组，请填写要添加的组的 显示名称 和将包含成员组的组的 显示名称，在 PowerShell 窗口或 PowerShell ISE 中运行这些命令。
+若要按组的 **显示名称** 添加组，请填写要添加的组的 显示名称 以及将包含成员组的组的 显示名称，然后使用 PowerShell 窗口或 PowerShell ISE 运行这些命令。
 
 ```powershell
 $groupMemberName="<display name of the group to add>"
@@ -115,7 +115,7 @@ $groupName="<display name of the group>"
 Add-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.DisplayName -eq $userName }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-若要通过 **用户帐户的 UPN** 删除用户帐户，请填写用户帐户 UPN (示例：belindan@contoso.com) 和组 显示名称，在 PowerShell 窗口或 PowerShell ISE 中运行这些命令。
+若要通过 UPN 删除用户帐户，请填写用户帐户 **UPN** (示例：belindan@contoso.com) 和组 显示名称，在 PowerShell 窗口或 PowerShell ISE 中运行这些命令。
 
 ```powershell
 $userUPN="<UPN of the user account to remove>"
@@ -123,7 +123,7 @@ $groupName="<display name of the group>"
 Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-若要 **通过** 显示名称 删除用户帐户，请填写用户帐户 显示名称 (示例：Belinda Newman) 和组 显示名称在 PowerShell 窗口或 PowerShell ISE 中运行这些命令。
+若要通过用户帐户的 **显示名称** 删除用户帐户，请填写用户帐户 显示名称 (示例：Belinda Newman) 和组 显示名称，在 PowerShell 窗口或 PowerShell ISE 中运行这些命令。
 
 ```powershell
 $userName="<display name of the user account to remove>"
@@ -133,9 +133,9 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.DisplayNa
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>添加或删除组作为组的成员
 
-安全组可以包含其他组作为成员。 Microsoft 365组不能。 本节包含 PowerShell 命令，用于仅为安全组添加或删除组。
+安全组可以包含其他组作为成员。 Microsoft 365组，但不能。 本节包含 PowerShell 命令，用于仅为安全组添加或删除组。
 
-若要按组的 **显示名称** 添加组，请填写要添加的组的 显示名称 和将包含成员组的组的 显示名称，在 PowerShell 窗口或 PowerShell ISE 中运行这些命令。
+若要按组的 **显示名称** 添加组，请填写要添加的组的 显示名称 以及将包含成员组的组的 显示名称，然后使用 PowerShell 窗口或 PowerShell ISE 运行这些命令。
 
 ```powershell
 $groupMemberName="<display name of the group to add>"

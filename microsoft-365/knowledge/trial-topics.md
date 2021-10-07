@@ -1,5 +1,5 @@
 ---
-title: 运行试用Microsoft Viva主题
+title: 运行主题Microsoft Viva试用版
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: ''
 search.appverid: ''
-localization_priority: Normal
-description: 了解如何在组织中规划并运行 Microsoft Viva 主题的试用计划。
-ms.openlocfilehash: 783c84e0b7d14c51269672bc49902f02bdedd0e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+description: 了解如何在组织中计划和运行 Microsoft Viva主题的试用计划。
+ms.openlocfilehash: 9e0aff8f2c4ce339af44261becc1b0ebd0a39445
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170975"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178715"
 ---
-# <a name="run-a-trial-of-microsoft-viva-topics"></a>运行试用Microsoft Viva主题
+# <a name="run-a-trial-of-microsoft-viva-topics"></a>运行主题Microsoft Viva试用版
 
 本文介绍如何设置和运行试用计划，以将 Viva 主题部署到组织。 本文还推荐了试用版的最佳实践。
 
@@ -29,11 +29,11 @@ ms.locfileid: "59170975"
 
 - [Viva 主题产品页](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
-- The [Microsoft 365 管理中心](https://admin.microsoft.com)
+- Microsoft 365 管理中心[](https://admin.microsoft.com)
     1. 登录到 [Microsoft 365 管理中心](https://admin.microsoft.com)。
     2. 转到计费  >  **购买服务**。
     3. 向下滚动到“**加载项**”部分。
-    4. 在"**主题体验"** 磁贴上，选择"详细信息 **"。**
+    4. 在"**主题体验"** 磁贴上，选择"**详细信息"。**
     5. 选择“**获取免费试用版**”。
     6. 按照其余向导步骤确认试用版。
 
@@ -54,7 +54,7 @@ ms.locfileid: "59170975"
 
 规划对于有效试用 Viva 主题至关重要。 试用期有限，必须包括主题发现和探索主题质量、管理和最终用户体验。
 
-#### <a name="discovery"></a>Discovery
+#### <a name="discovery"></a>发现
 
 在试用期间，主题发现配置有两个高级策略选项：
 
@@ -137,4 +137,4 @@ ms.locfileid: "59170975"
 
 ## <a name="see-also"></a>另请参阅
 
-[开始推动采用Microsoft Viva主题](topics-adoption-getstarted.md)
+[开始推动采用 Microsoft Viva 主题](topics-adoption-getstarted.md)

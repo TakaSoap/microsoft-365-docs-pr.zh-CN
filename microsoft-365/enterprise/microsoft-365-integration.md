@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,12 +22,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: 本文将了解如何将Microsoft 365目录服务和本地环境集成。
-ms.openlocfilehash: 87b456a0b44e4b38df6cec8e72713c6573917805
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 06e6ff598d064f14ffb89bcf88e78932cc621225
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196779"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198429"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365本地环境集成
 
@@ -36,15 +36,15 @@ ms.locfileid: "59196779"
 您可以将 Microsoft 365 与现有本地 Active Directory 域服务 (AD DS) 以及 Exchange Server、Skype for Business Server 2015 或 SharePoint Server 本地安装集成。
   
  - 集成 AD DS 时，可以同步和管理两种环境的用户帐户。 您还可以将密码哈希同步添加到 PH) S (或单一登录 (SSO) 以便用户可以使用其本地凭据登录到这两个环境。
- - 与本地服务器产品集成时，将创建混合环境。 混合环境可以帮助你将用户或信息迁移到 Microsoft 365，或者你可以继续在本地拥有一些用户或一些信息，而某些信息则位于云中。 有关混合环境详细信息，请参阅 [混合云](../solutions/cloud-architecture-models.md#hybrid)。
+ - 与本地服务器产品集成时，将创建混合环境。 混合环境可以帮助你将用户或信息迁移到 Microsoft 365，或者你可以继续拥有一些用户或本地的一些信息，还有一些信息位于云中。 有关混合环境详细信息，请参阅 [混合云](../solutions/cloud-architecture-models.md#hybrid)。
 
-还可使用 Azure AD Azure Active Directory (顾问) Azure AD Microsoft 365 管理中心 (，以指导你登录到以下Microsoft 365) ：
+还可使用 Azure AD Azure Active Directory (顾问) Azure AD Microsoft 365 管理中心 (指导，以登录以下Microsoft 365) ：
 
 - [Azure AD 设置指南](https://aka.ms/aadpguidance)
 - [从组织目录中同步用户](https://aka.ms/aadconnectpwsync)
 - [Active Directory 联合身份验证服务 (AD FS) 顾问](https://aka.ms/adfsguidance)
    
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在集成Microsoft 365和本地环境之前，还需要执行[网络规划和性能调整](network-planning-and-performance.md)。 你还需要了解可用的 [标识模型](about-microsoft-365-identity.md)。 
 
@@ -62,7 +62,7 @@ ms.locfileid: "59196779"
 
 ### <a name="directory-synchronization-with-or-without-password-hash-synchronization-or-pass-through-authentication-pta"></a>具有或不带密码哈希同步的目录同步或 PTA (传递) 
 
-用户使用其用户帐户登录本地环境， (域\用户名) 。 当他们转到Microsoft 365时，必须使用工作或学校帐户帐户 (user@domain.com) 。 用户名在这两种环境中是相同的。 当你添加 PHS 或 PTA 时，用户在这两种环境中具有相同的密码，但登录时必须再次提供这些Microsoft 365。 与 PHS 的目录同步是最常用的目录同步。
+用户使用其用户帐户登录本地环境， (域\用户名) 。 当他们转到Microsoft 365时，必须使用工作或学校帐户登录 (user@domain.com) 。 用户名在这两种环境中是相同的。 当你添加 PHS 或 PTA 时，用户对于这两个环境具有相同的密码，但登录时必须再次提供这些Microsoft 365。 与 PHS 的目录同步是最常用的目录同步。
 
 若要设置目录同步，请使用 Azure AD 连接。 有关说明，请参阅使用快速设置 为[Microsoft 365](set-up-directory-synchronization.md) [和 Azure AD 连接设置目录同步](/azure/active-directory/hybrid/how-to-connect-install-express)。
 
@@ -72,13 +72,13 @@ ms.locfileid: "59196779"
 
 用户使用其用户帐户登录到其本地环境。 当他们转到 Microsoft 365 时，他们要么自动登录，要么使用用于本地环境的相同凭据登录 (域\用户名) 。
 
-若要设置 SSO，你还可使用 Azure AD 连接。 有关说明，请参阅[Azure AD 连接 的自定义安装](/azure/active-directory/hybrid/how-to-connect-install-custom)。
+若要设置 SSO，你还可使用 Azure AD 连接。 有关说明，请参阅[自定义安装 Azure AD 连接。](/azure/active-directory/hybrid/how-to-connect-install-custom)
 
 有关详细信息，请参阅 [单一登录](/azure/active-directory/manage-apps/what-is-single-sign-on)。
 
 ## <a name="azure-ad-connect"></a>Azure AD Connect
 
-Azure AD 连接替代了旧版标识集成工具（如 DirSync 和 Azure AD Sync）。如果要从"同步"Azure Active Directory Azure AD 连接，请参阅[升级说明](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started)。 
+Azure AD 连接 DirSync 和 DirSync 等旧版标识集成工具Azure AD Sync。如果要从"同步"Azure Active Directory Azure AD 连接，请参阅[升级说明](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started)。 
 
 ## <a name="see-also"></a>另请参阅
 

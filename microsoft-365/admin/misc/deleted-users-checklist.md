@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
 description: 删除用户的帐户时，请遵循Microsoft 365清单。
-ms.openlocfilehash: 5ea562e45b16a47272c4dfffcd4d30d135e191c195f2b3a8b8d1f70beeb9849d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 64170e2607130df580c0a124072abdeb9ef92c14
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824151"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178247"
 ---
 # <a name="quick-help-deleted-users-checklist"></a>快速帮助：已删除的用户清单
 
@@ -42,7 +42,7 @@ ms.locfileid: "53824151"
   
 ## <a name="get-their-data"></a>获取其数据
 
-你可以按照以下步骤，向组织中的另一名员工或用户发送此用户 [的电子邮件](../add-users/remove-former-employee.md)。 也可以按照以下步骤备份和保存以前员工的任何 [数据](../add-users/get-access-to-and-back-up-a-former-user-s-data.md)。
+你可以按照以下步骤向组织中的另一名员工或用户发送此用户 [的电子邮件](../add-users/remove-former-employee.md)。 也可以按照以下步骤备份和保存以前员工的任何 [数据](../add-users/get-access-to-and-back-up-a-former-user-s-data.md)。
   
 ## <a name="delete-user"></a>删除用户
 

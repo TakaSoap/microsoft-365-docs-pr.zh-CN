@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: fa046aa0a488b11f172d9ac7182b67e705aad69b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3bb6ef605d360e259ef9fa91ed51da35506a2942
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162172"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208813"
 ---
 # <a name="step-6-review-your-selections-to-create-your-package"></a>步骤 6：查看选择以创建程序包。
 
@@ -50,11 +50,11 @@ ms.locfileid: "59162172"
 
       可以从"**安全更新结果"和**"功能更新结果"页下载测试日志以 **进一步分析**。
 
-    - 如果遇到重复测试失败，请联系 testbasepreview@microsoft.com 并提供有关错误的详细信息。
+    - 如果遇到重复测试失败，请联系 testbasepreview@microsoft.com 并输入错误的详细信息。
 
 ## <a name="next-steps"></a>后续步骤
 
 通过下面的链接发现我们的内容指南。
 
 > [!div class="nextstepaction"]
-> [后续步骤](contentguideline.md)
+> [下一步](contentguideline.md)

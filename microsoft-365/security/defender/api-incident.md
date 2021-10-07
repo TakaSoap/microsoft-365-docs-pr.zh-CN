@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0c0c2e280f63076687a0854e25c47577b050a8f7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c316bd7c429165869b235871b2366861a22c6056
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201002"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198093"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender事件 API 和事件资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "59201002"
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-[事件](incidents-overview.md)是帮助描述攻击的相关警报的集合。 来自组织中不同实体的事件会自动由Microsoft 365 Defender。 可以使用事件 API 以编程方式访问组织的事件和相关警报。
+[事件](incidents-overview.md)是帮助描述攻击的相关警报的集合。 来自组织中不同实体的事件会自动由组织Microsoft 365 Defender。 可以使用事件 API 以编程方式访问组织的事件和相关警报。
 
 ## <a name="quotas-and-resource-allocation"></a>配额和资源分配
 
@@ -68,10 +68,10 @@ HTTP 响应代码指示你已按发送的请求数或按分配的运行时间 `4
 -|-|-
 incidentId | long | 事件唯一 ID。
 redirectIncidentId | nullable long | 当前事件合并到的事件 ID。
-incidentName | 字符串 | 事件的名称。
+incidentName | string | 事件的名称。
 createdTime | DateTimeOffset | 创建事件时 (UTC) 日期和时间。
 lastUpdateTime | DateTimeOffset | 上次更新事件 (UTC) 日期和时间。
-assignedTo | 字符串 | 事件的所有者。
+assignedTo | string | 事件的所有者。
 severity | 枚举 | 事件的严重性。 可能的值是 ```UnSpecified``` ```Informational``` ```Low``` ：、、、 ```Medium``` 和 ```High``` 。
 status | 枚举 | 指定事件的当前状态。 可能的值是 ```Active``` ：、 ```Resolved``` 和 ```Redirected``` 。
 classification | 枚举 | 事件的规范。 可取值为：```Unknown```、```FalsePositive```、```TruePositive```。

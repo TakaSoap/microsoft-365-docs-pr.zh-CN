@@ -1,6 +1,6 @@
 ---
 title: 通过电子邮件获取事件通知Microsoft 365 Defender
-description: 了解如何创建规则，以针对事件发送电子邮件通知Microsoft 365 Defender
+description: 了解如何创建规则，以针对事件发送的电子邮件通知Microsoft 365 Defender
 keywords: 事件， 电子邮件， 电子邮件通知， 配置， 用户， 邮箱， 电子邮件， 事件， 分析， 响应
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 028723dfb41f8e4cca71ea67aea5a88a46c9bb50
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 600ff555762112222769fde0372716f4a89a12b9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170916"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209173"
 ---
 # <a name="get-incident-notifications-by-email"></a>通过电子邮件获取事件通知
 

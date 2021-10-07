@@ -7,23 +7,23 @@ ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 摘要：配置 Microsoft Azure 基础结构，以承载 Microsoft 365。
-ms.openlocfilehash: 6f9e06f74b2ce635b05faa0da6cb2eae3d430c31
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b8a1bd473a84c382f8e609508298aaba44d0c85e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196811"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198441"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
-在此阶段，你将在 Azure 中创建资源组、虚拟网络 (VNet) 和可用性集，这些组将在第 2、3 和 4 阶段托管虚拟机。 必须先完成此阶段，然后才能进入阶段 [2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 有关[所有阶段，请参阅](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)在 Azure 中为 Microsoft 365 部署高可用性联合身份验证。
+在此阶段，你将在 Azure 中创建资源组、虚拟网络 (VNet) 和可用性集，这些组将在第 2、3 和 4 阶段托管虚拟机。 必须先完成此阶段，然后才能进入阶段 [2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
   
 必须使用以下基本组件预配 Azure：
   
@@ -51,7 +51,7 @@ ms.locfileid: "59196811"
   
 接下来，填写针对此解决方案的子网的表 S。所有地址空间应为无类别域际路由选择 (CIDR) 格式，也称为网络前缀格式。例如，10.24.64.0/20。
   
-对于前三个子网，根据虚拟网络地址空间指定名称和单个 IP 地址空间。 对于网关子网，请确定具有 /27 前缀 (的 27 位地址空间，) 为 Azure 网关子网配置以下前缀：
+对于前三个子网，根据虚拟网络地址空间指定名称和单个 IP 地址空间。 对于网关子网，请确定具有 /27 (长度为 /27 的 27 位地址空间，) 为 Azure 网关子网配置以下地址空间：
   
 1. 将 VNet 地址空间的可变位设置为 1，直到用于网关子网的位，然后将剩余位设置为 0。
     
@@ -63,7 +63,7 @@ ms.locfileid: "59196811"
   
 |**项**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务 (AD DS) 域控制器和目录同步服务器虚拟机 (VM) 。  <br/> |
+|1.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务使用的子网 (AD DS) 域控制器和目录同步服务器虚拟机 (VM) 。  <br/> |
 |2.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |AD FS VM 使用的子网。  <br/> |
 |3.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理 VM 使用的子网。  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |Azure 网关 VM 使用的子网。  <br/> |
@@ -85,7 +85,7 @@ ms.locfileid: "59196811"
    
  **表 I：虚拟网络中的静态 IP 地址**
   
-对于本地网络中最初在虚拟网络中设置域控制器时想要使用的两个域名系统 (DNS) 服务器，请填写表 D。与 IT 部门合作以确定此列表。
+对于本地网络中最初设置域控制器时想要使用的两个域名系统 (DNS) 服务器，请填写表 D。与 IT 部门合作以确定此列表。
   
 |**项**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
 |:-----|:-----|:-----|
@@ -94,7 +94,7 @@ ms.locfileid: "59196811"
    
  **表 D：本地 DNS 服务器**
   
-若要通过站点到站点 VPN 连接将数据包从跨界网络路由到组织网络，必须使用本地网络配置虚拟网络，该本地网络在 CIDR 表示法) 中具有地址空间 (的列表，这些地址空间位于组织本地网络的所有可到达位置。 定义本地网络的地址空间列表必须是唯一的，并且不能与其他虚拟网络或其他本地网络所使用的地址空间重叠。
+若要通过站点到站点 VPN 连接将数据包从跨界网络路由到组织网络，必须使用本地网络配置虚拟网络，该本地网络具有 CIDR 表示法 () 中所有可到达位置的地址空间) 列表。 定义本地网络的地址空间列表必须是唯一的，并且不能与其他虚拟网络或其他本地网络所使用的地址空间重叠。
   
 对于本地网络地址空间集，请填写表 L。请注意已列出三个空白条目，但通常需要更多。与 IT 部门协作，以确定该地址空间列表。
   
@@ -300,7 +300,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 这是该阶段成功完成后生成的配置。
   
-**第 1 阶段：用于高可用性联合身份验证的 Azure 基础结构Microsoft 365**
+**阶段 1：用于高可用性联合身份验证的 Azure 基础结构Microsoft 365**
 
 ![第 1 阶段的高可用性Microsoft 365 Azure 中的联合身份验证和 Azure 基础结构。](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
@@ -316,4 +316,4 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 [Microsoft 365 解决方案和体系结构中心](../solutions/index.yml)
 
-[了解Microsoft 365标识和Azure Active Directory](about-microsoft-365-identity.md)
+[了解Microsoft 365标识Azure Active Directory](about-microsoft-365-identity.md)

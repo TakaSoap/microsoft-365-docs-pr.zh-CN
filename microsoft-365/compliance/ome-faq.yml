@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: 对新的邮件保护功能如何工作有疑问？ 请在此处查看答案。
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 4dcac8a2b4a33b70bfe94421b4813412d012db46
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: 8b9e9b17aa09c535529488bbd3b73abc9d9c1170
+  ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60177479"
+  ms.lasthandoff: 10/07/2021
+  ms.locfileid: "60217109"
 title: 邮件加密常见问题解答
 summary: >
   对新的邮件保护功能如何工作有疑问？ 请在此处查看答案。 此外，请参阅 Azure[](/information-protection/get-started/faqs-rms)信息保护中有关数据保护的常见问题解答，以解答有关 Azure 信息保护中数据保护服务（Azure 权限管理）的问题。
@@ -60,11 +60,11 @@ sections:
     answer: "本地用户可以使用邮件流规则发送加密Exchange Online邮件。 为此，你需要通过邮件路由Exchange Online。 有关详细信息，请参阅第[2 部分：将邮件配置为从您的电子邮件服务器流动到Microsoft 365。](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)\n  \n"
   - question: >
       我需要使用什么电子邮件客户端才能创建 OME 加密邮件？ 哪些应用程序支持发送受保护的邮件？
-    answer: "可以从 Outlook 2016、Outlook 2013 for Windows 和 Mac 以及 Outlook 网页版 创建受保护的Outlook 网页版。 有关发送加密邮件的信息，请参阅在适用于电脑的 Outlook 中发送[、查看和回复加密邮件](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)。\n  \n"
+    answer: "可以从 Outlook 2016、Outlook 2013 for Windows 和 Mac 以及 Outlook 网页版 创建受保护的Outlook 网页版。 有关发送加密邮件的信息，请参阅在适用于电脑的 Outlook 中发送、查看[和回复加密邮件](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)。\n  \n"
   - question: >
       支持哪些电子邮件客户端阅读和回复受保护的电子邮件？
     answer: >
-      Microsoft 365用户可以从 Outlook for Windows 和 Mac (2013、2016) 、Outlook 网页版 和 Outlook Mobile (Android 和 iOS) 进行读取和响应。 如果组织允许，您还可以使用 iOS 本机邮件客户端。 如果你不是Microsoft 365用户，可以通过 Web 浏览器读取和回复 Web 上的加密邮件。
+      Microsoft 365用户可以从 Outlook for Windows、Mac (2013 和 2016) 、Outlook 网页版 和 Outlook Mobile (Android 和 iOS) 进行读取和响应。 如果组织允许，您还可以使用 iOS 本机邮件客户端。 如果你不是Microsoft 365用户，可以通过 Web 浏览器读取和回复 Web 上的加密邮件。
   - question: >
       哪些电子邮件客户端支持仅加密保护的电子邮件？
     answer: >
@@ -72,20 +72,20 @@ sections:
   - question: >
       可以使用 OME 发送的邮件是否有大小限制？
     answer: >
-      是。 可以使用 OME 发送的最大邮件大小（包括附件）为 25 MB。 有关详细信息，请参阅邮件 [限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1)。
+      是。 可以与 OME 一起发送的最大邮件大小（包括附件）为 25 MB。 有关详细信息，请参阅邮件 [限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1)。
   - question: >
       受保护的电子邮件中支持哪些文件类型作为附件？ 附件是否继承了与受保护的电子邮件相关联的保护策略？
-    answer: "您可以将任何文件类型附加到受保护的邮件。 有一个例外，保护策略仅适用于 Azure 信息保护客户端支持的文件类型中提到的 [文件格式](/information-protection/rms-client/client-admin-guide-file-types)。 OME 不支持以下 97-2003 版本的以下 Office 程序：Word (.doc) 、Excel (.xls) 和 PowerPoint (.ppt) 。\n\n如果文件格式（如 Word、Excel 或 PowerPoint 文件）受支持，则即使收件人已下载附件，文件也始终受到保护。 例如，假设附件受\"请勿转发\"保护。 原始收件人下载文件，创建一封邮件给新收件人并附加到该文件。 当新收件人收到该文件时，该收件人将无法打开受保护的文件。\n  \n"
+    answer: "您可以将任何文件类型附加到受保护的邮件。 有一个例外，保护策略仅适用于 Azure 信息保护客户端支持的文件类型中提到的 [文件格式](/information-protection/rms-client/client-admin-guide-file-types)。 OME 不支持以下 97-2003 版本的 Office 程序：Word (.doc) 、Excel (.xls) 和 PowerPoint (.ppt) 。\n\n如果文件格式（如 Word、Excel 或 PowerPoint 文件）受支持，则即使收件人已下载附件，文件也始终受到保护。 例如，假设附件受\"请勿转发\"保护。 原始收件人下载文件，创建一封邮件给新收件人并附加到该文件。 当新收件人收到该文件时，该收件人将无法打开受保护的文件。\n  \n"
   - question: >
       PDF 文件附件是否受支持？
     answer: >
-      简短回答是"是"！ 如果启用，PDF 加密允许您通过安全通信或安全协作来保护敏感的 PDF 文档。 当您发送电子邮件时，Office 365加密 PDF 文件附件。 客户端Outlook不加密 PDF 文件附件。
+      简短回答是"是"！ 如果启用，PDF 加密允许您通过安全通信或安全协作来保护敏感的 PDF 文档。 当您发送电子邮件时，Office 365服务会加密 PDF 文件附件。 客户端Outlook不加密 PDF 文件附件。
 
 
       For Outlook 网页版， Outlook for iOS， and Outlook for Android， you can encrypt PDF you send without any more steps. 这些客户端本机支持 PDF 加密。
 
 
-      Outlook桌面不支持对 PDF 文件附件进行本机加密。 相反，您需要设置邮件流规则Exchange DLP，以首先对 PDF 附件应用加密。 当您从带 PDF Outlook桌面发送邮件时，客户端会首先将包含附件的邮件发送到服务。 当服务收到文件时，该服务将应用数据丢失防护的 OME 保护 (DLP) 策略或邮件流规则Exchange Online。 接下来，Exchange Online发送带受保护 PDF 文件附件的邮件。
+      Outlook桌面不支持对 PDF 文件附件进行本机加密。 相反，您需要设置邮件流规则Exchange DLP，以首先对 PDF 附件应用加密。 当你从桌面Outlook PDF 附件时，客户端会首先将包含附件的邮件发送到服务。 当服务接收文件时，该服务将应用数据丢失防护的 OME 保护 (DLP) 策略或邮件流规则Exchange Online。 接下来，Exchange Online发送带受保护 PDF 文件附件的邮件。
 
 
       若要启用 PDF 附件加密，请运行[PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中的Exchange Online命令：
@@ -103,14 +103,14 @@ sections:
 
       > [!IMPORTANT]
 
-      > Outlook客户端不支持 PDF 加密。
+      > Outlook桌面客户端不支持 PDF 加密。
   - question: >
-      是否OneDrive for Business附件？
+      是否SharePoint联机或OneDrive for Business附件？
     answer: >
-      Not yet. OneDrive for Business附件不受支持，最终用户无法加密包含云附件OneDrive for Business邮件。
+      Not yet. SharePoint不支持OneDrive for Business或加密附件，最终用户可以加密邮件，但不能加密云附件。
   - question: >
       哪些电子邮件客户端支持预览受保护的电子邮件中的加密附件？
-    answer: "当附件受受保护邮件保护时，Outlook客户端提供直接预览文档的能力。 Outlook支持预览文档Office docx、xlsx (pptx、doc、xls、ppt) 。 Outlook 网页版 docx、xlsx (pptx 文档和 PDF Office文档) 预览。  \n"
+    answer: "当附件受受保护邮件保护时，Outlook客户端提供直接预览文档的能力。 Outlook文档预览Office (docx、xlsx、pptx、doc、xls、ppt) 。 Outlook 网页版 docx Office、xlsx (pptx 文档和 PDF) 文档预览。  \n"
   - question: >
       哪些电子邮件客户端支持吊销受保护的电子邮件？
     answer: >
@@ -135,7 +135,7 @@ sections:
   - question: >
       能否将邮件加密与电子数据展示等合规性功能一同使用？
     answer: >
-      是。 Microsoft 365合规性功能可以发现所有加密的电子邮件。 有关详细信息 [，请参阅支持加密项目的电子数据](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) 展示活动。
+      是的，大多数受 OME 保护的邮件都是可发现的。 OME 保护的邮件，您从另一个Microsoft 365通过邮件流规则应用了自定义品牌设置的组织接收，您的电子数据展示服务无法发现。 换句话说，如果邮件无法通过用户邮箱访问，而是仅通过指向 OME 门户的链接显示，则邮件不可搜索。 有关详细信息 [，请参阅支持加密项目的电子数据](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) 展示活动。
   - question: >
       能否从电子邮件中删除加密？
     answer: >
@@ -200,6 +200,10 @@ sections:
       打开加密邮件是否支持委派访问？ 即使代理具有对其他用户邮箱的完全访问权限？
     answer: >
       加密邮件的委派访问在 Outlook 网页版、Outlook for Mac、Outlook for iOS 和 Outlook for Android 中受支持。  Outlook Windows不支持委派访问权限。
+  - question: >
+      我可以在 OME 门户中访问邮件多久？
+    answer: >
+      只要发件人的组织处于活动状态且邮件尚未配置为过期，就可以登录到 OME 门户检索邮件。
   - question: >
       如果我在请求后没有收到一次传递代码，该怎么办？
     answer: >-

@@ -4,7 +4,7 @@ description: 调查用户的事件在 Microsoft 365 Defender 门户。
 keywords: 安全， 恶意软件， Microsoft 365， M365， 安全中心， 监视， 报告， 标识， 数据， 设备， 应用， 事件， 分析， 响应
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d7decb3e566f8bb0abf4a3aec12e2e3a43ae3511
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f7145d2668f6c724644bf719dfd6414550af43c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197239"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209161"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>调查用户Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "59197239"
 
 - Microsoft 365 Defender
 
-事件调查的一部分可能包括用户帐户。 从事件 **和** 警报事件 _ _ **用户 的事件&** \> ***用户 \>* 选项卡开始**。
+事件调查的一部分可能包括用户帐户。 从事件 **和** 警报事件 _ _ 用户 **&事件的用户** 选项卡 \> ***\>* 开始**。
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例。":::
 
@@ -57,11 +57,11 @@ ms.locfileid: "59197239"
 
 通过选择"组"下的号码，可以看到用户的组 **成员身份**。
 
-:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="客户门户中用户的组成员身份Microsoft 365 Defender示例":::
+:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="用户门户中用户的组成员身份Microsoft 365 Defender示例":::
 
 通过选择"经理 **"** 下的图标，可以看到用户位于组织树中。
 
-"Microsoft 365 Defender门户用户页面将 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security (信息合并在一起，具体取决于你拥有哪些) 。
+"Microsoft 365 Defender门户用户页面将 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security (信息组合在一起，具体取决于你拥有哪些) 。
 
 此页面显示特定于用户帐户安全风险的信息。 这包括一个分数，可帮助评估风险以及导致用户的整体风险的最新事件和警报。
 
@@ -76,7 +76,7 @@ ms.locfileid: "59197239"
 
 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="事件门户中事件用户帐户Microsoft 365 Defender示例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="针对用户门户中事件的用户帐户Microsoft 365 Defender示例":::
 
 <!--
 You can access this page from multiple areas in the Microsoft 365 Defender portal. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  

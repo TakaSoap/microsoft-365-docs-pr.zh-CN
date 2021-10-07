@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中启用 SIEM 集成
-description: 启用 SIEM 集成，以在 SIEM 解决方案的安全信息和事件 (接收) 检测。
+description: 启用 SIEM 集成以在 SIEM 解决方案中接收安全 (事件) 检测。
 keywords: 启用 siem 连接器， siem， 连接器， 安全信息和事件
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6adb1ed443dc39be3b6d56adc6c3dac65f37ee3d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c102583b2e3d8abc7995821870252946e48ccac6
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222246"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217134"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中启用 SIEM 集成
 
@@ -32,7 +32,7 @@ ms.locfileid: "59222246"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
-启用 SIEM (安全信息和事件) 集成，以便你可以从 SIEM Microsoft 365 Defender。 使用 SIEM 解决方案或直接连接到检测 REST API 拉取检测。
+在 SIEM (启用安全信息和事件) ，以便你可以从 SIEM 中拉取Microsoft 365 Defender。 使用 SIEM 解决方案或直接连接到检测 REST API 拉取检测。
 
 > [!NOTE]
 >
@@ -46,7 +46,7 @@ ms.locfileid: "59222246"
 
   - 安全管理员和全局管理员之一
   - 云 应用程序管理员
-  - 应用程序管理员
+  -  应用程序管理员
   - 服务主体的所有者
 
 - 在初始激活期间，将显示一个弹出屏幕以输入凭据。 请确保允许此网站的弹出窗口。
@@ -60,7 +60,7 @@ ms.locfileid: "59222246"
    > [!TIP]
    > 如果在尝试启用 SIEM 连接器应用程序时遇到错误，请检查浏览器的弹出窗口阻止程序设置。 启用该功能时，它可能会阻止打开的新窗口。
 
-2. 选择 **启用 SIEM 集成**。 这会使用预填充的值激活 **SIEM** 连接器访问详细信息部分，并且应用程序在 Azure Active Directory (Azure AD) 租户下创建。
+2. 选择 **启用 SIEM 集成**。 这会使用预填充的值激活 **SIEM** 连接器访问详细信息部分，并且应用程序是在 Azure AD Azure Active Directory (租户) 创建的。
 
     > [!WARNING]
     > 客户端密码只显示一次。 请确保将其副本放在安全的位置。
@@ -90,7 +90,7 @@ ms.locfileid: "59222246"
 
 ## <a name="integrate-microsoft-defender-for-endpoint-with-ibm-qradar"></a>将 Microsoft Defender for Endpoint 与 IBM QRadar 集成
 
-你可以将 IBM QRadar 配置为从 Microsoft Defender for Endpoint 收集检测。 有关详细信息，请参阅 [IBM 知识库](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1)。
+你可以将 IBM QRadar 配置为从 Microsoft Defender for Endpoint 收集检测。 有关详细信息，请参阅 [IBM 知识库](https://www.ibm.com/docs/en/qsip/7.3.2?topic=quick-start-guide)。
 
 ## <a name="see-also"></a>另请参阅
 

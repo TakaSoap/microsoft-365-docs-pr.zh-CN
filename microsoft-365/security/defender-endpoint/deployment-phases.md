@@ -2,14 +2,13 @@
 title: 部署阶段
 description: 了解如何通过准备、设置和载入适用于终结点的终结点来部署 Microsoft Defender for Endpoint
 keywords: 部署， 准备， 设置， 载入， 阶段， 部署， 部署， 采用， 配置
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b5d7f7384d60a5353ce4c0363e07d3451e146598
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b7c9c4389506e59998609f7d960016abf694ebc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201206"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190529"
 ---
 # <a name="deployment-phases"></a>部署阶段
 
@@ -82,7 +81,7 @@ ms.locfileid: "59201206"
 
 ### <a name="in-scope"></a>在作用域内
 
-- 使用 Microsoft Endpoint Manager Microsoft Endpoint Manager将终结点载入服务并配置功能
+- 使用 Microsoft Endpoint Manager 和 Microsoft Endpoint Manager将终结点载入服务并配置功能
 - 启用 Defender 终结点检测和响应 (EDR) 功能
 - 启用适用于终结点保护平台的 Defender (EPP) 功能
   - 下一代保护

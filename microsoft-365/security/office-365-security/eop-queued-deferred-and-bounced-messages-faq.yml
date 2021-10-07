@@ -9,19 +9,19 @@ metadata:
   ms.date: 
   audience: ITPro
   ms.topic: troubleshooting
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
   ms.custom:
   - seo-marvel-apr2020
   description: 查找有关在 EOP 筛选过程中已排队、延迟或退回的邮件Exchange Online Protection (常见问题) 解答。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: c9c3343de6e61d660cf07e920661af8d996c3039
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 4de909072409b1ee01adb79ecb8f324b76c6a2fd
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59195942"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60190349"
 title: EOP 排队、延迟以及退回邮件的常见问题
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -36,7 +36,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  本主题针对在 EOP 筛选过程中排队、延迟或退回的邮件提供Exchange Online Protection (常见问题) 解答。
+  本主题提供在 EOP 筛选过程中排队、延迟或退回的邮件的Exchange Online Protection (常见问题) 解答。
 sections:
 - name: 已忽略
   questions:
@@ -51,7 +51,7 @@ sections:
   - question: >
       邮件保持延迟状态的时间以及重试间隔是什么？
     answer: >
-      延期的邮件将在我们的队列中保留 1 天。 重试发送邮件的依据为从收件人的邮件系统返回的错误。 前几个延迟为 15 分钟或更短，接下来的半十 (次重试数大约) 将多次重试间隔增加至最长 60 分钟。 考虑到队列大小和内部邮件优先级等多个变量，间隔持续时间扩展是动态的。 基本来说，需要 15 分钟 (或) 分钟，然后在这几个小时内从该开始扩展到最大值 60 分钟。
+      延期的邮件将在我们的队列中保留 1 天。 重试发送邮件的依据为从收件人的邮件系统返回的错误。 前几个延迟为 15 分钟或更短，接下来半十 (次重试大约) 将多次重试间隔增加至最长 60 分钟。 考虑到队列大小和内部邮件优先级等多个变量，间隔持续时间扩展是动态的。 基本来说，需要 15 分钟 (或) 分钟，然后在这几个小时内从该开始扩展到最大值 60 分钟。
   - question: >
       恢复您的电子邮件服务器后，如何分配排队的邮件？
     answer: 还原您的电子邮件服务器后，所有排队的邮件都会按照服务器不可用时接收和排队的顺序自动进行处理。

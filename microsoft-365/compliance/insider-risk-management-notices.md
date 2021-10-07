@@ -2,7 +2,7 @@
 title: 内部风险管理通知模板
 description: 了解企业版中的内部风险管理通知Microsoft 365
 keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 45ea1db3979616fec6039c699f7b73e698c346f7
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2b85576923a34400ab1e3e69846043362d806c1a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399882"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190745"
 ---
 # <a name="insider-risk-management-notice-templates"></a>内部风险管理通知模板
 
-通过内部风险管理通知模板，您可以在为已生成策略匹配和已确认警报的活动创建案例时自动向用户发送电子邮件。 对于大多数生成案例的警报，用户操作是错误或无意活动的结果，没有恶意。 通知可让用户更加小心、提供刷新培训信息或公司策略资源的链接， 通知可以是内部合规性培训计划的重要部分，并且有助于为具有定期风险活动的用户创建记录审核线索。
+通过内部风险管理通知模板，您可以在为已生成策略匹配和已确认警报的活动创建案例时自动向用户发送电子邮件。 对于大多数生成案例的警报，用户操作是错误或无意活动的结果，没有恶意目的。 通知可让用户更加小心、提供刷新培训信息或公司策略资源的链接， 通知可以是内部合规性培训计划的重要部分，并且有助于为具有定期风险活动的用户创建记录审核线索。
 
 如果要在案例解决过程中向用户发送策略匹配项的电子邮件提醒通知，请创建通知模板。 通知只能发送到与所审阅的特定案例关联的用户电子邮件地址。 选择要应用于策略匹配的通知模板时，可以选择接受模板中定义的字段值或根据需要覆盖字段
 
@@ -49,7 +49,7 @@ ms.locfileid: "59399882"
 ```
 
 > [!NOTE]
-> 内部风险管理通知模板中的 HTML href 属性实现目前仅支持单引号，而不支持 URL 引用的双引号。
+> 内部风险管理通知模板中的 HTML href 属性实现当前仅支持单引号，而不支持 URL 引用的双引号。
 
 ## <a name="create-a-new-notice-template"></a>创建新的通知模板
 
@@ -80,7 +80,7 @@ ms.locfileid: "59399882"
     - **"抄** 送"和"密件抄送"字段：更新要收到策略匹配通知的可选用户或组（从订阅的 Active Directory 选择）。
     - **主题**：更新邮件主题行中显示的信息，支持文本字符。
     - **邮件正文**：更新邮件正文中显示的信息，支持文本或 HTML 值。
-5. 选择 **"保存** "更新并保存通知，或选择 **"** 取消"关闭而不保存通知模板。
+5. 选择 **"保存** "更新并保存通知，或 **选择"** 取消"关闭而不保存通知模板。
 
 ## <a name="delete-a-notice-template"></a>删除通知模板
 

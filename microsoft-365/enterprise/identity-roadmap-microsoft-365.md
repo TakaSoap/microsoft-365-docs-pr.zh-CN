@@ -9,31 +9,31 @@ ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 ms.custom: ''
 description: 用户标识的Microsoft 365。
-ms.openlocfilehash: 27abe04da2fed0eaae09fa0ed42a83286fe74f5d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5f0584ef9a14c81ba3a81491a5ef79d32d44d6e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162362"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178787"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 的识别指南
 
 在 Microsoft 365 企业版中，精心规划和执行的标识基础结构为增强安全性提供途径，包括将工作效率工作负载及其数据的访问权限限制为仅经过身份验证的用户和设备。
 
-有关适用于企业的 Microsoft 365 标识模型和身份验证的概述，请观看此视频。
+有关企业用户标识模型和身份验证Microsoft 365，请观看此视频。
 
 <p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-有关企业计划的每个 Microsoft 365 的标识功能、Azure Active Directory 的角色、本地和基于云的组件以及最常见的身份验证配置的信息，请参阅标识[基础结构海报](../downloads/m365e-identity-infra.pdf)。
+有关每个 Microsoft 365 企业计划的标识功能、Azure Active Directory 的角色、本地和基于云的组件以及最常见的身份验证配置的信息，请参阅标识[基础结构海报](../downloads/m365e-identity-infra.pdf)。
 
 [![标识基础结构海报。](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 

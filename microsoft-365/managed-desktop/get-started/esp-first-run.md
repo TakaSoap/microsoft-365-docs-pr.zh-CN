@@ -8,14 +8,14 @@ ms.author: jaimeo
 manager: laurawi
 audience: ITpro
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3037225e2d628345b672bfae145bcba570cbbc23
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8c73ff558165a370e5709a1e43482d689dd7953d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170545"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178607"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>使用 Autopilot 和注册状态页的首次运行体验
 
@@ -39,7 +39,7 @@ Microsoft 托管桌面在用于用户设备的 Autopilot 配置文件中使用�
 |部署模式|用户驱动|
 |作为 加入 Azure AD|已加入 Azure AD|
 |语言 (区域) |用户选择|
-|自动配置键盘|不支持|
+|自动配置键盘|否|
 |Microsoft 软件许可条款|隐藏|
 |隐私设置|隐藏|
 |隐藏更改帐户选项|Show|
@@ -51,7 +51,7 @@ Microsoft 托管桌面在用于用户设备的 Autopilot 配置文件中使用�
 
 ## <a name="enrollment-status-page-settings"></a>注册状态页面设置
 
-Microsoft 托管桌面注册状态页面体验使用这些设置：
+Microsoft 托管桌面这些设置用于"注册状态页面"体验：
 
 <br>
 
@@ -61,7 +61,7 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 |---|---|
 |显示应用和配置文件配置进度|是|
 |当安装时间超过指定分钟数时显示错误|60|
-|在出现时间限制错误时显示自定义消息|不支持|
+|在出现时间限制错误时显示自定义消息|否|
 |允许用户收集有关安装错误的日志|是|
 |仅在 OOBE 设备上通过开箱使用体验预配 (页面) |是|
 |在安装所有应用和配置文件之前阻止设备使用|是|
@@ -75,8 +75,8 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 体验将按如下方式进行：
 
 1. Autopilot 体验将启动，并且用户输入其凭据。
-2. 设备打开注册状态页，然后继续执行设备准备和设备设置阶段。 帐户 (配置) 跳过第三步Microsoft 托管桌面用户 ESP已禁用。 设备重新启动。
-3. 重新启动后，设备将打开Windows其他用户的登录 **页面**。
+2. 设备打开注册状态页，然后继续执行设备准备和设备设置阶段。 帐户设置 (第) 步骤当前在 Microsoft 托管桌面 配置中已跳过，因为用户 ESP 已禁用。 设备重新启动。
+3. 重新启动后，设备将打开Windows其他用户登录 **页面**。
 4. 用户再次输入其凭据，桌面将打开。
 
 > [!NOTE]
@@ -90,7 +90,7 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 - 设备必须具有有线网络连接。
 - 如果你有在 2020 年 8 月之前使用 Microsoft 托管桌面 门户注册的设备，请取消注册并再次注册它们。
 - 设备必须具有包含 2020 年 11 月累积更新[19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3)或[20H1 2020.11C](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e)的出厂映像（如果已安装）或必须用最新的 Microsoft 托管桌面 映像进行重新映像。
-- 物理设备必须支持 TPM 2.0 和设备证明。 不支持虚拟机。 预配过程使用 autopilot Windows部署功能，因此需要 TPM 2.0。 TPM 证明过程还要求访问每个 TPM 提供程序唯一的一组 HTTPS URL。 有关详细信息，请参阅 Autopilot 自部署模式条目和 Autopilot 网络要求中的 Autopilot Windows[预配部署。](/mem/autopilot/networking-requirements#tpm)
+- 物理设备必须支持 TPM 2.0 和设备证明。 不支持虚拟机。 预配过程使用 autopilot Windows部署功能，因此需要 TPM 2.0。 TPM 证明过程还要求访问每个 TPM 提供程序唯一的一组 HTTPS URL。 有关详细信息，请参阅 Autopilot 自部署模式条目和 Autopilot 网络要求中的 Autopilot Windows[预配部署](/mem/autopilot/networking-requirements#tpm)。
 
 ## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>用于预预配部署的 Autopilot 中的事件序列
 
@@ -98,7 +98,7 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 2. IT 管理员启动设备、获得开箱即用体验，然后按 Windows键五次。
 3. IT 管理员选择Windows Autopilot 预配"，然后选择"继续 **"。** 在Windows Autopilot 配置屏幕上，将显示有关设备的信息。
 4. IT 管理员选择 **预配** 以开始预配过程。
-5. 设备启动 ESP 并完成设备准备和设置阶段。 在设备设置阶段，你将看到显示 x 的应用安装 **x， (** ESP 配置文件配置) 。
+5. 设备启动 ESP 并完成设备准备和设置阶段。 在设备设置阶段，你将看到显示 x 的应用安装 **x， (** ESP 配置文件设置的准确) 。
 6. 帐户设置步骤当前已跳过Microsoft 托管桌面配置中，因为我们禁用了用户 ESP。
 7. 设备重新启动。
 
@@ -112,7 +112,7 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 
 ## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>更改为 Autopilot 和注册状态页面设置
 
-如果你使用的安装程序Microsoft 托管桌面你的需求完全匹配，可以通过管理门户提交[支持票证](https://portal.azure.com/)。 下面是您可能需要的配置类型的一些示例：
+如果你使用的安装程序Microsoft 托管桌面你的需求完全匹配，可以通过管理门户提交支持[票证](https://portal.azure.com/)。 下面是您可能需要的配置类型的一些示例：
 
 ### <a name="autopilot-settings-change"></a>Autopilot 设置更改
 
@@ -133,7 +133,7 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 - 理想情况下，应用不应有任何依赖关系。 如果你有 *必须具有依赖项* 的应用，请确保在 ESP 评估中配置、测试和验证它们。
 - Microsoft Teams包含在 ESP 中。
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用Microsoft 托管桌面
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
 
 1. 访问 [管理员门户](access-admin-portal.md)。
 1. [在管理门户中添加和验证管理员联系人](add-admin-contacts.md)。

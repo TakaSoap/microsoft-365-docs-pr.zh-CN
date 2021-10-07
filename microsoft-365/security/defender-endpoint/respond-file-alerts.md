@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3169464afe92a8af80df1b6dedfd9f7eb806a402
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 816e08c4c6ba3b2a50c981401163531d2b5d63c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042622"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198153"
 ---
 # <a name="take-response-actions-on-a-file"></a>对文件执行响应操作
 
@@ -49,7 +49,7 @@ ms.locfileid: "60042622"
 
 还可以提交文件进行深入分析，以在安全的云沙盒中运行该文件。 分析完成后，您将获得提供有关文件行为的信息的详细报告。 可以通过选择"深入分析"选项卡来提交文件进行深入分析并阅读 **过去的** 报告。它位于文件信息卡下方。
 
-某些操作需要某些权限。 下表介绍了某些权限对 PE 文件和非 PE (可执行文件) 的操作：
+某些操作需要某些权限。 下表介绍了某些权限对 PE 文件和非 PE (可执行) 可以执行哪些操作：
 
 <br>
 
@@ -148,7 +148,7 @@ ms.locfileid: "60042622"
 
 ## <a name="download-or-collect-file"></a>下载或收集文件
 
-从 **响应** 操作中选择"下载文件"，可下载包含文件的本地受密码保护.zip文件存档。 将出现一个飞出图，可在其中记录下载文件的原因并设置密码。
+从 **响应** 操作中选择"下载文件"，可下载包含文件.zip受密码保护的本地文件存档。 将出现一个飞出图，可在其中记录下载文件的原因并设置密码。
 
 默认情况下，您应该能够下载隔离的文件。
 
@@ -160,7 +160,7 @@ ms.locfileid: "60042622"
 
 位置取决于组织的地理位置设置 (欧盟、英国或美国) 。 每个组织仅收集一次隔离文件。 若要详细了解 Microsoft 数据保护，请通过 服务信任门户了解 https://aka.ms/STP 。
 
-启用此设置可帮助安全团队检查潜在的错误文件，并快速且风险较低地调查事件。 但是，如果需要关闭此设置，请转到"设置 \> **终结点** 高级 \> **功能** \> **下载隔离** 文件"以调整设置。 [详细了解高级功能](advanced-features.md)
+启用此设置可帮助安全团队检查潜在的错误文件，并快速且风险较低地调查事件。 但是，如果你需要关闭此设置，请转到设置 \> **终结点** 高级 \> **功能** \> **下载隔离** 文件以调整设置。 [详细了解高级功能](advanced-features.md)
 
 #### <a name="backing-up-quarantined-files"></a>备份隔离的文件
 
@@ -171,7 +171,7 @@ ms.locfileid: "60042622"
 > [!IMPORTANT]
 > 下载隔离文件要求：
 >
-> - 你的组织在Microsoft Defender 防病毒模式下使用用户
+> - 你的组织Microsoft Defender 防病毒活动模式
 > - 防病毒引擎版本为 1.1.17300.4 或更高版本。 请参阅 [每月平台和引擎版本](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 > - 启用基于云的保护。 请参阅 [启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - 示例提交已打开
@@ -192,7 +192,7 @@ ms.locfileid: "60042622"
 > - 如果你的组织使用云保护并启用Microsoft Defender 防病毒，此功能可用。 有关详细信息，请参阅管理 [云提供的保护](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 >
 > - 反恶意软件客户端版本必须为 4.18.1901.x 或更高版本。
-> - 此功能旨在防止从 (下载可疑的恶意软件) 或潜在的恶意文件。 它当前支持可移植的可执行 (PE) _文件，包括__.exe和.dll_ 文件。 覆盖范围将随着时间的推移而延长。
+> - 此功能旨在防止从 (下载可疑的恶意软件) 潜在的恶意文件。 它当前支持可移植的可执行 (PE) _文件，包括_.exe和 _.dll_ 文件。 覆盖范围将随着时间的推移而延长。
 > - 此响应操作适用于 Windows 10 版本 1703 或更高版本上的设备。
 > - 如果在允许或阻止操作之前文件分类存在于设备的缓存中，则不能对文件执行允许或阻止功能。
 
@@ -203,7 +203,7 @@ ms.locfileid: "60042622"
 
 ### <a name="enable-the-block-file-feature"></a>启用阻止文件功能
 
-若要开始阻止文件，首先需要打开"[](advanced-features.md)阻止或允许"设置。
+若要开始阻止文件，首先需要打开"阻止或允许"[功能设置。  ](advanced-features.md)
 
 ### <a name="allow-or-block-file"></a>允许或阻止文件
 
@@ -253,12 +253,12 @@ ms.locfileid: "60042622"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
-**当文件在** Defender for Endpoint 后端示例集合中可用时或在支持提交到深入分析的 Windows 10 设备上观察到该文件时，将启用提交进行深度分析。
+**当文件在** Defender for Endpoint 后端示例集合中可用时，或在支持提交到深入分析的 Windows 10 设备上观察到该文件时，将启用提交进行深度分析。
 
 > [!NOTE]
 > 只能自动Windows 10文件。
 
-如果文件未在 Windows 10 设备上观测到，则还可以通过 [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx)安全中心门户提交示例，并等待"提交"**进行** 深入分析按钮变为可用。
+如果文件未在 Windows 10 设备上观测到，还可以通过 [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx)安全中心门户提交示例，并等待"提交"**进行** 深入分析按钮变为可用。
 
 > [!NOTE]
 > 由于 Microsoft 安全中心门户中的后端处理流，文件提交和 Defender for Endpoint 中深入分析功能的可用性之间最多存在 10 分钟的延迟。
@@ -303,7 +303,7 @@ ms.locfileid: "60042622"
 
 如果在尝试提交文件时遇到问题，请尝试以下每个疑难解答步骤。
 
-1. 确保该文件是 PE 文件。 PE 文件 _通常.exe或_.dll可执行 _程序_ (应用程序的扩展) 。
+1. 确保该文件是 PE 文件。 PE 文件 _通常具有.exe__或.dll_ 可执行 (应用程序的扩展) 。
 
 2. 确保服务具有对文件的访问权限，它仍然存在，并且尚未损坏或修改。
 

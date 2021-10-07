@@ -6,20 +6,20 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: scheduler
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 计划程序计划程序Microsoft 365。
-ms.openlocfilehash: 0b87555075bd9ac147579156897f545fbfe33020
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75e6cc4e44dd15ce7c023d96861598ce8167c650
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197291"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178511"
 ---
 # <a name="welcome-to-scheduler-for-microsoft-365"></a>欢迎使用计划程序进行Microsoft 365
 
-Microsoft 365计划程序是一项服务，允许您将会议安排和约会安排委派给数字Cortana助理。 
+会议Microsoft 365计划程序是一项服务，允许您将会议与约会计划委派给数字Cortana助理。 
 
-计划程序使用自然语言处理来解释发送到会议Cortana (cortana@yourdomain.com) 查找会议组织者的会议和发送日历邀请的时间。   
+计划程序使用自然语言处理来解释发送到会议Cortana (cortana@yourdomain.com) 查找会议组织者的会议时间并发送日历邀请。   
 
 计划程序： 
 
@@ -29,8 +29,8 @@ Microsoft 365计划程序是一项服务，允许您将会议安排和约会安�
 - 及时通知会议组织者计划进度，并根据需要向组织者请求指导。
 - 协商在最多两个不同的时区开会的时间。
 - 从组织者向会议发送邀请。
-- 将Teams添加到每个会议。
-- 重新安排或取消由会议安排Cortana。
+- 将一Teams会议链接添加到每个会议。
+- 重新安排或取消由会议安排的会议Cortana。
 - 通过有权访问电子邮件的任何设备工作。
 
 ## <a name="who-can-benefit-from-scheduler-for-microsoft-365"></a>Who计划程序能否从Microsoft 365？
@@ -45,12 +45,12 @@ Microsoft 365计划程序是一项服务，允许您将会议安排和约会安�
 
 若要使用计划程序，Cortana电子邮件地址添加到与要会面的人的电子邮件中，并要求Cortana以自然语言预订会议。 
 
-在请求中，Cortana您希望会面多久以及何时开会。 例如 **，"Cortana，请找到 45 分钟让我们下周开会。"**
+在请求中，Cortana您希望在多久和何时开会。 例如 **，"Cortana，请找到 45 分钟让我们下周开会。"**
 
 用户向会议发送会议请求Cortana计划程序服务： 
 
 - 根据组织者和与会者在同一租户中的可用性查找会议时间。
-- 如果组织者无法访问与会者的出席情况，Cortana通过电子邮件与这些与会者会面。 
+- 如果组织者无法访问与会者的出席情况，Cortana通过电子邮件协商与这些与会者会面的时间。 
 - 找到相互同意的时间后，Cortana添加Teams会议并发送日历邀请。 
 
 ## <a name="pricing-and-licensing"></a>定价和许可

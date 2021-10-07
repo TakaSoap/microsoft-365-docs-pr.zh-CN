@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5ecab217a6181096e4689d78fa2bdddc0a767d0d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c328094c9b9443b4e130ce91d418fa2694e7c402
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196000"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190469"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -35,7 +35,7 @@ ms.locfileid: "59196000"
 **适用于：**
 - Microsoft 365 Defender
 
-高级搜寻架构中的表包含与 `AlertEvidence` 来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的警报相关联的各种实体（文件、IP 地址、URL、用户或设备）的信息[](advanced-hunting-overview.md)。 使用此参考来构建从此表返回信息的查询。
+高级搜寻架构中的表包含与 `AlertEvidence` 来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的警报关联的各种实体（文件、IP 地址、URL、用户或设备）的信息[](advanced-hunting-overview.md)。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -43,35 +43,35 @@ ms.locfileid: "59196000"
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `AlertId` | string | 警报的唯一标识符 |
-| `ServiceSource` | 字符串 | 提供警报信息的产品或服务 |
-| `EntityType` | 字符串 | 对象类型，例如文件、进程、设备或用户 |
-| `EvidenceRole` | 字符串 | 如何在警报中涉及实体，以指示它是否受到影响或只是相关 |
-| `EvidenceDirection` | 字符串 | 指示实体是网络连接的来源还是目标 |
+| `ServiceSource` | string | 提供警报信息的产品或服务 |
+| `EntityType` | string | 对象类型，例如文件、进程、设备或用户 |
+| `EvidenceRole` | string | 如何在警报中涉及实体，以指示它是否受到影响或只是相关 |
+| `EvidenceDirection` | string | 指示实体是网络连接的来源还是目标 |
 | `FileName` | string | 录制操作所应用到的文件的名称 |
 | `FolderPath` | string | 包含已记录操作所应用到的文件的文件夹 |
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
 | `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不填充此字段 -使用 SHA1 列（如果可用）。 |
 | `FileSize` | int | 文件大小（以字节为单位） |
-| `ThreatFamily` | 字符串 | 可疑或恶意文件或进程的分类依据的恶意软件系列 |
+| `ThreatFamily` | string | 可疑或恶意文件或进程的分类依据的恶意软件系列 |
 | `RemoteIP` | string | 连接到的 IP 地址 |
 | `RemoteUrl` | string | 连接到的 URL 或完全限定域名 (FQDN) |
 | `AccountName` | string | 帐户的用户名 |
-| `AccountDomain` | 字符串 | 帐户的域 |
-| `AccountSid` | 字符串 | 帐户 (SID) 安全标识符 |
-| `AccountObjectId` | 字符串 | Azure Active Directory |
-| `AccountUpn` | 字符串 | 帐户 (UPN) 用户主体名称 |
-| `DeviceId` | 字符串 | 服务中设备的唯一标识符 |
+| `AccountDomain` | string | 帐户的域 |
+| `AccountSid` | string | 帐户 (SID) 安全标识符 |
+| `AccountObjectId` | string | Azure Active Directory |
+| `AccountUpn` | string | 帐户 (UPN) 的用户主体名称 |
+| `DeviceId` | string | 服务中设备的唯一标识符 |
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
 | `LocalIP` | string | 分配给通信过程中使用的本地设备的 IP 地址 |
 | `NetworkMessageId` | string | 由 Office 365 生成的电子邮件的唯一标识符 |
 | `EmailSubject` | string | 电子邮件主题 |
 | `ApplicationId` | string | 应用程序的唯一标识符 |
-| `Application` | 字符串 | 执行录制的操作的应用程序 |
-| `ProcessCommandLine` | 字符串 | 用于创建新过程的命令行 |
-| `AdditionalFields` | 字符串 | 有关 JSON 数组格式的事件的其他信息 |
-| `RegistryKey` |字符串 | 已记录操作所应用到的注册表项 |
-| `RegistryValueName` |字符串 | 已记录操作所应用到的注册表值的名称 |
-| `RegistryValueData` |字符串 | 已记录操作应用于的注册表值的数据 |
+| `Application` | string | 执行录制的操作的应用程序 |
+| `ProcessCommandLine` | string | 用于创建新过程的命令行 |
+| `AdditionalFields` | string | 有关 JSON 数组格式的事件的其他信息 |
+| `RegistryKey` |string | 已记录操作所应用到的注册表项 |
+| `RegistryValueName` |string | 已记录操作所应用到的注册表值的名称 |
+| `RegistryValueData` |string | 已记录操作应用于的注册表值的数据 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

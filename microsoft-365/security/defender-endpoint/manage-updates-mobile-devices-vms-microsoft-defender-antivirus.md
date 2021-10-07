@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 212a746e217e071c4770e4830bd101f18bb27f3e
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 5e95167e5493e55e375dc5827531a6f22b139023
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491177"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178331"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>管理移动设备和虚拟机 （VM） 的更新
 
@@ -46,9 +46,9 @@ ms.locfileid: "59491177"
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>选择在没有 WSUS 连接的情况下在移动计算机上加入 Microsoft 更新
 
-当运行 Microsoft Defender 防病毒 未连接到企业网络或没有 WSUS 连接时，可以使用 Microsoft 更新使这些设备的安全智能保持最新。
+当运行 Microsoft Defender 防病毒 的移动设备未连接到企业网络或没有 WSUS 连接时，可以使用 Microsoft 更新使安全智能保持最新。
 
-这意味着，即使将 WSUS 设置为覆盖 Microsoft 更新， (Microsoft 更新) 保护更新也可以传递到设备。
+这意味着，保护更新可以通过 Microsoft 更新 (设备) 即使已设置 WSUS 覆盖 Microsoft 更新。
 
 可以通过以下方法之一选择在移动设备上使用 Microsoft 更新：
 
@@ -64,7 +64,7 @@ ms.locfileid: "59491177"
 
 3. 选择 **"策略****"，然后选择"管理模板"。**
 
-4. 展开树以Windows **签名** \> **Microsoft Defender 防病毒** \> **组件**。
+4. 展开树以Windows **签名Microsoft Defender 防病毒** \>  \> **组件**。
 
 5. 将 **"允许安全智能更新从 Microsoft 更新"设置为****"已启用"，** 然后选择"确定 **"。**
 

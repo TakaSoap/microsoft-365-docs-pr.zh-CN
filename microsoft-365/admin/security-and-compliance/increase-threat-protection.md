@@ -1,5 +1,5 @@
 ---
-title: 增强适用于企业Microsoft 365的威胁防护
+title: 提高适用于企业Microsoft 365的威胁防护
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置 Microsoft Defender Office 365保护敏感数据免受网络钓鱼、恶意软件和其他威胁。
-ms.openlocfilehash: 92b4ca45e03995fb3586f1abce9301de7ec33570
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 60a84b972618444fcddc4165235eef909f4341c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934043"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178163"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -62,9 +62,9 @@ ms.locfileid: "59934043"
 
 ## <a name="protect-against-ransomware"></a>防范勒索软件
 
-勒索软件通过加密文件或锁定计算机屏幕来限制对数据的访问。 然后，它尝试通过请求"勒索"（通常采用加密货币（如"Itin"）来从犯罪中勒索资金，以交换对数据的访问权限。
+勒索软件通过加密文件或锁定计算机屏幕来限制对数据的访问。 然后，它尝试通过请求"勒索"（通常采用加密货币（如"Itin"）来从犯罪中勒索资金，以交换对数据的访问。
 
-若要防范勒索软件，请创建一个或多个邮件流规则，以阻止通常用于勒索软件的文件扩展名。  (在提高邮件步骤中的恶意软件防护级别[](#raise-the-level-of-protection-against-malware-in-mail)中添加了这些规则。) 您还可以警告通过电子邮件接收这些附件的用户。
+若要防范勒索软件，请创建一个或多个邮件流规则，以阻止通常用于勒索软件的文件扩展名。  (在提高邮件步骤中恶意软件防护级别中添加[](#raise-the-level-of-protection-against-malware-in-mail)了这些规则。) 您还可以警告通过电子邮件接收这些附件的用户。
 
 除了在上一步中阻止的文件之外，最佳做法是创建一个规则，在打开包含宏的 Office 文件附件之前警告用户。 勒索软件可以隐藏在宏内，因此警告用户不要从他们不知道的人打开这些文件。
 
@@ -82,7 +82,7 @@ ms.locfileid: "59934043"
 
 6. 选择“**保存**”。
 
-|设置|在打开文件附件之前Office警告|
+|设置|在打开文件附件之前警告Office附件|
 |---|---|
 |名称|反勒索软件规则：警告用户|
 |在 中应用此规则。 . .|任何附件 。 . . 文件扩展名匹配 。 . .|
@@ -114,7 +114,7 @@ ms.locfileid: "59934043"
 
 6. 选择“**保存**”。
 
-|设置|在打开文件附件之前Office警告|
+|设置|在打开文件附件之前警告Office附件|
 |---|---|
 |名称|阻止电子邮件自动转发到外部域|
 |如果 ...|发件人 。 . . 是外部/内部 。 . . 组织内部|
@@ -125,11 +125,11 @@ ms.locfileid: "59934043"
 
 ## <a name="protect-your-email-from-phishing-attacks"></a>保护电子邮件免受网络钓鱼攻击
 
-如果已针对您的 Office 365 或 Microsoft 365 环境配置了一个或多个自定义域，您可以配置目标防钓鱼保护。 防钓鱼保护是 Microsoft Defender Office 365的一部分，可帮助保护你的组织免受基于恶意模拟的网络钓鱼攻击和其他网络钓鱼攻击。 如果尚未配置自定义域，则无需这样做。
+如果已针对您的 Office 365 或 Microsoft 365 环境配置了一个或多个自定义域，您可以配置目标防钓鱼保护。 防钓鱼保护是 Microsoft Defender Office 365的一部分，可帮助保护组织免受基于恶意模拟的网络钓鱼攻击和其他网络钓鱼攻击。 如果尚未配置自定义域，则无需这样做。
 
 我们建议你通过创建一个策略来保护最重要的用户和自定义域来开始使用此保护。
 
-若要在 Microsoft Defender for Office 365 创建防钓鱼策略，请观看[](../../business-video/setup-anti-phishing.md)此简短培训视频，或完成以下步骤：
+若要在 Microsoft Defender for Office 365创建防钓鱼策略，请观看此[](../../business-video/setup-anti-phishing.md)简短培训视频，或完成以下步骤：
 
 1. 转到 [https://protection.office.com](https://protection.office.com)。
 
@@ -139,7 +139,7 @@ ms.locfileid: "59934043"
 
 4. 在"**防钓鱼"页面上**，选择 **"+ 创建"。** 向导将启动，可分步定义防钓鱼策略。
 
-5. 按照下表中的建议指定策略的名称、说明和设置。 有关更多详细信息，请参阅了解 Microsoft Defender 中的反网络钓鱼策略[Office 365选项](../../security/office-365-security/set-up-anti-phishing-policies.md)。
+5. 按照下表中的建议指定策略的名称、说明和设置。 有关更多详细信息，请参阅了解 Microsoft Defender 中的反网络钓鱼策略[，了解Office 365选项](../../security/office-365-security/set-up-anti-phishing-policies.md)。
 
 6. 查看设置后，选择"创建此策略" **或** " **保存**"（如果适用）。
 
@@ -148,7 +148,7 @@ ms.locfileid: "59934043"
 |名称|域和最有价值的宣传活动人员|
 |说明|确保不会模拟最重要的员工和域。|
 |添加要保护的用户|选择 **+ 添加条件，收件人是**。 键入用户名或输入候选人、市场活动经理和其他重要员工成员的电子邮件地址。 您最多可以添加 20 个要防止模拟的内部和外部地址。|
-|添加要保护的域|选择 **+ 添加条件，收件人域为**。 如果已定义自定义域，请输入Microsoft 365订阅关联的自定义域。 可以输入多个域。|
+|添加要保护的域|选择 **+ 添加条件，收件人域为**。 如果定义了自定义域，请输入Microsoft 365订阅关联的自定义域。 可以输入多个域。|
 |选择操作|如果电子邮件由模拟用户发送：选择"将邮件重定向到其他电子邮件地址"，然后键入安全管理员的电子邮件地址;例如 *，Alice <span> <span> @contoso.com*。 如果电子邮件是由模拟域发送的：请选择“隔离邮件”。|
 |邮箱智能|默认情况下，创建新的反钓鱼策略时，将选择邮箱智能。 最好将此设置保留为“打开”。|
 |添加受信任的发件人和域|可以在此处添加您自己的域，或任何其他受信任域。|
@@ -166,7 +166,7 @@ ms.locfileid: "59934043"
 
 3. 在"策略"页上，选择 **"保险箱附件"。**
 
-4. 在"保险箱附件"页上，通过选中"打开 **ATP for SharePoint、OneDrive** 和 Microsoft Teams复选框来广泛应用此保护。
+4. 在"保险箱附件"页上，通过选中"为 SharePoint、OneDrive 和 Microsoft Teams 启用 **ATP"** 复选框来广泛应用此保护。
 
 5. 选择 **+** 以创建新策略。
 
@@ -186,7 +186,7 @@ ms.locfileid: "59934043"
 
 ## <a name="protect-against-phishing-attacks-with-safe-links"></a>使用链接抵御网络钓鱼保险箱攻击
 
-黑客有时会在电子邮件或其他文件中的链接中隐藏恶意网站。 保险箱链接是 Microsoft Defender for Office 365 的一部分，通过提供对电子邮件和文档内 Web 地址和 URL (的单击) 验证，Office保护组织。 保护通过链接保险箱定义。
+黑客有时会在电子邮件或其他文件中的链接中隐藏恶意网站。 保险箱链接是 Microsoft Defender for Office 365 的一部分，可通过提供电子邮件和 Office 文档中的 Web 地址 (URL) 点击时间验证，帮助保护Office组织。 保护通过链接保险箱定义。
 
 我们建议您执行以下操作：
 

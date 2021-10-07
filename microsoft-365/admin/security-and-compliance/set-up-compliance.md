@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置合规性功能以防止数据丢失，并帮助保护你和客户敏感信息的安全。
-ms.openlocfilehash: a7241c4abe3236b14935e42ab518c629a2558d21
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 09e9e0fda6969cc89a4eb6b5a106e7db5166e869
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934175"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178091"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
@@ -50,7 +50,7 @@ DLP 附带许多适用于许多不同区域设置的现成策略模板。 例如
     
 1. 在左侧导航中，转到"用户 \> **""活动用户"。**
     
-2. 选择要将其邮箱置于诉讼保留状态的用户。 在用户窗格中，展开"**邮件设置"，****在"更多** 设置"旁边，选择"编辑Exchange **属性"。**
+2. 选择要将其邮箱置于诉讼保留状态的用户。 在用户窗格中，展开"**邮件设置"，****在"更多** 设置"旁边，选择"编辑 **Exchange属性"。**
     
 3. On the mailbox page for the user， choose ** mailbox features ** on the left nav， and then choose the **Enable** link under **Litigation hold**.
     
@@ -60,7 +60,7 @@ DLP 附带许多适用于许多不同区域设置的现成策略模板。 例如
 
 ## <a name="set-up-sensitivity-labels"></a>设置敏感度标签
 
-敏感度标签随 Azure 信息保护 (AIP) 计划 1 提供，可帮助你通过应用标签分类文档和电子邮件，并选择性地保护文档和电子邮件。 标签可自动由定义规则和条件的管理员应用，由用户手动应用，也可结合使用为用户提供建议。
+敏感度标签随 Azure 信息保护 (AIP) 计划 1 一起提供，可帮助你通过应用标签对文档和电子邮件进行分类和选择性保护。 标签可自动由定义规则和条件的管理员应用，由用户手动应用，也可结合使用为用户提供建议。
 
 若要设置敏感度标签，请 [观看创建和管理敏感度标签](../../business-video/create-sensitivity-labels.md) 视频。
 

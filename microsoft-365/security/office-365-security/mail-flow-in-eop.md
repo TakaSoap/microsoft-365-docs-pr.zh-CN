@@ -8,19 +8,19 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解在 EOP 服务中配置邮件流和Exchange Online Protection () 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9636025796aee1ba2027edff38a16f131974134f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 56d6d29d92b97f1a85718d9b77c9e0a41c87b9f8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175301"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197877"
 ---
 # <a name="mail-flow-in-eop"></a>EOP 中的邮件流
 
@@ -31,7 +31,7 @@ ms.locfileid: "59175301"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在Microsoft 365具有 Exchange Online 邮箱的组织或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，发送到组织的所有邮件都先通过 EOP，然后工作人员才能看到这些邮件。 在邮件路由到工作人员收件箱之前，可以通过 EOP 路由邮件进行处理，有一些选项可供选择。
+在Microsoft 365具有 Exchange Online 邮箱的组织，或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，发送到组织的所有邮件都先通过 EOP，然后工作人员才能看到这些邮件。 在邮件路由到工作人员收件箱之前，可以通过 EOP 路由邮件进行处理，有一些选项可供选择。
 
 ## <a name="working-with-messages-and-message-access-options"></a>使用邮件和邮件访问选项
 
@@ -41,7 +41,7 @@ EOP 提供了邮件路由方式的灵活性。 以下主题说明了邮件流过
 
 [View or edit accepted domains in EOP](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) 介绍如何管理与 EOP 服务关联的域。
 
-如果将子域添加到组织，则 EOP 服务也可以帮助您管理这些子域。 有关子域的更多信息，请通过 为 Exchange Online[中的子域启用邮件流](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)。
+如果将子域添加到组织，则 EOP 服务也可以帮助您管理这些子域。 有关子域的更多信息，请通过 在 Exchange Online[中为子域启用邮件流](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)。
 
 [使用连接器配置邮件流](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) 介绍了连接器，并展示了如何使用连接器自定义邮件路由。 方案包括确保与合作伙伴组织进行安全通信，并设置智能主机。
 
@@ -53,4 +53,4 @@ EOP 提供了邮件路由方式的灵活性。 以下主题说明了邮件流过
 
 要验证包括连接器配置在内的 EOP 安装是否正常工作，请参阅[设置 EOP 服务](/exchange/standalone-eop/set-up-your-eop-service)中的"您如何知道此任务有效？"部分。
 
-[通过验证邮件流Microsoft 365连接器](/exchange/mail-flow-best-practices/test-mail-flow)提供了测试邮件流是否正确设置的说明。
+[通过验证您的邮件流Microsoft 365连接器](/exchange/mail-flow-best-practices/test-mail-flow)提供了用于测试您的邮件流是否正确设置的说明。

@@ -8,30 +8,30 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how Advanced eDiscovery in Microsoft 365 supports Chinese， Japanese， and Korean (CJK) languages， which use a double-byte character set.
-ms.openlocfilehash: bcab34e8232a77cecf7d7331d75d140f73e4db37
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解Advanced eDiscovery语言Microsoft 365支持使用双字节字符集的 CJK (CJK) 语言。
+ms.openlocfilehash: 0d6287afb373c6c1c51ea61de3906ce994590e87
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200582"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197613"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>CJK 语言支持Advanced eDiscovery
 
-Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体中文、日语和朝鲜语，这些语言统称为 *CJK* 语言) ，用于审阅集的以下高级方案：
+Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体中文、日语和朝鲜语，在审阅集的以下高级方案中统称为 *CJK* 语言) ：
 
 - 查询 [审阅集 内的数据时](review-set-search.md)。
 
 - 在审阅 [集 内标记文档时](tagging-documents.md)。
 
-- 当你 [使用几乎重复检测、](analyzing-data-in-review-set.md) 电子邮件线程和主题分析来分析审阅集内的情况数据时。
+- 当你 [使用近重复检测、](analyzing-data-in-review-set.md) 电子邮件线程和主题分析来分析审阅集内的情况数据时。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -63,7 +63,7 @@ Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体�
 
 否，不能按审阅集内的文档语言进行筛选、排序或搜索。
 
-**此 CJK 版本用于审阅集方案是否会影响我的任何现有搜索和审阅集？**
+**此 CJK 版本用于审阅集方案是否将影响我的任何现有搜索和审阅集？**
 
 否，现有的搜索和审阅集不会更改。 无需对现有数据重新索引，英文文本的搜索结果将相同。
 
@@ -75,7 +75,7 @@ Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体�
 
 - OCR 不支持图像文件的 CJK 字符
 
-- CJK (在注释视图中使用 *.eml 和 *.msg [](view-documents-in-review-set.md#annotate-view)) 等电子邮件文件。
+- CJK (在 ["](view-documents-in-review-set.md#annotate-view) 批注"视图中) *.eml 和 *.msg 等电子邮件文件。
 
 - CJK 语言不支持 [在](view-documents-in-review-set.md#text-view) 文本视图中突出显示搜索词。
 

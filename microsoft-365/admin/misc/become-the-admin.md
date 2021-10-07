@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: 了解如何验证电子邮件和域所有权，以接管由自助用户注册帐户创建的非托管Microsoft 365。
-ms.openlocfilehash: f6378c708e0533c2da2d38bfe5eb8009515423c7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解如何验证你的电子邮件和域所有权以接管由自助用户注册帐户创建的非托管Microsoft 365。
+ms.openlocfilehash: 5d1ab003d9a114046ee0bc5e403bb44beac2df79
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170378"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178259"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>执行内部管理员接管
 
@@ -41,11 +41,11 @@ ms.locfileid: "59170378"
 ## <a name="step-1-verify-your-email-address"></a>步骤 1：验证电子邮件地址
 
 > [!NOTE]
-> 如果在租户中启用了自助服务，用户可以自行订阅免费服务Power BI服务。 这些步骤假定自助服务用户订阅已创建你想要以管理员角色接管的非托管租户。第一步，在非托管租户中创建用户上下文，Power BI管理员接管路径。
+> 如果在租户中启用了自助服务，用户可以自行订阅免费服务，Power BI服务。 这些步骤假定自助服务用户订阅已创建你想要以管理员角色接管的非托管租户。第一步，在非托管租户中创建用户上下文，Power BI管理员接管路径。
 
-1. 若要注册 Power BI，请转到 Power BI 网站，然后选择[](https://powerbi.com)"开始免费启动免费试用 (in Share  >   with Power BI Pro"框) 。 
+1. 若要注册Power BI，请转到 Power BI 网站，然后选择"[](https://powerbi.com)开始与 Power BI Pro 共享中的免费启动免费试用版  >   (") 。 
 
-2. 使用使用组织的域名的用户帐户注册 (如 `powerbiadmin@contoso.com`) 。 如果你的帐户已在使用中，请使用当前密码登录。
+2. 使用使用组织的域名的用户帐户进行注册， (如 `powerbiadmin@contoso.com`) 。 如果你的帐户已在使用中，请使用当前密码登录。
 
 3. 检查电子邮件的 **验证代码并** 输入代码以验证您的电子邮件地址。
     
@@ -70,7 +70,7 @@ ms.locfileid: "59170378"
   
 ## <a name="related-content"></a>相关内容
 
-YouTube：[执行](https://www.youtube.com/watch?v=xt5EsrQBZZk)IT 管理员接管 Power BI Microsoft 365 (视频) \
+YouTube：[执行](https://www.youtube.com/watch?v=xt5EsrQBZZk)IT 管理员接管 Power BI 和 Microsoft 365 (视频) \
 [管理员接管 Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (文章) \
 [在组织中使用自助服务注册 (](self-service-sign-up.md) 文章) \
-[了解Power BI服务管理员角色 (](/power-bi/service-admin-role)文章) 
+[了解Power BI管理员角色 (](/power-bi/service-admin-role)文章) 

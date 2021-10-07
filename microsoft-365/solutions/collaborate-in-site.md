@@ -14,20 +14,20 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: 了解设置Microsoft 365网站以与来宾SharePoint所需的配置步骤。
-ms.openlocfilehash: 5cb1b34832c8a7b4c5152efd5ab151218de1cd36
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aac548381b8b56ef753f762e9ef7bf0c07cf9163
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195902"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190205"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
-如果需要跨文档、数据和列表与来宾进行协作，可以使用SharePoint网站。 新式SharePoint网站连接到Microsoft 365组，并可以管理网站成员身份并提供其他协作工具，如共享邮箱和日历。
+如果需要跨文档、数据和列表与来宾进行协作，可以使用SharePoint网站。 新式SharePoint网站连接到 Microsoft 365 组，可以管理网站成员身份并提供其他协作工具，如共享邮箱和日历。
 
 本文将介绍设置与来宾Microsoft 365网站所需的SharePoint配置步骤。
 
@@ -109,9 +109,9 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 
 检查网站级别的共享设置，以确保这些设置允许您希望用于此网站的访问类型。 例如，如果将组织级别设置设置为"任何人"，但希望所有来宾对此网站进行身份验证，请确保网站级别共享设置设置为"新来宾和现有来宾 **"。**
 
-请注意，该网站无法与"任何人"设置 (未经身份验证 **) ，** 但单个文件和文件夹可以共享。
+请注意，该网站无法与"任何人"设置 (未经身份验证) ，但单个文件和文件夹可以共享。
 
-您还可以使用敏感度[标签来控制网站的外部SharePoint设置](../compliance/sensitivity-labels-teams-groups-sites.md)。
+您还可以使用[敏感度标签来控制网站的外部SharePoint设置](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 ![SharePoint 网站外部共享设置的屏幕截图。](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -132,11 +132,11 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 3. 单击“**添加成员**”。
 4. 键入要邀请到网站的用户的姓名或电子邮件地址，然后单击"保存 **"。**
 
-无法从网站添加来宾。 你需要使用自定义Outlook 网页版。 因此，作为添加来宾并邀请来宾加入组的先决条件，请单击"URL"列中网站的 **URL**  以导航到特定于网站的页面。 从此页中，单击 **应用启动器** 图标并选择"Outlook"。  这是你可以从其中邀请来宾加入组的屏幕，此过程如下所述。
+无法从网站添加来宾。 你需要使用自定义设置Outlook 网页版。 因此，作为添加来宾并邀请来宾加入组的先决条件，请单击"URL"列中网站的 **URL**  以导航到特定于网站的页面。 从此页中，单击 **应用启动器** 图标并选择"Outlook"。  这是一个屏幕，你可以从其中邀请来宾加入一个组，此过程如下所述。
 
 邀请来宾加入组
 1. 在 **"** 组"下，单击要邀请来宾的组。
-2. 打开组联系人卡片，单击右上角的"成员" (表示成员计数) 。
+2. 打开组联系人卡片，单击右上角的"成员"链接 (表示成员计数) 。
 3. 单击 **"添加成员"。**
 4. 键入要邀请的来宾的电子邮件地址，然后单击"添加 **"。**
 5. 单击“关闭”。

@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6e5f21a5d0c22ff4149adc0779ce78b31ee12725
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 065a82521e8dad8ea4594ba6b3364471b99927ae
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161976"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178487"
 ---
 # <a name="common-rest-api-error-codes"></a>常见的 REST API 错误代码
 
@@ -49,14 +49,14 @@ MaximumBatchSizeExceeded|BadRequest (400) |已超出最大批次大小。 Receiv
 MissingRequiredParameter|BadRequest (400) |参数 {缺少参数}。
 OsPlatformNotSupported|BadRequest (400) |此操作不支持 OS 平台 {the client OS Platform}。
 ClientVersionNotSupported|BadRequest (400) |{请求的操作} 在客户端版本 {支持的客户端版本} 及以上版本上受支持。
-未经授权 (Unauthorized)|未授权 (401) |未授权 (或过期的授权标头) 。
+未经授权 (Unauthorized)|未经授权 (401) |未授权 (或过期的授权标头) 。
 禁止访问 (Forbidden)|禁止 (403) |禁止 (有效令牌，但权限不足，无法) 。
 DisabledFeature|禁止 (403) |未启用租户功能。
 DisallowedOperation|禁止 (403) |{不允许的操作和原因}。
 NotFound|404 (未找到) |"常规未找到"错误消息。
 ResourceNotFound|404 (未找到) |未找到资源 {请求的资源}。
 InternalServerError|内部服务器错误 (500) | (无错误消息，请重试) 
-TooManyRequests|请求数过多 (429) |响应表示请求数或 CPU 达到配额限制。
+TooManyRequests|请求过多 (429) |响应表示请求数或 CPU 达到配额限制。
 
 ## <a name="body-parameters-are-case-sensitive"></a>正文参数区分大小写
 

@@ -2,15 +2,13 @@
 title: Linux 上的 Microsoft Defender for Endpoint 的新增功能
 description: Linux 上的 Microsoft Defender for Endpoint 的主要更改列表。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， whatsnew， release
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 506b8103946d16c5ec85cc6d3cb449ef67f340f8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cc24857adacf3b6fbb787030136f5ebb53f00937
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201166"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178343"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -42,7 +40,7 @@ ms.locfileid: "59201166"
 - 从此版本开始，在通过命令行客户端触发的按需防病毒扫描期间检测到的威胁将自动修正。 扫描期间通过用户界面触发的威胁仍然需要手动操作。
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
-  - `--top N`：显示前 N 个 (仅在还指定了 `--sort` 值时) 
+  - `--top N`：显示前 N 个 (仅在指定了值 `--sort` 时) 
 - Bug 修复&性能改进
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0) 
@@ -63,9 +61,9 @@ ms.locfileid: "59201166"
 
 ## <a name="1011853"></a>101.18.53
 
-- EDR Linux 版本现已[发布](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
+- EDR Linux 版本现已[普遍可用](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
 - 添加了一个新的命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV 排除 `mdatp scan custom` () 
-- 使用新的参数扩展 () ，该参数允许将诊断日志 `mdatp diagnostic create` `--path [directory]` 保存到其他目录
+- 使用 `mdatp diagnostic create` 新的参数扩展 () ，该参数允许将诊断日志 `--path [directory]` 保存到其他目录
 - Bug 修复&性能改进
 
 ## <a name="1011299"></a>101.12.99
@@ -74,11 +72,11 @@ ms.locfileid: "59201166"
 
 ## <a name="1010476"></a>101.04.76
 
-- Bug 修复
+- 错误修补程序
 
 ## <a name="1010348"></a>101.03.48
 
-- Bug 修复
+- 错误修补程序
 
 ## <a name="1010255"></a>101.02.55
 

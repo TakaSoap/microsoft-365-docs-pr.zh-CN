@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: 了解如何控制哪些用户可以创建Microsoft 365组。
-ms.openlocfilehash: a9bfcbe97000cc6fbe0050ffee44cdc5ecc87080
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b78ff54c8ff475f96f10592a95a3f83255665727
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154142"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217158"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理可创建 Microsoft 365 组的人员
 
@@ -52,9 +52,9 @@ ms.locfileid: "60154142"
 - 目录编写器：Azure AD
 - SharePoint管理员：SharePoint管理中心，Azure AD
 - Teams服务管理员：Teams管理中心，Azure AD
-- 用户管理员：Microsoft 365 管理中心，Azure AD
+- 用户管理员：Microsoft 365 管理中心、Azure AD
 
-如果您是这些角色之一的成员，您可以为受限Microsoft 365组，然后将该用户分配为组的所有者。
+如果你是其中一个角色的成员，你可以为受限Microsoft 365组，然后将该用户分配为组的所有者。
 
 ## <a name="licensing-requirements"></a>许可要求
 
@@ -70,7 +70,7 @@ ms.locfileid: "60154142"
 
 - 作为组Microsoft 365且无法创建其他组的人。
 
-## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>步骤 1：为需要创建组的用户创建Microsoft 365组
+## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>步骤 1：为需要创建组的用户Microsoft 365组
 
 组织中只能有一个组可用于控制能够创建组的人。 但是，可以将其他组嵌套为此组的成员。
 
@@ -88,7 +88,7 @@ ms.locfileid: "60154142"
 
 ## <a name="step-2-run-powershell-commands"></a>步骤 2：运行 PowerShell 命令
 
-你必须使用 Azure Active Directory [PowerShell for Graph (AzureAD](/powershell/azure/active-directory/install-adv2))  (模块名称 **AzureADPreview**) 的预览版本来更改组级别的来宾访问设置：
+必须使用 Azure Active Directory [PowerShell for Graph (AzureAD](/powershell/azure/active-directory/install-adv2))  (模块名称 **AzureADPreview**) 的预览版本更改组级别的来宾访问设置：
 
 - 如果之前未安装任何 Azure AD PowerShell 模块版本，请参阅[安装 Azure AD 模块](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview)并按照说明安装公共预览版。
 
@@ -104,7 +104,7 @@ ms.locfileid: "60154142"
 
 将文件另存为GroupCreators.ps1。
 
-在 PowerShell 窗口中，导航到保存文件的位置 <FileLocation> ， ("CD") 。
+在 PowerShell 窗口中，导航到保存文件的位置 \<FileLocation\> ， ("CD") 。
 
 通过键入以下命令运行脚本：
 
@@ -133,8 +133,7 @@ $settingsCopy["EnableGroupCreation"] = $AllowGroupCreation
 if($GroupName)
 {
   $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -SearchString $GroupName).objectid
-}
- else {
+} else {
 $settingsCopy["GroupCreationAllowedGroupId"] = $GroupName
 }
 Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCopy

@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4b90e9136b7d73fbfbc7006fc242f84c34ce52db
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b50dc05aa481106d28b12878047322a648972686
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175685"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177767"
 ---
 # <a name="payment-information-for-japan"></a>日本付款信息
 
@@ -33,5 +33,5 @@ Please pay in JPY only and reference invoice number (s) on your payment payment 
 **分支：** Tokyo Branch  
 **分支代码** ：730  
 **SWIFT 代码：** 一个  
-**帐户号：160609028**  
+**帐号：160609028**  
 **帐户名称：** Microsoft Japan Co.， Ltd.

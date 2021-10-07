@@ -10,26 +10,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9e864a6d499044edd978e1dbe87d19bd5b567aa4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a10e4390bccfeeaff419217f0d7a35e534c17e44
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171400"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177755"
 ---
 # <a name="payment-information-for-saint-lucia"></a>圣马丁的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-Please pay in USD only and reference your invoice number (s) on your invoice invoice invoice.
+Please pay in USD only and reference your invoice number () on your invoice invoice invoice.
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
 **Bank：** 美洲银行  
 **分支** Dallas  
 **SWIFT 代码：** BOFAUS3N  
-**帐号：4426587954**  
+**帐户编号：4426587954**  
 **帐户名称：** Microsoft

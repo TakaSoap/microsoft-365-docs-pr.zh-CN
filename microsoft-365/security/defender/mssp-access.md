@@ -4,7 +4,7 @@ description: 了解从 Microsoft Defender 安全中心 到 Microsoft 365 Defende
 keywords: 入门：Microsoft 365 Defender门户、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、单窗格的门户、聚合门户、安全门户、Defender 安全门户
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: macapara
@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: f5ef47fd03614c34e9cb459442e8c1f2a144f4b8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9750fc75e5fc90a0f5ea0c308870a4342070a427
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161925"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209029"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>提供托管安全服务提供程序 (MSSP) 访问权限 
 
@@ -48,7 +48,7 @@ ms.locfileid: "59161925"
 
 1. **为客户 AAD 中的 MSSP 资源创建访问组：组**
 
-    这些组将链接到在安全门户的 Defender for Endpoint Microsoft 365 Defender角色。 为此，在客户 AD 租户中，创建三个组。 在我们的示例方法中，我们将创建以下组：
+    这些组将链接到在 Defender for Endpoint 门户中Microsoft 365 Defender角色。 为此，在客户 AD 租户中，创建三个组。 在我们的示例方法中，我们将创建以下组：
 
     - 第 1 层分析员
     - 第 2 层分析员
@@ -56,7 +56,7 @@ ms.locfileid: "59161925"
 
 2. 在客户 Defender for Endpoint 中的相应访问级别创建适用于终结点的 Defender Microsoft 365 Defender门户角色和组。
 
-    若要在客户门户Microsoft 365 Defender RBAC，>具有全局管理员或安全管理员 **权限** 的用户帐户&组>终结点角色"和"角色"。
+    若要在客户门户Microsoft 365 Defender RBAC，请>具有全局管理员或安全管理员权限的用户帐户&组>角色"访问"权限">终结点角色"。
 
     ![MSSP 访问的图像。](../../media/mssp-access.png)
 
@@ -130,4 +130,4 @@ ms.locfileid: "59161925"
     `https://security.microsoft.com/?tid=<CustomerTenantId>` 具有分配的权限和角色。
 
 > [!IMPORTANT]
-> Microsoft Defender for Endpoint 在 Microsoft 365 Defender门户中的委派访问权限当前允许每个浏览器窗口访问单个租户。
+> Microsoft Defender for Endpoint 在 Microsoft 365 Defender 中的委派访问权限当前允许每个浏览器窗口访问单个租户。

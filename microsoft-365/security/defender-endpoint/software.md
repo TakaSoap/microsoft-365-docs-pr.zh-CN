@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 85b162cce8655c7942a341326ff08ec112ace100
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 637c56e5c02283e4efee5a456c21f4a74fcda40d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356557"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178283"
 ---
 # <a name="software-resource-type"></a>软件资源类型
 
@@ -70,7 +70,7 @@ ms.locfileid: "59356557"
 |供应商|String|软件供应商名称|
 |漏洞|长型|发现的漏洞数量|
 |publicExploit|布尔值|存在针对某些漏洞的公共攻击|
-|activeAlert|Boolean|活动警报与此软件关联|
+|activeAlert|布尔值|活动警报与此软件关联|
 |exposedMachines|长型|公开的设备数量|
 |impactScore|双精度|此软件的曝光评分影响|
 |

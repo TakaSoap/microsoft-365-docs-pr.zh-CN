@@ -8,14 +8,14 @@ ms.author: jaimeo
 manager: laurawi
 audience: ITpro
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 31cc897fe28f557a65cba9c99e5dcecbf7c2b0e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c1600381062aa61b79ba757d530afef07aca26e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196624"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208669"
 ---
 # <a name="work-with-app-control"></a>使用应用程序控制
 
@@ -32,7 +32,7 @@ ms.locfileid: "59196624"
 4. 检查 Application **and Services Logs\Microsoft\Windows\AppLocker** 下的事件查看器，查找任何 **8003** 或 **8006** 事件。 这些事件指示应用将被阻止。 有关所有应用保险箱事件及其含义的信息，请参阅将事件查看器与 [AppLocker 一同使用](/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker)。
 5. 如果找到这些事件中的任意一个，请通过"操作"打开Microsoft 托管桌面请求。
 
-## <a name="add-or-remove-a-trusted-signer"></a>添加 (或) 签名者
+## <a name="add-or-remove-a-trusted-signer"></a>添加 (或删除) 签名者
 
 打开签名者请求时，需要先提供一些重要的发布者详细信息。 然后按照以下步骤操作：
 
@@ -40,7 +40,7 @@ ms.locfileid: "59196624"
 2. 使用 Microsoft 托管桌面 操作打开票证以请求签名者规则，并包括以下详细信息：  
     - 应用程序名称 
     - 应用程序版本 
-    - 描述 
+    - 说明 
     - 更改类型 ("add"或"remove")   
     - Publisher详细信息 (例如："O= <publisher name> ，L= <location> ，S=State，C=Country")  
 

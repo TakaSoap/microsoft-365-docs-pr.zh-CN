@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1e04c9a817bfe799c15e3609e190980bfc4145e7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da2f7b17725c7acb54b50a6280492e8f45fa6215
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201710"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208645"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender for Endpoint API - Hello World
 
@@ -51,13 +51,13 @@ ms.locfileid: "59201710"
 
 ### <a name="do-i-need-a-permission-to-connect"></a>是否需要连接权限？
 
-对于应用程序注册阶段，你必须在 **Azure** AD 租户Azure Active Directory (全局) 角色。
+对于应用程序注册阶段，你必须在 Azure  AD 租户Azure Active Directory (全局) 角色。
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>步骤 1 - 在 Azure Active Directory
 
 1. 使用全局管理员 **用户登录到** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory** \> **应用注册** \> **新注册 。**
+2. 导航到 **Azure Active Directory** \> **应用注册** \> **""新注册"。**
 
    ![应用程序注册Microsoft Azure导航的图像。](images/atp-azure-new-app2.png)
 
@@ -91,7 +91,7 @@ ms.locfileid: "59201710"
 
 6. 向应用程序添加密码。
 
-   - 单击 **"&** 密码"，将说明添加到密码，然后单击"添加 **"。**
+   - 单击 **"&密码"，** 将说明添加到密码，然后单击"添加 **"。**
 
     **重要** 提示：单击"添加" **后，复制生成的机密值**。 离开后将无法检索！
 
@@ -185,7 +185,7 @@ ms.locfileid: "59201710"
 
 全部完成！ 你已成功：
 
-- 创建和注册以及应用程序
+- 创建和注册及应用程序
 - 已授予该应用程序读取警报的权限
 - 已连接 API
 - 使用 PowerShell 脚本返回过去 48 小时内创建的警报

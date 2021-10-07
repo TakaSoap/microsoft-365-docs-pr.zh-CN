@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4c5cf3c759d0ea779e8070ad3474013a765fee95
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bcd09c1a2f828545243d1f4d56c9e2cab49356ab
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201645"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190553"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>将 Microsoft Defender 用于终结点 API
 
@@ -94,7 +94,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 4. 允许应用程序访问适用于终结点的 Microsoft Defender，并为其分配"读取警报"权限：
 
-   - 在应用程序页面上，选择 **"API** 权限""添加我的组织使用的权限 API"> \>  \>  **WindowsDefenderATP"，** 然后选择 **"WindowsDefenderATP"。**
+   - 在应用程序页面上，选择 **"API** 权限""添加我的组织使用的权限 \>  \> API"> **WindowsDefenderATP"，** 然后选择 **在 WindowsDefenderATP 上选择**。
    - **注意***：WindowsDefenderATP* 不会显示在原始列表中。 开始在文本框中写入其名称，以查看其显示。
 
      ![添加权限。](images/add-permission.png)
@@ -183,10 +183,10 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>使用令牌访问 Microsoft Defender for Endpoint API
 
 - 选择想要使用的 API - [支持的 Microsoft Defender 终结点 API](exposed-apis-list.md)
-- 将发送的 HTTP 请求中的授权标头设置为"Bearer {token}"， (Bearer 是授权方案) 
-- 令牌的过期时间为 1 小时 (你可以使用相同的令牌发送多个请求) 
+- 将你发送的 HTTP 请求中的 Authorization 标头设置为"Bearer {token}" (Bearer 是授权方案) 
+- 令牌的过期时间是 1 小时 (你可以使用相同的令牌发送多个请求) 
 
-- 使用请求获取警报列表 **的示例C#**
+- 发送请求以使用请求获取警报列表 **C#**
 
     ```csharp
     var httpClient = new HttpClient();

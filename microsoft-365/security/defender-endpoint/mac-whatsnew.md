@@ -2,15 +2,13 @@
 title: Mac 上的 Microsoft Defender for Endpoint 的新增功能
 description: 了解 Mac 上早期版本的 Microsoft Defender for Endpoint 的主要更改。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 安装， macos， whatsnew
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: d5d713b142ca65500366bca43564d35edf18a450
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: 44966b07154b8661aee95f00d1eba1c9a3866715
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126946"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198141"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -67,7 +65,7 @@ ms.locfileid: "60126946"
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0) 
 
 - [macOS 的设备](mac-device-control-overview.md) 控件现已一般可用
-- 解决了无法从 macOS 11 (上的状态菜单启动快速扫描) 
+- 解决了无法从 macOS 11 上的"大 Sur"菜单 (快速) 
 - 其他 Bug 修复
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0) 
@@ -79,8 +77,8 @@ ms.locfileid: "60126946"
 - 从此版本开始，在通过命令行客户端触发的按需防病毒扫描期间检测到的威胁将自动修正。 扫描期间通过用户界面触发的威胁仍然需要手动操作。
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
-  - `--top N`：显示前 N 个 (仅在指定了值 `--sort` 时) 
-- 性能改进 (功能专门用于在 BUG 修复) &使用时
+  - `--top N`：显示前 N 个 (仅在还指定了 `--sort` 值时) 
+- 性能改进 (在将一些 BUG 修复) &使用时的性能改进
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0) 
 
@@ -260,7 +258,7 @@ ms.locfileid: "60126946"
 
 ## <a name="1007099"></a>100.70.99
 
-- 解决了在启用实时保护时影响某些用户升级到 macOS 加泰罗尼亚语的能力的问题。 此个别问题是由 Microsoft Defender for Endpoint 在Catalina 升级包中锁定文件，同时扫描它们以发现威胁导致的，导致升级序列失败。
+- 解决了在启用实时保护时影响某些用户升级到 macOS 加泰罗尼亚语的能力的问题。 此个别问题是由 Microsoft Defender for Endpoint 在Catalina 升级包中锁定文件，同时扫描它们以寻找威胁导致的，导致升级序列失败。
 
 ## <a name="1006899"></a>100.68.99
 
@@ -272,7 +270,7 @@ ms.locfileid: "60126946"
 - 增加了对 macOS 加泰罗尼亚语的支持
 
   > [!CAUTION]
-  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序无法访问磁盘上的某些位置 (如文档、下载、桌面等) 未经明确同意。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序在未经明确同意 (访问磁盘上的某些位置，如文档、下载、桌面) 等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
   >
   > 授予此同意的机制取决于你部署适用于终结点的 Microsoft Defender 的方式：
   >

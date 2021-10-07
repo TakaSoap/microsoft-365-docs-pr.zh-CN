@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f60208b06e66c1e9803e05ee1fc41376824e9b56
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: df2effa41977624530b5f9ea8881f7f5aaeef82f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197236"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209101"
 ---
 # <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>解决邮件中的误报或Microsoft 365 Defender
 
@@ -35,10 +35,10 @@ ms.locfileid: "59197236"
 **适用于：**
 - Microsoft 365 Defender
 
-任何威胁防护解决方案偶尔会出现误报或负面影响。 如果[自动调查和响应功能Microsoft 365 Defender](m365d-autoir.md)遗漏或错误检测到某些内容，则安全操作团队可以采取以下步骤：
+任何威胁防护解决方案偶尔会出现误报或负面影响。 如果[自动调查和响应功能在](m365d-autoir.md)检测到Microsoft 365 Defender错误检测到某些内容时，安全运营团队可以采取以下步骤：
 
 - [向 Microsoft 报告误报/负数](#report-a-false-positivenegative-to-microsoft-for-analysis)
-- [根据需要调整 (](#adjust-an-alert-to-prevent-false-positives-from-recurring) 警报) 
+- [根据需要调整警报](#adjust-an-alert-to-prevent-false-positives-from-recurring) (调整) 
 - [撤消对设备采取的修正操作](#undo-a-remediation-action-that-was-taken-on-a-device)
 
 以下各节介绍如何执行这些任务。
@@ -52,9 +52,9 @@ ms.locfileid: "59197236"
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>调整警报以防止误报重复发生
 
-|方案 |服务 |需执行的操作 |
+|应用场景 |服务 |需执行的操作 |
 |--------|--------|--------|
-|- 通过合法使用触发警报 <br/>- 警报不准确    |[Microsoft Cloud App Security](/cloud-app-security)<br/> 或 <br/>[Azure 威胁防护](/azure/security/fundamentals/threat-detection)         |[管理 云应用安全 门户中的警报](/cloud-app-security/managing-alerts)         |
+|- 通过合法使用触发警报 <br/>- 警报不准确    |[Microsoft Cloud App Security](/cloud-app-security)<br/> 或者 <br/>[Azure 威胁防护](/azure/security/fundamentals/threat-detection)         |[管理 云应用安全 门户中的警报](/cloud-app-security/managing-alerts)         |
 |文件、IP 地址、URL 或域在设备上被视为恶意软件，即使安全|[Microsoft Defender for Endpoint](/windows/security/threat-protection) |[使用"允许"操作创建自定义指示器](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>撤消在设备上采取的修正操作

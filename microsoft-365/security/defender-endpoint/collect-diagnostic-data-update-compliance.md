@@ -1,13 +1,13 @@
 ---
 title: 收集更新合规性和更新更新的诊断Windows Defender Microsoft Defender 防病毒
-description: 使用工具收集数据，解决在使用"评估"Microsoft Defender 防病毒更新合规性问题
+description: 使用工具收集数据，以在使用"评估"加载项时解决Microsoft Defender 防病毒合规性问题
 keywords: 疑难解答， 错误， 修复， 更新合规性， oms， 监视器， 报告， Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7d7c795bdcb8c6d4378cc2a4b13c2671c2d767c6
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 496087a2a66f37537c0638687b4e8503e63bf9f5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490771"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208549"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>收集更新合规性诊断数据进行Microsoft Defender 防病毒评估
 
@@ -55,7 +55,7 @@ ms.locfileid: "59490771"
 
 4. 将.cab一个包含各种诊断日志的诊断文件。 将在命令提示符的输出中指定文件的位置。 默认情况下，位置为 `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 。
 
-5. 将.cab文件复制到 Microsoft 支持人员可以访问的位置。 例如，您可以与我们OneDrive密码保护的文件夹。
+5. 将.cab文件复制到 Microsoft 支持人员可以访问的位置。 例如，您可以与我们OneDrive受密码保护的文件夹。
 
 6. 使用更新 <a href="mailto:ucsupport@microsoft.com?subject=MDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">合规性支持电子邮件</a>模板发送电子邮件，并填写包含以下信息的模板：
 

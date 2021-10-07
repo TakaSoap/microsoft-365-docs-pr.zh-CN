@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 86a447ba3a5dca129d1044e5df83dd2ab81cbe74
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5a5fd36d57a1892189b4a5e9c4d13ad9d0ac6923
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162307"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198201"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>调查正向代理背后发生的连接事件
 
@@ -46,7 +46,7 @@ Defender for Endpoint 通过网络保护支持高级 HTTP 级别监视。 打开
 
 可以使用以下模式控制网络保护：
 
-- **阻止**：将阻止用户或应用连接到危险域。 你将能够在活动中心内看到此Microsoft Defender 安全中心。
+- **阻止**：将阻止用户或应用连接到危险域。 你将能够在"活动"中查看此Microsoft Defender 安全中心。
 - **审核**：不会阻止用户或应用连接到危险域。 但是，你仍将看到此活动Microsoft Defender 安全中心。
 
 

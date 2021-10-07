@@ -9,19 +9,19 @@ metadata:
   ms.date: 
   audience: ITPro
   ms.topic: troubleshooting
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
   ms.custom:
   - seo-marvel-apr2020
   description: 管理员可以查看 Microsoft 合作伙伴和经销商在 Microsoft 365中有关委派管理任务的常见问题和解答。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: b62c1d53d4b2a482aeb91cea147ed9feaa4027c4
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: b3bf371ef0e726082c2d775bb63222f795b36671
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59175302"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60190361"
 title: 委派管理常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -58,7 +58,7 @@ sections:
   - question: >
       能否阻止下级管理员修改我的策略？
     answer: >
-      否。 Microsoft 365当前没有此功能。
+      不需要。 Microsoft 365当前没有此功能。
   - question: >
       我能否获得我的所有子模板的合并报告？
     answer: 所管理的公司中的合并报告在报告Microsoft 365 管理中心提供。 但是，您可以使用 Microsoft Graph 获取[报告](/graph/overview)。

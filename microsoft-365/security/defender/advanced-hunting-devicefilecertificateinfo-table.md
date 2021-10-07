@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1f894f3fc8cff2113004ff9c9e34ec2ca0144799
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 078650f07ca345c24155e61ee640a4f96344632c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196546"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190457"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -53,7 +53,7 @@ ms.locfileid: "59196546"
 | `Issuer` | string | 有关 CA 证书颁发机构 (的信息)  |
 | `IssuerHash` | string | 标识证书颁发机构的唯一哈希值 (CA)  |
 | `CertificateSerialNumber` | string | CA 证书颁发机构唯一的证书 (标识符)  |
-| `CrlDistributionPointUrls` | string |  列出网络共享 URL 的 JSON 数组，其中包含证书和证书吊销列表 (CCL)  |
+| `CrlDistributionPointUrls` | string |  JSON 数组，列出包含证书的网络共享 URL 和证书吊销列表 (CCL)  |
 | `CertificateCreationTime` | datetime | 创建证书的日期和时间 |
 | `CertificateExpirationTime` | datetime | 证书设置为过期的日期和时间 |
 | `CertificateCountersignatureTime` | datetime | 对证书进行反签名的日期和时间 |

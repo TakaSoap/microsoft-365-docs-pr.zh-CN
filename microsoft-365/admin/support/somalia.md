@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 00eadf91a1957cba95a0212423cf0759d40e9fe0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5c79185ee11cb2eea547cc4b98cf421b8dd522c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196203"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177935"
 ---
 # <a name="contact-support-for-somalia"></a>联系支持人员
 
@@ -32,7 +32,7 @@ ms.locfileid: "59196203"
 
 输入代码 7700
 
-## <a name="hours"></a>小时
+## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
 阿拉伯语：Sun-Thu 10 AM-6 PM

@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fea2a3dc971e7abbd2371bd5b62f39bb374aea24
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d30bc5150277dd54a4a38dce8ac515d6be7dfb21
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196358"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208525"
 ---
 # <a name="configure-alert-notifications-that-are-sent-to-mssps"></a>配置发送给 MSSP 的警报通知
 
@@ -43,7 +43,7 @@ ms.locfileid: "59196358"
 必须选中以下复选框：
 
 - **包含组织** 名称 - 客户名称将添加到电子邮件通知中
-- **包含特定于租户的门户链接** - 警报链接 URL 将具有租户特定参数 (tid=target_tenant_id) 允许直接访问目标租户门户
+- **包含特定于租户的门户链接** - 警报链接 URL 将具有租户特定参数 (tid=target_tenant_id) ，以允许直接访问目标租户门户
 
 ## <a name="related-topics"></a>相关主题
 

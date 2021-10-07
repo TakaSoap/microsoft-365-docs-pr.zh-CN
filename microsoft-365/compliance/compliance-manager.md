@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-compliancemanager
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器可帮助组织简化和自动化风险评估，并建议采取建议操作来帮助应对风险。
-ms.openlocfilehash: e0e8d4595f883f33dc7714cd41c8cb49002321a1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b506e184c3ab6e387ac02a203fca0f58bd3f877
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171051"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197661"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合规性管理器
 
@@ -30,7 +30,7 @@ ms.locfileid: "59171051"
 
 ## <a name="what-is-compliance-manager"></a>什么是合规性管理器？
 
-[Microsoft 合规性管理器](https://compliance.microsoft.com/compliancemanager)是 Microsoft 365 合规中心一[](microsoft-365-compliance-center.md)项功能，可帮助您更轻松、更方便地管理组织的合规性要求。 合规性管理器可以帮助你在整个合规性旅程中，从清点数据保护风险到管理实施控制措施的复杂性、及时获得法规和认证，以及向审核员报告。
+[Microsoft 合规性管理器](https://compliance.microsoft.com/compliancemanager)是 Microsoft 365 合规中心一[](microsoft-365-compliance-center.md)项功能，可帮助您更轻松、更方便地管理组织的合规性要求。 合规性管理器可以帮助你完成合规性之旅，从清查数据保护风险到管理实现控制的复杂性、及时了解最新法规和认证、以及向审核员报告。
 
 观看下面的视频，了解合规性管理器如何有助于简化组织管理合规性的情况：
 <br>
@@ -85,7 +85,7 @@ ms.locfileid: "59171051"
 
 ### <a name="assessments"></a>评估
 
-评估是按特定法规、标准或策略对控制措施进行分组。 完成评估内的操作可以帮助你满足标准、法规或法律的要求。 例如，您可能有一项评估，其中的所有操作完成后，有助于使 Microsoft 365 设置符合 ISO 27001 要求。
+评估是按特定法规、标准或策略对控制措施进行分组。 完成评估内的操作可以帮助你满足标准、法规或法律的要求。 例如，你可能有一项评估，在完成其中的所有操作后，有助于使 Microsoft 365 设置符合 ISO 27001 要求。
 
 评估包括几个组件：
 
@@ -103,7 +103,7 @@ ms.locfileid: "59171051"
 
 ### <a name="templates"></a>模板
 
-合规性管理器提供了模板，可帮助你快速创建评估。 你可以修改这些模板，以创建已针对你的需求优化的评估。 您还可以通过使用自己的控件和操作创建模板来构建自定义评估。 例如，你可能希望模板涵盖内部 业务流程 控件，或我们的 325+预建评估模板之一未涵盖的区域数据保护标准。
+合规性管理器提供了模板，可帮助你快速创建评估。 你可以修改这些模板，以创建已针对你的需求优化的评估。 您还可以通过使用自己的控件和操作创建模板来构建自定义评估。 例如，你可能希望模板涵盖内部 业务流程 控件，或我们的 325+ 预建评估模板之一未涵盖的区域数据保护标准。
 
 ##### <a name="learn-more"></a>了解详细信息
 
@@ -125,7 +125,7 @@ ms.locfileid: "59171051"
 
 合规性管理器提供以下语言版本：
 
-- English
+- 英语
 - 印度尼西亚语
 - 马来语
 - 中文（简体）
