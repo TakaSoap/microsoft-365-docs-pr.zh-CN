@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2612fc618c8bd3dd8362d86413bad386856a3063
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4007280a5225fea3c13904163e546f256e7ee217
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201109"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166286"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender 安全中心安全操作仪表板
 
@@ -33,7 +33,7 @@ ms.locfileid: "59201109"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)。
 
-安全 **操作仪表板** 是显示终结点检测和响应功能的地方。 它提供了发现检测位置的简要概述，并突出显示了需要响应操作的地方。
+安全 **操作仪表板** 是显示终结点检测和响应功能的地方。 它提供发现检测位置的简要概述，并突出显示需要响应操作的地方。
 
 仪表板显示以下项的快照：
 
@@ -69,7 +69,7 @@ ms.locfileid: "59201109"
 
 ## <a name="devices-at-risk"></a>处于风险之中的设备
 
-此磁贴显示活动警报数最高的设备列表。 每个设备的警报总数显示在设备名称旁边的圆圈中，然后按严重级别进一步分类到磁贴 (的远端，将鼠标悬停在每个严重性栏上以查看其标签) 。
+此磁贴显示活动警报数最高的设备列表。 每个设备的警报总数显示在设备名称旁边的圆圈中，然后按严重性级别进一步分类磁贴 (悬停在每个严重性栏上以查看其标签) 。
 
 !["处于风险中的设备"图块显示警报数最高的设备列表，以及警报严重性的细目。](images/devices-at-risk-tile.png)
 

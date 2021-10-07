@@ -8,34 +8,35 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: 设置基本移动性和安全性，通过执行远程擦除设备等操作保护和管理用户的移动设备。
-ms.openlocfilehash: 07f8283353432b06aea67ba9cf8bbc505d6c3012
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: bbf7cf84dd996a0e548a76978e8fbba58f40c070
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775128"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165960"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>设置基本移动性和安全性
 
 内置的基本移动性和安全性 Microsoft 365可帮助你保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 电话。 可以创建和管理设备安全策略，远程擦除设备，以及查看详细的设备报告。
 
-有问题？ 有关帮助解决常见问题的常见问题解答，请参阅 Basic [Mobility and Security 常见问题 ](frequently-asked-questions.yml)解答 (FAQ) 。 请注意，不能使用委派管理员帐户管理基本移动性和安全性。 有关详细信息，请参阅合作伙伴 [：提供委派管理](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e)。 
+有问题？ 有关帮助解决常见问题的常见问题解答，请参阅 Basic [Mobility and Security Faq (Faq) ](frequently-asked-questions.yml)。 请注意，不能使用委派管理员帐户管理基本移动性和安全性。 有关详细信息，请参阅合作伙伴 [：提供委派管理](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e)。 
 
 设备管理是安全与合规&的一部分，因此你需要前往开始基本移动性和安全性设置。
 
 ## <a name="activate-the-basic-mobility-and-security-service"></a>激活基本移动性和安全性服务
 
-1. Sign in to Microsoft 365 with your global admin account.
+1. 登录以Microsoft 365全局管理员帐户登录。
 
 2. 转到 [激活基本移动性和安全性](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。
 
@@ -47,13 +48,13 @@ ms.locfileid: "59775128"
 
 ### <a name="step-1-required-configure-domains-for-basic-mobility-and-security"></a>步骤 1： (配置) 移动性和安全性的域的必需步骤
 
-如果你没有与自定义域关联的自定义域Microsoft 365或者如果你未管理 Windows设备，可以跳过此部分。 否则，您需要在 DNS 主机上添加域的 DNS 记录。 如果已添加记录，作为设置域的一Microsoft 365，则一切都已设置。 添加记录后，Microsoft 365组织中使用使用自定义域的电子邮件地址登录 Windows 设备的用户将被重定向以注册基本移动性和安全性。
+如果你没有与自定义域关联的自定义域Microsoft 365或者如果你未管理 Windows设备，你可以跳过此部分。 否则，您需要在 DNS 主机上添加域的 DNS 记录。 如果已添加记录，作为设置域的一Microsoft 365，则一切都已设置。 添加记录后，Microsoft 365组织中使用使用自定义域的电子邮件地址登录 Windows 设备的用户将被重定向以注册基本移动性和安全性。
 
-需要帮助设置记录？ 查找你的域注册机构，然后选择注册机构名称以转到添加 DNS 记录以连接你的域中提供的有关创建 DNS 记录的 [分步帮助](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。 使用这些说明创建在简化注册中介绍的 CNAME [Windows无需Azure AD Premium。](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)
+需要帮助设置记录？ 查找你的域注册机构，然后选择注册机构名称，以转到添加 DNS 记录以连接你的域中提供的有关创建 [DNS 记录的分步帮助](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。 使用这些说明创建简化注册过程中描述的 CNAME [Windows，而无需Azure AD Premium。](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)
 
 添加两条 CNAME 记录后，返回到安全与&中心，然后转到数据丢失防护 设备管理以完成下一  >     步。
 
-### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>步骤 2： (为 iOS) 配置 APNs 证书所需的步骤
+### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>步骤 2： (为) iOS 设备配置 APNs 证书时所需的步骤
 
 若要管理 iOS 设备iPad和 iPhone，需要创建 APNs 证书。
 
@@ -61,7 +62,7 @@ ms.locfileid: "59775128"
 
 2. 在浏览器类型中  [https://protection.office.com](https://protection.office.com/) ：。
 
-3. 选择  **"数据丢失防护**   >  **""设备管理"，** 然后选择 **"适用于 iOS 设备的 APNs 证书"。**
+3. 选择  **"数据丢失防护**   >  **""设备管理**"，然后选择"**适用于 iOS 设备的 APNs 证书"。**
 
 4. 在"Apple 推送通知证书设置页上，选择"下一 **步"。**
 
@@ -108,7 +109,7 @@ MFA 通过要求第二种形式的身份验证Microsoft 365登录以确保移动
 
    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本安全和移动策略设置。":::
 
-4. 按照在基本移动性和安全性中创建设备安全策略中的步骤创建和部署适合 [你的组织的设备安全策略](create-device-security-policies.md)。
+4. 按照在基本移动性和安全性中创建设备安全策略中的步骤，创建和部署适合 [你的组织的设备安全策略](create-device-security-policies.md)。
 
 > [!TIP]
 >
@@ -123,11 +124,11 @@ MFA 通过要求第二种形式的身份验证Microsoft 365登录以确保移动
 创建并部署移动设备管理策略后，组织中应用设备策略的每个许可 Microsoft 365 用户下次从移动设备登录 Microsoft 365 时会收到注册消息。 他们必须完成注册和激活步骤，然后才能访问Microsoft 365文档。 有关详细信息，请参阅使用基本 [移动性和安全性注册移动设备](enroll-your-mobile-device.md)。
 
 > [!IMPORTANT]
-> 如果注册过程不支持用户的首选语言，则用户可能会以另一种语言在移动设备上收到注册通知和步骤。 移动设备的注册过程Microsoft 365支持的语言。
+> 如果注册过程不支持用户的首选语言，则用户可能会以另一种语言在移动设备上收到注册通知和步骤。 移动设备注册过程Microsoft 365支持的语言。
 
-使用 Android 或 iOS 设备的用户需要安装 公司门户 应用作为注册过程的一部分。
+使用 Android 或 iOS 设备的用户需要安装 公司门户 应用，这是注册过程的一部分。
 
 ## <a name="related-content"></a>相关内容
 
 [基本移动性和安全性](capabilities.md) 功能 (文章) \
-[在基本移动性和安全性策略](create-device-security-policies.md) 文章中 (创建设备) 
+[Create device security policies in Basic Mobility and Security](create-device-security-policies.md) (article) 

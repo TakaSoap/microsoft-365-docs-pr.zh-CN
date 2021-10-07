@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
-description: 了解各种证书、技术和传输层安全性 (TLS) 加密套件，这些密码套件Office 365 Microsoft 365。
+description: 了解各种证书、技术和传输层安全性 (TLS) 在 Office 365 和 Microsoft 365 中用于加密的加密套件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2b2257338ab214ccdaa08f1aa8f322aad98d7c8b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2e5fb8bc724e25fb6dfd948d20fd5ea77cdbbcf4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196121"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167194"
 ---
 # <a name="technical-reference-details-about-encryption"></a>有关加密的技术参考详情
 
 请参阅本文，了解用于加密的证书、技术和 TLS [Office 365。](encryption.md) 本文还提供了有关计划弃用的详细信息。
   
-- 如果要查找概述信息，请参阅加密[中的Office 365。](encryption.md)
-- 如果要查找安装信息，请参阅在 Office 365 企业版[中设置加密](set-up-encryption.md)。
+- 如果要查找概述信息，请参阅加密[Office 365。](encryption.md)
+- 如果要查找设置信息，请参阅在 Office 365 企业版[中设置Office 365 企业版。](set-up-encryption.md)
 - 有关特定版本的 Windows 支持加密套件的信息，请参阅[TLS/SSL (Schannel SSP ](/windows/desktop/SecAuthN/cipher-suites-in-schannel)) 。
 
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Microsoft Office 365 证书所有权和管理
@@ -49,7 +49,7 @@ ms.locfileid: "59196121"
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Office 365 支持的 TLS 版本
 
-TLS 和 TLS 之前所发送的 SSL 是加密协议，通过使用安全证书加密计算机之间的连接，保护网络通信的安全。 Office 365 TLS 1.2 版 (TLS 1.2) 。
+TLS 和 TLS 之前所发送的 SSL 是加密协议，使用安全证书加密计算机之间的连接，保护网络通信的安全。 Office 365 TLS 1.2 版 (TLS 1.2) 。
 
 TLS 版本 1.3 (TLS 1.3) 当前不受支持。
 
@@ -58,17 +58,17 @@ TLS 版本 1.3 (TLS 1.3) 当前不受支持。
   
 ## <a name="support-for-tls-10-and-11-deprecation"></a>支持 TLS 1.0 和 1.1 弃用
 
-Office 365 2018 年 10 月 31 日停止支持 TLS 1.0 和 1.1。 我们已完成在高和 DoD 环境中禁用 TLS 1.0 GCC 1.1。 从 2020 年 10 月 15 日开始，我们开始针对全球和 GCC 环境禁用 TLS 1.0 和 1.1，并会继续在接下来几周和几个月内推出。
+Office 365 2018 年 10 月 31 日停止支持 TLS 1.0 和 1.1。 我们已完成在高和 DoD 环境中禁用 TLS 1.0 GCC 1.1。 我们从 2020 年 10 月 15 日开始针对全球和 GCC 环境禁用 TLS 1.0 和 1.1，并会继续在接下来几周和几个月内推出。
 
-为了维护与 Office 365 和 Microsoft 365 服务的安全连接，所有客户端-服务器和浏览器-服务器组合都使用 TLS 1.2 和新式密码套件。 你可能必须更新某些客户端-服务器和浏览器-服务器组合。 有关此更改如何影响你的信息，请参阅 Office 365 中的准备强制[使用 TLS 1.2。](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)
+为了维护与 Office 365 和 Microsoft 365 服务的安全连接，所有客户端-服务器和浏览器-服务器组合都使用 TLS 1.2 和新式密码套件。 你可能必须更新某些客户端-服务器和浏览器-服务器组合。 有关此更改如何影响你的信息，请参阅在 Office 365 中准备强制使用[TLS 1.2。](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)
   
 ## <a name="deprecating-support-for-3des"></a>弃用对 3DES 的支持
 
-自 2018 年 10 Office 365 10 月 31 日起，不再支持使用 3DES 密码套件与 Office 365。 更具体地说，Office 365不再支持加密TLS_RSA_WITH_3DES_EDE_CBC_SHA套件。 自 2019 年 2 月 28 日起，此密码套件已在 Office 365 中禁用。 与客户端和服务器通信Office 365必须支持一个或多个受支持的密码。 有关受支持的密码列表，请参阅[TLS 密码套件](#tls-cipher-suites-supported-by-office-365)Office 365。
+自 2018 年 10 Office 365 10 月 31 日起，不再支持使用 3DES 密码套件与 Office 365。 更具体地说，Office 365不再支持TLS_RSA_WITH_3DES_EDE_CBC_SHA套件。 自 2019 年 2 月 28 日起，此密码套件已在 Office 365 中禁用。 与客户端和服务器通信Office 365必须支持一个或多个受支持的密码。 有关受支持的密码列表，请参阅[TLS 密码套件](#tls-cipher-suites-supported-by-office-365)Office 365。
   
 ## <a name="deprecating-sha-1-certificate-support-in-office-365"></a>在 Office 365 中弃用 SHA-1 证书支持
 
-自 2016 年 6 Office 365，不再接受用于出站或入站连接的 SHA-1 证书。 在证书链 (SHA-2) 安全哈希算法 2 或更强的哈希算法。
+自 2016 年 6 Office 365，不再接受用于出站或入站连接的 SHA-1 证书。 在证书链 (SHA-2) 安全哈希算法 2 或更强大的哈希算法。
   
 ## <a name="tls-cipher-suites-supported-by-office-365"></a>受 TLS 密码套件支持Office 365
 
@@ -108,7 +108,7 @@ Office 365首先尝试使用最安全的加密套件进行连接，以响应连�
   
 [设置 Office 365 企业版中的加密](set-up-encryption.md)
   
-[安全状态更新中 TLS 1.0 Windows实现：2015 年 11 月 24 日](https://support.microsoft.com/kb/3117336)
+[安全状态更新中的 TLS 1.0 Windows实现：2015 年 11 月 24 日](https://support.microsoft.com/kb/3117336)
   
 [IT 中心 (Windows TLS/SSL 加密) ](/previous-versions/windows/it-pro/windows-vista/cc766285(v=ws.10))
   

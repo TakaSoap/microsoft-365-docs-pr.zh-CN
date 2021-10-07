@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Web 服务抵御网络钓鱼和其他Microsoft 365。
-ms.openlocfilehash: 2bce59394d5ed6a402983798c656e3515ceb08f2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ac9739b6f29e1455e7a200207c6dd3ad00c48680
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170792"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167746"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>保护自己免受网络钓鱼和其他攻击
 
@@ -38,9 +38,9 @@ Microsoft 365许多防护来抵御攻击，但你可以自己执行一些操作�
 - **垃圾邮件** 您可能会收到垃圾邮件的原因有很多，并非所有垃圾邮件都是相同的。 但是，通过筛选出垃圾邮件，您可以减少收到的邮件，从而降低攻击的风险。
 - **网络钓鱼** 欺诈邮件是看起来合法但试图获取个人信息或窃取你的金钱的电子邮件。
 - **欺骗** 欺诈者还可使用一种称为欺骗的技术，使其看起来就像从你自己收到电子邮件一样。 
-- **恶意软件** 是可安装在您的计算机上的恶意软件，通常在单击链接或通过电子邮件打开文档后安装。 当计算机接管 (时，存在各种类型的恶意软件 () 例如勒索软件，但你不想拥有其中任何恶意软件。 
+- **恶意软件** 是可安装在您的计算机上的恶意软件，通常在单击链接或通过电子邮件打开文档后安装。 当计算机接管 (，存在各种类型的恶意软件，例如勒索软件) 但你不想拥有其中任何恶意软件。 
 
-## <a name="best-practices"></a>最佳实践
+## <a name="best-practices"></a>最佳做法
 
 ### <a name="reduce-spam-mail"></a>减少垃圾邮件
 
@@ -77,6 +77,6 @@ Microsoft 365许多防护来抵御攻击，但你可以自己执行一些操作�
 
 详细了解如何：
 
-- [使用 安全的文件和通信Office。](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
+- [使用 文件保持文件和通信Office。](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
 - [在工作中保持安全和私密](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)。
   

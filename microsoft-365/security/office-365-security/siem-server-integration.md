@@ -8,22 +8,22 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 11/18/2019
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 ms.custom:
 - Ent_Solutions
 - SIEM
 - seo-marvel-apr2020
-description: 大致了解 SIEM 中的安全信息和事件 (SIEM) 与 Microsoft 365 云服务和应用程序集成
+description: 大致了解 SIEM 安全信息和事件 (SIEM) 与 Microsoft 365 云服务和应用程序集成
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 542c6a75282d32aa3b67d61f7236e82210174531
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 71fff15b1493f6e8e15becbd87ad55947c8eddc4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353606"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169415"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM 安全信息和事件 (SIEM) 与 Microsoft 365 服务和应用程序的服务器集成
 
@@ -36,10 +36,10 @@ ms.locfileid: "59353606"
 
 ## <a name="summary"></a>摘要
 
-你的组织是使用还是计划从 SIEM (获取安全) 管理？ 你可能想知道它如何与Microsoft 365或Office 365。 本文提供了可用于将 SIEM 服务器与服务和应用程序Microsoft 365列表。
+你的组织是使用还是计划使用 SIEM (获取安全信息和事件) ？ 你可能想知道它如何与Microsoft 365或Office 365。 本文提供了可用于将 SIEM 服务器与服务和应用程序Microsoft 365列表。
 
 > [!TIP]
-> 如果你还没有 SIEM 服务器，并且正在探索你的选项，请考虑使用 **[Microsoft Azure Sentinel。](/azure/sentinel/overview)**
+> 如果你还没有 SIEM 服务器，并且正在探索你的选项，请考虑Microsoft Azure **[Sentinel](/azure/sentinel/overview)**。
 
 ## <a name="do-i-need-a-siem-server"></a>是否需要 SIEM 服务器？
 

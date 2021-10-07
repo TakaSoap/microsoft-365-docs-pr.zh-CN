@@ -2,27 +2,25 @@
 title: 在 iOS 功能上配置 Microsoft Defender for Endpoint
 description: 介绍如何在 iOS 功能上部署 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， ios， 配置， 功能， ios
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3916217467892a46fd8a2534a7852b928d2b5215
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1b8817b9a8a6fed86353c77c7202b41115c640de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196048"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168370"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上配置 Microsoft Defender for Endpoint
 
@@ -39,7 +37,7 @@ ms.locfileid: "59196048"
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>在 iOS 上通过 Defender for Endpoint 进行条件访问
 
-iOS 上的 Microsoft Defender for Endpoint 以及 Microsoft Intune 和 Azure Active Directory 支持根据设备风险评分强制实施设备合规性和条件访问策略。 Defender for Endpoint 是移动威胁防护 (MTD) 解决方案，你可以部署该解决方案以通过 Intune 利用此功能。
+iOS 上的 Microsoft Defender for Endpoint 以及 Microsoft Intune 和 Azure Active Directory 支持根据设备风险评分强制实施设备合规性和条件访问策略。 Defender for Endpoint 是一种移动威胁防护 (MTD) 解决方案，你可以部署该解决方案以通过 Intune 利用此功能。
 
 若要详细了解如何使用 iOS 上的 Defender for Endpoint 设置条件访问，请参阅[Defender for Endpoint 和 Intune。](/mem/intune/protect/advanced-threat-protection)
 
@@ -53,7 +51,7 @@ Microsoft Defender for Endpoint 能够检测已越狱的非托管和托管设备
 
 虽然默认启用，但在某些情况下可能需要你禁用 VPN。 例如，你想要运行一些在配置 VPN 时不起作用的应用。 在这种情况下，你可以选择按照以下步骤在设备上禁用应用中的 VPN：
 
-1. 在 iOS 设备上，打开 **"设置** 应用"，单击 **或点击"** 常规"，然后单击 **"VPN"。**
+1. 在 iOS 设备上，打开 **"设置应用**"，单击 **或点击"** 常规"，然后单击 **"VPN"。**
 1. 单击或点击 Microsoft Defender for Endpoint 的"i"按钮。
 1. 关闭 **"连接按需"** 以禁用 VPN。
 
@@ -69,11 +67,11 @@ Apple iOS 不支持多个设备范围的 VPN 同时处于活动状态。 虽然�
 
 ## <a name="configure-microsoft-defender-for-endpoint-risk-signal-in-app-protection-policy-mam"></a>在 MAM 应用保护策略中配置 Microsoft Defender (终结点) 
 
-Microsoft Defender for Endpoint 可以配置为发送要用于应用保护策略 (APP（也称为 iOS/iPadOS 上的 MAM) MAM） 中的威胁信号。 借助此功能，也可使用 Microsoft Defender for Endpoint 保护从注销的设备访问公司数据。
+Microsoft Defender for Endpoint 可以配置为发送要用于应用保护策略 (APP（也称为 iOS/iPadOS 上的 MAM) MAM）中的威胁信号。 借助此功能，也可使用 Microsoft Defender for Endpoint 保护从注销的设备访问公司数据。
 
 使用 Microsoft Defender for Endpoint 设置应用保护策略的步骤如下所示：
 
-1. 设置从你的 Microsoft Endpoint Manager 租户到 Microsoft Defender for Endpoint 的连接。 在 [Microsoft Endpoint Manager 管理](https://go.microsoft.com/fwlink/?linkid=2109431)中心中，转到"设置) "下的"跨平台) 或 Endpoint  \>  \> **Security** Microsoft Defender for Endpoint ("下的"适用于终结点的 Microsoft **Defender** (租户管理连接器和令牌"，然后打开适用于 \> **iOS** 的应用保护策略 设置 下的切换。
+1. 设置从你的 Microsoft Endpoint Manager 到 Microsoft Defender for Endpoint 的连接。 在 [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心中，转到"设置) "下的"跨平台) 或终结点安全 Microsoft Defender for Endpoint ("下的"租户管理连接器和令牌 \>  \> **Microsoft Defender for Endpoint**  \>  ("，然后打开适用于 **iOS** 的应用保护策略 设置 下的切换。
 1. 选择“保存”。 应看到"**连接状态**"现在设置为"**已启用"。**
 1. 创建应用保护策略：完成 Microsoft Defender for Endpoint 连接器设置后，导航到策略 (下的应用应用保护策略) 以创建新策略或更新 \> 现有策略。
 1. 选择组织为策略 **所需的** 平台、应用、数据保护、访问要求设置。

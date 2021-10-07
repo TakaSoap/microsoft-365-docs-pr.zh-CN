@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.topic: conceptual
 author: dansimp
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e671a870805e324cfbf149876c4fca74231a9840
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 2176fd78f5c355dcb734f2a360ba917c6d130c03
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491597"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166500"
 ---
 # <a name="evaluate-network-protection"></a>网络保护功能评估
 
@@ -30,25 +30,25 @@ ms.locfileid: "59491597"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[网络](network-protection.md) 保护有助于防止员工使用任意应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。
+[网络](network-protection.md) 保护有助于防止员工使用任何应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。
 
 本文通过启用该功能并引导您访问测试站点，帮助你评估网络保护。 此评估文章中的网站并非恶意网站。 它们是专门创建的网站，冒充恶意网站。 网站将复制用户访问恶意站点或域时将发生的行为。
 
 > [!TIP]
-> 还可以访问 Microsoft Defender Testground 网站[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)，demo.wd.microsoft.com 了解其他保护功能如何工作。
+> 还可以访问 Microsoft Defender Testground 网站 [，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 其他保护功能如何工作。
 
 ## <a name="enable-network-protection-in-audit-mode"></a>在审核模式下启用网络保护
 
 在审核模式下启用网络保护，以查看哪些 IP 地址和域已被阻止。 你可以确保它不会影响业务线应用，或了解阻止出现的时间。
 
-1. 在 **"管理"中"开始"菜单 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"管理"中"开始"菜单 powershell，** 右键 **单击**"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
     Set-MpPreference -EnableNetworkProtection AuditMode
     ```
 
-### <a name="visit-a-fake-malicious-domain"></a>访问恶意 (假) 的站点
+### <a name="visit-a-fake-malicious-domain"></a>访问恶意 () 伪造的域
 
 1. 打开Internet Explorer浏览器、Google Chrome 或你选择的其他浏览器。
 
@@ -73,7 +73,7 @@ ms.locfileid: "59491597"
 
 ## <a name="see-also"></a>另请参阅
 
-- [网络保护功能](network-protection.md)
+- [网络保护](network-protection.md)
 
 - [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 

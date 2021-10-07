@@ -9,25 +9,25 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理员可以设置连接器以导入和存档网页 捕获来自 Microsoft 365 中的网页捕获Microsoft 365。 此连接器允许您存档 Microsoft 365 中第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 9d35f23371bfdf0f3f3c9d29d059d862f9cd93ac
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 管理员可以设置连接器以导入和存档网页捕获来自 Microsoft 365。 此连接器允许您在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
+ms.openlocfilehash: 28d8347c8749e040b778d1efe230e403210095a5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170658"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168754"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>设置连接器以存档网页数据
 
-使用 Microsoft 365 合规中心 连接器将数据从网页导入并存档到组织中用户Microsoft 365邮箱。 该网页捕获连接器提供了 [一](https://globanet.com/webpage-capture) 个网页捕获连接器 (特定网站或整个域中) 网页上的任何链接。 连接器将网页内容转换为 PDF、PNG 或自定义文件格式，然后将转换后的文件附加到电子邮件，然后将这些电子邮件项目导入 Microsoft 365 中的用户邮箱。
+使用 Microsoft 365 合规中心 连接器将网页数据导入并存档到组织中用户Microsoft 365邮箱。 该网页捕获连接器提供了 [一](https://globanet.com/webpage-capture) 个网页捕获连接器 (特定网站或整个域中) 网页上的任何链接。 连接器将网页内容转换为 PDF、PNG 或自定义文件格式，然后将转换后的文件附加到电子邮件，然后将这些电子邮件项目导入 Microsoft 365 中的用户邮箱。
 
 将网页内容存储在用户邮箱中后，可以应用Microsoft 365保留、电子数据展示、保留策略和保留标签等合规性功能。 使用网页捕获连接器在网站中导入和存档Microsoft 365可帮助组织遵守政府及法规策略。
 
 ## <a name="overview-of-archiving-webpage-data"></a>存档网页数据概述
 
-以下概述介绍使用连接器在网站中存档网页内容Microsoft 365。
+以下概述说明了使用连接器在网站中存档网页Microsoft 365。
 
 ![网页数据的存档工作流。](../media/WebPageCaptureConnectorWorkflow.png)
 
@@ -39,13 +39,13 @@ ms.locfileid: "59170658"
 
 4. 连接器使用自动用户映射的 *Email* 属性值将转换后的网页项目导入特定用户的邮箱，如步骤 [3 中所述](#step-3-map-users-and-complete-the-connector-setup)。 在用户邮箱中创建名为 **"网页** 捕获"的"收件箱"文件夹中的子文件夹，网页项目将导入到该文件夹中。 连接器使用 *Email* 属性的值实现此操作。 每个网页项都包含此属性，该属性用在步骤 2 中配置网页捕获连接器时 [提供的电子邮件地址填充](#step-2-configure-the-webpage-capture-connector-on-the-veritas-merge1-site)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 为 Microsoft 连接器创建一个 Microsoft Merge1 帐户。 若要创建此帐户，请联系["用户支持人员"。](https://www.veritas.com/content/support/) 在步骤 1 中创建连接器时，将登录到此帐户。
 
 - 你需要与以下组织合作，以设置将网页项转换为的自定义文件格式。 有关详细信息，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf)。
 
-- 必须在步骤 1 (步骤 1 中创建网页捕获连接器并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，不会向角色组分配此角色Exchange Online。 可以将邮箱导入导出角色添加到组织管理角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 中创建网页捕获连接器 (在步骤 3) 中完成该连接器的用户必须分配至 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此 **角色Microsoft 365 合规中心。** 默认情况下，不会向角色组分配此角色Exchange Online。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 ## <a name="step-1-set-up-the-webpage-capture-connector"></a>步骤 1：设置网页捕获连接器
 
@@ -65,7 +65,7 @@ ms.locfileid: "59170658"
 
 第二步是在"完成"合并 1 网站中配置网页捕获连接器。 若要了解如何配置网页捕获连接器，请参阅[Merge1 Third-Party Connectors User Guide。](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf)
 
-单击"保存 **&完成****"后**，将显示连接器向导中的"用户Microsoft 365 合规中心页。
+单击"保存&**完成****"后**，将显示连接器向导中的"用户Microsoft 365 合规中心页。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>步骤 3：映射用户并完成连接器设置
 

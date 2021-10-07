@@ -7,7 +7,7 @@ ms.date: 8/1/2017
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -25,12 +25,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: 了解 Microsoft 365 2013 和 2016 客户端Office新式验证功能如何以不同方式工作。
-ms.openlocfilehash: 60b1729d9830fd12141d162c4fe721267e52d437
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c3586029a3c1ea73dae30696c74011e3dd22400d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201273"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166882"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>新式验证如何适用于 Office 2013、Office 2016 和 Office 2019 客户端应用
 
@@ -47,29 +47,29 @@ ms.locfileid: "59201273"
 
 - 默认情况下 **，Exchange Online** 打开。 请参阅[启用或禁用新式Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662)以将其关闭或打开。
 
-- 默认情况下 **为** SharePoint Online 启用。
+- 默认情况下 **为** SharePoint Online 打开。
 
-- 默认情况下 **为** Skype for Business Online 启用。 请参阅[启用 Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)进行新式验证以将其关闭或打开。
+- 默认情况下 **为** Skype for Business Online 打开。 请参阅[启用 Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)进行新式验证以将其关闭或打开。
 
 > [!NOTE]
 > 对于在 2017 年 8 月 1 日 **之前** 创建的租户，将为 Exchange Online 和 Skype for Business Online 默认 **关闭** 新式验证。
 
 ## <a name="sign-in-behavior-of-office-client-apps"></a>客户端应用的Office行为
 
-Office 2013 客户端应用默认支持旧版身份验证。 旧版意味着它们支持 Microsoft Online 登录助手或基本身份验证。 为了使这些客户端使用新式验证功能，Windows客户端必须设置注册表项。 有关说明，请参阅在 Windows 设备上为[Office 2013 启用新式验证](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)。
+Office 2013 客户端应用默认支持旧版身份验证。 旧版意味着它们支持 Microsoft Online 登录助手或基本身份验证。 为了使这些客户端使用新式验证功能，Windows客户端必须设置注册表项。 有关说明，请参阅在 Office 设备上为[Windows 2013 启用新式验证](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)。
 
 若要为运行 Windows 且安装了 Microsoft Office 2013 的任何设备（例如笔记本电脑和平板电脑）启用新式验证，需设置以下注册表项。必须在每台要启用新式验证的设备上设置注册表项：
 
-|**注册表项**|**类型**|**值** |
+|**注册表项**|**Type**|**值** |
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
 
-阅读[如何使用新式验证 (ADAL) Skype for Business](./hybrid-modern-auth-overview.md)了解它如何与 Skype for Business。
+阅读[如何使用新式验证 (ADAL) Skype for Business](./hybrid-modern-auth-overview.md)了解如何使用新式验证Skype for Business。
 
 Office 2016 和 Office 2019 客户端默认支持新式验证，客户端无需任何操作来使用这些新流。 但是，要使用旧版身份验证，需要显式操作。
 
-单击下面的链接以查看 Office 2013、Office 2016 和 Office 2019 客户端身份验证如何与 Microsoft 365 服务一起运行，具体取决于是否启用新式验证。
+单击下面的链接，查看 Office 2013、Office 2016 和 Office 2019 客户端身份验证如何与 Microsoft 365 服务一起运行，具体取决于是否启用新式验证。
 
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
 

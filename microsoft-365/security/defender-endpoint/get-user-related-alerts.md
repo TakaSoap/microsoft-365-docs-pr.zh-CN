@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a9dc5b908534cf791d8538069a8d8db9f10e0e48
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 86dad7fdbbb153c99419a2c59d3a85a6494780eb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170064"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169847"
 ---
 # <a name="get-user-related-alerts-api"></a>获取与用户相关的警报 API
 
@@ -51,8 +51,8 @@ ms.locfileid: "59170064"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Alert.Read.All|"读取所有警报"
-应用程序|Alert.ReadWrite.All|"读取和写入所有警报"
+Application|Alert.Read.All|"读取所有警报"
+Application|Alert.ReadWrite.All|"读取和写入所有警报"
 委派（工作或学校帐户） | Alert.Read | "读取警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
@@ -68,13 +68,13 @@ ms.locfileid: "59170064"
 GET /api/users/{id}/alerts
 ```
 
-**ID 不是完整的 UPN，而只是用户名。 (，例如，若要检索用户 user1@contoso.com /api/users/user1/alerts)**
+**ID 不是完整的 UPN，而只是用户名。 (，若要检索用户 user1@contoso.com /api/users/user1/alerts)**
 
 ## <a name="request-headers"></a>请求标头
 
 名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

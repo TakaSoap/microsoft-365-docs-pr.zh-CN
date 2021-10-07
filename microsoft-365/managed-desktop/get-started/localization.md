@@ -7,21 +7,21 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 354f61284bbd95c1c7ca4cd50459a1644a89d090
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4ff4d72f22faef32b1fabb52e10332af62e50bc7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196083"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170055"
 ---
 # <a name="localize-the-user-experience"></a>本地化用户体验
 
-Microsoft 托管桌面设备的用户可以在设置过程中选择他们选择的语言， ("开箱即用体验") 之后。
+Microsoft 托管桌面设备的用户可以在设置过程中选择他们选择的语言， ("开箱即用体验"，) 之后。
 
 ## <a name="during-setup-the-out-of-box-experience"></a>在设置 ("开箱使用体验") 
 
@@ -32,7 +32,7 @@ Microsoft 托管桌面设备的用户可以在设置过程中选择他们选择�
     - 键盘语言
     - 按需与语言相关的功能
 
-- Microsoft 365 应用版用于Enterprise功能：
+- Microsoft 365 应用版语言Enterprise：
     - 显示语言
     - 校对和创作工具
 
@@ -41,17 +41,17 @@ Microsoft 托管桌面设备的用户可以在设置过程中选择他们选择�
 
 ## <a name="after-completing-setup"></a>完成设置后
 
-用户可以选择自己选择的语言进行Windows 10 Microsoft 365 应用版设置Enterprise完成设置后随时进行选择。 具体来说：
+用户可以选择自己选择的语言进行Windows 10 Microsoft 365 应用版，Enterprise安装过程完成后随时进行配置。 具体来说：
 
 - Windows 10语言功能：
     - 显示语言
     - 键盘语言
 
-- Microsoft 365 应用版用于Enterprise功能：
+- Microsoft 365 应用版语言Enterprise：
     - 显示语言
     - 校对和创作工具
 
-若要使 [Microsoft 365 应用版](#supported-languages)for Enterprise 支持的语言可供用户安装，请向新式 **Workplace-Office-Language_Packs** 组添加用户。 这些语言将在Intune 公司门户。
+若要使 [Microsoft 365 应用版](#supported-languages)for Enterprise 支持的语言可供用户安装，可以将用户添加到新式 **Workplace-Office-Language_Packs** 组。 这些语言将在 Intune 公司门户。
 
 
 ## <a name="supported-languages"></a>支持的语言
@@ -90,7 +90,7 @@ Microsoft 托管桌面设备的用户可以在设置过程中选择他们选择�
 - 葡萄牙语（葡萄牙）
 - 罗马尼亚语
 - 俄语 
-- 塞尔维亚语 (拉丁语字母) 
+- 塞尔维亚 (拉丁语字母) 
 - 斯洛伐克语
 - 斯洛文尼亚语
 - 西班牙语 (西班牙、墨西哥) 
@@ -107,11 +107,11 @@ Microsoft 365 应用版Enterprise列表可能略有不同。
 ## <a name="languages-for-support-and-operations"></a>支持和操作的语言
 
 ### <a name="user-support"></a>用户支持
-Microsoft 托管桌面仅提供英文版支持。 如果用户在应用中选择其他语言获取帮助，他们将从常规 Microsoft 支持渠道获得支持，而不是直接从 Microsoft Microsoft 托管桌面。 有关详细信息，请参阅 [获取用户帮助](../working-with-managed-desktop/end-user-support.md)。
+Microsoft 托管桌面仅提供英文版支持。 如果用户在 microsoft 应用中选择获取帮助语言，他们将从常规 Microsoft 支持渠道获得支持，而不是直接从 Microsoft Microsoft 托管桌面。 有关详细信息，请参阅 [获取用户帮助](../working-with-managed-desktop/end-user-support.md)。
 
 如果用户需要其他语言支持，您必须通过非 Microsoft 支持源或您自己的组织提供支持。
 
 ### <a name="admin-support-and-operations"></a>管理员支持和操作
-Microsoft 托管桌面仅提供英语版管理员支持。 这包括管理门户和与 Microsoft 托管桌面 操作的所有通信。 你应该假设所有与管理员相关的交互和界面都将采用英语，除非另行指定。
+Microsoft 托管桌面仅提供英语版管理员支持。 这包括管理门户和与管理员操作Microsoft 托管桌面通信。 你应该假设所有与管理员相关的交互和界面都将采用英语，除非另行指定。
 
 

@@ -4,17 +4,17 @@ description: 如何指定希望设备在哪个部署组中
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 19465d2d2f077859490c106b9c01f08beb6e3906
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 88445e3ce29084de6141930d36bbdc7f4b2e247d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171279"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166630"
 ---
 # <a name="assign-devices-to-a-deployment-group"></a>将设备分配到部署组
 
@@ -31,7 +31,7 @@ Microsoft 托管桌面将设备分配给各种部署组，但可以使用管理�
 4. 选择 **"将设备分配到组"。** 将打开一个飞入。
 5. 使用下拉菜单选择要将设备移动到的组，然后选择"保存 **"。** 分配 **了 的组** 将更改为"待 **定"。**
 
-工作分配完成后，"分配者"将更改为"管理员 (表明你进行了更改) "组"列将显示新的组分配。 
+分配完成后，"分配者"的"组"将更改为"管理员 (表明你进行了更改) "组"列将显示新的组分配。 
 
 > [!NOTE]
 > 如果设备在"错误"或"挂起"注册状态，则不能将设备移动到其他组。

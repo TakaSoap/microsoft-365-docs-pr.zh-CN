@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -24,13 +24,13 @@ search.appverid:
 - MBS150
 - GEA150
 - BCS160
-description: '了解如何从电子表格或其他 CSV 格式Microsoft 365列表向企业添加多个用户。 观看 YouTube 上的一个视频，介绍如何将帐户添加到Microsoft 365。 在此过程结束时，拥有帐户的每个用户都将拥有一Microsoft 365邮箱。 '
-ms.openlocfilehash: 873a9ff27f85d63596f5e69db918c0c619b73539
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: '了解如何从电子表格或其他 CSV 格式Microsoft 365列表向企业添加多个用户。 观看 YouTube 上的一个视频，该视频说明如何将帐户添加到Microsoft 365。 在此过程结束时，拥有帐户的每个用户都将拥有一Microsoft 365邮箱。 '
+ms.openlocfilehash: d9152ba8dfef21faeaba6f981c23359eb114b653
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200498"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170411"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>同时添加多个用户以Microsoft 365管理员帮助
 
@@ -49,9 +49,9 @@ ms.locfileid: "59200498"
 
 4. 在" **导入多个用户** "面板上，可以选择下载包含或不填充示例数据的示例 CSV 文件。
 
-    电子表格需要包含与示例一完全相同的列标题 (用户名、名字等) 。 如果使用模板，请用文本编辑工具（如 记事本）打开它，并考虑单独保留第 1 行的所有数据，并仅输入第 2 行及以下行的数据。
+    电子表格需要包含与示例一 **完全相同** 的列标题 (用户名、名字等列标题) 。 如果使用模板，请用文本编辑工具（如 记事本）打开它，并考虑单独保留第 1 行的所有数据，并仅输入第 2 行及以下行的数据。
 
-    电子表格还需要包含用户名值，如 (bob@contoso.com) 和 显示名称 (如 Bob Kelly) 的值。
+    电子表格还需要包含用户名值（如 (bob@contoso.com) ）和 显示名称 (（如 Bob Kelly) ）的值。
 
   ```
   User Name,First Name,Last Name,Display Name,Job Title,Department,Office Number,Office Phone,Mobile Phone,Fax,Address,City,State or Province,ZIP or Postal Code,Country or Region
@@ -73,11 +73,11 @@ ms.locfileid: "59200498"
 
 ## <a name="next-steps"></a>后续步骤
 
-- 现在这些用户已拥有帐户，他们需要在电脑或 Mac Microsoft 365或 Office [2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)下载和安装或重新安装。 团队的每个人都可以在最多 5 台Microsoft 365 Mac 上安装此设备。
+- 现在这些用户已拥有帐户，他们需要在电脑或 Mac Microsoft 365或 Office [2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)上下载和安装或重新安装。 团队的每个人都可以在最多 5 台Microsoft 365 Mac 上安装此设备。
 
-- 每个人还可以在Office 5 台平板电脑和 5[部](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f)手机（如 iPhone、iPad 和 Android 手机和平板电脑）上设置 Office 应用和电子邮件。 这样，他们就可以从Office编辑文件。
+- 每个人还可以在[Office](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) 5 台平板电脑和 5 部手机（如 iPhone、iPad 以及 Android 手机和平板电脑）上设置 Office 应用和电子邮件。 这样，他们就可以从Office编辑文件。
 
-    有关[安装Microsoft 365](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)的端到端列表，请参阅设置适用于企业的业务。
+    有关[设置Microsoft 365](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)的端到端列表，请参阅设置适用于企业的业务。
 
 ## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>有关向用户添加用户Microsoft 365
 
@@ -97,9 +97,9 @@ CSV 文件是包含逗号分隔值的文件。 可以使用任何文本编辑器
   
 ### <a name="tips-for-formatting-your-spreadsheet"></a>使用技巧设置电子表格格式的模板
 
-- **是否需要与示例电子表格中相同的列标题？** 能。 示例电子表格包含第一行中的列标题。 这些标题是必需的。 对于要添加到"用户"Microsoft 365，在标题下创建一行。 如果添加、更改或删除任何列标题，Microsoft 365可能无法从文件中的信息创建用户。
+- **是否需要与示例电子表格中相同的列标题？** 是。 示例电子表格包含第一行中的列标题。 这些标题是必需的。 对于要添加到"用户"Microsoft 365，在标题下创建一行。 如果添加、更改或删除任何列标题，Microsoft 365可能无法从文件中的信息创建用户。
 
-- **如果我没有每个用户所需的全部信息，应该怎么做？** 用户名和显示名称是必需的，如果没有此信息，就无法添加新用户。 如果没有其他一些信息（如传真），可以使用空格加逗号指示字段应保留为空。
+- **如果我没有每个用户所需的全部信息，应该怎么做？** 用户名和显示名称是必需的，如果没有此信息，则不能添加新用户。 如果没有其他一些信息（如传真），可以使用空格加逗号指示字段应保留为空。
 
 - **电子表格可以有多小或多大？** 电子表格必须至少包含两行。 一个标题用于用户 (列标签) 列标题，另一个列标题用于用户。 行数不能超过 251 行。 如果需要导入超过 250 个用户，可以创建多个电子表格。
 
@@ -122,7 +122,7 @@ CSV 文件是包含逗号分隔值的文件。 可以使用任何文本编辑器
 |Mobile Phone － 移动电话  <br/> |64  <br/> |
 |Fax  <br/> |64  <br/> |
 |地址  <br/> |1023  <br/> |
-|市/县  <br/> |128  <br/> |
+|城市  <br/> |128  <br/> |
 |省/自治区/直辖市  <br/> |128  <br/> |
 |邮政编码  <br/> |40  <br/> |
 |国家或地区  <br/> |128  <br/> |
@@ -131,7 +131,7 @@ CSV 文件是包含逗号分隔值的文件。 可以使用任何文本编辑器
 
 - **仔细检查电子表格的格式是否正确。** 检查列标题以确保它们与示例文件中的标题匹配。 确保遵循字符长度规则，并且每个字段用逗号分隔。
 
-- **如果看不到新用户，请Microsoft 365几分钟。** 更改可能需要一点时间才能在服务中Microsoft 365。 
+- **如果还没有看到新用户Microsoft 365，请稍等几分钟。** 更改可能需要一点时间才能跨 Microsoft 365。 
 
 ## <a name="related-articles"></a>相关文章
 

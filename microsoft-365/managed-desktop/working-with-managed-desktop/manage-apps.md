@@ -1,5 +1,5 @@
 ---
-title: 在应用中管理Microsoft 托管桌面
+title: 管理应用中Microsoft 托管桌面
 description: 了解如何更新部署到其他设备的业务线Microsoft 托管桌面的信息
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
@@ -9,28 +9,28 @@ f1.keywords:
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b016d8458b4b4cc9f6b684d3b8a3c0a1e1322fef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad30f6647df4146efe81daec4b2bcaa506b7c8b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196637"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169883"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>在 Microsoft 托管桌面中管理业务线应用
 
 <!--Application management -->
 
-有两种方法可以管理已载入应用并部署到 Microsoft 托管桌面 设备的应用Microsoft 托管桌面更新。 可以在应用门户或 Intune Microsoft 托管桌面应用更新。 
+有两种方法可以管理已载入应用并部署到Microsoft 托管桌面设备的应用Microsoft 托管桌面更新。 可以在应用门户或 Intune Microsoft 托管桌面应用更新。 
 
 <span id="update-app-mmd" />
 
 ## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>更新 Microsoft 托管桌面 中的业务线Microsoft 托管桌面
 
 **在企业门户中更新业务线Microsoft 托管桌面应用**
-1. 登录到管理[Microsoft 托管桌面门户](https://aka.ms/mmdportal)。
+1. 登录到管理[Microsoft 托管桌面 。](https://aka.ms/mmdportal)
 2. 在 **"清单"** 下，选择 **"应用"。**  
 3. 选择要更新的应用，然后选择"编辑 **"。**
 4. 在 **"管理"** 下，选择"**属性"。** 
@@ -59,16 +59,16 @@ ms.locfileid: "59196637"
 
 ## <a name="roll-back-an-app-to-a-previous-version"></a>将应用回滚到以前版本
 
-如果在部署应用的新版本时发现错误，你可以回滚到以前的版本。 此处概述的过程适用于类型列为 **Windows MSI** 业务线应用或 **Windows Win 32** (应用 - 预览) 的应用
+如果在部署应用的新版本时发现错误，你可以回滚到以前的版本。 此处概述的过程适用于类型列为 **Windows MSI** 业务线应用或 Windows 应用 (**Win 32**) - 预览
 
 **将业务线应用回滚到以前版本**
 
-1. 登录到管理[Microsoft 托管桌面门户](https://aka.ms/mmdportal)。
+1. 登录到管理[Microsoft 托管桌面 。](https://aka.ms/mmdportal)
 2. 在 **"清单"** 下，选择 **"应用"。**  
 3. 选择需要回滚的应用，然后选择"编辑 **"。**
 4. 在 **"管理"** 下，选择"**属性"。** 
-    - 对于 **Windows MSI 业务** 线应用应用，请选择"应用信息"，然后在"忽略 **应用** 版本"下选择"**是"。**
+    - For **Windows MSI line-of-business app** apps， select App **information**， and then under Ignore **app version，** select **Yes**.
     - For **Windows app (Win 32) - preview** apps， select App **information，** select **Detection rules，** and then select **Add**. 
     如果存在 MSI 规则，请验证 **MSI 产品版本检查** 是否设置为 **"否"。**
-5. [Upload应用源文件的以前版本，Microsoft 托管桌面](../get-started/deploy-apps.md)管理门户。  
+5. [Upload应用源文件的以前版本Microsoft 托管桌面](../get-started/deploy-apps.md)管理门户。  
 

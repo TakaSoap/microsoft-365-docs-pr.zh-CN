@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 升级计划的最简单方法是使用管理中心中的"升级"选项卡。 但是，"升级"选项卡并不总是受支持。
 ms.date: 04/21/2021
-ms.openlocfilehash: a4db0934767beb7913939475d8615f2a0184d0a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8d481ec0b5eb64fcc86ca331d9bde3cac746f177
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170696"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167542"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升级到其他计划
 
@@ -43,7 +43,7 @@ ms.locfileid: "59170696"
 5. 输入所需的许可证数，选择是每月支付还是整年支付，然后选择"**转到结帐"。**
     > [!NOTE]
     > 请确保你购买足够的许可证来覆盖所有用户。
-6. 下一页上，按此顺序验证 **"售达地址**"、"计费 **到信息"** 和"**项目"。** 可以在此步骤中更改默认付款方式。 如果需要进行更改，请选择适用 **部分旁边的"** 更改"。
+6. 下一页上，按此顺序验证 **"售达地址**"、"计费 **到** 信息"**和"项目"。** 可以在此步骤中更改默认付款方式。 如果需要进行更改，请选择适用 **部分旁边的"** 更改"。
 7. 完成后，选择下 **订单**。
 
 完成签出后，可能需要几分钟才能完成升级。 你可以立即开始使用新订阅。 选择 **"检查升级** 状态"以检查升级进度。 升级完成后，您将收到通知。 通知显示在新订阅旁边的 **"你的** 产品"页面上。
@@ -100,7 +100,7 @@ ms.locfileid: "59170696"
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>针对同一产品有两个或多个计划
 
-只有当所有用户订阅同 **一个** 计划时，才能使用"升级"选项卡。 例如，如果你有两个Microsoft 365 商业标准版计划，则你无法自动将其中一个计划升级到另一个计划。
+只有当所有用户订阅同 **一个** 计划时，才能使用"升级"选项卡。 例如，如果你有两个Microsoft 365 商业标准版计划，则不能自动将其中一个计划升级到另一个计划。
 
 #### <a name="you-have-a-prepaid-plan"></a>你拥有预付费计划
 
@@ -136,7 +136,7 @@ ms.locfileid: "59170696"
 
 ### <a name="access-to-services"></a>对服务的访问
 
-**升级** 计划时，管理员将不能使用管理中心。 这最多需要一小时的时间。
+**升级** 计划期间，管理员将不能使用管理中心。 这最多需要一小时的时间。
   
 **用户** 不会遇到服务中断情形。 在升级完全完成之前，他们将继续拥有现有服务。
   
@@ -148,7 +148,7 @@ ms.locfileid: "59170696"
   
 如果在升级计划之前拥有多个订阅，并且向用户分配了多个订阅的许可证，则此分配模式将尽可能保留在新订阅中。
   
-在升级过程中，将保留Exchange数据，SharePoint联机文档、列表和其他信息。
+升级过程中将保留所有用户数据，包括Exchange邮箱SharePoint联机文档、列表和其他信息。
   
 ### <a name="billing"></a>计费
 
@@ -165,5 +165,5 @@ ms.locfileid: "59170696"
 
 ## <a name="related-content"></a>相关内容
 
-[手动更改计划](change-plans-manually.md) (文章) \
+[在本文 (](change-plans-manually.md) 更改) \
 [在切换业务Microsoft 365之前备份数据 (](back-up-data-before-switching-plans.md)文章) 

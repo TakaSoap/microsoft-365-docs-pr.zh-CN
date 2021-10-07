@@ -10,7 +10,7 @@ ms.reviewer: pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,20 +21,20 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何验证学校是否有资格使用Microsoft 365 教育版定价。
 ms.date: 07/21/2020
-ms.openlocfilehash: 86bdb4338c316edf5b8bdb83a61a5a0fd2f411ee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8fc3be02de01e2d37159162581276e7c9d3451f1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167535"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168898"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>验证订阅的Microsoft 365 教育版资格
 
-如果你是教育机构的一部分，你可以注册免费试用版Microsoft 365 教育版。 Microsoft 验证你的学校的学术资格后，你可以以学院Microsoft 365购买课程产品。 这包括免费提供的产品，Office 365 A1教职员工和Office 365 A1学生。 在免费试用版结束之前，你可以将其转换为以学院价格付费的订阅。
+如果你是教育机构的一部分，你可以注册免费试用版Microsoft 365 教育版。 Microsoft 验证你的学校的学术资格后，你可以以学院Microsoft 365购买产品。 这包括免费提供的产品，Office 365 A1教职员工和Office 365 A1学生。 在免费试用版结束之前，你可以将其转换为以学院价格付费的订阅。
 
 本文介绍如何验证学校的学院资格、检查资格状态，以及在学校获得批准后如何以学院价格购买订阅。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 你必须已拥有Microsoft 365 教育版订阅。 如果你没有试用版订阅，请访问此 [网页，](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) 然后选择 **免费入门**。
 
@@ -58,14 +58,14 @@ ms.locfileid: "59167535"
 
 ## <a name="check-the-status-of-your-schools-academic-eligibility"></a>检查学校的学院资格状态
 
-在试用Microsoft 365 教育版，你随时都可以检查学校的学术资格状态。
+获得Microsoft 365 教育版后，你随时都可以检查学校的学术资格状态。
 
 1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心"。</a>
 2. 在主页上，找到 **"帐单"** 卡。\
     计费 **卡** 指示验证过程的状态。 该卡显示以下状态之一：已批准、挂起、已拒绝或添加域。
 
     > [!NOTE]
-    > 如果你看不到这些状态之一，这意味着你还没有Microsoft 365 教育版订阅。 若要启动免费试用版， [请访问此网页，](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) 然后选择 **免费入门**。
+    > 如果未看到这些状态之一，则意味着你没有试用版Microsoft 365 教育版订阅。 若要启动免费试用版， [请访问此网页，](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) 然后选择 **免费入门**。
 
 ## <a name="buy-subscriptions-at-academic-prices"></a>以学院价格购买订阅
 

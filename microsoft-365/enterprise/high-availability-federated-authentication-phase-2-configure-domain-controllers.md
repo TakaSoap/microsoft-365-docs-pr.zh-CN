@@ -7,26 +7,26 @@ ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: 摘要：配置域控制器和目录同步服务器，实现 Microsoft 365 中的高可用性Microsoft Azure。
-ms.openlocfilehash: f5d68f75a281ed8e04b8a41d7b748e056e081b52
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 摘要：配置域控制器和目录同步服务器，以在 Microsoft Azure 中实现高可用性Microsoft 365身份验证。
+ms.openlocfilehash: 82199d6782e9c2497214d501da9e27ac0956edcd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196804"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167014"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性联合身份验证阶段 2：配置域控制器
 
 在部署 Azure 基础结构服务中Microsoft 365身份验证的这一阶段，在 Azure 虚拟网络中配置两个域控制器和目录同步服务器。 然后用于身份验证的客户端 Web 请求可以在 Azure 虚拟网络中进行身份验证，而不是将通过站点到站点 VPN 连接的该身份验证流量发送到本地网络。
   
 > [!NOTE]
-> Active Directory 联合身份验证服务 (AD FS) 无法使用 Azure Active Directory (Azure AD) 代替 Active Directory 域服务 (AD DS) 域控制器。 
+> Active Directory 联合身份验证服务 (AD FS) 无法使用 Azure Active Directory (Azure AD) 替代 Active Directory 域服务 (AD DS) 域控制器。 
   
 必须先完成此阶段，然后才能进入阶段 [3：配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)。 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
   
@@ -41,7 +41,7 @@ ms.locfileid: "59196804"
 |3.  <br/> |![行。](../media/Common-Images/TableLine.png)  (目录同步服务器，示例 DS1)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |4.  <br/> |![行。](../media/Common-Images/TableLine.png)  (一个 AD FS 服务器，例如 ADFS1)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |5.  <br/> |![行。](../media/Common-Images/TableLine.png)  (AD FS 服务器，例如 ADFS2)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![行。](../media/Common-Images/TableLine.png)  (第一个 Web 应用程序代理服务器，例如 WEB1)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![行。](../media/Common-Images/TableLine.png)  (Web 应用程序代理服务器，示例 WEB1)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |7.  <br/> |![行。](../media/Common-Images/TableLine.png)  (第二个 Web 应用程序代理服务器，例如 WEB2)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **表 M - Azure 中用于高可用性联合身份验证的Microsoft 365虚拟机**
@@ -150,7 +150,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 使用你选择的远程桌面客户端并创建到第一个域控制器虚拟机的远程桌面连接。使用其 Intranet DNS 或计算机名称以及本地管理员帐户的凭据。
   
-接下来，通过以下命令将额外的数据磁盘添加到第一个域控制器Windows PowerShell第一个域控制器虚拟机上的命令 **提示符中：**
+接下来，使用以下命令将额外的数据磁盘添加到第一个域控制器Windows PowerShell第一个域控制器虚拟机上的命令 **提示符中**：
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -245,7 +245,7 @@ Restart-Computer
   
 **阶段 2：Azure 中高可用性联合身份验证基础结构的域控制器和目录同步服务器**
 
-![Azure 中具有域控制器Microsoft 365身份验证基础结构的第 2 阶段。](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![Azure 中与域控制器Microsoft 365身份验证基础结构的第 2 阶段。](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>后续步骤
 
@@ -255,6 +255,6 @@ Restart-Computer
 
 [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[用于开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365 解决方案和体系结构中心](../solutions/index.yml)

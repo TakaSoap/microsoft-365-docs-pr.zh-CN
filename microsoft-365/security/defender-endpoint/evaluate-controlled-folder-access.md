@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.topic: conceptual
 author: dansimp
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 708d7d271e03b127460d5b2aa2745568d920a198
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: d4c029ee825299202b3d1a128c9fbee5986bf5cc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042874"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166524"
 ---
 # <a name="evaluate-controlled-folder-access"></a>受控文件夹访问评估
 
@@ -40,7 +40,7 @@ ms.locfileid: "60042874"
 本文帮助你评估受控文件夹访问权限。 它介绍了如何启用审核模式，以便可以直接在组织中测试该功能。
 
 > [!TIP]
-> 还可以访问 Microsoft Defender for Endpoint 演示方案[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)网站，demo.wd.microsoft.com 确认功能是否正常工作并查看其工作方式。
+> 还可以访问 Microsoft Defender for Endpoint 演示方案[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)网站，demo.wd.microsoft.com 以确认功能是否正常工作并查看其工作方式。
 
 ## <a name="use-audit-mode-to-measure-impact"></a>使用审核模式衡量影响
 
@@ -73,7 +73,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 在评估期间，你可能希望添加到受保护的文件夹列表，或允许某些应用修改文件。
 
-请参阅 [使用](controlled-folders.md) 受控文件夹访问权限保护重要文件夹，以使用管理工具配置功能，包括组策略、PowerShell 和 MDM 配置服务提供程序 (CSP) 。
+请参阅 [使用](controlled-folders.md) 受控文件夹访问权限保护重要文件夹，以使用管理工具（包括组策略、PowerShell 和 MDM 配置服务提供程序 (CSP) ）。
 
 ## <a name="see-also"></a>另请参阅
 

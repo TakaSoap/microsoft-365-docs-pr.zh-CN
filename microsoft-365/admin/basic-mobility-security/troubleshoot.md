@@ -7,18 +7,19 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: 尝试以下步骤以跟踪基本移动性和安全性问题
-ms.openlocfilehash: 533e2d60d3c23809bdfbf6dda5a64e43082c739e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f625fbc642392ee575b35f225f5e65b942362c4a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775104"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165936"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>基本移动性和安全性疑难解答
 
@@ -40,9 +41,9 @@ ms.locfileid: "59775104"
 
 - 请确保你已设置 APNs 证书。 有关详细信息，请参阅为 [iOS 设备创建 APNs 证书](create-an-apns-certificate-for-ios-devices.md)。
 
-- 在 **设置**   >  **配置文件 (**   >  **或设备**) 中，确保尚未安装管理配置文件。 如果是，请将其删除。
+- In **设置**   >  **General**   >  **Profile (or Device Management)**， make sure that a Management Profile is not already installed. 如果是，请将其删除。
 
-- 如果看到错误消息"设备注册失败"，请登录到 Microsoft 365并确保已向登录到设备的用户分配了包含 Exchange Online 的许可证。
+- 如果看到错误消息"设备注册失败"，请登录 Microsoft 365并确保已将包含 Exchange Online 的许可证分配给登录设备的用户。
 
 - 如果看到错误消息"配置文件安装失败"，请尝试以下操作之一：
 
@@ -68,6 +69,6 @@ ms.locfileid: "59775104"
 
 - 确保 Chrome 是最新的，并设置为默认浏览器。
 
-- 如果看到错误消息"我们无法注册此设备"，请登录 Microsoft 365并确保已向登录到设备的用户分配了包含 Exchange Online 的许可证。
+- 如果看到错误消息"我们无法注册此设备"，请登录 Microsoft 365并确保已向登录设备的用户分配了包含 Exchange Online 的许可证。
 
 - 检查设备上的通知区域，以查看任何所需的最终用户操作是否挂起，如果是，则完成这些操作。

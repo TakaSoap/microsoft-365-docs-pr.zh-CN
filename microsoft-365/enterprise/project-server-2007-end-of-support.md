@@ -7,7 +7,7 @@ ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -19,12 +19,12 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: 2017 年 10 月 10 日，Project Server 2007、Project Portfolio Server 和 Project 2007 的支持结束。 使用本文现在规划升级。
-ms.openlocfilehash: 12447eb2a021b3f92e3557b2c3ea87e859841346
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c492c7154006a139589cff1c768dd77c13804c07
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201245"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168454"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Project Server 2007 停止提供支持路线图
 
@@ -32,7 +32,7 @@ ms.locfileid: "59201245"
 
 2017 年Office 2007 服务器和应用程序的支持结束，您需要考虑迁移计划。 如果您当前使用的是 Project Server 2007 和相关产品，请注意以下停止提供支持的日期：
   
-|**Product**|**支持结束日期**|
+|**产品**|**支持结束日期**|
 |:-----|:-----|
 |Project Server 2007  <br/> |2017 年 10 月 10 日  <br/> |
 |ProjectPortfolio Server 2007  <br/> |2017 年 10 月 10 日  <br/> |
@@ -53,7 +53,7 @@ ms.locfileid: "59201245"
     
 - 时区更新。
     
-在此日期Project继续安装 Project Server 2007。 但由于前面列出的更改，我们强烈建议您尽快从 Project Server 2007 迁移。
+安装 Project Server 2007 将在此日期之后继续运行。 但由于前面列出的更改，我们强烈建议您尽快从 Project Server 2007 迁移。
   
 ## <a name="what-are-my-options"></a>我的选项是什么？
 
@@ -65,16 +65,16 @@ ms.locfileid: "59201245"
     
 |**为什么我想要迁移到Project Online**|**为什么我想要迁移到Project Server 2016**|
 |:-----|:-----|
-| 我拥有移动用户。  <br/> <br/>要迁移的成本是硬件、 (、小时数和实施迁移成本的一) 。 <br/><br/>  迁移后，维护环境的成本是一个主要 (，例如自动更新、保证正常运行时间等) 。  <br/> | 业务规则限制我在云中运营业务。<br/><br/>  我需要控制环境更新。  |
+| 我拥有移动用户。  <br/> <br/>迁移成本是硬件、 (、小时数和实现迁移成本的一) 。 <br/><br/>  迁移后，维护环境的成本是一个主要 (，例如自动更新、保证正常运行时间等) 。  <br/> | 业务规则限制我在云中运营业务。<br/><br/>  我需要控制环境更新。  |
    
 > [!NOTE]
-> 有关从 Office 2007 服务器迁移的选项的详细信息，请参阅帮助您从[Office 2007](upgrade-from-office-2007-servers-and-products.md)服务器和客户端升级的资源。 请注意，Project Server 不支持混合配置，因为 Project Server 和 Project Online 无法共享同一资源库。 
+> 有关从 Office 2007 服务器迁移的选项的详细信息，请参阅帮助您从[Office 2007 服务器和客户端升级的资源](upgrade-from-office-2007-servers-and-products.md)。 请注意，Project Server 不支持混合配置，因为 Project Server 和 Project Online 无法共享同一资源库。 
   
 ## <a name="important-considerations-when-you-migrate-from-project-server-2007"></a>从 Project Server 2007 迁移时的重要注意事项
 
-当您计划从 Project Server 2007 迁移时，请考虑以下事项：
+在计划从 Project Server 2007 迁移时，请考虑以下事项：
   
-- **从 Microsoft 合作伙伴获取** 帮助 - 从 Project Server 2007 升级可能充满挑战，并且需要进行很多准备和规划。 如果您不是最初在 Server 2007 中设置Project可能尤其具有挑战性。 幸运的是，无论你计划迁移到 Microsoft 合作伙伴还是迁移到 Project Server 2016，microsoft 合作伙伴Project Online。 在 Microsoft 合作伙伴中心中搜索 Microsoft 合作伙伴以帮助进行 [迁移](https://go.microsoft.com/fwlink/p/?linkid=841249)。 搜索"*金牌* Project项目组合管理"一词以查看具有金牌和项目组合管理专业知识的所有 Microsoft 合作伙伴Project。 
+- **从 Microsoft** 合作伙伴获取帮助 - 从 Project Server 2007 进行升级可能充满挑战，并且需要进行很多准备和规划。 如果您不是最初在 Server 2007 中设置Project可能尤其具有挑战性。 幸运的是，无论你计划迁移到 microsoft 还是 Project Server 2016，microsoft 合作伙伴Project Online。 在 Microsoft 合作伙伴中心中搜索 Microsoft 合作伙伴以帮助进行 [迁移](https://go.microsoft.com/fwlink/p/?linkid=841249)。 搜索术语"*金牌Project* 项目组合管理"以查看具有金牌和项目组合管理专业知识的所有 Microsoft 合作伙伴Project。 
     
 - **规划自定义项**- 迁移到 Project Server 2007 环境时，在 Project Server 2007 环境中进行的许多自定义Project Server 2016 Project Online。 版本之间的服务器Project存在显著差异。 受支持的所需操作系统、数据库服务器和客户端 Web 浏览器也有所不同。 规划如何测试或重新生成新环境的自定义项。 规划还提供了一个很好的机会来考虑是否仍然需要每个自定义项。 有关详细信息，请参阅[Create a plan for current customizations during upgrade to SharePoint 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013)。 
     
@@ -86,7 +86,7 @@ ms.locfileid: "59201245"
   
 1. 将项目计划从 Project Server 2003 保存为 .mpp 格式。
     
-2. 在 Project Professional 2013、Project Professional 2016 或 Project Online 桌面客户端中，打开每个 .mpp 文件，然后保存该文件并将其发布到 Project Online。
+2. 在 Project Professional 2013、Project Professional 2016 或 Project Online 桌面客户端中，打开每个 .mpp 文件，然后保存该文件并将其发布到Project Online。
     
 您可以在 Project Online 中Microsoft Project Web App (PWA) 配置。 例如，重新创建任何所需的自定义域或企业日历。 Microsoft 合作伙伴也可以帮助完成此过程。
   
@@ -110,7 +110,7 @@ ms.locfileid: "59201245"
   
 ### <a name="how-do-i-migrate-to-project-server-2016"></a>如何迁移到Project Server 2016？
 
-Project Server 2007 和 Project Server 2016之间的体系结构差异会阻止直接迁移路径。 因此，您必须将 Project Server 2007 数据迁移到 Project Server 的每个连续版本，直到达到Project Server 2016。
+Project Server 2007 和 Project Server 2016 之间的体系结构差异会阻止直接迁移路径。 因此，您必须将 Project Server 2007 数据迁移到 Project Server 的每个连续版本，直到达到Project Server 2016。
   
 请按照以下步骤操作Project Server 2016：
   
@@ -131,23 +131,23 @@ Project Server 2007 和 Project Server 2016之间的体系结构差异会阻止�
 |**Resource**|**说明**|
 |:-----|:-----|
 |[ProjectServer 2010 升级概述](/previous-versions/office/project-server-2010/ee662496(v=office.14)) <br/> |从 Project Server 2007 升级到 Project Server 2010 需要执行哪些操作的高层次视图 <br/> |
-|[规划升级到 Project Server 2010](/previous-versions/office/project-server-2010/ff603505(v=office.14)) <br/> |从 Project Server 2007 升级到 Project Server 2010 时的计划注意事项，包括系统要求  <br/> |
+|[计划升级到 Project Server 2010](/previous-versions/office/project-server-2010/ff603505(v=office.14)) <br/> |从 Project Server 2007 升级到 Project Server 2010 时的计划注意事项，包括系统要求  <br/> |
    
 #### <a name="how-do-i-upgrade"></a>如何升级？
 
 有关详细信息，请参阅[Upgrade to Project Server 2010。](/previous-versions/office/project-server-2010/gg502590(v=office.14)) 但是，必须了解有两种不同的方法可用于升级：
   
-- **数据库附加升级：** 此方法仅升级环境的内容，而不是配置设置。 如果要从仅支持 32 位服务器操作系统Office Project部署在硬件上的 Office Project Server 2007 进行升级，则是必需的。 有两种类型的数据库附加升级方法：
+- **数据库附加升级：** 此方法仅升级环境的内容，而不是配置设置。 如果要从仅支持 32 位服务器操作系统Office Project部署在硬件上的 Office Project Server 2007 升级，则是必需的。 有两种类型的数据库附加升级方法：
     
-  - 完整数据库 ***附加*** 升级 - 迁移存储在 Office Project Server 2007 数据库中的项目数据，以及存储在 Microsoft Project 内容数据库中的 Microsoft Project Web App SharePoint数据。
+  - 完整数据库 ***附加*** 升级 - 迁移存储在 Office Project Server 2007 数据库中的项目数据，以及存储在 Microsoft Project 内容数据库中的 SharePoint Web App 网站数据。
     
   - **数据库附加 *核心升级***- 仅迁移存储在 Project 服务器数据库中的项目数据。
     
-- **就地升级**：按固定顺序对现有硬件升级服务器场和服务器场中所有内容的配置数据。 启动升级过程时，安装程序会使整个服务器场脱机。 在升级Microsoft Project网站和 Web App 网站之前不可用，然后安装程序将重新启动服务器。 开始就地升级后，无法暂停升级或回滚到以前的版本。 最好创建生产环境的镜像，并就地升级到此环境，而不是在生产环境中。 
+- **就地升级**：按固定顺序对现有硬件升级服务器场和服务器场中所有内容的配置数据。 启动升级过程时，安装程序会使整个服务器场脱机。 在升级Microsoft Project网站和 Web App 网站之前不可用，然后安装程序将重新启动服务器。 开始就地升级后，无法暂停升级或回滚到以前的版本。 最好制作生产环境的镜像，并就地升级到此环境，而不是在生产环境中。 
     
 其他资源：
   
-- [Microsoft Project Server 2010 升级的 SuperFlow](/samples/browse/?redirectedfrom=TechNet-Gallery)
+- [用于 Microsoft Project Server 2010 升级的 SuperFlow](/samples/browse/?redirectedfrom=TechNet-Gallery)
     
 - [从 Project Server 2007 迁移到 Project Server 2010](/samples/browse/?redirectedfrom=TechNet-Gallery)
     
@@ -176,7 +176,7 @@ Project Server 2007 和 Project Server 2016之间的体系结构差异会阻止�
     
 - 升级过程不仅会将 Project Server 2010 数据转换为 Project Server 2013 格式，而且还会将四个 Project Server 2010 数据库合并为一个 Project Web App 数据库。
     
-- 在 2013 版本中，SharePoint Server 和 Project Server 均更改为基于声明的身份验证。 如果使用的是经典身份验证，则需要在升级时考虑此因素。 有关详细信息，请参阅[在 SharePoint 2013 中从经典模式身份验证迁移到基于声明的身份验证](/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server)。
+- 在 2013 版本中，SharePoint Server 和 Project Server 都更改为基于声明的身份验证。 如果使用的是经典身份验证，则需要在升级时考虑此因素。 有关详细信息，请参阅[在 SharePoint 2013 中从经典模式身份验证迁移到基于声明的身份验证](/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server)。
     
 其他资源：
   
@@ -186,13 +186,13 @@ Project Server 2007 和 Project Server 2016之间的体系结构差异会阻止�
     
 - [Microsoft Project服务器升级过程图](https://go.microsoft.com/fwlink/p/?linkid=841270)
     
-- [出色的数据库合并，Project 8 个简单步骤完成从 Server 2010 到 2013 的迁移](https://go.microsoft.com/fwlink/p/?linkid=841271)
+- [通过 8 个简单步骤Project到 Server 2010 到 2013 的出色的数据库合并](https://go.microsoft.com/fwlink/p/?linkid=841271)
     
 ### <a name="step-3-migrate-to-project-server-2016"></a>步骤 3：迁移到Project Server 2016
 
-确认数据已成功迁移后，下一步是迁移到Project Server 2016。
+验证数据已成功迁移后，下一步是迁移到 Project Server 2016。
   
-有关从 Project Server 2013 升级到 Project Server 2016 需要执行哪些操作的全面说明，请参阅 Upgrade [to Project Server 2016](//project/upgrading-to-project-server-2016)。
+有关从 Project Server 2013 升级到 Project Server 2016 需要执行哪些操作的全面说明，[请参阅升级到](//project/upgrading-to-project-server-2016)Project Server 2016 。
   
 关键资源：
   
@@ -205,7 +205,7 @@ Project Server 2007 和 Project Server 2016之间的体系结构差异会阻止�
 
 [有关升级的一些Project Server 2016](/project/plan-for-upgrade-to-project-server-2016)会告诉您此版本的升级的一些重要更改，其中包括：
   
-- 创建要Project Server 2016 Project Server 2013 数据的 Project Server 2016 环境时，Project Server 2016 安装文件将包含在 SharePoint Server 2016 中。 有关详细信息，请参阅部署[Project Server 2016。](/project/deploy-project-server-2016)
+- 创建要Project Server 2016 Project Server 2013 数据的 Project Server 2016 环境时，Project Server 2016 Server 2016 中包含 SharePoint 安装文件。 有关详细信息，请参阅部署[Project Server 2016。](/project/deploy-project-server-2016)
     
 - 资源计划在资源计划中Project Server 2016。 你的 Project Server 2013 资源计划将迁移到 Project Server 2016 和 Project Online 中的资源Project Online。 有关详细信息 [，请参阅概述：](https://support.office.com/article/73eefb5a-81fe-42bf-980e-9532b1bdc870) 资源活动。 
     

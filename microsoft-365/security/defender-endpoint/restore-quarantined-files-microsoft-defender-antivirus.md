@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1cdd67ba63317095926a28c5d3cc604a63202c66
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 0eed4f8b615ce759cd81385546158232d51c6158
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498036"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168202"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>在 Microsoft Defender 防病毒软件中还原隔离的文件
 
@@ -36,7 +36,7 @@ ms.locfileid: "59498036"
 如果Microsoft Defender 防病毒配置为检测和修正设备上的威胁，Microsoft Defender 防病毒隔离可疑文件。 如果确定隔离文件不是威胁，可以还原它。
 
 1. 打开 **Windows 安全中心**。
-2. 选择 **病毒&威胁防护"，** 然后单击"保护 **历史记录"。**
+2. 选择 **病毒&威胁防护，** 然后单击保护 **历史记录**。
 3. 在所有最近项的列表中，筛选"**隔离项目"。**
 4. 选择要保留的项，然后执行还原等操作。
 

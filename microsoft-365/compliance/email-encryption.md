@@ -9,7 +9,7 @@ ms.date: 8/28/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 比较 Microsoft 365 加密选项，其中包括 Office 邮件加密 (OME)、S/MIME、信息权限管理 (IRM)，并了解传输层安全性 (TLS)。
-ms.openlocfilehash: a882a0bb9597fdb1eb0bf5dcf520b8ced834af5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1d6ad4f595652b39ff6e984afe096272a7920c4d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200570"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167266"
 ---
 # <a name="email-encryption"></a>电子邮件加密
 

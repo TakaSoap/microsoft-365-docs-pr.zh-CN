@@ -8,25 +8,26 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 使用Windows PowerShell获取有关组织中基本移动和安全设备的详细信息。
-ms.openlocfilehash: ef9a98e4ce1df1e95716c36cf489b8e8ae500722
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 25c7f89dda32121306bfe2434620d17396f2e870
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773879"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166056"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>获取有关基本移动性和安全性托管设备的详细信息
 
-本文演示如何使用 Windows PowerShell获取组织中为基本移动性和安全性设置的设备的详细信息。
+本文演示如何使用 Windows PowerShell获取有关您为基本移动性和安全性设置的组织中设备的详细信息。
 
 以下是可供你使用的设备详细信息的细目。
 
@@ -40,7 +41,7 @@ ms.locfileid: "59773879"
 > [!NOTE]
 > 本文中的命令和脚本还返回有关由 Microsoft Intune 管理 [的任何设备的详细信息](https://www.microsoft.com/cloud-platform/microsoft-intune)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 需要设置一些操作来运行本文中所述的命令和脚本。
 
@@ -48,7 +49,7 @@ ms.locfileid: "59773879"
 
 有关这些步骤详细信息，请参阅 连接 [Microsoft 365 PowerShell。](/office365/enterprise/powershell/connect-to-office-365-powershell)
 
-1. 转到 IT [Microsoft Online Services Sign-In RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)的"Microsoft Online Services助手"，然后选择"Microsoft Online Services    **助手"。**
+1. 转到 ["Microsoft Online Services Sign-In IT 专业人员 RTWl"，](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)然后选择   "下载 **Microsoft Online Services登录助手"。**
 
 2. 安装用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，具体步骤如下：
 
@@ -70,7 +71,7 @@ ms.locfileid: "59773879"
    $UserCredential = Get-Credential
    ```
 
-2. 在"Windows PowerShell凭据请求"对话框中，键入您的 Microsoft 365 全局管理员帐户的用户名和密码，然后选择"确定 **"。**
+2. 在"Windows PowerShell凭据请求"对话框中，键入您的全局管理员帐户Microsoft 365用户名和密码，然后选择"确定 **"。**
 
 3. 运行以下命令。
 
@@ -174,7 +175,7 @@ ms.locfileid: "59773879"
    }
    ```
 
-2. 使用文件扩展名Windows PowerShell另存为脚本.ps1;例如，Get-MsolUserDeviceComplianceStatus.ps1。
+2. 使用文件扩展Windows PowerShell文件，将其另存为脚本.ps1;例如，Get-MsolUserDeviceComplianceStatus.ps1。
 
 ## <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>运行脚本获取单个用户帐户的设备信息
 
@@ -198,7 +199,7 @@ ms.locfileid: "59773879"
    .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
    ```
 
-信息作为 CSV 文件导出Windows桌面桌面。 可以使用其他参数指定 CSV 的文件名和路径。
+信息作为 CSV 文件导出Windows桌面。 可以使用其他参数指定 CSV 的文件名和路径。
 
 ## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>运行脚本获取一组用户的设备信息
 
@@ -222,7 +223,7 @@ ms.locfileid: "59773879"
    .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
    ```
 
-信息作为 CSV 文件导出Windows桌面桌面。 可以使用其他参数指定 CSV 的文件名和路径。
+信息作为 CSV 文件导出Windows桌面。 可以使用其他参数指定 CSV 的文件名和路径。
 
 ## <a name="related-topics"></a>相关主题
 

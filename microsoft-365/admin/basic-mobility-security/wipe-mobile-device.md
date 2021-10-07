@@ -8,28 +8,29 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid:
 - MET150
 description: 使用内置的"基本移动性和安全性"从已注册的设备中删除信息。
-ms.openlocfilehash: 3c42edc8eb9da01424c293e5d33f38ffef4b34ce
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: ed658abc55d065e6d271893dc80a293e19373a34
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773375"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165876"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>在基本移动性和安全性中擦除移动设备
 
-可以使用内置的 Microsoft 365 基本移动性和安全性来仅删除组织信息，或执行出厂重置以从移动设备中删除所有信息，并还原到出厂设置。
+可以使用内置的 Microsoft 365 基本移动性和安全性来仅删除组织信息，或执行恢复出厂设置以从移动设备中删除所有信息，并还原到出厂设置。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 移动设备可以存储敏感的组织信息，并提供对组织资源Microsoft 365的访问权限。 若要帮助保护组织的信息，可以执行"恢复出厂设置"或"删除公司数据"操作：
 
@@ -37,7 +38,7 @@ ms.locfileid: "59773375"
 
 - **删除公司数据**：仅删除组织数据，并保留用户的移动设备上已安装的应用程序、照片和个人信息。
 
-- **当擦除设备 (重置** 或删除公司) 时，该设备将从托管设备列表中删除。
+- **当擦除设备 (恢复** 或删除公司) 时，设备将从托管设备列表中删除。
     
 - **自动重置设备**：可以设置基本移动性和安全策略，在用户尝试输入设备密码特定次数失败后自动恢复设备出厂设置。 为此，请按照创建基本移动性和安全性中的设备 [安全策略中的步骤操作](create-device-security-policies.md)。
     
@@ -60,7 +61,7 @@ ms.locfileid: "59773375"
 6. 选择要执行的远程擦除类型。
 
     - 若要执行完全擦除，将设备还原到出厂设置，请选择"恢复 **出厂设置"。**
-    - 若要选择性擦除并仅删除Microsoft 365，请选择"删除 **公司数据"。**
+    - 若要执行选择性擦除并仅删除Microsoft 365，请选择"删除 **公司数据"。**
     - 若要从组织中删除设备，请选择"**删除设备"。**
 
 7. 选择“**是**”进行确认。
@@ -83,7 +84,7 @@ ms.locfileid: "59773375"
 
 |**内容影响**|**iOS 10 及更高版本**|**Android 5 及更高版本**|
 |:-----|:-----|:-----|
-|Microsoft 365受 Intune 应用保护策略保护，则擦除应用数据。 不会删除这些应用。 对于不受移动应用程序管理保护的设备 (MAM) 策略，Outlook OneDrive不会删除缓存数据。<br/>**注意** 要应用 Intune 应用保护策略，你必须拥有 Intune 许可证。|是|是|
+|Microsoft 365受 Intune 应用保护策略保护，则擦除应用数据。 不会删除这些应用。 对于不受移动应用程序管理保护的设备 (MAM) 策略，Outlook OneDrive不会删除缓存的数据。<br/>**注意** 要应用 Intune 应用保护策略，你必须拥有 Intune 许可证。|是|是|
 |不再强制执行基本移动性和安全性应用于设备的策略设置;用户可以更改设置。|是|是|
 |将删除由基本移动性和安全性创建的电子邮件配置文件，并删除设备上缓存的电子邮件。|是|不适用|
 

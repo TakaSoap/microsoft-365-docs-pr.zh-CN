@@ -8,30 +8,31 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
-description: 了解如何向组添加成员、从组中删除成员以及管理组Microsoft 365 管理中心。
-ms.openlocfilehash: a9dfad48b3109512717f5c3e74ff9aef7d4621cd
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: 了解如何向组添加成员、从组中删除成员以及管理组所有者Microsoft 365 管理中心。
+ms.openlocfilehash: 610da28d6282cb45cb43e086fb3f80acaf18bb05
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775068"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165816"
 ---
-# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用管理中心Microsoft 365或删除组的成员
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用管理中心在Microsoft 365组中添加或删除成员
 
 在Microsoft 365中，团队成员通常创建自己的组、将自己添加到要加入的组或受组所有者邀请的组。 如果组所有权发生更改，或者确定应添加或删除成员，作为管理员，还可以进行此更改。 只有全局管理员、Exchange管理员、组管理员或用户管理员才能进行这些更改。 [什么是Microsoft 365组？](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
-> 如果你不是管理员，可以使用 "添加或删除["Outlook。](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)
+> 如果你不是管理员，可以使用 "添加[或删除"Outlook。](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>将成员添加到管理中心中的组
 

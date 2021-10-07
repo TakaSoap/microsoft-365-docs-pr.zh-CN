@@ -7,7 +7,7 @@ ms.date: 05/19/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：Office 365 GCC高和 DoD 具有其他网络安全要求
 hideEdit: true
-ms.openlocfilehash: f4c03d364e84d89a1b12e4d858ab46eb3be6ae5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c4fbfc52085b634329130c2785ce683109b8febe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200493"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170363"
 ---
 # <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Office 365 GCC High和DOD的额外网络安全要求。
 
@@ -35,11 +35,11 @@ Office 365 GCC高和 DOD 是满足美国政府及其供应商和承包商需求�
 
 GCC计划使用联合身份或混合共存的高和 DOD 客户可能需要 Microsoft 允许入站和/或出站访问现有本地部署。  这些活动的示例包括：
 
-* 使用 Active Directory 联合身份验证 (或类似的支持 STS 服务的联合标识) 
+* 将联合身份与 Active Directory 联合 (或类似支持的 STS 服务一起) 
 * 与本地部署或本地部署Exchange Server Skype for Business共存
 * 从本地系统迁移现有用户内容
 
-若要允许服务与本地终结点通信，你必须向工程团队发送电子邮件Office 365网络更改。
+若要允许服务与本地终结点通信，你必须向工程团队发送Office 365更改的电子邮件。
 
 > [!WARNING]
 > 所有请求的 SLA 都 **为三周** ，由于需要安全与合规控制和部署管道，因此无法加快处理。  这包括初始载入网络请求，以及迁移到服务后的任何更改。  确保你的网络团队知道此时间线，并包括在你的规划周期中。
@@ -52,7 +52,7 @@ GCC计划使用联合身份或混合共存的高和 DOD 客户可能需要 Micro
 
 邮件正文应包含以下数据：
 
-* 你的Microsoft Online Services租户名称 (例如，contoso.onmicrosoft.com、fabrikam.onmicrosoft.us) 
+* 你的Microsoft Online Services租户 (例如，contoso.onmicrosoft.com、fabrikam.onmicrosoft.us) 
 * 与 Microsoft 通信的电子邮件通讯组列表，用于与网络更改和/或跟踪无效子网相关的后续通信
 * 指示是否计划将Microsoft Teams混合共存与本地部署一同使用
 * 联合身份系统可从外部访问的 URL (例如，sts.contoso.com) CIDR 表示法中的 (IP 地址范围。 10.1.1.0/28) 

@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 16d61be33af8a4d30090470e066111ba2bcde0e9
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 09eb5f5c183a6a89d89b173557bdc40b9204824b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497988"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166214"
 ---
 # <a name="specify-the-cloud-protection-level"></a>指定云保护级别
 
@@ -31,14 +31,14 @@ ms.locfileid: "59497988"
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender 防病毒
 
-云保护与Microsoft Defender 防病毒一起提供对终结点的保护，这比通过传统安全智能更新快得多。 可以使用推荐策略或组策略Microsoft Endpoint Manager (云) 级别。
+云保护与Microsoft Defender 防病毒一起为终结点提供保护，这比通过传统安全智能更新快得多。 可以使用推荐策略或组策略Microsoft Endpoint Manager (云) 级别。
 
 > [!NOTE]
-> 选择 **"高****、高 +"** 或"**零容** 限"可能会导致检测某些合法文件。 如果发生这种情况，可以在门户中取消阻止检测到的文件或Microsoft 365 Defender争议。
+> 选择 **"高****"、高 +** 或 **"零容** 限"可能会导致检测某些合法文件。 如果发生这种情况，可以在门户中取消阻止检测到的文件或Microsoft 365 Defender争议。
 
 ## <a name="use-microsoft-endpoint-manager-to-specify-the-level-of-cloud-protection"></a>使用 Microsoft Endpoint Manager 指定云保护级别
 
-1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 登录。
+1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 并登录。
 
 2. 选择 **终结点安全** \> **防病毒**。
 
@@ -57,7 +57,7 @@ ms.locfileid: "59497988"
 > [!TIP]
 > 需要一些帮助？ 参阅以下资源：
 >
-> - [配置Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
+> - [配置终结点保护](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 > - [在 Intune 中添加终结点保护设置](/mem/intune/protect/endpoint-protection-configure)
 
 ## <a name="use-group-policy-to-specify-the-level-of-cloud-protection"></a>使用组策略指定云保护级别
@@ -73,16 +73,16 @@ ms.locfileid: "59497988"
 5. 双击选择云 **保护级别** 设置，将其设置为 **已启用**。 选择保护级别：
     - **默认阻止级别** 提供强检测，而不会增加检测合法文件的风险。
     - **中等阻止级别** 仅为高可信度检测提供中等
-    - **高阻止级别** 可在优化客户端性能 (同时应用强大的检测级别，但也可以为您提供更大的机会) 。
+    - **高阻止级别** 可在优化客户端性能 (同时应用强大的检测级别，但也可以为您提供更大的误报) 。
     - **高 +** 阻止级别会应用额外的保护措施， (可能会影响客户端性能并增加误报的可能性) 。
     - **零容限阻止级别** 可阻止所有未知可执行文件。
 
-6. 选择“确定”。
+6. 选择“**确定**”。
 
 7. 部署更新的组策略对象。 请参阅 [组策略管理控制台](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
-> 是否在本地使用组策略对象？ 查看它们在云中如何转换。 [在预览版中，使用](/mem/intune/configuration/group-policy-analytics)组策略分析分析Microsoft Endpoint Manager组策略对象。 
+> 是否在本地使用组策略对象？ 查看它们在云中如何转换。 [在预览版中，使用组策略分析Microsoft Endpoint Manager本地组策略对象](/mem/intune/configuration/group-policy-analytics)。 
   
 ## <a name="see-also"></a>另请参阅
 

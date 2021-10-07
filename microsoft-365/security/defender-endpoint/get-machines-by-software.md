@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 93ffef0be7a8710fbaf115418e69c724bed17869
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea06da7c3f7b6faad5a563968b735a6cd9154c0e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222237"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166488"
 ---
 # <a name="list-devices-by-software"></a>按软件列出设备
 
@@ -45,7 +45,7 @@ ms.locfileid: "59222237"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Software.Read.All|"读取威胁和漏洞管理软件信息"
+Application|Software.Read.All|"读取威胁和漏洞管理软件信息"
 委派（工作或学校帐户）|Software.Read|"读取威胁和漏洞管理软件信息"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -58,7 +58,7 @@ GET /api/Software/{Id}/machineReferences
 
 |名称|类型|说明
 |---|---|---|
-|Authorization|String|Bearer {token}。**必需**。
+|Authorization|字符串|Bearer {token}。**必需**。
 
 ## <a name="request-body"></a>请求正文
 

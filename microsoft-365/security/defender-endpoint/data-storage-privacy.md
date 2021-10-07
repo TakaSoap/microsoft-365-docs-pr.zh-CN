@@ -8,18 +8,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9cbe0ca481b582a2161480d8e7aa1ecc1d4164ff
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: a435dc0f0fb1858edcc86291c0c4c7b5ef7c565f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124465"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166548"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint 数据存储和隐私
 
@@ -34,7 +34,7 @@ ms.locfileid: "60124465"
 本部分涵盖有关 Defender for Endpoint 的隐私和数据处理的一些最常见的问题。
 
 > [!NOTE]
-> 本文档介绍与 Defender for Endpoint 相关的数据存储和隐私详细信息。 有关适用于终结点的 Defender 以及其他产品和服务（如 Microsoft Defender 防病毒 和 Windows）的信息，请参阅[Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=827576)。 有关详细信息[，Windows](https://go.microsoft.com/fwlink/?linkid=827577)隐私常见问题解答。
+> 本文档介绍与 Defender for Endpoint 相关的数据存储和隐私详细信息。 有关适用于终结点的 Defender 以及其他产品和服务（如 Microsoft Defender 防病毒 和 Windows）的信息，请参阅 Microsoft[隐私声明](https://go.microsoft.com/fwlink/?linkid=827576)。 有关详细信息[，Windows](https://go.microsoft.com/fwlink/?linkid=827577)隐私常见问题解答。
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Microsoft Defender for Endpoint 会收集哪些数据？
 
@@ -42,7 +42,7 @@ Microsoft Defender for Endpoint 将在特定于服务的客户专用和隔离租
 
 收集的信息包括文件数据 (如文件名、大小和哈希) 、进程数据 (正在运行的进程、哈希) 、注册表数据、网络连接数据 (主机 IP 和端口) 以及设备详细信息 (例如设备标识符、名称和操作系统版本) 。
 
-Microsoft 安全地存储此数据Microsoft Azure并按 Microsoft 隐私做法和[Microsoft 信任中心策略进行维护](https://go.microsoft.com/fwlink/?linkid=827578)。
+Microsoft 安全地存储此数据Microsoft Azure根据 Microsoft 隐私实践和 Microsoft 信任[中心策略进行维护](https://go.microsoft.com/fwlink/?linkid=827578)。
 
 此数据使 Defender for Endpoint 能够：
 

@@ -1,5 +1,5 @@
 ---
-title: 基本移动性和安全性Microsoft 365
+title: 基本移动性和安全性概述Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -8,24 +8,25 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: 使用基本移动性和安全性设置设备安全策略和访问规则。
-ms.openlocfilehash: 6a7706c4c5b571c9ff41e383efe2f4de2f512257
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 4fb1b8ca467d86259f2608af5140510a2a88b23a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775140"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165996"
 ---
-# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>基本移动性和安全性Microsoft 365
+# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>基本移动性和安全性概述Microsoft 365
 
 当移动设备连接到您的组织时，您可以使用基本移动性和安全性Microsoft 365移动设备的安全。 用于访问工作电子邮件、日历、联系人及文档的移动设备（如智能手机和平板电脑）在确保员工随时随地完成工作方面起着非常重要的作用。 因此，在用户使用设备时，帮助保护组织的信息至关重要。 您可以使用基本移动性和安全性设置设备安全策略和访问规则，以及擦除丢失或被盗的移动设备。
 
@@ -57,11 +58,11 @@ ms.locfileid: "59775140"
 
 ## <a name="other-ways-to-manage-devices-and-apps"></a>管理设备和应用的其他方法
 
-如果你只需使用 MAM (移动应用) ，也许对于在其自己的设备上更新工作项目的人，Intune 提供了除注册和管理设备之外的另一个选项。 Intune 订阅允许你使用 Azure 门户设置 MAM 策略，即使用户的设备未在 Intune 中注册。 有关详细信息，请参阅应用 [保护策略概述](/mem/intune/apps/app-protection-policy)。
+如果你只需在 MAM (移动应用) ，也许对于在其自己的设备上更新工作项目的人，Intune 提供了除注册和管理设备之外的另一个选项。 Intune 订阅允许你使用 Azure 门户设置 MAM 策略，即使用户的设备未在 Intune 中注册。 有关详细信息，请参阅应用 [保护策略概述](/mem/intune/apps/app-protection-policy)。
 
 ## <a name="related-content"></a>相关内容
 
-[Set up Basic Mobility and Security](set-up.md) (article) \
+[设置基本移动性和安全性](set-up.md) (文章) \
 [使用基本移动性和安全性功能](enroll-your-mobile-device.md) 注册移动设备 (文章) \
 [管理在移动设备管理中注册的设备Microsoft 365 (](manage-enrolled-devices.md)文章) \
-[获取基本移动性](get-details-about-managed-devices.md) 和安全性管理设备的详细信息， (文章) 
+[有关由基本移动性和安全性管理的设备的详细信息， (](get-details-about-managed-devices.md) 文章) 

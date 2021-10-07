@@ -3,27 +3,25 @@ title: 在 Linux 上手动部署 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 介绍如何从命令行手动在 Linux 上部署 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9194196ab34e5e95b986ecbaba9be855969dec20
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e737ecba6acfd9ebf09b826d6cec643936f090c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196047"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169835"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -58,11 +56,11 @@ ms.locfileid: "59196047"
 
 ## <a name="configure-the-linux-software-repository"></a>配置 Linux 软件存储库
 
-可以从以下频道之一部署 Linux 上的 Defender for Endpoint (下面表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。 下面提供了配置设备以使用这些存储库之一的说明。
+Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下面表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。 下面提供了配置设备以使用这些存储库之一的说明。
 
 通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员-快* 中的设备是首先接收更新和新功能的设备，随后是预览体验成员 - *慢* ，最后是 *受支持*。
 
-为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员- *快* 或预览体验成员- *慢*。
+为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员 *-快* 或预览体验成员-慢 *。*
 
 > [!WARNING]
 > 在初始安装后切换通道需要重新安装产品。 若要切换产品渠道：卸载现有程序包，将设备重新配置为使用新通道，然后按照本文档中的步骤从新位置安装程序包。
@@ -75,7 +73,7 @@ ms.locfileid: "59196047"
     sudo yum install yum-utils
     ```
 
-- 记下你的分发和版本，并按主要 (条目，然后在 下) 次要条目 `https://packages.microsoft.com/config/rhel/` 。
+- 记下你的分发和版本，并确定最近的条目 (按主要版本，然后在 下) 次要条目 `https://packages.microsoft.com/config/rhel/` 。
 
     使用下表可帮助指导你找到程序包：
 
@@ -158,7 +156,7 @@ ms.locfileid: "59196047"
     sudo apt-get install libplist-utils
     ```
 
-- 记下你的分发和版本，并按主要 (条目，然后在 下) 次要条目 `https://packages.microsoft.com/config/[distro]/` 。
+- 记下你的分发和版本，并确定最近的条目 (按主要版本，然后在 下) 次要条目 `https://packages.microsoft.com/config/[distro]/` 。
 
     在下面的命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
@@ -285,9 +283,9 @@ ms.locfileid: "59196047"
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从门户下载Microsoft 365 Defender包：
+从应用门户下载Microsoft 365 Defender包：
 
-1. 在Microsoft 365 Defender门户中，转到"设置 >终结点 **>">载入"。**
+1. 在 Microsoft 365 Defender门户中，转到"设置 >终结点 **>">载入"。**
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 第二个下拉菜单中，选择" **本地脚本** "作为部署方法。
 3. 选择 **下载载入程序包**。 将文件另存为WindowsDefenderATPOnboardingPackage.zip。
 
@@ -374,15 +372,15 @@ ms.locfileid: "59196047"
         mdatp threat list
         ```
 
-## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>通过模拟攻击体验 Linux 终结点 (EDR) 响应和响应功能
+## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>使用模拟攻击体验 Linux 终结点 (EDR) 响应和响应功能
 
 若要测试适用于 Linux EDR的功能，请按照以下步骤在 Linux 服务器上模拟检测并调查这种情况。
 
-1. 验证已载入的 Linux 服务器是否Microsoft 365 Defender。 如果这是计算机首次载入，可能需要最多 20 分钟才会显示。
+1. 验证载入的 Linux 服务器是否显示在Microsoft 365 Defender。 如果这是计算机首次载入，可能需要最多 20 分钟才会显示。
 
 2. 将脚本文件 [下载并](https://aka.ms/LinuxDIY) 解压缩到载入的 Linux 服务器并运行以下命令： `./mde_linux_edr_diy.sh`
 
-3. 几分钟后，应在活动记录中引发Microsoft 365 Defender。
+3. 几分钟后，应在运行中引发Microsoft 365 Defender。
 
 4. 查看警报详细信息、计算机时间线，并执行典型的调查步骤。
 
@@ -427,7 +425,7 @@ Options:
     sudo yum remove mdatp
     ```
 
-1. 在 Linux 上禁用 Defender for Endpoint Insiders-Fast存储库
+1. 在 Linux 客户端上禁用 Defender for Endpoint Insiders-Fast存储库
 
     ```bash
     sudo yum repolist

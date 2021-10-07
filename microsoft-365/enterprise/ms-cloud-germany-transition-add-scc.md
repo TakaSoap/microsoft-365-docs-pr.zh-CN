@@ -7,7 +7,7 @@ ms.date: 12/01/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云迁移电子数据展示迁移步骤。
-ms.openlocfilehash: 0128c8563b2043e4ec41d2c5ab1b208bd3977511
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afea899e06a732ff0ab13bf416410aa94bc3c191
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171316"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168442"
 ---
 # <a name="information-about-the-ediscovery-experience-during-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移期间电子数据展示体验的信息
 以下各节提供有关从德国 Microsoft 云 (德国 microsoft 云迁移到新的德国数据中心) Office 365 服务时电子数据展示体验的其他信息。
@@ -40,7 +40,7 @@ ms.locfileid: "59171316"
 如果搜索在迁移过程中返回零结果或错误，请对 SharePoint Online 执行以下操作：
 
 - 按照从 SharePoint 或 OneDrive for Business OneDrive 下载文件和文件夹中的说明，直接从 SharePoint Online 或 SharePoint[下载网站](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)。 此方法需要SharePoint联机管理员权限或只读权限。
-- 如果超出限制，如从 OneDrive 或[SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)下载文件和文件夹中介绍，客户可以按照将 SharePoint 和 Teams 文件与计算机同步中的指导使用 OneDrive for Business 同步[客户端](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)。
+- 如果超出限制，如从 OneDrive 或[SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)下载文件和文件夹中介绍，客户可以按照 Sync SharePoint 中的指导使用 OneDrive for Business 同步客户端，并使用计算机下载[Teams 文件](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)。
 
 - 有关详细信息，请参阅[In-Place eDiscovery in Exchange Server](/Exchange/policy-and-compliance/ediscovery/ediscovery)。
 
@@ -50,11 +50,11 @@ ms.locfileid: "59171316"
 **适用于：** 使用电子数据展示的所有客户
 
 在第 9 阶段，将完成移动到新的德国数据中心区域的最后步骤。 在此阶段，将迁移其余的所有服务组件。
-在第 9 阶段之后，不再支持使用德国 Microsoft 云 (protection.office.de) 安全与合规中心。 请改为使用新的[安全中心](https://security.microsoft.com/)[或合规中心](https://compliance.microsoft.com/)。 所有数据已迁移到新的管理门户。
+在第 9 阶段之后，不再支持使用德国 Microsoft 云 (protection.office.de) 合规中心。 请改为使用新的[安全中心](https://security.microsoft.com/)[或合规中心](https://compliance.microsoft.com/)。 所有数据已迁移到新的管理门户。
 
 | 步骤 ()  | 说明 | 影响 |
 |:-------|:-------|:-------|
-|  所有 SharePoint Online、OneDrive for Business 和 Exchange Online 位置已随安全与合规中心 (SCC) 一起迁移。 | 所有电子数据展示活动都应从全球租户运行。 搜索现在将 100% 成功。 任何失败或错误应遵循正常支持渠道。 | 无 |
+|  所有 SharePoint Online、OneDrive for Business 和 Exchange Online 位置已随安全与合规中心 (SCC) 。 | 所有电子数据展示活动都应从全球租户运行。 搜索现在将 100% 成功。 任何失败或错误应遵循正常支持渠道。 | 无 |
 ||||
 
 ### <a name="ediscovery-retention-policy"></a>电子数据展示保留策略

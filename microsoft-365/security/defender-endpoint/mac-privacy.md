@@ -2,27 +2,25 @@
 title: Mac 上的 Microsoft Defender for Endpoint 的隐私
 description: 隐私控制，如何配置影响隐私的策略设置和在 Mac 上的 Microsoft Defender for Endpoint 中收集的诊断数据的信息。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 隐私， 诊断
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 087a5e416ce4f56f3cf4b8f96cc2e0109fe7ca49
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d9ad9b3bfe8aec36a3fdf7db456ed6383c586176
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170478"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168322"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上适用于终结点的 Microsoft Defender 的隐私
 
@@ -156,7 +154,7 @@ The privacy controls for the various types of data described in the preceding se
 
 #### <a name="product-and-service-performance-data-events-for-required-diagnostic-data"></a>必需诊断数据的产品或服务性能数据事件
 
-**意外的应用程序退出 (崩溃) ：**
+**应用程序意外退出 (崩溃) ：**
 
 在应用程序意外退出时收集系统信息和应用程序的状态。
 
@@ -200,7 +198,7 @@ The privacy controls for the various types of data described in the preceding se
 
 如果你选择向我们发送可选诊断数据，则还需要包括必需的诊断数据。
 
-可选诊断数据的示例包括 Microsoft 收集有关产品配置 (例如设备) 上设置的排除数的数据 (以及有关产品) 组件性能的聚合度量。
+可选诊断数据的示例包括 Microsoft 收集有关产品配置的数据 (例如设备) 上设置的排除数 (以及有关产品) 组件性能的聚合度量。
 
 #### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>可选诊断数据的软件安装和清单数据事件
 

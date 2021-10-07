@@ -8,25 +8,25 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解模拟见解的工作原理。 他们可以快速确定哪些发件人从没有通过 SPF、DKIM 或 DMARC 身份验证检查 (向组织合法发送电子邮件) 。
+description: 管理员可以了解模拟见解的工作原理。 他们可以快速确定哪些发件人从没有通过 SPF、DKIM 或 DMARC 身份验证检查的域合法地将电子邮件发送到 (SPF、DKIM 或 DMARC) 。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b01da861b3d85bee1f89a92da0d973679fca3c0c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3a7125646b14df3aa1b36dd0324184f41a8e0993
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161917"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169679"
 ---
-# <a name="impersonation-insight-in-defender-for-office-365"></a>Defender for Office 365
+# <a name="impersonation-insight-in-defender-for-office-365"></a>Defender for Office 365 中的模拟见解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -42,11 +42,11 @@ ms.locfileid: "59161917"
 - **域模拟**：lila@contoso.com，模拟发件人的电子邮件地址将 lila@ćóntoso.com。
 - **用户模拟**：michelle@contoso.com，模拟发件人的电子邮件地址将 rnichell@contoso.com。
 
-域模拟不同于域 [欺骗](anti-spoofing-protection.md)，因为模拟的域通常是真实的注册域。 来自模拟域中的发件人的邮件可以而且经常通过常规电子邮件身份验证检查，以识别 SPF、DKIM 和 DMARC (欺骗) 。
+域模拟不同于域 [欺骗](anti-spoofing-protection.md)，因为模拟的域通常是真实的注册域。 来自模拟域中的发件人的邮件可以而且通常通过常规电子邮件身份验证检查，以识别 SPF、DKIM 和 DMARC (欺骗) 。
 
-模拟保护是专用于 Microsoft Defender for Office 365 的反网络钓鱼策略设置的一Office 365。 有关这些设置详细信息，请参阅 Microsoft Defender for Office 365 中的反网络钓鱼[策略中的模拟Office 365。](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+模拟保护是专用于 Microsoft Defender for Office 365 的反网络钓鱼策略设置的一Office 365。 有关这些设置详细信息，请参阅 Microsoft Defender for Office 365 中的防钓鱼[策略中的模拟Office 365。](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-您可以使用模拟门户中的模拟见解Microsoft 365 Defender识别来自已配置为用于模拟保护的模拟发件人或发件人域的邮件。
+您可以使用 Microsoft 365 Defender 门户中的模拟见解来快速识别来自已配置为用于模拟保护的模拟发件人或发件人域的邮件。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -55,18 +55,18 @@ ms.locfileid: "59161917"
 - 您需在 Microsoft 365 Defender 门户中分配权限，然后才能执行本文中的过程：
   - **组织管理**
   - **安全管理员**
-  - **安全读取者**
+  - **安全信息读取者**
   - **全局读取者**
 
   有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
-  **注意**：将用户添加到 Microsoft 365 管理中心 中对应的 Azure Active Directory 角色会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  **注意**：向 Azure Active Directory 中的相应 Azure Active Directory Microsoft 365 管理中心 角色添加用户会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 - 在 Microsoft Defender for Office 365 中的防钓鱼策略中启用和配置Office 365。 默认情况下不启用模拟保护。 有关详细信息，请参阅 Configure [anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)。
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>在模拟门户中打开模拟Microsoft 365 Defender见解
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"部分中的"电子邮件&协作策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。 
+1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&协作策略""规则威胁策略""防钓鱼 \>  \>  \> "。 
 
 2. 在 **"防钓鱼"** 页面上，模拟见解如下所示：
 
@@ -88,7 +88,7 @@ ms.locfileid: "59161917"
 
 - **发件人** 域：模拟域，用于发送电子邮件的域。
 - **邮件计数**：过去 7 天内来自模拟发件人域的邮件数。
-- **模拟类型**：此值显示模拟服务器检测到 (，例如 **，Address) 。**
+- **模拟类型**：此值显示模拟服务器检测到 (，例如，**地址中的域) 。**
 - **模拟 (域) ：** 模拟域，它应非常类似于在反网络钓鱼策略中配置为进行模拟保护的域。
 - **域类型**：此值是 **内部域** 的公司域或自定义 **域** 的自定义域。
 - **策略**：检测到模拟域的防钓鱼策略。
@@ -105,9 +105,9 @@ ms.locfileid: "59161917"
 在" **模拟** 见解 **"页上的** "域"选项卡上，选择一个可用的模拟检测。 显示的详细信息飞出包含以下信息和功能：
 
 - **要修改的选择模拟策略**：选择要修改的受影响的防钓鱼策略。 只有策略中定义了模拟域的策略才可用。 参考上一页，查看哪个策略实际负责根据收件人 (以及策略的优先级来检测模拟) 。
-- 添加到允许的模拟列表：使用此开关添加或删除所选反网络钓鱼策略的"受信任的发件人和域 **(** 模拟) 例外"中的发件人：
+- 添加到允许的模拟列表：使用此开关添加或删除所选防钓鱼策略的"受信任的发件人和域 **(** 模拟) 例外"中的发件人：
   - 如果 **此条目的"允许模拟** "值为 **"否**"，则开关处于关闭状态。 若要通过模拟保护使此域中的所有发件人免于评估，将开关滑动到"打开"： ![ 切换打开 ](../../media/scc-toggle-on.png) 。 该域将添加到反网络钓鱼策略的模拟保护设置中的"受信任的域"列表中。
-  - 如果 **此条目的"允许模拟** "值为 **"是**"，则切换处于打开状态。 若要通过模拟保护使此域中的所有发件人返回评估，请切换为关闭： ![ 切换关闭 ](../../media/scc-toggle-off.png) 。 该域将从反 **网络钓鱼** 策略的模拟保护设置中的"受信任的域"列表中删除。
+  - 如果 **此条目的"允许模拟** "值为 **"是**"，则切换处于打开状态。 若要通过模拟保护使此域中的所有发件人都返回评估，请切换为关闭： ![ 切换关闭 ](../../media/scc-toggle-off.png) 。 该域将从反 **网络钓鱼** 策略的模拟保护设置中的"受信任的域"列表中删除。
 - 我们为什么捕获到此。
 - 需要执行哪些工作。
 - 列出模拟域的域摘要。
@@ -122,23 +122,23 @@ ms.locfileid: "59161917"
 - **发件人**：发送电子邮件的模拟发件人的电子邮件地址。
 - **邮件计数**：最近 7 天内来自模拟发件人的邮件数。
 - **模拟类型**：此值为 **User in 显示名称**。
-- 模拟 **(** 用户) ：模拟发件人的电子邮件地址，该地址应该与在反网络钓鱼策略中为模拟保护配置的用户非常类似。
-- **用户类型**：此值显示应用保护 (例如，受保护的用户或 **邮箱** 智能) 。 
+- 模拟 **(** 用户) ：模拟发件人的电子邮件地址，该地址应该与在反网络钓鱼策略中配置为进行模拟保护的用户非常类似。
+- **用户类型**：此值显示应用了保护 (例如，受保护的用户或 **邮箱** 智能) 。 
 - **策略**：检测到模拟发件人的防钓鱼策略。
 - **允许模拟**：下列值之一：
-  - **是**：发件人配置为受信任用户 (防钓鱼策略) 的模拟保护例外。 检测到但允许来自模拟发件人的邮件。
+  - **是**：发件人配置为受信任用户 (防钓鱼策略中) 的模拟保护例外。 检测到但允许来自模拟发件人的邮件。
   - **否**：发件人配置为在反网络钓鱼策略中提供模拟保护。 根据反网络钓鱼策略中模拟用户的操作，检测到来自模拟发件人的邮件并据此操作。
 
 您可以单击所选列标题对结果进行排序。
 
-若要筛选结果，可以使用"筛选发件人"框输入以逗号分隔的值列表以筛选结果。
+若要筛选结果，可以使用"筛选发件人"框输入以逗号分隔的值列表来筛选结果。
 
 ### <a name="view-details-about-messages-from-impersonated-senders"></a>查看有关来自模拟发件人的邮件的详细信息
 
 在" **模拟** 见解 **"页上的** "用户"选项卡上，选择一个可用的模拟检测。 显示的详细信息飞出包含以下信息和功能：
 
-- **要修改的选择模拟策略**：选择要修改的受影响的防钓鱼策略。 只有策略中定义了模拟发件人的策略才可用。 参考上一页，查看哪个策略实际负责根据收件人 (以及策略的优先级来检测模拟发件人) 。
-- 添加到允许的模拟列表：使用此开关添加或删除所选反网络钓鱼策略的"受信任的发件人和域 **(** 模拟) 例外"中的发件人：
+- **要修改的选择模拟策略**：选择要修改的受影响的防钓鱼策略。 只有策略中定义了模拟发件人的策略才可用。 参考上一页，查看哪个策略实际负责根据收件人 (以及策略的优先级来检测) 。
+- 添加到允许的模拟列表：使用此开关添加或删除所选防钓鱼策略的"受信任的发件人和域 **(** 模拟) 例外"中的发件人：
   - 如果 **此条目的"允许模拟** "值为 **"否**"，则开关处于关闭状态。 若要通过模拟保护使发件人免于评估，将开关滑动到"打开"： ![ 切换为"打开 ](../../media/scc-toggle-on.png) "。 发件人将添加到反 **网络钓鱼** 策略的模拟保护设置中的"受信任的用户"列表中。
   - 如果 **此条目的"允许模拟** "值为 **"是**"，则切换处于打开状态。 若要通过模拟保护将发件人返回到评估，将切换开关切换为关闭： ![ 切换关闭 ](../../media/scc-toggle-off.png) 。 发件人将从反网络钓鱼策略的模拟保护设置中的"受信任的用户"列表中删除。
 - 我们为什么捕获到此。

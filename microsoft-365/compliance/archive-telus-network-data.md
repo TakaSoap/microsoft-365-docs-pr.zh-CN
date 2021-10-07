@@ -1,5 +1,5 @@
 ---
-title: 设置连接器以将 TELUS 网络数据存档在 Microsoft 365
+title: 设置连接器以将 TELUS 网络数据存档Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -9,21 +9,21 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理员可以设置 TeleMessage 连接器，以从 TELUS 网络的短信数据导入和存档Microsoft 365。 这样，您就可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: d0175abd68ba2795167054c930aefd28be12c039
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 管理员可以设置 TeleMessage 连接器，以从 TELUS 网络在 Microsoft 365 中导入和存档短信Microsoft 365。 这样，您可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
+ms.openlocfilehash: de5625158f34726048ea438bd2a56a1493407788
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170673"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168862"
 ---
 # <a name="set-up-a-connector-to-archive-telus-network-data"></a>设置连接器以存档 TELUS 网络数据
 
-使用 TelMessage 连接器在Microsoft 365 合规中心 TELUS 网络中导入和存档短信 (短信) 短信服务。 设置和配置连接器后，它将每天连接到您组织的 TELUS 网络一次，并导入短信数据到 Microsoft 365 中的邮箱。
+使用远程服务器中的 TeleMessage Microsoft 365 合规中心从组织的 TELUS 网络导入和存档 (短信服务) 短信服务。 设置和配置连接器后，它每天连接到您组织的 TELUS 网络一次，并导入短信数据到 Microsoft 365 中的邮箱。
 
-将短信存储在用户邮箱中后，可以将 Microsoft 365合规性功能（如诉讼保留、内容搜索和保留Microsoft 365策略）应用于 TELUS 数据。 例如，您可以使用内容搜索来搜索 TELUS 短信，或者将包含 TELUS 数据的邮箱与案例的保管人Advanced eDiscovery关联。 使用 TELUS 网络连接器在组织中导入和存档Microsoft 365可帮助组织遵守政府及法规策略。
+将短信存储在用户邮箱中后，您可以将 Microsoft 365合规性功能（如诉讼保留、内容搜索和 Microsoft 365保留策略）应用于 TELUS 数据。 例如，您可以使用内容搜索来搜索 TELUS 短信，或将包含 TELUS 数据的邮箱与案例的保管人Advanced eDiscovery关联。 使用 TELUS 网络连接器在 Microsoft 365 导入和存档数据可帮助组织遵守政府法规策略。
 
 ## <a name="overview-of-archiving-telus-network-data"></a>存档 TELUS 网络数据概述
 
@@ -35,7 +35,7 @@ ms.locfileid: "59170673"
 
 2. 实时地，来自您组织的 TELUS 网络的短信将复制到 TeleMessage 站点。
 
-3. 在 Microsoft 365 合规中心 创建的 TELUS 网络连接器每天连接到 TeleMessage 站点，将过去 24 小时内的短信转移到 Microsoft 云中的安全 Azure 存储 位置。 连接器还会将短信内容转换为电子邮件格式。
+3. 在 Microsoft 365 合规中心 创建的 TELUS 网络连接器每天连接到 TeleMessage 站点，将短信从过去 24 小时转移到 Microsoft 云中的安全 Azure 存储 位置。 连接器还会将短信内容转换为电子邮件格式。
 
 4. 连接器将移动通信项目导入到特定用户的邮箱。 将创建一个名为 **TELUS SMS Network Archiver** 的新文件夹，该文件夹将导入到特定用户的邮箱中。 连接器使用"用户的电子邮件地址" *属性的值进行映射* 。 每个短信都包含此属性，其中填充了短信每个参与者的电子邮件地址。
 
@@ -43,7 +43,7 @@ ms.locfileid: "59170673"
 
 ## <a name="before-you-set-up-a-connector"></a>设置连接器之前
 
-存档 TELUS 网络数据所需的一些实现步骤位于 Microsoft 365外部，必须先完成这些步骤，然后才能在合规中心创建连接器。
+存档 TELUS 网络数据所需的一些实现步骤位于 Microsoft 365且必须先完成，然后才能在合规中心创建连接器。
 
 - 从 [TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365) 订购 TELUS 网络存档器服务，并获取组织的有效管理帐户。 在合规中心创建连接器时，需要登录此帐户。
 
@@ -53,13 +53,13 @@ ms.locfileid: "59170673"
 
 - 你的员工必须在TELUS 移动网络上拥有公司拥有和负责企业的移动电话。 在 BYOD Microsoft 365中存档消息不适用于员工拥有的设备或自带设备 (BYOD) 设备。
 
-- 必须为创建 TELUS 网络连接器的用户分配邮箱导入导出Exchange Online。 在"数据连接器"页的"数据连接器"**页中添加连接器** Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到组织管理角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须为创建 TELUS 网络连接器的用户分配邮箱导入导出Exchange Online。 在"数据连接器"页的"数据连接器"**页中添加连接器** Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
-- 此数据连接器可用于美国政府GCC中Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
+- 此数据连接器可用于美国政府GCC云Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="create-a-telus-network-connector"></a>创建 TELUS 网络连接器
 
-完成上一部分中所述的先决条件后，可以在"管理中心"Microsoft 365 合规中心。 连接器使用您提供的信息连接到 TeleMessage 站点，将短信传输至 Microsoft 365 中的相应用户邮箱框。
+完成上一部分中所述的先决条件后，可以在部署中创建 TELUS 网络Microsoft 365 合规中心。 连接器使用您提供的信息连接到 TeleMessage 网站，将短信传输至 Microsoft 365 中的相应用户邮箱框。
 
 1. 转到 ， [https://compliance.microsoft.com](https://compliance.microsoft.com/) 然后单击"数据 **连接器**  >  **TELUS 网络"。**
 

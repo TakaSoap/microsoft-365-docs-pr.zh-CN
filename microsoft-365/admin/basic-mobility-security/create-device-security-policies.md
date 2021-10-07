@@ -8,39 +8,40 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: 使用基本移动性和安全性创建保护组织信息的设备策略。
-ms.openlocfilehash: 06d377e86913cbacd781241d75765e6b6cc63b8b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: aabac06a8936728ad1b37ee69fa22cc74e1a712e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775176"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166128"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>在基本移动性和安全性中创建设备安全策略
 
-可以使用基本移动性和安全性创建设备策略，以帮助保护组织信息Microsoft 365未经授权的访问。 你可以将策略应用于组织中设备用户拥有适用的 Microsoft 365 许可证并且已注册基本移动性和安全性设备的任何移动设备。
+可以使用基本移动性和安全性创建设备策略，以帮助保护组织信息Microsoft 365未经授权的访问。 你可以将策略应用于组织中设备用户拥有适用 Microsoft 365 许可证并且已注册基本移动性和安全性设备的任何移动设备。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 > [!IMPORTANT]
 > 必须先激活和设置基本移动性和安全性，然后才能创建移动设备策略。 有关详细信息，请参阅 Overview of Basic Mobility and Security。
 
 - 了解基本移动性和安全性支持的设备、移动设备应用和安全设置。 请参阅[Capabilities of Basic Mobility and Security。](capabilities.md)
-- 创建安全组Microsoft 365要部署策略的用户以及您可能要阻止其访问策略的用户Microsoft 365。 我们建议您先向少量用户部署新策略，以此来测试策略，然后再为组织部署此策略。 可以创建和使用仅包含你自己的安全组，也可以为Microsoft 365测试策略的少量用户创建和使用安全组。 若要详细了解安全组，请参阅创建、 [编辑或删除安全组](../email/create-edit-or-delete-a-security-group.md)。
-- 若要在安全中心创建和部署基本移动Microsoft 365策略，你需要是全局Microsoft 365管理员。有关详细信息，请参阅[安全与合规中心&权限](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
-- 在部署策略之前，请让组织了解在基本移动性和安全性中注册设备的潜在影响。 根据策略设置方式，可能会阻止不相容的设备访问 Microsoft 365 和数据，包括注册的设备上已安装的应用程序、照片和个人信息，并且可以删除数据。
+- 创建安全组，Microsoft 365要部署策略的用户以及您可能要阻止其访问策略的用户Microsoft 365。 我们建议您先向少量用户部署新策略，以此来测试策略，然后再为组织部署此策略。 可以创建和使用仅包含你自己的安全组，也可以为Microsoft 365测试策略的少量用户创建和使用安全组。 若要详细了解安全组，请参阅创建、 [编辑或删除安全组](../email/create-edit-or-delete-a-security-group.md)。
+- 若要创建和部署基本移动和安全策略Microsoft 365，你需要是全局Microsoft 365管理员。有关详细信息，请参阅[安全与合规中心&权限](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
+- 在部署策略之前，请让组织了解在基本移动性和安全性中注册设备的潜在影响。 根据策略设置方式，可能会阻止不相容的设备访问 Microsoft 365 和数据，包括注册的设备上已安装的应用程序、照片和个人信息，并且可删除数据。
 
 > [!NOTE]
-> 在基本移动性和安全性 for Microsoft 365 商业标准版 中创建的策略和访问规则Exchange ActiveSync在 Exchange 管理中心中创建的移动设备邮箱策略和设备访问规则。 为设备注册基本移动性和安全性Microsoft 365 商业标准版，Exchange ActiveSync设备的任何移动设备邮箱策略或设备访问规则将被忽略。 若要详细了解Exchange ActiveSync，请参阅 Exchange ActiveSync[中的Exchange Online。](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
+> 在基本移动性和安全性 for Microsoft 365 商业标准版 中创建的策略和访问规则Exchange ActiveSync在 Exchange 管理中心中创建的移动设备邮箱策略和设备访问规则。 为设备注册基本移动性和安全性Microsoft 365 商业标准版，Exchange ActiveSync设备邮箱策略或应用于该设备的设备访问规则将被忽略。 若要详细了解Exchange ActiveSync，请参阅 Exchange ActiveSync[中的Exchange Online。](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>步骤 1：创建设备策略并部署到测试组
 
@@ -54,13 +55,13 @@ ms.locfileid: "59775176"
 
 3. 在 **"策略设置** "页上，指定要应用于组织中移动设备的要求。
 
-4. **需要管理电子邮件配置文件**：启用后，没有由基本移动性和安全性管理的电子邮件配置文件的设备被视为不兼容。 如果设备未正确设定目标，或者用户手动在设备上设置电子邮件帐户，则设备不能拥有托管电子邮件配置文件。 如果您 **将"未** 启用"设置为 (默认) ，则不针对合规性或非合规性评估此设置。 有关在选择此选项时用户如何获得遵从性的说明，请参阅已找到现有 [电子邮件帐户](/intune-user-help/existing-company-email-account-found)。
+4. **需要管理电子邮件配置文件**：启用后，没有由基本移动性和安全性管理的电子邮件配置文件的设备被视为不兼容。 如果设备未正确设定目标，或者用户手动在设备上设置电子邮件帐户，则设备不能拥有托管电子邮件配置文件。 如果您 **将"未** 启用" (默认) ，则不评估此设置的合规性或非合规性。 有关在选择此选项时用户如何获得遵从性的说明，请参阅已找到现有 [电子邮件帐户](/intune-user-help/existing-company-email-account-found)。
 
 5. 在 **"现在是否要应用此策略？"** 页上，选择要应用此策略的组。
 
 6. 选择 **"创建此策略"。**
 
-该策略将推送到每个用户的设备，该策略将应用于他们下次使用其移动设备Microsoft 365登录时。 如果用户之前没有将策略应用于其移动设备，在部署策略后，他们会在设备上收到一条通知，其中包括注册和激活基本移动性和安全性的步骤。 有关详细信息，请参阅使用基本 [移动性和安全性注册移动设备](enroll-your-mobile-device.md)。 在 Intune 服务托管的基本移动性和安全性中完成注册之前，对电子邮件、OneDrive和其他服务的访问权限将受到限制。 使用应用完成注册Intune 公司门户，他们可以使用服务，并且策略将应用到其设备。
+该策略将推送到每个用户的设备，该策略将应用于他们下次使用移动设备登录Microsoft 365用户。 如果用户之前没有将策略应用于其移动设备，在部署策略后，他们会在设备上收到一条通知，其中包括注册和激活基本移动性和安全性的步骤。 有关详细信息，请参阅使用基本 [移动性和安全性注册移动设备](enroll-your-mobile-device.md)。 在 Intune 服务托管的基本移动性和安全性中完成注册之前，对电子邮件、OneDrive和其他服务的访问权限将受到限制。 使用应用完成注册Intune 公司门户，他们可以使用服务，并且策略将应用于设备。
 
 ## <a name="step-2-verify-that-your-policy-works"></a>步骤 2：验证策略是否正常工作
 
@@ -69,7 +70,7 @@ ms.locfileid: "59775176"
 1. 在浏览器中，键入 [https://protection.office.com/devicev2](https://protection.office.com/devicev2) 。
 2. 选择 **"查看托管设备的列表"。**
 3. 检查已应用此策略的用户设备的状态。 希望 **设备** 的状态为"托管 **"。**
-4. 选择设备后，还可以单击"恢复出厂设置"或"从管理中删除公司数据"按钮，在设备上执行完全或选择性擦除。  有关说明，请参阅 [擦除移动设备Microsoft 365。
+4. 选择设备后，还可以单击"恢复出厂设置"或"从管理中删除公司数据"按钮，在设备上执行完全或选择性擦除。  有关说明，请参阅 [擦除 Microsoft 365 中的Microsoft 365。
 
 ## <a name="step-3-deploy-a-policy-to-your-organization"></a>步骤 3：将策略部署到组织
 
@@ -81,7 +82,7 @@ ms.locfileid: "59775176"
 4. 选择 **"关闭** 并 **更改设置"。**
 5. 选择 **"关闭****和编辑策略"。**
 
-该策略将推送到每个用户的移动设备，该策略将应用于他们下次从Microsoft 365登录时。 如果用户尚未将策略应用于其移动设备，则用户会通过注册和激活基本移动性和安全性的步骤在设备上收到通知。 完成注册后，策略将应用于其设备。 有关详细信息，请参阅使用基本 [移动性和安全性注册移动设备](enroll-your-mobile-device.md)。
+策略将推送到每个用户的移动设备，该策略将应用于他们下次从Microsoft 365登录时。 如果用户尚未将策略应用于其移动设备，则用户会通过注册和激活基本移动性和安全性的步骤在设备上收到通知。 完成注册后，策略将应用于其设备。 有关详细信息，请参阅使用基本 [移动性和安全性注册移动设备](enroll-your-mobile-device.md)。
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>步骤 4：阻止不受支持的设备的电子邮件访问
 
@@ -91,7 +92,7 @@ ms.locfileid: "59775176"
 
 1. 在浏览器中，键入 [https://protection.office.com/devicev2](https://protection.office.com/devicev2) 。
 2. 选择 **"管理组织范围的设备访问设置"。**
-3. 若要阻止不受支持的设备，请选择"如果设备不受基本移动性和安全性支持，Microsoft 365"下选择"阻止 **"，** 然后选择"保存 **"。**
+3. 若要阻止不受支持的设备，请选择"如果设备不受基本移动性和安全性支持，Microsoft 365"下选择"阻止"，然后选择"保存 **"。**
 
    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="基本移动性和安全性阻止访问选项。":::
 
@@ -105,7 +106,7 @@ ms.locfileid: "59775176"
 
    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本移动性和安全性创建策略选项。":::
 
-3. 选择 **"** 添加"，添加具有要排除的用户的安全组，阻止其访问Microsoft 365。 将用户添加到此列表后，他们可以使用不支持Microsoft 365访问电子邮件。
+3. 选择 **"** 添加"，添加具有要排除的用户的安全组，阻止其访问Microsoft 365。 将用户添加到此列表后，他们可以使用不受Microsoft 365访问电子邮件。
 
 4. 在"选择组"面板中选择 **想要使用的安全** 组。
 
@@ -119,7 +120,7 @@ ms.locfileid: "59775176"
 
 将策略应用于用户设备时，对每台设备的影响因设备类型而异。 请查看以下示例表，了解策略对不同设备的影响。
 
-|**安全策略**|**Android 4 及更高版本**|**Samsung KNOX**|**iOS 6 及更高版本**|**注意**|
+|**安全策略**|**Android 4 及更高版本**|**Samsung KNOX**|**iOS 6 及更高版本**|**备注**|
 |:-----|:-----|:-----|:-----|:-----|
 |需要加密备份|否|是|是|需要 iOS 加密备份。|
 |阻止云备份|是|是|是|阻止在 Android 上进行 Google 备份（灰显），阻止在 iOS 上进行云备份。|
@@ -135,7 +136,7 @@ ms.locfileid: "59775176"
 
 ## <a name="what-happens-when-you-delete-a-policy-or-remove-a-user-from-the-policy"></a>当您删除策略或从策略中删除用户时，会发生什么情况？
 
-删除策略或将用户从策略部署到的组中删除时，策略设置、Microsoft 365电子邮件配置文件和缓存电子邮件可能会从用户设备中删除。 请参阅下表，了解为不同设备类型删除的项。
+删除策略或删除策略部署到的组的用户时，策略设置、Microsoft 365电子邮件配置文件和缓存的电子邮件可能会从用户设备中删除。 请参阅下表，了解为不同设备类型删除的项。
 
 |**删除的内容**|**iOS 6 及更高版本**|**Android 4 及更高版本 (Samsung KNOX**|
 |:-----|:-----|:-----|

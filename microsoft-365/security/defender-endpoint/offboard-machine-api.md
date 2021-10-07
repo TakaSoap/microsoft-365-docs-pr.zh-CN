@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b62dbc0881ffe1b7129c053d13ee509796aef5b9
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 961f7b5635a5af1eb7dff0bae790bbf9660a0f57
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399414"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168262"
 ---
 # <a name="offboard-machine-api"></a>载出计算机 API
 
@@ -58,14 +58,14 @@ ms.locfileid: "59399414"
 
 权限类型|权限|权限显示名称
 ---|---|---
-应用程序|Machine.Offboard|"载出计算机"
+Application|Machine.Offboard|"载出计算机"
 委派（工作或学校帐户）|Machine.Offboard|"载出计算机"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
 > - 用户需要"全局管理员"AD 角色
-> - 用户需要具有对设备的访问权限，根据设备组设置 (创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 为市场活动或企业创建通信网站。
-ms.openlocfilehash: d40311a616e51ed665248dded45ef7d0432b6f94
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82a9603ee64143f906015675cd1a3552f41622fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200702"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167794"
 ---
 # <a name="create-a-communications-site"></a>创建通信网站
 
-通信优先级、共享策略文档以及突出显示即将发生事件的主要方法就是使用 SharePoint。 通信网站用于在整个企业或活动中广泛共享内容;它是你的内部战略网站。
+通信优先级、共享战略文档以及突出显示即将发生事件一种很好的方法就是使用 SharePoint。 通信网站用于在整个企业或活动中广泛共享内容;它是你的内部战略网站。
 
-## <a name="best-practices"></a>最佳实践
+## <a name="best-practices"></a>最佳做法
 
 在通信站点中包括以下元素：
 
@@ -44,11 +44,11 @@ ms.locfileid: "59200702"
 4. 将事件添加到事件 **Web 部件，** 以便每个人都可以看到即将发生的内容。
 5. 添加用户可以使用或共享到图像库 **Web 部件的照片**。
 
-![活动所需的SharePoint元素空间的"通信"页面图示。](../media/m365-democracy-comms-site.png)
+![包含活动SharePoint元素空间的"通信"页面关系图。](../media/m365-democracy-comms-site.png)
 
 ## <a name="infographic-create-a-communications-site-infographic"></a>信息图：创建通信站点信息图
 
-可以下载并打印以下有关 PowerPoint 和 PDF 的链接，格式为 (分类帐、11 x 17 或 A3) 。
+可以下载并打印 PowerPoint 和 PDF 的以下链接，格式为 (分类帐、11 x 17 或 A3) 。
 
 [![通信网站信息图的图像。](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
@@ -57,10 +57,10 @@ ms.locfileid: "59200702"
 ## <a name="set-it-up"></a>设置
 
 1. 登录到 https://Office.com。
-2. 在页面的左上角，选择应用启动器图标，然后选择 **SharePoint磁贴。** 如果未看到"网站"磁贴，SharePoint"网站"磁贴或"所有SharePoint不可见。  
-3. 在"网站"主页SharePoint，单击 **"+ 创建网站**"，然后选择"**通信网站"** 选项。
+2. 在页面的左上角，选择应用启动器图标，然后选择 **SharePoint磁贴。** 如果未看到"网站"磁贴，SharePoint"**网站**"磁贴或"所有SharePoint不可见。 
+3. 在网站主页顶部，SharePoint **+ 创建网站"，** 然后选择"**通信网站"** 选项。
 
-了解有关[通信网站以及如何](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)在 SharePoint [Online 创建通信网站的所有信息](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)。
+了解所有[通信网站以及如何](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)[在 SharePoint Online 创建通信网站](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)。
 
 ## <a name="admin-settings"></a>管理员设置
 

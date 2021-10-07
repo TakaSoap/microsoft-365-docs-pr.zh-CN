@@ -1,6 +1,6 @@
 ---
 title: 调查适用于终结点的 Microsoft Defender 文件
-description: 使用调查选项获取有关与警报、行为或事件关联的文件的详细信息。
+description: 使用调查选项获取有关与警报、行为或事件相关联的文件的详细信息。
 keywords: 调查， 调查， 文件， 恶意活动， 攻击动机， 深度分析， 深度分析报告
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 52e7a3098f157e52ecf32802a9f69328b28e2e52
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 99bcf3c3d3381ffe226aeb54a72c7a673b06e88e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162306"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166358"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>调查与 Microsoft Defender for Endpoint 警报关联的文件
 

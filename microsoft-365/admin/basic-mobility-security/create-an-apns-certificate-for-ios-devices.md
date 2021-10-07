@@ -7,18 +7,19 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: 在基本移动性和安全性中管理 iOS 设备。
-ms.openlocfilehash: c7fa6a83690483d5e3b286688f4d6ed46495b096
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f2539ac1c27bd63c13766e197fc12fafc3906f07
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773903"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166176"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>为 iOS 设备创建 APNs 证书
 
@@ -58,4 +59,4 @@ ms.locfileid: "59773903"
 
 9. 选择"  **完成"。**
 
-若要完成设置，请返回到安全与&中心> **安全策略"** 设备管理   >  ****   >  **""管理设置"。**
+若要完成设置，请返回到安全与&安全 **>"设备** 管理""   >  ****   >  **管理设置"。**

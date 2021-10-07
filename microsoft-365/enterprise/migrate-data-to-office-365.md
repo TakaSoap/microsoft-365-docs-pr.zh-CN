@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:
 - MET150
@@ -17,20 +17,20 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 本文将介绍可帮助您将组织数据迁移到 Microsoft 365。
-ms.openlocfilehash: 80efbafe17d0a35da323c6f6274e18af270c4985
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 800b4ad97508c447b747bd6cba48b08b12d6f4b5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201277"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166942"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>将组织数据迁移到Microsoft 365 企业版
 
 ## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>准备好将数据迁移到 Microsoft 365？
 
-我们[的基本设置说明](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)可帮助你尽可能Microsoft 365使用你的服务和应用程序。 这将跳过混合方案以及更高级的方法以迁移到Microsoft 365。 
+我们[的基本设置说明](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)可帮助你尽可能Microsoft 365使用你的服务和应用程序。 这将跳过混合方案以及更高级的方法，以迁移到Microsoft 365。 
   
-如果需要有关设置Microsoft 365的帮助，FastTrack是部署 Microsoft 365[](https://fasttrack.microsoft.com/office)的最简单方法，还可以登录并使用 Microsoft 365[服务安装指南](setup-guides-for-microsoft-365.md)。
+如果需要有关设置Microsoft 365的帮助，FastTrack是部署 Microsoft 365[](https://fasttrack.microsoft.com/office)的最简单方法，还可以登录并使用 Microsoft 365[指南](setup-guides-for-microsoft-365.md)。
 
 ## <a name="migrate-email-to-microsoft-365"></a>将电子邮件迁移到Microsoft 365
 - 使用 [Exchange 部署助理](https://technet.microsoft.com/exdeploy2013)通过 Exchange 混合迁移。（管理员）

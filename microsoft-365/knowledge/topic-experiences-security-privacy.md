@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva安全和隐私主题
+title: 安全与隐私主题Microsoft Viva主题
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,18 +8,18 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
-description: 了解如何规划安全Microsoft Viva主题的安全和隐私
-ms.openlocfilehash: b8c82b1914df739ea9086a4ce1585733a7b6d854
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+description: 了解如何在"主题"中规划Microsoft Viva隐私。
+ms.openlocfilehash: 4b0c94244badab9aa7e294b04b20b09149ead3b7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170555"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168430"
 ---
-# <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva安全和隐私主题
+# <a name="security-and-privacy-in-microsoft-viva-topics"></a>安全与隐私主题Microsoft Viva主题
 
-主题使用现有内容安全功能Microsoft 365管理控件，以控制向组织用户显示哪些 AI 生成的内容。 它是网站Microsoft 365安全设置 (网站、文件和文件夹) 和主题管理员设置的组合，确定给定用户可以在主题中看到的内容。
+主题使用组织中现有的内容安全功能Microsoft 365管理控件，以控制向组织用户显示哪些 AI 生成的内容。 它是网站Microsoft 365安全设置 (网站、文件和文件夹) 和主题管理员设置的组合，确定给定用户可以在主题中看到的内容。
 
 设置主题不会修改组织中对于内容的任何现有访问控制。 用户将只能查看有权访问的内容。
 
@@ -60,9 +60,9 @@ ms.locfileid: "59170555"
 
 ## <a name="users-personal-and-private-data"></a>用户的个人数据和私有数据
 
-Viva 主题仅发现您SharePoint网站中的主题。 不包括用户的个人存储，例如OneDrive邮件或邮件。
+Viva 主题仅发现您SharePoint网站中的主题。 不包括用户的个人存储，如OneDrive邮件或邮件。
 
-## <a name="best-practices"></a>最佳实践
+## <a name="best-practices"></a>最佳做法
 
 主题根据用户现有的内容权限向用户显示信息。 Microsoft 365提供了多种方式来确保敏感内容仅限于适当的用户。 除了标准团队或网站权限之外，您还可以使用敏感度标签或数据丢失防护[](../compliance/dlp-learn-about-dlp.md)来限制对内容和访问评审的访问，以[](/azure/active-directory/governance/access-reviews-overview)定期检查用户对敏感信息的访问。 [](../compliance/sensitivity-labels.md)
 
@@ -70,7 +70,7 @@ Viva 主题仅发现您SharePoint网站中的主题。 不包括用户的个人�
 
 如果要将主题完全从主题体验中排除，还可以：
 
-- [从主题发现 SharePoint敏感网站](topic-experiences-discovery.md#select-sharepoint-topic-sources)。 这些网站的内容不会出现在主题经验中。
+- [从主题SharePoint排除敏感网站](topic-experiences-discovery.md#select-sharepoint-topic-sources)。 这些网站的内容不会出现在主题经验中。
 
 - [按名称排除主题](topic-experiences-discovery.md#exclude-topics-by-name)。 明确排除的主题将不会出现在主题体验中。
 

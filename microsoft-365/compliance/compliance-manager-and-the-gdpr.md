@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规合规性活动。
-ms.openlocfilehash: dc58bf9b38b08ddd7218dfe0be07013a72ad0608dec931a3a5992193f75b0a25
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b4a648c43fb20f557b85e24e9e67de036cc4f2e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880541"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168658"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft 合规性管理器和 GDPR
 
@@ -54,14 +54,14 @@ ms.locfileid: "53880541"
   
  若要生成并导出报告，请执行以下操作：
   
-1. 选择 **"** 导出"可生成并下载当前分配给返回用户帐户的合规性管理器控制行动项的报告，以及该用户上载的文档列表。 如果没有分配的操作或上载的文档，则会显示一条错误消息，指出"此用户没有数据"。
+1. 选择 **"** 导出"，生成并下载当前分配给返回用户帐户的合规性管理器控制行动项的报告，以及该用户上载的文档列表。 如果没有分配的操作或上载的文档，则会显示一条错误消息，指出"此用户没有数据"。
 
 2. 如果看不到要检查浏览器下载历史记录的下载弹出窗口，报告将下载到活动浏览器窗口的后台。
 
 3. 打开文档即可查看报告数据。
 
 > [!IMPORTANT]
-> 报表数据不是保留并显示对操作项分配历史记录的状态更改的历史列表。 生成的报告是运行报告时分配的控件行动项的快照 (日期和时间戳写入报告) 。 例如，如果为同一用户再次生成报告，则任何后续行动项重新分配都会导致不同的快照报告数据。
+> 报表数据不是保留并显示对操作项分配历史记录的状态更改的历史列表。 生成的报告是运行报告时分配的控件行动项的快照， (日期和时间戳写入报告) 。 例如，如果为同一用户再次生成报告，则任何后续行动项重新分配都会导致不同的快照报告数据。
   
 ## <a name="delete-user-data-history"></a>删除用户数据历史记录
 

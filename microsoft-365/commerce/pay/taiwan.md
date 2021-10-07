@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0bf7e66fbd6bb56fa4185bc53e1c5dab0eb46bfb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ce5bdb46d2471c4da268b7edbd3a7a3544c6e6c8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195826"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167675"
 ---
 # <a name="payment-information-for-taiwan"></a>台湾的付款信息
 
@@ -31,5 +31,5 @@ Please pay in N.T. 仅美元和参考发票 () 付款付款金额。
 **受益银行：** BANKBANK TAIWAN LIMITED  
 **银行代码和分支机构代码：0210018**  
 **SWIFT 代码：** 一台或多路网  
-**帐户编号：5038946139**  
+**帐号：5038946139**  
 **帐户名称：** MICROSOFT 中国台湾公司

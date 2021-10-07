@@ -7,7 +7,7 @@ ms.date: 12/29/2016
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -18,20 +18,20 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 摘要：介绍用于连接到数据库的网络容量、WAN 加速器和负载平衡Office 365。
-ms.openlocfilehash: e1209c13eb24d11a2cc9692957bc4ee5f6310f41
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 38df9a64610c4b4d44014a142bf7d255aa0a0f46
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170596"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166774"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>有关连接到 Office 365 服务的网络设备的计划
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
   
-某些网络硬件可能限制支持的并发会话数。 对于拥有 2，000 多个用户的组织，我们建议他们监视其网络设备，以确保他们能够处理额外的Office 365流量。 SNMP (SNMP) 简单网络管理协议可以帮助您实现此目标。
+某些网络硬件可能限制支持的并发会话数。 对于拥有 2，000 多个用户的组织，我们建议他们监视其网络设备，以确保他们能够处理额外的 Office 365 流量。 SNMP (简单网络管理) 可帮助您实现此目标。
 
-本文是网络规划和性能[优化的一部分，Office 365。](./network-planning-and-performance.md)
+本文是 Network [planning and performance tuning for Office 365 的一Office 365。](./network-planning-and-performance.md)
 
 本地传出 Internet 代理设置还会影响与客户端Office 365服务的连接。 还必须配置网络代理设备，以允许连接 Microsoft 云服务 URL 和应用程序。 每个组织各不相同。 若要了解 Microsoft 如何管理此过程以及我们预配的带宽量， [请阅读案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)。
   
@@ -42,7 +42,7 @@ ms.locfileid: "59170596"
 - [无法连接到Skype for Business，或某些功能不起作用，因为本地防火墙会阻止连接](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
 > [!NOTE]
-> 虽然其中很多设置Skype for Business特定设置，但有关网络配置的一般指南对于所有服务Office 365有用。
+> 虽然其中许多设置Skype for Business特定设置，但有关网络配置的一般指南对于所有服务Office 365有用。
   
 ## <a name="determining-network-capacity"></a>确定网络容量
 
@@ -56,7 +56,7 @@ ms.locfileid: "59170596"
 
 如果你的组织使用广域网 (WAN) 加速代理设备，你在访问 Office 365 服务时可能会遇到问题。 你可能需要优化你的网络设备，以确保你的用户在访问网络时拥有一致的Office 365。 例如，Office 365加密某些Office 365和 TCP 标头。 你的设备可能无法处理此类流量。
   
-阅读我们的支持声明，[有关将 WAN 优化控制器或流量/检查设备](https://support.microsoft.com/kb/2690045)与 Office 365。
+阅读我们的支持声明，[了解将 WAN 优化控制器或流量/检查设备与 Office 365。](https://support.microsoft.com/kb/2690045)
   
 ## <a name="hardware-and-software-load-balancing-devices"></a>硬件和软件负载平衡设备
 

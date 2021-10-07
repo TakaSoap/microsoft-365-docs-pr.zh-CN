@@ -1,5 +1,5 @@
 ---
-title: 将Microsoft Teams类与具有"Learn 超"的类一同使用
+title: 将Microsoft Teams类与管理学习超
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -10,17 +10,17 @@ ms.service: o365-administration
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: 将Microsoft Teams类与具有"Learn 超"的类一同使用
-ms.openlocfilehash: 30ab28c4a9c2431a63db976df13748de6b843fdc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 将Microsoft Teams类与管理学习超
+ms.openlocfilehash: b74aaca3df01b2e6f222605f3700066c980cd9bd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162339"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170111"
 ---
-# <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>将Microsoft Teams类与具有"Learn 超"的类一同使用
+# <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>将Microsoft Teams类与管理学习超
 
 团队合作是每个现代组织的核心。 通过促进协作，这是每个成功机构的定义特征。 通过将它们与一些类配对，可以增强一切 Capabiliting Learn 超Microsoft Teams功能。
 
@@ -39,9 +39,9 @@ ms.locfileid: "59162339"
 
 ### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>机构电子邮件意味着什么，它支持什么？
 
-" **机构电子邮件** "字段允许在客户端的外部支持的数据源和用户学习超之间的自定义字段映射。 如果数据源是云提供商（如 Microsoft），则用户原则名称 (UPN) 是每个用户的主要唯一标识符，其中包括 UPN 前缀 (用户的帐户名称) 和 UPN 后缀 (DNS 域名) 与 @ 符号联接在一起。 这将为用户内每个特定用户创建一个唯一Microsoft Azure Active Directory。
+" **机构电子邮件** "字段允许在客户端的外部支持的数据源和用户学习超之间的自定义字段映射。 如果数据源是云提供商（如 Microsoft），则用户原则名称 (UPN) 是每个用户的主要唯一标识符，其中包括 UPN 前缀 (以及用户的帐户名称) 和 UPN 后缀 (DNS 域名) 与 @ 符号联接在一起。 这将为用户内每个特定用户创建一个唯一Microsoft Azure Active Directory。
 
-若要确保数据准确无误，并且正确实现在"需要学习的超"和 Microsoft Teams 类之间的注册或成员身份，用户的电子邮件地址必须在这两个系统之间匹配。 在"完成学习"中，用户可以在用户界面中更改或替代其现有电子邮件地址，这可能会导致发生同步错误，并且用户未正确添加到课堂团队。 机构 **电子邮件** 字段映射可确保正确管理此级别的安全和验证检查，而无论用户是否更改了在将用户的电子邮件发送到了一台具有该级别"Learn 超"功能的电子邮件。
+若要确保数据准确无误，并且正确实现在"完成学习超"和 Microsoft Teams 类之间的注册或成员身份，用户的电子邮件地址必须在这两个系统之间匹配。 在"完成学习"中，用户可以在用户界面中更改或替代其现有电子邮件地址，这可能会导致发生同步错误，并且用户未正确添加到课堂团队。 机构 **电子邮件** 字段映射可确保正确管理此级别的安全和验证检查，而无论用户是否更改了在将用户的电子邮件发送到了一台具有该级别"Learn 超"功能的电子邮件。
 
  当两个电子邮件地址不同时，可以是：
 
@@ -49,14 +49,14 @@ ms.locfileid: "59162339"
   或
 - 机构可以在机构电子邮件中设置自定义字段映射，从而解决潜在冲突。
 
-机构 **电子邮件** 字段映射现在可用于高级配置和用户了解对象类型字段映射设置所有现有 SIS  >    >  **集成类型**。
+机构 **电子邮件** 字段映射现在可用于高级配置和用户了解对象类型字段 **映射** 设置所有现有 SIS  >    >  **集成类型**。
 
 > [!NOTE]
-> 值得注意的是，默认情况下，机构电子邮件设置为所有 SIS格式的"个人电子邮件"，并且对于每个人必须是唯一的。  设置并运行的所有现有集成都将具有此数据映射，因为如果用户的电子邮件被复制，SIS 将无法导入用户。 如果机构需要能够将机构电子邮件更改为自定义，他们将需要通过 SIS 中的高级配置设置管理此配置。
+> 值得注意的是，默认情况下，机构电子邮件设置为所有 SIS格式的"个人电子邮件"，并且对于每个人必须是唯一的。  设置并运行的所有现有集成都将具有此数据映射，因为如果用户的电子邮件被复制，SIS 将无法导入用户。 如果机构需要能够将机构电子邮件 **更改为** 自定义，他们将需要通过 SIS 中的高级配置设置管理。
 
 ## <a name="requirements"></a>要求
 
-该Microsoft Teams课程集成仅适用于 **超课程视图课程**。 你的机构需要完成这些要求以使用它：
+超Microsoft Teams课程集成仅适用于 **超课程视图课程**。 你的机构需要完成这些要求以使用它：
 
 - 启用超基本导航后，让用户了解超极学习 SaaS
 
@@ -80,7 +80,7 @@ ms.locfileid: "59162339"
 
 - 配置和批准Microsoft Teams类集成
 
-## <a name="add-the-blackboard-learn-ultra-teams-classes-lti-13-tool"></a>添加"为"Teams学习"LTI 1.3 类工具
+## <a name="add-the-blackboard-learn-ultra-teams-classes-lti-13-tool"></a>添加"百分百学习Teams LTI 1.3 类工具
 
 1. 从管理员 **面板中，** 选择 **LTI 工具提供程序**。
 
@@ -165,7 +165,7 @@ ms.locfileid: "59162339"
 
 ### <a name="after-configuring-the-lti-applications"></a>配置 LTI 应用程序后
 
-1. 在管理员 **面板上**，导航到"**工具和** 实用程序"，然后选择"Microsoft Teams **集成管理员"。**
+1. 在管理员 **面板上**，导航到"**工具和** 实用程序"，然后选择 **"Microsoft Teams集成管理员"。**
 
 2. 选择 **"启用Microsoft Teams"。**
 

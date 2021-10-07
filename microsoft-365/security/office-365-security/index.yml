@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft Defender for Office 365文档
-summary: 了解 Defender for Office 365中用于更好地保护电子邮件和协作工具的稳固安全解决方案。
+summary: 了解 Defender for Office 365 中用于更好地保护电子邮件和协作工具的稳固安全解决方案。
 metadata:
   title: Microsoft Defender for Office 365安全文档
-  description: 了解 Defender for Office 365中用于更好地保护电子邮件和协作工具的稳固安全解决方案。
+  description: 了解 Defender for Office 365 中用于更好地保护电子邮件和协作工具的稳固安全解决方案。
   services: office-365-security-compliance
   ms.prod: m365-security
   ms.technology: mdo
@@ -12,13 +12,13 @@ metadata:
   author: mjcaparas
   ms.author: macapara
   ms.date: 04/13/2021
-  localization_priority: Priority
-  ms.openlocfilehash: 5e105fda4e1a37bdc2ba9eab22ba13d8f9b42e30
-  ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+  ms.localizationpriority: high
+  ms.openlocfilehash: 65f9f10ae0697842dfeca7a5e17a382cc720707c
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/16/2021
-  ms.locfileid: "59402078"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60169571"
 landingContent:
 - title: Defender for Office 365 & Exchange Online Protection
   linkLists:
@@ -92,7 +92,7 @@ landingContent:
       url: threat-explorer-views.md
     - text: Microsoft Defender for Office 365 中的市场活动视图
       url: campaigns.md
-    - text: 调查邮件中传递的恶意Office 365
+    - text: 调查在邮件中传递的恶意Office 365
       url: investigate-malicious-email-that-was-delivered.md
     - text: 查看 Defender for Office 365 报告
       url: view-reports-for-mdo.md

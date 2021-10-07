@@ -7,18 +7,19 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: 删除组或策略以关闭基本移动性和安全性。
-ms.openlocfilehash: 730c927c01bb7103c61694749ec7d55ec381a39a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: ff3fe72e1ca3a6445aa29ac18404aae139a70f8a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775080"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165852"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>关闭基本移动性和安全性
 
@@ -54,4 +55,4 @@ ms.locfileid: "59775080"
 3. 在"警告"对话框中，选择"**是"。**
 
 > [!NOTE]
-> 有关在组织设备仍处于阻止状态时取消阻止设备的更多步骤，请参阅博客文章从 Office 365 移动设备管理 删除[访问控制](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)。
+> 有关在组织设备仍处于阻止状态时取消阻止设备的更多步骤，请参阅博客文章从设备中删除[Office 365 移动设备管理。](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)

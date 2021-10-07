@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -25,18 +25,18 @@ search.appverid:
 - BCS160
 - IWA160
 description: 服务运行状况仪表板帖子仅提供英语版本，但可以使用您为服务指定的语言自动Microsoft 365。
-ms.openlocfilehash: 9f5ce6dbb918f7a3dddf43b6332d28142446f179
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f8f4877fcfb12200ea3f540fe52472d0310cd46e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195749"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168586"
 ---
 # <a name="language-translation-for-service-health-dashboard"></a>服务运行状况仪表板的语言翻译
 
-由于我们发布的信息的时间线，服务运行状况仪表板帖子仅以英语编写，但可以使用你的个人语言设置指定的语言自动显示Microsoft 365。 如果将首选语言设置为英语外的其他语言，你将在服务运行状况仪表板中看到一个自动翻译帖子的选项。 邮件被机器翻译为首选语言，这意味着计算机已进行翻译。 此选项可控制默认视图，但也可以使用下拉菜单将帖子翻译为任何支持翻译的语言，并以该语言显示。 如果选择英语，则会将消息恢复为原始的英语版本。
+由于我们发布的信息的时间线，服务运行状况仪表板帖子仅以英语编写，但可以自动以你的个人语言设置指定的语言显示Microsoft 365。 如果将首选语言设置为英语外的其他语言，你将在服务运行状况仪表板中看到一个自动翻译帖子的选项。 邮件被机器翻译为首选语言，这意味着计算机已进行翻译。 此选项可控制默认视图，但也可以使用下拉菜单将帖子翻译为任何支持翻译的语言，并以该语言显示。 如果选择英语，则会将消息恢复为原始的英语版本。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 > [!IMPORTANT]
 > 在可以选择语言设置之前，必须设置首选语言。 如果将语言设置为英语，则不会显示任何翻译选项。 不能为他人指定首选语言，每位用户必须自行更改此设置。

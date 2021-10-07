@@ -7,7 +7,7 @@ ms.date: 12/15/2017
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 了解哪些类型的 SharePoint 2013 解决方案可以托管在 Microsoft Azure 虚拟机中，以及如何将 Azure 设置为托管一个。
-ms.openlocfilehash: 937072dfec55618a4bfb8f9405bd525023ca3d44
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8bbaeb7a20b467625d57800cdf95f42e5b11f434
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162335"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168550"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 的 Microsoft Azure 体系结构
 
-Azure 是用于托管 SharePoint Server 2013 解决方案的绝佳环境。 在大多数情况下，我们建议Microsoft 365，SharePoint托管在 Azure 中的服务器场是特定解决方案的良好选择。 本文介绍如何构建 SharePoint 解决方案，使它们适合 Azure 平台。 我们将以下面两个特定解决方案为例进行说明：
+Azure 是用于托管 SharePoint Server 2013 解决方案的绝佳环境。 在大多数情况下，我们建议Microsoft 365，SharePoint Azure 中托管的服务器场是特定解决方案的一个不错的选择。 本文介绍如何构建 SharePoint 解决方案，使它们适合 Azure 平台。 我们将以下面两个特定解决方案为例进行说明：
   
 - [Microsoft Azure 中的 SharePoint Server 2013 灾难恢复](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -44,9 +44,9 @@ Azure 基础结构服务是用于托管 SharePoint 解决方案的极具吸引�
    
 对于 Intranet 以及协作解决方案和工作负载，请考虑下列选项：
   
-- 确定Microsoft 365业务要求，还是作为解决方案的一部分。 Microsoft 365提供了始终保持最新状态的功能集。
+- 确定Microsoft 365业务要求，还是作为解决方案的一部分。 Microsoft 365提供始终保持最新的丰富功能集。
     
-- 如果Microsoft 365业务要求，请考虑 Microsoft 咨询服务和 MCS) 中的 SharePoint 2013 本地 (实现。 相比自定义体系结构而言，标准体系结构的支持更快速、便宜和简单。 
+- 如果Microsoft 365业务要求，请考虑 Microsoft 咨询服务和 MCS) 中的 SharePoint 2013 (标准实现。 相比自定义体系结构而言，标准体系结构的支持更快速、便宜和简单。 
     
 - 如果标准实现不满足您的业务需求，请考虑使用自定义的内部部署解决方案。
     
@@ -189,7 +189,7 @@ SharePoint 服务器场可能需要在 Azure 平台中进行优化。要确保�
   
 **图 7：优化之前的应用程序服务器层**
 
-![示例SharePoint Server 2013 应用程序服务器层，然后再针对Microsoft Azure集进行调整。](../media/AZarch-AppServtierBefore.png)
+![示例 SharePoint Server 2013 应用程序服务器层，然后再针对Microsoft Azure集进行调整。](../media/AZarch-AppServtierBefore.png)
   
 在此图中：
   
@@ -205,7 +205,7 @@ SharePoint 服务器场可能需要在 Azure 平台中进行优化。要确保�
   
 **图 8：优化之后的应用程序服务器层**
 
-![示例SharePoint可用性集调整后配置 Server 2013 Microsoft Azure层。](../media/AZarch-AppServtierAfter.png)
+![针对SharePoint可用性集进行调整后，Microsoft Azure Server 2013 应用程序服务器层。](../media/AZarch-AppServtierAfter.png)
   
 此图显示了使用相同的四个组件进行相同配置的所有三个应用程序服务器。
   

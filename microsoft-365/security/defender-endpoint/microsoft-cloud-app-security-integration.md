@@ -11,19 +11,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: 5d00c95323f0c2cebb030fd454df0073588ed39f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4f2229b5d82668920396efc77469110c4e3e3909
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196326"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168274"
 ---
 # <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>Microsoft Cloud App Security Defender for Endpoint 概述
 
@@ -45,7 +45,7 @@ Microsoft Cloud App Security (云应用安全) 是一个全面的解决方案，
 
 ## <a name="microsoft-defender-for-endpoint-and-cloud-app-security-integration"></a>Microsoft Defender for Endpoint 和 云应用安全 集成
 
-云应用安全依赖于从企业防火墙和代理服务器转发到它的云流量日志。 Microsoft Defender for Endpoint 通过收集云应用安全转发所有云应用网络活动，从而与云应用集成，从而提供云应用使用情况的增强可见性。 监控功能内置于设备中，可提供网络活动的完全覆盖。
+云应用安全依赖于从企业防火墙和代理服务器转发到它的云流量日志。 Microsoft Defender for Endpoint 与 云应用安全集成，通过收集和转发所有云应用网络活动，提供对云应用使用情况的增强可见性。 监控功能内置于设备中，可提供网络活动的完全覆盖。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r4yQ]
 
@@ -53,9 +53,9 @@ Microsoft Cloud App Security (云应用安全) 是一个全面的解决方案，
 
 - 可在任何位置使用 - 由于网络活动直接从终结点收集，因此无论设备位于公司网络内部还是外部，设备都可用，因为它不再依赖于通过企业防火墙或代理服务器路由的流量。
 
-- 开箱即用，无需配置 - 将云流量日志转发云应用安全防火墙和代理服务器配置。 使用 Defender for Endpoint 和 云应用安全 集成，无需任何配置。 只需在Microsoft Defender 安全中心中打开它，你一吧。\
+- 开箱即用，无需配置 - 将云流量日志转发云应用安全防火墙和代理服务器配置。 使用 Defender for Endpoint 和 云应用安全 集成，无需任何配置。 只需在Microsoft Defender 安全中心中打开它，你可继续操作。\
 
-- 设备上下文 - 云流量日志缺少设备上下文。 Defender for Endpoint 网络活动通过设备上下文报告 (哪些设备访问了云应用) ，因此，除了由 (用户) 执行网络活动外，你能够准确了解 (设备) 网络活动的发生位置。
+- 设备上下文 - 云流量日志缺少设备上下文。 Defender for Endpoint 网络活动通过设备上下文报告 (哪些设备访问云应用) ，以便你能够准确了解 (设备) 网络活动的发生位置，以及由谁 (用户) 执行。
 
 有关云发现详细信息，请参阅 [使用发现的应用](/cloud-app-security/discovered-apps)。
 

@@ -7,7 +7,7 @@ ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150s
 ms.collection:
@@ -18,13 +18,13 @@ f1.keywords:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
-description: 摘要：在 Microsoft Azure 中为 Microsoft 365 配置高可用性联合Microsoft Azure。
-ms.openlocfilehash: 22715f55a733b963a9b9f9c26c910adba1012ed7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 摘要：在 Microsoft Azure 中为 Microsoft 365 订阅配置高可用性联合Microsoft Azure。
+ms.openlocfilehash: 70d597663a1920706dbab164dda05b7142f7fd04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196119"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168622"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>在 Azure 中为 Microsoft 365 部署高可用性联合身份验证
 
@@ -96,7 +96,7 @@ ms.locfileid: "59196119"
     
 - [阶段 4：配置 Web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。创建和配置两个 Web 应用程序代理服务器。
     
-- [阶段 5：为 Microsoft 365 配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。 为订阅配置Microsoft 365身份验证。
+- [第 5 阶段：为](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)Microsoft 365 配置联合身份验证。 为订阅配置Microsoft 365身份验证。
     
 这些文章提供了预定义体系结构的规范性分阶段指南，以在 Azure 基础结构服务中为 Microsoft 365 创建功能、高可用性联合身份验证。 请注意下列事项：
   
@@ -104,7 +104,7 @@ ms.locfileid: "59196119"
     
 - 如果你已经拥有现有的 Azure 混合云部署以及现有的跨界虚拟网络，则可以随意调整或跳过第 1 阶段和第 2 阶段中的说明，并将 AD FS 和 Web 应用程序代理服务器置于相应的子网上。
     
-若要构建开发/测试环境或此配置的概念证明，请参阅联合标识[，Microsoft 365开发/测试环境](federated-identity-for-your-microsoft-365-dev-test-environment.md)。
+若要构建开发/测试环境或此配置的概念证明，请参阅联合标识[Microsoft 365开发/测试环境](federated-identity-for-your-microsoft-365-dev-test-environment.md)。
   
 ## <a name="next-step"></a>后续步骤
 

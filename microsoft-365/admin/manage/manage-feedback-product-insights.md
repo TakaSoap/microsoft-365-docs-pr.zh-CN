@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用最终用户的 (NPS) ，查看他们对 Microsoft 产品和服务的感觉。
-ms.openlocfilehash: 967de32339c23cf277871102dfecc8c00a55d8e6
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: afde0abf85cca682a5cda3206fa78d24cafc8cb8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777049"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168118"
 ---
 # <a name="microsoft-product-nps-feedback-and-insights-for-your-organization"></a>Microsoft 产品 NPS 反馈和组织的见解
 
 作为组织管理员Microsoft 365，你现在可以看到组织中用户生成的见解和数据。
 
-NPS (的) 者分数收集用户反馈，并衡量用户说出他们向好友和同事推荐产品和服务的可能性。 此数据可用于组织级别，以确定采用和推出策略。
+NPS (的) 高分调查收集用户反馈，并衡量用户说出他们向好友和同事推荐产品和服务的可能性。 此数据可用于组织级别，以确定采用和推出策略。
 
 我们使用来自最终用户的 NPS 调查和反馈，提供有关 Microsoft 产品和服务的见解。 此信息可帮助您了解组织中最终用户使用哪些产品和服务，还可以帮助您识别问题并快速解决问题。 使用此信息，您可以：
 
@@ -38,7 +38,7 @@ NPS (的) 者分数收集用户反馈，并衡量用户说出他们向好友和�
 - 请参阅最终用户对主要产品和问题的评论
 - 将反馈和调查信息导出到 CSV 文件以进一步调查
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 您需要是管理员 [才能](../add-users/about-admin-roles.md) 查看和阅读调查报告。 您的组织需要打开反馈调查以查看和阅读调查报告。 有关详细信息 [，请查看管理组织的 Microsoft](manage-feedback-ms-org.md) 反馈。
 
@@ -111,7 +111,7 @@ NPS (的) 者分数收集用户反馈，并衡量用户说出他们向好友和�
 - Verbatim Precision- 92%
 - Verbatim Recall- 89%
 
-**常规表扬** 是指具有正面情绪且不适合任何其他主题的客户评论。
+**常规表扬** 是指具有积极情绪且不适合任何其他主题的客户评论。
 
 - Verbatim Precision- 93%
 - Verbatim Recall- 98%
@@ -127,12 +127,12 @@ NPS (的) 者分数收集用户反馈，并衡量用户说出他们向好友和�
 
 你可以按 **频道、产品****、****平台和反馈类型****进行筛选**。
 
-**频道** 是组织选择获取适用于用户的功能更新Office。 有关详细信息，[请通过 Overview of update channels for Microsoft 365 应用版](/deployoffice/overview-update-channels)。 此筛选器允许你筛选到从特定频道上的用户提交的反馈
+**频道** 是一种供组织选择为用户获取功能更新Office。 有关详细信息，[请通过 Overview of update channels for Microsoft 365 应用版](/deployoffice/overview-update-channels)。 此筛选器允许你筛选到从特定频道上的用户提交的反馈
 
 可以在各种平台（如 Android、iOS、Mac 和 Windows）上提交Windows。  此筛选器允许你基于提交它的平台筛选反馈。
 
 大多数适用于 **Microsoft 365产品都可以** 在此筛选器下找到。 使用此筛选器选择已提交反馈的产品。
 
-使用 **"** 反馈 (仅设置为 NPS 反馈) 来筛选我们收集的反馈。
+使用 **"** 反馈 (仅设置为 NPS 反馈) 可以筛选我们收集的反馈。
 
 :::image type="content" source="../../media/prosight-filters.png" alt-text="屏幕截图：Microsoft 365 NPS 调查见解筛选器":::

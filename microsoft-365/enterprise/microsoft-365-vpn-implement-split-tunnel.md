@@ -7,7 +7,7 @@ ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: 36c3cfbd74dabb0cfaf305cb52fb7f69e1e1e49f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a1b0ecf47e6644db926aae97386a4e5bf0217cf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196776"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166990"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
@@ -35,7 +35,7 @@ ms.locfileid: "59196776"
 
 在相当长的一段时间内，只要远程用户的并发规模适中且遍历 VPN 的流量较低，那么所有来自远程用户设备的连接都被路由回本地网络的 VPN 模型（这称为 _强制隧道_）基本上是可持续的。  一些客户甚至在他们的应用从企业外围转移到公共 SaaS 云之后，仍继续将 VPN 强制隧道用作现状， Office 365 就是一个很好的例子。
 
-使用强制隧道 VPN 连接到分布式和性能敏感的云应用程序是非优化的，但一些企业可能已经接受这样做的负面影响，以便从安全角度维持状态仲裁。 下面是此场景的一个示例图：
+使用强制隧道 VPN 连接到分布式且对性能敏感的云应用程序是非优化的，但一些企业为了从安全角度维持状态而接受其负面影响。 下面是此场景的一个示例图：
 
 ![拆分Tunnel VPN 配置。](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
@@ -67,7 +67,7 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 
 ### <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. VPN 强制隧道（有几个受信任的异常）
 
-此模型对于企业运行的效率明显更高，因为它允许一些对负载和延迟非常敏感的受控和定义的终结点绕过 VPN 隧道并直接转到此示例中的 Office 365 服务。 这显著提高了卸载服务的性能，还减少了 VPN 基础结构上的负载，从而允许仍然需要它的元素以较低的资源争用运行。 正是此模型，本文侧重于协助过渡到 ，因为它允许快速执行简单的已定义操作，并产生大量积极结果。
+此模型对于企业运行的效率明显更高，因为它允许几个负载和延迟非常高且对延迟非常敏感的受控和定义的终结点绕过 VPN 隧道并直接转到此示例中的 Office 365 服务。 这显著提高了卸载服务的性能，还减少了 VPN 基础结构上的负载，从而允许仍然需要它的元素以较低的资源争用运行。 正是此模型，本文侧重于协助过渡到 ，因为它允许快速执行简单的已定义操作，并产生大量积极结果。
 
 ![拆分Tunnel VPN 模型 2。](../media/vpn-split-tunneling/vpn-model-2.png)
 
@@ -91,7 +91,7 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 
 ## <a name="implement-vpn-split-tunneling"></a>实现 VPN 拆分隧道
 
-在此部分中，你将找到将 VPN 客户端体系结构从 _VPN_ 强制隧道迁移到具有少量受信任异常的 _VPN_ 强制隧道所需的简单步骤，VPN 拆分隧道模型 [#2](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) 常见 [VPN](#common-vpn-scenarios)方案中。
+在此部分中，你将找到将 VPN 客户端体系结构从 _VPN_ 强制隧道迁移到具有少量受信任异常的 _VPN_ 强制隧道所需的简单步骤，常见 [VPN](#common-vpn-scenarios)方案中的 VPN 拆分隧道模型 [#2。](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions)
 
 下图显示了建议的 VPN 拆分隧道解决方案的工作原理：
 
@@ -122,7 +122,7 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 | <https://outlook.office.com> | TCP 443 | 此 URL 供 Outlook Online Web 访问用于连接到 Exchange Online Server，并且对网络延迟非常敏感。 使用 SharePoint Online 上传和下载大型文件尤其需要连接。 |
 | https:// \<tenant\> .sharepoint.com | TCP 443 | 这是 SharePoint Online 的主要 URL，并且具有高带宽使用率。 |
 | https:// \<tenant\> -my.sharepoint.com | TCP 443 | 这是 OneDrive for business 的主要 URL，具有较高的带宽使用率，并且可能会产生来自 OneDrive for Business 同步工具的高连接计数。 |
-| Teams 媒体 IP（无 URL） | UDP 3478、3479、3480 和 3481 | 中继发现分配和实时流量 (3478) 、音频 (3479) 、视频 (3480) 和视频屏幕共享 (3481) 。 这些终结点用于处理Skype for Business Microsoft Teams媒体 (、会议等) 。 当 Microsoft Teams 客户端建立呼叫时，将提供大多数终结点（并包含在为该服务列出的所需 IP 内）。 若要获得最佳媒体质量，需要使用 UDP 协议。   |
+| Teams 媒体 IP（无 URL） | UDP 3478、3479、3480 和 3481 | 中继发现分配和实时流量 (3478) 、音频 (3479) 、视频 (3480) 和视频屏幕共享 (3481) 。 这些终结点用于处理Skype for Business Microsoft Teams媒体 (通话、会议等) 。 当 Microsoft Teams 客户端建立呼叫时，将提供大多数终结点（并包含在为该服务列出的所需 IP 内）。 若要获得最佳媒体质量，需要使用 UDP 协议。   |
 
 在上面的示例中，应将 **租户** 替换为 Office 365 租户名称。 例如，**contoso.onmicrosoft.com** 将使用 _contoso.sharepoint.com_ 和 _constoso-my.sharepoint.com_。
 
@@ -208,7 +208,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 ```
 -->
 
-应配置 VPN 客户端，以便 **优化** IP 的流量以此方式路由。 这允许流量利用本地 Microsoft 资源，如 Office 365 Service Front Door，如[Azure Front Door，](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/)可提供尽可能接近你的用户的 Office 365 服务和连接终结点。 这使我们能够为位于世界任何位置的用户提供高性能级别，并充分利用 [Microsoft](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)的世界一流的全局网络，这很可能在用户的直接出口几毫秒内完成。
+应配置 VPN 客户端，以便 **优化** IP 的流量以此方式路由。 这允许流量利用本地 Microsoft 资源（如 Office 365 Service Front Door，如[Azure Front Door，](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/)可提供尽可能接近你的用户的 Office 365 服务和连接终结点。 这使我们能够为位于世界任何位置的用户提供高性能级别，并充分利用 [Microsoft](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)的世界一流的全局网络，这很可能在用户的直接出口几毫秒内完成。
 
 ## <a name="configuring-and-securing-teams-media-traffic"></a>配置和保护 Teams 媒体流量
 
@@ -216,7 +216,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 ### <a name="configuration"></a>配置
 
-对于呼叫和会议，只要路由表中正确放置了 Teams 媒体所需的"优化 IP 子网"，当 Teams 调用[GetBestRoute](/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute)函数来确定哪个本地接口对应于它应用于特定目的地的路由时，将为上面列出的 Microsoft IP 块中的 Microsoft 目标返回本地接口。
+对于呼叫和会议，只要路由表中正确放置了 Teams 媒体所需的"优化 IP 子网"，当 Teams 调用[GetBestRoute](/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute)函数以确定哪个本地接口对应于它应用于特定目的地的路由时，将为上面列出的 Microsoft IP 块中的 Microsoft 目标返回本地接口。
 
 某些 VPN 客户端软件允许基于 URL 进行路由操作。 但是，Teams 媒体流量没有与之关联的 URL，因此必须使用 IP 子网来控制此流量路由。
 
@@ -253,13 +253,13 @@ Skype for Business Online 生成用户名/密码，可用于通过 _围绕 NAT �
   tracert worldaz.tr.teams.microsoft.com
   ```
 
-  然后，应看到通过本地 ISP 到此终结点的路径，该路径应解析为为拆分隧道Teams配置的范围中的 IP。
+  然后，应看到通过本地 ISP 到此终结点的路径，该路径应解析为我们为拆分隧道Teams配置的范围中的 IP。
 
 - 以使用 Wireshark 之类的工具进行网络捕获为例。 在呼叫期间筛选 UDP，应看到流量流向 Teams **优化** 范围中的 IP。 如果 VPN 隧道正用于此流量，则跟踪中将不会显示媒体流量。
 
 ### <a name="additional-support-logs"></a>其他支持日志
 
-如果需要更多数据来排除故障，或正在请求 Microsoft 支持部门的协助，获取以下信息可帮助你加快查找解决方案。 Microsoft 支持的 **TSS Windows基于 CMD 的通用 TroubleShooting 脚本** 工具集可帮助您以一种简单的方式收集相关日志。 有关使用的工具和说明，请参阅 <https://aka.ms/TssTools> 。
+如果需要更多数据来排除故障，或正在请求 Microsoft 支持部门的协助，获取以下信息可帮助你加快查找解决方案。 Microsoft 支持的 **基于 CMD Windows TSS** 脚本工具集可帮助您以简单方式收集相关日志。 有关使用的工具和说明，请参阅 <https://aka.ms/TssTools> 。
 
 ## <a name="howto-guides-for-common-vpn-platforms"></a>适用于常见 VPN 平台的操作指南
 
@@ -275,13 +275,13 @@ Skype for Business Online 生成用户名/密码，可用于通过 _围绕 NAT �
 
 ## <a name="faq"></a>常见问题
 
-Microsoft 安全团队发布了供安全专业人员和 [IT](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)人员在今天独特的远程工作场景中实现新式安全控制的替代方法，这是一篇博客文章，概述了安全专业人员和 IT 人员可以在当今独特的远程工作场景中实现新式安全控制的关键方法。 此外，下面是有关此主题的一些常见客户问题和解答。
+Microsoft 安全团队发布了供安全专业人员和 [IT](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)人员在今天独特的远程工作场景中实现新式安全控制的替代方法（博客文章）概述了安全专业人员和 IT 人员在当今独特的远程工作场景中实现新式安全控制的关键方法。 此外，下面是有关此主题的一些常见客户问题和解答。
 
 ### <a name="how-do-i-stop-users-accessing-other-tenants-i-do-not-trust-where-they-could-exfiltrate-data"></a>我如何阻止用户访问我不信任的其他租户（他们可能会泄漏数据）？
 
 答案是[称为租户限制的功能](/azure/active-directory/manage-apps/tenant-restrictions)。 身份验证流量不大，对延迟也不是特别敏感，因此可通过 VPN 解决方案发送到应用此功能的本地代理。 此处维护受信任租户的允许列表，如果客户端尝试获取不受信任的租户的令牌，代理将拒绝请求。 如果租户受信任，则在用户具有正确的凭据和权限的情况下，令牌可供访问。
 
-因此，即使用户可以建立与上述"优化"标记的终结点的 TCP/UDP 连接，但没有有效的令牌来访问有关租户，他们也无法登录和访问/移动任何数据。
+因此，即使用户可以与上述"优化"标记的终结点建立 TCP/UDP 连接，但没有有效的令牌来访问有关租户，他们也无法登录和访问/移动任何数据。
 
 ### <a name="does-this-model-allow-access-to-consumer-services-such-as-personal-onedrive-accounts"></a>此模型是否允许访问诸如个人 OneDrive 帐户之类的使用者服务？
 
@@ -289,7 +289,7 @@ Microsoft 安全团队发布了供安全专业人员和 [IT](https://www.microso
 
 ### <a name="how-do-i-apply-dlp-and-protect-my-sensitive-data-when-the-traffic-no-longer-flows-through-my-on-premises-solution"></a>如果流量不再流经本地解决方案，我该如何应用 DLP 并保护我的敏感数据？
 
-为帮助防止意外泄露敏感信息，Office 365 提供了一组丰富的[内置工具](../compliance/information-protection.md)。 可使用 Teams 和 SharePoint 的内置 [DLP 功能](../compliance/dlp-learn-about-dlp.md)来检测未恰当存储或共享的敏感信息。 如果远程工作策略的一部分涉及自带设备办公 (BYOD) 策略，可以使用基于应用的条件访问来防止敏感数据下载到用户[](/azure/active-directory/conditional-access/app-based-conditional-access)的个人设备
+为帮助防止意外泄露敏感信息，Office 365 提供了一组丰富的[内置工具](../compliance/information-protection.md)。 可使用 Teams 和 SharePoint 的内置 [DLP 功能](../compliance/dlp-learn-about-dlp.md)来检测未恰当存储或共享的敏感信息。 如果远程工作策略的一部分涉及自带设备办公 (BYOD) 策略，可以使用基于应用的条件访问来防止敏感数据下载到用户的个人[](/azure/active-directory/conditional-access/app-based-conditional-access)设备
 
 ### <a name="how-do-i-evaluate-and-maintain-control-of-the-users-authentication-when-they-are-connecting-directly"></a>如何在用户直接连接时评估和保留用户身份验证的控制权？
 
@@ -319,7 +319,7 @@ Microsoft 安全团队发布了供安全专业人员和 [IT](https://www.microso
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>为什么需要端口 80？ 流量是否明文发送？
 
-端口 80 仅用于重定向到端口 443 会话之类的操作，不会通过端口 80 发送或访问任何客户数据。 [加密](../compliance/encryption.md)概述了对传输中和静态数据进行加密Office 365流量类型概述了如何使用 SRTP 来保护Teams流量。 [](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic)
+端口 80 仅用于重定向到端口 443 会话之类的操作，不会通过端口 80 发送或访问任何客户数据。 [加密](../compliance/encryption.md)概括了传输中和静态数据对 Office 365 的加密，而流量类型[](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic)概述了如何使用 SRTP 来保护Teams流量。
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>此建议是否适用于使用 Office 365 全球实例的中国用户？
 
@@ -327,7 +327,7 @@ Microsoft 安全团队发布了供安全专业人员和 [IT](https://www.microso
 
 ### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>拆分隧道配置是否适用于在Teams中运行的信息？
 
-是的，它通过支持的浏览器（在 Get clients [for Microsoft Teams 中列出](/microsoftteams/get-clients#web-client)）。
+是的，它通过支持的浏览器（在获取客户端 for [Microsoft Teams 中列出](/microsoftteams/get-clients#web-client)）。
 
 ## <a name="related-topics"></a>相关主题
 

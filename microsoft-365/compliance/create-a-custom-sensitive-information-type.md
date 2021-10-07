@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在安全与合规中心内为 DLP 创建、修改、删除和测试&类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e581fb38bd6fc5887b1648284a7a77f755c6b43
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6fa6527c2c33eb4bf245f6e1a54a1d6995d074b1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171045"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167398"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自定义敏感信息类型入门
 
@@ -198,10 +198,10 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 > 若要检测含有中文/日文字符和单字节字符的模式，或检测含有中文/日文和英文的模式，则需要定义两个变体的关键词或词组。 
 > - 例如，若要检测像“机密的文件”这样的关键词，则要使用该关键词的两个变体; 一个是在日语和英语文本之间有空格，另一个是在日语和英语文本之间没有空格。 因此，在 SIT 中要添加的关键词应该是“机密的 文档”和“机密的文档”。 同样，若要检测短语 "東京オリンピック2020"，则应该使用两个变体;“東京オリンピック 2020”和“東京オリンピック2020”。
 >
-> 除了中文/日语/双字节字符外，如果关键字/短语列表还包含非中文/日语单词 (如仅英语) ，建议创建两个词典/关键字列表。 一个针对包含中文/日语/双字节字符的关键字，另一个针对英语。 
-> - 例如，如果要创建包含三个短语"Highly confidential"、"が高い"和"机密"的关键字字典/列表，您应创建两个关键字列表。 
->     1. 高度机密
->     2. がい、、
+> 除了中文/日语/双字节字符外，如果关键字/短语列表中还包含非中文/日语字词（如仅含英语的字词），建议创建两个字典/关键字列表。 一个针对包含中文/日语/双字节字符的关键字，另一个针对仅含英语的关键字。 
+> - 例如，如果要创建包含“Highly confidential”、“機密性が高い”和“机密的document”这三个短语的关键字字典/列表，则应创建两个关键字列表。 
+>     1. Highly confidential
+>     2. “機密性が高い”、“机密的document”和“机密的 document”
 >
 > 当使用双字节连字符或双字节句号创建 regex 时，请确保像在 regex 中转义连字符或句号一样转义这两个字符。以下是供参考的示例 regex：
 >    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}

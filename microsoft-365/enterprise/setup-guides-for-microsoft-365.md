@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 获取分步工具，以规划、迁移和实现租户许可证中的功能。 查找设置需要运行的服务或应用的指南。
-ms.openlocfilehash: 3d69484cf1899fbca8994e3abc89bd49876da5cf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b95437a3aed5409900d5006859b7099b1ff2443e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170985"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170195"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 和 Office 365 服务的设置指南
 
-Microsoft 365和Office 365设置指南可为您提供用于规划和部署租户、应用和服务的定制指南和资源。 这些指南的创建方式与载入专家Microsoft 365 FastTrack在个人[](https://www.microsoft.com/fasttrack/microsoft-365)交互中共享的最佳方案相同，可供 Microsoft 365 管理中心。 它们提供有关产品设置、启用安全功能、部署协作工具以及提供脚本以加快高级部署的信息。
+Microsoft 365和Office 365设置指南可为您提供用于规划和部署租户、应用和服务的定制指南和资源。 这些指南使用与载入专家在个人Microsoft 365 FastTrack中分享[](https://www.microsoft.com/fasttrack/microsoft-365)的相同最佳做法创建，并且可供 Microsoft 365 管理中心 内的所有管理员使用。 它们提供有关产品设置、启用安全功能、部署协作工具以及提供脚本以加快高级部署的信息。
 
 > [!NOTE]
 > 必须分配有全局读者等管理员角色才能访问Microsoft 365指南。 只有具有全局管理员角色的管理员可以使用指南更改租户中的设置。 
@@ -61,11 +61,11 @@ Microsoft 365和Office 365设置指南可为您提供用于规划和部署租户
 
 ### <a name="migrate-gmail-contacts-and-calendar-items"></a>迁移 Gmail 联系人和日历项目
 
-将 Gmail 用户的邮箱迁移到 Microsoft 365时，将迁移电子邮件，但不迁移联系人和日历项目。 Gmail 联系人和日历[顾问](https://aka.ms/gmailcontactscalendar)提供了使用 Outlook.com、Outlook 客户端或 PowerShell 的导入和导出方法将 Google 联系人和 Google 日历项目导入 Microsoft 365 的步骤。
+将 Gmail 用户的邮箱迁移到 Microsoft 365时，电子邮件会进行迁移，但联系人和日历项目不会迁移。 Gmail 联系人和日历[顾问](https://aka.ms/gmailcontactscalendar)提供了使用 Outlook.com、Outlook 客户端或 PowerShell 的导入和导出方法将 Google 联系人和 Google 日历项目导入 Microsoft 365 的步骤。
 
-### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365部署顾问
+### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365顾问
 
-Microsoft 365[顾问](https://aka.ms/microsoft365setupguide)提供有关设置生产力工具、安全策略和设备管理功能的指南。 通过Microsoft 365 商业高级版或Microsoft 365订阅，你可以使用此顾问来设置和配置你的组织设备。
+部署[Microsoft 365](https://aka.ms/microsoft365setupguide)顾问提供有关设置生产力工具、安全策略和设备管理功能的指南。 通过Microsoft 365 商业高级版或Microsoft 365订阅，你可以使用此顾问来设置和配置你的组织设备。
 
 你将收到用于启用云服务、将设备更新到最新受支持的 Windows 10 版本以及将设备加入 Azure Active Directory (Azure AD) 的指南和访问资源，所有这些操作都位于一个中心位置。
 
@@ -73,7 +73,7 @@ Microsoft 365[顾问](https://aka.ms/microsoft365setupguide)提供有关设置�
 
 远程 [工作设置指南](https://aka.ms/remoteworksetup) 为组织提供了所需的提示和资源，以确保用户能够成功远程工作、数据安全并保护用户的凭据。
 
-你将收到有关优化远程工作者设备流量的指南，Microsoft 365云中和组织的网络中访问资源，这将减轻远程访问 VPN 基础结构的压力。
+你将收到指南，以优化远程工作者对云中 Microsoft 365 资源和组织的网络的设备流量，这将减轻远程访问 VPN 基础结构的压力。
 
 ### <a name="windows-virtual-desktop-setup-guide"></a>Windows虚拟桌面设置指南
 
@@ -83,23 +83,23 @@ Windows虚拟桌面是在云中运行的全面桌面应用虚拟化服务。 它
 
 ### <a name="microsoft-edge-setup-guide"></a>Microsoft Edge设置指南
 
-Microsoft Edge已经过全新构建，可让你获得世界一流的兼容性和性能、你应享有的安全和隐私以及旨在发挥 Web 最佳效果的新功能。
+Microsoft Edge已经过全新构建，可让你获得世界一流的兼容性和性能、你应享有的安全和隐私以及旨在提供最佳 Web 功能的新功能。
 
 [Microsoft Edge](https://aka.ms/edgeadvisor)设置指南将帮助您配置 Enterprise 站点发现，以查看在贵组织访问哪些网站可能需要使用 IE 模式、查看和配置重要的安全功能、配置隐私策略和合规性策略以满足组织的要求，以及管理您设备的 Web 访问。 你可以将Microsoft Edge下载到单个设备，或者我们将展示如何使用组策略、Configuration Manager 或 Microsoft Intune 部署到组织中的多个用户。
 
 ### <a name="configure-ie-mode-for-microsoft-edge"></a>为用户配置 IE Microsoft Edge
 
-如果你已经部署了 Microsoft Edge并且只想配置 IE 模式，则[配置 Microsoft Edge 的 IE](https://aka.ms/configureiemode)模式指南将指导你自动配置 Enterprise 站点发现。 你还将从基于云的工具获取 IE 模式建议，该工具将帮助你创建Enterprise模式站点列表以部署到你的用户。
+如果你已经部署了 Microsoft Edge并且只想配置 IE 模式，则配置 Microsoft Edge 的[IE](https://aka.ms/configureiemode)模式指南将指导你自动配置 Enterprise 站点发现。 你还将从基于云的工具获取 IE 模式建议，帮助你创建一个Enterprise模式站点列表以部署到你的用户。
 
 ### <a name="microsoft-search-setup-guide"></a>Microsoft 搜索设置指南
 
 Microsoft 搜索帮助组织找到完成所处理操作所需的功能。 无论是搜索人员、文件、组织结构图、网站或常见问题解答，组织都可以Microsoft 搜索工作之一获取答案。
 
-该[Microsoft 搜索设置](https://aka.ms/MicrosoftSearchSetup)指南可帮助你配置Microsoft 搜索是向一组用户试用它，还是将其向组织中的每个人推出。你将分配搜索管理员和搜索编辑器，然后使用答案和其他选项为用户自定义搜索体验，例如将 必应 扩展添加到 Chrome 或将 必应 设置为默认搜索引擎。
+该[Microsoft 搜索设置](https://aka.ms/MicrosoftSearchSetup)指南可帮助你配置Microsoft 搜索是向一组用户试用还是将其推出给组织中的每个人。你将分配搜索管理员和搜索编辑器，然后使用解答和其他选项为用户自定义搜索体验，例如将 必应 扩展添加到 Chrome 或将 必应 设置为默认搜索引擎。
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager 共同管理设置指南
 
-将[Intune Configuration Manager](https://aka.ms/comanagementsetup)共同管理设置指南用于现有 Configuration Manager 客户端设备和贵组织希望与 Microsoft Intune 和 Configuration Manager 共同管理的基于 Internet 的新设备。 此共同管理部署指南允许你管理 Windows 10 设备，并将新功能添加到组织的设备，同时同时获得这两种解决方案的好处。
+将[Intune Configuration Manager](https://aka.ms/comanagementsetup)共同管理设置指南用于现有 Configuration Manager 客户端设备和组织希望与 Configuration Manager 和 Configuration Manager 共同管理的基于 internet 的新Microsoft Intune设置指南。 此共同管理部署指南允许你管理Windows 10设备，并将新功能添加到组织设备，同时获得这两种解决方案的好处。
 
 ## <a name="guides-for-authentication-and-access"></a>身份验证和访问指南
 
@@ -109,9 +109,9 @@ Microsoft 搜索帮助组织找到完成所处理操作所需的功能。 无论
 
 它还包括有关启用自助服务密码重置、条件访问和集成第三方登录的必需信息，包括可选高级标识保护和用户设置自动化。
 
-### <a name="sync-users-from-your-windows-server-active-directory"></a>同步用户Windows Server Active Directory
+### <a name="sync-users-from-your-windows-server-active-directory"></a>从用户网站同步Windows Server Active Directory
 
-The [Sync users from your Windows Server Active Directory](https://aka.ms/directorysyncsetup) guide walks you through on directory synchronization. 目录同步将本地标识和云标识汇集在一起，以便更轻松地访问和简化管理。 解锁新功能，如单一登录、自助服务选项、自动帐户设置、条件访问控制和合规性策略。 这些功能可确保用户能够随时随地访问所需的资源。
+Sync [users from your Windows Server Active Directory](https://aka.ms/directorysyncsetup) guide walks you through on directory synchronization. 目录同步将本地标识和云标识汇集在一起，以便更轻松地访问和简化管理。 解锁新功能，如单一登录、自助服务选项、自动帐户设置、条件访问控制和合规性策略。 这些功能可确保用户能够随时随地访问所需的资源。
 
 ### <a name="plan-your-passwordless-deployment"></a>规划无密码部署
 
@@ -143,7 +143,7 @@ The [Sync users from your Windows Server Active Directory](https://aka.ms/direct
 
 ### <a name="microsoft-defender-for-endpoint-setup-guide"></a>Microsoft Defender for Endpoint 设置指南
 
-[Microsoft Defender for Endpoint 设置指南](https://aka.ms/mdatpsetup)提供了可帮助企业网络预防、检测、调查和响应高级威胁的说明。 对组织的漏洞进行明智评估，并决定最适合的部署包和配置方法。
+[Microsoft Defender for Endpoint 设置指南](https://aka.ms/mdatpsetup)提供了可帮助企业网络预防、检测、调查和响应高级威胁的说明。 对组织漏洞进行明智评估，并决定最适合的部署包和配置方法。
 
 >[!NOTE]
 >Microsoft Defender 终结点需要 Microsoft 批量许可证。
@@ -152,11 +152,11 @@ The [Sync users from your Windows Server Active Directory](https://aka.ms/direct
 
 Microsoft Exchange Online保护 (EOP) 是一种基于云的电子邮件筛选服务，用于防范垃圾邮件和恶意软件，具有保护您的组织免受邮件策略违反攻击的功能。
 
-使用[Exchange Online Protection](https://aka.ms/EOPguidance)设置指南设置 EOP，方法为选择三种部署方案中的哪一种是内部部署邮箱、混合 (混合本地邮箱和云) 邮箱，还是适合组织的所有云邮箱。 &mdash; &mdash; 本指南提供了用于设置和查看用户许可、在 Microsoft 365 管理中心 中分配权限，以及配置安全与合规中心中的组织的反恶意软件和垃圾邮件策略 &的信息和资源。
+使用[Exchange Online Protection](https://aka.ms/EOPguidance)设置指南通过选择三种部署方案中的哪一种本地邮箱、混合 (混合本地邮箱和云) 邮箱或适合组织的所有云邮箱来设置 EOP。 &mdash; &mdash; 本指南提供了一些信息和资源，用于设置和查看用户的许可、在 Microsoft 365 管理中心 中分配权限，以及配置安全与合规中心中的组织的反恶意软件和&垃圾邮件策略。
 
 ### <a name="microsoft-defender-for-office-365-setup-guide"></a>Microsoft Defender for Office 365 设置指南
 
-[Microsoft Defender for Office 365](https://aka.ms/oatpsetup)设置指南可保护你的组织免受你的环境可能通过电子邮件、链接和第三方协作工具受到的恶意威胁。 本指南提供了资源和信息，可帮助你准备和确定 Defender for Office 365计划以满足组织的需求。
+[Microsoft Defender for Office 365](https://aka.ms/oatpsetup)设置指南可保护你的组织免受你的环境可能通过电子邮件、链接和第三方协作工具受到的恶意威胁。 本指南提供了资源和信息，可帮助你准备和确定 defender for Office 365计划以满足组织的需求。
 
 ### <a name="microsoft-defender-for-identity-setup-guide"></a>Microsoft Defender for Identity 设置指南
 
@@ -172,7 +172,7 @@ Microsoft Exchange Online保护 (EOP) 是一种基于云的电子邮件筛选服
 
 ### <a name="microsoft-cloud-app-security-setup-guide"></a>Microsoft Cloud App Security设置指南
 
-通过[Microsoft Cloud App Security设置](https://aka.ms/cloudappsecuritysetup)指南，可轻松按照部署和管理指南设置云发现解决方案。 借助云发现，你可以集成受支持的安全应用，然后使用流量日志动态发现和分析组织使用的云应用。 你还将设置通过 云应用安全 解决方案提供的功能，包括用于标识高风险用途的威胁检测策略、用于定义访问的信息保护策略，以及用于监视活动实时会话控件。 借助这些功能，你的环境可以增强可见性、控制数据移动和分析，以识别和防御所有 Microsoft 和第三方云服务中的网络威胁。
+该[Microsoft Cloud App Security设置](https://aka.ms/cloudappsecuritysetup)指南提供了设置云发现解决方案的易于遵循的部署和管理指南。 借助云发现，你可以集成受支持的安全应用，然后使用流量日志动态发现和分析组织使用的云应用。 你还将设置通过 云应用安全 解决方案提供的功能，包括用于标识高风险用途的威胁检测策略、用于定义访问的信息保护策略，以及用于监视活动实时会话控件。 借助这些功能，你的环境可以增强可见性、控制数据移动和分析，以识别和防御所有 Microsoft 和第三方云服务中的网络威胁。
 
 ## <a name="guides-for-collaboration"></a>协作指南
 
@@ -182,29 +182,29 @@ Microsoft Exchange Online保护 (EOP) 是一种基于云的电子邮件筛选服
 
 ### <a name="microsoft-365-apps-deployment-advisor"></a>Microsoft 365 应用版顾问
 
-Microsoft 365 应用版[顾问](https://aka.ms/OPPquickstartguide)可帮助你的用户设备运行最新版本的 Office 产品，如 Word、Excel、PowerPoint 和 OneNote。 你将获取有关各种部署方法的指导，这些方法包括使用管理工具的企业部署轻松自安装选项。 这些说明将帮助您评估环境、确定特定部署要求，以及实施必要的支持工具以确保成功安装。
+Microsoft 365 应用版[顾问](https://aka.ms/OPPquickstartguide)可帮助你使用户的设备运行最新版本的 Office 产品，如 Word、Excel、PowerPoint 和 OneNote。 你将获取有关各种部署方法的指导，这些方法包括使用管理工具的企业部署轻松自安装选项。 这些说明将帮助您评估环境、确定特定部署要求，以及实施必要的支持工具以确保成功安装。
 
 ### <a name="mobile-apps-setup-guide"></a>移动应用设置指南
 
-移动应用[设置指南](https://aka.ms/officeappguidance)提供了有关在 Office、iOS 和 Android Windows下载和安装应用的说明。 本指南提供了在手机和平板电脑设备上下载和安装 Microsoft 365 和 Office 365 应用的分步信息。
+移动应用[设置指南](https://aka.ms/officeappguidance)提供有关在 Office、iOS 和 Android 移动设备上下载和Windows应用的说明。 本指南提供了在手机和平板电脑设备上下载和安装 Microsoft 365 Office 365 应用的分步信息。
 
 ### <a name="microsoft-teams-setup-guide"></a>Microsoft Teams设置指南
 
-Microsoft Teams[设置](https://aka.ms/teamsguidance)指南为组织提供了设置团队工作区的指导，这些工作区通过消息传递、呼叫以及用于团队和私人通信的音频或视频会议来承载实时对话。 使用本指南中的工具配置来宾访问、设置哪些人可以创建团队以及从 .csv 文件添加团队成员，所有这些操作都无需打开 PowerShell 会话。 您还可以获得最佳做法，以确定组织的网络要求并确保成功部署Teams部署。
+本[Microsoft Teams设置](https://aka.ms/teamsguidance)指南为贵组织提供了设置团队工作区的指导，这些工作区通过消息传递、通话和音频或视频会议来承载实时对话，用于团队和私人通信。 使用本指南中的工具配置来宾访问、设置哪些人可以创建团队以及从 .csv 文件添加团队成员，所有这些操作都无需打开 PowerShell 会话。 您还可以获得最佳做法，以确定组织的网络要求并确保成功部署Teams部署。
 
 ### <a name="microsoft-teams-for-education-setup-guide"></a>Microsoft Teams 教育版设置指南
 
-该[Microsoft Teams 教育版设置](https://aka.ms/teamsedusetup)指南为学校提供了将协作教室、对话、会议、文件和应用汇集在一起的指南。 本指南还提供了为学校准备、计划和配置Teams指南。 部署完成后，使用内置工具配置哪些人可以创建团队，并可以选择在向成员填充.csv团队。
+[《Microsoft Teams 教育版设置](https://aka.ms/teamsedusetup)指南》为学校提供了将协作课堂、对话、会议、文件和应用汇集在一起的指南。 本指南还提供了为学校准备、Teams配置策略的说明。 部署完成后，使用内置工具配置哪些人可以创建团队，并可以选择在向成员填充.csv团队。
 
 ### <a name="sharepoint-setup-guide"></a>SharePoint设置指南
 
-SharePoint[设置](https://aka.ms/spoguidance)指南可帮助你设置 SharePoint 文档存储和内容管理、创建网站、配置外部共享、迁移数据和配置高级设置，以及推动组织内部的用户参与和通信。 您将按照配置内容共享权限策略的步骤操作，选择迁移同步工具，并为您的 SharePoint 安全设置。
+SharePoint[设置](https://aka.ms/spoguidance)指南可帮助你设置 SharePoint 文档存储和内容管理、创建网站、配置外部共享、迁移数据和配置高级设置，以及推动组织内部的用户参与和通信。 您将按照配置内容共享权限策略的步骤操作，选择迁移同步工具，并为您的迁移环境SharePoint安全设置。
 
 ### <a name="onedrive-setup-guide"></a>OneDrive设置指南
 
-使用[OneDrive设置](https://aka.ms/ODfBquickstartguide)指南开始使用OneDrive文件存储、共享、协作和同步功能。 OneDrive提供了一个中心位置，用户可在这里同步其 Microsoft 365 应用版 文件、配置外部共享、迁移用户数据以及配置高级安全和设备访问设置。 可以使用OneDrive订阅或独立部署计划部署 OneDrive 设置OneDrive指南。
+使用[OneDrive设置](https://aka.ms/ODfBquickstartguide)指南开始OneDrive文件存储、共享、协作和同步功能。 OneDrive提供了一个中心位置，用户可在这里同步其 Microsoft 365 应用版 文件、配置外部共享、迁移用户数据以及配置高级安全和设备访问设置。 可以使用 OneDrive 订阅或独立 OneDrive 部署 OneDrive 指南。
 
-### <a name="yammer-deployment-advisor"></a>Yammer顾问
+### <a name="yammer-deployment-advisor"></a>Yammer部署顾问
 
 连接组织与员工互动Yammer。 部署[Yammer顾问](https://aka.ms/yammerdeploymentguide)通过添加Yammer、定义管理员和合并网络来准备Yammer网络。 你可获取有关部署Yammer，然后自定义外观、配置安全性和合规性以及优化设置的指导。
 
@@ -212,11 +212,11 @@ SharePoint[设置](https://aka.ms/spoguidance)指南可帮助你设置 SharePoin
 
 ### <a name="in-place-upgrade-with-configuration-manager"></a>使用 Configuration Manager 进行就地升级
 
-在将 Windows 7[和](https://aka.ms/win10upgradedemo)Windows 8.1 设备升级到最新版本的 Windows 10 时，请使用配置管理器的就地升级Windows 10。 您将使用提供的脚本检查先决条件并自动配置就地升级。
+在将 Windows 7[和](https://aka.ms/win10upgradedemo)Windows 8.1 设备升级到最新版本的 Windows 10 时，请使用配置管理器的就地升级指南。 您将使用提供的脚本检查先决条件并自动配置就地升级。
 
 ### <a name="deploy-office-to-your-users"></a>将Office部署到用户
 
-从Office部署应用程序，并能够使用 Office 部署工具自定义安装。 ["Office用户部署](https://aka.ms/proplusodt)策略"指南可帮助你使用高级设置Office自定义配置，或者可以使用预先构建的建议配置。 无论你的用户是执行自安装还是单独还是批量向用户部署，此高级指南都为您提供了分步说明，以便为用户提供专为您的组织定制的 Office 安装。
+从Office部署应用程序，并能够使用 Office 部署工具自定义安装。 ["Office用户](https://aka.ms/proplusodt)部署策略"指南可帮助你使用高级设置Office自定义配置，或者可以使用预建的建议配置。 无论你的用户是进行自安装还是单独还是批量部署到用户，此高级指南都为您提供了分步说明，为用户提供了专为您的组织定制的 Office 安装。
 
 ### <a name="deploy-office-to-remote-users"></a>将Office部署到远程用户
 
@@ -226,8 +226,8 @@ SharePoint[设置](https://aka.ms/spoguidance)指南可帮助你设置 SharePoin
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>使用 Configuration Manager Microsoft 365 应用版和更新策略
 
-对于使用 Configuration Manager 的组织，可以使用使用[Configuration Manager](https://aka.ms/oppinstall)顾问部署和更新 Microsoft 365 应用版 来生成一个脚本，该脚本将使用 FastTrack 工程师建议的最佳方案自动配置 Microsoft 365 应用版 部署。 使用本指南构建部署组、自定义 Office 应用和功能、配置动态或精简安装，然后运行脚本以创建面向部署所需的应用程序、自动部署规则和设备集合。
+对于使用 Configuration Manager 的组织，可以使用与[Configuration Manager](https://aka.ms/oppinstall)顾问一起部署和更新 Microsoft 365 应用版 来生成一个脚本，该脚本将使用 FastTrack 工程师建议的最佳方案自动配置 Microsoft 365 应用版 部署。 使用本指南构建部署组、自定义 Office 应用和功能、配置动态或精简安装，然后运行脚本以创建面向部署所需的应用程序、自动部署规则和设备集合。
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager 共同管理设置指南
 
-使用[Intune Configuration Manager](https://aka.ms/comanagementsetup)共同管理设置指南设置现有 Configuration Manager 客户端设备和组织希望与 Microsoft Intune 和 Configuration Manager 共同管理的基于 Internet 的新设备。 通过共同管理，Windows 10设备，并将新功能添加到组织设备，同时获得这两种解决方案的好处。
+使用[Intune Configuration Manager](https://aka.ms/comanagementsetup)共同管理设置指南设置现有 Configuration Manager 客户端设备和贵组织希望与 Microsoft Intune 和 Configuration Manager 共同管理的基于 Internet 的新设备。 通过共同管理，Windows 10设备，并将新功能添加到组织设备，同时获得这两种解决方案的好处。

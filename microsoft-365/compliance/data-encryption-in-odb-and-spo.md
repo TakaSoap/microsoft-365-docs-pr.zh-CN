@@ -9,7 +9,7 @@ ms.date: 9/20/2021
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MET150
@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: 了解 OneDrive for Business 和 SharePoint Online 中数据安全加密的基本元素。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91bb261c25a1c4bf993deb0d12d1d1b8e9f5f874
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 25bebc8fd5ab9b820667f5220785b021230ca6e1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460476"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170759"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business 和 SharePoint Online 中的数据加密
 
@@ -50,7 +50,7 @@ Microsoft 365高度安全的环境，提供多层的广泛保护：物理数据�
 
 静态加密包括两个组件：BitLocker 磁盘级别加密和客户内容的每个文件加密。
   
-已为 OneDrive for Business 和 SharePoint Online 跨服务部署 BitLocker。 此外，每个文件加密还OneDrive for Business和 SharePoint Online Microsoft 365多租户和基于多租户技术构建的新专用环境。
+已为 OneDrive for Business 和 SharePoint Online 跨服务部署 BitLocker。 此外，每个文件加密还OneDrive for Business SharePoint Online Microsoft 365多租户技术构建的新专用环境。
   
 虽然 BitLocker 加密磁盘上的所有数据，每个文件加密还是会通过包含唯一加密密钥来进一步加密每个文件。 此外，对每个文件的每次更新都使用其自己的加密密钥进行加密。 加密内容的密钥存储在与内容物理分离的位置。 此加密的每一个步骤都使用带有 256 位密钥的高级加密标准 (AES)，并且符合美国联邦信息处理标准 (FIPS) 140-2。 加密的内容分布在整个数据中心的多个容器中，每个容器都有唯一的凭据。 这些凭据存储在与内容和内容密钥存储位置不同的单独物理位置中。
   

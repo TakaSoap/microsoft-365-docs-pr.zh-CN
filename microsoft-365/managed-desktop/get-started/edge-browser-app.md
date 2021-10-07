@@ -8,16 +8,16 @@ ms.author: jaimeo
 manager: laurawi
 audience: ITpro
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2bf1fab504ae77a1e66235f49333c3b123e38904
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 40ee9f21f94d480ec0cd76a6d145b6d242921614
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196694"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170039"
 ---
-# <a name="new-microsoft-edge-app"></a>新建Microsoft Edge应用
+# <a name="new-microsoft-edge-app"></a>新Microsoft Edge应用
 
 浏览器[Microsoft Edge浏览器](https://www.microsoft.com/edge)提供了世界一流的性能，在浏览时具有更多的隐私性、更高的工作效率和更多价值。 Microsoft 托管桌面提供环境中新边缘浏览器部署的公共预览版。
 
@@ -25,7 +25,7 @@ ms.locfileid: "59196694"
 
 若要将 Microsoft 托管桌面 设备迁移到新的 Microsoft Edge 浏览器，请通过 Microsoft 托管桌面 门户提交 IT 支持票证。 当你提交票证时，我们会将 Edge Stable 渠道部署到测试组，然后每 24 小时在每个后续部署组中部署它。 若要暂停部署，请提出另一个请求操作保留的票证。
 
-还可 [根据](/deployedge/microsoft-edge-channels#beta-channel) 请求在组织中进行代表性验证，使用 Beta 渠道。 Microsoft 托管桌面将应用部署到测试和第一组，以便所有这些用户除了具有稳定渠道之外，还具有 Beta 渠道。 对于需要访问 Beta 渠道的任何其他用户，将其添加到"新式工作区 **- Edge Beta** 用户"组，并让他们从 公司门户
+还可 [根据](/deployedge/microsoft-edge-channels#beta-channel) 请求在组织中进行代表性验证，使用 Beta 渠道。 Microsoft 托管桌面测试组和第一组部署应用程序，以便所有这些用户除了具有稳定渠道之外，还具有 Beta 渠道。 对于需要访问 Beta 渠道的任何其他用户，将其添加到"新式工作区 **- Edge Beta** 用户"组，并让他们从 公司门户
 
 ## <a name="updates-to-microsoft-edge"></a>更新Microsoft Edge
 
@@ -107,7 +107,7 @@ Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chr
 默认情况下，密码管理器处于禁用状态。 如果你希望启用此功能，请提出支持请求，我们的服务工程师可以在你的环境中启用该设置。 
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Internet Explorer模式Microsoft Edge
-Microsoft Edge 上的 IE 模式使你能够轻松地在单一浏览器中使用组织所需的所有网站。 它使用与 Chromium 呈现引擎兼容的网站的集成 Chromium 引擎，并使用 Internet Explorer 11 (IE11) 中的 Trident MSHTML 引擎来访问不依赖于 IE 功能或依赖 IE 功能的网站。 [了解详细信息](/DeployEdge/edge-ie-mode) 
+Microsoft Edge 上的 IE 模式使你能够轻松地在单一浏览器中使用组织所需的所有网站。 它使用与 Chromium 呈现引擎兼容的网站的集成 Chromium 引擎，并且对不依赖 IE 功能或依赖 IE 功能的网站使用 Internet Explorer 11 (IE11) 中的 Trident MSHTML 引擎。 [了解详细信息](/DeployEdge/edge-ie-mode) 
 
 Microsoft 托管桌面为Internet Explorer启用设备模式 
 
@@ -137,16 +137,16 @@ Microsoft 托管桌面基本身份验证或摘要式身份验证方案。
 
 **默认值：** 自动从默认浏览器导入所有受支持的数据类型和设置 
 
-应用此策略后，首次运行体验将跳过导入部分，从而最大限度地减少用户交互。 来自早期版本的 Microsoft Edge的浏览器数据将始终在首次运行时以静默方式迁移，无论此设置如何。 
+应用此策略后，首次运行体验将跳过导入部分，从而最大限度地减少用户交互。 来自旧版浏览器的浏览器数据Microsoft Edge在首次运行时始终以静默方式迁移，无论此设置如何。 
 
 
 ## <a name="settings-you-manage"></a>设置管理
 
-可以使用管理模板配置文件部署Microsoft Edge之前未介绍的任何Microsoft Intune。 有关详细信息，请参阅 Configure [Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune)。 如果你想要评估当前未包含在 Intune Microsoft Edge 管理模板中的策略，可以在 Intune 中为 Windows 10 设备使用自定义设置。
+您可以使用管理Microsoft Edge模板配置文件部署之前未介绍的任何Microsoft Intune。 有关详细信息，请参阅 Configure [Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune)。 如果你想要评估当前未包含在 Intune 中的 Microsoft Edge 管理模板中的策略，可以在 Intune 中为 Windows 10 设备使用自定义设置。
 
 ### <a name="enabling-specific-chrome-extensions"></a>启用特定 Chrome 扩展
 
-管理模板提供了一个设置，用于部署特定 Chrome Microsoft Intune。 可以在计算机配置> Microsoft Edge >**扩展>允许安装特定扩展）中查找。**
+管理模板提供了一个设置，用于部署特定 Chrome 扩展Microsoft Intune。 可以在计算机配置> Microsoft Edge >扩展>允许安装特定 **扩展）中查找它**。
 
 ### <a name="install-extensions-silently"></a>以静默方式安装扩展
 

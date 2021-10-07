@@ -7,7 +7,7 @@ ms.date: 12/01/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,24 +18,24 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (Microsoft 云) Office 365服务的其他设备信息。
-ms.openlocfilehash: b38c279bbbb763c8f0859d6d45cd838c8652ec5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 16c2e1f33e66f9b7d710a867c5c4467053e03c67
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171321"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166822"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的其他设备信息
 
 连接到德国 Microsoft 云的已加入和注册的 Azure AD 设备必须在第 9 阶段之后和阶段 10 之前进行迁移。 设备的迁移取决于设备类型、操作系统和 Azure AD 关系。
 
 ## <a name="azure-ad-joined-windows-10-devices"></a>加入 Azure AD Windows 10设备
-如果 Windows 10设备已加入 Azure AD，则必须与 Azure AD 断开连接，并且必须再次连接。
+如果Windows 10已加入 Azure AD，则它必须与 Azure AD 断开连接，并且必须再次连接。
 
-[![Azure AD 设备Re-Join Flow。 ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD 设备Re-Join Flow。 ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
-如果用户是设备管理员，Windows 10 Azure AD 注销设备，然后通过三个步骤重新加入该设备。
+如果用户是设备管理员，Windows 10 Azure AD 取消注册设备，然后通过三个步骤重新加入该设备。
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-joined"></a>步骤 1：确定设备是否加入 Azure ID
 
@@ -65,7 +65,7 @@ ms.locfileid: "59171321"
 
 *设置 >帐户>其他>凭据未知> Microsoft 帐户添加用户*
 
-有关详细信息，请参阅[关于管理员角色](/microsoft-365/admin/add-users/about-admin-roles?)。
+有关详细信息，请参阅 [关于管理员角色](/microsoft-365/admin/add-users/about-admin-roles?)。
 
 对于重新加入，此步骤中可以使用组织的任何工作帐户的凭据。
 
@@ -76,7 +76,7 @@ ms.locfileid: "59171321"
 
 如果Windows 10已注册 Azure AD，需要从 Azure AD 断开连接，然后重新连接。
 
-[![Azure AD 设备Re-Registration Flow。 ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD 设备Re-Registration Flow。 ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-registered"></a>步骤 1：确定设备是否注册了 Azure ID
 
@@ -118,11 +118,11 @@ ms.locfileid: "59171321"
 3. 通过选择"注销"取消 **注册设备**。
 4. 对于 **设备注册**，请通过键入你的电子邮件地址重新注册设备，**然后选择注册。**
 
-若要注销 Android 设备，然后重新注册 Android 设置页面：
+若要注销 Android 设备并重新注册 Android 设置页面：
 
 1. 打开 **设备设置****转到帐户**。
 2. 选择要重新注册的工作帐户，然后选择"删除 **帐户"。**
-3. 删除帐户后，从"帐户"**页面** 选择"添加帐户>**工作帐户"。**
+3. 删除帐户后，从"帐户"**页面选择"** 添加帐户>**工作帐户"。**
 4. 对于 **Workplace Join，** 键入你的电子邮件地址，然后选择 **加入** 以完成设备注册。
 
 若要从 Android 上注销和重新注册设备，公司门户：
@@ -132,7 +132,7 @@ ms.locfileid: "59171321"
 3. From theellipses (three dots) menu， select **Remove Device**， and complete the removal by confirming in the dialog.
 4. 你现在应该已注销公司门户应用。 选择 **"登录** "以重新注册设备。
 
-有关此工作负载的迁移阶段需要执行的任何操作或对管理或使用情况的影响，请参阅从德国 Microsoft 云迁移的其他[Azure AD](ms-cloud-germany-transition-azure-ad.md)信息中的 Azure Active Directory (Azure AD) 。
+有关此工作负载的迁移阶段需要执行的任何操作或对管理或使用情况的影响，请参阅从德国 Microsoft 云迁移的其他[Azure AD](ms-cloud-germany-transition-azure-ad.md)信息中有关 Azure Active Directory (Azure AD) 的信息。
 
 ## <a name="ios"></a>iOS
 
@@ -140,7 +140,7 @@ ms.locfileid: "59171321"
 
 ### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>步骤 1：如果存在，请从应用中删除Microsoft Authenticator帐户
 
-1. 点击"管理"应用中Microsoft Authenticator帐户。
+1. 点击"登录"应用中Microsoft Authenticator帐户。
 2. 点击 **设置** 右上角的"页面"图标。 如果未看到"设置"图标，则可能不会使用最新版本的 Microsoft Authenticator。
 3. 点击" **删除帐户"** 按钮。
 4. 点击 **此设备上的所有应用**。
@@ -186,7 +186,7 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 入门：
 
-- [从德国 Microsoft 云Office 365新的德国数据中心区域部署服务](ms-cloud-germany-transition.md)
+- [从德国 Microsoft 云迁移到Office 365新的德国数据中心区域部署服务](ms-cloud-germany-transition.md)
 - [德国 Microsoft 云迁移助手](https://aka.ms/germanymigrateassist)
 - [如何选择加入迁移](ms-cloud-germany-migration-opt-in.md)
 - [迁移期间客户体验](ms-cloud-germany-transition-experience.md)

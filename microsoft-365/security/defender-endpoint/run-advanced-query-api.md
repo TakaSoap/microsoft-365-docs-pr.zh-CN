@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f85c4cd8cf5d657e4043aae80da8b3dae989a29d
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 3ad015c459cdaf4214fb88cab27b9d4d61342268
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356618"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166262"
 ---
 # <a name="advanced-hunting-api"></a>高级搜寻 API
 
@@ -49,9 +49,9 @@ ms.locfileid: "59356618"
 
 4. 单个请求的最大执行时间为 10 分钟。
 
-5. 429 响应表示达到请求数或 CPU 的配额限制。 读取响应正文，了解已达到的限制。
+5. 429 响应表示达到配额限制（按请求数或 CPU）。 读取响应正文，了解已达到的限制。
 
-6. 单个请求的最大查询结果大小不能超过 124 MB。 如果超出此限制，则显示"查询执行已超出允许的结果大小"消息的 HTTP 400 错误请求。 将显示"通过限制结果量并重试"来优化查询。
+6. 单个请求的最大查询结果大小不能超过 124 MB。 如果超出此限制，则显示消息"查询执行已超出允许的结果大小的 HTTP 400 错误请求"。 将显示"通过限制结果量并重试"来优化查询。
 
 ## <a name="permissions"></a>权限
 
@@ -59,14 +59,14 @@ ms.locfileid: "59356618"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|AdvancedQuery.Read.All|"运行高级查询"
+Application|AdvancedQuery.Read.All|"运行高级查询"
 委派（工作或学校帐户）|AdvancedQuery.Read|"运行高级查询"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
 > - 用户需要具有"查看数据"AD 角色
-> - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 用户需要具有对设备的访问权限，根据设备组设置 (创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -87,7 +87,7 @@ Content-Type|application/json
 
 参数|类型|说明
 :---|:---|:---
-查询|文本|要运行的查询。 **必需**。
+查询|Text|要运行的查询。 **必需**。
 
 ## <a name="response"></a>响应
 

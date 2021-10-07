@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何添加其他管理员。
-ms.openlocfilehash: 1e727f60d209f8d80edee38a21ce3992dd52d62c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 757a16da2b4bf73fbf905bb46ed6bc18f08b6d9f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200765"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169114"
 ---
 # <a name="add-an-admin"></a>添加管理员
 
@@ -40,7 +40,7 @@ ms.locfileid: "59200765"
 ### <a name="add-an-existing-employee-as-an-admin"></a>将现有员工添加为管理员
 
 1. 当你注册 Microsoft 365 Business 时，将自动成为全局管理员。为了帮助管理业务，还可以让其他人成为管理员。 
-1. 在"Microsoft 365 管理中心中，选择"**用户**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户"。**</a>
+1. 在"Microsoft 365 管理中心"中，选择"**用户**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户"。**</a>
 1. 选择要成为管理员的用户，然后选择"管理 **角色"。**
 1. 在 **"管理角色** "窗格中，清除用户的当前角色复选框，然后选择要分配给该用户的新角色。
 1. 选择 **"保存更改**"，然后关闭管理员 **角色更新确认** 窗格。
@@ -49,7 +49,7 @@ ms.locfileid: "59200765"
 
 如果有外部 IT 人员可帮助管理你的业务，你可以将其添加为全局管理员。
 
-1. 在"Microsoft 365 管理中心"中，**选择"用户**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户**</a>"，然后选择"**添加用户"。**
+1. 在"Microsoft 365 管理中心"中，选择 **"用户**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户**</a>"，然后选择"**添加用户"。**
 1. 在 **"设置基础知识** "页上，输入用户名、显示名称和用户名。
 1. 选中 **"完成时通过电子邮件发送电子邮件** 中的密码"复选框，将用户的密码通过电子邮件发送给他们。 键入他们的电子邮件地址。 用分号分隔多个地址。 选择“**下一步**”。
 1. 在 **"选择位置** "下拉列表中，选择用户的位置。

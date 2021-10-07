@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,21 +18,21 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此测试实验室指南创建适用于企业的 Microsoft 365模拟企业测试环境。
-ms.openlocfilehash: e3576c5d7e1a00069dd5dd46d1b1e6063da217bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d335ed074adc6abe8bc1dabf58392d5b9051ccc6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170593"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170171"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模拟企业基础配置
 
-*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版测试环境。*
+*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
 
 本文介绍如何为企业版创建简化Microsoft 365环境，其中包括：
 
 - Microsoft 365 E5 试用版或付费版订阅。
-- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络上的三个虚拟机 (DC1、APP1 和 CLIENT1) 。
+- 连接到 Internet 的简化的组织 Intranet，由 Azure 虚拟网络上的三个虚拟机 (DC1、APP1 和 CLIENT1) 。
  
 ![模拟企业基础配置。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
@@ -40,7 +40,7 @@ ms.locfileid: "59170593"
 - [第 1 阶段：创建模拟 Intranet](#phase-1-create-a-simulated-intranet)
 - [第 2 阶段：创建 Microsoft 365 E5 订阅](#phase-2-create-your-microsoft-365-e5-subscription)
 
-您可以使用生成的环境通过额外的测试实验室指南Microsoft 365[测试](https://www.microsoft.com/microsoft-365/enterprise)企业版的功能。 [](m365-enterprise-test-lab-guides.md)
+您可以使用生成的环境通过额外的测试实验室指南或Microsoft 365[测试](https://www.microsoft.com/microsoft-365/enterprise)企业版应用程序的功能。 [](m365-enterprise-test-lab-guides.md)
 
 ![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -98,7 +98,7 @@ Connect-AzAccount
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-设置 Azure 订阅。 使用正确的名称替换引号内的所有内容，包括 ("<"和">") 尖括号。
+设置 Azure 订阅。 用正确的名称替换引号内的所有内容，包括 ("<"和">") 尖括号。
   
 ```powershell
 $subscr="<subscription name>"
@@ -339,7 +339,7 @@ Restart-Computer
     
 2. 在 **CLIENT1 的属性中，****选择**"IE 增强的安全 **配置"旁边的"打开"。**
     
-3. 在 **Internet Explorer增强安全配置**"中 **，为"****管理员** 和用户"选择"关闭"，然后选择"确定 **"。**
+3. 在 **Internet Explorer增强的安全配置**"中 **，为"****管理员** 和用户"选择"关闭"，然后选择"确定 **"。**
     
 4. 从"开始"屏幕中 **，Internet Explorer"，** 然后选择"确定 **"。**
     
@@ -381,7 +381,7 @@ Restart-Computer
 
 如果您只需要一Office 365测试环境，则无需阅读本文的其余部分。
 
-有关适用于 Microsoft 365 和 Office 365 的其他测试实验室[Microsoft 365，请参阅企业测试实验室指南](m365-enterprise-test-lab-guides.md)。
+有关适用于 Microsoft 365 和 Office 365 的其他测试实验室Microsoft 365，请参阅 Microsoft 365[企业测试实验室指南](m365-enterprise-test-lab-guides.md)。
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>添加 Microsoft 365 E5 试用版订阅
 

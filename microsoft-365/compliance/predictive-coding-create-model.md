@@ -9,21 +9,21 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: 了解如何在 Advanced eDiscovery 中创建预测编码Advanced eDiscovery。 这是使用 Advanced eDiscovery 中的机器学习功能来帮助你确定审阅集内的相关和非相关内容的第一步。
-ms.openlocfilehash: ed5092f2730ade5e349cec77e5c264e67d957927
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解如何在 Advanced eDiscovery 中创建预测编码Advanced eDiscovery。 这是使用 Advanced eDiscovery 中的机器学习功能来帮助你在审阅集内标识相关和非相关内容的第一步。
+ms.openlocfilehash: 4366c5779aaca6973f5a2c0cc526086d0742d069
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170142"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170579"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>创建预测编码模型 (预览) 
 
-在 Advanced eDiscovery 中使用预测编码的机器学习功能的第一步是创建预测编码模型。 创建模型后，可以训练它确定审阅集内的相关和非相关内容。
+在模型中使用预测编码的机器学习功能的第一Advanced eDiscovery是创建预测编码模型。 创建模型后，可以训练它确定审阅集内的相关和非相关内容。
 
 若要查看预测编码工作流，请参阅[了解预测编码Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
 
@@ -47,7 +47,7 @@ ms.locfileid: "59170142"
 
 4. 在飞出页面上，键入模型名称和可选说明。
 
-5. （可选）您可以通过单击 (页面上的"高级选项"来配置高级设置) 置信水平和误差边距相关。 这些设置会影响控件集中包含的项目数。 该 *控件集* 在培训过程中用于评估模型分配给具有你在培训轮中执行的标签的项目预测分数。 如果您的组织具有有关文档审阅可信度和误差线的准则，请在适当框中指定这些准则。 否则，请使用默认设置。
+5. （可选）您可以通过单击 (页面上的"高级选项"来配置高级设置) 与置信水平和误差边距相关。 这些设置会影响控件集中包含的项目数。 该 *控件集* 在培训过程中用于评估模型分配给具有你在培训轮中执行的标签的项目预测分数。 如果您的组织具有有关文档审阅可信度和误差线的准则，请在适当框中指定这些准则。 否则，请使用默认设置。
 
 6. 单击 **"保存** "创建模型。
 
@@ -63,4 +63,4 @@ ms.locfileid: "59170142"
 
 ## <a name="next-steps"></a>后续步骤
 
-为审阅集创建模型后，下一步是执行培训轮以"教"模型，以确定与调查相关的内容。 有关详细信息，请参阅 [训练预测编码模型](predictive-coding-train-model.md)。
+为审阅集创建模型后，下一步是执行培训轮以"教学"模型，以确定与调查相关的内容。 有关详细信息，请参阅 [训练预测编码模型](predictive-coding-train-model.md)。

@@ -10,19 +10,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
-description: 了解如何在批处理计算后使用Advanced eDiscovery测试、比较和验证总体处理质量。
-ms.openlocfilehash: 16f8004afb5a0731f684c0d35e55ebf2d06f91f0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+description: 了解如何在批处理计算后使用"测试"Advanced eDiscovery测试、比较和验证总体处理质量。
+ms.openlocfilehash: 0ea34ce101f6891670a0b646380c965a4391ea32
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569533"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167182"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery"></a>测试数据中的相关性Advanced eDiscovery
   
@@ -32,7 +32,7 @@ ms.locfileid: "58569533"
   
 ## <a name="testing-the-rest"></a>测试其余部分
 
-例如，"测试其余内容"测试用于验证剔除决策，以便根据最终结果仅查看高于特定相关性截止分数Advanced eDiscovery文件。 专家查看选定截止分数下的文件示例，以评估该集合中相关文件的数量。
+例如，"测试 Rest"测试用于验证剔除决策，以便根据最终结果仅查看特定相关性截止分数Advanced eDiscovery文件。 专家查看选定截止分数下的文件示例，以评估该集合中相关文件的数量。
   
 此测试提供"审阅集"和"测试 Rest"总体之间的统计信息和比较。 审阅集的结果由培训期间相关性计算的结果。 结果包括基于设置和输入参数的计算，例如：
   

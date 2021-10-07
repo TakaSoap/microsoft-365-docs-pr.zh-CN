@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
 description: 使用关键字和条件来缩小搜索范围时，使用Advanced eDiscovery搜索Microsoft 365。
-ms.openlocfilehash: 00a5ab1c009f0c006aba251c770c87c1f7569fc1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fdd7fc29e134cc3310848507ffbc20d41d1b0d2f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162069"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167458"
 ---
 # <a name="build-search-queries-for-collections-in-advanced-ediscovery"></a>为集合生成搜索查询Advanced eDiscovery
 
@@ -39,7 +39,7 @@ ms.locfileid: "59162069"
 
 ![使用关键字列表获取查询中每个关键字的统计信息。](../media/KeywordListSearch.png)
 
-为什么使用关键字列表？ 您可以获取显示关键字列表中每个关键字匹配的项数的统计信息。 这可以帮助您快速识别最有效且最 (最) 关键字。 您还可以使用关键字短语 (关键字列表中的一行) 括号。 有关搜索统计信息详细信息，请参阅搜索 [统计信息](search-statistics-in-advanced-ediscovery.md)。
+为什么使用关键字列表？ 您可以获取显示关键字列表中每个关键字匹配的项数的统计信息。 这可以帮助您快速识别最有效且最 (最) 关键字。 您还可以使用关键字短语 (关键字列表中的) 中用括号包围。 有关搜索统计信息详细信息，请参阅搜索 [统计信息](search-statistics-in-advanced-ediscovery.md)。
 
 ## <a name="conditions"></a>条件
 

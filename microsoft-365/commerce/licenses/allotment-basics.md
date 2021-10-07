@@ -9,7 +9,7 @@ ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: None
+ms.localizationpriority: ''
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -18,20 +18,20 @@ ms.custom:
 - commerce_licensing
 description: 了解新的分配功能。
 ms.date: 03/17/2021
-ms.openlocfilehash: eacb738da3f2b2a3a76333040c945de7f26dee86862b87fcf10210b33e4ae835
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4a908441dbdaa5ecafcd140233b75adca0c22e4a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893123"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167722"
 ---
 # <a name="allotment-basics"></a>分配基础知识
 
 通过许可证分配，你可以将许可证限制和许可证分配的委派管理仅委派给选择的产品和许可证限制。
 
-分配使用基于组的许可向用户分配许可证。 许可证限制可增加对分配给组中用户的许可证数的控制。 因此，即使你的组中用户数量增加，你也可以确保你符合你为分配设置的许可证限制。
+分配使用基于组的许可向用户分配许可证。 许可证限制可增加对分配给组中用户的许可证数的控制。 因此，即使组中用户的数量增加，也可以确保你符合你为分配设置的许可证限制。
 
-您还可以委派对分配的管理。 委派的分配所有者获取对管理中心的访问权限，但只能查看和管理他们拥有的所有分配中的许可证。 这将在组织中更精细地委派许可证管理。
+还可以委派对分配的管理。 委派的分配所有者获取对管理中心的访问权限，但只能查看和管理他们拥有的所有分配中的许可证。 这将在组织中更精细地委派许可证管理。
 
 ## <a name="prerequisites"></a>先决条件
 
