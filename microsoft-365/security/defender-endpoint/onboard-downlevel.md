@@ -8,18 +8,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 11771bc8a5eab4a514ef70db43946cead0b16214
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: dcfbef4e728a3b29a2d23f55d5bd96aeffd19b00
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124333"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206825"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>载入以前版本的 Windows
 
@@ -38,7 +38,7 @@ ms.locfileid: "60124333"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)。
 
-Defender for Endpoint 扩展支持以包括低级别操作系统，在受支持的版本上提供高级攻击检测和Windows功能。
+Defender for Endpoint 扩展了支持，以包括低级别操作系统，从而在受支持的版本上提供高级攻击检测和Windows功能。
 
 若要将低级别Windows客户端终结点载入到 Defender for Endpoint，你将需要：
 
@@ -53,13 +53,13 @@ Defender for Endpoint 扩展支持以包括低级别操作系统，在受支持�
 > [!IMPORTANT]
 > 只有当组织使用 SCEP System Center Endpoint Protection (时，才需要) 。
 
-Defender for Endpoint 与 System Center Endpoint Protection集成，通过禁止潜在恶意文件或可疑恶意软件，提供恶意软件检测的可见性，并阻止攻击在组织中传播。
+Defender for Endpoint 与 System Center Endpoint Protection 集成，通过禁止潜在恶意文件或可疑恶意软件，提供恶意软件检测的可见性，并阻止攻击在组织中传播。
 
 若要启用此集成，需要执行以下步骤：
 
 - 为客户端[安装 2017](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)年 1 月Endpoint Protection更新
 - 将 SCEP 客户端云保护服务成员身份配置为 **高级** 设置
-- 配置网络以允许连接到 Microsoft Defender 防病毒 云。 有关详细信息，请参阅允许[连接到云Microsoft Defender 防病毒云](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
+- 配置网络以允许连接到 Microsoft Defender 防病毒 云。 有关详细信息，请参阅允许[连接到 Microsoft Defender 防病毒 云](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>安装和配置 Microsoft Monitoring Agent (MMA) 以将传感器数据报告给 Microsoft Defender for Endpoint
 
@@ -78,14 +78,14 @@ Defender for Endpoint 与 System Center Endpoint Protection集成，通过禁止
 
     > [!NOTE]
     > 仅适用于 Windows 7 SP1 Enterprise Windows 7 SP1 Pro。
-    > 不要安装 .NET Framework 4.0.x，因为它将否定上述安装。
+    > 不要安装 4.0.x .NET Framework 4.0.x，因为它将否定上述安装。
 
 - 满足 Azure Log Analytics 代理的最低系统要求。 有关详细信息，请参阅使用 Log [Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)从环境中的计算机收集数据。
 
-1. 下载代理设置文件[：Windows 64](https://go.microsoft.com/fwlink/?LinkId=828603)位代理或 Windows [32 位代理](https://go.microsoft.com/fwlink/?LinkId=828604)。
+1. 下载代理安装文件[：Windows 64](https://go.microsoft.com/fwlink/?LinkId=828603)位代理Windows [32 位代理](https://go.microsoft.com/fwlink/?LinkId=828604)。
 
 2. 获取工作区 ID：
-   - 在 Defender for Endpoint 导航窗格中，选择"设置 >**终结点>">载入"**
+   - 在 Defender for Endpoint 导航窗格中，选择"设置 >终结点 **">">载入"**
    - 选择 **Windows 7 SP1 和 8.1** 作为操作系统
    - 复制工作区 ID 和工作区密钥
 

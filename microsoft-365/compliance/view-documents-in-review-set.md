@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 选择在视图视图中查看内容Advanced eDiscovery，如文本、批注、转换或本机视图。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1aab4f5e2f5674392fd5577afdb12865b9405380
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1fd0d6a5001a2d01b542a276aad142e6d52821c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196836"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205961"
 ---
 # <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>查看审阅集内的文档Advanced eDiscovery
 

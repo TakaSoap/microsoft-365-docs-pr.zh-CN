@@ -9,21 +9,21 @@ audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 4a0c6944387def430ef0091239b5111ec533dcd6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 68879d83e92ecbe33c3168b7a757d3fe9a1e3d13
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196428"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206357"
 ---
 # <a name="step-5-choose-your-test-options"></a>步骤 5：选择测试选项。 
 
-该选项卡适用于希望执行功能测试以指示应何时应用 Windows Update 修补程序以执行其功能测试脚本 ```Test Options``` 的用户。
+该选项卡适用于希望执行功能测试以指示应在何时应用 Windows Update 修补程序的用户执行其功能测试 ```Test Options``` 脚本。
 
 ![测试选项的图像。 开箱即用或功能测试。](Media/testoptions.png)
 
@@ -33,4 +33,4 @@ ms.locfileid: "59196428"
 
 可以在下一篇文章中通过下面的链接查看嵌套步骤的详细信息：
 > [!div class="nextstepaction"]
-> [后续步骤](review.md)
+> [下一步](review.md)

@@ -9,18 +9,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9eb7930c3c31aa65bd2091d6f68767551cd22026
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: c2d590445265d1189463312f969f7b8b57b5eed5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124489"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210885"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>在无法访问 Internet 的情况下载入设备以访问 Microsoft Defender for Endpoint
 
@@ -54,22 +54,22 @@ ms.locfileid: "60124489"
 
 - 设置 Azure Log Analytics (以前称为 OMS 网关) 充当代理或中心：
   - [Azure Log Analytics 代理](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - [安装和配置Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace key & ID
+  - [安装和配置Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace 密钥& ID
 
 - 同一 Azure Log Analytics 网络中的脱机设备
   - 将 MMA 配置为指向：
     - 作为代理的 Azure Log Analytics IP
-    - Defender for Endpoint 工作区密钥& ID
+    - Defender for Endpoint workspace key & ID
 
 ## <a name="azure-virtual-machines"></a>Azure 虚拟机
 
 - 配置和启用 [Azure Log Analytics 工作区](/azure/azure-monitor/platform/gateway)
   - 设置 Azure Log Analytics Gateway (以前称为 OMS Gateway) 充当代理或集线器：
     - [Azure Log Analytics 网关](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-    - [安装和配置Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace key & ID
+    - [安装和配置Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace 密钥& ID
     - 同一网络 OMS 网关中的脱机 Azure VM
       - 将 Azure Log Analytics IP 配置为代理
-      - Azure Log Analytics Workspace 密钥& ID
+      - Azure Log Analytics 工作区密钥& ID
     - Azure Defender
       - [安全策略 \> 日志分析工作区](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
       - [威胁 \> 检测允许终结点的 Defender 访问我的数据](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)

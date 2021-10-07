@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e2b6d88f7cd443c7fb093d791a7904baafeb9c1d
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 8e705c868dfc4bd5bba71d21d73fc112c6a54673
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010125"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210873"
 ---
-# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>规划支持端软件和硬件版本的危险和漏洞管理
+# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>规划支持终止的软件版本和具有危险和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

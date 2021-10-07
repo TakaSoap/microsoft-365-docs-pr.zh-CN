@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
@@ -17,16 +17,16 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登录页提供了安全与合规中心中的链接和Office 365。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6300d254e67cad466dc25a902fc70f43ec0b776a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 446452c457dcf0ed56fb4b5c453a57c44662fad0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170146"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206045"
 ---
 # <a name="plan-for-security-amp-compliance"></a>规划安全 &amp; 合规性
 
-管理安全性和合规性是一种合作关系。 你负责保护你的数据、标识和设备，而 Microsoft 会积极Microsoft 365服务。 你可以将 Microsoft 365 和 企业移动性 + 安全性 (EMS) 一起，以帮助你为组织实现适当级别的保护。
+管理安全性和合规性是一种合作关系。 你负责保护你的数据、标识和设备，而 Microsoft 会积极Microsoft 365服务。 可以将 Microsoft 365 和 企业移动性 + 安全性 (EMS) 一起，以帮助你为组织实现适当级别的保护。
   
 ## <a name="step-1-review-capabilities"></a>步骤 1：查看功能
 
@@ -42,7 +42,7 @@ ms.locfileid: "59170146"
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>步骤 3：规划标识和设备的访问保护
 
-保护对Microsoft 365和服务的访问对于防御网络攻击和防止数据丢失至关重要。
+保护对 Microsoft 365和服务的访问对于防御网络攻击和防止数据丢失至关重要。
   
 - [保护对 Office 365 数据和服务的访问](protect-access-to-data-and-services.md)
     
@@ -56,9 +56,9 @@ ms.locfileid: "59170146"
   
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>步骤 5：利用Microsoft 365 &amp; 安全与合规中心
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>步骤 5：Microsoft 365安全 &amp; 与合规中心
 
-安全与合规中心为你提供了用于管理安全范围（包括威胁Microsoft 365、数据管理以及搜索和调查）的控制措施 &amp; 的单一视图。 
+安全与合规中心为你提供了用于管理安全范围（包括威胁管理、数据管理以及搜索和调查）Microsoft 365控制的单一 &amp; 视图。 
   
 - [转到安全 &amp; 与合规中心](./microsoft-365-compliance-center.md)
     

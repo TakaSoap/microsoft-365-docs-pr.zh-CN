@@ -7,7 +7,7 @@ ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,18 +19,18 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: 说明如何使用 PowerShell 确定Microsoft 365的用户服务。
-ms.openlocfilehash: 2c450c0697dced43f974087f6c0453e4b761914b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c02d3ffe2fff330f46adfc6b6dd49e553f69ad86
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195686"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209521"
 ---
 # <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>使用 PowerShell Microsoft 365帐户许可证和服务详细信息
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-在 Microsoft 365 中，许可计划 (（也称为 SK 或 Microsoft 365 计划) ）中的许可证允许用户访问为这些计划定义的 Microsoft 365 服务。 但是，用户可能无法访问当前分配给他们的许可证中提供的所有服务。 可以使用 PowerShell for Microsoft 365查看用户帐户上的服务状态。 
+在 Microsoft 365 中，许可计划的许可证 (SKUs 或 Microsoft 365 计划) 允许用户访问为这些计划定义的 Microsoft 365 服务。 但是，用户可能无法访问当前分配给他们的许可证中提供的所有服务。 可以使用 PowerShell for Microsoft 365查看用户帐户上的服务状态。 
 
 有关许可计划、许可证和服务的信息，请参阅 [使用 PowerShell 查看许可证和服务](view-licenses-and-services-with-microsoft-365-powershell.md)。
 
@@ -86,7 +86,7 @@ Get-MsolAccountSku
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
   
-使用此命令列出分配给用户的许可证，以及这些许可证的列出顺序 (索引) 。
+使用此命令列出分配给用户的许可证，以及这些许可证在索引号 (的顺序) 。
 
 ```powershell
 Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses
@@ -106,7 +106,7 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses.ServiceStatus
 ```
 
-此示例显示用户 BelindaN@litwareinc.com 分配给其帐户的第一个许可证 (索引号为 0) 。
+此示例显示用户 BelindaN@litwareinc.com 从分配给其帐户的第一个许可证访问的服务 (索引号为 0) 。
   
 ```powershell
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus

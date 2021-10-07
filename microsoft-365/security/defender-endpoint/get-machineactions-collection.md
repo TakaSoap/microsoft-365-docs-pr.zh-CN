@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 68583eeb7daaf755f3e095ef80e0a221f54f0766
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a3e2c33deff18f4cd509fddbc113605ab411ddc1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195655"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209797"
 ---
 # <a name="list-machineactions-api"></a>列出 MachineActions API
 
@@ -61,8 +61,8 @@ OData 的 `$filter` 查询在以下项上受 `id` 支持 `status` ：、、、�
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Machine.Read.All|"读取所有计算机配置文件"
-应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+Application|Machine.Read.All|"读取所有计算机配置文件"
+Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.Read|"读取计算机信息"
 委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 
@@ -81,7 +81,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

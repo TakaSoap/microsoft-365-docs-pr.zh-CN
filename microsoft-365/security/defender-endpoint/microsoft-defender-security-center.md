@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 577c87aff1a5e5c95760ea169859da592d05727c
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 793fa5bb18fbf766b8174866d7741f8419af66cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400338"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206861"
 ---
 # <a name="microsoft-defender-security-center"></a>Microsoft Defender 安全中心
 
@@ -50,7 +50,7 @@ Microsoft Defender 安全中心是一个门户，你可以在这里访问 Micros
 |[了解门户](use.md)|了解安全操作、安全分数和威胁分析仪表板以及如何导航门户。|
 |调查和修正威胁|调查警报、设备和采取响应操作来修正威胁。|
 |API 和 SIEM 支持|使用受支持的 API 拉取和创建自定义警报，或自动化工作流。 使用受支持的 SIEM 工具从警报中拉取Microsoft Defender 安全中心。|
-|报告|创建和生成Power BI Microsoft Defender for Endpoint 数据生成报告。|
+|报表|使用 Microsoft Defender for Endpoint Power BI创建和生成报告。|
 |检查服务运行状况和传感器状态|验证服务是否正在运行，并检查设备的传感器状态。|
 |[配置Microsoft Defender 安全中心设置](preferences-setup.md)|配置常规设置、启用预览体验、通知并启用其他功能。|
 |[访问 Microsoft Defender for Endpoint 社区中心](community.md)|访问 Microsoft Defender for Endpoint Community 中心，了解、协作和共享产品体验。|

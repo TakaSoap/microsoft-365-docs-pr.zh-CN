@@ -1,7 +1,7 @@
 ---
 title: 创建和查看安全建议例外 - 危险和漏洞管理
-description: 在安全报告中创建和监视安全建议危险和漏洞管理。
-keywords: Microsoft Defender for Endpoint tvm remediation， Microsoft Defender for Endpoint tvm， 危险和漏洞管理， threat & 漏洞管理， threat & 漏洞管理 remediation， tvm remediation intune， tvm remediation sccm
+description: 创建并监视安全建议在危险和漏洞管理。
+keywords: Microsoft Defender for Endpoint tvm 修正， Microsoft Defender for Endpoint tvm， 危险和漏洞管理， 威胁 & 漏洞管理， 威胁 & 漏洞管理 修正， tvm 修正 intune， tvm 修正 sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aaa1c8cf1d54fe589adfd06939fc3f4c4398b18e
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 79bf9503b94b6d3c1f1a8bcd9203c381aad9e90f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009489"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206849"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>创建和查看安全建议例外 - 危险和漏洞管理
 
@@ -39,9 +39,9 @@ ms.locfileid: "60009489"
 
 当建议此时不相关时，作为修正请求的替代方法，你可以为建议创建例外。 如果你的组织具有设备组，你将能够将异常范围范围缩小到特定设备组。 可以针对所选设备组或过去和现在的所有设备组创建例外。
 
-为建议创建例外时，建议在例外持续时间结束之前不会处于活动状态。 建议状态将更改为"完全 **异常**"或"部分异常 (按设备组) 。
+为建议创建例外时，建议在例外持续时间结束之前不会处于活动状态。 建议状态将更改为"完全 **异常**"或"部分异常 (组设置) 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 只有具有"异常处理"权限的用户才能管理异常 (包括创建或取消) 。 [详细了解 RBAC 角色](user-roles.md)。
 
@@ -101,7 +101,7 @@ ms.locfileid: "60009489"
 - **第三** 方控制 - 第三方产品或软件已解决此建议 - 选择此理由类型将降低曝光分数并增加安全分数，因为风险已降低
 - **备用缓解** - 内部工具已解决此建议 - 选择此理由类型将降低曝光分数并增加安全分数，因为风险已降低
 - **接受风险** - 风险较低且/或实施建议成本过高
-- **计划的修正 (宽限期)** - 已计划但正在等待执行或授权
+- **计划的修正 (宽限期)** - 已计划，但正在等待执行或授权
 
 ## <a name="view-all-exceptions"></a>查看所有异常
 
@@ -125,13 +125,13 @@ ms.locfileid: "60009489"
 
 ![显示如何选择特定设备组。](images/tvm-exception-device-group-hover.png)
 
-## <a name="view-impact-after-exceptions-are-applied&quot;></a>应用例外后查看影响
+## <a name="view-impact-after-exceptions-are-applied"></a>应用例外后查看影响
 
-在&quot;安全推荐页上，选择&quot;自定义列&quot;，并选中&quot;在异常发生后公开 (&quot;和") 后影响 **("** 复选框) 。
+在"安全推荐页上，选择"自定义列"，并选中"在异常发生后公开 ("和"在) 后影响 ("复选框 **) 。**
 
 ![显示自定义列选项。](images/tvm-after-exceptions.png)
 
-公开的设备 (异常后) 列显示应用异常后仍易受漏洞攻击的其余设备。 影响曝光的异常理由包括"第三方控制"和"备用缓解"。 其他理由不会减少设备的曝光，并且它们仍被视为公开。
+在应用 (后) 公开的设备会显示在应用异常后仍易受漏洞攻击的其余设备。 影响曝光的异常理由包括"第三方控制"和"备用缓解"。 其他理由不会减少设备的曝光，并且它们仍被视为公开。
 
 异常 (后的影响) 在应用异常后对曝光分数或安全分数的剩余影响。 影响分数的异常理由包括"第三方控制"和"备用缓解"。 其他理由不会减少设备的曝光，因此曝光分数和安全分数不会更改。
 
@@ -139,7 +139,7 @@ ms.locfileid: "60009489"
 
 ## <a name="related-topics"></a>相关主题
 
-- [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威胁漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [修正漏洞](tvm-remediation.md)
 - [安全性建议](tvm-security-recommendation.md)
 - [风险评分](tvm-exposure-score.md)

@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -15,14 +15,14 @@ ms.collection:
 description: Microsoft 365管理员可以了解如何从勒索软件攻击中恢复。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9659a68e69f732203a20853320b2e35cd268a7c8
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: d2bb99111142be683c6504010576253784d3cd68
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099741"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210397"
 ---
-# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>从 Microsoft 365 中的勒索软件Microsoft 365
+# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>从 Microsoft 365 中的勒索软件攻击中Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -63,7 +63,7 @@ ms.locfileid: "60099741"
 
 - [为用户启用或禁用 POP3 或 IMAP4 访问](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-暂停OneDrive 同步有助于防止云数据被潜在感染的设备更新。 有关详细信息，请参阅如何暂停[和恢复OneDrive。](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
+暂停OneDrive 同步有助于防止云数据被潜在感染的设备更新。 有关详细信息，请参阅如何在 OneDrive 中[暂停和恢复OneDrive。](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>步骤 3：从受影响的设备中删除恶意软件
 
@@ -71,25 +71,25 @@ ms.locfileid: "60099741"
 
 不要忘记扫描正在同步数据的设备或映射的网络驱动器的目标。
 
-你可以将[Windows Defender](https://www.microsoft.com/windows/comprehensive-security)或 (用于) Microsoft Security Essentials。 [](https://www.microsoft.com/download/details.aspx?id=5201)
+可以将[Windows Defender](https://www.microsoft.com/windows/comprehensive-security)或 (用于) Microsoft Security Essentials。 [](https://www.microsoft.com/download/details.aspx?id=5201)
 
 此外，还可以帮助你删除勒索软件或恶意软件的替代方法是[MSRT (恶意软件) 。 ](https://www.microsoft.com/download/details.aspx?id=9905)
 
-如果这些选项不起作用，可以尝试Windows Defender[脱机](https://support.microsoft.com/help/17466)"或["解决检测和删除恶意软件的问题"。](https://support.microsoft.com/help/4466982)
+如果这些选项不起作用，可以尝试Windows Defender[脱机](https://support.microsoft.com/help/17466)"或[解决检测和删除恶意软件的问题](https://support.microsoft.com/help/4466982)。
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>步骤 4：在已清理的计算机或设备上恢复文件
 
-完成上一步以将勒索软件有效负载从你的环境 (这将阻止勒索软件加密或删除文件) 后，可以使用 Windows 11、Windows 10、Windows 8.1 中的文件历史记录，并使用[](https://support.microsoft.com/help/17128)Windows 7 中的系统保护尝试恢复本地文件和文件夹。
+完成上一步以从你的环境 (中删除勒索软件有效负载（这将阻止勒索软件加密或删除文件) ）后，可以使用 Windows 11、Windows 10、Windows 8.1 中的文件历史记录[](https://support.microsoft.com/help/17128)，并使用 Windows 7 中的系统保护尝试恢复本地文件和文件夹。
 
 **注意**:
 
 - 某些勒索软件还会加密或删除备份版本，因此你无法使用文件历史记录或系统保护来还原文件。 如果发生这种情况，你需要在不受勒索软件或软件影响的外部驱动器或OneDrive备份，如下一节中所述。
 
-- 如果文件夹已同步OneDrive并且您没有使用最新版本的 Windows，则使用"文件历史记录"可能有一些限制。
+- 如果文件夹已同步OneDrive并且您没有使用最新版本的 Windows，则使用文件历史记录可能有一些限制。
 
-## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步骤 5：恢复OneDrive for Business
+## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步骤 5：恢复用户OneDrive for Business
 
-文件还原OneDrive for Business使您可以将整个OneDrive还原到过去 30 天内以前的时间点。 有关详细信息，请参阅“还原你的 OneDrive”[](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
+文件还原OneDrive for Business允许你将整个OneDrive还原到过去 30 天内以前的时间点。 有关详细信息，请参阅“还原你的 OneDrive”[](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
 
 ## <a name="step-6-recover-deleted-email"></a>步骤 6：恢复已删除的电子邮件
 
@@ -154,6 +154,7 @@ ms.locfileid: "60099741"
 Microsoft 365：
 
 - [为 Microsoft 365 租户部署勒索软件保护](/microsoft-365/solutions/ransomware-protection-microsoft-365)
+- [使用 Azure 和 Microsoft 365 最大化勒索软件复原能力](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [恶意软件和勒索软件防护](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [保护你的Windows电脑免受勒索软件](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [在 SharePoint Online 中处理勒索软件](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
@@ -165,6 +166,7 @@ Microsoft 365 Defender：
 Microsoft Azure：
 
 - [针对勒索软件攻击的 Azure 防御](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [使用 Azure 和 Microsoft 365 最大化勒索软件复原能力](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [备份和还原计划以防范勒索软件](/security/compass/backup-plan-to-protect-against-ransomware)
 - [使用 26 分钟的视频Microsoft Azure备份 (](https://www.youtube.com/watch?v=VhLOr2_1MCg)保护免受勒索软件) 
 - [从系统性标识泄露中恢复](/azure/security/fundamentals/recover-from-identity-compromise)

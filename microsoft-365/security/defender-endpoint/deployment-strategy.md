@@ -9,18 +9,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1aa44e26a127bff90a8d0cf591d0418c50687d2
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 23d668751548205b6cef18bf0d73d14079b7c6d6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444171"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205573"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>计划 Microsoft Defender for Endpoint 部署
 
@@ -46,7 +46,7 @@ ms.locfileid: "59444171"
 
 使用以下材料选择最适合贵组织的适用于终结点的 Defender 体系结构。
 
-| Item | 说明 |
+| 项目 | 说明 |
 |:-----|:-----|
 |[![适用于终结点部署策略的 Defender 缩略图。](images/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li>
 
@@ -56,9 +56,9 @@ Defender for Endpoint 支持可载入到服务的各种终结点。
 
 下表列出了受支持的终结点和可使用的相应部署工具，以便可以相应地规划部署。
 
-|终结点|部署工具|
+|端点|部署工具|
 |---|---|
-|**Windows**|[本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/移动设备管理器](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md) <br> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)|
+|**Windows**|[本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ 移动设备管理器](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md) <br> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[本地脚本](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [移动设备管理](mac-install-with-other-mdm.md)|
 |**Linux Server**|[本地脚本](linux-install-manually.md) <br> [百分百](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 |**iOS**|[基于应用](ios-install.md)|

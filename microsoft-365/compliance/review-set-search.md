@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何在审阅集内创建和运行查询，以组织内容，以在Advanced eDiscovery审阅。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4e4d2603cc9f26925b65ebeb654ad366d245e8e8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f1f7fa8f811f5a2bda526454ae8b03163cfed187
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195783"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206057"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>查询和筛选审阅集中的内容
 
@@ -54,7 +54,7 @@ ms.locfileid: "59195783"
 
 - **搜索**：提供不同搜索功能的筛选器。
 
-- **分析&** 编码：运行文档分析作业或使用预测编码模型&生成和添加到文档的属性筛选器。 
+- **分析&** 编码：运行文档分析作业或使用预测编码模型时生成& **添加到** 文档的属性筛选器。
 
 - **ID：** 用于筛选文档的所有 ID 属性。
 

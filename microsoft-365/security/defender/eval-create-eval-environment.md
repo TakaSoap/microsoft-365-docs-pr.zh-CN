@@ -1,6 +1,6 @@
 ---
 title: 创建Microsoft 365 Defender评估环境
-description: 通过激活Microsoft 365 Defender设置试用实验室或试验环境。 然后设置 Microsoft Defender for Identity (MDI) 所有其他 M365D 评估。
+description: 通过激活Microsoft 365 Defender许可证设置你的试用实验室或试验环境。 然后设置 Microsoft Defender for Identity (MDI) 所有其他 M365D 评估。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 05/19/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,20 +21,20 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: e3b2af2f8d893245c596af07284ee095985af7e2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9ab62cd50ab9d378c107928f73db71dc6bc14bc2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196512"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206609"
 ---
 # <a name="create-the-microsoft-365-defender-evaluation-environment"></a>创建Microsoft 365 Defender评估环境
 
 在评估中，有两种常见方法可以执行下一步。 本文档假定你已有生产 M365 租户，并且将激活 E5 试用许可证，以在当前环境中评估 M365 *Defender。* 就地评估将让你保留任何安全方法，在评估期后购买许可证。
 
-第二个[操作是Microsoft 365 Defender测试](setup-m365deval.md)实验室环境以进行评估。 业务可能没有太多实际信号，因此请注意这一点。
+第二个[操作是Microsoft 365 Defender测试实验室](setup-m365deval.md)环境以进行评估。 业务可能没有太多实际信号，因此请注意这一点。
 
-## <a name="to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender"></a>激活 E5 试用版许可证以评估Microsoft 365 Defender 
+## <a name="to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender"></a>激活 E5 试用许可证以评估Microsoft 365 Defender 
 1. 登录到现有 M365 租户管理门户。
 2. 从 *导航菜单中选择* "购买服务"。
 3. 向下滚动到 *"Office 365"* 部分，然后选择"许可证"下的"Office 365 E5按钮。

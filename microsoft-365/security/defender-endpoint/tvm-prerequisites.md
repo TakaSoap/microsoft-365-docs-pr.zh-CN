@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9fde7ed4c7a3b621730e2b6cd73370d87ea9c92c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c3bb52686c43afca710dbe8842463c493a15e140
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170945"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206729"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>权限&的先决条件 - 危险和漏洞管理
 
@@ -61,7 +61,7 @@ ms.locfileid: "59170945"
 
 ## <a name="relevant-permission-options"></a>相关权限选项
 
-1. 使用分配Microsoft 365 Defender全局管理员角色的帐户登录到安全门户。
+1. 使用分配Microsoft 365 Defender全局管理员角色的帐户登录门户。
 2. 在导航窗格中，选择"设置 >**终结点>角色"。**
 
 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。

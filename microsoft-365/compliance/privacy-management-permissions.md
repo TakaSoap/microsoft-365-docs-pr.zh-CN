@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何设置隐私管理权限并将用户分配到角色组。
-ms.openlocfilehash: 6caf786a99e08c2f5c6abfd4c2dbabc438151d06
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b1db7a9fd0bef1429172fe9afef262be4808c164
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196922"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206009"
 ---
 # <a name="set-user-permissions-and-assign-roles-in-privacy-management-preview"></a>在隐私管理中设置用户权限和分配角色 (预览) 
 
@@ -40,7 +40,7 @@ ms.locfileid: "59196922"
 
 ## <a name="role-groups-and-roles"></a>角色组和角色
 
-成员应分配给角色组，具体取决于需要完成哪些任务以及适当的文件访问级别。 每个角色组包括一个或多个角色。 这些角色可能属于为该组的成员启用或限制的特定隐私管理任务或关键功能。  
+根据成员需要完成的任务以及适当的文件访问级别，应将其分配给角色组。 每个角色组包括一个或多个角色。 这些角色可能属于为该组的成员启用或限制的特定隐私管理任务或关键功能。  
 
 如果需要，可以自定义角色组。 为了避免意外丢失访问权限，我们建议创建要自定义的现有角色组的副本，为副本指定可识别名称，对新组进行更改并验证更改，并根据需要为其分配人员。
 

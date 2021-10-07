@@ -13,14 +13,14 @@ ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
-description: 管理员可以了解如何在多地理位置SharePoint OneDrive和启用服务。
-ms.openlocfilehash: 5089a63f4c4f3406c146188151a145cf4b6aa7f2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+description: 管理员可以了解如何在多地理位置SharePoint OneDrive和管理服务。
+ms.openlocfilehash: 347968820e297d9d88e9338af07a5eea1e72d676
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195759"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205841"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
@@ -40,7 +40,7 @@ BCS、安全存储和应用在每个附属位置都具有单独的实例，因�
 
 ## <a name="compliance-admin-center"></a>合规性管理中心
 
-多地理位置租户有一个中央合规中心：Microsoft 365[管理中心。](https://compliance.microsoft.com/)
+多地理位置租户有一个中央合规中心：Microsoft 365[合规性管理中心。](https://compliance.microsoft.com/)
 
 ## <a name="ediscovery"></a>电子数据展示
 
@@ -50,7 +50,7 @@ BCS、安全存储和应用在每个附属位置都具有单独的实例，因�
 
 如果更改了用户的 PDL，则会自动转移用户的 Exchange 邮箱。 创建新邮箱时，如果没有为用户的 PDL 设置值，则会将新邮箱预配到用户的 PDL 或中心位置。
 
-## <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>信息保护 (DLP) 策略 (IP) 数据丢失防护
+## <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>DLP (策略) IP 保护 (数据丢失) 策略
 
 可以在“安全性和合规性”中心内为 OneDrive for Business、SharePoint 和 Exchange 设置 IP DLP 策略，并根据需要将策略的适用范围设置为整个租户或适用的用户。 例如：如果你希望为附属位置中的某个用户选择策略，请选择将策略应用于特定 OneDrive，并输入用户的 OneDrive url。 有关创建 DLP 的一般指南，请参阅[数据丢失防护策略概述](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。
 
@@ -72,11 +72,11 @@ Power Apps位置创建的位置将使用位于租户中心位置的终点。 Mic
 
 ## <a name="sharing"></a>共享
 
-管理员可以为他们的每个位置设置和管理共享策略。 每个OneDrive SharePoint中的网站和网站将仅遵守相应的特定于地理位置的共享设置。 （例如，你可以为中心位置允许[外部共享](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)，但不能为附属位置允许外部共享，反之亦然。）请注意，共享设置不允许配置地理位置之间的共享限制。
+管理员可以为他们的每个位置设置和管理共享策略。 每个OneDrive中的SharePoint网站和网站将仅遵守相应的特定于地理位置的共享设置。 （例如，你可以为中心位置允许[外部共享](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)，但不能为附属位置允许外部共享，反之亦然。）请注意，共享设置不允许配置地理位置之间的共享限制。
 
 ## <a name="stream"></a>Stream
 
-在一对一聊天中上传到 Stream 的视频存储在OneDrive用户的视频中。 会议录制存储在记录OneDrive的每个与会者的会议记录中。
+在一对一聊天中上传到 Stream 的视频存储在OneDrive用户的视频中。 会议录制存储在每个OneDrive与会者的会议室中。
 
 ## <a name="taxonomy"></a>分类
 

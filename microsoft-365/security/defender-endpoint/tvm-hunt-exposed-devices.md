@@ -1,7 +1,7 @@
 ---
 title: 搜索暴露的设备
 description: 了解如何危险和漏洞管理安全管理员、IT 管理员和 SecOps 协作。
-keywords: 适用于 Endpoint-tvm 方案的 Microsoft Defender、适用于终结点的 Microsoft Defender、电视、电视方案、减少威胁 & 漏洞暴露、减少威胁和漏洞、改进安全配置、提高 Microsoft 设备的安全分数、增加威胁 & 漏洞 Microsoft 设备安全分数、设备 Microsoft 安全分数、曝光分数、安全控件
+keywords: 适用于 Endpoint-tvm 方案的 Microsoft Defender， 适用于终结点的 Microsoft Defender， tvm， tvm 方案， 减少威胁 & 漏洞暴露， 减少威胁和漏洞， 改进安全配置， 提高 Microsoft 设备安全分数， 增加威胁 & 漏洞 Microsoft 设备安全分数， Microsoft 设备安全分数， 曝光分数， 安全控制
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2bf488957b35a9d0a914ff4c211a02058cde761c
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 3e413b511f080c23d76e616d83de0cb70a2f966f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010113"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210825"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>搜寻公开的设备 - 危险和漏洞管理
 
@@ -55,7 +55,7 @@ ms.locfileid: "60010113"
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>检查高严重性警报中涉及的设备
 
-1. 从导航 \> **门户的** 左侧导航窗格中转到搜寻高级Microsoft 365 Defender。
+1. 从导航 **门户** 的左侧导航窗格中转到搜寻高级 \> Microsoft 365 Defender。
 
 2. 向下滚动到 TVM 高级搜寻架构，以熟悉列名称。
 
@@ -80,7 +80,7 @@ DeviceWithCriticalCve
 
 ## <a name="related-topics"></a>相关主题
 
-- [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威胁漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [安全性建议](tvm-security-recommendation.md)
 - [API](next-gen-threat-and-vuln-mgt.md#apis)
 - [为角色配置危险和漏洞管理访问](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

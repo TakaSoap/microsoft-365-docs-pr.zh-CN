@@ -7,7 +7,7 @@ ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
@@ -15,16 +15,16 @@ f1.keywords:
 - NOCSH
 description: 了解新的Office 365数据中心地理位置，以及如何使用数据驻留选项请求将核心数据移动到新地理位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 797ac69e2c60c2e4c3ece38b376406027ff65e36
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 724021bc3fb5fd8a0946bcf5f460e4848c44bf9f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196103"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209641"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>将核心数据移动到新的数据中心Microsoft 365地理位置
 
-我们将继续打开新的数据中心地理位置，以Microsoft 365服务。 这些新数据中心地理位置增加了容量和计算资源，以支持我们的持续客户需求和使用增长。 此外，新的数据中心地理位置为核心客户数据提供地理位置内数据驻留。 
+我们将继续打开新的数据中心地理位置，Microsoft 365服务。 这些新数据中心地理位置可增加容量和计算资源，以支持我们的持续客户需求和使用增长。 此外，新的数据中心地理位置为核心客户数据提供地理位置内数据驻留。 
 
 核心客户数据是指客户数据的子集，包括： 
 - Exchange Online邮箱 (电子邮件正文、日历条目以及电子邮件附件内容) 
@@ -50,13 +50,13 @@ ms.locfileid: "59196103"
 |**挪威**| 欧盟 | 挪威 | 2020 年 4 月 |
 |**巴西**| 美洲 | 巴西 | 2020 年 11 月 |
 
-自 2020 年 10 月 1 日起，租户Office 365 教育版订阅的 2020 个客户不符合迁移条件。
+自 2020 年 10 月 1 日起，租户Office 365 教育版订阅的客户不符合迁移条件。
 
 所有数据中心地理位置、数据中心和客户静止位置的完整列表都作为交互式数据中心地图的一 [部分提供](https://office.com/datamaps)。 
   
 ## <a name="data-residency-option"></a>数据驻留选项
 
-我们为符合条件的客户提供数据驻留选项Microsoft 365上表中列出的数据中心地理位置涵盖的客户。 使用此选项，具有数据驻留要求的符合条件的客户可以请求将组织的核心客户数据静止迁移到其新的数据中心地理位置。  Microsoft 将在注册窗口期间向请求迁移的所有符合条件的客户提供承诺的截止时间。  查看 [如何请求数据移动](request-your-data-move.md) 页面，了解有关数据中心地理位置的开放式注册窗口以及注册计划的步骤的更多详细信息。  数据移动可能需要在请求期结束后最多 24 个月才能完成。
+我们提供数据驻留选项，Microsoft 365上表中列出的数据中心地理位置覆盖的符合条件的客户。 使用此选项，具有数据驻留要求的符合条件的客户可以请求将组织的核心客户数据静止迁移到其新的数据中心地理位置。  Microsoft 将在注册窗口期间向请求迁移的所有符合条件的客户提供承诺的截止时间。  查看 [如何请求数据移动](request-your-data-move.md) 页面，了解有关数据中心地理位置的开放式注册窗口以及注册计划的步骤的更多详细信息。  数据移动可能需要在请求期结束后最多 24 个月才能完成。
 
 我们对新的数据中心地理位置没有独特的功能、功能或合规性认证。
     

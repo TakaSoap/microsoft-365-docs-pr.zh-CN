@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7cda3028a7419a2d02fb14a693f0e790e8f9c6ef
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: dfaf1e6346a3747b0f8a41d1d9fe806ce307f9f3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042826"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210741"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -57,8 +57,8 @@ ms.locfileid: "60042826"
 | `SoftwareVendor` | string | 软件供应商的名称 |
 | `SoftwareName` | string | 软件产品的名称 |
 | `SoftwareVersion` | string | 软件产品版本号 |
-| `EndOfSupportStatus` | string | 指示软件产品的生命周期阶段（相对于其指定的停止支持终止 (EOS) 或生命周期结束 (EOL) 日期 |
-| `EndOfSupportDate` | string | 软件产品 (EOS) 或生命周期结束 (EOL) 结束日期 |
+| `EndOfSupportStatus` | string | 指示软件产品的生命周期阶段（相对于其指定的 EOS (停止或) 生命周期 (EOL) 日期 |
+| `EndOfSupportDate` | string |  (产品 (EOS) 或生命周期结束 (EOL) 结束日期 |
 
 
 

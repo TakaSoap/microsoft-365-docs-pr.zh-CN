@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2752de976329f3fbef047557e6a626afd05a520f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201034"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206633"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender高级搜寻 API
 
@@ -52,7 +52,7 @@ ms.locfileid: "59201034"
 6. HTTP 响应代码指示你已按发送的请求数或按分配的运行时间 `429` 达到配额。 阅读响应正文，了解已达到的限制。 
 
 > [!NOTE]
-> 上面列出的所有配额 (例如，每个租户大小每) 15 次呼叫。 这些配额是最小值。
+> 上面列出的所有配额 (例如，每个租户大小每) 15 个呼叫。 这些配额是最小值。
 
 ## <a name="permissions"></a>权限
 
@@ -60,7 +60,7 @@ ms.locfileid: "59201034"
 
 权限类型 | 权限 | 权限显示名称
 -|-|-
-应用程序 | AdvancedHunting.Read.All | 运行高级查询
+Application | AdvancedHunting.Read.All | 运行高级查询
 委派（工作或学校帐户） | AdvancedHunting.Read | 运行高级查询
 
 >[!Note]
@@ -86,9 +86,9 @@ Content-Type | application/json
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数 | 类型 | 描述
+参数 | 类型 | 说明
 -|-|-
-查询 | 文本 | 要运行的查询。 **注意：必需**
+查询 | Text | 要运行的查询。 **注意：必需**
 
 ## <a name="response"></a>响应
 

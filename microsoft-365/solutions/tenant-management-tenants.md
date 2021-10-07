@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,16 +16,16 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 部署和管理单个或多个Microsoft 365租户，并提供了多地理位置和移动位置的选项。
-ms.openlocfilehash: 5dee78835de1e3e64f52f653f52ea4f32dcf6547
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 149dd4274e43d085f2c454774c4499a12561b766
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196227"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206429"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>步骤 1. 适用于Microsoft 365租户的租户
 
-你的第一个租户决策之一是拥有多少租户。 每个Microsoft 365租户都是唯一的，并且独立于所有其他Microsoft 365租户。 它对应的 Azure AD 租户也不同、唯一，并且独立于所有其他Microsoft 365租户。
+你的第一个租户决策之一是拥有多少租户。 每个Microsoft 365租户都是唯一的，并且独立于所有其他Microsoft 365租户。 它对应的 Azure AD 租户也不同、唯一，并且独立于所有其他 Microsoft 365租户。
 
 ## <a name="single-tenant"></a>单个租户
 拥有一个租户可简化组织使用租户Microsoft 365。 单个租户意味着单个 Azure AD 租户具有一组帐户、组和策略。 可以通过此中央标识提供程序在组织中完成资源的权限和共享。
@@ -34,7 +34,7 @@ ms.locfileid: "59196227"
 
 下面是显示租户的默认位置和 Azure AD 租户Microsoft 365示例。
 
-![具有 Azure AD Microsoft 365租户的单个租户。](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![单个租户Microsoft 365 Azure AD 租户。](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 ## <a name="multiple-tenants"></a>多个租户
 
@@ -47,11 +47,11 @@ ms.locfileid: "59196227"
 - 为大型组织明确区分品牌
 - 预生产、测试或沙盒租户
 
-下面是在同一默认数据中心地理位置中具有两个租户 (租户 A 和租户 B) 的示例。 每个租户作为单独的 Azure AD 租户。
+下面是在同一默认数据中心地理位置 (租户 A 和租户 B) 两个租户的组织的示例。 每个租户作为单独的 Azure AD 租户。
 
 ![多个Microsoft 365具有其自己的 Azure AD 租户的租户。](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
 
-当你拥有多个租户时，在管理租户和为用户提供服务时，存在一些限制和其他注意事项。
+当有多个租户时，在管理租户和为用户提供服务时，存在一些限制和其他注意事项。
 
 ### <a name="inter-tenant-collaboration"></a>租户间协作
 
@@ -79,17 +79,17 @@ ms.locfileid: "59196227"
 
 ### <a name="tenant-to-tenant-migrations"></a>租户到租户迁移
 
-合并、收购、资产重组和其他方案有几种体系结构方法，这些方法可能会导致你将现有 Microsoft 365 租户迁移到新租户。 
+对于合并、收购、资产重组和其他方案，有几种体系结构方法可能会导致你将现有 Microsoft 365 租户迁移到新租户。 
 
-有关详细指导，请参阅[Microsoft 365到租户的迁移](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)。
+有关详细指导，请参阅[Microsoft 365租户到租户的迁移](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)。
 
 ## <a name="multi-geo-for-a-tenant"></a>租户的多地理位置
 
-借助 Microsoft 365 多地理位置，可以在选择满足数据驻留要求的其他数据中心地理位置中预配和存储静止数据，同时解锁向工作人员进行新式生产力体验的全球推广。
+借助 Microsoft 365 多地理位置，可以在选择满足数据驻留要求的其他数据中心地理位置中预配和存储静止数据，同时为工作人员解锁新式生产力体验的全球推广。
 
 在多地理位置环境中，Microsoft 365租户包含一个默认或中央位置（最初创建 Microsoft 365 订阅的位置）以及一个或多个附属位置。 在多地理位置租户中，有关地理位置、组和用户信息的信息是在全局 Azure AD 租户中主控的。 由于租户信息是集中掌握的，并同步到每个地理位置，因此公司中涉及任何人的协作体验将跨位置共享。
 
-下面是一个组织的示例，该组织的默认位置在欧洲，而北美是附属位置。 两个位置共享单个租户的同一全局 Azure AD Microsoft 365租户。
+下面是一个组织的示例，该组织的默认位置在欧洲，而北美是附属位置。 两个位置共享单个租户的同一个全局 Azure AD Microsoft 365租户。
 
 ![多地理位置租户Microsoft 365示例。](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
@@ -97,11 +97,11 @@ ms.locfileid: "59196227"
 
 ## <a name="moving-core-data-to-a-new-datacenter-geo"></a>将核心数据移动到新的数据中心地理位置
 
-Microsoft 继续打开新的数据中心地理位置，Microsoft 365服务。 这些新数据中心地理位置可增加容量和计算资源，以支持我们的持续客户需求和使用增长。 此外，新的数据中心地理位置为核心客户数据提供地理位置内数据驻留。
+Microsoft 继续打开新的数据中心地理位置，Microsoft 365服务。 这些新数据中心地理位置增加了容量和计算资源，以支持我们的持续客户需求和使用增长。 此外，新的数据中心地理位置为核心客户数据提供地理位置内数据驻留。
 
 尽管打开新的数据中心地理位置不会影响你和存储在现有数据中心地理位置中的核心数据，但 Microsoft 允许你请求将组织的核心客户数据在静止之后提前迁移到新的数据中心地理位置。
 
-下面是一个示例，Microsoft 365租户从欧盟 (欧盟) 数据中心地理位置移动到位于英国 (英国数据中心) 。
+下面是一个示例，Microsoft 365租户从欧盟 (EU) 数据中心地理位置移动到位于英国或英国 () 。
 
 ![在数据中心地理位置Microsoft 365租户的示例。](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
 
@@ -109,7 +109,7 @@ Microsoft 继续打开新的数据中心地理位置，Microsoft 365服务。 �
 
 ## <a name="products-and-licenses-for-a-tenant"></a>租户的产品和许可证
 
-购买Microsoft 365第一个产品（如产品）时，将创建你的 Microsoft 365 E3。 与产品一起是许可证，按月或按年收费。 然后，管理员直接或通过组成员身份将一个产品中的可用许可证分配给用户帐户。 根据组织的业务需求，您可能有一组产品，每个产品都有自己的许可证池。 
+购买Microsoft 365第一个产品（如产品）时，将创建Microsoft 365 E3。 与产品一起是许可证，按月或按年收费。 然后，管理员直接或通过组成员身份将一个产品中的可用许可证分配给用户帐户。 根据组织的业务需求，您可能有一组产品，每个产品都有自己的许可证池。 
 
 确定产品集和每个产品的许可证数量需要进行一些规划，以：
 

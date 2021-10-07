@@ -12,14 +12,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority: medium
 description: 在 Viva 主题中了解用户角色。
-ms.openlocfilehash: e26f47e5826ac6db6c41e1b0648dd23398f51c43
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bf245cfc41fa3ad08af74dd2f2efbb8c0ddfef37
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196725"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205793"
 ---
 # <a name="roles-in-microsoft-viva-topics"></a>主题中Microsoft Viva的角色
 
@@ -36,12 +36,12 @@ ms.locfileid: "59196725"
 
 若要使主题突出显示及其主题页面对主题查看者可见，用户必须：
 
-- [由他们的管理员分配 Viva 主题](./set-up-topic-experiences.md#assign-licenses)Microsoft 365许可证。
-- 允许查看主题。 此任务由知识管理员在网站中的"Viva 主题"设置页Microsoft 365 管理中心。
+- [由管理员为其分配 Viva 主题](./set-up-topic-experiences.md#assign-licenses)Microsoft 365许可证。
+- 允许查看主题。 此任务由知识管理员在 Microsoft 365 管理中心 中的 Viva 主题设置页中Microsoft 365 管理中心。
 
 ## <a name="topic-contributors"></a>主题参与者
 
-主题参与者是组织中不仅具有主题查看者权限，而且可编辑现有主题或创建新主题的用户。 它们在手动"选择"AI 或手动提供 (的信息以确保其质量) 起重要作用。
+主题参与者是组织中不仅具有主题查看者权限，而且可编辑现有主题或创建新主题的用户。 它们在手动"选择"AI 或手动提供的信息主题页面中的信息 (或手动提供的信息) 以确保其质量。
 
 具有主题参与者权限的用户将在主题页面上看到"编辑"按钮，该按钮允许他们更新和发布主题。
 
@@ -49,8 +49,8 @@ ms.locfileid: "59196725"
 
 若要创建和编辑主题，用户必须：
 
-- [由他们的管理员分配 Viva 主题](./set-up-topic-experiences.md#assign-licenses)Microsoft 365许可证。
-- [分配有创建和编辑主题的权限](./topic-experiences-user-permissions.md)。 此任务由知识管理员在网站中的"Viva 主题"设置页Microsoft 365 管理中心。
+- [由管理员为其分配 Viva 主题](./set-up-topic-experiences.md#assign-licenses)Microsoft 365许可证。
+- [分配有创建和编辑主题的权限](./topic-experiences-user-permissions.md)。 此任务由知识管理员在 Microsoft 365 管理中心 中的 Viva 主题设置页中Microsoft 365 管理中心。
 
 ## <a name="knowledge-managers"></a>知识经理
 
@@ -66,8 +66,8 @@ ms.locfileid: "59196725"
 
 若要管理主题，用户必须：
 
-- [由他们的管理员分配 Viva 主题](./set-up-topic-experiences.md#assign-licenses)Microsoft 365许可证。
-- [分配有管理主题权限) 。](./topic-experiences-user-permissions.md) 此任务由知识管理员在网站中的"Viva 主题"设置页Microsoft 365 管理中心。
+- [由管理员为其分配 Viva 主题](./set-up-topic-experiences.md#assign-licenses)Microsoft 365许可证。
+- [分配有管理主题权限) 。](./topic-experiences-user-permissions.md) 此任务由知识管理员在 Microsoft 365 管理中心 中的 Viva 主题设置页中Microsoft 365 管理中心。
 
 对业务有全面了解的用户可能是担任知识经理角色的良好候选者。 这些人员不仅可能知道主题是否有效，而且还可能了解公司内与这些主题相关的人员。
 

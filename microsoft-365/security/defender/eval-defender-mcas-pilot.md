@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: bcarter
 author: brendacarter
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d0d452c0e9a5dbc3a9060c42921f180da7c42b90
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9b48d5ec4ee8586af05a514f8e5531dd0ac31085
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170921"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210695"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>试用Microsoft Cloud App Security Microsoft 365 Defender
 
@@ -34,9 +34,9 @@ ms.locfileid: "59170921"
 **适用于：**
 - Microsoft 365 Defender
 
-本文是设置评估环境的过程中第 3 步（第 3 步，第[3](eval-defender-mcas-overview.md)步Microsoft Cloud App Security）。 有关此过程详细信息，请参阅 [概述文章](eval-defender-mcas-overview.md)。
+本文是设置环境评估环境过程中第 3 步（第[3](eval-defender-mcas-overview.md)步Microsoft Cloud App Security）。 有关此过程详细信息，请参阅 [概述文章](eval-defender-mcas-overview.md)。
 
-使用以下步骤为用户设置和配置Microsoft Cloud App Security。
+使用以下步骤设置和配置 Microsoft Cloud App Security。
 
 
 ![试点计划Microsoft Cloud App Security。](../../media/defender/m365-defender-mcas-pilot-steps.png)
@@ -53,7 +53,7 @@ Microsoft Cloud App Security允许您确定部署的范围。 通过作用域，
 
 ## <a name="step-2-configure-protection--conditional-access-app-control"></a>步骤 2. 配置保护 — 条件访问应用控制
 
-可以配置的最强大保护之一是条件访问应用控制。 这需要与 Azure AD Azure Active Directory (集成) 。 它允许你将条件访问策略（包括相关策略 (如要求正常运行的设备) 已批准的云应用。 
+可以配置的最强大保护之一是条件访问应用控制。 这需要与 Azure AD Azure Active Directory (集成) 。 它允许你将条件访问策略（包括相关策略 (要求正常运行的设备) 已批准的云应用。 
 
 使用 Microsoft Cloud App Security管理 SaaS 应用的第一步是发现它们，然后将其添加到 Azure AD 租户。 如果需要发现帮助，请参阅 [发现和管理网络中 SaaS 应用](/cloud-app-security/tutorial-shadow-it)。 发现应用后， [将其添加到 Azure AD 租户](/azure/active-directory/manage-apps/add-application-portal)。
 
@@ -64,11 +64,11 @@ Microsoft Cloud App Security允许您确定部署的范围。 通过作用域，
 
 有关详细信息，包括受支持的应用和客户端，请参阅使用条件访问应用Microsoft Cloud App Security[保护应用](/cloud-app-security/proxy-intro-aad)。 
 
-有关示例策略，请参阅[适用于 SaaS Microsoft Cloud App Security推荐的策略](../office-365-security/mcas-saas-access-policies.md)。 这些策略基于一组 [常见标识](../office-365-security/microsoft-365-policies-configurations.md) 和设备访问策略，这些策略建议作为所有客户的起点。 
+有关示例策略，请参阅[适用于 SaaS Microsoft Cloud App Security推荐策略](../office-365-security/mcas-saas-access-policies.md)。 这些策略基于一组 [常见标识](../office-365-security/microsoft-365-policies-configurations.md) 和设备访问策略，这些策略建议作为所有客户的起点。 
 
 ## <a name="step-3-try-out-capabilities--walk-through-tutorials-for-protecting-your-environment"></a>步骤 3. 试用功能 - 演练用于保护环境的教程 
 
-本指南Microsoft Cloud App Security包括一系列教程，可帮助你发现风险和保护环境。 
+本Microsoft Cloud App Security包括一系列教程，可帮助你发现风险和保护环境。 
 
 请尝试云应用安全教程：
 

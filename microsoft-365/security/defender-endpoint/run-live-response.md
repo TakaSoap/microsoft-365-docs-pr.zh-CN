@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7f18d72907ec8f2775ee258906c9185672bfa9be
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: a81fa60b1b66c8eb735da72e1e2108df804b2ef1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041692"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206801"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>在设备上运行实时响应命令
 
@@ -70,18 +70,18 @@ ms.locfileid: "60041692"
 
 - **验证是否正在运行受支持的 Windows** 版本。
 
-  设备必须运行以下版本之一Windows
+  设备必须运行以下版本之一的 Windows
 
   - **Windows 10**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
     - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [版本 1809 (RS 5) ](/windows/whats-new/whats-new-windows-10-version-1809) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [版本 1809 (RS 5 ](/windows/whats-new/whats-new-windows-10-version-1809)) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **WindowsServer 2019 - 仅适用于公共预览版**
-    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
-    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
+    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     
   - **Windows Server 2022**
 
@@ -91,7 +91,7 @@ ms.locfileid: "60041692"
 
 |权限类型|权限|权限显示名称|
 |---|---|---|
-|应用程序|Machine.LiveResponse|在特定的计算机上运行实时响应|
+|Application|Machine.LiveResponse|在特定的计算机上运行实时响应|
 |委派（工作或学校帐户）|Machine.LiveResponse|在特定的计算机上运行实时响应|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -104,7 +104,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |名称|类型|说明|
 |---|---|---|
-|Authorization|字符串|Bearer\<token>\. 必需。|
+|Authorization|String|Bearer\<token>\. 必需。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文

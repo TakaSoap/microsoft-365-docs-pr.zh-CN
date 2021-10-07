@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: 08/13/2020
 audience: Admin
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性, 从 EOP 到 Defender for Office 365 计划 1 和 2, 标准与严格安全配置等。 了解你拥有的属性并了解如何保护你的属性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fac32e667b0393cacf56c9e478d50980c7ad36ec
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: d7c91f4dc28a28b0bab2102dc2a9ec6ec937f6f6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482783"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206501"
 ---
 # <a name="office-365-security"></a>Office 365 安全中心
 
@@ -91,7 +91,7 @@ Office 365 安全性的核心是 EOP 保护。 Microsoft Defender for Office 365
 
 |阻止/检测|调查|响应|
 |---|---|---|
-|技术包括：<ul><li>垃圾邮件</li><li>网络钓鱼</li><li>恶意软件</li><li>批量邮件</li><li>欺骗智能</li><li>模拟检测</li><li>管理员隔离</li><li>管理员和用户的"误报"和"漏报"提交</li><li>允许/阻止 URL 和文件</li><li>报告</li></ul>|<li>审核日志搜索</li><li>邮件跟踪</li>|<li>零时差自动清除 (ZAP) </li><li>允许列表和阻止列表精简和测试</li>|
+|技术包括：<ul><li>垃圾邮件</li><li>网络钓鱼</li><li>恶意软件</li><li>批量邮件</li><li>欺骗智能</li><li>模拟检测</li><li>管理员隔离</li><li>管理员和用户的"误报"和"漏报"提交</li><li>允许/阻止 URL 和文件</li><li>报告</li></ul>|<li>审核日志搜索</li><li>邮件跟踪</li>|<li>ZAP (零时差自动清除) </li><li>允许列表和阻止列表精简和测试</li>|
 |
 
 如果您想深入了解EOP，请 **[跳至本文](exchange-online-protection-overview.md)**。

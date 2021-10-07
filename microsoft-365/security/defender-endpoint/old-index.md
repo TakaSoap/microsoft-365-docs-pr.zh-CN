@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 6286df3fa7b099df9cbe3f910434e0da99f521607148d872ed13e6b97a5d26a6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6ada32650a01f3303a9c3c9011f5465dab5f5184
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867987"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206873"
 ---
 # <a name="threat-protection"></a>威胁防护
 
@@ -103,7 +103,7 @@ ms.locfileid: "53867987"
 <a name="ai"></a>
 
 **[自动调查和修正](automated-investigations.md)**<br>
-除了快速响应高级攻击外，Microsoft Defender for Endpoint 还提供自动调查和修正功能，可帮助以分钟数为比例减少警报量。
+除了快速响应高级攻击之外，Microsoft Defender for Endpoint 还提供自动调查和修正功能，可帮助以分钟数为比例减少警报量。
 
 - [自动调查和修正](automated-investigations.md)
 - [查看自动化调查的详细信息和结果](auto-investigation-action-center.md)
@@ -112,11 +112,11 @@ ms.locfileid: "53867987"
 <a name="mte"></a>
 
 **[Microsoft 威胁专家](microsoft-threat-experts.md)**<br>
-Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供主动搜寻、优先顺序和其他上下文和见解。 Microsoft 威胁专家使安全运营中心 (SOC) 快速准确地识别和响应威胁。
+Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供主动搜寻、优先顺序和其他上下文和见解。 Microsoft 威胁专家使安全操作中心 (SOC) 快速准确地识别和响应威胁。
 
 - [目标攻击通知](microsoft-threat-experts.md)
 - [专家按需](microsoft-threat-experts.md)
-- [配置你的 Microsoft 365 Defender 托管搜寻服务](configure-microsoft-threat-experts.md)
+- [配置你的Microsoft 365 Defender搜寻服务](configure-microsoft-threat-experts.md)
 
 <a name="apis"></a>
 

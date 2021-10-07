@@ -7,7 +7,7 @@ ms.date: 9/18/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -18,33 +18,33 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
-description: 了解如何使用再现和子画面来提高 SharePoint Online 经典发布网站上的图像性能。
-ms.openlocfilehash: 1400b3f3bd78f6c3fda4b587b6974e3aaef18199
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解如何使用再现和子画面来提高联机经典发布SharePoint图像性能。
+ms.openlocfilehash: fe3c698dda06559bf6e104650b6b8bb8d81172fa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162360"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209725"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>SharePoint经典发布网站的图像优化
 
 网页的加载速度取决于呈现页面所需的所有组件的组合大小，包括图像、HTML、JavaScript 和 CSS。 图像是使网站更具吸引力的一种很好的方法，但其大小可能会影响性能。 通过压缩和调整大小以及使用子画面来优化图像，可以偏移非常大的图像的效果。 通过使用SharePoint形式，可以上载单个大图像，并显示图像的各个部分，以允许重复使用而不是重新加载。
 
 >[!NOTE]
->本主题适用于 SharePoint Online 经典发布网站，而不是新式门户网站。 有关 SharePoint Online 新式门户网站中的图像优化的信息，请参阅优化[SharePoint Online 新式门户页面中的图像](modern-image-optimization.md)。
+>本主题适用于联机SharePoint发布网站，而不是新式门户网站。 有关 SharePoint Online 新式门户网站中的图像优化的信息，请参阅优化[SharePoint Online 新式门户页面中的图像](modern-image-optimization.md)。
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>使用子画面加快图像加载速度
 
 ![spcommon 的屏幕截图。](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
 
-图像子画面包含许多较小的图像。 使用 CSS，可以选择要显示在页面特定部分（具有绝对定位）的复合图像的一部分。 基本上，你可以将单个图像围绕页面移动，而不是加载多个图像，并通过一个小窗口使该图像的一小部分可见，其中向最终用户显示子画面图像必需的部分。 SharePointOnline 使用子画面在子画面和子画面文件中spcommon.png图标。
+图像子画面包含许多较小的图像。 使用 CSS，可以选择要显示在页面特定部分（具有绝对定位）的复合图像的一部分。 基本上，你可以将单个图像围绕页面移动，而不是加载多个图像，并通过一个小窗口使该图像的一小部分可见，其中向最终用户显示子画面图像必需的部分。 SharePointOnline 使用子画面在子画面文件spcommon.png图标。
 
 此处涵盖的内容：
 - 图像压缩
 - 图像优化
 - SharePoint图像再现
    
-这可提高性能，因为只下载一个映像而不是多个映像，然后缓存并重复使用该映像。 即使图像未保持缓存状态，通过具有单个图像而不是多个图像，此方法也会减少对服务器的 HTTP 请求总数，这将减少页面加载时间。 这确实是一种图像绑定形式。 如果图像未频繁更改（例如图标）（如上面提供的示例所示SharePoint非常有用。 您可以使用 Web [Essentials（](https://vswebessentials.com/)一个基于社区的第三方开放源代码项目）轻松地在 Microsoft Visual Studio。 有关详细信息，请参阅[Minification and bundling in SharePoint Online](./minification-and-bundling-in-sharepoint-online.md)。
+这可提高性能，因为只下载一个映像而不是多个映像，然后缓存并重复使用该映像。 即使图像未保持缓存状态，通过具有单个图像而不是多个图像，此方法也会减少对服务器的 HTTP 请求总数，这将减少页面加载时间。 这确实是一种图像绑定形式。 如果图像未频繁更改（例如图标）（如上述示例所示SharePoint非常有用。 您可以使用 Web [Essentials（](https://vswebessentials.com/)一个基于社区的第三方开放源代码项目）轻松地在 Microsoft Visual Studio。 有关详细信息，请参阅[Minification and bundling in SharePoint Online](./minification-and-bundling-in-sharepoint-online.md)。
   
 ## <a name="using-image-compression-and-optimization-to-speed-up-page-loading"></a>使用图像压缩和优化来加快页面加载速度
 
@@ -57,11 +57,11 @@ ms.locfileid: "59162360"
 图像再现是 SharePoint Online 中的一项功能，允许你根据预定义的图像尺寸提供不同版本的图像。 当存在用户生成的图像内容或网站中的 CSS 修复图像尺寸（如宽度和高度）时，这一点尤其重要。 即使图像由 CSS 修复，仍然会加载全分辨率图像。 在这种情况下，可以使用图像再现来减小文件大小。
   
 > [!NOTE]
-> 当启用发布时，只能SharePoint格式副本。 可以在"管理网站功能 \> \> 设置"设置"服务器SharePoint \> 下进行发布。 此选项不会以其他方式显示。
+> 当启用发布时，SharePoint才可用。 可以在"管理网站 \> \> 设置"设置"服务器发布"下SharePoint \> 发布。 此选项不会以其他方式显示。
   
-图像重设大小调整的工作方式是采用你定义最小的尺寸（宽度或高度）然后调整图像大小，以便根据锁定的纵横比自动调整其他尺寸的大小。 默认情况下，它将按其余尺寸从中心裁剪图像。 例如，如果定义 100px 宽、高 50px、原始图像宽 1000px、高 800px 的再现形式，将调整大小，使 800px 尺寸现在为 50px，并且 1000px 尺寸 (现在为 62.5px) 从图像中心裁剪。
+图像重设大小的工作原理是采用你定义最小的尺寸（宽度或高度）然后调整图像大小，以便根据锁定的纵横比自动调整其他尺寸的大小。 默认情况下，它将按其余尺寸从中心裁剪图像。 例如，如果定义 100px 宽、高 50px 的再现，并且原始图像宽 1000px、高 800px，将调整大小，使 800px 尺寸现在为 50px，1000px 尺寸 (现在为 62.5px) 从图像中心裁剪。
   
-这些步骤相对简单，但对于图像使用再现，在添加图像之前，SharePoint位于网站中。 此外，您还需要启用 SharePoint Server Publishing Infrastructure (Site Collection Level) 和 SharePoint Server Publishing (Site Level) 功能。
+这些步骤相对简单，但图像要使用再现，在添加图像之前，SharePoint位于网站中。 此外，您还需要启用 SharePoint Server Publishing Infrastructure (Site Collection Level) 和 SharePoint Server Publishing (Site Level) 功能。
   
 ### <a name="add-an-image-rendition-to-speed-up-page-loading"></a>添加图像再现以加快页面加载速度
   
@@ -71,7 +71,7 @@ ms.locfileid: "59162360"
 
 3. 选择"设置"图标。
 
-4. On the **Site 设置** page， in the Look **and Feel** section， you will see the built-in image renditions.
+4. 在 **"设置"** 页上的"外观"部分，你将看到内置图像再现。
 
     可以使用开箱即用格式副本，或选择"图像 **再现** "新建一个。
 

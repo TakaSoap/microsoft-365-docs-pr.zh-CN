@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 237d665f14a34d990ec514735ad5a2dbc9020d92
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9058d0e80d2c37009ad340f7b50424ea1bbb6ab7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196536"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210753"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>跨设备、电子邮件、应用和标识搜索威胁
 
@@ -38,9 +38,9 @@ ms.locfileid: "59196536"
 [利用 Microsoft 365 Defender](advanced-hunting-overview.md)高级搜寻，你可以跨：
 - 由 Microsoft Defender for Endpoint 管理的设备
 - 由用户处理Microsoft 365
-- 由 Microsoft Defender 和 Microsoft Defender for Identity 跟踪的云应用Microsoft Cloud App Security、身份验证事件和域控制器活动
+- 由 Microsoft Defender 和 Microsoft Defender for Identity 跟踪的云Microsoft Cloud App Security、身份验证事件和域控制器活动
 
-通过此可见性级别，你可以快速搜寻遍历网络各部分的威胁，包括到达电子邮件或 Web 的复杂的入侵、提升本地特权、获取特权域凭据，以及横向移动到整个设备。 
+借助此可见性级别，你可以快速搜寻遍历网络各部分的威胁，包括到达电子邮件或 Web 的复杂的入侵、提升本地特权、获取特权域凭据以及横向移动到整个设备。 
 
 下面是基于各种搜寻方案的常规技术和示例查询，可帮助你探索在搜寻此类复杂威胁时如何构造查询。
 
@@ -188,7 +188,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>搜寻方案
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>列出收到未成功删除的电子邮件的用户的登录活动
-[零时差自动清除 (ZAP ](../office-365-security/zero-hour-auto-purge.md)) 收到恶意电子邮件后进行地址清除。 如果 ZAP 失败，恶意代码可能会最终在设备上运行，并且帐户会遭到入侵。 此查询将检查由 ZAP 未成功解决的电子邮件的收件人所进行登录活动。
+[零时差自动清除 (ZAP) ](../office-365-security/zero-hour-auto-purge.md) 收到恶意电子邮件后进行地址清除。 如果 ZAP 失败，恶意代码最终可能在设备上运行，并且帐户会遭到入侵。 此查询将检查由 ZAP 未成功解决的电子邮件的收件人所进行登录活动。
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -205,7 +205,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 ```
 
 ### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>获取凭据盗窃所针对的域帐户的登录尝试
-此查询首先标识表中的所有凭据访问 `AlertInfo` 警报。 然后，它合并或联接表，该表将分析目标帐户的名称，并仅筛选 `AlertEvidence` 加入域的帐户。 最后，它检查表，获取已加入域的目标帐户的所有 `IdentityLogonEvents` 登录活动。
+此查询首先标识表中的所有凭据访问 `AlertInfo` 警报。 然后，它将合并或联接该表，该表将分析目标帐户的名称，并仅筛选 `AlertEvidence` 加入域的帐户。 最后，它检查表，获取已加入域的目标帐户的所有 `IdentityLogonEvents` 登录活动。
 
 ```kusto
 AlertInfo

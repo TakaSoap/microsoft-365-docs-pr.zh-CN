@@ -1,6 +1,6 @@
 ---
 title: 载入非持久性虚拟桌面基础结构 (VDI) 设备。
-description: 在 VDI (虚拟桌面基础结构上) 包，以便它们可以载入到 Microsoft Defender for Endpoint 服务。
+description: 在 VDI (虚拟桌面基础结构) 包，以便它们可以载入到 Microsoft Defender for Endpoint 服务。
 keywords: configure virtual desktop infrastructure (VDI) device， vdi， device management， configure Microsoft Defender for Endpoint， endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 57d029e55759a08d84efe1eb684b67caf3e8653a
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 9d64ee92d543fd10bfaa706998aa5c0bf61110e9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124681"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210001"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>载入非永久性虚拟桌面基础结构设备
 
@@ -63,19 +63,19 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 ### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>对于 Windows 10、Windows 11、Windows Server 2019 或 Windows Server 2022
 
 1. 打开 VDI 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
-   1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **载入"。**
+   1. 在导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **载入"。**
    2. 选择Windows 10或Windows 11 作为操作系统。
    3. 在 **"部署方法"** 字段中，选择 **"非永久性终结点的 VDI 载入脚本"。**
    4. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将文件从从 .zip 文件提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。
+2. 将文件从从 .zip 文件中提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。
     1. 如果要为每台设备实现多个条目（每个会话一个条目），请复制 WindowsDefenderATPOnboardingScript.cmd。
     2. 如果你要针对每台设备实现单个条目，请同时复制 Onboard-NonPersistentMachine.ps1 和 WindowsDefenderATPOnboardingScript.cmd。
 
     > [!NOTE]
     > 如果看不到该文件夹 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` ，它可能处于隐藏状态。 你需要从文件资源管理器中选择显示隐藏 **文件和** 文件夹选项。
 
-3. 打开本地组策略编辑器窗口并 **导航到计算机** 配置 \> **Windows 设置** \> **脚本** \> **启动**。
+3. 打开本地组策略编辑器窗口并导航 **到计算机配置** \> **Windows 设置** \> **脚本** \> **启动**。
 
    > [!NOTE]
    > 域组策略还可用于载入非永久性 VDI 设备。
@@ -95,14 +95,14 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
    3. 从设备注销。
    4. 使用其他用户登录到设备。
    5. 根据你要实现的方法，请按照相应步骤操作：
-      - For single entry for each device： Check only one entry in Microsoft 365 Defender portal.
+      - 对于每台设备的单个条目：在门户中仅检查Microsoft 365 Defender条目。
       - For multiple entries for each device： Check multiple entries in Microsoft 365 Defender portal.
 
 6. 单击 **导航窗格上的** "设备列表"。
 
-7. 输入设备名称并选择"设备"作为搜索类型 **，** 以使用搜索函数。
+7. 通过输入设备名称并选择设备作为搜索类型 **来** 使用搜索函数。
 
-## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>对于下层 SKUS (Windows Server 2008 R2/2012 R2/2016) 
+## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>对于下层 SKUs (Windows Server 2008 R2/2012 R2/2016) 
 
 > [!NOTE]
 > 以下注册表仅在目标是实现"每个设备的单个条目"时相关。
@@ -122,7 +122,7 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 2. 按照 [服务器载入过程操作](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)。
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>使用 VDI 映像更新非永久性 () 基础结构
+## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>使用 VDI 映像更新 (虚拟) 基础结构
 
 作为最佳实践，我们建议使用脱机维护工具修补黄金/主映像。
 
@@ -136,7 +136,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 有关 DISM 命令和脱机服务的详细信息，请参阅以下文章：
 
-- [使用 DISM Windows图像](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [使用 DISM Windows映像](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [DISM 映像管理Command-Line选项](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
 - [减小脱机映像中组件存储Windows大小](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
@@ -152,7 +152,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 3. 根据需要为映像提供服务。
 
-4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能累积 https://download.sysinternals.com/files/PSTools.zip) 的网络文件夹内容：
+4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能 https://download.sysinternals.com/files/PSTools.zip) 累积的网络文件夹内容：
 
     ```console
     PsExec.exe -s cmd.exe
@@ -166,7 +166,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 ## <a name="related-topics"></a>相关主题
 
-- [使用Windows载入设备](configure-endpoints-gp.md)
+- [使用Windows策略载入设备](configure-endpoints-gp.md)
 - [使用Windows载入设备Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [使用Windows管理工具载入设备](configure-endpoints-mdm.md)
 - [使用Windows脚本载入设备](configure-endpoints-script.md)

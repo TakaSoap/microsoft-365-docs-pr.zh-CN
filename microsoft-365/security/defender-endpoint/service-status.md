@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: aa98826605ef1af62ec720c06baa844260ddc9ae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7be50f2a0e83b5a69bb0529bf2ba227d0bb2d81d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196556"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206777"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>检查 Microsoft Defender 终结点服务运行状况
 
@@ -56,7 +56,7 @@ ms.locfileid: "59196556"
 - 后续步骤
 - 预期的解决时间
 
-当问题解决时，页面上将反映问题进度的更新。 你将看到有关更新的信息，例如更新的估计解决时间或下一步步骤。
+问题解决时，页面上将反映问题进度的更新。 你将看到有关更新的信息，例如更新的估计解决时间或下一步步骤。
 
 当问题解决时，该问题将记录在"状态 **历史记录"** 选项卡中。
 

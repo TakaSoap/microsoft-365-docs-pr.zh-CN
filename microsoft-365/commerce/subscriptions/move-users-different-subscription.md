@@ -9,7 +9,7 @@ ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何在订阅之间移动用户。
 ms.date: 07/01/2020
-ms.openlocfilehash: 96ae6a589469004f2479edb2a4f8ed384b25f841
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5cbbdb79d291b89c2f62e44e44239ea5e2791f57
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201401"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206153"
 ---
 # <a name="move-users-to-a-different-subscription"></a>将用户移动到其他订阅
 
@@ -39,7 +39,7 @@ ms.locfileid: "59201401"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ ms.locfileid: "59201401"
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ ms.locfileid: "59201401"
 
 4. 在 **"管理产品许可证"** 窗格中，选择"替换"，然后选择要分配给用户的许可证。
 
-5. 在底部，选择保存 **更改** \> **关闭**。
+5. 在底部，选择"保存 **更改** \> **""关闭"。**
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -70,7 +70,7 @@ ms.locfileid: "59201401"
 ## <a name="related-content"></a>相关内容
 
 [向用户分配许可证](../../admin/manage/assign-licenses-to-users.md)
-[从订阅中删除许可证 (](../licenses/buy-licenses.md) 文章) \
+[从订阅中删除许可证](../licenses/buy-licenses.md) (文章) \
 [手动更改计划](change-plans-manually.md) (文章) \
 [了解适用于企业Microsoft 365订阅](../licenses/subscriptions-and-licenses.md)和 (文章) \
 [购买另Microsoft 365商业版订阅 (](../try-or-buy-microsoft-365.md)文章) 

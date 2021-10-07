@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Defender for Endpoint 的 OData 查询
 ms.reviewer: ''
-description: 使用这些开放式数据协议 (OData) 查询的示例，帮助处理 Microsoft Defender for Endpoint 中的数据访问协议。
+description: 使用这些 Open Data Protocol (OData) 查询的示例，帮助处理 Microsoft Defender for Endpoint 中的数据访问协议。
 keywords: api， 受支持的 api， odata， 查询
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 31fe51aac9262e5d3bcfa9d6a9c757ddeb30f42a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18da838cf57b330d5015f535fefcbd2db42b73ef
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201198"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209893"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>使用 Microsoft Defender for Endpoint 的 OData 查询
 

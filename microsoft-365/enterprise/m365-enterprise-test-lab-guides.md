@@ -9,7 +9,7 @@ ms.date: 11/20/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: cb1588a1f4740839fd08949a4f2a79fcc95e32ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 71be198b6ad96b6131680c41130a2debfd89693c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196118"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210337"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
 
@@ -39,7 +39,7 @@ TTL 设计为模块化。 它们基于彼此构建，以创建更符合你的学
 
 若要直观地映射到 Microsoft 365 for enterprise Test Lab Guide 堆栈中所有文章，请展开下图或转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
-[![企业Microsoft 365指南堆栈的指南。](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+[![企业Microsoft 365实验室指南堆栈。](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>基本配置
 
@@ -47,7 +47,7 @@ TTL 设计为模块化。 它们基于彼此构建，以创建更符合你的学
 
 - [轻型基本](lightweight-base-configuration-microsoft-365-enterprise.md)配置 - 当你要配置和演示Microsoft 365云环境中企业特性和功能（不包括任何本地组件）时，可使用此配置。
 
-- 模拟企业[基础](simulated-ent-base-configuration-microsoft-365-enterprise.md)配置 - 在混合云环境中配置和演示企业特性和功能（使用 Active Directory 域服务 (AD DS) 域）中的 Microsoft 365 时，可使用此配置。
+- 模拟企业[基础](simulated-ent-base-configuration-microsoft-365-enterprise.md)配置 - 当你希望为混合云环境中的企业特性和功能配置和演示 Microsoft 365 时，请使用此配置，该环境使用本地组件，如 Active Directory 域服务 (AD DS) 域。
 
 此外，还可通过不将 Microsoft 365 E5 许可证添加到试用版或产品测试环境中，来创建 Office 365 E5 的测试环境。
     
@@ -69,7 +69,7 @@ TTL 设计为模块化。 它们基于彼此构建，以创建更符合你的学
 
 - [Azure AD 无缝单一登录](single-sign-on-m365-ent-test-environment.md)
   
-   使用 AD DS 域控制器启用 (Azure AD 无缝单一登录) Azure AD 无缝单一登录。
+   启用和测试 Azure AD 无缝单一登录 (AD DS) 实现无缝 SSO 登录。
 
 - [多重身份验证](multi-factor-authentication-microsoft-365-test-environment.md)
   

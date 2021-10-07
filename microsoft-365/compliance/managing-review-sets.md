@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何管理审阅集，以便分析、查询、查看、标记和导出Advanced eDiscovery案例。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 51362fa23af1c0a8b232fe5fc026ac1a87803c3a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 16c6e8aa5f3cf278b90ab7fd338bcac203b7489a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195797"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206093"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>管理审阅Advanced eDiscovery
 
@@ -48,7 +48,7 @@ ms.locfileid: "59195797"
 
 !["审阅集"选项卡上列出的新审阅集。](../media/AeDnewreviewset.png)
 
-有三种不同的方法可以将数据添加到审核集的Advanced eDiscovery案例。
+有三种不同的方法可以将数据添加到案例的审阅Advanced eDiscovery集。
 
 ![三种添加到审阅集的方法。](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 

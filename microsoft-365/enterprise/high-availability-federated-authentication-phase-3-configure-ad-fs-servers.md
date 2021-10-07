@@ -7,7 +7,7 @@ ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,18 +16,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 了解如何创建和配置 AD FS 服务器，以在 Microsoft Azure 中为Microsoft 365身份验证。
-ms.openlocfilehash: 7f6e7801c8185cebc66e653a39930ee9af120946
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c26fc68aa382ce93c62b6edbce4040b7e0813474
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162374"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209761"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性联合身份验证阶段 3：配置 AD FS 服务器
 
-在部署 Azure 基础结构服务中Microsoft 365身份验证的这一阶段中，将创建一个内部负载平衡器以及两个 AD FS 服务器。
+在部署 Azure 基础结构服务中Microsoft 365身份验证的这一阶段，将创建一个内部负载平衡器以及两个 AD FS 服务器。
   
-必须先完成此阶段，然后才能进入阶段 [4：配置 Web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。 有关[所有阶段，请参阅](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)在 Azure 中为 Microsoft 365 部署高可用性联合身份验证。
+必须先完成此阶段，然后才能进入阶段 [4：配置 Web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>在 Azure 中创建 AD FS 服务器虚拟机
 
@@ -148,7 +148,7 @@ Restart-Computer
   
 **阶段 3：Azure 中用于高可用性联合身份验证基础结构的 AD FS 服务器和内部负载均衡器**
 
-![第 3 阶段的高可用性Microsoft 365 AD FS 服务器在 Azure 中部署联合身份验证基础结构。](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![第 3 阶段的高可用性Microsoft 365 AD FS 服务器部署 Azure 中的联合身份验证基础结构。](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>后续步骤
 
@@ -158,4 +158,4 @@ Restart-Computer
 
 [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[用于开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)

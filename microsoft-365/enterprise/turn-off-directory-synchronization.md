@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: 本文查找有关使用 PowerShell 关闭目录同步的信息，Microsoft 365。
-ms.openlocfilehash: 28e0a83bba1a63a7cd1d2f449b9bf3ba34e4862a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 83a3d66493994800a71a1910332a5eb2cdb003cd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170575"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209557"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>关闭目录同步Microsoft 365
 可以使用 PowerShell 关闭目录同步，并将同步的用户转换为仅云。 但是，不建议关闭目录同步作为疑难解答步骤。 如果需要有关目录同步疑难解答的帮助，请参阅修复目录同步[Microsoft 365文章。](fix-problems-with-directory-synchronization.md) 

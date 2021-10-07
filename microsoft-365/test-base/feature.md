@@ -9,29 +9,29 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: a0a60a061959a5aff038c3e74da7e1775f66e237
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f6e7cfffb92f64d92a4ad68d93d1d51dccc0f4bb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200870"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206381"
 ---
 # <a name="windows-feature-update-validation"></a>Windows功能更新验证
 
 是否需要深入了解应用程序在下次发布 Windows 10 或 Windows 11 时将如何执行，而无需维护环境来验证新的 Windows 功能？ 
 
-是否要针对 Azure 环境中预览体验计划Windows内部版本运行验证测试？
+是否要针对 Azure 环境中预览体验Windows内部版本运行验证测试？
 
 **M365** 测试基础上的功能更新验证可以帮助你实现所有这些目标以及更多功能！
 
 请查看下面的分步大纲，了解如何在 M365 服务测试基础中访问此新功能。
 
-若要在 M365 测试基中开始使用，请 (自助服务载入门户) 应用程序和相关 ```Feature update validation``` 文件。 
+若要开始使用 M365 测试基础，请 (自助服务载入门户) 应用程序和相关 ```Feature update validation``` 文件。 
 
 下面突出显示了填写测试详细信息时 **要执行的步骤**：
 
@@ -56,7 +56,7 @@ ms.locfileid: "59200870"
 
 前进到下一篇文章，开始了解内存回归分析。
 > [!div class="nextstepaction"]
-> [后续步骤](memory.md)
+> [下一步](memory.md)
 
 <!---
 Add button for next page

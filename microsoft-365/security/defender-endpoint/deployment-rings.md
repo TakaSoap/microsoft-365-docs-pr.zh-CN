@@ -2,14 +2,13 @@
 title: 在圈中部署 Microsoft Defender for Endpoint
 description: 了解如何在圈中部署 Microsoft Defender for Endpoint
 keywords: 部署， 圈， 评估， 试点， 预览体验成员快， 预览体验成员 - 慢， 设置， 载入， 阶段， 部署， 部署， 采用， 配置
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9b7d78893f91242f5570a0df9fcbc3cab55bd4b
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 5894fa9fea9a6970981f1d1171af9097daa697e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399294"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209967"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>在圈中部署 Microsoft Defender for Endpoint
 
@@ -88,7 +87,7 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 ****
 
-|终结点|部署工具|
+|端点|部署工具|
 |---|---|
 |**Windows**|[本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <p> **注意**：如果要在生产环境中部署 10 台以上设备，请改为使用组策略方法或下面列出的其他支持的工具。 <p> [组策略](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ 移动设备管理器](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [VDI 脚本](configure-endpoints-vdi.md) <p> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[本地脚本](mac-install-manually.md) <p> [Microsoft Endpoint Manager](mac-install-with-intune.md) <p> [JAMF Pro](mac-install-with-jamf.md) <p> [移动设备管理](mac-install-with-other-mdm.md)|
@@ -103,7 +102,7 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 使用以下材料选择最适合贵组织的适用于终结点的 Microsoft Defender 体系结构。
 
-|**Item**|**说明**|
+|**项目**|**说明**|
 |:-----|:-----|
 |[![适用于终结点部署策略的 Microsoft Defender 缩略图。](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li></ul>
 

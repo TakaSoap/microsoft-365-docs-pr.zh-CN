@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:
 - MET150
@@ -23,34 +23,34 @@ f1.keywords:
 - NOCSH
 description: 开始规划从 Office 2010 服务器和客户端应用程序的升级，因为支持即将终止且自定义支持协议不可用。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f4f90a34bd4f6c4585cc8900b11808a11f4a2947
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2211df824335e0c9172f21e8ac02c45b72e19c51
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196732"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209545"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>帮助从 Office 2010 服务器和客户端升级的相关资源
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-Office 2010 Exchange 2010 年 10 月 **13** 日结束支持。
+Office 2010 和 Exchange 2010 在 **2020 年 10 月 13** 日终止支持。
 
 SharePoint 2010 和 Project Server 2010 将于 **2021 年 4 月 13 日** 终止支持。
 
 在规划升级时，请考虑迁移到Microsoft 365。
 
-- Microsoft 365 Office 2010 服务器产品（如 Exchange Server 和 SharePoint Server）以及 Teams 和 OneDrive for Business 等基于云的服务。
+- Microsoft 365为 Office 2010 服务器产品（如 Exchange Server 和 SharePoint Server）提供基于云的服务，以及 Teams 和 OneDrive for Business。
 
-- Microsoft 365 企业应用版 (Office 365 专业增强版) （Microsoft 365 E3 和 E5 包含）的 Office 是在本地设备上安装的一组 Office 客户端应用。  它们从 Microsoft 云中定期更新新的生产力和安全功能。
+- Microsoft 365 企业应用版 (Office 365 专业增强版) （包含在 Microsoft 365 E3 和 E5 中）的客户端应用集是在本地设备上安装的 Office 客户端应用集。 它们从 Microsoft 云中定期更新新的生产力和安全功能。
 
-有关 Office 2010 客户端、服务器和 Windows 7 的升级、迁移和移动到云选项的直观摘要，请参阅支持海报[结尾](../downloads/Office2010Windows7EndOfSupport.pdf)。
+有关 Office 2010 客户端、服务器和 Windows 7 的升级、迁移和移动到云选项的直观摘要，请参阅支持[海报结尾](../downloads/Office2010Windows7EndOfSupport.pdf)。
 
 [![停止支持 Office 2010 客户端和服务器以及 Windows 7 海报。](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-此单页海报总结了处理 Office 2010 客户端和服务器产品的各种途径，Windows 7 实现支持。 突出显示中的首选路径Microsoft 365 企业版选项支持。
+本单页海报总结了处理 Office 2010 客户端和服务器产品的各种途径，Windows 7 实现支持。 突出显示中的首选路径Microsoft 365 企业版选项支持。
 
-您还可以 [下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) ，以 11 x 17 格式的信件、 (或) 打印。
+您还可以下载此 [海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) ，以 11 x 17 格式的信件、法律或 (打印) 格式。
 
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Office 2010 客户端和服务器升级计划
 

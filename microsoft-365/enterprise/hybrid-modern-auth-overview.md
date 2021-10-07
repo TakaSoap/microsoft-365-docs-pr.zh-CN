@@ -8,7 +8,7 @@ ms.date: 10/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 本文将介绍混合新式验证，以及用于内部部署服务器和 Skype for Business Exchange的先决条件。
-ms.openlocfilehash: 33bcf9bde2cda0388160337d3ffe6b81ab94eb12
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c6e12638ca0568bcf2ca692b53008971d897290e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162366"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209749"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式验证概述以及将其与本地 Skype for Business和 Exchange 服务器一起使用的先决条件
 
@@ -48,7 +48,7 @@ _新式验证_ 是一种标识管理，它提供更安全的用户身份验证�
 
 请注意，由于 Skype for Business 与 Exchange 紧密合作，因此 Skype for Business 客户端用户将看到的登录行为将受 Exchange 的新式验证状态影响。 如果你具有 Skype for Business _拆分域_ 混合体系结构，你在其中同时拥有本地 Skype for Business Online 和本地 Skype for Business，并且用户同时位于两个位置，则此方式也适用。
 
-有关企业中的新式验证Office 365，Office 365客户端应用支持[- 多重身份验证](microsoft-365-client-support-multi-factor-authentication.md)。
+有关新式验证在 Office 365 中Office 365，请参阅客户端应用支持[- 多重身份验证](microsoft-365-client-support-multi-factor-authentication.md)。
 
 > [!IMPORTANT]
 > 自 2017 年 8 月起，包括 Skype for Business Online 和 Exchange Online 在内的所有新 Office 365 租户都将默认启用新式验证。 既有租户的默认 MA 状态不会发生变化，但是所有新租户都会自动支持上面列出的一组扩展身份功能。 若要查看你的 MA 状态，请参阅[检查本地环境的新式验证状态](hybrid-modern-auth-overview.md#BKMK_CheckStatus)部分。

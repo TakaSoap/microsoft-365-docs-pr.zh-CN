@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e39a1833157210e3d5e4c6a5bcc77deede295f3c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 03d3535ec972522313bbabeebc1743db3fb55009
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195665"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209845"
 ---
 # <a name="list-exposure-score-by-device-group"></a>按设备组列出曝光分数
 
@@ -47,7 +47,7 @@ ms.locfileid: "59195665"
 
 权限类型|权限|权限显示名称
 ---|---|---
-应用程序|Score.Read.All|"读取威胁和漏洞管理分数"
+Application|Score.Read.All|"读取威胁和漏洞管理分数"
 委派（工作或学校帐户）|Score.Read|"读取威胁和漏洞管理分数"
 
 ## <a name="http-request"></a>HTTP 请求
