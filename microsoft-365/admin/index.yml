@@ -32,7 +32,7 @@ productDirectory:
     - title: 入门
       imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
       summary: 注册和设置 Microsoft 365。
-      url: /admin
+      url: admin-overview/sign-up-for-office-365.md
     - title: 迁移数据
       imageSrc: 'https://docs.microsoft.com/office/media/icons/migration-blue.svg'
       summary: 将数据从其他服务移动到 Microsoft 365。
@@ -55,16 +55,16 @@ additionalContent:
           url: admin-overview/about-the-admin-center.md
         - title: 用户和组
           summary: 管理密码、添加和删除用户、设置和管理组、管理来宾访问以及分配用户许可证。
-          url: /admin
+          url: add-users/add-users.md
         - title: 电子邮件和日历
           summary: 管理电子邮件设置、通讯组和安全设置以及设置共享邮箱。
-          url: /admin
+          url: email/office-365-user-email-settings.md
         - title: 域
           summary: 了解域、设置和管理域以及更新 DNS 记录。
           url: setup/add-domain.md
         - title: 数据和服务
           summary: 监视服务状态、备份数据、安装加载项，以及升级到最新应用。
-          url: /admin
+          url: activity-reports/activity-reports.md
         - title: 订阅和计费
           summary: 管理帐单、订阅和产品许可证，更新付款方式以及购买其他服务和存储空间。
           url: ../commerce/index.yml
@@ -73,7 +73,7 @@ additionalContent:
           url: security-and-compliance/secure-your-business-data.md
         - title: 与客户合作
           summary: 共享文档以及使用 Teams 进行协作和会谈。
-          url: /admin
+          url: manage/share-calendars-with-external-users.md
         - title: 疑难解答
           summary: 访问相关资源，以便解决和修复 Office 产品或服务出现的问题。
           url: 'https://docs.microsoft.com/office/troubleshoot/'

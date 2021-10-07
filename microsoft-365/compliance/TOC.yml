@@ -978,8 +978,16 @@
           href: compliance-manager-setup.md
         - name: 构建和管理评估
           href: compliance-manager-assessments.md
-        - name: 使用评估模板
+        - name: 了解评估模板
           href: compliance-manager-templates.md
+        - name: 创建评估模板
+          href: compliance-manager-templates-create.md
+        - name: 扩展评估模板
+          href: compliance-manager-templates-extend.md
+        - name: 修改评估模板
+          href: compliance-manager-templates-modify.md
+        - name: 在 Excel 中设置模板数据格式
+          href: compliance-manager-templates-format-excel.md
         - name: 合规性管理器模板列表
           href: compliance-manager-templates-list.md
         - name: 分配和完成改进操作

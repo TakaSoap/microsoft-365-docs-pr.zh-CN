@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 69f96b4393a25e57fcbfd2e9adfbd652a5aa191d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8c35f6c399e7668883b5b276fffd56f162984669
+ms.sourcegitcommit: f6cb10b1dc4b679b7890d059f7242870fc40b9f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211113"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60225016"
 ---
 # <a name="manage-indicators"></a>管理指示器
 
@@ -58,20 +58,25 @@ ms.locfileid: "60211113"
 
 下表显示了受支持的参数。
 
-参数|类型|说明
+参数|类型|描述
 :---|:---|:---
 indicatorType|枚举|指示器的类型。 可能的值是："FileSha1"、"FileSha256"、"IpAddress"、"DomainName"和"Url"。 **Required**
 indicatorValue|String|Indicator [实体的](ti-indicator.md) 标识。 **Required**
 action|枚举|如果在组织中发现指示器，将采取的操作。 可能的值包括："Alert"、"AlertAndBlock"和"Allowed"。 **Required**
 title|String|指示器警报标题。 **Required**
-说明|字符串| 指示器的说明。 **Required**
+说明|String| 指示器的说明。 **Required**
 expirationTime|DateTimeOffset|指示器的过期时间，格式为 YYYY-MM-DDTHH：MM：SS.0Z。 **可选**
 severity|枚举|指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。 **可选**
-recommendedActions|字符串|TI 指示器警报建议操作。 **可选**
-rbacGroupNames|String|将应用指示器的 RBAC 组名称的逗号分隔列表。 **可选**
-“类别”|字符串|警报的类别。 示例包括：执行和凭据访问。 **可选**
+recommendedActions|String|TI 指示器警报建议操作。 **可选**
+rbacGroupNames|字符串|将应用指示器的 RBAC 组名称的逗号分隔列表。 **可选**
+“类别”|String|警报的类别。 示例包括：执行和凭据访问。 **可选**
 mitretechniques|String|MITRE 技术代码/id (逗号分隔) 。 有关详细信息，请参阅策略[Enterprise策略](https://attack.mitre.org/tactics/enterprise/)。 **可选** 建议在 MITRE 技术时在类别中添加值。
+GenerateAlert|字符串|是否应该生成警报。 可能的值是：True 或 False。 **可选**
 
+
+
+> [!NOTE]
+> IP 地址Inter-Domain无 (CIDR) 表示法不受支持。
 有关详细信息，请参阅 [Microsoft Defender for Endpoint 警报类别现在与 MITRE ATT&CK！](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748)一致。
 
 ## <a name="see-also"></a>另请参阅
