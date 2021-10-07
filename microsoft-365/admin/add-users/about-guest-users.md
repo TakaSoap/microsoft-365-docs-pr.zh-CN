@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在"来宾用户"列表中填充Microsoft 365 管理中心。
-ms.openlocfilehash: f2a8de5b4e9c00361aa0cb2113185fa07d8885a2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0de0187211b874f62ede6cfc8b9e1008adc88220
+ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158738"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60223393"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>来宾用户Microsoft 365 管理中心
 
@@ -36,7 +36,7 @@ ms.locfileid: "60158738"
 
 若要查看来宾用户，在Microsoft 365 管理中心导航 <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank"></a>中，展开"用户"，然后选择"来宾 **用户"。** 
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>准备工作 
 
 您必须是全局管理员才能执行此任务。
 

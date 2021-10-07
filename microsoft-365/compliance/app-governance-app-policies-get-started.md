@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: 开始了解应用策略。
-ms.openlocfilehash: 72702dfb8962750a3e6161eaefa360f6189870e6
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: c015a8ef97bc16963b670ae00c9067f35dafc1e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941987"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188393"
 ---
 # <a name="get-started-with-app-policies"></a>开始使用应用策略
 
@@ -67,14 +67,14 @@ Microsoft 应用治理的应用策略是实施更主动或被动的条件，以�
 ## <a name="edit-an-existing-policy"></a>编辑现有策略
 
 1. 在应用治理门户中，选择“**策略**”选项卡。
-1. 选择想要编辑的策略。 右侧将打开一个面板，其中包含现有策略的详细信息。
+1. 选择想要编辑的策略。右侧将打开一个面板，其中包含现有策略的详细信息。
 1. 选择“**编辑**”。
-1. 创建策略后，无法更改策略的名称，但可以更改说明和策略严重性。 选择“**下一步**”。
+1. 创建策略后将无法更改策略的名称，但可以更改说明和策略严重性。选择“**下一步**”。
 1. 选择是继续现有策略设置还是自定义它们。 选择“**不，我想自定义策略**”进行更改。 选择“**下一步**”。
 1. 选择此策略是应用于所有应用，还是应用于你在列表中指定的应用。 如果将策略应用于特定应用程序，请选择“**添加应用**”，将更多应用程序添加到列表中。 选择“**下一步**”。
 1. 选择是否修改策略的现有条件。 如果选择修改条件，请选择“**编辑条件**”。 选择“**下一步**”。
-1. 选择在触发策略条件时是否禁用应用。 选择“**下一步**”。
-1. 将策略状态设置为“审核"、“活动”或“非活动”。 选择“**下一步**”。
+1. 选择在触发策略条件时是否禁用应用。选择“**下一步**”。
+1. 将策略状态设置为“审核"、“活动”或“非活动”。选择“**下一步**”。
 1. 查看策略的设置选项，如果一切都如你要求的方式，请选择“**提交**”。
 
 ## <a name="next-step"></a>后续步骤

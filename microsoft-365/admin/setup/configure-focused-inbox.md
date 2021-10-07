@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: 如果你负责配置为企业中的每个人配置电子邮件设置，本文介绍了如何为用户配置重点收件箱。
-ms.openlocfilehash: 0b9a48a394f563d897217599daa2c1836e920d1e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: b2c315b6fb4a4c80f245bcf4731b93996753586a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774396"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176087"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>为组织中的每个人配置重点收件箱
 
-如果你负责配置公司中每个人的电子邮件使用方式，则本文非常适合你！ 其中说明如何根据业务来自定义或关闭电子邮件，还将解答[常见问题](#faq-for-focused-inbox)。
+如果你负责配置公司中每个人的电子邮件使用方式，则本文正好适合你！其中说明了如何为你的公司自定义或关闭电子邮件，还解答了[常见问题](#faq-for-focused-inbox)。  
 
 如果只想关闭重点收件箱，请参阅[关闭重点收件箱](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2)。  
 
@@ -39,7 +40,7 @@ ms.locfileid: "59774396"
   
 ## <a name="turn-focused-inbox-on-or-off-in-your-organization"></a>在组织中打开或关闭重点收件箱
 
-使用 PowerShell 为组织中的每个人打开或关闭重点收件箱。 是否想在 Microsoft 365 管理中心执行此操作？ 请联系我们的工程团队。 **[请在此投票！](https://go.microsoft.com/fwlink/?linkid=862489)**
+你将使用 PowerShell 为组织中的每个人打开或关闭重点收件箱。是否想在 Microsoft 365 管理中心执行此操作？请联系我们的工程团队。 **[请在此投票！](https://go.microsoft.com/fwlink/?linkid=862489)**
   
 **关闭重点收件箱：**
   
@@ -89,7 +90,7 @@ ms.locfileid: "59774396"
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>为特定用户打开或关闭重点收件箱
 
-本示例会为 Contoso 组织中的 Tim Matthews **关闭** 重点收件箱。 但是，它并不禁止他使用此功能。 如果希望，仍可在其每个客户端上重新启用重点收件箱。 
+本示例会为 Contoso 组织中的 Tim Matthews **关闭** 重点收件箱。但是，这并不禁止他使用此功能。如果他想使用，仍可在其每个客户端上重新启用重点收件箱。 
   
 1. [使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -121,7 +122,7 @@ ms.locfileid: "59774396"
 
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
 
-2. 导航到 **邮件流** \> **规则**。 选择 ![EAC 添加图标。](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) 然后选择“**创建新规则...**”。 
+2. 导航到“**邮件流**”\>“**规则**”。选择“![EAC 添加图标](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif)”，然后选择“**新建规则...**”。 
 
 3. 创建新规则完成后，选择 **“保存”** 启动该规则。
 
@@ -145,12 +146,11 @@ ms.locfileid: "59774396"
     ```
 
 > [!IMPORTANT]
-> 在本例中，"X-MS-Exchange-Organization-BypassFocusedInbox"和"true"都需区分大小写。
-> 此外，重点收件箱将遵循绕过待筛选邮件的 X 标头，因此若在待筛选邮件中使用此设置，则此设置将用于重点收件箱。 有关语法和参数的详细信息，请参阅 [New-TransportRule](/powershell/module/exchange/new-transportrule)。
+> 在本示例中，"X-MS-Exchange-Organization-BypassFocusedInbox"和"true"都需区分大小写。另外，重点收件箱遵循绕过待筛选邮件的 X 标头，因此若在待筛选邮件中使用此设置，则此设置也将用于重点收件箱。有关语法和参数的详细信息，请参阅[New-TransportRule](/powershell/module/exchange/new-transportrule)。
 
-### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
+### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
-可检查电子邮件标头，查看电子邮件是否通过重点收件箱的传输规则旁路发送到收件箱中。 从组织中应用了重点收件箱传输规则的邮箱中选择一封电子邮件。 查看邮件上标记的标头，应当可看到 **X-MS-Exchange-Organization-BypassFocusedInbox: true** 标头。 这意味着正在绕过。 有关如何查找邮件头的信息，请参阅 [查看电子邮件的 Internet 邮件头信息](https://go.microsoft.com/fwlink/p/?LinkId=822530)文章。
+你可以检查电子邮件标头，查看电子邮件是否因为绕过重点收件箱的传输规则而发送到收件箱中。从应用了重点收件箱传输规则的组织邮箱中选择一封电子邮件。查看邮件上标记的标头，应当可看到 **X-MS-Exchange-Organization-BypassFocusedInbox: true** 标头。这表示已绕过该规则。请参阅 [查看电子邮件的 Internet 标头信息](https://go.microsoft.com/fwlink/p/?LinkId=822530)文章，获取有关如何查找标头信息的内容。
 
 ### <a name="what-will-the-user-see"></a>用户将看到什么？
 

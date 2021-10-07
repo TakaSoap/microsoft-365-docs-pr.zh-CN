@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: conceptual
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8651adb37640d68d0eace7aa23a134ba3b892bbd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b865725c39b6b21fe8963fe227e59658feefb813
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195950"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180885"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "59195950"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> 本文适用于拥有 [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的企业客户。 如果你使用的是 Outlook.com、Microsoft 365 家庭版或 Microsoft 365 个人版，并且正在查找有关 Outlook 中安全链接或安全附件的信息，请参阅[适用于 Microsoft 365 订阅者的高级 Outlook.com 安全机制](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于 [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 的商业客户。如果你使用的是 Outlook.com、Microsoft 365 家庭版或 Microsoft 365 个人版，并且在查找有关 Outlook 中安全链接或安全附件的信息，请参阅[适用于 Microsoft 365 订阅者的高级 Outlook.com 安全机制](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。Defender for Office 365 包括：
 
@@ -130,7 +130,7 @@ Microsoft Defender for Office 365 计划 2 包括同类最佳的[威胁调查和
 
 - **[威胁跟踪器](threat-trackers.md)** 提供有关主流网络安全问题的最新智能。 例如，你可以查看有关最新恶意软件的信息，并采取措施，然后将其作为组织的实际威胁。 可用的跟踪器包括[值得注意的跟踪器](threat-trackers.md#noteworthy-trackers)、[趋势跟踪器](threat-trackers.md#trending-trackers)、[跟踪的查询](threat-trackers.md#tracked-queries)和[已保存的查询](threat-trackers.md#saved-queries)。
 
-- **[威胁资源管理器（或实时检测）](threat-explorer.md)** 也称为“资源管理器”，它是一种实时报表，可用于识别和分析最近的威胁。 可配置资源管理器显示自定义期间的数据。
+- **[威胁资源管理器（或实时检测）](threat-explorer.md)**（也称为“资源管理器”）是一种实时报表，可用于识别和分析最近的威胁。你可以配置资源管理器以显示自定义时段的数据。
 
 - **[攻击仿真程序](attack-simulation-training.md)** 使你能够在组织中运行现实的攻击方案以确定漏洞。 可仿真当前类型的攻击，包括鱼叉式网络钓鱼凭据收集和附件攻击、密码喷射攻击和暴力密码攻击。
 

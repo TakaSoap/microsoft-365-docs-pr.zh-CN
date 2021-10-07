@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Yammer 的保留策略。
-ms.openlocfilehash: 352c66ad34508d06d4673dab4ebc2b98a27649d7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea1638b3dd97c97354eff64d0e33d6a4b84a0313
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196915"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175103"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解用于 Yammer 的保留
 
@@ -64,7 +64,7 @@ ms.locfileid: "59196915"
 > 
 > 但是，原始邮件的副本在社区组邮箱的隐藏文件夹中仍然可用，并可出于合规目的通过电子数据展示搜索进行访问。
 
-Yammer 邮件不受针对 Exchange 邮箱配置的保留策略影响。 即使 Yammer 消息存储在 Exchange 中，此 Yammer 数据仍将仅包含在针对 **Yammer 社区消息** 和 **Yammer 用户消息** 位置配置的保留策略中。
+Yammer 消息不受为 Exchange 邮箱配置的保留策略的影响。即使 Yammer 消息存储在 Exchange 中，此 Yammer 数据仍将仅包含在为 **Yammer 社区消息** 和 **Yammer 用户消息** 位置配置的保留策略中。
 
 > [!NOTE]
 > 如果用户包含在保留 Yammer 数据的活动保留策略中，并且删除了包含在此策略中的用户邮箱，为了保留 Yammer 数据，邮箱会转换为[非活动邮箱](inactive-mailboxes-in-office-365.md)。 如果不需要为用户保留此 Yammer 数据，请在删除用户的邮箱之前，将用户帐户从保留策略中排除。
@@ -93,7 +93,7 @@ Yammer 邮件不受针对 Exchange 邮箱配置的保留策略影响。 即使 Y
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>“仅保留”保留策略的内容路径
 
-1. **如果编辑或删除了 Yammer 消息**：立即在 SubstrateHolds 文件夹中创建原始消息的副本，并将其保留在那里，直到保留期到期。 然后，此消息会立即从 SubstrateHolds 文件夹中永久删除。
+1. **如果编辑或删除了 Yammer 消息**：将立即在 SubstrateHolds 文件夹中创建原始消息的副本，并将其保留在那里，直到保留期到期。然后消息将从 SubstrateHolds 文件夹中立即被永久删除。
 
 2. **如果 Yammer 消息在保持期内未遭修改或删除** 以及保留期内编辑后的当前消息：保留期前后无变化；消息仍保留在原始位置。
 

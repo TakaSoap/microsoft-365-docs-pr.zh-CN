@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用合规性管理器快速入门指南帮助你了解、设置和使用合规性管理器。
-ms.openlocfilehash: 9697e638d29f61e70f01534d1fa0a5bfb2b80e48
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d70167341082c851ee25d94c3ee5b827d6e1492f
+ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192279"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60223451"
 ---
 # <a name="compliance-manager-quickstart"></a>合规性管理器快速入门
 
@@ -35,7 +35,7 @@ ms.locfileid: "60192279"
 
 首次访问合规性管理器时，你将看到组织的合规性分数。 合规性管理器已在根据数据保护Microsoft 365评估当前环境。 开始熟悉合规性管理器的最好办法就是了解它显示的内容、它的关键元素以及如何自定义仪表板。
 
-合规性 [管理器概述页面](compliance-manager.md) 是全面查看什么是合规性管理器及其工作方式的最佳第一步。 你可能还需要使用下面的链接直接跳转到文档的关键部分：
+我们的 [合规性管理器概述](compliance-manager.md) 页面是全面查看什么是合规性管理器及其工作方式的最佳第一步。 你可能还需要使用下面的链接直接跳转到文档的关键部分：
 
 - [了解合规性分数](compliance-manager.md#understanding-your-compliance-score)
 - [关键元素概述：控制措施、评估、模板和改进操作](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
@@ -63,8 +63,8 @@ ms.locfileid: "60192279"
 
 您还可以设置所有或部分改进操作自动化测试。 请访问以下链接，了解合规性管理器中的更高级功能：
 
-- [通过添加自己的控制措施和改进操作来扩展合规性管理器模板](compliance-manager-templates.md#extend-microsoft-365-assessment-templates)
-- [创建自己的自定义模板](compliance-manager-templates.md#create-an-assessment-template)
-- [修改现有模板以添加或删除控件和操作](compliance-manager-templates.md#modify-a-template)
+- [通过添加自己的控制措施和改进操作来扩展合规性管理器模板](compliance-manager-templates-extend.md)
+- [创建自己的自定义模板](compliance-manager-templates-create.md)
+- [修改现有模板以添加或删除控件和操作](compliance-manager-templates-modify.md)
 - [设置改进操作自动化测试](compliance-manager-setup.md#set-up-automated-testing)
 - [将改进操作重新分配给其他用户](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
