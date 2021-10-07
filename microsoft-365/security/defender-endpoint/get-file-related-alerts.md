@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 478a187494ff247c7d3e8a258e8ac73eb921d4d2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82ad551003b8bf3dd2a4bd0b1ba569eb2a5660b6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201477"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150041"
 ---
 # <a name="get-file-related-alerts-api"></a>获取与文件相关的警报 API
 
@@ -52,8 +52,8 @@ ms.locfileid: "59201477"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Alert.Read.All|"读取所有警报"
-应用程序|Alert.ReadWrite.All|"读取和写入所有警报"
+Application|Alert.Read.All|"读取所有警报"
+Application|Alert.ReadWrite.All|"读取和写入所有警报"
 委派（工作或学校帐户）|Alert.Read|"读取警报"
 委派（工作或学校帐户）|Alert.ReadWrite|"读取和写入警报"
 

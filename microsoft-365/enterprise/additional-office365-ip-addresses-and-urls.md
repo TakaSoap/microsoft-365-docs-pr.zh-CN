@@ -7,7 +7,7 @@ ms.date: 04/19/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：新终结点 Web 服务不包含特定应用场景的少量终结点。
 hideEdit: true
-ms.openlocfilehash: e01bf3522d148e71fd4968029e1bbc9204ef9a6a
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 1313bc4dd10afe07f82fdc2c1b5df9d9d9bd0f2a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491237"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150818"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务中未包含的其他终结点
 
@@ -54,7 +54,7 @@ ms.locfileid: "59491237"
 |3|Azure AD Connect（带有 SSO 选项） - WinRM 和远程 PowerShell|客户 STS 环境（AD FS 服务器和 AD FS 代理）\| TCP 端口 80 和 443|入站服务器流量|
 |4 |ST FS，例如 AD FS 代理服务器（仅限联盟客户）|客户 STS（例如 AD FS 代理）\| 端口 TCP 443 或 TCP 49443，带有 ClientTLS|入站服务器流量|
 |5|[Exchange Online 统一消息/SBC 集成](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers)|本地会话边界控制器和 \* .um.outlook.com|仅出站服务器流量|
-|6 |邮箱迁移。 从内部部署[Exchange](/exchange/exchange-deployment-assistant)混合到 Office 365 启动邮箱迁移时，Office 365 将连接到已发布的 Exchange Web 服务 (EWS) /Mailbox Replication Services (MRS) 服务器。 如果需要 Exchange Online 服务器使用的 NAT IP 地址来限制来自特定源 IP 范围的入站连接，它们列在 Office 365 [URL & IP](urls-and-ip-address-ranges.md)范围中的"Exchange Online"服务区域下。 <p> 应小心以确保在限制来自特定源 IP 范围的 TCP 443 连接之前，MRS 代理解析为单独的 FQDN 和公共 IP 地址，以确保对已发布的 EWS 终结点（如 OWA）的访问不会受到影响。|客户本地 EWS/MRS 代理 <br> TCP 端口 443|入站服务器流量|
+|6 |邮箱迁移。 从内部部署 Exchange Hybrid[到](/exchange/exchange-deployment-assistant)Office 365 启动邮箱迁移时，Office 365 将连接到已发布的 Exchange Web 服务 (EWS) /Mailbox Replication Services (MRS) 服务器。 如果需要 Exchange Online 服务器使用的 NAT IP 地址来限制来自特定源 IP 范围的入站连接，它们列在 Office 365 [URL & IP](urls-and-ip-address-ranges.md)范围中的"Exchange Online"服务区域下。 <p> 应小心以确保在限制来自特定源 IP 范围的 TCP 443 连接之前，MRS 代理解析为单独的 FQDN 和公共 IP 地址，以确保对已发布的 EWS 终结点（如 OWA）的访问不会受到影响。|客户本地 EWS/MRS 代理 <br> TCP 端口 443|入站服务器流量|
 |7 |[Exchange 混合部署](/exchange/exchange-deployment-assistant)共存功能，例如忙/闲共享。|客户本地 Exchange 服务器|入站服务器流量|
 |8 |[Exchange 混合部署](/exchange/exchange-deployment-assistant)代理身份验证|客户本地 STS|入站服务器流量|
 |9 |用于使用 [Exchange 混合配置向导](/exchange/hybrid-configuration-wizard)来配置 [Exchange 混合](/exchange/exchange-deployment-assistant) <p> 注意：这些终结点仅用于配置 Exchange 混合|TCP 端口 80 和 443 上的 domains.live.com，仅用于 Exchange 2010 SP3 混合配置向导。 <p> GCC High，DoD IP 地址：40.118.209.192/32；168.62.190.41/32 <p> 全球商业 \* & GCC：.store.core.windows.net;asl.configure.office.com;tds.configure.office.com;mshybridservice.trafficmanager.net; <br> aka.ms/hybridwizard; <br> shcwreleaseprod.blob.core.windows.net/shcw/ \* ;|仅出站服务器流量|
@@ -64,7 +64,7 @@ ms.locfileid: "59491237"
 |13|Skype for Business 混合内部部署服务器与 Skype for Business Online 之间的连接|13.107.64.0/18, 52.112.0.0/14 <br> UDP 端口 50,000-59,999 <br> TCP 端口 50,000-59,999; 5061|Skype for Business 内部部署服务器出站连接|
 |14 |具有内部部署混合连接的云 PSTN 要求网络连接对内部部署主机开放。有关 Skype for Business Online 混合配置的更多详细信息，|请参阅[ Skype for Business Server 和 Office 365 之间的混合连接](/skypeforbusiness/hybrid/plan-hybrid-connectivity)|Skype for Business 内部部署混合入站|
 |15 |**身份验证和标识 FQDN** <p> FQDN `secure.aadcdn.microsoftonline-p.com` 必须位于客户端的 Internet Explorer (IE) 或 Edge 受信任的站点区域内才能起作用。||受信任的站点|
-|16 |**Microsoft Teams FQDN** <p> 如果你使用的是 Internet Explorer 或 Microsoft Edge，则需要启用第一方和第三方 Cookie，并将 Teams FQDN 添加到受信任的站点。这是除 14 行列出的套件级 FQDN、CDN 和遥测之外的补充内容。有关详细信息，请参阅 [ Microsoft Teams 的已知问题](/microsoftteams/known-issues)。||受信任的站点|
+|16|**Microsoft Teams FQDN** <p> 如果你使用的是 Internet Explorer 或 Microsoft Edge，则需要启用第一方和第三方 Cookie，并将 Teams FQDN 添加到受信任的站点。这是除 14 行列出的套件级 FQDN、CDN 和遥测之外的补充内容。有关详细信息，请参阅 [ Microsoft Teams 的已知问题](/microsoftteams/known-issues)。||受信任的站点|
 |17 |**SharePoint Online 和 OneDrive for Business FQDN** <p> FQDN 中带有“\<tenant\>” 的所有“.sharepoint.com” FQDN 都需要在客户的 IE 或 Edge 受信任的站点区域中才能起作用。除了 14 行列出的套件级 FQDN、CDN 和遥测之外，还需要添加这些终结点。||受信任的站点|
 |18 |**Yammer**  <br> Yammer 仅在浏览器中可用，并要求经过身份验证的用户通过代理传递。所有 Yammer FQDN 都需要在客户的 IE 或 Edge 受信任的站点区域中才能起作用。||受信任的站点|
 |19|使用 [Azure AD Connect](/azure/active-directory/hybrid/) 将本地用户帐户同步到 Azure AD。|请参阅[混合标识所需的端口和协议](/azure/active-directory/hybrid/reference-connect-ports)、[解决 Azure AD 连接问题](/azure/active-directory/hybrid/tshoot-connect-connectivity)和 [Azure AD Connect Health 代理安装](/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints)。|仅出站服务器流量|

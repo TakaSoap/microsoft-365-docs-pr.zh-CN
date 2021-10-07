@@ -7,14 +7,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: ''
-localization_priority: medium
+ms.localizationpriority: medium
 description: 了解发现和浏览主题中信息的新Microsoft Viva方法。
-ms.openlocfilehash: 973337d4d42e6e1773f5a9e67f38a16610854517
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: 215282cfcaa81b3fa1d4f35782308989c5eb2434
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126790"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152534"
 ---
 # <a name="get-started-with-microsoft-viva-topics"></a>Microsoft Viva 主题入门
 

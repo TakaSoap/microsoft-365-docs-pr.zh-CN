@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要：使用 PowerShell 创建新的 SharePoint Online 网站，然后将用户和组添加到这些网站。
-ms.openlocfilehash: c9a55c6373e2ecc81c59b2e1bf2d1b8850dd1c13
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 76411621c0c313a31e4c92417b4472d6fd34ddac
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200433"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152678"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>使用 PowerShell 创建 SharePoint Online 网站并添加用户
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-使用 PowerShell for Microsoft 365创建 SharePoint Online 网站并添加用户时，快速重复执行任务的速度比在 Microsoft 365 管理中心 中快得多。 还可以执行在任务管理中无法Microsoft 365 管理中心。
+使用 PowerShell for Microsoft 365创建 SharePoint Online 网站并添加用户时，可以快速重复地执行任务，速度比在 Microsoft 365 管理中心 中快得多。 还可以执行在任务管理中无法Microsoft 365 管理中心。
 
 ## <a name="connect-to-sharepoint-online"></a>连接到 SharePoint Online
 
@@ -64,7 +64,7 @@ PowerShell cmdlet 导入 .csv 文件，然后通过管道将该文件通过管�
 2. 将桌面上的文件另存为 **SiteCollections.csv。**
 
 > [!TIP]
-> 在使用此脚本文件或其他.csv或Windows PowerShell文件之前，最佳做法是确保没有多余的或非打印字符。 在 Word 中打开该文件，在功能区单击“段落”图标以显示非打印字符。 应该没有多余的非打印字符。 例如，除了文件末尾的最后一个段落标记之外，应该没有其他任何段落标记。
+> 在使用此脚本文件或其他.csv或Windows PowerShell文件之前，一定要确保没有多余的或非打印字符。 在 Word 中打开该文件，在功能区单击“段落”图标以显示非打印字符。 应该没有多余的非打印字符。 例如，除了文件末尾的最后一个段落标记之外，应该没有其他任何段落标记。
 
 ### <a name="run-the-windows-powershell-command"></a>运行 Windows PowerShell 命令
 
@@ -86,7 +86,7 @@ PowerShell cmdlet 导入 .csv 文件，然后通过管道将该文件通过管�
 
 4. 请注意列表中的新网站集。 使用示例 CSV 文件，你将看到以下网站集 **：TeamSite01、Blog01、Project01** 和 **Community01**  
 
-就是这样。 已使用您创建的 .csv 文件以及一个 Windows PowerShell 命令创建多个网站集。 现在，可以创建用户并将其分配给这些网站。
+就是这样。 已使用您创建的 .csv 和一个 Windows PowerShell 命令创建了多个网站集。 现在，可以创建用户并将其分配给这些网站。
 
 ## <a name="step-2-add-users-and-groups"></a>步骤 2：添加用户和组
 

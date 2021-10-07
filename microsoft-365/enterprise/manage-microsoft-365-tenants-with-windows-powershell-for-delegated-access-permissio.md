@@ -1,12 +1,12 @@
 ---
-title: 通过Microsoft 365 DAP 合作伙伴的 Windows PowerShell 管理租户
+title: 通过Microsoft 365 DAP 合作伙伴Windows PowerShell租户
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,23 +17,23 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 本文将了解如何使用 PowerShell for Microsoft 365管理客户租赁。
-ms.openlocfilehash: ee0eb3a645d6590e2393fe8ea7820511df36ab4a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ff74cc0ec710996c66a659034f4fb4a49ee57ab1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201337"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150614"
 ---
-# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>通过Microsoft 365 DAP Windows PowerShell委派访问权限管理 (租户) 租户
+# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>使用Microsoft 365 DAP Windows PowerShell的委派访问权限管理 (租户) 租户
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 Windows PowerShell联合和云解决方案提供商 (CSP) 合作伙伴可以轻松地管理和报告客户租赁设置，这些设置在 Microsoft 365 管理中心 中不可用。 请注意，合作伙伴管理员帐户要连接到其客户租赁，需要代表以下方管理 (AOBO) 权限。
 
 委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们Microsoft 365订阅捆绑到他们的服务产品/服务中。 当他们销售 Microsoft 365 订阅时，他们将自动获得代表 (AOBO) 管理客户租赁的权限，以便可以管理和报告客户租赁。
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-本主题中的过程需要您连接到 连接[Microsoft 365 PowerShell](connect-to-microsoft-365-powershell.md)进行连接。
+本主题中的过程需要您连接到 连接[Microsoft 365 PowerShell 进行连接](connect-to-microsoft-365-powershell.md)。
 
 您也需要您的合作伙伴租户管理员凭据。
 

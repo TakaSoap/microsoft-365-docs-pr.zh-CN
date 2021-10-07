@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: medium
 description: 深入了解 Microsoft SharePoint Syntex 中的短语列表、正则表达式和接近度解释类型。
-ms.openlocfilehash: 99b3160e29a4c81a50d152187863d1dfb0cfa405
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
-ms.translationtype: HT
+ms.openlocfilehash: 4f155b4a7e6aef9c12b97f56e414de9fcda88536
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088009"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152822"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的说明类型
 

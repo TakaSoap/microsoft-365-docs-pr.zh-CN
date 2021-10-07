@@ -3,15 +3,13 @@ title: Mac 上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 了解如何在 Mac 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 安装， 部署， 卸载， intune， jamf， macos， big sur， catalina， mojave， mde for mac
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 827ea407d51f657914161056d97be648b3282190
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 4fe0d1b073a2efb14b8b771a2786889cbaa8e892
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124765"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149882"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
@@ -106,6 +104,10 @@ Mac 上的 Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可�
 > 符合条件的许可用户可以在最多五台并发设备上使用 Microsoft Defender for Endpoint。
 > Microsoft Defender for Endpoint 还可从云解决方案提供商云解决方案提供商 (购买) 。 通过云解决方案提供商购买时，不需要列出 Microsoft 批量许可产品/服务。
 
+### <a name="configuring-exclusions"></a>配置排除项
+
+向 Microsoft Defender 添加排除项时，你应当注意适用于 microsoft Defender 的常见[排除Microsoft Defender 防病毒](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+
 ### <a name="network-connections"></a>网络连接
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 应确保没有拒绝访问这些 URL 的防火墙或网络筛选规则，或者您可能需要专门为它们创建允许规则。 
@@ -142,7 +144,7 @@ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https:
  `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
-> 建议您在客户端设备上保持 [启用 (](https://support.apple.com/HT204899) SIP) 系统完整性保护。 SIP 是内置的 macOS 安全功能，可防止对操作系统进行低级篡改，并且默认启用。
+> 建议在客户端设备上保持 [启用 (](https://support.apple.com/HT204899) SIP) 系统完整性保护。 SIP 是内置的 macOS 安全功能，可防止对操作系统进行低级篡改，并且默认启用。
 
 安装 Microsoft Defender for Endpoint 后，可通过在终端中运行以下命令来验证连接性：
 

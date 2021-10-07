@@ -9,7 +9,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,17 +18,17 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: 使用此测试实验室指南创建轻型测试环境，以Microsoft 365企业版。
-ms.openlocfilehash: 0b8e0a71c8708d2faec0e263c220e3f3d91931f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 使用此测试实验室指南创建轻型测试环境，以测试Microsoft 365测试。
+ms.openlocfilehash: 742fc93b64d2e3c1d858931eb7dbc591ebcd8e9d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195750"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152714"
 ---
 # <a name="the-lightweight-base-configuration"></a>轻型基本配置
 
-*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版测试环境。*
+*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
 
 本文介绍如何创建具有 Microsoft 365 E5 订阅和运行 Windows 10 企业版 的计算机的简化Windows 10 企业版。
 
@@ -46,14 +46,14 @@ ms.locfileid: "59195750"
 ![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请参阅 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请参阅 Microsoft 365 for enterprise Test [Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 >[!NOTE]
 >不妨打印这篇文章，以便记录在 30 天的 Office 365 试用版订阅期内需要对此环境使用的特定信息。 可以轻松地将该订阅的试用期再延长 30 天。 对于永久性测试环境，请创建一个包含单独 Azure AD 租户和少量许可证的新付费订阅。
 
 ## <a name="phase-1-create-your-microsoft-365-e5-subscription"></a>阶段 1：创建Microsoft 365 E5订阅
 
-我们先使用Microsoft 365 E5试用版订阅，然后将Microsoft 365 E5订阅添加到该订阅。
+我们首先创建Microsoft 365 E5试用版订阅，然后将Microsoft 365 E5订阅添加到该订阅。
 
 >[!NOTE]
 >我们建议你创建订阅的试用Office 365，以便你的测试环境具有独立于你当前拥有的任何付费订阅的 Azure AD 租户。 这种分离意味着可以在测试租户中添加和删除用户和组，而不会影响生产订阅。
@@ -80,7 +80,7 @@ ms.locfileid: "59195750"
    记录在安全位置输入的密码。
    此值被称为 **“全局管理员名称”**。
 7. 选择 **"转到设置"。**
-8. In Office 365 E5 Setup， select **Continue using your *organization*.onmicrosoft.com for email and signing in**， and then select Exit and continue **later**.
+8. 在Office 365 E5安装程序中，选择"继续使用 **组织的.onmicrosoft.com 电子邮件和登录"，** 然后选择"**退出"，稍后继续**。
 
 你应当查看 Microsoft 365 管理中心。
     
@@ -90,9 +90,9 @@ ms.locfileid: "59195750"
   
 若要从计算机使用 Azure Active Directory PowerShell for Graph 模块连接到订阅，请使用 连接 中的说明Microsoft 365 [PowerShell 进行连接](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
     
-在 **"Windows PowerShell凭据** 请求"对话框中，输入全局管理员名称 (例如，jdoe@contosotoycompany.onmicrosoft.com) 密码。 
+在 **"Windows PowerShell凭据** 请求"对话框中，输入全局管理员 (例如，jdoe@contosotoycompany.onmicrosoft.com) 密码。 
   
-填写组织名称 (例如 *contosotoycompany*) 、位置的两字符国家/地区代码、公用帐户密码，然后从 PowerShell 提示符处运行以下命令：
+填写组织名称 (例如 *contosotoycompany*) 、所在位置的两字符国家/地区代码、公用帐户密码，然后从 PowerShell 提示符处运行以下命令：
 
 ```powershell
 $orgName="<organization name>"
@@ -148,7 +148,7 @@ for($i=2;$i -le 4; $i++) {
 
 如果您只需要一Office 365测试环境，则无需阅读本文的其余部分。
 
-有关适用于 Office 365 和 Microsoft 365 的其他测试实验室Microsoft 365，请参阅企业测试[实验室指南](m365-enterprise-test-lab-guides.md)。
+有关适用于 Office 365 和 Microsoft 365 的其他测试实验室Microsoft 365，请参阅 Microsoft 365[企业测试实验室指南](m365-enterprise-test-lab-guides.md)。
   
 ## <a name="phase-3-add-a-microsoft-365-e5-trial-subscription"></a>第 3 阶段：添加 Microsoft 365 E5 试用版订阅
 
@@ -162,13 +162,13 @@ for($i=2;$i -le 4; $i++) {
     
 3. 在"**购买服务**"页上 **，Microsoft 365 E5"，** 然后选择"**获取免费试用版"。**
 
-4. 在 **"Microsoft 365 E5试用版**"页上，决定接收短信或电话呼叫，输入电话号码，然后选择"给我发短信"或"**呼叫我"。** 执行验证。
+4. 在 **"Microsoft 365 E5"** 页面上，决定接收短信或电话呼叫，输入电话号码，然后选择"给我发短信"或"**呼叫我"。** 执行验证。
 
 5. 在"**确认订单"页上**，选择"**立即试用"。**
 
 6. 在"**订单收据"** 页上，选择"继续 **"。**
 
-7. 在"Microsoft 365 管理中心中，选择"**用户**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户"。**</a>
+7. 在"Microsoft 365 管理中心"中，选择"**用户**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户"。**</a>
 
 8. 在 **"活动用户"** 中，选择管理员帐户。
 
@@ -188,7 +188,7 @@ for($i=2;$i -le 4; $i++) {
 - Microsoft 365 E5 试用版订阅。
 - 所有适当的用户帐户（无论是全局管理员帐户还是全部五个用户帐户）都可以使用 Microsoft 365 E5。
     
-生成的配置（可添加Microsoft 365 E5配置）如下所示：
+生成的配置（可添加Microsoft 365 E5）如下所示：
   
 ![Microsoft 3656 测试环境的第 3 Enterprise阶段。](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -209,7 +209,7 @@ for($i=2;$i -le 4; $i++) {
 要在 Microsoft Azure 中创建 Windows 10 虚拟机，***你必须拥有基于 Visual Studio 的订阅***，以便有权访问 Windows 10 企业版的映像。其他类型的 Azure 订阅（如试用版和付费订阅）均无权访问此映像。有关最新信息，请参阅 [在 Azure 中使用 Windows 客户端实现开发/测试方案](/azure/virtual-machines/windows/client-images)。
   
 > [!NOTE]
-> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 这些命令集构建Windows 10 企业版 WIN10 及其所有所需基础结构（包括资源组、存储帐户和虚拟网络）的虚拟机。 如果你已熟悉 Azure 基础结构服务，请根据当前部署的基础结构调整这些说明。
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 这些命令集构建Windows 10 企业版 WIN10 及其所有必需基础结构（包括资源组、存储帐户和虚拟网络）的虚拟机。 如果你已熟悉 Azure 基础结构服务，请根据当前部署的基础结构调整这些说明。
   
 首先，启动 Microsoft PowerShell 提示符。
   
@@ -277,15 +277,15 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 接下来，将 WIN10 计算机联接到 Microsoft 365 E5 订阅的 Azure AD 租户中。
   
-1. 在 WIN10 计算机的桌面上，选择"开始> 设置 >帐户>**访问工作或学校> 连接"**。
+1. 在 WIN10 计算机的桌面上，选择"开始> 设置 >**帐户>访问工作或学校> 连接。**
     
 2. 在 **"设置工作或学校帐户**"对话框中，选择 **"加入此设备以Azure Active Directory"。**
     
-3. 在 **工作或学校帐户中**，输入你的订阅的全局管理员Microsoft 365 E5名称，然后选择下一 **步**。
+3. 在 **"工作或学校帐户**"中，输入你的订阅的全局管理员Microsoft 365 E5名称，然后选择"下一步 **"。**
     
 4. 在 **"输入密码**"中，输入全局管理员帐户的密码，然后选择"**登录"。**
     
-5. 当系统提示确保这是您的组织时，选择"**加入"，** 然后选择"完成 **"。**
+5. 当系统提示确保这是您的组织时，请选择"**加入**"，然后选择"完成 **"。**
     
 6. 关闭“设置”窗口。
     

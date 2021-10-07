@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,14 +20,14 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 search.appverid: MET150
-description: 解释企业帐单或发票上Microsoft 365、帐单和付款信息，以及如何更改采购订单编号。
+description: 解释你的企业帐单或发票Microsoft 365、帐单和付款信息，以及如何更改采购订单编号。
 ms.date: 05/04/2021
-ms.openlocfilehash: 8881129b6d7013c731dbcb24ebd5f8e21e410b93
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7b6f82570416b84d1b0b8c5b65cf13ce94522063
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171157"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151454"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解你的 Microsoft 365 商业版账单或发票
 
@@ -131,7 +131,7 @@ ms.locfileid: "59171157"
 
 [了解如何查找和查看帐单或](view-your-bill-or-invoice.md) 发票 (文章) \
 [Microsoft 365 商业版（墨西哥）的帐单信息](mexico-billing-info.md) （文章）\
-[更改帐单邮寄地址](change-your-billing-addresses.md) (文章) \
+[更改帐单邮寄 (](change-your-billing-addresses.md) 文章) \
 [更改组织地址、技术联系人电子邮件和其他信息](../../admin/manage/change-address-contact-and-more.md) ， (文章) \
 [支付商业Microsoft 365订阅费用 (](pay-for-your-subscription.md)文章) \
 [Minecraft:Education Edition 付款方式](/education/windows/school-get-minecraft)（文章）

@@ -9,18 +9,18 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Contoso 如何使用企业Microsoft 365安全功能。
-ms.openlocfilehash: 581314b34ab8f60533f1e2de99d4d1097086d1a0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Contoso 如何使用企业Microsoft 365功能。
+ms.openlocfilehash: f4d35ef3c5b862b42bf0a995f25b29c26eedd408
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200449"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152738"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Microsoft 365企业安全管理摘要
 
@@ -44,7 +44,7 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 2. 将数据分为三个安全级别
 
-   Contoso 仔细审阅并确定了三个级别，这三个级别用于标识Microsoft 365功能保护最有价值的数据的功能。
+   Contoso 仔细审阅并确定了三个级别，这三个级别用于Microsoft 365功能保护最有价值的数据。
 
 3. 确定数据级别的访问、保留和信息保护策略
 
@@ -56,7 +56,7 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 - 使用 MFA 和 PIM 的专用全局管理员帐户
 
-  Contoso 创建了三个使用强密码的专用全局管理员帐户，而不是将全局管理员角色分配给日常用户帐户。 帐户受 Azure AD 多重身份验证 (MFA) 和 azure AD Azure Active Directory (PIM) Privileged Identity Management (保护) 。 *PIM 仅在 Microsoft 365 E5 中提供。*
+  Contoso 创建了三个使用强密码的专用全局管理员帐户，而不是将全局管理员角色分配给日常用户帐户。 帐户受 Azure AD 多重身份验证 (MFA) 和 Azure Active Directory (Azure AD) Privileged Identity Management (PIM) 。 *PIM 仅在 Microsoft 365 E5 中提供。*
 
   使用 Azure **AD DC 管理员或****全局** 管理员帐户登录仅适用于特定管理任务。 密码仅对指定员工已知，并且只能在 Azure AD PIM 中配置的时段内使用。
 
@@ -68,7 +68,7 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
   MFA 为登录过程添加了一层额外的保护。 它要求用户在正确输入密码后确认智能手机上的电话呼叫、短信或应用通知。 通过 MFA，Azure AD 用户帐户受到保护，防止未经授权的登录，即使帐户密码受到威胁。
 
-   - 若要防止泄露订阅Microsoft 365，Contoso 需要所有 **Azure AD DC** 管理员或 **全局** 管理员帐户的 MFA。
+   - 若要防止泄露订阅Microsoft 365，Contoso 需要所有 **Azure AD DC** 管理员或 **全局管理员帐户** 的 MFA。
    - 为防止钓鱼攻击（攻击者会泄露组织中受信任的个人的凭据并发送恶意电子邮件），Contoso 对所有用户帐户（包括经理和行政人员）都启用了 MFA。
 
 - 使用条件访问策略更安全地访问设备和应用程序
@@ -77,11 +77,11 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 - Windows Hello 企业版
 
-  Contoso 部署了[Windows Hello for Business，](/windows/security/identity-protection/hello-for-business/hello-identity-verification)以便最终无需在运行 Windows 10 企业版 的 PC 和移动设备上使用强双因素身份验证。
+  Contoso 部署了[Windows Hello for Business，](/windows/security/identity-protection/hello-for-business/hello-identity-verification)最终无需在运行 Windows 10 企业版 的 PC 和移动设备上使用强双因素身份验证。
 
 - Windows Defender Credential Guard
 
-  若要使用管理权限阻止在操作系统中运行的目标攻击和恶意软件，Contoso 通过 AD DS Windows Defender[启用 Credential Guard。](/windows/security/identity-protection/credential-guard/credential-guard)
+  为了使用管理权限阻止在操作系统中运行的目标攻击和恶意软件，Contoso 通过 AD DS Windows Defender启用[Credential Guard。](/windows/security/identity-protection/credential-guard/credential-guard)
 
 ## <a name="threat-protection"></a>威胁防护
 
@@ -91,7 +91,7 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 - 使用 Microsoft Defender for Office 365 保护电子邮件流和邮箱审核Office 365 
 
-  Contoso 使用 Exchange Online Protection 和[Defender for Office 365](/office365/securitycompliance/office-365-atp)电子邮件传输的未知恶意软件、病毒和恶意 URL。
+  Contoso 使用 Exchange Online Protection 和[Defender for Office 365，](/office365/securitycompliance/office-365-atp)以抵御通过电子邮件传输的未知恶意软件、病毒和恶意 URL。
 
   Contoso 还启用了邮箱审核日志记录，以标识登录到用户邮箱、发送邮件以及执行由邮箱所有者、委派用户或管理员执行的其他活动的用户。
 

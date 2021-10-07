@@ -1,5 +1,5 @@
 ---
-title: 选择创建组时Microsoft 365域
+title: 选择在创建组时Microsoft 365域
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -8,7 +8,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -18,16 +18,16 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: 了解如何使用 PowerShell 配置电子邮件地址策略，选择Microsoft 365组时使用的域。
-ms.openlocfilehash: 4d620c3344f83f56afd05c00d78615331dd413ed
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f909decd81c94ea04adb3a714dd1dfd282e7f40e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197180"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149558"
 ---
-# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>选择创建组时Microsoft 365域
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>选择在创建组时Microsoft 365域
 
-一些组织使用单独的电子邮件域，以区分不同的业务部分。 可以指定在用户创建用户组时，应该Microsoft 365域。
+一些组织使用单独的电子邮件域，以区分不同的业务部分。 可以指定在用户创建组时，应该Microsoft 365域。
   
 如果您的组织需要用户在企业的默认接受域外的其他域中创建其组，您可以通过使用 PowerShell 为 EAP (电子邮件地址策略) 允许此操作。
 
@@ -46,11 +46,11 @@ ms.locfileid: "59197180"
 以下两种方案说明了如何做到这一点。
 
 > [!NOTE]
-> 当你拥有多个 EAP 时，将按优先级顺序评估它们。 值 1 表示最高优先级。 EAP 匹配后，不会进一步计算 EAP，并且按匹配的 EAP 在组上标记的地址。 > 如果没有符合指定条件的 EAP，则组将设置在组织的默认接受域中。 若要详细了解[如何添加接受](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)Exchange Online，请参阅管理域中的接受域。
+> 当你拥有多个 EAP 时，将按优先级顺序评估它们。 值 1 表示最高优先级。 EAP 匹配后，不会进一步计算 EAP，并且按匹配的 EAP 在组上标记的地址。 > 如果没有符合指定条件的 EAP，则组将设置在组织的默认接受域中。 请参阅[管理域中的接受Exchange Online，](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)详细了解如何添加接受域。
   
 ### <a name="scenario-1"></a>方案 1
 
-以下示例演示如何在 Microsoft 365 域中设置组织的所有 groups.contoso.com 组。
+以下示例演示如何在域中Microsoft 365组织的所有组 groups.contoso.com 组。
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -66,13 +66,13 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
   New-EmailAddressPolicy -Name StudentsGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Students'} -Priority 1
   ```
 
-- 教职员工创建的组 (部门设置为 **"** 教职员工"或电子邮件地址的用户 faculty.contoso.com) ) 域中 faculty.groups.contoso.com 组。 请使用此命令：
+- 教职员工创建的组 (部门设置为"教职员工"或电子邮件地址的用户faculty.contoso.com) ) 域中 faculty.groups.contoso.com 组。 请使用此命令：
     
   ```
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
   ```
 
-- 由任何其他用户创建的组在 groups.contoso.com 中创建。 请使用此命令：
+- 由任何其他用户创建的组在 groups.contoso.com 域中创建。 请使用此命令：
     
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
@@ -101,7 +101,7 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
   
 ## <a name="hybrid-requirements"></a>混合要求
 
-如果您的组织在混合方案中配置，请查看使用本地 Exchange 混合配置[Microsoft 365](/exchange/hybrid-deployment/set-up-microsoft-365-groups)组，以确保组织满足创建 Microsoft 365 组的要求。 
+如果组织在混合方案中配置，请查看使用本地 Exchange 混合配置[Microsoft 365](/exchange/hybrid-deployment/set-up-microsoft-365-groups)组，以确保组织满足创建 Microsoft 365 组的要求。 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>有关使用电子邮件地址策略组的其他信息：
 
@@ -125,4 +125,4 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
 
 [Create your collaboration governance plan (](collaboration-governance-first.md) article) 
 
-[在管理Microsoft 365中心创建一个 (](../admin/create-groups/create-groups.md)组) 
+[在管理Microsoft 365中心创建一个](../admin/create-groups/create-groups.md) (组) 

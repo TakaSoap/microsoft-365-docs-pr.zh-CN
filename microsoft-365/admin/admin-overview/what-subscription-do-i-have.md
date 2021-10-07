@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,18 +23,18 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何通过进入"你的产品"页面来验证你的组织拥有哪些订阅。
 ms.date: 01/21/2021
-ms.openlocfilehash: 9c6870ae7008dee25a8dd6e5a3e2f44e534b0028
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: df18228d8b5b551f8c64246c96aa6f397ec13484
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59785995"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153950"
 ---
 # <a name="what-subscription-do-i-have"></a>我有什么订阅？
 
 如果你是管理员，可以进入管理中心来验证你的组织拥有哪些订阅。
   
-**不是管理员？** 请参阅[Microsoft 365哪些适用于企业的产品或许可证？](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+**不是管理员？** 请参阅[Microsoft 365商业版产品或许可证是什么？](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 2. 在 **"产品** "选项卡上，你将看到所有订阅。 每个订阅行包含有关许可证、订阅状态和计费的信息。
@@ -43,7 +43,7 @@ ms.locfileid: "59785995"
 
 ## <a name="related-content"></a>相关内容
   
-[订阅和计费链接](../../commerce/index.yml) (页面) \
+[订阅和计费 (](../../commerce/index.yml) 页面) \
 [查看帐单或发票](../../commerce/billing-and-payments/view-your-bill-or-invoice.md)（文章）\
-[支付订阅费用 (](../../commerce/billing-and-payments/pay-for-your-subscription.md) 文章) \
-[更改帐单邮寄 (](../../commerce/billing-and-payments/change-your-billing-addresses.md) 文章) 
+[支付订阅费用](../../commerce/billing-and-payments/pay-for-your-subscription.md) (文章) \
+[更改帐单邮寄地址](../../commerce/billing-and-payments/change-your-billing-addresses.md) (文章) 

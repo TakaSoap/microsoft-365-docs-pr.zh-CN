@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 26033189eb5d63aee632dba2254f2109d273ae0b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2bda97c9168f7d3162c07ece4629dad795645638
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170427"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154130"
 ---
 # <a name="step-2-uploading-a-package"></a>步骤 2：上载程序包
 
@@ -42,7 +42,7 @@ ms.locfileid: "59170427"
     > [!NOTE]
     > 输入的程序包名称和版本组合在组织中必须是唯一的。 检查标记对此进行验证，如下所示。
 
-    - 如果选择重用程序包的名称，则版本号必须是唯一 (也就是说，从不用于包含该特定名称的程序包) 。
+    - 如果选择重复使用程序包的名称，版本号必须是唯一的 (也就是说，从不用于包含该特定名称的程序包) 。
 
     - 如果程序包名称 + 版本的组合未通过唯一性检查，你将看到一条错误消息，显示"程序包包含此程序包版本 *已存在"。*
 
@@ -54,7 +54,7 @@ ms.locfileid: "59170427"
 
 3. 选择要在此程序包上运行的测试类型。
 
-    开 **箱即用 OOB (测试***) 安装、* 启动、*关闭* 和 *卸载* 程序包。  安装后，在运行单个卸载之前，launch-close 例程将重复 30 次。
+      **Out-of-box (OOB)***测试执行程序包* 的安装、启动、*关闭* 和卸载。 安装后，在运行单个卸载之前，launch-close 例程将重复 30 次。
 
     此 OOB 测试提供了程序包上的标准化遥测，可跨内部版本Windows比较。
 
@@ -65,7 +65,7 @@ ms.locfileid: "59170427"
 
 4. 选择操作系统更新类型。
 
-    - 通过"安全更新"，可以针对预发布每月安全更新Windows增量改动测试程序包。
+    - 通过"安全更新"，可以针对预发布每月安全更新中Windows增量改动测试程序包。
     - 利用"功能更新"，可以针对预览体验计划Windows预发布每两年功能更新版本测试Windows程序包。
     <!---
     Change to the correct picture
@@ -74,9 +74,9 @@ ms.locfileid: "59170427"
 
 5. 选择操作系统版本 () 安全更新测试。
 
-    在多选下拉列表中， (安装) Windows选择操作系统版本。
+    在多选下拉列表中，选择操作系统版本 () Windows程序包的程序包。
 
-    - 若要仅针对客户端Windows测试程序包，请从Windows列表中选择适用的 11 操作系统版本。
+    - 若要仅针对客户端Windows测试程序包，请从菜单Windows 11 操作系统版本。
     - 若要仅针对 Windows Server 操作系统测试程序包，请从Windows选择适用的服务器操作系统版本。
     - 若要仅针对 Windows 和 Windows Server 操作系统测试程序包，请从菜单列表中选择所有适用的操作系统。
 
@@ -115,7 +115,7 @@ ms.locfileid: "59170427"
 我们的下一篇文章介绍了将二进制文件上传到服务。
 
 > [!div class="nextstepaction"]
-> [后续步骤](binaries.md)
+> [下一步](binaries.md)
 
 <!---
 Add button for next page

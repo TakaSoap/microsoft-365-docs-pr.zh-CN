@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 学习如何使用精确数据匹配和敏感信息类型向导。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dbba5e0e63f473d12b40c902001332c1689e4d12
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 056dc858fdd2da729cb076afc5deb50f1d21602e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200533"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150962"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>使用精确数据匹配架构和敏感信息类型向导
 
-[使用基于精确数据匹配 (EDM) 分类创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 包含多个步骤。  可以使用此向导创建架构和敏感信息类型， (SIT) 模式 (包) 文件，以帮助简化过程。
+[使用基于精确数据匹配 (EDM) 分类创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 包含多个步骤。  可以使用此向导创建架构和敏感信息类型， (SIT) 模式 (规则包) 文件来帮助简化此过程。
 
 可以使用此向导而无需：
 
@@ -39,7 +39,7 @@ ms.locfileid: "59200533"
 
 1. 通过 EDM [工作流程概览](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance) 熟悉使用 EDM 创建自定义敏感信息类型的步骤。
 
-2. 执行以 [.tsv 或 .tsv .csv保存敏感数据中的步骤](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format)。
+2. 执行以 .csv [.tsv 格式保存敏感数据中的步骤](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format)。
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>使用精确数据匹配架构和敏感信息类型模式向导
 
@@ -51,7 +51,7 @@ ms.locfileid: "59200533"
 
 3. 填入相应的 **名称** 和 **说明**。
 
-4. 如果需要 **此行为，** 请选择"忽略所有架构字段的分隔符和标点符号"。 若要了解有关将 EDM 配置为忽略大小写或分隔符的信息，请参阅使用基于 [EDM 和 EDM](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)的精确数据匹配 (自定义) 类型。
+4. 如果需要 **此行为，** 请选择"忽略所有架构字段的分隔符和标点符号"。 若要了解有关配置 EDM 以忽略大小写或分隔符的信息，请参阅使用基于 [EDM 和 EDM](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)的精确数据匹配 (自定义) 类型。
 
 5. 在 **架构字段 #1** 中填入所需值，并按需要添加新字段。 
 
@@ -93,7 +93,7 @@ ms.locfileid: "59200533"
 
 1. 打开 **合规中心**  >  **数据分类**  >  **敏感信息类型**。
 2. 从列表中选择 EDM SIT，然后在飞 **出窗格中** 选择"测试"。 
-3. Upload包含要检测的数据的项，例如创建一个包含敏感信息表中的部分数据的项。 如果在架构中使用了可配置的匹配功能来定义忽略的分隔符，请确保该项包含包含和不带这些分隔符的示例。
+3. Upload包含要检测的数据的项，例如创建包含敏感信息表中的部分数据的项。 如果在架构中使用了可配置的匹配功能来定义忽略的分隔符，请确保该项包含包含和不带这些分隔符的示例。
 4. 上传并扫描文件后，检查 EDM SIT 的匹配项。
 5. 如果 **SIT** 中的 Test 函数检测到匹配项，请检查它未进行修整或提取不正确。 例如，通过仅提取它应检测的完整字符串的子字符串，或仅选取多词字符串中的第一个单词，或在提取中添加额外的符号或字符。 有关 [正则表达式语言参考，](/dotnet/standard/base-types/regular-expression-language-quick-reference) 请参阅正则表达式语言 - 快速参考。 
 

@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4bc5b5b1ec612bc8f14c6ac67a2c00ce75ac4516
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5e6dbf619854d3c6e2c14e49bac7227a7bd31116
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171264"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150086"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>按 ID 获取一个修正活动
 
@@ -46,7 +46,7 @@ ms.locfileid: "59171264"
 
 [详细了解修正活动](tvm-remediation.md)。
 
-## <a name="list-a-specified-remediation-activity-for-id"></a>列出 id 指定的 (活动) 
+## <a name="list-a-specified-remediation-activity-for-id"></a>列出 id 指定的 (修正) 
 
 **URL：** GET： /api/remediationTasks/ \{ id\}
 
@@ -56,7 +56,7 @@ ms.locfileid: "59171264"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|RemediationTasks.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
+Application|RemediationTasks.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
 委派（工作或学校帐户）|RemediationTask.Read.Read|\'阅读威胁和漏洞管理漏洞信息\'
 
 ## <a name="properties"></a>属性
@@ -66,24 +66,24 @@ ms.locfileid: "59171264"
 “类别”|String|软件/安全配置 (修正活动的) |软件
 completerEmail|String|如果修正活动是由某人手动完成的，此列将包含他们的电子邮件|空
 completerId|String|如果修正活动是由某人手动完成的，则此列包含其对象 ID|空
-completionMethod|String|如果由 (选择"标记为已完成") 或"手动"修补所有设备，则修正活动可以"自动"完成。|自动
+completionMethod|String|如果所有设备都由选择"标记为已完成) 或"手动" (，可"自动"完成修正活动。|自动
 createdOn|日期时间|创建此修正活动的时间|2021-01-12T18：54：11.5499478Z
 说明|String|此修正活动的说明|将 Microsoft Silverlight 更新到更高版本，以减少影响设备的已知漏洞。
 dueOn|日期时间|此修正活动的创建者设置的截止日期|2021-01-13T00：00：00Z
 fixedDevices||已修复的设备数量|2
-id|String|此修正活动的 ID|097d9735-5479-4899-b1b7-77398899df92
-nameId|String|相关产品名称|Microsoft Silverlight
-priority|String|针对此修正活动的创建者设置的优先级 (高\中\低) |高
-productId|String|相关产品 ID|microsoft-_-silverlight
+id|字符串|此修正活动的 ID|097d9735-5479-4899-b1b7-77398899df92
+nameId|字符串|相关产品名称|Microsoft Silverlight
+priority|String|为此修正活动设置的创建者设置的优先级 (高\中\低) |高
+productId|字符串|相关产品 ID|microsoft-_-silverlight
 productivityImpactRemediationType|String|只能请求对没有用户影响的设备进行一些配置更改。 此值指示"所有公开的设备"或"仅不会影响用户的设备"之间的选择。|AllExposedAssets
 rbacGroupNames|String|相关设备组名称|[ "Windows Servers"， "Windows 10" ]
-recommendedProgram|String|要升级到的推荐程序|空
+recommendedProgram|字符串|要升级到的推荐程序|空
 recommendedVendor|String|建议升级到的供应商|空
-recommendedVersion|String|要更新/升级到的建议版本|空
+recommendedVersion|字符串|要更新/升级到的建议版本|空
 relatedComponent|String|此修正活动的相关组件 (安全建议计划的相关组件) |Microsoft Microsoft Silverlight
 requesterEmail|String|创建者电子邮件地址|globaladmin@UserName.contoso.com
 requesterId|String|Creator 对象 ID|r647211f-2e16-43f2-a480-16ar3a2a796r
-requesterNotes|String|注释 (为) 修正活动添加的自定义文本|空
+requesterNotes|字符串|注释 (此) 活动的创建者添加的自定义文本|空
 scid|String|相关安全建议 SCID|空
 status|String|修正活动状态 (/已完成) |活动
 statusLastModifiedOn|日期时间|更新状态字段的日期|2021-01-12T18：54：11.5499487Z

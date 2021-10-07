@@ -6,19 +6,19 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: 有关输入服务产品/服务信息的说明，包括服务名称、说明、位置、持续时间和定价。 还可以标记有资格提供服务的员工。
-ms.openlocfilehash: aad627a164b7f33b82bfa29db6224b8c5206b5e1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b276d9ec2d943527f1a6d8ab310fc91406f216c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171189"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151550"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>在 Bookings 中定义服务产品
 
-在 Microsoft Bookings 中定义服务产品/服务时，可设置服务名称、说明、位置 (选择是希望自己开会还是参加联机会议) 、持续时间、向客户和员工发送的默认提醒、有关服务的内部说明以及定价。 还可以标记有资格提供服务的员工。 然后，当客户到您的业务网站预订约会时，他们可精确查看可用的约会类型、选择要提供服务的人及其服务成本。
+在 Microsoft Bookings 中定义服务产品/服务时，可设置服务名称、说明、位置 (选择是希望自己开会还是具有联机会议) 、持续时间、向客户和员工发送的默认提醒、有关服务的内部说明以及定价。 还可以标记有资格提供服务的员工。 然后，当客户到您的业务网站预订约会时，他们可精确查看可用的约会类型、选择要提供服务的人及其服务成本。
 
 您还可以将自定义信息和 URL 添加到你在某人通过你的预订页面预订服务时发送的电子邮件确认和提醒。
 
@@ -26,7 +26,7 @@ ms.locfileid: "59171189"
 
 1. In Microsoft 365， select the App launcher， and then select **Bookings**.
 
-2. 转到 **"设置"**  ->  [页面，](https://outlook.office.com/bookings/settings/services)然后选择"**添加新服务"。**
+2. 转到 **"设置**  ->  [管理服务"页](https://outlook.office.com/bookings/settings/services)，然后选择"**添加新服务"。**
 
 3. 在" **基本详细信息** "页上，添加选择。
 
@@ -45,7 +45,7 @@ ms.locfileid: "59171189"
        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="在 Bookings 中Teams会议的链接示例。":::
 
        > [!NOTE]
-       > Teams，可以通过 Teams 移动应用、Teams桌面应用、Web 浏览器或电话拨入加入会议。 我们强烈建议启用Teams作为租户的默认联机会议服务，以获得最佳预订虚拟约会体验。
+       > Teams，可以通过 Teams 移动应用、Teams桌面应用、Web 浏览器或电话拨入加入会议。 我们强烈建议将 Teams启用为租户的默认联机会议服务，以获得最佳预订虚拟约会体验。
 
    - 已禁用：
      - 约会将不包含会议选项，并且启用"添加联机会议"时显示的所有与会议相关的字段将不会显示。
@@ -70,13 +70,13 @@ ms.locfileid: "59171189"
 
      客户 **确认** 电子邮件中将显示"管理预订"按钮。 当客户选择此按钮时，将显示三个选项：
 
-     - **重新计划** 选择此选项将用户带到特定于服务的 Self-Service 页面，在此页面中，用户可以从原始预订中选择相同服务和相同员工的新时间和/或日期。 请注意，即使默认情况下原始员工附加到重新安排的预订，用户也具有更改员工成员的选项。
+     - **重新计划** 选择此选项将用户带到特定于服务的 Self-Service 页面，在此页面中，用户可以从原始预订中选择相同服务和同一员工的新时间和/或日期。 请注意，即使默认情况下原始员工附加到重新安排的预订，用户也具有更改员工成员的选项。
      - **取消预订** 这将取消预订，并从员工日历中删除它。
-     - **新预订** 此选项将用户带到"Self-Service"页面，并列出所有服务和员工，以计划新的预订。
+     - **新预订** 此选项将用户带到已列出Self-Service和员工以安排新预订的"开始"页面。
 
         :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Bookings 中的&quot;管理预订&quot;按钮。":::
 
-      只有在你熟悉客户访问"页面"页面时，才建议Self-Service此设置。
+      只有在你熟悉客户访问该页面时，才建议Self-Service此设置。
 
    - 已禁用：
 

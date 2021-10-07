@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2e5b4b67980c3d1450832e84ab0d2a1396c2a69d
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: c9cbd02d6def89c4f4c92e9c129e81a5ec796d70
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988375"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150054"
 ---
 # <a name="list-machines-api"></a>列出计算机 API
 
@@ -55,8 +55,8 @@ OData 的查询 `$filter` 在 上受支持：、 `computerDnsName` `id` `version
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Machine.Read.All|"读取所有计算机配置文件"
-应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+Application|Machine.Read.All|"读取所有计算机配置文件"
+Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.Read|"读取计算机信息"
 委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 
@@ -64,7 +64,7 @@ OData 的查询 `$filter` 在 上受支持：、 `computerDnsName` `id` `version
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
+> - 响应将仅包括用户有权访问的设备，基于设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -76,7 +76,7 @@ GET https://api.securitycenter.microsoft.com/api/machines
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

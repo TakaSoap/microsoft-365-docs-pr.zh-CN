@@ -2,26 +2,24 @@
 title: Microsoft 365 Defender时区设置
 description: 使用此处包含的信息配置Microsoft 365 Defender时区设置并查看许可证信息。
 keywords: 设置， Microsoft Defender， 网络安全威胁智能， 适用于终结点的 Microsoft Defender， 时区， utc， 本地时间， 许可证
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65ed76f115b9e9f39e18d69a50e736c561d18c7c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 461b87750b40e37493ff88acfa2b4a5521494841
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162254"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151814"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender时区设置
 
@@ -51,7 +49,7 @@ Microsoft Defender for Endpoint 可以显示协调世界时 (UTC) 本地时间�
 
 默认情况下，Microsoft Defender for Endpoint 使用 UTC 时间。
 
-将 Microsoft Defender for Endpoint 时区设置为 UTC 将显示所有用户的所有 (、事件和其他) UTC 格式。 这可以帮助在全球不同位置工作的安全分析师在调查事件时使用相同的时间戳。
+将 Microsoft Defender for Endpoint 时区设置为 UTC 将显示所有用户的所有 (、事件和其他) UTC 格式的时间戳。 这可以帮助在全球不同位置工作的安全分析师在调查事件时使用相同的时间戳。
 
 ### <a name="local-time-zone"></a>本地时区
 

@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 2abe290fc5956b5f8df1931b2142a35df8b53817
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 22229d495e9b7694d07f25b60e854240f7c420c8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162283"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152028"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>在自动调查后查看修正操作
 
@@ -45,9 +45,9 @@ ms.locfileid: "59162283"
 
 下面是一些示例：
 
-- **示例 1：Fabrikam** 的设备组设置为"完全 **-** 修正威胁 (推荐设置) 。 在这种情况下，对于在自动调查后被视为恶意的项目，将自动采取修正 [ (请参阅查看](#review-completed-actions) 已完成) 。
+- **示例 1：Fabrikam** 的设备组设置为"完全 **-** 根据建议设置 (自动修正) 。 在这种情况下，对于在自动调查后被视为恶意的项目，将自动采取修正 [ (请参阅查看](#review-completed-actions) 已完成) 。
 
-- **示例** 2：Contoso 的设备包含在为 Semi 设置的设备组中 ， **需要批准任何修正**。 在这种情况下，Contoso 的安全运营团队必须在自动调查后审阅和批准所有修正操作 [ (查看挂起](#review-pending-actions)) 。
+- **示例** 2：Contoso 的设备包含在为 Semi 设置的设备组中 ， **需要批准任何修正**。 在这种情况下，Contoso 的安全运营团队必须审阅和批准自动调查后的所有修正操作 [ (查看挂起](#review-pending-actions) 的操作) 。
 
 - **示例 3：Tailspin** Toys 的设备组设置为"无自动响应 (不建议) 。 在这种情况下，不会发生自动调查。 不会执行或挂起任何修正操作，并且不会在操作中心中记录其[](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)设备的任何 (请参阅管理[设备](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)组) 。
 
@@ -114,7 +114,7 @@ ms.locfileid: "59162283"
 
 |设备组设置|自动调查结果|需执行的操作|
 |---|---|---|
-|**完全 - 根据建议 (** 自动修正) |对于一 *条证据* ，已到达"恶意"裁定。 <p> 将自动执行相应的修正操作。|[查看已完成的操作](#review-completed-actions)|
+|**完全 - 根据建议设置** (自动修正) |对于一 *条证据* ，已到达"恶意"裁定。 <p> 将自动执行相应的修正操作。|[查看已完成的操作](#review-completed-actions)|
 |**完全 - 自动修正威胁**|对于一 *条证据* ，已到达"可疑"裁定。 <p> 修正操作正在等待审批以继续。|[批准 (或拒绝) 挂起的操作](#review-pending-actions)|
 |**Semi - 需要批准任何修正**|对于一条 *证据，* 已 *到达* "恶意"或"可疑"裁定。 <p> 修正操作正在等待审批以继续。|[批准 (或拒绝) 挂起的操作](#review-pending-actions)|
 |**Semi - 需要批准核心文件夹修正**|对于一 *条证据* ，已到达"恶意"裁定。 <p> 如果项目是文件或可执行文件，并且位于操作系统目录（如 Windows 文件夹或 Program files 文件夹）中，则修正操作将等待审批。 <p> 如果项目 *不在操作系统* 目录中，将自动执行修正操作。|<ol><li>[批准 (或拒绝) 挂起的操作](#review-pending-actions)</li><li>[查看已完成的操作](#review-completed-actions)</li></ol>|

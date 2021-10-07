@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -21,12 +21,12 @@ ms.custom:
 description: 管理员可以了解反垃圾邮件设置和筛选器，这些设置和筛选器有助于在 EOP Exchange Online Protection (中) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dcc96cf6ad7b7c6b43f4bc232cf0be67b72c1615
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 7a6cd11e25a29cd9b3866adb216464e021d15dc0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483779"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154346"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP 中的反垃圾邮件保护
 
@@ -40,14 +40,14 @@ ms.locfileid: "59483779"
 > [!NOTE]
 > 本主题面向管理员。 有关最终用户主题，请参阅 [垃圾邮件](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) 筛选器概述和 [了解垃圾邮件和网络钓鱼](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31)。
 
-在具有 Exchange Online 或独立 Exchange Online Protection (EOP) Exchange Online 邮箱的 Microsoft 365 组织中，电子邮件将自动受到 EOP 的垃圾邮件 (垃圾邮件) 保护。
+在 Microsoft 365 拥有 Exchange Online 或独立 Exchange Online Protection (EOP) 组织邮箱且没有 Exchange Online 邮箱的 Microsoft 365 组织中，EOP 会自动保护电子邮件免受垃圾邮件 (垃圾邮件) 攻击。
 
 Microsoft 的电子邮件安全路线图包括不匹配的跨产品方法。 EOP 反垃圾邮件和防钓鱼技术应用于我们的电子邮件平台，以为用户提供整个网络中最新的反垃圾邮件和防钓鱼工具及创新。 EOP 的目标是提供全面且可用的电子邮件服务，以帮助用户检测垃圾邮件、诈骗电子邮件威胁（网络钓鱼）和恶意软件，并免受其侵扰。
 
 随着电子邮件的普及，电子邮件滥用的问题也日趋严重。 无人监控的垃圾邮件会阻塞收件箱和网络、影响用户满意度，并阻碍合法电子邮件通信的有效性。 这就是 Microsoft 仍继续致力于反垃圾邮件技术的原因。 简单地说，它从包含和筛选垃圾邮件开始。
 
 > [!TIP]
-> 当您希望允许或阻止基于邮件信封的邮件（例如 (发件人的域或邮件源 IP 地址）的邮件时，以下反垃圾邮件技术很有用) 。 若要允许或阻止基于有效负载 (例如，邮件或附加文件的 URL) ，您应该使用租户允许 [/阻止列表门户](tenant-allow-block-list.md)。
+> 当您希望允许或阻止基于邮件信封的邮件（例如 (发件人的域或邮件发件人的源 IP 地址）的邮件时，以下反垃圾邮件技术) 。 若要允许或阻止基于有效负载 (例如，邮件或附加文件的 URL) ，则应该使用租户允许 [/阻止列表门户](tenant-allow-block-list.md)。
 
 ## <a name="anti-spam-technologies-in-eop"></a>EOP 中的反垃圾邮件技术
 
@@ -55,14 +55,14 @@ Microsoft 的电子邮件安全路线图包括不匹配的跨产品方法。 EOP
 
 EOP 中的反垃圾邮件设置由以下技术决定：
 
-- 连接 **筛选**：在入站电子邮件连接的早期，通过 IP 允许列表、IP 阻止列表和安全 *列表 (* Microsoft) 维护的受信任发件人的动态列表，标识好坏的电子邮件源服务器。 在连接筛选器策略中配置这些设置。 有关详细信息，请[通过配置连接筛选。](configure-the-connection-filter-policy.md)
+- 连接 **筛选**：在入站电子邮件连接的早期，通过 IP 允许列表、IP 阻止列表和安全列表 *(标识* 良好和坏的电子邮件源服务器，这是由 Microsoft) 维护的受信任发件人的动态但不可编辑的列表。 在连接筛选器策略中配置这些设置。 有关详细信息，请[通过配置连接筛选。](configure-the-connection-filter-policy.md)
 
-- **垃圾邮件筛选 (内容** 筛选) ：EOP 使用垃圾邮件筛选裁定 **垃圾邮件**、高可信度垃圾邮件、批量电子邮件、网络钓鱼电子邮件和高可信度钓鱼电子邮件对邮件进行分类。   您可以配置基于这些裁定要采取的操作，您可以为隔离而不是传递的邮件配置最终用户通知选项，以及可以使用隔离策略配置允许用户对隔离邮件执行哪些 [操作](quarantine-policies.md)。 有关详细信息，请参阅 Configure [anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md)。
+- **垃圾邮件筛选 (** 内容筛选) ：EOP 使用垃圾邮件筛选裁定 **垃圾邮件**、高可信度垃圾邮件、批量电子邮件、网络钓鱼电子邮件和高可信度钓鱼电子邮件对邮件进行分类。  您可以配置基于这些裁定要采取的操作，您可以为隔离而不是传递的邮件配置最终用户通知选项，以及可以使用隔离策略配置允许用户对隔离邮件执行哪些 [操作](quarantine-policies.md)。 有关详细信息，请参阅 Configure [anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md)。
 
   > [!NOTE]
   > 默认情况下，垃圾邮件筛选配置为将标记为垃圾邮件的邮件发送到收件人的"垃圾邮件"文件夹。 但是，在 EOP 保护内部部署 Exchange 邮箱的混合环境中，您需要在本地 Exchange 组织中配置两个邮件流规则 (也称为传输规则) ，以识别添加到邮件中的 EOP 垃圾邮件头。 有关详细信息，请参阅[在混合环境中将 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
-- **出站垃圾邮件筛选**：EOP 还会进行检查以确保您的用户不会在出站邮件内容中或超过出站邮件限制中发送垃圾邮件。 有关详细信息，请参阅 Configure [outbound spam filtering in Microsoft 365](configure-the-outbound-spam-policy.md)。
+- **出站垃圾邮件筛选**：EOP 还会进行检查以确保您的用户不会发送出站邮件内容或超出出站邮件限制的垃圾邮件。 有关详细信息，请参阅 Configure [outbound spam filtering in Microsoft 365](configure-the-outbound-spam-policy.md)。
 
 - **欺骗智能**：有关详细信息，请参阅 [EOP 中的反欺骗保护](anti-spoofing-protection.md)。
 
@@ -76,15 +76,15 @@ EOP 中的反垃圾邮件设置由以下技术决定：
 
 - **检查反垃圾邮件邮件头**：这些值将告诉您邮件被标记为垃圾邮件的原因，或邮件跳过垃圾邮件筛选的原因。 有关详细信息，请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。
 
-- **将 MX** 记录指向Microsoft 365：为了让 EOP 提供最佳保护，我们始终建议您先将电子邮件传递到Microsoft 365邮箱。 有关说明，请参阅[在任何 DNS 托管提供商上](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)为 Microsoft 365。
+- **将 MX 记录** 指向Microsoft 365：为了让 EOP 提供最佳保护，我们始终建议您先将电子邮件传递到 Microsoft 365。 有关说明，请参阅[在任何 DNS 托管提供商](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)上为Microsoft 365。
 
-  如果 MX 记录指向某些其他位置 (例如，第三方反垃圾邮件解决方案或设备) ，则 EOP 很难提供准确的垃圾邮件筛选。 在此方案中，您需要为连接器配置增强筛选 (也称为 _跳过列表_) 。 有关说明，请参阅[增强的连接器筛选Exchange Online。](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+  如果 MX 记录指向其他一些位置 (例如，第三方反垃圾邮件解决方案或) ，则 EOP 很难提供准确的垃圾邮件筛选。 在此方案中，您需要为连接器配置增强筛选 (也称为 _跳过列表_) 。 有关说明，请参阅[增强的连接器筛选Exchange Online。](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
 - **使用电子邮件身份验证**：如果你拥有电子邮件域，可以使用 DNS 帮助确保来自该域中发件人的邮件是合法的。 为了帮助防止 EOP 中的垃圾邮件和不需要的欺骗，请使用以下所有电子邮件身份验证方法：
 
   - **SPF：** 发件人策略框架针对发送域的所有者验证邮件的源 IP 地址。 有关 SPF 的快速介绍和快速配置，请参阅设置 [SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 若要更深入地了解 Microsoft 365 如何使用 SPF，或要了解故障排除或非标准部署（如混合部署），请从 [Microsoft 365 如何使用发件人策略框架 (SPF) 以防欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)入手。
 
-  - **DKIM：** 域密钥识别邮件将数字签名添加到从你的域发送的邮件的邮件头。 有关信息，请参阅[使用 DKIM](use-dkim-to-validate-outbound-email.md)验证从自定义域发送的出站Microsoft 365。
+  - **DKIM：** 域密钥识别邮件将数字签名添加到从你的域发送的邮件的邮件头。 有关信息，请参阅[使用 DKIM 验证从](use-dkim-to-validate-outbound-email.md)自定义域发送的出站Microsoft 365。
 
   - **DMARC：** 基于域的邮件身份验证、报告和一致性可帮助目标电子邮件系统确定对未通过 SPF 或 DKIM 检查的邮件执行哪些操作，并提供了另一个信任级别的电子邮件合作伙伴。 有关详细信息，请参阅使用[DMARC 验证电子邮件Microsoft 365。](use-dmarc-to-validate-email.md)
 
@@ -92,7 +92,7 @@ EOP 中的反垃圾邮件设置由以下技术决定：
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>阻止将垃圾邮件发送到收件箱
 
-- **验证你的** 组织设置：注意允许邮件跳过垃圾邮件筛选的设置 (例如，如果你将自己的域添加到反垃圾邮件策略中的允许域列表中) 。 有关我们建议的设置，请参阅 EOP 和 Microsoft Defender 的安全[Office 365推荐设置](recommended-settings-for-eop-and-office365.md)和[创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
+- **验证你的** 组织设置：注意允许邮件跳过垃圾邮件筛选的设置 (例如，如果你将自己的域添加到反垃圾邮件策略策略中的允许的) 。 有关我们建议的设置，请参阅[EOP](recommended-settings-for-eop-and-office365.md)和 Microsoft Defender 安全Office 365推荐设置和[创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
 - **验证垃圾邮件规则** 在用户邮箱中是否已启用：默认情况下已启用，但如果已禁用，则标记为垃圾邮件的邮件无法移动到"垃圾邮件"文件夹中。 有关详细信息，请参阅 Configure [junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md)。
 
@@ -108,15 +108,15 @@ EOP 中的反垃圾邮件设置由以下技术决定：
 
 - **验证用户的垃圾邮件Outlook设置：**
 
-  - **验证Outlook** 垃圾邮件筛选器是否被禁用：当 Outlook 垃圾邮件筛选器设置为默认值"无自动筛选"时，Outlook不会尝试将邮件分类为垃圾邮件。  当垃圾邮件筛选器设置为"低"或"高"时，Outlook垃圾邮件筛选器会使用自己的 SmartScreen 筛选器技术来标识垃圾邮件，并移动垃圾邮件文件夹，以便您可以获得误报。 请注意，Microsoft 已停止在 2016 年 11 月Exchange Outlook SmartScreen 筛选器生成垃圾邮件定义更新。 现有的 SmartScreen 垃圾邮件定义已就位，但其有效性可能会随着时间的推移而降低。
+  - **验证Outlook** 垃圾邮件筛选器是否被禁用：当 Outlook 垃圾邮件筛选器设置为默认值"无自动筛选"时，Outlook不会尝试将邮件分类为垃圾邮件。  当垃圾邮件筛选器设置为"低"或"高"时，Outlook垃圾邮件筛选器会使用自己的 SmartScreen 筛选器技术来标识垃圾邮件，并移动垃圾邮件文件夹，以便您可以获得误报。 请注意，Microsoft 在 2016 年 11 月停止为 Exchange Outlook SmartScreen 筛选器生成垃圾邮件定义更新。 现有的 SmartScreen 垃圾邮件定义已就位，但其有效性可能会随着时间的推移而降低。
 
-  - **验证"Outlook"仅** 保险箱 列表"设置是否被禁用：启用此设置后，仅来自用户的 保险箱"发件人"列表或 保险箱"收件人"列表中的发件人的邮件传递到收件箱;来自其他人的电子邮件会自动移动到"垃圾邮件"文件夹。
+  - **验证"Outlook"保险箱 列表**"设置是否被禁用：启用此设置后，仅来自用户的 保险箱"发件人"列表或 保险箱"收件人"列表中的发件人的邮件传递到收件箱;来自其他人的电子邮件会自动移动到"垃圾邮件"文件夹。
 
   有关这些设置详细信息，请参阅配置邮箱中的Exchange Online[垃圾邮件Microsoft 365。](configure-junk-email-settings-on-exo-mailboxes.md)
 
 - **使用可用的安全发件人列表**：有关信息，请参阅 [创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
-- **验证用户是否位于发送和接收限制范围内**，如接收和发送 [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)限制Exchange Online服务说明中所述。
+- **验证用户是否位于发送和接收限制范围内**，如接收和发送 [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)限制中所述Exchange Online服务说明。
 
 - **独立 EOP：使用目录同步**：如果使用独立 EOP 帮助保护本地 Exchange 组织，则应该使用目录同步将用户设置与服务同步。 执行此操作可确保 EOP 沿用用户安全发件人列表。 有关详细信息，请参阅“[使用目录同步管理邮件用户](/exchange/standalone-eop/manage-mail-users-in-eop#synchronize-directories-with-azure-active-directory-connect-aad-connect)”。
 

@@ -1,6 +1,6 @@
 ---
 title: 查看 Microsoft Defender for Endpoint 体系结构要求和关键概念
-description: Microsoft 365 Defender 中的 Microsoft Defender for Endpoint 的技术图表将帮助你在构建试用实验室或Microsoft 365环境之前了解 microsoft Defender 中的身份。
+description: Microsoft 365 Defender 中的 Microsoft Defender for Endpoint 的技术图表将帮助你在构建试用实验室或Microsoft 365之前了解 microsoft Defender 终结点中的标识。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: v-jweston
 author: jweston-1
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 06e7c1bc2fec29ad679ea12194f83a22954a5a02
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: e2cb2f915726289474826a3b4aa41da847152212
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043055"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154538"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>查看 Microsoft Defender for Endpoint 体系结构要求和关键概念
 
@@ -51,8 +51,8 @@ ms.locfileid: "60043055"
 1 | 设备通过受支持的管理工具之一进行。 
 2 | On-boarded devices provide and respond to Microsoft Defender for Endpoint signal data.
 3 | 托管设备已加入和/或注册Azure Active Directory。
-4  | 已加入域Windows设备使用 Azure Active Directory 同步到Azure Active Directory 连接。
-5 | Microsoft Defender for Endpoint 警报、调查和响应在 Microsoft 365 Defender。
+4  | 已加入域Windows设备会使用Azure Active Directory同步Azure Active Directory 连接。
+5 | Microsoft Defender for Endpoint 警报、调查和响应在 Microsoft 365 Defender 中进行管理。
 
 ## <a name="understand-key-concepts"></a>了解关键概念
 
@@ -66,7 +66,7 @@ ms.locfileid: "60043055"
 行为阻止和抑制 | 行为阻止和抑制功能可帮助根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 | [行为阻止和控制](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
 自动调查和响应 | 自动调查使用各种基于安全分析员所使用的流程的检查算法，旨在检查警报并立即采取措施来解决违规问题。 | [使用自动调查调查和修正威胁](/microsoft-365/security/defender-endpoint/automated-investigations)
 高级搜寻 | 高级搜寻是基于查询的威胁搜寻工具，允许你浏览最多 30 天的原始数据，以便你可以主动检查网络中事件以查找威胁指示器和实体。 | [高级搜寻概述](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
-威胁分析 | 威胁分析是一组来自专业 Microsoft 安全研究人员的报告，涉及最相关的威胁。 | [跟踪并响应新出现的威胁](/microsoft-365/security/defender-endpoint/threat-analytics)
+威胁分析 | 威胁分析是来自专家 Microsoft 安全研究人员的一组报告，涉及最相关的威胁。 | [跟踪并响应新出现的威胁](/microsoft-365/security/defender-endpoint/threat-analytics)
 
 
 有关 Microsoft Defender for Endpoint 中包含的功能的更多详细信息，请参阅什么是[Microsoft Defender for Endpoint。](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)

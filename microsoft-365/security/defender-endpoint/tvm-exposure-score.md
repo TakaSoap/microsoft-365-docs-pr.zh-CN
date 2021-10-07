@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be60d8f4c8adae02a1a5e388a5b75e717dd5eb51
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8295fee4d0c27b85cc3daf95224b770f3c0fec0c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162237"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149870"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>曝光分数 - 危险和漏洞管理
 
@@ -37,7 +37,7 @@ ms.locfileid: "59162237"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
-你的曝光分数显示在 漏洞管理[门户的威胁Microsoft 365 Defender](tvm-dashboard-insights.md)仪表板中。 它反映了你的组织对网络安全威胁的易受攻击程度。 低曝光分数意味着你的设备更容易被利用。
+你的曝光分数显示在威胁和漏洞管理[门户](tvm-dashboard-insights.md)的"威胁Microsoft 365 Defender仪表板中。 它反映了你的组织对网络安全威胁的易受攻击程度。 低曝光分数意味着你的设备更容易被利用。
 
 - 快速了解和识别有关组织中安全状态的高层次要点。
 - 检测和响应需要调查或操作以改进当前状态的区域。
@@ -63,7 +63,7 @@ ms.locfileid: "59162237"
 
 ## <a name="related-topics"></a>相关主题
 
-- [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威胁漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [设备的 Microsoft 安全功能分数](tvm-microsoft-secure-score-devices.md)
 - [安全性建议](tvm-security-recommendation.md)
 - [活动日程表](threat-and-vuln-mgt-event-timeline.md)

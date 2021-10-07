@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0b2305472f19ac0424861a30034c2fdd45bd753c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fd8bb1d004259a3c3f8595b4686e5c78266495c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201721"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152239"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>按设备 ID 获取缺少的 KB
 
@@ -44,11 +44,11 @@ GET /api/machines/{machineId}/getmissingkbs
 ```
 ## <a name="permissions"></a>权限
 
-调用此 API 需要以下权限。 若要了解更多信息，包括如何选择权限，请参阅使用适用于终结点 API[的 Microsoft Defender。](apis-intro.md)
+调用此 API 需要以下权限。 若要了解更多信息，包括如何选择权限，请参阅使用[Microsoft Defender for Endpoint API。](apis-intro.md)
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-应用程序 | Software.Read.All | "读取威胁和漏洞管理软件信息"
+Application | Software.Read.All | "读取威胁和漏洞管理软件信息"
 
 ## <a name="request-header"></a>请求标头
 

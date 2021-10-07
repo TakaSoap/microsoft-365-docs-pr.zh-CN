@@ -4,17 +4,17 @@ description: 用户如何获取有关服务和设备的帮助
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ad3b53a9936fb40c8d699f656f88bf5a3fff20b9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1e7d616f9644c7f81e4a0abf55e2d33d54016c55
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196640"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150302"
 ---
 # <a name="getting-help-for-users"></a>获取针对用户的帮助
 
@@ -27,10 +27,10 @@ ms.locfileid: "59196640"
 
 在请求提升对设备的访问权限之前，最好查看最适合的操作。
 
-- **典型** 操作是此过程的目的，在解决设备问题时将定期Microsoft 托管桌面操作。 示例包括：
+- **典型** 操作是此过程的目的，在解决设备问题时，将定期Microsoft 托管桌面操作。 示例包括：
     - 提升内置系统疑难解答程序、命令提示符或Windows PowerShell
     - 业务线应用程序疑难解答
-    - 使用解决方法更正应按设计正常运行 (如 BitLocker 激活或系统时间不更新) 
+    - 使用解决方法更正应按设计 (某些内容，例如 BitLocker 激活或系统时间不更新) 
     - 提升设备管理器以执行更新驱动程序、卸载设备或扫描新更改等操作
 
 - **不建议的操作** 包括：

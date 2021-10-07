@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: 了解如何运行脚本，将邮箱& OneDrive for Business网站添加到与电子数据展示案例关联的新保留中Microsoft 365 合规中心。
-ms.openlocfilehash: f64ada92bdfc3081f1695e11cd4ee21fd2995c40
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: c2b73fdb665acde92676270f0a32918a6072eb5c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483035"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150866"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>使用脚本将用户添加到核心电子数据展示案例中的保留
 
-安全&中心 PowerShell 提供了 cmdlet，让你可以自动执行与创建和管理电子数据展示事例相关的耗时任务。 目前，使用 Microsoft 365 合规中心 中的核心电子数据展示案例将大量保管人内容位置放在保留状态需要时间和准备。 例如，创建保留之前，必须收集要OneDrive for Business的每个网站集的 URL。 然后，对于要置于保留状态的每一位用户，您必须将其邮箱及其OneDrive for Business网站添加到保留中。 您可以使用本文中的脚本自动执行此过程。
+安全&中心 PowerShell 提供了 cmdlet，让你可以自动执行与创建和管理电子数据展示事例相关的耗时任务。 目前，使用 Microsoft 365 合规中心中的核心电子数据展示案例将大量保管人内容位置放在保留状态需要时间和准备。 例如，创建保留之前，必须收集要OneDrive for Business的每个网站集的 URL。 然后，对于要置于保留状态的每一位用户，您必须将其邮箱及其OneDrive for Business网站添加到保留中。 您可以使用本文中的脚本自动执行此过程。
   
-该脚本会提示您输入您组织的"我的网站"域 (的名称，例如，在 URL 中，现有电子数据展示案例的名称、与该案例关联的新保留的名称、要置于保留状态的用户的电子邮件地址列表，以及创建基于查询的保留时将使用的搜索查询。 `contoso` https://contoso-my.sharepoint.com) 然后，脚本为列表中的每个用户获取 OneDrive for Business 网站的 URL，创建新的保留，然后将列表中的每个用户的邮箱和 OneDrive for Business 网站添加到保留。 该脚本还会生成包含有关新保留的信息的日志文件。
+该脚本会提示您输入您组织的"我的网站"域 (的名称，例如，在 URL 中，现有电子数据展示案例的名称、与该案例关联的新保留的名称、要置于保留状态的用户的电子邮件地址列表，以及创建基于查询的保留时使用的搜索查询。 `contoso` https://contoso-my.sharepoint.com) 然后，脚本为列表中的每个用户获取 OneDrive for Business 网站的 URL，创建新的保留，然后将列表中的每个用户的邮箱和 OneDrive for Business 网站添加到保留。 该脚本还会生成包含有关新保留的信息的日志文件。
   
 以下是实现此目标的步骤：
   
@@ -43,17 +43,17 @@ ms.locfileid: "59483035"
   
 ## <a name="before-you-add-users-to-a-hold"></a>将用户添加到保留项之前
 
-- 你必须是 Microsoft 365 合规中心 中的电子数据展示管理员角色组的成员SharePoint Online 管理员才能运行步骤 3 中的脚本。 有关详细信息，请参阅在[365](assign-ediscovery-permissions.md)安全与合规Office中&电子数据展示权限。
+- 你必须是 Microsoft 365 合规中心 中的电子数据展示管理员角色组的成员SharePoint Online 管理员才能运行步骤 3 中的脚本。 有关详细信息，请参阅在 Office [365](assign-ediscovery-permissions.md)安全与合规&电子数据展示权限。
 
-- 最多可将 1，000 个邮箱和 100 个网站添加到与邮箱中的电子数据展示案例关联的保留Microsoft 365 合规中心。 假定您想要将其保留的每个用户都有一个 OneDrive for Business 网站，您可以使用本文中的脚本将最多 100 个用户添加到保留。
+- 最多可以将 1，000 个邮箱和 100 个网站添加到与邮箱中的电子数据展示案例关联的保留Microsoft 365 合规中心。 假设要保留的每个用户都有一个OneDrive for Business网站，您可以使用本文中的脚本将最多 100 个用户添加到保留中。
 
 - 请确保将步骤 2 中创建的用户列表和步骤 3 中的脚本保存到同一文件夹中。 这样更易于运行脚本。
 
 - 该脚本将用户列表添加到与现有案例关联的新保留中。 在运行脚本之前，请确保已创建要与保留关联的案例。
 
-- 本文中的脚本支持在连接到安全与合规中心 PowerShell &联机命令行管理程序SharePoint新式验证。 如果你是组织成员或组织成员，Microsoft 365使用Microsoft 365 GCC脚本。 如果你是德国Office 365组织、Microsoft 365 GCC高组织或 Microsoft 365 DoD 组织，您必须编辑脚本以成功运行它。 具体来说，您必须编辑行并使用 `Connect-IPPSSession` *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 参数 (以及组织类型) 的适当值连接到安全 & 合规中心 PowerShell。 有关详细信息，请参阅安全与连接安全& [PowerShell 中的示例](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)。
+- 本文中的脚本支持在连接到安全与合规中心 PowerShell &命令行管理程序SharePoint新式验证。 如果你是组织成员或组织成员，Microsoft 365使用Microsoft 365 GCC脚本。 如果你是德国Office 365组织、Microsoft 365 GCC高组织或 Microsoft 365 DoD 组织，您必须编辑脚本以成功运行它。 具体而言，您必须编辑行并使用 `Connect-IPPSSession` *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 参数 (以及组织类型) 的适当值连接到安全 & 合规中心 PowerShell。 有关详细信息，请参阅安全与合规连接[PowerShell &中的示例](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)。
 
-- 该脚本会自动从安全与合规& PowerShell 和 SharePoint Online 命令行管理程序断开连接。
+- 该脚本会自动从安全与合规& PowerShell 断开连接，SharePoint Online 命令行管理程序。
 
 - 该脚本包括最少的错误处理。 其主要用途是快速而轻松地将每个用户的邮箱OneDrive for Business网站置于保留状态。
 
@@ -67,7 +67,7 @@ ms.locfileid: "59483035"
 
 ## <a name="step-2-generate-a-list-of-users"></a>步骤 2：生成用户列表
 
-步骤 3 中的脚本将创建与电子数据展示案例关联的保留，并添加用户列表的邮箱OneDrive for Business网站添加到保留。 只需在文本文件中键入电子邮件地址，或者可以在 Windows PowerShell 中运行命令，获取电子邮件地址列表并将其保存到位于步骤 3) 中将脚本保存到的同一文件夹中的 (文件中。
+步骤 3 中的脚本将创建与电子数据展示案例关联的保留，并添加用户列表的邮箱OneDrive for Business网站添加到保留。 只需在文本文件中键入电子邮件地址，或在 Windows PowerShell 中运行命令，获取电子邮件地址列表并将其保存到位于步骤 3) 中将脚本保存到的同一文件夹中的 (文件中。
   
 下面是一个 PowerShell 命令 (，通过使用连接到 Exchange Online 组织) 的远程 PowerShell 运行该命令，可获取组织中所有用户的电子邮件地址列表，并将其保存到名为 HoldUsers.txt 的文本文件中。
   
@@ -91,7 +91,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 - **基于查询的保留的搜索查询：** 您可以创建基于查询的保留，以便仅将满足指定搜索条件的内容置于保留状态。 若要保留所有内容 **，只需在** 系统提示您进行搜索查询时按 Enter。
 
-- **是否打开保留：** 可以在脚本创建后将其打开，也可以让脚本在不启用保留的情况下创建保留。 如果没有将脚本打开保留，可以在稍后的 Microsoft 365 合规中心 或运行以下 PowerShell 命令将其打开：
+- **是否打开保留：** 可以在脚本创建后将其打开，也可以让脚本在不启用保留的情况下创建保留。 如果没有打开保留脚本，可以在以后的 Microsoft 365 合规中心 或运行以下 PowerShell 命令将其打开：
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -101,11 +101,11 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
-- **包含用户列表的** 文本文件的名称 - 步骤 2 中包含要添加到保留项的用户列表的文本文件的名称。 如果此文件与脚本位于同一文件夹中，只需键入该文件的名称 (例如，HoldUsers.txt) 。 如果文本文件位于另一个文件夹中，请键入该文件的完整路径名。
+- **包含用户列表的** 文本文件的名称 - 步骤 2 中包含要添加到保留项的用户列表的文本文件的名称。 如果此文件与脚本位于同一文件夹中，只需键入文件名称 (例如，HoldUsers.txt) 。 如果文本文件位于另一个文件夹中，请键入该文件的完整路径名。
 
 收集脚本将提示您输入的信息后，最后一步是运行脚本以创建新保留并添加用户。
   
-1. 使用 文件名后缀 将以下Windows PowerShell保存到脚本文件中 `.ps1` 。 例如，`AddUsersToHold.ps1`。
+1. 使用 文件名后缀 将以下文本Windows PowerShell脚本文件 `.ps1` 。 例如，`AddUsersToHold.ps1`。
 
 ```powershell
 #script begin
@@ -271,7 +271,7 @@ Write-host "Script complete!" -foregroundColor Yellow
 #script end
 ```
 
-2. 在本地计算机上，打开Windows PowerShell转到保存脚本的文件夹。
+2. 在本地计算机上，打开Windows PowerShell并转到保存脚本的文件夹。
 
 3. 运行脚本;例如：
 
@@ -281,7 +281,7 @@ Write-host "Script complete!" -foregroundColor Yellow
 
 4. 输入脚本提示您输入的信息。
 
-   该脚本连接到安全&合规中心 PowerShell，然后在电子数据展示案例中创建新的保留，并添加列表中的用户的邮箱和 OneDrive for Business。 可以转到"电子数据展示"页面上的Microsoft 365 合规中心查看新保留。
+   该脚本连接到安全&合规中心 PowerShell，然后在电子数据展示案例中创建新的保留，并添加列表中用户的邮箱和 OneDrive for Business。 可以转到"电子数据展示"页面上的Microsoft 365 合规中心查看新保留。
 
 脚本运行完成后，它会创建以下日志文件，并保存到脚本所在的文件夹中。
   

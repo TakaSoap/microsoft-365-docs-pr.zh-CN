@@ -4,17 +4,17 @@ description: 有关可配置设置的信息Microsoft 托管桌面
 keywords: Microsoft 托管桌面、Microsoft 365、服务、文档、设置、可配置设置
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bf8672ee6c3332ea6f8522f5086d72e58d1b9048
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a83181d6b0fa33b0eb432627530099b316ebb617
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171275"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150350"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>可配置的设置 - Microsoft 托管桌面
 
@@ -36,7 +36,7 @@ it admins Microsoft 托管桌面 settings in it admins to customize and deploy s
 
 你可以自定义以下可配置设置类别：
 - [桌面背景图片](config-setting-ref.md#desktop-background-picture)– 自定义桌面设备Microsoft 托管桌面图片。 
-- [浏览器起始页](config-setting-ref.md#browser-start-pages)- 添加要用于浏览器Microsoft Edge。 请参阅浏览器起始页
+- [浏览器起始页](config-setting-ref.md#browser-start-pages)– 添加要用于浏览器Microsoft Edge。 请参阅浏览器起始页
 - [Enterprise模式站点列表](config-setting-ref.md#enterprise-mode-site-list-location)– 添加站点及其兼容性模式。 该列表上的网站将在Internet Explorer。 
 - [受信任的站点](config-setting-ref.md#trusted-sites) – 添加受信任的站点并设置每个站点的安全区域。 
 - [代理站点例外](config-setting-ref.md#proxy) – 设置代理服务器地址号和端口号，并添加代理站点例外。

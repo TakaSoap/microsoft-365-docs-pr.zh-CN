@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cd62bfe568bafb8ad921860ee45f9054dcecf0f4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 53930a60021cbca1cd85234711955d9343046171
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195662"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152270"
 ---
 # <a name="get-machine-logon-users-api"></a>获取计算机登录用户 API
 
@@ -69,7 +69,7 @@ GET /api/machines/{id}/logonusers
 
 名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

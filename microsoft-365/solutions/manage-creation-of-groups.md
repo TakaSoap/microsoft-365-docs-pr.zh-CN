@@ -8,7 +8,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: 了解如何控制哪些用户可以创建Microsoft 365组。
-ms.openlocfilehash: 19a106d255708f4b1df8f798219ea7ea778bbef3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a9bfcbe97000cc6fbe0050ffee44cdc5ecc87080
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196238"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154142"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理可创建 Microsoft 365 组的人员
 
@@ -40,21 +40,21 @@ ms.locfileid: "59196238"
 - Yammer
 - Microsoft Teams
 - Microsoft Stream
-- 规划器
+- Planner
 - Power BI (经典) 
 - Project Web/路线图
 
 本文中的步骤不会阻止某些角色的成员创建组。 Office 365全局管理员可以通过 Microsoft 365 管理中心、Planner、Exchange 和 SharePoint Online 创建组。 其他角色可以通过有限的方式创建组，如下所示。
 
 - Exchange管理员：Exchange管理中心，Azure AD
-- 合作伙伴层 1 支持：Microsoft 365 管理中心、Exchange管理中心、Azure AD
+- 合作伙伴第 1 层支持：Microsoft 365 管理中心、Exchange管理中心、Azure AD
 - 合作伙伴第 2 层支持：Microsoft 365 管理中心、Exchange管理中心、Azure AD
 - 目录编写器：Azure AD
 - SharePoint管理员：SharePoint管理中心，Azure AD
 - Teams服务管理员：Teams管理中心，Azure AD
 - 用户管理员：Microsoft 365 管理中心，Azure AD
 
-如果你是其中一个角色的成员，你可以为受限Microsoft 365组，然后将该用户分配为组的所有者。
+如果您是这些角色之一的成员，您可以为受限Microsoft 365组，然后将该用户分配为组的所有者。
 
 ## <a name="licensing-requirements"></a>许可要求
 
@@ -64,13 +64,13 @@ ms.locfileid: "59196238"
 - 允许创建组的组的成员
 
 > [!NOTE]
-> 请参阅[分配或删除 Azure Active Directory 门户](/azure/active-directory/fundamentals/license-users-groups)中的许可证，了解有关如何分配 Azure 许可证的更多详细信息。
+> 请参阅[分配或删除](/azure/active-directory/fundamentals/license-users-groups)Azure Active Directory 门户中的许可证，了解有关如何分配 Azure 许可证的更多详细信息。
 
 以下人员不需要分配Azure AD Premium Azure AD 基本 EDU 许可证：
 
 - 作为组Microsoft 365且无法创建其他组的人。
 
-## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>步骤 1：为需要创建组的用户Microsoft 365组
+## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>步骤 1：为需要创建组的用户创建Microsoft 365组
 
 组织中只能有一个组可用于控制能够创建组的人。 但是，可以将其他组嵌套为此组的成员。
 
@@ -88,7 +88,7 @@ ms.locfileid: "59196238"
 
 ## <a name="step-2-run-powershell-commands"></a>步骤 2：运行 PowerShell 命令
 
-你必须使用 [Azure Active Directory PowerShell for Graph (AzureAD](/powershell/azure/active-directory/install-adv2))  (模块名称 **AzureADPreview**) 的预览版本来更改组级别的来宾访问设置：
+你必须使用 Azure Active Directory [PowerShell for Graph (AzureAD](/powershell/azure/active-directory/install-adv2))  (模块名称 **AzureADPreview**) 的预览版本来更改组级别的来宾访问设置：
 
 - 如果之前未安装任何 Azure AD PowerShell 模块版本，请参阅[安装 Azure AD 模块](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview)并按照说明安装公共预览版。
 
@@ -104,7 +104,7 @@ ms.locfileid: "59196238"
 
 将文件另存为GroupCreators.ps1。
 
-在 PowerShell 窗口中，导航到保存文件的位置， ("CD <FileLocation> ") 。
+在 PowerShell 窗口中，导航到保存文件的位置 <FileLocation> ， ("CD") 。
 
 通过键入以下命令运行脚本：
 
@@ -154,7 +154,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 更改可能需要 30 分钟或更多时间才能生效。 可以通过执行以下操作来验证新设置：
 
-1. 登录以Microsoft 365不应能够创建组的用户的用户帐户登录。 即，他们不是你创建的组的成员或管理员。
+1. 使用Microsoft 365创建组的用户的用户帐户登录。 即，他们不是你创建的组的成员或管理员。
 
 2. 选择 **Planner** 磁贴。
 

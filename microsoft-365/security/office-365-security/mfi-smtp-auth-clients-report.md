@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的 SMTP 身份验证见解和报表来监视组织中使用已验证的 SMTP (SMTP AUTH) 发送电子邮件的电子邮件发件人。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 950661664479e38b8c9094c52908ee23ba34e66c
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 30e3ff41068b80ad7c308fcb8163cb2748118e11
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988759"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154418"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>安全与合规中心中的 SMTP 身份验证客户端见解&报告
 
@@ -30,11 +30,11 @@ ms.locfileid: "59988759"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全 & 合规中心中的"[](mail-flow-insights-v2.md)邮件流"仪表板中的 **SMTP** 身份验证客户端见解和关联的 [SMTP](#smtp-auth-clients-report) [身份验证](https://protection.office.com)客户端报告重点介绍了组织中用户或系统帐户对 SMTP AUTH 客户端提交协议的使用。 此旧协议 (终结点 smtp.office365.com) 仅提供基本身份验证，并且易于被损坏的帐户用来发送电子邮件。 通过见解和报表，可以检查 SMTP AUTH 电子邮件提交的异常活动。 它还显示使用 SMTP AUTH 的客户端或设备的 TLS 使用情况数据。
+安全 & 合规中心中的"[](mail-flow-insights-v2.md)邮件流"仪表板中的 **SMTP** 身份验证客户端见解和关联的 [SMTP](#smtp-auth-clients-report) [身份验证](https://protection.office.com)客户端报告重点介绍了组织中用户或系统帐户对 SMTP AUTH 客户端提交协议的使用。 使用终结点 (旧协议 smtp.office365.com) 仅提供基本身份验证，并且易于被损坏的帐户用来发送电子邮件。 通过见解和报表，可以检查 SMTP AUTH 电子邮件提交的异常活动。 它还显示使用 SMTP AUTH 的客户端或设备的 TLS 使用情况数据。
 
 小部件指示过去 7 天内使用 SMTP 身份验证协议的用户和服务帐户的数量。
 
-![安全与合规中心的"邮件流"仪表板中的"SMTP 身份验证&小部件。](../../media/mfi-smtp-auth-clients-report-widget.png)
+![安全与合规中心的"邮件流"仪表板中的"SMTP &小组件"。](../../media/mfi-smtp-auth-clients-report-widget.png)
 
 如果单击小部件上的消息数，则会出现 SMTP **身份验证客户端** 飞出控件。 该飞出站提供上一周 TLS 使用情况和卷的聚合视图。
 
@@ -50,7 +50,7 @@ ms.locfileid: "59988759"
 
 概述部分包含以下图表：
 
-- 查看数据 **者：** 发送卷：默认情况下，图表显示从所有域发送的 SMTP 身份验证客户端邮件数 (**显示** 数据：默认情况下，所有发件人域都) 。 可以通过单击"显示其数据"，然后从下拉列表中选择发件人域，将结果筛选到特定的发件人域。 如果在当天将特定 (点) ，将显示消息数。
+- 查看数据 **者：** 发送卷：默认情况下，图表显示从所有域发送的 SMTP 身份验证客户端邮件数 (**显示** 数据：默认情况下，所有发件人域都) 。 可以通过单击"显示其数据"，然后从下拉列表中选择发件人域，将结果筛选到特定的发件人域。 如果您将特定的数据点悬停在 (天) ，将显示消息数。
 
   ![安全与合规中心内 SMTP 身份验证客户端报告中&卷视图。](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 

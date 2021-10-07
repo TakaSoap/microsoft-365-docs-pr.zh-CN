@@ -2,26 +2,24 @@
 title: 在 Microsoft Defender for Endpoint 中创建和管理设备组
 description: 通过确认适用于该组的规则，创建设备组并设置其自动修正级别
 keywords: 设备组， 组， 修正， 级别， 规则， aad 组， 角色， 分配， 排名
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47fe5cda2732bcbaf994f0c4adcc5c475193a5a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a9576470b029ac97660868341c46ecda82662b36
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162294"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152011"
 ---
 # <a name="create-and-manage-device-groups"></a>创建和管理设备组
 
@@ -43,7 +41,7 @@ ms.locfileid: "59162294"
 - 分配特定修正级别以在自动调查期间应用
 - 在调查中，使用组筛选器 **将"设备** "列表筛选到特定 **设备** 组。
 
-可以在基于角色的访问 (RBAC) 上下文中创建设备组，以控制哪些人可以通过将设备组 () 分配给用户组来查看信息。 有关详细信息，请参阅使用基于角色 [的访问控制管理门户访问](rbac.md)。
+可以在基于角色的访问 (RBAC) 上下文中创建设备组，以控制哪些人可以通过将设备组 () 分配给用户组来控制哪些人可以采取特定操作或查看信息。 有关详细信息，请参阅使用基于角色 [的访问控制管理门户访问](rbac.md)。
 
 > [!TIP]
 > 有关 RBAC 应用程序的全面了解，请阅读 [：SOC 是否使用 RBAC 运行平面](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Is-your-SOC-running-flat-with-limited-RBAC/ba-p/320015)。
@@ -87,7 +85,7 @@ ms.locfileid: "59162294"
 
 默认情况下，具有门户访问权限的所有用户均可访问设备组。 可以通过将 Azure AD 用户组分配给设备组来更改默认行为。
 
-不匹配任何组的设备将添加到未分组的设备 (默认) 组。 无法更改或删除此组的排名。 但是，你可以更改此组的修正级别，并定义可以访问该组的 Azure AD 用户组。
+不匹配任何组的设备将添加到未分组设备 (默认) 组中。 无法更改或删除此组的排名。 但是，你可以更改此组的修正级别，并定义可以访问该组的 Azure AD 用户组。
 
 > [!NOTE]
 > 将更改应用于设备组配置可能需要几分钟。
@@ -103,12 +101,12 @@ ms.locfileid: "59162294"
 > [!TIP]
 > 在同一条件类型的行之间使用"OR"运算符，这允许每个属性具有多个值。
 >
-> 您最多可以添加 10 (值) 属性类型 - 标记、设备名称、域。
+> 您最多可以添加 10 行 (每个) 类型的值 - 标记、设备名称、域。
 
-有关链接到设备组定义的信息，请参阅设备[组 -](https://sip.security.microsoft.com/homepage)Microsoft 365安全。
+有关链接到设备组定义的信息，请参阅设备组 - Microsoft 365[安全](https://sip.security.microsoft.com/homepage)。
 
 ## <a name="related-topics"></a>相关主题
 
 - [使用基于角色的访问控制管理门户访问](rbac.md)
 - [创建和管理设备标签](machine-tags.md)
-- [使用 api 获取租户设备Graph列表](/graph/api/device-list-memberof)
+- [使用 Graph API 获取租户设备组列表](/graph/api/device-list-memberof)

@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 description: 了解如何在由世纪互联运营的 Office 365 中付款后，向世纪互联发票管理系统提交发票申请。
 monikerRange: o365-21vianet
 ms.date: 03/30/2021
-ms.openlocfilehash: 605e1bf001f6c6acb3a8b5044adeb66e110641b0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: HT
+ms.openlocfilehash: 59995d7bed5c24b26079dcd6865d5a901c518724
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170313"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153962"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>申请由世纪互联运营的 Office 365 的发票
 

@@ -8,24 +8,24 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
-description: 虚拟但具有代表性的全球组织如何为企业Microsoft 365企业。
-ms.openlocfilehash: 90d8e0c9d0cd81d415fc8ca9751b0cecd4331623
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 虚构但具有代表性的全球组织如何为企业Microsoft 365企业。
+ms.openlocfilehash: 9598464e982d5f5804056f9c9ddb782bd438aa87
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171005"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152762"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Contoso Corporation 的企业版
 
 Microsoft 365企业版是 Microsoft 顶级云产品/服务，它将本地和基于云的生产力应用和服务与Windows 10 企业版高级安全功能相结合。 这是一个完整的智能解决方案，使每个人都能够以创意和安全方式协同工作。
 
-Contoso Corporation 是一家虚构但具有代表性的全球大型制造企业，总部位于巴黎。 该公司部署了 Microsoft 365 企业版，并解决了有关网络、标识、Windows 10 企业版、Microsoft 365 企业应用版、移动设备管理、信息保护和安全性的主要设计决策和实施详细信息。
+Contoso Corporation 是一家虚构但具有代表性的全球大型制造企业，总部位于巴黎。 公司部署了 Microsoft 365 企业版，并解决了有关网络、标识、Windows 10 企业版、Microsoft 365 企业应用版、移动设备管理、信息保护和安全性的主要设计决策和实施详细信息。
 
 Microsoft 365 企业版的总体目标是使用云服务将员工、合作伙伴、数据和流程汇集在一起，以创造客户价值并保持在数字第一世界中的竞争优势，从而加速数字化转型。
 
@@ -45,7 +45,7 @@ Microsoft 365 企业版的总体目标是使用云服务将员工、合作伙伴
 
 - [标识](contoso-identity.md)
 
-  Contoso 云中标识解决方案利用公司本地 Active Directory 域服务 (AD DS) 林。 它包括具有其现有受信任的第三方标识提供程序的联合身份验证。
+  Contoso 云中的标识解决方案利用公司本地 Active Directory 域服务 (AD DS) 林。 它包括具有其现有受信任的第三方标识提供程序的联合身份验证。
 
 - [Windows 10 企业版](contoso-win10.md)
 
@@ -61,7 +61,7 @@ Microsoft 365 企业版的总体目标是使用云服务将员工、合作伙伴
 
 - [信息保护](contoso-info-protect.md)
 
-  为了确保常见和高价值数据被标识、标记并受安全层限制，Contoso 使用 Microsoft 365 强制实施其数据安全策略，以用于企业信息保护。
+  为了确保常见和高价值数据被标识、标记并受安全层限制，Contoso 强制执行其数据安全策略，Microsoft 365用于企业信息保护。
 
 - [企业Microsoft 365摘要](contoso-security-summary.md)
 
@@ -83,7 +83,7 @@ Microsoft 365 企业版的总体目标是使用云服务将员工、合作伙伴
 
 - [通信合规性冒犯性语言策略](../compliance/communication-compliance-case-study.md)
 
-  了解 Contoso 如何快速配置冒犯性语言策略Microsoft Teams、Exchange和Yammer通信。
+  了解 Contoso 如何快速配置冒犯性语言策略，Microsoft Teams、Exchange通信Yammer策略。
 
 ## <a name="next-step"></a>后续步骤
 

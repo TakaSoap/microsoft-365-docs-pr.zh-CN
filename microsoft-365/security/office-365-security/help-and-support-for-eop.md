@@ -8,17 +8,17 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85d6c23dcec77fac6a91ae353bce951c005a4b29
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4ee0affc301500d3ebebd8d17ff13f569356c123
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196486"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149578"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 
@@ -29,7 +29,7 @@ ms.locfileid: "59196486"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在具有 Exchange Online 或独立 Exchange Online Protection (EOP) 组织邮箱且没有 Exchange Online 邮箱的 Microsoft 365 组织中，如果遇到 EOP 问题，本文中列出的技术支持资源将帮助您找到答案。 Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
+在 Microsoft 365 组织中，如果邮箱在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱，那么本文中列出的技术支持资源将帮助您在遇到问题时找到答案。EOP。 Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
 
 ## <a name="self-support-options"></a>自助支持选项
 

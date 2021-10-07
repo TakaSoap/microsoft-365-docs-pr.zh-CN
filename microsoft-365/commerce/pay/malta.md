@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7704e113d926f4cec3716f4b233cfad9cc6fb96a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ee15ead0a76c029b97f88488841af5915ad4ab77
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170225"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153458"
 ---
 # <a name="payment-information-for-malta"></a>马耳他的付款信息
 
@@ -32,5 +32,5 @@ ms.locfileid: "59170225"
 **SWIFT 代码/BIC：** 一百万  
 **IBAN：** GB31CITI18500812207591  
 **SORT 代码：185008**  
-**帐户编号：12207591**  
+**帐号：12207591**  
 **帐户名称：** MICROSOFT

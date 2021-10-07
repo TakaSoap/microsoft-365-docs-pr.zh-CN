@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9e3ccce5c5955418e3e1243b96d51e5999f0f585
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 77d0bfb569837a508221d78d811c985153533ed7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201513"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152222"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>导出每个设备的软件清单评估
 
@@ -45,7 +45,7 @@ ms.locfileid: "59201513"
 使用 _Json_ 响应 (通过文件收集的数据) 当前状态的当前快照，并且不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
 
 > [!NOTE]
-> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出和 **** 按设备 (也称为按 **_设备) 。_**
+> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出，**** 按设备 (也称作按 **_设备) 。_**
 
 ## <a name="1-export-software-inventory-assessment-json-response"></a>1. 导出 JSON 响应 (软件清单) 
 
@@ -64,7 +64,7 @@ ms.locfileid: "59201513"
 
 权限类型|权限|权限显示名称
 ---|---|---
-应用程序|Software.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
+Application|Software.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
 委派（工作或学校帐户）|Software.Read|\'阅读威胁和漏洞管理漏洞信息\'
 
 ### <a name="13-url"></a>1.3 URL
@@ -76,7 +76,7 @@ GET /api/machines/SoftwareInventoryByMachine
 ### <a name="14-parameters"></a>1.4 参数
 
 - pageSize (默认值 = 50，000) ：响应中的结果数。
-- $top：要返回 (的结果数不会返回 @odata.nextLink，因此不会拉取所有) 
+- $top：返回 (的结果数不会返回 @odata.nextLink，因此不会拉取所有) 
 
 ### <a name="15-properties"></a>1.5 属性
 
@@ -92,20 +92,20 @@ GET /api/machines/SoftwareInventoryByMachine
 
 属性 (ID) |数据类型|说明|返回值的示例
 :---|:---|:---|:---
-DeviceId|字符串|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|字符串|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com
+DeviceId|string|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|string|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com
 DiskPaths|Array[string]|表明产品已安装在设备的磁盘证据。|[ "C： \\Program Files (x86) \\ Microsoft \\ Silverlight \\ Application \\silverlight.exe" ]
-EndOfSupportDate|字符串|此软件支持已结束或将终止的日期。|2020-12-30
-EndOfSupportStatus|字符串|停止提供支持状态。 可以包含以下可能的值：None、EOS Version、Upcoming EOS Version、EOS Software、Upcoming EOS Software。|即将推出的 EOS
+EndOfSupportDate|string|此软件支持已结束或将终止的日期。|2020-12-30
+EndOfSupportStatus|string|停止提供支持状态。 可以包含以下可能的值：None、EOS Version、Upcoming EOS Version、EOS Software、Upcoming EOS Software。|即将推出的 EOS
 Id|string|记录的唯一标识符。|123ABG55_573AG&mnp！
 NumberOfWeaknesses|int|此设备上此软件上漏洞的数量|3
-OSPlatform|字符串|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
-RbacGroupName|字符串|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
+OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
+RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
 RegistryPaths|Array[string]|注册表证据，表明产品已安装在设备中。|[ "HKEY_LOCAL_MACHINE \\SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
-SoftwareFirstSeenTimestamp|字符串|首次在设备上看到此软件。|2019-04-07 02:06:47
-SoftwareName|字符串|软件产品的名称。|Silverlight
-SoftwareVendor|字符串|软件供应商的名称。|microsoft
-SoftwareVersion|字符串|软件产品的版本号。|81.0.4044.138
+SoftwareFirstSeenTimestamp|string|首次在设备上看到此软件。|2019-04-07 02:06:47
+SoftwareName|string|软件产品的名称。|Silverlight
+SoftwareVendor|string|软件供应商的名称。|microsoft
+SoftwareVersion|string|软件产品的版本号。|81.0.4044.138
 |
 
 ### <a name="16-examples"></a>1.6 示例
@@ -226,7 +226,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 
 权限类型|权限|权限显示名称
 ---|---|---
-应用程序|Software.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
+Application|Software.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
 委派（工作或学校帐户）|Software.Read|\'阅读威胁和漏洞管理漏洞信息\'
 
 ### <a name="23-url"></a>2.3 URL
@@ -243,7 +243,7 @@ GET /api/machines/SoftwareInventoryExport
 
 > [!NOTE]
 >
-> - 这些文件是 gzip 压缩& JSON 格式的文件。
+> - 文件是 gzip 压缩文件& JSON 格式。
 > - 下载 URL 的有效期仅为 3 小时。 否则，可以使用 参数。
 > - 为了最大限度提高数据的下载速度，你可以确保从数据所在的同一 Azure 区域进行下载。
 
@@ -254,7 +254,7 @@ GET /api/machines/SoftwareInventoryExport
 属性 (ID) |数据类型|说明|返回值的示例
 :---|:---|:---|:---
 导出文件|数组 \[ 字符串\]|保存组织当前快照的文件的下载 URL 列表|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|字符串|导出的生成时间。|2021-05-20T08：00：00Z
+GeneratedTime|string|导出的生成时间。|2021-05-20T08：00：00Z
 |
 
 ### <a name="26-examples"></a>2.6 示例

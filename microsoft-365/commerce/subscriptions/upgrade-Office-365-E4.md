@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -18,19 +18,19 @@ ms.custom:
 - commerce_subscriptions
 - admindeeplinkMAC
 search.appverid: MET150
-description: 了解如何从 E4 Office 365升级。
+description: 了解如何从 E4 订阅Office 365升级。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5741588fddcddbfca47b39cada2fed7dca56afd8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1b909a6a40359e5d3f73b79bfd28ddff1037ea53
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170701"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151274"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>从 E4 Office 365升级
 
-本文将分步介绍从 Office 365 E4 升级到新订阅的过程。 有关从 E4 升级时可用的Office 365的信息，请参阅[E4](important-information-e4.md)客户Office 365重要信息。
+本文将分步说明从 E4 Office 365升级到新订阅的过程。 有关从 E4 升级时可用的Office 365的信息，请参阅[E4](important-information-e4.md)客户Office 365重要信息。
 
 > [!IMPORTANT]
 > 本文仅适用于Office 365通过信用卡或发票直接从 Microsoft 购买的所有 E4 订阅。 如果你的订阅是通过其他方式（例如通过合作伙伴或批量许可服务中心）购买的，请联系你的 Microsoft 帐户代表或合作伙伴，以帮助你升级计划。
@@ -71,7 +71,7 @@ ms.locfileid: "59170701"
 
 ## <a name="upgrade-your-plan-by-using-the-upgrade-tab"></a>使用"升级"选项卡升级计划
 
-### <a name="before-you-begin"></a>开始之前
+### <a name="before-you-begin"></a>准备工作
 
 在开始之前有必要了解以下些许事项。
 
@@ -89,7 +89,7 @@ ms.locfileid: "59170701"
 4. 找到你想要购买的订阅， **然后选择升级**。
 5. 在" **购物车** "页上，验证一切是否正确。 选择是按月还是按年支付，并验证数量下的 **许可证数量**。
     > [!NOTE]
-    > 还会列出任何与 Office 365 E4 订阅关联的附加Office 365 额外文件存储空间订阅。 但是，如果你有要升级到的订阅中包含的任何附加订阅，我们将删除它们。
+    > 还会列出与你的 Office 365 E4 订阅关联的任何附加Office 365 额外文件存储空间订阅。 但是，如果你有要升级到的订阅中包含的任何附加订阅，我们将删除它们。
 6. 查看订单后，选择" **转到"以签出**。
 7. 在"**签出"** 页上，按此顺序查看 **"已销售到**"、**计费到****和"项目"。** 选择 **其中** 任何一项旁边的"更改"以编辑信息。
     > [!NOTE]
@@ -131,7 +131,7 @@ ms.locfileid: "59170701"
 可以使用[此Microsoft 365 管理中心一](https://go.microsoft.com/fwlink/p/?linkid=2024339)次最多为 20 个用户重新分配许可证。 若要了解如何，请参阅 [将用户移动到其他订阅](move-users-different-subscription.md)。
 
 > [!TIP]
-> 如果你有很多用户，可以使用 powerShell Office 365[批量分配用户许可证](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
+> 如果你有很多用户，可以使用 Office 365 [PowerShell 批量分配用户许可证](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
 
 ### <a name="step-4-cancel-the-office-365-e4-subscription"></a>步骤 4：取消 Office 365 E4 订阅
 
@@ -139,6 +139,6 @@ ms.locfileid: "59170701"
 
 ## <a name="related-content"></a>相关内容
 
-[升级到其他计划 (](upgrade-to-different-plan.md) 文章) \
+[升级到其他计划](upgrade-to-different-plan.md)（文章）\
 [购买或删除订阅许可证](../licenses/buy-licenses.md) (文章) \
 [向用户分配许可证](../../admin/manage/assign-licenses-to-users.md) (本文) 

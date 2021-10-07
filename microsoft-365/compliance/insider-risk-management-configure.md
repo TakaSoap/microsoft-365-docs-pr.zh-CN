@@ -2,7 +2,7 @@
 title: 内部风险管理入门
 description: 在组织中配置内部风险管理。
 keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -15,19 +15,19 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ed064be83a93c913b13de62dbd14936c38accd31
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: aa8d90365dbd638e9c79326621c300b15a065614
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088201"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151058"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
 使用内部风险管理策略来确定风险活动和管理工具，以对组织的风险警报采取行动。 完成以下步骤以设置先决条件并配置内部风险管理策略。
 
 > [!IMPORTANT]
-> 内部Microsoft 365管理解决方案提供了租户级选项，帮助客户促进用户级别的内部治理。 租户级管理员可以设置权限，为组织成员提供对此解决方案的访问权限，在 Microsoft 365 合规中心 中设置数据连接器以导入相关的数据，以支持用户级别识别可能存在风险的活动。 客户确认与个人用户的行为、字符或绩效相关的见解（与雇佣关系相关）由管理员计算，并提供给组织其他人使用。 此外，客户确认他们必须自行进行与个人用户的行为、字符或与雇佣相关的性能方面的完全调查，而不只是依赖于内部风险管理服务的见解。 客户应单独负责使用 Microsoft 365 内部风险管理服务，以及符合所有适用法律（包括与个人用户标识相关的法律以及任何修正操作）的任何关联功能或服务。
+> 内部Microsoft 365管理解决方案提供了租户级选项，帮助客户促进用户级别的内部管理。 租户级管理员可以设置权限，为组织成员提供对此解决方案的访问权限，在 Microsoft 365 合规中心 中设置数据连接器以导入相关的数据，以支持用户级别识别可能存在风险的活动。 客户确认与个人用户的行为、字符或绩效相关的见解（与雇佣关系相关）由管理员计算，并提供给组织其他人使用。 此外，客户确认他们必须自行进行与个人用户的行为、字符或与雇佣相关的性能方面的完全调查，而不只是依赖于内部风险管理服务的见解。 客户应单独负责使用 Microsoft 365 内部风险管理服务，以及符合所有适用法律（包括与个人用户标识相关的法律以及任何补救措施）的任何关联功能或服务。
 
 有关内部风险策略如何有助于管理组织中风险的信息，请参阅预览体验成员风险管理[Microsoft 365。](insider-risk-management.md)
 
@@ -48,7 +48,7 @@ ms.locfileid: "60088201"
 
 必须为包含在内部风险管理策略中的用户分配上述许可证之一。
 
-如果你没有现有的 E5 Microsoft 365 企业版计划，并且想要尝试内部风险管理，可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册 E5 Microsoft 365 企业版试用版。 [](https://www.microsoft.com/microsoft-365/enterprise)
+如果你没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试内部风险管理，可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册 E5 Microsoft 365 企业版试用版。 [](https://www.microsoft.com/microsoft-365/enterprise)
 
 ## <a name="recommended-actions-preview"></a>建议 (预览) 
 
@@ -87,7 +87,7 @@ ms.locfileid: "60088201"
 >[!IMPORTANT]
 >根据你选择的选项 (确保你的内部风险管理或内部风险管理管理员角色组中始终至少有一个用户) 以便你的内部风险管理配置不会进入"零管理员"方案（如果特定用户离开组织）。
 
-根据合规性管理团队的结构，有选项将用户分配到特定角色组，以管理不同的预览体验计划风险管理功能集。 若要查看管理 **角色** 组Microsoft 365 合规中心"权限"选项卡，您需要被分配到组织管理角色组，或需要分配有 *"角色* 管理"角色。 配置内部风险管理时，请从以下角色组选项中进行选择：
+根据合规性管理团队的结构，有选项将用户分配到特定角色组，以管理不同的预览体验计划风险管理功能集。 若要查看管理 **角色** 组Microsoft 365 合规中心"权限"选项卡，您需要被分配到组织管理角色组，或者需要分配有 *"角色* 管理"角色。 配置内部风险管理时，请从以下角色组选项中进行选择：
 
 | **角色组** | **角色权限** |
 | :------------- | :------------------- |
@@ -124,18 +124,18 @@ ms.locfileid: "60088201"
 
 默认情况下，为Microsoft 365启用审核。 某些组织可能由于特定原因禁用了审核。 如果为组织禁用了审核，这可能是因为另一个管理员已将其关闭。 我们建议确认在完成此步骤时可以重新启用审核。
 
-有关启用审核的逐步操作说明，请参阅 [打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。 打开审核之后，将显示一条消息，内容为正在准备审核日志，你可以在准备完成后几个小时内运行搜索。 此操作只需要执行一次。 有关使用方法方法[Microsoft 365 审核日志，请参阅](search-the-audit-log-in-security-and-compliance.md)搜索审核日志。
+有关启用审核的逐步操作说明，请参阅 [打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。 打开审核之后，将显示一条消息，内容为正在准备审核日志，你可以在准备完成后几个小时内运行搜索。 此操作只需要执行一次。 有关使用搜索[Microsoft 365 审核日志，请参阅](search-the-audit-log-in-security-and-compliance.md)搜索审核日志。
 
 ## <a name="step-3-enable-and-view-insider-risk-analytics-insights-optional"></a>步骤 3：启用和查看内部风险分析见解 (可选) 
 
-通过内部风险管理分析，你可以对组织中潜在的内部风险进行评估，而无需配置任何内部风险策略。 此评估可以帮助组织确定用户风险更高的潜在领域，并可帮助确定可能考虑配置的预览体验计划风险管理策略的类型和范围。 此评估还可以帮助您确定对现有策略进行其他许可或未来优化的需求。 分析扫描结果最多可能需要 48 小时，才能将见解作为报告提供进行审阅。 若要了解有关分析见解的详细信息，请参阅预览体验成员风险管理设置：分析 [ (预览版) ](insider-risk-management-settings.md#analytics-preview) 并观看 [预览](https://www.youtube.com/watch?v=5c0P5MCXNXk) 体验成员风险管理分析视频，以帮助了解分析如何有助于加快识别潜在内部风险并帮助快速采取行动。
+通过内部风险管理分析，你可以对组织中潜在的内部风险进行评估，而无需配置任何内部风险策略。 此评估可以帮助组织确定用户风险更高的潜在领域，并可帮助确定可能考虑配置的预览体验计划风险管理策略的类型和范围。 此评估还可以帮助您确定对现有策略进行其他许可或未来优化的需求。 分析扫描结果最多可能需要 48 小时，才能将见解作为报告提供进行审阅。 若要了解有关分析见解的详细信息，请参阅预览体验成员风险管理设置：分析 [ (预览版) ](insider-risk-management-settings.md#analytics-preview) 并观看 [预览](https://www.youtube.com/watch?v=5c0P5MCXNXk) 体验成员风险管理分析视频，以帮助了解分析如何有助于加快识别潜在内部风险并帮助你快速采取行动。
 
-若要启用内部风险分析，你必须是 *内部* 风险管理、内部风险管理管理员或全局Microsoft 365 *组* 的成员。 
+若要启用内部风险分析，你必须是内部风险管理、内部风险管理管理员或全局Microsoft 365 *组* 的成员。 
 
 完成以下步骤以启用内部风险分析：
 
-1. 在Microsoft 365 合规中心 [中](https://compliance.microsoft.com)，转到 **"内部风险管理"。**
-2. 在 **"内部** 风险管理概述"选项卡上的"扫描 **组织卡中的** 内部风险"中选择" **运行扫描** "。此操作将打开组织的分析扫描。 还可以导航到预览体验成员风险设置 分析 (预览) 并启用扫描租户的用户活动以确定潜在的内部风险，从而在组织中启用  >  **扫描**。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management**.
+2. 在 **"内部** 风险管理概述"选项卡上的"扫描 **组织卡中的** 内部风险"中选择" **运行扫描** "。此操作将打开组织的分析扫描。 您还可以在组织中打开扫描，方法为导航到"内部风险设置""分析 (预览版) 并启用"扫描租户的用户活动  >  **"，** 以确定 **潜在的内部风险**。
 3. 在" **分析详细信息"** 窗格中，选择" **运行扫描"开始组织的扫描**。 分析扫描结果最多可能需要 24 小时，才能将见解作为报告提供进行审阅。
 
 查看分析见解后，选择内部风险策略并配置最符合组织的内部风险缓解策略的相关先决条件。
@@ -155,7 +155,7 @@ ms.locfileid: "60088201"
 - 心怀不满员工的安全策略违规活动
 - 心怀不满用户的数据泄露活动
 
-有关[为组织](import-hr-data.md)配置 HR 连接器的Microsoft 365指南，请参阅设置连接器以导入 HR 数据文章。 配置 HR 连接器后，返回到这些配置步骤。
+有关[为组织配置](import-hr-data.md)HR 连接器的Microsoft 365指南，请参阅设置连接器以导入 HR 数据文章。 配置 HR 连接器后，返回到这些配置步骤。
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>配置 DLP 策略 (数据丢失) 防护
 
@@ -178,7 +178,7 @@ DLP 策略可帮助识别用户，以在针对敏感信息的高风险性 DLP �
 
 ### <a name="configure-priority-user-groups"></a>配置优先级用户组
 
-内部风险管理包括对向策略分配优先用户组的支持，以帮助标识具有关键职位、高级数据和网络访问或过去风险行为历史记录的用户的唯一风险活动。 创建优先级用户组并将用户分配到组帮助将策略的范围确定为这些用户呈现的独特情况。
+内部风险管理包括对向策略分配优先用户组的支持，以帮助标识具有关键职位、高级数据和网络访问或过去风险行为历史记录的用户的唯一风险活动。 创建优先级用户组并将用户分配到组帮助将策略的范围范围确定为这些用户呈现的独特情况。
 
 使用下列策略模板时需要优先级用户组：
 
@@ -192,7 +192,7 @@ DLP 策略可帮助识别用户，以在针对敏感信息的高风险性 DLP �
 内部风险管理支持从物理控制和访问平台导入用户和日志数据。 物理密码连接器允许你从 JSON 文件拉取访问数据，包括用户 ID、访问点 ID、访问时间和日期以及访问状态。 此数据可帮助预览体验计划风险管理策略中警报指标，是在你的组织中配置完全风险管理范围的重要组成部分。 如果为组织配置了多个物理标记连接器，内部风险管理会自动从所有物理标记连接器提取指示器。 使用所有内部风险策略模板时，物理保护连接器的信息会补充其他内部风险信号。
 
 > [!IMPORTANT]
-> 若要内部风险管理策略使用与离开和终止用户相关的信号数据，并将这些信号数据与物理控制和访问平台的事件数据关联，还必须配置 Microsoft 365 HR 连接器。 如果在未启用 Microsoft 365 HR 连接器的情况下启用物理保护连接器，内部风险管理策略将仅处理针对组织中用户的未经授权的物理访问的事件。
+> 若要让内部风险管理策略使用与离开和终止用户相关的信号数据，并将这些信号数据与物理控制和访问平台的事件数据关联，还必须配置 Microsoft 365 HR 连接器。 如果在未启用 Microsoft 365 HR 连接器的情况下启用物理保护连接器，内部风险管理策略将仅处理针对组织中用户的未经授权的物理访问的事件。
 
 有关 [为组织](import-physical-badging-data.md) 配置物理保护连接器的分步指南，请参阅设置连接器以导入物理保护数据一文。 配置连接器后，返回到这些配置步骤。
 
@@ -200,7 +200,7 @@ DLP 策略可帮助识别用户，以在针对敏感信息的高风险性 DLP �
 
 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是一个企业终结点安全平台，旨在帮助企业网络预防、检测、调查和响应高级威胁。 为了更好地查看组织中安全违规的情况，你可以导入并筛选 Defender for Endpoint 警报，以用于从内部风险管理安全违反策略模板创建的策略中使用的活动。
 
-如果你创建违反安全策略，则需要在你的组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint 以在 Defender 安全中心进行内部风险管理集成，以导入安全违反警报。 有关要求详细信息，请参阅 Microsoft [Defender for Endpoints](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) 的最低要求文章。
+如果你创建违反安全策略，则需要在你的组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint 以实现 Defender 安全中心中的内部风险管理集成，以导入安全违反警报。 有关要求详细信息，请参阅 Microsoft [Defender for Endpoints](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) 的最低要求文章。
 
 请参阅 [在 Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) 中配置高级功能一文，了解为内部风险管理集成配置 Defender for Endpoint 的分步指南。 配置适用于终结点的 Microsoft Defender 后，返回到这些配置步骤。
 
@@ -228,7 +228,7 @@ DLP 策略可帮助识别用户，以在针对敏感信息的高风险性 DLP �
 7. 在" **优先级用户组"** 页上，创建优先级用户组，如果未在步骤 3 中创建，则 **添加用户**。
 8. 在 **"Power Automate** 流"页上，配置来自内部风险流模板的流或创建新流。 有关 [分步指南](insider-risk-management-settings.md#power-automate-flows-preview) ，请参阅内部风险管理设置入门文章。
 9. 在" **优先级资源"页上**，配置优先级资源以使用物理保护连接器导入的物理控制和访问平台的数据。 有关 [分步指南](insider-risk-management-settings.md#priority-physical-assets-preview) ，请参阅内部风险管理设置入门文章。
-10. 在 **"Microsoft Teams"** 页上，Microsoft Teams与内部风险管理集成，以针对案例或用户协作自动创建团队。 有关 [分步指南](insider-risk-management-settings.md#microsoft-teams-preview) ，请参阅内部风险管理设置入门文章。
+10. 在 **"Microsoft Teams"** 页上，启用Microsoft Teams风险管理集成，以针对案例或用户协作自动创建团队。 有关 [分步指南](insider-risk-management-settings.md#microsoft-teams-preview) ，请参阅内部风险管理设置入门文章。
 11. 选择 **"保存** "，为内部风险策略启用这些设置。
 
 ## <a name="step-6-create-an-insider-risk-management-policy"></a>步骤 6：创建内部风险管理策略
@@ -264,7 +264,7 @@ DLP 策略可帮助识别用户，以在针对敏感信息的高风险性 DLP �
     - **敏感度标签**： 选择 **添加敏感度标签**，然后选择要设置优先级的标签。 例如， *机密* ， *"机密*。
 
     >[!NOTE]
-    >配置策略并选择优先级 Share Point 网站的用户可以选择SharePoint他们有权访问的网站。 如果SharePoint当前用户无法选择策略中的网站，则具有所需权限的另一个用户稍后可以选择策略的网站，或者应向当前用户授予对所需网站的访问权限。
+    >配置策略并选择优先级 Share Point 网站的用户可以选择SharePoint他们有权访问的网站。 如果SharePoint当前用户无法选择策略中的网站，则具有所需权限的其他用户稍后可以选择策略的网站，或者应为当前用户授予对所需网站的访问权限。
 
 12. 选择“**下一步**”以继续。
 13. 在 **指标及触发事件** 页面上，你将在 **预览体验计划风险设置** > **指标** 页面看到到您定义为可用的 [指标](insider-risk-management-settings.md#indicators)。 如果在向导开头选择了 *数据泄露* 模板，则必须从 **DLP 策略** 下拉列表中选择 DLP 策略，以启用触发策略指示器或选择内置触发事件。

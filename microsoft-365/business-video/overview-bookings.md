@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft Bookings，这是一款适用于小型企业的联机和移动应用，可为客户提供约会预订。
-ms.openlocfilehash: f797a18616f63aea873ea5c1060a54dffbe078ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 05a43a08001b38d086b86c24c4bfb2d84db5fc1e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170830"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151466"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Microsoft Bookings 概述
 
@@ -37,7 +37,7 @@ Microsoft Bookings 是一款适用于小型企业的联机和移动应用，可�
 
 ## <a name="get-started-with-bookings"></a>Bookings 入门
 
-1. 若要开始登录到 Microsoft 365，请从应用启动 **器中选择 Bookings。**
+1. 若要开始登录到 Microsoft 365，请从应用启动器中选择 **Bookings。**
 1. 在 **Bookings 页面上** 选择"现在 **获取** "。
 1. 添加你的业务信息，你已准备好开始使用 Bookings。
 

@@ -3,27 +3,25 @@ title: Linux 静态代理发现上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 介绍如何在 Linux 上为终结点配置 Microsoft Defender，以用于静态代理发现。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 代理
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 09ec44a90c93272da814fd1deba49c364cd8776e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d05cf31ab773aa1b2b6583aca290514077621b3a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196616"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152210"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>在 Linux 上为静态代理发现配置 Microsoft Defender for Endpoint
 
@@ -67,7 +65,7 @@ Microsoft Defender for Endpoint 可以使用环境变量发现 `HTTPS_PROXY` 代
 
 在 `HTTPS_PROXY` 卸载过程中，环境变量可能同样定义。
 
-请注意，如果需要代理但不配置代理，则安装和卸载不一定失败。 但是，将不会提交遥测，由于网络超时，操作可能需要更长时间。
+请注意，如果需要代理但不配置代理，安装和卸载不一定失败。 但是，将不会提交遥测，由于网络超时，操作可能需要更长时间。
 
 ## <a name="post-installation-configuration"></a>安装后配置
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_TOC
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 将域控制的用户与Microsoft 365同步。
-ms.openlocfilehash: 09a625bb882cfe654a92294cc35d62c3ad9e38b6
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 9b15179a48905e6ab9f8e6a44ebd7a0d62dc2bea
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786226"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153902"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>将域用户同步到 Microsoft 365
 
@@ -40,11 +40,11 @@ ms.locfileid: "59786226"
 
    - 请确保目录中不存在以下属性的重复项 **：mail、proxyAddresses** 和 **userPrincipalName**。 这些值必须是唯一的，并且必须删除任何重复项。
    
-   - 我们建议您为每个本地用户帐户配置 **userPrincipalName** (UPN) 属性，以匹配与授权用户对应的主Microsoft 365地址。 例如 *：mary.shelley@contoso.com* 而不是 *mary@contoso.local*
+   - 建议您为每个本地用户帐户配置 **userPrincipalName** (UPN) 属性，以匹配与授权用户对应的主Microsoft 365地址。 例如 *：mary.shelley@contoso.com，* 而不是 *mary@contoso.local*
    
    - 如果 Active Directory 域以不可路由的后缀（如 *.local* 或 *.lan）* 结束，而不是 Internet 可路由后缀（如 *.com* 或 *.org），* 请首先调整本地用户帐户的 UPN 后缀，如准备目录同步的不可路由域中所述。 [](../../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md) 
 
-下面的步骤 4 (4) 运行 **IdFix** 还将确保本地 Active Directory 已准备好进行目录同步。
+下面的步骤 4 (4) 中运行 **IdFix** 还将确保本地 Active Directory 已准备好进行目录同步。
 
 ## <a name="2-install-and-configure-azure-ad-connect"></a>2. 安装和配置 Azure AD 连接
 
@@ -63,7 +63,7 @@ ms.locfileid: "59786226"
 
 有关详细信息[，请参阅为Microsoft 365](../../enterprise/set-up-directory-synchronization.md)目录同步。
 
-配置 Azure AD 连接 选项时，我们建议启用密码同步、无缝单一登录和密码写回功能，Microsoft 365 for  business 也支持此功能。 
+配置 Azure AD 连接选项时，我们建议启用密码同步、无缝单一登录和密码写回功能，Microsoft 365 for  business 也支持此功能。 
 
 > [!NOTE]
 > 除了 Azure AD 连接 中的复选框之外，还有一些额外的密码写回连接。 有关详细信息，请参阅 [操作说明：配置密码写回](/azure/active-directory/authentication/howto-sspr-writeback)。 

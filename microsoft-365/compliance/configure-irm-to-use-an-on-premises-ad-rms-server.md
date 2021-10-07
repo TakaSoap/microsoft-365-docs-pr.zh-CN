@@ -9,26 +9,26 @@ ms.date: 12/13/2017
 audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: 了解如何在 Exchange Online 中配置信息权限管理 (IRM) ，以使用 AD RMS (Active Directory 权限管理服务) 服务器。
+description: 了解如何在 Exchange Online 中配置信息权限 (IRM) ，以使用 AD RMS (Active Directory 权限管理服务) 服务器。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64d89d52b4e835c81ed1e2c8bbd54eaaae6f1823
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 89ef25adf41c80abfd04ffdc51a32ba2cbef0c5d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169684"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153182"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>将 IRM 配置为使用本地 AD RMS 服务器
 
 为了与本地部署一同使用，Exchange Online 中的信息权限管理 (IRM) 使用 Active Directory Rights Management Services (AD RMS) ，这是 Windows Server 2008 及更高版本中的一种信息保护技术。 通过将 AD RMS 权限策略模板应用于电子邮件，可将 IRM 保护应用于电子邮件。 权限附加到邮件本身，以便联机和脱机以及组织防火墙内外进行保护。
 
-本主题显示了如何将 IRM 配置为使用 AD RMS 服务器。 有关将新功能用于 Office 365 邮件加密 和 Azure Azure Active Directory的信息，请参阅 Office 365 邮件加密[FAQ](./ome-faq.yml)。
+本主题显示了如何将 IRM 配置为使用 AD RMS 服务器。 有关将新功能用于 Office 365 邮件加密 和 Azure Azure Active Directory 的信息，请参阅 Office 365 邮件加密[FAQ](./ome-faq.yml)。
 
 有关 Exchange Online 中 IRM 的详细信息，请参阅[Exchange Online 中的信息权限管理](information-rights-management-in-exchange-online.md)。
 
@@ -42,7 +42,7 @@ ms.locfileid: "59169684"
 
 - 有关如何安装和配置 Windows PowerShell 以及连接到服务的详细信息，请参阅[使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 Exchange 管理中心的键盘[Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
+- 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 Exchange Online 中适用于 Exchange 管理中心的键盘[快捷方式](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。
@@ -98,7 +98,7 @@ Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byt
 
 #### <a name="how-do-you-know-this-step-worked"></a>如何判断这一步生效？
 
-若要验证是否成功导入了 TPD，请运行 **Get-RMSTrustedPublishingDomain** cmdlet 检索 Exchange Online 中的 TPD。 有关详细信息，请参阅 [Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain) 中的示例。
+若要验证是否成功导入了 TPD，请运行 **Get-RMSTrustedPublishingDomain** cmdlet 检索组织中 Exchange Online TPD。 有关详细信息，请参阅 [Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain) 中的示例。
 
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>步骤 3：使用 Exchange 命令行管理程序 来分发 AD RMS 权限策略模板
 
@@ -168,4 +168,4 @@ Set-IRMConfiguration -InternalLicensingEnabled $true
 
 - 使用 **Test-IRMConfiguration** cmdlet 测试 IRM 功能。 有关详细信息，请参阅 [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration) 中的"示例 1"。
 
-- 在"更多选项"图标Outlook 网页版扩展菜单中选择"设置权限"选项，在Outlook 网页版 中撰写新邮件，然后使用 I (RM 进行 ![ ](../media/ITPro-EAC-MoreOptionsIcon.gif)) 。
+- 在"更多选项"图标Outlook 网页版扩展菜单中选择"设置权限"选项，在Outlook 网页版) 中撰写新邮件并受 I (RM ![ ](../media/ITPro-EAC-MoreOptionsIcon.gif) 保护。

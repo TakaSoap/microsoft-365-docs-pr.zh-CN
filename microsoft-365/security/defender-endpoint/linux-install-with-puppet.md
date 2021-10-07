@@ -3,27 +3,25 @@ title: 使用部署在 Linux 上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 介绍如何使用安装程序在 Linux 上部署 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6029fbb2f00cde1346dc2661486ae494015a753f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4309155fa078b4a851838e528f4c47f2ef6569eb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196041"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152234"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>使用部署在 Linux 上的 Microsoft Defender for Endpoint
 
@@ -36,7 +34,7 @@ ms.locfileid: "59196041"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-本文介绍如何使用部署在 Linux 上使用部署适用于终结点的 Defender。 成功的部署需要完成以下所有任务：
+本文介绍了如何使用部署在 Linux 上部署适用于 Endpoint 的 Defender。 成功的部署需要完成以下所有任务：
 
 - [下载载入程序包](#download-the-onboarding-package)
 - [创建清单](#create-a-puppet-manifest)
@@ -51,7 +49,7 @@ ms.locfileid: "59196041"
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从门户下载Microsoft 365 Defender包：
+从应用门户下载Microsoft 365 Defender包：
 
 1. In Microsoft 365 Defender portal， go to **设置 > Endpoints > Device management > Onboarding**.
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 In the second drop-down menu， select **Your preferred Linux configuration management tool** as the deployment method.
@@ -81,7 +79,7 @@ ms.locfileid: "59196041"
 
 你需要创建一个清单，用于将 Linux 上的 Defender for Endpoint 部署到由开发工具服务器管理的设备上。 此示例使用了从 *labs中* 提供的 apt 和 *yumrepo* 模块，并假定模块已安装在了您的开发工具服务器上。
 
-在安装 *Install_mdatp模块文件夹* 下 *install_mdatp/* 文件和清单文件夹。 此文件夹通常位于安装服务器 */etc/moduleslabs/code/environments/production/modules* 中。 将mdatp_onboard.js上的文件复制到 *"install_mdatp/files"* 文件夹。 创建 *init.pp* 包含部署说明的文件：
+在安装 *Install_mdatp模块文件夹* 下创建 *install_mdatp/文件和install_mdatp/* 清单"文件夹。 此文件夹通常位于安装服务器 */etc/moduleslabs/code/environments/production/modules* 中。 将上面创建的 mdatp_onboard.json 文件复制到 *install_mdatp/files* 文件夹。 创建 *init.pp* 包含部署说明的文件：
 
 ```bash
 pwd
@@ -103,7 +101,7 @@ install_mdatp
 
 ### <a name="contents-of-install_mdatpmanifestsinitpp"></a>`install_mdatp/manifests/init.pp` 的内容
 
-可以从以下频道之一部署 Linux 上的 Defender for Endpoint (下面表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。
+Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (如下表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。
 
 通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员-快* 中的设备是首先接收更新和新功能的设备，随后是预览体验成员 - *慢* ，最后是 *受支持*。
 
@@ -227,7 +225,7 @@ mdatp health --field healthy
 > [!IMPORTANT]
 > 当产品首次启动时，它将下载最新的反恶意软件定义。 根据您的 Internet 连接，这最多可能需要几分钟。 在此期间，上述命令将返回 的值 `0` 。
 
-如果产品运行不正常， (检查退出代码) `echo $?` 问题：
+如果产品运行不正常， (检查的退出代码) `echo $?` 问题：
 
 - 1（如果设备尚未载入）。
 - 3（如果无法建立与守护程序的连接）。

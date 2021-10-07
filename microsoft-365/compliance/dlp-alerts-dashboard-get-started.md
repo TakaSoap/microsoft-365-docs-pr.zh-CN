@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,20 +20,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 开始定义和管理数据丢失防护策略的警报。
-ms.openlocfilehash: ad117eb0c5460b90c92c664f0c233b81d1882327
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 601442336cb6ba2a913f3c64eb8345030d0f8209
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175613"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151094"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>数据丢失防护警报仪表板入门
 
-DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。 对敏感项目采取操作时，可以通过配置 DLP 警报来通知您。 本文演示如何定义与 DLP 策略或 DLP 策略的数据丢失防护 () 策略。 你将看到如何在管理中心内使用[DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)警报管理Microsoft 365 合规中心查看 DLP 策略违反的[警报、事件](https://compliance.microsoft.com/)和关联元数据。
+DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。 对敏感项目采取操作时，可以通过配置 DLP 警报来通知您。 本文演示如何定义与 DLP 策略或 DLP 策略的数据丢失防护 () 策略。 你将看到如何使用 DLP 警报管理[仪表板Microsoft 365 合规中心查看](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)DLP 策略违反的警报、[事件](https://compliance.microsoft.com/)和关联元数据。
 
 如果您是 DLP 警报的新增用户，则应该查看了解数据丢失防护 [警报仪表板](dlp-alerts-dashboard-learn.md)
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在开始之前，请确保你具有必要的先决条件：
 
@@ -43,16 +43,16 @@ DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>DLP 警报管理仪表板的许可
 
-DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 To get started， you should be eligible for Office 365 DLP for Exchange Online， SharePoint Online， and OneDrive for Business. 有关 DLP 的许可要求Office 365，请参阅哪些许可证为用户提供从服务中获益[的权利？。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)
+DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 若要开始，你应该有资格使用 Office 365 DLP Exchange Online SharePoint Online 和 OneDrive for Business。 有关 DLP 的许可要求Office 365，请参阅哪些许可证为用户提供从服务中获益[的权利？。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)
 
-使用符合[使用 DLP](endpoint-dlp-learn-about.md)条件Teams在[DLP](dlp-microsoft-teams.md)警报管理仪表板中，Teams终结点 DLP 策略警报和 DLP 策略警报。
+使用符合[使用 DLP](endpoint-dlp-learn-about.md)条件Teams [DLP](dlp-microsoft-teams.md)的客户将在 DLP 警报管理仪表板中查看其Teams DLP 策略警报和 DLP 策略警报。
 
 内容 **预览** 功能仅适用于以下许可证：
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
 - 高级合规性 (E5) 加载项
-- Microsoft 365 E5/A5 信息保护和管理
+- Microsoft 365 E5/A5 信息保护和治理
 - Microsft 365 E5/A5 合规性
 
 ### <a name="licensing-for-alert-configuration-options"></a>警报配置选项的许可
@@ -76,7 +76,7 @@ DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 To get
 - 合规数据管理员
 - 安全管理员
 - 安全操作员
-- 安全读取者
+- 安全信息读取者
 
 若要访问 DLP 警报管理仪表板，您需要：
 
@@ -103,7 +103,7 @@ DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 To get
 
 :::image type="content" source="../media/incident-reports-options-aggregated-alerts.png" alt-text="Screenshot showing options for incident reports for users who are eligible for aggregated alert configuration options." border="false":::
 
-通过此配置，您可以设置一个策略，以在活动符合策略条件或超出特定阈值时（基于活动数或根据已筛选数据量）生成警报。
+通过此配置，您可以设置一个策略，以在活动符合策略条件或超出特定阈值时（基于活动数或根据已过滤数据的量）生成警报。
 
 ### <a name="single-event-alert-configuration"></a>单个事件警报配置
 

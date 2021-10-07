@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒
 description: 使用 Microsoft 365 Defender 及其安全信号源保护 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: 09b2e7930d6fbe0295dcf8343a559a19b680f547
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: c290d8d0c614f282cbacf4829da039dd14e336db
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59481092"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149546"
 ---
 # <a name="step-2-deploy-attack-detection-and-response"></a>步骤 2. 部署攻击检测和响应
 

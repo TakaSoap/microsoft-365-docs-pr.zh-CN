@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解计费帐户及其如何用于管理帐户设置、发票、付款方式和购买。
 ms.date: 03/17/2021
-ms.openlocfilehash: 551165a9ddcde03f96b6a2d03e5b1f5cd6e93eec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 07997e8001ee753de2693b62d693e3dc2e2261c9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171125"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151322"
 ---
 # <a name="understand-billing-accounts"></a>了解计费帐户
 
@@ -35,7 +35,7 @@ ms.locfileid: "59171125"
 当前<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>支持以下类型的计费帐户：
 
 - Microsoft Online Services计划：此计费帐户是在你直接注册订阅时Microsoft 365帐户。
-- Microsoft 产品&服务协议 (MPSA) 计划：当你的组织签署 MPSA 批量许可协议以购买软件和联机服务时，将创建此计费帐户。
+- Microsoft &服务协议 (MPSA) 计划：当你的组织签署 MPSA 批量许可协议以购买软件和联机服务时，将创建此计费帐户。
 - Microsoft 客户协议：当你的组织与 Microsoft 代表、授权的合作伙伴合作或单独购买时，将创建此计费帐户。
 
 " <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">计费帐户</a> "页提供 Microsoft 商业帐户的视图。 默认情况下，你的组织至少具有一个与在直接购买时或通过批量许可安排接受的协议相关联的计费帐户。
@@ -52,7 +52,7 @@ ms.locfileid: "59171125"
 | 用户群 | 一个只读字段，用于标识组织的业务 (商业、教育、政府或非营利组织) 。 |
 | 帐户状态 | 一个只读字段，用于指定 Microsoft 商业帐户的状态。 |
 | 税务 ID | 如果你在美国以外，则必须提供 VAT 或本地等效项。 有关详细信息，请参阅[税务信息](billing-and-payments/tax-information.md)。 |
-| 协议 | 当通过直接购买或批量许可安排创建计费帐户时，组织会接受或签署一份概述帐户&条款的协议。 如果适用，此视图将列出协议历史记录。 如果需要接受更新后的条款，将显示"批准 **协议"** 链接。 |
+| 协议 | 当通过直接购买或批量许可安排创建计费帐户时，组织会接受或签署一份概述了帐户&条款的协议。 如果适用，此视图将列出协议历史记录。 如果需要接受更新后的条款，将显示"批准 **协议"** 链接。 |
 | 计费配置文件 | 帐单配置文件定义发票的属性，如谁收到帐单、帐单的交付方式、付款期限和 PO 编号。 若要在整个组织中分配计费，可以创建多个计费配置文件，在购买时标识相应的计费配置文件。 有关计费配置文件以及如何使用它们为组织生成更灵活的计费选项的详细信息，请参阅 [了解计费配置文件](billing-and-payments/manage-billing-profiles.md)。 |
 
 > [!NOTE]
@@ -61,7 +61,7 @@ ms.locfileid: "59171125"
 > - 政府颁发的文档或注册信
 > - 打印出本地公司的注册表
 >
-> 如果仅更改客户名称，但实体保持不变，则支持可帮助更改名称和地址。 提供的文档应清楚地显示仅实体的名称已更改。 如果更改是交易的结果，包括出售业务、更改控制措施，或者客户联盟的资产出售或"出售"，请联系你的 Microsoft 卖家。
+> 如果仅更改客户名称，但实体保持不变，则支持可帮助更改名称和地址。 提供的文档应清楚地显示仅实体的名称已更改。 如果更改是交易的结果，包括出售业务、更改控制措施，或者客户联盟的收购或"出售"，请联系你的 Microsoft 卖家。
 
 ## <a name="shipping-addresses"></a>发货地址
 

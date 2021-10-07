@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 你的组织可能需要多个域，以便客户可以找到你。 了解如何将另一个域添加到订阅。
-ms.openlocfilehash: fb8af781f68cddd5780d27724134910a28db8bf2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6e994bfdb50995d9a75c36eb831e35daf58561d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200761"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153662"
 ---
 # <a name="add-another-domain"></a>添加其他域
 
@@ -58,7 +58,7 @@ ms.locfileid: "59200761"
 
 ## <a name="related-content"></a>相关内容
 
-[在本文Microsoft 365 (](../admin/setup/add-domain.md)添加) \
+[在本文Microsoft 365 (](../admin/setup/add-domain.md)域) \
 [添加 DNS 记录以连接域](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (文章) \
 [更改名称服务器以使用任意域注册机构设置 Microsoft 365](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md)（文章）\
 [域常见问题](../admin/setup/domains-faq.yml) （文章）

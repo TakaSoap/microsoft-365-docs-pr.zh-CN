@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: v-jweston
 author: jweston-1
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a8efc37b3ae5177540242bca5fdbeab5f4e613ba
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cd86f7c958e4e6912c18ddb3c345bfbcc6b6242e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200994"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149798"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>试用 Microsoft Defender for Endpoint
 
@@ -41,7 +41,7 @@ ms.locfileid: "59200994"
 
 当你试用 Microsoft Defender for Endpoint 时，你可以选择先将一些设备载入服务，然后再载入整个组织。  
 
-然后，你可以试用可用的功能，例如运行攻击模拟，并查看 Defender for Endpoint 如何显示恶意活动，并让你进行有效的响应。 
+然后，你可以试用可用的功能，例如运行攻击模拟，了解 Defender for Endpoint 如何显示恶意活动，并让你进行有效的响应。 
 
 ## <a name="step-1-verify-pilot-group"></a>步骤 1. 验证试点组
 完成"启用评估"部分概述的载入步骤后[](eval-defender-endpoint-enable-eval.md)，应大约在一小时后在设备清单列表中看到设备。 
@@ -56,7 +56,7 @@ ms.locfileid: "59200994"
 让我们首先查看仪表板。
 
 ### <a name="view-the-device-inventory"></a>查看设备清单
-设备清单是你将看到网络中终结点、网络设备和 IoT 设备列表的地方。 它不仅为你提供了网络中设备的视图，还为你提供了有关这些设备的深入信息，例如域、风险级别、操作系统平台和其他详细信息，以便轻松识别风险最大的设备。
+设备清单是你将看到网络中终结点、网络设备和 IoT 设备列表的地方。 它不仅为你提供了网络中设备的视图，还为你提供了关于这些设备的深入信息，例如域、风险级别、操作系统平台和其他详细信息，以便轻松识别风险最大的设备。
 
 ### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>查看威胁和漏洞管理仪表板 
 威胁漏洞管理可帮助你专注于对组织构成最紧急和最高风险的漏洞。 从仪表板中，获取组织曝光分数、设备的 Microsoft 安全分数、设备曝光分布、顶级安全建议、最易受攻击的软件、顶级修正活动和最公开设备数据等高级视图。 
@@ -76,7 +76,7 @@ Microsoft Defender for Endpoint 附带了 [可在](https://securitycenter.window
 
 2. 下载并阅读所选方案提供的相应演练文档。
 
-3. 下载模拟文件或复制模拟脚本，方法为导航到帮助模拟  >  **&教程**。 你可以选择在测试设备上下载文件或脚本，但这不是强制性的。
+3. 下载模拟文件或通过导航到帮助模拟和教程复制&  >  **脚本**。 你可以选择在测试设备上下载文件或脚本，但这不是强制性的。
 
 4. 根据演练文档中的指示，在测试设备上运行模拟文件或脚本。
 

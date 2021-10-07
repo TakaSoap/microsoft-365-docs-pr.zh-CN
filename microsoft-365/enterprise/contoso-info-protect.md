@@ -9,24 +9,24 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso 如何使用企业Microsoft 365中的信息保护功能，保护其云中的数字资产。
-ms.openlocfilehash: c61d6ee0a3f577d27c306631ea9f57d8cb3d7c2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解 Contoso 如何使用企业版Microsoft 365保护功能，以确保其数字资产在云中的安全。
+ms.openlocfilehash: 1a1130329f09868d6f235b575ff2d3128f538154
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200469"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152750"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的信息保护
 
 Contoso 非常关心其信息安全。 泄露或销毁描述其产品开发和专有制造技术的知识产权将使它们处于竞争劣势。
 
-在将敏感的数字资产迁移到云之前，Contoso 已确保其本地信息分类和保护要求受 Microsoft 365 企业基于云的服务支持。
+在将敏感的数字资产迁移到云之前，Contoso 已确保其本地信息分类和保护要求受 Microsoft 365 企业版基于云的服务支持。
 
 ## <a name="contoso-data-security-classification"></a>Contoso 数据安全分类
 
@@ -50,7 +50,7 @@ Contoso 对数据进行了分析，并确定了以下分类级别。
 
 ## <a name="the-contoso-path-to-information-protection-with-microsoft-365-for-enterprise"></a>Contoso 信息保护与企业Microsoft 365路径
 
-Contoso 遵循了以下步骤，Microsoft 365企业的信息保护要求做好准备：
+Contoso 按照以下步骤为企业Microsoft 365信息保护要求做好准备：
 
 1. 确定要保护的信息
 
@@ -74,7 +74,7 @@ Contoso 遵循了以下步骤，Microsoft 365企业的信息保护要求做好�
 
 ## <a name="conditional-access-policies-for-information-protection"></a>用于信息保护的条件访问策略
 
-作为推出 Exchange Online 和 SharePoint 的一Exchange Online，Contoso 配置了以下一组条件访问策略，并应用于相应的组：
+作为推出 Exchange Online 和 SharePoint 的一SharePoint，Contoso 配置了以下一组条件访问策略，并应用于相应的组：
 
 - [设备策略上的托管和非托管应用程序访问](../security/office-365-security/identity-access-policies.md)
 - [Exchange Online 访问策略](../security/office-365-security/secure-email-recommended-policies.md)
@@ -92,8 +92,8 @@ Contoso 遵循了以下步骤，Microsoft 365企业的信息保护要求做好�
 
 - 允许的应用以及它们可以对组织数据采取的操作由应用保护策略定义。
 - 电脑和移动设备必须兼容。
-- Exchange Online) OME Office 365 OME (OME Exchange Online。
-- SharePoint应用强制执行的限制。
+- Exchange Online使用Office 365 OME (OME) OME Exchange Online。
+- SharePoint使用应用强制限制。
 - SharePoint 使用访问控制策略来实现非托管设备的仅浏览器访问或阻止其访问。
 
 ## <a name="mapping-microsoft-365-for-enterprise-features-to-contoso-data-levels"></a>将Microsoft 365功能映射到 Contoso 数据级别
@@ -104,7 +104,7 @@ Contoso 遵循了以下步骤，Microsoft 365企业的信息保护要求做好�
 |:-------|:-----|:-----|:-----|
 | 1 级：基准  | SharePoint 和 Exchange Online 条件访问策略 <BR> SharePoint 网站上的权限 | 敏感度标签 <BR> BitLocker <BR> Windows 信息保护 | 设备条件访问策略和移动应用管理策略 |
 | 2 级：敏感 | 1 级再加上： <BR> <BR> 敏感度标签 <BR> SharePoint 网站上的 Microsoft 365 保留标签 <BR> 用于 SharePoint 和 Exchange Online 的数据丢失防护 <BR> 独立 SharePoint 网站  | 1 级再加上： <BR> <BR> 数字资产上的敏感度标签  | 1 级 |
-| 3 级：高度管控 | 2 级再加上： <BR><BR> 将你自己的密钥 (BYOK) 加密和保护商业机密信息 <BR> Azure Key Vault，用于与服务交互的业务Microsoft 365应用程序 | 2 级 | 1 级 |
+| 3 级：高度管控 | 2 级再加上： <BR><BR> 将你自己的密钥 (BYOK) 加密和保护商业机密信息 <BR> Azure Key Vault，用于与服务交互的业务线Microsoft 365应用程序 | 2 级 | 1 级 |
 |||||
 
 下面是生成的 Contoso 信息保护配置。

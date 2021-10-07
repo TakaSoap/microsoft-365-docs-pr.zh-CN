@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -19,19 +20,19 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何使用 Windows PowerShell 为用户设置强密码Windows PowerShell。
-ms.openlocfilehash: e9bf4fc81cf788ab51ef174d73a7c6086ebb9d46
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: 了解如何使用 Windows PowerShell 为用户设置强密码要求。
+ms.openlocfilehash: 90ce3949b88a186c573d2a7718ede10b1a955c2c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773411"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154109"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>为用户关闭强密码要求
 
 本文介绍如何为用户关闭强密码要求。 默认情况下，在适用于企业组织的 Microsoft 365启用强密码要求。 您的组织可能要求禁用强密码。 请按照以下步骤关闭强密码要求。 您必须使用 PowerShell 完成这些步骤。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 本文适用于管理企业、学校或非营利组织的密码策略的用户。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](/microsoft-365/business-video/admin-center-overview) 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 
@@ -39,7 +40,7 @@ ms.locfileid: "59773411"
 
 ## <a name="set-strong-passwords"></a>设置强密码
 
-1. [连接 PowerShell Microsoft 365。](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+1. [连接 PowerShell Microsoft 365 。](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 2. 使用 PowerShell，可以使用以下命令关闭所有用户的强密码要求：
 

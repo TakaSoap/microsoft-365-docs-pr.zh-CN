@@ -12,14 +12,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 ms.service: ''
-localization_priority: medium
+ms.localizationpriority: medium
 description: 了解如何在"主题"中编辑Microsoft Viva主题。
-ms.openlocfilehash: 9394ed96a340f902d5ef4fc3dd96eb58a81a9e42
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: 80deb818124466a6d3fbcc1db4311193bb7778ae
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126874"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152654"
 ---
 # <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>编辑现有主题中的Microsoft Viva主题 
 
@@ -41,11 +41,11 @@ ms.locfileid: "60126874"
 - 具有创建 [或编辑主题的权限](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva Topics 主题权限设置中向用户授予此权限。 
 
 > [!Note] 
-> 具有主题中心主题管理权限的用户 (知识) 已拥有创建和编辑主题的权限。
+> 具有在主题中心管理主题的权限的用户 (知识) 已拥有创建和编辑主题的权限。
 
 ## <a name="how-to-edit-a-topic-page"></a>如何编辑主题页面
 
-具有"Who"权限的用户可以通过从主题突出显示中打开主题页面，然后选择主题页面右上方的"编辑"按钮来编辑主题。  还可以从主题中心主页打开主题页面，您可以在其中找到已连接到的所有主题。
+具有 *"Who"* 权限的用户可以通过从主题突出显示中打开主题页面，然后选择主题页面右上方的"编辑"按钮来编辑主题。  还可以从主题中心主页打开主题页面，您可以在其中找到已连接到的所有主题。
 
    ![显示"编辑"按钮的屏幕截图。](../media/knowledge-management/edit-button.png) </br> 
 
@@ -85,7 +85,7 @@ ms.locfileid: "60126874"
     还可使用“**来自链接**”选项，以通过提供 URL 来添加文件或页面。 
 
    > [!Note] 
-   > 您添加的文件和页面必须位于同一Microsoft 365租户中。 如果要在主题中添加指向外部资源的链接，可以通过步骤 9 中的画布图标添加该链接。
+   > 你添加的文件和页面必须位于同一个Microsoft 365租户中。 如果要在主题中添加指向外部资源的链接，可以通过步骤 9 中的画布图标添加该链接。
 
 6. 建议 **的文件和页面** 部分显示 AI 建议与主题关联的文件和页面。
 

@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 了解如何管理Microsoft 365用户帐户密码。
-ms.openlocfilehash: 85d3c42a7aca977472e44fce63af3968fc8e9705
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6a0d4298f3d6c46ab067795bccf01123605ce1aa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201345"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150734"
 ---
 # <a name="manage-microsoft-365-user-account-passwords"></a>管理Microsoft 365用户帐户密码
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-可以通过几种Microsoft 365管理用户帐户密码，具体取决于您的标识配置。 可以在 Microsoft 365 管理中心、Active Directory 域服务 (AD DS) 或 Azure Active Directory (Azure AD) 管理中心管理用户帐户。 [](../admin/add-users/index.yml)
+可以通过几种Microsoft 365管理用户帐户密码，具体取决于您的标识配置。 可以在 Microsoft 365 管理中心、Active Directory 域服务 (AD DS) 或 Azure Active Directory (Azure AD) 管理中心管理用户帐户。 [](/admin)
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>规划管理用户帐户密码的去向和方式
 
@@ -43,7 +43,7 @@ ms.locfileid: "59201345"
 
 在中管理用户帐户密码：
 
-- [Microsoft 365 管理员中心](../admin/add-users/index.yml)
+- [Microsoft 365 管理员中心](/admin)
 - Azure AD 管理中心
     
 ### <a name="hybrid"></a>混合

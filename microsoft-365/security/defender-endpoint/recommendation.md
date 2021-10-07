@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d3c29e5112a2cf68452bcb830681dac853eb8e1b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e938eb9a743b6e63a2836d71c96692e1e7d43f66
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201117"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152054"
 ---
 # <a name="recommendation-resource-type"></a>建议资源类型
 
@@ -66,15 +66,15 @@ ms.locfileid: "59201117"
 |recommendationName|String|建议名称|
 |漏洞|长型|发现的漏洞数量|
 |供应商|String|相关供应商名称|
-|recommendedVersion|String|建议版本|
+|recommendedVersion|字符串|建议版本|
 |recommendedProgram|String|建议的程序|
 |recommendedVendor|String|推荐供应商|
 |recommendationCategory|String|建议类别。 可能的值包括："Accounts"、"Application"、"Network"、"OS"、"SecurityControls"|
 |subCategory|String|建议子类别|
 |severityScore|双精度|配置对组织的 Microsoft 设备安全分数的潜在影响 (1-10) |
-|publicExploit|Boolean|公共攻击可用|
-|activeAlert|Boolean|活动警报与此建议关联|
-|associatedThreats|String collection|威胁分析报告与此建议关联|
+|publicExploit|布尔值|公共攻击可用|
+|activeAlert|布尔值|活动警报与此建议关联|
+|associatedThreats|字符串集合|威胁分析报告与此建议关联|
 |remediationType|String|修正类型。 可能的值是："ConfigurationChange"、"Update"、"Upgrade"、"Uninstall"|
 |状态|枚举|建议例外状态。 可能的值是："Active"和"Exception"|
 |configScoreImpact|双精度|Microsoft 设备影响安全分数|

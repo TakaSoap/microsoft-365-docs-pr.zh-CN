@@ -7,23 +7,23 @@ ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: 摘要：配置 Azure AD 连接，以在 Microsoft Azure 中Microsoft 365高可用性联合身份验证。
-ms.openlocfilehash: c179f45e061c1ff004f1c70e83ba0888c066f733
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 摘要：配置 Azure AD 连接，以在 Microsoft Azure 中为 Microsoft 365 进行高可用性联合Microsoft Azure。
+ms.openlocfilehash: e5a11c1b94f9a0297ccfa0a18e1963fae9898f65
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162368"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152702"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>高可用性联合身份验证阶段 5：为用户配置Microsoft 365
 
-在 Azure 基础结构服务中为 Microsoft 365 部署高可用性联合身份验证的最后阶段，获取并安装公共证书颁发机构颁发的证书，验证配置，然后在目录同步服务器上安装和运行 Azure AD 连接。 Azure AD 连接配置 Microsoft 365 订阅和 Active Directory 联合身份验证服务 (AD FS) 和 Web 应用程序代理服务器进行联合身份验证。
+在 Azure 基础结构服务中为 Microsoft 365 部署高可用性联合身份验证的最后阶段，获取并安装由公共证书颁发机构颁发的证书，验证配置，然后在目录同步服务器上安装和运行 Azure AD 连接。 Azure AD 连接配置 Microsoft 365 订阅和 Active Directory 联合身份验证服务 (AD FS) 和 Web 应用程序代理服务器进行联合身份验证。
   
 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
   
@@ -45,7 +45,7 @@ ms.locfileid: "59162368"
   
 ## <a name="verify-your-configuration"></a>验证配置
 
-现在，你应该已准备好配置 Azure AD 连接和联合身份验证，Microsoft 365。 为确保已就绪，请检查以下清单：
+现在，你应该已准备好配置 Azure AD 连接和联合身份验证Microsoft 365。 为确保已就绪，请检查以下清单：
   
 - 组织的公共域已添加到你的Microsoft 365订阅。
     
@@ -137,13 +137,13 @@ Azure AD 连接工具通过以下步骤配置 AD FS 服务器、Web 应用程序
 
 ![Azure 中高可用性和联合Microsoft 365基础结构的最终配置。](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
-Azure 中适用于租户的高可用性联合身份验证Microsoft 365已完成。
+Azure 中适用于 azure Microsoft 365的高可用性联合身份验证基础结构已完成。
   
 ## <a name="see-also"></a>另请参阅
 
 [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[用于开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365 解决方案和体系结构中心](../solutions/index.yml)
 

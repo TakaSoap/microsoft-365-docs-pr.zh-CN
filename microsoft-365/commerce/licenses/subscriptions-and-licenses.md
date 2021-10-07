@@ -1,5 +1,5 @@
 ---
-title: 了解企业版Microsoft 365订阅和许可证
+title: 了解适用于企业Microsoft 365订阅和许可证
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -9,7 +9,7 @@ ms.reviewer: micurn, nicholak
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,24 +22,24 @@ ms.custom:
 search.appverid: MET150
 description: 您收到的应用程序和服务取决于您Microsoft 365购买的产品，例如Microsoft 365 商业应用版。
 ms.date: 07/01/2020
-ms.openlocfilehash: 69996a97b582ec3323a31efbe4cb70fe4a61e19d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 11cda35cdb4326e620d5bedbc49762e868e93efa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171127"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153650"
 ---
-# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>了解企业版Microsoft 365订阅和许可证
+# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>了解适用于企业Microsoft 365订阅和许可证
 
 购买适用于Microsoft 365订阅时，需要注册一组按月或按年付费的应用和服务。 作为订阅的一部分收到的应用程序和服务取决于您购买的产品，例如Microsoft 365 商业应用版或Microsoft 365 商业标准版。 您可以在适用于中小型企业的 Microsoft 365 页面上查看每个产品[随附的内容](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)。
 
 购买订阅时，根据组织中的人数指定所需的许可证数。 购买订阅后，为组织成员创建帐户，然后为每个人分配许可证。 随着组织需求的变化，你可以购买更多许可证来容纳新人，或在某人离开组织时将许可证重新分配给其他用户。
 
-如果有一个以上的订阅，则可以针对每个订阅将许可证分配给不同人员。 例如，您可以将所有用户作为订阅的一Microsoft 365分配给所有 Microsoft 365 商业标准版 应用程序和服务。 您还可以通过单独的订阅分配一部分 Visio Online Visio订阅。
+如果有一个以上的订阅，则可以针对每个订阅将许可证分配给不同人员。 例如，您可以将所有用户分配给所有 Microsoft 365 应用程序和服务，作为订阅的一Microsoft 365 商业标准版部分。 此外，还可通过单独的 Visio 订阅将部分Visio Online。
 
 ## <a name="how-many-devices-can-people-install-office-on"></a>可以在多少台设备上安装 Office？
 
-如果你的订阅包括以下任一产品，则每个人Office五台电脑或 Mac、五台平板电脑和五部手机上安装。
+如果你的订阅包括以下任一产品，每个人Office五台电脑或 Mac、五台平板电脑和五部手机上安装。
 
 :::row:::
    :::column span="":::

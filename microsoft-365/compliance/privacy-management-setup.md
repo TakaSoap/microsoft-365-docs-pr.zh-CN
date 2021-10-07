@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 隐私管理预览 (入门) '
+title: 'Microsoft 隐私管理与预览 (入门) '
 f1.keywords:
 - CSH
 ms.author: v-jgriffee
@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何为组织设置隐私管理、设置角色和权限以及配置重要设置。
-ms.openlocfilehash: 229d4bec78424858cd7034c8953313f8593e90e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d75054c76a20ec622813d022c9de0218ea5f7b6c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170125"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151022"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>隐私管理与预览 (入门) 
 
@@ -34,7 +34,7 @@ ms.locfileid: "59170125"
 有关详细的许可指南，请参阅 [适用于安全性与合规性的 Microsoft 365 许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
 > [!Note]
-> 美国政府隐私管理的公共预览版不适用于美国政府Community (GCC) 中等GCC或国防部 (DoD) 客户。
+> 美国政府隐私管理的公共预览版不适用于美国政府 Community (GCC) 、GCC 高或国防部 (DoD) 客户。
 
 ## <a name="set-up-privacy-management"></a>设置隐私管理
 
@@ -46,7 +46,7 @@ ms.locfileid: "59170125"
 
 获取订阅后，最多允许激活 30 分钟。 然后返回到合规中心中的隐私管理以开始。
 
-首次打开隐私管理时，将要求您确认你同意条款和个人数据评估过程， ([了解) 。](privacy-management.md#where-privacy-management-identifies-personal-data) 可以完整查看提供的链接，然后再继续。 一旦同意，隐私管理可能需要最多 24 小时才能开始提供有关组织数据的见解。
+首次打开隐私管理时，系统要求你确认你同意条款和个人数据评估过程， ([了解) 。](privacy-management.md#where-privacy-management-identifies-personal-data) 可以完整查看提供的链接，然后再继续。 一旦同意，隐私管理可能需要最多 24 小时才能开始提供有关组织数据的见解。
 
 如果你没有获得订阅或同意使用隐私管理条款所需的角色，系统将提示你联系全局管理员寻求帮助。
 
@@ -60,13 +60,13 @@ ms.locfileid: "59170125"
 
 ### <a name="manage-settings"></a>管理设置
 
-可通过设置主页右上角的齿轮访问"安全中心"页面。 它允许隐私管理管理员跨隐私管理配置基本属性，例如匿名处理、电子邮件通知等全局设置。
+可通过设置管理主页右上角的齿轮访问"隐私管理"页面。 它允许隐私管理管理员跨隐私管理配置基本属性，例如匿名处理、电子邮件通知等全局设置。
 
 在开始之前，你可能希望查看默认配置并做出任何所需的调整。 若要了解有关选项的详细信息，请参阅 [管理隐私管理设置](privacy-management-settings.md)。
 
 ## <a name="start-visualizing-your-data"></a>开始可视化数据
 
-登录隐私管理后，你将进入"概述 **"** 页面。 此页面提供有关存储在 Microsoft 365 中的个人数据的见解，以帮助您快速发现问题、识别风险指标并采取措施解决问题。 你的概述应在注册前 24 小时内填充初始见解。 当你继续使用隐私管理时，概述页面将刷新以继续提供最新信息。
+登录隐私管理后，你将进入概述 **页面** 。 此页面提供有关存储在 Microsoft 365 环境中个人数据的见解，以帮助您快速发现问题、识别风险指标并采取措施解决问题。 你的概述应在注册前 24 小时内填充初始见解。 当你继续使用隐私管理时，概述页面将刷新以继续提供最新信息。
 
 为了进一步深入了解数据，数据配置文件页将提供更多可视化和分析，并按地理位置和 Microsoft 365 服务提供组织数据高级视图。
 

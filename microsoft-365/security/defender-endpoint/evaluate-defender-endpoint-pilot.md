@@ -1,7 +1,7 @@
 ---
-title: '通过模拟攻击体验 Microsoft Defender (MDE) '
+title: 通过模拟攻击体验 Microsoft Defender (MDE) 体验
 description: 试用你的Microsoft 365 Defender试验实验室或试验环境。
-keywords: Microsoft 365 Defender试用版，请尝试 Microsoft 365 Defender，评估 Microsoft 365 Defender， Microsoft 365 Defender 评估实验室， Microsoft 365 Defender 试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+keywords: Microsoft 365 Defender试用版，请尝试Microsoft 365 Defender，评估Microsoft 365 Defender，Microsoft 365 Defender实验室，Microsoft 365 Defender试点， 网络安全性， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,19 +21,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f9c0fc486816adc1ed2ee96dd6962b64195a90c3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 93e5b0cb5a152868749a68d34ac476660b41cc92
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573975"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152402"
 ---
-# <a name="experience-microsoft-defender-for-endpoint-mde-through-simulated-attacks"></a>通过模拟攻击体验 Microsoft Defender (MDE) 
+# <a name="experience-microsoft-defender-for-endpoint-mde-through-simulated-attacks"></a>通过模拟攻击体验 Microsoft Defender (MDE) 体验
 
->[!TIP]
+> [!TIP]
 >
->- 了解适用于终结点的 Microsoft Defender 中的最新增强功能[：Defender for Endpoint 中的新增功能是什么？。](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)
->- Defender for Endpoint 在最新的 MITRE 评估中展示了行业领先的光学镜头和检测功能。 阅读：[来自基于 MITRE ATT&CK 的评估的见解](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
+> - 了解适用于终结点的 Microsoft Defender 中的最新增强功能[：Defender for Endpoint 中的新增功能是什么？。](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)
+> - Defender for Endpoint 在最新的 MITRE 评估中展示了行业领先的光学镜头和检测功能。 阅读：[来自基于 MITRE ATT&CK 的评估的见解](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
 
 在将多个设备载入服务之前，你可能想要体验 Defender for Endpoint。 为此，可以在一些测试设备上运行受控攻击模拟。 运行模拟攻击后，你可以查看 Defender for Endpoint 如何显示恶意活动，并探索它如何启用有效的响应。
 
@@ -45,7 +45,7 @@ ms.locfileid: "58573975"
 
 ## <a name="run-a-simulation"></a>运行模拟
 
-1. 在  >  **帮助模拟&** 教程中，选择要模拟的可用攻击方案：
+1. 在 **帮助** \> **模拟&** 教程中，选择要模拟的可用攻击方案：
 
    - **方案 1：文档丢弃后门** - 模拟传递社交工程的诱使文档。 文档启动一个专门设计的后门，该后门为攻击者提供控制。
 
@@ -55,13 +55,12 @@ ms.locfileid: "58573975"
 
 2. 下载并阅读所选方案提供的相应演练文档。
 
-3. 下载模拟文件或通过导航到帮助模拟和教程复制  >  **&脚本**。 你可以选择在测试设备上下载文件或脚本，但这不是强制性的。
+3. 下载模拟文件或通过导航到帮助模拟和教程复制 \> **&脚本**。 你可以选择在测试设备上下载文件或脚本，但这不是强制性的。
 
 4. 根据演练文档中的指示，在测试设备上运行模拟文件或脚本。
 
 > [!NOTE]
 > 模拟文件或脚本模拟攻击活动，但实际上是恶意的，不会损害或损害测试设备。
->
 
 ## <a name="alternate-topic-text"></a>备用主题文本
 
@@ -80,10 +79,10 @@ ms.locfileid: "58573975"
 
 如果你要查找预先模拟，可以使用我们的"自己执行" [攻击方案](https://securitycenter.windows.com/tutorials)。 这些脚本安全、有记录且易于使用。 这些方案将反映 Defender for Endpoint 功能，并演练调查体验。
 
->[!NOTE]
->与测试设备的连接使用 RDP 完成。 请确保防火墙设置允许 RDP 连接。
+> [!NOTE]
+> 与测试设备的连接使用 RDP 完成。 请确保防火墙设置允许 RDP 连接。
 
-1. 连接你的设备，并运行攻击模拟，方法为选择 **"连接"。**
+1. 连接你的设备，然后通过选择"攻击模拟 **"连接。**
 
     ![测试设备的连接按钮的图像。](images/test-machine-table.png)
 
@@ -91,8 +90,10 @@ ms.locfileid: "58573975"
 
     ![远程桌面连接的图像。](images/remote-connection.png)
 
-    >[!NOTE]
-    >如果在初始设置期间没有保存密码的副本，则可以通过从"重置密码的图像"菜单中选择"重置密码"来 ![ 重置密码。](images/reset-password-test-machine.png)
+    > [!NOTE]
+    > 如果在初始设置期间没有保存密码的副本，则可以通过从菜单中选择"重置密码 **"来重置** 密码：
+    >
+    > ![重置密码的图像。](images/reset-password-test-machine.png)
     >
     > 设备会更改其状态为"正在执行密码重置"，然后你将在数分钟内看到新密码。
 
@@ -108,12 +109,11 @@ ms.locfileid: "58573975"
 
 使用第三方平台运行威胁模拟是在实验室环境中评估 Microsoft Defender for Endpoint 功能的良好方法。
 
->[!NOTE]
+> [!NOTE]
+> 在运行模拟之前，请确保满足以下要求：
 >
->在运行模拟之前，请确保满足以下要求：
-
->- 必须将设备添加到评估实验室
->- 威胁模拟器必须安装在评估实验室中
+> - 必须将设备添加到评估实验室
+> - 威胁模拟器必须安装在评估实验室中
 
 1. 从门户中选择"**创建模拟"。**
 
@@ -123,9 +123,10 @@ ms.locfileid: "58573975"
 
 3. 选择模拟或浏览模拟库以浏览可用的模拟。
 
-    你可以从以下方法访问模拟库：
-    - 模拟概述 **磁贴或**
-    - 通过导航从导航窗格 **评估和教程**  >  **模拟&教程，** 然后选择 **模拟目录**。
+   你可以从以下方法访问模拟库：
+
+   - 模拟概述 **磁贴或**
+   - 通过导航从导航窗格 **评估和教程** \> **模拟&教程，** 然后选择 **模拟目录**。
 
 4. 选择要运行模拟的设备。
 
@@ -134,7 +135,6 @@ ms.locfileid: "58573975"
 6. 通过选择"模拟"选项卡查看 **模拟** 的进度。查看模拟状态、活动警报和其他详细信息。
 
     ![模拟选项卡的图像。](images/simulations-tab.png)
-<br>
 
 运行模拟后，我们鼓励你演练实验室进度栏，并探索 Microsoft Defender **for Endpoint 触发了自动调查和修正**。 查看功能收集和分析的证据。
 

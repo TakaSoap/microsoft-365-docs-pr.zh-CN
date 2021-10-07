@@ -1,12 +1,12 @@
 ---
-title: 查看目录中的目录同步Microsoft 365
+title: 在目录中查看目录Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,16 +21,16 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: 本文将了解如何在 Office 365 中检查目录同步的状态。
-ms.openlocfilehash: 0fddffc667e4fc23b2c7663e70fb5e60c49814a2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0cc5b5244c5809d3f1b13b15b200bd8cea585c7c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195685"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150518"
 ---
-# <a name="view-directory-synchronization-status-in-microsoft-365"></a>查看目录中的目录同步Microsoft 365
+# <a name="view-directory-synchronization-status-in-microsoft-365"></a>在目录中查看目录Microsoft 365
 
-如果你已经将本地 Active Directory 域服务 (AD DS) 与 Azure Active Directory (Azure AD) 通过 Microsoft 365 同步，则还可以检查同步的状态。
+如果通过将本地环境与 Microsoft 365 同步，将本地 Active Directory 域服务 (AD DS) 与 Azure Active Directory (Azure AD) 集成，则还可以检查同步的状态。
   
 ## <a name="view-directory-synchronization-status"></a>查看目录同步状态
 
@@ -41,9 +41,9 @@ ms.locfileid: "59195685"
 
 下表列出了可在页面上获取相关信息的功能。
   
-如果您的目录同步存在问题，则此页上也列出了这些错误。 有关可能遇到的不同错误的详细信息，请参阅在 Microsoft 365[中标识目录同步Microsoft 365。](identify-directory-synchronization-errors.md)
+如果您的目录同步出现问题，则此页上也列出了这些错误。 有关可能遇到的不同错误的详细信息，请参阅在 Microsoft 365[中标识目录同步Microsoft 365。](identify-directory-synchronization-errors.md)
   
-|Item|它有何用途？|
+|项目|它有何用途？|
 |:-----|:-----|
 |**已验证域** | 已验证你拥有Microsoft 365租户中的域数。 |
 |**未验证域** | 已添加但未经验证的域。 |
@@ -51,7 +51,7 @@ ms.locfileid: "59195685"
 |**最新目录同步** | 上次运行目录同步的时间。 如果上次同步的时间超过三天，将显示一条警告和一个指向疑难解答工具的链接。 |
 |**启用密码同步** | TRUE 或 FALSE。 指定是否在内部部署租户和本地租户之间Microsoft 365哈希同步。 |
 |**上次密码同步** | 上次运行密码哈希同步的时间。 如果上次同步的时间超过三天，将显示一条警告和一个指向疑难解答工具的链接。 |
-|**目录同步客户端版本** | 如果已发布新版本的 Azure AD 连接包含下载链接。 |
+|**目录同步客户端版本** | 如果已发布新版本的 Azure AD，连接下载链接。 |
 |**目录同步服务帐户** | 显示你的目录Microsoft 365服务帐户的名称。 |
 |||
 

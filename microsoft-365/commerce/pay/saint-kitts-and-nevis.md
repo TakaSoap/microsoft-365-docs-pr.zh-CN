@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3077ee6e346c3162a333572a2f40278ce964890c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4bf9f36b1255229d18fc751975fe49c373f232df
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162092"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153386"
 ---
 # <a name="payment-information-for-saint-kitts-and-nevis"></a>圣基茨和尼茨的付款信息
 
@@ -31,5 +31,5 @@ Please pay in USD only and reference invoice number (s) on your payment payment 
 **Bank：** 美洲银行  
 **分支：** Dallas  
 **SWIFT 代码：** BOFAUS3N  
-**帐号：4426587954**  
+**帐户编号：4426587954**  
 **帐户名称：** Microsoft

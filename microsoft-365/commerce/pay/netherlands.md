@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3b4c7e9b7519c2fc0cdc6420093076acbaf88912
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 434f42d23b33408ddf5ffb7b7c18a16205469dff
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200622"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151310"
 ---
 # <a name="payment-information-for-netherlands"></a>荷兰的付款信息
 
@@ -26,14 +26,14 @@ ms.locfileid: "59200622"
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**Please pay in EUR and reference invoice number () on your payment invoice.**
+**Please pay in EUR and reference invoice number (s) on your payment invoice.**
 
 如果你有由 **Microsoft Ireland Operations Limited** 计费的发票，请使用此银行信息：
 
 **Bank：** 年，伦敦  
 **SWIFT 代码：** 一百万  
 **IBAN 代码：** GB31CITI18500812207591  
-**帐户编号：12207591**  
+**帐号：12207591**  
 **帐户名称：** MICROSOFT
 
 如果你有从 2021 年 3 月 1 日至 2021 年 3 月 1 日由 **Microsoft BV** 计费的订单和消耗的发票，请使用此银行信息：

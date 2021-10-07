@@ -10,15 +10,15 @@ ms.service: o365-administration
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: 将Microsoft Teams与 Canvas 集成
-ms.openlocfilehash: 8c19807034d5d063f71378dd450cfda419cd1491
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 91cca1611cc6e84dd3844d68e5e87fe7012048dc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460300"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150494"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>将Microsoft Teams与 Canvas 一同使用
 
@@ -30,7 +30,7 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 > 当前的 Class Teams LTI 仅支持将 Canvas 用户与 Microsoft Azure Active Directory (AAD) 在有限范围内同步。 
 > - 你的租户必须具有 Microsoft 教育版许可证。
 > - 只有一个 Microsoft 租户可用于在 Canvas 和 Microsoft 之间映射用户。
-> - 在使用 Class) LTI 之前，学校数据同步 (SDS Teams，以避免重复组。
+> - 在使用 Class 学校数据同步 (LTI 之前) 关闭 SDS Teams，以避免重复组。
 
 ## <a name="grant-admin-consent"></a>授予管理员同意
 
@@ -75,7 +75,7 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 
 设置 Microsoft Teams LTI 1.3 集成。
 
-作为 Canvas 管理员，你需要在你的环境中添加Microsoft Teams类 LTI 应用。 访问主帐户中的"开发人员密钥"列表，切换到继承的密钥，Teams LTI 工具。 记下应用的 LTI 客户端 ID。
+作为 Canvas 管理员，你需要在你的环境中添加 Microsoft Teams 类 LTI 应用。 访问主帐户中的"开发人员密钥"列表，切换到继承的密钥，Teams LTI 工具。 记下应用的 LTI 客户端 ID。
 
  - Microsoft Teams类 - 170000000000570
 

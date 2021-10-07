@@ -8,18 +8,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4779a0c40cd8282d8e05fde84ae72827531810d9
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: fcfce563a177dd90e312da2da3bc578ec39b15b5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124261"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152042"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的最低要求
 
@@ -65,7 +65,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 - Microsoft Defender for Endpoint for Server (覆盖的服务器服务器配置一) 
 
 > [!NOTE]
-> 如果对于以下一个或多个用户许可证，客户至少可以获取 (50 个许可证（每个覆盖的服务器操作系统环境 (OSE) ) ，每个覆盖的服务器操作系统环境 (OSE) ) 服务器许可证）：
+> 如果 (对于以下一个或多个用户许可证，客户至少可以获取 50 个许可证，每个覆盖的服务器操作系统环境 (OSE) ) 可以获取一个服务器许可证：
 >
 > - Microsoft Defender for Endpoint
 > - WindowsE5/A5
@@ -90,7 +90,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 
 ### <a name="supported-windows-versions"></a>支持的 Windows 版本
 
-- Windows 7 SP1 Enterprise (需要[ESU 以支持](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
+- Windows 7 SP1 Enterprise ([需要 ESU 以支持](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
 - Windows 7 SP1 Pro ([需要 ESU 以支持](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
 - Windows 8.1 企业版
 - Windows 8.1 专业版
@@ -119,9 +119,9 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 > [!NOTE]
 > 不支持运行移动版本的 Windows (（如 Windows CE 和 Windows 10 移动版) ）。
 >
-> 如果运行Windows 10 企业版 2016 长期服务版非 Microsoft 虚拟化平台上，则运行虚拟机可能会遇到性能问题。
+> 如果运行Windows 10 企业版 2016 长期服务版非 Microsoft 虚拟化平台上运行，则运行虚拟机可能会遇到性能问题。
 >
-> 对于虚拟环境，我们建议使用 Windows 10 企业版 LTSC 2019 或更高版本。
+> 对于虚拟环境，建议使用 Windows 10 企业版 LTSC 2019 或更高版本。
 
 ### <a name="other-supported-operating-systems"></a>其他支持的操作系统
 
@@ -198,13 +198,13 @@ Defender for Endpoint 传感器可以使用每日平均带宽 5 MB 与 Defender 
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Microsoft Defender 防病毒配置要求
 
-Defender for Endpoint 代理依赖于Microsoft Defender 防病毒扫描文件并提供有关文件的信息的能力。
+Defender for Endpoint 代理依赖于用户Microsoft Defender 防病毒扫描文件并提供有关文件的信息的能力。
 
 在 Defender for Endpoint 设备上配置安全智能更新Microsoft Defender 防病毒反恶意软件是否有效。 有关详细信息，请参阅管理更新[Microsoft Defender 防病毒应用基线](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)。
 
 如果Microsoft Defender 防病毒在你的组织中不是主动反恶意软件，并且你使用 Defender for Endpoint 服务，Microsoft Defender 防病毒被动模式。
 
-如果组织已通过组策略Microsoft Defender 防病毒其他方法关闭已载入的设备，则必须从该组策略中排除已载入的设备。
+如果组织已通过组策略Microsoft Defender 防病毒关闭已载入的设备，则必须从该组策略中排除已载入的设备。
 
 如果你正在载入服务器，Microsoft Defender 防病毒服务器上不是主动反恶意软件，Microsoft Defender 防病毒需要配置为进入被动模式或卸载。 配置取决于服务器版本。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](microsoft-defender-antivirus-compatibility.md)。
 
@@ -215,9 +215,9 @@ Defender for Endpoint 代理依赖于Microsoft Defender 防病毒扫描文件并
 
 如果你正在设备上Microsoft Defender 防病毒作为主要的反恶意软件产品，则 Defender for Endpoint 代理将成功载入。
 
-如果正在运行第三方反恶意软件客户端并使用移动设备管理解决方案或 Microsoft Endpoint Manager (current branch) ，则需要确保 Microsoft Defender 防病毒 ELAM 驱动程序已启用。 有关详细信息，请参阅[确保策略Microsoft Defender 防病毒禁用此策略](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
+如果正在运行第三方反恶意软件客户端并使用移动设备管理解决方案或 Microsoft Endpoint Manager (current branch) ，则需要确保 Microsoft Defender 防病毒 ELAM 驱动程序已启用。 有关详细信息，请参阅[确保策略Microsoft Defender 防病毒禁用策略。](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
 ## <a name="related-topics"></a>相关主题
 
-- [设置适用于终结点的 Microsoft Defender 部署](production-deployment.md)
+- [设置 Microsoft Defender for Endpoint 部署](production-deployment.md)
 - [载入设备](onboard-configure.md)

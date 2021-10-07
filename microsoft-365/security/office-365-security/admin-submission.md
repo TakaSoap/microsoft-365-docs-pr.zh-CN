@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,12 +18,12 @@ ms.custom:
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 756b26a6d7b2a735cc7ac232348048ce76a1aa1b
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 1c41f8d06755e5d71143bc94090742079757be4b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988723"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154526"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用提交门户将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "59988723"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
 
-在Microsoft 365邮箱Exchange Online，管理员可以使用 Microsoft 365 Defender 门户中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
+在Microsoft 365拥有 Exchange Online 邮箱的组织中，管理员可以使用 Microsoft 365 Defender 门户中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
 
 当你提交电子邮件进行分析时，你将获得：
 
@@ -53,7 +53,7 @@ ms.locfileid: "59988723"
 - 访问 <https://security.microsoft.com/> 打开 Microsoft 365 Defender 门户。 若要直接转到 **提交页面，** 请使用 <https://security.microsoft.com/reportsubmission> 。
 
 - 若要向 Microsoft 提交邮件和文件，你需要是以下角色组之一的成员：
-  - **组织管理** 或 **安全读者** Microsoft 365 Defender [门户。](permissions-microsoft-365-security-center.md)
+  - **组织管理** 或 **安全读者** Microsoft 365 Defender [门户](permissions-microsoft-365-security-center.md)。
   
     请注意，查看自定义邮箱的用户提交需要此角色组的 [成员身份，如](#view-user-submissions-to-microsoft) 本文稍后所述。
 
@@ -77,13 +77,13 @@ ms.locfileid: "59988723"
 1. 在 **"选择提交类型"** 框中，确认 **"电子邮件** "在下拉列表中已选中。
 
 2. 在 **"添加网络邮件 ID 或上载电子邮件文件** "部分，使用以下选项之一：
-   - 添加电子邮件网络邮件 **ID：** 这是一个 GUID 值，可在邮件的 **X-MS-Exchange-Organization-Network-Message-Id** 标头中或在隔离邮件的 **X-MS-Office365-Filtering-Correlation-Id** 头中提供。
+   - 添加电子邮件网络邮件 **ID：** 这是一个 GUID 值，可用于邮件中的 **X-MS-Exchange-Organization-Network-Message-Id** 标头或隔离邮件中的 **X-MS-Office365-Filtering-Correlation-Id** 头。
    - **Upload电子邮件文件 (.msg 或 .eml) ：单击"浏览****文件"。** 在打开的对话框中，查找并选择 .eml 或 .msg 文件，然后单击"打开 **"。**
 
 3. 在 **"选择具有问题的** 收件人"框中，指定要针对其运行策略检查的收件人。 策略检查将确定电子邮件是否由于用户或组织策略而绕过扫描。
 
 4. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **不应阻止误报 (错误)**
+   - **不应阻止误报 (误报)**
    - **应已被** 阻止：在"电子邮件应已分类为出现的部分"中，选择以下值之一 (如果你不确定，请使用最佳判断) ：
      - **网络钓鱼**
      - **垃圾邮件**
@@ -101,7 +101,7 @@ ms.locfileid: "59988723"
 2. 在出现的 **"URL"** 框中，输入完整的 URL (例如 `https://www.fabrikam.com/marketing.html` ，) 。
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **不应阻止误报 (错误)**
+   - **不应阻止误报 (误报)**
    - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，选择"**网络钓鱼**"或"恶意软件 **"。**
 
 4. 完成后，单击"提交 **"** 按钮。
@@ -116,7 +116,7 @@ ms.locfileid: "59988723"
 2. 在出现的 **"文件**"部分，单击"**浏览文件"。** 在打开的对话框中，查找并选择文件，然后单击"打开 **"。**
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **不应阻止误报 (错误)**
+   - **不应阻止误报 (误报)**
    - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，" **恶意软件"是唯** 一的选择，并自动选中。
 
 4. 完成后，单击"提交 **"** 按钮。

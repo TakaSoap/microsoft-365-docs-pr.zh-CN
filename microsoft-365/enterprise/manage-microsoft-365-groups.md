@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 了解如何管理组Microsoft 365组。
-ms.openlocfilehash: 72bc47bb699e32f849f21ea4c5470a95d6228b68
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28d8bae8aaed6d02fe082824c07afe03bdc0ce5a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201350"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150758"
 ---
 # <a name="manage-microsoft-365-groups"></a>管理 Microsoft 365 组
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-您可以使用几种Microsoft 365管理组，具体取决于您的配置。 可以在 Microsoft 365 管理中心、PowerShell、Active Directory 域服务 (AD DS) 或[Azure Active Directory (Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)) 管理中心中管理用户帐户。 [](../admin/add-users/index.yml) 
+您可以使用几种Microsoft 365管理组，具体取决于您的配置。 可以在 Microsoft 365 管理中心、PowerShell、Active Directory 域服务 (AD DS) 或[Azure Active Directory (Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)) 管理中心中管理用户帐户。 [](/admin) 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>规划管理组位置和方式
 
@@ -43,7 +43,7 @@ ms.locfileid: "59201350"
 
 创建和管理组时，需要：
 
-- [Microsoft 365 管理员中心](../admin/add-users/index.yml)
+- [Microsoft 365 管理员中心](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Azure AD 管理中心](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     
@@ -53,7 +53,7 @@ AD DS 组与来自 AD DS Microsoft 365同步，因此必须使用本地 AD DS �
 
 还可以创建和管理独立于 AD DS 组但可以包含 AD DS 中的用户和组的 Azure AD 组。 在这种情况下，可以使用：
 
-- [Microsoft 365 管理员中心](../admin/add-users/index.yml)
+- [Microsoft 365 管理员中心](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Azure AD 管理中心](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
