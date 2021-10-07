@@ -6,7 +6,7 @@ manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-securecollab
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何在网站中设置安全Teams，以基于数据的敏感度来保护数据。
-ms.openlocfilehash: 07f8f1193043b31c53346221791529b5b6162c30
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f8475cd2f832bf2b634a8e60c819927fb8f2769c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171502"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158990"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>设置与 Microsoft 365 和 Microsoft Teams
 
@@ -39,7 +39,7 @@ ms.locfileid: "59171502"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
-通过Microsoft 365，你可以部署Teams各种配置，帮助：
+使用 Microsoft 365，Teams各种配置部署解决方案，这些配置有助于：
 
 - 保护知识产权
 - 实现轻松协作
@@ -77,7 +77,7 @@ ms.locfileid: "59171502"
 
 Microsoft 365提供了许多用于管理协作解决方案的选项。 我们建议您将此部署内容与协作管理内容 [一起用于](collaboration-governance-overview.md) 为组织创建最佳协作解决方案。
 
-### <a name="using-teams-for-all-kinds-of-data"></a>对Teams使用数据
+### <a name="using-teams-for-all-kinds-of-data"></a>将Teams用于所有类型的数据
 
 为了管理对不同敏感信息的访问，我们开发了三种不同保护层[，](configure-teams-three-tiers-protection.md)用于Teams。 您可以自定义这些层中的任一层，以更好地满足需求或业务。
 
@@ -89,7 +89,7 @@ Microsoft 365提供了许多用于管理协作解决方案的选项。 我们建
 |---|---|---|---|
 |公共团队或私人团队|两者皆可|Private|Private|
 |未经身份验证的共享|Blocked|Blocked|Blocked|
-|文件共享|允许|允许|只有团队所有者才能共享。|
+|文件共享|允许|Allowed|只有团队所有者才能共享。|
 |团队成员资格|任何人都可以加入公共团队。<br>加入私人团队需要团队所有者批准。|需要团队所有者批准才能加入。|需要团队所有者批准才能加入。|
 |文档加密|||与敏感度标签一起提供|
 |来宾共享|允许|允许或阻止|允许或阻止|
@@ -97,7 +97,7 @@ Microsoft 365提供了许多用于管理协作解决方案的选项。 我们建
 
 配置这些层涉及：
 
-- 配置来宾访问Teams私人频道的设置
+- 配置来宾Teams私人频道的设置
 - 为内部和来宾共享、访问请求和共享链接SharePoint团队关联的网站中的设置
 - 对于 *敏感和**高度敏感的* 层，配置敏感度标签以对团队进行分类，并控制来宾共享和从非托管设备访问
 - 对于 *高度敏感的* 层，配置敏感度标签以加密应用它的文档
@@ -136,7 +136,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Teams 和 SharePoint 
 
 |培训：|使用 Microsoft Teams 管理团队协作|
 |---|---|
-|![Teams协作培训图标。](../media/manage-team-collaboration-with-microsoft-teams.svg)|“使用 Microsoft Teams 管理团队协作”介绍了 Microsoft Teams 的特性和功能，它是 Microsoft 365 中的团队协作中心。 你将了解如何使用 Teams 促进组织内的团队合作和通信，无论是在办公场所内还是办公场所外，也无论团队使用何种设备（从桌面设备到平板电脑再到电话），同时利用 Office 365 应用的所有丰富功能。 你将了解 Teams 如何为团队跨应用和设备进行协作提供全面、灵活的环境。 此学习途径可帮助你准备 Microsoft 365 认证：Teams 管理员关联认证。<p>2 小时 17 分钟 - Learning 路径 - 5 个模块|
+|![Teams协作培训图标。](../media/manage-team-collaboration-with-microsoft-teams.svg)|“使用 Microsoft Teams 管理团队协作”介绍了 Microsoft Teams 的特性和功能，它是 Microsoft 365 中的团队协作中心。 你将了解如何使用 Teams 促进组织内的团队合作和通信，无论是在办公场所内还是办公场所外，也无论团队使用何种设备（从桌面设备到平板电脑再到电话），同时利用 Office 365 应用的所有丰富功能。 你将了解 Teams 如何为团队跨应用和设备进行协作提供全面、灵活的环境。 此学习途径可帮助你准备 Microsoft 365 认证：Teams 管理员关联认证。<p>2 小时 17 分钟 - Learning路径 - 5 个模块|
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
@@ -175,7 +175,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Teams 和 SharePoint 
 |Teams|SharePoint|
 |---|---|
 |![设置和自定义团队培训图标。](../media/set-up-customize-team-training.png)<br>**[设置和自定义团队](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint共享和同步培训图标](../media/sharepoint-share-sync-training.png)<br>**[共享和同步](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
-|![Teams上载和查找文件培训图标。](../media/smc-teams-upload-find-files-training.png)<br>**[Upload并查找文件](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
+|![Teams上传并查找文件培训图标。](../media/smc-teams-upload-find-files-training.png)<br>**[Upload并查找文件](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
 |![在团队和频道中协作图标。](../media/teams-collaborate-channels-training.png)<br>**[在团队和频道中协作](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**||
 
 ## <a name="illustrations"></a>插图

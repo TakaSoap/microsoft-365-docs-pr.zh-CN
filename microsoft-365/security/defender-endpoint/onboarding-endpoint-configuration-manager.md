@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e26e9c367015b05e1875693a5312af786a907031
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 9b33db7e4fa0b3cc2fa61c0c7a45d1a9d2f9d3b7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124441"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156326"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 载入
 
@@ -107,7 +107,6 @@ ms.locfileid: "60124441"
     ![Microsoft Endpoint Configuration Manager向导9 的图像。](images/configmgr-confirm.png)
 
 完成此任务后，你现在拥有一个设备集合，Windows环境中的所有终结点。
-
 
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>步骤 2：为终结点功能配置 Microsoft Defender
 
@@ -211,7 +210,7 @@ ms.locfileid: "60124441"
 
 Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机、便携式计算机和服务器提供安全提供下一代防护。
 
-1. In the Microsoft Endpoint Configuration Manager console， navigate to **Assets and Compliance Overview Endpoint Protection \> \> \> Antimalware Policys** and choose Create **Antimalware Policy**.
+1. 在Microsoft Endpoint Configuration Manager控制台中，导航到"资产和合规性概述 **\> Endpoint Protection反恶意软件策略 \> \> "，** 然后选择"创建 **反恶意软件策略"。**
 
     ![反恶意软件策略的图像。](images/9736e0358e86bc778ce1bd4c516adb8b.png)
 
@@ -249,13 +248,13 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 
      ![下一代保护窗格11 的图像。](images/configmgr-select-collection.png)
 
-完成此任务后，现在可以成功配置Windows Defender 防病毒。
+完成此任务后，现在已成功配置Windows Defender 防病毒。
 
 ### <a name="attack-surface-reduction"></a>攻击面减少
 
 适用于终结点的 Defender 的攻击面减少支柱包括攻击防护下提供的功能集。 攻击面减少 (ASR) 规则、受控文件夹访问权限、网络保护和 Exploit Protection。
 
-所有这些功能都提供审核模式和阻止模式。 在审核模式下，对最终用户没有影响。 它所执行的所有操作是收集其他遥测，并使其在 Microsoft 365 Defender 门户中可用。 部署的目标是将安全控件分步移动到阻止模式。
+所有这些功能都提供审核模式和阻止模式。 在审核模式下，对最终用户没有影响。 它所执行的所有操作都是收集其他遥测，并使其在 Microsoft 365 Defender 门户中可用。 部署的目标是将安全控件分步移动到阻止模式。
 
 在审核模式下设置 ASR 规则：
 
@@ -267,7 +266,7 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 
 3. 将规则设置为 **审核，** 然后单击下一 **步**。
 
-    ![控制台 1 Microsoft Endpoint Configuration Manager映像。](images/d18e40c9e60aecf1f9a93065cb7567bd.png)
+    ![控制台 1 Microsoft Endpoint Configuration Manager的图像。](images/d18e40c9e60aecf1f9a93065cb7567bd.png)
 
 4. 通过单击下一步确认新的攻击 **防护策略**。
 
@@ -331,6 +330,7 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 
     ![Microsoft Endpoint Configuration Manager1 屏幕截图。](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
+
 7. 选择新创建的组策略Windows选择"确定 **"。**
 
     ![Microsoft Endpoint Configuration Manager2 屏幕截图。](images/0ccfe3e803be4b56c668b220b51da7f7.png)
@@ -361,7 +361,9 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 
     ![Microsoft Endpoint Configuration Manager7 的屏幕截图。](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
+
 7. 将策略定向到新创建的 Windows 集合，然后单击"确定 **"。**
+
 
     ![Microsoft Endpoint Configuration Manager8 的屏幕截图。](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 

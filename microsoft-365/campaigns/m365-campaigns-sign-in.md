@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,18 +23,18 @@ search.appverid:
 - BCS160
 - MET150
 description: 登录到 Microsoft 365。 保护你的业务、实践或市场活动免受电子邮件、数据和通信的网络安全威胁。
-ms.openlocfilehash: eff81da84853130da2f2dcc0aaaf2a9834477a85
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cd2433adad2563528242d119011afdca208f7424
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200690"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160600"
 ---
 # <a name="sign-in-to-microsoft-365"></a>登录Microsoft 365
 
 ## <a name="for-business-or-campaign-admins"></a>对于企业或市场活动管理员
 
-如果你注册了Microsoft 365，你是Microsoft 365管理员。下面是如何登录的：
+如果你注册了Microsoft 365，你是你的Microsoft 365管理员。下面是如何登录的：
 
 1. 查找我们在注册步骤 2 中发送给我们的电子邮件地址的 [用户名和密码](m365-campaigns-sign-up.md#steps-to-sign-up)。
 2. 在浏览器中，转到 上 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> Microsoft 365 管理中心。

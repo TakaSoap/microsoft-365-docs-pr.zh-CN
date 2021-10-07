@@ -1,7 +1,7 @@
 ---
 title: Windows 中的信息保护概述
 ms.reviewer: ''
-description: 了解信息保护如何Windows标识和保护敏感信息
+description: 了解信息保护如何工作Windows标识和保护敏感信息
 keywords: 信息， 保护， dlp， 数据， 丢失， 防护， 保护
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b3fa8c7c919edc438bb63fe4baaeca6711a3a045
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4a96296f09a82fe2b2c8d5c4d5d250c48f89ffc4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196056"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156290"
 ---
 # <a name="information-protection-in-windows-overview"></a>Windows 中的信息保护概述
 
@@ -36,15 +36,15 @@ ms.locfileid: "59196056"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-信息保护是 Microsoft 365 企业版的一部分，可提供智能保护以保持敏感数据安全，同时在工作场所中提高工作效率。
+信息保护是 Microsoft 365 企业版的一部分，可提供智能保护，以确保敏感数据的安全，同时在工作场所中提高工作效率。
 
 > [!TIP]
 > 阅读我们的博客文章，了解如何将 Microsoft Defender for Endpoint 与 Microsoft 信息保护集成，以发现、保护和监视Windows[敏感数据](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
 
 Defender for Endpoint 应用以下方法来发现、分类和保护数据：
 
-- **数据发现**- 识别Windows的设备的敏感数据
-- **数据分类**- 根据安全与合规中心Microsoft 信息保护 (管理) MIP 策略Office 365数据&分类。 自动分类允许你保护敏感数据，即使最终用户尚未手动分类它。
+- **数据发现**- 识别Windows的敏感数据
+- **数据分类**- 根据安全与合规中心Microsoft 信息保护 (管理) 的常见 MIP Office 365策略&数据。 自动分类允许你保护敏感数据，即使最终用户尚未手动分类它。
 
 ## <a name="data-discovery-and-data-classification"></a>数据发现和数据分类
 
@@ -52,7 +52,7 @@ Defender for Endpoint 自动发现具有敏感度标签的文件和包含敏感�
 
 敏感度标签分类并帮助保护敏感内容。
 
-DLP 策略实现中的Office 365数据丢失防护 () 分为两类：
+DLP 策略实施Office 365数据丢失防护 (敏感信息) 分为两类：
 
 - 默认值
 - 自定义警报
@@ -80,7 +80,7 @@ DLP 策略实现中的Office 365数据丢失防护 () 分为两类：
 单击设备以查看在此设备上观测到的文件列表，及其敏感度标签和信息类型。
 
 > [!NOTE]
-> 请允许 Azure 信息保护仪表板发现大约 15-20 分钟反映已发现的文件。
+> 请允许 Azure 信息保护仪表板发现大约 15-20 分钟反映发现的文件。
 
 ## <a name="log-analytics"></a>Log Analytics
 
@@ -88,7 +88,7 @@ Azure Log [Analytics](/azure/log-analytics/log-analytics-overview)中也提供�
 
 有关 Azure 信息保护分析详细信息，请参阅 [Azure 信息保护的中央报告](/azure/information-protection/reports-aip)。
 
-在 Azure 门户中打开 Azure Log Analytics，然后打开 (或经典查询) 。
+在 Azure 门户中打开 Azure Log Analytics，然后打开标准 (或经典查询生成器) 。
 
 若要查看 Defender for Endpoint 数据，请执行包含以下项的查询：
 
@@ -101,4 +101,4 @@ InformationProtectionLogs_CL
 
 - 客户必须订阅 Azure 信息保护。
 - 在服务中启用 Azure 信息保护Microsoft Defender 安全中心：
-  - 转到 **"设置"** 中的Microsoft Defender 安全中心，单击"常规 **"设置"高级****"。**
+  - 转到 **"设置"** 中的Microsoft Defender 安全中心，单击"常规 **"设置"高级****"菜单**。

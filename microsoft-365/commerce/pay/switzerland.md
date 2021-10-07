@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 60f0965bce53e462ede98622323a88bfbeb1b490
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b8e66e69936a16c9a156bd109ac08bbeedac3dbd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195830"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160214"
 ---
 # <a name="payment-information-for-switzerland"></a>瑞士的付款信息
 
@@ -33,7 +33,7 @@ ms.locfileid: "59195830"
 **Bank：** 年，伦敦  
 **SWIFT 代码：** 一百万  
 **IBAN 代码：** GB44CITI18500812207648  
-**帐号：12207648**  
+**帐户编号：12207648**  
 **帐户名称：** MICROSOFT
 
 如果你有从 2021 年 3 月 1 日至 2021 年 3 月 1 日由 **Microsoft Sch以z GmbH** 计费的订单和消耗的发票，请使用此银行信息：
@@ -41,7 +41,7 @@ ms.locfileid: "59195830"
 **Bank：** Bank Europe plc  
 **SWIFT 代码：** 一台或多张  
 **IBAN 代码：** IE59CITI99005170000132  
-**帐号：70000132**  
+**帐户号：70000132**  
 **帐户名称：** MICROSOFT
 
 从本地 Microsoft 子公司颁发的发票使用标准 VAT/销售税/GST 费率颁发，并被视为用于 VAT/销售税/GST 的国内服务提供。

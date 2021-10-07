@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8adc45741bfecfce7373ba23303803f90aea65ab
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 4e1f4f75971f70f97766af1ace967dfecc461cd2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010089"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159230"
 ---
 # <a name="web-protection"></a>Web 保护
 
@@ -82,7 +82,7 @@ Web 内容筛选包括：
 
 Web 保护由以下组件组成，按优先顺序列出。 每个组件都由 Microsoft Edge 中的 SmartScreen 客户端和所有其他浏览器和进程中的网络保护客户端强制执行。
 
-- 自定义指标 (IP/URL、MICROSOFT CLOUD APP SECURITY (MCAS) 策略) 
+- 自定义指示器 (IP/URL、MICROSOFT CLOUD APP SECURITY (MCAS) 策略) 
   - 允许
   - Warn
   - 阻止
@@ -113,11 +113,11 @@ Web 保护由以下组件组成，按优先顺序列出。 每个组件都由 Mi
 |Warn|阻止|阻止|阻止|警告 (覆盖) |
 |
 
-自定义指示器不支持内部 IP 地址。 对于最终用户绕过的警告策略，默认情况下，该用户的站点将取消阻止 24 小时。 此时间范围由管理员修改，并通过 SmartScreen 云服务向下传递。 此外，在使用 Web 威胁阻止的 CSP Microsoft Edge恶意软件/网络钓鱼 (可以禁用绕过警告) 。 有关详细信息，请参阅 SmartScreen Microsoft Edge [SmartScreen 设置。](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies)
+自定义指示器不支持内部 IP 地址。 对于最终用户绕过的警告策略，默认情况下，该用户的站点将取消阻止 24 小时。 此时间范围由管理员修改，并通过 SmartScreen 云服务向下传递。 此外，在使用 Web 威胁阻止的云解决方案提供商Microsoft Edge恶意软件/网络钓鱼 (可以禁用绕过) 。 有关详细信息，请参阅 SmartScreen Microsoft Edge [SmartScreen 设置。](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies)
 
 ## <a name="protect-browsers"></a>保护浏览器
 
-在所有 Web 保护方案中，SmartScreen 和网络保护可以一起使用，以确保跨第一方和第三方浏览器和进程提供保护。 SmartScreen 直接内置于Microsoft Edge中，而 Network Protection 监视第三方浏览器和进程中的流量。 下图说明了此概念。 此两个客户端协同工作以提供多个浏览器/应用覆盖范围的图表对于 Web 保护 (指示器、Web 威胁、内容筛选功能的所有功能) 。
+在所有 Web 保护方案中，SmartScreen 和网络保护可以一起使用，以确保跨第一方和第三方浏览器和进程提供保护。 SmartScreen 直接内置于Microsoft Edge，而 Network Protection 监视第三方浏览器和进程中的流量。 下图说明了此概念。 此两个客户端协同工作以提供多个浏览器/应用覆盖范围的图对于 Web 保护 (指示器、Web 威胁、内容筛选功能的所有功能) 。
 
 :::image type="content" alt-text="将 SmartScreen 和网络保护一同使用。" source="../../media/web-protection-protect-browsers.png" lightbox="../../media/web-protection-protect-browsers.png":::
 
@@ -154,7 +154,7 @@ DeviceEvents 
 | where Experience == "CustomPolicy"
 ```
 
-同样，您可以使用下面的查询列出源自 Network Protection 应用程序的所有 WCF (例如，第三方浏览器中的 WCF 块) 。 请注意，ActionType 已更新，"Experience"已更改为"ResponseCategory"。
+同样，您可以使用下面的查询列出源自网络保护应用程序的所有 WCF (例如，第三方浏览器中的 WCF 块) 。 请注意，ActionType 已更新，"Experience"已更改为"ResponseCategory"。
 
 ```kusto
 DeviceEvents 
@@ -164,7 +164,7 @@ DeviceEvents 
 | where ResponseCategory == "CustomPolicy"
 ```
 
-若要列出由于自定义指示器 (其他功能而) ，请参阅上表，其中概述了每个功能及其相应的响应类别。 还可以修改这些查询以搜索与组织中特定计算机相关的遥测。 请注意，上述每个查询中显示的 ActionType 将只显示 Web 保护功能阻止的连接，不会显示所有网络流量。
+若要列出由于自定义指示器 (其他功能而) ，请参阅上表，其中概述了每个功能及其各自的响应类别。 还可以修改这些查询以搜索与组织中特定计算机相关的遥测。 请注意，上述每个查询中显示的 ActionType 将只显示 Web 保护功能阻止的连接，不会显示所有网络流量。
 
 ## <a name="user-experience"></a>用户体验
 
@@ -173,7 +173,7 @@ DeviceEvents 
 > [!div class="mx-imgBorder"]
 > ![页面被阻止Microsoft Edge。](../../media/web-protection-malicious-block.png)
 
-如果 WCF 或自定义指示器阻止，Microsoft Edge阻止页，告知用户此网站被组织阻止。
+如果 WCF 或自定义指示器阻止，Microsoft Edge阻止页显示，告知用户此网站被组织阻止。
 
 > [!div class="mx-imgBorder"]
 > ![组织阻止的页面。](../../media/web-protection-indicator-blockpage.png)

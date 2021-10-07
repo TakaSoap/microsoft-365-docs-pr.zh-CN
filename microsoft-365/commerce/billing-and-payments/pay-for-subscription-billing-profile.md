@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 ms.date: 04/02/2021
-ms.openlocfilehash: 73acb6a12499953e56eda7d4274160c6e79ee440
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 61409b8c648819ae4782b3f6077873687a43a6e2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200654"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160520"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>如何使用计费配置文件支付订阅费用
 
@@ -51,7 +51,7 @@ ms.locfileid: "59200654"
 
 如果需要进行信用检查，在购买订阅时就会收到通知。如果同意取得联系，则会收到一封电子邮件，其中包括更多关于申请信贷审批的信息。通常会在两个工作日内完成信用检查。
 
-如果你的计费配置文件由发票支持，则当帐单可供查看时，你收到一封电子邮件。 这封邮件不包含账单副本。 不过，可以选择[通过电子邮件接收账单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。 账单中包含了关于付款选择以及付款地点的详细信息。 如果在计费配置文件中 (PO) 订单，该编号将显示在帐单上。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
+如果你的计费配置文件由发票支持，则当帐单可供查看时，你收到一封电子邮件。 这封邮件不包含账单副本。 不过，可以选择[通过电子邮件接收账单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。 账单中包含了关于付款选择以及付款地点的详细信息。 如果在计费配置文件中 (PO) 订单，该编号将显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>支票或 EFT 付款应发送到何处？
 

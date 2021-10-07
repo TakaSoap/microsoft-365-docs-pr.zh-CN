@@ -1,5 +1,5 @@
 ---
-title: 对中高级搜寻查询结果Microsoft 365 Defender
+title: 对搜索中的高级搜寻查询结果Microsoft 365 Defender
 description: 在高级搜寻查询结果中快速解决威胁和受影响的资产
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 采取行动
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b708fa898d1f84efdb5e885b786619e481099ac0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 30e3d3ffbe2bf95def8c2c62906b82abb1356213
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161938"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159098"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>对高级搜寻查询结果采取措施
 
@@ -38,7 +38,7 @@ ms.locfileid: "59161938"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-可以使用强大而全面的操作选项快速包含威胁或解决在高级搜寻[](advanced-hunting-overview.md)中发现的威胁资产。 通过这些选项，您可以：
+使用强大而全面的操作选项，可以快速包含威胁或解决在高级[](advanced-hunting-overview.md)搜寻中发现的威胁资产。 通过这些选项，您可以：
 
 - 在设备上执行各种操作
 - 隔离文件
@@ -46,7 +46,7 @@ ms.locfileid: "59161938"
 ## <a name="required-permissions"></a>所需权限
 若要能够通过高级搜寻采取行动，你需要具有在设备上提交修正操作的权限的 Microsoft Defender for Endpoint [角色](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)。 如果无法采取措施，请与全局管理员联系，获取以下权限：
 
-*威胁和>活动漏洞管理 - 修正处理*
+*威胁和>的活动漏洞管理 - 修正处理*
 
 ## <a name="take-various-actions-on-devices"></a>在设备上执行各种操作
 可以在查询结果中的列标识的 `DeviceId` 设备上执行以下操作：
@@ -81,7 +81,7 @@ ms.locfileid: "59161938"
 每个操作分别记录在操作中心的"操作[](m365d-action-center.md)中心历史记录" (security.microsoft.com/action-center/history) 。   >   [](https://security.microsoft.com/action-center/history) 转到操作中心以检查每个操作的状态。
  
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender"](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开Microsoft 365 Defender](m365d-enable.md)更多数据源来搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

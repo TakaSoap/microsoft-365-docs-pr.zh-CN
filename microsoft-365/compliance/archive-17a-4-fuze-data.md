@@ -9,21 +9,21 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 了解如何设置和使用 17a-4 Fuze DataParser 连接器在 Microsoft 365 中导入和存档 Fuze 数据。
-ms.openlocfilehash: 6dafd773586a179fd652504b291173d881361d4b
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+description: 了解如何设置和使用 17a-4 Fuze DataParser 连接器以在 Microsoft 365 中导入和存档 Fuze 数据。
+ms.openlocfilehash: 6c65fef3bf5b8a3133ba20d02a141c6ae5a953b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401514"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155294"
 ---
 # <a name="set-up-a-connector-to-archive-fuze-data"></a>设置连接器以存档 Fuze 数据
 
-使用[Fuze DataParser](https://www.17a-4.com/fuze-dataparser/) 17a-4 LLC 将数据从 Fuze 导入并存档到 Microsoft 365 组织的用户邮箱。 DataParser 包括一个 Fuze 连接器，该连接器配置为捕获来自第三方数据源的项目，并导入这些项Microsoft 365。 Fuze DataParser 连接器将 Fuze 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
+使用[Fuze DataParser](https://www.17a-4.com/fuze-dataparser/) 17a-4 LLC 将数据从 Fuze 导入并存档到组织Microsoft 365邮箱。 DataParser 包括一个 Fuze 连接器，该连接器配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 Fuze DataParser 连接器将 Fuze 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
 
-在将 Fuze 数据存储在用户邮箱中后，Microsoft 365诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性等合规性功能。 使用 Fuze 连接器在 Microsoft 365 导入和存档数据可帮助组织遵守政府法规策略。
+在将 Fuze 数据存储在用户邮箱中后，Microsoft 365诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性等合规性功能。 使用 Fuze 连接器导入数据并存档数据Microsoft 365可帮助组织遵守政府法规策略。
 
 ## <a name="overview-of-archiving-fuze-data"></a>存档 Fuze 数据概述
 
@@ -43,9 +43,9 @@ ms.locfileid: "59401514"
 
 - 为 Microsoft 连接器创建 DataParser 帐户。 为此，请联系 [17a-4 LLC](https://www.17a-4.com/contact/)。 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 必须在步骤 1 中创建 Fuze DataParser 连接器 (并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 需要此角色才能在数据连接器页的"数据连接器"页上添加Microsoft 365 合规中心。 默认情况下，此角色不会分配给 Exchange Online 中的角色组。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 中创建 Fuze DataParser 连接器 (并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此 **角色Microsoft 365 合规中心。** 默认情况下，不会向角色组分配此角色Exchange Online。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
-- 此数据连接器可用于美国政府GCC中Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
+- 此数据连接器可用于美国政府GCC云Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="step-1-set-up-a-fuze-dataparser-connector"></a>步骤 1：设置 Fuze DataParser 连接器
 
@@ -77,7 +77,7 @@ Fuze DataParser 连接器会自动将用户映射到Microsoft 365电子邮件地
 
 2. 单击 **"连接器"** 选项卡，然后选择您创建的"Fuze DataParser"连接器以显示该飞出页，其中包含连接器的属性和信息。
 
-3. 在 **"源的连接器状态"下**， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
+3. 在 **"源的连接器状态"** 下， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
 
 ## <a name="known-issues"></a>已知问题
 

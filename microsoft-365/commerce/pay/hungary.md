@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8a7e40b7aab787b83cf82f8c4a18f58e3101b068
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8c83f47bffc4d556a8826c35aac327525e7c824e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170719"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160360"
 ---
 # <a name="payment-information-for-hungary"></a>匈牙利的付款信息
 
@@ -32,5 +32,5 @@ ms.locfileid: "59170719"
 **SWIFT 代码/BIC：** 一百万  
 **IBAN：** GB31CITI18500812207591  
 **SORT 代码：185008**  
-**帐户编号：12207591**  
+**帐号：12207591**  
 **帐户名称：** MICROSOFT

@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8932b28c2e87431028ae608ea56b95f340485199
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5ad5e942f60f34adb7faf35eb70b1a027124664e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170502"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157922"
 ---
 # <a name="import-indicators-api"></a>导入指示器 API
 
@@ -52,8 +52,8 @@ ms.locfileid: "59170502"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Ti.ReadWrite|"读取和写入指示器"
-应用程序|Ti.ReadWrite.All|"读取和写入所有指示器"
+Application|Ti.ReadWrite|"读取和写入指示器"
+Application|Ti.ReadWrite.All|"读取和写入所有指示器"
 委派（工作或学校帐户）|Ti.ReadWrite|"读取和写入指示器"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -66,7 +66,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 Content-Type|string|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文

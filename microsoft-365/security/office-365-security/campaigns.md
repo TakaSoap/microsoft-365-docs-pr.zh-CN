@@ -9,7 +9,7 @@ ms.reviewer: mcostea
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ''
@@ -19,14 +19,14 @@ ms.collection:
 description: 了解 Microsoft Defender for Office 365 中的市场活动Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bc2bb1adc39aae70f8ace89bf0efaaf5a7a5c5a
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 0af72653a8f180728b71b05fa044627012282c8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482833"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157694"
 ---
-# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
+# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的市场活动视图
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -67,7 +67,7 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 - **电子邮件&协作** \>**资源管理器** \>**视图** \>**钓鱼邮件** \>**"市场活动"** 选项卡
 - **电子邮件&协作** \>**资源管理器** \>**视图** \>**恶意软件** \>**"市场活动"** 选项卡
 
-若要访问市场活动视图，你需要是组织管理、安全管理员或安全读者角色组的成员，Microsoft 365 Defender角色组。  有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
+若要访问市场活动视图，你需要是组织管理、安全管理员或安全读者角色组的成员，Microsoft 365 Defender组。  有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
 ## <a name="campaigns-overview"></a>市场活动概述
 
@@ -84,7 +84,7 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 
 - **示例主题**：活动中某封邮件的主题行。 请注意，活动的所有邮件不一定具有相同的主题。
 
-- 目标：计算得出的百分比： (组织中活动收件人的数量) / (服务组织中所有组织的活动中的收件人) 。 此值指示仅将活动定向到你的组织的程度 (该值) 与针对服务中其他组织 (值较低的) 。
+- 目标：计算得出的百分比： (组织中活动收件人数) / (服务组织中所有组织中收件人的) 。 此值指示仅将活动定向到你的组织的程度 (一个值) 相对于服务中的其他组织 (该值) 。
 
 - **类型**：此值是钓鱼 **邮件或****恶意软件**。
 
@@ -104,7 +104,7 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 
   请注意， **点击** 率不用于恶意软件市场活动。
 
-- **已访问**：实际上有多少用户进入有效负载网站。 如果存在 **Clicked** 值，但保险箱链接阻止访问网站，此值将为 0。
+- **已访问**：实际上有多少用户进入有效负载网站。 如果存在 **Clicked 值**，保险箱链接阻止访问网站，此值将为零。
 
 " **宣传活动源** "选项卡显示世界地图中的邮件源。
 
@@ -195,7 +195,7 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 
 ### <a name="campaign-flow"></a>活动流
 
-在活动详细信息视图的中间，有关市场活动的重要详细信息在称为 _Sankey_ 图表 (流程图) 。 这些详细信息将帮助你了解活动的元素和组织中的潜在影响。
+在活动详细信息视图的中间，有关市场活动的重要详细信息在称为 _"Sankey_ 图表"视图 (流程图) 。 这些详细信息将帮助你了解活动的元素和组织中的潜在影响。
 
 > [!TIP]
 > 流程图中显示的信息由日程表中的日期范围筛选器控制，如上一节中所述。
@@ -208,7 +208,7 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 
 - **发件人 IP**
 - **发件人域名**
-- **筛选器裁定**：裁定值与可用的网络钓鱼和垃圾邮件筛选裁定相关，如 [反垃圾邮件邮件头中所述](anti-spam-message-headers.md)。 下表介绍了可用值：
+- **筛选器裁定**：裁定值与可用网络钓鱼和垃圾邮件筛选裁定相关，如 [反垃圾邮件邮件头中所述](anti-spam-message-headers.md)。 下表介绍了可用值：
 
   <br>
 
@@ -216,7 +216,7 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 
   |值|垃圾邮件筛选器裁定|说明|
   |---|---|---|
-  |**允许**|`SFV:SKN` <p> `SFV:SKI`|在垃圾邮件筛选评估之前，邮件被标记为非垃圾邮件和/或跳过筛选。 例如，邮件流规则将邮件标记为"非垃圾邮件 (也称为传输规则) 。 <p> 邮件由于其他原因跳过了垃圾邮件筛选。 例如，发件人和收件人似乎在同一个组织中。|
+  |**允许**|`SFV:SKN` <p> `SFV:SKI`|在垃圾邮件筛选评估之前，邮件被标记为非垃圾邮件和/或跳过筛选。 例如，邮件被邮件流规则标记为"非垃圾邮件 (也称为传输规则) 。 <p> 邮件由于其他原因跳过了垃圾邮件筛选。 例如，发件人和收件人似乎在同一个组织中。|
   |**已阻止**|`SFV:SKS`|在垃圾邮件筛选评估之前，邮件被标记为垃圾邮件。 例如，通过邮件流规则。|
   |**已检测**|`SFV:SPM`|邮件被垃圾邮件筛选标记为垃圾邮件。|
   |**未检测到**|`SFV:NSPM`|邮件被垃圾邮件筛选标记为非垃圾邮件。|
@@ -225,14 +225,14 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
   |**租户阻止**<sup>\*\*</sup>|`SFV:SKA`|邮件被垃圾邮件筛选阻止，因为反垃圾邮件策略中的设置。 例如，发件人在允许的发件人列表或允许的域列表中。|
   |**用户允许**<sup>\*</sup>|`SFV:SFE`|邮件跳过了垃圾邮件筛选，因为发件人位于用户的"发件人保险箱列表中。|
   |**用户阻止**<sup>\*\*</sup>|`SFV:BLK`|邮件被垃圾邮件筛选阻止，因为发件人位于用户的"阻止的发件人"列表中。|
-  |**ZAP**|无|[零时差自动清除 (ZAP) ](zero-hour-auto-purge.md) 已送达邮件移动到垃圾邮件文件夹或隔离邮箱。 您可以在反垃圾邮件 [策略中配置操作](configure-your-spam-filter-policies.md)。|
+  |**ZAP**|不适用|[零时差自动清除 (ZAP) ](zero-hour-auto-purge.md) 已送达邮件移动到"垃圾邮件"文件夹或隔离邮箱。 您可以在反垃圾邮件 [策略中配置操作](configure-your-spam-filter-policies.md)。|
   |
 
   <sup>\*</sup> 查看反垃圾邮件策略，因为允许的邮件可能已被服务阻止。
 
   <sup>\*\*</sup> 查看反垃圾邮件策略，因为这些邮件应该隔离，而不是传递。
 
-- 邮件目标 ：即使用户未单击邮件中的有效负载 URL，您也可能希望调查传递到收件人 (或垃圾邮件文件夹) 的邮件。 您还可以从隔离区中删除隔离邮件。 有关详细信息，请参阅 [EOP 中的隔离电子邮件](quarantine-email-messages.md)。
+- 邮件目标：即使用户未单击邮件中的有效负载 URL，您也可能希望调查传递到收件人 (或垃圾邮件文件夹) 的邮件。 您还可以从隔离区中删除隔离邮件。 有关详细信息，请参阅 [EOP 中的隔离电子邮件](quarantine-email-messages.md)。
   - **已删除文件夹**
   - **已丢弃**
   - **外部**：收件人位于混合环境中本地电子邮件组织中。
@@ -254,9 +254,9 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 
 如果用户单击网络钓鱼邮件的有效负载 URL，操作将显示在活动详细信息视图中图表的 **URL** 单击区域中。
 
-- **允许**
+- **Allowed**
 - **BlockPage：** 收件人单击了有效负载 URL，但他们对恶意网站的访问被组织中保险箱 [链接](safe-links.md)策略阻止。
-- **BlockPageOverride：** 收件人单击邮件中的有效负载 URL，保险箱链接试图阻止它们，但允许它们覆盖此块。 检查你的[保险箱链接](set-up-safe-links-policies.md)策略，查看为什么允许用户替代"链接保险箱裁定并继续访问恶意网站。
+- **BlockPageOverride：** 收件人单击了邮件中的有效负载 URL，保险箱链接试图阻止它们，但允许他们覆盖此阻止。 检查你的[保险箱](set-up-safe-links-policies.md)链接策略，了解为什么允许用户替代"链接保险箱裁定并继续访问恶意网站。
 - **PendingDetonationPage**： 保险箱 Attachments in Microsoft Defender for Office 365 is in the process of opening and investigating the payload URL in a virtual computer environment.
 - **PendingDetonationPageOverride：** 允许收件人替代有效负载触发过程并打开 URL，而无需等待结果。
 
@@ -285,7 +285,7 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
   - **总计数**
   - **收件箱**
   - **非收件箱**
-  - **DKIM passed**： the sender was authenticated by [Domain Keys Identified Mail (DKIM)](support-for-validation-of-dkim-signed-messages.md). 未通过 DKIM 验证的发件人指示未经身份验证的发件人，或者邮件正在欺骗合法发件人。
+  - **DKIM 通过**：发件人已通过标识为邮件的域密钥 [ (DKIM) 。](support-for-validation-of-dkim-signed-messages.md) 未通过 DKIM 验证的发件人指示未经身份验证的发件人，或者邮件正在欺骗合法发件人。
   - **通过 DMARC：** 发件人已通过基于域的邮件身份验证、报告和一致性 ([DMARC) 。](use-dmarc-to-validate-email.md) 未通过 DMARC 验证的发件人指示未经身份验证的发件人，或者邮件正在欺骗合法发件人。
 
 - **附件**

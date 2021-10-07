@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b42ff09f1e363f115ecc06c361c8386b328b0bcb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 40f8804c40236e680543d199e3dc6294fefa1414
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161946"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159134"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -35,10 +35,10 @@ ms.locfileid: "59161946"
 **适用于：**
 - Microsoft 365 Defender
 
-高级 `IdentityDirectoryEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含涉及运行 Active Directory 本地域控制器的事件 (AD) 。 此表捕获各种与标识相关的事件，如密码更改、密码过期和 UPN (用户) 名称。 它还捕获域控制器上的系统事件，如计划任务和 PowerShell 活动。 使用此参考来构建从此表返回信息的查询。
+高级 `IdentityDirectoryEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含涉及运行 Active Directory 和 AD (本地域控制器) 。 此表捕获各种与标识相关的事件，如密码更改、密码过期和 UPN (用户) 名称。 它还捕获域控制器上的系统事件，如计划任务和 PowerShell 活动。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关表支持的事件类型 () ，请使用安全中心中提供的内置架构 `ActionType` 参考。
+> 有关表支持 (事件) 类型的详细信息，请使用安全中心中提供的内置 `ActionType` 架构参考。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -56,7 +56,7 @@ ms.locfileid: "59161946"
 | `Protocol` | string | 通信期间使用的协议 |
 | `AccountName` | string | 帐户的用户名 |
 | `AccountDomain` | string | 帐户的域 |
-| `AccountUpn` | string | 帐户 (UPN) 用户主体名称 |
+| `AccountUpn` | string | 帐户 (UPN) 的用户主体名称 |
 | `AccountSid` | string | 帐户 (SID) 安全标识符 |
 | `AccountObjectId` | string | Azure Active Directory |
 | `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间启动和姓氏或姓氏的组合。 |

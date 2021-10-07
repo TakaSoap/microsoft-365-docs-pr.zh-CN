@@ -1,16 +1,14 @@
 ---
-title: 在 Mac 上为 Microsoft Defender for Endpoint (MDM) 部署不同的移动设备管理
+title: 使用适用于 Mac 上的 Microsoft Defender for Endpoint 的不同移动设备 (MDM) 系统的部署
 description: 在其他管理解决方案上，在 Mac 上安装 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 安装， 部署， macos， 加泰罗尼亚语， mojave， 高
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: mavel
 author: maximvelichko
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26c7e53a6dd28264374d19acb68fd27e27507b0f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d89d98e6e972707266f3b3ed95db3b78b8a5d161
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196026"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159434"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上为 Microsoft Defender for Endpoint (MDM) 部署不同的移动设备管理
 
@@ -68,7 +66,7 @@ macOS 上的 Microsoft Defender for Endpoint 不依赖于任何特定于供应�
 
 ### <a name="package"></a>程序包
 
-配置所需应用程序[包的](mac-install-with-jamf.md)部署，安装包 (wdav.pkg) 从 Microsoft 365 Defender[门户下载](mac-install-with-jamf.md)。
+配置所需应用程序[包](mac-install-with-jamf.md)的部署，安装包 (wdav.pkg) 从 Microsoft 365 Defender[门户下载](mac-install-with-jamf.md)。
 
 若要将程序包部署到企业，请使用与 MDM 解决方案关联的说明。
 
@@ -90,7 +88,7 @@ MDM 使用它将设置文件部署到客户端设备的 **/Library/Managed Prefe
 设置 KEXT 或内核扩展策略。 使用团队标识符 **UBF8T346G9** 允许 Microsoft 提供的内核扩展。
 
 > [!CAUTION]
-> 如果您的环境由 Apple 芯片 (M1) 组成，则这些计算机不应接收包含 KEXT 策略的配置文件。
+> 如果你的环境包含 Apple 芯片 (M1) 设备，则这些计算机不应接收包含 KEXT 策略的配置文件。
 > Apple 在这些计算机上不支持 KEXT，在 M1 计算机上部署此类配置文件将失败。
 
 ### <a name="system-extension-policy"></a>系统扩展策略

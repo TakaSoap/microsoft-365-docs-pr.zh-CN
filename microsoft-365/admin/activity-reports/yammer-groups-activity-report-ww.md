@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,35 +20,35 @@ search.appverid:
 - MET150
 - MOE150
 description: 获取Yammer组活动报告，了解Yammer创建和使用的组数及其活动。
-ms.openlocfilehash: 18ed4519a0f7859d8084f2144a58f4a726db530a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a06dfef0863683f0b8b4d97d8c06c09d57a15add
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169961"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158858"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365管理中心中的报表 - Yammer组活动报告
 
 "Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看 [报表概述主题](activity-reports.md)。 在 Yammer 组活动报表中，可深入了解组织中 Yammer 组的活动并查看创建和使用了多少个 Yammer 组。
   
 > [!NOTE]
-> 您必须是 Microsoft 365 中的全局管理员、全局读取者或报告读取者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。  
+> 您必须是 Microsoft 365 中的全局管理员、全局读取者或报告读者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。  
  
-## <a name="how-do-i-get-to-the-yammer-groups-activity-report"></a>如何访问组Yammer报告？
+## <a name="how-do-i-get-to-the-yammer-groups-activity-report"></a>如何访问组Yammer报表？
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。 
-2. 在仪表板主页上，单击仪表板卡片上的"查看更多Yammer按钮。
+2. 在仪表板主页上，单击"浏览 **"** 卡片上的"查看更多Yammer按钮。
 
   
 ## <a name="interpret-the-yammer-groups-activity-report"></a>Yammer 组活动报表说明
 
-You can view the groups activities in the Yammer by choosing the **Groups activity** tab.<br/>![Microsoft 365报告 - Microsoft Yammer组活动报告。](../../media/3afdafe5-9269-402e-8264-c7695ceb227d.png)
+You can view the groups activities in the Yammer by choosing the **Groups activity** tab.<br/>![Microsoft 365报表 - Microsoft Yammer组活动报告。](../../media/3afdafe5-9269-402e-8264-c7695ceb227d.png)
 
 选择 **"选择要在** 报表中添加或删除列的列"。  <br/> ![Yammer组活动报表 - 选择列。](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
 
 您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
   
-|Item|说明|
+|项目|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |组名称  <br/> |组的名称。 <br/> |
@@ -59,7 +59,7 @@ You can view the groups activities in the Yammer by choosing the **Groups activi
 |上次活动日期 (UTC)   <br/> | 组阅读、发布或点帖邮件的最近日期。  <br/> |
 |Members  <br/> | 组中成员的数量。  <br/> |
 |已发布  <br/> |报告期间在报告组中Yammer的邮件数。 <br/>|
-|读取  <br/> |报告期间在报告Yammer组中读取的对话数。  <br/> |
-|已赞  <br/> |报告期间"组"中Yammer的消息数。 <br/>|
+|读取  <br/> |报告期间在报告组中Yammer的对话数。  <br/> |
+|已赞  <br/> |报告期间"组"Yammer的消息数。 <br/>|
 |网络名  <br/> |组所属的网络的完整名称。 |
 |||

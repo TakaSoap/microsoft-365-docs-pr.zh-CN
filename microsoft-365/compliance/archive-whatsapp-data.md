@@ -9,21 +9,21 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理员可以设置 TeleMessage 连接器，以在邮箱中导入和存档 WhatsApp Microsoft 365。 这样，您就可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 9a56e365b58ce545b62149a44659f21994c03caf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 管理员可以设置 TeleMessage 连接器，以在 Microsoft 365 中导入和存档 WhatsApp Microsoft 365。 这样，您可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
+ms.openlocfilehash: 6a4fd84c09f10be51331eecf29ad5060f3e414d8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170657"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155102"
 ---
 # <a name="set-up-a-connector-to-archive-whatsapp-data"></a>设置连接器以存档 WhatsApp 数据
 
 使用远程邮箱中的 TeleMessage Microsoft 365 合规中心导入和存档 WhatsApp 呼叫、聊天、附件、文件和已删除的消息。 设置和配置连接器后，它每天连接到组织的 TeleMessage 帐户一次，并且使用 TeleMessage WhatsApp 电话 存档器或 TeleMessage WhatsApp 云存档器将员工的移动通信导入 Microsoft 365 中的邮箱。
 
-将 WhatsApp 数据存储在用户邮箱中后，可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索和Microsoft 365保留策略）应用于 WhatsApp 数据。 例如，您可以使用内容搜索搜索 WhatsApp 邮件，或将包含 WhatsApp 邮件的邮箱与案例的保管人Advanced eDiscovery关联。 使用 WhatsApp 连接器导入数据并存档Microsoft 365可帮助组织遵守政府法规策略。
+在 WhatsApp 数据存储在用户邮箱中后，可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索和保留Microsoft 365策略）应用于 WhatsApp 数据。 例如，您可以使用内容搜索来搜索 WhatsApp 邮件，或将包含 WhatsApp 邮件的邮箱与案例的保管人Advanced eDiscovery关联。 使用 WhatsApp 连接器导入数据并存档数据Microsoft 365可帮助组织遵守政府法规策略。
 
 ## <a name="overview-of-archiving-whatsapp-data"></a>存档 WhatsApp 数据概述
 
@@ -43,7 +43,7 @@ ms.locfileid: "59170657"
 
 ## <a name="before-you-set-up-a-connector"></a>设置连接器之前
 
-存档 WhatsApp 通信数据所需的一些实现步骤Microsoft 365且必须先完成，然后才能在合规中心创建连接器。
+存档 WhatsApp 通信数据所需的一些实现步骤Microsoft 365并且必须先完成，然后才能在合规中心创建连接器。
 
 - 从 [TeleMessage 订购 WhatsApp Archiver](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365) 服务，并获取组织的有效管理帐户。 在合规中心创建连接器时，需要登录此帐户。
 
@@ -51,9 +51,9 @@ ms.locfileid: "59170657"
 
 - 在员工的移动电话上电话[TeleMessage WhatsApp](https://www.telemessage.com/mobile-archiver/whatsapp-phone-archiver-2/)和 Archiver 应用并激活它。 或者，可以在员工的移动电话上安装常规 WhatsApp 或 WhatsApp Business 应用，并扫描 TeleMessage 网站上 QR 代码，以激活 WhatsApp 云存档器服务。 有关详细信息，请参阅[WhatsApp Cloud Archiver。](https://www.telemessage.com/mobile-archiver/whatsapp-archiver/whatsapp-cloud-archiver/)
 
-- 必须为创建 Verizon 网络连接器的用户分配邮箱导入导出Exchange Online。 在"数据连接器"页的"数据连接器"**页中添加连接器** Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到邮箱管理角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须为创建 Verizon 网络连接器的用户分配邮箱导入导出Exchange Online。 在"数据连接器"页的"数据连接器"**页中添加连接器** Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
-- 此数据连接器可用于美国政府GCC中Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
+- 此数据连接器可用于美国政府GCC云Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="create-a-whatsapp-archiver-connector"></a>创建 WhatsApp 存档器连接器
 

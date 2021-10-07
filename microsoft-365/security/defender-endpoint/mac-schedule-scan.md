@@ -2,15 +2,13 @@
 title: 如何使用 macOS 上的 Microsoft Defender for Endpoint 计划扫描
 description: 了解如何在 macOS 中为 Microsoft Defender for Endpoint 安排自动扫描时间，以更好地保护组织的资产。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 扫描， 防病毒
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9ec708ee24d33765203730412ddfc7eea5cc2e37
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c1d785f88160a7e0ffd17285b384f54ba4f2f74a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196020"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156219"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上使用 Microsoft Defender for Endpoint 计划扫描
 
@@ -144,6 +142,6 @@ ms.locfileid: "59196020"
 
 ## <a name="schedule-a-scan-with-intune"></a>使用 Intune 计划扫描
 
-此外，还可以计划使用 Microsoft Intune。 当 [设备 runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) 睡眠模式时， [适用于 Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) 的脚本中提供的命令行管理程序脚本将持续存在。 
+还可以计划使用扫描Microsoft Intune。 当 [设备从睡眠](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) runMDATPQuickScan.sh 时， [适用于 Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) 的脚本中提供的命令行管理程序脚本将持续存在。 
 
 有关如何 [在企业中使用此脚本](/mem/intune/apps/macos-shell-scripts) 的详细说明，请参阅在 Intune 中使用 macOS 设备的 shell 脚本。

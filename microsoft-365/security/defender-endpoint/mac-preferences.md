@@ -2,15 +2,13 @@
 title: 在 Mac 上设置 Microsoft Defender for Endpoint 的首选项
 description: 在企业组织中配置 Mac 上的 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 管理， 首选项， 企业， intune， jamf， macos， catalina， mojave， high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1da7c59ad7702482b1edbf52da821e474addd601
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: 0ac6031e793d36bd51c84b2cd94517f81ab4e649
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126862"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156266"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -64,7 +62,7 @@ ms.locfileid: "60126862"
 |**域**|`com.microsoft.wdav`|
 |**Key**|antivirusEngine|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下部分。|
+|**Comments**|有关字典内容的说明，请参阅以下各节。|
 |||
 
 #### <a name="enable--disable-real-time-protection"></a>启用/禁用实时保护
@@ -79,8 +77,8 @@ ms.locfileid: "60126862"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**Key**|enableRealTimeProtection|
-|**数据类型**|Boolean|
-|**可能的值**|true (默认)  <p> false|
+|**数据类型**|布尔值|
+|**可能的值**|true (默认值)  <p> false|
 |||
 
 #### <a name="enable--disable-passive-mode"></a>启用/禁用被动模式
@@ -101,7 +99,7 @@ ms.locfileid: "60126862"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**Key**|passiveMode|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|适用于终结点版本 100.67.60 或更高版本的 Microsoft Defender 中可用。|
 |||
@@ -118,8 +116,8 @@ ms.locfileid: "60126862"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**Key**|scanAfterDefinitionUpdate|
-|**数据类型**|Boolean|
-|**可能的值**|true (默认)  <p> false|
+|**数据类型**|布尔值|
+|**可能的值**|true (默认值)  <p> false|
 |**Comments**|适用于终结点版本 101.41.10 或更高版本的 Microsoft Defender 中可用。|
 |||
 
@@ -135,8 +133,8 @@ ms.locfileid: "60126862"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**Key**|scanArchives|
-|**数据类型**|Boolean|
-|**可能的值**|true (默认)  <p> false|
+|**数据类型**|布尔值|
+|**可能的值**|true (默认值)  <p> false|
 |**Comments**|适用于终结点版本 101.41.10 或更高版本的 Microsoft Defender 中可用。|
 |||
 
@@ -267,7 +265,7 @@ ms.locfileid: "60126862"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**Key**|isDirectory|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|仅在 *排除$type**时适用*|
 |||
@@ -291,7 +289,7 @@ ms.locfileid: "60126862"
 
 ### <a name="process-excluded-from-the-scan"></a>从扫描中排除的进程
 
-指定一个进程，所有文件活动都从扫描中排除。 可以通过进程的名称（例如 (，例如) 或完整路径 `cat` (，例如 `/bin/cat`) 。
+指定一个进程，所有文件活动都从扫描中排除。 可以通过进程的名称（例如 (，例如) 或完整路径 (`cat` 例如 `/bin/cat`) ）。
 
 <br>
 
@@ -303,7 +301,7 @@ ms.locfileid: "60126862"
 |**Key**|name|
 |**数据类型**|String|
 |**可能的值**|任何字符串|
-|**Comments**|仅在排除 *$type FileName 时适用*|
+|**Comments**|仅在 *排除**$type FileName 时适用*|
 |||
 
 #### <a name="allowed-threats"></a>允许的威胁
@@ -351,7 +349,7 @@ ms.locfileid: "60126862"
 |**域**|`com.microsoft.wdav`|
 |**Key**|threatTypeSettings|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下部分。|
+|**Comments**|有关字典内容的说明，请参阅以下各节。|
 |||
 
 ##### <a name="threat-type"></a>威胁类型
@@ -454,7 +452,7 @@ ms.locfileid: "60126862"
 |**域**|`com.microsoft.wdav`|
 |**Key**|cloudService|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下部分。|
+|**Comments**|有关字典内容的说明，请参阅以下各节。|
 |||
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>启用/禁用云保护
@@ -469,7 +467,7 @@ ms.locfileid: "60126862"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**Key**|enabled|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|true (默认)  <p> false|
 |||
 
@@ -501,7 +499,7 @@ ms.locfileid: "60126862"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**Key**|automaticSampleSubmission|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|true (默认)  <p> false|
 |||
 
@@ -516,7 +514,7 @@ ms.locfileid: "60126862"
 |节|值|
 |---|---|
 |**Key**|automaticDefinitionUpdateEnabled|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|true (默认)  <p> false|
 |||
 
@@ -533,7 +531,7 @@ ms.locfileid: "60126862"
 |**域**|`com.microsoft.wdav`|
 |**Key**|userInterface|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下部分。|
+|**Comments**|有关字典内容的说明，请参阅以下各节。|
 |||
 
 #### <a name="show--hide-status-menu-icon"></a>显示/隐藏状态菜单图标
@@ -548,7 +546,7 @@ ms.locfileid: "60126862"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**Key**|hideStatusMenuIcon|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|false（默认值） <p> true|
 |||
 
@@ -571,7 +569,7 @@ ms.locfileid: "60126862"
 
 ### <a name="endpoint-detection-and-response-preferences"></a>终结点检测和响应首选项
 
-管理 macOS 上 Microsoft Defender for Endpoint (EDR) 终结点检测和响应的首选项。
+管理 macOS 上 Microsoft Defender for Endpoint (EDR) 的终结点检测和响应的首选项。
 
 <br>
 
@@ -582,7 +580,7 @@ ms.locfileid: "60126862"
 |**域**|`com.microsoft.wdav`|
 |**Key**|edr|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下部分。|
+|**Comments**|有关字典内容的说明，请参阅以下各节。|
 |||
 
 #### <a name="device-tags"></a>设备标记
@@ -600,7 +598,7 @@ ms.locfileid: "60126862"
 |**域**|`com.microsoft.wdav`|
 |**Key**|标记|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下部分。|
+|**Comments**|有关字典内容的说明，请参阅以下各节。|
 |||
 
 ##### <a name="type-of-tag"></a>标记类型
@@ -644,12 +642,12 @@ ms.locfileid: "60126862"
 
 若要开始，我们建议你的企业采用以下配置，以利用 Microsoft Defender for Endpoint 提供的所有保护功能。
 
-以下配置文件 (，或者，对于 JAMF，可上载到自定义设置配置文件中的属性列表) ：
+以下配置文件 (，或者，对于 JAMF，可以上载到自定义设置配置文件中的属性列表) ：
 
 - 启用实时保护 (RTP) 
 - 指定如何处理以下威胁类型：
   - **阻止 PUA (可能不需要)** 的应用程序
-  - **存档 (** 高压缩率的文件) 审核到 Microsoft Defender 终结点日志
+  - **使用高** (率存档存档) 将审核到 Microsoft Defender 终结点日志
 - 启用自动安全智能更新
 - 启用云保护
 - 启用自动提交示例
@@ -1095,9 +1093,9 @@ com.microsoft.wdav.plist: OK
 
 5. 打开配置文件并上载 `com.microsoft.wdav.xml` 文件。  (此文件是在步骤 3.) 
 
-6. 选择“确定”。
+6. 选择“**确定**”。
 
-7. 选择 **"管理** \> **工作分配"。** 在"**包含"** 选项卡中，**选择"分配给&所有设备"。**
+7. 选择 **"管理** \> **工作分配"。** 在"**包含"** 选项卡中，**选择"分配给所有用户&所有设备"。**
 
 > [!CAUTION]
 > 必须输入正确的自定义配置文件名称;否则，Microsoft Defender for Endpoint 无法识别这些首选项。

@@ -8,18 +8,18 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何在 Microsoft 合规性管理器中对控件执行实现和测试。 分配工作、存储文档和导出报告。
-ms.openlocfilehash: f2674e24ed38362c5c7563a574e0dba9c81f2584
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b8c85b4d22fdd8161300d250d7322f68959f808
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171063"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156530"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>在合规性管理器中分配并完成改进操作
 
@@ -40,7 +40,7 @@ ms.locfileid: "59171063"
 1. 转到改进操作页面。
 2. 选择预期改进操作中的行，这将打开其详细信息页面。
 
-You can easily view the next or previous improvement action in the list by selecting the up or down arrow in the upper-right corner of the screen. 如果在"改进操作"页上筛选列表，向上或向下移动将进入该已筛选列表中的下一项。
+通过选择屏幕右上角的向上或向下箭头，可以轻松查看列表中的下一项或上一项改进操作。 如果在"改进操作"页上筛选列表，向上或向下移动将进入该已筛选列表中的下一项。
 
 ## <a name="assign-improvement-actions"></a>分配改进操作
 
@@ -71,7 +71,7 @@ You can easily view the next or previous improvement action in the list by selec
 3. 选择 **改进操作表** 顶部的"分配给用户"链接。
 4. 将出现一个弹出窗口。 在 **"分配到** "字段中，开始键入要为其分配操作的人的名称。 您还可以从建议人员列表中选择。
 5. 使用被分派人的姓名填充 **"分配到**"字段后，选择"分配 **"。**
-6. 然后，你将看到你的"改进操作"页，并针对刚刚分配的操作列出了新被分配者。
+6. 然后，你将看到你的"改进行动"页，并针对刚刚分配的操作列出了新的被分配者。
 
 ## <a name="perform-work-and-store-documentation"></a>执行工作和存储文档
 
@@ -86,7 +86,7 @@ You can easily view the next or previous improvement action in the list by selec
     - 文档 (.doc、.xls、.ppt、.txt、.pdf) 
     - 图像 (.jpg、.png) 
     - Video (.mkv) 
-    - 压缩的文件 (.zip、.rar) 
+    - 压缩的文件 (.zip.rar) 
 - 文件在窗格中解析后，选择"关闭 **"，** 这会自动保存文件附件。 然后，你将看到"已上载文档"下方 **列出的文件**。
 - 若要下载或删除文档，请从文档列表下方选择"管理文档"。 在飞出窗格中，选择文档行以突出显示它，**然后选择下载或删除****。**
 
@@ -140,7 +140,7 @@ You can easily view the next or previous improvement action in the list by selec
 
 #### <a name="where-youll-see-assessment-update-notifications"></a>你将在哪里看到评估更新通知
 
-当更新改进操作时，您将在改进操作页面及其相关评估的详细信息页上看到其名称旁边的"挂起的更新标签"。
+当更新改进操作时，您将在改进操作页面及其相关评估的详细信息页面上看到其名称旁边的"挂起的更新标签"。
 
 转到改进操作的详细信息页面，然后选择顶部横幅中的"查看更新"按钮，查看有关更改的详细信息并接受或延迟更新。
 

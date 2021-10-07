@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻与 Python API 指南
 ms.reviewer: ''
-description: 了解如何使用 Microsoft Defender for Endpoint API（使用 Python）和示例进行查询。
+description: 通过示例，了解如何使用 Microsoft Defender for Endpoint API（使用 Python）进行查询。
 keywords: api， 受支持的 api， 高级搜寻， 查询
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a5c1cdf9c8a6a1c3e65e62da942304a393f2d371
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 260e191a2948544ee98223c8b7f1563719693c9c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196298"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154730"
 ---
 # <a name="advanced-hunting-using-python"></a>通过 Python 高级搜寻
 
@@ -76,8 +76,8 @@ aadToken = jsonResponse["access_token"]
 
 其中
 
-- tenantId：要代表其运行查询的租户的 ID (即，查询将针对此租户租户的数据) 
-- appId：Azure AD 应用的 ID (应用必须具有对适用于终结点应用的 Microsoft Defender 的"运行高级查询") 
+- tenantId：要代表其运行查询的租户的 ID (即，查询将针对此租户数据运行) 
+- appId：Azure AD 应用的 ID (应用必须具有对适用于 Endpoint 应用的 Microsoft Defender 的"运行高级查询") 
 - appSecret：Azure AD 应用密钥
 
 ## <a name="run-query"></a>运行查询
@@ -108,7 +108,7 @@ results = jsonResponse["Results"]
 
 ### <a name="complex-queries"></a>复杂查询
 
-如果要运行复杂查询 (或多行) ，请保存文件中查询，而不是上述示例中的第一行，运行以下命令：
+如果要运行复杂查询 (或多行) ，请保存文件中查询，而不是上面的示例中的第一行，运行以下命令：
 
 ```python
 queryFile = open("D:\\Temp\\myQuery.txt", 'r') # Replace with the path to your file
@@ -142,7 +142,7 @@ for result in results:
 outputFile.close()
 ```
 
-若要以 JSON 格式以 jSON 格式输出查询结果，file1.js以下操作：
+若要以 JSON 格式输出 file1.json 格式的查询结果，可执行下列操作：
 
 ```python
 outputFile = open("D:\\Temp\\file1.json", 'w')

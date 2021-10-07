@@ -11,19 +11,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 96091f2c1a13b86d46a7ddb670dc3b42b034915a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 196c517c20e80b753bf6065c1c4e3014c0e16638
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196017"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154769"
 ---
 # <a name="overview-of-management-and-apis"></a>管理和 API 概述
 
@@ -42,9 +42,9 @@ Defender for Endpoint 支持多种选项，以确保客户可以轻松采用平�
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>终结点载入和门户访问
 
-设备载入已完全集成到客户端设备的 Microsoft Endpoint Manager 和 Microsoft Intune 以及适用于服务器设备的 Azure Defender 中，从而提供配置、部署和监视的完整端到端体验。 此外，Microsoft Defender for Endpoint 还支持用于设备管理的组策略和其他第三方工具。
+设备载入已完全集成到 Microsoft Endpoint Manager 和 Microsoft Intune 客户端设备和适用于服务器设备的 Azure Defender 中，从而提供配置、部署和监视的完整端到端体验。 此外，Microsoft Defender for Endpoint 还支持用于设备管理的组策略和其他第三方工具。
 
-Defender for Endpoint 提供对有权访问门户的用户的精细控制，通过基于角色的访问控制 (RBAC) 。 RBAC 模型支持所有安全团队结构：
+Defender for Endpoint 提供对有权访问门户的用户的精细控制，可通过基于角色的访问控制和 RBAC (灵活查看和) 。 RBAC 模型支持所有安全团队结构：
 
 - 全局分布的组织和安全团队
 - 分层模型安全运营团队
@@ -72,7 +72,7 @@ Defender for Endpoint 提供分层 API 模型，在结构化、清晰且易于�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
-调查 **API** 公开了适用于终结点的 Defender 的丰富功能 - 公开计算实体或"配置文件"实体 (例如设备、用户和文件) 和离散事件 (例如，进程创建和文件创建) 通常描述与实体相关的行为，从而允许通过调查界面访问数据，从而允许基于查询的数据访问。 有关详细信息，请参阅受支持的[API。](exposed-apis-list.md)
+调查 **API** 公开了适用于终结点的 Defender 的丰富功能 - 公开计算实体或"配置文件"实体 (例如设备、用户和文件) 和离散事件 (例如进程创建和文件创建) 这通常描述与实体相关的行为，从而允许通过调查界面访问数据，从而允许基于查询的数据访问。 有关详细信息，请参阅受支持的[API。](exposed-apis-list.md)
 
 响应 **API** 公开了在服务和设备上采取操作的功能，使客户能够接收指示器、管理设置、警报状态，以及以编程方式对设备执行响应操作，如将设备与网络隔离、隔离文件和其他操作。
 
@@ -85,11 +85,11 @@ Defender for Endpoint 事件信息直接推送到 Azure 存储以用于长期数
 有关详细信息，请参阅 [Raw data streaming API](raw-data-export.md)。
 
 新的流式Microsoft 365 Defender API 包括电子邮件和警报事件以及设备事件。
-有关详细信息，请参阅Microsoft 365 Defender[流式处理 API。](../defender/streaming-api.md)
+有关详细信息，请参阅流式[Microsoft 365 Defender API。](../defender/streaming-api.md)
 
 ## <a name="siem-api"></a>SIEM API
 
-在 SIEM (集成中启用安全信息和事件管理) ，它允许你使用 SIEM 解决方案或直接连接到检测 REST API 从 Microsoft Defender 安全中心 拉取检测。 这会使用预填充的值激活 SIEM 连接器访问详细信息部分，并且应用程序是在 Azure AD 租户Azure Active Directory (创建的) 部分。 有关详细信息，请参阅 [SIEM 集成](enable-siem-integration.md)。
+在 SIEM (启用安全信息和事件) 集成时，它允许你使用 SIEM 解决方案或直接连接到检测 REST API 从 Microsoft Defender 安全中心 拉取检测。 这会使用预填充的值激活 SIEM 连接器访问详细信息部分，并且应用程序是在 Azure AD Azure Active Directory (租户) 创建的。 有关详细信息，请参阅 [SIEM 集成](enable-siem-integration.md)。
 
 ## <a name="related-topics"></a>相关主题
 

@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4ab36313b25ab61ece35041f7cc6de1064465ecb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 299a6fff547c921dfdc02d4c23bfd8947b878875
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196567"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157874"
 ---
 # <a name="submit-or-update-indicator-api"></a>提交或更新指示器 API
 
@@ -55,8 +55,8 @@ ms.locfileid: "59196567"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Ti.ReadWrite|"读取和写入指示器"
-应用程序|Ti.ReadWrite.All|"读取和写入所有指示器"
+Application|Ti.ReadWrite|"读取和写入指示器"
+Application|Ti.ReadWrite.All|"读取和写入所有指示器"
 委派（工作或学校帐户）|Ti.ReadWrite|"读取和写入指示器"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -70,7 +70,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 名称|类型|说明
 :---|:---|:---
 Authorization|String|Bearer {token}。 **必需**。
-Content-Type|string|application/json. **必需**。
+Content-Type|string|application/json. 必需。
 
 ## <a name="request-body"></a>请求正文
 
@@ -81,7 +81,7 @@ Content-Type|string|application/json. **必需**。
 indicatorValue|String|Indicator [实体的](ti-indicator.md) 标识。 **Required**
 indicatorType|枚举|指示器的类型。 可能的值是："FileSha1"、"FileMd5"、"CertificateThumbprint"、"FileSha256"、"IpAddress"、"DomainName"和"Url"。 **Required**
 action|枚举|如果在组织中发现指示器，将采取的操作。 可能的值包括："Alert"、"Warn"、"Block"、"Audit"、"BlockAndRemediate"、"AlertAndBlock"和"Allowed"。 **Required**
-应用程序|String|与指示器关联的应用程序。 此字段仅适用于新指示器。 它将不会更新现有指示器上的值。 **可选**
+应用程序|字符串|与指示器关联的应用程序。 此字段仅适用于新指示器。 它将不会更新现有指示器上的值。 **可选**
 title|String|指示器警报标题。 **Required**
 说明|String|指示器的说明。 **Required**
 expirationTime|DateTimeOffset|指示器的过期时间。 **可选**

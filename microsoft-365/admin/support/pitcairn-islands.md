@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6e2f347b2ff2d82365fa9271d0553653650c3db3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 32af2a579c07e13871f37dee426bf37cb1800849
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171459"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155798"
 ---
 # <a name="contact-support-for-pitcairn-islands"></a>联系支持人员，以联系基茨基纳群岛
 
@@ -26,7 +26,7 @@ ms.locfileid: "59171459"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5148
 
-## <a name="hours"></a>小时
+## <a name="hours"></a>工作时间
 计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

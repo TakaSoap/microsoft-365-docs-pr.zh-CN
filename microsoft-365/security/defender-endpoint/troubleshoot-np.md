@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f520d3ed090b878c2d3cd9294bc04ee8c375972e
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: fce2366a155dca3f045497abf2a7a9892180710d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010149"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159314"
 ---
 # <a name="troubleshoot-network-protection"></a>网络保护疑难解答
 
@@ -56,7 +56,7 @@ ms.locfileid: "60010149"
 > - 终结点将 Microsoft Defender 防病毒用作唯一的防病毒保护应用。 [查看使用非 Microsoft 防病毒解决方案时会发生什么情况](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 > - [实时保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 已启用。
 > - [云提供的保护](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 已启用。
-> - 审核模式未启用。 使用 [组策略](enable-network-protection.md#group-policy)将规则设置为禁用 (值 **：0**) 。
+> - 审核模式未启用。 使用 [组策略](enable-network-protection.md#group-policy) 将规则设置为"已禁用 **(** 值 **：0**) 。
 
 ## <a name="use-audit-mode"></a>使用审核模式
 
@@ -80,7 +80,7 @@ ms.locfileid: "60010149"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>报告误报或漏报
 
-如果已使用演示网站和审核模式测试了该功能，并且网络保护适用于预配置的方案，但无法按预期为特定连接工作，请使用[基于 Windows Defender 安全](https://www.microsoft.com/wdsi/filesubmission)智能 Web 的提交表单报告网络保护的漏报或误报。 使用 E5 订阅，还可以 [提供指向任何关联警报的链接](alerts-queue.md)。
+如果已使用演示网站和审核模式测试了该功能，并且网络保护适用于预配置的方案，但无法按预期为特定连接工作，请使用[基于 Windows Defender](https://www.microsoft.com/wdsi/filesubmission)安全智能 Web 的提交表单报告网络保护的漏报或误报。 使用 E5 订阅，还可以 [提供指向任何关联警报的链接](alerts-queue.md)。
 
 请参阅在 Microsoft Defender for Endpoint 中解决 [误报/负数](defender-endpoint-false-positives-negatives.md)。
 
@@ -124,7 +124,7 @@ Set-MpPreference -ProxyServer <proxy IP address: Port>
 Set-MpPreference -ProxyPacUrl <Proxy PAC url>
 ```
 
-可以使用 PowerShell、注册表项或组策略Microsoft Endpoint Manager注册表项。 以下是一些可帮助的资源：
+可以使用 PowerShell、Microsoft Endpoint Manager或组策略配置注册表项。 以下是一些可帮助的资源：
 
 - [使用注册表项](/powershell/scripting/samples/working-with-registry-keys)
 - [配置终结点保护的自定义客户端设置](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
@@ -132,7 +132,7 @@ Set-MpPreference -ProxyPacUrl <Proxy PAC url>
 
 ## <a name="see-also"></a>另请参阅
 
-- [网络保护功能](network-protection.md)
+- [网络保护](network-protection.md)
 - [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 - [网络保护功能评估](evaluate-network-protection.md)
 - [启用网络保护](enable-network-protection.md)

@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解 Microsoft 合规性管理器如何根据为应对风险和改进合规性状态而采取的操作计算个性化分数。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26ef0f73a8da9403c2d1fd8248f828d6faf7f6e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b3b250391d04a8bf7388c761bcb00fe7cf99a4a5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169688"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156506"
 ---
 # <a name="compliance-score-calculation"></a>合规性分数计算
 
@@ -47,9 +47,9 @@ ms.locfileid: "59169688"
 
 ## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>基于数据保护基线Microsoft 365的初始分数
   
-合规性管理器根据数据保护基线提供Microsoft 365分数。 此基线是一组控制措施，其中包括数据保护和一般数据管理的关键法规和标准。 此基线主要来自 NIST CSF (国家标准和技术网络安全协会) 和 ISO (国际标准化组织) ，以及 FedRAMP (联邦风险和授权管理计划) 以及欧盟) 的 GDPR (一般数据保护条例。
+合规性管理器根据数据保护基线提供Microsoft 365分数。 此基线是一组控制措施，其中包括数据保护和一般数据管理的关键法规和标准。 此基线主要从 NIST CSF (国家标准和技术网络安全协会) 和 ISO (国际标准化组织) 以及 FedRAMP (联邦风险和授权管理计划) 以及欧盟) 的 GDPR (一般数据保护条例中制定要素。
 
-根据提供给所有组织的默认数据保护基线评估计算初始分数。 首次访问时，合规性管理器已在收集来自你的解决方案Microsoft 365信号。 你可以一目了然地查看组织相对于关键数据保护标准和法规的表现，并查看要采取的建议改进措施。
+根据提供给所有组织的默认数据保护基线评估计算初始分数。 首次访问时，合规性管理器已在收集来自你的Microsoft 365信号。 你可以一目了然地查看组织相对于关键数据保护标准和法规的表现，并查看要采取的建议改进措施。
 
 由于每个组织都有特定的需求，合规性管理器将依赖你设置和管理评估，以帮助尽可能全面减少和减少风险。
 
@@ -59,7 +59,7 @@ ms.locfileid: "59169688"
 
 你的操作状态每 24 小时在仪表板上更新一次。 按照建议实现控件后，通常会看到第二天更新了控件状态。
 
-例如，如果你在 Azure AD 门户 (MFA) 多重身份验证，合规性管理器将检测该设置，并反映在控制访问解决方案详细信息中。 相反，如果未打开 MFA，合规性管理器会将其标记为建议的操作。
+例如，如果你在 Azure AD 门户中 (MFA) 多重身份验证，合规性管理器将检测该设置，并反映在控制访问解决方案详细信息中。 相反，如果未打开 MFA，合规性管理器会将其标记为建议的操作。
 
 详细了解安全 [分数及其工作方式](../security/defender/microsoft-secure-score.md)。
   
@@ -110,7 +110,7 @@ ms.locfileid: "59169688"
   
 每个操作在合规性管理器中都有一个分配的值，它基于它所代表的风险：
 
-|**类型**|**分配的分数**|
+|**Type**|**分配的分数**|
 |:-----|:-----|
 | 预防性强制 | 27 |
 | 预防自主型 | 9  |

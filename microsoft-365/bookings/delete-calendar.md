@@ -6,19 +6,19 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: 使用 Microsoft 365 管理中心 或 Windows PowerShell 删除 Bookings 日历。
-ms.openlocfilehash: fc5975e25fa3b1f2d2aab991cc7aac8038181f3f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 48556951382b95316ffdb9e07c1c561758276ded
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170243"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155726"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>删除 Bookings 中的预订日历
 
-本文介绍如何删除不需要的预订日历。 可以在日历中删除预订日历Microsoft 365 管理中心或使用 PowerShell。 Bookings 日历是 Exchange Online，因此删除相应的用户帐户以删除预订日历。
+本文介绍如何删除不需要的预订日历。 可以在会议中删除预订日历Microsoft 365 管理中心或使用 PowerShell。 Bookings 日历是 Exchange Online邮箱，因此删除相应的用户帐户以删除预订日历。
 
 > [!IMPORTANT]
 > 必须使用本主题中的 PowerShell 说明删除在 2017 年或之前创建的所有预订日历。 在 2018 年或之后创建的所有预订日历都可以在日历Microsoft 365 管理中心。
@@ -67,7 +67,7 @@ ms.locfileid: "59170243"
 
    - _\<UPN\>_ 是采用用户主体名称格式的帐户（例如 `john@contoso.com`）。
 
-3. 系统提示时，使用租户管理员凭据登录托管Microsoft 365永久删除的预订日历的租户。
+3. 系统提示时，使用租户管理员凭据登录托管要永久删除Microsoft 365日历的租户。
 
 4. 处理完此命令后，输入以下命令，获取租户中的预订邮箱列表：
 

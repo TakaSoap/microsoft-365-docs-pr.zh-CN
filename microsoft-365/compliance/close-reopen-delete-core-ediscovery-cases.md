@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何管理核心电子数据展示事例。 这包括关闭案例、重新打开已关闭的案例和删除案例。
-ms.openlocfilehash: 67961d2404f54ca3fbb33dabc71508ba65bfa205
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a210a06da2effb0b17d526a09499a65fa59bfeb4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162045"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158270"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>关闭、重新打开和删除核心电子数据展示案例
 
@@ -32,7 +32,7 @@ ms.locfileid: "59162045"
 
 完成核心电子数据展示案例支持的法律案件或调查后，可以关闭该案例。 下面是关闭案例时发生的情况：
   
-- 如果案件集包含任何电子数据展示保留，将关闭它们。 关闭保留后，称为延迟保留 (30 天的 *宽限期) 保留* 的内容位置应用。 这有助于防止立即删除内容，并且使管理员有机会在延迟保留期到期后永久删除内容之前搜索和还原内容。 有关详细信息，请参阅从电子数据展示保留 [中删除内容位置](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)。
+- 如果案件集包含任何电子数据展示保留，将关闭它们。 关闭保留后，称为延迟保留 (30 天的宽限期) 应用于已保留的内容位置。 这有助于防止立即删除内容，并且使管理员有机会在延迟保留期到期后永久删除内容之前搜索和还原内容。 有关详细信息，请参阅从电子数据展示保留 [中删除内容位置](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)。
 
 - 关闭案例仅关闭与该案例相关联的保留。 如果其他保留设置在内容位置上 (如诉讼保留、保留策略或其他核心电子数据展示案例的保留) 仍将保留这些保留。
 
@@ -82,13 +82,13 @@ ms.locfileid: "59162045"
 
     该过程完成后，在核心电子数据展示页面上将案例的状态更改为"活动 **"。**
 
-6.  (可选) 若要启用与重新打开的案例关联的任何保留，请转到保留选项卡，选择保留，然后选择保留项飞出页面上的状态下的复选框。 
+6.  (可选) 打开与重新打开的案例相关联的任何保留项，请转到保留选项卡，选择保留，然后在保留项飞出页面上选中状态下的复选框。 
   
 ## <a name="delete-a-case"></a>删除案例
 
-还可以删除主动和已关闭的核心电子数据展示事例。 删除事例时，将删除事例内的所有搜索和导出，并且从事例"核心电子数据展示"页上的事例Microsoft 365 合规中心。  不能重新打开已删除的大小写。
+还可以删除主动和已关闭的核心电子数据展示事例。 删除事例时，将删除事例的所有搜索和导出，并且从事例"核心电子数据展示"页上的事例列表中Microsoft 365 合规中心。  不能重新打开已删除的大小写。
 
-必须先删除与 (关联的所有电子数据展示保留) ，然后才能删除与案例关联的案例。  这包括删除状态为"关"的 **保留**。 
+必须先删除与 (相关联的所有电子数据展示保留) ，然后才能删除案例。  这包括删除状态为"关"的 **保留**。 
 
 若要删除电子数据展示保留，请：
 

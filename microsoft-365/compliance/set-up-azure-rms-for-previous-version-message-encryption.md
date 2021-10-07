@@ -9,18 +9,18 @@ ms.date: 10/30/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: 早期版本的 Office 365 邮件加密依赖于Microsoft Azure权限 (以前称为Windows Azure Active Directory权限管理) 。
-ms.openlocfilehash: 978a8027c79de574b80aeedabcbbd51fa6f9e2a0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c94497069d929dd3819e3ced915c8e778e983c10
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196888"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159600"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>为以前版本的邮件加密设置 Azure 权限管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "59196888"
 
 Office 365 邮件加密 (OME) （包括 IRM）取决于 Azure RMS (Azure 权限) 。 Azure RMS 是 Azure 信息保护使用的保护技术。 若要使用 OME，组织必须包含 Exchange Online 或 Exchange Online Protection 订阅，而订阅又包括 Azure 权限管理订阅。
   
-- 如果不确定订阅包含哪些内容，请参阅邮件策略Exchange Online恢复和合规性[的订阅服务说明](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)。
+- 如果不确定订阅包含哪些内容，请参阅邮件Exchange Online、恢复和合规性[的订阅服务说明](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)。
 
 - 如果你拥有 Azure 权限管理，但没有为 Exchange Online 或 Exchange Online Protection 进行设置，本文将介绍如何激活 Azure 权限管理，然后介绍设置 OME 以使用 Azure 权限管理的最佳方法。
 
@@ -45,9 +45,9 @@ Office 365 邮件加密 (OME) （包括 IRM）取决于 Azure RMS (Azure 权限)
 
 你需要激活 Azure 权限管理，以便你的组织用户可以将信息保护应用于他们发送的邮件，并打开受 Azure 权限管理服务保护的邮件和文件。 有关说明，请参阅 [激活 Azure 权限管理](/azure/information-protection/activate-service)。 完成激活后，返回此处并继续执行本文中的任务。
   
-## <a name="set-up-the-previous-version-of-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>将以前版本的 OME 设置为使用 Azure RMS，方法为在 TPD 中导入受信任的 (域) 
+## <a name="set-up-the-previous-version-of-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>将以前版本的 OME 设置为使用 Azure RMS，方法为将受信任的发布域 (TPD) 
 
-TPD 是一个 XML 文件，其中包含有关您组织权限管理设置的信息。 例如，TPD 包含有关用于对证书和许可证进行签名和加密的服务器许可 (SLC) 、用于许可和发布等的 URL 的信息。 使用 TPD 将 TPD 导入Windows PowerShell。
+TPD 是一个 XML 文件，其中包含有关您组织权限管理设置的信息。 例如，TPD 包含有关用于签署和加密证书和许可证的服务器 (SLC) 、用于许可和发布等的 URL 的信息。 使用 TPD 将 TPD 导入Windows PowerShell。
   
 > [!IMPORTANT]
 > 以前，您可以选择将 TPD 从 Active Directory 权限管理服务 (AD RMS) 组织。 但是，这样做将阻止你使用新的 OME 功能，不建议这样做。 如果组织当前已按此方式配置，Microsoft 建议创建从本地 Active Directory RMS 迁移到基于云的 Azure 信息保护的计划。 有关详细信息，请参阅从 [AD RMS 迁移到 Azure 信息保护](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。 在迁移到 Azure 信息保护之前，你将不能使用新的 OME 功能。

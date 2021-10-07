@@ -2,8 +2,6 @@
 title: 使用 PowerShell、WMI 和 MPCmdRun.exe
 description: 了解如何使用 PowerShell、WMI 和 MPCmdRun.exe
 keywords: 迁移后， 管理， 操作， 维护， 利用率， PowerShell， WMI， MPCmdRun.exe， Microsoft Defender for Endpoint， edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/23/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 27391b65b583a05e2c3d50f93dd1a0d2f3ce561b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 2fe421e79efa7da204209e2df35d3be51bdbf6d1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777000"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154766"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>使用 PowerShell、WMI 和 MPCmdRun.exe
 
@@ -38,13 +36,13 @@ ms.locfileid: "59777000"
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 > [!NOTE]
-> 我们建议[Microsoft Endpoint Manager组织](/mem)威胁防护功能，这些功能 (也称为终结点) 。 Endpoint Manager包括[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)和[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)。
+> 我们建议使用[Microsoft Endpoint Manager](/mem)管理组织对也称为终结点 (的设备的威胁防护) 。 Endpoint Manager包括[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)和[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)。
 >
 > - [详细了解Endpoint Manager](/mem/endpoint-manager-overview)
-> - [使用 Configuration Manager 和 Intune 在 Windows 10 设备上共同管理 Microsoft Defender for Endpoint](manage-atp-post-migration-intune.md)
+> - [使用 Configuration Manager 和 Intune 在 Windows 10 和 Windows 11 设备上共同管理 Microsoft Defender for Endpoint](manage-atp-post-migration-intune.md)
 > - [使用 Intune 管理 Microsoft Defender for Endpoint](manage-atp-post-migration-intune.md)
 
-可以使用[PowerShell、Windows](#configure-microsoft-defender-for-endpoint-with-powershell) [Management Instrumentation](#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi) (WMI) 和[Microsoft 恶意软件](#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe)防护命令行实用程序 (MPCmdRun.exe) 在设备上管理一些 (MPCmdRun.exe) 。 Microsoft Defender 防病毒 例如，你可以管理一些Microsoft Defender 防病毒设置。 在某些情况下，你可以自定义攻击面减少规则和 Exploit Protection 设置。
+可以使用[PowerShell、Windows](#configure-microsoft-defender-for-endpoint-with-powershell) [Management Instrumentation](#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi) (WMI) 和[Microsoft 恶意软件](#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe)防护命令行实用工具 (MPCmdRun.exe) 在设备上管理某些 (MPCmdRun.exe) 。 Microsoft Defender 防病毒 例如，你可以管理一些Microsoft Defender 防病毒设置。 在某些情况下，你可以自定义攻击面减少规则和 Exploit Protection 设置。
 
 > [!IMPORTANT]
 > 使用 PowerShell、WMI 或 MCPmdRun.exe配置配置设置可能会覆盖使用 Intune 或 Configuration Manager 配置配置功能。
@@ -61,9 +59,9 @@ ms.locfileid: "59777000"
 |**使用** PowerShell 启用网络保护 <br/><br/> *可以使用 PowerShell 启用网络保护。*|[使用 PowerShell 打开网络保护](/microsoft-365/security/defender-endpoint/enable-network-protection#powershell)|
 |**配置受控文件夹访问权限** 以防范勒索软件 <br/><br/> *[受控文件夹访问权限](/microsoft-365/security/defender-endpoint/controlled-folders) 也称为反反somware保护。*|[使用 PowerShell 启用受控文件夹访问权限](/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell)|
 |**配置 Microsoft Defender 防火墙** 以阻止未经授权的网络流量流入或流出组织的设备|[使用高级安全管理 Microsoft Defender 防火墙Windows PowerShell](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
-|**配置加密和 BitLocker** 以保护在组织中运行 Windows|[BitLocker PowerShell 参考指南](/powershell/module/bitlocker/)|
+|**配置加密和 BitLocker** 以保护在组织中运行加密Windows|[BitLocker PowerShell 参考指南](/powershell/module/bitlocker/)|
 
-## <a name="configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi"></a>使用 Windows Management Instrumentation (WMI 配置 Microsoft Defender for Endpoint) 
+## <a name="configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi"></a>使用 Windows Management Instrumentation (WMI) 配置 Microsoft Defender for Endpoint
 
 WMI 是一个脚本界面，允许您检索、修改和更新设置。 若要了解更多信息，请参阅[使用 WMI。](/windows/win32/wmisdk/using-wmi)<br/><br/>
 
@@ -76,13 +74,13 @@ WMI 是一个脚本界面，允许您检索、修改和更新设置。 若要了
 
 在单台设备上，可以使用命令行工具运行扫描、启动诊断跟踪、检查安全mpcmdrun.exe更新等。 可以在 中查找此实用工具 `%ProgramFiles%\Windows Defender\MpCmdRun.exe` 。 从命令提示符运行它。
 
-若要了解更多信息，请参阅使用 Microsoft Defender 防病毒[配置mpcmdrun.exe。 ](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)
+若要了解更多信息，请参阅使用[Microsoft Defender 防病毒 配置mpcmdrun.exe。 ](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>配置Microsoft 365 Defender门户
 
 如果尚未配置，请配置 Microsoft 365 Defender 门户以查看[](https://security.microsoft.com/)警报、配置威胁防护功能，并查看有关组织整体安全状况的详细信息。
 
-还可以配置最终用户是否可以在网站中查看这些功能Microsoft Defender 安全中心。
+您还可以配置最终用户是否可以在网站中查看这些功能Microsoft Defender 安全中心。
 
 - [概述Microsoft Defender 安全中心](/microsoft-365/security/defender-endpoint/use)
 
@@ -92,6 +90,6 @@ WMI 是一个脚本界面，允许您检索、修改和更新设置。 若要了
 
 - [获取威胁和漏洞管理的概述](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [访问 Microsoft Defender 安全中心安全操作仪表板](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [访问Microsoft Defender 安全中心操作仪表板](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 
 - [使用 Intune 管理 Microsoft Defender for Endpoint](manage-atp-post-migration-intune.md)

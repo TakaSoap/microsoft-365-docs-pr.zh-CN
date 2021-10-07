@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06de4468d0737fbdc8e0b847c5671256d00b5acd
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 0a92cf747142dbb01908b1ea3931d9b7a6bfa115
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124753"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159158"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新增功能
 
@@ -34,7 +34,7 @@ ms.locfileid: "60124753"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)。
 
-以下功能在最新版本的 Microsoft Defender 终结点和 Windows 10 和 Windows Server 中的 microsoft Defender (GA) 中为预览版或Windows提供。
+以下功能在最新版本的 Microsoft Defender 终结点 (GA) 中为预览版或通用版本，Windows 10 Windows Server 中的安全功能。
 
 有关预览功能的详细信息，请参阅预览 [功能](preview.md)。
 
@@ -61,7 +61,7 @@ ms.locfileid: "60124753"
 
 ## <a name="october-2021"></a>2021 年 10 月
 
-- Windows Microsoft Defender 终结点和终结点添加的 11 Microsoft 365 Defender。
+- Windows 11 支持添加到 Microsoft Defender 终结点和 Microsoft 365 Defender。
 
 ## <a name="september-2021"></a>2021 年 9 月
 
@@ -69,7 +69,7 @@ ms.locfileid: "60124753"
 
 ## <a name="august-2021"></a>2021 年 8 月
 
--  (预览) [Microsoft Defender for Endpoint 计划 1 ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (preview) 是一款终结点保护解决方案，包括下一代保护、攻击面减少、集中管理和报告以及 API。 Defender for Endpoint Plan 1 (preview) 是一款新产品，适用于想要试用终结点保护功能、拥有 Microsoft 365 E3 且尚未使用 Microsoft 365 E5 的客户。 
+-  (预览) Microsoft Defender [for Endpoint 计划 1 ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (preview) 是一款终结点保护解决方案，包括下一代保护、攻击面减少、集中管理和报告以及 API。 Defender for Endpoint Plan 1 (preview) 是一款新产品，适用于想要试用终结点保护功能、拥有 Microsoft 365 E3 且尚未使用 Microsoft 365 E5 的客户。 
 
    若要了解更多信息，请参阅 [Microsoft Defender for Endpoint Plan 1 (preview) ](defender-endpoint-plan-1.md)。 现有的 [Defender for Endpoint](microsoft-defender-endpoint.md) 功能称为 Defender for Endpoint Plan 2。 
 
@@ -81,7 +81,7 @@ ms.locfileid: "60124753"
 
 ## <a name="june-2021"></a>2021 年 6 月
 
-- [Delta 导出软件漏洞评估](get-assessment-methods-properties.md#31-methods) API <br> 导出漏洞和安全配置 API 集合 [评估的](get-assessment-methods-properties.md) 新增内容。 <br> 与完整软件漏洞评估 (JSON 响应) （用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 API 调用仅用于获取所选日期与当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞"或"向组织添加了多少个新漏洞"。
+- [Delta 导出软件漏洞评估](get-assessment-methods-properties.md#31-methods) API <br> 导出漏洞和安全配置 API 集合 [评估的](get-assessment-methods-properties.md) 新增内容。 <br> 与完整软件漏洞评估 (JSON 响应) （用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 API 调用仅用于获取所选日期与当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞"或"向组织添加了多少新漏洞"。
 
 - [导出漏洞和安全配置评估](get-assessment-methods-properties.md) API <br> 添加 API 集合，这些 API 危险和漏洞管理每个设备提取数据。 不同的 API 调用用于获取不同类型的数据：安全配置评估、软件清单评估和软件漏洞评估。 每个 API 调用都包含组织中设备的必要数据。
 

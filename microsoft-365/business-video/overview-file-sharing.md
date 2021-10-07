@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何共享业务文件的概述。
-ms.openlocfilehash: d762620cf07cd9f1201bf173e6e6aa0c16e050eb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7c4dde8f3ce19a2f7c443efffbbc780a746ba174
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170829"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155678"
 ---
 # <a name="overview-of-sharing-business-files"></a>共享业务文件概述
 
@@ -40,14 +40,14 @@ ms.locfileid: "59170829"
 
 ## <a name="share-a-file-with-someone-outside-of-your-company"></a>与公司外部的某人共享文件
 
-- 如果您只需要客户或客户 (，可以通过电子邮件与公司外部的) 共享文件。
-- 如果需要响应，或者希望他们填写一些信息并将其发送回，可以使用 SharePoint 或 Microsoft Teams 将其与编辑链接共享。
+- 如果您只需要客户或客户 (客户或客户) ，请通过电子邮件与公司外部的其他人共享文件。
+- 如果需要回复，或者希望他们填写一些信息并将其发送回，可以使用 SharePoint 或 Microsoft Teams 与编辑链接共享。
 
 详细了解如何使用安全 [链接](securely-share-files-externally.md) 在组织外部共享文件，以及如何与任何人 [链接共享文件](share-files-externally.md)。
 
 ## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>与客户或业务合作伙伴共享和协作
 
-作为项目的一部分共享？ 或者作为与业务合作伙伴或供应商持续关系的一部分？ 只需多投入一点时间，就可以在Microsoft Teams一个持续共享和协作的地方。 与企业外部人员合作非常简单，你甚至可以为其他供应商或合作伙伴设置单独的渠道，使一切保持简单。
+作为项目的一部分共享？ 或者作为与业务合作伙伴或供应商持续关系的一部分？ 只需多投入一点时间，就可以在团队中Microsoft Teams一个持续共享和协作的地方。 与企业外部人员合作非常简单，你甚至可以为其他供应商或合作伙伴设置单独的渠道，使一切保持简单。
 
 1. 创建团队。
 1. 上传文件。
@@ -57,7 +57,7 @@ ms.locfileid: "59170829"
 
 ## <a name="share-inside-your-business"></a>在企业内部共享
 
-如果你正在处理在企业内部共享的文件，在企业内建立团队也是一个好主意Microsoft Teams。 在那里共享文件，企业中的每个人都可以轻松查找和编辑文件，并且你知道自己正在同一页面上工作。
+如果你正在处理在企业内部共享的文件，在业务中设置团队也是一个不错的Microsoft Teams。 在那里共享文件，企业中的每个人都可以轻松查找和编辑文件，并且你知道自己正在同一页面上工作。
 
 1. 创建团队并邀请团队加入。
 1. 上传文件。

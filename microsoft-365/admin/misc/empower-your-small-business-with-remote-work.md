@@ -8,23 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-description: 查找有关使用 Microsoft 365 的企业远程工作的最新操作方法信息、提示、资源和Microsoft 365。
-ms.openlocfilehash: 2e2ce2c9b7e204a56a0deccc758ba19d7239c632
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 查找有关使用 Microsoft 365 企业远程工作的最新操作方法信息、提示、资源和Microsoft 365。
+ms.openlocfilehash: bff6e8b54262ab4bc71f219ccfe401877269d0ee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170371"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158726"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>通过远程工作为小型企业提供支持
 
-随着企业适应用户远程工作并虚拟与客户联系的需求不断增加，此网站将针对使用 Microsoft 365 的企业远程工作的最新操作方法信息、提示、资源和指南进行更新。
+随着企业适应让员工进行远程工作并虚拟与客户联系的需求不断增加，此网站将针对使用 Microsoft 365 的企业远程工作的最新操作方法信息、提示、资源和指南进行更新。
 
 > [!TIP]
 > 没有Microsoft_Teams？ 注册 1 年后Microsoft Teams，Office 6 个月的 (免费订阅) 。 获取本文中介绍的技术作为优惠的一部分。 有关详细信息，请参阅免费试用 [1 个月](https://aka.ms/SMBTeamsOffer)。
@@ -35,7 +35,7 @@ ms.locfileid: "59170371"
 
 ## <a name="transitioning-to-a-remote-workforce"></a>过渡到远程工作人员
 
-根据新型冠状病毒 (新型冠状病毒) 爆发，许多企业所有者发现自己拥有完全远程的工作人员。 下面是转换到远程工作安全、安全且高效的可操作操作。
+根据新型冠状病毒 (新型冠状病毒) ，许多企业所有者发现自己具有完全远程的工作人员。 下面是转换到远程工作安全、安全且高效的可操作操作。
 
 有关详细信息，请参阅[小型企业中的Microsoft Teams入门](../../business-video/get-started-teams-small-business.md)。
 
@@ -43,11 +43,11 @@ ms.locfileid: "59170371"
 
 ## <a name="connect-with-employees-and-customers"></a>连接员工和客户合作
 
-你仍然可以与员工、客户、客户和合作伙伴联系，即使你无法面面相见。 使用 Microsoft Teams可以继续业务并与客户联系。
+你仍然可以与员工、客户、客户和合作伙伴联系，即使你无法面面相见。 使用 Microsoft Teams 可以继续业务并与客户联系。
 
 ### <a name="meet-up-in-teams"></a>在 Teams
 
-通过会议与员工、客户或合作伙伴一起主持音频、Microsoft Teams。
+通过会议与员工、客户或合作伙伴一起主持音频、视频和Microsoft Teams。
 
 有关详细信息，请参阅主持 [联机会议和](../../business-video/start-and-pin-chats.md) 与 [员工和客户聊天](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92)。
 
@@ -65,7 +65,7 @@ ms.locfileid: "59170371"
 
 ## <a name="manage-and-secure-your-business-to-run-remotely"></a>管理和保护企业远程运行
 
-只需几个步骤，即使在远程员工和来宾用户中，也可以确保业务安全。
+只需几个步骤，即使对于远程员工和来宾用户，也可以确保业务安全。
 
 ### <a name="secure-your-users"></a>保护用户
 
@@ -81,13 +81,13 @@ ms.locfileid: "59170371"
 
 ### <a name="more-for-admins-and-partners"></a>更多适用于管理员和合作伙伴
 
-适用于 Microsoft 365 Business 的技术文档中心使用新的安全远程工作指南进行了更新。
+适用于 Microsoft 365 Business 的技术文档中心使用新的安全远程工作指南进行更新。
 
-有关详细信息，请参阅 Microsoft 365 [Business 资源](/microsoft-365/business)。
+有关详细信息，请参阅Microsoft 365 [Business 资源](/microsoft-365/business)。
 
 ## <a name="need-to-ask-a-question"></a>需要提问？
 
 在管理员[Teams论坛或](https://answers.microsoft.com/msteams/forum)Office[论坛中提问](https://answers.microsoft.com)。
 
 > [!NOTE]
-> 本文和视频中的大多数任务都可以通过订阅之前Microsoft 365 商业基础版 (完成，Office 365 商业协作版) 一些需要高级订阅。
+> 本文和视频中的大多数任务都可以通过订阅以前Microsoft 365 商业基础版 (完成，Office 365 商业协作版) 一些需要高级订阅。

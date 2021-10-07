@@ -2,7 +2,6 @@
   href: index.yml
   items:
     - name: 入门
-      href: setup/index.yml
       items:
         - name: 注册
           href: admin-overview/sign-up-for-office-365.md
@@ -103,7 +102,6 @@
         - name: Azure 信息保护支持
           href: services-in-china/parity-between-azure-information-protection.md
     - name: 管理用户、组和密码
-      href: add-users/index.yml
       items:
         - name: 用户
           items:
@@ -180,7 +178,6 @@
             - name: 设置密码过期策略
               href: manage/set-password-expiration-policy.md
     - name: 管理电子邮件和日历
-      href: email/index.yml
       items:
         - name: 关于用户电子邮件设置
           href: email/office-365-user-email-settings.md
@@ -217,7 +214,6 @@
         - name: 管理组织的待筛选邮件
           href: email/configure-clutter.md
     - name: 管理域
-      href: get-help-with-domains/index.yml
       items:
         - name: 添加域
           href: setup/add-domain.md
@@ -240,7 +236,6 @@
         - name: 排查域问题
           href: get-help-with-domains/find-and-fix-issues.md
     - name: 管理数据和服务
-      href: manage/index.yml
       items:
         - name: 使用报告监视 Microsoft 365 活动
           href: activity-reports/activity-reports.md
@@ -348,7 +343,6 @@
         - name: GDPR 合规性指南
           href: security-and-compliance/gdpr-compliance.md
     - name: 管理设备和应用数据
-      href: devices/index.yml
       items:
         - name: 设备和应用数据保护方法
           href: devices/choose-device-security.md
@@ -421,7 +415,6 @@
             - name: 排除故障
               href: basic-mobility-security/troubleshoot.md
     - name: 与客户合作
-      href: work-with-customers/index.yml
       items:
         - name: 与来宾用户共享网站和文件
           href: manage/share-sites-with-external-users.md

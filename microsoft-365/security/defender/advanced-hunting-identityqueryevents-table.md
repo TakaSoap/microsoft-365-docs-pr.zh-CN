@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 89f6f83112bc6bea57a3b5f7703353adb9d87a30
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 58809ea13b725a7ee7aa9b4098d221b02fe6d35c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161941"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159122"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "59161941"
 高级 `IdentityQueryEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关对 Active Directory 对象（如用户、组、设备和域）执行的查询的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关表支持 (事件) 类型的详细信息，请使用安全中心中提供的内置 `ActionType` 架构参考。
+> 有关表支持的事件 (值) ，请使用安全中心中提供的内置架构 `ActionType` 参考。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 

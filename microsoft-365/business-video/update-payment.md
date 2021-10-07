@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何更新适用于企业Microsoft 365付款方式。
-ms.openlocfilehash: a5c6c5082c5d4236b5eb7ab9e6c3af45793e16cb
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: a43f60201a282c8735480aa98f33054edbf59313
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401526"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160632"
 ---
 # <a name="update-the-payment-method-for-your-subscription"></a>更新订阅的付款方式
 
@@ -34,7 +34,7 @@ ms.locfileid: "59401526"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
-你可以轻松更新 Microsoft 365 商业版订阅的付款方式。 你可以更改详细信息，如使用的信用卡、姓名或地址。
+你可以轻松更新你的 Microsoft 365 商业版订阅的付款方式。 你可以更改详细信息，如使用的信用卡、姓名或地址。
 
 ## <a name="before-you-begin"></a>开始之前
 

@@ -3,26 +3,24 @@ title: 创建指示器
 ms.reviewer: ''
 description: 创建文件哈希、IP 地址、URL 或域的指示器，以定义实体的检测、防护和排除。
 keywords: 管理， 允许， 阻止， 阻止， 清理， 恶意， 文件哈希， ip 地址， url， 域
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4ea6519f18f91a6905e8fa3372aec2b2014b18ac
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d6ddd0cbc8a8903ded4f95fc75e4a8ffcde7c5b2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196592"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159386"
 ---
 # <a name="create-indicators"></a>创建指示器
 
@@ -37,7 +35,7 @@ ms.locfileid: "59196592"
 >
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)。
 
-ICS (泄露) 是每个终结点保护解决方案中的重要功能。 此功能使 SecOps 能够设置指示器列表，用于检测并阻止 (防护和响应) 。
+ICS (泄露) 是每个终结点保护解决方案中的重要功能。 此功能使 SecOps 能够设置检测指标列表，并阻止 (和响应) 。
 
 创建定义实体的检测、防护和排除的指示器。 你可以定义要采取的操作以及何时应用该操作的持续时间，以及要应用该操作的设备组的范围。
 
@@ -80,16 +78,16 @@ EnableFileHashComputation 设置在文件扫描期间计算证书和文件 IoC �
 ## <a name="public-preview-for-automated-investigation-and-remediation-engine"></a>自动调查和修正引擎的公共预览版
 
 > [!IMPORTANT]
-> 本节中的信息 (公共预览版自动调查和修正 **引擎) 预** 发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
+> 本节中 (自动调查和修正引擎的公共预览 **版) 预** 发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-在 IoC (指示器) 时，现在可以使用以下一个或多个操作：
+在 IoC (创建新指示器) ，现在可以使用以下一个或多个操作：
 
 - 允许 – 允许 IoC 在你的设备上运行。
 - 审核 – IoC 运行时将触发警报。
 - 阻止执行 - 不允许运行 IoC。
 - 阻止和修正 - 不允许运行 IoC，并且修正操作将应用于 IoC。
 
-下表确切显示了每个指标的可用操作 (IoC) 类型：
+下表确切显示了每个 IoC 类型中每个 (可用的) 操作：
 
 | IoC 类型 | 可用操作 |
 |:---|:---|

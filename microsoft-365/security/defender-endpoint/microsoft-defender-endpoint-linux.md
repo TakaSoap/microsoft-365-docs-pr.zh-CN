@@ -3,15 +3,13 @@ title: Linux 版 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 介绍如何在 Linux 上安装和使用 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cdf022be492701e790606479877bf57f6f426094
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 1717a184bb03bbc4165e4637a1a04557925f8abb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483575"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157910"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -43,7 +41,7 @@ ms.locfileid: "59483575"
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安装 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>必备条件
+### <a name="prerequisites"></a>先决条件
 
 - 访问 Microsoft 365 Defender 门户
 - 使用系统系统 [管理器的](https://systemd.io/) Linux 分发
@@ -127,7 +125,11 @@ ms.locfileid: "59483575"
 - 必须 `auditd` () 审核框架。
 
   > [!NOTE]
-  > 添加到 的规则捕获的系统事件将添加到 (，) `/etc/audit/rules.d/` `audit.log` 主机审核和上游收集。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
+  > 通过添加到 的规则捕获的系统事件将添加到 (，) `/etc/audit/rules.d/` `audit.log` 主机审核和上游收集。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
+
+### <a name="configuring-exclusions"></a>配置排除项
+
+将排除项添加到Microsoft Defender 防病毒时，您应注意此规则常见的[排除Microsoft Defender 防病毒](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>网络连接
 
@@ -166,6 +168,10 @@ Microsoft 会定期发布软件更新，以提高性能、安全性和提供新�
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>如何配置 Linux 版 Microsoft Defender for Endpoint
 
 有关如何在企业环境中配置产品的指南，可在在 Linux 上设置 [Microsoft Defender for Endpoint 的首选项中提供](linux-preferences.md)。
+
+## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>适用于终结点的 Microsoft Defender 的常见应用程序可能会影响
+
+安装 Microsoft Defender for Endpoint 时，某些应用程序中的高 I/O 工作负载可能会遇到性能问题。 其中包括用于开发人员方案（如 Jenkins 和 Jira）的应用程序，以及数据库工作负荷（如 OracleDB 和 Postgres）。 如果遇到性能下降，请考虑为受信任应用程序设置排除项，并记住[Microsoft Defender 防病毒错误。](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) 有关其他指南，请考虑有关第三方应用程序的防病毒排除项的咨询文档。
 
 ## <a name="resources"></a>资源
 

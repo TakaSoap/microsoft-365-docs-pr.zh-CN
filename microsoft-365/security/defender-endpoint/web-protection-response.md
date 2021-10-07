@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7ee836cc40c7960c7963867484056b5a506241b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: db128699fe68ef8728122a7b505e74be1689d38d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175405"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159194"
 ---
 # <a name="respond-to-web-threats"></a>响应 web 威胁
 
@@ -76,8 +76,8 @@ Microsoft Defender for Endpoint 针对恶意 [或](manage-alerts.md) 可疑 Web 
 
 借助适用于终结点的 Microsoft Defender 中的 Web 保护，将阻止最终用户使用 Microsoft Edge浏览器访问恶意或不需要的网站。 由于阻止是由网络 [保护执行的](network-protection.md)，因此他们将从 Web 浏览器看到一个常规错误。 他们还将看到来自用户Windows。
 
-![显示 403 Microsoft Edge 403 错误和错误通知Windows图像。 ](images/wtp-browser-blocking-page.png)
-*Web 威胁在 Microsoft Edge*
+![显示Microsoft Edge 403 错误和错误通知Windows的图像。 ](images/wtp-browser-blocking-page.png)
+*Web 威胁在Microsoft Edge*
 
 ![Chrome Web 浏览器的图像，显示安全连接警告和Windows通知。 ](images/wtp-chrome-browser-blocking-page.png)
 *在 Chrome 上阻止的 Web 威胁*

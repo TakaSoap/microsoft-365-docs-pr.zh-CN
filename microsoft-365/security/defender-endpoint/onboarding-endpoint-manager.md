@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 75bbf7e0d121a7d0ed71124179367243e8aff777
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 7da419a779cb3a58488ca27ea7185262f4001d44
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124801"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159483"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 载入
 
@@ -51,7 +51,7 @@ ms.locfileid: "60124801"
 - 步骤 1：在 MEM 中通过创建组将设备载入服务Microsoft Endpoint Manager () 分配配置
 - 步骤 2：使用 Microsoft Endpoint Manager
 
-本载入指南将指导你完成在使用应用时需要执行Microsoft Endpoint Manager：
+本载入指南将指导你完成在使用 Microsoft Endpoint Manager 时需要执行的基本Microsoft Endpoint Manager：
 
 - [标识目标设备或用户](#identify-target-devices-or-users)
   - 创建用户Azure Active Directory设备 (组) 
@@ -68,7 +68,7 @@ ms.locfileid: "60124801"
 
 有关此Microsoft Endpoint Manager，请查看以下资源：
 
-- [Microsoft Endpoint Manager页](/mem/)
+- [Microsoft Endpoint Manager页面](/mem/)
 - [有关 Intune 和 ConfigMgr 聚合的博客文章](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [MEM 简介视频](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
@@ -79,7 +79,7 @@ ms.locfileid: "60124801"
 在此部分中，我们将创建一个测试组来分配配置。
 
 > [!NOTE]
-> Intune 使用 Azure Active Directory (Azure AD) 组来管理设备和用户。 作为 Intune 管理员，你可以设置组以满足你的组织需求。
+> Intune Azure Active Directory (Azure AD) 组来管理设备和用户。 作为 Intune 管理员，你可以设置组以满足你的组织需求。
 >
 > 有关详细信息，请参阅添加 [组以组织用户和设备](/mem/intune/fundamentals/groups-add)。
 
@@ -298,7 +298,7 @@ ms.locfileid: "60124801"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal30 的图像。](images/45cefc8e4e474321b4d47b4626346597.png)
 
-9. 选择 **查看并创建>创建**。
+9. 选择 **"审阅"和"创建>创建"。**
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal31 的图像。](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
@@ -321,7 +321,7 @@ ms.locfileid: "60124801"
 1. 打开 MEM 门户并导航到相关策略，如上述步骤所示。 以下示例显示了下一代保护设置。
 
     > [!div class="mx-imgBorder"]
-    > [![portal33 Microsoft Endpoint Manager图像。](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
+    > [![Microsoft Endpoint Manager portal33 的图像。](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
 
 2. 选择 **配置策略** 以查看策略状态。
 
@@ -348,7 +348,7 @@ ms.locfileid: "60124801"
 
 ### <a name="confirm-endpoint-detection-and-response"></a>确认终结点检测和响应
 
-1. 在应用配置之前，Endpoint Protection Defender for Endpoint Protection服务。
+1. 在应用配置之前，Endpoint Protection Defender for Endpoint Protection 服务。
 
     > [!div class="mx-imgBorder"]
     > [![服务面板 1 的图像。](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
@@ -400,7 +400,7 @@ ms.locfileid: "60124801"
 
 ### <a name="confirm-attack-surface-reduction---web-protection"></a>确认攻击面减少 - Web 保护
 
-1. 在测试设备上，打开 PowerShell Windows键入 `(Get-MpPreference).EnableNetworkProtection` 。
+1. 在测试设备上，打开 PowerShell Windows并键入 `(Get-MpPreference).EnableNetworkProtection` 。
 
 2. 这应该会以 0 作为响应，如下所示。
 
@@ -408,6 +408,6 @@ ms.locfileid: "60124801"
 
 3. 应用该策略后，打开 PowerShell Windows并键入 `(Get-MpPreference).EnableNetworkProtection` 。
 
-4. 响应结果应为 1，如下所示。
+4. 这应该会以 1 作为响应，如下所示。
 
     ![命令行 4 的图像。](images/c06fa3bbc2f70d59dfe1e106cd9a4683.png)

@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解如何删除 Microsoft 365 多地理位置中的附属位置。 删除附属位置时，还将永久删除所有用户数据。
-ms.openlocfilehash: 749b48528b113a836be6b4e5ee59895bc3816992
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 71bf501fe90cc5f8f29f8bc95a7d18da50ebf9cc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196120"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158090"
 ---
 # <a name="delete-a-satellite-location-in-microsoft-365-multi-geo"></a>删除 Microsoft 365 多地理位置中的附属位置。
 

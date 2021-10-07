@@ -9,24 +9,24 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 了解对话中的对话重建功能Advanced eDiscovery (对话线程) 在 Microsoft Teams 和 Yammer 组中重新构建、查看和导出聊天对话。
+description: 了解 Advanced eDiscovery (中的对话重建功能) 对话线程功能，以在 Microsoft Teams 和 Yammer 组中重新构建、查看和导出聊天对话。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 62ebfc054db260fd5e41fec3809ba1efdf46b44b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c2638b2e89169560307cd32217532d4d5ce565e8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171386"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156518"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>对话线程Advanced eDiscovery
 
-即时消息是一种在大型受众中提问、分享想法或快速沟通的便捷方式。 由于即时消息平台（如 Microsoft Teams 和 Yammer 组）成为企业协作的核心，组织必须评估其电子数据展示工作流如何处理这些新的通信和协作形式。
+即时消息是一种在大型受众中提问、分享想法或快速沟通的便捷方式。 随着即时消息平台（如 Microsoft Teams 和 Yammer 组）成为企业协作的核心，组织必须评估其电子数据展示工作流如何处理这些新的通信和协作形式。
 
 对话中的对话重建Advanced eDiscovery旨在帮助您识别上下文内容并生成不同的对话视图。 此功能使您可以高效快速地查看完整的即时消息对话 (也称为线程) 对话，这些对话是在 Microsoft Teams等平台中生成的。
 
@@ -46,19 +46,19 @@ ms.locfileid: "59171386"
 
 - **邮件：** 表示对话中最小的单元。 邮件的大小、结构和元数据可能会有所不同。
 
-- **对话：** 表示一个或多个邮件的分组。 跨不同的应用程序，对话可能以不同方式表示。 在某些应用程序中，有一个显式操作会导致答复现有邮件。 对话是此用户操作显式形成的。 例如，下面是有关 Microsoft Teams 中的频道对话的屏幕截图。
+- **对话：** 表示一个或多个邮件的分组。 跨不同的应用程序，对话可能以不同方式表示。 在某些应用程序中，有一个显式操作会导致答复现有邮件。 对话是此用户操作显式形成的。 例如，下面是当前频道对话的屏幕截图Microsoft Teams。
 
    ![Microsoft Teams频道对话。](../media/threadedchat.png)
 
-   在其他应用 (例如 Teams) 中的群聊消息，没有正式的回复链，而是消息在单个线程中显示为"消息的平面流"。 在这些类型的应用中，对话从特定时间发生的一组消息中推断得出。 这种消息"软分组" (而不是回复链) 表示有关特定关注主题的"来回"对话。
+   在其他应用 (，例如 Teams) 中的群聊消息，没有正式的回复链，而是消息在单个线程中显示为"消息的平面流"。 在这些类型的应用中，对话从特定时间发生的一组消息中推断得出。 这种消息"软分组" (而不是回复链) 表示有关特定关注主题的"来回"对话。
 
 ## <a name="step-1-create-a-draft-collection"></a>步骤 1：创建草稿集合
 
-确定相关保管人和内容位置后，可以创建搜索以查找潜在相关内容。 在"**集合**"选项卡Advanced eDiscovery，可以通过单击"新建集合"并遵循向导来创建集合。  若要了解如何创建集合、生成搜索查询和预览搜索结果，请参阅 [创建草稿集合](create-draft-collection.md)。
+确定相关保管人和内容位置后，可以创建搜索以查找潜在相关内容。 在"**集合**"选项卡Advanced eDiscovery，单击"新建集合"，然后按照向导操作，即可创建集合。 若要了解如何创建集合、生成搜索查询和预览搜索结果，请参阅 [创建草稿集合](create-draft-collection.md)。
 
 ## <a name="step-2-commit-a-draft-collection-to-a-review-set"></a>步骤 2：将草稿集合提交到审阅集
 
-查看并完成集合中的搜索查询后，可以将搜索结果添加到审阅集。 当您将搜索结果添加到审阅集时，原始数据将复制到Azure 存储区域以便于审阅和分析过程。 有关向审阅集添加搜索结果的信息，请参阅 [将草稿集合提交到审阅集](commit-draft-collection.md)。
+查看并完成集合中的搜索查询后，可以将搜索结果添加到审阅集。 当您将搜索结果添加到审阅集时，原始数据将复制到一个Azure 存储区域以便于审阅和分析过程。 有关向审阅集添加搜索结果的信息，请参阅 [将草稿集合提交到审阅集](commit-draft-collection.md)。
 
 将对话中的项目添加到审阅集时，可以使用按线索对话选项从包含与集合的搜索条件匹配的项目的对话中收集上下文消息。 选择线程对话选项后，可能会发生以下情况：
 
@@ -96,7 +96,7 @@ ms.locfileid: "59171386"
 
 - **批注视图：** 允许你标记对话的线程视图。 对话中所有邮件共享同一批注文档。
 
-- **标记：** 查看审阅集内的对话时，可以通过单击"编码"面板中的"标记"面板 **来查看和应用** 标记。
+- **标记：** 在审阅集内查看对话时，可以通过单击"编码"面板中的"标记"面板 **来查看和应用** 标记。
 
 - **重新运行对话转换：** 将邮件添加到对话审阅集时，将自动运行转换作业以创建线程摘要并注释视图。 如果对话重建作业失败，可以通过单击"操作"> **审阅集创建** 对话 PDF 来重新运行此作业。
 

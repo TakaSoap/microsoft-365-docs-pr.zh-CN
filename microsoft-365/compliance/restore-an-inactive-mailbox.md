@@ -10,23 +10,23 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
-description: 了解如何将非 (邮箱) 还原或合并到非活动邮箱中的现有Office 365。
+description: 了解如何将 (邮箱) 邮箱的内容还原到非活动邮箱中的现有邮箱Office 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09ab8893b2c663d87417fbedf0c157100b3693da
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b57a309ed686f2fe2aaee34fb3b89264a2de9812
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201626"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159774"
 ---
 # <a name="restore-an-inactive-mailbox"></a>还原非活动邮箱
 
-非活动 (邮箱邮箱是一种软) 邮箱类型，用于在前员工离开组织后保留其电子邮件。 如果另一名员工接替离职员工的工作职责，或者该员工回到您的组织，有两种方法可以将非活动邮箱的内容提供给用户：
+非活动 (邮箱邮箱是一种软删除) ，用于在前员工离开组织后保留其电子邮件。 如果另一名员工接替离职员工的工作职责，或者该员工回到您的组织，有两种方法可以将非活动邮箱的内容提供给用户：
 
 - **还原非活动邮箱** 如果另一名员工接替离职员工的工作职责，或者如果另一个用户需要访问非活动邮箱的内容，您可以将非活动邮箱的内容还原（或 合并）到某个现有邮箱。您还可以从非活动邮箱还原存档。还原后，非活动邮箱将保留，并仍保留为非活动状态。本主题介绍还原非活动邮箱的过程。
 
@@ -112,7 +112,7 @@ ms.locfileid: "59201626"
 
 - **使用诉讼保留或Microsoft 365保留策略保留非活动邮箱内容。** 如果要在还原后保留非活动邮箱的状态，可以将目标邮箱置于诉讼保留状态，或在还原非活动邮箱之前应用[](create-a-litigation-hold.md)Microsoft 365[保留](retention.md)策略。 这样可以防止在将非活动邮箱还原到目标邮箱之后，永久删除非活动邮箱中的任何项目。
 
-- **在还原非活动邮箱之前，在目标邮箱上启用保留挂起功能。** 由于非活动邮箱中的邮箱项目可能已过时，您可能会考虑在还原非活动邮箱之前在目标邮箱上启用保留挂起功能。 将邮箱置于保留挂起状态时，在移除保留挂起或保留挂起期到期之前，将不会处理向其分配的保留策略。 这使目标邮箱的所有者有时间管理非活动邮箱中的邮件。 否则，保留策略可能会删除根据为目标邮箱配置的保留设置已到期的旧项目，或将项目移动到存档邮箱（如果已启用）中。 有关详细信息，请参阅将邮箱[置于保留保留Exchange Online。](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)
+- **在还原非活动邮箱之前，在目标邮箱上启用保留挂起功能。** 由于非活动邮箱中的邮箱项目可能已过时，您可能会考虑在还原非活动邮箱之前在目标邮箱上启用保留挂起功能。 将邮箱置于保留挂起状态时，在移除保留挂起或保留挂起期到期之前，将不会处理向其分配的保留策略。 这使目标邮箱的所有者有时间管理非活动邮箱中的邮件。 否则，保留策略可能会删除根据为目标邮箱配置的保留设置已到期的旧项目，或将项目移动到存档邮箱（如果已启用）中。 有关详细信息，请参阅在邮箱[中将邮箱置于保留Exchange Online。](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)
 
 - **AllowLegacyDNMismatch 开关有什么作用？** 在前面还原非活动邮箱的示例中， **AllowLegacyDNMismatch** 开关用来允许将非活动邮箱还原到不同的目标邮箱。 在典型的还原方案中，目标是还原源邮箱和目标邮箱为同一个邮箱的内容。 因此，默认情况下 **，New-MailboxRestoreRequest** cmdlet 会进行检查以确保源邮箱和目标邮箱上的 **LegacyExchangeDN** 属性的值相同。 此检查可防止您将源邮箱意外还原到错误的目标邮箱中。 如果您尝试在不使用 **AllowLegacyDNMismatch** 开关的情况下还原非活动邮箱，则当源邮箱和目标邮箱具有不同的 **LegacyExchangeDN** 属性值时，该命令可能会失败。
 

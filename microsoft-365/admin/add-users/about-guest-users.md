@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,21 +22,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在"来宾用户"列表中填充Microsoft 365 管理中心。
-ms.openlocfilehash: 3afc1c3de5a56def6e6bcf1fa9b9711bdff0d4e8
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f2a8de5b4e9c00361aa0cb2113185fa07d8885a2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773651"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158738"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>来宾用户Microsoft 365 管理中心
 
-添加到来宾、Microsoft Teams、SharePoint 或 Azure Active Directory 的任何来宾也会添加到"来宾用户"<a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">列表中的</a>Microsoft 365 管理中心。  来宾可以参加会议、查看文档和聊天Teams邀请他们参加会议。
+添加到来宾、Microsoft Teams、SharePoint 或 Azure Active Directory 的任何来宾也会添加到"来宾用户"列表中的<a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 管理中心。</a>  来宾可以参加会议、查看文档和聊天Teams邀请他们参加会议。
 一旦用户显示在" **来宾用户"** 列表中，你可以从该列表中删除其访问权限。
 
 若要查看来宾用户，在Microsoft 365 管理中心导航 <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank"></a>中，展开"用户"，然后选择"来宾 **用户"。** 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 您必须是全局管理员才能执行此任务。
 
@@ -52,7 +53,7 @@ ms.locfileid: "59773651"
 若要在来宾服务中添加Azure Active Directory，请参阅[添加来宾用户](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
 
 添加用户后，还可以将其分配给组，或授予他们访问组织中应用的访问权限。 在 Azure AD 门户中添加用户后，该用户也将在 Azure AD门户的来宾用户页面上<a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 管理中心。</a>
-将用户添加到"来宾用户"**列表后**，他们将被添加到"[](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center)来宾用户"列表中的 <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 管理中心。</a>
+将用户添加到"来宾用户"**列表后**，他们将被添加到"[](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center)来宾用户"<a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">列表中的Microsoft 365 管理中心。</a>
 
 请参阅 [批量添加来宾以](/azure/active-directory/b2b/tutorial-bulk-invite) 邀请多个来宾与组织协作。
 

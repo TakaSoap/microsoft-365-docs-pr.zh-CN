@@ -9,7 +9,7 @@ ms.date: 05/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -20,16 +20,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：为 Microsoft 365 测试环境配置联合身份验证。
-ms.openlocfilehash: 1cca1b0b5f7b345d7d9ed5f5cd23f9b742542529
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6553590c06df4caf099c7b4db47d253bd37b39fd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200401"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158030"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>用于 Microsoft 365 测试环境的联合身份
 
-*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版测试环境。*
+*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
 
 Microsoft 365 支持联合标识。也就是说，Microsoft 365 将连接用户转到 Microsoft 365 信任的联合身份验证服务器，而不是自己执行凭据验证。如果用户的凭据正确，联合身份验证服务器会颁发安全令牌，然后客户端将此令牌作为通过身份验证的证明发送给 Microsofte 365。借助联合标识，可以为 Microsoft 365 订阅以及高级身份验证和安全方案卸载和扩展身份验证。
   
@@ -155,7 +155,7 @@ Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
 
-在本地计算机上显示这些命令Azure PowerShell PROXY1 的公共 IP 地址。
+在本地计算机上使用这些命令Azure PowerShell PROXY1 的公共 IP 地址。
   
 ```powershell
 Write-Host (Get-AzPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPAddress
@@ -173,7 +173,7 @@ Add-DnsServerResourceRecordA -Name "fs" -ZoneName corp.contoso.com -AllowUpdateA
   
 生成的配置如下所示：
   
-![添加到 DirSync 的 Web 应用程序代理服务器用于Microsoft 365环境。](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
+![添加到 DirSync 的 Web 应用程序代理服务器Microsoft 365测试环境。](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
 ## <a name="phase-4-create-a-self-signed-certificate-and-configure-adfs1-and-proxy1"></a>阶段 4：创建自签名证书并配置 ADFS1 和 PROXY1
 
@@ -209,7 +209,7 @@ New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
     
 5. 在树窗格中，依次打开“证书(本地计算机)”>“个人”>“证书”。
     
-6. 选择并按住 (或右键单击) 联合身份验证服务 FQDN 导出证书"，选择"所有任务"，然后选择"导出 **"。**
+6. 选择并按住 (或右键单击) 联合身份验证服务 FQDN 导出证书"，选择"所有任务"，然后选择"导出 **"。** 
     
 7. 在"欢迎 **"** 页上，选择"下一 **步"。**
     
@@ -283,9 +283,9 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
     
 4. 在 **"选择计算机"** 中，**选择"完成**"，然后选择"确定 **"。**
     
-5. 在树窗格中，打开"本地计算机 (**证书)**  >  **证书**  >  **"。**
+5. 在树窗格中，打开"本地计算机 (**证书)**  >  **个人**  >  **证书"。**
     
-6. 选择并按住 (或右键单击") **个人**"，选择"**所有** 任务"，然后选择"导入 **"。**
+6. 选择并按住 (或右键单击) **个人**"，选择"所有 **任务**"，然后选择"导入 **"。**
     
 7. 在"欢迎 **"** 页上，选择"下一 **步"。**
     
@@ -351,7 +351,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
   
 1. 在桌面上，双击“Azure AD Connect”。
     
-2. 在"**欢迎使用 Azure AD 连接** 页面上，选择"**配置"。**
+2. 在"**欢迎使用 Azure AD 连接** 页面上，选择"配置 **"。**
     
 3. 在"**其他任务"** 页上，选择 **"更改用户登录"，** 然后选择"下一 **步"。**
     

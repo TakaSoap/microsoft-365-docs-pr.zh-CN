@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee5a8decb78d2f72b796fd3fb2ef15c1da3b0160
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f229aee785066f1cf356a95a3ffd242704c578dc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170971"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154850"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>调查 Microsoft Defender 终结点设备列表中的设备
 
@@ -60,7 +60,7 @@ ms.locfileid: "59170971"
 ![设备视图的图像。](images/specific-device.png)
 
 > [!NOTE]
-> 由于产品限制，设备配置文件在确定"上次查看"时间范围时不会考虑所有网络证据 (如设备页面上以及设备) 。
+> 由于产品限制，在确定"上次查看时间"时间范围时，设备配置文件不会考虑所有网络证据 (如设备页面上所见，) 。
 > 例如，"设备"页中的"上次查看时间"值可能会显示较旧的时间范围，即使计算机时间线中提供了最新的警报或数据。
 
 ## <a name="device-details"></a>设备详细信息
@@ -99,7 +99,7 @@ ms.locfileid: "59170971"
 
 ### <a name="alerts"></a>警报
 
-警报 **选项卡** 提供与设备关联的警报列表。 此列表是警报队列的筛选版本，显示[](alerts-queue.md)警报、严重性 (高、中、低、信息) 、队列 (中的状态、新、正在进行、已解决) 、分类 (未设置、false 警报、真正的警报) 、调查状态、警报类别、解决警报的人和上次活动。 您还可以筛选警报。
+警报 **选项卡** 提供与设备关联的警报列表。 此列表是警报队列的筛选版本，显示[](alerts-queue.md)警报、严重性 (高、中、低、信息) 、队列 (中的状态、新、正在进行、已解决的) 、分类 (未设置、false 警报、真正的警报) 、调查状态、警报类别、解决警报的人和上次活动。 您还可以筛选警报。
 
 ![与设备相关的警报的图像。](images/alerts-device.png)
 
@@ -140,7 +140,7 @@ ms.locfileid: "59170971"
 - 检测到的活动威胁 - 威胁检测在威胁运行时发生
 - 修正失败 - 尝试修正检测到的威胁已调用，但失败
 - 修正成功 - 已停止并清理检测到的威胁
-- 用户绕过的警告 - Windows Defender SmartScreen 警告已消除，并已被用户覆盖
+- 用户绕过的警告 - Windows Defender SmartScreen 警告已取消，并已被用户覆盖
 - 检测到可疑脚本 - 发现有潜在恶意脚本正在运行
 - 警报类别 - 如果事件导致生成警报，则警报类别 ("横向移动"，例如) 警报
 
@@ -154,7 +154,7 @@ ms.locfileid: "59170971"
 
 ### <a name="security-recommendations"></a>安全性建议
 
-**安全建议** 从 Microsoft Defender 针对终结点的威胁和漏洞& [生成](tvm-dashboard-insights.md) 。 选择建议将显示一个面板，您可以在其中查看相关详细信息，如建议说明和与不实施建议相关的潜在风险。 有关详细信息 [，请参阅安全](tvm-security-recommendation.md) 建议。
+**安全建议** 从 Microsoft Defender 针对终结点的威胁和漏洞& [生成](tvm-dashboard-insights.md) 。 选择建议将显示一个面板，您可以在其中查看相关详细信息，如建议说明以及与不实施建议相关的潜在风险。 有关详细信息 [，请参阅安全](tvm-security-recommendation.md) 建议。
 
 ![安全建议选项卡的图像。](images/security-recommendations-device.png)
 
@@ -193,7 +193,7 @@ ms.locfileid: "59170971"
 ![用户详细信息窗格的图像。](images/logged-on-users.png)
 
 > [!NOTE]
-> "最常见的"用户值仅根据已成功以交互方式登录的用户的证据进行计算。
+> "最常用"用户值仅根据已成功以交互方式登录的用户的证据进行计算。
 > 但是，"所有用户"侧窗格将计算各种用户登录数，以便预期在侧窗格中看到更频繁的用户（假设这些用户可能无法交互）。
 
 ### <a name="security-assessments"></a>安全评估

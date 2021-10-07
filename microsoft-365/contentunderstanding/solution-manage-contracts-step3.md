@@ -1,5 +1,5 @@
 ---
-title: 第 3 步。 使用 Power Automate 创建流程以处理合同
+title: 第 3 步。 使用 Power Automate 创建处理合同的流程
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -9,34 +9,34 @@ ms.topic: article
 ms.date: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
+ms.localizationpriority: medium
 ROBOTS: ''
 description: 了解如何使用Power Automate解决方案来创建流程以处理Microsoft 365合同。
-ms.openlocfilehash: 1de8c0c5ed25ee9934077d015f4e66c43e07c7c8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 205a61638f4dcca235e301111fe2028c3a74ed1c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195766"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159588"
 ---
-# <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>步骤 3. 使用 Power Automate 创建流程以处理合同
+# <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>步骤 3. 使用 Power Automate 创建处理合同的流程
 
-已创建合同管理通道，并附加了SharePoint文档库。 下一步是创建一个Power Automate流，以处理您的SharePoint Syntex标识和分类的合同。 可以通过在文档库中创建Power Automate流[SharePoint执行此步骤](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)。
+已创建合同管理通道，并附加了SharePoint文档库。 下一步是创建一个Power Automate流，以处理您的SharePoint Syntex标识和分类的合同。 可以通过在文档库中创建Power Automate流[SharePoint此步骤](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)。
 
 对于合同管理解决方案，您需要创建一个Power Automate流以执行以下操作：
 
--  在合同已由你的SharePoint Syntex分类后，将合同状态更改为 **"正在审阅"。**
+-  在合同已按你的SharePoint Syntex分类后，将合同状态更改为 **"正在审阅"。**
 - 然后，将审核该合同，并批准或拒绝该合同。
 - 对于已批准合同，合同信息将张贴到一个选项卡上，用于付款处理。
 - 对于被拒绝的合同，将通知团队进行进一步分析。 
 
-下图显示了Power Automate管理解决方案的流。
+下图显示了Power Automate管理解决方案的工作流程。
 
 ![Flow显示整个解决方案的图表。](../media/content-understanding/flow-entire-process.png)
 
 ## <a name="prepare-your-contract-for-review"></a>准备合同进行审阅
 
-当合同由文档理解SharePoint Syntex和分类时，Power Automate流将首先将状态更改为 **"正在审阅"。**
+当合同由文档理解SharePoint Syntex和分类时，Power Automate流将首先将状态更改为"正在审阅 **"。**
 
 ![更新状态。](../media/content-understanding/flow-overview.png)
 
@@ -145,13 +145,13 @@ ms.locfileid: "59195766"
 
    ![Flow状态为已批准。](../media/content-understanding/status-approved.png)
 
-- 在此解决方案中，合同数据将添加到" **付款"** 选项卡，以便可以管理付款。 可以扩展此过程，以允许流程提交合同，供第三方财务应用程序（例如，Dynamics CRM (）) 。
+- 在此解决方案中，合同数据将添加到" **付款** "选项卡，以便可以管理付款。 可以扩展此过程，以允许流程提交合同，供第三方财务应用程序 (例如 Dynamics CRM) 。
 
    ![合同已移至"付款"。](../media/content-understanding/for-payout.png)
 
 - 在流中，创建以下项以将已批准合同移动到" **付款"** 选项卡。
 
-   ![Flow"支付"的项。](../media/content-understanding/ready-for-payout.png)
+   ![Flow项目移动到"支付"。](../media/content-understanding/ready-for-payout.png)
 
     若要从卡片获取所需信息的表达式Teams，请使用下表中显示的值。
  
@@ -263,7 +263,7 @@ ms.locfileid: "59195766"
 
 - 在流中，签出合同文件，将状态更改为"已拒绝"，然后重新签入该文件。 
 
-   ![Flow在合同文件中被拒绝。](../media/content-understanding/reject-flow.png)
+   ![Flow在合同文件中拒绝状态。](../media/content-understanding/reject-flow.png)
 
 - 在你的流中，创建一个自适应卡片，指出合约已被拒绝。
 

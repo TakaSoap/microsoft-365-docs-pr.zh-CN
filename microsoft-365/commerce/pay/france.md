@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 71f165611f59c45dd2c6d8fa5a5980264c03ba21
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b0229fb5c609c052f5c09c3a1b080bfdc5d79634
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171432"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155558"
 ---
 # <a name="payment-information-for-france"></a>法国的付款信息
 
@@ -34,7 +34,7 @@ ms.locfileid: "59171432"
 **SWIFT 代码：** 一百万  
 **IBAN 代码：** GB31CITI18500812207591  
 **SORT 代码：185008**  
-**帐户编号：12207591**  
+**帐号：12207591**  
 **帐户名称：** MICROSOFT
 
 如果你有从 2021 年 3 月 1 日至 2021 年 3 月 1 日由 **Microsoft 法国 SAS** 计费的订单和消耗的发票，请使用此银行信息：
@@ -42,7 +42,7 @@ ms.locfileid: "59171432"
 **Bank：** Bank Europe plc  
 **SWIFT 代码：** 一台或多张  
 **IBAN 代码：** IE11CITI99005170000123  
-**帐户号：70000123**  
+**帐户编号：70000123**  
 **帐户名称：** MICROSOFT
 
 从本地 Microsoft 子公司颁发的发票使用标准 VAT/销售税/GST 费率颁发，并被视为用于 VAT/销售税/GST 的国内服务提供。

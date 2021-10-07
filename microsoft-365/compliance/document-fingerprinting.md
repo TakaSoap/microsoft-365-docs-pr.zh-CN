@@ -10,14 +10,14 @@ ms.topic: article
 search.appverid: MET150
 ms.service: exchange-online
 ms.collection: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 组织中的信息工作人员每天会处理大量的敏感信息。 "文档指纹"可识别贵组织中使用的标准表单，以便于您保护此信息。 本主题介绍文档指纹背后的概念，以及如何使用 PowerShell 创建文档指纹。
-ms.openlocfilehash: 392b42e779de249dddc0acb4c7c757a009f9f743
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6661fd52bfe94ab23a38eaa42eca45a3e609c565
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175525"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155042"
 ---
 # <a name="document-fingerprinting"></a>文档指纹
 
@@ -25,7 +25,7 @@ ms.locfileid: "59175525"
   
 ## <a name="basic-scenario-for-document-fingerprinting"></a>文档指纹的基本方案
 
-文档指纹是一项数据丢失防护 (DLP) 功能，可将标准表单转换为敏感信息类型，您可以在 DLP 策略的规则中使用该类型。 例如，您可以基于空白父模板来创建文档指纹，然后创建 DLP 策略，用于检测和阻止所有包含敏感内容的传出父模板。 （可选）您可以设置策略提示[](use-notifications-and-policy-tips.md)以通知发件人他们可能正在发送敏感信息，并且发件人应验证收件人是否有资格接收专利。 此过程与组织中使用的任何基于文本的表单一起使用。 您可以上载的其他表单示例包括：
+文档指纹是一项数据丢失防护 (DLP) 功能，可将标准表单转换为敏感信息类型，可在 DLP 策略的规则中使用该类型。 例如，您可以基于空白父模板来创建文档指纹，然后创建 DLP 策略，用于检测和阻止所有包含敏感内容的传出父模板。 （可选）您可以设置策略提示[](use-notifications-and-policy-tips.md)以通知发件人他们可能正在发送敏感信息，并且发件人应验证收件人是否有资格接收专利。 此过程与组织中使用的任何基于文本的表单一起使用。 您可以上载的其他表单示例包括：
   
 - 政府表单
 - 符合《健康保险可携性与责任法案》 (HIPAA) 的表单  
@@ -53,7 +53,7 @@ ms.locfileid: "59175525"
   
 ### <a name="supported-file-types"></a>支持的文件类型
 
-文档指纹支持在邮件流规则中支持的相同文件类型 (也称为传输规则) 。 有关受支持的文件类型的列表，请参阅支持的邮件 [流规则内容检查的文件类型](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)。 关于文件类型的一个快速说明：邮件流规则或文档指纹均支持 .dotx 文件类型，这可能会令人困惑，因为这是 Word 中的模板文件。 当您在本主题或其他文档指纹主题中看到"template"一词时，它是指您构建为标准模板的文档，而非模板文件类型。
+文档指纹支持邮件流规则中支持的相同文件类型 (传输规则) 。 有关受支持的文件类型的列表，请参阅支持的邮件 [流规则内容检查的文件类型](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)。 关于文件类型的一个快速说明：邮件流规则或文档指纹均支持 .dotx 文件类型，这可能会令人困惑，因为这是 Word 中的模板文件。 当您在本主题或其他文档指纹主题中看到"template"一词时，它是指您构建为标准模板的文档，而非模板文件类型。
   
 #### <a name="limitations-of-document-fingerprinting"></a>文档指纹的限制
 
@@ -91,7 +91,7 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-您还可以使用邮件流规则中的数据分类规则包Exchange Online，如以下示例所示。 若要运行此命令，首先需要[连接Exchange Online PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell) 另请注意，规则包需要一些时间从安全与合规中心同步到Exchange &amp; 中心。
+您还可以使用邮件流规则中的数据分类规则包Exchange Online，如以下示例所示。 若要运行此命令，首先需要连接[Exchange Online PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell) 另请注意，规则包需要一些时间从安全与合规中心同步到Exchange &amp; 中心。
   
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}

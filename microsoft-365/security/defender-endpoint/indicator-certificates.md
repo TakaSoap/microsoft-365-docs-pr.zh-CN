@@ -3,26 +3,24 @@ title: 创建基于证书的指示器
 ms.reviewer: ''
 description: 根据定义实体的检测、防范和排除的证书创建指示器。
 keywords: ioc， 证书， 证书， 管理， 允许， 阻止， 阻止， 清理， 恶意， 文件哈希， ip 地址， url， 域
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b471bcfa1c4a42ddf5c49c2a0bc2129c99fd9297
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 0e74fd5a0ffc62d077f9110b014af5d3b0813afd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043343"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154838"
 ---
 # <a name="create-indicators-based-on-certificates"></a>创建基于证书的指示器
 
@@ -44,15 +42,15 @@ ms.locfileid: "60043343"
 
 在创建证书指示器之前，了解以下要求很重要：
 
-- 如果你的组织使用基于云的保护Windows Defender 防病毒启用基于云的保护，则此功能可用。 有关详细信息，请参阅 [管理基于云的保护](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+- 如果你的组织使用基于云的保护Windows Defender 防病毒则此功能可用。 有关详细信息，请参阅 [管理基于云的保护](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 - 反恶意软件客户端版本必须为 4.18.1901.x 或更高版本。
-- 在 Windows 10 版本 1703 或更高版本、Windows Server 2016、2019 和 Windows Server 2022 上支持。
+- 在 Windows 11 Windows 10 版本 1703 或更高版本、Windows server 2016、2019 和 Windows Server 2022 上支持。
 - 病毒和威胁防护定义必须最新的。
 - 此功能当前支持输入 。CER 或 。PEM 文件扩展名。
 
 > [!IMPORTANT]
 >
-> - 有效的叶证书是具有有效证书路径的签名证书，必须与 Microsoft 信任的 CA (根证书) 证书颁发机构。 或者，只要自定义 (自签名) 证书受客户端信任，就可以使用自定义 (根 CA 证书安装在本地计算机"受信任的根证书颁发机构") 下。
+> - 有效的叶证书是具有有效证书路径的签名证书，必须与 Microsoft 信任的 CA (根证书) 证书颁发机构。 或者，只要自定义 (自签名) 证书受客户端 (根 CA 证书信任，该证书就可以使用在本地计算机"受信任的根证书颁发机构") 下。
 > - 允许/阻止证书 IOC 的子级或父级不包括在允许/阻止 IoC 功能中，仅支持叶证书。
 > - 无法阻止 Microsoft 签名的证书。
 
@@ -61,7 +59,7 @@ ms.locfileid: "60043343"
 > [!IMPORTANT]
 > 创建和删除证书 IoC 可能需要 3 小时。
 
-1. 在导航窗格中，**选择** \> **"设置"** 下 (\> 终结点) 。 
+1. 在导航窗格中，选择"设置 \> **规则"** 下 (\> 终结点) 。 
 
 2. 选择 **"添加指示器"。**
 

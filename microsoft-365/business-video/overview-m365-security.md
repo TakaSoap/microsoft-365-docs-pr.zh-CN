@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解适用于企业Microsoft 365安全功能。
-ms.openlocfilehash: 686ced4c4612470d25ab3a39fdd824b576bbeab7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 118c69356e7e12bfab69770f6ee1dc15bd58525e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171179"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160676"
 ---
 # <a name="overview-of-security"></a>安全性概述
 
@@ -39,7 +39,7 @@ Microsoft 365 商业高级版提供了威胁防护、数据保护和设备管理
 
 ## <a name="threat-protection"></a>威胁防护
 
-Microsoft 365 商业高级版包括[Office 365高级威胁防护 (ATP) ，](safe-links.md)这是一种基于云的电子邮件筛选服务，可保护你免受恶意软件、勒索软件、有害的链接等的攻击。 ATP 保险箱 链接可保护你免受电子邮件或文档内容中恶意OFFICE URL。 ATP 保险箱 附件可保护您免受附加到邮件或文档的恶意软件和病毒的侵害。
+Microsoft 365 商业高级版包括[Office 365高级威胁防护 (ATP) ，](safe-links.md)这是一种基于云的电子邮件筛选服务，可保护你免受恶意软件、勒索软件、有害的链接等的攻击。 ATP 保险箱 链接可保护你免受电子邮件或文档链接Office URL。 ATP 保险箱 附件可保护您免受附加到邮件或文档的恶意软件和病毒的侵害。
 
 [多重身份验证 (MFA ](turn-on-mfa.md)) 或两步验证，要求你提供第二种形式的身份验证（如验证码）以确认身份，然后才能访问资源。
 
@@ -57,7 +57,7 @@ Microsoft 365 商业高级版包括[Office 365高级威胁防护 (ATP) ，](safe
 
 ## <a name="device-management"></a>设备管理
 
-Microsoft 365 商业高级版高级设备管理功能，可监视和控制用户可以使用已注册设备执行哪些操作。 这些功能包括条件访问、移动设备管理 [ (MDM) 、BitLocker ](/microsoft-365/admin/basic-mobility-security/manage-enrolled-devices)和自动更新。
+Microsoft 365 商业高级版高级设备管理功能，可监视和控制用户可以使用已注册设备执行哪些操作。 这些功能包括条件访问、移动设备管理 (MDM) 、BitLocker 和自动更新。 [ ](/microsoft-365/admin/basic-mobility-security/manage-enrolled-devices)
 
 可以使用条件访问策略对某些用户和任务要求额外的安全措施。 例如，你可以要求使用 [MFA ](/microsoft-365/business-video/turn-on-mfa) (多重) 或阻止不支持条件访问的客户端。
 

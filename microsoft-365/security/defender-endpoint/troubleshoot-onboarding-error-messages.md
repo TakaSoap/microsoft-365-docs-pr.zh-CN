@@ -2,26 +2,24 @@
 title: 载入问题和错误消息疑难解答
 description: 完成 Microsoft Defender for Endpoint 的安装时载入问题和错误消息疑难解答。
 keywords: 疑难解答， Azure Active Directory， 载入， 错误消息， 错误消息， microsoft defender for endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: a80f30d132706633232713f1ba4b30fa1e64b800
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 10ec4562063c7352b337cdb6f5d11b76985ae19d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010137"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159218"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>解决订阅和门户访问问题
 
@@ -39,14 +37,14 @@ ms.locfileid: "60010137"
 
 ## <a name="no-subscriptions-found"></a>未找到订阅
 
-如果在访问 Microsoft 365 Defender收到"未找到订阅"消息，这意味着用于登录门户的用户的 Azure Active Directory (Azure AD) 没有 Microsoft Defender for Endpoint 许可证。
+如果在访问 Microsoft 365 Defender收到"未找到订阅"消息，这意味着用于登录门户的用户的 Azure Active Directory (Azure AD) 没有 Microsoft Defender 终结点许可证。
 
 可能的原因：
 
 - Windows E5 和 Office E5 许可证是分开的。
 - 许可证已购买，但没有预配到此 Azure AD 实例。
   - 这可能是许可证预配问题。
-  - 可能是您无意中将许可证预配到与用于Microsoft Azure AD身份验证的许可证不同。
+  - 这可能是您无意中将许可证预配到与Microsoft Azure AD身份验证所使用的许可证不同的证书。
 
 对于这两种情况，你应联系 Microsoft 支持部门，地址为 [适用于终结点的一](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) 般 Microsoft Defender 或 [批量许可证支持](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)。
 

@@ -1,7 +1,7 @@
 ---
 title: 确定事件优先级Microsoft 365 Defender
 description: 了解如何筛选来自事件队列中的事件Microsoft 365 Defender
-keywords: 事件， 队列， 概述， 设备， 标识， 用户， 邮箱， 电子邮件， 事件， 分析， 响应
+keywords: 事件， 队列， 概述， 设备， 标识， 用户， 邮箱， 电子邮件， 事件， 分析， 响应， 会审
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5436494d8d94097e15f67e3b568727fe510113ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5f8a1be949c922a98d52b7d84ccc19e2ed3f9913
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175354"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154610"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定事件优先级Microsoft 365 Defender
 
@@ -36,11 +36,11 @@ ms.locfileid: "59175354"
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender应用相关分析，将不同产品的相关警报和自动调查聚合到事件中。 Microsoft 365 Defender在产品的整个套件中具有的端到端可见性Microsoft 365 Defender仅可以标识为恶意的活动触发唯一警报。 此视图为安全分析师提供了更广泛的攻击案例，帮助他们更好地了解并处理整个组织的复杂威胁。
+Microsoft 365 Defender相关分析，将不同产品的相关警报和自动调查聚合到事件中。 Microsoft 365 Defender在产品的整个套件中具有的端到端可见性Microsoft 365 Defender仅可以标识为恶意的活动触发唯一警报。 此视图为安全分析师提供了更广泛的攻击案例，帮助他们更好地了解并处理整个组织的复杂威胁。
 
-**事件队列** 显示跨设备、用户和邮箱创建的事件集合。 它可以帮助你对事件进行排序，从而确定优先级并制定明智的网络安全响应决策。 
+**事件队列** 显示跨设备、用户和邮箱创建的事件集合。 它可以帮助你对事件进行排序，从而确定优先级并制定明智的网络安全响应决策。 这也称为事件会审。
 
-在 &快速启动 Microsoft 365 Defender 门户 (>**事件** 和事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
+在快速启动 Microsoft 365 Defender (**>** security.microsoft.com) 时，你可以从事件&警报和事件Microsoft 365 Defender [事件](https://security.microsoft.com)队列。 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。":::
 
@@ -48,7 +48,7 @@ Microsoft 365 Defender应用相关分析，将不同产品的相关警报和自�
 
 默认情况下，事件门户中的事件Microsoft 365 Defender显示过去六个月看到的事件。 最近的事件位于列表顶部，以便你可以先看到它。
 
-事件队列具有可自定义 (选择"选择) 列"，可让你查看事件或受影响实体的不同特征。 这可以帮助您就事件的优先顺序做出明智的决策进行分析。
+事件队列具有可自定义 (请选择"选择) 列"，以让你查看事件或受影响实体的不同特征。 这可以帮助您就事件的优先顺序做出明智的决策进行分析。
 
 为了一目了然，自动事件命名根据警报属性（如受影响的终结点数量、受影响的用户数、检测源或类别）生成事件名称。 借助此功能，可以快速了解事件的范围。
 
@@ -61,7 +61,7 @@ Microsoft 365 Defender应用相关分析，将不同产品的相关警报和自�
 
 ## <a name="available-filters"></a>可用筛选器
 
-从默认事件队列中，可以选择"筛选器"以查看"筛选器"窗格，可以从中查看一组已筛选的事件。 下面是一个示例。
+从默认事件队列中，可以选择"筛选器"以查看"筛选器"窗格，可以从中查看一组已筛选的事件。 以下是示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="事件队列的筛选器窗格示例。":::
 
@@ -98,7 +98,7 @@ Microsoft 365 Defender应用相关分析，将不同产品的相关警报和自�
 - 具有特定关联威胁的事件
 - 特定主角的事件
 
-编译有用的筛选器视图列表并存储为 URL 后，就可以使用它来快速处理队列中的事件并设置其优先级，并管理它们以用于后续分配和分析。 [](manage-incidents.md)
+编译有用的筛选器视图列表并存储为 URL 后，就可以使用它来快速处理队列中的事件并设置其优先级，并管理这些事件以用于后续分配和分析。 [](manage-incidents.md)
 
 ## <a name="next-steps"></a>后续步骤
 

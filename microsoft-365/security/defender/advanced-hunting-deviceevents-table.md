@@ -1,6 +1,6 @@
 ---
 title: 高级搜寻架构中的 DeviceEvents 表
-description: 了解高级搜寻架构的 DeviceEvents (设备事件) 防病毒、防火墙和其他事件类型
+description: 了解高级搜寻架构的 DeviceEvents) 设备事件 (中的防病毒、防火墙和其他事件类型
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 安全事件， 防病毒， 防火墙， 攻击防护， DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 63a2d41714329918192caccd384587a4e4f04112
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 747b299ed391ac8ee4a96903e58a64dba6fb3683
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170938"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157730"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "59170938"
 高级搜寻架构中的杂项设备事件或表包含有关各种事件类型的信息，包括安全控件触发的事件，如Windows Defender 防病毒 `DeviceEvents` 和 Exploit Protection。 [](advanced-hunting-overview.md) 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关表支持的事件类型 () ，请使用安全中心中提供的内置架构 `ActionType` 参考。
+> 有关表支持的事件 (值) ，请使用安全中心中提供的内置架构 `ActionType` 参考。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -63,7 +63,7 @@ ms.locfileid: "59170938"
 | `ProcessId` | int | 新 (的进程) PID 进程 ID |
 | `ProcessCommandLine` | string | 用于创建新过程的命令行 |
 | `ProcessCreationTime` | datetime | 创建过程的日期和时间 |
-| `ProcessTokenElevation` | string | 指示是否存在用户访问控制的令牌类型 (UAC) 权限提升应用于新创建的进程 |
+| `ProcessTokenElevation` | string | 指示是否存在用户访问控制的令牌类型 (UAC) 权限提升应用于新创建的过程 |
 | `LogonId` | string | 登录会话的标识符。 此标识符仅在重新启动之间的同一计算机上是唯一的 |
 | `RegistryKey` | string | 已记录操作所应用到的注册表项 |
 | `RegistryValueName` | string | 已记录操作所应用到的注册表值的名称 |
@@ -74,9 +74,9 @@ ms.locfileid: "59170938"
 | `LocalPort` | int | 通信过程中使用的本地计算机上 TCP 端口 |
 | `FileOriginUrl` | string | 下载文件的 URL |
 | `FileOriginIP` | string | 从其中下载文件的 IP 地址 |
-| `InitiatingProcessSHA1` | string | 启动事件 (映像文件) SHA-1 |
+| `InitiatingProcessSHA1` | string | 启动事件 (映像) SHA-1 |
 | `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
-| `InitiatingProcessMD5` | string | 启动事件的进程和 (文件的 MD5) 哈希 |
+| `InitiatingProcessMD5` | string | 启动事件的进程 (MD5) 文件哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
 | `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
 | `InitiatingProcessFolderPath` | string | 包含启动事件 (进程) 文件的文件夹 |
@@ -92,7 +92,7 @@ ms.locfileid: "59170938"
 | `InitiatingProcessVersionInfoProductName` | string | 进程版本信息中的产品名称 (负责) 文件 |
 | `InitiatingProcessVersionInfoProductVersion` | string | 进程版本信息中的产品版本 (负责) 文件 |
 |` InitiatingProcessVersionInfoInternalFileName` | string | 进程版本信息中的内部文件名 (负责) 文件 |
-| `InitiatingProcessVersionInfoOriginalFileName` | string | 负责事件的进程版本信息 (文件) 文件的原始文件名 |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 进程版本信息的原始文件名 (负责) 文件 |
 | `InitiatingProcessVersionInfoFileDescription` | string | 负责事件的进程版本信息 (映像) 说明 |
 | `InitiatingProcessParentId` | int | 进程 ID (PID) 生成负责事件的进程的父进程的 PID |
 | `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |

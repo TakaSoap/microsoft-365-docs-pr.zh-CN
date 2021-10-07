@@ -1,6 +1,6 @@
 ---
 title: 获取事件 API
-description: 了解如何使用"获取事件"API 获取事件和事件Microsoft 365 Defender。
+description: 了解如何使用"获取事件"API 获取事件中的单个Microsoft 365 Defender。
 keywords: api， 图形 api， 受支持的 api， 获取， 文件， 哈希
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6f1e59dd653ef0718797a4b71e67c3607b39824c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8861dc3752d2c4cc798bc83475f6a51f8245191a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201010"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159050"
 ---
 # <a name="get-incident-information-api"></a>获取事件信息 API
 
@@ -50,8 +50,8 @@ ms.locfileid: "59201010"
 
 权限类型|权限|权限显示名称
 ---|---|---
-应用程序|Incident.Read.All|"读取所有事件"
-应用程序|Incident.ReadWrite.All|"读取和写入所有事件"
+Application|Incident.Read.All|"读取所有事件"
+Application|Incident.ReadWrite.All|"读取和写入所有事件"
 委派（工作或学校帐户）|Incident.Read|"读取事件"
 委派（工作或学校帐户）|Incident.ReadWrite|"读取和写入事件"
 
@@ -72,7 +72,7 @@ GET .../api/incidents/{id}
 
 名称|类型|说明
 ---|---|---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

@@ -7,7 +7,7 @@ ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -16,23 +16,23 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 了解如何使用 PowerShell 随着时间的推移，使用分步迁移将内容从源电子邮件系统Microsoft 365。
-ms.openlocfilehash: 0ec8aca643730b063ee75ead69908959a992d2dc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 66e91b4480e4433f610e627d1cf4e64f439b929f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195700"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154826"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>使用 PowerShell 分步迁移到 Microsoft 365
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-您可以使用分步迁移将用户邮箱的内容从源电子邮件系统Microsoft 365迁移后进行迁移。
+您可以使用分步迁移将用户邮箱的内容从源电子邮件系统Microsoft 365迁移迁移。
 
 本文将指导你完成使用 PowerShell 进行分步电子邮件迁移Exchange Online任务。 有关分 [步电子邮件迁移](/Exchange/mailbox-migration/what-to-know-about-a-staged-migration)您需要了解的内容主题概述了迁移过程。 当您了解本文的内容之后，则可以借此机会开始将一个电子邮件系统中的邮箱迁移到另一个电子邮件系统。
 
 > [!NOTE]
-> 您还可以使用 Exchange 管理中心来执行暂存迁移。 请参阅[执行电子邮件到电子邮件的Microsoft 365。](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration)
+> 您还可以使用 Exchange 管理中心来执行暂存迁移。 请参阅[执行电子邮件到电子邮件的分步Microsoft 365。](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
@@ -75,7 +75,7 @@ ms.locfileid: "59195700"
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
- **设置权限** 用于连接到内部部署 Exchange 组织 (（也称为迁移管理员) ）的本地用户帐户必须具有访问要迁移到 Microsoft 365 内部部署邮箱的必要权限。 当您在此过程的稍后步骤 [3：](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md#BK_Endpoint) 创建迁移终结点 (创建迁移终结点来连接到您的电子邮件系统时，将) 。
+ **设置权限** 用于连接到内部部署 Exchange 组织 (（也称为迁移管理员) ）的本地用户帐户必须具有必要的权限才能访问要迁移到 Microsoft 365 的本地邮箱。 当您在此过程的稍后步骤 [3：](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md#BK_Endpoint) 创建迁移终结点 (创建迁移终结点来连接到您的电子邮件系统时，会) 。
 
 要迁移邮箱，管理员必须拥有以下权限集之一：
 
@@ -97,14 +97,14 @@ ms.locfileid: "59195700"
 
 创建用户以后，您需要对他们授予许可。您可以在创建用户之后的 30 天内添加许可证。有关添加许可证的步骤，请参阅[步骤 8：完成迁移后任务](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md#BK_Postmigration)。
 
- 可以使用 Microsoft Azure Active Directory (Azure AD) 同步工具或 Microsoft Azure AD 同步服务在 Microsoft 365 中同步和创建本地Microsoft 365。 将邮箱迁移到 Microsoft 365 后，您可以在内部部署组织中管理用户帐户，并且这些用户帐户将与组织Microsoft 365同步。 有关更多信息，请参阅[目录集成](/previous-versions/azure/azure-services/jj573653(v=azure.100))。
+ 可以使用 Microsoft Azure Active Directory (Azure AD) 同步工具或 Microsoft Azure AD 同步服务在 Microsoft 365 中同步和创建本地Microsoft 365。 将邮箱迁移到 Microsoft 365后，您可以在内部部署组织中管理用户帐户，并且这些用户帐户会与 Microsoft 365 组织同步。 有关更多信息，请参阅[目录集成](/previous-versions/azure/azure-services/jj573653(v=azure.100))。
 
 ### <a name="step-2-create-a-csv-file-for-a-staged-migration-batch"></a>步骤 2：为暂存迁移批处理创建 CSV 文件
 
-确定要迁移到 Microsoft 365 本地邮箱的用户后，可使用逗号分隔值 (CSV) 文件创建迁移批处理。 CSV 文件（由用户Microsoft 365运行迁移）的每一行都包含有关本地邮箱的信息。
+确定要迁移到 Microsoft 365 本地邮箱的用户后，使用逗号分隔值 (CSV) 文件创建迁移批处理。 CSV 文件（由用户Microsoft 365运行迁移）的每一行都包含有关本地邮箱的信息。
 
 > [!NOTE]
-> 对于可以使用分步迁移迁移到 Microsoft 365的数量没有限制。 迁移批处理的 CSV 文件最多可包含 2,000 行。 若要迁移 2000 个以上邮箱，请创建额外的 CSV 文件并使用每个文件来创建新的迁移批处理。
+> 对于可以使用分步迁移迁移到邮箱的邮箱数没有Microsoft 365限制。 迁移批处理的 CSV 文件最多可包含 2,000 行。 若要迁移 2000 个以上邮箱，请创建额外的 CSV 文件并使用每个文件来创建新的迁移批处理。
 
  **支持的属性**
 
@@ -112,13 +112,13 @@ ms.locfileid: "59195700"
 
 |**属性**|**说明**|**是否必需？**|
 |:-----|:-----|:-----|
-|EmailAddress  <br/> |为内部部署邮箱指定一个主要的 SMTP 电子邮件地址，例如，pilarp@contoso.com。  <br/> 对内部部署邮箱使用主 SMTP 地址，而不是来自内部部署Microsoft 365。 例如，如果内部部署域名为 contoso.com 但 Microsoft 365 电子邮件域名为 service.contoso.com，则您将对 CSV 文件中的电子邮件地址使用 contoso.com 域名。  <br/> |必需  <br/> |
-|密码  <br/> |要设置的新邮箱Microsoft 365密码。 应用于组织的任何密码Microsoft 365也适用于 CSV 文件中包含的密码。  <br/> |可选  <br/> |
+|EmailAddress  <br/> |为内部部署邮箱指定一个主要的 SMTP 电子邮件地址，例如，pilarp@contoso.com。  <br/> 对内部部署邮箱使用主 SMTP 地址，而不是来自内部部署Microsoft 365。 例如，如果本地域名为 contoso.com 但 Microsoft 365 电子邮件域名为 service.contoso.com，那么对于 CSV 文件中的电子邮件地址，可以使用 contoso.com 域名。  <br/> |必需  <br/> |
+|密码  <br/> |要设置的新邮箱Microsoft 365密码。 适用于组织的任何密码Microsoft 365也适用于 CSV 文件中包含的密码。  <br/> |可选  <br/> |
 |ForceChangePassword  <br/> |指定用户首次登录到其新邮箱时是否必须Microsoft 365密码。 对此参数的值使用 **True** 或 **False** 。 <br/> > [!NOTE]> 如果已通过在本地组织中部署 Active Directory 联合身份验证服务 (AD FS) 或更高版本来实现单一登录 (SSO) 解决方案，必须将 **ForceChangePassword** 属性值设为 **False**。          |可选  <br/> |
 
  **CSV 文件格式**
 
-以下是 CSV 文件格式的示例。 本示例中，将三个本地邮箱迁移到Microsoft 365。
+以下是 CSV 文件格式的示例。 本示例中，将三个内部部署邮箱迁移到Microsoft 365。
 
 CSV 文件的第一行（即标题行）列出了在后续行中指定的属性（或字段）的名称。每个属性名称都用逗号分隔开。
 
@@ -200,7 +200,7 @@ Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 ### <a name="step-5-convert-on-premises-mailboxes-to-mail-enabled-users"></a>步骤 5：将内部部署邮箱转换为启用邮件的用户
 <a name="BK_Endpoint"> </a>
 
-成功迁移一批邮箱以后，您需要某种方法使用户可以访问他们的邮件。 其邮箱已迁移的用户现在具有一个内部部署邮箱和一个Microsoft 365。 拥有邮箱的用户Microsoft 365将停止接收其本地邮箱中的新邮件。
+成功迁移一批邮箱以后，您需要某种方法使用户可以访问他们的邮件。 其邮箱已迁移的用户现在具有一个本地邮箱和一个Microsoft 365。 拥有邮箱的用户Microsoft 365将停止接收其本地邮箱中的新邮件。
 
 由于您尚未完成迁移，因此您尚未准备好指示所有用户Microsoft 365发送电子邮件。 那么，可以为这些拥有两个邮箱的用户做些什么呢？ 您可以做的是更改您已迁移到邮件启用的用户的内部部署邮箱。 当您从邮箱更改为启用邮件的用户时，您可以指示用户Microsoft 365电子邮件，而不是访问其本地邮箱。
 
@@ -239,7 +239,7 @@ Get-MigrationBatch StagedBatch1
 ### <a name="step-8-complete-post-migration-tasks"></a>步骤 8：完成迁移后任务
 <a name="BK_Postmigration"> </a>
 
-- **创建自动发现 DNS 记录，以便用户可以轻松地访问他们的邮箱。** 在所有内部部署邮箱迁移到 Microsoft 365 后，您可以为 Microsoft 365 组织配置自动发现 DNS 记录，以使用户能够使用 Outlook 和移动客户端轻松连接到其新的 Microsoft 365 邮箱。 这一新的自动发现 DNS 记录必须使用相同的命名空间，该命名空间用于Microsoft 365组织。 例如，如果您的基于云的命名空间是 cloud.contoso.com，那么您需要创建的自动发现 DNS 记录是 autodiscover.cloud.contoso.com。
+- **创建自动发现 DNS 记录，以便用户可以轻松地访问他们的邮箱。** 在所有内部部署邮箱迁移到 Microsoft 365 后，您可以为 Microsoft 365 组织配置自动发现 DNS 记录，以使用户能够使用 Outlook 和移动客户端轻松连接到其新的 Microsoft 365 邮箱。 这一新的自动发现 DNS 记录必须使用相同的命名空间，该命名空间用于 Microsoft 365 组织。 例如，如果您的基于云的命名空间是 cloud.contoso.com，那么您需要创建的自动发现 DNS 记录是 autodiscover.cloud.contoso.com。
 
     Microsoft 365使用 CNAME 记录为客户端和移动客户端Outlook自动发现服务。 自动发现 CNAME 记录必须包含以下信息：
 
@@ -249,7 +249,7 @@ Get-MigrationBatch StagedBatch1
 
     有关详细信息，请参阅添加 [DNS 记录以连接你的域](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
 
-- **停止使用内部部署 Exchange 服务器。** 在验证所有电子邮件是否直接路由到 Microsoft 365 邮箱，并且不再需要维护内部部署电子邮件组织或不用计划实施 SSO 解决方案后，可以从服务器中卸载 Exchange 并删除内部部署 Exchange 组织。
+- **停止使用内部部署 Exchange 服务器。** 确认所有电子邮件都直接路由到 Microsoft 365 邮箱，并且不再需要维护内部部署电子邮件组织或不用计划实施 SSO 解决方案后，可以从服务器中卸载 Exchange 并删除内部部署 Exchange 组织。
 
     有关详细信息，请参阅以下资源：
 

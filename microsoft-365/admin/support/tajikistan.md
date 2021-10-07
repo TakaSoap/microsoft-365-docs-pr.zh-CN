@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1ce0b30788647b807f6f6349337e4086a64432ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0af015d521bdd7ef2be863a7c715c361cd2f3397
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170856"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160972"
 ---
 # <a name="contact-support-for-tajikistan"></a>联系针对哈萨克斯坦的支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "59170856"
 ## <a name="phone-number"></a>电话号码
 +7 499 922 86 23
 
-## <a name="hours"></a>小时
+## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
 俄语：Mon-Fri上午 10 点到下午 7 点

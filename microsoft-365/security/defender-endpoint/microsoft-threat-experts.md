@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d399f8a09e54f2fb904f401a46a856659d242db3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5413268be1537886d75e29588e32a75720a0ee69
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201153"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157898"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 威胁专家
 
@@ -36,18 +36,18 @@ ms.locfileid: "59201153"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-Microsoft 威胁专家是一项托管威胁搜寻服务，可为安全操作中心 (SOC) 提供专家级别的监视和分析，以帮助他们确保不会错过独特环境中的关键威胁。
+Microsoft 威胁专家 是一项托管威胁搜寻服务，可为安全操作中心 (SOC) 提供专家级别的监视和分析，以帮助它们确保不会错过独特环境中的关键威胁。
 
 此托管威胁搜寻服务通过以下两项功能提供专家驱动的见解和数据：目标攻击通知和按需访问专家。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 > [!NOTE]
 > 在应用托管威胁搜寻服务之前，与 Microsoft 技术服务提供商和帐户团队讨论资格要求。
 
-如果你是适用于终结点的 Microsoft Defender 客户，则需要申请 Microsoft 威胁专家 **-** 目标攻击通知，以获得有助于识别环境中最重要的威胁的特殊见解和分析，以便快速响应它们。
+如果你是适用于终结点的 Microsoft Defender 客户，则需要申请 Microsoft 威胁专家 **-** 目标攻击通知，获取特殊见解和分析，帮助识别环境中最重要的威胁，以便快速响应它们。
 
-若要注册Microsoft 威胁专家 - 目标攻击通知权益，请转到设置终结点常规高级Microsoft 威胁专家 \>  \>  \>  \> **- 要应用的目标攻击** 通知。 接受后，你将受益于定向攻击通知。
+若要注册 Microsoft 威胁专家 - 目标攻击通知权益，请转到设置终结点常规高级Microsoft 威胁专家 \>  \>  \>  \> **- 要应用的目标攻击** 通知。 接受后，你将受益于定向攻击通知。
 
 联系你的客户团队或 Microsoft 代表，订阅 Microsoft 威胁专家 **-** 专家按需咨询我们的威胁专家，了解组织面临的相关检测和对手。
 

@@ -8,19 +8,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: 7d3d408e07790ef0dc095b57dcd84b644dfe655c
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: cac2cb06478d115b28163cb8c0aa6575d900be93
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124669"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158078"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>使用Windows载入设备
 
@@ -49,15 +49,15 @@ ms.locfileid: "60124669"
     3. 在"**部署方法"** 字段中，选择"**组策略"。**
     4. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个称为 *OptionalParamsPolicy* 的文件夹和文件 *WindowsDefenderATPOnboardingScript.cmd*。
+2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个称为 *OptionalParamsPolicy* 的文件夹和 *文件 WindowsDefenderATPOnboardingScript.cmd*。
 
 3. 若要创建新的 GPO，请打开组策略管理控制台 [ (](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) GPMC) ，右键单击要配置的组策略对象，**然后单击新建。** 在显示的对话框中输入新 GPO 的名称，然后单击"确定 **"。**
 
-4. 打开组策略管理控制台 [ (](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) GPMC) ，右键单击要配置的组策略对象 (GPO) 然后单击 **编辑。**
+4. 打开 [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)GPMC (组策略管理) ，右键单击要配置的组策略对象 () GPO"，然后单击"编辑 **"。**
 
 5. 在组 **策略管理编辑器中**，转到"**计算机配置**"，然后转到"**首选项**"，然后转到"**控制面板设置"。**
 
-6. 右键单击 **计划任务**，指向 **新建**，然后单击即时任务 (**至少Windows 7)**。
+6. 右键单击 **计划任务**，指向新建 **，然后单击** 即时任务 (**至少Windows 7)**。
 
 7. 在打开 **的任务** 窗口中，转到常规 **选项卡**。在 **"安全选项"** 下，单击 **"更改用户或组**"，然后键入"系统"，然后单击"**检查名称**"，然后单击"确定 **"。** NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。
 
@@ -69,7 +69,7 @@ ms.locfileid: "60124669"
 
 11. 选择 **"确定** "并关闭任何打开的 GPMC 窗口。
 
-12. 若要将 GPO 链接到组织单位 (OU) ，请右键单击并选择"链接现有 **GPO"。** 在显示的对话框中，选择要链接的组策略对象。 单击“**确定**”。
+12. 若要将 GPO 链接到组织单位 (OU) ，请右键单击并选择"链接 **现有 GPO"。** 在显示的对话框中，选择要链接的组策略对象。 单击“**确定**”。
 
 > [!TIP]
 > 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的适用于终结点 [设备的 Defender](run-detection-test.md)运行检测测试。
@@ -78,7 +78,7 @@ ms.locfileid: "60124669"
 
 对于每个设备，你可以说明当通过请求提交文件进行深入分析Microsoft 365 Defender是否可以从设备收集示例。
 
-可以使用组策略 (GP) 配置设置，如深入分析功能中使用的示例共享的设置。
+可以使用组策略 (GP) 配置设置，例如深入分析功能中使用的示例共享的设置。
 
 ### <a name="configure-sample-collection-settings"></a>配置示例集合设置
 
@@ -193,7 +193,7 @@ Policy|设置
 > 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
 
 1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
-    1. 在导航窗格中，选择 **"设置** \>  \> **终结点设备管理** \> **""载出"。**
+    1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **""载出"。**
     2. 选择Windows 10或Windows 11 作为操作系统。
     3. 在"**部署方法"** 字段中，选择"**组策略"。**
     4. 单击 **下载程序包** 并保存.zip文件。
@@ -206,7 +206,7 @@ Policy|设置
 
 5. 右键单击 **"计划任务"，** 指向 **"新建"，** 然后单击"**立即任务"。**
 
-6. 在打开 **的任务** 窗口中，转到常规 **选项卡** 。在"安全选项"下， ("BUILTIN\SYSTEM **) "下选择本地系统用户帐户**。
+6. 在打开 **的任务** 窗口中，转到常规 **选项卡** 。在"安全选项"下 ("BUILTIN\SYSTEM) **本地系统用户帐户**。
 
 7. Select **Run whether user is logged on or not and** check the Run with highest **privileges** check-box.
 
@@ -234,7 +234,7 @@ Policy|设置
 
 ## <a name="setup-defender-av-policies"></a>设置 Defender AV 策略
 
-创建新的组策略，或将这些设置与其他策略分组。 这依赖于客户环境，以及他们希望通过面向不同 OU 的组织单位或组织单位 (推出) 。
+创建新的组策略，或将这些设置与其他策略分组。 这依赖于客户环境，以及他们希望通过面向不同 OU 的组织单位或组织单位来 (服务) 。
 
 1. 选择 GP 或新建 GP 后，编辑 GP。
 
@@ -260,7 +260,7 @@ Policy|设置
 
 ### <a name="configure-windows-defender-smart-screen-settings"></a>配置Windows Defender屏幕设置
 
-1. 浏览到 \>  \> SmartScreen 资源管理器 **中的** 计算机 \> **Windows配置Windows Defender** \> **模板** \> 。
+1. 浏览到 **SmartScreen** \> **资源管理器** \> **中的** 计算机Windows \> **配置Windows Defender** \> **模板** \> 。
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="配置 Windows Defender 智能屏幕资源管理器。":::
  

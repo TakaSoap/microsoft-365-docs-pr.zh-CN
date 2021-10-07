@@ -1,7 +1,7 @@
 ---
 title: Microsoft 威胁专家概述Microsoft 365 Defender
 ms.reviewer: ''
-description: Microsoft 威胁专家为组织提供额外一层Microsoft 365 Defender。
+description: Microsoft 威胁专家为组织提供一层额外的Microsoft 365 Defender。
 keywords: 托管威胁搜寻服务、托管威胁搜寻、托管检测和响应 (MDR) 服务、MTE、Microsoft 威胁专家
 search.product: Windows 10
 search.appverid: met150
@@ -11,16 +11,16 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 4fcab8abd4f1a5a45ff2700b01abc7fe67b8563f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e47783d2308ca4b94360dd4fa06341d18f8973bb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162205"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154658"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 威胁专家概述Microsoft 365
 
@@ -34,14 +34,14 @@ ms.locfileid: "59162205"
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft 威胁专家 - 目标攻击通知是一项托管威胁搜寻服务。 应用和被接受后，你将收到来自 Microsoft 威胁专家的定向攻击通知，因此不会错过对环境的关键威胁。 这些通知将帮助您保护组织的终结点、电子邮件和标识。
-Microsoft 威胁专家 – 按需专家可让你获取有关组织面临的威胁的专家建议。 你可以就组织面临的威胁寻求帮助。 它作为订阅服务提供。
+Microsoft 威胁专家 – 专家按需提供，可获取有关组织面临的威胁的专家建议。 你可以就组织面临的威胁寻求帮助。 它作为订阅服务提供。
 
 ## <a name="apply-for-microsoft-threat-experts--targeted-attack-notifications"></a>适用于Microsoft 威胁专家 - 目标攻击通知
 
 > [!IMPORTANT]
 > 在应用之前，请务必与 Microsoft 技术服务提供商和帐户团队讨论 Microsoft 威胁专家 - 目标攻击通知的资格要求。
 
-如果你已拥有适用于终结点的 Microsoft Defender 和 Microsoft 365 Defender，可以通过其Microsoft 威胁专家应用目标攻击Microsoft 365 Defender通知。 转到设置 >**终结点>常规>** 高级> Microsoft 威胁专家目标攻击通知"，**然后选择应用**。 请参阅[配置Microsoft 威胁专家](./configure-microsoft-threat-experts.md)功能了解完整说明。
+如果你已拥有适用于终结点的 Microsoft Defender 和 Microsoft 365 Defender，则可以通过Microsoft 威胁专家应用目标攻击Microsoft 365 Defender通知。 转到设置 >**终结点>常规>** 高级> Microsoft 威胁专家 - 目标攻击通知"，**然后选择应用。** 请参阅[配置Microsoft 威胁专家](./configure-microsoft-threat-experts.md)功能了解完整说明。
 
 ![MTE 应用程序页面的屏幕截图。](../../media/mte/mte-collaboratewithmte.png)
 

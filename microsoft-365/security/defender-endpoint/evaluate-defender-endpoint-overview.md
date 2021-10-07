@@ -1,5 +1,5 @@
 ---
-title: 评估Microsoft 365 Defender概述
+title: 评估Microsoft 365 Defender终结点概述
 description: 设置Microsoft 365 Defender试验实验室或试验环境。 测试并体验安全解决方案如何设计用于保护组织中设备、标识、数据和应用。
 keywords: Microsoft 365 Defender试用版，请尝试Microsoft 365 Defender，评估Microsoft 365 Defender，Microsoft 365 Defender实验室，Microsoft 365 Defender试点， 网络安全性， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b100ddc7abb64e5f73acce29edd1eecc2bd31af1
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 948ebe7de82b4c187e5674bf5ed7042dedf7beb9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043223"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157982"
 ---
-# <a name="evaluate-microsoft-365-defender-for-endpoint-overview"></a>评估Microsoft 365 Defender概述
+# <a name="evaluate-microsoft-365-defender-for-endpoint-overview"></a>评估Microsoft 365 Defender终结点概述
 
 **适用于：**
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何创建和管理敏感度标签。
-ms.openlocfilehash: 26697265088a2a59ac145eeff2816b816b95a149
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 35ec82702cd1a5be3f23698f90c8129fc5c7f6f2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201417"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160832"
 ---
 # <a name="protect-documents-with-sensitivity-labels"></a>使用敏感度标签保护文档
 
@@ -50,7 +50,7 @@ ms.locfileid: "59201417"
 1. （可选）打开 **终结点数据丢失防护**。 选择“**下一步**”。
 1. （可选）打开"**自动标记"。** 添加条件。 例如，在"**检测包含的内容"下，** 选择 **"添加条件"。** 输入条件;例如，添加一个条件，如果检测到 passport、Social Security 或其他敏感信息，将添加标签。 选择“**下一步**”。
 1. 查看你的设置， **然后选择创建**。 已创建标签。 对任何其他需要的标签重复此过程。
-1. 默认情况下，标签按此Office显示在应用中：**机密****、内部** 和 **公开**。 若要更改顺序，请针对每个标签选择三个点 (执行) 操作，然后向上或向下移动标签。 通常，权限按从低到高的权限级别列出。
+1. 默认情况下，标签按Office顺序显示在应用中：**机密**、**内部** 和 **公用**。 若要更改顺序，请针对每个标签选择三个点 (执行) 操作，然后向上或向下移动标签。 通常，权限按从低到高的权限级别列出。
 1. 若要向标签添加子标签，请选择三个点 (执行更多) ，然后选择"添加子 **级别"。**
 1. 完成后，选择"**发布标签"，****选择"要发布的标签"，** 然后选择"**添加"。** 选择要发布的标签，然后选择"**添加**"、"完成"和"下一 **步"。**
 1. 默认情况下，新标签策略应用于每个人。 如果要限制应用策略的用户，请选择"**选择用户或** 组"，然后选择"添加 **"。** 选择要应用策略的人，然后选择"**添加**"、"完成"和"下一步 **"。**

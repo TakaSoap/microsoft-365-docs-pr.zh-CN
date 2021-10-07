@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -18,16 +18,16 @@ ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 ms.custom:
 - seo-marvel-apr2020
 description: 使用现有内容搜索中的 CSV 文件创建返回特定电子邮件项目的 ID 列表搜索。
-ms.openlocfilehash: 3fc43f410d6361ac655f7f839b6b4f8752483ef9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 574c130f7ec7c4f47569179ca6fc0712d76c395c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196985"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156482"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>准备用于 ID 列表内容搜索的 CSV 文件
 
-可以使用特定邮箱电子邮件和其他邮箱EXCHANGE列表。 若要创建 ID 列表搜索，你可以提交一个用于标识要搜索的特定邮箱项的逗号分隔符值 (CSV) 文件。 对于此 CSV 文件，使用 **Results.csv** 文件或 **Unindexed Items.csv** 文件，在导出内容搜索结果或从现有内容搜索导出内容搜索报告时将包含该文件。 然后，编辑其中一个文件以指示要搜索的特定项目、创建新的 ID 列表搜索并提交 CSV 文件。
+可以使用特定邮箱电子邮件地址列表搜索特定邮箱电子邮件和其他Exchange项。 若要创建 ID 列表搜索，你可以提交一个用于标识要搜索的特定邮箱项的逗号分隔符值 (CSV) 文件。 对于此 CSV 文件，使用 **导出** 内容搜索结果或从现有内容搜索导出内容搜索报告时包含的Results.csv文件或 **Unindexed Items.csv** 文件。 然后，编辑其中一个文件以指示要搜索的特定项目、创建新的 ID 列表搜索并提交 CSV 文件。
 
 **为什么要创建 ID 列表搜索？** 如果无法确定项目是否根据 **Results.csv** 或 **Unindexed Items.csv** 文件的元数据响应电子数据展示请求，可以使用 ID 列表搜索来查找、预览该项目，然后导出该项目以确定该项目是否响应正在调查的案例。 ID 列表搜索通常用于搜索和返回一组特定的未索引项目。
 
@@ -41,25 +41,25 @@ ms.locfileid: "59196985"
 
     - [导出内容搜索报告](export-a-content-search-report.md)
 
-3. 编辑 **Results.csv** 文件或 **Unindexed Items.csv** 文件，并确定要包括在 ID 列表搜索中的特定邮箱项目。 请参阅 [为](#prepare-the-csv-file-for-an-id-list-search) ID 列表搜索准备 CSV 文件的说明。
+3. 编辑 **Results.csv** 或 **Unindexed Items.csv** 文件，并确定要包括在 ID 列表搜索中的特定邮箱项目。 请参阅 [为](#prepare-the-csv-file-for-an-id-list-search) ID 列表搜索准备 CSV 文件的说明。
 
 4. 创建新的 ID 列表搜索 (查看 [) ](#create-an-id-list-search) 并提交您准备的 CSV 文件的说明。 创建的搜索查询将仅搜索 CSV 文件中所选的项目。
 
 > [!NOTE]
-> 仅邮箱项目支持 ID 列表搜索。 在 ID 列表搜索SharePoint OneDrive搜索文档和文档。
+> 仅邮箱项目支持 ID 列表搜索。 在 ID 列表搜索中SharePoint OneDrive搜索文档和文档。
 
 ## <a name="prepare-the-csv-file-for-an-id-list-search"></a>准备用于 ID 列表搜索的 CSV 文件
 
 导出搜索结果或搜索报告后，执行以下步骤以准备用于 ID 列表搜索的 CSV 文件。 此 CSV 文件标识 ID 列表搜索中的每个项目。
 
-可以从搜索（包括网站和帐户SharePoint CSV 文件OneDrive，但只能选择用于 ID 列表搜索的邮箱项目。 如果您选择文档或SharePoint或OneDrive，则创建 ID 列表搜索时 CSV 文件将无法通过验证。
+可以从搜索（包括网站和帐户SharePoint CSV 文件OneDrive，但只能选择用于 ID 列表搜索的邮箱项目。 如果在"列表"或"SharePoint"OneDrive，则创建 ID 列表搜索时 CSV 文件将无法通过验证。
 
 1. 在Results.csv **打开****"未** Items.csv索引Excel。
 
 2. 在 **"所选****"列中，** 在对应于要搜索的项目的单元格中键入"是"。 对要搜索的每个项目重复此步骤。
 
     > [!IMPORTANT]
-    > 在"文档 ID"Excel中打开 CSV 文件时，"文档 **ID"** 列的数据格式可能已更改为 **"常规"。** 这导致以科学表示法显示项目的文档 ID。 例如，"481037338205"的文档 ID 显示为"4.81037E+11"。 如果发生这种情况，您必须执行以下步骤以将"文档 **ID"** 列的数据格式更改为 **"** 数字"，以还原文档 ID 的正确格式。 如果不这样做，则使用 CSV 文件的 ID 列表搜索将失败。
+    > 当您在"文档 ID"Excel中打开 CSV 文件时，"文档 **ID"** 列的数据格式可能已更改为 **"常规"。** 这导致以科学表示法显示项目的文档 ID。 例如，"481037338205"的文档 ID 显示为"4.81037E+11"。 如果发生这种情况，您必须执行以下步骤以将"文档 **ID"** 列的数据格式更改为 **"** 数字"，以还原文档 ID 的正确格式。 如果不这样做，则使用 CSV 文件的 ID 列表搜索将失败。
 
 3. 右键单击整个"**文档 ID"** 列，然后选择"**设置单元格格式"。**
 
@@ -86,7 +86,7 @@ ms.locfileid: "59196985"
 
 3. 在"**内容搜索"页上**，单击"**按 ID 列表搜索"。**
 
-4. 在"**按 ID 搜索** 列表"飞出菜单上，将搜索 (并视需要描述它) 然后单击"浏览"，然后选择在上一步中准备的 CSV 文件。
+4. 在"**按 ID 搜索** 列表"飞出菜单上，将搜索 (并视需要将其描述为) 然后单击"浏览"，然后选择在上一步中准备的 CSV 文件。 
 
     Microsoft 365尝试验证 CSV 文件。 如果验证失败，则会显示一条错误消息，可帮助您解决验证错误。 CSV 文件必须成功验证，以创建 ID 列表搜索。
 
@@ -102,4 +102,4 @@ ms.locfileid: "59196985"
 
 ## <a name="more-information"></a>更多信息
 
-如果在创建 ID 列表搜索后移动邮箱，则搜索查询不会返回指定的项目。 这是因为移动邮箱时更改了邮箱项目的 **DocumentId** 属性。 在极少数情况下，当您创建 ID 列表搜索后移动邮箱时，您应创建新的内容搜索 (或更新现有搜索) 然后导出搜索结果或报告以生成可用于创建新的 ID 列表搜索的更新 CSV 文件。
+如果在创建 ID 列表搜索后移动邮箱，则搜索查询不会返回指定的项目。 这是因为移动邮箱时更改了邮箱项目的 **DocumentId** 属性。 在极少数情况下，当您创建 ID 列表搜索后移动邮箱时，您应创建新的内容搜索 (或更新现有搜索) 的搜索结果，然后导出搜索结果或报告以生成可用于创建新的 ID 列表搜索的更新 CSV 文件。
