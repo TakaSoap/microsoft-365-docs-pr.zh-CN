@@ -9,18 +9,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2fc605a57d1bce1b1653f5e15bf8600cd9e1d831
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 654de92a89c85bb696aea8cc5ea88797d79b0726
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124277"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199737"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>使用本地载入或载出脚本时创建通知规则
 
@@ -71,7 +71,7 @@ ms.locfileid: "60124277"
    - 方法："GET"作为获取设备列表的值。
    - URI：输入 `https://api.securitycenter.microsoft.com/api/machines` 。
    - 身份验证：选择"Active Directory OAuth"。
-   - 租户：登录并导航到Azure Active Directory > https://portal.azure.com **应用注册并** 获取租户 ID 值。
+   - 租户：登录并导航到Azure Active Directory > https://portal.azure.com **注册并** 获取租户 ID 值。
    - 访问群体： `https://securitycenter.onmicrosoft.com/windowsatpservice\`
    - 客户端 ID：登录并导航到Azure Active Directory > https://portal.azure.com **应用注册并** 获取客户端 ID 值。
    - 凭据类型：选择"机密"。
@@ -173,10 +173,10 @@ ms.locfileid: "60124277"
 
     ```
 
-10. 从 JSON 调用中提取值，并检查已载入设备 (是否) /已在 SharePoint 列表中注册，例如：
+10. 从 JSON 调用中提取值，并检查已载入设备 (是否) /已在 SharePoint 列表注册为示例：
 
     - 如果是，则不触发任何通知
-    - 如果否，将在 (列表中) 新载入SharePoint设备，并且会向 Defender for Endpoint 管理员发送通知
+    - 如果否，将在" (") 注册新的已载入SharePoint，并且会向 Defender for Endpoint 管理员发送通知
 
     ![适用于每个图像的图像。](images/flow-apply.png)
 
@@ -202,7 +202,7 @@ ms.locfileid: "60124277"
     - 使用过去 7 天内最后看到的所有设备。
 
 - 对于每个设备：
-  - 如果上次看到的属性的时间间隔为 [-7 天， -7days + 60 分钟 ] ->警报可能的时间间隔。
+  - 如果上次看到的属性的时间间隔为 [-7 天， -7days + 60 分钟 ] ->发生载出可能性的警报。
   - 如果第一次看到是过去一小时 ->载入警报。
 
 在此解决方案中，你将没有重复的警报：存在具有大量设备的租户。 获取所有这些设备可能非常昂贵，并且可能需要分页。
@@ -210,4 +210,4 @@ ms.locfileid: "60124277"
 您可以拆分为两个查询：
 
 1. 对于载出，使用 OData $filter此间隔，并且仅在满足条件时通知。
-2. 查看过去一小时内最后看到的所有设备，并检查第一次看到的属性 (如果第一次看到的属性是过去一小时，则最后一次看到的设备必须位于) 。
+2. 查看过去一小时内最后看到的所有设备，并检查第一次看到的属性 (如果第一次看到的属性是过去一小时，则最后一次看到的设备必须太) 。

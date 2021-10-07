@@ -2,26 +2,24 @@
 title: 创建和管理设备标签
 description: 使用设备标记对设备进行分组以捕获上下文，并启用动态列表创建作为事件的一部分
 keywords: 标记， 设备标记， 设备组， 组， 修正， 级别， 规则， aad 组， 角色， 分配， 排名
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e23980133d2fb0c69ca79f6dfdde7656e1961097
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 38b5d3f2ddcab56fc712c771019982d05a18e20e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162289"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199749"
 ---
 # <a name="create-and-manage-device-tags"></a>创建和管理设备标签
 
@@ -80,6 +78,7 @@ ms.locfileid: "59162289"
 > [!NOTE]
 > 仅适用于以下设备：
 >
+> - Windows 11
 > - Windows 10版本 1709 或更高版本
 > - Windows服务器版本 1803 或更高版本
 > - Windows Server 2016

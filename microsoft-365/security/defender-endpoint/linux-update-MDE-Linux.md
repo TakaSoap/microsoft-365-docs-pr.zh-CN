@@ -1,27 +1,25 @@
 ---
-title: '如何计划 Microsoft Defender 的 Endpoint (Linux) '
+title: '如何计划更新 Microsoft Defender for Endpoint (Linux) '
 description: 了解如何计划 Microsoft Defender 终结点 (Linux) 以更好地保护组织的资产。
-keywords: 'microsoft， defender， Microsoft Defender for Endpoint， linux， 扫描， 防病毒， 适用于终结点的 microsoft defender (linux) '
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+keywords: 'microsoft， defender， Microsoft Defender for Endpoint， linux， 扫描， 防病毒， microsoft defender for endpoint (linux) '
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 05747374e2a28331ec0742fe11ca2dbc660771c5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 25b4f91243e804c913536faa2f1ea28cdfb3c28e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201174"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199761"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>计划更新 Microsoft Defender for Endpoint （Linux）
 
@@ -107,7 +105,7 @@ CRON_TZ=America/Los_Angeles
 > ```
 
 > [!NOTE]
-> 在以上示例中，我们将它设置为 00 分钟、上午 6 点 (小时（格式为 24 小时) 、每月的任何一天，在星期日）。[$ (date + \% d) -le 15] == 不运行，除非它等于或小于第 3 周的第 15 (天) 。 这意味着它将在每月的第 3 个星期 (7) 上午 6：00 运行一次。 太平洋 (UTC -8) 。
+> 在以上示例中，我们将该时间设置为 00 分钟、上午 6 点 (小时（格式为 24 小时) 、每月的任何一天，在星期日）。[$ (date + \% d) -le 15] == 不运行，除非它等于或小于第 3 周的第 15 (天) 。 这意味着它将在每月的第 3 个星期 (7) 上午 6：00 运行一次。 太平洋 (UTC -8) 。
 
 按"Esc"
 
