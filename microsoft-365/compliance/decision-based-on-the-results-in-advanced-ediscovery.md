@@ -9,24 +9,24 @@ titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: 了解 Advanced eDiscovery 中的"决定"选项卡如何提供可帮助您确定审阅案例文件审阅集大小的数据。
+description: 了解 Advanced eDiscovery 中的"决定"选项卡如何提供可帮助您确定审阅案例文件集的正确大小的数据。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: deb47c0c795a828804722085f8cfa3b002580307
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 32682690c6febac247d67e3b78f56d1f71b9a2fb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571358"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207351"
 ---
 # <a name="decisions-based-on-relevance-results-in-advanced-ediscovery"></a>基于相关性结果的决策Advanced eDiscovery
   
-在 Advanced eDiscovery 中的相关性模块中，"决定"选项卡提供用于查看和使用决策支持统计信息以确定案例文件审阅集大小的其他信息。
+在 Advanced eDiscovery 中的相关性模块中，"决定"选项卡提供用于查看和使用决策支持统计信息的其他信息，以确定审阅案例文件集的大小。
   
 ## <a name="using-the-decide-tab"></a>使用"决定"选项卡
 
@@ -36,7 +36,7 @@ ms.locfileid: "58571358"
   
 - **问题**：从此处，可以从列表中选择感兴趣的问题。
 
-- **Review-recall ratio**：根据相关性分数Advanced eDiscovery审阅的比较。 图表中的截止点表示要审阅的文件百分比，映射到相关性分数。 此阈值在相关性测试阶段使用，并用作剔除的导出阈值。 要审阅的文件数的默认截止点位于"调用次数"和"精度"之间的最佳平衡点。 实际截止点应该由用户根据目标以及成本权衡 (%审阅) 和风险 (%recall) 。 使用滑块，可以调整截止点并查看图形和参数的影响、调整要检索的相关文件的百分比时以及验证决策之前的效果。
+- **Review-recall ratio**：根据相关性Advanced eDiscovery审阅的比较。 图表中的截止点表示要审阅的文件百分比，映射到相关性分数。 此阈值在相关性测试阶段使用，并用作剔除的导出阈值。 要审阅的文件数的默认截止点位于"调用次数"和"精度"之间的最佳平衡点。 实际截止点由用户根据目标、成本权衡 (%审阅) 以及风险 (%recall) 。 使用滑块，可以调整截止点并查看图形和参数的影响、调整要检索的相关文件的百分比时以及验证决策之前的效果。
 
 - **参数**：Review、Recall、Next 相关参数和总成本参数是相对于整个案例的集合与审阅集相关的累积计算统计信息。 这些参数的定义如下：
 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
@@ -17,15 +17,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解 EOP Exchange Online Protection (中的欺骗) 。
+description: 管理员可以了解 EOP Exchange Online Protection (中的欺骗智能) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b84671da05fcd3c476f19aa61a7325ac9df4c263
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8e8f7513e9d4d175807fdb99e39353ffc531dec5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196259"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207507"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP 中的欺骗智能见解
 
@@ -39,7 +39,7 @@ ms.locfileid: "59196259"
 > [!NOTE]
 > 本文中所述的功能在预览版中，可能会更改，并且并非在所有组织中都可用。 如果你的组织没有本文中所述的功能，请参阅使用 EOP 中的欺骗智能策略和欺骗智能见解管理欺骗发件人中的旧版欺骗 [管理体验](walkthrough-spoof-intelligence-insight.md)。
 
-在Microsoft 365邮箱位于 Exchange Online 或独立 Exchange Online Protection (EOP) Exchange Online 组织中，入站电子邮件将自动防止欺骗。 EOP **使用欺骗智能** 作为组织防御网络钓鱼的整体防御的一部分。 有关详细信息，请参阅 [EOP 中的反欺骗保护](anti-spoofing-protection.md)。
+在Microsoft 365邮箱位于 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online邮箱，入站电子邮件将自动防止欺骗。 EOP **使用欺骗智能** 作为组织防御网络钓鱼的整体防御的一部分。 有关详细信息，请参阅 [EOP 中的反欺骗保护](anti-spoofing-protection.md)。
 
 当发件人欺骗电子邮件地址时，他们显示为组织某个域中的用户，或者是向组织发送电子邮件的外部域中的用户。 需要阻止欺骗发件人发送垃圾邮件或钓鱼电子邮件的攻击者。 但在某些情况下，合法发件人存在欺骗行为。 例如：
 
@@ -55,17 +55,17 @@ ms.locfileid: "59196259"
 
 您可以使用 Microsoft 365 Defender门户中的欺骗智能见解，从未通过 SPF、DKIM 或 DMARC 检查) 的域中快速识别合法向您发送未经身份验证的电子邮件 (邮件的欺骗性发件人，并手动允许这些发件人。
 
-通过允许已知发件人从已知位置发送欺骗邮件，你可以减少误报 (标记为错误) 。 通过监视允许的欺骗发件人，你可以提供额外的安全层，以防止不安全的邮件到达你的组织。
+通过允许已知发件人从已知位置发送欺骗邮件，你可以减少误报 (标记为错误邮件) 。 通过监视允许的欺骗发件人，你可以提供额外的安全层，以防止不安全的邮件到达你的组织。
 
 同样，你可以查看欺骗智能允许的欺骗性发件人，并手动阻止这些发件人获得欺骗智能见解。
 
-本文的其余部分介绍如何在 Microsoft 365 Defender 门户和 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织使用欺骗智能Exchange Online;独立 EOP PowerShell，适用于Exchange Online邮箱) 。
+本文的其余部分介绍如何在 Microsoft 365 Defender 门户和 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织使用欺骗智能Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 > [!NOTE]
 >
 > - 欺骗智能见解中只显示欺骗智能检测到的欺骗发件人。 当你替代见解中的允许或阻止裁定时，欺骗发件人将成为一个手动允许或阻止条目，该条目仅出现在租户允许/阻止列表中的"欺骗"选项卡上。 还可以在欺骗智能检测到欺骗发件人之前，手动为这些发件人创建允许或阻止条目。 有关详细信息，请参阅[管理 EOP 中的租户允许/阻止列表](tenant-allow-block-list.md)。
 >
-> - 租户允许/阻止列表中的欺骗智能见解和"欺骗"选项卡取代了安全与合规中心的反垃圾邮件策略页面上提供的&策略的功能。
+> - 租户允许/阻止列表中的欺骗智能见解和"欺骗"选项卡取代了安全与合规中心中的反垃圾邮件策略页面上提供的欺骗智能&功能。
 >
 >- 欺骗智能见解显示 7 天的数据。 **Get-SpoofIntelligenceInsight** cmdlet 显示 30 天的数据。
 
@@ -92,7 +92,7 @@ ms.locfileid: "59196259"
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>在企业门户中打开Microsoft 365 Defender见解
 
-1. 在 Microsoft 365 Defender 门户中，转到"规则"&中的"电子邮件&协作策略"&"规则""威胁策略""租户允许 \>  \>  \> **/** 阻止 **列表**"。
+1. 在 Microsoft 365 Defender 门户中，转到"规则 **"&** 中的"电子邮件&策略"&"规则""威胁策略""租户允许 \>  \>  \> **/** 阻止 **列表**"。
 
 2. 在" **租户允许/阻止列表"** 页上，欺骗智能见解如下所示：
 
@@ -114,7 +114,7 @@ ms.locfileid: "59196259"
 
 - **欺骗用户****：电子邮件** 客户端的"来源"框中显示的欺骗用户的域。  "From"地址也称为 `5322.From` "地址"。
 - **发送基础结构**：也称为 _基础结构_。 发送基础结构将为以下值之一：
-  - 反向 DNS 查找中的域 (PTR) 源电子邮件服务器的 IP 地址。
+  - 反向 DNS 查找中的域 (源) IP 地址的 PTR 记录。
   - 如果源 IP 地址没有 PTR 记录，则发送基础结构标识为 \<source IP\> /24 (例如，192.168.100.100/24) 。
 - **邮件计数**：过去 7 天内从欺骗性域和发送基础结构组合发送到组织的邮件数量。
 - **上次看到** 时间：从包含欺骗域的发送基础结构接收邮件的最后日期。
@@ -122,7 +122,7 @@ ms.locfileid: "59196259"
   - **内部**：欺骗性发件人位于组织所属的域中， ([接受的) 。](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
   - **外部**：欺骗性发件人位于外部域中。
 - **操作**：此值为 **"允许"** 或 **"已阻止"：**
-  - **允许**：域未通过显式电子邮件身份验证检查 [SPF、DKIM](how-office-365-uses-spf-to-prevent-spoofing.md)和 [DMARC](use-dmarc-to-validate-email.md)) 。 [](use-dkim-to-validate-outbound-email.md) 但是，该域已通过我们的隐式电子邮件身份验证检查 ([身份验证) 。](email-validation-and-authentication.md#composite-authentication) 因此，未对邮件执行反欺骗操作。
+  - **允许**：域未通过显式电子邮件身份验证检查 [SPF、DKIM](how-office-365-uses-spf-to-prevent-spoofing.md)和 [DMARC](use-dmarc-to-validate-email.md)) 。 [](use-dkim-to-validate-outbound-email.md) 但是，域已通过隐式电子邮件身份验证检查， ([身份验证) 。](email-validation-and-authentication.md#composite-authentication) 因此，未对邮件执行反欺骗操作。
   - **已阻止**：来自欺骗域和发送基础结构组合的邮件被欺骗智能标记为错误。 对欺骗邮件采取的操作由默认反网络钓鱼策略或自定义防钓鱼策略控制 (默认值为"将邮件移动到垃圾邮件文件夹") 。  有关详细信息，请参阅 Configure [anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)。
 
 您可以单击所选列标题对结果进行排序。
@@ -143,7 +143,7 @@ ms.locfileid: "59196259"
 - 需要执行哪些工作。
 - 包含主要欺骗智能页面中大部分相同信息的域摘要。
 - WhoIs 有关发件人的数据。
-- 打开[威胁资源管理器的链接](threat-explorer.md)，以查看 Microsoft Defender for Office 365  \> 中的查看网络钓鱼下有关发件人的其他Office 365。
+- 一个链接，用于打开[威胁](threat-explorer.md)资源管理器，以查看 Microsoft Defender  for Office 365 中的查看网络钓鱼下有关 \> 发件人的其他详细信息。
 - 我们在租户中看到的来自同一发件人的类似邮件。
 
 ### <a name="about-allowed-spoofed-senders"></a>关于允许的欺骗发件人
@@ -155,9 +155,9 @@ ms.locfileid: "59196259"
 - **域**： gmail.com
 - **基础结构**：tms.mx.com
 
-仅允许来自该域/发送基础结构对的电子邮件欺骗。 不会自动允许其他发件人 gmail.com 欺骗邮件。 来自其他域中的发件人的邮件 tms.mx.com 欺骗智能将检查这些发件人的邮件，并且可能会阻止这些邮件。
+仅允许来自该域/发送基础结构对的电子邮件欺骗。 不会自动允许其他发件人 gmail.com 欺骗邮件。 来自其他域中的发件人的邮件 tms.mx.com 欺骗智能仍在检查，并且可能会阻止。
 
-## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>在 PowerShell 或独立 EOP PowerShell Exchange Online欺骗智能见解
+## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>在 PowerShell 或Exchange Online EOP PowerShell 中使用欺骗智能见解
 
 在 PowerShell 中，使用 **Get-SpoofIntelligenceInsight** cmdlet 查看欺骗智能检测到的允许和阻止的欺骗发件人。  若要手动允许或阻止欺骗的发件人，你需要使用 **New-TenantAllowBlockListSpoofItems** cmdlet。 有关详细信息，请参阅使用 PowerShell 管理租户允许/阻止列表的欺骗 [性发件人条目](tenant-allow-block-list.md)。
 
@@ -177,6 +177,6 @@ Get-SpoofIntelligenceInsight
 
 - 查看你的发件人策略框架 (SPF) 配置。 若要了解 SPF 的快速简介及其快速配置方法，请参阅[在 Microsoft 365 中设置 SPF 以防欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 有关 Office 365 如何使用 SPF 的更深入了解，或者有关故障排除或非标准部署（如混合部署）的信息，请开始阅读[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)。
 
-- 查看你的域密钥识别邮件 (DKIM) 配置。 除了 SPF 和 DMARC 之外，还应使用 DKIM 来帮助阻止攻击者发送看起来好像来自你的域的邮件。 你可以使用 DKIM 将数字签名添加到电子邮件的邮件头中。 有关信息，请参阅[使用 DKIM 验证从](use-dkim-to-validate-outbound-email.md)自定义域发送的出站Office 365。
+- 查看你的域密钥识别邮件 (DKIM) 配置。 除了 SPF 和 DMARC 之外，还应使用 DKIM 来帮助阻止攻击者发送看起来好像来自你的域的邮件。 你可以使用 DKIM 将数字签名添加到电子邮件的邮件头中。 有关信息，请参阅[使用 DKIM](use-dkim-to-validate-outbound-email.md)验证从自定义域发送的出站Office 365。
 
 - 查看基于域的邮件身份验证、报告和一致性 (DMARC) 配置。 实现使用 SPF 和 DKIM 的 DMARC 可以针对欺骗和钓鱼电子邮件提供额外的保护。 DMARC 可帮助接收邮件系统确定如何处理从你的域发送且未通过 SPF 或 DKIM 检查的邮件。 有关信息，请参阅[使用 DMARC 验证电子邮件Office 365。](use-dmarc-to-validate-email.md)

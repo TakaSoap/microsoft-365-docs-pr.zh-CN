@@ -1,5 +1,5 @@
 ---
-title: 管理 Microsoft 365 组、Teams 和 SharePoint
+title: 管理组Microsoft 365、Teams和SharePoint
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,18 +16,18 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解管理组、Microsoft 365和Teams中的SharePoint。
-ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2a0da02385e3fc325bb4f25b4ac8a538f950d820
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196444"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207447"
 ---
-# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>管理 Microsoft 365 组、Teams 和 SharePoint
+# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>管理组Microsoft 365、Teams和SharePoint
 
 有许多控件使您能够控制用户如何访问组、团队和团队中的SharePoint。 查看这些选项，并考虑它们如何映射到业务需求、数据的敏感度以及用户需要协作的用户范围。
 
-下表提供了一个快速参考，该参考可用于Microsoft 365。 以下各节提供了进一步的信息。
+下表提供了一个快速参考，这些访问控制可用于Microsoft 365。 以下各节提供了进一步的信息。
 
 |类别|说明|参考|
 |:-------|:----------|:--------|
@@ -53,7 +53,7 @@ ms.locfileid: "59196444"
 |用户管理|||
 ||定期查看团队和组成员身份。|[什么是 Azure AD 访问评审？](/azure/active-directory/governance/access-reviews-overview)|
 ||自动管理对组和团队的访问。|[什么是 Azure AD 权利管理？](/azure/active-directory/governance/entitlement-management-overview)|
-||允许或阻止用户创建专用频道Teams。|[管理专用频道在Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
+||允许或阻止用户创建私人频道Teams。|[管理频道中私人频道的Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## <a name="membership"></a>成员身份
 
@@ -61,7 +61,7 @@ ms.locfileid: "59196444"
 
 - [在部署中管理私人团队Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)
 
-你可以根据某些条件（如部门）动态管理组或团队的成员身份。 在这种情况下，成员和所有者无法邀请人员加入团队。 动态组使用你在 Azure Active Directory定义的元数据来控制哪些用户是该组的成员。 请确保你使用的元数据已完成且是最新的，因为不正确的元数据可能会导致用户被排除在组外或添加不正确的用户。
+你可以根据某些条件（如部门）动态管理组或团队的成员身份。 在这种情况下，成员和所有者无法邀请人员加入团队。 动态组使用你在Azure Active Directory定义的元数据来控制哪些用户是该组的成员。 请确保你使用的元数据已完成且是最新的，因为不正确的元数据可能会导致用户被排除在组外或添加不正确的用户。
 
 - [在动态组中创建或更新Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
 
@@ -89,7 +89,7 @@ SharePoint网站提供除组或团队成员身份外添加所有者、成员和�
 
 - [规划条件访问部署](/azure/active-directory/conditional-access/plan-conditional-access)
 
-- [Microsoft Intune概述](/mem/intune/fundamentals/what-is-intune)
+- [Microsoft Intune 概述](/mem/intune/fundamentals/what-is-intune)
 
 - [控制SharePoint非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)
 

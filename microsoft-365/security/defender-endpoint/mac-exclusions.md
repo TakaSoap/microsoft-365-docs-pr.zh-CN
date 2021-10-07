@@ -2,15 +2,13 @@
 title: 在 Mac 上配置和验证 Microsoft Defender for Endpoint 的排除项
 description: 提供并验证 Mac 上的 Microsoft Defender for Endpoint 的排除项。 可以针对文件、文件夹和进程设置排除项。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 排除， 扫描， 防病毒
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 96f7693e83bf4c3f4a1f14f39d99de55f7ef1979
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d779ee570e310a2d8a07154d73fe353db8bce907
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196039"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207879"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上配置和验证适用于终结点的 Microsoft Defender 的排除项
 
@@ -57,13 +55,13 @@ ms.locfileid: "59196039"
 文件扩展名|计算机上任意位置具有扩展名的所有文件|`.test`
 文件|由完整路径标识的特定文件|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
 Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
-流程|特定进程 (的完整路径或文件名指定) 及其打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`
+流程|由 (的完整路径或文件名指定的特定进程) 及其打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`
 
 文件、文件夹和进程排除项支持以下通配符：
 
 通配符|说明|示例|匹配|不匹配
 ---|---|---|---|---
-\*|匹配任意数目的任何字符，包括无 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+\*|匹配任意数目的任何字符，包括无字符 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
 ?|匹配任何单个字符|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
 > [!NOTE]
@@ -119,7 +117,7 @@ mdatp threat allowed add --name [threat-name]
 mdatp threat list
 ```
 
-例如，若要 (与 EICAR 检测关联的威胁) 添加到允许列表中，请 `EICAR-Test-File (not a virus)` 执行以下命令：
+例如，若要 (与 EICAR 检测关联的威胁) 添加到允许列表中，请执行 `EICAR-Test-File (not a virus)` 以下命令：
 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"

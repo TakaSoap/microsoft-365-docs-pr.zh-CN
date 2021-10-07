@@ -10,23 +10,23 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 ROBOTS: NOINDEX, NOFOLLOW
 description: 查看执行评估培训的步骤，包括标记文件，并查看评估Advanced eDiscovery。
-ms.openlocfilehash: 539d4e8f28aa8e4e3ab98807c5019711edbdcc4f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4d779d7ea364083c973cbb3d2e821b85c34fb795
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196875"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200277"
 ---
-# <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>Advanced eDiscovery 中相关性模块中的标记Advanced eDiscovery
+# <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>中相关性模块中的标记Advanced eDiscovery
   
-本节介绍在 Advanced eDiscovery 中相关性模块中评估Advanced eDiscovery。
+本节介绍 Advanced eDiscovery 中相关性模块中的评估过程。
   
 ## <a name="performing-assessment-training-and-analysis"></a>执行评估培训和分析
 
@@ -48,7 +48,7 @@ ms.locfileid: "59196875"
     ![相关性跟踪 - 评估。](../media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
-    > 默认情况下，建议您在问题的评估进度指示器完成时继续执行默认的"下一步"，指示已审阅评估示例并标记了足够的相关文件。 >否则，如果你想要查看"跟踪"选项卡结果并控制错误边距和下一步，请单击"下一步"旁边的"修改"，选择"继续 **评估**"，然后单击"确定 **"。** 
+    > 默认情况下，建议您在问题的评估进度指示器完成时继续执行默认的"下一步"，指示已审阅评估示例并标记了足够的相关文件。 >否则，如果你要查看"跟踪"选项卡结果并控制错误边距和下一步，请单击"下一步"旁边的"修改"，选择"继续 **评估**"，然后单击"确定 **"。** 
   
 4. 单击 **"** 评估" **复选框右边的** "修改"可查看并指定每个问题的评估参数。 将显示 **每个问题的** "评估级别"对话框，如以下示例所示： 
 
@@ -60,7 +60,7 @@ ms.locfileid: "59196875"
 
     **需要其他评估文件**：指示如果尚未满足当前误差区的要求，还需要多少文件。 
 
-5. 若要调整当前误差边距并查看每问题的不同误差 (的影响) ：
+5. 若要调整当前误差边距并查看每个问题的不同误差 (的影响) ：
 
 6. 在 **"选择问题** "列表中，选择问题。 
 
@@ -80,13 +80,13 @@ ms.locfileid: "59196875"
 
     - **预期的丰富度误差** 范围：在给定更新的值后，这是查看所有其他评估文件后，丰富度的预期误差范围。
 
-    - **需要其他评估文件**：给定更新的值后，需要检查的其他评估文件数才能达到目标。
+    - **需要其他评估文件**：给定更新的值后，需要检查的其他评估文件数量才能达到目标。
 
     - **所需的评估文件总数**：给定更新的值后，需要审阅的评估文件总数。
 
     - **评估中的预计相关文件数**：在给定更新值后，查看所有其他评估文件后整个评估中的预期相关文件数。
 
-10. 如果 **参数已更改**，请单击"重新计算值"。 完成后，如果存在一个问题，请单击"确定"以在存在要审阅或修改的多个问题时 ("下一步"保存更改，然后单击"完成) "。  
+10. 如果 **参数已更改**，请单击"重新计算值"。 完成后，如果存在一个问题，请单击"确定"以在存在要审阅或修改的多个 (下一步"中保存更改，然后单击"完成) "。  
 
     如果有多个问题，在审查或调整所有问题后，将显示"评估级别 **：** 摘要"对话框，如以下示例所示。 
 
@@ -104,7 +104,7 @@ ms.locfileid: "59196875"
 
 - 估计丰富度
 
-- 需要检查 (评估文件) 
+- 需要检查 (其他评估) 
 
 评估当前误差区是由评估建议的错误Advanced eDiscovery。 为"需要其他评估文件"显示的数量对应于该建议。
   

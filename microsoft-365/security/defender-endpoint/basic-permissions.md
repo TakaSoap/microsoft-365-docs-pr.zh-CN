@@ -2,26 +2,24 @@
 title: 使用基本权限访问Microsoft Defender 安全中心
 description: 了解如何使用基本权限访问 Microsoft Defender for Endpoint 门户。
 keywords: 分配用户角色， 分配读取和写入访问权限， 分配只读访问权限， 用户， 用户角色， 角色
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: abdf9f72c4ae023cdc8bde76d96ce641b2e48b9a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 05e9eadb9047fd4a2c8a4d01ecefc3ec2f73f9db
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222390"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207985"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>使用基本权限访问门户
 
@@ -50,7 +48,7 @@ ms.locfileid: "59222390"
 - 可读写 (完全访问权限) 
 - 只读访问
 
-### <a name="before-you-begin"></a>开始之前
+### <a name="before-you-begin"></a>准备工作
 
 - 安装 Azure PowerShell。 有关详细信息，请参阅如何安装和配置[Azure PowerShell。](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)
 
@@ -84,7 +82,7 @@ ms.locfileid: "59222390"
 
 ## <a name="assign-user-access-using-the-azure-portal"></a>使用 Azure 门户分配用户访问权限
 
-有关详细信息，请参阅 Assign [administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
+有关详细信息，请参阅将管理员和非管理员角色分配给具有此[权限Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)
 
 ## <a name="related-topic"></a>相关主题
 

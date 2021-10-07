@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
 ms.reviewer: esaggese
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: ed07361f8c433a318342ae3c8ad750549992c285
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8cdc4d71609430dd7bcb19edc3b55c49a3b9401d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196136"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200529"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>双密钥加密常见问题
 
@@ -27,11 +27,11 @@ ms.locfileid: "59196136"
 
 双密钥加密Microsoft 365使客户能够保护其高度敏感的数据以满足特定要求。 它帮助客户保持对加密密钥的完全控制。 它使用两个密钥来保护数据;控件中的一个键，另一个密钥安全地存储在Microsoft Azure。 查看受双密钥加密保护的数据需要访问这两个密钥。 由于 Microsoft 只能访问其中一个密钥，因此受保护数据仍无法访问 Microsoft，从而确保你可以完全控制数据隐私和安全性。  
 
-可以在本地密钥管理服务器或云管理服务器中 (用于请求密钥的双密钥加密) 。 像维护任何其他应用程序一样维护服务。 双密钥加密使您能够控制对双密钥加密服务的访问。 可以在本地存储高度敏感的数据或将其移动到云中。 你可以确信阻止第三方访问，因为你保持对密钥的完全控制。 双密钥加密允许您将数据和密钥存储在同一位置。
+可以在选择的位置（本地密钥管理服务器 (云中）托管用于请求密钥的双密钥加密) 。 像维护任何其他应用程序一样维护服务。 双密钥加密使您能够控制对双密钥加密服务的访问。 可以在本地存储高度敏感的数据或将其移动到云中。 你可以确信阻止第三方访问，因为你保持对密钥的完全控制。 双密钥加密允许您将数据和密钥存储在同一位置。
 
-DKE 可帮助你满足多项法规和标准，如《一般数据保护条例》 (GDPR) 、健康保险可移植性和责任法案 (HIPAA) 、格雷姆-格雷姆-拉雷法案 (GLBA) 、俄罗斯的数据本地化法 – 联邦法律第 20 号。 242-FZ、澳大利亚联邦隐私法案 1988 和新西兰隐私法案 1993。
+DKE 可帮助你满足多项法规和标准，如《一般数据保护条例》 (GDPR) 、《健康保险可移植性和责任法》 (HIPAA) 、格雷姆-格雷姆-拉雷法案 (GLBA) 、俄罗斯的数据本地化法 – 联邦法律第 20 号。 242-FZ、澳大利亚联邦隐私法案 1988 和新西兰隐私法案 1993。
 
-## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>能否将双密钥加密与Microsoft Office内置敏感度标签一同使用？
+## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>能否将双密钥加密Microsoft Office内置敏感度标签？
 
 你需要使用 Azure 信息保护统一标签客户端通过双密钥加密来保护文档。 目前，你无法Microsoft Office内置敏感度标签。
 
@@ -39,7 +39,7 @@ DKE 可帮助你满足多项法规和标准，如《一般数据保护条例》 
 
 可以使用 DKE 标签来保护使用桌面版本的 Word、Excel 和 PowerPoint 版本的Windows。 确保使用的是 *.12711 或更高版本 (桌面版本的 Word、PowerPoint 和 Excel) Windows。
 
-## <a name="how-is-double-key-encryption-different-from-the-existing-hold-your-own-key-hyok-solution"></a>双密钥加密与 HYOK 解决方案中现有的密钥 (不同) ？
+## <a name="how-is-double-key-encryption-different-from-the-existing-hold-your-own-key-hyok-solution"></a>双密钥加密与 HY) OK 解决方案中的现有密钥 (不同？
 
 双密钥加密使用两个密钥加密数据。 你的加密密钥在你的控制中，第二个密钥存储在Microsoft Azure，以便你可以将加密数据移动到云。 HYOK 仅使用一个密钥保护内容，并且该密钥始终位于本地。  
 
@@ -49,7 +49,7 @@ DKE 可帮助你满足多项法规和标准，如《一般数据保护条例》 
 
 - 拥有访问双密钥加密服务中的密钥所需的权限。
 
-- 拥有访问你的密钥所需的权限Microsoft Azure。
+- 拥有访问密钥所需的权限Microsoft Azure。
 
 ## <a name="what-happens-to-documents-that-are-protected-with-hyok"></a>使用 HYOK 保护的文档会发生什么情况？
 
@@ -69,7 +69,7 @@ DKE 标签将本地化为与 DKE 中其他敏感度标签Microsoft 信息保护�
 
 ## <a name="can-i-convert-a-non-dke-label-to-a-dke-label"></a>能否将非 DKE 标签转换为 DKE 标签？
 
-否。 创建 DKE 后，不能将 DKE 添加到标签。 相反，你必须选择" **使用双密钥加密"，** 并创建标签时提供双密钥加密服务的 URL。
+不需要。 创建 DKE 后，不能将 DKE 添加到标签。 相反，你必须选择" **使用双密钥加密"，** 并创建标签时提供双密钥加密服务的 URL。
 
 ## <a name="how-do-i-roll-my-dke-keys"></a>如何滚动 DKE 密钥？
 

@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8e23a65620bf0eba3a98e6b2ddc14ac02eaf5d80
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fc0fceac94a25502268f441c6bad13cb60bae637
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170076"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176819"
 ---
 # <a name="get-alert-related-domain-information-api"></a>获取与警报相关的域信息 API
 
@@ -49,14 +49,14 @@ ms.locfileid: "59170076"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|URL。Read.All|"读取 URL"
+Application|URL。Read.All|"读取 URL"
 委派（工作或学校帐户）|URL。Read.All|"读取 URL"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -68,7 +68,7 @@ GET /api/alerts/{id}/domains
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|字符串|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

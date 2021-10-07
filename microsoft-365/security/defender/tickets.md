@@ -4,7 +4,7 @@ description: 了解如何从门户和合规中心在 ServiceNow Microsoft 365 De
 keywords: 安全， Microsoft 365， M365， 合规性， 合规中心， 安全中心， ServiceNow， 票证， 任务， 数据量， 连接
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 1803d4408d50ecfd0e4f0a3c78016cd8914760f1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 89ceeb3b702e2c8f98a6270907f9c759833601f2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170021"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176617"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-defender-portal-and-compliance-center"></a>将 ServiceNow 票证集成到 Microsoft 365 Defender 门户和合规中心
 

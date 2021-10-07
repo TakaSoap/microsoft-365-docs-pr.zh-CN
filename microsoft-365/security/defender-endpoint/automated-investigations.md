@@ -12,7 +12,7 @@ ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
 ms.date: 02/02/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: a8e506e75c0eb9a42ab2a460fcc8c3370ffafbb2
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 7b1ce14e1ec01041ea9b3a298f4f794978054e5f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042670"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193047"
 ---
 # <a name="overview-of-automated-investigations"></a>自动调查概述
 
@@ -82,7 +82,7 @@ ms.locfileid: "60042670"
 所有修正操作（无论是挂起操作还是已完成操作）都跟踪在 [操作中心中](auto-investigation-action-center.md)。 如有必要，安全运营团队可以撤消修正操作。 若要了解更多信息，请参阅 [在自动调查后审阅并批准修正操作](/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
 
 > [!TIP]
-> 查看安全中心中新的统一Microsoft 365调查页面。 若要了解更多信息，请参阅 ([ NEW！) 统一调查页面](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
+> 查看安全中心中新的统一Microsoft 365调查页面。 若要了解更多信息，请参阅 ([ NEW！) Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
 
 ## <a name="requirements-for-air"></a>AIR 的要求
 
@@ -93,7 +93,7 @@ ms.locfileid: "60042670"
 - Windows Server 2019
 - Windows Server 2022
 - Windows 10版本 1709 (版本 16299.1085（包含[KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
-- Windows 10版本 1803 (OS 内部版本 17134.704（包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
+- Windows 10版本 1803 (操作系统版本 17134.704（包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
 - Windows 10版本[1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019)或更高版本
 
 ## <a name="next-steps"></a>后续步骤

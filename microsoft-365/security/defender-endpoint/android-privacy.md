@@ -2,26 +2,24 @@
 title: Android 上的 Microsoft Defender for Endpoint - 隐私信息
 description: 隐私控制，如何配置影响隐私的策略设置，以及 Android 上的 Microsoft Defender for Endpoint 中收集的诊断数据信息。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， android， 隐私， 诊断
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6079c0d4a92f17c9c00fc3b3f060fec6858cb996
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 185ffab8d4fb67040d11dbf8b36459b94341a0d2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222414"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176903"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 上的 Microsoft Defender for Endpoint - 隐私信息
 
@@ -31,7 +29,7 @@ ms.locfileid: "59222414"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-Android 上的 Defender for Endpoint 从配置的 Android 设备收集信息，并存储到具有 Defender for Endpoint 的同一租户中。 该信息的收集有助于使适用于 Android 的 Endpoint 的 Defender 保持安全、最新、如预期运行并支持服务。
+Android 上的 Defender for Endpoint 从已配置的 Android 设备收集信息，并存储到具有 Defender for Endpoint 的同一租户中。 该信息的收集有助于使适用于 Android 的 Endpoint 的 Defender 保持安全、最新、如预期运行并支持服务。
 
 有关数据存储详细信息，请参阅适用于终结点数据存储[和隐私的 Microsoft Defender。](data-storage-privacy.md)
 
@@ -45,7 +43,7 @@ Android 上的 Defender for Endpoint 从配置的 Android 设备收集信息，�
 
 ### <a name="app-information"></a>应用信息
 
-有关设备上 **恶意** Android 应用程序包 (API) 的信息，包括
+有关设备上 **恶意** Android (程序包) API 的信息，包括
 
 - 安装源
 - 存储 APK (文件路径) 位置
@@ -66,7 +64,7 @@ Android 上的 Defender for Endpoint 从配置的 Android 设备收集信息，�
   - 随机生成的全局唯一标识符 (GUID) 。
 
 - 租户、设备和用户信息
-  - Azure Active Directory (AD) 设备 ID 和 Azure 用户 ID：唯一标识设备，分别在 Azure Active directory 中标识用户。
+  - Azure Active Directory (AD) 设备 ID 和 Azure 用户 ID：唯一标识设备，即 Azure Active Directory 中的用户。
   - Azure 租户 ID：用于标识组织中组织的 GUID Azure Active Directory。
   - Microsoft Defender for Endpoint 组织 ID：与设备所属的企业关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定企业以及有多少企业受到影响。
   - 用户主体名称：用户的电子邮件 ID

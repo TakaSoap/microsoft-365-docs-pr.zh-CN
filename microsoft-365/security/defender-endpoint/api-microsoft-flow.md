@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint Flow 连接器
 ms.reviewer: ''
-description: 使用 Microsoft Defender for Endpoint Flow 连接器实现安全性自动化，并创建在租户上出现新警报时触发的流。
+description: 使用 Microsoft Defender for Endpoint Flow 连接器实现安全性自动化，并创建一个流，该流将在租户上出现新警报时触发。
 keywords: 流， 受支持的 api， api， Microsoft 流， 查询， 自动化
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd3e933d759d40f41ef585f0b5bcf68229386ba1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 178e37e1906d219f7f503d6e76fad05afb09986f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201709"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208057"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (以前Microsoft Flow) 和 Azure Functions
 
@@ -37,7 +37,7 @@ ms.locfileid: "59201709"
 
 自动执行安全过程是每个新式安全操作中心的标准要求。 缺少专业网络防御者会强制 SOC 以最有效的方式工作，自动化是一项必须完成的工作。 Microsoft Power Automate支持专为这一点构建的不同连接器。 您可以几分钟内生成端到端过程自动化。
 
-Microsoft Defender API 具有官方 Power Automate 连接器，具有许多功能。
+Microsoft Defender API 具有一个Power Automate连接器，具有许多功能。
 
 ![编辑凭据的图像1。](images/api-flow-0.png)
 
@@ -55,7 +55,7 @@ Microsoft Defender API 具有官方 Power Automate 连接器，具有许多功�
 
     ![编辑凭据 2 的图像。](images/api-flow-1.png)
 
-3. 为用户选择名称Flow搜索"Microsoft Defender ATP 触发器"作为触发器，然后选择新的警报触发器。
+3. 为用户选择一个Flow，搜索"Microsoft Defender ATP 触发器"作为触发器，然后选择新的警报触发器。
 
     ![编辑凭据的图像3。](images/api-flow-2.png)
 

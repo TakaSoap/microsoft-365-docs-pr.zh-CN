@@ -1,5 +1,5 @@
 ---
-title: Advanced eDiscovery解决方案概述Microsoft 365
+title: Advanced eDiscovery中的Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - m365-security-compliance
 - m365solution-aed
@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 description: 了解 Advanced eDiscovery 中的Microsoft 365。 本文概述了 Advanced eDiscovery 中Microsoft 365，这是一种可帮助您管理内部和外部调查的工具。 它还包含使用 Advanced eDiscovery管理法律调查的业务原因。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b2806bb7c0043a9e47b07e96ab53a62725673247
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 40ff0b39f71dd124f641a60e4431aebbc2c08793
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498324"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201009"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>概述Microsoft 365 Advanced eDiscovery
 
-Advanced eDiscovery解决方案Microsoft 365现有 Microsoft 电子数据展示和分析功能。 Advanced eDiscovery提供端到端工作流，以保留、收集、分析、审阅和导出对组织内部和外部调查做出响应的内容。 它帮助法律团队管理整个法定保留通知工作流，与案件有关保管人进行沟通。
+Advanced eDiscovery解决方案Microsoft 365现有 Microsoft 电子数据展示和分析功能。 Advanced eDiscovery提供了端到端工作流，以保留、收集、分析、审阅和导出对组织内部和外部调查做出响应的内容。 它帮助法律团队管理整个法定保留通知工作流，与案件有关保管人进行沟通。
 
 ## <a name="advanced-ediscovery-capabilities"></a>Advanced eDiscovery功能
 
@@ -41,39 +41,39 @@ Advanced eDiscovery通过发现组织所存储的数据来帮助组织对法律�
 
 ### <a name="discover-and-collect-data-in-place"></a>就地发现和收集数据
 
-通常，依赖多个第三方电子数据展示解决方案的组织需要将大量数据从 Microsoft 365中处理，并且必须承载重复数据。 这一要求会增加查找相关数据的时间，以及管理多个解决方案的风险、成本和复杂性。
+通常，依赖于多个第三方电子数据展示解决方案的组织需要将大量数据从 Microsoft 365复制以处理，并且必须承载重复数据。 这一要求会增加查找相关数据的时间，以及管理多个解决方案的风险、成本和复杂性。
 
-Advanced eDiscovery Microsoft 365，你可以发现源数据并一直位于Microsoft 365安全性和合规性边界内。  通过从实时系统就地收集数据，Advanced eDiscovery 可以减少返回到源的接触，并减少必须查找缺失内容这一不必要的工作，在传统电子数据展示解决方案中记录滞后时，通常会出现这种情况。
+Advanced eDiscovery中Microsoft 365，你可以发现源数据并一直位于Microsoft 365安全性和合规性边界内。  通过从实时系统就地收集数据，Advanced eDiscovery 可以减少返回到源的接触，并减少必须查找缺失内容这一不必要的工作，在传统电子数据展示解决方案中记录滞后时，通常会出现这种情况。
 
-Teams、Yammer Online、SharePoint Online、OneDrive for Business 和 Exchange Online 中的数据的本机搜索和收集功能可进一步增强数据发现。 例如，Advanced eDiscovery：
+Teams、Yammer、SharePoint Online、OneDrive for Business 和 Exchange Online 中的数据的本机搜索和集合功能可进一步增强数据发现。 例如，Advanced eDiscovery：
 
-- 重新Teams对话 (而不是从对话或对话返回单个) 。
+- 重新Teams对话 (而不是从对话或对话中返回) 。
 
-- 收集通过电子邮件和聊天中的链接或新式附件与用户共享的基于云的Teams内容。
+- 收集在电子邮件和聊天中通过使用链接或新式附件与用户共享的Teams内容。
 
-- 内置支持数百个非Microsoft 365文件类型。
+- 内置支持数百种非Microsoft 365文件类型。
 
-- 从数据连接器导入并存档的第三 (源（如 Bloomberg、Facebook、Slack 和 Zoom 会议) ）Microsoft 365[收集数据](archiving-third-party-data.md)。
+- 收集第三方源数据 (数据连接器导入并存档的第三) 、Facebook、Slack 和 Zoom 会议[Microsoft 365。](archiving-third-party-data.md)
 
 ### <a name="manage-ediscovery-workflow-in-one-platform"></a>在一个平台中管理电子数据展示工作流
 
-Advanced eDiscovery可帮助你减少需要依赖的电子数据展示解决方案的数量。 它提供了简化的端到端工作流，所有这些操作都发生在Microsoft 365。 Advanced eDiscovery 通过自动将唯一和共享数据源映射到感兴趣的人员（称为保管人 (*) ）* 以及提供对潜在相关信息的报告和分析，在收集这些数据进行分析和审阅之前，帮助减少识别和收集潜在相关信息源的接触。
+Advanced eDiscovery可以帮助您减少需要依赖的电子数据展示解决方案的数量。 它提供了简化的端到端工作流，所有这些操作都发生在Microsoft 365。 Advanced eDiscovery 通过自动将唯一和共享数据源映射到感兴趣的人员 (称为保管人 *) ，* 以及提供对潜在相关信息的报告和分析，在收集该数据进行分析和审阅之前，帮助减少识别和收集潜在相关信息源的接触。
 
-此外，Microsoft Graph API 可以帮助你自动执行电子数据展示工作流，并扩展Advanced eDiscovery解决方案的解决方案。
+此外，Microsoft Graph API 可以帮助你自动执行电子数据展示工作流，并扩展Advanced eDiscovery自定义解决方案。
 
 ### <a name="cull-data-intelligently"></a>智能剔除数据
 
-智能的机器学习功能Advanced eDiscovery可帮助你减少要查看的数据量。 这些智能功能可帮助你减少大量的数据并剔除到相关集合。 例如，内置审阅集查询通过标识几乎重复项来帮助仅筛选唯一内容。 此功能可显著减少要审阅的数据量。
+智能、机器学习功能Advanced eDiscovery可帮助你减少要查看的数据量。 这些智能功能可帮助你减少大量的数据并剔除到相关集合。 例如，内置审阅集查询通过标识几乎重复项来帮助仅筛选唯一内容。 此功能可显著减少要审阅的数据量。
 
 其他机器学习功能可以使用智能标记和技术辅助审阅工具（如相关性模块）进一步优化和识别数据。
 
 ## <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>Advanced eDiscovery电子发现参考模型保持一致
 
-Advanced eDiscovery 中的内置工作流Microsoft 365电子数据展示过程（电子数据展示参考模型 (EDRM) ）。
+Advanced eDiscovery中的内置工作流Microsoft 365电子数据展示过程（电子数据展示参考模型 (EDRM) ）。
 
-![电子发现参考模型 (EDRM) 。](../media/EDRMv1.png)
+![电子数据发现参考模型 (EDRM) 。](../media/EDRMv1.png)
 
- (图像源的 edrm.net。 源图像在 Creative Commons Attribution 3.0 未ported License.) 
+ (图像源的 edrm.net。 源图像在 Creative Commons Attribution 3.0 Unported License.) 
 
 以下是高级电子数据展示在高级别为 EDRM 工作流提供支持的方式：
 
@@ -105,13 +105,13 @@ Advanced eDiscovery 中的内置工作流Microsoft 365电子数据展示过程�
 
   - Microsoft 365 教育版A5 或 Office 365 教育版 A5 订阅
 
-   如果你没有现有 Microsoft 365 E5 计划，并且想要尝试 Advanced eDiscovery，可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册试用 Microsoft 365 E5。 [](https://www.microsoft.com/microsoft-365/enterprise)
+   如果你没有现有 Microsoft 365 E5 计划，并且想要尝试 Advanced eDiscovery，可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册 Microsoft 365 E5。 [](https://www.microsoft.com/microsoft-365/enterprise)
 
 - **每用户许可：** 若要在高级电子数据展示案例中将用户添加为保管人，必须为该用户分配以下许可证之一，具体取决于你的组织订阅：
 
   - Microsoft 365：必须为用户分配以下项之一：
   
-    - Microsoft 365 E5许可证、E5 合规性加载项许可证或 E5 电子数据展示和审核加载项
+    - Microsoft 365 E5许可证、E5 合规性附加许可证或 E5 电子数据展示和审核加载项
 
     - Microsoft 365必须为前端用户分配 F5 合规性或 F5 安全&合规性加载项
 
@@ -119,12 +119,12 @@ Advanced eDiscovery 中的内置工作流Microsoft 365电子数据展示过程�
 
   - Office 365：必须为用户分配Office 365 E5或Office 365 教育版 A5 许可证。
 
-有关许可的信息，请下载并参阅比较表 中的"电子数据展示Microsoft 365[审核"部分](https://go.microsoft.com/fwlink/?linkid=2139145)。
+有关许可的信息，请下载并参阅比较表 中的"电子数据展示和Microsoft 365[部分](https://go.microsoft.com/fwlink/?linkid=2139145)。
 
 若要了解如何分配许可证，请参阅 [向用户分配许可证](/microsoft-365/admin/manage/assign-licenses-to-users)。
 
 > [!NOTE]
-> 用户只需要 E5 或 A5 许可证 (或相应的附加许可证) 作为保管人添加到Advanced eDiscovery案例。 使用 Advanced eDiscovery 管理事例和审查事例数据的 IT 管理员、电子数据展示管理员、律师、律师或律师不需要 E5、A5 或附加许可证。
+> 用户只需要 E5 或 A5 许可证 (或相应的附加许可证) 作为保管人添加到 Advanced eDiscovery 案例。 使用 Advanced eDiscovery 管理事例和审查事例数据的 IT 管理员、电子数据展示管理员、律师、律师或律师不需要 E5、A5 或附加许可证。
 
 ## <a name="get-started-with-advanced-ediscovery"></a>高级电子数据展示入门
 
@@ -132,7 +132,7 @@ Advanced eDiscovery 中的内置工作流Microsoft 365电子数据展示过程�
 
 ![工作流入门Advanced eDiscovery。](../media/get-started-AeD.png)
 
-|步骤  |描述  |
+|步骤  |说明  |
 |:---------|:---------|
 |[设置高级电子数据展示](get-started-with-advanced-ediscovery.md)| 在验证订阅和许可要求后，你可以分配权限并配置组织范围的设置以开始使用Advanced eDiscovery。|
 |[创建和管理事例](create-and-manage-advanced-ediscoveryv2-case.md) | 创建案例以Advanced eDiscovery组织中所有法律和其他类型的调查的工作流。|
@@ -152,4 +152,4 @@ Advanced eDiscovery 中的内置工作流Microsoft 365电子数据展示过程�
 
 ## <a name="training"></a>培训
 
-在 Advanced eDiscovery 基础知识中培训 IT 管理员、电子数据展示管理员和合规性调查团队，可帮助组织使用 Microsoft 365 电子数据展示工具更快入门。 Microsoft 365提供了以下资源来帮助贵组织中这些用户开始使用电子数据展示：描述 Microsoft 365 电子数据展示[和审核Microsoft 365。](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)
+在 Advanced eDiscovery 基础知识中培训 IT 管理员、电子数据展示管理员和合规性调查团队，可帮助组织使用 Microsoft 365 电子数据展示工具更快入门。 Microsoft 365提供了以下资源，可帮助贵组织中开始使用电子数据展示的用户：介绍电子数据展示和[Microsoft 365。](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)

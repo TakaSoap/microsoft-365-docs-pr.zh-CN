@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 你可以做什么来帮助保护你的市场活动免受数字攻击。
-ms.openlocfilehash: 66c59ecac414ce8b4dd297fe655e60386fa7ea16
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad286e8d656995d3c59238c847ff4296b3e7196d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200697"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200709"
 ---
 # <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>信息图：帮助保护你自己和市场活动免受数字威胁
 
-可以下载并打印以下有关 PowerPoint 和 PDF 的链接，格式为 (分类帐、11 x 17 或 A3) 。
+可以下载并打印 PowerPoint 和 PDF 的以下链接，格式为 (分类帐、11 x 17 或 A3) 。
 
 [![用于保护你的帮助保护市场活动信息图形的图像。](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 

@@ -9,18 +9,18 @@ ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: 在企业测试环境中配置基于组的许可和Microsoft 365组成员身份。
-ms.openlocfilehash: 7d754b937296fbd852904022c45492b6890f2f04
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 在企业测试环境中，在 Microsoft 365配置基于组的许可和动态组成员身份。
+ms.openlocfilehash: 38d41ec16812517ed7db9164a7cec49cd3f5512e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196819"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207111"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>针对企业测试环境自动Microsoft 365和组成员身份
 
@@ -28,7 +28,7 @@ ms.locfileid: "59196819"
 
 基于组的许可根据组成员身份自动分配或删除用户帐户的许可证。 动态组成员身份基于用户帐户属性（如部门或国家/地区）向组添加或删除 **成员**。  本文将分步演示在企业测试环境中在 Microsoft 365 中添加和删除组成员。
 
-在适用于企业测试环境的 Microsoft 365设置自动许可和动态组成员身份包括两个阶段：
+在企业测试环境环境中Microsoft 365自动许可和动态组成员身份包括两个阶段：
 
 - [第 1 阶段：构建Microsoft 365测试环境](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [阶段 2：配置和测试动态组成员身份和自动许可](#phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing)
@@ -45,7 +45,7 @@ ms.locfileid: "59196819"
 如果要在模拟的企业中测试自动许可和组成员身份，请按照传递身份验证 [中的说明操作](pass-through-auth-m365-ent-test-environment.md)。
   
 > [!NOTE]
-> 测试自动许可和组成员身份不需要模拟的企业测试环境，该环境中包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 目录同步。 它在此处作为一个选项提供，以便你可以测试自动许可和组成员身份，并尝试在代表典型组织的环境中进行试验。
+> 测试自动许可和组成员身份不需要模拟的企业测试环境，该环境中包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 的目录同步。 它在此处作为一个选项提供，以便你可以测试自动许可和组成员身份，并尝试在代表典型组织的环境中进行试验。
   
 ## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>阶段 2：配置和测试动态组成员身份和自动许可
 
@@ -69,12 +69,12 @@ ms.locfileid: "59196819"
 接下来，配置"销售"组，以便自动为成员分配Microsoft 365 E5许可证。
 
 1. 选择"**销售"** 组，然后选择"许可证 **"。**
-2. 在"**更新许可证分配"** 窗格中，选择 **"Microsoft 365 E5"，** 然后选择"保存 **"。**
+2. 在"**更新许可证分配**"窗格中，选择 **"Microsoft 365 E5"，** 然后选择"保存 **"。**
 3. 在浏览器中，关闭 Azure 门户选项卡。
 
 接下来，在 User 4 帐户上测试动态组成员身份和自动许可：
 
-1. 从浏览器 **Microsoft Office** 主页"选项卡中，选择"**管理员"。**
+1. 从浏览器 **Microsoft Office主页**"选项卡中，选择"管理员 **"。**
 2. 从 **"Microsoft 365 管理中心"** 选项卡中，选择"**活动用户"。**
 3. 在" **活动用户"** 页上，选择 **"用户 4"** 帐户。
 4. 在"**用户 4"** 窗格中，为 **"产品许可证****"选择"编辑"。**
@@ -88,7 +88,7 @@ ms.locfileid: "59196819"
 随着时间的推移，你应该会看到：
 
 - **使用 Sales 组** 更新的组 **成员身份** 属性。
-- **使用产品** 许可证 **更新Microsoft 365 E5属性**。
+- **使用产品** 许可证更新 **Microsoft 365 E5属性。**
 
 请参阅以下文章以在生产中部署动态组成员身份和自动许可：
 

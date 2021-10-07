@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何设置自定义连接器以从数据源（如 Salesforce Chatter、Yahoo Messenger 或 Yammer）导入第三方数据。
-ms.openlocfilehash: 7e82f114138a8f1f8ac9eb4563ce1434e6c26167
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: 5b6bbab9ff6ad54440fc84213d3e810c863ebef4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011232"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200181"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>与合作伙伴联系以存档第三方数据
 
@@ -52,7 +52,7 @@ ms.locfileid: "60011232"
 
 2. 合作伙伴连接器通过计划或配置的第三方 API (连接到第三方数据源) 并从数据源中提取项目。 合作伙伴连接器将项目内容转换为电子邮件格式。 有关 [邮件格式](#more-information) 架构的说明，请参阅详细信息部分。
 
-3. 合作伙伴连接器通过已知的Microsoft 365使用 Exchange Web 服务 (EWS) 连接到 Azure 服务。
+3. 合作伙伴连接器使用 Exchange Web 服务 (EWS) 连接到 Microsoft 365 中的 Azure 服务。
 
 4. 项目便导入到特定用户的邮箱或“catch-all”第三方数据邮箱。无论项目是导入到特定用户邮箱还是第三方数据邮箱，都要基于以下条件：
 
@@ -62,9 +62,9 @@ ms.locfileid: "60011232"
 
 ## <a name="step-1-find-a-third-party-data-partner"></a>步骤 1：寻找第三方数据合作伙伴
 
-在 Microsoft 365 中存档第三方数据的一个关键组件是查找并与专门捕获第三方数据源数据并导入到第三方数据源的 Microsoft 合作伙伴Microsoft 365。 导入数据后，可以将其与组织的其他 Microsoft 数据（如来自 Exchange 的电子邮件以及来自 SharePoint 和 OneDrive for Business 的文档）一起存档和OneDrive for Business。 合作伙伴创建一个连接器，从组织的第三方数据源 (如 BlackBerry、Facebook、Google+、Thomson Reuters、Twitter 和 YouTube) 中提取数据，将数据传递给将项目作为电子邮件导入 Exchange 邮箱的 Microsoft 365 API。
+在 Microsoft 365 中存档第三方数据的一个关键组件是查找并与专门捕获来自第三方数据源的数据并导入到第三方数据源的 Microsoft 合作伙伴Microsoft 365。 导入数据后，可以将其与组织的其他 Microsoft 数据（如来自 Exchange 的电子邮件以及来自 SharePoint 和 OneDrive for Business 的文档一起存档和OneDrive for Business。 合作伙伴创建一个连接器，从组织的第三方数据源 (如 BlackBerry、Facebook、Google+、Thomson Reuters、Twitter 和 YouTube) 中提取数据，将数据传递给将项目作为电子邮件导入 Exchange 邮箱的 Microsoft 365 API。
 
-以下各节列出 Microsoft 合作伙伴 (他们支持的第三方数据源) 参与计划以在 Microsoft 365 中存档第三方数据。
+以下各节列出了 Microsoft 合作伙伴 (他们支持的第三方数据源) 参与计划以在 Microsoft 365 中存档第三方数据。
 
 [17a-4 LLC](#17a-4-llc)
 
@@ -471,13 +471,13 @@ ms.locfileid: "60011232"
 
 ## <a name="step-2-create-and-configure-a-third-party-data-mailbox-in-microsoft-365"></a>步骤 2：在邮箱中创建和配置第三方数据Microsoft 365
 
-以下是创建和配置第三方数据邮箱以将数据导入到数据Microsoft 365。 如上所述，如果合作伙伴连接器无法将项目的用户 ID 映射到用户帐户，则项目将导入到此邮箱。
+以下是创建和配置第三方数据邮箱以将数据导入到 Microsoft 365。 如上所述，如果合作伙伴连接器无法将项目的用户 ID 映射到用户帐户，则项目将导入到此邮箱。
 
  **在任务分配中Microsoft 365 管理中心**
 
 1. 创建用户帐户并将其分配给Exchange Online 2 许可证;请参阅[将用户添加到Microsoft 365。](../admin/add-users/add-users.md) 需要计划 2 许可证才能将邮箱置于诉讼保留状态或启用存储配额高达 1.5 TB 的存档邮箱。
 
-2. 将第三方数据邮箱的用户帐户添加到 Exchange **管理员** Microsoft 365角色中;请参阅 [分配管理员角色Microsoft 365。](../admin/add-users/assign-admin-roles.md)
+2. 将第三方数据邮箱的用户帐户添加到 Exchange **管理员** Microsoft 365角色;请参阅 [分配管理员角色Microsoft 365。](../admin/add-users/assign-admin-roles.md)
 
     > [!TIP]
     > 写下此用户帐户的凭据。您需要将它们提供给您的合作伙伴，如步骤 4 中所述。
@@ -490,13 +490,13 @@ ms.locfileid: "60011232"
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
     ```
 
-2. 向第三方数据邮箱分配 **FullAccess** 权限，以便管理员或合规部官员可以在 Outlook客户端中打开第三方数据邮箱;请参阅 [管理收件人的权限](https://go.microsoft.com/fwlink/p/?LinkId=692104)。
+2. 为第三方数据邮箱分配 **FullAccess** 权限，以便管理员或合规部官员可以在桌面客户端中Outlook第三方数据邮箱;请参阅 [管理收件人的权限](https://go.microsoft.com/fwlink/p/?LinkId=692104)。
 
 3. 为第三方数据邮箱启用以下合规性相关功能：
 
     - 启用存档邮箱;请参阅[启用存档邮箱和](enable-archive-mailboxes.md)[启用自动扩展存档](enable-autoexpanding-archiving.md)。 这样，您通过设置存档策略（将第三方数据项目移动到存档邮箱）释放主邮箱中的存储空间。 这为第三方数据提供了高达 1.5 TB 的存储。
 
-    - 将第三方数据邮箱置于诉讼保留的位置。 您还可以在安全与Microsoft 365中应用保留策略。 保留此邮箱会无限期保留第三 (或保留指定的持续时间) 并阻止将其从邮箱中清除。 请参阅下列主题之一：
+    - 将第三方数据邮箱置于诉讼保留的位置。 您还可以在安全Microsoft 365中心应用策略策略。 保留此邮箱会无限期保留第三 (或保留指定的持续时间) 并阻止将其从邮箱中清除。 请参阅下列主题之一：
 
       - [将邮箱置于诉讼保留状态](./create-a-litigation-hold.md)
 
@@ -534,7 +534,7 @@ ms.locfileid: "60011232"
 
 从 2018 年 9 月 30 开始，Microsoft 365 中的 Azure 服务将开始使用 Exchange Online 中的新式验证来验证尝试连接到组织以导入数据的第三方数据连接器。 进行此更改的原因是，新式身份验证提供比当前方法更多的安全性，当前方法基于使用前面所述的终结点连接到 Azure 服务的第三方连接器的允许列表。
 
-若要使第三方数据连接器能够使用新的新式身份验证Microsoft 365连接到连接器，您组织的管理员必须同意在 Azure Active Directory 中将连接器注册为受信任的服务应用程序。 这是通过接受允许连接器访问组织中组织的数据的权限请求Azure Active Directory。 接受此请求后，第三方数据连接器将添加为企业应用程序，Azure Active Directory表示为服务主体。 有关同意过程详细信息，请参阅租户  [管理员同意](/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
+若要使第三方数据连接器能够使用新的新式Microsoft 365连接到服务器，您组织的管理员必须同意在 Azure Active Directory 中将连接器注册为受信任的服务应用程序。 这是通过接受允许连接器访问组织中组织数据的权限请求Azure Active Directory。 接受此请求后，第三方数据连接器将添加为企业应用程序以Azure Active Directory表示为服务主体。 有关同意过程详细信息，请参阅租户  [管理员同意](/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
 
 以下是访问和接受连接器注册请求的步骤：
 
@@ -549,21 +549,21 @@ ms.locfileid: "60011232"
 接受请求后， [将显示 Azure](https://portal.azure.com) 门户。 若要查看组织的应用程序列表，请单击 **"Azure Active Directory Enterprise**  >  **应用程序"。** 第Microsoft 365第三方数据连接器列于"Enterprise **应用程序"边栏** 选项卡上。
 
 > [!IMPORTANT]
-> 2018 年 9 月 30 日之后，如果您没有在组织中注册第三方数据连接器，则第三方数据将不再导入到Azure Active Directory。 请注意，2018 (2018 年 9 月 30) 之前创建的现有第三方数据连接器也必须按照步骤 5 中的过程在 Azure Active Directory 中注册。
+> 2018 年 9 月 30 日之后，如果您没有在 Azure Active Directory 中注册第三方数据连接器，则第三方数据将不再导入到您组织的邮箱中。 请注意，在 2018 (2018 年 9 月 30) 之前创建的现有第三方数据连接器也必须按照步骤 5 中的过程在 Azure Active Directory 中注册。
 
 ### <a name="revoking-consent-for-a-third-party-data-connector"></a>撤销第三方数据连接器的同意
 
-在贵组织同意在 Azure Active Directory 中注册第三方数据连接器的权限请求后，您的组织可以随时撤销该同意。 但是，撤销对连接器的同意意味着来自第三方数据源的数据将不再导入Microsoft 365。
+在贵组织同意在 Azure Active Directory 中注册第三方数据连接器的权限请求后，组织可以随时撤销该同意。 但是，撤销对连接器的同意意味着来自第三方数据源的数据将不再导入Microsoft 365。
 
-若要撤销第三方数据连接器的同意，可以通过使用 Azure 门户中的 **Enterprise** 应用程序边栏选项卡从 Azure Active Directory 中删除相应的服务主体) ，或在 Microsoft 365 PowerShell 中使用 [Remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal)删除应用程序 (。 您还可以在 PowerShell 中使用[Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet Azure Active Directory Cmdlet。
+若要撤销第三方数据连接器的同意，可以在 Azure 门户使用 **Enterprise** 应用程序边栏选项卡，或者使用 Microsoft 365 PowerShell 中的 [Remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal)从 Azure Active Directory 中删除相应的服务主体) ，以删除应用程序 (。 您还可以在 PowerShell 中使用[Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet Azure Active Directory Cmdlet。
 
 ## <a name="more-information"></a>更多信息
 
-- 如前所述，第三方数据源中的项目将作为电子邮件导入到 Exchange 邮箱。 合作伙伴连接器使用应用程序 API 所需的架构导入Microsoft 365项。 下表介绍了第三方数据源中的项目作为电子邮件导入到 Exchange 邮箱之后的邮件属性。 该表还指出该邮件属性是否是强制属性。 必须填充强制属性。 如果某个项目缺少强制属性，则它不会导入到Microsoft 365。 导入过程返回一条错误消息，说明未导入项目的原因以及缺少的属性。<br/><br/>
+- 如前所述，第三方数据源中的项目将作为电子邮件导入到 Exchange 邮箱。 合作伙伴连接器使用 Microsoft 365 API 所需的架构导入项目。 下表介绍了第三方数据源中的项目作为电子邮件导入到 Exchange 邮箱之后的邮件属性。 该表还指出该邮件属性是否是强制属性。 必须填充强制属性。 如果某个项目缺少强制属性，则它不会导入到Microsoft 365。 导入过程返回一条错误消息，说明未导入项目的原因以及缺少的属性。<br/><br/>
 
     |**邮件属性**|**强制？**|**说明**|**示例值**|
     |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |是  <br/> |最初创建或发送第三方数据源中的项目的用户。 合作伙伴连接器尝试将源项目的用户 ID 映射到源项目 (例如 Twitter 句柄) 映射到"FROM"和"TO"字段中 (用户的所有参与者的用户帐户) 。 邮件的副本将导入到每个参与者的邮箱中。 如果无法将项目参与者映射到用户帐户，该项目将导入到 Microsoft 365 中第三方存档邮箱。  <br/> <br/> 被标识为项目发件人的参与者在将项目导入到的组织中必须具有活动邮箱。 如果发件人没有活动邮箱，则会返回以下错误：<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**FROM** <br/> |是  <br/> |最初创建或发送第三方数据源中的项目的用户。 合作伙伴连接器尝试将源项目的用户 ID (例如 Twitter 句柄) 映射到"FROM"和"TO"字段中 (用户的所有参与者的用户帐户) 。 邮件的副本将导入到每个参与者的邮箱中。 如果无法将此项目中的参与者映射到用户帐户，该项目将导入到 Microsoft 365 中第三方存档邮箱。  <br/> <br/> 被标识为项目发件人的参与者在将项目导入到的组织中必须具有活动邮箱。 如果发件人没有活动邮箱，则会返回以下错误：<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |是  <br/> |接收项目的用户（如果适用于数据源中的项目）。  <br/> | `bob@contoso.com` <br/> |
     |**主题** <br/> |否  <br/> |源项目中的主题。  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
     |**DATE** <br/> |是  <br/> |最初在客户数据源中创建或发布项目的日期。 例如，Twitter 消息推文的日期。  <br/> | `01 NOV 2015` <br/> |

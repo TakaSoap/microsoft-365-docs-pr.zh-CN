@@ -5,17 +5,17 @@ keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 20af244d14f8f29e0175fb5e8efdabff94ff9a2b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c10d7f59f31b3cfbd8baf34247e9fc4288751dd9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196652"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208081"
 ---
 # <a name="service-changes-and-communication"></a>服务更改和通信
 
@@ -47,7 +47,7 @@ ms.locfileid: "59196652"
 - 应用于设备的安全基线更新
 - 支持的设备。 To see recommended devices， filter for Microsoft 托管桌面 on the [Shop Windows 10 专业版 business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site.
 
-我们将使用已建立的渠道来传达这些更改。 如果对任何更改有任何疑问，请联系 Microsoft 托管桌面[Operations 团队](../working-with-managed-desktop/admin-support.md)。 对服务所做的更改也会根据需要记录在更改 [历史记录中](../change-history-managed-desktop.md)。
+我们将使用既定渠道传达这些更改。 如果你有关于任何更改的任何问题，请联系Microsoft 托管桌面[团队。](../working-with-managed-desktop/admin-support.md) 对服务所做的更改也会根据需要记录在更改 [历史记录中](../change-history-managed-desktop.md)。
 
 Microsoft 托管桌面更改和通信受两个 Microsoft 策略控制：
 - [新式生命周期策略](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
@@ -55,7 +55,7 @@ Microsoft 托管桌面更改和通信受两个 Microsoft 策略控制：
 
 ## <a name="changes-you-make"></a>所做的更改
 
-您可能在环境中进行一些更改可能会影响Microsoft 托管桌面。 对于这些重大更改，我们要求你在管理门户中提交服务请求，至少提前 30 Microsoft 托管桌面通知。 有关[说明，请参阅Microsoft 托管桌面](../working-with-managed-desktop/admin-support.md)管理员支持。 这样，我们有足够的时间来计划和准备更改，以避免中断。
+您可能在环境中进行一些更改可能会影响Microsoft 托管桌面。 对于这些重大更改，我们要求你通过提交管理门户中的服务请求，至少提前 30 Microsoft 托管桌面通知。 有关[说明，请参阅Microsoft 托管桌面](../working-with-managed-desktop/admin-support.md)支持。 这样，我们有足够的时间来计划和准备更改，以避免中断。
 
 主要更改是可能会影响以下任一领域的更改：
 
@@ -65,11 +65,11 @@ Microsoft 托管桌面更改和通信受两个 Microsoft 策略控制：
 - 用于标识或保护网络服务的用户或设备证书
 - 与服务交互的管理系统
 - 与服务交互的安全系统或代理
-- 与该服务关联Microsoft 365或由该服务使用的任何云服务的配置
+- 与服务Microsoft 365或由该服务使用的任何云服务的配置
 
 这些更改不太可能造成中断，因此无需提前告诉我们这些更改：
 
 - 孤立对象清理
 - 在服务中添加或删除用户
-- 对交付项目没有实质性影响的系统的Microsoft 托管桌面
+- 对交付项目没有重大影响的系统的Microsoft 托管桌面
 - 应用程序版本更新，VPN 或代理应用程序除外

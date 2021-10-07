@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
-description: 管理员可以设置本机连接器，以将 Twitter 数据导入和存档到Microsoft 365。 在将数据导入到 Microsoft 365后，可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的 Twitter 数据的管理。
-ms.openlocfilehash: 52f5e426aa2f5fe90d067879fcf39f97d435a2a1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 管理员可以设置本机连接器，以将 Twitter 数据导入和存档到Microsoft 365。 在将数据导入Microsoft 365，您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的 Twitter 数据的管理。
+ms.openlocfilehash: 478731bc2855b199888311377c21f09aac17fcf1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175633"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193443"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>部署连接器以存档 Twitter 数据
 
@@ -36,7 +36,7 @@ ms.locfileid: "59175633"
 
    ![转到Azure Active Directory。](../media/TCimage02.png)
 
-3. 在左侧导航窗格中，单击"预览 (**应用**) ，然后单击"新建 **注册"。**
+3. 在左侧导航窗格中，单击"应用注册 (**预览**) 然后单击"新建 **注册"。**
 
    ![创建新的应用注册。](../media/TCimage03.png)
 
@@ -44,11 +44,11 @@ ms.locfileid: "59175633"
 
    ![键入 https://portal.azure.com 重定向 URI。](../media/TCimage04.png)
 
-5. 复制 **应用程序 (客户端) ID (** Directory) **ID，** 并将其保存到文本文件或其他安全位置。 在稍后的步骤中使用这些 ID。
+5. 复制 **应用程序 (客户端) ID (** Directory) **ID，并将其** 保存到文本文件或其他安全位置。 在稍后的步骤中使用这些 ID。
 
     ![复制并保存应用程序 ID 和目录 ID。](../media/TCimage05.png)
 
-6. 转到"**证书&应用密码"，在**"客户端密码"下 **单击"****新建客户端密码"。**
+6. 转到"**证书&应用密码"，在**"客户端密码"下单击"**新建客户端密码"。**
 
    ![创建新的客户端密码。](../media/TCimage06.png)
 
@@ -114,7 +114,7 @@ ms.locfileid: "59175633"
 
    ![配置权限。](../media/TCimage30.png)
 
-7. 保存权限设置后，单击"应用详细信息 **"选项卡，** 然后单击"编辑>**详细信息"。**
+7. 保存权限设置后，单击"应用详细信息 **"选项卡，** 然后单击"编辑>**编辑详细信息"。**
 
    ![编辑应用详细信息。](../media/TCimage31.png)
 
@@ -130,7 +130,7 @@ Twitter 开发人员应用现在可供使用。
 
 ## <a name="step-4-configure-the-connector-web-app"></a>步骤 4：配置连接器 Web 应用
 
-1. 转到 https:// \<AzureAppResourceName> .azurewebsites.net (，其中 **AzureAppResourceName** 是你在步骤 4) 中指定的 Azure 应用资源的名称。 例如，如果名称为 **twitterconnector**，请转到 https://twitterconnector.azurewebsites.net 。 应用程序的主页类似于以下屏幕截图：
+1. 转到 https:// \<AzureAppResourceName> .azurewebsites.net (，其中 **AzureAppResourceName** 是你在步骤 4) 中命名的 Azure 应用资源的名称。 例如，如果名称为 **twitterconnector**，请转到 https://twitterconnector.azurewebsites.net 。 应用程序的主页类似于以下屏幕截图：
 
    ![转到 Azure 应用资源页面。](../media/FBCimage41.png)
 
@@ -138,7 +138,7 @@ Twitter 开发人员应用现在可供使用。
 
    ![单击"配置"显示登录页。](../media/FBCimage42.png)
 
-3. 在"租户 ID"框中，键入或粘贴 (步骤 2) 中获取的租户 ID。 在密码框中，键入或粘贴在步骤 2) 中获取的 APISecretKey (，然后单击"设置配置 **设置"** 以显示配置详细信息页。
+3. 在"租户 ID"框中，键入或粘贴 (步骤 2 中获取的租户 ID) 。 在密码框中，键入或粘贴在步骤 2) 获取的 APISecretKey (，然后单击"设置配置 **设置"** 以显示配置详细信息页。
 
    ![使用租户 ID 和 API 密钥登录。](../media/TCimage35.png)
 
@@ -182,7 +182,7 @@ Twitter 开发人员应用现在可供使用。
 
 6. 成功验证连接后，单击"下一 **步"。**
 
-7. 在"**授权Microsoft 365"页上**，再次键入或粘贴 APISecretKey，然后单击"**登录 Web 应用"。**
+7. 在"**授权Microsoft 365数据"** 页上，再次键入或粘贴 APISecretKey，然后单击"登录 Web **应用"。**
 
 8. 单击 **"使用 Twitter 登录"。**
 

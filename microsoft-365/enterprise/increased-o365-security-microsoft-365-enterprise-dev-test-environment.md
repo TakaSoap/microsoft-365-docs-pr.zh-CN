@@ -1,5 +1,5 @@
 ---
-title: 为Microsoft 365测试环境Microsoft 365安全性提高
+title: 提高了Microsoft 365测试环境Microsoft 365的安全性
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -9,25 +9,25 @@ ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: 使用此测试实验室指南为企业Microsoft 365环境启用Microsoft 365安全设置。
-ms.openlocfilehash: 7598ade331ae340ede52f4c47375aebba792eb84
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 使用此测试实验室指南为Microsoft 365环境启用Microsoft 365安全设置。
+ms.openlocfilehash: 2042148c0738ab1304ec721cdb00ce22b427dc72
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196803"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200157"
 ---
-# <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>为Microsoft 365测试环境Microsoft 365安全性提高
+# <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>提高了Microsoft 365测试环境Microsoft 365的安全性
 
 *本测试实验室指南只能用于Microsoft 365测试环境。*
 
-按照本文中的说明，配置其他 Microsoft 365 设置以提高企业测试Microsoft 365的安全性。
+按照本文中的说明，配置其他Microsoft 365设置以提高企业测试Microsoft 365的安全性。
 
 ![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -43,9 +43,9 @@ ms.locfileid: "59196803"
 > [!NOTE]
 > 测试Microsoft 365安全性不需要模拟的企业测试环境，该环境包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 的目录同步。 它在此处作为一个选项提供，以便你可以测试自动许可和组成员身份，并尝试在代表典型组织的环境中进行试验。 
 
-## <a name="phase-2-configure-increased-microsoft-365-security"></a>第 2 阶段：配置Microsoft 365安全性
+## <a name="phase-2-configure-increased-microsoft-365-security"></a>阶段 2：配置增强Microsoft 365安全性
 
-在此阶段中，为企业Microsoft 365环境启用Microsoft 365安全性提高。 有关其他详细信息和设置，请参阅 [配置租户以提升安全性](/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
+在此阶段中，为企业Microsoft 365环境Microsoft 365安全性提高。 有关其他详细信息和设置，请参阅 [配置租户以提升安全性](/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>配置 SharePoint Online 以阻止不支持新式验证的应用
 
@@ -55,24 +55,24 @@ ms.locfileid: "59196803"
     
   - 如果你使用的是轻型测试Microsoft 365，请从本地计算机登录。
     
-  - 如果你使用的是模拟的企业Microsoft 365测试环境，请使用[Azure](https://portal.azure.com)门户连接到 CLIENT1 虚拟机，然后从 CLIENT1 登录。
+  - 如果你使用的是模拟的企业Microsoft 365环境，请使用[Azure](https://portal.azure.com)门户连接到 CLIENT1 虚拟机，然后从 CLIENT1 登录。
  
-2. 在新的 **"Microsoft 365 管理中心"** 选项卡上，在 **左侧导航窗格中** 的"管理中心"下，单击"SharePoint"。 
-3. 在"管理 **SharePoint"选项卡上**，单击"访问控制 **>策略"。**
+2. 在新的 **"Microsoft 365 管理中心"** 选项卡上，在左侧导航 **窗格中的**"管理中心"下，单击 **"SharePoint"。**
+3. 在"管理 **SharePoint"选项卡上**，单击">**访问控制"。**
 4. 单击 **不支持新式验证的应用，选择**"**阻止访问**"，然后单击"保存 **"。**
 
 
 ### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>启用 Defender for Office 365 for SharePoint、OneDrive for Business 和 Microsoft Teams
 
-适用于 Office 365、SharePoint、OneDrive 和 Microsoft Teams 的 Defender，可保护你的组织避免意外共享恶意文件。
+defender for Office 365 for SharePoint， OneDrive， and Microsoft Teams保护你的组织避免意外共享恶意文件。
 
 1. 转到安全 [与&](https://protection.office.com) 中心，然后使用全局管理员帐户登录。
 
 2. 在左侧导航窗格中 **的"威胁** 管理"下，单击"策略"，然后单击"保险箱 **附件"。** 
 
-3. 在 **"保护文件SharePoint、OneDrive和Microsoft Teams"** 下。 选择 **打开 ATP SharePoint、OneDrive和Microsoft Teams。**
+3. 在 **"保护文件SharePoint、OneDrive和Microsoft Teams 下**。 选择 **打开 ATP 作为SharePoint、OneDrive和Microsoft Teams。**
 
-4. 单击“保存”。
+4. 单击“**保存**”。
 
 
 ### <a name="enable-anti-malware"></a>启用反恶意软件

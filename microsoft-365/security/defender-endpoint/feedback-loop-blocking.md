@@ -11,18 +11,18 @@ ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: adff178601ea5db452c94c3e2c1255e9820a8246
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: c5ef1b39856a8f54432789566355875a7b256fcb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490783"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176855"
 ---
 # <a name="feedback-loop-blocking"></a>反馈循环阻止
 
@@ -40,12 +40,12 @@ ms.locfileid: "59490783"
 
 当检测到可疑行为或文件时（如通过[Microsoft Defender 防病毒）时](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)，有关项目的信息将被发送到多个分类器。 快速保护循环引擎检查信息并将信息与其他信号关联，以决定是否阻止文件。 检查项目并对这些项目进行分类会快速发生。 它可快速阻止已确认的恶意软件，并驱动整个生态系统的保护。 
 
-通过快速保护，攻击可以在设备、组织的其他设备和其他组织中的设备上停止，因为攻击尝试扩大其位置。
+借助快速保护，攻击可以在设备、组织的其他设备和其他组织中的设备上停止，因为攻击尝试扩大其位置。
 
 
 ## <a name="configuring-feedback-loop-blocking"></a>配置反馈循环阻止
 
-如果你的组织对终结点使用 Defender，则默认启用反馈循环阻止。 但是，通过结合使用 Defender for Endpoint 功能、机器学习保护功能和 Microsoft 安全服务中的信号共享，可以快速提供保护。 确保已启用和配置 Defender for Endpoint 的以下特性和功能：
+如果你的组织对终结点使用 Defender，则默认启用反馈循环阻止。 但是，通过结合使用 Defender for Endpoint 功能、机器学习保护功能和 Microsoft 安全服务中的信号共享，可快速提供保护。 确保已启用和配置 Defender for Endpoint 的以下特性和功能：
 
 - [适用于终结点的 Microsoft Defender 基线](/microsoft-365/security/defender-endpoint/configure-machines-security-baseline)
 

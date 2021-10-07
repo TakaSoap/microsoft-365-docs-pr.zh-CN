@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 74a063c1ea3337f7f56340ee3f39d0df49a6b7ea
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f808e238ba8f214bae62f971ee69e4455840f89f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201481"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207039"
 ---
 # <a name="get-file-information-api"></a>获取文件信息 API
 
@@ -47,11 +47,11 @@ ms.locfileid: "59201481"
 
 ## <a name="permissions"></a>权限
 
-若要调用此 API，需要以下权限之一。 若要了解更多信息，包括如何选择权限，请参阅使用适用于终结点 API[的 Microsoft Defender。](apis-intro.md)
+若要调用此 API，需要以下权限之一。 若要了解更多信息，包括如何选择权限，请参阅使用[Microsoft Defender for Endpoint API。](apis-intro.md)
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|File.Read.All|"读取所有文件配置文件"
+Application|File.Read.All|"读取所有文件配置文件"
 委派（工作或学校帐户）|File.Read.All|"读取所有文件配置文件"
 
 > [!NOTE]
@@ -69,7 +69,7 @@ GET /api/files/{id}
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|字符串|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

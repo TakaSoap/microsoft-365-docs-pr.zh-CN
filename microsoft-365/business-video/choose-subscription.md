@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解Microsoft 365哪个订阅适合你的组织。
-ms.openlocfilehash: 4c1bd7ac67cd44baa8317295ade0e5525764b523
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: ecc3a494412fa8f1da1be16a55d3f7093d0fe2d3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011400"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200757"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>选择Microsoft 365订阅
 
@@ -40,16 +40,16 @@ ms.locfileid: "60011400"
 3. 向下滚动以查看每个选项可用的功能。
 4. 如果你有一个较大业务或具有复杂的 IT 需求，请向下滚动并选择 **"Microsoft 365 企业版"。**
 5. 选择 **"查看产品和计划**"，然后查看Enterprise及其功能。
-6. 一旦&#39;决定订阅，请选择"立即购买"，然后完成注册过程。
+6. 在&#39;决定订阅后，选择"立即购买"，然后完成注册过程。
 
 ## <a name="compare-plans"></a>比较各计划
 
 | 服务区域 | 功能 | Microsoft 365 商业标准版 | Microsoft 365 商业高级版 | Office 365 企业版 E3 |
 | --- | --- | --- | --- | --- |
 | **可用的许可证** | 最大用户数 | 300 | 300 | 无限制 |
-| **Office 应用** | 在最多 5 台电脑/Mac 上安装 (Word、Excel、PowerPoint、OneNote、Access) 、Office Online 上的 Office。 | 商业版 | 商业版 | ProPlus |
+| **Office 应用** | 在最多 5 台电脑/Mac 上安装 (Word、Excel、PowerPoint、OneNote、Access) 、Office Online 上的 Office 智能手机 | 商业版 | 商业版 | ProPlus |
 | **电子邮件 &amp; 日历** | Outlook、Exchange Online | 50 GB | 50 GB | 100 GB |
-| **团队合作中心** | 基于聊天的工作区、联机会议等Microsoft Teams | 是 | 是 | 是 |
+| **团队合作中心** | 聊天室中基于聊天的工作区、联机会议Microsoft Teams | 是 | 是 | 是 |
 | **文件存储** | OneDrive for Business | 每个用户 1 TB | 每个用户 1 TB | 无限制 |
 | **社交、视频、网站** | Stream、Yammer、Planner、SharePoint \* \* Online、Power Apps、Power Automate\* | 是 | 是 | 是 |
 | **业务应用** | 计划应用 - 预订\*\* | 是 | 是 | 是 |
@@ -66,10 +66,10 @@ ms.locfileid: "60011400"
 | **本地 CAL 权限** | ECAL 套件 (Exchange、SharePoint、Skype)  | 否 | 否 | 是 |
 | **合规性** | 其他电子邮件存档\*\*\* | 否 | 是 | 是 |
 
-\*指示Microsoft 365 商业标准版计划 1 的功能，并且Office 365 企业版 E3 具有计划 2。
+\*指示Microsoft 365 商业标准版计划 1 的功能，Office 365 企业版 E3 具有计划 2。
 
 \*\* 在美国、英国、加拿大提供。
 
 \*\*\* 启用自动扩展存档时的额外存档存储空间。
 
-若要Microsoft 365 商业高级版其他产品（包括其他Microsoft 365计划）进行比较，请参阅Microsoft 365[和中型企业的许可计划](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)。
+若要Microsoft 365 商业高级版产品（包括其他Microsoft 365计划）进行比较，请参阅Microsoft 365和中型企业[的许可计划](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)。

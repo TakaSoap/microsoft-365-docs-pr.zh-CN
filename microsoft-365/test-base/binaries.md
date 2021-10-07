@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: a1b0ca307cbbfb5b2c99085d4b3bec89758d51bd
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 200da9ca73bc666f3f11fc3fda95493d2c0954fb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482999"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180635"
 ---
 # <a name="step-3-upload-your-binaries-dependencies-and-scripts"></a>步骤 3：Upload二进制文件、依赖项和脚本
 
@@ -32,7 +32,7 @@ ms.locfileid: "59482999"
 
 :::image type="content" alt-text="Upload二进制文件。" source="Media/AddBinaries.png":::
 
-  - 上载的依赖项可以包括测试框架、脚本引擎或将访问以运行应用程序或测试用例的数据。 例如，你可以上载 Selenium 和 Web 驱动程序安装程序来帮助运行基于浏览器的测试。
+  - 上载的依赖项可能包括测试框架、脚本引擎或将访问以运行应用程序或测试用例的数据。 例如，你可以上载 Selenium 和 Web 驱动程序安装程序来帮助运行基于浏览器的测试。
   - 最佳做法是确保脚本活动保持模块化，即 
     - 脚本 `Install` 仅执行安装操作。
     - 脚本 `Launch` 仅启动应用程序。
@@ -48,5 +48,5 @@ ms.locfileid: "59482999"
 > [!div class="nextstepaction"]
 > [回去](uploadApplication.md)
 > [!div class="nextstepaction"]
-> [后续步骤](testtask.md)
+> [下一步](testtask.md)
 

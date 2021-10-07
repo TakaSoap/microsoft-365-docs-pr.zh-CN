@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/28/2018
 ms.technology: mde
-ms.openlocfilehash: 2d290352006b09be0d15a5df55533500db2fadb0
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 7ea8fd8a87e15291f0f65e6f21bb452efe72383c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507766"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207099"
 ---
 # <a name="assign-user-access-to-microsoft-defender-security-center"></a>向用户分配Microsoft Defender 安全中心
 
@@ -45,8 +45,8 @@ Defender for Endpoint 支持两种权限管理方法：
 > [!NOTE]
 > 如果已分配基本权限，可以随时切换到 RBAC。 进行切换之前，请考虑以下事项：
 >
-> - 具有完全访问权限 (Azure AD) 中分配了全局管理员或安全管理员目录角色的用户将自动分配有默认的 Defender for Endpoint 管理员角色，该角色也具有完全访问权限。 切换到 RBAC 后，可以将其他 Azure AD 用户组分配给 Defender for Endpoint 管理员角色。 只有分配到 Defender for Endpoint 管理员角色的用户才能使用 RBAC 管理权限。 
-> - 具有只读访问权限的用户 (安全) 用户分配角色之前，将失去对门户的访问权限。 请注意，在 RBAC 下只能为 Azure AD 用户组分配角色。
+> - 具有完全访问权限 (Azure AD) 中分配了全局管理员或安全管理员目录角色的用户将自动分配有默认 Defender for Endpoint 管理员角色，该角色也具有完全访问权限。 切换到 RBAC 后，可以将其他 Azure AD 用户组分配给 Defender for Endpoint 管理员角色。 只有分配到 Defender for Endpoint 管理员角色的用户才能使用 RBAC 管理权限。 
+> - 具有只读访问权限的用户 (安全读者) 分配角色之前，将失去对门户的访问权限。 请注意，在 RBAC 下只能为 Azure AD 用户组分配角色。
 > - 切换到 RBAC 后，将无法切换回使用基本权限管理。
 
 ## <a name="related-topics"></a>相关主题

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender门户中的警报
+title: 通知门户中的Microsoft 365 Defender警报
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: hub-page
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
@@ -21,14 +21,14 @@ description: 了解如何使用 Microsoft 365 Defender 门户中的警报功能�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44009ac90dddf9a8f901fdcc5d46496e4bc78338
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4562f200cadec2f12de10dd28246e2f8b1cf69ca
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175318"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176571"
 ---
-# <a name="alerts-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender门户中的警报
+# <a name="alerts-in-the-microsoft-365-defender-portal"></a>通知门户中的Microsoft 365 Defender警报
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "59175318"
 
 ## <a name="alerts-features"></a>通知功能
 
-下表介绍了"通知"下的可用工具，这些 **工具Microsoft 365 Defender门户**。
+下表介绍了在应用程序门户 **中的警报下** Microsoft 365 Defender工具。
 
 <br>
 
@@ -54,6 +54,6 @@ ms.locfileid: "59175318"
 
 |工具|说明|
 |---|---|
-|[管理警报](../../compliance/create-activity-alerts.md)|当用户在活动邮箱中执行特定活动时，使用活动提醒向自己或其他管理员Microsoft 365。 活动提醒类似于在 审核日志搜索事件，只是当发生已创建提醒的事件时，会向用户发送电子邮件。|
+|[管理警报](../../compliance/create-activity-alerts.md)|当用户在管理员网站中执行特定活动时，使用活动提醒向自己或其他管理员Microsoft 365。 活动提醒类似于在审核日志搜索事件，只是当发生已创建提醒的事件时，会向用户发送电子邮件。|
 |[管理高级警报](/cloud-app-security/what-is-cloud-app-security)|使用 **警报的"** 管理高级警报Microsoft 365 云应用安全设置可提醒您注意安全中心中可疑和异常活动Microsoft 365。 发出警报后，你可以调查可能存在问题的情况，并根据需要采取措施来解决安全问题。|
 |

@@ -8,7 +8,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MET150
@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP 策略组件和配置参考
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 972b5a628f434bdfb989191cf5fcd8ca9bfcc2d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2cfc2e9387b9c29fd7bd6141046436254f88704
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200613"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201237"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>数据丢失防护策略参考
 
@@ -39,7 +39,7 @@ DLP 策略模板分为四类：
 - 可检测和保护隐私信息 **类型的** 文件
 - **一** 个自定义模板，如果其他模板之一不满足组织需求，则可用于构建自己的策略。
 
-此表列出了所有策略模板及其涵盖 (SIT) 敏感信息类型。 
+此表列出了所有策略模板及其 (SIT) 敏感信息类型。 
 
 Current as of 6/23/2021
 
@@ -52,18 +52,18 @@ Current as of 6/23/2021
 |金融| 以色列财务数据 |- [以色列银行帐号](sensitive-information-type-entity-definitions.md#israel-bank-account-number) </br> - [SWIFT 代码](sensitive-information-type-entity-definitions.md#swift-code) </br> - [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number)|
 |金融| 日本财务数据 |- [日本银行帐号](sensitive-information-type-entity-definitions.md#japan-bank-account-number) </br> - [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number)|
 |金融| PCI 数据安全标准 (PCI DSS)|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number)|
-|金融| 沙特阿拉伯反网络犯罪法|- [SWIFT 代码](sensitive-information-type-entity-definitions.md#swift-code) </br> - [IBAN (国际银行) ](sensitive-information-type-entity-definitions.md#international-banking-account-number-iban) |
-|金融| 沙特阿拉伯财务数据 |- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [SWIFT 代码](sensitive-information-type-entity-definitions.md#swift-code) </br> - [IBAN (国际银行) ](sensitive-information-type-entity-definitions.md#international-banking-account-number-iban)|
+|金融| 沙特阿拉伯反网络犯罪法|- [SWIFT 代码](sensitive-information-type-entity-definitions.md#swift-code) </br> - [国际银行帐号 (IBAN) ](sensitive-information-type-entity-definitions.md#international-banking-account-number-iban) |
+|金融| 沙特阿拉伯财务数据 |- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [SWIFT 代码](sensitive-information-type-entity-definitions.md#swift-code) </br> - [国际银行帐号 (IBAN) ](sensitive-information-type-entity-definitions.md#international-banking-account-number-iban)|
 |金融| 英国财务数据|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [欧盟借记卡号](sensitive-information-type-entity-definitions.md#eu-debit-card-number) </br> - [SWIFT 代码](sensitive-information-type-entity-definitions.md#swift-code)|
 |金融| 美国财务数据|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ABA 路由号码](sensitive-information-type-entity-definitions.md#aba-routing-number)|
 |金融| 美国联邦贸易委员会 (FTC) 消费者规则|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ABA 路由号码](sensitive-information-type-entity-definitions.md#aba-routing-number)|
-|金融| 美国格雷姆-格雷姆-拉雷法案 (GLBA) 增强版|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 中美国个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险号码) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number) </br> -[美国驾驶证号码](sensitive-information-type-entity-definitions.md#us-drivers-license-number)|
-|金融| 格雷姆-里奇-比利雷法案 (GLBA)|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 中美国个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险号码) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
+|金融| 美国格雷姆-格雷姆-巴雷法案 (GLBA) 增强版|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 用户的个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number) </br> -[美国驾驶证号码](sensitive-information-type-entity-definitions.md#us-drivers-license-number)|
+|金融| 格雷姆-里奇-比利雷法案 (GLBA)|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 用户的个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
 |医疗和健康| 澳大利亚健康记录法案 (HRIP 法案) 增强 |- [澳大利亚税务文件编号](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [澳大利亚医疗帐号](sensitive-information-type-entity-definitions.md#australia-medical-account-number)|
 |医疗和健康| 澳大利亚健康记录法案（HRIP 法案）|- [澳大利亚税务文件编号](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [澳大利亚医疗帐号](sensitive-information-type-entity-definitions.md#australia-medical-account-number)|
 |医疗和健康| 加拿大健康信息法案 (HIA) |- [加拿大护照号码](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [加拿大社会保险号码](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [加拿大卫生服务号码](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [加拿大个人健康标识号](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
-|医疗和健康| 加拿大个人健康信息法案 (法) 马尼托巴|- [加拿大社会保险号码](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [加拿大卫生服务号码](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [加拿大个人健康标识号](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
-|医疗和健康| 加拿大《加拿大个人健康法》 (PHIPA) On一 |- [加拿大护照号码](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [加拿大社会保险号码](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [加拿大卫生服务号码](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [加拿大个人健康标识号](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
+|医疗和健康| 加拿大个人健康信息法案 (PHIA) Manitoba|- [加拿大社会保险号码](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [加拿大卫生服务号码](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [加拿大个人健康标识号](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
+|医疗和健康| 加拿大《PHIPA 个人 (法》) On一 |- [加拿大护照号码](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [加拿大社会保险号码](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [加拿大卫生服务号码](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [加拿大个人健康标识号](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |医疗和健康| 英国获取医疗报告法案|- [英国国家卫生服务号码](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [英国国家保险号码 (NINO) ](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino)|
 |医疗和健康| 美国健康保险法案 (HIPAA) 增强|</br> - [ICD-9-CM (国际) ](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [ICD-10-CM (国际) ](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm) |
 |医疗和健康| 美国健康保险法案 (HIPAA)| - [ICD-9-CM (国际) ](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [ICD-10-CM (国际) ](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm)|
@@ -80,22 +80,22 @@ Current as of 6/23/2021
 |隐私| 德国个人身份信息 (PII) 数据|- [德国驾驶证号码](sensitive-information-type-entity-definitions.md#germany-drivers-license-number) </br> - [德国护照号码](sensitive-information-type-entity-definitions.md#germany-passport-number)| 
 |隐私| 以色列个人身份信息 (PII) 数据|- [以色列国家标识号](sensitive-information-type-entity-definitions.md#israel-national-identification-number)| 
 |隐私| 以色列隐私保护|- [以色列国家标识号](sensitive-information-type-entity-definitions.md#israel-national-identification-number)</br> - [以色列银行帐号](sensitive-information-type-entity-definitions.md#israel-bank-account-number)|
-|隐私| 日本个人身份信息 (PII) 数据增强|- [日本社会保险号码 (SIN) ](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)</br> - [日本我的号码 - 个人](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [日本护照号码](sensitive-information-type-entity-definitions.md#japan-passport-number)</br> - [日本驾驶证号码](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)|
+|隐私| 日本增强的个人身份 (PII) 数据|- [日本社会保险号码 (SIN) ](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)</br> - [日本我的号码 - 个人](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [日本护照号码](sensitive-information-type-entity-definitions.md#japan-passport-number)</br> - [日本驾驶证号码](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)|
 |隐私| 日本个人身份信息 (PII) 数据|- [日本居民注册号码](sensitive-information-type-entity-definitions.md#japan-resident-registration-number) </br> - [日本社会保险号码 (SIN) ](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)|
 |隐私| 日本增强的个人信息保护|- [日本社会保险号码 (SIN) ](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin) </br> - [日本我的号码 - 个人](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [日本护照号码](sensitive-information-type-entity-definitions.md#japan-passport-number) </br> - [日本驾驶证号码](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)| 
 |隐私| 日本个人信息保护|- [日本居民注册号码](sensitive-information-type-entity-definitions.md#japan-resident-registration-number)</br> - [日本社会保险号码 (SIN) ](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)|
-|隐私| 沙特阿拉伯个人身份信息 (PII) 数据|- [沙特阿拉伯国家/地区 ID](sensitive-information-type-entity-definitions.md#saudi-arabia-national-id)|
+|隐私| 沙特阿拉伯个人身份 (PII) 数据|- [沙特阿拉伯国家/地区 ID](sensitive-information-type-entity-definitions.md#saudi-arabia-national-id)|
 |隐私| 英国数据保护法案|- [英国国家保险号码 (NINO) ](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number) </br> - [SWIFT 代码](sensitive-information-type-entity-definitions.md#swift-code)|
 |隐私| 英国隐私和电子通信规则|- [SWIFT 代码](sensitive-information-type-entity-definitions.md#swift-code)|
 |隐私| 英国个人身份信息 (PII) 数据|- [英国国家保险号码 (NINO) ](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number)|
 |隐私| 英国个人信息在线行为守则 (PIOCP)|- [英国国家保险号码 (NINO) ](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [英国国家卫生服务号码](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [SWIFT 代码](sensitive-information-type-entity-definitions.md#swift-code)|
-|隐私| 增强美国爱国者法案|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 中美国个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险号码) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
-|隐私| 美国爱国者法案|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 中美国个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险号码) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
-|隐私| 美国个人身份信息 (PII) 数据增强|- [ITIN 中美国个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险号码) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number)|
-|隐私| 美国个人身份信息 (PII) 数据|- [ITIN 中美国个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险号码) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number)|
-|隐私| 增强的州泄露通知法律|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> -[美国驾驶证号码](sensitive-information-type-entity-definitions.md#us-drivers-license-number) </br> - [SSN (美国社会保险号码) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) </br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number)|
-|隐私| 美国国家违约通知法|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> -[美国驾驶证号码](sensitive-information-type-entity-definitions.md#us-drivers-license-number) </br> - [SSN (美国社会保险号码) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
-|隐私| 美国国家社会保险号保密法|- [SSN (美国社会保险号码) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)| 
+|隐私| 增强美国爱国者法案|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 中美国个人纳税 (号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
+|隐私| 美国爱国者法案|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 中美国个人纳税 (号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
+|隐私| 美国个人身份信息 (PII) 数据增强|- [ITIN 中美国个人纳税 (号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number)|
+|隐私| 美国个人身份信息 (PII) 数据|- [ITIN 中美国个人纳税 (号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number)|
+|隐私| 增强的州泄露通知法律|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> -[美国驾驶证号码](sensitive-information-type-entity-definitions.md#us-drivers-license-number) </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) </br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number)|
+|隐私| 美国国家违约通知法|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> -[美国驾驶证号码](sensitive-information-type-entity-definitions.md#us-drivers-license-number) </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
+|隐私| 美国国家社会保险号保密法|- [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)| 
 
 
 
@@ -109,7 +109,7 @@ DLP 策略可以跨多个位置查找和保护包含敏感信息的项目。
 
 |位置  |包含/排除范围  |数据状态  |其他先决条件 |
 |---------|---------|---------|---------|
-|Exchange联机发送电子邮件 |distribution group － 通讯组 | 数据运动| 否 |
+|Exchange电子邮件联机 |distribution group － 通讯组 | 数据运动| 否 |
 |SharePoint联机网站   |sites       | data-at-rest </br> 数据使用 | 否|
 |OneDrive for Business 帐户| 帐户或通讯组 |data-at-rest </br> 数据使用|否|
 |Teams 聊天和通道消息     | 帐户或通讯组 |数据运动 </br> 数据使用 |  否       |
@@ -128,16 +128,16 @@ DLP 策略可以跨多个位置查找和保护包含敏感信息的项目。
 DLP 策略通过将其与敏感信息类型（SIT (、) 或保留标签）相匹配来检测敏感项目。 每个位置都支持定义敏感内容的不同方法。 此外，在策略中组合位置时，定义内容方式可能会与单个位置定义内容不同。 
 
 > [!IMPORTANT]
-> 为策略选择多个位置时，内容定义类别的"否"值优先于"yes"值。 例如，当你仅选择SharePoint站点时，该策略将支持通过一个或多个 SIT、敏感度标签或保留标签检测敏感项目。 但是，当你选择 ***SharePoint站点Teams*** 聊天和频道消息位置时，该策略将仅支持通过 SIT 检测敏感项目。 
+> 为策略选择多个位置时，内容定义类别的"否"值优先于"yes"值。 例如，当你仅选择SharePoint，该策略将支持通过一个或多个 SIT、敏感度标签或保留标签检测敏感项目。 但是，当你选择 ***SharePoint站点Teams*** 聊天和频道消息位置时，该策略将仅支持通过 SIT 检测敏感项目。 
 
 |位置|  内容可通过 SIT 定义|  内容可以定义敏感度标签|   内容可通过保留标签定义|
 |---------|---------|---------|---------|
-|Exchange联机发送电子邮件|是| 是|    否|
+|Exchange电子邮件联机|是| 是|    否|
 |SharePoint联机网站|   是|    是|    是|
 |OneDrive for Business 帐户|    是|    是|    是|
 |Teams聊天和频道消息 |  是|    否| 否|
 |设备    |是 |  是|    否|
-|Microsoft 云应用安全|  是|    是|    是|
+|Microsoft Cloud App Security|  是|    是|    是|
 |本地存储库|  是|    是|    否|
 
 > [!NOTE]
@@ -197,7 +197,7 @@ DLP 策略通过将其与敏感信息类型（SIT (、) 或保留标签）相匹
 
 #### <a name="content-contains"></a>内容包含
 
- 所有位置均支持 **"内容包含"** 条件。 可以选择每种内容类型的多个实例，然后使用以下任一逻辑或 (或) 或所有这些 (逻辑 AND) 条件： 
+ 所有位置均支持 **"内容包含"** 条件。 您可以选择每个内容类型的多个实例，然后使用以下任一逻辑或 (OR ) 或所有这些 (逻辑 AND) 条件： 
 
 - [敏感信息类型](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [敏感度标签](sensitivity-labels.md)
@@ -205,7 +205,7 @@ DLP 策略通过将其与敏感信息类型（SIT (、) 或保留标签）相匹
 
 具体取决于 [你 () ](#location-support-for-how-content-can-be-defined) 策略的位置。 
 
-SIT 具有预定义的 [**可信度，**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) 你可根据需要更改该级别。 有关详细信息，请参阅有关 [可信度的更多信息](sensitive-information-type-learn-about.md#more-on-confidence-levels)。 SIT 还有一个预定义的 SIT 发生范围，必须找到该范围以匹配规则，例如，如果将实例计数范围设置为从 1 到 9，则 SIT 必须至少发生一次且最多发生九次，规则要匹配。
+SIT 具有预定义的 [**可信度，**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) 你可根据需要更改该级别。 有关详细信息，请参阅 [有关可信度的更多信息](sensitive-information-type-learn-about.md#more-on-confidence-levels)。 SIT 还有一个预定义的 SIT 发生范围，必须找到该范围以匹配规则，例如，如果将实例计数范围设置为从 1 到 9，则 SIT 必须至少发生一次且最多发生九次，规则要匹配。
 
 该规则将仅查找是否存在你选取的任何 **敏感度** 标签 **和保留** 标签。 
 
@@ -306,7 +306,7 @@ SIT 具有预定义的 [**可信度，**](https://www.microsoft.com/videoplayer/
     
 - 更难以标识的内容，例如有关患者护理的通信，或者提供的医疗服务说明。 识别此内容需要匹配极庞大的关键字列表中的关键字，如国际疾病分类（ICD-9-CM 或 ICD-10-CM）。
     
-可以通过对条件进行分组，以及使用逻辑运算符在组 (AND 或 OR) 标识此类数据。
+可以通过对条件进行分组，以及使用逻辑运算符在组 (AND 或 OR) 标识此类型的数据。
     
 对于 **美国健康保险法案 (HIPPA) ，** 条件按如下所示进行分组：
 
@@ -316,7 +316,7 @@ SIT 具有预定义的 [**可信度，**](https://www.microsoft.com/videoplayer/
 
 ### <a name="exceptions"></a>例外
 
-在规则中，例外定义用于从策略中排除项目的条件。 逻辑上，在包含条件和上下文之后评估的独占条件。 它们告知规则&#8212;当你找到如下所示且正在被用作匹配项的项目时，它们告知规则规则，并且策略中的其余操作应该对它执行，除非 ***...***&#8212; 
+在规则中，例外定义用于从策略中排除项目的条件。 逻辑上，在包含条件和上下文之后评估的独占条件。 它们告知规则&#8212;当你找到如下所示且正在被用作匹配项的项目时，它们告知规则规则，并且应该对它执行策略中的其余操作，除非 ***...***&#8212; 
 
 例如，为了遵守 HIPPA 策略，我们可以修改规则以排除包含比利时驾驶证号码的任何项目，如下所示：
 
@@ -334,7 +334,7 @@ location 支持的例外条件与所有包含条件都相同，唯一的区别�
 
 ### <a name="actions"></a>操作 
 
-通过包含 ***条件** _ 和独占例外筛选器 _**_ 的任何项都将具有在应用于 _**_ 它的规则中定义的任何操作。 您必须配置支持该操作所需的选项。 例如，如果您选择"Exchange限制访问"或加密"Microsoft 365 *位置** 操作，则需要从以下选项中进行选择：
+通过包含 ***条件** _ 和独占例外筛选器 _**_ 的任何项都将具有在应用于 _**_ 它的规则中定义的任何操作。 您必须配置支持该操作所需的选项。 例如，如果您选择"Exchange限制访问"或 *加密*"位置 *"操作Microsoft 365您需要从以下选项中进行选择：
 
 - 阻止用户访问共享内容SharePoint、OneDrive和Teams内容
     - 阻止所有人。 只有内容所有者、最后一个修饰符和网站管理员将继续具有访问权限
@@ -381,7 +381,7 @@ location 支持的例外条件与所有包含条件都相同，唯一的区别�
 > [!NOTE]
 > 设备提供 **审核活动、****阻止** 活动或阻止 **替代活动** 的选项。
 
-设备位置提供了许多子活动， (条件和) 操作。 若要了解更多信息，请参阅 [终结点活动，你可以监视和采取操作](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)。 
+设备位置提供了许多子活动， (条件和) 条件。 若要了解更多信息，请参阅 [终结点活动，你可以监视和采取操作](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)。 
 
 #### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security：
 
@@ -394,7 +394,7 @@ location 支持的例外条件与所有包含条件都相同，唯一的区别�
 
 #### <a name="actions-available-when-you-combine-locations"></a>组合位置时可用的操作
 
-如果选择"Exchange和要应用策略的其他任何单个位置，则
+如果选择"Exchange和要应用的策略的其他任何单个位置，则
 
 - 限制对内容的访问或加密Microsoft 365位置
 
@@ -444,7 +444,7 @@ for where they are used/expected behavior-->
 
 当用户在符合规则的条件和例外的上下文中尝试对敏感项目执行某个操作时，可以通过用户通知电子邮件和上下文策略提示弹出窗口让他们了解相关操作。 这些通知非常有用，因为它们可以提高认知度并帮助用户了解组织的 DLP 策略。 
 
-例如，Excel包含个人身份信息OneDrive for Business PII)  (且与外部用户共享的 OneDrive for Business 工作簿等内容。
+例如，Excel网站上包含个人身份信息OneDrive for Business个人身份信息的内容 (PII) 与外部用户共享。
 
 ![消息栏在 Excel 2016 中显示策略提示](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
@@ -506,7 +506,7 @@ for where they are used/expected behavior-->
 
 在自定义通知中生成此文本：
 
-*从剪贴板文件名粘贴：Contoso doc 1 WINWORD.EXE组织不允许通过文件粘贴。如果要绕过 Contoso 高度机密策略，请单击"允许"按钮*
+*从剪贴板文件名粘贴：contoso doc 1 WINWORD.EXE组织不允许通过文件粘贴。如果要绕过 Contoso 高度机密策略，请单击"允许"按钮*
  
 
 
@@ -544,7 +544,7 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 
 ### <a name="user-overrides"></a>用户替代
 
-用户替代的目的是为用户提供一种以理由绕过对 Exchange、SharePoint、OneDrive 或 Teams 中的敏感项目执行 DLP 策略阻止操作的方法，以便他们可以继续工作。 只有在启用了策略提示Office 365通知服务中的用户时，用户替代才启用，因此用户替代与通知和策略提示一起提供。 
+用户替代的目的是为用户提供一种以理由绕过对 Exchange、SharePoint、OneDrive 或 Teams 中敏感项的 DLP 策略阻止操作的方法，以便他们可以继续工作。 只有在启用了策略提示Office 365通知服务中的用户时，用户替代才启用，因此用户替代与通知和策略提示一起提供。 
 
 ![DLP 策略的用户替代选项](../media/dlp-user-overrides.png)
 
@@ -573,7 +573,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 当项目与规则相匹配时，可向合规负责人（或所选的任何人员）发送包含事件详情的事件报告。 此报告中的信息包括，匹配的项目的信息、与规则匹配的实际内容以及上次修改内容的人员的姓名。 对于电子邮件，报告还将与 DLP 策略匹配的原始邮件包含为附件。
 
-DLP 将事件信息Microsoft 365其他信息保护服务，如 Microsoft 365 中的内部[风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)。 为了向内部风险管理获取事件信息，必须将事件报告严重性级别设置为"高 **"。**
+DLP 将事件信息Microsoft 365其他信息保护服务，如 Microsoft 365 中的[内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)。 为了向内部风险管理获取事件信息，必须将事件报告严重性级别设置为"高 **"。**
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 

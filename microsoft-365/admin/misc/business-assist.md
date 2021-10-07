@@ -8,23 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 了解 Business Assist 计划及其如何帮助你的组织改进商业Microsoft 365使用情况。
-ms.openlocfilehash: f6c5b1ddfa6028d0748d3f01237e91dd4ac8507e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 01d4353fa24e5c9ace8e9e1d43853c5cbc3935e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774191"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180503"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Microsoft 365 商业帮助
 
-通过小型企业专家提供的专家建议，从订阅中取得最大价值。
+通过小型企业专家提供的专家建议充分利用订阅。
 
 **Business Assist for Microsoft 365** is designed for small businesses to give you and your employees access the around-the clock to small business specialists as you grow your business， from onboarding to everyday use.
 
@@ -45,7 +45,7 @@ ms.locfileid: "59774191"
 
 ## <a name="eligibility-for-business-assist"></a>商业协助资格
 
-具有有效的商业版订阅Microsoft 365客户可以使用 Business Assist 载入、迁移和管理服务。 你的组织必须具有 5 个或更少的用户许可证。
+具有活动企业Microsoft 365订阅计划的客户可以使用 Business Assist 载入、迁移和管理服务。 你的组织必须具有 5 个或更少的用户许可证。
 
 > [!IMPORTANT]
 > Business Assist 仅在美国可用。

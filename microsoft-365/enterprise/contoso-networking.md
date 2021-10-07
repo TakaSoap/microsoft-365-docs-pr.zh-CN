@@ -8,22 +8,22 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 网络基础结构，以及公司如何使用 SD-WAN 技术实现最佳网络性能，Microsoft 365企业云服务。
-ms.openlocfilehash: af2c68cb31450fe17449f95391dd3e5c298a2395
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 94c9c43e35f0f1a3d973529aa2b107cffe608693
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200457"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193107"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 网络
 
-为了采用包含云的基础结构，Contoso 对网络流量到云服务的传输方式进行根本转变。 它们将用户位置映射到本地 Internet 出口，将本地连接映射到 Internet 上最近的 Microsoft 365 网络位置，而不是专注于网络连接和流量的内部中心分支模型。
+为了采用包含云的基础结构，Contoso 对网络流量到云服务的传输方式进行根本转变。 它们将用户位置映射到本地 Internet 出口，将本地连接映射到 Internet 上最近的 Microsoft 365 网络位置，而不是侧重于网络连接和流量的内部中心分支模型。
 
 ## <a name="networking-infrastructure"></a>网络基础结构
 
@@ -31,7 +31,7 @@ ms.locfileid: "59200457"
 
 - 多协议标签交换 (MPLS) WAN 网络
 
-  MPLS WAN 网络以分支和中心配置将巴黎总部连接到区域办事处，将区域办事处连接到分支办事处。 网络使用户能够访问内部部署服务器，这些服务器是巴黎总部的业务线应用程序。 它还将任何一般 Internet 流量路由到巴黎办事处，网络安全设备将清理请求。 在每个办公室内，路由器将流量路由到使用专用 IP 地址空间的子网上的有线主机或无线接入点。
+  MPLS WAN 网络以分支和中心配置将巴黎总部连接到区域办事处，将区域办事处连接到分支办事处。 网络使用户能够访问内部部署服务器，这些服务器是巴黎总部的业务线应用程序。 它还将任何通用 Internet 流量路由到巴黎办事处，网络安全设备将清理请求。 在每个办公室内，路由器将流量路由到使用专用 IP 地址空间的子网上的有线主机或无线接入点。
 
 - 本地直接 Internet 访问Microsoft 365流量
 
@@ -62,7 +62,7 @@ Contoso 决定：
 
 - 对"优化"和"允许"类别流量使用直接 Internet 出口，将所有"默认"类别流量转发到巴黎的中央 Internet 连接。
 
-- 在每个办公室部署 SD-WAN 设备是遵循这些原则并实现基于云的服务的最佳网络Microsoft 365一种方法。
+- 在每个办公室部署 SD-WAN 设备是遵循这些原则并实现基于云的服务的最佳网络Microsoft 365一种简单方法。
 
   SD-WAN 设备具有一个用于本地办事处网络的 LAN 端口和多个 WAN 端口。 一个 WAN 端口连接到其 MPLS 网络。 另一个连接到本地 ISP 线路。 SD-WAN 设备通过 ISP 链接路由“优化”和“允许”类别的网络流量。
 
@@ -84,7 +84,7 @@ Contoso 针对以下内容构建了业务线应用程序和服务器 Intranet �
 
 ## <a name="network-analysis-and-preparation-for-microsoft-365-for-enterprise"></a>企业版网络分析和Microsoft 365准备
 
-Contoso Microsoft 365企业服务的成功采用取决于与 Internet 或直接到 Microsoft 云服务的高度可用和高效连接。 Contoso 执行以下步骤来计划和实现与企业云服务Microsoft 365优化的连接：
+Contoso Microsoft 365企业服务的成功采用取决于与 Internet 或直接到 Microsoft 云服务的高度可用和高效连接。 Contoso 执行以下步骤来规划和实施与企业云服务Microsoft 365优化的连接：
 
 1. 创建公司 WAN 网络图，帮助进行规划
 
@@ -92,11 +92,11 @@ Contoso Microsoft 365企业服务的成功采用取决于与 Internet 或直接�
 
 2. 创建企业网络连接Microsoft 365规划
 
-   Contoso 使用[Microsoft 365网络连接](microsoft-365-network-connectivity-principles.md)原则和示例参考网络体系结构，将 SD-WAN 标识为用于实现连接Microsoft 365拓扑。
+   Contoso 使用Microsoft 365[网络连接](microsoft-365-network-connectivity-principles.md)原则和示例参考网络体系结构，将 SD-WAN 标识为用于实现连接Microsoft 365拓扑。
 
 3. 分析每个办事处的 Internet 连接利用率和 MPLS-WAN 带宽，并根据需要增加带宽
 
-   分析每个办事处的当前使用情况，并增加线路，以便Microsoft 365云流量的平均未使用容量为 20%。
+   分析每个办事处的当前使用情况，并增加线路，以便Microsoft 365流量的平均未使用容量为 20%。
 
 4. 优化 Microsoft 网络服务的性能
 

@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3f3eef756d37bf1552120a05e351c844b37b863b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4a9539d075c5428374972e8f7398ff2f326a587f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170102"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207147"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Microsoft Defender 终结点检测 API 字段
 
@@ -38,7 +38,7 @@ ms.locfileid: "59170102"
 > [!NOTE]
 >
 > - [适用于终结点警报的](alerts.md) Defender 由一个或多个检测组成。
-> - **Microsoft Defender ATP 检测** 由设备上发生的可疑事件及其相关 **警报详细信息组成** 。
+> - **Microsoft Defender ATP 检测** 由设备上发生的可疑事件及其相关的警报 **详细信息组成** 。
 > - Microsoft Defender for Endpoint 警报 API 是警报使用的最新 API，包含每个警报的相关证据的详细列表。 有关详细信息，请参阅[警报方法和属性和](alerts.md)[列表警报](get-alerts.md)。
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>检测 API 字段和门户映射
@@ -57,7 +57,7 @@ ArcSight 字段列包含 Defender for Endpoint 字段和 ArcSight 中的内置�
 > |2|Severity|deviceSeverity|高|可用于每个检测的值。|
 > |3|类别|deviceEventCategory|恶意软件|可用于每个检测的值。|
 > |4 |检测源|sourceServiceName|防病毒|Microsoft Defender 防病毒或 Defender for Endpoint。 可用于每个检测的值。|
-> |5 |MachineName|sourceHostName|desktop-4a5ngd6|可用于每个检测的值。|
+> |5|MachineName|sourceHostName|desktop-4a5ngd6|可用于每个检测的值。|
 > |6 |FileName|fileName|Robocopy.exe|可用于与文件或进程关联的检测。|
 > |7 |FilePath|filePath|C:\Windows\System32\Robocopy.exe|可用于与文件或进程关联的检测。|
 > |8 |UserDomain|sourceNtDomain|CONTOSO|运行活动的用户上下文的域，可用于基于终结点行为的 Defender 检测。|
@@ -68,7 +68,7 @@ ArcSight 字段列包含 Defender for Endpoint 字段和 ArcSight 中的内置�
 > |13|ThreatName|deviceCustomString1|HackTool：Win32/M一tz！dha|可用于 Microsoft Defender AV 检测。|
 > |14 |IpAddress|sourceAddress|218.90.204.141|可用于与网络事件关联的检测。 例如，"与恶意网络目标的通信"。|
 > |15 |URL|requestUrl|down.esales360.cn|可用于与网络事件关联的检测。 例如，"与恶意网络目标的通信"。|
-> |16 |RemediationIsSuccess|deviceCustomNumber2|TRUE|可用于 Microsoft Defender AV 检测。 当为 TRUE 时，ArcSight 值为 1，FALSE 时为 0。|
+> |16|RemediationIsSuccess|deviceCustomNumber2|TRUE|可用于 Microsoft Defender AV 检测。 当为 TRUE 时，ArcSight 值为 1，FALSE 时为 0。|
 > |17 |WasExecutingWhileDetected|deviceCustomNumber1|FALSE|可用于 Microsoft Defender AV 检测。 当为 TRUE 时，ArcSight 值为 1，FALSE 时为 0。|
 > |18 |AlertId|externalId|636210704265059241_673569822|可用于每个检测的值。|
 > |19|LinkToWDATP|flexString1|`https://securitycenter.windows.com/alert/636210704265059241_673569822`|可用于每个检测的值。|
@@ -93,7 +93,7 @@ ArcSight 字段列包含 Defender for Endpoint 字段和 ArcSight 中的内置�
 
 :::image type="content" alt-text="包含数字 1 的项目时间线的图像。" source="images/atp-siem-mapping3.png" lightbox="images/atp-siem-mapping3.png":::
 
-:::image type="content" alt-text="具有数字 2 的项目时间线的图像。" source="images/atp-siem-mapping4.png" lightbox="images/atp-siem-mapping4.png":::
+:::image type="content" alt-text="包含数字 2 的项目时间线的图像。" source="images/atp-siem-mapping4.png" lightbox="images/atp-siem-mapping4.png":::
 
 :::image type="content" alt-text="映像计算机视图。" source="images/atp-mapping6.png" lightbox="images/atp-mapping6.png":::
 

@@ -9,24 +9,24 @@ ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: 使用Microsoft 365保留标签和策略来管理你的Microsoft 365中的个人数据。
-ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 使用Microsoft 365保留标签和策略来管理用户环境中Microsoft 365数据。
+ms.openlocfilehash: b131c90e83a2ce211d51af444dd570f71f3b8263
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171509"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176303"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>管理受数据隐私条例约束的信息
 
-可以在环境中使用信息治理控制来帮助满足数据隐私合规性需求，包括特定于一般数据保护条例 (GDPR) 、HIPAA-HITECH (美国医疗保健隐私法案) 、加州消费者保护法案 (CCPA) 和巴西数据保护法案 (LGPD) 等。 
+在你的环境中可以使用信息治理控制来帮助满足数据隐私合规性需求，包括特定于一般数据保护条例 (GDPR) 、HIPAA-HITECH (美国医疗保健隐私法案) 、加州消费者保护法案 (CCPA) 和巴西数据保护法案 (LGPD) 等。 
 
 这些控件主要属于以下解决方案区域：
 
@@ -49,7 +49,7 @@ ms.locfileid: "59171509"
 
 对于信息治理，数据隐私法规通常要求：
 
-- 您应该采用用于保留和删除存储在数据存储区中的个人数据的技术Microsoft 365。
+- 您应该采用技术方案来保留和删除存储在Microsoft 365。
 - 如果要存储个人数据，请告知主体数据将存储多久，这是现在前端 Web 系统上的标准做法。
 - 应该防止个人数据使用可验证的方法意外处理、丢失或更改。
 - 对个人数据执行的任何操作都应进行记录，并且该文档应保留指定的期限。
@@ -68,11 +68,11 @@ ms.locfileid: "59171509"
 
 ## <a name="managing-information-governance-in-microsoft-365"></a>管理信息治理Microsoft 365
 
-首先，请参阅管理[信息治理](../compliance/manage-information-governance.md)和数据[保留、删除和销毁Microsoft 365。](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)
+首先，请参阅管理[信息治理](../compliance/manage-information-governance.md)和数据保留、删除和销毁[Microsoft 365。](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)
 
 ### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>制定容器、电子邮件和内容的数据保留计划
 
-请注意以下几点：
+请注意下列事项：
 
 - 为定义的信息类型建立数据保留计划应被视为实施任何保留或删除方案的先决条件。
 
@@ -90,4 +90,4 @@ ms.locfileid: "59171509"
 
 使用声明内容记录的保留标签[，为记录](../compliance/records-management.md)中数据实现Microsoft 365。
 
-对于数据隐私， (部门) DSR) 的数据主体请求将被声明为记录，并可以无限期存储或经过证明处理，以遵守法规活动保留规范。
+对于数据隐私， (部门收到的) DSR 的数据主体请求将被声明为记录，并可以无限期存储或经过证明处理，以遵守法规活动保留规范。

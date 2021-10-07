@@ -11,18 +11,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8bdc8451d3f3885cb9704a954cae8f439cad1abf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e287f9a4713ba0ad96fd4b1b7f51e0fee948ec28
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170943"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207675"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>查看并组织 Microsoft Defender for Endpoint 事件队列
 
@@ -57,8 +57,8 @@ ms.locfileid: "59170943"
 
 事件严重性 | 说明
 :---|:---
-高 </br> (红色)  | 通常与 APT 高级永久性威胁 (相关的) 。 这些事件表明，由于设备可造成严重损坏，因此存在高风险。
-Medium </br> (橙色)  | 很少在组织中观察到的威胁，例如异常注册表更改、可疑文件的执行和观察到的攻击阶段典型行为。
+高 </br> (红色)  | 通常与高级永久性威胁和 APT (相关的) 。 这些事件表明，由于设备可造成严重损坏，因此存在高风险。
+中型 </br> (橙色)  | 很少在组织中观察到的威胁，例如异常注册表更改、可疑文件的执行和观察到的攻击阶段典型行为。
 低 </br> (黄色)  | 与流行恶意软件和黑客工具关联的威胁，这些威胁不一定表示针对组织的高级威胁。
 信息 </br> (灰色)  | 信息事件可能被视为对网络没有危害，但可以跟踪。
 

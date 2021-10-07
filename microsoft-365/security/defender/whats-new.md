@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 24e8dba9bf933286b325983a091785d6502d46df
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: 74656a9f79fba0e81afcb9db207c83162b2dfd81
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126802"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176567"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
@@ -49,7 +49,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 
 ## <a name="september-2021"></a>2021 年 9 月
--  (事件) API 中Office 365 Microsoft Defender for Microsoft 365 Defender 事件数据。 你可以查看流式 API 中受支持的事件类型Microsoft 365 Defender[事件类型的可用性和状态](supported-event-types.md)。
+-  (事件) API Office 365 Microsoft Defender for Microsoft 365 Defender 事件数据。 你可以查看流式 API 中受支持事件类型Microsoft 365 Defender[事件类型的可用性和状态](supported-event-types.md)。
 -  (通用) Microsoft Defender Office 365高级搜寻中提供的数据现已普遍可用。
 -  (预览) 向用户帐户分配事件和警报 <br> 您可以将事件及其关联的所有警报分配给用户帐户，该用户帐户位于事件的"管理事件"窗格或警报的"管理警报"窗格中。 
 
@@ -58,7 +58,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 -  (预览) Microsoft Defender Office 365高级搜寻中提供的数据
 <br>电子邮件表中的新列可以更深入地了解基于电子邮件的威胁，以便使用高级搜寻进行更全面的调查。 现在可以在 `AuthenticationDetails` EmailEvents、EmailAttachmentInfo 和[](./advanced-hunting-emailevents-table.md) `FileSize` [](./advanced-hunting-emailattachmentinfo-table.md) `ThreatTypes` `DetectionMethods` [EmailPostDeliveryEvents](./advanced-hunting-emailpostdeliveryevents-table.md)表中包含该列。 
 
--  (预览) 事件图 <br>  事件 **Graph"** 摘要"选项卡上的新"列表"选项卡显示攻击的完整范围、攻击如何随着时间的推移网络分布、开始位置以及攻击者已攻击多远。
+-  (预览) 事件图 <br>  事件 **Graph"** 摘要"选项卡上的新"列表"选项卡显示攻击的完整范围、攻击在一段时间的分布情况、开始位置以及攻击者已攻击多远。
 
 ## <a name="july-2021"></a>2021 年 7 月
 - [Professional服务目录](https://sip.security.microsoft.com/interoperability/professional_services)<br>通过受支持的合作伙伴连接增强平台的检测、调查和威胁智能功能。
@@ -78,13 +78,13 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 
 ## <a name="april-2021"></a>2021 年 4 月
-- Microsoft 365 Defender<br> 改进的[Microsoft 365 Defender](https://security.microsoft.com)门户现已可用。 这一新体验将 Defender for Endpoint、Defender for Office 365、Defender for Identity 等集成到单个门户中。 这是用于管理安全控制的新主页。 [了解新增功能](./overview-security-center.md)。
+- Microsoft 365 Defender<br> 改进的[Microsoft 365 Defender](https://security.microsoft.com)门户现已可用。 这一新体验将 Defender for Endpoint、defender for Office 365、Defender for Identity 等集成到单个门户中。 这是用于管理安全控制的新主页。 [了解新增功能](./overview-security-center.md)。
 
 - [Microsoft 365 Defender威胁分析报告](threat-analytics.md)<br>
- 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解解决方案阻止的攻击尝试Microsoft 365 Defender采取预防措施，以缓解进一步暴露的风险并增加恢复能力。 作为统一安全体验的一部分，威胁分析现在适用于 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 许可证持有者。
+ 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解解决方案阻止的攻击尝试Microsoft 365 Defender采取预防措施，以缓解进一步暴露的风险并增加复原能力。 作为统一安全体验的一部分，威胁分析现在适用于 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 许可证持有者。
 
 ## <a name="march-2021"></a>2021 年 3 月
 - [CloudAppEvents 表](advanced-hunting-cloudappevents-table.md) <br>查找有关组织涵盖的各种云应用和服务中的Microsoft Cloud App Security。 此表还包括以前在表中可用的 `AppFileEvents` 信息。
 ## <a name="february-2021"></a>2021 年 2 月
--  (预览) 增强[Microsoft 365 Defender门户 (https://security.microsoft.com) ](https://security.microsoft.com)现在适用于公共预览版。 这一新体验将 Defender for Endpoint 和 Defender for Office 365引入中心。 [了解有关更改的详细信息](./overview-security-center.md)。
+-  (预览) 增强[Microsoft 365 Defender门户 (https://security.microsoft.com) ](https://security.microsoft.com)现在适用于公共预览版。 这一新体验将 Defender for Endpoint 和 Defender for Office 365中心。 [了解有关更改的详细信息](./overview-security-center.md)。
 - **[ (预览) Microsoft 365 Defender](api-overview.md)** API - 顶级 Microsoft 365 Defender API 将使您能够根据共享事件和高级搜寻表自动执行工作流。 

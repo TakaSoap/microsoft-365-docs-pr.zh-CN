@@ -9,24 +9,24 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 96a27d562bdde03d5d94d8a39ecf45d64ec9bf18
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1c459b85ed7d6a25de0b8fcdef24a6857531cee3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196427"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176147"
 ---
 # <a name="step-4-the-tasks-tab"></a>步骤 4："任务"选项卡
 
 在"任务"选项卡上，应提供测试脚本的路径，这些脚本位于"二进制文件"选项卡下上载的 zip 文件夹中。
 
   - **开箱式测试脚本：** 键入安装、启动、关闭和卸载脚本的相对路径。 还可以选择安装脚本的其他设置。
-  - **功能测试脚本：** 键入上载的每个功能测试脚本的相对路径。 可以使用 按钮添加其他功能测试 ```Add Script``` 脚本。 至少需要一个 1 (1) 脚本，并且可以在 8 个 (8) 8 个脚本。 
+  - **功能测试脚本：** 键入上载的每个功能测试脚本的相对路径。 可以使用 按钮添加其他功能测试 ```Add Script``` 脚本。 至少需要一个 1 (1) 脚本，并且可以在 8 个 (8 个) 测试脚本。 
   
     脚本按上载顺序运行，特定脚本中的失败将停止后续脚本的执行。
     还可以选择为提供的每个脚本选择其他设置。
@@ -57,4 +57,4 @@ _**Zip_file_uploaded**_
 
 查看下一篇文章中的"测试选项"选项卡的详细信息 
 > [!div class="nextstepaction"]
-> [后续步骤](testoptions.md)
+> [下一步](testoptions.md)

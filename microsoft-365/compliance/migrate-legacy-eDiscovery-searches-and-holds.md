@@ -8,18 +8,18 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 66fff530d67e6211183ea5f9489dcc8497d4fb07
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 33d411abb13e1fe50365b353c59c61a53158bc48
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195793"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207231"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>将旧版电子数据展示搜索和保留迁移到Microsoft 365 合规中心
 
@@ -28,15 +28,15 @@ Microsoft 365 合规中心 为电子数据展示的使用提供了改进的体�
 为了帮助客户利用新增和改进的功能，本文提供了有关如何将 In-Place 电子数据展示搜索和保留从 Exchange 管理中心迁移到 Microsoft 365 合规中心 的基本指南。
 
 > [!NOTE]
-> 由于存在许多不同的方案，因此本文提供了一般指南，以将搜索和保留转换为 Microsoft 365 合规中心 中的核心电子数据展示案例。 使用电子数据展示事例并非始终必需，但是它们通过分配权限来控制谁有权访问组织中电子数据展示事例添加了额外的安全层。
+> 由于存在许多不同的方案，因此本文提供了转换搜索和保留搜索的常规指南，以在 Microsoft 365 合规中心。 使用电子数据展示事例并非始终必需，但是它们通过分配权限来控制谁有权访问组织中电子数据展示事例添加了额外的安全层。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是电子数据展示管理员角色组的成员，Microsoft 365 合规中心运行本文中所述的 PowerShell 命令。 还必须是管理中心发现管理角色Exchange的成员。
 
 - 本文提供有关如何创建电子数据展示保留的指南。 保留策略将应用于通过异步进程的邮箱。 创建电子数据展示保留时，必须同时创建 CaseHoldPolicy 和 CaseHoldRule，否则将不会创建保留，并且不会将内容位置置于保留状态。
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>步骤 1：连接 PowerShell Exchange Online安全&合规中心 PowerShell
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>步骤 1：连接 Exchange Online PowerShell 和安全&合规中心 PowerShell
 
 第一步是连接到 Exchange Online PowerShell 和安全&中心 PowerShell。 你可以复制以下脚本，将其粘贴到 PowerShell 窗口中，然后运行它。 系统将提示您输入要连接到的组织凭据。 
 
@@ -79,7 +79,7 @@ $search | FL
 ![对单个搜索使用 Get-MailboxSearch PowerShell 输出的示例。](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> The duration of the In-Place Hold in this example is unlimited (*ItemHoldPeriod： Unlimited*) . 这通常适用于电子数据展示和法律调查方案。 如果保留期的值不同于无限期的值，则很可能是因为保留用于保留内容。 建议使用 [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) 和 [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) 保留内容，而不是将安全 & 合规中心 PowerShell 中的电子数据展示 cmdlet 用于保留方案。 使用这些 cmdlet 的结果类似于使用 **New-CaseHoldPolicy** 和 **New-CaseHoldRule，** 但您可以指定保留期和保留操作，例如，在保留期到期后删除内容。 此外，使用保留 cmdlet 不需要将保留保留与电子数据展示案例关联。
+> The duration of the In-Place Hold in this example is unlimited (*ItemHoldPeriod： Unlimited*) . 这通常适用于电子数据展示和法律调查方案。 如果保留期的值不同于无限期的值，则很可能是因为保留用于保留内容。 建议使用 [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) 和 [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) 保留内容，而不是将安全 & 合规中心 PowerShell 中的电子数据展示 cmdlet 用于保留方案。 使用这些 cmdlet 的结果类似于使用 **New-CaseHoldPolicy** 和 **New-CaseHoldRule，** 但您可以指定保留期和保留操作，例如，在保留期到期后删除内容。 此外，使用保留 cmdlet 不需要您将保留保留与电子数据展示案例关联。
 
 ## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>步骤 4：在 Microsoft 365 合规中心创建案例
 
@@ -94,7 +94,7 @@ $case = New-ComplianceCase -Name "[Case name of your choice]"
 
 创建案例后，可以创建保留并将其与在上一步骤中创建的案例关联。 必须记住，必须同时创建案例保留策略和案例保留规则。 如果在创建案例保留策略后未创建案例保留规则，将不会创建电子数据展示保留，并且不会将任何内容置于保留状态。
 
-运行以下命令以重新创建要迁移的电子数据展示保留。 这些示例使用步骤 3 In-Place保留中的属性。 第一个命令创建一个新的案例保留策略，将属性保存到变量中。 第二个命令创建相应的案例保留规则。
+运行以下命令以重新创建要迁移的电子数据展示保留。 这些示例使用要迁移In-Place步骤 3 中的保留中的属性。 第一个命令创建一个新的案例保留策略，将属性保存到变量中。 第二个命令创建相应的案例保留规则。
 
 ```powershell
 $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLocation $search.SourceMailboxes
@@ -130,9 +130,9 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ![PowerShell New-ComplianceSearch示例。](../media/MigrateLegacyeDiscovery6.png)
 
-## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>步骤 8：验证案例、保留和搜索Microsoft 365 合规中心
+## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>步骤 8：在查询中验证大小写、保留和Microsoft 365 合规中心
 
-若要确保所有内容都正确设置，请转到 上Microsoft 365 合规中心，然后单击"电子数据展示> [https://compliance.microsoft.com](https://compliance.microsoft.com) **核心"。**
+若要确保所有设置正确，请转到 上显示Microsoft 365 合规中心，然后单击"电子数据展示> [https://compliance.microsoft.com](https://compliance.microsoft.com) **核心"。**
 
 ![Microsoft 365合规中心电子数据展示。](../media/MigrateLegacyeDiscovery7.png)
 
@@ -142,9 +142,9 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 在步骤 7 中创建的搜索在案例的" **搜索** "选项卡上列出。
 
-![电子数据展示服务中的电子数据展示Microsoft 365 合规中心。](../media/MigrateLegacyeDiscovery9.png)
+![Microsoft 365 合规中心 中的电子数据展示Microsoft 365 合规中心。](../media/MigrateLegacyeDiscovery9.png)
 
-如果迁移In-Place电子数据展示搜索，但不将其与电子数据展示案例关联，它将在"内容搜索"页上Microsoft 365 合规中心。
+如果您迁移In-Place电子数据展示搜索，但不将其与电子数据展示案例关联，它将在"内容搜索"页上Microsoft 365 合规中心。
 
 ## <a name="more-information"></a>更多信息
 

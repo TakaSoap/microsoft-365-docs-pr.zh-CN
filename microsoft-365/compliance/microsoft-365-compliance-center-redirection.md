@@ -8,19 +8,19 @@ manager: laurawi
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解如何自动Office 365安全与合规中心用户重定向到Microsoft 365 合规中心。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 167a38d4f4cd06f98993f401d72f9b6dafa29f40
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d31cb4d86d914c9406996c4e6fdf7bab9c5d02e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196960"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201033"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>将用户从 Office 365 安全与合规中心重定向到Microsoft 365 合规中心
 
-本文介绍了自动重定向如何适用于从安全与合规中心Office 365合规性解决方案 (protection.office.com) 用户Microsoft 365 合规中心 (compliance.microsoft.com) 。
+本文介绍了自动重定向如何适用于从安全与合规中心Office 365合规性解决方案 (protection.office.com) 到Microsoft 365 合规中心 (compliance.microsoft.com) 。
 
 ## <a name="what-to-expect"></a>预期结果
 
@@ -45,7 +45,7 @@ ms.locfileid: "59196960"
 如果无法通过 Microsoft 365 合规中心 门户完成某些操作或无法完成某些操作，可以暂时禁用所有用户的自动重定向。
 
 > [!IMPORTANT]
-> Microsoft 365 合规中心是当前在安全与合规中心内管理的合规性Office 365管理门户。 所有Microsoft 365合规性解决方案将仅在 Microsoft 365 合规中心 中进行管理。 禁用对 Microsoft 365 合规中心的重定向应被视为短期解决方案。
+> 此Microsoft 365 合规中心是当前在安全与合规中心内管理的合规性Office 365管理门户。 所有Microsoft 365合规性解决方案将仅在 Microsoft 365 合规中心 中进行管理。 禁用对 Microsoft 365 合规中心的重定向应视为短期解决方案。
 
 若要切换回Office 365安全与合规 (protection.microsoft.com) ，请完成以下步骤：
 

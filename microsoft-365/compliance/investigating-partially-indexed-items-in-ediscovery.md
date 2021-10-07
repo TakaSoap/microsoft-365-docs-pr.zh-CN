@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,13 +17,13 @@ search.appverid:
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: 了解如何管理部分索引项目 (，也称为) 、Exchange、SharePoint和OneDrive for Business索引项。
-ms.openlocfilehash: 3030867b3b27b91b32ae8d3c8529ad1d95e9c5ad
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解如何管理来自组织中 (、Exchange、SharePoint 和 OneDrive for Business 部分索引项) 未编制索引的项目。
+ms.openlocfilehash: 9e5930cb54d3903053bb09384d29a3134b243da6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196964"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201057"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>调查电子数据展示中的部分索引项
 
@@ -37,15 +37,15 @@ ms.locfileid: "59196964"
 
 - 文件类型支持检索，但是特定文件出现检索错误。
 
-尽管内容量不同，但大多数组织客户的内容量少于 1%，而按内容大小（部分索引）则少于 12%。 卷与大小之间的区别在于，较大的文件包含无法完全编制索引的内容的可能性较高。
+尽管内容量不同，但大多数组织客户的内容量少于 1%，而按内容大小（部分索引）小于 12%。 卷与大小之间的区别在于，较大的文件包含无法完全编制索引的内容的可能性较高。
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>为什么部分索引项计数会更改搜索？
 
 运行电子数据展示搜索后，搜索位置中部分索引项的总数和大小将在搜索结果统计信息中列出，搜索结果统计信息显示在搜索的详细统计信息中。 请注意，这些  *项在搜索统计信息*  中称为未索引项。 下面是将影响搜索结果中返回的部分索引项数的一些事项：
   
-- 如果某个项目已部分编制索引且与搜索查询匹配，则该项目将包含在搜索结果项的计数 (和) 索引项和部分索引项的大小中。 但是，导出同一搜索的结果时，该项目仅包含在一组搜索结果中;它不包含为部分索引项。
+- 如果某个项目已部分编制索引且与搜索查询匹配，则该项目将包含在搜索结果项的计数 (和) 索引项的大小和部分索引项中。 但是，导出同一搜索的结果时，该项目仅包含在一组搜索结果中;它不包含为部分索引项。
 
-- 在搜索的详细统计信息中显示的部分索引SharePoint网站和 OneDrive 网站中的部分索引项不包括在估计值中。 但是，在导出电子数据展示搜索的结果时，可以导出部分索引项。 例如，如果您仅搜索网站，则估计的部分索引项数将为 0。
+- 位于网站和网站SharePoint OneDrive部分索引项不包括在搜索的详细统计信息中显示的部分索引项的估计值中。 但是，在导出电子数据展示搜索的结果时，可以导出部分索引项。 例如，如果您仅搜索网站，则估计的部分索引项数将为 0。
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>计算组织中部分索引项的比率
 
@@ -77,7 +77,7 @@ ms.locfileid: "59196964"
   
 ![选择第二个或第三个选项导出部分索引项。](../media/PartiallyIndexedItemsExportOptions.png)
   
-使用这些选项之一导出电子数据展示搜索结果或搜索报告时，导出包括名为 Unindexed Items.csv。 此报告包含大多数与文件相同的ResultsLog.csv信息;但是，Unindexed Items.csv还包括两个与部分索引项相关的字段 **：Error Tags** 和 **Error Properties**。 这些字段包含有关每个部分索引项的索引错误的信息。 使用这两个字段中的信息可以帮助您确定特定字段的索引错误是否会影响调查。 如果是这样，您可以执行定向搜索，并检索和导出特定电子邮件和 SharePoint 或 OneDrive 文档，以便您可以检查它们以确定它们是否与调查相关。 有关分步说明，请参阅准备 CSV 文件[进行](csv-file-for-an-id-list-content-search.md)目标搜索Office 365。
+使用这些选项之一导出电子数据展示搜索结果或搜索报告时，导出包括名为 Unindexed Items.csv。 此报告包含大多数与文件相同的ResultsLog.csv信息;但是，Unindexed Items.csv还包括两个与部分索引项相关的字段： **错误标记** 和 **错误属性**。 这些字段包含有关每个部分索引项的索引错误的信息。 使用这两个字段中的信息可以帮助您确定特定字段的索引错误是否会影响调查。 如果是这样，您可以执行定向搜索，并检索和导出特定电子邮件和 SharePoint 或 OneDrive 文档，以便您可以检查它们以确定它们是否与调查相关。 有关分步说明，请参阅准备 CSV 文件[，以](csv-file-for-an-id-list-content-search.md)在 Office 365 中搜索。
 
 > [!NOTE]
 > Unindexed Items.csv还包含名为 **Error Type** 和 Error **Message 的字段**。 这些是旧字段，包含的信息与"**错误** 标记"和"错误属性"字段中的信息类似，但信息不太详细。 可以安全地忽略这些旧字段。
@@ -117,7 +117,7 @@ ms.locfileid: "59196964"
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>使用 PowerShell 脚本确定组织对部分索引电子邮件项目的曝光
 
-以下步骤显示如何运行 PowerShell 脚本，该脚本在所有 Exchange 邮箱中搜索所有项目，然后按计数和大小) 生成有关组织部分索引电子邮件项目 (的比率的报告，并显示发生的每个索引错误的项目数 (及其文件类型) 。 使用上一节中的错误标记说明来标识索引错误。
+以下步骤显示如何运行 PowerShell 脚本，该脚本在所有 Exchange 邮箱中搜索所有项目，然后按计数和大小) 生成有关组织部分索引电子邮件项目 (的比率的报告) 并显示发生的每个索引错误的项目数 (及其文件类型) 。 使用上一节中的错误标记说明来标识索引错误。
   
 1. 将以下文本保存到Windows PowerShell脚本文件中，使用文件名后缀.ps1;例如， `PartiallyIndexedItems.ps1` 。
 

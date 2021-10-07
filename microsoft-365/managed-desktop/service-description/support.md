@@ -7,14 +7,14 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1c4d94fb89aef76617ebd0995a6849de428afea4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: de23054454a9e73ae429920450d71ed5b34a8045
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170542"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208069"
 ---
 # <a name="admin-support"></a>管理支持
 
@@ -31,12 +31,12 @@ Microsoft 托管桌面支持包括：
 
 - 一个专门的工程师团队Microsoft 托管桌面设备
 - 支持使用移动设备Microsoft 托管桌面选项
-- 为管理设备Microsoft 托管桌面工程师授予对 Microsoft 托管桌面 设备的有限管理访问权限 
+- 为管理 Microsoft 托管桌面 设备的工程师授予对 Microsoft 托管桌面 设备的有限管理访问权限 
 
 支持的产品：
 
 - Windows 10 Microsoft Defender for Endpoint
-- 这些Microsoft 365 企业应用版应用：Outlook、Word、PowerPoint、Excel、Skype for Business 客户端Microsoft Teams 
+- 这些Microsoft 365 企业应用版应用程序：Outlook、Word、PowerPoint、Excel、Skype for Business 客户端Microsoft Teams 
 - 适用于企业的 Microsoft Store 
 - OneDrive客户端 
 
@@ -45,7 +45,7 @@ Microsoft 托管桌面支持包括：
 - 当前：美国、加拿大 (24x7x365) 、英国、比利时、卢森堡、荷兰、澳大利亚和新西兰 (24x7x365)  
 - 英语是与客户进行电话和聊天对话的唯一受支持语言 
 - 我们正在与公司支持人员合作，而不是替换你的企业支持人员;业务线 (LOB) 应用、网络资源等仍由支持人员处理 
-- Microsoft 托管桌面"测试"组的设备以及不是"测试"Microsoft 托管桌面不在作用域内的设备 
+- Microsoft 托管桌面"测试"组的设备以及不是"测试"Microsoft 托管桌面不在作用域中的设备 
 
 
 ## <a name="related-topics"></a>相关主题

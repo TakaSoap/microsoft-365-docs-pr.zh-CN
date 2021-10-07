@@ -9,18 +9,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 465aba55225aed74c838cb8ce09acf6d8b284491
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 59f06ebfb75d628bb5e050a8dfd2b93e6714245f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222383"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207997"
 ---
 # <a name="batch-update-alerts"></a>批量更新警报
 
@@ -55,14 +55,14 @@ ms.locfileid: "59222383"
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-应用程序 | Alert.ReadWrite.All | "读取和写入所有警报"
+Application | Alert.ReadWrite.All | "读取和写入所有警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："警报调查" (请参阅创建和管理角色，了解) [](user-roles.md)
-> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -85,13 +85,13 @@ Content-Type | String | application/json. **必需**。
 
 为了实现最佳性能，不得添加未变化的现有值。
 
-属性 | 类型 | 描述
+属性 | 类型 | 说明
 :---|:---|:---
 alertIds | 列表 &lt; 字符串&gt;| 要更新的警报的 ID 列表。 **Required**
 status | String | 指定指定警报的更新状态。 属性值为："New"、InProgress 和"Resolved"。
 assignedTo | String | 指定警报的所有者
 classification | 字符串 | 指定指定警报的规范。 属性值为："Unknown"、"FalsePositive"和"TruePositive"。 
-确定 | String | 指定指定警报的确定。 属性值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"
+确定 | 字符串 | 指定指定警报的确定。 属性值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"
 注释 | String | 要添加到指定警报的注释。
 
 ## <a name="response"></a>响应

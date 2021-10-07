@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cb4de76bacc794805a79597c9088491f057e3ce0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1813ccdedb58efcaef491cb0242417121e937c15
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201585"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193035"
 ---
 # <a name="collect-investigation-package-api"></a>收集调查包 API
 
@@ -56,14 +56,14 @@ ms.locfileid: "59201585"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Machine.CollectForensics|"收集取证"
+Application|Machine.CollectForensics|"收集取证"
 委派（工作或学校帐户）|Machine.CollectForensics|"收集取证"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："警报调查" (请参阅创建和管理角色，了解) [](user-roles.md)
-> - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户需要具有对设备的访问权限，根据设备组设置 (创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -75,14 +75,14 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 Content-Type|string|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|描述
+参数|类型|说明
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 **必需**。
 

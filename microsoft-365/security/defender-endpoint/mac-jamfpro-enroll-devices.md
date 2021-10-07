@@ -2,15 +2,13 @@
 title: 在 macOS 设备上注册 Microsoft Defender for Endpoint 到 Jamf Pro
 description: 在 macOS 设备上注册 Microsoft Defender for Endpoint 到 Jamf Pro
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 安装， 部署， 卸载， intune， jamfpro， macos， catalina， mojave， high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 207c1334f91ecd22385ce281b3f10763afe57810
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afe044e2f8cc495ce7f74bc482a99689af3e9482
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162296"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207831"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>在 macOS 设备上注册 Microsoft Defender for Endpoint 到 Jamf Pro
 
@@ -57,7 +55,7 @@ ms.locfileid: "59162296"
 
     ![自动生成的徽标描述的关闭。](images/b6c7ad56d50f497c38fc14c1e315456c.png)
 
-3. 在 **"为邀请指定** 收件人>电子邮件地址"下输入收件人 (电子邮件地址) 电子邮件地址。
+3. In **Specify Recipients for the Invitation** > under Email **Addresses** enter the e-mail address (es) of the recipients.
 
     ![配置设置 2 的图像。](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
 
@@ -89,7 +87,7 @@ ms.locfileid: "59162296"
 
 1. 选择 **"继续** "，然后从"系统首选项" **窗口安装 CA** 证书。
 
-    ![Jamf Pro注册1 的图像。](images/jamfpro-ca-certificate.png)
+    ![Jamf Pro enrollment1 的图像。](images/jamfpro-ca-certificate.png)
 
 2. 安装 CA 证书后，返回到浏览器窗口，然后选择" **继续** "并安装 MDM 配置文件。
 
@@ -101,12 +99,12 @@ ms.locfileid: "59162296"
 
 4. 选择 **"** 继续"继续安装 MDM 配置文件。
 
-    ![Jamf Pro注册4 的图像。](images/jamfpro-install-mdm.png)
+    ![Jamf Pro enrollment4 的图像。](images/jamfpro-install-mdm.png)
 
 5. 选择 **"继续** "以安装 MDM 配置文件。
 
-    ![Jamf Pro注册5 的图像。](images/jamfpro-mdm-unverified.png)
+    ![Jamf Pro enrollment5 的图像。](images/jamfpro-mdm-unverified.png)
 
-6. 选择 **"继续**  "以完成配置。
+6. 选择 **"继续**  "完成配置。
 
     ![Jamf Pro注册6 的图像。](images/jamfpro-mdm-profile.png)

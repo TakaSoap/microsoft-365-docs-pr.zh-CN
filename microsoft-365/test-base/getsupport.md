@@ -9,18 +9,18 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 3554072781dea2397b5a302d7a497168c370c7f832cfe75c6b4a5c91c5640cdb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2756ae55146b4def3845e95d24ee0cdfd700f4f3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852967"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180515"
 ---
 # <a name="additional-support"></a>其他支持
 
-### <a name="for-additional-support-please-reach-out-to-the-test-base-team-at-testbasepreviewmicrosoftcom"></a>如需其他支持，请联系测试基础团队，TestBasePreview@microsoft.com
+### <a name="for-additional-support-please-reach-out-to-the-test-base-team-at-testbasepreviewmicrosoftcom"></a>若要获得其他支持，请联系测试基础团队，TestBasePreview@microsoft.com

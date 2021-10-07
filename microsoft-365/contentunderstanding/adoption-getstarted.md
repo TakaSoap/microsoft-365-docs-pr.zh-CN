@@ -1,6 +1,6 @@
 ---
 title: Microsoft SharePoint Syntex采用：入门
-description: 了解如何在组织中使用和实施SharePoint Syntex，以帮助你解决业务问题。
+description: 了解如何在组织中使用SharePoint Syntex解决方案，以帮助你解决业务问题。
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -13,17 +13,17 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: ''
-localization_priority: Normal
-ms.openlocfilehash: f8d3e4bc1b410ddcf0472f408864de1f34dad722
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+ms.openlocfilehash: 172c0a681bc8e7c7867e4bcba1c75f94cfc12e60
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175517"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193155"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex采用：入门
 
-将企业提供的智能内容服务SharePoint Syntex三个部分：
+将智能内容服务视为SharePoint Syntex三个部分：
 
 - **内容了解：** 创建无代码 AI 模型以对内容进行分类和提取信息，以自动应用元数据进行知识发现和重用。 了解有关内容 [理解的更多信息](document-understanding-overview.md)。
 - **内容处理：** 自动捕获、获取和分类内容，并简化使用 Power Automate 以内容为中心的Power Automate。 详细了解内容 [处理](form-processing-overview.md)。
@@ -40,11 +40,11 @@ ms.locfileid: "59175517"
 | 仅限于单个库。 | 可应用于多个库。 |
 | 培训 PDF、JPG、PNG 格式，总计 50 MB/500 pp。 | 培训 5-10 个 PDF、Office 或电子邮件文件，包括反面例子。 |
 
-有关功能的更完整比较，请参阅文档理解与表单 [处理模型的区别](difference-between-document-understanding-and-form-processing-model.md)。
+有关功能的更完整比较，请参阅文档理解与 [表单处理模型的区别](difference-between-document-understanding-and-form-processing-model.md)。
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>确定要优化的试点业务方案
 
-要准备在SharePoint Syntex中使用应用程序，首先需要了解它非常有用的方案。 "原因"可帮助确定需要哪种模型，以及如何根据将应用模型的地方来构建组织。 下面是一些文档理解可帮助您的组织的方案：
+要准备在SharePoint Syntex使用应用程序，首先需要了解它非常有用的方案。 "原因"可帮助确定需要哪种模型，以及如何根据将应用模型的地方来构建组织。 下面是一些文档理解可帮助您的组织的方案：
 
 - **内容处理：** 处理合同、工作声明和其他类似表单的文档。 输入表单，训练模型以了解和映射字段，然后运行表单以自动收集数据。 有关详细信息，请参阅表单 [处理概述](form-processing-overview.md)。
 - **发票分析：** 从发票中拉出相关详细信息，并确保它们符合策略或正在适当处理。
@@ -66,7 +66,7 @@ ms.locfileid: "59175517"
 
 使用[示例方案和用例来](adoption-scenarios.md)提示有关如何在组织中使用SharePoint Syntex的想法。
 
-## <a name="identify-roles--responsibilities"></a>确定角色&职责
+## <a name="identify-roles--responsibilities"></a>确定&角色
 
 确定贵组织中将构建和管理模型的人。 可能会涉及以下角色。
 
@@ -76,7 +76,7 @@ ms.locfileid: "59175517"
 | 配置表单处理 | 配置 Dataverse 环境以用于表单处理 | 收集用例 | 收集业务用例 |
 | 管理内容中心和权限| 购买和分配 AIB 信用 | 建立最佳做法并查看模型分析 | 创建和应用模型 |
 
-知识管理器、业务流程所有者和内容模型所有者在组织中创建示例模型和采用者。
+知识经理、业务流程所有者和内容模型所有者在组织中创建示例模型和采用者。
 可能涉及的其他人：合规性管理员、分类管理员。
 
 他们将在哪里生成和应用模型？ 是否有可以增强的现有流程或存储库？
@@ -112,7 +112,7 @@ ms.locfileid: "59175517"
 | Power 平台管理员| 配置 Dataverse 环境 | IT 部门|
 
 > [!NOTE]
-> 尽管我们建议在部署过程中完成其中每个角色，但你可能会发现，你无需全部开始使用你确定的解决方案。
+> 尽管我们建议在部署过程中完成其中每个角色，但你可能会发现，你无需所有角色都开始使用你确定的解决方案。
 
 ## <a name="readiness-checklist"></a>准备情况清单
 

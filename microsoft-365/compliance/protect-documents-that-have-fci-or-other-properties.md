@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContentPropertyContainsWords
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -19,17 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-description: 了解如何使用 DLP 策略 (数据丢失) 保护具有第三方系统属性的文档。
-ms.openlocfilehash: 60440162834bbef34c6e3adc2a60053cd9015e9d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解如何使用 DLP 策略 (数据丢失) 保护具有来自第三方系统的属性的文档。
+ms.openlocfilehash: fb8e1474666f016af3f6169f1a1d8d490a36f3c7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201374"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200349"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>创建 DLP 策略来保护具有 FCI 或其他属性的文档
 
-Microsoft 365 DLP 策略 (数据丢失防护) 分类属性或项目属性来标识敏感项目。 例如，可以使用：
+Microsoft 365 DLP 策略 (数据丢失) 可以使用分类属性或项目属性来标识敏感项目。 例如，可以使用：
 
 - Windows服务器文件分类基础结构 (FCI) 属性
 - SharePoint文档属性
@@ -37,13 +37,13 @@ Microsoft 365 DLP 策略 (数据丢失防护) 分类属性或项目属性来标�
 
 ![显示外部Office 365和外部分类系统的图表。](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
 
-例如，您的组织可能使用 Windows Server FCI 来标识具有个人数据（如社会保险号）的项目，然后根据文档中找到的个人数据的类型和发生次数，将"个人身份信息"属性设置为"高、中等、**低**、公开"或"非 **PII"，** 对文档进行分类。 
+例如，您的组织可能会使用 Windows Server FCI 来标识具有个人数据（如社会保险号）的项目，然后根据文档中找到的个人数据的类型和发生次数，将"个人身份信息"属性设置为"高、中等、**低**、公开"或"非 **PII"，** 对文档进行分类。 
 
-在Microsoft 365中，您可以创建一个 DLP 策略，用于标识将该属性设置为特定值（如 **"** 高"和"中"值）的文档，然后执行阻止访问这些文件等操作。 如果将属性设置为“低”，则同一个策略可以使用其他规则来执行不同的操作，如发送电子邮件通知。 这样，DLP 与 Windows Server FCI 集成，并可帮助保护上载Office或共享到 Microsoft 365 的文档Windows基于服务器的文件服务器。
+在Microsoft 365中，您可以创建一个 DLP 策略，标识将该属性设置为特定值（如 **High** 和 **Medium）** 的文档，然后执行阻止访问这些文件等操作。 如果将属性设置为“低”，则同一个策略可以使用其他规则来执行不同的操作，如发送电子邮件通知。 这样，DLP 与 Windows Server FCI 集成，并可帮助保护上载Office或共享到 Microsoft 365 的文档Windows基于服务器的文件服务器。
 
 DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档属性，只要该属性具有 SharePoint 搜索的相应托管属性。 例如，SharePoint 网站集可能使用名为“行程报告”的内容类型，包含名为“客户”的必填字段。 只要有人创建行程报告，就必须输入客户名称。 此属性名称/值对也可在 DLP 策略中使用，例如，如果您希望在"客户"字段包含 **Contoso** 时阻止来宾访问文档的规则。
 
-如果要将 DLP 策略应用于具有特定标签Microsoft 365，则不应按照此处的步骤操作。 相反，了解如何 [使用保留标签作为 DLP 策略中的条件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
+如果要将 DLP 策略应用于具有特定标签Microsoft 365的内容，则不应按照此处的步骤操作。 相反，了解如何 [使用保留标签作为 DLP 策略中的条件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
 
 ## <a name="before-you-create-the-dlp-policy"></a>在创建 DLP 策略之前
 
@@ -66,11 +66,11 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
 
 1. 登录到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>。
 
-2. 在左侧导航栏中，选择"**管理中心** \> **SharePoint"。** You're now in the SharePoint admin center.
+2. 在左侧导航栏中，选择"管理 **中心** \> **SharePoint"。** You're now in the SharePoint admin center.
 
 3. 在左侧导航栏中，**在"搜索管理"** \> 页上选择"搜索 **""** \> **管理搜索架构"。**
 
-   ![搜索管理中心SharePoint页。](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
+   ![搜索管理中心中的SharePoint页。](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
 
 4. 在" **托管属性"** 页上的 \> **"新建托管属性"上**。
 
@@ -84,7 +84,7 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
 
 8. 在 **"到已爬网属性的映射"** \> **下添加映射**。
 
-9. 在"**已爬网属性** 选择"对话框中，查找并选择与 Windows Server FCI 属性或将在 DLP 策略中使用的其他属性 OK 相对应的已爬网 \> \> **属性**。
+9. 在"**已爬网属性** 选择"对话框中，查找并选择与 Windows Server FCI 属性或将在 DLP 策略中使用的其他属性 OK 相对应的已 \> 爬网 \> **属性**。
 
    ![已爬网属性选择对话框。](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
 
@@ -92,7 +92,7 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
 
 ## <a name="create-a-dlp-policy-that-uses-an-fci-property-or-other-property"></a>创建使用 FCI 属性或其他属性的 DLP 策略
 
-本示例中，组织在其基于服务器的文件服务器上Windows FCI;具体来说，他们使用的是名为"个人身份信息"的 FCI 分类属性，其中可能的值为 **High、Moderate、Low、Public** 和 Not **PII。**    现在，他们希望在 OFFICE 365 中的 DLP 策略中使用其现有 FCI Office 365。
+本示例中，组织在其基于服务器Windows使用 FCI;具体来说，他们使用的是名为"个人身份信息"的 FCI 分类属性，其中可能的值为 **High、Moderate、Low、Public** 和 Not **PII。**    现在，他们希望在 OFFICE 365 中的 DLP 策略中使用其现有 FCI Office 365。
 
 首先，它们按照上述步骤在 SharePoint Online 中创建托管属性，该属性映射到从 FCI 属性自动创建的已爬网属性。
 
@@ -126,7 +126,7 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   Windows服务器 FCI 包括许多内置属性，包括此示例 **中使用的** 个人身份信息。 每个属性的可能值对于每个组织可能不同。 此处 **使用的** **High、Moderate** 和 **Low** 值只是一个示例。 对于您的组织，可以在基于Windows服务器的文件服务器上查看服务器资源管理器中的 Windows Server FCI 分类属性及其可能值。 有关详细信息，请参阅创建 [分类属性](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11))。
+   Windows服务器 FCI 包括许多内置属性，包括此示例 **中使用的** 个人身份信息。 每个属性的可能值对于每个组织可能不同。 此处 **使用的** **High、Moderate** 和 **Low** 值只是一个示例。 对于组织，可以在基于Windows服务器的文件服务器的"服务器资源管理器"文件中查看 Windows Server FCI 分类属性及其可能值。 有关详细信息，请参阅创建 [分类属性](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11))。
 
 完成后，您的策略应具有两个新规则，这两个规则都使用 **Document 属性包含这些值中的任意一个** 条件。 此条件不会显示在 UI 中，但将显示其他条件、操作和设置。
 
@@ -136,7 +136,7 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
 
 ## <a name="after-you-create-the-dlp-policy"></a>创建 DLP 策略之后
 
-执行前面部分中的步骤将创建一个 DLP 策略，该策略将快速检测具有该属性的内容，但只有在该内容是新上载的 (以便对内容编制索引) 时，或者如果该内容是旧内容但刚刚编辑过 (以便对内容重新编制) 索引。
+执行前面部分中的步骤将创建一个 DLP 策略，该策略将快速检测具有该属性的内容，但只有在该内容是新上载的 (以便对内容编制索引) 时，或者如果该内容是旧内容但刚刚编辑过 (以便对内容重新编制索引) 。
 
 若要在任意位置检测包含该属性的内容，您可能需要手动请求对您的库、网站或网站集重新编制索引，以便 DLP 策略识别包含该属性的所有内容。在 SharePoint Online 中，内容基于已定义的爬网计划进行自动爬网。爬网程序选取自上次爬网以来已更改的内容，并更新索引。如果您需要在下一次计划的爬网之前，让您的 DLP 策略保护内容，您可以执行下列步骤。
 
@@ -145,7 +145,7 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
 
 有关详细信息，请参阅[Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content)（手动请求对网站、库或列表进行爬网和重新编制索引）。
 
-### <a name="reindex-a-site-optional"></a>重新索引网站 (可选) 
+### <a name="reindex-a-site-optional"></a>为网站重新索引 (可选) 
 
 1. On the site， choose **设置** (gear icon in upper right) \> **Site 设置**.
 

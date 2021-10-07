@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ce1a3d5153d324d008d2d46048838351eb7bc047
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3ca15e29d18e910377a797bec4c78109d7509ef4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161944"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207627"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -45,7 +45,7 @@ ms.locfileid: "59161944"
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
 | `AccountObjectId` | string | Azure AD 中帐户的唯一标识符 |
-| `AccountUpn` | string | 帐户 (UPN) 用户主体名称 |
+| `AccountUpn` | string | 帐户 (UPN) 的用户主体名称 |
 | `OnPremSid` | string | 帐户的 SID (本地) 标识符 |
 | `CloudSid` | string | 帐户的云安全标识符 |
 | `GivenName` | string | 帐户用户的给定名称或名字 |
@@ -56,7 +56,7 @@ ms.locfileid: "59161944"
 | `AccountName` | string | 帐户的用户名 |
 | `AccountDomain` | string | 帐户的域 |
 | `EmailAddress` | string | 帐户的 SMTP 地址 |
-| `SipProxyAddress` | string | IP 语音 (VOIP) 会话初始 (SIP) 帐户地址 |
+| `SipProxyAddress` | string | IP 语音 (VOIP) 会话初始 (SIP) 地址 |
 | `City` | string | 帐户用户所在的城市 |
 | `Country` | string | 帐户用户所在的国家/地区 |
 | `IsAccountEnabled` | 布尔 | 指示帐户是否已启用 |

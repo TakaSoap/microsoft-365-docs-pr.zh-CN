@@ -9,14 +9,14 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: 使用 REST API 将文档理解模型应用至一个或多个库。
-ms.openlocfilehash: 04f1dfdb0c16110c9ba7de12f5f0735d498d50cf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a31f0b499259759558dc062b7a6e9e469c93d2df
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201366"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60187073"
 ---
 # <a name="batch-apply-model"></a>批处理应用模型
 

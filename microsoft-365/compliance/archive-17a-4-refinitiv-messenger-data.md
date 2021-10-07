@@ -1,5 +1,5 @@
 ---
-title: 设置连接器以在邮件中存档 Refinitiv Eikon Messenger Microsoft 365
+title: 设置连接器以将 Refinitiv Eikon Messenger 数据存档在 Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 了解如何设置和使用 17a-4 Refinitiv Eikon Messenger DataParser 连接器在 Microsoft 365 中导入和存档此Microsoft 365。
-ms.openlocfilehash: b3714a2e0d0d3e20d5a2851e520be00dd6ed5aeb
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+description: 了解如何设置和使用 17a-4 Refinitiv Eikon Messenger DataParser 连接器在 Microsoft 365 中导入和存档此数据。
+ms.openlocfilehash: 9db1af04a731b3903cdfcf9dc20d7c7577b337e9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399642"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200577"
 ---
 # <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data"></a>设置连接器以存档 Refinitiv Eikon Messenger 数据
 
@@ -33,7 +33,7 @@ Refinitiv Eikon Messenger 数据存储在用户邮箱中后，可以应用 Micro
 
 1. 您的组织与 17a-4 合作，以设置和配置 Refinitiv Eikon Messenger DataParser。
 
-2. 定期，Refinitiv Eikon Messenger 项目由 DataParser 收集。 DataParser 还会将邮件内容转换为电子邮件格式。
+2. DataParser 会定期收集 Refinitiv Eikon Messenger 项目。 DataParser 还会将邮件内容转换为电子邮件格式。
 
 3. 在 Microsoft 365 合规中心 创建的 Refinitiv Eikon Messenger DataParser 连接器连接到 DataParser，将邮件传输至 Microsoft 云中的安全 Azure 存储 位置。
 
@@ -43,9 +43,9 @@ Refinitiv Eikon Messenger 数据存储在用户邮箱中后，可以应用 Micro
 
 - 为 Microsoft 连接器创建 DataParser 帐户。 若要创建帐户，请联系 [17a-4 LLC](https://www.17a-4.com/contact/)。 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 必须在步骤 1 (中创建 Refinitiv Eikon Messenger DataParser 连接器，并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，此角色不会分配给 Exchange Online 中的角色组。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色组"Exchange Online。
+- 必须在步骤 1 (中创建 Refinitiv Eikon Messenger DataParser 连接器并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此 **角色Microsoft 365 合规中心。** 默认情况下，不会向角色组分配此角色Exchange Online。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
-- 此数据连接器可用于美国政府GCC中Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
+- 此数据连接器可用于美国政府GCC云Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="step-1-set-up-a-refinitiv-eikon-messenger-dataparser-connector"></a>步骤 1：设置 Refinitiv Eikon Messenger DataParser 连接器
 
@@ -67,7 +67,7 @@ Refinitiv Eikon Messenger 数据存储在用户邮箱中后，可以应用 Micro
 
 ## <a name="step-3-map-users"></a>步骤 3：映射用户
 
-Refinitiv Eikon Messenger DataParser 连接器会自动将用户映射到Microsoft 365电子邮件地址，然后再将数据导入Microsoft 365。
+Refinitiv Eikon Messenger DataParser 连接器会自动将用户映射到其 Microsoft 365 电子邮件地址，然后再将数据导入Microsoft 365。
 
 ## <a name="step-4-monitor-the-refinitiv-eikon-messenger-dataparser-connector"></a>步骤 4：监视 Refinitiv Eikon Messenger DataParser 连接器
 
@@ -77,7 +77,7 @@ Refinitiv Eikon Messenger DataParser 连接器会自动将用户映射到Microso
 
 2. 单击 **"连接器"** 选项卡，然后选择您创建的 Refinitiv Eikon Messenger DataParser 连接器以显示该飞出页，其中包含连接器的属性和信息。
 
-3. 在 **"源的连接器状态"下**， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
+3. 在 **"源的连接器状态"** 下， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
 
 ## <a name="known-issues"></a>已知问题
 

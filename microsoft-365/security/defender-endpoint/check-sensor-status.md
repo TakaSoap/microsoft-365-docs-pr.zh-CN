@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 7d2c18c080f6f8fc313f17a5e2820b8a8b8a69fa
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e7794f99b21939c3cf51f4b5afe2b9da50f9b933
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196074"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207063"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>检查 Microsoft Defender for Endpoint 中的传感器运行状况
 
@@ -56,7 +56,7 @@ ms.locfileid: "59196074"
 您还可以使用导出功能以 CSV 格式下载 **整个** 列表。 有关筛选器的信息，请参阅 [查看和组织设备列表](machines-view-overview.md)。
 
 > [!NOTE]
-> 导出 CSV 格式的列表以显示未筛选的数据。 CSV 文件将包含组织的所有设备，而不考虑视图本身应用的任何筛选，并且可能需要很长时间才能下载，具体取决于组织的大小。
+> 导出 CSV 格式的列表以显示未筛选的数据。 CSV 文件将包含组织的所有设备，而不考虑视图本身应用的任何筛选，并且可能需要大量时间来下载，具体取决于组织的大小。
 
 !["设备"列表页面的屏幕截图。](images/atp-devices-list-page.png)
 

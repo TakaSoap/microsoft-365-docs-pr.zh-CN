@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: 使用 Advanced eDiscovery中的通信工作流跟踪法定保留通知的状态，并在必要时进行更新并重新发送。
-ms.openlocfilehash: 8852bfd1651e1855d276b60ba6fac35c378d4631
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 276771b2a22f6db3e3d0620ee429a16626107bcc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170157"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200433"
 ---
 # <a name="manage-hold-notifications"></a>管理保留通知
 

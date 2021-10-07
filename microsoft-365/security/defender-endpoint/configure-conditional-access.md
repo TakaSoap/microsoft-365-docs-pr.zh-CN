@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0a0be19a974f7a065333ff0a5045512a2eb98a85
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75b74024b7f4e94d1b24b2f926bfe488a8e594b1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222386"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192987"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置条件访问
 
@@ -35,13 +35,13 @@ ms.locfileid: "59222386"
 
 本节指导您完成正确实现条件访问需要执行的所有步骤。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 > [!WARNING]
 > 需要注意的是，此方案不支持已注册 Azure AD 的设备。</br>
 > 仅支持 Intune 注册的设备。
 
-你需要确保你的所有设备都注册到 Intune 中。 可以使用以下任一选项在 Intune 中注册设备：
+你需要确保所有设备都注册到 Intune 中。 可以使用以下任一选项在 Intune 中注册设备：
 
 - IT 管理员：若要详细了解如何启用自动注册，请参阅Windows[注册](/intune/windows-enroll#enable-windows-10-automatic-enrollment)
 - 最终用户：若要详细了解如何在 Intune 中注册 Windows 10 设备，请参阅在[Intune 中](/intune/quickstart-enroll-windows-device)注册 Windows 10 设备
@@ -51,7 +51,7 @@ ms.locfileid: "59222386"
 
 请注意访问这些门户和实现条件访问所需的角色：
 
-- **Microsoft 365 Defender** - 你需要使用一个 全局管理员角色 登录门户以打开集成。
+- **Microsoft 365 Defender** - 你需要使用一个 全局管理员角色 登录门户，以打开集成。
 - **Intune** - 你需要使用具有管理权限的安全管理员权限登录门户。
 - **Azure AD 门户** - 你需要以全局管理员、安全管理员或条件访问管理员登录。
 
@@ -76,15 +76,15 @@ ms.locfileid: "59222386"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择 **设备合规性** \> **Microsoft Defender ATP**。
-3. 将 **连接 Windows 10.0.15063+** 设备设置为 **"** 打开"。。
+3. 将 **连接 Windows 10.0.15063+ 设备设置为"打开"。。** 
 4. 单击“**保存**”。
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>步骤 3：在 Intune 中创建合规性策略
 
-1. 在 [Azure 门户中](https://portal.azure.com)，选择 **"所有服务"，** 筛选 **Intune，** 然后选择"Microsoft Intune"。 
+1. 在 [Azure 门户中，](https://portal.azure.com)选择 **"所有服务"，** 筛选 **Intune，** 然后选择"Microsoft Intune"。 
 2. 选择 **"设备合规性** \> **策略** \> **""创建策略"。**
 3. 输入"**名称"** 和"**说明"。**
-4. 在 **"平台**"中 **，Windows 10和更高版本。**
+4. 在 **平台** 中，选择 **Windows 10和更高版本**。
 5. 在 **"设备运行状况** "设置中，将"要求设备位于设备威胁级别或以下设备威胁级别 **"设置为首选** 级别：
 
    - **Secured：** 此级别是最安全级别。 设备无法具有任何现有威胁，并且仍访问公司资源。 如果发现任何威胁，则评估设备不相容。
@@ -96,7 +96,7 @@ ms.locfileid: "59222386"
 
 ### <a name="step-4-assign-the-policy"></a>步骤 4：分配策略
 
-1. 在 [Azure 门户中](https://portal.azure.com)，选择 **"所有服务"，** 筛选 **Intune，** 然后选择"Microsoft Intune"。 
+1. 在 [Azure 门户中，](https://portal.azure.com)选择 **"所有服务"，** 筛选 **Intune，** 然后选择"Microsoft Intune"。 
 2. 选择 **设备合规性** \> **策略**>选择适用于终结点的 Microsoft Defender 合规性策略。
 3. 选择“**分配**”。
 4. 包括或排除 Azure AD 组，以为其分配策略。

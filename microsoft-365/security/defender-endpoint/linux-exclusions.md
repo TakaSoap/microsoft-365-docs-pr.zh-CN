@@ -2,27 +2,25 @@
 title: 在 Linux 上配置并验证 Microsoft Defender for Endpoint 的排除项
 description: 在 Linux 上提供并验证 Microsoft Defender for Endpoint 的排除项。 可以针对文件、文件夹和进程设置排除项。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 排除， 扫描， 防病毒
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 269f74b0df2b0c51217d44bdb0cc2001d0f8a34d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: db2e25cb2d1690adeb581ece309e4a368471f192
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170969"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206943"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上配置并验证 Microsoft Defender for Endpoint 的排除项
 
@@ -56,7 +54,7 @@ ms.locfileid: "59170969"
 文件扩展名|扩展名位于设备上任意位置的所有文件|`.test`
 文件|由完整路径标识的特定文件|`/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Folder|指定文件夹下的所有 (以递归) |`/var/log/`<br/>`/var/*/`
-流程|特定进程 (的完整路径或文件名指定) 及其打开的所有文件|`/bin/cat`<br/>`cat`<br/>`c?t`
+流程|由 (的完整路径或文件名指定的特定进程) 及其打开的所有文件|`/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
 > 上述路径必须是硬链接，而不是符号链接，才能成功排除。 可以通过运行 来检查路径是否为符号链接 `file <path-name>` 。
@@ -65,7 +63,7 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/`<br/>`/var/*/`
 
 通配符|说明|示例|匹配|不匹配
 ---|---|---|---|---
-\*|匹配任意数目的任何字符，包括无 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+\*|匹配任意数目的任何字符，包括无字符 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
 ?|匹配任何单个字符|`file?.log`|`file1.log`<br/>`file2.log`|`file123.log`
 
 ## <a name="how-to-configure-the-list-of-exclusions"></a>如何配置排除项列表
@@ -205,7 +203,7 @@ mdatp threat allowed add --name [threat-name]
 mdatp threat list
 ```
 
-例如，若要 (与 EICAR 检测关联的威胁) 添加到允许列表中，请 `EICAR-Test-File (not a virus)` 执行以下命令：
+例如，若要 (与 EICAR 检测关联的威胁) 添加到允许列表中，请执行 `EICAR-Test-File (not a virus)` 以下命令：
 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"

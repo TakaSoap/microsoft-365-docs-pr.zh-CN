@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8dbb6ebb123770c0293ba25145ef2234fc6031a5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f5c9d7e930b069c393ac8581e185c470d7bdf08f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171468"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201201"
 ---
 # <a name="contact-support-for-montenegro"></a>联系针对阿尔巴尼亚的支持人员
 
@@ -30,7 +30,7 @@ ms.locfileid: "59171468"
 
 输入代码 7708
 
-## <a name="hours"></a>小时
+## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

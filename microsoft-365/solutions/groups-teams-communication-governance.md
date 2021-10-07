@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解通信治理协作方案。
-ms.openlocfilehash: 6b49f0725cb300316580e972626a96b7057b5ccb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cc90130a9cb841291872898ca0ca53a4b515b4fb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196439"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207423"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>协作方案的通信治理
 
@@ -32,7 +32,7 @@ Microsoft 365提供了许多控件，可帮助你管理组织的通信，包括�
 |类别|说明|参考|
 |:-------|:----------|:--------|
 |消息传递|||
-||管理用户在邮件传送功能中可以Teams。|[在 Teams 中管理消息传递策略](/microsoftteams/messaging-policies-in-teams)|
+||管理用户在邮件传送功能中Teams。|[在 Teams 中管理消息传递策略](/microsoftteams/messaging-policies-in-teams)|
 ||控制谁可以启动和回复频道中的帖子。|[在频道中设置和管理Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)|
 |会议|||
 ||管理会议参与者可以执行哪些工作。|[管理 Teams 中的会议策略](/microsoftteams/meeting-policies-in-teams)|
@@ -42,7 +42,7 @@ Microsoft 365提供了许多控件，可帮助你管理组织的通信，包括�
 
 ## <a name="messaging"></a>消息传递
 
-您可以使用消息策略控制哪些聊天和频道消息功能（如编辑或删除消息）可供 Microsoft Teams 用户使用。 您可以为不同的用户和组创建不同的策略。
+您可以使用消息策略控制哪些聊天和频道消息功能（如编辑或删除消息）可供 Microsoft Teams用户使用。 您可以为不同的用户和组创建不同的策略。
 
 [在 Teams 中管理消息传递策略](/microsoftteams/messaging-policies-in-teams)
 
@@ -52,18 +52,18 @@ Microsoft 365提供了许多控件，可帮助你管理组织的通信，包括�
 
 ## <a name="meetings"></a>会议
 
-您可以控制可供会议参与者Teams的功能，包括安排、内容共享、参与者以及音频和视频策略。
+您可以控制可供会议参与者Teams的功能，包括计划、内容共享、参与者以及音频和视频策略。
 
 [管理 Teams 中的会议策略](/microsoftteams/meeting-policies-in-teams)
 
-你可以控制匿名加入Teams会议，这允许具有指向会议的链接的任何人加入会议。
+你可以控制匿名加入Teams会议，从而允许具有指向会议的链接的任何人加入会议。
 
 [允许匿名用户加入会议](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
 
 
 ## <a name="communication-compliance"></a>通信合规性
 
-通过 Microsoft 365通信合规性，您可以检查冒犯性语言、敏感信息以及与内部和监管标准有关的信息的通信。 聊天通信、邮箱和Yammer消息都可以受到监视，从而生成警报。 借助管理工具，您可以快速识别策略匹配的邮件并采取措施。
+通过通信合规性Microsoft 365检查冒犯性语言、敏感信息以及与内部和监管标准有关的信息的通信。 聊天通信、邮箱和Yammer消息都可以受到监视，从而生成警报。 借助管理工具，您可以快速识别策略匹配的邮件并采取措施。
 
 [Microsoft 365 中的通信合规性](../compliance/communication-compliance.md)
 

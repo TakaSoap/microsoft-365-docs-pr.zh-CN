@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 description: 管理员可以了解如何使用安全与合规中心中的"新用户转发电子邮件见解&调查其组织中用户何时将邮件转发到新域。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dedef9cdd407859b69a0d15571f3131138ddcccb
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 0e5ec29849c50f8d012de1886e997b67f1f191ee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988927"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176531"
 ---
-# <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>新用户在安全与合规中心转发&见解
+# <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>新用户在安全与合规中心&电子邮件见解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "59988927"
 
 当组织中新的用户帐户突然开始将电子邮件转发到外部域时，这是可疑的。
 
-当 **组织中新** 创建的用户将邮件转发到外部域时，安全与合规中心 [&](https://protection.office.com) 转发的电子邮件见解会通知你。 此条件可能指示已使用遭到入侵的管理员帐户创建新用户。 如果您怀疑帐户已被泄露，请参阅响应遭到入侵 [的电子邮件帐户](responding-to-a-compromised-email-account.md)。
+安全 **与合规** 中心内 [&](https://protection.office.com) 转发的电子邮件见解的新域在组织中新创建的用户将邮件转发到外部域时通知你。 此条件可能指示已使用遭到入侵的管理员帐户创建新用户。 如果您怀疑帐户已被泄露，请参阅响应遭到入侵 [的电子邮件帐户](responding-to-a-compromised-email-account.md)。
 
 此见解仅在检测到问题时显示，并且显示在"转发 [报告"页上](view-mail-flow-reports.md#forwarding-report) 。
 
@@ -40,7 +40,7 @@ ms.locfileid: "59988927"
 
 ![详细信息 在单击"新用户转发电子邮件见解"后出现的飞出图。](../../media/mfi-new-users-forwarding-email-details.png)
 
-单击"报告仪表板"或"仪表板"上的"热门见解"&建议区域中的"查看全部"后，选择见解后， (**访问** 此 \>  <https://protection.office.com/insightdashboard> 详细信息) 。
+单击"报告仪表板"或"仪表板"上的"热门见解&建议"区域中的"查看全部"后，选择见解后， (**访问** 此 \>  <https://protection.office.com/insightdashboard> 详细信息) 。
 
 可以单击" **查看与见解关联的** 报告"链接转到"转发修改" **报告，如下** 一节中所述。
 

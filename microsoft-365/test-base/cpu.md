@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 9bb56263f9f6b1889d46daae759a33382071c626
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 935781e929c159918f8a0aec3b4a551ab974480f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197178"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180611"
 ---
 # <a name="intelligent-cpu-regression-analysis"></a>智能 CPU 回归分析
 
@@ -27,12 +27,12 @@ CPU 使用率可以指示应用程序是否受操作系统更新的影响。
 
 Microsoft 365 测试基础为软件开发人员提供了 CPU 性能回归的见解，当其应用程序在即将推出的 Windows 操作系统 (操作系统更新的不同版本上运行时) 回归。 
 
-这些 CPU 回归使开发人员能够检测和解决应用程序问题 (在广泛部署操作系统更新) 发生潜在故障，从而防止最终用户遇到不良体验。
+这些 CPU 回归使开发人员 (在广泛部署操作系统更新) 并解决应用程序问题，从而防止最终用户遇到不良体验。
 
 
 ### <a name="how-cpu-regression-analysis-works"></a>CPU 回归分析的工作原理 ###
 
-作为测试基础用户，可以在单个 .zip 文件) 中上载应用程序的二进制文件 (以及关联的测试脚本，并选择你要在 Azure 上的测试基础门户上测试应用程序的 Windows 操作系统版本。 
+作为测试基础用户，你可以将应用程序的二进制文件 (上载到单个 .zip 文件) 以及关联的测试脚本，并选择你要在 Azure 上的测试基础门户上测试应用程序的 Windows 操作系统版本。 
 
 然后，测试基础服务运行测试脚本并执行 CPU **回归分析**。 
 
@@ -61,5 +61,5 @@ CPU 使用率不是 100% 的类似比较，因为操作系统的两个版本上�
 
 然后，进程按其与每个应用程序的相关性顺序显示。 还可以收藏默认情况下可监视的一部分进程，以及用于 CPU 回归分析的相关进程。 一旦检测到回归分析器，就可以下载Windows分析器工具包并分析 CPU 性能回归的原因。 
 
-Windows Performance Analyzer 将事件跟踪日志 (ETL) 作为输入，这些 .etl 文件在日志文件中可用，可在门户上运行测试时下载。 如果您想了解有关调试 CPU 性能的更多信息，请参阅 Windows Performance Analyzer 文档。
+Windows Performance Analyzer 将事件跟踪日志 (ETL) 作为输入，并且这些 .etl 文件在日志文件中可用，可在门户上下载用于测试运行。 如果您想了解有关调试 CPU 性能的更多信息，请参阅 Windows Performance Analyzer 文档。
 

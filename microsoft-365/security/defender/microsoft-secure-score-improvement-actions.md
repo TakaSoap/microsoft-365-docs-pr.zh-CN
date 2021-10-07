@@ -1,10 +1,10 @@
 ---
 title: 通过 Microsoft 安全分数评估安全状况
-description: 介绍如何采取措施来提高 Microsoft 安全分数在 Microsoft 365 Defender 门户。
+description: 介绍如何在 Microsoft 安全中心门户中采取措施Microsoft 365 Defender分数。
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， microsoft 安全分数， Microsoft 365 Defender门户， 改进操作
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d67d92029ccb4da6711010b291dc2ad71bcaff70
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 73f477e63d777a2de68a8ee06dcd6edd31024db7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200961"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207555"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状态
 
@@ -35,12 +35,12 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 为了帮助您更快找到所需的信息，Microsoft 改进操作分为以下组：
 
-- 标识 (Azure Active Directory角色&帐户) 
-- Device (For Endpoint 的 Microsoft Defender，称为 ["适用于](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) 设备的 Microsoft 安全分数) 
+- 标识 (Azure Active Directory角色&角色) 
+- Device (Microsoft Defender for Endpoint，称为 ["适用于](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) 设备的 Microsoft 安全分数) 
 - 应用 (电子邮件和云应用，包括Office 365和Microsoft Cloud App Security) 
 
 >[!NOTE]
->在 Microsoft 安全分数的最近版本中，发布了一个改进的评分模型，使得 Microsoft 安全分数暂时与 Identity Secure Score 和 Graph API 不兼容。 [查看详细信息](microsoft-secure-score-whats-new.md)
+>在 Microsoft 安全分数的最近版本中，发布了一个改进的评分模型，这使得 Microsoft 安全分数暂时与 Identity Secure Score 和 Graph API 不兼容。 [查看详细信息](microsoft-secure-score-whats-new.md)
 
 在"Microsoft 安全分数概述"页中，查看在这些组之间如何拆分分数以及可用分数。 通过基准比较，还可以全面查看总分数、安全分数的历史趋势，以及可采取优先改进措施来提高分数。
 
@@ -115,7 +115,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 
-如果有任何问题，请通过发布在安全、隐私和合规性社区中& [告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
+如果有任何问题，请通过在安全、隐私和合规性社区中发布& [告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
 
 ## <a name="related-resources"></a>相关资源
 

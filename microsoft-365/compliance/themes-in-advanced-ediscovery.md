@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 在文档中Advanced eDiscovery主题，通过查找每个文档中的基准主题来组织审阅集。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3dfc0dca0c6ed62e3ce8384efa2fd3ea407c3ce8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ed7759353230e80359a771416c01e62d2ec03337
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196869"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193179"
 ---
 # <a name="themes-in-advanced-ediscovery"></a>主题Advanced eDiscovery
 
@@ -30,7 +30,7 @@ ms.locfileid: "59196869"
 
 这可扩展到用户想要使用一组文档的方式。 他们希望了解集合中呈现了哪些想法，以及哪些文档正在讨论这些想法。 此外，如果他们找到感兴趣的特定文档，他们希望能够查看讨论类似想法的文档。
 
-该文档中的主题Advanced eDiscovery分析审阅集讨论的主题并将主题分配给审阅集内的文档，以模拟人们对文档的原因。 在Advanced eDiscovery中，主题进一步 *标识每个文档中* 的基准主题。 基准主题是在文档中显示最为频繁的主题。
+通过分析审阅Advanced eDiscovery中讨论的主题并将主题分配给审阅集内的文档，Advanced eDiscovery主题功能尝试模拟用户对文档的原因。 在Advanced eDiscovery中，主题进一步 *标识每个文档中* 的基准主题。 基准主题是在文档中显示最为频繁的主题。
 
 ## <a name="how-does-themes-work"></a>主题如何工作？
 

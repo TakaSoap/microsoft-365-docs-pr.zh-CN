@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 适用于小型企业（包括小型公司、惯例和政治活动）的 Microsoft 365 商业高级版安全和协作建议。
-ms.openlocfilehash: 8e1da206a23a58d568d6e0e4a9efe04cef510a85
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: efa38b27680365caeaa207dbbeea9834f46490be
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170799"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200733"
 ---
 # <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>面向小型企业和活动的Microsoft 365
 

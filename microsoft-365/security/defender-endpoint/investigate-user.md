@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 73c16691dc56ad478912b85cb1b712bc7b1b44a8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f90a029472c03fc45ac5915e56176f7c2527a7cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170970"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207901"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的用户帐户
 
@@ -39,7 +39,7 @@ ms.locfileid: "59170970"
 
 ## <a name="investigate-user-account-entities"></a>调查用户帐户实体
 
-识别在仪表板上显示为"处于风险中的用户" (最活跃警报的用户帐户) 调查凭据可能遭到入侵的情况，或在调查警报或设备时透视关联的用户帐户，以确定具有该用户帐户的设备之间可能的横向移动。
+确定在仪表板上显示为"处于风险中的用户" (最活跃警报的用户帐户) 调查凭据可能遭到入侵的情况，或在调查警报或设备时透视关联的用户帐户，以确定具有该用户帐户的设备之间可能的横向移动。
 
 您可以在以下视图中找到用户帐户信息：
 
@@ -60,7 +60,7 @@ ms.locfileid: "59170970"
 
 ### <a name="user-details"></a>用户详细信息
 
-左侧的用户详细信息窗格提供有关用户的信息，例如相关的打开事件、活动警报、SAM 名称、SID、Microsoft Defender for Identity 警报、用户登录的设备数量、首次看到和最后一次看到用户时、角色和登录类型。 根据你已启用的集成功能，你将看到其他详细信息。 例如，如果启用 Skype 企业集成，您将能够从门户联系用户。 Azure **ATP** 警报部分包含一个链接，如果你已启用 Microsoft Defender for Identity 功能，并且存在与用户相关的警报，该链接将你指向 Microsoft Defender for Identity 页面。 Microsoft Defender for Identity 页面将提供有关警报详细信息。
+左侧的用户详细信息窗格提供有关用户的信息，例如相关的打开事件、活动警报、SAM 名称、SID、Microsoft Defender for Identity 警报、用户登录的设备数量、首次看到和最后一次看到用户时、角色和登录类型。 根据你已启用的集成功能，你将看到其他详细信息。 例如，如果你启用 Skype 企业集成，你将能够从门户联系用户。 Azure **ATP** 警报部分包含一个链接，如果你已启用 Microsoft Defender for Identity 功能，并且存在与用户相关的警报，该链接将你指向 Microsoft Defender for Identity 页面。 Microsoft Defender for Identity 页面将提供有关警报详细信息。
 
 > [!NOTE]
 > 你需要在 Microsoft Defender for Identity 和 Defender for Endpoint 上启用集成才能使用此功能。 在 Defender for Endpoint 中，可以在高级功能中启用此功能。 若要详细了解如何启用高级功能，请参阅 [启用高级功能](advanced-features.md)。
@@ -73,7 +73,7 @@ ms.locfileid: "59170970"
 
 ### <a name="alerts"></a>警报
 
-" **警报** "选项卡提供与用户帐户关联的警报列表。 此列表是警报队列的筛选视图，显示[](alerts-queue.md)用户上下文为所选用户帐户的警报、检测到最后一个活动的日期、警报的简短描述、与警报关联的设备、警报的严重性、队列中警报的状态以及分配了警报的用户。
+" **警报** "选项卡提供与用户帐户关联的警报列表。 此列表是警报队列的筛选视图，它[](alerts-queue.md)显示用户上下文为所选用户帐户的警报、检测到最后一个活动的日期、警报的简短描述、与警报关联的设备、警报的严重性、队列中警报的状态以及分配了警报的用户。
 
 ### <a name="observed-in-organization"></a>在组织中观测到
 

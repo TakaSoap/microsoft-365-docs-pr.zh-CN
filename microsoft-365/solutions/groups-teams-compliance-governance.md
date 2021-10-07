@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -15,13 +15,13 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: 了解组、Microsoft 365和Teams的合规性SharePoint选项。
-ms.openlocfilehash: 93bf2830d29f21f2239a17b9c2e381c46e85eea1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 了解用于组、Microsoft 365和Teams协作SharePoint选项。
+ms.openlocfilehash: acc32d6cff18e9535a29eeec773a5034480a3595
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170426"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207411"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>用于组Microsoft 365、Teams和SharePoint的合规性选项
 
@@ -51,11 +51,11 @@ Microsoft 365提供了一整套工具来在用户协作时保持合规性。 查
 
 保留策略可用于保留或删除用于组和团队中协作的项目，包括文件、邮件和邮件。 可以将策略设置为保留和删除、仅保留或仅删除。 如果组或团队过期或被删除，保留策略涵盖的信息将受到保护。
 
-为组配置保留Microsoft 365策略涵盖组邮箱以及关联的SharePoint和文件。
+为组配置保留策略Microsoft 365组涵盖组邮箱以及网站和SharePoint关联的邮箱。
 
 - [了解 SharePoint 和 OneDrive 的保留策略](../compliance/retention-policies-sharepoint.md)
 
-聊天和Teams消息的保留策略。 当聊天和频道消息存储在Exchange中时，它们不受Exchange策略的影响。 必须将保留策略设置为应用于Teams聊天和Teams消息。 
+聊天和频道Teams保留策略。 当聊天和频道消息存储在Exchange中时，它们不受Exchange策略的影响。 必须将保留策略设置为应用于Teams聊天和Teams消息。 
 
 即使删除了用户帐户，用户聊天也无限期保留。 如果您不想无限期保留此数据，请考虑使用保留策略在指定的时间后删除用户聊天，或将此删除操作包括在用户删除过程中。
 
@@ -69,11 +69,11 @@ Microsoft 365提供了一整套工具来在用户协作时保持合规性。 查
 
 - [了解有关保留策略的信息](../compliance/retention.md)
 
-- [保留标记和保留策略Exchange](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
+- [保留标记和保留策略在](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)Exchange
 
 ## <a name="information-classification"></a>信息分类
 
-可以使用敏感度标签来管理来宾访问、组和团队隐私，以及组和团队的不受管理设备的访问。 通过应用标签，这些设置将按标签设置指定自动配置。
+可以使用敏感度标签来管理来宾访问、组和团队隐私，以及由非托管设备对组和团队的访问。 通过应用标签，这些设置将自动根据标签设置指定进行配置。
 
 - [使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)
 
@@ -94,11 +94,11 @@ Microsoft 365提供了一整套工具来在用户协作时保持合规性。 查
 
 ## <a name="information-protection"></a>信息保护
 
-DLP 策略可以防止在用户、用户和用户SharePoint Exchange意外Teams。 可以创建策略来指定要执行 (操作，例如) 一组规则阻止访问。
+DLP 策略可以防止在用户、用户和用户SharePoint Exchange敏感信息Teams。 可以创建策略来指定要执行 (操作，例如) 一组规则阻止访问。
 
 - [了解数据丢失防护](../compliance/dlp-learn-about-dlp.md)
 
-Teams中的 DLP 可以通过删除包含敏感信息Teams保护聊天和频道消息中的敏感信息。
+dlp in Teams can help protect sensitive information in Teams chat and channel messages by deleting messages that contain sensitive information.
 
 - [数据丢失防护和 Microsoft Teams](../compliance/dlp-microsoft-teams.md)
 
@@ -118,7 +118,7 @@ Teams中的 DLP 可以通过删除包含敏感信息Teams保护聊天和频道�
 
 ## <a name="data-residency"></a>数据驻留
 
-通过Microsoft 365多地理位置，可以在已选择满足数据驻留要求的地理位置中预配和存储静止数据。 在多地理位置环境中，Microsoft 365 租户包含一个中心位置 (其中最初预配了 Microsoft 365 订阅) 以及一个或多个附属位置，你可以存储数据。
+通过Microsoft 365多地理位置，可以在已选择满足数据驻留要求的地理位置中预配和存储静止数据。 在多地理位置环境中，Microsoft 365 租户包含一个中心位置 (其中最初预配 Microsoft 365 订阅的) 以及一个或多个附属位置，你可以存储数据。
 
 - [Microsoft 365 多地理位置](/microsoft-365/enterprise/microsoft-365-multi-geo)
 

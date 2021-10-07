@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 使用 Advanced eDiscovery保管人管理工具轻松访问和搜索你案例内保管人的活动。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4069b4ee61f15cfbe8f0f7f74cb42e9790f0106a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 561744ac803c99d06f811eb625db9ce4ab623fd2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196837"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200229"
 ---
 # <a name="view-custodian-audit-activity"></a>查看保管审核活动
 
-需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ Advanced eDiscovery现在与 审核日志 中的现有 Microsoft 365 合规中心 搜索工具集成。 使用此嵌入体验，可以使用 Advanced eDiscovery保管人管理工具，通过轻松访问和搜索你案例内保管人的活动来加快调查。
+需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ Advanced eDiscovery现在与 审核日志 中的现有搜索Microsoft 365 合规中心。 使用此嵌入体验，可以使用 Advanced eDiscovery保管人管理工具，通过轻松访问和搜索你案例内保管人的活动来加快调查。
 
 ## <a name="get-permissions"></a>获取权限
 
@@ -37,7 +37,7 @@ ms.locfileid: "59196837"
 
 ## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>步骤 1：在审核日志搜索由保管人执行的活动
 
-1. 转到 **电子数据展示> Advanced eDiscovery** 并打开案例。
+1. 转到 **"电子数据展示> Advanced eDiscovery** 并打开案例。
   
 2. 单击" **源"** 选项卡。
   
@@ -49,7 +49,7 @@ ms.locfileid: "59196837"
    
 4. 配置以下搜索条件：
       
-   1. **Activities** - 单击下拉列表以显示可搜索的活动。 运行搜索后，仅将显示所选活动的审核日志项目。 选择 **"显示所有活动的结果** "将显示保管人执行的所有活动的结果，这些活动与其他搜索条件匹配。
+   1. **Activities** - 单击下拉列表以显示可搜索的活动。 运行搜索后，仅将显示所选活动的审核日志项目。 选择 **"显示所有活动的结果** "将显示保管人执行的所有匹配其他搜索条件的活动的结果。
 
       ![活动列表。](../media/CustodianActivityAudit.PNG)
       
@@ -94,15 +94,15 @@ ms.locfileid: "59196837"
 
 ## <a name="export-the-search-results-to-a-file"></a>将搜索结果导出到文件
 
-可以将搜索结果导出到审核日志本地计算机上的 CSV (CSV) 逗号分隔值。 您可以在文件包中打开Microsoft Excel并使用搜索、排序、筛选和拆分包含多值单元格的单个列 (，) 多个列。
+可以将搜索结果导出到审核日志本地计算机上的 CSV (CSV) 逗号分隔值。 您可以在多个位置打开此文件Microsoft Excel并使用搜索、排序、筛选和拆分包含多值单元格的单个列 (将多个) 拆分为多个列。
 
 1. 运行审核日志搜索，然后修订搜索条件直到获得所需结果。
   
 2. 单击“导出结果”，然后选择下列选项之一：
 
-    - **保存加载的结果：** 选择此选项以仅导出在保管人审核日志搜索页上的结果 **下显示的** 条目。  下载的 CSV 文件包含（“日期”、“用户”、“活动”、“项目”和“详细信息”）页面上显示的相同列（和数据）。 标题为 ("更多) 列包含在CSV 文件中，其中包含来自"其他审核日志详细信息。 由于你将导出“审核日志搜索”页上已加载（且可查看）的相同结果，因此最多可导出 5,000 个条目。
+    - **保存加载的结果：** 选择此选项以仅导出在保管人审核日志搜索页上的结果 **下显示的** 条目。  下载的 CSV 文件包含（“日期”、“用户”、“活动”、“项目”和“详细信息”）页面上显示的相同列（和数据）。 标题为 ("更多) 列包含在CSV 文件中，其中包含来自该条目审核日志详细信息。 由于你将导出“审核日志搜索”页上已加载（且可查看）的相同结果，因此最多可导出 5,000 个条目。
         
-    - **下载所有结果：** 选择此选项可导出来自满足搜索审核日志的所有条目。 对于一大组搜索结果，选择此选项可从 审核日志 下载所有条目，以及可在保管人审核日志搜索页上显示的 5，000 个结果。  此选项将原始数据从 审核日志 CSV 文件，并包含名为 AuditData 的列中 审核日志 条目的其他信息。 如果选择此导出选项，下载该文件可能需要更长时间，因为文件可能比选择其他选项下载的文件大得多。
+    - **下载所有结果：** 选择此选项可导出满足搜索条件审核日志的所有条目。 对于一大组搜索结果，选择此选项可从 审核日志 下载所有条目，以及可在保管人审核日志搜索页上显示的 5，000 个结果。  此选项将原始数据从 审核日志 CSV 文件，并包含名为 AuditData 的列中 审核日志 条目的其他信息。 如果选择此导出选项，下载该文件可能需要更长时间，因为文件可能比选择其他选项下载的文件大得多。
     
       > [!IMPORTANT]
       > 你可以将最多 50,000 个条目从单个审核日志搜索中下载到 CSV 文件。 如果下载了 50,000 个条目到 CSV 文件，则可以假定可能存在超过 50,000 个符合搜索条件的事件。 若要导出的条目超出此限制，请尝试使用日期范围以减少审核日志项目。 你可能需要使用更小日期范围运行多个搜索来导出超过 50,000 个条目。

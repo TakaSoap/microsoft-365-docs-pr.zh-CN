@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -15,13 +15,13 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - Ent_Solutions
-description: 为 Windows 租户Office你的 Microsoft 365 设备、Office客户端应用和Microsoft 365服务器。
-ms.openlocfilehash: 9570a34c1c1884452ee9090ca0b7d280411e0016
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 为 Windows 租户迁移 Windows 设备、Office客户端应用Office服务器Microsoft 365服务器。
+ms.openlocfilehash: 86f244ba8d28c242b59296a4de8b63b4a07b50ad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161897"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176183"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>步骤 4. 企业租户Microsoft 365迁移
 
@@ -38,7 +38,7 @@ ms.locfileid: "59161897"
 
 ## <a name="migrating-to-windows-10"></a>迁移到Windows 10
 
-企业Microsoft 365许可证的每个版本都包括一个Windows 10 企业版。 若要迁移运行 Windows 7 或 Windows 8.1的设备，可以执行就地升级。 *2020* 年 1 Windows 7 日结束支持。 
+每个Microsoft 365企业版许可证都包括一个Windows 10 企业版。 若要迁移运行 Windows 7 或 Windows 8.1的设备，可以执行就地升级。 *2020* 年 1 月 14 Windows 7 日结束支持。 
 
 有关在就地升级Windows 10 企业版其他安装方法，请参阅Windows 10[部署方案](/windows/deployment/windows-10-deployment-scenarios)。 也可以自行[计划 Windows 10 部署](/windows/deployment/planning/)。
 
@@ -46,7 +46,7 @@ ms.locfileid: "59161897"
 
 Microsoft 365企业版包括 Microsoft 365 企业应用版，它是从 Microsoft 云安装和更新的 Office 客户端产品 (Word、PowerPoint、Excel 和 Outlook) 的一个版本。 有关详细信息，请参阅关于[Microsoft 365 企业应用版。](/deployoffice/about-microsoft-365-apps)
 
-不要使计算机在 Office 2019 或较旧版本中保持最新，请执行以下步骤：
+与使计算机在 2019 Office版本保持最新状态不同，请执行以下步骤：
 
 1. 获取并分配Microsoft 365许可证。
 2. 卸载Office 2013 或 Office 2016。
@@ -56,9 +56,9 @@ Microsoft 365 企业应用版可自动安装安全更新和新功能更新，并
 
 ## <a name="migrating-on-premises-servers-and-data-to-microsoft-365"></a>将本地服务器和数据迁移到Microsoft 365
 
-Microsoft 365企业版包括基于云的 Office 服务器服务版本，这些服务使用与 Office 服务器软件本地版本相同的工具，如 Web 浏览器和 Outlook 客户端。 这些基于云的服务会针对安全性和新功能自动更新。 迁移后，IT 部门可以节省维护和更新本地服务器所花的时间。
+Microsoft 365企业版包括基于云的 Office 服务器服务版本，这些服务使用与 Office 服务器软件本地版本相同的一些工具，如 Web 浏览器和 Outlook 客户端。 这些基于云的服务会针对安全性和新功能自动更新。 迁移后，IT 部门可以节省维护和更新本地服务器所花的时间。
 
-使用以下资源获取有关迁移特定应用程序工作负荷的用户Microsoft 365数据：
+使用以下资源获取有关迁移特定应用程序工作负载的用户Microsoft 365数据：
 
 - [将邮箱从本地Exchange Server移动到Exchange Online](/exchange/hybrid-deployment/move-mailboxes)
 - [将SharePoint数据从 SharePoint Server 迁移到 SharePoint Online](/sharepointmigration/migrate-to-sharepoint-online)
@@ -68,7 +68,7 @@ Microsoft 365企业版包括基于云的 Office 服务器服务版本，这些�
 
 若要更好地了解如何将整个组织移动到 Microsoft 365 企业版中的产品和服务，请下载此转换海报：
 
-[![显示"转换到Microsoft 365"海报的图像。](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
+[![显示"转换到Microsoft 365海报的图像。](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 通过这份两页的海报可以快速清点现有基础结构。 使用它获取有关移动到适用于企业的 Microsoft 365 的指南。 它显示了Windows和Office以及其他基础结构和安全元素（如设备管理、标识和威胁防护以及信息保护和合规性）的信息。
 
@@ -77,7 +77,7 @@ Microsoft 365企业版包括基于云的 Office 服务器服务版本，这些�
 对于迁移租户Microsoft 365，已确定：
 
 - 哪些设备在 Windows 7 或 Windows 8.1 以及计划将其更新为 Windows 10 企业版。
-- 哪些设备在运行 Office客户端应用，以及计划将它们更新为Microsoft 365企业应用。
+- 哪些设备在运行 Office客户端应用以及计划将它们更新为Microsoft 365企业应用。
 - 哪些本地Office服务器服务应迁移到其Microsoft 365迁移服务及其数据的计划。
 
 下面是一个租户示例，该租户已完成本地服务器的迁移。
@@ -86,15 +86,15 @@ Microsoft 365企业版包括基于云的 Office 服务器服务版本，这些�
 
 在此图中，组织具有：
 
-- 将其本地邮箱Exchange Server到 Exchange Online。
+- 将其本地邮箱Exchange Server到Exchange Online。
 - 将其本地服务器SharePoint服务器网站和数据迁移到SharePoint Microsoft 365。
 
 ## <a name="ongoing-maintenance-for-migration"></a>正在进行的迁移维护
 
 您可能需要持续：
 
-- 根据您的邮箱迁移Exchange，继续滚动到Exchange Online迁移到您的组织。
-- 根据本地部署和网站SharePoint的状态，继续将转换SharePoint迁移到Microsoft 365组织。
+- 根据您的邮箱迁移Exchange，继续向组织Exchange Online转换。
+- 根据本地部署和站点SharePoint的状态，继续向组织SharePoint Microsoft 365迁移。
 
 ## <a name="next-step"></a>后续步骤
 

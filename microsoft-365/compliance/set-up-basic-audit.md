@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-audit
@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何设置基本审核，以便您可以开始搜索组织中用户和管理员执行的审核活动。
-ms.openlocfilehash: caa87a34234597e36949a1a2c47b695a02b5c2b7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9190383fdfab8e4207186ca93895ec9ce23ec6d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196883"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200313"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>在"管理"中设置Microsoft 365
 
-基本审核Microsoft 365你可以搜索审核记录，以查找用户和管理员Microsoft 365服务中执行的活动。 由于默认情况下为大多数 Microsoft 365 Office 365 组织启用了基本审核，因此只有一些操作需要执行，您和您的组织中的其他人才能搜索审核日志。
+使用"Microsoft 365基本审核"，可以搜索用户和管理员在不同 Microsoft 365 服务中执行的活动的审核记录。 由于默认情况下为大多数 Microsoft 365 Office 365 组织启用了基本审核，因此只有一些操作需要执行，您和您的组织中的其他人才能搜索审核日志。
 
 本文讨论设置基本审核所需的以下步骤。
 
@@ -40,7 +40,7 @@ ms.locfileid: "59196883"
 
 ## <a name="step-1-verify-organization-subscription-and-user-licensing"></a>步骤 1：验证组织订阅和用户许可
 
-基本审核许可需要适当的组织订阅，该订阅提供对 审核日志 搜索工具和每用户许可（记录并保留审核记录所需的）的访问权限。
+基本审核许可需要适当的组织订阅，该订阅提供对 审核日志 搜索工具和每用户许可的访问权限，这是记录并保留审核记录所需的。
 
 当用户或管理员执行审核活动时，将生成审核记录并将其存储在组织的审核日志中。 在基本审核中，审核记录在审核记录中保留审核日志搜索 90 天。
 
@@ -76,6 +76,6 @@ ms.locfileid: "59196883"
 
 4. 单击 **"** 搜索"运行搜索。
 
-将显示一个新页面，审核日志搜索正在运行。 搜索完成后，审核记录将显示在页面上。 单击记录以显示具有详细属性的飞出页。
+将显示一个新页面，审核日志搜索正在运行的时间。 搜索完成后，审核记录将显示在页面上。 单击记录以显示具有详细属性的飞出页。
 
 有关更详细的说明，请参阅在审核日志 [搜索策略](search-the-audit-log-in-security-and-compliance.md)。

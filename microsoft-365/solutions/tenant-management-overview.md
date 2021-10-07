@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 规划、部署和持续操作应用程序租户的Microsoft 365概述。
-ms.openlocfilehash: 5d98f715b9233a29c8710966099667075eae0020
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 915f71e6a8ab1f6f346940fccc0e15c5f8ce8d65
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161632"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176159"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>适用于企业的 Microsoft 365 租户管理
 
 通过云计算创建组织数字化转型的路径需要一个稳固的基础，员工可以依靠这些基础来提高工作效率、协作、性能、隐私、合规性和安全性。
 
-正确配置Microsoft 365租户提供了基础，让工作人员专注于完成工作，IT 部门专注于提供其他业务价值的端到端解决方案。
+正确配置租户Microsoft 365提供了基础，让工作人员专注于完成工作，IT 部门专注于提供其他业务价值的端到端解决方案。
 
 此解决方案将按照以下步骤完成该基础的配置：
 
@@ -41,13 +41,13 @@ ms.locfileid: "59161632"
 
 ## <a name="a-microsoft-365-tenant-defined"></a>定义的Microsoft 365租户
 
-Microsoft 365租户是特定默认位置（如欧洲或北美Microsoft 365存储的组织数据的专用服务实例。 为组织创建租户时指定此位置。 每个Microsoft 365租户都是唯一的，并且独立于所有其他Microsoft 365租户。 从 Microsoft Microsoft 365一个或多个产品（如 Microsoft 365 E3 或 E5）时创建一个租户，并为每个租户创建一组许可证。
+Microsoft 365租户是特定默认位置（如欧洲或北美）中Microsoft 365组织数据的专用服务实例。 为组织创建租户时指定此位置。 每个Microsoft 365租户都是唯一的，并且独立于所有其他Microsoft 365租户。 从 Microsoft Microsoft 365一个或多个产品（如 Microsoft 365 E3 或 E5）时，创建一个租户，并为每个租户创建一组许可证。
 
-你的 Microsoft 365 租户还包括一Azure Active Directory (Azure AD) 租户，这是用户帐户、组和其他对象的 Azure AD 的专用实例。 每个 Azure AD 租户各不相同、唯一，并且独立于所有其他 Azure AD 租户。 虽然你的组织可以有多个可以使用 Azure 订阅设置的 Azure AD 租户，Microsoft 365 租户只能使用单个 Azure AD 租户，即创建租户时创建的租户。
+你的 Microsoft 365 租户还包括一Azure Active Directory (Azure AD) 租户，它是用户帐户、组和其他对象的 Azure AD 的专用实例。 每个 Azure AD 租户都是唯一的，独立于所有其他 Azure AD 租户。 虽然你的组织可以有多个可以使用 Azure 订阅设置的 Azure AD 租户，Microsoft 365 租户只能使用单个 Azure AD 租户，即创建租户时创建的租户。
 
 下面是一个示例：
 
-![具有 azure AD Microsoft 365租户的租户示例。](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![示例Microsoft 365 Azure AD 租户的租户。](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 *租户管理* 是规划、部署和持续操作 Microsoft 365租户。
 
@@ -59,19 +59,19 @@ Microsoft 365租户是特定默认位置（如欧洲或北美Microsoft 365存储
 
 - 你拥有一组正确的产品 (订阅和) 许可证。
   - 一组产品符合你的业务、IT 和安全需求。
-  - 为工作人员提供足够数量的许可证和预期的人员配备变化。
+  - 员工具有足够数量的许可证，并且员工预期会发生变化。
 - 对于网络：
   - 已配置正确的 DNS 域名。
   - 对于企业网络，已针对现场工作人员优化了到 Microsoft 网络的网络流量。
   - 你已针对使用 VPN 客户端的远程工作人员优化了网络流量。
 - 已同步 Active Directory 域服务 (AD DS) 帐户、组和其他对象。
-  - Azure AD 租户帐户将映射到Exchange Online DNS 域正确的邮箱。
-  - 你的用户帐户已分配有正确的许可证，这些许可证来自正确的已购买 (产品，Microsoft 365 E3 E5) 。
+  - 你的 Azure AD 租户帐户将映射到Exchange Online正确的 DNS 域用于电子邮件地址的邮箱。
+  - 你的用户帐户已分配有正确的许可证，这些许可证来自正确的已购买 (产品，Microsoft 365 E3或 E5) 。
 - 已配置强标识和访问管理。
-  - 你需要使用无密码身份验证或多重身份验证安全的用户登录 (MFA) 。
+  - 你需要使用无密码身份验证或多重身份验证和 MFA (安全) 。
   - 您具有条件访问策略，这些策略强制实施登录要求和针对较高安全级别的限制。
 - 本地Office服务器及其数据已迁移到云应用或正在混合配置中使用。
-- 使用内置于设备的 Intune 或基本移动性和安全性进行设备Microsoft 365。
+- 你使用内置于设备的 Intune 或基本移动性和安全性Microsoft 365。
   - 组织拥有的设备已注册和管理。
   - 管理个人设备的应用。
 
@@ -124,21 +124,21 @@ Microsoft 365租户是特定默认位置（如欧洲或北美Microsoft 365存储
 |功能或特性|说明|许可|
 |---|---|---|
 |迁移到 Windows 10|将运行 Windows 7 或 Windows 8.1 的设备Windows 10 企业版。|Windows 10 企业版或 E5 Microsoft 365 E3许可证|
-|迁移到Microsoft 365 企业应用版|将 Office 客户端应用（如 Word 和 PowerPoint）迁移到从云安装的、使用新功能更新的版本。|Microsoft 365 E3 或 E5|
+|迁移到Microsoft 365 企业应用版|将 Office 客户端应用（如 Word 和 PowerPoint）迁移到从云中安装且使用新功能更新的版本。|Microsoft 365 E3 或 E5|
 |将本地服务器和数据迁移到Microsoft 365|将Exchange邮箱、SharePoint网站和 Skype for Business Online Microsoft 365云服务。|Microsoft 365 E3 或 E5|
 ||||
 
 ### <a name="device-and-app-management"></a>设备和应用管理
 
-|功能或特性|说明|许可|
+|功能或特性|说明|颁发许可|
 |---|---|---|
-|Microsoft Intune|基于云的服务，提供移动设备管理 (MDM) 和移动应用程序管理 (MAM) ，以控制组织的应用程序和设备的使用方式，包括移动电话、平板电脑和笔记本电脑。|Microsoft 365 E3 或 E5|
+|Microsoft Intune|基于云的服务，提供移动设备管理 (MDM) 和移动应用程序管理 (MAM) 来控制组织的应用程序和设备的使用方式，包括移动电话、平板电脑和笔记本电脑。|Microsoft 365 E3 或 E5|
 |基本移动性和安全性|通过此内置服务保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 电话。|Microsoft 365 E3 或 E5|
 ||||
 
 ## <a name="next-steps"></a>后续步骤
 
-使用以下步骤设置和管理你的Microsoft 365租户。
+使用以下步骤设置和管理Microsoft 365租户。
 
 1. [确定租户](tenant-management-tenants.md)
 2. [优化网络](tenant-management-networking.md)

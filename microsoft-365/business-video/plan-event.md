@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用 Microsoft planner 规划事件。
-ms.openlocfilehash: a1fe282b7edc9d52db643b47a5dc15a214588e10
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e0df0cf7bef2e6452000c43475c27d242384e105
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171174"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200745"
 ---
 # <a name="use-microsoft-planner-to-plan-an-event"></a>使用 Microsoft Planner 规划事件
 
@@ -59,7 +59,7 @@ ms.locfileid: "59171174"
 
 ### <a name="keep-track-of-tasks"></a>跟踪任务
 
-使用  **图表**  和  **板**  视图可监视每个团队成员和整个项目的进度，或者对任务进行排序和组织。
+使用  **图表**  和  **板视图**  可监视每个团队成员和整个项目的进度，或者对任务进行排序和组织。
 
 - 选择  **"图表"，** 然后选择" **分组者**"，最后 **选择"截止日期**  "以查看下一步到期的任务。
 - 选择  **"板**"，然后选择" **分组方式**"，最后选择 **"进度**  "以按进度对任务进行排序。
