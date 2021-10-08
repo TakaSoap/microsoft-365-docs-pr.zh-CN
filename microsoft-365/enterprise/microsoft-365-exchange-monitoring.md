@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: 使用 Exchange Online 监视获取有关 Microsoft 365 中电子邮件事件或通报信息。
-ms.openlocfilehash: 2c97e161c46998f9a78e14b1efc2eb0e701e5b01
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: e6b6749b88644b65768a04696a6e6363661ceec8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988243"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197325"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>用于 Microsoft 365 的 Exchange Online 监视
 
@@ -37,7 +37,7 @@ ms.locfileid: "59988243"
 
 **组织中的问题** 将由组织级监视和优先级帐户监视识别和使用。
 
-**组织中的问题** 下的 **运行状况** 列的值指示组织的基础结构或第三方软件是否会影响组织用户和/或 Exchange Online 中的优先级帐户的服务运行状况体验。 公告或事件需要 *你的* 操作才能解决。
+**组织中的问题** 下 **运行状况** 列的值指示组织的基础结构或第三方软件是否会影响组织用户和/或 Exchange Online 中优先级帐户的服务运行状况体验。公告或事件都需要 *你的* 操作才能解决。
 
 **Microsoft 服务运行状况** 下的"**运行状况**"列的值指示服务运行正常，或者有基于 Microsoft 维护云服务的公告或事件。
 
@@ -76,7 +76,7 @@ ms.locfileid: "59988243"
    >[!Note]
    > 活跃用户计数由单个活动测量，例如，用户阅读电子邮件。 该帐户仅适用于最近 30 分钟的活动。
 
-- **应用连接**：估计的连接基于组织设备和 Exchange Online 之间的成功组合连接百分比，并且可能包括 Microsoft 无法控制的问题。 要了解详细信息，请参阅 [Microsoft 365 连接性光学](microsoft-365-connectivity-optics.md)。
+- **应用连接性**：估计的连接基于组织设备和 Exchange Online 之间的成功合成连接百分比，并且可能包括 Microsoft 无法控制的问题。要了解详细信息，请参阅 [Microsoft 365 连接性光学](microsoft-365-connectivity-optics.md)。
 
 - **基本身份验证和新式验证**：Exchange Online 服务中成功验证的用户数。
 

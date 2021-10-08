@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2cb0f62fa64570e0b18b5bb0ea3d2009b0421e91
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 79ba3d241a913ca967c590c856e53d4073e76f3f
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162996"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239812"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>评估攻击面减少规则
 
@@ -35,12 +35,14 @@ ms.locfileid: "60162996"
 
 攻击面减少规则有助于防止恶意软件通常用来危害设备或网络的操作。 攻击面减少规则有助于关闭恶意软件和勒索软件使用的许多常见入口点。
 
-为运行以下任一版本和版本的设备设置攻击面减少Windows：
+为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
 
 - Windows 10 专业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - Windows 10 企业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
-- Windows服务器版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
+- Windows服务器版本[1803 (半年](/windows-server/get-started/whats-new-in-windows-server-1803)频道) 或更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+-  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
 - Windows Server 2022
 
 > [!WARNING]
@@ -70,13 +72,13 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 ```
 
 > [!TIP]
-> 如果你想要完全审核攻击面减少规则在组织中如何工作，你将需要使用管理工具将此设置部署到网络或 (设备) 。
+> 如果你想要完全审核攻击面减少规则在组织中如何工作，你将需要使用管理工具将此设置部署到网络中设备 () 。
 
 您还可以使用组策略、Intune 或移动设备管理 (MDM) 配置服务提供程序 (CSP) 配置和部署设置。 在主要的攻击 [面减少规则文章中了解更多信息](attack-surface-reduction.md) 。
 
 ## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>查看事件查看器中的攻击Windows减少事件
 
-若要查看已阻止的应用，请打开事件查看器，并筛选 Microsoft-Windows-Windows Defender/操作日志中的事件 ID 1121。 下表列出了所有网络保护事件。
+若要查看已阻止的应用，请打开事件查看器，并筛选 Microsoft-Windows-Windows Defender/Operational 日志中的事件 ID 1121。 下表列出了所有网络保护事件。
 
 事件 ID | 描述
 -|-

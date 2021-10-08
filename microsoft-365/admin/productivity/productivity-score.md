@@ -8,11 +8,12 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 生产力分数如何反映人员和技术体验度量，并与类似规模的组织进行比较。
-ms.openlocfilehash: 0c0d260ebea02d57e099c84acdbc8960d58f3638
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: a8d5ae03b624fd451e86d7b993479359fce2603c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774167"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197829"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生产力分数 
 
@@ -70,7 +71,7 @@ Productivity Score 仅在 Microsoft 365 管理中心中提供，并且只能由�
 
 Microsoft 生产力分数基于角色的访问控制模型能够帮助组织使用 Microsoft 365 进一步推动数字转型，它为组织内的 IT 专家提供了分配角色的灵活功能。
 
-Microsoft 致力于保护个人隐私。 此[隐私文件](privacy.md)解释了我们作为组织的 IT 管理员为你提供的控制措施，以确保信息的可操作性，同时不会损害你对 Microsoft 的信任。
+Microsoft 致力于保护个人隐私。此 [隐私文件](privacy.md) 解释了我们为你（作为组织的 IT 管理员）提供的控制措施，用于确保信息的可操作性，同时不会损害你对 Microsoft 的信任。
 
 可在 Microsoft 365 管理员主页的“**报告** > **生产力分数**”下访问该体验。
   

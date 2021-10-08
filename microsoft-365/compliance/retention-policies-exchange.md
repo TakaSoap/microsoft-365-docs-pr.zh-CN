@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 Exchange 的保留的工作原理。
-ms.openlocfilehash: d927927aea3f27ecfb99ca68b37d89820efda006
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e757bc41b7291f7a71ba44aec6bb6dc0ac917924
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196920"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192171"
 ---
 # <a name="learn-about-retention-for-exchange"></a>了解用于 Exchange 的保留
 
-本文中的信息是对[了解保留](retention.md)的补充，因为它包含特定于 Exchange 的信息。  有关其他工作负载，请参阅：
+本文中的信息是对 [了解保留](retention.md) 的补充，因为它包含特定于 Exchange 的信息。有关其他工作负载，请参阅：
 
 - [了解用于 SharePoint 和 OneDrive 的保留](retention-policies-sharepoint.md)
 - [了解用于 Microsoft Teams 的保留](retention-policies-teams.md)
@@ -44,7 +44,7 @@ ms.locfileid: "59196920"
 
 ## <a name="how-retention-works-for-exchange"></a>用于 Exchange 的保留的工作原理
 
-邮箱和公用文件夹都使用“[可恢复的项目](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)”文件夹来保留项目。 只有已分配电子数据展示权限的人员才可以查看其他用户的“可恢复的项目”文件夹中的项目。
+邮箱和公用文件夹都使用 [可恢复项目文件夹](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) 来保留项目。只有已分配有电子数据展示权限的人员才能查看其他用户的可恢复邮件文件夹中的项目。
   
 当用户从“已删除邮件”文件夹以外的文件夹中删除邮件时，默认情况下，该邮件将移动到“已删除邮件”文件夹中。但是，用户可以软删除 (Shift+Delete) 任何文件夹中的邮件，这会避开“已删除邮件”文件夹，直接将邮件移至“可恢复的项目”文件夹中。
   
@@ -63,7 +63,7 @@ ms.locfileid: "59196920"
 
 ![电子邮件和公用文件夹的保留流关系图。](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
-1. **如果邮件在保留期限内被用户修改或永久删除**（使用 SHIFT+DELETE 或从“已删除邮件”中删除）：邮件会移动到（被编辑时会复制到）“可恢复的项目”文件夹。 因此会定期运行一个计时器作业，识别超过保留期限的邮件，并在保留期限结束后 14 天内将这些邮件永久删除。 请注意，默认设置是 14 天，但可以将其配置为最多 30 天。
+1. 在保留期内，用户 **如果修改或永久删除该项**（按 SHIFT+DELETE 或从已删除项文中删除）：则该项移动（如果编辑则复制）到可恢复项目文件夹中。计时器作业在此处定期运行，并确定保留期到期的项。保留期到期后 14 天内，将永久删除这些向。请注意，默认设置为 14 天，但也可配置为最多 30 天。
 
 2. **如果未在保留期内修改或删除邮件**：对邮箱中的所有文件夹定期运行相同的流程，识别超过保留期限的邮件，并在保留期限结束后 14 天内将这些邮件永久删除。请注意，默认设置是 14 天，但可以将其配置为最多 30 天。 
 
@@ -91,9 +91,9 @@ ms.locfileid: "59196920"
 
 ## <a name="when-a-user-leaves-the-organization"></a>如果某用户离开组织 
 
-如果用户离开组织，且该用户邮箱包含在保留策略内，则在删除此用户的 Microsoft 365 帐户后，该邮箱变成非活动邮箱。 非活动邮箱的内容仍受在邮箱变成非活动状态之前对邮箱应用的所有保留策略约束，且内容支持电子数据展示搜索。 有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。
+如果离开组织的用户的邮箱已纳入保留策略中，则在删除用户的 Microsoft 365 帐户时该邮箱成为非活动邮箱。非活动邮箱中的内容仍受其变为非活动状态前对其应用的任何保留策略约束，并且可通过电子数据展示搜索找到这些内容。有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。
 
-当保留设置由于数据已永久删除或保留期已过期而不再应用时，Exchange 管理员现在可以[删除非活动的邮箱](delete-an-inactive-mailbox.md)。 在此方案中，不会自动删除非活动邮箱。
+当保留设置因已永久删除数据或保留期已过期而不再适用时，Exchange 管理员现在可以 [删除非活动邮箱](delete-an-inactive-mailbox.md)。在此方案中，非活动邮箱不会自动删除。
 
 ## <a name="configuration-guidance"></a>配置指南
 

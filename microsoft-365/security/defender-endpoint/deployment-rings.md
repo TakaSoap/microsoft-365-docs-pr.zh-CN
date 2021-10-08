@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5894fa9fea9a6970981f1d1171af9097daa697e0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bb1bf8d55cc2d4dfd1c2fd29a40641e8da159d9e
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209967"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240208"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>在圈中部署 Microsoft Defender for Endpoint
 
@@ -83,18 +83,13 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 下表显示了受支持的终结点以及可用于将设备载入服务的相应工具。
 
-<br>
-
-****
-
-|端点|部署工具|
-|---|---|
-|**Windows**|[本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <p> **注意**：如果要在生产环境中部署 10 台以上设备，请改为使用组策略方法或下面列出的其他支持的工具。 <p> [组策略](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ 移动设备管理器](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [VDI 脚本](configure-endpoints-vdi.md) <p> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)|
-|**macOS**|[本地脚本](mac-install-manually.md) <p> [Microsoft Endpoint Manager](mac-install-with-intune.md) <p> [JAMF Pro](mac-install-with-jamf.md) <p> [移动设备管理](mac-install-with-other-mdm.md)|
-|**Linux Server**|[本地脚本](linux-install-manually.md) <p> [百分百](linux-install-with-puppet.md) <p> [Ansible](linux-install-with-ansible.md)|
-|**iOS**|[基于应用](ios-install.md)|
-|**Android**|[Microsoft Endpoint Manager](android-intune.md)|
-|
+| 端点     | 部署工具                       |
+|--------------|------------------------------------------|
+| **Windows**  |  [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br> 注意：如果要在生产环境中部署 10 台以上设备，请改为使用组策略方法或下面列出的其他支持的工具。<br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ 移动设备管理器](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md) <br> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **macOS**    | [本地脚本](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [移动设备管理](mac-install-with-other-mdm.md) |
+| **Linux Server** | [本地脚本](linux-install-manually.md) <br> [百分百](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+| **iOS**      | [Microsoft Endpoint Manager](ios-install.md)                                |
+| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               |
 
 ### <a name="full-deployment"></a>完全部署
 

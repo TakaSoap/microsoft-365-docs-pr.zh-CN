@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好部署敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 0a3d4e1446b984bd0f7f9fad997e1ecc3882ac12
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: bd26fed7a7af874cc664f280a32ee504847e8099
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498048"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189401"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -60,7 +60,7 @@ ms.locfileid: "59498048"
 
 默认情况下，你的租户的全局管理员有权访问此管理中心，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。要获得这一委派的受限管理员访问权限，请将用户添加到 **合规性数据管理员**、**合规性管理员** 或 **安全管理员** 角色组。 
 
-如果不使用这些默认角色，可以创建新的角色组，然后将“**敏感度标签管理员**”或“**组织配置**”角色添加到此组。 对于只读角色，请使用 **敏感度标签阅读器**。 
+如果不使用这些默认角色，则可以创建新的角色组，并将 **敏感度标签管理员** 或 **组织配置** 角色添加到此组。对于只读角色，请使用 **敏感度标签读取者**。 
 
 有关将用户添加到默认角色或创建自己的角色组的说明，请参阅 [Microsoft 365 合规中心中的权限](microsoft-365-compliance-center-permissions.md)。
 
@@ -87,6 +87,7 @@ ms.locfileid: "59498048"
 |自动将敏感度标签应用于文档和电子邮件 | [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)|
 |使用敏感度标签来保护 Teams和 SharePoint 中的内容 |[将敏感度标签与 Microsoft Teams、Microsoft 365 组和 SharePoint 网站配合使用](sensitivity-labels-teams-groups-sites.md)|
 |阻止或警告用户与特定的灵敏度标签共享文件或电子邮件 |[在 DLP 策略中使用敏感度标签作为条件](dlp-sensitivity-label-as-condition.md) |
+|应用保留标签以保留或删除具有特定敏感度标签的文件或电子邮件|[自动应用保留标签来保留或删除内容](apply-retention-labels-automatically.md) |
 |发现、标记和保护本地数据存储中存储的文件 |[部署 Azure 信息保护扫描程序以自动分类和保护文件](/azure/information-protection/deploy-aip-scanner)|
 |发现、标记和保护云端数据存储中存储的文件|[发现、分类、标记和保护存储在云中的管控和敏感数据](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |将敏感度标签扩展到 Power BI：启用此功能后，可以在 Power BI 中应用和查看标签，并在数据保存在服务之外时保护数据。|[如何在 Power BI 中应用敏感度标签](/power-bi/admin/service-security-sensitivity-label-overview)|

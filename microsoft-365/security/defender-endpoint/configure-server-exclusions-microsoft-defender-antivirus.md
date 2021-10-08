@@ -17,12 +17,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.date: 09/17/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4650bb23cd7b486ba608a47f99cdfa6cf5b05045
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2432677f1e4bb5faa8de7255e766124660fb7bbb
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213729"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240449"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>在 Microsoft Defender 防病毒 服务器上配置Windows排除项
 
@@ -32,9 +32,26 @@ ms.locfileid: "60213729"
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender 防病毒
 
-## <a name="summary"></a>摘要
+Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上自动注册某些排除项，如指定的服务器角色所定义。 这些排除项不会显示在应用程序中显示的标准排除Windows 安全中心[列表中](microsoft-defender-security-center-antivirus.md)。
 
-本文概述了有关Microsoft Defender 防病毒或Windows Server 2016的排除项。
+> [!NOTE]
+> 自动排除项仅适用于实时保护 (RTP) 扫描。 自动排除在完全/快速或按需扫描期间不适用。
+
+除了服务器角色定义的自动排除项之外，还可以添加或删除自定义排除项。 为此，请参阅以下文章：
+- [根据文件名、扩展名和文件夹位置配置和验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+- [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+
+## <a name="a-few-points-to-keep-in-mind"></a>需要记住的几点
+
+请记住以下要点：
+
+- 自定义排除项优先于自动排除项。
+- 自动排除项仅适用于实时保护 (RTP) 扫描。 自动排除在完全/快速或按需扫描期间不适用。
+- 自定义排除项和重复排除项与自动排除项不冲突。
+- Microsoft Defender 防病毒部署映像服务和管理 (DISM) 工具来确定计算机上安装了哪些角色。
+- 服务器角色的自动排除项在 R2 Windows Server 2012不起作用。
+
+本文概述了有关Microsoft Defender 防病毒或更高版本Windows Server 2016的排除项。
 
 由于Microsoft Defender 防病毒内置在Windows Server 2016中，因此会自动排除操作系统文件和服务器角色。 但是，您可以定义自定义排除项。 如有必要，还可以选择退出自动排除项。
 
@@ -59,14 +76,14 @@ ms.locfileid: "60213729"
 ## <a name="automatic-exclusions-on-windows-server-2016-or-later"></a>Windows Server 2016或更高版本上的自动排除项
 
 > [!NOTE]
-> 自动排除项仅适用于实时保护 (RTP) 扫描。 在完全扫描、快速扫描或按需扫描期间，自动排除项不适用。
+> 自动排除项仅适用于 RTP 扫描 (实时) 保护。 在完全扫描、快速扫描或按需扫描期间，自动排除项不适用。
 
 在Windows Server 2016或更高版本上，不应定义以下排除项：
 
 - 操作系统文件
 - 服务器角色和通过服务器角色添加的任何文件
 
-由于Microsoft Defender 防病毒内置，因此不需要排除在操作系统或更高版本Windows Server 2016文件。 此外，在运行 Windows Server 2016 或更高版本并安装角色时，Microsoft Defender 防病毒包括服务器角色以及安装角色时添加的任何文件的自动排除项。
+由于Microsoft Defender 防病毒内置，因此不需要排除在操作系统或更高版本上Windows Server 2016文件。 此外，在运行 Windows Server 2016 或更高版本并安装角色时，Microsoft Defender 防病毒包括服务器角色以及安装角色时添加的任何文件的自动排除项。
 
 操作系统排除和服务器角色排除不会显示在应用程序中显示的标准排除Windows 安全中心[列表中](microsoft-defender-security-center-antivirus.md)。
 

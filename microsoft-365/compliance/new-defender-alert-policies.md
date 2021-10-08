@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: 我们将为 Microsoft Defender for Office 365 发布新的警报策略。 我们还将停用已由新策略替换的两个现有警报策略。
-ms.openlocfilehash: 130bcb9c8511de1f18a8711561bbe6a15544f810
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2983ab2affe3c938062442e53a8f14c5bb0caa57
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195791"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190721"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中新的警报策略
 
@@ -99,7 +99,7 @@ Microsoft Defender for Office 365 引入了与传递检测相关的新增和改�
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>为这些更改做好准备
 
-你的组织如何利用这些警报将确定需要执行哪些操作进行准备。 如果已操作警报，并且正在通过 API、警报电子邮件通知或者在 Microsoft 365 合规中心（`https://compliance.mmicrosoft.com/viewalerts`）或 Microsoft 安全中心（`https://security.microsoft.com/viewalerts`）内使用警报，将需要修改工作流。
+你的组织如何利用这些警报将决定需要执行哪些操作来进行准备。如果已操作警报，并且通过 API、警报电子邮件通知或在 Microsoft 365 合规中心（`https://compliance.mmicrosoft.com/viewalerts`）或 Microsoft 安全中心（`https://security.microsoft.com/viewalerts`）内正在使用警报，则需要修改工作流。
 
 **如果尚未操作这些警报，可以执行下列操作之一：**
 

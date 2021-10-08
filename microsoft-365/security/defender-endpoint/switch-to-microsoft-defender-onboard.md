@@ -21,12 +21,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 10/06/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 47a698d2e0832ed477808be379a6ad99b932b702
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: 52c1c4ba86f596e7832b5cb3feaaa65688ba452d
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217086"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239584"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>切换到 Microsoft Defender for Endpoint - 阶段 3：载入
 
@@ -64,17 +64,21 @@ ms.locfileid: "60217086"
 
 部署方法因操作系统和首选方法而异。 下表列出了可帮助你载入 Defender for Endpoint 的资源：
 
-<br/><br/>
+|操作系统  |方法  |
+|---------|---------|
+|<ul><li> Windows 10</li> <li>Windows服务器 1803 和 2019</li> <li>Windows Server 2012R2 和 2016 <sup> [[1](#fn1)]<sup></li></ul>  |   [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md)<br>   [组策略](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft Endpoint Manager/Intune (移动设备管理) ](configure-endpoints-mdm.md)<br>    [VDI 脚本](configure-endpoints-vdi.md) <br><br> **注意**：本地脚本适用于概念证明，但不应用于生产部署。 对于生产部署，我们建议使用组策略、Microsoft Endpoint Configuration Manager或 Intune。
+|<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA) ](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)或 Azure [Defender](/azure/security-center/security-center-wdatp) <br><br> **注意**：Microsoft Monitoring Agent现在为 Azure Log Analytics 代理。 若要了解更多信息，请参阅 [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent)。  
+|<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 专业版 </li> <li> Windows 8.1 企业版</li></ul>  | [Microsoft Monitoring Agent (MMA) ](onboard-downlevel.md) <br><br> **注意**：Microsoft Monitoring Agent现在为 Azure Log Analytics 代理。 若要了解更多信息，请参阅 [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent)。  
+| <ul><li> macOS：<p>11.3.1 (Big Sur)  <p>10.15 (加泰罗尼亚语) <p>10.14 (Mojave)  | [本地脚本](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [移动设备管理](mac-install-with-other-mdm.md)   |
+| <ul><li>Linux：<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS 或更高版本 LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |  [本地脚本](linux-install-manually.md) <br> [百分百](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|  
+| <ul><li>iOS | [Microsoft Endpoint Manager](ios-install.md)     |
+|<ul><li> Android  | [Microsoft Endpoint Manager](android-intune.md)               | 
 
-|操作系统|方法|
-|---|---|
-|Windows 10|[组策略](configure-endpoints-gp.md) <br/><br/> [配置管理器](configure-endpoints-sccm.md) <br/><br/> [Intune (移动设备) ](configure-endpoints-mdm.md) <br/><br/> [本地脚本](configure-endpoints-script.md) <br/><br/> **注意**：本地脚本适用于概念证明，但不应用于生产部署。 对于生产部署，我们建议使用组策略、Microsoft Endpoint Configuration Manager或 Intune。|
-|Windows 8.1 企业版 <br/><br/> Windows 8.1 专业版 <br/><br/> Windows 7 SP1 Enterprise <br/><br/> Windows 7 SP1 Pro|[Microsoft Monitoring Agent](onboard-downlevel.md) <br/><br/> **注意**：Microsoft Monitoring Agent现在为 Azure Log Analytics 代理。 若要了解更多信息，请参阅 [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent)。|
-|WindowsServer 2019 及更高版本 <br/><br/> WindowsServer 2019 核心版本 <br/><br/> Windows服务器版本 1803 及更高版本|[本地脚本](configure-endpoints-script.md) <br/><br/> [组策略](configure-endpoints-gp.md) <br/><br/> [配置管理器](configure-endpoints-sccm.md) <br/><br/> [System Center Configuration Manager](configure-endpoints-sccm.md) <br/><br/> [用于非永久性设备的 VDI 载入脚本](configure-endpoints-vdi.md) <br/><br/> **注意**：本地脚本适用于概念证明，但不应用于生产部署。 对于生产部署，我们建议使用组策略、Microsoft Endpoint Configuration Manager或 Intune。|
-|Windows Server 2016 <br/><br/> Windows Server 2012 R2 <br/><br/> Windows Server 2008 R2 SP1|[Microsoft 365 Defender 门户](configure-server-endpoints.md) <br/><br/> [Azure Defender](/azure/security-center/security-center-wdatp)|
-|macOS：11.3.1 (Big Sur) ;10.15 (加泰罗尼亚语) ;10.14 (Mojave) |[载入非 Windows 设备](configure-endpoints-non-windows.md)|
-|iOS|[载入非 Windows 设备](configure-endpoints-non-windows.md)|
-|Linux：RHEL 7.2+;CentOS Linux 7.2+;Ubuntu 16 LTS 或更高版本 LTS;SLES 12+;Debian 9+;Oracle Linux 7.2|[载入非 Windows 设备](configure-endpoints-non-windows.md)|
+
+
+
+ (<a id="fn1">1</a>) Windows Server 2016和 Windows Server 2012 R2 将需要按照载入服务器中的说明[Windows载入](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
+
 
 ## <a name="run-a-detection-test"></a>运行检测测试
 
@@ -84,14 +88,14 @@ ms.locfileid: "60217086"
 
 |操作系统|指南|
 |---|---|
-|Windows 10 <p> Windows Server 2019 <p> <p> Windows Server 2022 <p>Windows服务器、版本 1803 或更高版本 <p> Windows Server 2016 <p> Windows Server 2012 R2|请参阅 [运行检测测试](run-detection-test.md)。 <p> 请访问 Defender for Endpoint 演示方案站点 <https://demo.wd.microsoft.com> () 并尝试一个或多个方案。 例如，尝试 **云提供的保护演示** 方案。|
+|Windows 10 <p> Windows Server 2019 <p> <p> Windows Server 2022 <p>Windows服务器、版本 1803 或更高版本 <p> Windows Server 2016 <p> Windows Server 2012 R2|请参阅 [运行检测测试](run-detection-test.md)。 <p> 请访问 Defender for Endpoint 演示方案站点 () <https://demo.wd.microsoft.com> 并尝试一个或多个方案。 例如，尝试 **云提供的保护演示** 方案。|
 |macOS：11.3.1 (Big Sur) ;10.15 (加泰罗尼亚语) ;10.14 (Mojave) |从 下载并使用 DIY 应用 <https://aka.ms/mdatpmacosdiy> 。 <p> 有关详细信息，请参阅[macOS 上的 Defender for Endpoint。](microsoft-defender-endpoint-mac.md)|
 |Linux：RHEL 7.2+;CentOS Linux 7.2+;Ubuntu 16 LTS 或更高版本 LTS;SLES 12+;Debian 9+;Oracle Linux 7.2|1. 运行以下命令，并查找 **结果 1：。** `mdatp health --field real_time_protection_enabled`<br/><br/>2. 打开"终端"窗口，并运行以下命令 `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` ：。<br/><br/>3. 运行以下命令列出任何检测到的威胁 `mdatp threat list` ：。<br/><br/>有关详细信息，请参阅[Linux 上的 Defender for Endpoint。](microsoft-defender-endpoint-linux.md)|
 
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>确认Microsoft Defender 防病毒终结点处于被动模式
 
-现在，终结点已载入到 Defender for Endpoint，下一步是确保Microsoft Defender 防病毒被动模式运行。 您可以使用多种方法之一，如下表所述：
+现在终结点已载入 Defender for Endpoint，下一步是确保Microsoft Defender 防病毒处于被动模式。 您可以使用多种方法之一，如下表所述：
 
 <br/><br/>
 

@@ -1,7 +1,7 @@
 ---
 title: 创建文件指示器
 ms.reviewer: ''
-description: 为定义实体的检测、防范和排除的文件哈希创建指示器。
+description: 创建文件哈希的指示器，以定义实体的检测、防范和排除。
 keywords: 文件， 哈希， 管理， 允许， 阻止， 阻止， 清理， 恶意， 文件哈希， ip 地址， url， 域
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 493a76d430f508976ba261d9e78bb4b8087be15e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e6e8d03002675ce3c4b9c1e79f0a340f64633036
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211158"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239644"
 ---
 # <a name="create-indicators-for-files"></a>创建文件指示器
 
@@ -42,7 +42,7 @@ ms.locfileid: "60211158"
 - 通过使用文件详细信息页中的添加指示器按钮创建上下文指示器
 - 通过指示器 [API 创建指示器](ti-indicator.md)
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在创建文件指示器之前，了解以下先决条件很重要：
 
@@ -50,15 +50,18 @@ ms.locfileid: "60211158"
 
 - 反恶意软件客户端版本必须为 4.18.1901.x 或更高版本。 请参阅 [每月平台和引擎版本](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- 在具有 Windows 11 Windows 10版本 1703 或更高版本、Windows Server 2016、2019 和 Windows Server 2022 的设备上受支持。
+- 在具有 Windows 10 版本 1703 或更高版本、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2 和 Windows Server 2022 的设备上受支持。
+    
+   >[!NOTE]
+    >Windows Server 2016和 Windows Server 2012 R2 将需要按照[载入 Windows 服务器中的](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)说明载入，此功能将正常工作。 
 
-- 若要开始阻止文件，首先需要打开" [](advanced-features.md)阻止或允许"设置。
+- 若要开始阻止文件，首先需要打开"阻止或允许 ["设置。](advanced-features.md)
 
-此功能旨在防止从 (下载可疑的恶意软件) 潜在的恶意文件。 它目前支持可移植的可执行 (PE) 文件，包括.exe和.dll文件。 覆盖范围将随着时间的推移而延长。
+此功能旨在防止从 (下载可疑的恶意软件) 潜在的恶意文件。 它当前支持可移植的可执行 (PE) 文件，包括.exe和.dll文件。 覆盖范围将随着时间的推移而延长。
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>从设置页创建文件指示器
 
-1. 在导航窗格中，选择"设置"下 (" **** \>  \> 终结点) "。 
+1. 在导航窗格中，选择 ****"设置"下 (终结点 \>  \> ) 。 
 
 2. 选择" **文件哈希"**   选项卡。
 
@@ -80,7 +83,7 @@ ms.locfileid: "60211158"
 ## <a name="public-preview-alerting-on-file-blocking-actions"></a>公共预览版：针对文件阻止操作发出警报
 
 > [!IMPORTANT]
-> 本节中的信息 (预览版自动调查和修正 **引擎) 预** 发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
+> 本部分的信息 (公共预览版 **自动** 调查和修正引擎) 预发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
 文件 IOC 当前支持的操作包括允许、审核、阻止和修正。
 选择阻止文件后，可以选择是否需要触发警报。 这样，你将能够控制向安全运营团队发出警报的数量，并确保只引发所需的警报。
@@ -106,7 +109,7 @@ In Microsoft 365 Defender， go to 设置 > Endpoints > Indicators > add new Fil
 ## <a name="public-preview-advanced-hunting-capabilities"></a>公共预览版：高级搜寻功能
 
 > [!IMPORTANT]
-> 本部分的信息 (预览版自动调查和修正 **引擎) 预** 发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
+> 本节中 (自动调查和修正引擎的公共预览 **版) 预** 发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
 你可以提前搜寻查询响应操作活动。 下面是一个示例高级搜寻查询：
 
@@ -135,14 +138,14 @@ Timestamp > ago(30d)
 
 证书和文件 IoC 策略处理冲突将遵循以下顺序：
 
-- 如果应用程序控制和 AppLocker Windows Defender文件强制模式策略/策略，则 **阻止**
+- 如果应用程序控制和 AppLocker Windows Defender策略不允许该文件，**则阻止**
 - 否则，如果文件被排除Microsoft Defender 防病毒，**则允许**
 - 否则，如果阻止或警告文件 IoC 阻止或警告文件，则 **阻止/警告**
 - 否则，如果允许文件 IoC 策略允许该文件 **，则允许**
 - 否则，如果该文件被 ASR 规则、CFA、AV、SmartScreen 阻止，则 **阻止**
-- Else **Allow** (AppLocker Windows Defender应用程序控制&，任何 IoC 规则都不适用于它) 
+- Else **Allow** (AppLocker Windows Defender应用程序控制&，则任何 IoC 规则都不适用于它) 
 
-如果存在具有相同强制类型和目标的冲突文件 IoC 策略，则更安全的文件 ioC 策略 (这意味着将应用) 哈希时间更长。 例如，如果 SHA-256 文件哈希 IoC 策略定义相同的文件，则策略将超过 MD5 文件哈希 IoC 策略。
+如果存在具有相同强制类型和目标的冲突文件 IoC 策略，则更安全的策略 (意味着将应用) 哈希。 例如，如果 SHA-256 文件哈希 IoC 策略定义同一个文件，则它将超过 MD5 文件哈希 IoC 策略。
 
 > [!WARNING]
 > 文件和证书的策略冲突处理与域/URL/IP 地址的策略冲突处理不同。

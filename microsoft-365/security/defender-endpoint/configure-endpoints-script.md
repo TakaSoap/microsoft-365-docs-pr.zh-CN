@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c00130dba6dcb742ff3f321d7a51edcbfb378f62
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 74e0289c2233a4df1a4e9810a31e960a49078177
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205675"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239836"
 ---
-# <a name="onboard-the-windows-devices-using-a-local-script"></a>使用Windows脚本载入新设备
+# <a name="onboard-windows-devices-using-a-local-script"></a>使用Windows脚本载入设备
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,13 @@ ms.locfileid: "60205675"
 >
 > 若要大规模部署，请使用 [其他部署选项](configure-endpoints.md)。 例如，可以使用使用组策略 载入 Windows 设备中提供的脚本，将载入脚本部署到生产中的 10[多个设备](configure-endpoints-gp.md)。
 
-## <a name="onboard-devices"></a>载入设备
+请查看[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 的各种路径。 
+
+## <a name="onboard-devices"></a>载入设备 
+
+1.  打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从 Defender 门户Microsoft 365[程序包](https://security.microsoft.com/)：
+
+    1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
 
 
 请查看[PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)或[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 的各种路径。
@@ -131,7 +137,6 @@ Value: 0 or 1
 3. 验证设备是否显示。
 
 ## <a name="related-topics"></a>相关主题
-
 - [使用Windows策略载入设备](configure-endpoints-gp.md)
 - [使用Windows载入设备Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [使用Windows管理工具载入设备](configure-endpoints-mdm.md)

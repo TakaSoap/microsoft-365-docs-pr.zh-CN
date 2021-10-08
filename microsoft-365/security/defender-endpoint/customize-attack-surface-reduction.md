@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6f5cc7bb514001666bc1223630738faa2f94e8df
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 393dbcf19232a0a27197a781c1c7b71b4aa2683e
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204031"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240172"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>自定义减少攻击面规则
 
@@ -42,8 +42,10 @@ ms.locfileid: "60204031"
 
 - Windows 10 专业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - Windows 10 企业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
-- WindowsServer 版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
+- Windows服务器版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+-  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
 - Windows Server 2022
 
 可以使用组策略、PowerShell 和移动设备管理 (MDM) CSP (配置) 配置这些设置。
@@ -58,7 +60,7 @@ ms.locfileid: "60204031"
 
 勒索软件规则旨在帮助企业客户降低勒索软件攻击的风险，同时确保业务连续性。 默认情况下，勒索软件规则错误应谨慎处理，并防范尚未获得足够信誉和信任的文件。 为了重新强调一下，勒索软件规则仅针对未基于数百万客户的使用情况指标获得足够正面信誉和普遍程度的文件触发。 通常，块是自行解析的，因为每个文件的"信誉和信任"值都会随着无问题使用率的增加而递增升级。
 
-如果无法及时解决阻止问题，客户可以自行承担风险，使用自助服务机制或基于IOC () 的"允许列表"功能来取消阻止文件本身。
+如果无法及时解决阻止问题，客户可以自行承担风险，使用自助服务机制或基于IOC (IOC) 的"允许列表"功能来取消阻止文件本身。
 
 > [!WARNING]
 > 排除或取消阻止文件或文件夹可能会允许不安全的文件运行并感染你的设备。 排除文件或文件夹可以严重削弱攻击面减少规则提供的保护。 将允许运行规则阻止的文件，并且不会记录任何报告或事件。
@@ -79,13 +81,13 @@ ms.locfileid: "60204031"
 |阻止滥用被攻击的易受攻击的已签名驱动程序|`56a863a9-875e-4185-98a7-b882c64b5ce5`|
 |阻止 Adobe Reader 创建子进程|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|
 |阻止所有Office应用程序创建子进程|`d4f940ab-401b-4efc-aadc-ad5f3c50688a`|
-|阻止本地安全机构子系统Windows窃取凭据 (lsass.exe) |`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|
+|阻止从本地安全Windows系统窃取凭据 (lsass.exe) |`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|
 |阻止来自电子邮件客户端和 Webmail 的可执行内容|`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`|
 |阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件|`01443614-cd74-433a-b99e-2ecdc07bfc25`|
 |阻止执行可能混淆的脚本|`5beb7efe-fd9a-4556-801d-275e5ffc04cc`|
 |阻止 JavaScript 或 VBScript 启动下载的可执行内容|`d3e037e1-3eb8-44c8-a917-57927947596d`|
 |阻止Office应用程序创建可执行内容|`3b576869-a4ec-4529-8536-b80a7769e899`|
-|阻止Office将代码注入其他进程|`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`|
+|阻止Office应用程序将代码注入其他进程|`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`|
 |阻止Office应用程序创建子进程|`26190899-1602-49e8-8b27-eb1d0a1ce869`|
 |通过 WMI 事件订阅阻止持久性|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|
 |阻止源自 PSExec 和 WMI 命令的进程创建|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|
@@ -111,7 +113,7 @@ ms.locfileid: "60204031"
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>使用 PowerShell 排除文件和文件夹
 
-1. 在 **"管理"中"开始"菜单 powershell，** 右键 **单击**"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"管理"中"开始"菜单 powershell，** 右键单击"Windows PowerShell并选择"**以****管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell

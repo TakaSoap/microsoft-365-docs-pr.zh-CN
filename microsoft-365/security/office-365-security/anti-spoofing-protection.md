@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d9980240f0c45eb708a668dfea028ce5259fcab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d0ea3c4a9749219060de10bdc988d8a2ba8cf02c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170898"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196629"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -50,7 +50,7 @@ EOP 中提供了以下反欺骗技术：
 
   ![EOP 反欺骗检查。](../../media/eop-anti-spoofing-protection.png)
 
-- **欺骗智能见解**：审查最近 7 天内来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 EOP 中配置欺骗智能见解](learn-about-spoof-intelligence.md)。
+- **欺骗智能见解**：查看过去 7 天内内部和外部域中来自发件人的欺骗邮件，并允许或阻止这些发件人。有关详细信息，请参阅 [EOP 中的欺骗智能见解](learn-about-spoof-intelligence.md)。
 
 - **在“租户允许/阻止列表”中允许或阻止欺骗发件人**：如果覆盖欺骗智能见解中的裁定，欺骗发件人将成为仅在“租户允许/阻止列表”的“**欺骗**”选项卡上显示的手动允许或阻止条目。 也可以在欺骗智能检测到欺骗发件人之前手动为其创建允许或阻止条目。 有关详细信息，请参阅[管理 EOP 中的租户允许/阻止列表](tenant-allow-block-list.md)。
 
@@ -65,7 +65,7 @@ EOP 中提供了以下反欺骗技术：
 
 - **欺骗检测报告**：有关详细信息，请参阅 [欺骗检测报告](view-email-security-reports.md#spoof-detections-report)。
 
-  **注意**：Defender for Office 365 组织也可使用实时检测（计划 1）或威胁资源管理器（计划 2）查看有关钓鱼尝试的信息。 有关详细信息，请参阅 [Microsoft 365 威胁调查和响应](office-365-ti.md)。
+  **注意**：Defender for Office 365 组织还可以使用实时检测（计划 1）或威胁资源管理器（计划 2）查看有关网络钓鱼尝试的信息。有关详细信息，请参阅 [Microsoft 365 威胁调查和响应](office-365-ti.md)。
 
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>如何在网络钓鱼攻击中使用欺骗
 
@@ -97,7 +97,7 @@ EOP 中提供了以下反欺骗技术：
 
 Microsoft 区分两种不同类型的欺骗邮件：
 
-- **组织内欺骗**：也称为 _自我欺骗_。 例如：
+- **组织内欺骗**：也称为 _自我_ 欺骗。例如：
 
   - 发件人和收件人位于同一域：
     > 发件人：chris@contoso.com <br> 收件人：michelle@contoso.com
@@ -120,7 +120,7 @@ Microsoft 区分两种不同类型的欺骗邮件：
 
   - SFTY 是邮件的安全级别。 9 表示网络钓鱼，11 表示组织内欺骗。
 
-- **跨域欺骗**：发件人和收件人域不同，相互之间没有任何关系（也称为外部域）。 例如：
+- **跨域欺骗**：发件人和收件人域不同，并且相互之间没有任何关系（也称为外部域）。例如：
     > 发件人：chris@contoso.com <br> 收件人：michelle@tailspintoys.com
 
   由于跨域欺骗而导致未通过[复合身份验证](email-validation-and-authentication.md#composite-authentication)的邮件包含以下标头值：
@@ -134,7 +134,7 @@ Microsoft 区分两种不同类型的欺骗邮件：
   - `SFTY` SFTY 是邮件的安全级别。 9 表示网络钓鱼，22 表示跨域欺骗。
 
 > [!NOTE]
-> 如果您收到了类似 ***compauth=fail reason=###** _ 且需要知道组合身份验证 （compauth） 和欺骗相关值的消息，请参阅 [_Anti-spam message headers in Microsoft 365*](anti-spam-message-headers.md)。 或者直接转到 [*原因*](anti-spam-message-headers.md)代码。
+> 如果收到类似 ***compauth=fail reason=###** _ 的电子邮件，并且需要了解组合身份验证（compauth）和与欺骗有关的值，请参阅 [_Microsoft 365 中的反垃圾邮件标头*](anti-spam-message-headers.md)。或直接转到 [*原因*](anti-spam-message-headers.md) 代码。
 
 有关 DMARC 的详细信息，请参阅[在 Microsoft 365 中使用 DMARC 来验证电子邮件](use-dmarc-to-validate-email.md)。
 
@@ -144,11 +144,11 @@ Microsoft 区分两种不同类型的欺骗邮件：
 
 例如，Gabriela Laureano (glaureano@contoso.com) 有兴趣赏鸟，他加入了邮件列表 birdwatchers@fabrikam.com，并向列表发送了以下邮件：
 
-> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br> **主题：** 本周到瑞尼尔山顶 观赏蓝鸟 <p> 有人想本周去雷尼尔山看风景吗？
+> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br> **主题**：本周到雷尼尔山顶观赏美丽的冠蓝鸦 <p> 有人想本周去雷尼尔山看风景吗？
 
 邮件列表服务器接收邮件，修改其内容并将其重播给列表中的成员。 重播的邮件具有相同的“发件人”地址 (glaureano @ contoso.com)，但向主题行添加了标记并在邮件底部添加了页脚。 这种类型的修改在邮件列表中很常见，并且可能导致欺骗误报。
 
-> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br> **主题：**[赏鸟者]本周到瑞尼尔山顶 观赏蓝鸟 <p> 有人想本周去雷尼尔山看风景吗？ <p> 此邮件已发送到赏鸟者讨论列表。 可随时取消订阅。
+> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br> **主题：** [赏鸟者] 本周到雷尼尔山顶观赏美丽的冠蓝鸦 <p> 有人想本周去雷尼尔山看风景吗？<p> 此邮件已发送到赏鸟者讨论列表。 可随时取消订阅。
 
 要帮助邮件列表邮件通过反欺骗检查，请根据是否控制邮件列表执行以下操作：
 
@@ -178,6 +178,6 @@ Microsoft 区分两种不同类型的欺骗邮件：
 
 如果你是当前向 Microsoft 365 发送邮件的管理员，则需要确保你的电子邮件经过了正确的身份验证。 否则，它可能被标记为垃圾邮件或网络钓鱼。 有关详细信息，请参阅[适用于发送未经身份验证的电子邮件的合法发件人的解决方案](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email)。
 
-单个用户（或管理员）“安全发件人”列表中的发件人将绕过部分筛选堆栈，包括欺骗防护。 有关详细信息，请参阅 [Outlook 安全发件人](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders)。
+单个用户（或管理员）的安全发件人列表中的发件人将绕过筛选堆栈的一部分，包括欺骗保护。有关详细信息，请参阅 [Outlook 安全发件人](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders)。
 
 管理员应避免（如果可能）使用允许的发件人列表或允许的域列表。 这些发件人将绕过所有垃圾邮件、欺骗和网络钓鱼防护以及发件人身份验证（SPF、DKIM、DMARC）。 有关详细信息，请参阅[使用允许的发件人列表或允许的域列表](create-safe-sender-lists-in-office-365.md#use-allowed-sender-lists-or-allowed-domain-lists)。

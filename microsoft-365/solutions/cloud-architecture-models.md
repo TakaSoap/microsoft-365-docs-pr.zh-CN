@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: f7d663dc403d3323bf1dd1fa0ba210c26433cee1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9e4899aa2e1719139c211a00c247a19023d109ea
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210349"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239669"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>适用于 IT 架构师的 Microsoft 云插图
 
@@ -50,7 +50,7 @@ IT 决策者和架构师可以使用这些资源来确定其工作负载的理�
   
 | 项目 | 说明 |
 |:-----|:-----|
-|[![适用于企业架构师的 Microsoft 云安全性模型缩略图。](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf)  \| <br/>2021 年 4 月更新 | 此模型包含： <ul><li>Microsoft 和客户安全职责</li><li>标识和设备访问</li><li>威胁防护</li><li>信息保护 </ul><br/>|
+|[![适用于企业架构师的 Microsoft 云安全性模型缩略图。](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf)  \| <br/>2021 年 10 月更新 | 此模型包含： <ul><li>Microsoft 和客户安全职责</li><li>标识和设备访问</li><li>威胁防护</li><li>信息保护 </ul><br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-it-architects"></a>适用于 IT 架构师的 Microsoft 云网络
@@ -73,7 +73,7 @@ IT 决策者和架构师可以使用这些资源来确定其工作负载的理�
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Microsoft 云租户到租户迁移的体系结构方法 
 本系列主题阐述了合并、收购、剥离和其他可能会导致你迁移到新云租户的方案的几种体系结构方法。 这些主题提供有关企业资源规划的起始指导。 
 
-| 项目 | 说明 |
+| Item | 说明 |
 |:-----|:-----|
 |[![Microsoft 云租户到租户迁移的缩略图。](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| 2021 年 2 月更新    |此模型包含： <ul><li>商业方案到体系结构方法的映射</li><li>设计注意事项</li><li>单个事件迁移流示例</li><li>分阶段迁移流示例</li><li>租户移动或拆分流示例</li></ul>|
 

@@ -13,16 +13,16 @@ ms.collection:
 - m365solution-securecollab
 - m365initiative-externalcollab
 ms.custom: ''
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何在与组织外人员共享文件时限制意外公开信息。
-ms.openlocfilehash: c3769239951b409afe7596b6f4fecf83c87a9131
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4c60f77f7f7807395a503ce083795e76398d99b4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171500"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196245"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>在与组织外人员共享文件时限制意外公开信息
 
@@ -36,7 +36,7 @@ ms.locfileid: "59171500"
 
 建议对相应内容保持启用 *“任何人”* 链接，因为它是最简单的共享方法，可帮助降低用户查找超出 IT 部门控制范围的其他解决方案的风险。 可以将“*任何人*”链接转发给其他人，但是文件访问权只可用于拥有该链接的人。
 
-如果始终希望组织外人员在访问 SharePoint、组或团队中的内容时进行身份验证，则可关闭“*任何人*”共享。 这将能够防止用户未经验证身份而共享内容。
+如果始终希望组织外部的人员在访问 SharePoint、组或 Teams 中的内容时进行身份验证，则可以关闭 *任何人* 共享。此操作将阻止用户进行未经身份验证的内容共享。
 
 如果禁用“*任何人*”链接，用户仍然可以使用“*特定人员*”链接与来宾轻松共享。 在这种情况下，需要对所有组织外人员进行身份验证，然后才能访问共享内容。
 
@@ -94,7 +94,7 @@ ms.locfileid: "59171500"
 
     ![“管理安全组”窗格屏幕截图。](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
-4. 在“**添加安全组**”框中，输入安全组的名称。 安全组框出现。
+4. 在“**添加安全组**”框中，输入安全组的名称。将显示安全组框。
 
 5. 在安全组名称旁边的“**共享对象**”下拉菜单中，选择以下任一选项：
 
