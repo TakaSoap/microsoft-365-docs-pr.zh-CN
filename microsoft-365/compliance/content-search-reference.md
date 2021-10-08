@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: 本文包含有关 Microsoft 365 合规中心中的内容搜索电子数据展示工具的参考信息，可帮助你了解有关内容搜索的众多详细信息。
-ms.openlocfilehash: ba990ab0478e1dc525101de2d583b800e14f4342
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0688f3119b500f8e11675aa101d92942a3063e8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169675"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175403"
 ---
 # <a name="feature-reference-for-content-search"></a>内容搜索的功能参考
 
@@ -97,7 +97,7 @@ ms.locfileid: "59169675"
 
 - 搜索用户邮箱时，不会搜索该用户作为成员的任何团队或 Microsoft 365 组。 类似地，在搜索团队或 Microsoft 365 组时，只会搜索指定的组邮箱和组网站。 不会搜索组成员的邮箱和 OneDrive for Business 帐户，除非你明确将其添加到搜索中。
 
-- 若要获取团队或 Microsoft 365 组的成员列表，可以查看 Microsoft 365 管理中心 **主页** 的 \>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**组**</a>”页面上的属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令：
+- 若要获取团队或 Microsoft 365 组的成员列表，可以查看 Microsoft 365 管理中心 **主页** 的 \>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**组**</a>”页面上的属性。或者，可以在 Exchange Online PowerShell 中运行以下命令：
 
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
@@ -155,7 +155,7 @@ ms.locfileid: "59169675"
   ![内容搜索结果中相同的卡片内容。](../media/CardContentEdiscoverySearchResults.png)
 
   > [!NOTE]
-  > 若要显示此时搜索结果中卡片内容的图像（如上一个屏幕截图中的复选标记），必须登录 Teams（在用于查看搜索结果的同一浏览器会话中另一选项卡的 https://teams.microsoft.com) 处。 否则，将显示图像占位符。
+  > 若要显示此时搜索结果中卡片内容的图像（如上一个屏幕截图中的复选标记），必须登录 Teams（在用于查看搜索结果的同一浏览器会话中另一选项卡的 https://teams.microsoft.com) 处）。否则将显示图像占位符。
 
 - 可以使用“**类型**”电子邮件属性或“**邮件类型**”搜索条件来搜索 Teams 中的特定内容。
 
@@ -257,7 +257,7 @@ New-ComplianceSecurityFilter -FilterName "SPMultiGeo-APC" -Users ediscovery-apc@
 
 使用搜索权限筛选器搜索多地理位置环境中的内容时，请记住以下事项：
 
-- **Region** 参数将搜索定向到指定的卫星位置。 如果电子数据展示管理器仅在搜索权限筛选器中指定的区域之外搜索 SharePoint 和 OneDrive 网站，则不返回任何搜索结果。
+- **Region** 参数会将搜索定向至指定的卫星位置。如果电子数据展示管理器仅在搜索权限筛选器中指定的区域之外搜索 SharePoint 和 OneDrive 网站，则不返回任何搜索结果。
 
 - **Region** 参数不控制 Exchange 邮箱的搜索。 搜索邮箱时，将搜索所有数据中心。
 
