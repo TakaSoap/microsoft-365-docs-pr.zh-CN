@@ -9,7 +9,7 @@ ms.date: 4/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
@@ -20,12 +20,12 @@ description: 了解新的 Office 365 邮件加密功能，可与组织内部和�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 93fbd85ed75684d55ed45aec6821d86ed5e9c3f7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d76b350736ead1620f2dc52bfed607ec2c9f7893
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196877"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188093"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>设置全新的邮件加密功能
 
@@ -39,10 +39,10 @@ ms.locfileid: "59196877"
 
 使用全新的 OME 功能的唯一前提是必须在组织的租户中激活[Azure 权限管理](/azure/information-protection/what-is-azure-rms)。 如果是这样，Microsoft 365 将自动激活全新的 OME 功能，你无需执行任何操作。
 
-对于最符合条件的计划，也会自动激活 Azure RMS，因此你可能也不需要在此方面执行任何操作。 有关详细信息，请参阅[激活 Azure 权限管理](/azure/information-protection/activate-service)。
+对于最符合条件的计划，也会自动激活 Azure RMS，因此你可能也不需要在此方面执行任何操作。请参阅[激活 Azure Rights Management](/azure/information-protection/activate-service)以了解详细信息。
 
 > [!IMPORTANT]
-> 如果通过 Exchange Online 使用 Active Directory 权限管理服务 (AD RMS)，则需要先[迁移到 Azure 信息保护](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)，然后才能使用全新的 OME 功能。 OME 与 AD RMS 不兼容。
+> 如果通过 Exchange Online 使用 Active Directory Rights Management (AD RMS)，则需要先[迁移到 Azure 信息保护](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)，然后才能使用全新的 OME 功能。OME 与 AD RMS 不兼容。
 
 有关详细信息，请参阅：
 

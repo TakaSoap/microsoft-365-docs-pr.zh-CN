@@ -7,7 +7,7 @@ ms.date: 02/02/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -18,16 +18,16 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要：在单个 PowerShell 窗口中连接所有 Microsoft 365 服务。
-ms.openlocfilehash: 82d623c0074a7cdb3b61d0e6380b779d55354809
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d7684debae5ba0cc6679acf7a0cb6f590cca11c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200490"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201705"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>在单个 PowerShell 窗口中连接所有 Microsoft 365 服务
 
-使用 PowerShell 管理 Microsoft 365 时，可以同时打开多个 PowerShell 会话。 你可能有不同的 PowerShell 窗口来管理用户帐户、SharePoint Online、Exchange Online、Skype for Business Online、Microsoft Teams 和安全 &amp; 合规中心。
+使用 PowerShell 管理 Microsoft 365 时，可以同时打开多个 PowerShell 会话。你可能有不同的 PowerShell 窗口来管理用户帐户、SharePoint Online、Exchange Online、Skype for Business Online、Microsoft Teams 和安全 &amp; 合规中心。
   
 这不是用于管理 Microsoft 365 的最佳方案，因为你不能在这些窗口间交换数据，因此无法实现跨服务管理。 本文章介绍如何使用 PowerShell 的单个实例来管理 Microsoft 365 帐户、Skype for Business Online、Exchange Online、SharePoint Online、Microsoft Teams 和安全 &amp; 合规中心。
 
@@ -99,7 +99,7 @@ ms.locfileid: "59200490"
    ```
 
    > [!Note]
-   > PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 *Msol* 的 Microsoft Azure Active Directory 模块。 必须从 PowerShell 运行这些 cmdlet。
+   > PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 *Msol* 的 Microsoft Azure Active Directory 模块。必须从 PowerShell 运行这些 cmdlet。
 
 4. 运行以下命令以连接到 SharePoint Online。 指定域的组织名称。 例如，对于litwareinc\.onmicrosoft.com”，组织名称值为“litwareinc”。
     

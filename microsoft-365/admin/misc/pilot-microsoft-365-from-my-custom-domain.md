@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何仅使用两个测试帐户将电子邮件功能试点从我的自定义域到 Microsoft 365 邮箱的电子邮件功能。
-ms.openlocfilehash: 95939aa0ae967ba74861e631d6abfc6ecd50dbaf
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: c428d070d0d4c20034a5a2a6ab94c8896549ea90
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934007"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176123"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>从我的自定义域试点 Microsoft 365
 
@@ -117,11 +117,11 @@ Microsoft 365 使用 Exchange Online Protection (EOP) 进行垃圾邮件防护�
 
 请务必在 Microsoft 365 或 Office365 中完成以下操作：
 
-1. 如需设置连接器，则必须先获得分配的权限，然后才能开始设置。 若要查看你需要获得哪些权限，请参阅 [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions) 主题中的“Microsoft 365 和 Office 365 连接器”条目。
+1. 要设置连接器，则必须先获得分配的权限，然后才能开始设置。若要查看需要获得哪些权限，请参阅 [Exchange Online 中的功能权限](/exchange/permissions-exo/feature-permissions)主题中的"Microsoft 365 和 Office 365 连接器"条目。
 
 2. 如果你希望 EOP 或 Exchange Online 将电子邮件从你的电子邮件服务器中继到互联网，则：
 
-   - 使用在 Microsoft 365 或 Office 365 中用与接受的域相匹配的主题名称配置的证书。 我们建议证书的公用名或者使用者备用名称与您组织的主 SMTP 域相匹配。 有关详细信息，请参阅[本地电子邮件环境](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment)的必备组件。
+   - 请使用与 Microsoft 365 或 Office 365 中的接受域匹配的使用者名称所配置的证书。我们建议证书的公用名或者使用者备用名称与组织的主 SMTP 域相匹配。有关详细信息，请参阅[本地电子邮件环境所需满足的的先决条件](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment)。
 
    - 或者 -
 
@@ -132,17 +132,17 @@ Microsoft 365 使用 Exchange Online Protection (EOP) 进行垃圾邮件防护�
 3. 确定是否希望使用邮件流规则（也称为传输规则）或域名将邮件从 Microsoft 365 或 Office 365 传递到你的电子邮件服务器。 大多数企业都会选择针对所有接受的域传递邮件。 有关详细信息，请参阅[方案： Exchange Online 中的条件邮件路由](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)。
 
 > [!NOTE]
-> 可按照 [Exchange Online 中邮件流规则操作](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)中所述设置邮件流规则。 例如，如果当前你的邮件通过通讯组列表定向到多个站点，那么你不妨结合使用邮件流规则和连接器。
+> 你可以按照 [Exchange Online 中的邮件流规则操作](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) 中介绍的内容设置邮件流规则。例如，如果当前你的邮件通过通讯组列表定向到多个网站，那么你不妨将邮件流规则和连接器结合使用。
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. 设置从 Microsoft 365 或 Office 365 指向你的电子邮件服务器的连接器
 
-若要在 Microsoft 365 或 Office 365 中创建连接器，单击" **管理**"，然后单击" **Exchange**"转到 Exchange 管理中心。 接下来，依次单击 **“邮件流”** 和 **“连接器”**。
+若要在 Microsoft 365 或 Office 365 中创建连接器，单击“**管理**”，然后单击“**Exchange**”转到 Exchange 管理中心。然后，单击“**邮件流**”并点击“**连接器**”。
 
 使用向导设置连接器。
 
 若要启动向导，请单击加号“+”**+**。 在第一个屏幕上，选择 **从** Office 365 和 **至** 组织邮件服务器。
 
-单击“下一步”，然后按照向导中的说明执行操作。 如需了解详细信息，请单击“帮助”或“了解详情”链接。 此向导会指导您逐步完成设置。 结束时，请务必验证您的连接器。 如果您无法验证此连接器，请双击所显示的消息了解详细信息，并参阅[验证服务器](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)了解如何解决问题。
+单击“**下一步**”，然后按照向导中的说明执行操作。如需了解详细信息，请单击“**帮助**”或“**了解详细信息**”链接。此向导会指导你完成安装。结束时，请务必验证你的连接器。如果无法验证此连接器，请双击所显示的消息了解详细信息，并参阅 [验证连接器](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)以帮助解决问题。
 
 
 
@@ -189,6 +189,6 @@ Microsoft 365 使用 Exchange Online Protection (EOP) 进行垃圾邮件防护�
 
 ### <a name="step-10-move-mailbox-contents"></a>步骤 10：移动邮箱内容
 
-因为你仅移动两个测试用户，并且用户 A 和用户 B 都在使用Outlook，因此可以通过在新的 Outlook 配置文件中打开旧的 .PST 文件并复制邮件、日历项、联系人等来移动电子邮件。 有关更多信息，请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac)。
+因为你仅移动两个测试用户，并且用户 A 和用户 B 都在使用Outlook，因此可以通过在新的 Outlook 配置文件中打开旧的 .PST 文件并复制邮件、日历项、联系人等来移动电子邮件。有关详细信息，请参阅[从 Outlook .pst 文件导入电子邮件联系人和日历](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac)。
 
 将项目导入到 Microsoft 365 邮箱中的适当位置后，可以从任何位置的任何设备访问这些项目。

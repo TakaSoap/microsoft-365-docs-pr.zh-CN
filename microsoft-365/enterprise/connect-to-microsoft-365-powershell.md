@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 使用 PowerShell for Microsoft 365 连接到 Microsoft 365 租户，从命令行执行管理中心任务。
-ms.openlocfilehash: 743f4a7b412f14bc942548c688fc3060fdebf53e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ffbf31415dbdcd3ff9b8261b7f1679989823ecd0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200478"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168634"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>使用 PowerShell 连接 Microsoft 365
 
@@ -64,7 +64,7 @@ PowerShell for Microsoft 365 可让你从命令行管理您的 Microsoft 365 设
 - 对于用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块，必须使用 PowerShell 版本 5.1 或以上版本（最高版本 6）。不能使用 PowerShell 版本 7。
        
 >[!Note]
->这些步骤适合于属于 Microsoft 365 管理员角色成员的用户。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。
+>这些过程适用于属于 Microsoft 365 管理员角色成员的用户。有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>连接到 Azure Active Directory PowerShell Graph 模块
@@ -128,7 +128,7 @@ Are you sure you want to install the modules from 'PSGallery'?
 
 PowerShell 版本 7 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包含 *Msol* 的 Microsoft Azure Active Directory 模块。 对于 PowerShell 版本 7 和更高版本，必须使用 Azure Active Directory PowerShell for Graph 模块或 Azure PowerShell。
 
-PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包含 *Msol* 的 Microsoft Azure Active Directory 模块。 从 Windows PowerShell 运行这些 cmdlet。
+PowerShell Core 不支持用于名称中包含 *Msol* 的 Windows PowerShell 模块和 cmdlet 的 Microsoft Azure Active Directory 模块。
     
 ### <a name="step-1-install-the-required-software"></a>步骤 1：安装所需软件
 
@@ -165,9 +165,9 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
   
 如果收到错误消息，请检查以下问题：
   
-- **常见问题是密码错误**。 再次运行[步骤 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription)，并密切注意您输入的用户名和密码。
+- **常见问题是密码错误**。请再次 [运行步骤 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription)，并仔细查看所输入的用户名和密码。
     
-- **用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块要求在计算机上启用 Microsoft .NET Framework 3.5.* x*。很可能你的计算机已安装了较新的版本（例如 4 或 4.5.* x*）。 但可以启用或禁用与 .NET Framework 的早期版本的向后兼容性。 有关详细信息，请参阅以下文章：
+- **用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块要求在计算机上启用 Microsoft .NET Framework 3.5.* x* 功能**。你的计算机可能已安装了较新的版本（例如 4 或 4.5.* x*），但可以启用或禁用与 .NET Framework 较旧版本的向后兼容性。有关详细信息，请参阅下列文章：
     
   - 对于 Windows Server 2012 或 Windows Server 2012 R2，请参阅[使用“添加角色和功能”向导启用 .NET Framework 3.5](/previous-versions/windows/it-pro/windows-8.1-and-8/dn482071(v=win.10))。
     
@@ -176,7 +176,7 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
   - 对于 Windows 10、Windows 8.1 和 Windows 8，请参阅[在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5](/dotnet/framework/install/dotnet-35-windows-10)。
 
   
-- **你的用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块版本可能已过期。** 若要进行检查，请在 PowerShell for Microsoft 365 或用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块中运行以下命令：
+- **你的用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块版本可能已过期**。若要进行检查，请在适用于 Microsoft 365 的 PowerShell 或适用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块中运行以下命令：
     
   ```powershell
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
@@ -195,7 +195,7 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
 
 ## <a name="connect-with-the-azure-cloud-shell"></a>与 Azure Cloud Shell 连接
 
-若要连接并使用 Microsoft 365 管理中心中的 Azure Cloud Shell，请从任务栏右上角选择 PowerShell 窗口图标。 在 **欢迎使用 Azure Cloud Shell** 窗格中，选择 **PowerShell**。
+要连接并使用 Microsoft 365 管理中心中的 Azure Cloud Shell，请从任务栏右上角选择 PowerShell 窗口图标。在“**欢迎使用 Azure Cloud Shell**”窗格中，选择“**PowerShell**”。
 
 将需要组织有活跃的 Azure 订阅，并与 Microsoft 365 订阅绑定。 如果还没有，可以创建一个。 一旦拥有了 Azure 订阅，则会打开 PowerShell 窗口，可以从中运行 PowerShell 命令和脚本。
 

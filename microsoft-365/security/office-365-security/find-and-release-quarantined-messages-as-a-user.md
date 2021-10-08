@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Consumer/IW
 ms.topic: how-to
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 - MEW150
@@ -20,12 +20,12 @@ ms.custom:
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fcd6cb3eb6aee387fd1e4943c837f855abc5f34
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 262ffa4cdb4aae7af0624fe3b51b10b9b088b3c6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483659"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213489"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 
@@ -170,7 +170,7 @@ _隔离策略_ 根据在 [受支持功能](quarantine-policies.md#step-2-assign-
 ### <a name="take-action-on-quarantined-email"></a>对已隔离电子邮件执行操作
 
 > [!NOTE]
-> 对已隔离邮件执行操作的能力由应用于隔离邮件类型的[隔离策略](quarantine-policies.md) 控制(出于隔离原因，这可能是 [默认的隔离策略](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features))。 本节会介绍所有可用操作。
+> 对已隔离邮件执行操作的能力由应用于隔离邮件类型的[隔离策略](quarantine-policies.md) 控制(出于隔离原因，这可能是 [默认的隔离策略](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features))。本节会介绍所有可用操作。
 
 从列表中选择隔离邮件后，详细信息浮出控件中将提供以下操作：
 

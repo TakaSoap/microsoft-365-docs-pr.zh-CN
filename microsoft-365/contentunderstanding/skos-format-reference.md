@@ -8,14 +8,14 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: enabler-strategic
-localization_priority: Priority
+ms.localizationpriority: high
 description: SharePoint 分类的 SKOS 格式参考
-ms.openlocfilehash: 4c08073f453ef0b6a224829b7d4cb4034b74ed14
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9ea3183bcf05755dcfb6d9391a2c59db63c35cb8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196821"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190589"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>SharePoint 分类的 SKOS 格式参考
 
@@ -105,7 +105,7 @@ ex:TermSetA    a    sharepoint-taxonomy:TermSet;
 
 **sharepoint-taxonomy:hasTopLevelTerm**
 
-SharePoint 使用此属性在 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 中映射最顶端的 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term)，这是 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.term) 中 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 的层次结构入口点。 这是 sharepoint-taxonomy:topLevelTermOf 的反向关系。
+SharePoint 使用此属性在 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 中映射最顶端的 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term)，这是 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.term) 中 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 的层次结构入口点。这是 sharepoint-taxonomy:topLevelTermOf 的反向关系。
 
 用于定义这种情况的语法如下所示：
 
@@ -138,7 +138,7 @@ ex:TermA    sharepoint-taxonomy:topLevelTermOf    ex:TermSetA.
 
 **sharepoint-taxonomy:defaultLabel**
 
-将此默认词法标签用于 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term)，这是 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) 所需的参数。 用于以直观方式表示 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term)。
+将此默认词法标签用于 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term)，这是 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) 所需的参数。用于直观地表示 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term)。
 
 定义 defaultLabel 的语法如下：
 
@@ -194,7 +194,7 @@ ex:TermA    sharepoint-taxonomy:otherLabel    “Term A”@en-us.
 
 **sharepoint-taxonomy:parent**
 
-这将 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) 与另一个 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) 分层地相关联。 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) 可以是 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 的顶级 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term)，但是如果不是的话，则必须拥有父级 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term)。
+这将 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) 与另一个 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) 分层地相关联。[Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) 可以是 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 的顶级 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term)，但是如果不是的话，则必须拥有父级 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term)。
 
 定义父级的语法如下：
 

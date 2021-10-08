@@ -9,19 +9,19 @@ ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
 ms.custom: ''
 description: 配置安全性和基础结构，使你的员工能够随时随地远程工作。
-ms.openlocfilehash: 38dc7110c44b3b9acf20283a4156b3eccc0f2165
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 29b97c570972527ef30f3333797a213bf2722932
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161631"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176315"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>在开发/测试环境中配置具有安全隔离的团队
 
@@ -46,7 +46,7 @@ ms.locfileid: "59161631"
 
 首先，使用 Azure 门户创建一个安全组。
 
-1. 在浏览器中创建单独的选项卡，然后转到 Azure 门户，网址为 [https://portal.azure.com](https://portal.azure.com)。 如有需要，请使用 Microsoft 365 E5 试用或已付款订阅的全局管理员帐户凭据登录。
+1. 在浏览器中创建单独的标签页，然后转到 Azure 门户 ([https://portal.azure.com](https://portal.azure.com))。如有需要，请使用 Microsoft 365 E5 试用或付费订阅的全局管理员帐户凭据登录。
 
 2. 在 Azure 门户中，单击“**Azure Active Directory”>“组**”。
 
@@ -145,11 +145,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 4. 为标签名称键入 **公司战略**。
 5. 键入 **高级领导公司战略文档** 作为工具提示，然后单击“**下一步**”。
 6. 在“**加密**”页面上的“**加密**”下拉列表中，选择“**应用**”。
-7. 添加团队权限：<br>
-  a. 单击“**分配权限**”。<br>
-  b. 单击“**添加用户或组**”，选择“**公司战略**”，然后单击“**添加**”。<br>
-  c. 单击“**选择权限**”。<br>
-  d. 从下拉列表中选择“**共同创作**”，然后单击“**保存**”。<br>
+7. 添加团队权限：<br> a. 单击“**分配权限**”。<br> b. 单击“**添加用户或组**”，选择“**公司战略**”，然后单击“**添加**”。<br> c. 单击“**选择权限**”。<br> d. 从下拉列表中选择“**共同创作**”，然后单击“**保存**”。<br>
 8. 单击“**下一步**”。
 9. 在“**内容标记**”页面上，单击“**下一步**”。
 10. 在“**网站和组设置**”页面上，将“**网站和组设置**”设置为“**开**”。

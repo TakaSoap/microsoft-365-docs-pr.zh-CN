@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 使用在 Exchange Online 中运行 Search-UnifiedAuditLog cmdlet 的 PowerShell 脚本搜索审核日志。 此脚本经过优化，可返回大量（最多 50,000 个）审核记录。 该脚本会将这些记录导出为 CSV 文件，可在 Excel 中使用 Power Query 查看或转换这些文件。
-ms.openlocfilehash: 8abea51bb1e7e1fa7bd513bea78708b06da62def
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7f54924cf0f90b976c52c8ee7c53e151f50111b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162077"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173543"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>使用 PowerShell 脚本搜索审核日志
 
@@ -165,7 +165,7 @@ ms.locfileid: "59162077"
    .\SearchAuditLog.ps1
    ```
 
-该脚本在运行时显示进度消息。 脚本运行完成后，将创建包含审计记录的日志文件和 CSV 文件，并将它们保存到由 `$logFile` 和 `$outputFile` 变量定义的文件夹中。
+脚本在运行时将显示进度消息。脚本运行完成后，将创建包含审计记录的日志文件和 CSV 文件，并将它们保存到由 `$logFile` 和 `$outputFile` 变量定义的文件夹中。
 
 > [!IMPORTANT]
 > 每次运行此脚本时返回的审计记录数上限为 50,000。 如果运行此脚本并返回 50,000 条结果，则很可能未包含日期范围内发生的活动的审核记录。 如果发生这种情况，建议将日期范围划分为更小的期间，然后针对每个日期范围重新运行脚本。 例如，如果 90 天的日期范围返回 50,000 条结果，则可以重新运行脚本两次，对日期范围中的前 45 天重新运行一次，然后针对接下来 45 天再运行一次。

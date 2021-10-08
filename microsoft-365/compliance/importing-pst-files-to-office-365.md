@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.IngestionHelp
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: 了解如何使用 Microsoft 365 合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
-ms.openlocfilehash: da5d795c2b2babb2f2ff89bb1cdd5531d4818b1b
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: ba757f55e226d436250efa4da3340253dc017be6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011268"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190841"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 
@@ -132,7 +132,7 @@ ms.locfileid: "60011268"
 
 #### <a name="what-permissions-are-required-to-create-import-jobs-in-the-office-365-import-service-using-network-upload"></a>在 Office 365 导入服务中使用网络上传创建导入作业需要哪些权限？
 
-必须分配有 Exchange Online 中的邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。
+必须分配有 Exchange Online 邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。默认情况下，此角色未分配给 Exchange Online 中的任何角色组。可以将邮箱导入导出角色添加到组织管理角色组。或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。有关详细信息，请参阅[ Exchange Online 中管理角色组中](/Exchange/permissions-exo/role-groups)的“向角色组添加角色”或“创建角色组”部分。
 
 此外，若要在 Microsoft 365 合规中心创建导入作业，必须满足以下条件之一：
 
@@ -153,11 +153,11 @@ ms.locfileid: "60011268"
 
 Using network upload to import PST files is free.
 
-这也意味着在将 PST 文件从 Azure 存储区域删除后，将不再显示在 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339) 内已完成导入作业的文件列表中。 虽然导入作业可能仍然列在“**将数据导入到 Office 365**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
+这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在 [ Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)已完成导入作业的文件列表中。虽然导入作业可能仍然列在“**将数据导入到 Office 365**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
 
 #### <a name="what-version-of-the-pst-file-format-is-supported-for-importing-to-office-365"></a>What version of the PST file format is supported for importing to Office 365?
 
-There are two versions of the PST file format: ANSI and Unicode. 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Office 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的详细信息，请参阅[使用网络上传将 PST 文件导入到 Office 365](./use-network-upload-to-import-pst-files.md) 中的步骤 4。
+可选两个版本的 PST 文件格式：ANSI 和 Unicode。建议导入使用 Unicode PST 文件格式的文件。但是，采用 ANSI PST 文件格式的文件也可以导入到 Office365，如语言采用双字节字符集 (DBCS) 的文件。有关导入 ANSI PST 文件的详细信息，请参阅[使用网络上传将 PST 文件导入到 Office 365 ](./use-network-upload-to-import-pst-files.md)中的步骤 4。
 
 此外，来自 Outlook 2007 和更高版本 Outlook 的 PST 文件可导入到 Office 365。
 
@@ -165,7 +165,7 @@ There are two versions of the PST file format: ANSI and Unicode. 建议导入使
 
 当使用网络上传方法导入 PST 文件时，会将文件上传到已命名的 Azure Blob 容器`ingestiondata`。 如果 Microsoft 365 合规中心) 中的"**导入PST 文件**"页上没有正在进行导入作业，那么在 Microsoft 365 合规中心中创建最新导入作业 30 天后，Azure 中的`ingestiondata`容器内的所有 PST 文件都将被删除。 这也意味着须在将 PST 文件上传到 Azure 后的 30 天内在 Microsoft 365 合规中心中创建新的导入作业（如网络上传说明的步骤 5 中所述）。
 
-这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在 Microsoft 365 合规管理中心已完成导入作业的文件列表中。 尽管导入作业可能仍列在 Microsoft 365 合规中心中的"**导入 PST 文件**"页上，但当你查看较旧的导入作业的详细信息时，PST 文件列表可能为空。
+这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在  Microsoft 365 合规中心已完成导入作业的文件列表中。虽然导入作业可能仍然列在Microsoft 365 合规中心内的 **导入 PST 文件** 页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
 
 #### <a name="how-long-does-it-take-to-import-a-pst-file-to-a-mailbox-using-network-upload"></a>使用网络上传将 PST 文件导入邮箱需要多长时间？
 
@@ -207,7 +207,7 @@ Yes, this capability is now available.
 
 #### <a name="what-permissions-are-required-to-create-import-jobs-in-the-office-365-import-service-using-drive-shipping"></a>在 Office 365 导入服务中使用驱动器传送创建导入作业需要哪些权限？
 
-必须分配有邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。
+必须分配有 Exchange Online 邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。默认情况下，此角色未分配给 Exchange Online 中的任何角色组。可以将邮箱导入导出角色添加到组织管理角色组。或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。有关详细信息，请参阅[ Exchange Online 中管理角色组中](/Exchange/permissions-exo/role-groups)的“向角色组添加角色”或“创建角色组”部分。
 
 此外，若要在 Microsoft 365 合规中心创建导入作业，必须满足以下条件之一：
 
@@ -233,7 +233,7 @@ Yes, this capability is now available.
 
 #### <a name="what-is-the-pricing-for-using-drive-shipping-to-import-pst-files-to-microsoft-365"></a>使用驱动器传送将 PST 文件导入到 Microsoft 365 的定价如何？
 
-使用驱动器传送将 PST 文件导入到 Microsoft 365 邮箱的费用为每 GB 数据 2 美元。 例如，如果发运的硬盘包含 1,000 GB (1 TB) 的 PST 文件，则费用为 2,000 美元。 您可以与合作伙伴共同协作来支付导入费用。 有关查找合作伙伴的信息，请参阅[查找 Microsoft 合作伙伴或经销商](../admin/manage/find-your-partner-or-reseller.md)。
+使用驱动器发运将 PST 文件导入到 Microsoft 365 邮箱的费用为每 GB 数据 2 美元。例如，如果发运的硬盘包含 1,000 GB (1 TB) 的 PST 文件，则费用为 2,000 美元。可与合作伙伴联系以支付导入费用。有关查找合作伙伴的信息，请参阅[查找 Microsoft 合作伙伴或经销商](../admin/manage/find-your-partner-or-reseller.md)。
 
 #### <a name="what-kind-of-hard-drives-are-supported-for-drive-shipping"></a>哪类硬盘支持驱动器传送？
 
@@ -252,7 +252,7 @@ You can ship a maximum of 10 hard drives for a single import job.
 
 #### <a name="after-my-hard-drive-arrives-at-the-microsoft-datacenter-how-long-does-it-take-to-upload-my-pst-files-to-azure"></a>硬盘驱动器到达 Microsoft 数据中心后，需要多久才能将 PST 文件上传到 Azure？
 
-Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PST 文件上传到你组织的 Azure 存储位置。 PST 文件将上传到名为 `ingestiondata` 的 Azure Blob 容器。
+Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PST 文件上传到你组织的 Azure 存储位置。PST 文件将上传到名为 Azure Blob 的容器`ingestiondata`。
 
 #### <a name="how-long-does-it-take-to-import-a-pst-file-to-a-mailbox-using-drive-shipping"></a>使用驱动器传送将 PST 文件导入邮箱需要多长时间？
 
@@ -264,11 +264,11 @@ Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PS
 
 在 Microsoft 365 合规中心 **导入 PST 文件** 页面上创建最近的导入作业 30 天后，组织在Azure 存储位置(以 blob 容器命名`ingestiondata`)中的所有 PST 文件都会被删除。
 
-这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在 Microsoft 365 合规管理中心已完成导入作业的文件列表中。 尽管导入作业可能仍列在 Microsoft 365 合规中心中的"**导入 PST 文件**"页上，但当你查看较旧的导入作业的详细信息时，PST 文件列表可能为空。
+这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在  Microsoft 365 合规中心已完成导入作业的文件列表中。虽然导入作业可能仍然列在Microsoft 365 合规中心内的 **导入 PST 文件** 页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
 
 #### <a name="what-version-of-the-pst-file-format-is-supported-for-importing-to-microsoft-365"></a>哪个版本的 PST 文件格式支持导入到 Microsoft 365？
 
-可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Microsoft 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的详细信息，请参阅[使用驱动器传送将组织的 PST 文件导入到 Microsoft 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file) 中的步骤 3。
+可选两个版本的 PST 文件格式：ANSI 和 Unicode。建议导入使用 Unicode PST 文件格式的文件。但是，采用 ANSI PST 文件格式的文件也可以导入到 Microsoft 365，如语言采用双字节字符集 (DBCS) 的文件。有关导入 ANSI PST 文件的详细信息，请参阅[使用驱动器发运将 PST 文件导入到 Microsoft 365 ](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)中的步骤 3。
 
 此外，来自 Outlook 2007 和更高版本 Outlook 的 PST 文件可导入到 Microsoft 365。
 

@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解 Microsoft 365 全局管理员可以如何更改用户的电子邮件地址以及在名称更改时更改显示名称。 '
-ms.openlocfilehash: b0327dafd875fdcec787e21f5299a32e11aa2a3d
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f3400947130d84ebe7831676ec3c1d31e9ab1bd3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773615"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161866"
 ---
 # <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
@@ -64,7 +65,7 @@ ms.locfileid: "59773615"
 
 1. 选择用户的姓名，然后在“**帐户**”选项卡上选择“**管理用户名**”。
 
-1. 在第一个框中，键入新电子邮件地址的第一部分。 如果已将自己的域添加到 Microsoft 365，请使用下拉列表为新电子邮件别名选择域。 [了解如何添加域](../setup/add-domain.md)。
+1. 在第一个框中，键入新电子邮件地址的第一部分。如果已将自己的域添加到 Microsoft 365，则请通过使用下拉列表来选择新电子邮件别名的域。[了解如何添加域](../setup/add-domain.md)。
 
 1. 选择“**保存更改**”。
 
@@ -100,7 +101,7 @@ ms.locfileid: "59773615"
    >
    > 此外，只有全局管理员才能看到此选项。如果没有看到此选项，则表明你无权更改用户名称和主要电子邮件地址。
 
-4. 你会看到一个大的黄色警告，提示你将更改用户的登录信息。 依次选择“**保存**”和“**关闭**”。
+4. 会显示一个大的黄色警告，提示你将更改用户的登录信息。依次选择“**保存**”和“**关闭**”。
 
 5. 为用户提供以下信息：
 
@@ -164,7 +165,7 @@ ms.locfileid: "59773615"
 
 这是由 Microsoft 联机电子邮件路由地址 (MOERA) 引起的。MOERA 通过 Active Directory 中的用户 _userPrincipalName_ 属性进行构造，其在初始同步期间自动分配到云帐户，且创建后不可在 Microsoft 365 中修改或删除。随后，可在 Active Directory 中更改用户名，但这不会更改 MOERA，并且可能会在全局地址列表中显示新更改的名称方面遇到问题。
 
-若要修复此问题，请使用 Microsoft 365 管理员凭据登录到[用于 PowerShell 的 Azure Active Directory 模块](https://go.microsoft.com/fwlink/?LinkId=823193)， 然后使用以下语法：
+若要修复此问题，请使用 Microsoft 365 管理员凭据登录到[用于 PowerShell 的 Azure Active Directory 模块](https://go.microsoft.com/fwlink/?LinkId=823193)，然后使用以下语法：
 
 ```powershell
 Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.com -NewUserPrincipalName anne.jones@contoso.com

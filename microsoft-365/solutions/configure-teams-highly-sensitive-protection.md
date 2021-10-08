@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何部署具有高度敏感数据保护的团队。
-ms.openlocfilehash: 3e98b1a52e698d52eba16d4296c062d7347759d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 27d2183a3f6f5f43f4461bc83fe3b33ac9f4f56e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200890"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169355"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>配置具有高度敏感数据保护的团队
 
@@ -71,7 +71,7 @@ ms.locfileid: "59200890"
 1. 打开 [Microsoft 365 合规中心](https://compliance.microsoft.com)。
 2. 在“**解决方案**”下，单击“**信息保护**”。
 3. 单击“**创建标签**”。
-4. 为标签命名。 建议使用“**高度敏感**”，但如果该名称已在使用，则可以选择其他名称。
+4. 为标签命名。建议使用 **高敏感度**，但如果该名称已在使用，则可以选择其他名称。
 5. 添加显示名称和说明，然后单击“**下一步**”。
 6. 在“**定义此标签页的搜索范围**”中，选择“**文件和电子邮件**”和“**组和站点**”，然后单击“**下一步**”。
 7. 在“**选择文件和电子邮件的保护设置**”页面中，选择“**加密文件和电子邮件**”，然后单击“**下一步**”。
@@ -87,7 +87,7 @@ ms.locfileid: "59200890"
 17. 单击“**下一步**”。
 18. 在“**定义外部共享和设备权限设置**”页面中，选择“**从标记的 SharePoint 站点控制外部共享**”。
 19. 如果当前允许来宾访问，在“**无法共享的内容**”下选择“**新的和当前来宾**”；如果不允许，则选择“**仅组织中的人员**”。
-20. 在“**未托管的设备的访问**”下，选择“**阻止访问**”。 （如果允许来宾且其没有托管设备，建议选择 **仅允许仅 Web 访问"**。）
+20. 在“**从非托管设备访问**”下，选择“**阻止访问**”。（如果允许来宾，并且他们没有托管设备，则可能需要选择“**允许有限的仅限 Web 访问**。）
 21. 单击“**下一步**”。
 22. 在“**数据库列自动标记**”页面中，单击“**下一步**”。
 23. 单击“**创建标签**”，然后单击“**完成**”。

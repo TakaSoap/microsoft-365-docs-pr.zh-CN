@@ -11,7 +11,7 @@ ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 本地扫描仪数据丢失防护
-ms.openlocfilehash: fbaf28c1a88f1654154cc53ce731d2f56bfae382
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28453a3791677b1923a6d72dbf8d59d2620ea139
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175553"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158173"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>本地扫描程序数据丢失防护入门
 
@@ -56,7 +56,7 @@ ms.locfileid: "59175553"
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>DLP 本地扫描仪先决条件
 
 - Azure 信息保护 （AIP） 扫描仪实现 DLP 策略匹配和策略执行。将扫描仪作为 AIP 客户端一部分进行安装，因此安装必须满足 AIP、AIP 客户端和 AIP 统一标签扫描仪的所有先决条件。
-- 部署 AIP 客户端和扫描仪。 若要详细了解 [AIP 统一标签客户端](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) 和 []，请参阅 [配置和安装 Azure 信息保护统一标签扫描仪](/azure/information-protection/deploy-aip-scanner-configure-install)。
+- 部署 AIP 客户端和扫描程序。有关[安装 AIP 统一标记客户端](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)和 [] 的详细信息，请参阅[配置和安装Azure 信息保护统一标签扫描程序](/azure/information-protection/deploy-aip-scanner-configure-install)。
 - 必须至少在租户中发布一个标签和策略，即使所有检测规则都只基于敏感信息类型。
 
 ## <a name="deploy-the-dlp-on-premises-scanner"></a>部署 DLP 本地扫描仪
@@ -76,7 +76,7 @@ ms.locfileid: "59175553"
     1. 或运行 **-AIPScan** PowerShell cmdlet
 
    > [!IMPORTANT]
-   > 请记住，默认情况下，扫描仪运行存储库的增量扫描，并且会跳过在上一扫描周期中扫描的文件，除非文件发生更改或启动完全重新扫描。 可以通过使用UI中的 **“重新扫描所有文件”** 选项或通过运行 **Start-AIPScan-Reset** 来启动完全重新扫描。
+   > 请记住，默认情况下，扫描仪运行存储库的增量扫描，并且会跳过在上一扫描周期中扫描的文件，除非文件发生更改或启动完全重新扫描。可以通过使用UI中的 **“重新扫描所有文件”** 选项或通过运行 **Start-AIPScan-Reset** 来启动完全重新扫描。
 
 6.  在 Microsoft 365 合规性管理中心中，打开“[数据丢失防护页面](https://compliance.microsoft.com/datalossprevention?viewid=policies)”。
 

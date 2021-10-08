@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkMAC
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监控和管理当你使用处置评审时或者根据配置的设置自动删除标记为记录的项目时的内容处置。
-ms.openlocfilehash: ac98276e79679d2917a955f02318132c96e2863b
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 1b34ac4d8c9afead9ed72b060f8417affc2062b7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480864"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179231"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -32,7 +32,7 @@ ms.locfileid: "59480864"
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>查看内容处置的前提条件
 
-若要管理处置评审并确认已删除记录，必须具有足够的权限，并且必须启用审核。 另请注意处置的任何 [限制](retention-limits.md#maximum-number-of-items-for-disposition)。
+若要管理处置评审并确认已删除记录，必须具有足够的权限，并且必须启用审核。另外请注意处置的任何[限制](retention-limits.md#maximum-number-of-items-for-disposition)。
 
 ### <a name="permissions-for-disposition"></a>处置权限
 
@@ -47,9 +47,9 @@ ms.locfileid: "59480864"
 
 另外：
 
-- 若要在处置过程中查看项目的内容，请将用户添加到“**内容资源管理器内容查看者**”角色组。 如果用户没有此角色组的权限，他们仍可选择一个处置评审操作来完成处置评审，但是执行此操作时无法在合规中心的迷你预览窗格中查看项目的内容。
+- 若要在处置过程中查看项目的内容，请将用户添加到 **内容资源管理器内容查看者** 角色组。如果用户没有此角色组的权限，他们仍可选择一个处置评审操作来完成处置评审，但是执行此操作时无法在合规中心的迷你预览窗格中查看项目的内容。
 
-- 默认情况下，访问“**处置**”页面的每个人只能看到分配给他们进行审阅的项目。 为使记录管理管理员能够查看分配给所有用户的所有项目以及配置用于处置评审的所有保留标签：导航到“**记录管理设置**” > “**常规**” > “**记录管理员安全组**”，选择并启用包含管理员帐户的已启用邮件的安全组。
+- 默认情况下，访问 **处置** 页面的每个人只能看到分配给他们评审的项目。为使记录管理管理员能够查看分配给所有用户的所有项目以及配置用于处置评审的所有保留标签：导航到“**记录管理设置**” > “**常规**” > “**记录管理员安全组**”，选择并启用包含管理员帐户的已启用邮件的安全组。
     
     未启用邮件的 Microsoft 365 组和安全组不支持此功能，也不会显示在列表中供选择。 如果需要创建新的启用邮件的安全组，请使用指向 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 的链接创建新组。 
     
@@ -60,7 +60,7 @@ ms.locfileid: "59480864"
 
 #### <a name="enabling-another-security-group-for-disposition"></a>启用另一个安全组用于处置
 
-在 Microsoft 365 合规中心的“**记录管理设置**”中启用了安全组用于处置后，你将无法对该组禁用此权限，也不能在合规中心中替换选定的组。 但是，可使用 [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) cmdlet 启用其他启用邮件的安全组。
+在 Microsoft 365 合规中心的“**记录管理设置**”中为处置启用了安全组后，你将无法对该组禁用此权限，也不能在合规中心中替换选定的组。但是，你可以使用 [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) cmdlet来启用其他启用邮件的安全组。
 
 例如： 
 
@@ -82,7 +82,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 - 将内容从现有位置移动到存档位置，例如当内容具有研究或历史价值时。
 
-在保留期结束时触发处置评审时，你选择的审阅者将收到一封电子邮件通知，告知他们需要审阅的内容。 这些审阅者可以是单个用户或启用了邮件的安全组。
+在保留期结束时触发处置评审时，你选择的审阅者将收到一封电子邮件通知，告知他们需要审阅的内容。这些审阅者可以是个人用户或启用邮件的安全组。
 
 你可以自定义审阅者收到的通知电子邮件，包括不同语言的说明。 若要获得多语言支持，你必须自己指定翻译，此自定义文本将显示给所有审阅者，无论其区域设置如何都是如此。
 
@@ -101,11 +101,11 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 > [!NOTE]
 > 邮箱必须至少有 10 MB 数据才能支持处置评审。
 
-管理员可以在“**概览**”选项卡中查看所有挂起的处置的概述。审阅者只会看到其项目挂起的处置。 例如：
+管理员可以在“**概览**”选项卡中查看所有挂起的处置的概述。审阅者只会看到其项目正在等待处置。例如：
 
 ![记录管理概述中的待处置项](../media/dispositions-overview.png)
 
-选择 **查看所有待处置** 后，则转到 **处置** 页面。 例如：
+选择 **查看所有挂起处置** 后，将转到 **处置** 页面。例如：
 
 ![Microsoft 365 合规中心内的处置页面。](../media/disposition-tab.png)
 
@@ -177,7 +177,7 @@ If you need additional information, visit the helpdesk website (https://support.
 
 ![在新窗口中打开以进行处置评审。](../media/open-in-new-window.png)
 
-在“**挂起的处置**”页面上，他们会看到该标签的所有挂起的处置。 选择一个或多个项目后，他们可以使用迷你预览窗格以及“**来源**”、“**详细信息**”和“**历史记录**”选项卡来检查内容，然后再对其执行操作：
+在 **挂起的处置** 页面上，他们会看到该标签的所有挂起处置。选择一个或多个项目后，他们可以使用迷你预览窗格以及“**来源**”、“**详细信息**”和“**历史记录**”选项卡来检查内容，然后再对其执行操作：
 
 ![处置选项。](../media/retention-disposition-options.png)
 
@@ -209,14 +209,14 @@ If you need additional information, visit the helpdesk website (https://support.
 - 处置审阅后删除的项目。
 - 标记为保留期限结束后自动删除的记录或法规记录的项目。
 
-这些项目在 **类型** 列中的 **已处置记录** 里显示。 例如：
+这些项目会在 **类型** 列中显示 **已处置记录**。例如：
 
 ![未经处置评审即被处置的项目。](../media/records-disposed2.png)
 
 > [!NOTE]
 > 此功能使用 [统一审核日志](search-the-audit-log-in-security-and-compliance.md) 中的信息，因此需要允许审核以使其 [启动且可搜索](turn-audit-log-search-on-or-off.md)，以便捕获相应的事件。
 
-要审核标记为记录或法规记录的已删除项目，请在“**文件和页面活动**”类别中搜索“**已删除的标记为记录的文件**”。 此审核事件适用于文档和电子邮件。
+若要审核标记为记录或法规记录的已删除项目，请在“**文件和页面活动**”类别中搜索“**已删除的标记为记录的文件**”。此审核事件对文档和电子邮件适用。
 
 ## <a name="filter-and-export-the-views"></a>筛选和导出视图
 

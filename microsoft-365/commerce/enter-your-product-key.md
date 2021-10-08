@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +22,19 @@ ms.custom:
 - AdminTemplateSet
 description: 如果从零售商店购买了 Microsoft 365 商业标准版，请了解如何兑换产品密钥和激活订阅。
 ms.date: 11/13/2020
-ms.openlocfilehash: 5c9a1bba30f6c1b55688d2a36166651fe0b16a05
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d872a61de9f2d704f6cee92234d3358ca0d1c26f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171142"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195865"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>输入 Microsoft 365 商业版标准版的产品密钥
 
 如果从零售商店购买了 Microsoft 365 商业版标准版，本文可帮助你激活订阅。
   
- **需要其他内容？**
- **有关 Microsoft 365 家庭版或 Microsoft 365 个人版管理**，请参阅 [将产品密钥用于 Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)。  
- **批量许可客户？** 如果通过 [Microsoft Open License 计划](https://go.microsoft.com/fwlink/p/?LinkID=613298)购买了 Microsoft 365 商业版，请参阅 [输入从 Microsoft Open](purchases-from-microsoft-open.md)购买的产品密钥。
+ **需要其他内容？****有关 Microsoft 365 家庭版或 Microsoft 365 个人版**，请参阅[将产品密钥用于 Office ](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)。  
+ **批量许可客户？** 如果通过 [Microsoft Open License 计划](https://go.microsoft.com/fwlink/p/?LinkID=613298)购买了 Microsoft 365 商业版，请参阅 [输入从 Microsoft Open 购买的产品密钥](purchases-from-microsoft-open.md)。
   
 ## <a name="activate-a-new-subscription"></a>激活新订阅
 
@@ -69,5 +68,5 @@ ms.locfileid: "59171142"
 ## <a name="related-content"></a>相关内容
 
 [升级到其他计划](./subscriptions/upgrade-to-different-plan.md)（文章）\
-[Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](./subscriptions/what-if-my-subscription-expires.md) （文章）\
+[ Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](./subscriptions/what-if-my-subscription-expires.md)（文章）\
 [了解 Microsoft 365 商业版中的订阅和许可证](./licenses/subscriptions-and-licenses.md)（文章）

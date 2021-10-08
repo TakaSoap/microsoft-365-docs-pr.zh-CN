@@ -9,19 +9,19 @@ ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 ms.custom: ''
 description: 要求用户通过多重身份验证（MFA）和其他功能安全地登录。
-ms.openlocfilehash: d00ca7a39b05e5364a49a6300ef9ee24c3dd0bd1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9c29bddee33ee7e06fcaf24bfff8649a12320e9c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162346"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200097"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>安全地让用户登录到 Microsoft 365 租户
 
@@ -122,7 +122,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 这些层及其相应的配置会跨数据、标识和设备，提供一致级别的保护。
 
-Microsoft 强烈建议在组织中配置和推出标识和设备访问策略，包括 Microsoft Teams、Exchange Online 和 SharePoint 的特定设置。 有关详细信息，请参阅“[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)”。
+Microsoft 强烈建议在组织中配置和推出标识和设备访问策略，包括 Microsoft Teams、Exchange Online 和 SharePoint 的特定设置。有关详细信息，请参阅[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)。
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD 标识保护
 

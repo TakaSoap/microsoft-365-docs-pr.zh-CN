@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: 了解Microsoft 365企业版如何帮助你完成一般数据保护条例 （GDPR） 过程。
-ms.openlocfilehash: a32c31f0acd072d7c30eb7639b7f700a7f06048a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 50ee497d57438994a4a5f839ff5a2afb103cd59b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776280"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174023"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>简化的 GDPR: 适用于小型企业的指南
 
@@ -125,7 +126,7 @@ GDPR 建立数据主体权限，这意味着，对于其个人数据，客户、
 如果将个人数据存储在 IT 系统上，请限制对包含数据的文件的访问，例如，通过设置强密码。定期更新系统的安全设置。
 
 > [!NOTE]
-> GDPR 不规定使用任何特定的 IT 系统，而是使系统具有适当的安全级别。 有关详细信息，请参阅 [GDRP 文章 32：安全性的处理](https://gdpr.eu/article-32-security-of-processing/)。
+> GDPR 不规定使用任何特定的 IT 系统，而是使系统具有适当的安全级别。请参阅[GDRP 文章 32: 处理的安全性](https://gdpr.eu/article-32-security-of-processing/)以了解详细信息。
 
 如果存储包含个人数据的物理文档，请确保未经授权的人员无法访问这些文档。
 
@@ -165,7 +166,7 @@ GDPR 建立数据主体权限，这意味着，对于其个人数据，客户、
  
 为了更好地保护个人数据，组织可能必须委派 <b>数据保护官 （DPO）</b>。 但是，如果处理个人数据不是业务的核心部分，或者如果你是小型企业，则可能不需要指定数据保护专员。 例如，如果你的企业仅收集客户上的数据以进行家用交付，则无需指定 DPO。 即使需要使用 DPO，除了其他任务外，这些职责也可能分配给现有员工。 或者，你可以根据需要选择雇用外部顾问来履行此职责。
 
-通常不需要执行 [数据保护影响评估](https://gdpr.eu/article-35-impact-assessment/)。 这是为对个人数据带来更大风险的企业保留的（例如，如果他们对可公开访问的区域（例如视频监控）进行大规模监视）。
+你通常不需要执行[数据保护影响评估](https://gdpr.eu/article-35-impact-assessment/)。这是为对个人数据带来更大风险的企业保留的（例如，如果他们对可公开访问的区域进行大规模监视（例如视频监控））。
 
 如果你是一家管理员工工资和客户列表的小型企业，通常不需要进行数据保护影响评估。  
  

@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 search.appverid:
 - MET150
@@ -21,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-ms.openlocfilehash: f9af8ccf5a6a8cadfa192fdac5706de6c9d0890b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: ae8dc1c1d2f603e81d2affd723df2be460a873de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775548"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164808"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>添加 DNS 记录以连接你的域
 
@@ -170,7 +171,7 @@ SPF 旨在帮助防骗，但有些骗术是 SPF 所无法防范的。 为了防�
 
 如果托管提供商没有为 SRV 记录提供这些字段，则必须在记录的“**目标**”字段中指定它们的值。 （注意：根据你所选择的托管提供商，“**目标**”字段可能会有其他称呼，如：“**内容**”、“**IP 地址**”或“**目标主机**”。）
 
-若要添加这些值，请创建一个字符串，并用空格分隔这些值且 *有时以圆点结尾*（如果你不确定，请与你的提供商进行核实）。 这些值必须按以下顺序排列：优先级、权重、端口、目标。
+若要添加这些值，请创建一个字符串，并用空格分隔这些值且 *有时以圆点结尾*（如果你不确定，请与你的提供商进行核实）。值必须采用此顺序包含：优先级、权重、端口、目标。
 
 - 示例 1：`100 1 443 sipdir.online.lync.com.`
 - 示例 2：`100 1 443 sipdir.online.lync.com`
@@ -179,4 +180,4 @@ SPF 旨在帮助防骗，但有些骗术是 SPF 所无法防范的。 为了防�
 
 [更改名称服务器以使用任意域注册机构设置 Microsoft 365](change-nameservers-at-any-domain-registrar.md)（文章）\
 [查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）\
-[管理域](index.yml)（链接页）
+[管理域](/admin)（链接页）

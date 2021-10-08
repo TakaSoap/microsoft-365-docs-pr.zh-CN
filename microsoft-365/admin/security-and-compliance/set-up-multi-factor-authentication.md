@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: c0e623c0cfda4208b79d64a9acf88e2d75fc8595
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 0dddf5cbc1bcf921d239c7a93031be6cce419eb6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772742"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178079"
 ---
 # <a name="set-up-multifactor-authentication"></a>设置多重身份验证
 
@@ -83,7 +84,7 @@ ms.locfileid: "59772742"
 > [!IMPORTANT]
 > 在你启用条件访问策略前，请关闭每用户 MFA 和安全性默认值。
 
-“条件访问”适用于购买了 Azure AD 高级版 P1 的客户，或购买了包含此项许可证的客户，比如 Microsoft 365 商业高级版和 Microsoft 365 E3。 有关详细信息，请参阅 [创建条件访问策略](/azure/active-directory/authentication/tutorial-enable-azure-mfa)。
+条件访问适用于已购买 Azure AD Premium P1 的客户，或包含此功能的许可证（如 Microsoft 365 商业高级版 和 Microsoft 365 E3）。有关详细信息，请参阅 [创建条件访问策略](/azure/active-directory/authentication/tutorial-enable-azure-mfa)。
 
 可通过 Azure AD 高级 P2 许可证或包含此项的许可证（例如 Microsoft 365 E5）来获得基于风险的条件访问。 有关详细信息，请参阅[基于风险的条件访问](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)。
 
@@ -95,7 +96,7 @@ ms.locfileid: "59772742"
 
 
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>中，在左侧导航栏中选择“**设置**”\>“**组织设置**”。
-2. 在 **服务** 选项卡下，选择 **新式验证**，在 **新式验证** 窗格中，确保 **启用新式验证** 选项。 选择“**保存更改**”。
+2. 在“**服务**”选项卡下，选择“**新式验证**”，然后在“**新式验证**”窗格中，确保已选择“**启用新式验证**”选项。选择“**保存更改**”。
 
 
 ### <a name="turn-off-legacy-per-user-mfa"></a>关闭旧版每用户 MFA

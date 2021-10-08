@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - m365-security-compliance
 - m365solution-audit
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 了解如何审核 Microsoft 365 组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: afed2a8a12f158ff7e283e7d82d1abe7c35a0732
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: fbd00bdff46bebb73535f2b24c1b0bfa997dd55a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498108"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163428"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 中的审核解决方案
 
@@ -46,7 +46,7 @@ Microsoft 365 提供两种审核解决方案：基本审核和高级审核。
 
    ![Microsoft 365 合规中心的审核日志搜索工具。](../media/AuditLogSearchToolMCC.png)
 
-- **Search-UnifiedAuditLog cmdlet**. 您也可以在 Exchange Online PowerShell（搜索工具的基础 cmdlet）中使用 **Search-UnifiedAuditLog** cmdlet 来搜索审核事件或在脚本中使用。 有关详细信息，请参阅：
+- **Search-UnifiedAuditLog cmdlet**。你也可以在 Exchange Online PowerShell（搜索工具的基础 cmdlet）中使用 **Search-UnifiedAuditLog** cmdlet 来搜索审核事件或在脚本中使用。有关详细信息，请参阅：
 
   - [Search-UnifiedAuditLog cmdlet 参考](/powershell/module/exchange/search-unifiedauditlog)
   - [使用 PowerShell 脚本搜索审核日志](audit-log-search-script.md)

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？请阅读一些实用指南来入门。
-ms.openlocfilehash: f3faab08138197535f9305fddef2a9db3d0b6bb9
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 3154388eaf1c677cec00782642de6f83819d0665
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772754"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195589"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>开始使用保留策略和保留标签
 
@@ -39,7 +39,7 @@ ms.locfileid: "59772754"
 
 3. 根据已确定的保留设置和操作，**创建保留策略和保留标签**。
     
-    对于保留标签，你可能会发现使用[文件计划](file-plan-manager.md)在电子表格中定义和优化保留标签很有用。 然后，导入相应电子表格来创建标签。
+    对于保留标签，你可能会发现使用[文件计划](file-plan-manager.md)在电子表格中定义和优化保留标签很有用。然后，导入相应电子表格来创建标签。
     
 3. **发布并应用保留标签**。 保留策略是为“一次设置、后顾无忧”配置而设计的，而保留标签是可重用的构建基块，可用于多个策略中，并可纳入用户工作流中。 请参阅[常见应用场景](#common-scenarios-for-retention-policies-and-retention-labels)列表，此列表有助于确定如何使用保留标签。 
 
@@ -53,7 +53,7 @@ ms.locfileid: "59772754"
 
 负责创建和管理保留策略和保留标签的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要授予实现此有限管理的权限，建议将用户添加到 **合规性管理员** 管理角色组。
 
-除了使用该默认角色，还可创建一个新的角色组，并将 **保留管理** 角色添加到该组。 对于只读角色，请使用 **只读保留管理**。 
+除了使用该默认角色，还可创建一个新的角色组，并将 **保留管理** 角色添加到该组。对于只读角色，请使用 **只查看保留管理**。 
 
 有关将用户添加到默认角色或创建自己的角色组的说明，请参阅 [Microsoft 365 合规中心中的权限](microsoft-365-compliance-center-permissions.md)。
 
@@ -77,7 +77,7 @@ ms.locfileid: "59772754"
 | 监视将保留和删除设置应用于项目的方式和位置 | [监视保留标签](retention.md#monitoring-retention-labels) |
 |将一个记录管理解决方案同时用于文档和电子邮件 |[了解记录管理](records-management.md) |
 
-如果将保留标签用于记录管理，则对于将内容标记为记录的保留标签，还有其他一些特有的方案。 请参阅[记录管理常见方案](get-started-with-records-management.md#common-scenarios-for-records-management)。
+如果将保留标签用于记录管理，则对于将内容标记为记录的保留标签，还有其他一些特有的方案。请参阅[记录管理常见方案](get-started-with-records-management.md#common-scenarios-for-records-management)。
 
 ## <a name="end-user-documentation-for-retention"></a>保留的最终用户文档
 

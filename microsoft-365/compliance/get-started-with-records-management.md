@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要用于管理高价值内容的 Microsoft 365 记录管理解决方案以满足法律、业务或法规方面的义务，但不确定从哪里入手？请阅读一些实用指南来入门。
-ms.openlocfilehash: 0af5391a7964e242067d70e559d082ede0c9fb3a
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: d87d24bce7e0ad24e5b9914fe98379fd9f40f1bc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497762"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167242"
 ---
 # <a name="get-started-with-records-management"></a>记录管理入门
 
@@ -36,7 +36,7 @@ ms.locfileid: "59497762"
 
 3. 通过 [导入现有计划](file-plan-manager.md#import-retention-labels-into-your-file-plan)（如果有）或 [创建用于声明记录的新保留标签](declare-records.md)来 **创建有关保留设置和操作的文件计划**。
 
-4. **发布并应用保留标签**。 保留标签是可重用的构建基块，可用于多个策略中，并可纳入用户工作流中：
+4. **发布并应用保留标签**。保留标签是可重用的构建基块，可用于多个策略中，并可纳入用户工作流中：
 
     - [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
     - [自动向内容应用保留标签](apply-retention-labels-automatically.md)
@@ -49,7 +49,7 @@ ms.locfileid: "59497762"
 
 ## <a name="permissions-required-for-records-management"></a>记录管理所需的权限
 
-负责记录管理的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。为了授予该有限管理权限，建议将用户添加至授予所有与记录管理相关的功能的权限的 **记录管理** 管理员角色组，其中包括 [处置审查和验证](disposition.md)。
+负责记录管理的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。为了授予该有限管理权限，建议将用户添加至授予所有与记录管理相关的功能的权限的 **记录管理** 管理员角色组，其中包括 [处置审查和验证](disposition.md)。
 
 对于只读角色，可以创建新的角色组，并将 **只读记录管理** 角色添加到该组中。
 

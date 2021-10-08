@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: 了解策略、每个保留策略和保留标签策略项目的最大数量
-ms.openlocfilehash: 322a0c711ed1838dfd5349d43b1c3bcbf656618e
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 881aa208036bab4fe476bb424e42ff16dbb5344f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399858"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195565"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的限制
 
@@ -81,7 +81,7 @@ Exchange 示例：
 
 - **解决方案**：为 Exchange 电子邮件创建一个保留期为7年的保留策略，并排除用户子集。 然后为 Exchange 电子邮件创建保留期为5年的第二个保留策略，其中包括用户子集。 
     
-    在这两种情况下，包含和排除的数目都低于单个策略的最大指定邮箱数，并且用户的子集必须从第一个策略中明确排除，因为它的[保留期](retention.md#the-principles-of-retention-or-what-takes-precedence)比第二个策略长。 如果用户的子集需要更长的保留策略，则不需要将他们从第一个策略中排除。
+    在这两种情况下，包含和排除的数目都低于单个策略的最大指定邮箱数，并且用户的子集必须从第一个策略中明确排除，因为它的[保留期](retention.md#the-principles-of-retention-or-what-takes-precedence)比第二个策略长。如果用户的子集需要更长的保留策略，则不需要将他们从第一个策略中排除。
      
     使用此解决方案，如果有其他人新加入组织，则其邮箱将自动包含在限期为7年的第一个策略中，并且不会对支持的最大数量产生任何影响。 但是，需要 5 年保留期的新用户将添加到包括和不包括数量中，并且该限制将达到 1000 个。
 

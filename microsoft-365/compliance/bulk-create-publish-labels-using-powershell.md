@@ -12,19 +12,19 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 PowerShell 从命令行来创建和发布保留标签，而不受 Microsoft 365合规中心影响。
-ms.openlocfilehash: 6dc008784d46567bfa76b5bbcf9b3fa6ee8155a1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3f64fc7aede06e512d735908b8f06b7a8cb3e032
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162064"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170891"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 创建和发布保留标签
 
@@ -32,7 +32,7 @@ ms.locfileid: "59162064"
 
 决定使用[保留标签](retention.md)帮助您保留或删除 Microsoft 365 中的文档和电子邮件后，可能会经意识到要创建和发布许多甚至可能数百个保留标签。 批量创建保留标签的建议方法是使用 Microsoft 365 合规中心中的“[文件计划](file-plan-manager.md)”。 但是，你也可以使用 [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels)。
   
-使用本文中的信息，模板文件和示例以及脚本来帮助您批量创建保留标签并将其发布在保留标签策略中。 然后，可以[由管理员和用户应用](create-apply-retention-labels.md#how-to-apply-published-retention-labels)保留标签。
+使用本文中的信息，模板文件和示例以及脚本来帮助你批量创建保留标签并将其发布在保留标签策略中。然后，该保留标签将可由[管理员和用户应用](create-apply-retention-labels.md#how-to-apply-published-retention-labels)。
 
 提供的说明不支持自动应用的保留标签。
 
@@ -54,7 +54,7 @@ ms.locfileid: "59162064"
 
 2. 将示例替换为自己的保留标签和设置的条目。 若要详细了解参数值，请参阅 [New-ComplianceTag](/powershell/module/exchange/new-compliancetag)。
 
-3. 将工作表另存为 .csv 文件，保存在便于后续步骤的位置。 例如：C:\>Scripts\Labels.csv
+3. 将工作表另存为 .csv 文件，保存在便于后续步骤找到的位置。例如：C:\>Scripts\Labels.csv
 
   
 注意：
@@ -81,7 +81,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 2. 将示例替换为自己的保留标签策略和其设置的条目。 若要详细了解此 cmdlet 的参数值，请参阅 [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)。
 
-3. 将工作表另存为 .csv 文件，保存在便于后续步骤的位置。 例如：`<path>Policies.csv`
+3. 将工作表另存为 .csv 文件，保存在便于后续步骤找到的位置。例如：`<path>Policies.csv`
 
 
 注意：
@@ -103,7 +103,7 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 
 1. 将以下 PowerShell 脚本复制并粘贴到记事本中。
 
-2. 将使用扩展名为 **.ps1** 的文件保存至易于查找的位置。 例如：`<path>CreateRetentionSchedule.ps1`
+2. 使用文件扩展名 **.ps1** 将文件保存至易于查找的位置。例如：`<path>CreateRetentionSchedule.ps1`
 
 注意：
 
@@ -741,7 +741,7 @@ if ($ResultCSV)
 
 然后，运行创建并发布保留标签的脚本：
   
-1. 在安全与合规中心 PowerShell 会话中，输入路径，后跟 `.\` 字符和脚本的文件名，再按 ENTER 运行脚本。 例如：
+1. 在安全与合规中心 PowerShell 会话中，输入路径，后跟 `.\` 字符和脚本的文件名，再按 ENTER 运行脚本。例如：
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1

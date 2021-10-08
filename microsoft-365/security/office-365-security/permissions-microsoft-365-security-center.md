@@ -9,7 +9,7 @@ ms.date: ''
 ms.audience: Admin
 ms.topic: article
 audience: Admin
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -19,12 +19,12 @@ description: 管理员可以了解如何在 Microsoft 365 Defender 门户中管�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e5980249d3df0dc94a83b8250f3be55298de5bd
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 629cb9e4ab275d1af6f218df4f6e1b0e60dee201
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482855"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180849"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的权限
 
@@ -52,7 +52,7 @@ Microsoft 365 Defender 门户中的权限以基于角色的访问控制 (RBAC) �
 
 **角色组** 是一组允许人们在 Microsoft 365 Defender 门户中完成工作的角色。
 
-Microsoft 365 Defender 门户包括你需要分配的最常见任务和功能的默认角色组。 通常，我们建议你只需将单个用户作为 **成员** 添加到默认角色组。
+Microsoft 365 Defender 门户包括适用于最常见任务的默认角色组以及需要分配的功能。我们一般建议只需将单个用户作为 **成员** 添加到默认角色组中。
 
 ![显示角色组与角色和成员之间关系的图表。](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
@@ -83,13 +83,13 @@ Microsoft 365 Defender 门户中的“**权限和角色**”提供了以下类�
 |角色|说明|
 |---|---|
 |**全局管理员**|访问所有 Microsoft 365 服务中的所有管理功能的权限。 只有全局管理员才能分配其他管理员角色。 更多信息，请参阅[全局管理员/公司管理员](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator)。|
-|**合规性数据管理员**|在 Microsoft 365 中跟踪组织的数据，确保数据受到保护，并深入了解任何问题以帮助缓解风险。 有关详细信息，请参阅[合规性数据管理员](/azure/active-directory/roles/permissions-reference#compliance-data-administrator)。|
-|**合规性管理员**|帮助组织遵守任何法规要求，管理电子数据展示案例，并维护 Microsoft 365 位置、标识和应用中的数据治理策略。 有关详细信息，请参阅[合规性管理员](/azure/active-directory/roles/permissions-reference#compliance-administrator)。|
+|**合规性数据管理员**|在 Microsoft 365 中跟踪组织的数据，以确保其受到保护，并深入了解任何问题以帮助降低风险。有关详细信息，请参阅 [合规性数据管理员](/azure/active-directory/roles/permissions-reference#compliance-data-administrator)。|
+|**合规性管理员**|帮助组织遵守任何法规要求，管理电子数据展示案例，并维护 Microsoft 365 位置、标识和应用的数据治理策略。有关详细信息，请参阅 [合规性管理员](/azure/active-directory/roles/permissions-reference#compliance-administrator)。|
 |**安全操作员**|查看、调查和响应对 Microsoft 365 用户、设备和内容的活动威胁。 有关详细信息，请参阅[安全操作员](/azure/active-directory/roles/permissions-reference#security-operator)。|
-|**安全信息读取者**|查看和调查对 Microsoft 365 用户、设备和内容的活动威胁，但（不同于安全操作员）他们无权采取措施来进行响应。 有关详细信息，请参阅[安全信息读取者](/azure/active-directory/roles/permissions-reference#security-reader)。|
-|**安全管理员**|通过管理安全策略、查看 Microsoft 365 产品中的安全分析和报告以及及时了解威胁形势来控制组织的总体安全。 有关详细信息，请参阅[安全管理员](/azure/active-directory/roles/permissions-reference#security-administrator)。|
+|**安全信息读取者**|查看和调查对 Microsoft 365 用户、设备和内容的活动威胁，但（不同于安全操作员）他们无权采取措施来进行响应。有关详细信息，请参阅 [安全信息读取者](/azure/active-directory/roles/permissions-reference#security-reader)。|
+|**安全管理员**|通过管理安全策略、查看 Microsoft 365 产品中的安全分析和报告和及时了解威胁形势来控制组织的总体安全。有关详细信息，请参阅 [安全性管理员](/azure/active-directory/roles/permissions-reference#security-administrator)。|
 |**全局读取者**|只读版本的 **全局管理员** 角色。 查看 Microsoft 365 中所有设置和管理信息。 有关详细信息，请参阅 [全局信息读取者](/azure/active-directory/roles/permissions-reference#global-reader)。|
-|**攻击模拟管理员**|创建和管理 [攻击模拟](attack-simulation-training.md) 创建、启动/安排模拟以及审查模拟结果的各个方面。 有关详细信息，请参阅 [攻击模拟管理员](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator)。|
+|**攻击模拟管理员**|创建和管理 [攻击模拟](attack-simulation-training.md) 创建、启动/计划模拟以及查看模拟结果的所有方面。有关详细信息，请参阅 [攻击模拟管理员](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator)。|
 |**攻击有效负载作者**|创建攻击负载，但不真正开始或计划其目标。 有关详细信息，请参阅[攻击有效负载作者](/azure/active-directory/roles/permissions-reference#attack-payload-author)。|
 |
 

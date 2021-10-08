@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365initiative-compliance
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: 466b346501f9ee4e02a4a254ebeb2dfdf6e23eca
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 410fa890e159d18e3aacedbf08be44ee047ee189
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775596"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158162"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
@@ -35,11 +35,11 @@ ms.locfileid: "59775596"
 
 请使用以下功能支持 Microsoft 365 中的记录管理解决方案：
 
-- **将内容标记为记录**。 创建并配置将内容标记为[记录](#records)的保留标签，该类标签随后可由用户应用，或通过标识敏感信息、关键字或内容类型自动应用。
+- **将内容标记为记录**。创建并配置将内容标记为[记录](#records)的保留标签，该类标签随后可由用户应用，或通过标识敏感信息、关键字或内容类型自动应用。
 
-- **使用文件计划迁移和管理保留要求**。 通过使用[文件计划](file-plan-manager.md)，可将现有保留计划引入 Microsoft 365，或者构建一个新的保留计划来增强管理功能。
+- **使用文件计划迁移和管理保留要求**。通过使用[文件计划](file-plan-manager.md)，可将现有保留计划引入 Microsoft 365，或者构建一个新的保留计划来增强管理功能。
 
-- **使用保留标签配置保留和删除设置**。 根据各种因素（包括上次修改日期或上次创建日期）配置有关保留期和操作的[保留标签](retention.md#retention-labels)。
+- **使用保留标签配置保留和删除设置**。根据各种因素（包括上次修改日期或上次创建日期）配置有关保留期和操作的 [保留标签](retention.md#retention-labels)。
 
 - 使用 [基于事件的保留](event-driven-retention.md)，**在事件发生时启动不同的保留期**。
 
@@ -79,13 +79,13 @@ ms.locfileid: "59775596"
 
 |操作| 保留标签 |记录 - 已锁定| 记录 - 已解锁| 合规性记录 |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|编辑内容|允许 | **阻止** | 允许 | **阻止**|
-|编辑属性（包括重命名）|Allowed |允许 | 允许| **阻止**|
+|编辑内容|允许 | **阻止** | Allowed | **阻止**|
+|编辑属性（包括重命名）|Allowed |Allowed | Allowed| **阻止**|
 |删除|允许 <sup>1</sup> |**阻止** |**阻止**| **阻止**|
-|复制|允许 |允许 | 允许| 允许|
-|在容器 <sup>2</sup> 中移动|允许 |允许 | 允许| 允许|
+|复制|允许 |Allowed | Allowed| 允许|
+|在容器 <sup>2</sup> 中移动|允许 |Allowed | Allowed| 允许|
 |围绕容器 <sup>2</sup> 移动|允许 |如果从未解锁，则允许 | **阻止** | **阻止**|
-|打开/读取|允许 |允许 | 允许| Allowed|
+|打开/读取|允许 |Allowed | Allowed| Allowed|
 |更改标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
 |删除标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
 
@@ -111,4 +111,4 @@ ms.locfileid: "59775596"
 
 ## <a name="configuration-guidance"></a>配置指南
 
-请参阅[记录管理入门](get-started-with-records-management.md)。 本文提供了有关订阅、权限的信息，以及记录管理方案的端到端配置指南链接。
+请参阅[记录管理入门](get-started-with-records-management.md)。本文提供了有关订阅、权限的信息，以及记录管理方案的端到端配置指南链接。

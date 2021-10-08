@@ -9,18 +9,18 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: 使用 REST API 创建请求，使用训练后的文档理解模型对一个或多个文件进行分类。
-ms.openlocfilehash: 50aa406d25e6d598b568d7c21db6f56e04e111da
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 9f57799a9d1b631be5586dd285dc02cff1237b98
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776724"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186989"
 ---
 # <a name="create-file-classification-request"></a>创建文件分类请求
 
-创建使用应用的文档理解模型对一个或多个文件进行分类的请求。 （有关详细信息，请参阅 [示例](rest-createclassificationrequest.md#examples)。）
+创建一个请求，以使用应用的文档理解模型对一个或多个文件进行分类（有关详细信息，请参阅 [示例](rest-createclassificationrequest.md#examples)。）
 
 SharePoint Online 的 REST 服务（以及本地 SharePoint 2016 及更高版本）支持多个请求的组合。 使用 OData $batch 查询选项，将多个请求合并到一个服务调用中。 此方法可用于一次将数百个文档的分类工作项排入队列。
 

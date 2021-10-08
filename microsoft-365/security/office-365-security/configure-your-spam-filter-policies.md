@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2510ca3289cf6b6f7ed774b1d87aa2692e8b3f5d
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 91549fcbc4c528c0aeebe107d2f97b3bb8b52d41
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484055"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176616"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -74,7 +74,7 @@ ms.locfileid: "59484055"
 
   **注意**：
 
-  - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的权限。有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 - 有关建议的反垃圾软件策略设置，请参阅 [EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)。
@@ -87,7 +87,7 @@ ms.locfileid: "59484055"
 
 2. 在“**反垃圾邮件** 策略”页面上点击“![创建图标](../../media/m365-cc-sc-create-icon.png)”，“**创建策略**”，然后从下拉列表中选择“**入站**”。
 
-3. 将打开策略向导。 在“**命名策略页面**”上，配置以下设置：
+3. 策略向导随即打开。在 **命名策略页面** 上，配置以下设置：
    - **名称**：输入策略的唯一描述性名称。
    - **说明**：输入策略的可选说明。
 
@@ -100,11 +100,11 @@ ms.locfileid: "59484055"
 
    单击相应的框，开始键入值，然后从结果中选择所需的值。 根据需要多次重复此过程。 若要删除现有值，请单击值旁边的 ![删除图标。](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
 
-   对于用户或组，可以使用大多数标识符（姓名、显示名称、别名、电子邮件地址、帐户名称等），但是相应的显示名称会显示在结果中。 对于用户，请自行输入星号 (\*) 以查看所有可用值。
+   对于用户或组，可以使用大多数标识符（名称、显示名称、别名、电子邮件地址、帐户名称等），但相应的显示名称则显示在结果中。对于用户，请自行输入星号（\*），以查看所有可用值。
 
    同一个条件的多个值使用 OR 逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件使用 AND 逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
-   - **排除这些用户、组和域**: 若要为策略应用于的内部收件人添加例外 (收件人例外)，请选择此选项并配置例外。 设置和行为与条件完全相同。
+   - **排除这些用户、组和域**：要为策略所应用的内部收件人添加例外（收件人例外），请选择此选项并配置例外。设置和行为与条件完全相同。
 
    完成后，单击“**下一步**”。
 
@@ -154,13 +154,13 @@ ms.locfileid: "59484055"
      |**在主题行前面追加文本**：向邮件的主题行开头添加文本。 邮件递送到邮箱，并移动到“垃圾邮件”文件夹。<sup>1、2</sup> <p> 稍后将在 **“在主题行前面添加此文本作为前缀”** 框中输入文本。|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)|
      |**将邮件重定向到电子邮件地址**：将邮件发送给其他收件人，而不是目标收件人。 <p> 稍后将在 **“重定向到此电子邮件地址”** 框中指定收件人。|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
      |**删除邮件**：无提示删除整个邮件，包括所有附件。|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)|
-     |**隔离邮件**：将邮件发送到隔离，而不是目标收件人。 <p> 稍后将在 **“隔离”** 框中指定所需的邮件隔离时长。 <p> 在出现的“**选择策略** 框中指定 [隔离策略](quarantine-policies.md)，以将其应用于垃圾邮件筛选器裁定的隔离邮件。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。<sup>3</sup>|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)|
+     |**隔离邮件**：将邮件发送到隔离，而不是目标收件人。 <p> 稍后将在 **“隔离”** 框中指定所需的邮件隔离时长。 <p> 在出现的“**选择策略** 框中指定 [隔离策略](quarantine-policies.md)，以将其应用于垃圾邮件筛选器裁定的隔离邮件。有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。<sup>3</sup>|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)|
      |**无操作**|||||![复选标记](../../media/checkmark.png)|
      |
 
-     > <sup>1</sup>在 Exchange Online 中，如果邮箱启用了垃圾邮件规则（默认处于启用状态），邮件会移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+     > <sup>1</sup> 在 Exchange Online 中，如果在邮箱上启用垃圾邮件规则（默认情况下已启用），则邮件将移动到垃圾邮件文件夹。有关详细信息，请参阅 [在 Exchange Online 邮箱上配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
      >
-     > 在 EOP 保护本地 Exchange 邮箱的混合环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[在混合环境中将 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
+     > 在 EOP 保护本地 Exchange 邮箱的混合环境中，需要在本地 Exchange 中配置邮件流规则（也称为传输规则）以转换 EOP 垃圾邮件筛选裁定，以便垃圾邮件规则可以将邮件移动到垃圾邮件文件夹。有关详细信息，请参阅 [配置 EOP 以将垃圾邮件传递到混合环境中的垃圾邮件文件夹](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
      >
      > <sup>2</sup>可以将此使用值用作邮件流规则（亦称为“传输规则”）中的条件来筛选或路由邮件。
      >
@@ -179,7 +179,7 @@ ms.locfileid: "59484055"
 
      如果你输入的值包含空格或冒号 (:)，输入值会遭忽略，且添加到邮件中的是默认 X 标头 (`X-This-Is-Spam: This message appears to be spam.`)。
 
-   - **在主题行前面添加此文本作为前缀**：只有当你选择 **“在主题行前面追加文本”** 作为垃圾邮件筛选裁定对应的操作时，此框才会显示且必须选中。 输入要添加到邮件主题行开头的文本。
+   - **在主题行前面追加此文本**：此框是必需的，并且仅在你选择“**在主题行前追加文本**”作为垃圾邮件筛选裁定的操作时方可可用。请输入要添加到邮件主题行开头的文本。
 
    - **重定向到此电子邮件地址**：只有当你选择 **“将邮件重定向到电子邮件地址”** 作为垃圾邮件筛选裁定对应的操作时，此框才会显示且必须选中。 输入要将邮件递送到的电子邮件地址。 可以输入多个值，用分号 (;) 分隔。
 
@@ -193,7 +193,7 @@ ms.locfileid: "59484055"
      - **为垃圾邮件启用 ZAP**：默认情况下，为垃圾邮件检测启用 ZAP，但可通过清除复选框来禁用它。
 
    > [!NOTE]
-   > 最终用户垃圾邮件通知已替换为隔离策略中的 _隔离通知_，这些通知包含有关所有受支持保护功能（而不仅仅是反垃圾邮件策略裁定）的隔离邮件的信息。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
+   > 最终用户垃圾邮件通知已替换为隔离策略中的 _隔离通知_，其中包含有关所有受支持保护功能（而不仅仅是反垃圾邮件策略裁定）的隔离邮件的信息。有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
 
    完成后，单击“**下一步**”。
 
@@ -295,7 +295,7 @@ ms.locfileid: "59484055"
 
 默认情况下，反垃圾邮件策略根据创建顺序来获得优先级（新策略的优先级低于旧策略）。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
-若要更改策略的优先级，请单击策略属性中的“**提高优先级**”或“**降低优先级**”（不能直接修改 Microsoft 365 Defender 门户中的“**优先级**”数字）。 只有当你有多个策略时，更改策略的优先级才有意义。
+要更改策略的优先级，请在策略属性中单击“**提高优先级**”或“**降低优先级**”（不能在 Microsoft 365 Defender 门户中直接修改 **优先级** 编号）。仅当具有多个策略时，更改策略的优先级才有意义。
 
  **注意**：
 
@@ -337,7 +337,7 @@ ms.locfileid: "59484055"
 
 以下反垃圾邮件策略设置仅在 PowerShell 中可配置：
 
-- 默认情况下，_MarkAsSpamBulkMail_ 参数的值为 `On`。 本文前面的“[使用 Microsoft 365 Defender 门户创建反垃圾邮件策略](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)”部分中介绍了此设置的效果。
+- _MarkAsSpamBulkMail_ 参数默认为 `On`。本文中前面的 [使用 Microsoft 365 Defender 门户创建反垃圾邮件策略](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) 部分介绍了此设置的效果。
 - 以下设置用于最终用户垃圾邮件隔离通知：
   - _DownloadLink_ 参数：显示或隐藏 Outlook 垃圾邮件报告工具的链接。
   - _EndUserSpamNotificationCustomSubject_ 参数：可用于自定义通知的主题行。
@@ -479,7 +479,7 @@ Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 
 ### <a name="use-powershell-to-modify-spam-filter-rules"></a>使用 PowerShell 修改垃圾邮件筛选规则
 
-在 PowerShell 中修改垃圾邮件筛选规则时，唯一不可用的设置是，可用于创建已禁用规则的 _Enabled_ 参数。 若要启用或禁用现有垃圾邮件筛选规则，请参阅下一部分。
+在 PowerShell 中修改垃圾邮件筛选规则时，唯一不可用的设置是 _已启用_ 参数。通过该参数，可以创建禁用的规则。要启用或禁用现有的垃圾邮件筛选规则，请参阅下一部分。
 
 否则，在 PowerShell 中修改垃圾邮件筛选规则时，将无法使用其他任何设置。 创建规则时可用的设置与本文前面的[第 2 步：使用 PowerShell 创建垃圾邮件筛选规则](#step-2-use-powershell-to-create-a-spam-filter-rule)部分中介绍的设置相同。
 

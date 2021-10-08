@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件， 人为操作的勒索软件， 人工运营的勒索软件， HumOR， 勒索攻击， 勒索软件攻击， 加密， 加密病毒
 description: 使用安全基线来保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: c2e461e5b4236738909a61c30d5bfde060f372cb
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 662e4097f4d6fd868810ba889c99d58fd0dc2f75
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444534"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202305"
 ---
 # <a name="step-1-configure-security-baselines"></a>步骤 1. 配置安全基线
 
@@ -38,7 +38,7 @@ ms.locfileid: "59444534"
 
 首先，使用 [Microsoft 安全功能分数](/microsoft-365/security/defender/microsoft-secure-score)评估和衡量安全状况，并根据需要按照说明进行改进。
 
-接下来，使用 [攻击面减少规则](/microsoft-365/security/defender-endpoint/attack-surface-reduction) 帮助阻止可疑活动和易受攻击的内容。 这些规则包括阻止：
+接下来，使用 [攻击面减少规则](/microsoft-365/security/defender-endpoint/attack-surface-reduction) 帮助阻止可疑活动和易受攻击的内容。这些规则包括阻止：
 
 - 所有 Office 应用程序创建子进程
 - 来自电子邮件客户端和 Web 邮件的可执行内容

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划为保留标签提供了高级管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 5c270e3b03c8c8373cc3fcb204f5f5a654eeb001
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6c77268133440e4f067d42d66f4c99f76034e735
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171371"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201141"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用文件计划管理保留标签
 
@@ -70,25 +70,25 @@ ms.locfileid: "59171371"
 
 - **状态** 标识标签是包含在标签策略中还是自动应用策略中（**活动**）或不（**非活动**）。
 
-- **基于** 标识保留期的方式或时间。 有效值：
+- **基于** 标识保留期的方式或时间。有效值：
     - 事件
     - 创建时间
     - 上次修改时间
     - 标记时间
 
-- **是记录** 标识在应用标签时是否将该项目标记为记录。 有效值：
+- **是记录** 标识在应用标签时是否将该项目标记为记录。有效值：
     - 否
     - 是
     - 是(法规)
 
-- **保留期限** 标识保留期限。 有效值：
+- **保留期限** 标识保留期限。有效值：
     - 天
     - 月
     - 年限
     - 永久
     - 无
 
-- “**处置类型**”列指明在保留期到期时如何处置内容。 有效值：
+- “**处置类型**”列指明在保留期到期时如何处置内容。有效值：
     - 无操作
     - 自动删除
     - 需评审
@@ -109,7 +109,7 @@ ms.locfileid: "59171371"
 
 ![创建或编辑保留标签时的文件计划描述符。](../media/file-plan-descriptors.png)
 
-当为这些可选描述符中的每个描述符选择“**选择**”时，可以选择其中一个现成值，也可以创建自己的值，然后选择它。 例如： 
+当“**选择**”这些可选描述符中的每个描述符时，可以选择其中一个现成值，也可以创建自己的值，然后选择它。例如： 
 
 ![创建用于预配/引文的新文件计划描述符。](../media/file-plan-descriptors-create.png)
 
@@ -161,10 +161,10 @@ ms.locfileid: "59171371"
    |类别|字符串|否|该属性指定在 **类别** 文件计划描述符中显示的值。|
    |SubCategory|字符串|否|该属性指定在 **子类别** 文件计划描述符中显示的值。|
    |AuthorityType|字符串|否|该属性指定在 **权限类型** 文件计划描述符中显示的值。|
-   |CitationName|字符串|否|该属性指定在 **预配/引文** 文件计划描述符中显示的引文名称。 例如，“2002 年萨班斯-奥克斯利法案”。 |
+   |CitationName|字符串|否|该属性指定在 **预配/引文** 文件计划描述符中显示的引文名称；例如“2002 年萨班斯-奥克斯利法案”。 |
    |CitationUrl|字符串|否|该属性指定在 **预配/引文** 文件计划描述符中显示的 URL。|
    |CitationJurisdiction|字符串|否|此属性指定在 **规定/引文** 文件计划描述符中显示的管辖权地或机构；例如“美国证券交易委员会 (SEC)”。|
-   |Regulatory|字符串|否|此属性指定标签是否将内容标记为法规记录，该记录比记录 [更具限制性](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。 要使用此标签配置，必须将租户配置为 [显示将内容标记为法规记录的选项](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record)，否则导入验证将失败。 有效值包含: </br>**TRUE**: 标签将项目标记为法规记录。 还必须将 **IsRecordLabel** 属性设置为 TRUE。</br>**FALSE**: 标签不将内容标记为法规记录。 此为默认值。|
+   |Regulatory|字符串|否|此属性指定标签是否将内容标记为法规记录，该记录比记录 [更具限制性](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。 要使用此标签配置，必须将租户配置为 [显示将内容标记为法规记录的选项](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record)，否则导入验证将失败。 有效值包含: </br>**TRUE**: 标签将项目标记为法规记录。 还必须将 **IsRecordLabel** 属性设置为 TRUE。</br>**FALSE**: 标签不将内容标记为法规记录。这是默认值。|
    |EventType|String|否，除非 **RetentionType** 为 **EventAgeInDays**|此属性指定用于 [基于事件的保留](event-driven-retention.md) 的事件类型。 指定 **记录管理** > **事件** > **管理事件类型** 中显示的现有事件类型。 或使用 [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) cmdlet 查看可用的事件类型。 虽然存在一些内置事件类型，例如 **员工活动** 和 **产品寿命**，但你仍然可以创建自己的事件类型。 </br> </br> 如果你指定自己的事件类型，则事件类型必须出现在导入之前，因为作为导入流程的一部分名称需进行验证。|
    |||
 

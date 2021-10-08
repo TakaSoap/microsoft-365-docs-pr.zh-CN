@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有关记录的信息，以便在 Microsoft 365 中实现记录管理解决方案。
-ms.openlocfilehash: 5e77d38ed6e3b122ceb85a6cff901a09dbe782d1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 77a6cb185b599c6e96f3ff19331b233c9f28a318
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170121"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177383"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>使用记录版本控制来更新存储在 SharePoint 或 OneDrive 中的记录
 
@@ -31,7 +31,7 @@ ms.locfileid: "59170121"
 > [!NOTE]
 > 由于监管记录会阻止编辑，因此不提供适用于监管记录的版本控制。
 
-能够将文档标记为[记录](records-management.md#records)并限制可对该记录执行的操作是任何记录管理解决方案的重要目标。 但是，用户创建后续版本时也可能需要开展协作。
+将文档标记为 [记录](records-management.md#records) 并限制可对记录执行的操作的功能是任何记录管理解决方案的基本目标。但是，用户可能还需要协作才能创建后续版本。
 
 例如，你可以将销售合同标记为记录，但需要使用新条款更新合同，并将最新版本标记为新记录，同时保留先前的记录版本。 对于这些类型的方案，SharePoint 和 OneDrive 现在支持 *记录版本控制*。 OneNote 笔记本文件夹不支持记录版本控制。
 

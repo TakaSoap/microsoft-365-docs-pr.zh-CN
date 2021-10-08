@@ -7,7 +7,7 @@ ms.date: 8/6/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: 了解如何使用 Office 365 IP 地址和 URL Web 服务来帮助你更好地标识并区分 Office 365 网络流量。
-ms.openlocfilehash: 62e9b638b0f767aef3b7f52bb3d129310d2bcbd5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c9d888a175b5e070acfd3a9be7b428ee2404ec0d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201306"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197289"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务
 
@@ -195,7 +195,7 @@ Worldwide,2018063000
 - tcpPort - 终结点集的 TCP 端口。所有端口元素都格式化为以逗号分隔的端口列表或用短划线字符(-)分隔的端口范围。端口适用于给定类别的终结点集中的所有 IP 地址和所有 URL。如果为空，则省略。
 - udpPort - 此终结点集中 IP 地址范围的 UDP 端口。如果为空，则省略。
 - ip - 与此终结点关联的 IP 地址范围，设置为与列出的 TCP 或 UDP 端口关联。IP 地址范围的 JSON 数组。如果为空，则省略。
-- category — 终结点集的连接类别。 有效值为 _Optimize_、_Allow_ 和 _Default_。 如果搜索特定 IP 地址或 URL 类别的终结点 Web 方法输出，则查询可能会返回多个类别。 在这种情况下，请按照最高优先级类别的建议操作。 例如，如果终结点同时显示在 _Optimize_ 和 _Allow_ 中，则应该遵循 _Optimize_ 的要求。 必需项。
+- 类别 - 终结点集的连接类别。有效值为 _优化_、_允许_ 和 _默认_。如果搜索特定 IP 地址或 URL 类别的终结点 Web 方法输出，则查询可能会返回多个类别。此时，你应该遵循针对最高优先级类别的建议。例如，如果终结点同时在 _优化_ 和 _允许_ 中出现，则应遵循 _优化_ 的要求。必须提供。
 - expressRoute — 如果此终结点集通过 ExpressRoute 进行路由，则为 _True_，否则为 _False_。
 - 必需 - 如果此终结点集为必需项以具有支持 Office 365 的连接性，则为 _True_。如果此终结点集为可选，则为 _False_。
 - 备注 - 对于可选终结点，此文本说明了当无法在网络层访问此终结点集中的 IP 地址或 URL 时不可用的 Office 365 功能。如果为空，则省略。
@@ -268,7 +268,7 @@ Worldwide,2018063000
   — RemovedDuplicateIpOrUrl – 删除了重复的 IP 地址或 URL，但它仍是对 Office 365 发布的。 通常无需采取任何措施。
   — OtherNonPriorityChanges – 更改了一些不如其他所有选项重要的内容，例如注释字段的内容。
 - 版本 - 在其中引入更改的已发布终结点集的版本。版本号的格式为 _YYYYMMDDNN_，其中，如果需要在一天内发布多个版本，则 _NN_ 为递增自然数。
-- previous — 详细说明终结点集上的旧变更元素值的子结构。 对于新添加的终结点集，它们未包含在内。 包括 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_ 和 _notes_。
+- previous - 详细说明终结点集上的已变更元素旧值的子结构。对于新添加的终结点集，不包含此元素。此元素包括 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_ 和 _notes_。
 - current — 详细说明终结点集上的更新变更元素值的子结构。 包括 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_ 和 _notes_。
 - add — 详细说明要添加到终结点集集合的项的子结构。 如果没有要添加的项，将省略此元素。
   — effectiveDate — 定义添加项在服务中的生效日期。
@@ -357,7 +357,7 @@ Worldwide,2018063000
 
 - 通过调用 Web 服务 REST API，检查 Office 365 全球实例终结点的版本号。
 - 检查 _$Env:TEMP\O365_endpoints_latestversion.txt_ 中的当前版本文件。 全局变量 **$Env:TEMP** 的路径通常为 _C:\Users\\<username\>\AppData\Local\Temp_。
-- 如果这是首次运行脚本，则脚本将返回当前版本以及所有当前 IP 地址和 URL，将终结点版本写入文件 _$Env:TEMP\O365_endpoints_latestversion.txt_，并将终结点数据输出写入文件 _$Env:TEMP\O365_endpoints_data.txt_。 可通过编辑以下行来修改输出文件的路径和/或名称：
+- 如果这是首次运行脚本，则脚本将返回当前版本以及所有当前 IP 地址和 URL，将终结点版本写入文件 _$Env:TEMP\O365_endpoints_latestversion.txt_，并将终结点数据输出写入文件 _$Env:TEMP\O365_endpoints_data.txt_。可通过编辑以下行来修改输出文件的路径和/或名称：
 
     ``` powershell
     $versionpath = $Env:TEMP + "\O365_endpoints_latestversion.txt"
@@ -367,7 +367,7 @@ Worldwide,2018063000
 - 在后续每次执行脚本时，如果最新的 Web 服务版本与 _O365_endpoints_latestversion.txt_ 文件中的版本相同，则脚本将退出，而不进行任何更改。
 - 如果最新的 Web 服务版本比 _O365_endpoints_latestversion.txt_ 文件中的版本更新，则该脚本将返回 **Allow** 和 **Optimize** 类别的终结点和筛选器，更新 _O365_endpoints_latestversion.txt_ 文件中的版本，并将更新的数据写入 _O365_endpoints_data.txt_ 文件。
 
-该脚本将为在其上运行的计算机生成唯一的 _ClientRequestId_，并在多个调用中重复使用此 ID。 此 ID 存储在 _O365_endpoints_latestversion.txt_ 文件中。
+该脚本将为在其上运行的计算机生成唯一的 _ClientRequestId_，并在多个调用中重复使用此 ID。此 ID 存储在 _O365_endpoints_latestversion.txt_ 文件中。
 
 ### <a name="to-run-the-powershell-script"></a>运行 PowerShell 脚本
 

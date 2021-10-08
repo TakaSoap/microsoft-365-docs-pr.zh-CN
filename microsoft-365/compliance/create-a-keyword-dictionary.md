@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全与合规中心中创建关键字字典的基本步骤。
-ms.openlocfilehash: ef54a45157ab73662ddb15ad46f12ef510ad28cd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f585009ee54c03b0417f5aa74fd0b7d2fa0d5e7e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171041"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167326"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字字典
 
@@ -75,9 +75,9 @@ Remove-Item $rawFile
   
 1. 使用 **安全与合规中心**（[https://compliance.microsoft.com](https://compliance.microsoft.com)）或连接到 **安全性 &amp; 合规中心 PowerShell**。
     
-2. **定义或加载目标来源中的关键字**。 该向导和 cmdlet 均接受逗号分隔的关键字列表，以创建自定义关键字字典，所以这一步将会因关键字来源不同而略有差异。 加载后的关键字会在导入前编码并转换为字节数组。
+2. **定义或从预期源加载关键字**。向导和 cmdlet 都接受以逗号分隔的关键字列表来创建自定义关键字字典，因此这一步骤将略有不同，具体取决于关键字的来源。加载后，在导入之前将对其进行编码并转换为字节数组。
     
-3. **创建字典**。 选择名称和说明，并创建字典。
+3. **创建字典**。选择名称和说明并创建字典。
 
 ## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>使用安全与合规中心创建关键字字典
 
@@ -109,7 +109,7 @@ Remove-Item $rawFile
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>使用 PowerShell 通过文件创建关键字词典
 
-通常情况下，在需要创建大型字典时，可使用从某些其他来源导出的文件或列表中的关键字。 在这种情况下，将会创建一个关键字字典，其中包含将在外部电子邮件中筛选的不当语言的列表。 首先，必须[连接到安全与&amp;合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
+如果经常需要创建大型字典，则使用从其他某来源导出的文件或列表中的关键字。在此案例中，你将创建包含要在外部电子邮件中筛查的不当语言列表的关键字字典。首先，必须 [连接到安全 &amp; 与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
   
 1. 将关键字复制到文本文件中，并确保每个关键字都单独占一行。
     
@@ -129,7 +129,7 @@ Remove-Item $rawFile
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>在自定义敏感信息类型和 DLP 策略中使用关键字词典
 
-关键字字典可用作自定义敏感信息类型的匹配要求的一部分，也可用作敏感信息类型本身。 这两者都要求创建[自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。 请按照链接的文章中的说明创建敏感信息类型。 拥有 XML 后，你将需要 GUID 标识符，以供字典使用。
+关键字词典可用作自定义敏感信息类型的部分匹配要求，也可用作敏感信息类型本身。上述两种情况都要求 [创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。请按照链接文章中的说明操作，以创建敏感信息类型。创建 XML 后，必须具有 GUID 标识符才能使用字典。
   
 ```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">

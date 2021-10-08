@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: 了解如何使用三层保护配置 Teams 以实现更好的文件共享安全性，从而平衡安全性和易于协作。
-ms.openlocfilehash: 5cd06f540ba96f55aa52a1cc9b5e6e7c54c7bbab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 279e338af6db4d82291209deb66e1ea1eef74630
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197179"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202329"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>配置具有三层保护的 Teams
 
@@ -122,7 +122,7 @@ Teams 来宾共享默认处于打开状态，但你可以通过使用敏感度�
 
 ![Azure Active Directory 条件访问策略中 Office 365 云应用的屏幕截图。](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
-使用影响所有 Microsoft 365 服务的策略可以为用户提供更好的安全性和更好的体验。 例如，当仅阻止访问 SharePoint 中非托管设备时，用户可以使用非托管设备访问团队中的聊天，但当用户尝试访问“**文件**”选项卡时将失去访问权限。使用 Office 365 云应用有助于避免 [服务依赖项](/azure/active-directory/conditional-access/service-dependencies) 的问题。
+使用影响所有 Microsoft 365 服务的策略可以为用户带来更好的安全性和更好的体验。例如，当仅阻止访问 SharePoint 中非托管设备时，用户可以使用非托管设备访问团队中的聊天，但当用户尝试访问“**文件**”选项卡时将失去访问权限。使用 Office 365 云应用有助于避免 [服务依赖项](/azure/active-directory/conditional-access/service-dependencies) 的问题。
 
 ## <a name="next-step"></a>后续步骤
 

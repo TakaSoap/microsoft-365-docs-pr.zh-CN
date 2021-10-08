@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
@@ -25,12 +26,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 购买 Microsoft 365 商业标准版时，你可以选择使用自己拥有的域，也可以在注册期间购买一个域。
-ms.openlocfilehash: 5161a3db8c61df247e1200914bdc08e3b732b084
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 3144c61b0aa6f329fa4f0159cedbad21c2038169
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776220"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169343"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>使用新域或现有域设置 Microsoft 365 商业标准版
 
@@ -149,7 +150,7 @@ ms.locfileid: "59776220"
 
 ## <a name="set-up-microsoft-teams-and-onedrive-for-business"></a>设置 Microsoft Teams 和 OneDrive for Business
 
-从任务栏中选择 OneDrive 云图标，然后按照步骤将文件移动到新的 OneDrive for Business 文件夹。 选择“**下一步**”以设置 Microsoft Teams。
+从任务栏中选择 OneDrive 云图标，然后按照步骤将文件移动到新的 OneDrive for Business 文件夹。选择“**下一步**”以设置 Microsoft Teams。
 
 1. 打开 Microsoft Teams，选择个人资料图标，然后 **添加工作或学校帐户**。 按照步骤将新帐户添加到 Teams。
 

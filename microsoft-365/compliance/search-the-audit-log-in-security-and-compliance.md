@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 08f3089433769960d7765ce5dfd096a971de0640
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: b50e320752f64360132410c50f454fbfbfd27a82
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483755"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195613"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -43,14 +43,14 @@ ms.locfileid: "59483755"
 | 通信合规性|ComplianceSuperVisionExchange|
 | 内容资源管理器|LabelContentExplorer|
 | 数据丢失防护 (DLP)|ComplianceDLPSharePoint、ComplianceDLPExchange|
-| Defender for Endpoint|DLPEndpoint|
+| Defender for Endpoint|DLPEndpoint、MSDEResponseActions、MSDEGeneralSettings、MSDEIndicatorsSettings、MSDERolesSettings|
 | Dynamics 365|CRM|
 | 电子数据展示|发现、AeD|
 | 精确数据匹配|MipExactDataMatch|
 | Exchange Online|ExchangeAdmin、ExchangeItem、ExchangeItemAggregated |
 | Forms|MicrosoftForms|
 | 信息屏障|InformationBarrierPolicyApplication|
-| Microsoft 365 Defender|MDATPAudit、AirInvestigation、AirManualInvestigation、AirAdminActionInvestigation|
+| Microsoft 365 Defender|AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection|
 | Microsoft Teams|MicrosoftTeams|
 | MyAnalytics|MyAnalyticsSettings|
 | OneDrive for Business|OneDrive|
@@ -1051,7 +1051,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 ### <a name="disposition-review-activities"></a>处置评审活动
 
-下表列出了当项目达到其配置的保留期结束时处置审阅者所执行的活动。 有关详细信息，请参阅[查看和处置内容](disposition.md#viewing-and-disposing-of-content)。
+下表列出了，当项目达到其配置的保留期结束时，处置审阅者所执行的活动。有关详细信息，请参阅[查看和处置内容](disposition.md#viewing-and-disposing-of-content)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -1081,7 +1081,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 以下是在搜索审核日志时搜索 Exchange 管理员活动的一些提示：
 
-- 若要返回 Exchange 管理员审核日志中的条目，必须选择“**活动**”列表中的“**显示所有活动的结果**”。 使用日期范围框和“**用户**”列表缩小由特定 Exchange 管理员在特定日期范围内运行的 cmdlet 的搜索结果范围。
+- 若要返回 Exchange 管理员审核日志中的条目，必须选择“**活动**”列表中的“**显示所有活动的结果** ”。使用日期范围框和“**用户**”列表缩小由特定 Exchange 管理员在特定日期范围内运行的 cmdlet 的搜索结果范围。 
 
 - 若要显示 Exchange 管理员审核日志中的事件，请筛选搜索结果并在“**活动**”筛选器框中键入 **-**（破折号）。 这将在 Exchange 管理员事件的“**活动**”列中显示 cmdlet 名称。 然后你便可按字母顺序对 cmdlet 名称进行排序。
 

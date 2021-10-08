@@ -9,7 +9,7 @@ ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: 许可证分配取决于是向特定用户分配产品许可证，还是向特定产品分配用户许可证。
 ms.date: 09/16/2021
-ms.openlocfilehash: b9fb8a670b649437a894619369731a5085c36804
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: eb122a7bce8aba070bf50e4654a54db6c40a1157
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59785935"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164544"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 
@@ -45,7 +45,7 @@ ms.locfileid: "59785935"
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 你必须是全局、许可证或用户管理员才能分配许可证。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../add-users/about-admin-roles.md)。
+- 你必须是全局、许可证或用户管理员才能分配许可证。有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../add-users/about-admin-roles.md)。
 - 借助 PowerShell [，可以将 Microsoft 365 许可证分配给](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
 - 若要使用基于组的许可，请参阅[在 Azure Active Directory 中按组成员身份向用户分配许可证](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - 某些服务（如 Sway）会自动分配给用户，无需单独分配。
@@ -77,7 +77,7 @@ ms.locfileid: "59785935"
 
 3. 在产品详细信息页面上，选择“**分配许可证**”。
 
-4. 在“**向用户分配许可证**”窗格中，开始键入名称，然后从结果中将其选中，将其添加到列表中。 一次最多可添加 20 名用户。
+4. 在 **向用户分配许可证** 窗格中，开始键入名称，然后从结果中将其选中，将其添加到列表中。一次最多可添加 20 名用户。
 
 4. 选择“**打开或关闭应用和服务**”，向特定项目分配访问权限或删除其访问权限。
 

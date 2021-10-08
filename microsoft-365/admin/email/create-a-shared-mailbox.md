@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -23,17 +24,17 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: 53e82d0cdd1fb9f11ab15ce4a2fbdc4b0c0ac980
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 64ee2649127445e8438d915734dad9f2aa965933
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775584"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165036"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
 > [!NOTE]
-> 如果你的组织使用的是混合 Exchange 环境，则你应使用本地 Exchange 管理中心 (EAC) 创建和管理共享邮箱。 请参阅[在 Exchange 管理中心创建共享邮箱](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
+> 如果组织使用混合 Exchange 环境，则应使用本地 Exchange 管理中心(EAC)创建并管理共享邮箱。请参阅 [在 Exchange 管理中心中创建共享邮箱](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
 >
 > 如果不确定是应为 Outlook 创建共享邮箱还是 Microsoft 365 组，可参阅[比较组](../create-groups/compare-groups.md)获取一些指导。 请注意，暂无法将共享邮箱迁移到 Microsoft 365 组中。 如果这不是你想要的结果，请通过[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)告诉我们。
 
@@ -45,7 +46,7 @@ ms.locfileid: "59775584"
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>创建共享邮箱并添加成员
   
-1. 使用全局管理员帐户或 Exchange 管理员帐户登录。 如果收到消息“**你没有访问此页面或执行此操作的权限**”，则表明你不是管理员。 
+1. 使用全局管理员帐户或 Exchange 管理员帐户登录。如果收到“**你无权访问此页面或执行此操作**”消息，则表明你不是管理员。 
 
 ::: moniker range="o365-worldwide"
 
@@ -69,13 +70,13 @@ ms.locfileid: "59775584"
     
     ![为共享邮箱命名。](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
-4. 选择“**保存更改**”。 可能需要几分钟时间，才可以添加成员。
+4. 选择 **保存更改**。可能需要几分钟才可添加成员。
 
-5. 在“**后续步骤**”下，选择“**将成员添加到此邮箱**”。 成员能够查看此共享邮箱收到的邮件及发出的答复。
+5. 在 **后续步骤** 下，选择 **将成员添加到此邮箱**。成员为将能够查看此共享邮箱的传入邮件和传出答复的人员。
 
    ![选择“添加成员”。](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
-6. 选择“**+添加成员**”按钮。 将复选标记放在要使用此共享邮箱的人员旁边，然后选择 **保存**。
+6. 选择 **+添加成员** 按钮。将复选标记置于你想要其使用此共享邮箱的人员旁边，然后选择 **保存**。
 
    ![向共享邮箱分配成员。](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
@@ -87,9 +88,9 @@ ms.locfileid: "59775584"
 
 对于共享邮箱，可以使用以下权限：
 
-- **完全访问权限**： 完全访问权限允许用户登录共享邮箱并作为该邮箱的所有者。 访问共享邮箱后，用户可以创建日历项目、读取、查看、删除和更改电子邮件，以及创建任务和日历联系人。 然而，具有完全访问权限的用户无法从共享邮箱发送电子邮件，除非他们同时拥有"发送为"或"代表发送"权限。
+- **完全访问权限**: “完全访问权限”允许用户打开共享邮箱并充当该邮箱的所有者。访问共享邮箱后，用户可以创建日历项，读取、查看、删除并更改电子邮件，以及创建任务和日历联系人。但是，具有“完全访问权限”的用户无法从共享邮箱发送电子邮件，除非其还具有“作为发送”或“代表发送”权限。
 
-- **发送方式**：通过"发送方式"权限，用户可以在发送邮件时模拟共享邮箱。 例如，如果由 Marketingrina 登录到市场营销部门的共享邮箱并发送一封电子邮件，看起来好像市场营销部门发送了该电子邮件。
+- **作为发送**: “作为发送”权限允许用户在发送邮件时模拟共享邮箱。例如，如果 Katerina 登录到共享邮箱市场营销部并发送电子邮件，则看上去将像是市场营销部门发送的电子邮件。
 
 - **代表**：通过"代表发送"权限，用户可以代表共享邮箱发送电子邮件。 例如，John 登录到 32 号接待大楼的共享邮箱并发送一封电子邮件，看起来就像是"John 代表 32 号接待大楼"发送的该邮件。 无法使用 EAC 来授予"代表发送"权限，必须通过在 **Set-Mailbox** cmdlet 中设置 _GrantSendonBehalf_ 参数才能实现。
 

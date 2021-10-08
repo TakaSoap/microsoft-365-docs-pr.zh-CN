@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: e1cae053c7b13ceec9c7f3274122cf004c7277e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ed0eb21f5c97c4028395b6d85a01e6855a46e028
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169668"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168682"
 ---
 # <a name="get-started-with-content-explorer"></a>内容资源管理器入门
 
@@ -71,7 +71,7 @@ ms.locfileid: "59169668"
 
 - **内容资源管理器列表查看员**：此角色组的成员资格允许你在列表视图中查看每个项目及其位置。 已为此角色组预分配 `data classification list viewer` 角色。
 
-- **内容资源管理器内容查看器**：此角色组的成员资格允许你查看列表中每个项目的内容。 已为此角色组预分配 `data classification content viewer` 角色。
+- **内容浏览器内容查看器**：通过此角色组中的成员身份，可以查看列表中每个项的内容。已将 `data classification content viewer` 角色预分配给此角色组。
 
 用于访问内容资源管理器的帐户必须具有其中一个或两个角色组。 这些角色组是独立角色组，不具有累积性。 例如，如果要向帐户授予仅查看项目及其位置的权限，则授予内容资源管理器列表查看器的权限。 如果你希望同一帐户也能够查看列表中项目的内容，另请授予内容资源管理器内容查看器权限。
 

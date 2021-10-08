@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 05/04/2021
-ms.openlocfilehash: 128107630580bb1594d61313c6469bb83a4adfc1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9add2523eeedb9accdbc864979721fa7a3b99ac5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200653"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158630"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>如何支付订阅费用
 
@@ -40,7 +40,7 @@ ms.locfileid: "59200653"
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 只有全局或帐单管理员才能执行本文所述步骤。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+- 只有全局或帐单管理员才能执行本文所述步骤。有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 - 结帐时选择的付款方式是未来所有计费周期使用的付款方式。但随时都可以进行更改。
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>使用信用卡、借记卡或银行账户支付
@@ -74,7 +74,7 @@ ms.locfileid: "59200653"
 如果你亲自添加了具有逾期未付金额的付款方式，可以使用 **支付余额** 进行付款。 用于支付逾期金额的支付方式将成为所有使用拒绝支付方式的订阅的新支付方式。
 
 1. 在管理中心中，请转到“**帐单**” > “**账单和付款**”页面，然后选择“<a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">付款方式</a>”选项卡。
-1. 一条警告消息，显示拒绝了那种付款方式。 选择“**支付余额**”。
+1. 一条警告消息，显示哪种付款方式被拒绝。选择“**结算余额**”。
 1. 在右侧窗格中，选择其他付款方式，或选择“**添加新的付款方式**”。
 1. 更新付款方式信息后，选择“**保存**”。
 

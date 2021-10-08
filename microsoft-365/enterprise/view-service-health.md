@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords:
 - CSH
 ms.custom:
@@ -26,18 +26,18 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 先查看 Microsoft 365 服务的运行状况，然后再致电支持人员，查看活动服务是否中断。
-ms.openlocfilehash: 64a0d4816ce9afdd8ee4bf1c2a4522ef9fc56afc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d5af62bd31bc5fe6c3a3f04657d6cf0ea6083eaa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59195695"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166786"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>如何检查 Microsoft 365 服务运行状况
 
 [![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/O365-Admin-AdminCenterChanging.png)](/office365/admin/microsoft-365-admin-center-preview?preserve-view=true&view=o365-worldwide)
 
-可在 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)的 **服务运行状况** 页面上查看 Microsoft 服务的运行状况，包括 Office 网页版、Yammer、Microsoft Dynamics CRM 和移动设备管理云服务。 If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
+可以在 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339) 的 **服务运行状况** 页面查看 Microsoft 服务的运行状况，包括 Office web 版、Yammer、Microsoft Dynamics CRM 和移动设备管理云服务。如果遇到云服务问题，可以先检查服务运行状况，以确定此是否为正在解决的已知问题，然后再致电支持人员或花时间进行疑难解答。
 
 如果无法登录到管理中心，可以使用[服务状态页](https://status.office365.com)检查阻止登录到租户的已知问题。  也请注册 Twitter 并关注我们 [@MSFT365status](https://twitter.com/MSFT365Status) 以查看事件信息。
 
@@ -46,9 +46,9 @@ ms.locfileid: "59195695"
 1. 在 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) 转到 Microsoft 365 管理中心，并使用管理员帐户登录。
 
     > [!NOTE]
-    > 分配为全局管理员或服务支持管理员的人员可以查看服务运行状况。 若要允许 Exchange、SharePoint 和 Skype for Business 管理员查看服务运行状况，必须向他们分配服务管理员角色。 有关可以查看服务运行状况的角色的详细信息，请参阅[关于管理角色](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)。
+    > 分配为全局管理员或服务支持管理员角色的人员可以查看服务运行状况。要允许 Exchange、SharePoint 和 Skype for Business 管理员查看服务运行状况，其还必须分配为服务管理员角色。有关可以查看服务运行状况的角色的详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)。
 
-2. 要查看服务运行状况，请在管理中心中转到“**运行状况**” > >“**服务运行状况**”，或单击 **主页仪表板** 上的“**服务运行状况**”卡片。 仪表板卡片指示是否存在未解决的服务问题，并提供指向 **服务运行状况** 详细信息页的链接。
+2. 要查看服务运行状况，请在管理中心中转到 **运行状况** > **服务运行状况**，或在 **主页仪表板** 上选择 **服务运行状况** 卡片。该仪表板卡片会指示是否存在活动的服务问题，并指向 **服务运行状况** 详细页面的链接。
 
 3. 在 **服务运行状况** 页上，每个云服务的健康状态以表格格式显示。
 
@@ -64,7 +64,7 @@ ms.locfileid: "59195695"
 
 如果在使用 Microsoft 365 服务时遇到问题，但在 **“服务运行状况”** 页上未看到该问题，请通过选择 **“报告问题”** 并填写简短表单来告诉我们。 我们将查看来自其他组织的相关数据和报告，看看这个问题的广泛性及其是否起源于我们的服务。 如果是这样，我们会将其添加为 **服务运行状况** 页上的新事件或公告，你可以在该处跟进其解决方案。 “**报告的问题**”页面将显示租户在此表单中报告的所有问题以及状态。
 
-要自定义显示在仪表板上的服务的视图，请选择“**首选项**” > “**自定义视图**”，然后清除要从服务运行状况仪表板视图中筛选出来的服务的复选框。 请确保已选择要监视的每个服务的复选框。
+要自定义仪表板上显示的服务的视图，请选择 **首选项** > **自定义视图**，并清除想要筛选出服务运行状况仪表板视图的服务的复选框。请确保为每个想要监视的服务选择复选框。
 
 要注册会影响租户和活动事件状态更改的新事件电子邮件通知，请选择“**首选项**” > “**电子邮件**”，单击“**在电子邮件中向我发送服务运行状态通知**”，然后指定：
 
@@ -110,7 +110,7 @@ ms.locfileid: "59195695"
 在大多数情况下，服务正常运行且没有进一步的信息。服务出现问题时，该问题会标识为公告或事件，并显示当前状态。
 
 > [!TIP]
-> 服务运行状况中不会显示计划内维护事件。 可以通过" **消息中心**"随时了解最新消息，从而跟踪计划内维护事件。 筛选出分类为"更改计划"的消息，了解发生更改的时间、其影响以及如何做好相应准备。 请参阅 [Microsoft 365 中的消息中心](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093)获取更多详细信息。
+> 服务运行状况中不显示计划维护事件。可以使用 **消息中心** 了解最新情况，以跟踪计划维护事件。筛选出被分为“计划更改”的消息，以了解更改时间及其效果，以及如何做好准备。有关更多的详细信息，请参阅 [Microsoft 365 中的消息中心](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093)。
 
 ### <a name="incidents-and-advisories"></a>事件和公告
 
@@ -142,7 +142,7 @@ ms.locfileid: "59195695"
 
 ### <a name="history"></a>历史记录
 
-可通过“服务运行状况”查看当前运行状况，并查看过去 30 天内影响租户的任何服务公告和事件的历史记录。 要查看所有服务过去的运行状况，请选择“**历史记录**”视图。
+服务运行状况允许查看当前运行状况，以及过去 30 天内影响租户的服务公告和事件的历史记录。要查看所有服务的过往运行状况，请选择 **历史记录** 视图。
 
 有关我们对运行时间的承诺的详细信息，请参阅 [Microsoft 365 透明操作](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。
 
