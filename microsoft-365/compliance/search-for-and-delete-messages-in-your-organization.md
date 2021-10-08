@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Microsoft 365 合规中心中的搜索和清除功能搜索和删除组织中所有邮箱的电子邮件。
-ms.openlocfilehash: f543a3239b7390e2cd449c0209a512735df2f52e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 33c65cb61be14d72631fd3a272b68f2dad2ffea6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59169618"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204223"
 ---
 # <a name="search-for-and-delete-email-messages"></a>搜索和删除电子邮件
 
@@ -43,7 +43,7 @@ ms.locfileid: "59169618"
 
 - 本文中所述的搜索和清除工作流不会从 Microsoft Teams 中删除聊天消息或其他内容。 如果在步骤 2 中创建的内容搜索返回 Microsoft Teams 中的项目，则在清除步骤 3 中的项目时不会删除这些项目。
 
-- 要创建并运行内容搜索，你必须是 **电子数据展示管理员** 角色组的成员，或者分配有 Microsoft 365 合规中心内的 **合规性搜索** 角色。 要删除邮件，你必须是 **组织管理** 角色组的成员，或分配有合规中心内的 **搜索和清除** 角色。有关将用户添加到角色组的信息，请参阅 [分配电子数据展示权限](assign-ediscovery-permissions.md)。
+- 若要创建并运行内容搜索，你必须是 **电子数据展示管理员** 角色组的成员，或者在 Microsoft 365 合规中心被分配有“**合规性搜索**”角色。若要删除邮件，你必须是 **组织管理** 角色组的成员，或在合规中心被分配有“**搜索并清除**”角色。有关将用户添加到角色组的详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
 
   > [!NOTE]
   > Exchange Online 和 Microsoft 365 安全与合规中心中都存在 **组织管理** 角色组。 这些角色组都是独立的角色组，授予不同的权限。 作为 Exchange Online 中 **组织管理** 的成员，并没有授予删除邮件的必要权限。 如果未向你分配安全与合规中心的 **搜索并清除** 角色（直接分配或通过 **组织管理** 等角色组分配），则当你运行 **New-ComplianceSearchAction** cmdlet 时，将在步骤 3 中收到错误消息“找不到与参数名称‘清除’相匹配的参数”。
@@ -64,7 +64,7 @@ ms.locfileid: "59169618"
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>步骤 2：创建内容搜索以查找要删除的邮件
 
-第二步是创建和运行内容搜索以查找要从组织的邮箱中删除的邮件。 可以通过使用 Microsoft 365 合规中心或在安全与合规 PowerShell 中运行 **New-ComplianceSearch** 和 **Start-ComplianceSearch** cmdlet 来创建搜索。 与此搜索的查询匹配的邮件将通过在 [步骤 3](#step-3-delete-the-message) 中运行 **New-ComplianceSearchAction -Purge** 命令来删除。 有关创建内容搜索和配置搜索查询的信息，请参阅下列主题：
+第二步是创建并运行内容搜索以查找想要从组织的邮箱中删除的邮件。你可以通过使用 Microsoft 365 合规中心或在安全与合规 PowerShell 中运行 **New-ComplianceSearch** 和 **Start-ComplianceSearch** cmdlets 来创建搜索。与此搜索的查询匹配的邮件将通过在 [步骤 3](#step-3-delete-the-message) 中运行 **New-ComplianceSearchAction -Purge** 命令进行删除。有关创建内容搜索和配置搜索查询的详细信息，请参阅下列主题：
 
 - [Office 365 中的内容搜索](content-search.md)
 
@@ -145,13 +145,13 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 - **如何获取有关搜索和删除操作的状态？**
 
-  运行 **Get-ComplianceSearchAction** 以获取有关删除操作的状态。 运行 **New-ComplianceSearchAction** cmdlet 时创建的对象使用以下格式命名：`<name of Content Search>_Purge`。
+  运行 **Get-ComplianceSearchAction** 以获取删除操作的状态。运行 **New-ComplianceSearchAction** cmdlet 时创建的对象将使用以下格式命名：`<name of Content Search>_Purge`。
 
 - **删除邮件后会发生什么情况？**
 
   使用 `New-ComplianceSearchAction -Purge -PurgeType HardDelete` 命令删除的邮件将移至“清除”文件夹，用户无法访问这些邮件。 将邮件移至“清除”文件夹后，如果为邮箱启用了单个项目恢复，则会在已删除的邮件保留期内保留邮件。 （在 Microsoft 365 中，创建新邮箱时将默认启用单个项目恢复。）已删除项目的保留期到期后，邮件将标记为永久删除，并在托管文件夹助手下次处理邮箱时从 Microsoft 365 中清除。
 
-  如果使用 `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` 命令，邮件将移至用户的“可恢复的项目”文件夹内的“删除”文件夹中。 它不会立即从 Microsoft 365 中清除。 在基于为邮箱配置的已删除邮件保留期的持续时间内，用户可以恢复“已删除邮件”文件夹中的邮件。 此保留期过期（或如果用户在过期之前清除邮件）后，邮件将移动到“清除”文件夹，用户将无法再访问。 进入“清除”文件夹后，如果启用了邮箱的单个邮件恢复，则邮件将保留一段时间，该时间取决于为邮箱配置的已删除邮件保留期。 （在 Microsoft 365 中，创建新邮箱时将默认启用单个项目恢复。）已删除项目的保留期到期后，邮件将标记为永久删除，并在托管文件夹助手下次处理邮箱时从 Microsoft 365 中清除。
+  如果使用 `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` 命令，则邮件将移动到用户的"可恢复邮件"文件夹中的"删除"文件夹。它不会立即从 Microsoft 365 中清除。在为邮箱配置的已删除邮件保留期内，用户可以恢复“已删除邮件”文件夹中的邮件。此保留期过期（或如果用户在过期之前清除邮件）后，邮件将移动到“清除”文件夹，用户无法再访问该邮件。进入“清除”文件夹后，如果启用了邮箱的单个邮件恢复，则邮件将在邮箱配置的已删除邮件保留期内继续保留。（在 Microsoft 365 中，创建新邮箱时会默认启用单个邮件恢复。）已删除邮件保留期到期后，邮件将被标记为永久删除，并将在下次托管文件夹助理处理邮箱时从 Microsoft 365 中清除。
 
 - **如果必须删除超过 50,000 个邮箱中的邮件，该怎么办？**
 

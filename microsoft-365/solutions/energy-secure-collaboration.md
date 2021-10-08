@@ -10,15 +10,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 description: Microsoft 365 可帮助能源组织迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性。
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: a9e104516b203d81ef69058b2d31d4b4c97df39e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 70be71b33c471d31207215be6c518f3429b31bf7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170877"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206405"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>针对能源行业的关键合规性与安全性注意事项
 ![使用云的各种行业的全局视图的图示比拟。](../media/solution-arch-center/MSC17_global_016.png)
@@ -86,7 +86,7 @@ Microsoft Teams 可让能源行业受益的另一个示例是，当现场服务�
 
 **Office 365 组命名策略** 有助于确保 Office 365 组和 Microsoft Teams 根据公司策略进行命名。 如果命名不当，团队的名称可能会带来挑战 – 例如，如果未正确命名，他们可能不知道在哪个团队中工作或共享信息。 组命名策略可以强制执行良好的安全机制，也可以阻止使用特定字词，例如保留字或不恰当的术语。 
 
-**Office 365 组过期策略** 有助于确保 Office 365 组和 Microsoft Teams 的保留时间不会超过组织所需的时间。 此功能可帮助避免两个关键信息管理问题：
+**Office 365 组过期策略** 有助于确保 Office 365 组和 Microsoft Teams 的保留时间不会超过组织所需的时间。此功能有助于防止出现两个关键信息管理问题：
 - 不需要或不使用的 Microsoft Teams 数量剧增
 - 过度保留组织不再需要的数据
 
@@ -130,7 +130,7 @@ Microsoft 365 通过 **Azure Active Directory (Azure AD)** 提供了安全标识
 
 **Microsoft Cloud App Security (MCAS)** 使组织能够在粒度级别进一步实施策略，并基于使用机器学习自动定义的单个用户配置文件来检测行为异常。 MCAS 可基于 Azure 条件访问策略生成，通过评估与所访问文档的用户行为和属性相关的其他信号来进一步保护敏感资产。 随着时间的推移，MCAS 将了解每位员工在访问数据和使用应用程序方面的典型行为。 根据已知的行为模式，如果员工行为超出该行为配置文件的范围，则策略可自动实施安全控制措施。 例如，如果员工通常在周一至周五上午 9 点至下午 5 点访问会计应用，但此同一用户开始在星期天晚上频繁访问该应用程序，则 MCAS 可动态执行策略，要求用户重新进行身份验证。 这有助于确保凭据没有遭到泄漏。 此外，MCAS 还可帮助发现并标识组织中的“影子 IT”，帮助 InfoSec 团队确保员工在处理敏感数据时使用批准的工具。 最后，MCAS 可以保护云中任意位置的敏感数据，甚至是 Microsoft 365 平台之外的数据。 当用户在这些应用程序中工作时，它使组织能够批准（或不批准）特定的外部云应用，从而控制访问和监视使用。
 
-**Azure Active Directory** 和相关的 Microsoft 365 安全服务奠定了向能源行业组织推出新式云协作平台的基础，以便确保对数据和应用程序的访问的强大安全性，并满足监管机构的合规义务。 总之，这些工具可提供下列关键功能：
+**Azure Active Directory** 和相关的 Microsoft 365 安全服务奠定了向能源行业组织推出新式云协作平台的基础，以便确保对数据和应用程序的访问的强大安全性，并满足监管机构的合规义务。总而言之，这些工具提供了以下关键功能：
 - 集中存储和安全管理用户标识
 - 使用强身份验证协议（包括多重身份验证）对提出访问请求的用户进行身份验证，并在任何应用程序中提供一致可靠的身份验证体验
 - 对所有访问请求动态验证策略，将多个信号合并到策略决策过程中，包括标识、用户/组成员资格、应用程序、设备、网络、位置和实时风险评分

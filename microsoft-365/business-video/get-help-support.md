@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何为 Microsoft 365 商业版订阅获取在线或电话支持。 必须是企业订阅的管理员才能获得支持。
-ms.openlocfilehash: e224b5a6224dc182d36a99f0b7943a586c64b08a
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 965038e883378aa754a5a4b3957644340feaca8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988603"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179723"
 ---
 # <a name="get-support"></a>获取支持
 
@@ -48,9 +48,9 @@ ms.locfileid: "59988603"
 
 可通过在线发起服务请求节省时间。我们将帮助你查找解决方案，或请技术支持人员与你联系。
 
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a> 的管理中心。 如果收到消息，显示无权访问此页或执行此操作，那么则应该不是管理员。有关详细信息，请参阅 [谁在我的公司中拥有管理员权限？](admin-center-overview.md#who-has-admin-permissions-in-my-business)。
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a> 的管理中心。如果收到消息，显示无权访问此页或执行此操作，那么则应该不是管理员。有关详细信息，请参阅[谁在我的公司中拥有管理员权限？](admin-center-overview.md#who-has-admin-permissions-in-my-business)。
 2. 在页面右下角，选择 **帮助和支持**。
-3. 在文本框中键入问题或关键字。 如果收到下拉列表，请选择最接近问题的列表，或继续键入问题，然后按 **Enter 键**。
+3. 请将问题或关键字键入到文本框中。如果收到下拉列表，请选择最接近问题的列表，或继续键入问题，然后按 **Enter 键**。
 4. 如果结果没有帮助，请在底部选择 **联系支持人员**。
 5. 输入问题的说明（如有需要），确认联系号码和电子邮件地址，选择首选联系方式，然后选择 **“与我联系”**。 预期的等待时间在 **联系支持人员** 窗格中指示。
 
@@ -82,7 +82,7 @@ ms.locfileid: "59988603"
 
 通过小型企业专家提供的专家建议充分利用订阅。
 
-Microsoft 365 商业助手专为小型企业设计，从加入到日常使用，小型企业专家将全天候帮助你和员工发展业务。 若要了解详细信息，请参阅[商业助手](../admin/misc/business-assist.md)。
+Microsoft 365 商业助手专为小型企业设计，从加入到日常使用，小型企业专家将全天候帮助你和员工发展业务。如需了解更多信息，请参阅[商业助手](../admin/misc/business-assist.md)。
 
 ::: moniker-end
 
@@ -164,7 +164,7 @@ Microsoft 365 商业助手专为小型企业设计，从加入到日常使用，
 
 ### <a name="open-an-online-request"></a>开启在线请求
 
-可通过发起在线服务请求节省时间。 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>，选择“**支持**”\>“**新建服务请求**”。
+通过在线发起服务请求节省时间。在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>内，选择“**支持**”\>“**新建服务请求**”。
 
 ### <a name="call-support"></a>致电支持人员
 
@@ -232,7 +232,7 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 
 辅助支持选项仅面向订阅 Office 365 Germany 的组织中的管理员提供。如果你是在工作单位或学校中使用 Office 365 Germany，但不是管理员，则仍然可以在社区论坛中或通过联系管理员或 IT 部门获得支持。
 
-- **开启在线请求** 可通过发起在线服务请求节省时间。 在管理中心中，选择“**支持**”\>“**新建服务请求**”。 我们将帮助你找到解决方案，或请专员通过电子邮件或电话与你联系。
+- **开启在线请求。** 通过在线发起服务请求节省时间。在管理中心内，选择“**支持**”\>“**新建服务请求**”。我们将帮助你找到解决方案，或请专家通过电子邮件或电话与你联系。
 
 - **致电支持人员。** 欢迎来电。管理员应在致电时准备好提供帐户详细信息。
 

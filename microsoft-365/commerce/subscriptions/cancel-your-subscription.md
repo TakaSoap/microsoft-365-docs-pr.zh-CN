@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 如果你的用户的许可证少于 25 个，则你可以在管理中心取消 Microsoft 365 商业版试用或付费订阅。
 ms.date: 09/16/2021
-ms.openlocfilehash: 932cac44b9bf1b8632116d544cf4b33c0cb19a27
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 942953f586a65659609660363593c0f6e86c8ca6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59481032"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204571"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -43,11 +43,11 @@ ms.locfileid: "59481032"
 
 ## <a name="before-you-begin"></a>开始之前
 
-你必须是全局管理员或帐单管理员才能执行本文中的任务。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+你必须是全局管理员或帐单管理员才能执行本文中的任务。有关详细信息，请参阅“[关于管理员角色](../../admin/add-users/about-admin-roles.md)”。
 
 ## <a name="steps-to-cancel-your-subscription"></a>取消订阅的步骤
 
-如果之前添加了自己的域名来使用订阅，则必须在取消订阅前删除此域。 有关详细信息，请参阅 [删除域](../../admin/get-help-with-domains/remove-a-domain.md)。
+如果你之前添加了自己的域名以用于订阅，则必须在取消订阅前删除此域。有关详细信息，请参阅[删除域](../../admin/get-help-with-domains/remove-a-domain.md)。
 
 ::: moniker range="o365-worldwide"
 
@@ -67,13 +67,13 @@ ms.locfileid: "59481032"
 
 ::: moniker-end
 
-2. 找到要取消的订阅。 选择三个点（更多操作），然后选择“**取消订阅**”。
+2. 找到要取消的订阅。选择三个点（更多操作），然后选择“**取消订阅**”。
 
 3. 在“**取消订阅**”窗格中，选择取消原因。可选择提供任何反馈。
 
 4. 选择“**保存**”。
 
-你的订阅现显示为“**禁用**”状态，且在删除之前功能缩减。 若要深入了解在取消付费 Microsoft 365 商业版订阅后会发生什么情况，请参阅 [我的 Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
+你的订阅现将显示为“**已禁用**”状态，且将在删除之前使用缩减功能。若要深入了解在取消已付费的 Microsoft 365 商业版订阅后会发生什么情况，请参阅 [我的 Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
 
 > [!NOTE]
 > 如果显式删除订阅，则它将跳过过期和禁用阶段，而且会立即删除 SharePoint Online 数据和内容（包括 OneDrive）。

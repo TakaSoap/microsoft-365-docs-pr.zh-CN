@@ -9,15 +9,15 @@ ms.collection:
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
 ms.custom: seo-marvel-jun2020
-localization_priority: Priority
+ms.localizationpriority: high
 description: 了解金融服务机构如何通过使用 Microsoft 365 和 Teams 来维持财务安全合规性并高效协作。
 f1.keywords: NOCSH
-ms.openlocfilehash: 0e3fada6a74776e4edf2c8c41ef9026ce17871ad
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 073f24bc751bcb9f11a415d4ef142172fd5387ed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170875"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207519"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -83,7 +83,7 @@ Teams 可提供一个协作空间来安全地存储敏感的客户端数据，�
 
 **Microsoft 365 组命名策略** 有助于确保 Microsoft 365 组和团队根据公司策略进行命名。 如果不适合，名称可能会有问题。 例如，如果名称未正确应用，员工可能不知道与哪些团队合作或共享信息。 组命名策略（包括支持基于前缀/后缀的策略和自定义屏蔽词）可强制使用良好的“安全机制”，并防止使用特定字词，例如保留词或不恰当的术语。
   
-**Microsoft 365 组过期策略** 有助于确保 Microsoft 365 组和团队的保留时间不会超过组织所需的时间。 此功能可帮助避免两个关键信息管理问题：
+**Microsoft 365 组过期策略** 有助于确保 Microsoft 365 组和团队的保留时间不会超过组织所需的时间。此功能有助于防止出现两个关键信息管理问题：
 
 * 不需要或不使用的团队数量剧增。
 * 数据保留期超出了组织需要或使用的期限（依法保留/保存情况除外）。
@@ -256,7 +256,7 @@ Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 �
  
 根据请求，如果组织需要，Microsoft 将提供一份符合 SEC 17a-4 的认证信。
 
-此外，这些功能还可帮助 Microsoft 365 满足 **美国商品期货交易委员会** 的 [CFTC 条例 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) 和 **金融业监管局** 的 [FINRA 条例系列 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) 的存储要求。 总体而言，这些条例代表了全球范围内针对金融机构保留记录最具规范性的指南。
+此外，这些功能还可帮助 Microsoft 365 满足 **美国商品期货交易委员会** 的 [CFTC 条例 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) 和 **金融业监管局** 的 [FINRA 条例系列 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) 的存储要求。总体而言，这些条例代表了全球范围内针对金融机构保留记录的最具规范性的指南。
 
 有关 Microsoft 365 遵循 SEC 条例 17a-4 及其他法规的附加详细信息，请参阅[由 Cohasset Associates 发起的 Office 365 Exchange Online SEC 17a-4(f) / CFTC 1.31(c)-(d) 评估](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)。
 
@@ -284,7 +284,7 @@ Microsoft 365 中的信息屏障支持 Teams 中的对话和文件。 他们可�
 
 金融机构通常需要在其组织内建立和维护监管功能，以监督员工活动，并帮助其遵守适用的证券法。具体而言，FINRA 制定了这些监督要求:
  
-* [FINRA 条例 3110（监督）](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110)要求公司将监督程序 (WSP) 写入其员工的监督活动及其参与的业务类型。 除其他要求外，程序必须包括：
+* [FINRA 条例 3110（监督）](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110)要求公司制定书面监督程序 (WSP)，以监督其员工及其参与的业务类型。除了其他要求，此程序必须包括：
    - 监察监督人员
    - 审查公司的投资银行业务、证券业务、内部通信和内部调查
    - 审查内部交易事务

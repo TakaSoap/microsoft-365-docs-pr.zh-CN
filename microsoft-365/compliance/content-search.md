@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用合规中心中的内容搜索电子数据展示工具，搜索各种 Microsoft 365 服务中的内容。
-ms.openlocfilehash: beee298e18fd46adfc11925de51274a60328a3a5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 873a6e10117f1573b4679c14f054dd15c2c16949
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59200614"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175367"
 ---
 # <a name="create-a-content-search"></a>创建内容搜索
 
@@ -45,7 +45,7 @@ ms.locfileid: "59200614"
 
 ## <a name="create-and-run-a-search"></a>创建并运行搜索
 
-若要访问 Microsoft 365 合规中心的“**内容搜索**”页面（以运行搜索和预览并导出结果），管理员、合规专员或电子数据展示管理员必须是 Microsoft 365 合规中心的电子数据展示管理员角色组中的成员。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
+若要访问 Microsoft 365 合规中心的“**内容搜索**”页面（以运行搜索和预览并导出结果），管理员、合规专员或电子数据展示管理员必须是 Microsoft 365 合规中心的电子数据展示管理员角色组中的成员。有关详细信息，请参阅 [分配电子数据展示权限](assign-ediscovery-permissions.md)。
   
 1. 转到 <https://compliance.microsoft.com>，并使用已分配相应权限的帐户凭据进行登录。
 
@@ -83,7 +83,7 @@ ms.locfileid: "59200614"
       > [!NOTE]
       > 为了帮助减少因海量关键字列表导致的问题，已将关键字列表中的最大行数限制为 20 行。
 
-   3. 可以添加搜索条件来缩小搜索范围并返回更精确的结果集。 每个条件向开始搜索时创建和运行的搜索查询添加一个子句。 可通过使用功能类似于 **AND** 运算符的逻辑运算符 (**c:c**) 在逻辑上将条件连接至关键字查询（在关键字框中指定）。 这意味着，项必须满足关键字查询和要在结果中包括的一个或多个条件。 这就是条件如何帮助缩小结果范围的原理。 有关可在搜索查询中使用的条件的列表和说明，请参阅[搜索条件](keyword-queries-and-search-conditions.md#search-conditions)。
+   3. 也可以添加搜索条件以缩小搜索范围并返回更精确的结果集。每个条件可以将一个子句添加到开始搜索时创建并运行的搜索查询中。条件在逻辑上通过一个与 **AND** 运算符功能类似的逻辑运算符 (**c:c**) 连接到关键字查询 (在关键字框中指定)。这意味着项目需要同时满足关键字查询以及一个或多个条件才能出现在结果中。这就是条件帮助缩小结果范围的原理。有关可在搜索查询中使用的条件的列表和说明，请参阅 [搜索条件](keyword-queries-and-search-conditions.md#search-conditions)。
 
 7. 查看搜索设置（并在必要时进行编辑），然后提交搜索以开始搜索。
   

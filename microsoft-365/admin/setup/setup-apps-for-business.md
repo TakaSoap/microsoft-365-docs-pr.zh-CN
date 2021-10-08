@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解如何设置 Microsoft 365 商业应用版订阅。
-ms.openlocfilehash: a40c623448b8af526be0ef16be15efcde22aedca
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: e33bc36170200e5650b09bfcb51015ad301f4140
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773140"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188729"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>设置 Microsoft 365 商业应用版
 
@@ -104,7 +105,7 @@ Microsoft 轻松实现联机存储文件。若要了解最适合企业的存储�
   
 1. 在计算机上使用文件资源管理器打开 OneDrive。 或者在 [Office 365](https://www.office.com) 中，通过应用启动器打开“**OneDrive**”。
 
-2. 查看并上传个人文件，或共享文档或文件夹，方法是选择“**共享**”，然后邀请他人查看文档或向他们发送链接。 若要了解详细信息，请参阅[共享 OneDrive 文件和文件夹](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#OS_Type=OneDrive_-_Business)。
+2. 查看并上传个人文件，或共享文档或文件夹，方法是选择“**共享**”，然后邀请他人查看文档或向他们发送链接。如需了解更多信息，请参阅 [共享 OneDrive 文件和文件夹](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#OS_Type=OneDrive_-_Business)。
   
 请参阅[将文件上传到库中](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0)，了解详细信息。
   

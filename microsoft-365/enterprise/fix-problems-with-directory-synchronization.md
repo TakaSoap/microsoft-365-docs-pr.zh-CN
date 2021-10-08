@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: 介绍 Office 365 中目录同步问题的常见原因，并提供一些方法帮助进行故障诊断和解决这些问题。
-ms.openlocfilehash: 27bbe07be43c7b04b7e74f1cc600df6c1409e372
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dba6626ead648928186f8fbeac646a2b52206bc0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196817"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208273"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>修复 Microsoft 365 的目录同步问题
 
@@ -36,7 +36,7 @@ ms.locfileid: "59196817"
 
 发生错误的第一个迹象是 Microsoft 365 管理中心的 DirSync 状态磁贴指示存在问题。
   
-你还会收到来自 Microsoft 365 的邮件（发送到备用电子邮件地址和管理员电子邮件地址），指示租户遇到目录同步错误。 有关详细信息，请参阅[识别 Microsoft 365 中的目录同步错误](identify-directory-synchronization-errors.md)。
+你还会收到来自 Microsoft 365 的邮件（发送到备用电子邮件地址和管理员电子邮件地址），指示租户遇到目录同步错误。有关详细信息，请参阅[识别 Microsoft 365 中的目录同步错误](identify-directory-synchronization-errors.md)。
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>如何获取 Azure Active Directory Connect 工具？
 
@@ -64,7 +64,7 @@ ms.locfileid: "59196817"
 - [使用 Azure AD Connect 同步实施密码哈希同步](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>我看到一个警报，指示超出对象配额
-- 我们具有内置的对象配额以帮助保护服务。 如果你的目录中有太多需要同步到 Microsoft 365 的对象，你必须[联系商业版产品支持部门](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)以增加配额。
+- 我们设置了内置对象配额来帮助保护服务。如果你的目录中有太多对象需要同步到 Microsoft 365，则必须[联系商业版产品支持部门](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)以增加你的配额。
 
 ### <a name="i-need-to-know-which-attributes-are-synchronized"></a>我需要知道同步了哪些属性
 - 你可以[就在这里](https://go.microsoft.com/fwlink/p/?LinkId=396719)找到在本地和云之间同步的所有属性的列表。

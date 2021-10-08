@@ -9,14 +9,14 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: 使用REST API创建请求，以使用训练的文档理解模型对整个文件夹进行分类。
-ms.openlocfilehash: 44e1969628fb61b797f59a7378b95403c94dda8a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: ea5748b5eb376872738d30b142927314abfe9d3e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777070"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186869"
 ---
 # <a name="create-folder-classification-request"></a>创建文件夹分类请求
 
@@ -64,7 +64,7 @@ POST /_api/machinelearning/workItems HTTP/1.1
 
 | 名称   | 类型  | 说明|
 |--------|-------|------------|
-|StatusCode |int |HTTP 状态代码。 如果不是 200 或 201，则 API 应该已失败。|
+|StatusCode |int |HTTP 状态代码。如果不是 200 或 201，则 API 应该已失败。|
 |ErrorMessage |string |将模型应用到文档库时告知错误的错误消息。|
 
 ## <a name="examples"></a>示例

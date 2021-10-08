@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkMAC
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: a6d78ea9b96bb4967ef41471cd039a4c245b4aa1
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: ec138414078d18915c26755867d2f1a792573cfe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400146"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189449"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -96,7 +96,7 @@ ms.locfileid: "59400146"
 
 - 虽然可以选择从上次修改项目时开始保留期的选项，但始终使用 **从项目创建时** 的值。 对于已编辑的邮件，将保存一份带有原始时间戳的原始邮件副本，以标识创建此预编辑邮件的时间，并且该编辑后邮件具有较新的时间戳。
 
-- 为 **Teams 频道消息** 位置选择“**编辑**”时，你可能会看到不属于团队的 Microsoft 365 组。 不要选择这些组。
+- 为 **Teams 频道消息** 位置选择“**编辑**”时，你可能会看到不属于团队的 Microsoft 365 组。
 
 - 在为 Teams 聊天位置选择“**编辑**”时，可能看到来宾和非邮箱用户。 保留策略并非专为这些用户设计，因此请不要选择他们。
 
@@ -132,7 +132,7 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
     > [!IMPORTANT]
     > 虽然可以创建仅限于 Yammer 用户邮件的保留策略，但此位置的保留策略可以从 Yammer 应用中删除所有社区成员的社区邮件。
     > 
-    > 如果选择此选项，并且保留策略将配置为删除用户邮件，请确保你已了解这一含义。 有关详细信息，请参阅 [Yammer 如何使用保留](retention-policies-yammer.md#how-retention-works-with-yammer)。
+    > 如果选择此选项，并且保留策略将配置为删除用户邮件，请确保你已了解这一含义。如需了解更多信息，请参阅 [Yammer 保留策略简介](retention-policies-yammer.md#how-retention-works-with-yammer)。
     
     默认情况下，将选中所有社区和用户，但你可以通过指定要包括或排除的社区和用户来优化此设置。
     
@@ -190,7 +190,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Exchange 电子邮件和 Exchange 公用文件夹的配置信息
 
-通过在邮箱级别应用保留设置，**Exchange 电子邮件** 位置支持用户的电子邮件、日历和其他邮箱项的保留。 还支持共享邮箱。
+通过在邮箱级别应用保留设置，**Exchange 电子邮件** 位置支持用户的电子邮件、日历和其他邮箱项的保留。还支持共享的邮箱。
 
 将保留设置应用于 **所有收件人** 时，将包括所有 [非活动邮箱](create-and-manage-inactive-mailboxes.md)。 但是，如果更改此默认值并配置 [特定包含或排除](#a-policy-with-specific-inclusions-or-exclusions)，则不支持非活动邮箱，并且不会在这些邮箱中应用或排除保留设置。
 
@@ -232,7 +232,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 ### <a name="configuration-information-for-skype-for-business"></a>Skype for Business 的配置信息
 
-与其他位置不同，无法将 Skype 位置的状态切换为自动包含所有用户。 相反，当您打开该位置时，您必须选择 **“编辑”** 选项以手动选择要保留其对话的用户：
+与其他位置电子邮件不同，将 Skype 位置的状态切换为“开”并不能添加所有用户，但启用相应位置后，就必须选择“**编辑**”选项，才能手动选择要保留哪些用户的对话：
 
 ![为保留策略编辑 Skype 位置。](../media/skype-location-retention-policies.png)
 
@@ -292,7 +292,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>包含或排除特定位置、用户或组的策略
 
-注意，当使用可选配置将保留设置搜索范围缩小到特定用户、特定 Microsoft 365 组或特定网站时，才需要注意每个策略的限制。 有关详细信息，请参阅《[保留策略和保留标签策略的限制](retention-limits.md)》。 
+注意，当使用可选配置将保留设置搜索范围缩小到特定用户、特定 Microsoft 365 组或特定网站时，才需要注意每个策略的限制。如需了解更多信息，请参阅[保留策略和保留标签策略的限制](retention-limits.md)。 
 
 若要使用可选配置限定保留设置的范围，请确保该位置的“**状态**”为“**开启**”，然后使用链接来包含或排除特定用户、Microsoft 365 组或者网站。
 

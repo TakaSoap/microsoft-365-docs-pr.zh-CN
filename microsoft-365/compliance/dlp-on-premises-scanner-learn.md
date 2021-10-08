@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 本地扫描仪的数据丢失防护扩展了对文件活动的监视以及针对这些文件的安全操作，可扩展到本地文件共享和 SharePoint 文件夹和文档库。通过 Azure 信息保护 （AIP） 扫描仪扫描和保护文件
-ms.openlocfilehash: c59c6b90f6c219528cbff8a4aadc6472a48ecd23
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c696d4c4e8504d07ce69554c6ff52f264b8ba491
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175550"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207339"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>了解本地扫描程序Microsoft 365数据丢失防护
 
@@ -56,7 +56,7 @@ DLP 本地扫描仪通过以下四种方法之一来检测文件：
 
 |操作 |说明  |
 |---------|---------|
-|**阻止这些用户访问存储在本地扫描仪中的文件 - 每个人** | 如果强制执行，此操作将阻止访问除内容所有者、最后一个修改该项目的帐户和管理员之外的所有帐户。 为此，可在文件级别删除 NTFS/SharePoint 权限的所有帐户，文件所有者、存储库所有者（在 [设置存储库所有者](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) 设置的内容扫描作业中）、最后一次修改（只能在 SharePoint 中标识）和管理员。也会向扫描仪帐户授予该文件的 <2> <2> <3>操作权限。|
+|**阻止这些用户访问存储在本地扫描仪中的文件 - 每个人** | 强制执行后，此操作将阻止访问除内容所有者、最后一次修改项目的账户和管理员之外的所有账户。为此，可在文件级别删除 NTFS/SharePoint 权限的所有账户，除了文件所有者、存储库所有者（在内容扫描作业中的[设置存储库所有者](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview)设置中设置）、最后一次修改者（只能在 SharePoint 中标识）和管理员。也会向扫描仪帐户授予该文件的 FC 权限。|
 |**阻止这些用户访问存储在本地扫描仪中的文件 - 阻止组织范围的（公共）访问**    |强制使用时，此操作从文件访问控制列表 （ACL） 中删除 **_Everyone_*_、_*_NT AUTHORITY\经过身份验证的用户_*_和 _*_Domain Users_** SIDs。 只有已明确授予文件或父文件夹权限的用户和组才能访问该文件。|
 |**设置对文件的权限**|强制使用时，此操作会强制文件继承其父文件夹的权限。 默认情况下，只有在父文件夹的权限比文件上已有的权限更加严格时，才强制实施此操作。 例如，如果文件的 ACL 设置为仅允许 **_特定用户_*_，并且父文件夹配置为允许 _*_域用户_*_ 组，则该文件不会继承父文件夹权限。可通过选择 _*"继承"来覆盖此行为，即使父权限在管理** 限制。|
 |**从不正确的位置删除文件**|强制安装后，此操作用 .txt 扩展名替换原始文件，将原始文件的副本隔离文件夹中。 

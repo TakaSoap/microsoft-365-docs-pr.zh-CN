@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: 实施 Microsoft 应用治理功能来治理你的应用。
-ms.openlocfilehash: 379da2e2ff894b2f6355c14db93b339518dfca02
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ca1a77c4f5a1543a000b563dde98238136b3115d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59171074"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189545"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Microsoft Cloud App Security（预览版）的应用治理加载项
 
@@ -50,7 +50,7 @@ The scale of ongoing cybersecurity incidents affecting large enterprises and sma
 
 ## <a name="a-first-glimpse-at-app-governance"></a>应用治理概览
 
-要查看应用治理仪表板，请转到 [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance)。 请注意，若要查看应用治理数据，你的登录帐户必须具有其中一个[管理员角色](app-governance-get-started.md#administrator-roles)。
+如需查看应用治理仪表板，请转到 [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance)。请注意，若要查看任何应用治理数据，你的登录帐户必须具有其中一个[管理员角色](app-governance-get-started.md#administrator-roles)。
 
 ## <a name="app-governance-integration-with-azure-ad-and-microsoft-cloud-app-security"></a>应用治理与 Azure AD 和 Microsoft Cloud App Security 的集成
 

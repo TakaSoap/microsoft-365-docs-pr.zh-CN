@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何通过关闭或打开定期计费来续订大多数 Microsoft 365 商业版订阅。
 ms.date: 05/04/2021
-ms.openlocfilehash: ee39c45529c4dbfa54ff0a12fcfe19d29bdef025
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a2f43433c883a5380f4f4f92921bc99e5bf9effb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170709"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188429"
 ---
 # <a name="renew-microsoft-365-for-business"></a>续订 Microsoft 365 商业版
 
@@ -71,7 +71,7 @@ ms.locfileid: "59170709"
 
     > [!NOTE]
     >
-    > - 只能更改活动订阅的“**定期计费**”设置。 如果你的订阅已过期或处于禁用状态，则你需要 [重新激活](reactivate-your-subscription.md)它，然后才能打开或关闭“**定期计费**”。
+    > - 只能为活动订阅更改“**定期计费**”设置。如果你的订阅已过期或处于禁用状态，则你需要 [重新激活它](reactivate-your-subscription.md)，然后才能打开或关闭“**定期计费**”。
     > - 关闭“**定期计费**”后，不会取消订阅。 如果要保持订阅有效，则必须手动支付帐单。
     > - 如果关闭“**定期计费**”，订阅将保持活动状态，直至到期。 可在“订阅详细信息”页面的“**订阅和付款设置**”部分中查看到期日。
     > - 若要了解如何立即取消订阅，请参阅[取消订阅](cancel-your-subscription.md)。
@@ -79,6 +79,6 @@ ms.locfileid: "59170709"
 ## <a name="related-content"></a>相关内容
 
 [重新激活订阅](reactivate-your-subscription.md) （文章）\
-[我的订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md) （文章）\
+[我的订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)（文章）\
 [在产品密钥密钥](../enter-your-product-key.md) （文章）\
 [购买 Microsoft 365 商业版的试用版](../try-or-buy-microsoft-365.md) （文章）

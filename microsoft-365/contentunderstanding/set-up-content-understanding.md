@@ -12,14 +12,14 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkMAC
 search.appverid: MET150
-localization_priority: Priority
+ms.localizationpriority: high
 description: 设置 SharePoint Syntex
-ms.openlocfilehash: 2f77176e2bfd90b4f912379b3b2dcf15b62c7cf4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 50a38a172a2904a649d4f4c31aa293c3c085bd31
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170616"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202927"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -96,7 +96,7 @@ ms.locfileid: "59170616"
 
     1. 对于 **站点名称**，键入要为内容中心站点提供的名称。
     
-    1. **站点地址** 将显示站点的 URL，具体取决于所选择的站点名称。 若想改变它，请点击 **编辑**。
+    1. **站点地址** 将显示站点的 URL，具体取决于所选择的站点名称。如果想要更改它，请单击“**编辑**”。
 
        > [!div class="mx-imgBorder"]
        > ![创建内容中心。](../media/content-understanding/admin-cu-create-cc.png)</br>
@@ -121,7 +121,7 @@ ms.locfileid: "59170616"
 
 3. 从下拉菜单中选择“**应用**”。
 
-4. 选择“**显示 SharePoint Syntex 相关应用**”。 在“**应用**”下，确保“**面向 SharePoint Syntex 的 Common Data Service**”、“**SharePoint Syntex**”和“**SharePoint Syntex - SPO 类型**”都已选中。
+4. 选择 **显示 SharePoint Syntex 的应用**。在“**应用**”下，确保已选择 “**面向 SharePoint Syntex 的 Common Data Service**”、“**SharePoint Syntex**”和“**SharePoint Syntex - SPO 类型**”。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 365 管理中心的 SharePoint Syntex 许可证。](../media/content-understanding/sharepoint-syntex-licenses.png)

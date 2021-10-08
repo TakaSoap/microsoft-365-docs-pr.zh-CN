@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64957adeb242d14b2f4c986d3cffc282379c93f3
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: ba6e8e44a3f41bcd64257faf62c597d3b019e359
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444135"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206177"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -167,7 +167,7 @@ ms.locfileid: "59444135"
 
 - 组织中的任何人（所有租户成员）。此设置不包括来宾帐户。
 
-- 所有经过身份验证的用户。 选择前，请确保你了解此设置的相关[要求和限制](#requirements-and-limitations-for-add-any-authenticated-users)。
+- 任何经过身份验证的用户。选择前，请确保你了解此设置的相关[要求和限制](#requirements-and-limitations-for-add-any-authenticated-users)。
 
 - Azure AD 中的任何特定用户或启用了电子邮件的安全组、通讯组、或 Microsoft 365 组（[旧称为“Office 365 组”](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。 Microsoft 365 组可以有静态或[动态成员资格](/azure/active-directory/users-groups-roles/groups-create-rule)。 请注意，不能使用[来自 Exchange 的动态通讯组](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups)，因为此组类型不会同步到 Azure AD，并且不能使用未启用电子邮件的安全组。
 
@@ -273,7 +273,7 @@ ms.locfileid: "59444135"
 
 当这些选项中的任何一个应用于电子邮件时，都会加密电子邮件且收件人必须经过身份验证。然后，收件人自动拥有受限制的使用权限:
 
-- **不转发**: 收件人无法转发、打印或复制该邮件。 例如，在 Outlook 客户端中，“转发”按钮不可用，“另存为”和“打印”菜单选项也不可用，并且你不可在“收件人”、“抄送”和“密件抄送”框中添加或更改收件人。
+- **请勿转发**：收件人无法转发电子邮件、打印电子邮件或丛中复制。例如，在 Outlook 客户端中，“转发”按钮将不可用，“另存为”和“打印”菜单选项也将不可用，并且你不可在“收件人”、“抄送”和“密件抄送”框中添加或更改收件人。
     
     有关此选项工作方式的更多信息，请参阅 [电子邮件的 “不转发” 选项](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)。
 
@@ -335,7 +335,7 @@ ms.locfileid: "59444135"
 
 4. 在“**分配权限**”窗格上，选择“**添加特定电子邮件地址或域**”。
 
-5. 在文本框中，输入另一组织中的域的名称，例如 **fabrikam.com**。 然后，选择“**添加**”。
+5. 在文本框中，输入另一组织中的域名，例如 **fabrikam.com**。然后选择“**添加**”。
 
 6. 选择“**选择权限**”。
 
@@ -361,7 +361,7 @@ ms.locfileid: "59444135"
 
 6. 在“**选择权限**”窗格中，选择此用户（或组）的权限，然后选择“**保存**”。
 
-7. 返回到“**分配权限**”窗格，对要添加到此标签的每位用户（或组）重复步骤 3 到步骤 6。 然后单击“**保存**”。
+7. 返回到“**分配权限**”窗格，对要添加到此标签的每位用户（或组）重复步骤 3 到步骤 6。然后单击“**保存**”。
 
 8. 在 **加密** 页上，选择“**下一步**”并完成配置。
 
@@ -369,7 +369,7 @@ ms.locfileid: "59444135"
 
 此配置的优势在于，你无需指定用户、组或域即可加密电子邮件或文档。 内容仍将被加密，但你仍可指定使用权限、过期日期和脱机访问权限。
 
-仅在无需限制谁可打开受保护的文档或电子邮件时才使用此配置。 [有关此设置的详细信息](#requirements-and-limitations-for-add-any-authenticated-users)
+仅在无需限制可打开受保护的文档或电子邮件的人员时才使用此配置。[有关此设置的详细信息](#requirements-and-limitations-for-add-any-authenticated-users)
 
 1. 在“**加密**”页面上：对于“**立即分配权限还是让用户决定?**”，确保选中“**立即分配权限**”。
 
@@ -397,16 +397,16 @@ ms.locfileid: "59444135"
 
   - “搜索”、“电子数据展示”和 Delve 将无法用于加密文件。
   - DLP 策略适用于这些加密文件的元数据（包括保留标签信息），但不适用于这些文件的内容（如文件内的信用卡号）。
-  - 用户无法使用 Office 网页版打开加密文件。 如果在 SharePoint 和 OneDrive 中为 Office 文件启用了敏感度标签，则用户可使用 Office 网页版打开加密文件，但存在一些[限制](sensitivity-labels-sharepoint-onedrive-files.md#limitations)，包括已通过本地密钥应用的加密（称为“保留自己的密钥”(HYOK)）、[双密钥加密](#double-key-encryption)以及在不使用敏感度标签的情况下应用的加密。
+  - 用户无法使用 Office 网页版打开加密文件。如果在 SharePoint 和 OneDrive 中为 Office 文件启用了敏感度标签，则用户可使用 Office 网页版打开加密文件，但存在一些[限制](sensitivity-labels-sharepoint-onedrive-files.md#limitations)，包括通过本地密钥应用的加密（称为“保留自己的密钥”(HYOK)）、[双密钥加密](#double-key-encryption)以及在不使用敏感度标签的情况下应用的加密。
 
-- 如果与组织外部人员共享加密文档，可能需要创建来宾帐户并修改条件访问策略。 有关详细信息，请参阅《[与外部用户共享加密的文档](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)》。
+- 如果与组织外部人员共享加密文档，可能需要创建来宾帐户并修改条件访问策略。有关详细信息，请参阅[与外部用户共享加密文档](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)。
 
 - 当授权用户在其 Office 应用中打开加密文档时，将在其应用顶部的黄色消息栏中看到标签名称和说明。 当加密权限扩展到组织外部的人员时，请仔细查看打开文档时将在此消息栏中显示的标签名称和说明。
 
 - 对于多个用户同时编辑一个加密文件，这些用户必须都在使用 Office 网页版。  或者，对于 Windows 和 Mac，你已 [为使用敏感度标签加密的文件启用共同创作](sensitivity-labels-coauthoring.md)，并且用户具有 [所需最低版本](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) 的 Word、Excel 和 PowerPoint。 如果不是这种情况且文件已打开：
 
   - 在 Office 应用（Windows、Mac、Android 和 iOS）中，用户会看到一条“**文件正在使用中**”消息，其中包含签出该文件的用户的姓名。 然后，他们可查看只读副本或保存和编辑文件副本，并可在文件可用时收到通知。
-  - 在 Web 版 Office 中，用户会看到一则错误消息，其中指出他们可与其他人一起编辑文档。 然后，他们可选择“**在阅读视图中打开**”。
+  - 在 Office 网页版中，用户会看到一则错误消息，其中指出他们不能与其他人一起编辑文档。然后，他们可以选择“**在阅读视图中打开**”。
 
 - 已为加密文件禁用适用于 iOS 和 Android 的 Office 应用中的[自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)功能。 如果你尚未为[使用敏感度标签加密的文件启用共同创作](sensitivity-labels-coauthoring.md)，则对 Windows 和 Mac 上的加密文件也会禁用此功能。 用户会看到一条消息，其中指出文件具有受限权限且必须删除此权限才能启用“自动保存”。
 
@@ -416,8 +416,8 @@ ms.locfileid: "59444135"
 
 - Office 应用（Windows、Mac、Android 和 iOS）不支持对加密文件进行以下操作，并且用户将看到一则错误消息指出出现了错误。但是，可将 SharePoint 功能用作替代项：
 
-  - 查看、还原和保存之前版本的副本。 或者，在你[为列表或库启用和配置版本控制](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)后，用户可使用 Office 网页版执行这些操作。
-  - 更改文件的名称或位置。 或者，用户可在 SharePoint 中[对文档库中的文件、文件夹或链接重命名](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)。
+  - 查看、还原和保存以前版本的副本。或者，在你[为列表或库启用和配置版本控制](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)后，用户可使用 Office 网页版执行这些操作。
+  - 更改文件的名称或位置。或者，用户可在 SharePoint 中[对文档库中的文件、文件夹或链接重命名](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)。
 
 为了在已用敏感度标签加密的文件上获得更佳的协作体验，建议使用 [SharePoint 和 OneDrive中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)并使用 Web 版 Office。
 

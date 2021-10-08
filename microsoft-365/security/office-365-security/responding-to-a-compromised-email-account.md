@@ -14,18 +14,18 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 365 中的工具来识别并响应遭到入侵的电子邮件帐户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 193afd61509b7361ac18dd32d827182752fb61ed
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e2b38179556c8658cf6619e40f87bb803fec80e4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196452"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208382"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>响应遭到入侵的电子邮件帐户
 
@@ -61,7 +61,7 @@ ms.locfileid: "59196452"
 
 如果用户报告了上述任何症状，你应该进一步展开调查。 [Microsoft 365 Defender](https://security.microsoft.com) 和 Azure 门户提供了各种工具，可帮助你对疑似遭到入侵的用户帐户活动展开调查。
 
-- **Microsoft 365 Defender 门户内的统一审核日志**：通过筛选从可疑活动发生前到当前日期的日期范围内的结果来审阅可疑帐户的所有活动。 不要在搜索过程中筛选活动。
+- **Microsoft 365 Defender 门户内的统一审核日志**：通过筛选从可疑活动发生前到当前日期的日期范围内的结果来审阅可疑帐户的所有活动。不要在搜索期间筛选活动。
 
 - **EAC 中的管理员审核日志**：在 Exchange Online 中，可以使用 Exchange 管理中心 (EAC) 搜索和查看管理员审核日志中的条目。 管理员审核日志根据管理员和分配有管理员权限的用户执行的 Exchange Online PowerShell cmdlet 来记录特定操作。 管理员审核日志中的条目向您提供有关所运行的 cmdlet、所使用的参数、运行 cmdlet 的用户以及受影响的对象的相关信息。
 
@@ -101,7 +101,7 @@ ms.locfileid: "59196452"
 
 1. 在 <https://admin.microsoft.com> 打开 Microsoft 365 管理中心。
 
-2. 转到“**用户**”\>“**活动用户**”。 查找有问题的用户帐户，然后选择用户（行），无需选中复选框。
+2. 转到“**用户**”\>“**活动用户**”。找到有问题的用户帐户，然后选择该用户（行），而不选中复选框。
 
 3. 在出现的详细信息浮出控件中，选择“**邮件**”选项卡。
 
@@ -159,7 +159,7 @@ ms.locfileid: "59196452"
 
 2. 在 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户并执行以下步骤：
    1. 转到“**权限和角色**”\>“**电子邮件和协作角色**”\>“**角色**”。
-   2. 在 **权限** 页面上，在列表中选择每个角色组，然后在出现的详细信息浮出控件的“**成员**”部分查找用户帐户。 如果角色组包含该用户帐户，请执行以下步骤：
+   2. 在 **权限** 页面上，在列表中选择每个角色组，然后在出现的详细信息浮出控件的“**成员**”部分查找用户帐户。如果角色组包含用户账户，请执行以下步骤：
       1. 在“**成员**”部分中，单击“**编辑**”。
       2. 在出现的“**编辑选择成员**”浮出控件中，单击“**编辑**”。
       3. 在出现的 **选择成员** 浮出控件上，单击“**删除**”。

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: c6aede6ba25ebd7f28008e4c52450bd3e4b74c2d
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: eeeda9a41f35f6380d2d20adf80b00bc80ba4c4e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009453"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198765"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> 组织结构（如 SharePoint 中的文档集或库，或 Exchange 中的文件夹）的 [法规记录](records-management.md#records) 或默认标签不支持此方案。 这些方案需要 [已发布的保留标签策略](create-apply-retention-labels.md#step-2-publish-retention-labels)。
+> 组织结构（如 SharePoint 中的文档集或库，或 Exchange 中的文件夹）的 [法规记录](records-management.md#records) 或默认标签不支持此方案。这些方案需要[发布的保留标签策略](create-apply-retention-labels.md#step-2-publish-retention-labels)。
 
 [保留标签](retention.md)最强大的功能之一是能够将其自动应用于符合特定条件的内容。 此情况下，组织中的人员无需应用保留标签。 Microsoft 365 会代为操作。
   
@@ -44,7 +44,7 @@ ms.locfileid: "60009453"
 当内容包含敏感信息、关键字或可搜索属性，或者[可训练分类器](classifier-get-started-with.md)的匹配项时，可以自动将保留标签应用于内容。
 
 > [!TIP]
-> 使用可搜索的属性来标识 [Teams 会议记录](#microsoft-teams-meeting-recordings)。
+> 使用可搜索属性以识别 [Teams 会议录制](#microsoft-teams-meeting-recordings)和[应用了敏感度标签的项目](#identify-files-and-emails-that-have-a-sensitivity-label)。
 
 将基于以下条件自动应用保留标签的流程：
 
@@ -115,7 +115,7 @@ ms.locfileid: "60009453"
 
 若要编辑现有的自动应用策略，请将其选中以启动“编辑保留策略向导”，该向导可用于更改从第 2 步中选定的保留标签和的任何[符合条件的设置](#updating-retention-labels-and-their-policies)。
 
-使用自动应用标签策略标记内容后，无法通过更改内容或策略或新的自动应用标签策略自动删除或更改应用的标签。 有关详细信息，请参阅 [一次只能有一个保留标签](retention.md#only-one-retention-label-at-a-time)。
+使用自动应用标签策略标记内容后，无法通过更改内容或策略，或使用一个新的自动应用标签策略来自动删除或更改应用的标签。有关详细信息，请参阅[一次只能有一个保留标签](retention.md#only-one-retention-label-at-a-time)。
 
 ### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>配置自动应用保留标签的条件
 
@@ -150,7 +150,7 @@ ms.locfileid: "60009453"
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>将标签自动应用于包含特定类型敏感信息的内容
 
 > [!IMPORTANT]
-> 对于通过识别敏感信息自动应用的电子邮件，不支持将策略范围限定为包含或排除特定收件人；此策略配置仅支持"**所有收件人**"设置。 特定于此策略配置，**所有收件人** 均包括来自 Microsoft 365 组的邮箱。
+> 对于通过识别敏感信息自动应用的电子邮件，不支持将策略范围限定为包含或排除特定收件人；此策略配置仅支持“**所有收件人**”设置。特定于此策略设置，“**所有收件人**”包括来自 Microsoft 365 组的邮箱。
 > 
 > 此外，特定于此策略配置，如果选择"**Microsoft 365 组**"位置，则仅包括连接到 Microsoft 365 组的 SharePoint 站点，不包括来自 Microsoft 365 组的邮箱。
 
@@ -162,7 +162,7 @@ ms.locfileid: "60009453"
 
 选择策略模板后，可添加或删除任意类型的敏感信息，且可更改可信度级别和实例计数。在上一示例屏幕截图中，这些选项已更改，因此保留标签将仅在以下情况时自动应用：
   
-- 检测到的敏感信息类型具有至少 **个敏感信息类型的匹配准确度（即 [置信水平](sensitive-information-type-learn-about.md#more-on-confidence-levels)）和** 对一种敏感信息类型的 **置信度高**。 许多敏感信息类型都由多个模式定义，其中具有较高匹配准确度的模式需要发现较多证据（如关键字、日期或地址），而具有较低匹配准确度的模式需要较少的证据。 置信水平越低，内容越容易与条件匹配，且且有可能带来更多误报。
+- 检测到的敏感信息类型的匹配准确度（或 [可信度](sensitive-information-type-learn-about.md#more-on-confidence-levels)）至少对于两种敏感信息类型为 **中等可信度**，且对于一种敏感信息类型为 **高可信度**。许多敏感信息类型都是通过多个模式进行定义，其中模式的匹配准确度越高，需要发现的证据（如关键字、日期或地址）就越多，而模式的匹配准确度越低，需要发现的证据就越少。可信度越低，内容就越容易与条件匹配，但误报可能更多。
 
 - 内容包含 1 到 9 个这三种敏感信息类型的实例。 **到** 的默认值为 **任何值**。
 
@@ -198,7 +198,7 @@ ms.locfileid: "60009453"
 
 - 不支持后缀通配符搜索（如 `*cat`）或子字符串通配符搜索（如 `*cat*`）。 但是，支持前缀通配符搜索（如 `cat*`）。
 
-- 请注意，部分索引项可能会导致未对预期项目进行标记，或者在你使用 Not 运算符时不对你希望从标签中排除的项目进行标记。 有关详细信息，请参阅[内容搜索中的部分索引项](partially-indexed-items-in-content-search.md)。
+- 请注意，部分索引项可能会导致未对预期项目进行标记，或者在使用 NOT 运算符时不对预期要从标记中排除的项目进行标记。有关详细信息，请参阅[内容搜索中的部分索引项](partially-indexed-items-in-content-search.md)。
 
 
 示例查询：
@@ -258,6 +258,19 @@ ProgID:Media AND ProgID:Meeting
 
 大多数情况下，会议记录将保存到 OneDrive。但对于频道会议，它们将保存在SharePoint 中。
 
+##### <a name="identify-files-and-emails-that-have-a-sensitivity-label"></a>标识具有敏感度标签的文件和电子邮件
+
+若要标识应用了特定 [敏感度标签](sensitivity-labels.md)的 SharePoint 或 OneDrive 文件和 Exchange 电子邮件，请为 **关键字查询编辑器** 指定以下内容：
+
+```
+InformationProtectionLabelId:<GUID>
+```
+
+若要查找 GUID，请使用[安全与合规中心 PowerShell](/powershell/exchange/scc-powershell) 的 [Get-Label](/powershell/module/exchange/get-label) cmdlet：
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可训练分类器向内容自动应用标签
 
@@ -291,9 +304,9 @@ ProgID:Media AND ProgID:Meeting
 
 2. 运行以下命令：
     
-    ``` PowerShell
+    ```PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-   ```
+    ```
 
 ## <a name="updating-retention-labels-and-their-policies"></a>更新保留标签及其策略
 
