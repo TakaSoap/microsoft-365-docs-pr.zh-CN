@@ -7,7 +7,7 @@ ms.date: 6/23/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 本文提供了有关安全优化 Microsoft 365 网络连接的最新指南。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7aebf4e210c3e4feb94ec3c6deb6523e5742152c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ad7607fb03aee49fa86adaaf1e8970c864ea310
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201281"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212877"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 网络连接原则
 
@@ -58,7 +58,7 @@ Microsoft 365 最显著的体系结构功能之一（常常被网络架构师忽
 
 Microsoft 建议按照以下原则获取最佳的 Microsoft 365 连接和性能。 使用这些 Microsoft 365 连接原则管理流量，并在连接到 Microsoft 365 时获得最佳性能。
   
-网络设计中的主要目标是通过减少从您的网络到 Microsoft 全球网络、互连所有低延迟 Microsoft 数据中心的 Microsoft 公共主干网，以及遍布全球的应用程序入口点的往返时间 (RTT)，最大程度地降低延迟。 有关 Microsoft 全球网络的详细信息，请参阅 [Microsoft 构建其快速可靠的全球网络](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)。
+网络设计中的主要目标是通过减少从网络到 Microsoft 全球网络、互连所有低延迟 Microsoft 数据中心的 Microsoft 公共主干网，以及遍布全球的应用程序入口点的往返时间 (RTT)，最大程度地降低延迟。有关 Microsoft 全球网络的详细信息，请参阅 [Microsoft 如何构建其快速可靠的全球网络](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)。
   
 <a name="BKMK_P1"> </a>
 ### <a name="identify-and-differentiate-microsoft-365-traffic"></a>识别并区分 Microsoft 365 流量
@@ -155,7 +155,7 @@ Office 365 终结点代表一组不同的网络地址和子网。 终结点可�
 > [!NOTE]
 > 网络中的 Office 365 终结点的位置与 Microsoft 365 租户数据的位置不直接相关。 因此，客户应将 Microsoft 365 视为分布式全球服务，并且不应尝试根据地理条件阻止到 Office 365 终结点的网络连接。
   
-在以前关于如何管理 Microsoft 365 流量的指南中，我们将终结点分为两个类别：“**必需**”和“**可选**”。 过去，每个类别中的终结点需要不同的优化，具体取决于服务的关键程度，并且很多客户很难将采用相同网络优化的应用调整为适用于所有 Office 365 URL 和 IP 地址。
+在以前关于如何管理 Microsoft 365 流量的指南中，我们将终结点分为两个类别：“**必需**”和“**可选**”。过去，每个类别中的终结点需要不同的优化，具体取决于服务的关键程度，并且很多客户很难将采用相同网络优化的应用调整为适用于所有 Office 365 URL 和 IP 地址。
   
 在新模型中，终结点分为三种类别，“**优化**”、“**允许**”和“**默认**”，能够基于优先级帮助客户专注于网络优化工作，从而实现最佳性能改进和投资回报。 根据对网络质量、容量、场景的性能信封以及实现易用程度等方面的有效用户体验，将终结点在上述类别中进行了整合。 可采用相同方式，将推荐优化应用于给定类别中的所有终结点。
   
@@ -206,11 +206,11 @@ Microsoft 提供了一系列 Microsoft 365 安全功能，并提供了采用安�
   
 - **使用多重身份验证 (MFA)** MFA 向强密码策略中添加一层额外保护，方法是要求用户在正确输入密码后在其智能手机上确认电话呼叫、短信或应用通知。
 
-- **使用 Microsoft Cloud App Security** 配置策略来跟踪反常活动并做出应对。 使用 Microsoft Cloud App Security 设置警报，方便管理员查看反常或有风险的用户活动，如下载大量数据、多次登录尝试失败，或者来自未知或危险 IP 地址的连接。
+- **使用 Microsoft Cloud App Security** 配置策略来跟踪反常活动并做出应对。使用 Microsoft Cloud App Security 设置警报，方便管理员查看反常或有风险的用户活动，如下载大量数据、多次登录尝试失败，或者来自未知或危险 IP 地址的连接。
 
 - **配置数据丢失防护 (DLP)** DLP 可用于识别敏感数据并创建有助于防止用户意外或有意共享数据的策略。 DLP 可跨 Microsoft 365 服务进行工作，包括 Exchange Online、SharePoint Online 和 OneDrive，以便你的用户在不中断工作流的情况下保持合规。
 
-- **使用客户密钥箱** 作为 Microsoft 365 管理员，你可以使用客户密码箱来控制 Microsoft 技术支持工程师在帮助会话期间访问你数据的方式。 如果工程师需要访问您的数据以进行故障排除和解决问题，那么您可以使用客户锁箱批准或拒绝该访问请求。
+- **使用客户密码箱** 作为 Microsoft 365 管理员，你可以使用客户密码箱来控制 Microsoft 技术支持工程师在帮助会话期间访问你数据的方式。如果工程师需要访问你的数据以进行故障排除和解决问题，那么你可以使用客户密码箱批准或拒绝该访问请求。
 
 - **使用 Office 365 安全功能分数** 一种安全分析工具，可为你推荐可执行的操作以进一步降低风险。 安全功能分数会查看你的 Microsoft 365 设置和活动，并将它们与 Microsoft 建立的基线进行比较。 你将根据与最佳安全做法的一致程度获取分数。
 
@@ -226,7 +226,7 @@ Microsoft 提供了一系列 Microsoft 365 安全功能，并提供了采用安�
   - 降低公司广域网边缘的网络安全要求
   - 仍需要某些网络外围安全设备（例如，防火墙），但负载降低了
   - 确保 Microsoft 365 流量的本地出口
-- 可按照[增量优化](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt)章节中的说明逐步解决改进。 某些优化技术可提供更好的成本/收益率，具体取决于你的网络体系结构，并且应选择最适合你组织的优化。
+- 可按照[增量优化](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt)章节中的说明逐步解决改进。某些优化技术可提供更好的成本/收益率，具体取决于网络体系结构，并且应选择最适合组织的优化。
 
 有关 Microsoft 365 安全性和合规性的详细信息，请参阅文章 [Microsoft 365 安全中心](../security/index.yml)和 [Microsoft 365 合规中心](../compliance/index.yml)。
   

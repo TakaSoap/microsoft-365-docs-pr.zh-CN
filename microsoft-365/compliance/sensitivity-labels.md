@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: fa496e976f0d023960b6d2e633347931b7456ac3
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: cc83349a1c4fda3b95665ce13cb3e82bbf8610b3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401118"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192123"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -67,7 +67,7 @@ ms.locfileid: "59401118"
 
 - **将敏感度标签扩展到 Azure 权限中的资产**：当前预览版中打开此功能时，您可以将敏感度标签应用于资产，如 SQL 列、Azure Blob 存储中的文件等。 
 
-- **将灵敏度标签扩展到第三方应用程序和服务。** 借助 Microsoft 信息保护 SDK，第三方应用可读取敏感度标签和应用保护设置。
+- **将敏感度标签扩展到第三方应用程序和服务。** 使用 Microsoft 信息保护 SDK，则第三方应用程序可读取敏感度标签并应用保护设置。
 
 - **对内容进行分类，无需使用任何保护设置。** 你也可以简单地分配一个标签作为对内容进行分类的结果。 这将为用户提供分类到组织标签名称的直观映射，并且可以使用标签生成使用情况报告和查看敏感内容的活动数据。 根据此类信息，稍后随时可以选择应用保护设置。
 
@@ -81,7 +81,7 @@ ms.locfileid: "59401118"
 
 - **可自定义。** 根据组织和业务需求，你可以为组织中不同级别的敏感内容创建类别。 例如，个人、公共、常规、机密、高度机密。
 
-- **明文。** 由于标签以明文的方式存储在文件和电子邮件的元数据中，因此第三方应用和服务可以读取它，然后根据需要应用其自己的保护操作。
+- **清除文本。** 由于标签以明文的方式存储在文件和电子邮件的元数据中，因此第三方应用和服务可以读取它，然后根据需要应用其自己的保护操作。
 
 - **永久。** 由于标签存储在文件和电子邮件的元数据中，因此无论保存或存储在何处，该标签都会与内容一起漫游。 唯一的标签标识将成为应用和实施你配置的策略的基础。
 
@@ -114,7 +114,7 @@ ms.locfileid: "59401118"
     
     如果启用此功能，则无法为组和网站配置保护设置。 此标签配置不会导致自动标记文档或电子邮件，而是通过控制对存储内容的容器的访问来保护内容。 这些设置包括隐私设置、外部用户访问权限和外部共享，以及来自非托管设备的访问。
 
-- **在文件和电子邮件中自动应用标签，或推荐标签。** 选择如何识别要标记的敏感信息，系统可以自动应用标签，或者你可以提示用户应用你推荐的标签。 如果你推荐了标签，则在提示中将显示你选择的任何文本。 例如：
+- **将标签应用到文本和电子邮件，或推荐的标签内。** 你可以选择要标记的敏感信息类型，标签可以自动应用，也可以提示用户应用你推荐的标签。如果你推荐标签，则提示会显示你选择的任何文本。例如：
     
     ![提示分配所需的标签。](../media/Sensitivity-label-Prompt-for-required-label.png)
     
@@ -144,7 +144,7 @@ ms.locfileid: "59401118"
 
 ### <a name="label-priority-order-matters"></a>标签优先级（顺序非常重要）
 
-在管理中心创建敏感度标签时，这些标签会显示在“**标签**”页的“**敏感度**”选项卡的列表中。 此列表中的标签顺序至关重要，因为它反映了标签的优先级。 限制性最高的敏感度标签（如“高度机密”）需显示在此列表的 **底部**，限制性最低的敏感度标签（如“公开”）需显示在 **顶部**。
+如果在管理中心内创建敏感度标签，标签显示在 **“标签”** 页上 **“敏感度”** 选项卡中的列表内。此列表中的标签顺序非常重要，因为它反映了标签优先级。建议让限制最多的敏感度标签（如“高度机密”）显示在列表最 **下面**，并让限制最少的敏感度标签（如“公开”）显示在列表最 **上面**。
 
 可仅将一个敏感度标签应用于文档、电子邮件或容器等项目。 如果设置的选项需要用户提供将标签更改为较低分类的理由，理由可以是此列表的排序，因为它会标识较低分类。 但是，此选项不适用于共享其父标签优先级的子标签。
 
@@ -178,7 +178,7 @@ ms.locfileid: "59401118"
 
 配置标签策略时，可以执行以下操作：
 
-- **选择可查看标签的用户和组。** 可以将标签发布到任何特定用户或启用电子邮件的安全组、通讯组或 Microsoft 365 组（它们可以在 Azure AD 中具有[动态成员身份](/azure/active-directory/users-groups-roles/groups-create-rule)）。
+- **选择可查看标签的用户和组。** 可以将标签发布到 Azure AD 中任何特定用户或启用电子邮件的安全组、通讯组或 Microsoft 365 组（它们可以具有[动态成员身份](/azure/active-directory/users-groups-roles/groups-create-rule)）。
 
 - 为未标记文档和电子邮件以及新建容器 **指定默认标签**（在已 [为 Microsoft Teams、Microsoft 365 组和 SharePoint 网站启用敏感度标签](sensitivity-labels-teams-groups-sites.md) 时），然后现在 [为 Power BI 内容](/power-bi/admin/service-security-sensitivity-label-default-label-policy) 指定默认标签。 你可以为所有四种类型项目指定相同或不同的标签。 用户可以更改已应用的默认敏感度标签，以更好地匹配其内容或容器的敏感度。
     
@@ -256,7 +256,7 @@ ms.locfileid: "59401118"
 ### <a name="azure-information-protection-labels"></a>Azure 信息保护标签
 
 > [!NOTE]
-> Azure 门户中 Azure 信息保护标签的标签管理 **2021 年 3 月 31 日**。 有关详细信息，请参阅官方[弃用通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)。
+> Azure 门户中的 Azure 信息保护标签的标签管理将于 **2021 年 3 月 31 日** 弃用。有关详细信息，请参阅官方 [弃用通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)。
 
 如果租户尚未位于统一 [标识平台](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)，必须先激活统一标签，才能使用敏感度标签。 有关说明，请参阅 [Azure 信息保护标签迁移到统一敏感度标签](/azure/information-protection/configure-policy-migrate-labels)。 
 
