@@ -22,7 +22,7 @@ description: 深入了解适用于由世纪互联运营的 Office 365 的 Azure 
 monikerRange: o365-21vianet
 ms.openlocfilehash: 3235bf77ec8cd7be96910614bdde41fb60f9f556
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60199233"
@@ -117,7 +117,7 @@ ms.locfileid: "60199233"
     - 目标 = `[GUID].rms.aadrm.cn`（其中 GUID 为 RMS ID）
     - 优先级、权重、秒数、TTL = 默认值
 
-3. 将自定义域与 [门户中的租户](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains)。 这将在 DNS 中添加条目，这可能需要几分钟时间才能在向 DNS 设置添加该值后进行验证。
+3. 将自定义域与 [Azure 门户](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains) 中的租户关联。这会在 DNS 中添加一个条目，在将值添加到 DNS 设置后，可能需要几分钟才能进行验证。
 
 4. 使用相应的全局管理员凭据登录 Microsoft 365 管理中心，并添加域（例如， `contoso.cn`）供用户创建。 在验证过程中，可能需要其他 DNS 更改。 验证完成后，可创建用户。
 
@@ -171,7 +171,7 @@ Windows 上的 AIP 应用需要以下注册表项，用于指向 Azure China 的
 
 1. 登录到将运行扫描程序的 Windows Server 计算机。 使用具有本地管理员权限并有权写入 SQL Server 主数据库的帐户。
 
-1. 在关闭 PowerShell 的情况下开始。 如果之前已安装 AIP 客户端和扫描程序，请确保已停止 **AIPScanner** 服务。
+1. 在 PowerShell 关闭的情况下开始。如果之前已安装 AIP 客户端和扫描程序，请确保已停止 **AIPScanner** 服务。
 
 1. 使用“**以管理员身份运行**”选项打开 Windows PowerShell 会话。
 
@@ -217,7 +217,7 @@ Windows 上的 AIP 应用需要以下注册表项，用于指向 Azure China 的
 
     扫描程序现在有一个令牌可对 Azure AD 进行身份验证。 根据你在 Azure AD 中对 **Web 应用/API** 客户端密码的配置，此令牌的有效期为一年、两年或从不。 当令牌过期时，你必须重复此过程。
 
-1. 运行 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet，将扫描程序设置为在脱机模式下运行。 运行：
+1. 运行 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet，将扫描程序设置为在脱机模式下的功能。运行:
 
     ```powershell
     Set-AIPScannerConfiguration -OnlineConfiguration Off
@@ -242,7 +242,7 @@ Windows 上的 AIP 应用需要以下注册表项，用于指向 Azure China 的
     - 将扫描程序设置为在运行时排除 .msg 和 .tmp 文件
     - 将默认所有者设置为在运行扫描程序时要使用的帐户
 
-1. 使用 [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) cmdlet 定义要在内容扫描作业中扫描的存储库。 例如，运行：
+1. 使用 [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) cmdlet 定义要在内容扫描作业中扫描的存储库。例如，运行:
 
     ```powershell
     Add-AIPScannerRepository -OverrideContentScanJob Off -Path 'c:\repoToScan'
