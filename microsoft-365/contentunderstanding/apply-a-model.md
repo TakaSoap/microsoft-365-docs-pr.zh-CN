@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何将已发布的模型应用到 Microsoft SharePoint 中的文档SharePoint Syntex。
-ms.openlocfilehash: 23a885194a1bfa6c0f468188944dd00d309f3a09
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f8e6cc20b010df5deafe478bbd718946f328a6af
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194401"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245725"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中应用文档理解模型
 
@@ -38,7 +38,7 @@ ms.locfileid: "60194401"
 
 要将模型应用到 SharePoint 文档库，请执行以下操作：
 
-1. 在模型主页上的"将模型 **应用到库"磁贴上**，选择"**应用模型"。** 或者，在 **应用模型的地方部分** ，选择  **+添加库** 。
+1. 在模型主页上的"将模型 **应用到库"磁贴上**，选择"**应用模型"。** 或者，在 **应用模型的地方部分** ，选择 **+添加库**。
 
     ![Screenshot of Where the model is applied section with the Add library option highlighted.](../media/content-understanding/apply-to-library.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "60194401"
 
 1. 在文档库中，选择要由模型处理的文件和文件夹。
 
-2. 选择文件和文件夹后 **，"分类和提取** "将显示在文档库功能区中。 选择 **“分类和提取”**。
+2. 选择文件和文件夹后 **，"** 分类和提取"将显示在文档库功能区中。 选择 **“分类和提取”**。
 
       ![显示"分类和提取"选项的屏幕截图。](../media/content-understanding/extract-classify.png) 
 

@@ -22,7 +22,7 @@ description: 详细了解适用于 Android 的适用于由世纪互联运营的 
 monikerRange: o365-21vianet
 ms.openlocfilehash: 7351fb9c63250a0207d45f767a409e7953c93103
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60199245"

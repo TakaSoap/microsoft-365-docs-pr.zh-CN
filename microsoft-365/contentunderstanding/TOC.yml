@@ -78,25 +78,5 @@
       href: push-content-type-to-hub.md
     - name: 术语库报告
       href: term-store-analytics.md
-- name: REST API
-  items:
-    - name: 概述
-      href: rest-api/syntex-model-rest-api.md
-    - name: 创建模型
-      href: rest-api/rest-createmodel-method.md
-    - name: GetByUniqueId
-      href: rest-api/rest-getbyuniqueid-method.md
-    - name: GetByTitle
-      href: rest-api/rest-getbytitle-method.md
-    - name: 应用模型
-      href: rest-api/rest-applymodel-method.md
-    - name: 获取模型和库信息
-      href: rest-api/rest-getmodelandlibraryinfo.md
-    - name: UpdateModelSettings
-      href: rest-api/rest-updatemodelsettings-method.md
-    - name: BatchDelete
-      href: rest-api/rest-batchdelete-method.md
-    - name: 创建文件分类请求
-      href: rest-api/rest-createclassificationrequest.md
-    - name: 创建文件夹分类请求
-      href: rest-api/rest-createfolderclassificationrequest.md
+- name: 可扩展性
+  href: /sharepoint/dev/apis/syntex/syntex-model-rest-api.md

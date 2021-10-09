@@ -26,7 +26,7 @@ description: 了解更多关于由世纪互联运营的，旨在满足中国对�
 monikerRange: o365-21vianet
 ms.openlocfilehash: c8be22550ee4ff6b1281cd2cfabe94df2c0c56e0
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60195145"
@@ -57,9 +57,9 @@ Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该�
 
 |函数|可用性|
 |:-----|:-----|
-|自定义域  <br/> |管理员可以创建和/或使用通过中国特定的域提供商注册的自定义域。 如果没有自定义域名，则可以从域名注册机构处[如何购买域名](../get-help-with-domains/buy-a-domain-name.md)。 如果已经拥有一个域名，[查找域注册机构或 DNS 托管提供商](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> 此外，如果使用Office 365 SharePoint Online服务创建公共网站，中国 Internet 合规政策要求获得 Internet 内容提供商（ICP）编号。  **注意：** 自定义域名中的不允许的词不能进行自动验证。           |
-|订阅、帐单和技术支持  <br/> |由世纪互联提供。 有关如何联系支持人员的信息，请参阅[联系 Office 365 商业版支持人员](../../business-video/get-help-support.md)。  <br/> |
-|自助式密码重置  <br/> |仅供管理员使用。 有关详细信息，请参阅[在由世纪互联运营的 Office 365 中更改或重置密码](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
+|自定义域  <br/> |管理员可以创建和/或使用通过中国特定的域提供商注册的自定义域。 如果没有自定义域名，则可以从域名注册机构处[如何购买域名](../get-help-with-domains/buy-a-domain-name.md)。 如果已经拥有一个域名，[查找域注册机构或 DNS 托管提供商](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> 此外，如果使用 Office 365 SharePoint Online 服务创建公共网站，中国 Internet 合规政策要求获得 Internet 内容提供程序 （ICP） 编号。  **注意：** 自定义域名中不允许的字词不可自动验证。           |
+|订阅、帐单和技术支持  <br/> |由世纪互联提供。有关如何联系支持人员的信息，请参阅[联系 Office 365 商业版支持人员](../../business-video/get-help-support.md)。  <br/> |
+|自助式密码重置  <br/> |只有管理员可使用此功能。有关详细信息，请参阅[在由世纪互联运营的 Office 365 中更改或重置密码](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。<br/> |
 |安全性、隐私、合规性和关于支持级别的详细信息  <br/> |由世纪互联提供。  <br/> |
 |Office 桌面设置  <br/> |Office 桌面设置不适用于 Office 2010 和 Office 2007。 然而，管理员可以 [将当前的Office桌面应用程序配置为与Office 365配合使用](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)。  <br/> |
 |移动电话和设备支持\*  <br/> | 即将推出以下移动功能：  <br/>  移动设备管理 (MDM)  <br/>  BlackBerry 商务云服务 (BBCS) 不可用，但您可以使用 Exchange ActiveSync 设备或 Research in Motion（RIM，BlackBerry 无线电子邮件解决方案）中的服务运行 Blackberry Enterprise Server (BES)。  <br/>  有关移动支持的详细信息，请参阅[为您的用户设置和管理移动访问](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)。  <br/> |
@@ -181,7 +181,7 @@ Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该�
 
 |函数|可用性|
 |:-----|:-----|
-|从“**文件**\>**打开**”中打开 Office 应用程序… 按钮  <br/> |可用。即将推出漫游时执行此操作的功能。  <br/> |
+|从“**文件**\>**打开方式**”按钮中打开 Office 应用程序<br/> |可用。即将推出漫游时执行此操作的功能。  <br/> |
 |使用 Microsoft 账户登录时保存到 OneDrive for Business  <br/> |为了将数据保存在本国家/地区境内，当使用 Microsoft 账户登录 Office 时，将无法将文档保存到组织站点 (OneDrive for Business)。  <br/> |
 |翻译文本或页面的功能  <br/> |此功能可用，但默认处于关闭状态。 管理员可以启用此功能，但将收到一条警告消息，指明它可能允许在您的国家/地区之外访问数据。  <br/> |
    

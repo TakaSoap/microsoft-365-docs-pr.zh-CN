@@ -24,7 +24,7 @@ monikerRange: o365-21vianet
 ms.date: 03/30/2021
 ms.openlocfilehash: 59995d7bed5c24b26079dcd6865d5a901c518724
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60153962"
@@ -115,7 +115,7 @@ ms.locfileid: "60153962"
 
 查询开票进度，及未收到发票的问题查询。
   
-如果想要更改发票抬头，请寄回发票，我们会重新开具发票。 可以通过管理中心 <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">提交</a>。
+如果想要更改发票抬头，请寄回发票，我们会重新开具发票。你可以通过<a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">管理中心</a>提交请求。
   
 ![用于将发票发回以请求更改标题的管理中心支持窗体。](../../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
   
@@ -143,7 +143,7 @@ ms.locfileid: "60153962"
   
 ### <a name="what-if-i-dont-receive-an-activation-email"></a>如果没有收到账户激活邮件怎么办？
 
-如果注册后的 24 小时内没有收到帐户激活邮件，可以到世纪行发票信息管理系统 <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">上至第</a>中，输入你的电子邮件地址，然后选择 **重新发送激活电子邮件**。 系统将重新向注册的电子邮件地址发送帐户激活电子邮件。
+如果在注册后 24 小时内未收到帐户激活电子邮件，请转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世纪互联发票信息管理系统</a>，输入你的电子邮件地址，然后选择 **重新发送激活电子邮件**。系统会将帐户激活电子邮件重新发送到已注册的电子邮件地址。
   
 ![世纪互联发票管理系统注册页面。](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   

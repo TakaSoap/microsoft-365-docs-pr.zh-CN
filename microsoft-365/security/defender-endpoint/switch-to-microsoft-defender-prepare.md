@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 09/23/2021
+ms.date: 10/07/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: e265c319f8574a9de02d1f7f7f782e07fb105f91
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0b5fb7ee6a10ef6aa0fc1448f805ff14d51c3582
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154598"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245713"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>切换到 Microsoft Defender for Endpoint - 阶段 1：准备
 
@@ -49,7 +49,7 @@ ms.locfileid: "60154598"
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>在组织设备上获取和部署更新
 
-最佳做法是使组织的设备和终结点保持最新。 请确保现有终结点保护和防病毒解决方案是最新的，并且组织的操作系统和应用也具有最新的更新。 现在执行此操作有助于在迁移到 Defender for Endpoint 并迁移终结点时Microsoft Defender 防病毒。
+最佳做法是使组织的设备和终结点保持最新。 请确保现有终结点保护和防病毒解决方案是最新的，并且组织的操作系统和应用也具有最新的更新。 现在执行此操作有助于防止以后在迁移到 Defender for Endpoint 和 Microsoft Defender 防病毒。
 
 ### <a name="make-sure-your-existing-solution-is-up-to-date"></a>确保现有解决方案是最新的
 
@@ -63,12 +63,12 @@ ms.locfileid: "60154598"
 
 <br/><br/>
 
-|操作系统|资源|
+|操作系统|Resource|
 |---|---|
 |Windows|[Microsoft Update](https://www.update.microsoft.com)|
 |macOS|[如何在 Mac 上更新软件](https://support.apple.com/HT201541)|
 |iOS|[更新你的iPhone、iPad或 iPod 触摸](https://support.apple.com/HT204204)|
-|Android|[检查&更新 Android 版本](https://support.google.com/android/answer/7680439)|
+|Android|[检查&你的 Android 版本](https://support.google.com/android/answer/7680439)|
 |Linux|[Linux 101：更新系统](https://www.linux.com/training-tutorials/linux-101-updating-your-system)|
 
 ## <a name="get-microsoft-defender-for-endpoint"></a>获取 Microsoft Defender for Endpoint
@@ -81,16 +81,16 @@ ms.locfileid: "60154598"
 
 3. 设置适用于终结点的 Defender 的专用云实例。 请参阅 [Defender for Endpoint setup： Tenant configuration](production-deployment.md#tenant-configuration)。
 
-4. 如果终结点 (，) 使用代理访问 Internet，请参阅[Defender for Endpoint setup： Network configuration。](production-deployment.md#network-configuration)
+4. 如果终结点 (，) 使用代理访问 Internet，请参阅 [Defender for Endpoint setup： Network configuration](production-deployment.md#network-configuration)。
 
-此时，您已准备好向将使用 Microsoft 365 Defender 门户策略的安全管理员 [https://security.microsoft.com](https://security.microsoft.com) () 。
+此时，您已准备好向将使用 Microsoft 365 Defender 门户和 () [https://security.microsoft.com](https://security.microsoft.com) 的安全管理员和安全操作员授予访问权限。
 
 > [!NOTE]
 > 该Microsoft 365 Defender门户有时称为 Defender for Endpoint 门户，可在 上访问 [https://security.microsoft.com](https://security.microsoft.com) 。 以前的Microsoft Defender 安全中心 (https://securitycenter.windows.com) 将很快重定向到 Microsoft 365 Defender 门户。 若要了解更多信息，请参阅[Microsoft 365 Defender门户概述](portal-overview.md)。
 
 ## <a name="grant-access-to-the-microsoft-365-defender-portal"></a>授予对 Microsoft 365 Defender 门户的访问权限
 
-Microsoft 365 Defender门户 () 是访问和配置 [https://security.microsoft.com](https://security.microsoft.com) Defender for Endpoint 的特性和功能的地方。 若要了解更多信息，请参阅[门户Microsoft 365 Defender概述](use.md)。
+Microsoft 365 Defender门户 () 访问和配置 Defender [https://security.microsoft.com](https://security.microsoft.com) for Endpoint 的特性和功能。 若要了解更多信息，请参阅门户[Microsoft 365 Defender概述](use.md)。
 
 可以使用 RBAC Microsoft 365 Defender基本权限或基于角色的访问控制来授予对 (门户) 。 我们建议使用 RBAC，以便可以更精细地控制权限。
 
@@ -114,12 +114,12 @@ Microsoft 365 Defender门户 () 是访问和配置 [https://security.microsoft.c
 
 |功能|操作系统|资源|
 |---|---|---|
-|[终结点检测和响应](overview-endpoint-detection-response.md) (EDR) |[Windows 10](/windows/release-health/release-information) <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <p>Windows Server 2022 <p> <p> [Windows服务器 1803 或更高版本](/windows-server/get-started/whats-new-in-windows-server-1803)|[配置计算机代理和 Internet 连接设置](configure-proxy-internet.md)|
-|EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) <p> [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[配置代理和 Internet 连接设置](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
-|EDR|macOS：11.3.1 (Big Sur) ;10.15 (加泰罗尼亚语) ;10.14 (Mojave) |[macOS 上的 Defender for Endpoint：网络连接](microsoft-defender-endpoint-mac.md#network-connections)|
-|[Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p> Windows Server 2022 <p> [Windows服务器 1803 或更高版本](/windows-server/get-started/whats-new-in-windows-server-1803) <p> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[配置和验证 Microsoft Defender 防病毒软件网络连接](configure-network-connections-microsoft-defender-antivirus.md)|
-|防病毒|macOS：11.3.1 (Big Sur) ;10.15 (加泰罗尼亚语) ;10.14 (Mojave) |[macOS 上的 Defender for Endpoint：网络连接](microsoft-defender-endpoint-mac.md#network-connections)|
-|防病毒|Linux：RHEL 7.2+;CentOS Linux 7.2+;Ubuntu 16 LTS 或更高版本 LTS;SLES 12+;Debian 9+;Oracle Linux 7.2|[Linux 上的 Defender for Endpoint：网络连接](microsoft-defender-endpoint-linux.md#network-connections)|
+|[终结点检测和响应](overview-endpoint-detection-response.md) (EDR) |[Windows 10](/windows/release-health/release-information)<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>Windows Server 2022 <br/><br/>[Windows服务器 1803 或更高版本](/windows-server/get-started/whats-new-in-windows-server-1803)|[配置计算机代理和 Internet 连接设置](configure-proxy-internet.md)|
+|EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[WindowsServer 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[配置代理和 Internet 连接设置](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|EDR|macOS：<br/> 11.3.1 (Big Sur) <br/>10.15 (加泰罗尼亚语) <br/>10.14 (Mojave) |[macOS 上的 Defender for Endpoint：网络连接](microsoft-defender-endpoint-mac.md#network-connections)|
+|[Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows服务器 1803 或更高版本](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[配置和验证 Microsoft Defender 防病毒软件网络连接](configure-network-connections-microsoft-defender-antivirus.md)|
+|防病毒|macOS：<br/> 11.3.1 (Big Sur) <br/>10.15 (加泰罗尼亚语) <br/>10.14 (Mojave) |[macOS 上的 Defender for Endpoint：网络连接](microsoft-defender-endpoint-mac.md#network-connections)|
+|防病毒|Linux：<br/> RHEL 7.2+<br/>CentOS Linux 7.2+<br/>Ubuntu 16 LTS 或更高版本 LTS<br/>SLES 12+<br/>Debian 9+<br/>Oracle Linux 7.2|[Linux 上的 Defender for Endpoint：网络连接](microsoft-defender-endpoint-linux.md#network-connections)|
 
 
 ## <a name="next-step"></a>后续步骤

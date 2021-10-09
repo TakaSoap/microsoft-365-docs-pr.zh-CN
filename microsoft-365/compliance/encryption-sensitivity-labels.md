@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba6e8e44a3f41bcd64257faf62c597d3b019e359
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 05e09bbd07bb8b4d15ce9bb82b64f49b49d88ffd
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206177"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239956"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -52,6 +52,29 @@ ms.locfileid: "60206177"
 加密使用了 Azure 信息保护中的 Azure 权限管理服务 (Azure RMS)。 该保护解决方案使用了加密、标识和身份验证策略。 要了解详细信息，请参阅 Azure 信息保护文档中的[什么是 Azure 权限管理？](/azure/information-protection/what-is-azure-rms)。 
 
 使用此加密解决方案时，**超级用户** 功能确保了获得授权的用户和服务始终可读取和检测已针对你的组织进行加密的数据。 必要时，可删除或更改加密。 有关详细信息，请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](/azure/information-protection/configure-super-users)。
+
+## <a name="important-prerequisites"></a>重要先决条件
+
+可能需要执行一些配置任务，然后才可使用加密。 配置加密设置时，不检查是否满足这些先决条件。
+
+- 激活 Azure 信息保护中的保护
+    
+    要使敏感度标签应用加密，必须为租户激活 Azure 信息保护中的保护服务（即 Azure 权限管理）。 在较新的租户中，这是默认设置，但你可能需要手动激活该服务。 有关详细信息，请参阅[激活 Azure 信息保护中的保护服务](/azure/information-protection/activate-service)。
+
+- 查看网络要求
+    
+    可能需要对防火墙等网络设备做出一些更改。 如需获取详细信息，请参阅 Azure 信息保护文档中的[防火墙和网络设施](/azure/information-protection/requirements#firewalls-and-network-infrastructure)。
+
+- 配置用于 Azure 信息保护的 Exchange
+    
+    在用户能够在 Outlook 中应用标签以加密其电子邮件前，无需对 Exchange 进行配置以用于 Azure 信息保护。但是，如果没有针对 Azure 信息保护对 Exchange 进行配置，你将无法在 Exchange 中获取使用 Microsoft Azure AD Rights Management 的完整功能。
+    
+    例如，用户无法查看移动电话或 Outlook 网页版上机密的电子邮件，无法索引加密的电子邮件用于搜索，并且无法针对 Rights Management 保护配置 Exchange Online DLP。 
+    
+    为确保 Exchange 可以支持这些其他应用场景，请参阅以下内容：
+    
+    - 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](/azure/information-protection/configure-office365#exchangeonline-irm-configuration)的说明。
+    - 对于本地 Exchange，必须部署 [RMS 连接器并配置你的 Exchange 服务器](/azure/information-protection/deploy-rms-connector)。 
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>如何配置加密标签
 
@@ -167,7 +190,7 @@ ms.locfileid: "60206177"
 
 - 组织中的任何人（所有租户成员）。此设置不包括来宾帐户。
 
-- 任何经过身份验证的用户。选择前，请确保你了解此设置的相关[要求和限制](#requirements-and-limitations-for-add-any-authenticated-users)。
+- 任何经过身份验证的用户。选择前，请确保你了解此设置的相关 [要求和限制](#requirements-and-limitations-for-add-any-authenticated-users)。
 
 - Azure AD 中的任何特定用户或启用了电子邮件的安全组、通讯组、或 Microsoft 365 组（[旧称为“Office 365 组”](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。 Microsoft 365 组可以有静态或[动态成员资格](/azure/active-directory/users-groups-roles/groups-create-rule)。 请注意，不能使用[来自 Exchange 的动态通讯组](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups)，因为此组类型不会同步到 Azure AD，并且不能使用未启用电子邮件的安全组。
 
@@ -399,7 +422,7 @@ ms.locfileid: "60206177"
   - DLP 策略适用于这些加密文件的元数据（包括保留标签信息），但不适用于这些文件的内容（如文件内的信用卡号）。
   - 用户无法使用 Office 网页版打开加密文件。如果在 SharePoint 和 OneDrive 中为 Office 文件启用了敏感度标签，则用户可使用 Office 网页版打开加密文件，但存在一些[限制](sensitivity-labels-sharepoint-onedrive-files.md#limitations)，包括通过本地密钥应用的加密（称为“保留自己的密钥”(HYOK)）、[双密钥加密](#double-key-encryption)以及在不使用敏感度标签的情况下应用的加密。
 
-- 如果与组织外部人员共享加密文档，可能需要创建来宾帐户并修改条件访问策略。有关详细信息，请参阅[与外部用户共享加密文档](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)。
+- 如果与组织外部人员共享加密文档，可能需要创建来宾帐户并修改条件访问策略。有关详细信息，请参阅 [与外部用户共享加密文档](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)。
 
 - 当授权用户在其 Office 应用中打开加密文档时，将在其应用顶部的黄色消息栏中看到标签名称和说明。 当加密权限扩展到组织外部的人员时，请仔细查看打开文档时将在此消息栏中显示的标签名称和说明。
 
@@ -416,34 +439,12 @@ ms.locfileid: "60206177"
 
 - Office 应用（Windows、Mac、Android 和 iOS）不支持对加密文件进行以下操作，并且用户将看到一则错误消息指出出现了错误。但是，可将 SharePoint 功能用作替代项：
 
-  - 查看、还原和保存以前版本的副本。或者，在你[为列表或库启用和配置版本控制](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)后，用户可使用 Office 网页版执行这些操作。
-  - 更改文件的名称或位置。或者，用户可在 SharePoint 中[对文档库中的文件、文件夹或链接重命名](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)。
+  - 查看、还原和保存以前版本的副本。或者，在你 [为列表或库启用和配置版本控制](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37) 后，用户可使用 Office 网页版执行这些操作。
+  - 更改文件的名称或位置。或者，用户可在 SharePoint 中 [对文档库中的文件、文件夹或链接重命名](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)。
 
 为了在已用敏感度标签加密的文件上获得更佳的协作体验，建议使用 [SharePoint 和 OneDrive中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)并使用 Web 版 Office。
 
 
-## <a name="important-prerequisites"></a>重要先决条件
-
-可能需要执行一些配置任务，然后才可使用加密。
-
-- 激活 Azure 信息保护中的保护
-    
-    要使敏感度标签应用加密，必须为租户激活 Azure 信息保护中的保护服务（即 Azure 权限管理）。 在较新的租户中，这是默认设置，但你可能需要手动激活该服务。 有关详细信息，请参阅[激活 Azure 信息保护中的保护服务](/azure/information-protection/activate-service)。
-
-- 查看网络要求
-    
-    可能需要对防火墙等网络设备做出一些更改。 如需获取详细信息，请参阅 Azure 信息保护文档中的[防火墙和网络设施](/azure/information-protection/requirements#firewalls-and-network-infrastructure)。
-
-- 配置用于 Azure 信息保护的 Exchange
-    
-    在用户能够在 Outlook 中应用标签以加密其电子邮件前，无需对 Exchange 进行配置以用于 Azure 信息保护。但是，如果没有针对 Azure 信息保护对 Exchange 进行配置，你将无法在 Exchange 中获取使用 Microsoft Azure AD Rights Management 的完整功能。
-    
-    例如，用户无法查看移动电话或 Outlook 网页版上机密的电子邮件，无法索引加密的电子邮件用于搜索，并且无法针对 Rights Management 保护配置 Exchange Online DLP。 
-    
-    为确保 Exchange 可以支持这些其他应用场景，请参阅以下内容：
-    
-    - 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](/azure/information-protection/configure-office365#exchangeonline-irm-configuration)的说明。
-    - 对于本地 Exchange，必须部署 [RMS 连接器并配置你的 Exchange 服务器](/azure/information-protection/deploy-rms-connector)。 
 
 ## <a name="next-steps"></a>后续步骤
 

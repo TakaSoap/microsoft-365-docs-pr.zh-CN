@@ -23,13 +23,13 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: '了解如何查找新的Microsoft 365合作伙伴，或获取过去合作过的合作伙伴的联系人信息。 '
-ms.openlocfilehash: be68ea0f270a974951b59309139db7773addad62
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解如何查找新的Microsoft 365合作伙伴，或获取过去合作过的合作伙伴的联系人信息。
+ms.openlocfilehash: d50c829281654842079a2124be4f8a8e16e993bf
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164364"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245642"
 ---
 # <a name="find-your-partner-or-reseller"></a>查找合作伙伴或经销商
 
@@ -41,7 +41,7 @@ ms.locfileid: "60164364"
 
 如果你已准备好通过开放批量Microsoft 365购买或续订产品，或者你只想了解有关与合作伙伴合作的详细信息，请选择以下选项。 
   
-- [使用 Microsoft PinPoint 搜索合作伙伴](https://go.microsoft.com/fwlink/p/?LinkId=613304)
+- [搜索 Microsoft 认证的服务合作伙伴](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
 - [调用 Microsoft 批量许可](https://go.microsoft.com/fwlink/p/?LinkId=613305)
     

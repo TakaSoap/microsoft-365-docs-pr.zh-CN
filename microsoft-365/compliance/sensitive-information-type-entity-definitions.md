@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: 有 200 种敏感信息类型可供您用于 DLP 策略。 本文列出了所有这些敏感信息类型，并演示 DLP 策略在检测到每种类型时查找的信息。
-ms.openlocfilehash: 80c0c0fa2a916b44204ea930a282c5b2e6402a85
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d018833f6dd6d63ff32e8a3d77209177d7709f6
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159726"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245677"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
@@ -1243,8 +1243,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 - 字符串"DocumentDb"
-- 3-200 位小写或大写字母、数字、符号、特殊字符或空格之间的任意组合
-- 大于符号 (>) 、等号 (=) 、引号 (") 或撇号 (') 
+- 3-200 小写或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 大于符号 (>) 、等 (=) 、引号 (") 或撇号 () 
 - 86 个小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 两个等号 (=) 
 
@@ -1274,7 +1274,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
+ (，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。) 
 
 - contoso
 - fabrikam
@@ -1500,7 +1500,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。) 
+ (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
 
 - contoso
 - fabrikam
@@ -1524,9 +1524,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 小写或大写字母、数字或百分号（以百分号表示）介于 43-53 (%) 
+- 小写字母、数字或百分号（小写字母、数字或百分号）之间的 43-53 (%) 
 - 字符串"%3d"
-- 不是小写或大写字母、数字或百分号的任何字符 (%) 
+- 任何不是小写或大写字母、数字或百分号的字符 (%) 
 
 ### <a name="checksum"></a>校验和
 
@@ -1594,7 +1594,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。) 
+ (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
 
 - contoso
 - fabrikam
@@ -1623,7 +1623,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 86 个字符的任意组合，包括小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
+- 小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 两个等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1654,13 +1654,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_azure_emulator_storage_account_filter"></a>CEP_azure_emulator_storage_account_filter
 
- (，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。) 
+ (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
 
 - Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。) 
+ (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
 
 - contoso
 - fabrikam
@@ -1672,7 +1672,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - testacs。<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->net
 
-## <a name="azure-storage-account-key-generic"></a>Azure 存储常规 (帐户) 
+## <a name="azure-storage-account-key-generic"></a>Azure 存储常规 (帐户密钥) 
 
 ### <a name="format"></a>格式
 
@@ -3318,6 +3318,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 智利标识否。
 - 智利标识号
 - 智利标识#
+- R.U.T
+- R.U.N
 
 
 ## <a name="china-resident-identity-card-prc-number"></a>中国居民身份证 (中国) 号码
@@ -3382,7 +3384,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-14 到 16 个数字，可以格式化或无格式 (ddddddd) 且必须通过 Luhn 测试。
+14 到 19 个数字，可以格式化或无格式 (dddddddd) 且必须通过 Luhn 测试。
 
 ### <a name="pattern"></a>模式
 
@@ -3390,7 +3392,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是，Luhn 校验和
+是，Luhn 检查
 
 ### <a name="definition"></a>定义
 
@@ -4682,7 +4684,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-九个数字，带可选正斜杠 (旧格式) 10 个数字，可选正斜杠 (新格式) 
+九个数字，带可选正斜杠 (旧格式) 10 个数字，带可选正斜杠 (新格式) 
 
 ### <a name="pattern"></a>模式
 
@@ -5027,7 +5029,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 10 个数字：
 - 六个数字，格式为 DDMMYY，表示出生日期
-- 连字符
+- 可选空格或连字符
 - 四个数字，其中最后一个数字是一个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -6284,7 +6286,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 六个数字，格式为 DDMMYY，表示出生日期
 - century marker (either '-'， '+' or 'a') 
 - 三位数的个人标识号
-- 一个数字或 (不区分大小写) 检查数字
+- 一个数字或 (不区分大小写) 是一个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -6638,7 +6640,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
 - 正则表达式Regex_France_Health_Insurance_Number查找与模式匹配的内容。
-- 找到Keyword_France_Health_Insurance_Number关键字。
+- 找到来自Keyword_France_Health_Insurance_Number关键字。
 
 ```xml
       <!-- France Health Insurance Number -->
@@ -6807,7 +6809,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 必须匹配两种模式之一：
 - 13 个数字，后跟一个空格，后跟两个数字<br/>
-或者
+或
 - 15 个连续的数字
 
 ### <a name="checksum"></a>校验和
@@ -7212,37 +7214,58 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-自 2010 年 11 月 1 日起：九个字母和数字
+自 2010 年 11 月 1 日：九到十一个字母和数字
 
 从 1987 年 4 月 1 日到 2010 年 10 月 31 日：10 个数字
 
 ### <a name="pattern"></a>模式
 
-自 2010 年 11 月 1 日起：
-- 一个字母 (不区分大小写) 
-- 八个数字
+自 2010 年 11 月 1 日起：9 到 11 个字符的字母数字模式
+- 一个 L、M、N、P、R、T、V、W、X、Y (不区分大小写) 
+- 八个数字或字母，以 C、F、G、H、J、K、L、M、N、P、R、T、V、W、X、Y 和 Z (区分大小写) 
+- 可选检查数字
+- 可选 d/D
 
 从 1987 年 4 月 1 日到 2010 年 10 月 31 日：
 - 10 个数字
 
 ### <a name="checksum"></a>校验和
 
-否
+是
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 正则表达式 Regex_germany_id_card 找到与该模式匹配的内容。
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+- 函数 `Func_german_id_card_with_check` 查找与模式匹配的内容。
+- 找到 的 `Keyword_germany_id_card` 关键字。
+- 校验和通过。
+
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+- 正则表达式查找与 2010 (9 个字符模式匹配的内容，而不检查 `Regex_germany_id_card` 2010 或 2010 年颁发的 10 个数字模式颁发的 2010) 。
 - 找到 Keyword_germany_id_card 中的一个关键字。
 
+DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+- 函数 `Func_german_id_card_with_check` 查找与模式匹配的内容。
+- 校验和通过。
+
+
 ```xml
-<!-- Germany Identity Card Number -->
-<Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" recommendedConfidence="65" patternsProximity="300">
-  <Pattern confidenceLevel="65">
-     <IdMatch idRef="Regex_germany_id_card"/>
-     <Match idRef="Keyword_germany_id_card"/>
-  </Pattern>
-</Entity>
+      <!-- Germany Identity Card Number -->
+      <Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" patternsProximity="300" recommendedConfidence="75"> 
+        <Pattern confidenceLevel="75">
+         <IdMatch idRef="Regex_germany_id_card" /> 
+         <Match idRef="Keyword_germany_id_card" /> 
+        </Pattern>
+        <Version minEngineVersion="15.20.4545.000"> 
+          <Pattern confidenceLevel="85">
+           <IdMatch idRef="Func_german_id_card_with_check" />
+            <Match idRef="Keyword_germany_id_card" /> 
+          </Pattern> 
+          <Pattern confidenceLevel="65">
+           <IdMatch idRef="Func_german_id_card_with_check" /> 
+          </Pattern> 
+        </Version>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
@@ -7266,19 +7289,16 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="germany-passport-number"></a>德国护照号码
 
-此实体包含在欧盟护照号码敏感信息类型中，并作为独立的敏感信息类型实体提供。
-
 ### <a name="format"></a>格式
 
-10 个数字或字母
+9 到 11 个字符
 
 ### <a name="pattern"></a>模式
 
-模式必须包括以下各项：
-- 第一个字符是此集合中的数字或字母 (C、F、G、H、J、K) 
-- 三个数字
-- 此集合中的五个数字或字母 (C、-H、J-N、P、R、T、V-Z) 
-- 一个数字
+- 一个字母，C、F、G、H、J、K (不区分大小写) 
+- 八个数字或字母，以 C、F、G、H、J、K、L、M、N、P、R、T、V、W、X、Y 和 Z (区分大小写) 
+- 可选检查数字
+- 可选 d/D
 
 ### <a name="checksum"></a>校验和
 
@@ -7287,32 +7307,40 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 ### <a name="definition"></a>定义
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数 Func_german_passport 找到与该模式匹配的内容。
+- 函数 `Func_german_passport_checksum` 查找与模式匹配的内容。
 - 找到 或 `Keyword_german_passport` `Keywords_eu_passport_number_common` 中的关键字。
 - 校验和通过。
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数 Func_german_passport_data 找到与该模式匹配的内容。
+- 该函数查找与九个字符模式匹配的内容 (`Func_german_passport` 无检查数字和可选 d/D) 。
 - 找到 或 `Keyword_german_passport` `Keywords_eu_passport_number_common` 中的关键字。
+
+DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+- 函数 `Func_german_passport_checksum` 查找与模式匹配的内容。
 - 校验和通过。
 
 ```xml
     <!-- German Passport Number -->
     <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
-      <Pattern confidenceLevel="85">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport" />
         <Any minMatches="1">
           <Match idRef="Keyword_german_passport" />
           <Match idRef="Keywords_eu_passport_number_common" />
         </Any>
       </Pattern>
-      <Pattern confidenceLevel="75">
-        <IdMatch idRef="Func_german_passport_data" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keywords_eu_passport_number_common" />
-        </Any>
-      </Pattern>
+      <Version minEngineVersion="15.20.4570.0">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_german_passport_checksum" />
+          <Any minMatches="1">
+            <Match idRef="Keyword_german_passport" />
+            <Match idRef="Keywords_eu_passport_number_common" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_german_passport_checksum" />
+        </Pattern>
+      </Version>
     </Entity>
 ```
 
@@ -7725,7 +7753,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
 - 正则表达式查找  `Regex_greece_eu_passport_number` 与模式匹配的内容。
 - 找到 或  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_greece_eu_passport_date` DD MMM YY 格式的日期 (示例 - 8 月 19 日) 找到的 `Keywords_greece_eu_passport_date` 关键字
+- 正则表达式查找 `Regex_greece_eu_passport_date` DD MMM YY 格式的日期 (示例 - 8 月 19) 或找到 `Keywords_greece_eu_passport_date` 关键字
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
 - 正则表达式查找  `Regex_greece_eu_passport_number` 与模式匹配的内容。
@@ -8172,7 +8200,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 11 个数字：
 
 - 一个数字，对应性别，1 表示男性，2 表示男性。 对于在 1900 以前生活的人或具有双重公民权的人，也可以申请其他号码。
-- 六个数字，对应于 YYMMDD (出生日期) 
+- 六个数字，对应于出生日期 (YYMMDD) 
 - 对应于序列号的三个数字
 - 一个检查数字
 
@@ -8778,7 +8806,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - Permanent Account Number
 - PAN
 
-## <a name="india-unique-identification-aadhaar-number"></a>印度唯一标识 (Aadhaar) 号
+## <a name="india-unique-identification-aadhaar-number"></a>印度唯一 (Aadhaar) 号
 
 ### <a name="format"></a>格式
 
@@ -8932,7 +8960,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Kartu Tanda Penduduk
 - Nomor Induk Kependudukan
 
-## <a name="international-banking-account-number-iban"></a>IBAN (国际银行) 
+## <a name="international-banking-account-number-iban"></a>国际银行帐号 (IBAN) 
 
 ### <a name="format"></a>格式
 
@@ -9072,9 +9100,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="keywords"></a>关键字
 
-基于国际Dictionary_icd_10_updated分类、第十次修订、修订修改 ([ICD-10-CM ](https://go.microsoft.com/fwlink/?linkid=852604)) 。 此类型仅查找该术语，而不是保险代码。
+基于国际Dictionary_icd_10_updated分类、第十次修订、修订修改和 [ICD-10-CM ](https://go.microsoft.com/fwlink/?linkid=852604) (的关键字词典) 。 此类型仅查找术语，而不是保险代码。
 
-来自《Dictionary_icd_10_codes》关键字词典的任何术语，该词典基于国际医学分类、第十次修订、修改 ([ICD-10-CM ](https://go.microsoft.com/fwlink/?linkid=852604)) 。 此类型仅查找保险代码，而不是说明。
+基于国际Dictionary_icd_10_codes分类、第十次修订、修订修改和 [ICD-10-CM ](https://go.microsoft.com/fwlink/?linkid=852604) (关键字词典) 。 此类型仅查找保险代码，而不是说明。
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>ICD-9-CM (国际) 
 
@@ -9113,16 +9141,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="keywords"></a>关键字
 
-基于国际Dictionary_icd_9_updated分类、第九次修订、修订修改和 [ICD-9-CM ](https://go.microsoft.com/fwlink/?linkid=852605) (的关键字词典) 。 此类型仅查找该术语，而不是保险代码。
+基于国际Dictionary_icd_9_updated分类、第九次修订、修订修改和 [ICD-9-CM ](https://go.microsoft.com/fwlink/?linkid=852605) (的关键字词典) 。 此类型仅查找术语，而不是保险代码。
 
-来自"Dictionary_icd_9_codes关键字词典"的任何术语，该词典基于国际医学分类、第九次修订、修改 ([ICD-9-CM ](https://go.microsoft.com/fwlink/?linkid=852605)) 。 此类型仅查找保险代码，而不是说明。
+基于国际Dictionary_icd_9_codes分类、第九次修订、修订修改和 [ICD-9-CM ](https://go.microsoft.com/fwlink/?linkid=852605) (的关键字词典) 。 此类型仅查找保险代码，而不是说明。
 
 ## <a name="ip-address"></a>IP 地址
 
 ### <a name="format"></a>格式
 
 #### <a name="ipv4"></a>IPv4：
-处理 IPv4 地址 (格式) 和无格式 (IPv4) 模式的复杂模式
+适用于 IPv4 地址 (格式) 和无格式 (IPv4) 句点的复杂模式
 
 #### <a name="ipv6"></a>IPv6：
 包含带格式的 IPv6 号码的复杂 (包括冒号) 
@@ -9186,7 +9214,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-处理 IPv4 地址 (格式) 和无格式 (IPv4) 模式的复杂模式
+适用于 IPv4 地址 (格式) 和无格式 (IPv4) 句点的复杂模式
 
 ### <a name="pattern"></a>模式
 
@@ -9915,9 +9943,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 三个字母，对应于系列名称中的前三个辅音
 - 三个字母，分别对应名字中的第一个、第三个和第四个辅音
 - 两个数字，对应于出生日期的最后一个数字
-- 一个字母，对应于出生日期月份中的字母 - 字母按字母顺序使用，但只有字母 A 到 E、H、L、M、P、R 到 T (因此，January 为 A，十月为 R) 
+- 一个对应于出生日期月份字母的字母 - 字母按字母顺序使用，但只有字母 A 到 E、H、L、M、P、R 到 T (因此，January 为 A，10 月为 R) 
 - 为区分性别，与当月中的一天对应的两个数字，40 个数字将添加到女士的出生日期
-- 四个数字，对应于某人所生地区特定的区号 (国家/地区代码用于国家/地区) 
+- 四个数字，对应于特定的地区代码，该号码是此人的 (国家/地区代码用于国家/地区) 
 - 一个奇偶校验数字
 
 ### <a name="checksum"></a>校验和
@@ -10006,7 +10034,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
 - 正则表达式查找  `Regex_italy_eu_passport_number` 与模式匹配的内容。
 - 找到 或  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_italy_eu_passport_date` DD MMM/MMM YYYYY 格式的日期 (示例 - 01 GEN/JAN 1988) 或找到的 `Keywords_eu_passport_date` 关键字
+- 正则表达式查找格式为 `Regex_italy_eu_passport_date` DD MMM/MMM YYYYY (示例 - 01 GEN/JAN 1988) 或找到的 `Keywords_eu_passport_date` 关键字
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
 - 正则表达式查找  `Regex_italy_eu_passport_number` 与模式匹配的内容。
@@ -10137,7 +10165,7 @@ bank account number：
 - 七个或八个数字
 - bank account branch code：
 - 四个数字
-- 可选属性， (或) 
+- 一个空格或 (划线) 
 - 三个数字
 
 校验和
@@ -10285,7 +10313,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 免許証ナンバー
 - 転証no
 - 転転no
-- 免証no
+- 証no
 - 免
 - 運転経歴証明書番号
 - 運転経歴証明書
@@ -10620,7 +10648,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 雇用保険番号
 - 保険証番号
 - 社会保険番号
-- 険No。
+- 可険No。
 - 社会保険
 - 介護保険
 - 介護保険被保険者番号
@@ -11170,7 +11198,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - vair一pažymėjimas
 - vair一pažymėjimo numeris
-- vair一pažymėjimo jo pažymėjimo num在i
+- vair一pažymėjimo jo
 
 ## <a name="lithuania-personal-code"></a>立陶宛个人代码
 此敏感信息类型仅在：
@@ -11660,7 +11688,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 到期日期
 
 
-## <a name="luxemburg-national-identification-number-non-natural-persons"></a>阿比塞卡 (非自然人的身份证号) 
+## <a name="luxemburg-national-identification-number-non-natural-persons"></a>阿比塞 (非自然人的身份证号) 
 
 ### <a name="format"></a>格式
 
@@ -12588,7 +12616,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
 - 正则表达式查找  `Regex_netherlands_eu_passport_number` 与模式匹配的内容。
 - 找到 或  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_netherlands_eu_passport_date` DD MMM/MMM YYYYY 格式的日期 (示例 - 26 MAA/MAR 2012) 
+- 正则表达式查找格式 `Regex_netherlands_eu_passport_date` 为 DD MMM/MMM YYYYY (Example - 26 MAA/MAR 2012) 
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
 - 正则表达式查找  `Regex_netherlands_eu_passport_number` 与模式匹配的内容。
@@ -13023,12 +13051,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-三个字母，一个空格 (可选) 和四个数字
+三个字母和四个数字
 
 ### <a name="pattern"></a>模式
 
 - 三个字母 (区分大小写) "I"和"O"除外
-- 空格 (可选) 
 - 四个数字
 
 ### <a name="checksum"></a>校验和
@@ -13065,14 +13092,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - NHI
 - New Zealand
-- 运行状况
-- 处理
-- National Health Index Number
-- nhi number
-- nhi no.
+- National Health Index
 - NHI#
-- National Health Index No.
-- National Health Index Id
 - National Health Index#
 
 ## <a name="new-zealand-social-welfare-number"></a>新西兰社会电话号码
@@ -14283,7 +14304,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - permisele conducere
 - permis conducere
 
-## <a name="romania-personal-numeric-code-cnp"></a>罗马尼亚个人数字代码 (CNP) 
+## <a name="romania-personal-numeric-code-cnp"></a>CNP (罗马尼亚个人) 
 此敏感信息类型仅在：
 - 数据丢失防护策略
 - 通信合规性策略
@@ -16041,10 +16062,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 - 字符串"用户 ID"、"用户 ID"、"uid"或"UserId"
-- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 1-200 位小写或大写字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串"Password"或"pwd"，其中"pwd"的前面没有小写字母
 - 等号 (=) 
-- 任何不是美元符号 ($) 、百分号 (%) 、大于符号 (>) 、符号为 (@) 、引号 (") 、分号 (;) 、左大括号 ([) 或左括号 ({) 
+- 任何不是美元符号的字符 ($) ，百分比符号 (%) ，大于符号 (>) ，符号为 (@) ，引号 (") ，分号 (;) ，左大括号 ([) ，或左括号 ({) 
 - 7-128 个字符的任意组合，这些字符不是分号 (;) 、正斜杠 (/) 或引号 (") 
 - 分号 (;) 或引号 (") 
 
@@ -16364,12 +16385,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="definition"></a>定义
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式Regex_sweden_passport_number找到与模式匹配的内容。
+- 正则表达式Regex_sweden_passport_number查找与模式匹配的内容。
 - 找到或 `Keywords_eu_passport_number` `Keyword_sweden_passport` 找到的关键字。
-- 正则表达式查找 `Regex_sweden_eu_passport_date` DD MMM/MMM YY (01 JAN/JAN 12) 格式的日期或找到 `Keywords_eu_passport_date` 的关键字。
+- 正则表达式查找 `Regex_sweden_eu_passport_date` DD MMM/MMM YY (01 JAN/JAN 12) 或找到关键字 `Keywords_eu_passport_date` 的日期。
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式Regex_sweden_passport_number找到与模式匹配的内容。
+- 正则表达式Regex_sweden_passport_number查找与模式匹配的内容。
 - 找到或 `Keywords_eu_passport_number` `Keyword_sweden_passport` 找到的关键字。
 
 
@@ -16501,7 +16522,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - personnummer
 - 将 id nummer
 - 将 identifikation
-- alatebetalarens identifikationsnummer
+- 将betalarens identifikationsnummer
 - sverige tin
 - tax file
 - tax id
@@ -16535,7 +16556,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 可选空格
 - 4-28 个字母或数字（基本银行账号 (BBAN)）
 - 可选空格
-- BBAN (一到三个字母或) 
+- BBAN 项目的剩余 (一到三个字母或) 
 
 ### <a name="checksum"></a>校验和
 
@@ -17195,7 +17216,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Date of Birth
 - Birth Date
 
-## <a name="uk-national-insurance-number-nino"></a>英国 NINO 保险号码 (NINO) 
+## <a name="uk-national-insurance-number-nino"></a>英国 NINO 国家 (号码) 
 此敏感信息类型实体包含在欧盟国家标识号敏感信息类型中。 它还作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>格式
@@ -17544,9 +17565,9 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 #### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
 - state 缩写 (例如，"NY") 
-- 州名称 (例如，"New York") 
+- state name (for example， "New York") 
 
-## <a name="us-individual-taxpayer-identification-number-itin"></a>ITIN 中美国个人纳税 (标识号) 
+## <a name="us-individual-taxpayer-identification-number-itin"></a>ITIN (美国个人纳税) 
 
 ### <a name="format"></a>格式
 
@@ -17712,7 +17733,8 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="pattern"></a>模式
 
-九个连续的数字
+- 一个字母或数字
+- 八个数字
 
 ### <a name="checksum"></a>校验和
 

@@ -138,12 +138,6 @@
               href: incident-queue.md
             - name: 管理事件
               href: manage-incidents.md
-            - name: 调查事件
-              href: investigate-incidents.md
-            - name: 调查警报
-              href: investigate-alerts.md
-            - name: 调查用户
-              href: investigate-users.md
             - name: 响应你的第一个事件
               items:
                 - name: 概述
@@ -162,6 +156,14 @@
                       href: first-incident-path-phishing.md
                     - name: 标识
                       href: first-incident-path-identity.md
+            - name: 调查事件
+              items:
+                - name: 事件
+                  href: investigate-incidents.md
+                - name: 警报
+                  href: investigate-alerts.md
+                - name: 用户
+                  href: investigate-users.md
             - name: 事件响应手册
               href: /security/compass/incident-response-playbooks
             - name: 获取事件电子邮件通知
@@ -324,14 +326,6 @@
           href: integrate-microsoft-365-defender-secops-use-cases.md
         - name: 步骤 6. SOC 维护任务
           href: integrate-microsoft-365-defender-secops-tasks.md
-    - name: 操作指南
-      items:
-        - name: 创建试用版实验室或试点环境
-          href: eval-overview.md
-        - name: 运行试点行动手册
-          href: eval-overview.md
-        - name: 打开常见问题
-          href: m365d-enable-faq.md
     - name: 参考
       items:
         - name: 权限和设置

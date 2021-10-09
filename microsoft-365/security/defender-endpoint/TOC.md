@@ -31,32 +31,46 @@
 #### [部署环](deployment-rings.md)
 #### [使用 Microsoft Endpoint Configuration Manager 载入](onboarding-endpoint-configuration-manager.md)
 #### [使用 Microsoft Endpoint Manager 载入](onboarding-endpoint-manager.md)
-#### [载入支持的设备](onboard-configure.md)
 
 ## [迁移指南](migration-guides.md)
 ### [从非 Microsoft 终结点保护切换到 Defender for Endpoint](switch-to-microsoft-defender-migration.md)
 #### [阶段 1：准备](switch-to-microsoft-defender-prepare.md)
 #### [阶段 2：设置](switch-to-microsoft-defender-setup.md)
 #### [阶段 3：开始使用](switch-to-microsoft-defender-onboard.md)
+
+
+
 ### [完成迁移后管理 Defender for Endpoint](manage-atp-post-migration.md)
 #### [使用 Intune（推荐）](manage-atp-post-migration-intune.md)
 #### [使用配置服务器](manage-atp-post-migration-configuration-manager.md)
 #### [使用组策略](manage-atp-post-migration-group-policy-objects.md)
 #### [使用 PowerShell、WMI 或 MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
+#### [服务器迁移方案](server-migration.md)
 
 ## [配置和载入设备]()
+### [载入设备并配置 Microsoft Defender for Endpoint 功能](onboard-configure.md)
+
+
 ### [Windows 和 Windows Server 上的 Microsoft Defender for Endpoint]()
-#### [将设备载入到 Microsoft Defender for Endpoint](onboard-configure.md)
-#### [载入以前版本的 Windows](onboard-downlevel.md)
-#### [载入 Windows 设备]()
-##### [载入工具和方法](configure-endpoints.md)
-##### [使用组策略载入设备](configure-endpoints-gp.md)
-##### [使用 Microsoft Endpoint Configuration Manager 载入设备](configure-endpoints-sccm.md)
-##### [使用移动设备管理工具载入设备](configure-endpoints-mdm.md)
-##### [使用本地脚本载入设备](configure-endpoints-script.md)
-##### [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)
-##### [在 Windows 虚拟桌面中载入 Windows 多会话设备](onboard-windows-multi-session-device.md)
-#### [载入 Windows 服务器](configure-server-endpoints.md)
+#### [Windows 终结点的载入工具和方法](configure-endpoints.md)
+#### [载入 Windows 设备和 Windows 服务器]()
+
+##### [载入以前版本的 Windows](onboard-downlevel.md)
+
+
+##### [载入 Windows 设备和 Windows 服务器]()
+###### [载入 Windows Server 2012 R2、2016、半年频道、2019 和 2022](configure-server-endpoints.md)
+###### [使用本地脚本载入 Windows 设备](configure-endpoints-script.md)
+###### [使用组策略载入 Windows 设备](configure-endpoints-gp.md)
+###### [使用 Microsoft Endpoint Configuration Manager 载入 Windows 设备](configure-endpoints-sccm.md)
+###### [使用移动设备管理工具载入 Windows 设备](configure-endpoints-mdm.md)
+###### [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)
+###### [在 Windows 虚拟桌面中载入 Windows 10 多会话设备](onboard-windows-multi-session-device.md)
+
+
+
+
+#### [与 Azure Defender 集成](azure-server-integration.md)
 
 #### [无需访问 Internet 载入设备](onboard-offline-machines.md)
 #### [在新载入的设备上运行检测测试](run-detection-test.md)

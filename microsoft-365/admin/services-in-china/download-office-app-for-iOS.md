@@ -22,7 +22,7 @@ description: 深入了解适用于 iOS 的适用于由世纪互联运营的 Offi
 monikerRange: o365-21vianet
 ms.openlocfilehash: f2156c83ce312da42de864c8df8d00a84e05d02c
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60193885"
