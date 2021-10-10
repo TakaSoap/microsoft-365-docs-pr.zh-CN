@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: bca5495b60bcd3fe84c7faf05ec124f2eb037994
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b88aabd96f89f175ae09df1102ba3aff45af27f2
+ms.sourcegitcommit: 96618d21ad0424b7b51090afad5079ad0e955c21
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151286"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60251108"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
 通过 Microsoft 365 中的 [统一审核功能](search-the-audit-log-in-security-and-compliance.md)，组织可以了解 Microsoft 365 众多不同服务中许多类型的审核活动。高级审核通过增加执行调查所需的审核日志保留期来帮助组织执行取证和合规性调查，提供对有助于确定泄露范围和更快访问 Office 365 管理活动 API 的重要事件的访问（通过使用 Microsoft 365 合规中心和 Office 365 管理活动 API）。
 
 > [!NOTE]
-> 高级审核适用于具有 Office 365 E5/A5/G5 或 Microsoft 365 企业版 E5/A5/G5 订阅的组织。 应向用户分配 Microsoft 365 E5/A5/G5 合规性或 E5/A5/G5 电子数据展示和审核附加许可证，以获取高级审核功能，例如长期保留审核日志以及用于调查的关键高级审核事件访问权限。 有关许可的详细信息，请参阅：<br/>- [高级审核许可要求](auditing-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
+> 高级审核适用于具有 Office 365 E5/A5/G5 或 Microsoft 365 企业版 E5/A5/G5 订阅的组织。 应为用户分配Microsoft 365 E5/A5/G5 合规性或 E5/A5/G5 电子数据展示和审核加载项许可证，以获取高级审核功能，例如长期保留审核日志和生成高级审核事件以进行调查。 有关许可的详细信息，请参阅：<br/>- [高级审核许可要求](auditing-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
 
 本文概述了“高级审核”功能，并展示了如何为“高级审核”设置用户。
 
@@ -57,9 +57,9 @@ ms.locfileid: "60151286"
 
 ## <a name="advanced-audit-events"></a>高级审核事件
 
-高级审核可帮助组织通过提供对重要事件的访问，例如访问邮件项目的时间，或邮件项目被回复和转发的时间，以及用户在 Exchange Online 和 SharePoint Online 中的搜索时间和内容，来执行取证和合规性调查。 这些关键事件可以帮助你调查可能的违规行为，并确定泄露的范围。  除了 Exchange 和 SharePoint 中的关键事件之外，其他 Microsoft 365 服务中还存在被视为关键事件的事件，这些事件需要记录[适当的高级审核许可证](auditing-solutions-overview.md#licensing-requirements)。
+高级审核通过提供对重要事件（例如何时访问邮件项目、答复和转发邮件项目的时间以及用户在 Exchange Online 和 SharePoint Online 中搜索的时间和内容）的访问权限，帮助组织执行取证和合规性调查。 这些事件可帮助你调查可能的违规，并确定泄露的范围。 除了 Exchange 和 SharePoint 中的这些事件之外，其他Microsoft 365服务中还存在被视为重要事件的事件，并要求为用户分配[授予高级审核许可证](auditing-solutions-overview.md#licensing-requirements)。 必须为用户分配高级审核许可证，以便在用户执行这些事件时生成审核日志。
 
-高级审核提供以下重要事件：
+高级审核提供以下事件：
 
 - [MailItemsAccessed](#mailitemsaccessed)
 
@@ -76,9 +76,9 @@ ms.locfileid: "60151286"
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 
-MailItemsAccessed 事件是邮箱审核操作，当邮件数据通过邮件协议和邮件客户端访问时，将触发该事件。 MailItemsAccessed 操作可帮助调查人员识别数据泄露并确定已泄露的邮件的可能范围。 如果攻击者获得了对电子邮件的访问权限，即使没有明显的信号表明已实际读取了邮件，也将触发 MailItemsAccessed 操作（换句话说，审核记录中记录了诸如绑定或同步之类的访问类型）。
+MailItemsAccessed 事件是邮箱审核操作，当邮件数据通过邮件协议和邮件客户端访问时，将触发该事件。 此事件可帮助调查人员识别数据泄露，并确定可能已泄露的邮件的范围。 如果攻击者获得了对电子邮件的访问权限，即使没有明显的信号表明已实际读取了邮件，也将触发 MailItemsAccessed 操作（换句话说，审核记录中记录了诸如绑定或同步之类的访问类型）。
 
-MailItemsAccessed 邮箱操作替代 Exchange Online 邮箱审核日志中的 MessageBind ，同时提供下列改进：
+MailItemsAccessed 事件将替换 Exchange Online 中邮箱审核日志记录中的 MessageBind，并提供以下改进：
 
 - MessageBind 仅可为 AuditAdmin 用户登录类型配置；不适用于代理人或所有者操作。 MailItemsAccessed 适用于所有登录类型。
 
@@ -162,7 +162,7 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 ### <a name="other-advanced-audit-events-in-microsoft-365"></a>Microsoft 365 中的其他高级审核事件
 
-除了 Exchange Online 和 SharePoint Online 中的关键事件之外，其他 Microsoft 365 服务中还有一些关键事件，当为用户分配适当的高级审核许可时会记录这些事件。 以下 Microsoft 365 服务提供关键事件。 单击相应的链接可转到标识和描述这些事件的文章。
+除了 Exchange Online 和 SharePoint Online 中的事件之外，在为用户分配适当的高级审核许可时，其他Microsoft 365服务中还记录了事件。 以下Microsoft 365服务提供高级审核事件。 选择相应的链接以转到标识和描述这些事件的文章。
 
 - [Microsoft Forms](search-the-audit-log-in-security-and-compliance.md#microsoft-forms-activities)
 
@@ -188,17 +188,13 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 若要从用户级高级审核功能中受益，需要向用户分配 E5/A5/G5 许可证。 有些功能会检查是否有相应的许可证，确定后才为用户提供相应功能。 例如，如果未向某个用户分配相应的许可证，而你尝试为其保留审核记录超过 90 天，则系统会返回一条错误消息。
 
-**我的组织具有 E5/A5/G5 订阅，我是否需要执行任何操作才能获取重要事件的审核记录的访问权限？**
+**我的组织有 E5/A5/G5 订阅，我是否需要执行任何操作来访问高级审核事件的审核记录？**
 
-对于分配了相应 E5/A5/G5 许可证的合格客户和用户，除了启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint 事件之外，无需执行任何操作即可生成对关键审核事件的访问（如本文前面所述）。
+对于分配了相应 E5/A5/G5 许可证的合格客户和用户，除了启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint 事件之外，无需执行任何操作即可访问高级审核事件（如本文中所述）。 只有在分配了这些许可证后，才会为具有 E5/A5/G5 许可证的用户生成高级审核事件。
 
 **高级审核中的新事件在 Office 365 管理活动 API 中是否可用？**
 
 是的。 只要为具有相应许可证的用户生成了审核记录，你就可以通过 Office 365 管理活动 API 访问这些记录。
-
-**是否带宽越高意味着延迟改善和 SLA 提高？**
-
-目前，高带宽可提供更好的管道，尤其是对于具有大量审核信号和明显消耗模式的组织。 带宽增加将改善延迟状况。 但是不存在与高带宽相关的 SLA。 文档中已记录标准延迟，这些延迟不会随着高级审核的发布而改变。
 
 **当功能已向公众发布且在必需的附加产品许可证可用之前，如果我创建了 10 年审核日志保留策略，则组织的审核日志数据将会怎样？**
 
