@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2752de976329f3fbef047557e6a626afd05a520f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a7be2c43a2ff97fddfa9db0a6d02bcc611e13173
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206633"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264860"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender高级搜寻 API
 
@@ -38,7 +38,7 @@ ms.locfileid: "60206633"
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-[高级搜寻](advanced-hunting-overview.md)是一种威胁搜寻工具，它[](advanced-hunting-query-language.md)使用专门构造的查询来检查过去 30 天内Microsoft 365 Defender。 可以使用高级搜寻查询来检查异常活动、检测可能的威胁，甚至响应攻击。 高级搜寻 API 允许你以编程方式查询事件数据。
+[高级](advanced-hunting-overview.md)搜寻是一种威胁搜寻工具，它[](advanced-hunting-query-language.md)使用专门构造的查询来检查过去 30 天内Microsoft 365 Defender。 可以使用高级搜寻查询来检查异常活动、检测可能的威胁，甚至响应攻击。 高级搜寻 API 允许你以编程方式查询事件数据。
 
 ## <a name="quotas-and-resource-allocation"></a>配额和资源分配
 
@@ -46,13 +46,13 @@ ms.locfileid: "60206633"
 
 1. 查询将浏览并返回过去 30 天的数据。
 2. 结果最多返回 100，000 行。
-3. 每个租户每分钟最多可以拨打 15 次呼叫。
+3. 每个租户每分钟最多可以拨打 45 个呼叫。
 4. 如果租户已达到 100%，查询将受到阻止，直到下一个 15 分钟周期。
 5. 如果单个请求运行的时间超过 10 分钟，它将退出并返回错误。
 6. HTTP 响应代码指示你已按发送的请求数或按分配的运行时间 `429` 达到配额。 阅读响应正文，了解已达到的限制。 
 
 > [!NOTE]
-> 上面列出的所有配额 (例如，每个租户大小每) 15 个呼叫。 这些配额是最小值。
+> 上面列出的所有配额 (例如，每个租户大小每) 15 次呼叫。 这些配额是最小值。
 
 ## <a name="permissions"></a>权限
 
@@ -60,7 +60,7 @@ ms.locfileid: "60206633"
 
 权限类型 | 权限 | 权限显示名称
 -|-|-
-Application | AdvancedHunting.Read.All | 运行高级查询
+应用程序 | AdvancedHunting.Read.All | 运行高级查询
 委派（工作或学校帐户） | AdvancedHunting.Read | 运行高级查询
 
 >[!Note]
@@ -97,7 +97,7 @@ Content-Type | application/json
 response 对象包含三个顶级属性：
 
 1. Stats - 查询性能统计信息的字典。
-2. Schema - 响应的架构，每个列Name-Type对的列表。
+2. Schema - 响应的架构，每个Name-Type一个列表。
 3. 结果 - 高级搜寻事件列表。
 
 ## <a name="example"></a>示例

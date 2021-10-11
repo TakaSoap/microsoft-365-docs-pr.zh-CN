@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何查找 Microsoft SharePoint Syntex 资源。
-ms.openlocfilehash: 0b81da28d587b9041e6a59e183926f4486282d36
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e738a90486b0aa1d37c483a6e369a84a2196a9d
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195481"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264704"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 简介
 
@@ -70,6 +70,7 @@ SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
 |设置和配置 SharePoint Syntex|[设置 SharePoint Syntex](./set-up-content-understanding.md)|
+|了解 SharePoint Syntex 的许可|[SharePoint Syntex 的许可](./syntex-licensing.md)|
 |了解图像标记和如何禁用|[SharePoint Syntex 中的图像标记](./image-tagging.md)|
 
 ## <a name="models"></a>模型
@@ -95,3 +96,10 @@ SharePoint Syntex 许可证为用户提供了高级内容服务，这些服务�
 |了解如何将内容类型更一致地用于 SharePoint 库和列表|[将内容类型推送到中心](./push-content-type-to-hub.md)|
 |了解可供使用的术语库报告|[术语库报告](./term-store-analytics.md)|
 
+## <a name="extensibility"></a>可扩展性
+
+使用 REST API 创建文档理解模型，将模型应用或删除到一个或多个库，并获取或更新有关模型的信息。
+
+| 如果要查找此信息： | 参考资源： |
+|:-----|:-----|
+|使用 REST API 了解文档模型|[SharePoint Syntex 文档理解模型 REST API](/sharepoint/dev/apis/syntex/syntex-model-rest-api)|

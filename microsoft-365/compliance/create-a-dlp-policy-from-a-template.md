@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: 本文将了解如何使用本文中包含的模板之一创建 DLP Office 365。
-ms.openlocfilehash: 4f3647d5f1d320f57243570b58d10cb1726728b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7ea3e320a75953f51315579549a6dd5086706d12
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167374"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264876"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>通过模板创建 DLP 策略
 
@@ -40,7 +40,7 @@ Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规
 
 1. 登录 <https://compliance.microsoft.com> 。
 
-2. In the Compliance Center \> left navigation Data loss \> **prevention** \> **Policy** \> **+ Create a policy**.
+2. In the Compliance Center \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** + \> **Create policy**.
 
     ![创建策略按钮。](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
@@ -69,7 +69,7 @@ Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规
 
    ![可以应用 DLP 策略的位置的选项。](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
-   本示例中，若要保护存储在所有 OneDrive for Business 帐户的敏感信息，请同时关闭 Exchange 电子邮件和 **SharePoint** 网站的"状态 **"，** 并保留 OneDrive 帐户的"状态 **">**
+   本示例中，若要保护存储在所有 OneDrive for Business 帐户的敏感信息，请同时关闭 Exchange 电子邮件和 **SharePoint** 网站的"状态"，并保留 OneDrive 帐户的"状态">  
 
 7. 选择 **"查看"，然后从模板"下一步"自定义** \> **默认设置**。
 

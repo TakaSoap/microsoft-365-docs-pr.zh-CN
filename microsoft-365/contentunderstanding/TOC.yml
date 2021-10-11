@@ -79,4 +79,4 @@
     - name: 术语库报告
       href: term-store-analytics.md
 - name: 可扩展性
-  href: /sharepoint/dev/apis/syntex/syntex-model-rest-api.md
+  href: /sharepoint/dev/apis/syntex/syntex-model-rest-api

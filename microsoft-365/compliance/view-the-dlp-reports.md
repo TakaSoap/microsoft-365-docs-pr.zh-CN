@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: 使用 DLP 报告中Office 365查看 DLP 策略匹配项、替代或误报的数量，并查看它们是否随着时间的推移呈上升或下降趋势。
-ms.openlocfilehash: c585d65a9ce91ca0fae3881efc107efdd4537889
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 使用 OFFICE 365 中的 DLP 报告查看 DLP 策略匹配项、替代或误报的数量，并查看它们是否随着时间的推移呈上升或下降趋势。
+ms.openlocfilehash: 711ed74ca53ec09be6b2fd5738246dffab332307
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198573"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264932"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>查看数据丢失防护报告
 
@@ -48,7 +48,7 @@ ms.locfileid: "60198573"
     
   因为报告计数的聚合方式不同，所以策略匹配报告更适用于标识特定规则的匹配项并微调 DLP 策略。 事件报告更适合于识别对 DLP 策略有问题的特定内容片段。
     
-- **DLP 误报和重写** 如果您的 DLP 策略允许用户覆盖该策略或报告误报，则此报告显示一段时间之后此类实例的计数。 你可以按日期、位置或策略筛选报表。 您可以使用此报表实现以下目的： 
+- **DLP 误报和重写** 如果您的 DLP 策略允许用户覆盖该策略或报告误报，则此报告显示随着时间的推移此类实例的计数。 你可以按日期、位置或策略筛选报表。 您可以使用此报表实现以下目的： 
     
   - 通过查看哪个策略造成更多的误报来微调或优化你的 DLP 策略。
     
@@ -80,7 +80,7 @@ ms.locfileid: "60198573"
 
 - **安全读者** 角色Exchange管理中心。 默认情况下，此角色分配给管理中心中的组织管理和安全读者Exchange组。
 
-- **安全与合规中心中的** "仅查看 DLP 合规性&角色。 默认情况下，此角色分配给安全与合规中心中的合规性管理员、组织管理、安全管理员和安全读者&组。
+- **安全与合规中心** 中的"仅查看 DLP 合规性&角色。 默认情况下，此角色分配给安全与合规中心中的合规性管理员、组织管理、安全管理员和安全读者&组。
 
 - **"仅查看收件人"** 角色Exchange管理中心。 默认情况下，此角色分配给管理中心中的合规性管理、组织View-Only组织管理Exchange组。
 
@@ -88,7 +88,7 @@ ms.locfileid: "60198573"
 
 若要使用安全 &amp; 合规中心的大多数 cmdlet，你需要执行以下操作：
   
-1. [连接远程 &amp; PowerShell 访问安全与合规中心](/powershell/exchange/connect-to-scc-powershell&amp;clcid=0x409)
+1. [连接远程 &amp; PowerShell 访问安全与合规中心](/powershell/exchange/connect-to-scc-powershell)
     
 2. 使用以下任一 [安全 &amp; 与合规中心 cmdlet](/powershell/exchange/exchange-online-powershell)
     

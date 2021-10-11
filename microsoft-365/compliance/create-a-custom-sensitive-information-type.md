@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在安全与合规中心内为 DLP 创建、修改、删除和测试&类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fa6527c2c33eb4bf245f6e1a54a1d6995d074b1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d1856d0019a95f200b6be33f3f29ae3e471685e
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167398"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264920"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自定义敏感信息类型入门
 
@@ -57,7 +57,7 @@ ms.locfileid: "60167398"
 
 使用以下步骤可以创建完全定义的新敏感信息类型。 
 
-1. 在“合规中心”中，转到“**数据分类**”\>“**敏感信息类型**”，然后选择“**创建信息类型**”。
+1. 在合规性中心中，转到"**数据分类** \> **""敏感信息类型"，** 然后选择"**创建敏感信息类型"。**
 2. 填写“**名称**”和“**说明**” 的值，然后选择“**下一步**”。
 3. 选择“**创建模式**”。 在定义新的敏感信息类型时，可以创建多个模式，每个模式具有不同的元素和置信度。
 4. 选择模式的默认可信度。 这些值是“**低可信度**”、“**中可信度**”和“**高可信度**”。
@@ -147,7 +147,7 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 
 ### <a name="date-validator"></a>日期验证程序
 
-如果嵌入在正则表达式中的日期值是正在创建的新模式的一部分，可以使用日期验证程序来测试它是否满足您的条件。 例如，假设你要为九位数的员工标识号创建 SIT。 前六个数字是 DDMMYY 格式的雇用日期，最后三个数字是随机生成的数字。 验证前六个数字的格式是否正确。
+如果嵌入在正则表达式中的日期值是正在创建的新模式的一部分，可以使用日期验证程序测试它是否满足您的条件。 例如，假设你要为九位数的员工标识号创建 SIT。 前六个数字是 DDMMYY 格式的雇用日期，最后三个数字是随机生成的数字。 验证前六个数字的格式是否正确。
 
 1. 定义具有此正则表达式的主元素：
 

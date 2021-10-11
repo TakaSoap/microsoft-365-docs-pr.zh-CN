@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 活动资源管理器通过查看和筛选用户对你的标记内容执行的操作来完善数据分类功能的功能。
-ms.openlocfilehash: d44d285959e0529a694b2022d35f2b7e7a575fdc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 113fd3ec196ec6b16c49435e14ed213cd193e5db
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192255"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264740"
 ---
 # <a name="get-started-with-activity-explorer"></a>活动资源管理器入门
 
-通过[数据分类概述](data-classification-overview.md)[和内容](data-classification-content-explorer.md)资源管理器选项卡，您可以了解已发现和标记的内容以及该内容位于何处。 活动资源管理器通过允许你监视对已标记内容所执行的操作来完善此功能套件。 活动资源管理器提供已标记内容上活动的历史视图。 活动信息收集自活动Microsoft 365统一审核日志，在活动资源管理器 UI 中转换和提供。 
+通过[数据分类概述](data-classification-overview.md)[和内容](data-classification-content-explorer.md)资源管理器选项卡，您可以了解已发现和标记的内容以及该内容位于何处。 活动资源管理器通过允许你监视对已标记内容所执行的操作来完善此功能套件。 活动资源管理器提供已标记内容上活动的历史视图。 活动信息收集自活动Microsoft 365统一审核日志，在活动资源管理器 UI 中转换和提供。 活动资源管理器报告最多 30 天的数据。
 
 ![占位符屏幕截图概述活动资源管理器。](../media/data-classification-activity-explorer-1.png)
 
@@ -74,12 +74,13 @@ ms.locfileid: "60192255"
 
 - 合规性管理员
 - 安全管理员
+- 安全信息读取者
 
 ## <a name="activity-types"></a>活动类型
 
 活动资源管理器从多个活动源的审核日志中收集活动信息。 有关哪些标签活动可用于活动资源管理器的更多详细信息，请参阅活动资源管理器中可用的标签 [事件](data-classification-activity-explorer-available-events.md)。
 
- Office 本机应用程序、Azure 信息保护加载项、SharePoint Online、Exchange Online (标签的敏感度标签活动和保留标签活动) OneDrive。  示例如下：
+ Office本机应用程序、Azure信息保护外接程序、SharePoint Online 中的敏感度标签活动和Exchange Online (标签的保留标签) 和OneDrive。 示例如下：
 
 - 已应用的标签
 - 已更改（已升级、已降级或已删除）的标签
@@ -93,7 +94,7 @@ ms.locfileid: "60192255"
 - 已删除保护
 - 发现的文件 
 
-活动资源管理器还通过收集来自 Exchange Online、SharePoint Online、OneDrive、Teams 聊天和频道 (预览) 、本地 SharePoint 文件夹和库、本地文件共享和 Windows 10 设备的 **DLP** 策略匹配事件 **DLP (终结点数据丢失) 。** 来自设备中的Windows 10事件包括文件：
+活动资源管理器还通过收集来自 Exchange Online、SharePoint Online、OneDrive、Teams 聊天和频道 (预览) 、本地 SharePoint 文件夹和库、本地文件共享和 Windows 10 设备的 **DLP** 策略匹配事件 **DLP (终结点数据丢失) 。** 设备中的一Windows 10事件包括文件：
 
 - deletions
 - creations

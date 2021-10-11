@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 141178db0ba221d6e8ef9c5f3d4d85bb90607fb1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98dae682c8837a87d7c757b25111f4985e6e6489
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60160060"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264800"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
-[自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 您根据以下信息在 SIT (自定义) 类型：
+[自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 你可以根据以下信息定义一个 (SIT) 类型：
 
 - 模式
 - 如 *员工*、*徽章* 或 *ID 等关键字证据*
@@ -37,12 +37,12 @@ ms.locfileid: "60160060"
 
 但如果希望自定义敏感信息类型 （SIT） 使用精确数据值，而不是找到基于通用模式的匹配项，又该怎么操作呢？ 通过基于精确数据匹配 (EDM) 的分类，你可以创建专门设计的自定义敏感信息类型：
 
-- 动态且轻松地刷新
-- 更具可伸缩性
-- 导致更少的误报
-- 处理结构化敏感数据
-- 更安全地处理敏感信息
-- 与多种 Microsoft 云服务一起使用
+- 动态且易于刷新。
+- 更具可扩展性。
+- 导致误报数减少。
+- 处理结构化敏感数据。
+- 更安全地处理敏感信息。
+- 与多种 Microsoft 云服务一起使用。
 
 ![基于 EDM 的分类。](../media/EDMClassification.png)
 
@@ -62,7 +62,7 @@ ms.locfileid: "60160060"
 
 你必须是全局管理员、合规性管理员或 Exchange Online 管理员才能执行本文中描述的任务。 若要了解有关 DLP 权限的详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-这些订阅中包含基于 EDM 的分类
+这些订阅中包含基于 EDM 的分类:
 
 - Office 365 E5
 - Microsoft 365 E5
@@ -89,9 +89,9 @@ ms.locfileid: "60160060"
 
 设置和配置基于 EDM 的分类包括：
 
-1. [以 .tsv .csv保存敏感数据](#save-sensitive-data-in-csv-or-tsv-format)
-2. [定义你的敏感信息数据库架构](#define-the-schema-for-your-database-of-sensitive-information)
-3. [设置规则包](#set-up-a-rule-package)
+1. [将敏感数据保存为.csv .tsv 格式](#save-sensitive-data-in-csv-or-tsv-format)。
+2. [定义敏感信息数据库架构](#define-the-schema-for-your-database-of-sensitive-information)。
+3. [创建规则包](#set-up-a-rule-package)。
 
 #### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>以 .tsv .csv保存敏感数据
 
@@ -269,21 +269,21 @@ ms.locfileid: "60160060"
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
-      <Pattern confidenceLevel="65">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-      </Pattern>
-      <Pattern confidenceLevel="75">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-        <Any minMatches ="3" maxMatches ="100">
-          <match matches="PatientID" />
-          <match matches="MRN"/>
-          <match matches="FirstName"/>
-          <match matches="LastName"/>
-          <match matches="Phone"/>
-          <match matches="DOB"/>
-        </Any>
-      </Pattern>
-    </ExactMatch>
+  <Pattern confidenceLevel="65">
+    <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+  </Pattern>
+  <Pattern confidenceLevel="75">
+    <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+    <Any minMatches ="3" maxMatches ="100">
+      <match matches="PatientID" />
+      <match matches="MRN"/>
+      <match matches="FirstName"/>
+      <match matches="LastName"/>
+      <match matches="Phone"/>
+      <match matches="DOB"/>
+    </Any>
+  </Pattern>
+</ExactMatch>
 ```
 
 在此示例中，请注意：
@@ -376,14 +376,14 @@ ms.locfileid: "60160060"
 
 #### <a name="prerequisites"></a>先决条件
 
-- 向 **EDM\_DataUploaders** 安全组中添加一个 Microsoft 365 工作或学校帐户
-- 准备一台使用.NET 版本 4.6.2 的 Windows 10 或 Windows Server 2016 计算机，用于运行 EDMUploadAgent
+- 要添加到 **EDM \_ DataUploaders** Microsoft 365组的工作或学校帐户。
+- 一Windows 10 .NET Windows Server 2016 4.6.2 版本的计算机，用于运行 EDMUploadAgent。
 - 用于上传的计算机上应含有以下内容的目录：
-  - EDMUploadAgent
-  - 您的敏感项目文件.csv .tsv 格式，PatientRecords.csv **示例中的内容**
-  - 输出哈希和 salt 文件
-  - 来自 **edm .xml** 文件的数据存储名称，在本示例中为 `PatientRecords`
-- 如果使用 [精确数据匹配架构和敏感信息类型向导](sit-edm-wizard.md)，您 ***必须*** 将其下载。
+  - EDMUploadAgent。
+  - 您的敏感项目文件.csv .tsv 格式，PatientRecords.csv **示例中所示** 。
+  - 输出哈希和 salt 文件。
+  - 数据存储区文件中 **edm.xml名称;** 对于此示例，它是 `PatientRecords` 。
+- 如果使用了精确 [数据匹配架构和敏感信息类型向导](sit-edm-wizard.md)***，则必须下载*** 它。
 
 #### <a name="set-up-the-security-group-and-user-account"></a>设置安全组和用户帐户
 
@@ -399,7 +399,7 @@ ms.locfileid: "60160060"
 >
 > 在开始此过程之前，请确保你是 **EDM\_DataUploaders** 安全组的成员。
 >
-> （可选）您可以通过运行：在上载之前.csv或 .tsv 文件运行验证：
+> （可选）您可以通过运行：在.csv对文件或 .tsv 文件运行验证：
 >
 > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
@@ -433,25 +433,25 @@ ms.locfileid: "60160060"
 
    可选：如使用精确数据匹配架构和敏感信息类型向导创建架构和模式文件，请在命令提示符窗口中运行以下命令：
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
    ```
 
 5. 若要为敏感数据创建哈希并上传，请在命令提示符窗口中运行以下命令：
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"] /AllowedBadLinesPercentage [value]
    ```
 
    示例 **：EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C：\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5**
 
-   敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项指定管道分隔的文件。
-   如果您的敏感信息表包含一些格式不正确的值，但您希望在忽略无效行的同时导入剩余数据，可以在命令中使用 /AllowedBadLinesPercentage 参数。 上面的示例指定 5% 阈值。 这意味着，即使多达 5% 的行无效，该工具也将哈希并上载敏感信息表。 此设置的默认值为 1%。 
+   敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项来指定管道分隔的文件。
+   如果您的敏感信息表包含一些格式不正确的值，但您希望在忽略无效行的同时导入剩余数据，可以在命令中使用 **/AllowedBadLinesPercentage** 参数。 上面的示例指定 5% 阈值。 这意味着，即使多达 5% 的行无效，该工具也将哈希并上载敏感信息表。 在支持此参数的工具版本中，默认阈值为 0%。 因此，任何错误行都将导致错误。 
    此命令将自动将随机生成的 salt 值添加到哈希中，以增强安全性。 或者，如果你想要使用自己的随机混淆值，请将 **/Salt <saltvalue>** 值添加到命令中。 该值的长度必须为 64 个字符，并且只能包含 a-z 的字符和 0-9 的数字。
 
 6. 运行以下命令，检查“上传”状态：
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>
    ```
 
@@ -465,44 +465,44 @@ ms.locfileid: "60160060"
 
 可选：如使用精确数据匹配架构和敏感信息类型向导创建架构和模式文件，请在命令提示符窗口中运行以下命令：
 
-```dos
+```console
 EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
 ````
 
 1. 在命令提示符窗口中运行以下命令：
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /AllowedBadLinesPercentage [value]
    ```
 
    例如：
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
    ```
 
-   如果没有指定“**/Salt <saltvalue>**”选项，这将会输出具有以下扩展名的哈希文件和随机混淆值文件：
+   如果没有指定“**/Salt \<saltvalue\>**”选项，这将会输出具有以下扩展名的哈希文件和随机混淆值文件：
 
    - .EdmHash
    - .EdmSalt
 
-2. 以安全的方式将这些文件复制到计算机，以将敏感项目.csv .tsv 文件 (PatientRecords) 租户。
+2. 以安全的方式将这些文件复制到计算机，以将敏感项目.csv或 .tsv 文件 (PatientRecords) 租户。
 
    若要上传哈希数据，请在 Windows 命令提示符中运行以下命令：
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>
    ```
 
    例如：
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
    ```
 
    若要验证是否已上传敏感数据，请在“命令提示符”窗口中运行以下命令：
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetDataStore
    ```
 
@@ -510,7 +510,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
    如果要查看所有数据上载到特定存储的信息，请在 Windows 命令提示符下运行以下命令：
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
    ```
 
@@ -526,8 +526,8 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
 2. 将敏感数据重新导出到应用程序（如 Microsoft Excel）并保存为 .csv .tsv 格式的文件。 在按照[为敏感数据创建哈希并上传](#part-2-hash-and-upload-the-sensitive-data)中所述的步骤执行操作时，让所使用的文件名和位置保持不变。
 
-      > [!NOTE]
-      > 如果 .csv 或 .tsv 文件的结构 (字段名) 没有变化，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。
+    > [!NOTE]
+    > 如果 (或 .tsv 文件的结构 (字段名) .csv，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。
 
 3. 使用[任务计划程序](/windows/desktop/TaskSchd/task-scheduler-start-page)自动执行[创建哈希并上载敏感数据](#part-2-hash-and-upload-the-sensitive-data)流程中的步骤 2 和 3。 你可以使用多种方法来计划任务：
 
@@ -650,7 +650,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 10. 在“**条件**”部分的“**+ 添加条件**”列表中，选择“**内容包含敏感类型**”。
 
-      ![内容包含敏感信息类型。](../media/edm-dlp-newrule-conditions.png)
+    ![内容包含敏感信息类型。](../media/edm-dlp-newrule-conditions.png)
 
 11. 搜索你在设置规则包时创建的敏感信息类型，然后选择“**+ 添加**”。
     然后选择“**完成**”。
