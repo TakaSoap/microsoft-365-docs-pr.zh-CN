@@ -16,16 +16,18 @@ search.appverid:
 - SPO160
 - MET150
 f1.keywords: NOCSH
-ms.custom: admindeeplinkMAC
-localization_priority: Priority
+ms.custom:
+- admindeeplinkMAC
+- admindeeplinkTEAMS
+ms.localizationpriority: high
 recommendations: false
 description: 了解在 Microsoft 365 中用于限制或禁用共享的选项。
-ms.openlocfilehash: 3a8bdc738507760fcb7eff02692859f07dc8d5c9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9d1784e4520b59aedc53a71110f1c7ab0e9d8914
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170873"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154154"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>限制 Microsoft 365 中的共享
 
@@ -46,7 +48,7 @@ ms.locfileid: "59170873"
 
 你还可以限制人员访问共享内容的条件。 有关详细信息，请参阅本文后面的[条件访问](#conditional-access)。
 
-虽然可使用本文中介绍的管理员控制措施来限制组织内的共享，但我们强烈建议考虑使用 Microsoft 365 中提供的安全和合规性功能，以创建安全的共享环境。 有关信息，请参阅[使用 Microsoft 365 在 SharePoint 中进行文件协作](/sharepoint/deploy-file-collaboration)和[使用安全隔离配置团队](secure-teams-security-isolation.md)。
+虽然可以使用本文中所述的管理员控制来限制组织中的共享，但我们强烈建议考虑使用 Microsoft 365 中提供的安全性和合规性功能来创建安全的共享环境。有关信息，请参阅 [使用 Microsoft 365 在 SharePoint 中的文件协作](/sharepoint/deploy-file-collaboration) 和 [使用安全隔离配置团队](secure-teams-security-isolation.md)。
 
 若要了解组织中如何使用共享，请[运行文件和文件夹共享报告](/sharepoint/sharing-reports)。
 
@@ -59,7 +61,7 @@ ms.locfileid: "59170873"
 如果想要阻止 Teams 中的来宾访问，可在 Teams 管理中心内关闭来宾共享。
 
 关闭 Teams 的来宾共享
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2066851" target="_blank">Teams 管理中心</a> 中，展开“**组织范围的设置**”，然后单击“**来宾访问**”。
+1. 在 Teams 管理中心中，展开"来宾访问 **"选项卡** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**** 组织范围的设置</a>。
 2. 关闭“**在 Teams 中允许访客访问**”。
 3. 单击“**保存**”。
 
@@ -119,7 +121,7 @@ ms.locfileid: "59170873"
 
 ### <a name="block-access-to-a-site"></a>阻止访问网站
 
-可通过更改网站的锁定状态，阻止访问网站或将网站设置为只读。 有关详细信息，请参阅[锁定和解除锁定网站](/sharepoint/manage-lock-status)。
+可以通过更改网站的锁定状态来阻止对网站的访问或使网站成为只读网站。有关详细信息，请参阅 [锁定和解锁网站](/sharepoint/manage-lock-status)。
 
 ### <a name="permissions-inheritance"></a>权限继承
 
@@ -178,7 +180,7 @@ ms.locfileid: "59170873"
 
 ## <a name="people-in-your-organization-sharing-links"></a>*你组织中的人员* 共享链接
 
-默认情况下，网站的成员可以使用 *你组织中的人员* 链接来与组织中的其他人共享文件和文件夹。 你可以使用 PowerShell 禁用 *你组织中的人员* 链接：
+默认情况下，网站成员可以通过使用 *组织中的人员* 链接与组织中的其他人共享文件和文件夹。可以通过使用 PowerShell 来禁用 *组织中的人员* 链接：
 
 ```powershell
 Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks
@@ -210,7 +212,7 @@ Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingL
 
 ## <a name="conditional-access"></a>条件访问
 
-Azure Active Directory 条件访问提供的选项可根据网络位置、设备运行状况、登录风险和其他因素限制或防止与人员共享。 查看[什么是条件访问？](/azure/active-directory/conditional-access/overview)
+Azure Active Directory 条件访问提供的选项可根据网络位置、设备运行状况、登录风险和其他因素限制或阻止与人员共享。请参阅 [什么是条件访问？](/azure/active-directory/conditional-access/overview)。
 
 SharePoint 提供与 Azure AD 条件访问直接集成服务，适用于未托管的设备和网络位置。有关详细信息，请参阅以下参考：
 
