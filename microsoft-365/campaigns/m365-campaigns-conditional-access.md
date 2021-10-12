@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解安全默认值如何通过提供预配置的安全设置来帮助保护组织免受与标识相关的攻击。
-ms.openlocfilehash: 49b20e4880774ce97d99dc95e60c0cb417b213bc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ce8cd568fa452aa6c4ff9b03cf2a17ed57d959b6
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198974"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268690"
 ---
 # <a name="turn-on-security-defaults"></a>打开安全默认值
 
@@ -39,13 +39,13 @@ ms.locfileid: "60198974"
 
 如果订阅是在 2019 年 10 月 22 日当天或之后创建的，则可能会自动启用安全默认值，你应该 &mdash; 检查设置以确认。
 
-若要在 Azure AD Azure Active Directory (启用) 或检查它们是否已启用：
+若要启用安全默认值Azure Active Directory (Azure AD) 或检查它们是否已启用：
 
-1. 使用全局管理员<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>登录帐户。
+1. 使用安全管理员<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>条件访问管理员或全局管理员凭据登录网站。
 
-2. 在左窗格中，选择"全部 **显示**"，然后在"管理中心"下，选择 **"Azure Active Directory"。**
+2. 在左侧窗格中，选择"全部 **显示**"，**然后在"管理** 中心"下，选择"Azure Active Directory"。 
 
-3. 在管理中心的左窗格中 **，Azure Active Directory选择****"Azure Active Directory"。**
+3. 在管理中心左侧窗格中 **，Azure Active Directory选择****"Azure Active Directory"。**
 
 4. 从仪表板的左侧菜单中的"管理"**部分**，选择"属性 **"。**
 
@@ -79,7 +79,7 @@ ms.locfileid: "60198974"
 - [需要 MFA 进行 Azure 管理](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
 - [阻止传统身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 - [要求对所有用户执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [需要 Azure AD MFA 注册](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)- 需要 Azure AD Identity Protection，这是 azure AD 标识保护Azure Active Directory Premium P2
+- [需要Azure AD MFA 注册](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)- 需要Azure AD Identity Protection，这是 Azure Active Directory Premium P2
 
 若要详细了解条件访问，请参阅 [什么是条件访问？](/azure/active-directory/conditional-access/overview) 有关创建条件访问策略的信息，请参阅 [创建条件访问策略](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)。
 

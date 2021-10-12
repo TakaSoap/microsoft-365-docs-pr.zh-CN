@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6b74732a54d875dfe08469b15e35fda9f59a8351
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7a4438d564fd414d40c6c42b1265b13bcb13b983
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156254"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268704"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的资源
 
@@ -41,7 +41,7 @@ ms.locfileid: "60156254"
 1. 提高日志记录级别：
 
    ```bash
-   mdatp log level set --level verbose
+   mdatp log level set --level debug
    ```
 
    ```Output
@@ -95,7 +95,7 @@ ms.locfileid: "60156254"
 
 可以通过命令行完成重要任务，如控制产品设置和触发按需扫描：
 
-|组|应用场景|命令|
+|Group|应用场景|命令|
 |---|---|---|
 |配置|打开/关闭实时保护|`mdatp config real-time-protection --value [enabled/disabled]`|
 |配置|打开/关闭云保护|`mdatp config cloud --value [enabled/disabled]`|
@@ -110,7 +110,7 @@ ms.locfileid: "60156254"
 |配置|打开/关闭防病毒被动模式|`mdatp config passive-mode --value [enabled/disabled]`|
 |配置|配置按需扫描的并行度|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |配置|在安全智能更新后打开/关闭扫描|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
-|配置|仅按需扫描 (/关闭存档) |`mdatp config scan-archives --value [enabled/disabled]`|
+|配置|仅按需扫描 (/关闭存档扫描) |`mdatp config scan-archives --value [enabled/disabled]`|
 |诊断|更改日志级别|`mdatp log level set --level [error/warning/info/verbose]`|
 |诊断|生成诊断日志|`mdatp diagnostic create --path [directory]`|
 |运行状况|检查产品的运行状况|`mdatp health`|

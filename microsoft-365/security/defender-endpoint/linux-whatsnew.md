@@ -16,16 +16,25 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: cc24857adacf3b6fbb787030136f5ebb53f00937
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1692c80d400cbae3ebaefd2a6995cba9c362c580
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178343"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268892"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+## <a name="1014500-30121072145000"></a>101.45.00 (30.121072.14500.0) 
+
+- 向命令行工具添加了新开关：
+  - 控制按需扫描的并行度。 这可以通过 进行配置 `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` 。 默认情况下，使用 的并行 `2` 度。
+  - 控制启用还是禁用安全智能更新后的扫描。 这可以通过 进行配置 `mdatp config scan-after-definition-update --value [enabled/disabled]` 。 默认情况下，这设置为 `enabled` 。
+  - 控制在按需扫描过程中是否扫描存档。 这可以通过 进行配置 `mdatp config scan-archives --value [enabled/disabled]` 。 默认情况下，这设置为 `enabled` 。
+- 更改产品日志级别现在需要提升
+- 错误修补程序
 
 ## <a name="1013998-30121062139980"></a>101.39.98 (30.121062.13998.0) 
 
@@ -40,7 +49,7 @@ ms.locfileid: "60178343"
 - 从此版本开始，在通过命令行客户端触发的按需防病毒扫描期间检测到的威胁将自动修正。 扫描期间通过用户界面触发的威胁仍然需要手动操作。
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
-  - `--top N`：显示前 N 个 (仅在指定了值 `--sort` 时) 
+  - `--top N`：显示前 N 个 (仅在还指定了值 `--sort` 时) 
 - Bug 修复&性能改进
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0) 

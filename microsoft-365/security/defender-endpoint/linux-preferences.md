@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15dd2d09746ad934e50376c1d4a9172011983cde
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 704c9c11ee12d9e08d5ede73440f5fde7de3d51b
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154814"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268703"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -66,7 +66,7 @@ ms.locfileid: "60154814"
 
 #### <a name="enable--disable-real-time-protection"></a>启用/禁用实时保护
 
-确定是否在启用实时 (时扫描) 文件。
+确定是否启用实时保护 (扫描文件时) 这些文件。
 
 <br>
 
@@ -113,9 +113,41 @@ ms.locfileid: "60154814"
 |---|---|
 |**Key**|scanAfterDefinitionUpdate|
 |**数据类型**|布尔值|
-|**可能的值**|false（默认值） <p> true|
-|**Comments**|适用于终结点版本 101.41.51 或更高版本的 Defender 中可用。|
+|**可能的值**|true (默认)  <p> false|
+|**Comments**|适用于终结点版本 101.45.00 或更高版本的 Defender 中可用。|
 |
+
+#### <a name="scan-archives-on-demand-antivirus-scans-only"></a>扫描存档 (按需防病毒扫描仅扫描) 
+
+指定在按需防病毒扫描过程中是否扫描存档。
+
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|scanArchives|
+|**数据类型**|Boolean|
+|**可能的值**|true (默认)  <p> false|
+|**Comments**|适用于终结点版本 101.45.00 或更高版本的 Microsoft Defender 中可用。|
+|||
+
+#### <a name="degree-of-parallelism-for-on-demand-scans"></a>按需扫描的并行度
+
+指定按需扫描的并行度。 这与用于执行扫描并影响 CPU 使用率的线程数以及按需扫描的持续时间相对应。
+
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|maximumOnDemandScanThreads|
+|**数据类型**|整数|
+|**可能的值**|2 (默认值) 。 允许的值是介于 1 和 64 之间的整数。|
+|**Comments**|适用于终结点版本 101.45.00 或更高版本的 Microsoft Defender 中可用。|
+|||
   
 
 #### <a name="exclusion-merge-policy"></a>排除合并策略
@@ -137,7 +169,7 @@ ms.locfileid: "60154814"
 #### <a name="scan-exclusions"></a>扫描排除项
 
 从扫描中排除的实体。 排除项可以通过完整路径、扩展名或文件名指定。
- (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量的元素。) 
+ (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量) 
 
 <br>
 
@@ -147,7 +179,7 @@ ms.locfileid: "60154814"
 |---|---|
 |**Key**|排除项|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
 
 ##### <a name="type-of-exclusion"></a>排除类型
@@ -215,7 +247,7 @@ ms.locfileid: "60154814"
 
 ##### <a name="process-excluded-from-the-scan"></a>从扫描中排除的进程*
 
-指定从扫描中排除所有文件活动的进程。 可以通过进程的名称或名称指定 (例如，) 或完整 (`cat` 例如 `/bin/cat` ，) 。
+指定从扫描中排除所有文件活动的进程。 可以通过进程的名称或名称指定 (例如，) 或完整 `cat` (，例如 `/bin/cat`) 。
 
 <br>
 
@@ -226,7 +258,7 @@ ms.locfileid: "60154814"
 |**Key**|name|
 |**数据类型**|String|
 |**可能的值**|任何字符串|
-|**Comments**|仅在 *排除**$type FileName 时适用*|
+|**Comments**|仅在排除 *$type FileName 时适用*|
 |
 
 #### <a name="allowed-threats"></a>允许的威胁
@@ -271,7 +303,7 @@ ms.locfileid: "60154814"
 |---|---|
 |**Key**|threatTypeSettings|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
 
 ##### <a name="threat-type"></a>威胁类型
@@ -324,7 +356,7 @@ ms.locfileid: "60154814"
 |**Comments**|适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。|
 |
 
-#### <a name="antivirus-scan-history-retention-in-days"></a>防病毒扫描历史记录保留 (天数) 
+#### <a name="antivirus-scan-history-retention-in-days"></a>防病毒扫描历史记录保留时间 (天数) 
 
 指定结果在设备的扫描历史记录中保留的天数。 旧扫描结果将从历史记录中删除。 也从磁盘中删除的旧隔离文件。
 
@@ -368,7 +400,7 @@ ms.locfileid: "60154814"
 |---|---|
 |**Key**|cloudService|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>启用/禁用云提供的保护
@@ -403,10 +435,10 @@ ms.locfileid: "60154814"
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>启用/禁用自动示例提交
 
-确定是否将 (可能包含威胁的可疑) 发送给 Microsoft。 有三个级别用于控制示例提交：
+确定是否将 (可能包含威胁的样本) 发送给 Microsoft。 有三个级别用于控制示例提交：
 
 - **无**：不会向 Microsoft 提交任何可疑样本。
-- **保险箱：** 只有不包含个人身份信息或个人身份信息的可疑 (将自动) 提交。 这是此设置的默认值。
+- **保险箱：** 只有不包含个人身份信息或个人身份信息的可疑 (自动) 提交。 这是此设置的默认值。
 - **全部**：所有可疑示例都提交到 Microsoft。
 
 <br>
@@ -431,7 +463,7 @@ ms.locfileid: "60154814"
 |说明|值|
 |---|---|
 |**Key**|automaticDefinitionUpdateEnabled|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认值)  <p> false|
 |
 
@@ -485,7 +517,9 @@ ms.locfileid: "60154814"
 {
    "antivirusEngine":{
       "enableRealTimeProtection":true,
-      "maximumOnDemandScanThreads":1,
+      "scanAfterDefinitionUpdate":true,
+      "scanArchives":true,
+      "maximumOnDemandScanThreads":2,
       "passiveMode":false,
       "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",
@@ -568,4 +602,4 @@ python -m json.tool mdatp_managed.json
 
 ## <a name="configuration-profile-deployment"></a>配置文件部署
 
-为企业生成配置文件后，可以通过企业使用的管理工具进行部署。 Linux 上的 Defender for Endpoint 从 */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* 文件中读取托管配置。
+为企业生成配置文件后，可以通过企业使用的管理工具进行部署。 Linux 上的终结点的 Defender 从 */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* 文件读取托管配置。

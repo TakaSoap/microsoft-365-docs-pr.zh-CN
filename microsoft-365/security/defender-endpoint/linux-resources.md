@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 89178fc9c8ec44da0f9f51e2c4bfc6b1dfbab138
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8d7de5d6b897d93b0112745ed566879a451e5448
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211065"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268550"
 ---
 # <a name="resources"></a>资源
 
@@ -51,7 +51,7 @@ ms.locfileid: "60211065"
 
 2. 重现问题。
 
-3. 运行以下命令以备份适用于终结点日志的 Defender。 这些文件将存储在存档.zip内。
+3. 运行以下命令以备份适用于终结点日志的 Defender。 这些文件将存储在存档.zip中。
 
    ```bash
    sudo mdatp diagnostic create
@@ -106,7 +106,7 @@ ms.locfileid: "60211065"
 
 ****
 
-|组|应用场景|命令|
+|Group|应用场景|命令|
 |---|---|---|
 |配置|打开/关闭实时保护|`mdatp config real-time-protection --value [enabled\|disabled]`|
 |配置|打开/关闭行为监视|`mdatp config behavior-monitoring --value [enabled\|disabled]`
@@ -125,6 +125,9 @@ ms.locfileid: "60211065"
 |配置|打开 PUA 保护|`mdatp threat policy set --type potentially_unwanted_application --action block`|
 |配置|关闭 PUA 保护|`mdatp threat policy set --type potentially_unwanted_application --action off`|
 |配置|打开 PUA 保护的审核模式|`mdatp threat policy set --type potentially_unwanted_application --action audit`|
+|配置|配置按需扫描的并行度|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
+|配置|在安全智能更新后打开/关闭扫描|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|配置|仅按需扫描 (/关闭存档扫描) |`mdatp config scan-archives --value [enabled/disabled]`|
 |诊断|更改日志级别|`mdatp log level set --level verbose [error|warning|info|verbose]`|
 |诊断|生成诊断日志|`mdatp diagnostic create --path [directory]`|
 |运行状况|检查产品的运行状况|`mdatp health`|
@@ -140,39 +143,8 @@ ms.locfileid: "60211065"
 |隔离管理|将检测为威胁的文件添加到隔离区|`mdatp threat quarantine add --id [threat-id]`|
 |隔离管理|从隔离区中删除检测为威胁的文件|`mdatp threat quarantine remove --id [threat-id]`|
 |隔离管理|从隔离区还原文件|`mdatp threat quarantine restore --id [threat-id]`|
-|终结点检测和响应|设置未使用的 (预览) |`mdatp edr early-preview [enable|disable]`|
+|终结点检测和响应|设置早期预览 (未使用的) |`mdatp edr early-preview [enable|disable]`|
 |终结点检测和响应|设置 group-id|`mdatp edr group-ids --group-id [group-id]`|
-|终结点检测和响应|Set/Remove 标记，仅 `GROUP` 受支持|`mdatp edr tag set --name GROUP --value [tag]`|
-|终结点检测和响应|根目录 (列表) |`mdatp edr exclusion list [processes|paths|extensions|all]`|
+|终结点检测和响应|设置/删除标记，仅 `GROUP` 受支持|`mdatp edr tag set --name GROUP --value [tag]`|
+|终结点检测和响应|列出根 (排除) |`mdatp edr exclusion list [processes|paths|extensions|all]`|
 |
-
-## <a name="microsoft-defender-for-endpoint-portal-information"></a>适用于终结点的 Microsoft Defender 门户信息
-
-在 Defender for Endpoint 门户中，你将看到两类信息：
-
-- 防病毒警报，包括：
-  - Severity
-  - 扫描类型
-  - 设备信息 (主机名、设备标识符、租户标识符、应用版本和操作系统类型) 
-  - 文件信息 (名称、路径、大小和哈希) 
-  - 威胁信息 (名称、类型和状态) 
-- 设备信息，包括：
-  - 设备标识符
-  - 租户标识符
-  - 应用版本
-  - 主机名称
-  - 操作系统类型
-  - 操作系统版本
-  - 计算机模型
-  - 处理器体系结构
-  - 设备是否是虚拟机
-
-### <a name="known-issues"></a>已知问题
-
-- 你可能会在门户的"计算机信息"页中看到"无传感器数据，通信受损"Microsoft 365 Defender，即使产品正在正常工作。 我们正在解决此问题。
-- 登录的用户不会显示在Microsoft 365 Defender门户中。
-- 在 SUSE 分发中，如果 *libatomic1* 安装失败，应验证操作系统是否注册：
-
-   ```bash
-   sudo SUSEConnect --status-text
-   ```
