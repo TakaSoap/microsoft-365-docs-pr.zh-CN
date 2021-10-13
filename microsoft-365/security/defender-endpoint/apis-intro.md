@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1ccd9982f387fb5af984bf2b381053d786cc5615
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c67ceb51de8084727d03cb37f69c27b034eef707
+ms.sourcegitcommit: 11855e904e7f4e57aff302852546a93526cad4dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191991"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60275672"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>访问 Microsoft Defender for Endpoint API
 
@@ -42,7 +42,7 @@ Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作�
 
 通常，你将需要执行以下步骤来使用 API：
 
-- 创建 [AAD 应用程序](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
+- 创建[AAD应用程序](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
 - 使用此应用程序获取访问令牌
 - 使用令牌访问 Defender for Endpoint API
 
@@ -54,7 +54,7 @@ Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作�
 
   使用应用程序上下文访问 Defender for Endpoint API 需要执行的步骤：
 
-  1. 创建 AAD Web 应用程序。
+  1. 创建AAD Web 应用程序。
   2. 为应用程序分配所需的权限，例如，"读取警报"和"隔离计算机"。
   3. 为此应用程序创建密钥。
   4. 使用应用程序及其密钥获取令牌。
@@ -66,9 +66,9 @@ Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作�
 
   用于代表用户执行 API 中的操作。
 
-  使用应用程序上下文访问 Defender for Endpoint API 要执行的步骤：
+  使用用户上下文访问 Defender for Endpoint API 要执行的步骤：
 
-  1. 创建 AAD Native-Application。
+  1. 创建AAD本机应用程序。
   2. 为应用程序分配所需的权限，例如"读取警报"和"隔离计算机"等。
   3. 使用具有用户凭据的应用程序获取令牌。
   4. 使用令牌访问 Microsoft Defender 终结点 API

@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: b50e320752f64360132410c50f454fbfbfd27a82
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5fa3ad73ffbc869a700776319477c5ab3128cae5
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195613"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268750"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -127,8 +127,9 @@ ms.locfileid: "60195613"
 
 - 若想以编程方式从审核日志下载数据，建议使用 Office 365 管理活动 API，而不是使用 PowerShell 脚本。 Office 365 管理活动 API 是一项 REST Web 服务，可用于为组织制定操作、安全和合规性监视解决方案。 有关详细信息，请参阅 [Office 365 管理活动 API 参考](/office/office-365-management-api/office-365-management-activity-api-reference)。
 
-- 发生事件后，最多需要 30 分钟到 24 小时即可在审核日志搜索的结果中返回相应的审核日志记录。 下表显示了 Microsoft 365 中不同服务所花费的时间。
+- Azure Active Directory (Azure AD) 是 Microsoft 365 的目录服务。 统一审核日志包含用户、组、应用程序、域以及在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 或 Azure 管理门户中执行的目录活动。 有关 Azure AD 事件的完整列表，请参阅 [Azure Active Directory 审核报告事件](/azure/active-directory/reports-monitoring/concept-audit-logs)。
 
+- 发生事件后，最多需要 30 分钟到 24 小时即可在审核日志搜索的结果中返回相应的审核日志记录。 下表显示了 Microsoft 365 中不同服务所花费的时间。
 
   |Microsoft 365 服务或功能|30 分钟|24 小时|
   |---|:---:|:---:|
@@ -151,8 +152,6 @@ ms.locfileid: "60195613"
   |Yammer||![复选标记。](../media/checkmark.png)|
   |Microsoft Forms|![复选标记。](../media/checkmark.png)||
   ||||
-
-- Azure Active Directory (Azure AD) 是 Microsoft 365 的目录服务。 统一审核日志包含用户、组、应用程序、域以及在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 或 Azure 管理门户中执行的目录活动。 有关 Azure AD 事件的完整列表，请参阅 [Azure Active Directory 审核报告事件](/azure/active-directory/reports-monitoring/concept-audit-logs)。
 
 - 默认情况下，Power BI 的审核日志记录未启用。 若要在审核日志中搜索 Power BI 活动，则必须在 Power BI 管理门户中启用审核。 有关说明，请参阅 [Power BI 管理门户](/power-bi/service-admin-portal#audit-logs)中的“审核日志”部分。
 
@@ -425,7 +424,6 @@ ms.locfileid: "60195613"
         
     :::column-end:::
 :::row-end:::
-
 
 ### <a name="file-and-page-activities"></a>文件和页面活动
 
@@ -826,8 +824,13 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已更新数据访问设置|UpdatedDataAccessSetting|管理员已更新数据访问设置。|
 |已更新隐私设置|UpdatedPrivacySetting|管理员已更新隐私设置；例如，最小组大小。|
 |已上传组织数据|UploadedOrgData|管理员已上传组织数据文件。|
+|用户已登录<sup>*</sup>| UserLoggedIn |已登录到其 Microsoft 365 用户帐户的用户。|
+|用户已注销<sup>*</sup>| UserLoggedOff |已注销其 Microsoft 365 用户帐户的用户。
 |已查看“探索”页|ViewedExplore|分析员在一个或多个“探索”页选项卡中查看了可视化。|
 ||||
+
+> [!NOTE]
+> <sup>*</sup>这些是 Azure Active Directory 登录和注销活动。 即使未在组织中启用工作区分析，也记录这些活动。 有关用户登录活动的详细信息，请参阅 [Azure Active Directory 中的登录日志](/azure/active-directory/reports-monitoring/concept-sign-ins)。
 
 ### <a name="microsoft-teams-activities"></a>Microsoft Teams 活动
 
