@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在家办公，在家办公，混合，远程工作者，混合办公，远程员工，混合连接，远程访问，远程办公，远程办公，远程办公，移动办公，远程工作，随时随地开展工作，灵活的工作场所
 description: 逐步设置基础结构层，以便远程工作者能够安全访问本地和 Microsoft 365 资源。
-ms.openlocfilehash: b93469fe1cb60dd1f0b86d34e23c49faa5c9e373
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ae6d9ab0017ed4d4a33fc57be74ac0ea4aa955a4
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205027"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335946"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>设置使用 Microsoft 365 实现混合工作的基础结构
 
@@ -91,7 +91,7 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 |Azure AD 应用程序代理|为 Intranet 服务器上托管的基于 Web 的应用程序提供安全的远程访问权限。|需要单独的付费 Azure 订阅|
 |配置点到站点 VPN|通过 Azure 虚拟网络创建从远程工作者的设备到 intranet 的安全连接。|需要单独的付费 Azure 订阅|
 |Windows 虚拟桌面|支持只能将其个人和非托管设备与在 Azure 中运行的虚拟桌面配合使用的远程工作者。|需要单独的付费 Azure 订阅|
-|远程桌面服务 (RDS)|允许员工通过 Intranet 连接到基于 Windows 的计算机。|Microsoft 365 E3 或 E5|
+|远程桌面 |允许员工通过 Intranet 连接到基于 Windows 的计算机。|Microsoft 365 E3 或 E5|
 |远程桌面服务网关|加密通信，防止 RDS 主机直接向 Internet 公开。|需要单独的 Windows Server 许可证|
 |Microsoft Intune|管理设备和应用程序。|Microsoft 365 E3 或 E5|
 |内容和功能，|管理设备上的软件安装、更新和设置|需要单独的 Configuration Manager 许可证|

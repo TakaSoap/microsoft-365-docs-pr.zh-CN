@@ -9,18 +9,21 @@ audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何在 Microsoft 合规性管理器Excel评估模板的数据。
-ms.openlocfilehash: fc7e54089bc0d2445c45c785ba426cce95651351
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+ms.openlocfilehash: 899dd42401bb4c7acceb1db5bfe5816b383ae16b
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223495"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335654"
 ---
 # <a name="format-assessment-template-data-in-excel-for-microsoft-compliance-manager"></a>在 Microsoft 合规性管理器Excel评估模板数据的格式
 
@@ -34,7 +37,7 @@ ms.locfileid: "60223495"
 
 ## <a name="spreadsheet-format"></a>电子表格格式
 
-该Excel电子表格包含四个选项卡，其中三个为必需选项卡：
+该Excel电子表格包含四个选项卡，其中三个选项卡是必需的：
 
 1. [模板](#template-tab) (模板) 
 2. [ControlFamily](#controlfamily-tab) (必需) 
@@ -45,7 +48,7 @@ ms.locfileid: "60223495"
 
 ### <a name="template-tab"></a>"模板"选项卡
 
-" **模板** "选项卡是必需的。 此选项卡中的信息提供有关模板的元数据。 有四个必需列。 列必须保留工作表上Excel，如下所示。 您可以在这四列 **后** 添加您自己的列以提供您自己的维度。 如果这样做，请务必将它们添加到" **维度"** 选项卡。
+" **模板** "选项卡是必需的。 此选项卡中的信息提供有关模板的元数据。 有四个必需列。 这些列必须保留工作表Excel的顺序，如下所示。 您可以在这四列 **后** 添加您自己的列以提供您自己的维度。 如果这样做，请务必将它们添加到" **维度"** 选项卡。
 
 - **title**：这是模板的标题，必须是唯一的。 它不能与合规性管理器中拥有的另一个模板共享名称，包括你自己的模板或合规性管理器模板。
 
@@ -76,14 +79,14 @@ ms.locfileid: "60223495"
 
 " **操作** "选项卡是必需的。  它指定了由组织管理的改进操作，而不是 Microsoft 的改进操作，这些改进操作已存在于合规性管理器中。 此选项卡的必需列必须遵循示例电子表格中提供的顺序：
 
-- **actionTitle：** 这是操作的标题，是必填字段。 你提供的标题必须是唯一的。 **重要** 提示：如果你引用了自己已有的操作， (如在另一个模板) 并修改后续列中的任何元素，这些更改将传播到其他模板中的同一操作。
+- **actionTitle：** 这是操作的标题，是必填字段。 你提供的标题必须是唯一的。 **重要** 提示：如果引用了自己拥有的操作（ (如在其他模板) 中）并修改后续列中的任何元素，这些更改将传播到其他模板中的同一操作。
 
 - **implementationType：** 在此必填字段中，列出以下三种实现类型之一：
-- **操作** - 人员和流程实施的用于保护组织系统、资产、数据和人员的机密性、完整性和可用性 (例如：安全意识和培训) 
+- **操作** - 人员和流程为保护组织系统、资产、数据和人员的机密性、完整性和可用性而实施的 (例如：安全意识和培训) 
 - **技术** - 使用信息系统的硬件、软件或固件组件中包含的技术和机制完成的操作，以保护组织系统和数据的机密性、完整性和可用性 (例如：多重身份验证) 
-- **文档** - 通过建立和定义保护组织系统、资产、数据和人员的机密性、完整性和可用性所需的控制措施的已记录策略和过程实施的 (例如：信息安全策略) 
+- **文档** - 通过记录的策略和过程实施的操作，这些策略和过程建立和定义保护组织系统、资产、数据和人员的机密性、完整性和可用性所需的控件 (例如：信息安全策略) 
 
-- **actionScore：** 在此必填字段中，为操作提供一个数值分数值。 该值必须是从 1 到 99 的整个数字;不能为 0、null 或空白。 数字越大，其改进合规性状态的价值就越高。 下图演示合规性管理器如何对控件进行评分：
+- **actionScore：** 在此必填字段中，为操作提供一个数值分数值。 该值必须是一个从 1 到 99 的全数;不能为 0、null 或空白。 数字越大，其改进合规性状态的价值就越高。 下图演示合规性管理器如何对控件进行评分：
 
   ![合规性管理器控制点值。](../media/compliance-score-action-scoring.png "合规性管理器控制点值")
 

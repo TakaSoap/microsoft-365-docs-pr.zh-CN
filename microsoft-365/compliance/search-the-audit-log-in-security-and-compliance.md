@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 5fa3ad73ffbc869a700776319477c5ab3128cae5
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: 3edb4307937bcf76a87f9bbdf8930a646794156e
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268750"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335826"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -418,10 +418,10 @@ ms.locfileid: "60268750"
         [通信合规性活动](#communication-compliance-activities)
     :::column-end:::
     :::column:::
-        [Exchange 管理员活动](#exchange-admin-audit-log)
+        [报告活动](#report-activities)
     :::column-end:::
     :::column:::
-        
+        [Exchange 管理员活动](#exchange-admin-audit-log)
     :::column-end:::
 :::row-end:::
 
@@ -1026,7 +1026,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 - [配置简介电子邮件](/Briefing/be-admin)
 
 |**友好名称**|**操作**|**说明**|
-|:-----|:-----|:-----|
+|:----|:-----|:-----|
 |已更新组织隐私设置|UpdatedOrganizationBriefingSettings|管理员更新 “简介电子邮件” 的组织隐私设置。 |
 |已更新用户隐私设置|UpdatedUserBriefingSettings|管理员更新 “简介电子邮件” 的用户隐私设置。
 ||||
@@ -1073,6 +1073,15 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 |策略更新|SupervisionPolicyCreated, SupervisionPolicyUpdated, SupervisionPolicyDeleted|通信合规性管理员已执行策略更新。|
 |策略匹配|SupervisionRuleMatch|用户已发送匹配策略条件的邮件。|
 |已应用于邮件的标记|SupervisoryReviewTag|标记已应用于邮件或已解析邮件。|
+||||
+
+### <a name="report-activities"></a>报告活动
+
+下表列出了在 Microsoft 365 审核日志中记录的使用情况报告的活动。
+
+|**友好名称**|**操作**|**说明**|
+|:-----|:-----|:-----|
+|已更新使用情况报告的隐私设置|UpdateUsageReportsPrivacySetting|管理员更新了使用情况报告的隐私设置。 |
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理员审核日志

@@ -9,24 +9,27 @@ audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何在 Microsoft 合规性管理器中创建评估模板。 使用格式化的文件创建和修改Excel模板。
-ms.openlocfilehash: 5db58b1032f5c654f1c02b81c7d1b6929a9078c7
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+ms.openlocfilehash: c2638d2425d505dcb15e1827e54c1a2d6492e6a7
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223493"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60334634"
 ---
 # <a name="create-an-assessment-template-in-microsoft-compliance-manager"></a>在 Microsoft 合规性管理器创建评估模板
 
-若要在合规性管理器中为自定义评估创建自己的新模板，你需要使用经过特殊格式Excel电子表格来组合必要的控制数据。 完成电子表格后，将其导入合规性管理器。
+若要在合规性管理器中为自定义评估创建自己的新模板，你将使用经过特殊格式Excel电子表格来组合必要的控制数据。 完成电子表格后，将其导入合规性管理器。
 
-若要了解有关设置电子表格格式的信息，请参阅使用 Excel[设置评估模板数据的格式](compliance-manager-templates-format-excel.md)。
+若要了解有关设置电子表格格式的信息，请参阅使用 Excel[设置评估模板Excel。](compliance-manager-templates-format-excel.md)
 
 ## <a name="required-roles"></a>所需角色
 
@@ -38,7 +41,7 @@ ms.locfileid: "60223493"
 2. 选择 **"创建新模板"。** 将打开模板创建向导。
 3. 选择要创建的模板类型。 在这种情况下，请选择"**创建自定义模板"，** 然后选择"下一 **步"。**
 4. 在 **"Upload文件**"屏幕上，选择"浏览"查找并上载包含所有所需Excel模板数据的格式化文件。
-5. 如果文件没有问题，将显示上载的文件的名称。 选择“**下一步**”以继续。  (如果需要更改文件，请选择"更改Upload **文件") 。**
+5. 如果文件没有问题，将显示上载的文件的名称。 选择“**下一步**”以继续。  (如果需要更改文件，请选择"更改Upload **文件) 。**
     - 如果文件出错，顶部的错误消息将说明错误。 你将需要修复文件并再次上传它。 如果电子表格的格式不正确，或者某些字段中的信息无效，则会导致错误。
 6. " **审阅和完成"** 屏幕显示改进操作和控件的数量以及模板的最大分数。 准备好批准后，选择" **创建模板"。**  (如果需要进行更改，请选择"上 **一** 步") 
 7. 最后一个屏幕确认已创建一个新模板。 选择 **"完成** "退出向导。

@@ -289,7 +289,7 @@
         - name: 标识和设备访问配置
           href: ../security/office-365-security/microsoft-365-policies-configurations.md
         - name: 为终结点部署 Microsoft Defender
-          href: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
+          href: /microsoft-365/security/defender-endpoint/deployment-phases.md
         - name: 从 Symantec 迁移到 Microsoft Defender for Endpoint
           href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
         - name: 从 McAfee 迁移到 Microsoft Defender for Endpoint

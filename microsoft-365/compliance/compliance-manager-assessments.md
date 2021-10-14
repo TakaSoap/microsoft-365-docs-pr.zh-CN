@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 在 Microsoft 合规性管理器中生成评估，帮助你满足对组织非常重要的法规和认证要求。
-ms.openlocfilehash: a425f144e2c98866d32f14d7a16829342c14ef74
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+ms.openlocfilehash: 536b153a847ef038c4dee25d3dcd23aa638049ee
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223418"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335922"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>在合规性管理器中生成和管理评估
 
@@ -36,9 +39,9 @@ ms.locfileid: "60223418"
 
 ## <a name="data-protection-baseline-default-assessment"></a>数据保护基线默认评估
 
-为了开始操作，Microsoft 在合规性管理器 **中** 提供了针对 Microsoft 365 **数据保护基线的默认评估**。 此基线评估具有一组针对数据保护关键法规和标准以及一般数据管理的控制措施。 此基线主要从 NIST CSF (国家标准和技术网络安全协会) 和 ISO (国际标准化组织) 以及 FedRAMP (联邦风险和授权管理计划) 以及欧盟) 的 GDPR (一般数据保护条例中制定要素。
+为了让你开始操作，Microsoft 在合规性管理器中提供了针对Microsoft 365 **基线的默认评估**。 此基线评估具有一组针对数据保护关键法规和标准以及一般数据管理的控制措施。 此基线主要来自 NIST CSF (国家标准和技术网络安全协会) 和 ISO (国际标准化组织) ，以及 FedRAMP (联邦风险和授权管理计划) 以及欧盟) 的 GDPR (一般数据保护条例。
 
-此评估用于在配置任何其他评估之前，在首次访问合规性管理器时计算初始合规性分数。 合规性管理器收集来自解决方案解决方案的初始Microsoft 365信号。 你可以一目了然地查看组织相对于关键数据保护标准和法规的表现，并查看要采取的建议改进措施。
+此评估用于在配置任何其他评估之前，在首次访问合规性管理器时计算初始合规性分数。 合规性管理器从你的解决方案中收集Microsoft 365信号。 你可以一目了然地查看组织相对于关键数据保护标准和法规的表现，并查看要采取的建议改进措施。
 
 随着构建和管理自己的评估以满足组织的特定需求，合规性管理器将变得更加有用。
 
@@ -87,11 +90,11 @@ ms.locfileid: "60223418"
     - Go to your **assessments** page in Compliance Manager and select **Add assessment**;或
     - 在评估模板选项卡上找到想要使用的模板，查看其详细信息，然后选择创建 **评估**。 这将填充向导的模板选择字段。
 
-3. **选择模板**：如果还没有在步骤 2 中选择模板，请选择模板作为评估的基础。 你将看到分为包含和高级类别的模板列表， ([模板](compliance-manager-templates.md#template-availability-and-licensing) 类型了解) 。 选择所选模板旁边的单选按钮，然后选择"下一 **步"。**
+3. **选择模板**：如果还没有在步骤 2 中选择模板，请选择模板作为评估的基础。 你将看到模板列表，该列表分为包含的模板和高级 ([模板类型](compliance-manager-templates.md#template-availability-and-licensing) 了解详细信息) 。 选择所选模板旁边的单选按钮，然后选择"下一 **步"。**
 
 4. **产品、名称和组：** 设置这些属性以标识评估、选择要评估的产品，并将其分配给组。
 
-    - **产品**：如果你使用的是通用模板，请选择你是为新产品还是已在合规性管理器中定义的现有自定义产品创建此评估。 如果您选择新产品，请输入其名称。 请注意，在使用通用Microsoft 365时，不能选择产品作为产品。 如果使用自定义Microsoft 365，将填充此字段以指示Microsoft 365无法更改。
+    - **产品**：如果你使用的是通用模板，请选择你是为新产品还是已在合规性管理器中定义的现有自定义产品创建此评估。 如果您选择新产品，请输入其名称。 请注意，在使用通用Microsoft 365时，不能选择产品作为产品。 如果使用模板Microsoft 365，将填充此字段以指示Microsoft 365无法更改。
     - **名称**：在"评估名称"字段中输入 **评估名称** 。 评估名称在组中必须是唯一的。 如果你的评估名称与任意给定组中另一个评估的名称相匹配，你将收到一个错误，要求您创建其他名称。
     - **组**：将评估分配到组。 您可以：
         - 选择 **"使用现有** 组"将其分配给已创建的组;或
@@ -204,7 +207,7 @@ ms.locfileid: "60223418"
 
 ## <a name="export-an-assessment-report"></a>导出评估报告
 
-可以将评估导出到组织Excel合规性利益干系人或外部审核员和监管机构的配置文件。 在评估详细信息页面上，选择页面顶部附近的"生成报告"按钮，这将创建一个Excel可保存和共享的报告文件。
+可以将评估导出到组织Excel合规性利益干系人或外部审核员和监管机构的文件。 在评估详细信息页面上，选择页面顶部附近的"生成报告"按钮，这将创建一Excel可保存和共享的报告文件。
 
 该报告是自导出日期和时间起评估的快照。 它包含由你和 Microsoft 管理的控制措施的详细信息，包括实现状态、测试日期和测试结果。
 

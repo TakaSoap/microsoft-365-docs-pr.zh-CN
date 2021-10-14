@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解合规性管理程序中的新增功能以及将提供哪些功能。 阅读更新后的评估、新的评估模板、新操作等。
-ms.openlocfilehash: e449cfdac56b9a22a571e1a6672bd274616508d9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6082f008dd3290ba396796e5d0ae7c3ad940db79
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179243"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335546"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft 合规性管理器中的新增功能
 
@@ -36,7 +39,7 @@ ms.locfileid: "60179243"
 我们发布了 75 个新的评估模板，其中包括：
 - 澳大利亚隐私法案
 - CIS Microsoft 365 Foundation 级别 1 和 2
-- 德国 - 针对金融机构 IT 部门 (使用，) 
+- 德国 - 金融机构 IT 部门与 (监管) 
 - Sarbanes-Oxley法案
 - 南非 - 促进信息访问法案
 

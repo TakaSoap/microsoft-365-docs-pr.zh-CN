@@ -9,18 +9,21 @@ audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何修改 Microsoft 合规性管理器中的评估模板。
-ms.openlocfilehash: 846c3bc02105a50863afa7caca6041d9f72a5d95
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+ms.openlocfilehash: 539da4118843e8d72ead07b06a351d2245c2f6d9
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223494"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335462"
 ---
 # <a name="modify-assessment-templates-in-microsoft-compliance-manager"></a>修改 Microsoft 合规性管理器中的评估模板
 
@@ -57,7 +60,7 @@ ms.locfileid: "60223494"
 
 您可以更改除标题 之外的任何 *改进操作的信息*。 您可以编辑 B 列前向的任何单元格，当您将文件导入回模板时，该模板中的改进操作现在将包含更新的数据。
 
-您无法编辑 A **列** (操作) ，因为如果您这样做，合规性管理器会认为这是一个新的改进操作。 如果要更改改进操作的名称，请参阅下面的说明。
+您不能编辑 A **列** (操作) 因为如果您这样做，合规性管理器会认为这是一个新的改进操作。 如果要更改改进操作的名称，请参阅下面的说明。
 
 ### <a name="change-an-improvement-actions-name"></a>更改改进操作的名称
 
@@ -110,4 +113,4 @@ ms.locfileid: "60223494"
 您的模板现在将包含您所做的更改。 使用此修改后模板的任何评估现在将显示挂起的更新，你将需要接受对评估的更新以反映在模板中所做的更改。 详细了解评估 [更新](compliance-manager-assessments.md#accept-updates-to-assessments)。
 
 > [!NOTE]
-> 如果使用英语版本外的其他语言使用合规性管理器，则你会注意到，导出模板进行自定义时，某些文本Excel。 操作标题 (改进操作，如果适用，Microsoft) 必须英语，控件必须识别这些操作。 如果对操作标题进行更改，请确保以英语编写它，以便正确导入文件。
+> 如果使用英语版本外的其他语言使用合规性管理器，你会注意到，导出模板进行自定义时，某些文本以英语Excel。 操作标题 (改进操作，如果适用，Microsoft) 必须英语，控件必须识别。 如果对操作标题进行更改，请确保以英语编写它，以便正确导入文件。

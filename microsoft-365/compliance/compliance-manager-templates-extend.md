@@ -9,36 +9,39 @@ audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何扩展 Microsoft 合规性管理器中的评估模板，以添加和修改控制措施。
-ms.openlocfilehash: a255b3787a1da66be5882f00854d5a73cfe0352e
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+ms.openlocfilehash: 4618c085228c44e3af1aa0b3de9c3b1ebd63424c
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223492"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60336055"
 ---
 # <a name="extend-assessment-templates-in-microsoft-compliance-manager"></a>在 Microsoft 合规性管理器中扩展评估模板
 
 合规性管理器提供向现有模板添加自己的控件和改进操作的选项。 此过程称为扩展模板。
 
-若要扩展模板，将根据是扩展评估模板还是通用评估模板来Microsoft 365模板数据的特殊说明。
+若要扩展模板，将使用特殊说明来修改模板数据，具体取决于你是在扩展Microsoft 365模板还是通用评估模板。
 
 ## <a name="extend-microsoft-365-assessment-templates"></a>扩展Microsoft 365评估模板
 
-扩展 Microsoft 365 模板时，它仍然可以接收 Microsoft 发布的更新，当相关法规或产品策略发生更改时，可能会 (接受评估更新) 。 [](compliance-manager-assessments.md#accept-updates-to-assessments)
+扩展 Microsoft 365 模板时，它仍然可以接收 Microsoft 发布的更新，当相关法规或产品策略发生更改时 (请参阅接受评估更新) 。 [](compliance-manager-assessments.md#accept-updates-to-assessments)
 
 ### <a name="prepare-template-data-and-create-extension"></a>准备模板数据和创建扩展
 
-若要准备，您需要组合一个特殊格式的电子表格Excel导入必要的模板数据。 这些Excel文件遵循使用 Excel 设置评估模板数据[](compliance-manager-templates-format-excel.md)格式中列出的相同格式，但扩展有特殊要求。 请参阅以下其他要点以帮助防止错误：
+若要准备，您需要组合一个特殊格式的电子表格Excel导入必要的模板数据。 这些Excel文件遵循 Format assessment template data [with Excel中](compliance-manager-templates-format-excel.md)概述的相同格式，但扩展有特殊要求。 请参阅以下其他要点以帮助防止错误：
 
 - 电子表格应仅包含要添加到评估的操作和控制。
 - 电子表格不能包含要修改的评估中已存在的任何控件或操作。
-- 请考虑在模板标题中包括"扩展名"，例如，"GDPR – [你的公司名称]扩展名"。 这样，与 Microsoft 提供的标准模板或名称相似的自定义模板不同，更易于在评估模板页面上的列表中进行标识。
+- 请考虑在模板标题中包括"扩展名"，例如，"GDPR – [你的公司名称]扩展名"。 这样，与 Microsoft 提供的标准模板或名称相似的自定义模板不同，更易于在评估模板页上的列表中进行标识。
 
 设置电子表格格式后，请按照以下步骤操作。
 

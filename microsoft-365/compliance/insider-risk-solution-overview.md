@@ -1,9 +1,9 @@
 ---
 title: 内部风险解决方案
-description: 了解如何在组织中通过内部风险解决方案帮助最大程度地降低Microsoft 365。
+description: 了解如何通过组织中内部风险解决方案帮助最大程度地降低Microsoft 365。
 keywords: Microsoft 365、内部风险、合规性
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: ab7f0b26770c78298d620fa1f7d991dc5c7cae4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5028b2f577d5eb67a3e1316048878d1020a7e53c
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175235"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60334670"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 内部风险解决方案
 
@@ -102,7 +102,7 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 ### <a name="privileged-access-management"></a>特权访问管理
 
-Privileged access management allows granular access control over privileged Exchange Online admin tasks in Office 365. 它可以帮助保护你的组织免受具有永久访问敏感数据或访问关键配置设置权限的现有特权管理账户带来的安全问题。
+利用特权访问管理，可以精细地控制特权Exchange Online管理任务Office 365。 它可以帮助保护你的组织免受具有永久访问敏感数据或访问关键配置设置权限的现有特权管理账户带来的安全问题。
 
 特权访问管理在下列订阅中可用：
 
@@ -117,7 +117,7 @@ Privileged access management allows granular access control over privileged Exch
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>部署Microsoft 365内部风险解决方案
 
-为了帮助保护组织免受内部风险，请设置和部署以下Microsoft 365解决方案：
+若要帮助组织抵御内部风险，请设置和部署以下Microsoft 365解决方案：
 
 ![内部风险解决方案深度防御。](../media/ir-solution-defense-in-depth.png)
 
@@ -138,7 +138,7 @@ Privileged access management allows granular access control over privileged Exch
 
 针对每个内部风险解决方案对管理员和合规性团队进行基础知识培训可帮助组织更快速地开始部署和实施工作。 
 
-Microsoft 365提供了以下资源，以帮助通知并培训贵组织中这些用户：
+Microsoft 365提供了以下资源来帮助通知并培训贵组织中这些用户：
 
 | 解决方案/区域 | 资源 |
 |:------------------|:--------------|

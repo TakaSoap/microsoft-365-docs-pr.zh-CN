@@ -176,6 +176,7 @@
 
 ##### [配置]()
 ###### [在 Android 功能上配置 Microsoft Defender for Endpoint](android-configure.md)
+###### [使用应用保护策略配置 Microsoft Defender for Endpoint 风险信号](android-configure-mam.md)
 
 ##### [隐私]()
 ###### [Android 上的 Microsoft Defender for Endpoint - 隐私信息](android-privacy.md)

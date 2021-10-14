@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何在 Microsoft 合规性管理器中对控件执行实现和测试。 分配工作、存储文档和导出报告。
-ms.openlocfilehash: 6b8c85b4d22fdd8161300d250d7322f68959f808
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0f1faa6ede05358eeafa8740fcf3cd79613b39c
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156530"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335994"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>在合规性管理器中分配并完成改进操作
 
@@ -58,7 +61,7 @@ ms.locfileid: "60156530"
 
 3. 选择 **保存并关闭**。 分配的用户将收到一封电子邮件，说明已为其分配了改进操作，并直接链接到改进操作。 
 > [!NOTE]
-> 美国政府Community (GCC) 美国国防部 (DoD) 客户在分配改进措施时不会收到电子邮件。
+> 美国政府Community (GCC) 高级 (DoD) 客户分配改进操作时不会收到电子邮件。
 
 然后，分配的用户就可以执行建议的操作。
 
@@ -71,7 +74,7 @@ ms.locfileid: "60156530"
 3. 选择 **改进操作表** 顶部的"分配给用户"链接。
 4. 将出现一个弹出窗口。 在 **"分配到** "字段中，开始键入要为其分配操作的人的名称。 您还可以从建议人员列表中选择。
 5. 使用被分派人的姓名填充 **"分配到**"字段后，选择"分配 **"。**
-6. 然后，你将看到你的"改进行动"页，并针对刚刚分配的操作列出了新的被分配者。
+6. 然后，你将看到你的"改进操作"页，并针对刚刚分配的操作列出了新被分配者。
 
 ## <a name="perform-work-and-store-documentation"></a>执行工作和存储文档
 

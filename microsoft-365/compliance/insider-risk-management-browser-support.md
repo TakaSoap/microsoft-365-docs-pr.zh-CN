@@ -1,9 +1,9 @@
 ---
 title: '了解并配置预览版中的内部风险管理 (信号) '
-description: 了解内部风险管理浏览器信号检测Microsoft 365
+description: 了解企业内部风险管理浏览器信号检测Microsoft 365
 keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,16 +15,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: f25664c0ca9cffa3a54e0bb9fb734bb506dfdf5b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a89393a2e420948a126ec5503a16ce981ed9652a
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190757"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60334492"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection-preview"></a>了解并配置预览版中的内部风险管理 (信号) 
 
-用户通常使用 Web 浏览器访问组织中敏感和非敏感的文件。 通过内部风险管理，你的组织可以检测和处理在 Microsoft Edge 和[Google Chrome](https://www.google.com/chrome)浏览器中查看的所有[非可执行文件的](https://www.microsoft.com/edge)浏览器过滤信号。 借助这些信号，当范围内策略用户在使用这些浏览器执行以下任一活动时，分析员和研究人员可以快速采取行动：
+用户通常使用 Web 浏览器访问组织中敏感和非敏感的文件。 通过内部风险管理，你的组织可以检测并处理在 Microsoft Edge 和[Google Chrome](https://www.google.com/chrome)浏览器中查看的所有[非可执行文件的](https://www.microsoft.com/edge)浏览器过滤信号。 借助这些信号，当范围内策略用户在使用这些浏览器执行以下任一活动时，分析员和研究人员可以快速采取行动：
 
 - 复制到个人云存储的文件
 - 打印到本地或网络设备的文件
@@ -46,13 +46,13 @@ ms.locfileid: "60190757"
 
 在安装 Microsoft *Insider Risk Extension* 或 *Microsoft Compliance Extension* 之前，客户需要确保范围内策略用户的设备满足以下要求
 
-- 建议使用Windows 10 x64 内部版本，Windows 10 x64 内部版本 1809，以用于信号检测支持。 浏览器信号检测当前在非 Windows设备上不受支持。
+- 建议Windows 10 x64 内部版本，Windows 10 x64 版本 1809 的最低版本，以用于信号检测支持。 浏览器信号检测当前在非 Windows设备上不受支持。
 - 当前[Microsoft 365](/microsoft-365/compliance/insider-risk-management-configure#subscriptions-and-licensing)内部风险管理支持的订阅。
 - 设备必须[载入到](/microsoft-365/compliance/insider-risk-management-settings#enable-device-indicators-and-onboard-devices)Microsoft 365 合规性门户。
 
 有关特定浏览器配置要求，请参阅本文Microsoft Edge和 Google Chrome 部分。
 
-## <a name="configure-browser-signal-detection-for-microsoft-edge"></a>为浏览器配置浏览器信号Microsoft Edge
+## <a name="configure-browser-signal-detection-for-microsoft-edge"></a>为浏览器配置浏览器信号检测Microsoft Edge
 
 ### <a name="microsoft-edge-browser-requirements"></a>Microsoft Edge浏览器要求
 
@@ -63,7 +63,7 @@ ms.locfileid: "60190757"
 
 ### <a name="option-1-basic-setup-recommended-for-testing-with-edge"></a>选项 1：建议 (边缘服务器进行测试的基本) 
 
-使用此选项在测试浏览器信号检测时为组织的每台设备配置单台计算机自主机。
+在测试浏览器信号检测时，使用此选项为组织的每台设备配置单台计算机自主机。
 
 对于基本设置选项，请完成以下步骤：
 
@@ -95,7 +95,7 @@ ms.locfileid: "60190757"
 
 对于组策略设置选项，请完成以下步骤：
 
-**步骤 1：导入 Microsoft Edge.admx (.admx) 文件。**
+**步骤 1：导入最新的 Microsoft Edge.admx (.admx) 文件。**
 
 设备必须使用组策略进行管理，并且Microsoft Edge[模板](https://www.microsoft.com/edge/business/download)需要导入组策略中央存储中。 有关详细信息，请参阅 [如何在 Windows 中创建和管理组策略管理模板的中央存储](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)。
 
@@ -114,7 +114,7 @@ ms.locfileid: "60190757"
 
 ## <a name="configure-browser-signal-detection-for-google-chrome"></a>为 Google Chrome 配置浏览器信号检测
 
-通过 Microsoft 合规性扩展启用对 Google Chrome 的内部风险管理浏览器信号检测 *支持*。 此扩展还支持 Chrome 上的 Endpoint DLP。 有关 Endpoint DLP 支持的详细信息，请参阅 [Microsoft Compliance Extension (preview) ](/microsoft-365/compliance/dlp-chrome-get-started)入门。
+通过 Microsoft 合规性扩展启用对 Google Chrome 的内部风险管理浏览器信号检测 *支持*。 此扩展还支持 Chrome 上的 Endpoint DLP。 有关 Endpoint DLP 支持的详细信息，请参阅 Microsoft 合规性扩展 ([预览版) 。 ](/microsoft-365/compliance/dlp-chrome-get-started)
 
 ### <a name="google-chrome-browser-requirements"></a>Google Chrome 浏览器要求
 
@@ -123,9 +123,9 @@ ms.locfileid: "60190757"
 - *Microsoft 合规性扩展* 版本 2.0.0.183 或更高版本
 - Chrome.exe未配置为不允许的浏览器
 
-### <a name="option-1-basic-setup-recommended-for-testing-with-chrome"></a>选项 1：建议 (Chrome 应用测试的基本) 
+### <a name="option-1-basic-setup-recommended-for-testing-with-chrome"></a>选项 1：建议 (Chrome 应用进行测试的基本) 
 
-使用此选项在测试浏览器信号检测时为组织的每台设备配置单台计算机自主机。
+在测试浏览器信号检测时，使用此选项为组织的每台设备配置单台计算机自主机。
 
 对于基本设置选项，请完成以下步骤：
 
@@ -209,7 +209,7 @@ Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Conf
 3. 右键单击并选择 **"在此域中创建 GPO"，并在此处链接它**。 当系统提示时，向 GPO 中的此组策略对象 (描述) 。 例如 *，DLP Chrome 即时 PowerShell 脚本*。
 4. 创建 GPO 后，右键单击并选择"编辑 **"。** 此选择将您带至组策略对象。
 5. 导航到 **计算机配置** \> **首选项** \> **控制面板设置** \> **计划任务**。
-6. 右键单击"计划任务"下的空白区域，**然后选择"新建** 即时任务" (至少Windows \> **7) 。**
+6. 右键单击"计划任务"下的空白区域，然后选择"新建即时任务" (至少Windows \> **7) 。**
 7. 输入任务 *名称和**说明*。
 8. 选择相应的帐户以运行即时任务。 例如 *，NT Authority*。
 9. 选择“**以最高权限运行**”。
@@ -236,7 +236,7 @@ Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Conf
 
     - 打开文件共享网站 (Microsoft OneDrive、Google 云端硬盘等) 配置用于信号检测的浏览器类型。
     - 通过浏览器，将非可执行文件上载到网站。
-3. 要测试打印到本地或网络设备的文件、传输或复制到网络共享的文件以及复制到 USB 设备的文件的信号检测，请从受支持的 Windows 设备完成以下步骤：
+3. 若要测试信号检测到本地或网络设备的文件、传输或复制到网络共享的文件以及复制到 USB 设备的文件，请从受支持的 Windows 设备完成以下步骤：
 
     - 直接在浏览器中打开非可执行文件。 必须直接通过文件资源管理器打开文件，或在新的浏览器选项卡（而不是网页）中打开文件。
     - 打印文件。

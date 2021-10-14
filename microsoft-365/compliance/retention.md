@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 858149ce169d335924a643e3c90b895906d28d9b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1c06cdf9492fa18797bfbf25f8153fa347137ced
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170627"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335594"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -209,7 +209,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 
 - 管理员和最终用户可以手动更改或删除应用于内容的现有保留标签。 
 
-- 当内容已应用保留标签时，现有标签不会自动删除或替换为另一个保留标签，但有一个可能的例外：现有标签已作为默认标签应用。
+- 当内容已应用保留标签时，现有标签不会自动删除或替换为另一个保留标签，但有一个可能的例外：现有标签已作为默认标签应用。 使用默认标签时，有一些情况可以将其替换为另一个默认标签或自动删除。 
     
     有关使用默认标签应用标签行为的详细信息，请执行以下操作：
     - SharePoint 的默认标签：[对 SharePoint 使用默认标签时的标签行为](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
@@ -526,4 +526,4 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 
 ## <a name="configuration-guidance"></a>配置指南
 
-请参阅[开始使用保留策略和保留标签](get-started-with-retention.md)。 本文提供了有关订阅、权限的信息，以及保留方案的端到端配置指南链接。
+请参阅[保留策略和保留标签入门](get-started-with-retention.md)。本文提供了有关订阅、权限的信息，以及保留方案的端到端配置指南的链接。

@@ -157,7 +157,7 @@ additionalContent:
             - text: Microsoft 365 管理中心
               url: admin/index.yml
             - text: Microsoft 365 商业高级版
-              url: admin/index.yml
+              url: business/index.yml
             - text: Microsoft 365 企业版
               url: enterprise/index.yml
             - text: Microsoft 365 合规中心
@@ -267,3 +267,6 @@ additionalContent:
         - title: 技术社区
           summary: 加入 Microsoft 365 技术社区，分享经验、与专家对谈、学习。
           url: 'https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365'
+        - title: Microsoft 365 技术社区
+          summary: 为 Microsoft 365 用户查找由 IT 专业人员和管理员社区提供的解决方案和情景指导。
+          url: /microsoft-365/community/

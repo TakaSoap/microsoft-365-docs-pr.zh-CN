@@ -3,7 +3,7 @@ title: 内部风险管理内容资源管理器
 description: 了解企业内部风险管理内容资源管理器Microsoft 365
 keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 30600241881ccb4203c3ea1015d8c54a680458ff
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d60726b7fbf68ecbeb8af2d40c4c18e2bb9aaa7c
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190733"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335898"
 ---
 # <a name="insider-risk-management-content-explorer"></a>内部风险管理内容资源管理器
 
-内部风险管理 **内容资源管理器** 允许分配有 *预览体验成员* 风险管理研究人员角色的用户检查与警报中活动关联的内容的上下文和详细信息。 内容资源管理器中的案例数据每天刷新一次，以包含新活动。 对于已确认案例的所有警报，数据副本和邮件文件副本将存档为项目时快照，同时在存储源中维护原始文件和邮件。 如果需要，案例数据文件可以导出为可移植文档文件 (PDF) 或原始文件格式。
+内部风险管理 **内容资源管理器** 允许分配有 *预览体验成员* 风险管理研究人员角色的用户检查与警报中活动关联的内容的上下文和详细信息。 内容资源管理器中的案例数据每天刷新一次，以包含新活动。 对于已确认案例的所有警报，数据副本和邮件文件副本将存档为项目时间快照，同时在存储源中维护原始文件和邮件。 如果需要，案例数据文件可以导出为可移植文档文件 (PDF) 或原始文件格式。
 
 对于新情况，内容在内容资源管理器中填充通常需要大约一个小时。 对于内容量较大的情况，创建快照可能需要更长时间。 如果内容仍在内容资源管理器中加载，你将看到显示完成百分比的进度指示器。
 
@@ -104,7 +104,7 @@ ms.locfileid: "60190733"
 | **Received** | 收件人接收电子邮件的日期。 |
 | **收件人域** | 邮件收件人的所有域的列表。 |
 | **收件人** | 电子邮件收件人。 |
-| **Sender** | 邮件 (发件人) "字段。  格式为 **DisplayName \<SmtpAddress>**。 |
+| **Sender** | 邮件 (发件人) 发件人"字段。  格式为 **DisplayName \<SmtpAddress>**。 |
 | **发件人域** | 发件人的域。 |
 | **To** | 电子邮件的“收件人”字段。 |
 | **在电子邮件集内是唯一的** | 假 如果电子邮件集的附件副本。 |

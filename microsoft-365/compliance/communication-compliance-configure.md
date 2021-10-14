@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 171a28eceecc03239c06410191c781a4400b2ef7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9b1fd596988498a543778b097b2a8a431a200aba
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197673"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335750"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -202,7 +202,7 @@ ms.locfileid: "60197673"
     - 选择有限条件字段，通常是要应用于该策略的敏感信息类型或关键字词典。
 
     > [!NOTE]
-    > 如果要启用光学字符识别 [ (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用"从图像中提取打印或  >  **手写** 文本"进行评估。
+    > 如果要启用光学字符识别[ (OCR) ](communication-compliance-policies.md#optical-character-recognition-ocr)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用"从图像中提取打印或手写文本"进行评估  >  。 
 
     如果选择使用策略向导创建自定义策略，将需要：
 
@@ -216,13 +216,13 @@ ms.locfileid: "60197673"
 
     - 选择要监视的通信方向，包括入站、出站或内部通信。
 
-    - 定义通信合规性策略 [条件](communication-compliance-feature-reference.md#ConditionalSettings)。 可以从邮件地址、关键字、文件类型和大小匹配条件中进行选择。
+    - 定义通信合规性策略 [条件](communication-compliance-policies.md#ConditionalSettings)。 可以从邮件地址、关键字、文件类型和大小匹配条件中进行选择。
 
     - 选择是否希望包含敏感信息类型。 此步骤可用于选择默认和自定义敏感信息类型。 在通信合规性策略向导中，从现有自定义敏感信息类型或自定义关键字词典进行选取。 如果需要，可在运行向导前创建这些项目。 还可从通信合规性策略向导中创建新的敏感信息类型。
 
     - 选择是否启用分类器。 分类器可以检测电子邮件正文或其他类型的文本中发送或接收的不当语言和图像。 可选择以下内置分类器： *威胁*、*猥亵*、*有针对性的骚扰*、*成人图像*、*色情图像* 和 *血腥图像*。
 
-    - 启用 [光学字符识别 (OCR ](communication-compliance-feature-reference.md#optical-character-recognition-ocr)) 扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本。 对于自定义策略，必须在策略中配置一个或多个与文本、关键字、分类器或敏感信息类型关联的条件设置，以允许选择光学字符识别扫描。
+    - 启用 [光学字符识别 (OCR ](communication-compliance-policies.md#optical-character-recognition-ocr)) 扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本。 对于自定义策略，必须在策略中配置一个或多个与文本、关键字、分类器或敏感信息类型关联的条件设置，以允许选择光学字符识别扫描。
 
     - 定义要审阅的通信的百分比。
 

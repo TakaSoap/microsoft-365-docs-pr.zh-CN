@@ -3,7 +3,7 @@ title: 内部风险管理案例
 description: 了解企业内部风险管理Microsoft 365
 keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a8ab9bbc71924f7934ce9a21190323869a7238bb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67626bb35ad0a07ac8958709d24fa09c7a40e2d9
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188153"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335910"
 ---
 # <a name="insider-risk-management-cases"></a>内部风险管理案例
 
@@ -125,15 +125,15 @@ Select an alert from the queue to display the **Alert detail** page.
 1. **时间筛选器**：默认情况下，在案例确认的最近六个月警报显示在用户活动图表中。 通过选择气泡图上的 *"6* 个月 *、3* 个月"或 *"1* 个月"选项卡，可以轻松筛选图表视图。
 2. **风险提醒活动和详细信息**：风险活动在用户活动图表中以彩色气泡显示。 为不同类别的风险创建气泡，而气泡大小与类别的风险活动数成比例。 选择气泡以显示每个风险活动的详细信息。 详细信息包括：
     - 风险活动的 **日期**。
-    - 风险 **活动类别**。 例如，*电子邮件 ()* 组织外部发送的附件，或者从 *SharePoint Online* 下载的文件 (文件) 附件。
+    - 风险 **活动类别**。 例如，*电子邮件 ()* 组织外部发送的附件，或者从 SharePoint Online 下载 (文件) *电子邮件SharePoint附件*。
     - 警报的 **风险分数**。 此分数是警报风险严重性级别的数字分数。
     - 与警报相关联的事件数。 还会提供指向与风险活动关联的每个文件或电子邮件的链接。
-3. 风险 **(预览**) ：风险活动按时间顺序是风险调查的一个重要方面，确定这些相关活动是评估组织的总体风险的重要部分。 与相关的警报活动通过连接线显示，以突出显示这些活动与较大的风险区域相关联。 这种活动视图可帮助调查人员逐字地"连接点"可能被视为独立或一次事件的风险活动。 选择序列中的任意气泡以显示所有关联风险活动的详细信息。 详细信息包括：
+3. 风险 **(预览**) ：风险活动按时间顺序是风险调查的一个重要方面，识别这些相关活动是评估组织的整体风险的重要部分。 与相关的警报活动通过连接线显示，以突出显示这些活动与较大的风险区域相关联。 这种活动视图可帮助调查人员逐字地"连接点"可能被视为独立或一次事件的风险活动。 选择序列中的任意气泡以显示所有关联风险活动的详细信息。 详细信息包括：
 
     - **序列** 的名称。
     - **序列****的日期或** 日期范围。
     - **序列** 的风险评分。 此分数是序列中每个相关活动的组合警报风险严重性级别序列的数字分数。
-    - **与序列中每个警报关联的事件数**。 还可链接到与每个风险活动关联的每个文件或电子邮件。
+    - **与序列中每个警报关联的事件数**。 还会提供指向与每个风险活动关联的每个文件或电子邮件的链接。
     - **按顺序显示活动**。 将序列显示为气泡图上的突出显示线，并展开警报详细信息以显示序列中的所有相关警报。
 
 4. **风险活动** 图例：在用户活动图表的底部，颜色编码的图例可帮助你快速确定每个警报的风险类别。
@@ -196,7 +196,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 在大多数情况下，创建内部风险警报的用户操作是无意或无意的。 通过电子邮件向用户发送提醒通知是记录案例审阅和操作的有效方法，也是提醒用户了解公司策略或让他们刷新培训的方法。 通知由你为内部风险管理基础结构 [创建的通知](insider-risk-management-notices.md) 模板生成。
 
-必须记住，向用户 ***** 发送电子邮件通知不会将情况解析为 _Closed*。 在某些情况下，在向用户发送通知以查找更多风险活动而不打开新案例后，您可能需要保持案例为打开状态。 如果你希望在发送通知后解决案例，则必须在发送通知后选择“**解决案件**”作为后续步骤。
+切记，向用户 ***** 发送电子邮件通知不会将大小写解析为 _Closed*。 在某些情况下，在向用户发送通知以查找更多风险活动而不打开新案例后，您可能需要保持案例为打开状态。 如果你希望在发送通知后解决案例，则必须在发送通知后选择“**解决案件**”作为后续步骤。
 
 若要向分配给案例的用户发送通知，请执行以下操作：
 
@@ -218,7 +218,7 @@ Select an alert from the queue to display the **Alert detail** page.
 4. 查看通知字段并在适当时进行更新。 此处输入的值将替代模板上的值。
 5. 选择 **"** 确认"以创建用户调查案例，或选择" **取消** "关闭对话框，而不创建新的用户调查案例。
 
-将内部风险管理案例升级为新用户调查案例后，可以在管理中心电子数据展示高级区域中查看  >  Microsoft 365 合规中心。
+将内部风险管理案例提升为新用户调查案例后，可以在管理中心电子数据展示高级区域中查看  >  Microsoft 365 合规中心。
 
 ### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>使用适用于Power Automate流运行自动任务
 
@@ -237,19 +237,19 @@ Select an alert from the queue to display the **Alert detail** page.
 
 若要了解有关内部Power Automate流的信息，请参阅内部[风险管理设置入门](insider-risk-management-settings.md#power-automate-flows-preview)。
 
-### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>查看或创建Microsoft Teams案例团队
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>查看或Microsoft Teams案例的团队
 
 在Microsoft Teams启用内部风险管理集成后，Microsoft Teams每次确认警报并创建案例时，都会自动创建一个团队。 风险研究人员和分析员可以快速打开Microsoft Teams并在案例操作工具栏上选择"查看Microsoft Teams团队，直接导航 **到** 团队查看案例。
 
-对于在启用 Microsoft Team 集成之前打开的事例，风险研究人员和分析师可以通过在事例操作工具栏上选择"创建 Microsoft Teams团队"，为事例创建新的 Microsoft Teams 团队。
+对于在启用 Microsoft Team 集成之前打开的事例，风险研究人员和分析员可以通过在事例操作工具栏上选择"创建 Microsoft Teams团队"，为事例创建新的 Microsoft Teams 团队。
 
 解决案例后，关联的 Microsoft 团队将自动存档 (隐藏，并打开为只读) 。
 
-若要了解有关内部Microsoft Teams风险管理的信息，请参阅内部[风险管理设置入门](insider-risk-management-settings.md#microsoft-teams-preview)。
+若要了解有关内部风险管理Microsoft Teams，请参阅[内部风险管理设置入门](insider-risk-management-settings.md#microsoft-teams-preview)。
 
 ### <a name="resolve-the-case"></a>解决案例
 
-风险分析师和调查人员完成审阅和调查后，可以解决一个案例，以对当前包含在该案例内的所有警报采取行动。 解决案例会添加解决方案分类，将案例状态更改为"已关闭"，解决方案操作原因会自动添加到"案例笔记"仪表板上的案例 **注释队列中。** 案例将解决为：
+风险分析师和调查人员完成审阅和调查后，可以解决一个案例，以对当前包含在该案例内的所有警报采取行动。 解决案例会添加解决方案分类，将案例状态更改为"已关闭"，解决方案操作原因将自动添加到"案例笔记"仪表板上的案例 **注释队列中。** 案例将解决为：
 
 - **恶意**：策略匹配警报评估为低风险、非严重或误报的情况的分类。
 - **已确认** 的策略违反：对策略匹配警报评估为有风险、严重或恶意目的结果的情况的分类。
