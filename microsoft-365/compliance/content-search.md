@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用合规中心中的内容搜索电子数据展示工具，搜索各种 Microsoft 365 服务中的内容。
-ms.openlocfilehash: 873a6e10117f1573b4679c14f054dd15c2c16949
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e3d8ee540ab403eb2e3ebeaf930d498599be530a
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175367"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364683"
 ---
 # <a name="create-a-content-search"></a>创建内容搜索
 
-可以使用 Microsoft 365 合规中心中的内容搜索电子数据展示工具来搜索就地内容，例如组织中的电子邮件、文档和即时消息会话。 使用此工具搜索以下 Microsoft 365 数据源中的内容：
+可以使用 Microsoft 365 合规中心中的内容搜索电子数据展示工具来搜索就地内容，例如组织中的电子邮件、文档和即时消息会话。 使用此工具搜索以下基于云的 Microsoft 365 数据源中的内容：
   
 - Exchange Online 邮箱
 
@@ -43,13 +43,17 @@ ms.locfileid: "60175367"
 
 运行搜索后，内容位置的数量和搜索结果的估计数量将会显示在搜索弹出页面上。 可以快速查看统计信息，例如具有与搜索查询匹配的最多项的内容位置。 运行搜索后，可预览结果或将其导出到本地计算机。
 
-## <a name="create-and-run-a-search"></a>创建并运行搜索
+## <a name="before-you-run-a-search"></a>运行搜索之前
 
-若要访问 Microsoft 365 合规中心的“**内容搜索**”页面（以运行搜索和预览并导出结果），管理员、合规专员或电子数据展示管理员必须是 Microsoft 365 合规中心的电子数据展示管理员角色组中的成员。有关详细信息，请参阅 [分配电子数据展示权限](assign-ediscovery-permissions.md)。
+- 若要访问 Microsoft 365 合规中心的“内容搜索”工具页面（以运行搜索和预览并导出结果），管理员、合规专员或电子数据展示管理员必须是 Microsoft 365 合规中心的电子数据展示管理员角色组中的成员。有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
+
+- 在 Exchange 混合部署中，无法使用内容搜索工具来搜索本地邮箱。 只能使用该工具搜索基于云的邮箱。
+
+## <a name="create-and-run-a-search"></a>创建并运行搜索
   
 1. 转到 <https://compliance.microsoft.com>，并使用已分配相应权限的帐户凭据进行登录。
 
-2. 在 Microsoft 365 合规中心的左侧导航窗格中，单击“**显示所有**”，然后单击“**内容搜索**”。
+2. 在 Microsoft 365 合规中心的左侧导航窗格中，单击“**内容搜索**”。
 
 3. 在“**内容搜索**”页面，单击“**新建搜索**”。
 
@@ -62,7 +66,7 @@ ms.locfileid: "60175367"
 
     ![选择将其置于保留状态的内容位置。](../media/ContentSearchLocations.png)
   
-   1. **Exchange 邮箱**：将切换设置为“**打开**”，然后单击“**选择用户、组或团队**”，以指定要置于保留状态的邮箱。 使用搜索框查找用户邮箱和通讯组（将组成员的邮箱置于保留状态）以置于保留状态。 可以搜索与 Microsoft Team（适用于频道消息）、Office 365 组和 Yammer 组关联的邮箱。 有关存储在邮箱中的应用程序数据的详细信息，请参阅 [存储在邮箱中的电子数据展示内容](what-is-stored-in-exo-mailbox.md)。
+   1. **Exchange 邮箱**：将切换设置为“**打开**”，然后单击“**选择用户、组或团队**”，以指定要置于保留状态的邮箱。 使用搜索框查找用户邮箱和通讯组。 可以搜索与 Microsoft Team（适用于频道消息）、Office 365 组和 Yammer 组关联的邮箱。 有关存储在邮箱中的应用程序数据的详细信息，请参阅 [存储在邮箱中的电子数据展示内容](what-is-stored-in-exo-mailbox.md)。
 
    2. **SharePoint 站点**：将切换设置为“**打开**”，然后单击“**选择站点** ”，以指定要置于保留状态的 SharePoint 站点和 OneDrive 帐户。 键入你想要置于保留状态的每个站点的 URL。 还可以为 Microsoft Team、Office 365 组或 Yammer 组添加 SharePoint 站点的 URL。
   

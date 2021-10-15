@@ -21,20 +21,23 @@
           href: service-description/regions-languages.md
         - name: 产品生命周期
           href: service-description/device-lifecycle.md
-        - name: 设备要求
-          href: service-description/device-requirements.md
-        - name: 设备图像
-          href: service-description/device-images.md
-        - name: 设备名称
-          href: service-description/device-names.md
-        - name: 设备服务
-          href: service-description/device-services.md
-        - name: 设备配置文件
-          href: service-description/profiles.md
-        - name: 设备部署组
-          href: service-description/deployment-groups.md
-        - name: 设备配置
-          href: service-description/device-policies.md
+        - name: 设备
+          href: null
+          items:
+            - name: 设备要求
+              href: service-description/device-requirements.md
+            - name: 设备图像
+              href: service-description/device-images.md
+            - name: 设备名称
+              href: service-description/device-names.md
+            - name: 设备服务
+              href: service-description/device-services.md
+            - name: 设备配置文件
+              href: service-description/profiles.md
+            - name: 设备部署组
+              href: service-description/deployment-groups.md
+            - name: 设备配置
+              href: service-description/device-policies.md
         - name: 安全性技术
           href: service-description/security.md
         - name: 安全性操作
@@ -154,6 +157,8 @@
               href: working-with-managed-desktop/device-status-report.md
             - name: Windows 安全更新报告
               href: working-with-managed-desktop/security-updates-report.md
+            - name: 应用使用情况报告
+              href: working-with-managed-desktop/app-usage-report.md
         - name: 管理支持
           href: working-with-managed-desktop/admin-support.md
         - name: 用户支持

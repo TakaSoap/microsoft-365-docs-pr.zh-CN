@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 在 Microsoft 365 合规解决方案中将文件设为可见 '
-ms.openlocfilehash: be83c796312a61e4411d8cd7107d0330678f95de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d1577cff0cc06589c833a568af214c99059e829
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159810"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364527"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -74,6 +74,10 @@ ms.locfileid: "60159810"
 
 > [!NOTE]
 > 如果 **始终审核设备的审核文件活动** 设置处于打开状态，则即使设备不是任何策略的目标，也始终审核任何 Word、PowerPoint、Excel、PDF 和 .csv 文件上的活动。
+
+> [!TIP]
+> 若要确保审核所有受支持的文件类型的活动，请随默认策略一起创建自定义 [DLP](create-test-tune-dlp-policy.md) 策略。
+
 
 终结点 DLP 会监视基于活动的 MIME 类型，因此即使文件扩展名已更改也会捕获活动。
 
