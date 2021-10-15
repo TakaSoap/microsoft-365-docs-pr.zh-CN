@@ -1,6 +1,6 @@
 ---
 title: Microsoft 托管桌面设备服务
-description: 本主题列出了设备服务以及设备服务Microsoft 托管桌面。
+description: 本主题列出了设备服务和针对设备Microsoft 托管桌面。
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 256598a1eb7a51c0e07bd7be9ebf616d2d1ce4ec
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0e90d4fd51c0e25a20b6ef985d7a15edc001bfb5
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198261"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364130"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft 托管桌面设备服务
 
@@ -22,12 +22,12 @@ ms.locfileid: "60198261"
 
 ## <a name="device-services"></a>设备服务
 
-Microsoft 将为这些设备提供Microsoft 托管桌面服务。 有关推荐的 Microsoft 托管桌面 程序设备的列表，请筛选Microsoft 托管桌面[购买Windows 10 专业版上的设备](https://www.microsoft.com/windowsforbusiness/view-all-devices)。
+Microsoft 将为这些设备提供Microsoft 托管桌面服务。 有关推荐的 Microsoft 托管桌面 程序设备的列表，Microsoft 托管桌面[购买Windows Pro上的筛选器](https://www.microsoft.com/windows/business/devices)。
 
 服务 | 说明
 --- | ---
 支持 | 支持代理将回答与设备功能直接相关的问题并诊断设备问题。
-清单 | 所有设备在管理门户中Microsoft 托管桌面跟踪清单和状态。
+清单 | 在管理门户中跟踪所有Microsoft 托管桌面清单和状态跟踪。
 固件和驱动程序更新 | 默认情况下，Microsoft 托管桌面接收来自更新的固件和驱动程序Windows更新。 并非所有硬件合作伙伴都通过 Windows Update 部署其更新。 未作为自动发布的更新需要例外，并且必须由客户部署。
 附件 | 设备随设备一起提供的设备所涵盖的服务与设备本身相同，但担保条款可能会有所不同。 请参阅选择设备时选择的担保条款。 
 设备设置 | 设备将预配置当前版本的 Windows通过云接收其应用和配置。

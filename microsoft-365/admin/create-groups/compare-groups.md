@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 组成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
-ms.openlocfilehash: f62fd8f05231589edefdc131e35bd2113a129e8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 655b90ca13631c1df7937443e37d1bf904814e14
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165804"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335414"
 ---
 # <a name="compare-groups"></a>比较组
 
@@ -72,7 +72,7 @@ Microsoft 365 组不支持与其他Microsoft 365 组或通讯组或安全组进�
 
 可以将通讯组 [升级到 Microsoft 365 组](../manage/upgrade-distribution-lists.md)。
 
-通讯组可添加到 Microsoft Teams 中的团队中。
+可以将通讯组添加到 Microsoft Teams 中的团队，但只添加成员，而不添加组本身。
 
 Microsoft 365 组不能是通讯组的成员。
 

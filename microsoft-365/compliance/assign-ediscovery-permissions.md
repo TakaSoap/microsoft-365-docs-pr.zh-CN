@@ -16,20 +16,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: 分配使用管理程序执行与电子数据展示相关的Microsoft 365 合规中心。
+description: 分配使用电子数据展示管理程序执行与电子数据展示Microsoft 365 合规中心。
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 2ff6a589ce8b4db6adf00a820eaf00b20f9f7bcc
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: d6515dc213fe6b89a9a638c9df8dcad63785967c
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217146"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364551"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>在服务中分配电子数据展示Microsoft 365 合规中心
 
-如果您希望用户使用 Microsoft 365 合规中心 中任何与[](ediscovery.md)电子数据展示相关的工具，您必须为其分配适当的权限。 执行此操作的最简单方法是在合规中心的"权限"页面上添加相应的角色组。  本主题介绍执行电子数据展示任务所需的权限。
+如果您希望用户使用 Microsoft 365 合规中心 中任何与[](ediscovery.md)电子数据展示相关的工具，您必须为其分配适当的权限。 执行此操作的最简单方法是在合规中心的"权限"页上添加相应的角色组。  本主题介绍执行电子数据展示任务所需的权限。
   
 Microsoft 365 合规中心中与电子数据展示相关的主要角色组称为 **"电子数据展示管理器"。** 此角色组中有两个子组。
   
@@ -43,16 +43,18 @@ Microsoft 365 合规中心中与电子数据展示相关的主要角色组称为
   
   - 将其自己添加为任何电子数据展示事例的成员后管理这些事例。
   
+  - 从电子数据展示案例中删除成员。 只有电子数据展示管理员可以从案例中删除成员。 作为电子数据展示管理器子组的成员的用户无法从案例中删除成员，即使用户创建了案例。
+  
   出于可能想要在组织中使用电子数据展示管理员的原因，请参阅 [详细信息](#more-information)。
 
 > [!NOTE]
-> 若要使用 Advanced eDiscovery 分析用户的数据， (数据保管) 必须分配有Office 365 E5或Microsoft 365 E5许可证。 或者，也可以为具有 Office 365 E1 或 Office 365 或 Microsoft 365 E3 许可证的用户分配 Microsoft 365 E5 合规 或 Microsoft 365 电子数据展示和审核加载项许可证。 作为成员分配案例并使用 Advanced eDiscovery 收集、查看和分析数据的管理员、合规部官员或法律人员不需要 E5 许可证。 有关许可Advanced eDiscovery，请参阅订阅[和](overview-ediscovery-20.md#subscriptions-and-licensing)Advanced eDiscovery。
+> 若要使用 Advanced eDiscovery 分析用户的数据， (数据) 必须分配有Office 365 E5或Microsoft 365 E5许可证。 或者，也可以为具有 Office 365 E1 或 Office 365 或 Microsoft 365 E3 许可证的用户分配 Microsoft 365 E5 合规 或 Microsoft 365 电子数据展示和审核加载项许可证。 分配为事例的成员并使用 Advanced eDiscovery 收集、查看和分析数据的管理员、合规部官员或法律人员不需要 E5 许可证。 有关许可Advanced eDiscovery，请参阅订阅[和](overview-ediscovery-20.md#subscriptions-and-licensing)Advanced eDiscovery。
   
 ## <a name="before-you-assign-permissions"></a>分配权限之前
 
 - 您必须是组织管理角色组的成员，或分配有 Role Management 角色，才能在 Microsoft 365 合规中心 中分配电子数据展示权限。
 
-- 您可以使用安全 & 合规中心 PowerShell 中的 [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) cmdlet 将启用邮件的安全组添加为电子数据展示管理员角色组中的电子数据展示管理员子组的成员。 但是，不能将启用邮件的安全组添加到电子数据展示管理员子组。 有关详细信息，请参阅 [详细信息](#more-information)。 
+- 您可以使用安全 & 合规中心 PowerShell 中的 [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) cmdlet 将启用邮件的安全组添加为电子数据展示管理员角色组中的电子数据展示管理员子组的成员。 但是，不能将启用邮件的安全组添加到电子数据展示管理员子组。 有关详细信息，请参阅 [详细信息](#more-information)。
   
 ## <a name="assign-ediscovery-permissions"></a>分配电子数据展示权限
 
@@ -68,12 +70,12 @@ Microsoft 365 合规中心中与电子数据展示相关的主要角色组称为
   
     **若要使用户成为电子数据展示管理员：** 在"**电子数据展示管理器"旁边，选择**"编辑 **"。** 在" **选择电子数据展示管理器** "向导页上，单击" ![ 添加图标"。](../media/ITPro-EAC-AddIcon.gif) **添加** 。 选择要添加 (或) 电子数据展示管理员的用户，然后选择"添加 **"。** 添加完用户后，选择"完成 **"。** 然后，在"**编辑选择电子数据** 展示管理器"向导页上，选择"保存"以保存对电子数据展示管理员成员身份的更改。
   
-    **若要使用户成为电子数据展示管理员：** 在"**电子数据展示管理员"旁边，选择**"编辑 **"。** 在" **选择电子数据展示管理员"** 页上，单击" ![ 添加图标"。](../media/ITPro-EAC-AddIcon.gif) **添加** 。 选择要添加 (或) 电子数据展示管理员的用户，然后选择"**添加"。**  添加完用户后，选择"完成 **"。** 然后，在"**编辑选择电子数据** 展示管理员"向导页上，选择"保存"以保存对电子数据展示管理员成员身份的更改。
+    **若要使用户成为电子数据展示管理员：** 在"**电子数据展示管理员"旁边，选择**"编辑 **"。** 在" **选择电子数据展示管理员"** 页上，单击" ![ 添加图标"。](../media/ITPro-EAC-AddIcon.gif) **添加** 。 选择要添加 (或) 电子数据展示管理员的用户，然后选择"添加 **"。**  添加完用户后，选择"完成 **"。** 然后，在"**编辑选择电子数据** 展示管理员"向导页上，选择"保存"以保存对电子数据展示管理员成员身份的更改。
   
 > [!NOTE]
 > 您还可以使用 **Add-eDiscoveryCaseAdmin** cmdlet 使用户成为电子数据展示管理员。 但是，必须先为用户分配案例管理角色，然后才能使用此 cmdlet 将其作为电子数据展示管理员。 有关详细信息，请参阅 [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin)。 
   
-在"**权限**"页上Microsoft 365 合规中心，您还可以通过将用户添加到"合规性管理员"、"组织管理"和"审阅者"角色组来分配与电子数据展示相关的权限。 有关分配给其中每个角色组的与电子数据展示相关的 RBAC 角色的说明，请参阅 [与电子数据展示相关的 RBAC 角色](#rbac-roles-related-to-ediscovery)。
+在"**权限**"页上Microsoft 365 合规中心，您还可以通过将用户添加到合规性管理员、组织管理和审阅者角色组来分配与电子数据展示相关的权限。 有关分配给其中每个角色组与电子数据展示相关的 RBAC 角色的说明，请参阅 [与电子数据展示相关的 RBAC 角色](#rbac-roles-related-to-ediscovery)。
 
 ## <a name="rbac-roles-related-to-ediscovery"></a>与电子数据展示相关的 RBAC 角色
 
@@ -99,7 +101,7 @@ Microsoft 365 合规中心中与电子数据展示相关的主要角色组称为
 
 此角色允许用户创建、编辑、删除和控制对核心电子数据展示和Advanced eDiscovery事例Microsoft 365 合规中心。 如前所述，必须先为用户分配案例管理角色，然后才能使用 **Add-eDiscoveryCaseAdmin** cmdlet 将其用作电子数据展示管理员。
 
-有关详细信息，请参阅：
+有关更多信息，请参阅：
 
 - [核心电子数据展示入门](get-started-core-ediscovery.md)
 
@@ -107,7 +109,7 @@ Microsoft 365 合规中心中与电子数据展示相关的主要角色组称为
 
 ### <a name="communication"></a>通信
 
-通过此角色，用户可以管理与案例内标识的保管人Advanced eDiscovery通信。 这包括创建保留通知、保留提醒和上报管理。 用户还可以跟踪保管人对保留通知的确认，并管理对保管人门户的访问，每个保管人使用该门户跟踪被识别为保管人的情况的通信。
+此角色允许用户管理与案例内标识的保管人Advanced eDiscovery通信。 这包括创建保留通知、保留提醒和上报管理。 用户还可以跟踪保管人对保留通知的确认，并管理对保管人门户的访问，每个保管人使用该门户跟踪被识别为保管人的情况的通信。
 
 有关详细信息，请参阅使用 Advanced eDiscovery[中的通信](managing-custodian-communications.md)。
 
@@ -123,7 +125,7 @@ Microsoft 365 合规中心中与电子数据展示相关的主要角色组称为
 
 ### <a name="custodian"></a>Custodian
 
-此角色允许用户识别和管理事例Advanced eDiscovery保管人，并使用来自Azure Active Directory源的信息查找与保管人关联的数据源。 用户可以将其他数据源（如邮箱、SharePoint网站）Teams案例与保管人关联。 用户还可以对与保管人关联的数据源设置法定保留，以在案例上下文中保留内容。
+此角色允许用户识别和管理Advanced eDiscovery保管人，并使用来自Azure Active Directory源的信息查找与保管人关联的数据源。 用户可以将其他数据源（如邮箱、SharePoint网站）Teams保管人关联。 用户还可以对与保管人关联的数据源设置法定保留，以在案例上下文中保留内容。
 
 有关详细信息，请参阅使用 Advanced eDiscovery 中的[保管人](managing-custodians.md)。
 
@@ -149,11 +151,11 @@ Microsoft 365 合规中心中与电子数据展示相关的主要角色组称为
 
 ### <a name="review"></a>审阅
 
-此角色允许用户访问 Advanced eDiscovery[中的审阅集](overview-ediscovery-20.md)。 分配了此角色的用户可以在他们作为成员>电子数据展示Microsoft 365 合规中心 **高级**"页面上查看和打开事例列表。 用户访问案例后Advanced eDiscovery，可以选择"审阅集"来访问案例数据。  此角色不允许用户预览与案例关联的集合搜索的结果，或执行其他搜索或案例管理任务。 具有此角色的用户只能访问审阅集内的数据。
+此角色允许用户访问 Advanced eDiscovery[中的审阅Advanced eDiscovery。](overview-ediscovery-20.md) 分配了此角色的用户可以在他们作为成员>电子数据展示Microsoft 365 合规中心 **高级**"页面上查看和打开事例列表。 用户访问案例后Advanced eDiscovery，可以选择"审阅集"来访问案例数据。  此角色不允许用户预览与案例关联的集合搜索的结果，或执行其他搜索或案例管理任务。 具有此角色的用户只能访问审阅集内的数据。
 
 ### <a name="rms-decrypt"></a>RMS 解密
 
-此角色允许用户在预览搜索结果和导出受权限保护的解密电子邮件时查看受权限保护的电子邮件。 当用户将加密文件附加到电子数据展示搜索结果中包含的电子邮件时，此角色还允许用户查看 (并导出) 使用 [Microsoft](encryption.md) 加密技术加密的文件。 此外，此角色还允许用户查看和查询已添加到审阅集的加密Advanced eDiscovery。 有关电子数据展示中的解密功能详细信息，请参阅解密[Microsoft 365电子数据展示工具。](ediscovery-decryption.md)
+此角色允许用户在预览搜索结果和导出受权限保护的解密电子邮件时查看受权限保护的电子邮件。 当用户将加密文件附加到电子数据展示搜索结果中包含的电子邮件时，此角色还允许用户查看 (并导出) 使用 [Microsoft](encryption.md) 加密技术加密的文件。 此外，此角色还允许用户查看和查询添加到邮件审阅集的加密Advanced eDiscovery。 有关电子数据展示中的解密功能详细信息，请参阅解密[Microsoft 365电子数据展示工具。](ediscovery-decryption.md)
 
 ### <a name="search-and-purge"></a>搜索和清除
 
@@ -161,7 +163,7 @@ Microsoft 365 合规中心中与电子数据展示相关的主要角色组称为
 
 ## <a name="adding-role-groups-as-members-of-ediscovery-cases"></a>将角色组添加为电子数据展示事例的成员
 
-可以将角色组添加为核心电子数据展示和Advanced eDiscovery事例的成员，以便角色组的成员可以在分配的情况下访问和执行任务。 分配给角色组的角色定义角色组的成员可以执行哪些任务。 然后，将角色组添加为案例的成员后，成员可以在特定情况下访问和执行这些任务。 有关将角色组添加为事例成员的信息，请参阅：
+可以将角色组添加为核心电子数据展示和Advanced eDiscovery事例的成员，以便角色组的成员可以在分配的情况下访问和执行任务。 分配给角色组的角色定义角色组的成员可以执行哪些任务。 然后将角色组添加为案例的成员后，成员可以访问和执行特定情况下的任务。 有关将角色组添加为事例成员的信息，请参阅：
 
 - [核心电子数据展示入门](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-core-ediscovery-case)
 
@@ -171,13 +173,13 @@ Microsoft 365 合规中心中与电子数据展示相关的主要角色组称为
 
 在向可能是电子数据展示事例成员的角色组添加或删除角色之前，可以在安全 & 合规性 [PowerShell](/powershell/exchange/connect-to-scc-powershell) 中运行以下命令，获取角色组是其中成员的情况列表。 更新角色组后，将角色组添加回这些事例的成员。
 
-### <a name="get-a-list-of-role-groups-assigned-to-core-ediscovery-cases"></a>获取分配给核心电子数据展示事例的角色组列表
+### <a name="get-a-list-of-core-ediscovery-cases-a-role-group-is-assigned-to"></a>获取角色组分配到的核心电子数据展示事例列表
 
 ```powershell
 Get-ComplianceCase -RoleGroup "Name of role group"
 ```
 
-### <a name="get-a-list-of-role-groups-assigned-to-advanced-ediscovery-cases"></a>获取分配给事例的角色组Advanced eDiscovery列表
+### <a name="get-a-list-of-advanced-ediscovery-cases-a-role-group-is-assigned-to"></a>获取角色Advanced eDiscovery分配到的情况列表
 
 ```powershell
 Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
@@ -189,15 +191,15 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
   - 如果作为电子数据展示事例唯一成员的人离开了公司，就没有人（包括组织管理角色组的成员或电子数据展示管理员角色组的另一个成员）能够访问该电子数据展示事例，因为他们不是事例的成员。 在这种情况下，将无法访问事例中的数据。 但是，因为电子数据展示管理员可以访问组织的所有电子数据展示事例，他们可以查看事例，并添加自己或其他电子数据展示管理员作为事例的成员。
 
-  - 由于电子数据展示管理员可以查看和访问所有核心电子数据展示和Advanced eDiscovery事例，因此他们可以审核和监视所有事例以及关联的合规性搜索。 这有助于防止任何滥用合规性搜索或电子数据展示事例的行为。 此外，因为电子数据展示管理员可以访问合规性搜索的结果中的潜在敏感信息，所以您应该限制电子数据展示管理员的数量。
+  - 由于电子数据展示管理员可以查看和访问所有核心电子数据展示Advanced eDiscovery事例，因此他们可以审核和监视所有事例以及关联的合规性搜索。 这有助于防止任何滥用合规性搜索或电子数据展示事例的行为。 此外，因为电子数据展示管理员可以访问合规性搜索的结果中的潜在敏感信息，所以您应该限制电子数据展示管理员的数量。
 
-- **能否将组添加为电子数据展示管理员角色组的成员？** 如前所述，您可以使用安全与合规中心 PowerShell 中的 **Add-RoleGroupMember** cmd & let 将启用邮件的安全组添加为电子数据展示管理员角色组中的电子数据展示管理员子组的成员。 例如，可以运行以下命令将启用邮件的安全组添加到电子数据展示管理员角色组。 
+- **能否将组添加为电子数据展示管理员角色组的成员？** 如前所述，您可以使用安全 & 合规中心 PowerShell 中的 **Add-RoleGroupMember** cmdlet 将启用邮件的安全组添加为电子数据展示管理员角色组中电子数据展示管理员子组的成员。 例如，可以运行以下命令将启用邮件的安全组添加到电子数据展示管理员角色组。 
 
   ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange不支持Microsoft 365通讯组和通讯组。 必须使用启用邮件的安全组，可以通过运行 在 Exchange Online PowerShell 创建 `New-DistributionGroup -Type Security` 该组。 您还可以创建启用邮件的安全组 (，) 管理中心或Exchange添加[Microsoft 365 管理中心。](https://go.microsoft.com/fwlink/p/?linkid=2024339) 创建后，可能需要 60 分钟才能将启用邮件的新安全性添加到电子数据展示管理员角色组。 
+    Exchange不支持Microsoft 365通讯组和通讯组。 必须使用启用邮件的安全组，可通过运行 在 powerShell Exchange Online创建 `New-DistributionGroup -Type Security` 该组。 您还可以创建启用邮件的安全组 (，) 管理中心Exchange或[Microsoft 365 管理中心。](https://go.microsoft.com/fwlink/p/?linkid=2024339) 创建后，可能需要 60 分钟才能将启用邮件的新安全性添加到电子数据展示管理员角色组。 
 
     此外，如前所述，无法通过使用安全与合规中心 PowerShell 中的 **Add-eDiscoveryCaseAdmin** cmdlet 将启用邮件的安全组&电子数据展示管理员。 只能将单个用户添加为电子数据展示管理员。
 

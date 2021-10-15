@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ad973120d2051a6a4834b1db4877c1b5ed6dc2ec
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 5be8fcb6928588fdc0195bcaffb7a8797fc2bfd9
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335426"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364647"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>在 macOS 或 Linux 上运行客户端分析器
 
@@ -54,7 +54,7 @@ ms.locfileid: "60335426"
 
 打开相关计算机中的终端或 SSH 并运行以下命令：
 
-1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer *`
+1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer`
 
 2. `unzip -q XMDEClientAnalyzer.zip`
 

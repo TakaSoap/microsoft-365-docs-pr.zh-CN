@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: db373ad60782de8bcf925107b5b8b773eb10a482
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98adf2e8d6faeb089b74a2ec4050b7ec53620e0f
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166704"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364623"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>设置 Microsoft 托管桌面设备
 
@@ -25,7 +25,7 @@ ms.locfileid: "60166704"
 
 我们建议与批准的设备合作伙伴之一合作。 你可以与 Microsoft 帐户联系人合作，以了解有关建立设备合作关系的更多帮助。 但是，从本质上说，此过程如下所示：
 
-1. 通过筛选"购买企业设备"Microsoft 托管桌面上当前Windows 10 专业版[推荐的设备](https://www.microsoft.com/windowsforbusiness/view-all-devices)列表。
+1. 查看当前推荐的设备列表，方法为在"购买Microsoft 托管桌面商业Windows Pro[筛选内容](https://www.microsoft.com/windows/business/devices)。
 2. 为你想要用于兼容映像的一个或多个设备示例排序。 排序可能需要 [特定的排序步骤](../service-description/device-images.md)。
 3. [验证](validate-device.md) 示例设备。
 5. 验证成功后，订购设备，与批准的设备合作伙伴合作。

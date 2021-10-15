@@ -36,10 +36,14 @@
           href: communication-compliance-plan.md
         - name: 通信合规性入门
           href: communication-compliance-configure.md
+        - name: 检测具有通信合规性的通道信号
+          href: communication-compliance-channels.md
+        - name: 创建和管理通信合规性策略
+          href: communication-compliance-policies.md
         - name: 调查和修正通信合规性警报
           href: communication-compliance-investigate-remediate.md
-        - name: 通信合规性功能参考
-          href: communication-compliance-feature-reference.md
+        - name: 了解通信合规性报告和审核
+          href: communication-compliance-reports-audits.md
         - name: 带有 SIEM 解决方案的通信合规性
           href: communication-compliance-siem.md
         - name: 案例研究 - Contoso 快速配置冒犯性语言策略
@@ -343,16 +347,6 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: 数据丢失防护策略提示参考
               href: dlp-policy-tips-reference.md
-        - name: DLP 疑难解答
-          items:
-            - name: DLP 策略提示疑难解答
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-policy-tips.md
-            - name: 对 DLP 策略的更改在 Office 365 中的 Outlook 2013 中不起作用
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-not-work.md
-            - name: 合规中心内的 DLP 策略提示在 OWA/Outlook 中不起作用
-              href: /office365/troubleshoot/data-loss-prevention/dlp-tips-not-work.md
-            - name: 如何排查 Office 365 中 Exchange Online Protection 中的 DLP 策略提示问题
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-tips.md
 - name: 管理信息治理
   items:
     - name: 治理数据
@@ -629,6 +623,8 @@
           href: app-governance-detect-remediate-overview.md
         - name: 入门
           href: app-governance-detect-remediate-get-started.md
+        - name: 监视和响应数据使用量异常的应用
+          href: app-governance-monitor-apps-unusual-data-usage.md
         - name: 调查异常检测警报
           href: app-governance-anomaly-detection-alerts.md
         - name: 修正应用威胁

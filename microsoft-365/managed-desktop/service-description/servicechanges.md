@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c10d7f59f31b3cfbd8baf34247e9fc4288751dd9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6542769d203604738f863af7da211bfc21ba8ac7
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208081"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364671"
 ---
 # <a name="service-changes-and-communication"></a>服务更改和通信
 
@@ -45,7 +45,7 @@ ms.locfileid: "60208081"
 
 - 安装 Windows 和 Office 更新
 - 应用于设备的安全基线更新
-- 支持的设备。 To see recommended devices， filter for Microsoft 托管桌面 on the [Shop Windows 10 专业版 business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site.
+- 支持的设备。 To see recommended devices， filter for Microsoft 托管桌面 on the [Shop Windows Pro business devices](https://www.microsoft.com/windows/business/devices) site.
 
 我们将使用既定渠道传达这些更改。 如果你有关于任何更改的任何问题，请联系Microsoft 托管桌面[团队。](../working-with-managed-desktop/admin-support.md) 对服务所做的更改也会根据需要记录在更改 [历史记录中](../change-history-managed-desktop.md)。
 
@@ -65,11 +65,11 @@ Microsoft 托管桌面更改和通信受两个 Microsoft 策略控制：
 - 用于标识或保护网络服务的用户或设备证书
 - 与服务交互的管理系统
 - 与服务交互的安全系统或代理
-- 与服务Microsoft 365或由该服务使用的任何云服务的配置
+- 与该服务关联Microsoft 365或由该服务使用的任何云服务的配置
 
 这些更改不太可能造成中断，因此无需提前告诉我们这些更改：
 
 - 孤立对象清理
 - 在服务中添加或删除用户
-- 对交付项目没有重大影响的系统的Microsoft 托管桌面
+- 对交付项目没有重大影响的系统Microsoft 托管桌面
 - 应用程序版本更新，VPN 或代理应用程序除外

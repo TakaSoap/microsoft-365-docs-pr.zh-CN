@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9bc29db2ffd4914093b7045241395732f49a8b16
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 3548f23964f50740ce8c3adb96d82a2f0cbafddd
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335642"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364599"
 ---
 # <a name="insider-risk-management-policies"></a>预览体验计划风险管理策略
 
@@ -127,13 +127,13 @@ ms.locfileid: "60335642"
 
 | **策略模板** | **触发策略事件** | **先决条件** |
 | :------------------ | :--------------------------------- | :---------------- |
-| 离职用户窃取数据 | 人力资源连接器中的提前期或终止日期指示器 | （可选）配置了 Microsoft 365 HR 连接器以使用终止和日期指示器或已启用 Azure Active Directory 集成 |
-| 常规数据泄露 | 用于创建严重级别警报的数据泄露策略活动 | （可选）为严重性警报或内置数据传输触发事件配置的 DLP 策略 |
+| 离职用户窃取数据 | HR 连接器或客户删除帐户的Azure Active Directory终止日期指示器 | （可选）配置用于终止和截止日期指示器的 Microsoft 365 HR 连接器 |
+| 常规数据泄露 | 数据泄漏策略活动可创建 *高严重性* 警报或内置渗透事件触发器 | （可选）为高严重性警报配置 DLP 策略 |
 | 优先用户的数据泄露 | 数据泄漏策略活动可创建 *高严重性* 警报或内置渗透事件触发器 | （可选）为高严重性警报配置 DLP 策略 <br><br> 在预览体验计划风险设置中配置优先级用户组 |
 | 心怀不满用户的数据泄露活动 | 人力资源连接器中的绩效改善、工作表现较差或职务更改指标 | 为解除管理指示器配置的 Microsoft 365 HR 连接器 |
-| 违反常规安全策略 | Microsoft Defender for Endpoint 检测到的安全控件或不需要的软件 | 适用于终结点的 Active Microsoft Defender 订阅 <br><br> 配置了 Microsoft Defender for Endpoint 与 Microsoft 365 合规中心集成 |
+| 违反常规安全策略 | Microsoft Defender for Endpoint 检测到的安全控件或不需要的软件的防御程序 | 适用于终结点的 Active Microsoft Defender 订阅 <br><br> 配置了 Microsoft Defender for Endpoint 与 Microsoft 365 合规中心集成 |
 | 离职用户的安全策略违规活动 | 人力资源连接器或 Azure Active Directory 帐户删除中的提前期或终止日期指示器 | （可选）配置用于终止和截止日期指示器的 Microsoft 365 HR 连接器 <br><br> 适用于终结点的 Active Microsoft Defender 订阅 <br><br> 配置了 Microsoft Defender for Endpoint 与 Microsoft 365 合规中心集成 |
-| 优先用户的安全策略违规 | Microsoft Defender for Endpoint 检测到的安全控件或不需要的软件 | 适用于终结点的 Active Microsoft Defender 订阅 <br><br> 配置了 Microsoft Defender for Endpoint 与 Microsoft 365 合规中心集成 <br><br> 在预览体验计划风险设置中配置优先级用户组 |
+| 优先用户的安全策略违规 | Microsoft Defender for Endpoint 检测到的安全控件或不需要的软件的防御程序 | 适用于终结点的 Active Microsoft Defender 订阅 <br><br> 配置了 Microsoft Defender for Endpoint 与 Microsoft 365 合规中心集成 <br><br> 在预览体验计划风险设置中配置优先级用户组 |
 | 心怀不满员工的安全策略违规活动 | 人力资源连接器中的绩效改善、工作表现较差或职务更改指标 | 为解除管理指示器配置的 Microsoft 365 HR 连接器 <br><br> 适用于终结点的 Active Microsoft Defender 订阅 <br><br> 配置了 Microsoft Defender for Endpoint 与 Microsoft 365 合规中心集成 |
 
 ## <a name="prioritize-content-in-policies"></a>确定策略中内容的优先级
@@ -144,7 +144,7 @@ ms.locfileid: "60335642"
 
 在策略向导中创建预览体验计划风险管理策略时，可以从以下优先级中选择：
 
-- **SharePoint 网站**：与所定义的 SharePoint 网站中所有文件类型关联的任何活动都将被分配更高的风险分数。 配置策略并选择优先级 Share Point 网站的用户可以选择SharePoint他们有权访问的网站。 如果SharePoint当前用户无法选择策略中的网站，则具有所需权限的其他用户稍后可以选择策略的网站，或者应为当前用户授予对所需网站的访问权限。
+- **SharePoint 网站**：与所定义的 SharePoint 网站中所有文件类型关联的任何活动都将被分配更高的风险分数。 配置策略并选择优先级 Share Point 网站的用户可以选择SharePoint他们有权访问的网站。 如果SharePoint当前用户无法选择策略中的网站，则具有所需权限的其他用户稍后可以选择策略的网站，或者应向当前用户授予对所需网站的访问权限。
 - **敏感信息类型**：与包含 [敏感信息类型](sensitive-information-type-entity-definitions.md)的内容相关的任何活动都被分配了较高的风险评分。
 - **敏感度标签**：与具有特定标签 [敏感度标签](sensitivity-labels.md) 的任何活动都将被分配更高的风险分数。
 
@@ -271,7 +271,7 @@ ms.locfileid: "60335642"
     - **说明（可选）**：输入策略的说明。
 
 6. 选择“**下一步**”以继续。
-7. 在 **用户和组** 页上，选择 **"包括所有用户和组** 或 **包括特定的用户和组** 以定义策略中包含的用户或组，或者选择了基于用户的优先级模板； 选择 **添加或编辑优先级用户组**。 选择此选项 **包括所有用户和组** 将查找触发组织中所有用户和组的事件，以便开始为策略分配风险分数。 通过 **包括特定用户和组** 可定义要分配到该策略的用户和组。
+7. 在 **用户和组** 页上，选择 **"包括所有用户和组** 或 **包括特定的用户和组** 以定义策略中包含的用户或组，或者选择了基于用户的优先级模板； 选择 **添加或编辑优先级用户组**。 选择此选项 **包括所有用户和组** 将查找触发组织中所有用户和组的事件，以便开始为策略分配风险分数。 通过 **包括特定用户和组** 可定义要分配到该策略的用户和组。 不支持来宾用户帐户。
 8. 选择“**下一步**”以继续。
 9. 在 **“要优先排序的内容”** 页面上，可以分配（如果需要）要优先排序的源，这增加了为这些源生成高严重性警报的机会。 选择下列选项之一：
 
@@ -287,7 +287,7 @@ ms.locfileid: "60335642"
     - **敏感度标签**： 选择 **添加敏感度标签**，然后选择要设置优先级的标签。 例如， *机密* ， *"机密*。
 
     >[!NOTE]
-    >配置策略并选择优先级 Share Point 网站的用户可以选择SharePoint他们有权访问的网站。 如果SharePoint当前用户无法选择策略中的网站，则具有所需权限的其他用户稍后可以选择策略的网站，或者应向当前用户授予访问所需网站的权限。
+    >配置策略并选择优先级 Share Point 网站的用户可以选择SharePoint他们有权访问的网站。 如果SharePoint当前用户无法选择策略中的网站，则具有所需权限的另一个用户稍后可以选择策略的网站，或者应为当前用户授予访问所需网站的权限。
 
 12. 选择“**下一步**”以继续。
 13. 在 **指标及触发事件** 页面上，你将在 **预览体验计划风险设置** > **指标** 页面看到到您定义为可用的 [指标](insider-risk-management-settings.md#indicators)。 如果在向导开头选择了 *数据泄露* 模板，则必须从 **DLP 策略** 下拉列表中选择 DLP 策略，以启用触发策略指示器或选择内置触发事件。

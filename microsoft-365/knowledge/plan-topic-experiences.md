@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 ms.localizationpriority: medium
 description: 了解如何规划主题Microsoft Viva主题。
-ms.openlocfilehash: dd7b56342a3881c25be65a62028d024aa55c35ce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 61729eeaa4a30a3f7e0faf50ab40320d88f3d78a
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163188"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364575"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>规划Microsoft Viva主题
 
@@ -32,15 +32,15 @@ ms.locfileid: "60163188"
 
 将尊重数据的安全和隐私，并且主题体验不会向用户授予对无权限文件的额外访问权限。 作为规划过程的[一Microsoft Viva，](topic-experiences-security-privacy.md)我们还建议您阅读主题安全和隐私。
 
-若要详细了解 Viva 主题背后的 AI 技术，请阅读"Microsoft Viva[主题：从大数据到大数据"中的 Alexandria。](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)
+若要了解有关 Viva 主题背后的 AI 技术，请阅读以下主题Microsoft Viva[从大数据到大数据中的 Alexandria。](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)
 
 请记住，Viva 主题需要访问用户每天使用的网站和文件。 在测试或开发环境中部署 Viva 主题可能不会产生有用的结果。
 
 ## <a name="requirements"></a>要求
 
-您必须订阅[Viva 主题](https://www.microsoft.com/microsoft-viva/topics)，并且必须是全局管理员或 SharePoint管理员才能访问 Microsoft 365 管理中心设置主题。
+您必须订阅[Viva 主题](https://www.microsoft.com/microsoft-viva/topics)，并且必须是全局管理员或 SharePoint管理员才能访问Microsoft 365 管理中心设置主题。
 
-将使用主题的所有用户都需要主题 **体验** 许可证。 Set up Microsoft Viva Topics 中介绍了[Microsoft Viva许可证](set-up-topic-experiences.md)。
+将使用主题的所有用户都需要主题 **体验** 许可证。 Set up Microsoft Viva Topics 中介绍了[分配许可证](set-up-topic-experiences.md)。
 
 ## <a name="topic-discovery"></a>主题发现
 
@@ -57,7 +57,7 @@ ms.locfileid: "60163188"
 
 我们建议选择足够的网站以包含至少 20，000 个文档，以从 Viva 主题获得最佳结果。
 
-如果您选择"全部 **"（** 所选网站除外）或"仅选定网站"，您可以上载包含.csv列表的 web 文件。 如果你进行试验并且希望包含有限数量的站点来启动，这些选项非常有用。
+如果您选择"全部 **"（** 所选网站除外）或"仅选定网站"，您可以上载包含.csv列表的配置文件。 如果你进行试验并且希望包含有限数量的站点来启动，这些选项非常有用。
 
 你可以复制以下.csv模板：
 
@@ -71,9 +71,7 @@ Site name,URL
 
 ### <a name="multi-geo"></a>多地理位置
 
-如果你的组织已Microsoft 365多地理位置[](/microsoft-365/enterprise/microsoft-365-multi-geo)，主题中心将预配在中心位置，并且只有SharePoint站点可以用作主题源。  (如果选择"所有 **站点"，Viva** 主题将使用中心位置的所有站点) 
-
-所有内容处理和存储均在中心位置完成。
+如果组织已Microsoft 365[多](/microsoft-365/enterprise/microsoft-365-multi-geo)地理位置，Viva 主题通过确保主题数据始终存储在正确的地理位置来尊重数据威胁。 主题中心在中心位置进行预配，并且所有地理位置的内容都在那里进行处理。 结果发现的主题与源内容存储在相同的地理位置。 如果主题源数据在地理位置之间移动，则相应的主题属性（如说明）也移动。
 
 ## <a name="user-permissions"></a>用户权限
 
@@ -86,7 +84,7 @@ Site name,URL
 
 知识管理人员监督信息的质量、信息的结构化方式以及组织的其他最佳做法。 他们可以确认和拒绝主题。
 
-虽然您可以指定各个主题管理员，但建议您创建一个安全组 (或使用包含要成为知识管理员) 的现有安全组。 您可以在安装过程中指定此安全组。
+虽然您可以指定各个主题管理员，但建议您创建一个安全 (或使用包含您希望成为知识管理员) 的现有安全组。 您可以在安装过程中指定此安全组。
 
 *创建和编辑主题*
 
@@ -108,21 +106,21 @@ Site name,URL
 - **仅选定人员或安全组**
 - **没人**
 
-我们建议 **"我的组织"中的**"每个人"，但如果进行试点，你可能希望仅选择所选人员或安全组。 如果要设置 **主题** ，但不允许用户查看主题，也可以选择"否"。  (知识管理员仍可访问，以便他们查看主题并帮助做出让主题广泛可用的决定。) 
+我们建议 **"我的组织"中的**"每个人"，但如果进行试点，你可能希望仅选择所选人员或安全组。 如果要设置 **主题** ，但不允许用户查看主题，也可以选择"否"。  (管理员仍可访问，以便他们查看主题并帮助做出使主题广泛可用的决定。) 
 
 ## <a name="knowledge-rules"></a>知识规则
 
-作为管理员，你可以从主题体验中排除某些主题。 如果希望使敏感数据不显示在主题中，这将非常有用。 虽然知识管理员可以排除主题中心中的主题，但管理员排除的主题甚至对知识管理员不可见。  (管理员还可以在发现之后删除主题中心中) 
+作为管理员，你可以从主题体验中排除某些主题。 如果希望使敏感数据不显示在主题中，这将非常有用。 虽然知识管理员可以排除主题中心中的主题，但管理员排除的主题甚至对知识管理员不可见。  (管理员还可以在发现之后删除主题中心) 
 
-如果要排除管理员级别的主题，则必须将它们添加到一个.csv文件并上载该文件。 可以在安装过程中或以后执行这些操作。
+如果要排除管理员级别的主题，则必须将它们添加到.csv文件并上载该文件。 可以在安装过程中或以后执行这些操作。
 
 .csv文件必须包含以下参数：
 
 - **名称**：键入要排除的主题的名称。 可以通过两种方式来执行此操作：
 - **MatchType-Exact/Partial**：键入您输入 *的名称是精确* 匹配类型还是 *部分* 匹配类型。
-    - 完全匹配：可以包含确切的名称或缩写 (，例如 *Contoso* 或 *ATL*) 。
+    - 完全匹配：可以包含确切的名称或缩写词 (例如 *Contoso* 或 *ATL*) 。
     - 部分匹配：可以排除其中包含特定单词的所有主题。  例如 *，arc 将* 排除包含单词 *arc* 的所有主题，如弧 *形圆*、*弧* 形圆或 *培训弧*。请注意，它将不会排除将文本作为单词的一部分包含的主题，例如体系结构 *。*
-- **代表 (可选**) ： (也称为 *扩展) 如果要* 排除首字母缩写词，请键入首字母缩写词代表的单词。
+- **代表 (** 可选) ： (也称为扩展 *)* 如果要排除缩略词，请键入首字母缩写词代表的单词。
 
     ![排除 CSV 模板中的主题。](../media/exclude-topics-csv.png) 
 
@@ -134,7 +132,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>管理
 
-在设置主题时，作为设置过程的一部分，将自动创建主题中心。 考虑要命名主题中心的内容以及希望 URL 的名称。 可以在设置过程中同时设置名称和 URL，也可以稍后在 (更改 URL) URL Microsoft 365 管理中心。 只能有一个主题中心。
+在设置主题时，作为设置过程的一部分，将自动创建主题中心。 考虑要命名主题中心的内容以及希望 URL 的名称。 可以在设置过程中同时设置名称和 URL，也可以稍后在 (中更改名称) URL Microsoft 365 管理中心。 只能有一个主题中心。
 
 ## <a name="setup-checklist"></a>设置清单
 
@@ -152,7 +150,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 [设置主题体验](set-up-topic-experiences.md)
 
-[在管理中管理主题Microsoft 365](topic-experiences-discovery.md)
+[在"管理主题发现"Microsoft 365](topic-experiences-discovery.md)
 
 [管理主题在Microsoft 365](topic-experiences-knowledge-rules.md)
 

@@ -380,7 +380,7 @@
                       href: streaming-api-event-hub.md
                     - name: 将高级搜寻事件流式传输至存储账户
                       href: streaming-api-storage.md
-                    - name: 支持的事件类型
+                    - name: 支持的流式处理事件类型
                       href: supported-event-types.md
                     - name: 配置事件中心
                       href: configure-event-hub.md

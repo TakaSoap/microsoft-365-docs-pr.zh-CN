@@ -11,16 +11,16 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e07b5fda65a457ab38cf5d2387bbec0aaa039248
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2b3ba016e5a205ddb6eaccc4df71bdc4ad612085
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211377"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364611"
 ---
 # <a name="validate-new-devices"></a>验证新设备
 
-无论你完全不是Microsoft 托管桌面订阅者还是长期订阅者，最好测试首次在服务中注册的任何设备型号的示例。 无论你是订购全新的设备还是重新使用现有设备（包括建议在购买商业Microsoft 托管桌面购买Windows 10 专业版[的设备](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)）都是如此。 在该网站中，通过展开"按筛选"区域中的功能，然后选择"选项"，查看建议 **用于服务Microsoft 托管桌面。** 验证设备可确保它们能够提供你期望的用户体验。
+无论你完全不是Microsoft 托管桌面订阅者还是长期订阅者，最好测试首次在服务中注册的任何设备模型的示例。 无论你是订购全新的设备还是重新使用现有设备（包括建议在购买商业Microsoft 托管桌面购买Windows Pro[的设备](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)）都是如此。 At that site， view the devices recommended for use with the service by expanding **Features** in the **Filter by** area， and then selecting **Microsoft 托管桌面**. 验证设备可确保它们能够提供你期望的用户体验。
 
 ## <a name="validate-devices"></a>验证设备
 
@@ -35,7 +35,7 @@ ms.locfileid: "60211377"
     - 加入网络和用户登录后的 Autopilot 体验
     - 如果已启用"注册 [状态"页，](esp-first-run.md)它将正常工作。
     - 用户可以登录到 Office 应用程序
-    - OneDrive文件夹同步，包括Windows桌面、文档和图片
+    - OneDrive文件夹同步，Windows桌面、文档和图片
     - 设备接收更新、策略和业务线应用程序
 3. 查看"设备清单"报告中报告的设备和硬件 [要求](../working-with-managed-desktop/device-inventory-report.md) ，以检查它们是否与预期匹配。
 

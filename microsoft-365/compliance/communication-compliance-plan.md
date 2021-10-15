@@ -18,26 +18,26 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8f6ca7e0b1996a7213eae0612f8b801b28514f50
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 99b17e10cdf3396fc715d83d5ca6de51ae4cb9c9
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335450"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364166"
 ---
 # <a name="plan-for-communication-compliance"></a>通信合规性规划
 
 在开始使用 [组织中通信](communication-compliance.md) 合规性之前，信息技术和合规性管理团队应查看重要的规划活动和注意事项。 全面了解和规划以下方面的部署有助于确保实现和使用通信合规性功能顺利进行，并且符合解决方案的最佳实践。
 
-## <a name="transitioning-from-supervision-in-office-365"></a>从监督转换Office 365
+## <a name="transitioning-from-supervision-in-office-365"></a>在管理中从监督Office 365
 
-对于在组织中使用Office 365策略的组织，您应立即计划转换为 Microsoft 365 通信合规性策略，并需要了解以下要点：
+对于在组织中使用监督策略Office 365，您应立即计划转换为 Microsoft 365 通信合规性策略，并需要了解以下要点：
 
-- Office 365中的监督解决方案已被 Microsoft 365 中的通信合规性解决方案完全Microsoft 365。 我们建议在通信合规性中创建新策略，这些策略的设置与现有监督策略相同，以使用新的调查和修正改进。
+- Office 365中的监督解决方案已完全替换为 Microsoft 365。 我们建议在通信合规性中创建新策略，这些策略的设置与现有监督策略相同，以使用新的调查和修正改进。
 - 在策略匹配中Office 365保存在监督中的邮件不能移动或共享到 Microsoft 365。
 - 对于在转换过程中并行使用这两个解决方案的组织，每个解决方案中使用的策略必须具有唯一的策略名称。 在过渡期间，可以在两种策略之间共享组和自定义关键字词典。
 
-有关停用信息，Office 365，请参阅 Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)了解详细信息。
+有关停用信息，Office 365，请参阅Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)了解详细信息。
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>与组织中的利益干系人合作
 
@@ -54,7 +54,7 @@ ms.locfileid: "60335450"
 
 ### <a name="permissions"></a>权限
 
-选择专门的利益干系人，以定期监视和查看警报和事例[，Microsoft 365 合规中心。](https://compliance.microsoft.com/) 请务必了解如何将用户和利益干系人分配到组织中不同的通信合规性角色组。
+选择专用利益干系人，以定期在"管理"中监视和[查看Microsoft 365 合规中心。](https://compliance.microsoft.com/) 请务必了解如何将用户和利益干系人分配到组织中不同的通信合规性角色组。
 
 共有 5 个角色组，用于配置权限以管理通信合规性功能。 若要在 Microsoft 365 合规中心中将 **通信合规性** 作为菜单选项提供并继续执行这些配置步骤，必须将你分配给 *通信符合性* 或 *通信符合性管理员* 角色组。 若要在初始配置后访问和管理通信合规性功能，用户必须是至少一个通信合规性角色组的成员。
 
@@ -82,15 +82,20 @@ ms.locfileid: "60335450"
 
 ### <a name="reviewers"></a>审阅者
 
-创建通信合规性策略时，必须确定审阅受监督用户消息的用户。 在策略中，用户的电子邮件地址可以标记负责审查通信的人员或组。 所有审阅者都必须在邮箱上托管Exchange Online且必须分配到 *通信* 合规性分析或 *通信合规性调查* 角色。 分析 (或调查人员) 还必须分配 *"通信合规性案例管理"* 角色。 审阅者添加到策略时，他们会自动收到一封电子邮件，通知他们分配到此策略，并提供有关审阅过程的信息的链接。
+创建通信合规性策略时，必须确定审阅受监督用户消息的用户。 在策略中，用户的电子邮件地址可以标记负责审查通信的人员或组。 所有审阅者都必须在邮箱上托管Exchange Online且必须分配到通信合规性 *分析或**通信合规性调查* 角色。 分析 (或研究人员的审阅) 还必须分配 *通信合规性案例管理* 角色。 审阅者添加到策略时，他们会自动收到一封电子邮件，通知他们分配到此策略，并提供有关审阅过程的信息的链接。
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>受监督用户和审阅者的组
 
-若要简化设置，请为需要审阅其通信的人创建组，为审阅这些通信的人创建组。 如果你已经在使用组，可能需要创建若干个组。 例如，如果想要监管两个不同组人员之间的通信，或者指定一个不受监管的组，这时候就需要创建若干个组。
-
-在策略中分配通讯组时，该策略监视来自通讯组中每个用户的所有电子邮件。 在策略中Microsoft 365组时，策略将监视发送到该组的所有电子邮件，而不是每个组成员收到的单个电子邮件。
+若要简化设置，请为需要审阅其通信的人创建组，为审阅这些通信的人创建组。 如果你已经在使用组，可能需要创建若干个组。 例如，如果想要监管两个不同组人员之间的通信，或者指定一个不受监管的组，这时候就需要创建若干个组。 在策略中分配通讯组时，该策略监视来自通讯组中每个用户的所有电子邮件。 在策略中Microsoft 365组时，策略将监视发送到该组的所有电子邮件，而不是每个组的成员收到的单个电子邮件。
 
 向通信合规性策略添加组和通讯组列表是整体条件和规则集的一部分，因此策略支持的最大组和通讯组列表数因也添加到策略中的条件数而异。 每个策略应支持大约 20 个组或通讯组列表，具体取决于策略中出现的其他条件数。
+
+使用下图帮助配置组织中的组以实施通信合规性策略：
+
+| **策略成员** | **支持的组** | **不支持的组** |
+|:-----|:-----|:-----|
+|受监督用户 <br> 已排除用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 <br> Microsoft 365动态成员身份的组 |
+| 审阅者 | 无 | 通讯组 <br> 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 |
 
 ### <a name="privacy"></a>隐私
 
@@ -109,10 +114,10 @@ ms.locfileid: "60335450"
 
 - 请考虑将组织中所有用户添加为通信合规性策略的作用域内用户。 在某些情况下，将特定用户标识为个别策略的作用域内非常有用，但大多数组织应在针对骚扰或非法检测优化的通信合规性策略中包括所有用户。
 - 配置 100% 要审阅的通信百分比，以确保策略捕获组织通信中关注的所有问题。
-- 您可以扫描来自[第三方源的通信](communication-compliance-channels.md#third-party-sources)，以搜索导入到组织中邮箱Microsoft 365的数据。 若要查看这些平台中的通信，需要先配置这些服务的连接器，然后通信策略才能监视满足策略条件的邮件。
+- 您可以扫描来自[第三方源的通信](communication-compliance-channels.md#third-party-sources)，以搜索导入到组织邮箱Microsoft 365的数据。 若要查看这些平台中的通信，需要先配置这些服务的连接器，然后通信策略才能监视满足策略条件的邮件。
 - 在自定义通信合规性策略中，策略可以支持监视除英语语言外的语言。 使用你[选择的语言](communication-compliance-policies.md#custom-keyword-dictionaries)生成冒犯性字词的自定义关键字词典，或者使用可训练的分类器在 Microsoft 365[](classifier-get-started-with.md)中构建你自己的机器学习Microsoft 365。
 - 所有组织都有不同的通信标准和策略需求。 使用通信合规性策略条件监视特定 [关键字，](communication-compliance-policies.md#conditional-settings) 或监视具有自定义敏感信息 [类型的特定类型的信息](create-a-custom-sensitive-information-type.md)。
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 
-若要为 Microsoft 365 组织配置通信合规性，请参阅为[Microsoft 365](communication-compliance-configure.md)配置通信合规性或查看[Contoso](communication-compliance-case-study.md)的案例研究，以及他们如何快速配置通信合规性策略来监视 Microsoft Teams、Exchange Online 和 Yammer 通信中的冒犯性语言。
+若要为 Microsoft 365 组织配置通信合规性，请参阅为[Microsoft 365](communication-compliance-configure.md)配置通信合规性或查看[Contoso](communication-compliance-case-study.md)的案例研究，以及他们如何快速配置通信合规性策略以监视 Microsoft Teams、Exchange Online 和 Yammer 通信中的冒犯性语言。

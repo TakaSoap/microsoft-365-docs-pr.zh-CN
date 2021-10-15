@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: eeeda9a41f35f6380d2d20adf80b00bc80ba4c4e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ed123a772d3c3db23f4519beeb32903bb43267a7
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198765"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335762"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -31,7 +31,7 @@ ms.locfileid: "60198765"
 > [!NOTE]
 > 组织结构（如 SharePoint 中的文档集或库，或 Exchange 中的文件夹）的 [法规记录](records-management.md#records) 或默认标签不支持此方案。这些方案需要[发布的保留标签策略](create-apply-retention-labels.md#step-2-publish-retention-labels)。
 
-[保留标签](retention.md)最强大的功能之一是能够将其自动应用于符合特定条件的内容。 此情况下，组织中的人员无需应用保留标签。 Microsoft 365 会代为操作。
+[保留标签](retention.md)最强大的功能之一是能够将其自动应用于符合指定条件的内容。在这种情况下，组织中的人员无需应用保留标签。Microsoft 365 会代为操作。
   
 自动应用保留标签的功能非常强大，这是因为：
   
@@ -41,7 +41,7 @@ ms.locfileid: "60198765"
     
 - 用户不再需要了解数据管理策略，反而可以专注于自己的工作。
     
-当内容包含敏感信息、关键字或可搜索属性，或者[可训练分类器](classifier-get-started-with.md)的匹配项时，可以自动将保留标签应用于内容。
+如果内容尚未应用保留标签，并且包含敏感信息、关键字或可搜索属性，或者[可训练分类器](classifier-get-started-with.md)的匹配项，则可以自动将保留标签应用于内容。
 
 > [!TIP]
 > 使用可搜索属性以识别 [Teams 会议录制](#microsoft-teams-meeting-recordings)和[应用了敏感度标签的项目](#identify-files-and-emails-that-have-a-sensitivity-label)。
@@ -83,15 +83,16 @@ ms.locfileid: "60198765"
     
     没有立即看到你的选项？ 首先选择“**全部显示**”。 
 
-2. 按照向导中的提示进行操作。 如果你正在使用记录管理：
+2. 按照提示进行配置。 如果你正在使用记录管理：
     
     - 有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)
     
     - 若要使用保留标签来声明记录，请选择 **“将项目标记为记录”**，或者 **“将项目标记为合规性记录”**。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
 
-3. 创建标签后，你会看到用于发布标签、自动应用标签或 仅保存标签的选项：请选择“**将此标签自动应用到特定的内容类型**”，然后选择“**完成**”以启动“创建自动标记向导”，该向导将直接带你跳转到以下过程中的第 2 步。
+3. 创建标签后，你会看到发布标签、自动应用标签或仅保存标签的选项，请选择“**将此标签自动应用到特定类型的内容**”，然后选择“**完成**”。 
+4.  将直接进入以下流程的步骤 2 的配置。
 
-若要编辑现有标签，请将其选中，然后选择“**编辑标签**”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
+若要编辑现有标签，请将其选中，然后选择“**编辑标签**”选项来启动“**编辑保留标签**”配置，你将能够更改步骤 2 的标签说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
 
 ### <a name="step-2-create-an-auto-apply-policy"></a>步骤 2：创建自动应用策略
 
@@ -107,15 +108,18 @@ ms.locfileid: "60198765"
     
     没有立即看到你的选项？ 首先选择“**全部显示**”。 
 
-2. 按照“创建自动标记向导”中的提示进行操作。
+2. 按照“创建自动标记”配置中的提示进行操作。
     
     有关配置自动应用保留标签的条件的信息，请参阅此页面上的[配置自动应用保留标签的条件](#configuring-conditions-for-auto-apply-retention-labels)部分。
     
     有关保留标签支持的位置的信息，请参阅[保留标签和位置](retention.md#retention-label-policies-and-locations)部分。
 
-若要编辑现有的自动应用策略，请将其选中以启动“编辑保留策略向导”，该向导可用于更改从第 2 步中选定的保留标签和的任何[符合条件的设置](#updating-retention-labels-and-their-policies)。
+若要编辑现有的自动应用策略，请将其选中以启动“**编辑保留策略**”配置，可用于更改从第 2 步中选定的保留标签和的任何[符合条件的设置](#updating-retention-labels-and-their-policies)。
 
 使用自动应用标签策略标记内容后，无法通过更改内容或策略，或使用一个新的自动应用标签策略来自动删除或更改应用的标签。有关详细信息，请参阅[一次只能有一个保留标签](retention.md#only-one-retention-label-at-a-time)。
+
+> [!NOTE]
+> 自动应用保留标签策略永远不会替换应用于内容的现有保留标签。 如果要使用配置的条件重新标记内容，需要从现有内容中手动删除当前保留标签。
 
 ### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>配置自动应用保留标签的条件
 

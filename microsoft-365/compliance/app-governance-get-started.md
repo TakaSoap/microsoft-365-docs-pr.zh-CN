@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用应用治理功能来治理你的应用。
-ms.openlocfilehash: bb5fa0e54eadec89124c39a350b7591be82b7583
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 8998a0e4f6cf01a7394e44695cd06f0b60915c7e
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335874"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364731"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>开始使用应用治理（预览版）
 
@@ -101,7 +101,6 @@ ms.locfileid: "60335874"
 - 公司管理员
 - 合规管理员
 - 合规数据管理员
-- 合规信息读取者（只读）
 - 全局读取者
 - 安全管理员
 - 安全操作员

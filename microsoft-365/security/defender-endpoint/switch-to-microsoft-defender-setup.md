@@ -1,6 +1,6 @@
 ---
 title: 切换到 Microsoft Defender for Endpoint - 安装程序
-description: 转换到 Defender for Endpoint。 查看安装过程，包括安装Microsoft Defender 防病毒。
+description: 转换到 Defender for Endpoint。 查看安装过程，其中包括安装Microsoft Defender 防病毒。
 keywords: 迁移， Microsoft Defender for Endpoint， 防病毒， 被动模式， 设置过程
 ms.prod: m365-security
 ms.technology: mde
@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 10/07/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 76b390c8f4ff3cd83dacd308ac6d9fc64da21017
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: 36de4b9703c0200d8e2eddba8e3ec0f9b6fe47f9
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245497"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364755"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>切换到 Microsoft Defender for Endpoint - 阶段 2：设置
 
@@ -48,15 +48,15 @@ ms.locfileid: "60245497"
 
 ## <a name="reinstallenable-microsoft-defender-antivirus-on-your-endpoints"></a>在终结点上Microsoft Defender 防病毒/启用配置
 
-在某些版本的 Windows，Microsoft Defender 防病毒安装非 Microsoft 防病毒/反恶意软件解决方案时，可能会卸载或禁用此软件。 当运行 Windows的终结点载入 Defender for Endpoint 时，Microsoft Defender 防病毒非 Microsoft 防病毒解决方案一起在被动模式下运行。 若要了解更多信息，请参阅使用 [Defender for Endpoint 进行防病毒保护](microsoft-defender-antivirus-compatibility.md#antivirus-protection-with-defender-for-endpoint)。
+在某些版本的 Windows，Microsoft Defender 防病毒安装非 Microsoft 防病毒/反恶意软件解决方案时，可能会卸载或禁用这些应用程序。 当运行 Windows的终结点载入 Defender for Endpoint 时，Microsoft Defender 防病毒可以与非 Microsoft 防病毒解决方案一起在被动模式下运行。 若要了解更多信息，请参阅使用 [Defender for Endpoint 进行防病毒保护](microsoft-defender-antivirus-compatibility.md#antivirus-protection-without-defender-for-endpoint)。
 
-在切换到 Defender for Endpoint 时，可能需要采取某些步骤来重新安装或启用Microsoft Defender 防病毒。 下表介绍了在客户端和服务器上Windows操作。
+在切换到 Defender for Endpoint 时，可能需要采取特定步骤重新安装或启用Microsoft Defender 防病毒。 下表介绍了在客户端和服务器上Windows操作。
 </br> </br>
 
 |终结点类型|需执行的操作|
 |---|---|
-|Windows客户端 (，例如运行 Windows 10 11 Windows 11) |通常，无需对客户端执行任何Windows操作 (，Microsoft Defender 防病毒客户端) 。 以下是原因： <br/><br/> Microsoft Defender 防病毒仍应安装，但在迁移过程的此时很可能已禁用。 <br/><br/> 安装非 Microsoft 防病毒/反恶意软件解决方案，并且客户端尚未载入 Defender for Endpoint 时，Microsoft Defender 防病毒自动禁用。 <br/><br/> 稍后，当客户端终结点载入 Defender for Endpoint 时，如果这些终结点运行的是非 Microsoft 防病毒解决方案，Microsoft Defender 防病毒进入被动模式。 <br/><br/> 如果卸载非 Microsoft 防病毒解决方案，Microsoft Defender 防病毒自动进入活动模式。|
-|Windows服务器|在 Windows 服务器上，你需要重新安装Microsoft Defender 防病毒，并手动设置为被动模式。 在Windows服务器上，安装非 Microsoft 防病毒/反恶意软件Microsoft Defender 防病毒无法与非 Microsoft 防病毒解决方案一起运行。 在这种情况下，Microsoft Defender 防病毒禁用或卸载。 <br/><br/> 若要在 Microsoft Defender 防病毒 服务器上重新安装或Windows，请执行以下任务： <br/>- [仅在必要时，才在 Windows Server (将 DisableAntiSpyware](#set-disableantispyware-to-false-on-windows-server)) <br/>- [在 Microsoft Defender 防病毒 服务器上重新安装Windows](#reinstall-microsoft-defender-antivirus-on-windows-server)<br/>- [将Microsoft Defender 防病毒服务器设置为被动Windows模式](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)|
+|Windows客户端 (，例如运行 Windows 10 和 Windows 11) |通常，无需对客户端执行任何Windows操作 (，Microsoft Defender 防病毒客户端) 。 以下是原因： <br/><br/> Microsoft Defender 防病毒仍应安装，但很可能在迁移过程的此时处于禁用状态。 <br/><br/> 安装非 Microsoft 防病毒/反恶意软件解决方案，并且客户端尚未载入 Defender for Endpoint 时，Microsoft Defender 防病毒自动禁用。 <br/><br/> 稍后，当客户端终结点载入 Defender for Endpoint 时，如果这些终结点运行的是非 Microsoft 防病毒解决方案，Microsoft Defender 防病毒进入被动模式。 <br/><br/> 如果卸载非 Microsoft 防病毒解决方案，Microsoft Defender 防病毒自动进入活动模式。|
+|Windows服务器|在 Windows 服务器上，你需要重新安装Microsoft Defender 防病毒，并手动设置为被动模式。 在Windows服务器上，安装非 Microsoft 防病毒/反恶意软件Microsoft Defender 防病毒无法与非 Microsoft 防病毒解决方案一起运行。 在这种情况下，Microsoft Defender 防病毒禁用或卸载。 <br/><br/> 若要重新安装或启用Microsoft Defender 防病毒服务器Windows，请执行以下任务： <br/>- [仅在必要时，才在 Windows Server (将 DisableAntiSpyware](#set-disableantispyware-to-false-on-windows-server)) <br/>- [在 Microsoft Defender 防病毒 服务器上重新安装Windows](#reinstall-microsoft-defender-antivirus-on-windows-server)<br/>- [将Microsoft Defender 防病毒服务器设置为被动Windows模式](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)|
 
 > [!TIP]
 > 若要了解有关使用Microsoft Defender 防病毒 Microsoft 防病毒保护状态的详细信息，请参阅Microsoft Defender 防病毒[兼容性。](microsoft-defender-antivirus-compatibility.md)
@@ -80,7 +80,7 @@ ms.locfileid: "60245497"
 > [!TIP]
 > 若要了解有关此注册表项的信息，请参阅 [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)。
 
-### <a name="reinstall-microsoft-defender-antivirus-on-windows-server"></a>在 Microsoft Defender 防病毒 服务器上重新安装Windows
+### <a name="reinstall-microsoft-defender-antivirus-on-windows-server"></a>在 Microsoft Defender 防病毒 服务器上重新安装 Windows
 
 > [!IMPORTANT]
 > 以下过程仅适用于运行以下版本的 Windows：
@@ -126,7 +126,7 @@ ms.locfileid: "60245497"
    - 在 **"基本**"下，**选择"十六进制"。**
 
 > [!NOTE]
-> 载入适用于终结点的 Defender 后，你可能必须Microsoft Defender 防病毒服务器中的被动Windows模式。 若要验证被动模式是否按预期设置，请搜索位于) 的 **Microsoft-Windows-Windows Defender** 操作日志 (中的事件 *5007，* 并确认 `C:\Windows\System32\winevt\Logs` **ForceDefenderPassiveMode** 或 **PassiveMode** 注册表项已设置为 **0x1。**
+> 载入适用于终结点的 Defender 后，你可能必须Microsoft Defender 防病毒服务器中的被动Windows模式。 若要验证被动模式是否按预期设置，请搜索位于) 的 **Microsoft-Windows-Windows Defender** 操作日志 (中的事件 *5007，* 并确认 `C:\Windows\System32\winevt\Logs` **ForceDefenderPassiveMode** 或 **PassiveMode** 注册表项已设置为 **0x1**。
 
 ### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>是使用 Windows Server 2012 R2 还是 Windows Server 2016？
 
@@ -140,7 +140,7 @@ ms.locfileid: "60245497"
 
 |方法|需执行的操作|
 |---|---|
-|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/><br/> **注意**：Intune 现在是该Microsoft Endpoint Manager。|1. 转到Microsoft Endpoint Manager[中心并](https://go.microsoft.com/fwlink/?linkid=2109431)登录。<br/><br/>2. **选择"设备** \> **配置文件"，** 然后选择要配置的配置文件类型。 如果你尚未创建设备限制配置文件类型，或者如果你想要创建新的配置文件类型，请参阅配置设备限制[Microsoft Intune。](/intune/device-restrictions-configure)<br/><br/>3. 选择 **"属性"，** 然后选择" **配置设置：编辑"**<br/><br/>4. 展开 **"Microsoft Defender 防病毒"。**<br/><br/>5. 启用 **云保护**。<br/><br/>6. 在"**在示例提交前提示用户"** 下拉列表中，选择"自动 **发送所有示例"。**<br/><br/>7. 在"**检测可能不需要的应用程序"** 下拉列表中，选择"**启用"** 或"审核 **"。**<br/><br/>8. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。** <br/><br/> **提示**：有关 Intune 设备配置文件（包括如何创建和配置其设置）的信息，请参阅什么是Microsoft Intune [配置文件？。](/intune/device-profiles)|
+|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/><br/> **注意**：Intune 现在是 Microsoft Endpoint Manager 的一Microsoft Endpoint Manager。|1. 转到Microsoft Endpoint Manager[中心并](https://go.microsoft.com/fwlink/?linkid=2109431)登录。<br/><br/>2. **选择"设备** \> **配置文件"，** 然后选择要配置的配置文件类型。 如果尚未创建设备限制配置文件类型，或者要创建新的配置文件类型，请参阅配置设备限制[Microsoft Intune。](/intune/device-restrictions-configure)<br/><br/>3. 选择 **"属性"，** 然后选择" **配置设置：编辑"**<br/><br/>4. 展开 **"Microsoft Defender 防病毒"。**<br/><br/>5. 启用 **云保护**。<br/><br/>6. 在"**在示例提交前提示用户"** 下拉列表中，选择"自动 **发送所有示例"。**<br/><br/>7. 在"**检测可能不需要的应用程序"** 下拉列表中，选择"**启用"** 或"审核 **"。**<br/><br/>8. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。** <br/><br/> **提示**：有关 Intune 设备配置文件（包括如何创建和配置其设置）的信息，请参阅什么是Microsoft Intune [配置文件？。](/intune/device-profiles)|
 |Microsoft Endpoint Configuration Manager|请参阅[在 Configuration Manager 中为Endpoint Protection和部署反恶意软件策略](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies)。 <br/><br/> 创建和配置反恶意软件策略时，请确保查看实时保护设置并启用"[](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings)[首次看到时阻止"。](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 |控制面板Windows|请按照以下指南：[打开Microsoft Defender 防病毒。](/mem/intune/user-help/turn-on-defender-windows)  (在 Windows Defender 防病毒.Microsoft Defender 防病毒.Windows.)  |
 |[高级组策略管理](/microsoft-desktop-optimization-pack/agpm/) <br/><br/> 或 <br/><br/> [组策略管理控制台](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|1. 转到计算机 **配置** \> **管理模板** \> **Windows组件** \> **Microsoft Defender 防病毒**。<br/><br/>2. 查找名为"关闭策略 **"Microsoft Defender 防病毒。**<br/><br/>3. 选择 **"编辑策略设置**"，并确保策略已禁用。 此操作将启用Microsoft Defender 防病毒。 <br/> (在 Windows Defender 防病毒.Microsoft Defender 防病毒.Windows.)  |
@@ -185,7 +185,7 @@ ms.locfileid: "60245497"
 - *路径排除* 项排除特定文件以及这些文件访问的任何内容。
 - *进程排除* 排除排除进程涉及的任何内容，但不排除进程本身。
 - 使用进程排除项的完整路径而不是仅按名称列出进程排除项。  (仅名称方法安全性较低。) 
-- 如果将每个可执行文件 (.exe) 路径排除和进程排除，则进程及其涉及的任何内容都将被排除。
+- 如果将每个可执行文件 (.exe) 路径排除和进程排除，将排除进程及其涉及的任何内容。
 
 ## <a name="set-up-your-device-groups-device-collections-and-organizational-units"></a>设置设备组、设备集合和组织单位
 

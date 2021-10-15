@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender流 API 中支持的事件类型
-description: 了解流式 API () 哪些搜寻事件类型
+title: Microsoft 365 Defender流式处理 API 中支持的流式处理事件类型
+description: 了解流式 API () 哪些流事件类型
 keywords: 原始数据导出， 流式处理 API， API， 事件中心， Azure 存储， 存储帐户， 搜寻， 原始数据共享
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 780cac298206127d52e14b3888a0a8d7f05ae0c5
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: e8264ccb9e3181f6b58a6206417eb2b842bec6e7
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60216966"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364792"
 ---
-# <a name="supported-microsoft-365-defender-event-types-in-event-streaming-api"></a>事件Microsoft 365 Defender API 中支持的事件类型
+# <a name="supported-microsoft-365-defender-streaming-event-types-in-event-streaming-api"></a>事件Microsoft 365 Defender API 中受支持的流式处理事件类型
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,11 +38,13 @@ ms.locfileid: "60216966"
 
 ## <a name="hunting-tables-support-status-in-event-streaming-api"></a>搜寻表支持事件流 API 中的状态
 
+下表仅包括流式 API 中支持的表的列表，并不包含所有 AH 架构。 有关 API 的完整列表，请参阅 [了解架构表](advanced-hunting-schema-tables.md#learn-the-schema-tables)。
+
+
 | 表名 | 状态 |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | GA |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | GA  |
-| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | 尚不支持 |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** |GA |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** |GA |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | GA |
@@ -57,7 +59,5 @@ ms.locfileid: "60216966"
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | 尚不支持 |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | 尚不支持 |
-| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | 尚不支持 |
+
 

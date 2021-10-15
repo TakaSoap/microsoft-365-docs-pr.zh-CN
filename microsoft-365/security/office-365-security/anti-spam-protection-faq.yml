@@ -17,15 +17,15 @@ metadata:
   - m365initiative-defender-office365
   ms.custom:
   - seo-marvel-apr2020
-  description: 管理员可以查看 EOP 管理中心中有关反垃圾邮件保护的Exchange Online Protection (常见问题) 。
+  description: 管理员可以查看有关 EOP 服务中反垃圾邮件保护的常见问题Exchange Online Protection () 。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: efcca5d8834c8d4bf67dbf3ee98a07380733bf5f
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: ff584aba00db965946fccd81a5a433f97d05c8ef
+  ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60202521"
+  ms.lasthandoff: 10/15/2021
+  ms.locfileid: "60364118"
 title: 反垃圾邮件保护常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -40,7 +40,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  本主题为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织或没有邮箱的独立 Exchange Online Protection (EOP) 组织提供了有关反恶意软件Exchange Online常见问题和解答。
+  本主题针对在 Exchange Online 中拥有邮箱的 Microsoft 365 组织或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织提供了有关反垃圾邮件保护的常见问题Exchange Online解答。
 
 
   有关隔离的问题和解答，请参阅[隔离常见问题解答](quarantine-faq.yml)。
@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > 在 EOP 保护内部部署 Exchange 邮箱的混合部署中，您需要在本地 Exchange 组织中配置两个 Exchange 邮件流规则 (也称为传输规则) ，以检测添加到邮件中的 EOP 垃圾邮件筛选标头。 有关详细信息，请参阅[在混合环境中将 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
+      > 在 EOP 保护本地 Exchange 邮箱的混合部署中，您需要在本地 Exchange 组织中配置两个 Exchange 邮件流规则 (也称为传输规则) ，以检测添加到邮件中的 EOP 垃圾邮件筛选标头。 有关详细信息，请参阅[在混合环境中将 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
        **对于出站邮件：** 邮件要么通过高风险传递池进行 [](high-risk-delivery-pool-for-outbound-messages.md)路由，要么通过未送达报告（也称为 NDR）或退回邮件 (退回给发件人) 。 有关出站垃圾邮件保护详细信息，请参阅 [出站垃圾邮件控制](outbound-spam-controls.md)。
   - question: >
@@ -72,7 +72,7 @@ sections:
 
       > [!NOTE]
 
-      > 如果您收到可能是零日垃圾邮件变体的邮件，为了帮助我们改进服务，请使用向 Microsoft 报告邮件和文件中所述的方法之一将邮件提交给[Microsoft。](report-junk-email-messages-to-microsoft.md)
+      > 如果您收到可能是零日垃圾邮件变体的邮件，为了帮助我们改进服务，请使用将邮件和文件报告给 Microsoft 中所述的方法之一将邮件提交给[Microsoft。](report-junk-email-messages-to-microsoft.md)
   - question: >
       是否需要配置该服务以提供反垃圾邮件保护？
     answer: >
@@ -105,13 +105,13 @@ sections:
     answer: >
       是的，该服务具有一个 URL 筛选器，用于检查邮件中的 URL。 如果检测到与已知垃圾邮件或恶意内容关联的 URL，则邮件被标记为垃圾邮件。
   - question: >
-      使用此服务的客户如何向 Microsoft 发送 (漏报) 非 (邮件) 误报？
+      使用此服务的客户如何向 Microsoft 发送 (误报) 非 (垃圾邮件) 误报？
     answer: >
       垃圾邮件和非垃圾邮件可以通过多种方式提交给 Microsoft 进行分析。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
   - question: >
       我能否收到垃圾邮件报告？
     answer: >
-      是，例如，您可以在电子邮件中获取垃圾邮件检测Microsoft 365 管理中心。 此报告以唯一邮件计数显示垃圾邮件量。 有关报告详细信息，请参阅以下链接：
+      是的，例如，可以在邮件中获取垃圾邮件检测Microsoft 365 管理中心。 此报告以唯一邮件计数显示垃圾邮件量。 有关报告详细信息，请参阅以下链接：
 
 
       Exchange Online客户[：监视、报告和邮件跟踪Exchange Online](/exchange/monitoring/monitoring)
@@ -123,9 +123,9 @@ sections:
     answer: >
       可以，邮件跟踪工具使您能够在电子邮件通过服务时跟踪它们，以便了解它们发生了什么。 有关如何使用邮件跟踪工具了解邮件被标记为垃圾邮件的原因，请参阅邮件被标记为 [垃圾邮件吗？](/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
   - question: >
-      如果我的用户发送出站 (，服务) 限制我的邮件速率限制吗？
+      如果我的用户发送出 (垃圾邮件) ，服务是否将限制我的邮件的速率限制？
     answer: >
-      如果 EOP 确定用户在特定时间范围内通过服务发送的邮件超过一半 (例如每小时) ，则用户将被阻止发送邮件。 在大多数情况下，如果出站邮件被确定为垃圾邮件，则通过高风险传送池进行路由，这会降低正常的出站 IP 池添加到阻止列表的可能性。
+      如果 EOP 确定用户在特定时间范围内通过服务发送的邮件超过一半 (例如每小时) ，将阻止用户发送邮件。 在大多数情况下，如果出站邮件被确定为垃圾邮件，则通过高风险传送池进行路由，这会降低正常的出站 IP 池添加到阻止列表的可能性。
 
 
       当发件人被阻止发送出站垃圾邮件时，您可以发送通知到一个特定的电子邮件地址。 有关此设置的详细信息，请参阅[配置出站垃圾邮件策略](configure-the-outbound-spam-policy.md)。
@@ -135,7 +135,7 @@ sections:
       是。 尽管我们建议你将 MX 记录指向 Microsoft，但我们知道将你的电子邮件路由到 Microsoft 第一个地址有合法业务原因。
 
 
-      - **入站**：将 MX 记录更改为指向第三方提供程序，然后将邮件重定向到 EOP 进行其他处理。 有关详细信息，请参阅[增强的筛选连接器Exchange Online。](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+      - **入站**：将 MX 记录更改为指向第三方提供程序，然后将邮件重定向到 EOP 进行其他处理。 有关详细信息，请参阅增强[的筛选连接器Exchange Online。](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
 
       - **出站**：配置从Microsoft 365到目标第三方提供程序的智能主机路由。
@@ -146,7 +146,7 @@ sections:
   - question: >
       是否正在调查垃圾邮件和恶意软件邮件的发送者，或将其转移到执法机构实体？
     answer: >
-      该服务专注于垃圾邮件和恶意软件检测和删除，但我们有时可能会调查特别危险或破坏性的垃圾邮件或攻击活动，并寻求破坏者。 这可能涉及与法律和数字犯罪单位合作，以关闭垃圾邮件制造者机器人网络，阻止垃圾邮件制造者使用服务 (（如果他们使用服务) 发送出站电子邮件) ，以及将相关信息传递给执法机构进行犯罪犯罪。
+      该服务专注于垃圾邮件和恶意软件检测和删除，但我们有时可能会调查特别危险或破坏性的垃圾邮件或攻击活动，并寻求破坏者。 这可能涉及与法律和数字犯罪单位合作，以关闭垃圾邮件制造者机器人网络，阻止垃圾邮件制造者使用服务 (（如果他们使用服务) 发送出站电子邮件) ，以及将相关信息传递给执法机构进行犯罪犯罪）。
   - question: >
       确保传递我的邮件的一组最佳出站邮件做法是什么？
     answer: >-
@@ -155,11 +155,11 @@ sections:
 
       - **源电子邮件域应在 DNS 中解析。**
 
-        例如，如果发件人是user@fabrikam，则域 fabrikam 解析为 IP 地址 192.0.43.10。
+        例如，如果发件人是 user@fabrikam，则域 fabrikam 解析为 IP 地址 192.0.43.10。
 
         如果发送域在 DNS 中没有 A 记录和 MX 记录，则无论邮件内容是否为垃圾邮件，服务都将会通过高风险传送池路由邮件。 有关高风险传递池的信息，请参阅出站邮件的高风险 [传递池](high-risk-delivery-pool-for-outbound-messages.md)。
 
-      - **出站邮件服务器应具有反向 DNS (PTR) 条目。**
+      - **出站电子邮件服务器应具有反向 DNS (PTR) 条目。**
 
         例如，如果电子邮件源 IP 地址为 192.0.43.10，则反向 DNS 条目为 `43-10.any.icann.org` 。'
 
@@ -221,7 +221,7 @@ sections:
 
       - **设置出站退回邮件的格式。**
 
-        生成传递状态通知 (也称为未送达报告、未送达报告或退回邮件) 时，发件人应遵循 [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt)中指定的退回格式。
+        当生成传递状态通知 (也称为未送达报告、未送达报告或退回邮件) 时，发件人应遵循 [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt)中指定的退回格式。
 
       - **清除退回的不存在用户的电子邮件地址。**
 
