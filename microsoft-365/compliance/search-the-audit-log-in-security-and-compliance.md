@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 3edb4307937bcf76a87f9bbdf8930a646794156e
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: dd79e0c74e2313855e2bf698053c99a50e5aaefd
+ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335826"
+ms.lasthandoff: 10/16/2021
+ms.locfileid: "60400055"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -587,12 +587,12 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
-|已允许计算机同步文件|ManagedSyncClientAllowed|用户成功建立与网站的同步关系。 同步关系之所以成功，是因为用户计算机是添加到域列表（称为 *安全收件人列表*）的域成员，可以访问组织中的文档库。 <br/><br/> 有关此功能的详细信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](/powershell/module/sharepoint-online/)。|
-|已阻止计算机同步文件|UnmanagedSyncClientBlocked|用户尝试从某计算机与网站建立同步关系，该计算机不是组织域的成员，或是尚未添加到可访问组织文档库的域列表（称为 *安全收件人列表*）的域的成员。 不允许同步关系，并阻止用户计算机在文档库上同步、下载或上传文件。 <br/><br/> 有关此功能的信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](/powershell/module/sharepoint-online/)。|
+|已允许计算机同步文件|ManagedSyncClientAllowed|用户成功建立与网站的同步关系。同步关系建立成功是因为用户的计算机是已添加到可访问组织文档库的域列表（称为 *安全收件人列表*）的域的成员。 <br/><br/> 有关此功能的详细信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](/powershell/module/sharepoint-online/)。|
+|已阻止计算机同步文件|UnmanagedSyncClientBlocked|用户尝试从某计算机与网站建立同步关系，该计算机不是组织域的成员，或是尚未添加到可访问组织文档库的域列表（称为 *安全收件人列表*）的域的成员。不允许同步关系，并阻止用户的计算机同步、下载或上传文档库中的文件。<br/><br/> 有关此功能的信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](/powershell/module/sharepoint-online/)。|
 |已将文件下载到计算机|FileSyncDownloadedFull|用户建立同步关系，并首次成功将文件从文档库下载到计算机。|
-|已将文件更改下载到计算机|FileSyncDownloadedPartial|用户从文档库成功下载对文件所做的任何更改。 此活动表明对文档库中的文件所做的任何更改均已被下载到用户计算机中。 仅下载了更改，因为用户以前下载过文档库（如 **已将文件下载到计算机** 活动所示）。|
+|已将文件更改下载到计算机|FileSyncDownloadedPartial|用户从文档库成功下载对文件所做的任何更改。此活动表明对文档库中的文件所做的任何更改均已被下载到用户计算机中。仅下载了更改，因为用户以前下载过文档库（如 **已将文件下载到计算机** 活动所示）。|
 |已将文件上传到文档库|FileSyncUploadedFull|用户建立同步关系，并首次成功将文件从计算机上传到文档库。|
-|已将文件更改上传到文档库|FileSyncUploadedPartial|用户成功上传对文档库中的文件所做的更改。 此事件表明对文档库文件的本地版本所做的任何更改都已成功上传到文档库。 仅已上传更改内容，因为用户以前上传过这些文件（如 **已将文件上传到文档库** 活动所示）。|
+|已将文件更改上传到文档库|FileSyncUploadedPartial|用户成功上传对文档库中的文件所做的更改。此事件表明对文档库中的文件本地版本所做的任何更改均已被成功上传到文档库。仅已上传更改内容，因为用户以前上传过这些文件（如 **已将文件上传到文档库** 活动所示）。|
 ||||
 
 ### <a name="site-permissions-activities"></a>网站权限活动
@@ -646,6 +646,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已启用人员搜索的结果来源|PeopleResultsScopeSet|网站管理员为网站创建人员搜索的结果来源。|
 |已启用 RSS 源|NewsFeedEnabledSet|网站管理员或所有者为网站启用 RSS 源。全局管理员还可以在 SharePoint 管理中心为整个组织启用 RSS 源。|
 |已将网站加入到中心网站|HubSiteJoined|网站所有者将其网站与中心网站相关联。|
+|修改的网站集配额|SiteCollectionQuotaModified|网站管理员修改网站集的配额。|
 |注册中心网站|HubSiteRegistered|SharePoint 或全局管理员创建中心网站。 结果是该网站已注册为中心网站。|
 |已删除允许的数据位置|AllowedDataLocationDeleted|SharePoint 或全局管理员在多地理环境中删除了允许的数据位置。|
 |已删除地理位置管理员|GeoAdminDeleted|SharePoint 或全局管理员已删除作为地理位置管理员的用户。|
