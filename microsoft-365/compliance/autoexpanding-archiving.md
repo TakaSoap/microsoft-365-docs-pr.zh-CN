@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -16,102 +16,102 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
-description: 了解自动扩展存档，它为邮箱提供额外的存档Exchange Online存储。
-ms.openlocfilehash: e3c203b7c29732d09adedf6282880f7e2805d428
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
+description: 了解为 Exchange Online 邮箱提供额外存档存储的自动扩展存档。
+ms.openlocfilehash: d1833416ad4ff1d2dbb3241fde466e31bb6d8a74
+ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155078"
+ms.lasthandoff: 10/16/2021
+ms.locfileid: "60400043"
 ---
 # <a name="overview-of-auto-expanding-archiving"></a>自动扩展存档概述
 
-在Office 365，存档邮箱为用户提供了额外的邮箱存储空间。 启用用户的存档邮箱后，最多 100 GB 的额外存储空间可用。 过去，当达到 100 GB 存储配额时，组织必须联系 Microsoft 以请求为存档邮箱提供额外的存储空间。 这不再如此。
+在 Office 365 中，存档邮箱为用户提供额外的邮箱存储空间。 在启用了用户的存档邮箱后，最多可获得 100 GB 的额外存储空间。 过去，当达到 100 GB 存储配额时，组织必须联系 Microsoft 为存档邮箱请求额外存储空间。 但现在不再如此。
 
-存档邮箱中的Microsoft 365 (功能称为自动扩展) 存档邮箱中最多提供 1.5 TB 的额外存储空间。 当达到存档邮箱中的存储配额时，Microsoft 365自动 (增量) 增加存档大小，直到存档邮箱达到 1.5 TB。
+Microsoft 365 中的存档功能（称为 *自动扩展存档*）在存档邮箱中提供高达 1.5 TB 的额外存储空间。 达到存档邮箱中的存储配额后，Microsoft 365 自动（并以增量方式）增加存档大小，直到存档邮箱达到 1.5 TB。
 
-有关启用自动扩展存档的分步说明，请参阅启用 [自动扩展存档](enable-autoexpanding-archiving.md)。
+有关启用自动扩展存档的分步说明，请参阅 [启用自动扩展存档](enable-autoexpanding-archiving.md)。
 
 > [!NOTE]
-> 自动扩展存档还支持共享邮箱。 若要为共享邮箱启用存档，需要Exchange Online计划 2 许可证Exchange Online计划 1 Exchange Online Archiving许可证。
+> 自动扩展存档还支持共享邮箱。要启用共享邮箱存档，需要 ExchangeOnline 计划 2 许可证或带有 Exchange Online 存档许可证的 Exchange Online 计划 1 许可证。
 
 ## <a name="how-auto-expanding-archiving-works"></a>自动扩展存档的工作原理
 
-如前所述，启用用户的存档邮箱时将创建额外的邮箱存储空间。 启用自动扩展存档后，Microsoft 365定期检查存档邮箱的大小。 当存档邮箱接近其存储限制时，Microsoft 365自动为存档创建额外的存储空间。 如果用户耗尽此额外存储空间，Microsoft 365向用户的存档中增加更多存储空间。 此过程将继续，直到用户的存档大小达到 1.5 TB。 此过程将自动执行，这意味着管理员无需请求额外的存档存储或管理自动扩展存档。
+如前所述，启用用户的存档邮箱时将创建额外的邮箱存储空间。 启用自动扩展存档后，Microsoft 365 定期检查存档邮箱的大小。 当存档邮箱接近其存储限制时，Microsoft 365 自动为存档创建额外的存储空间。 如果用户用完此额外的存储空间，Microsoft 365 将向用户存档添加更多的存储空间。 此过程一直持续，直到用户的存档达到 1.5 TB 大小。 此过程自动发生，这意味着管理员无需请求额外的存档存储或管理自动扩展存档。
 
-以下是此过程的快速概述。
+以下是该过程的快速概述。
 
-![自动扩展存档过程的概述。](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
+![自动扩展存档过程概述。](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
 
-1. 为用户邮箱或共享邮箱启用存档。 创建存储空间为 100 GB 的存档邮箱，存档邮箱的警告配额设置为 90 GB。
+1. 为用户邮箱或共享邮箱启用存档。 创建存储空间为 100 GB 的存档邮箱，并将存档邮箱的警告配额设置为 90 GB。
 
-2. 管理员为邮箱启用自动扩展存档。 当存档邮箱 (包括"可恢复的项目"文件夹) 达到 90 GB 时，它将转换为自动扩展存档，Microsoft 365 会将存储空间添加到存档中，直到达到最大大小 1.5 TB。 预配额外存储空间可能需要 30 天。
+2. 管理员为邮箱启用自动扩展存档。 当存档邮箱（包括可恢复项目文件夹）达到 90 GB 时，将转换为自动扩展存档，并且 Microsoft 365 将向该存档添加存储空间，直到其达到最大大小 1.5 TB。 设置额外的存储空间最多可能需要 30 天。
 
    > [!NOTE]
-   > 如果邮箱处于保留状态或分配到保留策略，则当启用自动扩展存档时，存档邮箱的存储配额将增加到 110 GB。 同样，存档警告配额增加到 100 GB。
+   > 如果邮箱处于保留状态或以分配给保留策略，则在启用自动扩展存档时，存档邮箱的存储配额将增加到 110 GB。 存档警告配额将以类似方式增加到 100 GB。
 
-3. Microsoft 365时自动增加更多存储空间。
+3. 必要时，Microsoft 365 将自动添加更多存储空间。
 
 > [!IMPORTANT]
-> 自动扩展存档仅支持用于单个用户的邮箱 (或共享邮箱) 增长速率不会超过每天 1 GB。 用户的存档邮箱只供该用户使用。 不允许使用日记、传输规则或自动转发规则将邮件复制到存档邮箱。 Microsoft 保留拒绝在用户的存档邮箱用于存储其他用户的存档数据的情况下或其他不恰当的使用情况下进行其他存档的权利。
+> 只有用于单个用户（或共享邮箱）的邮箱才支持自动扩展存档，并且增长率不超过每天 1 GB。 用户的存档邮箱只供该用户使用。 不允许使用邮件日志、传输规则或自动转发规则将邮件复制到存档邮箱。 在用户存档邮箱用于存储其他用户的存档数据或存在其他不当使用的实例中，Microsoft 保留拒绝额外存档的权利。
 
-## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>将哪些内容移动到其他存档存储空间？
+## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>哪些内容会移动到额外存档存储空间？
 
-若要充分利用自动扩展存档存储，文件夹可能会移动。 Microsoft 365在向存档添加额外存储空间时移动哪些文件夹。 有时，移动文件夹时，会自动创建一个或多个子文件夹，同时将原始文件夹中的项目分发到这些文件夹，以便于移动过程。 查看文件夹中的文件夹列表的存档Outlook，这些子文件夹将显示在原始文件夹下。 用于命名这些子Microsoft 365的命名约定是_yyyy (**\<folder name\> mmm dd， yyyyy** h_mm) 创建的，其中：
+要高效使用自动扩展存档存储，可能会移动文件夹。 在向存档添加额外存储时，Microsoft 365 决定移动哪些文件夹。 有时，在移动文件夹时，会自动创建一个或多个子文件夹，并将原始文件夹中的项分发到这些文件夹，以方便移动过程。 在 Outlook 中查看文件夹列表的存档部分时，这些子文件夹显示在原始文件夹下。 Microsoft 365 用于命名这些子文件夹的命名约定是 <a begin="1" **\<folder name\>_yyyy (Created on mmm dd, yyyy h_mm)**，其中：
 
-- **yyyy** 是文件夹中收到邮件的年份。
+- **yyyy** 是收到文件夹中邮件的年份。
 
-- **mmm dd， yyyy h_m** is the date and time that the subfolder was created by Office 365， in UTC format， based on the user's time zone and regional settings in Outlook.
+- **mmm dd，yyyy h_m** 是 Office 365 根据用户在 Outlook 中的时区和区域设置以 UTC 格式创建子文件夹的日期和时间。
 
-以下屏幕截图显示了将邮件移动到自动展开存档之前和之后的文件夹列表。
+以下屏幕截图显示了邮件移动到自动扩展存档之前和之后的文件夹列表。
 
- **添加额外存储空间之前**
+ **添加额外存储之前**
 
-![预配自动扩展存档之前存档邮箱的文件夹列表。](../media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
+![设置自动扩展存档之前存档邮箱的文件夹列表。](../media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
 
- **添加额外存储空间后**
+ **添加额外存储之后**
 
 ![设置自动扩展存档后存档邮箱的文件夹列表。](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
 
 > [!NOTE]
-> 如前所述，Microsoft 365将项目移动到子文件夹 (并按上述命名约定命名它们) 以帮助将内容分发到辅助存档。 但是，将项目移动到子文件夹可能并不总是如此。 有时，整个文件夹可能会移到辅助存档中。 在这种情况下，文件夹将保留其原始名称。  在文件夹列表中的文件夹列表中Outlook文件夹已移动到辅助存档。
+> 如前所述，Microsoft 365 将项移动到子文件夹（并使用上述命名约定命名它们为其命名），以帮助将内容分发到辅助存档。 但是，将项目移动到子文件夹可能并非总是如此。 有时可能将整个文件夹移动到辅助存档。 在这种情况下，文件夹将保留其原始名称。  在 Outlook 中的文件夹列表中，文件夹已移动到辅助存档这一现象并不明显。
 
-## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Outlook自动扩展存档中的项目的要求
+## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Outlook 对于访问自动扩展存档中项目的要求
 
-若要访问存储在自动扩展存档中的邮件，用户必须使用以下客户端Outlook之一：
+要访问存储在自动扩展存档中的邮件，用户必须使用以下 Outlook 客户端之一：
 
-- Outlook 2016 2019 Outlook 2019 或 Windows
+- Outlook 2016 或 Outlook 2019 for Windows
 
 - Outlook 网页版
 
-- Outlook 2016 2019 for Mac Outlook 或 Outlook for Mac
+- Outlook 2016 或 Outlook 2019 for Mac
 
-下面是使用自动展开存档Outlook Outlook 网页版存档中存储的邮件时要考虑的一些情况。
+下面是使用 Outlook 或 Outlook 网页版访问自动扩展存档中存储的邮件时要考虑的一些事项。
 
-- 可以访问存档邮箱中的任意文件夹，包括已移动到自动扩展存储区域的文件夹。
+- 可以访问存档邮箱中的任何文件夹，包括移动到自动扩展存储区域的文件夹。
 
-- 如果存档邮箱具有至少一个自动扩展存储区域，则不能从存档邮箱或辅助存档中删除文件夹。 换句话说，在设置自动扩展的存储区域后，你无法删除存档中任何文件夹。
+- 如果存档邮箱具有至少一个自动扩展存储区域，则无法从存档邮箱或辅助存档中删除文件夹。 换言之，在设置自动扩展存储区域后，将无法删除存档中的任何文件夹。
 
-- 可以删除自动扩展存储区域中的项目。 但是，你无法使用"恢复已删除邮件"功能来恢复从自动展开的存储区域删除的项目。
+- 可以删除自动扩展存储区域中的项。 但在为邮箱启用自动扩展存档后，无法使用“恢复已删除项目”功能来恢复项目。
 
-- 搜索自动扩展存档在 OWA Outlook中 (可用) 。 与联机存档类似，可以搜索已移动到其他存储区域的项目。 在 OWA 中选择存档作为搜索范围时， (包括自动展开的存档及其) 及其对应的子文件夹。
+- Outlook 网页版 (OWA) 中提供了搜索自动扩展存档。 与联机存档类似，可以搜索已移动到额外存储区域的项目。 在 OWA 中选择存档作为搜索范围时，将搜索所有存档（包括自动扩展存档）及其相应的子文件夹。
 
-- 自动展开的存档搜索在当前频道中的Outlook桌面 (预览) 。 在此预览版中，"当前邮箱"范围可用，因此允许您搜索自动展开的存档。 有关此功能和其他支持功能Microsoft 搜索，请参阅如何[Outlook Windows](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)用户Exchange Online利用Microsoft 搜索。 
+- 在当前频道（预览）的 Outlook 桌面版中提供自动扩展存档搜索。 在此预览版中，当前邮箱范围可用，因此可以搜索自动扩展存档。 有关此功能和其他 Microsoft 搜索支持功能的详细信息，请参阅 [连接到 Exchange Online 的 Outlook for Windows 如何利用 Microsoft 搜索](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)。 
 
-- Outlook存档中的Outlook和读/未读 (计数Outlook Outlook 网页版) 扩展存档中的项目计数可能不准确。
+- 在自动扩展存档中，Outlook 中的项目计数和已读/未读计数（在 Outlook 和 Outlook 网页版中）可能并不准确。
 
 ## <a name="auto-expanding-archiving-and-other-compliance-features"></a>自动扩展存档和其他合规性功能
 
-本节介绍自动扩展存档与其他合规性和数据管理功能之间的功能。
+本部分介绍自动扩展存档与其他合规性和数据治理功能之间的功能。
 
-- **电子数据展示：** 使用电子数据展示工具（如内容搜索或In-Place电子数据展示）时，还搜索自动扩展存档中的其他存储区域。
+- **电子数据展示：** 使用电子数据展示工具（如内容搜索或就地电子数据展示）时，还会搜索自动扩展存档中的额外存储区域。
 
-- **保留：** 使用 Exchange Online 中的诉讼保留或安全与合规中心中的电子数据展示案例保留和保留策略等工具将邮箱置于保留状态时，自动扩展存档中的内容也会置于保留状态。
+- **保留：** 当使用诸如 Exchange Online 中诉讼保留或电子数据展示案例保留和安全与合规中心中的保留策略等工具将邮箱置于保留状态时，位于自动扩展存档中的内容也会置于保留状态。
 
-- **邮件记录管理 (MRM) ：** 如果使用 EXCHANGE ONLINE中的 MRM 删除策略来永久删除过期的邮箱项目，则位于自动展开存档中的过期项目也将被删除。
+- **邮件记录管理 (MRM)：** 如果使用 Exchange Online 中的 MRM 删除策略来永久删除过期的邮箱项目，也将删除自动扩展存档中的过期项目。
 
-- **导入服务：** 可以使用 Office 365 导入服务将 PST 文件导入到用户的自动展开存档。 您最多可以将 100 GB 的数据从 PST 文件导入用户的存档邮箱。
+- **导入服务：** 可以使用 Office 365 导入服务将 PST 文件导入到用户的自动扩展存档。 最多可以将 100 GB 的数据从 PST 文件导入到用户的存档邮箱。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
-有关自动扩展存档的更多技术详细信息，请参阅[Microsoft 365： Auto-Expanding Archives FAQ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784)。
+有关自动扩展存档的更多技术详细信息，请参阅 [Microsoft 365：自动扩展存档常见问题解答](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784)。
