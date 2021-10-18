@@ -367,6 +367,8 @@
               href: retention-policies-yammer.md
             - name: 保留 Exchange
               href: retention-policies-exchange.md
+            - name: 保留的常见设置
+              href: retention-settings.md
             - name: 保留限制
               href: retention-limits.md
         - name: 开始使用保留

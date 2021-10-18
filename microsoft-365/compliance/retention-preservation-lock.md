@@ -15,16 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用带有保留策略和保留标签策略的保存锁来帮助满足监管要求，并防范恶意管理员。
-ms.openlocfilehash: 71cd5aaa4b868d85f94f92370c50ef57253cc084
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 64c2bb8f2718ce0da9d638b5b8b6bd4f89d33668
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179003"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432669"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>使用保留锁定来限制对保留策略和保留标签策略的更改
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+> [!IMPORTANT]
+> 目前，[辅助策略作用域](retention.md#adaptive-or-static-policy-scopes-for-retention)不支持保留锁定。
 
 保存锁可锁定保留策略或保留标签策略，因此任何人 - 包括全局管理员 - 都无法关闭该策略、删除该策略或降低其限制性。 这种配置可能是监管要求所需要的，并且有助于防范恶意管理员。
 
@@ -45,7 +48,7 @@ ms.locfileid: "60179003"
 > [!IMPORTANT]
 > 在锁定保留策略或保留标签策略之前，请了解其影响并确认其是否是你的组织所需要的。 例如，可能需要满足监管要求。 当应用了保留锁后，管理员将无法禁用或删除这些策略。
 
-当你创建了一个[保留策略](create-retention-policies.md)，或是[发布](create-apply-retention-labels.md)或[自动应用](apply-retention-labels-automatically.md)的保留标签策略后，将配置保留锁。 
+当你创建了一个[保留策略](create-retention-policies.md)，或是[发布](create-apply-retention-labels.md)或[自动应用](apply-retention-labels-automatically.md)的保留标签策略后，将配置保留锁。
 
 > [!NOTE]
 > 锁定标签策略不会阻止管理员缩短锁定策略中包含的标签的保留期。 如果配置标签以将项目标记为[合规性记录](records-management.md#records)，则可满足该要求以及其他限制。

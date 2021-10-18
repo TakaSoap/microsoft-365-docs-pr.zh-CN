@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍了如何创建和发布保留标签，以便能够在应用中应用它们，从而保留所需内容，并删除不需要内容。
-ms.openlocfilehash: bfe4fa129488595e6e9713d909c2c4020a2b5bb6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f86692d07f7636f35ba700b9750510219a6ef380
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175355"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432633"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>创建保留标签并将其应用到应用中
 
@@ -47,7 +47,9 @@ ms.locfileid: "60175355"
 
 ## <a name="before-you-begin"></a>准备工作
 
-组织的全局管理员拥有创建和编辑保留标签及其策略的完全权限。 如果你没有以全局管理员身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。
+组织的全局管理员拥有创建和编辑保留标签及其策略的完全权限。 如果你未以全局管理员的身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。
+
+在创建保留标签策略之前，请确定它是 **自适应** 还是 **静态**。 有关详细信息，请参阅 [保留](retention.md#adaptive-or-static-policy-scopes-for-retention)的自适应或静态策略范围。 如果决定使用自适应策略，则必须在创建保留标签策略之前创建一个或多个自适应作用域，然后在创建保留标签策略过程中选择它们。 有关说明，请参阅[自适应作用域的配置信息](retention-settings.md#configuration-information-for-adaptive-scopes)。
 
 ## <a name="how-to-create-and-publish-retention-labels"></a>如何创建和发布保留标签
 
@@ -65,9 +67,13 @@ ms.locfileid: "60175355"
     - 如果你没有使用记录管理：
        - “**解决方案**” > “**信息治理**” > “**标签**”选项卡 > +“**创建标签**”
     
-    没有立即看到你的选项？ 首先选择“**全部显示**”。 
+    无法立即在导航窗格中看到解决方案？ 首先选择“**全部显示**”。 
 
-2. 按照向导中的提示进行操作。 如果你正在使用记录管理：
+2. 按照向导中的提示进行操作。
+    
+    有关保留设置的详细信息，请参阅[设置以保留和删除内容](retention-settings.md#settings-for-retaining-and-deleting-content)。
+    
+    如果你正在使用记录管理：
     
     - 有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)。
     
@@ -91,14 +97,25 @@ ms.locfileid: "60175355"
     - 如果你没有使用记录管理：
         - “**解决方案**” > “**信息治理**” > “**标签策略**”选项卡 >“**发布标签**”
     
-    没有立即看到你的选项？ 首先选择“**全部显示**”。 
+    无法立即在导航窗格中看到解决方案？ 首先选择“**全部显示**”。 
 
-2. 按照向导中的提示进行操作。
+2. 使用链接选择要发布的保留标签，然后选择 **"下一步"**。
+
+3. 对于 **选择要创建页的保留策略的类型**，请选择 **自适应** 或 **静态**，具体取决于在开始说明之前从 [所做的选择](#before-you-begin)。 如果尚未创建自适应作用域，则可以选择 **自适应** 但由于没有任何自适应作用域可供选择，因此无法使用此选项完成向导。
+
+4. 具体取决于所选范围：
     
-    有关保留标签支持的位置的信息，请参阅[保留标签和位置](retention.md#retention-label-policies-and-locations)。 
+    - 如果选择 **自适应**： 在 **选择自适应策略范围和位置** 页上，选择 **添加** 范围，然后选择已创建的一个或多个自适应作用域。 然后，选择一个或多个位置。 可以选择的位置取决于添加的[范围类型](retention-settings.md#configuration-information-for-adaptive-scopes)。 例如，如果仅添加了 **用户** 的作用域类型，则可以选择 **Exchange 电子邮件** ，但不能 **sharePoint 网站**。 
+    
+    - 如果选择 **静态**： 在 **选择位置** 页上，打开或关闭任何位置。 对于每个位置，可将其保持为默认的“[将策略应用到整个位置](retention-settings.md#a-policy-that-applies-to-entire-locations)”，或者“[指定所包含的和所排除的](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)”。
+    
+    有关位置选择的信息，请参阅 [位置](retention-settings.md#locations)。
 
-要编辑现有的保留标签策略（策略类型为“**发布**”），请将其选中，然后选择“**编辑**”选项以启动编辑保留策略。此向导允许您从步骤 2 更改策略描述和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
+5.  按照向导中的提示为策略命名、查看和提交配置选择。
+    
+    有关位置选择的信息，请参阅 [位置](retention-settings.md#locations)。 
 
+若要编辑现有保留标签策略（策略类型 **发布**），请选择它，然后选择 **编辑** 选项以启动"编辑保留策略"。此向导允许你更改策略说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>当保留标签可应用时
 

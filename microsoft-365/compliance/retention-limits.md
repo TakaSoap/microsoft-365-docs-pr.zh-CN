@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: 了解策略、每个保留策略和保留标签策略项目的最大数量
-ms.openlocfilehash: 881aa208036bab4fe476bb424e42ff16dbb5344f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 52318fb2f8ae81022734bb1f620b220830214ad7
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195565"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432645"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的限制
 
@@ -47,11 +47,25 @@ ms.locfileid: "60195565"
 
 尽管 Microsoft Teams 和 Yammer 的保留策略使用邮箱来存储数据以用于保留，但 Exchange Online 的最大策略数排除 Teams 和 Yammer 的保留策略。
 
+## <a name="maximums-for-adaptive-policy-scopes"></a>自适应策略范围的最大值
+
+[辅助策略作用域数没有限制](retention.md#adaptive-or-static-policy-scopes-for-retention)可以添加到策略进行保留，但定义每个自适应作用域的查询有一些最大限制：
+
+- 特性或属性值的字符串长度：200
+- 没有组或组内的属性数：10
+- 组数：10
+- 高级查询中的字符数：10，000
+
+不支持对组中的属性或属性进行分组。 这意味着单个自适应范围内支持的最大属性数为 100。
+
 ## <a name="maximum-number-of-items-per-policy"></a>每个策略的最大项目数
 
-当使用可选配置将保留设置搜索范围缩小到特定用户、特定 Microsoft 365 组或特定网站时，才需要注意每个策略的限制： 
+> [!IMPORTANT]
+> 仅当使用[静态策略作用域而不是自适应策略范围时适用](retention.md#adaptive-or-static-policy-scopes-for-retention)。
 
-每个保留策略的最大项目数：
+如果使用静态作用域和可选配置来包括或排除特定用户、特定Microsoft 365组或特定站点，则每个策略都有一些需要注意的限制。 
+
+静态作用域的每个策略保留的最大项数：
 
 - Exchange 邮箱：1000
 - Microsoft 365 组：1000
@@ -66,14 +80,11 @@ Skype for Business 仅限于特定用户，且每个策略支持的数量上限�
 
 因为这些限制针对每个策略，因此如果你需要使用会导致超过这些数字的特定包含或排除，则可以创建具有相同保留设置的额外策略。 请参阅下一节，了解为此理由使用多重保留策略的一些 [场景示例和解决方案](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers)。
 
-但是，多重保留策略会产生更高的管理费用，因此要时刻确认自己是否真的需要包含和排除。 请记住，适用于整个位置的默认配置没有任何限制，这种配置选择可能是比创建和维护多重策略更好的解决方案。
-
-> [!TIP]
-> 如果需要为此方案创建和维护多重策略，请考虑使用 [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) 以实现更高效的配置。
+但是，多个策略会导致更高的管理开销。 请考虑使用自适应作用域，而不是创建和维护包含和排除的多个策略。
 
 ### <a name="examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers"></a>使用多个策略以避免超过最大数量的示例
 
-下面的示例提供了一些设计方案，可在不能仅指定保留策略的位置，并且必须考虑上一节中所述的最大项目数时使用。
+以下示例适用于静态作用域，并提供一些设计解决方案，以便在不能仅指定保留策略的位置时，并且必须考虑上一部分中记录的最大项目数。
 
 Exchange 示例：
 
