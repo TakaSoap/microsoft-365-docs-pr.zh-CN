@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: ed123a772d3c3db23f4519beeb32903bb43267a7
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 6edeea09798781d08b34566c469bead3aea22356
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335762"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432621"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -65,6 +65,8 @@ ms.locfileid: "60335762"
 
 组织的全局管理员拥有创建和编辑保留标签及其策略的完全权限。 如果你未以全局管理员的身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。
 
+在创建保留标签策略之前，请先确定其将为 **自适应** 还是 **静态** 策略。 有关详细信息，请参阅 [保留的自适应或静态策略作用域](retention.md#adaptive-or-static-policy-scopes-for-retention)。 如果决定使用自适应策略，则必须在创建保留标签策略之前创建一个或多个自适应作用域，然后在创建保留标签策略期间进行选择。 有关说明，请参阅 [自适应作用域的配置信息](retention-settings.md#configuration-information-for-adaptive-scopes)。
+
 ## <a name="how-to-auto-apply-a-retention-label"></a>如何自动应用保留标签
 
 首先，创建你的保留标签。 然后创建 "自动策略" 以应用该标签。 如果已创建保留标签，请跳转到 [创建自动策略](#step-2-create-an-auto-apply-policy)。
@@ -81,9 +83,13 @@ ms.locfileid: "60335762"
     - 如果你没有使用记录管理：
        - “**解决方案**” > “**信息治理**” > “**标签**”选项卡 > +“**创建标签**”
     
-    没有立即看到你的选项？ 首先选择“**全部显示**”。 
+    没有立即在导航窗格中看到解决方案? 首先选择“**全部显示**”。 
 
-2. 按照提示进行配置。 如果你正在使用记录管理：
+2. 按照配置中的提示操作。
+    
+    有关保留设置的详细信息，请参阅 [用于保留和删除内容的设置](retention-settings.md#settings-for-retaining-and-deleting-content)。
+    
+    如果你正在使用记录管理：
     
     - 有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)
     
@@ -106,15 +112,25 @@ ms.locfileid: "60335762"
     - 如果你没有使用记录管理：
         - **“解决方案”** > **“信息治理”** > **“标签策略”** 选项卡 > **“自动应用标签”**
     
-    没有立即看到你的选项？ 首先选择“**全部显示**”。 
+    没有立即在导航窗格中看到解决方案? 首先选择“**全部显示**”。 
 
-2. 按照“创建自动标记”配置中的提示进行操作。
-    
-    有关配置自动应用保留标签的条件的信息，请参阅此页面上的[配置自动应用保留标签的条件](#configuring-conditions-for-auto-apply-retention-labels)部分。
-    
-    有关保留标签支持的位置的信息，请参阅[保留标签和位置](retention.md#retention-label-policies-and-locations)部分。
+2. 输入此自动标记策略的名称和说明，然后选择 **下一步**。
 
-若要编辑现有的自动应用策略，请将其选中以启动“**编辑保留策略**”配置，可用于更改从第 2 步中选定的保留标签和的任何[符合条件的设置](#updating-retention-labels-and-their-policies)。
+3. 对于 **选择要将此标签应用于的内容类型**，请选择其中一个可用条件。 有关选择的详细信息，请参阅此页上的 [配置自动应用保留标签的条件](#configuring-conditions-for-auto-apply-retention-labels) 节。
+
+4. 对于 **选择要创建的保留策略类型** 页面，请选择 **自适应** 或 **静态**，具体取决于在 [开始之前](#before-you-begin) 说明中所做的选择。 如果尚未创建自适应作用域，则可以选择 **自适应**，但由于没有自适应作用域可供选择，因此将无法使用此选项完成向导。
+
+5. 具体取决于选定的作用域:
+    
+    - 如果选择 **自适应**: 在 **选择自适应策略作用域和位置** 页面上，选择 **添加作用域**，然后选择一个或多个已创建的自适应作用域。 然后，选择一个或多个位置。 可以选择的位置取决于添加的 [作用域类型](retention-settings.md#configuration-information-for-adaptive-scopes)。 例如，如果仅添加了 **用户** 的作用域类型，则可以选择 **Exchange 电子邮件**，但不可以选择 **SharePoint 站点**。 
+    
+    - 如果选择 **静态**: 在 **选择位置** 页面上，打开或关闭任意位置。 对于每个位置，可以将其保留为默认值，以 [将策略应用于整个位置](retention-settings.md#a-policy-that-applies-to-entire-locations)，或 [指定包含和排除](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
+    
+    有关位置选择的信息，请参阅 [位置](retention-settings.md#locations)。
+
+6. 按照向导中的提示选择保留标签，然后审阅并提交配置选择。
+
+若要编辑现有的自动应用策略，请将其选中以启动“**编辑保留策略**”配置，可用于更改从第 2 步中选定的保留标签和的任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
 
 使用自动应用标签策略标记内容后，无法通过更改内容或策略，或使用一个新的自动应用标签策略来自动删除或更改应用的标签。有关详细信息，请参阅[一次只能有一个保留标签](retention.md#only-one-retention-label-at-a-time)。
 
