@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: dd79e0c74e2313855e2bf698053c99a50e5aaefd
-ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
+ms.openlocfilehash: b1cb482b478259177044a1af84bf865b8f8ec882
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2021
-ms.locfileid: "60400055"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432705"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -1006,13 +1006,17 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
+| 已更改自适应作用域成员身份 |ApplicableAdaptiveScopeChange |用户、网站或组已添加到自适应范围或从自适应范围中删除。 这些更改是运行该作用域查询的结果。 由于更改是系统启动的，因此报告的用户显示为 GUID 而不是用户帐户。|
 | 保留策略的配置设置 |NewRetentionComplianceRule |管理员已配置新保留策略的保留设置。 保留设置包括项目保留时长和保留期到期时对项目执行的操作（例如，删除项目、保留项目，或保留然后将其删除）。 此活动还对应于运行 [RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) cmdlet。|
+| 已创建自适应作用域 |NewAdaptiveScope |管理员创建了自适应作用域。|
 | 已创建保留标签 |NewComplianceTag |管理员已创建新的保留标签。|
 | 已创建保留策略 |NewRetentionCompliancePolicy|管理员已创建新的保留策略。|
+| 已删除自适应作用域 | RemoveAdaptiveScope| 管理员删除了自适应作用域。|
 | 已从保留策略中删除设置| RemoveRetentionComplianceRule<br/>| 管理员已删除保留策略的配置设置。 当管理员删除保留策略或运行 [RetentionComplianceRule](/powershell/module/exchange/Remove-RetentionComplianceRule) cmdlet 时，很可能会记录此活动。|
 | 已删除保留标签 |RemoveComplianceTag | 管理员已删除保留标签。|
 | 已删除保留策略 |RemoveRetentionCompliancePolicy<br/> |管理员已删除保留策略。 |
 | 已启用保留标签的合规性记录选项<br/> |SetRestrictiveRetentionUI |管理员已运行 [RegulatoryComplianceUI](/powershell/module/exchange/set-regulatorycomplianceui) cmdlet，以便随后可以选择保留标签的 UI 配置选项，将内容标记为合规性记录。|
+| 更新了自适应作用域 | SetAdaptiveScope | 管理员更改了现有自适应作用域的说明或查询。 |
 | 已更新保留策略的设置 | SetRetentionComplianceRule | 管理员已更改现有保留策略的保留设置。 保留设置包括项目保留时长和保留期到期时对项目执行的操作（例如，删除项目、保留项目，或保留然后将其删除）。 此活动还对应于运行 [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule) cmdlet。 |
 | 已更新保留标签 |SetComplianceTag  | 管理员已更新现有保留标签。|
 | 已更新保留策略 |SetRetentionCompliancePolicy |管理员已更新现有保留策略。 触发此事件的更新包括添加或排除应用该保留策略的内容位置。|
