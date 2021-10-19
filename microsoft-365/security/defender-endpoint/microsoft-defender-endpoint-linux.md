@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1717a184bb03bbc4165e4637a1a04557925f8abb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1b8fceed1e749a21323ade7ee87ab54a7fcffde8
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157910"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478981"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -73,15 +73,55 @@ ms.locfileid: "60157910"
 
 - 支持 Linux 服务器分发和 x64 (AMD64/EM64T) 版本：
 
-  - Red Hat Enterprise Linux 7.2 或更高版本
+  - Red Hat Enterprise Linux 6.7 或更高版本
+  - Red Hat Enterprise Linux 7.2 或更高版本 
+  - CentOS 6.7 或更高版本 
   - CentOS 7.2 或更高版本
   - Ubuntu 16.04 LTS 或更高版本 LTS
   - Debian 9 或更高版本
   - SUSE Linux Enterprise Server 12 或更高版本
   - Oracle Linux 7.2 或更高版本
+  - Amazon Linux 2
+  - Fedora 33 或更高版本
 
     > [!NOTE]
-    > 未明确列出的分发和版本不受支持 (即使它们派生自官方支持的分发) 。
+    > 未明确列出的分发和版本不受支持 (即使它们派生自正式支持的分发) 。
+
+
+    对于 Red Hat Enterprise Linux 6 和 CentOS 6，受支持的内核版本列表为：
+       - 对于 6.7：2.6.32-573。* 
+       - 对于 6.8：2.6.32-642.* 
+       - 对于 6.9：2.6.32-696.* 
+       - 对于 6.10：2.6.32.754.2.1.el6.x86_64 2.6.32-754.41.2：
+
+    版本列表：
+
+    - 2.6.32-754.2.1.el6.x86_64 
+    - 2.6.32-754.17.1.el6.x86_64
+    - 2.6.32-754.29.1.el6.x86_64
+    - 2.6.32-754.3.5.el6.x86_64 
+    - 2.6.32-754.18.2.el6.x86_64
+    - 2.6.32-754.29.2.el6.x86_64
+    - 2.6.32-754.6.3.el6.x86_64 
+    - 2.6.32-754.22.1.el6.x86_64
+    - 2.6.32-754.30.2.el6.x86_64
+    - 2.6.32-754.9.1.el6.x86_64 
+    - 2.6.32-754.23.1.el6.x86_64
+    - 2.6.32-754.33.1.el6.x86_64
+    - 2.6.32-754.10.1.el6.x86_64
+    - 2.6.32-754.24.2.el6.x86_64
+    - 2.6.32-754.35.1.el6.x86_64
+    - 2.6.32-754.11.1.el6.x86_64
+    - 2.6.32-754.24.3.el6.x86_64
+    - 2.6.32-754.39.1.el6.x86_64
+    - 2.6.32-754.12.1.el6.x86_64
+    - 2.6.32-754.25.1.el6.x86_64
+    - 2.6.32-754.41.2.el6.x86_64
+    - 2.6.32-754.14.2.el6.x86_64
+    - 2.6.32-754.27.1.el6.x86_64
+    - 2.6.32-754.15.3.el6.x86_64
+    - 2.6.32-754.28.1.el6.x86_64       
+
 
 - 最低内核版本 3.10.0-327
 
@@ -125,11 +165,11 @@ ms.locfileid: "60157910"
 - 必须 `auditd` () 审核框架。
 
   > [!NOTE]
-  > 通过添加到 的规则捕获的系统事件将添加到 (，) `/etc/audit/rules.d/` `audit.log` 主机审核和上游收集。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
+  > 通过添加到 的规则捕获的系统事件将添加到 (，) 并可能影响主机审核和上游 `/etc/audit/rules.d/` `audit.log` 集合。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
 
 ### <a name="configuring-exclusions"></a>配置排除项
 
-将排除项添加到Microsoft Defender 防病毒时，您应注意此规则常见的[排除Microsoft Defender 防病毒](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+将排除项添加到Microsoft Defender 防病毒时，应注意用于排除的常见[Microsoft Defender 防病毒](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>网络连接
 

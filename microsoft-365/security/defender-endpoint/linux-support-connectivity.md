@@ -1,7 +1,7 @@
 ---
 title: 解决 Linux 上的 Microsoft Defender for Endpoint 的云连接问题
 ms.reviewer: ''
-description: 解决 Linux 上的 Microsoft Defender for Endpoint 的云连接问题
+description: 了解如何解决 Linux 上的 Microsoft Defender for Endpoint 的云连接问题
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 云， 连接， 通信
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cbd0e45a44f3053e48b3714bb526e70d5d634502
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4f547e6701e0b22c2d55d0fa68a236f85b821a11
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210984"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478909"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的云连接问题
 
@@ -62,7 +62,7 @@ Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 
 如果连接测试失败，请检查设备是否具有 Internet 访问权限，以及[](microsoft-defender-endpoint-linux.md#network-connections)代理或防火墙是否阻止了产品所需的任何终结点。
 
-错误 35 或 60 的失败指示证书固定被拒绝。 请检查连接是否位于 SSL 或 HTTPS 检查下。 如果是这样，将 Microsoft Defender for Endpoint 添加到允许列表。
+错误 35 或 60 的失败表示证书固定被拒绝。 请检查连接是否位于 SSL 或 HTTPS 检查下。 如果是这样，将 Microsoft Defender for Endpoint 添加到允许列表。
 
 ## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy"></a>无代理或具有透明代理的环境疑难解答步骤
 
@@ -94,22 +94,12 @@ curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.micr
 
 确保使用与文件中配置相同的代理地址和 `/lib/system/system/mdatp.service` 端口。 如果上述命令出错，请检查代理配置。
 
-> [!WARNING]
-> 无法通过系统范围环境变量配置静态 `HTTPS_PROXY` 代理。 相反，请确保 `HTTPS_PROXY` 在 文件中正确 `/lib/system/system/mdatp.service` 设置。
-
-若要使用静态代理， `mdatp.service` 必须修改文件。 确保将前 `#` 导代码从 中删除为取消以下行的注释 `/lib/systemd/system/mdatp.service` ：
+若要设置 mdatp 的代理，请使用以下命令：
 
 ```bash
-#Environment="HTTPS_PROXY=http://address:port"
+mdatp config proxy set --value http://address:port 
 ```
 
-还要确保填充正确的静态代理地址以替换 `address:port` 。
-
-如果此文件正确，请尝试在终端中运行以下命令，在 Linux 上重新加载 Defender for Endpoint 并传播设置：
-
-```bash
-sudo systemctl daemon-reload; sudo systemctl restart mdatp
-```
 
 成功后，尝试从命令行进行另一个连接测试：
 

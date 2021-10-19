@@ -16,20 +16,26 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 722d446a9b8dcde216c8dd26b51ca3a4d13fe54d
-ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
+ms.openlocfilehash: 779f77b39eeaf58918c115582f62fb08199f1b91
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60386192"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478885"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0) 
 
+- 从此版本开始，我们将为以下部分提供 Microsoft Defender for Endpoint 支持： 
+  -  RHEL6.7-6.10 和 CentOS6.7-6.10 版本。
+  - Amazon Linux 2
+  - Fedora 33 或更高版本
 - 错误修补程序
+
 
 ## <a name="1014500-30121072145000"></a>101.45.00 (30.121072.14500.0) 
 
@@ -59,7 +65,7 @@ ms.locfileid: "60386192"
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0) 
 
 - Linux 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。
-- 修复了在 LINUX 上使用 Microsoft Defender for Endpoint（在带一个使用一个系统，而使用一个
+- 修复了在 LINUX 上使用 Microsoft Defender for Endpoint（在带一个使用有一个使用有一个更新的系统）的系统上导致操作系统挂起的问题
 - 性能改进& Bug 修复
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0) 
@@ -76,7 +82,7 @@ ms.locfileid: "60386192"
 
 - EDR Linux 版本现已[发布](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
 - 添加了一个新的命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV 排除 `mdatp scan custom` () 
-- 使用新的参数扩展 () ，该参数允许将诊断日志 `mdatp diagnostic create` `--path [directory]` 保存到其他目录
+- 使用 `mdatp diagnostic create` 新的参数扩展 () ，该参数允许将诊断日志 `--path [directory]` 保存到其他目录
 - Bug 修复&性能改进
 
 ## <a name="1011299"></a>101.12.99

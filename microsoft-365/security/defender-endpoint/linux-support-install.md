@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c90841ac9312fcc5f36ae9807ce757d9268b4cea
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a8f30a42fac3cc52de38e06b4193ab4098258262
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173087"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478897"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的安装问题
 
@@ -34,7 +34,7 @@ ms.locfileid: "60173087"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-## <a name="verify-if-installation-succeeded"></a>验证安装是否成功
+## <a name="verify-that-the-installation-succeeded"></a>验证安装是否成功
 
 安装错误可能导致包管理器产生有意义的错误消息，也可能没有意义。 若要验证安装是否成功，请运行以下方法获取并检查安装日志：
 
@@ -56,7 +56,7 @@ ms.locfileid: "60173087"
 
 ## <a name="make-sure-you-have-the-correct-package"></a>确保你拥有正确的程序包
 
-请注意，要安装的程序包与主机分发和版本匹配。
+验证要安装的程序包是否与主机分发和版本匹配。
 
 <br>
 
@@ -65,8 +65,8 @@ ms.locfileid: "60173087"
 |package|distribution|
 |---|---|
 |mdatp-rhel8。Linux.x86_64.rpm|Oracle、RHEL 和 CentOS 8.x|
-|mdatp-sles12。Linux.x86_64.rpm|SuSE Linux Enterprise Server 12.x|
-|mdatp-sles15。Linux.x86_64.rpm|SuSE Linux Enterprise Server 15.x|
+|mdatp-sles12。Linux.x86_64.rpm|SUSE Linux Enterprise Server 12.x|
+|mdatp-sles15。Linux.x86_64.rpm|SUSE Linux Enterprise Server 15.x|
 |mdatp.Linux.x86_64.rpm|Oracle、RHEL 和 CentOS 7.x|
 |mdatp.Linux.x86_64.deb|Debian 和 Ubuntu 16.04、18.04 和 20.04|
 |
@@ -75,10 +75,10 @@ ms.locfileid: "60173087"
 
 ## <a name="installation-failed"></a>安装失败
 
-检查 mdatp 服务是否正在运行：
+检查 Defender for Endpoint 服务是否正在运行：
 
 ```bash
-systemctl status mdatp
+service mdatp status
 ```
 
 ```Output
@@ -93,7 +93,7 @@ systemctl status mdatp
            └─1968 /opt/microsoft/mdatp/sbin/wdavdaemon
  ```
 
-## <a name="steps-to-troubleshoot-if-mdatp-service-isnt-running"></a>mdatp 服务未运行时疑难解答的步骤
+## <a name="steps-to-troubleshoot-if-the-mdatp-service-isnt-running"></a>mdatp 服务未运行时疑难解答的步骤
 
 1. 检查是否存在"mdatp"用户：
 
@@ -110,23 +110,22 @@ systemctl status mdatp
 2. 尝试使用以下方法启用和重新启动服务：
 
     ```bash
-    sudo systemctl enable mdatp
+    sudo service mdatp start
     ```
 
     ```bash
-    sudo systemctl restart mdatp
+    sudo service mdatp restart
     ```
 
 3. 如果在运行上一个命令时找不到 mdatp.service，请运行：
 
     ```bash
-    sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path>
+    sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path> 
     ```
 
-    其中 `<systemd_path>` 用于 `/lib/systemd/system` Ubuntu 和 Debian 分发， `/usr/lib/systemd/system` 适用于 Rhel、CentOS、Oracle 和 SLES。
-   然后重新运行步骤 2。
+    其中 `<systemd_path>` 适用于 `/lib/systemd/system` Ubuntu 和 Debian 分发，/usr/lib/systemd/system' 用于 Rhel、CentOS、Oracle 和 SLES。 然后重新运行步骤 2。
 
-4. 如果上述步骤不起作用，请检查是否安装了 SE 提供了实施模式。 如果是这样，请尝试将它设置为允许 (模式) 禁用模式。 可以通过在文件中将 参数设置为"许可"或"禁用"，然后 `SELINUX` `/etc/selinux/config` 重新启动来完成。 有关更多详细信息，请查看 se分页的"人名"页面。
+4. 如果上述步骤不起作用，请检查是否安装了 SE 提供了实施模式。 如果是，请尝试将此设置设置为 (模式) 禁用模式。 可以通过在文件中将 参数设置为"许可"或"禁用"，然后 `SELINUX` `/etc/selinux/config` 重新启动来完成。 有关更多详细信息，请查看 se分页的"人名"页面。
 现在，请尝试使用步骤 2 重新启动 mdatp 服务。 在尝试配置更改并重新启动后，出于安全考虑，立即还原配置更改。
 
 5. 如果 `/opt` 目录是符号链接，请为 创建绑定装载 `/opt/microsoft` 。
@@ -151,7 +150,7 @@ systemctl status mdatp
 
 7. 确保包含 wdavdaemon 的文件系统未装入"noexec"。
 
-## <a name="if-mdatp-service-is-running-but-eicar-text-file-detection-doesnt-work"></a>如果 mdatp 服务正在运行，但 EICAR 文本文件检测不起作用
+## <a name="if-the-defender-for-endpoint-service-is-running-but-the-eicar-text-file-detection-doesnt-work"></a>如果 Defender for Endpoint 服务正在运行，但 EICAR 文本文件检测不起作用
 
 1. 使用以下方法检查文件系统类型：
 
