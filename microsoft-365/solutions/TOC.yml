@@ -139,6 +139,8 @@
                   href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: 步骤 7. 删除前员工的用户帐户
                   href: ../admin/add-users/remove-former-employee-step-7.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: 将内容迁移到 Microsoft 365
+          href: /sharepointmigration/migrate-to-sharepoint-online?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: 将文件共享迁移到 Microsoft 365
           items:
             - name: 概述
@@ -268,6 +270,8 @@
           href: ../compliance/insider-risk-solution-overview.md
         - name: 审核解决方案
           href: ../compliance/auditing-solutions-overview.md
+        - name: Microsoft 365中的电子数据展示解决方案
+          href: ../compliance/ediscovery.md
         - name: Microsoft 365 高级电子数据展示
           href: ../compliance/overview-ediscovery-20.md
         - name: 法规合规性行动计划
@@ -288,14 +292,18 @@
           href: ../security/microsoft-365-security-for-bdm.md
         - name: 标识和设备访问配置
           href: ../security/office-365-security/microsoft-365-policies-configurations.md
+        - name: 评估和试点 Microsoft 365 Defender
+          href: ../security/defender/eval-overview.md
+        - name: 响应你的第一个事件
+          href: ../security/defender/first-incident-overview.md
         - name: 为终结点部署 Microsoft Defender
           href: /microsoft-365/security/defender-endpoint/deployment-phases.md
-        - name: 从 Symantec 迁移到 Microsoft Defender for Endpoint
-          href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
-        - name: 从 McAfee 迁移到 Microsoft Defender for Endpoint
-          href: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
         - name: 从非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
           href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+        - name: Microsoft 365 中优先帐户安全建议
+          href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+        - name: 删除以前的员工并保护数据
+          href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Contoso 案例研究
       items:
         - name: 适用于 Contoso Corporation 的 Microsoft 365 解决方案

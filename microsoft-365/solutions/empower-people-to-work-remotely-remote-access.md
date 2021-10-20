@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 确保远程工作者可以访问本地资源，同时优化对 Microsoft 365 云服务的访问权限。
-ms.openlocfilehash: e9f5bbe04120cd2e49a56ec0fbe47e4ecdb0778e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7266db5ba0149caaeb5057ad2ca1c3d082760c15
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190181"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478765"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步骤 2：提供对本地应用和服务的远程访问权限
 
@@ -91,16 +91,16 @@ P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组�
 > [!NOTE]
 > Microsoft 365 订阅中不包含 Azure P2S VPN。 你必须使用单独的 Azure 订阅来进行付费。
 
-## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>部署 Windows 虚拟桌面，以便为使用个人设备的远程工作者提供远程访问权限
+## <a name="deploy-azure-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>部署 Azure 虚拟桌面，以便为使用个人设备的远程工作者提供远程访问权限
 
-要为仅可使用自己的个人和非托管设备的远程工作者提供支持，请使用 Azure 中的 Windows 虚拟桌面创建并分配虚拟桌面，以便用户在家中使用。虚拟电脑可以像连接到组织网络的电脑一样操作。
+要为仅可使用自己的个人和非托管设备的远程工作者提供支持，请使用 Azure 虚拟桌面创建并分配虚拟桌面，以便用户在家中使用。虚拟电脑可以像连接到组织网络的电脑一样操作。
 
-![Azure Windows 虚拟桌面的组件。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
+![Azure 虚拟桌面的组件。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-有关详细信息，请参阅此 [Windows 虚拟桌面概述](/azure/virtual-desktop/overview)。
+有关详细信息，请参阅此 [Azure 虚拟桌面概述](/azure/virtual-desktop/overview)。
 
 > [!NOTE]
->Microsoft 365 订阅中不包含 Windows 虚拟桌面。 你必须使用单独的 Azure 订阅来进行付费。
+> Microsoft 365 订阅中不包含 Azure 虚拟桌面。 你必须使用单独的 Azure 订阅来进行付费。
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>使用远程桌面服务网关保护你的远程桌面服务连接
 
@@ -124,7 +124,7 @@ P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组�
 | 远程访问 VPN 解决方案已到位 | 已经针对拆分隧道和 Microsoft 365 终结点的“优化”类别配置远程访问 VPN 客户端。 |
 | 没有远程访问 VPN 解决方案，并且只需远程访问基于 Web 的本地应用 | 已配置 Azure 应用程序代理。 |
 | 没有远程访问 VPN 解决方案，并且需要访问本地应用，其中一些应用并非基于 Web | 已配置 Azure P2S VPN。 |
-| 远程工作人员正在家中使用自己的个人设备 | 已配置 Windows 虚拟桌面。 |
+| 远程工作人员正在家中使用自己的个人设备 | 你已配置 Azure 虚拟桌面。 |
 | 远程工作者将使用到本地系统的 RDS 连接 | 已在边缘网络中部署远程桌面服务网关。 |
 |||
 

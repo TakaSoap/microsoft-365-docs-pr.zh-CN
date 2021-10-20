@@ -162,6 +162,7 @@
 ###### [解决安装问题](linux-support-install.md)
 ###### [调查代理运行状况问题](health-status.md)
 ###### [解决云连接问题](linux-support-connectivity.md)
+###### [排查 RHEL 6 安装问题](linux-support-rhel.md)
 ###### [解决性能问题](linux-support-perf.md)
 ###### [解决事件遗漏问题](linux-support-events.md)
 

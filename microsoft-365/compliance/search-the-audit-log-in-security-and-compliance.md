@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: b1cb482b478259177044a1af84bf865b8f8ec882
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 87df624f35231a43cd8d9e2d34912d2bc48a5252
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432705"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478957"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -685,7 +685,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已发送邮件|发送|邮件已发送、答复或转发。 仅对具有 Office 365 或 Microsoft 365 E5 许可证的用户记录此活动。 有关详细信息，请参阅 [高级审核](advanced-audit.md#advanced-audit-events)中的"高级审核事件"部分。|
 |已使用“发送方式”权限发送邮件|SendAs|已使用 SendAs 权限发送某个邮件。这表示另一个用户发送了邮件，而该邮件就好像来自于邮箱所有者。|
 |已使用“代表发送”权限发送邮件|SendOnBehalf|已使用 SendOnBehalf 权限发送消息。这意味着另一个用户代表邮箱所有者发送邮件。该邮件指示代表其发送邮件的收件人以及实际发送邮件的收件人。|
-|已从 Outlook 客户端更新收件箱规则|UpdateInboxRules|有权访问邮箱的邮箱所有者或其他用户在 Outlook 客户端中修改了收件箱规则。|
+|已从 Outlook 客户端更新收件箱规则|UpdateInboxRules|具有邮箱访问权限的邮箱所有者或其他用户通过使用 Outlook 客户端创建、修改或删除了收件箱规则。|
 |已更新邮件|更新|已更改邮件或其属性。|
 |用户已登录到邮箱|MailboxLogin|用户登录其邮箱。|
 |将邮件标记为记录||用户已将保留标签应用于电子邮件，并且该标签被配置为将项目标记为记录。 |

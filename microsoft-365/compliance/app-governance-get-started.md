@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用应用治理功能来治理你的应用。
-ms.openlocfilehash: 8998a0e4f6cf01a7394e44695cd06f0b60915c7e
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 78e9570c1c5a19353eb9868a649eba958d23067b
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364731"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478789"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>开始使用应用治理（预览版）
 
@@ -29,16 +29,16 @@ ms.locfileid: "60364731"
 要开始将应用治理加载项用于 Microsoft Cloud App Security，需要执行三个步骤：
 
 1. [验证许可和管理员先决条件](#licensing-and-administrator-role-prerequisites)。
-1. [注册应用治理试用版](#sign-up-for-free-trial-of-app-governance)。
+1. [注册应用治理](#sign-up-for-app-governance)。
 1. [Add MCAS 集成](#add-integration-with-mcas)。
 
 
-## <a name="sign-up-for-free-trial-of-app-governance"></a>注册应用治理免费试用版
+## <a name="sign-up-for-app-governance"></a>注册应用治理
 
 对于现有的 Microsoft 365 客户：
 
 1. 导航到 [“免费试用注册页”](https://aka.ms/appgovernancetrial)。
-1. 完成添加应用程序治理的步骤。 注册很简单，如下图所示。
+1. 完成添加应用程序治理的步骤。 
 
 <!--
 :::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Simple steps to add app governance to your account.":::
@@ -49,6 +49,8 @@ ms.locfileid: "60364731"
 1. 在此页面顶部，选择  **“免费账户”**  按钮。
 1. 在  **试用 Microsoft 365 商业版** 下选择 **“免费试用 1 个月”**。
 1. 完成注册步骤。
+
+要购买应用治理订阅，请联系销售帐户团队。
 
 ## <a name="add-integration-with-mcas"></a>添加与 MCAS 的集成
 

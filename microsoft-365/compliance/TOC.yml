@@ -1014,22 +1014,10 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: 能源服务安全性和合规性
           href: ../solutions/energy-secure-collaboration.md
-- name: 管理隐私风险
+- name: 隐私管理
   items:
     - name: 了解隐私管理
-      href: privacy-management.md
-    - name: 开始进行隐私管理
-      href: privacy-management-setup.md
-    - name: 在隐私管理中设置用户权限
-      href: privacy-management-permissions.md
-    - name: 管理隐私管理设置
-      href: privacy-management-settings.md
-    - name: 在隐私管理中查找和可视化个人数据
-      href: privacy-management-data-profile.md
-    - name: 在隐私管理中创建和管理策略
-      href: privacy-management-policies.md
-    - name: 在隐私管理中管理主体权限请求
-      href: privacy-management-subject-rights-requests.md
+      href: /privacy/solutions/privacymanagement/privacy-management
 - name: 混合合规性功能
   items:
     - name: 带 AD RMS 的 Exchange Online 邮件加密
