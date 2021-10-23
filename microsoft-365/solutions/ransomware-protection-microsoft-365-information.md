@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒
 description: 使用受控文件夹访问权限、MIP、DLP 和 Microsoft Cloud App Security 来保护 Microsoft 365 敏感数据。
-ms.openlocfilehash: 3085afe91449c8c368a0f8622c26ceb1581b331a
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: f63a830e8c17eddcbe3efe40408881ec1f1d9736
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364804"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555652"
 ---
 # <a name="step-5-protect-information"></a>步骤 5. 保护信息
 
@@ -118,7 +118,7 @@ ms.locfileid: "60364804"
 - [人工操作的勒索软件](/security/compass/human-operated-ransomware)
 - [快速防范勒索软件和勒索](/security/compass/protect-against-ransomware)
 - [2021 Microsoft 数字防御报告](https://www.microsoft.com/security/business/microsoft-digital-defense-report)（请参阅第 10-19 页）
-- Microsoft 365 Defender 门户的 **威胁分析** 节点中的 **勒索软件：普遍且持续的威胁** 报告（请参阅这些 [许可要求](/microsoft-365/security/defender/prerequisites#licensing-requirements)）
+- [勒索软件：Microsoft 365 Defender](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview)门户中的一份持续威胁分析报告
 
 Microsoft 365：
 
@@ -127,6 +127,8 @@ Microsoft 365：
 - [恶意软件和勒索软件防护](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [保护你的 Windows 10 电脑免受勒索软件攻击](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [在 SharePoint Online 中处理勒索软件](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+- Microsoft 365 Defender门户中[勒索软件的威胁分析报告](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag)
+
 
 Microsoft 365 Defender：
 

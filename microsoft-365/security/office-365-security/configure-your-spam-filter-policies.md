@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 91549fcbc4c528c0aeebe107d2f97b3bb8b52d41
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ff568ffb32a6feb3ef8eba46cad1127dcead0465
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176616"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553888"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -158,9 +158,9 @@ ms.locfileid: "60176616"
      |**无操作**|||||![复选标记](../../media/checkmark.png)|
      |
 
-     > <sup>1</sup> 在 Exchange Online 中，如果在邮箱上启用垃圾邮件规则（默认情况下已启用），则邮件将移动到垃圾邮件文件夹。有关详细信息，请参阅 [在 Exchange Online 邮箱上配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+     > <sup>1</sup> EOP 现在使用自己的邮件流传递代理将邮件路由到垃圾邮件文件夹，而不是使用垃圾邮件规则。 **Set-MailboxJunkEmailConfiguration** cmdlet 上的 _Enabled_ 参数不再对邮件流有任何影响。 有关详细信息，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
      >
-     > 在 EOP 保护本地 Exchange 邮箱的混合环境中，需要在本地 Exchange 中配置邮件流规则（也称为传输规则）以转换 EOP 垃圾邮件筛选裁定，以便垃圾邮件规则可以将邮件移动到垃圾邮件文件夹。有关详细信息，请参阅 [配置 EOP 以将垃圾邮件传递到混合环境中的垃圾邮件文件夹](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
+     > 在 EOP 保护本地 Exchange 邮箱的混合环境中，需要在本地 Exchange 中配置邮件流规则（也称为传输规则）。这些邮件流量规则转换 EOP 垃圾邮件筛选裁定，以便邮箱中的垃圾邮件规则可以将邮件移动到垃圾邮件文件夹。有关详细信息，请参阅 [配置 EOP 以将垃圾邮件传递到混合环境中的垃圾邮件文件夹](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
      >
      > <sup>2</sup>可以将此使用值用作邮件流规则（亦称为“传输规则”）中的条件来筛选或路由邮件。
      >

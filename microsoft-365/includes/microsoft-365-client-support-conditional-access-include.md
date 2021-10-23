@@ -31,7 +31,7 @@
 |SWAY|不适用|不适用|不适用|不适用|Planned|
 |TEAMS|✔|✔|✔|✔|不适用|
 |TO-DO|Planned|Planned|Planned|不适用|Planned|
-|VISIO|不适用|✔|不适用|Planned|不适用|
+|VISIO|不适用|✔|不适用|✔|不适用|
 |WHITEBOARD|✔|Planned|不适用|不适用|Planned|
 |WORD|✔|✔|✔|✔|不适用|
 |工作区分析|不适用|不适用|不适用|不适用|不适用|
