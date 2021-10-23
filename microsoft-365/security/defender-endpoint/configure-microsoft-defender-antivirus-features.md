@@ -1,8 +1,7 @@
 ---
 title: 配置 Microsoft Defender 防病毒软件功能
 description: 可以使用 Intune Microsoft Defender 防病毒、Microsoft Endpoint Configuration Manager、组策略和 PowerShell 配置这些功能。
-keywords: Microsoft Defender 防病毒， 反恶意软件， 安全性， defender， 配置， 配置管理器， Microsoft Endpoint Configuration Manager， SCCM， Intune， MDM， 移动设备管理， GP， 组策略， PowerShell
-search.product: eADQiWindows 10XVcnh
+keywords: Microsoft Defender 防病毒， 反恶意软件， 安全性， defender， 配置， 配置， 配置管理器， Microsoft Endpoint Configuration Manager， SCCM， Intune， MDM， 移动设备管理， GP， 组策略， PowerShell
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -13,16 +12,16 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 06/04/2021
+ms.date: 10/14/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 333ea6a30ee9740b6556e1adc6576b742d277ce2
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 2ebf14a2fe24b9ddf38e694eb8ca008697ea9761
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240160"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553504"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>配置 Microsoft Defender 防病毒软件功能
 
@@ -31,7 +30,7 @@ ms.locfileid: "60240160"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-可以使用多种Microsoft Defender 防病毒配置配置策略，例如：
+可以使用Microsoft Defender 防病毒配置自定义设置，例如：
 
 - Microsoft Endpoint Manager (包括Microsoft Intune和Microsoft Endpoint Configuration Manager) 
 - 组策略

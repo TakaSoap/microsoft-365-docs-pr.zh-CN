@@ -2,7 +2,6 @@
 title: 网络保护问题疑难解答
 description: 用于解决 Microsoft Defender for Endpoint 中的网络保护问题的资源和示例代码。
 keywords: 疑难解答， 错误， 修复， windows defender eg， asr， 规则， hips， 疑难解答， 审核， 排除， 误报， 损坏， 阻止， Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fce2366a155dca3f045497abf2a7a9892180710d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 131021236f5294f10f9abdf6e4ba170e2349b707
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159314"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555748"
 ---
 # <a name="troubleshoot-network-protection"></a>网络保护疑难解答
 
@@ -53,7 +52,7 @@ ms.locfileid: "60159314"
 > [!div class="checklist"]
 >
 > - 终结点运行Windows 10 专业版或Enterprise版本 1709 或更高版本。
-> - 终结点将 Microsoft Defender 防病毒用作唯一的防病毒保护应用。 [查看使用非 Microsoft 防病毒解决方案时会发生什么情况](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+> - 终结点将 Microsoft Defender 防病毒用作唯一的防病毒保护应用。 [查看在使用非 Microsoft 防病毒解决方案时会发生什么情况](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 > - [实时保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 已启用。
 > - [云提供的保护](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 已启用。
 > - 审核模式未启用。 使用 [组策略](enable-network-protection.md#group-policy) 将规则设置为"已禁用 **(** 值 **：0**) 。
@@ -80,7 +79,7 @@ ms.locfileid: "60159314"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>报告误报或漏报
 
-如果已使用演示网站和审核模式测试了该功能，并且网络保护适用于预配置的方案，但无法按预期为特定连接工作，请使用[基于 Windows Defender](https://www.microsoft.com/wdsi/filesubmission)安全智能 Web 的提交表单报告网络保护的漏报或误报。 使用 E5 订阅，还可以 [提供指向任何关联警报的链接](alerts-queue.md)。
+如果已使用演示网站和审核模式测试了功能，并且网络保护适用于预配置的方案，但无法按预期为特定连接工作，请使用[基于 Windows Defender](https://www.microsoft.com/wdsi/filesubmission)安全智能 Web 的提交表单报告网络保护的漏报或误报。 使用 E5 订阅，还可以 [提供指向任何关联警报的链接](alerts-queue.md)。
 
 请参阅在 Microsoft Defender for Endpoint 中解决 [误报/负数](defender-endpoint-false-positives-negatives.md)。
 

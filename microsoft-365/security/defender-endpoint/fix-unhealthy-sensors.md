@@ -2,8 +2,6 @@
 title: 修复 Microsoft Defender for Endpoint 中的不正常传感器
 description: 修复报告为错误配置或不活动的设备传感器，以便服务从设备接收数据。
 keywords: 错误配置， 非活动， 修复传感器， 传感器运行状况， 无传感器数据， 传感器数据， 通信受损， 通信
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: b9cbdc184dd5759821b738cd4e16e1d27fa2132b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a01fa71e8d52a9e6de522483ee982458f04141af
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205471"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555280"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>修复 Microsoft Defender for Endpoint 中的不正常传感器
 
@@ -84,7 +82,7 @@ ms.locfileid: "60205471"
   验证代理配置是否成功完成，WinHTTP 能否发现并通过您环境中代理服务器进行通信，以及代理服务器是否允许流量到 Microsoft Defender for Endpoint 服务 URL。
 
 - [确保诊断数据服务已启用](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
-如果设备未正确报告，你可能需要检查Windows 10数据服务是否设置为自动启动，并且正在终结点上运行。
+如果设备未正确报告，你可能需要检查Windows数据服务是否设置为自动启动，并且正在终结点上运行。
 
 - [确保Microsoft Defender 防病毒策略未禁用此策略](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
 如果你的设备运行的是第三方反恶意软件客户端，则 Defender for Endpoint 代理需要启用 Microsoft Defender 防病毒 提前启动反恶意软件 (ELAM) 驱动程序。

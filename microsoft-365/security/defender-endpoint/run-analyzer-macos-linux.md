@@ -2,8 +2,6 @@
 title: 在 macOS 或 Linux 上运行客户端分析器
 description: 了解如何在 macOS 或 Linux 上运行 Microsoft Defender for Endpoint Client Analyzer
 keywords: 客户端分析器， 传感器疑难解答， 分析器， mdeanalyzer， macos， linux， mdeanalyzer
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5be8fcb6928588fdc0195bcaffb7a8797fc2bfd9
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 9207d4aebf3fa729fdf879a52a31103349fac8f8
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364647"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554224"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>在 macOS 或 Linux 上运行客户端分析器
 
@@ -39,7 +37,7 @@ ms.locfileid: "60364647"
    > [!NOTE]
    > 从上述链接下载的"XMDEClientAnalyzer.zip"的当前 SHA256 哈希为："973725417D136B7B17AF4B301F1E99BA21D7F4A7DF88036DC5A731A4B768A8B2"。
 
-2. 提取计算机上XMDEClientAnalyzer.zip的内容。
+2. 提取计算机上XMDEClientAnalyzer.zip内容。
 
 3. 打开终端会话，将目录更改为提取的位置并运行：
 
@@ -71,7 +69,7 @@ ms.locfileid: "60364647"
 > 
 > - 此外，该工具当前需要安装 Python 版本 3 或更高版本。
 > 
-> - 如果你的设备位于代理后面，则只需将代理服务器作为环境变量传递到 mde_support_tool.sh 脚本。 例如：`https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
+> - 如果设备位于代理后面，则只需将代理服务器作为环境变量传递到 mde_support_tool.sh 脚本。 例如：`https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 示例：
 

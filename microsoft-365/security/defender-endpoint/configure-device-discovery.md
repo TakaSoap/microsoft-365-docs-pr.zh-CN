@@ -1,6 +1,6 @@
 ---
 title: 配置设备发现
-description: 了解如何使用基本或标准发现在 Microsoft 365 Defender中配置设备发现
+description: 了解如何使用基本或标准发现Microsoft 365 Defender设备发现
 keywords: 基本， 标准， 配置终结点发现， 设备发现
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 261f5128c0ef26843f20e1d94b26ba86f0850349
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c1dfbc1fb953a83c3854e7059bba30a069a37c83
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192975"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555208"
 ---
 # <a name="configure-device-discovery"></a>配置设备发现
 
@@ -39,7 +39,8 @@ ms.locfileid: "60192975"
 
 发现可以配置为标准模式或基本模式。 使用标准选项主动查找网络中设备，这将更好地保证终结点的发现并提供更丰富的设备分类。
 
-你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (当前 - Windows 10 设备仅) 或者通过指定设备的设备标记选择一部分或部分设备。
+
+你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (当前 - Windows 10 设备仅) ，或者通过指定设备的设备标记选择一部分或部分设备。
 
 > [!IMPORTANT]
 > 对于预览版，你首先需要在预览版中启用预览Microsoft 365 Defender。
@@ -50,11 +51,11 @@ ms.locfileid: "60192975"
 1. 导航到 **设置 >设备发现 "**。
 2. 选择要在载入的设备上使用的发现模式。
 3. 如果你已选择使用标准发现，请通过指定设备标记来选择要用于活动探测的设备：所有设备或部分设备。
-4. 单击“**保存**”。
+4. 单击 **“保存”**。
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>在标准发现中排除设备的活动探测器
 
-如果网络上有些设备不应主动扫描 (例如，用作另一个安全工具) 的热点的设备，则还可以定义排除项列表以防止它们被扫描。 请注意，仍可使用基本发现模式发现设备。 将被动发现这些设备，但不主动探测器。
+如果网络上有些设备不应主动扫描 (例如，用作另一个安全工具) 的热点的设备，则还可以定义排除项列表以防止它们被扫描。 请注意，仍可使用基本发现模式发现设备，也可通过多播发现尝试发现设备。 将被动发现这些设备，但不主动探测器。   
 
 ## <a name="select-networks-to-monitor"></a>选择要监视的网络
 
@@ -65,7 +66,7 @@ ms.locfileid: "60192975"
 可在其中执行设备发现的网络列表显示在"受监视网络 **"** 页中。
 
 > [!NOTE]
-> 只有前 50 (根据网络列表中可用的关联设备) 数量进行配置。
+> 该列表显示了标识为公司网络的网络。 如果少于 50 个网络被标识为公司网络，则列表最多显示 50 个具有最多载入设备的网络。 
 
 受监视网络列表根据最近 7 天内网络上看到的设备总数进行排序。
 

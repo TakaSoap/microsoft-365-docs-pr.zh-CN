@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fdce3a978d79f3ba87455f67d058185f740972ce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7a078fdd618cd3b5070063d4fa7529c9c7f6216
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150038"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553792"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -40,7 +40,7 @@ ms.locfileid: "60150038"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW]
 
-使用实时响应，分析员可以执行以下所有任务：
+通过实时响应，分析员可以执行以下所有任务：
 
 - 运行基本和高级命令以在设备上执行调查工作。
 - 下载恶意软件示例和 PowerShell 脚本结果等文件。
@@ -52,22 +52,31 @@ ms.locfileid: "60150038"
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的 Windows** 版本。
+- **验证是否正在运行受支持的 Windows。**
 
   设备必须运行以下版本之一Windows
 
-  - **Windows 10**
+  - **Windows 10 & 11**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
     - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
     - [版本 1809 (RS 5 ](/windows/whats-new/whats-new-windows-10-version-1809)) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **WindowsServer 2019 - 仅适用于公共预览版**
-    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
+  - **macOS** - 仅适用于公共预览版，最低要求版本：101.43.84 
+  
+  - **Linux** - 仅适用于公共预览版，最低要求版本：101.45.13 
+    
+  - **Windows Server 2012 R2** - 具有 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+  
+  - **Windows Server 2016** - 使用 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+
+  - **Windows Server 2019**
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
     - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     
   - **Windows Server 2022**
+
        
 
 - **从高级设置页面启用实时响应**。
@@ -77,7 +86,7 @@ ms.locfileid: "60150038"
   > [!NOTE]
   > 只有具有管理安全性或全局管理员角色的用户才能编辑这些设置。
 
-- **从高级设置页面启用** 服务器实时响应 (推荐) 。
+- **从高级设置页面启用服务器** 实时响应 (推荐) 。
 
   > [!NOTE]
   > 只有具有管理安全性或全局管理员角色的用户才能编辑这些设置。
@@ -91,6 +100,9 @@ ms.locfileid: "60150038"
   ![错误消息的图像。](images/live-response-error.png)
 
 - **启用实时响应未签名脚本执行** (可选) 。
+
+  >[!IMPORTANT]
+  >签名验证仅适用于 PowerShell 脚本。 
 
   > [!WARNING]
   > 允许使用未签名脚本可能会增加你面临的威胁。
@@ -148,28 +160,26 @@ ms.locfileid: "60150038"
 <br>
 
 ****
-
-|命令|说明|
-|---|---|
-|`cd`|更改当前目录。|
-|`cls`|清除控制台屏幕。|
-|`connect`|启动到设备的实时响应会话。|
-|`connections`|显示所有活动连接。|
-|`dir`|显示目录中的文件和子目录的列表。|
-|`drivers`|显示设备上安装的所有驱动程序。|
-|`fg <command ID>`|将指定的作业放在前台的前台，使其成为当前作业。 <p> **注意**：fg 从作业（而不是 PID）接受可用的"命令 ID"|
-|`fileinfo`|获取有关文件的信息。|
-|`findfile`|在设备上按给定名称查找文件。|
-|`getfile <file_path>`|下载文件。|
-|`help`|提供实时响应命令的帮助信息。|
-|`jobs`|显示当前运行的作业及其 ID 和状态。|
-|`persistence`|显示设备上所有已知的持久性方法。|
-|`processes`|显示设备上运行的所有进程。|
-|`registry`|显示注册表值。|
-|`scheduledtasks`|显示设备上的所有计划任务。|
-|`services`|显示设备上的所有服务。|
-|`trace`|将终端的日志记录模式设置为调试。|
-|
+| 命令  | 说明  | Windows 和 Windows Server  | macOS  | Linux  |
+|---|---|---|---|---|
+| cd  | 更改当前目录。  | Y  | Y | Y |
+| cls  | 清除控制台屏幕。  | Y  | Y  | Y  |
+| connect  | 启动到设备的实时响应会话。  | Y  | Y  | Y  |
+| connections  | 显示所有活动连接。  | Y  | N | 网络 |
+| dir  | 显示目录中的文件和子目录的列表。  | Y  | Y  |Y  |
+| drivers  | 显示设备上安装的所有驱动程序。  | Y |  N | 网络  |
+| fg `<command ID>`  | 将指定的作业放在前台的前台，使其成为当前作业。  注意：fg 从作业（而不是 PID）接受一个可用的"命令 ID"  | Y  | Y  | Y  |
+| fileinfo  | 获取有关文件的信息。  |Y  | Y  | Y  |
+| findfile  | 在设备上按给定名称查找文件。  | Y | Y  | Y  |
+| getfile <file_path>  | 下载文件。  | Y  | Y  | Y  |
+| 帮助  | 提供实时响应命令的帮助信息。  |Y  | Y | Y  |
+| jobs  | 显示当前运行的作业及其 ID 和状态。  | Y  | Y | Y |
+| 持久性  | 显示设备上所有已知的持久性方法。  | Y  | N | 网络 |
+| processes  | 显示设备上运行的所有进程。  | Y  | Y  | Y  |
+| 注册表  | 显示注册表值。  | Y  | N | 网络 |
+| scheduledtasks  | 显示设备上的所有计划任务。  | Y | N | 网络 |
+| 服务  | 显示设备上的所有服务。  | Y  | N | 网络 |
+| trace  | 将终端的日志记录模式设置为调试。  | Y  | Y  |Y  |
 
 ### <a name="advanced-commands"></a>高级命令
 
@@ -179,15 +189,19 @@ ms.locfileid: "60150038"
 
 ****
 
-|命令|说明|
-|---|---|
-|`analyze`|使用各种描述引擎分析实体以作出裁定。|
-|`run`|从设备的库中运行 PowerShell 脚本。|
-|`library`|列出上载到实时响应库的文件。|
-|`putfile`|将库中的文件置于设备。 文件保存在工作文件夹中，在设备默认重启时将被删除。|
-|`remediate`|修正设备上的实体。 修正操作因实体类型而异： <ul><li>文件：删除</li><li>进程：停止、删除图像文件</li><li>服务：停止、删除图像文件</li><li>注册表项：删除</li><li>计划任务：删除</li><li>启动文件夹项：删除文件</li></ul> <p> **注意**：此命令具有先决条件命令。 可以将 命令 `-auto` 与 结合使用 `remediate` 来自动运行必备组件命令。
-|`undo`|还原已修正的实体。|
-|
+| 命令  | 说明  | Windows 和 Windows Server  | macOS  | Linux  |
+|---|---|---|---|---|
+| analyze  | 使用各种描述引擎分析实体以作出裁定。  | Y  | N  | 网络  |
+| collect  | 从计算机收集取证包  | 网络  | Y  | Y  |
+| isolate  | 断开设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接  | 网络  | Y  | N  |
+| release  | 解除设备网络隔离  | 网络  | Y  | N  |
+| run  | 从设备的库中运行 PowerShell 脚本。  | Y  | Y  | Y  |
+| 库  | 列出上载到实时响应库的文件。  | Y  | Y  | Y  |
+| putfile  | 将库中的文件置于设备。 文件保存在工作文件夹中，在设备默认重启时将被删除。  | Y  | Y  | Y  |
+| 修正  | 修正设备上的实体。 修正操作将因实体类型而异：File： delete Process： stop， delete image file Service： stop， delete image file Registry entry： delete Scheduled task： remove Startup folder item： delete file NOTE： This command has a prerequisite command. 可以将 -auto 命令与修正结合使用，以自动运行必备组件命令。  | Y  | Y  | Y  |
+| scan  | 断开设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接  | 网络  | Y  | Y  |
+| undo  | 还原已修正的实体。  | Y  | Y  | Y  |
+
 
 ## <a name="use-live-response-commands"></a>使用实时响应命令
 
@@ -222,13 +236,13 @@ ms.locfileid: "60150038"
 
 |命令|功能|
 |---|---|
-|`getfile "C:\windows\some_file.exe" &`|开始下载 *在后台some_file.exe文件* 。|
+|`getfile "C:\windows\some_file.exe" &`|开始在后台下载名为 *some_file.exe* 的文件。|
 |`fg 1234`|将命令 ID 为 *1234* 的下载返回到前台。|
 |
 
 ### <a name="put-a-file-in-the-library"></a>将文件放入库中
 
-实时响应具有一个库，您可以将文件放入其中。 库存储可在 (实时响应会话中) 脚本库等文件。
+实时响应具有一个库，您可以将文件放入其中。 该库存储 (脚本) 脚本库，这些文件可以在租户级别的实时响应会话中运行。
 
 实时响应允许运行 PowerShell 脚本，但是必须先将文件放入库中，然后才能运行它们。
 
@@ -236,13 +250,13 @@ ms.locfileid: "60150038"
 
 #### <a name="to-upload-a-file-in-the-library"></a>上载库中的文件
 
-1. 单击 **Upload文件到库"**。
+1. 单击 **Upload文件到库。**
 
 2. 单击 **"** 浏览"，然后选择文件。
 
 3. 提供简要说明。
 
-4. 指定您是否要覆盖同名的文件。
+4. 指定是否覆盖同名文件。
 
 5. 如果需要，请了解脚本需要哪些参数，请选中"脚本参数"复选框。 在文本字段中，输入示例和说明。
 
@@ -257,13 +271,13 @@ ms.locfileid: "60150038"
 > [!WARNING]
 > 使用此快捷方式不会在代理端停止命令。 它将仅取消门户中的命令。 因此，更改操作（如"修正"）可能会继续，同时取消命令。
 
-## <a name="run-a-powershell-script"></a>运行 PowerShell 脚本
+## <a name="run-a-script"></a>运行脚本
 
-在运行 PowerShell 脚本之前，必须先将其上载到库。
+必须先将其上载到库中，然后才能运行 PowerShell/Bash 脚本。
 
 将脚本上载到库后，使用 `run` 命令运行脚本。
 
-如果计划在会话中使用未签名的脚本，则需要在"高级功能设置" [页中启用该](advanced-features.md) 设置。
+如果计划在会话中使用未签名的 PowerShell 脚本，则需要启用"高级功能设置" [页中的](advanced-features.md) 设置。
 
 > [!WARNING]
 > 允许使用未签名脚本可能会增加你面临的威胁。
@@ -294,7 +308,7 @@ ms.locfileid: "60150038"
   <command name> -type file -id <file path> - auto
   ```
 
-  或者
+  或
 
   ```powershell
   remediate file <file path> - auto`

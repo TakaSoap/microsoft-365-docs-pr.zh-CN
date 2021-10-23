@@ -2,8 +2,6 @@
 title: 在 Windows 上运行客户端分析器
 description: 了解如何在 Windows 运行 Microsoft Defender for Endpoint Client Analyzer。
 keywords: 客户端分析器， 传感器疑难解答， 分析器， mdeanalyzer， windows
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a0d715bd9c51f73eb58e06d68892ba955bdb7d1d
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 29b414ac9dcab9a9c32b5ba09d45d5d9b9ce67de
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400806"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554680"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>在 Windows 上运行客户端分析器
 
@@ -56,9 +54,9 @@ ms.locfileid: "59400806"
 除上述内容外，还有一个选项使用 [实时响应收集分析器支持日志](troubleshoot-collect-support-log.md)。
 
 > [!NOTE]
-> 在 windows 10 Windows Server 2019 或更高版本的操作系统版本上，客户端分析器脚本将调用可执行文件，以运行对云服务 URL 的连接 `MDEClientAnalyzer.exe` 测试。
+> 在 Windows 10、Windows Server 2019 或更高版本操作系统版本或 Windows 11 上，客户端分析器脚本将调用可执行文件，以运行对云服务 URL 的连接测试。 `MDEClientAnalyzer.exe`
 >
-> 在 Windows 8.1、Windows Server 2016 或以前的操作系统版本上，客户端分析器脚本将调用可执行文件，以运行命令和控制 (CnC) URL 的连接测试，同时调用用于网络数据通道 URL 的 Microsoft Monitoring Agent 连接工具。 `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe`
+> 在 Windows 8.1、Windows Server 2016 或以前的操作系统版本上，客户端分析器脚本将调用可执行文件，以运行命令和控制 (CnC) URL 的连接测试，同时还调用用于网络数据通道 URL 的 Microsoft Monitoring Agent 连接工具。 `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe`
 
 ## <a name="result-package-contents-on-windows"></a>结果包内容Windows
 
@@ -67,7 +65,7 @@ ms.locfileid: "59400806"
 >
 > - 运行分析器的窗口的版本。
 > - 计算机上事件日志通道的可用性。
-> - 如果计算机尚未EDR， (感知的启动状态将) 。
+> - 如果计算机尚未载入EDR， (感知的启动状态将) 。
 > - 如果分析器命令使用了高级疑难解答参数。
 
 默认情况下，解压缩MDEClientAnalyzerResult.zip文件将包含以下项目。
@@ -91,7 +89,7 @@ ms.locfileid: "59400806"
 
     - dsregcmd.txt
 
-      说明：输出运行 [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd)。 这将提供有关计算机 Azure AD 状态的详细信息。
+      说明：输出运行 [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd)。 这将提供有关计算机Azure AD状态的详细信息。
 
     - IFEO.txt
 
@@ -141,7 +139,7 @@ ms.locfileid: "59400806"
 
   - OperationsManager.evtx
 
-    说明：导出Microsoft Monitoring Agent事件日志
+    说明：导出 Microsoft Monitoring Agent 事件日志
 
 ## <a name="see-also"></a>另请参阅
 

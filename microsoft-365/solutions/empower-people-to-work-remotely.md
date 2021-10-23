@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在家办公，在家办公，混合，远程工作者，混合办公，远程员工，混合连接，远程访问，远程办公，远程办公，远程办公，移动办公，远程工作，随时随地开展工作，灵活的工作场所
 description: 逐步设置基础结构层，以便远程工作者能够安全访问本地和 Microsoft 365 资源。
-ms.openlocfilehash: ae6d9ab0017ed4d4a33fc57be74ac0ea4aa955a4
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 296c8ccd3373d7b23b187f60b1a93318538ec8fe
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335946"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554512"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>设置使用 Microsoft 365 实现混合工作的基础结构
 
@@ -114,7 +114,7 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 
 - 一个新式设备，例如 Surface laptop 和 Windows 10，具备通过网页直接访问 Microsoft 365 云应用和服务的功能、安全性和性能。
 
-- 包括旧式家用笔记本电脑或台式机在内的任何设备，可通过快速部署的[基于 Windows 10 的虚拟桌面](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices)间接访问 Microsoft 365 云应用和服务。此选项可提供高性能、强安全性和简化的 IT 管理。
+- 包括旧式家用笔记本电脑或台式机在内的任何设备，可通过快速部署的[基于 Windows 10 的虚拟桌面](empower-people-to-work-remotely-remote-access.md#deploy-azure-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices)间接访问 Microsoft 365 云应用和服务。此选项可提供高性能、强安全性和简化的 IT 管理。
 
 ## <a name="next-steps"></a>后续步骤
 

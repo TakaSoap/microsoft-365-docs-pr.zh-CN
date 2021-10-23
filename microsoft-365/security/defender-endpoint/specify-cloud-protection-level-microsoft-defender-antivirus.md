@@ -2,7 +2,6 @@
 title: 指定云保护级别的Microsoft Defender 防病毒
 description: 为用户设置云保护Microsoft Defender 防病毒。
 keywords: Microsoft Defender 防病毒， 反恶意软件， 安全性， defender， 云， 攻击性， 保护级别
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -17,12 +16,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 09eb5f5c183a6a89d89b173557bdc40b9204824b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2c0f342c62409e8bfcf782c22714d9fd707c24a7
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166214"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555532"
 ---
 # <a name="specify-the-cloud-protection-level"></a>指定云保护级别
 
@@ -31,7 +30,7 @@ ms.locfileid: "60166214"
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender 防病毒
 
-云保护与Microsoft Defender 防病毒一起为终结点提供保护，这比通过传统安全智能更新快得多。 可以使用推荐策略或组策略Microsoft Endpoint Manager (云) 级别。
+云保护与 Microsoft Defender 防病毒协同工作，以比通过传统安全智能更新更快为终结点提供保护。 可以使用建议策略或组策略Microsoft Endpoint Manager (云) 级别。
 
 > [!NOTE]
 > 选择 **"高****"、高 +** 或 **"零容** 限"可能会导致检测某些合法文件。 如果发生这种情况，可以在门户中取消阻止检测到的文件或Microsoft 365 Defender争议。
@@ -42,14 +41,14 @@ ms.locfileid: "60166214"
 
 2. 选择 **终结点安全** \> **防病毒**。
 
-3. 选择防病毒配置文件。  (如果还没有配置文件，或者要创建新的配置文件，请参阅配置[Microsoft Intune。](/intune/device-restrictions-configure)
+3. 选择防病毒配置文件。  (如果还没有配置文件，或者要创建新的配置文件，请参阅配置 Microsoft Intune 中的[设备Microsoft Intune。](/intune/device-restrictions-configure)
 
 4. 选择 **"属性"。** 然后，在"配置 **设置"旁边，选择**"编辑 **"。**
 
 5. 展开 **"云** 保护"，然后在" **云提供的** 保护级别"列表中，选择下列选项之一：
 
     - **高**：应用强级别的检测。
-    - **高加**： **使用高级别** ，并应用额外的保护措施 (可能会影响客户端性能) 。
+    - **高加**：使用 **高级别** ，并应用额外保护措施 (可能会影响客户端性能) 。
     - **零容** 限：阻止所有未知可执行文件。
 
 6. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。**
@@ -82,7 +81,7 @@ ms.locfileid: "60166214"
 7. 部署更新的组策略对象。 请参阅 [组策略管理控制台](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
-> 是否在本地使用组策略对象？ 查看它们在云中如何转换。 [在预览版中，使用组策略分析Microsoft Endpoint Manager本地组策略对象](/mem/intune/configuration/group-policy-analytics)。 
+> 是否在本地使用组策略对象？ 查看它们在云中如何转换。 [在预览版中，使用](/mem/intune/configuration/group-policy-analytics)组策略分析分析Microsoft Endpoint Manager组策略对象。 
   
 ## <a name="see-also"></a>另请参阅
 

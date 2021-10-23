@@ -24,31 +24,30 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何在设置Windows 10后保护电脑Microsoft 365 商业高级版。
-ms.openlocfilehash: e89dbd21edc05c7f930f57bdef59ad5242041c9e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 11b91796d5c838cdcba656de430b875327be3db4
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155966"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554356"
 ---
 # <a name="secure-windows-10-computers"></a>保护 Windows 10 计算机
 
 本文适用于Microsoft 365 商业高级版。
 
-在设置[Microsoft 365 商业高级版](business-set-up.md)后，应该保护组织中的Windows 10计算机免受盗窃以及病毒和恶意软件等恶意威胁的攻击。
+在设置[Microsoft 365 商业高级版](business-set-up.md)后，应该保护组织中的Windows 10计算机免受盗窃以及病毒和恶意软件等恶意威胁的侵害。
 
 ## <a name="to-secure-your-windows-10-computers"></a>保护你的Windows 10计算机
 
 1. 使用全局管理员凭据登录到 [Microsoft 365 管理中心](https://admin.microsoft.com)。 
-2. 在左侧导航中，选择"**设置**"，然后在"**登录** 和安全"下，选择"保护 **Windows 10计算机"。** 选择 **"视图** "开始。
+2. 在左侧导航上，选择"**设置**"，然后在"登录和安全"下，选择"保护 **Windows 10计算机"。** 选择 **"视图** "开始。
 3. 在 **"保护Windows 10** 计算机"页上，阅读所有信息，了解要打开的内容以及用户的影响。
 
     在页面顶部，选择"**开始使用"。**
 
-4. 在 **"保护Windows 10** 计算机"窗格中，选择要打开的选项。 有关设置详细信息，请参阅安全[Windows 10设备](../misc/secure-windows-10-devices.md) (文章) \
-). 
+4. 在 **"保护Windows 10** 计算机"窗格中，选择要打开的选项。 有关设置详细信息，请参阅安全[Windows 10设备](../misc/secure-windows-10-devices.md) (文章) 。 
     
-    对于大多数组织来说，此处的选项提供了良好的安全级别，但是，如果你的组织具有更复杂的安全需求，则还可以使用预定义的安全基线来保证Windows 10安全。 有关详细信息，请参阅[安全基线Windows 10设备](/mem/intune/protect/security-baselines)。   
+    对于大多数组织来说，此处的选项提供了良好的安全级别，但是，如果你的组织具有更复杂的安全需求，则还可以使用预定义的安全基线保护Windows 10设备。 有关详细信息，请参阅[安全基线Windows 10设备](/mem/intune/protect/security-baselines)。   
 
 1. 选择 **"应用设置"。**
 

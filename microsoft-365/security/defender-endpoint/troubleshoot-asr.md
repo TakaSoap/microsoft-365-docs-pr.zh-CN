@@ -2,7 +2,6 @@
 title: 解决攻击面减少规则的问题
 description: 用于解决 Microsoft Defender for Endpoint 中攻击面减少规则的问题的资源和示例代码。
 keywords: 疑难解答， 错误， 修复， windows defender eg， asr， 规则， hips， 疑难解答， 审核， 排除， 误报， 损坏， 阻止， Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -18,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6afbb3b84d9a2fe30a9ac6547ba87f407596076b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a35c6f8044bda5372c01f97d92042ed2fa3fd099
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149858"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553696"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻击面减少规则疑难解答
 
@@ -39,7 +38,7 @@ ms.locfileid: "60149858"
 当你使用 [攻击面减少规则时](attack-surface-reduction.md) ，你可能会遇到问题，例如：
 
 - 规则阻止文件、进程或执行其他一些不应 (误报) 
-- 规则不能如所述工作，或不会阻止应 (漏报的文件或) 
+- 规则不能如所述工作，或不会阻止文件或进程，它应 (漏报) 
 
 解决这些问题有四个步骤：
 
@@ -64,13 +63,13 @@ ms.locfileid: "60149858"
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>使用审核模式测试规则
 
-你可以访问 demo.wd.microsoft.com 上的[Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)测试场网站，以确认攻击面减少规则通常适用于设备上预配置的方案和进程，或者可以使用审核模式，该模式仅启用报告规则。
+你可以访问 demo.wd.microsoft.com 上的[Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)测试场网站，以确认攻击面减少规则通常适用于设备上预配置的方案和进程，或者可以使用审核模式（启用仅报告规则）。
 
 按照使用演示 [工具中的以下说明查看攻击面](evaluate-attack-surface-reduction.md) 减少规则如何工作，以测试遇到问题的特定规则。
 
-1. 为要测试的特定规则启用审核模式。 使用组策略将规则设置为审核模式 (值 **：2**) 启用 [攻击面减少规则中所述](enable-attack-surface-reduction.md)。 审核模式允许规则报告文件或进程，但仍允许它运行。
+1. 为要测试的特定规则启用审核模式。 使用组策略将规则设置为审核模式 (**值：2**) 启用 [攻击面减少规则中所述](enable-attack-surface-reduction.md)。 审核模式允许规则报告文件或进程，但仍允许它运行。
 
-2. 执行导致问题的活动 (例如，打开或执行应阻止但允许阻止的文件或) 。
+2. 执行导致问题的活动 (例如，打开或执行应阻止但允许其访问的文件) 。
 
 3. [查看攻击面减少规则事件](attack-surface-reduction.md) 日志，以查看如果规则已设置为"已启用"，该规则是否阻止文件或 **进程**。
 
@@ -80,9 +79,9 @@ ms.locfileid: "60149858"
 
 如果你已使用演示工具和审核模式测试了规则，并且攻击面减少规则正在预配置的方案中运行，但规则未按预期工作，请根据你的情况继续执行以下任一部分：
 
-1. 如果攻击面减少规则阻止了它不应阻止 (也称为误报) ，你可以首先添加攻击面减少 [规则排除](#add-exclusions-for-a-false-positive)。
+1. 如果攻击面减少规则阻止了它不应阻止 (也称为误报) ，你可以首先添加攻击面减少[规则排除 。](#add-exclusions-for-a-false-positive)
 
-2. 如果攻击面减少规则未阻止应阻止 (也称为漏报) ，你可以立即进入最后一步，收集诊断数据，将问题提交给 [我们](#collect-diagnostic-data-for-file-submissions)。
+2. 如果攻击面减少规则不会阻止应阻止 (也称为漏报) ，你可以立即继续执行最后一步，收集诊断数据，将问题提交给 [我们](#collect-diagnostic-data-for-file-submissions)。
 
 ## <a name="add-exclusions-for-a-false-positive"></a>添加误报的排除项
 

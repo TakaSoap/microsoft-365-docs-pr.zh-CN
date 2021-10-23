@@ -2,8 +2,6 @@
 title: 高级搜寻架构中的 DeviceAlertEvents 表
 description: 了解高级搜寻架构的 DeviceAlertEvents 表中的警报生成事件
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， mdatp， microsoft defender atp， 适用于终结点的 microsoft defender， wdatp 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， DeviceAlertEvents， 警报， 严重性， 类别
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: 3919aea64e73e23a4de6aac3fe2b01de238bdb91
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 58e0ae53cc679136bca960f05e2eb6cf2c5a09a6
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211390"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554008"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 

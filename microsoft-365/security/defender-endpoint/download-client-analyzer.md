@@ -2,8 +2,6 @@
 title: 下载 Microsoft Defender for Endpoint 客户端分析器
 description: 了解如何在 Windows、macOS 或 Linux 上下载 Microsoft Defender for Endpoint Client Analyzer。
 keywords: 下载， 客户端分析器， 传感器疑难解答， 分析器， mdeanalyzer
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c3a115cc972fa6eeb7d30395f11873c4eb409a09
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5ef1a35516858128c8baf4f119dc3f421592daf2
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222254"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555808"
 ---
 # <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>下载 Microsoft Defender for Endpoint 客户端分析器
 

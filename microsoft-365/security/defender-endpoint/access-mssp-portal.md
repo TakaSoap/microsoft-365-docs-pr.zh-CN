@@ -2,8 +2,6 @@
 title: 访问 MSSP Microsoft 365 Defender门户
 description: 访问 MSSP Microsoft 365 Defender门户
 keywords: 托管安全服务提供程序， mssp， 配置， 集成
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5d4bd406ac65ea04814ce9ac2888fea1f8e29e47
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 23d8c03070ec0a89e86adf8afcdafb78dbb844a7
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208633"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556372"
 ---
 # <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>访问 MSSP Microsoft 365 Defender门户
 
@@ -45,11 +43,11 @@ ms.locfileid: "60208633"
 
 但是，MSSP 将需要使用以下格式的特定于租户的 URL：  `https://securitycenter.windows.com?tid=customer_tenant_id` 访问 MSSP 客户门户。
 
-通常，需要将 MSSP 添加到其打算管理的每个 MSSP 客户的 Azure AD。
+通常，需要将 MSSP 添加到其打算管理的每个 MSSP Azure AD中。
 
 使用以下步骤获取 MSSP 客户租户 ID，然后使用该 ID 访问租户特定的 URL：
 
-1. 作为 MSSP，使用凭据登录 Azure AD。
+1. 作为 MSSP，登录以Azure AD凭据登录。
 
 2. 将目录切换到 MSSP 客户的租户。
 

@@ -15,12 +15,12 @@ ms.custom:
 description: 管理员可以了解在 EOP 服务中配置邮件流和Exchange Online Protection () 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 56d6d29d92b97f1a85718d9b77c9e0a41c87b9f8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1d7bca416a6144e2745a2c5d631c3e634e935ff4
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197877"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554056"
 ---
 # <a name="mail-flow-in-eop"></a>EOP 中的邮件流
 
@@ -31,7 +31,7 @@ ms.locfileid: "60197877"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在Microsoft 365具有 Exchange Online 邮箱的组织，或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，发送到组织的所有邮件都先通过 EOP，然后工作人员才能看到这些邮件。 在邮件路由到工作人员收件箱之前，可以通过 EOP 路由邮件进行处理，有一些选项可供选择。
+在Microsoft 365具有 Exchange Online 邮箱的组织或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，发送到组织的所有邮件都先通过 EOP，然后工作人员才能看到这些邮件。 在邮件路由到工作人员收件箱之前，可以通过 EOP 路由邮件进行处理，有一些选项可供选择。
 
 ## <a name="working-with-messages-and-message-access-options"></a>使用邮件和邮件访问选项
 
@@ -41,16 +41,16 @@ EOP 提供了邮件路由方式的灵活性。 以下主题说明了邮件流过
 
 [View or edit accepted domains in EOP](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) 介绍如何管理与 EOP 服务关联的域。
 
-如果将子域添加到组织，则 EOP 服务也可以帮助您管理这些子域。 有关子域的更多信息，请通过 在 Exchange Online[中为子域启用邮件流](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)。
+如果将子域添加到组织，则 EOP 服务也可以帮助您管理这些子域。 有关子域的更多信息，请通过 在 Exchange Online 中为子域[启用邮件流](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)。
 
 [使用连接器配置邮件流](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) 介绍了连接器，并展示了如何使用连接器自定义邮件路由。 方案包括确保与合作伙伴组织进行安全通信，并设置智能主机。
 
 [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) 介绍如何在邮件路由到 EOP 之前的服务或设备时配置连接器。
 
-在 EOP 保护本地 Exchange 邮箱的混合环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[在混合环境中将 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。 如果您不想将邮件移动到每个用户的"垃圾邮件"文件夹，您可以选择其他操作，通过编辑反垃圾邮件策略 (也称为内容筛选器策略) 。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+在 EOP 保护内部部署 Exchange 邮箱的混合环境中，您需要配置邮件流规则 (也称为) 传输规则Exchange。 这些邮件流规则转换 EOP 垃圾邮件筛选裁定，以便邮箱中的垃圾邮件规则可以将邮件移动到"垃圾邮件"文件夹。 有关详细信息，请参阅[在混合环境中将 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。 如果您不想将邮件移动到每个用户的"垃圾邮件"文件夹，您可以选择其他操作，通过编辑反垃圾邮件策略 (也称为内容筛选器策略) 。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 ## <a name="verify-mail-flow"></a>验证邮件流
 
 要验证包括连接器配置在内的 EOP 安装是否正常工作，请参阅[设置 EOP 服务](/exchange/standalone-eop/set-up-your-eop-service)中的"您如何知道此任务有效？"部分。
 
-[通过验证您的邮件流Microsoft 365连接器](/exchange/mail-flow-best-practices/test-mail-flow)提供了用于测试您的邮件流是否正确设置的说明。
+[通过验证您的邮件流Microsoft 365连接器](/exchange/mail-flow-best-practices/test-mail-flow)提供有关测试您的邮件流是否正确设置的说明。

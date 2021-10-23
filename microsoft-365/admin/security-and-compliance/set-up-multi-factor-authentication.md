@@ -26,12 +26,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 0dddf5cbc1bcf921d239c7a93031be6cce419eb6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 824eefed4dbda14edab7608324a317b0f504b7ef
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178079"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554152"
 ---
 # <a name="set-up-multifactor-authentication"></a>设置多重身份验证
 
@@ -98,14 +98,6 @@ ms.locfileid: "60178079"
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>中，在左侧导航栏中选择“**设置**”\>“**组织设置**”。
 2. 在“**服务**”选项卡下，选择“**新式验证**”，然后在“**新式验证**”窗格中，确保已选择“**启用新式验证**”选项。选择“**保存更改**”。
 
-
-### <a name="turn-off-legacy-per-user-mfa"></a>关闭旧版每用户 MFA
-
-如果你以前已启用了每用户 MFA，则必须在启用安全性默认值之前将其关闭。
-
-1. 在 Microsoft 365 管理中心中，在左侧导航栏中选择“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**活动用户**</a>”。
-1. 在“**活动用户**”页面上，选择“**多重身份验证**”。
-1. 在“多重身份验证”页面上，选择每个用户并将其多重身份验证状态设置为“**禁用**”。
 
 ## <a name="next-steps"></a>后续步骤
 

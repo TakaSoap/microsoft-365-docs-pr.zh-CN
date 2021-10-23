@@ -15,20 +15,20 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (使用) ，Microsoft 365 Lighthouse使用基线部署标准租户配置。
-ms.openlocfilehash: 793a8f61634660487dc9256d23f0f7d83ff68983
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 对于托管服务提供商 (MSP) ，Microsoft 365 Lighthouse使用基线部署标准租户配置。
+ms.openlocfilehash: 2818b0e611bad7ae8895a1f44dcf557cb293aba8
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177035"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554944"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>使用基线部署标准租户配置的概述 
 
 > [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
-Microsoft 365 Lighthouse基线提供了一种可重复且可扩展的方法，让你能够跨多个客户租户Microsoft 365和管理安全设置。 基线还通过保护用户、设备和数据的配置帮助监视核心安全策略和租户合规性标准。
+Microsoft 365 Lighthouse基线提供了一种可重复且可扩展的方法，可让你跨多个客户租户Microsoft 365和管理安全设置。 基线还通过保护用户、设备和数据的配置帮助监视核心安全策略和租户合规性标准。
 
 为了帮助客户按自己的节奏采用安全性，Lighthouse 提供了一组标准的基线参数和预定义的配置，Microsoft 365服务。 这些安全配置可帮助衡量租户Microsoft 365合规性进度。
 
@@ -45,11 +45,11 @@ Microsoft 365 Lighthouse基线提供了一种可重复且可扩展的方法，�
 | 要求管理员使用 MFA | 仅报告条件访问策略，要求对管理员进行多重身份验证。 所有云应用程序都需要它。 |
 | 要求最终用户使用 MFA | 仅报告条件访问策略，要求用户进行多重身份验证。 所有云应用程序都需要它。 |
 | 阻止传统身份验证 | 用于阻止旧客户端身份验证的仅报告条件访问策略。 |
-| 在 Azure AD Microsoft Endpoint Manager注册设备 | 设备注册，允许租户设备注册Microsoft Endpoint Manager。 这是通过设置用户和用户之间的自动注册Azure Active Directory Microsoft Endpoint Manager。 |
-| 防病毒 (AV) 策略配置 | 具有预配置Windows的设备的设备配置配置文件Microsoft Defender 防病毒设置。 |
-| 窗口 10 合规性策略设置 | 一Windows预配置设置的设备策略，以满足基本合规性要求。 |
+| 设置设备注册 | 设备注册，允许租户设备注册Microsoft Endpoint Manager。 这是通过设置自动注册在 Azure Active Directory 和 Microsoft Endpoint Manager。 |
+| 配置Microsoft Defender 防病毒及Windows 10及更高版本的自定义设置 | 具有预配置Windows配置的设备配置配置文件Microsoft Defender 防病毒设置。 |
+| 为设备配置设备合规性策略Windows 10及更高版本 | 一Windows预配置设置的设备策略，以满足基本合规性要求。 |
 
 ## <a name="related-content"></a>相关内容
 
-[部署Microsoft 365 Lighthouse基线](m365-lighthouse-deploy-baselines.md) (文章) \
+[部署Microsoft 365 Lighthouse比较基准](m365-lighthouse-deploy-baselines.md) (文章) \
 [Microsoft 365 Lighthouse常见问题](m365-lighthouse-faq.yml) (文章) 

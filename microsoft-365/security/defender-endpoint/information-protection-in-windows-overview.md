@@ -1,9 +1,8 @@
 ---
 title: Windows 中的信息保护概述
 ms.reviewer: ''
-description: 了解信息保护如何工作Windows标识和保护敏感信息
+description: 了解信息保护在标识Windows保护敏感信息时的工作方式
 keywords: 信息， 保护， dlp， 数据， 丢失， 防护， 保护
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a96296f09a82fe2b2c8d5c4d5d250c48f89ffc4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 878bef057161b8235d6547e2f946c205b4657a69
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156290"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555016"
 ---
 # <a name="information-protection-in-windows-overview"></a>Windows 中的信息保护概述
 
@@ -80,7 +79,7 @@ DLP 策略实施Office 365数据丢失防护 (敏感信息) 分为两类：
 单击设备以查看在此设备上观测到的文件列表，及其敏感度标签和信息类型。
 
 > [!NOTE]
-> 请允许 Azure 信息保护仪表板发现大约 15-20 分钟反映发现的文件。
+> 请允许 Azure 信息保护仪表板发现大约 15-20 分钟反映已发现的文件。
 
 ## <a name="log-analytics"></a>Log Analytics
 
@@ -88,7 +87,7 @@ Azure Log [Analytics](/azure/log-analytics/log-analytics-overview)中也提供�
 
 有关 Azure 信息保护分析详细信息，请参阅 [Azure 信息保护的中央报告](/azure/information-protection/reports-aip)。
 
-在 Azure 门户中打开 Azure Log Analytics，然后打开标准 (或经典查询生成器) 。
+在 Azure 门户中打开 Azure Log Analytics，然后打开标准 (或经典查询) 。
 
 若要查看 Defender for Endpoint 数据，请执行包含以下项的查询：
 
@@ -101,4 +100,4 @@ InformationProtectionLogs_CL
 
 - 客户必须订阅 Azure 信息保护。
 - 在服务中启用 Azure 信息保护Microsoft Defender 安全中心：
-  - 转到 **"设置"** 中的Microsoft Defender 安全中心，单击"常规 **"设置"高级****"菜单**。
+  - 转到 **"设置"** 中的Microsoft Defender 安全中心，单击"常规"设置"**高级****"。**

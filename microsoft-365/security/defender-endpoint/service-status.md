@@ -2,8 +2,6 @@
 title: 检查 Microsoft Defender 终结点服务运行状况
 description: 检查 Microsoft Defender 终结点服务运行状况，查看服务是否遇到问题并查看之前已解决的问题。
 keywords: 仪表板， 服务， 问题， 服务运行状况， 当前状态， 状态历史记录， 影响摘要， 初步的根本原因， 解决方案， 解决时间， 预计解决时间
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7be50f2a0e83b5a69bb0529bf2ba227d0bb2d81d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 728d152d8c755464669d59e11746566472acd737
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206777"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553857"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>检查 Microsoft Defender 终结点服务运行状况
 

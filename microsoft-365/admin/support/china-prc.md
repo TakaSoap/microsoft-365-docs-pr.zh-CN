@@ -1,5 +1,5 @@
 ---
-title: '中国 (的支持) '
+title: 中国支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,14 +12,14 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 045962ec7d3cb0eb7d8d5382f29ff562e9850dda
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 118e836fbd55f9b69acfc892cf16edb1b19d2eff
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195085"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554428"
 ---
-# <a name="contact-support-for-china-prc"></a>请联系中国 (支持) 
+# <a name="contact-support-for-china"></a>联系中国支持人员
 
 [查找另一个国家/地区](../../business-video/get-help-support.md)。
 
@@ -39,7 +39,7 @@ ms.locfileid: "60195085"
 
 英语：全天候
 
-备用电话号码：400 920 0365 (Mobile) 
+备用电话电话号码：400 920 0365 (Mobile) 
 
 ## <a name="follow-us-on-wechat"></a>在微信上关注我们
 ![WeChat QR 代码。](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
@@ -57,4 +57,4 @@ ms.locfileid: "60195085"
 
 中文和英语电话支持：Mon-Fri 9 AM-9 PM
 
-中文和英语在线支持 (管理中心) ：一天 24 小时，每周 7 天
+通过管理中心 (中文和英语在线支持) ：一天 24 小时，每周 7 天

@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint 服务疑难解答
 description: 查找已知问题（如尝试访问服务时的服务器错误）的解决方案和解决方法。
 keywords: Microsoft Defender for Endpoint 疑难解答， 服务器错误， 访问被拒绝， 凭据无效， 无数据， 仪表板门户， 允许， 事件查看器
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 2d001d8c554738415e1108bd273aef642851e619
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d46fb5d456377a3089e5d6cfa45918eb42849227
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191571"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553852"
 ---
 # <a name="troubleshoot-service-issues"></a>服务疑难解答
 
@@ -42,9 +40,9 @@ ms.locfileid: "60191571"
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>门户上缺少的元素或数据
 
-如果客户端上缺少某些元素或Microsoft 365 Defender代理设置可能会阻止它。
+如果客户端上缺少某些元素或Microsoft 365 Defender则代理设置可能会阻止它。
 
-请确保包括 `*.security.microsoft.com` 代理允许列表。
+确保包括 `*.security.microsoft.com` 代理允许列表。
 
 > [!NOTE]
 > 添加以下终结点时，必须使用 HTTPS 协议。
@@ -57,7 +55,7 @@ ms.locfileid: "60191571"
 
 如果载入设备成功完成，但 Microsoft Defender for Endpoint 在重启后未启动，并且显示错误 577，请检查Windows Defender策略是否禁用了该设置。
 
-有关详细信息，请参阅[确保策略Microsoft Defender 防病毒禁用策略。](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
+有关详细信息，请参阅[确保策略Microsoft Defender 防病毒禁用策略](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
 ## <a name="known-issues-with-regional-formats"></a>区域格式的已知问题
 

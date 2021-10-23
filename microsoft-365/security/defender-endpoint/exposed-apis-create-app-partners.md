@@ -3,7 +3,6 @@ title: 创建应用程序以在没有用户的情况下访问 Microsoft Defender
 ms.reviewer: ''
 description: 了解如何设计 Web 应用，无需用户即可以编程方式访问 Microsoft Defender for Endpoint。
 keywords: api， 图形 api， 受支持的 api， 参与者， 警报， 设备， 用户， 域， ip， 文件， 高级搜寻， 查询
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 107bed51ac0558bb0b81e20b6ea7070689dd42e3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a63587500952687ea182d5d2162432195f91ea05
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207087"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554200"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>合作伙伴通过 Microsoft Defender 终结点 API 访问
 
@@ -37,14 +36,14 @@ ms.locfileid: "60207087"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-此页面介绍如何创建 Azure AD Azure Active Directory (应用程序) 代表客户以编程方式访问 Microsoft Defender for Endpoint。
+此页面介绍如何创建一个Azure Active Directory (Azure AD) 应用程序，以代表你的客户以编程方式访问 Microsoft Defender for Endpoint。
 
 Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 这些 API 将帮助你基于 Microsoft Defender for Endpoint 功能自动执行数据流创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 通常，你将需要执行以下步骤来使用 API：
 
-- 创建 **多租户** Azure AD 应用程序。
-- 获取 (授权) 客户管理员同意你的应用程序访问所需的 Defender for Endpoint 资源。
+- 创建 **多租户租户** Azure AD应用程序。
+- 获取 (同意) 客户管理员同意你的应用程序访问所需的 Defender for Endpoint 资源。
 - 使用此应用程序获取访问令牌。
 - 使用令牌访问 Microsoft Defender for Endpoint API。
 
@@ -127,7 +126,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
    ![同意的图像。](images/app-consent-partner.png)
 
-   此外，你将需要要求客户提供其租户 ID，并保存它供以后在获取令牌时使用。
+   此外，你将需要请求客户提供其租户 ID，并保存它供以后在获取令牌时使用。
 
 6. **完成！** 已成功注册应用程序！ 有关令牌获取和验证，请参阅以下示例。
 
@@ -135,7 +134,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 **注意：** 若要代表客户获取访问令牌，请使用客户的租户 ID 获取以下令牌。
 
-有关 AAD 令牌详细信息，请参阅 [AAD 教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+有关令牌AAD，请参阅AAD[教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-powershell"></a>使用 PowerShell
 
@@ -173,7 +172,7 @@ return $token
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
-- 复制/粘贴应用程序中的以下代码 (请不要忘记更新三个变量：、 `tenantId` `appId` 和 `appSecret`) 
+- 复制/粘贴应用程序中的以下代码 (不要忘记更新三个变量：、 和 `tenantId` `appId` `appSecret`) 
 
     ```console
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
@@ -200,8 +199,8 @@ return $token
 
 - 打开命令窗口
 - 将CLIENT_ID设置为 Azure 应用程序 ID
-- 将CLIENT_SECRET Azure 应用程序密码
-- 将TENANT_ID设置为想要使用你的应用程序访问 Microsoft Defender for Endpoint 应用程序的客户的 Azure 租户 ID
+- 将CLIENT_SECRET设置为 Azure 应用程序密码
+- 将TENANT_ID设置为想要使用应用程序访问 Microsoft Defender for Endpoint 应用程序的客户的 Azure 租户 ID
 - 运行以下命令：
 
 ```curl
@@ -229,7 +228,7 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 
 - 选择你想要使用的 API，有关详细信息，请参阅支持的 Microsoft [Defender 终结点 API](exposed-apis-list.md)
 - 将你发送到"Bearer {token}"的 Http 请求中的授权标头 (Bearer 是授权方案) 
-- 令牌的过期时间为 1 小时 (你可以使用相同的令牌发送多个请求) 
+- 令牌的过期时间为 1 小时， (使用相同的令牌发送多个请求) 
 
 - 发送请求以使用请求获取警报列表 **的示例C#**
 

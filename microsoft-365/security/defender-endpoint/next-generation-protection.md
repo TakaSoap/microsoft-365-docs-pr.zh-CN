@@ -2,7 +2,6 @@
 title: Microsoft Defender for Endpoint 中的下一代保护概述
 description: 获取 Microsoft Defender for Endpoint 中下一代保护的概述。 通过使用旨在捕获所有类型新威胁的下一代保护，巩固网络的安全外围。
 keywords: Microsoft Defender 防病毒、windows defender、反恶意软件、病毒、恶意软件、威胁、检测、保护、安全
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 78bcb88ffba87cbdb09b4c47293bfc420d4140e2
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 5bd2fb3fcd09e41b7da5aa6f75ecfd692dbc76fe
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335570"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553840"
 ---
 # <a name="next-generation-protection-overview"></a>下一代保护概述
 

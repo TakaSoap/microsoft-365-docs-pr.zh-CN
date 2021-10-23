@@ -17,17 +17,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 分类Microsoft 365是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 本文演示如何创建和训练自定义分类器以及如何重新设置它们以提高准确性。
-ms.openlocfilehash: d67c4a6b3934500e3594b1021ffad7f291af5587
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 分类Microsoft 365器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 本文演示如何创建和训练自定义分类器以及如何重新设置它们以提高准确性。
+ms.openlocfilehash: 89229a8c6f4eb5ac04fcb4f956c233e34b40806d
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193323"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554860"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>可训练的分类器入门
 
-可Microsoft 365分类器是一种工具，通过向可训练分类器提供示例进行查看，可以识别各种类型的内容。 接受培训后，可用于标识用于应用敏感度Office、通信合规性策略和保留标签策略的项目。
+可Microsoft 365分类器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 接受培训后，可用于标识用于应用敏感度Office、通信合规性策略和保留标签策略的项目。
 
 首先，创建自定义可训练分类器涉及为分类器提供人工选取且与类别积极匹配的示例。 然后，处理完这些样本后，通过向分类器提供正样本和负样本的组合来测试分类器预测的能力。 本文介绍了如何创建和训练自定义分类器，以及如何在自定义可训练分类器及其生存期内通过重新培训提高这些分类器的性能。
 
@@ -95,10 +95,7 @@ ms.locfileid: "60193323"
 
 ## <a name="how-to-create-a-trainable-classifier"></a>如何创建可训练分类器
 
-1. 收集 50-500 个种子内容项。 这些必须只是强烈表示您希望可训练分类器积极标识为分类类别的内容类型的示例。 有关受支持的[文件类型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)，请参阅 SharePoint Server 中的默认已爬网文件扩展名和分析文件类型。
-
-   > [!IMPORTANT]
-   > 种子和测试示例项不得加密，并且必须为英语。
+1. 收集 50-500 个种子内容项。 这些必须只是强烈表示您希望可训练分类器积极标识为分类类别的内容类型的示例。 有关受支持的[文件类型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)，请参阅 SharePoint Server 中的默认爬网文件扩展名和分析文件类型。
 
    > [!IMPORTANT]
    > 请确保种子集内的项目是 **类别的** 强示例。 可训练分类器最初基于你为该模型设定种子的模型。 分类器假定所有种子样本都是强正数，并且无法知道样本是该类别的弱匹配还是负匹配。
@@ -116,7 +113,7 @@ ms.locfileid: "60193323"
 
 6. 为希望此可训练分类器标识的项目类别的 和 字段填写相应的 `Name` `Description` 值。
 
-7. 从SharePoint 2 中为种子内容网站选择"联机网站、库和文件夹 URL"。 选择 `Add` 。
+7. 从SharePoint 2 中选取种子内容网站的联机网站、库和文件夹 URL。 选择 `Add` 。
 
 8. 查看设置并选择 `Create trainable classifier` 。
 
@@ -127,10 +124,7 @@ ms.locfileid: "60193323"
     > [!div class="mx-imgBorder"]
     > ![可供测试的可训练分类器。](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. 收集至少 200 个测试内容 (最大 10，000) 以获得最佳结果。 它们应该是强正值、强负和一些本质上不太明显的项目的组合。 有关受支持的[文件类型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)，请参阅 SharePoint Server 中的默认已爬网文件扩展名和分析文件类型。
-
-    > [!IMPORTANT]
-    > 示例项目不得加密，并且必须为英语。
+11. 收集至少 200 个测试内容 (10，000 个) ，获得最佳效果。 它们应该是强正值、强负和一些本质上不太明显的项目的组合。 有关受支持的[文件类型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)，请参阅 SharePoint Server 中的默认爬网文件扩展名和分析文件类型。
 
 12. 将测试内容放在专用于SharePoint测试内容的联机 *文件夹中*。 记下联机SharePoint库和文件夹 URL。
 

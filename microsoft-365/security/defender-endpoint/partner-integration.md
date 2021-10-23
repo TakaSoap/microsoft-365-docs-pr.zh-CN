@@ -1,10 +1,8 @@
 ---
 title: Microsoft Defender for Endpoint 合作伙伴机会和方案
 ms.reviewer: ''
-description: 了解如何在开放框架和丰富的 API 集上扩展现有安全产品/服务，以构建与 Microsoft Defender for Endpoint 的扩展和集成
+description: 了解如何在开放框架和一组丰富的 API 上扩展现有安全产品/服务，以构建与 Microsoft Defender for Endpoint 的扩展和集成
 keywords: API， 合作伙伴， 扩展， 开放框架， api， 扩展， 集成， 检测， 管理， 响应， 漏洞， 智能
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2d97cb0ea1a83b5c5c2e3ad6389cbde688e30272
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: baed391128976e8c700d936d7031a721dcb433d4
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196821"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556240"
 ---
 # <a name="microsoft-defender-for-endpoint-partner-opportunities-and-scenarios"></a>Microsoft Defender for Endpoint 合作伙伴机会和方案
 
@@ -52,7 +50,7 @@ Defender for Endpoint 以以下形式添加对此方案的支持：
 
 - 生成警报后，信号将在整个企业中受 Defender for Endpoint 保护的终结点之间共享。 Defender for Endpoint 立即自动响应或接线员协助响应，以响应警报。
 
-## <a name="scenario-2-security-orchestration-and-automation-response-soar-integration"></a>方案 2：SOAR 解决方案集成 (管理和) 响应
+## <a name="scenario-2-security-orchestration-and-automation-response-soar-integration"></a>方案 2：SOAR 安全业务流程 (自动化) 集成
 业务流程解决方案可帮助构建操作手册，并集成 Defender for Endpoint API 公开用于协调响应的丰富数据模型和操作，例如查询设备数据、触发设备隔离、阻止/允许、解决警报和其他操作。
 
 ## <a name="scenario-3-indicators-matching"></a>方案 3：指示器匹配 

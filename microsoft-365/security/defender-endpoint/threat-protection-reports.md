@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint 中的威胁防护报告
 description: 使用威胁防护报告跟踪警报检测、类别和严重性
 keywords: 警报检测， 来源， 警报按类别， 警报严重性， 警报分类， 确定
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4413c536eb5ee1b748996c21891a9801c6488fc2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cb9a45313c099ba30537bde061ef0f2a90012e9b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159338"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553624"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的威胁防护报告
 
@@ -46,7 +44,7 @@ ms.locfileid: "60159338"
 2|警报摘要
 
 ## <a name="alert-trends"></a>警报趋势
-默认情况下，警报趋势显示以最后一整天结尾的 30 天时段的警报信息。 为了更好地了解组织中发生的趋势，您可以通过调整所显示的时间段来微调报告期间。 若要调整时间段，请从下拉列表选项中选择一个时间范围：
+默认情况下，警报趋势显示以最后一整天结尾的 30 天时段的警报信息。 为了更好地了解组织中出现的趋势，您可以通过调整所显示的时间段来微调报告期间。 若要调整时间段，请从下拉列表选项中选择一个时间范围：
 
 - 30 天
 - 3 个月

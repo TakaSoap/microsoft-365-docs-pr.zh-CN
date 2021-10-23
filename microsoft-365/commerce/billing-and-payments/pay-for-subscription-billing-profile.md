@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 ms.date: 04/02/2021
-ms.openlocfilehash: 61409b8c648819ae4782b3f6077873687a43a6e2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67767a7594d16e9f448e01cad6e58254607968ff
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60160520"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554212"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>如何使用计费配置文件支付订阅费用
 
@@ -37,7 +37,7 @@ ms.locfileid: "60160520"
 
 默认情况下，对于使用定期计费的所有付费订阅，会自动启用定期计费。 每个计费周期，我们都会自动向与计费配置文件关联的付款方式收费，以支付使用该计费配置文件的任何订阅。 如果你的付款方式被拒绝，可以使用发票上的"现在支付"按钮为订阅进行一次付款。
 
-如果对帐单配置文件关闭定期计费，则无论哪种付款方式与计费配置文件关联，都可以使用发票上的"现在支付"按钮来支付它。 您还可以通过支票或电子资金 (EFT) 。 有关如何执行的说明包含在发票的 PDF 副本中。
+如果对帐单配置文件关闭定期计费，则无论哪种付款方式与计费配置文件关联，都可以使用发票上的"现在支付"按钮来支付它。 您还可以通过支票或 EFT (电子资金) 。 有关如何执行的说明包含在发票的 PDF 副本中。
 
 ## <a name="paying-by-invoice"></a>按发票付款
 
@@ -51,7 +51,7 @@ ms.locfileid: "60160520"
 
 如果需要进行信用检查，在购买订阅时就会收到通知。如果同意取得联系，则会收到一封电子邮件，其中包括更多关于申请信贷审批的信息。通常会在两个工作日内完成信用检查。
 
-如果你的计费配置文件由发票支持，则当帐单可供查看时，你收到一封电子邮件。 这封邮件不包含账单副本。 不过，可以选择[通过电子邮件接收账单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。 账单中包含了关于付款选择以及付款地点的详细信息。 如果在计费配置文件中 (PO) 订单，该编号将显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
+如果你的计费配置文件由发票支持，则当帐单可供查看时，你收到一封电子邮件。 这封邮件不包含账单副本。 不过，可以选择[通过电子邮件接收账单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。 账单中包含了关于付款选择以及付款地点的详细信息。 如果在计费配置文件中 (PO) 订单编号，该编号将显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>支票或 EFT 付款应发送到何处？
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint 门户概述
-description: Microsoft 365 Defender可以监视企业网络，并协助响应潜在高级永久性威胁 (APT) 数据泄露。
+description: Microsoft 365 Defender可以监视企业网络，并有助于响应潜在高级永久性威胁 (APT) 数据泄露。
 keywords: Microsoft 365 Defender， 门户， 网络安全威胁智能， 仪表板， 警报队列， 设备列表， 设置， 设备管理， 高级攻击
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3450eebd549589f20b074f025d581783acdb23c1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c53cce4cb12d08d59b09b041883531b4dee11ce9
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168346"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554932"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Microsoft 365 Defender 门户概述
 
@@ -35,7 +35,7 @@ ms.locfileid: "60168346"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
-Enterprise安全团队Microsoft 365 Defender监视和协助响应潜在高级永久性威胁活动或数据泄露的警报。
+Enterprise安全团队可以使用Microsoft 365 Defender监视和协助响应潜在高级永久性威胁活动或数据泄露的警报。
 
 可以使用[Microsoft 365 Defender：](https://security.microsoft.com)
 
@@ -48,34 +48,35 @@ Enterprise安全团队Microsoft 365 Defender监视和协助响应潜在高级永
 打开门户时，你将看到：
 
 -  (1) 导航窗格 (选择导航窗格顶部的水平线以显示或隐藏它) 
--  (2) 搜索、Community 中心、本地化、帮助和支持、反馈
+-  (2) 搜索、Community中心、本地化、帮助和支持、反馈
 
  ![Microsoft Defender 终结点门户。](images/mdatp-portal-overview.png)
 
 > [!NOTE]
-> 仅在你的设备将恶意软件相关的检测Microsoft Defender 防病毒作为默认的实时保护反恶意软件产品。
+> 仅在你的设备将恶意软件相关的检测Microsoft Defender 防病毒作为默认的反恶意软件实时保护产品。
 
 可以使用所有部分中可用的菜单选项在门户中导航。 请参阅下表，了解每个部分的说明。
 
 领域|说明
 :---|:---
-**(1) 导航窗格**|使用导航窗格在仪表板、事件、**设备** 列表、**警报** 队列、**自动** 调查、高级搜寻、报告、合作伙伴 &  **API、** 威胁 &**漏洞** 管理、评估和教程、**服务** 运行状况、配置管理和 设置 **之间移动**。  选择导航窗格顶部的水平线以显示或隐藏它。
-**仪表板**|访问活动的自动调查、活动警报、自动调查统计信息、处于风险中的设备、处于风险中的用户、具有传感器问题的设备、服务运行状况、检测源和每日设备报告仪表板。
-**事件**|查看已聚合为事件的警报。
-**设备列表**|显示已载入 Defender for Endpoint 的设备列表、有关它们的一些信息及其曝光和风险级别。
-**警报队列**|查看从组织中设备生成的警报。
-**自动调查**|显示网络中已进行的自动调查、触发警报、每个调查的状态以及其他详细信息，如调查的开始时间以及调查的持续时间。
-**高级搜寻**|借助高级搜寻，可以使用功能强大的搜索和查询工具在组织中主动搜寻和调查。
-**报表**|查看详细介绍威胁防护、设备运行状况和合规性、Web 保护和漏洞的图形。
-**合作伙伴和 API**|查看受支持的合作伙伴连接，以增强平台的检测、调查和威胁智能功能。 还可以查看连接的应用程序、API 资源管理器、API 使用情况概述和数据导出设置。
-**威胁&漏洞管理**|查看你的 Microsoft 设备安全分数、曝光分数、公开的设备、易受攻击的软件，并针对最高安全建议采取措施。
-**评估和教程**|管理测试设备、攻击模拟和报告。 在试用环境中通过指导性演练了解并体验 Defender for Endpoint 功能。
-**服务运行状况**|提供有关 Defender for Endpoint 服务的当前状态的信息。 你将能够验证服务运行状况是否正常或当前是否有问题。
-**配置管理**|显示已上线设备、组织的安全基线、预测分析、Web 保护范围，并允许你在设备上执行攻击面管理。
-**设置**|显示你在载入期间选择的设置，并允许你更新你的行业首选项和保留策略期。 还可以设置其他配置设置，如权限、API、规则、设备管理、IT 服务管理和网络评估。
-**(2) 搜索、Community 中心、本地化、帮助和支持、反馈**|**搜索** - 按设备、文件、用户、URL、IP、漏洞、软件和建议进行搜索。 <p> **Community** 中心 - 访问Community中心，了解、协作和共享产品体验。 <p> **本地化** - 设置时区。 <p> **帮助和支持** - 访问适用于终结点的 Defender 指南、Microsoft 和 Microsoft Premier 支持、许可证信息、模拟 & 教程、适用于终结点的 Defender 评估实验室、咨询威胁专家。 <p> **反馈** - 提供有关您喜欢或我们可以更好地执行哪些工作的评论。
+**(1) 导航窗格** | 使用导航窗格在仪表板、事件、**设备** 列表、**警报** 队列、**自动** 调查、高级搜寻、报告、合作伙伴 &  **API、** 威胁 &**漏洞** 管理、评估和教程、**服务** 运行状况、配置管理和 设置 之间 **移动**。   选择导航窗格顶部的水平线以显示或隐藏它。
+**仪表板** | 访问活动的自动调查、活动警报、自动调查统计信息、处于风险中的设备、处于风险中的用户、具有传感器问题的设备、服务运行状况、检测源和每日设备报告仪表板。
+**事件** | 查看已聚合为事件的警报。
+**设备列表** | 显示已载入 Defender for Endpoint 的设备列表、有关它们的一些信息及其曝光和风险级别。
+**警报队列** | 查看从组织中设备生成的警报。
+**自动调查** | 显示网络中已进行的自动调查、触发警报、每个调查的状态以及其他详细信息，如调查的开始时间以及调查的持续时间。
+**高级搜寻** | 借助高级搜寻，可以使用功能强大的搜索和查询工具在组织中主动搜寻和调查。
+**报表** | 查看详细介绍威胁防护、设备运行状况和合规性、Web 保护和漏洞的图形。
+**合作伙伴和 API** | 查看受支持的合作伙伴连接，以增强平台的检测、调查和威胁智能功能。 还可以查看连接的应用程序、API 资源管理器、API 使用情况概述和数据导出设置。
+**威胁&漏洞管理** | 查看你的 Microsoft 设备安全分数、曝光分数、公开的设备、易受攻击的软件，并针对最高安全建议采取措施。
+**评估和教程** | 管理测试设备、攻击模拟和报告。 在试用环境中通过指导性演练了解并体验 Defender for Endpoint 功能。
+**服务运行状况** | 提供有关 Defender for Endpoint 服务的当前状态的信息。 你将能够验证服务运行状况是否正常或当前是否有问题。
+**配置管理** | 显示已上线设备、组织的安全基线、预测分析、Web 保护范围，并允许你在设备上执行攻击面管理。
+**Settings** | 显示你在载入期间选择的设置，并允许你更新你的行业首选项和保留策略期。 还可以设置其他配置设置，如权限、API、规则、设备管理、IT 服务管理和网络评估。
+**(2) 搜索、Community 中心、本地化、帮助和支持、反馈** |  按设备、文件、用户、URL、IP、漏洞、软件和建议进行搜索。 搜索支持使用 SHA1 和 SHA256 加密哈希格式。 <p> **Community** 中心 - 访问Community中心，了解、协作和共享产品体验。 <p> **本地化** - 设置时区。 <p> **帮助和支持** - 访问适用于终结点的 Defender 指南、Microsoft 和 Microsoft Premier 支持、许可证信息、模拟 & 教程、Defender for Endpoint 评估实验室、咨询威胁专家。 <p> **反馈** - 提供有关您喜欢或我们可以更好地执行哪些工作的评论。
 
 > [!NOTE]
+>
 > 对于具有高分辨率 DPI 缩放问题的设备，请参阅Windows DPI[设备的](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices)缩放问题，了解可能的解决方案。
 
 ## <a name="microsoft-defender-for-endpoint-icons"></a>Microsoft Defender for Endpoint 图标
@@ -114,7 +115,7 @@ Enterprise安全团队Microsoft 365 Defender监视和协助响应潜在高级永
 ![进程树图标。](images/atp-process-tree.png)|进程树
 ![内存分配图标。](images/atp-memory-allocation-icon.png)|内存分配
 ![进程注入图标。](images/atp-process-injection.png)|进程注入
-![Powershell 命令运行图标。](images/atp-powershell-command-run-icon.png)|Powershell 命令运行
+![PowerShell 命令运行图标。](images/atp-powershell-command-run-icon.png)|PowerShell 命令运行
 ![Community中心图标。](images/atp-community-center.png)|Community中心
 ![通知图标。](images/atp-notifications.png)|通知
 ![未找到威胁。](images/no-threats-found.png)|自动调查 - 未找到威胁

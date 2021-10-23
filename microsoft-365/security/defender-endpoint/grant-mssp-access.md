@@ -1,9 +1,7 @@
 ---
-title: '向 MSSP 应用程序授予对托管 (提供程序) '
+title: '向 MSSP 托管服务提供程序 (访问) '
 description: 执行必要步骤以配置 MSSP 与 Microsoft Defender for Endpoint 的集成
 keywords: 托管安全服务提供程序， mssp， 配置， 集成
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,21 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 59d4fd4fa2582b925668adc7eb65d37e8f336da6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e262c6b7176ba5c269c086b4a196a685a25bc8ed
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208513"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553876"
 ---
-# <a name="grant-managed-security-service-provider-mssp-access-preview"></a>向 MSSP (托管安全) 访问 (预览) 
+# <a name="grant-managed-security-service-provider-mssp-access-preview"></a>向 MSSP 托管 (提供程序) 访问 (预览) 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)。
 
@@ -47,7 +44,7 @@ ms.locfileid: "60208513"
 
 ## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中启用基于角色的访问控制
 
-1. **为客户 AAD 中的 MSSP 资源创建访问组：组**
+1. **在 Customer AAD： Groups 中为 MSSP 资源创建访问组**
 
     这些组将链接到你在 Defender for Endpoint 中创建的角色。 为此，在客户 AD 租户中，创建三个组。 在我们的示例方法中，我们将创建以下组：
 
@@ -77,13 +74,13 @@ ms.locfileid: "60208513"
 
 ## <a name="configure-governance-access-packages"></a>配置治理访问包
 
-1. **在客户 AAD 中添加 MSSP 作为连接组织：标识治理**
+1. **在 Customer AAD： Identity Governance 中将 MSSP 添加为连接组织**
 
     将 MSSP 添加为连接的组织将允许 MSSP 请求并设置访问权限。
 
     为此，在客户 AD 租户中，访问标识治理：已连接组织。 添加新组织，然后通过租户 ID 或域搜索 MSSP 分析员租户。 建议为 MSSP 分析员创建单独的 AD 租户。
 
-2. **在客户 AAD：标识治理中创建资源目录**
+2. **在 Customer AAD： Identity Governance 中创建资源目录**
 
     资源目录是在客户 AD 租户中创建的访问包的逻辑集合。
 
@@ -93,7 +90,7 @@ ms.locfileid: "60208513"
 
     有关详细信息，请参阅创建 [资源目录](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
-3. **为 MSSP 资源创建访问包客户 AAD：标识治理**
+3. **为 MSSP 资源创建访问包客户AAD：标识管理**
 
     访问包是请求者在审批时将授予的权限和访问权限的集合。
 
@@ -109,7 +106,7 @@ ms.locfileid: "60208513"
 
     有关详细信息，请参阅 [创建新的访问包](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
-4. **提供客户 AAD 中 MSSP 资源的访问请求链接：标识治理**
+4. **提供从 Customer AAD：Identity Governance 访问 MSSP 资源的访问请求链接**
 
     MSSP SOC 分析员使用"我的访问门户"链接通过创建的访问包请求访问。 该链接是持久链接，这意味着随着时间的推移，新分析师可能会使用相同的链接。 分析员请求进入一个队列，等待 **MSSP 分析员审批者审批**。
 
@@ -130,7 +127,7 @@ ms.locfileid: "60208513"
 
 2. 在 UI 的" **审批"部分批准** 或拒绝请求。
 
-    此时，已预配分析师访问权限，并且每个分析师应能够访问客户的Microsoft Defender 安全中心：`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    此时，已预配分析师访问权限，并且每个分析师应能够访问客户Microsoft Defender 安全中心：`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>相关主题
 

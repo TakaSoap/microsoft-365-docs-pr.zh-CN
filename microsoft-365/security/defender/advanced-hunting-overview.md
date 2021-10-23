@@ -2,8 +2,6 @@
 title: 概述 - 高级搜寻
 description: 了解 Microsoft 365 中的高级搜寻查询以及如何使用它们来主动查找网络中的威胁和弱点
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 自定义检测， 架构， kusto
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: f2bee83b4529a37d5685f98c1b779f96cc71625f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: eb29c2f30e19acb3733f5512f2cba7d666d3df21
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208441"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554608"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>通过高级搜寻主动搜寻Microsoft 365 Defender
 
@@ -71,7 +69,7 @@ ms.locfileid: "60208441"
 | **创建自定义检测规则** | 了解如何使用高级搜寻查询来触发警报并自动执行响应操作。 | - [自定义检测概述](custom-detections-overview.md) <br />- [自定义检测规则](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>获取访问权限
-若要使用高级搜寻或其他[Microsoft 365 Defender](microsoft-365-defender.md)功能，你需要一个合适的角色Azure Active Directory。 [阅读高级搜寻所需的角色和权限](custom-roles.md)。
+若要使用高级搜寻或其他[Microsoft 365 Defender](microsoft-365-defender.md)功能，你需要在搜索服务中Azure Active Directory。 [阅读高级搜寻所需的角色和权限](custom-roles.md)。
 
 此外，对终结点数据的访问由基于角色的访问控制 (Microsoft Defender for Endpoint) RBAC 设置确定。 [阅读有关管理对 Microsoft 365 Defender 的访问权限](m365d-permissions.md)。
 
@@ -79,7 +77,7 @@ ms.locfileid: "60208441"
 ## <a name="data-freshness-and-update-frequency"></a>数据新鲜度和更新频率
 可以将高级搜寻数据分类为两种不同的类型，每种类型以不同的方式合并。
 
-- **事件或活动数据**- 填充有关警报、安全事件、系统事件和常规评估的表。 高级搜寻几乎会在成功收集这些数据的传感器之后立刻将这些数据传输到相应的云服务。 例如，在 Microsoft Defender for Endpoint 和 Microsoft Defender for Identity 上提供事件数据后，你几乎可以在工作站或域控制器上立即查询来自正常传感器的事件数据。
+- **事件或活动数据**- 填充有关警报、安全事件、系统事件和例程评估的表。 高级搜寻几乎会在成功收集这些数据的传感器之后立刻将这些数据传输到相应的云服务。 例如，在 Microsoft Defender for Endpoint 和 Microsoft Defender for Identity 上提供事件数据后，你几乎可以在工作站或域控制器上立即查询来自正常传感器的事件数据。
 - **实体** 数据 - 使用有关用户和设备的信息填充表。 此数据来自相对静态的数据源和动态源，例如 Active Directory 条目和事件日志。 为了提供最新数据，表格每 15 分钟更新一次任何新信息，并添加可能未完全填充的行。 每 24 小时合并一次数据，以插入包含有关每个实体的最新、最全面的数据集的记录。
 
 ## <a name="time-zone"></a>时区

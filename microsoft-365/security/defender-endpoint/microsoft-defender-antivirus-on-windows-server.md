@@ -1,8 +1,7 @@
 ---
 title: Windows Server 上的 Microsoft Defender 防病毒软件
-description: 了解如何在 Microsoft Defender 防病毒 Server 2019 Windows Server 2016 Windows Server 2022 Windows和配置服务器。
+description: 了解如何在 Microsoft Defender 防病毒 Server 2019 Windows Server 2016 Windows Server 2022 上Windows和配置应用程序。
 keywords: windows defender， 服务器， scep， system center endpoint protection， server 2016， current branch， server 2012
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9e92096ab6b1b291094781fed9ee994ca1fd7358
-ms.sourcegitcommit: 3260d47a29c35e90ed7b1d14d400b39baa741873
+ms.openlocfilehash: a6af3ff71cf6f64fbc548ceb3b333cdf135c70dc
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60462221"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554548"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上的 Microsoft Defender 防病毒软件
 
@@ -31,7 +30,7 @@ ms.locfileid: "60462221"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender 防病毒 Server 的以下版本/版本中提供Windows版本：
+Microsoft Defender 防病毒以下版本/版本的 Windows Server 中提供：
 
 - Windows Server 2022
 - Windows Server 2019
@@ -39,7 +38,7 @@ Microsoft Defender 防病毒 Server 的以下版本/版本中提供Windows版本
 - Windows Server 2016
 - Windows Server 2012R2 (需要 Microsoft Defender for Endpoint) 
 
-在某些情况下，Microsoft Defender 防病毒称为 *Endpoint Protection;* 但是，保护引擎是相同的。 尽管这些功能、配置和管理在 Microsoft Defender 防病毒 上Windows 10基本相同，[](microsoft-defender-antivirus-windows.md)但 Windows Server 上存在一些关键差异：
+在某些实例中，Microsoft Defender 防病毒称为 *"Endpoint Protection";* 但是，保护引擎是相同的。 尽管 Microsoft Defender 防病毒 和[Windows 11](microsoft-defender-antivirus-windows.md)上的 Microsoft Defender 防病毒 功能、配置Windows 10 Windows 11，但 Windows Server 上存在一些关键差异：
 
 - 在 Windows 服务器上，[根据](configure-server-exclusions-microsoft-defender-antivirus.md)定义的服务器角色应用自动排除项。
 
@@ -50,7 +49,7 @@ Microsoft Defender 防病毒 Server 的以下版本/版本中提供Windows版本
 在服务器平台上设置和运行Microsoft Defender 防病毒包括几个步骤：
 
 1. [启用接口](#enable-the-user-interface-on-windows-server)。
-2. [安装Microsoft Defender 防病毒](#install-microsoft-defender-antivirus-on-windows-server)。
+2. [安装 Microsoft Defender 防病毒](#install-microsoft-defender-antivirus-on-windows-server)。
 3. [验证Microsoft Defender 防病毒是否正在运行](#verify-microsoft-defender-antivirus-is-running)。
 4. [更新反恶意软件安全智能](#update-antimalware-security-intelligence)。
 5.  (根据需要) [提交示例。](#submit-samples)
@@ -59,7 +58,7 @@ Microsoft Defender 防病毒 Server 的以下版本/版本中提供Windows版本
 
 ## <a name="enable-the-user-interface-on-windows-server"></a>在 Windows 服务器上启用用户界面
 
-默认情况下，Microsoft Defender 防病毒服务器上安装并Windows功能。 有时，默认情况下会 (GUI) 用户界面，但不需要 GUI。 可以使用 PowerShell、组策略或其他方法来管理Microsoft Defender 防病毒。
+默认情况下，Microsoft Defender 防病毒服务器上安装并Windows功能。 有时，用户界面会 (GUI) 安装，但不需要 GUI。 可以使用 PowerShell、组策略或其他方法来管理Microsoft Defender 防病毒。
 
 如果服务器上未安装 GUI，并且要安装 GUI，则使用"添加角色 **和功能** "向导或 PowerShell cmdlet。
 
@@ -70,13 +69,13 @@ Microsoft Defender 防病毒 Server 的以下版本/版本中提供Windows版本
 
 1. 请参阅 [使用添加角色和功能向导](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard)安装角色、角色服务和功能，并使用 **添加角色和功能向导**。
 
-2. 当您进入向导的"**功能**"步骤时，在"Windows Defender **功能"** 下，选择 **"Windows Defender** GUI"选项。
+2. 当您进入向导的"**功能**"步骤时，在 **"Windows Defender"下**，选择 **"Windows Defender** GUI"选项。
 
    在Windows Server 2016中，添加 **角色和功能向导** 如下所示：
 
-   ![添加显示选项的 GUI 的角色Windows Defender向导。](images/server-add-gui.png)
+   ![添加显示自定义选项的 GUI 的角色Windows Defender向导。](images/server-add-gui.png)
 
-   在 Windows Server 2019 和 Windows Server 2022中，"添加角色"和"功能向导"类似。
+   在 Windows Server 2019 和 Windows Server 2022 中，"添加角色"和"功能向导 **"类似。**
 
 ### <a name="turn-on-the-gui-using-powershell"></a>使用 PowerShell 打开 GUI
 
@@ -86,15 +85,15 @@ Microsoft Defender 防病毒 Server 的以下版本/版本中提供Windows版本
 Install-WindowsFeature -Name Windows-Defender-GUI
 ```
 
-## <a name="install-microsoft-defender-antivirus-on-windows-server"></a>在 Windows 服务器上安装 Microsoft Defender 防病毒
+## <a name="install-microsoft-defender-antivirus-on-windows-server"></a>在 Microsoft Defender 防病毒 服务器上Windows服务器
 
-如果需要在 Windows 服务器上安装或重新安装Microsoft Defender 防病毒，可以使用"添加角色 **和功能** 向导"或 PowerShell 完成这一操作。
+如果需要在 Microsoft Defender 防病毒 服务器上安装或重新安装Windows，可以使用"添加角色 **和功能** 向导"或 PowerShell 完成这一操作。
 
 ### <a name="use-the-add-roles-and-features-wizard-to-install-microsoft-defender-antivirus"></a>使用添加角色和功能向导安装Microsoft Defender 防病毒
 
 1. 请参阅 [本文 ，并使用](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard)添加 **角色和功能向导**。
 
-2. 当您进入向导的 **"功能**"步骤时，选择"Microsoft Defender 防病毒选项。 另外，选择 **"用于Windows Defender** GUI"选项。
+2. When you get to the **Features** step of the wizard， select the Microsoft Defender 防病毒 option. 另外，选择 **"用于Windows Defender** GUI"选项。
 
 ### <a name="use-powershell-to-install-microsoft-defender-antivirus"></a>使用 PowerShell 安装Microsoft Defender 防病毒
 
@@ -108,7 +107,7 @@ Microsoft Defender AV 事件 中Microsoft Defender 防病毒[包含的反恶意�
 
 ## <a name="verify-microsoft-defender-antivirus-is-running"></a>验证Microsoft Defender 防病毒是否正在运行
 
-安装Microsoft Defender 防病毒后，下一步是验证它是否正在运行。 在 Windows Server 终结点上，运行以下 PowerShell cmdlet：
+安装Microsoft Defender 防病毒后，下一步是验证其是否正在运行。 在 Windows Server 终结点上，运行以下 PowerShell cmdlet：
 
 ```PowerShell
 Get-Service -Name windefend
@@ -126,11 +125,11 @@ Get-Service -Name mpssvc
 sc query Windefend
 ```
 
-该命令 `sc query` 返回有关 Microsoft Defender 防病毒 的信息。 当Microsoft Defender 防病毒运行时， `STATE` 值将显示 `RUNNING` 。
+该命令 `sc query` 返回有关 Microsoft Defender 防病毒 的信息。 当Microsoft Defender 防病毒运行时，值 `STATE` 将显示 `RUNNING` 。
 
 ## <a name="update-antimalware-security-intelligence"></a>更新反恶意软件安全智能
 
-若要获取更新的反恶意软件安全智能，必须运行 Windows Update 服务。 如果使用更新管理服务（如 Windows Server Update Services (WSUS) ，请确保已针对你管理的计算机Microsoft Defender 防病毒安全智能的更新。
+若要获取更新的反恶意软件安全智能，必须运行Windows更新服务。 如果使用更新管理服务（如 Windows Server Update Services (WSUS) ，请确保已针对你管理的计算机Microsoft Defender 防病毒安全智能的更新。
 
 默认情况下，Windows Update 不会在 Windows Server 2019、Windows Server 2022 或 Windows Server 2016 上自动下载和安装Windows Server 2016。 可以使用以下方法之一更改此配置：
 
@@ -138,7 +137,7 @@ sc query Windefend
 
 | 方法 | 说明 |
 |---|---|
-| **Windows控制面板** 中的更新 | **自动安装更新** 会导致自动安装所有更新，Windows Defender安全智能更新。 <br/><br/> **下载更新，但允许我** 选择是否安装它们Windows Defender自动下载和安装安全智能更新，但不会自动安装其他更新。 |
+| **Windows控制面板** 中的更新 | **自动安装更新** 会导致自动安装所有更新，Windows Defender安全智能更新。 <br/><br/> **下载更新，但允许我选择是否安装它们Windows Defender** 自动下载和安装安全智能更新，但不会自动安装其他更新。 |
 | **组策略** | 您可以使用组策略中提供的设置设置和管理 Windows 更新，路径如下：**管理模板\Windows 组件\Windows更新\配置自动更新** |
 | **AUOptions** 注册表项 | 以下两个值允许Windows更新自动下载和安装安全智能更新： <br/><br/> **4**  - **自动安装更新**。 此值会导致自动安装所有更新，包括Windows Defender更新。 <br/><br/> **3**  - **下载更新，但允许我选择是否安装它们**。 此值允许Windows Defender下载和安装安全智能更新，但不会自动安装其他更新。 |
 
@@ -147,7 +146,7 @@ sc query Windefend
 - Windows 错误报告服务
 - Windows更新服务
 
-下表列出了相关服务Microsoft Defender 防病毒服务。
+下表列出了服务相关的Microsoft Defender 防病毒服务。
 
 <br/><br/>
 
@@ -161,7 +160,7 @@ sc query Windefend
 
 ## <a name="submit-samples"></a>提交示例
 
-示例提交允许 Microsoft 收集潜在恶意软件的示例。 为了帮助提供持续且最新的保护，Microsoft 研究人员使用这些示例来分析可疑活动并生成更新的反恶意软件安全智能。 我们收集程序可执行文件，例如.exe文件和.dll文件。 我们不会收集包含个人数据的文件，如Microsoft Word文档和 PDF 文件。
+示例提交允许 Microsoft 收集潜在恶意软件的示例。 为了帮助提供持续且最新的保护，Microsoft 研究人员使用这些示例来分析可疑活动并生成更新的反恶意软件安全智能。 我们收集程序可执行文件，例如.exe文件.dll文件。 我们不会收集包含个人数据的文件，如Microsoft Word和 PDF 文件。
 
 ### <a name="submit-a-file"></a>提交文件
 
@@ -170,13 +169,13 @@ sc query Windefend
 
 ### <a name="enable-automatic-sample-submission"></a>启用自动提交示例
 
-若要启用自动示例提交，请以管理员Windows PowerShell启动一个自定义控制台，然后根据以下设置之一设置 **SubmitSamplesConsent** 值数据：
+若要启用自动示例提交，请以管理员Windows PowerShell启动示例提交控制台，然后根据以下设置之一设置 **SubmitSamplesConsent** 值数据：
 
 <br/><br/>
 
-|设置|说明|
+|Setting|说明|
 |---|---|
-| **0**  - **始终提示** | the Microsoft Defender 防病毒 service prompts you to confirm submission of all required files. 这是 Microsoft Defender 防病毒 的默认设置，但不建议在 Windows Server 2016 或 2019 或 Windows Server 2022 上安装不带 GUI。 |
+| **0**  - **始终提示** | the Microsoft Defender 防病毒 service prompts you to confirm submission of all required files. 这是 Microsoft Defender 防病毒 的默认设置，但不建议在 Windows Server 2016 2019 或 Windows Server 2022 上安装不带 GUI。 |
 | **1**   - **自动发送安全示例** | 该服务Microsoft Defender 防病毒发送标记为"安全"的所有文件，并提示您输入其余文件。 |
 | **2**  - **从不发送** | Microsoft Defender 防病毒服务不会提示，也不发送任何文件。 |
 | **3**  - **自动发送所有示例** | 该服务Microsoft Defender 防病毒发送所有文件，而不提示确认。 |
@@ -187,13 +186,13 @@ sc query Windefend
 
 ## <a name="configure-automatic-exclusions"></a>配置自动排除项
 
-为了帮助确保安全性和性能，根据在 Windows Server 2016 或 Windows Server 2022 上使用 Microsoft Defender 防病毒 时安装的角色和功能自动添加某些排除项。
+为了帮助确保安全性和性能，根据在 Windows Server 2016 或 Windows Server 2022 上使用 Microsoft Defender 防病毒 时安装的角色和功能，会自动添加某些排除项。
 
 请参阅[Configure exclusions in Microsoft Defender 防病毒 on Windows Server。](configure-server-exclusions-microsoft-defender-antivirus.md)
 
 ## <a name="passive-mode-and-windows-server"></a>被动模式和Windows服务器
 
-如果要将非 Microsoft 防病毒产品用作 Windows Server 上的主要防病毒解决方案，则必须Microsoft Defender 防病毒被动模式或禁用模式。
+如果使用非 Microsoft 防病毒产品作为 Windows Server 上的主要防病毒解决方案，则必须Microsoft Defender 防病毒被动模式或禁用模式。
 
 有关详细信息，请参阅 Install [Microsoft Defender 防病毒 on Windows Server。](microsoft-defender-antivirus-on-windows-server.md#install-microsoft-defender-antivirus-on-windows-server)
 
@@ -212,9 +211,9 @@ sc query Windefend
 
 2. 当您进入向导的 **"功能**"步骤时，请清除"Windows Defender"选项。 
 
-    如果在 **"Windows Defender** 功能"部分下自行清除 **Windows Defender，** 系统将提示您删除"功能"的界面 **Windows Defender。**
+    如果在 **"Windows Defender** 功能"部分下自行清除 **Windows Defender，** 系统将提示您删除"功能"的界面 **选项 GUI** Windows Defender。
 
-    Microsoft Defender 防病毒用户界面，用户界面仍将正常运行，但如果您禁用核心用户界面功能，Windows Defender **启用。**
+    Microsoft Defender 防病毒用户界面，用户界面仍将正常运行，但如果您禁用核心用户界面功能 **，Windows Defender** 启用。
 
 ### <a name="turn-off-the-microsoft-defender-antivirus-user-interface-using-powershell"></a>使用 PowerShell Microsoft Defender 防病毒用户界面
 
@@ -226,14 +225,14 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 ### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>是使用 Windows Server 2012 R2 还是 Windows Server 2016？
 
-现在，可以在 Microsoft Defender 防病毒 R2 和 Windows Server 2016 上的被动Windows Server 2012运行Windows Server 2016。 有关详细信息，请参阅安装 [Microsoft Defender for Endpoint 的选项](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint)。
+现在，可以在 Microsoft Defender 防病毒 R2 Windows Server 2012被动模式下运行Windows Server 2016。 有关详细信息，请参阅安装 [Microsoft Defender for Endpoint 的选项](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint)。
 
 <br/><br/>
 
 | Procedure | 说明 |
 |---|---|
-| 禁用Microsoft Defender 防病毒组策略 | 在本地组策略编辑器中，导航到"管理  >  **模板Windows组件** Endpoint Protection  >    >  **禁用Endpoint Protection"，** 然后选择"启用确定  >  **"。** |
-| 禁用Microsoft Defender 防病毒注册表项的注册表项 | 若要使用 [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) 注册表项，请导航到 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` ，并设置或创建名为 的 DWORD 项 `DisableAntiSpyware` 。 将注册表项 (设置注册表项的值设置为 `1` *true*) 。 |
+| 禁用Microsoft Defender 防病毒组策略 | 在本地组策略编辑器中，导航到"管理模板Windows  >  **组件** Endpoint Protection  >    >  **禁用Endpoint Protection"，** 然后选择"启用确定  >  **"。** |
+| 禁用Microsoft Defender 防病毒注册表项的注册表项 | 若要使用 [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) 注册表项，请导航到 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` ，并设置或创建名为 的 DWORD 项 `DisableAntiSpyware` 。 将注册表项 `1` (，这将注册表项的值设置为 *true*) 。 |
 | 使用 PowerShell Microsoft Defender 防病毒应用程序 | 使用以下 PowerShell cmdlet： `Set-MpPreference -DisableRealtimeMonitoring $true` |
 | 使用 PowerShell Microsoft Defender 防病毒卸载应用程序 | 使用以下 PowerShell cmdlet： `Uninstall-WindowsFeature -Name Windows-Defender` |
 

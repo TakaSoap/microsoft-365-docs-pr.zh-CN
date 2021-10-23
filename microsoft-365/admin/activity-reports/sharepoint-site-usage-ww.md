@@ -21,22 +21,18 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: 获取SharePoint使用率报告，了解用户存储在 SharePoint 网站中的文件数、当前使用的文件数以及使用的总存储量。
-ms.openlocfilehash: 3b84a31b787e3ccf855e26befcf570e364a9e148
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 获取SharePoint使用率报告，了解用户存储在SharePoint中的文件数、当前使用的文件数以及使用的总存储量。
+ms.openlocfilehash: 1adf1175569b1d798b238d4d55037a6461c34558
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162034"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553024"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365管理中心中的报告 - SharePoint网站使用情况
 
-作为Microsoft 365管理员，"报表 **"仪表板将显示** 组织中各种产品的活动概述。 使用该仪表板，能够更深入细致地了解特定于每个产品的活动。 例如，您可以获取从 SharePoint 获取的值的高级别视图，其中包括用户存储在 SharePoint 网站中的文件总数、当前使用的文件数以及所有这些网站中使用的存储。 然后，你可以向下钻取 SharePoint 网站使用情况报告，了解所有网站的趋势和每个网站级别的详细信息。 
-  
-> [!NOTE]
-> 您必须是 Microsoft 365 中的全局管理员、全局读取者或报告读取者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。
-Microsoft 365高租户和 DoD 租户GCC管理中心中的报告。
- 
+作为Microsoft 365管理员，"报表"仪表板将显示组织中各种产品的活动概述。 使用该仪表板，能够更深入细致地了解特定于每个产品的活动。 例如，您可以获取从 SharePoint 获取的值的高级别视图，包括用户在 SharePoint 网站中存储的文件总数、当前使用的文件数以及所有这些网站中使用的存储。 然后，你可以向下钻取 SharePoint 网站使用情况报告，了解所有网站的趋势和每个网站级别的详细信息。 
+
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>如何访问 SharePoint 网站使用情况报表
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。 
@@ -60,7 +56,7 @@ Microsoft 365高租户和 DoD 租户GCC管理中心中的报告。
   
 ## <a name="interpret-the-sharepoint-site-usage-report"></a>解释SharePoint使用率报告
 
-您可以通过选择"网站使用率"选项卡SharePoint网站 **使用率报告。**
+You can view the site usage in the SharePoint by choosing the **Site usage** tab.
 
 :::image type="content" alt-text="Microsoft 365报告 - Microsoft SharePoint网站使用率报告。" source="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png" lightbox="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png":::
 
@@ -88,7 +84,7 @@ Microsoft 365高租户和 DoD 租户GCC管理中心中的报告。
 |页面视图  |在网站中查看页面次数。  |
 |访问的页面  |访问网站上的唯一页面数。  |
 |匿名链接计数  |网站上使用"具有链接的任何人"共享文档或文件夹次数。  |
-|公司链接计数  |使用网站上"组织中的人员及链接"共享文档或文件夹次数。  |
+|公司链接计数  |网站上使用"组织中的人员及链接"共享文档或文件夹次数。  |
 |来宾计数的安全链接  |使用网站上"特定人员"共享文档或文件夹次数。  |
 |成员计数的安全链接  |使用网站上"特定人员"共享文档或文件夹次数。  |
 |根网站模板  |用于创建网站的模板。  <br/> 注意：如果要按不同的网站类型筛选数据，请导出数据并使用"根 Web 模板"列。 |

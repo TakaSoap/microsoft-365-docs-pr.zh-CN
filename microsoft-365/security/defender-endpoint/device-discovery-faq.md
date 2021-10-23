@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7af22cf31c8ad8cad4640d99737bc359e0ab6d2c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9b1bf2d20bb9f2084abadbc164bb668c3ebf174f
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192903"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555988"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>设备发现常见问题
 
@@ -42,17 +42,20 @@ ms.locfileid: "60192903"
 ## <a name="what-is-basic-discovery-mode"></a>什么是基本发现模式？
 此模式允许每个 Microsoft Defender for Endpoint 载入设备收集网络数据并发现相邻设备。 已载入的终结点被动收集网络中事件并从中提取设备信息。 不会启动任何网络流量。 载入的终结点只需从已载入设备看到的每一个网络流量中提取数据。 此数据用于列出网络中非托管设备。
 
+
 ## <a name="can-i-disable-basic-discovery"></a>能否禁用基本发现？
 可以选择通过"高级功能"页关闭 [设备](advanced-features.md) 发现。 但是，你将丢失网络中非托管设备的可见性。 请注意，SenseNDR.exe设备仍将在已载入的设备上运行，而不管发现已关闭。 
 
 ## <a name="what-is-standard-discovery-mode"></a>什么是标准发现模式？
- 在此模式下，载入到 Microsoft Defender for Endpoint 的终结点可主动探测网络中观察到的设备，以丰富收集的数据 (网络流量可以忽略不计) 。 强烈建议使用此模式生成可靠且一致的设备清单。 如果选择禁用此模式，并选择"基本发现模式"，可能只会获得网络中非托管终结点的有限可见性。
+ 在此模式下，载入到 Microsoft Defender for Endpoint 的终结点可以主动探测网络中观察到的设备，以丰富收集的数据 (网络流量可以忽略不计) 。 只有基本发现模式观察到的设备才能在标准模式下进行主动探测。 强烈建议使用此模式生成可靠且一致的设备清单。 如果选择禁用此模式，并选择"基本发现模式"，可能只会获得网络中非托管终结点的有限可见性。
+
+ 除了使用被动方法提供的设备之外，标准模式还利用网络中使用多播查询的常见发现协议来查找更多设备。
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>我能否控制哪些设备执行标准发现？
- 你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (当前 Windows 10 设备仅) 或者通过指定设备的设备标记选择一部分或部分设备。 在这种情况下，所有其他设备将配置为仅运行基本发现。 配置在设备发现设置页中提供。
+ 你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (Windows 10设备仅) ，或者通过指定设备的设备标记来选择设备的子集。 在这种情况下，所有其他设备将配置为仅运行基本发现。 配置在设备发现设置页中提供。
 
 ## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>能否从设备清单列表中排除非托管设备？
-是，你可以应用筛选器，从设备清单列表中排除非托管设备。 您还可以使用 API 查询上的载入状态列筛选出非托管设备。 
+可以，你可以应用筛选器以从设备清单列表中排除非托管设备。 您还可以使用 API 查询上的载入状态列筛选出非托管设备。 
 
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>哪些载入的设备可以执行发现？
@@ -62,19 +65,22 @@ ms.locfileid: "60192903"
  发现引擎区分在企业网络中接收的网络事件与企业网络外部的网络事件。 通过在所有租户的客户端之间关联网络标识符，可以区分从专用网络和企业网络接收的事件。 例如，如果组织中的大多数设备报告它们连接到了相同的网络名称，并且具有相同的默认网关和 DHCP 服务器地址，则假定此网络可能是企业网络。 专用网络设备不会在清单中列出，并且不会主动探测器。
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>要捕获和分析哪些协议？
- 默认情况下，在 Windows 10 版本 1809 或更高版本上运行的所有已载入设备将捕获和分析以下协议：ARP、CDP、DHCP、DHCPv6、IP (标头) 、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (SYN 标头) 、UDP (标头) 、WSD
+ 默认情况下， 在 Windows 10 版本 1809 或更高版本上运行的所有已载入设备正在捕获和分析以下协议：ARP、CDP、DHCP、DHCPv6、IP (标头) 、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (SYN 标头) 、UDP (标头) 、WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>在标准发现中，使用哪些协议进行主动探测？
  当设备配置为运行标准发现时， 使用下列协议对公开的服务进行探测：ARP、FTP、HTTP、HTTPS、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SNMP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL、RPC、mDNS、DHCP、AFP、CrestonCIP、IphoneSync、WinRM、VNC、SLP
 
 ## <a name="how-can-i-exclude-targets-from-being-probed-with-standard-discovery"></a>如何排除使用标准发现对目标进行探测？
- 如果网络上有些设备不应主动探测器，则还可以定义排除列表以防止它们被扫描。 配置在设备发现设置页中提供。
+ 如果网络上有些设备不应主动探测器，则还可以定义排除列表以防止它们被扫描。 配置在设备发现设置页中提供。 
+
+>[!NOTE]
+> 设备可能仍在网络中回复多播发现尝试。 将发现这些设备，但不进行主动探测。 
 
 ## <a name="can-i-exclude-devices-from-being-discovered"></a>能否排除发现的设备？
  由于设备发现使用被动方法发现网络中设备，因此可以发现与企业网络中已载入设备通信的任何设备，并列在清单中。 只能将设备排除在活动探测外。
 
 ## <a name="how-frequent-is-the-active-probing"></a>活动探测频率如何？
- 当观察到设备特征的变化时，将主动探测设备，以确保现有信息是最新的 (通常，设备在三周内探测器探测) 
+ 当观察到设备特征的变化时，将主动探测设备，以确保现有信息是最新的 (通常，设备在三周内探测到的设备不会超过一次) 
 
 ## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>我的安全工具引发了UnicastScanner.ps1启动的扫描活动或端口扫描活动的警报，我应该做什么？
  活动的探测脚本由 Microsoft 签名，并且是安全的。 你可以将以下路径添加到排除列表： `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps1`
@@ -99,7 +105,7 @@ ms.locfileid: "60192903"
 在考虑标准发现时，你可能想知道探测的含义，尤其是安全工具是否怀疑此类活动是恶意活动。 以下子部分将解释为什么在几乎所有情况下，组织无需担心启用标准发现。  
 
 ### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>探测分布于Windows设备上的所有设备
-与恶意活动（通常从少量损坏的设备扫描整个网络）相反，Microsoft Defender 终结点的标准发现探测从所有已载入的 Windows 设备启动，使活动变好且非异常。 从云中集中管理探测，以平衡网络中所有受支持的已载入设备之间的探测尝试。  
+与恶意活动（通常从少量受损设备扫描整个网络）相反，Microsoft Defender for Endpoint 的标准发现探测从所有已载入的 Windows 设备启动，使活动成为恶意和非异常活动。 从云中集中管理探测，以平衡网络中所有受支持的已载入设备之间的探测尝试。  
 
 ### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>活动探测产生的额外流量可以忽略不计
 通常，非托管设备在三周内进行探测的时间不会超过一次，并生成小于 50KB 的流量。 恶意活动通常包括高重复探测尝试，在某些情况下，会生成大量的网络流量，网络监视工具可能会发现这些数据异常。 

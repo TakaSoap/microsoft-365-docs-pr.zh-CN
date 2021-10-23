@@ -2,8 +2,6 @@
 title: 解决 Microsoft Defender for Endpoint 实时响应问题
 description: 解决在 Microsoft Defender for Endpoint 中使用实时响应时可能出现的问题
 keywords: 实时响应， 实时， 响应， 锁定， 文件
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 14caf0b2e0467d0f9e844a2dd996c6ccb4cfab30
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 08d3a70ad9456af8d26bf76cffbbc38f31d6b023
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191595"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555460"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>解决 Microsoft Defender for Endpoint 实时响应问题
 
@@ -63,7 +61,7 @@ ms.locfileid: "60191595"
 
 ## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>初始连接期间实时响应会话慢或延迟
 
-实时响应利用 Defender for Endpoint 传感器注册和 WNS 服务在 Windows。 如果实时响应的连接问题，请确认以下详细信息：
+实时响应利用 Defender for Endpoint 传感器注册和 Windows 中的 WNS 服务。 如果实时响应的连接问题，请确认以下详细信息：
 
 1. `notify.windows.com` 不会在你的环境中被阻止。 有关详细信息，请参阅配置 [设备代理和 Internet 连接设置](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
 2. 未 (Windows WpnService) 推送通知系统服务。

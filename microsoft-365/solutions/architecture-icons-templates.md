@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 9f91f152011d94cc1b12fa21e0ee10878859ec1c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b4fedde7404f8ef274cab90fa87fdd21c093d8eb
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191345"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556264"
 ---
 # <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365体系结构图标和模板
 
@@ -43,8 +43,14 @@ Microsoft 允许在体系结构图表、培训材料或文档中使用这些图�
 
 1. 示例搜索体系结构图SharePoint：
 
-    ![搜索体系结构示例SharePoint。](../media/configure-search-for-multi-geo-image1-1.png)
+    ![示例搜索体系结构SharePoint。](../media/configure-search-for-multi-geo-image1-1.png)
 
 2. Teams生命周期体系结构图：
 
-    ![Teams生命周期。](../media/TeamsRetentionLifecycle.png)
+    ![Teams保留生命周期。](../media/TeamsRetentionLifecycle.png)
+
+## <a name="more-icon-sets-from-microsoft"></a>来自 Microsoft 的更多图标集
+
+- [Azure 体系结构图标](/azure/architecture/icons/)
+- [Dynamics 365 体系结构图标](/dynamics365/get-started/icons)
+- [Microsoft Power Platform 图标](/power-platform/guidance/icons)

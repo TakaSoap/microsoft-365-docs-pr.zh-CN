@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建应用策略。
-ms.openlocfilehash: 25aa33fad47abd5faebb90b28b47564f32d6b008
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 61394e280478e7d240fd035c569e17b85e45a076
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204535"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554344"
 ---
 # <a name="create-app-policies"></a>创建应用策略
 
@@ -69,6 +69,8 @@ ms.locfileid: "60204535"
 |---|---|
 |特权过多的应用|突出显示授予的权限超过那些应用使用的权限的应用，以确定可能减少权限的机会。 <p> 默认情况下，如果 90 天内未使用，此策略将标记所有标记为“特权过多”的应用。 可以使用更多条件和操作自定义此时间段过滤器。|
 |具有高特权权限的新应用|突出显示所有具有高特权权限的新应用，以确定可能需要进一步调查的潜在高占用空间应用。 <p> 默认情况下，此策略将标记所有在过去 7 天内注册的、具有高范围权限的应用。|
+ |具有非图形权限的新应用|突出显示所有具有非 Graph API 权限的新应用，以识别和查看可能未获取最新安全更新或将来可能不受支持的 API。
+ <p> 默认情况下，此策略将标记所有在过去 7 天内注册的、具有非 Graph 权限的应用。|
 |||
 
 ### <a name="m365-certification"></a>M365 认证
@@ -130,6 +132,7 @@ ms.locfileid: "60204535"
 |委托的权限|从列表中选择一个或多个 API 权限|[Microsoft Graph 权限参考](/graph/permissions-reference)|
 |高权限|是或否|这是基于 MCAS 使用的相同逻辑的内部指定。|
 |特权过多的应用|是或否|授予的权限超过那些应用使用的权限的应用。|
+|非图形 API 权限|是或否|具有非图形 API 权限的应用。|
 |应用数据访问|每小时数据访问量超过 X GB||
 |应用数据访问趋势|过去 7 天内数据使用量增加 X%||
 |应用 API 访问|每小时 API 调用数超过 X||

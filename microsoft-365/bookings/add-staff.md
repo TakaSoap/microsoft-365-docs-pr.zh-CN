@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: 使用此页面创建员工列表并管理员工详细信息，例如姓名、电话号码和电子邮件地址。
-ms.openlocfilehash: ea9025edd20289aa404471f6c1d245e7bf5c7d4e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b76b3e647af6f43f1c8ad7364fe24c895dc86b45
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202149"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553972"
 ---
 # <a name="add-staff-to-bookings"></a>向 Bookings 添加员工
 
@@ -28,6 +28,9 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
 ## <a name="steps"></a>步骤
+
+> [!NOTE]
+> 这些步骤在全新 Bookings 体验中尚不可用。
 
 1. 转到" [管理人员"页面，](https://outlook.office.com/bookings/staff) 然后选择" **添加员工"**
 
@@ -51,7 +54,7 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
 
     :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="来自 Bookings 的通知电子邮件。":::
 
-7. 如果希望 **员工日历中的Office 365/** 忙信息通过 Bookings 影响预订服务的可用性，请选择"日历上的事件会影响可用性"。
+7. 如果希望 **Office 365员工日历中的忙**/闲信息通过 Bookings 影响预订服务的可用性，请选择"日历上的事件影响可用性"。
 
     例如，如果员工有安排在星期三下午 3 点召开团队会议或个人约会，则 Bookings 将显示该员工无法在这一时间段预订。 该时间将在 Bookings 日历视图中显示为忙碌或暂定，如以下示例所示。
 
@@ -69,7 +72,7 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
 
 ## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>使 Bookings 用户成为超级用户，而不将用户添加为 Bookings 中的 Staff
 
-你可能想要在 Bookings 中将人员添加到员工列表中，而不向客户或客户提供。 一旦使他们成为超级用户，他们将成为预订邮箱的管理员。 作为预订邮箱管理员的定义是拥有对预订邮箱的完全访问权限和发送权限。
+你可能想要在 Bookings 中将人员添加到员工列表中，而不向客户或客户提供此人。 一旦使他们成为超级用户，他们将成为预订邮箱的管理员。 作为预订邮箱管理员的定义是拥有对预订邮箱的完全访问权限和发送权限。
 
 > [!NOTE]
 > 这些步骤仅在所添加的用户尚未在 Bookings 中 **分配查看者** 角色时运行。

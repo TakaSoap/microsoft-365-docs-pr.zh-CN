@@ -2,8 +2,6 @@
 title: 提供有关 Microsoft Defender for Endpoint Client Analyzer 工具的反馈
 description: 提供有关 Microsoft Defender for Endpoint 客户端分析器工具的反馈
 keywords: 传感器， 传感器运行状况， 错误配置， 非活动， 无传感器数据， 传感器数据， 通信受损， 通信
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d0638b6d76c4d2675c98dca1bd28e3b9f26a32fc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 957bf2479a4c9d49532b072a3c18d73b9b5e6966
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170516"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554977"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>提供有关 Microsoft Defender for Endpoint 客户端分析器工具的反馈
 

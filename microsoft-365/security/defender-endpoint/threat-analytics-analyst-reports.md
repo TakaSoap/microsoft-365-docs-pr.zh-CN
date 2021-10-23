@@ -3,8 +3,6 @@ title: 了解威胁分析中的分析员报告部分。
 ms.reviewer: ''
 description: 威胁分析报告的报告部分如何提供有关威胁、缓解、检测、高级搜寻查询等的信息。
 keywords: 分析员报告， 威胁分析， 检测， 高级搜寻查询， 缓解，
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 49a0b34fb278fbb517bcfecc9d9e524d669029e3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9f1744735008c201795a43344e7fb81c65cf2431
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195181"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554284"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>威胁分析中的分析员报告
 
@@ -53,7 +51,7 @@ _威胁分析报告的分析员报告部分_
 |执行摘要|威胁概述，包括首次看到威胁时、其动机、值得注意的事件、主要目标以及不同的工具和技术。 可以使用此信息进一步评估如何在行业、地理位置和网络上下文中确定威胁的优先级。|
 |分析|有关威胁的技术信息，包括攻击的详细信息以及攻击者如何利用新技术或攻击面|
 |MITRE ATT&观察到的 CK 技术|观察技术如何映射到 [MITRE ATT&CK 攻击框架](https://attack.mitre.org/)|
-|[缓解](#apply-additional-mitigations)|推荐，可以停止或帮助降低威胁的影响。 本部分还包括未作为威胁分析报告的一部分动态跟踪的缓解。|
+|[缓解](#apply-additional-mitigations)|推荐可以停止或帮助降低威胁的影响。 本部分还包括未作为威胁分析报告的一部分动态跟踪的缓解。|
 |[检测详细信息](#understand-how-each-threat-can-be-detected)|Microsoft 安全解决方案提供的特定和通用检测，可显示与威胁关联的活动或组件。|
 |[高级搜寻](#find-subtle-threat-artifacts-using-advanced-hunting)|[用于主动识别](advanced-hunting-overview.md) 可能的威胁活动的高级搜寻查询。 大多数查询都用于补充检测，尤其是用于找到无法动态评估为恶意的潜在恶意组件或行为。|
 |参考|Microsoft 和分析师在报告创建期间引用的第三方出版物。 威胁分析内容基于 Microsoft 研究人员验证的数据。 公开提供的、第三方源的信息会明确标识。|
@@ -86,7 +84,7 @@ _威胁分析报告的分析员报告部分_
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>终结点检测和响应 (EDR) 警报
 
-EDR已载入 Microsoft Defender [for Endpoint](onboard-configure.md)的设备将引发警报。 这些警报通常依赖于 Microsoft Defender for Endpoint 传感器收集的安全信号以及其他终结点功能 (例如防病毒、网络保护、防篡改) 用作强大的信号源。
+EDR到 Microsoft Defender for [Endpoint](onboard-configure.md)的设备将引发警报。 这些警报通常依赖于 Microsoft Defender for Endpoint 传感器收集的安全信号以及其他终结点功能 (例如用作强大信号源的防病毒、网络保护、防篡改) 等。
 
 与防病毒检测列表一样，某些EDR警报旨在一般标记可能未与跟踪威胁关联的可疑行为。 在这种情况下，报告将清楚地将警报标识为"通用"，并且它并不影响报告中的任何图表。
 

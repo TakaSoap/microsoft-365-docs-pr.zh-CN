@@ -2,8 +2,6 @@
 title: 了解客户端分析器 HTML 报告
 description: 了解如何分析 Microsoft Defender for Endpoint Client Analyzer HTML 报告
 keywords: client analyzer report， html report， client analyzer
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 735b2a0331e399fa7bf3444ff8e5326898c038b4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2c866f6b7cd5c357c7b11db22ef5ecc10a0818ed
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59170515"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556252"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>了解客户端分析器 HTML 报告
 
@@ -50,9 +48,9 @@ ms.locfileid: "59170515"
 
 ![客户端分析器详细结果的图像。](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
--   On **Check Results Summary** you will have an aggregated count for error， warning， or informational events detected by the analyzer.
+-   On **Check Results Summary** you'll have an aggregated count for error， warning， or informational events detected by the analyzer.
 
--   On the **Detailed Results** you will see a list (sorted by severity) with the results and the guidance based on the observations made by the analyzer.
+-   On **Detailed Results** you'll see a list (sorted by severity) with the results and the guidance based on the observations made by the analyzer.
 
 ## <a name="open-a-support-ticket-to-microsoft-and-include-the-analyzer-results"></a>向 Microsoft 打开支持票证并包括分析工具结果
 

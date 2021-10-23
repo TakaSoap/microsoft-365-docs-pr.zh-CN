@@ -1,5 +1,5 @@
 ---
-title: '中国 (付款) '
+title: 中国的付款信息
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,18 +13,18 @@ ms.custom: commerce_billing_payinfo
 ms.localizationpriority: medium
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d48398e3d6e91f257b3e813bc1caee5feec8be5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 07d6bdec585625da6e3399a1235178af0edc24bc
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153602"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554464"
 ---
-# <a name="payment-information-for-china-prc"></a>中国 (付款) 
+# <a name="payment-information-for-china"></a>中国的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-Please pay in CNY and reference your company name and invoice number (s) on the payment invoice.
+Please pay in CNY and reference your company name and invoice number (s) on the payment payment payment.
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
@@ -32,6 +32,6 @@ Please pay in CNY and reference your company name and invoice number (s) on the 
 **分支：** 香港特别行政区  
 **SWIFT 代码：** 进行分列  
 **CNAP 代码：989584000600**  
-**帐户编号：1199527009**  
+**帐号：1199527009**  
 **帐户名称：** MICROSOFT REGIONAL SALES CORP  
 **备注：通过 HK 中的"通过，通过"RTGS"频道付款。**

@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9576470b029ac97660868341c46ecda82662b36
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 95f377992c745045667a016fcf7dae1b391f2323
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152011"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554068"
 ---
 # <a name="create-and-manage-device-groups"></a>创建和管理设备组
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **适用于：**
+
 - Azure Active Directory
 - Office 365
 
@@ -34,14 +34,14 @@ ms.locfileid: "60152011"
 
 在企业方案中，通常会为安全运营团队分配一组设备。 这些设备根据一组属性（如域、计算机名称或指定标记）分组在一起。
 
-在 Microsoft Defender for Endpoint 中，你可以创建设备组并使用它们：
+在 Microsoft Defender for Endpoint 中，你可以创建设备组，并使用它们：
 
-- 将相关警报和数据的访问权限限制为具有已分配[RBAC](rbac.md)角色的特定 Azure AD 用户组
+- 将相关警报和数据的访问权限限制为Azure AD [RBAC](rbac.md)角色的特定组
 - 为不同的设备集配置不同的自动修正设置
 - 分配特定修正级别以在自动调查期间应用
 - 在调查中，使用组筛选器 **将"设备** "列表筛选到特定 **设备** 组。
 
-可以在基于角色的访问 (RBAC) 上下文中创建设备组，以控制哪些人可以通过将设备组 () 分配给用户组来控制哪些人可以采取特定操作或查看信息。 有关详细信息，请参阅使用基于角色 [的访问控制管理门户访问](rbac.md)。
+可以在基于角色的访问 (RBAC) 上下文中创建设备组，以控制哪些人可以通过将设备组 () 分配给用户组来查看信息。 有关详细信息，请参阅使用基于角色 [的访问控制管理门户访问](rbac.md)。
 
 > [!TIP]
 > 有关 RBAC 应用程序的全面了解，请阅读 [：SOC 是否使用 RBAC 运行平面](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Is-your-SOC-running-flat-with-limited-RBAC/ba-p/320015)。
@@ -50,15 +50,15 @@ ms.locfileid: "60152011"
 
 - 设置该组的自动修正级别。 有关修正级别详细信息，请参阅使用 [自动调查调查和修正威胁](automated-investigations.md)。
 - 根据设备名称、域、标记和操作系统平台指定匹配规则，以确定哪些设备组属于该组。 如果设备还与其他组匹配，则只会将设备添加到排名最高的设备组中。
-- 选择应有权访问设备组的 Azure AD 用户组。
+- 选择Azure AD组的用户组。
 - 创建设备组后，相对于其他组对设备组进行排名。
 
 > [!NOTE]
-> 如果未向设备组分配任何 Azure AD 组，则所有用户均可访问该设备组。
+> 如果你未向设备组分配任何组，则Azure AD组。
 
 ## <a name="create-a-device-group"></a>创建设备组
 
-1. 在导航窗格中，选择 **"设置** \>  \> **终结点权限设备** \> **组"。**
+1. 在导航窗格中，**选择"设置** \>  \> **终结点权限设备** \> **组"。**
 
 2. 单击 **"添加设备组"。**
 
@@ -72,7 +72,7 @@ ms.locfileid: "60152011"
 5. 分配可以访问你创建的设备组的用户组。
 
     > [!NOTE]
-    > 只能向已分配给 RBAC 角色的 Azure AD 用户组授予访问权限。
+    > 只能向已Azure AD RBAC 角色的用户组授予访问权限。
 
 6. 单击“关闭”。 将应用配置更改。
 
@@ -83,9 +83,9 @@ ms.locfileid: "60152011"
 > [!WARNING]
 > 删除设备组可能会影响电子邮件通知规则。 如果根据电子邮件通知规则配置了设备组，将从该规则中删除该组。 如果设备组是配置了电子邮件通知的唯一组，该电子邮件通知规则将随设备组一起删除。
 
-默认情况下，具有门户访问权限的所有用户均可访问设备组。 可以通过将 Azure AD 用户组分配给设备组来更改默认行为。
+默认情况下，具有门户访问权限的所有用户均可访问设备组。 可以通过向设备组分配Azure AD用户组来更改默认行为。
 
-不匹配任何组的设备将添加到未分组设备 (默认) 组中。 无法更改或删除此组的排名。 但是，你可以更改此组的修正级别，并定义可以访问该组的 Azure AD 用户组。
+不匹配任何组的设备将添加到未分组设备 (默认) 组中。 无法更改或删除此组的排名。 但是，您可以更改此组的修正级别，并定义Azure AD访问该组的用户组的级别。
 
 > [!NOTE]
 > 将更改应用于设备组配置可能需要几分钟。
@@ -100,13 +100,12 @@ ms.locfileid: "60152011"
 
 > [!TIP]
 > 在同一条件类型的行之间使用"OR"运算符，这允许每个属性具有多个值。
->
 > 您最多可以添加 10 行 (每个) 类型的值 - 标记、设备名称、域。
 
-有关链接到设备组定义的信息，请参阅设备组 - Microsoft 365[安全](https://sip.security.microsoft.com/homepage)。
+有关链接到设备组定义的信息，请参阅设备[组 -](https://sip.security.microsoft.com/homepage)Microsoft 365安全。
 
 ## <a name="related-topics"></a>相关主题
 
 - [使用基于角色的访问控制管理门户访问](rbac.md)
 - [创建和管理设备标签](machine-tags.md)
-- [使用 Graph API 获取租户设备组列表](/graph/api/device-list-memberof)
+- [使用租户 API 获取租户设备Graph列表](/graph/api/device-list-memberof)

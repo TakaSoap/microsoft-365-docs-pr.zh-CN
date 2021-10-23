@@ -2,8 +2,6 @@
 title: 配置发送给 MSSP 的警报通知
 description: 配置发送给 MSSP 的警报通知
 keywords: 托管安全服务提供程序， mssp， 配置， 集成
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d30bc5150277dd54a4a38dce8ac515d6be7dfb21
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 01e6e6c09561ecfaec861473a9be4d7a5659106a
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208525"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553445"
 ---
 # <a name="configure-alert-notifications-that-are-sent-to-mssps"></a>配置发送给 MSSP 的警报通知
 
@@ -43,7 +41,7 @@ ms.locfileid: "60208525"
 必须选中以下复选框：
 
 - **包含组织** 名称 - 客户名称将添加到电子邮件通知中
-- **包含特定于租户的门户链接** - 警报链接 URL 将具有租户特定参数 (tid=target_tenant_id) ，以允许直接访问目标租户门户
+- **包含特定于租户的门户链接** - 警报链接 URL 将具有租户特定参数 (tid=target_tenant_id) 允许直接访问目标租户门户
 
 ## <a name="related-topics"></a>相关主题
 

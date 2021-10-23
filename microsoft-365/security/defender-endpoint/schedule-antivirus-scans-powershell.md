@@ -2,7 +2,6 @@
 title: 使用 PowerShell 安排防病毒扫描
 description: 使用 PowerShell 安排防病毒扫描
 keywords: 快速扫描， 完全扫描， 防病毒， 计划， PowerShell
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,18 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/09/2021
+ms.date: 10/18/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 18a949c4f08992d25ef42b69f885ae2febfb34a6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22a3d1459bab688b33834304e09013f88668389e
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149810"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555664"
 ---
 # <a name="schedule-antivirus-scans-using-powershell"></a>使用 PowerShell 安排防病毒扫描
 
@@ -30,7 +29,7 @@ ms.locfileid: "60149810"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-本文介绍如何使用 PowerShell cmdlet 配置计划扫描。 若要了解有关计划扫描和扫描类型有关详细信息，请参阅配置计划的快速或完整扫描[Microsoft Defender 防病毒扫描](schedule-antivirus-scans.md)。 
+本文介绍如何使用 PowerShell cmdlet 配置计划扫描。 若要了解有关计划扫描和扫描类型有关详细信息，请参阅配置计划的快速或完全Microsoft Defender 防病毒[扫描](schedule-antivirus-scans.md)。 
 
 ## <a name="use-powershell-cmdlets-to-schedule-scans"></a>使用 PowerShell cmdlet 计划扫描
 
@@ -78,6 +77,6 @@ Set-MpPreference -RemediationScheduleTime
 Set-MpPreference -ScanScheduleQuickScanTime
 ```
 
-若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一Microsoft Defender 防病毒，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender cmdlet。](/powershell/module/defender/)
+若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender cmdlet。](/powershell/module/defender/)
 
 
