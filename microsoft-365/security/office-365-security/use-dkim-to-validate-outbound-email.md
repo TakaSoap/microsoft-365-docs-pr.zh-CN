@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a3c08ad2492437ec5b489e8bc8915ef4a402ba9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1906d9bbb7e36c95ed74c7eea2b66d3afb70e5a3
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196305"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555520"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -393,7 +393,17 @@ Return-Path: <communication@bulkemailprovider.com>
 ## <a name="next-steps-after-you-set-up-dkim-for-microsoft-365"></a>后续步骤：为 Microsoft 365 设置 DKIM 后
 <a name="DKIMNextSteps"> </a>
 
-尽管 DKIM 旨在帮助防止欺骗，但 DKIM 与 SPF 和 DMARC 协同工作效果更佳。设置了 DKIM 后，如果你尚未设置 SPF，则应执行此操作。有关 SPF 的简要介绍以及快速配置 SPF 的信息，请参阅 [**在 Microsoft 365 中设置 SPF 以帮助防止欺骗**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。有关 Microsoft 365 如何使用 SPF 的更深入了解，或者有关故障排除或非标准部署（如混合部署）的信息，请首先阅读 [Microsoft 365 如何使用发件人策略框架 (SPF) 来防止欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)。然后请参阅 [**使用 DMARC 验证电子邮件**](use-dmarc-to-validate-email.md)。[反垃圾邮件标头](anti-spam-message-headers.md) 包括了 Microsoft 365 进行 DKIM 检查所使用的语法和标头字段。
+**尽管 DKIM 旨在帮助防止欺骗，但 DKIM 与 SPF 和 DMARC 协同工作效果更佳。**
+
+设置了 DKIM 后，如果你尚未设置 SPF，则应执行此操作。有关 SPF 的简要介绍以及快速配置 SPF 的信息，请参阅 [**在 Microsoft 365 中设置 SPF 以帮助防止欺骗**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。有关 Microsoft 365 如何使用 SPF 的更深入了解，或者有关故障排除或非标准部署（如混合部署）的信息，请首先阅读 [Microsoft 365 如何使用发件人策略框架 (SPF) 来防止欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)。 
+
+接下来，请参阅 [**使用 DMARC 验证电子邮件**](use-dmarc-to-validate-email.md)。 [反垃圾邮件邮件头](anti-spam-message-headers.md)包括 Microsoft 365 用来执行 DKIM 检查的语法和头字段。
+
+**此测试将验证** DKIM 签名配置是否正确配置，以及是否发布了正确的 DNS 条目。
+
+<div class="nextstepaction">
+<p><a href="https://aka.ms/diagdkim" data-linktype="external">运行测试：DKIM</a></p>
+</div>
 
 ## <a name="more-information"></a>更多信息
 

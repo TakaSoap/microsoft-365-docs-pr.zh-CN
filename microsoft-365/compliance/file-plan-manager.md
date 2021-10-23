@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划为保留标签提供了高级管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 6c77268133440e4f067d42d66f4c99f76034e735
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 47f9c3646968dc54aaa9b2d78182585560a8ba1f
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201141"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555077"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用文件计划管理保留标签
 
@@ -50,11 +50,11 @@ ms.locfileid: "60201141"
 
 - 仅拥有查看权限的保留管理者
 
-在 Microsoft 365 合规性中心中，转到“**解决方案**” > “**记录管理**” > “**文件计划**”。 
+在 Microsoft 365 合规性中心中，转到“**解决方案**” > “**记录管理**” > “**文件计划**”。
+
+![文件计划页面](../media/compliance-file-plan.png). 
 
 如果“**记录管理**”未显示在导航窗格中，请首先向下滚动并选择“**全部显示**”。
-
-![文件计划页面。](../media/compliance-file-plan.png)
 
 ## <a name="navigating-your-file-plan"></a>浏览文件计划
 
@@ -129,65 +129,59 @@ ms.locfileid: "60201141"
 
 在文件计划中，可以使用具有特定格式的 .csv 文件批量导入新的保留标签： 
 
-1. 在“**文件计划**”页面上，单击“**导入**”，以使用“**填写并导入文件计划**” 页面：
+1. 在“**文件计划**”页面上，单击“**导入**”：![选择“导入文件计划”](../media/compliance-file-plan-import-labels.png)
 
-   ![文件计划导入选项。](../media/compliance-file-plan-import-labels.png)
+2. 在“**填写并导入文件计划**”窗格中，选择“**下载空白模板**”：
 
-   ![空白文件计划模板下载选项。](../media/file-plan-blank-template-option.png)
+   ![空白文件计划模板下载选项](../media/file-plan-blank-template-option.png)
 
-2. 按照说明下载空白模板:
+3. 下载模板后，为每个标签添加一行，然后保存文件。 有关描述每个性能的属性和有效值的信息，请参阅[下一节](#information-about-the-label-properties-for-import)。 
 
-   ![在 Excel 中打开空白文件计划模板。](../media/file-plan-blank-template.png)
-
-3. 使用以下信息填写模板，这些信息描述了每个属性的属性和有效值。对于导入，一些值具有最大长度:
+4. 选择“**上传文件**”，以上传填写的模板。
     
-    - **LabelName**：最大长度为 64 个字符
-    - **Comment** 和 **Notes**：最大程度为 1024 个字符
-    - 所有其他值：长度不受限制
-    <br/>
-    
-   |属性|类型|必需|有效值|
-   |:-----|:-----|:-----|:-----|
-   |LabelName|字符串|是|此属性指定保留标签的名称，且必须为租户中的唯一属性。|
-   |评论|字符串|否|使用此属性可以添加有关管理员的保留标签的说明。 此说明仅对在合规中心管理保留标签的管理员显示。|
-   |注释|字符串|否|使用此属性可以添加有关用户的保留标签的说明。 当用户将鼠标悬停在 Outlook、SharePoint 和 OneDrive 等应用的标签上时，将显示此说明。 如果将此属性保留为空白，则会显示默认说明，用于说明标签的保留设置。 |
-   |IsRecordLabel|字符串|否，除非 **法规** 为 **TRUE**|此属性指定标签是否将内容标记为记录。有效值包含:</br>**TRUE**: 标签将该项目标记为记录和结果，因此此项目无法删除。 </br>**FALSE**: 标签不会将内容标记为记录。 此值为默认值。 </br> </br> 组依赖项: 在指定此属性时，还必须指定 RetentionAction、RetentionDuration 以及 RetentionType。|
-   |RetentionAction|字符串|否，除非指定了 **RetentionDuration**、**RetentionType** 或 **ReviewerEmail**|此属性指定在 RetentionDuration 属性指定的值(如果指定)过期后要执行的操作。有效值包含:</br>**Delete**：早于 RetentionDuration 属性指定的值的项目将被删除。</br>**Keep**：在 RetentionDuration 属性指定的保留期内保留项目，然后在保留期到期时不执行任何操作。 </br>**KeepAndDelete**：在 RetentionDuration 属性指定的保留期内保留项目，然后在保留期到期时删除这些项目。 </br> </br> 组依赖项: 指定此属性时，还必须指定 RetentionDuration 和 RetentionType。 |
-   |RetentionDuration|String|否，除非指定了 **RetentionAction** 或 **RetentionType**|此属性指定保留内容的天数。有效值包含:</br>**无限制**: 项目将无限期保留。 </br>**_n_*: 正整数(以天为单位)；例如，**365**。 支持的最大数为 24,855，即 68 年。 如果需要的时间超过此最大值，请改用“无限制”。</br> </br> 组依赖项: 指定此属性时，还必须指定 RetentionAction 和 RetentionType。
-   |RetentionType|字符串|否，除非指定了 **RetentionAction** 或 **RetentionDuration**|此属性指定是从内容创建日期、事件日期、标记日期还是从上次修改日期计算保留持续时间(如果指定)。有效值包含:</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** </br> </br> 组依赖项: 指定此属性时，还必须指定 RetentionAction 和 RetentionDuraction。|
-   |ReviewerEmail|SmtpAddress|否|指定此属性后，保留持续时间到期时将触发处置评审。 此属性指定 **KeepAndDelete** 保留操作的审阅者的电子邮件地址。 </br> </br> 可以在租户中包含单个用户、分发组或安全组的电子邮件地址。 指定多个电子邮件地址，用分号分隔。 </br> </br> 组依赖项: 指定此属性时，还必须指定 **RetentionAction** (必须为 **KeepAndDelete**)、 **RetentionDuration** 以及 **RetentionType**。|
-   |ReferenceId|字符串|否|该属性指定在 **参考 ID** 文件计划描述符中显示的值，可将其用作组织的唯一值。| 
-   |Departmentname|字符串|否|该属性指定在 **功能/部门** 文件计划描述符中显示的值。|
-   |类别|字符串|否|该属性指定在 **类别** 文件计划描述符中显示的值。|
-   |SubCategory|字符串|否|该属性指定在 **子类别** 文件计划描述符中显示的值。|
-   |AuthorityType|字符串|否|该属性指定在 **权限类型** 文件计划描述符中显示的值。|
-   |CitationName|字符串|否|该属性指定在 **预配/引文** 文件计划描述符中显示的引文名称；例如“2002 年萨班斯-奥克斯利法案”。 |
-   |CitationUrl|字符串|否|该属性指定在 **预配/引文** 文件计划描述符中显示的 URL。|
-   |CitationJurisdiction|字符串|否|此属性指定在 **规定/引文** 文件计划描述符中显示的管辖权地或机构；例如“美国证券交易委员会 (SEC)”。|
-   |Regulatory|字符串|否|此属性指定标签是否将内容标记为法规记录，该记录比记录 [更具限制性](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。 要使用此标签配置，必须将租户配置为 [显示将内容标记为法规记录的选项](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record)，否则导入验证将失败。 有效值包含: </br>**TRUE**: 标签将项目标记为法规记录。 还必须将 **IsRecordLabel** 属性设置为 TRUE。</br>**FALSE**: 标签不将内容标记为法规记录。这是默认值。|
-   |EventType|String|否，除非 **RetentionType** 为 **EventAgeInDays**|此属性指定用于 [基于事件的保留](event-driven-retention.md) 的事件类型。 指定 **记录管理** > **事件** > **管理事件类型** 中显示的现有事件类型。 或使用 [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) cmdlet 查看可用的事件类型。 虽然存在一些内置事件类型，例如 **员工活动** 和 **产品寿命**，但你仍然可以创建自己的事件类型。 </br> </br> 如果你指定自己的事件类型，则事件类型必须出现在导入之前，因为作为导入流程的一部分名称需进行验证。|
-   |||
-
-   下面是包含有关保留标签的信息的模板示例。
-
-   ![填写了信息的文件计划模板。](../media/file-plan-filled-out-template.png)
-
-4. 在 **填写并导入文件计划** 页面中的第 3 步下，点击 **浏览文件** 以上传填写的模板，然后选择 **下一步**。
-
-   文件计划会上传文件并验证条目，显示导入统计信息。
-
-   ![文件计划导入统计信息。](../media/file-plan-import-statistics.png)
+   文件计划会上传文件并验证条目。
 
 5. 具体取决于验证结果:
     
-    - 如果验证失败: 备注行号和列名以在导入文件中进行更正。 选择 **关闭**，然后选择 **是** 进行确认。 在文件中更正错误并进行保存，再次选择 **导入** 选项，然后返回步骤 4。
+    - 如果验证失败: 备注行号和列名以在导入文件中进行更正。 在文件中更正错误并保存，然后重复步骤 4。
     
-    - 如果验证通过: 可以选择 **上线** 以使保留标签在租户中可用。 或选择页面中的“关闭”图标，然后选择“**是**”以确认要关闭向导，此时保留标签在租户中不可用。
+    - 如果验证通过：可以看到 **已成功导入文件计划**，并且条目已成功转换为保留标签。 选择“**完成**，关闭窗格并自动刷新 **文件计划** 页以显示新标签。
 
-将导入的标签添加到租户后，现在可以通过发布这些标签或自动应用它们，来使其可供用户使用。 可以从“**标签策略**”选项卡执行这两项操作，然后选择“**发布标签**”或“**自动应用标签**”。
+现在可以发布新的保留标签，或自动应用标签。 可以从“**标签策略**”选项卡执行这两项操作，然后选择“**发布标签**”或“**自动应用标签**”。
+
+### <a name="information-about-the-label-properties-for-import"></a>有关导入的标签属性的信息
+
+使用以下信息可有助于填写下载的模板，以导入新的保留标签。 对于导入，某些值具有最大长度：
+
+- **LabelName**：最大长度为 64 个字符
+- **Comment** 和 **Notes**：最大程度为 1024 个字符
+- 所有其他值：长度不受限制
+<br/>
+
+|属性|类型|必需|有效值|
+|:-----|:-----|:-----|:-----|
+|LabelName|字符串|是|此属性指定保留标签的名称，且必须为租户中的唯一属性。 支持导入的字符：a-z、A-Z、0-9、连字符 (-) 和空格字符。|
+|评论|字符串|否|使用此属性可以添加有关管理员的保留标签的说明。 此说明仅对在合规中心管理保留标签的管理员显示。|
+|注释|字符串|否|使用此属性可以添加有关用户的保留标签的说明。 当用户将鼠标悬停在 Outlook、SharePoint 和 OneDrive 等应用的标签上时，将显示此说明。 如果将此属性保留为空白，则会显示默认说明，用于说明标签的保留设置。 |
+|IsRecordLabel|字符串|否，除非 **法规** 为 **TRUE**|此属性指定标签是否将内容标记为记录。有效值包含:</br>**TRUE**: 标签将该项目标记为记录和结果，因此此项目无法删除。 </br>**FALSE**: 标签不将内容标记为记录。这是默认值。</br> </br> 组依赖项: 在指定此属性时，还必须指定 RetentionAction、RetentionDuration 以及 RetentionType。|
+|RetentionAction|字符串|否，除非指定了 **RetentionDuration**、**RetentionType** 或 **ReviewerEmail**|此属性指定在 RetentionDuration 属性指定的值(如果指定)过期后要执行的操作。有效值包含:</br>**Delete**：早于 RetentionDuration 属性指定的值的项目将被删除。</br>**Keep**：在 RetentionDuration 属性指定的保留期内保留项目，然后在保留期到期时不执行任何操作。 </br>**KeepAndDelete**：在 RetentionDuration 属性指定的保留期内保留项目，然后在保留期到期时删除这些项目。 </br> </br> 组依赖项: 指定此属性时，还必须指定 RetentionDuration 和 RetentionType。 |
+|RetentionDuration|String|否，除非指定了 **RetentionAction** 或 **RetentionType**|此属性指定保留内容的天数。有效值包含:</br>**无限制**: 项目将无限期保留。 </br>**_n_*: 正整数(以天为单位)；例如，**365**。 支持的最大数为 24,855，即 68 年。 如果需要的时间超过此最大值，请改用“无限制”。</br> </br> 组依赖项: 指定此属性时，还必须指定 RetentionAction 和 RetentionType。
+|RetentionType|字符串|否，除非指定了 **RetentionAction** 或 **RetentionDuration**|此属性指定是从内容创建日期、事件日期、标记日期还是从上次修改日期计算保留持续时间(如果指定)。有效值包含:</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** </br> </br> 组依赖项: 指定此属性时，还必须指定 RetentionAction 和 RetentionDuraction。|
+|ReviewerEmail|SmtpAddress|否|指定此属性后，保留持续时间到期时将触发处置评审。 此属性指定租户中用于 **KeepAndDelete** 保留操作审阅者的电子邮件地址。 </br> </br> 可以在租户中包含单个用户、分发组或安全组的电子邮件地址。 指定多个电子邮件地址，用分号分隔。 </br> </br> 组依赖项: 指定此属性时，还必须指定 **RetentionAction** (必须为 **KeepAndDelete**)、 **RetentionDuration** 以及 **RetentionType**。|
+|ReferenceId|字符串|否|该属性指定在 **参考 ID** 文件计划描述符中显示的值，可将其用作组织的唯一值。| 
+|Departmentname|字符串|否|该属性指定在 **功能/部门** 文件计划描述符中显示的值。|
+|类别|字符串|否|该属性指定在 **类别** 文件计划描述符中显示的值。|
+|SubCategory|字符串|否|该属性指定在 **子类别** 文件计划描述符中显示的值。|
+|AuthorityType|字符串|否|该属性指定在 **权限类型** 文件计划描述符中显示的值。|
+|CitationName|字符串|否|该属性指定在 **预配/引文** 文件计划描述符中显示的引文名称；例如“2002 年萨班斯-奥克斯利法案”。 |
+|CitationUrl|字符串|否|该属性指定在 **预配/引文** 文件计划描述符中显示的 URL。|
+|CitationJurisdiction|字符串|否|此属性指定在 **规定/引文** 文件计划描述符中显示的管辖权地或机构；例如“美国证券交易委员会 (SEC)”。|
+|Regulatory|字符串|否|此属性指定标签是否将内容标记为法规记录，该记录比记录 [更具限制性](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。 要使用此标签配置，必须将租户配置为 [显示将内容标记为法规记录的选项](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record)，否则导入验证将失败。 有效值包含: </br>**TRUE**: 标签将项目标记为法规记录。 还必须将 **IsRecordLabel** 属性设置为 TRUE。</br>**FALSE**: 标签不将内容标记为法规记录。这是默认值。|
+|EventType|String|否，除非 **RetentionType** 为 **EventAgeInDays**|此属性指定用于 [基于事件的保留](event-driven-retention.md) 的事件类型。 指定 **记录管理** > **事件** > **管理事件类型** 中显示的现有事件类型。 或使用 [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) cmdlet 查看可用的事件类型。 虽然存在一些内置事件类型，例如 **员工活动** 和 **产品寿命**，但你仍然可以创建自己的事件类型。 </br> </br> 如果你指定自己的事件类型，则事件类型必须出现在导入之前，因为作为导入流程的一部分名称需进行验证。|
+|||
 
 ## <a name="next-steps"></a>后续步骤
 
-若要详细了解如何创建和编辑保留标签及其策略，请参阅以下指南：
+有关创建、编辑和应用保留标签的信息，请参阅以下两种方案：
 - [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
 - [自动向内容应用保留标签](apply-retention-labels-automatically.md)

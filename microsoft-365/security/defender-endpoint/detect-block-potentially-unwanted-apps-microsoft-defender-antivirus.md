@@ -2,7 +2,6 @@
 title: 使用Microsoft Defender防病毒功能阻止可能有害的应用程序
 description: 启用可能会不需要的应用程序 （PUA） 防病毒软件，以阻止不需要的软件，如 adware。
 keywords: pua，启用，不需要的软件，不需要的应用，adware，浏览器工具栏，检测，阻止，Microsoft Defender 防病毒软件
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: detect
 ms.sitesec: library
@@ -15,14 +14,14 @@ ms.reviewer: mimilone, julih
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 06/02/2021
+ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3202ccd469cf27d188a48bcbd09224f573134344
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: de5b108c3e7a3fbd0831f4bb02385611a1c6ae3c
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166536"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555880"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>检测并阻止可能不需要的应用程序
 
@@ -42,7 +41,7 @@ ms.locfileid: "60166536"
 > [!TIP]
 > 有关更多示例和讨论我们用于标记应用程序以引起对安全功能特别关注的条件，请参阅 [Microsoft 如何识别恶意软件和可能不需要的应用程序](/windows/security/threat-protection/intelligence/criteria)。
 
-可能不需要的应用程序会增加网络受到实际恶意软件感染的风险，使恶意软件感染更加难以识别，或浪费 IT 资源清理它们。 Windows 10、Windows Server 2019、Windows Server 2022 和 Windows Server 2016 支持 PUA 保护。 在 Windows 10（版本 2004 和更高版本）中，Microsoft Defender 防病毒软件会默认为企业 (E5) 设备阻止 PUA 应用。
+可能不需要的应用程序会增加网络受到实际恶意软件感染的风险，使恶意软件感染更加难以识别，或浪费 IT 资源清理它们。 Windows 10、Windows 11、Windows Server 2019、Windows Server 2022 和 Windows Server 2016 支持 PUA 保护。 在 Windows 10（版本 2004 和更高版本）中，Microsoft Defender 防病毒软件会默认为企业 (E5) 设备阻止 PUA 应用。
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -74,7 +73,7 @@ ms.locfileid: "60166536"
 Microsoft Defender 防病毒软件中可能不需要的应用程序 (PUA) 保护功能可检测和阻止网络中终结点上的 PUA。
 
 > [!NOTE]
-> Windows 10、Windows Server 2019、Windows Server 2022 和 Windows Server 2016 中提供此功能。
+> Windows 10、Windows 11、Windows Server 2019、Windows Server 2022 和 Windows Server 2016 中提供此功能。
 
 Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下载、移动、运行或安装它们的任何尝试。 阻止的 PUA 文件随即移动到隔离区。 在终结点上检测到 PUA 文件时，Microsoft Defender 防病毒软件会以与其他威胁检测相同的格式向用户发送通知（[除非通知已禁用](configure-notifications-microsoft-defender-antivirus.md)）。 以通知的字体作为 `PUA:` 以指示其内容。
 

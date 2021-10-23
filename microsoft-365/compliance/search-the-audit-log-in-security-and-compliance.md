@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 87df624f35231a43cd8d9e2d34912d2bc48a5252
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 5840368c8d73bcafd486db9c3aa982fa03896b5e
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478957"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555028"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -544,6 +544,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已更新列表项|ListItemUpdated|用户通过修改一个或多个属性更新了 SharePoint 列表项。|
 |已更新网站列|SiteColumnUpdated|用户通过修改一个或多个属性更新了 SharePoint 网站列。|
 |已更新网站内容类型|SiteContentTypeUpdated|用户通过修改一个或多个属性更新了网站内容类型。|
+|已查看列表项|ListItemViewed|用户已删除 SharePoint 列表项。|
 ||||
 
 ### <a name="sharing-and-access-request-activities"></a>共享和访问请求活动
@@ -589,10 +590,10 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |:-----|:-----|:-----|
 |已允许计算机同步文件|ManagedSyncClientAllowed|用户成功建立与网站的同步关系。同步关系建立成功是因为用户的计算机是已添加到可访问组织文档库的域列表（称为 *安全收件人列表*）的域的成员。 <br/><br/> 有关此功能的详细信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](/powershell/module/sharepoint-online/)。|
 |已阻止计算机同步文件|UnmanagedSyncClientBlocked|用户尝试从某计算机与网站建立同步关系，该计算机不是组织域的成员，或是尚未添加到可访问组织文档库的域列表（称为 *安全收件人列表*）的域的成员。不允许同步关系，并阻止用户的计算机同步、下载或上传文档库中的文件。<br/><br/> 有关此功能的信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](/powershell/module/sharepoint-online/)。|
-|已将文件下载到计算机|FileSyncDownloadedFull|用户建立同步关系，并首次成功将文件从文档库下载到计算机。|
-|已将文件更改下载到计算机|FileSyncDownloadedPartial|用户从文档库成功下载对文件所做的任何更改。此活动表明对文档库中的文件所做的任何更改均已被下载到用户计算机中。仅下载了更改，因为用户以前下载过文档库（如 **已将文件下载到计算机** 活动所示）。|
-|已将文件上传到文档库|FileSyncUploadedFull|用户建立同步关系，并首次成功将文件从计算机上传到文档库。|
-|已将文件更改上传到文档库|FileSyncUploadedPartial|用户成功上传对文档库中的文件所做的更改。此事件表明对文档库中的文件本地版本所做的任何更改均已被成功上传到文档库。仅已上传更改内容，因为用户以前上传过这些文件（如 **已将文件上传到文档库** 活动所示）。|
+|已将文件下载到计算机|FileSyncDownloadedFull|用户使用 OneDrive 同步应用 (OneDrive.exe) 从 SharePoint 文档库或 OneDrive for Business 将文件下载到计算机。|
+|已将文件更改下载到计算机|FileSyncDownloadedPartial|此事件已与旧的 OneDrive for Business 同步应用 (Groove.exe) 一起弃用。|
+|已将文件上传到文档库|FileSyncUploadedFull|用户使用 OneDrive 同步应用 (OneDrive.exe) 上传新文件或将更改上传到 SharePoint 文档库或 OneDrive for Business 中的文件。|
+|已将文件更改上传到文档库|FileSyncUploadedPartial|此事件已与旧的 OneDrive for Business 同步应用 (Groove.exe) 一起弃用。|
 ||||
 
 ### <a name="site-permissions-activities"></a>网站权限活动

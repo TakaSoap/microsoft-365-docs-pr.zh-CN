@@ -4,6 +4,8 @@
   items:
     - name: Viva Learning（预览版）概述
       href: overview-viva-learning.md
+    - name: 了解条款和条件
+      href: terms-and-conditions.md
 - name: 设置和管理
   items:
     - name: 在 Teams 管理中心中设置

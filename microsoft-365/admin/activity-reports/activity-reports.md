@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: 15d2ac283f3687863355d44016a468f69d8efe7f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 10c2fdeae19746358745308d3b5171afb0647ebd
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156086"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553348"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -160,7 +160,7 @@ ms.locfileid: "60156086"
 ![报告 - 匿名用户列表。](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
 
-如果在生成报表时，想要取消隐藏用户级的信息，全局管理员可以在管理中心中快速进行此更改。
+如果在生成报表时，想要取消隐藏用户级的信息，**全局管理员** 可以在管理中心中快速进行此更改。
 
 报告提供有关组织的使用情况数据的信息。 默认情况下，报告显示包含用户、组和网站可识别名称的信息。 从 2021 年 9 月 1 开始，我们将默认隐藏所有报告的用户信息，以持续致力于帮助公司支持其本地隐私法律。
 
@@ -185,9 +185,9 @@ ms.locfileid: "60156086"
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>在用户帐户关闭后，用法数据会发生什么情况？
 
-无论何时选择关闭某用户的帐户，Microsoft 都将在 30 天内删除该用户的用法使用。 该用户将仍包含在其活跃期间的活动图表总数中（参见数字 1），但不在“用户详细信息”表格中显示（参见数字 2）。
+无论何时选择关闭某用户的帐户，Microsoft 都将在 30 天内删除该用户的用法使用。 该用户将仍包含在其活跃期间的活动图表总数中，但不在“用户详细信息”表格中显示。
   
-但是，当你选择特定日期（参见数字 3）时（截至当前日期起前 28 天），报表会在“用户详细信息”表格中显示该用户当天的使用情况（参见数字 2）。
+但是，当你选择特定日期时（截至当前日期起前 28 天），报表会在“用户详细信息”表格中显示该用户当天的使用情况。
   
 ## <a name="related-content"></a>相关内容
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件， 人为操作的勒索软件， 人工运营的勒索软件， HumOR， 勒索攻击， 勒索软件攻击， 加密， 加密病毒
 description: 逐步保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: 57f79f82f5032c4e1706a8f71eb5eae8a38c0e98
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 04ce78802b24ed286ebf34fa404c17f53fef340b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364743"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556144"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>为 Microsoft 365 租户部署勒索软件保护
 
@@ -232,7 +232,7 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 - [人工操作的勒索软件](/security/compass/human-operated-ransomware)
 - [快速防范勒索软件和勒索](/security/compass/protect-against-ransomware)
 - [2021 Microsoft 数字防御报告](https://www.microsoft.com/security/business/microsoft-digital-defense-report)（请参阅第 10-19 页）
-- Microsoft 365 Defender 门户的 **威胁分析** 节点中的 **勒索软件：普遍且持续的威胁** 报告（请参阅这些 [许可要求](/microsoft-365/security/defender/prerequisites#licensing-requirements)）
+- [勒索软件：Microsoft 365 Defender 门户中的一份持续威胁](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview)分析报告
 
 Microsoft 365：
 
@@ -241,6 +241,8 @@ Microsoft 365：
 - [恶意软件和勒索软件防护](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [保护你的 Windows 10 电脑免受勒索软件攻击](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [在 SharePoint Online 中处理勒索软件](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+- Microsoft 365 Defender 门户中[勒索软件的威胁分析报告](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag)
+
 
 Microsoft 365 Defender：
 
