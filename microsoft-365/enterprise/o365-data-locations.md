@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定 Microsoft 365 客户数据在全球范围内的存储位置
-ms.openlocfilehash: 430ec1fe58f8b62ce558f2367e0dac67972e8868
-ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
+ms.openlocfilehash: adab62809b8533c255ce390cd40818b8373b3a6b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60386238"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552616"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客户数据的存储位置
 
@@ -89,6 +89,10 @@ Microsoft 365 使用服务端技术对静态和传输中的客户数据进行加
 
 [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033)可用于 Exchange Online、OneDrive for Business、SharePoint Online 和 Teams。
 
+### <a name="why-do-i-see-my-microsoft-365-service-requests-for-my-data-at-rest-connecting-to-servers-in-countries-outside-of-my-region"></a>为什么我看到 Microsoft 365 服务为静态数据请求连接到区域之外的国家/地区的服务器?
+
+客户请求有时可能由与静态存储数据的位置不同的区域中的服务器处理。 如果网络路由决策为请求处理选择其他服务器，则可能会发生这种情况，但在这些情况下，数据不会移动到新的静态位置。
+
 ### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Microsoft Intune 数据位置有哪些例外情况？
 
 Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。除非：
@@ -102,7 +106,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
    
   - “预览”、“Beta”或其他预发布服务通常将客户数据存储在美国，但也可能将其存储在世界各地。
 
-无论如何，Microsoft 不会控制或限制客户或其最终用户可访问客户数据的地理位置。 同样，如果其他服务中的客户数据随后集成到 Intune 中，原始客户数据将继续根据其他服务自己的地理位置承诺（如果有）;只有集成到 Intune 的客户数据副本才会存储在所述的 Intune 地理位置。  
+无论如何，Microsoft 都不会控制或限制客户或其最终用户可以从中访问客户数据的地理位置。同样，如果其他服务中的客户数据随后集成到 Intune 中，则将根据其他服务自己的地理位置承诺(如果有)继续存储原始客户数据；只有集成到 Intune 的客户数据副本才将存储在所述的 Intune 地理位置中。  
 
 ## <a name="data-center-locations"></a>数据中心位置
 
