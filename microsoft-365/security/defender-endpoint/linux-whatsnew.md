@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 779f77b39eeaf58918c115582f62fb08199f1b91
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: ab59d5511037d9b1c1a4b0aa7a6404ab27b8fb56
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478885"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586097"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -31,7 +31,7 @@ ms.locfileid: "60478885"
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0) 
 
 - 从此版本开始，我们将为以下部分提供 Microsoft Defender for Endpoint 支持： 
-  -  RHEL6.7-6.10 和 CentOS6.7-6.10 版本。
+  - RHEL6.7-6.10 和 CentOS6.7-6.10 版本。
   - Amazon Linux 2
   - Fedora 33 或更高版本
 - 错误修补程序
@@ -59,7 +59,7 @@ ms.locfileid: "60478885"
 - 从此版本开始，在通过命令行客户端触发的按需防病毒扫描期间检测到的威胁将自动修正。 扫描期间通过用户界面触发的威胁仍然需要手动操作。
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
-  - `--top N`：显示前 N 个 (仅在还指定了值 `--sort` 时) 
+  - `--top N`：显示前 N 个 (仅在还指定了 `--sort` 值时) 
 - Bug 修复&性能改进
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0) 

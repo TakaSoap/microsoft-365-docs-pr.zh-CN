@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fab35b6e40d03239d57329128505a31737904a64
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 608746c406ef308636e0a2ffc6f4bb1d69f6bbf7
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555796"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587345"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>排查与 iOS 上的 Microsoft Defender for Endpoint 相关的问题并查找常见问题解答
 
@@ -55,10 +55,6 @@ ms.locfileid: "60555796"
 
 > [!NOTE]
 > 禁用 VPN 后，Web 保护将不可用。 若要重新启用 Web 保护，请打开设备上 Microsoft Defender for Endpoint 应用并启用 Web 保护。
-
-## <a name="issues-with-device-health-card"></a>设备运行状况卡片问题
-
-设备运行状况卡片存在一个已知问题，该问题可能会导致不正确的通知来更新 iOS 版本，即使用户使用最新版本。 我们建议用户忽略来自 Defender for Endpoint 的通知。 因此，对设备合规性没有任何影响。 我们正在努力解决此问题，并且将在我们解决后更新此位置。
 
 ## <a name="coexistence-with-multiple-vpn-profiles"></a>与多个 VPN 配置文件共存
 

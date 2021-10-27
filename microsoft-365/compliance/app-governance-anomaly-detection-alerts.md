@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 调查异常检测警报。
-ms.openlocfilehash: bc82c0a8145b783ea914dd7eec32f3a5f7c6d05e
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: d3876900e1dfa26e80550e699dd00d6034d8e6d7
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268870"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588109"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>调查异常检测警报
 
@@ -31,15 +31,15 @@ ms.locfileid: "60268870"
 
 本指南提供有关调查和修正以下类别中应用治理警报的信息。
 
-- 初始访问
+- [初始访问](#initial-access-alerts)
 - 执行
-- 持久性
+- [持久性](#persistence-alerts)
 - 特权提升
 - 防御规避
 - 凭据访问
-- 发现
+- [发现](#discovery-alerts)
 - 横向移动
-- 集合
+- [集合](#collection-alerts)
 - 外泄
 - 影响
 
@@ -97,7 +97,7 @@ ms.locfileid: "60268870"
 
 此检测可识别 URL 信誉不佳的 OAuth 应用。  
 
-**TP 还是 FP?**
+**TP 还是 FP？**
 
 - **TP**：如果能够确认 OAuth 应用从未知源传递并重定向到可疑 URL，则会指示正确报告。
 
@@ -343,6 +343,29 @@ ms.locfileid: "60268870"
 
 1. 查看此应用执行的所有活动。
 1. 查看应用授予的范围。
+1. 查看与此应用关联的用户活动。
+
+### <a name="suspicious-enumeration-activities-performed-using-aad-powershell"></a>使用 PowerShell 执行的可疑 AAD 活动
+
+**严重性:** 中等
+
+**MITRE ID**：T1087
+
+此检测可识别在短时间内通过 AAD PowerShell 应用程序执行的大量可疑枚举活动。
+
+**TP 还是 FP？**
+
+- **TP**：如果能够确认由 PowerShell 应用程序执行了可疑/异常的 AAD 活动。
+
+  **推荐操作**：禁用并删除应用并重置密码。
+
+- **FP**：如果可以确认应用未执行任何异常活动。
+
+  **推荐操作**: 关闭警报。
+
+**了解违规的范围**
+
+1. 查看此应用执行的所有活动。
 1. 查看与此应用关联的用户活动。
 
 ## <a name="collection-alerts"></a>集合警报

@@ -2,8 +2,6 @@
 title: 调查适用于终结点的 Microsoft Defender 文件
 description: 使用调查选项获取有关与警报、行为或事件相关联的文件的详细信息。
 keywords: 调查， 调查， 文件， 恶意活动， 攻击动机， 深度分析， 深度分析报告
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 99bcf3c3d3381ffe226aeb54a72c7a673b06e88e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dc0b5326f4f5a0400ea624a85a57bc0cb12b577a
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166358"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588085"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>调查与 Microsoft Defender for Endpoint 警报关联的文件
 
@@ -37,7 +35,7 @@ ms.locfileid: "60166358"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatefiles-abovefoldlink)。
 
-调查与特定警报、行为或事件相关联的文件的详细信息，以帮助确定文件是否呈现恶意活动、确定攻击动机并了解漏洞的潜在范围。
+调查与特定警报、行为或事件相关联的文件的详细信息，以帮助确定文件是否呈现恶意活动、识别攻击动机并了解漏洞的潜在范围。
 
 有许多方法可以访问特定文件的详细配置文件页。 例如，可以使用搜索功能、单击警报进程树中的链接、事件 **图**、项目时间线，或选择设备时间线中列出的 **事件**。
 

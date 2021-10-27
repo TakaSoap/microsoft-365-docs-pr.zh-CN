@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: 了解如何将 Udemy 配置为用于学习Microsoft Viva Learning。
 ROBOTS: NOINDEX
-ms.openlocfilehash: edd11ba3a1b3edc8b7019de45261fb9b539a2efb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 404f70983f1deadfac111829f026bd3ccdbcb633
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556483"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587941"
 ---
 # <a name="configure-udemy-as-a-content-source-for-microsoft-viva-learning"></a>将 Udemy 配置为用户的内容Microsoft Viva Learning
+
+>[!NOTE]
+>此功能在预览版中不受支持。
 
 本文演示如何将 Udemy 配置为适用于用户的第三方学习内容Microsoft Viva Learning。
 
@@ -32,7 +35,7 @@ ms.locfileid: "60556483"
 
 按照以下步骤在 Udemy Business 环境中启用 API，并生成用于 LMS/LXP 应用程序的客户端凭据以访问它们。
 
-1. 导航到 **管理**，然后 **设置，** 然后是 **API**。 检查 API 的状态。 如果禁用它们，你可以联系支持人员以启用它们，或按照以下步骤启用它们。
+1. 导航到 **"管理"，** 然后 **设置，** 然后是 **API。** 检查 API 的状态。 如果禁用它们，你可以联系支持人员以启用它们，或按照以下步骤启用它们。
 
     <!--![Image of the API settings.](../media/learning/udemy-1.png)-->
 
@@ -48,7 +51,7 @@ ms.locfileid: "60556483"
 
     <!--![Image of the generated client ID and secret.](../media/learning/udemy-4.png)-->
 
-5. 若要访问 API 终结点，你需要具有ACCOUNT_ID和终结点 URL。 你可以访问此信息，也可以导航到"管理"，然后导航到"管理"，设置 **API"来试用** **API。** 启用 API 后，应该会看到 API 的状态为"已启用"。 选择 API 文档链接。
+5. 若要访问 API 终结点，你需要具有ACCOUNT_ID和终结点 URL。 你可以访问此信息，也可以导航到"管理"，然后导航到"管理"，然后设置 **API"来试用** **API。** 启用 API 后，应该会看到 API 的状态为"已启用"。 选择 API 文档链接。
 
     <!--![Image of the API page.](../media/learning/udemy-5.png)-->
 
@@ -75,4 +78,4 @@ ms.locfileid: "60556483"
 
       <!--![Image of filled in configuration details.](../media/learning/udemy-8.png)-->
 
-4. 选择 **"保存**"以激活Microsoft Viva Learning。 内容可能需要 24 小时才能在 Viva Learning。
+4. Select **Save** to activate Udemy content in Microsoft Viva Learning. 内容可能需要 24 小时才能在 Viva Learning。

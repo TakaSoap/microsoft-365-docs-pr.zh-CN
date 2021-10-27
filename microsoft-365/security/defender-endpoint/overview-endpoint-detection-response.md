@@ -3,8 +3,6 @@ title: 终结点检测和响应功能概述
 ms.reviewer: ''
 description: 了解 Microsoft Defender for Endpoint 中的终结点检测和响应功能
 keywords: 适用于终结点的 Microsoft Defender， 终结点检测和响应， 响应， 检测， 网络安全， 保护
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f1461cc9871e57cf422c261191723d8d229cc3c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 709f07bcaa803a922e1dade2acf90e73b6dca53e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205207"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585924"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>终结点检测和响应概述
 
@@ -35,7 +33,7 @@ ms.locfileid: "60205207"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-适用于终结点的 Defender 终结点检测和响应功能提供近实时且可操作的高级攻击检测。 安全分析员可以有效地确定警报的优先级，了解整个泄露范围，并采取响应措施来修正威胁。
+Defender for Endpoint endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. 安全分析员可以有效地确定警报的优先级，了解整个泄露范围，并采取响应措施来修正威胁。
 
 检测到威胁时，将在系统中创建警报以供分析人员进行调查。 使用相同攻击技术或归属于同一攻击者的警报会被聚合到名为 _“事件”_ 的实体中。 以此方式聚合警报可便于分析员更轻松地综合调查和响应威胁。
 

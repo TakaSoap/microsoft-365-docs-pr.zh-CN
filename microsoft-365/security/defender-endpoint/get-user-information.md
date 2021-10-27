@@ -14,12 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 58e7502d4b5dce4714f71438a6c0645497623743
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: b87467bb1795ab503e0bc003e3ab9a06e68226b0
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206979"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585998"
 ---
 # <a name="get-user-information-api"></a>获取用户信息 API
 
@@ -34,7 +35,7 @@ ms.locfileid: "60206979"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
-按键检索 User 实体 (用户名) 。
+使用密钥检索用户实体 (用户名) 。
 
 ## <a name="permissions"></a>权限
 
@@ -54,7 +55,7 @@ GET /api/users/{id}/
 
 名称|类型|说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

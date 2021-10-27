@@ -1,6 +1,6 @@
 ---
 title: 获取 CVE-KB 地图 API
-description: 了解如何使用获取 CVE-KB 映射 API 在 Microsoft Defender for Endpoint 中检索 CVE 到 KB 的映射和 CVE 详细信息。
+description: 了解如何使用获取 CVE-KB 映射 API 在 Microsoft Defender for Endpoint 中检索 CVE 到 KB 和 CVE 详细信息的地图。
 keywords: api， 图形 api， 受支持的 api， get， cve， kb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: 3921f79172bbbcc32b8510809b54bec477e44b85
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: d950ce40a97cc024b4ec5776e087e81e4b1eee3d
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192839"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588393"
 ---
 # <a name="get-cve-kb-map-api"></a>获取 CVE-KB 地图 API
 
@@ -69,7 +70,7 @@ Empty
 
 ### <a name="request-example"></a>请求示例
 
-下面是一个请求示例。
+下面是一个请求示例：
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/CveKbMap
@@ -77,7 +78,7 @@ GET https://graph.microsoft.com/testwdatppreview/CveKbMap
 
 ### <a name="response-example"></a>响应示例
 
-下面是一个响应示例。
+下面是一个响应示例：
 
 ```json
 {

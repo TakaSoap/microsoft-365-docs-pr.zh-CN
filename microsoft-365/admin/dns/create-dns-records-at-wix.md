@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和 Microsoft Wix 的其他服务的 DNS 记录。
-ms.openlocfilehash: ba5b814278c601c6fd6e9599075d4e297b87db58
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 229751df89e70903c8dd1ee86a15ac83517efe47
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556476"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586833"
 ---
 # <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>连接 Wix 将 DNS 记录Microsoft 365
 
@@ -56,7 +56,7 @@ ms.locfileid: "60556476"
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="从下拉列表中选择&quot;管理 DNS 记录&quot;。":::
     
-3. 在 **DNS 编辑器的****"TXT** 文本 (文本) 行中选择+ 添加记录。 
+3. Select **+ Add Record** in the **TXT (Text)** row of the DNS editor. 
     
 4. 在新记录的框中，键入或复制并粘贴下表中的值。 
     
@@ -71,13 +71,17 @@ ms.locfileid: "60556476"
     
 在在域注册机构网站添加了记录后，你将返回到 Microsoft 并请求记录。 Microsof 找到正确的 TXT 记录表明域已通过验证。 
 
-若要验证记录是否Microsoft 365：
+若要验证记录，Microsoft 365：
   
 1. 在管理中心中，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"。**</a>
     
-2. On the Domains page， select the domain that you're verifying， and select **Start setup**.   
+1. On the Domains page， select the domain that you're verifying， and select **Start setup**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="选择&quot;开始设置&quot;。":::
+
+1. 选择 **继续**。
   
-3. 在“**验证域**”页面上，选择“**验证**”。
+1. 在“**验证域**”页面上，选择“**验证**”。
     
 > [!NOTE]
 > DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。
@@ -112,7 +116,7 @@ ms.locfileid: "60556476"
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="从下拉列表中选择&quot;管理 DNS 记录&quot;。":::
 
-3. 在 **CNAME 记录的** DNS 编辑器的 **"CNAME (别名")** 行中选择"+ 添加另一个"。 
+3. 在 **CNAME 记录的** DNS 编辑器的 **"CNAME** (别名) 行中选择" + 添加"。 
     
 4. 在新记录的框中，键入或复制并粘贴下表中的值：
     
@@ -135,9 +139,9 @@ ms.locfileid: "60556476"
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="从下拉列表中选择&quot;管理 DNS 记录&quot;。":::
     
-3. 在 **DNS 编辑器的****"TXT** 文本 (文本) 行中选择+ 添加记录。 
+3. Select **+ Add Record** in the **TXT (Text)** row of the DNS editor. 
 
-   **注意**：Wix 在 DNS 编辑器中提供 SPF 行。 忽略该行并使用 **"TXT** 文本 (文本) 输入下面的 SPF 值。 
+   **注意**：Wix 在 DNS 编辑器中提供 SPF 行。 忽略该行，并使用 **"TXT** (Text) "行输入下面的 SPF 值。 
     
 4. 在新记录的框中，键入或复制并粘贴下表中的值：
     
@@ -179,7 +183,7 @@ ms.locfileid: "60556476"
 
 ### <a name="add-the-two-required-cname-records"></a>添加两个必需的 CNAME 记录 
 
-1. Select **+ Add another** in the **CNAME (Aliases)** row of the DNS editor， and enter the values from the first row in the following table. 
+1. 在 **DNS 编辑器的****"CNAME** (别名") 行中选择"+ 添加"，然后输入下表中第一行的值。 
     
    |**类型**|**主机**|**值**|**TTL**|
    |:-----|:-----|:-----|:-----|
@@ -205,7 +209,7 @@ ms.locfileid: "60556476"
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="从下拉列表中选择&quot;管理 DNS 记录&quot;。":::
 
-3. Select **+ Add another** in the **CNAME (Aliases)** row of the DNS editor， and enter the values from the first row in the following table. 
+3. 在 **DNS 编辑器的****"CNAME** (别名") 行中选择"+ 添加"，然后输入下表中第一行的值。 
     
     |**类型**|**主机**|**值**|**TTL**|
     |:-----|:-----|:-----|:-----|

@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: 了解如何将 Go1 配置为适用于 Microsoft Viva Learning 的学习内容源。
 ROBOTS: NOINDEX
-ms.openlocfilehash: 2751a855f663ca47f0e5896b489f4ee9d3055cf5
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ade44c0cc7607ab1b7a247ee60bdd2ca3505e6e9
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556630"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586157"
 ---
 # <a name="configure-go1-as-a-content-source-for-microsoft-viva-learning"></a>将 Go1 配置为网站内容Microsoft Viva Learning
+
+>[!NOTE]
+>此功能在预览版中不受支持。
 
 本文演示如何在 Viva Learning 中将 Go1 配置为第三方学习内容源。
 
@@ -56,7 +59,7 @@ Go1 提供对来自顶级内容提供商的数千个课程的访问权限。 [�
 
 7. 保存您输入的信息。
 
-8. 将显示你的信息，并隐藏"机密"。 Select theellipses (**...**) ， then select **View Secret** to display the Secret.
+8. 将显示你的信息，并隐藏"机密"。 选择省略号 (**...) ，** 然后选择" **查看** 密码"以显示密码。
 
 9. 复制以下值：
 
@@ -64,8 +67,8 @@ Go1 提供对来自顶级内容提供商的数千个课程的访问权限。 [�
     - **客户端 ID：** 可以在"集成/开发人员"菜单选项下的 Go1 门户 **中查找** ID。
     - **密码：** 可以在"集成/开发人员"菜单选项下的 Go1 门户 **中查找** 你的密码。
 
-## <a name="complete-configuration-in-the-microsoft-365-admin-center"></a>完成配置Microsoft 365 管理中心
+## <a name="complete-configuration-in-the-microsoft-365-admin-center"></a>完整配置Microsoft 365 管理中心
 
-将从 Go1 门户检索的值复制并粘贴到"开始"屏幕中的"Go1 设置"Microsoft 365 管理中心。
+将从 Go1 门户检索到的值复制并粘贴到"开始"屏幕中的"Go1 设置"Microsoft 365 管理中心。
 
 详细了解如何 [为 Go1 创建私有开发人员的应用](https://help.go1.com/en/articles/4642648-integrate-with-the-go1-api)。

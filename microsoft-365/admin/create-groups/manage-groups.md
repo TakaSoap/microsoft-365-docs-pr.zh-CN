@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何管理Microsoft 365组，包括添加删除组的成员、编辑电子邮件地址、组名称或说明，以及自定义组的工作方式。
-ms.openlocfilehash: 979291cfde3c82bb6e16520f13f51c51e9bd47c2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 89e4ff11ffbb396038dd28c26b1f06762a2b5b21
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165756"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586453"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>管理用户中的Microsoft 365 管理中心
 
-创建组[和Microsoft 365组的成员](create-groups.md)后，可以配置组。 您可以编辑组名称或说明、管理所有者或成员，并指定外部发件人是否可以向组发送电子邮件以及是否将组对话的副本发送给成员。
+创建组[和Microsoft 365组的成员](create-groups.md)后，可以配置组。 可以编辑组名称或说明、管理所有者或成员，并指定外部发件人是否可以向组发送电子邮件以及是否将组对话的副本发送给成员。
 
 转到 上 [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心。
 
@@ -55,11 +55,11 @@ ms.locfileid: "60165756"
 
 ## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>将对话副本发送到组成员的收件箱
   
-使用管理中心创建组时，默认情况下，用户不会收到发送到收件箱的组电子邮件副本，但用户会获得发送到其收件箱的组会议邀请的副本。 他们需要转到组以查看对话。 可以在管理中心更改此设置。
+使用管理中心创建组时，默认情况下，用户不会获得发送到收件箱的组电子邮件副本，但用户获取发送到其收件箱的组会议邀请的副本。 他们需要转到组以查看对话。 可以在管理中心更改此设置。
 
-启用此设置后，组成员将获取发送到其"收件箱"Outlook电子邮件和会议邀请的副本。 他们可以阅读并删除该电子邮件的副本，不影响任何人。 在"组"收件箱中，电子邮件的副本仍然存在。
+启用此设置后，组成员将获取发送到其"收件箱"的组电子邮件和会议Outlook副本。 他们可以阅读并删除该电子邮件的副本，不影响任何人。 在"组"收件箱中，电子邮件的副本仍然存在。
 
-组的成员可以选择不接收这些电子邮件，方法为选择停止在 Outlook。
+通过选择停止跟踪电子邮件中的组，组成员可以选择不接收Outlook。
 
 1. 在管理中心中，展开 **"组"，** 然后单击"组 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**"。**</a>
 
@@ -80,6 +80,9 @@ ms.locfileid: "60165756"
 3. 在管理中心组列表中，选择要更改的组的名称，然后在"设置"**选项卡** 上，选择"允许外部发件人向此组发送电子邮件 **"。**
     
 4. 选择“**保存**”。
+
+> [!NOTE]
+> 可能需要 30 分钟，然后组织外部的用户才能向组发送电子邮件。
 
 ## <a name="permanently-delete-a-microsoft-365-group"></a>永久删除Microsoft 365组
 

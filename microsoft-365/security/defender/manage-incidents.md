@@ -2,7 +2,6 @@
 title: 管理事件Microsoft 365 Defender
 description: 了解如何分配、更新状态
 keywords: 事件， 事件， 分析， 响应， 警报， 相关警报， 分配， 更新， 状态， 管理， 分类， microsoft， 365， m365
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,14 +19,13 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-- MET150
 ms.technology: m365d
-ms.openlocfilehash: 89a294766f4472c4a23d7149ff2ca843d4e7cc38
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3ac0af88a38c6e563dd75e85d1f24820c9ebe19d
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212085"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587750"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>管理事件Microsoft 365 Defender
 
@@ -39,7 +37,7 @@ ms.locfileid: "60212085"
 
 事件管理对于确保包含和解决威胁至关重要。
 
-在快速启动 &  > Microsoft 365 Defender (security.microsoft.com) 时，管理来自事件>事件[的事件](https://security.microsoft.com)。 下面是一个示例。
+在 **&** Microsoft 365 Defender 门户>事件 (security.microsoft.com) 事件的事件。 [](https://security.microsoft.com) 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。":::
 
@@ -80,7 +78,7 @@ Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影�
 
 ## <a name="assign-an-incident"></a>分配事件
 
-如果尚未分配事件，可以选择"分配给"框，并指定用户帐户 (预览) 。 Te re-assign an incident， remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. 分配事件的所有权会为与其关联的所有警报分配相同的所有权。
+如果尚未分配事件，可以选择"分配给"框，并指定"预览" (用户帐户) 。 Te re-assign an incident， remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. 分配事件的所有权会为与其关联的所有警报分配相同的所有权。
 
 通过筛选事件队列，您可以获取分配给您的事件列表。 
 

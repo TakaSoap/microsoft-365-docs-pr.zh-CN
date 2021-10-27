@@ -2,7 +2,6 @@
 title: 使用敏感度标签确定事件响应的优先级
 description: 了解如何使用敏感度标签确定事件的优先级并调查事件
 keywords: 信息， 保护， 数据， 丢失， 防护， 标签， dlp， 事件， 调查， 调查
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb21eb0d52f62c49a9406bd92697dccaff290d7e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5b27187530deb8182dea39c8053413a9f70ac4e2
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156278"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587809"
 ---
 # <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>使用敏感度标签确定事件响应的优先级
 
@@ -41,7 +40,7 @@ Defender for Endpoint 使用敏感度标签可帮助简化安全事件的优先�
 了解如何使用数据敏感度标签确定事件调查的优先级。
 
 > [!NOTE]
-> 检测到标签Windows 10 版本 1809或更高版本。
+> 检测到标签Windows 10 版本 1809或更高版本，Windows 11。
 
 1. 在Microsoft 365 Defender门户中，选择"**事件&事件** \> **"。**
 

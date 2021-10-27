@@ -2,8 +2,6 @@
 title: Microsoft Defender 安全中心安全操作仪表板
 description: 使用仪表板识别处于风险中的设备，跟踪服务状态，并查看有关设备和警报的统计信息和信息。
 keywords: 仪表板， 警报， 新， 正在进行， 已解决， 风险， 处于风险中的设备， 感染， 报告， 统计信息， 图表， 图形， 运行状况， 活动恶意软件检测， 威胁类别， 类别， 密码窃取程序， 勒索软件， 攻击， 威胁， 低严重性， 活动恶意软件
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4007280a5225fea3c13904163e546f256e7ee217
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e2535de64276048f933fba4d12c654a46ab1991d
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166286"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587133"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender 安全中心安全操作仪表板
 
@@ -33,7 +31,7 @@ ms.locfileid: "60166286"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)。
 
-安全 **操作仪表板** 是显示终结点检测和响应功能的地方。 它提供发现检测位置的简要概述，并突出显示需要响应操作的地方。
+安全 **操作仪表板** 是显示终结点检测和响应功能的地方。 它提供了发现检测位置的简要概述，并突出显示了需要响应操作的地方。
 
 仪表板显示以下项的快照：
 
@@ -61,7 +59,7 @@ ms.locfileid: "60166286"
 
 ![单击每个切片或严重性以查看过去 30 天内的警报列表。](images/active-alerts-tile.png)
 
-每个组进一步细分为相应的警报严重性级别。 单击每个警报圈内的警报数，以查看该类别的队列排序视图 **("** 新建"或"正在进行) "。 
+每个组进一步细分为相应的警报严重性级别。 单击每个警报圈内的警报数，以查看该类别的队列的已排序视图 **("** 新建"或"正在进行) "。 
 
 有关详细信息，请参阅 [警报概述](alerts-queue.md)。
 
@@ -69,7 +67,7 @@ ms.locfileid: "60166286"
 
 ## <a name="devices-at-risk"></a>处于风险之中的设备
 
-此磁贴显示活动警报数最高的设备列表。 每个设备的警报总数显示在设备名称旁边的圆圈中，然后按严重性级别进一步分类磁贴 (悬停在每个严重性栏上以查看其标签) 。
+此磁贴显示活动警报数最高的设备列表。 每个设备的警报总数在设备名称旁的圆圈中显示，然后按严重级别进一步分类到磁贴 (将鼠标悬停在每个严重性栏上以查看其标签) 。
 
 !["处于风险中的设备"图块显示警报数最高的设备列表，以及警报严重性的细目。](images/devices-at-risk-tile.png)
 

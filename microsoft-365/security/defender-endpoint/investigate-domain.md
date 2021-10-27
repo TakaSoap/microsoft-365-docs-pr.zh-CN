@@ -2,8 +2,6 @@
 title: 调查 Microsoft Defender 终结点域
 description: 使用调查选项查看设备和服务器是否一直与恶意域通信。
 keywords: 调查域， 域， 恶意域， Microsoft Defender for Endpoint， 警报， URL
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 8df2c21520218d19a66943b67c43d2b5802b51fc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9f2514c0f43bd8a7f1ab5dade389c0a12f3c4e54
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174695"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587785"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>调查与 Microsoft Defender for Endpoint 警报关联的域
 

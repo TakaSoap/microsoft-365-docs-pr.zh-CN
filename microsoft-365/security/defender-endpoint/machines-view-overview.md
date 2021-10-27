@@ -2,8 +2,6 @@
 title: 查看和组织 Microsoft Defender for Endpoint 设备列表
 description: 了解可从设备列表中使用的可用功能，例如排序、筛选和导出列表以增强调查。
 keywords: 排序， 筛选， 导出， csv， 设备名称， 域， 上次看到时间， 内部 IP， 运行状况状态， 活动警报， 活动恶意软件检测， 威胁类别， 查看警报， 网络， 连接， 恶意软件， 类型， 密码窃取程序， 勒索软件， 攻击， 威胁， 常规恶意软件， 不需要的软件
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd3e8a9a265070f3cda61a2c96eb704ed2dc177a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 51b55a92a88dfa5faf89df89bfc3351b97571feb
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169823"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588321"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>查看和组织适用于终结点设备的 Microsoft Defender 列表
 
@@ -82,9 +80,9 @@ ms.locfileid: "60169823"
 
 仅选择你有兴趣调查的操作系统平台。
 
-### <a name="windows-10-versions"></a>Windows 10版本
+### <a name="windows-versions"></a>Windows版本
 
-仅选择Windows 10关注的版本。
+仅选择Windows关注的版本。
 
 ### <a name="health-state"></a>运行状况
 

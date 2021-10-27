@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5e94467557df7cefc5e1adaddc5a1ae515ef508a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b198cbfe979cc8453db289911ab48de601a3edd2
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152186"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585927"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上手动部署 Microsoft Defender for Endpoint
 
@@ -37,7 +37,7 @@ ms.locfileid: "60152186"
 
 - [下载安装和载入程序包](#download-installation-and-onboarding-packages)
 - [macOS (10.15 及早期版本的应用程序安装) ](#application-installation-macos-1015-and-older-versions)
-- [macOS 11 (较新版本的应用程序安装) ](#application-installation-macos-11-and-newer-versions)
+- [macOS 11 (更高版本的应用程序安装) ](#application-installation-macos-11-and-newer-versions)
 - [客户端配置](#client-configuration)
 
 ## <a name="prerequisites-and-system-requirements"></a>先决条件和系统要求
@@ -46,7 +46,7 @@ ms.locfileid: "60152186"
 
 ## <a name="download-installation-and-onboarding-packages"></a>下载安装和载入程序包
 
-从门户下载安装和载入Microsoft 365 Defender包：
+从以下门户下载安装和载入Microsoft 365 Defender包：
 
 1. In Microsoft 365 Defender portal， go to **设置 > Endpoints > Device management > Onboarding**.
 2. 在页面的第 1 部分中，将操作系统设置为 **macOS，** 将 Deployment 方法设置为 **本地脚本**。
@@ -70,7 +70,7 @@ ms.locfileid: "60152186"
     ![应用安装屏幕截图2。](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
-   > 系统将提示你允许安装来自 Microsoft 的驱动程序， ("系统扩展被阻止"或"安装已保留"或两者同时安装。 必须允许安装驱动程序。
+   > 系统将提示你允许从 Microsoft 安装驱动程序， ("系统扩展被阻止"或"安装已保留"或两者同时安装。 必须允许安装驱动程序。
 
    ![应用安装屏幕截图3。](images/mdatp-30-systemextension.png)
 
@@ -92,27 +92,27 @@ ms.locfileid: "60152186"
 
 1. 导航到 Finder 中下载的 wdav.pkg 并打开它。
 
-    ![应用安装屏幕截图4。](images/big-sur-install-1.png)
+    ![应用安装屏幕截图4。](images/monterey-install-1.png)
 
 2. 选择 **"继续**"，同意许可条款，在系统提示时输入密码。
 
 3. 在安装过程结束时，你将被提升为批准产品使用的系统扩展。 选择 **"打开安全首选项"。**
 
-    ![系统扩展审批。](images/big-sur-install-2.png)
+    ![系统扩展审批。](images/monterey-install-2.png)
 
 4. 从"**安全&隐私"** 窗口中，选择"允许 **"。**
 
-    ![系统扩展安全首选项 1。](images/big-sur-install-3.png)
+    ![系统扩展安全首选项 1。](images/monterey-install-3.png)
 
-5. 对在 Mac & Microsoft Defender for Endpoint 分发的所有系统扩展重复步骤 3 和步骤 4。
+5. 对通过 Mac 上的 Microsoft Defender for Endpoint 分发的所有系统扩展重复步骤 3 & 4。
 
 6. 作为终结点检测和响应功能的一部分，Mac 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft 365 Defender 门户。 当系统提示授予 Microsoft Defender 终结点权限以筛选网络流量时，请选择"允许 **"。**
 
-    ![系统扩展安全首选项 2。](images/big-sur-install-4.png)
+    ![系统扩展安全首选项 2。](images/monterey-install-4.png)
 
 7. 打开 **"系统** 首选项&隐私"并导航到"隐私"选项卡。授予 Microsoft Defender ATP 和 Microsoft Defender ATP 终结点安全扩展的"完全磁盘 \> **访问权限"。**   
 
-    ![完全磁盘访问。](images/big-sur-install-5.png)
+    ![完全磁盘访问。](images/monterey-install-5.png)
 
 ## <a name="client-configuration"></a>客户端配置
 
@@ -144,7 +144,7 @@ ms.locfileid: "60152186"
 ## <a name="how-to-allow-full-disk-access"></a>如何：允许完全磁盘访问
 
 > [!CAUTION]
-> macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序在未经明确同意 (访问磁盘上的某些位置，如文档、下载、桌面) 等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+> macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序无法访问磁盘上的某些位置 (如文档、下载、桌面等) 未经明确同意。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
 
 1. 若要授予同意，请打开 **系统首选项** \> **安全&** \> **隐私** \> **隐私完全磁盘访问**。 单击锁定图标以在 (对话框底部进行更改) 。 选择"适用于终结点的 Microsoft Defender"。
 
@@ -168,7 +168,7 @@ ms.locfileid: "60152186"
         mdatp threat list
         ```
 
-3. 运行EDR检测测试，验证设备已正确载入并报告给服务。 对新载入的设备执行以下步骤：
+3. 运行EDR检测测试，验证设备是否正确载入并报告给服务。 对新载入的设备执行以下步骤：
 
    1. 在浏览器（如 Microsoft Edge For Mac 或 Safari）中。
 
@@ -177,7 +177,7 @@ ms.locfileid: "60152186"
       系统可能会提示你：
 
       > 是否要允许下载"mdatpclientanalyzer.blob.core.windows.net"？<br/>
-      > 可以更改哪些网站可以下载网站首选项中的文件。
+      > 你可以更改哪些网站可以下载网站首选项中的文件。
 
 4. 单击"**允许"。**
 

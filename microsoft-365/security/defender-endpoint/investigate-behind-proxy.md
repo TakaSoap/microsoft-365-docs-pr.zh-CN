@@ -2,8 +2,6 @@
 title: 调查正向代理背后发生的连接事件
 description: 了解如何通过 Microsoft Defender for Endpoint 中的网络保护使用高级 HTTP 级别监视，从而显示真实目标，而不是代理。
 keywords: 代理， 网络保护， 转发代理， 网络事件， 审核， 阻止， 域名， 域
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a5fd36d57a1892189b4a5e9c4d13ad9d0ac6923
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b3cfbfc2e0330ce7b09bc34d379d45fc75dde8ca
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198201"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586109"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>调查正向代理背后发生的连接事件
 
@@ -46,7 +44,7 @@ Defender for Endpoint 通过网络保护支持高级 HTTP 级别监视。 打开
 
 可以使用以下模式控制网络保护：
 
-- **阻止**：将阻止用户或应用连接到危险域。 你将能够在"活动"中查看此Microsoft Defender 安全中心。
+- **阻止**：将阻止用户或应用连接到危险域。 你将能够在"活动"中查看Microsoft Defender 安全中心。
 - **审核**：不会阻止用户或应用连接到危险域。 但是，你仍将看到此活动Microsoft Defender 安全中心。
 
 

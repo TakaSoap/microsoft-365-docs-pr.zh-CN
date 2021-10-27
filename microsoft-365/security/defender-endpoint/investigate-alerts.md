@@ -2,8 +2,6 @@
 title: 调查 Microsoft Defender for Endpoint 警报
 description: 使用调查选项获取有关影响网络的警报的详细信息、它们的含义以及如何解决它们。
 keywords: 调查， 调查， 设备， 设备， 警报队列， 仪表板， IP 地址， 文件， 提交， 提交， 深入分析， 时间线， 搜索， 域， URL， IP
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f41be6057f1e66eb13001d4ed7d304d76e895c3d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ae6ae9ac805c2b49273f30b3266496a8c4be4d1b
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198213"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588073"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的警报
 

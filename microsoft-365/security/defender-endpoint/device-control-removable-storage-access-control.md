@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/21/2021
-ms.openlocfilehash: bc73ab308fed1d420815d894c5e8c6fbeb4aaa34
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.date: 10/25/2021
+ms.openlocfilehash: b227af391856166fb4a3b35be7355d8030677658
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553636"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587833"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 设备控件可移动存储访问控制
 
@@ -70,7 +70,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 |属性名称|说明|Options|
 |---|---|---|
-|**GroupId**|[GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)是一个唯一 ID，表示组，将在策略中使用。||
+|**GroupId**|GUID 是一个唯一 ID，表示组，将在策略中使用。||
 |**DescriptorIdList**|列出你想要在组中覆盖的设备属性。 有关每个设备属性的详细信息，请参阅 [设备](device-control-removable-storage-protection.md) 属性。 所有属性都区分大小写。 |<ul><li>**PrimaryId**：RemovableMediaDevices、CdRomDevices、WpdDevices</li><li>**DeviceId**</li><li>**HardwareId**</li><li>**InstancePathId**：InstancePathId 是一个字符串，用于唯一标识系统中设备，例如 ， `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` 。 例如， (0 &0) 表示可用插槽，并且可能会从设备更改为设备。 为获得最佳结果，请结尾使用通配符。 例如，`USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`。</li><li>**FriendlyNameId**</li><li>**SerialNumberId**</li><li>**VID**</li><li>**PID**</li><li>**VID_PID**<ul><li>0751_55E0：匹配此精确的 VID/PID 对</li><li>55E0：匹配 PID=55E0 的任何媒体 </li><li>0751：匹配任何具有 VID=0751 的媒体</li></ul></li></ul>|
 |**MatchType**|当 DescriptorIDList 中使用多个设备属性时，MatchType 将定义关系。|MatchAll：DescriptorIdList 下的任何属性将为 **And** 关系;例如，如果管理员将 DeviceID 和 InstancePathID 放在每个连接的 USB 中，系统将检查 USB 是否同时满足这两个值。 <p> **MatchAny**：DescriptorIdList 下的属性将为 **Or** 关系;例如，如果管理员将 DeviceID 和 InstancePathID 放在每个连接的 USB 上，只要 USB 具有相同的 **DeviceID** 或 **InstanceID** 值，系统就会执行强制操作。 |
 
@@ -80,13 +80,13 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 | 属性名称 | 说明 | Options |
 |---|---|---|
-| **PolicyRuleId** | [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)是一个唯一 ID，表示策略，将用于报告和疑难解答。 | |
+| **PolicyRuleId** | GUID 是一个唯一 ID，表示策略，将用于报告和疑难解答。 | |
 | **IncludedIdList** | 组 (策略) 的组。 如果添加了多个组，该策略将应用于所有这些组的任何媒体。|必须在此实例中使用组 ID/GUID。 <p> 以下示例显示 GroupID 的用法： <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | 组 (策略) 的组。 | 必须在此实例中使用组 ID/GUID。 |
 | **条目 ID** | 一个 PolicyRule 可以有多个条目;每个具有唯一 GUID 的条目告知设备控件一个限制。| |
 | **类型** | 定义 IncludedIDList 中可移动存储组的操作。 <ul><li>强制：允许或拒绝 </li><li>审核：AuditAllowed 或 AuditDenied</ul></li> | <ul><li>允许</li><li>拒绝 </li><li>AuditAllowed：定义允许访问时的通知和事件</li><li>AuditDenied：定义拒绝访问时的通知和事件;必须配合拒绝 **条目** 一起工作。</li></ul> <p> 当同一媒体存在冲突类型时，系统将应用策略中的第一个冲突类型。 冲突类型的一个示例是 **"允许"和**"**拒绝"。** |
-| **Sid** | 本地计算机 Sid 或 AD 对象的 Sid 定义是否对特定用户或用户组应用此策略;一个条目最多可具有一个 Sid 和一个不带任何 Sid 的条目，这意味着在计算机中应用策略。 |  |
-| **ComputerSid** | 本地计算机 Sid 或 AD 对象的 Sid 定义是否对特定计算机或计算机组应用此策略;一个条目最多可具有一个 ComputerSid，而一个条目没有任何 ComputerSid 意味着将策略应用到计算机。 如果要将条目应用于特定用户和特定计算机，请同时将 Sid 和 ComputerSid 添加到同一条目中。 |  |
+| **Sid** | 本地用户 Sid 或用户 Sid 组或 AD 对象的 Sid 定义是否对特定用户或用户组应用此策略;一个条目最多可具有一个 Sid 和一个不带任何 Sid 的条目，这意味着在计算机中应用策略。 |  |
+| **ComputerSid** | 本地计算机 Sid 或计算机 Sid 组或 AD 对象的 Sid 定义是否对特定计算机或计算机组应用此策略;一个条目最多可具有一个 ComputerSid，而一个条目没有任何 ComputerSid 意味着将策略应用到计算机。 如果要将条目应用于特定用户和特定计算机，请同时将 Sid 和 ComputerSid 添加到同一条目中。 |  |
 | **选项** | 定义是否显示通知 |**0 或 4：** 选择"允许"或"拒绝"时。 <ul><li>0：无</li><li>4：对此条目 **禁用 AuditAllowed** **和 AuditDenied。** 即使 **发生阻止** 且已配置 AuditDenied 设置，系统也将不会显示通知。 </li></ul> <p> 选择" **类型 AuditAllowed"** 时： <ul><li>0：无</li><li>1：无</li><li>2：发送事件</li><li>3：发送事件 </li></ul><p> 选择" **类型 AuditDenied"** 时： <ul><li>0：无</li><li>1：显示通知</li><li>2：发送事件</li><li>3：显示通知和发送事件 </li></ul>|
 |AccessMask|定义访问权限。 | **1-7**： <ol><li>读取</li><li>写入</li><li>读写</li><li>执行</li><li>读取和执行</li><li>写入和执行 </li><li>读取、写入和执行</li></ol> |
 

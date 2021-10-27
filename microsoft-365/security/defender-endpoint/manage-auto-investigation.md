@@ -2,8 +2,6 @@
 title: 查看自动调查后修正操作
 description: 在自动调查 (批准或拒绝) 修正操作。
 keywords: autoir， 自动化， 调查， 检测， 修正， 操作， 挂起， 已批准
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +17,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 22229d495e9b7694d07f25b60e854240f7c420c8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 371b698dc25a1875c71e7ca942d7e6b7563f40fb
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152028"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587702"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>在自动调查后查看修正操作
 
@@ -47,7 +45,7 @@ ms.locfileid: "60152028"
 
 - **示例 1：Fabrikam** 的设备组设置为"完全 **-** 根据建议设置 (自动修正) 。 在这种情况下，对于在自动调查后被视为恶意的项目，将自动采取修正 [ (请参阅查看](#review-completed-actions) 已完成) 。
 
-- **示例** 2：Contoso 的设备包含在为 Semi 设置的设备组中 ， **需要批准任何修正**。 在这种情况下，Contoso 的安全运营团队必须审阅和批准自动调查后的所有修正操作 [ (查看挂起](#review-pending-actions) 的操作) 。
+- **示例** 2：Contoso 的设备包含在为 Semi 设置的设备组中 ， **需要批准任何修正**。 在这种情况下，Contoso 的安全运营团队必须在自动调查后审阅和批准所有修正操作 [ (查看挂起](#review-pending-actions) 的操作) 。
 
 - **示例 3：Tailspin** Toys 的设备组设置为"无自动响应 (不建议) 。 在这种情况下，不会发生自动调查。 不会执行或挂起任何修正操作，并且不会在操作中心中记录其[](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)设备的任何 (请参阅管理[设备](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)组) 。
 
@@ -114,11 +112,11 @@ ms.locfileid: "60152028"
 
 |设备组设置|自动调查结果|需执行的操作|
 |---|---|---|
-|**完全 - 根据建议设置** (自动修正) |对于一 *条证据* ，已到达"恶意"裁定。 <p> 将自动执行相应的修正操作。|[查看已完成的操作](#review-completed-actions)|
+|**完全 - 根据建议 (** 自动修正) |对于一 *条证据* ，已到达"恶意"裁定。 <p> 将自动执行相应的修正操作。|[查看已完成的操作](#review-completed-actions)|
 |**完全 - 自动修正威胁**|对于一 *条证据* ，已到达"可疑"裁定。 <p> 修正操作正在等待审批以继续。|[批准 (或拒绝) 挂起的操作](#review-pending-actions)|
 |**Semi - 需要批准任何修正**|对于一条 *证据，* 已 *到达* "恶意"或"可疑"裁定。 <p> 修正操作正在等待审批以继续。|[批准 (或拒绝) 挂起的操作](#review-pending-actions)|
 |**Semi - 需要批准核心文件夹修正**|对于一 *条证据* ，已到达"恶意"裁定。 <p> 如果项目是文件或可执行文件，并且位于操作系统目录（如 Windows 文件夹或 Program files 文件夹）中，则修正操作将等待审批。 <p> 如果项目 *不在操作系统* 目录中，将自动执行修正操作。|<ol><li>[批准 (或拒绝) 挂起的操作](#review-pending-actions)</li><li>[查看已完成的操作](#review-completed-actions)</li></ol>|
-|**Semi - 需要批准核心文件夹修正**|对于一 *条证据* ，已到达"可疑"裁定。 <p> 修正操作正在等待审批。|[批准 (或拒绝) 挂起的操作。](#review-pending-actions)|
+|**Semi - 需要批准核心文件夹修正**|对于一 *条证据* ，已到达"可疑"裁定。 <p> 修正操作正在等待审批。|[批准 (或拒绝) 挂起的操作](#review-pending-actions)。|
 |**Semi - 需要审批非临时文件夹修正**|对于一 *条证据* ，已到达"恶意"裁定。 <p> 如果项目是不在临时文件夹中的文件或可执行文件（如用户的下载文件夹或临时文件夹）中，则修正操作将等待审批。 <p> 如果项目是临时 *文件夹中的文件或* 可执行文件，将自动执行修正操作。|<ol><li>[批准 (或拒绝) 挂起的操作](#review-pending-actions)</li><li>[查看已完成的操作](#review-completed-actions)</li></ol>|
 |**Semi - 需要审批非临时文件夹修正**|对于一 *条证据* ，已到达"可疑"裁定。 <p> 修正操作正在等待审批。|[批准 (或拒绝) 挂起的操作](#review-pending-actions)|
 |任何完全 **或****半** 自动化级别|对于一 *条证据，* 未发现任何威胁裁定。 <p> 不执行修正操作，并且没有任何操作等待审批。|[查看自动化调查的详细信息和结果](/microsoft-365/security/defender-endpoint/auto-investigation-action-center)|

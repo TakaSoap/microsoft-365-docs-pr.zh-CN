@@ -2,7 +2,6 @@
 title: 在 Microsoft Defender for Endpoint 中的设备上执行响应操作
 description: 在设备上执行响应操作，例如隔离设备、收集调查包、管理标记、运行 av 扫描以及限制应用执行。
 keywords: 响应， 隔离， 隔离设备， 收集调查包， 操作中心， 限制， 管理标记， av 扫描， 限制应用
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b21090c28fd240e349ec22b078843cf980f3325c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a992f457bab54ff53f3b134cfeba44f50b66af6e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555004"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587405"
 ---
 # <a name="take-response-actions-on-a-device"></a>在设备上执行响应操作
 
@@ -56,7 +55,7 @@ ms.locfileid: "60555004"
 
 > [!IMPORTANT]
 >
-> - 这些响应操作仅适用于 Windows 10 版本 1703 或更高版本、Windows Server 2019 和 Windows Server 2022 上的设备。
+> - 这些响应操作仅适用于 Windows 10 版本 1703 或更高版本、Windows 11、Windows Server 2019 和 Windows Server 2022 上的设备。
 > - 对于非Windows平台， (如设备隔离) 依赖于第三方功能。
 > - 对于 Microsoft 第一方代理，请参阅每个功能下的"详细信息"链接，了解最低操作系统要求。
 
@@ -112,15 +111,15 @@ ms.locfileid: "60555004"
 
 |Folder|说明|
 |---|---|
-|自动运行|包含一组文件，每个文件分别表示已知自动启动入口点 (ASEP) 的注册表内容，以帮助确定攻击者在设备上是否具有持久性。 <p> <div class="alert"><b>注意：</b> 如果找不到注册表项，则文件将包含以下消息："错误：系统无法找到指定的注册表项或值。"<div>|
+|自动运行|包含一组文件，每个文件分别表示已知自动启动入口点 (ASEP) 的注册表内容，以帮助识别攻击者在设备上是否具有持久性。 <p> <div class="alert"><b>注意：</b> 如果找不到注册表项，则文件将包含以下消息："错误：系统无法找到指定的注册表项或值。"<div>|
 |已安装的程序|此.CSV文件包含已安装的程序的列表，这些程序可帮助确定设备上当前安装的内容。 有关详细信息，请参阅Win32_Product [类](https://go.microsoft.com/fwlink/?linkid=841509)。|
-|网络连接|此文件夹包含一组与连接信息相关的数据点，可帮助识别与可疑 URL 的连接、攻击者的命令和控制 (C&C) 基础结构、任何横向移动或远程连接。 <ul><li>ActiveNetConnections.txt：显示协议统计信息和当前的 TCP/IP 网络连接。 提供查找进程建立可疑连接的能力。</li><li>Arp.txt：在所有接口的缓存表中 (ARP) 当前的地址解析协议。 ARP 缓存可以显示网络上已受到威胁的其他主机或网络上可能用于运行内部攻击的可疑系统。</il><li>DnsCache.txt：显示 DNS 客户端解析程序缓存的内容，该缓存包括从本地 Hosts 文件预加载的条目和最近为计算机解析的名称查询获取的任何资源记录。 这有助于识别可疑连接。</li><li>IpConfig.txt：显示所有适配器的完整 TCP/IP 配置。 适配器可以表示物理接口（如已安装的网络适配器）或逻辑接口（如拨号连接）。</li><li>FirewallExecutionLog.txt 和 pfirewall.log</li></ul><p><div class="alert"><b>注意：</b> pfirewall.日志文件必须存在于 %windir%\system32\logfiles\firewall\pfirewall.log 中，因此它将包含在调查包中。 有关创建防火墙日志日志文件，请参阅 Configure the [Windows Defender Firewall with Advanced Security Log](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
+|网络连接|此文件夹包含一组与连接信息相关的数据点，可帮助识别与可疑 URL 的连接、攻击者的命令和控制 (C&C) 基础结构、任何横向移动或远程连接。 <ul><li>ActiveNetConnections.txt：显示协议统计信息和当前的 TCP/IP 网络连接。 提供查找进程建立可疑连接的能力。</li><li>Arp.txt：在所有接口的缓存表中 (ARP) 当前的地址解析协议。 ARP 缓存可以显示网络上已受到威胁的其他主机或网络上可能用于运行内部攻击的可疑系统。</il><li>DnsCache.txt：显示 DNS 客户端解析程序缓存的内容，其中包括从本地 Hosts 文件预加载的条目和最近为计算机解析的名称查询获取的任何资源记录。 这有助于识别可疑连接。</li><li>IpConfig.txt：显示所有适配器的完整 TCP/IP 配置。 适配器可以表示物理接口（如已安装的网络适配器）或逻辑接口（如拨号连接）。</li><li>FirewallExecutionLog.txt和 pfirewall.log</li></ul><p><div class="alert"><b>注意：</b> pfirewall.日志文件必须存在于 %windir%\system32\logfiles\firewall\pfirewall.log 中，因此它将包含在调查包中。 有关创建防火墙日志日志文件，请参阅 Configure [the Windows Defender Firewall with Advanced Security Log](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
 |预取文件|Windows预取文件旨在加快应用程序启动过程。 它可用于跟踪系统中最近使用的所有文件，并查找可能已删除但仍可在预取文件列表中找到的应用程序的跟踪。 <ul><li>预取文件夹：包含 中的预取文件的副本 `%SystemRoot%\Prefetch` 。 注意：建议下载预取文件查看器以查看预取文件。</li><li>PrefetchFilesList.txt：包含可用于跟踪预取文件夹是否有复制失败的所有复制文件的列表。</li></ul>|
-|进程|包含.CSV一个列出正在运行的进程并提供识别设备上运行的当前进程的能力。 在标识可疑进程及其状态时，这非常有用。|
+|进程|包含一.CSV一个列出正在运行的进程并提供标识设备上运行的当前进程的能力。 在标识可疑进程及其状态时，这非常有用。|
 |计划任务|包含一.CSV列出计划任务的文件，可用于标识在所选设备上自动执行的例程，以查找已设置为自动运行的可疑代码。|
 |安全事件日志|包含安全事件日志，其中包含登录或注销活动的记录，或者由系统的审核策略指定的其他与安全相关的事件。 <p><div class="alert"><b>注意：</b> 使用事件查看器日志文件事件视图。</div>|
 |服务|包含一.CSV服务及其状态的列表文件。|
-|WindowsSMB (服务器) 块|列出对文件、打印机和串行端口的共享访问以及网络上节点之间的其他通信。 这可以帮助识别数据外排或横向移动。 <p> 包含 SMBInboundSessions 和 SMBOutboundSession 的文件。 <p> <div class="alert"><b>注意：</b> 如果入站或出站 (会话) ，您将获得一个文本文件，告知您未找到 SMB 会话。</div>|
+|WindowsSMB 会话 (服务器) 块|列出对文件、打印机和串行端口的共享访问以及网络上节点之间的其他通信。 这可以帮助识别数据外排或横向移动。 <p> 包含 SMBInboundSessions 和 SMBOutboundSession 的文件。 <p> <div class="alert"><b>注意：</b> 如果入站或出站 (会话) ，您将获得一个文本文件，告知您未找到 SMB 会话。</div>|
 |系统信息|包含一SystemInformation.txt列出系统信息（如操作系统版本和网络卡）的文件。|
 |临时目录|包含一组文本文件，其中列出了系统中每个用户位于 %Temp% 中的文件。 <p> 这可以帮助跟踪攻击者可能丢弃在系统上的可疑文件。 <p> <div class="alert"><b>注意：</b> 如果文件包含以下消息："系统找不到指定的路径"，这意味着此用户没有临时目录，可能是因为用户未登录到系统。</div>|
 |用户和组|提供每个表示一个组及其成员的文件的列表。|
@@ -154,7 +153,7 @@ ms.locfileid: "60555004"
 除了通过停止恶意进程来阻止攻击之外，还可以锁定设备并防止潜在恶意程序的后续尝试运行。
 
 >[!IMPORTANT]
-> - 此操作适用于 Windows 10 版本 1709 或更高版本Windows Server 2016。 
+> - 此操作适用于 Windows 10 版本 1709 或更高版本、Windows 11 和 Windows Server 2016。 
 > - 如果组织使用此功能，则此功能Microsoft Defender 防病毒。
 > - 此操作需要满足Windows Defender控制代码完整性策略格式和签名要求。 有关详细信息，请参阅代码 [完整性策略格式和签名](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)) 。
 
@@ -182,8 +181,8 @@ ms.locfileid: "60555004"
 
 >[!IMPORTANT]
 >- macOS 和 Linux 当前不支持此操作。 使用实时响应运行操作。 有关实时响应详细信息，请参阅使用实时响应 [调查设备上的实体](live-response.md)
->- 完全隔离适用于 Windows 10 版本 1703、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2 和 Windows Server 2022 上的设备。
->- 选择性隔离适用于 Windows 10 版本 1709 或更高版本上的设备。
+>- 完全隔离适用于 Windows 10 版本 1703、Windows 11、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2 和 Windows Server 2022 上的设备。
+>- 选择性隔离适用于 Windows 10 版本 1709 或更高版本以及 Windows 11。
 >- 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议对适用于终结点的 Microsoft Defender 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
 
 此设备隔离功能断开受损设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接，该服务将继续监视设备。
@@ -208,7 +207,7 @@ ms.locfileid: "60555004"
 
 ## <a name="consult-a-threat-expert"></a>咨询威胁专家
 
-你可以咨询 Microsoft 威胁专家，了解有关可能受到威胁的设备或已受到威胁的设备的更多见解。 Microsoft 威胁专家可以直接在内部参与Microsoft Defender 安全中心及时准确的响应。 专家不仅提供有关潜在威胁设备的见解，而且还可以更好地了解复杂的威胁、你收到的目标攻击通知，或者你需要有关警报或你在门户仪表板上看到的威胁情报上下文详细信息。
+你可以咨询 Microsoft 威胁专家，了解有关可能受到威胁的设备或已受到威胁的设备的更多见解。 Microsoft 威胁专家可以直接在内部使用Microsoft Defender 安全中心及时准确的响应。 专家不仅提供有关潜在威胁设备的见解，而且还可以更好地了解复杂的威胁、你收到的目标攻击通知，或者你需要有关警报或你在门户仪表板上看到的威胁情报上下文详细信息。
 
 有关详细信息 [，请参阅咨询 Microsoft 威胁](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 专家。
 

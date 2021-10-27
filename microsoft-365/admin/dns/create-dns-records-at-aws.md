@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: 了解在 Amazon Web Services (AWS) for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: 05ab925645fe840816496038e02a827af37570f6
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1e148b13a89def2eb034ca0bcaa4287c890fe904
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556452"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586441"
 ---
 # <a name="connect-your-dns-records-at-amazon-web-services-aws-to-microsoft-365"></a>连接 AWS (Amazon Web Services) DNS Microsoft 365
 
@@ -51,7 +51,7 @@ ms.locfileid: "60556452"
     
 1. 在登录页面上的"域 **"下**，选择"**已注册的域"。**
     
-1. 在 **"域名**"下，选择要在"域名"中设置的Microsoft 365。
+1. 在 **"域名**"下，选择要在"域名"Microsoft 365。
 
     **注意**：如果尚未为域创建托管区域，请选择"创建托管区域"并完成步骤，然后再移动到下一步。 
 
@@ -85,26 +85,28 @@ ms.locfileid: "60556452"
     
 现在，你已在你的域注册机构网站添加了记录，你将返回到 Microsoft 并请求搜索该记录。 当 Microsof 找到正确的 TXT 记录时，表明域已通过验证。
 
-若要验证记录是否Microsoft 365：
+若要验证记录，Microsoft 365：
   
-1. 在 Microsoft 管理中心中，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"。**</a>
+1. 在管理中心中，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"。**</a>
+    
+1. On the Domains page， select the domain that you're verifying， and select **Start setup**. 
 
-2. 在“**域**”页面上，选择要验证的域。 
-    
-3. 在“**设置**”页面上，选择“**开始设置**”。
-    
-4. 在“**验证域**”页面上，选择“**验证**”。
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="选择&quot;开始设置&quot;。":::
+
+1. 选择 **继续**。
+  
+1. 在“**验证域**”页面上，选择“**验证**”。
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft-365"></a>添加 MX 记录，以便收到域电子邮件Microsoft 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft-365"></a>添加 MX 记录，以便你的域的电子邮件Microsoft 365
 
 1. 要开始，请使用[此链接](https://console.aws.amazon.com/route53/home)转到你在 AWS 上的域页面。 系统将会提示您先登录。
     
 1. 在登录页面上的"域 **"下**，选择"**已注册的域"。**
     
-1. 在 **"域名**"下，选择要在"域名"中设置的Microsoft 365。
+1. 在 **"域名**"下，选择要在"域名"Microsoft 365。
 
     **注意**：如果尚未为域创建托管区域，请选择"创建托管区域"并完成步骤，然后再移动到下一步。 
 
@@ -141,7 +143,7 @@ ms.locfileid: "60556452"
     
 1. 在登录页面上的"域 **"下**，选择"**已注册的域"。**
     
-1. 在 **"域名**"下，选择要在"域名"中设置的Microsoft 365。
+1. 在 **"域名**"下，选择要在"域名"Microsoft 365。
 
     **注意**：如果尚未为域创建托管区域，请选择"创建托管区域"并完成步骤，然后再移动到下一步。 
 
@@ -176,7 +178,7 @@ ms.locfileid: "60556452"
     
 1. 在登录页面上的"域 **"下**，选择"**已注册的域"。**
     
-1. 在 **"域名**"下，选择要在"域名"中设置的Microsoft 365。
+1. 在 **"域名**"下，选择要在"域名"Microsoft 365。
 
     **注意**：如果尚未为域创建托管区域，请选择"创建托管区域"并完成步骤，然后再移动到下一步。 
 
@@ -204,7 +206,7 @@ ms.locfileid: "60556452"
 
 ## <a name="advanced-option-skype-for-business"></a>高级选项：Skype for Business
 
-只有组织将 Skype for Business 用于联机通信服务（如聊天、电话会议和视频呼叫）以及 Microsoft Teams。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
+只有组织将 Skype for Business 用于聊天、电话会议和视频呼叫等联机通信服务时，以及使用 Microsoft Teams。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
 
 ### <a name="add-the-two-required-srv-records"></a>添加两条必需的 SRV 记录
 
@@ -212,7 +214,7 @@ ms.locfileid: "60556452"
     
 1. 在登录页面上的"域 **"下**，选择"**已注册的域"。**
     
-1. 在 **"域名**"下，选择要在"域名"中设置的Microsoft 365。
+1. 在 **"域名**"下，选择要在"域名"Microsoft 365。
 
     **注意**：如果尚未为域创建托管区域，请选择"创建托管区域"并完成步骤，然后再移动到下一步。 
 
@@ -248,7 +250,7 @@ ms.locfileid: "60556452"
     
 1. 在登录页面上的"域 **"下**，选择"**已注册的域"。**
     
-1. 在 **"域名**"下，选择要在"域名"中设置的Microsoft 365。
+1. 在 **"域名**"下，选择要在"域名"Microsoft 365。
 
     **注意**：如果尚未为域创建托管区域，请选择"创建托管区域"并完成步骤，然后再移动到下一步。 
 
@@ -290,7 +292,7 @@ ms.locfileid: "60556452"
     
 1. 在登录页面上的"域 **"下**，选择"**已注册的域"。**
     
-1. 在 **"域名**"下，选择要在"域名"中设置的Microsoft 365。
+1. 在 **"域名**"下，选择要在"域名"Microsoft 365。
 
     **注意**：如果尚未为域创建托管区域，请选择"创建托管区域"并完成步骤，然后再移动到下一步。 
 

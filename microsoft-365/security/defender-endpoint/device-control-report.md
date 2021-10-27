@@ -14,18 +14,18 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 952363dfa689ea20e1ca1fcd97da4a79cfa66062
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 16c899ca895e73f51bc0d72f20e008f367cfe731
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212990"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588347"
 ---
-# <a name="protect-your-organizations-data-with-device-control"></a>使用设备控制保护组织的数据
+# <a name="device-control-report"></a>设备控件报告
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint 设备控制通过监视和控制组织中设备的媒体使用（如使用可移动存储设备和 USB 驱动器）防止数据丢失。
+Microsoft Defender for Endpoint 设备控件通过监视和控制组织中设备的媒体使用（如使用可移动存储设备和 USB 驱动器）防止数据丢失。
 
 借助设备控件报告，可以查看与媒体使用情况相关的事件，例如：
 
@@ -41,15 +41,16 @@ Microsoft Defender for Endpoint 设备控制通过监视和控制组织中设备
 
 - **USB 驱动器装入和卸载：** 装载或卸载 USB 驱动器时生成的审核事件。
 - **PnP：** 即插即用审核事件在连接可移动存储、打印机或蓝牙时生成。
+- **可移动存储访问控制：** 触发可移动存储访问控制策略时将生成事件。 它可以是审核、阻止或允许。
 
 ## <a name="monitor-device-control-security"></a>监视设备控制安全性
 
-Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用工具通过报告跟踪其组织的设备控制安全性。 你可以访问报告设备保护Microsoft 365安全中心中的设备>**报告**。
+Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用工具通过报告跟踪其组织的设备控制安全性。 可以通过进入报告设备保护Microsoft 365安全中心找到设备>**报告**。
 
 "报告"仪表板上的设备保护卡片显示过去 180 天内媒体类型生成的审核事件数。
 
 > [!div class="mx-imgBorder"]
-> ![DeviceControlReportCard](images/devicecontrolcard.png)
+> ![DeviceControlReportCard](https://user-images.githubusercontent.com/81826151/138504137-e9a7673e-e988-48cd-820d-2625ec6df352.png)
 
 " **查看详细信息** "按钮在设备控件报告页中显示 **更多媒体使用情况** 数据。
 
@@ -60,9 +61,9 @@ Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用
 
 选择事件时，将显示一个显示详细信息的飞出图：
 
-- **一般详细信息：** 日期、操作模式和此事件的策略。
-- **媒体信息：** 媒体信息包括媒体名称、类名称、类 GUID、设备 ID、供应商 ID、卷、序列号和总线类型。
-- **位置详细信息：** 设备名称和 MDATP 设备 ID。
+- **一般详细信息：** 此事件的日期、操作模式、策略和 Access。
+- **媒体信息：** 媒体信息包括媒体名称、类名称、类 GUID、设备 ID、供应商 ID、序列号和总线类型。
+- **位置详细信息：** 设备名称、用户和 MDATP 设备 ID。
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)

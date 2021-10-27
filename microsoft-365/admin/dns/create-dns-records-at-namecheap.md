@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: 了解在 Namecheap for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: 5cc3a961e30e482b35c1646791eec9e03a065fbc
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 31938656e17104d1388b53c05b6ccf3af9afc30f
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556445"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587025"
 ---
 # <a name="connect-your-dns-records-at-namecheap-to-microsoft-365"></a>连接 Namecheap 将 DNS 记录Microsoft 365
 
@@ -92,13 +92,17 @@ ms.locfileid: "60556445"
     
 在在域注册机构网站添加了记录后，你将返回到 Microsoft 并请求记录。 Microsof 找到正确的 TXT 记录表明域已通过验证。 
 
-若要验证记录，Microsoft 365：
+若要验证记录是否Microsoft 365：
   
 1. 在管理中心中，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"。**</a>
     
-2. On the Domains page， select the domain that you're verifying， and select **Start setup**.   
+1. On the Domains page， select the domain that you're verifying， and select **Start setup**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="选择&quot;开始设置&quot;。":::
+
+1. 选择 **继续**。
   
-3. 在“**验证域**”页面上，选择“**验证**”。
+1. 在“**验证域**”页面上，选择“**验证**”。
     
 > [!NOTE]
 > DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -133,7 +137,7 @@ ms.locfileid: "60556445"
 
 1. 在新记录的框中，键入或复制并粘贴下表中的值。
     
-    **("优先级"** 框是"值"框右边的 **未命名框**。 从 **下拉列表中选择 TTL** 值。)  
+    **("优先级"** 框是"值"框右边 **的未命名** 框。 从 **下拉列表中选择 TTL** 值。)  
     
     |**类型**|**主机**|**值**|**优先级**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
@@ -147,7 +151,7 @@ ms.locfileid: "60556445"
 
 1. 如果存在任何其他 MX 记录，请使用以下两步过程删除其中每个记录：
     
-    首先，选择 (删除) 可删除的记录。 
+    首先，选择 (删除) 可删除的记录的回收站。 
 
      :::image type="content" source="../../media/7a7a751f-29c2-495f-8f55-98ca37ce555a.png" alt-text="选择&quot;删除&quot;。":::
 
@@ -244,7 +248,7 @@ ms.locfileid: "60556445"
 
 ## <a name="advanced-option-skype-for-business"></a>高级选项：Skype for Business
 
-只有组织将 Skype for Business 用于联机通信服务（如聊天、电话会议和视频呼叫）以及 Microsoft Teams。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
+只有组织将 Skype for Business 用于聊天、电话会议和视频呼叫等联机通信服务时，以及使用 Microsoft Teams。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
 
 ### <a name="add-the-two-required-srv-records"></a>添加两条必需的 SRV 记录
 

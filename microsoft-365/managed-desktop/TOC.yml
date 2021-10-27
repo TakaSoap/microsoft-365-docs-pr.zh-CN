@@ -62,6 +62,8 @@
           href: service-description/servicechanges.md
         - name: 服务计划的例外情况
           href: service-description/customizing.md
+        - name: 共享设备
+          href: service-description/shared-devices.md
     - name: 做好注册 Microsoft 托管桌面的准备
       href: get-ready/index.md
       items:

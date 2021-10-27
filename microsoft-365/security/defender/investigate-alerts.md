@@ -2,7 +2,6 @@
 title: 调查警报Microsoft 365 Defender
 description: 调查跨设备、用户和邮箱看到的警报。
 keywords: 事件， 警报， 调查， 分析， 响应， 关联， 攻击， 计算机， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,14 +19,13 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-- MET150
 ms.technology: m365d
-ms.openlocfilehash: cde5f6e00260710416266fd6f4113def9c7baf6f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 92542fdeebd5e6bbfebd075b178a0c22b08f186e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206597"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587751"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>调查警报Microsoft 365 Defender
 
@@ -40,11 +38,11 @@ ms.locfileid: "60206597"
 
 在Microsoft 365 Defender中，相关警报聚合在一起以形成[事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。 
 
-警报 **队列** 显示当前警报集。 在快速启动 & &  > > Microsoft 365 Defender (security.microsoft.com) 时，你可以进入警报[队列](https://security.microsoft.com)。
+警报 **队列** 显示当前警报集。 在 **&** 快速启动 Microsoft 365 Defender (security.microsoft.com) 时，你可以从事件和警报>警报进入 [警报](https://security.microsoft.com)队列。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="报告门户中的警报队列Microsoft 365 Defender示例。":::
 
-来自不同 Microsoft 安全解决方案（如 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft 365 Defender 警报显示在此处。
+来自不同 Microsoft 安全解决方案（如 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft 365 Defender）的警报将在此处显示。
 
 默认情况下，通知门户中的警报队列Microsoft 365 Defender最近 30 天的新警报和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
 
@@ -66,7 +64,7 @@ ms.locfileid: "60206597"
 
 你需要具有以下任一角色来访问 Microsoft Defender Office 365警报：
 
-- 例如Azure Active Directory (Azure AD) 全局角色：
+- 对于Azure Active Directory (Azure AD) 角色：
 
    - 全局管理员
 
@@ -99,10 +97,10 @@ ms.locfileid: "60206597"
 - 警报情景，它是与此警报相关的事件和警报链（按时间顺序）
 - 摘要详细信息
 
-在整个警报页面中，可以选择任意实体旁边的省略号 (**...)** 以查看可用操作，例如打开警报页面或将警报链接到其他事件。
+在整个警报页面中，可以选择任意实体旁边的省略号 (**...")** 以查看可用操作，例如打开警报页面或将警报链接到其他事件。
 
 ### <a name="alert-sources"></a>警报源
-Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft Cloud App Security。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
+Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft Cloud App Security 等解决方案。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
 
 > [!NOTE]
 > - 预置的 GUID 仅特定于统一体验，如统一警报队列、统一警报页面、统一调查和统一事件。<br>
@@ -120,7 +118,7 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 例如：`ca123a456b-c789-1d2e-12f
 
 " **已采取** 操作"部分包含受影响资产的列表，如受此警报影响的邮箱、设备和用户。 
 
-还可以选择"**在** 操作中心中查看"以查看操作中心的"历史记录"**选项卡，Microsoft 365 Defender** 门户。 
+还可以选择"在操作中心 **中** 查看"以查看操作中心的"历史记录"选项卡，Microsoft 365 Defender门户。 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>跟踪警报情景中的警报角色
 

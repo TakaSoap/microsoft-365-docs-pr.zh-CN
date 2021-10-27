@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4a9539d075c5428374972e8f7398ff2f326a587f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 8913573f534dcb106ad4310171a90e4099a1ac99
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207147"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587357"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Microsoft Defender 终结点检测 API 字段
 
@@ -38,12 +39,12 @@ ms.locfileid: "60207147"
 > [!NOTE]
 >
 > - [适用于终结点警报的](alerts.md) Defender 由一个或多个检测组成。
-> - **Microsoft Defender ATP 检测** 由设备上发生的可疑事件及其相关的警报 **详细信息组成** 。
+> - **Microsoft Defender ATP 检测** 由设备上发生的可疑事件及其相关 **警报详细信息组成** 。
 > - Microsoft Defender for Endpoint 警报 API 是警报使用的最新 API，包含每个警报的相关证据的详细列表。 有关详细信息，请参阅[警报方法和属性和](alerts.md)[列表警报](get-alerts.md)。
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>检测 API 字段和门户映射
 
-下表列出了检测 API 有效负载中公开的可用字段。 它显示了填充值的示例，并提供了如何在门户上反映数据的参考。
+下表列出了检测 API 有效负载中公开的可用字段。 它显示了填充值的示例，并引用了如何在门户上反映数据。
 
 ArcSight 字段列包含 Defender for Endpoint 字段和 ArcSight 中的内置字段之间的默认映射。 当你启用 SIEM 集成功能时，你可以从门户下载映射文件，并且你可以对其进行修改以满足你的组织的需求。 有关详细信息，请参阅在 Defender [for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
 
@@ -73,10 +74,10 @@ ArcSight 字段列包含 Defender for Endpoint 字段和 ArcSight 中的内置�
 > |18 |AlertId|externalId|636210704265059241_673569822|可用于每个检测的值。|
 > |19|LinkToWDATP|flexString1|`https://securitycenter.windows.com/alert/636210704265059241_673569822`|可用于每个检测的值。|
 > |20|AlertTime|deviceReceiptTime|2017-05-07T01：56：59.3191352Z|事件发生的时间。 可用于每个检测的值。|
-> | 21|MachineDomain|sourceDnsDomain|contoso.com|与加入 AAD 的设备不相关的域名。 可用于每个检测的值。|
+> | 21|MachineDomain|sourceDnsDomain|contoso.com|与已加入设备AAD域名。 可用于每个检测的值。|
 > |22|Actor|deviceCustomString4|一个|可用于与已知主角组相关的警报。|
 > |21+5|ComputerDnsName|无映射|liz-bean.contoso.com|设备完全限定的域名。 可用于每个检测的值。|
-> ||LogOnUsers|sourceUserId|contoso\liz-bean;contoso\为 hardee|事件发生时交互式登录用户的域和用户。 注意：对于 Windows 10版本 1607 的设备，域信息将不可用。|
+> ||LogOnUsers|sourceUserId|contoso\liz-bean;contoso\为 hardee|事件发生时交互式登录用户的域和用户。 注意：对于Windows 10版本 1607 的设备，域信息将不可用。|
 > ||InternalIPv4List|无映射|192.168.1.7, 10.1.14.1|活动网络接口的 IPV4 内部 IP 列表。|
 > ||InternalIPv6List|无映射|fd30：0000：0000：0001：ff4e：003e：0009：000e， FE80：CD00：0000：0CDE：1257：0000：211E：729C|活动网络接口的 IPV6 内部 IP 列表。|
 > ||LinkToMTP|无映射|`https://securitycenter.windows.com/alert/da637370718981685665_16349121`|可用于每个检测的值。
@@ -93,7 +94,7 @@ ArcSight 字段列包含 Defender for Endpoint 字段和 ArcSight 中的内置�
 
 :::image type="content" alt-text="包含数字 1 的项目时间线的图像。" source="images/atp-siem-mapping3.png" lightbox="images/atp-siem-mapping3.png":::
 
-:::image type="content" alt-text="包含数字 2 的项目时间线的图像。" source="images/atp-siem-mapping4.png" lightbox="images/atp-siem-mapping4.png":::
+:::image type="content" alt-text="具有数字 2 的项目时间线的图像。" source="images/atp-siem-mapping4.png" lightbox="images/atp-siem-mapping4.png":::
 
 :::image type="content" alt-text="映像计算机视图。" source="images/atp-mapping6.png" lightbox="images/atp-mapping6.png":::
 

@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: db114ab17f5e60b9f7660adc71bdc7dd441242b2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: c0589818e35ef065f41f40f3b101ba0daab060b1
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150170"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588364"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>使用 PowerShell 的 Microsoft Defender for Endpoint API
 
@@ -62,8 +63,8 @@ ms.locfileid: "60150170"
 运行以下代码：
 
 - $tenantId：要代表其运行查询的租户的 ID (即，查询将针对此租户数据运行) 
-- $appId：AAD 应用的 ID (应用必须具有 Defender for Endpoint) 的"运行高级查询"权限
-- $appSecret：Azure AD 应用机密
+- $appId：AAD应用的 ID (应用必须具有 Defender for Endpoint) 
+- $appSecret：你的应用Azure AD密码
 
 - $suspiciousUrl：URL
 

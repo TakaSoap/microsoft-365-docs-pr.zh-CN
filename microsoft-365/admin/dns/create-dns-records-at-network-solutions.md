@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: 了解在 Network Solutions for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: cc954871488839cbf7879248535362b85bcf2bac
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: f0599ef178e9a3dde097b94e7c3f980f59e88636
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556472"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586326"
 ---
 # <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>连接 Network Solutions 中的 DNS 记录以Microsoft 365
 
@@ -86,9 +86,13 @@ ms.locfileid: "60556472"
   
 1. 在管理中心中，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"。**</a>
     
-2. On the Domains page， select the domain that you're verifying， and select **Start setup**.   
+1. On the Domains page， select the domain that you're verifying， and select **Start setup**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="选择&quot;开始设置&quot;。":::
+
+1. 选择 **继续**。
   
-3. 在“**验证域**”页面上，选择“**验证**”。
+1. 在“**验证域**”页面上，选择“**验证**”。
     
 > [!NOTE]
 > DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。
@@ -140,7 +144,7 @@ ms.locfileid: "60556472"
 
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="从下拉列表中选择&quot;管理&quot;。":::
   
-1. 选择 **"高级工具"，** 在" **高级 DNS** 记录"旁边，选择" **管理"**
+1. 选择 **"高级工具"，** 在"高级 DNS 记录"**旁边**，选择"**管理"。**
     
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="在&quot;高级 DNS 记录&quot;旁边，选择&quot;管理&quot;。":::
 

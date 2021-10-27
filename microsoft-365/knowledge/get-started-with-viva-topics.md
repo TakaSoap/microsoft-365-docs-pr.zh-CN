@@ -3,18 +3,19 @@ title: Microsoft Viva 主题入门
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-audience: admin
+audience: enabler, admin
 ms.topic: article
+ms.custom: intro-get-started
 ms.service: o365-administration
 search.appverid: ''
 ms.localizationpriority: medium
 description: 了解发现和浏览主题中信息的新Microsoft Viva方法。
-ms.openlocfilehash: 215282cfcaa81b3fa1d4f35782308989c5eb2434
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 46c66a97237415d24d11e885452d91c788063eee
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152534"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585809"
 ---
 # <a name="get-started-with-microsoft-viva-topics"></a>Microsoft Viva 主题入门
 
@@ -32,7 +33,7 @@ Viva 主题使你可以：
 
 在阅读存储在 Microsoft 365中的内容时，主题将内联突出显示。 将鼠标悬停在主题名称上时，你将看到主题卡片中显示的详细信息。 你可能会看到一条提供有关主题卡和主题页面反馈的提示。 在提供有关主题的反馈时，可改进你自己和他人的体验。 
 
-主题将在整个服务中逐步引入主题要点。 首先，你将在新闻和页面中SharePoint突出显示内容。
+主题将在整个服务中逐步引入主题要点。 首先，你将在新闻和页面中SharePoint突出显示。
 
 ## <a name="find-people-and-content-connected-to-important-topics"></a>查找与重要主题相关的人员及内容 
 

@@ -15,40 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用应用治理功能来治理你的应用。
-ms.openlocfilehash: 78e9570c1c5a19353eb9868a649eba958d23067b
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: d28dec16cad1c54c4b5f8fd0415da3c2811ea989
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478789"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585845"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>开始使用应用治理（预览版）
 
 [![注册应用程序治理免费试用版](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://aka.ms/appgovernancetrial)
 
-要开始将应用治理加载项用于 Microsoft Cloud App Security，需要执行三个步骤：
-
-1. [验证许可和管理员先决条件](#licensing-and-administrator-role-prerequisites)。
-1. [注册应用治理](#sign-up-for-app-governance)。
-1. [Add MCAS 集成](#add-integration-with-mcas)。
-
+如果要开始使用 Microsoft Cloud App Security (MCAS) 应用治理加载项，请首先验证管理员角色和许可要求的先决条件。 然后，你已准备好 [注册应用治理试用版](#sign-up-for-app-governance)。 最后一步是 [激活与 MCAS 的集成](#add-integration-with-mcas)。
 
 ## <a name="sign-up-for-app-governance"></a>注册应用治理
 
-对于现有的 Microsoft 365 客户：
+对于现有 Microsoft 365 客户，可以导航到[免费试用版注册页面](https://aka.ms/appgovernancetrial)，并完成将应用治理添加到租户的步骤。
 
-1. 导航到 [“免费试用注册页”](https://aka.ms/appgovernancetrial)。
-1. 完成添加应用程序治理的步骤。 
-
-<!--
-:::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Simple steps to add app governance to your account.":::
--->
-
-如果还不是 Microsoft 365 客户，则可以注册免费试用版：
-
-1. 在此页面顶部，选择  **“免费账户”**  按钮。
-1. 在  **试用 Microsoft 365 商业版** 下选择 **“免费试用 1 个月”**。
-1. 完成注册步骤。
+如果你还不是 Microsoft 365 客户，可以通过选择此页面顶部的 **免费帐户** 按钮来注册免费试用版。 在“ **试用 Microsoft 365 商业版**”下选择“**试用 1 个月**”，并完成注册的步骤。
 
 要购买应用治理订阅，请联系销售帐户团队。
 
@@ -72,11 +56,11 @@ ms.locfileid: "60478789"
 - Microsoft 365 OAuth 网络钓鱼检测
 - Microsoft 365 OAuth 应用治理
 
-## <a name="licensing-and-administrator-role-prerequisites"></a>许可和管理员角色先决条件
+## <a name="prerequisites"></a>先决条件
 
 1. 验证账户是否有[适当的许可级别](#licensing-for-app-governance)。应用治理是 Microsoft Cloud App Security (MCAS) 的附加功能，因此 MCAS 必须作为独立产品或作为各种许可证包的一部分存在于帐户中。
 1. 必须具有下面列出的 [管理员角色](#administrator-roles) 之一才能访问门户中的应用治理页面。
-1. 组织的帐单地址必须在[北美、欧洲或非洲的支持地区](app-governance-countries.md) 之一，以便激活免费试用。
+1. 组织的账单地址必须位于 WW 区域或 GBR、CAN、JPN、IND 或 AUS 本地区域，才能激活免费试用版。
 
 ### <a name="licensing-for-app-governance"></a>应用治理许可
 

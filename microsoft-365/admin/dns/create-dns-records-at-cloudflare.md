@@ -1,5 +1,5 @@
 ---
-title: 连接 Cloudflare 设置 DNS 记录以Microsoft 365
+title: 连接 Cloudflare 的 DNS 记录以Microsoft 365
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: 了解如何在 Cloudflare for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: 968979be1da5c54a109687df16cb706efb3bdea5
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 80c7a3dded1da9c52f0baf215fcd1c39cd90d4f3
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556455"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586845"
 ---
-# <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>连接 Cloudflare 设置 DNS 记录以Microsoft 365
+# <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>连接 Cloudflare 的 DNS 记录以Microsoft 365
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
 
@@ -39,9 +39,9 @@ ms.locfileid: "60556455"
 
 有两个选项可以设置域的 DNS 记录：
 
-- [**使用域连接**](#use-domain-connect-to-verify-and-set-up-your-domain)如果您尚未使用另一个电子邮件服务提供商设置您的域，请使用 Domain 连接 步骤自动验证和设置要与 Microsoft 365 一Microsoft 365。 
+- [**使用域连接**](#use-domain-connect-to-verify-and-set-up-your-domain)如果您尚未使用另一个电子邮件服务提供商设置域，请使用 Domain 连接 步骤自动验证和设置要与 Microsoft 365 一Microsoft 365。 
 
-或
+    或
 
 - [**使用手动步骤**](#create-dns-records-with-manual-setup) 使用下面的手动步骤验证域，然后选择何时以及向域注册机构添加哪些记录。 这样，您便能够设置新的 MX (邮件) 记录，例如，在方便时。 
 
@@ -52,6 +52,8 @@ ms.locfileid: "60556455"
 1. 在"Microsoft 365 管理中心"中 **，设置"** 域  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>"，然后选择要设置的域。
 
 1. 选择三个点 (更多) >选择"开始 **设置"。**
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="选择&quot;开始设置&quot;。":::
 
 1. On the How do you want to connect your domain？页面，选择"**继续"。**   
 
@@ -75,7 +77,7 @@ ms.locfileid: "60556455"
   
 注册 Cloudflare 时，你使用 Cloudflare 安装过程添加了域。 
   
-你添加的域是从 Cloudflare 或单独的域注册机构购买的。 若要在域中验证和创建域的 DNS Microsoft 365，首先需要更改域注册机构中的名称服务器，以便它们使用 Cloudflare 名称服务器。
+你添加的域是从 Cloudflare 或单独的域注册机构购买的。 若要在 Microsoft 365 中验证和创建域的 DNS 记录，首先需要更改域注册机构中的名称服务器，以便它们使用 Cloudflare 名称服务器。
   
 若要在域注册机构的网站上更改域的名称服务器，请执行以下步骤。
   
@@ -129,9 +131,13 @@ ms.locfileid: "60556455"
   
 1. 在管理中心中，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"。**</a>
     
-2. On the Domains page， select the domain that you're verifying， and select **Start setup**.   
+1. On the Domains page， select the domain that you're verifying， and select **Start setup**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="选择&quot;开始设置&quot;。":::
+
+1. 选择 **继续**。
   
-3. 在“**验证域**”页面上，选择“**验证**”。
+1. 在“**验证域**”页面上，选择“**验证**”。
     
 > [!NOTE]
 > DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -152,7 +158,7 @@ ms.locfileid: "60556455"
     
     | **类型** | **名称** | **邮件服务器** |  **TTL** | **优先级** |
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：** 从 *\<domain-key\>* 你的帐户Microsoft 365帐户。   [如何查找此项？](../get-help-with-domains/information-for-dns-records.md) |30 分钟  <br/> | 1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/>|
+    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：** 从 *\<domain-key\>* 你的帐户获取Microsoft 365帐户。   [如何查找此项？](../get-help-with-domains/information-for-dns-records.md) |30 分钟  <br/> | 1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/>|
    
 5. 选择“**保存**”。
   
@@ -207,12 +213,12 @@ ms.locfileid: "60556455"
   
 ## <a name="advanced-option-skype-for-business"></a>高级选项：Skype for Business
 
-只有组织对联机通信服务（Skype for Business、电话会议和视频呼叫）使用 Microsoft Teams 时，才选择此选项。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
+只有组织将 Skype for Business 用于聊天、电话会议和视频呼叫等联机通信服务时，以及使用 Microsoft Teams。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
 
 ### <a name="add-the-two-required-srv-records"></a>添加两条必需的 SRV 记录
 
 > [!IMPORTANT]
-> 请记住，Cloudflare 负责提供此功能。 如果你看到以下步骤与当前的 Cloudflare GUI (图形用户界面) 差异，请利用[Cloudflare Community](https://community.cloudflare.com/)。 
+> 请记住，Cloudflare 负责提供此功能。 如果你看到以下步骤与图形用户界面用户界面中的当前 Cloudflare GUI (差异) ，请利用[Cloudflare Community](https://community.cloudflare.com/)。 
 
 1. To get started， go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). 系统将会提示您先登录。
       

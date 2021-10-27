@@ -2,8 +2,6 @@
 title: 管理 Microsoft Defender for Endpoint 警报
 description: 使用"管理警报"菜单更改警报的状态、创建抑制规则以隐藏警报、提交注释并查看单个警报的更改历史记录。
 keywords: 管理警报， 管理， 警报， 状态， 新建， 正在进行， 已解决， 解决警报， 抑制， 抑制， 规则， 上下文， 历史记录， 注释， 更改
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6ce6d8f081141214c8d10ea21898fb66e3e0c10
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1d4df8855e9aea643860d21b07473e82019f2323
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205363"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587157"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>管理 Microsoft Defender for Endpoint 警报
 
@@ -80,7 +78,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 2. 选择 **"创建抑制规则"。**
 
-    可以使用这些属性创建抑制条件。 在每种条件之间应用 AND 运算符，因此仅在满足所有条件时才进行抑制。
+    可以使用这些属性创建抑制条件。 在每种条件之间应用 AND 运算符，因此仅在满足所有条件时，才进行抑制。
 
     - 文件 SHA1
     - 文件名 - 支持通配符
@@ -99,7 +97,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 5. 输入规则名称和注释。
 
-6. 单击“**保存**”。
+6. 单击 **“保存”**。
 
 #### <a name="view-the-list-of-suppression-rules"></a>查看抑制规则列表
 
@@ -115,7 +113,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 例如，团队主管可以审阅所有 **新** 警报，并决定将其分配给进行中 **队列** ，以进一步分析。
 
-或者，如果团队领导知道警报是无害的、来自与安全管理员 (（例如属于安全管理员) 的设备）无关，或者正在通过早期警报处理，则他们可以将警报分配给已解决队列。
+或者，如果团队领导知道警报是无害的、来自与安全管理员) 无关的设备（例如属于安全管理员) 的设备）或正在通过早期警报处理，则他们可以将警报分配给已解决队列。 (
 
 ## <a name="alert-classification"></a>警报分类
 

@@ -2,8 +2,6 @@
 title: 调查 Microsoft Defender for Endpoint 中的用户帐户
 description: 调查用户帐户以在调查期间潜在泄露的凭据或透视关联的用户帐户。
 keywords: 调查， 帐户， 用户， 用户实体， 警报， Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f90a029472c03fc45ac5915e56176f7c2527a7cb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 96b1ca9e6a54675418e556d495635d3f689c8fed
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207901"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585929"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的用户帐户
 
@@ -54,13 +52,13 @@ ms.locfileid: "60207901"
 - 用户帐户详细信息、Microsoft Defender 标识警报以及登录的设备、角色、登录类型和其他详细信息
 - 事件和用户设备概述
 - 与此用户相关的警报
-- 在组织中观测 (登录到) 
+- 在组织中观察到 (登录到) 
 
 ![用户帐户实体详细信息页面的图像。](images/atp-user-details-view.png)
 
 ### <a name="user-details"></a>用户详细信息
 
-左侧的用户详细信息窗格提供有关用户的信息，例如相关的打开事件、活动警报、SAM 名称、SID、Microsoft Defender for Identity 警报、用户登录的设备数量、首次看到和最后一次看到用户时、角色和登录类型。 根据你已启用的集成功能，你将看到其他详细信息。 例如，如果你启用 Skype 企业集成，你将能够从门户联系用户。 Azure **ATP** 警报部分包含一个链接，如果你已启用 Microsoft Defender for Identity 功能，并且存在与用户相关的警报，该链接将你指向 Microsoft Defender for Identity 页面。 Microsoft Defender for Identity 页面将提供有关警报详细信息。
+左侧的用户详细信息窗格提供有关用户的信息，例如相关的打开事件、活动警报、SAM 名称、SID、Microsoft Defender for Identity 警报、用户登录的设备数量、首次看到和最后一次看到用户时、角色和登录类型。 根据你已启用的集成功能，你将看到其他详细信息。 例如，如果启用 Skype企业集成，您将能够从门户联系用户。 Azure **ATP** 警报部分包含一个链接，如果你已启用 Microsoft Defender for Identity 功能，并且存在与用户相关的警报，该链接将你指向 Microsoft Defender for Identity 页面。 Microsoft Defender for Identity 页面将提供有关警报详细信息。
 
 > [!NOTE]
 > 你需要在 Microsoft Defender for Identity 和 Defender for Endpoint 上启用集成才能使用此功能。 在 Defender for Endpoint 中，可以在高级功能中启用此功能。 若要详细了解如何启用高级功能，请参阅 [启用高级功能](advanced-features.md)。
@@ -73,7 +71,7 @@ ms.locfileid: "60207901"
 
 ### <a name="alerts"></a>警报
 
-" **警报** "选项卡提供与用户帐户关联的警报列表。 此列表是警报队列的筛选视图，它[](alerts-queue.md)显示用户上下文为所选用户帐户的警报、检测到最后一个活动的日期、警报的简短描述、与警报关联的设备、警报的严重性、队列中警报的状态以及分配了警报的用户。
+" **警报** "选项卡提供与用户帐户关联的警报列表。 此列表是警报队列的筛选视图，显示[](alerts-queue.md)用户上下文为所选用户帐户的警报、检测到最后一个活动的日期、警报的简短描述、与警报关联的设备、警报的严重性、队列中警报的状态以及分配了警报的用户。
 
 ### <a name="observed-in-organization"></a>在组织中观测到
 

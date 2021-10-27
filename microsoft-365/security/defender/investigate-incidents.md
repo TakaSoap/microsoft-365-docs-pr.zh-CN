@@ -2,7 +2,6 @@
 title: 调查事件Microsoft 365 Defender
 description: 调查与设备、用户和邮箱相关的事件。
 keywords: 事件， 事件， 分析， 响应， 计算机， 设备， 用户， 标识， 邮件， 电子邮件， 邮箱， 调查， 图形， 证据
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,14 +22,13 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-- MET150
 ms.technology: m365d
-ms.openlocfilehash: 31dbc29d2aca019c2b2553bb7ffa3082e410aab9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9037b8f721a33f6709f3beefdac6d294c7125333
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209197"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588297"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>调查事件Microsoft 365 Defender
 
@@ -70,7 +68,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 | 节 | 说明 |
 |:-------|:-----|
-| 警报和类别 | 有关攻击对击杀链的前进进度的可视化和数值视图。 与其他 Microsoft 安全产品一样，Microsoft 365 Defender与[MITRE ATT &trade; ](https://attack.mitre.org/)&CK 框架保持一致。 警报时间线显示警报发生的时间顺序，以及每个警报的状态和名称。 |
+| 警报和类别 | 有关攻击对击杀链的前进进度的可视化和数值视图。 与其他 Microsoft 安全产品一样，Microsoft 365 Defender[与 MITRE &trade; ATT](https://attack.mitre.org/)&CK 框架保持一致。 警报时间线显示警报发生的时间顺序，以及每个警报的状态和名称。 |
 | 范围 |  显示受影响设备、用户和邮箱的数量，并按风险级别和调查优先级的顺序列出实体。 |
 | 证据 | 显示受事件影响的实体数。 |
 | 事件信息 | 显示事件的属性，如标记、状态和严重性。 |
@@ -128,7 +126,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 从设备页面，你可以收集有关设备的其他信息，例如其所有警报、时间线和安全建议。 例如，从"时间线"选项卡中，你可以滚动浏览计算机时间线，并按时间顺序查看计算机上观测到的所有事件和行为，这些事件和行为与所引发警报的交错。
 
 > [!TIP]
-> 可以在设备页面上执行按需扫描。 在 Microsoft 365 Defender 门户中，选择"终结点 **>设备清单"。** 选择具有警报的设备，然后运行防病毒扫描。 防病毒扫描等操作会进行跟踪，并且显示在"设备清单 **"页上。** 若要了解更多信息，请参阅在[Microsoft Defender 防病毒运行扫描](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
+> 可以在设备页面上执行按需扫描。 在Microsoft 365 Defender门户中，选择"终结点 **>设备清单"。** 选择具有警报的设备，然后运行防病毒扫描。 防病毒扫描等操作会进行跟踪，并且显示在"设备清单 **"页上。** 若要了解更多信息，请参阅在[Microsoft Defender 防病毒运行扫描](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
 
 ## <a name="users"></a>用户
 
@@ -136,7 +134,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例。":::
 
-可以选择用户的选中标记以查看用户帐户威胁、曝光和联系信息的详细信息。 选择用户名以查看其他用户帐户详细信息。
+可以选择用户的选中标记以查看用户帐户威胁、曝光和联系人信息的详细信息。 选择用户名以查看其他用户帐户详细信息。
 
 了解如何查看其他用户信息，以及如何在调查用户中管理 [事件的用户](investigate-users.md)。
 
@@ -147,7 +145,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="事件的&quot;邮箱&quot;页面示例。":::
 
-您可以选择邮箱的选中标记以查看活动警报列表。 选择邮箱名称以查看 Microsoft Defender for Office 365 的资源管理器页面上的其他邮箱Office 365。
+您可以选择邮箱的选中标记以查看活动警报列表。 选择邮箱名称以查看 Microsoft Defender for Office 365 资源管理器页面上的其他邮箱Office 365。
 
 ## <a name="investigations"></a>调查
 
@@ -163,7 +161,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 - 哪些实体与哪些警报相关，以及它们如何成为攻击的一部分。
 - 事件的警报。
 
-调查图通过将属于攻击的不同可疑实体（如用户、设备和邮箱）连接到其相关资产，帮助您快速了解攻击的完整范围。 
+调查图通过将属于攻击的不同可疑实体连接到其相关资产（如用户、设备和邮箱）来帮助您快速了解攻击的完整范围。 
 
 有关详细信息，请参阅自动[调查和响应Microsoft 365 Defender。](m365d-autoir.md)
 
@@ -173,13 +171,13 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 :::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="事件的证据和响应页面示例。":::
 
-Microsoft 365 Defender自动调查警报中所有事件支持的事件和可疑实体，并提供有关重要电子邮件、文件、进程、服务、IP 地址等的信息。 这可以帮助您快速检测和阻止事件中的潜在威胁。
+Microsoft 365 Defender自动调查警报中所有事件支持的事件和可疑实体，并提供有关重要电子邮件、文件、流程、服务、IP 地址等的信息。 这可以帮助您快速检测和阻止事件中的潜在威胁。
 
-每个被分析的实体都标记为"恶意 (可疑、) 清理"和修正状态。 这可以帮助您了解整个事件的修正状态以及可以采取哪些下一步操作。
+每个被分析的实体都标有"恶意 (、可疑、清理) 和修正状态。 这可以帮助您了解整个事件的修正状态以及可以采取哪些下一步操作。
 
 ## <a name="graph-preview"></a>Graph (预览) 
 
-the **Graph** tab shows the full scope of the attack， how the attack spread through your network over time， where it started， and how a far the attacker went. 它将属于攻击的不同可疑实体与用户、设备和邮箱等相关资产连接在一起。 
+the **Graph** tab shows the full scope of the attack， how the attack spread through your network over time， where it started， and how far the attacker. 它将属于攻击的不同可疑实体与用户、设备和邮箱等相关资产连接在一起。 
 
 从 **"Graph"** 选项卡中，您可以：
 

@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: 了解如何将 SAP SuccessFactors 配置为用于Microsoft Viva Learning。
 ROBOTS: NOINDEX
-ms.openlocfilehash: f7df19cdfa4298c6d5f6b6700c7203205dd1c3de
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 25e5d5df44afcbbf8c3dc11a66cfa8f254290420
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556475"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588049"
 ---
 # <a name="configure-sap-successfactors-as-a-content-source-for-microsoft-viva-learning"></a>将 SAP SuccessFactors 配置为解决方案的内容Microsoft Viva Learning
+
+>[!NOTE]
+>此功能在预览版中不受支持。
 
 本文演示如何将 SAP SuccessFactors 配置为第三方内容源，以用于Microsoft Viva Learning。 首先，你需要在 SuccessFactors 门户中编辑系统配置，然后你需要完成 Microsoft 365 管理中心。
 
@@ -33,7 +36,7 @@ ms.locfileid: "60556475"
 ## <a name="configure-the-successfactors-portal"></a>配置 SuccessFactors 门户
 
 >[!Note]
-> 启用此功能的管理员必须具有对管理员应用程序中 SuccessFactors Learning的访问权限。
+> 启用此功能的管理员必须有权访问成功因素Learning管理员应用程序。
 
 1. 获取所需的工作流以编辑PARTNER_EXTRACT配置，您可以通过访问"系统管理配置""系统配置  >    >    >  "PARTNER_EXTRACT。
 
@@ -59,13 +62,13 @@ partners1.partnerID=
 
 <!--![Image of the PARTNER_EXTRACT configuration settings filled in.](../media/learning/sap-1.png)-->
 
-在 SuccessFactors 门户中完成这些步骤后，你需要完成 Microsoft 365 管理中心。
+在 SuccessFactors 门户中完成这些步骤后，你将需要完成 Microsoft 365 管理中心。
 
 ## <a name="configure-the-microsoft-365-admin-center"></a>配置Microsoft 365 管理中心
 
-1. 导航[到Microsoft 365 管理中心。](https://admin.microsoft.com)
+1. 导航[到](https://admin.microsoft.com)Microsoft 365 管理中心。
 
-2. 导航到  >  **设置"组织设置"。** 搜索 *Viva Learning* 并启用选项中的 SAP SuccessFactors。
+2. 导航到  >  **设置"组织设置"。** 搜索 *Viva Learning* 选项中启用 SAP SuccessFactors。
 
 3. 填写配置详细信息。
 
@@ -81,7 +84,7 @@ partners1.partnerID=
 
 **密码**：输入密码。 请与 LMS 应用程序所有者联系，获取检索密码的帮助。
 
-**文件夹路径**：导航到 **LMS Admin Application**  >  **System Administration**  >  **Configuration** System  >  **Configuration**  >  **PARTNER_EXTRACT**。 获取属性的值 `defaultFtp.path` 。
+**文件夹路径**：导航到 **LMS Admin Application**  >  **System Administration**  >  **Configuration**  >  **System Configuration**  >  **PARTNER_EXTRACT**。 获取属性的值 `defaultFtp.path` 。
 
 **客户端的主机 URL：** 这是 BizX 域 URL。 可以从 BizX 登录 URL 获取此 URL。 例如，如果您的 BizX 登录 URL 为"organization.successfactors.com/sf/start/#/login"，则主机 URL 为"organization.successfactors.com"。
 
@@ -91,7 +94,7 @@ partners1.partnerID=
 
 **PGP 私钥密码**：你需要从提供 PGP 密钥的 IT 管理员或团队获取此值。
 
-**公司 ID：** 登录到 SuccessFactors 门户。 选择配置文件图标，然后选择"**显示版本设置"。** 你可以在此处查看你的公司 ID。
+**公司 ID：** 登录到 SuccessFactors 门户。 选择配置文件图标，然后选择"显示版本 **设置"。** 你可以在此处查看你的公司 ID。
 
 <!--![Image of the steps to find your company ID.](../media/learning/sap-3.png)-->
 

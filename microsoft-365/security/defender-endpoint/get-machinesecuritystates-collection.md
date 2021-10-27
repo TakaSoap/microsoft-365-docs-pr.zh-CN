@@ -15,12 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 320f2bfd06f7f01c15419f4bd6dc0eb5536079f0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: af3881a5215871b0405f2f6b42b73c248af0c00c
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176807"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586869"
 ---
 # <a name="get-machines-security-states-collection-api"></a>获取计算机安全状态集合 API
 
@@ -51,7 +52,7 @@ GET /testwdatppreview/machinesecuritystates
 
 标头|值
 :---|:---
-Authorization|Bearer {token}。 **必需**。
+Authorization|Bearer {token}。 必需。
 内容类型|application/json
 
 ## <a name="request-body"></a>请求正文
@@ -75,7 +76,7 @@ Content-type: application/json
 
 ### <a name="response-example"></a>响应示例
 
-下面是一个响应示例。
+以下是响应示例。
 
 字段 *ID* 包含设备 ID，并且等于设备信息中的字段 *ID**。
 

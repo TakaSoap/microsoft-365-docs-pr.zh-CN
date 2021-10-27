@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 72f8b5e32f02ccef028e6d1bccb7bec942ce5d48
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c8a51358d18edaf4bab680d2c63268638eca3283
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556324"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585925"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -43,7 +43,7 @@ ms.locfileid: "60556324"
 
 ## <a name="configuration-profile-structure"></a>配置文件结构
 
-配置文件是一个 .json 文件，由键 (它表示首选项) 的名称，后跟一个值，具体取决于首选项的性质标识的条目。 值可以是简单的（如数字值）或复杂值（如嵌套的首选项列表）。
+配置文件是一个 .json 文件，它由键 (标识的条目表示首选项) 的名称，后跟一个值，具体取决于首选项的性质。 值可以是简单的（如数字值）或复杂值（如嵌套的首选项列表）。
 
 通常，你将使用配置管理工具在 位置推送名称 ```mdatp_managed.json``` 为 的文件 ```/etc/opt/microsoft/mdatp/managed/``` 。
 
@@ -66,7 +66,7 @@ ms.locfileid: "60556324"
 
 #### <a name="enable--disable-real-time-protection"></a>启用/禁用实时保护
 
-确定是否在启用实时 (时扫描) 文件。
+确定是否在启用实时 (时扫描文件) 文件。
 
 <br>
 
@@ -100,6 +100,22 @@ ms.locfileid: "60556324"
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|适用于终结点版本 100.67.60 或更高版本的 Defender 中可用。|
 |
+
+
+#### <a name="enabledisable-behavior-monitoring"></a>启用/禁用行为监视 
+
+确定是否在设备上启用行为监视和阻止功能。若要提高安全保护的有效性，我们建议保持启用此功能。
+
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**键**|name|
+|**数据类型**|String|
+|**可能的值**|disabled <p> 已启用 (默认) |
+|**Comments**|适用于终结点版本 101.45.00 或更高版本的 Defender 中可用。|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>更新定义后运行扫描
 
@@ -169,7 +185,7 @@ ms.locfileid: "60556324"
 #### <a name="scan-exclusions"></a>扫描排除项
 
 从扫描中排除的实体。 排除项可以通过完整路径、扩展名或文件名指定。
- (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量的元素。) 
+ (排除项指定为项目数组，管理员可以按任意顺序指定所需数量的元素。) 
 
 <br>
 
@@ -247,7 +263,7 @@ ms.locfileid: "60556324"
 
 ##### <a name="process-excluded-from-the-scan"></a>从扫描中排除的进程*
 
-指定从扫描中排除所有文件活动的进程。 可以通过进程的名称或名称来指定 (例如，) 或完整 (`cat` 例如 `/bin/cat` ，) 。
+指定从扫描中排除所有文件活动的进程。 可以通过进程的名称或名称来指定 (例如，) 或完整 `cat` (，例如 `/bin/cat`) 。
 
 <br>
 
@@ -258,12 +274,12 @@ ms.locfileid: "60556324"
 |**键**|name|
 |**数据类型**|String|
 |**可能的值**|任何字符串|
-|**Comments**|仅在 *排除**$type FileName 时适用*|
+|**Comments**|仅在排除 *$type FileName 时适用*|
 |
 
 #### <a name="allowed-threats"></a>允许的威胁
 
-威胁列表 (名称标识) 产品未阻止但允许运行的威胁列表。
+威胁列表 (名称) 产品未阻止但允许运行的威胁列表。
 
 <br>
 
@@ -342,7 +358,7 @@ ms.locfileid: "60556324"
 
 #### <a name="threat-type-settings-merge-policy"></a>威胁类型设置合并策略
 
-指定威胁类型设置的合并策略。 它可以是管理员定义的设置和用户定义的设置 () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
+指定威胁类型设置的合并策略。 这可以是管理员定义的设置和用户定义的设置 () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
 
 <br>
 
@@ -438,7 +454,7 @@ ms.locfileid: "60556324"
 确定是否将 (可能包含威胁的可疑) 发送给 Microsoft。 有三个级别用于控制示例提交：
 
 - **无**：不会向 Microsoft 提交任何可疑样本。
-- **保险箱：** 只有不包含个人身份信息或个人身份信息的可疑 (将自动) 提交。 这是此设置的默认值。
+- **保险箱：** 仅自动提交不包含个人身份信息或个人身份 (的) 样本。 这是此设置的默认值。
 - **全部**：所有可疑示例都提交到 Microsoft。
 
 <br>
@@ -473,19 +489,21 @@ ms.locfileid: "60556324"
 
 以下配置文件将：
 
-- 启用 RTP (实时) 
+- 启用实时保护 (RTP) 
 - 指定如何处理以下威胁类型：
   - **阻止 PUA (可能不需要)** 的应用程序
   - **存档 (** 高压缩率的文件) 审核到产品日志
 - 启用自动安全智能更新
 - 启用云保护
 - 启用级别的自动示例 `safe` 提交
+- 启用行为监视
 
 ### <a name="sample-profile"></a>示例配置文件
 
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
       "threatTypeSettings":[
          {
@@ -516,6 +534,7 @@ ms.locfileid: "60556324"
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
@@ -601,4 +620,4 @@ python -m json.tool mdatp_managed.json
 
 ## <a name="configuration-profile-deployment"></a>配置文件部署
 
-为企业生成配置文件后，可以通过企业使用的管理工具进行部署。 Linux 上的 Defender for Endpoint 从 */etc/opt/microsoft/mdatp/managed/mdatp_managed.json 文件中读取托管* 配置。
+为企业生成配置文件后，可以通过企业使用的管理工具进行部署。 Linux 上的 Defender for Endpoint 从 */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* 文件读取托管配置。

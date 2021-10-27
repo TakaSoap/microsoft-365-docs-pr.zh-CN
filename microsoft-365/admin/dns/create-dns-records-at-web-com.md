@@ -1,5 +1,5 @@
 ---
-title: 连接 DNS 记录，web.com dns Microsoft 365
+title: 连接 DNS 记录 web.com Microsoft 365
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -21,15 +21,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录，web.com Microsoft。
-ms.openlocfilehash: 0a8f3db894ee3171f6b086a1eeefbdaf7a7c841a
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+description: 了解如何验证域，并设置适用于 Microsoft Skype for Business Online 和其他服务的 DNS web.com。
+ms.openlocfilehash: b95fd5412b7ddc4363e8d5e4ea345c1f551feef8
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556470"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586797"
 ---
-# <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>连接 DNS 记录，web.com dns Microsoft 365
+# <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>连接 DNS 记录 web.com Microsoft 365
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
@@ -45,7 +45,7 @@ ms.locfileid: "60556470"
 > [!IMPORTANT]
 > 必须在购买和注册域的域注册机构中执行此过程。 
   
-注册域 web.com，即使用"设置"过程 web.com **域** 。 
+注册域 web.com，即使用"注册 web.com **添加域** 。 
   
 若要在 Microsoft 中验证和创建域的 DNS 记录，首先需要更改域注册机构中的名称服务器，以便它们使用 web.com 的名称服务器。
   
@@ -105,13 +105,17 @@ ms.locfileid: "60556470"
     
 在在域注册机构网站添加了记录后，你将返回到 Microsoft 并请求记录。 Microsof 找到正确的 TXT 记录表明域已通过验证。
   
-若要验证记录，Microsoft 365：
+若要验证记录是否Microsoft 365：
   
 1. 在管理中心中，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"。**</a>
     
-2. On the Domains page， select the domain that you're verifying， and select **Start setup**.   
+1. On the Domains page， select the domain that you're verifying， and select **Start setup**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="选择&quot;开始设置&quot;。":::
+
+1. 选择 **继续**。
   
-3. 在“**验证域**”页面上，选择“**验证**”。
+1. 在“**验证域**”页面上，选择“**验证**”。
     
 > [!NOTE]
 > DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。
@@ -169,7 +173,7 @@ ms.locfileid: "60556470"
 1. 选择或复制并粘贴下表中的值。 
     
     |**引用** | **主机名** | **别名**|**TTL**|
-    |:-----|:-----|:-----|
+    |:-----|:-----|:-----|:-----|
     | 其他主机  <br/>| 自动发现  <br/>| autodiscover.outlook.com  <br/> | 1 Hour  <br/>  |
   
 1. 选择 **"添加"。**
@@ -207,7 +211,7 @@ ms.locfileid: "60556470"
   
 ## <a name="advanced-option-skype-for-business"></a>高级选项：Skype for Business
 
-只有组织对联机通信服务（Skype for Business、电话会议和视频呼叫）使用 Microsoft Teams 时，才选择此选项。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
+只有组织将 Skype for Business 用于联机通信服务（如聊天、电话会议和视频呼叫）以及 Microsoft Teams。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
 
 ### <a name="add-the-two-required-srv-records"></a>添加两条必需的 SRV 记录
 

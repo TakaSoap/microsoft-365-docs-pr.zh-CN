@@ -2,8 +2,6 @@
 title: 在 Microsoft Defender for Endpoint 中调查使用实时响应的设备上的实体
 description: 使用安全的远程 Shell 连接访问设备，以执行调查工作，并实时对设备执行即时响应操作。
 keywords: 远程， shell， 连接， 实时， 响应， 实时， 命令， 脚本， 修正， 搜寻， 导出， 日志， 拖放， 下载， 文件，
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c7a078fdd618cd3b5070063d4fa7529c9c7f6216
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 07091dfaa997ff0415ecdb981b0b26f301cf0dce
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553792"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587169"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -40,7 +38,7 @@ ms.locfileid: "60553792"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW]
 
-通过实时响应，分析员可以执行以下所有任务：
+使用实时响应，分析员可以执行以下所有任务：
 
 - 运行基本和高级命令以在设备上执行调查工作。
 - 下载恶意软件示例和 PowerShell 脚本结果等文件。
@@ -52,14 +50,14 @@ ms.locfileid: "60553792"
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的 Windows。**
+- **验证是否正在运行受支持的** Windows 版本。
 
   设备必须运行以下版本之一Windows
 
   - **Windows 10 & 11**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
     - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [版本 1809 (RS 5 ](/windows/whats-new/whats-new-windows-10-version-1809)) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [版本 1809 (RS 5) ](/windows/whats-new/whats-new-windows-10-version-1809) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
@@ -67,7 +65,7 @@ ms.locfileid: "60553792"
   
   - **Linux** - 仅适用于公共预览版，最低要求版本：101.45.13 
     
-  - **Windows Server 2012 R2** - 具有 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+  - **Windows Server 2012 R2** - 使用 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
   
   - **Windows Server 2016** - 使用 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
 
@@ -114,7 +112,7 @@ ms.locfileid: "60553792"
   只有已预配了相应权限的用户才能启动会话。 有关角色分配详细信息，请参阅 [创建和管理角色](user-roles.md)。
 
   > [!IMPORTANT]
-  > 将文件上载到库的选项仅适用于具有"管理安全性设置"权限的用户。
+  > 将文件上载到库的选项仅适用于具有"管理安全管理设置"权限的用户。
   > 对于仅具有委派权限的用户，按钮显示为灰色。
 
   根据已授予的角色，可以运行基本或高级实时响应命令。 用户权限由 RBAC 自定义角色控制。
@@ -250,13 +248,13 @@ ms.locfileid: "60553792"
 
 #### <a name="to-upload-a-file-in-the-library"></a>上载库中的文件
 
-1. 单击 **Upload文件到库。**
+1. 单击 **Upload文件到库"**。
 
 2. 单击 **"** 浏览"，然后选择文件。
 
 3. 提供简要说明。
 
-4. 指定是否覆盖同名文件。
+4. 指定您是否要覆盖同名的文件。
 
 5. 如果需要，请了解脚本需要哪些参数，请选中"脚本参数"复选框。 在文本字段中，输入示例和说明。
 
@@ -302,7 +300,7 @@ ms.locfileid: "60553792"
   <command name> -param2_name param2
   ```
 
-- 使用具有必备命令的命令时，可以使用标志：
+- 在使用具有必备命令的命令时，可以使用标志：
 
   ```powershell
   <command name> -type file -id <file path> - auto

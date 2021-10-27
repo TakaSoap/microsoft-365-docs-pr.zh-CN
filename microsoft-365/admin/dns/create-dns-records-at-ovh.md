@@ -1,5 +1,5 @@
 ---
-title: 连接 OVH 的 DNS 记录，Microsoft 365
+title: 连接 OVH 将 DNS 记录Microsoft 365
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: 了解如何在 OVH for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: c7f5516ba9f50ea25f82d4511c542227d6d98453
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 7da9094a5d4cff2f93ab87251b29fc81bedc51ca
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556471"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587001"
 ---
-# <a name="connect-your-dns-records-at-ovh-to-microsoft-365"></a>连接 OVH 的 DNS 记录，Microsoft 365
+# <a name="connect-your-dns-records-at-ovh-to-microsoft-365"></a>连接 OVH 将 DNS 记录Microsoft 365
 
 如果找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.yml)。 
   
@@ -71,7 +71,7 @@ ms.locfileid: "60556471"
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |（保留为空白）  <br/> |3600 (秒)   <br/> |MS=msxxxxxxxx  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
-1. 选择“**下一步**”。
+1. 选择 **下一步**。
 
 1. 选择“**确认**”。 
     
@@ -81,13 +81,17 @@ ms.locfileid: "60556471"
     
 在在域注册机构网站添加了记录后，你将返回到 Microsoft 并请求记录。 Microsof 找到正确的 TXT 记录表明域已通过验证。
  
-若要验证域中的域，Microsoft 365：
- 
+若要验证记录是否Microsoft 365：
+  
 1. 在管理中心中，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"。**</a>
     
-2. On the Domains page， select the domain that you're verifying， and select **Start setup**.   
+1. On the Domains page， select the domain that you're verifying， and select **Start setup**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="选择&quot;开始设置&quot;。":::
+
+1. 选择 **继续**。
   
-3. 在“**验证域**”页面上，选择“**验证**”。
+1. 在“**验证域**”页面上，选择“**验证**”。
     
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -195,8 +199,8 @@ ms.locfileid: "60556471"
 1. In the boxes for the new record, type or copy and paste the following values. 若要分配 TTL 值， **请从** 下拉列表中选择"自定义"，然后在文本框中键入该值。 
     
     |**子域**|**TTL**|**值**|
-    |:-----|:-----|:-----|:-----|
-    |（保留为空白）  <br/> |3600 (秒)   <br/> |v=spf1 include：spf.protection.outlook.com -all <br/**注意：** 我们建议复制并粘贴此条目，以便所有空格保持正确。           |
+    |:-----|:-----|:-----|
+    |（保留为空白）  <br/> |3600 (秒)   <br/> |v=spf1 include：spf.protection.outlook.com -all <br/**注意：** 我们建议复制并粘贴此条目，以便保持正确所有空格。           |
    
     ![OVH 为 SPF 添加 TXT 记录。](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   

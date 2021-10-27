@@ -2,8 +2,6 @@
 title: 对 Microsoft Defender for Endpoint 中的文件执行响应操作
 description: 通过停止和隔离文件或阻止文件并检查活动详细信息，对与文件相关的警报执行响应操作。
 keywords: 响应、停止和隔离、阻止文件、深入分析
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 816e08c4c6ba3b2a50c981401163531d2b5d63c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6fad903cc5e5839afea6f87f06a7435cadf0eb66
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198153"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587549"
 ---
 # <a name="take-response-actions-on-a-file"></a>对文件执行响应操作
 
@@ -47,9 +45,9 @@ ms.locfileid: "60198153"
 - 咨询威胁专家
 - 操作中心
 
-还可以提交文件进行深入分析，以在安全的云沙盒中运行该文件。 分析完成后，您将获得提供有关文件行为的信息的详细报告。 可以通过选择"深入分析"选项卡来提交文件进行深入分析并阅读 **过去的** 报告。它位于文件信息卡下方。
+还可以提交文件进行深入分析，以在安全的云沙盒中运行该文件。 分析完成后，您将获得提供有关文件行为的信息的详细报告。 可以通过选择"深入分析"选项卡来提交文件进行深入分析并阅读 **过去** 的报告。它位于文件信息卡下方。
 
-某些操作需要某些权限。 下表介绍了某些权限对 PE 文件和非 PE (可执行) 可以执行哪些操作：
+某些操作需要某些权限。 下表介绍了某些权限对 PE 文件和非 PE (可执行文件) 的操作：
 
 <br>
 
@@ -72,13 +70,13 @@ ms.locfileid: "60198153"
 > [!IMPORTANT]
 > 只有在：
 >
-> - 正在采取操作的设备正在运行Windows 10版本 1703 或更高版本
+> - 正在采取操作的设备正在运行Windows 10版本 1703 或更高版本，Windows 11
 > - 该文件不属于受信任的第三方发布者，或者未由 Microsoft 签名
 > - Microsoft Defender 防病毒必须至少在被动模式下运行。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
 停止 **和隔离文件** 操作包括停止正在运行的进程、隔离文件以及删除永久性数据（如注册表项）。
 
-此操作在具有 Windows 10 版本 1703 或更高版本的设备（过去 30 天内观测到该文件）上生效。
+此操作在具有 Windows 10 版本 1703 或更高版本以及 Windows 11 的设备（过去 30 天内观测到该文件）上生效。
 
 > [!NOTE]
 > 你将能够随时从隔离区还原文件。
@@ -148,7 +146,7 @@ ms.locfileid: "60198153"
 
 ## <a name="download-or-collect-file"></a>下载或收集文件
 
-从 **响应** 操作中选择"下载文件"，可下载包含文件.zip受密码保护的本地文件存档。 将出现一个飞出图，可在其中记录下载文件的原因并设置密码。
+从 **响应** 操作中选择"下载文件"，可下载包含.zip受密码保护的本地文件存档。 将出现一个飞出图，可在其中记录下载文件的原因并设置密码。
 
 默认情况下，您应该能够下载隔离的文件。
 
@@ -156,11 +154,11 @@ ms.locfileid: "60198153"
 
 ### <a name="download-quarantined-files"></a>下载隔离文件
 
-你的安全团队或Microsoft Defender 防病毒隔离的文件将按照你的提交配置示例以合规[方式保存](enable-cloud-protection-microsoft-defender-antivirus.md)。 安全团队可以通过"下载文件"按钮直接从文件的详细信息页面下载文件。 **默认情况下，此预览功能为"开"。**
+已由安全Microsoft Defender 防病毒安全团队隔离的文件将按照你的示例提交配置以合规[方式保存](enable-cloud-protection-microsoft-defender-antivirus.md)。 安全团队可以通过"下载文件"按钮直接从文件的详细信息页面下载文件。 **默认情况下，此预览功能为"开"。**
 
 位置取决于组织的地理位置设置 (欧盟、英国或美国) 。 每个组织仅收集一次隔离文件。 若要详细了解 Microsoft 数据保护，请通过 服务信任门户了解 https://aka.ms/STP 。
 
-启用此设置可帮助安全团队检查潜在的错误文件，并快速且风险较低地调查事件。 但是，如果你需要关闭此设置，请转到设置 \> **终结点** 高级 \> **功能** \> **下载隔离** 文件以调整设置。 [详细了解高级功能](advanced-features.md)
+启用此设置可帮助安全团队检查潜在的错误文件，并快速且风险较低地调查事件。 但是，如果你需要关闭此设置，请转到设置终结点高级 \>  \> **功能** \> **下载隔离** 文件以调整设置。 [详细了解高级功能](advanced-features.md)
 
 #### <a name="backing-up-quarantined-files"></a>备份隔离的文件
 
@@ -171,11 +169,11 @@ ms.locfileid: "60198153"
 > [!IMPORTANT]
 > 下载隔离文件要求：
 >
-> - 你的组织Microsoft Defender 防病毒活动模式
+> - 你的组织在Microsoft Defender 防病毒模式下使用用户
 > - 防病毒引擎版本为 1.1.17300.4 或更高版本。 请参阅 [每月平台和引擎版本](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 > - 启用基于云的保护。 请参阅 [启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - 示例提交已打开
-> - 设备具有 Windows 10 1703 或更高版本、Windows Server 2016 或 2019 或 Windows Server 2022
+> - 设备具有 Windows 10 版本 1703 或更高版本、Windows Server 2016 或 2019、Windows Server 2022 或 Windows 11
 
 ### <a name="collect-files"></a>收集文件
 
@@ -192,8 +190,8 @@ ms.locfileid: "60198153"
 > - 如果你的组织使用云保护并启用Microsoft Defender 防病毒，此功能可用。 有关详细信息，请参阅管理 [云提供的保护](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 >
 > - 反恶意软件客户端版本必须为 4.18.1901.x 或更高版本。
-> - 此功能旨在防止从 (下载可疑的恶意软件) 潜在的恶意文件。 它当前支持可移植的可执行 (PE) _文件，包括_.exe和 _.dll_ 文件。 覆盖范围将随着时间的推移而延长。
-> - 此响应操作适用于 Windows 10 版本 1703 或更高版本上的设备。
+> - 此功能旨在防止从 web (可疑的恶意软件) 潜在的恶意文件。 它当前支持可移植的可执行 (PE) _文件，包括_.exe和 _.dll_ 文件。 覆盖范围将随着时间的推移而延长。
+> - 此响应操作适用于 Windows 10 版本 1703 或更高版本Windows 11。
 > - 如果在允许或阻止操作之前文件分类存在于设备的缓存中，则不能对文件执行允许或阻止功能。
 
 > [!NOTE]
@@ -203,7 +201,7 @@ ms.locfileid: "60198153"
 
 ### <a name="enable-the-block-file-feature"></a>启用阻止文件功能
 
-若要开始阻止文件，首先需要打开"阻止或允许"[功能设置。  ](advanced-features.md)
+若要开始阻止文件，首先需要打开"[](advanced-features.md)阻止或允许"设置。
 
 ### <a name="allow-or-block-file"></a>允许或阻止文件
 
@@ -215,7 +213,7 @@ ms.locfileid: "60198153"
 
 若要停止阻止文件，请删除指示器。 您可以通过文件配置文件页上 **的"编辑** 指示器"操作来这样做。 在添加指示器之前，此操作将在与 **添加指示器操作** 相同的位置可见。
 
-还可以在"规则指示器 **"下的****"设置"页面** \> **编辑指示器**。 此区域中的指示器按其文件的哈希列出。
+还可以在"规则指示器"下的"设置"**页面** \> **编辑指示器**。 此区域中的指示器按其文件的哈希列出。
 
 ## <a name="consult-a-threat-expert"></a>咨询威胁专家
 
@@ -240,8 +238,8 @@ ms.locfileid: "60198153"
 
 网络安全调查通常由警报触发。 警报与一个或多个观察到的文件相关，这些文件通常是新的或未知的。 选择文件后，你将看到文件视图，可在其中查看文件的元数据。 若要丰富与文件相关的数据，可以提交文件进行深入分析。
 
-深度分析功能在安全的、完全检测的云环境中执行文件。 深度分析结果显示文件的活动、观察到的行为和相关项目，如丢弃的文件、注册表修改以及与 IP 的通信。
-深度分析目前支持对可移植可执行文件 (PE) 文件 _(包括.exe_ 和 _.dll文件_) 。
+深度分析功能在安全的、完全检测的云环境中执行文件。 深度分析结果显示文件的活动、观察到的行为以及关联的项目，例如丢弃的文件、注册表修改以及与 IP 的通信。
+深度分析当前支持对可移植可执行文件 (PE) 文件 _(包括.exe_ 和 _.dll文件_) 。
 
 文件的深入分析需要几分钟。 文件分析完成后，"深入分析"选项卡将更新以显示摘要以及最新可用结果的日期和时间。
 
@@ -253,12 +251,12 @@ ms.locfileid: "60198153"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
-**当文件在** Defender for Endpoint 后端示例集合中可用时，或在支持提交到深入分析的 Windows 10 设备上观察到该文件时，将启用提交进行深度分析。
+**当文件在** Defender for Endpoint 后端示例集合中可用时或在支持提交到深入分析的 Windows 10 设备上观察到该文件时，将启用提交进行深度分析。
 
 > [!NOTE]
-> 只能自动Windows 10文件。
+> 只有来自Windows 10和Windows 11的文件可以自动收集。
 
-如果文件未在 Windows 10 设备上观测到，还可以通过 [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx)安全中心门户提交示例，并等待"提交"**进行** 深入分析按钮变为可用。
+如果文件未在 Windows 10 设备 (或 Windows 11) 上观察到，还可以通过 [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx)安全中心门户提交示例，并等待"提交"**进行** 深入分析按钮变为可用。
 
 > [!NOTE]
 > 由于 Microsoft 安全中心门户中的后端处理流，文件提交和 Defender for Endpoint 中深入分析功能的可用性之间最多存在 10 分钟的延迟。
@@ -281,7 +279,7 @@ ms.locfileid: "60198153"
    将显示一个进度栏，并提供有关分析的不同阶段的信息。 然后，您可以在分析完成时查看报告。
 
 > [!NOTE]
-> 根据设备可用性，示例收集时间可能会有所不同。 示例集合有 3 小时超时。 如果当时没有联机设备报告，该集合Windows 10将中止操作。 你可以重新提交文件进行深入分析，以获得文件的新数据。
+> 根据设备可用性，示例收集时间可能会有所不同。 示例集合有 3 小时超时。 如果当时没有联机设备或Windows 10报告， (Windows 11) 操作将中止。 你可以重新提交文件进行深入分析，以获得文件的新数据。
 
 ### <a name="view-deep-analysis-reports"></a>查看深入分析报告
 
@@ -303,7 +301,7 @@ ms.locfileid: "60198153"
 
 如果在尝试提交文件时遇到问题，请尝试以下每个疑难解答步骤。
 
-1. 确保该文件是 PE 文件。 PE 文件 _通常具有.exe__或.dll_ 可执行 (应用程序的扩展) 。
+1. 确保该文件是 PE 文件。 PE 文件 _通常具有.exe__或.dll_ 扩展 (可执行程序或应用程序) 。
 
 2. 确保服务具有对文件的访问权限，它仍然存在，并且尚未损坏或修改。
 

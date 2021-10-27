@@ -14,18 +14,21 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: medium
-description: 了解如何将 Saba 配置为学习内容源，Microsoft Viva Learning。
+description: 了解如何将 Saba 配置为 Microsoft Viva Learning 的学习内容源。
 ROBOTS: NOINDEX
-ms.openlocfilehash: 26af97604b071e621794937d45882c98fdef0d31
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e259c7d7af3a7ff645017b2eccf76ff89c9a0bdf
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556583"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587309"
 ---
 # <a name="configure-saba-as-a-content-source-for-microsoft-viva-learning"></a>将 Saba 配置为网站内容Microsoft Viva Learning
 
-本文演示如何将 Saba 配置为用于 web 应用程序的第三方Microsoft Viva Learning。 您必须是 Saba 系统管理员或超级用户才能执行这些步骤。
+>[!NOTE]
+>此功能在预览版中不受支持。
+
+本文演示如何将 Saba 配置为用于 web 应用程序的第三方学习内容Microsoft Viva Learning。 您必须是 Saba 系统管理员或超级用户才能执行这些步骤。
 
 >[!NOTE]
 >通过 Viva Learning的内容受 Microsoft 产品条款外的其他条款所规定。 Saba 内容和任何关联的服务都受 Saba 的隐私和服务条款的约束。
@@ -48,7 +51,7 @@ ms.locfileid: "60556583"
 
 ## <a name="username-and-password"></a>用户名和密码
 
-提供管理帐户的用户名和密码，以便Microsoft Viva REST API 从 Saba 云拉取课程、完成以及相关信息。 理想情况下，此帐户应为超级用户。 如果帐户不是超级用户，它必须至少具有 **Learning Admin -** Catalog Builder 和 Human **Capital Admin** 角色 (或等效的自定义安全角色) 位于萨巴。
+提供管理帐户的用户名和密码，Microsoft Viva REST API 从 Saba 云拉取课程、完成以及相关信息。 理想情况下，此帐户应为超级用户。 如果该帐户不是超级用户，它必须至少具有 **Learning 管理员 -** 目录生成器和人力资源管理员角色 (或等效的自定义安全角色) 位于萨巴。
 
 ## <a name="last-steps"></a>最后的步骤
 
@@ -58,14 +61,14 @@ ms.locfileid: "60556583"
 2. 导航到 **"设置"，** 再导航到"**组织设置"。** Select Viva Learning and enable Saba Cloud from the panel.
 3. 填写从 Saba 门户获得的详细信息。
     >[!NOTE]
-    >显示名称是循环式会议的名称，在它下，Saba 学习内容将在 Viva Learning 中显示。 如果不输入新名称，则会显示默认名称"Saba Cloud"。
+    >"显示名称"是组织在 Viva Learning 中显示 Saba 学习内容时进行循环Learning。 如果不输入新名称，则会显示默认名称"Saba Cloud"。
 
     <!--![Image of where you post configuration details in the admin center.](../media/learning/saba-3.png)-->
 
 4. 选择 **"保存**"以激活 Microsoft Viva Learning 中的 Saba 云Microsoft Viva Learning。 内容可能需要 24 小时才能显示在 Viva Learning。
 
 > [!Note]
-> 对于 Saba 云集成，主机 URL 中 sabacloud.com 一个域。 如果你有不同的域名，你将需要提出支持票证以允许你的域名。
+> 对于 Saba 云集成，您需要在主机 URL sabacloud.com 一个域。 如果你有不同的域名，你将需要提出支持票证以允许你的域名。
 
 ## <a name="data-residency"></a>数据驻留
 
@@ -73,4 +76,4 @@ ms.locfileid: "60556583"
 
 ## <a name="roles-and-permissions"></a>角色和权限
 
-目前，组织内的所有用户将能够发现所有租户特定的课程。 但是，他们只能使用他们有权访问的课程。 根据角色和权限 (用户特定的内容发现) 计划在未来推出。
+目前，组织内的所有用户将能够发现所有租户特定的课程。 但是，他们只能使用他们有权访问的课程。 根据角色和权限 (用户特定的内容) 计划在未来推出。

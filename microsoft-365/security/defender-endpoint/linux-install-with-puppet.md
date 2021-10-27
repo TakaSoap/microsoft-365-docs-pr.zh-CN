@@ -2,7 +2,7 @@
 title: 使用部署在 Linux 上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 介绍如何使用安装程序在 Linux 上部署 Microsoft Defender for Endpoint。
-keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
+keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos， fedora， amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4309155fa078b4a851838e528f4c47f2ef6569eb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3c3832cb8f5783d7e972fd41f4d9e56a650390e2
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152234"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585952"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>使用部署在 Linux 上的 Microsoft Defender for Endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "60152234"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-本文介绍了如何使用部署在 Linux 上部署适用于 Endpoint 的 Defender。 成功的部署需要完成以下所有任务：
+本文介绍如何使用部署在 Linux 上使用部署适用于终结点的 Defender。 成功的部署需要完成以下所有任务：
 
 - [下载载入程序包](#download-the-onboarding-package)
 - [创建清单](#create-a-puppet-manifest)
@@ -79,7 +79,7 @@ ms.locfileid: "60152234"
 
 你需要创建一个清单，用于将 Linux 上的 Defender for Endpoint 部署到由开发工具服务器管理的设备上。 此示例使用了从 *labs中* 提供的 apt 和 *yumrepo* 模块，并假定模块已安装在了您的开发工具服务器上。
 
-在安装 *Install_mdatp模块文件夹* 下创建 *install_mdatp/文件和install_mdatp/* 清单"文件夹。 此文件夹通常位于安装服务器 */etc/moduleslabs/code/environments/production/modules* 中。 将上面创建的 mdatp_onboard.json 文件复制到 *install_mdatp/files* 文件夹。 创建 *init.pp* 包含部署说明的文件：
+在安装 *Install_mdatp模块文件夹* 下创建 *install_mdatp/* 文件和清单文件夹。 此文件夹通常位于安装服务器 */etc/moduleslabs/code/environments/production/modules* 中。 将上面创建的 mdatp_onboard.json 文件复制到 *install_mdatp/files* 文件夹。 创建 *init.pp* 包含部署说明的文件：
 
 ```bash
 pwd
@@ -115,12 +115,12 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (如�
 在下面的命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
 > [!NOTE]
-> 对于 RedHat、Oracle EL 和 CentOS 8，将 *[distro]* 替换为"rhel"。
+> 对于 RedHat、Oracle Linux、Amazon Linux 2 和 CentOS 8，将 *[distro]* 替换为"rhel"。
 
 ```puppet
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
 # @param channel The release channel based on your environment, insider-fast or prod.
-# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle EL, and CentOS 8, the distro variable should be 'rhel'.
+# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle Linux, Amazon Linux 2, and CentOS 8, the distro variable should be 'rhel'.
 # @param version The Linux distribution release number, e.g. 7.4.
 
 class install_mdatp (
@@ -225,7 +225,7 @@ mdatp health --field healthy
 > [!IMPORTANT]
 > 当产品首次启动时，它将下载最新的反恶意软件定义。 根据您的 Internet 连接，这最多可能需要几分钟。 在此期间，上述命令将返回 的值 `0` 。
 
-如果产品运行不正常， (检查的退出代码) `echo $?` 问题：
+如果产品运行不正常， (检查退出代码) `echo $?` 问题：
 
 - 1（如果设备尚未载入）。
 - 3（如果无法建立与守护程序的连接）。
@@ -240,7 +240,7 @@ mdatp health --field healthy
 
 ## <a name="uninstallation"></a>卸载
 
-在 *init.pp* remove_mdatp与install_mdatp内容类似的模块 文件：
+创建一个 *remove_mdatp**模块*，install_mdatp *init.pp* 中的以下内容类似的模块 文件：
 
 ```bash
 class remove_mdatp {
