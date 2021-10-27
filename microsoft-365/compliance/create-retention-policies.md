@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 4a1a0c5334772d9259278d884090c75d8441df22
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: d899b611608642873a84ffe5681719fef0e9581e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432597"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586689"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -80,7 +80,7 @@ ms.locfileid: "60432597"
 
 4. 具体取决于所选范围：
     
-    - 如果选择 **自适应**： 在 **选择自适应策略范围和位置** 页上，选择 **添加** 范围，然后选择已创建的一个或多个自适应作用域。 然后，选择一个或多个位置。 可以选择的位置取决于添加的[范围类型](retention-settings.md#configuration-information-for-adaptive-scopes)。 例如，如果只添加了 **用户** 的作用域类型，则可以选择 **Teams 聊** 天，但不能 **Teams 频道消息**。 
+    - 如果选择 **自适应**: 在 **选择自适应策略作用域和位置** 页面上，选择 **添加作用域**，然后选择一个或多个已创建的自适应作用域。 然后，选择一个或多个位置。 可以选择的位置取决于添加的[范围类型](retention-settings.md#configuration-information-for-adaptive-scopes)。 例如，如果只添加了 **用户** 的作用域类型，则可以选择 **Teams 聊** 天，但不能 **Teams 频道消息**。 
     
     - 如果选择 **静态**： 在" **选择应用策略的位置** 页上，为 Teams 选择一个或多个位置：
         - **Teams 频道消息**: 来自标准频道聊天和标准频道会议的消息，但不包括来自具有其自己策略位置的 [私人频道](/microsoftteams/private-channels)。
@@ -141,7 +141,7 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 
 4. 具体取决于所选范围：
     
-    - 如果选择 **自适应**： 在 **选择自适应策略范围和位置** 页上，选择 **添加** 范围，然后选择已创建的一个或多个自适应作用域。 然后，选择一个或多个位置。 可以选择的位置取决于添加的[范围类型](retention-settings.md#configuration-information-for-adaptive-scopes)。 例如，如果只添加了 **用户** 的作用域类型，则可以选择 **Yammer 用户消息**，但不能 **Yammer 社区消息**。 
+    - 如果选择 **自适应**: 在 **选择自适应策略作用域和位置** 页面上，选择 **添加作用域**，然后选择一个或多个已创建的自适应作用域。 然后，选择一个或多个位置。 可以选择的位置取决于添加的[范围类型](retention-settings.md#configuration-information-for-adaptive-scopes)。 例如，如果只添加了 **用户** 的作用域类型，则可以选择 **Yammer 用户消息**，但不能 **Yammer 社区消息**。 
     
     - 如果选择 **静态**：在" **选择应用策略** 位置"页上，切换 Yammer 的一个或两个位置： **Yammer 社区消息** ， **Yammer 用户消息**。
         
@@ -168,11 +168,11 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 
 Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer 网络的电子邮件，请使用 **Microsoft 365 组** 位置来配置额外的保留策略，该策略包括任何用于 Yammer 的 Microsoft 365 组。 
 
-如需保留和删除存储在 Yammer 中的文件，则需要一个包括 **SharePoint 网站** 或 **OneDrive 帐户** 位置的保留策略：
+若要保留和删除存储在 Yammer 中的文件，则需要包含 **Microsoft 365 组** 位置或 **OneDrive 帐户** 位置的保留策略：
 
 - 私人消息中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 
 
-- 上传到社区的文件存储在 Yammer 社区的 SharePoint 网站中。
+- 上传到社区的文件存储在 Yammer 社区的与组连接的 SharePoint 网站中。
 
 应用于 SharePoint 网站或 OneDrive 帐户的保留策略可能会先删除在 Yammer 消息中引用的文件，然后再删除这些消息。 在这种情况下，该文件仍显示在 Yammer 消息中，但当用户选择该文件时，将收到“找不到文件”错误。 此行为并非特定于保留策略，用户从 SharePoint 或 OneDrive 中手动删除文件时，也可能发生这种情况。
 
@@ -194,7 +194,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 4. 具体取决于所选范围：
     
-    - 如果选择 **自适应**： 在 **选择自适应策略范围和位置** 页上，选择 **添加** 范围，然后选择已创建的一个或多个自适应作用域。 然后，选择一个或多个位置。 可以选择的位置取决于添加的[范围类型](retention-settings.md#configuration-information-for-adaptive-scopes)。 例如，如果仅添加了 **用户** 的作用域类型，则可以选择 **Exchange 电子邮件** ，但不能 **sharePoint 网站**。 
+    - 如果选择 **自适应**: 在 **选择自适应策略作用域和位置** 页面上，选择 **添加作用域**，然后选择一个或多个已创建的自适应作用域。 然后，选择一个或多个位置。 可以选择的位置取决于添加的 [作用域类型](retention-settings.md#configuration-information-for-adaptive-scopes)。 例如，如果仅添加了 **用户** 的作用域类型，则可以选择 **Exchange 电子邮件** ，但不能 **sharePoint 网站**。 
     
     - 如果选择 **静态**：在" **选择位置** "页上，打开或关闭除 Teams 和 Yammer 位置之外的任何位置。 对于每个位置，可将其保持为默认的“[将策略应用到整个位置](retention-settings.md#a-policy-that-applies-to-entire-locations)”，或者“[指定所包含的和所排除的](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)”。
     
