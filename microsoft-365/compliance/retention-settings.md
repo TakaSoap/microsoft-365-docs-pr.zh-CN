@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: 63437f64fe746b2cd664aab75ec42d2b544f9b9c
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 7b5a6566f9e30d0510dad208ba0dbee503a1e2aa
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60434472"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587989"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -190,7 +190,7 @@ ms.locfileid: "60434472"
 
 ## <a name="locations"></a>位置
 
-保留策略中的位置会识别支持保留设置的特定Microsoft 365 服务，例如 Exchange 电子邮件和 SharePoint 网站。
+保留策略中的位置会识别支持保留设置的特定Microsoft 365 服务，例如 Exchange 电子邮件和 SharePoint 网站。 对于具有配置详细信息的位置和在为策略选择配置时需要注意的可能的异常，请使用以下部分。
 
 ### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Exchange 电子邮件和 Exchange 公用文件夹的配置信息
 
@@ -216,7 +216,7 @@ ms.locfileid: "60434472"
 
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>SharePoint 网站的配置信息和 OneDrive 帐户
 
-当选择 **SharePoint 网站** 位置时，保留策略可以保留和删除 SharePoint 通信网站、未由 Microsoft 365 组连接的团队网站以及经典网站中的文档。 因为此选项不支持通过 Microsoft 365 组连接的团队网站，所以请改用 **Microsoft 365 组** 位置，该位置适用于该组的邮箱、网站和文件中的内容。
+当选择 **SharePoint 网站** 位置时，保留策略可以保留和删除 SharePoint 通信网站、未由 Microsoft 365 组连接的团队网站以及经典网站中的文档。 除非使用的是 [自适应策略作用域](#exceptions-for-adaptive-policy-scopes)，否则通过 Microsoft 365 组连接的团队网站不支持此选项，而是使用适用于组邮箱、网站和文件中内容的 **Microsoft 365 组** 位置。
 
 有关在配置 SharePoint 和 OneDrive 的保留设置时应包含和排除哪些内容的详细信息，请参阅[保留和删除哪些内容](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion)。 
 
@@ -230,6 +230,12 @@ ms.locfileid: "60434472"
 > 此外，如果用户的 UPN 发生更改，OneDrive URL 将 [自动更改](/onedrive/upn-changes) 。 例如，更改姓名事件，如结婚。 或域名更改以支持组织的重命名或业务重组。 如果 UPN 发生更改，则需要更新为保留设置指定的 OneDrive URL。
 > 
 > 由于为单个用户可靠地指定 URL 以针对静态作用域进行包含或排除存在挑战，因此具有 **用户** 作用域类型的 [自适应作用域](retention.md#adaptive-or-static-policy-scopes-for-retention) 更适合实现此目的。
+
+#### <a name="exceptions-for-adaptive-policy-scopes"></a>自适应策略作用域的异常
+
+配置使用自适应策略作用域的保留策略并选择以下 **SharePoint 网站** 位置时：
+
+- 除 SharePoint 通信网站、并非通过 Microsoft 365 组连接的团队网站和经典网站外，还包括 OneDrive 网站和通过 Microsoft 365 组连接的网站。
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 组的配置信息
 
@@ -254,6 +260,16 @@ ms.locfileid: "60434472"
 当配置使用敏感信息类型的自动应用策略并选择 **Microsoft 365 组** 位置时:
 
 - 不包含 Microsoft 365 组邮箱。 要将这些邮箱包含在策略中，请改为选择 **Exchange 电子邮件** 位置。
+
+#### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>如果在应用策略后删除 Microsoft 365 组，会发生什么情况
+
+如果将保留策略应用于 Microsoft 365 组，并且该组随后从Azure Active Directory 中删除：
+
+- 通过组连接的 SharePoint 网站将会保留，并继续由相应 **Microsoft 365 组** 位置的保留策略管理。 在删除该组之前有权访问相应网站的用户仍然可以访问这些网站，但所有新权限现在都必须通过 SharePoint 管理。
+    
+    此时，你无法从 Microsoft 365 组位置排除相应网站，因为你无法指定已删除的组。 如果需要从此网站发布保留策略，请联系 Microsoft 支持部门。 例如，在 [Microsoft 365 管理中心中开立一个服务请求](https://admin.microsoft.com/Adminportal/Home#/support)。
+
+- 已删除组的邮箱将变为非活动状态，但会像 SharePoint 网站一样仍受保留设置限制。 有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。
 
 ### <a name="configuration-information-for-skype-for-business"></a>Skype for Business 的配置信息
 

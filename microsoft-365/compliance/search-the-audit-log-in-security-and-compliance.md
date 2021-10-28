@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 5840368c8d73bcafd486db9c3aa982fa03896b5e
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 74c23766bc2780cca0e370940e7fefacdba9d050
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555028"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587537"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -996,9 +996,10 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 |:-----|:-----|:-----|
 |已向网站应用敏感度标签|SensitivityLabelApplied|已向 SharePoint 或 Teams 网站应用敏感度标签。|
 |已从网站中删除敏感度标签|SensitivityLabelRemoved|已从 SharePoint 或 Teams 网站中删除敏感度标签。|
-|已向文件应用敏感度标签|FileSensitivityLabelApplied|已使用 Office 网页版或自动标记策略向文档应用敏感度标签。|
-|已更改应用于文件的敏感度标签|FileSensitivityLabelChanged|已使用 Office 网页版或自动标记策略向文档应用其他敏感度标签。|
-|已从文件除敏感度标签|FileSensitivityLabelRemoved|使用 Office 网页版、自动标记策略或使用 [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet 从文档中删除敏感度标签。|
+|已向文件应用敏感度标签|FileSensitivityLabelApplied|已使用 Microsoft 365 应用版、Office 网页版 或自动标记策略向文档应用敏感度标签。|
+|已更改应用于文件的敏感度标签|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|已对文档应用不同的敏感度标签。 <br /><br>此活动的操作因标签的更改方式而异：<br /> - Office 网页版或自动标记策略 (FileSensitivityLabelChanged) <br /> - Microsoft 365应用版 (SensitivityLabelUpdated)|
+|已在网站上更改敏感度标签|SensitivityLabelChanged|已对 SharePoint 或 Teams 网站应用不同的敏感度标签。|
+|已从文件除敏感度标签|FileSensitivityLabelRemoved|已使用 Microsoft 365 应用版、Office 网页版、自动标记策略或 [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet 从文档中删除敏感度标签。|
 ||||
 
 ### <a name="retention-policy-and-retention-label-activities"></a>保留策略和保留标签活动

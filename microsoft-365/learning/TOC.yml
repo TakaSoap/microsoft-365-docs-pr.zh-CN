@@ -11,6 +11,10 @@
     - name: 在 Teams 管理中心中设置
       href: set-up-teams-admin-center.md
     - name: 配置学习内容源
-      href: content-sources-365-admin-center.md
-    - name: 将 SharePoint 配置为内容源
-      href: configure-sharepoint-content-source.md
+      items:
+        - name: 概述
+          href: content-sources-365-admin-center.md
+        - name: 将 SharePoint 配置为内容源
+          href: configure-sharepoint-content-source.md
+        - name: 添加其他提供程序
+          href: configure-other-content-sources.md
