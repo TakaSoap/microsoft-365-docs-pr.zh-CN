@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，Microsoft 365 Lighthouse如何在一个位置保护和管理客户租户。
-ms.openlocfilehash: e3e924aa6384bfb47e7c5c7dffbe062ba3de8af4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a97ee53ab106eac3db9455d80c02e1411562e090
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170123"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60645879"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>概述Microsoft 365 Lighthouse
 
@@ -30,11 +30,11 @@ ms.locfileid: "60170123"
 
 Microsoft 365 Lighthouse 是一个管理门户，可帮助托管服务提供商 (MSP) 为使用 Microsoft 365 商业高级版 或 Microsoft 365 E3 的中小型商业 (SMB) 客户大规模保护和管理设备、数据和用户。 
 
-Lighthouse 通过建议为 SMB 客户定制的安全配置基线，并跨所有客户环境提供多租户视图，简化了 Microsoft 365 商业高级版 和 Microsoft 365 E3 租户的载入过程。 借助 Lighthouse，MSP 可以扩展其客户的管理，关注最重要的内容，快速查找和调查风险，并采取措施使客户进入健康、安全的状态。
+Lighthouse 通过推荐专为 SMB 客户定制的安全配置基线以及在所有客户环境中提供多租户视图，简化了 Microsoft 365 商业高级版 和 Microsoft 365 E3 租户的载入过程。 借助 Lighthouse，MSP 可以扩展其客户的管理，关注最重要的内容，快速查找和调查风险，并采取措施使客户进入健康、安全的状态。
 
-使用 Lighthouse 管理 Microsoft 365 和连接的设备不会增加任何成本。 Lighthouse 目前处于预览阶段，可供注册 云解决方案提供商 (CSP) 计划并拥有 Microsoft 365 商业高级版 或 Microsoft 365 E3 订阅的 SMB 客户使用。
+使用 Lighthouse 管理 Microsoft 365 和连接的设备不会增加任何成本。 Lighthouse 目前处于预览阶段，可供注册 云解决方案提供商 (CSP) 计划的 MSP 使用 Microsoft 365 商业高级版 或 Microsoft 365 E3 订阅。
 
-Microsoft 云解决方案提供商频道合作伙伴（支持客户使用 Microsoft 365 商业高级版 或 Microsoft 365 E3 使用 Lighthouse。 这包括云解决方案提供商合作伙伴直接与 Microsoft 交易，以及通过间接提供商与分销商 (交易) 。 
+Microsoft 云解决方案提供商频道合作伙伴使用 Lighthouse，这些合作伙伴支持Microsoft 365 商业高级版或Microsoft 365 E3 Microsoft CSP 渠道合作伙伴。 这包括云解决方案提供商合作伙伴直接与 Microsoft 交易，以及通过间接提供商与分销商 (交易) 。 
 
 > [!IMPORTANT] 
 > 若要使用 Lighthouse，MSP 及其客户租户必须满足以下要求Microsoft 365 Lighthouse[要求](m365-lighthouse-requirements.md)。     
@@ -44,7 +44,7 @@ Microsoft 云解决方案提供商频道合作伙伴（支持客户使用 Micros
 > [!NOTE]  
 > 类似产品 Azure Lighthouse 通过使用内置于 Azure 平台的全面而稳固的管理工具，帮助服务提供商为 Azure 服务提供托管服务。 若要了解更多信息，请参阅 [什么是 Azure Lighthouse？](/azure/lighthouse/overview)   
 
-## <a name="microsoft-365-lighthouse-benefits"></a>Microsoft 365 Lighthouse好处
+## <a name="microsoft-365-lighthouse-benefits"></a>Microsoft 365 Lighthouse优势
 
 Lighthouse 可帮助 MSP 通过Microsoft 365保护和管理连接终结点的安全和管理：
 
@@ -54,7 +54,7 @@ Lighthouse 可帮助 MSP 通过Microsoft 365保护和管理连接终结点的安
 - 简化常见任务，如重置密码。
 - 配置多重身份验证和自助服务密码重置，包括有助于推动用户采用的工具。 
 - 了解并防范有风险的登录。
-- 通过提供有关 Microsoft Defender 检测到的威胁的详细信息以及解决问题和使设备保持最新状态而要采取的操作，来管理 Windows 10 设备上的威胁。
+- 通过提供由 Microsoft 365 Defender 检测到的威胁的详细信息来管理 Windows 10 设备上的威胁，以及为解决问题和使设备保持最新而要采取的操作。
 - 提供对影响Microsoft 365租户的服务事件和公告的见解。
 
 > [!NOTE] 

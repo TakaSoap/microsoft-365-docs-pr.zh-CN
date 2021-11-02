@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 获取Yammer使用情况报告，了解用户在哪些设备上Yammer设备。
-ms.openlocfilehash: c75a8ef6559ba62a43ae5a29984acab14f781c66
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 25dbf966d0756cf90e39dcbe69d587434d3de3ae
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552904"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648739"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Microsoft 365管理中心中的报告 - Yammer使用情况报告
 
-"Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
+the Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
   
 利用 Yammer 设备使用情况报表，了解你的用户正在哪些设备上使用 Yammer。可按设备类型查看每日用户数并按设备类型查看用户数。可查看所选时间段内的这两方面情况。也可查看每个用户的详细信息。
  
@@ -55,11 +55,11 @@ You can view the usage in the OneDrive by choosing the **Device usage** tab.<br/
 |显示名称  <br/> |用户的全名。 可以显示实际的电子邮件地址或采用匿名字段。  <br/> |
 |用户状态  <br/> |三个值之一：Active、Deleted 或 Suspended。 这些报表显示已激活、已挂起和已删除用户的数据。 报表并不反映待定用户，因为待定用户无法发布、阅读或点赞消息。   <br/> |
 |状态更改日期 (UTC)   <br/> |用户状态在更改日期Yammer。  <br/> |
-|上次活动日期 (UTC)   <br/> |用户参与 (活动的) UTC 日期Yammer日期。  <br/> |
+|上次活动日期 (UTC)   <br/> |用户参与 (活动) UTC 日期Yammer日期。  <br/> |
 |Web  <br/> |指示用户是否使用了Yammer网站。  <br/> |
 |Windows电话  <br/> | 指示用户是否使用过Yammer电话Windows密码。  <br/> |
 |Android 手机  <br/> |指示用户是否在 Android Yammer使用过密码。 <br/>|
 |iphone <br/> | 指示用户是否对Yammer使用了iPhone。  <br/> |
 |ipad  <br/> |指示用户是否对Yammer使用了iPad。 <br/>|
-|other  <br/> |指示用户是否在另一台设备Yammer，之前未列出。 <br/>|
+|other  <br/> |指示用户是否在另一Yammer上使用过此设备，之前未列出。 <br/>|
 |||

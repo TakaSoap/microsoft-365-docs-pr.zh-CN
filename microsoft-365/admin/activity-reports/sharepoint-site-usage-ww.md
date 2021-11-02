@@ -21,17 +21,17 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: 获取SharePoint使用率报告，了解用户存储在SharePoint中的文件数、当前使用的文件数以及使用的总存储量。
-ms.openlocfilehash: 1adf1175569b1d798b238d4d55037a6461c34558
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+description: 获取SharePoint使用率报告，了解用户存储在SharePoint中的文件数、主动使用的文件数以及使用的总存储量。
+ms.openlocfilehash: 2c29234df1076fa31ea836b7ead51234e121004e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553024"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648815"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365管理中心中的报告 - SharePoint网站使用情况
 
-作为Microsoft 365管理员，"报表"仪表板将显示组织中各种产品的活动概述。 使用该仪表板，能够更深入细致地了解特定于每个产品的活动。 例如，您可以获取从 SharePoint 获取的值的高级别视图，包括用户在 SharePoint 网站中存储的文件总数、当前使用的文件数以及所有这些网站中使用的存储。 然后，你可以向下钻取 SharePoint 网站使用情况报告，了解所有网站的趋势和每个网站级别的详细信息。 
+作为Microsoft 365管理员，"报表"仪表板将显示组织中各种产品的活动概述。 使用该仪表板，能够更深入细致地了解特定于每个产品的活动。 例如，您可以获取从 SharePoint 获取的值的高级别视图，其中包括用户在 SharePoint 网站中存储的文件总数、当前使用的文件数以及所有这些网站中使用的存储。 然后，你可以向下钻取 SharePoint 网站使用情况报告，了解所有网站的趋势和每个网站级别的详细信息。 
 
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>如何访问 SharePoint 网站使用情况报表
 
@@ -64,7 +64,9 @@ You can view the site usage in the SharePoint by choosing the **Site usage** tab
 
 :::image type="content" alt-text="SharePoint使用率报告 - 选择列。" source="../../media/71ac3195-c494-40c1-9346-a858125ef6df.png":::
 
-您还可以通过选择"导出"链接将报告数据导出到Excel .csv **文件**。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
+您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
+
+可查看 **SharePoint网站** 使用率报告，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的某一天，则该表将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
   
 |跃点数|Description|
 |:-----|:-----|

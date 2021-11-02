@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 9037b8f721a33f6709f3beefdac6d294c7125333
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: f4a29a17bc8c3563779b54b9df594548a02acabd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588297"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646407"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>调查事件Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "60588297"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关警报、资产、调查和证据聚合到事件中，以便全面了解整个攻击范围。
+Microsoft 365 Defender设备、用户和邮箱中的相关警报、资产、调查和证据聚合到事件中，以便全面了解整个攻击范围。
 
 在事件内，分析影响网络的警报，了解它们的含义，并整理证据，以便制定有效的修正计划。
 
@@ -50,7 +50,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="从选中标记列中选择事件的示例。":::
 
-当你这样做时，将打开一个摘要窗格，其中包含有关事件的关键信息，如严重性、分配到它的人以及事件的[MITRE ATT &trade; ](https://attack.mitre.org/)&CK 类别。 下面是一个示例。
+当你这样做时，会打开一个摘要窗格，其中包含有关事件的关键信息，如严重性、分配到该事件的人以及事件的[MITRE ATT &trade; ](https://attack.mitre.org/)&CK 类别。 下面是一个示例。
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="事件的摘要窗格示例。":::
 
@@ -68,7 +68,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 | 节 | 说明 |
 |:-------|:-----|
-| 警报和类别 | 有关攻击对击杀链的前进进度的可视化和数值视图。 与其他 Microsoft 安全产品一样，Microsoft 365 Defender[与 MITRE &trade; ATT](https://attack.mitre.org/)&CK 框架保持一致。 警报时间线显示警报发生的时间顺序，以及每个警报的状态和名称。 |
+| 警报和类别 | 有关攻击对击杀链的前进进度的可视化和数值视图。 与其他 Microsoft 安全产品一样，Microsoft 365 Defender[与 MITRE &trade; ATT](https://attack.mitre.org/)&CK 框架一致。 警报时间线显示警报发生的时间顺序，以及每个警报的状态和名称。 |
 | 范围 |  显示受影响设备、用户和邮箱的数量，并按风险级别和调查优先级的顺序列出实体。 |
 | 证据 | 显示受事件影响的实体数。 |
 | 事件信息 | 显示事件的属性，如标记、状态和严重性。 |
@@ -82,7 +82,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 - 严重性。
 - 警报中涉及的实体。
-- Microsoft Defender for Identity、Microsoft Defender for Endpoint (Microsoft Defender for Office 365) 警报的来源。
+- Microsoft Defender for Identity、Microsoft Defender for Endpoint (Microsoft Defender for Office 365、适用于云应用的 Defender 和应用治理策略) 。
 - 链接在一起的原因。
 
 下面是一个示例。
@@ -134,7 +134,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例。":::
 
-可以选择用户的选中标记以查看用户帐户威胁、曝光和联系人信息的详细信息。 选择用户名以查看其他用户帐户详细信息。
+可以选择用户的选中标记以查看用户帐户威胁、曝光和联系信息的详细信息。 选择用户名以查看其他用户帐户详细信息。
 
 了解如何查看其他用户信息，以及如何在调查用户中管理 [事件的用户](investigate-users.md)。
 
@@ -171,13 +171,13 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 :::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="事件的证据和响应页面示例。":::
 
-Microsoft 365 Defender自动调查警报中所有事件支持的事件和可疑实体，并提供有关重要电子邮件、文件、流程、服务、IP 地址等的信息。 这可以帮助您快速检测和阻止事件中的潜在威胁。
+Microsoft 365 Defender自动调查警报中所有事件支持的事件和可疑实体，并提供有关重要电子邮件、文件、进程、服务、IP 地址等的信息。 这可以帮助您快速检测和阻止事件中的潜在威胁。
 
-每个被分析的实体都标有"恶意 (、可疑、清理) 和修正状态。 这可以帮助您了解整个事件的修正状态以及可以采取哪些下一步操作。
+每个分析的实体都标有一条 (、可疑、) 和修正状态。 这可以帮助您了解整个事件的修正状态以及可以采取哪些下一步操作。
 
 ## <a name="graph-preview"></a>Graph (预览) 
 
-the **Graph** tab shows the full scope of the attack， how the attack spread through your network over time， where it started， and how far the attacker. 它将属于攻击的不同可疑实体与用户、设备和邮箱等相关资产连接在一起。 
+the **Graph** tab shows the full scope of the attack， how the attack spread through your network over time， where it started， and how a far the attacker went. 它将属于攻击的不同可疑实体与用户、设备和邮箱等相关资产连接在一起。 
 
 从 **"Graph"** 选项卡中，您可以：
 

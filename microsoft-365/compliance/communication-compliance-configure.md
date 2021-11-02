@@ -20,16 +20,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9b1fd596988498a543778b097b2a8a431a200aba
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: c58df514c136c6df2db5d1392a57db1ee6c34bb3
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335750"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60647424"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
-使用通信合规性策略，以识别用户通信，供内部或外部审阅者检查。 有关通信合规性策略如何帮助监视组织内通信的详细信息，请参阅 [Microsoft 365 中的通信合规性策略](communication-compliance.md)。 如果希望查看 Contoso 如何快速配置通信合规性策略以监视 Microsoft Teams、Exchange Online 和 Yammer 通信中的冒犯性语言，请查看此 [案例研究](communication-compliance-case-study.md)。
+使用通信合规性策略，以识别用户通信，供内部或外部审阅者检查。 有关通信合规性策略如何帮助监视组织内通信的详细信息，请参阅 [Microsoft 365 中的通信合规性策略](communication-compliance.md)。 如果您想查看 Contoso 如何快速配置通信合规性策略，以监视 Microsoft Teams、Exchange Online 和 Yammer 通信中的不当内容，请查看此[案例研究](communication-compliance-case-study.md)。
 
 ## <a name="subscriptions-and-licensing"></a>订阅和许可
 
@@ -54,6 +54,16 @@ ms.locfileid: "60335750"
 > Office 365 高级合规版已不再作为独立订阅销售。 当前订阅到期后，客户应过渡到以上订阅之一，其中包含了相同的或其它合规性功能。
 
 如果你没有现有的 Office 365 企业版 E5 套餐，并且想要尝试通信合规性，可以 [添加 Microsoft 365](/office365/admin/try-or-buy-microsoft-365) 到现有订阅，或 [注册试用](https://www.microsoft.com/microsoft-365/enterprise) Office 365 企业版 E5。
+
+## <a name="recommended-actions-preview"></a>建议 (预览) 
+
+建议的操作可帮助组织充分使用通信合规性功能和现有策略。 建议的操作 **包含在"概述** "页上，可提供见解并汇总组织中通信中的敏感信息类型和不适当的内容活动。
+
+![通信合规性建议操作。](../media/communication-compliance-recommended-actions.png)
+
+包含不当内容的邮件中的活动由分类器类型从使用不当内容模板的现有策略或使用分类器处理不当内容的自定义策略中枚举。 调查策略警报仪表板上这些消息的警报。
+
+现有策略涵盖的邮件以及现有策略未涵盖的邮件中检测到涉及敏感信息类型的活动。 Insights所有敏感信息类型，包括组织之前未在现有通信合规性策略中定义的敏感信息类型。 使用这些见解创建新的通信合规性策略或更新现有策略。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步骤 1（必选）：启用通信合规性权限
 
@@ -118,6 +128,8 @@ ms.locfileid: "60335750"
 
 通信合规性需要审核日志显示警报和跟踪审阅者采取的修正操作。 审核日志是与已定义的组织策略，或任何时刻的通信合规性策略更改相关联的所有活动摘要。
 
+默认情况下，为Microsoft 365启用审核。 某些组织可能由于特定原因禁用了审核。 如果为组织禁用了审核，这可能是因为另一个管理员已将其关闭。 我们建议确认在完成此步骤时可以重新启用审核。
+
 有关启用审核的逐步操作说明，请参阅 [打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。 打开审核之后，将显示一条消息，内容为正在准备审核日志，你可以在准备完成后几个小时内运行搜索。 此操作只需要执行一次。 有关使用审核日志的详细信息，请参阅 [搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>步骤 3（可选）：设置通信合规性组
@@ -180,8 +192,11 @@ ms.locfileid: "60335750"
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>步骤 5（必需）：创建通信合规性策略
 
-> [!IMPORTANT]
-> 不支持使用 PowerShell 创建和管理通信合规性策略。 若要创建和管理这些策略，必须使用 [Microsoft 365 通信合规性解决方案](https://compliance.microsoft.com/supervisoryreview) 中的策略管理控件。
+>[!IMPORTANT]
+>不支持使用 PowerShell 创建和管理通信合规性策略。 若要创建和管理这些策略，必须使用 [Microsoft 365 通信合规性解决方案](https://compliance.microsoft.com/supervisoryreview) 中的策略管理控件。
+
+>[!TIP]  
+>想要查看有关设置新通信合规性策略和修正警报的深入演练？ 观看 [此 15](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) 分钟的视频，了解通信合规性策略如何帮助您检测不适当的消息、调查潜在的违反和修正合规性问题。
 
 1. 使用 Microsoft 365 组织中的管理员账户凭据登录 <https://compliance.microsoft.com>。
 

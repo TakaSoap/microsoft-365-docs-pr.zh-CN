@@ -1,59 +1,57 @@
 ---
-title: '预览Microsoft Viva Learning (概述) '
+title: 概述Microsoft Viva Learning
 ms.author: daisyfeller
-author: daisyfeller
+author: daisyfell
 manager: pamgreen
-ms.reviewer: chrisarnoldmsft
-ms.date: ''
+ms.reviewer: shirana
+ms.date: 11/02/2021
 audience: admin
 ms.topic: article
+ms.custom: intro-overview
 ms.service: ''
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: MET150
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
-ms.localizationpriority: ''
-description: 了解Microsoft Viva Learning (环境中) 预览Microsoft 365预览版。
-ms.openlocfilehash: 563b808a55efcbdba08119d721e52f73873cd9ea
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.localizationpriority: medium
+description: 了解Microsoft Viva Learning环境中Microsoft 365。
+ms.openlocfilehash: 1747cef7ade83adfc33f369ae5196a0638f918b3
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478849"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60645940"
 ---
-# <a name="overview-of-microsoft-viva-learning-preview"></a>预览Microsoft Viva Learning (概述) 
+# <a name="overview-of-microsoft-viva-learning"></a>概述Microsoft Viva Learning
 
-> [!NOTE]
-> 本文中的信息与在商业发行之前可能会进行重大修改的预览产品相关。 预览当前不向新参与者开放。
+Viva Learning是 Microsoft Teams 中一个集中式学习中心，让你可以将学习与培养技能无缝集成在一起。 在 Viva Learning，你的团队可以发现、共享、推荐和学习由组织和合作伙伴提供的内容库。 他们可以不离开用户即可Microsoft Teams。
 
-Viva Learning (Preview) 是 Microsoft Teams 中一个集中式学习中心，可让你将学习与培养技能无缝集成在一起。 在 Viva Learning (Preview) 中，团队可以发现、共享、分配和学习由组织和合作伙伴提供的内容库。 他们可以不离开用户即可Microsoft Teams。
+   ![Teams 中的 Viva Learning屏幕截图。](../media/learning/overview-1.png)
 
-   ![Teams 中的 Viva Learning (Preview) 主页的屏幕截图。](../media/learning/learning-home-teams.png)
-
-当员工有机会学习和发展时，他们更有可能报告得到满足，并长期留在组织中。 Viva Learning (Preview) 使你无需离开已使用的通信工具即可轻松为组织创造这些机会。
+Viva Learning使你无需离开已使用的通信工具，即可轻松为组织创建学习和增长的机会。
 
 ## <a name="learn-while-working"></a>工作期间学习
 
 ### <a name="everyone"></a>所有人
 
-Viva Learning (预览) 轻松将学习融入你的一天中。 在 Microsoft Teams 中打开 Viva Learning (Preview) 时，你将看到从组织和合作伙伴（如 LinkedIn Learning）学习内容的个性化视图。 当您继续搜索并完成更多培训时，建议的内容将更新以反映您的兴趣。
+Viva Learning可轻松将学习融入你的一天中。 在 Learning 中打开 Viva Microsoft Teams，你将看到从组织和合作伙伴（如 LinkedIn Learning）学习内容的个性化Learning。 当您继续搜索并完成更多培训时，建议的内容将更新以反映您的兴趣。
 
 - 轻松找到组织提供的学习机会。
-- 浏览 LinkedIn Learning、Microsoft Learn、Microsoft 365 Training、Skillsoft、Coursera、edX、Pluralsight 和其他第三方学习合作伙伴的课程。
+- 浏览来自 Microsoft 和第三方内容提供商的课程。
 - 搜索吸引你或支持你的职业目标的特定学习内容。
-- 在群组聊天或频道中与团队成员或组共享相关、有趣Microsoft Teams学习内容。
+- 在聊天或频道中与团队成员或组共享相关、有趣Microsoft Teams学习内容。
 - 在频道和选项卡中组织Microsoft Teams学习内容的自定义选择。
-- 喜欢并保存感兴趣的课程。
+- 为感兴趣的课程添加书签。
 - 在嵌入式Learning玩 LinkedIn 游戏，无需离开Microsoft Teams。
 
 ### <a name="managers"></a>Managers
 
-让团队保持参与并掌握最新所需的技能，而无需跨平台协调学习。 你可以将学习内容分配给个人或组，与团队共享内容，并跟踪你分配的学习的完成状态。
+让团队保持参与并掌握最新所需的技能，而无需跨平台协调学习。 你可以建议个人学习内容，与团队共享内容，并跟踪你建议的学习报告完成状态。
 
 ## <a name="admin-roles"></a>管理员角色
 
-管理员设置权限并允许 Viva Learning (Preview) 。 若要设置 Viva Learning (Preview) ，需要具有如下权限：
+Viva Learning在已提供Microsoft Teams内容中默认可用。 若要在 Viva 中设置学习内容源Learning管理单个许可，你将需要以下权限：
 
 - Microsoft Teams管理员
 - Microsoft 365全局管理员或SharePoint管理员
@@ -65,14 +63,34 @@ Viva Learning (预览) 轻松将学习融入你的一天中。 在 Microsoft Tea
 
 知识管理员应具有中等技术水平，并且SharePoint管理员凭据。 知识管理员应很好地了解组织的教育、学习、培训或员工体验部分。
 
+## <a name="learning-content-sources"></a>Learning内容源
+
+Microsoft Learn and Microsoft 365 Training 中的内容将自动在 Viva Learning。 还可从 LinkedIn Learning 免费访问一组 125 个Learning。 此外，Viva Learning与选择的第三方内容提供商和学习管理系统集成。 若要详细了解如何设置内容源，请参阅管理[Viva 内容源Learning。](content-sources-365-admin-center.md)
+
+## <a name="supported-languages"></a>支持的语言
+
+Viva Learning组织的语言首选项Microsoft 365组织的语言首选项。 但是，viva Learning目前不支持从右向左的语言。
+
+## <a name="data-and-privacy"></a>数据和隐私
+
+Viva Learning数据驻留特定于租户，并且遵循标准Microsoft 365按可用地理位置定义数据存储指南。 有关详细信息，请参阅[我的客户数据存储Microsoft 365在哪里](/microsoft-365/enterprise/o365-data-locations)。
+
+目前SharePoint托管在租户主地理位置的网站与网站集成。 例如，法国租户只能将SharePoint网站链接到 Viva Learning。
+
+从 Viva 应用程序存储Learning包括：
+
+- Learning内容元数据，如标题、说明、作者和语言
+- 用户数据，例如书签、最近查看的、推荐的课程、分配的课程和完成记录
+- 必需的服务数据，如错误日志
+- 诊断数据使用情况
+
+>[!NOTE]
+>管理员可以打开或关闭诊断数据存储。
+
 ## <a name="get-started"></a>开始行动
 
-准备好在自定义环境中设置和配置 Viva Learning (Preview) 时Microsoft 365：
+准备好在自定义环境中设置和配置 Viva Learning时Microsoft 365：
 
-- 使用 Microsoft Teams 管理中心[管理整个Learning () 预览版。](set-up-teams-admin-center.md)
+- 使用 Microsoft Teams管理中心[管理整个Learning Viva 应用程序](set-up-viva-learning.md)。
 - 使用 Microsoft 365 管理中心[配置可用于特定组的学习源](content-sources-365-admin-center.md)。
 - 使用SharePoint管理中心[管理和存储自己的学习内容](configure-sharepoint-content-source.md)。
-
-
-
-

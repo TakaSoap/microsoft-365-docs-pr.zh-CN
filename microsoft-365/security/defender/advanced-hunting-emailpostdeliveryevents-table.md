@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5de874a75763152422fb1cd84e90bc9fed716e6a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3f3338639ed0db6b11a2796def8ec4eb209a9824
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199557"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646879"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -52,7 +50,7 @@ ms.locfileid: "60199557"
 | `InternetMessageId` | string | 发送电子邮件系统设置的电子邮件的面向公众的标识符 |
 | `Action` | string | 对实体采取的操作 |
 | `ActionType` | string | 触发事件的活动类型：手动修正、钓鱼邮件 ZAP、恶意软件 ZAP |
-| `ActionTrigger` | string | 指示操作是由管理员手动触发 (还是通过审批挂起的自动操作) 触发，还是由某些特殊机制（如 ZAP 或动态传递）触发 |
+| `ActionTrigger` | string | 指示操作是由管理员手动触发 (还是通过批准挂起的自动操作) 触发，还是由某些特殊机制（如 ZAP 或动态传递）触发 |
 | `ActionResult` | string | 操作结果 |
 | `RecipientEmailAddress` | string | 收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址 |
 | `DeliveryLocation` | string | 发送电子邮件的位置：收件箱/文件夹、本地/外部、垃圾箱、隔离区、已失败、已弃用、已删除的邮件 |
@@ -63,8 +61,8 @@ ms.locfileid: "60199557"
 ## <a name="supported-event-types"></a>支持的事件类型
 此表捕获具有以下值 `ActionType` 的事件：
 
-- **手动修正** – 管理员在将电子邮件传递到用户邮箱后对电子邮件手动采取操作。 这包括通过威胁资源管理器手动 [采取的](../office-365-security/threat-explorer.md) 操作，或者 AIR ([自动](m365d-autoir-actions.md)调查和) 批准。
-- **钓鱼邮件 ZAP** [– 零时差自动清除 (ZAP](../office-365-security/zero-hour-auto-purge.md)) 对发送后对网络钓鱼电子邮件采取操作。
+- **手动** 修正 – 管理员在将电子邮件传递到用户邮箱后对电子邮件手动采取操作。 这包括通过威胁资源管理器手动 [采取的](../office-365-security/threat-explorer.md) 操作，或者 AIR ([自动](m365d-autoir-actions.md)调查和) 批准。
+- **Phish ZAP** – [ZAP (](../office-365-security/zero-hour-auto-purge.md) 对网络钓鱼) 后对网络钓鱼电子邮件执行零时差自动清除。
 - **恶意软件 ZAP** – 零时差自动清除 (ZAP) 对在传递后发现包含恶意软件的电子邮件采取操作。
 
 ## <a name="related-topics"></a>相关主题

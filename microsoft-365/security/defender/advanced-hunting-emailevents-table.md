@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 66f5992dfd3b2d5d54fb4d98e68f357c3b02b454
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7ab5905635a58cab74c4241af46a8c29c8a99211
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174491"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646891"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -53,13 +51,13 @@ ms.locfileid: "60174491"
 | `SenderMailFromAddress` | string | “发件人”标题（又称为“信件发送方”或“返回路径地址”）中的发件人电子邮件地址 |
 | `SenderFromAddress` | string | 发件人标题中的发件人电子邮件地址（电子邮件收件人在其电子邮件客户端上可以看到） |
 | `SenderDisplayName` | string | 通讯簿中显示的发件人姓名，通常是给定或名字、中间名首字母和姓氏或姓氏的组合 |
-| `SenderObjectId` | string |Azure AD 中发件人帐户的唯一标识符 |
+| `SenderObjectId` | string |发件人帐户在邮件中的唯一Azure AD |
 | `SenderMailFromDomain` | string | “发件人”标题（又称为“信件发送方”或“返回路径地址”）中的发件人域 |
 | `SenderFromDomain` | string | 发件人标题中的发件人域（电子邮件收件人在其电子邮件客户端上可以看到） |
 | `SenderIPv4` | string | 最近检测到的中继邮件的邮件服务器的 IPv4 地址 |
 | `SenderIPv6` | string | 最近检测到的中继邮件的邮件服务器的 IPv6 地址 |
 | `RecipientEmailAddress` | string | 收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址 |
-| `RecipientObjectId` | string | Azure AD 中电子邮件收件人的唯一标识符 |
+| `RecipientObjectId` | string | 电子邮件收件人的唯一标识符Azure AD |
 | `Subject` | string | 电子邮件主题 |
 | `EmailClusterId` | string | 基于对内容的启发式分析群集的相似电子邮件组的标识符 |
 | `EmailDirection` | string | 电子邮件方向（相对于所在的网络）：入站、出站、组织内 |
@@ -68,7 +66,7 @@ ms.locfileid: "60174491"
 | `ThreatTypes` | string | 关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定 |
 | `ThreatNames` | string |找到的恶意软件或其他威胁的检测名称 |
 | `DetectionMethods` | string | 用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法 |
-| `ConfidenceLevel` | string | 任何垃圾邮件或网络钓鱼裁定的可信度列表。 对于垃圾邮件，此列显示垃圾邮件可信度 (SCL) ，指示电子邮件是否跳过 (-1) 、发现不是垃圾邮件 (0，1) 、被识别为可信度中等的垃圾邮件 (5，6) 或发现为高可信度 (9) 的垃圾邮件。 对于网络钓鱼，此列显示可信度是"高"还是"低"。 |
+| `ConfidenceLevel` | string | 任何垃圾邮件或网络钓鱼裁定的可信度列表。 对于垃圾邮件，此列显示垃圾邮件可信度 (SCL) ，指示电子邮件是否跳过 (-1) 、发现不是垃圾邮件 (0，1) 、被识别为可信度中等的垃圾邮件 (5，6) ，或发现为高可信度 (9) 的垃圾邮件。 对于网络钓鱼，此列显示可信度是"高"还是"低"。 |
 | `EmailAction` | string | 基于筛选器裁定、策略和用户操作对电子邮件执行的最后操作：将邮件移到垃圾邮件文件夹、添加 X 标头、修改主题、重定向邮件、删除邮件、发送到隔离区、未执行任何操作、密件抄送邮件 |
 | `EmailActionPolicy` | string | 生效的操作策略：反垃圾邮件高可信度、反垃圾邮件、反垃圾邮件批量邮件、反垃圾邮件、反垃圾邮件钓鱼、防钓鱼域模拟、防钓鱼用户模拟、防钓鱼欺骗、防钓鱼图形模拟、反恶意软件、安全附件、企业传输规则 (ETR) |
 | `EmailActionPolicyGuid` | string | 确定最后邮件操作的策略的唯一标识符 |
@@ -81,7 +79,7 @@ ms.locfileid: "60174491"
 | `UserLevelAction` | string | 对电子邮件采取的操作，以响应与收件人定义的邮箱策略的匹配 |
 | `UserLevelPolicy` | string | 触发对电子邮件采取的操作最终用户邮箱策略 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。 |
-| `AuthenticationDetails` | string | 按电子邮件身份验证协议（如 DMARC、DKIM、SPF 或 CompAuth (组合）的通过或失败裁定)  |
+| `AuthenticationDetails` | string | 电子邮件身份验证协议（如 DMARC、DKIM、SPF 或 CompAuth (组合）的通过或失败裁定)  |
 
 ## <a name="related-topics"></a>相关主题
 

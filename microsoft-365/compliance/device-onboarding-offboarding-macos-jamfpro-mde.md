@@ -1,0 +1,126 @@
+---
+title: '使用适用于 Endpoint 客户的 Microsoft Defender Pro 预览版将 macOS 设备载入和 (合规性) '
+f1.keywords: NOCSH
+ms.author: chrfox
+author: chrfox
+manager: laurawi
+ms.date: ''
+audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+ms.collection:
+- M365-security-compliance
+search.appverid:
+- MET150
+description: '了解如何使用适用于 Endpoint 客户的 JAMF Pro 将 macOS 设备载入和载出到 Microsoft 365 合规性解决方案中， (预览版) '
+ms.openlocfilehash: dd5bedb473de6fa608d1e28ad7a81c3a6d7d5b30
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648185"
+---
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>使用适用于 Endpoint 客户的 Microsoft Defender Pro 预览版将 macOS 设备载入和 (合规性) 
+
+可以使用 JAMF Pro macOS 设备载入Microsoft 365合规性解决方案。
+
+> [!IMPORTANT]
+> 如果你 ***将*** Microsoft Defender for Endpoint (MDE) macOS 设备，请使用此过程
+
+## <a name="get-registered"></a>注册
+
+若要获取此功能的访问权限，你必须向 Microsoft 注册租户。 请参阅 注册[macOS Microsoft 365。](https://aka.ms/Ignite2021DLP)
+
+**适用于：**
+
+- 将 MDE 部署到其 macOS 设备的客户。
+- [Microsoft 365DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
+- [内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+
+
+## <a name="before-you-begin"></a>准备工作
+
+- 确保[macOS 设备已Azure AD连接](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
+- 确保通过 [JAMF 专业版管理 macOS 设备](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
+- 在 macOS 设备上安装 v95+ Edge 浏览器 
+
+## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>使用 JAMF Microsoft 365将设备载入到合规性Pro
+
+将 macOS 设备载入合规性解决方案是一个多阶段过程。
+
+### <a name="download-the-configuration-files"></a>下载配置文件
+
+1. 此过程需要这些文件。
+
+|文件所需的 |source |
+|---------|---------|
+|辅助功能 |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
+完全磁盘访问     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
+|MDE 首选项 |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/schema/schema.json)
+
+> [!TIP]
+> 您可以单独下载 *.mobileconfig* 文件，也可以将这些文件下载到包含以下项的 [单个](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) 组合文件中：
+> - accessibility.mobileconfig
+> - fulldisk.mobileconfig
+>
+>如果其中任何一个文件已更新，则需要再次下载组合的文件或单独下载单个更新的文件。
+
+### <a name="update-the-existing-mde-preference-domain-profile-using-the-jamf-pro-console"></a>使用 JAMF PRO 控制台更新现有 MDE 首选项域配置文件
+
+1. 使用schema.xml **的 schema.json** 文件更新该配置文件。
+
+1. 在 **"MDE 首选项域属性"下** ，选择这些设置
+    - 功能 
+        - 使用系统扩展 `enabled` ：- 对于加泰罗尼亚语上的网络扩展是必需的
+        - 使用数据丢失防护： `enabled`
+
+1. 选择" **范围"** 选项卡。
+
+1. 选择要将此配置文件部署到的组。
+
+1. 选择“**保存**”。 
+
+### <a name="update-the-configuration-profile-for-grant-full-disk-access"></a>更新配置文件以授予完全磁盘访问权限
+
+1. 使用 **fulldisk.mobileconfig** 文件更新现有完整磁盘访问配置文件。
+
+1. Upload **fulldisk.mobileconfig 文件** 更新为 JAMF。 请参阅[使用 JAMF 部署自定义配置文件Pro。](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)
+
+### <a name="grant-accessibility-access-to-dlp"></a>授予对 DLP 的辅助功能访问权限
+
+1. 使用之前下载的 accessibility.mobileconfig 文件。
+
+1. Upload使用 Jamf 部署自定义配置文件中所述[，Pro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
+
+### <a name="check-the-macos-device"></a>检查 macOS 设备 
+
+1. 重新启动 macOS 设备。
+
+1. 打开 **系统首选项**  >  **配置文件**。
+
+1. 你应该会看到：
+    - 辅助性
+    - 完全磁盘访问
+    - 内核扩展配置文件
+    - MAU
+    - MDATP 载入
+    - MDE 首选项
+    - 管理配置文件
+    - 网络筛选器
+    - 通知
+    - 系统扩展配置文件
+
+## <a name="offboard-macos-devices-using-jamf-pro"></a>使用 JAMF 设备的载 macOS Pro
+
+> [!IMPORTANT]
+> "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留 6 个月。
+
+若要将 macOS 设备载出，请按照以下步骤操作
+
+ 1. 在 **"MDE 首选项域属性"** 下，删除这些设置的值
+    - 功能 
+        - 使用系统扩展
+        - 使用数据丢失防护
+
+1. 选择“**保存**”。

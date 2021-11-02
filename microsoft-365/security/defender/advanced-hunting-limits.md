@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bd9ad3186b5bb8d65d0dd712fece2bee0ce4e020
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fe0ad42ac0ebfc7f6816e412ab6ffb0ac9291b44
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212241"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643155"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>高级搜寻配额和使用参数
 
@@ -35,7 +33,7 @@ ms.locfileid: "60212241"
 **适用于：**
 - Microsoft 365 Defender
 
-为保持服务性能高且响应迅速，高级搜寻设置各种配额和使用参数 (也称为"服务限制") 。 这些配额和参数分别应用于手动运行的查询和使用自定义检测规则 [运行的查询](custom-detection-rules.md)。 定期运行多个查询的客户应注意这些限制，并 [应用](advanced-hunting-best-practices.md) 优化最佳做法以最大限度地减少中断。
+为保持服务性能高且响应迅速，高级搜寻设置各种配额和使用 (也称为"服务限制") 。 这些配额和参数分别应用于手动运行的查询和使用自定义检测规则 [运行的查询](custom-detection-rules.md)。 定期运行多个查询的客户应注意这些限制，并 [应用](advanced-hunting-best-practices.md) 优化最佳做法以最大限度地减少中断。
 
 请参阅下表以了解现有配额和使用参数。
 

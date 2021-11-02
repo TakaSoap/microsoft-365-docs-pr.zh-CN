@@ -21,28 +21,28 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: '获取OneDrive for Business使用情况报告，了解整个组织使用的文件和存储的总数。 '
-ms.openlocfilehash: 66e9cb7774f9f35a7d720e71062b90a85c2e6026
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+description: '获取OneDrive for Business使用情况报告，了解整个组织使用的文件和存储总数。 '
+ms.openlocfilehash: 2deff1e5438dcc6edbe5f12ecd9f428e0242b93f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553048"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648839"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365管理中心中的报告 - OneDrive for Business使用情况
 
-"Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
+the Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
   
 例如，仪表板上的 OneDrive 卡提供从 OneDrive for Business 中获取的值的高级视图，可显示组织中所有文件总数和所用存储。可深入研究，了解活跃 OneDrive 帐户的趋势、用户与之交互的文件数，以及使用的存储量。它还提供每个用户的 OneDrive 的详细信息。
 
 ## <a name="how-do-i-get-to-the-onedrive-usage-report"></a>如何访问使用率OneDrive报告？
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。 
-2. 在仪表板主页上，单击仪表板卡片上的"查看更多OneDrive按钮。
+2. 在仪表板主页上，单击"浏览 **"** 卡片上的"查看更多OneDrive按钮。
   
 ## <a name="interpret-the-onedrive-usage-report"></a>OneDrive 使用情况报表说明
 
-You can view the usage in the OneDrive by choosing the **Usage** tab.<br/>![Microsoft 365报告 - Microsoft OneDrive使用情况报告。](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
+You can view the usage in the OneDrive by choosing the **Usage** tab.<br/>![Microsoft 365报表 - Microsoft OneDrive使用情况报告。](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
 
 选择 **"选择要在** 报表中添加或删除列的列"。  <br/> ![OneDrive使用情况报表 - 选择列。](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
 

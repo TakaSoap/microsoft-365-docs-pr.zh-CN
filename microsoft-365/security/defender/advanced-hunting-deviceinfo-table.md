@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2e71699e35339fe6fcf81b9eeaa93e84737e026d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 25cf4f098d1dd58e86583be17ccbd371a16b128d
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190421"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643161"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -50,10 +48,10 @@ ms.locfileid: "60190421"
 | `ClientVersion` | string | 计算机上运行的终结点代理或传感器的版本 |
 | `PublicIP` | string | 已载入计算机用于连接到 Microsoft Defender for Endpoint 服务的公共 IP 地址。 这可能是计算机本身、NAT 设备或代理的 IP 地址 |
 | `OSArchitecture` | string | 计算机上运行的操作系统的体系结构 |
-| `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10和 Windows 7。 |
+| `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10 和 Windows 7。 |
 | `OSBuild` | string | 计算机上运行的操作系统的生成版本 |
-| `IsAzureADJoined` | 布尔 | 指示计算机是否已加入到计算机中的布尔Azure Active Directory |
-| `AadObjectId` | string | Azure AD 中设备的唯一标识符 |
+| `IsAzureADJoined` | boolean | 指示计算机是否已加入到计算机中的布尔Azure Active Directory |
+| `AadObjectId` | string | 设备上设备的唯一Azure AD |
 | `LoggedOnUsers` | string | 事件时以 JSON 数组格式登录的所有用户的列表 |
 | `RegistryDeviceTag` | string | 通过注册表添加的机器标记 |
 | `OSVersion` | string | 计算机上运行的操作系统版本 |

@@ -8,7 +8,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-lsaldanha
+ms.author: dansimp
 author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ec6333317297ee83ba4e5869fd92ceea62f2a971
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ca01be03f3243159e6cc105b799731efc094e16e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212145"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643239"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>在实验室Microsoft 365 Defender设置试用版 
 
@@ -34,7 +34,7 @@ ms.locfileid: "60212145"
 **适用于：**
 - Microsoft 365 Defender 
 
-本主题指导您设置专用实验室环境。 有关在生产中设置试用版的信息，请参阅新的评估和试点Microsoft 365 Defender[指南。](eval-overview.md) 
+本主题指导您设置专用实验室环境。 有关在生产中设置试用版的信息，请参阅新的评估和试用Microsoft 365 Defender[指南。](eval-overview.md) 
 
 ## <a name="create-an-office-365-e5-trial-tenant"></a>创建Office 365 E5租户
 >[!NOTE]
@@ -44,7 +44,7 @@ ms.locfileid: "60212145"
 
    ![图像of_Office 365 E5 免费试用版页面。](../../media/mtp-eval-9.png)
   
-2. 通过向个人或公司用户 (电子邮件地址，完成) 。 单击 **"设置帐户"。**
+2. 通过输入你个人或公司用户的电子邮件地址 (完成) 。 单击 **"设置帐户"。**
 
    ![图像of_Office 365 E5 试用注册设置页面。](../../media/mtp-eval-10.png)
 
@@ -53,7 +53,7 @@ ms.locfileid: "60212145"
    ![要求of_Office、电话和公司详细信息的 365 E5 试用注册设置页面的图像。](../../media/mtp-eval-11.png)
    
    > [!NOTE]
-   > 你在此处设置的一个或多个国家/地区决定了你的Office 365的数据中心区域。
+   > 您在此处设置的一个或多个国家/地区决定了将托管Office 365的数据中心区域。
   
 4. 选择验证首选项：通过短信或呼叫。 单击 **"发送验证码"。** 
 
@@ -69,15 +69,15 @@ ms.locfileid: "60212145"
 
 7. 单击 **"转到设置**"以完成Office 365 E5租户预配。
 
-   ![试用Office 365 E5设置页面提示单击"开始设置"按钮的图像。](../../media/mtp-eval-15.png)
+   ![系统Office 365 E5注册设置页面提示单击"开始设置"按钮的图像。](../../media/mtp-eval-15.png)
 
-8. 连接公司域注册到 Office 365 租户。 [可选]选择 **连接你已拥有的域，** 然后键入你的域名。 单击“下一步”。
+8. 连接公司域注册到 Office 365 租户。 [可选]选择 **连接已拥有的域，** 然后键入域名。 点击 **“下一步”**。
 
    ![Image of_Office 365 E5 Setup page where you should personalize your sign-in and email.](../../media/mtp-eval-16.png)
  
 9. 添加 TXT 或 MX 记录以验证域所有权。 将 TXT 或 MX 记录添加到域后，选择"验证 **"。**
 
-   ![Image of_Office 365 E5 setup page where you should add a TXT of MX record to verify your domain.](../../media/mtp-eval-17.png)
+   ![图像of_Office 365 E5 设置页面，应在其中添加 MX 记录的 TXT 以验证域。](../../media/mtp-eval-17.png)
  
 10. [可选]为租户创建多个用户帐户。 可以通过单击"下一步"跳过 **此步骤**。
 
@@ -110,23 +110,23 @@ ms.locfileid: "60212145"
 
 1. 从 [Microsoft 365 管理中心，](https://admin.microsoft.com/)单击 **"计费**"，然后导航到"**购买服务"。**
 
-2. 选择 **Microsoft 365 E5"，** 然后单击 **"开始免费试用"。** 
+2. 选择 **Microsoft 365 E5，** 然后单击开始 **免费试用**。 
 
    ![图像of_Microsoft 365 E5 开始免费试用页面。](../../media/mtp-eval-24.png)
 
-3. 选择验证首选项：通过短信或呼叫。 决定后，输入电话号码，选择" **短信** "或" **呼叫** 我"，具体取决于你的选择。
+3. 选择验证首选项：通过短信或呼叫。 决定后，输入电话号码，选择"为我发 **短信** "或" **呼叫** 我"，具体取决于你的选择。
 
    ![图像of_Microsoft 365 E5 开始免费试用页面，请求联系人详细信息发送代码以证明你并非机器人。](../../media/mtp-eval-25.png)
  
 4. 输入验证码，然后单击 **开始免费试用**。
 
-   ![图像of_Microsoft 365 E5 开始免费试用页面，可在其中填写系统发送的验证码，以证明你并非机器人。](../../media/mtp-eval-26.png)
+   ![图像of_Microsoft 365 E5 开始免费试用页面，你可以在这里填写系统发送的验证码，以证明你并非机器人。](../../media/mtp-eval-26.png)
 
 5. 单击 **"立即试用**"确认Microsoft 365 E5试用版。
 
    ![Image of_Microsoft 365 E5 Start free trial page where you should clock the Try now button to start.](../../media/mtp-eval-27.png)
  
-6. 转到"Microsoft 365 管理 **中心**  >  **用户**  >  **""活动用户"。** 选择用户帐户，选择管理 **产品许可证**，然后将许可证从Office 365 E5交换为 **Microsoft 365 E5。** 单击“**保存**”。
+6. 转到"Microsoft 365 管理  >  **中心用户**  >  **""活动用户"。** 选择你的用户帐户，选择 **管理产品许可证**，然后将许可证从 **Office 365 E5交换** Microsoft 365 E5。 单击 **“保存”**。
 
    ![图像of_Microsoft 365 管理中心页面，可在其中选择Microsoft 365 E5许可证。](../../media/mtp-eval-28.png)
  
@@ -134,12 +134,12 @@ ms.locfileid: "60212145"
 
    ![图像of_Microsoft 365 管理中心页面，可在其中选择"帐户"，然后选择"管理用户名"。](../../media/mtp-eval-29.png)
 
-8. [可选]将域从 *onmicrosoft.com* 更改为您自己的域 ，具体取决于在上一步骤中选择了哪些设置。 单击“**保存更改**”。
+8. [可选]根据你在之前 *onmicrosoft.com* 选择的不同，将域从一个域更改为你自己的域。 单击“**保存更改**”。
 
    ![图像of_Microsoft 365 管理中心页面，可在其中更改域首选项。](../../media/mtp-eval-30.png)
 
 
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 |[阶段 3：配置&载入](config-m365d-eval.md) | 为测试Microsoft 365 Defender环境配置Microsoft 365 Defender功能支柱，并载入终结点。
 |:-------|:-----|

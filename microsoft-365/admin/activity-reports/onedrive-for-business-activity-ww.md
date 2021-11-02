@@ -19,17 +19,17 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: 获取OneDrive使用情况报告，并知道每个用户的活动OneDrive共享的文件数和存储使用率。
-ms.openlocfilehash: e9eee9ed45d397cc976c446f5fe7ceae06567b41
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+description: 获取OneDrive使用情况报告，并知道每个用户OneDrive的活动、共享的文件数和存储使用率。
+ms.openlocfilehash: 8cfd6dfbcff15c118f9ad54ef29e5cec6cf4d6bf
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553060"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648851"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365管理中心中的报表 - OneDrive for Business活动
 
-"Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 让用户深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
+the Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. 让用户深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
   
 例如，可通过查看有权使用 OneDrive 的用户与 OneDrive 上文件之间的交互情况，了解每个用户的活动。用户还可使用它查看共享的文件数，从而了解正在进行的协作的级别。
 
@@ -44,17 +44,17 @@ You can view the activities in the OneDrive by choosing the **Activity** tab.<br
 
 选择 **"选择要在** 报表中添加或删除列的列"。  <br/> ![OneDrive活动报表 - 选择列。](../../media/252f311f-ffde-4e5a-9158-2b822bf86964.png)
 
-您还可以通过选择"导出"链接将报告数据导出到Excel .csv **文件**。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。
+您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。
 
-可查看" **OneDrive for Business 使用情况**"报表以了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的某一天，则此表将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
+可查看" **OneDrive for Business 使用情况**"报表以了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的某一天，则该表将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
   
 |Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |帐户所有者的用户名OneDrive帐户。  <br/> |
-|上次活动日期 (UTC)   <br/> |对所选日期范围的 OneDrive执行文件活动的最近日期。 . 要查看指定日期发生的活动，请直接在图表中选择该日期。  <br/> |
+|上次活动日期 (UTC)   <br/> |文件活动在所选日期范围的OneDrive帐户上执行的日期。 . 要查看指定日期发生的活动，请直接在图表中选择该日期。  <br/> |
 |查看或编辑的文件  <br/> |用户上载、下载、修改或查看的文件数。   <br/> |
-|已同步文件  <br/> |从用户的本地设备同步到用户本地设备的文件OneDrive数量。 <br/> |
+|已同步文件  <br/> |从用户的本地设备同步到用户帐户的文件OneDrive数量。 <br/> |
 |在内部共享的文件  <br/> | 已与组织内部用户或组内用户共享的文件 (可能包括外部用户) 。  <br/> |
 |在外部共享的文件  <br/> |与组织外部的用户共享的文件数。 <br/>|
 |Deleted  <br/> | 这表示删除了用户的许可证。  <br/> 注意：已删除用户的活动仍将显示在报告中，只要该用户在所选时段的某个时间获得许可。 " **已删除** "列有助于提示你，用户可能不再活跃，但其活动已计入报表数据。  <br/> |

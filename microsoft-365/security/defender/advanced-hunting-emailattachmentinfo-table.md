@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-mms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d5bcdac9e292e64c0b45412eb93a03d7d760dd53
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67768257dc0a43d04fbc10f3c9d97cdd5fc83fa2
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184421"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643160"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -50,9 +48,9 @@ ms.locfileid: "60184421"
 | `NetworkMessageId` | string | 由用户生成的电子邮件的唯一Microsoft 365 |
 | `SenderFromAddress` | string | 发件人标题中的发件人电子邮件地址（电子邮件收件人在其电子邮件客户端上可以看到） |
 | `SenderDisplayName` | string | 通讯簿中显示的发件人姓名，通常是给定或名字、中间名首字母和姓氏或姓氏的组合 |
-| `SenderObjectId` | string | Azure AD 中发件人帐户的唯一标识符 |
+| `SenderObjectId` | string | 发件人帐户在邮件中的唯一Azure AD |
 | `RecipientEmailAddress` | string | 收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址 |
-| `RecipientObjectId` | string | Azure AD 中电子邮件收件人的唯一标识符 |
+| `RecipientObjectId` | string | 电子邮件收件人的唯一标识符Azure AD |
 | `FileName` | string | 录制操作所应用到的文件的名称 |
 | `FileType` | string | 文件扩展名类型 |
 | `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |

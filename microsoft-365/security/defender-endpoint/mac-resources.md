@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7a4438d564fd414d40c6c42b1265b13bcb13b983
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: 1df9efd022f58ef68ed06c8271e140b33dcb0f67
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268704"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646917"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的资源
 
@@ -50,7 +50,7 @@ ms.locfileid: "60268704"
 
 2. 重现问题
 
-3. 运行 `sudo mdatp diagnostic create` 以备份适用于终结点的 Microsoft Defender 日志。 这些文件将存储在存档.zip中。 此命令还会在操作成功后输出备份的文件路径。
+3. 运行 `sudo mdatp diagnostic create` 以备份适用于终结点的 Microsoft Defender 日志。 这些文件将存储在一个.zip中。 此命令还会在操作成功后输出备份的文件路径。
 
    > [!TIP]
    > 默认情况下，诊断日志将保存到 `/Library/Application Support/Microsoft/Defender/wdavdiag/` 。 若要更改保存诊断日志的目录，请传递给以下命令， `--path [directory]` `[directory]` 将 替换为所需的目录。
@@ -110,7 +110,7 @@ ms.locfileid: "60268704"
 |配置|打开/关闭防病毒被动模式|`mdatp config passive-mode --value [enabled/disabled]`|
 |配置|配置按需扫描的并行度|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |配置|在安全智能更新后打开/关闭扫描|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
-|配置|仅按需扫描 (/关闭存档扫描) |`mdatp config scan-archives --value [enabled/disabled]`|
+|配置|仅按需扫描 (/关闭存档) |`mdatp config scan-archives --value [enabled/disabled]`|
 |诊断|更改日志级别|`mdatp log level set --level [error/warning/info/verbose]`|
 |诊断|生成诊断日志|`mdatp diagnostic create --path [directory]`|
 |运行状况|检查产品的运行状况|`mdatp health`|
@@ -120,7 +120,7 @@ ms.locfileid: "60268704"
 |Protection|执行完全扫描|`mdatp scan full`|
 |Protection|取消正在进行的按需扫描|`mdatp scan cancel`|
 |Protection|请求安全智能更新|`mdatp definitions update`|
-|EDR|将组标记添加到设备。 EDR标记用于管理设备组。 有关详细信息，请访问 /microsoft-365/security/defender-endpoint/machine-groups|`mdatp edr tag set --name GROUP --value [name]`|
+|EDR|Set/Remove 标记，仅支持 GROUP|`mdatp edr tag set --name GROUP --value [name]`|
 |EDR|从设备中删除组标记|`mdatp edr tag remove --tag-name [name]`|
 |EDR|添加组 ID|`mdatp edr group-ids --group-id [group]`|
 
@@ -160,4 +160,4 @@ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>适用于终结点的 Microsoft Defender 门户信息
 
-[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的新功能现已到达，位于 Microsoft Defender for Endpoint 博客上，提供有关 Microsoft Defender for Endpoint 安全中心中预期内容的详细指南。
+[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的新功能现已到达，在 Microsoft Defender for Endpoint 博客上，提供有关 Microsoft Defender for Endpoint 安全中心中预期内容的详细指南。
