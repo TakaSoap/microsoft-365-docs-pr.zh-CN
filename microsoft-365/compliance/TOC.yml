@@ -3,7 +3,11 @@
 - name: Microsoft 365 合规中心更新信息
   href: whats-new.md
 - name: 合规性试用版
-  href: compliance-easy-trials.md
+  items:
+    - name: 关于 Microsoft 365 合规中心的免费试用版
+      href: compliance-easy-trials.md
+    - name: 关于 Microsoft 合规性管理器高级评估的免费试用版
+      href: compliance-easy-trials-compliance-manager-assessments.md
 - name: 入门
   items:
     - name: 实现合规性入门的快速任务
@@ -112,6 +116,8 @@
   items:
     - name: 了解数据，保护数据，避免丢失。
       href: information-protection.md
+    - name: 默认标签和 Microsoft 信息保护策略
+      href: mip-easy-trials.md
     - name: 敏感信息类型
       items:
         - name: 了解敏感信息类型
@@ -120,6 +126,8 @@
               href: sensitive-information-type-learn-about.md
             - name: 文档指纹
               href: document-fingerprinting.md
+            - name: 了解命名实体（预览版）
+              href: named-entities-learn.md
         - name: 敏感信息类型入门
           items:
             - name: 自定义敏感信息类型入门 - 合规中心
@@ -146,6 +154,8 @@
               href: create-a-keyword-dictionary.md
             - name: 修改关键字词典
               href: sit-modify-keyword-dictionary.md
+            - name: 在数据丢失防护策略中使用命名实体（预览版）
+              href: named-entities-use.md
         - name: 敏感信息类型参考
           items:
             - name: 敏感信息类型属性定义
@@ -315,6 +325,16 @@
                   href: dlp-configure-endpoints-script.md
                 - name: 载入非持久性虚拟桌面基础结构 (VDI) 设备。
                   href: dlp-configure-endpoints-vdi.md
+            - name: 将 macOS 设备载入 Microsoft 365 概述（预览版）
+              href: device-onboarding-macos-overview.md
+            - name: 使用 Microsoft Intune（预览版）将 macOS 设备载入并卸载到合规性解决方案中
+              href: device-onboarding-offboarding-macos-intune.md
+            - name: 使用适用于 Microsoft Defender for Endpoint 客户的 Intune 将 macOS 设备载入和卸载到合规性解决方案（预览版）
+              href: device-onboarding-offboarding-macos-intune-mde.md
+            - name: 使用 JAMF Pro（预览版）将 macOS 设备载入并卸载到合规性解决方案中
+              href: device-onboarding-offboarding-macos-jamfpro.md
+            - name: 使用适用于 Microsoft Defender for Endpoint 客户的 JAMF Pro 将 macOS 设备载入和卸载到合规性解决方案（预览版）
+              href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: 使用 DLP
           items:
             - name: DLP 和 Microsoft Teams
@@ -411,8 +431,12 @@
           items:
             - name: Bloomberg 消息
               href: archive-bloomberg-message-data.md
+            - name: Epic EHR 医疗保健数据（预览版）
+              href: import-epic-data.md
             - name: Facebook 商业版
               href: archive-facebook-data-with-sample-connector.md
+            - name: 通用 EHR 医疗保健数据（预览版）
+              href: import-healthcare-data.md
             - name: HR 数据
               href: import-hr-data.md
             - name: ICE 聊天
@@ -591,46 +615,6 @@
           href: record-versioning.md
         - name: 法规要求的资源
           href: retention-regulatory-requirements.md
-- name: 管理应用治理
-  items:
-    - name: 保护和治理应用
-      href: app-governance-manage-app-governance.md
-    - name: 开始使用应用治理
-      href: app-governance-get-started.md
-    - name: 提交有关应用治理的反馈
-      href: app-governance-feedback.md
-    - name: 获取可见性和见解
-      items:
-        - name: 了解可见性见解
-          href: app-governance-visibility-insights-overview.md
-        - name: 入门
-          href: app-governance-visibility-insights-get-started.md
-        - name: 查看你的应用
-          href: app-governance-visibility-insights-view-apps.md
-        - name: 确定合规性状况
-          href: app-governance-visibility-insights-compliance-posture.md
-    - name: 实现应用策略
-      items:
-        - name: 了解应用策略
-          href: app-governance-app-policies-overview.md
-        - name: 入门
-          href: app-governance-app-policies-get-started.md
-        - name: 创建应用策略
-          href: app-governance-app-policies-create.md
-        - name: 管理应用策略
-          href: app-governance-app-policies-manage.md
-    - name: 检测和修正应用威胁
-      items:
-        - name: 了解检测和修正
-          href: app-governance-detect-remediate-overview.md
-        - name: 入门
-          href: app-governance-detect-remediate-get-started.md
-        - name: 监视和响应数据使用量异常的应用
-          href: app-governance-monitor-apps-unusual-data-usage.md
-        - name: 调查异常检测警报
-          href: app-governance-anomaly-detection-alerts.md
-        - name: 修正应用威胁
-          href: app-governance-detect-remediate-detect-threats.md
 - name: 管理电子数据展示
   items:
     - name: Microsoft 365 电子数据展示解决方案
@@ -734,6 +718,10 @@
               href: what-is-stored-in-exo-mailbox.md
             - name: 估计和实际搜索结果的差异
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: 部分索引项
+              href: partially-indexed-items-in-content-search.md
+            - name: 调查部分索引项
+              href: investigating-partially-indexed-items-in-ediscovery.md
             - name: 预览电子数据展示搜索结果
               href: preview-ediscovery-search-results.md
             - name: 导出搜索报告
@@ -823,6 +811,8 @@
               href: ediscovery-kql-editor.md
             - name: 关键字查询和搜索条件
               href: keyword-queries-and-search-conditions.md
+            - name: 收集云附件
+              href: advanced-ediscovery-cloud-attachments.md
         - name: 管理审阅集
           href: managing-review-sets.md
           items:
