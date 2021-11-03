@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: 6edeea09798781d08b34566c469bead3aea22356
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 345f9ad748ca108cfa3e153239ef8534c1262bfa
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432621"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702757"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -41,7 +41,7 @@ ms.locfileid: "60432621"
     
 - 用户不再需要了解数据管理策略，反而可以专注于自己的工作。
     
-如果内容尚未应用保留标签，并且包含敏感信息、关键字或可搜索属性，或者[可训练分类器](classifier-get-started-with.md)的匹配项，则可以自动将保留标签应用于内容。
+如果内容尚未应用保留标签，并且包含敏感信息、关键字或可搜索属性，或者[可训练分类器](classifier-get-started-with.md)的匹配项，则可以自动将保留标签应用于内容。 现在，在预览版中，还可以将保留标签自动应用于存储在 SharePoint 或 OneDrive 中的云附件。
 
 > [!TIP]
 > 使用可搜索属性以识别 [Teams 会议录制](#microsoft-teams-meeting-recordings)和[应用了敏感度标签的项目](#identify-files-and-emails-that-have-a-sensitivity-label)。
@@ -57,7 +57,7 @@ ms.locfileid: "60432621"
 >
 > - 将保留标签应用于文档理解 SharePoint Syntex 中的模型
 > - 将默认保留标签应用于 SharePoint 和 Outlook
->- 使用 Outlook 规则将保留标签应用于电子邮件
+> - 使用 Outlook 规则将保留标签应用于电子邮件
 >
 > 有关这些情况，请参阅 [在应用中创建和应用保留标签](create-apply-retention-labels.md)。
 
@@ -65,7 +65,7 @@ ms.locfileid: "60432621"
 
 组织的全局管理员拥有创建和编辑保留标签及其策略的完全权限。 如果你未以全局管理员的身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。
 
-在创建保留标签策略之前，请先确定其将为 **自适应** 还是 **静态** 策略。 有关详细信息，请参阅 [保留的自适应或静态策略作用域](retention.md#adaptive-or-static-policy-scopes-for-retention)。 如果决定使用自适应策略，则必须在创建保留标签策略之前创建一个或多个自适应作用域，然后在创建保留标签策略期间进行选择。 有关说明，请参阅 [自适应作用域的配置信息](retention-settings.md#configuration-information-for-adaptive-scopes)。
+在创建保留标签策略之前，请先确定其将为 **自适应** 还是 **静态** 策略。 有关详细信息，请参阅 [保留](retention.md#adaptive-or-static-policy-scopes-for-retention)的自适应或静态策略范围。 如果决定使用自适应策略，则必须在创建保留标签策略之前创建一个或多个自适应作用域，然后在创建保留标签策略期间进行选择。 有关说明，请参阅 [自适应作用域的配置信息](retention-settings.md#configuration-information-for-adaptive-scopes)。
 
 ## <a name="how-to-auto-apply-a-retention-label"></a>如何自动应用保留标签
 
@@ -87,7 +87,7 @@ ms.locfileid: "60432621"
 
 2. 按照配置中的提示操作。
     
-    有关保留设置的详细信息，请参阅 [用于保留和删除内容的设置](retention-settings.md#settings-for-retaining-and-deleting-content)。
+    有关保留设置的详细信息，请参阅 [用于保留和删除内容的设置](retention-settings.md#settings-for-retaining-and-deleting-content)。 但是，如果标签将用于 [云附件](#auto-apply-labels-to-cloud-attachments)，请确保将保留期的开始时间配置为 **标记项目时**。
     
     如果你正在使用记录管理：
     
@@ -96,7 +96,6 @@ ms.locfileid: "60432621"
     - 若要使用保留标签来声明记录，请选择 **“将项目标记为记录”**，或者 **“将项目标记为合规性记录”**。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
 
 3. 创建标签后，你会看到发布标签、自动应用标签或仅保存标签的选项，请选择“**将此标签自动应用到特定类型的内容**”，然后选择“**完成**”。 
-4.  将直接进入以下流程的步骤 2 的配置。
 
 若要编辑现有标签，请将其选中，然后选择“**编辑标签**”选项来启动“**编辑保留标签**”配置，你将能够更改步骤 2 的标签说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
 
@@ -120,9 +119,9 @@ ms.locfileid: "60432621"
 
 4. 对于 **选择要创建的保留策略类型** 页面，请选择 **自适应** 或 **静态**，具体取决于在 [开始之前](#before-you-begin) 说明中所做的选择。 如果尚未创建自适应作用域，则可以选择 **自适应**，但由于没有自适应作用域可供选择，因此将无法使用此选项完成向导。
 
-5. 具体取决于选定的作用域:
+5. 具体取决于所选范围：
     
-    - 如果选择 **自适应**: 在 **选择自适应策略作用域和位置** 页面上，选择 **添加作用域**，然后选择一个或多个已创建的自适应作用域。 然后，选择一个或多个位置。 可以选择的位置取决于添加的 [作用域类型](retention-settings.md#configuration-information-for-adaptive-scopes)。 例如，如果仅添加了 **用户** 的作用域类型，则可以选择 **Exchange 电子邮件**，但不可以选择 **SharePoint 站点**。 
+    - 如果选择 **自适应**: 在 **选择自适应策略作用域和位置** 页面上，选择 **添加作用域**，然后选择一个或多个已创建的自适应作用域。 然后，选择一个或多个位置。 可以选择的位置取决于添加的[范围类型](retention-settings.md#configuration-information-for-adaptive-scopes)。 例如，如果仅添加了 **用户** 的作用域类型，则可以选择 **Exchange 电子邮件** ，但不能 **sharePoint 网站**。 
     
     - 如果选择 **静态**: 在 **选择位置** 页面上，打开或关闭任意位置。 对于每个位置，可以将其保留为默认值，以 [将策略应用于整个位置](retention-settings.md#a-policy-that-applies-to-entire-locations)，或 [指定包含和排除](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
     
@@ -147,7 +146,11 @@ ms.locfileid: "60432621"
 
 - [可训练分类器的匹配项](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-使用下表确定何时可以将保留标签自动应用于 Exchange 的项目：
+或者，可以将保留标签自动应用于新共享的 [云附件](#auto-apply-labels-to-cloud-attachments)。
+
+将保留标签配置为基于敏感信息、关键字或可搜索属性或可训练分类器的自动应用时，请使用下表确定何时可以自动应用保留标签。
+
+Exchange:
 
 |条件|传输中的项目（已发送或已接收） |现有项（静态数据）|
 |:-----|:-----|:-----|
@@ -156,7 +159,7 @@ ms.locfileid: "60432621"
 |特定关键字或可搜索属性| 是 |是 |
 |可训练的分类器| 是 | 是（仅过去六个月） |
 
-对于 SharePoint 和 OneDrive 中的项目，请使用下表来确定何时可以自动应用保留标签：
+SharePoint 和 OneDrive：
 
 |条件|新建或修改的项目 |现有项（静态数据）|
 |:-----|:-----|:-----|
@@ -170,9 +173,9 @@ ms.locfileid: "60432621"
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>将标签自动应用于包含特定类型敏感信息的内容
 
 > [!IMPORTANT]
-> 对于通过识别敏感信息自动应用的电子邮件，不支持将策略范围限定为包含或排除特定收件人；此策略配置仅支持“**所有收件人**”设置。特定于此策略设置，“**所有收件人**”包括来自 Microsoft 365 组的邮箱。
+> 对于通过标识敏感信息自动应用的电子邮件，将自动包含所有邮箱，其中包括来自Microsoft 365 组的邮箱。
 > 
-> 此外，特定于此策略配置，如果选择"**Microsoft 365 组**"位置，则仅包括连接到 Microsoft 365 组的 SharePoint 站点，不包括来自 Microsoft 365 组的邮箱。
+> 尽管通常通过选择 **Microsoft 365 组** 位置来包含组邮箱，但对于此特定策略配置，组位置仅包括连接到 Microsoft 365 组的 SharePoint 网站。
 
 为敏感信息创建自动应用保留标签策略时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 每个策略模板都是预配置的，用于查找特定类型的敏感信息。 在下面的示例中，敏感信息类型来自" **隐私信息** "类别， **美国个人身份信息 （PII） 数据** 模板：
 
@@ -312,9 +315,56 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 - 不能自动标记超过六个月的 SharePoint 和 OneDrive 项目。
 
+#### <a name="auto-apply-labels-to-cloud-attachments"></a>将标签自动应用于云附件
+
+> [!NOTE]
+> 此选项在预览版中逐步推出，可能会发生变化。
+
+如果需要捕获并保留租户中通过通信发送的所有文件副本，可能需要使用此选项。 将此选项与通信服务本身、Exchange 和 Teams 的保留策略结合使用。
+
+> [!IMPORTANT]
+> 选择要用于自动应用云附件的保留标签的标签时，请确保标签保留设置"**基于开始保留期**"是"**标记项目的时间**"。
+
+云附件（有时也称为新式附件）是一种共享机制，它使用指向存储在云中的文件嵌入链接。 它们支持集中存储具有协作优势的共享内容，例如版本控制。 云附件不是文件的附加副本或指向文件的 URL 文本链接。 在[ Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) 和 [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams)中，受支持的云附件的可视化清单可能会很有帮助。
+
+选择将保留标签应用于云附件的选项时，出于合规性目的，在共享时将创建该文件的副本。 然后，将所选保留标签应用于随后可以使用电子数据展示标识的副本。 用户不知道存储在保留库中的副本。 保留标签不会应用于邮件本身或原始文件。
+
+如果文件被修改并再次共享，则作为新版本的文件的新副本将保存在保留库中。 有关详细信息，包括为什么应该使用“**当项目被标记时**”进行标签设置，请参阅 [如何使用云附件进行保留](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments)。
+
+此选项支持的云附件是存储在 SharePoint 和 OneDrive 中的文件（如文档、视频和图像）。 对于 Teams，支持聊天消息中共享的云附件以及标准和专用频道。 不支持通过会议邀请和 Teams 或 Outlook 以外的应用共享的云附件。
+
+虽然此选项不是必需的，但我们建议确保为 SharePoint 网站和 OneDrive 帐户启用版本控制，以便准确捕获共享的版本。 如果未启用版本控制，将保留上一个可用版本。 不支持草稿中或从未发布过的文档。
+
+当你选择要用于自动应用云附件的保留标签的标签时，请确保标签保留设置"**基于开始保留期**"是"**标记项目的时间**"。 
+
+为此选项配置位置时，可以选择：
+
+- **SharePoint 网站** SharePoint 通信网站、未由 Microsoft 365 组连接的团队网站和经典网站中存储的共享文件。 
+- **Microsoft 365 组** 存储在由Microsoft 365 组连接的团队网站中的共享文件。
+- **OneDrive用户** 存储在用户 OneDrive中的共享文件。
+
+如果要保留或删除原始文件、电子邮件或 Teams 邮件，则需要创建单独的保留策略。
+
+> [!NOTE]
+> 如果希望保留的云附件与包含它们的邮件同时过期，请将保留标签配置为具有相同的保留，然后删除与 Exchange 和 Teams 的保留策略相同的操作和时间。
+
+考虑何时自动将保留标签应用于云附件：
+
+- 仅新共享的云附件将被自动标记为保留。
+
+- 不支持在 Teams 和 Outlook 外部共享的云附件。
+
+- 以下项目不支持作为可保留的云附件：
+    - SharePoint网站、页面、列表、表单、文件夹、文档集和 OneNote 页面。
+    - 无法访问这些文件的用户的共享文件。
+    - 发送云附件之前删除的文件。 如果用户复制并粘贴另一封邮件中以前共享的附件，而不首先确认文件仍然可用，则可能会发生这种情况。 或者，现在删除文件时，有人转发旧邮件。
+    - 由来宾或组织外部用户共享的文件。
+    - 草稿电子邮件中的文件和未发送的邮件。
+    - 空文件。
+
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保留标签需要多长时间才能生效
 
-自动应用保留标签时，可能需要等待长达 7 天，才能将保留标签应用于与条件匹配的所有现有内容。
+基于敏感信息、关键字或可搜索属性或可训练分类器自动应用保留标签时，可能需要 7 天才能应用保留标签：
   
 ![自动应用标签生效时间关系图。](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
@@ -330,7 +380,9 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 ## <a name="updating-retention-labels-and-their-policies"></a>更新保留标签及其策略
 
-在编辑保留标签或自动应用策略，并且该保留标签已应用到内容时，更新后的设置将自动应用于此内容以及新标识的内容。
+对于为敏感信息、关键字或可搜索属性配置的自动应用保留标签策略，或可训练分类器匹配项：当策略中的保留标签已应用于内容时，对所选标签和策略的配置更改将会自动应用于此内容以及新标识的内容。
+
+对于为云附件配置的自动应用保留标签策略：由于此策略适用于新共享文件而不是现有文件，对所选标签和策略的配置更改将自动仅应用于新共享的内容。
 
 某些设置无法在创建并保存标签或策略后更改，包括：
 - 保留标签和策略名称以及保留期以外的其他保留设置。 但是，如果保留期基于项目的标记时间，则不能更改保留期。
