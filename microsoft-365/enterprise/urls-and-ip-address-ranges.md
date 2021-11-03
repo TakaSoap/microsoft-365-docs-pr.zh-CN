@@ -3,7 +3,7 @@ title: Office 365 URL 和 IP 地址范围
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/28/2021
+ms.date: 10/29/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 摘要：Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政府社区云 (GCC)）的客户，应该可以访问以下终结点。
 hideEdit: true
-ms.openlocfilehash: 936c2bd4a981434883f115a932f870a558a7355d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d223ec20be108cdcfa53a2357e95cccdf6474e69
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189005"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60700874"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 和 IP 地址范围
 
@@ -39,14 +39,14 @@ Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政
 
 |备注|下载|用途|
 |---|---|---|
-|**上次更新时间：** 2021 年 9 月 28 日 -![ RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**下载：** 一个 [JSON 格式](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)列表中的所有必需和可选目标。|**使用：** 代理 [PAC 文件](managing-office-365-endpoints.md#pacfiles)|
+|**上次更新时间：** 2021 年 10 月 29 日–![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**下载：** 一个 [JSON 格式](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)列表中的所有必需和可选目标。|**使用：** 代理 [PAC 文件](managing-office-365-endpoints.md#pacfiles)|
 |
 
 从[管理 Office 365 终结点](managing-office-365-endpoints.md)开始了解我们使用此数据管理网络连接的建议。终结点数据视需要在每月月初更新，并在生效前 30 天发布新的 IP 地址和 URL。这允许尚未进行自动更新的客户在需要新连接之前完成其过程。如果需要解决支持提升、安全事件或其他即时操作要求，终结点也可以在月内更新。以下页面上显示的数据全部由基于 REST 的 Web 服务生成。如果使用脚本或网络设备访问此数据，应直接转到 [Web 服务](microsoft-365-ip-web-service.md)。
 
-下面的终结点数据列出了从用户计算机到 Office 365 的连接要求。它不包括从 Microsoft 到客户网络的网络连接（有时称为混合或入站网络连接）。有关详细信息，请参阅“[其他终结点](additional-office365-ip-addresses-and-urls.md)”。
+下面的终结点数据列出了从用户计算机到 Office 365 的连接要求。 有关用于从 Microsoft 到客户网络的网络连接（有时称为混合或入站网络连接）的 IP 地址的详细信息，请参阅[其他终结点](additional-office365-ip-addresses-and-urls.md)了解详细信息。
 
-终结点分为四个服务区域。可以独立选择前三个服务区域进行连接。第四个服务区域是一个常见的依赖项（称为 Microsoft 365 Common 和 Office），并且必须始终具有网络连接。
+终结点分为四个服务区域，表示三个主要工作负荷和一组常用资源。 这些组可用于将流量流与特定应用程序相关联，但是，鉴于功能通常在多个工作负荷中使用终结点，这些组无法有效地用于限制访问。
 
 显示的数据列是：
 

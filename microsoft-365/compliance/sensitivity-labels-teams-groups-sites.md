@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: fff0326df591ad5cd414be73afe9f365b1bc04b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e32a74dcb682d77367b5c8e3a3bc2b656d0e236
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150998"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703043"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -102,7 +102,7 @@ ms.locfileid: "60150998"
     
     - **外部用户访问**：控制组所有者是否可以 [向组添加来宾](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
-4. 如果你选择了“**设备外部共享和设备访问设置**”，现在请配置以下设置：
+4. 如果你选择了“**外部共享和条件访问设置**”，现在请配置以下设置：
     
     - **控制来自标记为 SharePoint 网站或网站** 的外部共享：选择此选项，然后选择对任何人、新来宾和现有来宾、现有来宾或仅对组织内部人员的外部共享。 有关此配置和设置的详细信息，请参阅 SharePoint 文档，[为网站开启或关闭外部共享](/sharepoint/change-external-sharing-site)。
     

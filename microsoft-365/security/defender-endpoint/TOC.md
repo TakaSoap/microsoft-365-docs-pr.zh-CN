@@ -158,6 +158,7 @@
 
 ##### [Android 上的 Microsoft Defender for Endpoint]()
 ###### [Android 上的 Microsoft Defender for Endpoint 概述](microsoft-defender-endpoint-android.md)
+###### [新增功能](android-whatsnew.md)
 
 ###### [部署]()
 ####### [使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint](android-intune.md)
@@ -188,10 +189,13 @@
 
 ##### [Microsoft Defender for Endpoint 应用程序许可条款](mde-terms-mobile.md) 
 
+### [使用 Microsoft Endpoint Manager 管理设备上的 Microsoft Defender for Endpoint 配置设置](security-config-management.md)
 
 ### [解决载入问题]()
 #### [解决载入期间的问题](troubleshoot-onboarding.md)
 #### [解决订阅和门户访问问题](troubleshoot-onboarding-error-messages.md)
+#### [排查安全配置管理载入问题](troubleshoot-security-config-mgt.md)
+
 
 
 

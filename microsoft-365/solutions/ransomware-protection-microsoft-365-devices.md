@@ -15,14 +15,14 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒
+keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
 description: 使用 Windows Intune 作为 MDA 和 MAM 服务提供商，Windows 10 安全功能将保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: 1ca17604bba09e5df83252d3d65c60561f56e2d1
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: adbefb7ac8ec574a69bc59a67cab61cc69d00568
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444498"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702207"
 ---
 # <a name="step-4-protect-devices"></a>步骤 4. 保护设备
 
