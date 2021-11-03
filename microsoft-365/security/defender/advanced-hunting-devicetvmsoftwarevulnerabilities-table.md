@@ -22,8 +22,8 @@ ms.openlocfilehash: c217c060c3d0b570c6da5bfbd47c72cb8cdfca2b
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700321"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60670803"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -57,7 +57,7 @@ ms.locfileid: "60700321"
 | `CveId` | string | 通用漏洞披露 (CVE) 系统下分配给安全漏洞的唯一标识符 |
 | `VulnerabilitySeverityLevel` | string | 基于 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别 |
 | `RecommendedSecurityUpdate` | string | 软件供应商提供的用于解决漏洞的安全更新的名称或说明 |
-| `RecommendedSecurityUpdateId` | string | 适用安全更新的标识符或相应指南或知识库的标识符 (KB) 文章 |
+| `RecommendedSecurityUpdateId` | string | 适用安全更新的标识符或相应指南或知识库 (KB) 标识符 |
 
 
 

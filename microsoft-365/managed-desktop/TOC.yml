@@ -19,8 +19,6 @@
       items:
         - name: 支持的区域
           href: service-description/regions-languages.md
-        - name: 产品生命周期
-          href: service-description/device-lifecycle.md
         - name: 设备
           href: null
           items:

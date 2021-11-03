@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: f5a3f401f17ee71ff78e15f6e1b3e9c7348ac40c
-ms.sourcegitcommit: 96618d21ad0424b7b51090afad5079ad0e955c21
+ms.openlocfilehash: 5b1ad39feeebdbf44a83e09e1daa25794ebc98fa
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60251096"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60698425"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
@@ -90,7 +90,7 @@ ms.locfileid: "60251096"
     - **终结点数据丢失防护 （Endpoint DLP）：**
         - Windows 10 1809 KB 4601383
         - Windows 10 1903 和 1909，KB 4601380
-        - Windows 10 2004 KB 46013
+        - Windows 10 2004 KB 4601382
         - 支持早于 Windows 10 2004 的 Windows 版本，无需 KB 更新
     
     - **使用 Microsoft 信息保护 SDK 的应用和服务：** 
