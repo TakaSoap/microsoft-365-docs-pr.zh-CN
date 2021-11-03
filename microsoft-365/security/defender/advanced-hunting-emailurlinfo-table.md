@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b084ecb42a13c35b10aeb73655c614a7b56754b5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 51182f87eae4a26153b08c934c3f77e0164f4b8b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206669"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702057"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -35,7 +33,7 @@ ms.locfileid: "60206669"
 **适用于：**
 - Microsoft 365 Defender
 
-高级 `EmailUrlInfo` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关由 Microsoft Defender for Office 365 处理的电子邮件和附件的 URL 的信息。 使用此参考来构建从此表返回信息的查询。 
+高级 `EmailUrlInfo` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关由 Microsoft Defender for Office 365 处理的电子邮件和附件的 URL。 使用此参考来构建从此表返回信息的查询。 
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 

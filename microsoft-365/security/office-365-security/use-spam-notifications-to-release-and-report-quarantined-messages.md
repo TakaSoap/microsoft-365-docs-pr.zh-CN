@@ -21,12 +21,12 @@ ms.custom:
 description: 管理员可以了解 EOP 电子邮件中隔离邮件的最终用户Exchange Online Protection () 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31cfebba6d7bde610ac855dc4c7985d2432fabe3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b08a89adb5f2cc8f02cdce4e5150b82838f287cf
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190241"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702853"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>使用隔离通知释放并报告隔离邮件
 
@@ -39,14 +39,16 @@ ms.locfileid: "60190241"
 
 无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。 有关详细信息，请参阅 [EOP 中的隔离邮件](quarantine-email-messages.md)。
 
-_隔离_ 策略根据邮件被隔离的原因来定义允许用户对隔离邮件 (支持的功能) 。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。 隔离策略还控制受影响的收件人是否 (共享邮箱 _) 定期收到_ 有关其隔离邮件的隔离通知。 隔离通知替代了所有支持保护功能的最终用户垃圾邮件 (，而不仅是反垃圾邮件策略裁定) 。
+_隔离_ 策略根据邮件被隔离的原因来定义允许用户对隔离邮件 (支持的功能) 。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。 隔离策略还控制受影响的收件人 (包括共享邮箱 _) 是否定期_ 收到有关其隔离邮件的隔离通知。 隔离通知是最终用户垃圾邮件通知的一种替代，它适用于所有支持 (，而不仅是反垃圾邮件策略裁定) 。
 
-管理员还可使用隔离策略中的全局设置来自定义发件人的 显示名称、不同语言的免责声明文本以及通知中使用的公司徽标。 有关说明，请参阅在门户[中配置全局隔离Microsoft 365 Defender设置](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal)。
+隔离通知未在名为 AdminOnlyAccessPolicy 或 DefaultFullAccessPolicy 的内置隔离通知中打开。 如果组织具有隔离通知，隔离通知在名为 NotificationEnabledPolicy 的内置隔离 [策略中打开](quarantine-policies.md#full-access-permissions-and-quarantine-notifications)。 否则，若要在隔离策略中打开隔离通知，需要 [创建和配置新的隔离策略](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal)。
+
+管理员还可使用隔离策略中的全局设置来自定义发件人的 显示名称、不同语言的免责声明文本以及隔离通知中使用的公司徽标。 有关说明，请参阅 [配置全局隔离通知设置](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal)。
 
 对于共享邮箱，仅向共享邮箱授予 FullAccess 权限的用户支持隔离通知。 有关详细信息，请参阅使用 [EAC 编辑共享邮箱委派](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation)。
 
 > [!NOTE]
-> 默认情况下，被隔离为高可信度网络钓鱼、恶意软件、邮件流规则 (也称为传输规则) 或在 Defender for Office 365 中隔离为 保险箱 附件策略的邮件仅对管理员可用。 有关详细信息，请参阅 [在 EOP 中以管理员身份管理已隔离邮件和文件](manage-quarantined-messages-and-files.md)。
+> 默认情况下，通过邮件流规则 (（也称为适用于 Office 365 的 Defender 中的传输规则) 或 保险箱 附件策略）隔离为高可信度网络钓鱼、恶意软件的邮件仅对管理员可用 (默认情况下，AdminOnlyAccessPolicy 隔离策略使用) 。 有关详细信息，请参阅 [在 EOP 中以管理员身份管理已隔离邮件和文件](manage-quarantined-messages-and-files.md)。
 >
 > 组不支持隔离通知。
 
@@ -54,7 +56,7 @@ _隔离_ 策略根据邮件被隔离的原因来定义允许用户对隔离邮�
 
 - **发件人**：已隔离邮件的发送名称和电子邮件地址。
 - **主题**：隔离邮件的主题行文本。
-- **日期**：隔离邮件 (的日期和时间) UTC 格式。
+- **日期**：以 UTC (隔离) 日期和时间。
 
 隔离通知中可用的操作取决于邮件被隔离的原因，以及关联的隔离策略分配的权限。 有关详细信息，请参阅隔离 [策略权限详细信息](quarantine-policies.md#quarantine-policy-permission-details)。
 
@@ -62,7 +64,7 @@ _隔离_ 策略根据邮件被隔离的原因来定义允许用户对隔离邮�
 
 - **阻止发件人**：单击此链接将发件人添加到邮箱上的 _阻止发件人列表中_ 。 有关详细信息，请参阅 [阻止邮件发件人](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
 - **释放**：你可以在此处释放邮件，**而无需在** Microsoft 365 Defender 门户中。
-- **Review**： Click this link to go to **Quarantine** in the Microsoft 365 Defender portal， where you can (depending on why the message was quarantined) view， release， delete or report your quarantined messages. 有关详细信息，请参阅在 [EOP](find-and-release-quarantined-messages-as-a-user.md)中以用户模式查找并释放隔离邮件。
+- Review **：** Click this link to go to **Quarantine** in the Microsoft 365 Defender portal， where you can (depending on why the message was quarantined) view， release， delete or report your quarantined messages. 有关详细信息，请参阅在 [EOP](find-and-release-quarantined-messages-as-a-user.md)中以用户模式查找并释放隔离邮件。
 
 ![示例隔离通知。](../../media/end-user-spam-notification.png)
 

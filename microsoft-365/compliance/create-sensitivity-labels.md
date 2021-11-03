@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的数据进行分类和保护。
-ms.openlocfilehash: 1ce355b2780016dfd7732399546567696e7c2301
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1dfcbc21b84e0d35504f513d6dc1a46b7581f0e2
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170807"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60700849"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -40,15 +40,9 @@ ms.locfileid: "60170807"
 
 ## <a name="create-and-configure-sensitivity-labels"></a>创建和配置敏感度标签
 
-1. 在标签管理中心中，导航到“灵敏度”标签：
-
-    - Microsoft 365 合规中心： 
-        - **解决方案** > **信息保护**
-
-        如果看不到此选项，请先选择“**全部显示**”。 
-
-    - 安全与合规中心：
-        - **分类** > **灵敏度标签**
+1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **解决方案** > **信息保护**
+    
+    如果看不到此选项，请先选择“**全部显示**”。
 
 2. 在“**标签**”页面，选择“**+ 创建标签**”，以启动“新建灵敏度标签”向导。 
 
@@ -133,15 +127,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>通过创建标签策略来发布敏感度标签
 
-1. 在标签管理中心中，导航到“灵敏度”标签：
-
-    - Microsoft 365 合规中心： 
-        - **解决方案** > **信息保护**
-
-        如果看不到此选项，请先选择“**全部显示**”。 
-
-    - 安全与合规中心：
-        - **分类** > **灵敏度标签**
+1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **解决方案** > **信息保护**
+    
+    如果看不到此选项，请先选择“**全部显示**”。
 
 2. 依次选择“**标签策略**”选项卡和“**发布标签**”，以启动“创建策略”向导：
 

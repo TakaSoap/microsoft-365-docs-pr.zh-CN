@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f771837dd40bc8a3fbaebeac060c10259395c3fc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 30a0e3b61e004ffe6c78e3b7a2d15b7b190253d9
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699061"
+ms.locfileid: "60724651"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>将帐户从 Microsoft Defender for Endpoint 重定向到Microsoft 365 Defender
 
@@ -37,20 +37,20 @@ ms.locfileid: "60699061"
 
 为了与 Microsoft 使用 SIEM 进行威胁防护的跨域方法以及扩展检测和响应 (XDR) 一致，我们将 Microsoft Defender 高级威胁防护重新品牌化为适用于终结点的 Microsoft Defender，并统一到单个集成门户：Microsoft 365 Defender。
 
-本指南介绍如何通过启用从以前的 Microsoft Defender 终结点门户 (securitycenter.windows.com 或 securitycenter.microsoft.com) 自动重定向到 Microsoft 365 Defender，将帐户路由到 Microsoft 365 Defender 门户 (security.microsoft.com) 。
+本指南 Microsoft 365 Defender介绍如何通过启用从以前的 Microsoft Defender for Endpoint 门户 (securitycenter.windows.com 或 securitycenter.microsoft.com) 到 Microsoft 365 Defender 门户门户 (security.microsoft.com) 的自动重定向，将帐户Microsoft 365 Defender到 (security.microsoft.com) 。
 
 > [!NOTE]
 > microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSP) ](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender security center](./mssp-access.md).
 
 ## <a name="what-to-expect"></a>预期结果
 
-启用自动重定向后，在 securitycenter.windows.com 或 securitycenter.microsoft.com 访问以前的 Microsoft Defender 终结点门户的帐户将自动路由到 Microsoft 365 Defender 门户 security.microsoft.com。
+启用自动重定向后，在 securitycenter.windows.com 或 securitycenter.microsoft.com 访问以前的 Microsoft Defender 终结点门户的帐户将自动路由到 Microsoft 365 Defender 门户（位于 security.microsoft.com）。
 
-了解有关更改功能（Microsoft Defender [for Endpoint in Microsoft 365 Defender）](microsoft-365-security-center-mde.md)
+详细了解更改了哪些功能[：Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)。
 
 这包括通过浏览器直接访问以前的门户的重定向，包括指向以前的 securitycenter.windows.com 门户的链接（如电子邮件通知中的链接，以及 SIEM API 调用返回的链接）。  
 
- 电子邮件通知或 SIEM API 中的外部链接当前包含指向这两个门户的链接。 启用重定向后，两个链接将指向Microsoft 365 Defender直到最终删除旧链接。 我们鼓励你采用指向该链接的新Microsoft 365 Defender。
+ 电子邮件通知或 SIEM API 中的外部链接当前包含指向这两个门户的链接。 启用重定向后，两个链接将Microsoft 365 Defender，直到最终删除旧链接。 我们鼓励你采用指向该链接的新Microsoft 365 Defender。
 
 有关链接和路由的详细信息，请参阅下表。
 ## <a name="siem-api-routing"></a>SIEM API 路由
@@ -73,7 +73,7 @@ ms.locfileid: "60699061"
 
 ## <a name="when-does-this-take-effect"></a>这何时生效？
 
-启用后，此更新可能会立即对一些帐户生效。 但是，重定向可能需要更长时间才能传播到组织的每一个帐户。 应用此设置时的活动会话中的帐户不会从其会话中弹出，并且仅在结束当前会话并再次登录后Microsoft 365 Defender路由到 Microsoft 365 Defender。  
+启用后，此更新可能会立即对一些帐户生效。 但是，重定向可能需要更长时间才能传播到组织的每一个帐户。 应用此设置时的活动会话中的帐户不会从其会话中弹出，并且仅在结束当前会话并再次登录后路由到 Microsoft 365 Defender。  
 
 ### <a name="set-up-portal-redirection"></a>设置门户重定向
 
@@ -114,7 +114,7 @@ ms.locfileid: "60699061"
 禁用后，帐户将不再路由到 security.microsoft.com，并且你将再次有权访问以前的门户 -securitycenter.windows.com 或 securitycenter.microsoft.com。 
 
 ## <a name="related-information"></a>相关信息
-- [Microsoft 365 Defender概述](overview-security-center.md)
+- [Microsoft 365 Defender概述](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft 提供统一的 SIEM 和 XDR 以现代化安全操作](https://www.microsoft.com/security/blog/?p=91813) 
 - [XDR 与 SIEM 信息图](https://afrait.com/blog/xdr-versus-siem/) 

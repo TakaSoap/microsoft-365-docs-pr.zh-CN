@@ -21,8 +21,8 @@ ms.openlocfilehash: ec44ec38a76cf0371804df25b698d77ba7b5aa22
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668396"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702013"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 
@@ -32,7 +32,7 @@ ms.locfileid: "60668396"
 
 合规性管理器适用于具有 Office 365 和 Microsoft 365 许可证的组织，以及美国 政府社区云 (GCC) 中等、GCC 高和国防部 (DoD) 客户。 评估可用性和管理功能取决于您的许可协议。  [查看服务说明详细信息](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 组织的Microsoft 365管理员可能是第一个访问合规性管理器的用户。 我们建议全局管理员登录并设置用户权限，如第一次访问合规性管理器时所述。
 
@@ -100,7 +100,7 @@ ms.locfileid: "60668396"
 
 ### <a name="set-up-automated-testing"></a>设置自动测试
 
-合规性管理器中的一些改进操作也受 [Microsoft 安全](../security/defender/microsoft-secure-score.md)分数 监视。 可以设置对共同监视的操作的自动测试，这意味着在安全分数中对操作进行测试和更新时，这些结果会与合规性管理器中的相同操作同步，并计入合规性分数。
+合规性管理器中的一些改进操作也受 [Microsoft 安全](../security/defender/microsoft-secure-score.md)分数 监视。 您可以设置对共同监视的操作的自动测试，这意味着在安全分数中对操作进行测试和更新时，这些结果会与合规性管理器中的相同操作同步，并计入合规性分数。
 
 默认情况下，对使用合规性管理器的组织启用自动测试。 首次部署Microsoft 365或Office 365时，安全分数需要大约 7 天的时间，以完全收集数据，并纳入合规性分数中。  启用自动测试后，不会更新该操作的测试日期，但其测试状态将更新。 创建新评估后，分数将自动包含 Microsoft 控制分数和安全分数集成。
 
@@ -158,7 +158,7 @@ ms.locfileid: "60668396"
 
 5. 从"**选择"** 下拉菜单中，选择"导出 **报告"。**
 
-6. 生成Excel文件后，你可以打开它并将其保存到本地计算机。
+6. 生成Excel文件后，可以打开它并将其保存到本地计算机。
 
 #### <a name="reassign-improvement-actions-to-another-user"></a>将改进操作重新分配给其他用户
 
@@ -217,7 +217,7 @@ ms.locfileid: "60668396"
 
 合规性分数特别推荐在最上面。 它根据完成解决关键数据保护标准和法规的改进操作可达到的分数来显示百分比。 Microsoft 操作 [中的](compliance-manager-assessments.md#microsoft-actions-tab)分数（管理我的 Microsoft）也计入合规性分数。
 
-当你第一次访问合规性管理器时，你的初始分数基于Microsoft 365[基线 。](compliance-manager-assessments.md#data-protection-baseline-default-assessment) 此基线评估可供所有组织使用，是一组包含常见行业法规和标准的控制措施。 合规性管理器可扫描Microsoft 365解决方案，并基于当前隐私和安全设置进行初始评估。 添加与组织相关的评估时，分数将变得更加有意义。
+当你首次访问合规性管理器时，你的初始分数基于Microsoft 365[基线](compliance-manager-assessments.md#data-protection-baseline-default-assessment)。 此基线评估可供所有组织使用，是一组包含常见行业法规和标准的控制措施。 合规性管理器可扫描Microsoft 365解决方案，并基于当前隐私和安全设置进行初始评估。 添加与组织相关的评估时，分数将变得更加有意义。
 
 **了解更多信息：**[了解如何计算合规性分数](compliance-score-calculation.md)。
 
@@ -312,7 +312,7 @@ ms.locfileid: "60668396"
 
 1. 在预期解决方案行的"剩余操作" **列下，** 选择超链接编号。 你将看到改进操作屏幕的筛选视图，其中显示了该解决方案的未经测试的改进操作。
 
-2. 在预期解决方案行的"打开解决方案"列下，选择"打开 **"。** 你将在安全与合规中心Microsoft 365解决方案Office 365位置，你可以在这里采取建议的操作。
+2. 在预期解决方案行的"打开解决方案"列下，选择"打开 **"。** 你将在安全与合规Microsoft 365和Office 365中心看到解决方案或位置，你可以在这里采取建议的操作。
 
 ## <a name="assessments-page"></a>评估页面
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a1a8c8eeffaa05e34f7a3216b743540b1e6406f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 85ef173543b9696a8aa8a0c7505ed30cefc5f932
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553480"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701737"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>配置和管理 Microsoft 威胁专家功能
 
@@ -35,14 +35,14 @@ ms.locfileid: "60553480"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 > [!NOTE]
-> 在应用目标攻击通知托管威胁搜寻服务之前，与 Microsoft 技术服务提供商和帐户团队Microsoft 威胁专家资格要求。
+> 在申请目标攻击通知托管威胁搜寻服务之前，Microsoft 威胁专家 Microsoft 技术服务提供商和帐户团队讨论资格要求。
 
 确保在你的环境中部署了 Defender for Endpoint 并注册了设备，而不只是在实验室设置上。
 
-如果你是适用于终结点的 Defender 客户，则需要申请 **Microsoft 威胁专家 -** 目标攻击通知，获取特殊见解和分析，以帮助识别最重要的威胁，以便你可以快速响应它们。 联系你的客户团队或 Microsoft 代表，订阅 Microsoft 威胁专家 **-** 专家按需咨询我们的威胁专家，了解相关检测和对手。
+如果你是适用于终结点的 Defender 客户，则需要申请 **Microsoft 威胁专家 -** 目标攻击通知，以获得特殊的见解和分析，以帮助识别最重要的威胁，以便你可以快速响应它们。 联系你的客户团队或 Microsoft 代表，订阅 Microsoft 威胁专家 **-** 专家按需咨询我们的威胁专家，了解相关检测和对手。
 
 ## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>适用于 Microsoft 威胁专家 - 目标攻击通知服务
 
@@ -66,7 +66,7 @@ ms.locfileid: "60553480"
 
 ## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>你将在什么位置看到来自你的目标攻击Microsoft 威胁专家
 
-可以通过以下媒体从Microsoft 威胁专家接收目标攻击通知：
+可以通过以下媒体从 Microsoft 威胁专家接收目标攻击通知：
 
 - 终结点门户的 Defender **事件** 页面
 - Defender for Endpoint 门户 **的警报** 仪表板
@@ -88,9 +88,9 @@ ms.locfileid: "60553480"
 
 2. 从仪表板中，选择与从电子邮件获得相同的警报主题，以查看详细信息。
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>订阅Microsoft 威胁专家 - 专家按需
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>订阅 Microsoft 威胁专家 - 专家按需
 
-这作为订阅服务提供。 如果你已经是 Endpoint 的 Defender 客户，你可以联系 Microsoft 代表，以订阅 Microsoft 威胁专家 - 专家按需。
+这作为订阅服务提供。 如果你已经是适用于 Endpoint 的 Defender 客户，你可以联系 Microsoft 代表，以订阅 Microsoft 威胁专家 - 专家按需。
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>咨询 Microsoft 威胁专家，了解组织中可疑的网络安全活动
 
@@ -128,7 +128,7 @@ ms.locfileid: "60553480"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
 
-## <a name="sample-investigation-topics-that-you-can-consult-with-microsoft-threat-experts---experts-on-demand"></a>可以咨询的样本调查主题-Microsoft 威胁专家 - 专家按需
+## <a name="sample-investigation-topics-that-you-can-consult-with-microsoft-threat-experts---experts-on-demand"></a>示例调查主题，可参阅 Microsoft 威胁专家 - 专家按需
 
 ### <a name="alert-information"></a>警报信息
 
@@ -144,13 +144,13 @@ ms.locfileid: "60553480"
 
 ### <a name="threat-intelligence-details"></a>威胁情报详细信息
 
-- 我们检测到一封钓鱼电子邮件，该电子邮件向用户传递了恶意 Word 文档。 恶意 Word 文档引发了一系列可疑事件，触发了针对 [恶意软件名称] 恶意软件的多个 Microsoft Defender 警报。 你是否有关于此恶意软件的信息？ 如果是，可以向我发送链接吗？
+- 我们检测到一封钓鱼电子邮件，该电子邮件向用户传递了恶意 Word 文档。 恶意 Word 文档引发了一系列可疑事件，触发了针对 [恶意软件名称] 恶意软件的多个 Defender for Endpoint 警报。 你是否有关于此恶意软件的信息？ 如果是，可以向我发送链接吗？
 - 我最近看到[社交媒体参考，例如 Twitter 或博客]文章，关于面向我的行业的威胁。 你可以帮助我了解针对此威胁参与者的 Defender 提供什么保护？
 
 ### <a name="microsoft-threat-experts-alert-communications"></a>Microsoft 威胁专家警报通信
 
 - 事件响应团队能否帮助我们处理我们得到的目标攻击通知？
-- 我收到了来自该邮件的此目标Microsoft 威胁专家。 我们还没有自己的事件响应团队。 现在，我们可以做什么，如何包含事件？
+- 我收到了来自此攻击的此目标Microsoft 威胁专家。 我们还没有自己的事件响应团队。 现在，我们可以做什么，如何包含事件？
 - 我收到了来自用户的攻击Microsoft 威胁专家。 您可以向我们提供哪些数据，我们可以将这些数据传递给事件响应团队？
 
   > [!NOTE]
@@ -160,7 +160,7 @@ ms.locfileid: "60553480"
 
 ### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>接收有关托管搜寻查询的进度报告
 
-来自Microsoft 威胁专家的响应因你的查询而异。 他们将在两天内通过电子邮件将关于咨询威胁专家查询的进度报告通过电子邮件发送给你，以传达以下类别的调查状态：
+来自你的Microsoft 威胁专家因你的查询而异。 他们将在两天内通过电子邮件将关于咨询威胁专家查询的进度报告通过电子邮件发送给你，以传达以下类别的调查状态：
 
 - 需要更多信息才能继续执行调查
 - 需要一个或多个文件示例来确定技术上下文

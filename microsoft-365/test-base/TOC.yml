@@ -32,6 +32,8 @@
       href: memory.md
     - name: CPU 回归分析
       href: cpu.md
+    - name: SDK & API
+      href: sdkapi.md
 - name: 参考
   items:
     - name: 常见问题

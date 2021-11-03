@@ -19,7 +19,7 @@ additionalContent:
           summary: 了解计划程序Microsoft 365及其功能、谁以及它如何受益。
           url: scheduler-overview.md
         - title: 信任和隐私
-          summary: 了解计划程序如何Microsoft 365保护你的信任和隐私。
+          summary: 了解计划程序如何Microsoft 365信任和隐私受到保护。
           url: scheduler-trust-privacy.md
         - title: 设置 Microsoft 365 专属计划员
           summary: 了解为计划程序设置计划程序所需的Microsoft 365。
@@ -27,6 +27,9 @@ additionalContent:
         - title: 使用计划程序执行Microsoft 365
           summary: 了解如何使用计划程序进行Microsoft 365。
           url: scheduler-using.md
+        - title: 安排动态定期会议
+          summary: 详细了解如何安排动态定期会议。
+          url: scheduler-recurring-meetings.md
         - title: 计划程序常见问题解答
-          summary: 了解计划程序上的常见问题，Microsoft 365解答。
+          summary: 计划程序 for Microsoft 365 中的常见问题和Microsoft 365。
           url: scheduler-faqs.md

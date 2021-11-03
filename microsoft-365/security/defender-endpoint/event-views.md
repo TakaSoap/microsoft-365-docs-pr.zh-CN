@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7fe31fe2e8e982c1ba8b8bff1aa3e08ce4f94fca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4ca3058db2f3f2e8ac79c7388d9a68ead1f48d38
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163044"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704843"
 ---
 # <a name="view-attack-surface-reduction-events"></a>查看攻击面减少活动
 
@@ -50,13 +50,13 @@ ms.locfileid: "60163044"
 
 ### <a name="import-an-existing-xml-custom-view"></a>导入现有 XML 自定义视图
 
-1. 创建一个.txt文件，将想要使用的自定义视图的 XML 复制到.txt文件中。 为想要使用的每个自定义视图执行这一操作。 按如下所示重命名文件 (确保将类型从 .txt 更改为 .xml) ：
+1. 创建一个.txt文件，将想要使用的自定义视图的 XML 复制到.txt文件中。 为想要使用的每个自定义视图执行这一操作。 按如下所示重命名文件 (请确保将类型从 .txt 更改为 .xml) ：
     - 受控文件夹访问事件自定义视图 *：cfa-events.xml*
     - Exploit Protection 事件自定义视图 *：ep-events.xml*
     - 攻击面减少事件自定义视图 *：asr-events.xml*
     - 网络/保护事件自定义视图 *：np-events.xml*
 
-2. 在 **事件查看器** 中键入"开始"菜单，然后打开 **事件查看器**。
+2. 在 **事件查看器** 中键入"开始"菜单并打开 **事件查看器**。
 
 3. 选择 **操作** \> **导入自定义视图...**
 
@@ -139,12 +139,12 @@ ms.locfileid: "60163044"
 
 ## <a name="list-of-attack-surface-reduction-events"></a>攻击面减少事件列表
 
-所有攻击面减少事件都位于 **Microsoft** > 应用程序和服务日志> Windows下，然后位于下表中列出的文件夹或提供程序下。
+所有攻击面减少事件都位于 Microsoft > 服务日志> Windows **下，** 然后位于下表中列出的文件夹或提供程序下。
 
 可以在事件查看器中Windows这些事件：
 
 1. 打开" **开始"** 菜单并 **键入事件查看器**，然后选择 **事件查看器** 结果。
-2. 展开 **"Microsoft** >服务日志> Windows然后转到下表中的"提供程序 **/源**"下列出的文件夹。
+2. 展开 **Microsoft >** 应用程序和服务日志> Windows然后转到下表中的提供程序 **/源** 下列出的文件夹。
 3. 双击子项以查看事件。 滚动浏览事件以查找你正在查找的事件。
 
    ![使用事件查看器显示动画。](images/event-viewer.gif)
@@ -180,7 +180,7 @@ ms.locfileid: "60163044"
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |23|ROP SimExec 审核|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |24|ROP SimExec 强制|
 |漏洞保护|WER-诊断|5|CFG 阻止|
-|漏洞保护|Win32K (操作) |260|不受信任的字体|
+|漏洞保护|Win32K (Operational) |260|不受信任的字体|
 |网络保护|Windows Defender (操作) |5007|更改设置时的事件|
 |网络保护|Windows Defender (操作) |1125|在审核模式下触发网络保护时的事件|
 |网络保护|Windows Defender (操作) |1126|在阻止模式下触发网络保护时的事件|
@@ -192,4 +192,8 @@ ms.locfileid: "60163044"
 |攻击面减少|Windows Defender (操作) |5007|更改设置时的事件|
 |攻击面减少|Windows Defender (操作) |1122|在审核模式下触发规则时的事件|
 |攻击面减少|Windows Defender (操作) |1121|在阻止模式下触发规则时的事件|
-|
+
+>[!NOTE]
+> 从用户的角度来看，ASR 警告模式通知是作为攻击Windows减少规则的一个 Toast 通知。
+>
+> 在 ASR 中，网络保护仅提供审核和阻止模式。

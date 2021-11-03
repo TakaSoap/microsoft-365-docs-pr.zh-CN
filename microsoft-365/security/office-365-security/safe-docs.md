@@ -16,12 +16,12 @@ ms.collection:
 description: 了解保险箱文档Microsoft 365 E5或Microsoft 365 E5 安全性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cd1bb71bee6a123ae698f1178e62a521409d4103
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 66093240f6ea9137bb9af361bfabc2598676e390
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180699"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703077"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文档
 
@@ -30,12 +30,12 @@ ms.locfileid: "60180699"
 **适用对象**
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-保险箱文档是一项高级功能，它使用[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)的云后端扫描受保护的视图或应用程序防护中Office打开的[、Office。](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46) [](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
+保险箱文档是一项高级功能，它使用[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)的云后端扫描受保护的视图或应用程序防护中Office打开的文档[Office。](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46) [](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
 
 用户无需在本地设备上安装 Defender for Endpoint，保险箱文档保护。 如果满足保险箱所有要求，则用户会获得文档保护：
 
 - 保险箱在组织中启用文档，如本文所述。
-- 向用户分配所需许可计划中的许可证。 保险箱文档由 Office 365 **SafeDocs** (**或 SAFEDOCS** 或 **bf6f5520-59e3-4f82-974b-7dbbc4fd27c7**) 服务计划 (也称为服务) 控制。 此服务计划可用于以下许可计划 (也称为许可证计划、Microsoft 365计划或产品) ：
+- 向用户分配所需许可计划中的许可证。 保险箱文档由 Office 365 **SafeDocs** (或 **SAFEDOCS** 或 **bf6f5520-59e3-4f82-974b-7dbbc4fd27c7**) 服务计划 (也称为服务) 控制。 此服务计划适用于以下许可计划 (也称为许可证计划、Microsoft 365计划或产品) ：
   - Microsoft 365 A5教职员工
   - Microsoft 365 A5学生
   - Microsoft 365 E5
@@ -53,7 +53,7 @@ ms.locfileid: "60180699"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 您需要在Exchange Online中的权限，然后才能执行本文中的过程：
+- 您需要在Exchange Online权限，然后才能执行本文中的过程：
   - 若要保险箱文档设置，您必须是组织管理或 **安全管理员角色组** 的成员。 
   - 若要对文档保险箱只读访问权限，你需要是全局读者或安全读者 **角色组的成员**。 
 
@@ -61,29 +61,29 @@ ms.locfileid: "60180699"
 
   > [!NOTE]
   >
-  > - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的权限。有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   >
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 ### <a name="how-does-microsoft-handle-your-data"></a>Microsoft 如何处理你的数据？
 
-若要保护你，保险箱文档将文件发送到 Microsoft Defender for [Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)云进行分析。 有关 Microsoft Defender for Endpoint 如何处理你的数据的详细信息，请参阅 [：Microsoft Defender for Endpoint 数据存储和隐私](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。
+若要保护你，保险箱文档将文件发送到[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)云进行分析。 有关 Microsoft Defender for Endpoint 如何处理你的数据的详细信息，请参阅 [：Microsoft Defender for Endpoint 数据存储和隐私](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。
 
-通常，保险箱文档发送的文件不会在 Defender 中保留超过分析 (，通常不超过 24 小时) 。
+通常，保险箱文档发送的文件不会保留在 Defender for Endpoint 中，超过分析 (通常不超过 24 小时) 。
 
-## <a name="use-the-microsoft-365-defender-portal-to-configure-safe-documents"></a>使用 Microsoft 365 Defender 门户配置保险箱文档
+## <a name="use-the-microsoft-365-defender-portal-to-configure-safe-documents"></a>使用Microsoft 365 Defender门户配置保险箱文档
 
-1. 打开Microsoft 365 Defender门户，然后转到"策略"部分中的"电子邮件&**协作** 策略&规则威胁保险箱 \>  \>  \> **附件**"。 
+1. 打开Microsoft 365 Defender门户，然后转到"策略"**部分中的**"电子邮件&协作策略 \> **"&"** 规则保险箱 \>  \> **附件****"。**
 
 2. 在 **"保险箱"页上**，单击"**全局设置"。**
 
 3. 在出现的 **"全局** 设置"飞出中，配置以下设置：
-   - **打开保险箱客户端Office** 文档：将切换开关向右移动以打开功能： ![ 切换为打开 ](../../media/scc-toggle-on.png) 。
-   - 即使 **保险箱** 文档将文件标识为恶意文件，也允许用户单击"受保护的视图"：建议将此选项保持关闭状态 (将开关左键保留为"关闭 ![ "。) 。 ](../../media/scc-toggle-off.png)
+   - **打开保险箱客户端Office** 文档：将切换开关向右移动以打开功能： ![ 打开。 ](../../media/scc-toggle-on.png)
+   - 允许用户单击"受保护的视图 **"，** 即使 保险箱 文档将该文件标识为恶意文件：建议将此选项保持关闭状态 (将开关保留为左侧：切换关闭 ![ ](../../media/scc-toggle-off.png) 。) 。
 
-   完成时，请单击“保存”。
+   完成后，单击“**保存**”。
 
-   ![保险箱在"附件"页上选择"全局"保险箱设置。](../../media/safe-docs-global-settings.png)
+   ![保险箱在"附件"页上选择"全局设置保险箱文档设置。](../../media/safe-docs-global-settings.png)
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>使用 Exchange Online PowerShell 配置保险箱文档
 
@@ -106,10 +106,10 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 
 ### <a name="configure-individual-access-to-safe-documents"></a>配置对文档保险箱访问
 
-如果要有选择地允许或阻止访问"保险箱文档"功能，请按照以下步骤操作：
+如果要有选择地允许或阻止对"文档保险箱访问，请按照以下步骤操作：
 
 1. 如本文保险箱所述，在 Microsoft 365 Defender 或 Exchange Online PowerShell 中打开"文档"。
-2. 使用 Azure AD PowerShell 为特定保险箱禁用特定用户的特定 Microsoft 365 文档，如为特定许可计划禁用特定用户的特定 Microsoft 365[服务中所述](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan)。
+2. 使用 Azure AD PowerShell 为特定保险箱禁用特定用户的 Microsoft 365 文档，如为特定许可计划禁用特定用户的特定 Microsoft 365[服务中所述](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan)。
 
   在 PowerShell 中禁用的服务计划的名称是 **SAFEDOCS**。
 
@@ -129,15 +129,15 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 
 若要验证是否已启用和配置保险箱文档，请执行下列任一步骤：
 
-- 在 Microsoft 365 Defender 门户中，转到"策略"部分"全局设置"中的"电子邮件 & 协作策略"&"规则威胁策略 保险箱 附件"，并验证"为 Office 客户端启用 保险箱 文档"和"允许用户通过"保护"进行 \>  \>  \>  \> **单击即使文档保险箱文件为恶意设置，也进行** 查看。
+- In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** 保险箱 Attachments in the \> **Policies** section  Global \> **settings**， and verify the Turn on 保险箱 Documents for Office **clients** and Allow people to click through **Protected即使"保险箱文档"将文件标识为恶意设置，也进行** 查看。
 
-- 在 PowerShell 中Exchange Online命令并验证属性值：
+- 在 PowerShell 中Exchange Online以下命令并验证属性值：
 
   ```powershell
   Get-AtpPolicyForO365 | Format-List *SafeDocs*
   ```
 
-- 以下文件可用于测试文档保险箱保护。 这些文件类似于用于EICAR.TXT反恶意软件和防病毒解决方案的文件。 这些文件没有危害，但它们将触发保险箱文档保护。
+- 以下文件可用于测试文档保险箱保护。 这些文件类似于用于EICAR.TXT反恶意软件和防病毒解决方案的文件。 这些文件不有害的，但它们将触发保险箱文档保护。
 
   - [SafeDocsDemo.docx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.docx)
   - [SafeDocsDemo.pptx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.pptx)

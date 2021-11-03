@@ -18,12 +18,12 @@ ms.custom:
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c41f8d06755e5d71143bc94090742079757be4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 76eb0f56ca5cc5f4554a03fa3e11bbc6f9f684e0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154526"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60705053"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用提交门户将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "60154526"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
 
-在Microsoft 365拥有 Exchange Online 邮箱的组织中，管理员可以使用 Microsoft 365 Defender 门户中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
+在Microsoft 365邮箱Exchange Online，管理员可以使用 Microsoft 365 Defender 门户中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
 
 当你提交电子邮件进行分析时，你将获得：
 
@@ -44,7 +44,7 @@ ms.locfileid: "60154526"
 - **成绩分析**：由人工评分人员完成审阅，以确认邮件是否是恶意邮件。
 
 > [!IMPORTANT]
-> 负载信誉/触发和成绩分析并非在所有租户中都完成。 当数据出于合规性目的不应离开租户边界时，将阻止信息进入组织外部。
+> 负载信誉/触发和成绩分析并非在所有租户中都完成。 如果出于合规性目的数据不应离开租户边界，则阻止信息进入组织外部。
 
 有关向 Microsoft 提交电子邮件、URL 和附件的其他方法，请参阅向 Microsoft 报告 [邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
@@ -59,6 +59,11 @@ ms.locfileid: "60154526"
 
 - 如果邮件在邮箱中仍然可用，并且用户或其他管理员未清除，则管理员可以提交 30 天的邮件。
 
+- 将按照以下速率限制管理员提交：
+  - 任意 15 分钟内的最大提交数：150 个提交
+  - 24 小时内相同的提交：3 个提交
+  - 15 分钟内相同的提交：1 个提交
+  
 - 有关用户如何向 Microsoft 提交邮件和文件的信息，请参阅向 Microsoft 报告邮件 [和文件](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="report-suspicious-content-to-microsoft"></a>向 Microsoft 报告可疑内容
@@ -83,7 +88,7 @@ ms.locfileid: "60154526"
 3. 在 **"选择具有问题的** 收件人"框中，指定要针对其运行策略检查的收件人。 策略检查将确定电子邮件是否由于用户或组织策略而绕过扫描。
 
 4. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **不应阻止误报 (误报)**
+   - **不应阻止误报 (错误)**
    - **应已被** 阻止：在"电子邮件应已分类为出现的部分"中，选择以下值之一 (如果你不确定，请使用最佳判断) ：
      - **网络钓鱼**
      - **垃圾邮件**
@@ -101,7 +106,7 @@ ms.locfileid: "60154526"
 2. 在出现的 **"URL"** 框中，输入完整的 URL (例如 `https://www.fabrikam.com/marketing.html` ，) 。
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **不应阻止误报 (误报)**
+   - **不应阻止误报 (错误)**
    - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，选择"**网络钓鱼**"或"恶意软件 **"。**
 
 4. 完成后，单击"提交 **"** 按钮。
@@ -116,8 +121,8 @@ ms.locfileid: "60154526"
 2. 在出现的 **"文件**"部分，单击"**浏览文件"。** 在打开的对话框中，查找并选择文件，然后单击"打开 **"。**
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **不应阻止误报 (误报)**
-   - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，" **恶意软件"是唯** 一的选择，并自动选中。
+   - **不应阻止误报 (错误)**
+   - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，恶意软件 **是唯一** 的选择，并且会自动选中。
 
 4. 完成后，单击"提交 **"** 按钮。
 
@@ -148,7 +153,7 @@ ms.locfileid: "60154526"
      - **网络消息 ID/对象 ID**
      - **Direction**
      - **发件人 IP**
-     - **BCL (批量)**
+     - **BCL (批量兼容)**
      - **目标**
      - **策略操作**
      - **提交者**
@@ -170,7 +175,7 @@ ms.locfileid: "60154526"
 
    - 若要对条目进行分组 **，请单击"** 分组"，然后从下拉列表中选择下列值之一：
      - **无**
-     - **Type**
+     - **类型**
      - **原因**
      - **状态**
      - **重新扫描结果**

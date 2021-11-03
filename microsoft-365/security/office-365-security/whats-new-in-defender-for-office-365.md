@@ -21,18 +21,19 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5980d01dfb15a019aec9dd39cf6ceae7a1682753
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ca0d3e29809b8975f65dc3f12816a6e4f9a19dbe
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555268"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702399"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**适用对象**
+**适用于：**
+
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -57,7 +58,7 @@ ms.locfileid: "60555268"
   - [管理员体验视频](https://youtu.be/vnar4HowfpY)
   - [最终用户体验视频](https://youtu.be/s-vozLO43rI)
   - 此博客文章介绍隔离体验中即将提供的其他新功能： [简化隔离体验](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388)。
-- 门户重定向默认开始，将用户从安全&重定向到 <https://security.microsoft.com> Microsoft 365 Defender。 有关详细信息，请参阅：将帐户[从Office 365安全与](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)合规中心重定向到Microsoft 365 Defender
+- 门户重定向默认开始，将用户从安全与合规&重定向到 <https://security.microsoft.com> Microsoft 365 Defender。 有关详细信息，请参阅：将帐户从[Office 365安全与](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)合规中心重定向到Microsoft 365 Defender
 
 ## <a name="august-2021"></a>2021 年 8 月
 
@@ -76,8 +77,8 @@ ms.locfileid: "60555268"
   - 已标记并确认为网络钓鱼的表单
   - [ZAP 的新警报策略](../../compliance/new-defender-alert-policies.md)
 - Microsoft Defender for Office 365 警报现已集成到 Microsoft 365 Defender - Microsoft 365 Defender 统一警报队列和[统一警报队列](../defender/investigate-alerts.md)
-- [用户](user-tags.md)标记现已集成到 Microsoft Defender 中，用于 Office 365 警报体验，包括：Office 365 安全 & 合规性中的警报队列和详细信息，以及将自定义警报策略范围限制到用户标记以创建目标警报策略。 
-  - Microsoft Defender for Microsoft 365 Defender 2 计划 (统一警报队列中Office 365标记) 
+- [用户](user-tags.md)标记现已集成到 Microsoft Defender 中，用于提供 Office 365 警报体验，包括：Office 365 安全 & 合规性中的警报队列和详细信息，以及将自定义警报策略范围限制到用户标记以创建目标警报策略。
+  - Microsoft Defender for Microsoft 365 Defender 2 计划门户中的统一警报队列中 (标记Office 365 Microsoft Defender) 
 
 ## <a name="june-2021"></a>2021 年 6 月
 
@@ -90,13 +91,13 @@ ms.locfileid: "60555268"
 
 - [电子邮件实体页面](mdo-email-entity-page.md)：电子邮件的统一 360 度视图，包含有关威胁、身份验证和检测、触发详细信息以及全新的电子邮件预览体验的丰富信息。
 - [Office 365 API：](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events)更新 EmailEvents (RecordType 28) 添加传递操作、原始和最新的传递位置以及更新的检测详细信息。
-- [适用于 Defender 威胁Office 365：](/microsoft-365/security/defender/threat-analytics)查看活动威胁参与者、热门技术和攻击面，以及 Microsoft 研究人员有关正在进行的活动的广泛报告。
+- [适用于防御者的威胁Office 365：](/microsoft-365/security/defender/threat-analytics)查看活动威胁参与者、热门技术和攻击面，以及 Microsoft 研究人员针对正在进行的活动的广泛报告。
 
 ## <a name="februarymarch-2021"></a>2021 年 2 月/3 月
 
 - 警报 ID 集成 (在搜寻体验中使用警报 ID Alert-Explorer导航 [) 搜索](threat-explorer.md)
 - 将搜寻体验中记录的导出限制从 9990 提高至 200，000 [](threat-explorer.md)
-- 扩展 Explorer (和实时检测) 试用租户的数据保留和搜索限制，从之前限制 (7 天) 到 30 [天](threat-explorer.md)
+- 将资源管理器 (和实时检测) 试用租户的数据保留和搜索限制，从之前限制 (7 天) 到 30 [天](threat-explorer.md)
 - Explorer (中称为 **模拟** 域和模拟用户的新搜寻透视表和实时) 搜索针对受保护用户或域的模拟攻击。 有关详细信息，请参阅 [详细信息](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。  (Microsoft Defender for Office 365 计划 1 或计划 2) 
 
 

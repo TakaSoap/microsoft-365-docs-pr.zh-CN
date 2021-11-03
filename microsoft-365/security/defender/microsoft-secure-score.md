@@ -22,18 +22,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: bfe3718a6e8c82c516a395e2d2c7f43d21ceda04
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3bce20b1b86ea569014313f345bcf7e4f6dd2cc0
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196665"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724316"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高表示采取的改进措施越多。 可以在网站门户 的 Microsoft 365 Defender https://security.microsoft.com/securescore [找到它](overview-security-center.md)。
+Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高表示采取的改进措施越多。 可以在网站门户 的 Microsoft 365 Defender https://security.microsoft.com/securescore [找到它](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
 执行安全功能分数建议可保护组织免遭威胁。 从企业门户中的Microsoft 365 Defender仪表板，组织可以监视并处理其Microsoft 365、应用和设备的安全性。
 
@@ -47,7 +47,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 ![安全分数主页。](../../media/secure-score/secure-score-home-page.png)
 
-## <a name="how-it-works"></a>如何工作
+## <a name="how-it-works"></a>运作方式
 
 你获得以下操作点数：
 
@@ -57,14 +57,14 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 有些改进操作仅在完全完成时提供分数。 如果为某些设备或用户完成了这些操作，一些会提供部分分数。 如果无法或不希望评估其中一项改进操作，可以选择接受风险或剩余风险。
 
-如果你有受支持的 Microsoft 产品之一的许可证，你将看到这些产品的建议。 我们将向您展示产品的完整可能改进集，无论许可证版本、订阅或计划如何。 这样，你可以了解安全性最佳实践并提升分数。 无论组织拥有特定产品的许可证是什么，你的绝对安全状况（以安全分数表示）都保持不变。 请记住，安全性应该与可用性相平衡，同时请注意不是每个建议都适合您的环境。
+如果你有受支持的 Microsoft 产品之一的许可证，你将看到这些产品的建议。 我们将向您展示产品的完整可能改进集，无论许可证版本、订阅或计划如何。 这样，你可以了解安全性最佳实践并提升分数。 无论组织拥有特定产品的许可证是什么，你的绝对安全状态（以安全分数表示）都保持不变。 请记住，安全性应该与可用性相平衡，同时请注意不是每个建议都适合您的环境。
 
 你的分数会实时更新，以反映可视化和改进操作页面中显示的信息。 安全分数还会每天同步一次，以接收有关每个操作所得分的系统数据。
 
 ### <a name="key-scenarios"></a>关键方案
 
 - [检查当前分数](microsoft-secure-score-improvement-actions.md#check-your-current-score)
-- [将分数与类似你的组织的分数进行比较](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
+- [将分数与组织（如组织）进行比较](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
 - [查看改进操作并决定行动计划](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
 - [启动要调查或实施的工作流](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
 
@@ -72,7 +72,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 每个改进操作都值 10 分或更少，大多数改进操作都以二进制方式进行评分。 如果实施改进操作（如创建新策略或启用特定设置），则获得 100% 的分数。 对于其他改进操作，分数以总配置百分比表示。
 
-例如，改进操作通过多重身份验证保护所有用户而获得 10 分。 你只有 50 个保护的总数为 100 个用户，因此你获得的部分分数为 5 分 (50 受保护/ 100 总分 * 10 最大 pts = 5 pts) 。
+例如，改进操作通过多重身份验证保护所有用户而获得 10 分。 你只有 50 个保护的总数为 100 个用户，因此你获得的部分分数为 5 分 (50 分/共 100 分 * 10 最大 pts = 5 pts) 。
 
 ### <a name="products-included-in-secure-score"></a>安全分数中包含的产品
 
@@ -89,7 +89,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 ### <a name="security-defaults"></a>安全性默认值
 
-Microsoft 安全分数已更新了改进操作以支持[Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)中的安全默认值，从而可以更轻松地使用针对常见攻击的预配置安全设置来帮助保护组织。
+Microsoft 安全分数已更新了改进操作，以支持[Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)中的安全默认值，从而可以更轻松地使用针对常见攻击的预配置安全设置来帮助保护组织。
 
 如果启用安全默认值，将被授予以下改进操作的完整分数：
 
@@ -102,7 +102,7 @@ Microsoft 安全分数已更新了改进操作以支持[Azure Active Directory](
 
 ## <a name="required-permissions"></a>所需权限
 
-要有权访问 Microsoft 安全分数，必须在 Microsoft 安全分数中分配以下角色之一Azure Active Directory。
+若要有权访问 Microsoft 安全分数，必须在 Microsoft 安全分数中分配以下角色之Azure Active Directory。
 
 ### <a name="read-and-write-roles"></a>读取和写入角色
 
@@ -130,7 +130,7 @@ Microsoft 安全分数是安全状态的数字摘要，基于系统配置、用�
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 
-如果有任何问题，请通过在安全、隐私和合规性社区中发布& [告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
+如果有任何问题，请通过发布到安全、隐私和合规性社区 [&告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
 
 ## <a name="related-resources"></a>相关资源
 

@@ -12,24 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ''
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解部署注意事项和有关攻击模拟和 Microsoft Defender for Microsoft 365 E5 计划 2 Office 365培训的常见问题。
+description: 管理员可以了解有关部署注意事项和有关攻击模拟的常见问题，以及有关 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织的培训。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 19b8997a5f2d1f8df40c740fb996432b13a21d3b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 75b85c637382e2fc508b4c48459d1409b02ec922
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196593"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704108"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻击模拟培训部署注意事项和常见问题解答
 
-攻击模拟培训现已 [普遍可用](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291)。 攻击模拟培训使 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织可以度量和管理社交工程风险，通过允许创建和管理由实际、已取消武器化网络钓鱼负载的网络钓鱼模拟。 与 Terranova 安全性合作提供的超目标培训可帮助提高知识并改变员工行为。
+攻击模拟培训使 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织可以度量和管理社交工程风险，通过允许创建和管理由实际、已取消武器化网络钓鱼负载的网络钓鱼模拟。 与 Terranova 安全性合作提供的超目标培训可帮助提高知识并改变员工行为。
 
 有关攻击模拟培训入门的信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
@@ -41,7 +39,7 @@ ms.locfileid: "60196593"
 
 URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标识为不安全。 Google 保险箱 Chrome 中的浏览功能会阻止一些带有欺骗性网站提前消息的模拟网络钓鱼 **URL。** 虽然我们与许多 URL 信誉供应商合作，始终允许我们的模拟 URL，但并不总是具有完全覆盖。
 
-![Google Chrome 中的欺骗性网站提前警告。](../../media/attack-sim-chrome-deceptive-site-message.png)
+![Google Chrome 中的欺骗性网站提前警告。](../../media/attack-sim-training-faq-chrome-deceptive-site-message.png)
 
 请注意，此问题不会影响Microsoft Edge。
 
@@ -55,7 +53,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 - 防火墙
 - WAF 解决方案 (Web) 防火墙
-- 例如，第三方筛选器 (，例如内核模式) 
+- 第三方筛选器驱动程序 (例如，内核模式筛选器) 
 
 尽管我们看到此层中很少客户被阻止，但确实如此。 如果遇到问题，请考虑将以下 URL 配置为绕过安全设备或筛选器所需的扫描：
 
@@ -70,7 +68,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 - 收件人电子邮件地址无效。
 - 来宾用户。
-- 在 Azure AD Azure Active Directory (中不再) 。
+- 不再在活动状态Azure Active Directory (Azure AD) 。
 
 只有具有有效邮箱的有效非来宾用户才包括在模拟中。 如果使用通讯组或启用邮件的安全组作为目标用户，可以使用[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中的[Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet 查看和验证通讯组成员。
 
@@ -80,7 +78,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 攻击模拟培训附带丰富、可操作见解，可让你了解员工的威胁就绪进度。 如果攻击模拟培训报告未填充数据，请验证审核日志搜索是否在你的组织中打开 (默认情况下是否) 。
 
-攻击模拟培训需要审核日志搜索，以便可以捕获、记录和重新读取事件。 关闭审核日志搜索对攻击模拟培训有以下后果：
+攻击模拟培训需要审核日志搜索，以便可以捕获、记录和读回事件。 关闭审核日志搜索对攻击模拟培训有以下后果：
 
 - 报告数据并非在所有报告中都可用。 报告将显示为空。
 - 由于数据不可用，因此将阻止培训作业。
@@ -98,11 +96,11 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 当模拟状态为 **计划** 时，模拟报告将大部分为空。 在此阶段，模拟引擎将解析目标用户电子邮件地址、展开通讯组、从列表中删除来宾用户等：
 
-![在计划状态中报告。](../../media/attack-sim-empty-reporting.png)
+![显示计划状态中的模拟的模拟详细信息。](../../media/attack-sim-training-faq-scheduled-state.png)
 
 模拟进入正在进行阶段 **后** ，你将注意到信息开始欺骗报告：
 
-![报告状态为"正在进行"。](../../media/attack-sim-in-progress.png)
+![模拟详细信息，显示正在进行中的模拟。](../../media/attack-sim-training-faq-in-progress-state.png)
 
 在过渡到"正在进行"状态后，可能需要 30 分钟才能更新单个 **模拟** 报告。 报告数据将继续生成，直到模拟达到 **"已完成"** 状态。 报告更新将按照以下间隔发生：
 
@@ -124,12 +122,12 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 - 放弃其凭据的用户。
 - 将邮件报告为网络钓鱼的用户。
 
-如果用户报告为网络钓鱼的邮件未在攻击模拟培训模拟报告中捕获，则可能有一个 Exchange 邮件流规则 (也称为传输规则) 该规则阻止向 Microsoft 传递报告的邮件。 验证任何邮件流规则是否未阻止到以下电子邮件地址的传递：
+如果用户报告为网络钓鱼的邮件未在攻击模拟培训模拟报告中捕获，则可能有 Exchange 邮件流规则 (也称为传输规则) 它阻止将报告的邮件送达 Microsoft。 验证任何邮件流规则是否未阻止到以下电子邮件地址的传递：
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
 - phish@office365.microsoft.com
-- not \_ junk@office365.microsoft.com
+- 不 \_ junk@office365.microsoft.com
 
 ## <a name="other-frequently-asked-questions"></a>其他常见问题
 
@@ -140,9 +138,9 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 - 包括当前 (用户数少于 40，000 的组织) 。
 - 选择特定用户。
 - 从 CSV 文件选择用户 (每行一) 。
-- 基于 Azure AD 组的定位。
+- Azure AD基于组的目标。
 
-我们发现通过 Azure AD 组标识目标用户的市场活动通常更易于管理。
+我们发现目标用户由目标用户标识的市场活动Azure AD组通常更易于管理。
 
 ### <a name="q-are-there-any-limits-in-targeting-users-while-importing-from-a-csv-or-adding-users"></a>问：从 CSV 导入或添加用户时，目标用户是否有限制？
 
@@ -150,7 +148,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 收件人可以是单个用户或组。 由于一个组可能包含数百个或数千个收件人，因此不会对单个用户的数量设置实际限制。
 
-管理大型 CSV 文件或添加多个单个收件人可能很麻烦。 使用 Azure AD 组将简化模拟的总体管理。
+管理大型 CSV 文件或添加多个单个收件人可能很麻烦。 使用Azure AD组将简化模拟的总体管理。
 
 ### <a name="q-does-microsoft-provide-payloads-in-other-languages"></a>问：Microsoft 是否提供其他语言的负载？
 
@@ -160,7 +158,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>问：如何切换到其他语言以用于我的管理门户和培训体验？
 
-答：在Microsoft 365或Office 365中，语言配置是特定于每个用户帐户的集中式配置。 有关如何更改语言设置的说明，请参阅更改 Microsoft 365 for Business 中的显示语言[和时区](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
+答：Microsoft 365或Office 365用户帐户的语言配置是特定和集中的。 有关如何更改语言设置的说明，请参阅更改 Microsoft 365 for Business 中的显示语言[和时区](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
 
 请注意，配置更改可能需要 30 分钟才能在所有服务之间同步。
 
@@ -168,7 +166,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 答：可以！ 在 **向导中用于** 创建新模拟的最后一个"审阅模拟"页上，有一个 **"发送测试"选项**。 此选项将向当前登录的用户发送示例网络钓鱼模拟消息。 验证收件箱中的网络钓鱼邮件后，可以提交模拟。
 
-![在"审阅模拟"页上发送测试按钮。](../../media/attack-sim-review-simulation-page.png)
+![在"审阅模拟"页上发送测试按钮。](../../media/attack-sim-training-simulations-review-simulation.png)
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>问：我能否将属于不同租户的用户作为同一模拟市场活动的一部分？
 
@@ -179,7 +177,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 答：区域感知传递使用目标用户邮箱的 TimeZone 属性和"not before"逻辑来确定何时传递邮件。 例如，请考虑以下方案：
 
 - 在太平洋时区 (UTC-8) 的上午 7：00，管理员创建并计划一个活动，以在当天上午 9：00 开始。
-- UserA 位于东部时区， (UTC-5) 。
+- UserA 位于 UTC-5 (东部时区) 。
 - UserB 也位于太平洋时区。
 
 同一天上午 9：00，模拟消息将发送到 UserB。 使用区域感知传递，邮件不会在同一天发送给 UserA，因为太平洋时间上午 9：00 是东部时间晚上 12：00。 相反，邮件会于第二天东部时间上午 9：00 发送到 UserA。

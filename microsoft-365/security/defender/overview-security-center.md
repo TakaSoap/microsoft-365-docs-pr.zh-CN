@@ -20,11 +20,11 @@ search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
 ms.openlocfilehash: a0dce3a61847924043a10df4c13c963f279ea011
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162286"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60717450"
 ---
 # <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender概述
 
@@ -38,9 +38,9 @@ ms.locfileid: "60162286"
 
 > 想要体验 Microsoft 365 Defender？你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 
-**Microsoft 365 Defender ()** 集中了对电子邮件、协作、标识和设备威胁的保护、检测、调查和 [https://security.microsoft.com](https://security.microsoft.com) 响应。    
+**Microsoft 365 Defender ()** 集中了电子邮件、协作、标识和设备威胁的保护、检测、调查和 [https://security.microsoft.com](https://security.microsoft.com) 响应。    
 
-Microsoft 365 Defender将现有 Microsoft 安全门户（如 Microsoft Defender 安全中心 和 Office 365 安全与合规&的功能汇集在一起。 安全中心强调快速访问信息、简化布局以及将相关信息汇集在一起以便于使用。 此中心包括：
+Microsoft 365 Defender将现有 Microsoft 安全门户（如 Microsoft Defender 安全中心 和 Office 365 安全&中心）的功能汇集在一起。 安全中心强调快速访问信息、简化布局以及将相关信息汇集在一起以便于使用。 此中心包括：
 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365通过一组防护、检测、调查和搜寻功能帮助组织保护其企业，以保护电子邮件Office 365资源。
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** 为贵组织的设备提供预防性保护、攻破后检测、自动调查和响应。
@@ -65,7 +65,7 @@ Microsoft 365 Defender将来自不同工作负载的信号引入一组统一体�
 - 操作中心
 - 威胁分析
 
-Microsoft 365 Defender合并 Microsoft  Defender for Office 365 和 Microsoft Defender for Endpoint 时，它强调统一、清晰和共同的目标。 合并基于下面列出的优先级，在不影响每个安全套件组合提供的功能的情况下进行：
+Microsoft 365 Defender合并 Microsoft Defender  for Office 365 和 Microsoft Defender for Endpoint 时，它强调统一、清晰和共同的目标。 合并基于下面列出的优先级，在不影响每个安全套件组合提供的功能的情况下进行：
 
 - 常见构建基块
 - 常用术语
@@ -73,25 +73,25 @@ Microsoft 365 Defender合并 Microsoft  Defender for Office 365 和 Microsoft De
 - 与其他工作负荷的功能奇偶校验
 
 > [!NOTE]
-> Microsoft 365 Defender无需客户执行迁移步骤或购买新许可证即可访问。 例如，具有 E3 订阅的管理员可以访问这个新门户，就像使用 Microsoft Defender for Office 365 计划 1 和计划 2 的管理员一样;但是，Exchange Online Protection计划 1 Office 365 Defender 将仅看到其订阅许可证支持的安全功能。 新中心的目标是集中安全性。
+> Microsoft 365 Defender无需客户执行迁移步骤或购买新许可证即可访问。 例如，具有 E3 订阅的管理员可以访问此新门户，就像使用 Microsoft Defender for Office 365 计划 1 和计划 2 的管理员一样;但是，Exchange Online Protection计划 1 Office 365 Defender 将仅看到其订阅许可证支持的安全功能。 新中心的目标是集中安全性。
 
 ## <a name="unified-investigations"></a>统一调查
 
-聚合安全中心为调查整个安全中心的安全事件Microsoft 365。 主要示例是 **事件** 下的事件 **&快速启动** 事件时发出警报Microsoft 365 Defender。
+聚合安全中心为调查整个安全中心的安全事件Microsoft 365。 主要示例是 **事件** 下的事件 **&快速启动** 通知时Microsoft 365 Defender。
 
 :::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="事件页面中的&quot;事件Microsoft 365 Defender。":::
 
 选择事件名称将显示一个页面，该页面演示聚合安全中心的价值。
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="事件摘要页中事件的示例Microsoft 365 Defender":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="事件摘要页的示例Microsoft 365 Defender":::
 
 <!--
 ![Example of the Summary page for an incident in Microsoft 365 Defender.](../../media/converged-incident-info-3.png)
 --> 
 
-在事件页面顶部，你将看到摘要、警报、设备、**用户**、**邮箱**、调查和 **证据** 选项卡。    选择这些选项卡可获取更多详细信息。 例如，"用户"选项卡显示聚合工作负载 (Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security) 以及一系列源（如本地 Active Directory 域服务 (AD DS) 、Azure Active Directory (Azure AD) 和第三方标识提供程序）的用户的信息。 有关详细信息，请参阅 [调查用户](investigate-users.md)。
+在事件页面顶部，你将看到摘要、警报、设备、**用户**、**邮箱**、调查和 **证据** 选项卡。    选择这些选项卡可获取更多详细信息。 例如，"用户"选项卡显示聚合工作负载 (Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security) 以及一系列源（如本地 Active Directory 域服务 (AD DS) 、Azure Active Directory (Azure AD) 、ad 第三方标识提供程序。 有关详细信息，请参阅 [调查用户](investigate-users.md)。
 
-花时间查看环境中的事件，深入了解这些选项卡，并实践了解如何访问为不同类型的威胁的事件提供的信息。
+花时间查看环境中的事件，深入了解这些选项卡，并实践了解如何访问为不同类型的威胁事件提供的信息。
 
 有关详细信息，请参阅[事件Microsoft 365 Defender。](incidents-overview.md)
 
@@ -107,23 +107,23 @@ Microsoft 365 Defender合并 Microsoft  Defender for Office 365 和 Microsoft De
 
 !["&角色"页显示终结点角色&组、角色和设备组。](../../media/converged-roles-5.png)
 
- 使用Microsoft 365 Defender角色或自定义Azure Active Directory配置对全局角色的访问权限。 对于 Defender for Endpoint，请参阅[分配用户对 Microsoft Defender 安全中心](/microsoft-365/security/defender-endpoint/assign-portal-access)的访问权限。 For Defender for Office 365， see [Permissions in the Microsoft 365 合规中心 and Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
+ 使用Microsoft 365 Defender角色或自定义Azure Active Directory配置对全局角色的访问权限。 对于 Defender for Endpoint，请参阅[向用户分配对 Microsoft Defender 安全中心](/microsoft-365/security/defender-endpoint/assign-portal-access)的访问权限。 For Defender for Office 365， see [Permissions in the Microsoft 365 合规中心 and Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
 
-- 详细了解如何管理[对](m365d-permissions.md)Microsoft 365 Defender
+- 详细了解如何管理对[Microsoft 365 Defender](m365d-permissions.md)
 - 了解有关如何在角色[模板中创建自定义角色](custom-roles.md)Microsoft 365 Defender
 
 > [!NOTE]
-> Microsoft 365 Defender 中的 Microsoft Defender for Endpoint 支持向托管安全服务提供商[ (MSSP) ](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)授予访问权限，方式与在 Microsoft Defender 安全中心 中授予访问权限[的方式相同](./mssp-access.md)。
+> microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSP) ](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender security center](./mssp-access.md).
 
 ### <a name="integrated-reports"></a>集成报告
 
-报告中也统一了Microsoft 365 Defender。 管理员可以从一般安全报告开始，分支到有关终结点、电子邮件和协作&报告。 此处的链接基于工作负荷配置动态生成。
+报告还统一Microsoft 365 Defender。 管理员可以从一般安全报告开始，分支到有关终结点、电子邮件和协作&报告。 此处的链接基于工作负荷配置动态生成。
 
 ### <a name="quickly-view-your-microsoft-365-environment"></a>快速查看Microsoft 365环境
 
 主页 **显示** 安全团队所需的许多公用卡片。 卡片和数据的组合取决于用户角色。 由于Microsoft 365 Defender门户使用基于角色的访问控制，因此不同的角色将看到对日常工作更有意义的卡片。  
 
-此概览信息可帮助您了解组织中的最新活动。 Microsoft 365 Defender来自不同源的信号，以呈现环境环境的整体Microsoft 365视图。
+此概览信息可帮助您了解组织中的最新活动。 Microsoft 365 Defender来自不同源的信号汇集在一起，以呈现环境环境Microsoft 365视图。
 
 卡片分为以下类别：
 
@@ -137,7 +137,7 @@ Microsoft 365 Defender合并 Microsoft  Defender for Office 365 和 Microsoft De
 
 - Microsoft Defender for Endpoint 和 Microsoft Defender for Office 365 之间的数据覆盖范围更好，从而可以跨域进行联合事件管理、自动调查、修正以及主动或被动威胁搜寻。 
 - 来自 Microsoft Defender for Office 365 电子邮件相关的检测和缓解，以及 Microsoft Defender for Endpoint 中已提供的终结点数据。
-- 威胁相关事件的视图，可跨 Microsoft Defender for Endpoint 和 microsoft Defender for Office 365 将警报聚合到端到端攻击案例，以减少工作队列，以及简化和加快调查。
+- 威胁相关事件的视图，可跨 Microsoft Defender for Endpoint 和 microsoft Defender for Office 365 将警报聚合到端到端攻击案例，以减少工作队列，简化和加快调查。
 - 解决方案检测到并阻止的攻击Microsoft 365 Defender攻击。 还有一些数据可用于推动预防性操作，以缓解进一步暴露的风险并增加恢复能力。 
 - 增强型设计，将可操作信息置于聚焦中，帮助你快速识别数据以紧急关注、调查和利用报告。
 
@@ -145,16 +145,16 @@ Microsoft 365 Defender合并 Microsoft  Defender for Office 365 和 Microsoft De
 
 Microsoft 365 Defender门户包括学习中心，从 Microsoft 安全博客、YouTube 上的 Microsoft 安全社区以及 docs.microsoft.com 上的官方文档等资源中提供正式指导。
 
-在学习中心内，电子邮件&协作 (Microsoft Defender for Office 365) 指南与 Endpoint (Microsoft Defender for Endpoint) 和 Microsoft 365 Defender 学习资源并排提供。
+在学习中心内，电子邮件&协作 (Microsoft Defender for Office 365) 指南与 Endpoint (Microsoft Defender for Endpoint) 和 Microsoft 365 Defender 学习资源并排。
 
 学习中心将打开，Learning主题组织的路径，例如"如何使用 Microsoft 365 Defender？ 和"Microsoft Defender for Office 365最佳做法"。 此部分当前由 Microsoft 内部的安全产品组提供。 每个Learning路径都反映了了解概念所花的预计时间。 例如，"Microsoft Defender for Office 365用户帐户泄露时要执行的步骤"预计需要 8 分钟，并且会进行一些有价值的学习。
 
 单击内容后，为该网站添加书签，将书签组织到"安全"或"关键"文件夹中可能很有用。 To see all Learning paths， click the Show all link in the main panel.
 
 > [!NOTE]
-> 在 **学习中心的顶部** 有一些有用的筛选器Microsoft 365 Defender，你可以从当前 (、Microsoft Defender for Endpoint Microsoft 365 Defender 和 Microsoft Defender for Office 365) 进行选择。 请注意，列出了每个部分的学习资源数量，这可以帮助学习者跟踪他们有多少资源可用于培训和学习。
+> 在 **学习中心的顶部** 有一些有用的筛选器Microsoft 365 Defender，你可以选择当前 (产品、Microsoft 365 Defender、Microsoft Defender for Endpoint 和 Microsoft Defender for Office 365) 。 请注意，列出了每个部分的学习资源数量，这可以帮助学习者跟踪他们有多少资源可用于培训和学习。
 >
-> 除产品筛选器外，还列出了当前主题 (从视频到网络研讨会) 的资源类型、对安全区域、安全角色和产品功能的熟悉程度或体验。
+> 除产品筛选器外，还列出了当前主题、 (网络研讨会) 、安全区域、安全角色和产品功能的熟悉程度或经验。
 
 > [!TIP]
 > Microsoft Learn 中有很多其他 [学习机会](/learn/)。 你将找到认证培训，例如[MS-500T02-A：实施Microsoft 365威胁防护。](/learn/certifications/courses/ms-500t02)
@@ -171,8 +171,8 @@ Microsoft 365 Defender门户包括学习中心，从 Microsoft 安全博客、Yo
     1. 如果要继续阅读这些方向，请右键单击该按钮，然后单击"在新建选项卡中打开"。
 2. 这将导航到 **UserVoice 论坛**。
 3. 有 2 个选项：
-    1. 向下滚动到文本框"我们如何提高合规性或更好地保护用户 *Office 365？* 并粘贴 *到Microsoft 365 Defender"*。 可以在结果中搜索类似你的想法并投票，或使用"发布新想法 **"按钮**。
-    1. 如果确定已报告此问题，并且想要通过投票 (或) ，请使用 UserVoice 右边的"提供反馈"框。  搜索 *Microsoft 365 Defender，***查找问题，** 并使用投票按钮提升其状态。
+    1. 向下滚动到文本框"我们如何提高合规性或更好地保护用户 *Office 365？* 并粘贴到 *Microsoft 365 Defender"*。 可以在结果中搜索类似你的想法并投票，或使用"发布新想法 **"按钮**。
+    1. 如果您确定此问题已报告，并且想要通过投票 (或) ，请使用 UserVoice 右侧"提供反馈"框。  搜索 *Microsoft 365 Defender，***查找问题，** 并使用投票按钮来提升其状态。
 
 使用 *此页面* 可就文章本身提供反馈。 感谢您的反馈。 您的声音可帮助我们改进产品。
 

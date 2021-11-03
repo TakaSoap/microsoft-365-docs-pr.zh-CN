@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender 中的高级搜寻查询Microsoft 365 Defender
+title: 高级搜寻查询Microsoft 365 Defender
 description: 了解如何使用高级搜寻构建快速、高效且无错误的威胁搜寻查询
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构， kusto， 避免超时， 命令行， 进程 ID， 优化， 最佳做法， 分析， 加入， 总结
 search.product: eADQiWindows 10XVcnh
@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 44f7ebba62f4c21ab3ad4cb55f0ca70302857d33
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 171364d447b2b160f40888b4b6132a7f1630391b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206693"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60705359"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 
@@ -44,8 +42,8 @@ ms.locfileid: "60206693"
 
 ## <a name="general-optimization-tips"></a>常规优化提示
 
-- **调整新查询的大小**— 如果您怀疑查询将返回大型查询结果集，请首先使用 count 运算符 [来评估它](/azure/data-explorer/kusto/query/countoperator)。 使用 [limit](/azure/data-explorer/kusto/query/limitoperator) 或它的同义词 `take` 以避免大型结果集。
-- **提前** 应用筛选器 - 应用时间筛选器和其他筛选器以减少数据集，尤其是在使用转换和分析函数（如子字符串 [ () 、](/azure/data-explorer/kusto/query/substringfunction)替换 [ () 、trim](/azure/data-explorer/kusto/query/replacefunction) () 、toupper [ ()](/azure/data-explorer/kusto/query/toupperfunction)[](/azure/data-explorer/kusto/query/trimfunction)或 [parse_json () ）之前](/azure/data-explorer/kusto/query/parsejsonfunction)。 在下面的示例中，分析函数 [extractjson () ](/azure/data-explorer/kusto/query/extractjsonfunction) 在筛选运算符减少记录数后使用。
+- **调整新查询** 的大小 — 如果您怀疑查询将返回大型查询结果集，请首先使用 count 运算符 [来评估它](/azure/data-explorer/kusto/query/countoperator)。 使用 [limit](/azure/data-explorer/kusto/query/limitoperator) 或它的同义词 `take` 以避免大型结果集。
+- 提前应用筛选器 **—** 应用时间筛选器和其他筛选器以减少数据集，尤其是在使用转换和分析函数（如 [substring ()](/azure/data-explorer/kusto/query/substringfunction) [、replace ()](/azure/data-explorer/kusto/query/replacefunction) [、trim ()](/azure/data-explorer/kusto/query/trimfunction) [、toupper ()](/azure/data-explorer/kusto/query/toupperfunction)或 [parse_json ()](/azure/data-explorer/kusto/query/parsejsonfunction)）之前。 在下面的示例中，在筛选运算符减少记录数后，使用分析函数 [extractjson () ](/azure/data-explorer/kusto/query/extractjsonfunction) 。
 
     ```kusto
     DeviceEvents
@@ -57,8 +55,8 @@ ms.locfileid: "60206693"
 
 - **Has beats contains**-To avoid searching substrings within words unnecessarily， use the `has` operator instead of `contains` . [了解字符串运算符](/azure/data-explorer/kusto/query/datatypes-string-operators)
 - **查看特定列**— 查看特定列，而不是在所有列中运行全文搜索。 请勿使用 `*` 检查所有列。
-- **对于速度，区分** 大小写 — 区分大小写的搜索更为具体，通常性能也更高。 区分大小写的字符串 [运算符的名称，](/azure/data-explorer/kusto/query/datatypes-string-operators)例如 和 `has_cs` `contains_cs` ，通常以 结尾 `_cs` 。 您还可以使用区分大小写的等号运算符 `==` ，而不是 `=~` 。
-- **分析，不要提取**— 尽可能使用 [分析](/azure/data-explorer/kusto/query/parseoperator) 运算符或分析函数（ [如 parse_json ()](/azure/data-explorer/kusto/query/parsejsonfunction)）。 避免 `matches regex` 使用字符串运算符或 [extract () 函数](/azure/data-explorer/kusto/query/extractfunction)，两者均使用正则表达式。 保留对更复杂的方案的正则表达式的使用。 [阅读有关分析函数的更多信息](#parse-strings)
+- **对于速度，区分** 大小写 — 区分大小写的搜索更为具体，通常性能也更高。 区分大小写的字符串 [运算符的名称，](/azure/data-explorer/kusto/query/datatypes-string-operators)例如 和 `has_cs` `contains_cs` ，通常以 结尾 `_cs` 。 您还可以使用区分大小写的等于运算符 `==` ，而不是 `=~` 。
+- **分析，不要提取**— 尽可能使用 [分析](/azure/data-explorer/kusto/query/parseoperator) 运算符或分析函数（如 [parse_json ()](/azure/data-explorer/kusto/query/parsejsonfunction)）。 避免 `matches regex` 使用字符串运算符或 [extract () ](/azure/data-explorer/kusto/query/extractfunction)函数，两者均使用正则表达式。 保留对更复杂的方案的正则表达式的使用。 [阅读有关分析函数的更多信息](#parse-strings)
 - **筛选表不是表达式**-如果可以筛选表列，则不要筛选计算列。
 - **无三字符术语**- 避免使用带三个字符或更少字符的术语进行比较或筛选。 这些术语未编制索引，匹配它们将需要更多资源。
 - **Project** 选择性地执行 - 仅预测所需的列，使结果更易于理解。 在运行联接或类似 [操作之前规划](/azure/data-explorer/kusto/query/joinoperator) 特定列还有助于提高性能。
@@ -81,7 +79,7 @@ ms.locfileid: "60206693"
     on AccountSid
     ```
 
-- 使用 **inner-join 风格**-[](/azure/data-explorer/kusto/query/joinoperator#join-flavors)默认联接风格或 [innerunique-join](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor)重复删除左表中的行，然后按联接键将每个匹配项的行返回到右表。 如果左表有多个行，这些行的键值相同，则删除这些行，以保留每个唯一值的一 `join` 个随机行。
+- 使用 **inner-join 风格**-[](/azure/data-explorer/kusto/query/joinoperator#join-flavors)默认联接风格或 [innerunique-join](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor)重复删除左表中的行，然后按联接键将每个匹配项的行返回到右表。 如果左表有多个行，这些行的键值相同，则这些行将进行重复数据删除，以保留每个唯一值的一 `join` 个随机行。
 
     此默认行为可能会从左侧表中排除可提供有用见解的重要信息。 例如，下面的查询将只显示一封包含特定附件的电子邮件，即使该同一附件是使用多个电子邮件发送的：
 
@@ -139,7 +137,7 @@ ms.locfileid: "60206693"
     on AccountObjectId
     ```
 
-    当 **[左边的](/azure/data-explorer/kusto/query/broadcastjoin)** 表格很小，最多 100，000 (记录时，广播提示) 右表非常大。 例如，下面的查询尝试将具有特定主题的一些电子邮件与表中包含链接的所有邮件 `EmailUrlInfo` 加入：
+    当 **[左表](/azure/data-explorer/kusto/query/broadcastjoin)** 较小，最多 100，000 个 (且右表非常大时，广播) 会有所帮助。 例如，下面的查询尝试将具有特定主题的一些电子邮件与表中包含链接的所有邮件 `EmailUrlInfo` 加入：
 
     ```kusto
     EmailEvents
@@ -209,8 +207,8 @@ InitiatingProcessCreationTime, InitiatingProcessFileName
 
 若要围绕命令行创建更持久的查询，请应用以下做法：
 
-- 通过匹配 (字段（而不是对命令行本身进行筛选，psexec.exe) 文件名称字段）标识已知进程，例如net.exe或) 。
-- 使用 parse_command_line () [函数分析命令行部分](/azure/data-explorer/kusto/query/parse-command-line)
+- 通过匹配 (字段（而不是筛选命令行本身）psexec.exe) 已知的进程，例如net.exe或psexec.exe) 。 
+- 使用 parse_command_line [ () 函数分析命令行部分](/azure/data-explorer/kusto/query/parse-command-line)
 - 查询命令行参数时，请勿按特定顺序查找多个不相关参数的完全匹配。 而是使用正则表达式或使用多个单独的 Contains 运算符。
 - 使用不区分大小写的匹配项。 例如，使用 `=~` 、 `in~` 和 `contains` ，而不是 、 和 `==` `in` `contains_cs` 。
 - 若要缓解命令行混淆技术，请考虑删除引号、将逗号替换为空格，以及将多个连续空格替换为单个空格。 有一些更复杂的模糊处理技术需要其他方法，但这些调整可帮助解决常见问题。
@@ -235,7 +233,7 @@ DeviceProcessEvents
 ```
 
 ### <a name="ingest-data-from-external-sources"></a>从外部源中输入数据
-若要将长列表或大型表合并到查询中，请使用 [externaldata](/azure/data-explorer/kusto/query/externaldata-operator) 运算符从指定的 URI 引入数据。 可以从 TXT、CSV、JSON 或其他格式 [的文件获取数据](/azure/data-explorer/ingestion-supported-formats)。 下面的示例演示如何利用 MalwareBazaar 提供的恶意软件 SHA-256 哈希的广泛列表 (abuse.ch) 检查电子邮件上的附件：
+若要将长列表或大型表合并到查询中，请使用 [externaldata](/azure/data-explorer/kusto/query/externaldata-operator) 运算符从指定的 URI 引入数据。 可以从 TXT、CSV、JSON 或其他格式 [的文件获取数据](/azure/data-explorer/ingestion-supported-formats)。 下面的示例演示如何利用 MalwareBazaar 文件提供的恶意软件 SHA-256 哈希的广泛列表 (abuse.ch) 检查电子邮件上的附件：
 
 ```kusto
 let abuse_sha256 = (externaldata(sha256_hash: string)
@@ -252,9 +250,9 @@ SHA256,ThreatTypes,DetectionMethods
 ```
 
 ### <a name="parse-strings"></a>分析字符串
-可以使用多种函数高效处理需要解析或转换的字符串。
+可以使用多种函数高效处理需要分析或转换的字符串。
 
-| 字符串 | 函数 | 用法示例 |
+| String | 函数 | 用法示例 |
 |--|--|--|
 | 命令行 | [parse_command_line () ](/azure/data-explorer/kusto/query/parse-command-line) | 提取命令和所有参数。 |
 | Paths | [parse_path () ](/azure/data-explorer/kusto/query/parsepathfunction) | 提取文件或文件夹路径的各个部分。 |
@@ -265,7 +263,7 @@ SHA256,ThreatTypes,DetectionMethods
 若要了解所有受支持的分析函数，请阅读 [Kusto 字符串函数](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)。
 
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开Microsoft 365 Defender](m365d-enable.md)更多数据源来搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender"](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤Microsoft 365 Defender Microsoft Defender for Endpoint 中执行的步骤，将高级搜寻工作流从[Microsoft Defender for Endpoint 移动到其他位置](advanced-hunting-migrate-from-mde.md)。
 
 ## <a name="related-topics"></a>相关主题
 - [Kusto 查询语言文档](/azure/data-explorer/kusto/query/)

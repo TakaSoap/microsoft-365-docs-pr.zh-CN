@@ -1,6 +1,6 @@
 ---
 title: 通过Windows将设备载入 Microsoft Defender for Endpoint
-description: 使用组策略在Windows部署配置包，以便它们可以载入服务。
+description: 使用组策略在 Windows部署配置包，以便它们可以载入到服务。
 keywords: 使用组策略配置设备， 设备管理， 为终结点设备配置 Microsoft Defender， 载入适用于终结点设备的 Microsoft Defender， 组策略
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: d0f97dcbde929c7661fd3bf3a2aba8eb9f69c3c1
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: fd6453c245a5d7320518c2dc500ed4718568857c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239933"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703257"
 ---
-# <a name="onboard-windows-devices-using-group-policy"></a>使用Windows载入设备 
+# <a name="onboard-windows-devices-using-group-policy"></a>使用组策略载入 Windows 设备 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,14 +42,14 @@ ms.locfileid: "60239933"
 > 对于 Windows Server 2019 和 Windows Server 2022，可能需要将 NT AUTHORITY\Well-Known-System-Account 替换为组策略首选项创建的 XML 文件的 NT AUTHORITY\SYSTEM。
 
 > [!NOTE]
-> 如果你对 Windows Server 2012 R2 和 2016 使用新的统一 Microsoft Defender for Endpoint 解决方案，请确保你正在使用中央存储中的最新 ADMX 文件，以访问正确的 Microsoft Defender 策略选项。 请参考 [如何创建](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)和管理集中存储的组策略管理模板Windows下载最新文件 **以用于Windows 10**。 
+> 如果你对 Windows Server 2012 R2 和 2016 使用新的统一 Microsoft Defender for Endpoint 解决方案，请确保你正在使用中央存储中的最新 ADMX 文件，以访问正确的 Microsoft Defender for Endpoint 策略选项。 请参考 [如何创建](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)和管理集中存储组策略管理模板Windows并下载最新文件以与 Windows 10 一 **Windows 10。** 
 
-请查看[PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)或[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 的各种路径。
+请查看[PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)或[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各个路径。
 
 
 1. 在 *WindowsDefenderATPOnboardingPackage* .zip中打开 GP 配置包 (文件。zip) 从服务载入向导下载。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
  
-    1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**   >  **载入"。**
+    1. 在导航窗格中，选择 **"设置**  >  **终结点**  >  **设备管理**   >  **载入"。**
 
     1. 选择操作系统。
     
@@ -59,11 +59,11 @@ ms.locfileid: "60239933"
 
      
 
-2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个称为 *OptionalParamsPolicy* 的文件夹和 *文件 WindowsDefenderATPOnboardingScript.cmd*。
+2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个称为 *OptionalParamsPolicy* 的文件夹和文件 *WindowsDefenderATPOnboardingScript.cmd*。
 
 3. 若要创建新的 GPO，请打开组策略管理控制台 [ (](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) GPMC) ，右键单击要配置的组策略对象，**然后单击新建。** 在显示的对话框中输入新 GPO 的名称，然后单击"确定 **"。**
 
-4. 打开 [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)GPMC (组策略管理) ，右键单击要配置的组策略对象 () GPO"，然后单击"编辑 **"。**
+4. 打开组策略管理控制台 [ (](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) GPMC) ，右键单击要配置的组策略对象 (GPO) 然后单击 **编辑。**
 
 5. 在组 **策略管理编辑器中**，转到"**计算机配置**"，然后转到"**首选项**"，然后转到"**控制面板设置"。**
 
@@ -121,13 +121,13 @@ ms.locfileid: "60239933"
 
 ### <a name="update-endpoint-protection-configuration"></a>更新终结点保护配置
 
-配置载入脚本后，继续编辑相同的组策略以添加终结点保护配置。 从运行 Windows 10 或 Server 2019、Windows 11 或 Windows Server 2022 的系统执行组策略编辑，以确保您具有所有必需的 Microsoft Defender 防病毒 功能。 你可能需要关闭并重新打开组策略对象以注册 Defender ATP 配置设置。
+配置载入脚本后，继续编辑相同的组策略以添加终结点保护配置。 从运行 Windows 10 Server 2019、Windows 11 或 Windows Server 2022 的系统执行组策略编辑，以确保具有所有必需的 Microsoft Defender 防病毒 功能。 你可能需要关闭并重新打开组策略对象以注册 Defender ATP 配置设置。
 
 所有策略都位于 下 `Computer Configuration\Policies\Administrative Templates` 。
 
 **策略位置：\Windows** Components\Windows Defender ATP
 
-Policy|设置
+Policy|Setting
 ---|---
 Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集合"
 
@@ -135,7 +135,7 @@ Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集�
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒
 
-Policy|设置
+Policy|Setting
 ---|---
 配置对可能不需要的应用程序的检测|已启用、阻止
 
@@ -143,7 +143,7 @@ Policy|设置
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\MAPS
 
-Policy|设置
+Policy|Setting
 ---|---
 加入 Microsoft MAPS|已启用、高级 MAPS
 需要进一步分析时发送文件示例 | 已启用，发送安全示例
@@ -152,9 +152,9 @@ Policy|设置
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\Real-time Protection
 
-Policy|设置
+Policy|Setting
 ---|---
-关闭实时保护|禁用
+关闭实时保护|已禁用
 打开行为监视|已启用
 扫描所有下载的文件和附件|已启用
 监视您的计算机上的文件和程序活动|已启用
@@ -165,13 +165,13 @@ Policy|设置
 
 这些设置配置终结点的定期扫描。 建议在性能允许的情况下执行每周快速扫描。
 
-Policy|设置
+Policy|Setting
 ---|---
 在运行计划扫描之前检查最新的病毒和间谍软件安全智能 |已启用
 
 <br>
 
-**策略位置：\Windows** 组件\Microsoft Defender 防病毒\Microsoft Defender 攻击防护\攻击面减少
+**策略位置：\Windows** Components\Microsoft Defender 防病毒\Microsoft Defender 攻击防护\Attack Surface Reduction
 
 从自定义攻击面减少规则获取攻击面减少 GUID [的当前列表](customize-attack-surface-reduction.md)
 
@@ -187,7 +187,7 @@ Policy|设置
 
    ![攻击面减少配置的图像。](images/asr-guid.png)
 
-Policy|设置
+Policy|Setting
 ---|---
 配置受控文件夹访问权限| 已启用，审核模式
 
@@ -200,11 +200,11 @@ Policy|设置
 出于安全考虑，用于"载出"设备的程序包将在下载日期 30 天后过期。 发送到设备的过期载出包将被拒绝。 下载载出包时，你将收到程序包到期日期的通知，该日期也将包含在程序包名称中。
 
 > [!NOTE]
-> 不得同时在同一设备上部署载入和载出策略，否则将导致不可预知的冲突。
+> 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
 
 1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
 
-    1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >  **""载出"。**
+    1. 在导航窗格中，选择 **"设置**  >    >  **终结点设备管理**  >  **""载出"。**
 
     1. 选择操作系统。
     
@@ -214,7 +214,7 @@ Policy|设置
 
 2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
-3. 打开 [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)GPMC (组策略管理) ，右键单击要配置的组策略对象 () GPO"，然后单击"编辑 **"。**
+3. 打开 [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)GPMC (组策略管理控制台) ，右键单击要配置的组策略对象 (GPO) 然后单击"编辑 **"。**
 
 4. 在组 **策略管理编辑器中**，转到"**计算机配置"，然后** 转到"**首选项**"，然后转到"**控制面板设置"。**
 
@@ -224,9 +224,9 @@ Policy|设置
 
 7. Select **Run whether user is logged on or not and** check the Run with highest **privileges** check-box.
 
-8. 在"名称"字段中，键入计划任务策略的适当名称 (例如，Defender for Endpoint Deployment) 。
+8. 在"名称"字段中，键入计划任务策略 (例如，Defender for Endpoint Deployment) 。
 
-9. 转到"操作 **"** 选项卡，然后选择"新建 **..."。** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 使用共享 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* 文件的文件服务器的完全限定域名 (FQDN) ，输入 UNC 路径。
+9. 转到"操作 **"** 选项卡，然后选择"新建 **..."。** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 使用共享 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* 文件的文件服务器的完全限定域名 (FQDN) 输入 UNC 路径。
 
 10. 选择 **"确定** "并关闭任何打开的 GPMC 窗口。
 
@@ -248,7 +248,7 @@ Policy|设置
 
 ## <a name="setup-defender-av-policies"></a>设置 Defender AV 策略
 
-创建新的组策略，或将这些设置与其他策略分组。 这依赖于客户环境，以及他们希望通过面向不同 OU 的组织单位或组织单位来 (服务) 。
+创建新的组策略，或将这些设置与其他策略分组。 这依赖于客户环境，以及他们希望如何通过面向不同组织单位和 OUS 来 (服务) 。
 
 1. 选择 GP 或新建 GP 后，编辑 GP。
 
@@ -272,19 +272,19 @@ Policy|设置
 
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="配置对传入传出文件活动的监视。":::
 
-### <a name="configure-windows-defender-smart-screen-settings"></a>配置Windows Defender屏幕设置
+### <a name="configure-windows-defender-smartscreen-settings"></a>配置Windows Defender SmartScreen 设置
 
-1. 浏览到 \>  \> SmartScreen 资源管理器 **中的** 计算机 \> **Windows配置Windows Defender** \> **模板** \> 。
+1. 浏览到 **计算机配置** \> **策略** \> **SmartScreen** \> **资源管理器中的Windows组件** \> **Windows Defender** \> **模板**。
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="配置 Windows Defender 智能屏幕资源管理器。":::
  
-2. 浏览到 **计算机配置**  >  **策略**  >  **管理模板**  >  **Windows**  >  **SmartScreen Windows Defender组件Microsoft Edge。**  >  
+2. 浏览到 **计算机配置**  >  **策略**  >  **SmartScreen**  >  **Windows组件**  >  **Windows Defender管理**  >  **Microsoft Edge。**
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="配置 Windows Defender 智能屏幕边缘。":::
 
 ### <a name="configure-potentially-unwanted-applications"></a>配置可能不需要的应用程序
 
-浏览到 **计算机配置** \> **策略** \> **管理** \> **模板Windows组件** \> **Microsoft Defender 防病毒。**
+浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows组件** \> **Microsoft Defender 防病毒**。
 
 :::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="配置可能不需要的应用。":::
 
@@ -304,7 +304,7 @@ Policy|设置
 
 ### <a name="check-for-signature-update"></a>检查签名更新
 
-浏览到 **计算机配置** \> **策略** \> **管理** 模板 \> **Windows组件** \> **Microsoft Defender 防病毒** \> **签名更新**
+浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows组件Microsoft Defender 防病毒** \>  \> **签名更新**
 
 :::image type="content" source="images/signature-update-1.png" alt-text="签名更新。":::
 
@@ -312,7 +312,7 @@ Policy|设置
 
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>配置云提供超时和保护级别
 
-浏览到 **计算机配置** \> **策略** \> **管理** \> **模板 Windows组件** \> **Microsoft Defender 防病毒** \> **MpEngine**。
+浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows组件** \> **Microsoft Defender 防病毒** \> **MpEngine**。
 将云保护级别策略配置为默认Microsoft Defender 防病毒 **阻止策略时**，将禁用该策略。 这是将保护级别设置为 Windows 默认值所需的操作。
 
 :::image type="content" source="images/config-extended-cloud-check.png" alt-text="配置扩展云检查。":::
@@ -320,9 +320,9 @@ Policy|设置
 :::image type="content" source="images/cloud-protection-level.png" alt-text="配置云保护级别。":::
 
 ## <a name="related-topics"></a>相关主题
-- [使用Windows载入设备Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [使用Windows管理工具载入设备](configure-endpoints-mdm.md)
-- [使用Windows脚本载入设备](configure-endpoints-script.md)
+- [使用 Microsoft Endpoint Configuration Manager 载入 Windows 设备](configure-endpoints-sccm.md)
+- [使用移动设备管理工具载入 Windows 设备](configure-endpoints-mdm.md)
+- [使用本地脚本载入 Windows 设备](configure-endpoints-script.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)
 - [对新载入的适用于终结点的 Microsoft Defender 设备运行检测测试](run-detection-test.md)
 - [Microsoft Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)

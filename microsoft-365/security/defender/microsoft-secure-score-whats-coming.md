@@ -1,6 +1,6 @@
 ---
 title: Microsoft 安全分数即将提供哪些功能
-description: 介绍 Microsoft 安全分数在安全中心门户中即将Microsoft 365 Defender更改。
+description: 介绍 Microsoft 安全分数在 microsoft 安全分数门户中即将Microsoft 365 Defender更改。
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， microsoft 安全分数， Microsoft 365 Defender门户， 改进操作
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 357fce4ef4ec7f2b4478b00d9702e926213eba2e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc1bf8ca103a89c78d3b42689ef2d4a640a2d9da
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209053"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724364"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft 安全分数即将提供哪些功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-可在 Microsoft 安全分数门户 的 Microsoft 365 Defender https://security.microsoft.com/securescore [找到](overview-security-center.md)。
+Microsoft 安全分数位于"安全分数"Microsoft 365 Defender https://security.microsoft.com/securescore [门户中](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
 ## <a name="proposed-changes"></a>建议的更改
 

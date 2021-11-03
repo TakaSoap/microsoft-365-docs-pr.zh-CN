@@ -20,8 +20,8 @@ ms.openlocfilehash: 3149f453886f72fd300f2961a7ef2ea1defce7a5
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673239"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704705"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>提高 Microsoft Defender 终结点安全基线的合规性
 
@@ -35,7 +35,7 @@ ms.locfileid: "60673239"
 
 安全基线确保安全功能根据安全专家和系统管理员和系统管理员Windows配置。 部署后，Defender for Endpoint 安全基线将设置 Defender for Endpoint 安全控件以提供最佳保护。
 
-若要了解安全基线以及如何使用配置文件在 Intune 上分配这些基线， [请阅读此常见问题解答](/intune/security-baselines#q--a)。
+若要了解安全基线以及如何使用配置文件在 Intune 上分配这些基线， [请阅读此常见问题](/intune/security-baselines#q--a)解答。
 
 在部署和跟踪安全基线的合规性之前：
 
@@ -56,7 +56,7 @@ Intune Windows 安全基线提供了一组全面的建议设置，用于安全�
 
 ## <a name="monitor-compliance-to-the-defender-for-endpoint-security-baseline"></a>监视对 Defender for Endpoint 安全基线的合规性
 
-设备 **配置** 管理上的安全基线 [卡](configure-machines.md)提供了已分配 Defender for Endpoint 安全基线Windows 10设备合规性的概述。
+设备 **配置**[管理上的安全](configure-machines.md)基线卡提供了已分配 Defender for Endpoint 安全基线Windows 10设备合规性的概述。
 
 ![安全基线卡。](images/secconmgmt_baseline_card.png)
 
@@ -81,7 +81,7 @@ Intune Windows 安全基线提供了一组全面的建议设置，用于安全�
 1. 选择 **安全基线卡** 上的配置 **安全基线** 以转到 Intune 设备管理。 显示比较基准合规性的类似概述。
 
    > [!TIP]
-   > 或者，你可以从所有服务 > Intune > 设备安全 > 安全基线 > **Microsoft Defender ATP** 基线导航到 Microsoft Azure 门户中的 Defender for Endpoint 安全基线。
+   > 或者，你可以从所有服务 > Intune > 设备安全 > 安全基线> **Microsoft Defender ATP** 基线导航到 Microsoft Azure 门户中的 Defender for Endpoint 安全基线。
 
 2. 创建新的配置文件。
 

@@ -24,8 +24,8 @@ ms.openlocfilehash: 41ce851c05ab1ad32ce1c8e2b2c0e6cf08358744
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673320"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60705422"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany 终结点
 
@@ -34,8 +34,8 @@ ms.locfileid: "60673320"
 Office 365 要求连接到 Internet。 对于使用德国计划的客户，应Office 365 **终结点**。
 
 > [!NOTE]
-> 对于正在转换到德国新数据中心区域Microsoft 365，终结点将发生变化。
-> 有关其他信息，请参阅从德国 Microsoft 云迁移到Office 365[新的德国数据中心区域部署服务](ms-cloud-germany-transition.md)。
+> 对于正在转换到德国新数据中心Microsoft 365的客户，终结点将发生变化。
+> 有关其他信息，请参阅从德国 Microsoft 云迁移到Office 365[新的德国数据中心区域。](ms-cloud-germany-transition.md)
   
  **Office 365 终结点：**[全球（包括 GCC）](urls-and-ip-address-ranges.md)  | [由世纪互联运营的 Office 365](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Germany* | [Office 365 美国政府版 DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 美国政府版 GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   

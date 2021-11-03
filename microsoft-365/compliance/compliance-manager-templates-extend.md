@@ -18,26 +18,26 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何扩展 Microsoft 合规性管理器中的评估模板，以添加和修改控制措施。
-ms.openlocfilehash: 4618c085228c44e3af1aa0b3de9c3b1ebd63424c
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: d47488f578436b1ea8bd865855d681d8778d07bd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60336055"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703065"
 ---
 # <a name="extend-assessment-templates-in-microsoft-compliance-manager"></a>在 Microsoft 合规性管理器中扩展评估模板
 
 合规性管理器提供向现有模板添加自己的控件和改进操作的选项。 此过程称为扩展模板。
 
-若要扩展模板，将使用特殊说明来修改模板数据，具体取决于你是在扩展Microsoft 365模板还是通用评估模板。
+若要扩展模板，你将使用特殊说明来修改模板数据，具体取决于你正在扩展 Microsoft 评估模板还是通用评估模板。
 
-## <a name="extend-microsoft-365-assessment-templates"></a>扩展Microsoft 365评估模板
+## <a name="extend-microsoft-assessment-templates"></a>扩展 Microsoft 评估模板
 
-扩展 Microsoft 365 模板时，它仍然可以接收 Microsoft 发布的更新，当相关法规或产品策略发生更改时 (请参阅接受评估更新) 。 [](compliance-manager-assessments.md#accept-updates-to-assessments)
+扩展 Microsoft 模板（例如创建用于 Microsoft 365 模板）时，它仍然可以接收 Microsoft 发布的更新。 当相关法规或产品变更发生更改时，可能会发生 (请参阅接受评估 [更新](compliance-manager-assessments.md#accept-updates-to-assessments)) 。
 
 ### <a name="prepare-template-data-and-create-extension"></a>准备模板数据和创建扩展
 
-若要准备，您需要组合一个特殊格式的电子表格Excel导入必要的模板数据。 这些Excel文件遵循 Format assessment template data [with Excel中](compliance-manager-templates-format-excel.md)概述的相同格式，但扩展有特殊要求。 请参阅以下其他要点以帮助防止错误：
+若要进行准备，您需要组合一个特殊格式的 Excel 电子表格，以导入必要的模板数据。 这些Excel文件遵循使用 Excel 设置评估模板数据格式[](compliance-manager-templates-format-excel.md)中列出的相同格式，但扩展有特殊要求。 请参阅以下其他要点以帮助防止错误：
 
 - 电子表格应仅包含要添加到评估的操作和控制。
 - 电子表格不能包含要修改的评估中已存在的任何控件或操作。

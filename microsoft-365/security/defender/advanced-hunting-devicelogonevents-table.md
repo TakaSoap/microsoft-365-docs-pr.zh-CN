@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceLogonEvents 表
 description: 了解高级搜寻架构的 DeviceLogonEvents 表中的身份验证或登录事件
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， logonevents， DeviceLogonEvents， 身份验证， 登录， 登录
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， 登录， DeviceLogonEvents， 身份验证， 登录， 登录
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,8 +22,8 @@ ms.openlocfilehash: b3c878c40c742c22401b9180d202da472d9e2f35
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60671357"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703269"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -39,7 +39,7 @@ ms.locfileid: "60671357"
 高级 `DeviceLogonEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关设备上用户登录和其他身份验证事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关表支持 (事件) 类型的详细信息，请使用安全中心中提供的内置 `ActionType` 架构参考。
+> 有关表支持 (类型的事件) ，请使用安全中心中提供的内置架构 `ActionType` 参考。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -57,7 +57,7 @@ ms.locfileid: "60671357"
 | `FailureReason` | string | 说明所记录操作失败原因的信息 |
 | `IsLocalAdmin` | boolean | 用于指示用户是否是计算机上本地管理员的布尔指示器 |
 | `LogonId` | string | 登录会话的标识符。 此标识符仅在重新启动之间的同一计算机上是唯一的 |
-| `RemoteDeviceName` | string | 在受影响的计算机上执行远程操作计算机的名称。 根据报告的事件，此名称可以是完全限定的域名 (FQDN) 、NetBIOS 名称或主机名（不含域信息） |
+| `RemoteDeviceName` | string | 在受影响的计算机上执行远程操作计算机的名称。 根据报告的事件，此名称可能是完全限定的域名 (FQDN) 、NetBIOS 名称或主机名（不含域信息） |
 | `RemoteIP` | string | 连接到的 IP 地址 |
 | `RemoteIPType` | string | IP 地址的类型，例如 Public、Private、Reserved、Loopback、Teredo、FourToSixMapping 和 Broadcast |
 | `RemotePort` | int | 连接到的远程设备的 TCP 端口 |
@@ -70,20 +70,20 @@ ms.locfileid: "60671357"
 | `InitiatingProcessTokenElevation` | string | 指示是否存在用户访问控制的令牌类型 (UAC) 启动事件的进程应用的特权提升 |
 | `InitiatingProcessSHA1` | string | 启动事件 (映像文件) SHA-1 |
 | `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不填充此字段 -使用 SHA1 列（如果可用） |
-| `InitiatingProcessMD5` | string | 启动事件的进程 (MD5) 文件哈希 |
+| `InitiatingProcessMD5` | string | 启动事件的进程和 (文件的 MD5) 哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
 | `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
 | `InitiatingProcessVersionInfoCompanyName` | string | 进程版本信息中的公司名称 (负责) 文件 |
 | `InitiatingProcessVersionInfoProductName` | string | 进程版本信息中的产品名称 (负责) 文件 |
 | `InitiatingProcessVersionInfoProductVersion` | string | 进程版本信息中的产品版本 (负责) 文件 |
-| `InitiatingProcessVersionInfoInternalFileName` | string | 进程版本信息中的内部文件名 (负责) 文件 |
+| `InitiatingProcessVersionInfoInternalFileName` | string | 进程版本信息中的内部文件名 (负责) 文件的内部文件名 |
 | `InitiatingProcessVersionInfoOriginalFileName` | string | 进程版本信息的原始文件名 (负责) 文件 |
 | `InitiatingProcessVersionInfoFileDescription` | string | 负责事件的进程版本信息 (映像) 说明 |
 | `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的进程的 PID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动事件的过程的日期和时间 |
 | `InitiatingProcessFolderPath` | string | 包含启动事件 (进程) 文件的文件夹 |
-| `InitiatingProcessParentId` | int | 进程 ID (PID) 生成负责事件的进程的父进程的 PID |
+| `InitiatingProcessParentId` | int | 进程 ID (PID) 生成了负责事件的进程的父进程的 PID |
 | `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |
 | `InitiatingProcessParentCreationTime` | datetime | 启动负责事件的进程的父级的日期和时间 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |

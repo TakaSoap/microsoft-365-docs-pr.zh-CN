@@ -1,6 +1,6 @@
 ---
 title: 通过电子邮件获取事件通知Microsoft 365 Defender
-description: 了解如何创建规则，以针对事件发送的电子邮件通知Microsoft 365 Defender
+description: 了解如何创建规则，以在电子邮件中获取事件Microsoft 365 Defender
 keywords: 事件， 电子邮件， 电子邮件通知， 配置， 用户， 邮箱， 电子邮件， 事件， 分析， 响应
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 600ff555762112222769fde0372716f4a89a12b9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209173"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60717439"
 ---
 # <a name="get-incident-notifications-by-email"></a>通过电子邮件获取事件通知
 
@@ -67,8 +67,8 @@ ms.locfileid: "60209173"
 
     :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="事件电子邮件通知的通知设置。":::
 
-5. 选择“**下一步**”。 在 **"收件人"** 页上，添加将接收事件通知的电子邮件地址。 键入 **每个** 新电子邮件地址后，选择"添加"。 若要测试通知并确保收件人在收件箱中收到通知，请选择"**发送测试电子邮件"。** 
-6. 选择“**下一步**”。 在"**复查规则**"页上，查看规则的设置，然后选择"创建 **规则"。** 收件人将开始根据设置通过电子邮件接收事件通知。
+5. 选择 **下一步**。 在 **"收件人"** 页上，添加将接收事件通知的电子邮件地址。 键入 **每个** 新电子邮件地址后，选择"添加"。 若要测试通知并确保收件人在收件箱中收到通知，请选择"**发送测试电子邮件"。** 
+6. 选择 **下一步**。 在"**复查规则**"页上，查看规则的设置，然后选择"创建 **规则"。** 收件人将开始根据设置通过电子邮件接收事件通知。
 
 若要编辑现有规则，请从规则列表中选择它。 在具有规则名称的窗格中，选择"编辑规则"，在"基本"、通知 **设置** 和"**收件人"页上进行更改**。 
 

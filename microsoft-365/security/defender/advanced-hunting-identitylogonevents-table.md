@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1584fbaa23822af0821228a50f487517f74c02ca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5ce24bfafe690252535579d81b702db025f69217
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174503"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704285"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -41,7 +39,7 @@ ms.locfileid: "60174503"
 > 有关表支持 (事件) 类型的详细信息，请使用安全中心中提供的内置 `ActionType` 架构参考。
 
 >[!NOTE]
->此表Azure Active Directory (Azure AD) 由 云应用安全 跟踪的登录活动，特别是使用 ActiveSync 和其他旧协议的交互式登录和身份验证活动。 此表中不可用的非交互式审核日志。 [详细了解如何连接云应用安全Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>下表介绍了Azure Active Directory (Azure AD) 跟踪的登录云应用安全，特别是使用 ActiveSync 和其他旧协议的交互式登录和身份验证活动。 在此表中不可用的非交互式Azure AD 审核日志。 [详细了解如何连接云应用安全Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -55,13 +53,13 @@ ms.locfileid: "60174503"
 | `FailureReason` | string | 说明所记录操作失败原因的信息 |
 | `AccountName` | string | 帐户的用户名 |
 | `AccountDomain` | string | 帐户的域 |
-| `AccountUpn` | string | 帐户 (UPN) 的用户主体名称 |
+| `AccountUpn` | string | 帐户 (UPN) 用户主体名称 |
 | `AccountSid` | string | 帐户 (SID) 安全标识符 |
-| `AccountObjectId` | string | Azure AD 中帐户的唯一标识符 |
+| `AccountObjectId` | string | Azure AD |
 | `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间启动和姓氏或姓氏的组合。 |
 | `DeviceName` | string | 设备的完全限定 (FQDN) FQDN |
 | `DeviceType` | string | 设备类型 |
-| `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10和 Windows 7。 |
+| `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10 和 Windows 7。 |
 | `IPAddress` | string | 分配给终结点的 IP 地址，在相关的网络通信期间使用 |
 | `Port` | string | 通信期间使用的 TCP 端口 |
 | `DestinationDeviceName` | string | 运行处理所记录操作的服务器应用程序的设备的名称 |

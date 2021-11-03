@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e6b7df942ee117c0f23a97516c75d64131e0770d
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b2e25e28952d18ad32141c010bc258d50e383d4e
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/03/2021
-ms.locfileid: "60698401"
+ms.locfileid: "60724424"
 ---
 # <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-defender"></a>将帐户从Office 365合规中心重定向到Microsoft 365 Defender
 
@@ -36,17 +36,17 @@ ms.locfileid: "60698401"
 - Microsoft 365 Defender
 - Defender for Office 365
 
-本文介绍如何通过启用从以前的 Office 365 安全与合规中心 Microsoft 365 Defender 自动重定向到 (protection.office.com) ，将帐户Microsoft 365 Defender (security.microsoft.com) 。
+本文介绍如何通过启用从以前的 Office 365 安全与合规中心 Microsoft 365 Defender 自动重定向来将帐户 (protection.office.com) 到 Microsoft 365 Defender (security.microsoft.com) 。
 
 ## <a name="what-to-expect"></a>预期结果
 
-启用并激活自动重定向后，访问 Office 365 Security and Compliance (protection.office.com) 中与安全相关的功能的用户将自动路由到 Microsoft 365 Defender (security.microsoft.com) 。
+启用并激活自动重定向后，访问 Office 365 Security and Compliance (protection.office.com) 中与安全相关的功能的用户将自动路由到Microsoft 365 Defender (security.microsoft.com) 。
 
 详细了解更改了哪些功能[：Microsoft Defender for Office 365 Microsoft 365 Defender](microsoft-365-security-center-mdo.md)。
 
 启用自动重定向后，当用户使用安全与Microsoft 365 Defender中心中的安全功能时，Office 365路由到用户。
 
-这些功能包括威胁管理部分、警报 (查看警报和警报策略) 以及威胁管理仪表板和报告。 安全Office 365安全与合规中心内与安全不相关的项目不会重定向到Microsoft 365 Defender。
+其中包括威胁管理部分、警报 (查看警报和警报策略) 以及威胁管理仪表板和报告中的功能。 安全Office 365安全与合规中心内与安全不相关的项目不会重定向到Microsoft 365 Defender。
 
 合规性相关项目可在管理中心Microsoft 365 合规中心，并且可以在管理中心内找到与Exchange项。
 
@@ -84,7 +84,7 @@ If something isn't working for you or if there's anything you're unable to compl
 可以随时再次启用此设置。
 
 ## <a name="related-information"></a>相关信息
-- [Microsoft 365 Defender概述](overview-security-center.md)
+- [Microsoft 365 Defender概述](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft 提供统一的 SIEM 和 XDR 以现代化安全操作](https://www.microsoft.com/security/blog/?p=91813) 
 - [XDR 与 SIEM 信息图](https://afrait.com/blog/xdr-versus-siem/) 

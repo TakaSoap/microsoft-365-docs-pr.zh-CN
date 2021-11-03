@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在 Microsoft 合规性管理器中创建评估模板。 使用格式化的文件创建和修改Excel模板。
-ms.openlocfilehash: c2638d2425d505dcb15e1827e54c1a2d6492e6a7
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: be8d3356bd47289e3822133a2f97cf6349fad05c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334634"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701629"
 ---
 # <a name="create-an-assessment-template-in-microsoft-compliance-manager"></a>在 Microsoft 合规性管理器创建评估模板
 
-若要在合规性管理器中为自定义评估创建自己的新模板，你将使用经过特殊格式Excel电子表格来组合必要的控制数据。 完成电子表格后，将其导入合规性管理器。
+若要在合规性管理器中为自定义评估创建自己的新模板，你需要使用经过特殊格式Excel电子表格来组合必要的控制数据。 完成电子表格后，将其导入合规性管理器。
 
-若要了解有关设置电子表格格式的信息，请参阅使用 Excel[设置评估模板Excel。](compliance-manager-templates-format-excel.md)
+若要了解有关设置电子表格格式的信息，请参阅使用 Excel[设置评估模板数据的格式](compliance-manager-templates-format-excel.md)。
 
 ## <a name="required-roles"></a>所需角色
 

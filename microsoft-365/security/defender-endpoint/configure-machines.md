@@ -1,25 +1,25 @@
 ---
 title: 确保设备配置正确
-description: 正确配置设备以提升抵御威胁的整体恢复能力，并增强检测和响应攻击的能力。
+description: 正确配置设备以提升抵御威胁的整体复原能力，并增强检测和响应攻击的能力。
 keywords: 载入， Intune 管理， Microsoft Defender for Endpoint， Microsoft Defender， Windows Defender， 攻击面减少， ASR， 安全基线
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06fa097275453e3ae7b64f0e0cb142fe7592c88b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dca768ea376531d7c9a47cf4425ba65e49911b23
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191955"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702185"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>确保设备配置正确
 
@@ -56,7 +56,7 @@ ms.locfileid: "60191955"
 
 设备配置管理与 Intune 设备管理密切合作，以建立组织中设备的清单和基线安全配置。 你将能够在 Intune 托管的设备上跟踪和管理Windows问题。
 
-在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows注册选项。 有关 Intune 注册选项的详细信息，请阅读有关为设备设置[Windows的信息](/intune/windows-enroll)。
+在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows注册选项。 有关 Intune 注册选项的详细信息，请阅读有关[为设备设置Windows的信息](/intune/windows-enroll)。
 
 > [!NOTE]
 > 若要Windows设备注册到 Intune，管理员必须已分配有许可证。 [阅读有关分配设备注册许可证的信息](/intune/licenses-assign)。
@@ -66,7 +66,7 @@ ms.locfileid: "60191955"
 
 ## <a name="obtain-required-permissions"></a>获取所需权限
 
-默认情况下，只有已分配有 Azure AD 上的全局管理员或 Intune 服务管理员角色的用户才能管理和分配载入设备和部署安全基线所需的设备配置文件。
+默认情况下，只有分配了 Azure AD 上的全局管理员或 Intune 服务管理员角色的用户才能管理和分配载入设备和部署安全基线所需的设备配置文件。
 
 如果已分配其他角色，请确保你拥有必要的权限：
 

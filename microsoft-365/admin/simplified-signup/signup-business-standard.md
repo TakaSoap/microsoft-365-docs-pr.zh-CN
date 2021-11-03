@@ -14,18 +14,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 购买Microsoft 365 商业标准版并设置你的组织。
-ms.openlocfilehash: cf19c2f07129eb064368c1efd6eea09af0870b93
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e84e88fd478209d13fca889010b023a9c10f450b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164244"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701487"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>注册 Microsoft 365 商业标准版订阅
 
 有两种方法可以获取Microsoft 365 商业标准版：
 - **[购买](https://go.microsoft.com/fwlink/?linkid=2109397)Microsoft 365 商业标准版并完成自己的设置**：若要购买Microsoft 365 商业标准版，[请按照以下步骤操作](#sign-up-steps)。
-- **对于 Microsoft 合作伙伴**：如果你是合作伙伴，请参阅获取Microsoft 365 [商业。](../../business/get-microsoft-365-business.md)
+- **对于 Microsoft 合作伙伴**：如果你是合作伙伴，请参阅获取 Microsoft 365 [Business。](../../business/get-microsoft-365-business.md)
 
 **需要不同的内容？** 可以执行下列操作：
 
@@ -39,13 +39,15 @@ ms.locfileid: "60164244"
 > 注册 Microsoft 365 商业版的人员（通常是业务所有者）自动成为组织的技术管理员。 如果希望帮助管理 Microsoft 365 服务，可以将其他人添加为管理员。 有关详细信息，请查看 [添加管理员](../../business-video/add-admin.md)。
 
 1. On the [Microsoft 365 for business page，](https://go.microsoft.com/fwlink/?linkid=2109654)select **See plans & pricing**.
-2. 下一页上，找到每月成本，然后向下滚动页面以了解有关网站中包含的内容Microsoft 365。 在Microsoft 365 商业标准版下，选择立即 **购买**。
-3. 在"**感谢你选择Microsoft 365 商业标准版"** 页上，输入你的信息以开始。 选择“**下一步**”。
+2. 在下一页上，找到每月成本，然后向下滚动页面，以了解有关网站中包含的内容Microsoft 365。 在Microsoft 365 商业标准版下，选择立即 **购买**。
+3. 在 **"感谢您选择Microsoft 365 商业标准版"** 页上，输入你的信息以开始。 选择 **下一步**。
 4. 输入已使用的电子邮件地址。 这可以是您希望 Microsoft 在设置期间用于与您通信的任何地址。 这也是我们会将帐单和续订相关信息发送给你的地址。 然后选择"**设置帐户"。**
-5. 输入你的姓名、公司电话号码、公司规模、公司名称和位置。 你的国家/地区确定你从 Microsoft 获得的确切服务，完成此步骤后无法更改。 选择“**下一步**”。
+5. 输入你的姓名、公司电话号码、公司规模、公司名称和位置。 选择 **下一步**。
 
-    > [!NOTE]
-    > 我们在管理中心显示你的公司名称。 这是管理用户Microsoft 365许可证和其他功能和服务的地方。 我们还将该网站包括在任何内部SharePoint URL 中。
+    > [!IMPORTANT]
+    > 如果在注册时添加自定义域，则在此处输入的公司名称将用于所有 SharePoint 和 OneDrive URL。 你可能无法更改它，因此请确保拼写正确，并且它是你想要从品牌角度使用的名称。 公司名称还显示在管理中心中，你可以Microsoft 365用户、许可证和其他功能和服务。
+    > 
+    > 你的国家/地区确定你从 Microsoft 获得的确切服务，完成此步骤后无法更改。 
 
 6. 帮助我们确保这是您。 输入可用于联系你的号码，然后选择"**发送验证码"。**
 
@@ -59,22 +61,22 @@ ms.locfileid: "60164244"
 
 :::image type="content" source="../../media/ssu-how-you-sign-in.png" alt-text="Screenshot： Sign in with your personal email.":::
 
-1. 下一页上创建密码，然后选择" **创建帐户"** 继续。 下一页，阅读我们如何处理你的数据，并选择是否希望 Microsoft 合作伙伴联系你。 选择“**下一步**”。
+1. 下一页上创建密码，然后选择" **创建帐户"** 继续。 下一页，阅读我们如何处理你的数据，并选择是否希望 Microsoft 合作伙伴联系你。 选择 **下一步**。
 
-2. 选择组织Microsoft 365 商业标准版许可证数量，然后选择"**添加** 付款方式"，然后继续签出到下 **订单**。
+2. 选择组织Microsoft 365 商业标准版许可证数量，然后选择"**添加** 付款方式"，然后继续查看下 **订单**。
 
-3. 在 **"确认详细信息** "页面上，我们将提供有关订阅的一些详细信息。 现在，你可以转到Microsoft 365 管理中心添加用户、Office应用、邀请团队使用 Microsoft 365等。 我们还将向您发送一封电子邮件，包含有关Microsoft 365 商业标准版。
+3. 在 **"确认详细信息** "页面上，我们将提供有关订阅的一些详细信息。 现在，你可以转到Microsoft 365 管理中心添加用户、Office应用、邀请团队使用 Microsoft 365 等。 我们还将向您发送一封电子邮件，包含有关Microsoft 365 商业标准版。
 
-此选项提供了开始使用 Office 桌面套件、Teams、表单和 OneDrive 云存储的核心功能的最简单OneDrive方法。 对于不需要立即使用品牌电子邮件的小型企业，或者已使用来自其他提供商的品牌电子邮件并且不打算切换为使用 Microsoft Exchange， 建议使用此选项。
+此选项提供了最简单、最快速的方法，可开始使用 Office 桌面套件、Teams、表单和 OneDrive 云存储的核心功能。 对于不需要立即使用品牌电子邮件的非常小型企业，或者已使用来自其他提供商的品牌电子邮件并且不打算切换为使用 Microsoft Exchange。
 
 <!--This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.-->
 
-你可在任何点添加业务域，以访问 Business Standard 订阅的其余部分功能，包括：
+你随时都可以添加业务域，以访问 Business Standard 订阅的其余部分，包括：
 
 - 品牌电子邮件、企业内的共享日历、预订约会日程安排和会议录制
 - 共享文档存储和SharePoint网站
 - Microsoft Planner 和 Microsoft Lists
-- 非 Microsoft 应用的最广泛集成 (例如 Salesforce、Adobe) ，适用于 Teams 和 Office。
+- 非 Microsoft 应用的最广泛集成 (例如 Salesforce、Adobe) 在 Teams 和 Office。
 
 #### <a name="next-steps"></a>后续步骤
 
@@ -85,7 +87,7 @@ ms.locfileid: "60164244"
 
 ### <a name="option-2-create-a-new-business-email-account"></a>选项 2：创建新的企业电子邮件帐户
 
-使用此选项，你将能够将 Microsoft 365 Exchange专业品牌电子邮件提供商。 你的所有用户都将有一个共享域电子邮件地址。 例如，其用户名后跟 @contoso.com。 你和用户通过Microsoft 365电子邮件地址登录。 按照此过程添加 (并创建新的商业电子邮件帐户) ，您将可以访问 Microsoft 365 商业标准版 中提供的所有功能。 若要了解如何购买或添加域[，请参阅设置](../setup/setup-business-standard.md)Microsoft 365 商业标准版。
+使用此选项，你将能够将 Microsoft 365 Exchange专业品牌的电子邮件提供商。 你的所有用户都将有一个共享域电子邮件地址。 例如，其用户名后跟 @contoso.com。 你和用户通过Microsoft 365电子邮件地址登录。 按照此过程添加 (并创建新的商业电子邮件帐户) ，您将可以访问 Microsoft 365 商业标准版 中提供的所有功能。 若要了解如何购买或添加域，[请参阅设置](../setup/setup-business-standard.md)Microsoft 365 商业标准版。
 
 :::image type="content" source="../../media/ssu-create-biz-email.png" alt-text="Screenshot： Sign in with new business email.":::
 
@@ -98,7 +100,7 @@ ms.locfileid: "60164244"
 
 ### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>什么是业务电子邮件以及设置一个业务电子邮件的优点是什么？
 
-商务电子邮件是使用你自己的域名的电子邮件。 例如，如果你拥有域名 ，可以使用 url 构建网站，但也可以拥有自定义电子邮件地址，如 `contoso.com` `www.contoso.com` yourname@contoso.com。 这称为品牌企业电子邮件，因为它为您的电子邮件提供了专业外观。
+商务电子邮件是使用你自己的域名的电子邮件。 例如，如果你拥有域名 ，可以使用 url 构建网站，但也可以拥有自定义电子邮件地址，如 `contoso.com` `www.contoso.com` yourname@contoso.com。 这称为品牌业务电子邮件，因为它为您的电子邮件提供了专业外观。
 
 ### <a name="how-do-i-get-a-new-business-email-address"></a>如何获取新的企业电子邮件地址？
 
@@ -116,7 +118,7 @@ ms.locfileid: "60164244"
 
 为了为客户提供最大的灵活性，提供了不同的支付选项。
 
-- Microsoft 365 商业基础版、企业应用、商业标准版高级版计划可用于按月承诺付款或按年承诺付款。
+- Microsoft 365 商业基础版、商业应用版、商业标准版高级版计划可用于按月承诺付款或按年承诺付款。
 - 每月承诺付款：按月支付，可以随时取消。
 - 年度承诺付款：注册一年订阅，但可以选择按月支付，也可以选择在注册时支付全年费用。 使用此付款方式有折扣。
 

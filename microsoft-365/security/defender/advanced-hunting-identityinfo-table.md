@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3ca15e29d18e910377a797bec4c78109d7509ef4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3b961990d7826a7e1d58586fcc5bf2e016fa5d37
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207627"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704296"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -44,7 +42,7 @@ ms.locfileid: "60207627"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `AccountObjectId` | string | Azure AD 中帐户的唯一标识符 |
+| `AccountObjectId` | string | Azure AD |
 | `AccountUpn` | string | 帐户 (UPN) 的用户主体名称 |
 | `OnPremSid` | string | 帐户的 SID (本地) 标识符 |
 | `CloudSid` | string | 帐户的云安全标识符 |
@@ -59,7 +57,7 @@ ms.locfileid: "60207627"
 | `SipProxyAddress` | string | IP 语音 (VOIP) 会话初始 (SIP) 地址 |
 | `City` | string | 帐户用户所在的城市 |
 | `Country` | string | 帐户用户所在的国家/地区 |
-| `IsAccountEnabled` | 布尔 | 指示帐户是否已启用 |
+| `IsAccountEnabled` | boolean | 指示帐户是否已启用 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

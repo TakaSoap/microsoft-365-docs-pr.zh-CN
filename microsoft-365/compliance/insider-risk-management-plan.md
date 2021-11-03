@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6a915130fe080622d7373e6a0d550606f623dd9b
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 979e1081dd85047286c580907ff9335442ba0b55
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335606"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701043"
 ---
 # <a name="plan-for-insider-risk-management"></a>内部风险管理计划
 
@@ -51,9 +51,9 @@ ms.locfileid: "60335606"
 选择专门的利益干系人，以定期监视和查看警报和事例[，Microsoft 365 合规中心。](https://compliance.microsoft.com/) 请务必了解如何向内部风险管理中提供的不同角色组分配不同的利益干系人。
 
 >[!IMPORTANT]
->根据你选择的选项 (确保你的内部风险管理或内部风险管理管理员角色组中始终至少有一个用户) 以便你的内部风险管理配置不会进入"零管理员"方案（如果特定用户离开组织）。
+>根据选择) ，确保"内部风险管理"或"内部风险管理管理员"角色组 (中始终至少有一个用户，以便当特定用户离开组织时，内部风险管理配置不会进入"零管理员"方案。
 
-根据合规性管理团队的结构，有选项将用户分配到特定角色组，以管理不同的预览体验计划风险管理功能集。 若要查看 **"权限**"选项卡Microsoft 365 合规中心管理角色组，您需要被分配到组织管理角色组，或需要分配有 *"角色* 管理"角色。 配置内部风险管理时，请从以下角色组选项中进行选择：
+根据合规性管理团队的结构，有选项将用户分配到特定角色组，以管理不同的预览体验计划风险管理功能集。 若要查看管理 **角色** 组Microsoft 365 合规中心"权限"选项卡，您需要被分配到组织管理角色组，或者需要分配有 *"角色* 管理"角色。 配置内部风险管理时，请从以下角色组选项中进行选择：
 
 | **角色组** | **角色权限** |
 | :------------- | :------------------- |
@@ -67,15 +67,15 @@ ms.locfileid: "60335606"
 
 根据计划实施内部风险管理策略的方法，您需要具有适当的Microsoft 365许可订阅，并了解和规划某些解决方案先决条件。
 
-**许可：** 内部风险管理作为各种许可订阅的一Microsoft 365提供。 有关详细信息，请参阅内部风险管理 [入门文章](insider-risk-management-configure.md#subscriptions-and-licensing) 。
+**许可：** 内部风险管理作为各种许可订阅Microsoft 365的一部分。 有关详细信息，请参阅内部风险管理 [入门文章](insider-risk-management-configure.md#subscriptions-and-licensing) 。
 
-如果你没有现有的 E5 Microsoft 365 企业版计划，并且想要尝试内部风险管理，可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册 E5 Microsoft 365 企业版试用版。 [](https://www.microsoft.com/microsoft-365/enterprise)
+如果你没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试内部风险管理，你可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册 E5 Microsoft 365 企业版试用版。 [](https://www.microsoft.com/microsoft-365/enterprise)
 
 **策略模板要求：** 根据选择的策略模板，在组织中配置内部风险管理之前，您需要了解和规划以下要求：
 
-- 使用"离开 **用户的数据** 盗窃"模板时，必须配置一个 Microsoft 365 HR 连接器，以便定期导入组织中用户的过期和终止日期信息。 请参阅 [HR 连接器导入数据](import-hr-data.md) 文章，了解为组织配置 Microsoft 365 HR 连接器的分步指导。
+- 使用"离开 **用户的数据** 盗窃"模板时，必须配置一个Microsoft 365 HR 连接器，以便定期为贵组织的用户导入过期和终止日期信息。 请参阅 [HR 连接器导入数据](import-hr-data.md) 文章，了解为组织配置 Microsoft 365 HR 连接器的分步指导。
 - 使用数据泄露模板时，必须至少配置一个数据丢失防护 (DLP) 策略，以定义您组织的敏感信息，并接收针对高严重性 DLP 策略警报的内部风险警报。 请参阅 [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md) ，了解为组织配置 DLP 策略的分步指导。
-- 使用 **安全策略违反** 模板时，必须在 Defender 安全中心中为内部风险管理集成启用 Microsoft Defender for Endpoint，以导入安全违反警报。 有关启用 Defender for Endpoint 与内部风险管理集成的分步指南，请参阅在 [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/advanced-features) 中配置高级功能一文。
+- 使用 **安全策略违反** 模板时，必须在 Defender 安全中心中为内部风险管理集成启用 Microsoft Defender for Endpoint，以导入安全违反警报。 有关启用 Defender for Endpoint 与内部风险管理集成的分步指南，请参阅在 [Microsoft Defender for Endpoint 中配置高级功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features)。
 - 使用 **Disgruntled** 用户模板时，您必须将 Microsoft 365 HR 连接器配置为定期导入组织中用户的绩效或降级状态信息。 请参阅 [HR 连接器导入数据](import-hr-data.md) 文章，了解为组织配置 Microsoft 365 HR 连接器的分步指导。
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>在生产环境中对一小组用户进行测试
