@@ -13,21 +13,21 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何在 Microsoft SharePoint Syntex 中创建提取程序。
-ms.openlocfilehash: d7d4352283645a80844e0dcc8cd2715a8357b5be
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e6598704375aad88efcdbaef700ee0187c4f7e07
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177311"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665074"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建提取程序
 
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CL2G]
 
-</br> 
+<br/> 
 
 在创建分类器模型以自动识别和分类特定文档类型之前或之后，可选择性地选择将提取程序添加到模型中以从这些文档中提取特定信息。 例如，你可能希望模型不仅可以标识所有添加到文档库中的“*合同续订*”文档，还可将每个文档的“*服务开始日期*”显示为文档库中的列值。
 
@@ -39,9 +39,12 @@ ms.locfileid: "60177311"
 ## <a name="name-your-extractor"></a>命名提取程序
 
 1. 在模型主页的“**创建和培训提取程序**”磁贴中，单击“**培训提取器**”。
+
 2. 在“**新实体提取程序**”屏幕上，在“**新提取程序名称**”字段中键入提取程序的名称。 例如，如果想要从每个”合同续订文档”中提取服务开始日期，请将其命名为“**服务开始日期**”。 也可以选择重复使用以前创建的列（例如，托管元数据列）。
-> [!NOTE]
-> 如果创建新的提取器，请选择“**新建列类型**“，然后选择”**单行文本**“，最大字符数限制为255。 您键入的任何超出限制的字符都会被截断。 
+
+    > [!NOTE]
+    > 对于列类型为单 **行** 文本的提取程序，最大字符数限制为 255。 您键入的任何超出限制的字符都会被截断。
+
 3. 完成时单击“**创建**”。
 
 ## <a name="add-a-label"></a>添加标签
@@ -99,11 +102,11 @@ ms.locfileid: "60177311"
 
 1. 在“**说明**”部分中，选择“**新建**”，然后选择“**从说明库中**”。
 2. 从说明库中，选择“**日期**”。 可查看所识别的日期的所有变体。
-3. 选择“**添加**”。</br>
+3. 选择“**添加**”。
 
     ![说明库。](../media/content-understanding/explanation-library.png) 
 
-4. 在“**创建说明**”页面上，说明库中的“*日期*”信息将自动填充字段。 选择“**保存**”。</br>
+4. 在“**创建说明**”页面上，说明库中的“*日期*”信息将自动填充字段。 选择“**保存**”。
 
     ![日期。](../media/content-understanding/date-explanation-library.png) 
 

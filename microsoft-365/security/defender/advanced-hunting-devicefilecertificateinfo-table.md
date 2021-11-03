@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 078650f07ca345c24155e61ee640a4f96344632c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 362cacee7734653d6ca0f868e565a38b806fd31c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190457"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60664469"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -46,18 +44,18 @@ ms.locfileid: "60190457"
 | `DeviceId` | string | 服务中的计算机的唯一标识符 |
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
-| `IsSigned` | 布尔 | 指示文件是否已签名 |
+| `IsSigned` | boolean | 指示文件是否已签名 |
 | `SignatureType` | string | 指示签名信息是作为嵌入内容读取到文件本身中，还是从外部目录文件中读取 |
 | `Signer` | string | 有关文件签名者的信息 |
 | `SignerHash` | string | 标识签名者的唯一哈希值 |
 | `Issuer` | string | 有关 CA 证书颁发机构 (的信息)  |
 | `IssuerHash` | string | 标识证书颁发机构的唯一哈希值 (CA)  |
 | `CertificateSerialNumber` | string | CA 证书颁发机构唯一的证书 (标识符)  |
-| `CrlDistributionPointUrls` | string |  JSON 数组，列出包含证书的网络共享 URL 和证书吊销列表 (CCL)  |
+| `CrlDistributionPointUrls` | string |  JSON 数组，列出包含证书的网络共享 URL 和 CCL (吊销)  |
 | `CertificateCreationTime` | datetime | 创建证书的日期和时间 |
 | `CertificateExpirationTime` | datetime | 证书设置为过期的日期和时间 |
 | `CertificateCountersignatureTime` | datetime | 对证书进行反签名的日期和时间 |
-| `IsTrusted` | 布尔 | 根据 WinVerifyTrust 函数的结果指示文件是否受信任，该函数将检查未知根证书信息、无效签名、吊销的证书和其他可怀疑的属性 |
+| `IsTrusted` | boolean | 根据 WinVerifyTrust 函数的结果指示文件是否受信任，该函数将检查未知根证书信息、无效签名、吊销的证书和其他可怀疑的属性 |
 | `IsRootSignerMicrosoft` | boolean | 指示根证书的签名者是否是 Microsoft |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。 | 
 

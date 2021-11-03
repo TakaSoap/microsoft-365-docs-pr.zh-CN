@@ -19,17 +19,17 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: 了解如何使用 Microsoft Dynamics 365 客户语音活动Microsoft 365仪表板获取 Microsoft 365 管理中心。
-ms.openlocfilehash: 2eedcf65e95d2bf85dbf156b4e1ac2d540acdf46
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+description: 了解如何使用 Microsoft 365 报告仪表板获取 Microsoft Dynamics 365 客户语音Microsoft 365 管理中心。
+ms.openlocfilehash: d143728f8170ae9c12a6d007e9e256a23f7ff74d
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553420"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60650465"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365管理中心中的报告 - Dynamics 365 客户语音活动
 
-"Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 让用户深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
+"Microsoft 365报表"仪表板显示组织中各产品的活动概述。 让用户深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
   
 例如，通过查看每个授权使用 Microsoft Dynamics 365 客户语音的用户与 Dynamics 365 客户语音的交互，可以了解他们的活动。 它还通过查看用户所回复的Pro调查数和Pro调查数，帮助您了解进行协作的级别。 
   
@@ -44,7 +44,7 @@ You can view the activities in the Dynamics 365 Customer Voice report by choosin
 
 选择 **"选择要在** 报表中添加或删除列的列"。  <br/> ![Dynamics 365 客户语音活动报表 - 选择列。](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
 
-您还可以通过选择"导出"链接将报告数据导出到Excel .csv **文件**。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
+您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
 
 可查看 **Dynamics 365 客户语音** 活动报表，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的某一天，则该表将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
   

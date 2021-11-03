@@ -296,7 +296,7 @@
           href: ../security/defender/eval-overview.md
         - name: 响应你的第一个事件
           href: ../security/defender/first-incident-overview.md
-        - name: 为终结点部署 Microsoft Defender
+        - name: Microsoft Defender for Endpoint
           href: /microsoft-365/security/defender-endpoint/deployment-phases.md
         - name: 从非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
           href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md

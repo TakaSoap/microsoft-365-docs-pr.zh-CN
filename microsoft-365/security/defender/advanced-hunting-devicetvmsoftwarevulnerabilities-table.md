@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ccfd31ad9da1cc7fff79ad29292af22130a4839d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c217c060c3d0b570c6da5bfbd47c72cb8cdfca2b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184517"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60700321"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -50,7 +48,7 @@ ms.locfileid: "60184517"
 |-------------|-----------|-------------|
 | `DeviceId` | string | 服务中的计算机的唯一标识符 |
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
-| `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10和 Windows 7。 |
+| `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10 和 Windows 7。 |
 | `OSVersion` | string | 计算机上运行的操作系统版本 |
 | `OSArchitecture` | string | 计算机上运行的操作系统的体系结构 |
 | `SoftwareVendor` | string | 软件供应商的名称 |

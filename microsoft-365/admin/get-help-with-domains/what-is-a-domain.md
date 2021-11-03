@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eef9c82593d75ecebb4d07b5bcaaf39ff59cb350
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7d3c38b3c9ff89bed613413405fec54718ebdd42
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164556"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659980"
 ---
 # <a name="what-is-a-domain"></a>什么是域？
 
@@ -42,7 +42,7 @@ ms.locfileid: "60164556"
 
  **购买新域：**
   
-使用 Microsoft 365购买新域 - 我们将进行一切设置。 [了解更多信息。](buy-a-domain-name.md)
+Use Microsoft 365 to buy a new domain - we'll set everything up. [了解更多信息。](buy-a-domain-name.md)
   
  **使用你已拥有的域：**
   
@@ -51,9 +51,12 @@ ms.locfileid: "60164556"
 > [!TIP]
 > 不确定域的注册机构？[获取有关查找域名注册机构的帮助](find-your-domain-registrar.md)。
   
- **暂时使用默认域：**
+ **现在使用 Microsoft 域：**
   
-可以使用默认域，如  *yourcompany.onmicrosoft。 <span>com*  表示现在登录，稍后添加自定义域。 不能对默认域进行更改或重命名，因此请确保它满足需求再继续操作。 
+可以使用 Microsoft 域，如  *yourcompany.onmicrosoft。 <span>com*  表示立即登录，稍后添加自定义域。 
+  
+> [!IMPORTANT]
+> 如果选择此选项，为 .onmicrosoft.com 域输入的名称将用于所有 SharePoint 和 OneDrive URL。 你可能无法更改此名称，因此请确保它拼写正确，这是你想要从品牌打造角度使用的名称。 
   
 ## <a name="feeling-stuck"></a>遇到阻碍？
 
@@ -65,6 +68,6 @@ ms.locfileid: "60164556"
 
 [在本文Microsoft 365 (](../setup/add-domain.md)域) 
 
-[本文Microsoft 365我的自定义](../misc/pilot-microsoft-365-from-my-custom-domain.md)域 (试用) 
+[本文Microsoft 365我的自定义域 (](../misc/pilot-microsoft-365-from-my-custom-domain.md)试用) 
 
 

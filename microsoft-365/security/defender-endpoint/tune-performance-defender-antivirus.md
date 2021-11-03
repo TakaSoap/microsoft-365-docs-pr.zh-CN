@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-smandalika
-author: v-smandalika
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7c61f0fa0ac3e8017a96b9d5ed57fe7ec970af8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fa6206628d8652aef9c8b31dd2ee74d4b6023829
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193981"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659221"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>性能分析器Microsoft Defender 防病毒
 
@@ -191,7 +191,7 @@ Get-MpPerformanceReport    [-Path] <String>
 ```
 
 #### <a name="description-get-mpperformancereport"></a>说明：Get-MpPerformanceReport
-此 cmdlet 分析以前收集的 Microsoft Defender 防病毒 性能记录 `Get-MpPerformanceReport` ([New-MpPerformanceRecording](#new-mpperformancerecording)) 并报告对 Microsoft Defender 防病毒 扫描产生最大影响的文件路径、文件扩展名和进程。
+此 cmdlet 可分析以前收集的 Microsoft Defender 防病毒 性能记录 `Get-MpPerformanceReport` ([New-MpPerformanceRecording](#new-mpperformancerecording)) 并报告对 Microsoft Defender 防病毒 扫描产生最大影响的文件路径、文件扩展名和进程。
 
 性能分析器可深入了解可能导致性能降低的有问题的Microsoft Defender 防病毒。 此工具是"AS IS"提供的，并不用于提供有关排除项的建议。 排除项会降低终结点上的保护级别。 应谨慎定义排除项（如果有）。
 

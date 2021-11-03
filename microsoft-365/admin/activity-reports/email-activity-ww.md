@@ -19,16 +19,16 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: 了解如何使用电子邮件活动报告中的 Microsoft 365 报表仪表板获取Microsoft 365 管理中心。
-ms.openlocfilehash: 4ea339f01d926c2f008dbeae572f64b143192ab1
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 82d9e7ecd6273f46e378953cf4b6fafffc7abd0f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553300"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60653409"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Microsoft 365管理中心中的报表 - 电子邮件活动
 
-"Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
+the Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
   
 例如，可从"报表"页获取有关组织内电子邮件流量的高级视图，然后可钻取"电子邮件"活动小组件，了解组织内电子邮件活动趋势和按用户的详细信息。
 

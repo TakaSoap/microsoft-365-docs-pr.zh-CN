@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 市场活动的分步Microsoft 365注册。 保护你的市场活动免受电子邮件、数据和通信的网络安全威胁。
-ms.openlocfilehash: 7ef49e686a152cd4bc56d39e7edff107dfbb2ea7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1af25933491d4c05d11707f290c584145019602b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156878"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662746"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>注册Microsoft 365活动 
 
@@ -48,21 +48,25 @@ ms.locfileid: "60156878"
 
 1. In your invitation to Microsoft 365 for Campaigns email， select **ENROLL YOUR ORGANIZATION >**. 此操作将Microsoft 365注册。
     > [!NOTE]
-    > 如果你已有适用于Microsoft 365订阅，并且想要将 Microsoft 365 for Campaigns 优惠添加到它，请转到将Microsoft 365市场活动的订阅添加到[现有订阅](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)。
-1. **在"Microsoft 365商业版"页上**，输入你的业务详细信息。 对于 **企业电子邮件地址**，请使用当前电子邮件地址。 我们只需要此地址，在设置过程中就与你们保持联系。 选择“**下一步**”。
+    > 如果你已有Microsoft 365商业版订阅，并且想要将 Microsoft 365 for Campaigns 优惠添加到它，请转到将Microsoft 365市场活动的订阅添加到[现有订阅](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)。
+1. **在"Microsoft 365商业版"页上**，输入你的业务详细信息。 对于 **企业电子邮件地址**，请使用当前电子邮件地址。 我们只需要此地址，在设置过程中就与你们保持联系。 选择 **下一步**。
 1. **在"创建用户 ID"页上**：
     1. 在 **"** 用户名"中，输入电子邮件地址的名称或别名。 例如，你可能只希望称为 Alice 或 Rob。 在较大的宣传活动中，AliceC 或 AliceChavez 可能更有意义。
     2. 在你的 **公司** 中，输入你工作的活动的名称。 例如，ContosoCampaign。 如果你已拥有一个域，请在此处使用该名称。 
     3. 在 **"选择域"** 中，选择 **"onmicrosoft.com"。** 我们可以稍后设置域，或帮助你Microsoft 365已拥有域。
+
+       > [!IMPORTANT]
+       > 为 .onmicrosoft.com 域输入的名称将用于所有 SharePoint 和 OneDrive URL，你可能无法更改它。 确保从品牌角度考虑该名称并正确拼写。
+
     4. 创建密码，然后选择 **"创建我的帐户"。**
     > [!NOTE]
     > 如果你的市场活动或派对没有域，并且你已决定需要哪一个域，你现在可以通过选择它来购买一个域。
 
 4. **证明。你已。不是。机器人。页面**：
-    1. 准备好手机， **然后选择"为我** 发送 **("** 或"如果愿意，) 。" 然后输入你的电话号码。 
+    1. 准备好你的手机，**然后选择****" ("** 或"呼叫我"（如果你更喜欢) ）。 然后输入你的电话号码。 
     2. When you select **Text me**， we'll send you a verification code. 或者，如果您选择"呼叫我"，我们将通过代码 **呼叫你**。
     3. Enter the code from your text message (or call) and select **Next**. 预计稍等一会。 
-5. **你将在哪里使用此页**：输入活动的主要工作位置详细信息和电话号码。 选择“**下一步**”。
+5. **你将在哪里使用此页：** 输入活动的主要工作位置详细信息和电话号码。 选择 **下一步**。
 6. **此外观页面如何**：
     1. 验证每个用户的成本为 5.00 美元。 
     2. 如果只想现在设置自己，请选择"下一 **步"。** 
@@ -74,7 +78,7 @@ ms.locfileid: "60156878"
 
 ## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>将市场活动Microsoft 365添加到现有订阅的步骤
 
-如果你已有和现有的商业Microsoft 365订阅，例如Microsoft 365 商业标准版，可以使用 Microsoft 365 for Campaigns 产品/服务向它添加许可证。
+如果你已拥有适用于Microsoft 365（例如 Microsoft 365 商业标准版）的现有订阅，可以使用 Microsoft 365 for Campaigns 产品/服务向它添加许可证。
 > [!IMPORTANT]
 > 你无法将Microsoft 365市场活动产品/服务添加到现有Microsoft 365帐户。
 
@@ -90,6 +94,6 @@ ms.locfileid: "60156878"
 
 ## <a name="whats-next"></a>下一步做什么？
 
-- [设置Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)以完成Microsoft 365市场活动设置。
+- [设置Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)以完成Microsoft 365市场活动的市场活动设置。
 - [将用户](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) 添加到你的计划。 包括宣传活动候选人、所有高级宣传活动工作人员以及有权访问敏感市场活动或派对信息的任何人。
 - [为市场活动加强保护](m365-campaigns-security-overview.md)

@@ -25,9 +25,9 @@ highlightedContent:
 additionalContent:
   sections:
     - items:
-        - title: Microsoft Viva Topics
+        - title: Microsoft Viva 主题
           links:
-            - text: 入门
+            - text: 开始行动
               url: /microsoft-365/knowledge/
             - text: 安装
               url: /microsoft-365/knowledge/set-up-topic-experiences
@@ -39,23 +39,27 @@ additionalContent:
               url: 'https://support.microsoft.com/en-us/office/understanding-viva-topics-5bef3020-2679-4045-81cb-bcbc37218332'
         - title: Microsoft Viva Insights
           links:
-            - text: 入门
-              url: /insights/viva-teams-app
+            - text: 开始行动
+              url: /viva/insights/introduction
+            - text: 安装
+              url: /viva/insights/setup/setup-intro
             - text: Learning路径 - 发现Microsoft Viva Insights
               url: /learn/modules/workplace-analytics-discover/
         - title: Microsoft Viva Connections
           links:
-            - text: 入门
+            - text: 开始行动
               url: /sharepoint/viva-connections-overview
             - text: 安装
               url: /sharepoint/guide-to-setting-up-viva-connections
+            - text: Learning路径 - 扩展Microsoft Viva Connections
+              url: /learn/paths/m365-extend-viva-connections
             - text: 可扩展性
               url: /sharepoint/dev/spfx/viva/overview-viva-connections
             - text: 最终用户帮助&培训
               url: 'https://support.microsoft.com/en-us/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b'
         - title: Microsoft Viva Learning
           links:
-            - text: 入门
+            - text: 开始行动
               url: /microsoft-365/learning/
             - text: 安装
               url: /microsoft-365/learning/set-up-teams-admin-center

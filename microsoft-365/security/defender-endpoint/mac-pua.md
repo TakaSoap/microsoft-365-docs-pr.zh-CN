@@ -1,6 +1,6 @@
 ---
 title: 使用 Mac 上的 Microsoft Defender for Endpoint 检测并阻止可能不需要的应用程序
-description: 使用适用于 Mac 的终结点上的 Microsoft Defender (并阻止 PUA) 可能不需要的应用程序。
+description: 检测并阻止使用 macOS (Microsoft Defender for Endpoint) PUA 中可能不需要的应用程序。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， pua， pus
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 61ff0fd32deb6f7fb607be6f723b990da1fa4846
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f372835ebcdd64225f3eb3952dc6b227d1a70627
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169811"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60699181"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>使用 macOS 上的 Microsoft Defender for Endpoint 检测并阻止可能不需要的应用程序
 
@@ -33,13 +33,13 @@ ms.locfileid: "60169811"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-macOS 上的 Microsoft Defender (PUA) 保护功能中可能不需要的应用程序可以检测和阻止网络中终结点上的 PUA 文件。
+macOS 上的 Microsoft Defender for Endpoint (PUA) 保护功能可能不需要的应用程序可以检测和阻止网络中终结点上的 PUA 文件。
 
 这些应用程序不被视为病毒、恶意软件或其他类型的威胁，但可能会对终结点执行对性能或使用产生不利影响的操作。 PUA 还可以指信誉不佳的应用程序。
 
 这些应用程序会增加网络受到恶意软件感染的风险，导致恶意软件感染更难识别，并且可能会浪费 IT 资源来清理应用程序。
 
-## <a name="how-it-works"></a>如何工作
+## <a name="how-it-works"></a>运作方式
 
 macOS 上的 Microsoft Defender for Endpoint 可以检测和报告 PUA 文件。 在阻止模式下配置时，PUA 文件将移动到隔离区。
 

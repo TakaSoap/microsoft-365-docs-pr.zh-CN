@@ -1,7 +1,7 @@
 ---
 title: 了解内部风险管理
-description: 了解如何通过组织中内部风险管理帮助最大程度地减少Microsoft 365。
-keywords: Microsoft 365， 内部风险， 风险管理， 合规性
+description: 了解如何通过组织中内部风险管理帮助最大程度地降低Microsoft 365。
+keywords: Microsoft 365、内部风险、风险管理、合规性
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -15,16 +15,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 30f73f99b60092c854ae7d1ccc2d8eac1e7a49b7
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 455c60e925fe9563fff26699e6f023b0971bb96c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335838"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662512"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>了解企业内部风险管理Microsoft 365
 
-内部风险管理是 Microsoft 365中的合规性解决方案，通过让你能够检测、调查和处理组织中恶意和无意的活动，帮助最大程度地降低内部风险。 通过内部风险策略，你可以定义在组织中识别和检测的风险类型，包括处理案例以及根据需要将Advanced eDiscovery上报给 Microsoft。 您组织的风险分析师可以快速采取适当的措施，以确保用户符合组织的合规性标准。
+内部风险管理是 Microsoft 365 中的合规性解决方案，通过让你能够检测、调查和处理组织中恶意和无意的活动，帮助最大程度地降低内部风险。 通过内部风险策略，你可以定义在组织中识别和检测的风险类型，包括处理案例以及根据需要将Advanced eDiscovery上报给 Microsoft。 您组织的风险分析师可以快速采取适当的措施，以确保用户符合组织的合规性标准。
 
 观看下面的视频，了解内部风险管理如何有助于组织在确定组织价值、文化及用户体验优先级时预防、检测和包含风险：
 <br>
@@ -50,20 +50,20 @@ ms.locfileid: "60335838"
 
 现代工作场所中的用户可以跨各种平台和服务创建、管理和共享数据。 在大多数情况下，组织具有有限的资源和工具来识别和缓解组织范围内的风险，同时还符合用户隐私标准。
 
-内部风险管理使用全面的服务和第三方指标来帮助你快速识别、会审和操作风险活动。 通过使用 microsoft Microsoft 365 和 Microsoft Graph中的日志，内部风险管理允许你定义特定策略以确定风险指标。 这些策略允许你识别有风险的活动并采取措施缓解这些风险。
+内部风险管理使用全面的服务和第三方指标来帮助你快速识别、会审和操作风险活动。 通过使用 Microsoft Microsoft 365 和 Microsoft Graph中的日志，内部风险管理允许你定义特定策略以确定风险指标。 这些策略允许你识别有风险的活动并采取措施缓解这些风险。
 
 内部风险管理以以下原则为中心：
 
 - **透明度：** 通过按设计的隐私体系结构平衡用户隐私与组织风险。
 - **可配置**：基于行业、地理和业务组的可配置策略。
-- **集成**：跨合规性解决方案Microsoft 365工作流。
+- **集成**：跨合规性Microsoft 365集成工作流。
 - **可操作**：提供见解以启用审阅者通知、数据调查和用户调查。
 
 ## <a name="identifying-potential-risks-with-analytics-preview"></a>通过分析功能识别潜在风险 (预览) 
 
 通过预览体验计划风险分析，无需配置任何预览体验计划风险策略，即可对组织中潜在的预览体验成员风险进行评估。 此评估可以帮助组织确定用户风险更高的潜在领域，并可帮助确定可能考虑配置的预览体验计划风险管理策略的类型和范围。 此评估还可以帮助您确定对现有内部风险策略进行其他许可或未来优化的需求。
 
-若要了解有关内部风险分析的信息，请参阅预览体验 [成员风险管理设置：分析](insider-risk-management-settings.md#analytics-preview)。
+若要了解有关内部风险分析的信息，请参阅预览体验 [成员风险管理设置：分析](insider-risk-management-settings.md#analytics)。
 
 ## <a name="get-started-with-recommended-actions-preview"></a>预览版中推荐 (入门) 
 
@@ -88,6 +88,7 @@ ms.locfileid: "60335838"
 - [优先用户的数据泄露活动(预览)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [心怀不满用户的数据泄露活动(预览)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [安全策略常规违规活动(预览)](insider-risk-management-policies.md#general-security-policy-violations-preview)
+- [常规患者数据滥用 (预览) ) ](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 - [离职用户的安全策略违规活动(预览)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [优先用户的安全策略违规活动(预览)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [心怀不满员工的安全策略违规活动(预览)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
@@ -128,16 +129,16 @@ ms.locfileid: "60335838"
 
 ![内部风险管理调查。](../media/insider-risk-investigate.png)
 
-此外，新的审核 [ (预览 ](insider-risk-management-audit-log.md) 版) 使你可以随时了解对内部风险管理功能采取的操作。 此资源允许独立审阅分配给一个或多个内部风险管理角色组的用户所采取的操作。
+此外，新的审核 [ (预览 ](insider-risk-management-audit-log.md)) 使你可以随时了解对内部风险管理功能采取的操作。 此资源允许独立审阅分配给一个或多个内部风险管理角色组的用户所采取的操作。
 
 ### <a name="action"></a>Action
 
 调查案例后，审阅者可以快速采取行动来解决该案例，或与组织的其他风险利益干系人协作。 如果用户意外或无意违反策略条件，可以从您可以为组织自定义的通知模板向用户发送简单的提醒通知。 这些通知可以充当简单的提醒，也可以指示用户刷新培训或指南以帮助防止将来存在风险的行为。 有关详细信息，请参阅 [内部风险管理通知模版](insider-risk-management-notices.md)。
 
-在更严重的情况下，可能需要与组织的其他审阅者或服务共享内部风险管理案例信息。 内部风险管理与其他合规性解决方案Microsoft 365紧密集成，以帮助你解决端到端风险。
+在更严重的情况下，可能需要与组织的其他审阅者或服务共享内部风险管理案例信息。 内部风险管理与其他合规性解决方案Microsoft 365紧密集成，以帮助您解决端到端风险。
 
-- **Advanced eDiscovery：** 通过上报案件进行调查，你可以将案件的数据和管理转移到Advanced eDiscovery Microsoft 365。 高级电子数据展示提供了端到端的工作流程，可用于保存、收集、审查、分析和导出响应组织的内部和外部调查的内容。 它帮助法律团队管理整个法定保留通知工作流。 若要了解有关高级电子数据展示案例的详细信息，请参阅 [Microsoft 365 中的高级电子数据展示概述](overview-ediscovery-20.md)。
-- Office 365 管理 API 集成 **(预览版) ：** 内部风险管理支持通过 Office 365 管理 API 将警报信息导出到安全信息和事件管理 (SIEM) 服务。 通过访问平台中最适合组织风险流程的警报信息，可以更灵活地操作风险活动。 若要了解有关使用管理 API 导出Office 365信息的信息，请参阅[导出警报](insider-risk-management-settings.md#export-alerts-preview)。
+- **Advanced eDiscovery：** 通过上报案件进行调查，你可以将案件的数据和管理转移到Advanced eDiscovery中Microsoft 365。 高级电子数据展示提供了端到端的工作流程，可用于保存、收集、审查、分析和导出响应组织的内部和外部调查的内容。 它帮助法律团队管理整个法定保留通知工作流。 若要了解有关高级电子数据展示案例的详细信息，请参阅 [Microsoft 365 中的高级电子数据展示概述](overview-ediscovery-20.md)。
+- **Office 365 管理 API 集成 (预览版) ：** 内部风险管理支持通过 Office 365 管理 API 将警报信息导出到安全信息和事件管理 (SIEM) 服务。 通过访问平台中最适合组织风险流程的警报信息，可以更灵活地操作风险活动。 若要了解有关使用管理 API 导出警报Office 365，请参阅导出[警报](insider-risk-management-settings.md#export-alerts)。
 
 > [!NOTE]
 > 感谢你在预览 ServiceNow 连接器期间提供的反馈和支持。 我们决定在 2020 年 11 月 30 日停止预览 ServiceNow 连接器并停止支持内部风险管理。 我们正在积极评估替代方法，以为客户提供内部风险管理中的 ServiceNow 集成。
@@ -174,9 +175,15 @@ ms.locfileid: "60335838"
 - [优先用户的安全策略违规活动(预览)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [优先用户的数据泄露活动(预览)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 
-## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>解除注册的用户对预览 (的行为) 
+## <a name="healthcare-preview"></a>医疗保健 (预览) 
 
-雇佣者事件可能会以多种与内部风险相关的方式影响用户行为。 这些压力因素可能是性能考核不佳、职位降级或被放在绩效考核计划中的用户。 虽然大多数用户不会恶意响应这些事件，但是这些操作的压力可能会导致某些用户采取在正常情况下通常不会考虑的操作。 为了帮助标识这些类型的有风险的活动，以下内部风险管理策略模板使用 Microsoft 365 HR 连接器，并开始记分风险指示器，这些风险指标与可能在接近雇佣压力事件时发生的行为相关：
+对于医疗保健行业的组织，最近的研究已发现与内部人员相关的数据泄露率非常高。 检测滥用患者数据和健康记录信息是保护患者隐私并遵守合规性法规（如《健康保险便利和责任法案 (HIPAA) 》和《经济与健康信息技术 (HITECH) 法案》）的一个关键部分。滥用患者数据的范围可以从访问特权患者记录到访问家庭或恶意患者的记录。 为了帮助标识这些类型的风险活动，以下内部风险管理策略模板使用 Microsoft 365 HR 连接器和特定于医疗保健的数据连接器，开始对与电子健康记录 (EHR) 系统中可能会发生的行为相关的风险指示器进行评分：
+
+- [常规患者数据滥用 (预览) ](insider-risk-management-policies.md#general-patient-data-misuse-preview)
+
+## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>解除注册的用户对预览体验 (和行为) 
+
+雇佣者事件可能会以多种与内部风险相关的方式影响用户行为。 这些压力因素可能是性能考核不佳、职位降级或被放在绩效考核计划中的用户。 虽然大多数用户不会恶意响应这些事件，但是这些操作的压力可能会导致某些用户采取在正常情况下通常不会考虑的操作。 为了帮助标识这些类型的风险活动，以下内部风险管理策略模板使用 Microsoft 365 HR 连接器，并开始记分风险指示器，这些风险指标与可能在雇佣压力因素事件附近发生的行为相关：
 
 - [心怀不满用户的数据泄露活动(预览)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [心怀不满员工的安全策略违规活动(预览)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)

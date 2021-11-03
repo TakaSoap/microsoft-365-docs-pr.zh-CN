@@ -4,7 +4,7 @@ summary: Microsoft 365 商业高级版（旧称为“Microsoft 365 商业版”�
 brand: m365
 metadata:
   title: Microsoft 365 商业高级版资源
-  description: 有关设置和运行Microsoft 365 商业高级版。
+  description: 有关设置和运行文档Microsoft 365 商业高级版。
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
@@ -25,12 +25,12 @@ productDirectory:
       url: 'https://aka.ms/SMBSecurityKit'
     - title: 新变化？
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: Microsoft 365 商业高级版中现已提供防病毒管理和通用打印功能。
-      url: 'https://aka.ms/M365BPQ1Update'
+      summary: 即将在预览版中推出 -Microsoft Defender for Business，这是一款适用于员工少于 300 名的企业的企业级终结点解决方案。
+      url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/introducing-microsoft-defender-for-business/ba-p/2898701'
     - title: 加入合作伙伴网络研讨会系列
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: 通过 Microsoft 365 商业高级版托管服务，加快业务增长。
-      url: 'https://aka.ms/acceleratewithm365bp'
+      summary: 了解 Microsoft Defender for Business（一种新的终结点安全解决方案）及其合作伙伴价值与优势。
+      url: 'https://aka.ms/DefenderforBusinessWebinar'
 conceptualContent:
   items:
     - title: 什么是 Microsoft 365 商业高级版？

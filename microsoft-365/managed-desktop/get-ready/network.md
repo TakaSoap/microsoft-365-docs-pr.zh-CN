@@ -12,23 +12,23 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1fcbdb702035913cf1a3317dd9b3619ef020ebab
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 43207493a33c002d8137ecf3604393b06a15c17e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208141"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662435"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的网络配置
 
 <!--Proxy config -->
 
 
-## <a name="proxy-configuration"></a>代理配置
+## <a name="proxy-configuration"></a> 代理配置
 
 Microsoft 托管桌面云托管服务。 有一组终结点Microsoft 托管桌面服务需要能够到达。 本节列出了需要为服务的各个方面允许的Microsoft 托管桌面。 
 
-客户可以通过直接通过防火墙或代理Microsoft 365所有受信任的网络请求、绕过身份验证和所有其他数据包级检查或处理来优化其网络。 这样可减少延迟和外围容量要求。 
+客户可以通过直接通过防火墙或代理Microsoft 365所有受信任的网络请求、绕过身份验证和所有其他数据包级别检查或处理来优化其网络。 这样可减少延迟和外围容量要求。 
 
 此外，为了优化Microsoft 托管桌面基于云的服务，这些终结点需要客户客户端浏览器及其边缘网络中设备进行特殊处理。 这些设备包括防火墙、SSL 中断和检查、数据包检查设备和数据丢失防护系统。
 
@@ -36,7 +36,7 @@ Microsoft 托管桌面云托管服务。 有一组终结点Microsoft 托管桌�
 
 代理或防火墙必须支持 TLS 1.2。 否则，您可能必须禁用协议检测。
 
-### <a name="endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop"></a>允许的终结点是Microsoft 托管桌面
+### <a name="allowed-endpoints-that-are-necessary-for-microsoft-managed-desktop"></a>允许的终结点Microsoft 托管桌面
 
 Microsoft 托管桌面 Azure 门户托管其 Web 控制台。 以下 URL 必须位于代理和防火墙的允许列表中，以便Microsoft 托管桌面 Microsoft 服务进行通信。  
 
@@ -44,23 +44,22 @@ the Microsoft 托管桌面 URL is used for anything our service runs on the cust
 
 Microsoft 服务  | 允许列表所需的 URL 
 --- | ---
-Microsoft 托管桌面 | prod-mwaas-services-customerapi.azurewebsites.net
+Microsoft 托管桌面 | prod-mwaas-services-customerapi.azurewebsites.net <br>mmd-support-prod-nam.trafficmanager.net <br>mmdls.microsoft.com
 获取帮助 | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net  <br>concierge.live.com
 快速助手 | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*.lync.com
 Microsoft 支持和恢复助手 | \*.apibasic.diagnostics.office.com  <br>\*.api.diagnostics.office.com
  
+### <a name="allowed-endpoints-used-by-other-microsoft-products"></a>其他 Microsoft 产品使用的允许的终结点
 
-### <a name="endpoints-allowed-used-by-other-microsoft-products"></a>其他 Microsoft 产品允许使用的终结点
-
-允许列表中需要包含来自多个 Microsoft 产品的 URL，Microsoft 托管桌面设备可以与这些 Microsoft 服务通信。 使用链接查看每个产品的完整列表。 
+允许列表中需要包含一些 Microsoft 产品的 URL，Microsoft 托管桌面设备可以与这些 Microsoft 服务通信。 使用链接查看每个产品的完整列表。 
 
 Microsoft 服务 | 文档
 --- | ---
-Windows 10 企业版包括Windows更新 for Business | [管理版本 1803 Windows 10连接终结点](/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理连接终结点Windows 10 版本 1809](/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理版本 1903 Windows 10连接终结点](/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 2004 Windows 10版本的连接终结点](/windows/privacy/manage-windows-2004-endpoints)
+Windows 10 企业版包括Windows更新 for Business | [管理版本 1803 Windows 10连接终结点](/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理连接终结点Windows 10 版本 1809](/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理版本 1903 Windows 10连接终结点](/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 Windows 10 版本 2004 的连接终结点](/windows/privacy/manage-windows-2004-endpoints)
 传递优化 | [配置传递优化以Windows 10更新](/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365URL 和 IP 地址范围](../../enterprise/urls-and-ip-address-ranges.md)
 Azure Active Directory | [混合标识所需的端口和协议](/azure/active-directory/hybrid/reference-connect-ports) 以及 [Active Directory 和 Active Directory 域服务端口要求](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772723(v=ws.10)) 
-Microsoft Intune | [Intune 网络配置要求](/intune/network-bandwidth-use)<br>[网络终结点Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
+Microsoft Intune | [Intune 网络配置要求](/intune/network-bandwidth-use)<br>[Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
 Microsoft Defender for Endpoint | [适用于终结点的 Microsoft Defender 要求](/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 Windows Autopilot | [WindowsAutopilot 网络要求](/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 

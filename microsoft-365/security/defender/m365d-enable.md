@@ -1,7 +1,7 @@
 ---
 title: 打开 Microsoft 365 Defender
 description: 了解如何启用安全Microsoft 365 Defender开始集成安全事件和响应。
-keywords: 入门， 启用 Microsoft 365 Defender， Microsoft 365 Defender， M365， 安全性， 数据位置， 所需权限， 许可证资格， 设置页面
+keywords: 入门， 启用 Microsoft 365 Defender， Microsoft 365 Defender， M365， 安全， 数据位置， 所需权限， 许可证资格， 设置页面
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b64990320684f6c022a2fc8a2092141af5728679
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 84cb795ec2ffb8e8a2c2ce0d8d476c841c4438ca
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174395"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60670178"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>打开 Microsoft 365 Defender
 
@@ -41,13 +41,13 @@ Microsoft 365 Defender具有所需权限的合格客户访问门户时，Microso
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>检查许可证资格和所需权限
 
-安全产品Microsoft 365通常授权你使用Microsoft 365 Defender许可费用。 我们建议获取一个Microsoft 365 E5、E5 安全、A5 或 A5 安全许可证，或提供访问所有受支持的服务的有效许可证组合。
+安全产品Microsoft 365通常授权你使用Microsoft 365 Defender许可费用。 我们建议获取一个Microsoft 365 E5 E5 安全、A5 或 A5 安全许可证，或提供访问所有受支持的服务的有效许可证组合。
 
 有关详细许可信息，[读取许可要求](prerequisites.md#licensing-requirements)。
 
 ### <a name="check-your-role"></a>检查角色
 
-您必须是 **全局管理员** 或安全管理员Azure Active Directory才能启用Microsoft 365 Defender。 [在 Azure AD 中查看角色](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
+您必须是 **全局管理员** 或安全管理员Azure Active Directory才能启用Microsoft 365 Defender。 [查看角色Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="supported-services"></a>支持的服务
 
@@ -56,16 +56,16 @@ Microsoft 365 Defender 聚合已部署的各种受支持服务中的数据。 �
 为了获得最佳保护并优化Microsoft 365 Defender，我们建议在你的网络上部署所有适用的受支持服务。 有关详细信息，请阅读 [有关部署受支持的服务的信息](deploy-supported-services.md)。
 
 ## <a name="onboard-to-the-service"></a>载入到服务
-载入Microsoft 365 Defender非常简单。 从导航菜单中，选择任何项目，如事件&**警报、搜寻**、操作中心或威胁分析，以启动载入过程。  
+载入Microsoft 365 Defender非常简单。 从导航菜单中，选择任何项目，如事件&**警报**、搜寻、操作中心或威胁分析，以启动载入过程。  
 
 ### <a name="data-center-location"></a>数据中心位置
 
-Microsoft 365 Defender将在 Microsoft Defender for Endpoint 使用的相同位置[存储和处理数据](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。 如果你没有 Microsoft Defender for Endpoint，则根据活动安全服务的位置自动选择Microsoft 365位置。 所选数据中心位置将显示在屏幕中。
+Microsoft 365 Defender将在 Microsoft Defender for Endpoint 使用的相同位置存储和[处理数据](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。 如果你没有 Microsoft Defender for Endpoint，则根据活动安全服务的位置自动选择Microsoft 365位置。 所选数据中心位置将显示在屏幕中。
 
 选择 **"需要帮助？"，Microsoft 365 Defender** 联系 Microsoft 支持部门，以Microsoft 365 Defender不同的数据中心位置进行预配。
 
 > [!NOTE]
-> 过去，Microsoft Defender for Endpoint 在通过 Azure Defender 打开 (欧盟) 数据中心自动预配。 Microsoft 365 Defender将在同一欧盟数据中心为过去以此方式预配了 Defender for Endpoint 的客户自动预配。
+> 过去，Microsoft Defender for Endpoint 在通过 Azure Defender (欧盟) 数据中心自动预配。 Microsoft 365 Defender将在同一欧盟数据中心为过去以此方式预配了 Defender for Endpoint 的客户自动预配。
 
 ### <a name="confirm-that-the-service-is-on"></a>确认服务已开启
 
@@ -85,9 +85,9 @@ Microsoft 365 Defender将在 Microsoft Defender for Endpoint 使用的相同位�
 
 ## <a name="get-assistance"></a>获取帮助
 
-若要获取有关打开"打开"的最常见问题的解答，Microsoft 365 Defender[常见问题解答](m365d-enable-faq.md)。
+若要获取有关打开"打开"的最常见问题的解答，Microsoft 365 Defender常见问题[解答](m365d-enable-faq.md)。
 
-Microsoft 支持人员可帮助在租户上设置或取消设置服务和相关资源。 为获得帮助，请选择"需要帮助 **？"，Microsoft 365 Defender** 门户。 联系支持人员时，Microsoft 365 Defender。
+Microsoft 支持人员可帮助在租户上设置或取消设置服务和相关资源。 要获得帮助，请选择"需要帮助 **？"，Microsoft 365 Defender** 门户。 联系支持人员时，请提及Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相关主题
 

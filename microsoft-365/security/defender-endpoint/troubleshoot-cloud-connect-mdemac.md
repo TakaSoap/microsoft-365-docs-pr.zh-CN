@@ -6,7 +6,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-lsaldanha
+ms.author: dansimp
 author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fab06ce2d221d08aac57d9c6873e255fca5a7627
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0cdf2bbedb7dbfb5d3a87d6b28b441998283f3cb
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151802"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659380"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上的 Microsoft Defender for Endpoint 的云连接问题
 
@@ -65,9 +65,9 @@ Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 错误 35 或 60 的失败指示证书固定被拒绝，这表明 SSL 或 HTTPS 检查存在潜在问题。 请参阅以下有关 SSL 检查配置的说明。
 
 ## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-proxy-autoconfig-pac-or-with-web-proxy-autodiscovery-protocol-wpad"></a>无代理或无代理自动配置的环境疑难解答步骤 (PAC) 或 Web 代理自动发现协议 (WPAD) 
-使用以下过程可测试在没有代理的环境中、使用代理自动配置 (PAC) 或与 Web 代理自动发现协议 (WPAD) 的连接未被阻止。
+使用以下过程可测试在没有代理的环境中，或者没有代理自动配置 (PAC) 或与 Web 代理自动发现协议 (WPAD) 的连接未被阻止。
 
-如果代理或防火墙阻止匿名流量，请确保前面列出的 URL 中允许匿名流量。
+如果代理或防火墙阻止匿名流量，请确保允许匿名流量位于前面列出的 URL 中。
 
 > [!WARNING]
 > 不支持经过身份验证的代理。 确保仅使用 PAC、WPAD 或静态代理。 出于安全考虑，也不支持 SSL 检查和截获代理。 为 SSL 检查和代理服务器配置例外，以将数据从 macOS 上的 Microsoft Defender for Endpoint 直接传递到相关 URL，而不会拦截。 将拦截证书添加到全局存储将不允许拦截。

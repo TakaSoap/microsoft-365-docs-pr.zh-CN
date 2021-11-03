@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ade60ba21b97a22795740cc57971e9b197eb0322
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: d510ad9e2fb0609fa6eecf21f3d038a28f9cd0d8
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587181"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665687"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "60587181"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-本文介绍了如何在 Linux 上手动部署 Microsoft Defender for Endpoint。 要成功部署，需要完成以下所有任务：
+本文介绍了如何在 Linux 上手动部署 Microsoft Defender for Endpoint。 成功的部署需要完成以下所有任务：
 
 - [在 Linux 上手动部署 Microsoft Defender for Endpoint](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [先决条件和系统要求](#prerequisites-and-system-requirements)
@@ -56,16 +56,16 @@ ms.locfileid: "60587181"
 
 ## <a name="configure-the-linux-software-repository"></a>配置 Linux 软件存储库
 
-Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下面表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。 下面提供了配置设备以使用这些存储库之一的说明。
+可以从以下频道之一部署 Linux 上的 Defender for Endpoint (如下表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。 下面提供了配置设备以使用这些存储库之一的说明。
 
-通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员 -快* 中的设备是首先接收更新和新功能的设备，随后是预览体验成员- 慢，最后是 *受支持*。
+通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员-快* 中的设备是首先接收更新和新功能的设备，随后是预览体验成员 - *慢* ，最后是 *受支持*。
 
-为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员 *-快* 或预览体验成员-慢 *。*
+为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员- *快* 或预览体验成员- *慢*。
 
 > [!WARNING]
 > 在初始安装后切换通道需要重新安装产品。 若要切换产品渠道：卸载现有程序包，将设备重新配置为使用新通道，然后按照本文档中的步骤从新位置安装程序包。
 
-### <a name="rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2"></a>CentOS、Fedora、Oracle Linux 和 Amazon Linux 2 (的 RHEL 和) 
+### <a name="rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2"></a>CentOS、Fedora、Oracle Linux 和 Amazon Linux 2 (RHEL 和) 
 
 - 如果 `yum-utils` 尚未安装，请安装：
 
@@ -73,7 +73,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     sudo yum install yum-utils
     ```
 
-- 记下你的分发和版本，并确定最近的条目 (按主要版本，然后在 下) 次要条目 `https://packages.microsoft.com/config/rhel/` 。
+- 记下你的分发和版本，并确定最近的条目 (按主要，然后在 下) 次要条目 `https://packages.microsoft.com/config/rhel/` 。
 
     使用下表可帮助指导你找到程序包：
 
@@ -85,7 +85,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     |---|---|
     |对于 RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
     |对于 RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
-    |对于 RHEL/Centos/Oracle 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
+    |对于 RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
     |对于 Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |对于 Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
@@ -122,7 +122,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
 
 ### <a name="sles-and-variants"></a>SLES 和变量
 
-- 记下你的分发和版本，并确定最近的条目 (按主要版本，然后在 下) 次要条目 `https://packages.microsoft.com/config/sles/` 。
+- 记下分发和版本，并按主要 (条目，然后在 下) 次要条目 `https://packages.microsoft.com/config/sles/` 。
 
     在下列命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
@@ -130,7 +130,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    例如，如果你运行的是 SLES 12，并且想要从 *Prod* 渠道在 Linux 上部署 Microsoft Defender for Endpoint：
+    例如，如果你运行的是 SLES 12，并且想要从 *Prod* 通道在 Linux 上部署 Microsoft Defender for Endpoint：
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -156,7 +156,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     sudo apt-get install libplist-utils
     ```
 
-- 记下你的分发和版本，并确定最近的条目 (按主要版本，然后在 下) 次要条目 `https://packages.microsoft.com/config/[distro]/` 。
+- 记下你的分发和版本，并确定最近的条目 (按主要，然后在 下) 次要条目 `https://packages.microsoft.com/config/[distro]/` 。
 
     在下面的命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
@@ -283,9 +283,9 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从应用门户下载Microsoft 365 Defender包：
+从门户下载Microsoft 365 Defender包：
 
-1. 在Microsoft 365 Defender门户中，转到"设置 >终结点 **>">载入"。**
+1. 在 Microsoft 365 Defender 门户中，转到"设置 >终结点 **>">载入"。**
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 第二个下拉菜单中，选择" **本地脚本** "作为部署方法。
 3. 选择 **下载载入程序包**。 将文件另存为WindowsDefenderATPOnboardingPackage.zip。
 
@@ -372,11 +372,11 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
         mdatp threat list
         ```
 
-## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>使用模拟攻击体验 Linux 终结点 (EDR) 响应和响应功能
+## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>通过模拟攻击体验 Linux 终结点 (EDR) 响应和响应功能
 
 若要测试适用于 Linux EDR的功能，请按照以下步骤在 Linux 服务器上模拟检测并调查这种情况。
 
-1. 验证载入的 Linux 服务器是否显示在Microsoft 365 Defender。 如果这是计算机首次载入，可能需要最多 20 分钟才会显示。
+1. 验证已载入的 Linux 服务器是否Microsoft 365 Defender。 如果这是计算机首次载入，可能需要最多 20 分钟才会显示。
 
 2. 将脚本文件 [下载并](https://aka.ms/LinuxDIY) 解压缩到载入的 Linux 服务器并运行以下命令： `./mde_linux_edr_diy.sh`
 
@@ -425,7 +425,7 @@ Options:
     sudo yum remove mdatp
     ```
 
-1. 在 Linux Insiders-Fast上禁用 Defender for Endpoint
+1. 在 Linux 上禁用 Defender for Endpoint Insiders-Fast存储库
 
     ```bash
     sudo yum repolist

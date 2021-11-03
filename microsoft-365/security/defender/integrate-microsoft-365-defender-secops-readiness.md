@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f67d276465bc23306446bc80f1c9e77eaa098b4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 06b181f3719d9b674098bf5da36938ea181a0dc1
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206573"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60658058"
 ---
 # <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>步骤 2. 使用零信任框架执行 SOC 集成准备情况评估
 
@@ -36,22 +36,22 @@ ms.locfileid: "60206573"
 **适用于：**
 - Microsoft 365 Defender
 
-定义安全操作中心 (SOC) 团队的核心功能后，组织的下一步是准备通过零信任方法采用 Microsoft [Defender。](/security/zero-trust/) 采用可以帮助你确定使用现代行业领先的Microsoft 365 Defender部署解决方案所需的要求，同时针对你的环境评估 Defender 的功能。 
+定义安全操作中心 (SOC) 团队的核心功能后，组织的下一步是准备通过零信任方法采用[Microsoft 365 Defender。](/security/zero-trust/) 采用可以帮助您确定使用现代行业领先的Microsoft 365 Defender部署解决方案所需的要求，同时根据环境Microsoft 365 Defender功能。
 
-此方法基于保护的强大基础，包括标识、终结点、 (设备) 、数据、应用、基础结构和网络等关键方面。 准备情况评估团队将确定哪些方面尚未满足启用Microsoft 365 Defender的基本要求，并且将需要修正。 
+此方法基于强大的保护基础，包括标识、终结点、 (设备) 、数据、应用、基础结构和网络等关键方面。 准备情况评估团队将确定尚未满足启用Microsoft 365 Defender的基本要求并需要修正的领域。
 
 以下是一些需要修正的项目，SOC 才能完全优化 SOC 中的进程：
 
-- **标识：**     旧版本地 Active Directory 域服务 (AD DS) 、无 MFA 计划、特权帐户清单等。
-- **终结点 (设备) ：**  大量旧版操作系统、有限的设备清单和其他操作系统。
-- **数据和应用：**    缺少数据管理标准，没有无法集成自定义应用的清单。
-- **基础结构：**   大量未批准的 SaaS 许可证、没有容器安全等。
-- **网络：**   低带宽、网络扁平化、无线安全问题等导致性能问题。
+- **标识：** 旧版本地 Active Directory 域服务 (AD DS) 、无 MFA 计划、特权帐户清单等。
+- **终结点 (设备) ：** 大量旧版操作系统、有限的设备清单和其他操作系统。
+- **数据和应用：**  缺少数据管理标准，没有无法集成自定义应用的清单。
+- **基础结构：** 大量未批准的 SaaS 许可证、没有容器安全性等。
+- **网络：** 低带宽、网络扁平化、无线安全问题等导致性能问题。
 
-组织还应该按照[打开Microsoft 365 Defender](m365d-enable.md)文章来捕获一组基线配置要求。 这些步骤反过来将确定 SOC 团队必须执行以有效开发用例的修正活动。 
+组织还应按照[打开Microsoft 365 Defender](m365d-enable.md)文章来捕获一组基线配置要求。 这些步骤反过来将确定 SOC 团队必须执行以有效开发用例的修正活动。 
 
 采用过程和用例创建在步骤 3 和 4 中进行了介绍。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [步骤 3.规划Microsoft 365 Defender服务目录的集成](integrate-microsoft-365-defender-secops-services.md)

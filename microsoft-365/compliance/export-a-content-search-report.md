@@ -20,18 +20,18 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: 您可以导出搜索结果报告，而不是导出内容搜索Microsoft 365 合规中心内容搜索的实际结果。 该报告包含搜索结果摘要和一个文档，其中包含有关将导出的每个项目的详细信息。
+description: 您可以导出搜索结果报告，而不是导出内容Microsoft 365 合规中心中的实际结果。 该报告包含搜索结果摘要和一个文档，其中包含有关将导出的每个项目的详细信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5bef65905d6a93ab1eba51c7550824baca0e8ee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d06cc712e8c81304bbd11a9c93f35e48d279a36e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201177"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668362"
 ---
 # <a name="export-a-content-search-report"></a>导出内容搜索报告
 
-您可以导出导出实际搜索结果时生成的相同报告，而不是从 Microsoft 365 合规中心 (中的内容搜索或与核心电子数据展示案例) 关联的搜索导出完整的搜索结果集。
+您可以导出导出与导出实际搜索结果时生成的相同报告，而不是从 Microsoft 365 合规中心 (中的内容搜索或与核心电子数据展示案例) 关联的搜索导出完整的搜索结果集。
   
 导出报告时，报告文件将下载到本地计算机上与内容搜索同名的文件夹中，但附加有 *_ReportsOnly。* 例如，如果内容搜索名为 *ContosoCase0815*，则报告下载到名为 ContosoCase0815_ReportsOnly *。* 有关报告中包含的文档列表，请参阅 [报告中包含的内容](#whats-included-in-the-report)。
 
@@ -39,7 +39,7 @@ ms.locfileid: "60201177"
 
 - 若要导出搜索报告，您必须在 Microsoft 365 合规中心 中分配合规性搜索管理Microsoft 365 合规中心。 默认情况下，此角色分配给内置电子数据展示管理员和组织管理角色组。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
 
-- 导出报告时，数据会临时存储在 Microsoft 云Azure 存储位置，然后再下载到本地计算机。 请确保你的组织可以连接到 Azure 中的终结点，即 **\* .blob.core.windows.net** (通配符表示导出服务的唯一) 。 搜索结果数据在创建后的两Azure 存储从搜索位置删除。
+- 导出报告时，数据会临时存储在 microsoft 云Azure 存储位置，然后再下载到本地计算机。 请确保你的组织可以连接到 Azure 中的终结点，即 **\* .blob.core.windows.net (** 通配符表示导出服务的唯一) 。 搜索结果数据在创建后的两Azure 存储从搜索位置删除。
 
 - 用于导出搜索报告的计算机必须满足以下系统要求：
   
@@ -47,10 +47,10 @@ ms.locfileid: "60201177"
   
   - Microsoft .NET Framework 4.7 或更高版本
   
-- 您必须使用 Microsoft Edge<sup>1</sup>运行电子数据展示导出工具。 使用 Internet Explorer 11 导出搜索结果不再受<sup>支持 2。</sup>
+- 您必须使用 Microsoft Edge<sup>1</sup>运行电子数据展示导出工具。 使用 Internet Explorer 11 导出搜索结果不再受<sup>支持 2</sup>。
   
   > [!NOTE]
-  > <sup>1</sup>由于最近对 Microsoft Edge 所做的更改，ClickOnce不再启用默认支持。 有关在 Edge 中ClickOnce支持的说明，请参阅使用 Edge 中的电子[数据展示导出Microsoft Edge。](configure-edge-to-export-search-results.md) 此外，Microsoft 不会为应用程序制作第三方扩展ClickOnce加载项。 不支持使用不支持的浏览器和第三方扩展或加载项导出搜索结果。
+  > <sup>1</sup>由于最近对 Microsoft Edge 所做的更改，ClickOnce不再启用支持。 有关在 Edge 中ClickOnce支持的说明，请参阅使用 Edge 中的电子数据展示[导出Microsoft Edge。](configure-edge-to-export-search-results.md) 此外，Microsoft 不会为应用程序制作第三方扩展ClickOnce加载项。 不支持使用不支持的浏览器和第三方扩展或加载项导出搜索结果。
   > 
   > <sup>2</sup>从 2021 年 8 月开始，Microsoft 365 应用和服务将不再支持 Internet Explorer 11 (IE11) 并且用户可能体验降级或无法连接到这些应用和服务。 这些应用和服务将在过去的几周和几个月内逐步淘汰，以确保顺利结束支持。 每个应用和服务都按独立计划逐步淘汰。 有关详细信息，请参阅此 [博客文章](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666)。
 
@@ -64,7 +64,7 @@ ms.locfileid: "60201177"
 
 第一步是准备报告以下载到计算机导出。 导出报告时，报告文档将上载到 microsoft 云Azure 存储区域。
   
-1. 在"Microsoft 365 合规中心"中，选择要导出报告的内容搜索。
+1. 在Microsoft 365 合规中心中，选择要导出报告的内容搜索。
   
 2. 在搜索 **弹出** 页底部的"操作"菜单上，单击"导出 **报告"。**
 
@@ -84,7 +84,7 @@ ms.locfileid: "60201177"
 
 4. 配置"**为内容启用Exchange复制"** 选项。
   
-   - 如果选择此选项，导出摘要报告中 (重复数据删除前和重复数据) 重复邮件数。 此外，邮件文件仅包含邮件的一manifest.xml副本。 但导出结果报告将包含重复邮件每个副本的一行，以便您可以标识包含重复邮件副本的邮箱。 有关导出的报告详细信息，请参阅 [报告中包含的内容](#whats-included-in-the-report)。
+   - 如果选择此选项，导出摘要报告中 (重复数据删除前和重复数据) 重复邮件数。 此外，邮件文件将仅包含邮件manifest.xml副本。 但导出结果报告将包含重复邮件每个副本的一行，以便您可以标识包含重复邮件副本的邮箱。 有关导出的报告详细信息，请参阅 [报告中包含的内容](#whats-included-in-the-report)。
 
    - 如果未选择此选项，导出报告将包含有关搜索返回的所有邮件的信息，包括重复项。
 
@@ -100,9 +100,12 @@ ms.locfileid: "60201177"
 
 下一步是将报告从 Azure 存储 下载到本地计算机。
 
+> [!NOTE]
+> 导出的搜索报告必须在步骤 1 生成报告后的 14 天内下载。
+
 1. 在页面 **的"** 内容搜索"Microsoft 365 合规中心，选择"导出 **"** 选项卡
   
-   您可能必须 **单击"刷新** "来更新导出作业的列表，以便它显示您创建的导出作业。 导出报告作业的名称与相应的搜索同名，_ReportsOnly搜索名称后面。
+   您可能必须 **单击"刷新** "来更新导出作业的列表，以便它显示您创建的导出作业。 导出报告作业的名称与相应的搜索的名称相同，_ReportsOnly附加到搜索名称。
   
 2. 选择在步骤 1 中创建的导出作业。
 
@@ -137,7 +140,7 @@ ms.locfileid: "60201177"
   
 - **清单：** 清单文件 (XML 格式) ，其中包含有关搜索结果中包括的每个项目的信息。 如果启用"重复数据删除"选项，则重复邮件不会包含在清单文件中。
 
-- **结果：** 一Excel一个文档，其中包含一行，其中包含有关每个将随搜索结果导出的索引项的信息。 对于电子邮件，结果日志包含有关每封邮件的信息，包括： 
+- **结果：** 一Excel包含一行的索引文档，其中包含有关将随搜索结果导出的每个索引项的信息。 对于电子邮件，结果日志包含有关每封邮件的信息，包括： 
 
   - 邮件在源邮箱中的位置（包括邮件位于主邮箱还是存档邮箱）。
 

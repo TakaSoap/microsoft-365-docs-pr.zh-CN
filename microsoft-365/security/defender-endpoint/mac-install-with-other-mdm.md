@@ -1,5 +1,5 @@
 ---
-title: 使用适用于 Mac 上的 Microsoft Defender for Endpoint 的不同移动设备 (MDM) 系统的部署
+title: 在 Mac 上为 Microsoft Defender for Endpoint (MDM) 部署不同的移动设备管理
 description: 在其他管理解决方案上，在 Mac 上安装 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 安装， 部署， macos， 加泰罗尼亚语， mojave， 高
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d89d98e6e972707266f3b3ed95db3b78b8a5d161
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2e133c9f924b614c8cc34c9a943895736526e6e7
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159434"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668020"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上为 Microsoft Defender for Endpoint (MDM) 部署不同的移动设备管理
 
@@ -45,7 +45,7 @@ ms.locfileid: "60159434"
 
 > 目前，Microsoft 正式仅支持 Intune 和 JAMF 在 macOS 上部署和管理 Microsoft Defender for Endpoint。 Microsoft 对下面提供的信息不做出明示或暗示的担保。
 
-如果你的组织使用未正式支持的移动设备管理 (MDM) 解决方案，这并不意味着你无法在 macOS 上部署或运行 Microsoft Defender for Endpoint。
+如果你的组织使用未正式支持的移动设备管理 (MDM) 解决方案，这并不意味着无法在 macOS 上部署或运行 Microsoft Defender for Endpoint。
 
 macOS 上的 Microsoft Defender for Endpoint 不依赖于任何特定于供应商的功能。 它可以与支持以下功能的任何 MDM 解决方案一同使用：
 
@@ -55,10 +55,10 @@ macOS 上的 Microsoft Defender for Endpoint 不依赖于任何特定于供应�
 
 大多数现代 MDM 解决方案都包括这些功能，但是，它们调用它们的方式可能不同。
 
-但是，你可以部署 Defender，无需上述列表中的最后一项要求：
+但是，你可以部署 Defender for Endpoint，无需上述列表中的最后一项要求：
 
-- 无法集中收集状态
-- 如果你决定卸载 Defender，你将需要以管理员角色在本地登录到客户端设备
+- 无法集中收集状态。
+- 如果你决定卸载适用于终结点的 Defender，你将需要以管理员状态本地登录到客户端设备。
 
 ## <a name="deployment"></a>部署
 
@@ -66,7 +66,7 @@ macOS 上的 Microsoft Defender for Endpoint 不依赖于任何特定于供应�
 
 ### <a name="package"></a>程序包
 
-配置所需应用程序[包](mac-install-with-jamf.md)的部署，安装包 (wdav.pkg) 从 Microsoft 365 Defender[门户下载](mac-install-with-jamf.md)。
+配置所需应用程序[包的](mac-install-with-jamf.md)部署，安装包 (wdav.pkg) 从 Microsoft 365 Defender[下载](mac-install-with-jamf.md)。
 
 若要将程序包部署到企业，请使用与 MDM 解决方案关联的说明。
 
@@ -76,19 +76,19 @@ macOS 上的 Microsoft Defender for Endpoint 不依赖于任何特定于供应�
 
 MDM 解决方案可能称其为"自定义设置配置文件"，因为 macOS 上的 Microsoft Defender for Endpoint 不是 macOS 的一部分。
 
-使用属性列表 jamf/WindowsDefenderATPOnboarding.plist，可从从 Microsoft 365 Defender 门户下载的载入[包中提取](mac-install-with-jamf.md)。
+使用属性列表 jamf/WindowsDefenderATPOnboarding.plist，可从从 Microsoft 365 Defender 门户下载的载入[包](mac-install-with-jamf.md)中提取。
 您的系统可能支持 XML 格式的任意属性列表。 在这种情况下，你可以像现在一样上传 jamf/WindowsDefenderATPOnboarding.plist 文件。
 或者，可能需要先将属性列表转换为其他格式。
 
 通常，自定义配置文件具有 ID、名称或域属性。 必须完全使用"com.microsoft.wdav.atp"作为此值。
-MDM 使用它将设置文件部署到客户端设备的 **/Library/Managed Preferences/com.microsoft.wdav.atp.plist，** 而 Defender 使用此文件加载载入信息。
+MDM 使用它将设置文件部署到客户端设备的 **/Library/Managed Preferences/com.microsoft.wdav.atp.plist，** 而 Defender for Endpoint 使用此文件加载载入信息。
 
 ### <a name="kernel-extension-policy"></a>内核扩展策略
 
 设置 KEXT 或内核扩展策略。 使用团队标识符 **UBF8T346G9** 允许 Microsoft 提供的内核扩展。
 
 > [!CAUTION]
-> 如果你的环境包含 Apple 芯片 (M1) 设备，则这些计算机不应接收包含 KEXT 策略的配置文件。
+> 如果您的环境由 Apple 芯片 (M1) ，则这些计算机不应接收包含 KEXT 策略的配置文件。
 > Apple 在这些计算机上不支持 KEXT，在 M1 计算机上部署此类配置文件将失败。
 
 ### <a name="system-extension-policy"></a>系统扩展策略

@@ -1,7 +1,7 @@
 ---
 title: 调查内部风险管理活动
 description: 了解如何调查企业内部风险管理Microsoft 365
-keywords: Microsoft 365， 内部风险， 风险管理， 合规性
+keywords: Microsoft 365、内部风险、风险管理、合规性
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -12,20 +12,20 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5f52b9391940204e53af03aaee3d5776da67b219
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 6d5974f1a6fca1a56438317b58d36193cb08a7fc
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334538"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662611"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>调查内部风险管理活动
 
-调查有风险的用户活动是最大程度地降低组织内部风险的重要第一步。 这些风险可能是从内部风险管理策略生成警报的活动，或者是从策略检测到的活动生成风险，但不立即为用户创建内部风险管理警报。 可以使用用户活动报表或警报仪表板， (预览 **) 调查这些****类型的活动**。
+调查有风险的用户活动是最大程度地降低组织内部风险的重要第一步。 这些风险可能是从内部风险管理策略生成警报的活动，或者是从策略检测到的活动生成风险，但不立即为用户创建内部风险管理警报。 可以使用"用户活动报告"或"警报"仪表板 (预览) 调查 **这些****类型的活动**。
 
 ## <a name="user-activity-reports-preview"></a>用户活动报表 (预览) 
 
-用户活动报告允许你检查指定时段内特定用户的活动，而无需将其临时或显式分配给内部风险管理策略。 在大多数内部风险管理方案中，用户明确在策略中定义，并且他们可能具有策略警报 (具体取决于触发事件) 以及与活动关联的风险评分。 但在某些情况下，你可能想要检查未在策略中显式定义的用户的活动。 这些活动可能适用于你已收到有关用户和可能存在风险的活动的提示的用户，或者通常不需要分配给内部风险管理策略的用户。
+用户活动报告允许你检查指定时段内特定用户的活动，而无需将其临时或显式分配给内部风险管理策略。 在大多数内部风险管理方案中，用户明确在策略中定义，并且他们可能具有策略警报 (具体取决于触发事件) 活动的风险评分。 但在某些情况下，你可能想要检查未在策略中显式定义的用户的活动。 这些活动可能适用于你已收到有关用户和可能存在风险的活动的提示的用户，或者通常不需要分配给内部风险管理策略的用户。
 
 在内部风险管理中心页面上配置 **设置后，** 将检测到与所选指标关联的风险活动的用户活动。 不需要为用户活动报告配置策略来检测和报告组织中用户的风险活动。 用户活动报告中包括的活动不需要触发事件来显示活动。 此配置意味着用户的所有检测到的活动都可供查看，无论活动是否触发事件或是否创建警报。 报告是按用户创建的，可以包含自定义 90 天期间的所有活动。 不支持同一用户的多个报告。
 
@@ -97,14 +97,14 @@ ms.locfileid: "60334538"
 
 若要搜索特定字词的警报名称，请选择 **搜索** 并键入要搜索的字词。 搜索结果将显示任何包含搜索中定义的单词的策略警报。
 
-## <a name="dismiss-multiple-alerts-preview"></a>消除预览版 (多个) 
+## <a name="dismiss-multiple-alerts-preview"></a>在预览版中 (多个) 
 
 这有助于为分析员和研究人员节省会审时间，以立即立即消除多个警报。 "**消除警报**"命令栏选项允许你在仪表板上选择一个或多个具有"需要评审"状态的警报，并快速消除这些警报，就像在会审过程中适当一样。 可以选择一次最多消除 400 个警报。
 
 若要消除内部风险警报，请完成以下步骤：
 
 1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
-2. 在 **警报仪表板上**，选择 (或) 需要审阅状态的警报。 
+2. 在 **警报仪表板上**，选择 (或 *) 需要审阅* 状态时要消除的警报。
 3. 在警报命令栏上，选择 **消除警报**。
 4. 在 **"消除警报详细信息** "窗格中，你可以查看与所选警报关联的用户和策略详细信息。
 5. 选择 **"消除警报**"以将警报解析为恶意警报，或选择"取消"关闭详细信息窗格而不消除警报。
@@ -173,7 +173,7 @@ ms.locfileid: "60334538"
 
 1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
 2. 在 **警报仪表板上**，选择要确认的警报并创建一个新案例。
-3. 在警报 **详细信息窗格中，选择****操作**  >  **确认警报&创建案例**。
+3. 在警报 **详细信息窗格中，** 选择 **操作**  >  **确认警报&创建案例**。
 4. 在" **确认警报并创建内部** 风险案例"对话框中，输入案例名称，选择要添加为参与者的用户，并根据需要添加注释。 注释会自动作为案例注释添加到案例。
 5. 选择 **"创建** 案例"创建新案例，或选择" **取消** "关闭对话框而不创建案例。
 
@@ -206,4 +206,4 @@ ms.locfileid: "60334538"
 
 - **首先将分析员和调查人员的工作集中在最高风险警报上**。 根据你的策略，你可能会捕获活动并生成对风险缓解工作造成不同程度潜在影响的警报。 [按严重性筛选](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) 警报，并设置 *高严重性警报的* 优先级。
 - **将用户分配为分析员和研究人员**。 将合适的用户分配到适当的角色是内部风险警报审阅流程的一个重要步骤。 确保你已向内部风险管理分析师和内部风险管理研究人员角色组 *分配了适当的* 用户。  
-- **使用自动内部风险功能帮助发现风险最高的活动**。 内部风险管理[序列检测和](insider-risk-management-policies.md#sequence-detection-preview)[累积的筛选检测](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview)功能可帮助你快速发现更难在组织中查找风险。 请考虑微调风险[评分分数、](insider-risk-management-settings.md#indicators)文件类型排除项、[](insider-risk-management-settings.md#file-type-exclusions)域[和策略的最低](insider-risk-management-settings.md#indicator-level-settings-preview)指示器[](insider-risk-management-settings.md#domains-preview)阈值设置。
+- **使用自动内部风险功能帮助发现风险最高的活动**。 内部风险管理[序列检测和](insider-risk-management-policies.md#sequence-detection-preview)[累积的筛选检测](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview)功能可帮助你快速发现更难在组织中查找风险。 请考虑微调风险[评分分数、](insider-risk-management-settings.md#indicators)文件类型排除项、[](insider-risk-management-settings.md#file-type-exclusions)域[和策略的最低](insider-risk-management-settings.md#indicator-level-settings-preview)指示器[](insider-risk-management-settings.md#domains)阈值设置。

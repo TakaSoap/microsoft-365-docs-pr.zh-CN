@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ac26e2528698cc671c5cb45eb507d01900a77ec4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f7f27d772f5b0d68c22bfa57a771cf2d13ca58c6
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162322"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667010"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>打开"打开"功能时Microsoft 365 Defender
 
@@ -37,9 +37,9 @@ ms.locfileid: "60162322"
 
 阅读对有关打开许可证的最常见问题的回复，Microsoft 365 Defender所需的许可证[](microsoft-365-defender.md)和权限、部署支持服务以及初始设置。
 
-有关如何打开服务的说明，请阅读打开[Microsoft 365 Defender。](m365d-enable.md)
+有关如何打开服务的说明，请阅读[打开](m365d-enable.md)Microsoft 365 Defender。
 
-## <a name="i-dont-have-a-microsoft-365-e5-license-can-i-still-use-microsoft-365-defender"></a>我并没有Microsoft 365 E5许可证。 我是否仍可以使用Microsoft 365 Defender？
+## <a name="i-dont-have-a-microsoft-365-e5-license-can-i-still-use-microsoft-365-defender"></a>我并没有许可证Microsoft 365 E5许可证。 我是否仍可以使用Microsoft 365 Defender？
 
 具有以下非 E5 许可证的客户可以使用Microsoft 365 Defender：
 
@@ -52,16 +52,16 @@ ms.locfileid: "60162322"
 
 ## <a name="do-i-need-to-install-or-deploy-anything-to-start-using-microsoft-365-defender"></a>是否需要安装或部署任何内容以开始使用Microsoft 365 Defender？
 
-否，Microsoft 365 Defender已部署Microsoft 365安全服务的数据进行合并。 启用后，事件、自动化和搜寻体验将开始在已部署产品范围内工作。 如果没有正确部署这些产品，Microsoft 365 Defender将不会显示任何数据，并且无法执行任何操作。
+否，Microsoft 365 Defender已部署Microsoft 365安全服务中合并数据。 启用后，事件、自动化和搜寻体验将开始在已部署产品范围内工作。 如果没有正确部署这些产品，Microsoft 365 Defender将不会显示任何数据，并且无法执行任何操作。
 
-若要优化你的Microsoft 365 Defender体验，*我们建议部署所有* 受支持的Microsoft 365 [安全产品和服务](deploy-supported-services.md)。
+若要优化你的Microsoft 365 Defender体验，我们建议部署所有受支持的Microsoft 365[安全产品和服务](deploy-supported-services.md)。 
 
 ## <a name="where-does-microsoft-365-defender-process-and-store-my-data"></a>在哪里Microsoft 365 Defender和存储我的数据？
 
 Microsoft 365 Defender为处理和存储合并数据的数据中心自动选择一个最佳位置。 如果你有适用于终结点的 Microsoft Defender，它将选择 Defender for Endpoint 所使用的相同位置。
 
 >[!NOTE]
->Microsoft Defender for Endpoint 在通过 Azure Defender 打开 (欧盟) 数据中心自动进行设置。 Microsoft 365 Defender将在同一个欧盟数据中心中为已使用此方式预配 Microsoft Defender for Endpoint 的客户自动进行预配。
+>Microsoft Defender for Endpoint 在通过 Azure Defender (欧盟) 数据中心自动设置。 Microsoft 365 Defender将在同一欧盟数据中心中自动为已设置 Microsoft Defender for Endpoint 的客户设置此配置。
 
 数据中心位置显示在服务预配之前和之后，位于 **Microsoft 365 Defender (设置 > Microsoft 365 Defender) 。** 如果你想要使用另一个数据中心位置，请选择"需要帮助？"，Microsoft 365 Defender联系 Microsoft 支持人员。
 
@@ -71,7 +71,7 @@ Microsoft 365 Defender为处理和存储合并数据的数据中心自动选择�
 
 ## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender"></a>我需要哪些权限才能访问Microsoft 365 Defender？
 
-分配了以下 Azure AD Azure Active Directory (角色) 帐户可以访问Microsoft 365 Defender功能和数据：
+分配了以下角色Azure Active Directory (Azure AD) 帐户可以访问Microsoft 365 Defender功能和数据：
 
 - 全局管理员
 - 安全管理员
@@ -95,7 +95,7 @@ Microsoft 会定期通过各种渠道提供相关信息，包括：
 
 打开预览功能，获取最新公开 [可用体验](preview.md)。
 
-## <a name="is-microsoft-365-defender-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>是否Microsoft 365 Defender高政府社区云 (GCC) 或GCC？
+## <a name="is-microsoft-365-defender-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>此Microsoft 365 Defender是否适用于美国政府社区云 (GCC) 或GCC高？
 
 目前不可用。
 

@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 AlertInfo 表
 description: 了解高级搜寻架构的 AlertInfo 表中的警报生成事件
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， table， column， 数据类型， 说明， AlertInfo， alert， severity， category， MITRE， ATT&CK， Microsoft Defender for Endpoint， Microsoft Defender for Office 365， Microsoft Cloud App Security， MCAS， and Microsoft Defender for Identity
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， AlertInfo， 警报， 严重性， 类别， MITRE， ATT&CK， Microsoft Defender for Endpoint， Microsoft Defender for Office 365， Microsoft Cloud App Security， MCAS， 和 Microsoft Defender for Identity
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae168a74e4f01ebe9a6e62d3aa7105167064e25e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d8da4e897ee53be88e051f6ec5600a83e9aa420f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205135"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60671558"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
@@ -50,7 +48,7 @@ ms.locfileid: "60205135"
 | `Severity` | string | 指示警报所标识的威胁指示器或违反活动的潜在影响（高、中或低） |
 | `ServiceSource` | string | 提供警报信息的产品或服务 |
 | `DetectionSource` | string | 标识值得注意的组件或活动的检测技术或传感器 |
-| `AttackTechniques` | string | MITRE ATT&触发警报的活动相关的 CK 技术 |
+| `AttackTechniques` | string | MITRE ATT&触发警报的活动关联的 CK 技术 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

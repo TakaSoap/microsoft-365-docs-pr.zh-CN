@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0095d66533e664316969ca0f7ea0da62f78f5ed3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6a7e03dfaf76e7af5dc256d0fdbf904e785346a9
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154550"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659240"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>获取高级搜寻方面的专家培训
 
@@ -38,7 +36,7 @@ ms.locfileid: "60154550"
 
 通过跟踪攻击者快速提升高级搜寻的知识，这是一个针对新安全分析师和经验丰富的威胁情报人员的网络广播系列。 本系列将指导您完成创建您自己的复杂查询的基础知识。 从基础的第一个视频开始，或跳转到适合您的体验级别的更高级视频。
 
-| 标题 | 说明 | Watch | 查询 | 
+| Title | 说明 | Watch | 查询 | 
 |--|--|--|--|
 | 第 1 节：KQL 基础知识 | 此剧集涵盖了高级搜寻在Microsoft 365 Defender。 了解可用的高级搜寻数据和基本 KQL 语法和运算符。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54：14)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
 | 第 2 集：加入 | 继续了解高级搜寻数据以及如何将表联接在一起。 了解 `inner` 、 、 和 联接，并了解默认 `outer` `unique` Kusto 联接的 `semi` `innerunique` 细微差别。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53：33)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
@@ -48,14 +46,14 @@ ms.locfileid: "60154550"
 
 使用 *L33TSP3AK* 获取更多专家培训：Microsoft 365 Defender 中的高级搜寻，这是一个网络广播系列，供希望扩展其技术知识和实用技能以在 Microsoft 365 Defender 中使用高级搜寻执行安全调查的分析师。 
 
-| 标题 | 说明 | Watch | 查询 | 
+| Title | 说明 | Watch | 查询 | 
 |--|--|--|--|
 | 第 1 集  | 在此集中，你将了解运行高级搜寻查询的不同最佳做法。 涵盖的主题包括：如何优化查询、使用高级勒索软件搜寻、将 JSON 作为动态类型处理，以及如何使用外部数据运算符。 | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56：34)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
 | 第 2 集 | 在此剧集内，你将了解如何通过收件箱转发规则调查和响应可疑或异常登录位置和数据异常。 云安全 CxE 高级项目经理 Sebastien 一起分享了如何使用高级搜寻来调查包含Microsoft Cloud App Security事件。 | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57：07)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
 
 
 ## <a name="how-to-use-the-csl-file"></a>如何使用 CSL 文件
-开始剧集之前，访问[上相应的文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Webcasts)GitHub将其内容复制到高级搜寻查询编辑器。 在观看剧集时，可以使用复制的内容关注演讲者并运行查询。 
+在启动剧集之前，访问上[相应的文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Webcasts)GitHub将其内容复制到高级搜寻查询编辑器。 在观看剧集时，可以使用复制的内容关注演讲者并运行查询。 
 
 以下来自包含查询的文本文件的摘录显示了一组使用 标记为注释的全面指导 `//` 。
 

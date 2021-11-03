@@ -1,7 +1,7 @@
 ---
-title: 创建攻击模拟培训的有效负载
-ms.author: daniha
-author: danihalfin
+title: 为攻击模拟培训创建自定义有效负载
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -10,64 +10,236 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理员可以了解如何在 Microsoft Defender for Office 365 中为攻击模拟培训创建自定义负载。
+description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中为攻击模拟培训创建自定义负载。
 ms.technology: mdo
-ms.openlocfilehash: 62783abb7d3361c654d5c959c1acb046754c4973
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bf132e44c458fbe228b6b6e8d2bf7b1a6474e9e9
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202497"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60666770"
 ---
-# <a name="create-a-custom-payload-for-attack-simulation-training"></a>创建用于攻击模拟培训的自定义负载
+# <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>在 Defender for Office 365 中为攻击模拟培训创建自定义负载
 
 **适用于 Microsoft** [Defender for Office 365计划 2](defender-for-office-365.md)
 
-Microsoft 为各种社交工程技术提供了可靠的有效负载目录，以与攻击模拟培训配对。 但是，你可能希望创建更适用于你的组织的自定义有效负载。 本文介绍如何在 Microsoft Defender for Office 365 攻击模拟培训中创建有效负载。
+在攻击模拟培训中， _有效_ 负载是向模拟用户呈现的网络钓鱼电子邮件和网页。 Microsoft 365 E5或 Microsoft Defender for Office 365 计划 2 中的攻击模拟培训为可用的社交工程技术提供了可靠的内置有效负载目录。 但是，你可能希望创建更适用于你的组织的自定义有效负载。
 
-可以通过在专用"有效负载"选项卡或模拟创建向导中单击"创建有效负载"[来创建有效负载](attack-simulation-training.md#selecting-a-payload)。 [  ](https://security.microsoft.com/attacksimulator?viewid=payload)
+本文介绍如何在攻击模拟培训中创建自己的有效负载。 可以在以下位置创建自定义有效负载：
 
-向导的第一步将让你选择有效负载类型。 **目前，只有电子邮件可用**。
+- "**有效负载"** 选项卡：在 Microsoft 365 Defender门户中，转到 <https://security.microsoft.com/> "电子邮件&**协作** \> **攻击模拟培训** \> **有效负载"** 选项卡。若要直接转到"**有效负载"** 选项卡，请使用 <https://security.microsoft.com/attacksimulator?viewid=payload> 。
+- 创建模拟期间：可以在模拟创建向导的第三 (选择有效负载) 自定义有效负载。 有关详细信息，请参阅在 Defender for Office 365[中模拟网络钓鱼Office 365。](attack-simulation-training.md)
 
-接下来，选择一种关联的技术。 有关技术的详细信息，请参阅 [选择社交工程技术](attack-simulation-training.md#selecting-a-social-engineering-technique)。
-
-在下一步中，将有效负载命名。 （可选）您可以为它提供说明。
+有关攻击模拟培训的入门信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
 > [!NOTE]
-> 某些商标、徽标、符号、签名和其他源标识符受到当地、州、联邦法律的高度保护。 未经授权使用此类指示器可能会使用户遭受处罚，包括罚款。 虽然这不是一个广泛列表，但其中包括"百科百科"、"Vice Vice"和"一流"（该名称为"一家"）、"社会保险局"、"一流"和"Medic一"（美国国家/局）和"美国商务部"。 除了这些类别的商标之外，使用和修改任何第三方商标会带来固有风险。 在有效负载中使用自己的商标和徽标的风险较低，尤其是在组织允许使用的情况下。 如果你对创建或配置负载时适合使用或不适合使用的任何进一步问题，应咨询法律顾问。
+> 某些商标、徽标、符号、签名和其他源标识符受到当地、州、联邦法规和法律的保护。 未经授权使用此类指示器可能会使用户遭受处罚，包括罚款。 虽然这不是一个广泛列表，但其中包括"百科百科"、"Vice Vice"和"一流"（该名称为"一家"）、"社会保险局"、"一流"和"Medic一"（美国国家/局）和"美国商务部"。 除了这些类别的商标之外，使用和修改任何第三方商标会带来固有风险。 在有效负载中使用自己的商标和徽标的风险较低，尤其是在组织允许使用的情况下。 如果你对创建或配置负载时适合使用或不适合使用的任何进一步问题，应咨询法律顾问。
 
-## <a name="configure-payload"></a>配置有效负载
+## <a name="create-a-payload"></a>创建有效负载
 
-现在，可以生成有效负载了。 在"发件人详细信息"部分输入发件人的姓名、电子邮件地址和 **电子邮件主题** 。 可以选择将配置有效负载的语言。 从提供的列表中选择网络钓鱼 URL。 此 URL 稍后将嵌入到邮件正文中。
+单击"创建 ![ 有效负载"图标后。](../../media/m365-cc-sc-create-icon.png) **从攻击模拟** 培训的"**有效** 负载"选项卡或模拟创建向导的 **[](attack-simulation-training.md#select-a-payload)**"选择有效负载"页上创建有效负载，有效负载创建向导将启动并在此部分中进行介绍。
 
-> [!TIP]
-> 你可以为有效负载的发件人选择内部电子邮件，这会使有效负载显示为来自公司的另一名员工。 这将提高有效负载的易读性，并帮助员工了解内部威胁的风险。
+### <a name="select-a-payload-type"></a>选择有效负载类型
 
-格式文本编辑器可用于创建有效负载。 还可以导入预先创建的电子邮件。 创建电子邮件正文时，请利用动态标记将电子邮件个性化到目标。 单击 **"网络钓鱼"** 链接，将以前选择的网络钓鱼 URL 添加到邮件正文中。
+在 **"选择类型**"页上，当前唯一可以选择的值是"**电子邮件"。**
 
-![在 Microsoft Defender for Office 365 有效负载创建中突出显示的网络钓鱼链接和Office 365。](../../media/attack-sim-preview-payload-email-body.png)
+点击 **“下一步”**。
 
-> [!TIP]
-> 为了节省时间，请切换为将电子邮件中所有链接替换为 **网络钓鱼链接 的选项**。
+### <a name="select-a-social-engineering-technique"></a>选择社交工程技术
 
-完成有效负载生成后，单击"下一 **步"。**
+在 **"选择技术**"页上，可用的选项与模拟创建向导中的"[](attack-simulation-training.md#select-a-social-engineering-technique)选择技术"页上的选项相同：
 
-## <a name="adding-indicators"></a>添加指示器
+- **凭据获取**
+- **恶意软件附件**
+- **附件中的链接**
+- **链接到恶意软件**
+- **按 URL 的驱动器**
 
-指示器可帮助员工完成攻击模拟，了解他们可以在将来的攻击中查找的线索。 若要开始，请单击"**添加指示器"。**
+完成后，单击“**下一步**”。
 
-从下拉列表中选择一个希望使用的指示器。 此列表是为包含网络钓鱼电子邮件中最常见的线索而提供的。 选择后，请确保将指示器位置设置为 **"从电子邮件正文"，** 然后单击"选择 **文本"。** 突出显示显示此指示器的有效负载部分，然后单击"选择 **"。**
+### <a name="name-and-describe-the-payload"></a>命名和描述有效负载
 
-![要添加到攻击模拟培训中的指示器的邮件正文中的突出显示文本。](../../media/attack-sim-preview-select-text.png)
+在" **有效负载名称"** 页上，配置以下设置：
 
-添加用于描述指示器的自定义说明，然后单击指示器预览框架以查看指示器预览。 完成后，单击"添加 **"。** 重复这些步骤，直到负载中涵盖所有指示器。
+- **名称**：输入有效负载的唯一描述性名称。
+- **说明**：输入有效负载的可选详细说明。
+
+完成后，单击“**下一步**”。
+
+## <a name="configure-the-payload"></a>配置有效负载
+
+在 **"配置有效负载** "页上，可以生成有效负载了。 许多可用设置由你在"选择技术"页上选择的内容 (例如，链接与附件) 。
+
+- **发件人详细信息** 部分：配置以下设置：
+  - **From name**
+  - **Use first name as 显示名称**： By default， this setting is not selected.
+  - **From email**： If you choose an internal email address for your payload's sender， the payload will appear to come from a fellow employee. 此发件人电子邮件地址将提高用户对有效负载的敏感性，并帮助员工了解内部威胁的风险。
+  - **电子邮件主题**
+
+- **附件详细信息** 部分：仅在"选择技术"页上选择了"恶意软件附件"、"附件中的链接"或"链接到恶意软件 **"时，此部分才** 可用。  配置以下设置：
+  - **命名附件**
+  - **选择附件类型**：目前，唯一可用的值为 **Docx**。
+
+- **"附件链接**"部分：仅在"选择技术"页上选择了"链接到恶意软件"**时，****此部分才** 可用。 在"选择您希望成为恶意软件附件的 **URL"** 链接框中，选择一个可用的 URL (与"网络钓鱼链接"部分所述的相同 URL) 。 
+
+  稍后，你将在邮件正文中嵌入 URL。
+
+- **网络钓鱼链接** 部分：此部分仅在你选择了"凭据获取"、附件中的链接或"选择技术"页面上的"路向 **URL"****时** 可用。 
+
+  对于 **"凭据** 获取"或"驱动器到 **URL"，** 框名称为"选择您希望成为网络钓鱼链接的 **URL"。** 稍后，你将在邮件正文中嵌入 URL。
+
+  对于 **"附件中的链接**"，框的名称为"在此附件中选择您希望成为网络钓鱼链接 **的 URL"。** 稍后，你将在附件中嵌入 URL。
+
+  选择一个可用的 URL 值：
+  
+  - <https://www.mcsharepoint.com>
+  - <https://www.attemplate.com>
+  - <https://www.doctricant.com>
+  - <https://www.mesharepoint.com>
+  - <https://www.officence.com>
+  - <https://www.officenced.com>
+  - <https://www.officences.com>
+  - <https://www.officentry.com>
+  - <https://www.officested.com>
+  - <https://www.prizegives.com>
+  - <https://www.prizemons.com>
+  - <https://www.prizewel.com>
+  - <https://www.prizewings.com>
+  - <https://www.shareholds.com>
+  - <https://www.sharepointen.com>
+  - <https://www.sharepointin.com>
+  - <https://www.sharepointle.com>
+  - <https://www.sharesbyte.com>
+  - <https://www.sharession.com>
+  - <https://www.sharestion.com>
+  - <https://www.templateau.com>
+  - <https://www.templatent.com>
+  - <https://www.templatern.com>
+  - <https://www.windocyte.com>
+
+  > [!NOTE]
+  > URL 信誉服务可能会将其中一个或多个 URL 标识为不安全。 在模拟中使用该 URL 之前，请检查 URL 在支持的 Web 浏览器中的可用性。 有关详细信息，请参阅 Google 网页浏览阻止的网络钓鱼[保险箱 URL。](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing)
+
+- **"附件内容**"部分：仅在"选择技术"页上选择了"附件中的链接"**时，此部分才** 可用。
+
+  可以使用格式文本编辑器在文件附件有效负载中创建内容。
+
+  使用 **网络钓鱼链接控件** 将以前选择的网络钓鱼 URL 添加到附件中。
+
+- 常见设置：
+  - **添加 (标记)**
+  - **主题**：可用值为：**帐户** 激活、**帐户** 验证、**计费**、清理 **邮件**、**文档** 接收、**费用**、**传真**、财务 **报告**、**传入邮件**、**发票**、**项目接收**、**登录警报****、已接收邮件**、**其他**、**密码**、**付款**、**工资** 单、**个性化优惠**、**隔离**、Remote **Work、Review** **Message、Security Update、Service** **Suspended、Signature**  **Required、Upgrade Mailbox 存储、Verify** **mailbox** 或 **Voicemail**。 
+  - **品牌**：可用值为 **：American Express、Capital** One、DHL、DocuSign、Dropbox、Facebook、First     **American、Microsoft、Netflix、Scotiabank、SendGrid、Stewart**      Title、Tesco、Wells **Fargo、Syrinx** **Cloud****或其他**。 
+  - **行业**：可用值包括：**银行**、商业服务、**消费者** 服务、**教育**、**能源**、**建筑**、**咨询**、**金融服务**、**政府**、**酒店**、**保险**、**法律****、Courier 服务****、IT、****医疗保健、****制造**、**零** 售、**电信**、**房地产****或其他**。
+  - **当前事件**：可用值为"**是**"或"**否"。**
+  - **中国**：可用值为"**是**"或"**否"。**
+
+- **语言** 部分：选择有效负载的语言。 可用值包括：**英语**、**西班牙语**、**德语**、**日语**、**法语**、**葡萄牙语**、**荷兰语**、**意大利语**、瑞典语、中文 (简体 **) 、****挪威博克马尔语**、**波兰** 语、**俄语**、**芬兰语**、**朝鲜** 语、**土耳其** 语、匈牙利语、**希伯来** 语、**泰** 语、**阿拉伯语****、越南语**、**斯洛伐克** 语。 **希腊语**、**印度尼西亚****语、罗马尼亚****语、斯洛文尼亚语**、**克罗地亚** 语、**加泰罗尼亚** 语 **或其他**。
+
+- **电子邮件** 部分：
+
+  - 可以单击" **导入电子邮件** "，然后单击" **选择文件** "导入现有的纯文本邮件文件。
+
+  - 在 **"文本** "选项卡上，可以使用格式文本编辑器创建电子邮件有效负载。
+
+    - 使用 **动态标记** 控件通过插入可用标记来个性化设置每个用户的电子邮件：
+      - **插入名称**：在邮件正文中添加的值为 `${userName}` 。
+      - **插入电子邮件**：在邮件正文中添加的值为 `${emailAddress}` 。
+
+      ![Microsoft Defender for Office 365 攻击模拟培训中有效负载创建向导中的配置有效负载页面上的电子邮件Office 365。](../../media/attack-sim-training-payloads-configure-payload-email-message.png)
+
+      **网络钓鱼链接** 控制：只有在"选择技术"页面上选择了"凭据获取"、附件中的链接或"按 **URL"** 时，此 **控件才** 可用。 使用此控件插入之前在"网络钓鱼链接"部分选择的 **URL。**
+
+      **恶意软件附件链接** 控件：只有在"选择技术"页上选择了"链接到恶意软件"时，此 **控件才** 可用。 使用此控件插入之前在"附件链接" **部分选择的** URL。
+
+      如果单击" **网络钓鱼链接"** 或" **恶意软件附件** 链接"，将打开一个要求您命名该链接的对话框。 完成后，单击"确认 **"。**
+
+      在邮件正文中添加的值 ("代码"选项卡上) 为 `<a href="${phishingUrl}" target="_blank">Name value you specified</a>` 。
+
+  - 在" **代码** "选项卡上，您可以直接查看和修改 HTML 代码。 格式设置和其他控件（ **如动态标记** 和 **网络钓鱼链接** 或恶意软件 **附件链接）** 不可用。
+
+  - The **Replace all links in the email message with the phishing link** toggle can save time by replacing all links in the message with the previously selected **Phishing link** or **Link for attachment** URL. 为此，将设置切换为切换图标 ![ 。 ](../../media/scc-toggle-on.png)
+
+完成后，单击“**下一步**”。
+
+## <a name="add-indicators-to-phishing-clues"></a>向网络钓鱼线索添加指示器
+
+> [!NOTE]
+> 如果在"选择技术"页上选择了"恶意软件附件"或 **"链接到恶意软件"，** 则 **指示器** 不可用。
+
+指示器可帮助员工完成攻击模拟，以识别网络钓鱼邮件的告知信号。
+
+在"**添加指示器"** 页上，单击"**添加指示器"。** 在出现的飞出菜单上，配置以下设置：
+
+- **指示器名称和****指示器位置**：这些值相互关联。 可以将指示器放置在何处取决于指示器本身。 下表介绍了可用值：
+
+  <br>
+
+  ****
+
+  |指示器名称|指示器位置|
+  |---|---|
+  |**附件类型**|邮件正文|
+  |**分散注意力的详细信息**|邮件正文|
+  |**域欺骗**|邮件正文 <p> 从电子邮件地址|
+  |**通用问候语**|邮件正文|
+  |**百万人次吸引力**|邮件正文|
+  |**不一致**|邮件正文|
+  |**缺少发件人详细信息**|邮件正文|
+  |**法律语言**|邮件正文|
+  |**有限时间优惠**|邮件正文|
+  |**徽标品牌或过时品牌**|邮件正文|
+  |**模拟工作或业务流程**|邮件正文|
+  |**无/最小品牌打造**|邮件正文|
+  |**以好友、同事、主管或权威图显示**|邮件正文|
+  |**请求敏感信息**|邮件正文|
+  |**安全指示器和图标**|邮件正文 <p> 邮件主题|
+  |**发件人显示名称电子邮件地址**|From name <p> 从电子邮件地址|
+  |**紧急感**|邮件正文 <p> 邮件主题|
+  |**拼写和语法错误**|邮件正文 <p> 邮件主题|
+  |**威胁语言**|邮件正文 <p> 邮件主题|
+  |**太好，无法成为真正的产品/服务**|邮件正文|
+  |**非专业设计或格式**|邮件正文|
+  |**URL 超链接**|邮件正文|
+  |**你特别**|邮件正文|
+  |
+  
+  此列表是为包含网络钓鱼邮件中最常见的线索而提供的。
+
+  如果您选择电子邮件主题或邮件正文作为指示器的位置，则" **选择** 文本"按钮可用。 单击此按钮可选择您希望指示器显示的邮件主题或邮件正文中的文本。 完成后，单击"选择 **"。**
+
+  ![要添加到攻击模拟培训的有效负载创建向导中的指示器的邮件正文中的所选文本位置。](../../media/attack-sim-training-payloads-add-indicators-select-location.png)
+
+  - **指示器** 说明：可以接受指示器的默认说明，也可以自定义它。
+
+  - **指示器预览**：若要了解当前指示器的外观，请单击此部分。
+
+  完成后，单击"添加 **"**
+
+重复本节中的步骤以添加多个指示器。
+
+若要编辑现有指示器，请从列表中选择它，然后单击"编辑 ![ 指示器图标"。](../../media/m365-cc-sc-edit-icon.png) **编辑有效负载**。
+
+若要删除现有指示器，请从列表中选择它，然后单击"删除 ![ 图标"。](../../media/m365-cc-sc-delete-icon.png) **删除**。
+
+完成后，单击“**下一步**”。
 
 ## <a name="review-payload"></a>查看有效负载
 
-你已完成有效负载的生成。 现在，该查看详细信息并查看有效负载预览了。 预览将包括你创建的所有指示器。 你可以从此步骤编辑负载的每个部分。 一旦满足，你可以 **提交** 负载。
+在 **"查看有效** 负载"页上，你可以查看有效负载的详细信息。
+
+单击" ![ 发送测试"图标。](../../media/m365-cc-sc-send-icon.png) **发送测试** 按钮，向自己发送有效负载电子邮件 (当前登录的用户) 进行检查。
+
+单击预览 ![ 指示器图标。](../../media/m365-cc-sc-open-icon.png) **预览指示器** 按钮在预览飞出控件中打开有效负载。 预览包括你创建的所有有效负载指示器。
+
+在主 **"审阅有效** 负载"页上，可以选择每个部分中的"编辑"以修改部分中的设置。 或者，可以单击“**返回**”或选择向导中的特定页面。
+
+完成后，请单击“**提交**”。 在出现的确认页面上，单击“**完成**”。
+
+![查看攻击门户中攻击模拟培训中的Microsoft 365 Defender页面。](../../media/attack-sim-training-payloads-review-payload.png)
 
 > [!IMPORTANT]
-> 你创建的负载将具有 **租户** 作为源。 选择有效负载时，请确保不要筛选出"租户 **"。**
+> 你创建的负载将具有 **Source 属性的值 Tenant。**  创建模拟并选择负载时，请确保不会筛选掉源值 **Tenant** 。 
 
 ## <a name="related-links"></a>相关链接
 

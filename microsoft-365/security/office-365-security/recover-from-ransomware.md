@@ -12,15 +12,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+- m365solution-ransomware
 description: Microsoft 365管理员可以了解如何从勒索软件攻击中恢复。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: da9b53aec47231446571a2ae5852bed842311079
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 86ca603b013f95d93ced70faa42f47f0f7b63e8c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552676"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667812"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>从 Microsoft 365 中的勒索软件攻击中Microsoft 365
 
@@ -37,7 +38,7 @@ ms.locfileid: "60552676"
 
 - 无法保证支付勒索金额将返回对文件的访问权限。 事实上，支付勒索金额可能会成为更多勒索软件的目标。
 
-  如果已付款，但在没有使用攻击者的解决方案的情况下恢复，请与银行联系，看看他们能否阻止交易。
+  如果你已付款，但在没有使用攻击者的解决方案的情况下恢复，请与银行联系，看看他们能否阻止交易。
 
   我们还建议您向执法机构、欺诈报告网站和 Microsoft 报告勒索软件攻击，如本文稍后所述。
 
@@ -71,21 +72,21 @@ ms.locfileid: "60552676"
 
 不要忘记扫描正在同步数据的设备或映射的网络驱动器的目标。
 
-你可以将[Windows Defender](https://www.microsoft.com/windows/comprehensive-security)或 (用于较旧的客户端) Microsoft Security Essentials。 [](https://www.microsoft.com/download/details.aspx?id=5201)
+你可以将[Windows Defender](https://www.microsoft.com/windows/comprehensive-security)或 (客户端[) Microsoft Security Essentials。](https://www.microsoft.com/download/details.aspx?id=5201)
 
-此外，还可以帮助你删除勒索软件或恶意软件的替代方法是[MSRT (恶意软件) 。 ](https://www.microsoft.com/download/details.aspx?id=9905)
+此外，还可以帮助你删除勒索软件或恶意软件的替代方法是 MSRT (恶意软件[) 。 ](https://www.microsoft.com/download/details.aspx?id=9905)
 
-如果这些选项不起作用，可以尝试Windows Defender[脱机](https://support.microsoft.com/help/17466)或解决[检测和删除恶意软件的问题](https://support.microsoft.com/help/4466982)。
+如果这些选项不起作用，可以尝试Windows Defender[脱机](https://support.microsoft.com/help/17466)"或解决[检测和删除恶意软件的问题](https://support.microsoft.com/help/4466982)。
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>步骤 4：在已清理的计算机或设备上恢复文件
 
-完成上一步以将勒索软件有效负载从你的环境 (这将阻止勒索软件加密或删除文件) 后，可以使用 Windows 11、Windows 10、Windows 8.1 中的文件历史记录，并使用 Windows [](https://support.microsoft.com/help/17128) 7 中的系统保护尝试恢复本地文件和文件夹。
+完成上一步以将勒索软件有效负载从你的环境 (这将阻止勒索软件加密或删除你的文件) 后，可以使用 Windows 11、Windows 10、Windows 8.1 中的文件历史记录，并使用[](https://support.microsoft.com/help/17128)Windows 7 中的系统保护尝试恢复你的本地文件和文件夹。
 
 **注意**：
 
 - 某些勒索软件还会加密或删除备份版本，因此你无法使用文件历史记录或系统保护来还原文件。 如果发生这种情况，你需要在不受勒索软件或软件影响的外部驱动器或OneDrive备份，如下一节中所述。
 
-- 如果文件夹已同步OneDrive并且您没有使用最新版本的 Windows，则使用文件历史记录可能有一些限制。
+- 如果文件夹已同步到OneDrive并且您没有使用最新版本的 Windows，则使用文件历史记录可能有一些限制。
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步骤 5：恢复用户OneDrive for Business
 
@@ -149,8 +150,7 @@ ms.locfileid: "60552676"
 - [人工操作的勒索软件](/security/compass/human-operated-ransomware)
 - [快速防范勒索软件和勒索](/security/compass/protect-against-ransomware)
 - [2021 Microsoft 数字防御报告](https://www.microsoft.com/security/business/microsoft-digital-defense-report)（请参阅第 10-19 页）
-- [勒索软件：Microsoft 365 Defender](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview)门户中的一份持续威胁威胁分析报告
-
+- [勒索软件：Microsoft 365 Defender](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview)门户中的一份持续威胁分析报告
 
 Microsoft 365：
 
@@ -159,7 +159,7 @@ Microsoft 365：
 - [恶意软件和勒索软件防护](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [保护你的Windows电脑免受勒索软件](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [在 SharePoint Online 中处理勒索软件](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
-- [Microsoft 365 Defender](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag)门户中勒索软件的威胁Microsoft 365 Defender报告
+- Microsoft 365 Defender门户中[勒索软件的威胁分析报告](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag)
 
 Microsoft 365 Defender：
 
@@ -182,6 +182,14 @@ Microsoft Cloud App Security：
 Microsoft 安全团队博客文章：
 
 - [防范和从勒索软件中恢复的 3 个步骤（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [反人为勒索软件指南：2021 年 9 月 1 (第 1) ](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+
+  有关 Microsoft 检测和响应团队如何使用 (进行勒索软件) 调查的关键步骤。
+
+- [反人为勒索软件指南：2021 年 9 月 2 (第 2) ](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+
+  推荐最佳实践。
+
 - [通过了解网络安全风险以增强恢复能力：第 4 部分 - 浏览当前威胁（2021 年 5 月）](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   请参阅 **勒索软件** 部分。

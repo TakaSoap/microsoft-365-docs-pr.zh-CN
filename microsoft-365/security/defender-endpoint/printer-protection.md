@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.author: v-lsaldanha
+ms.author: dansimp
 author: lovina-saldanha
 ms.reviewer: dansimp
 manager: dansimp
@@ -14,12 +14,12 @@ audience: ITPro
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e60ca593f9cea750473212daca834b2e63711ace
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: da6a875a7d9fc5a3445a18312245ffebdf6503c0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497604"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667110"
 ---
 # <a name="device-control-printer-protection"></a>设备控制打印机保护
 
@@ -65,7 +65,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 ****
 
-|标题|描述|云解决方案提供商支持 | GPO 支持 | 基于用户的支持 | 基于计算机的支持 |
+|Title|说明|云解决方案提供商支持 | GPO 支持 | 基于用户的支持 | 基于计算机的支持 |
 |---|---|:---:|:---:|:---:|:---:|
 |**启用设备控制打印限制**|阻止用户通过非公司打印机打印|是|是|是|是|
 |**已批准的 USB 连接打印设备列表**\*|允许特定 USB 打印机|是|是|是|是|

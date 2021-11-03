@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c328094c9b9443b4e130ce91d418fa2694e7c402
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2edd6bf9f713ea93c2bddcbca39acd333293718a
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190469"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60700345"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -35,7 +33,7 @@ ms.locfileid: "60190469"
 **适用于：**
 - Microsoft 365 Defender
 
-高级搜寻架构中的表包含与 `AlertEvidence` 来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的警报关联的各种实体（文件、IP 地址、URL、用户或设备）的信息[](advanced-hunting-overview.md)。 使用此参考来构建从此表返回信息的查询。
+高级搜寻架构中的表包含与来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的警报关联的各种实体（文件 `AlertEvidence` 、IP 地址、URL、用户或设备）的信息[](advanced-hunting-overview.md)。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 

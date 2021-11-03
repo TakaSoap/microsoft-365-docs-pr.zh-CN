@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: '从共享邮箱中删除许可证，以将其分配给其他用户或返回许可证，以便不支付许可证费用。 '
 ms.date: 05/11/2021
-ms.openlocfilehash: ccbab157b810e86a941da519346da621398a4af9
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: fb1455e9d4c23c6563940b1b4c3e57576c1063c2
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586809"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60660006"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>从共享邮箱中删除许可证
 
@@ -41,7 +41,7 @@ ms.locfileid: "60586809"
 > - 共享邮箱使用的存储空间超过 50 GB。
 > - 共享邮箱使用就地存档。
 > - 共享邮箱置于诉讼保留状态。
-> - 共享邮箱分配有 Microsoft Defender 许可证。
+> - 共享邮箱分配有Microsoft 365 Defender许可证。
 > 
 > 有关如何分配许可证的分步说明，请参阅 [向用户分配许可证](/microsoft-365/admin/manage/assign-licenses-to-users)。 
 
@@ -50,7 +50,7 @@ ms.locfileid: "60586809"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ ms.locfileid: "60586809"
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 

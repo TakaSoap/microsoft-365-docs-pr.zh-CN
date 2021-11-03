@@ -147,8 +147,6 @@
           href: anti-malware.md
         - name: 创建针对勒索软件的电子邮件规则
           href: prevent-ransom-in-email.md
-        - name: 停止自动转发电子邮件
-          href: stop-email-auto-forward.md
         - name: 设置防网络钓鱼
           href: setup-anti-phishing.md
         - name: 管理安全附件

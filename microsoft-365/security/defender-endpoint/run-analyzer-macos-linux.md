@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9207d4aebf3fa729fdf879a52a31103349fac8f8
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 3d94a08e651aec05869e54cfee2d605680e03426
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554224"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60664583"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>在 macOS 或 Linux 上运行客户端分析器
 
@@ -35,7 +35,7 @@ ms.locfileid: "60554224"
 1. 将 [XMDE 客户端分析器](https://aka.ms/XMDEClientAnalyzer) 工具下载到需要调查的 macOS 或 Linux 计算机。
 
    > [!NOTE]
-   > 从上述链接下载的"XMDEClientAnalyzer.zip"的当前 SHA256 哈希为："973725417D136B7B17AF4B301F1E99BA21D7F4A7DF88036DC5A731A4B768A8B2"。
+   > 从上述链接下载的"XMDEClientAnalyzer.zip"的当前 SHA256 哈希为："ECD2E7518EDC803E2FC2D9919531A22FD61375BED85A73EF64B74A97C7CBD9E3"。
 
 2. 提取计算机上XMDEClientAnalyzer.zip内容。
 
@@ -68,8 +68,10 @@ ms.locfileid: "60554224"
 > - 对于 Linux，分析器需要"lxml"来生成结果输出。 如果未安装，分析器将尝试从下面的 python 包的官方存储库获取它： <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
 > 
 > - 此外，该工具当前需要安装 Python 版本 3 或更高版本。
-> 
-> - 如果设备位于代理后面，则只需将代理服务器作为环境变量传递到 mde_support_tool.sh 脚本。 例如：`https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
+>
+> - 如果在无法使用 Python 3 或提取 lxml 组件计算机上运行，可以下载没有任何要求的基于二进制版本的分析器 [：XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)
+>
+> - 如果你的设备位于代理后面，则只需将代理服务器作为环境变量传递到 mde_support_tool.sh 脚本。 例如：`https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 示例：
 
@@ -102,7 +104,7 @@ ms.locfileid: "60554224"
 
   说明：在任一 macOS 上运行 *mdatp* 诊断创建时生成的相同 [诊断输出](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
-  或
+  或者
 
   [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 

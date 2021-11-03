@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c1c93f659d284124a33c12cb08109a609778073c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e6b7df942ee117c0f23a97516c75d64131e0770d
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209065"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60698401"
 ---
 # <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-defender"></a>将帐户从Office 365合规中心重定向到Microsoft 365 Defender
 
@@ -36,14 +36,15 @@ ms.locfileid: "60209065"
 - Microsoft 365 Defender
 - Defender for Office 365
 
-本文介绍如何通过启用从以前的 Office 365 安全与合规中心 (protection.office.com) 自动重定向Microsoft 365 Defender帐户Microsoft 365 Defender (security.microsoft.com) 。
+本文介绍如何通过启用从以前的 Office 365 安全与合规中心 Microsoft 365 Defender 自动重定向到 (protection.office.com) ，将帐户Microsoft 365 Defender (security.microsoft.com) 。
 
 ## <a name="what-to-expect"></a>预期结果
-启用并激活自动重定向后，访问 Office 365 Security and Compliance (protection.office.com) 中与安全相关的功能的用户将自动路由到 Microsoft 365 Defender (https://security.microsoft.com) 。  
+
+启用并激活自动重定向后，访问 Office 365 Security and Compliance (protection.office.com) 中与安全相关的功能的用户将自动路由到 Microsoft 365 Defender (security.microsoft.com) 。
 
 详细了解更改了哪些功能[：Microsoft Defender for Office 365 Microsoft 365 Defender](microsoft-365-security-center-mdo.md)。
 
-启用自动重定向后，当用户使用 Microsoft 365 Defender 安全与合规中心中的Office 365功能时，用户将被路由到用户。
+启用自动重定向后，当用户使用安全与Microsoft 365 Defender中心中的安全功能时，Office 365路由到用户。
 
 这些功能包括威胁管理部分、警报 (查看警报和警报策略) 以及威胁管理仪表板和报告。 安全Office 365安全与合规中心内与安全不相关的项目不会重定向到Microsoft 365 Defender。
 
@@ -57,7 +58,7 @@ ms.locfileid: "60209065"
 
 <!--To start routing accounts to Microsoft 365 Defender at security.microsoft.com:
 
-1. Make sure you’re a global administrator or have security administrator permissions in Azure Active directory.
+1. Make sure you're a global administrator or have security administrator permissions in Azure Active directory.
 2. [Sign in](https://security.microsoft.com/) to Microsoft 365 Defender.
 3. Navigate to **Settings** > **Email & collaboration** > **Portal redirection**.  
 4. Toggle the Automatic redirection setting to **On**.
@@ -67,13 +68,14 @@ ms.locfileid: "60209065"
 > After redirection is enabled, accounts in active sessions while this setting is applied will not be ejected from their session and will only be routed to Microsoft 365 Defender after ending their current session and signing back in again.-->
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>我能否返回到使用以前的门户？
-如果某些内容无法处理你，或者有任何内容你无法通过 Microsoft 365 Defender，我们希望使用门户反馈选项来收听它。 如果遇到重定向问题，请告诉我们。
+
+If something isn't working for you or if there's anything you're unable to complete through Microsoft 365 Defender， we want to hear about it using the portal feedback option. 如果遇到重定向问题，请告诉我们。
 
 还原到以前的门户：
 
 1. [以全局](https://security.microsoft.com/)Microsoft 365 Defender或 Azure Active directory 中的安全管理员权限使用 和 帐户登录。
 
-2. 导航到 **设置**  >  **电子邮件&协作**  >  **门户重定向。**
+2. 导航到 **设置**  >  **电子邮件&协作**  >  **门户重定向**。
 
 3. 将"自动重定向"设置切换为 **"关"。**
 
@@ -86,6 +88,6 @@ ms.locfileid: "60209065"
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft 提供统一的 SIEM 和 XDR 以现代化安全操作](https://www.microsoft.com/security/blog/?p=91813) 
 - [XDR 与 SIEM 信息图](https://afrait.com/blog/xdr-versus-siem/) 
-- [新 Defender](https://afrait.com/blog/the-new-defender/) 
+- [`The New Defender`](https://afrait.com/blog/the-new-defender/) 
 - [关于Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender) 
 - [Microsoft 安全门户和管理中心](portals.md)

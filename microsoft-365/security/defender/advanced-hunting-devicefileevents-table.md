@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4d6c47c3afa3ab32fc227442e93d61b1f66fd2e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0076c956e945e88d70288983e779cd7dd315ba72
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205123"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667056"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -39,7 +37,7 @@ ms.locfileid: "60205123"
 高级 `DeviceFileEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关文件创建、修改和其他文件系统事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关表支持 (事件) 类型的详细信息，请使用安全中心中提供的内置 `ActionType` 架构参考。
+> 有关表支持 (类型的事件) ，请使用安全中心中提供的内置架构 `ActionType` 参考。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -63,10 +61,10 @@ ms.locfileid: "60205123"
 | `InitiatingProcessAccountDomain` | string | 运行负责事件的进程的帐户的域 |
 | `InitiatingProcessAccountName` | string | 运行负责事件的进程的帐户的用户名 |
 | `InitiatingProcessAccountSid` | string | 安全 (SID) 运行负责事件的进程的帐户的 SID 标识符 |
-| `InitiatingProcessAccountUpn` | string | 用户主体 (UPN) 运行负责事件的进程的帐户的名称 |
-| `InitiatingProcessAccountObjectId` | string | 运行负责事件的进程的用户帐户的 Azure AD 对象 ID |
-| `InitiatingProcessMD5` | string | 启动事件的进程 (MD5) 文件哈希 |
-| `InitiatingProcessSHA1` | string | 启动事件 (映像) SHA-1 |
+| `InitiatingProcessAccountUpn` | string | 用户主体 (UPN) 负责事件的进程的帐户的名称 |
+| `InitiatingProcessAccountObjectId` | string | Azure AD事件的进程的用户帐户的对象 ID |
+| `InitiatingProcessMD5` | string | 启动事件的进程和 (文件的 MD5) 哈希 |
+| `InitiatingProcessSHA1` | string | 启动事件 (映像文件) SHA-1 |
 | `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `InitiatingProcessFolderPath` | string | 包含启动事件 (进程) 文件的文件夹 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
@@ -74,13 +72,13 @@ ms.locfileid: "60205123"
 | `InitiatingProcessVersionInfoCompanyName` | string | 进程版本信息中的公司名称 (负责) 文件 |
 | `InitiatingProcessVersionInfoProductName` | string | 进程版本信息中的产品名称 (负责) 文件 |
 |` InitiatingProcessVersionInfoProductVersion` | string | 进程版本信息中的产品版本 (负责) 文件 |
-|` InitiatingProcessVersionInfoInternalFileName` | string | 进程版本信息中的内部文件名 (负责) 文件 |
+|` InitiatingProcessVersionInfoInternalFileName` | string | 进程版本信息中的内部文件名 (负责) 文件的内部文件名 |
 | `InitiatingProcessVersionInfoOriginalFileName` | string | 进程版本信息的原始文件名 (负责) 文件 |
-| `InitiatingProcessVersionInfoFileDescription` | string | 来自负责事件的进程 (文件) 说明 |
-| `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的过程的 PID |
+| `InitiatingProcessVersionInfoFileDescription` | string | 负责事件的进程版本信息 (映像) 说明 |
+| `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的进程的 PID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动事件的过程的日期和时间 |
-| `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows某些特征（例如是否从 Internet 下载启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
+| `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows根据某些特征（例如是否从 Internet 下载中启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
 | `InitiatingProcessTokenElevation` | string | 指示是否存在用户访问控制的令牌类型 (UAC) 启动事件的进程应用的特权提升 |
 | `InitiatingProcessParentId` | int | 进程 ID (PID) 生成负责事件的进程的父进程的 PID |
 | `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |
@@ -95,7 +93,7 @@ ms.locfileid: "60205123"
 | `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
 | `SensitivityLabel` | string | 应用于电子邮件、文件或其他内容的标签，用于将其分类以用于信息保护 |
 | `SensitivitySubLabel` | string | 应用于电子邮件、文件或其他内容的子标签，用于将其分类以用于信息保护;敏感度子标签按敏感度标签分组，但单独处理 |
-| `IsAzureInfoProtectionApplied` | 布尔 | 指示文件是否由 Azure 信息保护进行加密 |
+| `IsAzureInfoProtectionApplied` | boolean | 指示文件是否由 Azure 信息保护进行加密 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。 |
 | `AppGuardContainerId` | string | 应用程序防护用于隔离浏览器活动的虚拟化容器的标识符 |
 | `AdditionalFields` | string | 有关实体或事件的其他信息 |

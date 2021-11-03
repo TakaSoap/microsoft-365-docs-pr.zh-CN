@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用和管理模板在 Microsoft 合规性管理器中生成评估。 使用格式化的文件创建和修改Excel模板。
-ms.openlocfilehash: 74b896f6c0fdd625cf50cc04a31fa79d48dc3a4e
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 99e243e86c66babd9a983ae6df891f4094cdbb83
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587677"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673640"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>了解合规性管理器中的评估模板
 
-**本文内容：** 了解 **模板如何工作****以及如何从评估模板** 页管理它们。 获取有关创建新 **模板**、**扩展** 和修改现有模板、使用 Excel 设置模板数据格式以及导出模板报告 **的说明**。
+**本文内容：** 了解 **模板如何工作****以及如何从评估模板** 页管理它们。 获取有关创建新 **模板**、扩展和修改现有模板、使用 Excel 设置模板数据格式以及导出模板报告 **的说明**。 
 
 > [!IMPORTANT]
 > 组织可用的评估模板取决于您的许可协议。 [查看详细信息](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
@@ -36,9 +36,9 @@ ms.locfileid: "60587677"
 
 模板是在合规性管理器中用于创建评估的控制措施框架。 我们全面的模板集可帮助你的组织遵守管理数据的收集和使用的国家、区域和行业特定要求。
 
-我们按其基础认证或法规的名称引用模板，例如欧盟 GDPR 模板和 ISO/IEC 27701：2019 模板。 由于合规性经理可用于评估不同类型的产品，因此每个模板有两个版本：一个版本适用于 Microsoft 365，另一种是通用版本，可定制以适合你选择的产品。
+我们按与基础认证或法规相同的名称来引用模板，例如欧盟 GDPR 模板和 ISO/IEC 27701：2019 模板。 由于合规性经理可用于评估不同类型的产品，因此每个模板有两个版本：一个版本适用于预定义的产品（如 Microsoft 365）和一个通用版本，可定制该版本以适合您的所选产品。
 
-请注意，美国政府 Community (GCC) 、GCC 高和国防部 (DoD) 客户当前可以使用 Microsoft 365 模板版本，但并非通用版本。
+请注意，美国政府Community (GCC) 、GCC和国防部 (DoD) 目前无法使用通用模板。
 
 ## <a name="template-availability-and-licensing"></a>模板可用性和许可
 
@@ -57,7 +57,7 @@ ms.locfileid: "60587677"
 
 **商业和GCC中等**
 
-商业GCC中等帐户可以在管理中心购买模板许可证， ([了解有关](/microsoft-365/commerce/)订阅、许可证和帐单) 。 选择要购买的许可证数量和付款计划。
+商业和GCC中等帐户可以在管理中心购买模板 ([了解有关](/microsoft-365/commerce/)订阅、许可证和帐单) 。 选择要购买的许可证数量和付款计划。
 
 购买链接：
 
@@ -72,11 +72,12 @@ GCC高和 DOD 帐户必须通过批量许可购买[模板许可证](https://www.
 
 ### <a name="try-out-premium-templates"></a>试用高级模板
 
-若要在购买前试用高级模板，还可以获取许可证的试用版。 试用版许可证适用于最多 25 个模板，最多为 90 天。 获取试用版许可证后，模板应在 48 小时内在租户中可用。
+若要在购买前试用高级模板，还可以获取许可证的试用版。 试用许可证适用于最多 25 个模板，最多为 90 天。 获取试用版许可证后，模板应在 48 小时内在租户中可用。
 
-若要启动试用版，请选择适合贵组织的链接：
+如果你的组织拥有合规性管理器的商业许可证，可以在关于 Microsoft 合规性管理器高级评估的免费试用版中 [了解如何开始试用](compliance-easy-trials-compliance-manager-assessments.md)。
 
-- [商业](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/e320704d-b7c9-4012-b6a6-0a2679790360)
+如果你的组织使用 GCC DOD 许可证，请为组织选择适当的试用链接：
+
 - [GCC中等](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
 - [GCC 高级](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
 - [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
@@ -98,7 +99,7 @@ GCC高和 DOD 帐户必须通过批量许可购买[模板许可证](https://www.
 
 如果计数器显示 5/2，则表明你的组织超出其限制，需要购买 3 个使用中的高级模板。
 
-Microsoft 365和通用版本的模板具有联合许可，因此可以在多个产品之间使用相同的基础认证。 使用同一模板的任一或两个版本将仅计为一个激活的模板。
+预定义产品（如 Microsoft 365）的模板与同一模板的通用版本具有联合许可。 这使你可以跨多个产品使用相同的基础认证。 使用同一模板的任一或两个版本将仅计为一个激活的模板。
 
 有关更多详细信息，请参阅合规性 [管理器许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
 
@@ -110,7 +111,7 @@ Select a template from its row to bring up its details page. 此页面包含模�
 
 ## <a name="create-an-assessment-template"></a>创建评估模板
 
-若要在合规性管理器中为自定义评估创建自己的新模板，你将使用经过特殊格式Excel电子表格来组合必要的控制数据。 完成电子表格后，将其导入合规性管理器。 若要了解更多信息，请参阅 [创建评估模板](compliance-manager-templates-create.md)。
+若要在合规性管理器中为自定义评估创建自己的新模板，你需要使用经过特殊格式Excel电子表格来组合必要的控制数据。 完成电子表格后，将其导入合规性管理器。 若要了解更多信息，请参阅 [创建评估模板](compliance-manager-templates-create.md)。
 
 ## <a name="modify-an-assessment-template"></a>修改评估模板
 
@@ -118,16 +119,16 @@ Select a template from its row to bring up its details page. 此页面包含模�
 
 ## <a name="extend-an-assessment-template"></a>扩展评估模板
 
-合规性管理器提供向现有模板添加自己的控件和改进操作的选项。 此过程称为扩展模板。 若要扩展模板，你将使用特殊说明添加到模板数据，具体取决于你是扩展Microsoft 365模板还是通用评估模板。 若要了解更多信息，请参阅 [扩展评估模板](compliance-manager-templates-extend.md)。
+合规性管理器提供向现有模板添加自己的控件和改进操作的选项。 此过程称为扩展模板。 若要扩展模板，你将使用特殊说明添加到模板数据，具体取决于你是扩展 Microsoft 评估模板还是通用评估模板。 若要了解更多信息，请参阅 [扩展评估模板](compliance-manager-templates-extend.md)。
 
-## <a name="format-assessment-template-data-in-excel"></a>格式化评估模板数据Excel
+## <a name="format-assessment-template-data-in-excel"></a>设置评估模板数据的格式Excel
 
 在合规性管理器创建、修改或扩展评估模板时，将使用Excel格式和架构的电子表格。 若要正确导入文件，必须遵循这些规范。 若要了解更多信息，请参阅 Format [assessment template data in Excel](compliance-manager-templates-format-excel.md)。
 
 ## <a name="export-a-template"></a>导出模板
 
-可以导出Excel模板数据的所有模板文件。 你需要导出模板才能修改它，因为这将是你在修改过程中编辑Excel上传的模板[文件](compliance-manager-templates-modify.md)。 如果要在构造新的自定义模板时使用模板的数据，还可以导出模板作为参考。
+您可以导出Excel模板数据的所有模板文件。 你需要导出模板才能修改它，因为这将是你在修改过程中编辑Excel上传的模板[文件](compliance-manager-templates-modify.md)。 如果要在构造新的自定义模板时使用模板的数据，还可以导出模板作为参考。
 
-若要导出模板，请转到模板详细信息页面并选择"**导出到** Excel按钮。
+若要导出模板，请转到模板详细信息页面，然后选择"**导出到** Excel按钮。
 
 请注意，导出从合规性管理器模板扩展的模板时，导出的文件将仅包含您添加到模板的属性。 导出的文件不包括 Microsoft 提供的原始模板数据。 若要获取此类报告，请参阅导出 [评估报告的说明](compliance-manager-assessments.md#export-an-assessment-report)。

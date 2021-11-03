@@ -1,6 +1,6 @@
 ---
-title: FileProfile () 高级搜寻中的函数Microsoft 365 Defender
-description: 了解如何使用 FileProfile () 丰富有关高级搜寻查询结果中的文件的信息
+title: 高级搜寻中的 FileProfile () 函数Microsoft 365 Defender
+description: 了解如何使用 FileProfile () 丰富有关高级搜寻查询结果中文件的信息
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， FileProfile， 文件配置文件， 函数， 扩充
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 97db42060d694168edbd6ed7e86c67706bf62ddb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7ad9678f797fd3e8df34b40fe39fea5672e13d5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212253"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60670602"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -37,7 +35,7 @@ ms.locfileid: "60212253"
 
 函数 `FileProfile()` 是高级搜寻中的扩充 [函数](advanced-hunting-overview.md) ，用于将以下数据添加到查询找到的文件。
 
-| Column | 数据类型 | 说明 |
+| 列 | 数据类型 | 说明 |
 |------------|---------------|-------------|
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
 | `SHA256` | string | 已应用录制操作的文件的 SHA-256 |
@@ -49,10 +47,10 @@ ms.locfileid: "60212253"
 | `Signer` | string | 有关文件签名者的信息 |
 | `Issuer` | string | 有关 CA 证书颁发机构 (的信息)  |
 | `SignerHash` | string | 标识签名者的唯一哈希值 |
-| `IsCertificateValid` | 布尔 | 用于对文件进行签名的证书是否有效 |
-| `IsRootSignerMicrosoft` | 布尔 | 指示根证书的签名者是否是 Microsoft |
+| `IsCertificateValid` | boolean | 用于对文件进行签名的证书是否有效 |
+| `IsRootSignerMicrosoft` | boolean | 指示根证书的签名者是否是 Microsoft |
 | `SignatureState` | string | 文件签名的状态：SignedValid - 使用有效签名对文件进行签名，SignedInvalid - 文件已签名，但证书无效，未签名 - 文件未签名，未知 - 无法检索有关文件的信息
-| `IsExecutable` | 布尔 | 该文件是否是可移植可执行文件 (PE) 文件 |
+| `IsExecutable` | boolean | 文件是否是可移植可执行文件 (PE) 文件 |
 | `ThreatName` | string | 找到的任何恶意软件或其他威胁的检测名称 |
 | `Publisher` | string | 发布该文件的组织的名称 |
 | `SoftwareName` | string | 软件产品的名称 |
@@ -70,7 +68,7 @@ invoke FileProfile(x,y)
 
 
 >[!TIP]
-> 扩充函数仅在可用时显示补充信息。 信息的可用性各不相同，具体取决于许多因素。 确保在查询或创建自定义检测 () FileProfile 属性时考虑这一点。 为了获得最佳结果，我们建议将 FileProfile () 函数与 SHA1 一同使用。
+> 扩充函数仅在可用时显示补充信息。 信息的可用性各不相同，具体取决于许多因素。 确保在查询或创建自定义检测中使用 FileProfile () 时考虑这一点。 为了获得最佳结果，我们建议将 FileProfile () 函数与 SHA1 一同使用。
 
 ## <a name="examples"></a>示例
 

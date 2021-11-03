@@ -1,7 +1,7 @@
 ---
 title: 支持的操作系统平台和功能
 description: 确保你满足操作系统或平台的必备条件危险和漏洞管理，以便正确考虑所有设备中的活动。
-keywords: 威胁& 漏洞管理， 危险和漏洞管理， 操作系统， 平台要求， 先决条件， Microsoft Defender for Endpoint-tvm 支持的操作系统， 适用于 Endpoint-tvm 的 Microsoft Defender， 受支持的操作系统， 受支持的平台， linux 支持， mac 支持
+keywords: 威胁& 漏洞管理， 危险和漏洞管理， 操作系统， 平台要求， 先决条件， Microsoft Defender for Endpoint-tvm 支持的操作系统， 适用于 Endpoint-tvm 的 Microsoft Defender， 支持的操作系统， 受支持的平台， linux 支持， mac 支持
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d1f3214efa76759fa9e1a17ed4497c476125a096
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a5c96f8a3dd96219f58ac667e03b50e03498dcae
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552582"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659099"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>支持的操作系统、平台和功能 - 适用于危险和漏洞管理
 
@@ -37,10 +37,10 @@ ms.locfileid: "60552582"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
-在开始之前，请确保满足以下操作系统或平台要求危险和漏洞管理以便正确考虑设备中的活动。
+开始之前，请确保满足以下操作系统或平台要求危险和漏洞管理以便正确考虑设备中的活动。
 
 > [!NOTE]
-> 支持用于终结点的危险和漏洞管理和平台可能不同于["Microsoft Defender for Endpoint](minimum-requirements.md)的最低要求"列表。
+> 支持用于终结点的系统和危险和漏洞管理可能不同于["Microsoft Defender for Endpoint](minimum-requirements.md)的最低要求"列表。
 
 ## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>支持的操作系统和平台 (操作系统) 功能
 
@@ -64,6 +64,8 @@ CentOS 7.2 或更高版本|是|是|是|是|是
 Ubuntu 16.04 LTS 或更高版本 LTS|是|是|是|是|是
 Oracle Linux 7.2 或更高版本|是|是|是|是|是
 SUSE Linux Enterprise Server 12 或更高版本|是|是|是|是|是
+Android 6.0 或更高版本 (预览版) |是|是|不支持|不支持|不支持
+预览版中的 iOS 12.0 (或) |是|不支持|不支持|不支持|不支持
 
 > [!NOTE]
 > 某些功能不适用于低级别操作系统，请查看 Microsoft 365 Defender 门户，了解有关受支持的操作系统的更多详细信息。

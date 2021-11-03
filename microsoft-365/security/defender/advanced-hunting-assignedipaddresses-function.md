@@ -1,5 +1,5 @@
 ---
-title: AssignedIPAddresses () 高级搜寻中的 Microsoft 365 Defender
+title: 高级搜寻中的 AssignedIPAddresses () 函数Microsoft 365 Defender
 description: 了解如何使用 AssignedIPAddresses () 函数获取分配给设备的最新 IP 地址
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， FileProfile， 文件配置文件， 函数， 扩充
 search.product: eADQiWindows 10XVcnh
@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48dda6faf9d0cfc5b301a766dd07f8cb4e15d394
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c60f9ff0b302948d5fd2d8c450e33a12768e8db0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174551"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665523"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -39,7 +37,7 @@ ms.locfileid: "60174551"
 
 此函数返回具有以下列的表：
 
-| Column | 数据类型 | 说明 |
+| 列 | 数据类型 | 说明 |
 |------------|-------------|-------------|
 | `Timestamp` | datetime | 使用 IP 地址观测到设备的最新时间 |
 | `IPAddress` | string | 设备使用的 IP 地址 |
@@ -67,7 +65,7 @@ AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
 ### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>获取设备使用的 IP 地址并查找与设备通信的设备
-此查询使用 函数获取特定日期或 () 或之前的设备分配的 `AssignedIPAddresses()` IP `example-device-name` `example-date` () 。 然后，它使用 IP 地址查找与其他设备启动的设备的连接。 
+此查询使用 函数获取特定日期或 () 或之前为设备分配的 `AssignedIPAddresses()` IP `example-device-name` `example-date` () 。 然后，它使用 IP 地址查找与其他设备启动的设备的连接。 
 
 ```kusto
 let Date = datetime(example-date);
