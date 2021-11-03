@@ -15,14 +15,14 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒
+keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
 description: 使用受控文件夹访问权限、MIP、DLP 和 Microsoft Cloud App Security 来保护 Microsoft 365 敏感数据。
-ms.openlocfilehash: f63a830e8c17eddcbe3efe40408881ec1f1d9736
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: cd2f7526de1b9089c6c2febfb667b4df7d816913
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555652"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60666730"
 ---
 # <a name="step-5-protect-information"></a>步骤 5. 保护信息
 
@@ -151,6 +151,14 @@ Microsoft Cloud App Security：
 Microsoft 安全团队博客文章：
 
 - [防范和从勒索软件中恢复的 3 个步骤（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [抵御人工操作勒索软件的指南：第 1 部分（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+
+  有关 Microsoft 检测和响应团队 (RANSOM) 执行勒索软件事件调查的关键步骤。
+
+- [抵御人工操作勒索软件的指南：第 2 部分（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+
+  建议和最佳做法。
+
 - [通过了解网络安全风险以增强恢复能力：第 4 部分 - 浏览当前威胁（2021 年 5 月）](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   请参阅 **勒索软件** 部分。

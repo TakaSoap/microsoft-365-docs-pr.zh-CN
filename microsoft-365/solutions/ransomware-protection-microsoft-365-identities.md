@@ -15,14 +15,14 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: 勒索软件，人为操作的勒索软件，人工运营的勒索软件，HumOR，勒索攻击，勒索软件攻击，加密，加密病毒
+keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
 description: 使用安全登录和条件访问来保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: 5761cb402be3fb0be907be8f3677a8e3ecbfd875
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 23a9833952aca745e869c13139823b4b0a9400bf
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444496"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60666682"
 ---
 # <a name="step-3-protect-identities"></a>第 3 步。 保护身份
 

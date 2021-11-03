@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: 10c2fdeae19746358745308d3b5171afb0647ebd
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6ea5027daad00e6c141bfb53137307113321aa7a
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553348"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60655440"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -89,53 +89,37 @@ ms.locfileid: "60553348"
   
 ## <a name="which-activity-reports-are-available-in-the-admin-center"></a>管理中心提供了哪些活动报表
 
-根据你的订阅，下面是可供使用的报表。
+根据你的订阅，下面是所有环境中可供使用的报表。
 
-- [Microsoft 浏览器使用状况](browser-usage-report.md) 
-  
-- [电子邮件活动](email-activity-ww.md)
-    
-- [邮箱使用情况](mailbox-usage.md)
-    
-- [Office 激活](microsoft-office-activations-ww.md)
+|**报告**|**Public**|**GCC**|**GCC-High**|**DoD**|**由世纪互联运营的 Office 365**|
+|:-----|:-----|:-----|:-----|:-----|:-----|
+|[Microsoft 浏览器使用状况](browser-usage-report.md)|是|否[^1]|否[^1]|否[^1]|否[^1]|
+|[电子邮件活动](email-activity-ww.md)|是|是|是|是|是|
+|[电子邮件应用使用情况](email-apps-usage-ww.md)|是|是|是|是|是|
+|[邮箱使用情况](mailbox-usage.md)|是|是|是|是|是|
+|[Office 激活](microsoft-office-activations-ww.md)|是|是|是|是|是|
+|[活动用户](active-users-ww.md)|是|是|是|是|是|
+|[Microsoft 365 组](office-365-groups-ww.md)|是|是|是|是|是|
+|[Microsoft 365 应用使用情况](microsoft365-apps-usage-ww.md)|是|是|否[^1]|否[^1]|否[^1]|
+|[OneDrive for Business 用户活动](onedrive-for-business-activity-ww.md)|是|是|是|是|是|
+|[OneDrive for Business 使用情况](onedrive-for-business-usage-ww.md)|是|是|是|是|是|
+|[SharePoint 网站使用情况](sharepoint-site-usage-ww.md)|是|是|是|是|是|
+|[SharePoint 活动](sharepoint-activity-ww.md)|是|是|是|是|是|
+|[Microsoft Teams 用户活动](microsoft-teams-user-activity-preview.md)|是|是|是|是|不适用[^2]|
+|[Microsoft Teams 设备使用情况](microsoft-teams-device-usage-preview.md)|是|是|是|是|不适用[^2]|
+|[Yammer 活动](yammer-activity-report-ww.md)|是|是|不适用[^2]|不适用[^2]|不适用[^2]|
+|[Yammer 设备使用情况](yammer-device-usage-report-ww.md)|是|是|不适用[^2]|不适用[^2]|不适用[^2]|
+|[Yammer 组活动报告](yammer-groups-activity-report-ww.md)|是|是|不适用[^2]|不适用[^2]|不适用[^2]|
+|[表单活动](forms-activity-ww.md)|是|是|否[^1]|否[^1]|否[^1]|
+|[Dynamics 365 Customer Voice 活动](forms-pro-activity-ww.md)|是|是|不适用[^2]|不适用[^2]|不适用[^2]|
+|[Skype for Business Online 活动](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|是|是|否[^1]|否[^1]|是|
+|[Skype for Business Online 会议组织活动](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|是|是|否[^1]|否[^1]|是|
+|[Skype for Business Online 会议参与者活动](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|是|是|否[^1]|否[^1]|是|
+|[Skype for Business Online 点对点活动](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|是|是|否[^1]|否[^1]|是|
+|[Vava Learning 活动](viva-learning-activity.md)|是|不适用|不适用|不适用|不适用|
 
-- [活动用户](active-users-ww.md)
-  
-- [电子邮件应用使用情况](email-apps-usage-ww.md)
-
-- [表单活动](forms-activity-ww.md)
-
-- [Dynamics 365 Customer Voice 活动](forms-pro-activity-ww.md)
-
-- [Microsoft 365 组](office-365-groups-ww.md)
-  
-- [OneDrive for Business 用户活动](onedrive-for-business-activity-ww.md)
-
-- [OneDrive for Business 使用情况](onedrive-for-business-usage-ww.md)
-
-- [Microsoft 365 应用使用情况](microsoft365-apps-usage-ww.md)
-  
-- [SharePoint 网站使用情况](sharepoint-site-usage-ww.md)
-  
-- [SharePoint 活动](sharepoint-activity-ww.md)
-  
-- [Skype for Business Online 活动](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
-  
-- [Skype for Business Online 会议组织活动](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
-  
-- [Skype for Business Online 会议参与者活动](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
-  
-- [Skype for Business Online 点对点活动](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
-
-- [Yammer 活动](yammer-activity-report-ww.md)
-
-- [Yammer 设备使用情况](yammer-device-usage-report-ww.md)
-
-- [Yammer 组活动报告](yammer-groups-activity-report-ww.md)
-
-- [Microsoft Teams 用户活动](microsoft-teams-user-activity-preview.md)
-
-- [Microsoft Teams 设备使用情况](microsoft-teams-device-usage-preview.md)
+[^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
+[^2]: The service is not available in the environment so no plan to release the report.
 
 ## <a name="how-to-view-licensing-information"></a>如何查看许可信息
 
@@ -163,14 +147,6 @@ ms.locfileid: "60553348"
 如果在生成报表时，想要取消隐藏用户级的信息，**全局管理员** 可以在管理中心中快速进行此更改。
 
 报告提供有关组织的使用情况数据的信息。 默认情况下，报告显示包含用户、组和网站可识别名称的信息。 从 2021 年 9 月 1 开始，我们将默认隐藏所有报告的用户信息，以持续致力于帮助公司支持其本地隐私法律。
-
-  
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">服务和&amp;加载项</a>页面。
-
-2. 选择“**组织设置**”，然后选择“**服务**”。 
-  
-3. 在“**报告**”空格中，选择“**选择用户信息显示方式**”，然后选择“**在报告中显示可识别的用户信息**”。
-  
 
 全局管理员可以恢复租户的此更改，并显示可识别的用户信息（如果其组织的隐私实践允许）。 可以按照以下步骤在 Microsoft 365 管理中心中实现此目标：
   

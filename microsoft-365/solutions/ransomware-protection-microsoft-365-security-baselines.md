@@ -15,14 +15,14 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: 勒索软件， 人为操作的勒索软件， 人工运营的勒索软件， HumOR， 勒索攻击， 勒索软件攻击， 加密， 加密病毒
+keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
 description: 使用安全基线来保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: 662e4097f4d6fd868810ba889c99d58fd0dc2f75
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bd988f70dacc1ad2a7645b09c9d9994315b5a4df
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202305"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667790"
 ---
 # <a name="step-1-configure-security-baselines"></a>步骤 1. 配置安全基线
 

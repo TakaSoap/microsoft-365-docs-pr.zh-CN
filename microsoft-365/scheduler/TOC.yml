@@ -1,10 +1,16 @@
 - name: Microsoft 365 专属计划员
-  href: scheduler-overview.md
-- name: 信任和隐私
-  href: scheduler-trust-privacy.md
-- name: 设置 Microsoft 365 专属计划员
-  href: scheduler-setup.md
-- name: 如何使用 Microsoft 365 专属计划员
-  href: scheduler-using.md
-- name: Microsoft 365 专属计划员常见问题解答
-  href: scheduler-faqs.md
+  href: index.yml
+  expanded: true
+  items:
+    - name: 欢迎使用 Microsoft 365 专属计划员
+      href: scheduler-overview.md
+    - name: 信任和隐私
+      href: scheduler-trust-privacy.md
+    - name: 设置 Microsoft 365 专属计划员
+      href: scheduler-setup.md
+    - name: 如何使用 Microsoft 365 专属计划员
+      href: scheduler-using.md
+    - name: 安排定期会议
+      href: scheduler-recurring-meetings.md
+    - name: Microsoft 365 专属计划员常见问题解答
+      href: scheduler-faqs.md

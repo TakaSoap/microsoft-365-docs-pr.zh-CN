@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: 了解如何使用 Microsoft 365 合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
-ms.openlocfilehash: ba757f55e226d436250efa4da3340253dc017be6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7f632288b339cbccb99bd07330ebe705471340aa
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190841"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673369"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 
@@ -147,7 +147,7 @@ ms.locfileid: "60190841"
 
 #### <a name="where-is-network-upload-available"></a>网络上传在哪些地区提供？
 
-目前，在以下区域提供网络上传功能：美国、加拿大、巴西、英国、法国、德国、瑞士、挪威、欧洲、印度、东亚、东南亚、日本、韩国、澳大利亚和阿拉伯联合酋长国 (UAE)。该功能将很快在更多区域中提供。
+目前，在以下区域提供网络上传功能：美国、加拿大、巴西、英国、法国、德国、瑞士、挪威、欧洲、印度、东亚、东南亚、日本、韩国、澳大利亚和阿拉伯联合酋长国 (UAE)。 未来将在更多地区推出网络上传。
 
 #### <a name="what-is-the-pricing-for-importing-pst-files-by-using-network-upload"></a>What is the pricing for importing PST files by using network upload?
 
@@ -222,7 +222,7 @@ Yes, this capability is now available.
 
 #### <a name="where-is-drive-shipping-available"></a>哪些地区提供驱动器传送服务？
 
-美国、加拿大、巴西、英国、欧洲、印度、东亚、东南亚、日本、韩国、澳大利亚和南非目前提供驱动器寄送。驱动器传送将很快在更多区域推出。
+当前，美国、加拿大、巴西、英国、欧洲、印度、东亚地址、东南亚、日本、韩国和澳大利亚已推出驱动器传送。 未来还会有更多地区推出驱动器传送。
 
 > [!NOTE]
 > 目前，不可在德国和瑞士使用驱动器发运导入 PST 文件。 当这些国家/地区提供驱动器发运功能后，此常见问题解答将更新。

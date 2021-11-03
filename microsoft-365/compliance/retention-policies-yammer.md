@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Yammer 的保留策略。
-ms.openlocfilehash: ea1638b3dd97c97354eff64d0e33d6a4b84a0313
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 88e4081ba23ce38153af7eb5fe8af69a00df73b8
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175103"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667702"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解用于 Yammer 的保留
 
@@ -103,6 +103,68 @@ Yammer 消息不受为 Exchange 邮箱配置的保留策略的影响。即使 Ya
 
 2. **如果用户在保留期内删除 Yammer 消息**，该项目将立即移至 SubstrateHolds 文件夹，并立即将其永久删除。
 
+#### <a name="example-flows-and-timings-for-retention-policies"></a>保留策略的流和计时示例
+
+使用下面的示例，查看前面部分中解释的过程和时间是如何应用于具有以下配置的保留策略的:
+
+- [示例 1: 仅保留 7 年](#example-1-retain-only-for-7-years)
+- [示例 2: 保留 30 天，然后删除](#example-2-retain-for-30-days-and-then-delete)
+- [示例 3: 1 天后仅删除](#example-3-delete-only-after-1-day)
+
+对于所有提到永久删除的示例，由于[保留原则](retention.md#the-principles-of-retention-or-what-takes-precedence)，如果该消息受到另一个保留策略的约束以保留该项目，或者它受到电子数据展示的保留，就会暂停该操作。
+
+##### <a name="example-1-retain-only-for-7-years"></a>示例 1: 仅保留 7 年
+
+第 1 天，用户发布了一条新的 Yammer 消息。
+
+第 5 天，用户编辑此消息。
+
+第 30 天，用户删除当前消息。
+
+保留结果:
+
+- 对于原始消息:
+    - 第 5 天，复制消息到 SubstrateHolds 文件夹，从第 1 天起至少 7 年内 (保留期) 仍可使用电子数据展示工具进行搜索。
+
+- 对于当前 (已编辑) 消息:
+    - 第 30 天，移动消息到 SubstrateHolds 文件夹，在那里它仍然可以用电子数据展示工具进行搜索，从第 1 天起至少 7 年 (保留期)。
+
+如果用户在指定保留期之后，而不是在保留期内删除了当前消息，那么该消息仍然会移到 SubstrateHolds 文件夹中。 然而，现在保留期已过，信息将在至少 1 天后永久删除，然后通常在 1-7 天内删除。
+
+##### <a name="example-2-retain-for-30-days-and-then-delete"></a>示例 2: 保留 30 天，然后删除
+
+第 1 天，用户发布了一条新的 Yammer 消息。
+
+第 10 天，用户编辑此消息。
+
+用户不会进行进一步的编辑，且不会删除消息。
+
+保留结果:
+
+- 对于原始消息:
+    - 第 10 天，复制消息到 SubstrateHolds 文件夹，在那里仍然可以用电子数据展示工具进行搜索。
+    - 在保留期结束时 (从第 1 天开始的 30 天)，该消息通常在至少 1 天后的 1-7 天内永久删除，然后电子数据展示不会再搜索到它们。
+
+- 对于当前 (已编辑) 消息:
+    - 在保留期结束时 (从第 1 天起 30 天)，消息通常在 1-7 天内转移到 SubstrateHolds 文件夹，在那里仍然可以用电子数据展示工具进行搜索。
+    - 然后，通常在 1-7 天内永久删除该消息，至少 1 天后，电子数据展示就无法搜索到它们。
+
+##### <a name="example-3-delete-only-after-1-day"></a>示例 3: 1 天之后仅删除
+
+> [!NOTE]
+> 由于此配置的持续时间很短，并且保留过程在 1-7 天的时间段内运作，因此本节显示了在典型时间范围内的示例时间。
+
+第 1 天，用户发布了一条新的 Yammer 消息。
+
+如果用户不编辑或删除信息，则保留结果的示例:
+
+- 第 5 天(通常在第 2 天保留期开始后的 1-7 天):
+    - 消息会移动到 SubstrateHolds 文件夹中，并在那里停留至少 1 天且仍可使用电子数据展示工具进行搜索。
+
+- 第 9 天 (通常是在 SubstrateHolds 文件夹中至少 1 天后的 1-7 天):
+    - 永久删除该消息，然后电子数据展示就无法搜索到它们。
+
+正如该例子所示，尽管可以配置保留策略以在一天后删除消息，但该服务要经过多个过程以确保合规的删除。 因此，1 天后的删除操作可能需要 16 天才能将消息永久删除，以便在电子数据展示搜索中不再返回。
 
 ## <a name="messages-and-external-users"></a>消息和外部用户
 

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: deea83a515feeec15097613b297f395f39e1ffa1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6d617024f2a09b73b7b944fb34bd2f34d024d3c1
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202533"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60661053"
 ---
 # <a name="top-scoring-in-industry-tests"></a>在行业测试中得分最高
 
@@ -39,7 +39,7 @@ Microsoft 365 Defender 将 [Microsoft Defender for Endpoint](https://www.microso
 
 ### <a name="mitre-demonstrated-real-world-detection-response-and-protection-from-advanced-attacks"></a>MITRE：演示了实际检测、响应和对高级攻击的保护
 
-MITRE 的测试方法核心就是模拟实际攻击，以便了解解决方案是否可以充分检测攻击并作出响应。 尽管测试专注于终结点检测和响应，但 MITRE 的模拟 APT29 攻击跨越多个攻击域，提供除终结点保护以外支持防御程序的机会。 Microsoft 使用 Microsoft 365 Defender 扩展了防御程序在终结点之外的可见性。
+MITRE 的测试方法核心就是模拟实际攻击，以便了解解决方案是否可以充分检测攻击并作出响应。 尽管测试专注于终结点检测和响应，但 MITRE 的模拟 APT29 攻击跨越多个攻击域，提供除终结点保护以外支持防御程序的机会。 Microsoft 使用 Microsoft 365 Defender 扩展了终结点之外的可见性。
 
 - 基于 ATT&CK 的 Microsoft 365 Defender 评估 - 2020 年 5 月：[领先的实际检测](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
