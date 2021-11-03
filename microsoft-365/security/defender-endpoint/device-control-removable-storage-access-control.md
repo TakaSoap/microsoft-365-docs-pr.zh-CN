@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/28/2021
-ms.openlocfilehash: 6ae7805ddc762de081b201b1ebafca21eeaf5632
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.date: 11/02/2021
+ms.openlocfilehash: b7dc38ba6b4c1fcc214dfca5d621269a35eaf323
+ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701653"
+ms.locfileid: "60725564"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 设备控件可移动存储访问控制
 
@@ -88,7 +88,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 | **Sid** | 本地用户 Sid 或用户 Sid 组或 AD 对象的 Sid 定义是否对特定用户或用户组应用此策略;一个条目最多可具有一个 Sid 和一个不带任何 Sid 的条目，这意味着在计算机中应用策略。 |  |
 | **ComputerSid** | 本地计算机 Sid 或计算机 Sid 组或 AD 对象的 Sid 定义是否对特定计算机或计算机组应用此策略;一个条目最多可具有一个 ComputerSid，而一个条目没有任何 ComputerSid 意味着将策略应用到计算机。 如果要将条目应用于特定用户和特定计算机，请同时将 Sid 和 ComputerSid 添加到同一条目中。 |  |
 | **选项** | 定义是否显示通知 |**0 或 4：** 选择"允许"或"拒绝"时。 <p>0：无<p>4：对此条目 **禁用 AuditAllowed** **和 AuditDenied。** 即使 **发生阻止** 且已配置 AuditDenied 设置，系统也将不会显示通知。 <p> 选择" **类型 AuditAllowed"** 时： <p>0：无 <p>1：无 <p>2：发送事件<p>3：发送事件 <p> 选择" **类型 AuditDenied"** 时： <p>0：无 <p>1：显示通知 <p>2：发送事件<p>3：显示通知和发送事件 |
-|AccessMask|定义访问权限。 | **1-7**： <p>读取 <p>写入 <p>读写 <p>执行 <p>读取和执行<p>写入和执行 <p>读取、写入和执行 |
+|AccessMask|定义访问权限。 | **1-7**： <p>1：读取 <p>2：写入 <p>3：读取和写入 <p>4：执行 <p>5：读取和执行<p>6：写入和执行 <p>7：读取、写入和执行 |
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>常见的可移动存储访问控制方案
 
@@ -98,7 +98,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 1. 创建组
 
-    1. 组 1：任何可移动存储和 CD/DVD。 可移动存储和 CD/DVD 的一个示例是：示例 Any [Removable 存储 and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file中的组 **9b28fae8-72f7-4267-a1a5-685f747a7146。**
+    1. 组 1：任何可移动存储和 CD/DVD。 可移动存储和 CD/DVD 的一个示例是：示例任何可移动 存储 和 [CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)文件中的组 **9b28fae8-72f7-4267-a1a5-685f747a7146。**
     2. 组 2：基于设备属性批准的 USB。 此用例的一个示例是：示例已批准 [USB Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)文件中的实例 ID - 组 **65fa649a-a111-4912-9294-fb6337a25038。**
 
     > [!TIP]
@@ -113,8 +113,8 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 1. 创建组
 
-    1. 组 1：任何可移动存储和 CD/DVD。 此用例的一个示例是：示例 Any [Removable 存储 and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file 中的 Group **9b28fae8-72f7-4267-a1a5-685f747a7146。**
-    2. 组 2：基于设备属性的未批准的 USB，例如未批准的 USB Group.xml文件中供应商 ID/产品 ID、友好名称 – 组 **65fa649a-a111-4912-9294-fb6337a25038。** [](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
+    1. 组 1：任何可移动存储和 CD/DVD。 此用例的一个示例是：示例 Any [Removable 存储 and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)文件中 Group **9b28fae8-72f7-4267-a1a5-685f747a7146。**
+    2. 组 2：基于设备属性（例如，供应商 ID/产品 ID、友好名称 – 组 **65fa649a-a111-4912-9294-fb6337a25038）** 的未批准 USB Group.xml文件中未批准的 [USB。](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
 
     > [!TIP]
     > 将 `&` 替换为 `&amp;` 值。
@@ -186,7 +186,7 @@ Microsoft Endpoint Manager管理中心 <https://endpoint.microsoft.com/> () 配�
 
       `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
 
-    - 数据类型：String (XML) 
+    - 数据类型：String (XML 文件) 
 
       :::image type="content" source="images/xml-data-type-string.png" alt-text="STRING 文件的 xml 数据类型。":::
 
@@ -200,7 +200,7 @@ Microsoft Endpoint Manager管理中心 <https://endpoint.microsoft.com/> () 配�
 
       `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData`
 
-    - 数据类型：String (XML) 
+    - 数据类型：String (XML 文件) 
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>使用 Intune 用户界面部署和管理策略
 
@@ -208,7 +208,7 @@ Microsoft Endpoint Manager管理中心 <https://endpoint.microsoft.com/> () 配�
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 存储设备控件可移动访问控件数据
 
-该[Microsoft 365 Defender门户](https://security.microsoft.com/advanced-hunting)显示由设备控件可移动控件和访问控制存储的事件。 若要访问Microsoft 365安全性，您必须具有以下订阅：
+该[Microsoft 365 Defender门户](https://security.microsoft.com/advanced-hunting)显示由设备控件可移动控件存储访问控制触发的事件。 若要访问Microsoft 365安全性，您必须具有以下订阅：
 
 - Microsoft 365 E5 报告
 
