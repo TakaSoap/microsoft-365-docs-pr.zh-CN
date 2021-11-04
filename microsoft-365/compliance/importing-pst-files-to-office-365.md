@@ -25,8 +25,8 @@ ms.openlocfilehash: 7f632288b339cbccb99bd07330ebe705471340aa
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673369"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701945"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？请阅读一些实用指南来入门。
-ms.openlocfilehash: 3154388eaf1c677cec00782642de6f83819d0665
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5d1566cc5840b93a4d3a994004ea0e1d52e01bb6
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195589"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757354"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>开始使用保留策略和保留标签
 
@@ -51,7 +51,7 @@ ms.locfileid: "60195589"
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>创建和管理保留策略和保留标签所需的权限
 
-负责创建和管理保留策略和保留标签的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要授予实现此有限管理的权限，建议将用户添加到 **合规性管理员** 管理角色组。
+负责创建和管理保留策略和保留标签的合规性团队成员必须有权访问 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要授予实现此有限管理的权限，建议将用户添加到 **合规性管理员** 管理角色组。
 
 除了使用该默认角色，还可创建一个新的角色组，并将 **保留管理** 角色添加到该组。对于只读角色，请使用 **只查看保留管理**。 
 

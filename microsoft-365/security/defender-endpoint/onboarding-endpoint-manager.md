@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7da419a779cb3a58488ca27ea7185262f4001d44
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: baa4294209ddb32a0a531e07b5bf87b0bb10aa9b
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159483"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756368"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 载入
 
@@ -48,10 +48,10 @@ ms.locfileid: "60159483"
 
 本主题指导用户：
 
-- 步骤 1：在 MEM 中通过创建组将设备载入服务Microsoft Endpoint Manager () 分配配置
+- 步骤 1：在 MEM 中通过创建组将设备载入Microsoft Endpoint Manager (MEM) 分配配置
 - 步骤 2：使用 Microsoft Endpoint Manager
 
-本载入指南将指导你完成在使用 Microsoft Endpoint Manager 时需要执行的基本Microsoft Endpoint Manager：
+本载入指南将指导你完成在使用应用时需要执行Microsoft Endpoint Manager：
 
 - [标识目标设备或用户](#identify-target-devices-or-users)
   - 创建用户Azure Active Directory设备 (组) 
@@ -68,7 +68,7 @@ ms.locfileid: "60159483"
 
 有关此Microsoft Endpoint Manager，请查看以下资源：
 
-- [Microsoft Endpoint Manager页面](/mem/)
+- [Microsoft Endpoint Manager页](/mem/)
 - [有关 Intune 和 ConfigMgr 聚合的博客文章](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [MEM 简介视频](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
@@ -79,7 +79,7 @@ ms.locfileid: "60159483"
 在此部分中，我们将创建一个测试组来分配配置。
 
 > [!NOTE]
-> Intune Azure Active Directory (Azure AD) 组来管理设备和用户。 作为 Intune 管理员，你可以设置组以满足你的组织需求。
+> Intune 使用Azure Active Directory (Azure AD) 组来管理设备和用户。 作为 Intune 管理员，你可以设置组以满足你的组织需求。
 >
 > 有关详细信息，请参阅添加 [组以组织用户和设备](/mem/intune/fundamentals/groups-add)。
 
@@ -101,7 +101,7 @@ ms.locfileid: "60159483"
 
 5. 从" **组>所有组"窗格中** ，打开新组。
 
-6. 选择 **">添加成员"。**
+6. 选择 **"成员>添加成员"。**
 
 7. 查找测试用户或设备并选择它。
 
@@ -180,7 +180,7 @@ ms.locfileid: "60159483"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal12 的图像。](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3. 选择 **平台 - Windows 10和更高版本 - Windows配置文件 - Microsoft Defender 防病毒>创建**。
+3. 选择 **平台 - Windows 10和更高版本 - Windows配置文件 - Microsoft Defender 防病毒 >创建**。
 
 4. 输入名称和说明，然后选择下一  **步**。
 
@@ -298,7 +298,7 @@ ms.locfileid: "60159483"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal30 的图像。](images/45cefc8e4e474321b4d47b4626346597.png)
 
-9. 选择 **"审阅"和"创建>创建"。**
+9. 选择 **查看并创建>创建**。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal31 的图像。](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
@@ -321,7 +321,7 @@ ms.locfileid: "60159483"
 1. 打开 MEM 门户并导航到相关策略，如上述步骤所示。 以下示例显示了下一代保护设置。
 
     > [!div class="mx-imgBorder"]
-    > [![Microsoft Endpoint Manager portal33 的图像。](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
+    > [![portal33 Microsoft Endpoint Manager图像。](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
 
 2. 选择 **配置策略** 以查看策略状态。
 
@@ -344,11 +344,11 @@ ms.locfileid: "60159483"
     > 此视图对于标识与另一个策略冲突的任何设置非常有用。
 
     > [!div class="mx-imgBorder"]
-    > [![Microsoft Endpoint Manager portal37 的图像。](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
+    > [![portal37 Microsoft Endpoint Manager图像。](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
 ### <a name="confirm-endpoint-detection-and-response"></a>确认终结点检测和响应
 
-1. 在应用配置之前，Endpoint Protection Defender for Endpoint Protection 服务。
+1. 在应用配置之前，Endpoint Protection Defender for Endpoint Protection服务。
 
     > [!div class="mx-imgBorder"]
     > [![服务面板 1 的图像。](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
@@ -358,7 +358,7 @@ ms.locfileid: "60159483"
     > [!div class="mx-imgBorder"]
     > [![服务面板 2 的图像。](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. 在设备上运行服务后，设备将显示在 Microsoft Defender 安全中心中。
+3. 服务在设备上运行后，设备将显示在Microsoft Defender 安全中心。
 
     > [!div class="mx-imgBorder"]
     > [![图像Microsoft Defender 安全中心。](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
@@ -392,7 +392,7 @@ ms.locfileid: "60159483"
 
     ![命令行 1 的图像。](images/cb0260d4b2636814e37eee427211fe71.png)
 
-3. 在测试设备上应用该策略后，打开 PowerShell Windows键入 `Get-MpPreference` 。
+3. 在测试设备上应用该策略后，打开 PowerShell Windows并键入 `Get-MpPreference` 。
 
 4. 这应该会以以下行作为响应，内容如下所示：
 

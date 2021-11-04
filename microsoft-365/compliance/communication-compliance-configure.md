@@ -17,15 +17,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c58df514c136c6df2db5d1392a57db1ee6c34bb3
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 2a63f13885311ba4a794ca1c25c5e90d320472f5
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647424"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753513"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -55,7 +56,7 @@ ms.locfileid: "60647424"
 
 如果你没有现有的 Office 365 企业版 E5 套餐，并且想要尝试通信合规性，可以 [添加 Microsoft 365](/office365/admin/try-or-buy-microsoft-365) 到现有订阅，或 [注册试用](https://www.microsoft.com/microsoft-365/enterprise) Office 365 企业版 E5。
 
-## <a name="recommended-actions-preview"></a>建议 (预览) 
+## <a name="recommended-actions-preview"></a>预览 (建议) 
 
 建议的操作可帮助组织充分使用通信合规性功能和现有策略。 建议的操作 **包含在"概述** "页上，可提供见解并汇总组织中通信中的敏感信息类型和不适当的内容活动。
 
@@ -104,9 +105,9 @@ ms.locfileid: "60647424"
 
 使用此选项将用户分配到特定角色组，以区分组织中不同用户的通信合规性访问和职责。
 
-1. 使用 Microsoft 365 组织中的管理员账户凭据登录 [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions)。
+1. 使用 Microsoft 365 合规中心 组织中管理员帐户的凭据登录 Microsoft 365，然后转到"<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**权限"。**</a>
 
-2. 在安全 &amp; 合规中心中，转到“**权限**”。 选择链接以查看和管理 Office 365 中的角色。
+2. 选择链接以查看和管理 Office 365 中的角色。
 
 3. 选择通信合规性角色组之一，然后选择“**编辑角色组**”。
 
@@ -198,7 +199,7 @@ ms.locfileid: "60647424"
 >[!TIP]  
 >想要查看有关设置新通信合规性策略和修正警报的深入演练？ 观看 [此 15](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) 分钟的视频，了解通信合规性策略如何帮助您检测不适当的消息、调查潜在的违反和修正合规性问题。
 
-1. 使用 Microsoft 365 组织中的管理员账户凭据登录 <https://compliance.microsoft.com>。
+1. 使用<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心组织中</a>管理员帐户的凭据登录Microsoft 365帐户。
 
 2. 在 Microsoft 365 合规中心中，选择“**通信合规性**”。
 
@@ -253,7 +254,7 @@ ms.locfileid: "60647424"
 
 当调查策略匹配并针对邮件采取措施时，还可以选择对显示用户名启用匿名处理。
 
-1. 使用 Microsoft 365 组织中的管理员账户凭据登录 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+1. 使用<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>组织中管理员帐户的凭据登录Microsoft 365帐户。
 
 2. 在 Microsoft 365 合规中心中，转到“**通信合规性**”。
 

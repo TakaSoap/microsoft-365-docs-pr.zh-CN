@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 979e1081dd85047286c580907ff9335442ba0b55
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 8fcb3826bc40d9959c3f4bfb95e2a5453f8a211f
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701043"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754381"
 ---
 # <a name="plan-for-insider-risk-management"></a>内部风险管理计划
 
@@ -48,7 +48,7 @@ ms.locfileid: "60701043"
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>规划审阅和调查工作流
 
-选择专门的利益干系人，以定期监视和查看警报和事例[，Microsoft 365 合规中心。](https://compliance.microsoft.com/) 请务必了解如何向内部风险管理中提供的不同角色组分配不同的利益干系人。
+选择专门的利益干系人，以定期监视和查看警报和事例<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">，Microsoft 365 合规中心。</a> 请务必了解如何向内部风险管理中提供的不同角色组分配不同的利益干系人。
 
 >[!IMPORTANT]
 >根据选择) ，确保"内部风险管理"或"内部风险管理管理员"角色组 (中始终至少有一个用户，以便当特定用户离开组织时，内部风险管理配置不会进入"零管理员"方案。
@@ -67,7 +67,7 @@ ms.locfileid: "60701043"
 
 根据计划实施内部风险管理策略的方法，您需要具有适当的Microsoft 365许可订阅，并了解和规划某些解决方案先决条件。
 
-**许可：** 内部风险管理作为各种许可订阅Microsoft 365的一部分。 有关详细信息，请参阅内部风险管理 [入门文章](insider-risk-management-configure.md#subscriptions-and-licensing) 。
+**许可：** 内部风险管理作为各种许可订阅的一Microsoft 365提供。 有关详细信息，请参阅内部风险管理 [入门文章](insider-risk-management-configure.md#subscriptions-and-licensing) 。
 
 如果你没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试内部风险管理，你可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册 E5 Microsoft 365 企业版试用版。 [](https://www.microsoft.com/microsoft-365/enterprise)
 

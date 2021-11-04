@@ -13,16 +13,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: 使用合规性管理器快速入门指南帮助你了解、设置和使用合规性管理器。
-ms.openlocfilehash: 40453034c169c5969694425bea25f6f6b3ec4f84
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: e614c8abb46b9562db45afb0c3e67d990f627ce6
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335738"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747210"
 ---
 # <a name="compliance-manager-quickstart"></a>合规性管理器快速入门
 
@@ -34,11 +35,11 @@ ms.locfileid: "60335738"
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>首次访问：了解合规性管理器
 
-合规性管理器位于 的 Microsoft 365 合规中心 https://compliance.microsoft.com 中。 开始使用合规性管理器之前，组织的全局管理员需要[](compliance-manager-setup.md#set-user-permissions-and-assign-roles)设置用户权限并分配角色。
+合规性管理器位于<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心。</a> 开始使用合规性管理器之前，组织的全局管理员需要[](compliance-manager-setup.md#set-user-permissions-and-assign-roles)设置用户权限并分配角色。
 
 首次访问合规性管理器时，你将看到组织的合规性分数。 合规性管理器已在根据数据保护Microsoft 365评估当前环境。 开始熟悉合规性管理器的最好办法就是了解它显示的内容、它的关键元素以及如何自定义仪表板。
 
-我们的 [合规性管理器概述](compliance-manager.md) 页面是全面查看什么是合规性管理器及其工作方式的最佳第一步。 你可能还需要使用下面的链接直接跳转到文档的关键部分：
+合规性 [管理器概述页面](compliance-manager.md) 是全面查看什么是合规性管理器及其工作方式的最佳第一步。 你可能还需要使用下面的链接直接跳转到文档的关键部分：
 
 - [了解合规性分数](compliance-manager.md#understanding-your-compliance-score)
 - [关键元素概述：控制措施、评估、模板和改进操作](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)

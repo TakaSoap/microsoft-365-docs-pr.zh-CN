@@ -14,13 +14,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: medium
-description: 了解如何配置 Saba 作为学习内容源进行Microsoft Viva Learning。
-ms.openlocfilehash: 07c0148d7e1fefcd920a03426efba77ac91f374b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: 了解如何将 Saba 配置为学习内容源，Microsoft Viva Learning。
+ms.openlocfilehash: 1f8c9610d9c1e747af6e0804bbd7c133de4351cf
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60664896"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755777"
 ---
 # <a name="configure-saba-as-a-content-source-for-microsoft-viva-learning"></a>将 Saba 配置为网站内容Microsoft Viva Learning
 
@@ -42,24 +42,28 @@ ms.locfileid: "60664896"
 1. 标识主要 Saba 云 URL (例如"org".sabacloud.com) 。 如果 API 仪表板 URL org-api.sabacloud.com，主机 URL 将 org.sabacloud.com。
 2. 通过访问 **Saba Cloud**  >  **Admin**  >  **System Admin** Manage  >  **Integrations** API Dashboard 确定  >  **API 仪表板 URL。** 找到 API 仪表板 URL，然后删除"https://"和"-api"，获取主机 URL。
 
+    ![API 仪表板的图像。](../media/learning/saba-a.png)
+
 ### <a name="client-id-and-client-secret"></a>客户端 ID 和客户端密码
 
 1. 在获得主机 URL 的同一屏幕上，复制客户端 ID 和客户端密码（如果已生成）。
 
 2. 如果客户端密码尚不存在，请选择" **生成** "按钮以生成它。
 
+    ![光标悬停在"生成"按钮上的 API 仪表板的图像。](../media/learning/saba-b.png)
+
 ## <a name="configure-in-your-microsoft-365-admin-center"></a>在部署中Microsoft 365 管理中心
 
 你需要在部署中完成Microsoft 365 管理中心。
 
 >[!NOTE]
->你将需要拥有管理员权限才能Microsoft 365这些步骤。
+>你需要拥有管理员权限才能Microsoft 365这些步骤。
 
 1. 登录到[你的Microsoft 365 管理中心。](https://admin.microsoft.com)
 2. 导航到 **"设置"，** 再导航到"**组织设置"。** Select Viva Learning and enable Saba Cloud from the panel.
 3. 填写从 Saba 门户获得的详细信息。
     >[!NOTE]
-    >显示名称是循环式会议的名称，在它下，Saba 学习内容将在 Viva Learning 中为组织用户显示。 如果不输入新名称，则会显示默认名称"Saba Cloud"。
+    >显示名称是盘车的名称，在它下，Saba 学习内容将在 Viva Learning 中显示。 如果不输入新名称，则会显示默认名称"Saba Cloud"。
 4. 选择 **"保存**"以激活 Microsoft Viva Learning 中的 Saba 云Microsoft Viva Learning。 内容可能需要 24 小时才能显示在 Viva Learning。
 
 > [!Note]

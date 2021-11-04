@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用导入工具 d 快速将多个保管人及其关联的数据源添加到Advanced eDiscovery。
-ms.openlocfilehash: 97eb2337fb49863a19b8d55a6dd396e51f4ee8d2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f0d9290d6014b820008408ea6ab9249c0c5a28f4
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151226"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757452"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>将保管人导入Advanced eDiscovery案例
 
-对于Advanced eDiscovery多个保管人的情况，可以使用 CSV 文件（其中包含将保管人添加到事例所必需的信息）一次导入多个保管人。
+对于Advanced eDiscovery多个保管人的情况，可以使用 CSV 文件一次导入多个保管人，其中包含将保管人添加到事例所必需的信息。
 
 ## <a name="import-custodians"></a>导入保管人
 
@@ -54,20 +54,27 @@ ms.locfileid: "60151226"
 |**Exchange已启用** | 要包含或不包含保管人邮箱的 TRUE/FALSE 值。      |
 |**OneDrive已启用** | 要包含或不包含保管人帐户的 TRUE/FALSE OneDrive for Business帐户。 |
 |**Is OnHold**        | TRUE/FALSE 值，指示是否将保管人数据源放在保留状态。 <sup>1</sup>     |
-|**Workload1 类型**         |指示要与保管人关联的数据源类型的字符串值。 可能的值包括： <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
-|**Workload1 位置**     | 根据您的工作负荷类型，这将是数据源的位置。 例如，邮箱的电子邮件地址Exchange或网站 URL SharePoint URL。 |
+|**Workload1 类型**         |指示要与保管人关联的数据源类型的字符串值。 可能的值包括： <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<sup>2</sup><br/>- YammerMailbox<sup>2</sup>| 
+|**Workload1 位置**     | 根据您的工作负荷类型，这将是数据源的位置。 例如，用户邮箱Exchange URL 或网站SharePoint URL。 |
 |||
 
 > [!NOTE]
-> <sup>1</sup> 您可以使用保管人导入过程和 CSV 文件将最多 1，000 个邮箱和 100 个网站置于保留状态。 您可以使用此过程向案例添加超过 1，000 个保管人，但保留限制仍然适用。 有关保留限制详细信息，请参阅 Advanced eDiscovery[中的限制](limits-ediscovery20.md#hold-limits)。
+> <sup>1</sup> 使用保管人导入过程和 CSV 文件，最多可将 1，000 个邮箱和 100 个网站置于保留状态。 您可以使用此过程向案例添加超过 1，000 个保管人，但保留限制仍然适用。 有关保留限制详细信息，请参阅 Advanced eDiscovery[中的限制](limits-ediscovery20.md#hold-limits)。
+<br>
+> <sup>2</sup> 在 CSV 文件中添加 TeamsMailbox 和 YammerMailbox 工作负载时，默认情况下会自动添加组网站 (TeamSite 和 YammerSite) 。 无需在 CSV 文件中单独指定 TeamsSite 和 YammerSite。
 
 下面是包含保管人信息的 CSV 文件的示例：<br/><br/>
 
 |Custodian contactEmail      | Exchange已启用 | OneDrive已启用 | Is OnHold | Workload1 类型 | Workload1 位置             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
-|robinc@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
-|pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
+|robinc@contoso.onmicrosoft.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
+|pillarp@contoso.onmicrosoft.com | TRUE             | TRUE             | TRUE      | |  |
+|.johnj@contoso.onmicrosoft.com|TRUE|TRUE|TRUE||
+|sarad@contoso.onmicrosoft.com|TRUE|TRUE|TRUE|ExchangeMailbox|.saradavis@contoso.onmicrosoft.com
 ||||||
+
+> [!NOTE]
+> 若要导入非活动邮箱作为保管人或将非活动邮箱与另一个保管人关联，请向非活动邮箱的 UPN 地址添加"."前缀。
 
 ## <a name="custodian-and-data-source-validation"></a>保管人和数据源验证
 
@@ -75,19 +82,19 @@ ms.locfileid: "60151226"
 
 1. 验证保管人及其数据源。
 
-2. 索引每个保管人的所有数据源，如果 CSV 文件中 **Is OnHold** 属性设置为 TRUE (则将其保留) 。
+2. 如果 CSV 文件中 **Is OnHold** 属性设置为 TRUE，则索引每个保管人的所有数据源， (将其保留) 。
 
 ### <a name="custodian-validation"></a>保管人验证
 
-目前，我们仅支持导入包含在组织的 Azure AD Azure Active Directory (中的保管) 。
+目前，我们仅支持导入组织托管服务中包含的保管Azure Active Directory (Azure AD) 。
 
-保管人导入工具使用 CSV 文件的 **Custodian contactEmail** 列中的 UPN 值查找并验证保管人。 经验证的保管人将自动添加到案例，并列在案例的"数据源 **"选项卡** 上。 如果无法验证保管人，将在"作业"选项卡上列出的 BulkAddCustodian 作业的错误日志中列出保管人。  未验证保管人不会添加到案例或列在"数据源 **"选项卡** 上。
+保管人导入工具使用 CSV 文件的 **Custodian contactEmail** 列中的 UPN 值查找并验证保管人。 经验证的保管人将自动添加到案例，并列在案例的" **数据源** "选项卡上。 如果无法验证保管人，将在"作业"选项卡上列出的 BulkAddCustodian 作业的错误日志中列出保管人。  未验证保管人不会添加到案例或列在"数据源 **"选项卡** 上。
 
 ### <a name="data-source-validation"></a>数据源验证
 
 验证保管人并添加到案例后，OneDrive添加与保管人关联的每个主邮箱和邮箱帐户。
 
-但是，如果找不到与保管人关联的任何其他数据源 (例如 SharePoint 网站、Microsoft Teams、Microsoft 365 组或 Yammer 组) ，则没有分配给保管人，并且"未验证"值显示在数据源上保管人旁边的"状态"**列中。** 选项卡。
+但是，如果找不到与保管人关联的任何其他数据源 (例如 SharePoint 网站、Microsoft Teams、Microsoft 365 组或 Yammer 组) ，则没有一个分配给保管人，且"未验证"值将显示在数据源上保管人旁边的"状态"**列中。** 选项卡。
 
 为保管人添加经过验证的数据源：
 

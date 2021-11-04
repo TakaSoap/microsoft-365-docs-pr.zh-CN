@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: 7b5a6566f9e30d0510dad208ba0dbee503a1e2aa
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: a1ac660e9abb389fb45b29b9934d4aa949bfb69c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587989"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703235"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -299,9 +299,9 @@ ms.locfileid: "60587989"
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>将内容保留一段特定时间
 
-当将策略配置为保留内容时，可以选择将项保留特定天数、月数或年数。 或者，永久保留项目。 保留期限是从内容创建的时间开始计算，而不是从应用保留策略的时间开始计算。
+在将保留标签或策略配置为保留内容时，可以选择将项目保留特定天数、月数或年数。 或者，永久保留项目。 保持期不是从分配策略的时间开始计算，而是根据指定的保留期开始时间计算得出。
 
-针对保留期的开始，你还可以选择内容创建的时间，或者上次修改内容的时间（仅支持文件和 SharePoint、OneDrive 和 Microsoft 365 组）。
+对于保留期的开始时间，可以选择内容创建的时间，或者上次修改内容的时间（仅支持文件和 SharePoint、OneDrive 和 Microsoft 365 组）。 对于保留标签，可以从内容标记和事件发生时开始保留期。
 
 示例：
 
@@ -317,7 +317,7 @@ ms.locfileid: "60587989"
 
 保留策略可以保留然后删除项，或删除并不保留旧项。
 
-在这两种情况下，如果策略删除项，则需要了解指定的时间段根据创建或修改项的时间计算，而不根据分配策略的时间计算。
+在这两种情况下，如果策略删除了项目，请务必了解，指定的时间段不是从分配策略的时间开始计算，而是根据指定的保留期开始时间计算得出。 例如，从创建、修改或标记项的时间开始。
 
 因此，请先考虑现有内容的期限以及策略对该内容的影响。在分配新策略之前，可能还想要将其传达给用户，以便用户有时间评估可能产生的影响。
 

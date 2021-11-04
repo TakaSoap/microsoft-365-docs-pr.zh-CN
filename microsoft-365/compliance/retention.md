@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: c8c5fc71cc7f6757cb40cc5ae649021ba020dcc2
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 6f147de6412db71a17e8bb4a8b79968160d0fe3e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432683"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701933"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -142,7 +142,7 @@ ms.locfileid: "60432683"
   
 - **允许组织中的人员将保留标签手动应用于** Outlook 和 Outlook 网页版、OneDrive、SharePoint​​ 和 Microsoft 365 组中的内容。用户通常最了解自己处理的内容的类型，因此他们可以对内容进行分类，并应用适当的保留设置。 
     
-- **将保留标签自动应用于** 符合特定条件的内容，如内容包含： 
+- 如果它符合特定条件，则 **自动将保留标签应用到内容**。这些特定条件包括在电子邮件或 Teams 中共享的云附件，或者在内容包含以下项时： 
     - 特定类型敏感信息。
     - 与所创建的查询匹配的特定关键字。
     - 可训练分类器的模式匹配。
@@ -185,14 +185,14 @@ ms.locfileid: "60432683"
 
 #### <a name="retention-label-policies-and-locations"></a>保留标签策略和位置
 
-不同类型的保留标签可发布到不同位置，具体视保留标签用途而定。
+可将保留标签发布到不同位置，具体视保留标签用途而定。
   
 | 如果保留标签是… | 可以将标签策略应用于… |
 |:-----|:-----|
 |发布给管理员和最终用户  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 组  <br/> |
 |根据敏感信息类型或可训练的分类器自动应用  <br/> |Exchange、SharePoint、OneDrive  <br/> |
 |根据关键字或查询自动应用  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 组  <br/> |
-   
+|自动应用于云附件  <br/> |SharePoint、OneDrive、Microsoft 365 组  <br/> |
 
 Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签。 若要保留并从这些位置中删除内容，请改用保留策略。
 
@@ -246,7 +246,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 |保留设置可以是“保留后删除”、“仅保留”或“仅删除” |是 |是 |
 |支持的工作负载： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 组 <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 | <br /> 是，但公用文件夹除外 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否 <br /> 否 |
 |自动应用保留 | 是 | 是 |
-|基于条件应用保留 <br /> - 敏感信息类型、KQL 查询、可训练的分类器| 否 | 是 |
+|基于条件应用保留 <br /> - 敏感信息类型、KQL 查询和关键字、可训练的分类器、云附件| 否 | 是 |
 |手动应用保留 | 否 | 是 |
 |最终用户交互 | 否 | 是 |
 |在内容移动时仍继续应用在内容上 | 否 | 是，在您的 Microsoft 365 租户中 |

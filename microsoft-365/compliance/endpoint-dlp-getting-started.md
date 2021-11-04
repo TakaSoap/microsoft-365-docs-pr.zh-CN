@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 终结点数据丢失防护，以监视文件活动，并将针对这些文件的保护措施实施到终结点。
-ms.openlocfilehash: 0d7902076885bd79d4a2d57e7be85fffbc5770fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22f7e2eb1476543eb1aed9d772333f3ae7843477
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200517"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703721"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>终结点数据丢失防护入门
 
 Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据丢失防护 (DLP) 功能套件的一部分，可用于发现和保护 Microsoft 365 服务中的敏感项目。 有关 Microsoft 所有 DLP 产品/服务的更多信息，请参阅[数据丢失防护概述](dlp-learn-about-dlp.md)。 若要了解有关终结点 DLP 的详细信息，请参阅[了解终结点数据丢失防护](endpoint-dlp-learn-about.md)
 
-通过 Microsoft 终结点 DLP，你可以监视 Windows 10 设备并检测何时使用和共享敏感项目。 这为你提供了所需的可见性和控制力，以确保正确使用和保护它们，并帮助防止可能危害它们的危险行为。
+借助 Microsoft Endpoint DLP，你可以监视运行 Catalina 10.15 及更高版本的 Windows 10 设备和 macOS 设备 *（预览版）*。 设备载入后，DLP 将检测何时使用和共享敏感项目。 这为你提供了所需的可见性和控制力，以确保正确使用和保护它们，并帮助防止可能危害它们的危险行为。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -77,18 +77,18 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 - 安全管理员
 - 合规性数据管理员
 
-### <a name="prepare-your-endpoints"></a>准备终结点
+### <a name="prepare-your-windows-10-endpoints"></a>准备 Windows 10 终结点
 
 确保你计划部署终结点 DLP 的 Windows 10 设备满足这些要求。
 
 1. 必须运行 Windows 10 x64 内部版本 1809 或更高版本。
 
-2. 反恶意软件客户端的版本为 4.18.2009.7 或更高版本。 若要查看当前版本，请打开“Windows 安全中心”应用，选择“设置”图标，然后选择“关于”。 “反恶意软件客户端版本”下列出了版本号。 通过安装 Windows 更新 KB4052623，更新到最新的反恶意软件客户端版本。
+1. 反恶意软件客户端的版本为 4.18.2009.7 或更高版本。 若要查看当前版本，请打开“Windows 安全中心”应用，选择“设置”图标，然后选择“关于”。 “反恶意软件客户端版本”下列出了版本号。 通过安装 Windows 更新 KB4052623，更新到最新的反恶意软件客户端版本。
 
    > [!NOTE]
    > 无需激活 Windows 安全组件，可运行独立于 Windows 安全中心状态的终结点 DLP，但必须启用[实时保护和行为监视器](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)）。
 
-3. 已安装以下 Windows 更新。
+1. 已安装以下 Windows 更新。
 
    > [!NOTE]
    > 这些更新不是将设备加入终结点 DLP 的先决条件，但它们包含对重要问题的修复，因此必须在使用该产品之前完成安装。
@@ -98,19 +98,23 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
    - 对于 Windows 10 2004 - KB4568831、KB4577063
    - 对于运行 Office 2016（而未运行任何其他 Office 版本）的设备 - KB4577063
 
-4. 所有设备必须是以下设备之一：
+1. 所有设备必须是以下设备之一：
 
    - [已建立 Azure Active Directory (Azure AD) 连接](/azure/active-directory/devices/concept-azure-ad-join)
    - [已建立混合 Azure AD 联接](/azure/active-directory/devices/concept-azure-ad-join-hybrid)。
    - [已完成 AAD 注册](/azure/active-directory/user-help/user-help-register-device-on-network)
 
-5. 在终结点设备上安装 Microsoft Chromium Edge 浏览器，以对上传到云活动执行策略操作。 请参见[下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
+1. 在终结点设备上安装 Microsoft Chromium Edge 浏览器，以对上传到云活动执行策略操作。 请参见[下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。 如果设备使用 Chrome 浏览器，你可以安装 [Microsoft 合规性扩展](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension)来强制执行上传到云活动的策略操作。
 
-6. 如果使用的是 Microsoft 365 应用版的月度企业版 2004-2008，则终结点 DLP 的已知问题会分类 Office 内容，需要更新到版本 2009 或更高版本。 参见 [Microsoft 365 应用版的更新历史记录（按日期列出）](/officeupdates/update-history-microsoft365-apps-by-date)。 要了解有关此问题的更多信息，请参阅[有关 2020 年当前频道发行的发行说明](/officeupdates/current-channel#version-2010-october-27)。
+1. 如果使用的是 Microsoft 365 应用版的月度企业版 2004-2008，则终结点 DLP 的已知问题会分类 Office 内容，需要更新到版本 2009 或更高版本。 参见 [Microsoft 365 应用版的更新历史记录（按日期列出）](/officeupdates/update-history-microsoft365-apps-by-date)。 要了解有关此问题的更多信息，请参阅[有关 2020 年当前频道发行的发行说明](/officeupdates/current-channel#version-2010-october-27)。
 
-7. 如果你有使用设备代理连接到 internet 的端点，请按照 [配置设备代理和端点 DLP 的 internet 连接设置](endpoint-dlp-configure-proxy.md)中的过程进行操作。
+1. 如果你有使用设备代理连接到 internet 的端点，请按照 [配置设备代理和端点 DLP 的 internet 连接设置](endpoint-dlp-configure-proxy.md)中的过程进行操作。
 
-## <a name="onboarding-devices-into-device-management"></a>将设备载入设备管理
+## <a name="prepare-your-macos-devices-preview"></a>准备 macOS 设备（预览）
+
+请参阅[将 macOS 设备载入 Microsoft 365 概述（预览版）](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+
+## <a name="onboarding-windows-10-devices-into-device-management"></a>将 Windows 10 设备载入设备管理
 
 必须先启用设备监视功能并载入终结点，然后才能监视和保护设备上的敏感项目。 这两项操作都在 Microsoft 365 合规门户中完成。
 

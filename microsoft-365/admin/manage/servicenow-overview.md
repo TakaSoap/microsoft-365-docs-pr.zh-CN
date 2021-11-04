@@ -17,18 +17,18 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow 的作用域认证应用程序安装和配置指南。
-ms.openlocfilehash: c5d0bf57eb037bd19b9666f9b3684249986d8f2e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 28b156cc9f9062863868550f2aac216b8d92a403
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661698"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754195"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Microsoft 365 ServiceNow 配置概述的集成
 
 **Microsoft 365支持集成** 使您可以将Microsoft 365、支持和服务运行状况与 ServiceNow 实例集成。 你可以研究 Microsoft 已知和已报告的问题、解决事件、使用 Microsoft 建议的解决方案完成任务，并在必要时上报给 Microsoft 人员协助支持。
 
-For the **Microsoft 365 support integration** app from the ServiceNow store， go to the [servicenow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+For the **Microsoft 365 support integration** app from the ServiceNow store， go to the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
 ## <a name="key-features"></a>关键功能
 

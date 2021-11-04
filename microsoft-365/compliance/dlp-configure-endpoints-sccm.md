@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用 Configuration Manager 在设备上部署配置包，以便它们可以载入服务。
-ms.openlocfilehash: 15561e21dd93f8742dea48cf8c2eac2eef7e13fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1d551f0411910f1a8db99ee76a61204c8c475348
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194509"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754751"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>使用 Configuration Manager 载入 Windows 10 设备
 
@@ -30,9 +30,9 @@ ms.locfileid: "60194509"
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>使用移动设备载入System Center Configuration Manager
 
-1. 打开 Configuration Manager 配置.zip文件 *(DeviceComplianceOnboardingPackage.zip)* 从服务载入向导下载的内容。 您还可以从 Microsoft 合规性中心 [获取程序包](https://compliance.microsoft.com/)。
+1. 打开 Configuration Manager 配置.zip文件 *(DeviceComplianceOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从 Microsoft 365 合规中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">获取程序包</a>。
 
-2. 在导航窗格中，选择 **"设置**  >  **载入**  >  **"。**
+2. 在导航窗格中，选择 <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**"设置**</a>  >  **载入**  >  **"。**
 
 3. 在"**部署方法"** 字段中，选择 **"Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602"。**
 
@@ -45,21 +45,21 @@ ms.locfileid: "60194509"
 7. 选择要将程序包部署到的预定义设备集合。
 
 > [!NOTE]
-> Microsoft 365在[OOBE](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87)体验阶段，终结点数据丢失防护不支持 (载入) 阶段。 确保用户在运行完安装或升级后Windows OOBE。
+> Microsoft 365终结点数据丢失防护不支持在 OOBE 的"开箱即用体验"阶段[ (载入) ](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87)载入。 确保用户在运行完安装或升级Windows OOBE。
 
 > [!TIP]
 > 载入设备后，你可以选择运行检测测试来验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)设备运行检测测试。
 >
 > 请注意，在 Configuration Manager 应用程序上创建检测规则可以持续检查设备是否已载入。 应用程序是一种与包和程序不同的对象类型。
-> 如果由于挂起的 OOBE (任何其他原因) 未载入设备，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
+> 如果由于 OOBE 完成 (任何其他原因) 未载入设备，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
 >
 > 通过创建检测规则检查"OnboardingState"注册表值是否为 (= 1，REG_DWORD) 实现此行为。
 > 此注册表值位于"HKLM\SOFTWARE\Microsoft\Windows高级威胁防护\状态"下。
-有关详细信息，请参阅[Configure Detection Methods in System Center 2012 R2 Configuration Manager。](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)
+有关详细信息，请参阅 Configure [Detection Methods in System Center 2012 R2 Configuration Manager。](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)
 
 ### <a name="configure-sample-collection-settings"></a>配置示例集合设置
 
-对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft Defender 安全中心 提交文件进行深入分析时是否可以从设备收集示例。
+对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft Defender 安全中心 请求提交文件进行深入分析时，是否可以从设备收集示例。
 
 > [!NOTE]
 > 这些配置设置通常通过 Configuration Manager 完成。
@@ -115,7 +115,7 @@ Value: 0 or 1
 > [!NOTE]
 > 阻止这些活动可能会中断合法的业务流程。 最佳方法是设置要审核的所有内容，确定哪些内容可安全打开，然后在没有误报检测的终结点上启用这些设置。
 
-**网络保护**
+**网络保护功能**
 
 在审核或阻止模式下启用网络保护之前，请确保已安装反恶意软件平台更新，该更新可以从支持 [页面获取](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
 
@@ -140,11 +140,11 @@ Value: 0 or 1
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>使用 System Center 2012 R2 Configuration Manager 的载出设备
 
-1. 从 Microsoft 合规性中心获取载 [出包](https://compliance.microsoft.com/)：
+1. 从以下版本<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">获取Microsoft 365 合规中心：</a>
 
-2. 在导航窗格中，选择 **"设置**  >   **载入** >  **""载出"。**
+2. 在导航窗格中，选择 <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**"设置**</a>  >   **载入** >  **""载出"。**
 
-3. 选择Windows 10操作系统。
+3. 选择Windows 10作为操作系统。
 
 4. 在"**部署方法"** 字段中，选择 **"Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602"。**
 
@@ -164,11 +164,11 @@ Value: 0 or 1
 
 如果你正在使用当前分支Microsoft Endpoint Configuration Manager，请使用 Configuration Manager 控制台中的内置 Microsoft Defender for Endpoint 仪表板。 有关详细信息，请参阅 [Microsoft Defender 高级威胁防护 - 监视](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
 
-如果使用 2012 R2 配置System Center，则监控由两部分组成：
+如果使用的是 System Center 2012 R2 Configuration Manager，则监控由两部分组成：
 
-1. 确认配置包已正确部署，并且正在 (或已成功) 网络中设备上运行配置包。
+1. 确认配置包已正确部署，并且正在 (或已成功) 在网络中设备上运行配置包。
 
-2. 检查设备是否符合 Microsoft 365 Endpoint 数据丢失防护服务 (这可确保设备可以完成载入过程，并继续将数据报告给服务) 。
+2. 检查设备是否符合 Microsoft 365 Endpoint 数据丢失防护服务 (这可确保设备可以完成载入过程，并可以继续将数据报告给服务) 。
 
 ### <a name="confirm-the-configuration-package-has-been-correctly-deployed"></a>确认配置包已正确部署
 
@@ -199,7 +199,7 @@ Path: “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status”
 Name: “OnboardingState”
 Value: “1”
 ```
-有关详细信息，请参阅 Introduction [to compliance settings in System Center 2012 R2 Configuration Manager。](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10))
+有关详细信息，请参阅 introduction [to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10))。
 
 ## <a name="related-topics"></a>相关主题
 - [使用Windows 10载入设备](dlp-configure-endpoints-gp.md)

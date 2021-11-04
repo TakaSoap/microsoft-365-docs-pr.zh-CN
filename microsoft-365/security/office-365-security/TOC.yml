@@ -27,7 +27,7 @@
         - name: 用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Microsoft 365 Defender 门户概述
-          href: ../defender/overview-security-center.md
+          href: ../defender/microsoft-365-defender.md
         - name: '"电子邮件实体"页面'
           href: mdo-email-entity-page.md
         - name: AIR 述
@@ -136,18 +136,22 @@
           href: preset-security-policies.md
         - name: 保护策略的配置分析器
           href: configuration-analyzer-for-security-policies.md
-        - name: Defender for Office 365 中的攻击模拟器
-          href: attack-simulator.md
-        - name: 开始使用攻击模拟培训
-          href: attack-simulation-training-get-started.md
-        - name: 通过攻击模拟培训模拟网络钓鱼攻击
-          href: attack-simulation-training.md
-        - name: 创建用于攻击模拟培训的自定义负载
-          href: attack-simulation-training-payloads.md
-        - name: 通过攻击模拟培训获得见解
-          href: attack-simulation-training-insights.md
-        - name: 攻击模拟培训部署注意事项和常见问题解答
-          href: attack-simulation-training-faq.md
+        - name: Defender for Office 365 中的攻击模拟训练
+          items:
+            - name: 开始使用攻击模拟培训
+              href: attack-simulation-training-get-started.md
+            - name: 通过攻击模拟培训模拟网络钓鱼攻击
+              href: attack-simulation-training.md
+            - name: 创建用于攻击模拟训练的自定义负载
+              href: attack-simulation-training-payloads.md
+            - name: 攻击模拟训练中的模拟自动化
+              href: attack-simulation-training-simulation-automations.md
+            - name: 攻击模拟训练中的有效负载自动化
+              href: attack-simulation-training-payload-automations.md
+            - name: 攻击模拟训练中的见解和报告
+              href: attack-simulation-training-insights.md
+            - name: 攻击模拟培训部署注意事项和常见问题解答
+              href: attack-simulation-training-faq.md
         - name: 为第三方网络钓鱼模拟和 SecOps 邮箱配置送达
           href: configure-advanced-delivery.md
         - name: 用于配置 EOP 和 Defender for Office 365 安全性的建议设置

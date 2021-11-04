@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 了解如何访问和使用 Microsoft 服务信任门户来帮助实现安全性、隐私和合规性实践。
-ms.openlocfilehash: bbfc84b2ada1e75407ca8c1c42855bdbf336bbf2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c74cd1e12d7ca2d6ac7adeb3ace921f54fe4b5a1
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207315"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757187"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 
@@ -29,7 +29,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 ## <a name="accessing-the-service-trust-portal"></a>访问服务信任门户
 
-服务信任门户包含 Microsoft 实施用于保护云服务和客户数据中心的控制和流程的详细信息。 若要访问服务信任门户上的某些资源，必须使用 Microsoft 云服务帐户（ (Azure Active Directory 组织帐户或 Microsoft 帐户) ）以经过身份验证的用户身份登录，并查看并接受 Microsoft 合规性材料保密协议。
+服务信任门户包含 Microsoft 实施用于保护云服务和客户数据中心的控制和流程的详细信息。 若要访问服务信任门户上的某些资源，必须使用 Microsoft 云服务帐户 (（Azure Active Directory 组织帐户或 Microsoft 帐户) ）以经过身份验证的用户身份登录，并查看并接受 Microsoft 合规性材料保密协议。
 
 ### <a name="existing-customers"></a>现有客户
 
@@ -46,7 +46,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 若要创建新帐户或创建试用帐户，请使用下列注册表单之一 (用于试用帐户) 访问 STP。
 
-- 注册新的 Microsoft 365 商业应用版[试用帐户或](https://go.microsoft.com/fwlink/p/?LinkID=507653)新的 Office 365 企业版[试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- 注册新的 Microsoft 365 商业应用版[试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=507653)或新的 Office 365 企业版[试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 - 注册新的 [Dynamics 365 试用帐户](https://go.microsoft.com/fwlink/?LinkId=252780)
 
@@ -69,7 +69,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 ### <a name="compliance-manager"></a>合规性管理器
 
 > [!IMPORTANT]
-> 合规性管理器已从服务信任门户移动到其新位置的 Microsoft 365 合规中心[。](https://compliance.microsoft.com/) 所有客户数据已移至新位置，因此你可以继续使用合规性管理器而不会中断。 有关设置 [信息，请参阅合规性](compliance-manager.md) 管理器文档，了解新功能。 尽管经典版本的合规性管理器仍保留在服务信任门户中，但鼓励所有用户在服务信任门户Microsoft 365 合规中心。
+> 合规性管理器已从服务信任门户移动到其新位置的 Microsoft 365 合规中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">。</a> 所有客户数据已移至新位置，因此你可以继续使用合规性管理器而不会中断。 有关设置 [信息，请参阅合规性](compliance-manager.md) 管理器文档，了解新功能。 尽管经典版本的合规性管理器仍保留在服务信任门户中，但鼓励所有用户在服务信任门户Microsoft 365 合规中心。
 
 ### <a name="trust-documents"></a>信任文档
 
@@ -91,7 +91,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 提供有关 Microsoft 云服务的特定于行业和地区的合规性信息。
 
-- **行业：** 目前，此页为金融服务行业提供了特定于行业的登陆页面。 其中包含合规性产品/服务、常见问题解答和成功案例等信息。 面向更多行业的资源将在未来发布，但您可以通过访问 STP 中的"信任文档和数据保护"> **找到** 更多行业的资源。
+- **行业：** 目前，此页为金融服务行业提供了特定于行业的登陆页面。 其中包含合规性产品/服务、常见问题解答和成功案例等信息。 面向更多行业的资源将在未来发布，但您可以通过在 STP 中访问"信任文档和数据保护"> **找到更多** 行业的资源。
 
 - **区域：** 提供有关 Microsoft 云服务遵守各种国家/地区法律的法律意见。 特定国家/地区包括澳大利亚、加拿大、捷克共和国、丹麦、德国、波兰、罗马尼亚、西班牙和英国。
 
@@ -109,7 +109,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 - **设置：** 此页面允许你为合规性管理器分配用户角色 (经典) 。
 
-- **用户隐私设置：** 此页面允许你导出包含特定用户的合规性管理器 () 项分配的报告。 还可以将所有行动项重新分配给其他用户，并删除指定用户分配的任何行动项。
+- **用户隐私设置：** 此页面允许您导出包含特定用户的合规性管理器 () 操作项分配的报告。 还可以将所有行动项重新分配给其他用户，并删除指定用户分配的任何行动项。
 
 ### <a name="search"></a>搜索
 

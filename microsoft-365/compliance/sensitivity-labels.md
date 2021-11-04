@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: cc83349a1c4fda3b95665ce13cb3e82bbf8610b3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b43ec6b8d529fe0f5c2ed89ed58c8fc122ada66e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192123"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668318"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -178,7 +178,7 @@ ms.locfileid: "60192123"
 
 配置标签策略时，可以执行以下操作：
 
-- **选择可查看标签的用户和组。** 可以将标签发布到 Azure AD 中任何特定用户或启用电子邮件的安全组、通讯组或 Microsoft 365 组（它们可以具有[动态成员身份](/azure/active-directory/users-groups-roles/groups-create-rule)）。
+- **选择可查看标签的用户和组。** 可以将标签发布到 Azure AD 中任何特定用户或启用电子邮件的安全组、通讯组或 Microsoft 365 组（它们可以具有 [动态成员身份](/azure/active-directory/users-groups-roles/groups-create-rule)）。
 
 - 为未标记文档和电子邮件以及新建容器 **指定默认标签**（在已 [为 Microsoft Teams、Microsoft 365 组和 SharePoint 网站启用敏感度标签](sensitivity-labels-teams-groups-sites.md) 时），然后现在 [为 Power BI 内容](/power-bi/admin/service-security-sensitivity-label-default-label-policy) 指定默认标签。 你可以为所有四种类型项目指定相同或不同的标签。 用户可以更改已应用的默认敏感度标签，以更好地匹配其内容或容器的敏感度。
     
@@ -237,11 +237,13 @@ ms.locfileid: "60192123"
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>敏感度标签和 Azure 信息保护
 
-在 Windows 计算机上的 Microsoft 365 应用中使用敏感度标签时，可选择使用 Office 应用或 Azure 信息保护客户端内置的标签。
+在 Windows 计算机上的 Microsoft 365 应用版中使用敏感度标签时，可以选择使用 Office 应用中内置的标签或 [Azure 信息保护](/azure/information-protection/rms-client/aip-clientv2)客户端。
 
-默认情况下，安装 Azure 信息保护客户端时，将关闭这些应用中的内置标记功能。 有关详细信息（包括如何更改此默认行为），请参阅 [Office 内置标签客户端和 Azure 信息保护客户端](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)。
+由于内置标签不使用 Office 加载项（而 Azure 信息保护客户端会使用该加载项），因此这些标签具有更强的稳定性和更佳的性能优势。 它们还支持最新功能，如高级分类器。
 
-即使在 Office 应用中使用内置标签时，也可以将 Azure 信息保护统一标签客户端与灵敏度标签配合使用以实现以下目的：
+默认情况下，安装 Azure 信息保护客户端时，将关闭这些应用中的内置标记功能。 若要更改此默认行为，并对 Office 应用使用内置标签，请参阅 [Office 内置标签客户端和 Azure 信息保护客户端](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)。
+
+如果在 Office 应用中安装 Azure 信息保护客户端但将其禁用，则在将 Azure 信息保护客户端与敏感标签结合使用时，你可以获得以下方面的好处：
 
 - 扫描仪发现本地存储的敏感信息，然后（可选）为该内容添加标签
 
@@ -251,7 +253,7 @@ ms.locfileid: "60192123"
 
 - PowerShell 模块发现本地文件中的敏感信息，然后应用或删除这些文件中的标签和加密
 
-如果你不熟悉 Azure 信息保护，或者你是刚迁移标签的现有 Azure 信息保护客户，请参阅 Azure 信息保护文档中的[选择用于 Windows 计算机的标签客户端](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)。
+如果你不熟悉 Azure 信息保护，请参阅 Azure 信息保护文档中的[选择 Windows 标签解决方案](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)。
 
 ### <a name="azure-information-protection-labels"></a>Azure 信息保护标签
 

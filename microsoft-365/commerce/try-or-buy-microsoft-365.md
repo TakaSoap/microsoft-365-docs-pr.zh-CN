@@ -22,16 +22,16 @@ ms.custom:
 search.appverid: GEA150
 description: 注册 30 天免费试用版，Microsoft 365 商业标准版、Microsoft 365 商业高级版或Microsoft 365 商业应用版。
 ms.date: 08/07/2020
-ms.openlocfilehash: cb9d811f014fa0460e5030b794caf687df4ca4ae
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 10ad9f24d7e34da30cfe5b62207e90275a0649c0
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195757"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754393"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>试用或购买Microsoft 365商业版订阅
 
-Microsoft 365企业版是一种订阅服务，允许你在云中运行组织，同时 Microsoft 负责你的 IT 工作。 Microsoft 管理设备、防范实际威胁，为组织提供最新的业务软件。 你可以注册免费试用版订阅，Microsoft 365 商业标准版Microsoft 365 商业高级版或Microsoft 365 商业应用版试用 30 天。
+Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组织，同时 Microsoft 会负责你的 IT 工作。 Microsoft 管理设备、防范实际威胁，为组织提供最新的业务软件。 你可以注册免费试用版订阅，Microsoft 365 商业标准版、Microsoft 365 商业高级版或Microsoft 365 商业应用版试用 30 天。
 
 > [!NOTE]
 > 注册免费试用版时，必须使用信用卡。 免费试用期结束时，试用版订阅将自动转换为付费订阅。 在试用期结束之前，不会对信用卡进行计费。
@@ -39,7 +39,7 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行组织，�
 ::: moniker range="o365-21vianet"
 
 > [!IMPORTANT]
-> **由世纪Office 365运营的云的支付选项** 不接受国际信用卡。 您可以通过以下方式支付订阅费用：
+> **由世纪Office 365中国运营的云的支付选项** 不接受国际信用卡。 您可以通过以下方式支付订阅费用：
 >
 > - 发票
 > - 使用支付银联或中国银联的联机付款证明将采用 Fapiaos 的形式提供。 您可以在付款大约三 （3） 天后向 [发票系统提交发票](https://go.microsoft.com/fwlink/p/?LinkId=395314) 请求。 有关详细信息，请参阅 [申请由世纪互联运营的 Office 365 的发票](../admin/services-in-china/apply-for-a-fapiao.md)。
@@ -48,14 +48,14 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行组织，�
 
 ## <a name="before-you-begin"></a>准备工作
 
-无需现有 Microsoft 帐户注册免费试用版。 对于本文中的所有其他过程，你必须是组织的全局管理员或帐单管理员。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
+无需现有 Microsoft 帐户注册免费试用版。 对于本文中的所有其他过程，你必须是组织的全局管理员或帐单管理员。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="try-a-free-trial-subscription"></a>试用免费试用版订阅
 
 你是新客户，并且还没有 Microsoft 帐户？ 使用以下步骤创建帐户并注册 Microsoft 365 商业标准版、Microsoft 365 商业高级版 或 Microsoft 365 商业应用版。
 
 1. 转到<a href="https://www.aka.ms/office365signup" target="_blank">"Microsoft 365产品"网站</a>。
-2. 选择要注册的计划，例如"Microsoft 365 商业标准版"，**向下滚动** 页面，然后选择"免费试用 **1 个月"。**
+2. 选择要注册的计划，例如"Microsoft 365 商业标准版"，向下滚动页面，然后选择"免费试用 **1 个月"。**
 3. 下一页，按照步骤设置帐户。
 4. 注册过程可能需要几分钟才能完成。 完成后 \' ，即可为订阅启动安装向导。 有关设置订阅的信息，请参阅下[一步。](#next-steps)
 
@@ -70,8 +70,8 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行组织，�
 3. 在"**许可证"** 部分，选择"**购买订阅"。**
 4. 选择订阅的每月承诺或年度承诺，然后选择"签出 **"。**
 5. On the next page， verify the subscription， and select **Checkout**.
-6. 下一页上，按此顺序验证 **"售达地址**"、"计费 **到信息"** 和"**项目"。** 如果需要进行更改，请选择适用 **部分旁边的"** 更改"。
-7. 完成后， \' 选择接受协议 **&下订单。**
+6. 下一页上，按此顺序验证 **"售达地址**"、"计费 **到** 信息"**和"项目"。** 如果需要进行更改，请选择适用 **部分旁边的"** 更改"。
+7. 完成后， \' 选择接受协议 **&下订单**。
 
 ## <a name="extend-your-trial"></a>延长试用期
 
@@ -86,7 +86,7 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行组织，�
 
 ## <a name="cancel-your-free-trial-subscription"></a>取消免费试用版订阅
 
-如果你决定在免费试用期结束之前取消试用订阅，请转到Microsoft 365 管理中心并关闭[定期计费](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。 试用版将在你的月结束时自动过期，并且你的信用卡 \' 不会收费。
+如果你决定在免费试用期结束之前取消试用订阅，请转到Microsoft 365 管理中心并关闭[定期计费](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。 试用版将在你的一个月结束时自动过期，并且你的信用卡不会收费。
 
 ## <a name="try-a-different-subscription"></a>尝试其他订阅
 
@@ -106,7 +106,7 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行组织，�
 
 如果你已有适用于Microsoft 365订阅，可以浏览Microsoft 365 管理中心为组织购买其他订阅。
 
-通过 Microsoft 365 管理中心 购买另一<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>个订阅时，新订阅 (现有订阅) 域名空间相关联。 这使在订阅之间移动组织用户或为其分配所需的附加订阅的许可证变得更简单。
+通过 Microsoft 365 管理中心 购买另一<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">个订阅</a>时，新订阅将 (现有订阅) 域名空间。 这使在订阅之间移动组织用户或为其分配所需的附加订阅的许可证变得更简单。
 
 1. In the admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. 在"**购买服务**"页上，选择要购买的计划，选择"详细信息"，然后选择"购买 **"。**
@@ -150,5 +150,5 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行组织，�
 [添加用户并同时分配许可证 (](../admin/add-users/add-users.md) 文章) \
 [向用户分配许可证](../admin/manage/assign-licenses-to-users.md)
 [升级到其他计划](subscriptions/upgrade-to-different-plan.md)（文章）\
-[购买或编辑适用于企业Microsoft 365加载项](buy-or-edit-an-add-on.md) (文章) \
+[购买或编辑适用于企业Microsoft 365加载项 (](buy-or-edit-an-add-on.md)文章) \
 [为订阅添加存储空间 (](add-storage-space.md) 文章) 

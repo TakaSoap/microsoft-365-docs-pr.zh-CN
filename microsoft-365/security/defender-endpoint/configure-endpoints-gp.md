@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: fd6453c245a5d7320518c2dc500ed4718568857c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f9253a01cc1a971f472733f41a92f0b78beba737
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703257"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753973"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>使用组策略载入 Windows 设备 
 
@@ -42,38 +42,35 @@ ms.locfileid: "60703257"
 > 对于 Windows Server 2019 和 Windows Server 2022，可能需要将 NT AUTHORITY\Well-Known-System-Account 替换为组策略首选项创建的 XML 文件的 NT AUTHORITY\SYSTEM。
 
 > [!NOTE]
-> 如果你对 Windows Server 2012 R2 和 2016 使用新的统一 Microsoft Defender for Endpoint 解决方案，请确保你正在使用中央存储中的最新 ADMX 文件，以访问正确的 Microsoft Defender for Endpoint 策略选项。 请参考 [如何创建](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)和管理集中存储组策略管理模板Windows并下载最新文件以与 Windows 10 一 **Windows 10。** 
+> 如果你对 Windows Server 2012 R2 和 2016 使用新的统一 Microsoft Defender for Endpoint 解决方案，请确保你正在使用中央存储中的最新 ADMX 文件，以访问正确的 Microsoft Defender for Endpoint 策略选项。 请参考 [如何创建](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)和管理集中存储组策略管理模板Windows并下载最新文件以与 Windows 10 一 **Windows 10。**
 
-请查看[PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)或[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各个路径。
+请查看[PDF 或](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。
 
+1. 打开 GP 配置文件 () 从服务载入 `WindowsDefenderATPOnboardingPackage.zip` 向导下载的文件。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
 
-1. 在 *WindowsDefenderATPOnboardingPackage* .zip中打开 GP 配置包 (文件。zip) 从服务载入向导下载。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
- 
-    1. 在导航窗格中，选择 **"设置**  >  **终结点**  >  **设备管理**   >  **载入"。**
+    1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**   >  **载入"。**
 
     1. 选择操作系统。
-    
+
     1. 在"**部署方法"** 字段中，选择"**组策略"。**
 
     1. 单击 **下载程序包** 并保存.zip文件。
 
-     
-
 2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个称为 *OptionalParamsPolicy* 的文件夹和文件 *WindowsDefenderATPOnboardingScript.cmd*。
 
-3. 若要创建新的 GPO，请打开组策略管理控制台 [ (](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) GPMC) ，右键单击要配置的组策略对象，**然后单击新建。** 在显示的对话框中输入新 GPO 的名称，然后单击"确定 **"。**
+3. 若要创建新的 GPO，请打开 [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)GPMC (组策略管理) ，右键单击要配置的组策略对象，**然后单击新建。** 在显示的对话框中输入新 GPO 的名称，然后单击"确定 **"。**
 
-4. 打开组策略管理控制台 [ (](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) GPMC) ，右键单击要配置的组策略对象 (GPO) 然后单击 **编辑。**
+4. 打开 [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)GPMC (组策略管理控制台) ，右键单击要配置的组策略对象 (GPO) 然后单击"编辑 **"。**
 
 5. 在组 **策略管理编辑器中**，转到"**计算机配置**"，然后转到"**首选项**"，然后转到"**控制面板设置"。**
 
-6. 右键单击 **计划任务**，指向新建 **，然后单击** 即时任务 (**至少Windows 7)**。
+6. 右键单击 **计划任务**，指向 **新建**，然后单击即时任务 (**至少Windows 7)**。
 
 7. 在打开 **的任务** 窗口中，转到常规 **选项卡**。在 **"安全选项"** 下，单击 **"更改用户或组**"，然后键入"系统"，然后单击"**检查名称**"，然后单击"确定 **"。** NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。
 
 8. Select **Run whether user is logged on or not and** check the Run with highest **privileges** check box.
 
-9. 在"名称"字段中，键入计划任务策略的适当名称 (例如，Defender for Endpoint Deployment) 。
+9. 在"名称"字段中，键入计划任务策略 (例如，Defender for Endpoint Deployment) 。
 
 10. 转到操作 **选项卡，** 然后选择新建 **...** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 使用共享 *WindowsDefenderATPOnboardingScript.cmd* 文件的文件服务器的完全限定域名 (FQDN) 输入 UNC 路径。
 
@@ -88,7 +85,7 @@ ms.locfileid: "60703257"
 
 对于每个设备，你可以说明当通过请求提交文件进行深入分析Microsoft 365 Defender是否可以从设备收集示例。
 
-可以使用组策略 (GP) 配置设置，例如深入分析功能中使用的示例共享的设置。
+可以使用组策略 (GP) 配置设置，如深入分析功能中使用的示例共享的设置。
 
 ### <a name="configure-sample-collection-settings"></a>配置示例集合设置
 
@@ -110,7 +107,7 @@ ms.locfileid: "60703257"
 
 4. 单击 **"策略**"，然后单击 **"管理模板"。**
 
-5. 单击 **Windows组件"，** 然后单击Windows Defender **ATP"。**
+5. 单击 **Windows组件**"，然后单击 **Windows Defender ATP"。**
 
 6. 选择从设备启用或禁用示例共享。
 
@@ -121,7 +118,7 @@ ms.locfileid: "60703257"
 
 ### <a name="update-endpoint-protection-configuration"></a>更新终结点保护配置
 
-配置载入脚本后，继续编辑相同的组策略以添加终结点保护配置。 从运行 Windows 10 Server 2019、Windows 11 或 Windows Server 2022 的系统执行组策略编辑，以确保具有所有必需的 Microsoft Defender 防病毒 功能。 你可能需要关闭并重新打开组策略对象以注册 Defender ATP 配置设置。
+配置载入脚本后，继续编辑相同的组策略以添加终结点保护配置。 从运行 Windows 10 或 Server 2019、Windows 11 或 Windows Server 2022 的系统执行组策略编辑，以确保具有所有必需的 Microsoft Defender 防病毒 功能。 你可能需要关闭并重新打开组策略对象以注册 Defender ATP 配置设置。
 
 所有策略都位于 下 `Computer Configuration\Policies\Administrative Templates` 。
 
@@ -204,7 +201,7 @@ Policy|Setting
 
 1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
 
-    1. 在导航窗格中，选择 **"设置**  >    >  **终结点设备管理**  >  **""载出"。**
+    1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >  **""载出"。**
 
     1. 选择操作系统。
     
@@ -214,9 +211,9 @@ Policy|Setting
 
 2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
-3. 打开 [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)GPMC (组策略管理控制台) ，右键单击要配置的组策略对象 (GPO) 然后单击"编辑 **"。**
+3. 打开组策略管理控制台 [ (](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) GPMC) ，右键单击要配置的组策略对象 (GPO) 然后单击 **编辑。**
 
-4. 在组 **策略管理编辑器中**，转到"**计算机配置"，然后** 转到"**首选项**"，然后转到"**控制面板设置"。**
+4. 在组 **策略管理编辑器中**，转到"**计算机配置"，再** 转到"**首选项**"，然后转到"**控制面板设置"。**
 
 5. 右键单击 **"计划任务"，** 指向 **"新建"，** 然后单击"**立即任务"。**
 
@@ -224,9 +221,9 @@ Policy|Setting
 
 7. Select **Run whether user is logged on or not and** check the Run with highest **privileges** check-box.
 
-8. 在"名称"字段中，键入计划任务策略 (例如，Defender for Endpoint Deployment) 。
+8. 在"名称"字段中，键入计划任务策略的适当名称 (例如，Defender for Endpoint Deployment) 。
 
-9. 转到"操作 **"** 选项卡，然后选择"新建 **..."。** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 使用共享 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* 文件的文件服务器的完全限定域名 (FQDN) 输入 UNC 路径。
+9. 转到"操作 **"** 选项卡，然后选择"新建 **..."。** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 使用共享 (-DD.cmd 文件的文件服务器的完全限定域名 (FQDN) ，输入 UNC *路径WindowsDefenderATPOffboardingScript_valid_until_YYYY MM-DD.cmd* 文件。
 
 10. 选择 **"确定** "并关闭任何打开的 GPMC 窗口。
 
@@ -274,7 +271,7 @@ Policy|Setting
 
 ### <a name="configure-windows-defender-smartscreen-settings"></a>配置Windows Defender SmartScreen 设置
 
-1. 浏览到 **计算机配置** \> **策略** \> **SmartScreen** \> **资源管理器中的Windows组件** \> **Windows Defender** \> **模板**。
+1. 浏览到 **SmartScreen 资源管理器** 中的计算机 \>  \>  \> **Windows配置** Windows Defender \> **模板** \> 。
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="配置 Windows Defender 智能屏幕资源管理器。":::
  
@@ -304,7 +301,7 @@ Policy|Setting
 
 ### <a name="check-for-signature-update"></a>检查签名更新
 
-浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows组件Microsoft Defender 防病毒** \>  \> **签名更新**
+浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows组件** \> **Microsoft Defender 防病毒** \> **签名更新**
 
 :::image type="content" source="images/signature-update-1.png" alt-text="签名更新。":::
 

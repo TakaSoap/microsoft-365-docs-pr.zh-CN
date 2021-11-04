@@ -4,26 +4,22 @@
   items:
     - name: 概述
       items:
-        - name: 什么是 Microsoft 365 Defender？
+        - name: Microsoft 365 Defender
           href: microsoft-365-defender.md
-        - name: Microsoft 365 Defender 概述
-          href: overview-security-center.md
         - name: Microsoft 365 Defender 的新增功能
           href: whats-new.md
-        - name: Microsoft 365 Defender 中的 Defender for Endpoint
-          href: microsoft-365-security-center-mde.md
-        - name: Microsoft 365 Defender 中的 Defender for Office 365
-          href: microsoft-365-security-center-mdo.md
-        - name: 将 Defender for Endpoint 重定向到 Microsoft 365 Defender
-          href: microsoft-365-security-mde-redirection.md
-        - name: 将 Office 365 安全与合规中心重定向到 Microsoft 365 Defender
-          href: microsoft-365-security-mdo-redirection.md
+        - name: Microsoft 365 Defender 服务
+          items:
+            - name: Microsoft 365 Defender 中的 Defender for Endpoint
+              href: microsoft-365-security-center-mde.md
+            - name: Microsoft 365 Defender 中的 Defender for Office 365
+              href: microsoft-365-security-center-mdo.md
+            - name: 将 Defender for Endpoint 重定向到 Microsoft 365 Defender
+              href: microsoft-365-security-mde-redirection.md
+            - name: 将 Office 365 安全与合规中心重定向到 Microsoft 365 Defender
+              href: microsoft-365-security-mdo-redirection.md
         - name: Microsoft 365 Defender 与 Azure Sentinel 的集成
           href: microsoft-365-defender-integration-with-azure-sentinel.md
-        - name: 预览功能
-          href: preview.md
-        - name: 解决问题
-          href: ./troubleshoot.md
         - name: 行业测试
           href: ./top-scoring-industry-tests.md
     - name: 计划
@@ -94,9 +90,9 @@
       items:
         - name: 概述
           href: get-started.md
-        - name: 打开 Microsoft 365 Defender
+        - name: 1. 打开 Microsoft 365 Defender
           href: m365d-enable.md
-        - name: 部署支持的服务
+        - name: 2. 部署支持的服务
           href: deploy-supported-services.md
         - name: 启用 Microsoft 365 Defender 常见问题解答
           href: m365d-enable-faq.md
@@ -130,6 +126,8 @@
               href: ../defender-identity/notifications.md
     - name: 调查并响应威胁
       items:
+        - name: 概述
+          href: incident-response-overview.md
         - name: 响应事件
           items:
             - name: 概述
@@ -166,10 +164,6 @@
                   href: investigate-users.md
             - name: 事件响应手册
               href: /security/compass/incident-response-playbooks
-            - name: 获取事件电子邮件通知
-              href: get-incident-notifications.md
-            - name: 使用 Power Automate 对威胁进行分类
-              href: use-power-automate.md
         - name: 管理自动调查和响应
           items:
             - name: 概述
@@ -310,7 +304,7 @@
               href: ../mtp/microsoft-threat-experts.md
             - name: 配置和管理 Microsoft 威胁专家功能
               href: ../mtp/configure-microsoft-threat-experts.md
-    - name: SecOps 集成
+    - name: 安全性操作指南
       items:
         - name: 概述
           href: integrate-microsoft-365-defender-secops.md
@@ -396,6 +390,10 @@
                       href: api-update-incidents.md
                     - name: 获取事件
                       href: api-get-incident.md
+        - name: 预览功能
+          href: preview.md
+        - name: 解决问题
+          href: ./troubleshoot.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint

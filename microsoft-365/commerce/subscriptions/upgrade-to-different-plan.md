@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 升级计划的最简单方法是使用管理中心中的"升级"选项卡。 但是，"升级"选项卡并不总是受支持。
 ms.date: 04/21/2021
-ms.openlocfilehash: 8d481ec0b5eb64fcc86ca331d9bde3cac746f177
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7e4190fed287033f723be2cd89e800cb2e31e11a
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167542"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747316"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升级到其他计划
 
@@ -76,7 +76,7 @@ ms.locfileid: "60167542"
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>现在无法升级订阅，因为用户数多于许可证数
 
-若要自动升级计划，需要为所有用户分配有效许可证。 如果你分配的许可证多于你已购买的许可证，你将在许可证页面上看到一条警报，指出你<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>具有需要解决的许可冲突。 [了解如何解决许可证冲突](../../commerce/licenses/buy-licenses.md)。 解决任何许可冲突后，应看到"升级"选项卡 **上列出的计划** 。如果没有更改，可以 [手动更改计划](change-plans-manually.md)，或 [致电支持人员](../../business-video/get-help-support.md)。
+若要自动升级计划，需要为所有用户分配有效许可证。 如果你分配的许可证多于你已购买的许可证，你将在许可证页面上看到一条警报，指出你<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>具有需要解决的许可冲突。 [了解如何解决许可证冲突](../../commerce/licenses/buy-licenses.md)。 解决任何许可冲突后，应看到"升级"选项卡上 **列出的** 计划。如果没有更改，可以 [手动更改计划](change-plans-manually.md)，或 [致电支持人员](../../business-video/get-help-support.md)。
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>由于此订阅未完全设置或服务不可用，你当前无法升级订阅
 
@@ -120,7 +120,7 @@ ms.locfileid: "60167542"
 
 升级计划时，可供升级的计划将基于当前计划中的服务显示。 只能升级到具有与数据相关的相同服务（如 Exchange Online 或 SharePoint Online）的计划，或升级到这些服务的更高版本。 这可确保用户在 \' 升级过程中不会丢失与这些服务相关的数据。
 
-如果你的计划不符合自动升级计划资格，你或许可以改为 [手动更改](change-plans-manually.md)计划。 也可以致电 [支持人员](../../business-video/get-help-support.md) 寻求帮助。
+如果计划不符合自动升级计划条件，可以改为 [手动更改](change-plans-manually.md) 计划。 也可以致电 [支持人员](../../business-video/get-help-support.md) 寻求帮助。
 
 #### <a name="your-subscription-has-an-add-on"></a>你的订阅具有加载项
 
@@ -136,18 +136,17 @@ ms.locfileid: "60167542"
 
 ### <a name="access-to-services"></a>对服务的访问
 
-**升级** 计划期间，管理员将不能使用管理中心。 这最多需要一小时的时间。
+**升级** 计划时，管理员将不能使用管理中心。 这最多需要一小时的时间。
   
 **用户** 不会遇到服务中断情形。 在升级完全完成之前，他们将继续拥有现有服务。
   
 ### <a name="users-and-licenses"></a>用户和许可证
 
 旧订阅的用户将自动移至新订阅。
-  
-如果你的旧订阅包含多个服务，并且你已更改用户分配到的这些服务中的哪一项，你可能想要在升级计划之前记下这一点，以便以后可以重新创建这些更改。 所有用户都将被授予新订阅中所有服务的访问权限。 例如，如果你之前为全部 100 个用户购买了 Microsoft 365 商业高级版，但从其中 50 个用户取消分配 SharePoint Online 服务，则升级计划后不会保留此更改。
-  
+
+如果你的旧订阅包含多个服务，并且你已更改用户分配到的这些服务中的哪一项，你可能想要在升级计划之前记下这一点，以便以后可以重新创建这些更改。 所有用户都将被授予新订阅中所有服务的访问权限。 例如，如果你之前为全部 100 个用户购买了 Microsoft 365 商业高级版，但从其中 50 个用户中取消分配 SharePoint Online 服务，则升级计划后不会保留此更改。
+
 如果在升级计划之前拥有多个订阅，并且向用户分配了多个订阅的许可证，则此分配模式将尽可能保留在新订阅中。
-  
 升级过程中将保留所有用户数据，包括Exchange邮箱SharePoint联机文档、列表和其他信息。
   
 ### <a name="billing"></a>计费
@@ -165,5 +164,5 @@ ms.locfileid: "60167542"
 
 ## <a name="related-content"></a>相关内容
 
-[在本文 (](change-plans-manually.md) 更改) \
+[手动更改计划](change-plans-manually.md) (文章) \
 [在切换业务Microsoft 365之前备份数据 (](back-up-data-before-switching-plans.md)文章) 

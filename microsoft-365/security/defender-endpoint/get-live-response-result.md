@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 09e7cb8f05796994e1b68d59ceea312b8735a3cc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4b7c2b79892874fad37be382ba7eecea1b761fe7
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201429"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753561"
 ---
 # <a name="get-live-response-results"></a>获取实时响应结果
 
@@ -55,7 +55,7 @@ ms.locfileid: "60201429"
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的 Windows** 版本。
+- **验证是否正在运行受支持的** Windows。
 
   设备必须运行以下版本之一Windows
 
@@ -67,8 +67,8 @@ ms.locfileid: "60201429"
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **WindowsServer 2019 - 仅适用于公共预览版**
-    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
-    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
+    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     
   - **Windows Server 2022**  
 
@@ -78,8 +78,8 @@ ms.locfileid: "60201429"
 
 |权限类型|权限|权限显示名称|
 |---|---|---|
-Application|Machine.Read.All|"'读取所有计算机配置文件'"
-Application|"Machine.ReadWrite.All|"读取和写入所有计算机信息"
+应用程序|Machine.Read.All|"'读取所有计算机配置文件'"
+应用程序|"Machine.ReadWrite.All|"读取和写入所有计算机信息"
 |委派（工作或学校帐户）|Machine.LiveResponse|在特定的计算机上运行实时响应|
 
 ## <a name="http-request"></a>HTTP 请求

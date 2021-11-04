@@ -9,23 +9,23 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c369f070d7dd166ede57bd51d6df4c5dcbba1d51
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 6b022551db4b3ca759ffb6d1f9eae184b64e0683
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588474"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756193"
 ---
 # <a name="shared-devices"></a>共享设备
 
-Microsoft 托管桌面允许你在"共享设备模式"中注册设备，类似于用户提供的共享设备[Microsoft Intune。](/mem/intune/configuration/shared-user-device-settings) 此模式下的设备已针对用户不绑定到单个服务台且经常更改设备的情况进行了优化，通常是一线工作人员（如银行服务台或员工）。 你可以在此模式下将Microsoft 托管桌面[配置文件](profiles.md)应用到设备。 在此模式下注册的设备有一些重要区别：
+Microsoft 托管桌面允许你在"共享设备模式"中注册设备，类似于[Microsoft Intune。](/mem/intune/configuration/shared-user-device-settings) 此模式下的设备已针对用户不绑定到单个服务台且经常更改设备的情况进行了优化，这些设备通常是一线工作人员，如银行服务台或员工。 你可以在此模式下将Microsoft 托管桌面[配置文件](profiles.md)应用到设备。 在此模式下注册的设备有一些重要区别：
 
 - [设备存储](#device-storage) 已针对共享用户进行了优化。
 - [将删除](#deletion-of-inactive-accounts) 非活动帐户。
 - [默认情况下](#guest-accounts) 不支持来宾帐户。
-- [Microsoft 365](#microsoft-365-apps-for-enterprise)企业许可的应用程序针对共享设备进行了优化。
+- [Microsoft 365企业](#microsoft-365-apps-for-enterprise)版许可的应用程序已针对共享设备进行了优化。
 
-由于你在注册到 Microsoft 托管桌面 时选择使用共享设备模式，因此如果你稍后要更改此模式，必须取消注册并再次注册它。
+由于你在注册到 Microsoft 托管桌面 时选择使用共享设备模式，因此，如果你稍后要更改此模式，必须取消注册并再次注册它。
 
 ## <a name="when-to-use-shared-device-mode"></a>何时使用共享设备模式
 
@@ -47,15 +47,14 @@ Microsoft 托管桌面允许你在"共享设备模式"中注册设备，类似�
 
 无论你或合作伙伴是否正在处理注册，都可以选择使用共享设备模式。
 
-如果你要自己注册设备，请按照"自己注册新设备"中的 [](../get-started/register-devices-self.md)步骤操作，然后将它们添加到"现代工作区设备-共享 **设备** 模式"组中。 
+如果你要自己注册设备，请按照"自己注册新设备"中的 [](../get-started/register-devices-self.md)步骤操作，然后将它们添加到"现代 **工作区设备-** 共享设备模式"组中。
 
 > [!WARNING]
 > 不要尝试将任何现有Microsoft 托管桌面设备转换为共享设备模式，只需将它们添加到此组。 应用的策略可能会导致OneDrive文件永久丢失。
 
 如果你有合作伙伴注册设备，请按照合作伙伴注册设备的步骤中的步骤操作，但 [](../get-started/register-devices-partner.md)向组标记追加 **-Shared，** 如下表所示：
 
-
-|设备配置文件  |标准模式 (组标记)   |组标记 (共享设备模式)   |
+|设备配置文件  |标准模式 (组标记)   |共享设备 (组标记)   |
 |---------|---------|---------|
 |敏感日期 | Microsoft365Managed_SensitiveData        |  Microsoft365Managed_SensitiveData-Shared       |
 | Power user         | Microsoft365Managed_PowerUser        | 不支持        |
@@ -96,7 +95,7 @@ Microsoft 托管桌面[使用 SharedPC](/mem/intune/configuration/shared-user-de
 
 ### <a name="windows-hello"></a>Windows Hello
 
-Windows Hello智能卡仿真来安全缓存[用户 PIN，](/windows/security/identity-protection/hello-for-business/hello-faq)从而最大程度地减少用户必须进行身份验证次数。 但是，Windows设备上一次只允许 10 个智能卡。 当第 11 个用户首次登录时，其中一个现有帐户将丢失其智能卡。 他们可以登录，但无法缓存其 PIN。
+Windows Hello智能卡仿真来安全缓存[用户 PIN，](/windows/security/identity-protection/hello-for-business/hello-faq)从而最大程度地减少用户必须进行身份验证次数。 但是，Windows在给定设备上一次只允许 10 个智能卡。 当第 11 个用户首次登录时，其中一个现有帐户将丢失其智能卡。 他们可以登录，但无法缓存其 PIN。
 
 ### <a name="universal-print"></a>通用打印
 
@@ -109,23 +108,23 @@ When Universal print installs a printer for a single user on a shared device tha
 每台Microsoft Intune都有一个主用户，在 Autopilot 设置设备时分配该用户。 但在共享设备时，Intune 要求删除主要用户。
 
 > [!IMPORTANT]
-> 共享设备模式在公共预览版中时，请务必按照以下步骤删除主要用户：登录到 Microsoft Endpoint Manager 管理中心，选择"设备""所有设备"，选择设备，然后选择"属性""删除主要用户"，然后删除其中列出的用户。 >   > 
+> 共享设备模式在公共预览版中时，请务必按照以下步骤删除主要用户：登录到 Microsoft Endpoint Manager 管理中心，选择"设备""所有设备"，选择设备，然后选择"属性""删除主要用户"，然后删除其中列出的用户。  >   > 
 
 ### <a name="deploying-apps-with-company-portal"></a>使用应用程序部署公司门户
-某些应用可能不需要存在于所有设备上，因此你可能希望用户仅在需要来自 公司门户 的应用时[公司门户。](/mem/intune/user-help/install-apps-cpapp-windows) Microsoft 托管桌面共享公司门户设备模式的设备默认禁用此配置。 如果希望启用公司门户，可以提交更改请求，但在此公共[](../working-with-managed-desktop/admin-support.md)预览版中，应注意此功能的一些限制：
 
-- 若要使应用可供用户[公司门户，可在](/mem/intune/apps/apps-deploy)Intune 中向该应用分配用户组，然后将每个用户添加到该用户组。
+某些应用可能不需要存在于所有设备上，因此你可能希望用户仅在需要来自 公司门户 的应用[时安装](/mem/intune/user-help/install-apps-cpapp-windows)它们。 Microsoft 托管桌面共享公司门户设备模式的设备默认禁用此功能。 如果希望启用公司门户，可以提出更改请求，但在此公共预览[](../working-with-managed-desktop/admin-support.md)版中，应注意此功能的一些限制：
+
+- 若要使应用可供用户公司门户，可在 Intune 中[](/mem/intune/apps/apps-deploy)向该应用分配用户组，然后将每个用户添加到该用户组。
 - 设备不能有主 [用户](#primary-user)。
 - 若要卸载用户通过 公司门户安装的应用，必须从该设备的所有用户卸载该应用。
 
 > [!CAUTION]
-> 公司门户不支持分配给设备组的应用程序（如果可用）。 
+> 公司门户不支持分配给设备组的应用程序（如果可用）。
 
 ### <a name="redeployment-of-microsoft-365-apps-for-enterprise"></a>重新部署Microsoft 365 企业应用版
-在公共预览版期间，Microsoft 365 应用版重新部署，用户必须联系其本地支持人员，以请求代理提升并重新安装Microsoft 365 企业应用版部署。
+
+在公共预览版Microsoft 365 应用版，如果需要重新部署，用户必须联系其本地支持人员，以请求代理提升并重新安装Microsoft 365 企业应用版部署。
 
 ### <a name="microsoft-teams"></a>Microsoft Teams
-当用户首次Teams应用时，系统会提示他们更新应用，然后才能使用它。 一旦他们允许更新，Teams将在后台保持自身更新。
 
-
-
+当用户首次Teams时，系统会提示他们更新应用，然后才能使用它。 一旦他们允许更新，Teams将在后台保持自身更新。

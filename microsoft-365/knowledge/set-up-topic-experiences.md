@@ -10,27 +10,27 @@ ms.service: o365-administration
 search.appverid: MET150
 ms.localizationpriority: medium
 description: 了解如何设置Microsoft Viva主题。
-ms.openlocfilehash: 2a662640c765cc970483e73ed42971e73067e614
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7b5411ceea134be56a7d878510729f2d7150dd7d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197253"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755661"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>设置Microsoft Viva主题
 
 可以使用自定义Microsoft 365 管理中心设置和配置[主题](topic-experiences-overview.md)。 
 
-规划在环境中设置和配置主题的最佳方法非常重要。 在开始本文中[的过程之前，请务必](plan-topic-experiences.md)阅读规划Microsoft Viva主题。
+规划在环境中设置和配置主题的最佳方法非常重要。 在开始本文中[的过程Microsoft Viva，](plan-topic-experiences.md)请务必阅读 Plan for Microsoft Viva Topics。
 
-您必须订阅[Viva 主题](https://www.microsoft.com/microsoft-viva/topics)，并且必须是全局管理员或 SharePoint管理员才能访问 Microsoft 365 管理中心设置主题。
+您必须订阅[Viva 主题](https://www.microsoft.com/microsoft-viva/topics)，并且必须是全局管理员，或同时SharePoint组管理员才能访问该主题Microsoft 365 管理中心设置主题。
 
 > [!IMPORTANT]
 > 如果你已配置SharePoint托管设备，则必须从托管[](/sharepoint/control-access-from-unmanaged-devices)设备设置主题。
 
 ## <a name="video-demonstration"></a>视频演示
 
-此视频演示在 Microsoft 365 中设置主题的过程。
+此视频演示了在网站中设置主题Microsoft 365。
 
 <br>
 
@@ -50,7 +50,7 @@ ms.locfileid: "60197253"
 
 3. 在 **"许可证"** 下，**选择"Viva 主题"。**
 
-4. 在 **"应用"** 下，确保Graph索引连接器搜索 **("Viva** 主题) "和 **"Viva** 主题"。
+4. 在 **"应用"** 下 **，Graph"索引连接器搜索 ("Viva** 主题) "Viva **主题**"都选中。
 
    > [!div class="mx-imgBorder"]
    > ![Microsoft Viva中的主题许可证Microsoft 365 管理中心。](../media/topic-experiences-licenses.png)
@@ -65,8 +65,8 @@ ms.locfileid: "60197253"
 > 首次启用主题发现时，可能需要两周才能在"管理主题"视图中显示所有建议的主题。 主题发现将在新内容或内容更新时继续。 当 Viva Topics 评估新信息时，组织中建议主题数量出现波动是正常现象。
 
 设置主题
-1. 在 ["Microsoft 365 管理中心](https://admin.microsoft.com)中，选择 **"设置"，** 然后查看"**文件和内容"** 部分。
-2. 在"**文件和内容"** 部分，单击连接 **人员了解知识"。**
+1. 在 ["Microsoft 365 管理中心](https://admin.microsoft.com)中，选择 **"设置**"，然后查看"**文件和内容"** 部分。
+2. 在"**文件和内容"** 部分，单击 **"连接人员学习知识"。**
 
     ![连接了解知识。](../media/admin-org-knowledge-options.png) 
 
@@ -88,7 +88,7 @@ ms.locfileid: "60197253"
 
     ![排除主题。](../media/topics-excluded-by-name.png) 
 
-     (发现后，知识管理员还可以排除主题中心) 
+     (管理员还可以在发现之后排除主题中心) 
 
     #### <a name="how-to-exclude-topics-by-name"></a>如何按名称排除主题    
 
@@ -99,14 +99,14 @@ ms.locfileid: "60197253"
     在 CSV 模板中，输入与要排除的主题相关的以下信息：
 
     - **名称**：键入要排除的主题的名称。 可以通过两种方式来执行此操作：
-        - 完全匹配：可以包括确切的名称或缩写 (例如 *Contoso* 或 *ATL*) 。
+        - 完全匹配：可以包含确切的名称或缩写词 (例如 *Contoso* 或 *ATL*) 。
         - 部分匹配：可以排除其中包含特定单词的所有主题。  例如 *，arc 将* 排除包含单词 *arc* 的所有主题，如弧 *形圆*、*弧* 形圆或 *培训弧*。请注意，它将不会排除将文本作为单词的一部分包含的主题，例如体系结构 *。*
     - **代表 (可选**) ：如果要排除首字母缩写词，请键入首字母缩写词代表的单词。
     - **MatchType-Exact/Partial**：键入您输入 *的名称是精确* 匹配类型还是 *部分* 匹配类型。
 
-    完成并保存文件后，.csv **浏览** 找到并选择它。
+    完成并保存文件后，.csv **浏览找到并选择** 它。
     
-    选择“**下一步**”。
+    选择 **下一步**。
 
 6. 在Who **主题及其** 可在何处看到这些主题页面，您将配置主题可见性。 在Who **主题** 设置中，可以选择谁有权访问主题详细信息，例如突出显示的主题、主题卡片、搜索中的主题答案和主题页面。 可以选择：
     - **我的组织中的每个人**
@@ -131,20 +131,20 @@ ms.locfileid: "60197253"
 
     ![主题管理的权限。](../media/km-setup-create-edit-topics.png) 
 
-    选择“**下一步**”。
+    选择 **下一步**。
 
-9. 在 **"创建主题中心** "页上，可以创建主题中心网站，可在其中查看主题页面并管理主题。 在" **网站名称"** 框中，键入主题中心的名称。 如果要更改 URL，可以单击铅笔图标。 （可选）在"说明"框中键入 **简短** 说明。 
+9. 在 **"创建主题中心** "页上，您可以创建主题中心网站，可在其中查看主题页面并管理主题。 在" **网站名称"** 框中，键入主题中心的名称。 如果要更改 URL，可以单击铅笔图标。 （可选）在"说明"框中键入 **简短** 说明。 
 
    > [!Important]
    > 您可以稍后更改网站名称，但在完成向导后不能更改 URL。
 
-   选择“**下一步**”。
+   选择 **下一步**。
 
    ![创建知识中心。](../media/ksetup4.png)  
 
 10. 在 **审查并完成** 页面上，可查看所选设置并选择进行更改。 如果对你的选择感到满意，请选择 **激活**。
 
-11. 将显示 **"Viva 主题已激活** "页，确认系统现在开始分析所选主题网站并创建主题中心网站。 选择“**完成**”。
+11. 将显示 **"激活的 Viva** 主题"页面，确认系统现在开始分析所选主题网站并创建主题中心网站。 选择“**完成**”。
 
 12. 你将返回到你的连接 **人员到知识** 页面。 在此页面中，可选择 **管理**，对配置设置进行任何更改。 
 
@@ -152,12 +152,12 @@ ms.locfileid: "60197253"
 
 ## <a name="manage-topic-experiences"></a>管理主题体验
 
-设置主题后，可以在"设置"中更改在设置[过程中Microsoft 365 管理中心。](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) 请参阅以下参考：
+设置主题后，可以更改在"主题"设置过程中[Microsoft 365 管理中心。](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) 请参阅以下参考：
 
 - [管理主题主题Microsoft Viva主题](topic-experiences-discovery.md)
-- [管理主题主题Microsoft Viva可见性](topic-experiences-knowledge-rules.md)
+- [管理主题主题Microsoft Viva主题](topic-experiences-knowledge-rules.md)
 - [管理主题主题Microsoft Viva主题](topic-experiences-user-permissions.md)
-- [在"主题"中更改Microsoft Viva中心的名称](topic-experiences-administration.md)
+- [在"主题"中更改Microsoft Viva的名称](topic-experiences-administration.md)
 
 ## <a name="see-also"></a>另请参阅
 

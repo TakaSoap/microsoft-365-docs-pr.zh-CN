@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 74c23766bc2780cca0e370940e7fefacdba9d050
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 2cd42f5443506a51539638d4ddaa7ab2bd19ebcd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587537"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646951"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -170,7 +170,7 @@ ms.locfileid: "60587537"
 1. 转到 <https://compliance.microsoft.com> 并登录。
 
     > [!TIP]
-    > 使用专用浏览会话（而不是常规会话）来访问 Microsoft 365 合规中心，因为它会阻止你使用当前登录时使用的凭据。若要在 Internet Explorer 或 Microsoft Edge 中打开 InPrivate 浏览会话，只需按 CTRL+SHIFT+P。若要在 Google Chrome中打开专用浏览会话（称为隐身窗口），请按 CTRL+SHIFT+N。
+    > 使用专用浏览会话（而不是常规会话）来访问 Microsoft 365 合规中心，因为它会阻止你使用当前登录时使用的凭据。 若要在 Microsoft Edge 中打开 InPrivate 浏览会话，或在 Google Chrome（称为隐身窗口）中打开专用浏览会话，请按住 **CTRL+SHIFT+N**。
 
 2. 在 Microsoft 365 合规中心的左窗格中，单击“**审核**”。
 

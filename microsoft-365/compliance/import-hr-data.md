@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理员可以设置数据连接器，以从组织的人力资源部门导入员工数据， (HR) 系统Microsoft 365。 这样，你可以将 HR 数据用于内部风险管理策略，以帮助你检测特定用户可能对组织造成内部威胁的活动。
-ms.openlocfilehash: e7a5bb9a1912aff7d41968bd1c8f6c08333178c0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a6342ec7edc3b044ff5b5c871cd4b80fd4907b7c
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659958"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753089"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>设置连接器以导入 HR 数据
 
@@ -197,11 +197,11 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 ### <a name="adding-the-hrscenario-column-to-a-csv-file-that-contains-a-single-data-type"></a>将 HRScenario 列添加到包含单个文件的 CSV 数据类型
 
-根据组织的 HR 系统和您将 HR 数据导出到 CSV 文件，您可能必须创建多个 CSV 文件，其中包含一个 HR 数据类型。 在这种情况下，您仍可以创建单个 HR 连接器以从不同的 CSV 文件导入数据。 为此，只需将 HRScenario 列添加到 CSV 文件并指定 HR 数据类型。 然后您可以运行每个 CSV 文件的脚本，但对连接器使用相同的作业 ID。 请参阅[步骤 4。](#step-4-run-the-sample-script-to-upload-your-hr-data)
+根据组织的 HR 系统以及您将 HR 数据导出到 CSV 文件如何，您可能必须创建多个 CSV 文件，其中包含一个 HR 数据类型。 在这种情况下，您仍可以创建单个 HR 连接器以从不同的 CSV 文件导入数据。 为此，只需将 HRScenario 列添加到 CSV 文件并指定 HR 数据类型。 然后您可以运行每个 CSV 文件的脚本，但对连接器使用相同的作业 ID。 请参阅[步骤 4。](#step-4-run-the-sample-script-to-upload-your-hr-data)
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>步骤 2：在 Azure Active Directory
 
-下一步是在应用程序创建和注册Azure Active Directory (Azure AD) 。 该应用将对应于你在步骤 3 创建的 HR 连接器。 创建此应用程序将允许Azure AD在 HR 连接器运行时和尝试访问组织时对 HR 连接器进行身份验证。 此应用还将用于对在步骤 4 中运行的脚本进行身份验证，以将 HR 数据上传到 Microsoft 云。 创建此应用程序Azure AD，请务必保存以下信息。 这些值将在步骤 3 和步骤 4 中使用。
+下一步是在应用程序创建和注册Azure Active Directory (Azure AD) 。 该应用将对应于你在步骤 3 创建的 HR 连接器。 创建此应用程序将使Azure AD在 HR 连接器运行时和尝试访问组织时进行身份验证。 此应用还将用于对在步骤 4 中运行的脚本进行身份验证，以将 HR 数据上传到 Microsoft 云。 创建此应用程序Azure AD，请务必保存以下信息。 这些值将在步骤 3 和步骤 4 中使用。
 
 - Azure AD ID (也称为 *应用程序 ID* 或 *客户端 ID*) 
 
@@ -209,7 +209,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 - 租户 ID (*也称为目录 ID*) 
 
-有关在应用程序中创建应用的分步Azure AD，请参阅使用 Microsoft 标识平台[注册应用程序](/azure/active-directory/develop/quickstart-register-app)。
+有关在应用程序中创建应用的分步Azure AD，请参阅使用 Microsoft 标识平台 注册[应用程序](/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-3-create-the-hr-connector"></a>步骤 3：创建 HR 连接器
 
@@ -217,7 +217,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 完成此步骤后，请确保复制创建连接器时生成的作业 ID。 运行脚本时，将使用作业 ID。
 
-1. 转到 ， [https://compliance.microsoft.com](https://compliance.microsoft.com/) 然后单击左侧 **导航中的** "数据连接器"。
+1. 转到"Microsoft 365 合规中心"，然后选择"<a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**数据连接器"。**</a>
 
 2. 在"**数据连接器"页上** 的 **"HR"下**，单击"查看 **"。**
 
@@ -297,7 +297,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
    |`appId` |这是Azure AD步骤 2 中创建的应用的应用程序Azure AD ID。 当脚本尝试Azure AD组织时，此参数Microsoft 365进行身份验证。 | 
    |`appSecret`|这是Azure AD步骤 2 中创建的应用的Azure AD密码。 这还用于身份验证。|
    |`jobId`|这是在步骤 3 中创建的 HR 连接器的作业 ID。 这用于将上载到 Microsoft 云的 HR 数据与 HR 连接器关联。|
-   |`csvFilePath`|这是 CSV 文件的文件路径， (步骤 1 中创建的脚本文件) 存储在同一系统中。 尝试避免文件路径中的空格;否则请使用单引号。|
+   |`csvFilePath`|这是 CSV 文件的文件路径， (步骤 1 中创建的脚本) 存储在同一系统中。 尝试避免文件路径中的空格;否则请使用单引号。|
    |||
 
    下面是使用每个参数的实际值的 HR 连接器脚本的语法示例：
@@ -315,7 +315,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 创建 HR 连接器并运行脚本以上传 HR 数据后，可以查看该连接器，并上传Microsoft 365 合规中心。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
 
-1. 转到左侧 [https://compliance.microsoft.com](https://compliance.microsoft.com) 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
+1. 转到"Microsoft 365 合规中心"，然后选择"<a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**数据连接器"。**</a>
 
 2. 单击 **"连接器"** 选项卡，然后选择 HR 连接器以显示飞出页面。 此页面包含有关连接器的属性和信息。
 
@@ -371,7 +371,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    1. 单击 **"** 确定"保存新操作的设置。
 
-8. 在" **创建任务"** 窗口中，单击" **确定** "保存计划任务。 系统可能会提示您输入用户帐户凭据。
+8. 在" **创建任务"** 窗口中，单击" **确定** "保存计划任务。 系统可能会提示你输入用户帐户凭据。
 
    新任务将显示在任务计划程序库中。
 

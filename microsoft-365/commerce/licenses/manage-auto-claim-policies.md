@@ -19,12 +19,12 @@ ms.custom:
 description: 了解如何创建和管理自动声明策略，这些策略会自动将许可证分配给特定应用的用户。
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: 41d11c6c67d35766e61106bd2beefd69462a42ff
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 28d05e0e3b1d1e8692672bf741a612ebee02e39f
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179675"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753485"
 ---
 # <a name="manage-auto-claim-policies"></a>管理自动声明策略
 
@@ -79,7 +79,7 @@ ms.locfileid: "60179675"
 3. 在"**命名此自动声明策略**"页上，输入策略的名称，然后选择"下一步 **"。**
 4. 在 **"设置自动声明应用** 和产品"页上，选择要为其分配许可证的应用和订阅。
 5. 如果要添加备份产品，请选择"将备份产品添加到此策略 **"，** 然后从列表中选择该产品。
-6. 选择“**下一步**”。
+6. 选择 **下一步**。
 7. 在"**选择应用"** 页上，清除或选择要排除或包括在许可证中的应用的框，然后选择"下一步 **"。**
 8. 如果添加了一个或多个备份产品，请对每个产品重复步骤 7。 否则，请转到步骤 9。
 9. 在"**查看并完成"页上**，验证新策略信息，进行必要的更改，然后选择"创建 **策略"。**
@@ -131,8 +131,7 @@ ms.locfileid: "60179675"
 
 ## <a name="change-the-assigning-apps-and-services"></a>更改分配的应用和服务
 
-每个产品都有一组与其关联的应用和服务。
-对于自动声明策略中的每种产品，可以指定在自动为用户分配产品许可证时要包含的应用和服务。
+每个产品都有一组与其关联的应用和服务。 对于自动声明策略中的每种产品，可以指定在自动为用户分配产品许可证时要包含的应用和服务。
 
 1. 在管理中心，转到"帐单 **""** 许可证" \> 页面，然后选择"<a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">自动声明策略"</a>选项卡。
 2. 选择要编辑的策略。

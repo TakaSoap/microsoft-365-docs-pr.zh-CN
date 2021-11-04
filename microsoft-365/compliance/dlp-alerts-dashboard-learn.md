@@ -19,23 +19,24 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: 了解数据丢失防护警报和警报仪表板。
-ms.openlocfilehash: ea5d01e580b88445ba64e4ed26fc01fb51c97d5d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 375b16a3072f40ef8f366f7c1c4e8f714f195d63
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175211"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754369"
 ---
 # <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>了解数据丢失防护警报仪表板
 
-当 DLP (数据丢失防护) 策略中的条件与用户对敏感项目采取的操作匹配时，该策略可能会生成警报。 这可能会导致大量警报。 DLP 警报收集在警报仪表板中。 警报仪表板为您提供了一个可以深入调查与策略匹配有关的所有详细信息的位置。  
+当 DLP (数据丢失防护) 策略中的条件与用户对敏感项目采取的操作匹配时，该策略可能会生成警报。 这种情况可能会导致大量警报。 DLP 警报收集在警报仪表板中。 警报仪表板为你提供了一个地方，可以深入调查有关策略匹配的所有详细信息。  
 
 <!-- [Microsoft 365 compliance center](https://compliance.microsoft.com/)-->
 
 ## <a name="workloads"></a>工作负载
 
-DLP[警报管理仪表板](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)（位于[Microsoft 365 合规中心](https://compliance.microsoft.com/)中）显示有关这些工作负载的 DLP 策略的警报：
+DLP[警报管理仪表板](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)（位于<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>中）显示有关这些工作负载的 DLP 策略警报：
 
 - Exchange
 - SharePoint
@@ -44,7 +45,7 @@ DLP[警报管理仪表板](https://compliance.microsoft.com/datalossprevention?v
 - Windows 10 设备 
 
 > [!TIP]
-> 使用符合[使用 DLP](endpoint-dlp-learn-about.md)条件Teams [DLP](dlp-microsoft-teams.md)的客户将在 DLP 警报管理仪表板中查看其Teams DLP 策略警报和 DLP 策略警报。
+> 使用符合[使用 DLP](endpoint-dlp-learn-about.md)条件Teams终结点[DLP](dlp-microsoft-teams.md)的客户将在 DLP 警报管理仪表板中查看其Teams DLP 策略警报和 DLP 策略警报。
 
 ## <a name="single-alert-and-aggregate-alert"></a>单个警报和聚合警报
 
@@ -66,7 +67,7 @@ DLP[警报管理仪表板](https://compliance.microsoft.com/datalossprevention?v
 |位置 |检测到事件的工作负荷|所有事件 |
 |活动时间     |符合 DLP 策略条件的用户活动时间 |
 
-### <a name="impacted-entities"></a>影响的实体
+### <a name="affected-entities"></a>受影响的实体
 
 |属性名 |说明| 事件类型|
 |---------|---------|---------|
@@ -81,12 +82,12 @@ DLP[警报管理仪表板](https://compliance.microsoft.com/datalossprevention?v
 |电子邮件收件人 |如果电子邮件是符合 DLP 策略的敏感项目，则此字段包括该电子邮件的收件人| Exchange事件|
 |电子邮件主题 |与 DLP 策略匹配的电子邮件主题 |Exchange事件|
 |电子邮件附件 | 电子邮件中匹配 DLP 策略的附件的名称| Exchange事件|
-|网站所有者 |网站所有者的名称| SharePoint 和 OneDrive 事件|
-|网站 URL |DLP 策略匹配SharePoint或OneDrive的完整 URL |SharePoint 和 OneDrive 事件|
-|已创建文件 |创建与 DLP 策略匹配的文件的时间 |SharePoint 和 OneDrive 事件|
-|上次修改文件 | 上次更改匹配 DLP 策略的文件的时间 | SharePoint 和 OneDrive 事件|
-|文件大小 | 与 DLP 策略匹配的文件大小 |SharePoint 和 OneDrive 事件|
-|文件所有者 |与 DLP 策略匹配的文件的所有者 |SharePoint 和 OneDrive 事件|  
+|网站所有者 |网站所有者的名称| SharePoint和OneDrive事件|
+|网站 URL |DLP 策略匹配SharePoint或OneDrive的完整 URL |SharePoint和OneDrive事件|
+|已创建文件 |创建与 DLP 策略匹配的文件的时间 |SharePoint和OneDrive事件|
+|上次修改文件 | 上次更改匹配 DLP 策略的文件的时间 | SharePoint和OneDrive事件|
+|文件大小 | 与 DLP 策略匹配的文件大小 |SharePoint和OneDrive事件|
+|文件所有者 |与 DLP 策略匹配的文件的所有者 |SharePoint和OneDrive事件|  
 
 ### <a name="policy-details"></a>策略详细信息
 

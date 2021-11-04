@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 37838e91003e53df9f7ff3a3318282305236240a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 00844614ea14b668fc3167f20ec2747d995aed17
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192087"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703405"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -115,14 +115,11 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 内置标签客户端和其他标签解决方案
 
-Office 内置标签客户端从以下管理中心下载敏感度标签和敏感度标签策略设置：
+Office 内置标签客户端从 Microsoft 365 合规中心下载敏感度标签和敏感度标签策略设置。 
 
-- Microsoft 365 合规中心
-- Office 365 安全与合规中心（旧版管理门户）
+若要使用 Office 内置标签客户端，必须具有合规中心发布给用户的一个或多个[标签策略](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)，以及[受支持的 Office 版本](#support-for-sensitivity-label-capabilities-in-apps)。
 
-若要使用 Office 内置标签客户端，必须将一个或多个 [ 标签策略发布](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)到列出的其中一个管理中心和 [支持的 Office](#support-for-sensitivity-label-capabilities-in-apps)用户。
-
-如果满足以上两个条件，但需要关闭 Office 内置标签客户端，请使用以下组策略设置：
+如果满足以上两个条件，但需要关闭 Office 应用中的内置标签，请使用以下组策略设置：
 
 1. 导航到 **/管理模板/Microsoft Office 2016/安全设置**。
 
@@ -132,11 +129,13 @@ Office 内置标签客户端从以下管理中心下载敏感度标签和敏感�
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 内置标签客户端和 Azure 信息保护客户端
 
-如果用户在 [安装了 Azure 信息保护客户端](/azure/information-protection/rms-client/aip-clientv2)，则其 Office 应用中将关闭内置标签客户端。 
+如果用户在其 Windows 计算机上安装了 [Azure 信息保护客户端](/azure/information-protection/rms-client/aip-clientv2)，则默认情况下，内置标签在[支持这些标签的 Office 应用](#labeling-client-for-desktop-apps)中处于关闭状态。 由于内置标签不使用由 Azure 信息保护客户端使用的 Office 加载项，因此这些内置标签具有更高的稳定性和更好的性能。 这些内置标签还支持最新功能，例如高级分类器。
 
-若要对 Office 应用程序使用内置标签而非 Azure 信息保护客户端，建议你使用组策略设置 **托管加载项列表**，如 [由于 Office 2013 和 Office 2016 程序的组策略设置，未加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中所述。
+我们建议不要卸载 Azure 信息保护客户端，而是防止在 Office 应用中加载 Azure 信息保护加载项。 然后，你可以获取 Office 应用中内置标签的好处，以及 Office 应用之外的 Azure 信息保护客户端标签文件的好处。 例如，Azure 信息保护客户端可以使用文件资源管理器和 PowerShell 标记所有文件类型。 有关 Office 应用外部支持的标签功能的详细信息，请参阅[敏感度标签和 Azure 信息保护](sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)。
 
-对于 Microsoft Word 2016、Excel 2016、PowerPoint 2016 和 Outlook 2016，请为 Azure 信息保护客户端指定以下编程标识符 (ProgID)，并将选项设置为“**0：始终禁用（阻止）加载项**”
+若要防止在 Office 应用中加载 Azure 信息保护客户端加载项，请使用组策略设置 **托管加载项列表**，如在[由于 Office 2013 和 Office 2016 程序的组策略设置而未加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中所述。
+
+对于支持内置标签的 Office 应用，请使用 Microsoft Word 2016、Excel 2016、PowerPoint 2016 和 Outlook 2016 的配置，为 Azure 信息保护客户端指定以下编程标识符 (ProgID)，并将选项设置为 **0 ：始终禁用加载项（阻止）**
 
 |应用程序  |编程标识符  |
 |---------|---------|
@@ -146,17 +145,16 @@ Office 内置标签客户端从以下管理中心下载敏感度标签和敏感�
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
-
 通过使用组策略或 [Office 云策略服务](/DeployOffice/overview-office-cloud-policy-service)部署此设置。
 
-> [!NOTE]
+> [!IMPORTANT]
 > 若要使用组策略设置“**使用 Office 中的敏感度功能来应用和查看敏感度标签**”，并将其设置为“**1**”，则在某些情况下，Azure 信息保护客户端可能仍会在 Office 应用中加载。在每个应用中阻止加载项加载可阻止这种情况发生。
 
 或者，可以通过交互方式从 Word、Excel、PowerPoint 和 Outlook 禁用或删除“**Microsoft Azure 信息保护**”Office 加载项。 此方法适用于单台计算机和临时测试。 有关说明，请参阅 [Office 程序中查看、管理和安装加载项](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)。 
 
-无论选择哪种方法，更改都将在 Office 应用重新启动时生效。 禁用或删除此 Office 加载项后，将保留安装在计算机上的 Azure 信息保护客户端，这就可以继续标记 Office 应用外部的文件。 例如，通过使用文件资源管理器或 PowerShell。
+无论选择哪种方法，更改都将在 Office 应用重新启动时生效。
 
-有关 Azure 信息保护客户端和 Office 内置标签客户端支持哪些功能的信息，请参阅 [从 Azure 信息保护文档中](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) Windows 标签解决方案。
+有关 Azure 信息保护客户端和 Office 内置标签客户端支持哪些功能的详细信息，请参阅从 Azure 信息保护文档中[选择 Windows 标签解决方案](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)。
 
 ## <a name="office-file-types-supported"></a>支持的 Office 文件类型
 
@@ -261,7 +259,7 @@ Azure 信息保护统一标签客户端同时支持 Open XML 格式和 Microsoft
     
     此选项的优点是，可在加密设置中指定特定用户的电子邮件地址，从而限制特定用户的访问和权限。 其费用表示创建帐户和管理标签配置时的管理开销。
 
-- 另一种选择是 [SharePoint 和 OneDrive 与 Azure AD B2B（预览版）](/sharepoint/sharepoint-azureb2b-integration-preview) ，以便用户共享链接时自动创建来宾帐户。
+- 另一个选项是使用 [SharePoint 和 OneDrive 与 Azure AD B2B 的集成](/sharepoint/sharepoint-azureb2b-integration)，以便用户共享链接时自动创建来宾帐户。
     
     此选项的优点是最低管理开销，因为会自动创建帐户，并且标签配置更简单。 对于此方案，必须先选择加密 [添加任何经过身份验证的用户](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) 因为事先不知道电子邮件地址。 请注意，此设置不允许限制特定用户的访问和使用权限。
 

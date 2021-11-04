@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在安全与合规中心内为 DLP 创建、修改、删除和测试&类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9d1856d0019a95f200b6be33f3f29ae3e471685e
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: e9b080d2837fc14c15987c774770b8bc5e9777eb
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264920"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754797"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自定义敏感信息类型入门
 
@@ -118,6 +118,18 @@ ms.locfileid: "60264920"
 12. 选择“**下一步**”。
 13. 为此敏感信息类型选择 **建议的可信度**。
 14. 检查设置并选择“**提交**”。
+
+> [!NOTE]
+> 无法复制以下 SIT：
+> - 加拿大驾驶证号码
+> - 欧盟驾驶证号码
+> - 欧盟国家标识号
+> - 欧盟护照号码
+> - 欧盟社会保险号或等效标识
+> - 欧盟税收标识号
+> - ICD-10-CM (国际) 
+> - ICD-9-CM (国际) 
+> - 美国驾驶证号码
 
 此外，还可以使用 PowerShell 和精确的数据匹配功能创建自定义敏感信息类型。 若要了解有关这些方法的详细信息，请参阅：
 - [使用安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)

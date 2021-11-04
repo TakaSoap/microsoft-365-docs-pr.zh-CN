@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: 了解如何将 SAP SuccessFactors 配置为用于Microsoft Viva Learning。
-ms.openlocfilehash: 8e5c8c920934883dec9cd020fbb97a87e546c38c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fafa0d8b610c3964617015ba3d4d1b9771c9e850
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703031"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747250"
 ---
 # <a name="configure-sap-successfactors-as-a-content-source-for-microsoft-viva-learning"></a>将 SAP SuccessFactors 配置为解决方案的内容Microsoft Viva Learning
 
@@ -56,7 +56,7 @@ ms.locfileid: "60703031"
     - enabled 可以是"false"或"true"。 将设置为"true"以启用合作伙伴提取。
         - partners1.enabled=
     
-    <!--![Image of the PARTNER_EXTRACT configuration settings filled in.](../media/learning/sap-1.png)-->
+    [![配置PARTNER_EXTRACT的图像。 ](../media/learning/sf-focus.png) ](../media/learning/sf-2.png#lightbox)
 
 在 SuccessFactors 门户中完成这些步骤后，你需要完成 Microsoft 365 管理中心。
 
@@ -89,9 +89,13 @@ ms.locfileid: "60703031"
 
     **PGP 私钥密码**：你需要从提供 PGP 密钥的 IT 管理员或团队获取此值。
 
-    **公司 ID：** 登录到 SuccessFactors 门户。 选择配置文件图标，然后选择"显示版本 **设置"。** 你可以在此处查看你的公司 ID。
+    **公司 ID：** 登录到 SuccessFactors 门户。 选择配置文件图标，然后选择"**显示版本设置"。** 你可以在此处查看你的公司 ID。
 
-4. Select **Save** to activate SuccessFactors content in Microsoft Viva Learning. 内容在 Viva Learning 中可用之前可能有Learning。
+    ![已选择"显示版本"选项设置图像。](../media/learning/sf-3.png)
+        
+    ![版本设置窗格的图像。](../media/learning/sf-1.png)
+
+4. 选择 **"保存**"激活"成功因素"Microsoft Viva Learning。 内容在 Viva Learning 中可用之前可能会Learning。
 
 >[!Note]
 > SuccessFactors 课程将在成功设置Learning 7 天内开始显示在 Viva 中。

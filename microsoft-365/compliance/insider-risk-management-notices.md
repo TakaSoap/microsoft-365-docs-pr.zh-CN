@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 498cd0c629d294a9b5c4e1501b60641a0deb484c
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 47b53814ce3df8c2a8215705521169f27065b5a3
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335522"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753893"
 ---
 # <a name="insider-risk-management-notice-templates"></a>内部风险管理通知模板
 
@@ -49,7 +49,7 @@ ms.locfileid: "60335522"
 ```
 
 > [!NOTE]
-> 内部风险管理通知模板中的 HTML href 属性实现当前仅支持单引号，而不支持 URL 引用的双引号。
+> 内部风险管理通知模板中的 HTML href 属性实现目前仅支持单引号，而不支持 URL 引用的双引号。
 
 ## <a name="create-a-new-notice-template"></a>创建新的通知模板
 
@@ -57,7 +57,7 @@ ms.locfileid: "60335522"
 
 完成以下步骤以创建新的内部风险管理通知模板：
 
-1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the Notice **templates** tab.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the Notice **templates** tab.
 2. 选择 **"创建通知模板** "以打开通知创建工具。
 3. 在" **新建通知模板"页上** ，填写下列字段：
     - **模板名称**：为通知输入友好名称。 从案例发送通知时，此名称将显示在通知仪表板上的通知列表和通知选择列表中。
@@ -71,7 +71,7 @@ ms.locfileid: "60335522"
 
 若要更新现有的内部风险管理通知模板，请完成以下步骤：
 
-1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the Notice **templates** tab.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the Notice **templates** tab.
 2. 在通知仪表板上，选择要管理的通知模板。
 3. 在通知详细信息页面上，选择"编辑 **"**
 4. 在 **"编辑** "页上，可以编辑以下字段：
@@ -86,7 +86,7 @@ ms.locfileid: "60335522"
 
 若要删除现有的内部风险管理通知模板，请完成以下步骤：
 
-1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the Notice **templates** tab.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the Notice **templates** tab.
 2. 在通知仪表板上，选择要删除的通知模板。
 3. 选择工具栏 **上的"** 删除"图标。
 4. 若要删除通知模板，请在删除 **对话框中选择** "是"。 若要取消删除，请选择"取消 **"。**

@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca0d3e29809b8975f65dc3f12816a6e4f9a19dbe
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1618d77a81888fe9076d00124cef770e81810836
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702399"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756967"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -50,6 +50,12 @@ ms.locfileid: "60702399"
 - [Microsoft Defender for Endpoint 中的新增功能](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
 - [Microsoft Defender 标识的新增功能](/defender-for-identity/whats-new)
 - [Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
+
+## <a name="october-2021"></a>2021 年 10 月
+
+- [高级传递 DKIM 增强功能](configure-advanced-delivery.md)：增加了对 DKIM 域条目的支持，作为第三方网络钓鱼模拟配置的一部分。
+- [默认安全](secure-by-default.md)：默认扩展安全Exchange邮件流规则 (传输规则) 。
 
 ## <a name="september-2021"></a>2021 年 9 月
 
@@ -97,7 +103,7 @@ ms.locfileid: "60702399"
 
 - 警报 ID 集成 (在搜寻体验中使用警报 ID Alert-Explorer导航 [) 搜索](threat-explorer.md)
 - 将搜寻体验中记录的导出限制从 9990 提高至 200，000 [](threat-explorer.md)
-- 将资源管理器 (和实时检测) 试用租户的数据保留和搜索限制，从之前限制 (7 天) 到 30 [天](threat-explorer.md)
+- 扩展 Explorer (和实时检测) 试用租户的数据保留和搜索限制，从之前限制 (7 天) 到 30 [天](threat-explorer.md)
 - Explorer (中称为 **模拟** 域和模拟用户的新搜寻透视表和实时) 搜索针对受保护用户或域的模拟攻击。 有关详细信息，请参阅 [详细信息](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。  (Microsoft Defender for Office 365 计划 1 或计划 2) 
 
 

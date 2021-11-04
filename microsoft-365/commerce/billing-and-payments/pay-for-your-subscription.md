@@ -21,13 +21,13 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
-ms.date: 05/04/2021
-ms.openlocfilehash: e947a4f73db3832abe4a02178a4e6161c86081bb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.date: 10/28/2021
+ms.openlocfilehash: cff5ad543b2f3b007d8ed328cae552f07faaa49b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554620"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704811"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>如何支付订阅费用
 
@@ -82,167 +82,11 @@ ms.locfileid: "60554620"
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>支票或 EFT 付款应发送到何处？
 
-[检查发票](view-your-bill-or-invoice.md) 以了解付款说明。 还可使用下面的下拉列表以查找适合所在国家或地区的付款说明。 如果不确定还款金额，可在“<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单和付款</a>”页面的“**发票**” 选项卡上在线查看帐单和计费历史记录。
+[检查发票](view-your-bill-or-invoice.md) 以了解你所在国家或地区的付款说明。 如果不确定还款金额，可在“<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单和付款</a>”页面的“**发票**” 选项卡上在线查看帐单和计费历史记录。
 
 > [!NOTE]
-> 通过支票付款仅可用于几个国家或地区。
-
- **从以下下拉菜单选择"帐单寄往地址"所在国家/地区。**
-
-> [!div class="op_single_selector"]
->
-> - **选择所在的国家或地区**
-> - [阿富汗](../pay/afghanistan.md)
-> - [阿尔巴尼亚](../pay/albania.md)
-> - [阿尔及利亚](../pay/algeria.md)
-> - [安哥拉](../pay/angola.md)
-> - [阿根廷](../pay/argentina.md)
-> - [亚美尼亚](../pay/armenia.md)
-> - [澳大利亚](../pay/australia.md)
-> - [Austria（奥地利）](../pay/austria.md)
-> - [Azerbaijan（阿塞拜疆）](../pay/azerbaijan.md)
-> - [巴哈马](../pay/bahamas.md)
-> - [巴林](../pay/bahrain.md)
-> - [孟加拉国](../pay/bangladesh.md)
-> - [Barbados（巴巴多斯）](../pay/barbados.md)
-> - [Belarus（白俄罗斯）](../pay/belarus.md)
-> - [Belgium（比利时）](../pay/belgium.md)
-> - [伯利兹](../pay/belize.md)
-> - [百慕大](../pay/bermuda.md)
-> - [玻利维亚](../pay/bolivia.md)
-> - [波斯尼亚和黑塞哥维那](../pay/bosnia-and-herzegovina.md)
-> - [博茨瓦纳](../pay/botswana.md)
-> - [巴西](../pay/brazil.md)
-> - [文莱](../pay/brunei.md)
-> - [保加利亚](../pay/bulgaria.md)
-> - [喀麦隆](../pay/cameroon.md)
-> - [加拿大](../pay/canada.md)
-> - [佛得角](../pay/cape-verde.md)
-> - [开曼群岛](../pay/cayman-islands.md)
-> - [智利](../pay/chile.md)
-> - [中国](../pay/china-prc.md)
-> - [哥伦比亚](../pay/colombia.md)
-> - [哥斯达黎加](../pay/costa-rica.md)
-> - [Côte d'Ivoire（科特迪瓦）](../pay/cote-divoire.md)
-> - [Croatia（克罗地亚）](../pay/croatia.md)
-> - [Curacao（库腊索）](../pay/curacao.md)
-> - [塞浦路斯](../pay/cyprus.md)
-> - [捷克共和国](../pay/czech-republic.md)
-> - [刚果民主共和国](../pay/democratic-republic-of-congo.md)
-> - [丹麦](../pay/denmark.md)
-> - [多米尼加共和国](../pay/dominican-republic.md)
-> - [Ecuador（厄瓜多尔）](../pay/ecuador.md)
-> - [埃及](../pay/egypt.md)
-> - [萨尔瓦多](../pay/el-salvador.md)
-> - [爱沙尼亚](../pay/estonia.md)
-> - [埃塞俄比亚](../pay/ethiopia.md)
-> - [法罗群岛](../pay/faroe-islands.md)
-> - [Fiji（斐济）](../pay/fiji.md)
-> - [Finland（芬兰）](../pay/finland.md)
-> - [France（法国）](../pay/france.md)
-> - [法属圭亚那](../pay/french-guiana.md)
-> - [格鲁吉亚](../pay/georgia.md)
-> - [Germany（德国）](../pay/germany.md)
-> - [加纳](../pay/ghana.md)
-> - [希腊](../pay/greece.md)
-> - [格林纳达](../pay/grenada.md)
-> - [Guadeloupe（瓜德罗普）](../pay/guadeloupe.md)
-> - [Guam（关岛）](../pay/guam.md)
-> - [危地马拉](../pay/guatemala.md)
-> - [圭亚那](../pay/guyana.md)
-> - [海地](../pay/haiti.md)
-> - [洪都拉斯](../pay/honduras.md)
-> - [香港特别行政区](../pay/hong-kong.md)
-> - [匈牙利](../pay/hungary.md)
-> - [Iceland（冰岛）](../pay/iceland.md)
-> - [India（印度）](../pay/india.md)
-> - [Indonesia（印度尼西亚）](../pay/indonesia.md)
-> - [Iraq（伊拉克）](../pay/iraq.md)
-> - [爱尔兰](../pay/ireland.md)
-> - [以色列](../pay/israel.md)
-> - [意大利](../pay/italy.md)
-> - [牙买加](../pay/jamaica.md)
-> - [日本](../pay/japan.md)
-> - [约旦](../pay/jordan.md)
-> - [Kazakhstan（哈萨克斯坦）](../pay/kazakhstan.md)
-> - [肯尼亚](../pay/kenya.md)
-> - [韩国](../pay/korea.md)
-> - [科威特](../pay/kuwait.md)
-> - [吉尔吉斯斯坦](../pay/kyrgyzstan.md)
-> - [拉脱维亚](../pay/latvia.md)
-> - [黎巴嫩](../pay/lebanon.md)
-> - [利比亚](../pay/libya.md)
-> - [Liechtenstein（列支敦士登）](../pay/liechtenstein.md)
-> - [Lithuania（立陶宛）](../pay/lithuania.md)
-> - [卢森堡](../pay/luxembourg.md)
-> - [澳门特别行政区](../pay/macao.md)
-> - [前南斯拉夫马其顿共和国](../pay/macedonia.md)
-> - [马来西亚](../pay/malaysia.md)
-> - [马耳他](../pay/malta.md)
-> - [毛里求斯](../pay/mauritius.md)
-> - [墨西哥](../pay/mexico.md)
-> - [摩尔多瓦](../pay/moldova.md)
-> - [Monaco（摩纳哥）](../pay/monaco.md)
-> - [Mongolia（蒙古）](../pay/mongolia.md)
-> - [黑山](../pay/montenegro.md)
-> - [摩洛哥](../pay/morocco.md)
-> - [纳米比亚](../pay/namibia.md)
-> - [尼泊尔](../pay/nepal.md)
-> - [荷兰](../pay/netherlands.md)
-> - [新西兰](../pay/new-zealand.md)
-> - [尼加拉瓜](../pay/nicaragua.md)
-> - [尼日利亚](../pay/nigeria.md)
-> - [挪威](../pay/norway.md)
-> - [Oman（阿曼）](../pay/oman.md)
-> - [Pakistan（巴基斯坦）](../pay/pakistan.md)
-> - [巴勒斯坦民族权力机构](../pay/palestinian-authority.md)
-> - [巴拿马](../pay/panama.md)
-> - [巴拉圭](../pay/paraguay.md)
-> - [Peru（秘鲁）](../pay/peru.md)
-> - [菲律宾](../pay/philippines.md)
-> - [波兰](../pay/poland.md)
-> - [Portugal（葡萄牙）](../pay/portugal.md)
-> - [波多黎各](../pay/puerto-rico.md)
-> - [卡塔尔](../pay/qatar.md)
-> - [罗马尼亚](../pay/romania.md)
-> - [Russia（俄罗斯）](../pay/russia.md)
-> - [卢旺达](../pay/rwanda.md)
-> - [圣基茨和尼维斯](../pay/saint-kitts-and-nevis.md)
-> - [圣卢西亚](../pay/saint-lucia.md)
-> - [圣文森特和格林纳丁斯](../pay/saint-vincent-and-the-grenadines.md)
-> - [沙特阿拉伯](../pay/saudi-arabia.md)
-> - [Senegal（塞内加尔）](../pay/senegal.md)
-> - [塞尔维亚](../pay/serbia.md)
-> - [新加坡](../pay/singapore.md)
-> - [斯洛伐克](../pay/slovakia.md)
-> - [斯洛文尼亚](../pay/slovenia.md)
-> - [南非](../pay/south-africa.md)
-> - [西班牙](../pay/spain.md)
-> - [斯里兰卡](../pay/sri-lanka.md)
-> - [苏里南](../pay/suriname.md)
-> - [瑞典](../pay/sweden.md)
-> - [Switzerland（瑞士）](../pay/switzerland.md)
-> - [台湾](../pay/taiwan.md)
-> - [Tajikistan（塔吉克斯坦）](../pay/tajikistan.md)
-> - [Tanzania（坦桑尼亚）](../pay/tanzania.md)
-> - [泰国](../pay/thailand.md)
-> - [特立尼达和多巴哥](../pay/trinidad-and-tobago.md)
-> - [土库曼斯坦](../pay/turkmenistan.md)
-> - [突尼斯](../pay/tunisia.md)
-> - [土耳其](../pay/turkey.md)
-> - [乌干达](../pay/uganda.md)
-> - [乌克兰](../pay/ukraine.md)
-> - [阿拉伯联合酋长国](../pay/united-arab-emirates.md)
-> - [英国](../pay/united-kingdom.md)
-> - [美国](../pay/united-states.md)
-> - [Uruguay（乌拉圭）](../pay/uruguay.md)
-> - [乌兹别克斯坦](../pay/uzbekistan.md)
-> - [委内瑞拉](../pay/venezuela.md)
-> - [Vietnam（越南）](../pay/vietnam.md)
-> - [美属维尔京群岛](../pay/virgin-islands.md)
-> - [也门](../pay/yemen.md)
-> - [Zambia（赞比亚）](../pay/zambia.md)
-> - [津巴布韦](../pay/zimbabwe.md)
+> - 通过支票付款仅可用于几个国家或地区。
+> - 如果必须为 Microsoft 合作伙伴网络 (MPN) 计划（Action Pack 订阅、银牌或金牌资格）支付会员资格费用，请参阅 [支付能力费](/partner-center/mpn-pay-fee-silver-gold-competency?tabs=workspaces-view)，以了解有关如何进行 MPN 付款的信息。
 
 ## <a name="can-i-pay-my-invoice-online"></a>能否在线按发票支付？
 

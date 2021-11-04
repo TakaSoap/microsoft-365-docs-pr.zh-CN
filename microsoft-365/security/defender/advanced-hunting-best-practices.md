@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 171364d447b2b160f40888b4b6132a7f1630391b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fe21093b8849effaf50771f2260d8588a6e68e5d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705359"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756595"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 
@@ -185,6 +185,7 @@ summarize [运算符](/azure/data-explorer/kusto/query/summarizeoperator) 聚合
 ## <a name="query-scenarios"></a>查询方案
 
 ### <a name="identify-unique-processes-with-process-ids"></a>使用进程标识唯一进程标识
+
 进程 ID (PID) 在 Windows 中回收，并重新用于新进程。 它们本身不能用作特定进程的唯一标识符。
 
 若要获得特定计算机上进程的唯一标识符，请使用进程 ID 以及进程创建时间。 在进程之间联接或汇总数据时，请加入以下列：计算机标识符（`DeviceId` 或 `DeviceName`）、进程 ID（`ProcessId` 或 `InitiatingProcessId`）以及进程创建时间（`ProcessCreationTime` 或 `InitiatingProcessCreationTime`）
@@ -192,11 +193,11 @@ summarize [运算符](/azure/data-explorer/kusto/query/summarizeoperator) 聚合
 以下示例查询将查找通过端口 445 (SMB) 访问 10 个以上 IP 地址（可能扫描文件共享）的进程。
 
 示例查询：
+
 ```kusto
 DeviceNetworkEvents
 | where RemotePort == 445 and Timestamp > ago(12h) and InitiatingProcessId !in (0, 4)
-| summarize RemoteIPCount=dcount(RemoteIP) by DeviceName, InitiatingProcessId
-InitiatingProcessCreationTime, InitiatingProcessFileName
+| summarize RemoteIPCount=dcount(RemoteIP) by DeviceName, InitiatingProcessId, InitiatingProcessCreationTime, InitiatingProcessFileName
 | where RemoteIPCount > 10
 ```
 
@@ -263,7 +264,7 @@ SHA256,ThreatTypes,DetectionMethods
 若要了解所有受支持的分析函数，请阅读 [Kusto 字符串函数](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)。
 
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender"](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤Microsoft 365 Defender Microsoft Defender for Endpoint 中执行的步骤，将高级搜寻工作流从[Microsoft Defender for Endpoint 移动到其他位置](advanced-hunting-migrate-from-mde.md)。
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender"](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>相关主题
 - [Kusto 查询语言文档](/azure/data-explorer/kusto/query/)

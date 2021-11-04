@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 SharePoint 和 OneDrive 的保留的工作原理。
-ms.openlocfilehash: 2e9b9b9c708a4379d298b69f1164a9d853c84ad6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1194ba1aa2367980207d33e2ca4020b8e0ba57d1
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665106"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753067"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>了解用于 SharePoint 和 OneDrive 的保留
 
@@ -151,7 +151,9 @@ ms.locfileid: "60665106"
 
 **OneDrive**：
 
-如果某用户离开组织，任何受保留策略约束或包含保留标签的文件都会在策略或标签有效期间保留。 在此期间，所有共享访问继续有效。 在保留期到期后，内容会移到网站集回收站，且不可供除管理员之外的其他任何人访问。如果文档被保留标签标记为记录，那么文档在保留期到期前不会被删除，到期后将被永久删除。
+如果某用户离开组织，则任何受保留策略约束或包含保留标签的文件在策略或标签中指定的保留期内仍将受保留设置约束。 在此期间，所有共享访问都将继续工作，并且内容搜索和电子数据展示将继续发现内容。 
+
+如果保留期到期并且保留设置包含删除操作，则内容将移至网站集回收站，除管理员外，任何人都无法访问。
 
 ## <a name="configuration-guidance"></a>配置指南
 

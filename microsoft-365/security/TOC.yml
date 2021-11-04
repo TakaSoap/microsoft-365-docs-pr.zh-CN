@@ -26,8 +26,10 @@
           href: ./office-365-security/secure-email-recommended-policies.md
         - name: 建议的 SharePoint Online 访问策略
           href: ./office-365-security/sharepoint-file-access-policies.md
-        - name: SaaS 应用的推荐 MCAS 策略
+        - name: 适用于 SaaS 应用的建议云应用安全策略
           href: ./office-365-security/mcas-saas-access-policies.md
+        - name: 连续访问评估
+          href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
     - name: Microsoft 365 Defender
       href: ./defender/index.yml
     - name: Microsoft Defender for Office 365

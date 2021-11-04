@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9b33db7e4fa0b3cc2fa61c0c7a45d1a9d2f9d3b7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b60aca935af326680165a0ccc8669082b14f299d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156326"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753769"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 载入
 
@@ -45,13 +45,13 @@ ms.locfileid: "60156326"
 
 本主题指导用户：
 
-- 步骤 1：Windows设备加入服务
+- 步骤 1：Windows设备载入服务
 - 步骤 2：为终结点功能配置 Defender
 
-本载入指南将指导你完成在使用应用时需要执行Microsoft Endpoint Configuration Manager：
+本载入指南将指导你完成在使用 Microsoft Endpoint Configuration Manager 时需要执行的基本Microsoft Endpoint Configuration Manager：
 
 - **在 Microsoft Endpoint Configuration Manager**
-- **使用 Microsoft Endpoint Configuration Manager 为终结点配置 Microsoft Defender 功能**
+- **使用 Microsoft Defender 为终结点配置Microsoft Endpoint Configuration Manager**
 
 > [!NOTE]
 > 此示例Windows仅涵盖所有设备。
@@ -64,15 +64,15 @@ ms.locfileid: "60156326"
 
 使用组策略或手动方法等工具载入不会在系统上安装任何代理。
 
-在Microsoft Endpoint Configuration Manager控制台中，载入过程将配置为控制台中合规性设置的一部分。
+在Microsoft Endpoint Configuration Manager控制台中，载入过程将配置为控制台内合规性设置的一部分。
 
 只要 Configuration Manager 客户端继续从管理点接收此策略，接收此必需配置的任何系统都将保持该配置。
 
 按照以下步骤使用 Microsoft Endpoint Configuration Manager。
 
-1. 在Microsoft Endpoint Configuration Manager控制台中，导航到"**资产"和"合规性 \> 概述 \> ""设备集合"。**
+1. 在Microsoft Endpoint Configuration Manager控制台中，导航到 **"资产"和"合规性 \> 概述 \> ""设备集合"。**
 
-    ![Microsoft Endpoint Configuration Manager向导 1 的图像。](images/configmgr-device-collections.png)
+    ![Microsoft Endpoint Configuration Manager wizard1 的图像。](images/configmgr-device-collections.png)
 
 2. 右键单击 **设备集合** ，然后选择 **创建设备集合**。
 
@@ -80,11 +80,11 @@ ms.locfileid: "60156326"
 
 3. 提供名称和 **限制集合，** 然后选择下一 **步**。
 
-    ![Microsoft Endpoint Configuration Manager向导 3 的图像。](images/configmgr-limiting-collection.png)
+    ![Microsoft Endpoint Configuration Manager 3 的图像。](images/configmgr-limiting-collection.png)
 
 4. 选择 **"添加规则**"，然后选择"**查询规则"。**
 
-    ![向导 4 Microsoft Endpoint Configuration Manager的图像。](images/configmgr-query-rule.png)
+    ![Microsoft Endpoint Configuration Manager向导 4 的图像。](images/configmgr-query-rule.png)
 
 5. 在 **"直接** 成员身份向导"上单击"下一步 **"，** 然后单击"**编辑查询语句"。**
 
@@ -102,7 +102,7 @@ ms.locfileid: "60156326"
 
     ![Microsoft Endpoint Configuration Manager向导8 的图像。](images/configmgr-membership-rules.png)
 
-9. 选择“**下一步**”。
+9. 选择 **下一步**。
 
     ![Microsoft Endpoint Configuration Manager向导9 的图像。](images/configmgr-confirm.png)
 
@@ -118,11 +118,11 @@ ms.locfileid: "60156326"
 
 ### <a name="endpoint-detection-and-response"></a>终结点检测和响应
 
-#### <a name="windows-10-and-windows-11"></a>Windows 10和 Windows 11
+#### <a name="windows-10-and-windows-11"></a>Windows 10 和 Windows 11
 
-从 Microsoft 365 Defender 门户中，可以下载".onboarding"策略，该策略可用于在 System Center Configuration Manager 中创建策略，并且可以将该策略部署到 Windows 10 和 Windows 11 设备。
+从 Microsoft 365 Defender 门户中，可以下载可用于在 System Center Configuration Manager 中创建策略的策略，并部署该策略以Windows 10 Windows 11 `.onboarding` 设备。
 
-1. From a Microsoft 365 Defender portal， select[设置 and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
+1. 从应用Microsoft 365 Defender，选择["设置"，然后选择"载入"。](https://security.microsoft.com/preferences2/onboarding)
 
 2. 在"部署方法"下，选择支持的版本 **Microsoft Endpoint Configuration Manager。**
 
@@ -147,8 +147,8 @@ ms.locfileid: "60156326"
 
 9. 从上面的步骤 4 导航到已下载文件的位置。
 
-10. 单击“下一步”。
-11. 使用"无"或"所有文件类型" (**相应的示例配置** 代理) 。 
+10. 单击"下一步"。
+11. 使用"无"或"所有文件类型 (**相应的示例配置** 代理) 。 
 
     ![配置设置 1 的图像。](images/configmgr-config-settings.png)
 
@@ -162,7 +162,7 @@ ms.locfileid: "60156326"
 
 14. 向导 **完成后** ，单击"关闭"。
 
-15. 在 Microsoft Endpoint Configuration Manager 控制台中，右键单击你刚刚创建的 Defender for Endpoint 策略，**然后选择部署**。
+15. 在 Microsoft Endpoint Configuration Manager控制台中，右键单击刚创建的 Defender for Endpoint 策略，然后选择 **部署**。
 
      ![配置设置的图像4。](images/configmgr-deploy.png)
 
@@ -174,7 +174,7 @@ ms.locfileid: "60156326"
 
 按照以下步骤标识 Defender for Endpoint Workspace ID 和工作区密钥，这是载入早期版本的 Windows。
 
-1. 从 Microsoft 365 Defender 门户中，设置设备管理 (下选择 \>  \> **") "** 终结点载入) 。
+1. 从Microsoft 365 Defender门户中，设置设备管理 (下选择 \>  \> **") "** 终结点载入) 。
 
 2. 在操作系统下 **，Windows 7 SP1 和 8.1。**
 
@@ -210,7 +210,7 @@ ms.locfileid: "60156326"
 
 Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机、便携式计算机和服务器提供安全提供下一代防护。
 
-1. 在Microsoft Endpoint Configuration Manager控制台中，导航到"资产和合规性概述 **\> Endpoint Protection反恶意软件策略 \> \> "，** 然后选择"创建 **反恶意软件策略"。**
+1. In the Microsoft Endpoint Configuration Manager console， navigate to **Assets and Compliance Overview Endpoint Protection \> \> \> Antimalware Polices** and choose **Create Antimalware Policy**.
 
     ![反恶意软件策略的图像。](images/9736e0358e86bc778ce1bd4c516adb8b.png)
 
@@ -222,7 +222,7 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 
     [快速扫描与完全扫描和自定义扫描](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    有关详细信息，请参阅Windows 安全中心[框架](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)。
+    有关详细信息，请参阅配置[Windows 安全中心框架](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)。
   
     ![下一代保护窗格 2 的图像。](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
@@ -248,13 +248,13 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 
      ![下一代保护窗格11 的图像。](images/configmgr-select-collection.png)
 
-完成此任务后，现在已成功配置Windows Defender 防病毒。
+完成此任务后，现在可以成功配置Windows Defender 防病毒。
 
 ### <a name="attack-surface-reduction"></a>攻击面减少
 
 适用于终结点的 Defender 的攻击面减少支柱包括攻击防护下提供的功能集。 攻击面减少 (ASR) 规则、受控文件夹访问权限、网络保护和 Exploit Protection。
 
-所有这些功能都提供审核模式和阻止模式。 在审核模式下，对最终用户没有影响。 它所执行的所有操作都是收集其他遥测，并使其在 Microsoft 365 Defender 门户中可用。 部署的目标是将安全控件分步移动到阻止模式。
+所有这些功能都提供审核模式和阻止模式。 在审核模式下，对最终用户没有影响。 它所执行的所有操作是收集其他遥测，并使其在 Microsoft 365 Defender 门户中可用。 部署的目标是将安全控件分步移动到阻止模式。
 
 在审核模式下设置 ASR 规则：
 
@@ -282,7 +282,7 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 
 7. 将策略定向到新创建的 Windows 集合，然后单击"确定 **"。**
 
-    ![控制台 5 Microsoft Endpoint Configuration Manager映像。](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+    ![控制台 5 Microsoft Endpoint Configuration Manager的图像。](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
 完成此任务后，现在可以在审核模式下成功配置 ASR 规则。
 
@@ -330,7 +330,6 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 
     ![Microsoft Endpoint Configuration Manager1 屏幕截图。](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-
 7. 选择新创建的组策略Windows选择"确定 **"。**
 
     ![Microsoft Endpoint Configuration Manager2 屏幕截图。](images/0ccfe3e803be4b56c668b220b51da7f7.png)
@@ -339,7 +338,7 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 
 #### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a>在审核模式下设置受控文件夹访问权限规则
 
-1. In the Microsoft Endpoint Configuration Manager console， navigate to **Assets and Compliance Overview Endpoint Protection Windows Defender Exploit \> \> \> Guard** and choose **Create Exploit Guard Policy**.
+1. In the Microsoft Endpoint Configuration Manager console， navigate to **Assets and Compliance**  >  **Overview**  >  **Endpoint Protection** Windows Defender  >  **Exploit Guard** and then choose Create Exploit Guard **Policy**.
 
     ![Microsoft Endpoint Configuration Manager3 的屏幕截图。](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 

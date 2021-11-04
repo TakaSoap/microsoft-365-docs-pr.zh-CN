@@ -3,19 +3,19 @@ title: 规划Microsoft Viva主题
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.reviewer: nkokoye
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 ms.localizationpriority: medium
 description: 了解如何规划主题Microsoft Viva主题。
-ms.openlocfilehash: 61729eeaa4a30a3f7e0faf50ab40320d88f3d78a
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: b6dd9373a8bca8b5e3ff310abfe308f7599a4dd4
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364575"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754335"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>规划Microsoft Viva主题
 
@@ -32,19 +32,22 @@ ms.locfileid: "60364575"
 
 将尊重数据的安全和隐私，并且主题体验不会向用户授予对无权限文件的额外访问权限。 作为规划过程的[一Microsoft Viva，](topic-experiences-security-privacy.md)我们还建议您阅读主题安全和隐私。
 
-若要了解有关 Viva 主题背后的 AI 技术，请阅读以下主题Microsoft Viva[从大数据到大数据中的 Alexandria。](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)
+若要详细了解 Viva 主题背后的 AI 技术，请阅读"Microsoft Viva[主题：从大数据到大数据"中的 Alexandria。](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)
 
 请记住，Viva 主题需要访问用户每天使用的网站和文件。 在测试或开发环境中部署 Viva 主题可能不会产生有用的结果。
 
 ## <a name="requirements"></a>要求
 
-您必须订阅[Viva 主题](https://www.microsoft.com/microsoft-viva/topics)，并且必须是全局管理员或 SharePoint管理员才能访问Microsoft 365 管理中心设置主题。
+您必须订阅[Viva 主题](https://www.microsoft.com/microsoft-viva/topics)，并且必须是全局管理员或 SharePoint管理员才能访问 Microsoft 365 管理中心设置主题。
 
 将使用主题的所有用户都需要主题 **体验** 许可证。 Set up Microsoft Viva Topics 中介绍了[分配许可证](set-up-topic-experiences.md)。
 
+> [!Important] 
+> 主题将仅对英语内容进行爬网。
+
 ## <a name="topic-discovery"></a>主题发现
 
-主题发现设置指定将哪些 SharePoint 网站用作主题源。 这包括经典网站和新式网站，以及与组Microsoft Teams Microsoft 365网站。 OneDrive网站。
+主题发现设置指定将哪些 SharePoint 网站用作主题源。 这包括经典网站和新式网站，以及与组和组Microsoft Teams Microsoft 365网站。 OneDrive网站。
 
 可以选择包含所有 SharePoint 网站、特定网站列表或无网站。 我们建议您选择所有网站，以便主题体验可以发现大量适合用户的主题。
 
@@ -98,7 +101,7 @@ Site name,URL
 
 *主题查看器*
 
-主题查看者可以在搜索结果和主题页面等内容中突出显示主题SharePoint信息。 只有在用户有权访问发现主题的文件和页面时，他们才能看到已发现的主题。
+主题查看者可以在搜索结果以及主题页面等内容中突出显示主题SharePoint信息。 只有在用户有权访问发现主题的文件和页面时，他们才能看到已发现的主题。
 
 设置主题查看器时，可以选择：
 
@@ -106,11 +109,11 @@ Site name,URL
 - **仅选定人员或安全组**
 - **没人**
 
-我们建议 **"我的组织"中的**"每个人"，但如果进行试点，你可能希望仅选择所选人员或安全组。 如果要设置 **主题** ，但不允许用户查看主题，也可以选择"否"。  (管理员仍可访问，以便他们查看主题并帮助做出使主题广泛可用的决定。) 
+我们建议 **"我的组织"中的**"每个人"，但如果进行试点，你可能希望仅选择所选人员或安全组。 如果要设置 **主题** ，但不允许用户查看主题，也可以选择"否"。  (知识管理员仍可访问，以便他们查看主题并帮助做出让主题广泛可用的决定。) 
 
 ## <a name="knowledge-rules"></a>知识规则
 
-作为管理员，你可以从主题体验中排除某些主题。 如果希望使敏感数据不显示在主题中，这将非常有用。 虽然知识管理员可以排除主题中心中的主题，但管理员排除的主题甚至对知识管理员不可见。  (管理员还可以在发现之后删除主题中心) 
+作为管理员，你可以从主题体验中排除某些主题。 如果希望使敏感数据不显示在主题中，这将非常有用。 虽然知识管理员可以排除主题中心中的主题，但管理员排除的主题甚至对知识管理员不可见。  (管理员还可以在发现之后删除主题中心中) 
 
 如果要排除管理员级别的主题，则必须将它们添加到.csv文件并上载该文件。 可以在安装过程中或以后执行这些操作。
 
@@ -120,7 +123,7 @@ Site name,URL
 - **MatchType-Exact/Partial**：键入您输入 *的名称是精确* 匹配类型还是 *部分* 匹配类型。
     - 完全匹配：可以包含确切的名称或缩写词 (例如 *Contoso* 或 *ATL*) 。
     - 部分匹配：可以排除其中包含特定单词的所有主题。  例如 *，arc 将* 排除包含单词 *arc* 的所有主题，如弧 *形圆*、*弧* 形圆或 *培训弧*。请注意，它将不会排除将文本作为单词的一部分包含的主题，例如体系结构 *。*
-- **代表 (** 可选) ： (也称为扩展 *)* 如果要排除缩略词，请键入首字母缩写词代表的单词。
+- **代表 (** 可选) ： (也称为扩展 *)* 如果要排除首字母缩写词，请键入首字母缩写词代表的单词。
 
     ![排除 CSV 模板中的主题。](../media/exclude-topics-csv.png) 
 
@@ -132,7 +135,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>管理
 
-在设置主题时，作为设置过程的一部分，将自动创建主题中心。 考虑要命名主题中心的内容以及希望 URL 的名称。 可以在设置过程中同时设置名称和 URL，也可以稍后在 (中更改名称) URL Microsoft 365 管理中心。 只能有一个主题中心。
+在设置主题时，作为设置过程的一部分，将自动创建主题中心。 考虑要命名主题中心的内容以及希望 URL 的名称。 可以在设置过程中同时设置名称和 URL，也可以稍后在 (更改 URL) URL Microsoft 365 管理中心。 只能有一个主题中心。
 
 ## <a name="setup-checklist"></a>设置清单
 
@@ -150,7 +153,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 [设置主题体验](set-up-topic-experiences.md)
 
-[在"管理主题发现"Microsoft 365](topic-experiences-discovery.md)
+[管理主题Microsoft 365](topic-experiences-discovery.md)
 
 [管理主题在Microsoft 365](topic-experiences-knowledge-rules.md)
 

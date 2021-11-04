@@ -23,12 +23,12 @@ search.appverid: MET150
 description: 了解如何阅读和了解 Microsoft 商业产品的账单或发票。
 keywords: 帐单帐户，组织信息，发票
 ms.date: 05/04/2021
-ms.openlocfilehash: d6b36d547bfa1610339c2818969d0164a585eeb2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f7f61baea5e965da2a6edf3d66075f2eaa12a95f
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203479"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756192"
 ---
 # <a name="understand-your-bill-or-invoice"></a>了解你的帐单或发票
 

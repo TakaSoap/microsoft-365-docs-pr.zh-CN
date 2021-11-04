@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何在工作流中使用内置保管人Advanced eDiscovery协调工作流，并识别相关数据源。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12a1a6d40706e71043dffdc899847b7d8062430b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d195690493e320407f7c9b1ca0d45da7c78955a7
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171035"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753546"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>将保管人添加到Advanced eDiscovery案例
 
-使用托管服务中的内置保管人管理工具Advanced eDiscovery您的工作流，以管理保管人并标识与案例相关的监管数据源。 添加保管人时，系统可自动识别并保留其Exchange邮箱和OneDrive for Business帐户。 在调查的发现过程中，您还可以确定保管人访问 (参与的其他数据源，如Teams) 邮箱、网站或网站。 在这种情况下，可以使用保管人管理工具将那些数据源关联为特定保管人。 将保管人添加到案例并将其他数据源与它们关联后，您可以快速保留数据并搜索监管数据。
+使用托管服务中的内置保管人管理工具Advanced eDiscovery您的工作流，以管理保管人并确定与案例关联的相关、监管数据源。 当您添加保管人时，系统可自动识别并保留其邮箱Exchange帐户OneDrive for Business保留。 在调查的发现过程中，您还可以确定保管人访问或 (的其他数据源，如Teams) 访问或参与的邮箱、网站或网站。 在这种情况下，可以使用保管人管理工具将那些数据源关联为特定保管人。 将保管人添加到案例并将其他数据源与它们关联后，您可以快速保留数据并搜索监管数据。
 
 可以在以下四个步骤中添加和管理Advanced eDiscovery保管人：
 
@@ -48,25 +48,25 @@ ms.locfileid: "60171035"
 
 1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后使用已分配有相应电子数据展示权限的用户帐户登录。
 
-2. 在 Microsoft 365 合规中心的左侧导航窗格中，单击 **显示所有**，然后单击" **电子数据展示>高级**。
+2. 在邮件的左侧导航窗格中，Microsoft 365 合规中心"显示所有  >  **电子** 数据展示  >  Advanced eDiscovery，然后选择"事例 <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**"** 选项卡</a>。
 
-3. 在 **"Advanced eDiscovery"** 页上，单击"事例"选项卡，然后选择要添加保管人的案例。
+3. 选择要将保管人添加到的案例。
 
-4. 单击"**数据源"** 选项卡，然后单击"**添加数据源**  >  **""添加新保管人"。**
+4. 选择"**数据源"** 选项卡，然后选择"**添加数据源**  >  **""添加新保管人"。**
 
 5. 通过键入人员姓名或别名的第一部分，将组织中一个或多个用户作为保管人添加到案例。 找到正确的人员后，选择其姓名以将其添加到列表中。
 
 ## <a name="step-2-choose-custodian-data-locations"></a>步骤 2：选择保管人数据位置
 
-选择保管人后，系统会自动尝试标识和验证这些用户及其数据源。 向列表中添加保管人后，该工具将自动包含每个保管人的主OneDrive帐户。 在向案例添加保管人时，可以选择不包括这些数据源。
+选择保管人后，系统会自动尝试标识和验证这些用户及其数据源。 将保管人添加到列表中后，该工具将自动包含每个保管人的主OneDrive帐户。 在向案例添加保管人时，可以选择不包括这些数据源。
 
-除了保管人邮箱和OneDrive帐户之外，您还可以将其他数据位置关联到保管人，例如 SharePoint 站点或保管人是其中一个成员的 Microsoft 团队。 这允许您保留、收集、分析和查看与案例保管人关联的其他数据源中的内容。
+除了保管人邮箱和 OneDrive 帐户，您还可以将其他数据位置关联到保管人，例如 SharePoint 站点或保管人是其中一个成员的 Microsoft 团队。 这允许您保留、收集、分析和查看与案例保管人关联的其他数据源中的内容。
 
-若要取消选择保管人的主邮箱OneDrive帐户，
+若要取消选择保管人的主OneDrive帐户，
 
 1. 展开保管人以查看已自动与每个保管人关联的主数据位置。
 
-2. 选择 **"****邮箱"或**"OneDrive"旁边的"清除"，将保管人邮箱或OneDrive帐户作为此保管人的数据位置相关联。 
+2. 选择 **"****邮箱或** OneDrive"旁边的"清除"，将保管人邮箱或OneDrive帐户作为此保管人的数据位置相关联。
 
    ![配置要与保管人关联的位置。](../media/ConfigureCustodianLocations.png)
 
@@ -74,7 +74,7 @@ ms.locfileid: "60171035"
 
 1. 展开保管人以显示以下服务以将数据位置与保管人关联。 单击 **服务** 旁边的"编辑"以添加数据位置。
 
-   - **Exchange：** 用于将其他邮箱与保管人关联。 在搜索框中键入用户邮箱或 (组的名称或别名) 至少包含三个字符。 选择要分配给保管人的邮箱，然后单击"添加 **"。**
+   - **Exchange：** 用于将其他邮箱与保管人关联。 在搜索框中键入用户邮箱或 (的名称或别名) 至少包含三个字符。 选择要分配给保管人的邮箱，然后单击"添加 **"。**
 
    - **SharePoint：** 用于将SharePoint网站与保管人关联。 在列表中选择网站，或在搜索框中键入 URL 来搜索网站。 选择要分配给保管人的网站，然后单击"添加 **"。**
 
@@ -83,7 +83,7 @@ ms.locfileid: "60171035"
    - **Yammer：** 用于分配Yammer保管人当前是其中一个成员的组。 选择要分配给保管人的组，然后单击"添加 **"。** 添加团队后，系统会自动标识并找到SharePoint组关联的网站和组邮箱，并将其分配给保管人。
 
    > [!NOTE]
-   > 可以使用 Exchange和 SharePoint 位置选取器将保管人不是Yammer成员的其他团队或 Yammer 组 (保管人) 保管人。 为此，您必须添加与每个团队或组关联的邮箱和Yammer网站。
+   > 可以使用Exchange和SharePoint位置选取器将保管人不是Yammer成员的其他团队或 Yammer (组) 保管人。 为此，您必须添加与每个团队或组关联的邮箱和Yammer网站。
 
 2. 通过展开表中的每个保管人，可以查看分配给每个保管Teams的邮箱、站点、Yammer组总数。 在最终确定每个保管人分配的数据位置后，这些关联将在托管工作流中的收集、处理和审阅阶段Advanced eDiscovery使用。
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d21ee0365d27c990e1e96422a67e201443f73eba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: df72be4ce5965476801dea9ea804ea9ebf548210
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197001"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755743"
 ---
 # <a name="cancel-machine-action-api"></a>取消计算机操作 API
 
@@ -57,7 +57,7 @@ ms.locfileid: "60197001"
 
 |权限类型|权限|权限显示名称|
 |---|---|---|
-|Application|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|收集取证 <br>隔离计算机<br>限制代码执行<br>  扫描计算机<br>  卸载计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
+|应用程序|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|收集取证 <br>隔离计算机<br>限制代码执行<br>  扫描计算机<br>  卸载计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
 |委派（工作或学校帐户）|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|收集取证<br> 隔离计算机<br>  限制代码执行<br> 扫描计算机<br>卸载计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -81,7 +81,7 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## <a name="response"></a>响应
 
-如果成功，此方法使用 Machine Action 实体返回 200 Ok 响应代码。 如果未找到具有指定 ID 的机器操作实体 - 404 未找到。
+如果成功，此方法使用 Machine Action 实体返回 200 OK 响应代码。 如果未找到具有指定 ID 的机器操作实体 - 404 未找到。
 
 ## <a name="example"></a>示例
 

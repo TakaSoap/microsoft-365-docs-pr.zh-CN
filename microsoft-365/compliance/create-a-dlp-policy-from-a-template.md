@@ -18,13 +18,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-mar2020
+- admindeeplinkCOMPLIANCE
 description: 本文将了解如何使用本文中包含的模板之一创建 DLP Office 365。
-ms.openlocfilehash: 7ea3e320a75953f51315579549a6dd5086706d12
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: e581a395e6d817a7d6d0dc9ac79a9b2b7c0327d4
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264876"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747234"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>通过模板创建 DLP 策略
 
@@ -38,7 +39,7 @@ Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>从模板创建 DLP 策略
 
-1. 登录 <https://compliance.microsoft.com> 。
+1. 登录到<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心。</a>
 
 2. In the Compliance Center \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** + \> **Create policy**.
 
@@ -56,20 +57,20 @@ Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规
 
 5. 选择希望 DLP 策略保护的位置，并接受每个位置的默认范围或自定义范围。 请参阅 [作用域](dlp-policy-reference.md#locations) 选项的位置。
 
-6. 选择“\> **下一步**”。
+6. 选择 \> **下一步**。
  
 1. <!-->，请执行下列操作之一：
 
    - Choose **All locations in Office 365** \> **Next**.
    - Choose **Let me choose specific locations** \> **Next**. 对于此示例，选择此。
 
-   若要包含或排除整个位置（如所有Exchange或所有OneDrive帐户），请打开或关闭该位置的"状态"。
+   若要包含或排除整个位置，如Exchange或所有OneDrive帐户，请打开或关闭该位置的"状态"。 
 
    若要仅包含SharePoint或OneDrive for Business帐户，请切换到"状态"，然后单击"包含"下的链接以选择特定网站或帐户。  将策略应用到网站后，该策略中配置的规则将自动应用到该网站的所有子网站。
 
    ![可以应用 DLP 策略的位置的选项。](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
-   本示例中，若要保护存储在所有 OneDrive for Business 帐户的敏感信息，请同时关闭 Exchange 电子邮件和 **SharePoint** 网站的"状态"，并保留 OneDrive 帐户的"状态">  
+   本示例中，若要保护存储在所有 OneDrive for Business 帐户的敏感信息，请同时关闭 Exchange 电子邮件和 **SharePoint** 网站的"状态"，并保留 OneDrive 帐户的"状态"> 
 
 7. 选择 **"查看"，然后从模板"下一步"自定义** \> **默认设置**。
 
@@ -83,7 +84,7 @@ Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规
     1. OneDrive
     1. Teams聊天和频道消息 
 
-10. 选择“**下一步**”。
+10. 选择 **下一步**。
 
 11. 如果需要 **，可以在** "保护操作"页上自定义策略提示通知和通知电子邮件。 启用 **当内容与策略条件匹配时**，向用户显示策略提示，然后向用户发送电子邮件通知，然后选择自定义 **提示和电子邮件**。
 12. 选择" **下一步**"。

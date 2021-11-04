@@ -15,24 +15,25 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c110682e6090c013ffc3d13cd5fa78b1483c8d2d
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3b2094be06dd9d5f2543738082f9f76bb292609d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703447"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754961"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-了解如何在已注册的设备上在 Android Intune 公司门户 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅  [注册设备](/mem/intune/user-help/enroll-device-android-company-portal)。
+了解如何在已注册的设备上在 Android Intune 公司门户 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅 [注册设备](/mem/intune/user-help/enroll-device-android-company-portal)。
 
 > [!NOTE]
 > **Android 上的 Defender for Endpoint 现已在 [Google Play 上可用](https://play.google.com/store/apps/details?id=com.microsoft.scmx)**
@@ -124,7 +125,7 @@ Android 上的 Defender for Endpoint 支持 Android Enterprise注册的设备。
 
 5. You'll be presented with the Approval settings page. 此页面确认你优先处理 Android 上的 Defender for Endpoint 可能请求的新应用权限。 查看选项并选择首选选项。 选择“**完成**”。
 
-    默认情况下，托管 Google Play 在应用请求新权限时 *选择"保持已批准"*
+    默认情况下，托管 Google Play 在应用请求新权限时选择"**保持已批准"。**
 
     > [!div class="mx-imgBorder"]
     > ![通知选项卡的图像。](images/ffecfdda1c4df14148f1526c22cc0236.png)
@@ -142,7 +143,7 @@ Android 上的 Defender for Endpoint 支持 Android Enterprise注册的设备。
 
     :::image type="content" alt-text="Android 应用列表的图像。" source="images/fa4ac18a6333335db3775630b8e6b353.png" lightbox="images/fa4ac18a6333335db3775630b8e6b353.png":::
 
-9. Defender for Endpoint 通过 Intune 支持托管设备的应用配置策略。 此功能可用于自动授予适用的 Android (权限) ，因此最终用户无需接受这些 (权限) 。
+9. Defender for Endpoint 通过 Intune 支持托管设备的应用配置策略。 此功能可用于自动授予适用的 Android () ，因此最终用户无需接受这些 (权限) 。
 
     1. 在应用 **页面中** ，转到策略 **>应用配置策略>添加>托管设备**。
 
@@ -185,7 +186,7 @@ Android 上的 Defender for Endpoint 支持 Android Enterprise注册的设备。
 
     :::image type="content" alt-text="应用列表的图像。" source="images/mda-properties.png" lightbox="images/mda-properties.png":::
 
-11. 将应用分配为 *用户组所需的* 应用。 下次通过应用 *同步* 设备时，它会自动安装在公司门户配置文件中。 此分配可通过导航到"必需"部分"添加组"，选择用户组并单击" \> 选择 **"完成**。
+11. 将应用分配为 *用户组所需的* 应用。 在设备下一次 *同步* 期间，它会自动安装在工作配置文件中，公司门户应用。 此分配可通过导航到"必需"部分"添加组"，选择用户组并单击" \> 选择 **"完成**。
 
     > [!div class="mx-imgBorder"]
     > ![编辑应用程序页的图像。](images/ea06643280075f16265a596fb9a96042.png)
@@ -194,12 +195,12 @@ Android 上的 Defender for Endpoint 支持 Android Enterprise注册的设备。
 
 ### <a name="auto-setup-of-always-on-vpn"></a>自动设置始终打开 VPN
 
-Defender for Endpoint 通过 Intune 支持托管设备的设备配置策略。 此功能可用于在 Android Enterprise 设备上自动设置始终打开 **VPN，** 因此最终用户无需在载入时设置 VPN 服务。
+Defender for Endpoint 通过 Intune 支持托管设备的设备配置策略。 此功能可用于在 Android Enterprise设备上自动设置始终打开 **VPN，** 因此最终用户在载入时无需设置 VPN 服务。
 
 1. 在 **设备上，** 选择 **配置文件 创建** \> **配置文件** \> **平台** \> **Android Enterprise**
 
    根据 **你的设备** 注册类型，在下列选项之一下选择设备限制：
-   - **完全托管、专用Corporate-Owned工作配置文件**
+   - **完全托管、专用和Corporate-Owned工作配置文件**
    - **个人拥有的工作配置文件**
 
    选择“**创建**”。

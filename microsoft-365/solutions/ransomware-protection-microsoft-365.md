@@ -16,14 +16,14 @@ ms.collection:
 - m365solution-ransomware
 - m365solution-overview
 ms.custom: seo-marvel-jun2020
-keywords: 勒索软件， 人为操作的勒索软件， 人工运营的勒索软件， HumOR， 勒索攻击， 勒索软件攻击， 加密， 加密病毒
+keywords: 勒索软件, 人为操作的勒索软件, 人为操作的勒索软件, HumOR, 勒索攻击, 勒索软件攻击, 加密, 加密病毒, 零信任
 description: 逐步保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: 04ce78802b24ed286ebf34fa404c17f53fef340b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: bdfb793ef5a86a21abf421addfd9d1e84dfdba61
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556144"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703513"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>为 Microsoft 365 租户部署勒索软件保护
 
@@ -139,6 +139,13 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 
 ![Microsoft 365 租户的勒索软件保护](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture.png)
 
+此解决方案使用[零信任](/security/zero-trust/)的原则： 
+
+- **显式验证**：始终根据所有可用数据点进行身份验证和授权。
+- **使用最小特权访问**：使用即时和恰好足够的访问 (JIT/JEA)、基于风险的自适应策略和数据保护来限制用户访问权限。
+- **假设安全漏洞**：尽量减少波及范围半径和线段访问。 验证端到端加密，并使用分析获取可见性、促进威胁检测和加强防范。
+
+与信任受组织防火墙保护的所有内容的传统 Intranet 访问不同，零信任将每次登录和访问都视为源自不受控制的网络，无论网络受组织防火墙保护还是来自 Internet。 零信任需要保护网络、基础结构、标识、终结点、应用和数据。
 
 ## <a name="microsoft-365-capabilities-and-features"></a>Microsoft 365 特性和功能
 
@@ -232,7 +239,7 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 - [人工操作的勒索软件](/security/compass/human-operated-ransomware)
 - [快速防范勒索软件和勒索](/security/compass/protect-against-ransomware)
 - [2021 Microsoft 数字防御报告](https://www.microsoft.com/security/business/microsoft-digital-defense-report)（请参阅第 10-19 页）
-- [勒索软件：Microsoft 365 Defender 门户中的一份持续威胁](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview)分析报告
+- [勒索软件：Microsoft 365 Defender](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview)门户中的一份持续威胁分析报告
 
 Microsoft 365：
 
@@ -241,8 +248,7 @@ Microsoft 365：
 - [恶意软件和勒索软件防护](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [保护你的 Windows 10 电脑免受勒索软件攻击](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [在 SharePoint Online 中处理勒索软件](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
-- Microsoft 365 Defender 门户中[勒索软件的威胁分析报告](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag)
-
+- Microsoft 365 Defender门户中[勒索软件的威胁分析报告](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag)
 
 Microsoft 365 Defender：
 
@@ -265,6 +271,14 @@ Microsoft Cloud App Security：
 Microsoft 安全团队博客文章：
 
 - [防范和从勒索软件中恢复的 3 个步骤（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [抵御人工操作勒索软件的指南：第 1 部分（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+
+  有关 Microsoft 检测和响应团队 (DART) 执行勒索软件事件调查的关键步骤。
+
+- [抵御人工操作勒索软件的指南：第 2 部分（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+
+  建议和最佳做法。
+
 - [通过了解网络安全风险以增强恢复能力：第 4 部分 - 浏览当前威胁（2021 年 5 月）](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   请参阅 **勒索软件** 部分。

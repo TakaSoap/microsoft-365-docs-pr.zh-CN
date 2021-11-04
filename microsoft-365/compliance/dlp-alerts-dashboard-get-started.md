@@ -19,17 +19,18 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: 开始定义和管理数据丢失防护策略的警报。
-ms.openlocfilehash: 601442336cb6ba2a913f3c64eb8345030d0f8209
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 442929df84508d99ee9ae3d88bc2297e293ecc73
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151094"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747338"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>数据丢失防护警报仪表板入门
 
-DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。 对敏感项目采取操作时，可以通过配置 DLP 警报来通知您。 本文演示如何定义与 DLP 策略或 DLP 策略的数据丢失防护 () 策略。 你将看到如何使用 DLP 警报管理[仪表板Microsoft 365 合规中心查看](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)DLP 策略违反的警报、[事件](https://compliance.microsoft.com/)和关联元数据。
+DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。 对敏感项目采取操作时，可以通过配置 DLP 警报来通知您。 本文演示如何定义与 DLP 策略或 DLP 策略的数据丢失防护 (警报) 策略。 你将看到如何使用仪表板中的[DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)警报管理Microsoft 365 合规中心查看 DLP 策略违反的<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">警报</a>、事件和关联元数据。
 
 如果您是 DLP 警报的新增用户，则应该查看了解数据丢失防护 [警报仪表板](dlp-alerts-dashboard-learn.md)
 
@@ -53,7 +54,7 @@ DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 若要
 - Office 365 (E5)
 - 高级合规性 (E5) 加载项
 - Microsoft 365 E5/A5 信息保护和治理
-- Microsft 365 E5/A5 合规性
+- Microsoft 365 E5/A5 合规
 
 ### <a name="licensing-for-alert-configuration-options"></a>警报配置选项的许可
 
@@ -115,7 +116,7 @@ DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 若要
 
 使用 DLP 警报管理仪表板：
 
-1. In the [Microsoft 365 合规中心，](https://www.compliance.microsoft.com)go to **Data Loss Prevention**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Data Loss Prevention**.
 2. 选择" **警报"** 选项卡以查看 DLP 警报仪表板。
 3. 选择警报以查看详细信息：
 

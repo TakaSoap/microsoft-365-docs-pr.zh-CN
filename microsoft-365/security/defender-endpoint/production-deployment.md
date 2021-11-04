@@ -1,5 +1,5 @@
 ---
-title: 设置 Microsoft Defender for Endpoint 部署
+title: 设置适用于终结点的 Microsoft Defender 部署
 description: 了解如何设置 Microsoft Defender for Endpoint 的部署
 keywords: 部署， 设置， 许可验证， 租户配置， 网络配置
 ms.prod: m365-security
@@ -17,14 +17,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 22b4e1c1609264a5eef17e2149b4b6e50d707999
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f68bd40afd0094f8a319f10c6e71d0cee94cef28
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162562"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754415"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置 Microsoft Defender for Endpoint 部署
+# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置适用于终结点的 Microsoft Defender 部署
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -54,9 +54,9 @@ ms.locfileid: "60162562"
 
 ## <a name="check-license-state"></a>检查许可证状态
 
-可以通过管理中心或管理门户检查许可证状态及其是否Microsoft Azure **设置**。
+可通过管理中心或管理门户检查许可证状态及其是否Microsoft Azure **设置**。
 
-1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
    ![Azure 许可页面的图像。](images/atp-licensing-azure-portal.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "60162562"
 
 载入 Microsoft Defender for Endpoint 非常简单。 从导航菜单中，选择终结点部分下的任何项目，或任何 Microsoft 365 Defender 功能（如事件、搜寻、操作中心或威胁分析）以启动载入过程。
 
-从 Web 浏览器中，导航到Microsoft 365[安全中心"](https://security.microsoft.com)。
+从 Web 浏览器中，导航到["Microsoft 365安全中心"。](https://security.microsoft.com)
 
 ## <a name="network-configuration"></a>网络配置
 
@@ -109,7 +109,7 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 1. 打开组策略管理控制台。
 2. 根据组织实践创建策略或编辑现有策略。
-3. 编辑组策略并导航到"管理模板Windows组件数据收集和预览版配置连接的用户体验和遥测服务的已验证 **\> \> \> 代理使用情况**。
+3. 编辑组策略并导航到"管理模板Windows组件数据收集和预览版配置连接的用户体验和遥测服务的已验证 **\> \> \> 代理用法**。
 
    ![组策略配置的图像。](images/atp-gpo-proxy1.png)
 
@@ -161,7 +161,7 @@ Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 20
 
 ### <a name="proxy-service-urls"></a>代理服务 URL
 
-仅在你拥有 11 Windows 10版本 1803 或 Windows 11 设备时，才需要包含 v20 的 URL。 例如， `us-v20.events.data.microsoft.com` 仅在设备位于版本 1803 或 Windows 10 11 Windows才需要。
+仅在你拥有 Windows 10 版本 1803 或 Windows 11 URL。 例如， `us-v20.events.data.microsoft.com` 仅在设备位于 Windows 10 1803 或 Windows 11。
 
 如果代理或防火墙阻止匿名流量，因为 Microsoft Defender for Endpoint 传感器从系统上下文连接，请确保允许列出的 URL 中的匿名流量。
 

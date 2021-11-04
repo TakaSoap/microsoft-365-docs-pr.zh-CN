@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用 Microsoft 合规性配置分析器快速启动并运行 Microsoft 合规性管理器。
-ms.openlocfilehash: 75fb613aa1e0256c6c819336f9bcdd340acdff7d
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 2e0327a11067a4e474831d95b2c74c4c289086ce
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335486"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747222"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>适用于合规性管理器的 Microsoft 合规性配置分析器 (预览) 
 
@@ -30,7 +30,7 @@ ms.locfileid: "60335486"
 
 ## <a name="microsoft-compliance-configuration-analyzer-mcca-preview-overview"></a>Microsoft 合规性配置分析器 (MCCA)  (预览) 概述
 
-Microsoft 合规性配置 (MCCA) 是一个预览工具，可帮助你开始使用 [Microsoft 合规性管理器](compliance-manager.md)。 MCCA 是一个基于 PowerShell 的实用工具，它将提取组织的当前配置，并对照建议的最佳Microsoft 365验证这些配置。 这些最佳做法基于一组控制措施，其中包括数据保护和数据管理的关键法规和标准。
+Microsoft 合规性配置分析 (MCCA) 是一个预览工具，可帮助你开始使用 [Microsoft 合规性管理器](compliance-manager.md)。 MCCA 是一个基于 PowerShell 的实用工具，它将提取组织的当前配置，并对照建议的最佳Microsoft 365验证这些配置。 这些最佳做法基于一组控制措施，其中包括数据保护和数据管理的关键法规和标准。
 
 MCCA 可帮助你快速查看合规性管理器中的哪些改进操作适用于当前Microsoft 365环境。 MCCA 确定的每个操作都将提供实施建议，并直接链接到合规性管理器和适用的解决方案以开始采取纠正措施。
 
@@ -42,22 +42,23 @@ MCCA 可帮助你快速查看合规性管理器中的哪些改进操作适用于
 
 可以使用以下方法安装 MCCA Windows PowerShell。 下载并安装该工具后，无需重复这些步骤来运行报告。 每次打开 MCCA 时，它会要求你提供登录凭据，并且它将生成一个新的更新报告。
 
-#### <a name="step-1-install-windows-powershell"></a>步骤 1：安装Windows PowerShell
-首先，你需要 PowerShell 库中提供的 Exchange Online (v2.0.3) 或更高版本。 [获取安装说明](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3)。
+### <a name="step-1-install-windows-powershell"></a>步骤 1：安装Windows PowerShell
 
-#### <a name="step-2-install-mcca"></a>步骤 2：安装 MCCA
+首先，你需要 PowerShell 库中提供的 Exchange Online (v2.0.3) 或更高版本的 PowerShell 模块。 [获取安装说明](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3)。
+
+### <a name="step-2-install-mcca"></a>步骤 2：安装 MCCA
 
 若要安装 MCCA，请首先在管理员模式下使用 PowerShell。 请按照以下步骤操作：
 
 1. 选择 **"Windows"** 按钮。
-2. 键入 **PowerShell，** 右 **键单击**"Windows PowerShell"，然后选择"以 **管理员角色运行"。**
+1. 键入 **PowerShell，** 右 **键单击**"Windows PowerShell"，然后选择"以 **管理员角色运行"。**
 1. 在命令提示符处，键入：
 
     ```powershell
     Install-Module -Name MCCAPreview
     ```
 
-#### <a name="step-3-run-a-report"></a>步骤 3：运行报告
+### <a name="step-3-run-a-report"></a>步骤 3：运行报告
 
 安装 MCCA 后，可以运行 MCCA 并生成报告。 运行报告：
 
@@ -68,13 +69,13 @@ MCCA 可帮助你快速查看合规性管理器中的哪些改进操作适用于
     Get-MCCAReport
     ```
 
-   如果你是高级GCC，则需要提供其他输入参数来运行报告：
+    如果你是高级GCC，则需要提供其他输入参数来运行报告：
 
     ```powershell
     Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
     ```
 
-3. MCCA 运行后，它将执行初始版本检查并请求凭据。 在"输入用户名"提示符下，使用 Microsoft 365 帐户电子邮件地址登录 ([查看](#role-based-reporting)有资格创建报告) 。 然后在密码提示符下输入密码。
+3. MCCA 运行后，它将执行初始版本检查并请求凭据。 在"输入用户名"提示符下，使用 Microsoft 365 帐户电子邮件地址登录 (查看有资格创建[报告) 。](#role-based-reporting) 然后在密码提示符下输入密码。
 
 然后，报告将大约需要 2-5 分钟生成。 完成后，浏览器窗口将打开并显示 HTML 报告。 每次运行该工具时，该工具都会要求提供凭据并生成一个新报告。 此报告本地存储在以下目录中：
 
@@ -90,7 +91,7 @@ C：\Users \<username> \AppData\Local\Microsoft\MCCA。
 
 " **注释** "部分显示根据租户的地理位置对报表进行自定义。 推荐列出的项目将特定于你的国家/地区。
 
-你的地理位置选择用于评估与 (地理位置) 的敏感信息类型，并生成与你的国家/地区一致的报告。 根据租户中拥有的数据选择地理位置。
+你的地理位置选择用于评估与该地理位置 (或) 的敏感信息类型，并生成与你的国家/地区一致的报告。 根据租户中拥有的数据选择地理位置。
 
 若要更改报表的位置信息，你需要提供地理位置 (地理位置) 输入参数。 可以选择适用于租户的一个或多个地理位置。
 
@@ -107,7 +108,7 @@ C：\Users \<username> \AppData\Local\Microsoft\MCCA。
   | 1 | 亚太地区 |
   | 2 | 澳大利亚 |
   | 3 | 加拿大 |
-  | 4  | 欧洲 (（不包括法国) /中东/非洲） |
+  | 4  | 欧洲 (（法国) /中东/非洲） |
   | 5 | 法国 |
   | 6  | 印度 |
   | 7  | 日本 |
@@ -127,7 +128,7 @@ C：\Users \<username> \AppData\Local\Microsoft\MCCA。
 
 你的报告也将基于你的角色进行自定义。
 
-下表显示了哪些角色有权访问报告的哪些部分。 下表中 (组织内部的其他角色) 可能无法运行该工具，或者他们可能运行该工具，并且对最终报告中的信息具有有限的访问权限。
+下表显示了哪些角色有权访问报告的哪些部分。  (下表中未列出的) 其他角色可能无法运行该工具，或者他们可能运行该工具，并且对最终报告中的信息具有有限的访问权限。
 
 ![MCCA - 角色。](../media/compliance-manager-mcca-roles.png "MCCA 角色")
 
@@ -136,7 +137,7 @@ C：\Users \<username> \AppData\Local\Microsoft\MCCA。
 2. 用户将能够生成除"使用 IRM for Exchange Online"部分的报告。
 3. 用户将能够生成除"在 O365 中启用通信合规性"部分之外 IP 的报告。
 4. 用户无法生成除"启用审核功能中的审核"部分Office 365 IP 报告。
-5. 用户将能够生成除"在服务器中启用审核"部分Office 365 IP 报告。
+5. 用户将能够生成除"启用审核功能中的审核"部分Office 365 IP 报告。
 
 #### <a name="solutions-summary-section"></a>"解决方案摘要"部分
 
@@ -168,6 +169,6 @@ MCCA 根据合规性管理器中建议的改进操作评估当前配置。 本�
 
 ## <a name="resources"></a>资源
 
-有关安装、设置和使用 MCCA 的更多详细信息，请参阅 GitHub ([](https://github.com/OfficeDev/MCCA#overview) GitHub帐户所需的自述) 。
+有关安装、设置和使用 MCCA 的更多详细信息，请参阅[GitHub](https://github.com/OfficeDev/MCCA#overview) (GitHub帐户所需的自述) 。
 
 有关此Windows PowerShell，请从如何使用[PowerShell 文档开始](/powershell/scripting/how-to-use-docs)。 另请参阅[Starting Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell)。

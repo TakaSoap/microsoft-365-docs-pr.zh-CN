@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7868b57b03a237a3cd65841040ee741b2cdd0c12
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3c769f0ddf3e986f96ff80c0dbf54b23f9b9eafc
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194305"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753179"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>排查 Android 上 Microsoft Defender for Endpoint 的问题
 
@@ -54,7 +54,7 @@ ms.locfileid: "60194305"
 
 **解决方案：**
 
-从 Google Play[应用商店Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator)最新版本和版本，然后重试
+从 Google Play 应用商店[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)最新版本和版本，然后重试。
 
 ## <a name="sign-in-failed---invalid-license"></a>登录失败 - 许可证无效
 
@@ -66,7 +66,7 @@ ms.locfileid: "60194305"
 
 **原因：**
 
-您未分配Microsoft 365许可证，或者您的组织没有用于订阅Microsoft 365 企业版许可证。
+您未Microsoft 365许可证，或者您的组织没有用于订阅Microsoft 365 企业版许可证。
 
 **解决方案：**
 
@@ -143,7 +143,7 @@ ms.locfileid: "60194305"
 
 如果用户面临以上部分中尚未解决的问题，或者无法使用列出的步骤解决问题，则用户可以提供应用内 **反馈以及诊断****数据**。 然后，我们团队可以调查日志以提供正确的解决方案。 用户可以按照以下步骤执行相同的操作：
 
-1.  在设备上 **打开 MDE** 应用程序，然后单击左上角的配置文件图标。
+1.  在 **设备上打开 MDE** 应用程序，然后单击左上角的配置文件图标。
 
     :::image type="content" alt-text="单击配置文件图标。" source="images/select-profile-icon-1.jpg":::
 

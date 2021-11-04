@@ -9,18 +9,18 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: 了解从安全与合规中心Office 365用户自动重定向到 Microsoft 365 合规中心。
+description: 了解从安全与合规中心Office 365用户自动重定向到Microsoft 365 合规中心。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: dcf589eddc0ede59efd01d7eddbe9ab3685bfa68
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 9e299ee84eb046a1d6c3ae41d80eeb0106fad63e
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700897"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754785"
 ---
 # <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>将用户从安全Office 365中心重定向到Microsoft 365 合规中心
 
-本文介绍了自动重定向如何适用于从安全与合规中心Office 365合规性解决方案 (protection.office.com) 到Microsoft 365 合规中心 (compliance.microsoft.com) 。
+本文介绍了自动重定向如何适用于从安全与合规中心Office 365合规性解决方案 (protection.office.com) 到<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心。</a>
 
 ## <a name="what-to-expect"></a>预期结果
 
@@ -36,7 +36,7 @@ ms.locfileid: "60700897"
 - [信息治理](manage-information-governance.md)
 - [记录管理](records-management.md)
 
-用户将自动路由到同一个合规性解决方案Microsoft 365 合规中心 (compliance.microsoft.com) 。
+用户将自动路由到 Microsoft 365 合规中心 中的相同<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">合规性解决方案</a>。
 
 此功能和相关控件不支持自动重定向 Microsoft Defender for Office 365。 若要启用安全功能重定向，请参阅将帐户从[Microsoft Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) for Office 365重定向到 Microsoft 365 安全中心了解详细信息。
 

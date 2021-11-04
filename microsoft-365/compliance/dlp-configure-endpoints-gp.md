@@ -11,15 +11,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: 使用组策略在 Windows 10部署配置包，以便它们可以载入到服务。
-ms.openlocfilehash: 00befc6d33de8c93b2412d8a9f31a8aabe45f09c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3329d21b4e0ba55c4b91a56a26af890b1199fb56
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155030"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755728"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用Windows 10载入设备 
 
@@ -45,11 +46,11 @@ ms.locfileid: "60155030"
 
 5. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个称为 *OptionalParamsPolicy* 的文件夹和文件 *DeviceComplianceLocalOnboardingScript.cmd*。
 
-6. 打开 [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)GPMC (组策略管理) ，右键单击要配置的组策略对象 () GPO"，然后单击"编辑 **"。**
+6. 打开 [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)GPMC (组策略管理控制台) ，右键单击要配置的组策略对象 (GPO) 然后单击"编辑 **"。**
 
 7. 在组 **策略管理编辑器中**，转到"**计算机配置**"，然后转到"**首选项**"，然后转到"**控制面板设置"。**
 
-8. 右键单击 **计划任务**，指向新建 **，然后单击** 即时任务 (**至少Windows 7)**。
+8. 右键单击 **计划任务**，指向 **新建**，然后单击即时任务 (**至少Windows 7)**。
 
 9. 在打开 **的任务** 窗口中，转到常规 **选项卡**。在 **"安全选项"** 下，单击 **"更改用户或组**"，然后键入"系统"，然后单击"**检查名称**"，然后单击"确定 **"。** NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。
 
@@ -59,16 +60,16 @@ ms.locfileid: "60155030"
 
 12. 单击 **"确定** "并关闭任何打开的 GPMC 窗口。
 
-
 ## <a name="offboard-devices-using-group-policy"></a>使用组策略的载出设备
+
 出于安全考虑，用于"载出"设备的程序包将在下载日期 30 天后过期。 发送到设备的过期载出包将被拒绝。 下载载出包时，你将收到程序包到期日期的通知，该日期也将包含在程序包名称中。
 
 > [!NOTE]
-> 不得同时在同一设备上部署载入和载出策略，否则将导致不可预知的冲突。
+> 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
 
 1. 从 Microsoft 合规性中心获取 [载出包](https://compliance.microsoft.com/compliancesettings/deviceonboarding)。
 
-2. 在导航窗格中，**选择**  >  **"设置//设备载入**  >  **""载出"。**
+2. 在导航窗格中，选择  >  **"设置//设备载入**  >  **""载出"。**
 
 3. 在"**部署方法"** 字段中，选择"**组策略"。**
 
@@ -76,7 +77,7 @@ ms.locfileid: "60155030"
 
 5. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
-6. 打开 [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)GPMC (组策略管理) ，右键单击要配置的组策略对象 () GPO"，然后单击"编辑 **"。**
+6. 打开 [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)GPMC (组策略管理控制台) ，右键单击要配置的组策略对象 (GPO) 然后单击"编辑 **"。**
 
 7. 在组 **策略管理编辑器中**，转到"**计算机配置"，然后** 转到"**首选项**"，然后转到"**控制面板设置"。**
 
@@ -98,7 +99,7 @@ ms.locfileid: "60155030"
 借助组策略，无法监视设备上策略的部署。 可以直接在门户上或使用不同的部署工具进行监视。
 
 ## <a name="monitor-devices-using-the-portal"></a>使用门户监视设备
-1. 转到 [Microsoft 合规中心](https://compliance.microsoft.com/)。
+1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>。
 2. 单击 **"设备列表** "。
 3. 验证设备是否显示。
 
@@ -107,7 +108,7 @@ ms.locfileid: "60155030"
 
 
 ## <a name="related-topics"></a>相关主题
-- [使用Windows 10设备载入Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
+- [使用Windows 10载入设备Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [使用移动设备管理工具载入 Windows 10 设备](dlp-configure-endpoints-mdm.md)
 - [使用本地脚本载入 Windows 10 设备](dlp-configure-endpoints-script.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](dlp-configure-endpoints-vdi.md)

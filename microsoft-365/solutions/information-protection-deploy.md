@@ -1,5 +1,5 @@
 ---
-title: 为数据隐私法规部署信息保护Microsoft 365
+title: 为数据隐私法规部署信息保护与Microsoft 365
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -17,22 +17,22 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 针对数据隐私Microsoft 365如 GDPR 和加州消费者隐私法案 (CCPA) （包括 Microsoft Teams、SharePoint 和电子邮件）配置信息保护。
-ms.openlocfilehash: 49d5848c6b81dcd6a81377cc3ff83cb242354690
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7517faa02ea74d5a9934e22595d61a34e99067a5
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213369"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756583"
 ---
-# <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>为数据隐私法规部署信息保护Microsoft 365
+# <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>为数据隐私法规部署信息保护与Microsoft 365
 
 你的组织可能受区域数据隐私法规的约束，这些法规要求你保护、管理和控制存储在 IT 基础结构（包括本地和云）中的个人信息。 数据隐私条例的最佳示例是欧盟一般数据保护条例 (GDPR) 。 如果不遵守数据隐私法规，可能会导致大量罚款。
 
-Microsoft 365中数据类型的示例包括 Microsoft Teams 中的聊天会话、Exchange 中的电子邮件以及 SharePoint 和 OneDrive。 此解决方案提供有关如何评估风险并采取适当的措施来保护数据中个人数据Microsoft 365。 这包括标识个人信息，以便你可以保护、治理和响应数据隐私事件。
+Microsoft 365中数据类型的示例包括 Microsoft Teams 中的聊天会话、Exchange 中的电子邮件以及 SharePoint 和 OneDrive。 此解决方案提供有关如何评估风险并采取适当的措施来保护安全中心中的个人数据Microsoft 365。 这包括标识个人信息，以便你可以保护、治理和响应数据隐私事件。
 
 ![什么是数据隐私法规的信息保护。](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
-此外，还提供了有关数据隐私Microsoft 365、设备和威胁防护控件的使用的其他信息。
+此外，还提供了有关数据Microsoft 365、设备和威胁防护控件的使用的其他信息。
 
 观看此视频以简要了解部署流程。
 <br>
@@ -47,7 +47,7 @@ Microsoft 365中数据类型的示例包括 Microsoft Teams 中的聊天会话�
 | Microsoft Defender for Office 365 | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 | Microsoft 365 E3 和 E5 |
 | 敏感度标签 | 对组织的数据进行分类和保护，而不会妨碍用户的工作效率及其协作能力。 将具有各种保护级别的标签放在电子邮件、文件或网站上。 | Microsoft 365 E3 和 E5 |
 | 数据丢失防护 (DLP) | 检测、警告和阻止在内部和外部共享包含个人信息的数据存在风险、无意或不当共享。 | Microsoft 365 E3 和 E5 |
-| 数据保留标签和策略 | 实施信息治理控制。 这些可能包括确定保留数据 (例如与客户相关的个人数据) 组织的策略或数据法规。 | Microsoft 365 E3 和 E5 |
+| 数据保留标签和策略 | 实施信息治理控制。 这些可能包括确定保留数据保留 (例如与客户相关的个人数据) 组织的策略或数据法规。 | Microsoft 365 E3 和 E5 |
 | 电子邮件加密 | 通过发送和接收组织内外人员之间的加密电子邮件来保护个人数据。 | Microsoft 365 E3 和 E5 |
 ||||
 
@@ -73,7 +73,7 @@ Microsoft 365中数据类型的示例包括 Microsoft Teams 中的聊天会话�
 
 ## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>跟踪：运行风险评估并检查合规性分数
 
-合规性管理器（Microsoft 365 合规中心中提供）内置功能，可跟踪和管理整体改进操作，以及适用于你的多个数据隐私法规的相关改进操作。
+合规性管理器（Microsoft 365 合规中心中提供<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>）内置功能，可跟踪和管理整体改进操作，以及适用于你的多个数据隐私法规的相关改进操作。
 
 您可以使用特定于每个法规的内置评估模板，可在其中跟踪选定每个评估模板的行动项，并查看特定法规控制措施，以及将其与特定行动关联。
 
@@ -85,11 +85,11 @@ Microsoft 365提供可用于帮助遵守数据隐私法规的标识、设备和�
 
 有关详细信息，请参阅对数据隐私法规使用标识 [、设备和威胁防护](information-protection-deploy-identity-device-threat.md)。
 
-本文简要介绍了在这些方面通常要求的数据隐私法规，并提供了相关 Microsoft 365 解决方案列表，并提供了可帮助您满足任何实现要求的更多信息的链接。
+本文简要介绍了数据隐私法规在这些方面通常要求哪些内容，并提供了相关 Microsoft 365 解决方案列表，并提供了可帮助您满足任何实现要求的更多信息的链接。
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>保护受数据隐私条例保护的信息
 
-数据隐私法规规定可在你的环境中使用大量个人信息保护控制措施，包括用于保护 GDPR 示例集、加州消费者保护法案 (CCPA) 、HIPAA-HITECH (美国医疗保健隐私法案) 和巴西数据保护法案 (LGPD) 中的四项数据隐私法规中的 40 多项信息保护控制措施。
+数据隐私法规规定可在你的环境中使用大量个人信息保护控制措施，包括 GDPR 示例集、加州消费者保护法案 (CCPA) 、HIPAA-HITECH (美国医疗保健隐私法案) 和巴西数据保护法案 (LGPD) 中用于保护信息的 40 多个控制措施。
 
 有关详细信息，请参阅 [保护受组织中数据隐私法规的约束的信息](information-protection-deploy-protect-information.md)。
 
@@ -97,7 +97,7 @@ Microsoft 365提供可用于帮助遵守数据隐私法规的标识、设备和�
 
 ## <a name="retain-govern-information-subject-to-data-privacy-regulation"></a>保留：管理受数据隐私法规约束的信息
 
-数据隐私法规要求在环境中可以使用的个人信息治理控制措施，包括 GDPR、CCPA、HIPAA-HITECH 和 LGPD 示例集内四种数据隐私法规中的超过 24 项控制措施。
+数据隐私法规要求在你的环境中可以使用的个人信息治理控制，包括 GDPR、CCPA、HIPAA-HITECH 和 LGPD 示例集内四种数据隐私法规中的 24 多个控制措施。
 
 有关详细信息，请参阅 [在组织中受数据隐私法规约束的治理信息](information-protection-deploy-govern.md)。
 
@@ -120,7 +120,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解对信息保护非常�
 
 |培训：|使用 Microsoft 365 保护企业信息|
 |:---|:---|
-|![Teams信息保护培训图标。](../media/protect-enterprise-information-microsoft-365.svg)|保护和保证组织的信息安全以往任何时候都更具挑战性。 使用 Microsoft 365 保护企业信息学习路径介绍如何防止敏感信息被意外过度分享或滥用，如何发现和分类数据，如何使用敏感度标签保护数据，以及如何同时监视和分析敏感信息以防信息丢失。 此学习路径可帮助你准备Microsoft 365认证：安全管理员关联Microsoft 365认证：Enterprise专家认证。<br><br>1 小时 - Learning 路径 - 5 个模块|
+|![Teams信息保护培训图标。](../media/protect-enterprise-information-microsoft-365.svg)|保护和保证组织的信息安全以往任何时候都更具挑战性。 使用 Microsoft 365 保护企业信息学习路径介绍如何防止敏感信息被意外过度分享或滥用，如何发现和分类数据，如何使用敏感度标签保护数据，以及如何同时监视和分析敏感信息以防信息丢失。 此学习路径可帮助你准备Microsoft 365：安全管理员关联Microsoft 365认证：Enterprise专家认证。<br><br>1 小时 - Learning 路径 - 5 个模块|
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/m365-security-info-overview/introduction/)

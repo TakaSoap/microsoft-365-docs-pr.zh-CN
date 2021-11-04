@@ -13,14 +13,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器，以将 Twitter 数据导入和存档到Microsoft 365。 在将数据导入Microsoft 365，您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的 Twitter 数据的管理。
-ms.openlocfilehash: 478731bc2855b199888311377c21f09aac17fcf1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bd0885c0b9893b79d36981d52f596d1e5d6b8396
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193443"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757065"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>部署连接器以存档 Twitter 数据
 
@@ -36,7 +37,7 @@ ms.locfileid: "60193443"
 
    ![转到Azure Active Directory。](../media/TCimage02.png)
 
-3. 在左侧导航窗格中，单击"应用注册 (**预览**) 然后单击"新建 **注册"。**
+3. 在左侧导航窗格中，单击"应用注册 (**预览**) ，然后单击"新建 **注册"。**
 
    ![创建新的应用注册。](../media/TCimage03.png)
 
@@ -44,7 +45,7 @@ ms.locfileid: "60193443"
 
    ![键入 https://portal.azure.com 重定向 URI。](../media/TCimage04.png)
 
-5. 复制 **应用程序 (客户端) ID (** Directory) **ID，并将其** 保存到文本文件或其他安全位置。 在稍后的步骤中使用这些 ID。
+5. 复制 **应用程序 (客户端) ID** 和目录 (租户) **ID，** 并将其保存到文本文件或其他安全位置。 在稍后的步骤中使用这些 ID。
 
     ![复制并保存应用程序 ID 和目录 ID。](../media/TCimage05.png)
 
@@ -56,7 +57,7 @@ ms.locfileid: "60193443"
 
    ![键入密码并选择过期期限。](../media/TCimage08.png)
 
-8. 复制密码的值并将其保存到文本文件或其他存储位置。 这是在稍后的步骤中使用的 AAD 应用程序密码。
+8. 复制密码的值并将其保存到文本文件或其他存储位置。 这是AAD步骤中使用的应用程序密码。
 
    ![复制并保存密码。](../media/TCimage09.png)
 
@@ -67,7 +68,7 @@ ms.locfileid: "60193443"
 
     ![转到 Azure 主页。](../media/FBCimage11.png)
 
-2. 单击" **部署到 Azure"** 后，你将重定向到具有自定义模板页面的 Azure 门户。 填写基本 **信息并****设置详细信息**，**然后单击购买。**
+2. 单击" **部署到 Azure"** 后，你将重定向到具有自定义模板页面的 Azure 门户。 填写基础知识 **和****设置详细信息**，**然后单击购买。**
 
    ![单击"创建资源并键入存储帐户"。](../media/FBCimage12.png)
 
@@ -114,7 +115,7 @@ ms.locfileid: "60193443"
 
    ![配置权限。](../media/TCimage30.png)
 
-7. 保存权限设置后，单击"应用详细信息 **"选项卡，** 然后单击"编辑>**编辑详细信息"。**
+7. 保存权限设置后，单击"应用程序详细信息 **"选项卡，** 然后单击"编辑>**编辑详细信息"。**
 
    ![编辑应用详细信息。](../media/TCimage31.png)
 
@@ -138,7 +139,7 @@ Twitter 开发人员应用现在可供使用。
 
    ![单击"配置"显示登录页。](../media/FBCimage42.png)
 
-3. 在"租户 ID"框中，键入或粘贴 (步骤 2 中获取的租户 ID) 。 在密码框中，键入或粘贴在步骤 2) 获取的 APISecretKey (，然后单击"设置配置 **设置"** 以显示配置详细信息页。
+3. 在"租户 ID"框中，键入或粘贴 (步骤 2) 。 在密码框中，键入或粘贴在步骤 2) 获取的 APISecretKey (，然后单击"设置配置 设置"以显示配置详细信息页。
 
    ![使用租户 ID 和 API 密钥登录。](../media/TCimage35.png)
 
@@ -152,15 +153,15 @@ Twitter 开发人员应用现在可供使用。
 
    - **Twitter 访问令牌密码：** 在步骤 3 中创建的访问令牌密码。
 
-   - **AAD 应用程序 ID：** 在步骤 1 中创建Azure Active Directory应用程序的应用程序 ID
+   - **AAD应用程序 ID：** 在步骤 1 中创建Azure Active Directory应用程序的应用程序 ID
 
-   - **AAD 应用程序密码：** 在步骤 1 中创建的 APISecretKey 密码的值。
+   - **AAD应用程序密码：** 在步骤 1 中创建的 APISecretKey 密码的值。
 
 5. 单击 **"保存** "以保存连接器设置。
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>步骤 5：在 Microsoft 365 合规中心
 
-1. 转到 ， [https://compliance.microsoft.com](https://compliance.microsoft.com) 然后单击左侧 **导航中的** "数据连接器"。
+1. Go to the Microsoft 365 合规中心， and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank"> **Data connectors** page</a.
 
 2. 在"**数据连接器"页面上** 的 **Twitter 下**，单击"查看 **"。**
 
@@ -172,17 +173,17 @@ Twitter 开发人员应用现在可供使用。
 
    ![输入连接器应用凭据。](../media/TCimage38.png)
 
-    - 在 **"名称** &quot;框中，键入连接器的名称，例如 Twitter **帮助处理**。
+    - 在 **"名称** "框中，键入连接器的名称，例如 Twitter **帮助处理**。
 
-    - 在&quot; **连接器 URL&quot;** 框中，键入或粘贴 Azure 应用服务 URL;例如 `https://twitterconnector.azurewebsites.net` 。
+    - 在" **连接器 URL"** 框中，键入或粘贴 Azure 应用服务 URL;例如 `https://twitterconnector.azurewebsites.net` 。
 
-    - 在 **&quot;密码** &quot;框中，键入或粘贴在步骤 2 中创建的 APISecretKey 的值。
+    - 在 **"密码** "框中，键入或粘贴在步骤 2 中创建的 APISecretKey 的值。
 
-    - 在 **&quot;Azure 应用 ID&quot;** 框中，键入或粘贴 Azure 应用程序应用 ID (也称为&quot;客户端 *ID")* 在步骤 1 中获取的值。
+    - 在 **"Azure 应用 ID"** 框中，键入或粘贴 Azure 应用程序应用 ID (也称为"客户端 *ID")* 在步骤 1 中获取的客户端 ID。
 
 6. 成功验证连接后，单击"下一 **步"。**
 
-7. 在"**授权Microsoft 365数据"** 页上，再次键入或粘贴 APISecretKey，然后单击"登录 Web **应用"。**
+7. 在"**授权Microsoft 365"页上**，再次键入或粘贴 APISecretKey，然后单击"**登录 Web 应用"。**
 
 8. 单击 **"使用 Twitter 登录"。**
 

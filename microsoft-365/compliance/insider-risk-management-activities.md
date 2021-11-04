@@ -1,7 +1,7 @@
 ---
 title: 调查内部风险管理活动
 description: 了解如何调查企业内部风险管理Microsoft 365
-keywords: Microsoft 365、内部风险、风险管理、合规性
+keywords: Microsoft 365， 内部风险， 风险管理， 合规性
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -12,22 +12,22 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6d5974f1a6fca1a56438317b58d36193cb08a7fc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 47840e7de14f48a4ae6fee5c134d432accb27e4c
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662611"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754479"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>调查内部风险管理活动
 
-调查有风险的用户活动是最大程度地降低组织内部风险的重要第一步。 这些风险可能是从内部风险管理策略生成警报的活动，或者是从策略检测到的活动生成风险，但不立即为用户创建内部风险管理警报。 可以使用"用户活动报告"或"警报"仪表板 (预览) 调查 **这些****类型的活动**。
+调查有风险的用户活动是最大程度地降低组织内部风险的重要第一步。 这些风险可能是从内部风险管理策略生成警报的活动，或者是从策略检测到的活动生成风险，但不立即为用户创建内部风险管理警报。 通过使用用户活动报表或警报仪表板， (预览 **) 调查这些****类型的活动**。
 
 ## <a name="user-activity-reports-preview"></a>用户活动报表 (预览) 
 
-用户活动报告允许你检查指定时段内特定用户的活动，而无需将其临时或显式分配给内部风险管理策略。 在大多数内部风险管理方案中，用户明确在策略中定义，并且他们可能具有策略警报 (具体取决于触发事件) 活动的风险评分。 但在某些情况下，你可能想要检查未在策略中显式定义的用户的活动。 这些活动可能适用于你已收到有关用户和可能存在风险的活动的提示的用户，或者通常不需要分配给内部风险管理策略的用户。
+用户活动报告允许你检查指定时段内特定用户的活动，而无需将其临时或显式分配给内部风险管理策略。 在大多数内部风险管理方案中，在策略中显式定义用户，并且他们可能具有策略警报 (具体取决于触发事件) 以及与活动关联的风险评分。 但在某些情况下，你可能想要检查未在策略中显式定义的用户的活动。 这些活动可能适用于你已收到有关用户和可能存在风险的活动的提示的用户，或者通常不需要分配给内部风险管理策略的用户。
 
-在内部风险管理中心页面上配置 **设置后，** 将检测到与所选指标关联的风险活动的用户活动。 不需要为用户活动报告配置策略来检测和报告组织中用户的风险活动。 用户活动报告中包括的活动不需要触发事件来显示活动。 此配置意味着用户的所有检测到的活动都可供查看，无论活动是否触发事件或是否创建警报。 报告是按用户创建的，可以包含自定义 90 天期间的所有活动。 不支持同一用户的多个报告。
+在内部风险管理中心页面上配置 **设置后，** 将检测到与所选指标关联的风险活动的用户活动。 不需要为用户活动报告配置策略来检测和报告组织中用户的风险活动。 用户活动报告中包括的活动不需要触发事件来显示活动。 此配置意味着用户的所有检测到的活动都可供查看，无论其是否具有触发事件或是否创建警报。 报告是按用户创建的，可以包含自定义 90 天期间的所有活动。 不支持同一用户的多个报告。
 
 在检查用户的活动后，调查人员可以以恶意方式消除个别活动，与其他调查人员共享或通过电子邮件发送指向报告的链接，或者选择将用户临时或显式分配给内部风险管理策略。 必须将用户分配到预览体验 *成员风险管理研究人员* 角色组，以查看" **用户活动报告"** 页。  
 
@@ -103,7 +103,7 @@ ms.locfileid: "60662611"
 
 若要消除内部风险警报，请完成以下步骤：
 
-1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the **Alerts** tab.
 2. 在 **警报仪表板上**，选择 (或 *) 需要审阅* 状态时要消除的警报。
 3. 在警报命令栏上，选择 **消除警报**。
 4. 在 **"消除警报详细信息** "窗格中，你可以查看与所选警报关联的用户和策略详细信息。
@@ -113,7 +113,7 @@ ms.locfileid: "60662611"
 
 若要对内部风险警报进行会审，请完成以下步骤：
 
-1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the **Alerts** tab.
 2. 在 **警报仪表板上**，选择要会审的警报。
 3. 在 **"警报详细信息** "页上，你可以查看有关警报的信息，并可以确认警报并创建新案例、确认警报并添加到现有案例，或者消除警报。 此页面还包括警报的当前状态和警报风险严重性级别，列为"高、中"或"低"。 如果警报未分类，严重性级别可能会随着时间的推移而增加或减小。
 
@@ -153,7 +153,7 @@ ms.locfileid: "60662611"
 
 若要使用 **活动资源管理器**，请完成以下步骤：
 
-1. In the Microsoft 365 合规中心， go to **Insider risk management** and select the **Alerts** tab.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the **Alerts** tab.
 2. 在 **警报仪表板上**，选择要会审的警报。
 3. 在警报 **详细信息窗格中，选择** 打开 **展开的视图**。
 4. 在所选警报的页面上，选择" **活动资源管理器"** 选项卡。
@@ -171,7 +171,7 @@ ms.locfileid: "60662611"
 
 在审核和会审警报时，您可以创建一个新案例以进一步调查风险活动。 若要为警报创建案例，请按照以下步骤操作：
 
-1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the **Alerts** tab.
 2. 在 **警报仪表板上**，选择要确认的警报并创建一个新案例。
 3. 在警报 **详细信息窗格中，** 选择 **操作**  >  **确认警报&创建案例**。
 4. 在" **确认警报并创建内部** 风险案例"对话框中，输入案例名称，选择要添加为参与者的用户，并根据需要添加注释。 注释会自动作为案例注释添加到案例。

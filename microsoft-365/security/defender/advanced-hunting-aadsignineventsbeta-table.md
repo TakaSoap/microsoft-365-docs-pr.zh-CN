@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8fa111b636026de49c854eb5ec8c17f1aad5c3eb
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3c25132cc8743bf791123ae2cc4d29a195faa34a
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673091"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755345"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -36,7 +36,7 @@ ms.locfileid: "60673091"
 
 高级 `AADSignInEventsBeta` 搜寻架构中的表包含有关Azure Active Directory和非交互式登录的信息。了解有关登录活动报告中Azure Active Directory[的详细信息 - 预览](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。 
 
-使用此参考来构建从该表返回信息的查询。 有关高级搜寻架构中其他表的信息，请参阅[高级搜寻参考](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference)。
+使用此参考来构建从该表返回信息的查询。 有关高级搜寻架构中其他表的信息，请参阅高级 [搜寻参考](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference)。
 
 <br>
 

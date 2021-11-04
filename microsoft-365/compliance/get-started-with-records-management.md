@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要用于管理高价值内容的 Microsoft 365 记录管理解决方案以满足法律、业务或法规方面的义务，但不确定从哪里入手？请阅读一些实用指南来入门。
-ms.openlocfilehash: d87d24bce7e0ad24e5b9914fe98379fd9f40f1bc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f1877330ee502404d28b10cfe04dba96a37211c8
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167242"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756943"
 ---
 # <a name="get-started-with-records-management"></a>记录管理入门
 
@@ -49,7 +49,7 @@ ms.locfileid: "60167242"
 
 ## <a name="permissions-required-for-records-management"></a>记录管理所需的权限
 
-负责记录管理的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。为了授予该有限管理权限，建议将用户添加至授予所有与记录管理相关的功能的权限的 **记录管理** 管理员角色组，其中包括 [处置审查和验证](disposition.md)。
+负责记录管理的合规性团队成员必须有权访问 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>。默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。为了授予该有限管理权限，建议将用户添加至授予所有与记录管理相关的功能的权限的 **记录管理** 管理员角色组，其中包括 [处置审查和验证](disposition.md)。
 
 对于只读角色，可以创建新的角色组，并将 **只读记录管理** 角色添加到该组中。
 

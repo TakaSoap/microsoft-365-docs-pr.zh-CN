@@ -8,7 +8,9 @@ author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.custom: admindeeplinkMAC
+ms.custom:
+- admindeeplinkMAC
+- admindeeplinkCOMPLIANCE
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
@@ -20,12 +22,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ff326544d2485fa3ca7385f9ad8b924514aec1a5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3d0a905137ae1f2a55bddb0ae3d9691e68d69bac
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647554"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756249"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-content-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>案例研究 - Contoso 快速配置不恰当的内容策略，Microsoft Teams、Exchange和Yammer通信
 
@@ -80,7 +82,7 @@ Contoso IT 管理员执行以下步骤来验证 Contoso 的许可支持：
 
 ### <a name="permissions-for-communication-compliance"></a>通信合规性权限
 
-共有 5 个角色组，用于配置权限以管理通信合规性功能。 若要使 **通信合规性** 作为菜单中的菜单选项Microsoft 365 合规中心继续执行这些配置步骤，为 Contoso 管理员分配 *了通信合规性管理员* 角色。
+共有 5 个角色组，用于配置权限以管理通信合规性功能。 若要使 **通信合规性** 作为菜单中的菜单选项Microsoft 365 合规中心继续执行这些配置步骤，为 Contoso 管理员分配 *了 Communication Compliance Admin* 角色。
 
 Contoso 决定使用 *Communication Compliance* 角色组向该组分配所有通信合规性管理员、分析员、研究人员和查看者。 这样，Contoso 可以更轻松地快速入门，并最好地满足其合规性管理要求。
 
@@ -93,7 +95,7 @@ Contoso 决定使用 *Communication Compliance* 角色组向该组分配所有�
 | **通信合规性查看者** | 使用此组向管理通信报告的用户分配权限。 分配到此角色组的用户可以访问通信合规性主页上的所有报告小组件，并且可以查看所有通信合规性报告。 |
 
 1. Contoso IT 管理员使用全局[](https://compliance.microsoft.com/permissions)管理员帐户的凭据登录到 Microsoft 365 合规中心 权限页面，并选择链接以查看和管理 Microsoft 365 中的角色。
-2. 在Microsoft 365 合规中心 **中**，他们转到"**权限**"并选择链接以查看和管理角色Office 365。
+2. 在Microsoft 365 合规中心中，他们转到"<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**权限**</a>"并选择链接以查看和管理角色Office 365。
 3. 管理员选择"*通信合规性"* 角色组，然后选择"**编辑角色组"。**
 4. 管理员从左侧导航 **窗格中选择**"选择成员"，然后选择"编辑 **"。**
 5. 他们选择 **"** 添加"，然后选中将管理通信合规性、调查和查看警报的所有 Contoso 用户的复选框。
@@ -111,7 +113,7 @@ Contoso 决定使用 *Communication Compliance* 角色组向该组分配所有�
 
 ### <a name="starting-directly-from-the-communication-compliance-solution"></a>直接从通信合规性解决方案开始
 
-访问解决方案的最快方法就是直接登录到通信合规性 <https://compliance.microsoft.com/supervisoryreview> () 解决方案。 使用此链接，Contoso IT 管理员和合规性专家将被定向到通信合规性概述仪表板，您可以在其中快速查看警报状态，并基于预定义模板创建新策略。
+访问解决方案的最快方法就是直接登录通信合规性 <https://compliance.microsoft.com/supervisoryreview> () 解决方案。 使用此链接，Contoso IT 管理员和合规性专家将被定向到通信合规性概述仪表板，您可以在其中快速查看警报状态，并基于预定义模板创建新策略。
 
 ![通信合规性概述。](../media/communication-compliance-case-overview.png)
 
@@ -123,21 +125,21 @@ Contoso IT 管理员和合规性专家访问通信合规性解决方案的另一
 
 ### <a name="starting-from-the-microsoft-365-solution-catalog"></a>从解决方案Microsoft 365开始
 
-Contoso IT 管理员和合规性专家还可以选择访问通信合规性解决方案，Microsoft 365解决方案目录。 通过在左侧 **导航****的"** 解决方案"部分选择"目录"，Microsoft 365 合规中心 **打开列出** 所有合规性解决方案Microsoft 365目录。 向下滚动到" **内部风险管理** "部分，Contoso IT 管理员可以选择"通信合规性"以开始操作。 Contoso IT 管理员还决定使用"在导航中显示"控件将通信合规性解决方案固定到左侧导航窗格，以便他们今后登录时更快地访问。
+Contoso IT 管理员和合规性专家还可以选择访问通信合规性解决方案，Microsoft 365解决方案目录。 通过在左侧 **导航****的"** 解决方案"部分选择"目录 **Microsoft 365 合规中心，他们可以** 打开列出所有Microsoft 365解决方案的解决方案目录。 向下滚动到" **内部风险管理** "部分，Contoso IT 管理员可以选择"通信合规性"以开始操作。 Contoso IT 管理员还决定使用"在导航中显示"控件将通信合规性解决方案固定到左侧导航窗格，以便他们今后登录时更快地访问。
 
 ![解决方案目录。](../media/communication-compliance-case-solution.png)
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>从以下Microsoft 365 管理中心
 
-若要在从 Microsoft 365 管理中心 开始访问通信合规性，Contoso IT 管理员和合规性专家登录到 Microsoft 365 管理中心[ (https://admin.microsoft.com) ](https://admin.microsoft.com)并转到 Microsoft 365 合规中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">。</a>
+若要在从 Microsoft 365 管理中心 开始访问通信合规性，Contoso IT<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>[ https://admin.microsoft.com) ](https://admin.microsoft.com)管理员和合规性专家登录到 Microsoft 365 管理中心 (并转到 Microsoft 365 合规中心 。
 
 ![通信合规性链接。](../media/communication-compliance-case-compliance-link.png)
 
-此操作将打开 **Office 365** 安全与合规中心"，并且他们必须选择页面Microsoft 365 合规中心横幅 **中** 提供的链接。
+此操作 **将Office 365安全** 与合规中心，并且他们必须选择页面顶部的Microsoft 365 合规中心横幅中提供的链接。 
 
 ![Office 365安全与合规中心。](../media/communication-compliance-case-scc.png)
 
-完成 **此Microsoft 365 合规中心后**，Contoso IT 管理员选择"全部显示"以显示合规性解决方案的完整列表。
+访问 **Microsoft 365 合规中心后**，Contoso IT 管理员选择"全部显示"以显示合规性解决方案的完整列表。
 
 ![通信合规性菜单。](../media/communication-compliance-case-show-all.png)
 
@@ -147,7 +149,7 @@ Contoso IT 管理员和合规性专家还可以选择访问通信合规性解决
 
 ## <a name="step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy"></a>步骤 3：配置先决条件并创建通信合规性策略
 
-若要开始使用通信合规性策略，Contoso IT 管理员需要在设置新策略之前配置几个先决条件，以监视不恰当的内容。 完成这些先决条件后，Contoso IT 管理员和合规性专家可以配置新策略，合规性专家可以开始调查和修正任何生成的警报。
+若要开始使用通信合规性策略，Contoso IT 管理员需要在设置新策略之前配置一些先决条件，以监视不恰当的内容。 完成这些先决条件后，Contoso IT 管理员和合规性专家可以配置新策略，合规性专家可以开始调查和修正任何生成的警报。
 
 ### <a name="enabling-auditing-in-microsoft-365"></a>启用审核Microsoft 365
 
@@ -159,7 +161,7 @@ Contoso IT 管理员检查并完成“[逐步说明](turn-audit-log-search-on-or
 
 通信合规性要求组织的 Yammer 租户在本机模式下监视私人消息和公共社区对话中是否包含不适当的内容。
 
-Contoso IT 管理员确保他们查看 Microsoft 365 中的 Yammer 本机模式概述一文的信息，并按照为[Microsoft 365](/yammer/configure-your-yammer-network/overview-native-mode)的本机模式配置 Yammer 网络一文中的步骤运行[迁移](/yammer/configure-your-yammer-network/native-mode)工具。
+Contoso IT 管理员确保他们查看 Microsoft 365 中的 Yammer 本机模式概述文章中的信息，并按照为[Microsoft 365](/yammer/configure-your-yammer-network/overview-native-mode)的本机模式配置[Yammer](/yammer/configure-your-yammer-network/native-mode)网络一文中的步骤运行迁移工具。
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>为范围内用户设置组
 
@@ -168,11 +170,11 @@ Contoso 合规性专家希望将所有用户添加到将监视不当内容的通
 他们需要创建一个新组以包括所有 Contoso 用户，以便执行以下步骤：
 
 1. Contoso IT 管理员 IT 登录到 Microsoft 365 管理中心 [ https://admin.microsoft.com) (](https://admin.microsoft.com)并转到"Microsoft 365 管理中心 >**组**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**"。**</a>
-2. 他们选择 **"添加组"** 并完成向导，以创建新Microsoft 365 *组* 或 *通讯组*。
+2. 他们选择 **"添加组"** 并完成向导以创建新Microsoft 365 *组* 或 *通讯组*。
 
     ![组。](../media/communication-compliance-case-all-employees.png)
 
-3. 创建新组后，他们需要添加所有的 Contoso 用户到此组。 他们打开Exchange **管理中心**[ (https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp)并导航Exchange **管理** 中心  >  **收件人**  >  **组。** Contoso IT 管理员选择"成员身份"区域及其创建的新"*所有员工*"组，并选择"编辑"控件以将所有 Contoso 用户添加到向导中的新组。
+3. 创建新组后，他们需要添加所有的 Contoso 用户到此组。 他们打开Exchange **管理**[ (，Exchange https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp)**管理** 中心  >  **收件人**  >  **组。** Contoso IT 管理员选择"成员身份"区域及其创建的新"*所有员工*"组，并选择"编辑"控件以将所有 Contoso 用户添加到向导中的新组。
 
     ![Exchange管理中心。](../media/communication-compliance-case-eac.png)
 
