@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 SharePoint 和 OneDrive 的保留的工作原理。
-ms.openlocfilehash: ecdb81e5dcb6507a3ef929dce04bfd9aee8d93af
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 2e9b9b9c708a4379d298b69f1164a9d853c84ad6
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588241"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665106"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>了解用于 SharePoint 和 OneDrive 的保留
 
@@ -65,7 +65,8 @@ ms.locfileid: "60588241"
 
 具有标准保留标签（不声明项目为记录）的 SharePoint 中的项目不需要保留库，因为这些项将保持在其原始位置。 当应用保留标签配置为保留内容时，SharePoint 会防止用户删除项目，而 SharePoint 版本控制功会在编辑项目时保留较旧版本。 但是对于其他方案，当项目必须保留时，会使用保留库：
 - OneDrive 中具有标准保留标签的项目
-- SharePoint 或 OneDrive 中具有保留标记为记录标签的项目，并且该项目未锁定可以用于编辑
+- SharePoint 或 OneDrive 中具有声明其为记录且该项目未锁定用于编辑的保留标签的项目
+- 作为自动应用保留标签的云附件共享的文件
 - 受保留策略管理的项目
 
 若要在用户尝试更改或删除内容时保留此内容，会检查自应用保留设置起内容是否发生更改。 如果这是自应用保留设置以来的首次更改，则会将内容复制到保留库中，用户可以在其中更改或删除原始内容。
@@ -106,7 +107,23 @@ ms.locfileid: "60588241"
 
 2. **如果用户在保留期内未修改或删除内容**：内容会在保留期到期时移至第一阶段回收站。如果用户从中删除内容或清空此回收站（亦称为“清除”），文档会移至第二阶段回收站。93 天保留期包含在第一阶段和第二阶段回收站中的保留时间。93 天过后，文档会从其驻留的任何位置（第一阶段或第二阶段回收站）被永久删除。请注意，由于未将回收站编入索引，因此无法搜索查找内容。也就是说，电子数据展示保留无法保留内容，因为在回收站中找不到任何内容。
 
-## <a name="how-retention-works-for-onenote-content"></a>用于 OneNote 内容的保留的工作原理
+## <a name="how-retention-works-with-cloud-attachments"></a>保留如何与云附件配合使用
+
+云附件是指向用户共享的文件的嵌入链接，当用户在 Outlook 电子邮件和 Teams 邮件中共享这些文件时，可以保留和删除这些链接。 [自动将保留标签应用于云附件](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments)时，保留标签将应用于存储在保留库中的共享文件的副本。
+
+这种场景下，建议将标签设置配置为根据标记项的时间开始保留期。 如果根据创建或上次修改项的时间配置保留期，则此日期摘自共享时的原始文件。 如果将保留的开始时间配置为上次修改时，此设置对保留库中的此副本无效。
+
+然而，如果原始文件被修改并再次共享，则作为新版本的文件的新副本将保存并标记在保留库中。
+
+如果再次共享原始文件但未修改，则会更新保留库中副本的标记日期。 此操作将重置保留期的开始时间，因此建议将保留期的开始时间配置为基于标记项的时间。
+
+由于保留标签未应用于原始文件，因此用户绝不会修改或删除标记的文件。 标记的文件将保留在保留库中，直到计时器作业确定其保留期已过期。 如果将保留设置配置为删除项，则系统会将文件移动到第二阶段回收站，会在 93 天后永久删除：
+
+![SharePoint 和 OneDrive 如何保留存储的云附件](../media/retention-diagram-of-retention-flow-cloud-attachments.png)
+
+存储在保留库中的副本通常在共享的云附件的一小时内创建。
+
+## <a name="how-retention-works-with-onenote-content"></a>OneNote 内容的保留工作原理
 
 当你在后台将保留策略应用于包含 OneNote 内容的位置，或将保留标签应用于 OneNote 文件夹时，不同的 OneNote 部分是继承保留设置的单个文件。 这意味着将根据指定的保留设置分别保留和删除每个分区。
 

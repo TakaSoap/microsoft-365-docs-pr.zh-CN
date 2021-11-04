@@ -13,15 +13,15 @@ ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: 关于 Microsoft 365 合规中心免费试用版。
-ms.openlocfilehash: 930ee1f35a5453722139bc283eb20b43f5f209b8
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+description: 关于合规性解决方案试用版。
+ms.openlocfilehash: 6a6c07ef6a0353cfe6c97381f8858e86c34121a1
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478921"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665128"
 ---
-# <a name="about-the-free-trial-for-microsoft-365-compliance"></a>关于 Microsoft 365 合规中心的免费试用版
+# <a name="about-the-compliance-solutions-trial"></a>关于合规性解决方案试用版
 
 Microsoft 合规性解决方案有助于保护组织免受来自文件和电子邮件的不当权限的内部威胁，并帮助组织遵守法规和策略要求。
 
@@ -53,33 +53,27 @@ Microsoft 365 合规性解决方案试用版是尝试 Microsoft 合规性解决�
 
 管理员可以通过转到合规性卡片来随时禁用试用。
 
-如果决定不注册作为合规性解决方案试用版一部分的功能，则在永久删除之前，试用数据将保留一段时间（通常为 180 天）。你可以继续访问在试用期间收集的数据，直到该时间为止。
+如果决定不注册属于合规性解决方案试用版一部分的某一功能，除非该解决方案另有说明，否则在永久删除之前，试用数据将保留一段时间（通常为 180 天）。 在该时间之前，你可以继续访问在试用期间收集的数据。
 
 ## <a name="availability"></a>可用性
 
 Microsoft 365 合规性解决方案试用版将逐步向满足特定条件（包括地理位置）但尚未拥有 Microsoft E5 许可证包的现有客户推出。
 
-## <a name="learn-more-about-compliance"></a>详细了解合规性
+## <a name="learn-more-about-compliance-solutions"></a>详细了解合规性解决方案
 
 想知道可以在免费试用版中体验什么？ 合规性解决方案试用版包括以下解决方案：
-
-<!--
-- **application governance**
-
-    Application governance is an add-on for Microsoft Cloud App Security that monitors OAuth apps running in your Microsoft 365 tenant for excessive permissions and inappropriate access to files and email. [Learn more](app-governance-manage-app-governance.md)
--->
 
 - **审核**
 
     高级审核可通过增加执行调查所需的审核日志保留期来帮助组织执行取证和合规性调查，提供对有助于确定泄露范围和更快访问 Office 365 管理活动 API 的重要事件的访问。[了解关于审核的详细信息](advanced-audit.md)
 
+- **通信合规性**
+
+    通信合规性可帮助你克服与内部和外部通信相关的新式合规性挑战，方法是帮助你自动捕获不适当的消息、调查可能的策略冲突，并采取措施进行修正。 详细了解 [通信合规性](communication-compliance.md)
+
 - **合规性管理器**
 
     合规性管理器可以帮助你完成合规性之旅，从清查数据保护风险到管理实现控制的复杂性、及时了解最新法规和认证、以及向审核员报告。[了解关于合规性管理器的详细信息](compliance-manager.md)
-
-- **数据丢失防护**
-
-    为了遵循业务标准和行业法规，组织需要保护敏感信息，防止由于疏忽而泄露。 设置数据丢失防护 (DLP) 策略以跨 Microsoft 365 识别、监视和自动保护敏感信息。 [了解有关数据丢失防护的详细信息](dlp-learn-about-dlp.md)
 
 - **电子数据展示**
 
@@ -87,7 +81,23 @@ Microsoft 365 合规性解决方案试用版将逐步向满足特定条件（包
 
 - **信息保护**
 
-    实施 Microsoft 信息保护和敏感度标签，以帮助发现、分类和保护敏感内容，无论其位于或转移到何处。[了解关于信息保护的详细信息](information-protection.md)
+    通过 [敏感度标签](sensitivity-labels.md) 和 [数据丢失防护策略](dlp-learn-about-dlp.md) 实施 Microsoft 信息保护，以帮助发现、分类和保护敏感内容，无论其位于或转移到何处。
+    
+    信息保护试用版提供默认标签、文档和电子邮件的自动标记，以及数据丢失防护，以保护在 Teams 中和通过设备共享的信用卡号。 使用我们为你创建的默认策略可以快速启动并运行，但你可以根据需要对其进行完全自定义。
+    
+    试用结束后，你将收到一封电子邮件通知：
+    
+    - 在试用期间标记的所有文件和电子邮件将保留标记状态。 可以手动删除标签。
+    
+    - 你将降级到不支持自动标记和数据丢失防护的以前的 Microsoft E3 许可证包。 除非禁用现有策略，否则这些策略将保持启用状态。
+    
+    - 试用结束后，任何自动标记策略都将无法编辑，但可以删除这些策略。
+    
+    - 如果在试用结束后编辑包含 Teams 或设备位置的 DLP 策略，则将从策略中删除这些位置。
+    
+    有关这些预配置的每个功能及其对用户的影响的详细信息，请参阅 [了解 Microsoft 信息保护免费试用版](mip-easy-trials.md)。
+    
+    有关 Microsoft 信息保护全部功能的详细信息，请参阅 [Microsoft 365 中的 Microsoft 信息保护](information-protection.md)。
 
 - **内部风险管理**
 
