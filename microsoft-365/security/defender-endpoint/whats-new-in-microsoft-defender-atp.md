@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d8a3ea4d701c390c7c8505f42fa2440e38965584
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f4e8cf234cf3fbf84567ecb47e7efc720ae4f873
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643203"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60787114"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新增功能
 
@@ -58,9 +58,14 @@ ms.locfileid: "60643203"
 - [iOS 上的 Defender for Endpoint 的新增功能](ios-whatsnew.md)
 - [Linux 上的 Defender for Endpoint 的新增功能](linux-whatsnew.md)
 
+## <a name="november-2021"></a>2021 年 11 月
+- [安全配置管理](security-config-management.md) <br/> 一种功能，适用于不由 Microsoft Endpoint Manager 管理的设备（Microsoft Intune Microsoft Endpoint Configuration Manager）直接从 Endpoint Manager 接收 Microsoft Defender 安全Endpoint Manager。
+
+- 跨平台支持的增强功能。
+
 ## <a name="october-2021"></a>2021 年 10 月
 
-- [更新了 R2 和 Windows Server 2012 预览Windows Server 2016 (的载入) ](configure-server-endpoints.md)<br> 新的统一解决方案包通过删除依赖项和安装步骤更轻松地载入服务器。 此外，此统一解决方案包还进行了许多新功能改进。
+- [更新了 R2 和 Windows Server 2012 预览Windows Server 2016 (的载入) ](configure-server-endpoints.md)<br/> 新的统一解决方案包通过删除依赖项和安装步骤更轻松地载入服务器。 此外，此统一解决方案包还进行了许多新功能改进。
 
 - Windows 11添加到 Microsoft Defender 终结点和 Microsoft 365 Defender。
 

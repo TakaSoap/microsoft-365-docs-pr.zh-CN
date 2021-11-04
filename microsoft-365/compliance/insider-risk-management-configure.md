@@ -15,12 +15,13 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 38353492f15ad653a1c2d09375c3a004b355337a
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 2ab8d01ab8169e9da11d25f8f118d81ceffcfdd4
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755107"
+ms.locfileid: "60787138"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -85,9 +86,9 @@ ms.locfileid: "60755107"
 有四个角色组用于配置管理内部风险管理功能的权限。 若要继续这些配置步骤，租户管理员必须先将你分配到 **预览** 体验成员风险管理或 **内部风险管理管理员角色** 组。 若要在初始配置后访问和管理内部风险管理功能，用户必须至少是一个内部风险管理角色组的成员。
 
 >[!IMPORTANT]
->根据你选择的选项 (确保你的内部风险管理或内部风险管理管理员角色组中始终至少有一个用户) 以便你的内部风险管理配置不会进入"零管理员"方案（如果特定用户离开组织）。
+>根据选择) 的不同，确保"内部风险管理"或"内部风险管理管理员"角色组 (中始终至少有一个用户，以便当特定用户离开组织时，内部风险管理配置不会进入"零管理员"方案。
 
-根据合规性管理团队的结构，有选项将用户分配到特定角色组，以管理不同的预览体验计划风险管理功能集。 若要查看管理 **角色** 组Microsoft 365 合规中心"权限"选项卡，您需要被分配到组织管理角色组，或者需要分配有 *"角色* 管理"角色。 配置内部风险管理时，请从以下角色组选项中进行选择：
+根据合规性管理团队的结构，有选项将用户分配到特定角色组，以管理不同的预览体验计划风险管理功能集。 若要查看管理 **角色** 组Microsoft 365 合规中心"权限"选项卡，您需要被分配到组织管理角色组，或需要分配有 *"角色* 管理"角色。 配置内部风险管理时，请从以下角色组选项中进行选择：
 
 | **角色组** | **角色权限** |
 | :------------- | :------------------- |
@@ -98,7 +99,7 @@ ms.locfileid: "60755107"
 | **内部风险管理审核员** | 使用此组向将审核内部风险管理活动的用户分配权限。 此角色组的用户可以访问内部风险审核日志。 此角色组的用户无法访问和使用建议的操作 (预览) 功能。|
 
 > [!NOTE]
-> 这些角色组当前在 PIM Privileged Identity Management (上) 。 若要了解有关 PIM 的更多信息，请参阅 Azure AD在 Privileged Identity Management[中分配Privileged Identity Management。](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)
+> 这些角色组当前在 PIM Privileged Identity Management (上) 。 若要了解有关 PIM 的更多信息，请参阅在 Privileged Identity Management 中[分配Azure AD角色](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)。
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>将用户添加到内部风险管理角色组
 
@@ -124,11 +125,11 @@ ms.locfileid: "60755107"
 
 默认情况下，为Microsoft 365启用审核。 某些组织可能由于特定原因禁用了审核。 如果为组织禁用了审核，这可能是因为另一个管理员已将其关闭。 我们建议确认在完成此步骤时可以重新启用审核。
 
-有关启用审核的逐步操作说明，请参阅 [打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。 打开审核之后，将显示一条消息，内容为正在准备审核日志，你可以在准备完成后几个小时内运行搜索。 此操作只需要执行一次。 有关使用搜索Microsoft 365 审核日志，请参阅搜索[审核日志。](search-the-audit-log-in-security-and-compliance.md)
+有关启用审核的逐步操作说明，请参阅 [打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。 打开审核之后，将显示一条消息，内容为正在准备审核日志，你可以在准备完成后几个小时内运行搜索。 此操作只需要执行一次。 有关使用搜索方法[Microsoft 365 审核日志，请参阅](search-the-audit-log-in-security-and-compliance.md)搜索审核日志。
 
 ## <a name="step-3-optional-enable-and-view-insider-risk-analytics-insights"></a>步骤 3 (可选) ：启用和查看内部风险分析见解
 
-通过内部风险管理分析，你可以对组织中潜在的内部风险进行评估，而无需配置任何内部风险策略。 此评估可以帮助组织确定用户风险更高的潜在领域，并可帮助确定可能考虑配置的预览体验计划风险管理策略的类型和范围。 此评估还可以帮助您确定对现有策略进行其他许可或未来优化的需求。 分析扫描结果最多可能需要 48 小时，才能将见解作为报告提供进行审阅。 若要了解有关分析见解的详细信息，请参阅预览体验成员风险管理设置：分析 [ (预览) ](insider-risk-management-settings.md#analytics) 并观看 [预览](https://www.youtube.com/watch?v=5c0P5MCXNXk) 体验成员风险管理分析视频，以帮助了解分析如何有助于加快识别潜在内部风险并帮助快速采取行动。
+通过内部风险管理分析，你可以对组织中潜在的内部风险进行评估，而无需配置任何内部风险策略。 此评估可以帮助组织确定用户风险更高的潜在领域，并可帮助确定可能考虑配置的预览体验计划风险管理策略的类型和范围。 此评估还可以帮助您确定对现有策略进行其他许可或未来优化的需求。 分析扫描结果最多可能需要 48 小时，才能将见解作为报告提供进行审阅。 若要了解有关分析见解的详细信息，请参阅预览体验成员风险管理设置：分析 [ (预览版) ](insider-risk-management-settings.md#analytics) 并观看 [预览](https://www.youtube.com/watch?v=5c0P5MCXNXk) 体验成员风险管理分析视频，以帮助了解分析如何有助于加速识别潜在内部风险并帮助你快速采取行动。
 
 若要启用内部风险分析，你必须是内部风险管理、内部风险管理管理员或全局Microsoft 365 *组* 的成员。 
 
@@ -212,7 +213,7 @@ DLP 策略在使用下列策略模板时是可选的：
 
 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是一个企业终结点安全平台，旨在帮助企业网络预防、检测、调查和响应高级威胁。 为了更好地查看组织中安全违规的情况，你可以导入并筛选 Defender for Endpoint 警报，以用于从内部风险管理安全违反策略模板创建的策略中使用的活动。
 
-如果你创建违反安全策略，则需要在你的组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint 以实现 Defender 安全中心中的内部风险管理集成，以导入安全违反警报。 有关要求详细信息，请参阅 Microsoft [Defender for Endpoints](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) 的最低要求文章。
+如果你创建违反安全策略，则需要在你的组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint 以在 Defender 安全中心进行内部风险管理集成，以导入安全违反警报。 有关要求详细信息，请参阅 Microsoft [Defender for Endpoints](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) 的最低要求文章。
 
 请参阅 [在 Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) 中配置高级功能一文，了解为内部风险管理集成配置 Defender for Endpoint 的分步指南。 配置适用于终结点的 Microsoft Defender 后，返回到这些配置步骤。
 
@@ -227,7 +228,7 @@ DLP 策略在使用下列策略模板时是可选的：
 3. 在 **"指示器"** 页上，选择要应用于所有内部风险策略的警报指示器。
 
     > [!IMPORTANT]
-    > 为了接收策略中定义的风险活动的警报，必须选择一个或多个指示器。 如果未在内部风险策略中配置设置，则这些指示器在内部风险策略中将不可选择。
+    > 为了接收策略中定义的风险活动的警报，必须选择一个或多个指示器。 如果未在内部风险策略中设置指示器，则这些指示器在内部风险策略中将不可选择。
 
 4. 在 **"策略时间范围**"页上，选择要在 [](insider-risk-management-settings.md#policy-timeframes)触发内部风险策略匹配时为用户生效的策略时间范围。
 5. 在 **"智能检测"** 页上，为内部风险策略配置以下设置：

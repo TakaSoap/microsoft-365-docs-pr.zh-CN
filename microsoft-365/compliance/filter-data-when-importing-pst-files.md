@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: 了解如何在将 PST 文件导入数据库时，使用 Microsoft 365 导入服务中的智能导入功能筛选Microsoft 365。
-ms.openlocfilehash: da5b22d79339ad4a4a94bd0db803970c1d66537f
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 593ce847803fdc3529fbe9276721e6bb8cf79069
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755245"
+ms.locfileid: "60786130"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>导入 PST 文件时筛选数据
 
@@ -58,7 +60,7 @@ ms.locfileid: "60755245"
     
 - 使用网络上载创建导入作业后，安全 & 合规中心的"导入"页上的导入作业的状态将设置为"正在分析"，这意味着 Microsoft 365正在分析您上载的 PST 文件的数据。 单击 **"刷新** ![ 刷新"。](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) 更新导入作业的状态。 
     
-- 对于驱动器寄送导入作业，Microsoft 数据中心工作人员收到Microsoft 365，将 PST 文件上载到组织的 Azure 存储区域后，系统将会分析数据。
+- 对于驱动器寄送导入作业，Microsoft 数据中心工作人员Microsoft 365硬盘驱动器，将 PST 文件上载到组织的 Azure 存储区域后，系统将会分析数据。
   
 ## <a name="filter-data-that-gets-imported-to-mailboxes"></a>筛选导入到邮箱的数据
 
@@ -70,9 +72,9 @@ ms.locfileid: "60755245"
     
     组织的导入作业列在"导入"**选项卡** 上。The **Analysis completed** value in the **Status** column indicates the import jobs that have been analysis by Microsoft 365 and are ready for you to import.
     
-    ![分析完成状态Microsoft 365 PST 文件中已分析过的数据。](../media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
+    ![分析完成状态Microsoft 365 PST 文件中已分析数据。](../media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
   
-3. 选择要完成的导入作业，然后单击"导入到 **Office 365"。**
+3. 选择要完成的导入作业，然后单击"导入 **以Office 365"。**
   
     系统将显示一个浮出页面，其中包含有关 PST 文件的信息和有关导入作业的其他信息。
 

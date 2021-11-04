@@ -15,23 +15,23 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams聊天和频道支持数据丢失防护 (DLP) 策略。
-ms.openlocfilehash: a7db6b951a0522698b2f6b3879fc444825ed2ca1
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 66d451e55d5ee41abb0d43927e56295261bd4c8f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753961"
+ms.locfileid: "60786058"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft Teams
 
 如果您的组织具有 DLP (数据丢失) ，您可以定义防止用户共享 Microsoft Teams 频道或聊天会话中敏感信息的策略。 以下是此保护工作方式的一些示例：
 
-- **示例 1：保护邮件中的敏感信息**。 假设有人尝试在来宾聊天或频道中Teams与外部用户 (共享) 。 如果已定义 DLP 策略以防止出现此情况，则包含发送给外部用户的敏感信息的邮件将被删除。 根据 DLP 策略的配置方式，这会自动发生，且在数秒钟内发生。
+- **示例 1：保护邮件中的敏感信息**。 假设有人尝试在来宾聊天或频道中Teams与外部用户 (敏感信息) 。 如果已定义 DLP 策略以防止出现此情况，则包含发送给外部用户的敏感信息的邮件将被删除。 根据 DLP 策略的配置方式，这会自动发生，且在数秒钟内发生。
 
     > [!NOTE]
-    > 与Microsoft Teams的用户共享时，用于Microsoft Teams DLP 会阻止敏感内容：<br/>- [团队和](/MicrosoftTeams/guest-access) 频道中的来宾访问;或<br/>- [会议和](/MicrosoftTeams/manage-external-access) 聊天会话中的外部访问。 <p>外部聊天会话的 DLP 仅在发送方和接收方均在"仅Teams且使用本地联盟Microsoft Teams[才能工作](/microsoftteams/manage-external-access)。 DLP for Teams does not block messages in [interop](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) with Skype for Business or non-native federated chat sessions.
+    > 与Microsoft Teams的用户共享时，用于Microsoft Teams DLP 会阻止敏感内容：<br/>- [团队和](/MicrosoftTeams/guest-access) 频道中的来宾访问;或<br/>- [会议和](/MicrosoftTeams/manage-external-access) 聊天会话中的外部访问。 <p>外部聊天会话的 DLP 仅在发送方和接收方均在仅Teams且使用本地联盟Microsoft Teams[才能工作](/microsoftteams/manage-external-access)。 DLP for Teams does not block messages in [interop](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) with Skype for Business or non-native federated chat sessions.
 
-- **示例 2：保护文档中的敏感信息**。 假设有人尝试在频道或聊天中与来宾共享Microsoft Teams，并且该文档包含敏感信息。 如果已定义 DLP 策略以防止出现此状态，文档将不会为这些用户打开。 DLP 策略必须包含 SharePoint 和 OneDrive，才能实施保护。 这是 SharePoint DLP 的一个示例，显示在 Microsoft Teams 中，因此要求用户获得 Office 365 DLP (包含在 Office 365 E3) 中的许可，但不要求用户获得 Office 365 高级合规版.) 的许可。
+- **示例 2：保护文档中的敏感信息**。 假设有人尝试在频道或聊天中与来宾共享Microsoft Teams，并且该文档包含敏感信息。 如果已定义 DLP 策略以防止出现此状态，文档将不会为这些用户打开。 DLP 策略必须包含 SharePoint 和 OneDrive，才能实施保护。 这是 SharePoint DLP 的一个示例，显示在 Microsoft Teams 中，因此要求用户获得 Office 365 DLP (Office 365 E3) 中的许可，但不需要用户获得 Office 365 高级合规版.) 
 
 ## <a name="dlp-licensing-for-microsoft-teams"></a>DLP 许可Microsoft Teams
 
@@ -116,21 +116,21 @@ DLP 保护以不同方式应用于Teams实体。
 
 若要执行该任务，须被分配具有编辑 DLP 策略权限的角色。 若要了解详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">"Microsoft 365 合规中心</a>并登录。
+1. 转到合规中心 [https://compliance.microsoft.com](https://compliance.microsoft.com) () 并登录。
 
 2. 选择“**数据丢失保护**” > “**策略**”。
 
-3. 选择一个策略，然后查看"位置 **"下的值**。 如果看到 **Teams和频道消息**，则已全部设置。 如果不单击，请单击"编辑 **"。**
+3. 选择一个策略，然后查看"位置 **"下的值**。 如果看到 **Teams和频道消息，** 则一切都已设置。 如果不单击，请单击"编辑 **"。**
 
     > [!div class="mx-imgBorder"]
     > ![现有策略的位置。](../media/dlp-teams-editexistingpolicy.png)
 
-4. 在"**状态**"列中，打开聊天Teams **消息的策略**。
+4. 在状态 **列中**，打开聊天和Teams **消息的策略**。
 
     > [!div class="mx-imgBorder"]
     > ![用于Teams和频道的 DLP。](../media/dlp-teams-addteamschatschannels.png)
 
-5. 在"**选择位置"** 选项卡上，保留所有帐户的默认设置，或选择"**允许我选择特定位置"。** 可以指定：
+5. 在"**选择位置"** 选项卡上，保留所有帐户的默认设置，或选择"**允许选择特定位置"。** 可以指定：
 
     1. 最多包含或排除 1000 个个人帐户
     1. 要包含或排除的通讯组列表和安全组。 
@@ -138,7 +138,7 @@ DLP 保护以不同方式应用于Teams实体。
     
 6. 然后选择“**下一步**”。
 
-7. 单击“**保存**”。
+7. 单击 **“保存”**。
 
 允许大约 1 小时更改通过数据中心运行并同步到用户帐户。
 <!-- again, why user accounts? -->
@@ -147,7 +147,7 @@ DLP 保护以不同方式应用于Teams实体。
 
 若要执行该任务，须被分配具有编辑 DLP 策略权限的角色。 若要了解详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">"Microsoft 365 合规中心</a>并登录。
+1. 转到合规中心 [https://compliance.microsoft.com](https://compliance.microsoft.com) () 并登录。
 
 2. 选择 **“数据丢失保护”** > **“策略”** > **“创建策略”**。
 
@@ -160,7 +160,7 @@ DLP 保护以不同方式应用于Teams实体。
 
 4. 在"**命名策略"** 选项卡上，指定策略的名称和说明，然后选择"下一步 **"。**
 
-5. 在"**选择位置"** 选项卡上，保留所有帐户的默认设置，或选择"**允许选择特定位置"。** 可以指定：
+5. 在"**选择位置"** 选项卡上，保留所有帐户的默认设置，或选择"**允许我选择特定位置"。** 可以指定：
 
     1. 最多包含或排除 1000 个个人帐户
     1. 要包含或排除的通讯组列表和安全组。 **这是公共预览功能。**
@@ -169,7 +169,7 @@ DLP 保护以不同方式应用于Teams实体。
     ![DLP 策略位置。](../media/dlp-teams-selectlocationsnewpolicy.png)
 
     > [!NOTE]
-    > 如果您希望确保包含敏感信息的文档不会在 Teams 中以不当方式共享，请确保 **SharePoint 网站** 和 **OneDrive** 帐户以及 Teams **聊天** 和频道消息已打开。
+    > 如果您希望确保包含敏感信息的文档不会在 Teams 中以不当方式共享，请确保 **SharePoint 网站** 和 **OneDrive** 帐户以及 Teams 聊天和频道消息 **已** 打开。
 
 6. 在"**策略设置**"选项卡上的"自定义要保护的内容类型"下，保留默认的简单设置，或选择"**使用** 高级设置"，然后选择"下一步 **"。** 如果选择高级设置，你可以为策略创建或编辑规则。 若要获取有关此的帮助，请参阅 [简单设置与高级设置](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)。
 
@@ -180,7 +180,7 @@ DLP 保护以不同方式应用于Teams实体。
 
     完成查看或编辑设置后，选择"下一 **步"。**
 
-8. 在"策略设置"选项卡上的"是希望先打开策略还是先测试内容 **？"** 下，选择是打开策略，还是先测试策略，[](dlp-overview-plan-for-dlp.md#policy-deployment)还是将其保持为"现在关闭"，然后选择"下一步 **"。**
+8. 在"策略设置"选项卡上的"要先打开策略还是先测试内容 **？"** 下，选择是打开策略，还是先测试策略，还是 [](dlp-overview-plan-for-dlp.md#policy-deployment)将其保持为"现在关闭"，然后选择"下一步 **"。**
 
     > [!div class="mx-imgBorder"]
     > ![指定是否打开策略。](../media/dlp-teams-policysettings-turnonnow.png)

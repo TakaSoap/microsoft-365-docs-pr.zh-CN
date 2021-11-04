@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 843d81664ce3f9b88d5de6fe742aab123df75a4f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e2ba6decb92f81ff1f834ba4cb94b9520b62d62c
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643191"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785548"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>使用高级搜寻的共享查询
 
@@ -38,7 +38,7 @@ ms.locfileid: "60643191"
 
 可以与同一个组织内的用户共享[高级搜寻](advanced-hunting-overview.md)查询。 还可以查找在 GitHub 上公开共享的查询。 借助这些查询，你可以快速追寻特定威胁搜寻方案，而无需从头开始编写查询。
 
-![共享查询的图像。](../../media/advanced-hunting-shared-queries.png)
+![共享查询的图像。](../../media/shared-query-1.png)
 
 ## <a name="save-modify-and-share-a-query"></a>保存、修改和共享查询
 可以保存新的或已有的查询，以便只有你可以访问它，或将它与组织内的其他用户共享。 
@@ -49,7 +49,7 @@ ms.locfileid: "60643191"
     
 3. 输入查询的名称。 
 
-   ![保存查询的图像。](../../media/advanced-hunting-save-query.png)
+   ![保存查询的图像。](../../media/shared-query-2.png)
 
 4. 选择要将查询保存到的文件夹。
     - **共享查询** — 与组织内的所有用户共享
@@ -58,9 +58,9 @@ ms.locfileid: "60643191"
 5. 选择“保存”。 
 
 ## <a name="delete-or-rename-a-query"></a>删除或重命名查询
-1. 右键单击要重命名或删除的查询。
+1. 选择要重命名或删除的查询右边的三个点。
 
-    ![删除查询的图像。](../../media/advanced_hunting_delete_rename.png)
+    ![删除查询的图像。](../../media/shared-query-3.png)
 
 2. 选择“删除”，并确认删除。 或者选择“重命名”，并为查询提供新名称。
 
@@ -73,8 +73,6 @@ Microsoft 安全研究人员定期在[指定的 GitHub 公共存储库](https://
 >[!tip]
 >此外，Microsoft 研究人员还提供了高级搜寻查询，你可以使用它们查找与存在的威胁关联的活动和指示器。 将这些查询作为 Microsoft Defender 安全中心[威胁分析](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)报告的一部分提供。
 
->[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender，](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

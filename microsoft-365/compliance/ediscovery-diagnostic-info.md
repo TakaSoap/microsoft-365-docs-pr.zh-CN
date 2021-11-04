@@ -15,13 +15,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: 了解如何收集 Microsoft 支持案例电子数据展示诊断信息。
-ms.openlocfilehash: 65a54a1d4567d536c19363ad0834e2cdd74078ab
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 5c62aead0e21411cc2c5befd023f29a7a2403e06
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754819"
+ms.locfileid: "60786346"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>收集电子数据展示诊断信息
 
@@ -77,7 +78,7 @@ Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-C
 
 使用 **设置** 中的"Advanced eDiscovery"选项卡可以快速复制该案例的诊断信息。 诊断信息将保存到剪贴板，以便你可以将其粘贴到文本文件并发送给 Microsoft 支持。
 
-1. 转到"Microsoft 365 合规中心"，然后选择"**电子数据展示高级**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**"。**</a>
+1. 转到"Microsoft 365 合规中心"，然后选择 **"电子数据展示**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**高级"。**</a>
 
 2. 选择一个案例，**然后单击"设置"** 选项卡。
 
@@ -87,6 +88,6 @@ Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-C
 
 5. 在文本框中 (文本文件记事本) ，然后将信息粘贴到文本文件中。
 
-6. 保存文本文件，并将其名称 (`AeD Diagnostic Info YYYY.MM.DD` 例如 `AeD Diagnostic Info 2020.11.03` ，) 。
+6. 保存文本文件并将其命名为类似 (`AeD Diagnostic Info YYYY.MM.DD` 例如 `AeD Diagnostic Info 2020.11.03` ，) 。
 
 查看文件并修订敏感信息后，将其发送给处理你的案例的 Microsoft 支持工程师。

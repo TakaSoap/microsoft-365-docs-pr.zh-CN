@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: 从第三方保护服务或设备迁移到 Microsoft Defender 进行保护的先决条件Office 365步骤。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c079fbe808b59ef95663ae8a5af6b3913db49eb9
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: f6785e96829256ffe0763eb0f3e84059973d6379
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779015"
+ms.locfileid: "60785794"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-1-prepare"></a>迁移到 Microsoft Defender for Office 365 - 第 1 阶段：准备
 
@@ -114,15 +114,15 @@ ms.locfileid: "60779015"
 
   最后，如果想阻止将电子邮件送达垃圾邮件文件夹，以选择隔离邮件，则由你决定。 但是，有一点很确定：如果 Defender for Office 365体验不同于用户习惯使用的体验，则需要通知他们并提供基本培训。 整合从试点中学习，并确保用户为电子邮件传递的任何新行为做好准备。
 
-- **需要批量邮件与不需要的批量邮件**：许多保护系统允许用户自行允许或阻止批量电子邮件。 这些设置无法轻松迁移到Microsoft 365，因此应考虑与 ISP 及其员工合作，以在 MICROSOFT 365 中重新创建现有配置。
+- **需要批量邮件与不需要的批量邮件**：许多保护系统允许用户自行允许或阻止批量电子邮件。 这些设置无法轻松迁移到Microsoft 365，因此应考虑与 ISP 及其员工合作，以在 MICROSOFT 365 中重新创建其现有Microsoft 365。
 
-  现在，Microsoft 365一些批量邮件 (，例如，根据邮件) ，新闻稿可安全发送。 来自这些"安全"源的邮件当前未标记为批量 (批量投诉级别或 BCL 为 0 或 1) ，因此难以全局阻止来自这些源的邮件。 对于大多数用户，解决方案是要求他们单独取消订阅这些批量邮件或使用 Outlook阻止发件人。 但是，某些用户不会喜欢阻止或取消订阅批量邮件本身。
+  现在，Microsoft 365考虑一些批量邮件 (例如，新闻稿) 邮件源的安全。 来自这些"安全"源的邮件当前未标记为批量 (批量投诉级别或 BCL 为 0 或 1) ，因此难以全局阻止来自这些源的邮件。 对于大多数用户，解决方案是要求他们单独取消订阅这些批量邮件或使用 Outlook阻止发件人。 但是，某些用户不会喜欢阻止或取消订阅批量邮件本身。
 
-  当 VIP 用户不希望自己管理批量电子邮件时，筛选批量电子邮件的邮件流规则可能会很有帮助。 有关详细信息，请参阅使用 [邮件流规则筛选批量电子邮件](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail.md)。
+  当 VIP 用户不希望自己管理批量电子邮件时，筛选批量电子邮件的邮件流规则可能会很有帮助。 有关详细信息，请参阅使用 [邮件流规则筛选批量电子邮件](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail)。
 
 ## <a name="identify-and-designate-priority-accounts"></a>标识和指定优先级帐户
 
-如果此功能可供你使用，优先级帐户和用户标记可以帮助识别重要的Microsoft 365用户，以便他们在报告中脱颖而出。 有关详细信息，请参阅[Microsoft Defender for Office 365](user-tags.md)中的用户标记以及[管理和监视优先级帐户](/microsoft-365/admin/setup/priority-accounts)。
+如果此功能可供你使用，优先级帐户和用户标记可以帮助识别重要的Microsoft 365用户，以便他们在报告中脱颖而出。 有关详细信息，请参阅 Microsoft Defender for Office 365中的用户[标记以及](user-tags.md)[管理和监视优先级帐户](/microsoft-365/admin/setup/priority-accounts)。
 
 ## <a name="next-step"></a>后续步骤
 

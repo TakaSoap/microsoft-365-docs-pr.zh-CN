@@ -1,5 +1,5 @@
 ---
-title: 为数据隐私法规部署信息保护与Microsoft 365
+title: 为数据隐私法规部署信息保护Microsoft 365
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -15,24 +15,24 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-overview
-ms.custom: ''
+ms.custom: admindeeplinkCOMPLIANCE
 description: 针对数据隐私Microsoft 365如 GDPR 和加州消费者隐私法案 (CCPA) （包括 Microsoft Teams、SharePoint 和电子邮件）配置信息保护。
-ms.openlocfilehash: 7517faa02ea74d5a9934e22595d61a34e99067a5
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 92314529cf6ca3ec318b181eb367bab81b9b81a0
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756583"
+ms.locfileid: "60786670"
 ---
-# <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>为数据隐私法规部署信息保护与Microsoft 365
+# <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>为数据隐私法规部署信息保护Microsoft 365
 
 你的组织可能受区域数据隐私法规的约束，这些法规要求你保护、管理和控制存储在 IT 基础结构（包括本地和云）中的个人信息。 数据隐私条例的最佳示例是欧盟一般数据保护条例 (GDPR) 。 如果不遵守数据隐私法规，可能会导致大量罚款。
 
-Microsoft 365中数据类型的示例包括 Microsoft Teams 中的聊天会话、Exchange 中的电子邮件以及 SharePoint 和 OneDrive。 此解决方案提供有关如何评估风险并采取适当的措施来保护安全中心中的个人数据Microsoft 365。 这包括标识个人信息，以便你可以保护、治理和响应数据隐私事件。
+Microsoft 365 中数据类型的示例包括 Microsoft Teams 中的聊天会话、Exchange 中的电子邮件以及 SharePoint 和 OneDrive。 此解决方案提供了有关如何评估风险并采取适当的措施来保护数据中个人数据Microsoft 365。 这包括标识个人信息，以便你可以保护、治理和响应数据隐私事件。
 
 ![什么是数据隐私法规的信息保护。](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
-此外，还提供了有关数据Microsoft 365、设备和威胁防护控件的使用的其他信息。
+此外，还提供了有关数据隐私Microsoft 365、设备和威胁防护控件的使用的其他信息。
 
 观看此视频以简要了解部署流程。
 <br>
@@ -47,7 +47,7 @@ Microsoft 365中数据类型的示例包括 Microsoft Teams 中的聊天会话�
 | Microsoft Defender for Office 365 | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 | Microsoft 365 E3 和 E5 |
 | 敏感度标签 | 对组织的数据进行分类和保护，而不会妨碍用户的工作效率及其协作能力。 将具有各种保护级别的标签放在电子邮件、文件或网站上。 | Microsoft 365 E3 和 E5 |
 | 数据丢失防护 (DLP) | 检测、警告和阻止在内部和外部共享包含个人信息的数据存在风险、无意或不当共享。 | Microsoft 365 E3 和 E5 |
-| 数据保留标签和策略 | 实施信息治理控制。 这些可能包括确定保留数据保留 (例如与客户相关的个人数据) 组织的策略或数据法规。 | Microsoft 365 E3 和 E5 |
+| 数据保留标签和策略 | 实施信息治理控制。 这些可能包括确定保留数据 (例如与符合组织策略或数据) 的客户相关的个人数据。 | Microsoft 365 E3 和 E5 |
 | 电子邮件加密 | 通过发送和接收组织内外人员之间的加密电子邮件来保护个人数据。 | Microsoft 365 E3 和 E5 |
 ||||
 
@@ -67,7 +67,7 @@ Microsoft 365中数据类型的示例包括 Microsoft Teams 中的聊天会话�
 
 ## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>计划：评估数据隐私风险并识别敏感项目
 
-评估组织所受数据隐私法规和风险是开始实施改进（包括配置 Microsoft 365 中的功能）之前要采取的关键第一Microsoft 365。 此工作可能包括总体准备情况评估或特定敏感信息类型的标识，这些类型受组织需要遵守的法规控制。
+评估组织所受数据隐私法规和风险是开始实施改进（包括配置 Microsoft 365 中的功能）之前要执行的关键第一步。 此工作可能包括总体准备情况评估或特定敏感信息类型的标识，这些类型受组织需要遵守的法规控制。
 
 有关详细信息，请参阅评估 [数据隐私风险并识别敏感项目](information-protection-deploy-assess.md)。
 

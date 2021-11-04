@@ -13,21 +13,22 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 description: 管理员可以设置数据连接器，以将数据从组织的物理密码系统导入Microsoft 365。 这允许你在内部风险管理策略中使用此数据，以帮助你检测特定用户对可能向组织指示可能的内部威胁的物理建筑物的访问。
-ms.openlocfilehash: cb568836c0f763682cbad5524b41d19b034d02dc
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 80e92f758f12c506e89ceea48ea6facfa9c01c74
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756159"
+ms.locfileid: "60786874"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>设置连接器以在预览版中导入 () 
 
-可以在 Microsoft 365 合规中心 中设置数据连接器以导入物理保护数据，例如员工的原始物理访问事件或由组织的密码系统生成的任何物理访问警报。 物理访问点的示例包括建筑物的入口或服务器会议室或数据中心的入口。 内部风险管理解决方案可以使用物理Microsoft 365，以帮助保护组织免受组织内部[](insider-risk-management.md)恶意活动或数据盗窃的攻击。
+可以在 Microsoft 365 合规中心 中设置数据连接器以导入物理保护数据，例如员工的原始物理访问事件或由组织的密码系统生成的任何物理访问警报。 物理访问点的示例包括建筑物入口或服务器会议室或数据中心的入口。 内部风险管理解决方案可以使用物理Microsoft 365，以帮助保护组织免受组织内部恶意[](insider-risk-management.md)活动或数据盗窃的攻击。
 
 设置物理保护连接器包括以下任务：
 
-- 在应用中Azure Active Directory (Azure AD) ，以访问接受包含物理保护数据的 JSON 有效负载的 API 终结点。
+- 在应用中创建Azure Active Directory (Azure AD) ，以访问接受包含物理保护数据的 JSON 有效负载的 API 终结点。
 
 - 使用由物理保护数据连接器定义的架构创建 JSON 有效负载。
 
@@ -39,21 +40,21 @@ ms.locfileid: "60756159"
 
 ## <a name="before-you-set-up-the-connector"></a>设置连接器之前
 
-- 必须在步骤 3 中为在步骤 3 中创建物理密码连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中的角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 3 中为在步骤 3 中创建物理密码连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到组织管理角色组Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
 
-- 您需要确定如何每天从组织的物理密码系统 (检索或导出数据) 并创建步骤 2 中所述的 JSON 文件。 在步骤 4 中运行的脚本将 JSON 文件的数据推送到 API 终结点。
+- 您需要确定如何每天从组织的物理密码系统 (中检索或导出数据) 并创建步骤 2 中所述的 JSON 文件。 在步骤 4 中运行的脚本将 JSON 文件的数据推送到 API 终结点。
 
 - 在步骤 4 中运行的示例脚本将 JSON 文件的物理保护数据推送到连接器 API，以便内部风险管理解决方案可以使用该数据。 本示例脚本在任何 Microsoft 标准支持计划或服务下都不受支持。 示例脚本“原样”提供，不提供任何形式的保证。 Microsoft 进一步拒绝所有默示保证，包括但不限于针对特定用途的适销性或适用性的任何默示保证。 由于示例脚本及文档的使用或性能所引起的全部风险均由你承担。 在任何情况下，对于由于使用或者无法使用示例脚本或文档所引起的任何损失（包括但不限于商业利润损失、业务中断、商业信息丢失或者其他经济损失），Microsoft、其作者或者参与创建、制作或交付脚本的任何人概不负责，即使 Microsoft 已被告知可能会出现此类损失。
 
-- 此连接器可用于美国政府GCC中Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
+- 此连接器可用于美国政府GCC云Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤 1：在 Azure Active Directory
 
 第一步是在应用程序创建和注册Azure Active Directory (Azure AD) 。 该应用将对应于在步骤 3 中创建的物理保护连接器。 创建此应用将Azure AD验证包含物理保护数据的 JSON 有效负载的推送请求。 创建此应用程序Azure AD，请务必保存以下信息。 这些值将在稍后的步骤中使用。
 
-- Azure AD应用程序 ID (也称为 *应用程序 ID* 或 *客户端 ID*) 
+- Azure AD ID (也称为 *应用程序 ID* 或 *客户端 ID*) 
 
-- Azure AD应用程序密码 (也称为 *客户端密码)*
+- Azure AD应用程序密码 (也称为 *客户端密码*) 
 
 - 租户 ID (*也称为目录 ID*) 
 
@@ -164,7 +165,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 ## <a name="step-4-run-the-script-to-post-your-json-file-containing-physical-badging-data"></a>步骤 4：运行脚本以 POST 包含物理保护数据的 JSON 文件
 
-设置物理保护连接器的下一步是运行一个脚本，该脚本将在步骤 2) 中创建的 JSON 文件 (中将物理保护数据推送到在步骤 1 中创建的 API 终结点。 我们提供示例脚本供你参考，你可以选择使用它，也可以创建自己的脚本将 JSON 文件张贴到 API 终结点。
+设置物理保护连接器的下一步是运行一个脚本，该脚本将在步骤 2) 中创建的 JSON 文件 (中将物理保护数据推送到在步骤 1 中创建的 API 终结点。 我们提供了示例脚本供你参考，你可以选择使用它或创建你自己的脚本将 JSON 文件张贴到 API 终结点。
 
 运行脚本后，包含物理保护数据的 JSON 文件将推送到 Microsoft 365 组织，内部风险管理解决方案可在该组织中访问该文件。 我们建议你每天发布物理保护数据。 为此，可以自动执行每天从物理保护系统生成 JSON 文件的过程，然后计划脚本以推送数据。
 
@@ -211,7 +212,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
    如果你有多个 JSON 文件，必须运行每个文件的脚本。
 
 > [!NOTE]
-> 还可以选择通过运行前一个脚本的方法，将物理保护数据推送到 API 终结点。 例如，下面是使用 Postman 将数据推送到 API 终结点的示例。
+> 还可以选择通过运行前一个脚本的方法将物理保护数据推送到 API 终结点。 例如，下面是使用 Postman 将数据推送到 API 终结点的示例。
 
 ## <a name="step-5-monitor-the-physical-badging-connector"></a>步骤 5：监视物理保护连接器
 
@@ -233,7 +234,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a> (可选) 步骤 6：计划脚本自动运行
 
-若要确保组织的最新物理保护数据可用于内部风险管理解决方案等工具，建议安排脚本定期自动运行，如每天运行一次。 这还要求你将物理保护数据更新为类似 (（如果不是同一) 计划）上的 JSON 文件，以便其中包含有关离开组织的员工的最新信息。 目标是上载最新的物理保护数据，以便物理保护连接器能够将其提供给内部风险管理解决方案。
+若要确保组织的最新物理保护数据可用于内部风险管理解决方案等工具，建议安排脚本定期自动运行，如每天运行一次。 这还要求你在类似的 (（如果不是同一) 计划）上将物理保护数据更新为 JSON 文件，以便其中包含有关离开组织的员工的最新信息。 目标是上载最新的物理保护数据，以便物理保护连接器能够将其提供给内部风险管理解决方案。
 
 You can user the Task Scheduler app in Windows to automatically run the script every day.
 
@@ -267,7 +268,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    2. 在"**程序/脚本**"框中，单击"浏览"，然后转到以下位置并选择它，以便路径显示在框中：C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe。
 
-   3. 在" **添加 (可选) "** 框中，粘贴在步骤 4 中运行相同的脚本命令。 例如， .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
+   3. 在" **添加 (可选) "** 框中，粘贴在步骤 4 中运行相同的脚本命令。 例如， .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de 41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
 
    4. 在 **" (可选**) "框中，粘贴在步骤 4 中运行脚本的文件夹位置。 例如，C：\Users\contosoadmin\Desktop\Scripts。
 

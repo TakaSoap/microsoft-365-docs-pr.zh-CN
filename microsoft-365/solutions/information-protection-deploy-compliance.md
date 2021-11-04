@@ -15,14 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
-ms.custom: ''
+ms.custom: admindeeplinkCOMPLIANCE
 description: 了解如何使用合规性分数和合规性管理器提高对个人数据的保护级别。
-ms.openlocfilehash: f42835304ca27fa1d30ff3c1e5143e87d2b95c75
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5a655d504551e42398cdabbcf7a3f651d788c0ad
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180647"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786010"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>使用合规性管理器管理改进操作
 
@@ -37,7 +37,7 @@ Microsoft 合规性管理器可帮助你管理与数据隐私法规相关的改�
 
 #### <a name="what-is-compliance-manager"></a>什么是合规性管理器
 
-[合规性管理器](../compliance/compliance-manager.md)是 Microsoft 365 合规中心 中基于工作流的风险评估工具，用于管理与 Microsoft 云服务相关的法规合规性活动。 作为 Azure AD Microsoft 365 或 Azure Active Directory (订阅的一) ，合规性管理器可帮助你在 Microsoft 云服务的共享责任模型中管理法规合规性。
+[合规性管理器](../compliance/compliance-manager.md)是 Microsoft 365 合规中心 中基于工作流的风险评估工具，用于管理与 Microsoft 云服务相关的法规合规性活动。 合规性管理器作为 Microsoft 365 或 Azure Active Directory (Azure AD) 订阅的一部分，可帮助你在 Microsoft 云服务的共享责任模型中管理法规合规性。
 
 **准备使用评估**
 
@@ -81,7 +81,7 @@ Microsoft 合规性管理器可帮助你管理与数据隐私法规相关的改�
 
 对于技术控制措施，一旦成功实施和测试了改进行动，合规性管理器就会自动更新改进行动分数。 其他非技术控制操作（如可操作或与文档相关的操作）需要手动记录为已实现，然后点 &mdash; &mdash; 算在你的分数中。
 
-你还出于其他目的实施某些改进操作，例如，出于数据隐私法规合规性外的其他原因，使用保留标签，以便即使此功能用于其他目的（而不是有意的合规性措施的一部分）也会因使用此功能而获得支持。 &mdash; &mdash;
+你还出于其他目的实施某些改进操作，例如，出于数据隐私法规合规性外的其他原因，使用保留标签，以便即使此功能用于其他目的，并且不是有意的合规性措施的一部分，你也将因使用此功能而获得支持。 &mdash; &mdash;
 
 合规性分数应视为跟踪大规模改进的相对度量。 你不应获得完美分数。
 
@@ -99,4 +99,4 @@ Microsoft 合规性管理器可帮助你管理与数据隐私法规相关的改�
 
 - 类别筛选器提供了一种通过逻辑分组筛选改进操作的方法，此整体解决方案中的跟踪、阻止、保护、保留和调查文章与这些逻辑分组一致。
 
-- 改进操作中列出的某些控制措施可能被视为与特定法规条款更直接关联，而其他控制措施可能更间接地与法规的体现相关联，并且许多时候只是建议的活动或最佳做法。
+- 改进操作中列出的某些控制措施可能会被视为与特定法规条款更直接关联，而其他控制措施可能更间接地与法规的体现相关联，并且许多时候只是建议的活动或最佳做法。

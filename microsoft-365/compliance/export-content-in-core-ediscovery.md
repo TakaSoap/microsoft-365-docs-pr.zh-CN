@@ -16,23 +16,24 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+ms.custom: admindeeplinkCOMPLIANCE
 description: 介绍如何从 Microsoft 365 中的核心电子数据展示案例导出和下载Microsoft 365。
-ms.openlocfilehash: 6fa9c82d2ef764f292dae3848e10ef53dd06c182
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1d998a4b1eb540a1d96afc3acd3518d0c604a7e9
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755811"
+ms.locfileid: "60787006"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>从核心电子数据展示事例导出内容
 
-成功运行与核心电子数据展示案例关联的搜索后，可以导出搜索结果。 导出搜索结果时，邮箱项目以 PST 文件或单个邮件方式下载。 当您从网站和SharePoint OneDrive for Business内容时，将导出本机文档Office文档和其他文档的副本。 一Results.csv导出的每个项目的信息的清单文件，以及包含有关每个搜索结果的信息 (XML 格式) 清单文件也导出。
+成功运行与核心电子数据展示案例关联的搜索后，可以导出搜索结果。 导出搜索结果时，邮箱项目以 PST 文件或单个邮件方式下载。 当您从网站和SharePoint网站OneDrive for Business内容时，将Office本机文档和其他文档的副本。 一Results.csv导出的每个项目的信息的清单文件，以及包含有关每个搜索结果的信息 (XML 格式) 清单文件也导出。
   
 ## <a name="export-search-results"></a>导出搜索结果
 
 1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>然后使用已分配有相应电子数据展示权限的用户帐户的凭据登录。
 
-2. 在左侧导航窗格中的 **Microsoft 365 合规中心，选择**"全部显示"，然后选择"**电子数据展示**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**核心"。**</a>
+2. 在左侧导航窗格中，Microsoft 365 合规中心 **全部显示**"，然后选择"**电子数据展示**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**核心"。**</a>
 
 3. 在 **"核心电子数据展示"** 页上，单击要创建保留的案例的名称。
 
@@ -66,6 +67,6 @@ ms.locfileid: "60755811"
 
 - 有关导出搜索结果时包含的导出文件详细信息，请参阅导出 [内容搜索报告](export-a-content-search-report.md#whats-included-in-the-report)。
 
-- 如果重新启动导出，则任何对搜索查询的更改（这些搜索是导出作业的一部分）不会影响检索到的搜索结果。 重新启动导出时，将再次运行创建导出作业时运行的相同组合搜索查询作业。
+- 如果重新启动导出，则对由导出作业所包括的搜索的查询进行的任何更改都不会影响检索到的搜索结果。 重新启动导出时，将再次运行创建导出作业时运行的相同组合搜索查询作业。
 
-- 此外，如果重新启动导出，复制到导出位置的搜索结果Azure 存储之前的结果。 无法下载以前复制的结果。
+- 此外，如果重新启动导出，复制到导出位置的Azure 存储将覆盖之前的结果。 无法下载以前复制的结果。

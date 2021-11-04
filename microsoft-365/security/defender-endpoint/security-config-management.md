@@ -1,5 +1,5 @@
 ---
-title: 在设备上管理 Microsoft Defender for Endpoint 配置设置Microsoft Endpoint Manager
+title: 使用 Microsoft Endpoint Manager 管理设备上的 Microsoft Defender for Endpoint 配置设置
 description: 了解如何通过 Microsoft Defender for Endpoint 在 Microsoft Endpoint Manager启用安全设置。
 keywords: 设备管理，为终结点设备配置 Microsoft Defender，Microsoft Endpoint Manager
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 08fae46ce14a74dacefd76fbc8e77511c40609e6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a890bf27cb24418faef52a56a29c902ad79fd374
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60676953"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786142"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>在设备上管理 Microsoft Defender for Endpoint 配置设置Microsoft Endpoint Manager
+# <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 管理设备上的 Microsoft Defender for Endpoint 配置设置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,10 +34,14 @@ ms.locfileid: "60676953"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
+
+[!include[Prerelease information](../../includes/prerelease.md)]
+
+
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)。
 
 
-对于不由 Microsoft Endpoint Manager（Microsoft Intune 或 Microsoft Endpoint Configuration Manager）管理的设备，Microsoft Defender for Endpoint 的安全管理是一项功能，用于接收 Microsoft Defender 的安全配置直接从Endpoint Manager。
+Microsoft Defender for Endpoint 的安全管理是一项功能，适用于不由 Microsoft Endpoint Manager（Microsoft Intune 或 Microsoft Endpoint Configuration Manager）管理的设备，用于接收 Microsoft Defender 的安全配置直接从Endpoint Manager。
 
 
 有关安全配置管理（包括先决条件、支持的平台等）详细信息，请参阅使用安全配置管理在设备上管理[Microsoft Defender for Endpoint Microsoft Endpoint Manager。](/mem/intune/protect/mde-security-integration)
@@ -46,6 +50,8 @@ ms.locfileid: "60676953"
 
 [!INCLUDE [Prerequisites](../../includes/security-config-mgt-prerequisites.md)]
 
+>[!NOTE]
+>此功能将逐步推出。 
 
 有关安全配置管理详细信息，请参阅使用安全配置管理在设备上管理[Microsoft Defender Microsoft Endpoint Manager。](/mem/intune/protect/mde-security-integration)
 
@@ -58,11 +64,11 @@ ms.locfileid: "60676953"
 
 使用以下步骤验证终结点是否成功完成了 Microsoft Defender 终结点载入过程的安全管理。
 
-1.  验证设备是否显示在设备的"设备清单"[部分Microsoft 365 Defender。](https://security.microsoft.com/)
+1.  验证设备是否显示在设备的"设备清单"[部分](https://security.microsoft.com/)Microsoft 365 Defender。
 
 2.  在[Azure Active Directory 门户](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers)中，验证设备已成功注册。
 
-3.  在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview)中心中，在"设备""所有设备"部分查找设备 **，>注册**。
+3.  在 [Microsoft Endpoint Manager管理](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview)中心中，通过在所有设备中查找设备，验证>**注册** 成功。
 
 
 ## <a name="offboard-devices"></a>载出设备

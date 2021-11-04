@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0226be17f475250d5d50d363596bd115f27ce6cd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0e5a44811138604abeec4eb6f9b83668a6988ca
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191535"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60787079"
 ---
 # <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 高级搜寻示例
 
@@ -43,7 +43,7 @@ ms.locfileid: "60191535"
    - 反恶意软件
    - 防网络钓鱼
    - 反垃圾邮件
-2. 设置名称中具有"保险箱"的所有内容。
+2. 设置名称中保险箱"值的所有内容。
    - 安全链接
    - 安全附件
 3. 保护工作负载（例如 SharePoint联机、OneDrive和Teams) 。
@@ -73,7 +73,7 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="&quot;高级搜寻&quot; (在&quot;搜寻) &quot;下，其中&quot;查询&quot;处于查询面板顶部，并运行 Kusto 查询以捕获过去 7 天内的 ZAP 操作。":::
+:::image type="content" source="../../media/ah-query-example-new.png" alt-text="&quot;高级搜寻&quot; (在&quot;搜寻) &quot;下，其中&quot;查询&quot;处于查询面板顶部，并运行 Kusto 查询以捕获过去 7 天内的 ZAP 操作。":::
 
 来自此查询的数据将在查询自身下方的结果面板中显示。 结果包括可自定义结果集内的信息，如"DeviceName"、"AccountDisplayName"和"<3>pTime"。 也可以为记录导出结果。 如果您再次需要查询，请选择 **保存** > **“另存为”**，然后将查询添加到查询，共享或社区查询列表中。
 

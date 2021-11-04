@@ -1,5 +1,5 @@
 ---
-title: 在企业版中开始使用核心电子数据展示Microsoft 365
+title: 在企业版中开始使用核心电子数据Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,20 +13,21 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: 介绍如何开始使用 Microsoft 365 中的核心电子数据Microsoft 365。 分配电子数据展示权限并创建案例后，可以添加成员、创建电子数据展示保留，然后搜索和导出与调查相关的内容。
-ms.openlocfilehash: 80b59f1dc2115ebd6c49d7b3bc3ff53f800adfe5
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 0e6e29ced6e6dfb535d169cbf5c41193d5d46cfd
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755683"
+ms.locfileid: "60786598"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Microsoft 365 中的核心电子数据展示Microsoft 365
 
-Microsoft 365中的核心电子数据展示提供了一个基本电子数据展示工具，组织可以使用该工具搜索和导出 Microsoft 365 和 Office 365。 您还可以使用核心电子数据展示将电子数据展示保留到内容位置，如 Exchange 邮箱、SharePoint 网站、OneDrive帐户Microsoft Teams。 部署核心电子数据展示不需要任何内容，但在组织开始使用核心电子数据展示搜索、导出和保留内容之前，IT 管理员和电子数据展示管理员必须完成一些先决条件任务。
+Microsoft 365中的核心电子数据展示提供了一个基本电子数据展示工具，组织可以使用该工具在 Microsoft 365 和 Office 365 中搜索和导出内容。 您还可以使用核心电子数据展示将电子数据展示保留到内容位置，如 Exchange 邮箱、SharePoint 网站、OneDrive帐户Microsoft Teams。 部署核心电子数据展示不需要任何内容，但在您的组织开始使用核心电子数据展示搜索、导出和保留内容之前，IT 管理员和电子数据展示管理员必须完成一些先决条件任务。
 
 本文讨论设置核心电子数据展示所需的步骤。 这包括确保访问核心电子数据展示所需的适当许可，并将电子数据展示保留放在内容位置，以及向 IT、法律和调查团队分配权限，以便他们可以访问和管理事例。 本文还简要概述了使用事例搜索和导出内容的情况。
 
@@ -42,7 +43,7 @@ Microsoft 365中的核心电子数据展示提供了一个基本电子数据展�
 
    或
 
-  - Office 365 E1计划 2 Exchange Online或附加Exchange Online Archiving许可证创建许可证
+  - Office 365 E1计划 2 或Exchange Online加载项许可证Exchange Online Archiving许可证
 
    或
 
@@ -62,7 +63,7 @@ Microsoft 365中的核心电子数据展示提供了一个基本电子数据展�
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>步骤 2：分配电子数据展示权限
 
-若要访问核心电子数据展示或添加为核心电子数据展示案例的成员，必须为用户分配适当的权限。 具体而言，必须将用户添加为电子数据展示管理员角色组Microsoft 365 合规中心。 此角色组的成员可以创建和管理核心电子数据展示事例。 他们可以添加和删除成员、将电子数据展示保留给用户、创建和编辑搜索以及从核心电子数据展示案例导出内容。
+若要访问核心电子数据展示或添加为核心电子数据展示案例的成员，必须为用户分配适当的权限。 具体而言，必须将用户添加为电子数据展示管理员角色组的成员Microsoft 365 合规中心。 此角色组的成员可以创建和管理核心电子数据展示事例。 他们可以添加和删除成员、将电子数据展示保留放在用户上、创建和编辑搜索以及从核心电子数据展示案例导出内容。
 
 完成以下步骤以将用户添加到电子数据展示管理员角色组：
 
@@ -151,7 +152,7 @@ Microsoft 365中的核心电子数据展示提供了一个基本电子数据展�
 
    - 查看可帮助您优化搜索查询以缩小结果范围的搜索统计信息。
 
-   - 预览搜索结果以快速验证是否已找到相关数据。
+   - 预览搜索结果以快速验证是否找到相关数据。
 
    - 修改查询并重新运行搜索。
 

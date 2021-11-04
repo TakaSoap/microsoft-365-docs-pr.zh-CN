@@ -12,16 +12,17 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: 如何通过以下方法使用保留标签来管理 SharePoint 中的文档的生命周期：使用元数据对内容进行分类、自动应用标签，以及使用基于事件的保留来开始保留期。
-ms.openlocfilehash: fe24f13609752dd5a5e73f4631644bd1cf4d4e6c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 586f9074628ed3c4c272715378b1ba413ebdd3ec
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151346"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753663"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>使用保留标签管理存储在 SharePoint 中的文档的生命周期
 
@@ -215,7 +216,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 现在，我们已验证 KQL 查询可正常工作，下面让我们创建自动应用标签策略，它使用 KQL 查询将产品规范保留标签自动应用于相应的文档。
 
-1. 在“[合规中心](https://compliance.microsoft.com/homepage)”，转到“**记录管理**” > “**标签策略**” > “**标签**”。
+1. 在“<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>”，转到“**记录管理**” > “**标签策略**” > “**标签**”。
 
    [![选择“标签”页面上的“自动应用标签”](../media/SPRetention16.png)](../media/SPRetention16.png#lightbox)
 

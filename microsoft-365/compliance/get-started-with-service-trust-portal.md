@@ -14,14 +14,15 @@ mscollection: M365-security-compliance
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 了解如何访问和使用 Microsoft 服务信任门户来帮助实现安全性、隐私和合规性实践。
-ms.openlocfilehash: c74cd1e12d7ca2d6ac7adeb3ace921f54fe4b5a1
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 2efa7389da9d53d14b833dc31bd84b446ee48f63
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757187"
+ms.locfileid: "60785914"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 
@@ -33,7 +34,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 ### <a name="existing-customers"></a>现有客户
 
-现有客户可以通过以下在线订阅之一访问服务信任门户， (<https://aka.ms/STP> 或付费) ：
+现有客户可以通过以下在线订阅之一访问服务信任门户， (<https://aka.ms/STP> 试用版或付费) ：
 
 - Microsoft 365
 - Dynamics 365
@@ -46,13 +47,13 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 若要创建新帐户或创建试用帐户，请使用下列注册表单之一 (用于试用帐户) 访问 STP。
 
-- 注册新的 Microsoft 365 商业应用版[试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=507653)或新的 Office 365 企业版[试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- 注册新的 Microsoft 365 商业应用版[试用帐户或](https://go.microsoft.com/fwlink/p/?LinkID=507653)新的 Office 365 企业版[试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 - 注册新的 [Dynamics 365 试用帐户](https://go.microsoft.com/fwlink/?LinkId=252780)
 
 - 注册新的 Azure [试用帐户](https://go.microsoft.com/fwlink/?LinkId=722737)。
 
-注册免费试用版或订阅时，必须启用Azure Active Directory以支持对 STP 的访问。
+注册免费试用版或订阅时，必须启用Azure Active Directory才能支持访问 STP。
 
 ## <a name="using-the-service-trust-portal"></a>使用服务信任门户
 
@@ -109,7 +110,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 - **设置：** 此页面允许你为合规性管理器分配用户角色 (经典) 。
 
-- **用户隐私设置：** 此页面允许您导出包含特定用户的合规性管理器 () 操作项分配的报告。 还可以将所有行动项重新分配给其他用户，并删除指定用户分配的任何行动项。
+- **用户隐私设置：** 此页面允许您导出包含合规性管理器中的行动项分配的报告， (用户) 经典任务分配。 还可以将所有行动项重新分配给其他用户，并删除指定用户分配的任何行动项。
 
 ### <a name="search"></a>搜索
 
@@ -130,7 +131,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 使用"我的库"功能将服务信任门户上的文档和资源添加到我的库页面。 这样，您可以在一个地方访问与自己相关的文档。  若要将文档添加到"我的库"，请单击文档右边的"..."菜单，然后选择"**保存到库"。** 可以通过单击一个或多个文档旁边的复选框，然后单击页面顶部的"保存到库"，将多个文档添加到我的库。 
 
-此外，通知功能还允许您配置"我的库"，以便 Microsoft 更新已添加到"我的库"的文档时，会向用户发送电子邮件。 若要设置通知，请转到"我的库"，然后单击"通知 **设置"。** 可以选择通知频率，并指定组织中要向其中发送通知的电子邮件地址。 电子邮件通知包括指向已更新的文档的链接以及更新的简要说明。
+此外，通知功能还允许您配置"我的库"，以便 Microsoft 更新已添加到"我的库"的文档时，会向用户发送电子邮件。 若要设置通知，请转到我的库，**然后单击通知** 设置。 可以选择通知频率，并指定组织中要向其中发送通知的电子邮件地址。 电子邮件通知包括指向已更新的文档的链接以及更新的简要说明。
 
 另请注意，我们会识别"我的库"中最近 30 天内已更新的任何文档，无论你是否启用通知。 工具提示中还显示了更新的简要说明。
 

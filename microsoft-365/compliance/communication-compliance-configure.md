@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2a63f13885311ba4a794ca1c25c5e90d320472f5
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: da06544eaf6f994605189948d771c602dda2c66f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753513"
+ms.locfileid: "60787150"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -56,13 +56,13 @@ ms.locfileid: "60753513"
 
 如果你没有现有的 Office 365 企业版 E5 套餐，并且想要尝试通信合规性，可以 [添加 Microsoft 365](/office365/admin/try-or-buy-microsoft-365) 到现有订阅，或 [注册试用](https://www.microsoft.com/microsoft-365/enterprise) Office 365 企业版 E5。
 
-## <a name="recommended-actions-preview"></a>预览 (建议) 
+## <a name="recommended-actions-preview"></a>建议 (预览) 
 
 建议的操作可帮助组织充分使用通信合规性功能和现有策略。 建议的操作 **包含在"概述** "页上，可提供见解并汇总组织中通信中的敏感信息类型和不适当的内容活动。
 
 ![通信合规性建议操作。](../media/communication-compliance-recommended-actions.png)
 
-包含不当内容的邮件中的活动由分类器类型从使用不当内容模板的现有策略或使用分类器处理不当内容的自定义策略中枚举。 调查策略警报仪表板上这些消息的警报。
+包含不当内容的邮件中的活动按分类器类型从使用不当内容模板的现有策略或使用分类器处理不当内容的自定义策略中枚举。 调查策略警报仪表板上这些消息的警报。
 
 现有策略涵盖的邮件以及现有策略未涵盖的邮件中检测到涉及敏感信息类型的活动。 Insights所有敏感信息类型，包括组织之前未在现有通信合规性策略中定义的敏感信息类型。 使用这些见解创建新的通信合规性策略或更新现有策略。
 
@@ -146,7 +146,7 @@ ms.locfileid: "60753513"
 
 在策略中分配通讯组时，策略会监视通讯组每个用户的所有电子邮件和 Teams 聊天。 在策略中分配 Microsoft 365 组时，策略会监视发送到该组的所有电子邮件和 Teams 聊天，而不是每个团队成员收到的单个电子邮件和聊天。
 
-如果你是具有 Exchange 本地部署或外部电子邮件提供商的组织，并且想要监视用户的 Microsoft Teams 聊天，则必须创建一个通讯组以便具有本地或外部邮箱的用户进行监视。 在这些步骤的稍后部分，你将此通讯组分配为策略向导中的 **受监督用户和组**。 有关为本地用户启用基于云的存储和 Teams 支持的要求和限制，请参阅搜索本地用户的 Teams 聊天[数据](search-cloud-based-mailboxes-for-on-premises-users.md)。
+如果你是具有 Exchange 本地部署或外部电子邮件提供商的组织，并且想要监视用户的 Microsoft Teams 聊天，则必须创建一个通讯组以便具有本地或外部邮箱的用户进行监视。 在这些步骤的稍后部分，你将此通讯组分配为策略向导中的 **受监督用户和组**。 有关为本地用户启用基于云的存储和 Teams 支持的要求和限制，请参阅 Search for Teams chat data for [on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 若要在大型企业组织中管理受监督的用户，可能需要监视大型组的所有用户。 可使用 PowerShell 为已分配组配置全局通信合规性策略的通讯组。 这样，可以使用一个策略监视成千上万个用户，并在新员工加入组织时保持通信合规性策略的更新。
 
@@ -197,7 +197,7 @@ ms.locfileid: "60753513"
 >不支持使用 PowerShell 创建和管理通信合规性策略。 若要创建和管理这些策略，必须使用 [Microsoft 365 通信合规性解决方案](https://compliance.microsoft.com/supervisoryreview) 中的策略管理控件。
 
 >[!TIP]  
->想要查看有关设置新通信合规性策略和修正警报的深入演练？ 观看 [此 15](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) 分钟的视频，了解通信合规性策略如何帮助您检测不适当的消息、调查潜在的违反和修正合规性问题。
+>想要查看有关设置新通信合规性策略和修正警报的深入演练？ 观看 [此 15](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) 分钟的视频，了解通信合规性策略如何帮助您检测不恰当的消息、调查潜在的违反和修正合规性问题。
 
 1. 使用<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心组织中</a>管理员帐户的凭据登录Microsoft 365帐户。
 
@@ -218,7 +218,7 @@ ms.locfileid: "60753513"
     - 选择有限条件字段，通常是要应用于该策略的敏感信息类型或关键字词典。
 
     > [!NOTE]
-    > 如果要启用光学字符识别[ (OCR) ](communication-compliance-policies.md#optical-character-recognition-ocr)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用"从图像中提取打印或手写文本"进行评估  >  。 
+    > 如果要启用光学字符识别 [ (OCR)](communication-compliance-policies.md#optical-character-recognition-ocr)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用"从图像中提取打印或  >  **手写** 文本"进行评估。
 
     如果选择使用策略向导创建自定义策略，将需要：
 
@@ -254,7 +254,7 @@ ms.locfileid: "60753513"
 
 当调查策略匹配并针对邮件采取措施时，还可以选择对显示用户名启用匿名处理。
 
-1. 使用<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>组织中管理员帐户的凭据登录Microsoft 365帐户。
+1. 使用<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心组织中</a>管理员帐户的凭据登录Microsoft 365帐户。
 
 2. 在 Microsoft 365 合规中心中，转到“**通信合规性**”。
 

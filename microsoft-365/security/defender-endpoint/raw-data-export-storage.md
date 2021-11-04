@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 02250d5eb75983ad0341f43addc097a26d03d6f1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 49d14074af42437caaca9684cbfa3fc46362d32d
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174659"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786287"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式传输存储帐户
 
@@ -52,7 +52,7 @@ ms.locfileid: "60174659"
 
 5. Choose **Forward events to Azure 存储**.
 
-6. 键入你的 **存储帐户资源 ID。** 若要获取你的帐户 **存储 ID，** 请转到 [Azure](https://ms.portal.azure.com/)门户属性选项卡上的你的 存储 帐户页面复制帐户存储 \> ID \> **下的文本**：
+6. 键入你的 **存储帐户资源 ID。** 若要获取你的 存储 帐户资源 **ID，** 请转到 [Azure](https://ms.portal.azure.com/)门户属性选项卡上的 存储 帐户页面，复制"存储帐户资源 \> \> **ID"下的文本**：
 
    ![事件中心资源 ID1 的图像。](images/storage-account-resource-id.png)
 
@@ -77,9 +77,9 @@ ms.locfileid: "60174659"
 
 - 每个 blob 包含多行。
 
-- 每行都包含事件名称、Defender for Endpoint 接收事件的时间、它所属的租户 (你仅从租户) 获取事件，事件以 JSON 格式包含在名为"properties"的属性中。
+- 每行都包含事件名称、Defender for Endpoint 收到事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为"properties"的属性。
 
-- 有关适用于终结点事件的 Microsoft Defender 架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
+- 有关 Microsoft Defender for Endpoint 事件的架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
 
 - 在高级搜寻中 **，DeviceInfo** 表有一个名为 **MachineGroup** 的列，其中包含设备组。 此处还将用此列修饰每个事件。 有关详细信息 [，请参阅](machine-groups.md) 设备组。
 
@@ -91,7 +91,7 @@ ms.locfileid: "60174659"
 
 2. 运行以下查询，获取每个事件的数据类型映射：
 
-   ```
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType
@@ -99,7 +99,7 @@ ms.locfileid: "60174659"
 
 - 下面是设备信息事件的示例：
 
-  ![事件中心资源 ID3 的图像。](images/machine-info-datatype-example.png)
+  ![事件中心资源 ID3 的图像。](images/data-types-mapping-query.png)
 
 ## <a name="related-topics"></a>相关主题
 

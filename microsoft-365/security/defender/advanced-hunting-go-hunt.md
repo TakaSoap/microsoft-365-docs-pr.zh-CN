@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 32bd63e5b7a0546c6222fab72684ebd990541366
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6a573b68d03e7446fc63f4fbc34bee3d46da9c49
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176759"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786625"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>使用 go hunt 快速搜寻实体或事件信息
 
@@ -42,16 +42,16 @@ ms.locfileid: "60176759"
 
 - 在 [事件页面中](investigate-incidents.md#summary)，你可以查看有关用户、设备和与事件关联的许多其他实体的详细信息。 选择实体时，您将获得其他信息以及可针对该实体执行的各种操作。 在下面的示例中，选择一个邮箱，其中显示有关邮箱的详细信息，以及用于搜寻有关邮箱的详细信息的选项。
 
-    ![显示具有"开始"寻线选项的邮箱详细信息的图像。](../../media/mtp-ah/go-hunt-email.png)
+    ![显示具有"开始"寻线选项的邮箱详细信息的图像。](../../media/go-hunt-1-incident.png)
 
 - 在事件页面中，您还可以访问"证据"选项卡下的实体列表。选择其中一个实体可提供快速搜寻有关该实体的信息的选项。
 
-    ![显示"证据"选项卡中带"去寻线"选项的选定文件的图像。](../../media/mtp-ah/go-hunt-evidence-file.png)
+    ![显示"证据"选项卡中带"去寻线"选项的选定文件的图像。](../../media/go-hunt-2-entity.png)
 
 
 - 查看设备的时间线时，可以选择时间线中的事件以查看有关该事件的其他信息。 选择事件后，可选择在高级搜寻中搜寻其他相关事件。
 
-    ![显示具有"开始"寻线选项的事件详细信息的图像。](../../media/mtp-ah/go-hunt-event.png)
+    ![显示具有"开始"寻线选项的事件详细信息的图像。](../../media/go-hunt-3-event.png)
 
 选择 **"搜寻** " **或** "搜寻"进行相关事件将传递不同的查询，具体取决于你选择了实体还是事件。
 
@@ -109,7 +109,7 @@ Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 - [创建自定义检测规则](custom-detection-rules.md)
 
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开Microsoft 365 Defender，](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender"](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

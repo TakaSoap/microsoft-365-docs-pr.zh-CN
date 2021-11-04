@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: fe21093b8849effaf50771f2260d8588a6e68e5d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a5d64106d801dfe554fe01290011e2d3e2b7767e
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756595"
+ms.locfileid: "60786072"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 
@@ -36,7 +36,11 @@ ms.locfileid: "60756595"
 应用这些建议可更快地获取结果，并避免在运行复杂查询时出现超时。 有关提高查询性能的更多指导，请参阅 [Kusto 查询最佳做法](/azure/kusto/query/best-practices)。
 
 ## <a name="understand-cpu-resource-quotas"></a>了解 CPU 资源配额
-根据大小，每个租户都有权访问分配给运行高级搜寻查询的一组 CPU 资源。 有关各种服务限制的详细信息， [请阅读有关高级搜寻配额和使用参数的信息](advanced-hunting-limits.md)。
+根据大小，每个租户都有权访问分配给运行高级搜寻查询的一组 CPU 资源。 有关各种使用参数的详细信息， [请阅读有关高级搜寻配额和使用参数的信息](advanced-hunting-limits.md)。
+
+运行查询后，可以看到执行时间及其资源使用率 (低、中、高) 。 High 指示查询需要更多资源来运行，可以改进以更有效地返回结果。
+
+![显示资源不足指示器的图像](../../media/resource-usage.png)
 
 定期运行多个查询的客户应跟踪使用情况，并应用本文中的优化指南，以最大限度地减少因超出配额或使用参数而导致的中断。
 
@@ -55,7 +59,7 @@ ms.locfileid: "60756595"
 
 - **Has beats contains**-To avoid searching substrings within words unnecessarily， use the `has` operator instead of `contains` . [了解字符串运算符](/azure/data-explorer/kusto/query/datatypes-string-operators)
 - **查看特定列**— 查看特定列，而不是在所有列中运行全文搜索。 请勿使用 `*` 检查所有列。
-- **对于速度，区分** 大小写 — 区分大小写的搜索更为具体，通常性能也更高。 区分大小写的字符串 [运算符的名称，](/azure/data-explorer/kusto/query/datatypes-string-operators)例如 和 `has_cs` `contains_cs` ，通常以 结尾 `_cs` 。 您还可以使用区分大小写的等于运算符 `==` ，而不是 `=~` 。
+- **对于速度，区分** 大小写 — 区分大小写的搜索更为具体，通常性能也更高。 区分大小写的字符串 [运算符的名称，](/azure/data-explorer/kusto/query/datatypes-string-operators)例如 和 `has_cs` `contains_cs` ，通常以 结尾 `_cs` 。 您还可以使用区分大小写的等号运算符 `==` ，而不是 `=~` 。
 - **分析，不要提取**— 尽可能使用 [分析](/azure/data-explorer/kusto/query/parseoperator) 运算符或分析函数（如 [parse_json ()](/azure/data-explorer/kusto/query/parsejsonfunction)）。 避免 `matches regex` 使用字符串运算符或 [extract () ](/azure/data-explorer/kusto/query/extractfunction)函数，两者均使用正则表达式。 保留对更复杂的方案的正则表达式的使用。 [阅读有关分析函数的更多信息](#parse-strings)
 - **筛选表不是表达式**-如果可以筛选表列，则不要筛选计算列。
 - **无三字符术语**- 避免使用带三个字符或更少字符的术语进行比较或筛选。 这些术语未编制索引，匹配它们将需要更多资源。
@@ -79,7 +83,7 @@ ms.locfileid: "60756595"
     on AccountSid
     ```
 
-- 使用 **inner-join 风格**-[](/azure/data-explorer/kusto/query/joinoperator#join-flavors)默认联接风格或 [innerunique-join](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor)重复删除左表中的行，然后按联接键将每个匹配项的行返回到右表。 如果左表有多个行，这些行的键值相同，则这些行将进行重复数据删除，以保留每个唯一值的一 `join` 个随机行。
+- 使用 **inner-join 风格**-[](/azure/data-explorer/kusto/query/joinoperator#join-flavors)默认联接风格或 [innerunique-join](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor)重复删除左表中的行，然后按联接键将每个匹配项的行返回到右表。 如果左表有多个行，这些行的键值相同，则删除这些行，以保留每个唯一值的一 `join` 个随机行。
 
     此默认行为可能会从左侧表中排除可提供有用见解的重要信息。 例如，下面的查询将只显示一封包含特定附件的电子邮件，即使该同一附件是使用多个电子邮件发送的：
 
@@ -137,7 +141,7 @@ ms.locfileid: "60756595"
     on AccountObjectId
     ```
 
-    当 **[左表](/azure/data-explorer/kusto/query/broadcastjoin)** 较小，最多 100，000 个 (且右表非常大时，广播) 会有所帮助。 例如，下面的查询尝试将具有特定主题的一些电子邮件与表中包含链接的所有邮件 `EmailUrlInfo` 加入：
+    当 **[左边的](/azure/data-explorer/kusto/query/broadcastjoin)** 表格很小，最多有 100，000 (记录时，广播提示) 右表非常大。 例如，下面的查询尝试将具有特定主题的一些电子邮件与表中包含链接的所有邮件 `EmailUrlInfo` 加入：
 
     ```kusto
     EmailEvents
@@ -208,7 +212,7 @@ DeviceNetworkEvents
 
 若要围绕命令行创建更持久的查询，请应用以下做法：
 
-- 通过匹配 (字段（而不是筛选命令行本身）psexec.exe) 已知的进程，例如net.exe或psexec.exe) 。 
+- 通过匹配文件名 (（而不是筛选命令行本身net.exe，psexec.exe) 名称字段来标识已知进程，例如net.exe或) 。 
 - 使用 parse_command_line [ () 函数分析命令行部分](/azure/data-explorer/kusto/query/parse-command-line)
 - 查询命令行参数时，请勿按特定顺序查找多个不相关参数的完全匹配。 而是使用正则表达式或使用多个单独的 Contains 运算符。
 - 使用不区分大小写的匹配项。 例如，使用 `=~` 、 `in~` 和 `contains` ，而不是 、 和 `==` `in` `contains_cs` 。
@@ -234,7 +238,7 @@ DeviceProcessEvents
 ```
 
 ### <a name="ingest-data-from-external-sources"></a>从外部源中输入数据
-若要将长列表或大型表合并到查询中，请使用 [externaldata](/azure/data-explorer/kusto/query/externaldata-operator) 运算符从指定的 URI 引入数据。 可以从 TXT、CSV、JSON 或其他格式 [的文件获取数据](/azure/data-explorer/ingestion-supported-formats)。 下面的示例演示如何利用 MalwareBazaar 文件提供的恶意软件 SHA-256 哈希的广泛列表 (abuse.ch) 检查电子邮件上的附件：
+若要将长列表或大型表合并到查询中，请使用 [externaldata](/azure/data-explorer/kusto/query/externaldata-operator) 运算符从指定的 URI 引入数据。 可以从 TXT、CSV、JSON 或其他格式 [的文件获取数据](/azure/data-explorer/ingestion-supported-formats)。 下面的示例演示如何利用 MalwareBazaar 提供的恶意软件 SHA-256 哈希的广泛列表 (abuse.ch) 检查电子邮件上的附件：
 
 ```kusto
 let abuse_sha256 = (externaldata(sha256_hash: string)

@@ -1,6 +1,6 @@
 ---
 title: 内部风险管理通知模板
-description: 了解管理中心中的内部风险管理通知Microsoft 365
+description: 了解企业内部风险管理通知模板Microsoft 365
 keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -12,12 +12,13 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 47b53814ce3df8c2a8215705521169f27065b5a3
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 1800f8371bebe3a0548196d8b6c1d4119a677058
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753893"
+ms.locfileid: "60786814"
 ---
 # <a name="insider-risk-management-notice-templates"></a>内部风险管理通知模板
 
@@ -49,7 +50,7 @@ ms.locfileid: "60753893"
 ```
 
 > [!NOTE]
-> 内部风险管理通知模板中的 HTML href 属性实现目前仅支持单引号，而不支持 URL 引用的双引号。
+> 内部风险管理通知模板中的 HTML href 属性实现当前仅支持单引号，而不支持 URL 引用的双引号。
 
 ## <a name="create-a-new-notice-template"></a>创建新的通知模板
 

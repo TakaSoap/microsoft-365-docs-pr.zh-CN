@@ -22,19 +22,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a075b653e3eeae9287f4fdbf83ed9e5e2133df99
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e412852e7184a4f9b520ed777938836a44b62b5c
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208453"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786157"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>尝试Microsoft 365 Defender环境中使用事件响应功能
 
 **适用于：**
 - Microsoft 365 Defender
 
-本文是使用试验环境对事件进行调查和响应的过程中第 2 步Microsoft 365 Defender [2](eval-defender-investigate-respond.md)步。 有关此过程详细信息，请参阅 [概述](eval-defender-investigate-respond.md) 文章。
+本文是使用试验环境对 Microsoft 365 Defender 事件进行调查和响应的过程中的第 2 步（第[2](eval-defender-investigate-respond.md)步）。 有关此过程详细信息，请参阅 [概述](eval-defender-investigate-respond.md) 文章。
 
 对模拟攻击[执行事件](eval-defender-investigate-respond-simulate-attack.md)响应后，下面是一些Microsoft 365 Defender功能：
 
@@ -48,7 +48,7 @@ ms.locfileid: "60208453"
 
 ## <a name="prioritize-incidents"></a>确定事件优先级
 
-在快速启动 Microsoft 365 Defender (**>** security.microsoft.com) 时，你可以从事件&警报和事件Microsoft 365 Defender [事件](https://security.microsoft.com)队列。 下面是一个示例。
+在快速启动 Microsoft 365 Defender 门户&事件>事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。":::
 
@@ -159,13 +159,13 @@ ms.locfileid: "60208453"
 
 ### <a name="run-the-simulation"></a>运行模拟
 
-1. 从外部电子邮件帐户，将电子邮件发送到在搜寻环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型包括<i>.pdf、.exe(（) ）</i>或 Office 文档类型（如 Word 文件）。 <i></i>
+1. 从外部电子邮件帐户，将电子邮件发送到在搜寻环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型包括.pdf、.exe(（) ）<i></i>或 Office 文档类型（如 Word 文件）。 <i> </i>
 
 2. 打开从设备发送的电子邮件，如搜寻环境要求部分的步骤 3 中的定义。 打开附件或将文件保存到设备。
 
 #### <a name="go-hunting"></a>转到搜寻
 
-1. 打开Microsoft 365 Defender[门户](https://security.microsoft.com/)。
+1. 打开[Microsoft 365 Defender 门户](https://security.microsoft.com/)。
 
 2. 从导航窗格中，选择"搜寻>**高级搜寻"。**
 
@@ -186,7 +186,7 @@ ms.locfileid: "60208453"
       > [!NOTE]
       > 有关限制数据返回的筛选选项，请参阅下一步。
 
-      ![高级搜寻查询结果的示例。](../../media/mtp/fig19.png)
+      ![高级搜寻查询结果的示例。](../../media/advanced-hunting-incident-response-try-1.png)
 
         > [!NOTE]
         > 高级搜寻将查询结果显示为表格数据。 还可以选择查看其他格式类型（如图表）的数据。
@@ -200,7 +200,7 @@ ms.locfileid: "60208453"
 
    1. 单击查询中的结果行，以便可以检查记录。
 
-      ![检查记录侧面板的示例，该面板在选择高级搜寻结果时打开。](../../media/mtp/fig21.png)
+      ![检查记录侧面板的示例，该面板在选择高级搜寻结果时打开。](../../media/advanced-hunting-incident-response-try-2.png)
 
 4. 现在，你已验证是否可以看到电子邮件，请为附件添加筛选器。 重点关注环境中具有附件的所有电子邮件。 对于此模拟，重点关注入站电子邮件，而不是从你的环境发送的电子邮件。 删除已添加的任何筛选器以查找邮件并添加"|其中 **AttachmentCount > 0** 和 **EmailDirection**  ==  **"Inbound""**
 
@@ -211,7 +211,7 @@ ms.locfileid: "60208453"
    | where AttachmentCount > 0 and EmailDirection == "Inbound"
    ```
 
-5. 接下来，包括有关附件 (，例如：文件名、) 哈希结果集。 为此，请加入 **EmailAttachmentInfo** 表。 用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId**。
+5. 接下来，包括有关附件 (，例如：文件名、哈希) 到结果集。 为此，请加入 **EmailAttachmentInfo** 表。 用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId**。
 
    以下查询还包括一个附加行"| **项目重命名 EmailTimestamp=Timestamp**"，有助于确定与电子邮件相关的时间戳与下一步将添加的文件操作相关的时间戳。
 
@@ -237,7 +237,7 @@ ms.locfileid: "60208453"
 
    现在，你已创建一个查询，该查询将标识用户打开或保存附件的所有入站电子邮件。 您还可以优化此查询以筛选特定的发件人域、文件大小、文件类型等。
 
-7. 函数是一种特殊类型的联接，它让你可以拉取关于文件的更多 TI 数据，如其普遍程度、签名者和颁发者信息等。若要获取有关文件的更多详细信息，请使用 **FileProfile** () 函数扩充：
+7. 函数是一种特殊类型的联接，它让你可以拉取关于文件的更多 TI 数据，如其普遍程度、签名者和颁发者信息等。若要获取有关文件的更多详细信息，请使用 **FileProfile ()** 函数扩充：
 
     ```console
     EmailEvents
@@ -252,13 +252,13 @@ ms.locfileid: "60208453"
 
 #### <a name="create-a-detection"></a>创建检测
 
-创建一个查询来标识要在将来是否发生警报的信息后，可以从该查询创建自定义检测。
+创建一个查询，用于标识要在将来是否发生警报的信息，然后可以从该查询创建自定义检测。
 
 自定义检测将按照您设置的频率运行查询，并且查询结果将基于您选择的影响资产创建安全警报。 这些警报将关联到事件，并可以像其中一个产品生成任何其他安全警报一样进行会审。
 
 1. 在查询页面上，删除在"开始"搜寻说明的步骤 7 中添加的第 7 行和第 8 行，然后单击"**创建检测规则"。**
 
-   ![可在高级搜寻页面中单击创建检测规则的示例。](../../media/mtp/fig22.png)
+   ![可在高级搜寻页面中单击创建检测规则的示例。](../../media/advanced-hunting-incident-response-try-3.png)
 
    > [!NOTE]
    > 如果单击 **"创建检测规则** "，并且查询中出现语法错误，将不会保存检测规则。 仔细检查查询以确保没有错误。

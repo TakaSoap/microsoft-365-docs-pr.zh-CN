@@ -11,15 +11,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: 使用本地脚本在设备上部署配置包，以便它们可以载入服务。
-ms.openlocfilehash: 9611ff0f787e35e313744fa817e30a5d41b761b6
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 383e811391d0c2ccc7f2d178b39955c5504c78b5
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753501"
+ms.locfileid: "60786898"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>使用本地脚本载入 Windows 10 设备
 
@@ -58,15 +59,15 @@ ms.locfileid: "60753501"
 
 10. 按 **Enter 键** 或单击"确定 **"。**
 
-若要了解如何手动验证设备是否合规并正确报告传感器数据，请参阅 Microsoft Defender 高级威胁防护 [载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
+若要了解如何手动验证设备是否合规并正确报告传感器数据，请参阅 [Microsoft Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
 
 ## <a name="offboard-devices-using-a-local-script"></a>使用本地脚本的载出设备
 出于安全考虑，用于"载出"设备的程序包将在下载日期 30 天后过期。 发送到设备的过期载出包将被拒绝。 下载载出包时，你将收到程序包到期日期的通知，该日期也将包含在程序包名称中。
 
 > [!NOTE]
-> 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
+> 不得同时在同一设备上部署载入和载出策略，否则将导致不可预知的冲突。
 
-1. 从 Microsoft 365 合规中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">获取</a>Microsoft 365 合规中心。
+1. 从 Microsoft 365 合规中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">获取Microsoft 365 合规中心。</a>
 
 2. 在导航窗格中，选择 <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**"设置**</a>  >  **设备载出"。**
 
@@ -74,7 +75,7 @@ ms.locfileid: "60753501"
 
 4. 单击 **下载程序包** 并保存.zip文件。
 
-5. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
+5. 将文件内容.zip到设备可以访问的共享只读位置。 你应该有一个名为 *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
 6. 在设备上打开提升的命令行提示符并运行脚本：
 
@@ -104,7 +105,7 @@ ms.locfileid: "60753501"
 
 ## <a name="related-topics"></a>相关主题
 - [使用Windows 10载入设备](dlp-configure-endpoints-gp.md)
-- [使用Windows 10载入设备Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
+- [使用Windows 10载入Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [使用移动设备管理工具载入 Windows 10 设备](dlp-configure-endpoints-mdm.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](dlp-configure-endpoints-vdi.md)
 - [在新载入的 Microsoft Defender 终结点设备上运行检测测试](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)

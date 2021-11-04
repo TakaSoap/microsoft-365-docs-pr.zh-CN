@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 930d9fc489e449effcb61c3224f5695ec835a1a1
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: a1937fd24c8025aa3e3d7afb16fbf050b1155fb3
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724699"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786610"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
@@ -47,13 +47,15 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
 ## <a name="november-2021"></a>2021 年 11 月
--  (预览) 适用于云应用的 Defender 的应用程序管理加载项功能现已在 Microsoft 365 Defender 中提供。 应用治理提供了一项安全和策略管理功能，该功能是为启用 OAuth 的应用设计的，这些应用Microsoft 365 Microsoft Graph API 访问数据。 应用治理通过可操作的见解和自动化的策略警报和操作，对这些应用及其用户如何访问、使用和共享存储在 Microsoft 365 中的敏感数据提供全面的可见性、修复和治理。 [详细了解应用程序治理](/cloud-app-security/app-governance-manage-app-governance)。
 
+-  (预览) 适用于云应用的 Defender 的应用程序管理加载项功能现已在 Microsoft 365 Defender 中提供。 应用治理提供了一个安全和策略管理功能，该功能是为启用 OAuth 的应用设计的，这些应用Microsoft 365 Microsoft Graph API 访问数据。 应用治理通过可操作的见解和自动化的策略警报和操作，对这些应用及其用户如何访问、使用和共享存储在 Microsoft 365 中的敏感数据提供全面的可见性、修复和治理。 [详细了解应用程序治理](/cloud-app-security/app-governance-manage-app-governance)。
+-  (Preview) 高级搜寻页面现在[](advanced-hunting-overview.md)具有多任务支持、智能滚动、简化的架构选项卡、查询的快速编辑选项、查询资源使用率指示器和其他改进，使查询更流畅且更容易微调。
+-  (预览) 现在可以使用事件功能链接将高级搜寻查询结果[](advanced-hunting-link-to-incident.md)中的事件或记录直接包含到正在调查的新事件或现有事件中。 
 ## <a name="october-2021"></a>2021 年 10 月
--  (GA) 在高级搜寻中 [，CloudAppEvents](advanced-hunting-cloudappevents-table.md) 表中添加了更多列。 现在可以将 `AccountType` `IsExternalUser` `IsImpersonated` 、、、、 `IPTags` `IPCategory` 和 `UserAgentTags` 添加到查询中。 
+-  (GA) 在高级搜寻中 [，CloudAppEvents](advanced-hunting-cloudappevents-table.md) 表中添加了更多列。 现在可以在 `AccountType` 查询中包括 `IsExternalUser` 、 `IsImpersonated` 、 、 `IPTags` `IPCategory` 、 `UserAgentTags` 和 。 
 
 ## <a name="september-2021"></a>2021 年 9 月
--  (事件) API 中Office 365 Microsoft Defender for Microsoft 365 Defender 事件数据。 你可以查看流式 API 中受支持的事件类型Microsoft 365 Defender[事件类型的可用性和状态](supported-event-types.md)。
+-  (事件) API 中Office 365 Microsoft Defender for Microsoft 365 Defender 事件数据。 你可以查看流式 API 中受支持事件类型Microsoft 365 Defender[事件类型的可用性和状态](supported-event-types.md)。
 -  (通用) Microsoft Defender Office 365高级搜寻中提供的数据现已普遍可用。
 -  (预览) 向用户帐户分配事件和警报 <br> 您可以将事件及其关联的所有警报分配给用户帐户，该用户帐户位于事件的"管理事件"窗格或警报的"管理警报"窗格中。 
 
@@ -77,18 +79,18 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="may-2021"></a>2021 年 5 月
 
-- [门户中的新警报Microsoft 365 Defender页](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243) <br> 提供针对攻击的上下文的增强信息。 你可以看到其他触发的警报导致了当前警报，以及攻击中涉及的所有受影响的实体和活动，包括文件、用户和邮箱。 有关详细信息 [，请参阅](/microsoft-365/security/defender/investigate-alerts) 调查警报。
+- [Microsoft 365 Defender门户中的"新建警报"页](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243) <br> 提供针对攻击的上下文的增强信息。 你可以看到其他触发的警报导致了当前警报，以及攻击中涉及的所有受影响的实体和活动，包括文件、用户和邮箱。 有关详细信息 [，请参阅](/microsoft-365/security/defender/investigate-alerts) 调查警报。
 - [事件和警报趋势图Microsoft 365 Defender门户](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425) <br> 确定单个事件是否具有多个警报，或者您的组织是否受到多个不同事件的攻击。 有关详细信息 [，请参阅确定](/microsoft-365/security/defender/incident-queue) 事件的优先级。
 
 
 ## <a name="april-2021"></a>2021 年 4 月
-- Microsoft 365 Defender<br> 改进的[Microsoft 365 Defender](https://security.microsoft.com)门户现已可用。 这一新体验将 Defender for Endpoint、defender for Office 365、Defender for Identity 等集成到单个门户中。 这是用于管理安全控制的新主页。 [了解新增功能](./microsoft-365-defender.md#the-microsoft-365-defender-portal)。
+- Microsoft 365 Defender<br> 改进的[Microsoft 365 Defender](https://security.microsoft.com)门户现已可用。 这一新体验将 Defender for Endpoint、Defender for Office 365、Defender for Identity 等集成到单个门户中。 这是用于管理安全控制的新主页。 [了解新增功能](./microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
 - [Microsoft 365 Defender威胁分析报告](threat-analytics.md)<br>
- 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解解决方案阻止的攻击尝试Microsoft 365 Defender采取预防措施，以缓解进一步暴露的风险并增加恢复能力。 作为统一安全体验的一部分，威胁分析现在适用于 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 许可证持有者。
+ 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解解决方案阻止的攻击尝试Microsoft 365 Defender采取预防措施，以缓解进一步暴露的风险并增加复原能力。 作为统一安全体验的一部分，威胁分析现在适用于 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 许可证持有者。
 
 ## <a name="march-2021"></a>2021 年 3 月
-- [CloudAppEvents 表](advanced-hunting-cloudappevents-table.md) <br>查找有关组织涵盖的各种云应用和服务中的Microsoft Cloud App Security。 此表还包括以前在表中可用的 `AppFileEvents` 信息。
+- [CloudAppEvents 表](advanced-hunting-cloudappevents-table.md) <br>查找有关应用程序涵盖的各种云应用和服务中的Microsoft Cloud App Security。 此表还包括以前在表中可用的 `AppFileEvents` 信息。
 ## <a name="february-2021"></a>2021 年 2 月
--  (预览) 增强[Microsoft 365 Defender门户 (https://security.microsoft.com) ](https://security.microsoft.com)现在提供公共预览版。 此新体验将 Defender for Endpoint 和 Defender for Office 365中心。 [了解有关更改的详细信息](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
-- **[ (预览) Microsoft 365 Defender](api-overview.md)** API - 顶级 Microsoft 365 Defender API 将使您能够根据共享事件和高级搜寻表自动执行工作流。 
+-  (预览) 增强[Microsoft 365 Defender门户 (https://security.microsoft.com) ](https://security.microsoft.com)现在提供公共预览版。 这一全新体验将 Defender for Endpoint 和 Defender for Office 365引入中心。 [了解有关更改的详细信息](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
+- **[ (预览) Microsoft 365 Defender API](api-overview.md)** - 顶级 Microsoft 365 Defender API 将使您能够基于共享事件和高级搜寻表自动执行工作流。 

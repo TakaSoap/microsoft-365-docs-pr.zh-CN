@@ -12,12 +12,13 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 953a29817d13017c0b4fb72031bc97c64924a819
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 3a7a8f8e7f839c47f369e32507acc7b70edc0d63
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754419"
+ms.locfileid: "60785818"
 ---
 # <a name="insider-risk-management-cases"></a>内部风险管理案例
 
@@ -125,10 +126,10 @@ Select an alert from the queue to display the **Alert detail** page.
 1. **时间筛选器**：默认情况下，在案例确认的最近六个月警报显示在用户活动图表中。 通过选择气泡图上的 *"6* 个月 *、3* 个月"或 *"1* 个月"选项卡，可以轻松筛选图表视图。
 2. **风险提醒活动和详细信息**：风险活动在用户活动图表中以彩色气泡显示。 为不同类别的风险创建气泡，而气泡大小与类别的风险活动数成比例。 选择气泡以显示每个风险活动的详细信息。 详细信息包括：
     - 风险活动的 **日期**。
-    - 风险 **活动类别**。 例如，*电子邮件 (* 组织) 发送的附件，或从 *SharePoint Online* 下载的文件 (文件) 附件。
+    - 风险 **活动类别**。 例如，*电子邮件 ()* 组织外部发送的附件，或从 *SharePoint Online* 下载的文件 (文件) 附件。
     - 警报的 **风险分数**。 此分数是警报风险严重性级别的数字分数。
     - 与警报相关联的事件数。 还会提供指向与风险活动关联的每个文件或电子邮件的链接。
-3. 风险 **(预览**) ：风险活动按时间顺序是风险调查的一个重要方面，识别这些相关活动是评估组织的总体风险的重要部分。 与相关的警报活动通过连接线显示，以突出显示这些活动与较大的风险区域相关联。 这种活动视图可帮助调查人员逐字地"连接点"可能被视为独立或一次事件的风险活动。 选择序列中的任意气泡以显示所有关联风险活动的详细信息。 详细信息包括：
+3. 风险 **(预览**) ：风险活动按时间顺序是风险调查的一个重要方面，识别这些相关活动是评估组织的整体风险的重要部分。 与相关的警报活动通过连接线显示，以突出显示这些活动与较大的风险区域相关联。 这种活动视图可帮助调查人员逐字地"连接点"可能被视为独立或一次事件的风险活动。 选择序列中的任意气泡以显示所有关联风险活动的详细信息。 详细信息包括：
 
     - **序列** 的名称。
     - **序列****的日期或** 日期范围。
@@ -245,7 +246,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 解决案例后，关联的 Microsoft 团队将自动存档 (隐藏，并打开为只读) 。
 
-若要详细了解如何Microsoft Teams内部风险管理，请参阅内部[风险管理设置入门](insider-risk-management-settings.md#microsoft-teams-preview)。
+若要了解有关内部Microsoft Teams管理的信息，请参阅内部[风险管理设置入门](insider-risk-management-settings.md#microsoft-teams-preview)。
 
 ### <a name="resolve-the-case"></a>解决案例
 

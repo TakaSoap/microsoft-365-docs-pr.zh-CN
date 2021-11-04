@@ -19,17 +19,18 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: 了解如何定义和管理数据丢失防护策略的警报。
-ms.openlocfilehash: a2969da8fa782a07063614763da015e74d4826f9
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 629f0e84b1118313d6968a07a24d4e27b12f0bce
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753525"
+ms.locfileid: "60785446"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>配置和查看数据丢失防护策略警报
 
-DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。 对敏感项目采取操作时，可以通过配置 DLP 警报来通知您。 本文演示如何定义链接到 DLP 策略和 DLP (数据丢失防护) 策略。 你将看到如何使用新 DLP 警报管理仪表板Microsoft 365 合规中心查看 DLP 策略违反的警报、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">事件和</a>关联元数据。
+DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。 对敏感项目采取操作时，可以通过配置 DLP 警报来通知您。 本文演示如何定义与 DLP 策略或 DLP 策略的数据丢失防护 (警报) 策略。 你将看到如何使用新 DLP 警报管理仪表板Microsoft 365 合规中心查看 DLP 策略违反的警报、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">事件和</a>关联元数据。
 
 <!-- LEFT OFF HERE-->
 
@@ -91,7 +92,7 @@ DLP 的所有符合条件的租户Office 365新的 DLP 警报管理仪表板。 
 
 :::image type="content" source="../media/incident-reports-options-aggregated-alerts.png" alt-text="Screenshot showing options for incident reports for users who are eligible for aggregated alert configuration options." border="false":::
 
-可以使用这些警报配置选项来配置一个设置，该设置定义 DLP 规则匹配在触发警报之前发生的时间。 通过此配置，您可以设置一个策略，以在活动符合策略条件或超出特定阈值时（基于活动数或根据已过滤数据的量）生成警报。
+可以使用这些警报配置选项来配置一个设置，该设置定义 DLP 规则匹配在触发警报之前发生的时间。 通过此配置，您可以设置一个策略，以在活动符合策略条件或超出特定阈值时（基于活动数或根据已筛选数据量）生成警报。
 
 如果符合单事件警报配置选项[](#licensing-for-alert-configuration-options)的条件，则会看到 DLP 策略创作体验中的以下警报配置选项。 使用此选项可创建每次因用户活动而发生 DLP 规则匹配时都会触发的警报。
 
@@ -126,12 +127,12 @@ DLP 的所有符合条件的租户Office 365新的 DLP 警报管理仪表板。 
     |                   | 电子邮件收件人              | 违反 DLP 策略的电子邮件的收件人                       | Exchange事件                          |
     |                   | 电子邮件主题                 | 违反 DLP 策略的电子邮件主题                          | Exchange事件                          |
     |                   | 电子邮件附件             | 电子邮件中违反 DLP 策略的附件的名称         | Exchange事件                          |
-    |                   | 网站所有者                    | 网站所有者的名称                                                     | SharePoint 和 OneDrive 事件           |
-    |                   | 网站 URL                      | SharePoint 或 OneDrive 的完整 URL                                | SharePoint 和 OneDrive 事件           |
-    |                   | 已创建文件                  | 文件创建时间                                                      | SharePoint 和 OneDrive 事件           |
-    |                   | 上次修改文件            | 上次修改文件的时间                                  | SharePoint 和 OneDrive 事件           |
-    |                   | 文件大小                     | 文件大小                                                           | SharePoint 和 OneDrive 事件           |
-    |                   | 文件所有者                    | 文件的所有者                                                          | SharePoint 和 OneDrive 事件           |
+    |                   | 网站所有者                    | 网站所有者的名称                                                     | SharePoint和OneDrive事件           |
+    |                   | 网站 URL                      | 网站或网站SharePoint OneDrive URL                                | SharePoint和OneDrive事件           |
+    |                   | 已创建文件                  | 文件创建时间                                                      | SharePoint和OneDrive事件           |
+    |                   | 上次修改文件            | 上次修改文件的时间                                  | SharePoint和OneDrive事件           |
+    |                   | 文件大小                     | 文件大小                                                           | SharePoint和OneDrive事件           |
+    |                   | 文件所有者                    | 文件的所有者                                                          | SharePoint和OneDrive事件           |
     |*策略详细信息*||
     |     | 匹配的 DLP 策略            | 匹配的 DLP 策略的名称                                    | 所有事件                               |
     |                   | 匹配的规则                  | 匹配的 DLP 策略中的 DLP 规则的名称                    | 所有事件                               |

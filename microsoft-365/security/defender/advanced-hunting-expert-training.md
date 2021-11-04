@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6a7e03dfaf76e7af5dc256d0fdbf904e785346a9
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1a2fd580a98fc7ac9db9d6592191eb4667ae757f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659240"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786694"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>获取高级搜寻方面的专家培训
 
@@ -44,16 +44,17 @@ ms.locfileid: "60659240"
 | 第 4 集：让我们搜寻！ 将 KQL 应用于事件跟踪 | 在此集中，你将了解跟踪某些攻击者活动。 我们使用对 Kusto 和高级搜寻的改进了解来跟踪攻击。 了解现场使用的实际技巧，包括网络安全的 APC 以及如何将它们应用于事件响应。 | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59：36)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt) 
 
 
-使用 *L33TSP3AK* 获取更多专家培训：Microsoft 365 Defender 中的高级搜寻，这是一个网络广播系列，供希望扩展其技术知识和实用技能以在 Microsoft 365 Defender 中使用高级搜寻执行安全调查的分析师。 
+通过 *L33TSP3AK* 获取更多专家培训：Microsoft 365 Defender 中的高级搜寻，这是一个网络广播系列，供希望扩展其技术知识和实用技能以在 Microsoft 365 Defender 中使用高级搜寻执行安全调查的分析师。 
 
 | Title | 说明 | Watch | 查询 | 
 |--|--|--|--|
 | 第 1 集  | 在此集中，你将了解运行高级搜寻查询的不同最佳做法。 涵盖的主题包括：如何优化查询、使用高级勒索软件搜寻、将 JSON 作为动态类型处理，以及如何使用外部数据运算符。 | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56：34)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
 | 第 2 集 | 在此剧集内，你将了解如何通过收件箱转发规则调查和响应可疑或异常登录位置和数据异常。 云安全 CxE 高级项目经理 Sebastien 一起分享了如何使用高级搜寻来调查包含Microsoft Cloud App Security事件。 | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57：07)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
+| 第 3 集 | 在此集中，我们将介绍对高级搜寻的最新改进、如何将外部数据源导入查询，以及如何使用分区将大型查询结果分割为较小的结果集以避免达到 API 限制。 | [YouTube](https://www.youtube.com/watch?v=vd5lgIJKmYs) (40：59)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/l33tspeak%2011%20Oct%202021%20-%20externaldata%20and%20query%20partitioning.csl)
 
 
 ## <a name="how-to-use-the-csl-file"></a>如何使用 CSL 文件
-在启动剧集之前，访问上[相应的文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Webcasts)GitHub将其内容复制到高级搜寻查询编辑器。 在观看剧集时，可以使用复制的内容关注演讲者并运行查询。 
+开始剧集之前，访问[上相应的文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Webcasts)GitHub将其内容复制到高级搜寻查询编辑器。 在观看剧集时，可以使用复制的内容关注演讲者并运行查询。 
 
 以下来自包含查询的文本文件的摘录显示了一组使用 标记为注释的全面指导 `//` 。
 
