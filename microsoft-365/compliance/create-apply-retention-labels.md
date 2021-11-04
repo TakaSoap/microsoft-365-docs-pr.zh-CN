@@ -13,16 +13,17 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: 介绍了如何创建和发布保留标签，以便能够在应用中应用它们，从而保留所需内容，并删除不需要内容。
-ms.openlocfilehash: f86692d07f7636f35ba700b9750510219a6ef380
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 8c8fac9d8cfa5ff0a8b2ad8d5c3e42f614a3932b
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432633"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753101"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>创建保留标签并将其应用到应用中
 
@@ -49,7 +50,7 @@ ms.locfileid: "60432633"
 
 组织的全局管理员拥有创建和编辑保留标签及其策略的完全权限。 如果你未以全局管理员的身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。
 
-在创建保留标签策略之前，请确定它是 **自适应** 还是 **静态**。 有关详细信息，请参阅 [保留](retention.md#adaptive-or-static-policy-scopes-for-retention)的自适应或静态策略范围。 如果决定使用自适应策略，则必须在创建保留标签策略之前创建一个或多个自适应作用域，然后在创建保留标签策略过程中选择它们。 有关说明，请参阅[自适应作用域的配置信息](retention-settings.md#configuration-information-for-adaptive-scopes)。
+在创建保留标签策略之前，请先确定其将为 **自适应** 还是 **静态** 策略。 有关详细信息，请参阅 [保留](retention.md#adaptive-or-static-policy-scopes-for-retention)的自适应或静态策略范围。 如果决定使用自适应策略，则必须在创建保留标签策略之前创建一个或多个自适应作用域，然后在创建保留标签策略期间进行选择。 有关说明，请参阅[自适应作用域的配置信息](retention-settings.md#configuration-information-for-adaptive-scopes)。
 
 ## <a name="how-to-create-and-publish-retention-labels"></a>如何创建和发布保留标签
 
@@ -59,7 +60,7 @@ ms.locfileid: "60432633"
 
 ### <a name="step-1-create-retention-labels"></a>第 1 步：创建保留标签
 
-1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>中，转到以下位置之一：
     
     - 如果你正在使用记录管理：
         - “**解决方案**” > “**记录管理**” > “**文件计划**”选项卡 > + “**创建标签**” > “**保留标签**”
@@ -67,7 +68,7 @@ ms.locfileid: "60432633"
     - 如果你没有使用记录管理：
        - “**解决方案**” > “**信息治理**” > “**标签**”选项卡 > +“**创建标签**”
     
-    无法立即在导航窗格中看到解决方案？ 首先选择“**全部显示**”。 
+    没有立即在导航窗格中看到解决方案? 首先选择“**全部显示**”。 
 
 2. 按照向导中的提示进行操作。
     
@@ -89,7 +90,7 @@ ms.locfileid: "60432633"
 
 发布保留标签，以便用户可以在 SharePoint 和 Outlook 等应用中应用它们。
 
-1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>中，转到以下位置之一：
     
     - 如果你正在使用记录管理：
         - “**解决方案**” > “**记录管理**”> >“**标签策略**”选项卡 >“**发布标签**”
@@ -101,13 +102,13 @@ ms.locfileid: "60432633"
 
 2. 使用链接选择要发布的保留标签，然后选择 **"下一步"**。
 
-3. 对于 **选择要创建页的保留策略的类型**，请选择 **自适应** 或 **静态**，具体取决于在开始说明之前从 [所做的选择](#before-you-begin)。 如果尚未创建自适应作用域，则可以选择 **自适应** 但由于没有任何自适应作用域可供选择，因此无法使用此选项完成向导。
+3. 对于 **选择要创建页的保留策略的类型**，请选择 **自适应** 或 **静态**，具体取决于在开始说明之前从 [所做的选择](#before-you-begin)。 如果尚未创建自适应作用域，则可以选择 **自适应**，但由于没有自适应作用域可供选择，因此将无法使用此选项完成向导。
 
 4. 具体取决于所选范围：
     
-    - 如果选择 **自适应**： 在 **选择自适应策略范围和位置** 页上，选择 **添加** 范围，然后选择已创建的一个或多个自适应作用域。 然后，选择一个或多个位置。 可以选择的位置取决于添加的[范围类型](retention-settings.md#configuration-information-for-adaptive-scopes)。 例如，如果仅添加了 **用户** 的作用域类型，则可以选择 **Exchange 电子邮件** ，但不能 **sharePoint 网站**。 
+    - 如果选择 **自适应**: 在 **选择自适应策略作用域和位置** 页面上，选择 **添加作用域**，然后选择一个或多个已创建的自适应作用域。 然后，选择一个或多个位置。 可以选择的位置取决于添加的[范围类型](retention-settings.md#configuration-information-for-adaptive-scopes)。 例如，如果仅添加了 **用户** 的作用域类型，则可以选择 **Exchange 电子邮件** ，但不能 **sharePoint 网站**。 
     
-    - 如果选择 **静态**： 在 **选择位置** 页上，打开或关闭任何位置。 对于每个位置，可将其保持为默认的“[将策略应用到整个位置](retention-settings.md#a-policy-that-applies-to-entire-locations)”，或者“[指定所包含的和所排除的](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)”。
+    - 如果选择 **静态**: 在 **选择位置** 页面上，打开或关闭任意位置。 对于每个位置，可以将其保留为默认值，以 [将策略应用于整个位置](retention-settings.md#a-policy-that-applies-to-entire-locations)，或 [指定包含和排除](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
     
     有关位置选择的信息，请参阅 [位置](retention-settings.md#locations)。
 
