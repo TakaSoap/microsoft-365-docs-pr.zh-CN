@@ -38,6 +38,8 @@
       href: apply-a-retention-label-to-a-model.md
     - name: 应用敏感度标签
       href: apply-a-sensitivity-label-to-a-model.md
+    - name: 在库中搜索元数据
+      href: metadata-search.md
     - name: 模型使用情况分析
       href: model-usage-analytics.md
     - name: 创建提取器时利用术语库分类
