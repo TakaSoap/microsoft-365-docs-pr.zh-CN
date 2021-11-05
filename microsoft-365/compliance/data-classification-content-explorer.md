@@ -14,16 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: ed0eb21f5c97c4028395b6d85a01e6855a46e028
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0332584988ab9a88ef7440f6e5fc71ef3c9cbd5d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168682"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747772"
 ---
 # <a name="get-started-with-content-explorer"></a>内容资源管理器入门
 
@@ -67,7 +68,7 @@ ms.locfileid: "60168682"
 > [!IMPORTANT]
 > 这些权限会替代本地分配给项目的权限，后者允许查看内容。 
 
-有两个角色已向内容资源管理器授予访问权限，并且授权其使用 [合规中心](https://compliance.microsoft.com/permissions)：
+有两种角色可以授予对内容浏览器的访问权限，并且是使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Microsoft 安全与合规中心</a> 授予的：
 
 - **内容资源管理器列表查看员**：此角色组的成员资格允许你在列表视图中查看每个项目及其位置。 已为此角色组预分配 `data classification list viewer` 角色。
 

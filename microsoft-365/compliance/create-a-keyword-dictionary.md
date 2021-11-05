@@ -17,13 +17,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: 了解在 Office 365 安全与合规中心中创建关键字字典的基本步骤。
-ms.openlocfilehash: f585009ee54c03b0417f5aa74fd0b7d2fa0d5e7e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b1749b51367bda90945e0d8e61e9674acc5077b6
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167326"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747718"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字字典
 
@@ -73,7 +74,7 @@ Remove-Item $rawFile
 
 词典可能有多个关键字来源，最常见的来源是服务或 PowerShell cmdlet 中导入的文件（如 .csv 或 .txt 列表）、你直接在 PowerShell cmdlet 中输入的列表或现有词典。创建关键字词典时，请遵循下面的相同核心步骤：
   
-1. 使用 **安全与合规中心**（[https://compliance.microsoft.com](https://compliance.microsoft.com)）或连接到 **安全性 &amp; 合规中心 PowerShell**。
+1. 使用 *<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 安全与合规中心</a> 或连接到 **安全 &amp; 合规中心 PowerShell**。
     
 2. **定义或从预期源加载关键字**。向导和 cmdlet 都接受以逗号分隔的关键字列表来创建自定义关键字字典，因此这一步骤将略有不同，具体取决于关键字的来源。加载后，在导入之前将对其进行编码并转换为字节数组。
     
@@ -83,7 +84,7 @@ Remove-Item $rawFile
 
 使用以下步骤创建和导入自定义字典关键字：
 
-1. 连接到合规中心（[https://compliance.microsoft.com](https://compliance.microsoft.com)）。
+1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>。
 
 2. 导航到 **“分类”>“敏感信息类型”**。
 

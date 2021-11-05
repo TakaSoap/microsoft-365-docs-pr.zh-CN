@@ -19,13 +19,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: 使用合规中心中的内容搜索电子数据展示工具，搜索各种 Microsoft 365 服务中的内容。
-ms.openlocfilehash: e3d8ee540ab403eb2e3ebeaf930d498599be530a
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: d1636885e03544a78432516e77bfabb8cd52575d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364683"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754897"
 ---
 # <a name="create-a-content-search"></a>创建内容搜索
 
@@ -45,7 +46,7 @@ ms.locfileid: "60364683"
 
 ## <a name="before-you-run-a-search"></a>运行搜索之前
 
-- 若要访问 Microsoft 365 合规中心的“内容搜索”工具页面（以运行搜索和预览并导出结果），管理员、合规专员或电子数据展示管理员必须是 Microsoft 365 合规中心的电子数据展示管理员角色组中的成员。有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
+- 如果要访问 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> 的内容搜索工具（以运行搜索和预览并导出结果），则管理员、合规部主管或电子数据展示管理员必须是 Microsoft 365 合规中心的电子数据展示管理员角色组中的成员。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
 
 - 在 Exchange 混合部署中，无法使用内容搜索工具来搜索本地邮箱。 只能使用该工具搜索基于云的邮箱。
 

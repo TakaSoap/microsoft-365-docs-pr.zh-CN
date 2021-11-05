@@ -16,15 +16,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: 准备及部署 Microsoft 合规性扩展。
-ms.openlocfilehash: e89edb32e3af5fc661a8f22870e8b7097faf82e2
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: 1ac08dc558806d47c382db7c3b4a58f43ff3c4f4
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264908"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754347"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft 合规性扩展入门
 
@@ -243,13 +244,13 @@ ms.locfileid: "60264908"
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>使用警报管理仪表板查看 Chrome DLP 警报
 
-1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com) 内打开“**数据丢失防护**”页面，然后选择“**警报**”。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> 中打开“**数据丢失防护**”页面，然后选择“**警报**”。
 
 2. 请参阅 [如何配置和查看 DLP 策略警报](dlp-configure-view-alerts-policies.md) 中的过程，以查看你的终结点 DLP 策略警报。
 
 ### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>在活动资源管理器中查看 Chrome DLP 数据
 
-1. 在 Microsoft 365 合规中心中打开域的“[数据分类页面](https://compliance.microsoft.com/dataclassification?viewid=overview)”，然后选择“**活动资源管理器**”。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> 中打开域的“[数据分类页](https://compliance.microsoft.com/dataclassification?viewid=overview)”，然后选择“**活动资源管理器**”。
 
 2. 请参考[活动资源管理器入门](data-classification-activity-explorer.md)中的程序，以访问和筛选终结点设备的所有数据。
 
