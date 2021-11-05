@@ -14,30 +14,30 @@ ms.collection:
 search.appverid:
 - MET150
 description: '了解如何使用 JAMF Microsoft 365预览版将 macOS 设备载入和Pro (合规性) '
-ms.openlocfilehash: c1fefa8263b2bee9b11156ae18c218520eeae5a8
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5335ceb47475a633e8f7ba000f8690ca3b9b8b6c
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701235"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792504"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>使用 JAMF Microsoft 365预览版将 macOS 设备载入Pro (macOS) 
 
-可以使用 JAMF Pro macOS 设备载入 Microsoft 365合规性解决方案，如终结点数据丢失防护。
+可以使用 JAMF Pro macOS 设备载入Microsoft 365合规性解决方案，如终结点数据丢失防护。
 
 > [!IMPORTANT]
-> 如果您没有将 Microsoft  Defender for Endpoint (MDE) 部署到 macOS 设备，请使用此过程
+> 如果你未将 Microsoft  Defender for Endpoint (MDE) 部署到 macOS 设备，请使用此过程
 
 ## <a name="get-registered"></a>注册
 
-若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅 注册[macOS Microsoft 365。](https://aka.ms/Ignite2021DLP)
+若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅 注册[macOS Microsoft 365。](https://aka.ms/EndpointDLPIgnite21-Previews)
 
 **适用于：**
 
 - [Microsoft 365DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
 - [内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 确保[macOS 设备已Azure AD连接](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
 - 确保通过 [JAMF 专业版管理 macOS 设备](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
@@ -71,7 +71,7 @@ ms.locfileid: "60701235"
 
 ### <a name="get-the-device-onboarding-package"></a>获取设备载入包
 
-1. 在 **"合规性中心**"**中**  >  **设置"设备载入"，** 然后选择 **"载入"。**
+1. 在 **合规性中心** 中 **，设置**  >  **设备载入"，** 然后选择 **"载入"。**
  
 1. 对于 **"选择操作系统以开始载入过程"选择** **macOS**
  
@@ -81,7 +81,7 @@ ms.locfileid: "60701235"
  
 1. 提取设备载入包的内容。 在 **JAMF** 文件夹中，你应该会看到 *DeviceComplainceOnboarding.plist* 文件。
 
-### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>为载入Pro创建 JAMF 和配置文件
+### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>为载入Pro创建 JAMF 模式配置文件
 
 1. 在 JAMF 中创建新的配置文件Pro。 请参阅[JAMF Pro管理员指南](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)。 使用这些值：
     - 名称：`MDATP onboarding for macOS`
@@ -115,7 +115,7 @@ ms.locfileid: "60701235"
     - 分发方法： `install automatically`
     - 级别： `computer level`
 
-1. 在"**应用程序&自定义设置"** 选项卡上，选择"外部应用程序 **"，** 选择"**添加**"，然后选择首选项域的 **"自定义架构**"。 使用此值：
+1. 在"**应用程序&自定义** 设置"选项卡上，选择"外部应用程序 **"，** 选择"**添加**"，然后选择首选项域的 **"自定义架构**"。 使用此值：
     - 首选项域： `com.microsoft.wdav`
 
 1. 选择 **"添加架构****Upload** 以上载 *schema.json* 文件。
@@ -194,17 +194,17 @@ ms.locfileid: "60701235"
 
 1.  使用从 Github 下载的 **netfilter.mobileconfig**  文件。
 
-2.  Upload使用[Jamf](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)部署自定义配置文件中所述，将其Pro。
+2.  Upload JAMF，如[使用 Jamf 部署自定义配置文件Pro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
 ### <a name="grant-accessibility-access-to-dlp"></a>授予对 DLP 的辅助功能访问权限
 
 1. 使用从 Github 下载的 **accessibility.mobileconfig** 文件。
 
-2.  Upload使用[Jamf](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)部署自定义配置文件中所述，将其Pro。
+2.  Upload JAMF，如[使用 Jamf 部署自定义配置文件Pro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
 ### <a name="get-the-installation-package"></a>获取安装包
 
-1. 在 **合规性中心** 中 **，设置**  >  **设备载入"，** 然后选择 **"载入"。**
+1. 在 **"合规性中心**"**中**  >  **设置"设备载入"，** 然后选择 **"载入"。**
  
 1. 对于 **"选择操作系统以开始载入过程"选择** **macOS**
  
@@ -219,11 +219,11 @@ ms.locfileid: "60701235"
 
 1. 打开 JAMF Pro仪表板。
 
-1. 选择计算机，然后单击顶部的齿轮，然后选择计算机 **管理**。
+1. 选择计算机并单击顶部的齿轮，然后选择"计算机 **管理"。**
 
 1. 在 **"程序包"** 中，选择 **"+新建"。** 输入以下详细信息：
     - 显示名称：保留为空，因为它将在你选择 .pkg 文件时重置。
-    - 类别：默认 (无) 
+    - 类别：无 (默认) 
     - Filname：选择文件，在这种情况下为 `wdav.pkg` 文件。
 
 1. 选择"打开"。 设置：
@@ -277,7 +277,7 @@ ms.locfileid: "60701235"
     - 网络筛选器
     - 系统扩展配置文件
 
-## <a name="offboard-macos-devices-using-jamf-pro"></a>使用 JAMF 设备的载出 macOS Pro
+## <a name="offboard-macos-devices-using-jamf-pro"></a>使用 JAMF 和 JAMF 的载出 macOS Pro
 
 1. 如果不使用 MDE (，请卸载应用程序) 
     1. 请参阅 JAMF Pro文档 - 包部署 - [JAMF Pro管理员指南](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro 管理员指南

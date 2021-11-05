@@ -1,5 +1,5 @@
 ---
-title: '使用适用于 Endpoint 客户的 Microsoft Defender Pro 预览版将 macOS 设备载入和 (合规性) '
+title: 使用适用于 Microsoft Defender for Endpoint 客户的 JAMF Pro 将 macOS 设备载入和卸载到合规性解决方案（预览版）
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,24 +13,24 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: '了解如何使用适用于 Endpoint 客户的 JAMF Pro 将 macOS 设备载入和载出到 Microsoft 365 合规性解决方案中， (预览版) '
-ms.openlocfilehash: dd5bedb473de6fa608d1e28ad7a81c3a6d7d5b30
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: '了解如何使用适用于 Endpoint 客户的 JAMF Pro 将 macOS 设备载入和载出到 Microsoft 365 合规性解决方案中， (预览) '
+ms.openlocfilehash: 31ff2803a1180d7a43b462f3a78cc52c894f23a6
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648185"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792312"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>使用适用于 Endpoint 客户的 Microsoft Defender Pro 预览版将 macOS 设备载入和 (合规性) 
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>使用适用于 Microsoft Defender for Endpoint 客户的 JAMF Pro 将 macOS 设备载入和卸载到合规性解决方案（预览版）
 
-可以使用 JAMF Pro macOS 设备载入Microsoft 365合规性解决方案。
+可以使用 JAMF Pro macOS 设备载入到 Microsoft 365 合规性解决方案。
 
 > [!IMPORTANT]
 > 如果你 ***将*** Microsoft Defender for Endpoint (MDE) macOS 设备，请使用此过程
 
 ## <a name="get-registered"></a>注册
 
-若要获取此功能的访问权限，你必须向 Microsoft 注册租户。 请参阅 注册[macOS Microsoft 365。](https://aka.ms/Ignite2021DLP)
+若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅 注册[macOS Microsoft 365。](https://aka.ms/EndpointDLPIgnite21-Previews)
 
 **适用于：**
 
@@ -91,7 +91,7 @@ ms.locfileid: "60648185"
 
 1. 使用之前下载的 accessibility.mobileconfig 文件。
 
-1. Upload使用 Jamf 部署自定义配置文件中所述[，Pro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
+1. Upload JAMF，如[使用 Jamf 部署自定义配置文件Pro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
 ### <a name="check-the-macos-device"></a>检查 macOS 设备 
 
@@ -111,7 +111,7 @@ ms.locfileid: "60648185"
     - 通知
     - 系统扩展配置文件
 
-## <a name="offboard-macos-devices-using-jamf-pro"></a>使用 JAMF 设备的载 macOS Pro
+## <a name="offboard-macos-devices-using-jamf-pro"></a>使用 JAMF 和 JAMF 的载出 macOS Pro
 
 > [!IMPORTANT]
 > "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留 6 个月。

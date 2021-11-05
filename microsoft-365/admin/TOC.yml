@@ -312,17 +312,17 @@
               href: usage-analytics/usage-analytics-errors.md
         - name: Microsoft 365 支持与 ServiceNow 配置指南集成
           items:
-            - name: Microsoft 365 支持与 ServiceNow 配置概述集成
+            - name: 配置概述
               href: manage/servicenow-overview.md
-            - name: 配置支持与 ServiceNow 基本身份验证集成
+            - name: 配置基本身份验证
               href: manage/servicenow-basic-authentication.md
-            - name: 配置 Microsoft 365 支持与 AAD OAuth 令牌集成
+            - name: 使用 AAD OAuth 令牌进行配置
               href: manage/servicenow-aad-oauth-token.md
-            - name: Microsoft 365 仅支持服务运行状况事件和建议解决方案的集成
+            - name: 仅支持服务运行状况事件和建议解决方案的集成
               href: manage/servicenow-service-health-incidents-solutions-only.md
-            - name: 测试 ServiceNow 配置
+            - name: 测试配置
               href: manage/servicenow-testing-the-configuration.md
-            - name: 疑难解答 Microsoft 365 支持与 ServiceNow 集成
+            - name: 疑难解答
               href: manage/servicenow-troubleshooting.md
     - name: 管理订阅和计费
       href: ../commerce/index.yml

@@ -13,22 +13,22 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: '了解如何使用 Microsoft 365 预览版为 MDE 客户Microsoft Intune macOS (和) '
-ms.openlocfilehash: 94664f0d57f1b702484e27c62f9e80339e04e105
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: '了解如何使用适用于 MDE Microsoft 365预览版中的 MDE Microsoft Intune将 macOS (载入和) '
+ms.openlocfilehash: c1ed019f6191d930da8c6b1d0674625e9c27d1b6
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701234"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792480"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>使用 Intune for Microsoft Defender for Endpoint 客户将 macOS 设备载入和 (预览版) 
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>使用适用于 Microsoft Defender for Endpoint 客户的 Intune 将 macOS 设备载入和卸载到合规性解决方案（预览版）
 
 > [!IMPORTANT]
 > 如果你 ***将*** Microsoft Defender for Endpoint (MDE) macOS 设备，请使用此过程
 
 ## <a name="get-registered"></a>注册
 
-若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅 注册[macOS Microsoft 365。](https://aka.ms/Ignite2021DLP)
+若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅 注册[macOS Microsoft 365。](https://aka.ms/EndpointDLPIgnite21-Previews)
 
 **适用于：**
 
@@ -37,9 +37,9 @@ ms.locfileid: "60701234"
 - [内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-- 确保你的[macOS 设备已载入 Intune，](/mem/intune/fundamentals/deployment-guide-platform-macos)并注册到 公司门户[应用中](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
+- 确保你的[macOS 设备已载入 Intune，](/mem/intune/fundamentals/deployment-guide-platform-macos)并注册了公司门户[应用](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
 - 确保你有权访问Microsoft Endpoint Manager[中心](https://endpoint.microsoft.com/#home)
 - 这支持 macOS 版本 Catalina 10.15 及更高版本
 - 在 macOS 设备上安装 v95+ Edge 浏览器 

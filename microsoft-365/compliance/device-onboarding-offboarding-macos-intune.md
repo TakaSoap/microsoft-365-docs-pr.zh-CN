@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: '了解如何使用 Microsoft 365 预览版将 macOS 设备载入和Microsoft Intune (合规性) '
-ms.openlocfilehash: fb3e89b303c8c17de3eb6826c25d2b54be364b7e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7e5692197a05f16326d3fd8b43e37a19186b9926
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717425"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792276"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>使用 In (tune Microsoft 365预览版将 macOS 设备载入和) 
 
@@ -30,14 +30,14 @@ ms.locfileid: "60717425"
 
 ## <a name="get-registered"></a>注册
 
-若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅 注册[macOS Microsoft 365。](https://aka.ms/Ignite2021DLP)
+若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅 注册[macOS Microsoft 365。](https://aka.ms/EndpointDLPIgnite21-Previews)
 
 **适用于：**
 
 - [Microsoft 365DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
 - [内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 确保你的[macOS 设备已载入 Intune，](/mem/intune/fundamentals/deployment-guide-platform-macos)并且已注册公司门户[应用](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
 - 确保你有权访问Microsoft Endpoint Manager[中心](https://endpoint.microsoft.com/#home)。
@@ -252,7 +252,7 @@ ms.locfileid: "60717425"
 
 ### <a name="deploy-the-microsoft-dlp-installation-package"></a>部署 Microsoft DLP 安装包
 
-1. 按照如何将 [macOS](/mem/intune/apps/lob-apps-macos)业务线 (LOB) 应用添加到 Microsoft Intune 中的过程将 *wdav.pkg* 文件转换为正确的格式，并通过 Intune 进行部署。
+1. 按照如何将 [macOS](/mem/intune/apps/lob-apps-macos)业务线 (LOB) 应用添加到 Microsoft Intune 中的过程将 *wdav.pkg* 文件转换为正确的格式并通过 Intune 进行部署。
 
 ## <a name="offboard-macos-devices-using-intune"></a>使用 Intune 的载出 macOS 设备
 

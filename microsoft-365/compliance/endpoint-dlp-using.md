@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: eb42d43db8edf0bad02e66a5ee4e2853b8d42878
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 898acf4e74f6aadb79bf5dfb7e3fc751d6286ecb
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756021"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792384"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -60,7 +60,7 @@ ms.locfileid: "60756021"
 
 ### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>终结点 DLP Windows 10 和 macOS 设置
 
-若要获取 macOS 支持，必须向 Microsoft 注册租户。 请参阅[注册](https://aka.ms/Ignite2021DLP)。
+若要获取 macOS 支持，必须向 Microsoft 注册租户。 请参阅[注册](https://aka.ms/EndpointDLPIgnite21-Previews)。
 
 |Setting |Windows 10、1809 及更高版本  |macOS Catalina 10.15 或更高版本（预览）  |Notes  |
 |---------|---------|---------|---------|

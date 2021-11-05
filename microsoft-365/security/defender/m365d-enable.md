@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 84cb795ec2ffb8e8a2c2ce0d8d476c841c4438ca
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c55a91987ffc4823bda61b8b13f38af710181edd
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705253"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792372"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>打开 Microsoft 365 Defender
 
@@ -35,19 +35,31 @@ ms.locfileid: "60705253"
 **适用于：**
 - Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-365-defender.md)集成 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的关键功能，统一事件响应流程。 这种统一体验添加了可在企业门户中访问Microsoft 365 Defender功能。
+[Microsoft 365 Defender](microsoft-365-defender.md) Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 集成关键功能，统一事件响应流程。 这种统一体验添加了可在企业门户中访问Microsoft 365 Defender功能。
 
-Microsoft 365 Defender具有所需权限的合格客户访问门户时，系统Microsoft 365 Defender启用。 阅读本文，了解各种先决条件以及如何Microsoft 365 Defender配置。
+Microsoft 365 Defender具有所需权限的合格客户访问门户时，Microsoft 365 Defender启用。 阅读本文，了解各种先决条件以及如何Microsoft 365 Defender配置。
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>检查许可证资格和所需权限
 
-安全产品Microsoft 365通常授权你使用Microsoft 365 Defender许可费用。 我们建议获取一个Microsoft 365 E5 E5 安全、A5 或 A5 安全许可证，或提供访问所有受支持的服务的有效许可证组合。
+安全产品Microsoft 365通常授权你使用Microsoft 365 Defender许可费用。 我们建议获取一个Microsoft 365 E5、E5 安全、A5 或 A5 安全许可证，或提供访问所有受支持的服务的有效许可证组合。
 
 有关详细许可信息，[读取许可要求](prerequisites.md#licensing-requirements)。
 
 ### <a name="check-your-role"></a>检查角色
 
-您必须是 **全局管理员** 或安全管理员Azure Active Directory才能启用Microsoft 365 Defender。 [查看角色Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
+你必须是以下角色之一，以启用Microsoft 365 Defender：
+    
+- 全局管理员
+- 安全管理员
+- 安全操作员
+- 全局读取者
+- 安全读取者
+- 合规管理员
+- 合规数据管理员
+-  应用程序管理员
+- 云 应用程序管理员
+
+[在角色视图中Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="supported-services"></a>支持的服务
 
@@ -65,7 +77,7 @@ Microsoft 365 Defender将在 Microsoft Defender for Endpoint 使用的相同位�
 选择 **"需要帮助？"，Microsoft 365 Defender** 联系 Microsoft 支持部门，以Microsoft 365 Defender不同的数据中心位置进行预配。
 
 > [!NOTE]
-> 过去，Microsoft Defender for Endpoint 在通过 Azure Defender (欧盟) 数据中心自动预配。 Microsoft 365 Defender将在同一欧盟数据中心为过去以此方式预配 Defender for Endpoint 的客户自动预配。
+> 过去，Microsoft Defender for Endpoint 在通过 Azure Defender (欧盟) 数据中心自动预配。 Microsoft 365 Defender将在同一欧盟数据中心为过去以此方式预配了 Defender for Endpoint 的客户自动预配。
 
 ### <a name="confirm-that-the-service-is-on"></a>确认服务已开启
 
@@ -85,9 +97,9 @@ Microsoft 365 Defender将在 Microsoft Defender for Endpoint 使用的相同位�
 
 ## <a name="get-assistance"></a>获取帮助
 
-若要获取有关打开"打开"的最常见问题的解答，Microsoft 365 Defender[常见问题解答](m365d-enable-faq.md)。
+若要获取有关打开"打开"的最常见问题的解答，Microsoft 365 Defender常见问题[解答](m365d-enable-faq.md)。
 
-Microsoft 支持人员可帮助在租户上设置或取消设置服务和相关资源。 要获得帮助，请选择"需要帮助 **？"，Microsoft 365 Defender** 门户。 联系支持人员时，请提及Microsoft 365 Defender。
+Microsoft 支持人员可帮助在租户上设置或取消设置服务和相关资源。 为获得帮助，请选择"需要帮助 **？"，Microsoft 365 Defender** 门户。 联系支持人员时，Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相关主题
 

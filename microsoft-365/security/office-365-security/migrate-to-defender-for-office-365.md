@@ -16,36 +16,38 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: 了解从第三方保护服务或设备（如 Google Postini、Barracuda 垃圾邮件和病毒防火墙）或 Cisco IronPort 迁移到 Microsoft Defender Office 365保护。
+description: 了解从第三方保护服务或设备（如 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort）迁移到 Microsoft Defender Office 365保护。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80823f77fb76c44d5031d7d856151fa84491ee2d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 6c48de77ff62e21263f4475f0ce5e0bd5f36d221
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779023"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792492"
 ---
 # <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>从第三方保护服务或设备迁移到 Microsoft Defender for Office 365
 
 **适用对象**
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
-本指南提供从第三方保护服务或设备迁移到 Microsoft Defender for Office 365。 本指南假定以下事实：
+如果你已有位于 Microsoft 365 前面的第三方保护服务或设备，可以使用本指南将保护迁移到 Microsoft Defender for Office 365，从而获得合并管理体验的好处，使用已支付) 的产品和具有集成安全保护的成熟产品，可能会降低 (的成本。 有关详细信息，请参阅[Microsoft Defender for Office](https://www.microsoft.com/security/business/threat-protection/office-365-defender)。
+
+本指南提供了迁移的具体可操作步骤，并假定以下事实：
 
 - 你已Microsoft 365邮箱，但当前正在使用第三方服务或设备进行电子邮件保护。 来自 Internet 的邮件在发送到 Microsoft 365 组织之前流经保护服务，Microsoft 365保护尽可能低 (永远不会完全关闭;例如，恶意软件防护始终在) 。
 
   ![邮件通过第三方保护服务或设备从 Internet 流动，然后再Microsoft 365。](../../media/mdo-migration-before.png)
 
-- 你超出了 Defender for Office 365 的保护调查和考虑阶段。 如果你需要评估 Defender Office 365以确定它是否适合你的组织，我们建议你考虑评估[模式](office-365-evaluation.md)。
+- 你超出了 Defender for Office 365 保护调查和考虑阶段。 如果你需要评估 Defender Office 365以确定它是否适合你的组织，我们建议你考虑评估[模式](office-365-evaluation.md)。
 
 - 你已购买 Defender for Office 365许可证。
 
-- 你需要停用现有的第三方保护服务，这意味着你最终需要将电子邮件域的 MX 记录指向Microsoft 365。 完成后，来自 Internet 的邮件将直接排入 Microsoft 365并且将受 Exchange Online Protection (EOP) 和 Defender for Office 365。
+- 你需要停用现有的第三方保护服务，这意味着你最终需要将电子邮件域的 MX 记录指向Microsoft 365。 完成后，来自 Internet 的邮件将直接流入 Microsoft 365并且将受 Exchange Online Protection (EOP) Defender for Office 365。
 
   ![现有的保护服务或设备已取消，因此邮件会从 Internet 流向 Microsoft 365，并受到来自 Microsoft Defender for Office 365 的完整保护。](../../media/mdo-migration-after.png)
 
-删除现有保护服务以支持 Defender for Office 365是一个大步骤，不应轻松执行，也不应太忙地做出更改。 此迁移指南中的指南将帮助你以有序方式转换保护，尽可能减少用户中断。
+为了支持 Defender for Office 365，删除现有保护服务是一个大步骤，不应轻松执行，也不应太忙地做出更改。 此迁移指南中的指南将帮助你以有序方式转换保护，尽可能减少用户中断。
 
 下图演示了非常高级的迁移步骤。 本文稍后将介绍迁移过程一节 [列出了](#the-migration-process) 实际步骤。
 
@@ -55,7 +57,7 @@ ms.locfileid: "60779023"
 
 在 IT 行业，意外通常比较严重。 只需将 MX 记录翻转为指向Microsoft 365，无需事先经过周密的测试，将导致许多意外。 例如：
 
-- 你或你的前置任务可能花费大量时间和精力来自定义现有保护服务，以实现最佳邮件传递 (换句话说，阻止需要阻止的项，以及允许需要允许) 。 几乎可以保证，并非当前保护服务中的每个自定义项都需要在 Defender 中用于Office 365。 此外，Defender for Office 365还可能会引入新问题 (允许或阻止) 当前保护服务中未发生或不需要的问题。
+- 您或您的前置任务可能花费大量时间和精力来自定义现有保护服务，以实现最佳的邮件传递 (，换句话说，阻止需要阻止的项，以及允许需要允许) 。 在 Defender for Office 365 中，几乎可以保证当前保护服务中的每个自定义项Office 365。 此外，Defender for Office 365还可能会引入新问题 (允许或阻止) 当前保护服务中未发生或不需要的问题。
 - 技术支持和安全人员需要知道在 Defender for Office 365 中Office 365。 例如，如果用户抱怨缺少消息，你的技术支持是否知道在哪里或如何查找？ 他们可能会验证是否熟悉现有保护服务中的工具，但 Defender for Office 365？
 
 相反，如果按照此迁移指南中的步骤操作，则迁移会获得以下切实的好处：

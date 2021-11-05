@@ -126,8 +126,16 @@
           href: install-app-guard.md
     - name: 迁移
       items:
-        - name: 从 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort 切换到 EOP
-          href: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+        - name: 从第三方保护服务或设备迁移到 Defender for Office 365
+          items:
+            - name: 从第三方保护服务或设备迁移到 Defender for Office 365
+              href: migrate-to-defender-for-office-365.md
+            - name: 迁移阶段 1：准备
+              href: migrate-to-defender-for-office-365-prepare.md
+            - name: 迁移阶段 2：安装程序
+              href: migrate-to-defender-for-office-365-setup.md
+            - name: 迁移阶段 3：载入
+              href: migrate-to-defender-for-office-365-onboard.md
     - name: 防御
       items:
         - name: 配置租户以提高安全性

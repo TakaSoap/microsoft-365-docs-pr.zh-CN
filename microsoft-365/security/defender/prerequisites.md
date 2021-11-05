@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 452129ac5bb6116f23e9a2791ff7147cd74adee6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d136ae298abdf876a9be6f58634940ec71c07e47
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181003"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792336"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender先决条件
 
@@ -35,10 +35,10 @@ ms.locfileid: "60181003"
 **适用于：**
 - Microsoft 365 Defender
 
-了解预配和使用应用程序的许可和其他[Microsoft 365 Defender。](microsoft-365-defender.md)
+了解预配和使用应用程序的许可[和其他Microsoft 365 Defender。](microsoft-365-defender.md)
 
 ## <a name="licensing-requirements"></a>许可要求
-通过这些许可证中的任一许可证，Microsoft 365 Defender门户中的Microsoft 365 Defender功能，而无需额外付费：
+通过上述任一许可证，Microsoft 365 Defender访问 Microsoft 365 Defender 中的新功能，而无需额外付费：
 
 - Microsoft 365 E5 或 A5
 - Microsoft 365 E3加载项Microsoft 365 E5 安全性加载项
@@ -60,23 +60,22 @@ ms.locfileid: "60181003"
 转到[Microsoft 365 管理中心 (admin.microsoft.com) ](https://admin.microsoft.com/)查看现有许可证。 在管理中心，转到“计费” > “许可证”。
 
 >[!NOTE]
-> 你需要分配有[Azure AD](/azure/active-directory/roles/permissions-reference)中的帐单管理员或全局读者角色，才能看到许可证信息。  如果遇到访问问题，请联系全局管理员。
+> 你需要分配有帐单管理员或全局读者角色Azure AD才能[](/azure/active-directory/roles/permissions-reference)查看许可证信息。 如果遇到访问问题，请联系全局管理员。
 
 ## <a name="required-permissions"></a>所需权限
-您必须是 **全局管理员** 或安全管理员Azure Active Directory才能启用Microsoft 365 Defender。 有关使用管理角色Microsoft 365 Defender以及如何控制数据访问的信息，请阅读有关管理对 Microsoft 365 Defender[的访问](m365d-permissions.md)。
+您必须是 **全局管理员** 或安全 **管理员Azure Active Directory才能** 启用Microsoft 365 Defender。 有关使用管理角色Microsoft 365 Defender以及如何控制数据访问的信息，请阅读有关管理对 Microsoft 365 Defender[的访问](m365d-permissions.md)。
 
 ## <a name="browser-requirements"></a>浏览器要求
-使用 Microsoft 365 Defender、Microsoft 365 Defender 11 Microsoft Edge、Internet Explorer HTML 5 兼容的 Web 浏览器访问 Microsoft 365 Defender 门户中的网站。
+使用Microsoft 365 Defender 11 Microsoft 365 Defender HTML 5 Microsoft Edge、Internet Explorer 11 或任何符合 HTML 5 的 Web 浏览器访问 Microsoft 365 Defender 门户中的网站。
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>是否向美国GCC、GCC High 以及其他美国政府机构提供
 目前，Microsoft 365 Defender *不适用于：*
-- 美国政府社区云 (GCC) 
 - 美国政府社区云高 (GCC高) 
 - 美国国防部
 - 所有拥有商业许可证的美国政府机构
 
 
-目前，以下Office 365数据中心位置的客户无法Microsoft 365 Defender Microsoft Defender for Office 365集成统一部署功能：
+目前，以下Office 365数据中心位置的客户Microsoft 365 Defender Microsoft Defender for Office 365集成：
 
 - 巴西 
 - 德国 

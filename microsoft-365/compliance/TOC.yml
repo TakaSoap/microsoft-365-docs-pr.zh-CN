@@ -880,6 +880,8 @@
               href: supported-filetypes-ediscovery20.md
             - name: 文档元数据字段
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: 设置历史版本
+              href: advanced-ediscovery-historical-versions.md
             - name: 设置律师-客户特权检测
               href: attorney-privilege-detection.md
             - name: 分配电子数据展示权限
