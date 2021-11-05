@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 6f147de6412db71a17e8bb4a8b79968160d0fe3e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a66ef59df6f05ec0e03fa5b9388f2fd3e0fd9a58
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701933"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792564"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -189,10 +189,10 @@ ms.locfileid: "60701933"
   
 | 如果保留标签是… | 可以将标签策略应用于… |
 |:-----|:-----|
-|发布给管理员和最终用户  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 组  <br/> |
-|根据敏感信息类型或可训练的分类器自动应用  <br/> |Exchange、SharePoint、OneDrive  <br/> |
-|根据关键字或查询自动应用  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 组  <br/> |
-|自动应用于云附件  <br/> |SharePoint、OneDrive、Microsoft 365 组  <br/> |
+|发布给管理员和最终用户  |Exchange、SharePoint、OneDrive、Microsoft 365 组  |
+|根据敏感信息类型或可训练的分类器自动应用  |Exchange、SharePoint、OneDrive  |
+|根据关键字或查询自动应用  |Exchange、SharePoint、OneDrive、Microsoft 365 组  |
+|自动应用于云附件  |SharePoint、OneDrive、Microsoft 365 组  |
 
 Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签。 若要保留并从这些位置中删除内容，请改用保留策略。
 
@@ -437,15 +437,35 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 
 ## <a name="releasing-a-policy-for-retention"></a>发布保留策略
 
-如果你的保留策略没有保留锁，你可以随时删除你的策略，这将有效地关闭之前应用的保留设置。 你也可以保留该策略，但将位置状态更改为关闭，或禁用该策略。 如果策略配置为包含 SharePoint 的特定网站或 OneDrive 帐户，则还可以编辑该策略以删除其中一个或多个条目，以发布这些网站或帐户的策略。
- 
-执行上述任一操作时，任何受策略保留限制的 SharePoint 或 OneDrive 内容将继续保留 30 天，以防止意外丢失数据。 在此 30 天宽限期内，将仍然保留已删除的文件（文件继续添加到保留库），但定期清理保留库的计时器作业将为这些作业暂停，以便必要时可还原这些文件。
+提供保留策略时没有保留锁定，你可以随时删除策略，这会有效地关闭保留策略的保留设置，并且保留标签无法再从保留标签策略中应用。 任何以前应用的保留标签都保留在其配置的保留设置中，对于这些标签，仍可根据标记项的时间更新保留期。
 
-此 30 天宽限期的例外情况是当更新策略以排除 SharePoint 的一个或多个网站或 OneDrive 帐户时；在这种情况下，计时器作业会删除保留库中这些位置的文件，而不会延迟 30 天。
+还可以保留策略，但将位置状态更改为关闭，或禁用策略。 另一种选择是重新配置策略，使其不再包含特定用户、网站、组等。 
 
-有关保留库详细信息，请参阅 [如何为 SharePoint 和 OneDrive 应用设置](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)。
+特定位置的其他信息：
 
-由于宽限期内的行为，如果在30天内重新启用该策略或将位置状态更改为开启，策略将在这段时间内恢复，而不会有任何永久性数据丢失。
+- **SharePoint 网站和 OneDrive 账户：**
+    
+    为 SharePoint 网站和 OneDrive 帐户发布保留策略时，任何受策略保留限制的内容将继续保留 30 天，以防止意外丢失数据。 在此 30 天宽限期内，将仍然保留已删除的文件（文件继续添加到保留库），但定期清理保留库的计时器作业将为这些作业暂停，以便必要时可还原这些文件。
+    
+    此 30 天宽限期的例外情况是当更新策略以排除 SharePoint 的一个或多个网站或 OneDrive 帐户时；在这种情况下，计时器作业会删除保留库中这些位置的文件，而不会延迟 30 天。
+    
+    有关保留库详细信息，请参阅 [如何为 SharePoint 和 OneDrive 应用设置](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)。
+    
+    由于宽限期内的行为，如果在30天内重新启用该策略或将位置状态更改为开启，策略将在这段时间内恢复，而不会有任何永久性数据丢失。
+
+- **Exchange 电子邮件和Microsoft 365 组**
+    
+    为发布策略时 [非活动](inactive-mailboxes-in-office-365.md) 的邮箱发布保留策略时：
+    
+    - 如果保留策略显式应用于邮箱，则保留设置将不再适用。 在未应用保留设置后，非活动邮箱将按通常方式符合自动删除条件。
+        
+        显式保留策略需要自适应策略作用域或包含配置的静态策略作用域，该配置在应用策略时指定活动邮箱，稍后变为非活动状态
+    
+    - 如果保留策略隐式应用于邮箱，并且配置的保留操作是保留，则保留策略将继续应用，并且非活动邮箱永远不会有资格自动删除。 当保留操作因保留期过期而不再适用时，Exchange管理员现在可以[手动删除非活动邮箱](delete-an-inactive-mailbox.md)
+        
+        隐式保留策略需要具有 **所有收件人** （对于 Exchange 电子邮件）或 **所有组** （对于Microsoft 365 组）配置的静态策略范围。
+    
+    有关应用了保留策略的非活动邮箱的详细信息，请参阅 [非活动邮箱和Microsoft 365保留策略](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention-policies)。
 
 ## <a name="auditing-retention-configuration-and-actions"></a>审核保留配置和操作
 
@@ -473,7 +493,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 - 当 SharePoint，OneDrive 或 Exchange 中标记的项标记为记录或法规记录，并将其永久删除时：
     - 从 **文件和页面活动**，选择 **已删除标记为记录的文件**
 
-- 当处置审阅者对已达到其保留期的项执行操作时：
+- 当处置审阅者对已达到其保留期结束的项执行操作时：
     -  从 **处置评审活动**，选择 **已批准处置**，**扩展保留期**，**已标记项目** 或 **添加审阅者**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>用于保留策略和保留标签的 PowerShell cmdlet
