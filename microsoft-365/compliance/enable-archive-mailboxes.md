@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: 了解如何使用合规性中心来启用存档邮箱，以支持组织的邮件保留、电子数据展示和法定保留要求。
-ms.openlocfilehash: c62d1d1478b62ac3ba66ccc0fc7fb9d5fc6101b3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0519853f526254173c086ff353c6e5f5cf0208a2
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207327"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786370"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>在合规性中心中启用存档邮箱
 
@@ -40,7 +42,7 @@ Microsoft 365 中的存档（又称为 *就地存档*）为用户提供额外的
 
 ## <a name="enable-an-archive-mailbox"></a>启用存档邮箱
 
-1. 转到 <https://compliance.microsoft.com> 并登录。
+1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>并登录。
 
 2. 在 Microsoft 365 合规中心的左侧窗格中，单击“**信息治理**”，然后单击“**存档**”选项卡。
 
@@ -72,7 +74,7 @@ Microsoft 365 中的存档（又称为 *就地存档*）为用户提供额外的
 
 若要禁用存档邮箱：
 
-1. 转到 <https://compliance.microsoft.com> 并登录。
+1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>并登录。
 
 2. 在 Microsoft 365 合规中心的左侧窗格中，单击“**信息治理**”，然后单击“**存档**”选项卡。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 1ad7ba8af90a099ccc7d1072397c77ed2de387c0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f04044d1c0b951dc62e3d515f951faf8625e1b44
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647733"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785638"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -418,6 +418,8 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 ## <a name="tips-to-increase-labeling-reach"></a>提高标记覆盖范围的提示
 
 尽管自动标记是对组织拥有的 Office 文件进行分类、标记和保护的最有效方法之一，但请检查是否可以使用任何其他方法对其进行补充，以提高标记覆盖范围：
+
+- 使用 SharePoint Syntex，可以 [将敏感度标签应用于文档理解模型](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)，以便自动标记 SharePoint 库中标识的文档。
 
 - 使用 [Azure 信息保护统一标记客户端](/azure/information-protection/rms-client/aip-clientv2)时：
 

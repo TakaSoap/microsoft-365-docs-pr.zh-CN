@@ -122,6 +122,8 @@
               href: ../defender-identity/entity-tags.md
             - name: 管理安全威胁
               href: ../defender-identity/manage-security-alerts.md
+            - name: 配置检测排除项
+              href: ../defender-identity/exclusions.md
             - name: 电子邮件和 syslog 通知
               href: ../defender-identity/notifications.md
     - name: 调查并响应威胁

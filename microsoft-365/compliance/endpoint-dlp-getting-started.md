@@ -18,13 +18,14 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
+ms.custom: admindeeplinkCOMPLIANCE
 description: 设置 Microsoft 365 终结点数据丢失防护，以监视文件活动，并将针对这些文件的保护措施实施到终结点。
-ms.openlocfilehash: 22f7e2eb1476543eb1aed9d772333f3ae7843477
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 9a706350be231fa5af794cb2774e3d88fb89dc1b
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703721"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786718"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>终结点数据丢失防护入门
 
@@ -126,7 +127,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 
 在此部署方案中，你将载入尚未载入的设备，并且只想监视和保护敏感项目，防止 Windows 10 设备上发生意外共享。
 
-1. 打开“[Microsoft 合规中心](https://compliance.microsoft.com)”。
+1. 打开 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>。
 
 2. 打开合规中心设置页面，然后选择“**载入设备**”。
 
@@ -162,7 +163,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 
 在此方案中，已经部署了 Microsoft Defender for Endpoint，并且在其中报告了终结点。 所有这些终结点都将显示在托管设备列表中。 可通过使用[载入设备程序](endpoint-dlp-getting-started.md#onboarding-devices)将新设备继续载入到终结点 DLP 中，以扩展覆盖范围。
 
-1. 打开“[Microsoft 合规中心](https://compliance.microsoft.com)”。
+1. 打开 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>。
 
 2. 打开合规中心设置页面，然后选择“**启用设备监视**”。
 
@@ -189,7 +190,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 
 ### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>在 DLP 警报管理仪表板中查看“终点 DLP 警报”
 
-1. 打开 Microsoft 365 安全合规中心的“数据丢失防护”页，然后选择“警报”。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> 中打开"数据丢失防护"页，然后选择"警报"。
 
 2. 请参阅 [如何配置和查看 DLP 策略的警报](dlp-configure-view-alerts-policies.md) 中的过程，以查看你的终结点 DLP 策略警报。
 

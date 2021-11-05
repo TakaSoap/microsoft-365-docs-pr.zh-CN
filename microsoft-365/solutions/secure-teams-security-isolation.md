@@ -14,14 +14,15 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkCOMPLIANCE
 recommendations: false
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
-ms.openlocfilehash: dd35fb91fbc0fb43f19f95cb417a3e78bd9d2975
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 293ac9a1a28757dacba39d30e619ac41be786e04
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756901"
+ms.locfileid: "60785878"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 
