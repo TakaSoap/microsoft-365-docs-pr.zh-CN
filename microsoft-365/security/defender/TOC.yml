@@ -392,10 +392,16 @@
                       href: api-update-incidents.md
                     - name: 获取事件
                       href: api-get-incident.md
-        - name: 预览功能
-          href: preview.md
-        - name: 解决问题
-          href: ./troubleshoot.md
+            - name: 提取 Microsoft 365 Defender 事件
+              href: fetch-incidents.md
+            - name: SIEM 集成
+              items:
+                - name: 将 SIEM 工具与 Microsoft 365 Defender 集成
+                  href: configure-siem-defender.md
+                - name: 解决集成 SIEM 工具的问题
+                  href: ../defender-endpoint/troubleshoot-siem.md
+            - name: 了解威胁智能概念
+              href: ../defender-endpoint/threat-indicator-concepts.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint
