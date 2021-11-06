@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: 5b1ad39feeebdbf44a83e09e1daa25794ebc98fa
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 64d4239eeda905d9b0d924804bed6795b7ca5673
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60698425"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804889"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
@@ -55,13 +55,13 @@ ms.locfileid: "60698425"
 
 由于这些更改，如果你的组织具有将标签元数据读或写到旧位置的任何应用、服务、脚本或工具，则不要启用此设置。如果这样做，某些示例会产生影响：
 
-- 标记的文档将出现在用户未标记
+- 标记为用户的文档将显示为未标记。
 
-- 向用户显示过期标签的文档
+- 文档向用户显示过期标签。
 
-- 如果其他用户在不支持新标签元数据的 Office 桌面应用中打开标签文档，则共同创作和自动保存将不起作用
+- 如果另一个用户在不支持新标签元数据的 Office 桌面应用中打开了已标记的文档，则共同创作和自动保存将不适用于该文档。 请注意，如果外部用户和受邀来宾打开了文件，则组织外部的用户也可能出现此情况。
 
-- 将标签标识为 Office 附件中的自定义 [Exchange Online 邮件流规则](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) 无法加密电子邮件和附件，或错误地加密它们
+- [将标签标识为 Office 附件中的自定义属性的 Exchange Online 邮件流规则](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization)无法加密电子邮件和附件，或无法正确加密它们。
 
 查看下一部分，查看支持此设置以及标签元数据的更改的应用和服务列表。
 
