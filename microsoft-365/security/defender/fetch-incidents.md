@@ -1,6 +1,6 @@
 ---
-title: 从 MSSP 客户租户提取警报
-description: 了解如何从客户租户获取警报
+title: 提取Microsoft 365 Defender事件
+description: 了解如何从Microsoft 365 Defender提取事件
 keywords: 托管安全服务提供程序， mssp， 配置， 集成
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,16 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 5d5f0e7ec66deabcc037d529676fadabd9999729
+ms.openlocfilehash: 1ea39bfce5303360165a56d6361908d1014d370f
 ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804937"
+ms.locfileid: "60804995"
 ---
-# <a name="fetch-alerts-from-mssp-customer-tenant"></a>从 MSSP 客户租户提取警报
+# <a name="fetch-microsoft-365-defender-incidents"></a>提取Microsoft 365 Defender事件 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,9 +41,9 @@ ms.locfileid: "60804937"
 - 使用 SIEM 方法
 - 使用 API
 
-## <a name="fetch-alerts-into-your-siem"></a>将警报提取到 SIEM 中
+## <a name="fetch-incidents-into-your-siem"></a>将事件提取到 SIEM 中
 
-若要将警报提取到 SIEM 系统中，需要执行以下步骤：
+若要将事件提取到 SIEM 系统中，需要执行以下步骤：
 
 - 步骤 1：创建第三方应用程序
 - 步骤 2：从客户的租户获取访问和刷新令牌
@@ -64,7 +64,7 @@ ms.locfileid: "60804937"
     - 名称 \<Tenant_name\> ：SIEM MSSP 连接器 (租户Tenant_name替换为租户显示名称) 
 
     - 支持的帐户类型：仅此组织目录中的帐户
-    - 重定向 URI：选择"Web"，然后 `https://<domain_name>/SiemMsspConnector` ("<domain_name>租户名称") 
+    - 重定向 URI：选择 `https://<domain_name>/SiemMsspConnector` "Web"， ("<domain_name>"租户名称") 
 
 5. 单击“**注册**”。 应用程序显示在你拥有的应用程序列表中。
 
@@ -154,7 +154,7 @@ ms.locfileid: "60804937"
 
 7. 你将被要求提供你的凭据和同意。 忽略页面重定向。
 
-8. 在 PowerShell 窗口中，您将收到访问令牌和刷新令牌。 保存刷新令牌以配置 SIEM 连接器。
+8. 在 PowerShell 窗口中，你将收到访问令牌和刷新令牌。 保存刷新令牌以配置 SIEM 连接器。
 
 ### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>步骤 3：允许应用程序Microsoft 365 Defender
 
@@ -172,17 +172,11 @@ ms.locfileid: "60804937"
 
 5. 单击"**授权应用程序"。**
 
-现在，你可以下载 SIEM 的相关配置文件并连接到 Microsoft 365 Defender API。 有关详细信息，请参阅将 [警报拉取到 SIEM 工具](configure-siem.md)。
+现在，你可以下载 SIEM 的相关配置文件并连接到 Microsoft 365 Defender API。 有关详细信息，请参阅将 [警报拉取到 SIEM 工具](../defender-endpoint/configure-siem.md)。
 
 - 在 ArcSight 配置文件/Splunk 身份验证属性文件中，通过设置密码值手动编写应用程序密钥。
 - 使用上一步中的脚本获取刷新令牌， (获取刷新令牌，而不是在门户中获取刷新) 。
 
 ## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>使用 API 从 MSSP 客户的租户提取警报
 
-有关如何使用 REST API 获取警报的信息，请参阅 [使用 REST API 拉取警报](pull-alerts-using-rest-api.md)。
-
-## <a name="see-also"></a>另请参阅
-
-- [授予 MSSP 对门户的访问权限](grant-mssp-access.md)
-- [访问 MSSP 客户门户](access-mssp-portal.md)
-- [配置警报通知](configure-mssp-notifications.md)
+有关如何使用 REST API 获取警报的信息，请参阅 [使用 REST API 拉取警报](../defender-endpoint/pull-alerts-using-rest-api.md)。

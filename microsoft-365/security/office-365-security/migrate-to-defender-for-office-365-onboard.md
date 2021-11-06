@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: 完成从第三方保护服务或设备迁移到 Microsoft Defender 以Office 365的步骤。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a218aa1e86bd696079bb2c77b630bcf870bc0c25
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a40ee22ee843d250c90a8b03526ab61fe3ad56f6
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779057"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804637"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>迁移到 Microsoft Defender for Office 365 - 第 3 阶段：载入
 
@@ -37,7 +37,7 @@ ms.locfileid: "60779057"
 |---|---|---|
 |||*你在这里！*|
 
-欢迎使用 **阶段 3：载入** 迁移到 **[Microsoft Defender for Office 365！](migrate-to-defender-for-office-365.md#the-migration-process)** 此迁移阶段包括以下步骤：
+欢迎使用 **阶段 3：载入** 迁移到 **[Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md#the-migration-process)**！ 此迁移阶段包括以下步骤：
 
 1. [开始载入安全Teams](#step-1-begin-onboarding-security-teams)
 2. [ (可选) 允许试点用户通过现有保护服务进行筛选](#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)
@@ -54,7 +54,7 @@ ms.locfileid: "60779057"
 
 - 了解新工具并将其集成到现有流中。 例如：
   - 管理隔离邮件非常重要。 有关说明，请参阅 [以管理员角色管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。
-  - 邮件跟踪允许你查看邮件进入或离开邮件时Microsoft 365。 有关详细信息，请参阅 Exchange Online 中新式 Exchange[管理中心中](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)Exchange Online。
+  - 邮件跟踪允许你查看邮件进入或离开邮件时Microsoft 365。 有关详细信息，请参阅 Exchange Online 中新式 Exchange[管理中心中Exchange Online。](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)
 - 确定可能允许进入组织的风险。
 - 调整和 [自定义组织](../../compliance/alert-policies.md) 流程的警报。
 - 管理事件队列并修正潜在风险。
@@ -72,22 +72,22 @@ ms.locfileid: "60779057"
 - [高级搜寻 API](/microsoft-365/security/defender/api-advanced-hunting)
 - [事件 API](/microsoft-365/security/defender/api-incident)
 
-如果你的组织没有安全响应团队或现有流程流，可以使用这一次熟悉 Defender for Office 365 中的基本搜寻和响应功能。 有关详细信息，请参阅威胁 [调查和响应](office-365-ti.md)。
+如果你的组织没有安全响应团队或现有流程流，可以使用这一次熟悉 Defender for Office 365 中的基本搜寻和Office 365。 有关详细信息，请参阅威胁 [调查和响应](office-365-ti.md)。
 
 ### <a name="rbac-roles"></a>RBAC 角色
 
 Defender for Office 365 中的权限基于基于角色的访问控制 (RBAC) ，在 Microsoft 365 Defender 门户中进行了[解释](permissions-microsoft-365-security-center.md)。 请记住以下几点：
 
-- Azure AD角色授予对 Microsoft 365 中所有工作负荷Microsoft 365。 例如，如果在 Azure 门户中将用户添加到安全管理员，则他们具有任何地方的安全管理员权限。
+- Azure AD角色授予对 **Microsoft 365** 中所有工作负荷Microsoft 365。 例如，如果在 Azure 门户中将用户添加到安全管理员，则他们具有任何地方的安全管理员权限。
 - 电子邮件&门户中的Microsoft 365 Defender协作角色授予对 Microsoft 365 Defender 门户、Microsoft 365 合规中心 和旧安全&中心的权限。 例如，如果您在 Microsoft 365 Defender 门户中将用户添加到安全管理员，则他们只能在 Microsoft 365 Defender 门户、Microsoft 365 合规中心和安全与合规中心&安全管理员访问权限。
-- Microsoft 365 Defender 门户中的许多功能都基于 Exchange Online PowerShell cmd (let，因此需要相应角色（从技术上说，角色组) 在 Exchange Online (中的角色组）中具有角色组成员身份，以访问相应的Exchange OnlinePowerShell cmdlet) 。
+- Microsoft 365 Defender 门户中的许多功能都基于 Exchange Online PowerShell cmdlet，因此需要相应角色中的角色组成员身份 (从技术上说，角色组) （特别是 Exchange Online (中的角色组）需要角色组成员身份，以访问相应的Exchange OnlinePowerShell cmdlet) 。
 - Microsoft 365 Defender 门户中的电子邮件&协作角色与 Azure AD 角色不等效，并且对于安全操作（例如预览角色和搜索和清除角色 (）非常重要) 。
 
 通常，只有一部分安全人员需要其他权限才能直接从用户邮箱下载邮件。 这需要安全读者默认情况下没有的其他权限。
 
-## <a name="step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service"></a>步骤 2： (可选) 试点用户免受现有保护服务的筛选
+## <a name="step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service"></a>步骤 2： (可选) 使试点用户免受现有保护服务的筛选
 
-尽管此步骤不是必需的，但应考虑将试点用户配置为绕过现有保护服务的筛选。 此操作允许 Defender for **Office 365处理试点** 用户的所有筛选和保护职责。 如果不将试点用户从现有保护服务中排除，则 Defender for Office 365 仅对其他服务中的未接邮件进行有效 (筛选已筛选邮件) 。
+尽管此步骤不是必需的，但应考虑将试点用户配置为绕过现有保护服务的筛选。 此操作允许 Defender for **Office 365处理试点** 用户的所有筛选和保护职责。 如果不将试点用户从现有保护服务中排除，则 Defender for Office 365 仅对其他服务中的未接邮件进行有效操作 (筛选已筛选邮件) 。
 
 > [!NOTE]
 > 如果你的当前保护服务提供链接换行，但你想要试用链接功能，则保险箱此步骤。 不支持链接的双换行。
@@ -110,7 +110,7 @@ Defender for Office 365 中的权限基于基于角色的访问控制 (RBAC) ，
 
 - 用户模拟保护： **隔离标准邮件和** 严格邮件。
 - 域模拟保护：隔离标准邮件 **和** 严格邮件。
-- 邮箱智能保护 **：将邮件移动到收件人的"标准"垃圾邮件** 文件夹; **隔离邮件以使用** Strict。
+- 邮箱智能保护 **：将邮件移动到收件人的"标准** "垃圾邮件文件夹; **隔离邮件以使用** Strict。
 
 监视模拟保护结果而不对邮件操作的时间越长，必须标识允许或阻止可能需要的数据就越长。 请考虑在打开每个足以允许观察和调整的保护之间使用延迟。
 
@@ -153,7 +153,7 @@ Defender for Office 365 中的权限基于基于角色的访问控制 (RBAC) ，
 
 ## <a name="step-5-use-data-from-user-submissions-to-measure-and-adjust"></a>步骤 5：使用来自用户提交的数据进行度量和调整
 
-当试点用户报告误报和漏报时，邮件将显示在"提交"页上的Microsoft 365 Defender[门户中](admin-submission.md)。 你可以将错误标识的邮件报告给 Microsoft 进行分析，并根据需要使用该信息调整试点策略中的设置和例外。
+当试点用户报告误报和漏报时，邮件将显示在 Microsoft 365 Defender[门户的提交页面上](admin-submission.md)。 你可以将错误标识的邮件报告给 Microsoft 进行分析，并根据需要使用该信息调整试点策略中的设置和例外。
 
 使用以下功能监视和访问 Defender for Office 365：
 
@@ -168,7 +168,7 @@ Defender for Office 365 中的权限基于基于角色的访问控制 (RBAC) ，
 
 ## <a name="step-6-optional-add-more-users-to-your-pilot-and-iterate"></a>步骤 6： (可选) 向试点添加更多用户并进行访问
 
-找到并修复问题后，你可以向试点组添加更多用户 (并相应地使这些新的试点用户免于根据情况由现有保护服务) 。 现在执行的测试越少，你稍后需要处理的用户问题就越少。 这种"瀑布"方法允许针对组织的较大部分进行调整，并让你的安全团队有时间来适应新的工具和流程。
+找到并修复问题后，可以将更多用户添加到试点组 (并相应地使这些新的试点用户免于根据情况由现有保护服务) 。 现在执行的测试越少，你稍后需要处理的用户问题就越少。 这种"瀑布"方法允许针对组织的较大部分进行调整，并让你的安全团队有时间来适应新的工具和流程。
 
 - Microsoft 365组织策略允许高可信度网络钓鱼邮件时生成警报。 若要标识这些邮件，可以使用以下选项：
   - 威胁防护状态 [报告中的覆盖](view-email-security-reports.md#threat-protection-status-report)。
@@ -181,18 +181,18 @@ Defender for Office 365 中的权限基于基于角色的访问控制 (RBAC) ，
 
 ## <a name="step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule"></a>步骤 7：Microsoft 365保护所有用户并关闭 SCL=-1 邮件流规则
 
-准备好切换 MX 记录以指向目标记录时，请执行Microsoft 365。
+准备好切换 MX 记录以指向目标记录时，执行Microsoft 365。
 
 1. 将试点策略扩展到整个组织。 从根本上说，有不同方法可以这样做：
    - 使用 [预设安全策略](preset-security-policies.md) ，将用户划分到标准保护配置文件和严格保护配置文件 (确保所有用户都涵盖在) 。 预设安全策略在你创建的任何自定义策略或任何默认策略之前应用。 你可以关闭单个试点策略，而无需删除它们。
 
      预设安全策略的缺点是，创建安全策略后，你无法更改很多重要设置。
 
-   - 更改在试点期间创建和调整的策略范围，以包括所有 (，例如，所有域中的所有收件人) 。 请记住，如果同一类型的 (的多个策略（例如，防钓鱼策略) 按组成员身份或电子邮件域) 分别应用于同一用户 (，则只会应用优先级最高的策略 (最低优先级数字) 的设置，并且该类型的策略的处理将停止。
+   - 更改在试点期间创建和调整的策略的作用域，以包括所有用户 (例如，所有域中的所有收件人) 。 请记住，如果同一类型的 (的多个策略（例如，防钓鱼策略) 按组成员身份或电子邮件域) 分别应用于同一用户 (，则只会应用优先级最高的策略 (最低优先级数字) 的设置，并且该类型的策略的处理将停止。
 
 2. 关闭 SCL=-1 邮件流规则 (在不删除邮件流规则的情况下将其) 。
 
-3. 确认以前的更改已生效，并且现在Office 365为所有用户正确启用 Defender for Office 365。 此时，Defender for Office 365 的所有保护功能现在都允许作用于所有收件人的邮件，但该邮件已经过现有保护服务扫描。
+3. 确认以前的更改已生效，并且现在Office 365 Defender for Office 365是否已启用。 此时，Defender for Office 365 的所有保护功能现在都允许作用于所有收件人的邮件，但该邮件已经过现有保护服务扫描。
 
 可以在此阶段暂停，进行更大规模的数据记录和调整。
 
@@ -223,10 +223,10 @@ Defender for Office 365 中的权限基于基于角色的访问控制 (RBAC) ，
 
 ## <a name="next-steps"></a>后续步骤
 
-恭喜！ 你已完成到[Microsoft Defender 的迁移，Office 365！](migrate-to-defender-for-office-365.md#the-migration-process) 由于你遵循了此迁移指南中的步骤，邮件直接传递到邮件Microsoft 365应该更加顺畅。
+恭喜！ 你已完成到[Microsoft Defender 的迁移，Office 365！](migrate-to-defender-for-office-365.md#the-migration-process) 由于你遵循了此迁移指南中的步骤，邮件直接传递到邮件邮箱的Microsoft 365应该更加顺畅。
 
 现在，你开始正常操作和维护 Defender for Office 365。 监视和观察与试点期间所遇到问题类似的问题，但范围更大。 欺骗 [智能见解](learn-about-spoof-intelligence.md) 和 [模拟见解](impersonation-insight.md) 将最有用，但请考虑定期进行以下活动：
 
 - 查看用户提交，尤其是 [用户报告的网络钓鱼邮件](/microsoft-365/security/office-365-security/automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)。
 - 查看威胁防护状态 [报告中的覆盖](view-email-security-reports.md#threat-protection-status-report)。
-- 使用 [高级搜寻](/microsoft-365/security/defender/advanced-hunting-example.md) 查询查找调整机会和有风险的消息。
+- 使用 [高级搜寻](/microsoft-365/security/defender/advanced-hunting-example) 查询查找调整机会和有风险的消息。

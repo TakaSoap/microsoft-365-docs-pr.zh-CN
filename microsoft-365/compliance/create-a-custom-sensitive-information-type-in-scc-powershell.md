@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: c0e7efb9770c870210265b951a74012fb21e1b2e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d626e805c0e680dc64236066c962ce40229fd3bd
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203239"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804973"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "60203239"
 有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 
 > [!NOTE]
-> 如果使用与号字符 (&) 自定义敏感信息类型中关键字的一部分，请注意存在一个已知问题。 您应该在字符周围添加一个附加术语，并添加空格以确保正确标识字符，例如 L & P _而不是_ L&P。
+> 如果使用与号 (&) 自定义敏感信息类型中的关键字的一部分，请注意存在一个已知问题。 您应该添加一个附加术语，该字符周围有空格，以确保正确标识该字符，例如 L & P _而不是_ L&P。
 
 ## <a name="sample-xml-of-a-rule-package"></a>规则包 XML 示例
 
@@ -422,7 +422,7 @@ Microsoft 365两个通用验证程序
 
 ### <a name="date-validator"></a>日期验证程序
 
-本示例为日期的正则表达式部分定义日期验证程序。
+本示例中，为日期的正则表达式部分定义日期验证程序。
 
 ```xml
 <Validators id="date_validator_1"> <Validator type="DateSimple"> <Param name="Pattern">DDMMYYYY</Param> <!—supported patterns DDMMYYYY, MMDDYYYY, YYYYDDMM, YYYYMMDD, DDMMYYYY, DDMMYY, MMDDYY, YYDDMM, YYMMDD --> </Validator> </Validators>
@@ -514,7 +514,7 @@ Microsoft 365两个通用验证程序
 
 - 每个自定义敏感信息类型最多可以包含 2048 个关键字。
 
-- 单个租户中关键字字典的最大大小为压缩的 1 MB。 创建自定义敏感信息类型时，请尽情地根据需要多次引用同一词典。 请先在敏感信息类型中创建自定义关键字列表，然后如果关键字列表中有超过 2048 个关键字或某个关键字长度超过 50 个字符时，请使用关键字词典。
+- 为了符合 AD 架构限制，单个租户中关键字词典的最大大小为 480KB。 创建自定义敏感信息类型时，请尽情地根据需要多次引用同一词典。 请先在敏感信息类型中创建自定义关键字列表，然后如果关键字列表中有超过 2048 个关键字或某个关键字长度超过 50 个字符时，请使用关键字词典。
 
 - 租户中最多允许 50 种基于关键字字典的敏感信息类型。
 

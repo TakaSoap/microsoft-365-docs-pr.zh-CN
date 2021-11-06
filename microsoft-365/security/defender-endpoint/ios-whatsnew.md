@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: e6352992d0aeed9df7e64f331a4936ae4b29c223
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d29ad4a6d4031200bfb9f58db4ac9bcec7bab31
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162610"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804866"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -33,9 +33,18 @@ ms.locfileid: "60162610"
 
 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
+## <a name="threat-and-vulnerability-management"></a>威胁和漏洞管理
+
+2021 年 11 月 2 日，我们宣布在 Android 和 iOS 上公开预览威胁和漏洞管理。 有关详细信息，请参阅此处 [的 techcommunity 文章](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691)。
+
+## <a name="1123010101"></a>1.1.23010101
+
+- Bug 修复和性能改进 
+  - 此版本进行了性能优化。 使用此版本测试电池性能，并告诉我们您的反馈。
+
 ## <a name="1120240103"></a>1.1.20240103
 - 设备运行状况卡 - 设备运行状况卡向最终用户通知任何挂起的软件更新。
-- 可用性增强功能 - 最终用户现在可以从 MSDefender 应用本身禁用 Defender for Endpoint VPN。 在此更新之前，最终用户必须仅从 设置禁用 VPN。
+- 可用性增强功能 - 最终用户现在可以从 MSDefender 应用本身禁用 Defender for Endpoint VPN。 在此更新之前，最终用户只能从应用或应用设置 VPN。
 - Bug 修复。
 
 ## <a name="1120020101"></a>1.1.20020101
