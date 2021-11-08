@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: 设置 Microsoft 365 终结点数据丢失防护，以监视文件活动，并将针对这些文件的保护措施实施到终结点。
-ms.openlocfilehash: 9a706350be231fa5af794cb2774e3d88fb89dc1b
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 1ab4eb4ebd1dbba220ca4fea496b1b9c5ea82f43
+ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786718"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60825571"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>终结点数据丢失防护入门
 
 Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据丢失防护 (DLP) 功能套件的一部分，可用于发现和保护 Microsoft 365 服务中的敏感项目。 有关 Microsoft 所有 DLP 产品/服务的更多信息，请参阅[数据丢失防护概述](dlp-learn-about-dlp.md)。 若要了解有关终结点 DLP 的详细信息，请参阅[了解终结点数据丢失防护](endpoint-dlp-learn-about.md)
 
-借助 Microsoft Endpoint DLP，你可以监视运行 Catalina 10.15 及更高版本的 Windows 10 设备和 macOS 设备 *（预览版）*。 设备载入后，DLP 将检测何时使用和共享敏感项目。 这为你提供了所需的可见性和控制力，以确保正确使用和保护它们，并帮助防止可能危害它们的危险行为。
+借助 Microsoft Endpoint DLP，可以监视运行 Catalina 10.15 及更高版本的 Windows 10、Windows 11 和 macOS 设备 *(预览版)*。 设备载入后，DLP 将检测何时使用和共享敏感项目。 这为你提供了所需的可见性和控制力，以确保正确使用和保护它们，并帮助防止可能危害它们的危险行为。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -78,18 +78,18 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 - 安全管理员
 - 合规性数据管理员
 
-### <a name="prepare-your-windows-10-endpoints"></a>准备 Windows 10 终结点
+### <a name="prepare-your-windows-1011-endpoints"></a>准备 Windows 10/11 终结点
 
-确保你计划部署终结点 DLP 的 Windows 10 设备满足这些要求。
+确保计划部署终结点 DLP 的 Windows 设备满足这些要求。
 
-1. 必须运行 Windows 10 x64 内部版本 1809 或更高版本。
+1. 必须运行 Windows 10 x64 内部版本 1809、Windows 11 或更高版本。
 
 1. 反恶意软件客户端的版本为 4.18.2009.7 或更高版本。 若要查看当前版本，请打开“Windows 安全中心”应用，选择“设置”图标，然后选择“关于”。 “反恶意软件客户端版本”下列出了版本号。 通过安装 Windows 更新 KB4052623，更新到最新的反恶意软件客户端版本。
 
    > [!NOTE]
    > 无需激活 Windows 安全组件，可运行独立于 Windows 安全中心状态的终结点 DLP，但必须启用[实时保护和行为监视器](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)）。
 
-1. 已安装以下 Windows 更新。
+1. 以下是安装在 Windows 10 设备上的更新
 
    > [!NOTE]
    > 这些更新不是将设备加入终结点 DLP 的先决条件，但它们包含对重要问题的修复，因此必须在使用该产品之前完成安装。
@@ -125,19 +125,16 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 
 ### <a name="onboarding-devices"></a>载入设备
 
-在此部署方案中，你将载入尚未载入的设备，并且只想监视和保护敏感项目，防止 Windows 10 设备上发生意外共享。
+在此部署方案中，将载入尚未载入的设备并且仅想监视和保护敏感项目，防止 Windows 10 或 Windows 11 设备上发生意外共享。
 
 1. 打开 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>。
 
-2. 打开合规中心设置页面，然后选择“**载入设备**”。
-
-   > [!div class="mx-imgBorder"]
-   > ![启用设备管理。](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. 选择 **设置** > **设备登录**。
 
    > [!NOTE]
    > 设备载入通常需要大约 60 秒才能启用，请先等待 30 分钟，然后再与 Microsoft 支持人员接洽。
 
-3. 选择“**设备管理**”，以打开“**设备**”列表。 在载入设备之前，此列表将为空。
+3. 选择 **设备** 以打开 **设备** 列表。 在载入设备之前，此列表将为空。
 
 4. 选择“**载入**”以开始载入流程。
 
@@ -146,12 +143,12 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
    > [!div class="mx-imgBorder"]
    > ![部署方法。](../media/endpoint-dlp-getting-started-3-deployment-method.png)
 
-6. 按照[适用于 Windows 10 计算机的载入工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
+6. 按照 [适用于 Windows 计算机的载入工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) 中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
 
-    - 使用组策略载入 Windows 10 计算机
+    - 使用组策略载入 Windows 计算机
     - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
-    - 使用移动设备管理工具载入 Windows 10 计算机
-    - 使用本地脚本载入 Windows 10 计算机
+    - 使用移动设备管理工具载入 Windows 计算机
+    - 使用本地脚本载入 Windows 计算机
     - 在单一会话场景中载入非持久性虚拟桌面基础结构 (VDI) 计算机。
 
 完成操作并启用终结点后，它应该在设备列表中可见，并且还应开始向活动资源管理器报告审核活动日志。
@@ -176,11 +173,11 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 
 5. 从“**部署方法**”列表中选择要部署到这些额外设备的方式，然后 **下载程序包**。
 
-6. 按照[适用于 Windows 10 计算机的载入工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
-    - 使用组策略载入 Windows 10 计算机
+6. 按照 [适用于 Windows 计算机的载入工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) 中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
+    - 使用组策略载入 Windows 计算机
     - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
-    - 使用移动设备管理工具载入 Windows 10 计算机
-    - 使用本地脚本载入 Windows 10 计算机
+    - 使用移动设备管理工具载入 Windows 计算机
+    - 使用本地脚本载入 Windows 计算机
     - 载入非持久性虚拟桌面基础结构 (VDI) 计算机。
 
 完成操作并载入终结点后，它应该在“**设备**”表下可见，并且还应开始向 **活动资源管理器** 报告审核日志。
@@ -217,7 +214,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Windows 10 设备的装载工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Windows 设备的装载工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [已建立 Azure AD 联接的设备](/azure/active-directory/devices/concept-azure-ad-join)
 - [下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

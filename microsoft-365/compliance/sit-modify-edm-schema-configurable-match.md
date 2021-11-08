@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何修改 edm 架构以使用可配置匹配项。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a7d401c89ccff96615c4b367341542bf0ab5c697
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 40f7ef0f538fd79c0e8ff44de32a4bdd72254f7a
+ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364695"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60825547"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>修改精确数据匹配架构，以使用可配置匹配项
 
@@ -99,8 +99,7 @@ ms.locfileid: "60364695"
     - A-Z
     - a-z
     - \"
-    - \,
-    - |
+    - \,    
 
 6. 使用[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
 
