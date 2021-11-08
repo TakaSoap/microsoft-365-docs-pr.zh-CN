@@ -483,6 +483,7 @@
 
 
 ## 参考
+### [了解威胁智能概念](threat-indicator-concepts.md)
 ### [配置与其他 Microsoft 解决方案的集成]()
 #### [配置条件访问](configure-conditional-access.md)
 #### [配置 Microsoft Cloud App Security 集成](microsoft-cloud-app-security-config.md)
@@ -496,7 +497,7 @@
 ###### [Hello World](api-hello-world.md)
 ###### [ 通过应用上下文获得访问权限](exposed-apis-create-app-webapp.md)
 ###### [通过户上下文获得访问权限](exposed-apis-create-app-nativeapp.md)
-###### [获取合作伙伴应用程序访问权限](exposed-apis-create-app-partners.md)
+
 
 
 ##### [Microsoft Defender for Endpoint API 架构]()
@@ -645,13 +646,9 @@
 
 
 #### [SIEM 集成]()
-##### [了解威胁智能概念](threat-indicator-concepts.md)
-##### [了解提取检测的不同方法](configure-siem.md)
-##### [启用 SIEM 集成](enable-siem-integration.md)
-##### [配置微型焦点弧度以提取检测](configure-arcsight.md)
+##### [使用 Microsoft Defender for Endpoint 创建 SIEM 工具](configure-siem.md)
 ##### [Microsoft Defender for Endpoint 检测域](api-portal-mapping.md)
 ##### [使用 SIEM REST API 提取检测](pull-alerts-using-rest-api.md)
-##### [从客户租户获取警报](fetch-alerts-mssp.md)
 ##### [SIEM 工具集成问题疑难解答](troubleshoot-siem.md)
 
 #### [合作伙伴和 API]()
@@ -666,19 +663,24 @@
 ###### [使用设备组](machine-groups.md)
 ###### [创建和管理设备标签](machine-tags.md)
 
-#### [托管安全服务提供商 （MSSP） 集成]()
-##### [配置托管的安全服务提供商集成](configure-mssp-support.md)
-##### [受支持的安全服务提供商](mssp-list.md)
-##### [授予 MSSP 对门户的访问权限](grant-mssp-access.md)
-##### [访问 MSSP 客户门户](access-mssp-portal.md)
-##### [配置警报通知](configure-mssp-notifications.md)
-##### [获取合作伙伴应用程序访问权限](exposed-apis-create-app-partners.md)
 
+
+
+
+
+
+### [托管安全服务提供商 （MSSP） 集成]()
+#### [配置托管的安全服务提供商集成](configure-mssp-support.md)
+#### [受支持的安全服务提供商](mssp-list.md)
+#### [授予 MSSP 对门户的访问权限](grant-mssp-access.md)
+#### [访问 MSSP 客户门户](access-mssp-portal.md)
+#### [配置警报通知](configure-mssp-notifications.md)
+#### [获取合作伙伴应用程序访问权限](exposed-apis-create-app-partners.md)
+#### [从客户租户获取警报](fetch-alerts-mssp.md)
+#### [托管安全服务提供商商机](mssp-support.md)
 ### [合作伙伴集成方案]()
 #### [技术合作伙伴商机](partner-integration.md)
-#### [托管安全服务提供商商机](mssp-support.md)
 #### [成为 Microsoft Defender for Endpoint 合作伙伴](get-started-partner-integration.md)
-
 ### [集成]()
 #### [Microsoft Defender for Endpoint 集成](threat-protection-integration.md)
 #### [通过条件访问保护用户、数据和设备](conditional-access.md)
