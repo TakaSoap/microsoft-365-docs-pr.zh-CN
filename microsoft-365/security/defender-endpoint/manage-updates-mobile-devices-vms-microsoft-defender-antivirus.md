@@ -2,7 +2,6 @@
 title: 定义移动设备更新方法Microsoft Defender 防病毒
 description: 管理如何使用移动设备（如笔记本电脑）更新Microsoft Defender 防病毒保护更新。
 keywords: 更新， 保护， 计划更新， 电池， 移动设备， 笔记本电脑， 笔记本， 选择加入， Microsoft 更新， wsus， 替代
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5e95167e5493e55e375dc5827531a6f22b139023
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3d39f2de9d1dcfed8b81e2c4aba2350796005daa
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178331"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883637"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>管理移动设备和虚拟机 （VM） 的更新
 
@@ -46,9 +45,9 @@ ms.locfileid: "60178331"
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>选择在没有 WSUS 连接的情况下在移动计算机上加入 Microsoft 更新
 
-当运行 Microsoft Defender 防病毒 的移动设备未连接到企业网络或没有 WSUS 连接时，可以使用 Microsoft 更新使安全智能保持最新。
+当运行 Microsoft Defender 防病毒 未连接到企业网络或没有 WSUS 连接时，可以使用 Microsoft 更新使这些移动设备上的安全智能保持最新。
 
-这意味着，保护更新可以通过 Microsoft 更新 (设备) 即使已设置 WSUS 覆盖 Microsoft 更新。
+这意味着，即使将 WSUS 设置为覆盖 Microsoft 更新， (Microsoft 更新) 保护更新也可以传递到设备。
 
 可以通过以下方法之一选择在移动设备上使用 Microsoft 更新：
 
@@ -64,7 +63,7 @@ ms.locfileid: "60178331"
 
 3. 选择 **"策略****"，然后选择"管理模板"。**
 
-4. 展开树以Windows **签名Microsoft Defender 防病毒** \>  \> **组件**。
+4. 展开树以Windows **签名** \> **Microsoft Defender 防病毒** \> **组件**。
 
 5. 将 **"允许安全智能更新从 Microsoft 更新"设置为****"已启用"，** 然后选择"确定 **"。**
 
@@ -76,7 +75,7 @@ ms.locfileid: "60178331"
 
 ### <a name="manually-opt-in-to-microsoft-update"></a>手动选择加入 Microsoft 更新
 
-1. 在 **Windows选择** 加入 **&** 更新"中打开"更新""安全设置"。
+1. 在 **Windows选择** 加入 **&** 更新"中打开"更新"和"安全设置"。
 
 2. 选择 **"高级选项** "。
 

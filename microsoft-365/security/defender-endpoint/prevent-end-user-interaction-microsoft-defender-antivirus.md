@@ -2,7 +2,6 @@
 title: 隐藏Microsoft Defender 防病毒接口
 description: 可以在应用内隐藏病毒和威胁Windows 安全中心磁贴。
 keywords: ui 锁定， 无头模式， 隐藏应用， 隐藏设置， 隐藏界面
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,20 +10,20 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/23/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9a16abdcbc219a950eff6ddc8bb48018c4ba3279
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c43135ff2743282f4588cbccc0d8a80d17de93bf
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209305"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883085"
 ---
-# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>阻止用户查看或Microsoft Defender 防病毒用户界面
+# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>阻止用户查看或与用户界面Microsoft Defender 防病毒交互
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,16 +40,16 @@ ms.locfileid: "60209305"
 
 将设置设置为"**已启用"：**
 
-:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="无防护Windows 安全中心病毒和威胁防护部分的内容屏幕截图。":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="无防护Windows 安全中心病毒和威胁防护部分进行保护的屏幕截图。":::
 
 将设置设置为"已 **禁用"** 或未配置：
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="具有防护Windows 安全中心和威胁防护部分的内容屏幕截图。":::
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="具有防护Windows 安全中心和威胁防护部分进行保护的屏幕截图。":::
 
 > [!NOTE]
 > 隐藏界面还会阻止Microsoft Defender 防病毒在终结点上显示通知。 Microsoft Defender for Endpoint 通知仍将显示。 还可以单独 [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
 
-在早期版本的 Windows 10 中，该设置将Windows Defender客户端接口。 如果用户尝试打开它，他们将收到一条警告，指出"你的系统管理员已限制对此应用的访问"。
+在早期版本的 Windows 10 中，该设置将隐藏Windows Defender客户端接口。 如果用户尝试打开它，他们将收到一条警告，指出"你的系统管理员已限制对此应用的访问"。
 
 :::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="在 1703 之前的版本Windows 10无头模式时显示警告消息":::
 
@@ -62,7 +61,7 @@ ms.locfileid: "60209305"
 
 3. 单击 **"管理模板"。**
 
-4. 展开树以Windows **客户端> Microsoft Defender 防病毒 >组件**。
+4. 展开树以Windows **客户端> Microsoft Defender 防病毒 >的组件**。
 
 5. 双击启用 **无头 UI 模式** 设置，将选项设置为 **已启用**。 单击“**确定**”。
 
@@ -73,7 +72,7 @@ ms.locfileid: "60209305"
 你可以阻止用户暂停扫描，这有助于确保计划扫描或按需扫描不会被用户中断。
 
 > [!NOTE]
-> 此设置在系统上Windows 10。
+> 此设置在 Windows 10。
 
 ### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>使用组策略阻止用户暂停扫描
 

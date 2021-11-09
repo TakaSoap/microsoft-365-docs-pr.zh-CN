@@ -1,8 +1,7 @@
 ---
 title: 查看扫描Microsoft Defender 防病毒结果
-description: 使用应用、应用Microsoft Endpoint Configuration Manager、Microsoft Intune或Windows 安全中心扫描结果
+description: 使用应用、Microsoft Endpoint Configuration Manager、Microsoft Intune或Windows 安全中心扫描结果
 keywords: 扫描结果， 修正， 完全扫描， 快速扫描
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,18 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/17/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: db19bb6a7d3fb8eeaa77c640efb084d98f50a3d4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cec44ad879eb7e425fa8ed20daa468eae7c61af1
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169655"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881765"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>查看Microsoft Defender 防病毒扫描结果
 
@@ -33,7 +32,7 @@ ms.locfileid: "60169655"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-在Microsoft Defender 防病毒扫描完成后（无论是按需扫描还是计划扫描）后[](run-scan-microsoft-defender-antivirus.md)，将记录结果[](scheduled-catch-up-scans-microsoft-defender-antivirus.md)，并且您可以查看结果。 
+完成Microsoft Defender 防病毒（无论是按需扫描还是计划扫描）后，将记录[](run-scan-microsoft-defender-antivirus.md)结果，并且您可以查看[](scheduled-catch-up-scans-microsoft-defender-antivirus.md)结果。 
 
 
 ## <a name="use-configuration-manager-to-review-scan-results"></a>使用 Configuration Manager 查看扫描结果

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 608746c406ef308636e0a2ffc6f4bb1d69f6bbf7
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 9245062a0906186ce779383725cecc8209655c6f
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587345"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882749"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>排查与 iOS 上的 Microsoft Defender for Endpoint 相关的问题并查找常见问题解答
 
@@ -62,13 +62,11 @@ Apple iOS 不支持多个 **设备范围的** VPN 同时处于活动状态。 �
 
 ## <a name="battery-consumption"></a>电池消耗
 
-为了提供对基于 Web 的威胁的一切保护，Microsoft Defender for Endpoint 需要一切都在后台运行。 这可能会导致设备的总电池消耗轻微增加。
+为了提供对基于 Web 的威胁的一切保护，Microsoft Defender for Endpoint 需要一切都在后台运行。 这可能会导致设备的总电池消耗轻微增加。 如果你看到电池严重消耗，请 [向我们发送反馈](ios-troubleshoot.md#send-in-app-feedback) ，我们将进行调查。
 
-此外，在设置应用中，iOS 只显示特定时间内对用户可见的应用的电池使用情况。 屏幕上显示的应用的电池使用量仅在该持续时间内，由 iOS 根据大量因素（包括 CPU 和网络使用情况）计算。 Microsoft Defender for Endpoint 在后台使用本地/环回 VPN 来检查任何恶意网站或连接的 Web 流量。 来自任何应用的网络数据包都经过此检查，这会导致 Microsoft Defender for Endpoint 的电池使用情况计算不准确。 Microsoft Defender for Endpoint 的实际电池消耗低于设备上"电池设置页面上显示的内容。
+此外，在设置应用中，iOS 仅显示特定时间内对用户可见的应用的电池使用情况。 屏幕上显示的应用的电池使用量仅在该持续时间内，由 iOS 根据大量因素（包括 CPU 和网络使用情况）计算。 Microsoft Defender for Endpoint 在后台使用本地/环回 VPN 来检查任何恶意网站或连接的 Web 流量。 来自任何应用的网络数据包都经过此检查，这会导致 Microsoft Defender for Endpoint 的电池使用情况计算不准确。 Microsoft Defender for Endpoint 的实际电池消耗低于设备上"电池设置页面上显示的内容。
 
-对于在后台运行的终结点，Microsoft Defender 的平均每天电池使用量大约为当天消耗的总电池的 **8.81%。** Apple 根据最终用户设备上 Microsoft Defender for Endpoint 的实际使用情况报告此指标，并且由于上述原因，还可以将指标报告给具有网络活动的其他应用。
-
-此外，使用的 VPN 是本地 VPN，与传统 VPN 不同，网络流量不会发送到设备外部。
+请注意，使用的 VPN 是本地 VPN，不同于传统 VPN，网络流量不会发送到设备外部。
 
 ## <a name="data-usage"></a>数据使用情况
 
@@ -76,7 +74,7 @@ Microsoft Defender for Endpoint 使用本地/环回 VPN 检查任何恶意网站
 
 我们还与其他 VPN 服务有类似的观察结果，并且已经向 Apple 报告了这一点。
 
-此外，使用后端服务更新 Microsoft Defender for Endpoint 以提供更好的保护至关重要。 但是，我们正在优化 Microsoft Defender for Endpoint 的数据使用情况。
+此外，使用后端服务更新 Microsoft Defender for Endpoint 以提供更好的保护至关重要。
 
 ## <a name="report-unsafe-site"></a>报告不安全网站
 
@@ -93,10 +91,10 @@ Microsoft Defender for Endpoint 可保护你免受网络钓鱼或其他基于 We
 
 ## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>载入后，在 Defender for Endpoint 控制台上未看到设备。
 
-载入后，设备需要几个小时才能显示在 Defender for Endpoint 安全控制台的设备清单中。 此外，请确保设备已正确注册Azure Active Directory并且设备具有 Internet 连接。 若要成功载入，设备必须通过 Microsoft Authenticator 或 Intune 公司门户 并且用户需要使用设备注册到 Azure AD 的同一帐户登录。
+载入后，设备需要几个小时才能显示在 Defender for Endpoint 安全控制台的设备清单中。 此外，请确保设备已正确注册Azure Active Directory并且设备具有 Internet 连接。 若要成功载入，设备必须通过 Microsoft Authenticator 或 Intune 公司门户 并且用户需要使用设备在 Azure AD 中注册的同一帐户登录。
 
 > [!NOTE]
-> 有时，设备名称与 Intune 控制台Microsoft Endpoint Manager (设备) 一致。 Defender for Endpoint 控制台中的设备名称采用 <username_iPhone/iPad 模式>。 还可使用Azure AD ID 在 Defender for Endpoint 控制台中标识设备。
+> 有时，设备名称与 Intune Microsoft Endpoint Manager (控制台中的设备) 一致。 Defender for Endpoint 控制台中的设备名称采用 <username_iPhone/iPad 模式>。 还可使用 Azure AD ID 在 Defender for Endpoint 控制台中标识设备。
 
 ## <a name="data-and-privacy"></a>数据和隐私
 
@@ -108,7 +106,7 @@ Microsoft Defender for Endpoint 可保护你免受网络钓鱼或其他基于 We
 
 ## <a name="issues-during-app-updates-from-the-app-store"></a>从应用商店更新应用期间的问题
 
-如果在应用通过应用商店更新应用时发现 (自动更新或手动更新) ，你可能需要重新启动设备。 如果无法解决问题，你可以禁用 Defender VPN 并执行应用更新。 还可以提供应用内反馈来报告此问题。
+如果在通过应用商店更新应用时发现 (自动更新或手动更新) ，你可能需要重新启动设备。 如果无法解决问题，你可以禁用 Defender VPN 并执行应用更新。 还可以提供应用内反馈来报告此问题。
 
 ## <a name="send-in-app-feedback"></a>发送应用内反馈
 

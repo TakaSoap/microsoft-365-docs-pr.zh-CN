@@ -2,8 +2,6 @@
 title: 性能分析器Microsoft Defender 防病毒
 description: 介绍调整应用程序性能Microsoft Defender 防病毒。
 keywords: 优化， 性能， 适用于终结点的 microsoft defender， defender 防病毒
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fa6206628d8652aef9c8b31dd2ee74d4b6023829
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 40b683a04527eb4a528f2aeaa25071e94fdd62e0
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659221"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884009"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>性能分析器Microsoft Defender 防病毒
 
@@ -43,7 +41,7 @@ ms.locfileid: "60659221"
 1. 运行性能分析器以收集终结点上Microsoft Defender 防病毒事件的性能记录。
 
    > [!NOTE]
-   > **Microsoft-antimalware-Engine** 类型的 Microsoft Defender 防病毒 事件的性能通过性能分析器进行记录。
+   > Microsoft **Microsoft Defender 防病毒-Antimalware-Engine** 类型的事件的性能通过性能分析器进行记录。
 
 2. 使用不同的录制报告分析扫描结果。
 
@@ -155,7 +153,7 @@ Accept wildcard characters: False
 
 ### <a name="get-mpperformancereport"></a>Get-MpPerformanceReport
 
-下一节介绍 Get-MpPerformanceReport PowerShell cmdlet。 分析和报告 MDAV Microsoft Defender 防病毒 (记录) 记录。
+下一节介绍 Get-MpPerformanceReport PowerShell cmdlet。 分析和报告 MDAV Microsoft Defender 防病毒 (性能) 记录。
 
 #### <a name="syntax-get-mpperformancereport"></a>语法：Get-MpPerformanceReport
 
@@ -191,7 +189,7 @@ Get-MpPerformanceReport    [-Path] <String>
 ```
 
 #### <a name="description-get-mpperformancereport"></a>说明：Get-MpPerformanceReport
-此 cmdlet 可分析以前收集的 Microsoft Defender 防病毒 性能记录 `Get-MpPerformanceReport` ([New-MpPerformanceRecording](#new-mpperformancerecording)) 并报告对 Microsoft Defender 防病毒 扫描产生最大影响的文件路径、文件扩展名和进程。
+此 cmdlet 分析以前收集的 Microsoft Defender 防病毒 性能记录 `Get-MpPerformanceReport` ([New-MpPerformanceRecording](#new-mpperformancerecording)) 并报告对 Microsoft Defender 防病毒 扫描产生最大影响的文件路径、文件扩展名和进程。
 
 性能分析器可深入了解可能导致性能降低的有问题的Microsoft Defender 防病毒。 此工具是"AS IS"提供的，并不用于提供有关排除项的建议。 排除项会降低终结点上的保护级别。 应谨慎定义排除项（如果有）。
 

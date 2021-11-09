@@ -1,8 +1,7 @@
 ---
 title: 受控文件夹访问评估
 description: 了解受控文件夹访问权限如何有助于防止文件被恶意应用更改。
-keywords: Exploit Protection， windows 10， windows defender， 勒索软件， 保护， 评估， 测试， 演示， 尝试
-search.product: eADQiWindows 10XVcnh
+keywords: Exploit Protection， windows 10， windows 11， windows defender， 勒索软件， 保护， 评估， 测试， 演示， 尝试
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d4c029ee825299202b3d1a128c9fbee5986bf5cc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4209c48fbf718a14ccdc8faf7f4e859485679bcd
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166524"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882833"
 ---
 # <a name="evaluate-controlled-folder-access"></a>受控文件夹访问评估
 
@@ -33,7 +32,7 @@ ms.locfileid: "60166524"
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
 
-[受控文件夹](controlled-folders.md) 访问权限是一项有助于保护文档和文件免受可疑或恶意应用修改的功能。 受控文件夹访问权限在 Windows Server 2019、Windows Server 2022 和 Windows 10 客户端上受支持。
+[受控文件夹](controlled-folders.md) 访问权限是一项有助于保护文档和文件免受可疑或恶意应用修改的功能。 受控文件夹访问权限在 Windows Server 2019、Windows Server 2022、Windows 10 和 windows 11 客户端上受支持。
 
 它尤其有助于防范尝试加密文件并[](https://www.microsoft.com/wdsi/threats/ransomware)阻止其成为勒索软件。
 
@@ -53,7 +52,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 ```
 
 > [!TIP]
-> 如果你想要完全审核受控文件夹访问权限在组织中如何工作，你将需要使用管理工具将此设置部署到网络 (设备) 。
+> 如果你想要完全审核受控文件夹访问权限在组织中如何工作，你将需要使用管理工具将此设置部署到网络或 (设备) 。
 您还可以使用组策略、Intune、移动设备管理 (MDM) 或 Microsoft Endpoint Manager 配置和部署设置，如主要的受控文件夹[访问权限主题中所述](controlled-folders.md)。
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在事件查看器中查看受控Windows访问事件
@@ -73,7 +72,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 在评估期间，你可能希望添加到受保护的文件夹列表，或允许某些应用修改文件。
 
-请参阅 [使用](controlled-folders.md) 受控文件夹访问权限保护重要文件夹，以使用管理工具（包括组策略、PowerShell 和 MDM 配置服务提供程序 (CSP) ）。
+请参阅 [使用](controlled-folders.md) 受控文件夹访问权限保护重要文件夹，以使用管理工具配置功能，包括组策略、PowerShell 和 MDM 配置服务提供程序 (CSP) 。
 
 ## <a name="see-also"></a>另请参阅
 

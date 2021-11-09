@@ -2,8 +2,6 @@
 title: Web 内容筛选
 description: 使用 Microsoft Defender for Endpoint 中的 Web 内容筛选，根据网站的内容类别跟踪和监管对网站的访问。
 keywords: Web 保护， Web 威胁防护， Web 浏览， 监视， 报告， 卡， 域列表， 安全性， 网络钓鱼， 恶意软件， 攻击， 网站， 网络保护， Edge， Internet Explorer， Chrome， Firefox， Web 浏览器
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3afc71b226bb7858caed439f13c55aee44d81a63
-ms.sourcegitcommit: 11855e904e7f4e57aff302852546a93526cad4dc
+ms.openlocfilehash: 65010f13ca5b1605d9bcec672c4e51270913d407
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60275684"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883433"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -52,11 +50,11 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 在尝试此功能之前，请确保满足以下要求：
 
-- 订阅包括以下各项之一：Windows 10 企业版 E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或 Microsoft Defender for Endpoint 独立版许可证。 
+- 你的订阅包括以下各项之一：Windows 10 企业版 E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或独立 Microsoft Defender for Endpoint许可证。 
 
 - 你有权访问 Microsoft 365 Defender 门户 [https://security.microsoft.com](https://security.microsoft.com) () 。
 
-- 组织的设备正在运行包含最新防病毒/反恶意软件Windows 10 1607 (1607) 或更高版本的周年[更新](manage-updates-baselines-microsoft-defender-antivirus.md)。
+- 你的组织设备正在运行 Windows 10 周年更新 (版本 1607) 或更高版本，Windows 11最新的防病毒[/反恶意软件更新](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 - Windows DefenderSmartScreen 和网络保护在组织的设备上启用。
 
@@ -87,7 +85,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 性教育：以信息和非 voyeuristic 方式讨论性与性的网站，包括提供有关人类感染和性取向的教育的网站、提供防止性感染建议的网站，以及提供有关性健康问题建议的网站。
 
-**无理**：面向不适合学校儿童查看的内容的网站，或者雇主会对待员工访问，但不一定具有黄色或色情性。
+**无理**：面向不适合学校儿童查看的内容的网站，或者雇主会随员工访问而感到不满意，但不一定令人信念或色情。
 
 **暴力**：显示或宣传与针对人类或动物的暴力相关的内容的网站。
 
@@ -102,7 +100,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 **对等：** 承载对等 (P2P) 或促进使用 P2P 软件共享文件的网站。
 
-**流&下载**：主要功能是流式媒体分发的网站，或允许用户搜索、观看或收听流式媒体的网站。
+**流&** 下载：主要功能是流式媒体分发的网站，或允许用户搜索、观看或收听流式媒体的网站。
   
 </details>
 
@@ -115,11 +113,11 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 **黑客** 攻击：提供资源以非法或有问题地使用计算机软件或硬件的网站，包括分发已被盗的受版权保护材料的网站。
 
-恶意 **&：** 网站宣传有关可能由种族、性别、性别、年龄、年龄、身体残障、经济情况、性取向或其他任何生活方式选择识别的任何群体具有攻击性、降级或滥用性的想法。
+**恶意&：** 网站宣传有关可能由种族、性别、性别、年龄、年龄、身体残障、经济状况、性取向或其他任何生活方式选择识别的任何部分具有攻击性、降级或滥用性观点的网站。
 
 **非法武器**：销售非法/受控非法非法者、宣传滥用或销售相关参数的站点。
 
-**非法软件**：包含或宣传使用恶意软件、间谍软件、botnet、网络钓鱼欺诈或盗用版权&的网站。
+**非法软件**：包含或宣传使用恶意软件、间谍软件、botnet、欺诈邮件或盗用版权&的网站。
 
 **学校欺诈**：与欺骗或学校欺骗相关的网站。 
 
@@ -151,7 +149,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 **新注册的** 域：过去 30 天内新注册但尚未移至其他类别的网站。
 
-**已注册域**：没有内容或已停供以后使用的网站。
+**已停域**：没有内容或已等待以后使用的网站。
   
 **注意**：未分类仅包含新注册的域和已注册的域，不包括这些类别之外的所有其他网站。
   
@@ -161,7 +159,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 若要添加新策略，请按照以下步骤操作：
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) ， choose 设置  >  **Web content filtering**  >  **+ Add policy**.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) ， choose **设置**  >  **Web content filtering**+ Add  >  **policy**.
 
 2. 指定名称。
 
@@ -187,7 +185,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 若要定义自定义指示器，请按照以下步骤操作：
 
-1. 在Microsoft 365 Defender门户 () ，转到设置终结点指示器 <https://security.microsoft.com>  \>  \>  \> **URL/域** \> **添加项"。**
+1. 在Microsoft 365 Defender门户 <https://security.microsoft.com> () ，转到设置终结点指示器 \>  \>  \> **URL/域** \> **添加项"。**
 
 2. 输入网站的域。
 
@@ -247,7 +245,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 ### <a name="known-issues-and-limitations"></a>已知问题和限制
 
-如果你Microsoft Edge操作系统配置是 Server (**cmd** \> **Systeminfo** \> **OS Configuration**) ，则仅支持此) 。 网络保护仅在服务器设备的检查模式下受支持，服务器设备负责保护受支持的第三方浏览器上的流量。
+如果你Microsoft Edge操作系统配置是 Server ( \> **systeminfo** \> **OS Configuration**) ，则仅支持此) 。 网络保护仅在服务器设备的检查模式下受支持，服务器设备负责保护受支持的第三方浏览器上的流量。
 
 网络保护当前不支持 SSL 检查，这可能会导致 Web 内容筛选允许某些网站，这些网站通常会被阻止。 由于 TLS 握手发生后无法查看加密流量，并且无法分析某些重定向，因此将允许网站。  这包括从一些基于 Web 的邮件登录页重定向到邮箱页面。 作为一种接受的解决方法，您可以为登录页创建自定义阻止指示器，以确保任何用户都无法访问该网站。 请记住，这可能会阻止他们访问与同一网站关联的其他服务。 
 

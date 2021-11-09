@@ -14,12 +14,12 @@ audience: ITPro
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 48a813765693c69cff726c6973959ee63200a357
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: bb2c66c8ebb04b32fb409a749b7f1872361dd4a4
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753917"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882233"
 ---
 # <a name="device-control-printer-protection"></a>设备控制打印机保护
 
@@ -48,12 +48,12 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 ## <a name="prepare-your-endpoints"></a>准备终结点
 
-请确保计划Windows 10打印机保护的设备满足这些要求。
+确保已Windows 10或Windows 11部署打印机保护以满足这些要求的设备。
 
 1. 已安装以下 Windows 更新。
     - For Windows 1809： install Windows Update [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46)
     - For Windows 1909： install Windows Update [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1)
-    - 对于 Windows 2004 或更高版本
+    - For Windows 2004 or later
 
 2. 如果你计划通过组策略部署策略，则必须将设备载入加入适用于终结点的 Microsoft Defender;如果你计划通过 Microsoft Endpoint Manager 部署策略，则必须使用 Microsoft Intune。
 
@@ -135,7 +135,7 @@ CSP 支持字符串，包含 `<enabled/>` ：
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>在 Microsoft Defender 终结点门户中查看设备控制打印机保护数据
 
-安全[Microsoft 365显示](https://security.microsoft.com)上面的设备控制打印机保护策略阻止的打印。
+安全[Microsoft 365显示](https://security.microsoft.com)上述设备控制打印机保护策略阻止的打印。
 
 ```kusto
 DeviceEvents

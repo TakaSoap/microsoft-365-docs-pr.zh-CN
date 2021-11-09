@@ -2,7 +2,6 @@
 title: Microsoft Defender 防病毒虚拟桌面基础结构部署指南
 description: 了解如何在虚拟Microsoft Defender 防病毒环境中部署应用程序，以在保护和性能之间实现最佳平衡。
 keywords: vdi， hyper-v， vm， 虚拟机， windows defender， 防病毒， av， 虚拟桌面， rds， 远程桌面
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,17 +10,17 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 08/31/2021
+ms.date: 10/18/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 86f2ecdbf263f922d5e271028d28c50b91af31b5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 23ac32508338771b46ccd30b520da53a471be81a
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213717"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882077"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>虚拟桌面基础结构 （VDI） 环境中 Microsoft Defender 防病毒软件的部署指南
 
@@ -29,13 +28,13 @@ ms.locfileid: "60213717"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-除了标准本地配置或硬件配置之外，您还可以在远程桌面 (Microsoft Defender 防病毒 RDS) 或虚拟桌面基础结构 (VDI) 环境中使用) 。
+除了标准本地配置或硬件配置之外，您还可以在远程桌面 (Microsoft Defender 防病毒 RDS) 或虚拟桌面基础结构 Microsoft Defender 防病毒 VDI) 环境中使用 (。
 
 有关 Microsoft 远程桌面 服务和 VDI 支持的更多详细信息，请参阅[Azure 虚拟](/azure/virtual-desktop)桌面文档。
 
 对于基于 Azure 的虚拟机，请参阅 Install [Endpoint Protection in Azure Defender](/azure/security-center/security-center-install-endpoint-protection)。
 
-通过轻松将更新部署到在 VDIs 中运行的 VM，我们缩短了本指南，侧重于如何快速轻松地获取计算机更新。 你不再需要定期创建和密封黄金映像，因为更新会扩展到主机服务器上组件位，然后在虚拟机打开时直接下载到虚拟机。
+由于能够轻松地将更新部署到在 VDIs 中运行的 VM，我们缩短了本指南，侧重于如何快速轻松地获取计算机更新。 你不再需要定期创建和密封黄金映像，因为更新会扩展到主机服务器上组件位，然后在虚拟机打开时直接下载到虚拟机。
 
 本指南介绍如何配置 VM 以实现最佳保护和性能，包括如何：
 
@@ -47,16 +46,16 @@ ms.locfileid: "60213717"
 - [扫描过期的计算机或已脱机一段时间的计算机](#scan-vms-that-have-been-offline)
 - [应用排除项](#exclusions)
 
-还可以下载虚拟桌面Microsoft Defender 防病毒上的白皮书，[](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)该白皮书将查看新的共享安全智能更新功能，以及性能测试和有关如何在你自己的 VDI 上测试防病毒性能的指导。
+还可以下载虚拟桌面基础结构上的白皮书[Microsoft Defender 防病毒，](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)该白皮书将查看新的共享安全智能更新功能，以及性能测试和有关如何在你自己的 VDI 上测试防病毒性能的指导。
 
 > [!IMPORTANT]
-> 尽管 VDI 可以托管在 Windows Server 2012 或 Windows Server 2016 上，但虚拟机 (VM) 至少应运行 Windows 10，1607，因为保护技术和功能在 Windows 早期版本中不可用。
+> 尽管 VDI 可以托管在 Windows Server 2012 或 Windows Server 2016 上，但由于 Windows 早期版本中不可用的保护技术和功能的增加，虚拟机 (VM) 至少应运行 Windows 10，即 1607。
 >
-> Microsoft Defender AV 在 Windows 10 Insider Preview 内部版本 18323 (及更高版本中的虚拟机上的操作方式有一些性能和功能) 。 如果你需要使用 Insider Preview 版本，我们将在本指南中确定;如果未指定，则 1607 年 1 月 1607 日为获得最佳保护和性能Windows 10版本。
+> Microsoft Defender AV 在 Windows 10 Insider Preview 内部版本 18323 (及更高版本中的虚拟机上的操作方式有性能和功能) 。 如果你需要使用 Insider Preview 版本，我们将在本指南中确定;如果未指定，则最佳保护和性能的最低必需版本为 Windows 10 1607。
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>设置专用的 VDI 文件共享
 
-在 Windows 10 版本 1903 中，我们引入了共享安全智能功能，此功能将下载的安全智能更新解包卸载到主机上，从而节省各个计算机上以前的 CPU、磁盘和内存资源。 此功能已进行备份，现在适用于 Windows 10版本 1703 及以上版本。 可以使用组策略或 PowerShell 设置此功能。
+在 Windows 10 版本 1903 中，我们引入了共享安全智能功能，此功能将下载的安全智能更新的解包卸载到主机上，从而节省各个计算机上以前的 CPU、磁盘和内存资源。 此功能已进行备份，现在适用于 Windows 10版本 1703 及以上版本。 可以使用组策略或 PowerShell 设置此功能。
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>使用组策略启用共享安全智能功能：
 
@@ -110,7 +109,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>设置计划任务以运行 PowerShell 脚本
 
-1. 在管理计算机上，打开"任务"开始"菜单键入 **"任务计划程序"。** 打开它，然后选择 **侧面板** 上的创建任务...。
+1. 在管理计算机上，打开"开始"菜单并键入 **任务计划程序**。 打开它，然后选择 **侧面板** 上的"创建任务..."。
 
 2. 输入名称作为 **安全智能解压缩。** 转到触发器 **选项卡。** 选择新建 **...** \>**每天**，然后选择 **确定**。
 
@@ -126,9 +125,9 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 如果您希望手动执行所有操作，下面是复制脚本行为要执行哪些操作：
 
-1. 在系统根目录上新建一个文件夹 `wdav_update` ，以存储智能更新，例如，创建文件夹 `c:\wdav_update` 。
+1. 在系统根目录上新建一个文件夹，以存储智能更新，例如 `wdav_update` ，创建文件夹 `c:\wdav_update` 。
 
-2. 使用 GUID 名称wdav_update文件夹下创建子文件夹，例如`{00000000-0000-0000-0000-000000000000}`
+2. 使用 GUID 名称 *wdav_update文件夹* 下创建子文件夹，例如 `{00000000-0000-0000-0000-000000000000}`
 
    下面是一个示例： `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
 
@@ -154,7 +153,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 可以指定在计划扫描期间应执行的扫描类型。 快速扫描是首选方法，因为它们旨在查找恶意软件需要驻留的所有位置以处于活动状态。 以下过程介绍如何使用组策略设置快速扫描。
 
-1. 在组策略编辑器中，转到"管理 **模板** Windows \> **组件** Microsoft Defender 防病毒 \>  \> **扫描"。**
+1. 在组策略编辑器中，转到"管理 **模板** \> **Windows组件** Microsoft Defender 防病毒 \>  \> **扫描"。**
 
 2. 选择 **"指定要用于计划扫描** 的扫描类型"，然后编辑策略设置。
 
@@ -168,7 +167,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 有时Microsoft Defender 防病毒多个会话发送或保留通知。 为了尽可能减小此问题，您可以锁定Microsoft Defender 防病毒用户界面。 以下过程介绍如何使用组策略禁止通知。
 
-1. 在组策略编辑器中，转到Windows **客户端** Microsoft Defender 防病毒 \>  \> **组件**。
+1. 在组策略编辑器中，转到Windows **客户端** \> **Microsoft Defender 防病毒** \> **组件。**
 
 2. 选择 **"取消所有通知** "，然后编辑策略设置。
 
@@ -176,10 +175,10 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 4. 如通常一样部署组策略对象。
 
-禁止通知可防止Microsoft Defender 防病毒扫描或采取修正操作Windows 10在操作中心中显示通知。 但是，安全运营团队将在安全门户中Microsoft 365 Defender[结果](microsoft-defender-security-center.md)。
+当扫描完成或采取Microsoft Defender 防病毒操作时，禁止通知Windows 10在操作中心中显示通知。 但是，安全运营团队将在 Microsoft 365 Defender[门户中查看扫描结果](microsoft-defender-security-center.md)。
 
 > [!TIP]
-> 若要在操作中心Windows 10，请执行以下步骤之一：
+> 若要在 Windows 10 或 Windows 11 操作中心，请执行以下步骤之一：
 >
 > - 在任务栏的右侧，选择操作中心图标。
 > - 按Windows键按钮 + A。
@@ -240,6 +239,6 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ## <a name="additional-resources"></a>其他资源
 
-- [技术Community博客：Microsoft Defender 防病毒非永久性 VDI 计算机配置网络](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
+- [Tech Community博客：Microsoft Defender 防病毒非永久性 VDI 计算机配置设备](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
 - [远程桌面服务和 VDI 上的 TechNet 论坛](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)
 - [SignatureDownloadCustomTask PowerShell 脚本](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)

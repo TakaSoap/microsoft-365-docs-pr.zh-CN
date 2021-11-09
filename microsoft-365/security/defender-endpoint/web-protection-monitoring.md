@@ -2,7 +2,6 @@
 title: 在 Microsoft Defender for Endpoint 中监视 Web 浏览安全性
 description: 使用 Microsoft Defender for Endpoint 中的 Web 保护监视 Web 浏览安全性
 keywords: Web 保护， Web 威胁防护， Web 浏览， 监视， 报告， 卡， 域列表， 安全性， 网络钓鱼， 恶意软件， 攻击， 网站， 网络保护， Edge， Internet Explorer， Chrome， Firefox， Web 浏览器
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5bf6cc1f64cfbc7c4238e01ad7d623e3164639c8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4bbe7fa9bb9db540451c2878806f04b0d31b1165
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191547"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881837"
 ---
 # <a name="monitor-web-browsing-security"></a>监视 Web 浏览安全性
 
@@ -35,7 +34,7 @@ ms.locfileid: "60191547"
 
 通过 Web 保护，可以通过"报告"和"Web 保护"下的报表>**组织的 Web** 浏览Microsoft 365 Defender安全。 该报告包含提供 Web 威胁检测统计信息的卡片。
 
-- **随着时间的推移进行** Web 威胁防护检测 - 此趋势卡片显示在所选时间段（"过去 30 天 (最近 30 天、过去 3 个月、过去 6 个月）内按类型检测到的 Web 威胁) 
+- **随着时间的推移进行 Web** 威胁防护检测 - 此趋势卡片显示在所选时间段（"过去 30 天 (最近 30 天、过去 3 个月、过去 6 个月）内按类型检测到的 Web 威胁) 
 
   :::image type="content" alt-text="显示一段时间的 Web 威胁防护检测的卡片的图像。" source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
 

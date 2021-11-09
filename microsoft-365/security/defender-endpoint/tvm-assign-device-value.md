@@ -1,9 +1,7 @@
 ---
 title: 分配设备值 - 危险和漏洞管理
 description: 了解如何为设备分配低、普通或高值，以帮助区分资产优先级。
-keywords: Microsoft Defender for Endpoint 设备值、危险和漏洞管理设备值、高价值设备、设备值曝光分数
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+keywords: Microsoft Defender for Endpoint 设备值、危险和漏洞管理值、高价值设备、设备值曝光分数
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a1cc240c1c013468b482533ab00ef498543431fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 383001a8beac1f14ab6c1436fa42b28e48dbdc25
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193921"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884045"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>分配设备值 - 危险和漏洞管理
 
@@ -78,6 +76,6 @@ ms.locfileid: "60193921"
 
 ## <a name="related-topics"></a>相关主题
 
-- [威胁漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [曝光分数](tvm-exposure-score.md)
 - [API](next-gen-threat-and-vuln-mgt.md#apis)

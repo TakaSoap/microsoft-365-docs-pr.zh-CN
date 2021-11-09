@@ -2,7 +2,6 @@
 title: 测试 Microsoft Defender for Endpoint 功能在审核模式下如何工作
 description: 审核模式可帮助你查看 Microsoft Defender for Endpoint 在启用后如何保护你的设备。
 keywords: 攻击防护， 审核， 审核， 模式， 已启用， 禁用， 测试， 演示， 评估， 实验室
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,14 +14,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.topic: article
 ms.technology: mde
-ms.date: 09/22/2021
+ms.date: 10/14/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b261625215fa5f4f84daac7850f50569d8826cb6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fd5966380b23b13ab43b3e0e0c6583db03971541
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174863"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882929"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中测试攻击面减少
 
@@ -46,11 +45,11 @@ ms.locfileid: "60174863"
 
 这些功能不会阻止或阻止应用、脚本或文件被修改。 但是，Windows事件日志将记录事件，就像功能完全启用一样。 使用审核模式，你可以查看事件日志，以查看如果启用该功能，将有什么影响。
 
-若要查找审核的条目，请转到应用程序和服务Microsoft Windows \>  \> **Windows Defender** \>  \> **操作**。
+若要查找审核的条目，请转到应用程序和服务 \> **Microsoft** \> **Windows Windows Defender** \>  \> **操作**。
 
 使用 Defender for Endpoint 获取每个事件的更多详细信息，尤其是调查攻击面减少规则。 使用 Defender for Endpoint 控制台，你可以调查作为警报时间线和调查方案的 [一部分的问题](investigate-alerts.md)。
 
-可以使用组策略、PowerShell 和配置服务提供程序和 CSP (启用) 。
+可以使用组策略、PowerShell 和配置服务提供程序和 CSP (启用审核) 。
 
 > [!TIP]
 > 还可以访问 Testground Windows Defender[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认这些功能是否正常工作并查看它们如何工作。

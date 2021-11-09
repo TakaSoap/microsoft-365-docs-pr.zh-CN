@@ -2,7 +2,6 @@
 title: 启用网络保护功能
 description: 使用组策略、PowerShell 或移动设备管理和配置管理器启用网络保护。
 keywords: 网络保护， 攻击， 恶意网站， ip， 域， 启用， 打开
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 130f9a3fdfcc7c5ace75c4ebe7bd19d26c7bccdd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6dff7d5fc0acbb80500608a887ad00705bd1d2eb
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207913"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883181"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -43,9 +42,9 @@ ms.locfileid: "60207913"
 
 1. 选择任务栏 **中的** "开始"按钮，然后键入 **regedit** 以打开注册表编辑器。
 
-2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"开始"菜单。
+2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"选项"。
 
-3. 导航到软件策略 \>  \> **Microsoft** \> **Windows Defender Windows Defender** \> **Exploit Guard** \> **网络保护**。
+3. 导航到软件策略Microsoft Windows Defender Windows Defender \>  \>  \>  \> **攻击防护** \> **网络保护**。
 
 4. 选择 **EnableNetworkProtection** 以查看设备上网络保护的当前状态：
 
@@ -61,13 +60,13 @@ ms.locfileid: "60207913"
 
 - [PowerShell](#powershell)
 - [移动设备管理 (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Manager /Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
 - [组策略](#group-policy)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
 ### <a name="powershell"></a>PowerShell
 
-1. 在 **"管理"中"开始"菜单 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
+1. 在"管理"中"开始"菜单 **powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
 
 2. 输入以下 cmdlet：
 
@@ -97,7 +96,7 @@ ms.locfileid: "60207913"
 
 4. 转到 **"终结点保护**  >  **基础知识"，** 为配置文件提供名称，然后选择"下一 **步"。**
 
-5. 在"**配置设置"** 部分，转到 **"Microsoft Defender 攻击防护**  >  **网络筛选**  >  **网络保护**  >  **启用或****审核"。** 选择“**下一步**”。
+5. 在"**配置设置"** 部分，转到 **"Microsoft Defender 攻击防护**  >  **网络筛选**  >  **网络保护**  >  **启用或****审核"。** 选择 **下一步**。
 
 6. 根据组织 **需要****，选择** 适当的 **范围** 标记、分配和适用性规则。 管理员可以设置更多要求。
 
@@ -118,7 +117,7 @@ ms.locfileid: "60207913"
 3. 展开树以 **Windows Exploit** Guard \> **网络Microsoft Defender 防病毒Windows Defender** \>  \> **组件**。
 
    > [!NOTE]
-   > 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
+   > 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
 
 4. 双击阻止用户和应用 **访问** 危险网站设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
     - **阻止** - 用户无法访问恶意 IP 地址和域。
@@ -180,7 +179,7 @@ ms.locfileid: "60207913"
 
 ## <a name="see-also"></a>另请参阅
 
-- [网络保护](network-protection.md)
+- [网络保护功能](network-protection.md)
 
 - [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 

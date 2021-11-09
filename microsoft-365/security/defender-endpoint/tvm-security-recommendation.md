@@ -1,9 +1,7 @@
 ---
 title: 安全建议危险和漏洞管理
-description: 获取可操作的安全建议（按威胁、被泄露的可能性和价值危险和漏洞管理。
-keywords: 危险和漏洞管理， Microsoft Defender for Endpoint tvm security recommendation， cybersecurity recommendation， actionable security recommendation
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+description: 获取可操作的安全建议（按威胁、泄露可能性和价值危险和漏洞管理。
+keywords: 危险和漏洞管理， 适用于终结点的 Microsoft Defender 电视安全建议， 网络安全建议， 可操作的安全建议
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 42552d9b39a50ad924e0514a1f1184fba9f5f865
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22b5d6382a46eb45bc2365d8c31bb7a00eb5da17
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190505"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882965"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>安全建议 - 危险和漏洞管理
 
@@ -44,7 +42,7 @@ ms.locfileid: "60190505"
 > [!TIP]
 > 若要获取有关新漏洞事件的电子邮件，请参阅在 Microsoft [Defender for Endpoint](configure-vulnerability-email-notifications.md)中配置漏洞电子邮件通知
 
-## <a name="how-it-works"></a>如何工作
+## <a name="how-it-works"></a>运作方式
 
 组织的每台设备都基于三个重要因素进行评分，以帮助客户在正确的时间专注于正确的内容。
 
@@ -57,7 +55,7 @@ ms.locfileid: "60190505"
 以几种不同方式访问"安全建议"页：
 
 - 漏洞管理门户中的威胁和Microsoft 365 Defender[菜单](portal-overview.md)
-- 仪表板中危险和漏洞管理[建议](tvm-dashboard-insights.md)
+- 仪表板中的顶级[危险和漏洞管理建议](tvm-dashboard-insights.md)
 
 查看以下位置的相关安全建议：
 
@@ -68,7 +66,7 @@ ms.locfileid: "60190505"
 
 转到漏洞 **管理导航菜单**，然后选择"推荐"。  此页面包含针对组织中发现的威胁和漏洞的安全建议列表。
 
-### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>仪表板中的顶级危险和漏洞管理建议
+### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>仪表板中危险和漏洞管理建议
 
 在给定一天中，作为安全管理员，你可以查看 危险和漏洞管理 仪表板[](tvm-dashboard-insights.md)，以查看你的曝光分数与你的[](tvm-exposure-score.md)Microsoft 设备安全分数[并排](tvm-microsoft-secure-score-devices.md)显示。 目标是 **降低组织对** 漏洞的暴露程度，提高组织的设备安全性，以抵御网络安全威胁攻击。 顶级安全建议列表可帮助你实现该目标。
 
@@ -134,7 +132,7 @@ ms.locfileid: "60190505"
 
 只有具有"异常处理"权限的用户才能添加异常。 [详细了解 RBAC 角色](user-roles.md)。
 
-为建议创建例外时，建议不再处于活动状态。 建议状态将更改为"完全 **异常**"或"部分异常 (按设备组) 。
+为建议创建例外时，建议不再处于活动状态。 建议状态将更改为"完全 **异常** "或 **"部分** 异常 (组设置) 。
 
 ### <a name="how-to-create-an-exception"></a>如何创建异常
 
@@ -142,7 +140,7 @@ ms.locfileid: "60190505"
 
 ![显示"异常选项"按钮在安全建议飞出控件中的位置。](images/tvm-exception-options.png)
 
-填写表单并提交。 若要查看当前 (和过去) 的所有异常，请导航到"威胁 & 漏洞管理 [](tvm-remediation.md)**"** 菜单下的"修正"页并选择"异常 **"选项卡。** 详细了解如何创建 [异常](tvm-exception.md#create-an-exception)
+填写表单并提交。 若要查看当前 (和过去) 的所有异常，请导航到"威胁 & 漏洞管理 [](tvm-remediation.md)"菜单下的"修正 **"** 页并选择"异常 **"选项卡。** 详细了解如何创建 [异常](tvm-exception.md#create-an-exception)
 
 ## <a name="report-inaccuracy"></a>报告 inaccuracy
 
@@ -160,7 +158,7 @@ ms.locfileid: "60190505"
 
 ## <a name="related-articles"></a>相关文章
 
-- [威胁漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [仪表板](tvm-dashboard-insights.md)
 - [风险评分](tvm-exposure-score.md)
 - [设备的 Microsoft 安全功能分数](tvm-microsoft-secure-score-devices.md)

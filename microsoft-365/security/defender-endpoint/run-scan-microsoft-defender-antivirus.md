@@ -1,8 +1,7 @@
 ---
-title: 运行并自定义按需扫描Microsoft Defender 防病毒
-description: 使用 PowerShell、Windows Management Instrumentation 运行和配置按需扫描，或者使用 Windows 安全中心 应用在终结点上单独运行和配置Windows 安全中心扫描
+title: 在扫描中运行和自定义按需Microsoft Defender 防病毒
+description: 使用 PowerShell、Windows Management Instrumentation 或在终结点上单独运行和配置按需扫描（Windows 安全中心应用）
 keywords: 扫描， 按需， 操作， intune， 即时扫描
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,17 +11,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/10/2021
+ms.date: 10/22/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a9e8860129df9f5b91cad8737a595a11296d91c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f2f5625eff5b19c47aebf896d6a0398437426aa
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162538"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881657"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>配置并运行按需 Microsoft Defender 防病毒软件扫描
 
@@ -43,7 +42,7 @@ ms.locfileid: "60162538"
 
 2. 选择 **终结点安全** \> **防病毒**。
 
-3. 在选项卡列表中，选择 **"Windows 10不正常的终结点"。**
+3. 在选项卡列表中，选择"Windows 10 **不正常终结点**"或Windows 11 **不正常终结点"。**
 
 4. 从所提供的操作列表中，选择"快速扫描" (") "完全 **扫描"。**
 
@@ -72,7 +71,7 @@ mpcmdrun.exe -scan -scantype 1
 
 ## <a name="use-the-windows-security-app-to-run-a-scan"></a>使用Windows 安全中心运行扫描
 
-有关[在个别终结点上运行](microsoft-defender-security-center-antivirus.md)Windows 安全中心的说明，请参阅在应用中运行扫描。
+有关[在个别终结点上运行Windows 安全中心](microsoft-defender-security-center-antivirus.md)的说明，请参阅在应用中运行扫描。
 
 ## <a name="use-powershell-cmdlets-to-run-a-scan"></a>使用 PowerShell cmdlet 运行扫描
 
@@ -82,7 +81,7 @@ mpcmdrun.exe -scan -scantype 1
 Start-MpScan
 ```
 
-若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和 Defender [cmdlet。](/powershell/module/defender/)
+若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender cmdlet。](/powershell/module/defender/)
 
 ## <a name="use-windows-management-instruction-wmi-to-run-a-scan"></a>使用 Windows Management Instruction (WMI) 运行扫描
 

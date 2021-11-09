@@ -1,9 +1,7 @@
 ---
 title: 支持的操作系统平台和功能
 description: 确保你满足操作系统或平台的必备条件危险和漏洞管理，以便正确考虑所有设备中的活动。
-keywords: 威胁& 漏洞管理， 危险和漏洞管理， 操作系统， 平台要求， 先决条件， Microsoft Defender for Endpoint-tvm 支持的操作系统， 适用于 Endpoint-tvm 的 Microsoft Defender， 支持的操作系统， 受支持的平台， linux 支持， mac 支持
-search.appverid: met150
-search.product: eADQiWindows 10XVcnh
+keywords: 威胁& 漏洞管理， 危险和漏洞管理， 操作系统， 平台要求， 先决条件， Microsoft Defender for Endpoint-tvm 支持的操作系统， 适用于 Endpoint-tvm 的 Microsoft Defender， 支持的操作系统， 支持的平台， linux 支持， mac 支持
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a5c96f8a3dd96219f58ac667e03b50e03498dcae
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 091ba63ac23342c9423d8989cc2e56f4a1423f76
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659099"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883373"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>支持的操作系统、平台和功能 - 适用于危险和漏洞管理
 
@@ -40,7 +38,7 @@ ms.locfileid: "60659099"
 开始之前，请确保满足以下操作系统或平台要求危险和漏洞管理以便正确考虑设备中的活动。
 
 > [!NOTE]
-> 支持用于终结点的系统和危险和漏洞管理可能不同于["Microsoft Defender for Endpoint](minimum-requirements.md)的最低要求"列表。
+> 支持用于终结点的系统和危险和漏洞管理可能不同于[Microsoft Defender for Endpoint](minimum-requirements.md)的最低要求列表。
 
 ## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>支持的操作系统和平台 (操作系统) 功能
 
@@ -65,10 +63,10 @@ Ubuntu 16.04 LTS 或更高版本 LTS|是|是|是|是|是
 Oracle Linux 7.2 或更高版本|是|是|是|是|是
 SUSE Linux Enterprise Server 12 或更高版本|是|是|是|是|是
 Android 6.0 或更高版本 (预览版) |是|是|不支持|不支持|不支持
-预览版中的 iOS 12.0 (或) |是|不支持|不支持|不支持|不支持
+预览版中的 iOS 12.0 (或更高版本) |是|不支持|不支持|不支持|不支持
 
 > [!NOTE]
-> 某些功能不适用于低级别操作系统，请查看 Microsoft 365 Defender 门户，了解有关受支持的操作系统的更多详细信息。
+> 某些功能不适用于低级别操作系统，请查看Microsoft 365 Defender门户，了解有关受支持的操作系统的更多详细信息。
 
 > [!IMPORTANT]
 > \*Red Hat Enterprise Linux："作为 Microsoft Defender for Endpoint 服务的一部分提供和显示的漏洞数据可从 Red Hat， Inc. 以原始形式"AS IS"提供给你，并且可能不是最新的。 Red Hat 安全数据 API 中可访问的数据由 Creative Commons Attribution 4.0 国际许可证授权。 使用此数据的风险由你承担。 Microsoft 及其第三方供应商不承担任何责任以及其他间接损害和默示担保，包括针对特定目的的不侵权、适用性和适用性的默示担保。 © 2020 Red Hat。 保留所有权利。 © 2020 Microsoft。 保留所有权利。"

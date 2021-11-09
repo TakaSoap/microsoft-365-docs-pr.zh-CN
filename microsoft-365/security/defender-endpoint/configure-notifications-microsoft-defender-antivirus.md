@@ -1,8 +1,7 @@
 ---
 title: 配置Microsoft Defender 防病毒通知
-description: 了解如何在终结点上配置和自定义标准Microsoft Defender 防病毒通知。
+description: 了解如何在终结点上配置和自定义Microsoft Defender 防病毒通知。
 keywords: 通知， defender， 防病毒， 终结点， 管理， 管理员
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -13,16 +12,16 @@ author: denisebmsft
 ms.topic: article
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/16/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c5b651dba1cf6b4e1af2e02e21f18f5663c21d1e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b2b23a52312b3f384122f34b054b65bd6aa486a2
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201404"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881909"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>配置Microsoft Defender 防病毒终结点上显示的通知
 
@@ -30,7 +29,7 @@ ms.locfileid: "60201404"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-在Windows 10中，有关恶意软件检测和修正的应用程序通知更加可靠、一致且简洁。 Microsoft Defender 防病毒扫描完成并检测到威胁时，终结点上会显示通知。 通知遵循计划扫描和手动触发的扫描。 这些通知还会显示在 **通知中心** 中，并且扫描和威胁检测的摘要会定期显示。
+在Windows 10和Windows 11中，有关恶意软件检测和修正的应用程序通知更加可靠、一致且简洁。 Microsoft Defender 防病毒扫描完成并检测到威胁时，终结点上会显示通知。 通知遵循计划扫描和手动触发的扫描。 这些通知还会显示在 **通知中心** 中，并且扫描和威胁检测的摘要会定期显示。
 
 如果你是组织安全团队的一员，可以配置通知在终结点上的显示方式，例如提示系统重启或指示已检测并修复威胁的通知。
 
@@ -39,7 +38,7 @@ ms.locfileid: "60201404"
 可以在应用和组策略中配置其他通知的显示，如Windows 安全中心[威胁](microsoft-defender-security-center-antivirus.md)检测摘要。
 
 > [!NOTE]
-> 在 Windows 10 版本 1607 中，该功能称为增强型通知，在Windows 设置 \> **Update & security Windows Defender** \> **下配置**。 在所有版本的通知的组策略Windows 10，通知功能称为增强 **型通知**。
+> 在 Windows 10 版本 1607 中，该功能称为增强型通知，在 Windows 设置 \> **Update & security Windows Defender** \> 下 **配置**。 在适用于所有版本和 Windows 10 Windows 11 的组策略设置中，通知功能称为增强 **型通知**。
 
 ### <a name="use-group-policy-to-disable-additional-notifications"></a>使用组策略禁用其他通知
 
@@ -60,7 +59,7 @@ ms.locfileid: "60201404"
 
 ### <a name="use-the-windows-security-app-to-disable-additional-notifications"></a>使用 Windows 安全中心 应用禁用其他通知
 
-1. 通过单击Windows 安全中心中的防护图标或搜索"安全"的"开始"菜单打开"安全 **"菜单。**
+1. 通过Windows 安全中心任务栏中的防护图标或搜索"安全"的"开始"菜单打开"安全 **"菜单。**
 
 2. 选择 **病毒&威胁** 防护磁贴 (或左侧菜单栏上的防护图标) ，然后选择病毒防护& **威胁防护设置**
 
@@ -79,9 +78,9 @@ ms.locfileid: "60201404"
 - 隐藏终结点上的所有通知
 - 隐藏终结点上的重启通知
 
-当你无法隐藏整个通知界面时，隐藏通知Microsoft Defender 防病毒很有用。 有关详细信息[，请参阅防止用户查看 Microsoft Defender 防病毒用户界面](prevent-end-user-interaction-microsoft-defender-antivirus.md)或与之交互。 隐藏通知将仅在策略已部署到的终结点上发生。 与在监视仪表板和报告中 (必须采取的操作（) 重启）Microsoft Endpoint Manager Endpoint Protection[通知](/configmgr/protect/deploy-use/monitor-endpoint-protection)。 
+当你无法隐藏整个通知界面时，隐藏通知Microsoft Defender 防病毒很有用。 有关详细信息[，请参阅防止用户查看Microsoft Defender 防病毒用户界面](prevent-end-user-interaction-microsoft-defender-antivirus.md)进行交互。 隐藏通知将仅在策略已部署到的终结点上发生。 与在监视仪表板和报告上 (必须) 操作相关的Microsoft Endpoint Manager Endpoint Protection[仍将显示](/configmgr/protect/deploy-use/monitor-endpoint-protection)。 
 
-若要将自定义联系人信息添加到终结点通知，请参阅[为Windows 安全中心自定义自定义应用](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)。
+若要将自定义联系人信息添加到终结点通知，请参阅[自定义](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)组织的 Windows 安全中心 应用。
 
 ### <a name="use-group-policy-to-hide-notifications"></a>使用组策略隐藏通知
 

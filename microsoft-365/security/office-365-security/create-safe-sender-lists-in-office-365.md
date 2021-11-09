@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解在 EOP 服务中允许入站邮件的可用Exchange Online Protection (首选) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ac0d6cf4ff2dab75809525e5c49fc5c12eec670b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 376ea1a5c598adce28fb65ee2b2d1fbceceecd34
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157658"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882197"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中创建安全发件人列表
 
@@ -57,14 +57,16 @@ ms.locfileid: "60157658"
 > - EOP 和 Outlook检查不同的邮件属性以确定邮件的发件人。 有关详细信息，请参阅本文稍后 [介绍的](#considerations-for-bulk-email) 批量电子邮件的注意事项部分。
 >
 
-
 相比之下，您还可以使用阻止的发件人列表来阻止来自 _特定来源的电子邮件_。 有关详细信息，请参阅[在 EOP 中创建阻止发件人列表](create-block-sender-lists-in-office-365.md)。
 
 ## <a name="recommended-use-mail-flow-rules"></a> (推荐) 使用邮件流规则
 
-邮件流规则Exchange Online和独立 EOP 中的邮件流规则使用条件和例外来标识邮件，以及用于指定应针对这些邮件执行哪些操作的操作。 有关详细信息，请参阅邮件[流规则 (中的) 传输Exchange Online。](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+> [!NOTE]
+> 邮件头和邮件流规则不能将内部发件人指定为安全发件人。 本节中的过程仅适用于外部发件人。
 
-以下示例假定您需要来自以下组织 contoso.com 跳过垃圾邮件筛选。 为此，请配置以下设置：
+邮件流规则Exchange Online和独立 EOP 中的邮件流规则使用条件和例外来标识邮件，以及指定应针对这些邮件执行哪些操作的操作。 有关详细信息，请参阅邮件[流规则 (中的) 传输Exchange Online。](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+
+以下示例假定您需要来自电子邮件 contoso.com 跳过垃圾邮件筛选。 为此，请配置以下设置：
 
 1. **条件****：发件人** \> **域** \> contoso.com。
 
@@ -76,13 +78,13 @@ ms.locfileid: "60157658"
 
    - **IP 允许列表**：在连接筛选器策略中指定源 IP 地址或地址范围。
 
-     如果发送域不使用电子邮件身份验证，则使用此设置。 当涉及 IP 允许列表中的源 IP 地址时，请尽可能严格。 我们建议 IP 地址范围为 /24 或更低， (范围最好) 。 请勿使用属于使用者服务的 IP 地址 (例如，outlook.com) 共享基础结构。
+     如果发送域不使用电子邮件身份验证，则使用此设置。 当涉及 IP 允许列表中的源 IP 地址时，请尽可能严格。 我们建议 IP 地址范围小于或小于 /24 (是更好的) 。 请勿使用属于使用者服务（例如， (或共享 outlook.com) IP 地址范围。
 
    > [!IMPORTANT]
    >
    > - 切勿将仅发件人 *域配置为* 跳过垃圾邮件筛选的条件来配置邮件流规则。 这样做将显著增加攻击者欺骗发送域 (或模拟完整电子邮件地址) 、跳过所有垃圾邮件筛选并跳过发件人身份验证检查以便邮件到达收件人收件箱的可能性。
    >
-   > - 请勿使用自己拥有 (域，) 或热门 (，例如 microsoft.com) 规则中的条件。 这样做被视为高风险，因为它会为攻击者创造机会来发送电子邮件，否则会进行筛选。
+   > - 请不要将你拥有 (域（也称为接受) 或热门 (，例如 microsoft.com) 规则中的条件。 这样做被视为高风险，因为它会为攻击者创造机会来发送电子邮件，否则会进行筛选。
    >
    > - 如果允许网络地址转换 (NAT) 网关后面的 IP 地址，则需要知道 NAT 池中涉及的服务器，才能知道 IP 允许列表的范围。 IP 地址和 NAT 参与者可以更改。 作为标准维护程序的一部分，您需要定期检查 IP 允许列表条目。
 
@@ -94,7 +96,7 @@ ms.locfileid: "60157658"
 
 4. **操作**：在规则中配置这两项操作：
 
-   a. **修改邮件属性** \>**将垃圾邮件可信度设置为 (SCL)** \>**绕过垃圾邮件筛选**。
+   a. **修改邮件属性** \>**将垃圾邮件可信度设置为 SCL ()** \>**绕过垃圾邮件筛选**。
 
    b. **修改邮件属性** \>**设置邮件头****：将邮件头** \<CustomHeaderName\> **设置为值** \<CustomHeaderValue\> 。
 
@@ -109,7 +111,7 @@ ms.locfileid: "60157658"
 > [!CAUTION]
 > 此方法会为攻击者将电子邮件成功发送到收件箱带来高风险，否则会进行筛选;但是，用户的"发件人保险箱或保险箱"列表不会阻止恶意软件或高可信度网络钓鱼邮件被筛选。
 
-用户或管理员可以将发件人电子邮件地址添加到邮箱中的"发件人保险箱，而不是组织设置。 有关说明，请参阅配置邮箱中的Exchange Online[垃圾邮件Office 365。](configure-junk-email-settings-on-exo-mailboxes.md) 在大多数情况下，这是不可取的，因为发件人将绕过筛选堆栈的某些部分。 尽管您信任发件人，但发件人仍然可能会遭到入侵并发送恶意内容。 最好让筛选器执行检查每封邮件所需的操作，然后在筛选器出错时向 Microsoft 报告误报 [/](report-junk-email-messages-to-microsoft.md) 负数。 绕过筛选堆栈也会干扰 [ZAP](zero-hour-auto-purge.md)。
+用户或管理员可以将发件人电子邮件地址添加到邮箱中的"发件人保险箱列表中，而不是组织设置。 有关说明，请参阅 Configure [junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md)。 在大多数情况下，这是不可取的，因为发件人将绕过筛选堆栈的某些部分。 尽管您信任发件人，但发件人仍然可能会遭到入侵并发送恶意内容。 最好让筛选器执行检查每封邮件所需的操作，然后在筛选器出错时向 Microsoft 报告误报 [/](report-junk-email-messages-to-microsoft.md) 负数。 绕过筛选堆栈也会干扰 [ZAP](zero-hour-auto-purge.md)。
 
 当由于用户的 保险箱 发件人列表导致邮件跳过垃圾邮件筛选时 **，X-Forefront-Antispam-Report** 头字段将包含值 ，该值指示已绕过对垃圾邮件、欺骗和网络钓鱼的筛选。 `SFV:SFE`
 
@@ -117,11 +119,11 @@ ms.locfileid: "60157658"
 
 如果您无法按前面所述使用邮件流规则，则下一个最佳选项是向连接筛选器策略中的 IP 允许列表添加源电子邮件服务器。 有关详细信息，请参阅在 [EOP 中配置连接筛选](configure-the-connection-filter-policy.md)。
 
-**注意**:
+**注意**：
 
 - 将允许的 IP 地址数保持在最少，这一点很重要，因此尽可能避免使用整个 IP 地址范围。
 
-- 请勿使用属于使用者服务的 IP 地址 (例如，outlook.com) 共享基础结构。
+- 请勿使用属于使用者服务（例如， (或共享 outlook.com) IP 地址范围。
 
 - 定期查看 IP 允许列表中的条目并删除不再需要的条目。
 
@@ -138,13 +140,13 @@ ms.locfileid: "60157658"
 >
 > - 此方法会为攻击者将电子邮件成功发送到收件箱带来高风险，否则会进行筛选;但是，允许的发件人或允许的域列表不会阻止对恶意软件或高可信度网络钓鱼邮件进行筛选。
 >
-> - 请勿使用你拥有或 (接受的域) 或热门 (，例如，microsoft.com) 允许的域列表中。
+> - 不要将你拥有 (域或) 域或热门 (，例如，microsoft.com) 允许的域列表中。
 
 ## <a name="considerations-for-bulk-email"></a>批量电子邮件的注意事项
 
 标准 SMTP 电子邮件由 *邮件信封* 和邮件内容组成。 邮件信封包含在 SMTP 服务器之间传输和传递邮件所需的信息。 邮件内容包含邮件头字段（统称为 *邮件头*）和邮件正文。 RFC 5321 中介绍了邮件信封，RFC 5322 中介绍了邮件头。 收件人永远不会看到实际的邮件信封，因为它是由邮件传输过程生成的，实际上并不是邮件的一部分。
 
-- 地址 `5321.MailFrom` (**MAIL FROM** 地址、P1 发件人或信封发件人) 是在邮件的 SMTP 传输中使用的电子邮件地址。 虽然发件人可以指定不同的"返回路径"电子邮件地址，但此电子邮件地址通常记录在邮件头 (的"返回路径"头字段中) 。  如果邮件无法传递，则它是未送达报告的收件人 (NDR 或退回邮件) 。
+- `5321.MailFrom`地址 (**MAIL FROM** 地址、P1 发件人或信封发件人) 是在邮件的 SMTP 传输中使用的电子邮件地址。 虽然发件人可以指定不同的"返回路径"电子邮件地址，但此电子邮件地址通常记录在邮件头 (的"返回路径"标头字段中) 。  如果邮件无法传递，则它是未送达报告的收件人 (NDR 或退回邮件) 。
 
 - The `5322.From` (also known as the **From** address or P2 sender) is the email address in the **From** header field， and is the sender's email address that's displayed in email clients.
 
@@ -154,7 +156,7 @@ ms.locfileid: "60157658"
 
 - 地址 `5321.MailFrom` 为 blueyonder.airlines@margiestravel.com。
 
-- 地址是 blueyonder@news.blueyonderairlines.com，你将在邮件中看到 `5322.From` Outlook。
+- 地址是 blueyonder@news.blueyonderairlines.com，你将在邮件中 `5322.From` Outlook。
 
 保险箱 EOP 中的反垃圾邮件策略中的发件人列表和安全域列表仅检查这些地址， `5322.From` 这Outlook 保险箱地址的发件人类似 `5322.From` 。
 
@@ -162,6 +164,6 @@ ms.locfileid: "60157658"
 
 - 添加 blueyonder@news.blueyonderairlines.com (`5322.From` 发件人) 地址Outlook 保险箱地址。
 
-- [将邮件流规则](#recommended-use-mail-flow-rules) 与以下条件一同使用：查找 blueyonder@news.blueyonderairlines.com (、blueyonder.airlines@margiestravel.com (或) `5322.From` `5321.MailFrom` 的邮件。
+- [将邮件流规则](#recommended-use-mail-flow-rules) 与以下条件一同使用：从 `5322.From` blueyonder@news.blueyonderairlines.com (、blueyonder.airlines@margiestravel.com (或) `5321.MailFrom` 的邮件。
 
 有关详细信息，请参阅在 [EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。

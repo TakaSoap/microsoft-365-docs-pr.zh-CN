@@ -1,8 +1,7 @@
 ---
 title: 使用 PowerShell cmdlet 配置并运行Microsoft Defender 防病毒
-description: 在Windows 10中，可以使用 PowerShell cmdlet 运行扫描、更新安全智能以及更改 Microsoft Defender 防病毒。
+description: 在Windows 10和Windows 11中，可以使用 PowerShell cmdlet 运行扫描、更新安全智能以及更改 Microsoft Defender 防病毒 中的Microsoft Defender 防病毒。
 keywords: 扫描， 命令行， mpcmdrun， defender
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,19 +10,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 07/23/2020
+ms.date: 10/18/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7aba9169a32915d4c77d8096e3b818b9c4c4abda
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: be306fdde4e3b83de323fd769bdc069e2f2958ba
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203923"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882449"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>使用 PowerShell cmdlet 配置和管理Microsoft Defender 防病毒
 
@@ -38,10 +37,10 @@ ms.locfileid: "60203923"
 
 有关 cmdlet 及其函数和可用参数的列表，请参阅 [Defender cmdlet 主题](/powershell/module/defender) 。
 
-PowerShell cmdlet 在 Windows Server 环境中最有用，这些环境不依赖图形用户界面 (GUI) 来配置软件。
+PowerShell cmdlet 在 Windows Server 环境中最有用，这些环境不依赖图形用户界面 (GUI) 配置软件。
 
 > [!NOTE]
-> PowerShell cmdlet 不应用作完整网络策略管理基础结构（如[Microsoft Endpoint Configuration Manager、](/configmgr)组策略管理控制台或 Microsoft Defender 防病毒[](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))[组策略 ADMX 模板）的](https://www.microsoft.com/download/101445)替换。
+> PowerShell cmdlet 不应用作完整网络策略管理基础结构（如[Microsoft Endpoint Configuration Manager、](/configmgr)组策略管理控制台或 Microsoft Defender 防病毒[](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))组策略[ADMX 模板）的替换](https://www.microsoft.com/download/101445)。
 
 使用 PowerShell 所做的更改将影响部署或进行更改的终结点上的本地设置。 这意味着，使用组策略、Microsoft Endpoint Configuration Manager或Microsoft Intune部署策略可能会覆盖使用 PowerShell 所做的更改。
 

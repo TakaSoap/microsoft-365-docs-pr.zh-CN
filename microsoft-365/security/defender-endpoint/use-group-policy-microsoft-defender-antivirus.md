@@ -2,7 +2,6 @@
 title: 使用Microsoft Defender 防病毒配置策略
 description: 了解如何使用组策略在 Microsoft Defender for Endpoint Microsoft Defender 防病毒终结点上配置和管理用户。
 keywords: 组策略， GPO， 配置， 设置
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,19 +9,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/08/2021
+ms.date: 10/18/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c00ed9b12212cb24cb3ac6e4c7a8ab1577832453
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a8eb8db33a79ccb7d4cc9cd010a689e524746fad
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176795"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883673"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>使用组策略设置配置和管理Microsoft Defender 防病毒
 
@@ -56,15 +55,15 @@ ms.locfileid: "60176795"
 本主题中的下表列出了 Windows 10 版本 1703 中提供的组策略设置，并提供指向本文档库中相应主题的链接 (（如果适用) ）。
 
 > [!TIP]
-> [下载 2004 年 5 设置 年 5 ](https://www.microsoft.com/download/101451)Windows 10更新的组策略 (参考) 。 此电子表格列出了 2004 年 5 月 Windows 10 Update (2004 年 5 月提供的管理模板文件中包含的计算机和用户配置) 。 可以在编辑组策略对象时配置对电子表格的参考。<br/><br/>
+> [下载组策略设置 Reference Spreadsheet for Windows 10 May 2020 Update (2004) 。 ](https://www.microsoft.com/download/101451) 此电子表格列出了 2004 年 5 月更新 Windows 10 2004 年 5 月 (中包含的管理模板文件中包含的计算机和用户配置) 。 可以在编辑组策略对象时配置对电子表格的参考。<br/><br/>
 
 <br>
 
 ****
 
-|位置|设置|文章|
+|位置|Setting|文章|
 |---|---|---|
-|客户端接口|启用无头 UI 模式|[阻止用户查看或Microsoft Defender 防病毒用户界面](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
+|客户端接口|启用无头 UI 模式|[阻止用户查看或与用户界面Microsoft Defender 防病毒交互](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
 |客户端接口|当客户端需要执行一个操作时，向客户端显示其他文本|[配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)|
 |客户端接口|禁止显示所有通知|[配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)|
 |客户端接口|禁止重新启动通知|[配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)|
@@ -81,8 +80,8 @@ ms.locfileid: "60176795"
 |网络检查系统|为网络流量检查指定其他定义集|[为网络流量检查指定其他定义集](specify-additional-definitions-network-traffic-inspection-mdav.md)|
 |网络检查系统|启用定义停用|[配置定义停用](turn-on-definition-retirement.md)|
 |网络检查系统|打开协议识别|[打开协议识别](turn-on-protocol-recognition.md)|
-|隔离|为从隔离文件夹中删除项目配置本地设置替代|[阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|隔离|配置从隔离文件夹删除项目|[配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md)|
+|Quarantine|为从隔离文件夹中删除项目配置本地设置替代|[阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Quarantine|配置从隔离文件夹删除项目|[配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md)|
 |实时保护|配置本地设置覆盖以监视您的计算机上的文件和程序活动|[阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |实时保护|配置本地设置覆盖以监视传入和传出文件活动|[阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |实时保护|配置用于扫描所有下载的文件和附件的本地设置替代|[阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
@@ -99,17 +98,17 @@ ms.locfileid: "60176795"
 |修正|为运行计划的完整扫描以完成修正的时间配置本地设置替代|[阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |修正|指定一周中的哪些天运行计划的完全扫描以完成修正|[配置计划Microsoft Defender 防病毒扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |修正|指定一天中运行计划完整扫描以完成修正的时间|[配置计划Microsoft Defender 防病毒扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|报表|关闭增强型通知|[配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
+|Reporting|关闭增强型通知|[配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
 |根|关闭Microsoft Defender 防病毒|未 (此设置必须设置为"未配置"，以确保任何已安装的第三方防病毒应用) 
 |根|定义绕过代理服务器的地址|[配置设备代理和 Internet 连接设置](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
-|根|定义代理自动 (.pac) 以连接到网络|[配置设备代理和 Internet 连接设置](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
+|根|定义代理自动配置 (.pac) 以连接到网络|[配置设备代理和 Internet 连接设置](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |根|定义用于连接到网络的代理服务器|[配置设备代理和 Internet 连接设置](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |根|配置列表的本地管理员合并行为|[阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |根|允许反恶意软件服务以正常优先级启动|[配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md)|
 |根|允许反恶意软件服务始终运行|[配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md)|
 |根|关闭常规修正|[配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md)|
 |根|随机化计划任务时间|[配置计划扫描以用于Microsoft Defender 防病毒](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|扫描|允许用户暂停扫描|[阻止用户查看或与](prevent-end-user-interaction-microsoft-defender-antivirus.md)Microsoft Defender 防病毒 用户界面交互 (不支持Windows 10) |
+|扫描|允许用户暂停扫描|[阻止用户查看](prevent-end-user-interaction-microsoft-defender-antivirus.md)或与 Microsoft Defender 防病毒 用户界面 (不支持Windows 10) |
 |扫描|在运行计划扫描之前检查最新的病毒和间谍软件定义|[管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md)|
 |扫描|定义强制进行跟进扫描的天数|[管理过期终结点的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
 |扫描|打开"捕获完整扫描"|[管理过期终结点的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md)|

@@ -2,8 +2,6 @@
 title: 网络设备发现和漏洞管理
 description: 安全建议和漏洞检测现在适用于交换机、路由器、WLAN 控制器和防火墙的操作系统。
 keywords: 网络设备、网络设备漏洞检测、交换机、路由器、WLAN 控制器和防火墙的操作系统
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 87b712bb8c70f9c1f3dad62a156cc4a7a45e2647
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1ec9863a97d58dd61aaf47da1fcd965aab1fd4d3
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667256"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881969"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>网络设备发现和漏洞管理
 
@@ -40,15 +38,15 @@ ms.locfileid: "60667256"
 > [!NOTE]
 > 2021 年 4 月[](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 13 日发布的网络设备发现和漏洞评估博客提供了有关 Defender for Endpoint 中新网络设备发现功能的 \) 见解。  本文概述了网络设备发现旨在应对的挑战，并详细介绍了如何使用这些新功能。
 
-网络发现功能在安全中心和 Microsoft 365控制台的"设备Microsoft 365 Defender部分中提供。
+网络发现功能在安全中心和 Microsoft 365 Defender控制台的"设备Microsoft 365部分中提供。
 
-指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 发现后，适用于终结点的 Defender 危险和漏洞管理功能将提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。
+指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 一旦发现，适用于终结点的 defender 危险和漏洞管理 功能将提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。
 
 发现网络设备并进行分类后，安全管理员将能够接收最新的安全建议，并查看最近在组织中部署的网络设备上发现的漏洞。
 
 ## <a name="approach"></a>方法
 
-由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备使用 SNMP 或只读 (对网络设备执行经过身份验证) 。
+由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备使用 SNMP (只读) 对网络设备执行经过身份验证的扫描。
 
 需要记住两种类型的设备：
 
@@ -74,11 +72,11 @@ ms.locfileid: "60667256"
 
 第一步是选择将执行经过身份验证的网络扫描的设备。
 
-1. 确定适用于终结点的 Defender (客户端或) ，该客户端或服务器具有与计划扫描的网络设备的管理端口的网络连接。
+1. 确定具有与计划扫描 (网络设备的管理端口的网络连接的 () 或服务器客户端或服务器的 Defender for Endpoint。
 
 2. 必须允许 Defender for Endpoint 评估设备和目标网络设备之间的 SNMP 流量 (例如，防火墙) 。
 
-3. 确定将针对哪些网络设备评估哪些 (例如：Cisco 交换机或 Palo Alto Networks 防火墙) 。
+3. 确定将评估哪些网络设备的漏洞 (例如：Cisco 交换机或 Palo Alto Networks 防火墙) 。
 
 4. 确保在所有已配置的网络设备上启用 SNMP 只读，以允许 Defender for Endpoint 评估设备查询配置的网络设备。 此功能的正确功能不需要"SNMP 写入"。
 
@@ -104,8 +102,8 @@ ms.locfileid: "60667256"
 
 ## <a name="install-the-network-scanner"></a>安装网络扫描程序
 
-1. 转到 **"Microsoft 365网络** \>  \> **设置"** 下 (\> **安全终结点评估**) 。
-    1. 在Microsoft 365 Defender门户中，转到"设置 >作业"页。
+1. 转到网络 **Microsoft 365下** 设置终结点评估 (\>  \>  \> **作业) 。**
+    1. 在"Microsoft 365 Defender"门户中，设置 >"评估作业"页。
 
 2. 下载网络扫描程序，将其安装在指定的 Defender for Endpoint 评估设备上。
 
@@ -114,7 +112,7 @@ ms.locfileid: "60667256"
 
 ## <a name="network-scanner-installation--registration"></a>网络扫描程序安装&注册
 
-登录过程可以在指定的评估设备本身或其他任何设备（例如，你的个人客户端设备 (）上) 。
+登录过程可以在指定的评估设备本身或其他任何设备（例如 (，你的个人客户端设备）上) 。
 
 要完成网络扫描程序注册过程，请执行以下操作：
 
@@ -129,7 +127,7 @@ ms.locfileid: "60667256"
 
 ## <a name="configure-a-new-assessment-job"></a>配置新的评估作业
 
-在"评估作业"页 **的设置，** 选择 **"添加网络评估作业"。** 按照设置过程选择要定期扫描并添加到设备清单的网络设备。
+在"评估作业"页 **设置，** 选择 **"添加网络评估作业"。** 按照设置过程选择要定期扫描并添加到设备清单的网络设备。
 
 若要防止网络设备清单中的设备重复，请确保跨多个评估设备仅配置每个 IP 地址一次。
 
@@ -140,7 +138,7 @@ ms.locfileid: "60667256"
 
 1. 选择"评估作业"名称和"评估设备"，其中安装了网络扫描程序。 此设备将定期执行经过身份验证的扫描。
 
-2. 添加要扫描的目标网络设备的 IP 地址 (或部署这些设备的子网) 。
+2. 添加要扫描的目标网络设备的 IP 地址， (部署这些设备的子网) 。
 
 3. 添加目标网络设备所需的 SNMP 凭据。
 
@@ -172,7 +170,7 @@ ms.locfileid: "60667256"
 
 验证所需的 URL 是否添加到防火墙设置中的允许域。 此外，请确保代理设置已配置，如配置 [设备代理和 Internet 连接设置 中所述](configure-proxy-internet.md)。
 
-### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>Microsoft.com/devicelogin 网页未显示
+### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>未 Microsoft.com/devicelogin 网页
 
 验证所需的 URL 是否添加到防火墙中的允许域。 此外，请确保代理设置已配置，如配置 [设备代理和 Internet 连接设置 中所述](configure-proxy-internet.md)。
 

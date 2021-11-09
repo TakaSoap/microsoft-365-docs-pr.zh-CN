@@ -1,9 +1,7 @@
 ---
 title: 设备发现概述
-description: 了解如何利用终结点发现Microsoft 365 Defender在网络中查找非托管设备
+description: 了解如何利用终结点发现Microsoft 365 Defender查找网络中非托管设备
 keywords: 设备发现， 发现， 被动， 主动， 网络， 可见性， 服务器， 工作站， 载入， 非托管设备
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c1a76bb0a82562a7c2a2f96e87b087f6fd09fcea
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 09492c81135c9859b683e2d042e8e4a99cc94c83
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700999"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882173"
 ---
 # <a name="device-discovery-overview"></a>设备发现概述
 
@@ -115,11 +113,11 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 设备发现将适用于终结点载入设备的 Microsoft Defender 用作网络数据源，将活动属性化为未载入的设备。 这意味着，如果 Microsoft Defender for Endpoint 已载入设备与非载入设备通信，则未载入的设备上的活动可以在时间线上和通过高级搜寻 DeviceNetworkEvents 表看到。
 
-新事件是基于连接的传输控制 (TCP) ，并且适合当前的 DeviceNetworkEvents 方案。 从启用了非 Microsoft Defender for Endpoint 的设备进入启用终结点的 Microsoft Defender 设备的 TCP。
+新事件是传输控制协议 (TCP) 基于连接，并且适合当前的 DeviceNetworkEvents 方案。 从启用了非 Microsoft Defender for Endpoint 的设备进入启用终结点的 Microsoft Defender 设备的 TCP。
 
 还添加了以下操作类型：
 
-- ConnectionAttempt - 尝试建立 TCP 连接 (同步) 
+- ConnectionAttempt - 尝试在合成器中 (TCP) 
 - ConnectionAcknowledged - 确认已接受 syn\ack (TCP) 
 
 您可以尝试此示例查询：
@@ -132,7 +130,7 @@ DeviceNetworkEvents
 
 ## <a name="changed-behavior"></a>已更改行为
 
-以下部分列出了启用此功能后，你将在 Microsoft Defender for Endpoint 和/或 Microsoft 365安全中心中观察到的更改。
+以下部分列出了启用此功能后，你将在 Microsoft Defender for Endpoint 和/Microsoft 365安全中心中观察到的更改。
 
 1. 未载入到 Microsoft Defender for Endpoint 的设备应显示在设备清单、高级搜寻和 API 查询中。 这可能会显著增加查询结果的大小。
     1. 高级搜寻中的"DeviceInfo"和"DeviceNetworkInfo"表现在将保留发现的设备。 可以使用"OnboardingStatus"属性筛选出这些设备。

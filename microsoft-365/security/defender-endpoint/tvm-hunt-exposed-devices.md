@@ -1,9 +1,7 @@
 ---
 title: 搜索暴露的设备
-description: 了解如何危险和漏洞管理安全管理员、IT 管理员和 SecOps 协作。
+description: 了解如何危险和漏洞管理管理员、IT 管理员和 SecOps 协作。
 keywords: 适用于 Endpoint-tvm 方案的 Microsoft Defender， 适用于终结点的 Microsoft Defender， tvm， tvm 方案， 减少威胁 & 漏洞暴露， 减少威胁和漏洞， 改进安全配置， 提高 Microsoft 设备安全分数， 增加威胁 & 漏洞 Microsoft 设备安全分数， Microsoft 设备安全分数， 曝光分数， 安全控制
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3e413b511f080c23d76e616d83de0cb70a2f966f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5a7133bcb939bc19e9a705a5be5985e76ebee4fe
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210825"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881669"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>搜寻公开的设备 - 危险和漏洞管理
 
@@ -45,7 +43,7 @@ ms.locfileid: "60210825"
 
 - [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - 设备上安装的软件清单，包括其版本信息和停止支持状态。
 
-- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - 设备上发现的软件漏洞以及可解决每个漏洞的可用安全更新列表。
+- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - 在设备上发现的软件漏洞以及可解决每个漏洞的可用安全更新列表。
 
 - [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - 公开披露漏洞的知识库，包括攻击代码是否公开可用。
 
@@ -55,32 +53,32 @@ ms.locfileid: "60210825"
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>检查高严重性警报中涉及的设备
 
-1. 从导航 **门户** 的左侧导航窗格中转到搜寻高级 \> Microsoft 365 Defender。
+1. 从导航 \> **门户的** 左侧导航窗格中转到搜寻高级Microsoft 365 Defender。
 
 2. 向下滚动到 TVM 高级搜寻架构，以熟悉列名称。
 
 3. 输入以下查询：
 
-```kusto
-// Search for devices with High active alerts or Critical CVE public exploit
-let DeviceWithHighAlerts = AlertInfo
-| where Severity == "High"
-| project Timestamp, AlertId, Title, ServiceSource, Severity
-| join kind=inner (AlertEvidence | where EntityType == "Machine" | project AlertId, DeviceId, DeviceName) on AlertId
-| summarize HighSevAlerts = dcount(AlertId) by DeviceId;
-let DeviceWithCriticalCve = DeviceTvmSoftwareVulnerabilities
-| join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
-| where IsExploitAvailable == 1 and CvssScore >= 7
-| summarize NumOfVulnerabilities=dcount(CveId),
-DeviceName=any(DeviceName) by DeviceId;
-DeviceWithCriticalCve
-| join kind=inner DeviceWithHighAlerts on DeviceId
-| project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
-```
+    ```kusto
+    // Search for devices with High active alerts or Critical CVE public exploit
+    let DeviceWithHighAlerts = AlertInfo
+    | where Severity == "High"
+    | project Timestamp, AlertId, Title, ServiceSource, Severity
+    | join kind=inner (AlertEvidence | where EntityType == "Machine" | project AlertId, DeviceId, DeviceName) on AlertId
+    | summarize HighSevAlerts = dcount(AlertId) by DeviceId;
+    let DeviceWithCriticalCve = DeviceTvmSoftwareVulnerabilities
+    | join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
+    | where IsExploitAvailable == 1 and CvssScore >= 7
+    | summarize NumOfVulnerabilities=dcount(CveId),
+    DeviceName=any(DeviceName) by DeviceId;
+    DeviceWithCriticalCve
+    | join kind=inner DeviceWithHighAlerts on DeviceId
+    | project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
+    ```
 
 ## <a name="related-topics"></a>相关主题
 
-- [威胁漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [安全性建议](tvm-security-recommendation.md)
 - [API](next-gen-threat-and-vuln-mgt.md#apis)
 - [为角色配置危险和漏洞管理访问](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

@@ -2,8 +2,6 @@
 title: 事件时间线危险和漏洞管理
 description: 事件时间线是一个风险新闻源，可帮助你解释如何将风险引入组织，以及采取哪些缓解措施来降低风险。
 keywords: 事件时间线， Microsoft Defender for Endpoint 事件时间线， Microsoft Defender for Endpoint tvm 事件时间线， 危险和漏洞管理， Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e74989d85919e0f8c89f28e67c5bbbf7cec7ff04
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 393f58020880c6e69813e536cc692590ed1a8368
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191667"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883097"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>事件时间线 - 危险和漏洞管理
 
@@ -45,15 +43,15 @@ ms.locfileid: "60191667"
 
 ## <a name="navigate-to-the-event-timeline-page"></a>导航到"事件时间线"页
 
-还有三个入口点来自危险和漏洞管理[仪表板](tvm-dashboard-insights.md)：
+还有三个入口点来自 危险和漏洞管理[仪表板](tvm-dashboard-insights.md)：
 
 - **组织曝光分数卡**：将鼠标悬停在"时间曝光分数"图中的事件点上，然后选择"查看这一天的所有事件"。 这些事件表示软件漏洞。
-- **Microsoft 设备安全分数**：将鼠标悬停在"设备一段时间的分数"图中的事件点上，然后选择"查看这一天的所有事件"。 这些事件表示新的配置评估。
-- **Top events card**： Select "Show more" at the bottom of the top events table. 卡片显示最近 7 天内影响最大的三个事件。 如果事件影响大量设备，或者它是一个关键漏洞，则可包括影响事件。
+- **Microsoft 设备安全分数**：将鼠标悬停在"你的设备时间分数"图中的事件点上，然后选择"查看当天的所有事件"。 这些事件表示新的配置评估。
+- **Top events card**： Select "Show more" at the bottom of the top events table. 卡片显示最近 7 天内影响最大的三个事件。 如果事件影响大量设备，或者它是一个关键漏洞，则可包括有影响的事件。
 
 ### <a name="exposure-score-and-microsoft-secure-score-for-devices-graphs"></a>设备曝光分数和 Microsoft 安全分数图
 
-在危险和漏洞管理仪表板中，将鼠标悬停在曝光分数图上，查看当天影响设备的顶部软件漏洞事件。 将鼠标悬停在 Microsoft 设备安全分数图上可查看影响分数的新安全配置评估。
+在危险和漏洞管理仪表板中，将鼠标悬停在"曝光分数"图上，查看当天影响设备的顶部软件漏洞事件。 将鼠标悬停在 Microsoft 设备安全分数图上可查看影响分数的新安全配置评估。
 
 如果没有影响你的设备或你的设备分数的事件，则不会显示任何事件。
 
@@ -120,7 +118,7 @@ ms.locfileid: "60191667"
 
 ## <a name="view-event-timelines-in-software-pages"></a>在软件页面中查看事件时间线
 
-若要打开软件页面，请选择事件>在 ("相关组件"部分选择超链接软件名称 (如 Visual Studio 2017) 。 [详细了解软件页面](tvm-software-inventory.md#software-pages)
+若要打开软件页面，请选择事件>在 ("相关组件"部分选择超链接软件名称 Visual Studio) 如 Visual Studio 2017）。 [详细了解软件页面](tvm-software-inventory.md#software-pages)
 
 将显示一个完整的页面，其中包含特定软件的所有详细信息。 将鼠标悬停在图形上以查看该特定软件的事件时间线。
 
@@ -132,7 +130,7 @@ ms.locfileid: "60191667"
 
 ## <a name="related-topics"></a>相关主题
 
-- [威胁漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [仪表板](tvm-dashboard-insights.md)
 - [风险评分](tvm-exposure-score.md)
 - [安全性建议](tvm-security-recommendation.md)

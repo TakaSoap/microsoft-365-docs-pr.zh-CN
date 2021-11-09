@@ -2,7 +2,6 @@
 title: 解决性能问题
 description: 解决与 Microsoft Defender for Endpoint 中的实时保护服务相关的高 CPU 使用率问题。
 keywords: 疑难解答， 性能， 高 CPU 使用率， 高 CPU 使用率， 错误， 修复， 更新合规性， oms， 监视器， 报告， Microsoft Defender 防病毒
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -12,17 +11,17 @@ ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
-ms.date: 04/14/2021
+ms.date: 10/19/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b36d4d46e6a9ab8b705626ab186e06e577f2c46e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: cf0ca72bb29c47708c497740b9bd3b64a7347136
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665535"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884069"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>解决与实时保护相关的性能问题
 
@@ -51,7 +50,7 @@ ms.locfileid: "60665535"
 
 如果您能够轻松识别影响系统性能的软件，请转到软件供应商的知识库或支持中心。 如果他们对防病毒排除项有建议，请进行搜索。 如果供应商的网站没有支持票证，可以打开支持票证，并要求他们发布一个支持票证。
 
-我们建议软件供应商遵循与行业合作中的各种准则，尽量减少 [误报](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/)。 供应商可以通过客户门户提交[Microsoft 安全智能软件](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper)。
+我们建议软件供应商遵循与行业合作中的各种准则，尽量减少 [误报](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/)。 供应商可以通过客户门户提交[Microsoft 安全智能。](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper)
 
 ## <a name="analyze-the-microsoft-protection-log"></a>分析 Microsoft 保护日志
 
@@ -67,13 +66,13 @@ ms.locfileid: "60665535"
 |---|---|
 |ProcessImageName|进程映像名称|
 |TotalTime|扫描此过程访问的文件所用的累积持续时间（以毫秒为单位）|
-|Count|此过程访问的已扫描文件数|
+|计数|此过程访问的已扫描文件数|
 |MaxTime|此过程访问的文件的最长单次扫描的持续时间（以毫秒为单位）|
 |MaxTimeFile|此进程访问的文件的路径，其中记录了持续时间最长的 `MaxTime` 扫描|
 |EstimatedImpact|在此过程遇到扫描活动的时间段外，扫描此进程访问的文件所花费的时间百分比|
 |
 
-如果性能影响很大，请尝试按照配置并验证应用扫描排除项中的步骤将进程添加到路径[/Microsoft Defender 防病毒排除项](collect-diagnostic-data.md)。
+如果性能影响很大，请尝试按照配置和验证应用扫描的排除项中的步骤将进程添加到路径[/Microsoft Defender 防病毒排除项](collect-diagnostic-data.md)。
 
 如果上一步不能解决问题，可以通过以下部分中的进程监视器或Windows[记录器](#capture-performance-logs-using-windows-performance-recorder)来收集[](#capture-process-logs-using-process-monitor)更多信息。
 
@@ -93,7 +92,7 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
 
 3. 在 中解压缩文件 `C:\temp` ，使文件夹路径为 `C:\temp\ProcessMonitor` 。
 
-4. 将 **ProcMon.exe** 复制到要Windows的 Windows 客户端或服务器。
+4. 将 **ProcMon.exe** 复制到Windows故障排除Windows客户端或服务器。
 
 5. 在运行 ProcMon 之前，请确保已关闭与 CPU 使用率高问题不相关的所有其他应用程序。 执行此操作将最大程度地减少要检查的进程数。
 
@@ -156,13 +155,13 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
 
 ## <a name="capture-performance-logs-using-windows-performance-recorder"></a>使用 Performance Recorder Windows性能日志
 
-可以使用 WPR Windows记录器 (WPR) 向 Microsoft 支持人员提交其他信息。 WPR 是一款功能强大的录制工具，可创建记录Windows跟踪。
+可以使用 WPR Windows Performance Recorder () 向 Microsoft 支持人员提交其他信息。 WPR 是一款功能强大的录制工具，可创建记录Windows跟踪。
 
 WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可以从下载并安装 Windows [ADK 下载](/windows-hardware/get-started/adk-install)。 也可以下载它作为 Windows 10 SDK 中 Windows 10 软件开发[工具包的一部分](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)。
 
 可以按照使用 WPR UI 捕获性能日志中的步骤使用 [WPR 用户界面](#capture-performance-logs-using-the-wpr-ui)。
 
-或者，您也可以使用命令行工具 *wpr.exe*，该工具在 Windows 8 和更高版本中可用，具体方法为按照使用 WPR CLI 捕获性能 [日志中的步骤操作](#capture-performance-logs-using-the-wpr-cli)。
+或者，也可以按照使用[WPR CLI](#capture-performance-logs-using-the-wpr-cli)捕获性能日志中的步骤，使用 Windows 8 和更高版本中提供的命令行工具wpr.exe。
 
 ### <a name="capture-performance-logs-using-the-wpr-ui"></a>使用 WPR UI 捕获性能日志
 
@@ -171,7 +170,7 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
 
 1. 下载并安装 WPR。
 
-2. 在 *Windows工具包"* 下，右键单击Windows **录制器"。**
+2. 在 *Windows工具包"* 下，右键单击Windows **记录器"。**
 
     !["开始"菜单。](images/wpr-01.png)
 
@@ -232,7 +231,7 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
 
     ![填写详细信息。](images/wpr-12.png)
 
-    1. 选择 **"文件名："** 以确定跟踪文件的保存位置。 默认情况下，它 1.is 另存为 `%user%\Documents\WPR Files\` 。
+    1. 选择 **"文件名："** 以确定跟踪文件的保存位置。 默认情况下，它保存到 `%user%\Documents\WPR Files\` 。
     1. 选择“**保存**”。
 
 14. 在合并跟踪时等待。
@@ -253,7 +252,7 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
 
 1. 将 **[Microsoft Defender for Endpoint 分析](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** 配置文件的性能跟踪下载到本地目录中名为 的文件，例如 `MDAV.wprp` `C:\traces` 。
 
-2. 右键单击"**开始**"菜单图标，Windows PowerShell (管理员) 命令提示符 **(") "** 管理员"命令提示符窗口。 
+2. 右键单击"**开始**"菜单图标，然后选择"Windows PowerShell (") "命令提示 **(") "** 管理员"命令提示符窗口。
 
 3. 当出现"用户帐户控制"对话框时，选择"**是"。**
 
@@ -264,7 +263,7 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
     ```
 
     > [!WARNING]
-    > 如果你的 Windows 服务器具有 64 GB 或 RAM 或更多，请分别使用配置文件而不是配置文件和 `WDForLargeServers.Light` `WDForLargeServers.Verbose` `WD.Light` `WD.Verbose` 。 否则，你的系统可能会占用大量未分页的池内存或缓冲区，这可能会导致系统不稳定。
+    > 如果您的 Windows 服务器具有 64 GB 或 RAM 或更多，请分别使用配置文件而不是配置文件和 `WDForLargeServers.Light` `WDForLargeServers.Verbose` `WD.Light` `WD.Verbose` 。 否则，你的系统可能会占用大量未分页的池内存或缓冲区，这可能会导致系统不稳定。
 
 5. 重现问题。
 
@@ -279,9 +278,9 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
 
 7. 等待跟踪合并。
 
-8. 在提交到 Microsoft 支持人员时，同时包括 文件和 文件夹。
+8. 在提交到 Microsoft 支持人员时同时包括 文件和 文件夹。
 
 ## <a name="see-also"></a>另请参阅
 
-- [收集Microsoft Defender 防病毒诊断数据](collect-diagnostic-data.md)
+- [收集Microsoft Defender 防病毒数据](collect-diagnostic-data.md)
 - [配置并验证扫描Microsoft Defender 防病毒排除项](configure-exclusions-microsoft-defender-antivirus.md)

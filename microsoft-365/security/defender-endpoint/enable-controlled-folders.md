@@ -1,8 +1,7 @@
 ---
 title: 启用受控文件夹访问
-keywords: 受控文件夹访问权限， windows 10， windows defender， 勒索软件， 保护， 文件， 文件夹， 启用， 打开， 使用
+keywords: 受控文件夹访问权限， windows 10， windows 11， windows defender， 勒索软件， 保护， 文件， 文件夹， 启用， 打开， 使用
 description: 了解如何通过启用受控文件夹访问权限来保护重要文件
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.topic: article
 ms.mktglfcycl: manage
@@ -16,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 527bd73d11a40672839d29a5007298a0807d95b6
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 6f18bfdc4e8dd4701831ed169684db110a54e154
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804760"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882137"
 ---
 # <a name="enable-controlled-folder-access"></a>启用受控文件夹访问
 
@@ -33,7 +32,7 @@ ms.locfileid: "60804760"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
-[受控文件夹访问权限](controlled-folders.md) 可帮助你保护重要数据免受恶意应用和威胁（如勒索软件）的侵害。 受控文件夹访问权限包含在 Windows 10 Windows Server 2019 中。  受控文件夹访问权限也是适用于 Windows Server [2012R2 和 2016 的](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)新式统一解决方案的一部分。
+[受控文件夹访问权限](controlled-folders.md) 可帮助你保护重要数据免受恶意应用和威胁（如勒索软件）的侵害。 受控文件夹访问权限包含在 Windows 10、Windows 11 和 Windows Server 2019 中。 受控文件夹访问权限也是 Windows [Server 2012R2 和 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)新式统一解决方案的一部分。
 
 可以使用以下任一方法启用受控文件夹访问权限：
 
@@ -99,7 +98,7 @@ ms.locfileid: "60804760"
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager， go to **Assets and Compliance** \> **Endpoint Protection** Windows Defender Exploit \> **Guard**.
+1. In Microsoft Endpoint Configuration Manager， go to **Assets and Compliance** \> **Endpoint Protection** Windows Defender \> **Exploit Guard**.
 
 2. 选择 **"主页** \> **创建攻击防护策略"。**
 
@@ -120,7 +119,7 @@ ms.locfileid: "60804760"
 
 2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-3. 展开树以 **Windows受> Microsoft Defender 防病毒 > Windows Defender受控>访问权限的组件**。
+3. 展开树以 **Windows攻击> Microsoft Defender 防病毒 > Windows Defender受控>访问权限的组件**。
 
 4. 双击配置受控文件夹 **访问权限** 设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
    - **启用** - 不允许恶意和可疑应用对受保护文件夹中的文件进行更改。 将在事件日志中提供Windows通知。
@@ -136,7 +135,7 @@ ms.locfileid: "60804760"
 
 ## <a name="powershell"></a>PowerShell
 
-1. 在 **"管理"中"开始"菜单 powershell，** 右键单击"Windows PowerShell **并选择"** 以 **管理员角色运行"。**
+1. 在"管理"中"开始"菜单 **powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
 
 2. 输入以下 cmdlet：
 

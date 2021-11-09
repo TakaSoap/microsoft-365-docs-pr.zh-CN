@@ -1,9 +1,7 @@
 ---
 title: 规划支持终止的软件和硬件版本
 description: 发现并规划不再受支持且不会接收安全更新的软件和硬件版本。
-keywords: 危险和漏洞管理， Microsoft Defender for Endpoint tvm security recommendation， cybersecurity recommendation， actionable security recommendation
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+keywords: 危险和漏洞管理， 适用于终结点的 Microsoft Defender 电视安全建议， 网络安全建议， 可操作的安全建议
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,14 +16,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e705c868dfc4bd5bba71d21d73fc112c6a54673
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cf09fb75ca14a35f0ca29c9352864329459b3203
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210873"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881729"
 ---
-# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>规划支持终止的软件版本和具有危险和漏洞管理
+# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>规划支持终止的软件版本和具有 危险和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

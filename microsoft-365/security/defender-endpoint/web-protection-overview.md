@@ -2,7 +2,6 @@
 title: Web 保护
 description: 了解 Microsoft Defender for Endpoint 中的 Web 保护及其如何保护你的组织
 keywords: Web 保护， Web 威胁防护， Web 浏览， 安全， 网络钓鱼， 恶意软件， 攻击， 网站， 网络保护， Edge， Internet Explorer， Chrome， Firefox， Web 浏览器， 恶意网站
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4e1f4f75971f70f97766af1ace967dfecc461cd2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6f8a9d27566ea3f6fcf43ad2b8f183c6800bb8aa
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159230"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883709"
 ---
 # <a name="web-protection"></a>Web 保护
 
@@ -80,7 +79,7 @@ Web 内容筛选包括：
 
 ## <a name="order-of-precedence"></a>优先顺序
 
-Web 保护由以下组件组成，按优先顺序列出。 每个组件都由 Microsoft Edge 中的 SmartScreen 客户端和所有其他浏览器和进程中的网络保护客户端强制执行。
+Web 保护由以下组件组成，按优先顺序列出。 其中每个组件都由 Microsoft Edge 中的 SmartScreen 客户端和所有其他浏览器和进程中的网络保护客户端强制执行。
 
 - 自定义指示器 (IP/URL、MICROSOFT CLOUD APP SECURITY (MCAS) 策略) 
   - 允许
@@ -91,12 +90,12 @@ Web 保护由以下组件组成，按优先顺序列出。 每个组件都由 Mi
   - SmartScreen Intel，包括 Exchange Online Protection (EOP) 
   - 升级
 
-- WCF (Web 内容) 
+- WCF (Web) 
 
 > [!NOTE]
 > Microsoft Cloud App Security (MCAS) 当前仅为阻止的 URL 生成指示器。
 
-优先级顺序与计算 URL 或 IP 的操作顺序相关。 例如，如果你有 Web 内容筛选策略，可以通过自定义 IP/URL 指示器创建排除项。 IoC (的) 指标的优先级顺序比 WCF 块高。
+优先级顺序与计算 URL 或 IP 的操作顺序相关。 例如，如果你有 Web 内容筛选策略，可以通过自定义 IP/URL 指示器创建排除项。 IoC (泄露) 的优先级顺序比 WCF 块高。
 
 同样，在指示器冲突期间，允许始终优先于块 (替代逻辑) 。 这意味着允许指示器将超过存在的任何阻止指示器。
 
@@ -113,11 +112,11 @@ Web 保护由以下组件组成，按优先顺序列出。 每个组件都由 Mi
 |Warn|阻止|阻止|阻止|警告 (覆盖) |
 |
 
-自定义指示器不支持内部 IP 地址。 对于最终用户绕过的警告策略，默认情况下，该用户的站点将取消阻止 24 小时。 此时间范围由管理员修改，并通过 SmartScreen 云服务向下传递。 此外，在使用 Web 威胁阻止的云解决方案提供商Microsoft Edge恶意软件/网络钓鱼 (可以禁用绕过) 。 有关详细信息，请参阅 SmartScreen Microsoft Edge [SmartScreen 设置。](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies)
+自定义指示器不支持内部 IP 地址。 对于最终用户绕过的警告策略，默认情况下，该用户的站点将取消阻止 24 小时。 此时间范围由管理员修改，并通过 SmartScreen 云服务向下传递。 此外，在使用 Web 威胁阻止 CSP Microsoft Edge恶意软件/网络钓鱼 (时，也可以禁用绕过警告) 。 有关详细信息，请参阅 SmartScreen Microsoft Edge [SmartScreen 设置。](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies)
 
 ## <a name="protect-browsers"></a>保护浏览器
 
-在所有 Web 保护方案中，SmartScreen 和网络保护可以一起使用，以确保跨第一方和第三方浏览器和进程提供保护。 SmartScreen 直接内置于Microsoft Edge，而 Network Protection 监视第三方浏览器和进程中的流量。 下图说明了此概念。 此两个客户端协同工作以提供多个浏览器/应用覆盖范围的图对于 Web 保护 (指示器、Web 威胁、内容筛选功能的所有功能) 。
+在所有 Web 保护方案中，SmartScreen 和网络保护可以一起使用，以确保跨第一方和第三方浏览器和进程提供保护。 SmartScreen 直接内置于Microsoft Edge，而 Network Protection 监视第三方浏览器和进程中的流量。 下图说明了此概念。 此两个客户端共同协作以提供多个浏览器/应用覆盖范围的图对于 Web 保护 (指示器、Web 威胁、内容筛选功能的所有功能) 。
 
 :::image type="content" alt-text="将 SmartScreen 和网络保护一同使用。" source="../../media/web-protection-protect-browsers.png" lightbox="../../media/web-protection-protect-browsers.png":::
 
@@ -125,7 +124,7 @@ Web 保护由以下组件组成，按优先顺序列出。 每个组件都由 Mi
 
 来自 SmartScreen 云的响应是标准化的。 可以使用 Fiddler 等工具检查云服务的响应，这有助于确定阻止的来源。
 
-当 SmartScreen 云服务响应允许、阻止或警告响应时，响应类别和服务器上下文将中继回客户端。 在Microsoft Edge中，响应类别用于确定相应的阻止页面，以显示 (、网络钓鱼、组织策略) 。
+当 SmartScreen 云服务响应允许、阻止或警告响应时，响应类别和服务器上下文将中继回客户端。 在Microsoft Edge中，响应类别用于确定适当的阻止页面，以显示 (、网络钓鱼、组织策略) 。
 
 下表显示了响应及其关联功能。
 
@@ -154,7 +153,7 @@ DeviceEvents 
 | where Experience == "CustomPolicy"
 ```
 
-同样，您可以使用下面的查询列出源自网络保护应用程序的所有 WCF (例如，第三方浏览器中的 WCF 块) 。 请注意，ActionType 已更新，"Experience"已更改为"ResponseCategory"。
+同样，您可以使用下面的查询列出源自 Network Protection 应用程序的所有 WCF (例如，第三方浏览器中的 WCF 块) 。 请注意，ActionType 已更新，"Experience"已更改为"ResponseCategory"。
 
 ```kusto
 DeviceEvents 
@@ -173,7 +172,7 @@ DeviceEvents 
 > [!div class="mx-imgBorder"]
 > ![页面被阻止Microsoft Edge。](../../media/web-protection-malicious-block.png)
 
-如果 WCF 或自定义指示器阻止，Microsoft Edge阻止页显示，告知用户此网站被组织阻止。
+如果 WCF 或自定义指示器阻止，Microsoft Edge阻止页，告知用户此网站被组织阻止。
 
 > [!div class="mx-imgBorder"]
 > ![组织阻止的页面。](../../media/web-protection-indicator-blockpage.png)

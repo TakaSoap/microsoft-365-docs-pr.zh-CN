@@ -2,8 +2,6 @@
 title: 权限&的先决条件 - 危险和漏洞管理
 description: 在开始使用危险和漏洞管理，请确保您具有相关的配置和权限。
 keywords: 威胁& 漏洞管理权限先决条件、危险和漏洞管理权限先决条件、适用于 Endpoint TVM 的 Microsoft Defender 权限先决条件漏洞管理
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c3bb52686c43afca710dbe8842463c493a15e140
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d3684d8b13020605fbca20e67093c28d3e782da2
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206729"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881740"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>权限&的先决条件 - 危险和漏洞管理
 
@@ -50,7 +48,7 @@ ms.locfileid: "60206729"
   > Windows 10版本 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
   > Windows 10版本 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
-- 已[载入Microsoft Intune Microsoft Endpoint Configuration Manager](/mem/intune/fundamentals/what-is-intune)以帮助修正由[](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)危险和漏洞管理 发现的威胁。 如果你使用的是 Configuration Manager，请更新控制台到最新版本。
+- 已[载入](/mem/intune/fundamentals/what-is-intune)Microsoft Intune Microsoft Endpoint Configuration Manager，以帮助修正由[](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)安全危险和漏洞管理。 如果你使用的是 Configuration Manager，请更新控制台到最新版本。
 
   > [!NOTE]
   > 如果启用了 Intune 连接，则创建修正请求时可以选择创建 Intune 安全任务。 如果未设置连接，则不显示此选项。
@@ -61,7 +59,7 @@ ms.locfileid: "60206729"
 
 ## <a name="relevant-permission-options"></a>相关权限选项
 
-1. 使用分配Microsoft 365 Defender全局管理员角色的帐户登录门户。
+1. 使用分配Microsoft 365 Defender全局管理员角色的帐户登录到安全门户。
 2. 在导航窗格中，选择"设置 >**终结点>角色"。**
 
 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。

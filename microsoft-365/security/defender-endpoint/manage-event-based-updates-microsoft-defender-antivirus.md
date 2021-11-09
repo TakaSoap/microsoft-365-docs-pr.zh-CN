@@ -1,8 +1,7 @@
 ---
 title: 在特定Microsoft Defender 防病毒后应用更新
-description: 管理Microsoft Defender 防病毒或接收云提供的检测报告后应用安全智能更新的方式。
+description: 管理Microsoft Defender 防病毒启动或接收云提供的检测报告后应用安全智能更新的方式。
 keywords: 更新， 保护， 强制更新， 事件， 启动， 检查最新， 通知
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ca814b93b3d36695e980fb560d1267ca9ded762e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f47787a137f9397ab8526ed202e60f44a7d52a55
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159398"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883625"
 ---
 # <a name="manage-event-based-forced-updates"></a>管理基于事件的强制更新
 
@@ -33,17 +32,17 @@ ms.locfileid: "60159398"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender 防病毒允许你确定更新是应 (还是不应) 某些事件之后发生，例如启动时还是从云提供的保护服务接收特定报告之后。
+Microsoft Defender 防病毒允许你确定更新是应 (还是不应) 发生在某些事件之后，例如启动时还是从云提供的保护服务接收特定报告之后。
 
 ## <a name="check-for-protection-updates-before-running-a-scan"></a>在运行扫描之前检查保护更新
 
-可以使用 Microsoft Endpoint Configuration Manager、组策略、PowerShell cmdlet 和 WMI 来强制 Microsoft Defender 防病毒 在运行计划扫描之前检查和下载保护更新。
+可以使用 Microsoft Endpoint Configuration Manager、组策略、PowerShell cmdlet 和 WMI 强制 Microsoft Defender 防病毒 在运行计划扫描之前检查和下载保护更新。
 
 ### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>运行扫描之前，使用 Configuration Manager 检查保护更新
 
-1. 在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"反恶意软件策略Endpoint Protection概述)  \>  \> 
+1. 在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"概述Endpoint Protection反恶意软件策略 \>  \> ) 
 
-2. 转到计划 **扫描** 部分，将运行扫描之前检查最新的 **安全智能更新** 设置为 **是**。
+2. 转到计划 **扫描部分** ，将运行扫描之前检查最新的安全 **智能更新** 设置为 **是**。
 
 3. 单击“**确定**”。
 
@@ -125,7 +124,7 @@ Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 
 有关详细信息，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)管理 Microsoft Defender 防病毒 和[Defender cmdlet，](/powershell/module/defender/index)详细了解如何将 PowerShell 与 Microsoft Defender 防病毒。
 
-### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>使用 Windows Management Instruction (WMI) ，以在 Microsoft Defender 防病毒 不存在时下载更新
+### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>使用 Windows Management Instruction (WMI) ，以在Microsoft Defender 防病毒时下载更新
 
 对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
 
