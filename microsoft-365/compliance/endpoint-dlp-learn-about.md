@@ -19,25 +19,25 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 文件在合规性解决方案中可见 '
-ms.openlocfilehash: 182a86a92d628ce5c67c1bcf4e4d3976ce7fa697
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: afe6b7c2454a52428e633bca55e72055308a1f74
+ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699313"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60825583"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
 可使用 Microsoft 365 数据丢失防护 (DLP) 监视对已确定为敏感的项目执行的操作，并帮助防止无意间共享这些项目。有关 DLP 的详细信息，请参阅[了解数据丢失防护](dlp-learn-about-dlp.md)。
 
-**终结点数据丢失防护**（终结点 DLP）可将 DLP 的活动监视和保护功能扩展到物理存储在 Windows 10 和 macOS（Catalina 10.15 及更高版本）设备上的敏感项目。 将设备加入 Microsoft 365 合规性解决方案中后，即可在[活动资源管理器](data-classification-activity-explorer.md)中看到有关用户对敏感项目执行的操作的信息，你可以通过 [DLP 策略](create-test-tune-dlp-policy.md)对这些项目执行保护性操作。
+**终结点数据丢失防护** （终结点 DLP）将 DLP 的活动监视和保护功能扩展到物理存储在 Windows 10、Windows 11 和 macOS（Catalina 10.15 及更高版本）设备上的敏感项目。 将设备加入 Microsoft 365 合规性解决方案中后，即可在[活动资源管理器](data-classification-activity-explorer.md)中看到有关用户对敏感项目执行的操作的信息，你可以通过 [DLP 策略](create-test-tune-dlp-policy.md)对这些项目执行保护性操作。
 
 > [!TIP]
 > 如果正在查找可移动存储的设备控制，请查看 [Microsoft Defender for Endpoint 设备控制可移动存储访问控制](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control)。
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>可监视并对其执行操作的终结点活动
 
-通过 Microsoft 终结点 DLP，可以审核和管理用户针对物理存储在 Windows 10 设备或 macOS 设备上的敏感项目进行的以下类型的活动。
+Microsoft 终结点 DLP 使你能够审核和管理以下类型的活动，这些活动用户对物理存储在Windows 10、Windows 11 或 macOS 设备上的敏感项目进行审核和管理。
 
 |活动 |说明  | 可审核/可限制|
 |---------|---------|---------|
