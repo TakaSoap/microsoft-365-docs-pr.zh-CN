@@ -83,7 +83,11 @@
         - name: 配置反恶意软件策略
           href: configure-anti-malware-policies.md
         - name: 配置反垃圾邮件策略
-          href: configure-your-spam-filter-policies.md
+          items:
+            - name: 配置反垃圾邮件策略
+              href: configure-your-spam-filter-policies.md
+            - name: 高级垃圾邮件筛选器 (ASF) 设置
+              href: advanced-spam-filtering-asf-options.md
         - name: 配置 EOP 以将垃圾邮件传递到混合中的垃圾邮件文件夹
           href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
         - name: 配置 Exchange Online 邮箱上的垃圾邮件设置
@@ -166,8 +170,6 @@
           href: recommended-settings-for-eop-and-office365.md
         - name: 将 AIR 与自定义解决方案或第三方解决方案集成
           href: air-custom-reporting.md
-        - name: 高级垃圾邮件筛选器 (ASF) 设置
-          href: advanced-spam-filtering-asf-options.md
         - name: 租户允许/阻止列表
           items:
             - name: 管理租户允许/阻止列表

@@ -186,14 +186,14 @@
               href: /sharepoint/guide-to-setting-up-viva-connections?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: 获取 Intranet 主站点
               href: /sharepoint/home-site-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: 规划和生成大厅
-              href: /sharepoint/hold-town-hall-using-yammer?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: 分发组织新闻
               href: /sharepoint/distribute-corporate-news-to-your-organization?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: 领导层联系
+            - name: 连接领导者和组织
               href: /sharepoint/leadership-connection?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: 新员工入职
-              href: /sharepoint/onboard-employees?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: 了解如何使用 Yammer 举行大会
+              href: /sharepoint/hold-town-hall-using-yammer?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: 生成学习和培训体验
+              href: /sharepoint/build-learning-and-training-experiences-for-employees?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: 团队合作和协作
       items:
         - name: 为业务管理合同

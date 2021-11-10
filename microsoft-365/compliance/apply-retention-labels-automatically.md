@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: 345f9ad748ca108cfa3e153239ef8534c1262bfa
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 72037127bf0b89c51a1ba73193e43646d84d4b08
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702757"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883687"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -83,7 +83,7 @@ ms.locfileid: "60702757"
     - 如果你没有使用记录管理：
        - “**解决方案**” > “**信息治理**” > “**标签**”选项卡 > +“**创建标签**”
     
-    没有立即在导航窗格中看到解决方案? 首先选择“**全部显示**”。 
+    无法立即在导航窗格中看到解决方案？ 首先选择“**全部显示**”。 
 
 2. 按照配置中的提示操作。
     
@@ -297,12 +297,12 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可训练分类器向内容自动应用标签
 
-选择可训练分类器的选项后，可选择其中一个内置分类器或选择自定义分类器。 内置分类器包含 **简历**、**源代码**、**有针对性的骚扰**、**侮辱** 和 **威胁**：
+选择可训练分类器的选项时，可以选择一个或多个预训练的或自定义的可训练分类器：
 
 ![选择可训练分类器。](../media/retention-label-classifers.png)
 
 > [!CAUTION]
-> 我们正在弃用 **冒犯性语言** 内置分类器，因为它会生成大量误报。 请不要使用此内置分类器，如果你正在使用它，则应将其业务流程中移出。 我们建议改用 **针对性的骚扰**、**侮辱** 和 **猥亵** 内置分类器。
+> 我们正在弃用 **冒犯性语言** 预训练分类器，因为它会生成大量误报。 不要使用此分类器，如果你当前正在使用它，我们建议你从业务流程移出，使用 **定向骚扰**、**猥亵** 和 **威胁** 预训练的分类器。
 
 要通过此选项自动应用标签，SharePoint 网站和邮箱必须至少有 10 MB 的数据。
 
