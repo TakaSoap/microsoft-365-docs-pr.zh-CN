@@ -18,12 +18,12 @@ description: 管理员可以了解 Exchange Online Protection (EOP) 向邮件添
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0b82826cf650caffa08c0c7435ea4cabf5a19742
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8eaf567e4cbceae66a5acd1fa1a45565f15a4804
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208981"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883997"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 中的反垃圾邮件标题
 
@@ -85,7 +85,7 @@ ms.locfileid: "60208981"
 |`SFV:SKQ`|从隔离区释放邮件，并将其发送给目标收件人。|
 |`SFV:SKS`|邮件在垃圾邮件筛选处理前标记为垃圾邮件，例如，邮件流规则将邮件标记为 SCL 5 至 9。|
 |`SFV:SPM`|邮件被垃圾邮件筛选标记为垃圾邮件。|
-|`SRV:BULK`|邮件被垃圾邮件筛选和批量投诉级别 (BCL) 阈值标识为大量电子邮件。 如果 _MarkAsSpamBulkMail_ 参数为 `On`（默认处于启用状态），大量电子邮件被标记为高可信度垃圾邮件 (SCL 9)。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。|
+|`SRV:BULK`|邮件被垃圾邮件筛选和批量投诉级别 (BCL) 阈值标识为大量电子邮件。 如果 _MarkAsSpamBulkMail_ 参数为 `On`（默认为开），则将有大量电子邮件标记为垃圾邮件 (SCL 6)。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。|
 |`X-CustomSpam: [ASFOption]`|邮件与高级垃圾邮件筛选 (ASF) 设置匹配。 若要查看每个 ASF 设置的 X 标头值，请参阅[高级垃圾邮件筛选 (ASF) 设置](advanced-spam-filtering-asf-options.md)。|
 |
 
