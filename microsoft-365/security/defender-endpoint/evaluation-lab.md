@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: df517e07242bfd15ec0feccbd0de9d682c74d381
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f746f07f20c4a8eddba51bb37d86acf2aafdaa6b
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184697"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899720"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 评估实验室
 
@@ -43,15 +43,15 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 你可以完全访问该平台的强大功能，如自动调查、高级搜寻和威胁分析，从而可以测试 Defender for Endpoint 提供的全面保护堆栈。
 
-你可以添加预配置为已安装最新操作系统版本和正确安全组件的 Windows 10、Windows 11、Windows Server 2019 或 Windows Server 2022 设备以及 Office 2019 Standard。
+可以添加预配置为具有最新操作系统版本和正确安全组件的 Windows 10、Windows 11、Windows Server 2019 或 Windows Server 2022 设备，并安装 Office 2019 Standard。
 
 还可以安装威胁模拟器。 Defender for Endpoint 已与行业领先的威胁模拟平台合作，帮助你测试 Defender for Endpoint 功能，而无需离开门户。
 
 安装首选模拟器，在评估实验室内运行方案，并立即查看平台的运行方式-所有这些操作都很方便，无需额外付费。 还可以方便地访问广泛的模拟数组，你可以从模拟目录访问和运行这些模拟。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-你将需要满足许可要求 [，或具有](minimum-requirements.md#licensing-requirements) 对 Microsoft Defender for Endpoint 的试用访问权限，以访问评估实验室。
+你将需要满足许可要求 [，或者具有](minimum-requirements.md#licensing-requirements) 对 Microsoft Defender for Endpoint 的试用访问权限，以访问评估实验室。
 
 您必须具有 **"管理安全设置"** 权限才能：
 
@@ -80,7 +80,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 ## <a name="setup-the-evaluation-lab"></a>设置评估实验室
 
-1. 在导航窗格中，选择评估 **&评估实验室教程，** \> 然后选择设置 **实验室**。
+1. 在导航窗格中，选择评估 **&评估实验室"，** \> 然后选择"**设置实验室"。**
 
     :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="评估实验室欢迎页面的图像。":::
 
@@ -119,13 +119,13 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 - [首次看到时阻止](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 - [受控文件夹访问](controlled-folders.md)
 - [漏洞保护](enable-exploit-protection.md)
-- [网络保护](network-protection.md)
+- [网络保护功能](network-protection.md)
 - [可能不需要的应用程序检测](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
-- [云端保护](cloud-protection-microsoft-defender-antivirus.md)
+- [云保护](cloud-protection-microsoft-defender-antivirus.md)
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> Microsoft Defender 防病毒不在审核 (审核模式下，将打开) 。 如果Microsoft Defender 防病毒阻止运行模拟，则可以通过以下方法在设备上关闭Windows 安全中心。 有关详细信息，请参阅配置 [始终打开保护](configure-real-time-protection-microsoft-defender-antivirus.md)。
+> Microsoft Defender 防病毒将打开 (审核模式) 。 如果Microsoft Defender 防病毒阻止运行你的模拟，则可以通过以下方法在设备上关闭Windows 安全中心。 有关详细信息，请参阅配置 [始终打开保护](configure-real-time-protection-microsoft-defender-antivirus.md)。
 
 自动调查设置将取决于租户设置。 默认情况下，它将配置为半自动化。 有关详细信息，请参阅 [自动调查概述](automated-investigations.md)。
 
@@ -134,7 +134,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 1. 从仪表板中，选择"**添加设备"。**
 
-2. 选择要添加的设备类型。 可以选择添加 Windows 10、Windows 11、Windows Server 2019 或 Windows Server 2022。
+2. 选择要添加的设备类型。 可以选择在 Server 2022 Windows 10 Windows 11、Windows Server 2019 Windows服务器。
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="使用设备选项的实验室设置。":::
 
@@ -192,8 +192,6 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 如果你要查找预先模拟，可以使用我们的"自己执行" [攻击方案](https://security.microsoft.com/tutorials/all)。 这些脚本安全、有记录且易于使用。 这些方案将反映适用于终结点的 Defender 功能并演练调查体验。
 
-如果你要查找预先模拟，可以使用我们的"自己执行" [攻击方案](https://security.microsoft.com/tutorials/all)。 这些脚本安全、有记录且易于使用。 这些方案将反映适用于终结点的 Defender 功能并演练调查体验。
-
 > [!NOTE]
 > 与测试设备的连接使用 RDP 完成。 请确保防火墙设置允许 RDP 连接。
 
@@ -201,7 +199,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
     ![测试设备的连接按钮的图像。](images/test-machine-table.png)
 
-2. 保存 RDP 文件，然后通过选择 **"连接"启动它**。
+2. 保存 RDP 文件，然后通过选择 **"连接"。**
 
     ![远程桌面连接的图像。](images/remote-connection.png)
 

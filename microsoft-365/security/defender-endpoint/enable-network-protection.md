@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6dff7d5fc0acbb80500608a887ad00705bd1d2eb
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 66be1b35e98176c8282f52248899aef52b032845
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883181"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899712"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -60,7 +60,7 @@ ms.locfileid: "60883181"
 
 - [PowerShell](#powershell)
 - [移动设备管理 (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
 - [组策略](#group-policy)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
@@ -86,17 +86,19 @@ ms.locfileid: "60883181"
 
 使用 [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) 配置服务提供程序 (CSP) 启用或禁用网络保护或启用审核模式。
 
-### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (以前为 Intune) 
+### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
 1. 登录到管理Microsoft Endpoint Manager中心 https://endpoint.microsoft.com) (。
 
 2. 转到 **设备**  >  **配置文件 配置文件**  >  **创建配置文件**。
 
-3. 在"**创建配置文件"** 飞出控件中，从模板列表中选择"终结点保护"，然后选择"创建 **"。**
+3. 在"**创建配置文件"飞** 出控件中，选择"**平台"，** 然后选择"**配置文件类型** 为 **模板"。**
+
+4. 在"**模板名称"** 中 **，** 从模板列表中选择"终结点保护"，然后选择"创建 **"。**
 
 4. 转到 **"终结点保护**  >  **基础知识"，** 为配置文件提供名称，然后选择"下一 **步"。**
 
-5. 在"**配置设置"** 部分，转到 **"Microsoft Defender 攻击防护**  >  **网络筛选**  >  **网络保护**  >  **启用或****审核"。** 选择 **下一步**。
+5. 在"**配置设置"** 部分，转到 **"Microsoft Defender 攻击防护**  >  **网络筛选**  >  **网络保护**  >  **启用或****审核"。** 选择“**下一步**”。
 
 6. 根据组织 **需要****，选择** 适当的 **范围** 标记、分配和适用性规则。 管理员可以设置更多要求。
 
@@ -117,7 +119,7 @@ ms.locfileid: "60883181"
 3. 展开树以 **Windows Exploit** Guard \> **网络Microsoft Defender 防病毒Windows Defender** \>  \> **组件**。
 
    > [!NOTE]
-   > 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
+   > 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
 
 4. 双击阻止用户和应用 **访问** 危险网站设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
     - **阻止** - 用户无法访问恶意 IP 地址和域。
@@ -179,7 +181,7 @@ ms.locfileid: "60883181"
 
 ## <a name="see-also"></a>另请参阅
 
-- [网络保护功能](network-protection.md)
+- [网络保护](network-protection.md)
 
 - [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 

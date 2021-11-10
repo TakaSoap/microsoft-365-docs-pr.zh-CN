@@ -14,14 +14,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 10/19/2021
+ms.date: 11/10/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c82b97f1c5799442ca5c857b65f24b9ef8b2e928
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: fad476d132e00dd7e01ab7876ec9bee0224f4e72
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883193"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899567"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>在 Microsoft Defender 防病毒 Server 上配置Windows排除项
 
@@ -31,10 +31,10 @@ ms.locfileid: "60883193"
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender 防病毒
 
-Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上自动注册某些排除项，如指定的服务器角色所定义。 这些排除项不会显示在应用程序中显示的标准排除Windows 安全中心[列表中](microsoft-defender-security-center-antivirus.md)。
+Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上自动注册某些排除项，如指定的服务器角色所定义。 这些排除项不会显示在应用中显示的标准排除Windows 安全中心[列表中](microsoft-defender-security-center-antivirus.md)。
 
 > [!NOTE]
-> 自动排除项仅适用于 RTP 扫描 (实时) 保护。 自动排除在完全/快速或按需扫描期间不适用。
+> 自动排除项仅适用于实时保护 (RTP) 扫描。 自动排除在完全/快速或按需扫描期间不适用。
 
 除了服务器角色定义的自动排除项之外，还可以添加或删除自定义排除项。 为此，请参阅以下文章：
 - [根据文件名、扩展名和文件夹位置配置并验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
@@ -45,7 +45,7 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 请记住以下要点：
 
 - 自定义排除项优先于自动排除项。
-- 自动排除项仅适用于 RTP 扫描 (实时) 保护。 自动排除在完全/快速或按需扫描期间不适用。
+- 自动排除项仅适用于实时保护 (RTP) 扫描。 自动排除在完全/快速或按需扫描期间不适用。
 - 自定义排除项和重复排除项与自动排除项不冲突。
 - Microsoft Defender 防病毒部署映像服务和管理 (DISM) 工具来确定计算机上安装了哪些角色。
 - 服务器角色的自动排除项在 R2 Windows Server 2012不起作用。
@@ -68,7 +68,7 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 > 请记住以下几点：
 >
 > - 自定义排除项优先于自动排除项。
-> - 自动排除项仅适用于 RTP 扫描 (实时) 保护。 在完全扫描、快速扫描或按需扫描期间，自动排除项不适用。
+> - 自动排除项仅适用于实时保护 (RTP) 扫描。 在完全扫描、快速扫描或按需扫描期间，自动排除项不适用。
 > - 自定义排除项和重复排除项与自动排除项不冲突。
 > - Microsoft Defender 防病毒部署映像服务和管理 (DISM) 工具来确定计算机上安装了哪些角色。
 
@@ -102,7 +102,7 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 ##### <a name="windows-tempedb-files"></a>Windows"temp.edb"文件
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
-- `%ProgramData%\Microsoft\Search\Data\Applications\Windows\*\*.log`
+- `%ProgramData%\Microsoft\Search\Data\Applications\Windows\windows.edb`
 
 ##### <a name="windows-update-files-or-automatic-update-files"></a>Windows更新文件或自动更新文件
 
@@ -204,7 +204,7 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
 #### <a name="active-directory-exclusions"></a>Active Directory 排除项
 
-本节列出了在 AD DS 服务器中安装 Active Directory 域服务时 (提供的) 。
+本节列出了在 AD DS 服务器中安装 Active Directory 域服务时自动 (的) 。
 
 ##### <a name="ntds-database-files"></a>NTDS 数据库文件
 
@@ -386,13 +386,13 @@ DisableAutoExclusions
 
 如有必要，可以添加或删除自定义排除项。 为此，请参阅以下文章：
 
-- [根据文件名、扩展名和文件夹位置配置和验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+- [根据文件名、扩展名和文件夹位置配置并验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 ## <a name="see-also"></a>另请参阅
 
-- [配置并验证扫描Microsoft Defender 防病毒排除项](configure-exclusions-microsoft-defender-antivirus.md)
-- [根据文件名、扩展名和文件夹位置配置和验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+- [配置并验证扫描的Microsoft Defender 防病毒项](configure-exclusions-microsoft-defender-antivirus.md)
+- [根据文件名、扩展名和文件夹位置配置并验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [定义排除时要避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [自定义、启动和查看扫描Microsoft Defender 防病毒修正的结果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)

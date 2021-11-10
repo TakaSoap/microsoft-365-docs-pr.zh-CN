@@ -2,8 +2,8 @@
 title: Office 365 的外部域名系统记录
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 10/21/2019
+manager: scotv
+ms.date: 11/10/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 规划 Office 365 部署时要使用的外部域名系统记录的引用列表。
-ms.openlocfilehash: 7be1acf8886bead9d50b7c47b5f0dab1e2a74a12
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54cebcd211f96a26d5f4590bc74e0a1c11c4adb8
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208801"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899602"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 的外部域名系统记录
 
 ![域。](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
 
-**想要查看 Office 365 组织的 DNS 记录的自定义列表？** 可以在 Office 365 中找到为你的域 [创建 Office 365 DNS 记录所需的信息](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)。
+**想要查看 Office 365 组织的 DNS 记录的自定义列表？** 可以在 Office 365 中找到为你的域 [创建 Office 365 DNS 记录所需的信息](../admin/get-help-with-domains/information-for-dns-records.md)。
 
 **需要在你的域的 DNS 主机（例如 GoDaddy 或 eNom）中添加这些记录的分步帮助？**[查找有关许多热门 DNS 主机的分步说明的链接](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。 
 
@@ -134,7 +134,7 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 |1  <br/> |所有电子邮件系统（必需）  <br/> |以此值开头的所有 SPF 记录  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online（常见）  <br/> |仅使用 Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
 |3  <br/> |第三方电子邮件系统（不太常见）  <br/> ||包括：\<email system like mail.contoso.com\>  <br/> |
-|4   <br/> |本地邮件系统（不太常见）  <br/> |在使用 Exchange Online Protection 或 Exchange Online 以及其他邮件系统的情况下使用  <br/> |ip4：\<0.0.0.0\>  <br/> ip6：\< : : \>  <br/> 包括：\<mail.contoso.com\>  <br/> 括号 (\<\>) 中的值应是为你的域发送电子邮件的其他邮件系统。  <br/> |
+|4  <br/> |本地邮件系统（不太常见）  <br/> |在使用 Exchange Online Protection 或 Exchange Online 以及其他邮件系统的情况下使用  <br/> |ip4：\<0.0.0.0\>  <br/> ip6：\< : : \>  <br/> 包括：\<mail.contoso.com\>  <br/> 括号 (\<\>) 中的值应是为你的域发送电子邮件的其他邮件系统。  <br/> |
 |5  <br/> |所有电子邮件系统（必需）  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>示例：添加到现有 SPF 记录

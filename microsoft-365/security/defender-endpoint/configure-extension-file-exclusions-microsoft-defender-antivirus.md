@@ -13,14 +13,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 11/02/2021
+ms.date: 11/10/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7c939b43edf206d31cf62678fa0984aa26707fab
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 11d8df5d56999cb4da41c57b8fdd09ebb8847c3e
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882401"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899568"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>根据文件扩展名和文件夹位置配置和验证排除项
 
@@ -44,7 +44,7 @@ ms.locfileid: "60882401"
 
 ## <a name="exclusion-lists"></a>排除列表
 
-若要从扫描中排除Microsoft Defender 防病毒，请修改排除列表。 Microsoft Defender 防病毒许多基于已知操作系统行为和典型管理文件（例如，在企业管理、数据库管理和其他企业方案和情况中使用的那些文件）的自动排除项。
+若要从扫描中排除Microsoft Defender 防病毒，请修改排除列表。 Microsoft Defender 防病毒许多基于已知操作系统行为和典型管理文件（如企业管理、数据库管理和其他企业方案和情况中使用的文件）的自动排除项。
 
 > [!NOTE]
 > 排除项也适用于 PUA (应用) 检测。
@@ -72,7 +72,7 @@ ms.locfileid: "60882401"
 
 - 不要排除映射的网络驱动器。 指定实际网络路径。
 
-- 不包括重新分析点的文件夹，这些点是在 Microsoft Defender 防病毒 服务启动后创建的，并且已添加到排除列表中。 重新启动服务 (重新启动Windows) ，以将新的重新分析点识别为有效的排除目标。
+- 不包括重新分析在启动 Microsoft Defender 防病毒 服务后创建且已添加到排除列表中的文件夹。 重新启动服务 (重新启动Windows) 新的重新分析点，以识别为有效的排除目标。
 
 - 排除项适用于 [计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)、按需 [扫描](run-scan-microsoft-defender-antivirus.md)和实时 [保护](configure-real-time-protection-microsoft-defender-antivirus.md)，但不能跨 Defender for Endpoint。 若要定义跨 Defender for Endpoint 的排除项，请使用 [自定义指示器](manage-indicators.md)。
 
@@ -82,7 +82,7 @@ ms.locfileid: "60882401"
 
 ## <a name="configure-the-list-of-exclusions-based-on-folder-name-or-file-extension"></a>根据文件夹名称或文件扩展名配置排除项列表
 
-可以从多种方法中选择，定义用于Microsoft Defender 防病毒。
+可以从多种方法中选择，以定义Microsoft Defender 防病毒。
 
 ### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>使用 Intune 配置文件名、文件夹或文件扩展名排除项
 
@@ -93,7 +93,7 @@ ms.locfileid: "60882401"
 
 ### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>使用 Configuration Manager 配置文件名、文件夹或文件扩展名排除项
 
-请参阅[如何创建和部署反恶意软件策略：](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)排除设置，详细了解如何Microsoft Endpoint Manager (当前分支) 。
+请参阅[如何创建和部署反恶意软件策略：排除](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)设置，了解有关配置当前分支Microsoft Endpoint Manager (的详细信息) 。
 
 ### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>使用组策略配置文件夹或文件扩展名排除项
 
@@ -110,14 +110,16 @@ ms.locfileid: "60882401"
     1. 将选项设置为 **已启用**。
     2. 在"**选项"** 部分下，选择"显示 **"。**
     3. 在"值名称"列下，在其自己的 **行中指定每个** 文件夹。
-    4. 如果要指定文件，请确保输入该文件的完全限定路径，包括驱动器号、文件夹路径、文件名和扩展名。 在 **"值"****列中输入** 0。
+    4. 如果要指定文件，请确保输入该文件的完全限定路径，包括驱动器号、文件夹路径、文件名和扩展名。 
+    5. 在 **"值"****列中输入** 0。
 
 5. 选择“**确定**”。
 
 6. 打开 **扩展排除** 项设置进行编辑并添加排除项。
     1. 将选项设置为 **已启用**。
     2. 在"**选项"** 部分下，选择"显示 **"。**
-    3. 在"值"列中的"值名称 **columnEnter** **0"** 下，在其自己的行中输入每个 **文件** 扩展名。
+    3. 在"值名称"列下，在其自己的 **行中输入每个文件** 扩展名。
+    4. 在 **"值"****列中输入** 0。
 
 7. 选择“**确定**”。
 
@@ -381,7 +383,7 @@ $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt"
 
 ## <a name="see-also"></a>另请参阅
 
-- [配置并验证扫描中的Microsoft Defender 防病毒项](configure-exclusions-microsoft-defender-antivirus.md)
+- [配置和验证扫描中的Microsoft Defender 防病毒项](configure-exclusions-microsoft-defender-antivirus.md)
 - [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [在 Microsoft Defender 防病毒 Server 上配置Windows排除项](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [定义排除时要避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)

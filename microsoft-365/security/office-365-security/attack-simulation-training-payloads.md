@@ -1,5 +1,5 @@
 ---
-title: 为攻击模拟培训创建自定义有效负载
+title: 创建用于攻击模拟训练的自定义负载
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -12,28 +12,28 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中为攻击模拟培训创建自定义负载。
 ms.technology: mdo
-ms.openlocfilehash: bf132e44c458fbe228b6b6e8d2bf7b1a6474e9e9
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 420642bfa8318f44548494b275b0dc617787f46a
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666770"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899746"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>在 Defender for Office 365 中为攻击模拟培训创建自定义负载
 
 **适用于 Microsoft** [Defender for Office 365计划 2](defender-for-office-365.md)
 
-在攻击模拟培训中， _有效_ 负载是向模拟用户呈现的网络钓鱼电子邮件和网页。 Microsoft 365 E5或 Microsoft Defender for Office 365 计划 2 中的攻击模拟培训为可用的社交工程技术提供了可靠的内置有效负载目录。 但是，你可能希望创建更适用于你的组织的自定义有效负载。
+在攻击模拟培训中， _有效_ 负载是向模拟用户呈现的网络钓鱼电子邮件和网页。 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 中的攻击模拟培训为可用的社交工程技术提供了可靠的内置有效负载目录。 但是，你可能希望创建更适用于你的组织的自定义有效负载。
 
 本文介绍如何在攻击模拟培训中创建自己的有效负载。 可以在以下位置创建自定义有效负载：
 
 - "**有效负载"** 选项卡：在 Microsoft 365 Defender门户中，转到 <https://security.microsoft.com/> "电子邮件&**协作** \> **攻击模拟培训** \> **有效负载"** 选项卡。若要直接转到"**有效负载"** 选项卡，请使用 <https://security.microsoft.com/attacksimulator?viewid=payload> 。
-- 创建模拟期间：可以在模拟创建向导的第三 (选择有效负载) 自定义有效负载。 有关详细信息，请参阅在 Defender for Office 365[中模拟网络钓鱼Office 365。](attack-simulation-training.md)
+- 创建模拟期间：可以在模拟创建向导的第三 (选择有效负载) 创建自定义负载。 有关详细信息，请参阅在 Defender for Office 365[中模拟网络钓鱼Office 365。](attack-simulation-training.md)
 
 有关攻击模拟培训的入门信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
 > [!NOTE]
-> 某些商标、徽标、符号、签名和其他源标识符受到当地、州、联邦法规和法律的保护。 未经授权使用此类指示器可能会使用户遭受处罚，包括罚款。 虽然这不是一个广泛列表，但其中包括"百科百科"、"Vice Vice"和"一流"（该名称为"一家"）、"社会保险局"、"一流"和"Medic一"（美国国家/局）和"美国商务部"。 除了这些类别的商标之外，使用和修改任何第三方商标会带来固有风险。 在有效负载中使用自己的商标和徽标的风险较低，尤其是在组织允许使用的情况下。 如果你对创建或配置负载时适合使用或不适合使用的任何进一步问题，应咨询法律顾问。
+> 某些商标、徽标、符号、签名和其他源标识符受到当地、州、联邦法规和法律的保护。 未经授权使用此类指示器可能会使用户遭受处罚，包括罚款。 虽然这不是一个广泛列表，但其中包括"百科百科"、"Vice Vice"和"一流"（该名称为"一家"）、"社会保险局"、"一家"和"Medicaid"、美国国内收入服务和"美国商务部"。 除了这些类别的商标之外，使用和修改任何第三方商标会带来固有风险。 在有效负载中使用自己的商标和徽标的风险较低，尤其是在组织允许使用的情况下。 如果对创建或配置负载时适合使用或不适合使用的任何进一步问题，请咨询法律顾问。
 
 ## <a name="create-a-payload"></a>创建有效负载
 
@@ -43,7 +43,7 @@ ms.locfileid: "60666770"
 
 在 **"选择类型**"页上，当前唯一可以选择的值是"**电子邮件"。**
 
-点击 **“下一步”**。
+单击"下一步"。
 
 ### <a name="select-a-social-engineering-technique"></a>选择社交工程技术
 
@@ -68,15 +68,15 @@ ms.locfileid: "60666770"
 
 ## <a name="configure-the-payload"></a>配置有效负载
 
-在 **"配置有效负载** "页上，可以生成有效负载了。 许多可用设置由你在"选择技术"页上选择的内容 (例如，链接与附件) 。
+在 **"配置有效负载** "页上，可以生成有效负载了。 许多可用设置由你在"选择技术"页上选择的内容决定 (例如，链接与附件) 。
 
 - **发件人详细信息** 部分：配置以下设置：
   - **From name**
-  - **Use first name as 显示名称**： By default， this setting is not selected.
+  - **使用名字作为显示名称：** 默认情况下，不选中此设置。
   - **From email**： If you choose an internal email address for your payload's sender， the payload will appear to come from a fellow employee. 此发件人电子邮件地址将提高用户对有效负载的敏感性，并帮助员工了解内部威胁的风险。
   - **电子邮件主题**
 
-- **附件详细信息** 部分：仅在"选择技术"页上选择了"恶意软件附件"、"附件中的链接"或"链接到恶意软件 **"时，此部分才** 可用。  配置以下设置：
+- **附件详细信息** 部分：仅在"选择技术"页上选择了"恶意软件附件"、"附件中的链接"或"链接到恶意软件"**时，此部分才** 可用。  配置以下设置：
   - **命名附件**
   - **选择附件类型**：目前，唯一可用的值为 **Docx**。
 
@@ -120,7 +120,7 @@ ms.locfileid: "60666770"
   > [!NOTE]
   > URL 信誉服务可能会将其中一个或多个 URL 标识为不安全。 在模拟中使用该 URL 之前，请检查 URL 在支持的 Web 浏览器中的可用性。 有关详细信息，请参阅 Google 网页浏览阻止的网络钓鱼[保险箱 URL。](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing)
 
-- **"附件内容**"部分：仅在"选择技术"页上选择了"附件中的链接"**时，此部分才** 可用。
+- **附件内容** 部分：仅在"选择技术"页上选择了"附件中的 **链接** " **时，此部分才** 可用。
 
   可以使用格式文本编辑器在文件附件有效负载中创建内容。
 
@@ -130,11 +130,11 @@ ms.locfileid: "60666770"
   - **添加 (标记)**
   - **主题**：可用值为：**帐户** 激活、**帐户** 验证、**计费**、清理 **邮件**、**文档** 接收、**费用**、**传真**、财务 **报告**、**传入邮件**、**发票**、**项目接收**、**登录警报****、已接收邮件**、**其他**、**密码**、**付款**、**工资** 单、**个性化优惠**、**隔离**、Remote **Work、Review** **Message、Security Update、Service** **Suspended、Signature**  **Required、Upgrade Mailbox 存储、Verify** **mailbox** 或 **Voicemail**。 
   - **品牌**：可用值为 **：American Express、Capital** One、DHL、DocuSign、Dropbox、Facebook、First     **American、Microsoft、Netflix、Scotiabank、SendGrid、Stewart**      Title、Tesco、Wells **Fargo、Syrinx** **Cloud****或其他**。 
-  - **行业**：可用值包括：**银行**、商业服务、**消费者** 服务、**教育**、**能源**、**建筑**、**咨询**、**金融服务**、**政府**、**酒店**、**保险**、**法律****、Courier 服务****、IT、****医疗保健、****制造**、**零** 售、**电信**、**房地产****或其他**。
+  - **行业**：可用值包括：**银行**、商业服务、**消费者** 服务、**教育**、**能源**、**建筑**、**咨询**、**金融服务**、**政府**、**城市**、保险、**法律****、Courier 服务****、IT、****医疗保健、****制造**、**零** 售、**电信**、**房地产****或其他**。
   - **当前事件**：可用值为"**是**"或"**否"。**
   - **中国**：可用值为"**是**"或"**否"。**
 
-- **语言** 部分：选择有效负载的语言。 可用值包括：**英语**、**西班牙语**、**德语**、**日语**、**法语**、**葡萄牙语**、**荷兰语**、**意大利语**、瑞典语、中文 (简体 **) 、****挪威博克马尔语**、**波兰** 语、**俄语**、**芬兰语**、**朝鲜** 语、**土耳其** 语、匈牙利语、**希伯来** 语、**泰** 语、**阿拉伯语****、越南语**、**斯洛伐克** 语。 **希腊语**、**印度尼西亚****语、罗马尼亚****语、斯洛文尼亚语**、**克罗地亚** 语、**加泰罗尼亚** 语 **或其他**。
+- **语言** 部分：选择有效负载的语言。 可用值包括：**英语**、**西班牙语**、**德语**、**日语**、**法语**、葡萄牙语、**荷兰语**、**意大利语**、瑞典语、中文 (简体 **) 、** 挪威 **博克马尔语**、**波兰** 语、**俄语**、**芬兰语**、**朝鲜** 语、**土耳其** 语、匈牙利语、**希伯来** 语、**泰** 语、**阿拉伯语****、越南语**、**斯洛伐克** 语。 **希腊语**、**印度尼西亚****语、罗马尼亚****语、斯洛文尼亚语**、**克罗地亚** 语、**加泰罗尼亚** 语 **或其他**。
 
 - **电子邮件** 部分：
 
@@ -146,7 +146,7 @@ ms.locfileid: "60666770"
       - **插入名称**：在邮件正文中添加的值为 `${userName}` 。
       - **插入电子邮件**：在邮件正文中添加的值为 `${emailAddress}` 。
 
-      ![Microsoft Defender for Office 365 攻击模拟培训中有效负载创建向导中的配置有效负载页面上的电子邮件Office 365。](../../media/attack-sim-training-payloads-configure-payload-email-message.png)
+      ![Microsoft Defender for Office 365 攻击模拟培训中的有效负载创建向导中的配置有效负载页面上的电子邮件Office 365。](../../media/attack-sim-training-payloads-configure-payload-email-message.png)
 
       **网络钓鱼链接** 控制：只有在"选择技术"页面上选择了"凭据获取"、附件中的链接或"按 **URL"** 时，此 **控件才** 可用。 使用此控件插入之前在"网络钓鱼链接"部分选择的 **URL。**
 
@@ -158,7 +158,7 @@ ms.locfileid: "60666770"
 
   - 在" **代码** "选项卡上，您可以直接查看和修改 HTML 代码。 格式设置和其他控件（ **如动态标记** 和 **网络钓鱼链接** 或恶意软件 **附件链接）** 不可用。
 
-  - The **Replace all links in the email message with the phishing link** toggle can save time by replacing all links in the message with the previously selected **Phishing link** or **Link for attachment** URL. 为此，将设置切换为切换图标 ![ 。 ](../../media/scc-toggle-on.png)
+  - 只有在 **"选择技术**"页上选择了"凭据获取"、"链接到恶意软件"或"按 **URL"** 时，"将电子邮件中所有链接替换为网络钓鱼链接"开关 **才** 可用。 此切换可通过将邮件中所有链接替换为以前选定的网络钓鱼链接或附件URL 的链接 **来节省时间**。 为此，将设置切换为切换图标 ![ 。 ](../../media/scc-toggle-on.png)
 
 完成后，单击“**下一步**”。
 
@@ -228,7 +228,7 @@ ms.locfileid: "60666770"
 
 在 **"查看有效** 负载"页上，你可以查看有效负载的详细信息。
 
-单击" ![ 发送测试"图标。](../../media/m365-cc-sc-send-icon.png) **发送测试** 按钮，向自己发送有效负载电子邮件 (当前登录的用户) 进行检查。
+单击" ![ 发送测试"图标。](../../media/m365-cc-sc-send-icon.png) **发送测试** 按钮，向自己发送有效负载电子邮件 (当前登录的用户) 检查。
 
 单击预览 ![ 指示器图标。](../../media/m365-cc-sc-open-icon.png) **预览指示器** 按钮在预览飞出控件中打开有效负载。 预览包括你创建的所有有效负载指示器。
 

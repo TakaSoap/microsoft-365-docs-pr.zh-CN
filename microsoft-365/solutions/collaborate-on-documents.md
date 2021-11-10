@@ -18,16 +18,16 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: 本文将了解如何与来宾协作处理 SharePoint 和 OneDrive。
-ms.openlocfilehash: e51ec7e9695c564b2994089f0a827ca7ea4b67c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7c58b9ef4fdc759c5afa1920083dd1875fad17f1
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158954"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899626"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>在文档中与来宾协作
 
-如果需要与组织外部人员协作处理 SharePoint 或 OneDrive 文档，您可以向这些人员发送一个指向该文档的共享链接。 本文将介绍设置 Microsoft 365 共享链接所需的 SharePoint 配置步骤，OneDrive组织的需求。
+如果需要与组织外部人员协作处理SharePoint或OneDrive文档，您可以向这些人员发送一个指向该文档的共享链接。 本文将介绍为组织设置共享Microsoft 365链接所需的 SharePoint 和 OneDrive 配置步骤。
 
 ## <a name="video-demonstration"></a>视频演示
 
@@ -37,7 +37,7 @@ ms.locfileid: "60158954"
 
 ## <a name="azure-external-collaboration-settings"></a>Azure 外部协作设置
 
-Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 外部协作设置](/azure/active-directory/external-identities/delegate-invitations) 管理。 如果在 Azure AD 中禁用或限制来宾共享，此设置将覆盖在 Azure AD 中配置的任何Microsoft 365。
+Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 外部协作设置](/azure/active-directory/external-identities/delegate-invitations) 管理。 如果来宾共享在 Azure AD 禁用或受限，则此设置将覆盖在 Microsoft 365 中配置的任何共享设置。
 
 检查 B2B 外部协作设置，确保不会阻止与来宾共享。
 
@@ -49,7 +49,7 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 2. 在左侧导航窗格中，单击 **Azure Active Directory**。
 3. 单击 **“外部标识”**。
 4. 在 **“入门”** 屏幕的左侧导航窗格中，单击 **“外部协作设置”**。
-5. 确保 **“管理员和来宾邀请者角色中的用户可以邀请”**，且 **“成员可以邀请”** 同时设置为 **“是”**。
+5. 确保 **选中"** 成员用户"和分配到特定管理员角色的用户可以邀请来宾用户（包括具有成员权限的来宾）或"组织中的任何人 **"可以邀请** 来宾用户（包括来宾和非管理员）。
 6. 如果进行了任何更改，请单击 **“保存”**。
 
 请注意 **“协作限制"** 部分的设置。 确保不会阻止要协作来宾的域。
@@ -58,11 +58,11 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint组织级别的共享设置
 
-为了使组织外部人员能够访问 SharePoint 或 OneDrive 中的文档，SharePoint 和 OneDrive 组织级别共享设置必须允许与组织外部人员共享。
+为了使组织外部人员能够访问 SharePoint 或 OneDrive 中的文档，SharePoint 和 OneDrive 组织级别的共享设置必须允许与组织外部人员共享。
 
-网站的组织级别SharePoint确定将可用于各个网站SharePoint的设置。 网站设置不能比组织级别设置更宽松。 用户的组织级别设置OneDrive用户共享库中可用的共享OneDrive级别。
+网站的组织级别SharePoint确定各个网站可用的SharePoint设置。 网站设置不能比组织级别设置更宽松。 用户的组织级别设置OneDrive确定将在用户的管理库中可用的OneDrive级别。
 
-For SharePoint and OneDrive， if you want to allow unauthenticated file and folder sharing， choose **Anyone**. 如果希望确保组织外部人员必须进行身份验证，请选择"**新来宾和现有来宾"。** *任何人* 链接是最简单的共享方式：组织外部人员无需身份验证即可打开链接，并可以自由将链接传递给其他人。
+For SharePoint and OneDrive， if you want to allow unauthicated file and folder sharing， choose **Anyone**. 如果希望确保组织外部人员必须进行身份验证，请选择"**新来宾和现有来宾"。** *任何人* 链接是最简单的共享方式：组织外部人员无需身份验证即可打开链接，并可以自由将链接传递给其他人。
 
 对于SharePoint，请选择组织中任何网站所需的最宽松设置。
 
@@ -72,8 +72,8 @@ For SharePoint and OneDrive， if you want to allow unauthenticated file and fol
 设置 SharePoint 组织级共享设置
 
 1. 在 Microsoft 365 管理中心左侧导航窗格中的 **“管理中心”** 下，单击 **“SharePoint”**。
-2. In the SharePoint admin center， in the left navigation pane， under **Policies**， click **Sharing**.
-3. 确保用户或用户SharePoint外部OneDrive设置为"任何人"或"**新来宾和现有来宾"。**   (请注意，OneDrive设置不能比 SharePoint 设置更宽松) 
+2. 在管理SharePoint，在左侧导航窗格中的"策略"**下，单击**"共享 **"。**
+3. 确保外部共享或SharePoint OneDrive设置为"任何人"或"**新来宾和现有来宾"。**   (请注意，OneDrive设置不能比设置SharePoint更宽松。) 
 4. 如果进行了任何更改，请单击 **“保存”**。
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 组织级别的默认链接设置
@@ -91,7 +91,7 @@ For SharePoint and OneDrive， if you want to allow unauthenticated file and fol
 ![SharePoint 组织级别文件和文件夹共享设置的屏幕截图。](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
-设置组织SharePoint OneDrive级别的默认链接设置
+设置网站SharePoint OneDrive组织级别的默认链接设置
 
 1. 导航到 SharePoint 管理中心的"共享"页面。
 2. 在 **“文件夹链接”** 下，选择要使用的默认共享链接。
@@ -124,7 +124,7 @@ For SharePoint and OneDrive， if you want to allow unauthenticated file and fol
 
 1. 在 SharePoint 管理中心的左侧导航栏中，展开 **“网站”**，然后单击 **“活动网站”**。
 2. 选择要与来宾共享文件和文件夹的网站。
-3. 在显示选定 (的行中向右滚动) 单击"外部共享"列中 **的任意位置** 。
+3. 在选定网站 (行中向右滚动，) "外部共享"列中 **的任意位置** 单击。
 4. 在弹出的页面中，单击"策略 **"** 选项卡。
 5. 在"外部 **共享"窗格下**，单击"编辑 **"。**
 6. 确保将共享设置为 **“任何人”** 或 **“新来宾和现有来宾”**。
@@ -132,7 +132,7 @@ For SharePoint and OneDrive， if you want to allow unauthenticated file and fol
 
 ## <a name="invite-users"></a>邀请用户
 
-来宾共享设置现已配置;以便用户现在可以与组织外部人员共享文件和文件夹。 有关详细信息[，OneDrive共享文件和文件夹SharePoint](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07)[共享文件](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)或文件夹。
+来宾共享设置现已配置;以便用户现在可以与组织外部人员共享文件和文件夹。 有关详细信息[，OneDrive共享文件和文件夹SharePoint](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07)[共享文件或](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)文件夹。
 
 ## <a name="see-also"></a>另请参阅
 

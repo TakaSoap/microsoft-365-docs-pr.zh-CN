@@ -17,17 +17,17 @@ ms.custom:
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
-description: 了解设置Microsoft 365网站以与来宾SharePoint所需的配置步骤。
-ms.openlocfilehash: aac548381b8b56ef753f762e9ef7bf0c07cf9163
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解设置Microsoft 365来宾协作的 SharePoint 网站所需的配置步骤。
+ms.openlocfilehash: 64c325873514171c858ffa24637e57d2b94a93e9
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190205"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899698"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
-如果需要跨文档、数据和列表与来宾进行协作，可以使用SharePoint网站。 新式SharePoint网站连接到 Microsoft 365 组，可以管理网站成员身份并提供其他协作工具，如共享邮箱和日历。
+如果需要跨文档、数据和列表与来宾进行协作，可以使用SharePoint网站。 新式SharePoint网站连接到Microsoft 365组，可以管理网站成员身份并提供其他协作工具，如共享邮箱和日历。
 
 本文将介绍设置与来宾Microsoft 365网站所需的SharePoint配置步骤。
 
@@ -51,7 +51,7 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 2. 在左侧导航窗格中，单击 **Azure Active Directory**。
 3. 单击 **“外部标识”**。
 4. 在 **“入门”** 屏幕的左侧导航窗格中，单击 **“外部协作设置”**。
-5. 确保 **“管理员和来宾邀请者角色中的用户可以邀请”**，且 **“成员可以邀请”** 同时设置为 **“是”**。
+5. 确保 **选中"** 成员用户"和分配到特定管理员角色的用户可以邀请来宾用户（包括具有成员权限的来宾）或"组织中的任何人 **"可以邀请** 来宾用户（包括来宾和非管理员）。
 6. 如果进行了任何更改，请单击 **“保存”**。
 
 请注意 **“协作限制"** 部分的设置。 确保不会阻止要协作来宾的域。
@@ -60,7 +60,7 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 组来宾设置
 
-新式SharePoint网站使用Microsoft 365组来控制网站访问。 必须Microsoft 365组来宾设置，来宾访问才能SharePoint网站。
+新式SharePoint网站使用Microsoft 365组来控制网站访问。 必须Microsoft 365组来宾设置，才能在网站中访问SharePoint访问。
 
 ![Microsoft 365 管理中心中的 Microsoft 365 组来宾设置的屏幕截图。](../media/office-365-groups-guest-settings.png)
 
@@ -86,7 +86,7 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 设置 SharePoint 组织级共享设置
 
 1. 在 Microsoft 365 管理中心左侧导航窗格中的 **“管理中心”** 下，单击 **“SharePoint”**。
-2. In the SharePoint admin center， in the left navigation pane， under **Policies**， click **Sharing**.
+2. 在管理SharePoint，在左侧导航窗格中的"策略"**下，单击**"共享 **"。**
 3. 确保 SharePoint 的外部共享设置为 **“任何人”** 或 **“新来宾和现有来宾”**。
 4. 如果进行了任何更改，请单击 **“保存”**。
 
@@ -98,7 +98,7 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 1. 在 SharePoint 管理中心中的“**网站**”下，单击“**活动站点**”。
 2. 单击“**创建**”。
 3. 单击 **"团队网站"。**
-4. 键入网站名称，并输入组所有者 (网站所有者) 。
+4. 键入网站名称，然后输入组所有者 (网站所有者) 。
 5. 在 **"高级设置**"下，选择是希望此网站是公共网站还是专用网站。
 6. 单击"下一步"。
 7. 单击“完成”。
@@ -109,7 +109,7 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 
 检查网站级别的共享设置，以确保这些设置允许您希望用于此网站的访问类型。 例如，如果将组织级别设置设置为"任何人"，但希望所有来宾对此网站进行身份验证，请确保网站级别共享设置设置为"新来宾和现有来宾 **"。**
 
-请注意，该网站无法与"任何人"设置 (未经身份验证) ，但单个文件和文件夹可以共享。
+请注意，该网站无法与"任何人"设置 (**未经身份验证) ，** 但单个文件和文件夹可以共享。
 
 您还可以使用[敏感度标签来控制网站的外部SharePoint设置](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
@@ -132,11 +132,11 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 3. 单击“**添加成员**”。
 4. 键入要邀请到网站的用户的姓名或电子邮件地址，然后单击"保存 **"。**
 
-无法从网站添加来宾。 你需要使用自定义设置Outlook 网页版。 因此，作为添加来宾并邀请来宾加入组的先决条件，请单击"URL"列中网站的 **URL**  以导航到特定于网站的页面。 从此页中，单击 **应用启动器** 图标并选择"Outlook"。  这是一个屏幕，你可以从其中邀请来宾加入一个组，此过程如下所述。
+无法从网站添加来宾。 你需要使用自定义Outlook 网页版。 因此，作为添加来宾并邀请来宾加入组的先决条件，请单击"URL"列中网站的 **URL**  以导航到特定于网站的页面。 从此页中，单击 **应用启动器** 图标并选择"Outlook"。  这是你可以从其中邀请来宾加入组的屏幕，此过程如下所述。
 
 邀请来宾加入组
 1. 在 **"** 组"下，单击要邀请来宾的组。
-2. 打开组联系人卡片，单击右上角的"成员"链接 (表示成员计数) 。
+2. 打开组联系人卡片，单击右上角的"成员"链接 (该链接表示成员计数) 。
 3. 单击 **"添加成员"。**
 4. 键入要邀请的来宾的电子邮件地址，然后单击"添加 **"。**
 5. 单击“关闭”。

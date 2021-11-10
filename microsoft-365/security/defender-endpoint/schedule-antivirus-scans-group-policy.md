@@ -10,18 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 11/10/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 339f98bf8e25fe1795db98739020c36789f8e844
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 85bd15d4babec45ba368370dc33b3428cc5c1b67
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555688"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899614"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>使用组策略安排防病毒扫描
 
@@ -56,8 +56,8 @@ ms.locfileid: "60555688"
 |:---|:---|:---|:---|
 | 扫描 | 指定用于计划扫描的扫描类型 | 快速扫描 |
 | 扫描 | 指定一周中的哪些天运行计划扫描 | 指定运行 () 或从不运行扫描的日。 | 从不 |
-| 扫描 | 指定运行计划扫描的时间 | 例如，指定午夜后 (分钟数，输入 **60** 表示上午 1 点) 。 | 2 a.m. |
-| 根 | 随机化计划任务时间 |在Microsoft Defender 防病毒中，将扫描的开始时间随机化为 0 到 4 小时之间的任意间隔。 <p>在 [SCEP](/mem/intune/protect/certificates-scep-configure)中，将扫描随机化为任意间隔加或减 30 分钟。 这可在虚拟机或 VDI 部署中非常有用。 | 已启用 |
+| 扫描 | 指定运行计划扫描的时间 | 指定午夜过后的分钟数 (例如，输入 **60** 表示凌晨 1 点) 。 | 2 a.m. |
+| 根 | 随机化计划任务时间 |在Microsoft Defender 防病毒中，将扫描的开始时间随机化为 0 到 23 小时之间的任意间隔。 <p>在 [SCEP](/mem/intune/protect/certificates-scep-configure)中，将扫描随机化为任意间隔加或减 30 分钟。 这可在虚拟机或 VDI 部署中非常有用。 | 已启用 |
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>计划终结点不使用时扫描的组策略设置
 
