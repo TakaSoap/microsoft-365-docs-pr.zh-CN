@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 949fbfa6b34fe78e7d5a575756547fdadfef8c8f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7f43c41570e8b097e0652b3909d603600de9f96a
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199497"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914213"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>在操作中心查看和管理操作
 
@@ -55,7 +55,7 @@ ms.locfileid: "60199497"
 
 3. 在操作中心的"待定 **"** 选项卡上，选择列表中的项目。 将打开其飞出窗格。 下面是一个示例。
 
-   ![批准或拒绝操作。](../../media/air-actioncenter-itemselected.png)
+   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="批准或拒绝操作的示例。" lightbox="../../media/air-actioncenter-itemselected.png":::
 
 4. 查看飞出窗格中的信息，然后执行以下步骤之一：
    - 选择 **"打开调查"** 页以查看有关调查的更多详细信息。
@@ -73,7 +73,7 @@ ms.locfileid: "60199497"
 
 ### <a name="undo-one-remediation-action"></a>撤消一个修正操作
 
-1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 并登录。
+1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
 
 2. 在 **"历史记录** "选项卡上，选择要撤消的操作。
 
@@ -89,7 +89,7 @@ ms.locfileid: "60199497"
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>跨多个设备从隔离中删除文件 
 
-1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 并登录。
+1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
 
 2. 在" **历史记录** "选项卡上，选择具有隔离文件操作 **类型的** 文件。
 

@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中管理允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8411ca98b48b19c7ecf3085c450fbf40e5185474
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7c344f4462b258d4ffbacd94ddfb0f3afd4b7ed4
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210385"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914640"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -40,7 +40,7 @@ ms.locfileid: "60210385"
 
 在Microsoft 365没有邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，您可能会与 EOP 筛选裁定不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能通过错误负数 (错误) 。
 
-租户门户中的租户允许/阻止Microsoft 365 Defender提供了一种方法，可以手动替代Microsoft 365裁定。 租户允许/阻止列表在传入邮件的邮件流期间 (不适用于组织内部邮件) 用户单击时。 可以指定以下类型的替代：
+租户门户中的租户允许/阻止Microsoft 365 Defender提供了一种方法，可手动替代Microsoft 365裁定。 租户允许/阻止列表在传入邮件的邮件流 (不适用于组织内部邮件) 用户单击时。 可以指定以下类型的替代：
 
 - 要阻止的 URL。
 - 要阻止的文件。
@@ -50,7 +50,7 @@ ms.locfileid: "60210385"
 - 要允许的文件。
 - 要允许的发件人电子邮件或域。
 
-本文介绍如何在 Microsoft 365 Defender 门户的租户允许/阻止列表中或在 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织配置条目，Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
+本文介绍如何在 Microsoft 365 Defender 门户的租户允许/阻止列表中或在 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织配置条目，这些组织的邮箱在 Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -78,7 +78,7 @@ ms.locfileid: "60210385"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 在 Exchange Online 网站中 分配 权限，才能执行本文中的步骤：
+- 您需在 Microsoft 365 Defender 门户中分配权限，然后才能执行本文中的过程：
   - **发件人、URL 和文件**：
     - 若要在租户允许/阻止列表中添加和删除值，你需要是组织管理、安全管理员或安全操作员角色组的成员，或者你分配有 Tenant **AllowBlockList Manager** 角色。
     - 若要对租户允许/阻止列表进行只读访问，你需要是全局读取 **者** 或安全读者 **角色组的成员** 。
@@ -90,7 +90,7 @@ ms.locfileid: "60210385"
 
   > [!NOTE]
   >
-  > - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的权限。有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   >
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
@@ -98,7 +98,7 @@ ms.locfileid: "60210385"
 
 ### <a name="use-the-microsoft-365-defender-portal"></a>使用 Microsoft 365 Defender 门户
 
-In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+在Microsoft 365 Defender门户中，转到"策略"&**规则**""威胁策略规则"部分 \>  \> "租户 \> **允许/阻止列表"。**
 
 若要添加所有块，请参阅 [在租户允许/阻止列表中添加块](manage-tenant-blocks.md)。
 
@@ -112,7 +112,7 @@ In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **P
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>查看租户允许/阻止列表中的条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. 在Microsoft 365 Defender门户中，转到"策略"&**规则**""威胁策略规则"部分 \>  \> "租户 \> **允许/阻止列表"。**
 
 2. 选择您想要的选项卡。 可用的列取决于所选的选项卡：
 
@@ -121,19 +121,19 @@ In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **P
      - **操作**：值 **Allow** 或 **Block**。
      - **上次更新**
      - **删除 on**
-     - **备注**
+     - **注释**
    - **URL：**
      - **值**：URL。
      - **操作**：值 **Allow** 或 **Block**。
      - **上次更新**
      - **删除 on**
-     - **备注**
+     - **注释**
    - **Files**
      - **值**：文件哈希。
      - **操作**：值 **Allow** 或 **Block**。
      - **上次更新**
      - **删除 on**
-     - **备注**
+     - **注释**
    - **网络钓鱼**
      - **欺骗用户**
      - **发送基础结构**
@@ -269,7 +269,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 - 不支持或不需要用户名或密码。
 
-- 引号 ("或") 无效字符。
+- 引号 (或") 无效字符。
 
 - 如果可能，URL 应包含所有重定向。
 
@@ -466,12 +466,12 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 租户允许/阻止列表中欺骗发件人的域对使用以下语法： `<Spoofed user>, <Sending infrastructure>` 。
 
 - **欺骗用户**：此值涉及在电子邮件客户端的"来源"框中显示的欺骗用户的电子邮件地址。  此地址也称为 `5322.From` 地址。 有效值包括：
-  - 单个电子邮件地址 (例如，chris@contoso.com) 。
+  - 个人电子邮件地址 (例如，chris@contoso.com) 。
   - 电子邮件域 (例如，contoso.com) 。
   - 通配符 (例如 \* ，) 。
 
 - **发送基础结构**：此值指示来自欺骗用户的邮件来源。 有效值包括：
-  - 反向 DNS 查找 (PTR 记录) 源电子邮件服务器的 IP 地址的 IP 地址 (例如，fabrikam.com) 。
+  - 反向 DNS 查找中的域 (PTR 记录) 源电子邮件服务器的 IP 地址 (例如，fabrikam.com) 。
   - 如果源 IP 地址没有 PTR 记录，则发送基础结构标识为 \<source IP\> /24 (例如，192.168.100.100/24) 。
 
 下面是用于标识欺骗性发件人的有效域对的一些示例：
@@ -486,7 +486,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 例如，为以下域对添加允许条目：
 
-- **域**： gmail.com
+- **域**：gmail.com
 - **基础结构**：tms.mx.com
 
-仅允许 *来自该域* 的邮件和发送基础结构对进行欺骗。 不允许其他发件人 gmail.com 欺骗邮件。 来自来自其他域的其他域中的发件人 tms.mx.com 欺骗智能进行检查。
+仅允许 *来自该域* 的邮件和发送基础结构对进行欺骗。 不允许其他发件人 gmail.com 欺骗邮件。 来自来自其他域的其他域中发件人的邮件 tms.mx.com 欺骗智能进行检查。

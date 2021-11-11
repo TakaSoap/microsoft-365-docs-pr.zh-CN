@@ -18,17 +18,17 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: 可Microsoft 365分类器是一种工具，你可以训练该工具，通过向实验室或策略应用程序提供要查看的正面和负面示例来识别不同类型的内容。
-ms.openlocfilehash: 91944d4d0d958c71232e2c9ea461eab9bf21c0cc
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+description: 可Microsoft 365分类器是一种工具，你可以训练该工具，通过向实验室或策略应用程序提供要查看的正负示例来识别不同类型的内容。
+ms.openlocfilehash: b57c8438a7b51fd175286d79a71ea746b72704f0
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335862"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914340"
 ---
 # <a name="learn-about-trainable-classifiers"></a>了解可训练的分类器
 
-对内容进行分类和标记以便进行保护并正确处理内容是信息保护规范的起点。 Microsoft 365三种方法对内容进行分类。
+对内容进行分类和标记，以便可以保护和正确处理内容是信息保护规范的起点。 Microsoft 365三种方法对内容进行分类。
 
 ## <a name="manually"></a>手动
 
@@ -38,21 +38,21 @@ ms.locfileid: "60335862"
 
 此分类机制类别包括按以下方法查找内容：
 
-- 关键字或元数据值 (关键字查询语言) 。
-- 使用之前标识的敏感信息模式（如社会保险、信用卡或银行帐号） (敏感信息类型[实体定义) 。 ](sensitive-information-type-entity-definitions.md)
-- 识别项目，因为它是模板上的变体， ([手指打印) 。 ](document-fingerprinting.md)
-- 使用存在确切字符串 ([数据完全匹配) 。 ](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- 关键字查询语言 (关键字或元数据) 。
+- 使用以前标识的敏感信息模式，如社会保险、信用卡或银行帐户 ([敏感信息类型实体定义) 。 ](sensitive-information-type-entity-definitions.md)
+- 识别项目，因为它是模板上的变体 ([文档手指) 。 ](document-fingerprinting.md)
+- 使用确切字符串的存在确切 [数据匹配](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)。
 
-然后，可以自动应用敏感度和保留标签，使内容可供"了解数据丢失防护策略[](dlp-learn-about-dlp.md)") 自动应用保留标签[策略中](apply-retention-labels-automatically.md)。
+然后，可以自动应用敏感度和保留标签，使内容可供在了解数据丢失防护策略[](dlp-learn-about-dlp.md)和自动应用保留) 策略中[使用](apply-retention-labels-automatically.md)。
 
 ## <a name="classifiers"></a>分类器
 
-此分类方法特别适用于无法通过手动或自动模式匹配方法轻松标识的内容。 这种分类方法更多的是训练一个分类器，以根据项目是什么来识别项目，而不是通过项目中的元素（模式匹配）。 分类器通过查看对分类感兴趣的内容的数百个示例来了解如何识别内容类型。 首先馈送该类别中肯定属于该类别的示例。 处理这些示例后，通过向它提供匹配和非匹配示例的组合来测试它。 然后，分类器将预测任何给定项目是否属于你正在构建的类别。 然后确认其结果，对真正的误报、真负、误报和漏报进行排序，以帮助提高预测的准确性。 
+此分类方法特别适用于无法通过手动或自动模式匹配方法轻松标识的内容。 这种分类方法更多的是训练一个分类器，以根据项目是什么来识别项目，而不是通过项目中的元素（模式匹配）。 分类器通过查看对分类感兴趣的内容的数百个示例来了解如何识别内容类型。 首先馈送该类别中肯定属于该类别的示例。 处理这些示例后，通过向它提供匹配和非匹配示例的组合来测试它。 然后，分类器将预测任何给定项目是否属于你正在构建的类别。 然后确认其结果，对真正的正数、负数、误报和漏报进行排序，以帮助提高预测的准确性。 
 
 发布分类器时，分类器会对 SharePoint Online、Exchange 和 OneDrive 等位置中的项目进行排序，并对内容进行分类。 发布分类器后，可以继续使用与初始培训过程类似的反馈流程对分类器进行培训。
 
 ### <a name="where-you-can-use-trainable-classifiers"></a>在哪里可以使用可训练分类器
-内置分类器和可训练分类器都作为一个条件，Office敏感度标签[](apply-sensitivity-label-automatically.md)自动标记，根据条件和通信合规性自动应用保留[标签策略](communication-compliance.md)。 [](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) 
+内置分类器和可训练分类器都作为一个条件Office敏感度标签进行[](apply-sensitivity-label-automatically.md)自动标记，根据条件和通信合规性自动应用保留[标签策略](communication-compliance.md)。 [](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) 
 
 敏感度标签可以使用分类器作为条件，请参阅自动将 [敏感度标签应用于内容](apply-sensitivity-label-automatically.md)。
 
@@ -69,10 +69,10 @@ ms.locfileid: "60335862"
 Microsoft 365附带五个预先训练的分类器：
 
 > [!CAUTION]
-> 我们弃用冒犯性 **语言** 预先训练的分类器，因为它一直产生大量误报。 请勿使用，如果当前正在使用，应将业务流程从其中移开。 我们建议改为使用 **威胁**、 **亵亵** 和 **骚扰** 预先训练的分类器。
+> 我们正在弃用 **冒犯性语言** 预训练分类器，因为它会生成大量误报。 请勿使用，如果当前正在使用，应将业务流程从其中移开。 我们建议改为使用 **威胁**、 **亵亵** 和 **骚扰** 预先训练的分类器。
 
 - **简历**：检测是收信人个人、教育、专业资格、工作体验和其他个人识别信息的文本帐户的项目
-- **源代码 ：** 检测包含一组以前 25 种使用计算机编程语言编写的指令和语句GitHub
+- **源代码 ：** 检测包含一组使用前 25 种使用计算机编程语言编写的指令和语句GitHub
     - ActionScript
     - C
     - C#
@@ -105,16 +105,16 @@ Microsoft 365附带五个预先训练的分类器：
 - **威胁**：检测与威胁相关的特定类别的冒犯性语言文本项，以实施暴力或对人员或属性进行物理损害或损害
 - **种族**：检测明确的语言，与其他社区相比，对针对美洲/黑色社区的语言特别敏感。
 
-它们显示在 **数据Microsoft 365 合规中心**  >    >  **可训练分类器** 视图中，状态为 `Ready to use` 。
+它们显示在数据分类 **Microsoft 365 合规中心** 可训练  >    >  **分类** 器视图中，状态为 `Ready to use` 。
 
 ![classifiers-pre-trained-classifiers。](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
-> 请注意，冒犯性语言、冒犯性以及威胁分类器仅适用于可搜索文本，并不包含这些领域的字词或语言的详尽或完整列表。 此外，语言和文化标准会不断改变，并且鉴于这些创新，Microsoft 保留自行决定更新这些分类器的权利。 虽然分类器可帮助组织检测这些方面，但分类器并不旨在提供组织检测或解决此类语言使用的唯一方法。 贵组织（而非 Microsoft 或其子公司）仍负责与监视、扫描、阻止、删除和保留由预先训练的分类器确定的任何内容相关的所有决策，包括遵守本地隐私和其他适用法律。 Microsoft 鼓励在部署和使用之前咨询法律顾问。
+> 请注意，冒犯性语言、冒犯性以及威胁分类器仅适用于可搜索文本，并不包含这些领域的字词或语言的详尽或完整列表。 此外，语言和文化标准会不断改变，鉴于这些创新，Microsoft 保留自行决定更新这些分类器的权利。 虽然分类器可帮助组织检测这些方面，但分类器并非旨在提供组织检测或解决此类语言使用的唯一方法。 贵组织（而不是 Microsoft 或其子公司）仍负责与监视、扫描、阻止、删除和保留由预先训练的分类器确定的任何内容相关的所有决策，包括遵守本地隐私和其他适用法律。 Microsoft 鼓励在部署和使用之前咨询法律顾问。
 
 经过预先训练的分类器可以扫描以下语言的内容：
 
-• 中文 (简体) • 英语 • 法语 • 德语 • 意大利语 • 日语 • 葡萄牙语 • 西班牙语
+• 简 (简体) • 英语 • 法语 • 德语 • 意大利语 • 日语 • 葡萄牙语 • 西班牙语
 
 ### <a name="custom-classifiers"></a>自定义分类器
 
@@ -146,4 +146,4 @@ Microsoft 365附带五个预先训练的分类器：
 - [敏感度标签](sensitivity-labels.md)
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 - [文档手指打印](document-fingerprinting.md)
-- [精确数据匹配](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [了解基于精确数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)

@@ -20,12 +20,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3ac0af88a38c6e563dd75e85d1f24820c9ebe19d
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 3535e258cb5825a5be4ff97e4bd03a700c80589c
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587750"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914208"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>管理事件Microsoft 365 Defender
 
@@ -37,9 +37,9 @@ ms.locfileid: "60587750"
 
 事件管理对于确保包含和解决威胁至关重要。
 
-在 **&** Microsoft 365 Defender 门户>事件 (security.microsoft.com) 事件的事件。 [](https://security.microsoft.com) 下面是一个示例。
+在快速启动 Microsoft 365 Defender 门户&事件>**事件** (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 以下是管理事件的方法：
 
@@ -52,7 +52,7 @@ ms.locfileid: "60587750"
 
 可以从事件的“**管理事件**”窗格管理事件。 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="事件&quot;管理事件&quot;窗格的示例。":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="事件&quot;管理事件&quot;窗格的示例。" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 可以从以下位置的"管理 **事件"链接显示** 此窗格：
 
@@ -78,12 +78,12 @@ Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影�
 
 ## <a name="assign-an-incident"></a>分配事件
 
-如果尚未分配事件，可以选择"分配给"框，并指定"预览" (用户帐户) 。 Te re-assign an incident， remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. 分配事件的所有权会为与其关联的所有警报分配相同的所有权。
+如果尚未分配事件，可以选择"分配到"框，并指定用户帐户 (预览) 。 Te re-assign an incident， remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. 分配事件的所有权会为与其关联的所有警报分配相同的所有权。
 
 通过筛选事件队列，您可以获取分配给您的事件列表。 
 
 1. 从事件队列中，选择"筛选器 **"。**
-2. 在"**事件分配"** 部分，清除 **"全选**"，然后选择"**分配给我"。**
+2. 在"**事件分配"** 部分，清除 **"全选**"，然后选择 **"分配给我"。**
 3. 选择 **"应用**"，然后关闭" **筛选器"** 窗格。
 
 然后，您可以将生成的 URL 保存为书签，以快速查看分配给您的事件列表。

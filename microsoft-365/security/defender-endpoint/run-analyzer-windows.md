@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 29b414ac9dcab9a9c32b5ba09d45d5d9b9ce67de
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 172c883ae5572be65903c0b19459c514a39882d0
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554680"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914103"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>在 Windows 上运行客户端分析器
 
@@ -31,7 +31,7 @@ ms.locfileid: "60554680"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
-1. 将[MDE 客户端分析器工具](https://aka.ms/mdatpanalyzer)下载到Windows调查的客户端计算机。
+1. 将[MDE 客户端分析器工具](https://aka.ms/mdatpanalyzer)下载到Windows调查计算机。
 
 2. 提取计算机上MDEClientAnalyzer.zip内容。
 
@@ -54,9 +54,27 @@ ms.locfileid: "60554680"
 除上述内容外，还有一个选项使用 [实时响应收集分析器支持日志](troubleshoot-collect-support-log.md)。
 
 > [!NOTE]
-> 在 Windows 10、Windows Server 2019 或更高版本操作系统版本或 Windows 11 上，客户端分析器脚本将调用可执行文件，以运行对云服务 URL 的连接测试。 `MDEClientAnalyzer.exe`
+> 在 Windows 10、Windows Server 2019 或更高版本或 Windows 11 上，客户端分析器脚本将调用可执行文件，以运行对云服务 URL 的连接测试。 `MDEClientAnalyzer.exe`
 >
 > 在 Windows 8.1、Windows Server 2016 或以前的操作系统版本上，客户端分析器脚本将调用可执行文件，以运行命令和控制 (CnC) URL 的连接测试，同时还调用用于网络数据通道 URL 的 Microsoft Monitoring Agent 连接工具。 `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe`
+
+
+分析工具中包含的所有 PowerShell 脚本和模块都由 Microsoft 签名。
+如果文件已经过任何修改，则分析器应退出，并出现以下错误：
+
+![客户端分析器错误的图像](images/sigerror.png)
+
+
+如果显示此错误，则issuerInfo.txt输出将包含有关发生此错误的原因和受影响的文件的详细信息：
+
+![颁发者信息的图像](images/issuerinfo.png)
+
+
+修改MDEClientAnalyzer.ps1后的示例内容：
+
+![修改后的 ps1 文件的图像](images/modified-ps1.png)
+
+
 
 ## <a name="result-package-contents-on-windows"></a>结果包内容Windows
 
@@ -65,10 +83,10 @@ ms.locfileid: "60554680"
 >
 > - 运行分析器的窗口的版本。
 > - 计算机上事件日志通道的可用性。
-> - 如果计算机尚未载入EDR， (感知的启动状态将) 。
+> - 如果计算机尚未EDR， (感知的启动状态将) 。
 > - 如果分析器命令使用了高级疑难解答参数。
 
-默认情况下，解压缩MDEClientAnalyzerResult.zip文件将包含以下项目。
+默认情况下，解压缩MDEClientAnalyzerResult.zip文件将包含以下项。
 
 - MDEClientAnalyzer.htm
 
@@ -139,7 +157,10 @@ ms.locfileid: "60554680"
 
   - OperationsManager.evtx
 
-    说明：导出 Microsoft Monitoring Agent 事件日志
+    说明：导出Microsoft Monitoring Agent事件日志
+
+
+
 
 ## <a name="see-also"></a>另请参阅
 

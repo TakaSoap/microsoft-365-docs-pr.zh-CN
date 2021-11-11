@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: f7145d2668f6c724644bf719dfd6414550af43c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 165f1ccb1e0a059d61802e9a8e026b9dbef3efc2
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209161"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914376"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>调查用户Microsoft 365 Defender
 
@@ -36,14 +36,14 @@ ms.locfileid: "60209161"
 
 事件调查的一部分可能包括用户帐户。 从事件 **和** 警报事件 _ _ 用户 **&事件的用户** 选项卡 \> ***\>* 开始**。
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例。":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例。" lightbox="../../media/investigate-incidents/incident-users.png":::
 
 若要获取事件的用户帐户的快速摘要，请选择用户帐户名称旁边的选中标记。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="事件门户中事件的用户帐户摘要窗格Microsoft 365 Defender示例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="事件的用户帐户摘要窗格示例。" lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
 
 > [!NOTE]
-> "用户"Azure Active Directory (Azure AD) 以及组，帮助你了解与用户关联的组和权限。
+> "用户"Azure Active Directory (Azure AD) 显示组织以及组，帮助您了解与用户关联的组和权限。
 
 在此飞出页面中，你可以查看用户威胁信息，包括任何当前事件、活动警报和风险级别以及用户曝光、帐户、设备等。
 
@@ -51,17 +51,17 @@ ms.locfileid: "60209161"
 
 从此处，可以选择" **转到用户页面** "以查看用户帐户的详细信息。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="事件门户中事件的用户帐户Microsoft 365 Defender示例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="事件的用户帐户页面示例。" lightbox="../../media/investigate-users/incidents-ss-user-details.png":::
 
 您还可以通过从"用户"页上的列表中选择用户帐户的名称来 **查看此页面。**
 
 通过选择"组"下的号码，可以看到用户的组 **成员身份**。
 
-:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="用户门户中用户的组成员身份Microsoft 365 Defender示例":::
+:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="用户的组成员身份示例。" lightbox="../../media/investigate-users/user-group-membership.png":::
 
 通过选择"经理 **"** 下的图标，可以看到用户位于组织树中。
 
-"Microsoft 365 Defender门户用户页面将 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security (信息组合在一起，具体取决于你拥有哪些) 。
+"Microsoft 365 Defender门户用户"页面将 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security (信息组合在一起，具体取决于你拥有哪些) 。
 
 此页面显示特定于用户帐户安全风险的信息。 这包括一个分数，可帮助评估风险以及导致用户的整体风险的最新事件和警报。
 
@@ -76,7 +76,7 @@ ms.locfileid: "60209161"
 
 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="针对用户门户中事件的用户帐户Microsoft 365 Defender示例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="事件对用户帐户的操作示例。" lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
 
 <!--
 You can access this page from multiple areas in the Microsoft 365 Defender portal. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
@@ -93,7 +93,7 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 如果在过去两天内未检测到实体的潜在横向移动路径，则图形不显示。 使用"查看其他日期"选择其他日期，以查看为此实体发现的以前的横向移动路径图。 横向移动路径报告始终可用于提供有关发现的可能的横向移动路径的信息，并可以按时间进行自定义。
 
-:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="用户门户中用户的横向移动Microsoft 365 Defender示例":::
+:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="用户的横向移动路径示例。" lightbox="../../media/investigate-users/lateral-movement-path.png":::
 
 有关详细信息，请参阅横向 [移动路径](/defender-for-identity/use-case-lateral-movement-path)。
 
