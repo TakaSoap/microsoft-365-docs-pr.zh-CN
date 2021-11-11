@@ -11,12 +11,12 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 ms.collection: Adm_TOC
-ms.openlocfilehash: 4e1b03d0424a7d1007e972c6d571fb12560da81f
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: c2c7c73b4f49ab5d8b76b8a7574f900f414d1d1f
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934019"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907905"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365文档导航指南
 
@@ -26,17 +26,9 @@ ms.locfileid: "59934019"
 
 可在 Microsoft 365中心页面，它是查找相关内容Microsoft 365 [https://aka.ms/microsoft365docs](./index.yml) 入口点。
 
-始终可以通过从技术文档Microsoft 365中每个页面顶部的页眉中选择"Microsoft 365导航回此页面：
+始终可以通过从技术文档集内Microsoft 365页顶部的页眉中选择"Microsoft 365导航回此页面：
 
 ![Microsoft 365页眉中。](media/m365-header-cursor.png)
-
-## <a name="offline-documentation"></a>脱机文档
-
-如果你想要在脱机系统中查看Microsoft 365文档，可以在技术文档中的Microsoft 365 PDF。
-
-如果要创建 PDF，请选择每个目录底部的"下载 **PDF"** 链接。
-
-![下载 PDF。](media/m365-download-pdf-cursor.png)
 
 ## <a name="toc-search"></a>TOC 搜索 
 在 docs.microsoft.com，您可以使用顶部的筛选器搜索框搜索目录的内容：
@@ -44,9 +36,9 @@ ms.locfileid: "59934019"
 ![使用筛选框。](media/m365-filter-by-title.png)
 
 ## <a name="version-filter"></a>版本筛选器
-本Microsoft 365文档提供了其他产品的内容，包括 Office 365 Germany 和 Office 365 by 21 Vianet (China) 。 这些版本之间的功能可能会有所不同，因此，有时内容本身会有所不同。
+本Microsoft 365文档提供了其他产品的内容，包括 Office 365 Germany 和由世纪Office 365中国世纪 (运营) 。 这些版本之间的功能可能会有所不同，因此，有时内容本身会有所不同。
 
-可以使用版本筛选器来确保看到适用于相应版本版本Microsoft 365：
+可以使用版本筛选器确保看到适用于相应版本版本Microsoft 365：
 
 ![Microsoft 365版本筛选器。](media/m365-version-filter.png)
 
@@ -76,4 +68,4 @@ ms.locfileid: "59934019"
 
 ## <a name="next-steps"></a>后续步骤
 
-- 开始使用Microsoft 365[文档](index.yml)。
+- 开始了解Microsoft 365[文档](index.yml)。

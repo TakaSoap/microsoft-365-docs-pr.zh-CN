@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 09492c81135c9859b683e2d042e8e4a99cc94c83
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 95f20e1e5ac3c623decb131929d3c27164f3a96b
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882173"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60908001"
 ---
 # <a name="device-discovery-overview"></a>设备发现概述
 
@@ -47,6 +47,12 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 - **载入发现的终结点**
 
   网络中非托管终结点会为网络带来漏洞和风险。 将它们载入服务可提升对它们的安全可见性。
+
+
+观看此视频，快速概览设备发现方法：
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
+
 
 结合此功能，将设备载入 Microsoft Defender for Endpoint 的新安全建议将作为现有威胁和漏洞管理体验的一部分提供。
 

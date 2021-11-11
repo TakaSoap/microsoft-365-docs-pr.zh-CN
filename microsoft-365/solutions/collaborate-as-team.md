@@ -20,12 +20,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: 了解在 Teams 中设置团队与来宾进行任务、对话及文档协作所必需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: 3c5d5689f676e6fecc6c0251df6ee90f54398238
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4128f6cd5293972dd7383eed0802f7969f488d8a
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169379"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899638"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -53,7 +53,7 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 2. 在左侧导航窗格中，单击 **Azure Active Directory**。
 3. 单击 **“外部标识”**。
 4. 在 **“入门”** 屏幕的左侧导航窗格中，单击 **“外部协作设置”**。
-5. 确保已选择“**分配有特定管理员角色的成员用户和用户可以邀请来宾用户，包括具有成员权限的来宾**”。
+5. 请确保选择 **成员用户和分配给特定管理员角色的用户可以邀请来宾用户，包括具有成员权限的来宾** 或 **组织中的任何用户都可以邀请来宾用户，包括来宾和非管理员**。
 6. 如果进行了任何更改，请单击 **“保存”**。
 
 请注意 **“协作限制"** 部分的设置。 确保不会阻止要协作来宾的域。

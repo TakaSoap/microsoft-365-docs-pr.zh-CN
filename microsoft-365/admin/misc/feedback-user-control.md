@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解你的用户可以向 Microsoft 发送有关 Microsoft 产品的反馈。
-ms.openlocfilehash: 85eb9d9360026aaa7eb19c626c90f985a12af582
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b276c82687481267a9c1de3a1261786bf2027254
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161530"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907822"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>了解组织的 Microsoft 反馈
 
@@ -31,6 +31,9 @@ ms.locfileid: "60161530"
 在本主题中，你将找到有关存在哪些反馈类型、如何收集反馈、我们收集的内容以及如何处理数据的信息。
 
 作为管理员，你可以管理组织的反馈信号。 我们将引入一组新的策略设置，帮助你在组织的 Microsoft 365 应用程序中管理用户反馈集合。 这些策略设置将帮助您面向Azure Active Directory组，并配置组织的反馈收集体验。 用户反馈直接向我们的工程师提供，帮助我们塑造所有用户的 Microsoft 产品和服务的未来。 可以在管理组织的 Microsoft 反馈中了解有关这些策略设置、它们适用于哪些应用程序以及[最佳做法。](../manage/manage-feedback-ms-org.md)
+
+<!--> [!IMPORTANT]
+> 我们建议你确认从你信任的源提交反馈。 确保用户名或用户 ID 与组织中的实际用户匹配。-->
 
 ## <a name="feedback-types"></a>反馈类型
 
@@ -46,17 +49,23 @@ ms.locfileid: "60161530"
 
 ### <a name="in-product-surveys"></a>产品内调查
 
-用户还可通过系统启动的调查提示对体验进行评分并提供其体验的其他信息。 这些提示时时Microsoft 365产品内出现。 当系统提示时，用户可以选择是否要提供反馈。 调查提示通常显示在应用程序右下角。 如果用户决定提供反馈、消除提示或让提示自行消失，该用户将在一段时间后不会再次看到该调查。 Microsoft 还利用管理过程来限制这些系统发起的调查的数量。  管理的目的是确保用户不会因调查提示的数量而不知所措。
+用户可以通过系统启动的调查提示对体验进行评分并提供其体验的其他信息。 这些提示时时Microsoft 365产品内出现。 当系统提示时，用户可以选择是否要提供反馈。 调查提示通常显示在应用程序右下角。 如果用户决定提供反馈、消除提示或让提示自行消失，该用户将在一段时间后不会再次看到该调查。 Microsoft 还利用管理过程来限制这些系统发起的调查的数量。  管理的目的是确保用户不会因调查提示的数量而不知所措。
 
 :::image type="content" source="../../media/feedback-love.png" alt-text="屏幕截图：产品内反馈请求示例":::
 
-:::image type="content" source="../../media/feedback-excel.png" alt-text="屏幕截图：产品内反馈请求示例":::
+:::image type="content" source="../../media/feedback-excel.png" alt-text="Screenshot： Example of product-in-Excel feedback request":::
+
+### <a name="community-feedback"></a>Community反馈
+
+用户可以利用新的[Microsoft 反馈门户](https://feedbackportal.microsoft.com/feedback/)参与所有产品的公共Microsoft 365论坛。 新的反馈门户将允许用户浏览和对公开提交的反馈进行评论，并针对任何受支持的产品提交新的公共社区反馈。 新门户中仍提供热门已知反馈项。 此门户也是一个新的响应画布，供用户跟踪 Microsoft 官方回复，并针对他们提交的反馈与 Microsoft 互动。
+
+:::image type="content" source="../../media/community-feedback1.png" alt-text="Screenshot： Microsoft Teams feedback portal page":::
 
 ## <a name="what-kind-of-feedback-is-best"></a>哪种反馈最好？
 
 详细且可操作的反馈对于更改和改进 Microsoft 产品至关重要。 如果你的用户对如何改进有问题或建议，我们希望听到它。 下面是发送给 Microsoft 的可操作反馈的一些提示和示例。
 
-- **简洁的描述性标题**   描述性标题和特定标题可帮助我们了解报告的问题。 示例：Excel的 **"最近** 使用的文件"列表不包含最近添加OneDrive文件。
+- **简洁的描述性标题**   描述性标题和特定标题可帮助我们了解报告的问题。 示例：Excel的 **"最近** 使用的文件"列表不包括最近添加OneDrive文件。
 - **一次只关注一个问题**   针对一个问题或一次提供一个项目的建议提供反馈。 这可确保每次提交时都收到正确的日志和数据，并可以分配进行跟踪。 如果你有多个问题，请针对每个问题提交新的反馈请求。 这有助于我们确定收到的特定问题的反馈量。
 - **在"说明"框中写入详细信息**   有关你的设备、操作系统和应用的信息会自动包含在每个报告的反馈中。 添加有关你认为非常重要的问题的其他任何信息。 例如，包括重现问题的详细步骤。
 
@@ -85,7 +94,7 @@ Microsoft 使用反馈来改进 Microsoft 产品。 我们以问题、问题、�
 
 ## <a name="how-can-i-see-my-users-feedback"></a>如何查看用户的反馈？
 
-为了履行 Microsoft 与客户的法律义务，我们正致力于在 Microsoft 365 管理中心 中提供一种新体验，使管理员能够查看、删除和导出其组织的反馈数据。 作为其数据控制者职责的一部分，客户拥有所有用户反馈数据，此功能将帮助管理员提供其用户体验与 Microsoft 365 产品的直接透明度，并使用户能够将用户反馈数据作为任何数据主体请求的一部分提供。 全局管理员和合规性数据管理员将可以查看、导出和删除用户反馈。 所有其他管理员和读者将能够查看和导出反馈数据，但不能执行合规性相关任务或查看有关发布反馈 (如用户名、电子邮件或设备名称) 。 若要访问组织的反馈数据，请登录到 Microsoft 365 管理中心并自定义导航以显示运行状况节点。 通过在"运行状况"节点下选择 **"产品反馈** "来访问此体验。
+为了履行 Microsoft 与客户的法律义务，我们正在致力于在 Microsoft 365 管理中心 中提供一种新体验，使管理员能够查看、删除和导出其组织的反馈数据。 作为其数据控制者职责的一部分，客户拥有所有用户反馈数据，此功能将帮助管理员提供其用户体验与 Microsoft 365 产品的直接透明度，并使用户能够将用户反馈数据作为任何数据主体请求的一部分提供。 全局管理员和合规性数据管理员将可以查看、导出和删除用户反馈。 所有其他管理员和读者将能够查看和导出反馈数据，但不能执行合规性相关任务或查看有关发布反馈 (（如用户名、电子邮件或设备名称）) 。 若要访问组织的反馈数据，请登录到 Microsoft 365 管理中心并自定义导航以显示运行状况节点。 通过在"运行状况"节点下选择 **"产品反馈** "来访问此体验。
 
 ## <a name="data-handling-and-privacy"></a>数据处理和隐私
 

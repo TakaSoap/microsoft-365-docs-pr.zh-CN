@@ -15,19 +15,19 @@ ms.assetid: ''
 ms.collection: m365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解有关部署注意事项和有关攻击模拟的常见问题，以及有关 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织的培训。
+description: 管理员可以了解部署注意事项和有关攻击模拟和 Microsoft Defender for Microsoft 365 E5 计划 2 Office 365培训的常见问题。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 75b85c637382e2fc508b4c48459d1409b02ec922
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 380241d44f667a845c47f85062d877192e1a7802
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704108"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907989"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻击模拟培训部署注意事项和常见问题解答
 
-攻击模拟培训使 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织可以度量和管理社交工程风险，通过允许创建和管理由实际、已取消武器化网络钓鱼负载的网络钓鱼模拟。 与 Terranova 安全性合作提供的超目标培训可帮助提高知识并改变员工行为。
+攻击模拟培训使 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织能够度量和管理社交工程风险，通过允许创建和管理由实际、已取消武器化网络钓鱼负载的网络钓鱼模拟。 与 Terranova 安全性合作提供的超目标培训可帮助提高知识并改变员工行为。
 
 有关攻击模拟培训入门的信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
@@ -43,7 +43,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 请注意，此问题不会影响Microsoft Edge。
 
-作为规划阶段的一部分，请务必先检查 URL 在支持的 Web 浏览器中的可用性，然后再在网络钓鱼活动中使用该 URL。 如果 Google 保险箱阻止 URL，请按照 Google 的本指南[](https://support.google.com/chrome/a/answer/7532419)允许访问 URL。
+作为规划阶段的一部分，请务必先检查 URL 在支持的 Web 浏览器中的可用性，然后再在网络钓鱼活动中使用该 URL。 如果 Google 保险箱阻止 URL，请按照 Google 的[](https://support.google.com/chrome/a/answer/7532419)本指南允许访问 URL。
 
 有关 [攻击模拟培训当前](attack-simulation-training-get-started.md) 使用的 URL 列表，请参阅使用攻击模拟培训入门。
 
@@ -53,7 +53,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 - 防火墙
 - WAF 解决方案 (Web) 防火墙
-- 第三方筛选器驱动程序 (例如，内核模式筛选器) 
+- 例如，第三方 (驱动程序，例如内核模式) 
 
 尽管我们看到此层中很少客户被阻止，但确实如此。 如果遇到问题，请考虑将以下 URL 配置为绕过安全设备或筛选器所需的扫描：
 
@@ -76,14 +76,14 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>攻击模拟培训报告不包含任何活动详细信息
 
-攻击模拟培训附带丰富、可操作见解，可让你了解员工的威胁就绪进度。 如果攻击模拟培训报告未填充数据，请验证审核日志搜索是否在你的组织中打开 (默认情况下是否) 。
+攻击模拟培训附带丰富、可操作见解，可让你了解员工的威胁就绪进度。 如果攻击模拟培训报告未填充数据，请验证 审核日志搜索是否在你的组织中打开 (默认情况下是否) 。
 
-攻击模拟培训需要审核日志搜索，以便可以捕获、记录和读回事件。 关闭审核日志搜索对攻击模拟培训有以下后果：
+攻击模拟培训需要审核日志搜索，以便可以捕获、记录和重新读取事件。 关闭审核日志搜索对攻击模拟培训有以下后果：
 
 - 报告数据并非在所有报告中都可用。 报告将显示为空。
 - 由于数据不可用，因此将阻止培训作业。
 
-若要打开搜索审核日志，请参阅打开 [审核日志或关闭搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
+若要启用搜索审核日志，请参阅打开 [审核日志或关闭搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 > [!NOTE]
 > 未向用户分配 E5 许可证也导致了空活动详细信息。 确认至少向活动用户分配了一个 E5 许可证，以确保捕获并记录报告事件。
@@ -102,7 +102,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ![模拟详细信息，显示正在进行中的模拟。](../../media/attack-sim-training-faq-in-progress-state.png)
 
-在过渡到"正在进行"状态后，可能需要 30 分钟才能更新单个 **模拟** 报告。 报告数据将继续生成，直到模拟达到 **"已完成"** 状态。 报告更新将按照以下间隔发生：
+转换到正在进行状态后，可能需要 30 分钟才能更新单个 **模拟** 报告。 报告数据将继续生成，直到模拟达到 **"已完成"** 状态。 报告更新将按照以下间隔发生：
 
 - 前 60 分钟每 10 分钟。
 - 每隔 15 分钟，60 分钟到 2 天。
@@ -135,16 +135,16 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 答：目标用户可以使用以下几种选项：
 
-- 包括当前 (用户数少于 40，000 的组织) 。
+- 包括当前 (用户数少于 40，000 的组织可用的) 。
 - 选择特定用户。
 - 从 CSV 文件选择用户 (每行一) 。
 - Azure AD基于组的目标。
 
-我们发现目标用户由目标用户标识的市场活动Azure AD组通常更易于管理。
+我们发现，目标用户由组标识的Azure AD通常更易于管理。
 
 ### <a name="q-are-there-any-limits-in-targeting-users-while-importing-from-a-csv-or-adding-users"></a>问：从 CSV 导入或添加用户时，目标用户是否有限制？
 
-答：从 CSV 文件导入收件人或向模拟中添加单个收件人的限制为 40，000。
+答：从 CSV 文件导入收件人或将单个收件人添加到模拟的限制为 40，000。
 
 收件人可以是单个用户或组。 由于一个组可能包含数百个或数千个收件人，因此不会对单个用户的数量设置实际限制。
 
@@ -152,13 +152,13 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ### <a name="q-does-microsoft-provide-payloads-in-other-languages"></a>问：Microsoft 是否提供其他语言的负载？
 
-答：目前，有 5 个本地化有效负载可用。 我们已注意到，现有有效负载到其他语言的任何直接或机器翻译都会导致不准确和相关性降低。
+答：目前，有 40 多种本地化有效负载以 10 多种语言提供：中文 (简体) 、中文 (繁体) 、英语、法语、德语、意大利语、日语、朝鲜语、葡萄牙语、俄语、西班牙语和荷兰语。 我们已注意到，现有有效负载到其他语言的任何直接或机器翻译都会导致不准确和相关性降低。
 
 也就是说，可以使用自定义有效负载创作体验，以你选择的语言创建自己的有效负载。 我们还强烈建议你获取用于面向特定地理位置的用户的现有有效负载。 换句话说，让攻击者本地化内容。
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>问：如何切换到其他语言以用于我的管理门户和培训体验？
 
-答：Microsoft 365或Office 365用户帐户的语言配置是特定和集中的。 有关如何更改语言设置的说明，请参阅更改 Microsoft 365 for Business 中的显示语言[和时区](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
+答：Microsoft 365或Office 365，语言配置是特定于每个用户帐户的集中式配置。 有关如何更改语言设置的说明，请参阅更改 Microsoft 365 [for Business 中的显示语言和时区](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
 
 请注意，配置更改可能需要 30 分钟才能在所有服务之间同步。
 
@@ -176,7 +176,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 答：区域感知传递使用目标用户邮箱的 TimeZone 属性和"not before"逻辑来确定何时传递邮件。 例如，请考虑以下方案：
 
-- 在太平洋时区 (UTC-8) 的上午 7：00，管理员创建并计划一个活动，以在当天上午 9：00 开始。
+- 在 UTC-8 (太平洋时区的上午 7：00) ，管理员创建并计划一个活动，以在当天上午 9：00 开始。
 - UserA 位于 UTC-5 (东部时区) 。
 - UserB 也位于太平洋时区。
 
