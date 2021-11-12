@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 898acf4e74f6aadb79bf5dfb7e3fc751d6286ecb
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: b354e578c40845a89b7bb837854f6dd7fa5bb4d3
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792384"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907797"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -54,6 +54,12 @@ ms.locfileid: "60792384"
 在高级分类中，内容从本地设备发送到云服务进行扫描和分类。 如果带宽利用率是关注的问题，则可以在此全局设置中设置一个限制，该限制适用于在滚动 24 小时周期内可以使用多少设备。 如果设置了带宽利用率限制且超出该限制，DLP 将停止将用户内容发送到云，并且将会继续在设备上本地进行数据分类。 当累积带宽利用率降至低于滚动的 24 小时限制时，将恢复与云服务的通信。
 
 如果带宽利用率不是关注的问题，则不能设置限制并允许无限制使用。
+
+这些 Windows 版本支持高级分类扫描和保护：
+
+- Windows 10 版本 20H1/20H2/21H1 (KB 5006738) 
+- Windows 10 版本 19H1/19H2 (KB 5007189) 
+- Windows 10 RS5 (KB 5006744) 
 
 > [!NOTE]
 > DLP 策略评估始终发生在云中，即使未发送用户内容。
