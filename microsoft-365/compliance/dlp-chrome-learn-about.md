@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 合规性扩展可扩展对 Google Chrome 浏览器文件活动和保护操作的监视和控制
-ms.openlocfilehash: ff0df602e68338315becabd0c5b65f981fe4dd43
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e41343f14e799f354906361fe88f6a99dba12908
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179183"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950661"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>了解 Microsoft 合规性扩展
 
@@ -46,7 +46,7 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 
 ## <a name="deployment-process"></a>部署过程
 1. [终结点数据丢失防护入门](endpoint-dlp-getting-started.md)
-2. [Windows 10 设备的装载工具和方法](dlp-configure-endpoints.md)
+2. [Windows 10 设备的装载工具和方法](device-onboarding-overview.md)
 3. [在 Windows 10 设备上安装扩展](dlp-chrome-get-started.md)
 4. [创建或编辑 DLP 策略](create-test-tune-dlp-policy.md)，这些策略限制上传到云服务，或者通过不允许的浏览器操作访问云服务，并将其应用到 Windows 10 设备
 

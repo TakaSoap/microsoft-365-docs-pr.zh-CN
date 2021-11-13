@@ -14,17 +14,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: medium
-description: 了解如何将 Saba 配置为学习内容源，Microsoft Viva Learning。
-ms.openlocfilehash: 1f8c9610d9c1e747af6e0804bbd7c133de4351cf
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+description: 了解如何将 Saba 配置为 Microsoft Viva Learning 的学习内容源。
+ms.openlocfilehash: cb13822e2f4a0a2eccf31e2c03f2ac5e109dd843
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755777"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950493"
 ---
 # <a name="configure-saba-as-a-content-source-for-microsoft-viva-learning"></a>将 Saba 配置为网站内容Microsoft Viva Learning
 
-本文演示如何将 Saba 配置为用于 web 应用程序的第三方Microsoft Viva Learning。 您必须是 Saba 系统管理员或超级用户才能执行这些步骤。
+本文演示如何将 Saba 配置为用于 web 应用程序的第三方学习内容Microsoft Viva Learning。 您必须是 Saba 系统管理员或超级用户才能执行这些步骤。
 
 >[!NOTE]
 >通过 Viva Learning的内容受 Microsoft 产品条款外的其他条款所规定。 Saba 内容和任何关联的服务都受 Saba 的隐私和服务条款的约束。
@@ -39,7 +39,7 @@ ms.locfileid: "60755777"
 
 ### <a name="clients-host-url"></a>客户端的主机 URL
 
-1. 标识主要 Saba 云 URL (例如"org".sabacloud.com) 。 如果 API 仪表板 URL org-api.sabacloud.com，主机 URL 将 org.sabacloud.com。
+1. 标识主 Saba 云 URL (例如"org".sabacloud.com) 。 如果 API 仪表板 URL org-api.sabacloud.com，主机 URL 将 org.sabacloud.com。
 2. 通过访问 **Saba Cloud**  >  **Admin**  >  **System Admin** Manage  >  **Integrations** API Dashboard 确定  >  **API 仪表板 URL。** 找到 API 仪表板 URL，然后删除"https://"和"-api"，获取主机 URL。
 
     ![API 仪表板的图像。](../media/learning/saba-a.png)
@@ -63,14 +63,11 @@ ms.locfileid: "60755777"
 2. 导航到 **"设置"，** 再导航到"**组织设置"。** Select Viva Learning and enable Saba Cloud from the panel.
 3. 填写从 Saba 门户获得的详细信息。
     >[!NOTE]
-    >显示名称是盘车的名称，在它下，Saba 学习内容将在 Viva Learning 中显示。 如果不输入新名称，则会显示默认名称"Saba Cloud"。
+    >"显示名称"是组织在 Viva Learning 中显示 Saba 学习内容时进行循环Learning。 如果不输入新名称，则会显示默认名称"Saba Cloud"。
 4. 选择 **"保存**"以激活 Microsoft Viva Learning 中的 Saba 云Microsoft Viva Learning。 内容可能需要 24 小时才能显示在 Viva Learning。
 
 > [!Note]
-> 对于 Saba 云集成，主机 URL 中 sabacloud.com 一个域。 如果你有不同的域名，你将需要提出支持票证以允许你的域名。
-
->[!NOTE]
->租户元数据集中存储在我们的数据存储中，而不是存储在特定于地理位置的数据存储中。
+> 对于 Saba 云集成，您需要在主机 URL sabacloud.com 一个域。 如果你有不同的域名，你将需要提出支持票证以允许你的域名。
 
 >[!NOTE]
 >目前，组织内的所有用户都可以发现所有租户特定的课程，但他们只能使用他们有权访问的课程。 已针对将来版本规划基于角色和权限的用户特定内容发现。

@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: 了解如何配置 Udemy 作为学习内容源，Microsoft Viva Learning。
-ms.openlocfilehash: f5cbb140d2bf76fdf03eba5de0e09ad70fbf4afb
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: ea015d6ee0ec1890d56b6f40f928fe96ea44ccbc
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883849"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950577"
 ---
 # <a name="configure-udemy-as-a-content-source-for-microsoft-viva-learning"></a>将 Udemy 配置为用户的内容Microsoft Viva Learning
 
@@ -40,7 +40,7 @@ ms.locfileid: "60883849"
 
     ![API 设置页面的图像。](../media/learning/udemy-1.png)
 
-2. 如果 API 已禁用，请导航到 **LMS/LXP 集成**，然后"开始设置"，然后选择"其他 **"。**
+2. 如果 API 已禁用，请导航到 **LMS/LXP 集成**，然后"开始设置"和"其他 **"。**
 
     [![LMS/LXP 集成设置页面的图像。](../media/learning/udemy-2small.png)](../media/learning/udemy-2.png#lightbox)
 
@@ -75,11 +75,8 @@ ms.locfileid: "60883849"
 3. 填写以下所需的配置详细信息：
 
     - **客户端的主机 URL：** 这是在步骤 6 中从 Udemy 门户收集的 API 终结点 URL。
-    - **组织 ID：** 这是在ACCOUNT_ID 6 中从 Udemy 门户收集的组。
+    - **组织 ID：** 这是ACCOUNT_ID 6 中从 Udemy 门户收集的组。
     - **客户端 ID：** 这是从步骤 4 中的 Udemy 门户收集的客户端 ID。
     - **客户端密码**：这是从步骤 4 中的 Udemy 门户收集的客户端密码。
 
-4. 选择 **"保存**"以激活设备Microsoft Viva Learning。 内容可能需要 24 小时才能在 Viva Learning。
-
->[!NOTE]
->租户元数据集中存储在我们的数据存储中，而不是存储在特定于地理位置的数据存储中。
+4. Select **Save** to activate Udemy content in Microsoft Viva Learning. 内容可能需要 24 小时才能在 Viva Learning。

@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: 准备及部署 Microsoft 合规性扩展。
-ms.openlocfilehash: 1ac08dc558806d47c382db7c3b4a58f43ff3c4f4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 295e811e6437bb931e1b735725f3c69016cfae8a
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754347"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950673"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft 合规性扩展入门
 
@@ -41,8 +41,8 @@ ms.locfileid: "60754347"
 - [根据模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
 - [了解终结点数据丢失防护](endpoint-dlp-learn-about.md)
 - [终结点数据丢失防护入门](endpoint-dlp-getting-started.md)
-- [Windows 10 设备的装载工具和方法](dlp-configure-endpoints.md)
-- [为 Endpoint DLP 配置设备代理和 Internet 连接设置](endpoint-dlp-configure-proxy.md)
+- [Windows 10 设备的装载工具和方法](device-onboarding-overview.md)
+- [配置信息保护的设备代理和 Internet 连接设置](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 - [使用终结点数据丢失防护](endpoint-dlp-using.md)
 
 ### <a name="skusubscriptions-licensing"></a>SKU/订阅许可
@@ -95,8 +95,8 @@ ms.locfileid: "60754347"
 
 1. 使用这些主题中的过程载入设备：
     1. [终结点数据丢失防护入门](endpoint-dlp-getting-started.md)
-    1. [Windows 10 设备的装载工具和方法](dlp-configure-endpoints.md)
-    1. [为 Endpoint DLP 配置设备代理和 Internet 连接设置](endpoint-dlp-configure-proxy.md)
+    1. [载入 Windows 10 和 Windows 11 设备](device-onboarding-overview.md)
+    1. [配置信息保护的设备代理和 Internet 连接设置](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 
 ### <a name="basic-setup-single-machine-selfhost"></a>基本设置单机自托管
 

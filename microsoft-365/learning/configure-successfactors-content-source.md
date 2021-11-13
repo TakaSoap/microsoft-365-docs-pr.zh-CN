@@ -15,16 +15,16 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: 了解如何将 SAP SuccessFactors 配置为用于Microsoft Viva Learning。
-ms.openlocfilehash: fafa0d8b610c3964617015ba3d4d1b9771c9e850
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 9ea98339d1a73a6bc8c7a8e2d1588329c99bb2ca
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747250"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950757"
 ---
 # <a name="configure-sap-successfactors-as-a-content-source-for-microsoft-viva-learning"></a>将 SAP SuccessFactors 配置为解决方案的内容Microsoft Viva Learning
 
-本文演示如何将 SAP SuccessFactors 配置为第三方内容源，以用于Microsoft Viva Learning。 首先，你需要在 SuccessFactors 门户中编辑系统配置，然后你需要完成 Microsoft 365 管理中心。
+本文演示如何将 SAP SuccessFactors 配置为第三方内容源，以用于Microsoft Viva Learning。 首先，你需要在 SuccessFactors 门户中编辑系统配置，然后你需要在"成功因素"门户中完成Microsoft 365 管理中心。
 
 >[!NOTE]
 >通过 Viva Learning的内容受 Microsoft 产品条款外的其他条款所规定。 SAP SuccessFactors 内容和任何关联的服务都受 SAP SuccessFactors 隐私和服务条款的约束。
@@ -67,7 +67,7 @@ ms.locfileid: "60747250"
 
 1. 导航[到Microsoft 365 管理中心。](https://admin.microsoft.com)
 
-2. 导航到 **设置**  >  **组织设置。** 搜索 *Viva Learning* 并启用选项中的 SAP SuccessFactors。
+2. 导航到 **设置**  >  **组织设置。** 搜索 *Viva Learning* 选项启用 SAP SuccessFactors。
 
 3. 填写配置详细信息：
 
@@ -89,22 +89,19 @@ ms.locfileid: "60747250"
 
     **PGP 私钥密码**：你需要从提供 PGP 密钥的 IT 管理员或团队获取此值。
 
-    **公司 ID：** 登录到 SuccessFactors 门户。 选择配置文件图标，然后选择"**显示版本设置"。** 你可以在此处查看你的公司 ID。
+    **公司 ID：** 登录到 SuccessFactors 门户。 选择配置文件图标，然后选择"显示版本 **设置"。** 你可以在此处查看你的公司 ID。
 
     ![已选择"显示版本"选项设置图像。](../media/learning/sf-3.png)
-        
+
     ![版本设置窗格的图像。](../media/learning/sf-1.png)
 
-4. 选择 **"保存**"激活"成功因素"Microsoft Viva Learning。 内容在 Viva Learning 中可用之前可能会Learning。
+4. Select **Save** to activate SuccessFactors content in Microsoft Viva Learning. 内容在 Viva Learning 中可用之前可能有Learning。
 
 >[!Note]
 > SuccessFactors 课程将在成功设置Learning 7 天内开始显示在 Viva 中。
 
 >[!Note]
 > 组织内的所有用户都将能够发现所有租户特定的课程，但他们只能访问和使用他们有权访问的课程。 计划在将来版本中发现特定于用户的内容。
-
->[!NOTE]
->租户元数据集中存储在我们的数据存储中，而不是存储在特定于地理位置的数据存储中。
 
 >[!NOTE]
 >目前，组织内的所有用户都可以发现所有租户特定的课程，但他们只能使用他们有权访问的课程。 已针对将来版本规划基于角色和权限的用户特定内容发现。

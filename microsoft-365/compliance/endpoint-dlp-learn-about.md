@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 文件在合规性解决方案中可见 '
-ms.openlocfilehash: afe6b7c2454a52428e633bca55e72055308a1f74
-ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
+ms.openlocfilehash: 77f4e4f0312b68941eb4a7421ea0658d925962d9
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60825583"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950697"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -163,8 +163,9 @@ Microsoft 终结点 DLP 使你能够审核和管理以下类型的活动，这�
 
 现在，你已了解有关终结点 DLP 的内容，接下来要学习：
 
-1. [Microsoft 终结点数据丢失防护入门](endpoint-dlp-getting-started.md)
-2. [使用 Microsoft 终结点数据丢失防护](endpoint-dlp-using.md)
+1. [将 Windows 10 或 Windows 11 设备载入 Microsoft 365 概述](device-onboarding-overview.md)
+1. [将 macOS 设备载入 Microsoft 365 概述（预览版）](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+1. [使用 Microsoft 终结点数据丢失防护](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>另请参阅
 

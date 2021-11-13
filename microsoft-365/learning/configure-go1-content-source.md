@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: 了解如何将 Go1 配置为适用于 Microsoft Viva Learning 的学习内容源。
-ms.openlocfilehash: f327d17e1ca1095a0cceadefc5a649d2acab2f03
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1adef6275be2a8656eaad9a7f47805d13299e3c7
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702149"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950529"
 ---
 # <a name="configure-go1-as-a-content-source-for-microsoft-viva-learning"></a>将 Go1 配置为网站内容Microsoft Viva Learning
 
@@ -47,7 +47,7 @@ Go1 提供对来自顶级内容提供商的数千个课程的访问权限。 [�
 5. 输入应用的名称，例如"My-go1-viva-integration"。
 6. 输入回叫 URL，例如"Mycompany.mygo1.com"。
 7. 保存您输入的信息。
-8. 将显示你的信息，并隐藏"机密"。 Select theellipses (**...**) ， then select **View Secret** to display the Secret.
+8. 将显示你的信息，并隐藏"机密"。 选择省略号 (**...**) ，然后选择"查看密码"以显示密码。 
 9. 复制以下值：
 
     - **客户端的主机 URL：** 这是 Go1 门户 URL。 它看起来像" https://mycompany.mygo1.com "。
@@ -65,6 +65,3 @@ Go1 提供对来自顶级内容提供商的数千个课程的访问权限。 [�
 2. 导航到 **"设置"，** 再导航到"**组织设置"。** 选择"Viva Learning"，然后启用面板中的"Go1"。
 3. 填写从 Go1 门户检索到的配置详细信息。
 4. 选择 **"保存**"以激活 Viva Learning 中的 Go1 内容。 内容可能需要 24 小时才能显示在 Viva Learning应用中。
-
->[!NOTE]
->租户元数据集中存储在我们的数据存储中，而不是存储在特定于地理位置的数据存储中。
