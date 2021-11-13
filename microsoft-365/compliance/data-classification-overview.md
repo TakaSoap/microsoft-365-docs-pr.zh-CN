@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: 2e9d9a2581a5a2dd94dbfa32e3105486999f4b6b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67ceb75fd5062e422121588f7830fcd389202cb5
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153122"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914532"
 ---
 # <a name="learn-about-data-classification"></a>了解数据分类。
 
@@ -39,7 +39,7 @@ ms.locfileid: "60153122"
 
 - [可训练的分类器](classifier-learn-about.md)
 - [敏感信息类型](sensitive-information-type-learn-about.md)
-- [精确数据匹配](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [了解基于确切数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [内容浏览器](data-classification-content-explorer.md)。
 - [活动资源管理器](data-classification-activity-explorer.md)
 

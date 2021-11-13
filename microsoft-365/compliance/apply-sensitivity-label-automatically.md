@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 2574ad8c9a42c5646bda770a0c5a310548ddc88e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 8d45308bc9bb4562cc82417ddb8ed762d8ac65b1
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883747"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914280"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -151,7 +151,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 #### <a name="custom-sensitive-information-types-with-exact-data-match"></a>使用精确数据匹配的自定义敏感信息类型
 
-可以配置一个敏感度标签，对自定义敏感信息类型使用 [基于精确数据匹配 (EDM) 的分类](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。 然而，目前还必须指定至少一种不使用 EDM 的敏感信息类型。 例如，内置的敏感信息类型之一，如 **信用卡号码**。
+可以配置一个敏感度标签，对自定义敏感信息类型使用[基于精确数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)。 然而，目前还必须指定至少一种不使用 EDM 的敏感信息类型。 例如，内置的敏感信息类型之一，如 **信用卡号码**。
 
 如果为敏感信息类型条件配置了一个仅有 EDM 的敏感标签，那么该标签的自动贴标设置则会自动关闭。
 

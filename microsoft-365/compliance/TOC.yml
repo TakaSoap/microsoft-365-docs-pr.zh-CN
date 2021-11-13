@@ -124,6 +124,8 @@
           items:
             - name: 了解敏感信息类型
               href: sensitive-information-type-learn-about.md
+            - name: 了解基于确切数据匹配的敏感信息类型
+              href: sit-learn-about-exact-data-match-based-sits.md
             - name: 文档指纹
               href: document-fingerprinting.md
             - name: 了解命名实体（预览版）
@@ -132,14 +134,22 @@
           items:
             - name: 自定义敏感信息类型入门 - 合规中心
               href: create-a-custom-sensitive-information-type.md
+            - name: 开始使用基于确切数据匹配的敏感信息类型
+              href: sit-get-started-exact-data-match-based-sits-overview.md
+            - name: 导出源数据以实现基于敏感信息类型的精确数据匹配
+              href: sit-get-started-exact-data-match-export-data.md
+            - name: 为基于敏感信息类型的精确数据匹配创建模式
+              href: sit-get-started-exact-data-match-create-schema.md
+            - name: 对敏感信息源表进行哈希和上传，以实现敏感信息类型的精确数据匹配
+              href: sit-get-started-exact-data-match-hash-upload.md
+            - name: 创建精确的数据匹配敏感信息类型/规则包
+              href: sit-get-started-exact-data-match-create-rule-package.md
+            - name: 测试精确数据匹配的敏感信息类型
+              href: sit-get-started-exact-data-match-test.md
         - name: 使用敏感信息类型
           items:
             - name: 自定义内置敏感信息类型
               href: customize-a-built-in-sensitive-information-type.md
-            - name: 使用精确数据匹配创建自定义敏感信息类型
-              href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-            - name: 使用精确数据匹配架构和敏感信息类型向导
-              href: sit-edm-wizard.md
             - name: 修改精确数据匹配架构，以使用可配置匹配
               href: sit-modify-edm-schema-configurable-match.md
             - name: 为精确数据匹配活动创建通知（预览）
@@ -154,6 +164,10 @@
               href: create-a-keyword-dictionary.md
             - name: 修改关键字词典
               href: sit-modify-keyword-dictionary.md
+            - name: 管理精确数据匹配模式
+              href: sit-use-exact-data-manage-schema.md
+            - name: 刷新敏感信息源表文件
+              href: sit-use-exact-data-refresh-data.md
             - name: 在数据丢失防护策略中使用命名实体（预览版）
               href: named-entities-use.md
         - name: 敏感信息类型参考

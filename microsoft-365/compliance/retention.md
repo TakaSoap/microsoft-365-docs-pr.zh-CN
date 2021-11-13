@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: a66ef59df6f05ec0e03fa5b9388f2fd3e0fd9a58
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: a284ec91151028e30af414b85c4fff66658c23e9
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792564"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950589"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -298,6 +298,8 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 - 基于查询的成员身份可针对业务更改提供复原能力，这些更改可能无法可靠地反映在依赖于跨部门通信的组成员身份或外部进程中。
 
 - 单个保留策略可以包括 Microsoft Teams 和 Yammer 的位置，而当你使用静态作用域时，这些位置需要自己的保留策略。
+    
+- 可以将特定保留设置应用于仅非活动邮箱。 静态作用域无法进行此配置，因为在分配策略时，静态作用域不支持特定包含具有非活动邮箱的收件人。
 
 使用静态作用域的优点：
 

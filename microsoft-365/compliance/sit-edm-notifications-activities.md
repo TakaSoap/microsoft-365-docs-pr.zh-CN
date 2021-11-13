@@ -17,22 +17,25 @@ search.appverid:
 - MET150
 description: 了解如何为精确数据匹配活动创建通知。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5dfaf1744d2df82df5598da666937ac3365bf0f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1033b6cd84f84db65f49f95e008e20eada63ca64
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152894"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914592"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>创建精确数据匹配活动通知
 
-当 [使用精确数据匹配 (EDM) 创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 时，在 [审核日志](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log) 中会创建大量活动。 可以使用 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell cmdlet 创建通知，让你了能这些活动何时开始：
+当 [使用精确数据匹配 (EDM) 创建自定义敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) 时，在 [审核日志](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log) 中会创建大量活动。 可以使用 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell cmdlet 创建通知，让你了能这些活动何时开始：
 
 - CreateSchema
 - EditSchema
 - RemoveSchema
 - UploadDataFailed
 - UploadDataCompleted
+
+> [!NOTE]
+ 创建 EDM 活动通知的功能仅可用于 World Wide 和 GCC 云。
 
 ## <a name="pre-requisites"></a>先决条件
 
@@ -63,7 +66,7 @@ ms.locfileid: "60152894"
     New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <address to send notification to> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
     ```
     
-    对于 **UploadDataFailed**，可以运行:
+    对于 **UploadDataFailed**，可以运行：
     
     ```powershell
     New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUser <SMTP address to send notification to> -ThreatType Activity -Operation UploadDataFailed -Description "Custom alert policy to track when EDM upload Failed" -AggregationType None -Severity High
@@ -71,5 +74,5 @@ ms.locfileid: "60152894"
 
 ## <a name="related-articles"></a>相关文章
 
-- [使用精确数据匹配创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [了解基于确切数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert)
