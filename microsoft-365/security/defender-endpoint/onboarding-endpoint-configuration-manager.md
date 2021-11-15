@@ -15,14 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b60aca935af326680165a0ccc8669082b14f299d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 0a2923f9e80a5ea5ee92110181af69a874d7fd25
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753769"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963415"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 载入
 
@@ -45,16 +46,16 @@ ms.locfileid: "60753769"
 
 本主题指导用户：
 
-- 步骤 1：Windows设备载入服务
+- 步骤 1：Windows设备加入服务
 - 步骤 2：为终结点功能配置 Defender
 
-本载入指南将指导你完成在使用 Microsoft Endpoint Configuration Manager 时需要执行的基本Microsoft Endpoint Configuration Manager：
+此载入指南将指导你完成在使用应用时需要执行Microsoft Endpoint Configuration Manager：
 
 - **在 Microsoft Endpoint Configuration Manager**
-- **使用 Microsoft Defender 为终结点配置Microsoft Endpoint Configuration Manager**
+- **使用 Microsoft Endpoint Configuration Manager 为终结点配置 Microsoft Defender Microsoft Endpoint Configuration Manager**
 
 > [!NOTE]
-> 此示例Windows仅涵盖所有设备。
+> 此示例Windows仅涵盖设备。
 
 ## <a name="step-1-onboard-windows-devices-using-microsoft-endpoint-configuration-manager"></a>步骤 1：Windows设备载入Microsoft Endpoint Configuration Manager
 
@@ -102,7 +103,7 @@ ms.locfileid: "60753769"
 
     ![Microsoft Endpoint Configuration Manager向导8 的图像。](images/configmgr-membership-rules.png)
 
-9. 选择 **下一步**。
+9. 选择“**下一步**”。
 
     ![Microsoft Endpoint Configuration Manager向导9 的图像。](images/configmgr-confirm.png)
 
@@ -120,9 +121,9 @@ ms.locfileid: "60753769"
 
 #### <a name="windows-10-and-windows-11"></a>Windows 10 和 Windows 11
 
-从 Microsoft 365 Defender 门户中，可以下载可用于在 System Center Configuration Manager 中创建策略的策略，并部署该策略以Windows 10 Windows 11 `.onboarding` 设备。
+从 Microsoft 365 Defender 门户中，可以下载可用于在 System Center Configuration Manager 中创建策略的策略，以及将策略部署到 Windows 10 Windows 11 `.onboarding` 设备。
 
-1. 从应用Microsoft 365 Defender，选择["设置"，然后选择"载入"。](https://security.microsoft.com/preferences2/onboarding)
+1. From a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal，</a>select[设置 and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
 
 2. 在"部署方法"下，选择支持的版本 **Microsoft Endpoint Configuration Manager。**
 
@@ -147,8 +148,8 @@ ms.locfileid: "60753769"
 
 9. 从上面的步骤 4 导航到已下载文件的位置。
 
-10. 单击"下一步"。
-11. 使用"无"或"所有文件类型 (**相应的示例配置** 代理) 。 
+10. 单击 **下一个**。
+11. 使用"无"或"所有文件类型 (**相应的示例配置代理) 。** 
 
     ![配置设置 1 的图像。](images/configmgr-config-settings.png)
 
@@ -162,7 +163,7 @@ ms.locfileid: "60753769"
 
 14. 向导 **完成后** ，单击"关闭"。
 
-15. 在 Microsoft Endpoint Configuration Manager控制台中，右键单击刚创建的 Defender for Endpoint 策略，然后选择 **部署**。
+15. 在 Microsoft Endpoint Configuration Manager控制台中，右键单击刚创建的 Defender for Endpoint 策略，**然后选择部署**。
 
      ![配置设置的图像4。](images/configmgr-deploy.png)
 
@@ -172,11 +173,11 @@ ms.locfileid: "60753769"
 
 #### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>早期版本的 Windows Client (Windows 7 和 Windows 8.1) 
 
-按照以下步骤标识 Defender for Endpoint Workspace ID 和工作区密钥，这是载入早期版本的 Windows。
+按照以下步骤确定 Defender for Endpoint Workspace ID 和工作区密钥，这是载入早期版本的 Windows。
 
-1. 从Microsoft 365 Defender门户中，设置设备管理 (下选择 \>  \> **") "** 终结点载入) 。
+1. 从 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，设置设备管理 (下选择") "。 \>  \>  
 
-2. 在操作系统下 **，Windows 7 SP1 和 8.1。**
+2. 在操作系统下，**选择Windows 7 SP1 和 8.1。**
 
 3. 复制 **工作区 ID 和****工作区密钥并** 保存它们。 稍后将在过程中使用。
 
@@ -200,7 +201,7 @@ ms.locfileid: "60753769"
    具体而言，Windows 7 SP1，必须安装以下修补程序：
 
    - 安装 [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-   - 安装 .NET Framework [4.5](https://www.microsoft.com/download/details.aspx?id=30653) (或更高版本) [KB3154518。](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)  不要在同一个系统中同时安装这两者。
+   - 安装[.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (或更高版本) [KB3154518。](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)  不要在同一个系统中同时安装这两者。
 
 5. 如果使用代理连接到 Internet，请参阅配置代理设置部分。
 
@@ -210,7 +211,7 @@ ms.locfileid: "60753769"
 
 Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机、便携式计算机和服务器提供安全提供下一代防护。
 
-1. In the Microsoft Endpoint Configuration Manager console， navigate to **Assets and Compliance Overview Endpoint Protection \> \> \> Antimalware Polices** and choose **Create Antimalware Policy**.
+1. 在Microsoft Endpoint Configuration Manager控制台中，导航到"资产和合规性概述 **\> Endpoint Protection反恶意软件策略 \> \> "，** 然后选择"**创建反恶意软件策略"。**
 
     ![反恶意软件策略的图像。](images/9736e0358e86bc778ce1bd4c516adb8b.png)
 
@@ -248,7 +249,7 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 
      ![下一代保护窗格11 的图像。](images/configmgr-select-collection.png)
 
-完成此任务后，现在可以成功配置Windows Defender 防病毒。
+完成此任务后，现在已成功配置Windows Defender 防病毒。
 
 ### <a name="attack-surface-reduction"></a>攻击面减少
 
@@ -288,7 +289,7 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 
 下面是验证 ASR 规则是否已正确应用到终结点的其他步骤。  (这可能需要几分钟) 
 
-1. 在 Web 浏览器中，导航到 <https://security.microsoft.com> 。
+1. 在 Web 浏览器中，转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">"Microsoft 365 Defender"。</a>
 
 2. 从 **左侧菜单中选择** 配置管理。
 

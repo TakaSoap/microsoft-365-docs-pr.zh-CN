@@ -15,14 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f68bd40afd0094f8a319f10c6e71d0cee94cef28
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1cee88d872ca7d83b9fbaf391a25cdb21cd10bd6
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754415"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963379"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置适用于终结点的 Microsoft Defender 部署
 
@@ -50,13 +51,13 @@ ms.locfileid: "60754415"
 - 网络配置
 
 > [!NOTE]
-> 为了引导您完成典型部署，此方案将仅涉及 Microsoft Endpoint Configuration Manager。 Defender for Endpoint 支持使用其他载入工具，但不在部署指南中介绍这些方案。 有关详细信息，请参阅 [将设备载入到 Microsoft Defender for Endpoint](onboard-configure.md)。
+> 为了指导你完成典型部署，此方案将仅涉及Microsoft Endpoint Configuration Manager。 Defender for Endpoint 支持使用其他载入工具，但不在部署指南中介绍这些方案。 有关详细信息，请参阅 [将设备载入到 Microsoft Defender for Endpoint](onboard-configure.md)。
 
 ## <a name="check-license-state"></a>检查许可证状态
 
-可通过管理中心或管理门户检查许可证状态及其是否Microsoft Azure **设置**。
+可以通过管理中心或管理门户检查许可证状态及其是否Microsoft Azure **设置**。
 
-1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
    ![Azure 许可页面的图像。](images/atp-licensing-azure-portal.png)
 
@@ -70,7 +71,7 @@ ms.locfileid: "60754415"
 
 若要获取向公司预配哪些许可证的访问权限，并检查许可证的状态，请转到管理中心。
 
-1. 在合作伙伴 **门户中，** 选择"管理服务 **> Office 365"。**
+1. 从合作伙伴 **门户中，** 选择"**管理服务> Office 365"。**
 
 2. 单击"**合作伙伴门户**"链接将打开"代表管理员"选项，并授予你客户管理中心的访问权限。
 
@@ -80,7 +81,7 @@ ms.locfileid: "60754415"
 
 载入 Microsoft Defender for Endpoint 非常简单。 从导航菜单中，选择终结点部分下的任何项目，或任何 Microsoft 365 Defender 功能（如事件、搜寻、操作中心或威胁分析）以启动载入过程。
 
-从 Web 浏览器中，导航到["Microsoft 365安全中心"。](https://security.microsoft.com)
+在 Web 浏览器中，导航到Microsoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">安全中心</a>。
 
 ## <a name="network-configuration"></a>网络配置
 
@@ -104,12 +105,12 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 配置基于注册表的静态代理，以允许仅 Microsoft Defender for Endpoint 传感器报告诊断数据，并与 Microsoft Defender for Endpoint 服务进行通信（如果不允许计算机连接到 Internet）。 静态代理可以通过组策略 (GP) 配置。 可以在以下位置找到组策略：
 
-- 管理模板Windows组件 数据收集和预览版本配置连接的用户体验和遥测服务的已验证 \> \> \> 代理使用情况
+- 管理模板Windows组件 数据收集和预览版本配置连接的用户体验和遥测服务的已验证 \> \> \> 代理用法
 - 将其设置为" **已启用"，** 然后选择 **"禁用经过身份验证的代理用法"**
 
 1. 打开组策略管理控制台。
 2. 根据组织实践创建策略或编辑现有策略。
-3. 编辑组策略并导航到"管理模板Windows组件数据收集和预览版配置连接的用户体验和遥测服务的已验证 **\> \> \> 代理用法**。
+3. 编辑组策略并导航到"管理模板Windows组件数据收集和预览版配置连接的用户体验和遥测服务的已验证 **\> \> \> 代理使用情况**。
 
    ![组策略配置的图像。](images/atp-gpo-proxy1.png)
 
@@ -157,11 +158,11 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>低级别设备的代理配置
 
-Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 以及 Windows Server CB 1803 之前的 Windows Server 2016 版本。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
+Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 以及 Windows Server 2016 之前的 Windows Windows 服务器 CB 1803。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
 
 ### <a name="proxy-service-urls"></a>代理服务 URL
 
-仅在你拥有 Windows 10 版本 1803 或 Windows 11 URL。 例如， `us-v20.events.data.microsoft.com` 仅在设备位于 Windows 10 1803 或 Windows 11。
+仅在你拥有 Windows 10 版本 1803 或 Windows 11 URL。 例如， `us-v20.events.data.microsoft.com` 仅在设备位于 Windows 10版本 1803 或 Windows 11。
 
 如果代理或防火墙阻止匿名流量，因为 Microsoft Defender for Endpoint 传感器从系统上下文连接，请确保允许列出的 URL 中的匿名流量。
 

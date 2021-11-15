@@ -16,14 +16,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 95f20e1e5ac3c623decb131929d3c27164f3a96b
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 156ddfc6a44074db23369ca20e8d7c3d4471459e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60908001"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963115"
 ---
 # <a name="device-discovery-overview"></a>设备发现概述
 
@@ -105,7 +106,7 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>已发现设备的漏洞评估
 
-设备上以及网络中发现的其他非托管设备的漏洞和风险是"安全 推荐"下当前 TVM 流的一部分，在门户的实体页面中表示。
+你的设备以及网络中发现的其他非托管设备的漏洞和风险是"安全 推荐"下当前 TVM 流的一部分，在门户的实体页面中表示。
 搜索与"SSH"相关的安全建议，以查找与非托管和托管设备相关的 SSH 漏洞。
 
 ![安全建议仪表板的图像。](images/1156c82ffadd356ce329d1cf551e806c.png)
@@ -119,7 +120,7 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 设备发现将适用于终结点载入设备的 Microsoft Defender 用作网络数据源，将活动属性化为未载入的设备。 这意味着，如果 Microsoft Defender for Endpoint 已载入设备与非载入设备通信，则未载入的设备上的活动可以在时间线上和通过高级搜寻 DeviceNetworkEvents 表看到。
 
-新事件是传输控制协议 (TCP) 基于连接，并且适合当前的 DeviceNetworkEvents 方案。 从启用了非 Microsoft Defender for Endpoint 的设备进入启用终结点的 Microsoft Defender 设备的 TCP。
+新事件是基于连接的传输控制 (TCP) ，并且适合当前的 DeviceNetworkEvents 方案。 从启用了非 Microsoft Defender for Endpoint 的设备进入启用终结点的 Microsoft Defender 设备的 TCP。
 
 还添加了以下操作类型：
 
@@ -136,12 +137,12 @@ DeviceNetworkEvents
 
 ## <a name="changed-behavior"></a>已更改行为
 
-以下部分列出了启用此功能后，你将在 Microsoft Defender for Endpoint 和/Microsoft 365安全中心中观察到的更改。
+以下部分列出了启用此功能后，你将在 Microsoft Defender for Endpoint 和<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">/Microsoft 365</a>安全中心中观察到的更改。
 
 1. 未载入到 Microsoft Defender for Endpoint 的设备应显示在设备清单、高级搜寻和 API 查询中。 这可能会显著增加查询结果的大小。
     1. 高级搜寻中的"DeviceInfo"和"DeviceNetworkInfo"表现在将保留发现的设备。 可以使用"OnboardingStatus"属性筛选出这些设备。
     2. 已发现的设备应显示在流式 API 查询结果中。 可以使用查询中的筛选器筛选出 `OnboardingStatus` 这些设备。
-2. 非托管设备将基于定义的条件分配给现有设备组。
+2. 非托管设备将基于定义的条件分配到现有设备组。
 3. 在极少数情况下，标准发现可能会触发网络监视器或安全工具上的警报。 如果遇到此类事件，请提供反馈以帮助防止这些问题定期发生。 你可以明确排除特定目标或整个子网，不由标准发现主动探测。
 
 ## <a name="next-steps"></a>后续步骤

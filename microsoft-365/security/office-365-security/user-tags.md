@@ -13,15 +13,16 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中标识具有用户标记的特定用户组。 可在 Microsoft Defender for Office 365警报、报告和调查之间使用标签筛选，以快速识别标记用户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7659ac6e6d53213deb30d37fc53afbb028e6058e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db06c2a60ddc0cfb4d6bb2efce4e030eed6386a5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206453"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962683"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -33,7 +34,7 @@ ms.locfileid: "60206453"
 - **系统标记**：目前 [，优先级帐户](../../admin/setup/priority-accounts.md) 是唯一类型的系统标记。
 - **自定义标记**：你可自己创建这些用户标记。
 
-如果你的组织拥有适用于 Office 365 计划 2 (的 Defender 或作为附加) ，则除了使用优先级帐户标记外，还可以创建自定义用户标记。
+如果你的组织拥有适用于 Office 365 计划 2 的 Defender (或作为加载项) ，则除了使用优先级帐户标记外，还可以创建自定义用户标记。
 
 > [!NOTE]
 > 目前，只能将用户标记应用于邮箱用户。
@@ -47,15 +48,15 @@ ms.locfileid: "60206453"
 - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
 - [市场活动视图](campaigns.md)
 - [管理员和用户提交](admin-submission.md)
-- 对于优先级帐户，可以使用 EAC [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) Exchange管理中心中的" (优先级帐户) 。
+- 对于优先级帐户，可以在 EAC[](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)管理中心Exchange电子邮件 (优先) 。
 
-本文介绍如何在应用程序门户中配置Microsoft 365 Defender标记。 管理门户中没有任何 cmdlet Microsoft 365 Defender管理用户标记。
+本文介绍如何在 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中配置用户标记</a>。 管理门户中没有任何 cmdlet Microsoft 365 Defender管理用户标记。
 
 若要了解用户标记如何作为策略的一部分来帮助保护高影响的用户帐户，请参阅安全建议[中](security-recommendations-for-priority-accounts.md)优先级帐户Microsoft 365。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 访问 <https://security.microsoft.com/> 打开 Microsoft 365 Defender 门户。 若要直接转到" **用户标记"** 页，请打开 <https://security.microsoft.com/securitysettings/userTags> 。
+- 在 打开Microsoft 365 Defender门户 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a> 。 若要直接转到" **用户标记"** 页，请打开 <https://security.microsoft.com/securitysettings/userTags> 。
 
 - 您需在 Microsoft 365 Defender 门户中分配权限，然后才能执行本文中的过程：
   - 若要创建、修改和删除用户标记，您必须是组织管理或安全 **管理员****角色组** 的成员。
@@ -66,17 +67,17 @@ ms.locfileid: "60206453"
 
   > [!NOTE]
   >
-  > - 将用户添加到 Azure Active Directory 中的相应 Microsoft 365 管理中心 可为用户提供 Microsoft 365 Defender _门户中_ 所需的权限以及 Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > - 将用户添加到 Azure Active Directory 中的相应 Microsoft 365 管理中心 角色会为用户提供 Microsoft 365 Defender 门户中所需的权限，以及用户对 Microsoft 365中其他功能Microsoft 365。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   >
   > - 用户标记管理由 Tag **Reader** 和 **Tag Manager 角色** 控制。
 
-- 此外，还可以管理和监视安全管理中的Microsoft 365 管理中心。 有关说明，请参阅 [管理和监视优先级帐户](../../admin/setup/priority-accounts.md)。
+- 此外，还可以在安全管理中管理和监视Microsoft 365 管理中心。 有关说明，请参阅 [管理和监视优先级帐户](../../admin/setup/priority-accounts.md)。
 
-- 有关保护管理员帐户的 _特权 (，)_ 请参阅 [本主题](/azure/architecture/framework/security/critical-impact-accounts)。
+- 有关保护管理员帐户 (帐户 _) ，_ 请参阅 [本主题](/azure/architecture/framework/security/critical-impact-accounts)。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>使用Microsoft 365 Defender门户创建用户标记
 
-1. 在 Microsoft 365 Defender 门户中，转到设置 \> **电子邮件&协作** \> **用户标记。**
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到设置 \> **电子邮件&协作** \> **用户标记。**
 
 2. 在" **用户标记"** 页上，单击" ![ 创建标记图标"。](../../media/m365-cc-sc-create-icon.png) **创建标记**。
 
@@ -106,9 +107,9 @@ ms.locfileid: "60206453"
 
    完成后，单击"提交 **"，** 然后单击"完成 **"。**
 
-## <a name="use-the-microsoft-365-defender-portal-to-view-user-tags"></a>使用Microsoft 365 Defender查看用户标记
+## <a name="use-the-microsoft-365-defender-portal-to-view-user-tags"></a>使用 Microsoft 365 Defender 门户查看用户标记
 
-1. 在 Microsoft 365 Defender 门户中，转到设置 \> **电子邮件&协作** \> **用户标记。**
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到设置 \> **电子邮件&协作** \> **用户标记。**
 
 2. 在 **"用户标记** "页上，用户标记列表中将显示以下属性：
 
@@ -119,15 +120,15 @@ ms.locfileid: "60206453"
 
 3. 当您通过单击该名称选择用户标记时，详细信息将显示在一个 flyout 中。
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-user-tags"></a>使用 Microsoft 365 Defender门户修改用户标记
+## <a name="use-the-microsoft-365-defender-portal-to-modify-user-tags"></a>使用Microsoft 365 Defender门户修改用户标记
 
-1. 在 Microsoft 365 Defender 门户中，转到设置 \> **电子邮件&协作** \> **用户标记。**
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到设置 \> **电子邮件&协作** \> **用户标记。**
 
 2. 在" **用户标记** "页上，从列表中选择用户标记，然后单击"编辑 ![ 标记图标"。](../../media/m365-cc-sc-edit-icon.png) **编辑标记**。
 
 3. 在出现的详细信息飞出控件中，提供相同的向导和设置，如本文前面使用 Microsoft 365 Defender[门户](#use-the-microsoft-365-defender-portal-to-create-user-tags)创建用户标记部分所述。
 
-   **注意**:
+   **注意**：
 
    - " **定义标记** "页对内置 **Priority** 帐户系统标记不可用，因此无法重命名此标记或更改说明。
    - 不能重命名自定义标记，但可以更改说明。
@@ -137,7 +138,7 @@ ms.locfileid: "60206453"
 > [!NOTE]
 > 无法删除内置的 **优先级帐户系统** 标记。
 
-1. 在 Microsoft 365 Defender 门户中，转到设置 \> **电子邮件&协作** \> **用户标记。**
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到设置 \> **电子邮件&协作** \> **用户标记。**
 
 2. 在" **用户标记** "页上，从列表中选择用户标记，然后单击" ![ 删除标记图标"。](../../media/m365-cc-sc-delete-icon.png) **删除标记**。
 

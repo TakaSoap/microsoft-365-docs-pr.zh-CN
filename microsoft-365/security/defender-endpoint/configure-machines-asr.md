@@ -12,14 +12,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 72385d19e6c734c06a8ac14c2de01a023db28d53
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 7a22d07919aaebc1373c5b330c51d720c25b4f8c
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883337"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963127"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>优化 ASR 规则部署和检测
 
@@ -38,7 +39,7 @@ ms.locfileid: "60883337"
 <br>
 *攻击面管理卡*
 
-攻击 *面管理卡* 是安全中心中Microsoft 365入口点，可用于：
+攻击 *面管理卡* 是安全中心中Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">入口点</a>，可用于：
 
 * 了解 ASR 规则当前在组织中是如何部署的。
 * 查看 ASR 检测并识别可能的不正确检测。
@@ -50,9 +51,9 @@ ms.locfileid: "60883337"
 安全 ***中心的"攻击** 面减少规则"页中的"添加排除Microsoft 365选项卡*
 
 > [!NOTE]
-> 若要访问Microsoft 365中心，您需要一个 Microsoft 365 E3 E5 许可证和一个在安全中心上具有特定角色Azure Active Directory。 [阅读所需的许可证和权限](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+> 若要访问Microsoft 365中心，您需要一个 Microsoft 365 E3 或 E5 许可证以及一个在安全中心上具有特定Azure Active Directory。 [阅读所需的许可证和权限](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
-有关安全中心中 ASR 规则部署Microsoft 365，请参阅监视和管理[ASR 规则部署和检测](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
+有关安全中心中 ASR 规则部署<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365，</a>请参阅监视和管理[ASR 规则部署和检测](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
 
 **相关主题**
 

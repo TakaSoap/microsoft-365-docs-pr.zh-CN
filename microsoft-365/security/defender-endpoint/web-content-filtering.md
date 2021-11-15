@@ -12,14 +12,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65010f13ca5b1605d9bcec672c4e51270913d407
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4c316c09ced5e38b51395faea7a84adccc2c2645
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883433"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962623"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -50,13 +51,13 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 在尝试此功能之前，请确保满足以下要求：
 
-- 你的订阅包括以下各项之一：Windows 10 企业版 E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或独立 Microsoft Defender for Endpoint许可证。 
+- 订阅包括以下各项之一：Windows 10 企业版 E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或 Microsoft Defender for Endpoint独立许可证。 
 
-- 你有权访问 Microsoft 365 Defender 门户 [https://security.microsoft.com](https://security.microsoft.com) () 。
+- 你有权访问 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>。
 
-- 你的组织设备正在运行 Windows 10 周年更新 (版本 1607) 或更高版本，Windows 11最新的防病毒[/反恶意软件更新](manage-updates-baselines-microsoft-defender-antivirus.md)。
+- 组织的设备正在运行 Windows 10 周年更新 (版本 1607) 或更高版本，或 Windows 11最新防病毒/反恶意软件[更新](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
-- Windows DefenderSmartScreen 和网络保护在组织的设备上启用。
+- Windows Defender在组织的设备上启用 SmartScreen 和网络保护。
 
 ## <a name="data-handling"></a>数据处理
 
@@ -64,7 +65,7 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 ## <a name="turn-on-web-content-filtering"></a>打开 Web 内容筛选
 
-从左侧导航菜单中，选择"设置 \>  \> **终结点常规** \> **高级功能"。** 向下滚动，直到您看到用于 Web 内容 **筛选的条目**。 将开关切换到 **开** 和 **保存首选项**。
+从左侧导航门户中 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">，Microsoft 365 Defender"</a>**终结点设置** \>  \> **高级** \> **功能"。** 向下滚动，直到您看到用于 Web 内容 **筛选的条目**。 将开关切换到 **开** 和 **保存首选项**。
 
 ### <a name="configure-web-content-filtering-policies"></a>配置 Web 内容筛选策略
 
@@ -109,11 +110,11 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 **儿童滥用图像**：包括儿童滥用图像或滥用的网站。 
 
-**犯罪活动**：对非法活动提供说明、建议或宣传的网站。
+**犯罪活动**：对非法活动进行说明、建议或宣传的网站。
 
 **黑客** 攻击：提供资源以非法或有问题地使用计算机软件或硬件的网站，包括分发已被盗的受版权保护材料的网站。
 
-**恶意&：** 网站宣传有关可能由种族、性别、性别、年龄、年龄、身体残障、经济状况、性取向或其他任何生活方式选择识别的任何部分具有攻击性、降级或滥用性观点的网站。
+**恶意&：** 网站宣传有关可能由种族、性别、性别、年龄、年龄、身体障碍、经济状况、性取向或其他任何生活方式选择识别的任何部分具有攻击性、降级或滥用性观点的网站。
 
 **非法武器**：销售非法/受控非法非法者、宣传滥用或销售相关参数的站点。
 
@@ -159,7 +160,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 若要添加新策略，请按照以下步骤操作：
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) ， choose **设置**  >  **Web content filtering**+ Add  >  **policy**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal，</a>choose **设置**  >  **Web content filtering**+ Add  >  **policy**.
 
 2. 指定名称。
 
@@ -185,7 +186,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 若要定义自定义指示器，请按照以下步骤操作：
 
-1. 在Microsoft 365 Defender门户 <https://security.microsoft.com> () ，转到设置终结点指示器 \>  \>  \> **URL/域** \> **添加项"。**
+1. 在Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，**转到"设置** 终结点指示器 \>  \>  \> **URL/域** \> **添加项"。**
 
 2. 输入网站的域。
 
@@ -193,7 +194,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 ### <a name="dispute-categories"></a>争议类别
 
-如果遇到未正确分类的域，可以直接在门户中就类别进行争议。
+如果遇到未正确分类的域，可以直接在门户中对类别进行争议。
 
 要争议域的类别，请导航 **到"报告** Web 保护 Web 内容 \>  \> **筛选详细信息域** \> **"。** 在"Web 内容筛选"报表的"域"选项卡上，你将在每个域旁边看到省略号。 将鼠标悬停在此省略号上，然后选择"**争议类别"。**
 
@@ -201,7 +202,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 ### <a name="url-category-lookup"></a>URL 类别查找
 
-若要确定网站的类别，可以使用终结点搜索 下Microsoft 365 Defender门户 () <https://security.microsoft.com> **URL** \> **搜索功能**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
+若要确定网站的类别，可以使用终结点搜索 下Microsoft 365 Defender门户 () <https://security.microsoft.com> **URL** \> **搜索函数**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
 
 ![Web 内容筛选类别查找结果的图像。](../../media/web-content-filtering-category-lookup.png)
 
@@ -245,7 +246,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 ### <a name="known-issues-and-limitations"></a>已知问题和限制
 
-如果你Microsoft Edge操作系统配置是 Server ( \> **systeminfo** \> **OS Configuration**) ，则仅支持此) 。 网络保护仅在服务器设备的检查模式下受支持，服务器设备负责保护受支持的第三方浏览器上的流量。
+如果你Microsoft Edge操作系统配置是 Server (**cmd** \> **Systeminfo** \> **OS Configuration**) 。 网络保护仅在服务器设备的检查模式下受支持，它负责保护跨受支持的第三方浏览器的流量。
 
 网络保护当前不支持 SSL 检查，这可能会导致 Web 内容筛选允许某些网站，这些网站通常会被阻止。 由于 TLS 握手发生后无法查看加密流量，并且无法分析某些重定向，因此将允许网站。  这包括从一些基于 Web 的邮件登录页重定向到邮箱页面。 作为一种接受的解决方法，您可以为登录页创建自定义阻止指示器，以确保任何用户都无法访问该网站。 请记住，这可能会阻止他们访问与同一网站关联的其他服务。 
 

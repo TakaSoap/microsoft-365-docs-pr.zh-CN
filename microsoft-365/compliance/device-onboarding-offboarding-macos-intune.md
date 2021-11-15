@@ -1,5 +1,5 @@
 ---
-title: '使用 Microsoft 365 预览版将 macOS 设备载入Microsoft Intune (macOS) '
+title: '使用预览版将 macOS Microsoft 365载入和Microsoft Intune (合规性) '
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,33 +13,29 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: '了解如何使用 Microsoft 365 预览版将 macOS 设备载入和Microsoft Intune (合规性) '
-ms.openlocfilehash: 7e5692197a05f16326d3fd8b43e37a19186b9926
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+description: '了解如何使用 Microsoft 365 预览版将 macOS Microsoft Intune (载入和) '
+ms.openlocfilehash: 82aa3909ac7829f07a797673300cc0061bb4feef
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792276"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962707"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>使用 In (tune Microsoft 365预览版将 macOS 设备载入和) 
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>使用 Intune 将 macOS 设备载入和卸载到 Microsoft 365 合规性解决方案（预览版）
 
 可以使用 Intune 将 macOS 设备载入到Microsoft 365解决方案中。
 
 > [!IMPORTANT]
-> 如果您没有将 Microsoft  Defender for Endpoint (MDE) 部署到 macOS 设备，请使用此过程
-
-## <a name="get-registered"></a>注册
-
-若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅 注册[macOS Microsoft 365。](https://aka.ms/EndpointDLPIgnite21-Previews)
+> 如果你未将 Microsoft  Defender for Endpoint (MDE) 部署到 macOS 设备，请使用此过程
 
 **适用于：**
 
-- [Microsoft 365DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
+- [Microsoft 365终结点数据丢失防护 （DLP）](./endpoint-dlp-learn-about.md)
 - [内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 确保你的[macOS 设备已载入 Intune，](/mem/intune/fundamentals/deployment-guide-platform-macos)并且已注册公司门户[应用](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
+- 请确保你的[macOS 设备已载入 Intune，](/mem/intune/fundamentals/deployment-guide-platform-macos)并且已注册公司门户[应用](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
 - 确保你有权访问Microsoft Endpoint Manager[中心](https://endpoint.microsoft.com/#home)。
 - 这支持 macOS 版本 Catalina 10.15 及更高版本。
 - 创建要为其分配配置更新的用户组。
@@ -184,7 +180,7 @@ ms.locfileid: "60792276"
  
 1. 对于 **"部署"方法**，**选择"移动设备管理/Microsoft Intune"。**
  
-1. 选择 **"下载载入程序包"。** 这包含文件包中的 *DeviceComplianceOnboarding.xml* 代码。
+1. 选择 **"下载载入程序包"。** 这包括文件包中的载入 *DeviceComplianceOnboarding.xml* 代码。
 
 ### <a name="deploy-the-onboarding-package"></a>部署载入包
 
@@ -238,7 +234,7 @@ ms.locfileid: "60792276"
 
 ### <a name="get-the-installation-package"></a>获取安装包
 
-1. 在 **"合规性中心**"**中**  >  **设置"设备载入"，** 然后选择 **"载入"。**
+1. 在 **合规性中心** 中 **，设置"**  >  **设备载入"，** 然后选择 **"载入"。**
  
 1. 对于 **"选择操作系统以开始载入过程"选择** **macOS**
  
@@ -252,14 +248,14 @@ ms.locfileid: "60792276"
 
 ### <a name="deploy-the-microsoft-dlp-installation-package"></a>部署 Microsoft DLP 安装包
 
-1. 按照如何将 [macOS](/mem/intune/apps/lob-apps-macos)业务线 (LOB) 应用添加到 Microsoft Intune 中的过程将 *wdav.pkg* 文件转换为正确的格式并通过 Intune 进行部署。
+1. 按照如何将 [macOS](/mem/intune/apps/lob-apps-macos)业务线 (LOB) 应用添加到 Microsoft Intune 中的过程将 *wdav.pkg* 文件转换为正确的格式，并通过 Intune 进行部署。
 
 ## <a name="offboard-macos-devices-using-intune"></a>使用 Intune 的载出 macOS 设备
 
 > [!NOTE]
 > "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留六个月。
 
-2. 在 **Microsoft Endpoint Manager中心**，打开 **"设备**  >  **配置文件"，** 你应该会看到已创建的配置文件。
+2. 在 **Microsoft Endpoint Manager中心**，打开 **设备**  >  **配置文件**，你应该会看到你已创建的配置文件。
 
 1. 在配置文件 **页面中** ，选择 *wdav.pkg.intunemac* 配置文件。
 

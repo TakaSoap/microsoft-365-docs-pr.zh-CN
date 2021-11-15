@@ -10,26 +10,27 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理员可以了解如何使用 Microsoft Defender for Office 365 计划 2 中的攻击模拟培训其用户进行网络钓鱼防护。
+ms.custom: admindeeplinkDEFENDER
+description: 管理员可以了解如何使用 Microsoft Defender for Office 365 计划 2 中的攻击模拟培训用户进行网络钓鱼防护。
 ms.technology: mdo
-ms.openlocfilehash: 10a4391cc901eaa51f7ff272b5b014fdb9e17dcd
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 394a37baffb9961511b5a944a774b2083a384a58
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907845"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962454"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>在 Defender for Office 365
 
 **适用于 Microsoft** [Defender for Office 365计划 2](defender-for-office-365.md)
 
-通过 Microsoft Defender for Office 365计划 2 或 Microsoft 365 E5攻击模拟培训，你可以在你的组织中运行恶意网络攻击模拟。 这些模拟将测试你的安全策略和做法，并培训你的员工提高认知度并减少他们对攻击的敏感性。 本文将指导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
+Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培训允许你在组织中运行良好的网络攻击模拟。 这些模拟将测试你的安全策略和做法，并培训你的员工提高认知度并减少他们对攻击的敏感性。 本文将指导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
 
 有关攻击模拟培训的入门信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
 若要启动模拟网络钓鱼攻击，请执行以下步骤：
 
-1. 在 Microsoft 365 Defender 门户中 <https://security.microsoft.com/> ，转到"电子邮件 **&协作** \> **攻击模拟** \> **培训模拟"** 选项卡。
+1. 在 Microsoft 365 Defender 门户中 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> ，转到电子邮件& \> **攻击模拟培训** \> **模拟** 选项卡。
 
    若要直接转到模拟 **选项卡** ，请使用 <https://security.microsoft.com/attacksimulator?viewid=simulations> 。
 
@@ -91,7 +92,7 @@ ms.locfileid: "60907845"
   - **全局** (内置) 
   - **租户** (自定义) 
   - **全部**
-- 语言 ：可用值为：中文 **(简体) 、** 中文 (繁体 **) 、****英语**、**法语**、**德语**、**意大利语**、**日语**、**朝鲜** 语、**葡萄牙语、****俄语**、**西班牙语** 和 **荷兰语**。
+- 语言 ：可用值为：中文 **(简** 体) 、中文 (**繁体) 、****英语**、**法语**、**德语**、**意大利语**、**日语**、**朝鲜** 语、**葡萄牙语、****俄语**、**西班牙语** 和 **荷兰语**。
 - **添加 (标记)**
 - **按主题** 筛选：可用值为：**帐户** 激活、**帐户** 验证、**计费**、**清理邮件**、已接收 **文档**、**费用**、**传真**、财务报告、**传入** 邮件、**发票**、已接收项目、**登录通知**、**已接收邮件**、**密码**、**付款**、**工资** 单、个性化 **优惠****、隔离远程工作**，**审阅邮件**，**安全更新**，**服务** 挂起 **，** 需要签名 ，**升级邮箱存储 验证邮箱**、**语音邮件** 和其他 **。**
 - 按品牌筛选：可用值为 **：American Express、Capital** One、DHL、DocuSign、Dropbox、Facebook、First      American、Microsoft、Netflix、Scotiabank、SendGrid、Stewart      **Title、Tesco、Wells** Fargo、Syrinx **Cloud** **和其他**。
@@ -108,9 +109,9 @@ ms.locfileid: "60907845"
 - " **概述** "选项卡包含有关有效负载的示例和其他详细信息。
 - 模拟 **启动选项卡** 包含 **模拟名称**、单击 **率****、泄露率****和操作**。
 
-![Microsoft 365 Defender门户中攻击模拟培训中的有效负载详细信息。](../../media/attack-sim-training-simulations-select-payload-details.png)
+![负载详细信息在 Microsoft 365 Defender 门户的攻击模拟培训中。](../../media/attack-sim-training-simulations-select-payload-details.png)
 
-如果通过单击名称从列表中选择有效负载，则会显示 ![ "发送测试有效负载"图标。](../../media/m365-cc-sc-create-icon.png) **"发送测试** "按钮显示在主页上，你可以向自己发送有效负载电子邮件的副本 (当前登录的用户) 检查。
+如果通过单击名称从列表中选择有效负载，则会显示 ![ "发送测试有效负载"图标。](../../media/m365-cc-sc-create-icon.png) **"发送测试** "按钮显示在主页上，你可以向自己发送有效负载电子邮件的副本 (当前登录的用户) 进行检查。
 
 若要创建自己的有效负载，请单击 ![ "创建有效负载图标"。](../../media/m365-cc-sc-create-icon.png) **创建有效负载**。 有关详细信息，请参阅为攻击 [模拟培训创建自定义负载](attack-simulation-training-payloads.md)。
 
@@ -142,7 +143,7 @@ ms.locfileid: "60907845"
         - 选择 **所有标题**
         - 选择现有的"标题"值。
 
-      ![用户门户中攻击模拟培训的"目标用户"页面上Microsoft 365 Defender筛选。](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      ![用户门户中攻击模拟培训中的目标用户Microsoft 365 Defender筛选。](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
 
       确定条件后，受影响的用户将显示在出现的"用户列表"部分，您可以在其中选择部分或所有发现的收件人。
 
@@ -170,7 +171,7 @@ ms.locfileid: "60907845"
       - **模拟结束后 15 天**
       - **模拟结束后 7 天**
   - **重定向到自定义 URL：** 此值具有以下要配置的相关选项：
-    - **自定义培训 URL** (必需) 
+    - **自定义培训 URL** (必填) 
     - **自定义培训名称 (** 必填) 
     - **自定义培训说明**
     - **自定义培训 (分钟**) ：默认值为 0，表示没有指定的培训持续时间。
@@ -180,7 +181,7 @@ ms.locfileid: "60907845"
       - **模拟结束后 7 天**
   - **无培训**：如果你选择此值，页面上的唯一选项是"下一步"按钮，将你导航到 [**登陆页面**](#landing-page)页面。
 
-![在企业门户中攻击模拟培训中的"培训作业"页面上添加Microsoft 365 Defender培训。](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+![在安全门户中攻击模拟培训中的"培训作业"页面上添加Microsoft 365 Defender培训。](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
 
 ### <a name="training-assignment"></a>培训作业
 

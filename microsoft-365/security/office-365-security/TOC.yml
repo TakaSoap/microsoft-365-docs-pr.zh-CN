@@ -276,8 +276,6 @@
               href: enable-the-report-message-add-in.md
             - name: 在 Outlook 中报告误报和漏报
               href: report-false-positives-and-false-negatives.md
-            - name: 手动提交邮件至 Microsoft
-              href: submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
             - name: 使用邮件流规则查看用户向 Microsoft 报告的内容
               href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
             - name: 将恶意软件和非恶意软件提交给 Microsoft

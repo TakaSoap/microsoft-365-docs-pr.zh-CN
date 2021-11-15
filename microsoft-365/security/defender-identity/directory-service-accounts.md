@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 7da746ade0e4ec684b97a61524abd5ab1e83c114
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8928441e27215e75dc4456116c9a0e7890073852
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196006"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962611"
 ---
 # <a name="microsoft-defender-for-identity-directory-services-account-in-microsoft-365-defender"></a>Microsoft Defender for Identity Directory Services 帐户Microsoft 365 Defender
 
@@ -30,7 +31,7 @@ ms.locfileid: "59196006"
 
 若要将 [传感器与](sensor-health.md#add-a-sensor) Active Directory 域连接，需要配置目录服务帐户。
 
-1. In [Microsoft 365 Defender，](https://security.microsoft.com/)go to **设置** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender，</a>go to **设置** and then **Identities**.
 
     ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
 
@@ -42,7 +43,7 @@ ms.locfileid: "59196006"
 
     ![帐户设置。](../../media/defender-identity/account-settings.png)
 
-1. 若要添加新的目录服务帐户，**请选择"创建新** 帐户"并填写"**帐户名称**"、"**域**"和"**密码"。** 还可以选择它是 gMSA (组托管) ，以及是否属于 **单标签域**。
+1. 若要添加新的目录服务帐户，**请选择"创建新** 帐户"并填写"**帐户名称**"、"**域**"和"**密码"。** 还可以选择它是组托管服务帐户 ( gMSA) ，以及是否属于单标签 **域**。
 
     ![新建目录服务帐户。](../../media/defender-identity/new-directory-service-account.png)
 

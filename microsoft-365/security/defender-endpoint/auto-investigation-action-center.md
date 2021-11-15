@@ -14,16 +14,17 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 4b359ee1905081396f382bf762f2c74e89acf5dd
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: a22850b6bc668e62e8db98884f61d264b529df79
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587821"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963146"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>访问操作中心以查看修正操作
 
@@ -45,9 +46,9 @@ ms.locfileid: "60587821"
 
 |新的统一操作中心  |以前的操作中心  |
 |---------|---------|
-|在一个位置列出设备和电子邮件的挂起和已完成操作 <br/> (Microsoft [Defender for Endpoint 和](microsoft-defender-endpoint.md) [Microsoft Defender for Office 365) ](/microsoft-365/security/office-365-security/office-365-atp)|列出设备的挂起和已完成操作 <br/>  (Microsoft [Defender for Endpoint) ](microsoft-defender-endpoint.md)   |
+|在一个位置列出设备和电子邮件的挂起和已完成操作 <br/> (Microsoft [Defender for Endpoint 以及](microsoft-defender-endpoint.md) [Microsoft Defender for Office 365) ](/microsoft-365/security/office-365-security/office-365-atp)|列出设备的挂起和已完成操作 <br/>  ([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md))    |
 |位于：<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |位于：<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| 在安全Microsoft 365，选择"**操作中心"。** <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="导航到安全中心Microsoft 365中心。"::: | In the Microsoft Defender 安全中心， choose **Automated investigations**  >  **Action center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="从操作中心导航到Microsoft Defender 安全中心。":::  |
+| 在安全 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365中，选择</a>"**操作中心"。** <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="导航到安全中心Microsoft 365中心。"::: | In the Microsoft Defender 安全中心， choose **Automated investigations**  >  **Action center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="从导航到操作Microsoft Defender 安全中心。":::  |
 
 统一操作中心将跨 Defender for Endpoint 和 Defender for Office 365。 它定义所有修正操作的共同语言，并提供统一的调查体验。
 
@@ -64,15 +65,15 @@ ms.locfileid: "60587821"
 
 若要访问改进的安全中心的统一Microsoft 365中心：
 
-1. 转到安全Microsoft 365中心 <https://security.microsoft.com> () 登录。
+1. 转到安全<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365并</a>登录。
 2. 在导航窗格中，选择操作 **中心**。
 
 当你访问操作中心时，你将看到两个选项卡：**挂起的操作和****历史记录**。 下表总结了您将在每个选项卡上看到的内容：
 
 |Tab|说明|
 |---|---|
-|**Pending**|显示需要关注的操作的列表。 可以一次批准或拒绝一个操作，也可以选择多个操作（如果他们的操作类型与隔离文件 (相同 **，) 。** <p> **提示**：确保 [尽快审阅](manage-auto-investigation.md) (批准或拒绝) 挂起的操作，以便可以及时完成自动调查。|
-|**历史记录**|充当审核日志的操作的一个组，例如： <ul><li>由于自动调查而采取的修正操作</li><li>安全运营团队批准的修正操作</li><li>运行的命令和在实时响应会话期间应用的修正操作</li><li>Microsoft Defender 防病毒 中威胁防护功能采取的修正Microsoft Defender 防病毒</li></ul> <p> 提供了一种撤消某些操作 (请参阅[Undo completed actions) 。](manage-auto-investigation.md#undo-completed-actions)|
+|**Pending**|显示需要关注的操作的列表。 可以一次批准或拒绝一个操作，也可以选择多个操作（如果他们的操作类型与隔离文件 (相同 **，) 。** <p> **提示**： [确保尽快审阅](manage-auto-investigation.md) (批准或拒绝) 挂起的操作，以便可以及时完成自动调查。|
+|**历史记录**|充当审核日志的操作的一个组，例如： <ul><li>由于自动调查而采取的修正操作</li><li>安全运营团队批准的修正操作</li><li>运行的命令和在实时响应会话期间应用的修正操作</li><li>威胁防护功能在威胁防护中采取的Microsoft Defender 防病毒</li></ul> <p> 提供了一种撤消某些操作 (请参阅 Undo [completed actions) 。](manage-auto-investigation.md#undo-completed-actions)|
 
 可以在操作中心中自定义、排序、筛选和导出数据。
 

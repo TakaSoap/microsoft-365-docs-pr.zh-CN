@@ -1,6 +1,6 @@
 ---
 title: 仪表板见解 - 危险和漏洞管理
-description: 安全危险和漏洞管理仪表板可以帮助 SecOps 和安全管理员应对网络安全威胁，并构建其组织的安全恢复能力。
+description: 仪表板危险和漏洞管理 SecOps 和安全管理员解决网络安全威胁，并构建组织的安全恢复能力。
 keywords: Microsoft Defender for Endpoint-tvm， Microsoft Defender for Endpoint-tvm dashboard， 威胁 & 漏洞管理， 危险和漏洞管理， 基于风险的威胁 & 漏洞管理， 安全配置， 适用于设备的 Microsoft 安全分数， 曝光分数
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,14 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7c5bdc74a214ed76aa791a9ee8331ac2f0a5492a
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 63d994ce521f3915daea6a585f64c407fd241eee
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882977"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963211"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>仪表板见解 - 危险和漏洞管理
 
@@ -35,21 +36,21 @@ ms.locfileid: "60882977"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
-威胁漏洞管理是 Defender for Endpoint 的一个组件，可为安全管理员和安全运营团队提供独特的价值，包括：
+威胁和漏洞管理是 Defender for Endpoint 的一个组件，可为安全管理员和安全运营团队提供独特的价值，包括：
 
 - 与终结点漏洞相关的实时终结点检测和响应（EDR）见解
 - 事件调查期间有价值的设备漏洞上下文
-- 内置修正过程通过Microsoft Intune Microsoft Endpoint Configuration Manager
+- 内置修正过程通过Microsoft Intune和Microsoft Endpoint Configuration Manager
 
-可以使用门户中的 危险和漏洞管理 功能[Microsoft 365 Defender：](https://security.microsoft.com/)
+可以使用 危险和漏洞管理 门户中的 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">功能</a>：
 
 - 查看设备的曝光分数和 Microsoft 安全分数，以及顶级安全建议、软件漏洞、修正活动和公开的设备
-- 将EDR与终结点漏洞关联并处理它们
+- 将EDR见解与终结点漏洞关联并处理它们
 - 选择修正选项进行会审并跟踪修正任务
 - 选择例外选项并跟踪活动异常
 
 > [!NOTE]
-> 对于过去 30 天内未处于活动状态的设备，不会在反映组织曝光分数和 Microsoft 设备安全危险和漏洞管理的数据中考虑。
+> 过去 30 天内未处于活动状态的设备不会在反映组织的 危险和漏洞管理 曝光分数和 Microsoft 设备安全分数的数据中考虑。
 
 观看此视频，快速概览仪表板危险和漏洞管理内容。
 

@@ -13,29 +13,25 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: '了解如何使用适用于 Endpoint 客户的 JAMF Pro 将 macOS 设备载入和载出到 Microsoft 365 合规性解决方案中， (预览) '
-ms.openlocfilehash: 31ff2803a1180d7a43b462f3a78cc52c894f23a6
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+description: '了解如何使用 JAMF Microsoft 365（适用于适用于 Endpoint 客户的 Microsoft Defender Pro 预览版）将 macOS 设备载入和 (到) '
+ms.openlocfilehash: cfe008e7d1334be58e9aabf45d441b2553cb0fe2
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792312"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963307"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>使用适用于 Microsoft Defender for Endpoint 客户的 JAMF Pro 将 macOS 设备载入和卸载到合规性解决方案（预览版）
 
-可以使用 JAMF Pro macOS 设备载入到 Microsoft 365 合规性解决方案。
+可以使用 JAMF Pro macOS 设备载入到Microsoft 365解决方案。
 
 > [!IMPORTANT]
 > 如果你 ***将*** Microsoft Defender for Endpoint (MDE) macOS 设备，请使用此过程
 
-## <a name="get-registered"></a>注册
-
-若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅 注册[macOS Microsoft 365。](https://aka.ms/EndpointDLPIgnite21-Previews)
-
 **适用于：**
 
 - 将 MDE 部署到其 macOS 设备的客户。
-- [Microsoft 365DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
+- [Microsoft 365终结点数据丢失防护 （DLP）](./endpoint-dlp-learn-about.md)
 - [内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 
@@ -91,7 +87,7 @@ ms.locfileid: "60792312"
 
 1. 使用之前下载的 accessibility.mobileconfig 文件。
 
-1. Upload JAMF，如[使用 Jamf 部署自定义配置文件Pro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
+1. Upload Jamf 部署自定义配置文件中所述，将 更新为[JAMF Pro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
 ### <a name="check-the-macos-device"></a>检查 macOS 设备 
 
@@ -111,7 +107,7 @@ ms.locfileid: "60792312"
     - 通知
     - 系统扩展配置文件
 
-## <a name="offboard-macos-devices-using-jamf-pro"></a>使用 JAMF 和 JAMF 的载出 macOS Pro
+## <a name="offboard-macos-devices-using-jamf-pro"></a>使用 JAMF 设备的载 macOS Pro
 
 > [!IMPORTANT]
 > "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留 6 个月。

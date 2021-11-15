@@ -14,15 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 371b698dc25a1875c71e7ca942d7e6b7563f40fb
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: d2f4eda359b64b1fe4f7be300980c15485fb2bf5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587702"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963391"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>在自动调查后查看修正操作
 
@@ -43,7 +44,7 @@ ms.locfileid: "60587702"
 
 下面是一些示例：
 
-- **示例 1：Fabrikam** 的设备组设置为"完全 **-** 根据建议设置 (自动修正) 。 在这种情况下，对于在自动调查后被视为恶意的项目，将自动采取修正 [ (请参阅查看](#review-completed-actions) 已完成) 。
+- **示例 1：Fabrikam** 的设备组设置为"完全 **-** 修正威胁 (推荐设置) 。 在这种情况下，对于在自动调查后被视为恶意的项目，将自动采取修正 (请参阅 Review [completed actions) 。](#review-completed-actions)
 
 - **示例** 2：Contoso 的设备包含在为 Semi 设置的设备组中 ， **需要批准任何修正**。 在这种情况下，Contoso 的安全运营团队必须在自动调查后审阅和批准所有修正操作 [ (查看挂起](#review-pending-actions) 的操作) 。
 
@@ -60,7 +61,7 @@ ms.locfileid: "60587702"
 
 ## <a name="review-pending-actions"></a>查看挂起的操作
 
-1. 转到安全Microsoft 365中心 [https://security.microsoft.com](https://security.microsoft.com) () 登录。
+1. 转到安全<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365并</a>登录。
 2. 在“导航”窗格中，选择“操作中心”。
 3. 查看"挂起" **选项卡上的** 项目。
 4. 选择一个操作以打开其飞出窗格。
@@ -72,7 +73,7 @@ ms.locfileid: "60587702"
 
 ## <a name="review-completed-actions"></a>查看已完成的操作
 
-1. 转到安全Microsoft 365中心 [https://security.microsoft.com](https://security.microsoft.com) () 登录。
+1. 转到安全<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365并</a>登录。
 2. 在“导航”窗格中，选择“操作中心”。
 3. 查看"历史记录" **选项卡上的** 项目。
 4. 选择一个项目以查看有关该修正操作的详细信息。
@@ -112,7 +113,7 @@ ms.locfileid: "60587702"
 
 |设备组设置|自动调查结果|需执行的操作|
 |---|---|---|
-|**完全 - 根据建议 (** 自动修正) |对于一 *条证据* ，已到达"恶意"裁定。 <p> 将自动执行相应的修正操作。|[查看已完成的操作](#review-completed-actions)|
+|**完全 - 根据建议设置** (自动修正) |对于一 *条证据* ，已到达"恶意"裁定。 <p> 将自动执行相应的修正操作。|[查看已完成的操作](#review-completed-actions)|
 |**完全 - 自动修正威胁**|对于一 *条证据* ，已到达"可疑"裁定。 <p> 修正操作正在等待审批以继续。|[批准 (或拒绝) 挂起的操作](#review-pending-actions)|
 |**Semi - 需要批准任何修正**|对于一条 *证据，* 已 *到达* "恶意"或"可疑"裁定。 <p> 修正操作正在等待审批以继续。|[批准 (或拒绝) 挂起的操作](#review-pending-actions)|
 |**Semi - 需要批准核心文件夹修正**|对于一 *条证据* ，已到达"恶意"裁定。 <p> 如果项目是文件或可执行文件，并且位于操作系统目录（如 Windows 文件夹或 Program files 文件夹）中，则修正操作将等待审批。 <p> 如果项目 *不在操作系统* 目录中，将自动执行修正操作。|<ol><li>[批准 (或拒绝) 挂起的操作](#review-pending-actions)</li><li>[查看已完成的操作](#review-completed-actions)</li></ol>|

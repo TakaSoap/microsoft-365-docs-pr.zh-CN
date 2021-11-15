@@ -1,5 +1,5 @@
 ---
-title: 使用Windows管理工具载入设备
+title: 使用移动设备管理工具载入 Windows 设备
 description: 使用移动设备管理工具在设备上部署配置包，以便它们可以载入到 Defender for Endpoint 服务。
 keywords: 使用 mdm 载入设备， 设备管理， 载入 Microsoft Defender for Endpoint 设备， mdm
 ms.prod: m365-security
@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a92b663eeddfcfb8ccf17bad204074764711685d
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 1d0bfb7070f06b94aeaea69f0563e4f5e5d1ca67
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239872"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963079"
 ---
-# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>使用Windows管理工具载入设备
+# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具载入 Windows 设备
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +37,7 @@ ms.locfileid: "60239872"
 
 有关使用 Defender for Endpoint CSP 有关详细信息，请参阅 [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) 和 [WindowsAdvancedThreatProtection DDF 文件](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 如果你使用的是 Microsoft Intune，则必须已注册设备 MDM。 否则，设置将不能成功应用。
 
@@ -44,7 +45,7 @@ ms.locfileid: "60239872"
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>使用移动设备载入Microsoft Intune
 
-请查看[PDF 或](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各个路径。
+请查看[PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)或[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 的各种路径。
 
 按照 [Intune 中的说明操作](/intune/advanced-threat-protection)。
 
@@ -69,11 +70,11 @@ ms.locfileid: "60239872"
 > [!NOTE]
 > 不得同时在同一设备上部署载入和载出策略，否则将导致不可预知的冲突。
 
-1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
+1. 从门户获取Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">包</a>：
 
-   1. 在导航窗格中，选择 **"设置** \>  \> **终结点设备管理** \> **""载出"。**
+   1. 在导航窗格中，**选择"设置** \>  \> **终结点设备管理** \> **""载出"。**
 
-   1. 选择Windows 10或Windows 11 作为操作系统。
+   1. 选择Windows 10或Windows 11操作系统。
 
    1. 在"**部署方法"** 字段中，选择 **"移动设备管理/Microsoft Intune"。**
 
@@ -84,9 +85,9 @@ ms.locfileid: "60239872"
 3. 使用Microsoft Intune配置策略部署以下受支持的 OMA-URI 设置。
    - OMA-URI：./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding
    - 日期类型：String
-   - 值：[复制并粘贴文件内容中的WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding 文件]
+   - 值：[复制并粘贴 WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding 文件的内容中的值]
 
-有关策略设置Microsoft Intune，请参阅 Windows 10[策略Microsoft Intune。](/mem/intune/configuration/custom-settings-windows-10)
+有关策略设置Microsoft Intune，请参阅 Windows 10[中的策略Microsoft Intune。](/mem/intune/configuration/custom-settings-windows-10)
 
 > [!NOTE]
 > " **载出设备的运行状况状态"策略** 使用只读属性，并且无法修正。
@@ -95,9 +96,9 @@ ms.locfileid: "60239872"
 > "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留 6 个月。
 
 ## <a name="related-topics"></a>相关主题
-- [使用Windows载入设备](configure-endpoints-gp.md)
-- [使用Windows载入Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [使用Windows脚本载入设备](configure-endpoints-script.md)
+- [使用组策略载入 Windows 设备](configure-endpoints-gp.md)
+- [使用 Microsoft Endpoint Configuration Manager 载入 Windows 设备](configure-endpoints-sccm.md)
+- [使用本地脚本载入 Windows 设备](configure-endpoints-script.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)
 - [在新载入的 Microsoft Defender 终结点设备上运行检测测试](run-detection-test.md)
 - [Microsoft Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)

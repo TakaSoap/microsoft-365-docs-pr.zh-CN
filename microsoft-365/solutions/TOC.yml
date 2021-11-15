@@ -33,7 +33,7 @@
       items:
         - name: 概述
           href: setup-secure-collaboration-with-teams.md
-        - name: 步骤 1. 配置 Microsoft Teams 的三层保护
+        - name: 配置 Microsoft Teams 的三层保护
           items:
             - name: 三层保护概述
               href: configure-teams-three-tiers-protection.md
@@ -45,7 +45,7 @@
               href: configure-teams-highly-sensitive-protection.md
             - name: 配置具有安全隔离的团队
               href: secure-teams-security-isolation.md
-        - name: 步骤 2. 配置外部共享
+        - name: 配置外部共享
           items:
             - name: 外部共享概述
               href: collaborate-with-people-outside-your-organization.md

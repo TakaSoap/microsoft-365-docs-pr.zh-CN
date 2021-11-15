@@ -16,14 +16,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 914e246fe4c276a624989b189a3358c1821194fd
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: c481f846b91ee2072f453d4ad8e9df13b4dd534f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882917"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960802"
 ---
 # <a name="configure-device-discovery"></a>配置设备发现
 
@@ -38,15 +39,15 @@ ms.locfileid: "60882917"
 发现可以配置为标准模式或基本模式。 使用标准选项主动查找网络中设备，这将更好地保证终结点的发现并提供更丰富的设备分类。
 
 
-你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (当前 - Windows 10 设备仅) 或者通过指定设备的设备标记来选择设备的子集。
+你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (当前 - Windows 10 设备仅) 或者通过指定设备的设备标记选择一部分或部分设备。
 
 > [!IMPORTANT]
 > 对于预览版，你首先需要在预览版中启用预览Microsoft 365 Defender。
-> 然后，你可以访问安全中心中的Microsoft 365配置。 非托管设备和安全建议列表将在 Microsoft 365 Defender 和 Microsoft 365 安全中心提供，而仪表板磁贴将仅在 Microsoft 365 安全中心提供。
+> 然后，你可以访问安全中心 中的Microsoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">配置</a>。 非托管设备和安全建议列表将在 Microsoft 365 Defender 和 Microsoft 365 安全中心提供，而仪表板磁贴将仅在 Microsoft 365 安全中心提供。
 
-在安全中心内执行Microsoft 365步骤：
+在安全中心内执行<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365步骤</a>：
 
-1. 导航到 **设置 >设备发现 "**。
+1. 导航到 **设置**  >  **设备发现 "**。
 2. 选择要在载入的设备上使用的发现模式。
 3. 如果你已选择使用标准发现，请通过指定设备标记来选择要用于活动探测的设备：所有设备或部分设备。
 4. 单击“**保存**”。

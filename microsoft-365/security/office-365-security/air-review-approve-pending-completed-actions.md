@@ -15,23 +15,24 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: 了解 Microsoft Defender for Office 365 计划 2 中的自动调查和响应功能中的修正操作。
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 4d81fe5e2baa4146136d7e55461290a31ef2462b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5321f1cbe35727649c80dc17778dc843630f695e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196617"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962731"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>在管理中查看和管理Office 365
 
 **适用对象**
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 
-由于自动调查电子邮件&协作内容会导致裁定（如恶意或可疑）时，会创建某些修正操作。 在 Microsoft Defender for Office 365 中，修正操作可能包括：
+由于自动调查电子邮件&协作内容会导致裁定（如恶意或可疑）时，会创建某些修正操作。 在 Microsoft Defender for Office 365中，修正操作可能包括：
 
 - 软删除电子邮件或群集
 - 关闭外部邮件转发
@@ -48,7 +49,7 @@ ms.locfileid: "60196617"
 
 ## <a name="incident-queue"></a>事件队列
 
-1. 打开Microsoft 365 Defender门户 <https://security.microsoft.com> () 并登录。
+1. 打开 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>并登录。
 2. 在导航窗格中，选择"事件 **&事件>警报"。**
 3. 选择事件名称以打开其摘要页面。
 4. 选择" **证据和响应"** 选项卡。
@@ -57,7 +58,7 @@ ms.locfileid: "60196617"
 
 ## <a name="investigation-queue"></a>调查队列
 
-1. 打开Microsoft 365 Defender门户 <https://security.microsoft.com> () 并登录。
+1. 打开 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>并登录。
 2. 从警报/事件页面导航。
 3. 在"调查"页上，转到" **挂起的操作"** 选项卡。
 4. 选择列表项。 其侧窗格将打开。
@@ -65,7 +66,7 @@ ms.locfileid: "60196617"
 
 ## <a name="action-center"></a>操作中心
 
-1. 打开Microsoft 365 Defender门户 <https://security.microsoft.com> () 并登录。
+1. 打开 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>并登录。
 2. 在导航窗格中，选择操作 **中心**。
 3. 在 **"挂起** "选项卡上，查看等待审批的操作列表。
    - 选择 **"打开调查"** 页以查看有关调查的更多详细信息。
@@ -74,7 +75,7 @@ ms.locfileid: "60196617"
 
 ## <a name="investigation-and-remediation-investigations-queue"></a>调查和修正调查队列
 
-1. 打开Microsoft 365 Defender门户 <https://security.microsoft.com> () 并登录。
+1. 打开 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>并登录。
 2. 打开待定调查。
 3. 在"调查"页上，转到" **挂起的操作"** 选项卡。
 4. 选择列表项。 其侧窗格将打开。
@@ -85,7 +86,7 @@ ms.locfileid: "60196617"
 有两种不同的方法可以重新考虑提交的操作：
 
 - 通过统 [一操作中心](https://security.microsoft.com/action-center)。
-- 但是[，Office操作中心](https://security.microsoft.com/threatincidents)。
+- 尽管Office[操作中心](https://security.microsoft.com/threatincidents)。
 
 ## <a name="change-or-undo-through-the-unified-action-center"></a>通过统一操作中心更改或撤消
 

@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 9d57272626c6f6c5d0e44052522cb73b9b675fd8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 936b14ceaa5f80e9371e776727bbb5304c60590d
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59197241"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963175"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Microsoft Defender for Identity 传感器运行状况和Microsoft 365 Defender
 
@@ -21,14 +22,14 @@ ms.locfileid: "59197241"
 - Microsoft 365 Defender
 - Defender for Identity
 
-本文介绍如何配置和监视[Microsoft Defender for Identity](/defender-for-identity)传感器。Microsoft 365 Defender。 [](/microsoft-365/security/defender/overview-security-center)
+本文介绍如何配置和监视[Microsoft Defender for Identity](/defender-for-identity)传感器Microsoft 365 Defender。 [](/microsoft-365/security/defender/overview-security-center)
 
 >[!IMPORTANT]
 >作为与用户Microsoft 365 Defender的一部分，一些选项和详细信息从他们在 Defender for Identity 门户中的位置发生了更改。 请阅读下面的详细信息，了解在哪里可以找到熟悉的新功能和新功能。
 
 ## <a name="view-defender-for-identity-sensor-settings-and-status"></a>查看 Defender for Identity 传感器设置和状态
 
-1. In [Microsoft 365 Defender，](https://security.microsoft.com/)go to **设置** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender，</a>go to **设置** and then **Identities**.
 
     ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
 

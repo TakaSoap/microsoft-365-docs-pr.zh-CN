@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f8a9d27566ea3f6fcf43ad2b8f183c6800bb8aa
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 42dc7d0c3ce7662cee61754ccced0666f907114f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883709"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963367"
 ---
 # <a name="web-protection"></a>Web 保护
 
@@ -37,7 +37,7 @@ ms.locfileid: "60883709"
 
 ## <a name="about-web-protection"></a>关于 Web 保护
 
-Microsoft Defender for Endpoint 中的 Web 保护功能由[Web 威胁防护、Web](web-threat-protection.md)[内容筛选](web-content-filtering.md)和自定义[指示器构成](manage-indicators.md)。 通过 Web 保护，您可以保护设备免受 Web 威胁，并帮助您控制不需要的内容。 您可以在 Web 门户中查找 Web Microsoft 365 Defender报告，> **Web 保护**。
+Microsoft Defender for Endpoint 中的 Web 保护功能由[Web 威胁防护、Web](web-threat-protection.md)[内容筛选](web-content-filtering.md)和自定义[指示器构成](manage-indicators.md)。 通过 Web 保护，您可以保护设备免受 Web 威胁，并帮助您控制不需要的内容。 可以在 Web 门户中查找 Web Microsoft 365 Defender报告，> **Web 保护**。
 
 :::image type="content" alt-text="所有 Web 保护卡的图像。" source="images/web-protection.png" lightbox="images/web-protection.png":::
 
@@ -59,7 +59,7 @@ Web 威胁防护包括：
 
 自定义指示器包括：
 
-- 能够创建基于 IP 和 URL 的泄露指示器，以保护组织免受威胁。
+- 能够创建基于 IP 和 URL 的泄露指示器，以保护你的组织免受威胁。
 - 调查与自定义 IP/URL 配置文件和访问这些 URL 的设备相关的活动的功能。
 - 为 IP 和 URL 创建允许、阻止和警告策略的能力。
 
@@ -79,7 +79,7 @@ Web 内容筛选包括：
 
 ## <a name="order-of-precedence"></a>优先顺序
 
-Web 保护由以下组件组成，按优先顺序列出。 其中每个组件都由 Microsoft Edge 中的 SmartScreen 客户端和所有其他浏览器和进程中的网络保护客户端强制执行。
+Web 保护由以下组件组成，按优先顺序列出。 每个组件都由 Microsoft Edge 中的 SmartScreen 客户端和所有其他浏览器和进程中的网络保护客户端强制执行。
 
 - 自定义指示器 (IP/URL、MICROSOFT CLOUD APP SECURITY (MCAS) 策略) 
   - 允许
@@ -97,7 +97,7 @@ Web 保护由以下组件组成，按优先顺序列出。 其中每个组件都
 
 优先级顺序与计算 URL 或 IP 的操作顺序相关。 例如，如果你有 Web 内容筛选策略，可以通过自定义 IP/URL 指示器创建排除项。 IoC (泄露) 的优先级顺序比 WCF 块高。
 
-同样，在指示器冲突期间，允许始终优先于块 (替代逻辑) 。 这意味着允许指示器将超过存在的任何阻止指示器。
+同样，在指示器冲突期间，允许始终优先于块 (替代) 。 这意味着允许指示器将超过存在的任何阻止指示器。
 
 下表总结了在 Web 保护堆栈中出现冲突的一些常见配置。 它还根据上面列出的优先级确定结果。
 
@@ -116,7 +116,7 @@ Web 保护由以下组件组成，按优先顺序列出。 其中每个组件都
 
 ## <a name="protect-browsers"></a>保护浏览器
 
-在所有 Web 保护方案中，SmartScreen 和网络保护可以一起使用，以确保跨第一方和第三方浏览器和进程提供保护。 SmartScreen 直接内置于Microsoft Edge，而 Network Protection 监视第三方浏览器和进程中的流量。 下图说明了此概念。 此两个客户端共同协作以提供多个浏览器/应用覆盖范围的图对于 Web 保护 (指示器、Web 威胁、内容筛选功能的所有功能) 。
+在所有 Web 保护方案中，SmartScreen 和网络保护可以一起使用，以确保跨第一方和第三方浏览器和进程提供保护。 SmartScreen 直接内置于 Microsoft Edge，而 Network Protection 监视第三方浏览器和进程中的流量。 下图说明了此概念。 此两个客户端协同工作以提供多个浏览器/应用覆盖范围的图对于 Web 保护 (指示器、Web 威胁、内容筛选功能的所有功能) 。
 
 :::image type="content" alt-text="将 SmartScreen 和网络保护一同使用。" source="../../media/web-protection-protect-browsers.png" lightbox="../../media/web-protection-protect-browsers.png":::
 
@@ -124,7 +124,7 @@ Web 保护由以下组件组成，按优先顺序列出。 其中每个组件都
 
 来自 SmartScreen 云的响应是标准化的。 可以使用 Fiddler 等工具检查云服务的响应，这有助于确定阻止的来源。
 
-当 SmartScreen 云服务响应允许、阻止或警告响应时，响应类别和服务器上下文将中继回客户端。 在Microsoft Edge中，响应类别用于确定适当的阻止页面，以显示 (、网络钓鱼、组织策略) 。
+当 SmartScreen 云服务响应允许、阻止或警告响应时，响应类别和服务器上下文将中继回客户端。 在Microsoft Edge中，响应类别用于确定相应的阻止页面，以显示 (恶意、网络钓鱼、组织策略) 。
 
 下表显示了响应及其关联功能。
 
@@ -150,10 +150,10 @@ DeviceEvents 
 | where ActionType == "SmartScreenUrlWarning"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomPolicy"
+| where Experience == "CustomBlockList"
 ```
 
-同样，您可以使用下面的查询列出源自 Network Protection 应用程序的所有 WCF (例如，第三方浏览器中的 WCF 块) 。 请注意，ActionType 已更新，"Experience"已更改为"ResponseCategory"。
+同样，您可以使用下面的查询列出源自 Network Protection 应用程序的所有 WCF 块 (例如，第三方浏览器中的 WCF 块) 。 请注意，ActionType 已更新，"Experience"已更改为"ResponseCategory"。
 
 ```kusto
 DeviceEvents 

@@ -18,14 +18,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: bb45a15dd8931c5a7d9866b7b57ea84be0e0581a
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 71149412285d7d9540c80ef3ad89dc3b0a6a6208
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755369"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963055"
 ---
 # <a name="configure-your-event-hub"></a>配置事件中心
 
@@ -40,15 +41,15 @@ ms.locfileid: "60755369"
 
 1. 登录 [Azure 门户](https://portal.azure.com)。
 1. 选择 **订阅**  >  **{ 选择事件中心将部署到 }**  >  **资源提供程序的订阅**。
-1. 验证 **Microsoft.Insights** 提供程序是否注册。 否则，请注册它。
+1. 验证 **Microsoft.Insights** 已注册提供程序。 否则，请注册它。
 
-![资源提供程序在Microsoft Azure。](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
+![资源提供程序的图像Microsoft Azure。](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
 
 ## <a name="set-up-azure-active-directory-app-registration"></a>设置Azure Active Directory应用注册
 
 > ![注意]你必须具有管理员角色Azure Active Directory (AAD) 必须设置为允许非管理员注册应用。 还必须具有所有者或用户访问管理员角色才能为服务主体分配角色。 有关详细信息，请参阅 Microsoft [ \| Docs](/azure/active-directory/develop/howto-create-service-principal-portal)门户Azure AD创建&服务主体Microsoft 标识平台应用。
 
-1. 创建新的注册 (在应用注册新注册)  \> **创建** 服务Azure Active Directory \> **主体。**
+1. 创建新的注册 (在应用注册新注册) 服务Azure Active Directory \> **创建服务** \> **主体。**
 
 1. 只需使用"名称" (填写表单，无需重定向 URI) 。
 
@@ -56,7 +57,7 @@ ms.locfileid: "60755369"
 
     ![概述信息的图像。](../../media/06ac04c4ff713c2065cec2ef2f99a294.png)
 
-1. 通过单击"证书""密码"**创建&密码** \> **新建客户端密码：**
+1. 通过单击"证书""密码"**创建&** \> **密码 新建客户端密码：**
 
     ![证书和密码的图像。](../../media/d2ef88d3d2310d2c60c294b569cdf02e.png)
 
@@ -67,7 +68,7 @@ ms.locfileid: "60755369"
 
 1. 创建事件中心命名空间：
 
-    转到 **"事件 \>** 中心""添加"并选择定价层、吞吐量单位和自动 (要求标准定价，且在适用于) 负载的功能下。 有关详细信息，请参阅定价[- 事件 \| 中心Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
+    转到 **事件 \>** 中心 添加并选择定价层、吞吐量单位和自动 (要求标准定价，在功能下) 适合您预期负载的功能下。 有关详细信息，请参阅定价[- 事件 \| 中心Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
 
     > [!NOTE]
     > 可以使用现有的事件中心，但吞吐量和缩放是在命名空间级别设置的，因此建议将事件中心放在其现有命名空间中。
@@ -80,7 +81,7 @@ ms.locfileid: "60755369"
 
 1. 创建事件中心命名空间后，你将需要将应用注册服务主体添加为读者、Azure 事件中心数据接收器，以及将登录到 Microsoft 365 Defender 的用户作为参与者 (还可以在资源组或订阅级别) 进行此操作。
 
-    在 IAM 事件中心 **命名空间** 访问控制 (添加) 验证角色分配下执行 \>  \> **此步骤**：
+    在 IAM 事件中心 **命名空间** 访问控制 \> **(添加**) \> **验证** 角色分配下执行 **此步骤**：
 
     ![访问控制的图像。](../../media/9c9c29137b90d5858920202d87680d16.png)
 
@@ -88,16 +89,16 @@ ms.locfileid: "60755369"
 
 **选项 1：**
 
-可以在命名空间内创建事件中心，选择要导出 (表) 事件类型将写入此 **事件** 中心。
+可以在命名空间内创建事件中心，选择要导出的所有 (表) 事件类型将写入此 **事件** 中心。
 
 **选项 2：**
 
-你可以将每个表导出) 到事件中心内的不同事件中心，而不是将 (表的所有事件类型导出到一个事件中心 (每个事件类型一个事件中心) 。
+可以将每个表的所有事件类型导出到一个事件中心，而不是将 () 表的所有事件类型导出到一个事件中心中 (每个事件类型一个事件中心) 。
 
 在此选项中，Microsoft 365 Defender将创建事件中心。
 
 > [!NOTE]
-> 如果使用的事件中心命名空间不是事件中心群集的一部分，则只能选择最多 10 个事件类型 (Tables) 以在定义的每个导出 设置 中导出，因为每个事件中心命名空间的 Azure 限制为 10 个事件中心。
+> 如果你使用的事件中心命名空间不是事件中心群集的一部分，你最多只能选择在定义的每个导出 设置 中导出最多 10 个事件类型 (表) ，因为每个事件中心命名空间的 Azure 限制是 10 个事件中心。
 
 例如：
 
@@ -111,7 +112,7 @@ ms.locfileid: "60755369"
 
 ![创建事件中心的图像。](../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png)
 
-对于此事件中心 (命名空间) 您需要使用发送、侦听声明配置共享访问策略。 单击 **事件中心** 共享访问策略 + 添加，然后为它指定策略名称 (其他位置) 并检查发送 \>  \> 和 **侦听**。 
+对于此事件中心 (命名空间) 您需要使用发送、侦听声明配置共享访问策略。 单击 **事件中心** 共享访问策略 + 添加，然后为它指定策略名称 (其他位置) 并检查发送和 \>  \> **侦听**。 
 
 ![共享访问策略的图像。](../../media/1867d13f46dc6a0f4cdae6cf00df24db.png)
 
@@ -119,7 +120,7 @@ ms.locfileid: "60755369"
 
 ### <a name="set-up-microsoft-365-defender-send-email-tables-to-splunk-via-event-hub"></a>设置Microsoft 365 Defender事件中心将电子邮件表发送到 Splunk
 
-1. 使用满足Microsoft 365 Defender <https://security.microsoft.com> 所有角色要求的帐户登录到 以下帐户：
+1. 登录以<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>满足以下所有角色要求的帐户登录：
 
     - 要导出到的事件中心的 Event Hub *命名空间* 资源级别或更高级别的参与者角色。 如果没有此权限，在尝试保存设置时将看到导出错误。
 
@@ -139,7 +140,7 @@ ms.locfileid: "60755369"
 
     **事件中心名称**：如果在事件中心命名空间内创建了事件中心，请粘贴上面记录的事件中心名称。
 
-    如果您选择允许Microsoft 365 Defender创建每个事件类型的事件 (表) ，则此字段保留为空。
+    如果您选择允许Microsoft 365 Defender创建每个事件类型的事件 (表) ，则此字段留空。
 
     **事件类型**：选择要转发到事件中心，然后转发到自定义应用的高级搜寻表。 警报表来自Microsoft 365 Defender，设备表来自 Microsoft Defender for Endpoint (EDR) ，电子邮件表来自 Microsoft Defender for Office 365。 电子邮件事件记录所有电子邮件事务。 URL (保险箱 Links) ， Attachment (保险箱 Attachments) ， and Post Delivery Events (ZAP) are also recorded and can be joined to the Email Events on the NetworkMessageId field.
 

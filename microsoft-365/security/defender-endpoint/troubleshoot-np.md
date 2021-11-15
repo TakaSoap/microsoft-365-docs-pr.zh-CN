@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 131021236f5294f10f9abdf6e4ba170e2349b707
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a31b5cb7507bcf5bcc2c919f47cbf7f2f786045e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555748"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962803"
 ---
 # <a name="troubleshoot-network-protection"></a>网络保护疑难解答
 
@@ -55,7 +55,7 @@ ms.locfileid: "60555748"
 > - 终结点将 Microsoft Defender 防病毒用作唯一的防病毒保护应用。 [查看在使用非 Microsoft 防病毒解决方案时会发生什么情况](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 > - [实时保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 已启用。
 > - [云提供的保护](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 已启用。
-> - 审核模式未启用。 使用 [组策略](enable-network-protection.md#group-policy) 将规则设置为"已禁用 **(** 值 **：0**) 。
+> - 审核模式未启用。 使用 [组策略](enable-network-protection.md#group-policy)将规则设置为已禁用 (值 **：0**) 。
 
 ## <a name="use-audit-mode"></a>使用审核模式
 
@@ -67,7 +67,7 @@ ms.locfileid: "60555748"
    Set-MpPreference -EnableNetworkProtection AuditMode
    ```
 
-2. 执行导致问题的连接活动 (例如，尝试访问站点，或者连接到您或不希望阻止访问的 IP) 。
+2. 执行导致问题的连接活动 (例如，尝试访问站点，或者连接到您这样做或不希望阻止访问的 IP) 。
 
 3. [查看网络保护事件](network-protection.md#review-network-protection-events-in-windows-event-viewer) 日志，以查看如果该功能已设置为"已启用"，该功能是否阻止 **了连接**。
 
@@ -87,7 +87,7 @@ ms.locfileid: "60555748"
 当前排除选项包括：
 
 1.  设置自定义允许指示器。
-2.  使用 IP 排除项： `Add-MpPreference -Exclusion IpAddress 192.168.1.1`
+2.  使用 IP 排除项： `Add-MpPreference -ExclusionIpAddress 192.168.1.1`
 3.  排除整个过程。 有关详细信息，请参阅Microsoft Defender 防病毒[排除项](configure-exclusions-microsoft-defender-antivirus.md)。 
 
 
@@ -131,7 +131,7 @@ Set-MpPreference -ProxyPacUrl <Proxy PAC url>
 
 ## <a name="see-also"></a>另请参阅
 
-- [网络保护](network-protection.md)
+- [网络保护功能](network-protection.md)
 - [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 - [网络保护功能评估](evaluate-network-protection.md)
 - [启用网络保护](enable-network-protection.md)

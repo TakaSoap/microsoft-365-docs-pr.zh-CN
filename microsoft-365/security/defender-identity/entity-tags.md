@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 7b09c12c1d4c519a47fc60057ab26741a7145469
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e53c14405d3d190715b49e58061aee8ba771180a
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59196004"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962839"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Defender for Identity 实体标记Microsoft 365 Defender
 
@@ -30,7 +31,7 @@ ms.locfileid: "59196004"
 
 在Microsoft 365 Defender中，你可以设置三种类型的 Defender for Identity 实体标记：**敏感** 标记 **、Honeytoken** 标记和Exchange **服务器标记**。
 
-若要设置这些标记 [，Microsoft 365 Defender，](https://security.microsoft.com/)请转到"设置"和"**标识"。**
+若要设置这些标记 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">，Microsoft 365 Defender，请转到</a>"设置"和"**标识"。**
 
 ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
 

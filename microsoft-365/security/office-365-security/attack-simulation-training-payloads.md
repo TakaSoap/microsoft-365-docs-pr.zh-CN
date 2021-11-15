@@ -10,14 +10,15 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中为攻击模拟培训创建自定义负载。
 ms.technology: mdo
-ms.openlocfilehash: 420642bfa8318f44548494b275b0dc617787f46a
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: 79e530a6635079bcf262b23e887f06ab5ebe79b3
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899746"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962875"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>在 Defender for Office 365 中为攻击模拟培训创建自定义负载
 
@@ -27,8 +28,8 @@ ms.locfileid: "60899746"
 
 本文介绍如何在攻击模拟培训中创建自己的有效负载。 可以在以下位置创建自定义有效负载：
 
-- "**有效负载"** 选项卡：在 Microsoft 365 Defender门户中，转到 <https://security.microsoft.com/> "电子邮件&**协作** \> **攻击模拟培训** \> **有效负载"** 选项卡。若要直接转到"**有效负载"** 选项卡，请使用 <https://security.microsoft.com/attacksimulator?viewid=payload> 。
-- 创建模拟期间：可以在模拟创建向导的第三 (选择有效负载) 创建自定义负载。 有关详细信息，请参阅在 Defender for Office 365[中模拟网络钓鱼Office 365。](attack-simulation-training.md)
+- "**有效负载"** 选项卡：在 Microsoft 365 Defender 门户中，转到"电子邮件& <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>  \> **协作攻击模拟培训** \> **有效负载"** 选项卡。若要直接转到"**有效负载"** 选项卡，请使用 <https://security.microsoft.com/attacksimulator?viewid=payload> 。
+- 创建模拟期间：可以在模拟创建向导的第三 (选择有效负载) 自定义有效负载。 有关详细信息，请参阅在 Defender for Office 365 中[模拟网络钓鱼Office 365。](attack-simulation-training.md)
 
 有关攻击模拟培训的入门信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
@@ -43,7 +44,7 @@ ms.locfileid: "60899746"
 
 在 **"选择类型**"页上，当前唯一可以选择的值是"**电子邮件"。**
 
-单击"下一步"。
+单击 **下一个**。
 
 ### <a name="select-a-social-engineering-technique"></a>选择社交工程技术
 
@@ -59,7 +60,7 @@ ms.locfileid: "60899746"
 
 ### <a name="name-and-describe-the-payload"></a>命名和描述有效负载
 
-在" **有效负载名称"** 页上，配置以下设置：
+在" **有效负载名称** "页上，配置以下设置：
 
 - **名称**：输入有效负载的唯一描述性名称。
 - **说明**：输入有效负载的可选详细说明。
@@ -129,12 +130,12 @@ ms.locfileid: "60899746"
 - 常见设置：
   - **添加 (标记)**
   - **主题**：可用值为：**帐户** 激活、**帐户** 验证、**计费**、清理 **邮件**、**文档** 接收、**费用**、**传真**、财务 **报告**、**传入邮件**、**发票**、**项目接收**、**登录警报****、已接收邮件**、**其他**、**密码**、**付款**、**工资** 单、**个性化优惠**、**隔离**、Remote **Work、Review** **Message、Security Update、Service** **Suspended、Signature**  **Required、Upgrade Mailbox 存储、Verify** **mailbox** 或 **Voicemail**。 
-  - **品牌**：可用值为 **：American Express、Capital** One、DHL、DocuSign、Dropbox、Facebook、First     **American、Microsoft、Netflix、Scotiabank、SendGrid、Stewart**      Title、Tesco、Wells **Fargo、Syrinx** **Cloud****或其他**。 
+  - **品牌**：可用值为 **：American Express、Capital** One、DHL、DocuSign、Dropbox、Facebook、First      American、Microsoft、Netflix、Scotiabank、SendGrid、Stewart      **Title、Tesco、Wells** Fargo、Syrinx **Cloud****或其他**。 
   - **行业**：可用值包括：**银行**、商业服务、**消费者** 服务、**教育**、**能源**、**建筑**、**咨询**、**金融服务**、**政府**、**城市**、保险、**法律****、Courier 服务****、IT、****医疗保健、****制造**、**零** 售、**电信**、**房地产****或其他**。
   - **当前事件**：可用值为"**是**"或"**否"。**
   - **中国**：可用值为"**是**"或"**否"。**
 
-- **语言** 部分：选择有效负载的语言。 可用值包括：**英语**、**西班牙语**、**德语**、**日语**、**法语**、葡萄牙语、**荷兰语**、**意大利语**、瑞典语、中文 (简体 **) 、** 挪威 **博克马尔语**、**波兰** 语、**俄语**、**芬兰语**、**朝鲜** 语、**土耳其** 语、匈牙利语、**希伯来** 语、**泰** 语、**阿拉伯语****、越南语**、**斯洛伐克** 语。 **希腊语**、**印度尼西亚****语、罗马尼亚****语、斯洛文尼亚语**、**克罗地亚** 语、**加泰罗尼亚** 语 **或其他**。
+- **语言** 部分：选择有效负载的语言。 可用值包括：**英语**、**西班牙语**、**德语**、**日语**、**法语**、葡萄牙语、**荷兰语**、**意大利语**、瑞典语、中文 **(Simplified) 、****挪威布尔值、** 波兰语、**俄语**、**芬兰语**、**朝鲜** 语、**土耳其** 语、匈牙利语、**希伯来** 语、**泰** 语、**阿拉伯语****、越南****语、斯洛伐克语。希腊语**、**印度尼西亚****语、罗马尼亚****语、斯洛文尼亚语**、**克罗地亚** 语、**加泰罗尼亚** 语 **或其他**。
 
 - **电子邮件** 部分：
 

@@ -13,15 +13,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 查看和调查恶意软件钓鱼尝试。
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06053911642e455df956de3a17e3e2f448023328
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9eb12db41e48fce814c2c0cb1c934d3fa388086f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203899"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962863"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>使用 Microsoft Defender for Office 365 中的威胁资源管理器进行电子邮件Office 365
 
@@ -32,7 +34,7 @@ ms.locfileid: "60203899"
 - [启动自动调查和响应](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> 这是威胁资源管理器 (**资源管理器) 、** 电子邮件安全、资源管理器和实时检测基础知识的 **3** 篇文章系列中的一 **部分 (如** 工具之间的差异以及操作它们所需的权限) 。 本系列中的其他两篇文章是威胁资源管理器和威胁[](threat-hunting-in-threat-explorer.md)资源管理器中的威胁搜寻和[实时检测基础知识](real-time-detections.md)。
+> 这是威胁资源管理器 (**资源管理器) 、** 电子邮件安全、资源管理器和实时检测基础知识的 **3** 篇文章系列中的一部分 **(如** 工具之间的差异以及操作工具所需的权限) 。 本系列中的其他两篇文章是威胁资源管理器和威胁[](threat-hunting-in-threat-explorer.md)资源管理器中的威胁搜寻和[实时检测基础知识](real-time-detections.md)。
 
 本文介绍如何查看和调查电子邮件中检测到的恶意软件和网络钓鱼Microsoft 365安全功能。
 
@@ -45,7 +47,7 @@ ms.locfileid: "60203899"
 
 若要查看在电子邮件中检测到的恶意软件Microsoft 365技术排序，请使用资源管理器中的"电子邮件恶意软件 [**\>**](threat-explorer-views.md#email--malware)" (或实时检测) 。 恶意软件是默认视图，因此一旦打开资源管理器，可能会选中它。
 
-1. 在Microsoft 365 Defender门户 () ，选择"电子邮件&协作资源管理器 (<https://security.microsoft.com>  \> 或 **实时检测"。** 此示例使用 Explorer) 。
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal，</a>choose **Email & collaboration** \> **Explorer** (or **Real-time detections**;此示例使用 Explorer) 。
 
    从此处，从"视图"开始，选择一个特定的时间范围来调查 (如果需要) ，并按资源管理器演练来聚焦 [筛选器](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)。
 
@@ -67,7 +69,8 @@ ms.locfileid: "60203899"
 
 您可以通过电子邮件中的 URL 查看网络钓鱼尝试，包括允许、阻止和覆盖的 URL 列表。 若要标识单击的[URL，保险箱链接](safe-links.md)。 请确保为单击保险箱和单击[](set-up-safe-links-policies.md)裁定记录设置"链接"策略保险箱策略。
 
-1. 在Microsoft 365 Defender门户 () ，选择"电子邮件&协作资源管理器 (<https://security.microsoft.com>  \> 或 **实时检测"。** 此示例使用 Explorer) 。
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal，</a>choose **Email & collaboration** \> **Explorer** (or **Real-time detections**;此示例使用 Explorer) 。
+，选择 **"电子邮件&协作** \> **资源管理器** (或 **实时检测;"** 此示例使用 Explorer) 。
 
 2. 在"**查看"** 下拉列表中，选择"**电子邮件钓鱼** \> **邮件"。**
 
@@ -76,7 +79,7 @@ ms.locfileid: "60203899"
 
 3. 单击 **"发件人**"，然后在下拉列表中选择 **"URL""** \> 单击裁定"。
 
-4. 在出现的选项中，选择一个或多个选项（如"阻止"和"阻止覆盖"，然后单击"刷新 (不刷新浏览器窗口) 。 
+4. 在出现的选项中，选择一个或多个选项，如"阻止"和"阻止覆盖"，然后单击"刷新 (不刷新浏览器窗口") 。 
 
     :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="URL 和单击裁定。":::
 
@@ -94,7 +97,7 @@ ms.locfileid: "60203899"
    选择 URL 以查看更多详细信息。
 
    > [!NOTE]
-   > 在"URL"弹出对话框中，将删除对电子邮件的筛选，以显示环境中 URL 曝光的完整视图。 这允许你在资源管理器中筛选你关注的电子邮件，查找潜在威胁的特定 URL，然后通过"URL 详细信息"对话框) 扩展你了解环境中 (中的 URL 曝光，而无需将 URL 筛选器添加到资源管理器视图本身。
+   > 在"URL"弹出对话框中，将删除对电子邮件的筛选，以显示环境中 URL 曝光的完整视图。 这允许你在资源管理器中筛选你关注的电子邮件，查找潜在威胁的特定 URL，然后通过) URL 详细信息对话框 (扩展你了解环境中 URL 的曝光，而无需将 URL 筛选器添加到资源管理器视图本身。
 
 ### <a name="interpretation-of-click-verdicts"></a>单击裁定的解释
 
@@ -112,7 +115,7 @@ ms.locfileid: "60203899"
 ## <a name="start-automated-investigation-and-response"></a>启动自动调查和响应
 
 > [!NOTE]
-> Microsoft Defender for *Office 365 Plan 2* 和 Office 365 E5 *中提供了自动调查和响应Office 365 E5。*
+> Microsoft Defender for *Office 365 Plan 2* 和 Office 365 E5 中提供了自动 *调查和响应Office 365 E5。*
 
 [自动调查和响应](automated-investigation-response-office.md) 可以节省安全运营团队在调查和缓解网络攻击上花费的时间和精力。 除了配置可触发安全手册的警报之外，还可以从资源管理器中的视图启动自动调查和响应过程。 有关详细信息，请参阅 [示例：安全管理员从资源管理器触发调查](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。
 

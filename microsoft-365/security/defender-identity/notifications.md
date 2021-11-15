@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: dfb3c5e1edbbf77a95a1e1d5888b070a12bfd7a7
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: b33ee0f59ca02d305ec703ab47aa1d0f2f95b8da
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353618"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963331"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Defender for Identity notifications in Microsoft 365 Defender
 
@@ -30,7 +31,7 @@ ms.locfileid: "59353618"
 
 在Microsoft 365 Defender中，可以在 Defender for Identity 中添加运行状况问题的电子邮件通知的收件人。
 
-1. In [Microsoft 365 Defender，](https://security.microsoft.com/)go to **设置** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender，</a>go to **设置** and then **Identities**.
 
     ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
 
@@ -51,7 +52,7 @@ ms.locfileid: "59353618"
 
 在Microsoft 365 Defender中，您可以为检测到的通知的电子邮件通知添加收件人。
 
-1. In [Microsoft 365 Defender，](https://security.microsoft.com/)go to **设置** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender，</a>go to **设置** and then **Identities**.
 
     ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
 
@@ -65,7 +66,7 @@ ms.locfileid: "59353618"
 
 Defender for Identity 可通过指定传感器向 Syslog 服务器发送安全和运行状况警报，以在检测到可疑活动时通知你。
 
-1. In [Microsoft 365 Defender，](https://security.microsoft.com/)go to **设置** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender，</a>go to **设置** and then **Identities**.
 
     ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
 
@@ -90,7 +91,7 @@ Defender for Identity 可通过指定传感器向 Syslog 服务器发送安全�
 
 1. 选择“**保存**”。
 
-1. 配置 Syslog 服务后，可以选择向 **Syslog** 服务器 (发送哪些类型的) 或运行状况问题。
+1. 配置 Syslog 服务后，可以选择要发送到 **Syslog** (警报或) 运行状况问题的类型。
 
     ![已配置 Syslog 服务。](../../media/defender-identity/syslog-configured.png)
 

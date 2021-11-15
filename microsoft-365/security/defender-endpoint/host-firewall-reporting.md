@@ -14,12 +14,13 @@ ms.author: dansimp
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4896ffe6b01d87d4e54d6d06867aea3435a1513a
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.custom: admindeeplinkDEFENDER
+ms.openlocfilehash: 4d06c974f5ccc01326bd574ac1ad1c3fbde00990
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883133"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962526"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中托管防火墙报告
 
@@ -29,16 +30,16 @@ ms.locfileid: "60883133"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-如果你是管理员，你现在可以将防火墙报告托管到Microsoft 365[中心](https://security.microsoft.com)。 此功能使您能够从集中位置查看 Windows 10、Windows 11、Windows Server 2019 和 Windows Server 2022 防火墙报告。
+如果你是管理员，你现在可以将防火墙报告托管到Microsoft 365[中心](https://security.microsoft.com)。 此功能使您能够从集中Windows 10查看 Windows 10、Windows 11、Windows Server 2019 和 Windows Server 2022 防火墙报告。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 必须运行 Windows 10 或 Windows 11 Server 2019 Windows 或 Windows Server 2022。
 - 若要将设备载入到 Microsoft Defender for Endpoint 服务，请参阅 [此处](onboard-configure.md)。
-- 若要Microsoft 365安全中心开始接收数据，必须为高级安全防火墙Windows Defender审核事件： 
+- 若要<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365安全</a>中心开始接收数据，必须启用高级安全防火墙Windows Defender审核事件：
   - [审核筛选平台数据包丢弃](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [审核筛选平台连接](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
-- 使用组策略对象编辑器、本地安全策略或命令启用这些事件auditpol.exe命令。 有关详细信息，请参阅 [此处](/windows/win32/fwp/auditing-and-logging)。
+- 使用组策略对象编辑器、本地安全策略或安全命令启用这些事件auditpol.exe命令。 有关详细信息，请参阅 [此处](/windows/win32/fwp/auditing-and-logging)。
   - 两个 PowerShell 命令是：
     - **auditpol /set /subcategory："Filtering Platform Packet Drop" /failure：enable**
     - **auditpol /set /subcategory："Filtering Platform Connection" /failure：enable**
@@ -65,7 +66,7 @@ Ring0 Preview 期间支持以下方案。
 > [!div class="mx-imgBorder"]
 > !["主机防火墙报告"页。](\images\host-firewall-reporting-page.png)
 
-也可以访问这些报告，方式为，访问位于"防火墙阻止的入站连接 (底部的) 报告安全报告 \>  \> **设备"** 部分。
+还可访问这些报告，方式为访问位于"防火墙阻止的入站连接 (底部的) 报告安全报告 \>  \> **设备**"部分。
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>从"连接被阻止的计算机"到设备
 

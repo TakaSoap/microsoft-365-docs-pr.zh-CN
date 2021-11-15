@@ -14,15 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 931edcd890148a828a6d189722e8f29907c15b79
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 7475a9efa6cd8059b03e97786b2689fbfec4f5d5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553684"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962755"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>将非永久性虚拟桌面基础结构 (VDI) 设备载入Microsoft 365 Defender
 
@@ -64,9 +65,9 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 ### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>对于 Windows 10、Windows 11、Windows Server 2019 或 Windows Server 2022
 
-1.  打开 VDI 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
+1.  打开 VDI 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender包</a>：
 
-    1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
+    1. 在导航窗格中，选择 **"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
 
     1. 选择操作系统。
 
@@ -74,9 +75,9 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
     1. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将文件从从 .zip 文件中提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。 
+2. 将文件从从 .zip 文件提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。 
 
-2. 将文件从从 .zip 文件中提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。
+2. 将文件从从 .zip 文件提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。
     1. 如果要为每台设备实现多个条目（每个会话一个条目），请复制 WindowsDefenderATPOnboardingScript.cmd。
     2. 如果你要针对每台设备实现单个条目，请同时复制 Onboard-NonPersistentMachine.ps1 和 WindowsDefenderATPOnboardingScript.cmd。
 
@@ -108,7 +109,7 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 6. 单击 **导航窗格上的** "设备列表"。
 
-7. 输入设备名称并选择"设备"作为搜索类型 **，** 以使用搜索函数。
+7. 通过输入设备名称并选择设备作为搜索类型 **来** 使用搜索函数。
 
 ## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>对于下层 SKUs (Windows Server 2008 R2/2012 R2/2016) 
 
@@ -160,7 +161,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 3. 根据需要为映像提供服务。
 
-4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能累积 https://download.sysinternals.com/files/PSTools.zip) 的网络文件夹内容：
+4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能 https://download.sysinternals.com/files/PSTools.zip) 累积的网络文件夹内容：
 
     ```console
     PsExec.exe -s cmd.exe

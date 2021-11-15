@@ -14,14 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1ec9863a97d58dd61aaf47da1fcd965aab1fd4d3
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: e9c58df0c79479d8dabe8d3a31edd6bfecc5aacd
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881969"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960798"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>网络设备发现和漏洞管理
 
@@ -38,7 +39,7 @@ ms.locfileid: "60881969"
 > [!NOTE]
 > 2021 年 4 月[](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 13 日发布的网络设备发现和漏洞评估博客提供了有关 Defender for Endpoint 中新网络设备发现功能的 \) 见解。  本文概述了网络设备发现旨在应对的挑战，并详细介绍了如何使用这些新功能。
 
-网络发现功能在安全中心和 Microsoft 365 Defender控制台的"设备Microsoft 365部分中提供。
+网络发现功能在安全 Microsoft 365中心和Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">控制台</a>的"设备Microsoft 365 Defender部分中提供。
 
 指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 一旦发现，适用于终结点的 defender 危险和漏洞管理 功能将提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。
 
@@ -46,7 +47,7 @@ ms.locfileid: "60881969"
 
 ## <a name="approach"></a>方法
 
-由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备使用 SNMP (只读) 对网络设备执行经过身份验证的扫描。
+由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备使用 SNMP 或只读 (对网络设备执行经过身份验证) 。
 
 需要记住两种类型的设备：
 
@@ -72,15 +73,15 @@ ms.locfileid: "60881969"
 
 第一步是选择将执行经过身份验证的网络扫描的设备。
 
-1. 确定具有与计划扫描 (网络设备的管理端口的网络连接的 () 或服务器客户端或服务器的 Defender for Endpoint。
+1. 确定 Defender for Endpoint 载入 (客户端或) ，该客户端或服务器具有与计划扫描的网络设备的管理端口的网络连接。
 
 2. 必须允许 Defender for Endpoint 评估设备和目标网络设备之间的 SNMP 流量 (例如，防火墙) 。
 
-3. 确定将评估哪些网络设备的漏洞 (例如：Cisco 交换机或 Palo Alto Networks 防火墙) 。
+3. 确定将评估哪些网络设备是否具有漏洞 (例如：Cisco 交换机或 Palo Alto Networks 防火墙) 。
 
 4. 确保在所有已配置的网络设备上启用 SNMP 只读，以允许 Defender for Endpoint 评估设备查询配置的网络设备。 此功能的正确功能不需要"SNMP 写入"。
 
-5. 获取要扫描的网络设备的 IP 地址 (或将这些设备部署到的子网) 。
+5. 获取要扫描的网络设备或 (部署这些设备的子网的 IP) 。
 
 6. 获取网络设备的 SNMP 凭据 (例如：Community String、noAuthNoPriv、authNoPriv、authPriv) 。 配置新的评估作业时，需要提供凭据。
 
@@ -102,8 +103,8 @@ ms.locfileid: "60881969"
 
 ## <a name="install-the-network-scanner"></a>安装网络扫描程序
 
-1. 转到网络 **Microsoft 365下** 设置终结点评估 (\>  \>  \> **作业) 。**
-    1. 在"Microsoft 365 Defender"门户中，设置 >"评估作业"页。
+1. 转到网络 **Microsoft 365下** \> **设置** \> **终结点** 评估 (\> **作业) 。**
+    1. 在Microsoft 365 Defender门户中，转到"设置 >作业"页。
 
 2. 下载网络扫描程序，将其安装在指定的 Defender for Endpoint 评估设备上。
 
@@ -112,7 +113,7 @@ ms.locfileid: "60881969"
 
 ## <a name="network-scanner-installation--registration"></a>网络扫描程序安装&注册
 
-登录过程可以在指定的评估设备本身或其他任何设备（例如 (，你的个人客户端设备）上) 。
+登录过程可以在指定的评估设备本身或其他任何设备（例如， (客户端设备）上) 。
 
 要完成网络扫描程序注册过程，请执行以下操作：
 
@@ -127,7 +128,7 @@ ms.locfileid: "60881969"
 
 ## <a name="configure-a-new-assessment-job"></a>配置新的评估作业
 
-在"评估作业"页 **设置，** 选择 **"添加网络评估作业"。** 按照设置过程选择要定期扫描并添加到设备清单的网络设备。
+在"评估作业"页 **的** 设置，选择"**添加网络评估作业"。** 按照设置过程选择要定期扫描并添加到设备清单的网络设备。
 
 若要防止网络设备清单中的设备重复，请确保跨多个评估设备仅配置每个 IP 地址一次。
 
@@ -138,7 +139,7 @@ ms.locfileid: "60881969"
 
 1. 选择"评估作业"名称和"评估设备"，其中安装了网络扫描程序。 此设备将定期执行经过身份验证的扫描。
 
-2. 添加要扫描的目标网络设备的 IP 地址， (部署这些设备的子网) 。
+2. 添加要扫描的目标网络设备的 IP 地址 (或部署这些设备的子网) 。
 
 3. 添加目标网络设备所需的 SNMP 凭据。
 
@@ -164,13 +165,13 @@ ms.locfileid: "60881969"
 > [!div class="mx-imgBorder"]
 > !["设备清单"中的"网络设备"部分。](images/assessment-jobs-device-inventory.png)
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 
 ### <a name="network-scanner-installation-has-failed"></a>网络扫描程序安装失败
 
 验证所需的 URL 是否添加到防火墙设置中的允许域。 此外，请确保代理设置已配置，如配置 [设备代理和 Internet 连接设置 中所述](configure-proxy-internet.md)。
 
-### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>未 Microsoft.com/devicelogin 网页
+### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>Microsoft.com/devicelogin 网页未显示
 
 验证所需的 URL 是否添加到防火墙中的允许域。 此外，请确保代理设置已配置，如配置 [设备代理和 Internet 连接设置 中所述](configure-proxy-internet.md)。
 
@@ -196,7 +197,7 @@ ms.locfileid: "60881969"
 
 ### <a name="registration-process-fails-using-provided-link-in-the-command-line-in-registration-process"></a>注册过程在注册过程中使用命令行中提供的链接失败
 
-尝试不同的浏览器或将登录链接和代码复制到其他设备。
+请尝试不同的浏览器，或将登录链接和代码复制到其他设备。
 
 ### <a name="text-too-small-or-cant-copy-text-from-command-line"></a>文本过小或无法从命令行复制文本
 

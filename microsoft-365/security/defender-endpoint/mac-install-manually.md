@@ -14,14 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b198cbfe979cc8453db289911ab48de601a3edd2
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: de4ec2f03119245e104bc2e5f53eedd9d578fe01
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60585927"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962695"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上手动部署 Microsoft Defender for Endpoint
 
@@ -37,7 +38,7 @@ ms.locfileid: "60585927"
 
 - [下载安装和载入程序包](#download-installation-and-onboarding-packages)
 - [macOS (10.15 及早期版本的应用程序安装) ](#application-installation-macos-1015-and-older-versions)
-- [macOS 11 (更高版本的应用程序安装) ](#application-installation-macos-11-and-newer-versions)
+- [macOS 11 (较新版本的应用程序安装) ](#application-installation-macos-11-and-newer-versions)
 - [客户端配置](#client-configuration)
 
 ## <a name="prerequisites-and-system-requirements"></a>先决条件和系统要求
@@ -46,9 +47,9 @@ ms.locfileid: "60585927"
 
 ## <a name="download-installation-and-onboarding-packages"></a>下载安装和载入程序包
 
-从以下门户下载安装和载入Microsoft 365 Defender包：
+从门户下载安装和载入Microsoft 365 Defender包：
 
-1. In Microsoft 365 Defender portal， go to **设置 > Endpoints > Device management > Onboarding**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal，</a>go to **设置 > Endpoints > Device management > Onboarding**.
 2. 在页面的第 1 部分中，将操作系统设置为 **macOS，** 将 Deployment 方法设置为 **本地脚本**。
 3. 在页面的第 2 部分中，选择 **下载安装程序包**。 将其另存为 wdav.pkg 到本地目录。
 4. 在页面的第 2 部分中，选择 **下载载入程序包**。 将其另存WindowsDefenderATPOnboardingPackage.zip同一目录。
@@ -86,7 +87,7 @@ ms.locfileid: "60585927"
 > [!NOTE]
 > macOS 可能会请求在首次安装 Microsoft Defender for Endpoint 时重新启动设备。 在重新启动设备之前，实时保护将不可用。
 
-## <a name="application-installation-macos-11-and-newer-versions"></a>macOS 11 (更高版本的应用程序安装) 
+## <a name="application-installation-macos-11-and-newer-versions"></a>macOS 11 (较新版本的应用程序安装) 
 
 若要完成此过程，你必须在设备上拥有管理员权限。
 
@@ -168,7 +169,7 @@ ms.locfileid: "60585927"
         mdatp threat list
         ```
 
-3. 运行EDR检测测试，验证设备是否正确载入并报告给服务。 对新载入的设备执行以下步骤：
+3. 运行EDR检测测试，验证设备已正确载入并报告给服务。 对新载入的设备执行以下步骤：
 
    1. 在浏览器（如 Microsoft Edge For Mac 或 Safari）中。
 
@@ -210,7 +211,7 @@ ms.locfileid: "60585927"
 
 10. 单击“打开”。
 
-    几分钟后，将引发名为"macOS EDR测试警报"的警报。
+    几分钟后，将引发一个名为"macOS EDR Test Alert"的警报。
 
 11. 转到Microsoft 365 Defender门户 https://security.microsoft.com/) (。
 

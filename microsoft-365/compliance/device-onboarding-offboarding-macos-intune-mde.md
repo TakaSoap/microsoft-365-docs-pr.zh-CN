@@ -14,26 +14,26 @@ ms.collection:
 search.appverid:
 - MET150
 description: '了解如何使用适用于 MDE Microsoft 365预览版中的 MDE Microsoft Intune将 macOS (载入和) '
-ms.openlocfilehash: c1ed019f6191d930da8c6b1d0674625e9c27d1b6
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: a1d647fae55b091b8c12df885ce28aa4f1275a1a
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792480"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962995"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>使用适用于 Microsoft Defender for Endpoint 客户的 Intune 将 macOS 设备载入和卸载到合规性解决方案（预览版）
 
 > [!IMPORTANT]
 > 如果你 ***将*** Microsoft Defender for Endpoint (MDE) macOS 设备，请使用此过程
 
-## <a name="get-registered"></a>注册
+<!--## Get registered
 
-若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅 注册[macOS Microsoft 365。](https://aka.ms/EndpointDLPIgnite21-Previews)
+To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).-->
 
 **适用于：**
 
 - 将 MDE 部署到其 macOS 设备的客户。
-- [Microsoft 365DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
+- [Microsoft 365终结点数据丢失防护 （DLP）](./endpoint-dlp-learn-about.md)
 - [内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 
@@ -111,7 +111,7 @@ ms.locfileid: "60792480"
 > [!IMPORTANT]
 > "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留 6 个月。
 
-1. 在 **Microsoft Endpoint Manager中心**，打开 **"设备**  >  **配置文件"，** 你应该会看到已创建的配置文件。
+1. 在 **Microsoft Endpoint Manager中心**，打开 **设备**  >  **配置文件**，你应该会看到你已创建的配置文件。
 
 2. 在配置文件 **页** 中，选择 MDE 首选项配置文件。
 
