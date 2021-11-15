@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: a1ac660e9abb389fb45b29b9934d4aa949bfb69c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 911b80b13d9d091d0161ddce0fff4d1dbd7dbc0b
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703235"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950505"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -58,7 +58,7 @@ ms.locfileid: "60703235"
 
 当选择使用自适应作用域时，会提示选择想要的自适应作用域类型。 有三种不同类型的自适应作用域，且每个作用域都支持不同的特性或属性:
 
-| 自适应作用域类型 | 受支持的特性或属性 |
+| 自适应作用域类型 | 支持的属性包括 |
 |:-----|:-----|
 |**用户** - 适用于:  <br/> - Exchange 电子邮件 <br/> - OneDrive 帐户 <br/> - Teams 聊天 <br/> - Teams 专用频道消息 <br/> - Yammer 用户消息| 名字 <br/> 姓 <br/>显示名称 <br/> 职务 <br/> 部门 <br/> 办公室 <br/>街道地址 <br/> 市/县 <br/>省/市/自治区 <br/>邮政编码 <br/> 国家或地区 <br/> 电子邮件地址 <br/> 别名 <br/> Exchange 自定义特性: CustomAttribute1 - CustomAttribute15|
 |**SharePoint 网站** - 适用于:  <br/> - SharePoint 网站 <br/> - OneDrive 帐户 |网站 URL <br/>网站名称 <br/> SharePoint 自定义属性: RefinableString00 - RefinableString99 |
@@ -68,6 +68,11 @@ ms.locfileid: "60703235"
 
 - **别名** 映射到 LDAP 名称 **mailNickname**，在 Azure AD 管理中心内显示为 **电子邮件**。
 - **电子邮件地址** 映射到 LDAP 名称 **proxyAddresses**，在 Azure AD 管理中心内显示为 **代理地址**。
+
+配置自适应作用域时，可以通过使用简单查询生成器轻松指定表中列出的属性。 高级查询生成器将支持其他属性，如下一节所述。
+
+> [!TIP]
+> 有关使用高级查询生成器的其他信息，请参阅以下网络研讨会：[使用自适应策略作用域为用户和组生成高级查询](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
 
 保留的单个策略可以具有一个或多个自适应作用域。
 
@@ -120,6 +125,12 @@ ms.locfileid: "60703235"
     - **notlike** (字符串比较
     
     可以独立于作用域配置 [验证这些高级查询](#validating-advanced-queries)。
+    
+    > [!TIP]
+    > 如果要排除非活动邮箱，则必须使用高级查询生成器。 或者相反，可以仅面向非活动邮箱。 对于此配置，请使用 OPATH 属性 *IsInactiveMailbox*：
+    > 
+    > - 若要排除非活动邮箱，请确保查询包括： `(IsInactiveMailbox -eq "False")`
+    > - 若要仅面向非活动邮箱，请指定： `(IsInactiveMailbox -eq "True")`
 
 3. 根据需要创建尽可能多的自适应作用域。 当创建保留策略时，可以选择一个或多个自适应作用域。
 
@@ -198,9 +209,17 @@ ms.locfileid: "60703235"
 
 不支持 Exchange 电子邮件的资源邮箱、联系人和Microsoft 365 组邮箱。 对于 Microsoft 365 群组邮箱，请选择 **Microsoft 365 群组** 位置。
 
-当使用静态策略作用域并将保留设置应用于 **所有收件人** 时，会包含所有 [非活动邮箱](create-and-manage-inactive-mailboxes.md)。 但是，如果更改此默认值并配置 [特定包含或排除](#a-policy-with-specific-inclusions-or-exclusions)，则不支持非活动邮箱，且无法为这些邮箱应用或排除保留设置。
+根据策略配置， 可能包含或不包含[非活动邮箱](create-and-manage-inactive-mailboxes.md)：
 
-如果选择静态策略作用域要包含或排除的收件人，则可以选择通讯组和已启用电子邮件的安全组，以作为选择多个收件人的有效方法，而不用逐个选择。 当使用此选项时，在后台，这些组会在配置时自动展开，以选择组中用户的邮箱。 如果这些组的成员资格稍后发生更改，则不会自动更新现有的保留策略。
+- 使用默认 **所有收件人** 配置但不支持 [特定包含或排除](#a-policy-with-specific-inclusions-or-exclusions) 时，静态策略作用域将包含非活动邮箱。 但是，如果在应用策略时包含或排除具有活动邮箱的收件人，并且该邮箱随后变为非活动状态，则将继续应用或排除保留设置。
+
+- 默认情况下，自适应策略作用域包括非活动邮箱。 可以使用高级查询生成器和 OPATH 属性 *IsInactiveMailbox* 控制此行为：
+    
+    ```console
+    (IsInactiveMailbox -eq "False")
+    ```
+
+如果使用静态策略作用域并选择要包含或排除的收件人，可以选择通讯组和启用电子邮件的安全组作为选择多个收件人的一种有效方法，而不用逐个选择。 当使用此选项时，在后台，这些组会在配置时自动展开，以选择组中用户的邮箱。 如果这些组的成员身份稍后更改，则现有保留策略不会自动更新，这与自适应策略作用域不同。
 
 有关在为 Exchange 配置保留设置时包括和排除哪些邮箱项目的详细信息，请参阅[保留和删除哪些内容](retention-policies-exchange.md#whats-included-for-retention-and-deletion)。
 

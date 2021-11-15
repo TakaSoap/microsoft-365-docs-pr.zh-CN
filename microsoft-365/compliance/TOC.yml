@@ -26,6 +26,34 @@
       href: plan-for-security-and-compliance.md
     - name: 合规性扩展性
       href: compliance-extensibility.md
+- name: 跨解决方案功能
+  items:
+    - name: 载入 Windows 10 和 Windows 11 设备
+      items:
+        - name: 将 Windows 10 和 Windows 11 设备载入 Microsoft 365 概述
+          href: device-onboarding-overview.md
+        - name: 通过组策略载入 Windows 10 和 Windows 11 设备
+          href: device-onboarding-gp.md
+        - name: 使用移动设备管理工具载入 Windows 10 和 Windows 11 设备
+          href: device-onboarding-mdm.md
+        - name: 使用 Configuration Manager 载入 Windows 10 和 Windows 11 设备
+          href: device-onboarding-sccm.md
+        - name: 使用本地脚本载入 Windows 10 和 Windows 11 设备
+          href: device-onboarding-script.md
+        - name: 载入非持久性虚拟桌面基础结构 (VDI) 设备。
+          href: device-onboarding-vdi.md
+    - name: 载入 macOS 设备（预览版）
+      items:
+        - name: 将 macOS 设备载入 Microsoft 365 概述（预览版）
+          href: device-onboarding-macos-overview.md
+        - name: 使用 Microsoft Intune（预览版）将 macOS 设备载入并卸载到合规性解决方案中
+          href: device-onboarding-offboarding-macos-intune.md
+        - name: 使用适用于 Microsoft Defender for Endpoint 客户的 Intune 将 macOS 设备载入和卸载到合规性解决方案（预览版）
+          href: device-onboarding-offboarding-macos-intune-mde.md
+        - name: 使用 JAMF Pro（预览版）将 macOS 设备载入并卸载到合规性解决方案中
+          href: device-onboarding-offboarding-macos-jamfpro.md
+        - name: 使用适用于 Microsoft Defender for Endpoint 客户的 JAMF Pro 将 macOS 设备载入和卸载到合规性解决方案（预览版）
+          href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: 管理预览体验计划风险
   items:
     - name: Microsoft 365 内部风险解决方案
@@ -134,17 +162,17 @@
           items:
             - name: 自定义敏感信息类型入门 - 合规中心
               href: create-a-custom-sensitive-information-type.md
-            - name: 开始使用基于确切数据匹配的敏感信息类型
+            - name: 基于精确数据匹配的敏感信息类型入门
               href: sit-get-started-exact-data-match-based-sits-overview.md
-            - name: 导出源数据以实现基于敏感信息类型的精确数据匹配
+            - name: 为基于精确数据匹配的敏感信息类型导出源数据
               href: sit-get-started-exact-data-match-export-data.md
-            - name: 为基于敏感信息类型的精确数据匹配创建模式
+            - name: 为基于精确数据匹配的敏感信息类型创建架构
               href: sit-get-started-exact-data-match-create-schema.md
-            - name: 对敏感信息源表进行哈希和上传，以实现敏感信息类型的精确数据匹配
+            - name: 为基于精确数据匹配的敏感信息类型哈希并上传敏感信息源表
               href: sit-get-started-exact-data-match-hash-upload.md
-            - name: 创建精确的数据匹配敏感信息类型/规则包
+            - name: 创建基于精确数据匹配的敏感信息类型/规则包
               href: sit-get-started-exact-data-match-create-rule-package.md
-            - name: 测试精确数据匹配的敏感信息类型
+            - name: 测试基于精确数据匹配的敏感信息类型
               href: sit-get-started-exact-data-match-test.md
         - name: 使用敏感信息类型
           items:
@@ -164,7 +192,7 @@
               href: create-a-keyword-dictionary.md
             - name: 修改关键字词典
               href: sit-modify-keyword-dictionary.md
-            - name: 管理精确数据匹配模式
+            - name: 管理精确数据匹配架构
               href: sit-use-exact-data-manage-schema.md
             - name: 刷新敏感信息源表文件
               href: sit-use-exact-data-refresh-data.md
@@ -319,36 +347,12 @@
               href: dlp-on-premises-scanner-get-started.md
             - name: 终结点数据丢失防护入门
               href: endpoint-dlp-getting-started.md
-            - name: 为 Endpoint DLP 配置设备代理和 Internet 连接设置
-              href: endpoint-dlp-configure-proxy.md
+            - name: 为信息保护配置设备代理和 Internet 连接设置
+              href: device-onboarding-configure-proxy.md
             - name: Microsoft 合规性扩展入门
               href: dlp-chrome-get-started.md
             - name: 数据丢失防护警报仪表板入门
               href: dlp-alerts-dashboard-get-started.md
-            - name: Windows 10 设备的 Endpoint DLP 载入工具和方法
-              items:
-                - name: Windows 10 设备的装载工具和方法
-                  href: dlp-configure-endpoints.md
-                - name: 通过组策略载入 Windows 10 设备
-                  href: dlp-configure-endpoints-gp.md
-                - name: 使用移动设备管理工具载入 Windows 10 设备
-                  href: dlp-configure-endpoints-mdm.md
-                - name: 使用 Configuration Manager 载入 Windows 10 设备
-                  href: dlp-configure-endpoints-sccm.md
-                - name: 使用本地脚本载入 Windows 10 设备
-                  href: dlp-configure-endpoints-script.md
-                - name: 载入非持久性虚拟桌面基础结构 (VDI) 设备。
-                  href: dlp-configure-endpoints-vdi.md
-            - name: 将 macOS 设备载入 Microsoft 365 概述（预览版）
-              href: device-onboarding-macos-overview.md
-            - name: 使用 Microsoft Intune（预览版）将 macOS 设备载入并卸载到合规性解决方案中
-              href: device-onboarding-offboarding-macos-intune.md
-            - name: 使用适用于 Microsoft Defender for Endpoint 客户的 Intune 将 macOS 设备载入和卸载到合规性解决方案（预览版）
-              href: device-onboarding-offboarding-macos-intune-mde.md
-            - name: 使用 JAMF Pro（预览版）将 macOS 设备载入并卸载到合规性解决方案中
-              href: device-onboarding-offboarding-macos-jamfpro.md
-            - name: 使用适用于 Microsoft Defender for Endpoint 客户的 JAMF Pro 将 macOS 设备载入和卸载到合规性解决方案（预览版）
-              href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: 使用 DLP
           items:
             - name: DLP 和 Microsoft Teams

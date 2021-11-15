@@ -271,6 +271,7 @@
 #### [配置攻击面减少功能](configure-attack-surface-reduction.md)
 #### [了解攻击面减少规则](attack-surface-reduction.md)
 #### [攻击面减少规则](attack-surface-reduction-rules.md)
+#### [部署攻击面减少规则](attack-surface-reduction-rules-deployment.md)
 #### [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
 #### [启用攻击面减少规则](enable-attack-surface-reduction.md)
 #### [自定义减少攻击面规则](customize-attack-surface-reduction.md)
