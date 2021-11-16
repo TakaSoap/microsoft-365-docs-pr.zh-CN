@@ -11,22 +11,23 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
+ms.custom: admindeeplinkDEFENDER
 ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 安全中心与 Microsoft 365 合规中心根据你组织的当前设置提供数据管理建议，并让你可以通过几次单击进行设置。其中一些建议会检测组织中的特定内容，然后提供管理该内容的建议步骤。例如，建议可能会检测包含业务关键内容的项目（如律师-客户特权或 NDA 信息），然后让你自动为这些项目应用保留标签，以确保根据需要对它们进行分类和保留。本主题列出了你可能会看到的数据管理建议，并介绍了为触发每条建议而检测的内容。
-ms.openlocfilehash: c47b19b7960118e3dee3fd6079adcf59ec22893b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f6343ab8856393f1928edfdb917e26fe9d72cc97
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179207"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963343"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>如何确定数据治理建议的内容
 
-Microsoft 365 安全中心与 Microsoft 365 合规中心根据你组织的当前设置提供数据管理建议，并让你可以通过几次单击进行设置。其中一些建议会检测组织中的特定内容，然后提供管理该内容的建议步骤。例如，建议可能会检测包含业务关键内容的项目（如律师-客户特权或 NDA 信息），然后让你自动为这些项目应用保留标签，以确保根据需要对它们进行分类和保留。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 安全中心</a> 和 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> 根据组织的当前设置提供有关数据治理的建议，并允许你只需单击几下即可进行设置。 其中一些建议检测组织中的特定内容，然后提供用于管理该内容的建议步骤。 例如，建议可能会检测包含业务关键内容的项目（如律师-客户特权或 NDA 信息），然后允许你自动将保留标签应用于这些项目，以确保根据需要对其进行分类和保留。
 
 本主题列出了你可能会看到的数据治理建议，并介绍了为触发每条建议而检测的内容。
 

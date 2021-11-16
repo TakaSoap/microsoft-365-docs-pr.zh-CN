@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: 了解 MIP 策略的默认标签 Microsoft 信息保护 (策略) 分类和保护敏感内容。
-ms.openlocfilehash: 55657221c86aef13c9a6a5192a89ffe4f78ef2a3
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ffa0be4d64218fde0e88da4646d93a57f7a3a0b1
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60676974"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962827"
 ---
 # <a name="default-labels-and-policies-for-microsoft-information-protection"></a>默认标签和 Microsoft 信息保护策略
 
@@ -31,7 +31,7 @@ ms.locfileid: "60676974"
 
 这些默认配置可帮助你快速启动并运行Microsoft 365 合规性的 Microsoft 信息保护。 可以按时使用，只需进行一些更改，也可以执行完全自定义，以更好地满足业务要求。 
 
-必须符合具有[适用于 Microsoft 365合规性的免费试用版](compliance-easy-trials.md)的客户和已拥有 Microsoft 365 E5 计划的客户：
+符合条件的客户包括具有[适用于 Microsoft 365 合规性的免费试用版](compliance-easy-trials.md)的客户和一些已拥有 Microsoft 365 E5 计划的客户：
 
 - **新客户**：如果拥有合规性Microsoft 365 少于 30 天，租户可以激活列出的所有默认配置。 也可以始终对它们禁用、删除或编辑。
 
@@ -55,7 +55,9 @@ ms.locfileid: "60676974"
     
 2. 如果你有资格使用默认标签 Microsoft 信息保护策略，将看到以下信息，可在其中激活默认标签和策略。 例如：
     
-    :::image type="content" alt-text=" Microsoft 信息保护预配置策略免费试用版。" source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
+    :::image type="content" alt-text="对预配置标签和策略进行 Microsoft 信息保护激活。" source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
+    
+    如果未看到此信息与激活选项一起显示，则当前没有资格自动创建敏感度标签和策略。 可以稍后重新检查此状态是否已更改，或者可以使用以下设置信息手动创建相同的标签和策略。
 
 ## <a name="default-sensitivity-labels"></a>默认敏感度标签
 

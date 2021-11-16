@@ -16,14 +16,15 @@ search.appverid:
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: 我们将为 Microsoft Defender for Office 365 发布新的警报策略。 我们还将停用已由新策略替换的两个现有警报策略。
-ms.openlocfilehash: 2983ab2affe3c938062442e53a8f14c5bb0caa57
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6ff33c64319e5fe9f9b3af655dcfc3bde7dd158f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190721"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963295"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中新的警报策略
 
@@ -99,7 +100,7 @@ Microsoft Defender for Office 365 引入了与传递检测相关的新增和改�
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>为这些更改做好准备
 
-你的组织如何利用这些警报将决定需要执行哪些操作来进行准备。如果已操作警报，并且通过 API、警报电子邮件通知或在 Microsoft 365 合规中心（`https://compliance.mmicrosoft.com/viewalerts`）或 Microsoft 安全中心（`https://security.microsoft.com/viewalerts`）内正在使用警报，则需要修改工作流。
+你的组织如何利用这些警报将确定需要执行哪些操作进行准备。 如果已操作警报，并且正在通过 API、警报电子邮件通知，或者在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> 或 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"> Microsoft 365 安全中心</a> 内使用警报，将需要修改工作流。
 
 **如果尚未操作这些警报，可以执行下列操作之一：**
 

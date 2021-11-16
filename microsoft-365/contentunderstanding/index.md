@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何查找 Microsoft SharePoint Syntex 资源。
-ms.openlocfilehash: 6e738a90486b0aa1d37c483a6e369a84a2196a9d
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: 51904d626b76f9e013952816a1ec9af01856dfca
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264704"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60971936"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 简介
 
@@ -51,10 +51,11 @@ SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 |查看 Microsoft 技术社区资源中心中的资源|[ SharePoint Syntex - Microsoft 365 中的内容服务](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |有关 Microsoft 技术社区资源中心的 SharePoint Syntex 常见问题解答 |[SharePoint Syntex - 常见问题解答](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |如何获取 SharePoint Syntex |[SharePoint Syntex 产品页面](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
+|了解如何使用SharePoint Syntex |[SharePoint Syntex学习路径](/learn/paths/syntex-get-started)|
 
 ## <a name="adoption"></a>采用
 
-详细了解如何在组织中使用和实施 SharePoint Syntex 以帮助你解决业务问题： 
+详细了解如何在组织中使用和实施SharePoint Syntex解决方案，以帮助解决业务问题。
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
@@ -79,9 +80,11 @@ SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
-|了解如何使用模型|[创建内容中心](./create-a-content-center.md)<br><br>[创建分类器](./create-a-classifier.md)<br><br>[创建提取程序](./create-an-extractor.md)<br><br>[创建表单处理模型](./create-a-form-processing-model.md)<br><br>[说明类型](./explanation-types-overview.md)<br><br>[应用文档理解模型](./apply-a-model.md)<br><br>[通过示例模型了解文档理解模型](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
+|了解如何使用模型|[创建内容中心](./create-a-content-center.md)<br><br>[创建分类器](./create-a-classifier.md)<br><br>[复制模型](./duplicate-a-model.md)<br><br>[重命名模型](./rename-a-model.md)<br><br>[创建提取程序](./create-an-extractor.md)<br><br>[重命名提取程序](./rename-an-extractor.md)<br><br>[创建表单处理模型](./create-a-form-processing-model.md)<br><br>[说明类型](./explanation-types-overview.md)<br><br>[使用说明模板](./explanation-templates.md)<br><br>[应用文档理解模型](./apply-a-model.md)<br><br>[通过示例模型了解文档理解模型](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |将保留标签应用于模型|[将保留标签应用于文档理解模型](./apply-a-retention-label-to-a-model.md)|
 |将敏感度标签应用于模型|[将敏感度标签应用于文档理解模型](./apply-a-sensitivity-label-to-a-model.md)|
+|在其他内容中心使用经过训练的模型 |[发布和发现文档理解模型](./model-discovery.md)|
+|对文档库执行基于元数据的查询|[搜索文档库中的元数据](./metadata-search.md)|
 |创建提取程序时使用托管元数据服务术语库分类|[创建提取程序时利用术语库分类](./leverage-term-store-taxonomy.md)|
 |了解如何查看有关模型的数据|[模型使用情况分析](./model-usage-analytics.md)|
 |了解如何在培训模型时使用辅助功能模式|[SharePoint 整合辅助功能模式](./accessibility-mode.md)|

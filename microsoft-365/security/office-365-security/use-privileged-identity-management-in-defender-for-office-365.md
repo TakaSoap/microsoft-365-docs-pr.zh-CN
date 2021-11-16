@@ -17,15 +17,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: 了解如何集成 Azure PIM，以便向用户授予即时、限时访问权限以在 Microsoft Defender for Office 365 中执行已提升特权任务，从而降低数据风险。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ea618a24c14aa49973ae05287a65cbb756f5467
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5a5088b72cd7739c5f203293a8ac569af093bf4b
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196281"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960990"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) 以及将其与 Microsoft Defender for Office 365 配合使用的原因
@@ -68,7 +69,7 @@ Privileged Identity Management (PIM) 为 Azure 功能，设置后，用户便可
 
 在安全门户中，创建包含所需权限的自定义角色组。
 
-1. 浏览到 Microsoft 365 Defender 门户(https://security.microsoft.com) > **权限与角色** > 选择“电子邮件与协作”下的 **角色** > **创建**。
+1. 浏览到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a> > **权限与角色** > 选择“电子邮件与协作”下的 **角色** > **创建**。
 2. 命名组以反映其用途，例如‘搜索并清除 PIM’。
 3. 不要添加成员，只需保存组并转到下一部分!
 

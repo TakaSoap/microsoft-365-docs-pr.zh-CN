@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 172b23ee84c8a8a9518e2e3df000dedfa998dc16
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 53230a4361bc74207fd630bf6f4631e87055dda8
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555148"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60971960"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -47,7 +47,6 @@ ms.locfileid: "60555148"
 - 向命令行工具添加了新开关：
   - 控制按需扫描的并行度。 这可以通过 进行配置 `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` 。 默认情况下，使用 的并行 `2` 度。
   - 控制启用还是禁用安全智能更新后的扫描。 这可以通过 进行配置 `mdatp config scan-after-definition-update --value [enabled/disabled]` 。 默认情况下，这设置为 `enabled` 。
-  - 控制在按需扫描过程中是否扫描存档。 这可以通过 进行配置 `mdatp config scan-archives --value [enabled/disabled]` 。 默认情况下，这设置为 `enabled` 。
 - 更改产品日志级别现在需要提升
 - Bug 修复&性能改进
 
@@ -71,7 +70,7 @@ ms.locfileid: "60555148"
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0) 
 
 - [macOS 的设备](mac-device-control-overview.md) 控件现已一般可用
-- 解决了无法从 macOS 11 (上的状态菜单启动快速扫描) 
+- 解决了无法从 macOS 11 和 Big Sur (状态菜单启动快速) 
 - 其他 Bug 修复
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0) 
@@ -83,7 +82,7 @@ ms.locfileid: "60555148"
 - 从此版本开始，在通过命令行客户端触发的按需防病毒扫描期间检测到的威胁将自动修正。 扫描期间通过用户界面触发的威胁仍然需要手动操作。
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
-  - `--top N`：显示前 N 个 (仅在还指定了 `--sort` 值时) 
+  - `--top N`：显示前 N 个 (仅在还指定了值 `--sort` 时) 
 - 性能改进 (功能专门用于在 BUG 修复) &使用时
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0) 
@@ -123,7 +122,7 @@ ms.locfileid: "60555148"
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0) 
 
 - 改进了在 macOS 11 Big Sur 上运行的代理的可靠性
-- 添加了一个新的命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV 排除 `mdatp scan custom` () 
+- 添加了一个新的命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV `mdatp scan custom` 排除 () 
 - Bug 修复&性能改进
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0) 
@@ -211,7 +210,7 @@ ms.locfileid: "60555148"
 
 ## <a name="1009027"></a>100.90.27
 
-- 现在， [你可以为](mac-updates.md#set-the-channel-name) macOS 上的 Microsoft Defender for Endpoint 设置与系统范围的更新通道不同的更新通道
+- 现在可以在 macOS [上](mac-updates.md#set-the-channel-name) 为 Microsoft Defender for Endpoint 设置与系统范围的更新通道不同的更新通道
 - 新产品图标
 - 其他用户体验改进
 - 错误修补程序
@@ -234,7 +233,7 @@ ms.locfileid: "60555148"
 
 ## <a name="1008373"></a>100.83.73
 
-- 为 IT 管理员添加了更多有关排除[管理](mac-preferences.md#exclusion-merge-policy)、威胁类型[](mac-preferences.md#threat-type-settings-merge-policy)设置管理和禁止威胁操作[的控制](mac-preferences.md#disallowed-threat-actions)
+- 为 IT 管理员添加了更多有关排除[管理](mac-preferences.md#exclusion-merge-policy)、威胁类型[](mac-preferences.md#threat-type-settings-merge-policy)设置管理和禁止[威胁操作的控制](mac-preferences.md#disallowed-threat-actions)
 - 当设备上未启用"完全磁盘访问"时，现在状态菜单中将显示一条警告
 - Bug 修复&性能改进
 
@@ -264,7 +263,7 @@ ms.locfileid: "60555148"
 
 ## <a name="1007099"></a>100.70.99
 
-- 解决了在启用实时保护时影响某些用户升级到 macOS 加泰罗尼亚语的能力的问题。 此个别问题是由 Microsoft Defender for Endpoint 在Catalina 升级包中锁定文件，同时扫描它们以寻找威胁导致的，导致升级序列失败。
+- 解决了在启用实时保护时影响某些用户升级到 macOS 加泰罗尼亚语的能力的问题。 此个别问题是由 Microsoft Defender for Endpoint 在Catalina 升级包中锁定文件，同时扫描它们以发现威胁导致的，导致升级序列失败。
 
 ## <a name="1006899"></a>100.68.99
 
@@ -276,7 +275,7 @@ ms.locfileid: "60555148"
 - 增加了对 macOS 加泰罗尼亚语的支持
 
   > [!CAUTION]
-  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序在未经明确同意 (无法访问磁盘上的某些位置，如文档、下载、桌面) 等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序无法访问磁盘上的某些位置 (如文档、下载、桌面等) 未经明确同意。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
   >
   > 授予此同意的机制取决于你部署适用于终结点的 Microsoft Defender 的方式：
   >

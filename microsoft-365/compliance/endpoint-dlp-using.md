@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: b354e578c40845a89b7bb837854f6dd7fa5bb4d3
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 03f16c9a914ce0a5cd1193919a962307b97435b2
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907797"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962983"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -45,10 +45,6 @@ ms.locfileid: "60907797"
 
 ### <a name="advanced-classification-scanning-and-protection"></a>高级分类扫描和保护
 
-#### <a name="get-registered"></a>注册
-
-若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅[注册](https://aka.ms/Ignite2021DLP)。
-
 启用后，“**高级分类扫描和保护**”允许更高级的 Microsoft 365 基于云的数据分类服务，可以扫描项目、对项目进行分类，以及将结果返回到本地计算机。 这意味着你可以利用[准确数据匹配](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)分类、[命名实体（预览）](named-entities-learn.md#learn-about-named-entities-preview)和分类技术。
 
 在高级分类中，内容从本地设备发送到云服务进行扫描和分类。 如果带宽利用率是关注的问题，则可以在此全局设置中设置一个限制，该限制适用于在滚动 24 小时周期内可以使用多少设备。 如果设置了带宽利用率限制且超出该限制，DLP 将停止将用户内容发送到云，并且将会继续在设备上本地进行数据分类。 当累积带宽利用率降至低于滚动的 24 小时限制时，将恢复与云服务的通信。
@@ -65,8 +61,6 @@ ms.locfileid: "60907797"
 > DLP 策略评估始终发生在云中，即使未发送用户内容。
 
 ### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>终结点 DLP Windows 10 和 macOS 设置
-
-若要获取 macOS 支持，必须向 Microsoft 注册租户。 请参阅[注册](https://aka.ms/EndpointDLPIgnite21-Previews)。
 
 |Setting |Windows 10、1809 及更高版本  |macOS Catalina 10.15 或更高版本（预览）  |Notes  |
 |---------|---------|---------|---------|
@@ -89,19 +83,19 @@ ms.locfileid: "60907797"
 
 可以使用此逻辑来构造适用于Windows 10 设备的排除路径：
 
-- 以“\”结尾的有效文件路径，仅表示直接位于文件夹下的文件。 <br/>例如：C:\Temp\
+- 以 `\` 结尾的有效文件路径，仅表示直接位于文件夹下的文件。 <br/>例如：`C:\Temp\`
 
-- 以“\*”结尾的有效文件路径，仅表示位于子文件夹下的文件，以及直接位于文件夹下方的文件。 <br/>例如：C:\Temp\*
+- 以 `\*` 结尾的有效文件路径，仅表示位于子文件夹下的文件，以及直接位于文件夹下方的文件。 <br/>例如：`C:\Temp\*`
 
-- 以“\”或“\*”结尾的有效文件路径，表示直接位于文件夹和所有子文件夹下的所有文件。 <br/>例如：C:\Temp
+- 以 `\` 或 `\*` 结尾的有效文件路径，表示直接位于文件夹和所有子文件夹下的所有文件。 <br/>例如：`C:\Temp`
 
-- 两端“\”之间带有通配符的路径。 <br/>例如：C:\Users\*\Desktop\
+- 两端的 `\` 之间带有通配符的路径。 <br/>例如：`C:\Users\*\Desktop\`
 
-- 两端“\”之间带有通配符，并通过 ‘(number)’ 给出确切的子文件夹数量的路径。 <br/>例如：C:\Users\*(1)\Downloads\
+- 两端 `\` 之间带有通配符，并通过 `(number)` 给出确切的子文件夹数量的路径。 <br/>例如：`C:\Users\*(1)\Downloads\`
 
-- 带有 SYSTEM 环境变量的路径。 <br/>例如：%SystemDrive%\Test\*
+- 带有 SYSTEM 环境变量的路径。 <br/>例如：`%SystemDrive%\Test\*`
 
-- 综合了上述所有情况。 <br/>例如：%SystemDrive%\Users\*\Documents\*(2)\Sub\
+- 综合了上述所有情况。 <br/>例如：`%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
 #### <a name="macos-devices-preview"></a>macOS 设备（预览）
 
@@ -158,7 +152,7 @@ ms.locfileid: "60907797"
 
 启用后，当不允许的应用尝试访问受 DLP 保护的敏感项目时，自动隔离将启动。 自动隔离会将敏感项目移动到管理员配置的文件夹，并且可以将占位符 **.txt** 文件保留在原始文件的位置。 可以将占位符文件中的文本配置为告知用户项目移动到的位置以及其他相关信息。  
 
-可以使用自动隔离来防止针对用户和管理员的无休止 DLP 通知链。 请参阅 [方案 4：避免使用自动隔离（预览版）从云同步应用循环 DLP 通知](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)。
+可以使用自动隔离来防止用户和管理员出现无休止的 DLP 通知链—请参阅 [方案 4: 使用自动隔离 (预览版) 避免从云同步应用的 DLP 通知循环](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)。
 
 ### <a name="unallowed-bluetooth-apps"></a>不允许的蓝牙应用
 
@@ -173,6 +167,9 @@ ms.locfileid: "60907797"
 你将添加由执行文件名标识的浏览器，这些浏览器将被阻止访问与强制 DLP 策略的条件匹配的文件，在该 DLP 策略中，“上载到云服务的限制”设置为“阻止”或“阻止覆盖”。 当这些浏览器被阻止访问文件时，最终用户将看到一则定制通知，要求他们通过 Microsoft Edge Chromium 打开文件。
 
 #### <a name="service-domains"></a>服务域
+
+> [!NOTE]
+> **服务域** 设置仅适用于使用安装了 [ Microsoft 合规性扩展](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) 的 Microsoft Edge 或 Google Chrome 上传的文件。
 
 你可以控制受你的策略保护的敏感文件是否可以从 Microsoft Edge 上传到特定服务域。
 
@@ -206,7 +203,7 @@ ms.locfileid: "60907797"
 |显示误报选项     |**这些文件中的信息不敏感**，或者可以输入自定义文本          |
 |选项 5    |**其他**，或者可以输入自定义文本         |
 
-<!--See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
+<!--See [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
 
 ### <a name="always-audit-file-activity-for-devices"></a>始终审核已载入设备的文件活动
 
@@ -238,7 +235,7 @@ ms.locfileid: "60907797"
 
 > [!IMPORTANT]
 > 这些终结点 DLP 方案不是创建和优化 DLP 策略的正式过程。 当你需要在常规情况下使用 DLP 策略，请参阅以下主题：
-
+>
 >- [了解数据丢失防护](dlp-learn-about-dlp.md)
 >- [开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)
 >- [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
@@ -268,7 +265,7 @@ ms.locfileid: "60907797"
 
 10. 新的 DLP 策略将显示在策略列表中。
 
-11. 检查活动资源管理器中是否有来自受监视终结点的数据。 设置设备的位置筛选器并添加策略，然后按策略名称筛选以查看此策略的影响。 如有需要，请参见[活动资源管理器（预览）入门](data-classification-activity-explorer.md)。
+11. 检查活动资源管理器中是否有来自受监视终结点的数据。 设置设备的位置筛选器并添加策略，然后按策略名称筛选以查看此策略的影响; 如果需要，请参阅 [活动资源管理器入门](data-classification-activity-explorer.md)。
 
 12. 尝试与组织外的人员共享包含将触发美国个人身份信息 (PII) 数据条件的内容的测试。 这应该会触发策略。
 
@@ -337,7 +334,7 @@ ms.locfileid: "60907797"
 
 - 要面向的 AAD 用户帐户和一台已将本地 OneDrive 文件夹与 OneDrive 云存储同步的已载入 Windows 10 计算机。
 - 目标 Windows 10 计算机上安装的 Microsoft Word
-- 敏感度标签配置和发布。请参阅[敏感度标签入门](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels)和[创建和配置敏感度标签及其策略](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)
+- 敏感度标签配置和发布—请参阅 [敏感度标签入门](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) 和 [创建和配置敏感度标签及其策略](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)。
 
 共有三个步骤。
 
@@ -361,20 +358,22 @@ ms.locfileid: "60907797"
 
 7. 输入要将原始敏感文件移动到本地计算机上文件夹的路径。例如：
    
-**用户名的"%homedrive%%%homepath%\Microsoft DLP\Quarantine"***Isaiah langer* 会将移动的项目放在 
+    **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** 的用户名 *Isaiah langer* 会将移动的项目放在名为以下的文件夹中:  
 
-*C：\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive* 文件夹，并将日期和时间戳追加到原始文件名。
+    *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive*
 
-> [!NOTE]
-> DLP 自动隔离将为每个不允许的应用创建文件的子文件夹。 因此，如果在不允许的应用列表中同时有 *Notepad* 和 *OneDrive* ，将为 **\OneDrive** 创建一个子文件夹，并为 **\Notepad** 创建另一个子文件夹。
+    并在原始文件名上附加一个日期和时间戳。
+    
+    > [!NOTE]
+    > DLP 自动隔离将为每个不允许的应用创建文件的子文件夹。 因此，如果在不允许的应用列表中同时有 *Notepad* 和 *OneDrive* ，将为 **\OneDrive** 创建一个子文件夹，并为 **\Notepad** 创建另一个子文件夹。
 
 8. 选择 **将文件替换为包含以下文本 的 .txt 文件**，并在占位符文件中输入所需的文本。例如，名为 *auto quar 1.docx* 的文件：
     
-**%%FileName%% 包含你的组织正在使用数据丢失防护 （DLP） 策略 %%PolicyName%% 保护的敏感信息，并已移动到隔离文件夹： %%QuarantinePath%%。** 
-
-将保留包含此消息的 .txt 文件
-
-*auto quar 1.docx 包含组织正在使用数据丢失防护 （DLP） 策略保护的敏感信息，并已移动到隔离文件夹：C：\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive\auto quar 1_20210728_151541.docx。*
+    > %%FileName%% 包含你的组织正在使用数据丢失防护 (DLP) 策略 %%PolicyName%% 保护的敏感信息，并已移动到隔离文件夹: %%QuarantinePath%%。
+    
+    将保留包含此消息的文本文件:
+    
+    > auto quar 1.docx 包含组织正在使用数据丢失防护 （DLP） 策略保护的敏感信息，并已移动到隔离文件夹：C：\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive\auto quar 1_20210728_151541.docx。
 
 9. 选择 **保存**
 
@@ -393,10 +392,10 @@ ms.locfileid: "60907797"
 6. 默认情况下，接受 **创建或自定义高级 DLP 规则**，然后选择 **下一步**。
 
 7. 使用以下值创建规则：
-    1. **名称** > *方案 4 自动隔离*
-    1. **条件** > **内容包含** > **敏感度标签** > **高度机密**
+    1. **名称** > *方案 4 自动隔离*。
+    1. **条件** > **内容包含** > **敏感度标签** > **高度机密**。
     1.  **操作** > **审核或限制 Windows 设备上的活动，** > **不允许的应用访问** > **阻止**。 对于此方案，请清除所有其他活动。
-    1. **打开****用户通知** > 
+    1. **打开****用户通知** > 。
     1. **终结点设备** >选择 **在活动** （如果尚未启用）时向用户显示策略提示通知。
     
 8. 选择 **保存**，然后 **下一步**。
@@ -405,8 +404,8 @@ ms.locfileid: "60907797"
 
 10. 查看设置，然后选择“**提交**”。
 
-> [!NOTE]
-> 至少需要一小时才能将新策略复制并应用到目标 Windows 10 计算机。
+    > [!NOTE]
+    > 至少需要一小时才能将新策略复制并应用到目标 Windows 10 计算机。
 
 11. 新的 DLP 策略将显示在策略列表中。
 
@@ -418,23 +417,23 @@ ms.locfileid: "60907797"
 
     *C：\auto-quarantine 源文件夹*
 
-3. 打开 Microsoft Word 并在自动隔离源文件夹中创建文件。 应用 **高度机密** 敏感度标签。 请参阅[在 Office 的文件和电子邮件中应用敏感度标签](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+3. 打开 Microsoft Word 并在自动隔离源文件夹中创建文件。 应用 **高机密** 敏感度标签; 请参阅 [Office 中文件和电子邮件的敏感度标签](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。
 
 4. 将刚创建的文件复制到 OneDrive 同步文件夹。 应显示用户通知词，告知你不允许执行该操作，并且该文件将被隔离。 例如，对于用户名 *Isaiah Langer*，以及标题为 *自动隔离文档 1.docx*，你将看到以下消息：
 
-![数据丢失防护用户通知弹出窗口，指出指定文件不允许 OneDrive 同步操作，并且文件将被隔离。](../media/auto-quarantine-user-notification-toast.png)
+    ![数据丢失防护用户通知弹出窗口，指出指定文件不允许 OneDrive 同步操作，并且文件将被隔离。](../media/auto-quarantine-user-notification-toast.png)
+    
+    消息将读取：
+    
+    > 不允许使用此应用打开自动隔离文档 1.docx。 文件将被隔离到‘C：\Users\IsaiahLanger\Microsoft DLP\OneDrive’
 
-消息将读取：
+5. 选择 **关闭**。
 
-"不允许使用此应用打开 autoquarantine doc 1.docx。 文件将被隔离到"C：\Users\IsaiahLanger\Microsoft DLP\OneDrive"
-
-5. 选择 **关闭**
-
-6. 打开占位符 .txt 文件。 将其命名为 **自动隔离文档1.docx_ *date_time*.txt**。 
+6. 打开占位符文本文件。 将其命名为 **自动隔离文档1.docx_ *date_time*.txt**。 
 
 7. 打开隔离文件夹并确认原始文件存在。
  
-8. 检查活动资源管理器中是否有来自受监视终结点的数据。 设置设备的位置筛选器并添加策略，然后按策略名称筛选以查看此策略的影响。 如有需要，请参见[活动资源管理器（预览）入门](data-classification-activity-explorer.md)。
+8. 检查活动资源管理器中是否有来自受监视终结点的数据。 设置设备的位置筛选器并添加策略，然后按策略名称筛选以查看此策略的影响; 如果需要，请参阅 [活动资源管理器入门](data-classification-activity-explorer.md)。
 
 9. 检查活动资源管理器中的事件。
 

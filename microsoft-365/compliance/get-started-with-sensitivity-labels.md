@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好部署敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 122831c83c7121d91b61c86828634db575208edd
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: ef03bd502b0951416ad9e8be27e6da7281f63811
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792432"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962671"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -44,8 +44,8 @@ ms.locfileid: "60792432"
 
 3. **发布标签。** 配置灵敏度标签后，使用标签策略发布它们。 确定应该应用标签的用户和组以及要使用的策略设置。 单个标签可重用，可将其定义一次，然后可将其包含在分配给不同用户的多个标签策略中。 例如，可以通过将标签策略分配给少数用户来试用灵敏度标签。 然后，当你准备在整个组织中推广标签时，可以为标签创建新的标签策略，这次指定所有用户。
 
-> [!TIP]
-> 你可能可以使用默认标签以及可以为你完成 1-3 步骤的默认标签策略。 详细信息请参阅 [Microsoft 信息保护的默认标签和策略](mip-easy-trials.md)。
+
+> 你可能可以自动创建默认标签，并且可以使用默认标签策略为你完成步骤 1-3。 详细信息请参阅 [Microsoft 信息保护的默认标签和策略](mip-easy-trials.md)。
 
 部署和应用敏感度标签的基本流程如下：
 

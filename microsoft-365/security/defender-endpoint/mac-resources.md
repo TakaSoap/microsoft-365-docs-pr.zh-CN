@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1df9efd022f58ef68ed06c8271e140b33dcb0f67
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3e37ac8876b28e55faca4282245a633a16cb06fa
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646917"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60971924"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的资源
 
@@ -110,16 +110,15 @@ ms.locfileid: "60646917"
 |配置|打开/关闭防病毒被动模式|`mdatp config passive-mode --value [enabled/disabled]`|
 |配置|配置按需扫描的并行度|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |配置|在安全智能更新后打开/关闭扫描|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
-|配置|仅按需扫描 (/关闭存档) |`mdatp config scan-archives --value [enabled/disabled]`|
 |诊断|更改日志级别|`mdatp log level set --level [error/warning/info/verbose]`|
 |诊断|生成诊断日志|`mdatp diagnostic create --path [directory]`|
 |运行状况|检查产品的运行状况|`mdatp health`|
 |运行状况|检查spefic产品属性|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
-|Protection|扫描路径|`mdatp scan custom --path [path] [--ignore-exclusions]`|
-|Protection|执行快速扫描|`mdatp scan quick`|
-|Protection|执行完全扫描|`mdatp scan full`|
-|Protection|取消正在进行的按需扫描|`mdatp scan cancel`|
-|Protection|请求安全智能更新|`mdatp definitions update`|
+|保护|扫描路径|`mdatp scan custom --path [path] [--ignore-exclusions]`|
+|保护|执行快速扫描|`mdatp scan quick`|
+|保护|执行完全扫描|`mdatp scan full`|
+|保护|取消正在进行的按需扫描|`mdatp scan cancel`|
+|保护|请求安全智能更新|`mdatp definitions update`|
 |EDR|Set/Remove 标记，仅支持 GROUP|`mdatp edr tag set --name GROUP --value [name]`|
 |EDR|从设备中删除组标记|`mdatp edr tag remove --tag-name [name]`|
 |EDR|添加组 ID|`mdatp edr group-ids --group-id [group]`|
@@ -160,4 +159,4 @@ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>适用于终结点的 Microsoft Defender 门户信息
 
-[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的新功能现已到达，在 Microsoft Defender for Endpoint 博客上，提供有关 Microsoft Defender for Endpoint 安全中心中预期内容的详细指南。
+[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的新功能现已到达，位于 Microsoft Defender for Endpoint 博客上，提供有关 Microsoft Defender for Endpoint 安全中心中预期内容的详细指南。

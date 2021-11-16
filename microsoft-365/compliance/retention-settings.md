@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: 911b80b13d9d091d0161ddce0fff4d1dbd7dbc0b
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 20167d9c1559403f1acbbfee5766ab09a4a1e3ef
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950505"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962971"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -213,7 +213,7 @@ ms.locfileid: "60950505"
 
 - 使用默认 **所有收件人** 配置但不支持 [特定包含或排除](#a-policy-with-specific-inclusions-or-exclusions) 时，静态策略作用域将包含非活动邮箱。 但是，如果在应用策略时包含或排除具有活动邮箱的收件人，并且该邮箱随后变为非活动状态，则将继续应用或排除保留设置。
 
-- 默认情况下，自适应策略作用域包括非活动邮箱。 可以使用高级查询生成器和 OPATH 属性 *IsInactiveMailbox* 控制此行为：
+- 默认情况下，自适应策略作用域在满足作用域查询时包括非活动邮箱。 可以使用高级查询生成器和 OPATH 属性 *IsInactiveMailbox* 排除它们：
     
     ```console
     (IsInactiveMailbox -eq "False")
