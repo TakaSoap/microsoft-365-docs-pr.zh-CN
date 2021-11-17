@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: 20167d9c1559403f1acbbfee5766ab09a4a1e3ef
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 28aa92e7374815404eaffb1abe908aa2fe60343f
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962971"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60972008"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -156,15 +156,26 @@ ms.locfileid: "60962971"
 
 要使用 PowerShell 运行查询:
 
-1. 使用全局管理员帐户，[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
+1. 使用具有 [相应 Exchange Online 管理员权限](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet) 的账户 [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 使用具有 *-Filter* 参数的 [Get-Recipient](/powershell/module/exchange/get-recipient) 或 [Get-Mailbox](/powershell/module/exchange/get-mailbox)，然后使用自适应作用域的 OPATH 查询(用双引号括起来)，从而指定 [OPATH 查询](/powershell/exchange/filter-properties)。 如果特性值包含空格，则使用单引号将这些值括起来。
-    
-    例如：
+2. 使用带 *-Filter* 参数的 [Get-Recipient](/powershell/module/exchange/get-recipient) 或 [Get-Mailbox](/powershell/module/exchange/get-mailbox) 和 [OPATH 查询](/powershell/exchange/filter-properties) 来获取用大括号括起来的自适应范围（`{`，`}`）。 如果特性值包含空格，则使用双引号或单引号将这些值括起来。 
+
+    如果正在验证 **用户** 范围，则在命令中包含 `-RecipientTypeDetails UserMailbox`；否则对于 **Microsoft 365 组范围**，则应包含 `-RecipientTypeDetails GroupMailbox`。
+
+    > [!TIP]
+    > 可以根据确定是使用 `Get-Mailbox` 还是 `Get-Recipient` 来进行验证，具体取决于你选择的 [OPATH 属性](/powershell/exchange/filter-properties) 在查询支持中使用了哪些 cmdlet。
+
+    例如，如果要验证 **用户** 范围，则可以使用：
     
     ````PowerShell
-    Get-Recipient -Filter "Department -eq 'Sales and Marketing'" -ResultSize unlimited
+    Get-Recipient -RecipientTypeDetails UserMailbox -Filter {Department -eq "Sales and Marketing"} -ResultSize Unlimited
     ````
+    
+    要验证 **Microsoft 365 组** 范围，则可以使用：
+    
+    ```PowerShell
+    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Sales and Marketing"} -ResultSize Unlimited
+    ```
 
 3. 验证输出是否与自适应作用域的预期用户或组匹配。 如果不匹配，请与 Azure AD 或 Exchange 的相关管理员共同检查查询和值。
  
@@ -182,7 +193,7 @@ ms.locfileid: "60962971"
 
 #### <a name="a-policy-that-applies-to-entire-locations"></a>应用于位置整体的策略
 
-除 Skype for Business 外，默认情况下，选定位置的所有实例会自动包含在策略中，无需将其指定为已包含。
+除 Skype for Business 以外，默认情况下，所选位置的全部实例自动包含在策略中，无需将其指定为已包含。
 
 例如，**Exchange 电子邮件** 位置的 **所有收件人**。 通过此默认设置，所有现有的用户邮箱都将包含在策略中，任何在应用策略后创建的新邮箱都将自动继承策略。
 
