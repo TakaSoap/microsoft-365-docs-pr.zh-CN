@@ -23,7 +23,7 @@ ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/16/2021
-ms.locfileid: "61041885"
+ms.locfileid: "61035966"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 

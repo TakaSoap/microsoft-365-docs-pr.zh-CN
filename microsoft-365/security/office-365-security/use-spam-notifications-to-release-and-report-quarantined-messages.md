@@ -18,7 +18,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解 EOP 邮箱中隔离邮件的最终用户Exchange Online Protection () 。
+description: 管理员可以了解 EOP 电子邮件中隔离邮件的最终用户Exchange Online Protection () 。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 3a996b3c6f65ed978dda3c5038b522e09b09dbfa
@@ -26,7 +26,7 @@ ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/16/2021
-ms.locfileid: "61041909"
+ms.locfileid: "61035990"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>使用隔离通知释放并报告隔离邮件
 
@@ -39,7 +39,7 @@ ms.locfileid: "61041909"
 
 无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。 有关详细信息，请参阅 [EOP 中的隔离邮件](quarantine-email-messages.md)。
 
-_隔离_ 策略根据邮件被隔离的原因来定义允许用户对隔离邮件 (支持的功能) 。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。 隔离策略还控制受影响的收件人是否 (共享邮箱 _) 定期收到_ 有关其隔离邮件的隔离通知。 隔离通知是所有受支持的保护功能的最终用户垃圾邮件通知的 (，而不仅是反垃圾邮件策略裁定) 。
+_隔离_ 策略根据邮件被隔离的原因来定义允许用户对隔离邮件 (支持的功能) 。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。 隔离策略还控制受影响的收件人 (包括共享邮箱 _) 是否定期_ 收到有关其隔离邮件的隔离通知。 隔离通知是所有受支持的保护功能的最终用户垃圾邮件通知 (，而不仅是反垃圾邮件策略裁定) 。
 
 隔离通知未在名为 AdminOnlyAccessPolicy 或 DefaultFullAccessPolicy 的内置隔离通知中打开。 如果组织具有隔离通知，隔离通知在名为 NotificationEnabledPolicy 的内置隔离 [策略中打开](quarantine-policies.md#full-access-permissions-and-quarantine-notifications)。 否则，若要在隔离策略中打开隔离通知，需要 [创建和配置新的隔离策略](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal)。
 
