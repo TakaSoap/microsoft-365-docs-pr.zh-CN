@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8372275655c9b4f75feaff8f2f8c8f2aace78d1e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: bf65634e38d7676eaef20386b3effa828aa46f4b
+ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60658690"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61041873"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -35,8 +35,11 @@ ms.locfileid: "60658690"
 - Microsoft Defender for Endpoint
 
 
+高级 `DeviceTvmSecureConfigurationAssessmentKB` 搜寻架构中的表包含威胁和漏洞管理检查的各种安全 [&的信息](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)。 它还包括风险信息、相关的行业基准以及适用的 MITRE ATT&CK 技术和技巧。
 
-高级搜寻架构中的 `DeviceTvmSecureConfigurationAssessmentKB` 表包含有关各种安全配置（例如设备是否已启用自动更新，可通过[威胁和漏洞管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)进行检查）的信息。 它还包括风险信息、相关的行业基准以及适用的 MITRE ATT&CK 技术和技巧。 使用此参考来构建从该表返回信息的查询。
+此表不返回事件或记录。 我们建议使用此表加入 [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) 表，以查看返回的评估中有关 `ConfigurationId` 安全配置的文本信息。
+
+例如，当您查询表时，您可能希望查看评估结果中提供 `DeviceTvmSecureConfigurationAssessment` `ConfigurationDescription` 的安全配置的 。 通过联接此表以使用 和 项目 ， `DeviceTvmSecureConfigurationAssessment` 可以看到 `ConfigurationId` 此信息 `ConfigurationDescription` 。
 
 有关高级搜寻架构中其他表的信息，请参阅[高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -52,6 +55,19 @@ ms.locfileid: "60658690"
 | `ConfigurationBenchmarks` | string | 推荐相同或类似配置的行业基准的列表 |
 | `Tags` | string | 表示用于标识或分类安全配置的各种属性的标签 |
 | `RemediationOptions` | string | 用于降低或解决任何关联风险的建议操作 |
+
+可以尝试此示例查询返回相关配置元数据以及表中具有不兼容防病毒配置的设备上 `DeviceTvmSecureConfigurationAssessment` 的信息：
+
+```kusto
+// Get information on devices with antivirus configurations issues
+DeviceTvmSecureConfigurationAssessment
+| where ConfigurationSubcategory == 'Antivirus' and IsApplicable == 1 and IsCompliant == 0
+| join kind=leftouter (
+    DeviceTvmSecureConfigurationAssessmentKB
+    | project ConfigurationId, ConfigurationName, ConfigurationDescription, RiskDescription, Tags, ConfigurationImpact
+) on ConfigurationId
+| project DeviceName, OSPlatform, ConfigurationId, ConfigurationName, ConfigurationCategory, ConfigurationSubcategory, ConfigurationDescription, RiskDescription, ConfigurationImpact, Tags
+```
 
 ## <a name="related-topics"></a>相关主题
 

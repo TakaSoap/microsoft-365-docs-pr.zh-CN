@@ -303,9 +303,9 @@
         - name: 使用 Microsoft 威胁专家协作
           items:
             - name: 概述
-              href: ../mtp/microsoft-threat-experts.md
+              href: microsoft-threat-experts.md
             - name: 配置和管理 Microsoft 威胁专家功能
-              href: ../mtp/configure-microsoft-threat-experts.md
+              href: configure-microsoft-threat-experts.md
     - name: 安全性操作指南
       items:
         - name: 概述
