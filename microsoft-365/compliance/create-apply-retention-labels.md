@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍了如何创建和发布保留标签，以便能够在应用中应用它们，从而保留所需内容，并删除不需要内容。
-ms.openlocfilehash: 8c8fac9d8cfa5ff0a8b2ad8d5c3e42f614a3932b
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3e0a516155d0b318e8f5d3b022b1546d9fe8e11b
+ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753101"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61036004"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>创建保留标签并将其应用到应用中
 
@@ -120,16 +120,13 @@ ms.locfileid: "60753101"
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>当保留标签可应用时
 
-如果你将保留标签发布到 SharePoint 或 OneDrive，这些标签通常会在 1 天内出现，以供最终用户选择。不过，最长可能需要 7 天才能显示。 
+对于 OneDrive 和 SharePoint 位置，通常会显示在一两天内发布的标签供用户选择。 然而，最多允许八天。
 
-如果你将保留标签发布到 Exchange，这些保留标签最长可能需要 7 天才能向最终用户显示，并且邮箱至少必须包含 10MB 数据。
+对于 Exchange 和 Microsoft 365 组位置，在 Outlook 中为用户显示已发布的保留标签最多可能需要 8 天，并且邮箱必须包含至少 10 MB 的数据。
 
-例如：
-  
-![手动标签生效时间关系图。](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
-  
+![已发布标签何时生效的关系图。](../media/retention-labels-published-timings.png)
 
-如果 7 天后未显示标签，请从合规中心的“**标签策略**”页面中检查标签策略的“**状态**”。 如果看到“**关闭(错误)**”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行PowerShell 命令 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) ，重新尝试策略分发：
+如果 8 天后未显示标签，请从合规中心的 **标签策略** 页面中检查标签策略的 **状态**。 如果看到“**关闭(错误)**”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行PowerShell 命令 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) ，重新尝试策略分发：
 
 1. [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
@@ -205,7 +202,7 @@ After the retention label is applied, you can view that retention label and what
 
 You can apply retention labels to Outlook folders as a default label that can be inherited by messages in that folder. Right-click the folder, select **Properties**, the **Policy** tab, and select the retention label you want to use as that folder's default retention label.
 
-When you use a a standard retention label as your default label for an Outlook folder:
+When you use a standard retention label as your default label for an Outlook folder:
   
 - All unlabeled items in the folder have this retention label applied.
 
