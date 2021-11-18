@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: c84add5ddc1b96d2a5ab3dfd713722522211bfa2
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 740c1c2a86b089f911fdbed7b8fce667de5e6f5c
+ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914580"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61036120"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -83,7 +83,7 @@ ms.locfileid: "60914580"
     - 如果你没有使用记录管理：
        - “**解决方案**” > “**信息治理**” > “**标签**”选项卡 > +“**创建标签**”
     
-    无法立即在导航窗格中看到解决方案？ 首先选择“**全部显示**”。 
+    没有立即在导航窗格中看到解决方案? 首先选择“**全部显示**”。 
 
 2. 按照配置中的提示操作。
     
@@ -364,11 +364,11 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保留标签需要多长时间才能生效
 
-基于敏感信息、关键字或可搜索属性或可训练分类器自动应用保留标签时，可能需要 7 天才能应用保留标签：
+根据敏感信息、关键字、可搜索属性或可训练分类器自动应用保留标签时，可能需要最多 8 天才能应用保留标签：
   
-![自动应用标签生效时间关系图。](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+![自动应用标签生效时间关系图。](../media/retention-labels-autoapply-timings.png)
 
-如果 7 天后未显示期望的标签，请从合规中心的 **标签策略** 页面中检查自动应用策略的 **状态**。 如果看到“**关闭(错误)**”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行 [RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重新尝试策略分发：
+如果 8 天后未显示期望的标签，请从合规中心的 **标签策略** 页面中检查自动应用策略的 **状态**。 如果看到“**关闭(错误)**”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行 [RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重新尝试策略分发：
 
 1. [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
