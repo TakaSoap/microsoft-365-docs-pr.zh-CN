@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 03f16c9a914ce0a5cd1193919a962307b97435b2
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 17fda6ff5deb8c5f16513a5b3a823bcf584f2373
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962983"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064531"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -44,6 +44,10 @@ ms.locfileid: "60962983"
   > ![DLP 设置。](../media/endpoint-dlp-1-using-dlp-settings.png)
 
 ### <a name="advanced-classification-scanning-and-protection"></a>高级分类扫描和保护
+
+## <a name="get-registered"></a>注册
+
+若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅[注册 Microsoft 365 macOS 支持](https://aka.ms/EndpointDLPIgnite21-Previews)。
 
 启用后，“**高级分类扫描和保护**”允许更高级的 Microsoft 365 基于云的数据分类服务，可以扫描项目、对项目进行分类，以及将结果返回到本地计算机。 这意味着你可以利用[准确数据匹配](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)分类、[命名实体（预览）](named-entities-learn.md#learn-about-named-entities-preview)和分类技术。
 

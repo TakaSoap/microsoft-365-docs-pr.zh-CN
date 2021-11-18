@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: a284ec91151028e30af414b85c4fff66658c23e9
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 387dc9074808c6ee463b2402e98358d77cf1d24b
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950589"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064047"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -582,6 +582,10 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
     - [存档邮箱](enable-archive-mailboxes.md) 的存档策略，可在指定的时间段后自动将电子邮件从用户的主邮箱移动到其存档邮箱。 存档策略（包含任何设置）可与适用于用户主邮箱和存档邮箱的 Microsoft 365 保留策略结合使用。
     
     - 管理员对邮箱中特定文件夹应用的保留策略。 Microsoft 365 保留策略适用于邮箱中的所有文件夹。 但是，管理员可以通过使用保留标签来配置不同的保留设置，用户可以将这些标签作为 [默认保留标签](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder) 应用于 Outlook 中的文件夹。
+
+- [诉讼保留](create-a-litigation-hold.md) (仅保留)
+    
+   尽管仍支持诉讼保留，但我们建议使用 Microsoft 365 保留或电子数据展示保留（[如果适用](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds)）。 
 
 **SharePoint 和 OneDrive 中的早期功能：**
 

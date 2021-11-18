@@ -18,12 +18,12 @@ ms.collection:
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC) 以验证从你的组织发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 242c0e7573c9f5c61ba23b8a99ed27793ea58019
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f80d4521f8d5faf3b126db93b9ad9d3397a12d73
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208945"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064291"
 ---
 # <a name="use-dmarc-to-validate-email"></a>使用 DMARC 验证电子邮件
 
@@ -87,10 +87,10 @@ S: .
 Microsoft 的 DMARC TXT 记录如下所示：
 
 ```console
-_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"
+_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.contoso.com; ruf=mailto:d@ruf.contoso.com; fo=1"
 ```
 
-Microsoft 将其 DMARC 报告发送至 [Agari](https://agari.com)（第三方）。 Agari 收集并分析 DMARC 报告。 请访问 [MISA 目录](https://www.microsoft.com/misapartnercatalog)，查看有哪些更多的第三方供应商提供 Microsoft 365 的 DMARC 报告。
+如需查看更多可提供 Microsoft 365 的 DMARC 报告的第三方供应商，请访问 [MISA 名录](https://www.microsoft.com/misapartnercatalog?IntegratedProducts=DMARCReportingforOffice365)。
 
 ## <a name="set-up-dmarc-for-inbound-mail"></a>为入站邮件设置 DMARC
 
@@ -181,13 +181,14 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 生成记录后，你需要在你的域注册机构中更新记录。
 
 ## <a name="dmarc-mail-public-preview-feature"></a>DMARC 邮件（公共预览功能）
-> [!CAUTION]
-> 邮件可能不会每天发送，并且在公共预览期间，报告本身可能会更改。  可以从消费者帐户（如 hotmail.com、outlook.com 或 live.com）使用 DMARC 聚合报告电子邮件。
 
-在此示例 DMARC TXT 记录 **_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"** 中，你可以看到 *rua* 地址，在这种情况下，该地址由第三方公司 Agari 处理。 此地址用于发送“聚合反馈”用于分析，用于生成报告。
+> [!CAUTION]
+> 邮件可能不会每天发送，并且在公共预览期间，报告本身可能会更改。 可以从消费者帐户（如 hotmail.com、outlook.com 或 live.com）使用 DMARC 聚合报告电子邮件。
+
+在此示例 DMARC TXT 记录中：`dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"`，可以看到由第三方公司 Agari 处理过的 *rua* 地址。 此地址用于发送“聚合反馈”用于分析，用于生成报告。
 
 > [!TIP]
-> 请访问 [MISA 目录](https://www.microsoft.com/misapartnercatalog)，查看更多可提供 Microsoft 365 的 DMARC 报告的第三方供应商。 有关 DMARC ‘rua’ 地址的详细信息，请参阅 [IETF.org 的‘基于域的邮件身份验证、报告和一致性 (DMARC)’](https://datatracker.ietf.org/doc/html/rfc7489)。
+> 如需查看更多可提供 Microsoft 365 的 DMARC 报告的第三方供应商，请访问 [MISA 名录](https://www.microsoft.com/misapartnercatalog?IntegratedProducts=DMARCReportingforOffice365)。 有关 DMARC“rua”地址的详细信息，请参阅 [RFC 74890](https://datatracker.ietf.org/doc/html/rfc7489)。
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>在 Microsoft 365 中实现 DMARC 的最佳做法
 

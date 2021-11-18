@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 关于 Microsoft 合规性管理器高级评估试用版。
-ms.openlocfilehash: 3ef0cbf795c434018d049998744fe76aa222fbe2
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ec7dec74e8f90b13bd68eb8a6e13917d9fe18b0d
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60676948"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063293"
 ---
 # <a name="about-the-free-trial-for-microsoft-compliance-manager-premium-assessments"></a>关于 Microsoft 合规性管理器高级评估的免费试用版
 
@@ -38,6 +38,9 @@ ms.locfileid: "60676948"
 此高级评估试用版适用于使用商业许可证下合规性管理器的组织。 有关 GCC DOD 的信息和试用选项，请参阅[使用合规性管理器模板](compliance-manager-templates.md)。
 
 完全访问合规性管理器功能可能取决于你的合规性管理器许可协议。 若要了解有关包含合规性管理器的免费合规性试用版的更多信息，请参阅[关于适用于 Microsoft 365 合规性试用版](compliance-easy-trials.md)。
+
+> [!NOTE]
+> 检查 Microsoft 365 管理中心设置，以方便注册试用版。 在 Microsoft 365 管理中心，转到设置 **“设置 > 组织设置 > 服务**”页面，然后选择“**用户所有的页面应用和服务**”。 然后选中此复选框，以允许用户代表你的组织开始试用。 大约花费两分钟完成设置后，可以返回并取消选中该框以禁用此设置。 还可以在不调整组织设置的情况下启动试用版，方法为转到“**计费 > 购买服务**”页面，并搜索“合规性管理器高级评估试用”。
 
 ## <a name="template-licensing"></a>模板许可
 
