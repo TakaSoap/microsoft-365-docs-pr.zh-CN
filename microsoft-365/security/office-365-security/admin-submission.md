@@ -15,15 +15,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76eb0f56ca5cc5f4554a03fa3e11bbc6f9f684e0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 42cac5be8879b7db49175800b9c2b297bc91c569
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705053"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064411"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用提交门户将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft
 
@@ -68,7 +69,7 @@ ms.locfileid: "60705053"
 
 ## <a name="report-suspicious-content-to-microsoft"></a>向 Microsoft 报告可疑内容
 
-1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到"电子邮件 **&协作** \> **提交"。**
 
 2. 在 **"提交"** 页上，确认已选择" **已提交进行分析"** 选项卡，然后单击 ![ "广告图标"。](../../media/m365-cc-sc-create-icon.png) **提交到 Microsoft 进行分析**。
 
@@ -77,12 +78,25 @@ ms.locfileid: "60705053"
    > [!NOTE]
    > 不允许数据离开环境的云中不可用文件和 URL 提交。 选择文件或 URL 的能力将灰出来。
 
+### <a name="notify-users-from-within-the-portal"></a>从门户中通知用户
+
+1. 在 Microsoft 365 Defender门户中，转到 位于 **的提交** 页面 <https://security.microsoft.com/reportsubmission> 。
+
+2. 选择 **"用户报告的邮件**"，然后选择要标记并通知的邮件。
+
+3. 选择"**标记为并通知**"下拉列表，然后选择"**未找到网络钓鱼** 或垃圾邮件的威胁 \> **"。**
+
+   > [!div class="mx-imgBorder"]
+   > ![从门户发送邮件。](../../media/admin-review-send-message-from-portal.png)
+
+报告的邮件将被标记为误报或漏报。 系统会自动从门户向报告邮件的用户发送电子邮件通知。
+
 ### <a name="submit-a-questionable-email-to-microsoft"></a>向 Microsoft 提交有问题的电子邮件
 
 1. 在 **"选择提交类型"** 框中，确认 **"电子邮件** "在下拉列表中已选中。
 
 2. 在 **"添加网络邮件 ID 或上载电子邮件文件** "部分，使用以下选项之一：
-   - 添加电子邮件网络邮件 **ID：** 这是一个 GUID 值，可用于邮件中的 **X-MS-Exchange-Organization-Network-Message-Id** 标头或隔离邮件中的 **X-MS-Office365-Filtering-Correlation-Id** 头。
+   - 添加电子邮件网络邮件 **ID：** 这是一个 GUID 值，可用于邮件中的 **X-MS-Exchange-Organization-Network-Message-Id** 头或隔离邮件中的 **X-MS-Office365-Filtering-Correlation-Id** 头。
    - **Upload电子邮件文件 (.msg 或 .eml) ：单击"浏览****文件"。** 在打开的对话框中，查找并选择 .eml 或 .msg 文件，然后单击"打开 **"。**
 
 3. 在 **"选择具有问题的** 收件人"框中，指定要针对其运行策略检查的收件人。 策略检查将确定电子邮件是否由于用户或组织策略而绕过扫描。
@@ -97,7 +111,7 @@ ms.locfileid: "60705053"
 5. 完成后，单击"提交 **"** 按钮。
 
 > [!div class="mx-imgBorder"]
-> ![新 URL 提交示例。](../../media/submission-flyout-email.png)
+> ![新的 URL 提交示例。](../../media/submission-flyout-email.png)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>向 Microsoft 发送可疑 URL
 
@@ -114,7 +128,7 @@ ms.locfileid: "60705053"
 > [!div class="mx-imgBorder"]
 > ![新建电子邮件提交示例。](../../media/submission-url-flyout.png)
 
-### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>向 Microsoft 提交可疑的电子邮件附件
+### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>将可疑的电子邮件附件提交给 Microsoft
 
 1. 在"**选择提交类型"框中****，从下拉列表** 中选择"文件"。
 
@@ -134,9 +148,9 @@ ms.locfileid: "60705053"
 
 ## <a name="view-admin-submissions-to-microsoft"></a>查看向 Microsoft 提交的管理员
 
-1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到"电子邮件 **&协作** \> **提交"。**
 
-2. 在 **"提交"** 页上，确认已选中" **已提交进行分析"** 选项卡。
+2. 在 **"提交"** 页上，确认已选择" **已提交进行分析"** 选项卡。
 
    - 可以通过单击可用列标题来对条目进行排序。 单击 **"自定义列** "最多可显示七列。 默认值标有星号（<sup>\*</sup>）：
      - **提交名称**<sup>\*</sup>
@@ -151,9 +165,9 @@ ms.locfileid: "60705053"
      - **传递/阻止原因**
      - **提交 ID**
      - **网络消息 ID/对象 ID**
-     - **Direction**
+     - **方向**
      - **发件人 IP**
-     - **BCL (批量兼容)**
+     - **BCL (批量)**
      - **目标**
      - **策略操作**
      - **提交者**
@@ -191,13 +205,13 @@ ms.locfileid: "60705053"
 - 当前触发结果，以查看邮件中所包含的 URL 或文件是否是恶意的。
 - 来自成绩者的反馈。
 
-如果找到了覆盖，则应该会在数分钟内完成重新扫描。 如果电子邮件身份验证没有问题，或者传递不受替代影响，则来自成绩认证人员的反馈可能需要一天的时间。
+如果找到了覆盖，则应该会在数分钟内完成重新扫描。 如果电子邮件身份验证没有问题，或者传递不受替代的影响，则来自成绩认证人员的反馈可能需要一天的时间。
 
 ## <a name="view-user-submissions-to-microsoft"></a>查看向 Microsoft 提交用户
 
-如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上查看报告的用户。 [](enable-the-report-phish-add-in.md) 
+如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上查看报告哪些用户。 [](enable-the-report-phish-add-in.md) 
 
-1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到"电子邮件 **&协作** \> **提交"。**
 
 2. 在" **提交"** 页上，选择" **用户报告的邮件"** 选项卡。
 

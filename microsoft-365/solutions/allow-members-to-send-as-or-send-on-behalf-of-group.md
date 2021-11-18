@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: 了解如何允许团队成员以组Microsoft 365或代表组发送电子邮件Microsoft 365发送电子邮件。
-ms.openlocfilehash: c06f8aa82f0c112e448e607d7fbc75f13e7d3b6c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54fe4691f4523934e1850ebbf0711efaa3eb6034
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174191"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064059"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允许成员以组的名义发送或代表组发送
 
@@ -31,7 +31,7 @@ ms.locfileid: "60174191"
 
 本文介绍全局管理员或Exchange管理员如何设置这些权限。
   
-例如，如果 Megan Bowen 是 **Training** Microsoft 365 组的一部分，并且具有该组的"发送为"权限，那么如果作为组发送电子邮件，则看起来好像培训组已发送电子邮件。 
+例如，如果 Megan Bowen 是 **Training** Microsoft 365 组的一部分，并且对该组具有"发送为"权限，那么如果她以组发送电子邮件，则看起来就像培训组已发送电子邮件一样。 
   
 "**代表发送**"权限允许用户代表组Microsoft 365发送电子邮件。 例如，如果 Alex Wilber 是 Marketing **Microsoft 365** 组的一部分，并且具有"代表发送"权限并作为组发送电子邮件，则电子邮件看起来好像是由 **Alex Wilber** 代表 Marketing 发送的。
 
@@ -39,7 +39,7 @@ ms.locfileid: "60174191"
 > 您可以为 **给定用户配置****"** 代理发送"或"代表发送"，但不能同时配置这两者。 如果同时配置这两者，它将默认 **为"发送为"。**
 
 > [!TIP]
-> 请参阅[从组](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)或代表Microsoft 365发送电子邮件，了解如何使用 Outlook Outlook Web 上发送来自组的电子邮件。
+> 请参阅[从组](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)或代表Microsoft 365发送电子邮件，了解如何使用 Outlook 和 Outlook Web 从组发送电子邮件。
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>允许成员以组发送电子邮件
 
@@ -79,7 +79,7 @@ ms.locfileid: "60174191"
 
 ## <a name="related-articles"></a>相关文章
 
-[协作治理规划分步规划](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[协作治理规划建议](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [创建协作管理计划](collaboration-governance-first.md)
 

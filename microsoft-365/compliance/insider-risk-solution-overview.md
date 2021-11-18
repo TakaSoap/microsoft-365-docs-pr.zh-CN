@@ -1,6 +1,6 @@
 ---
 title: 内部风险解决方案
-description: 了解如何通过组织中内部风险解决方案帮助最大程度地降低Microsoft 365。
+description: 了解如何在组织中通过内部风险解决方案帮助最大程度地降低Microsoft 365。
 keywords: Microsoft 365、内部风险、合规性
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 5028b2f577d5eb67a3e1316048878d1020a7e53c
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: d9608db071f347b16b36ca3e749012d8a9955ac0
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334670"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063468"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 内部风险解决方案
 
@@ -48,21 +48,15 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 ## <a name="microsoft-365-insider-risk-solutions"></a>Microsoft 365 内部风险解决方案
 
-若要帮助组织抵御内部风险，请使用Microsoft 365和特性。
+若要帮助组织抵御内部风险，请使用Microsoft 365功能。
 
 ### <a name="communication-compliance"></a>通信合规性
 
 通信合规性通过帮助您检测、捕获和操作组织中不适当的邮件，帮助最大程度地降低通信风险。 通信合规性在下列订阅中可用：
 
-- Microsoft 365 E5 订阅（付费或试用版本）
-- Microsoft 365 E3 订阅 + Microsoft 365 E5 合规加载项
-- Microsoft 365 E3 订阅 + Microsoft 365 E5 预览体验成员风险管理加载项
-- Microsoft 365 A5 订阅（付费或试用版本）
-- Microsoft 365 A3 订阅 + Microsoft 365 A5 合规加载项
-- Microsoft 365 A3 订阅 + Microsoft 365 A5 预览体验成员风险管理加载项
-- Microsoft 365 G5 订阅（付费或试用版本）
-- Microsoft 365 G5 订阅 + Microsoft 365 G5 合规加载项
-- Microsoft 365 G5 订阅 + Microsoft 365 G5 预览体验成员风险管理加载项
+- Microsoft 365 E5/A5/G5 订阅 (付费版或试用版) 
+- Microsoft 365 E3/A3/G5 订阅 + Microsoft 365 E5/A5/G5 合规性加载项
+- Microsoft 365 E3/A3/G5 订阅 + Microsoft 365 E5/A5/G5 内部风险管理加载项
 - Office 365 企业版 E5 订阅（付费或试用版本）
 - Office 365 A5 订阅（付费或试用版本）
 - Office 365 企业版 E3 订阅和 Office 365 高级合规版附加设备（不再适用于新订阅）
@@ -73,15 +67,9 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 以下订阅中提供内部风险管理：
 
-- Microsoft 365 E5 订阅（付费或试用版本）
-- Microsoft 365 E3 订阅 + Microsoft 365 E5 合规加载项
-- Microsoft 365 E3 订阅 + Microsoft 365 E5 预览体验成员风险管理加载项
-- Microsoft 365 A5 订阅（付费或试用版本）
-- Microsoft 365 A3 订阅 + Microsoft 365 A5 合规加载项
-- Microsoft 365 A3 订阅 + Microsoft 365 A5 预览体验成员风险管理加载项
-- Microsoft 365 G5 订阅（付费或试用版本）
-- Microsoft 365 G3 订阅 + Microsoft 365 G5 合规加载项
-- Microsoft 365 G3 订阅 + Microsoft 365 G5 预览体验成员风险管理加载项
+- Microsoft 365 E5/A5/G5 订阅 (付费版或试用版) 
+- Microsoft 365 E3/A3/G3 订阅 + Microsoft 365 E5/A5/G5 合规性加载项
+- Microsoft 365 E3/A3/G3 订阅 + Microsoft 365 E5/A5/G5 内部风险管理加载项
 - Office 365 E3 订阅 + 企业移动性和安全性 E3 + Microsoft 365 E5 合规加载项
 
 ### <a name="information-barriers"></a>信息屏障
@@ -90,15 +78,12 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 以下订阅中提供了信息屏障：
 
-- Microsoft 365 E5 订阅（付费或试用版本）
-- Microsoft 365 A5 订阅（付费或试用版本）
+- Microsoft 365 E5/A5 订阅 (付费或试用版) 
 - Office 365 企业版 E5 订阅（付费或试用版本）
 - Office 365 A5 订阅（付费或试用版本）
 - Office 365 高级合规版加载项 (不再可用于新订阅) 
-- Microsoft 365 E3 订阅 + Microsoft 365 E5 合规加载项
-- Microsoft 365 E3 订阅 + Microsoft 365 E5 预览体验成员风险管理加载项
-- Microsoft 365 A3 订阅 + Microsoft 365 A5 合规加载项
-- Microsoft 365 A3 订阅 + Microsoft 365 A5 预览体验成员风险管理加载项
+- Microsoft 365 E3/A3 订阅 + Microsoft 365 E5/A5 合规性加载项
+- Microsoft 365 E3/A3 订阅 + Microsoft 365 E5/A5 内部风险管理加载项
 
 ### <a name="privileged-access-management"></a>特权访问管理
 

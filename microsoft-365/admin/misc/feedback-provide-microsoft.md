@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 description: 了解您可以向 Microsoft 提供有关 Microsoft 产品和服务的反馈的不同方法。
-ms.openlocfilehash: 6e28c41edeffa636b10b4366ee3a98a96ddcd2ef
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 0aba87571f4b4fddb38f9cd5cae526d62d2e2c64
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588495"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064267"
 ---
 # <a name="learn-about-how-to-provide-feedback-to-microsoft"></a>了解如何向 Microsoft 提供反馈
 
@@ -23,7 +23,7 @@ Microsoft 重视你的反馈，我们每天都会查看来自所有平台上不�
 
 ## <a name="how-to-give-great-feedback"></a>如何提供出色的反馈
 
-无论你是直接在应用程序或网站中、通过反馈门户还是[Windows 反馈中心](https://aka.ms/WIPFeedbackHub)中提供反馈，都可以通过一些简单的步骤尽可能强地提供反馈。
+无论你是直接在应用程序或网站中、通过反馈门户还是[Windows 反馈中心](https://aka.ms/WIPFeedbackHub)中提供反馈，都可以采取一些简单的步骤来尽可能强地提供反馈。
 
 - 如果你使用的是社区反馈体验，Microsoft 将优先处理大量用户遇到或请求的反馈。  通过搜索浏览现有反馈以查看社区中的某人是否已经提到你的反馈，你可以查看想要提供的反馈是否已经存在。  你可能具有与其他人相同的反馈，并且你可以将语音添加到现有反馈，而不是创建一个副本。  如果你找不到类似你的反馈，那么是时候添加新的反馈了
 - 向 Microsoft 提供反馈时，一次保留特定于单个主题的评论非常重要。  产品团队持续阅读反馈，当我们看到来自不同用户的类似反馈时，我们会尝试将其组合在一起，以查看对用户群的全部影响。  一次提供有关单个主题的反馈可帮助我们将类似的反馈链接在一起。
@@ -48,7 +48,6 @@ Microsoft 重视你的反馈，我们每天都会查看来自所有平台上不�
 :::image type="content" source="../../media/sending-feedback-community-portal.png" alt-text="Screenshot： Selection of Microsoft products you can send feedback on":::
 
 选择论坛后，你可以查看与该产品相关的所有反馈，并且你可以对匹配你的反馈进行评论或进行评论。  如果看不到类似于自己的反馈，可以通过门户本身提交新反馈。
-添加屏幕截图。
 
 ### <a name="sending-feedback-from-windows-feedback-hub"></a>从用户发送Windows 反馈中心
 
@@ -64,7 +63,7 @@ Microsoft 重视你的反馈，我们每天都会查看来自所有平台上不�
 
 ## <a name="how-microsoft-uses-feedback"></a>Microsoft 如何使用反馈
 
-将反馈发送给 Microsoft 后，会将反馈传送给可审阅的相关产品团队。 我们将查看新反馈，以便评估其他用户是否报告了类似反馈，并尝试将这些类似的反馈报告组合在一起，以发现影响最大的问题并帮助确定未来工作的优先级。
+将反馈发送给 Microsoft 后，会将反馈传送给可以审阅的相关产品团队。 我们查看新反馈，这些反馈将评估其他用户是否报告了类似的反馈，并尝试将这些类似的反馈报告组合在一起，以发现影响最大的问题并帮助确定未来工作的优先级。
 通过Windows 反馈中心和反馈 Web 门户，Microsoft 能够更新你的反馈状态并做出回复。  我们承诺不回复每个反馈报告，但我们会尝试评估所有反馈，以帮助确定产品更改的优先级。
 
 ### <a name="what-responses-can-i-expect"></a>我期望得到哪些响应？
@@ -104,7 +103,7 @@ Microsoft 重视你的反馈，我们每天都会查看来自所有平台上不�
 当产品团队对所提供的反馈进行了改进后，你的反馈将进入此状态。 改进可以完全或部分解决你的反馈，但好消息是，你改进了产品。
 
 **好消息！我们修复了这种情况**  你的反馈帮助我们改进产品！
-当产品团队已实施并发布或发布具有已报告问题的修补程序的新内部版本时，你的反馈将移动到此状态。 通常，Microsoft 响应将包含有关如何通过修补程序访问更新的相关 (一) 。
+当产品团队已实施并发布或发布具有已报告问题的修补程序的新内部版本时，你的反馈将移动到此状态。 通常，Microsoft 响应将包含有关如何通过修补程序访问更新的相关 (es) 。
 
 **现在不**  我们目前不计划进行此更改，但感谢提供反馈。
 谢谢：感谢你提供反馈。

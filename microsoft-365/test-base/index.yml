@@ -11,12 +11,12 @@ metadata:
   author: v-zhifufeng
   ms.author: v-zhifufeng
   ms.date: 03/29/2021
-  ms.openlocfilehash: 3833e05eea8f8598d228e261734fedb1b0cf2647
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 372143027462a20cecf4c7edc7e0eee31a480ba0
+  ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59195948"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064471"
 landingContent:
 - title: 关于测试基础
   linkLists:
@@ -32,13 +32,13 @@ landingContent:
     links:
     - text: additional-resources
       url: faq.md
-- title: 入门
+- title: 开始行动
   linkLists:
   - linkListType: quickstart
     links:
     - text: 创建测试基本帐户
       url: createAccount.md
-    - text: Upload应用程序
+    - text: 上载包
       url: uploadApplication.md
     - text: Upload二进制文件
       url: binaries.md
@@ -58,5 +58,5 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: 常见问题解答
+    - text: 常见问题
       url: faq.md

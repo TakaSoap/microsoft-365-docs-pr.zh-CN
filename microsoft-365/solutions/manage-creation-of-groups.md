@@ -18,18 +18,18 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: 了解如何控制哪些用户可以创建Microsoft 365组。
-ms.openlocfilehash: b78ff54c8ff475f96f10592a95a3f83255665727
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: cea1529071cce92e2b6fad74d4946d1e4c7f3594
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217158"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064315"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理可创建 Microsoft 365 组的人员
 
 默认情况下，所有用户都可以创建Microsoft 365组。 这是推荐的方法，因为它允许用户无需 IT 协助即可开始协作。
 
-如果您的企业要求您限制可以创建组Microsoft 365，您可以将组创建限制为特定组Microsoft 365安全组的成员。
+如果您的企业要求您限制可以创建组Microsoft 365，您可以将组创建限制为特定组或安全Microsoft 365的成员。
 
 如果你担心用户创建不符合业务标准的团队或组，请考虑要求用户完成培训课程，然后将他们添加到允许的用户组。
 
@@ -47,26 +47,26 @@ ms.locfileid: "60217158"
 本文中的步骤不会阻止某些角色的成员创建组。 Office 365全局管理员可以通过 Microsoft 365 管理中心、Planner、Exchange 和 SharePoint Online 创建组。 其他角色可以通过有限的方式创建组，如下所示。
 
 - Exchange管理员：Exchange管理中心，Azure AD
-- 合作伙伴第 1 层支持：Microsoft 365 管理中心、Exchange管理中心、Azure AD
+- 合作伙伴层 1 支持：Microsoft 365 管理中心、Exchange管理中心、Azure AD
 - 合作伙伴第 2 层支持：Microsoft 365 管理中心、Exchange管理中心、Azure AD
 - 目录编写器：Azure AD
 - SharePoint管理员：SharePoint管理中心，Azure AD
 - Teams服务管理员：Teams管理中心，Azure AD
-- 用户管理员：Microsoft 365 管理中心、Azure AD
+- 用户管理员：Microsoft 365 管理中心Azure AD
 
-如果你是其中一个角色的成员，你可以为受限Microsoft 365组，然后将该用户分配为组的所有者。
+如果您是其中一个角色的成员，您可以为受限Microsoft 365组，然后将该用户分配为组的所有者。
 
 ## <a name="licensing-requirements"></a>许可要求
 
-若要管理创建组的用户，以下人员Azure AD Premium分配给他们的 Azure AD 基本 EDU 许可证：
+若要管理创建组的用户，以下人员需要Azure AD Premium许可证Azure AD分配的基本 EDU 许可证：
 
 - 配置这些组创建设置的管理员
 - 允许创建组的组的成员
 
 > [!NOTE]
-> 请参阅[分配或删除](/azure/active-directory/fundamentals/license-users-groups)Azure Active Directory 门户中的许可证，了解有关如何分配 Azure 许可证的更多详细信息。
+> 若要[详细了解如何](/azure/active-directory/fundamentals/license-users-groups)分配 Azure 许可证，请参阅Azure Active Directory门户中的分配或删除许可证。
 
-以下人员不需要分配Azure AD Premium Azure AD 基本 EDU 许可证：
+以下人员不需要分配Azure AD Premium或Azure AD基本 EDU 许可证：
 
 - 作为组Microsoft 365且无法创建其他组的人。
 
@@ -96,7 +96,7 @@ ms.locfileid: "60217158"
 
 - 如果已安装预览版，请运行 `Install-Module AzureADPreview`，确保它是此模块的最新版本。
 
-将下面的脚本复制到文本编辑器（如 记事本 或[Windows PowerShell ISE 中](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)）。
+将以下脚本复制到文本编辑器（如 记事本 或[Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)中）。
 
 将 *\<GroupName\>* 替换为您创建的组的名称。 例如：
 
@@ -153,7 +153,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 更改可能需要 30 分钟或更多时间才能生效。 可以通过执行以下操作来验证新设置：
 
-1. 使用Microsoft 365创建组的用户的用户帐户登录。 即，他们不是你创建的组的成员或管理员。
+1. 使用Microsoft 365无法创建组的用户的用户帐户登录。 即，他们不是你创建的组的成员或管理员。
 
 2. 选择 **Planner** 磁贴。
 
@@ -168,7 +168,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 ## <a name="related-topics"></a>相关主题
 
-[协作治理规划分步规划](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[协作治理规划建议](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [创建协作管理计划](collaboration-governance-first.md)
 

@@ -21,12 +21,12 @@ ms.custom:
 description: 管理员可以了解 EOP 电子邮件中隔离邮件的最终用户Exchange Online Protection () 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a996b3c6f65ed978dda3c5038b522e09b09dbfa
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.openlocfilehash: 1d3c7296cff3f3f4f2d10a2c4358a889ac428880
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61035990"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064071"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>使用隔离通知释放并报告隔离邮件
 
@@ -42,6 +42,8 @@ ms.locfileid: "61035990"
 _隔离_ 策略根据邮件被隔离的原因来定义允许用户对隔离邮件 (支持的功能) 。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。 隔离策略还控制受影响的收件人 (包括共享邮箱 _) 是否定期_ 收到有关其隔离邮件的隔离通知。 隔离通知是所有受支持的保护功能的最终用户垃圾邮件通知 (，而不仅是反垃圾邮件策略裁定) 。
 
 隔离通知未在名为 AdminOnlyAccessPolicy 或 DefaultFullAccessPolicy 的内置隔离通知中打开。 如果组织具有隔离通知，隔离通知在名为 NotificationEnabledPolicy 的内置隔离 [策略中打开](quarantine-policies.md#full-access-permissions-and-quarantine-notifications)。 否则，若要在隔离策略中打开隔离通知，需要 [创建和配置新的隔离策略](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal)。
+
+此外，为了直接阻止发件人隔离通知，需要为用户启用远程 Powershell。 有关说明，请参阅[启用或禁用对 Exchange Online PowerShell 的访问权限](/powershell/exchange/disable-access-to-exchange-online-powershell)。
 
 管理员还可使用隔离策略中的全局设置来自定义发件人的 显示名称、不同语言的免责声明文本以及隔离通知中使用的公司徽标。 有关说明，请参阅 [配置全局隔离通知设置](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal)。
 

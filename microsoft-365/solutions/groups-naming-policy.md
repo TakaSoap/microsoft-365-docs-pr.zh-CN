@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: 了解如何为组创建命名Microsoft 365策略。
-ms.openlocfilehash: 9fb75feb255ee6d58313f4cfaf3486c4a8cd63b4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: acc521dd5be1dcf630b4801eeb914c45e765e00f
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213405"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064507"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365组命名策略
 
@@ -36,13 +36,13 @@ ms.locfileid: "60213405"
 
 组命名策略包含以下功能：
 
-- **前缀后缀命名策略**：可以使用前缀或后缀来定义组的命名约定 (例如："US \_ My Group \_ Engineering") 。 前缀/后缀可以是固定字符串或用户属性（如 [Department]），这些属性将基于创建组的用户进行替换。
+- **前缀后缀命名策略**：可以使用前缀或后缀来定义组命名约定 (例如："US \_ My Group \_ Engineering") 。 前缀/后缀可以是固定字符串或用户属性（如 [Department]），这些属性将基于创建组的用户进行替换。
 
 - **自定义阻止的词语**：可以上载一组特定于组织、将在用户创建的组中被阻止的被阻止的单词。  (例如："CEO、Payroll、HR") 。
 
 ## <a name="licensing-requirements"></a>许可要求
 
-对 Microsoft 365 组使用 Azure AD 命名策略需要你拥有但不一定为每个唯一用户分配 Azure Active Directory Premium P1 许可证或 Azure AD Basic EDU 许可证 (包括来宾) ，它是一个或多个 Microsoft 365 组的成员。
+对 Microsoft 365 组使用 Azure AD 命名策略需要你拥有但不一定为每个唯一用户分配 Azure Active Directory Premium P1 许可证或 Azure AD 基本 EDU 许可证 (包括作为一个或多个成员来宾) Microsoft 365组。
 
 创建组命名策略的管理员也要求这样做。
 
@@ -79,7 +79,7 @@ ms.locfileid: "60213405"
 - 前缀和后缀可以包含在组名和组别名中支持的特殊字符。 当前缀和后缀包含组别名中不允许的特殊字符时，它们仅应用于组名称。 因此，在这种情况下，应用于组名的前缀和后缀将不同于应用于组别名的前缀和后缀。
 
   > [!NOTE]
-  > 组名称 (.) 或连字符 (-) ，但名称开头或结尾处除外。 在 (_) 名称中的任意位置（包括名称的开头或结尾处）都允许使用下划线字符。
+  > 组名称 (.) 或连字符 (-) ，但名称开头或结尾处除外。 在 (_) 名称中的任何位置（包括名称的开头或结尾处）都允许使用下划线字符。
 
 - 如果要在连接的Yammer Office 365，请避免在命名策略中使用下列字符 \# ：@、、、、、。 \[ \] \<, and \> 如果这些字符在命名策略中，Yammer用户将无法创建组。
 
@@ -91,7 +91,7 @@ ms.locfileid: "60213405"
 
 ## <a name="custom-blocked-words"></a>自定义阻止的词语
 
-可以在组名和别名中输入将阻止的被阻止单词的逗号分隔列表。
+您可以输入一个以逗号分隔的阻止词列表，这些单词将在组名称和别名中被阻止。
 
 不执行子字符串搜索;具体而言，需要用户输入的名称和自定义阻止的词语之间的完全匹配才能触发失败。
 
@@ -132,7 +132,7 @@ ms.locfileid: "60213405"
 
 ## <a name="related-topics"></a>相关主题
 
-[协作治理规划分步规划](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[协作治理规划建议](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [创建协作管理计划](collaboration-governance-first.md)
 

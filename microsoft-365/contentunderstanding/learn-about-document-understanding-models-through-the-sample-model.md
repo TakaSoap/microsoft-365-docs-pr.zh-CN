@@ -1,5 +1,5 @@
 ---
-title: 通过示例模型了解文档理解模型
+title: 了解通过 Microsoft SharePoint Syntex 中的示例模型了解SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 通过示例模型了解文档理解模型。
-ms.openlocfilehash: f17f768d5c56b036662ea717f394129c28935bcb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 51eb92a2b6a511dd5b1340c9c435f63dd56299e5
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172103"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064423"
 ---
-# <a name="learn-about-document-understanding-models-through-a-sample-model"></a>通过示例模型了解文档理解模型
+# <a name="learn-about-document-understanding-models-through-the-sample-model-in-microsoft-sharepoint-syntex"></a>了解通过 Microsoft SharePoint Syntex 中的示例模型了解SharePoint Syntex
 
-Microsoft SharePoint Syntex 为你提供了可用于检查的示例模型，让你更好地了解如何创建自己的模型。 示例模型还使你能够检查模型组件，如其分类器、提取程序和说明。 还可以使用示例文件来训练模型。
+SharePoint Syntex提供了可用于检查的示例模型，从而更好地了解如何创建自己的模型。 示例模型还使你能够检查模型组件，如其分类器、提取程序和说明。 还可以使用示例文件来训练模型。
 
 ## <a name="import-the-sample-model"></a>导入示例模型
 
@@ -42,6 +42,9 @@ Microsoft SharePoint Syntex 为你提供了可用于检查的示例模型，让�
 - 添加其他提取程序。 例如，添加一个提取 *折扣费用* 的提取程序。
 - 将该模型应用于文档库，并上传某些培训文件，以了解该模型如何分类文件并从中提取数据。
 
+## <a name="get-sample-models"></a>获取示例模型
+
+可以访问[文档SharePoint Syntex示例](https://github.com/pnp/syntex-samples)存储库，其中包含演示文档理解模型的不同使用模式的社区示例。 此存储库中的示例包含文档了解模型文件和用于训练模型的文件。 导入后，可以使用这些模型处理文件以及查看和编辑分类器与提取器。
 
 ## <a name="see-also"></a>另请参阅
 [创建分类器](create-a-classifier.md)

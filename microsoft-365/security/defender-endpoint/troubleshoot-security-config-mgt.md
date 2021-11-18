@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 817eb57df116de18e8add5d18eac0ea32f08da7f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 4540336aeea4283f1b5adcab3164e0405ae075c7
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60676961"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064435"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>解决与 Microsoft Defender for Endpoint 的安全管理相关的载入问题 
 
@@ -33,7 +33,7 @@ ms.locfileid: "60676961"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender for Endpoint 的安全管理是一项功能，适用于不由 Microsoft Endpoint Manager（Microsoft Intune 或 Microsoft Endpoint Configuration Manager）管理的设备，用于接收 Microsoft Defender 的安全配置直接从Endpoint Manager。
-有关 Microsoft Defender for Endpoint 的安全管理详细信息，请参阅使用安全管理管理 Microsoft [Defender for Endpoint Microsoft Endpoint Manager。](/mem/intune/protect/mde-security-integration)
+有关适用于终结点的 Microsoft Defender 安全管理详细信息，请参阅在设备上使用 Microsoft Endpoint Manager 管理[Microsoft Defender for Endpoint。](/mem/intune/protect/mde-security-integration)
 
 有关适用于终结点的 Microsoft Defender 的安全管理载入说明，请参阅 [Microsoft Defender for Endpoint Security Configuration Management](security-config-management.md)
 
@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint 的安全管理是一项功能，适用于不由
   - https://enterpriseregistration.windows.net
   - https://login.microsoftonline.com
   - https://device.login.microsoftonline.com
-- Azure AD连接配置为同步计算机对象。 默认情况下，计算机 US Azure AD连接同步作用域。 如果计算机对象属于特定组织单位 (组织单位) ，请配置要同步到Azure AD 连接。 若要了解有关如何使用计算机对象同步计算机对象Azure AD 连接，请参阅基于组织 [单位的筛选](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering)。
+- Azure AD连接配置为同步计算机对象。 默认情况下，计算机 US Azure AD连接同步作用域。 如果计算机对象属于特定组织单位 (US) ，请配置要同步到Azure AD 连接。 若要了解有关如何使用计算机对象同步计算机对象Azure AD 连接，请参阅基于组织 [单位的筛选](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering)。
 
 >[!IMPORTANT]
 >Azure AD连接不会同步Windows Server 2012 R2 计算机对象。 如果你需要在 Microsoft Defender for Endpoint Azure AD安全管理中注册它们，则需要自定义 Azure AD 连接同步规则，以在同步作用域中包括这些计算机对象。 请参阅[有关在计算机加入规则中应用计算机加入Azure Active Directory 连接。]()
@@ -68,7 +68,7 @@ Microsoft Defender for Endpoint 的安全管理是一项功能，适用于不由
 >|     未加入 AADJ 或混合 Azure Active Directory (HAADJ) + 已加入域    |     设备为 HAADJ'd    |
 >|     未加入 AADJ 或 HAADJ + 未加入域    |     设备为 AADJ'd    |
 >
->其中 AADJ Azure Active Directory Joined，HAADJ 表示 Hybrid Azure Active Directory Joined。
+>其中 AADJ 表示 joined Azure Active Directory HAADJ 表示 Hybrid Azure Active Directory Joined。
 
 
 ## <a name="troubleshoot-errors-from-the-microsoft-defender-for-endpoint-portal"></a>排查 Microsoft Defender 终结点门户中的错误
@@ -77,7 +77,7 @@ Microsoft Defender for Endpoint 的安全管理是一项功能，适用于不由
 通过 Microsoft Defender for Endpoint 门户，安全管理员可以对适用于终结点载入的 Microsoft Defender 安全管理进行故障排除。 
 
 
-在 **终结点>设备清单** 中，"托管者"列已添加到按管理通道筛选 (例如 MEM) 。
+在 **Endpoints > Device inventory** 中，"托管者"列已添加到按管理通道筛选 (例如 MEM) 。
 
 
 :::image type="content" alt-text="设备清单页的图像" source="./images/device-inventory-mde-error.png":::
@@ -108,59 +108,54 @@ MDE 客户端分析器 (输出文件Results.htm) 可提供关键疑难解答信�
 >[!TIP]
 >确保报告的详细结果部分不包含任何"错误"，并确保查看所有"警告"消息。
 
-例如，作为安全管理载入流程的一部分，Microsoft Defender for Endpoint Tenant 中的 Azure Active Directory 租户 ID 需要与报告的设备配置管理详细信息部分中出现的 SCP 租户ID 相匹配。 如果相关，报告输出将建议执行此验证。
+例如，作为安全管理载入流程的一部分，Microsoft Defender for Endpoint Tenant 中的 Azure Active Directory 租户 ID 必须与报告的设备配置管理详细信息部分中出现的 SCP 租户 ID相匹配。 如果相关，报告输出将建议执行此验证。
 
 ![详细结果的图像](images/detailed-results.png)
 
 
 ## <a name="general-troubleshooting"></a>一般疑难解答 
 
-如果你无法识别 AAD 或 MEM 中已载入的设备，并且注册期间未收到错误，检查注册表项可以提供其他 `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` 疑难解答信息。  
+如果你无法识别 AAD 或 MEM 中的已载入设备，并且注册期间未收到错误，检查注册表项可以提供其他 `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` 疑难解答信息。  
 
 :::image type="content" alt-text="注册状态的图像。" source="images/enrollment-status.png":::
 
 下表列出了为了处理错误而尝试/检查的错误和说明。 请注意，错误列表不完整，并且基于客户过去遇到的典型/常见错误： 
 
 
-
-| 错误代码  |管理员操作                                                                                                                                                                                                                                                                                                  |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ``10``          |错误指示操作系统无法执行混合联接。 使用[混合Azure Active Directory设备疑](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)难解答作为解决操作系统级别混合联接故障的指南。                                                            |
-| ``13-14``       |查看[通过 Microsoft Defender Microsoft Endpoint Manager](/microsoft-365/security/defender-endpoint/security-config-management#onboard-devices)终结点载入 Windows 设备的先决条件，以确保终结点完成且混合 Azure Active Directory 加入可用。                   |
-| ``15``          |确保 MDE AAD租户的租户 ID 与域的 SCP 条目中的租户 ID 相匹配。                                                                                                                                                                                                                     |
-| ``16``          |查看[Azure Active Directory文档](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point)。 与组织的身份团队合作，以部署 HAADJ 所需的配置方法。                                                                     |
-| ``17``          |查看 Active Directory 环境的设备注册配置，并确定它使用的是 Enterprise DRS 还是 Azure DRS。                                                                                                                                                                                 |
-| ``18``          |查看Azure AD 连接配置"，并确保配置为管理的设备在同步范围内。                                                                                                                                                                                              |
-| ``25``          |查看网络拓扑并确保域控制器可用于完成混合加入请求。                                                                                                                                                                                                                       |
-| ``26-32``       |查看完成联合加入所需声明的文档。 手动验证你的环境的终结点是否可用。                                                                                                                                                                                |
-| ``36``          |查看网络拓扑并确保 LDAP API 可用于完成混合加入请求。                                                                                                                                                                                                                                  |
-| ``37``          |对于加入域的计算机，请验证计算机是否位于域中同步Azure AD 连接。                                                                                                                                                                                                                    |
-| ``38``          |工作站一侧的 DNS 设置无效：Active directory 要求您使用域 DNS，以正常 (，而不是路由器的地址) 。                                                                                                                                                                                |
-| ``40``          |确保在发生错误的设备上正确设置/同步时钟。                                                                                                                          |
-| ``41``          |重试以确认此错误是一致的。 如果重试没有帮助，请使用已加入Azure Active Directory[](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)混合设备疑难解答作为解决操作系统级别混合联接故障的指南。                                                    |
-| ``42``          |错误指示操作系统无法执行混合联接。 使用[混合Azure Active Directory设备疑](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)难解答作为解决操作系统级别混合联接故障的指南。                                                            |
+| 错误代码                    | 注册状态                     | 管理员操作                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-------------------------------|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ``5-9``,``11-12``, ``26-33``  |常规错误                          |设备已成功载入到 Microsoft Defender for Endpoint。 但是，安全配置管理流中出现错误。 这可能是由于设备未满足 [Microsoft Defender 终结点管理频道 的先决条件](security-config-management.md)。 在 [设备上运行](https://aka.ms/BetaMDEAnalyzer) 客户端分析器可帮助确定问题的根本原因。 如果这不起作用，请联系支持人员。   |
+| ``13-14``,``20``,``24``,``25``|连接问题                     |设备已成功载入到 Microsoft Defender for Endpoint。 但是，安全配置管理流中出现错误，这可能是由于连接问题。 验证Azure Active Directory[和Microsoft Endpoint Manager终结点是否](security-config-management.md#connectivity-requirements)在你的防火墙中打开。                                                                                       |
+| ``10``,``42``                 |常规混合加入失败            |设备已成功载入到 Microsoft Defender for Endpoint。 但是，安全配置管理流出错，操作系统无法执行混合加入。 使用[混合Azure Active Directory设备疑](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)难解答操作系统级别混合联接故障。                                                                                                                               |
+| ``15``                        |租户不匹配                        |设备已成功载入到 Microsoft Defender for Endpoint。 但是，由于 Microsoft Defender for Endpoint 租户 ID 与 Azure Active Directory 租户 ID 不匹配，因此安全配置管理流中出现错误。请确保 Defender for Endpoint 租户中的 Azure Active Directory 租户 ID 与域的 SCP 条目中的租户 ID 相匹配。有关详细信息，请参阅[解决与 Microsoft Defender for Endpoint 的安全管理相关的载入问题](troubleshoot-security-config-mgt.md)。|
+| ``16``,``17``                 |混合错误 - 服务连接点|设备已成功载入到 Microsoft Defender for Endpoint。 但是，服务连接点 (SCP) 记录未正确配置，并且设备无法加入 Azure AD。 这可能是由于 SCP 配置为加入 DRS Enterprise的原因。 确保 SCP 记录指向 AAD SCP 按照最佳做法进行配置。 有关详细信息，请参阅配置 [服务连接点](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point)。                                                      |
+| ``18``                        |证书错误                      |设备已成功载入到 Microsoft Defender for Endpoint。 但是，由于设备证书错误，安全配置管理流中出现错误。 设备证书属于其他租户。 验证创建受信任证书配置文件时 [是否遵循最佳做法](/mem/intune/protect/certificates-trusted-root#create-trusted-certificate-profiles)。                                                                                                    |
+| ``36``                        |LDAP API 错误                         |设备已成功载入到 Microsoft Defender for Endpoint。 但是，安全配置管理流中出现错误。 验证网络拓扑并确保 LDAP API 可用于完成混合加入请求。     |
+| ``37``                        |本地同步问题                  |设备已成功载入到 Microsoft Defender for Endpoint。 但是，安全配置管理流中出现错误。 请稍后重试。 如果不起作用，请参阅疑难解答[对象同步与Azure AD 连接同步](/azure/active-directory/hybrid/tshoot-connect-objectsync)。|
+| ``38``,``41``                 |DNS 错误                              |设备已成功载入到 Microsoft Defender for Endpoint。 但是，由于 DNS 错误，安全配置管理流中出现错误。 检查设备的 Internet 连接和/或 DNS 设置。 无效的 DNS 设置可能位于工作站的一侧。 Active directory 要求使用域 DNS，以正常 (，而不是路由器的地址) 。 有关详细信息，请参阅 Troubleshoot [onboarding issues related to Security Management for Microsoft Defender for Endpoint](troubleshoot-security-config-mgt.md)。             |
+| ``40``                        |时钟同步问题                       |设备已成功载入到 Microsoft Defender for Endpoint。 但是，安全配置管理流中出现错误。 验证时钟已正确设置，并且已同步发生错误的设备上。    |
 
 
 ## <a name="azure-active-directory-runtime-troubleshooting"></a>Azure Active Directory运行时疑难解答 
 
-### <a name="azure-active-directory-runtime"></a>Azure Active Directory运行时  
+### <a name="azure-active-directory-runtime"></a>Azure Active Directory 运行时  
 
-AADRT Azure Active Directory运行时 (的主要) 是收集调试跟踪。 Azure Active DirectoryWindows上的运行时使用 ID 为 **bd67e65c-9cc2-51d8-7399-0bb9899e75c1** 的 ETW 提供程序。 需要捕获 ETW 跟踪，同时重现故障 (例如，如果发生联接失败，则需要在一段时间内启用跟踪，包括调用 AADRT API 以执行) 。  
+使用 AADRT Azure Active Directory运行时 (的主要) 是收集调试跟踪。 Azure Active Directory运行时Windows ID 为 **bd67e65c-9cc2-51d8-7399-0bb9899e75c1** 的 ETW 提供程序。 需要捕获 ETW 跟踪，并重现故障 (例如，如果发生联接失败，则需要在一段时间内启用跟踪，包括调用 AADRT API 以执行加入) 。  
 
 有关 AADRT 日志中的典型错误以及如何读取错误，请参阅下文： 
 
 ![事件属性的图像](images/event-properties.png)
 
-根据消息信息，在大多数情况下，可以了解遇到的错误、哪些 Win32 API 返回了错误 (（如果适用) ）、使用了哪些 URL (（如果适用) ）以及遇到哪些 AAD 运行时 API 错误。 
+根据消息信息，在大多数情况下，可以了解遇到的错误、哪些 Win32 API 返回了错误 (（如果适用) ）、使用了哪些 URL (（如果适用) ）以及遇到了哪些 AAD 运行时 API 错误。 
   
  
 
 ## <a name="instructions-for-applying-computer-join-rule-in-aad-connect"></a>有关在计算机加入规则中应用计算机加入AAD 连接 
 
-对于加入 R2 域Windows Server 2012计算机上的 Microsoft Defender for Endpoint 的安全管理，需要更新 Azure AD 连接 sync rule "In from AD-Computer Join"。 这可以通过克隆和修改规则实现，这将禁用原始"从 AD - 计算机加入"规则。 Azure AD 连接默认提供此体验，用于更改内置规则。
+对于加入 R2 域Windows Server 2012上的 Microsoft Defender 终结点安全管理，需要更新 Azure AD 连接 同步规则"In from AD-Computer Join"。 这可以通过克隆和修改规则实现，这将禁用原始"从 AD - 计算机加入"规则。 Azure AD 连接为更改内置规则提供了此体验。
 
 >[!NOTE]
->需要将这些更改应用于运行AAD 连接服务器。 如果已部署多个 AAD 连接，则必须将这些更改应用于所有实例。 
+>需要将这些更改应用于运行AAD 连接服务器。 如果部署了多个 AAD 连接，则必须将这些更改应用于所有实例。 
 
 1. 从"开始"菜单打开同步规则编辑器应用程序。 在规则列表中，从 AD - 计算机加入 **中查找** 名为 In 的规则。 **记下此规则的"优先级"列中的值。** 
 
@@ -170,7 +165,7 @@ AADRT Azure Active Directory运行时 (的主要) 是收集调试跟踪。 Azure
 
    ![编辑保留规则确认的图像](images/8854440d6180a5580efda24110551c68.png)
 
-3. 将显示 **"编辑入站同步规则** "窗口。 更新规则说明，注意Windows Server 2012R2 将使用此规则进行同步。 除"优先级"值外，保留所有其他选项不变。 为"优先级"输入一个值，该值高于规则列表中的 (规则列表中的值) 。  
+3. 将显示 **"编辑入站同步规则** "窗口。 更新规则说明以请注意，Windows Server 2012R2 将使用此规则进行同步。 除"优先级"值外，保留所有其他选项不变。 为"优先级"输入一个值，该值高于规则列表中 (规则列表中的值) 。  
 
    ![确认图像](images/ee0f29162bc3f2fbe666c22f14614c45.png)
 

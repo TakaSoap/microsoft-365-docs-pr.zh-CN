@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置允许。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 98ae7b53ce793809ae93cf32d574d979e5b7c6e5
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: c8bf6f37d837d46bfdcca98296c8ca09747276cc
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335558"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064207"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中添加允许
 
@@ -32,10 +32,9 @@ ms.locfileid: "60335558"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-管理员无法添加允许直接进入租户允许/阻止列表。 相反，使用管理员提交过程提交被阻止的邮件，以便相应的 URL、文件和/或发件人将添加到租户允许/阻止列表。 在大多数情况下，如果邮件被确定为错误阻止的误报，只要为系统提供自然允许的时间，允许就会保留一段时间。
+管理员无法添加允许直接进入租户允许/阻止列表。 相反，使用管理员提交过程提交被阻止的邮件，以便相应的 URL、文件和/或发件人将添加到租户允许/阻止列表。 如果文件、URL 或发件人的阻止未发生，将不会创建允许。 在大多数情况下，如果邮件被确定为错误阻止的误报，只要为系统提供自然允许的时间，允许就会保留一段时间。
 
 > [!IMPORTANT]
->
 > 由于 Microsoft 为您管理允许，因此将删除不需要或视为错误允许的发件人、URL 或文件。 这是为了保护你的环境并防止允许的错误配置。 如果您不一致，可能需要支持案例来帮助确定邮件仍被视为错误的原因。
 
 ## <a name="add-allows-using-the-submissions-portal"></a>添加允许使用提交门户 
@@ -48,7 +47,7 @@ ms.locfileid: "60335558"
 
 3. 通过 **添加网络邮件** ID 或上载电子邮件文件，使用"提交到 Microsoft 进行审阅"飞出以提交邮件。 
 
-4. 在" **选择提交** 到 Microsoft 的原因"部分中，选择"不应被阻止 (**误报) "**。 
+4. 在"**选择提交** 到 Microsoft 的原因"部分中，选择"不应已被阻止 (**误报) "。** 
 
 5. 启用" **允许类似此选项的邮件** "。 
 

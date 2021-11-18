@@ -1,5 +1,5 @@
 ---
-title: 用于组Microsoft 365、Teams和SharePoint的合规性选项
+title: 组、Microsoft 365和Teams的合规性SharePoint选项
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -15,15 +15,15 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: 了解用于组、Microsoft 365和Teams协作SharePoint选项。
-ms.openlocfilehash: acc32d6cff18e9535a29eeec773a5034480a3595
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解组、Microsoft 365和Teams的合规性SharePoint选项。
+ms.openlocfilehash: ab840ea5652a13087ecc8d505391bac152ca1052
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207411"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063365"
 ---
-# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>用于组Microsoft 365、Teams和SharePoint的合规性选项
+# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>组、Microsoft 365和Teams的合规性SharePoint选项
 
 Microsoft 365提供了一整套工具来在用户协作时保持合规性。 查看这些选项，并考虑它们如何映射到业务需求、数据的敏感度以及用户需要协作的用户范围。
 
@@ -55,7 +55,7 @@ Microsoft 365提供了一整套工具来在用户协作时保持合规性。 查
 
 - [了解 SharePoint 和 OneDrive 的保留策略](../compliance/retention-policies-sharepoint.md)
 
-聊天和频道Teams保留策略。 当聊天和频道消息存储在Exchange中时，它们不受Exchange策略的影响。 必须将保留策略设置为应用于Teams聊天和Teams消息。 
+聊天和Teams消息的保留策略。 当聊天和频道消息存储在Exchange中时，它们不受Exchange策略的影响。 必须将保留策略设置为应用于Teams聊天和Teams消息。 
 
 即使删除了用户帐户，用户聊天也无限期保留。 如果您不想无限期保留此数据，请考虑使用保留策略在指定的时间后删除用户聊天，或将此删除操作包括在用户删除过程中。
 
@@ -73,7 +73,7 @@ Microsoft 365提供了一整套工具来在用户协作时保持合规性。 查
 
 ## <a name="information-classification"></a>信息分类
 
-可以使用敏感度标签来管理来宾访问、组和团队隐私，以及由非托管设备对组和团队的访问。 通过应用标签，这些设置将自动根据标签设置指定进行配置。
+可以使用敏感度标签来管理来宾访问、组和团队隐私，以及组和团队的不受管理设备的访问。 通过应用标签，这些设置将自动根据标签设置指定进行配置。
 
 - [使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)
 
@@ -94,7 +94,7 @@ Microsoft 365提供了一整套工具来在用户协作时保持合规性。 查
 
 ## <a name="information-protection"></a>信息保护
 
-DLP 策略可以防止在用户、用户和用户SharePoint Exchange敏感信息Teams。 可以创建策略来指定要执行 (操作，例如) 一组规则阻止访问。
+DLP 策略可以防止在用户、用户和SharePoint Exchange意外Teams。 可以创建策略来指定要执行 (操作，例如) 一组规则阻止访问。
 
 - [了解数据丢失防护](../compliance/dlp-learn-about-dlp.md)
 
@@ -118,7 +118,7 @@ dlp in Teams can help protect sensitive information in Teams chat and channel me
 
 ## <a name="data-residency"></a>数据驻留
 
-通过Microsoft 365多地理位置，可以在已选择满足数据驻留要求的地理位置中预配和存储静止数据。 在多地理位置环境中，Microsoft 365 租户包含一个中心位置 (其中最初预配 Microsoft 365 订阅的) 以及一个或多个附属位置，你可以存储数据。
+通过Microsoft 365多地理位置，可以在已选择满足数据驻留要求的地理位置中预配和存储静止数据。 在多地理位置环境中，Microsoft 365 租户包含一个中心位置 (其中最初预配了 Microsoft 365 订阅的) 以及一个或多个附属位置，你可以存储数据。
 
 - [Microsoft 365 多地理位置](/microsoft-365/enterprise/microsoft-365-multi-geo)
 
@@ -126,7 +126,7 @@ dlp in Teams can help protect sensitive information in Teams chat and channel me
 
 ## <a name="related-topics"></a>相关主题
 
-[协作治理规划分步规划](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[协作治理规划建议](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [创建协作管理计划](collaboration-governance-first.md)
 
