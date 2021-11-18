@@ -22,7 +22,7 @@ ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/16/2021
-ms.locfileid: "61036120"
+ms.locfileid: "61041923"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
