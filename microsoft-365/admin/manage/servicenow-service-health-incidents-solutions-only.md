@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow 的作用域认证应用程序安装和配置指南。
-ms.openlocfilehash: 7b1ebccb60500d0f1b2c6513be55d8f04628b6ac
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: b2676c05a4ee7767b40356852d32398f2d2c04a3
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754217"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071422"
 ---
 # <a name="microsoft-365-support-integration-for-service-health-incidents-and-recommended-solutions-only"></a>Microsoft 365服务运行状况事件和推荐解决方案集成
 
@@ -30,13 +30,13 @@ ms.locfileid: "60754217"
 
 ## <a name="prerequisites-service-health-incidents-and-recommended-solutions-only"></a>服务 (事件的先决条件和仅建议的解决方案) 
 
-这些先决条件是设置支持集成Microsoft 365 **所必需的**。
+这些必备组件是设置支持集成Microsoft 365 **所必需的**。
 
-1. \[AAD管理员 \] 在AAD租户下为出站Microsoft 365应用程序。
+1. \[AAD管理员 \]在AAD租户下创建出站Microsoft 365应用程序。
 
-    1. 使用你的租户凭据Microsoft 365 Azure 门户，在"应用注册"页上[创建新应用程序](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)。
+    1. 使用你的租户凭据Microsoft 365 Azure 门户，在应用注册[页面上创建新应用程序](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)。
 
-    2. Select Accounts in this organizational directory only **({Microsoft-365-tenant-name} only – Single tenant)**， and then select **Register**.
+    2. Select **Accounts in this organizational directory only ({Microsoft-365-tenant-name} only – Single tenant)**， and then select **Register**.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image3.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image3.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
@@ -48,7 +48,7 @@ ms.locfileid: "60754217"
 
 1. \[ServiceNow 管理员 在 ServiceNow 中设置出站 \] OAuth 提供程序。
 
-    如果范围未设置为"全局"，请转到"设置 **&gt; &gt; 应用程序"并** 切换到"**全局"。** 
+    如果作用域未设置为"全局"，请转到 **"设置 &gt; &gt; 应用程序"并** 切换到"**全局"。** 
 
     :::image type="content" source="../../media/ServiceNow-guide/Servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/Servicenow-guide-image5.png" alt-text="自动生成的图形用户界面、文本、应用程序、聊天或短信说明":::
 
@@ -74,7 +74,7 @@ ms.locfileid: "60754217"
 
 若要设置 ServiceNow 实例与服务支持之间的集成，需要Microsoft 365这些步骤。
 
-1. \[ServiceNow 管理员 \] 将作用域 **切换到支持Microsoft 365集成。**
+1. \[ServiceNow 管理员 \] 将作用域切换 **为Microsoft 365集成。**
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="图形用户界面，自动生成表说明":::
 
@@ -115,7 +115,7 @@ ms.locfileid: "60754217"
 
     选择这些设置，然后选择"下一 **步"：**
 
-    - 具有 Microsoft 365 的 SSO：检查 ServiceNow 实例是否设置为 SSO Microsoft 365租户，否则取消选中它。
+    - 具有 Microsoft 365 的 SSO：检查 ServiceNow 实例是否设置为具有租户Microsoft 365 SSO，否则取消选中它。
 
     - Microsoft 365管理员电子邮件：创建Microsoft 365案例时联系的管理员Microsoft 365电子邮件。
 
@@ -123,7 +123,7 @@ ms.locfileid: "60754217"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="自动生成的图形用户界面、文本、应用程序说明":::
 
-1. \[Microsoft 365租户管理员 \] 完成集成。
+1. \[Microsoft 365租户管理员 \]完成集成。
 
     验证以下信息是否正确。 此时不要 **选择"下** 一步"。
 
@@ -137,7 +137,7 @@ ms.locfileid: "60754217"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
-1. 在" **存储库"** 选项卡上 **，选择"添加** 存储库"以创建具有以下设置的新存储库：
+1. 在" **存储库"** 选项卡上，选择" **新建** 存储库"，然后使用下列设置更新它：
 
     - 存储库：步骤 6 – 完成集成中的存储库 **ID** 值。
 
@@ -145,7 +145,7 @@ ms.locfileid: "60754217"
 
     - 身份验证类型：选择 **"AAD身份验证"。**
 
-    - 客户端 ID：一个随机 (示例：忽略) 。
+    - 客户端 ID：随机值 (示例：忽略) 。
 
     - Rest username： A random value (example： ignored) .
 
@@ -168,4 +168,4 @@ ms.locfileid: "60754217"
     - x \_ mioms \_ m365 \_ assis.administrator
 
     > [!NOTE]
-    > 角色为 x \_ mioms \_ m365 \_ assis.insights 的用户可以看到服务运行状况事件、 \_ 推荐解决方案。 角色为 x \_ mioms \_ m365 assis.administrator 的用户也可以打开一个Microsoft 365 \_ 案例。 仅Insights，不应为任何人分配角色 x \_ mioms \_ m365 \_ assis.administrator。
+    > 角色为 x \_ mioms \_ m365 \_ assis.insights 的用户可以看到服务运行状况事件、 \_ 推荐解决方案。 角色为 x \_ mioms \_ m365 assis.administrator 的用户也可以打开一个Microsoft 365 \_ 案例。 对于Insights，不应为任何人分配角色 x \_ mioms \_ m365 \_ assis.administrator。

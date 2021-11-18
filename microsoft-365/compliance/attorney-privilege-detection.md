@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 在审查案例内容时，使用律师-客户特权检测模型使用基于机器学习的特权Advanced eDiscovery检测。
-ms.openlocfilehash: 4e15f0366da8d860a0e907b82ed4668d7e4d7af4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 31520faef70f58fb2ac623645a50f2fa30336077
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179459"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071472"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>在服务中设置律师-客户Advanced eDiscovery
 
@@ -43,7 +43,7 @@ ms.locfileid: "60179459"
 
 - **IsPrivilege：** 如果 **"AttorneyClientPrivilegeScore"** 的值超过阈值或文档具有律师参与者，则此属性设置为 **true;** 否则，该值设置为 **false**。
 
-这些属性 (及其对应的值) 添加到审阅集内文档的文件元数据中，如以下屏幕截图所示：
+这些属性 (相应的值) 添加到审阅集内文档的文件元数据中，如以下屏幕截图所示：
 
 ![文件元数据中显示的律师-客户特权属性。](../media/AeDAttorneyClientPrivilegeMetadata.png)
 
@@ -57,31 +57,31 @@ ms.locfileid: "60179459"
 
 作为您组织中电子数据展示管理员 (电子数据展示管理员角色组) 中的电子数据展示管理员子组的成员必须在 Advanced eDiscovery 事例中提供模型。
 
-1. In the Microsoft 365 合规中心， go to **eDiscovery > Advanced**.
+1. In the Microsoft 365 合规中心， go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764)， and then click **Advanced eDiscovery settings**.
 
-2. 在Advanced eDiscovery **主页** 上的"设置"磁贴中，单击"配置 **全局分析设置"。**
+   ![选择Advanced eDiscovery设置](..\media\HistoricalVersions1.png)
 
-   ![选择"配置实验性功能"。](../media/AeDExperimentalFeatures.png)
+2. 在 **"设置"** 页上，选择"**分析**"选项卡，然后将"**律师-客户特权检测"** 开关切换为"打开"。
 
-3. 在"**分析设置"** 选项卡上，选择"**管理律师-客户特权设置"。**
+   ![单击切换以打开律师-客户特权检测](..\media\TurnOnAttorneyClientPrivilegeDetection.png)
 
-4. 在 **律师-客户特权** 弹出页面上，使用开关打开该功能，然后选择 **保存**。
+3. 单击“保存”以保存所做的更改。
 
 ### <a name="step-2-upload-a-list-of-attorneys-optional"></a>步骤 2：Upload可选律师 (列表) 
 
-若要充分利用律师-客户特权检测模型，并使用之前所述的"律师或潜在特权"检测的结果，我们建议您为在组织工作的律师和律师上载电子邮件地址列表。 
+若要充分利用律师-客户特权检测模型，并使用之前所述的"律师或潜在特权"检测的结果，我们建议您为在组织工作的律师和律师上载电子邮件地址列表。
 
 要上载律师-客户特权检测模型使用律师列表，请执行以下操作：
 
 1. 创建 .csv 文件（不带标题行），在单独的行上为每个合适的人员添加电子邮件地址。将此文件保存到本地计算机。
 
-2. 在Advanced eDiscovery **主页** 上的"设置"磁贴中，选择"配置实验性功能"，然后选择"管理 **律师-客户特权设置"。**
+2. 在 **"Advanced eDiscovery设置"** 页上，选择 **"分析"** 选项卡。
 
    将显示 **"律师-客户特权** "页，并且" **律师-客户特权检测** "切换处于打开状态。
 
    ![律师-客户特权飞出页。](../media/AeDUploadAttorneyList.png)
 
-3. 选择 **"** 浏览"，然后找到并选择.csv 1 中创建的配置文件。
+3. 选择 **"选择** 文件"，然后查找并选择.csv 1 中创建的配置文件。
 
 4. 选择 **"保存** "上载律师列表。
 
@@ -91,10 +91,10 @@ ms.locfileid: "60179459"
 
 ### <a name="step-1-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>步骤 1：使用律师-客户特权检测模型创建智能标记组
 
-在审核过程中查看律师-客户特权检测结果的主要方法之一是使用智能标记组。 智能标记组指示律师-客户特权检测的结果，并在智能标记组中的标记旁边在线显示结果。 这样，您可以在文档审阅期间快速识别潜在的特权文档。 此外，您还可以使用智能标记组的标记来标记具有特权或非特权的文档。 有关智能标记的信息，请参阅在智能标记[Advanced eDiscovery。](smart-tags.md)
+在审核过程中查看律师-客户特权检测结果的主要方法之一是使用智能标记组。 智能标记组指示律师-客户特权检测的结果，并在智能标记组中的标记旁边在线显示结果。 这样，您可以在文档审阅期间快速识别潜在的特权文档。 此外，您还可以使用智能标记组的标记来标记具有特权或非特权的文档。 有关智能标记详细信息，请参阅在智能标记[Advanced eDiscovery。](smart-tags.md)
 
 1. 在包含步骤 1 中分析的文档的审阅集内，选择"管理 **审阅** 集"，然后选择"**管理标记"。**
- 
+
 2. 在 **"标记**"下，选择"添加组"旁边的下拉 **组件**，然后选择"**添加智能标记组"。**
 
    ![选择"添加智能标记组"。](../media/AeDCreateSmartTag.png)
@@ -109,15 +109,15 @@ ms.locfileid: "60179459"
 
 ### <a name="step-2-analyze-a-review-set"></a>步骤 2：分析审阅集
 
-分析审阅集内的文档时，律师-客户特权检测模型也将运行，并且 (如何工作 [？](#how-does-it-work) 中所述的相应属性将添加到审阅集内的所有文档。 有关分析审阅集内的数据详细信息，请参阅在审阅集内分析[Advanced eDiscovery。](analyzing-data-in-review-set.md)
+在分析审阅集内的文档时，律师-客户特权检测模型也将运行，并且还会向审阅集的每一个文档添加 (如如何工作 [？) 中所述的相应属性](#how-does-it-work) 。 有关分析审阅集内的数据详细信息，请参阅分析审阅集内[Advanced eDiscovery。](analyzing-data-in-review-set.md)
 
 ### <a name="step-3-use-the-smart-tag-group-for-review-of-privileged-content"></a>步骤 3：使用智能标记组查看特权内容
 
 分析审阅集并设置智能标记后，下一步是查看文档。 如果模型已确定文档可能具有特权，则标记面板中的相应智能标记将指示律师-客户特权检测生成的以下结果：
 
-- 如果文档的内容在本质上可能是合法的，则标签"法律内容"显示在相应的智能标记 (在这种情况下，该智能标记是默认的 **"正**") 。
+- 如果文档的内容在本质上可能是合法的，则标签"法律内容"显示在相应的智能标记 (在这种情况下，该智能标记是默认的 **"正值**") 。
 
-- 如果文档中有一个在组织律师列表中找到的参与者，则标签"律师"显示在相应的智能标记旁边 (此智能标记也是默认的 **"** 正") 。
+- 如果文档中有一个在组织律师列表中找到的参与者，则标签"律师"显示在相应的智能标记旁边 (该智能标记也是默认的 **"** 正") 。
 
 - 如果文档的内容在本质上可能是合法的，并且律师列表中有参与者，则同时显示法律内容和律师标签。   
 

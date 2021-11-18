@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解合规性管理程序中的新增功能以及将提供哪些功能。 阅读更新后的评估、新的评估模板、新操作等。
-ms.openlocfilehash: 6233cd278e3ca5c445361ae4f50c33d8d00c6b94
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c8e17caca15386199725627042c9d382641bfca2
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701595"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072256"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft 合规性管理器中的新增功能
 
@@ -30,12 +30,25 @@ ms.locfileid: "60701595"
 
 ## <a name="november-2021"></a>2021 年 11 月
 
+### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>数据保护基线模板的零信任集成
+
+零信任是跨数字资产所有层实现安全性的主动集成方法，可明确并持续验证每个事务，声明最小特权，并依赖于智能、高级检测和实时威胁响应。 合规性管理器的数据保护基线模板（包括所有用户）现在集成了 57 个新控件和 36 个针对零信任的新操作，这些新操作在下列控件系列中对齐：
+
+- 零信任应用程序
+- 零信任应用开发指南
+- 零信任终结点
+- 零信任数据
+- 零信任标识
+- 零信任基础结构
+- 零信任网络
+- 零信任可见性、自动化和业务流程
+
 ### <a name="new-assessment-templates"></a>新的评估模板
 
 现在预览版中提供了以下评估模板：
 
 - 适用于 Azure (Preview 的 ISO 27001：2013) 
-- Dynamics 365 预览版 ISO 27001：2013 (预览) 
+- 适用于 Dynamics 365 预览版 (ISO 27001：2013) 
 - FedRAMP Moderate for Dynamics 365 (Preview) 
 - FedRAMP Moderate for Azure (Preview) 
 - FedRAMP High for Azure (Preview) 
@@ -64,7 +77,7 @@ ms.locfileid: "60701595"
 
 ## <a name="july-2021"></a>2021 年 7 月
 
-我们添加了根据模板的新通用版本为Microsoft 365其他产品创建评估的功能。 若要了解更多信息，请 [从使用评估模板开始](compliance-manager-templates.md)。
+我们添加了根据模板的新通用版本为除 Microsoft 365 产品创建评估的功能。 若要了解更多信息，请 [从使用评估模板开始](compliance-manager-templates.md)。
 
 ## <a name="may-2021"></a>2021 年 5 月
 
@@ -73,7 +86,7 @@ ms.locfileid: "60701595"
 我们发布了 75 个新的评估模板，其中包括：
 - 澳大利亚隐私法案
 - CIS Microsoft 365 Foundation 级别 1 和 2
-- 德国 - 金融机构和 FINANCIALT (IT 的监管) 
+- 德国 - 金融机构 IT 部门监管要求 (使用（) 
 - Sarbanes-Oxley法案
 - 南非 - 促进信息访问法案
 

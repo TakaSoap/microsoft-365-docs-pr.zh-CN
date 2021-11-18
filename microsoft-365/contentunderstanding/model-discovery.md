@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: 了解如何使经过训练的模型可供他人使用，以及如何在 Microsoft SharePoint Syntex 中应用其他经过训练的模型。
-ms.openlocfilehash: 528071efaf06c68d42b34f6d7e509a1839f6ca08
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解如何将经过训练的模型提供给其他人，以及如何在 Microsoft SharePoint Syntex 中应用其他经过训练SharePoint Syntex。
+ms.openlocfilehash: 9645b669c6fd419e8866d415cb5d2b0da56ab0e2
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200997"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072433"
 ---
 # <a name="publish-and-discover-models-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中发布和发现模型
 
@@ -39,7 +39,7 @@ ms.locfileid: "60200997"
 
 3. 此时，**选择此模型可用的站点** 面板将有所不同，具体取决于你是否为管理员。 
 
-    如果你是管理员，则将看到此视图。
+    如果你是管理员SharePoint，你将看到此视图。
 
     ![“选择此模型可用的站点”面板的屏幕截图，其中显示了希望模型在哪些位置可供他人使用的选项。](../media/content-understanding/select-sites.png)
 
@@ -47,7 +47,7 @@ ms.locfileid: "60200997"
     - **所有站点**– 模型将在内容类型库中可用，以供他人使用。
     - **仅选定站点**– 可以选择一个或多个模型将可用的站点。 在文本框中点击以搜索并选择希望应用模型的站点。 你将仅看到有权访问的站点。
 
-    如果你 *不是* 管理员，则将看到此视图。
+    如果你不是 *管理员SharePoint，* 你将看到此视图。
 
     ![“选择此模型可用的站点”面板的屏幕截图，其中显示了仅具有几个可用站点的最终用户的选项。](../media/content-understanding/select-site-user.png)
 

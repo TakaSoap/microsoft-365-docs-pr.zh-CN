@@ -21,16 +21,16 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2c9ecbc07a5523d16d8e3e328f787a11b0c7679b
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: ee9ddb26736ba52b5ddade576d7587f5883931ab
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063389"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072697"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
-使用通信合规性策略，以识别用户通信，供内部或外部审阅者检查。 有关通信合规性策略如何帮助监视组织内通信的详细信息，请参阅 [Microsoft 365 中的通信合规性策略](communication-compliance.md)。 如果您想查看 Contoso 如何快速配置通信合规性策略，以监视 Microsoft Teams、Exchange Online 和 Yammer 通信中的不当内容，请查看此[案例研究](communication-compliance-case-study.md)。
+使用通信合规性策略，以识别用户通信，供内部或外部审阅者检查。 有关通信合规性策略如何帮助监视组织内通信的详细信息，请参阅 [Microsoft 365 中的通信合规性策略](communication-compliance.md)。 如果您想了解 Contoso 如何快速配置通信合规性策略，以监视 Microsoft Teams、Exchange Online 和 Yammer 通信中的不当内容，请查看此[案例研究](communication-compliance-case-study.md)。
 
 ## <a name="subscriptions-and-licensing"></a>订阅和许可
 
@@ -52,7 +52,7 @@ ms.locfileid: "61063389"
 
 ## <a name="recommended-actions-preview"></a>建议 (预览) 
 
-建议的操作可帮助组织开始使用通信合规性功能，并充分利用现有策略。 建议操作 **包含在"策略** "页上，可提供见解，并总结了组织中通信中的敏感信息类型和不适当的内容活动。 这些见解不包括组织中用户 (个人身份) 个人身份信息。
+建议的操作可帮助组织开始使用通信合规性功能，并充分利用现有策略。 建议操作 **包含在"策略** "页上，可提供见解，并总结了组织中通信中的敏感信息类型和不适当的内容活动。 Insights数据分类[以及](data-classification-overview.md)敏感度标签、保留标签和敏感信息类型分类的应用支持数据分类。 这些见解不包括组织中用户 (个人身份) 个人身份信息。
 
 ![通信合规性建议操作。](../media/communication-compliance-recommended-actions.png)
 
@@ -73,8 +73,8 @@ ms.locfileid: "61063389"
 
 | 角色 | 角色权限 |
 |:-----|:-----|
-| **通信合规性** | 使用此角色组在单个组中管理组织的通信合规性。 通过添加指定管理员、分析者、调查者和查看者的所有用户账户，可以在单个组中配置通信合规性权限。 此角色组包含所有通信合规性权限角色。 这一配置是通信合规性快速入门的最简单方式，非常适合不需要为单独用户组定义单独权限的组织。 以通信合规性管理员角色创建策略的用户的邮箱必须托管在 Exchange Online。|
-| **通信合规性管理员** | 使用此角色组进行通信合规性初始配置，后期可将通信合规性管理员隔离到已定义组中。 分配到此角色组的用户可以创建、读取、更新和删除通信合规性策略、全局设置和角色组分配。 分配到此角色组的用户无法查看消息警报。 以通信合规性管理员角色创建策略的用户的邮箱必须托管在 Exchange Online。|
+| **通信合规性** | 使用此角色组在单个组中管理组织的通信合规性。 通过添加指定管理员、分析者、调查者和查看者的所有用户账户，可以在单个组中配置通信合规性权限。 此角色组包含所有通信合规性权限角色。 这一配置是通信合规性快速入门的最简单方式，非常适合不需要为单独用户组定义单独权限的组织。 作为通信合规性管理员创建策略的用户的邮箱必须托管在 Exchange Online。|
+| **通信合规性管理员** | 使用此角色组进行通信合规性初始配置，后期可将通信合规性管理员隔离到已定义组中。 分配到此角色组的用户可以创建、读取、更新和删除通信合规性策略、全局设置和角色组分配。 分配到此角色组的用户无法查看消息警报。 作为通信合规性管理员创建策略的用户的邮箱必须托管在 Exchange Online。|
 | **通信合规性分析者** | 使用此组向执行通信合规性分析者操作的用户分配权限。 分配到此角色组的用户可以查看分配其为审阅者的策略，查看消息元数据（而不是消息内容）、升级到其他审阅者，或向用户发送通知。 分析者不能解决挂起的警报。 |
 | **通信合规性调查者** | 使用此组向执行通信合规性调查者操作的用户分配权限。 分配到此角色组的用户可以查看消息元数据和内容、升级到其他审阅者、升级到高级 eDiscovery 案例、向用户发送通知、以及解决警报。 |
 | **通信合规性查看者** | 使用此组向管理通信报告的用户分配权限。 分配到此角色组的用户可以访问通信合规性主页上的所有报告小组件，并且可以查看所有通信合规性报告。 |

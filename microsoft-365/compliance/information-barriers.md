@@ -16,12 +16,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 515983182bb5f44c08e7d8531656a7a4fb49d5c6
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: fc3d961b8707ba07febd95022580091618086d7f
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064096"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071344"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>了解信息障碍Microsoft 365
 
@@ -38,7 +38,7 @@ Microsoft Teams、SharePoint Online 和 OneDrive for Business 支持信息屏障
 > [!IMPORTANT]
 > 信息屏障 ***仅支持** _ 双向限制。 单向限制（如营销）可以与日交易者通信和协作，但日交易者无法与营销 _* 进行通信 _和协作不受_ 支持 **。
 
-对于上述所有示例方案 (和更多) ，可以定义信息屏障策略来阻止或允许 Microsoft Teams、SharePoint Online 和 OneDrive 中的通信和协作。 此类策略可以阻止用户呼叫或与不应联系的组聊天，或者使用户仅与用户中的特定组Microsoft Teams。 在信息屏障策略生效后，只要这些策略覆盖的用户尝试与 Microsoft Teams、SharePoint Online 或 OneDrive 中的其他人进行通信和协作，就会执行检查以防止 (或允许) 通信和协作 (如信息屏障策略) 所定义。
+对于所有这些示例方案 (和更多) ，可以定义信息屏障策略来阻止或允许 Microsoft Teams、SharePoint Online 和 OneDrive 中的通信和协作。 此类策略可以阻止用户呼叫或与不应联系的人聊天，或者使用户仅与用户中的特定组Microsoft Teams。 在信息屏障策略生效后，只要这些策略覆盖的用户尝试与 Microsoft Teams、SharePoint Online 或 OneDrive 中的其他人进行通信和协作，就会阻止 (或允许) 通信和协作 (如信息屏障策略) 所定义。
 
 若要了解有关具有信息障碍的用户体验详细信息，请参阅：
 
@@ -47,13 +47,13 @@ Microsoft Teams、SharePoint Online 和 OneDrive for Business 支持信息屏障
 - [信息障碍OneDrive](/onedrive/information-barriers)
 
 > [!IMPORTANT]
-> 目前，信息屏障不适用于电子邮件通信。 此外，信息屏障独立于合规性 [边界](set-up-compliance-boundaries.md)。<p> 定义和应用信息屏障策略之前，请确保您的组织没有Exchange[通讯簿](/exchange/address-books/address-book-policies/address-book-policies)策略。  (信息屏障基于通讯簿策略。) 
+> 目前，信息屏障不适用于电子邮件通信。 此外，信息屏障独立于合规性 [边界](set-up-compliance-boundaries.md)。<p> 在定义和应用信息屏障策略之前，请确保您的组织没有Exchange[通讯簿](/exchange/address-books/address-book-policies/address-book-policies)策略。  (信息屏障基于通讯簿策略。) 
 
 ## <a name="what-happens-with-information-barriers"></a>信息屏障会发生什么情况
 
 当信息屏障策略到位时，不应与其他特定用户通信或共享文件的用户将无法查找、选择、聊天或呼叫这些用户。 由于信息障碍，我们进行检查以防止未经授权的通信和协作。
 
-信息屏障适用于Microsoft Teams (、) 、SharePoint Online 和 OneDrive。 在 Microsoft Teams 中，信息屏障策略确定并阻止以下类型的未经授权的通信：
+信息屏障适用于 Microsoft Teams (、) 、SharePoint Online 和 OneDrive。 在 Microsoft Teams 中，信息屏障策略确定并阻止以下类型的未经授权的通信：
 
 - 搜索用户
 - 向团队添加成员
@@ -80,16 +80,15 @@ Microsoft Teams、SharePoint Online 和 OneDrive for Business 支持信息屏障
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
-在开始内部风险管理之前，你应该确认你的Microsoft 365[订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何加载项。 若要访问和使用信息屏障，你的组织必须具有以下订阅或加载项之一：
+在开始使用内部风险管理之前，你应该确认你的Microsoft 365[订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何加载项。 若要访问和使用信息屏障，你的组织必须具有以下订阅或加载项之一：
 
 - Microsoft 365 E5/A5 订阅 (付费或试用版) 
-- Office 365 企业版 E5 订阅（付费或试用版本）
-- Office 365 A5 订阅（付费或试用版本）
+- Office 365 E5/A5/A3/A1 订阅 (付费或试用版) 
 - Office 365 高级合规版加载项 (不再可用于新订阅) 
-- Microsoft 365 E3/A3 订阅 + Microsoft 365 E5/A5 合规性加载项
-- Microsoft 365 E3/A3 订阅 + Microsoft 365 E5/A5 内部风险管理加载项
+- Microsoft 365 E3/A3/A1 订阅 + Microsoft 365 E5/A5 合规性加载项
+- Microsoft 365 E3/A3/A1 订阅 + Microsoft 365 E5/A5 内部风险管理加载项
 
-有关详细信息，请参阅Microsoft 365安全[与合规&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
+有关详细信息，请参阅Microsoft 365[安全与合规&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
 若要 [定义或编辑信息屏障策略](information-barriers-policies.md)，必须分配有以下角色之一：
 
@@ -98,7 +97,7 @@ Microsoft Teams、SharePoint Online 和 OneDrive for Business 支持信息屏障
 - 合规性管理员
 - IB 合规性管理
 
- (若要了解有关角色和权限的更多信息，请参阅安全与合规Office 365中心[&中的权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)) 
+ (若要了解有关角色和权限的更多信息，请参阅安全与合规Office 365&[中](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)的权限) 
 
 您必须熟悉 PowerShell cmdlet，才能定义、验证或编辑信息屏障策略。 尽管我们在操作方法文章中提供了 PowerShell cmdlet[](information-barriers-policies.md)的几个示例，但您需要了解组织的其他详细信息（如参数）。
 

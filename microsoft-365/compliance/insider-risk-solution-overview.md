@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: d9608db071f347b16b36ca3e749012d8a9955ac0
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: de4fb39219674c23b35672d6d12a8b124e748866
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063468"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072803"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 内部风险解决方案
 
@@ -79,11 +79,10 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 以下订阅中提供了信息屏障：
 
 - Microsoft 365 E5/A5 订阅 (付费或试用版) 
-- Office 365 企业版 E5 订阅（付费或试用版本）
-- Office 365 A5 订阅（付费或试用版本）
+- Office 365 E5/A5/A3/A1 订阅 (付费或试用版) 
 - Office 365 高级合规版加载项 (不再可用于新订阅) 
-- Microsoft 365 E3/A3 订阅 + Microsoft 365 E5/A5 合规性加载项
-- Microsoft 365 E3/A3 订阅 + Microsoft 365 E5/A5 内部风险管理加载项
+- Microsoft 365 E3/A3/A1 订阅 + Microsoft 365 E5/A5 合规性加载项
+- Microsoft 365 E3/A3/A1 订阅 + Microsoft 365 E5/A5 内部风险管理加载项
 
 ### <a name="privileged-access-management"></a>特权访问管理
 
@@ -123,7 +122,7 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 针对每个内部风险解决方案对管理员和合规性团队进行基础知识培训可帮助组织更快速地开始部署和实施工作。 
 
-Microsoft 365提供了以下资源来帮助通知并培训贵组织中这些用户：
+Microsoft 365提供了以下资源，以帮助通知并培训贵组织中这些用户：
 
 | 解决方案/区域 | 资源 |
 |:------------------|:--------------|

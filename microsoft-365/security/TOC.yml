@@ -8,8 +8,6 @@
           href: top-security-tasks-for-remote-work.md
         - name: 适用于 BDM 的 Microsoft 365 安全中心
           href: Microsoft-365-security-for-bdm.md
-        - name: 优先帐户安全建议
-          href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: 标识和设备访问配置
       items:
         - name: 概述
