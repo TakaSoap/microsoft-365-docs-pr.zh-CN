@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: 740c1c2a86b089f911fdbed7b8fce667de5e6f5c
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.openlocfilehash: 670dc6c4b095ca8d124b80bb0bade0ee3db22a7f
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61041923"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064255"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -320,7 +320,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 > [!NOTE]
 > 此选项在预览版中逐步推出，可能会发生变化。
 
-如果需要捕获并保留租户中通过通信发送的所有文件副本，可能需要使用此选项。 将此选项与通信服务本身、Exchange 和 Teams 的保留策略结合使用。
+如果需要捕获并保留租户中用户通过通信发送的文件的所有副本，可能需要使用此选项。 将此选项与通信服务本身、Exchange 和 Teams 的保留策略结合使用。
 
 > [!IMPORTANT]
 > 选择要用于自动应用云附件的保留标签的标签时，请确保标签保留设置"**基于开始保留期**"是"**标记项目的时间**"。
@@ -331,7 +331,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 如果文件被修改并再次共享，则作为新版本的文件的新副本将保存在保留库中。 有关详细信息，包括为什么应该使用“**当项目被标记时**”进行标签设置，请参阅 [如何使用云附件进行保留](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments)。
 
-此选项支持的云附件是存储在 SharePoint 和 OneDrive 中的文件（如文档、视频和图像）。 对于 Teams，支持聊天消息中共享的云附件以及标准和专用频道。 不支持通过会议邀请和 Teams 或 Outlook 以外的应用共享的云附件。
+此选项支持的云附件是存储在 SharePoint 和 OneDrive 中的文件（如文档、视频和图像）。 对于 Teams，支持聊天消息中共享的云附件以及标准和专用频道。 不支持通过会议邀请和 Teams 或 Outlook 以外的应用共享的云附件。 云附件必须由用户共享；不支持通过机器人发送的云附件。
 
 虽然此选项不是必需的，但我们建议确保为 SharePoint 网站和 OneDrive 帐户启用版本控制，以便准确捕获共享的版本。 如果未启用版本控制，将保留上一个可用版本。 不支持草稿中或从未发布过的文档。
 
@@ -364,7 +364,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保留标签需要多长时间才能生效
 
-根据敏感信息、关键字、可搜索属性或可训练分类器自动应用保留标签时，可能需要最多 8 天才能应用保留标签：
+根据敏感信息、关键字、可搜索属性或可训练分类器自动应用保留标签时，可能需要最多八天才能应用保留标签：
   
 ![自动应用标签生效时间关系图。](../media/retention-labels-autoapply-timings.png)
 

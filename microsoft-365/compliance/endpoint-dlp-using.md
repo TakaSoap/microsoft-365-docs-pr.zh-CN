@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 17fda6ff5deb8c5f16513a5b3a823bcf584f2373
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: b1365a699f7d69c1ff01e902fa2e97da0aee66fe
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064531"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61073097"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -60,6 +60,9 @@ ms.locfileid: "61064531"
 - Windows 10 版本 20H1/20H2/21H1 (KB 5006738) 
 - Windows 10 版本 19H1/19H2 (KB 5007189) 
 - Windows 10 RS5 (KB 5006744) 
+
+> [!NOTE]
+> Office（Word、Excel、PowerPoint）和 PDF 文件类型支持高级分类。
 
 > [!NOTE]
 > DLP 策略评估始终发生在云中，即使未发送用户内容。

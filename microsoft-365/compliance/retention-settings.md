@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: 28aa92e7374815404eaffb1abe908aa2fe60343f
-ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
+ms.openlocfilehash: d80ae2a6f3fac26acfc5d9f8a324e578677cb962
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60972008"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063521"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -302,6 +302,9 @@ ms.locfileid: "60972008"
 - 已删除组的邮箱将变为非活动状态，但会像 SharePoint 网站一样仍受保留设置限制。 有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。
 
 ### <a name="configuration-information-for-skype-for-business"></a>Skype for Business 的配置信息
+
+> [!NOTE]
+> Skype for Business [于 2021 年 7 月 31 日停用](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/skype-for-business-online-to-be-retired-in-2021/ba-p/777833)，我们鼓励客户迁移到 Microsoft Teams。 但是，对于现有客户，我们仍支持 Skype for Business 的保留策略。
 
 与 Exchange 电子邮件不同，将 Skype 位置的状态切换为“开”并不能添加所有用户，但启用相应位置后，就必须手动选择要保留哪些用户的对话：
 

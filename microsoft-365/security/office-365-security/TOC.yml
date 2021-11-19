@@ -148,6 +148,8 @@
           href: preset-security-policies.md
         - name: 保护策略的配置分析器
           href: configuration-analyzer-for-security-policies.md
+        - name: 优先帐户安全建议
+          href: security-recommendations-for-priority-accounts.md
         - name: Defender for Office 365 中的攻击模拟训练
           items:
             - name: 开始使用攻击模拟培训
@@ -374,9 +376,13 @@
           href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
         - name: 在政治宣传活动开发/测试环境中创建团队网站
           href: create-team-sites-in-a-political-campaign-dev-test-environment.md
-    - name: Microsoft 365 Defender
-      href: ../defender/index.yml
-    - name: Microsoft Defender for Endpoint
-      href: ../defender-endpoint/index.yml
-    - name: Microsoft Defender for Identity
-      href: /defender-for-identity/
+    - name: Microsoft 365 Defender 文档
+      items:
+        - name: Microsoft 365 Defender
+          href: ../defender/index.yml
+        - name: Defender for Endpoint
+          href: ../defender-endpoint/index.yml
+        - name: Defender for Identity
+          href: /defender-for-identity
+        - name: Defender for Cloud Apps
+          href: /cloud-app-security

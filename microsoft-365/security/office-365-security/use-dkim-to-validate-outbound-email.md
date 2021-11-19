@@ -17,15 +17,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1906d9bbb7e36c95ed74c7eea2b66d3afb70e5a3
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 9e2ae9e71764895cd87deefad1e01aacf965dcf7
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555520"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064519"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -235,7 +236,7 @@ TTL:                3600
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>若要在 Microsoft 365 Defender 门户中为自定义域启用 DKIM 签名
 
-1. [使用工作或学校账户](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) 打开 Microsoft 365 Defender 门户网站。
+1. 使用工作或学校帐户打开 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a>。
 
 2. 转到 **“规则”** 部分的 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **DKIM**。 或者，若要直接转到 DKIM 页面，请使用 <https://security.microsoft.com/dkimv2>。
 
@@ -335,7 +336,7 @@ TTL:                3600
 ## <a name="default-behavior-for-dkim-and-microsoft-365"></a>DKIM 和 Microsoft 365 的默认行为
 <a name="DefaultDKIMbehavior"> </a>
 
-如果不启用 DKIM，Microsoft 365 将自动为你的 Microsoft 联机电子邮件路由地址 (MOERA)/初始域创建 1024 位 DKIM 公钥，以及我们在数据中心内部存储的关联私钥。默认情况下，Microsoft 365 为没有合适策略的域使用默认签名配置。这意味着，如果你自己没有设置 DKIM，Microsoft 365 将使用默认策略和所创建的密钥来为你的域启用 DKIM。
+如果不启用 DKIM，Microsoft 365 会自动为 Microsoft Online 电子邮件路由地址 (MOERA)/初始域创建 2048 位 DKIM 公钥，以及我们存储在内部（我们的数据中心中）的关联私钥。 默认情况下，Microsoft 365 对没有适当策略的域使用默认签名配置。 也就是说，如果你自己没有设置 DKIM，Microsoft 365 会使用它的默认策略和它创建的密钥来为你的域启用 DKIM。
 
 此外，如果启用后在自定义域上禁用 DKIM 签名，则在一段时间后，Microsoft 365 将自动为自定义域应用 MOERA/初始域策略。
 
@@ -402,11 +403,11 @@ Return-Path: <communication@bulkemailprovider.com>
 **此测试将验证** DKIM 签名配置是否正确配置，以及是否发布了正确的 DNS 条目。
 
 <div class="nextstepaction">
-<p><a href="https://aka.ms/diagdkim" data-linktype="external">运行测试：DKIM</a></p>
+<p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">运行测试：DKIM</a></p>
 </div>
 
 ## <a name="more-information"></a>更多信息
 
 通过 PowerShell 进行密钥轮换：[Rotate DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig) 
 
-[使用 DMARC 验证电子邮件](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
+[使用 DMARC 验证电子邮件](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)

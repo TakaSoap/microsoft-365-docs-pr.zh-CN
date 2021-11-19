@@ -26,7 +26,7 @@
 |PROJECT|不适用|不适用|不适用|✔|不适用|
 |PUBLISHER|不适用|不适用|不适用|✔|不适用|
 |SHAREPOINT 管理员|不适用|不适用|不适用|✔|不适用|
-|SHAREPOINT|✔|不适用|不适用|不适用|不适用|
+|SHAREPOINT|✔|Planned|不适用|不适用|不适用|
 |SKYPE FOR BUSINESS 管理员|不适用|不适用|不适用|✔|不适用|
 |SKYPE FOR BUSINESS|✔|✔|✔|✔|不适用|
 |便笺|不适用|不适用|不适用|不适用|✔|

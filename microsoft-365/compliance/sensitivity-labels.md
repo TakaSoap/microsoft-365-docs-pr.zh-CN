@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b43ec6b8d529fe0f5c2ed89ed58c8fc122ada66e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3f9f0a3975081cfd136420ed6ac95d86b2f4861e
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668318"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071400"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -65,7 +65,7 @@ ms.locfileid: "60668318"
 
 - **将敏感度标签扩展到 Power BI**：启用此功能后，可以在 Power BI 中应用和查看标签，并在数据保存在服务之外时保护数据。
 
-- **将敏感度标签扩展到 Azure 权限中的资产**：当前预览版中打开此功能时，您可以将敏感度标签应用于资产，如 SQL 列、Azure Blob 存储中的文件等。 
+- **将敏感度标签扩展为Azure Purview** 中的资产：启用此功能时，可以在Azure Purview中将敏感度标签应用于文件和架构化的数据资产。 架构化的数据资产包括 SQL、Azure SQL、Azure Synapse、Azure Cosoms 和 AWS RDS。
 
 - **将敏感度标签扩展到第三方应用程序和服务。** 使用 Microsoft 信息保护 SDK，则第三方应用程序可读取敏感度标签并应用保护设置。
 
@@ -118,7 +118,7 @@ ms.locfileid: "60668318"
     
     ![提示分配所需的标签。](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    有关创建或编辑敏感度标签时的“**文件和电子邮件的自动标记**”设置的详细信息，请参阅 [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)（对于 Office 应用）和 [在 Azure Purview 中自动标记数据](/azure/purview/create-sensitivity-label)。
+    有关创建或编辑敏感度标签时文件和电子邮件设置的 **自动标记** 的详细信息，请参阅[将敏感度标签应用于 Office 应用自动](apply-sensitivity-label-automatically.md)的内容，并在Azure Purview中[标签](/azure/purview/create-sensitivity-label)。
 
 ### <a name="label-scopes"></a>标记范围
 
@@ -126,7 +126,7 @@ ms.locfileid: "60668318"
 - 可为该标签配置的标签设置
 - 用户将可以看到标签的位置
 
-此范围配置使你可以拥有仅适用于文档和电子邮件但不能选择用于容器的敏感度标签。 同样地，仅适用于容器的敏感度标签则不能选择用于文件和电子邮件。 新的和当前处于预览版中，您还可以选择 Azure 权限资产的范围：
+此范围配置使你可以拥有仅适用于文档和电子邮件但不能选择用于容器的敏感度标签。 同样地，仅适用于容器的敏感度标签则不能选择用于文件和电子邮件。 还可以选择Azure Purview资产的范围：
 
 ![敏感度标签的范围选项。](../media/sensitivity-labels-scopes.png)
 
@@ -134,7 +134,7 @@ ms.locfileid: "60668318"
 
 - **组和网站**: [为容器启用敏感度标签和同步标签](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Azure Purview 素材（预览版）**：[在 Azure Purview 中自动标记内容](/azure/purview/create-sensitivity-label)
+- **架构化的数据资产**： [自动在 Azure Purview](/azure/purview/create-sensitivity-label) 中标记内容
 
 如果更改默认值，以便未选择所有作用域，则会看到尚未选择的范围的配置设置的第一页，但无法配置这些设置。 例如，如果未选中“文件和电子邮件”的范围，则不能选择下一页上的选项：
 
