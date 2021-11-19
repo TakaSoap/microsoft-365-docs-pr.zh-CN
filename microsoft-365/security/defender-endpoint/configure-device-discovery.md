@@ -1,6 +1,6 @@
 ---
 title: 配置设备发现
-description: 了解如何使用基本或标准发现在 Microsoft 365 Defender中配置设备发现
+description: 了解如何使用基本或标准发现Microsoft 365 Defender设备发现
 keywords: 基本， 标准， 配置终结点发现， 设备发现
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c481f846b91ee2072f453d4ad8e9df13b4dd534f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 00717c828935acf417957ef25401056fe0036e10
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960802"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110783"
 ---
 # <a name="configure-device-discovery"></a>配置设备发现
 
@@ -43,14 +43,14 @@ ms.locfileid: "60960802"
 
 > [!IMPORTANT]
 > 对于预览版，你首先需要在预览版中启用预览Microsoft 365 Defender。
-> 然后，你可以访问安全中心 中的Microsoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">配置</a>。 非托管设备和安全建议列表将在 Microsoft 365 Defender 和 Microsoft 365 安全中心提供，而仪表板磁贴将仅在 Microsoft 365 安全中心提供。
+> 然后，可以在门户 中访问Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">配置</a>。 非托管设备和安全建议列表将在 Microsoft 365 Defender 和 Microsoft 365 Defender 门户中提供，而仪表板磁贴将仅在 Microsoft 365 Defender 门户中提供。
 
-在安全中心内执行<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365步骤</a>：
+在门户中执行<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender步骤</a>：
 
 1. 导航到 **设置**  >  **设备发现 "**。
 2. 选择要在载入的设备上使用的发现模式。
 3. 如果你已选择使用标准发现，请通过指定设备标记来选择要用于活动探测的设备：所有设备或部分设备。
-4. 单击“**保存**”。
+4. 单击 **“保存”**。
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>在标准发现中排除设备的活动探测器
 

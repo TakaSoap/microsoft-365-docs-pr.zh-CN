@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: admindeeplinkDEFENDER
-description: 管理员可以了解如何使用 Microsoft Defender for Office 365 计划 2 中的攻击模拟培训用户进行网络钓鱼防护。
+description: 管理员可以了解如何使用 Microsoft Defender for Office 365 计划 2 中的攻击模拟培训其用户进行网络钓鱼防护。
 ms.technology: mdo
-ms.openlocfilehash: 394a37baffb9961511b5a944a774b2083a384a58
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 59a761a9f6925816946cb655e71f5e418d6ca8de
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962454"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111371"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>在 Defender for Office 365
 
@@ -30,13 +30,13 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
 
 若要启动模拟网络钓鱼攻击，请执行以下步骤：
 
-1. 在 Microsoft 365 Defender 门户中 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> ，转到电子邮件& \> **攻击模拟培训** \> **模拟** 选项卡。
+1. 在 Microsoft 365 Defender 门户中 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> ，转到"电子邮件& \> **协作攻击模拟** \> **培训模拟"** 选项卡。
 
    若要直接转到模拟 **选项卡** ，请使用 <https://security.microsoft.com/attacksimulator?viewid=simulations> 。
 
 2. 在" **模拟"选项卡** 上，选择 ![ "启动模拟图标"。](../../media/m365-cc-sc-create-icon.png) **启动模拟**。
 
-   ![启动该门户中攻击模拟培训中"模拟"选项卡上的Microsoft 365 Defender按钮。](../../media/attack-sim-training-simulations-launch.png)
+   ![在攻击门户中攻击模拟培训中的模拟选项卡上启动Microsoft 365 Defender按钮。](../../media/attack-sim-training-simulations-launch.png)
 
 3. 模拟创建向导将打开。 本文的其余部分介绍了页面及其包含的设置。
 
@@ -45,7 +45,7 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
 
 ## <a name="select-a-social-engineering-technique"></a>选择社交工程技术
 
-在"**选择技术**"页上，选择一种可用的社交工程技术，该技术由 [MITRE ATT&CK®设计。](https://attack.mitre.org/techniques/enterprise/) 不同的有效负载可用于不同的技术。 可以使用以下社交工程技术：
+在" **选择技术** "页上，选择一种可用的社交工程技术，该技术由 [MITRE ATT&CK®设计](https://attack.mitre.org/techniques/enterprise/)。 不同的有效负载可用于不同的技术。 可以使用以下社交工程技术：
 
 - **凭据获取**：尝试通过让用户访问具有输入框的已知网站来提交用户名和密码来收集凭据。
 - **恶意软件附件**：向邮件添加恶意附件。 当用户打开附件时，将运行任意代码，以帮助攻击者破坏目标设备。
@@ -77,7 +77,7 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
 - **名称**
 - **语言**：有效负载内容的语言。 Microsoft 的有效负载目录 (全局) 提供 10 多种语言（也可以筛选）的有效负载。
 - **单击率**：单击此有效负载的人。
-- **预测的泄露率**：整个 Microsoft 365负载的历史数据，用于预测受此负载危害的百分比。
+- **预测的泄露率**：整个 Microsoft 365 负载的历史数据，用于预测受此负载威胁的百分比。
 - **模拟启动** 计算此有效负载在其他模拟中使用的次数。
 
 在" ![ 搜索"图标中。](../../media/m365-cc-sc-search-icon.png) **搜索** 框，可以键入部分有效负载名称，然后按 Enter 筛选结果。
@@ -147,7 +147,7 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
 
       确定条件后，受影响的用户将显示在出现的"用户列表"部分，您可以在其中选择部分或所有发现的收件人。
 
-      完成后，单击"应用 x (**x) "，** 然后单击"添加 x **用户"。**
+      完成后，单击"应用 x **(x) "，** 然后单击"添加 x **用户"。**
 
   返回到主 **"目标用户"** 页面，您可以使用"搜索 ![ "图标。](../../media/m365-cc-sc-search-icon.png) **搜索** 框以查找受影响的用户。 还可以单击"删除 ![ 用户"图标。](../../media/m365-cc-sc-search-icon.png) **删除** 以删除特定用户。
 
@@ -171,17 +171,17 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
       - **模拟结束后 15 天**
       - **模拟结束后 7 天**
   - **重定向到自定义 URL：** 此值具有以下要配置的相关选项：
-    - **自定义培训 URL** (必填) 
+    - **自定义培训 URL** (必需) 
     - **自定义培训名称 (** 必填) 
     - **自定义培训说明**
-    - **自定义培训 (分钟**) ：默认值为 0，表示没有指定的培训持续时间。
+    - **自定义培训 (分钟) ：** 默认值为 0，表示没有指定的培训持续时间。
     - **截止日期：** 选择下列值之一：
       - **模拟结束后 30 天**：这是默认值。
       - **模拟结束后 15 天**
       - **模拟结束后 7 天**
   - **无培训**：如果你选择此值，页面上的唯一选项是"下一步"按钮，将你导航到 [**登陆页面**](#landing-page)页面。
 
-![在安全门户中攻击模拟培训中的"培训作业"页面上添加Microsoft 365 Defender培训。](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+![在企业门户中攻击模拟培训中的"培训作业"页面上添加Microsoft 365 Defender培训。](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
 
 ### <a name="training-assignment"></a>培训作业
 

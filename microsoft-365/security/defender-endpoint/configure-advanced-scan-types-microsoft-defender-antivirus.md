@@ -16,12 +16,12 @@ ms.technology: mde
 ms.date: 10/19/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 61092c0656f31bb04dd0f63ff61a55571781c160
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: dc6f8e49cbf23809b7980d15f40b5081af469c44
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882425"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111827"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>配置 Microsoft Defender 防病毒软件扫描选项
 
@@ -35,7 +35,7 @@ ms.locfileid: "60882425"
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>使用Microsoft Endpoint Manager配置扫描选项
 
-有关配置当前分支Microsoft Endpoint Manager (的详细信息) 请参阅如何创建和部署反恶意软件策略[：扫描设置](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)。
+有关配置当前分支Microsoft Endpoint Manager (的详细信息，) 如何创建[和部署反恶意软件策略：扫描设置](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)。
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>使用组策略配置扫描选项
 
@@ -53,17 +53,17 @@ ms.locfileid: "60882425"
 
 ### <a name="settings-and-locations"></a>设置和位置
 
-|策略项和位置|如果未配置 (默认设置) |类的 PowerShell `Set-MpPreference` 参数或 WMI `MSFT_MpPreference` 属性|
+|策略项和位置|如果未 (默认设置) |类的 PowerShell `Set-MpPreference` 参数或 WMI `MSFT_MpPreference` 属性|
 |---|---|---|
-|电子邮件扫描 <p> **扫描** \>**打开电子邮件扫描**<p>请参阅 [本文中的电子邮件](#email-scanning-limitations) (限制) |已禁用|`-DisableEmailScanning`|
+|电子邮件扫描 <p> **扫描** \>**打开电子邮件扫描**<p>请参阅 [本文中介绍](#email-scanning-limitations) (扫描限制) |已禁用|`-DisableEmailScanning`|
 |扫描 [重新分析点](/windows/win32/fileio/reparse-points) <p> **扫描** \>**打开重新分析点扫描**|已禁用|不可用 <p>请参阅 [重新分析点](/windows/win32/fileio/reparse-points)|
 |扫描映射的网络驱动器 <p> **扫描** \>**在映射的网络驱动器上运行完全扫描**|已禁用|`-DisableScanningMappedNetworkDrivesForFullScan`|
-|扫描存档 (，例如.zip或.rar文件) 。 <p> **扫描** \>**扫描存档文件**|已启用|`-DisableArchiveScanning` <p>扩展 [名排除列表](configure-extension-file-exclusions-microsoft-defender-antivirus.md) 将优先于此设置。|
+|扫描存档 (，如.zip或.rar文件) 。 <p> **扫描** \>**扫描存档文件**|已启用|`-DisableArchiveScanning` <p>扩展 [名排除列表](configure-extension-file-exclusions-microsoft-defender-antivirus.md) 将优先于此设置。|
 |扫描网络文件 <p> **扫描** \>**扫描网络文件**|已禁用|`-DisableScanningNetworkFiles`|
 |扫描打包的可执行文件 <p> **扫描** \>**扫描打包的可执行文件**|已启用|不可用|
 |仅在完全扫描期间扫描可移动驱动器 <p> **扫描** \>**扫描可移动驱动器**|已禁用|`-DisableRemovableDriveScanning`|
 |指定要扫描的存档文件夹中的子文件夹级别 <p>**扫描** \>**指定扫描存档文件的最大深度**|0|不可用|
-|指定最大 CPU 负载 (以扫描) 的百分比表示。 <p> **扫描** \>**指定扫描期间 CPU 使用率的最大百分比**|50|`-ScanAvgCPULoadFactor` <p>**注意**：最大 CPU 负载不是硬性限制，但指导扫描引擎平均不超过最大值。 手动运行扫描将忽略此设置，并且运行时没有任何 CPU 限制。|
+|指定最大 CPU 负载 (以扫描) 百分比表示。 <p> **扫描** \>**指定扫描期间 CPU 使用率的最大百分比**|50|`-ScanAvgCPULoadFactor` <p>**注意**：最大 CPU 负载不是硬性限制，但指导扫描引擎平均不超过最大值。 手动运行扫描将忽略此设置，并且运行时没有任何 CPU 限制。|
 |指定应 (存档) 的最大大小（以 KB 为单位）。 <p> **扫描** \>**指定要扫描的存档文件的最大大小**|无限制|不可用 <p>默认值 0 没有限制|
 |为计划扫描配置低 CPU 优先级 <p> **扫描** \>**为计划扫描配置低 CPU 优先级**|已禁用|不可用|
 
@@ -75,7 +75,7 @@ ms.locfileid: "60882425"
 若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一起使用，请参阅
 
 - [使用 PowerShell cmdlet Microsoft Defender 防病毒管理配置](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Defender cmdlet](/powershell/module/defender/)
+- [Microsoft Defender 防病毒 cmdlet](/powershell/module/defender/)
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>使用 WMI 配置扫描选项
 
@@ -89,7 +89,7 @@ ms.locfileid: "60882425"
 - MBX
 - MIME
 
-也会扫描 Outlook 2003 或 (（其中存档类型设置为非 unicode) ）使用的 PST 文件，但 Microsoft Defender 防病毒 无法修正在 PST 文件内检测到的威胁。
+也会扫描 Outlook 2003 或较旧版本 (其中存档类型设置为非 unicode) 的 PST 文件，但 Microsoft Defender 防病毒 无法修正在 PST 文件中检测到的威胁。
 
 如果你Microsoft Defender 防病毒电子邮件内检测到威胁，它将显示以下信息来帮助你识别遭到入侵的电子邮件，以便你可以手动修正威胁：
 

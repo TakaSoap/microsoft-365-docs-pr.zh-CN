@@ -1,5 +1,5 @@
 ---
-title: 开始使用基于精确数据匹配的敏感信息类型
+title: 基于精确数据匹配的敏感信息类型入门
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 description: 开始创建基于准确数据匹配的敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3621ccdedb5966ae7c70e549c5f0538143df0248
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 469cc7262ff1eef92d9a03e04070dc353e12b445
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914741"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110495"
 ---
-# <a name="get-started-with-exact-data-match-based-sensitive-information-types"></a>开始使用基于精确数据匹配的敏感信息类型
+# <a name="get-started-with-exact-data-match-based-sensitive-information-types"></a>基于精确数据匹配的敏感信息类型入门
 
-创建和 (使基于 EDM) 的敏感信息类型 (数据) 匹配是一个多阶段过程。 它们可用于数据丢失防护策略、电子数据展示和某些内容管理任务 本文概述了工作流以及每个阶段的过程链接
+创建和使基于 EDM (的敏感信息类型) 数据完全匹配 (SIT) 是一个多阶段过程。 它们可用于数据丢失防护策略、电子数据展示和某些内容管理任务 本文概述了工作流以及每个阶段的过程链接
 
 ## <a name="before-you-begin"></a>开始之前
 
 熟悉以下文章中的概念和术语：
 
 - [了解敏感信息类型](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
-- [了解基于精确数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [了解基于确切数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
@@ -46,7 +46,7 @@ ms.locfileid: "60914741"
 |门户|全球/GCC|GCC-High|DOD|
 |---|---|---|---|
 |Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
-|Microsoft 365 安全中心|security.microsoft.com|security.microsoft.us|security.apps.mil|
+|Microsoft 365 Defender 门户|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft 365 合规中心|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
 ## <a name="the-work-flow-at-a-glance"></a>工作流程概览
@@ -57,12 +57,12 @@ ms.locfileid: "60914741"
 |阶段|所需项|
 |---|---|
 |[阶段 1：导出基于准确数据匹配的敏感信息类型的源数据](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)|- 敏感数据的读取权限|
-|[阶段 2：为基于准确数据匹配的敏感信息类型创建架构](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- 访问网站中的敏感信息类型Microsoft 365 管理中心 </br>- 通过安全[Microsoft 365 管理中心合规性 PowerShell &访问安全](/powershell/exchange/connect-to-scc-powershell) |
-|[阶段 3：哈希并上载敏感信息源表，以精确匹配敏感信息类型](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|- 自定义安全组和用户帐户 </br>- **从一台计算机进行** 哈希和上载：本地管理员访问具有直接 Internet 访问权限的计算机和托管 EDM Upload代理 </br>- **从** 单独的计算机进行哈希和上载：本地管理员访问具有直接 Internet 访问权限的计算机，并托管 EDM Upload 代理，用于上传和本地管理员访问安全计算机以托管 EDM Upload 代理以哈希处理敏感信息源表 </br>- 对敏感信息源表文件的读取访问权限 </br> 架构文件 |
+|[阶段 2：为基于准确数据匹配的敏感信息类型创建架构](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- 访问网站中的敏感信息类型Microsoft 365 管理中心 </br>- 通过安全[Microsoft 365 管理中心合规性 PowerShell 访问&访问](/powershell/exchange/connect-to-scc-powershell) |
+|[阶段 3：哈希并上载敏感信息源表，以精确匹配敏感信息类型](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|- 自定义安全组和用户帐户 </br>- **从一台计算机进行** 哈希和上载：本地管理员访问具有直接 Internet 访问权限的计算机和托管 EDM Upload代理 </br>- 从单独的计算机 **进行** 哈希和上载：本地管理员访问具有直接 Internet 访问权限的计算机，并托管 EDM Upload 代理，用于上载和本地管理员访问安全计算机以托管 EDM Upload 代理以哈希处理敏感信息源表 </br>- 对敏感信息源表文件的读取访问权限 </br> 架构文件 |
 |[阶段 4：创建准确数据匹配敏感信息类型/规则包](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) |- 访问 Microsoft 365 合规中心 |
-|[测试准确数据匹配敏感信息类型](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| - 访问 Microsoft 365 合规中心
+|[测试基于精确数据匹配的敏感信息类型](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| - 访问 Microsoft 365 合规中心
 
 ## <a name="see-also"></a>另请参阅
 
-- [了解基于精确数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
-- [导出基于准确数据匹配的敏感信息类型的源数据](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)
+- [了解基于确切数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [为基于精确数据匹配的敏感信息类型导出源数据](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)

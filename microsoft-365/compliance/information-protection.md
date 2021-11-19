@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: 实施 Microsoft 信息保护 (MIP)，无论在何处生活或旅居在外，均可助你保护敏感信息。
-ms.openlocfilehash: d5a9cbf4aab78c91e9ffbe3897f84b24d46e4f84
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d011877bf31e996144b73978337ad63cb3a22c6a
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177503"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071386"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息保护
 
@@ -39,9 +39,6 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
 
 ## <a name="know-your-data"></a>了解你的数据
 
-> [!NOTE]
-> 有关在 Azure Purview 中对数据进行分类和标记的详细信息，请参阅当前处于预览中的[在 Azure Purview 中自动标记内容](/azure/purview/create-sensitivity-label)。
-
 若要了解在混合环境中的数据全景并发现重要数据，请使用以下功能：
 
 |功能|它能解决什么问题？|开始行动|
@@ -49,6 +46,7 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
 |[敏感信息类型](sensitive-information-type-learn-about.md)| 使用内置或自定义正则表达式或函数识别敏感数据。补强证据包括关键字、可信度和接近度。| [自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)|
 |[可训练的分类器](classifier-learn-about.md)| 通过使用您感兴趣的数据示例而不是识别项中的元素来标识敏感数据（模式匹配）。 可使用内置分类器，或使用自己的内容培训分类器。| [可训练的分类器入门](classifier-get-started-with.md) |
 |[数据分类](data-classification-overview.md) | 组织中具有敏感度标签、保留标签或已分类的项目的图形标识。 此信息还可用于深入了解用户正在针对这些项目采取的操作。 | [内容资源管理器入门](data-classification-content-explorer.md) <p> [活动资源管理器入门](data-classification-activity-explorer.md) |
+|[Azure Purview](/azure/purview/overview) |识别敏感数据并将自动标签应用于 Azure Purview 资产中的任何内容，如 Azure Blob 存储、Azure 文件存储、Azure Data Lake Storage 和多云数据源。 |[在 Azure Purview 中贴标签](/azure/purview/create-sensitivity-label) |
 
 ## <a name="protect-your-data"></a>保护数据
 

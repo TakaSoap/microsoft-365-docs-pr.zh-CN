@@ -17,17 +17,17 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Microsoft 365 安全中心与 Microsoft 365 合规中心根据你组织的当前设置提供数据管理建议，并让你可以通过几次单击进行设置。其中一些建议会检测组织中的特定内容，然后提供管理该内容的建议步骤。例如，建议可能会检测包含业务关键内容的项目（如律师-客户特权或 NDA 信息），然后让你自动为这些项目应用保留标签，以确保根据需要对它们进行分类和保留。本主题列出了你可能会看到的数据管理建议，并介绍了为触发每条建议而检测的内容。
-ms.openlocfilehash: f6343ab8856393f1928edfdb917e26fe9d72cc97
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+description: Microsoft 365 Defender 门户和 Microsoft 365 合规性中心根据组织的当前设置为数据治理提供建议，并使你只需几次点击即可进行设置。 其中一些建议检测组织中的特定内容，然后提供用于管理该内容的建议步骤。 例如，建议可能会检测包含业务关键内容的项目（如律师-客户特权或 NDA 信息），然后允许你自动将保留标签应用于这些项目，以确保根据需要对其进行分类和保留。 本主题列出了你可能会看到的数据治理建议，并介绍了为触发每条建议而检测的内容。
+ms.openlocfilehash: cddd73fdd0c21605549450968db182883ab7e6ad
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963343"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110963"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>如何确定数据治理建议的内容
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 安全中心</a> 和 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> 根据组织的当前设置提供有关数据治理的建议，并允许你只需单击几下即可进行设置。 其中一些建议检测组织中的特定内容，然后提供用于管理该内容的建议步骤。 例如，建议可能会检测包含业务关键内容的项目（如律师-客户特权或 NDA 信息），然后允许你自动将保留标签应用于这些项目，以确保根据需要对其进行分类和保留。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a> 和 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> 根据组织的当前设置提供有关数据治理的建议，并使你仅需点击几下即可进行设置。 其中一些建议检测组织中的特定内容，然后提供用于管理该内容的建议步骤。 例如，建议可能会检测包含业务关键内容的项目（如律师-客户特权或 NDA 信息），然后允许你自动将保留标签应用于这些项目，以确保根据需要对其进行分类和保留。
 
 本主题列出了你可能会看到的数据治理建议，并介绍了为触发每条建议而检测的内容。
 
@@ -39,13 +39,13 @@ ms.locfileid: "60963343"
 
 当满足以下任一条件时，将显示此建议。
 
-- 在电子邮件正文中检测到以下关键字的任何组合：
+- 在电子邮件正文中会检测到以下关键字的任何组合:
   - ACP
   - 律师客户特权
   - 律师-客户特权
   - 律师-客户特权的
 
-- 在 SharePoint 或 OneDrive 文件中检测到以下关键字的任意组合：
+- 在 SharePoint 或 OneDrive 文件中检测到以下关键字的任意组合:
   - ACP
   - 律师客户特权*
   - AC 特权
@@ -131,12 +131,12 @@ ms.locfileid: "60963343"
 
 当满足以下任一条件时，将显示此建议。
 
-- 在电子邮件正文中检测到以下关键字的任何组合：
+- 在电子邮件正文中会检测到以下关键字的任何组合:
   - NDA
   - “保密协议”
   - “保密协议”
 
-- 在 SharePoint 或 OneDrive 中的 .PDF 或 .DOC 文件中检测到以下关键字的任意组合：
+- 在 SharePoint 或 OneDrive 中的 .PDF 或 .DOC 文件中检测到以下关键字的任意组合:
   - NDA
   - 保密协议
 

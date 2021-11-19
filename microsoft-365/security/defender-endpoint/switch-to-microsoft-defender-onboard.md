@@ -23,12 +23,12 @@ ms.custom:
 ms.topic: article
 ms.date: 10/07/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: ee864bb33b03f51f2529bca0026290fa675c1c4e
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 947ea79442eae471aec2afe9963fb3f3670765e6
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962514"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111539"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>切换到 Microsoft Defender for Endpoint - 阶段 3：载入
 
@@ -53,7 +53,7 @@ ms.locfileid: "60962514"
 
 1. 转到 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>并登录。
 
-2. 选择 **设置** \> **设备管理"** \> **下** (**终结点载入**) 。
+2. 选择 **设置** \> **设备管理** \> **"下** (**终结点载入**) 。
 
 3. 在 **"选择操作系统以开始载入过程"列表中** ，选择操作系统。
 
@@ -66,12 +66,12 @@ ms.locfileid: "60962514"
 
 部署方法因操作系统和首选方法而异。 下表列出了可帮助你载入 Defender for Endpoint 的资源：
 
-|操作系统  |方法  |
+|操作系统  |Methods  |
 |---------|---------|
 |Windows 10或更高版本<br/><br/>Windows Server 2019 或更高版本<br/><br/>Windows Server 版本 1803 或更高版本<br/><br/>Windows Server 2012 R2 和 2016 <sup> [[1](#fn1)]<sup>  |   [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md)<br><br/>   [组策略](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/Intune (移动设备管理) ](configure-endpoints-mdm.md)<br>    [VDI 脚本](configure-endpoints-vdi.md) <br><br> **注意**：本地脚本适用于概念证明，但不应用于生产部署。 对于生产部署，我们建议使用组策略、Microsoft Endpoint Configuration Manager或 Intune。
-|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA) ](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)或 Azure [Defender](/azure/security-center/security-center-wdatp) <br><br> **注意**：Microsoft Monitoring Agent现在为 Azure Log Analytics 代理。 若要了解更多信息，请参阅 [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent)。  
+|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA) ](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) [或 Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **注意**：Microsoft Monitoring Agent现在为 Azure Log Analytics 代理。 若要了解更多信息，请参阅 [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent)。  
 |Windows 8.1 企业版<br/><br/>Windows 8.1 专业版<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA) ](onboard-downlevel.md) <br><br> **注意**：Microsoft Monitoring Agent现在为 Azure Log Analytics 代理。 若要了解更多信息，请参阅 [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent)。  
-| macOS：<br/>11.3.1 (Sur) <br/>10.15 (加泰罗尼亚语) <br/>10.14 (Mojave)  | [本地脚本](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[移动设备管理](mac-install-with-other-mdm.md)   |
+| macOS：<br/>11.3.1 (Big Sur) <br/>10.15 (加泰罗尼亚语) <br/>10.14 (Mojave)  | [本地脚本](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[移动设备管理](mac-install-with-other-mdm.md)   |
 | Linux：<br/>RHEL 7.2+<br/>CentOS Linux 7.2+<br/>Ubuntu 16 LTS 或更高版本 LTS<br/>SLES 12+<br/>Debian 9+<br/>Oracle Linux 7.2 |  [本地脚本](linux-install-manually.md) <br><br/> [百分百](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)|  
 | iOS | [Microsoft Endpoint Manager](ios-install.md)     |
 |Android  | [Microsoft Endpoint Manager](android-intune.md)               | 
@@ -79,7 +79,7 @@ ms.locfileid: "60962514"
 
 
 
- (<a id="fn1">1</a>) Windows Server 2016和 Windows Server 2012 R2 将需要按照载入服务器中的说明[Windows载入](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
+ (<a id="fn1">1</a>) Windows Server 2016 Windows Server 2012 R2 将需要按照载入服务器中的说明Windows[载入](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
 
 
 ## <a name="run-a-detection-test"></a>运行检测测试
@@ -90,29 +90,29 @@ ms.locfileid: "60962514"
 
 |操作系统|指南|
 |---|---|
-|Windows 10或更高版本<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Server 版本 1803 或更高版本<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|请参阅 [运行检测测试](run-detection-test.md)。<br/><br/>访问 Defender for Endpoint 演示方案站点 () <https://demo.wd.microsoft.com> 并尝试一个或多个方案。 例如，尝试 **云提供的保护演示** 方案。|
-|macOS：<br/> 11.3.1 (Sur) <br/>10.15 (加泰罗尼亚语) <br/>10.14 (Mojave) |从 下载并使用 DIY 应用 <https://aka.ms/mdatpmacosdiy> 。 <br/><br/> 有关详细信息，请参阅[macOS 上的 Defender for Endpoint。](microsoft-defender-endpoint-mac.md)|
+|Windows 10或更高版本<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Server 版本 1803 或更高版本<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|请参阅 [运行检测测试](run-detection-test.md)。<br/><br/>访问 Defender for Endpoint 演示方案站点 <https://demo.wd.microsoft.com> () 并尝试一个或多个方案。 例如，尝试 **云提供的保护演示** 方案。|
+|macOS：<br/> 11.3.1 (Big Sur) <br/>10.15 (加泰罗尼亚语) <br/>10.14 (Mojave) |从 下载并使用 DIY 应用 <https://aka.ms/mdatpmacosdiy> 。 <br/><br/> 有关详细信息，请参阅[macOS 上的 Defender for Endpoint。](microsoft-defender-endpoint-mac.md)|
 |Linux：<br/> RHEL 7.2+<br/>CentOS Linux 7.2+<br/>Ubuntu 16 LTS 或更高版本 LTS<br/>SLES 12+<br/>Debian 9+<br/>Oracle Linux 7.2|1. 运行以下命令，并查找 **结果 1：。** `mdatp health --field real_time_protection_enabled`<br/><br/>2. 打开"终端"窗口，并运行以下命令 `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` ：。<br/><br/>3. 运行以下命令列出任何检测到的威胁 `mdatp threat list` ：。<br/><br/>有关详细信息，请参阅[Linux 上的 Defender for Endpoint。](microsoft-defender-endpoint-linux.md)|
 
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>确认Microsoft Defender 防病毒终结点处于被动模式
 
-现在，终结点已载入到 Defender for Endpoint，下一步是确保Microsoft Defender 防病毒处于被动模式。 您可以使用多种方法之一，如下表所述：
+现在，终结点已载入到 Defender for Endpoint，下一步是确保Microsoft Defender 防病毒被动模式运行。 您可以使用多种方法之一，如下表所述：
 
 <br/><br/>
 
 |方法|需执行的操作|
 |---|---|
-|命令提示符|1. 在Windows上，打开命令提示符。<br/><br/>2. 键入 `sc query windefend` ，然后按 Enter。<br/><br/>3. 查看结果以确认Microsoft Defender 防病毒处于被动模式。|
+|命令提示符|1. 在Windows上，打开命令提示符。<br/><br/>2. 键入 `sc query windefend` ，然后按 Enter。<br/><br/>3. 查看结果，确认Microsoft Defender 防病毒被动模式运行。|
 |PowerShell|1. 在Windows上，以Windows PowerShell打开"登录"。<br/><br/>2. 运行以下 PowerShell cmdlet：。 `Get-MpComputerStatus|select AMRunningMode` <br/><br/>3. 查看结果。 你应该会看到被动 **模式**。|
-|Windows 安全中心应用|1. 在Windows上，打开Windows 安全中心应用。<br/><br/>2. 选择 **病毒&威胁防护。**<br/><br/>3. Who **保护我？** 选择管理 **提供程序**。<br/><br/>4. 在"**安全提供程序"** 页上的"**防病毒**"下 **，Microsoft Defender 防病毒"打开"。**|
+|Windows 安全中心应用|1. 在Windows上，打开Windows 安全中心应用。<br/><br/>2. 选择 **病毒&威胁防护。**<br/><br/>3. **Who保护我？** 选择管理 **提供程序**。<br/><br/>4. 在"**安全提供程序**"页上的"**防病毒**"下 **，Microsoft Defender 防病毒"打开"。**|
 |任务管理器|1. 在Windows上，打开"任务管理器"应用。<br/><br/>2. 选择" **详细信息"** 选项卡。在 **MsMpEng.exe** 查找列表。|
 
 > [!NOTE]
-> 在某些版本的 *Windows Defender 防病毒，Microsoft Defender 防病毒* 可能会看到Windows。 
+> 在某些版本的 *Windows Defender 防病毒* 中 *，Microsoft Defender 防病毒* 可能会看到 Windows。
 > 若要了解有关被动模式和主动模式的详细信息，请参阅有关被动Microsoft Defender 防病毒[的详细信息](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states)。
 
-### <a name="set-microsoft-defender-antivirus-on-windows-server-to-passive-mode-manually"></a>手动Microsoft Defender 防病毒 Windows将 Windows 设置为被动模式
+### <a name="set-microsoft-defender-antivirus-on-windows-server-to-passive-mode-manually"></a>手动Microsoft Defender 防病毒 Windows服务器设置为被动模式
 
 若要 Microsoft Defender 防病毒在 Windows Server、版本 1803 或更高版本、Windows Server 2019 或 Windows Server 2022 上将 Windows 设置为被动模式，请按照以下步骤操作：
 
@@ -120,7 +120,7 @@ ms.locfileid: "60962514"
 
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
-2. 编辑 (或创建) **ForceDefenderPassiveMode** 的 DWORD 条目，并指定以下设置：
+2. 编辑 (或) 名为 **ForceDefenderPassiveMode** 的 DWORD 条目，并指定以下设置：
    - 将 DWORD 的值设置为 **1。**
    - 在 **"基本**"下，**选择"十六进制"。**
 
@@ -133,7 +133,7 @@ ms.locfileid: "60962514"
 
 ### <a name="start-microsoft-defender-antivirus-on-windows-server-2016"></a>从Microsoft Defender 防病毒开始Windows Server 2016
 
-如果要使用Windows Server 2016，可能需要手动Microsoft Defender 防病毒启动。 可以在设备上使用 PowerShell cmdlet `mpcmdrun.exe -wdenable` 执行此任务。
+如果要使用Windows Server 2016，可能需要手动启动Microsoft Defender 防病毒。 可以在设备上使用 PowerShell cmdlet `mpcmdrun.exe -wdenable` 执行此任务。
 
 ## <a name="get-updates-for-microsoft-defender-antivirus"></a>获取更新Microsoft Defender 防病毒
 

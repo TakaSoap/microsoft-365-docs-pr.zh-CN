@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.localizationpriority: medium
 description: 了解将帮助您快速开始使用 Microsoft 365 中Microsoft 365。
-ms.openlocfilehash: 640569aef5ed1b632d11523af1d73321579f276e
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 621bcbdbbe38be4cbda79e5cf6afcc9846f87e0d
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963007"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111035"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 合规性入门快速任务
 
@@ -48,7 +48,7 @@ ms.locfileid: "60963007"
 > [!IMPORTANT]
 > 大多数组织都紧密集成了安全性和合规性。 组织解决基本安全、威胁防护、标识和访问管理方面的问题非常重要，这有助于提供针对安全性和合规性的深层防御方法。
 >
-> 检查[Microsoft 365安全](../security/defender/microsoft-secure-score.md)中心Microsoft 365安全分数，并<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>完成以下文章中概述的任务：
+> 在[Microsoft 365门户](../security/defender/microsoft-secure-score.md)中检查Microsoft 365 Defender安全分数，<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>并完成以下文章中概述的任务：
 >
 > - [安全路线图 - 前 30 天、前 90 天及以后的首要任务](../security/office-365-security/security-roadmap.md)
 > - [支持在家工作的安全团队的 12 大任务](../security/top-security-tasks-for-remote-work.md)
@@ -149,14 +149,14 @@ Microsoft 提供了几个内置警报策略，可帮助识别管理员权限滥�
 
 ### <a name="prevent-data-loss"></a>防止数据丢失
 
-[通过 DLP (数据丢失](dlp-learn-about-dlp.md)) ，您可以识别、监视和自动保护组织中敏感信息Microsoft 365。 使用 DLP 策略可标识整个 Microsoft 服务 中的敏感项目，防止意外共享敏感项目，并帮助用户了解如何保持合规性而不会中断其工作流。
+[通过 DLP (策略) ](dlp-learn-about-dlp.md)数据丢失防护，您可以识别、监视和自动保护组织中Microsoft 365敏感信息。 使用 DLP 策略可标识整个 Microsoft 服务 中的敏感项目，防止意外共享敏感项目，并帮助用户了解如何保持合规性而不会中断其工作流。
 
-有关配置 DLP 策略的分步指南，请 [创建](create-test-tune-dlp-policy.md)、测试和调整 DLP 策略。 有关数据丢失管理许可信息，请参阅Microsoft 365安全[与合规&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)。
+有关配置 DLP 策略的分步指南，请 [创建](create-test-tune-dlp-policy.md)、测试和调整 DLP 策略。 有关数据丢失管理许可信息，请参阅Microsoft 365[安全与合规&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)。
 
 ### <a name="detect-and-act-on-insider-risks"></a>检测内部风险并采取行动
 
 越来越多的员工拥有创建、管理和共享各种平台和服务的数据的访问权。 在大多数情况下，组织具有有限的资源和工具来识别和缓解组织范围内的风险，同时还满足合规性要求和员工隐私标准。 这些风险可能包括因员工离职而窃取数据，以及因意外泄露或恶意意图而泄露组织外部信息。
 
-[Microsoft 365中的](insider-risk-management-policies.md)内部风险管理使用整个服务和第三方指标来帮助你快速识别、会审和操作有风险的用户活动。 通过使用来自Microsoft 365和Microsoft Graph的日志，内部风险管理允许你定义特定策略来识别风险指示器并采取措施来缓解这些风险。
+[Microsoft 365中的](insider-risk-management-policies.md)内部风险管理使用整个服务和第三方指示器来帮助你快速识别、会审和操作有风险的用户活动。 通过使用来自Microsoft 365和Microsoft Graph的日志，内部风险管理允许你定义特定策略来识别风险指示器并采取措施来缓解这些风险。
 
 有关计划和配置内部风险管理策略的分步指南，请参阅规划内部风险管理和内部[](insider-risk-management-plan.md)[风险管理入门](insider-risk-management-configure.md)。 有关内部风险管理许可信息，请参阅Microsoft 365安全[与合规&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management)。

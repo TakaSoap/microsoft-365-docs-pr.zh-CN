@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 198b5d0392b5984f6bbb434bcf524660371b7437
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: ebc95d273d75310b3737823abda8b2341d286fc6
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881873"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110747"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>为 Microsoft Defender 更新创建自定义逐步推出过程
 
@@ -46,10 +46,10 @@ ms.locfileid: "60881873"
 
 |设置标题|说明|Location|
 |---|---|---|
-|选择逐步 Microsoft Defender 每月平台更新推出通道|启用此策略可指定设备在每月逐步推出期间何时接收 Microsoft Defender 平台更新。 <p> Beta 渠道：设置为此频道的设备将是第一个接收新更新的设备。 选择 Beta 渠道以参与识别问题并报告给 Microsoft。 默认情况下，Windows预览体验计划中的设备订阅到此频道。 用于 (手动) 测试环境和有限数量的设备。 <p> Current Channel (Preview) ：设置为此频道的设备将在每月逐步发布周期内最早提供更新。 建议用于预生产/验证环境。 <p> Current Channel (Staged) ： Devices will be offered updates after the monthly gradual release cycle. 建议应用于生产总体中具有代表性的较小部分 (大约 10%) 。 <p> Current Channel (Broad) ： Devices will be offered updates only after the gradual release cycle completes. 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。 <p> Critical- Time Delay：将为设备提供延迟为 48 小时的更新。 仅针对关键环境建议。 <p>如果禁用或不配置此策略，设备将在逐步发布周期中自动保持最新状态。 适用于大多数设备。|WindowsComponents\Microsoft Defender 防病毒|
-|选择逐步 Microsoft Defender 每月引擎更新推出频道|启用此策略可指定设备在每月逐步推出期间何时接收 Microsoft Defender 引擎更新。 <p> Beta 渠道：设置为此频道的设备将是第一个接收新更新的设备。 选择 Beta 渠道以参与识别问题并报告给 Microsoft。 默认情况下，Windows预览体验计划中的设备订阅到此频道。 用于 (手动) 测试环境和有限数量的设备。 <p> Current Channel (Preview) ：设置为此频道的设备将在每月逐步发布周期内最早提供更新。 建议用于预生产/验证环境。 <p> Current Channel (Staged) ： Devices will be offered updates after the monthly gradual release cycle. 建议应用于生产总体中具有代表性的较小部分 (大约 10%) 。 <p> Current Channel (Broad) ： Devices will be offered updates only after the gradual release cycle completes. 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。 <p> Critical- Time Delay：将为设备提供延迟为 48 小时的更新。 仅针对关键环境建议。<p> 如果禁用或不配置此策略，设备将在逐步发布周期中自动保持最新状态。 适用于大多数设备。|WindowsComponents\Microsoft Defender 防病毒|
-|选择逐步 Microsoft Defender 每日安全智能更新推出通道|启用此策略可指定设备在每日逐步推出期间何时接收 Microsoft Defender 安全智能更新。 <p> Current Channel (Staged) ： Devices will be offered updates after the release cycle. 建议应用于生产总体中具有代表性的一小部分 (约 10%) 。 <p> Current Channel (Broad) ： Devices will be offered updates only after the gradual release cycle completes. 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。 <p>  如果禁用或不配置此策略，设备将在每日发布周期内自动保持最新状态。 适用于大多数设备。|WindowsComponents\Microsoft Defender 防病毒|
-|禁用 Microsoft Defender 更新的逐步推出|启用此策略可禁用 Defender 更新的逐步推出。 <p> Current Channel (Broad) ： Devices set to this channel will be offered updates last during the gradual release cycle. 最适合仅接收有限更新的数据中心计算机。 <p> 注意：此设置适用于每月和每日 Defender 更新，将覆盖之前为平台和引擎更新配置的任何频道选择。 <p> 如果禁用或不配置此策略，设备将保留在当前频道 (默认) 除非在平台和引擎更新的特定频道中另行指定。 在逐步发布周期中自动保持最新。 适用于大多数设备。|WindowsComponents\Microsoft Defender 防病毒|
+|选择逐步 Microsoft Defender 每月平台更新推出通道|启用此策略可指定设备在每月逐步推出期间何时接收 Microsoft Defender 平台更新。 <p> Beta 渠道：设置为此频道的设备将是第一个接收新更新的设备。 选择 Beta 渠道以参与识别问题并报告给 Microsoft。 默认情况下，Windows预览体验计划中的设备订阅到此频道。 用于 (手动) 测试环境和有限数量的设备。 <p> 当前频道 (预览) ：设置为此频道的设备将在每月逐步发布周期内最早提供更新。 建议用于预生产/验证环境。 <p> Current Channel (Staged) ： Devices will be offered updates after the monthly gradual release cycle. 建议应用于生产总体中具有代表性的较小部分 (约 10%) 。 <p> Current Channel (Broad) ： Devices will be offered updates only after the gradual release cycle completes. 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。 <p> Critical- Time Delay：将为设备提供延迟为 48 小时的更新。 仅针对关键环境建议。 <p>如果禁用或不配置此策略，设备将在逐步发布周期中自动保持最新。 适用于大多数设备。|Windows Components\Microsoft Defender 防病毒|
+|选择逐步 Microsoft Defender 每月引擎更新推出频道|启用此策略可指定设备在每月逐步推出期间何时接收 Microsoft Defender 引擎更新。 <p> Beta 渠道：设置为此频道的设备将是第一个接收新更新的设备。 选择 Beta 渠道以参与识别问题并报告给 Microsoft。 默认情况下，Windows预览体验计划中的设备订阅到此频道。 用于 (手动) 测试环境和有限数量的设备。 <p> 当前频道 (预览) ：设置为此频道的设备将在每月逐步发布周期内最早提供更新。 建议用于预生产/验证环境。 <p> Current Channel (Staged) ： Devices will be offered updates after the monthly gradual release cycle. 建议应用于生产总体中具有代表性的较小部分 (约 10%) 。 <p> Current Channel (Broad) ： Devices will be offered updates only after the gradual release cycle completes. 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。 <p> Critical- Time Delay：将为设备提供延迟为 48 小时的更新。 仅针对关键环境建议。<p> 如果禁用或不配置此策略，设备将在逐步发布周期中自动保持最新。 适用于大多数设备。|Windows Components\Microsoft Defender 防病毒|
+|选择逐步 Microsoft Defender 每日安全智能更新推出通道|启用此策略可指定设备在每日逐步推出期间何时接收 Microsoft Defender 安全智能更新。 <p> Current Channel (Staged) ： Devices will be offered updates after the release cycle. 建议应用于生产总体中具有代表性的较小部分 (约 10%) 。 <p> Current Channel (Broad) ： Devices will be offered updates only after the gradual release cycle completes. 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。 <p>  如果禁用或不配置此策略，设备将在每日发布周期内自动保持最新状态。 适用于大多数设备。|Windows Components\Microsoft Defender 防病毒|
+|禁用 Microsoft Defender 更新的逐步推出|启用此策略可禁用 Defender 更新的逐步推出。 <p> Current Channel (Broad) ： Devices set to this channel will be offered updates last during the gradual release cycle. 最适合仅接收有限更新的数据中心计算机。 <p> 注意：此设置适用于每月和每日 Defender 更新，将覆盖之前为平台和引擎更新配置的任何频道选择。 <p> 如果禁用或不配置此策略，设备将保留在当前频道 (默认) 除非在平台和引擎更新的特定通道中另行指定。 在逐步发布周期中自动保持最新。 适用于大多数设备。|Windows Components\Microsoft Defender 防病毒|
 |
 
 ## <a name="group-policy"></a>组策略
@@ -69,7 +69,7 @@ ms.locfileid: "60881873"
 
 4. 展开树以Windows **组件> Microsoft Defender 防病毒。**
 
-5. 展开本主题 (中称为"位置"的部分) 其中包含要配置的设置，双击该设置将其打开，然后进行配置更改。
+5. 展开本主题 (表中称为"位置"的部分) 其中包含要配置的设置，双击该设置将其打开，然后进行配置更改。
 
 6. [像平常一样部署更新的 GPO。](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx)
 
@@ -99,4 +99,4 @@ Set-MpPreference
 
 用于 `Set-MpPreference -PlatformUpdatesChannel Beta` 配置平台更新以从 Beta 渠道到达。
 
-有关参数以及如何配置参数的信息，请参阅 [Set-MpPreference (Defender) |Microsoft Docs](/powershell/module/defender/set-mppreference)。
+有关参数以及如何配置参数的信息，请参阅[Set-MpPreference (Microsoft Defender 防病毒) |Microsoft Docs](/powershell/module/defender/set-mppreference)。

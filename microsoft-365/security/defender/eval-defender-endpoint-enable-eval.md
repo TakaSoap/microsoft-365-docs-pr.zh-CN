@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ddf7af50edd8f86ec7bc176d851ae2ba98b8fa51
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0d577426477ea0ebc5fc4e6d83fa84fcfc113123
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181147"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111515"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>启用 Microsoft Defender for Endpoint 评估环境
 
@@ -47,7 +47,7 @@ ms.locfileid: "60181147"
 
 ## <a name="step-1-check-license-state"></a>步骤 1. 检查许可证状态
 
-首先需要检查许可证状态，以验证是否正确预配了许可证状态。 可以通过管理中心或管理门户Microsoft Azure **此操作**。
+首先需要检查许可证状态，以验证是否正确预配了许可证状态。 可以通过管理中心或管理中心门户 **Microsoft Azure此操作**。
 
 
 1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
@@ -66,7 +66,7 @@ ms.locfileid: "60181147"
 
 为了评估适用于终结点的 Microsoft Defender，我们建议选择Windows一台进行评估的设备。
 
-你可以选择使用任何受支持的管理工具，但 Intune 提供了最佳集成。 有关详细信息，请参阅在 Microsoft Intune 中[为终结点配置 Microsoft Defender。](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)
+你可以选择使用任何受支持的管理工具，但 Intune 提供了最佳集成。 有关详细信息，请参阅配置[Microsoft Defender for Endpoint in Microsoft Intune。](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)
 
 规划 [部署](../defender-endpoint/deployment-strategy.md) 主题概述了部署 Defender for Endpoint 所需的一般步骤。  
 
@@ -80,8 +80,8 @@ ms.locfileid: "60181147"
 
 端点 | 工具选项
 :---|:---
-**Windows** | [本地脚本 (最多 10](../defender-endpoint/configure-endpoints-script.md)台设备) 、组策略[、Microsoft Endpoint Manager/移动设备](../defender-endpoint/configure-endpoints-mdm.md)管理器[、Microsoft Endpoint Configuration Manager、VDI](../defender-endpoint/configure-endpoints-sccm.md)[脚本](../defender-endpoint/configure-endpoints-vdi.md)、[与 Azure Defender 集成](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)[](../defender-endpoint/configure-endpoints-gp.md)
-**macOS** | [本地脚本](../defender-endpoint/mac-install-manually.md) [、Microsoft Endpoint Manager、JAMF](../defender-endpoint/mac-install-with-intune.md) [Pro](../defender-endpoint/mac-install-with-jamf.md)移动设备[管理](../defender-endpoint/mac-install-with-other-mdm.md)
+**Windows** | [本地脚本 (最多 10](../defender-endpoint/configure-endpoints-script.md)台设备) 、组策略[、Microsoft Endpoint Manager/移动设备](../defender-endpoint/configure-endpoints-mdm.md)管理器[、Microsoft Endpoint Configuration Manager、VDI](../defender-endpoint/configure-endpoints-sccm.md)[脚本](../defender-endpoint/configure-endpoints-vdi.md)、与[Microsoft Defender for Cloud 集成](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)[](../defender-endpoint/configure-endpoints-gp.md)
+**macOS** | [本地脚本](../defender-endpoint/mac-install-manually.md)、 [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md)、 [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)、[移动设备管理](../defender-endpoint/mac-install-with-other-mdm.md)
 **Linux Server** | [本地脚本](../defender-endpoint/linux-install-manually.md)  [、安装](../defender-endpoint/linux-install-with-puppet.md)  [、Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **iOS** | [基于应用](../defender-endpoint/ios-install.md)
 **Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md)

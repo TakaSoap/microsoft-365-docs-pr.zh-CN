@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e9c58df0c79479d8dabe8d3a31edd6bfecc5aacd
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 52c99b4c43f17a551929cb657fb4eb9ea3420d51
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960798"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111270"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>网络设备发现和漏洞管理
 
@@ -39,7 +39,7 @@ ms.locfileid: "60960798"
 > [!NOTE]
 > 2021 年 4 月[](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 13 日发布的网络设备发现和漏洞评估博客提供了有关 Defender for Endpoint 中新网络设备发现功能的 \) 见解。  本文概述了网络设备发现旨在应对的挑战，并详细介绍了如何使用这些新功能。
 
-网络发现功能在安全 Microsoft 365中心和Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">控制台</a>的"设备Microsoft 365 Defender部分中提供。
+网络发现功能在 Microsoft 365 Defender 和Microsoft 365 Defender 控制台的设备<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>清单部分提供。
 
 指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 一旦发现，适用于终结点的 defender 危险和漏洞管理 功能将提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。
 
@@ -47,7 +47,7 @@ ms.locfileid: "60960798"
 
 ## <a name="approach"></a>方法
 
-由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备使用 SNMP 或只读 (对网络设备执行经过身份验证) 。
+由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备使用 SNMP (只读) 对网络设备执行经过身份验证的扫描。
 
 需要记住两种类型的设备：
 
@@ -73,15 +73,15 @@ ms.locfileid: "60960798"
 
 第一步是选择将执行经过身份验证的网络扫描的设备。
 
-1. 确定 Defender for Endpoint 载入 (客户端或) ，该客户端或服务器具有与计划扫描的网络设备的管理端口的网络连接。
+1. 确定适用于终结点的 Defender (客户端或) ，该客户端或服务器具有与计划扫描的网络设备的管理端口的网络连接。
 
 2. 必须允许 Defender for Endpoint 评估设备和目标网络设备之间的 SNMP 流量 (例如，防火墙) 。
 
-3. 确定将评估哪些网络设备是否具有漏洞 (例如：Cisco 交换机或 Palo Alto Networks 防火墙) 。
+3. 确定将评估哪些网络设备以发现漏洞 (例如：Cisco 交换机或 Palo Alto Networks 防火墙) 。
 
 4. 确保在所有已配置的网络设备上启用 SNMP 只读，以允许 Defender for Endpoint 评估设备查询配置的网络设备。 此功能的正确功能不需要"SNMP 写入"。
 
-5. 获取要扫描的网络设备或 (部署这些设备的子网的 IP) 。
+5. 获取要扫描的网络设备的 IP 地址 (或将这些设备部署到的子网) 。
 
 6. 获取网络设备的 SNMP 凭据 (例如：Community String、noAuthNoPriv、authNoPriv、authPriv) 。 配置新的评估作业时，需要提供凭据。
 
@@ -99,11 +99,11 @@ ms.locfileid: "60960798"
 
 ## <a name="permissions"></a>权限
 
-若要配置评估作业，需要以下用户权限选项： **在安全中心管理安全设置**。 可以通过访问角色 来设置 \> **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
+若要配置评估作业，需要以下用户权限选项：在 **Defender 中管理安全设置**。 可以通过访问角色 来设置 \> **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
 
 ## <a name="install-the-network-scanner"></a>安装网络扫描程序
 
-1. 转到网络 **Microsoft 365下** \> **设置** \> **终结点** 评估 (\> **作业) 。**
+1. 转到 **"Microsoft 365网络** \>  \> **设置"** 下 (\> **安全终结点评估**) 。
     1. 在Microsoft 365 Defender门户中，转到"设置 >作业"页。
 
 2. 下载网络扫描程序，将其安装在指定的 Defender for Endpoint 评估设备上。
@@ -113,7 +113,7 @@ ms.locfileid: "60960798"
 
 ## <a name="network-scanner-installation--registration"></a>网络扫描程序安装&注册
 
-登录过程可以在指定的评估设备本身或其他任何设备（例如， (客户端设备）上) 。
+登录过程可以在指定的评估设备本身或其他任何设备（例如 (，你的个人客户端设备）上) 。
 
 要完成网络扫描程序注册过程，请执行以下操作：
 
@@ -122,7 +122,7 @@ ms.locfileid: "60960798"
     > [!NOTE]
     > 您可能需要更改命令提示符设置才能复制 URL。
 
-2. 输入代码，然后使用具有名为"在安全中心管理安全设置"的 Defender for Endpoint 权限的 Microsoft 帐户登录。
+2. 输入代码，然后使用具有名为"在 Defender 中管理安全设置"的 Defender for Endpoint 权限的 Microsoft 帐户登录。
 
 3. 完成后，应该会看到一条消息，确认你已登录。
 
@@ -165,7 +165,7 @@ ms.locfileid: "60960798"
 > [!div class="mx-imgBorder"]
 > !["设备清单"中的"网络设备"部分。](images/assessment-jobs-device-inventory.png)
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 ### <a name="network-scanner-installation-has-failed"></a>网络扫描程序安装失败
 
@@ -189,7 +189,7 @@ ms.locfileid: "60960798"
 
 ### <a name="required-threat-and-vulnerability-management-user-permission"></a>必需的危险和漏洞管理用户权限
 
-注册后出现错误："看起来你没有足够的权限添加新代理。 所需权限为"在安全中心管理安全设置"。
+注册后出现错误："看起来你没有足够的权限添加新代理。 所需权限为"在 Defender 中管理安全设置"。
 
 按任意键退出。
 

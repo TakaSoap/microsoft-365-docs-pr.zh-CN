@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 6ada32650a01f3303a9c3c9011f5465dab5f5184
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c19189ab33fca3c537347c0d20d14d602fe99da3
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206873"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109031"
 ---
 # <a name="threat-protection"></a>威胁防护
 
@@ -112,7 +112,7 @@ ms.locfileid: "60206873"
 <a name="mte"></a>
 
 **[Microsoft 威胁专家](microsoft-threat-experts.md)**<br>
-Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供主动搜寻、优先顺序和其他上下文和见解。 Microsoft 威胁专家使安全操作中心 (SOC) 快速准确地识别和响应威胁。
+Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供主动搜寻、优先顺序和其他上下文和见解。 Microsoft 威胁专家使安全运营中心 (SOC) 快速准确地识别和响应威胁。
 
 - [目标攻击通知](microsoft-threat-experts.md)
 - [专家按需](microsoft-threat-experts.md)
@@ -134,9 +134,9 @@ Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供主动搜寻
 - Intune
 - Microsoft Defender for Office 365
 - Microsoft Defender for Identity
-- Azure Defender
+- Microsoft Defender for Cloud
 - Skype for Business
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 
 <a name="mtp"></a>
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>

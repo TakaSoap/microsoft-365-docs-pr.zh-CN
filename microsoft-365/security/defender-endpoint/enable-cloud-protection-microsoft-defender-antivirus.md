@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b523956d031ee96d8d6a23215bf88661b1995d3a
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 0a84fb78ef46c63016de936b035611b8fcabdebe
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555040"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109331"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>在云中打开云Microsoft Defender 防病毒
 
@@ -52,7 +52,7 @@ ms.locfileid: "60555040"
 
 2. 在"**主页"** 窗格中，选择"设备 **配置>配置文件"。**
 
-3. 选择要 **配置的设备** 限制配置文件类型。 如果需要创建新的设备限制配置文件类型，请参阅配置设备[限制Microsoft Intune。](/intune/device-restrictions-configure)
+3. 选择要 **配置的设备** 限制配置文件类型。 如果你需要创建新的设备限制配置文件类型，请参阅配置设备[限制Microsoft Intune。](/intune/device-restrictions-configure)
 
 4. 选择 **"属性** \> **配置设置：编辑** \> **Microsoft Defender 防病毒"。**
 
@@ -70,7 +70,7 @@ ms.locfileid: "60555040"
 
 3. 选择防病毒配置文件。  (如果还没有配置文件，或者要创建新的配置文件，请参阅配置 Microsoft Intune 中的[设备Microsoft Intune。](/intune/device-restrictions-configure)
 
-4. 选择 **"属性"。** 然后，在"配置 **设置"旁边，选择**"编辑 **"。**
+4. 选择 **"属性"。** 然后，在"配置 **设置"旁边，** 选择"编辑 **"。**
 
 5. 展开 **"云** 保护"，然后在" **云提供的** 保护级别"列表中，选择下列选项之一：
    - **高**：应用强级别的检测。
@@ -79,7 +79,7 @@ ms.locfileid: "60555040"
 
 6. 选择 **"审阅 + 保存"，** 然后选择"**保存"。**
 
-有关配置反恶意软件Microsoft Endpoint Configuration Manager，请参阅如何创建和部署[反恶意软件策略：云保护服务](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)。
+有关配置反恶意软件Microsoft Endpoint Configuration Manager，请参阅如何创建[和部署反恶意软件策略：云保护服务](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)。
 
 ## <a name="use-group-policy-to-turn-on-cloud-protection"></a>使用组策略启用云保护
 
@@ -99,8 +99,8 @@ ms.locfileid: "60555040"
    - **发送所有示例 (** 3) 
 
    >[!NOTE]
-   > " **发送安全示例** (1) 选项意味着将自动发送大多数示例。 可能包含个人信息的文件仍将提示并需要其他确认。
-   > 将选项设置为"始终 **提示** (0) 会降低设备的保护状态。 将其设置为"从不 **(** 2) "意味着 Microsoft Defender [](configure-block-at-first-sight-microsoft-defender-antivirus.md) for Endpoint 的"首次看到时阻止"功能将不起作用。
+   > " **发送安全 (** 1) "选项意味着将自动发送大多数示例。 可能包含个人信息的文件仍将提示并需要其他确认。
+   > 将选项设置为"始终 **提示** (0) 会降低设备的保护状态。 将其设置为永不 **发送** (2) 意味着 Microsoft Defender [](configure-block-at-first-sight-microsoft-defender-antivirus.md) for Endpoint 的"首次看到时阻止"功能将不起作用。
 
 7. 选择“**确定**”。
 
@@ -113,7 +113,7 @@ Set-MpPreference -MAPSReporting Advanced
 Set-MpPreference -SubmitSamplesConsent SendAllSamples
 ```
 
-若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一起使用，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender cmdlet。](/powershell/module/defender/) [策略 CSP - Defender](/windows/client-management/mdm/policy-csp-defender) 也具有有关 [-SubmitSamplesConsent 的专门详细信息](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)。
+有关如何使用 PowerShell 和 Microsoft Defender 防病毒，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和 Microsoft Defender 防病毒[cmdlet。](/powershell/module/defender/) [策略 CSP - Defender](/windows/client-management/mdm/policy-csp-defender) 还专门提供 [-SubmitSamplesConsent 上的信息](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)。
 
 > [!IMPORTANT]
 > 你可以将 **-SubmitSamplesConsent** 设置为 (`SendSafeSamples` 推荐的默认设置) 、 `NeverSend` 或 `AlwaysPrompt` 。 `SendSafeSamples`该设置意味着将自动发送大多数示例。 可能包含个人信息的文件将导致提示继续，并且需要确认。
@@ -121,7 +121,7 @@ Set-MpPreference -SubmitSamplesConsent SendAllSamples
 
 ## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-protection"></a>使用 Windows Management Instruction (WMI) 启用云保护
 
-对 [**下列** 属性MSFT_MpPreference](/previous-versions/windows/desktop/defender/set-msft-mppreference)类的 Set 方法：
+对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/defender/set-msft-mppreference)类的 Set 方法：
 
 ```WMI
 MAPSReporting
@@ -130,12 +130,12 @@ SubmitSamplesConsent
 
 有关允许的参数详细信息，请参阅Windows Defender [WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>使用应用在个别客户端上启用Windows 安全中心保护
+## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>使用云保护应用在个别客户端Windows 安全中心保护
 
 > [!NOTE]
 > 如果"**为** 报告 Microsoft MAPS 组策略配置本地设置覆盖"设置为"已禁用"，则 Windows 设置 中的基于云的保护设置将灰出且不可用。  通过组策略对象进行的更改必须先部署到个别终结点，然后 Windows 设置中的相关设置才会更新。
 
-1. 打开Windows 安全中心应用，选择任务栏中的防护图标，或搜索 Defender 的"开始"**菜单**。
+1. 打开Windows 安全中心应用，选择任务栏中的防护图标，或搜索"开始"菜单中的 **"Windows 安全中心"。**
 
 2. 选择病毒&**威胁** 防护磁贴 (左侧菜单栏上的防护图标) 然后选择病毒防护威胁防护 **&标签：**
 
@@ -148,7 +148,7 @@ SubmitSamplesConsent
 
 ## <a name="see-also"></a>另请参阅
 
-- [使用 Microsoft 云保护Microsoft Defender 防病毒](cloud-protection-microsoft-defender-antivirus.md)
+- [在云中使用 Microsoft 云Microsoft Defender 防病毒](cloud-protection-microsoft-defender-antivirus.md)
 
 - [如何创建和部署反恶意软件策略：云保护服务](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
 

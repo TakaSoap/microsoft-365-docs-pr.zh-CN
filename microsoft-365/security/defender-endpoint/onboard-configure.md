@@ -1,5 +1,5 @@
 ---
-title: 载入设备和配置适用于终结点功能的 Microsoft Defender
+title: 载入设备并配置 Microsoft Defender for Endpoint 功能
 description: 载入Windows 10设备、服务器、Windows设备，并了解如何运行检测测试。
 keywords: 载入， Microsoft Defender for Endpoint onboarding， sccm， 组策略， mdm， 本地脚本， 检测测试
 ms.prod: m365-security
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d029e2b896a194adce743a678e10c366ce71341
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 5ee4039e2cddc6b071ac8f158d3754899f5d3f7e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239598"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110579"
 ---
-# <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>载入设备和配置适用于终结点功能的 Microsoft Defender
+# <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>载入设备并配置 Microsoft Defender for Endpoint 功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -60,7 +60,7 @@ ms.locfileid: "60239598"
 
 | 端点     | 工具选项                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ 移动设备管理器](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md) <br> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **Windows**  |  [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ 移动设备管理器](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md) <br> [与 Microsoft Defender for Cloud 集成](configure-server-endpoints.md#integration-with-azure-defender)  |
 | **macOS**    | [本地脚本](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [移动设备管理](mac-install-with-other-mdm.md) |
 | **Linux Server** | [本地脚本](linux-install-manually.md) <br> [百分百](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)               |
@@ -74,7 +74,7 @@ ms.locfileid: "60239598"
 
 载入设备后，你将需要配置服务的其他功能。 下表列出了您可以配置的功能，以获得最佳环境保护。
 
-| 功能 | 说明 |
+| 功能 | Description |
 |-|-|
 | [Configure Threat & Vulnerability Management (TVM) ](tvm-prerequisites.md) | 威胁&漏洞管理是 Microsoft Defender for Endpoint 的一个组件，可为安全管理员和安全运营团队提供独特的价值，包括： <br><br> - 实时终结点检测和响应 (EDR) 与终结点漏洞相关的见解。 <br><br> - 事件调查期间有价值的设备漏洞上下文。 <br><br> - 通过 Microsoft Microsoft Intune 的内置修正System Center Configuration Manager。  |
 | [配置 NGP (下一代) ](configure-microsoft-defender-antivirus-features.md) | Microsoft Defender 防病毒是内置反恶意软件解决方案，可为台式机、便携计算机和服务器提供下一代保护。 Microsoft Defender 防病毒包括以下功能：<br> <br>-云提供的保护，用于即时检测和阻止新出现的威胁。 在机器学习和 Intelligent Security Graph 功能的基础上，Microsoft Defender 防病毒的下一代技术包括云提供的保护功能。<br> <br> - 始终使用高级文件和进程行为监视以及其他启发式扫描 (也称为"实时保护") 。<br><br> - 基于机器学习、人工和自动大数据分析以及深度威胁防护研究进行专用保护更新。 |
@@ -85,11 +85,11 @@ ms.locfileid: "60239598"
 
 ## <a name="supported-capabilities-for-windows-devices"></a>支持的设备Windows功能
 
-|操作系统  |Windows 10 & 11  |Windows Server 2012R2 <sup> [[1](#fn1)]<sup></sup>  |<sup>Windows Server 2016[[1](#fn1)]<sup></sup>   |WindowsServer 2019 & 2022|Windows服务器 1803 及以上|
+|操作系统  |Windows 10 & 11  |Windows Server 2012 R2 <sup> [[1](#fn1)]<sup></sup>  |Windows Server 2016 <sup> [[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
 |---------|---------|---------|---------|---------|---------|
 |**保护**    |         |         |         |         |         |
 |攻击面减少规则     |    Y     |   Y      |    Y     |    Y     |    Y     |
-|设备控制     |     Y    |    N     |    网络     |    网络     |    网络     |  
+|设备控制     |     Y    |    N     |    N     |    N     |    N     |  
 |防火墙     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |网络保护     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |下一代保护     |      Y   |    Y     |     Y    |    Y    |    Y   |
@@ -100,17 +100,17 @@ ms.locfileid: "60239598"
 |高级搜寻     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |自定义文件指示器     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |自定义网络指示器     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|EDR阻止&被动模式     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|EDR被动&阻止     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |感知检测传感器     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|终结点&网络设备发现     |      Y   |    N     |     网络    |    网络    |    网络   |
+|终结点&网络设备发现     |      Y   |    N     |     N    |    N    |    N   |
 |||||||
 |**响应**     |         |         |         |||
-|AIR &自动 (调查)     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|AIR &自动 (响应)     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |设备响应功能：隔离、收集调查包、运行 AV 扫描     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |文件响应功能：收集文件、深度分析、阻止文件、停止和隔离过程     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |实时响应    |      Y   |    Y     |     Y    |    Y    |    Y   |
 
- (<a id="fn1">1</a>) 2016 年 1 月指适用于 Windows Server 2012 和 2016 的新式统一解决方案。 有关详细信息，请参阅将 Windows[服务器载入到 Defender for Endpoint 服务](configure-server-endpoints.md)。
+ (<a id="fn1">1</a>) 2016 的新式统一Windows Server 2012解决方案。 有关详细信息，请参阅将 Windows[服务器载入到 Defender for Endpoint 服务](configure-server-endpoints.md)。
 
 >[!NOTE]
 >Windows 7、8.1、Windows Server 2008 R2 包括对 EDR 传感器和使用 SCEP System Center Endpoint Protection (AV) 的支持。

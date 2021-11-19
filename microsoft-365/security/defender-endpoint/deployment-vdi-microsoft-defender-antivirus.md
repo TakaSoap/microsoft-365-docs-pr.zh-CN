@@ -15,12 +15,12 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 23ac32508338771b46ccd30b520da53a471be81a
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 30328a651c5473f4a3d2bcee6244eb39087cb4a6
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882077"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110207"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>虚拟桌面基础结构 （VDI） 环境中 Microsoft Defender 防病毒软件的部署指南
 
@@ -28,13 +28,13 @@ ms.locfileid: "60882077"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-除了标准本地配置或硬件配置之外，您还可以在远程桌面 (Microsoft Defender 防病毒 RDS) 或虚拟桌面基础结构 Microsoft Defender 防病毒 VDI) 环境中使用 (。
+除了标准本地配置或硬件配置之外，还可以在远程桌面 (RDS) 或虚拟桌面基础结构 Microsoft Defender 防病毒 VDI) 环境中使用 (。
 
 有关 Microsoft 远程桌面 服务和 VDI 支持的更多详细信息，请参阅[Azure 虚拟](/azure/virtual-desktop)桌面文档。
 
-对于基于 Azure 的虚拟机，请参阅 Install [Endpoint Protection in Azure Defender](/azure/security-center/security-center-install-endpoint-protection)。
+对于基于 Azure 的虚拟机，请参阅 Install [Endpoint Protection in Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection)。
 
-由于能够轻松地将更新部署到在 VDIs 中运行的 VM，我们缩短了本指南，侧重于如何快速轻松地获取计算机更新。 你不再需要定期创建和密封黄金映像，因为更新会扩展到主机服务器上组件位，然后在虚拟机打开时直接下载到虚拟机。
+通过轻松将更新部署到在 VDIs 中运行的 VM，我们缩短了本指南，侧重于如何快速轻松地获取计算机更新。 你不再需要定期创建和密封黄金映像，因为更新会扩展到主机服务器上组件位，然后在虚拟机打开时直接下载到虚拟机。
 
 本指南介绍如何配置 VM 以实现最佳保护和性能，包括如何：
 
@@ -49,7 +49,7 @@ ms.locfileid: "60882077"
 还可以下载虚拟桌面基础结构上的白皮书[Microsoft Defender 防病毒，](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)该白皮书将查看新的共享安全智能更新功能，以及性能测试和有关如何在你自己的 VDI 上测试防病毒性能的指导。
 
 > [!IMPORTANT]
-> 尽管 VDI 可以托管在 Windows Server 2012 或 Windows Server 2016 上，但由于 Windows 早期版本中不可用的保护技术和功能的增加，虚拟机 (VM) 至少应运行 Windows 10，即 1607。
+> 尽管 VDI 可以托管在 Windows Server 2012 或 Windows Server 2016 上，但虚拟机 (VM) 至少应运行 Windows 10，1607，因为保护技术和功能在 Windows 早期版本中不可用。
 >
 > Microsoft Defender AV 在 Windows 10 Insider Preview 内部版本 18323 (及更高版本中的虚拟机上的操作方式有性能和功能) 。 如果你需要使用 Insider Preview 版本，我们将在本指南中确定;如果未指定，则最佳保护和性能的最低必需版本为 Windows 10 1607。
 
@@ -65,13 +65,13 @@ ms.locfileid: "60882077"
 
 3. 单击 **"管理模板"。**
 
-4. 展开树以Windows **安全** Microsoft Defender 防病毒 \>  \> **更新的组件**。
+4. 展开树以 **Windows安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
 
 5. 双击为 **VDI 客户端定义安全智能** 位置，然后将选项设置为 **已启用**。 将自动显示一个字段。
 
-6. 输入 `\\<sharedlocation\>\wdav-update` (，以寻求帮助，请参阅下载[并解压缩) 。](#download-and-unpackage-the-latest-updates)
+6. 输入 `\\<sharedlocation\>\wdav-update` (此值的帮助，请参阅下载[并解压缩) 。](#download-and-unpackage-the-latest-updates)
 
-7. 单击“**确定**”。
+7. 单击“确定”。
 
 8. 将 GPO 部署到要测试的 VM。
 
@@ -109,7 +109,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>设置计划任务以运行 PowerShell 脚本
 
-1. 在管理计算机上，打开"开始"菜单并键入 **任务计划程序**。 打开它，然后选择 **侧面板** 上的"创建任务..."。
+1. 在管理计算机上，打开"任务"开始"菜单键入 **"任务计划程序"。** 打开它，然后选择 **侧面板** 上的"创建任务..."。
 
 2. 输入名称作为 **安全智能解压缩。** 转到触发器 **选项卡。** 选择新建 **...** \>**每天**，然后选择 **确定**。
 
@@ -127,7 +127,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 1. 在系统根目录上新建一个文件夹，以存储智能更新，例如 `wdav_update` ，创建文件夹 `c:\wdav_update` 。
 
-2. 使用 GUID 名称 *wdav_update文件夹* 下创建子文件夹，例如 `{00000000-0000-0000-0000-000000000000}`
+2. 使用 GUID 名称wdav_update文件夹下创建子文件夹，例如`{00000000-0000-0000-0000-000000000000}`
 
    下面是一个示例： `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
 
@@ -153,7 +153,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 可以指定在计划扫描期间应执行的扫描类型。 快速扫描是首选方法，因为它们旨在查找恶意软件需要驻留的所有位置以处于活动状态。 以下过程介绍如何使用组策略设置快速扫描。
 
-1. 在组策略编辑器中，转到"管理 **模板** \> **Windows组件** Microsoft Defender 防病毒 \>  \> **扫描"。**
+1. 在组策略编辑器中，转到"管理 **模板** Windows \> **组件** Microsoft Defender 防病毒 \>  \> **扫描"。**
 
 2. 选择 **"指定要用于计划扫描** 的扫描类型"，然后编辑策略设置。
 
@@ -165,9 +165,9 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ## <a name="prevent-notifications"></a>阻止通知
 
-有时Microsoft Defender 防病毒多个会话发送或保留通知。 为了尽可能减小此问题，您可以锁定Microsoft Defender 防病毒用户界面。 以下过程介绍如何使用组策略禁止通知。
+有时，Microsoft Defender 防病毒多个会话发送通知或保留通知。 为了尽可能减小此问题，您可以锁定Microsoft Defender 防病毒用户界面。 以下过程介绍如何使用组策略禁止通知。
 
-1. 在组策略编辑器中，转到Windows **客户端** \> **Microsoft Defender 防病毒** \> **组件。**
+1. 在组策略编辑器中，转到Windows **客户端** Microsoft Defender 防病毒 \>  \> **组件。**
 
 2. 选择 **"取消所有通知** "，然后编辑策略设置。
 
@@ -175,7 +175,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 4. 如通常一样部署组策略对象。
 
-当扫描完成或采取Microsoft Defender 防病毒操作时，禁止通知Windows 10在操作中心中显示通知。 但是，安全运营团队将在 Microsoft 365 Defender[门户中查看扫描结果](microsoft-defender-security-center.md)。
+当完成扫描或Microsoft Defender 防病毒操作时，禁止通知Windows 10在操作中心中显示通知。 但是，安全运营团队将在"安全中心"门户中Microsoft 365 Defender[扫描结果](microsoft-defender-security-center.md)。
 
 > [!TIP]
 > 若要在 Windows 10 或 Windows 11 操作中心，请执行以下步骤之一：
@@ -225,13 +225,13 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 3. 将策略设置为 **已启用**。
 
-4. 单击“**确定**”。
+4. 单击“确定”。
 
 5. 像通常一样部署组策略对象。
 
 此策略对Microsoft Defender 防病毒最终用户隐藏整个用户界面。
 
-## <a name="exclusions"></a>排除
+## <a name="exclusions"></a>排除项
 
 可以添加、删除或自定义排除项，以满足你的需求。
 

@@ -17,18 +17,18 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南创建和使用企业测试环境中 Microsoft 365文档的保留标签。
-ms.openlocfilehash: 517183ca8e61415ec2817683c4a1ce88c251301b
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 3cb3a07b4f636fcf8770432a825356269ff6d94c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962563"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111155"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>企业测试环境Microsoft 365数据分类
 
 *本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
 
-本文介绍如何在企业测试环境中使用 Microsoft 365配置数据分类。
+本文介绍如何在企业测试环境中使用 Microsoft 365标签配置数据分类。
 
 对测试环境中的数据进行分类分为三个阶段：
 - [第 1 阶段：构建Microsoft 365测试环境](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
@@ -53,7 +53,7 @@ ms.locfileid: "60962563"
 
 在此阶段，为联机文档文件夹的不同保留级别SharePoint保留标签：
 
-1. 使用全局管理员<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a>登录安全中心。
+1. 使用全局管理员<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>登录管理门户。
 1. 从浏览器 **的"** 主页 - Microsoft 365安全"选项卡中，选择"**分类保留**  >  **标签"。**
 1. 选择“**创建标签**”。
 1. 在"**命名标签"窗格中****，在"** 命名标签"中 **输入**"内部公用"，然后选择"下一步 **"。**
@@ -93,7 +93,7 @@ ms.locfileid: "60962563"
 接下来，为敏感保留标签配置 SensitiveFiles 团队网站的 Documents 文件夹。
   
 1. 在浏览器 **的"SensitiveFiles"** 选项卡中，选择"文档 **"。**
-1. 选择 **"设置** 图标，然后选择"**库设置"。**
+1. 选择 **"设置"** 图标，然后选择"库 **设置"。**
 1. 在 **"权限和管理"下**，**选择"将标签应用于此列表或库中的项目"。** 如果未显示此选项，则尚未发布保留标签。 稍后尝试执行此步骤。
 1. 在 **设置应用标签**"中，选择下拉框中的"敏感"，然后选择"保存 **"。**
 
@@ -102,10 +102,10 @@ ms.locfileid: "60962563"
 1. 在"文档"文件夹中，选择"**新建**  >  **Word 文档"。**
 1. 在空白文档中输入一些文本。 等待保存文本。
 1. 在菜单栏上，选择"**共享文档"。**
-1. 在文件 **Document.docx，** 选择垂直省略号， **然后选择详细信息**。
+1. 在文件 **名称Document.docx，** 选择垂直省略号， **然后选择详细信息**。
 1. 在右窗格的"属性"**部分，****在"** 应用保留标签"下，请注意，文档已自动应用"**敏感**"保留标签。
 1. 单击 **编辑全部**。
-1. 在 **"Document.docx"** 窗格中的"**应用保留** 标签"下，选择"**高度机密"标签**，然后选择"保存 **"。**
+1. 在 **"Document.docx"** 窗格中的"**应用保留** 标签"下，选择"**高度机密"** 标签，然后选择"保存 **"。**
 
 ## <a name="next-step"></a>后续步骤
 

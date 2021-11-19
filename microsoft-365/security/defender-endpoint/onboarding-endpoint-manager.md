@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: baa4294209ddb32a0a531e07b5bf87b0bb10aa9b
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 9e631bc8f35a49ab87237ddfb952af00c68645e9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756368"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109895"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 载入
 
@@ -44,14 +44,16 @@ ms.locfileid: "60756368"
 
 尽管 Defender for Endpoint 支持载入各种终结点和工具，但本文并未涵盖它们。 有关使用其他受支持的部署工具和方法进行常规载入的信息，请参阅 [载入概述](onboarding.md)。
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview)是统一多个服务的解决方案平台。 它包括[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)基于云的设备管理。
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview)是统一多个服务的解决方案平台。 它包括Microsoft Intune [](/mem/intune/fundamentals/what-is-intune) 
+
+-基于设备管理。
 
 本主题指导用户：
 
-- 步骤 1：在 MEM 中通过创建组将设备载入Microsoft Endpoint Manager (MEM) 分配配置
+- 步骤 1：在 MEM 中通过创建组将设备载入Microsoft Endpoint Manager () 分配配置
 - 步骤 2：使用 Microsoft Endpoint Manager
 
-本载入指南将指导你完成在使用应用时需要执行Microsoft Endpoint Manager：
+此载入指南将指导你完成在使用应用时需要执行Microsoft Endpoint Manager：
 
 - [标识目标设备或用户](#identify-target-devices-or-users)
   - 创建用户Azure Active Directory设备 (组) 
@@ -63,7 +65,7 @@ ms.locfileid: "60756368"
 以下是此过程的其余部分所需的链接：
 
 - [MEM 门户](https://aka.ms/memac)
-- [安全中心](https://securitycenter.windows.com/)
+- [Microsoft Defender for Endpoint](https://securitycenter.windows.com/)
 - [Intune 安全基线](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 有关此Microsoft Endpoint Manager，请查看以下资源：
@@ -81,7 +83,7 @@ ms.locfileid: "60756368"
 > [!NOTE]
 > Intune 使用Azure Active Directory (Azure AD) 组来管理设备和用户。 作为 Intune 管理员，你可以设置组以满足你的组织需求。
 >
-> 有关详细信息，请参阅添加 [组以组织用户和设备](/mem/intune/fundamentals/groups-add)。
+> 有关详细信息，请参阅[添加用于组织用户和设备的组](/mem/intune/fundamentals/groups-add)。
 
 ### <a name="create-a-group"></a>创建群组
 
@@ -101,7 +103,7 @@ ms.locfileid: "60756368"
 
 5. 从" **组>所有组"窗格中** ，打开新组。
 
-6. 选择 **"成员>添加成员"。**
+6. 选择 **"添加>的成员"。**
 
 7. 查找测试用户或设备并选择它。
 
@@ -132,7 +134,7 @@ ms.locfileid: "60756368"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal4 的图像。](images/58dcd48811147feb4ddc17212b7fe840.png)
 
-3. 在 **"平台"下，Windows 10和更高版本、配置文件 - 终结点检测和响应>创建"。**
+3. 在 **"平台"下，Windows 10"和"稍后"，选择"配置文件 - 终结点检测和响应>创建"。**
 
 4. 输入名称和说明，然后选择"下一 **步"。**
 
@@ -301,7 +303,7 @@ ms.locfileid: "60756368"
 9. 选择 **查看并创建>创建**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal31 的图像。](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
+    > ![portal31 Microsoft Endpoint Manager图像。](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
 
 10. 查看策略。
 
@@ -331,7 +333,7 @@ ms.locfileid: "60756368"
 3. 选择  **"设备状态** "以查看状态。
 
     > [!div class="mx-imgBorder"]
-    > [![Microsoft Endpoint Manager portal35 的图像。](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
+    > [![portal35 Microsoft Endpoint Manager图像。](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
 
 4. 选择  **"用户状态** "以查看状态。
 
@@ -344,7 +346,7 @@ ms.locfileid: "60756368"
     > 此视图对于标识与另一个策略冲突的任何设置非常有用。
 
     > [!div class="mx-imgBorder"]
-    > [![portal37 Microsoft Endpoint Manager图像。](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
+    > [![Microsoft Endpoint Manager portal37 的图像。](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
 ### <a name="confirm-endpoint-detection-and-response"></a>确认终结点检测和响应
 
@@ -392,7 +394,7 @@ ms.locfileid: "60756368"
 
     ![命令行 1 的图像。](images/cb0260d4b2636814e37eee427211fe71.png)
 
-3. 在测试设备上应用该策略后，打开 PowerShell Windows并键入 `Get-MpPreference` 。
+3. 在测试设备上应用该策略后，打开 PowerShell Windows键入 `Get-MpPreference` 。
 
 4. 这应该会以以下行作为响应，内容如下所示：
 
@@ -400,7 +402,7 @@ ms.locfileid: "60756368"
 
 ### <a name="confirm-attack-surface-reduction---web-protection"></a>确认攻击面减少 - Web 保护
 
-1. 在测试设备上，打开 PowerShell Windows并键入 `(Get-MpPreference).EnableNetworkProtection` 。
+1. 在测试设备上，打开 PowerShell Windows键入 `(Get-MpPreference).EnableNetworkProtection` 。
 
 2. 这应该会以 0 作为响应，如下所示。
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1cee88d872ca7d83b9fbaf391a25cdb21cd10bd6
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: e81f1b468a01369d308c4585b2ffb82b596a66ce
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963379"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111281"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置适用于终结点的 Microsoft Defender 部署
 
@@ -51,7 +51,7 @@ ms.locfileid: "60963379"
 - 网络配置
 
 > [!NOTE]
-> 为了指导你完成典型部署，此方案将仅涉及Microsoft Endpoint Configuration Manager。 Defender for Endpoint 支持使用其他载入工具，但不在部署指南中介绍这些方案。 有关详细信息，请参阅 [将设备载入到 Microsoft Defender for Endpoint](onboard-configure.md)。
+> 为了引导您完成典型部署，此方案仅涉及 Microsoft Endpoint Configuration Manager。 Defender for Endpoint 支持使用其他载入工具，但不在部署指南中介绍这些方案。 有关详细信息，请参阅 [将设备载入到 Microsoft Defender for Endpoint](onboard-configure.md)。
 
 ## <a name="check-license-state"></a>检查许可证状态
 
@@ -81,7 +81,7 @@ ms.locfileid: "60963379"
 
 载入 Microsoft Defender for Endpoint 非常简单。 从导航菜单中，选择终结点部分下的任何项目，或任何 Microsoft 365 Defender 功能（如事件、搜寻、操作中心或威胁分析）以启动载入过程。
 
-在 Web 浏览器中，导航到Microsoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">安全中心</a>。
+从 Web 浏览器，导航到 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>。
 
 ## <a name="network-configuration"></a>网络配置
 
@@ -105,12 +105,12 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 配置基于注册表的静态代理，以允许仅 Microsoft Defender for Endpoint 传感器报告诊断数据，并与 Microsoft Defender for Endpoint 服务进行通信（如果不允许计算机连接到 Internet）。 静态代理可以通过组策略 (GP) 配置。 可以在以下位置找到组策略：
 
-- 管理模板Windows组件 数据收集和预览版本配置连接的用户体验和遥测服务的已验证 \> \> \> 代理用法
+- 管理模板Windows组件 数据收集和预览版配置连接的用户体验和遥测服务的已验证 \> \> \> 代理用法
 - 将其设置为" **已启用"，** 然后选择 **"禁用经过身份验证的代理用法"**
 
 1. 打开组策略管理控制台。
 2. 根据组织实践创建策略或编辑现有策略。
-3. 编辑组策略并导航到"管理模板Windows组件数据收集和预览版配置连接的用户体验和遥测服务的已验证 **\> \> \> 代理使用情况**。
+3. 编辑组策略并导航到"管理模板 **\> Windows组件数据收集和预览 \> 版本 \> 配置** 连接的用户体验和遥测服务的已验证代理使用情况。
 
    ![组策略配置的图像。](images/atp-gpo-proxy1.png)
 
@@ -158,7 +158,7 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>低级别设备的代理配置
 
-Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 以及 Windows Server 2016 之前的 Windows Windows 服务器 CB 1803。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
+Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 以及 Windows Server 2016 之前的 Windows Server 2016 Windows 服务器 CB 1803。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
 
 ### <a name="proxy-service-urls"></a>代理服务 URL
 
@@ -172,7 +172,7 @@ Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 20
 
 ****
 
-|域列表的电子表格|说明|
+|域列表的电子表格|Description|
 |---|---|
 |![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图。](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |

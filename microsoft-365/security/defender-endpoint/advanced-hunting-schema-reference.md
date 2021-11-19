@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构参考
 description: 了解高级搜寻架构中的表，以了解可以运行威胁搜寻查询的数据。
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， mdatp， microsoft defender atp， 适用于终结点的 microsoft defender， wdatp 搜索， 查询， 遥测， 架构参考， kusto， 表， 数据
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， mdatp， microsoft defender atp， microsoft defender for endpoint， wdatp 搜索， 查询， 遥测， 架构参考， kusto， 表， 数据
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 20f6a92f414de9b6cb451a2bd5bb19ac2d15baec
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 562a62f04b673d29269c291a336f3ce72ce36f51
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556180"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110123"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>了解 Microsoft Defender for Endpoint 中的高级搜寻架构
 
@@ -35,7 +35,7 @@ ms.locfileid: "60556180"
 
 高级 [搜寻](advanced-hunting-overview.md) 架构由多个表组成，这些表提供事件信息或有关设备和其他实体的信息。 若要高效构建跨多个表的查询，需要了解高级搜寻架构中的表和列。
 
-## <a name="get-schema-information-in-the-security-center"></a>在安全中心获取架构信息
+## <a name="get-schema-information-in-the-defender-for-cloud"></a>在 Defender for Cloud 中获取架构信息
 
 构造查询时，请使用内置架构参考快速获取有关架构中每个表的以下信息：
 
@@ -62,7 +62,7 @@ ms.locfileid: "60556180"
 
 |表名|说明|
 |---|---|
-|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|有关警报Microsoft Defender 安全中心|
+|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|警报Microsoft Defender 安全中心|
 |**[DeviceInfo](advanced-hunting-deviceinfo-table.md)**|设备信息，包括操作系统信息|
 |**[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)**|设备的网络属性，包括适配器、IP 和 MAC 地址，以及连接的网络和域|
 |**[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)**|过程创建和相关事件|
@@ -81,9 +81,9 @@ ms.locfileid: "60556180"
 |
 
 > [!TIP]
-> 使用[Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview)中的高级搜寻，通过 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 来搜寻威胁。 [打开"Microsoft 365 Defender"。](/microsoft-365/security/defender/m365d-enable)
+> 使用[Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview)中的高级搜寻，使用 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps 和 Microsoft Defender for Identity 数据搜寻威胁。 [打开"Microsoft 365 Defender"。](/microsoft-365/security/defender/m365d-enable)
 
-若要详细了解如何将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 Defender从[Microsoft Defender for Endpoint 迁移高级搜寻查询](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)。
+在从 Microsoft Defender for Endpoint 迁移高级搜寻查询中，Microsoft 365 Defender[从 Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)移动到高级搜寻工作流。
 
 ## <a name="related-topics"></a>相关主题
 

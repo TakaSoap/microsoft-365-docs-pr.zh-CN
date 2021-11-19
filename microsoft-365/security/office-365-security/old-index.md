@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性, 从 EOP 到 Defender for Office 365 计划 1 和 2, 标准与严格安全配置等。 了解你拥有的属性并了解如何保护你的属性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d7c91f4dc28a28b0bab2102dc2a9ec6ec937f6f6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cbcdf83423b8a6d4e40f34a96282059b44c9df3e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206501"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110351"
 ---
 # <a name="office-365-security"></a>Office 365 安全中心
 
@@ -91,7 +91,7 @@ Office 365 安全性的核心是 EOP 保护。 Microsoft Defender for Office 365
 
 |阻止/检测|调查|响应|
 |---|---|---|
-|技术包括：<ul><li>垃圾邮件</li><li>网络钓鱼</li><li>恶意软件</li><li>批量邮件</li><li>欺骗智能</li><li>模拟检测</li><li>管理员隔离</li><li>管理员和用户的"误报"和"漏报"提交</li><li>允许/阻止 URL 和文件</li><li>报告</li></ul>|<li>审核日志搜索</li><li>邮件跟踪</li>|<li>ZAP (零时差自动清除) </li><li>允许列表和阻止列表精简和测试</li>|
+|技术包括：<ul><li>垃圾邮件</li><li>网络钓鱼</li><li>恶意软件</li><li>批量邮件</li><li>欺骗智能</li><li>模拟检测</li><li>管理员隔离</li><li>管理员和用户的"误报"和"漏报"提交</li><li>允许/阻止 URL 和文件</li><li>报告</li></ul>|<li>审核日志搜索</li><li>邮件跟踪</li>|<li>ZAP (零时差) </li><li>允许列表和阻止列表精简和测试</li>|
 |
 
 如果您想深入了解EOP，请 **[跳至本文](exchange-online-protection-overview.md)**。
@@ -118,7 +118,7 @@ Microsoft Defender for Office 365 计划 1 还添加了 **实时检测** 以进�
 
 因此，Microsoft Defender for Office 365 计划 2 在 ***调查和响应*** 方面进行了扩展，并增加了新的搜寻功能。 自动化。
 
-在 Microsoft Defender for Office 365 计划 2 中，主要的搜索工具称为 **威胁浏览器** 而不是实时检测。 导航到安全中心时，如果看到威胁资源管理器，则说明你位于 Microsoft Defender for Office 365 计划 2。
+在 Microsoft Defender for Office 365 计划 2 中，主要的搜索工具称为 **威胁浏览器** 而不是实时检测。 如果你在导航到 Defender for Cloud 时看到威胁资源管理器，则你将在 Microsoft Defender for Office 365 P2。
 
 如果深入了解 Microsoft Defender for Office 365 计划 1 和 2，请 **[跳至本文](defender-for-office-365.md)**。
 

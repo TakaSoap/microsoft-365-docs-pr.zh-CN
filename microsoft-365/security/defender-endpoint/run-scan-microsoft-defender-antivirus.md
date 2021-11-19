@@ -1,6 +1,6 @@
 ---
-title: 在扫描中运行和自定义按需Microsoft Defender 防病毒
-description: 使用 PowerShell、Windows Management Instrumentation 或在终结点上单独运行和配置按需扫描（Windows 安全中心应用）
+title: 运行并自定义按需扫描Microsoft Defender 防病毒
+description: 使用 PowerShell、Windows Management Instrumentation 运行和配置按需扫描，或者使用 Windows 安全中心 应用在终结点上单独运行和配置
 keywords: 扫描， 按需， 操作， intune， 即时扫描
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1f2f5625eff5b19c47aebf896d6a0398437426aa
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: d056c1addb428d63fa855d09fcce54d8e5ca5994
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881657"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110711"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>配置并运行按需 Microsoft Defender 防病毒软件扫描
 
@@ -31,7 +31,7 @@ ms.locfileid: "60881657"
 
 可以在个别终结点上运行按需扫描。 这些扫描将立即启动，并且你可以定义扫描的参数，如位置或类型。 运行扫描时，可以从以下三种类型中选择：快速扫描、完全扫描和自定义扫描。 在大多数情况下，请使用快速扫描。 快速扫描将查找所有可能注册为从系统启动的恶意软件的位置，例如注册表项和已知Windows文件夹。
 
-与始终启用实时保护相结合，可在打开和关闭文件时以及用户导航到文件夹时查看文件，快速扫描可帮助提供强大的保护，防止由系统和内核级别恶意软件启动的恶意软件。 在大多数情况下，快速扫描已足够，是计划扫描或按需扫描的推荐选项。 [详细了解扫描类型](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan)。
+与始终启用实时保护相结合，可在打开和关闭文件时以及用户导航到文件夹时查看文件，快速扫描可帮助提供强大的保护，防止因系统和内核级别恶意软件而启动的恶意软件。 在大多数情况下，快速扫描已足够，是计划扫描或按需扫描的推荐选项。 [详细了解扫描类型](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan)。
 
 > [!IMPORTANT]
 > Microsoft Defender 防病毒执行本地扫描时，在[LocalSystem](/windows/win32/services/localsystem-account)帐户的上下文中运行。 对于网络扫描，它使用设备帐户的上下文。 如果域设备帐户没有访问共享的适当权限，扫描将不起作用。 确保设备具有访问网络共享的权限。
@@ -42,9 +42,9 @@ ms.locfileid: "60881657"
 
 2. 选择 **终结点安全** \> **防病毒**。
 
-3. 在选项卡列表中，选择"Windows 10 **不正常终结点**"或Windows 11 **不正常终结点"。**
+3. 在选项卡列表中，选择"Windows 10 **不正常的** 终结点"或 **Windows 11不正常的终结点"。**
 
-4. 从所提供的操作列表中，选择"快速扫描" (") "完全 **扫描"。**
+4. 从所提供的操作列表中，选择"快速扫描" (") 完全 **扫描"。**
 
    [![扫描"不正常Windows 10"选项卡上的选项。](images/mem-antivirus-scan-on-demand.png)](images/mem-antivirus-scan-on-demand.png#lightbox)
 
@@ -81,7 +81,7 @@ mpcmdrun.exe -scan -scantype 1
 Start-MpScan
 ```
 
-若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender cmdlet。](/powershell/module/defender/)
+若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒 一起使用，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender for Cloud cmdlet。](/powershell/module/defender/)
 
 ## <a name="use-windows-management-instruction-wmi-to-run-a-scan"></a>使用 Windows Management Instruction (WMI) 运行扫描
 

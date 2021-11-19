@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 53ef056a61da1dca83c1c6bdf611e37a50dc9008
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1fcd154c3cd769cc7c721cf49f2d16b90a213e25
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552832"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110831"
 ---
 # <a name="turn-on-block-at-first-sight"></a>打开“首次看到时阻止”
 
@@ -105,7 +105,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 
    - **打开云端保护**：是
    - **云端保护等级**：高
-   - **Defender 云扩展超时（秒）**：50
+   - **Microsoft Defender 防病毒扩展超时（以秒数表示）：50**
 
    :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Endpoint Manager 中的“首次看到时阻止”。":::
 
@@ -173,7 +173,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 
    - 将“**打开云端保护**”设为“**不**”或“**未配置**”。
    - 将“**云端保护级别**”设为“**未配置**”。
-   - 清空 **Defender 云扩展超时（秒）** 复选框。
+   - 清除 **Microsoft Defender 防病毒扩展超时（以秒为单位）的复选框**。
 
 6. 检查并保存你的设置。
 

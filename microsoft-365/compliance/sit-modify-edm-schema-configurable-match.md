@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何修改 edm 架构以使用可配置匹配项。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f41dee9b1ca13f319e5dc05fc5f7512bd98a5186
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: e546d90c94cc2a4ab349b3de7ba970b94f6491e3
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914460"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110483"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>修改精确数据匹配架构，以使用可配置匹配项
 
@@ -134,5 +134,5 @@ ms.locfileid: "60914460"
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 - [自定义敏感信息类型](./sensitive-information-type-learn-about.md)
 - [了解数据丢失防护](dlp-learn-about-dlp.md)
-- [Microsoft Cloud App Security](/cloud-app-security)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

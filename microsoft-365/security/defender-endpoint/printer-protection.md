@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: f97a5ae486ff2ebd39a1adedeb008ac675ee9941
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 60f59796f585e472673d5c230fcbe303460e7372
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962815"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109883"
 ---
 # <a name="device-control-printer-protection"></a>设备控制打印机保护
 
@@ -28,7 +28,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 ## <a name="licensing"></a>授权
 
-在开始使用打印机保护之前，你应该[确认你的Microsoft 365订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 若要访问和使用打印机保护，您必须具有以下各项：
+在开始使用打印机保护之前，你应该[先确认你的Microsoft 365订阅。](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) 若要访问和使用打印机保护，您必须具有以下各项：
 
 - Microsoft 365 E3/策略部署
 - Microsoft 365 E5报告功能
@@ -49,7 +49,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 ## <a name="prepare-your-endpoints"></a>准备终结点
 
-确保已Windows 10或Windows 11部署打印机保护以满足这些要求的设备。
+请确保已Windows 10或Windows 11部署打印机保护以满足这些要求的设备。
 
 1. 已安装以下 Windows 更新。
     - For Windows 1809： install Windows Update [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46)
@@ -66,7 +66,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 ****
 
-|Title|说明|云解决方案提供商支持 | GPO 支持 | 基于用户的支持 | 基于计算机的支持 |
+|Title|Description|云解决方案提供商支持 | GPO 支持 | 基于用户的支持 | 基于计算机的支持 |
 |---|---|:---:|:---:|:---:|:---:|
 |**启用设备控制打印限制**|阻止用户通过非公司打印机打印|是|是|是|是|
 |**已批准的 USB 连接打印设备列表**\*|允许特定 USB 打印机|是|是|是|是|
@@ -136,18 +136,18 @@ CSP 支持字符串，包含 `<enabled/>` ：
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>在 Microsoft Defender 终结点门户中查看设备控制打印机保护数据
 
-安全<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365显示</a>上述设备控制打印机保护策略阻止的打印。
+该<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>显示上述设备控制打印机保护策略阻止的打印。
 
 ```kusto
 DeviceEvents
-| where ActionType == 'PrintJobBlocked'
-| extend parsed=parse_json(AdditionalFields)
-| extend PrintedFile=tostring(parsed.JobOrDocumentName)
-| extend PrintPortName=tostring(parsed.PortName)
-| extend PrinterName=tostring(parsed.PrinterName)
-| extend Policy=tostring(parsed.RestrictionReason) 
-| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
-| order by Timestamp desc
+| where ActionType == 'PrintJobBlocked'
+| extend parsed=parse_json(AdditionalFields)
+| extend PrintedFile=tostring(parsed.JobOrDocumentName)
+| extend PrintPortName=tostring(parsed.PortName)
+| extend PrinterName=tostring(parsed.PrinterName)
+| extend Policy=tostring(parsed.RestrictionReason) 
+| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
+| order by Timestamp desc
 ```
 
  :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高级搜寻。":::
@@ -172,15 +172,3 @@ DeviceEvents
 ```
 
  :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="高级搜寻":::
-
-
-
-
-
-
-
-
- 
- 
- 
- 

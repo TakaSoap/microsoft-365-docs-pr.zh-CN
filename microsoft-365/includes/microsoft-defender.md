@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender 重要指南
-description: 有关 Microsoft Defender 重要指南的说明。
+title: Microsoft 365 Defender重要指南
+description: 有关重要指导Microsoft 365 Defender说明。
 ms.date: 09/21/2020
 ms.reviewer: ''
 manager: dansimp
@@ -8,10 +8,10 @@ ms.author: dansimp
 author: dansimp
 ms.prod: w10
 ms.topic: include
-ms.openlocfilehash: 2eb33ca7a885f61fe61a45dacada601f6115e18a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
-ms.translationtype: HT
+ms.openlocfilehash: 61f61d753e302f0bc166081ac8ac1dd6585eed02
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054612"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61106621"
 ---

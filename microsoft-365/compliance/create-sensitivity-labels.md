@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的数据进行分类和保护。
-ms.openlocfilehash: efe24585981451ef91181ecc4caabb82d45d8ea4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 94ef0959c7e4de78080c54487ba017e1f75329ff
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753157"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072369"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -45,7 +45,7 @@ ms.locfileid: "60753157"
     
     如果看不到此选项，请先选择“**全部显示**”。
 
-2. 在“**标签**”页面，选择“**+ 创建标签**”，以启动“新建灵敏度标签”向导。 
+2. 在 **标签** 页面，选择 **+ 创建标签**，以启动“新建灵敏度标签”配置。 
 
     例如，从 Microsoft 365 合规中心：
 
@@ -58,15 +58,15 @@ ms.locfileid: "60753157"
 
     ![敏感度标签的范围。](../media/sensitivity-labels-scopes.png)
 
-    - 如果已选中 **“文件和 电子邮件”**，则可以在此向导中配置适用于支持敏感度标签的应用（如 Office Word 和 Outlook）的设置。 如果未选择此选项，向导将显示这些设置的第一页，但无法进行配置，用户无法在这些应用中选择标签。
+    - 如果已选中 **文件和电子邮件**，则可以配置适用于支持敏感度标签的应用 (如 Office Word 和 Outlook) 的设置。 如果未选择此选项，将看到这些设置的第一页，但无法进行配置，用户无法在这些应用中选择标签。
 
-    - 如果已选中 **“组合网站”** ，则可以在此向导中配置适用于 Microsoft 365 组和网站（Teams 和 SharePoint）的设置。 如果未选择此选项，向导将显示这些设置的第一页，但无法进行配置，用户无法在组合网站中选择标签。
+    - 如果已选中 **组和站点**，则可以配置适用于 Microsoft 365 组和网站 (Teams 和 SharePoint) 的设置。 如果未选择此选项，将看到这些设置的第一页，但无法进行配置，且用户无法为组和站点选择标签。
 
-    有关 **Azure Purview 素材（预览版）** 范围的详细信息，请参阅 [在 Azure Purview 中自动标记内容](/azure/purview/create-sensitivity-label)。
+    有关 **图表化数据资产** 范围的信息，请参阅 [在 Azure Purview 中自动标记内容](/azure/purview/create-sensitivity-label)。
 
-4. 在向导中按照提示进行标签设置。
+4. 按照配置提示进行标签设置。
 
-    有关标签设置的详细信息，请参阅概述信息中的“[敏感度标签有何用途](sensitivity-labels.md#what-sensitivity-labels-can-do)”并使用向导中针对单个设置的帮助。
+    有关标签设置的详细信息，请参阅概述信息中的 [敏感度标签有何用途](sensitivity-labels.md#what-sensitivity-labels-can-do) 并使用 UI 中针对单个设置的帮助。
 
 5. 重复以上步骤以创建更多标签。但是，如果想要创建子标签，请先选择父标签，然后点击“**...**”并选择“**更多操作**”，然后选择“**添加子标签**”。
 
@@ -76,12 +76,12 @@ ms.locfileid: "60753157"
 
 ![编辑标签按钮以编辑敏感度标签。](../media/edit-sensitivity-label-full.png)
 
-此按钮将启动“**编辑敏感度标签**”向导，可用于更改步骤 4 中的所有标签设置。
+此按钮将启动 **编辑敏感度标签** 配置，可用于更改步骤 4 中的所有标签设置。
 
 除非你了解对用户的影响，否则不要删除标签。 有关更多信息，请参阅[移除和删除标签](#removing-and-deleting-labels)部分。 
 
 > [!NOTE]
-> 如果要编辑已使用标签策略发布的标签，则在完成该向导时不需要执行额外步骤。 例如，不需要将其添加到新的标签策略，以便对相同用户提供所做的更改。 但是，请留出长达 24 小时的时间将更改复制到所有应用和服务。
+> 如果要编辑已使用标签策略发布的标签，则在完成该配置时不需要执行额外步骤。 例如，不需要将其添加到新的标签策略，以便对相同用户提供所做的更改。 但是，请留出长达 24 小时的时间将更改复制到所有应用和服务。
 
 发布标签之前，无法在应用程序或服务中使用。 若要发布标签，必须将其[添加到标签策略](#publish-sensitivity-labels-by-creating-a-label-policy)。
 
@@ -132,7 +132,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     
     如果看不到此选项，请先选择“**全部显示**”。
 
-2. 依次选择“**标签策略**”选项卡和“**发布标签**”，以启动“创建策略”向导：
+2. 依次选择 **标签策略** 选项卡和 **发布标签**，以启动 **创建策略** 配置:
 
     例如，从 Microsoft 365 合规中心：
 
@@ -141,7 +141,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     > [!NOTE]
     > 默认情况下，租户没有任何标签策略，且必须由你创建。 
 
-3. 在想到中，选择“**选择要发布的敏感度标签**”。 选择可在应用和服务中可以使用的标签，随后选择“**添加**”。
+3. 在 **选择要发布的敏感度标签** 页面上，选择 **选择要发布的敏感度标签** 链接。 选择可在应用和服务中可以使用的标签，随后选择“**添加**”。
 
     > [!IMPORTANT]
     > 如果选择子标签，请确保也选择其父标签。
@@ -152,7 +152,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     所看到的策略设置会匹配你选择的标签的范围。 例如，如果选择了仅用于 **文件和电子邮件** 范围，则默认情况下看不到策略设置 **“”将此标签应用到组和网站”** 和 **“要求用户将标签应用到他们的组和网站”**。
 
-    有关这些设置的详细信息，请参阅概述信息中的[标签策略有何用途](sensitivity-labels.md#what-label-policies-can-do)并使用向导中针对单个设置的帮助。
+    有关这些设置的详细信息，请参阅概述信息中的 [标签策略有何用途](sensitivity-labels.md#what-label-policies-can-do) 并使用 UI 中针对单个设置的帮助。
 
     对于为 **Azure Purview 素材（预览版）** 配置的标签：这些标签没有任何关联的策略设置。
 
@@ -160,13 +160,13 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 7. 如果创建多个可能导致用户发生冲突的标签策略，请查看策略顺序，并根据需要向上或向下移动。 若要更改标签策略的顺序，请选择“**...**”进行 **更多操作**”，然后选择 “**上移**”或 “**下移**”。 有关详细信息，请参阅概述信息中的“[标签策略优先级（顺序非常重要）](sensitivity-labels.md#label-policy-priority-order-matters)”。
 
-完成向导会自动发布标签策略。 若要更改已发布的策略，只需对其进行编辑。 没有特定发布或重新发布操作可供选择。
+完成 **创建策略** 配置会自动发布标签策略。 若要更改已发布的策略，只需对其进行编辑。 没有特定发布或重新发布操作可供选择。
 
 若要编辑现有标签策略，请将其选中，然后选择“**编辑策略**”按钮： 
 
 ![编辑敏感度标签。](../media/edit-sensitivity-label-policy-full.png)
 
-此按钮将启动“**创建策略**”向导，可用于编辑所包含的标签和标签设置。 完成向导后，所有更改都将自动复制到所选用户和服务。
+此按钮将启动 **创建策略** 配置，可用于编辑所包含的标签和标签设置。 完成配置后，所有更改都将自动复制到所选用户和服务。
 
 对 Windows、macOS、iOS 和 Android 上的 Office 应用使用内置标签时，刷新浏览器时，用户会在 4 个小时内看到新标签，而在 Word、Excel 和 PowerPoint Web 版上，1 小时内就可以看到新标签。但是，请留出长达 24 小时的时间将更改复制到所有应用和服务。
 

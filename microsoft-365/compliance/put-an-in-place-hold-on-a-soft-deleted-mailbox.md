@@ -14,21 +14,21 @@ ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何为软删除邮箱创建就地保留，以将其变为非活动邮箱并保留其内容。
-ms.openlocfilehash: 7e5d1910bcf993d2672004190b34994b47a1c208
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67eacbd3b702f35fc8d71680238037d87ae529c8
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198633"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110819"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>将就地保留置于 Exchange Online 中的软删除邮箱上
 
 了解如何为软删除邮箱创建就地保留，以将其变为非活动邮箱并保留其内容。然后可以使用 Microsoft 电子数据展示工具来搜索非活动邮箱。
 
 > [!IMPORTANT]
-> 由于我们将继续以不同方式投资来保留邮箱内容，因此我们将宣布停用 Exchange 管理中心中的 In-Place 保留 (EAC) 。 从 2020 年 7 月 1 日开始，将无法在 Exchange Online 中创建新的 In-Place 保留。 但你仍然可以在 EAC 中In-Place或通过使用 PowerShell 中的 **Set-MailboxSearch** cmdlet 管理Exchange Online保留。 但是，从 2020 年 10 月 1 日起，你将无法管理In-Place保留。 您将仅在 EAC 中或通过使用 **Remove-MailboxSearch** cmdlet 删除它们。 有关停用保留In-Place，请参阅 [停用旧版电子数据展示工具](legacy-ediscovery-retirement.md)。
+> 由于我们将继续以不同方式投资来保留邮箱内容，因此我们将宣布停用 In-Place Holds 在 Exchange 管理中心 (EAC) 。 从 2020 年 7 月 1 日开始，将无法在 Exchange Online 中创建新的 In-Place 保留。 但你仍然可以在 EAC 中In-Place或通过使用 PowerShell 中的 **Set-MailboxSearch** cmdlet 管理Exchange Online保留。 但是，从 2020 年 10 月 1 日起，你将无法管理In-Place保留。 您将仅在 EAC 中或通过使用 **Remove-MailboxSearch** cmdlet 删除它们。 有关停用保留In-Place，请参阅 [停用旧版电子数据展示工具](legacy-ediscovery-retirement.md)。
 
-You might have a situation where a person has left your organization, and their corresponding user account and mailbox were deleted. Afterwards, you realize there's information in the mailbox that needs to be preserved. What can you do? 如果已删除邮箱的保留期尚未过期，您可以将名为"软删除邮箱" (的已删除邮箱置于 In-Place 保留状态) 使其变为非活动邮箱。 An  *inactive mailbox*  is used to preserve a former employee's email after he or she leaves your organization. The contents of an inactive mailbox are preserved for the duration of the In-Place Hold that was is placed on the soft-deleted mailbox when it was made inactive. 邮箱变为非活动状态后，可以使用邮箱中的电子数据展示工具搜索Microsoft 365 合规中心。
+You might have a situation where a person has left your organization, and their corresponding user account and mailbox were deleted. Afterwards, you realize there's information in the mailbox that needs to be preserved. What can you do? 如果已删除邮箱的保留期尚未过期，您可以将名为"软删除邮箱" (的已删除邮箱In-Place"保留"，) 使其变为非活动邮箱。 An  *inactive mailbox*  is used to preserve a former employee's email after he or she leaves your organization. The contents of an inactive mailbox are preserved for the duration of the In-Place Hold that was is placed on the soft-deleted mailbox when it was made inactive. 邮箱变为非活动状态后，可以使用邮箱中的电子数据展示工具搜索Microsoft 365 合规中心。
 
 > [!NOTE]
 > 在 Exchange Online 中，软删除邮箱是指已删除但可以在特定保留期内恢复的邮箱。Exchange Online 中的软删除邮箱保留期为 30 天。这意味着该邮箱可以在删除后 30 天内进行恢复（或变为非活动邮箱）。30 天后，软删除邮箱将标记为永久删除并且无法恢复或变为非活动邮箱。
@@ -45,7 +45,7 @@ You might have a situation where a person has left your organization, and their 
   Get-Mailbox -SoftDeletedMailbox | FL Name,WhenSoftDeleted,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
   ```
 
-- 有关非活动邮箱详细信息，请参阅 overview [of inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md)。
+- 有关非活动邮箱的信息，请参阅 [了解非活动邮箱](inactive-mailboxes-in-office-365.md)。
 
 ## <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-to-make-it-an-inactive-mailbox"></a>将就地保留置于软删除邮箱以使其变为非活动邮箱
 
@@ -94,4 +94,4 @@ You might have a situation where a person has left your organization, and their 
 
 - [还原非活动邮箱](restore-an-inactive-mailbox.md)
 
-- [通过删除保留](delete-an-inactive-mailbox.md) (删除非活动邮箱) 
+- [通过删除保留 (](delete-an-inactive-mailbox.md) 删除非活动邮箱) 

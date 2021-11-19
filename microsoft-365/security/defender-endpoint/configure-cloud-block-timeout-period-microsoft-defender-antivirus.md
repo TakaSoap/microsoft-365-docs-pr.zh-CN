@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b00c631a3eeaddb4fa66fe6d58fd40418b188bec
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e3f267218155b7aa503237aaa4e52e2e8637019d
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552724"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110795"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>配置云块超时时间段
 
@@ -37,17 +37,17 @@ ms.locfileid: "60552724"
 
 [必须先启用"首次](configure-block-at-first-sight-microsoft-defender-antivirus.md) 看到时阻止"及其先决条件，然后才能指定延长的超时期限。
 
-## <a name="specify-the-extended-timeout-period-using-microsoft-endpoint-manager"></a>使用方法指定延长的超时Microsoft Endpoint Manager
+## <a name="specify-the-extended-timeout-period-using-microsoft-endpoint-manager"></a>使用参数指定延长的超时Microsoft Endpoint Manager
 
 可以使用终结点安全策略指定云阻止超时[Microsoft Endpoint Manager。](/mem/intune/protect/endpoint-security-policy)
 
-1. 转到管理Endpoint Manager中心 [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/) () 登录。
+1. 转到管理Endpoint Manager中心 () [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/) 登录。
 
 2. 选择 **"终结点安全性"，** 然后在"管理 **"下**，选择 **"防病毒"。**
 
 3. 选择 (或) 防病毒策略。
 
-4. 在"**配置设置"** 部分，展开"**云保护"。** 然后，在 **"Defender 云扩展超时（** 秒）"框中，指定从 1 秒到 50 秒的更多时间（以秒表示）。 您指定的任何时间将添加到默认值 10 秒。
+4. 在"**配置设置"** 部分，展开"**云保护"。** 然后，在 **"Microsoft Defender 防病毒** 超时以秒表示"框中，指定从 1 秒到 50 秒的更多时间（以秒表示）。 您指定的任何时间将添加到默认值 10 秒。
 
 5.  (此步骤是可选的) 对防病毒策略进行任何其他更改。  (需要帮助？ 请参阅[设置 .Microsoft Defender 防病毒 中的 Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)策略) 
 
@@ -67,7 +67,7 @@ ms.locfileid: "60552724"
 
 4. 双击配置 **扩展云检查并确保** 该选项已启用。 
 
-   指定额外的时间来阻止文件运行，同时等待云确定。 指定从 1 秒到 50 秒的额外时间（秒）。 您指定的任何时间将添加到默认值 10 秒。
+   指定额外时间，以在等待云确定时阻止文件运行。 指定从 1 秒到 50 秒的额外时间（秒）。 您指定的任何时间将添加到默认值 10 秒。
 
 5. 选择“**确定**”。
 

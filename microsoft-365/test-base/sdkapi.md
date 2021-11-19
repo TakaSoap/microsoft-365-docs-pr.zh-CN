@@ -14,15 +14,15 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 9e2c52d23c0e0c949059dc37eee4c1a59b35964e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f7e5edeeac79b417bcb41f8607c46fc8894ea4fc
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704939"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110375"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>使用 SDK & API 管理资源
-自动化是自动化和敏捷DevOps的一个关键方面。 您是否希望管理测试基础Microsoft 365资源、以编程方式获取测试结果并将其与 CI 工具集成？ 测试基本 API/SDK 可以帮助你实现所有这些目标以及更多目标！ 
+自动化是自动化和敏捷DevOps的一个关键方面。 您是否希望管理测试基础Microsoft 365、以编程方式获取测试结果，并将其与 CI 工具集成？ 测试基本 API/SDK 可以帮助你实现所有这些目标以及更多目标！ 
 
 通过这些 API/SDK，IT 专业人员和应用开发人员可以： 
 - 管理测试基本帐户，包括创建、更新和载出。 
@@ -30,7 +30,7 @@ ms.locfileid: "60704939"
 - 获取测试摘要、详细的测试结果和分析结果。 分析结果包括 CPU 回归分析、CPU 使用率分析、内存回归分析和内存使用率分析。 
 - 下载测试结果和测试执行视频录制。  
 
-请查看下面的分步大纲，了解如何在 Test Base for Microsoft 365 service 中访问此新功能。
+请查看下面的分步大纲，了解如何在测试基础服务中访问此Microsoft 365功能。
 
 ## <a name="a-step-by-step-example-of-test-base-account-creation-by-using-python-sdk"></a>使用 Python SDK 创建测试基础帐户的分步示例
 
@@ -40,13 +40,13 @@ ms.locfileid: "60704939"
 
     [具有活动订阅的 Azure](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup) 帐户（如果你没有订阅）<br>
     [Python 2.7+ 或 3.6+](https://www.python.org/downloads)<br>
-    [Azure Command-Line Interface (CLI) ](/cli/azure/install-azure-cli) <br>
+    [Azure Command-Line INTERFACE (CLI) ](/cli/azure/install-azure-cli) <br>
 
 - 使用控制台中的管道安装安装库包 
 
 ```
 pip install azure-identity 
-pip install azure-mgmt-testbase  
+pip install azure-mgmt-testbase
 ```
 
 - 在开发环境中进行身份验证 
@@ -104,13 +104,13 @@ print("Create test base account:\n{}".format(testBaseAccount))
 
 **Azure 订阅** 
 
-- [具有活动订阅的 Azure 帐户](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup) 
+- [具有活动订阅的 Azure 帐户](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup)
 
 **Python SDK** 
 
-- [测试基本 Python SDK 文档](/python/api/overview/azure/mgmt-testbase-readme?view=azure-python-preview)
-- [测试基本 Python SDK 示例](https://aka.ms/testbase-sample-py) 
-- [Python SDK 的 Azure 常规使用模式](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries) 
+- [测试基本 Python SDK 文档](/python/api/overview/azure/mgmt-testbase-readme)
+- [测试基本 Python SDK 示例](https://aka.ms/testbase-sample-py)
+- [Python SDK 的 Azure 常规使用模式](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
 
 **REST API**  
 

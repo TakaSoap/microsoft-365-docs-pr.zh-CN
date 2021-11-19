@@ -1,6 +1,6 @@
 ---
-title: 使用实时响应收集适用于终结点的 Microsoft Defender 中的支持日志
-description: 了解如何使用实时响应收集日志，以排查 Microsoft Defender for Endpoints 问题
+title: 使用实时响应收集 Microsoft Defender for Endpoint 中的支持日志
+description: 了解如何使用实时响应收集日志，以排查 Microsoft Defender 终结点问题
 keywords: 支持， 日志， 收集， 疑难解答， 实时响应， liveanalyzer， 分析器， 实时， 响应
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: ad1a7b20aef4ae6073f589738fa0c591b0102463
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ae2a0b538fffc1644d3eb3e26c5b7cd4b512de1c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556012"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110699"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>使用实时响应收集 Microsoft Defender for Endpoint 中的支持日志
 
@@ -78,9 +78,9 @@ ms.locfileid: "60556012"
 >   GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
 >   ```
 >
-> - 有关在计算机本地收集数据（如果计算机未与适用于 Endpoint 云服务的 Microsoft Defender 通信，或未按预期显示在 Microsoft Defender for Endpoint 门户中）上的数据详细信息，请参阅验证与 [Microsoft Defender for Endpoint](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)服务 URL 的客户端连接。
+> - 有关在计算机本地收集数据（如果计算机未与适用于 Endpoint 云服务的 Microsoft Defender 通信，或未按预期显示在适用于终结点的 Microsoft Defender 门户中）上的数据详细信息，请参阅验证与 [Microsoft Defender for Endpoint](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)服务 URL 的客户端连接。
 > 
-> - 如 [实时响应命令示例中](live-response-command-examples.md)所述，你可能想要在命令末尾使用"&"符号来收集日志作为后台操作：
+> - 如实时 [响应命令示例中](live-response-command-examples.md)所述，你可能想要在命令末尾使用"&"符号来收集日志作为后台操作：
 >   ```console
 >   Run MDELiveAnalyzer.ps1&
 >   ```
@@ -93,4 +93,3 @@ ms.locfileid: "60556012"
 - [在 macOS 或 Linux 上运行客户端分析器](run-analyzer-macos-linux.md)
 - [用于在 Windows 上进行高级故障排除的数据收集](data-collection-analyzer.md)
 - [了解分析器 HTML 报表](analyzer-report.md)
-

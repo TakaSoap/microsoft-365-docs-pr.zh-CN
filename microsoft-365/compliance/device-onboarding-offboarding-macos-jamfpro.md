@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: '了解如何使用 JAMF Microsoft 365预览版将 macOS 设备载入和Pro (合规性) '
-ms.openlocfilehash: 94200142a05eeed9e27f53c571afb5ba68d30c82
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 1c21251b390209d92696a36962705b9f2517a53c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064084"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111215"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>使用 JAMF Pro 将 macOS 设备载入和卸载到 Microsoft 365 合规性解决方案（预览版）
 
@@ -30,14 +30,14 @@ ms.locfileid: "61064084"
 
 ## <a name="get-registered"></a>注册
 
-若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅 注册[macOS Microsoft 365。](https://aka.ms/EndpointDLPIgnite21-Previews)
+若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅[注册 Microsoft 365 macOS 支持](https://aka.ms/EndpointDLPIgnite21-Previews)。
 
 **适用于：**
 
 - [Microsoft 365终结点数据丢失防护 （DLP）](./endpoint-dlp-learn-about.md)
 - [内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 确保[macOS 设备已Azure AD连接](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
 - 确保通过 [JAMF 专业版管理 macOS 设备](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
@@ -71,7 +71,7 @@ ms.locfileid: "61064084"
 
 ### <a name="get-the-device-onboarding-package"></a>获取设备载入包
 
-1. 在 **合规性中心** 中 **，设置"**  >  **设备载入"，** 然后选择 **"载入"。**
+1. 在 **"合规性中心**"**中**  >  **设置"设备载入"，** 然后选择 **"载入"。**
  
 1. 对于 **"选择操作系统以开始载入过程"选择** **macOS**
  
@@ -81,7 +81,7 @@ ms.locfileid: "61064084"
  
 1. 提取设备载入包的内容。 在 JAMF 文件夹中，应看到 *DeviceComplainceOnboarding.plist* 文件。
 
-### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>为载入Pro创建 JAMF 和配置文件
+### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>为载入Pro创建 JAMF 模式配置文件
 
 1. 在 JAMF 中创建新的配置文件Pro。 请参阅[JAMF Pro管理员指南](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)。 使用这些值：
     - 名称：`MDATP onboarding for macOS`
@@ -106,7 +106,7 @@ ms.locfileid: "61064084"
 ### <a name="configure-preference-domain-using-the-jamf-pro-console"></a>使用 JAMF PRO 控制台配置首选项域
 
 > [!IMPORTANT]
-> 必须使用 ***com.microsoft.wdav** _ 作为首选项域值。 Microsoft Defender 使用此名称和 _ *_com.microsoft.wdav.ext_** 加载其托管设置。
+> 必须使用 ***com.microsoft.wdav** _ 作为首选项域值。 Microsoft Defender for Endpoint 使用此名称和 _ *_com.microsoft.wdav.ext_** 加载其托管设置。
 
 1. 在 JAMF 中创建新的配置文件Pro。 请参阅[JAMF Pro管理员指南](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)。 使用这些值：
     - 名称：`MDATP MDAV configuration settings`
@@ -115,7 +115,7 @@ ms.locfileid: "61064084"
     - 分发方法： `install automatically`
     - 级别： `computer level`
 
-1. 在"**应用程序&自定义** 设置选项卡上，选择"外部应用程序 **"，** 选择"**添加**"，然后选择首选项域的 **"自定义架构**"。 使用此值：
+1. 在"**应用程序&自定义** 设置选项卡上，选择"外部应用程序 **"，** 选择"**添加**"，然后选择首选项域的 **"** 自定义架构"。 使用此值：
     - 首选项域： `com.microsoft.wdav`
 
 1. 选择 **"添加架构****Upload以** 上载 *schema.json* 文件。
@@ -144,7 +144,7 @@ ms.locfileid: "61064084"
     - 分发方法： `install automatically`
     - 级别： `computer level`
 
-1. In **Application & Custom 设置** choose **Upload** and **Add**.
+1. 在 **"应用程序&自定义设置"Upload"** 添加 **"。** 
 
 1. 在 **首选项域中** 输入 `com.microsoft.autoupdate2` ，然后选择"Upload"。 
 
@@ -165,7 +165,7 @@ ms.locfileid: "61064084"
 
 1. 使用 **fulldisk.mobileconfig** 文件。
 
-1. Upload **fulldisk.mobileconfig** 文件更新为 JAMF。 请参阅[使用 JAMF 部署自定义配置文件Pro。](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)
+1. Upload **fulldisk.mobileconfig 文件** 更新为 JAMF。 请参阅[使用 JAMF 部署自定义配置文件Pro。](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)
 
 ### <a name="create-and-deploy-a-configuration-profile-for-system-extensions"></a>为系统扩展创建和部署配置文件
 
@@ -194,17 +194,17 @@ ms.locfileid: "61064084"
 
 1.  使用从 Github 下载的 **netfilter.mobileconfig**  文件。
 
-2.  Upload JAMF，如[使用 Jamf 部署自定义配置文件](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)Pro。
+2.  Upload Jamf 部署自定义配置文件中的说明操作[，Pro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
 ### <a name="grant-accessibility-access-to-dlp"></a>授予对 DLP 的辅助功能访问权限
 
 1. 使用从 Github 下载的 **accessibility.mobileconfig** 文件。
 
-2.  Upload JAMF，如[使用 Jamf 部署自定义配置文件](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)Pro。
+2.  Upload Jamf 部署自定义配置文件中的说明操作[，Pro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
 ### <a name="get-the-installation-package"></a>获取安装包
 
-1. 在 **"合规性中心**"**中**  >  **设置"设备载入"，** 然后选择 **"载入"。**
+1. 在 **合规性中心** 中 **，设置"**  >  **设备载入"，** 然后选择 **"载入"。**
  
 1. 对于 **"选择操作系统以开始载入过程"选择** **macOS**
  
@@ -279,11 +279,10 @@ ms.locfileid: "61064084"
 
 ## <a name="offboard-macos-devices-using-jamf-pro"></a>使用 JAMF 设备的载 macOS Pro
 
-1. 如果不使用 MDE (，请卸载应用程序) 
+1. 如果未使用 MDE (，请卸载) 
     1. 请参阅 JAMF Pro文档 - 包部署 - [JAMF Pro管理员指南](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro 管理员指南
 
 1. 重新启动 macOS 设备 - 在重新启动某些应用程序之前，它们可能会失去打印功能
 
 > [!IMPORTANT]
 > "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留 6 个月。
-

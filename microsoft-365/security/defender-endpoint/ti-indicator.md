@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b4ba3db32004eb9ce80e386d918e470d1361e404
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 4d31bce9aa3cc6c64771e0931c22849aa1d92eec
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785596"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110075"
 ---
 # <a name="indicator-resource-type"></a>指示器资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "60785596"
 
 - 请参阅门户 [中的相应](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) "指示器"页。
 
-方法|返回类型|说明
+方法|返回类型|Description
 :---|:---|:---
 [列出指示器](get-ti-indicators-collection.md)|[指示器](ti-indicator.md) 集合|列表 [指示器](ti-indicator.md) 实体。
 [提交指示器](post-ti-indicator.md)|[指示器](ti-indicator.md)|提交或更新 [指示器](ti-indicator.md) 实体。
@@ -52,11 +52,11 @@ ms.locfileid: "60785596"
 属性|类型|说明
 :---|:---|:---
 id|String|Indicator [实体的](ti-indicator.md) 标识。
-indicatorValue|字符串|指示器 [的值](ti-indicator.md)。
+indicatorValue|String|指示器 [的值](ti-indicator.md)。
 indicatorType|枚举|指示器的类型。 可能的值是："FileSha1"、"FileSha256"、"FileMd5"、"CertificateThumbprint"、"IpAddress"、"DomainName"和"Url"。
-应用程序|字符串|与指示器关联的应用程序。
+应用程序|String|与指示器关联的应用程序。
 action|枚举|如果在组织中发现指示器，将采取的操作。 可能的值包括："Warn"、"Block"、"Audit"、"Alert"、"AlertAndBlock"、"BlockAndRemediate"和"Allowed"。
-|externalID|字符串|客户可以在自定义关联请求中提交的 ID。|
+|externalID|String|客户可以在自定义关联请求中提交的 ID。|
 sourceType|枚举|"用户"，如果由用户创建的指示器 (例如，从门户) ，"AadApp"，以防它通过 API 使用自动应用程序提交。
 createdBySource|string|提交指示器的用户/应用程序的名称。
 createdBy|String|提交指示器的用户/应用程序的唯一标识。
@@ -67,7 +67,7 @@ lastUpdateTime|DateTimeOffset|上次更新指示器的时间。
 severity|枚举|指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。
 title|String|指示器标题。
 说明|String|指示器的说明。
-recommendedActions|字符串|指示器的建议操作。
+recommendedActions|String|指示器的建议操作。
 rbacGroupNames|字符串列表|RBAC 设备组名称，其中指示器已公开且处于活动状态。 空列表，以防它向所有设备公开。
 rbacGroupIds|字符串列表|RBAC 设备组 ID，其中指示器已公开且处于活动状态。 空列表，以防它向所有设备公开。
 generateAlert|枚举|**如果** 警报生成是必需的，则其为 **True;** 如果此指示器不应生成警报，则其为 False。
@@ -80,13 +80,13 @@ API 支持的指示器操作类型为：
 - Audit
 - 阻止
 - BlockAndRemediate
-- 仅 (MCAS 警告) 
+- 仅 (适用于云应用的 Defender) 
 
 有关响应操作类型的说明详细信息，请参阅创建 [指示器](manage-indicators.md)。
 
 > [!Note]
 >
-> 在 2022 年 1 (支持 AlertAndBlock 和 Alert) 响应操作。 在此日期之后，所有客户都必须使用上面列出的操作类型之一。
+> AlertAndBlock (和 Alert) 2022 年 1 月前受支持。 在此日期之后，所有客户都必须使用上面列出的操作类型之一。
 
 ## <a name="json-representation"></a>Json 表示形式
 

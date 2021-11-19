@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8933c96d96e59f4b1a3c0b5956bf3248f2eb73d2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 1c15b0fe82e2d6dbadce7fe7a5efaa73c6b45940
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785566"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110915"
 ---
 # <a name="create-indicators"></a>创建指示器
 
@@ -35,7 +35,7 @@ ms.locfileid: "60785566"
 >
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)。
 
-ICS (泄露) 是每个终结点保护解决方案中的重要功能。 此功能使 SecOps 能够设置检测指标列表，并阻止 (和响应) 。
+ICS (泄露) 是每个终结点保护解决方案中的重要功能。 此功能使 SecOps 能够设置检测指标列表和阻止 (防护和响应) 。
 
 创建定义实体的检测、防护和排除的指示器。 你可以定义要采取的操作以及何时应用该操作的持续时间，以及要应用该操作的设备组的范围。
 
@@ -55,11 +55,11 @@ Defender for Endpoint 的云检测引擎会定期扫描收集的数据并尝试�
 
 EnableFileHashComputation 设置在文件扫描期间计算证书和文件 IoC 的文件哈希。 它支持对哈希和证书属于受信任应用程序的 IoC 强制。 它将通过允许或阻止文件设置同时启用和禁用。 EnableFileHashComputation 通过组策略手动启用，默认情况下处于禁用状态。
 
-在 IoC (创建新) 时，可以使用以下一个或多个操作：
+在 IoC (指示器) 时，可以使用以下一个或多个操作：
 
 - 允许 – 允许 IoC 在你的设备上运行。
 - 审核 – IoC 运行时将触发警报。
-- 警告 - IoC 将提示一条警告，提示用户只能 (MCAS)  
+- 警告 - IoC 将提示一条警告，提示用户仅 (适用于云应用的 Defender) 
 - 阻止执行 - 不允许运行 IoC。
 - 阻止和修正 - 不允许运行 IoC，并且修正操作将应用于 IoC。
 
@@ -72,7 +72,7 @@ EnableFileHashComputation 设置在文件扫描期间计算证书和文件 IoC �
 - [IP 地址、URL/域](indicator-ip-domain.md)
 - [证书](indicator-certificates.md)
 
-下表确切显示了每个 IoC 类型中每个 (可用的) 操作：
+下表确切显示了每个指标的可用操作 (IoC) 类型：
 
 | IoC 类型 | 可用操作 |
 |:---|:---|
@@ -84,7 +84,7 @@ EnableFileHashComputation 设置在文件扫描期间计算证书和文件 IoC �
 预先存在的 IoC 的功能不会更改。 但是，已重命名指示器以匹配当前支持的响应操作：
 
 - "仅警报"响应操作已重命名为"审核"，并启用生成警报设置。
-- 使用可选生成警报设置将"警报和阻止"响应重命名为"阻止和修正"。
+- 使用可选的生成警报设置将"警报和阻止"响应重命名为"阻止和修正"。
 
 IoC API 架构和提前搜寻的威胁 ID 已更新，以与 IoC 响应操作重命名保持一致。 API 方案更改适用于所有 IoC 类型。
 

@@ -19,19 +19,19 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: 有 200 种敏感信息类型可供您用于 DLP 策略。 本文列出了所有这些敏感信息类型，并演示 DLP 策略在检测到每种类型时查找的信息。
-ms.openlocfilehash: 92b6d6720da67274e820a57fec8d2ade338574f2
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 62689bf409dc708f9b360ad2131d6db0e206e75c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754161"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109967"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
 本文列出了所有敏感信息类型实体定义。 每个定义都显示 DLP 策略查找以检测每种类型。 若要了解有关敏感信息类型的信息，请参阅 [敏感信息类型](sensitive-information-type-learn-about.md)
 
 > [!NOTE]
-> 置信度 (高/中/低) 的映射 (1 到 100) 
+> 置信度 (高/中/低) 的映射 (数值 1 到 100) 
 > - 低可信度：65 或以下
 > - 中等可信度：75
 > - 高可信度：85
@@ -302,7 +302,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 
 ### <a name="format"></a>格式
@@ -364,7 +364,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -902,7 +902,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -1173,7 +1173,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -1249,10 +1249,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 - 字符串"DocumentDb"
-- 3-200 小写或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 3-200 位小写或大写字母、数字、符号、特殊字符或空格之间的任意组合
 - 大于符号 (>) 、等号 (=) 、引号 (") 或撇号 (') 
 - 86 个小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
-- 两个等 (=) 
+- 两个等号 (=) 
 
 ### <a name="checksum"></a>校验和
 
@@ -1280,7 +1280,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。) 
+ (，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。) 
 
 - contoso
 - fabrikam
@@ -1312,7 +1312,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 等号 (=) 
 - 零到两个空格字符
 - 一个或多个不是分号字符 (;) 、引号 (") 或撇 (字符) 
-- 分号 (;) 、引号 (") 或撇号 () 
+- 分号 (;) 、引号 (") 或撇号 (") 
 
 ### <a name="checksum"></a>校验和
 
@@ -1340,7 +1340,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字) 
+ (，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。) 
 
 - contoso
 - fabrikam
@@ -1371,7 +1371,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 43 个小写或大写字母、数字、正斜杠 (/) 或加号 + (的任意组合) 
+- 43 个小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1400,7 +1400,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字) 
+ (，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。) 
 
 - contoso
 - fabrikam
@@ -1422,7 +1422,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - 字符串"userpwd="
 - 60 个小写字母或数字的任意组合
-- 双引号 (") 
+- 引号 (") 
 
 ### <a name="checksum"></a>校验和
 
@@ -1451,7 +1451,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字) 
+ (，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。) 
 
 - contoso
 - fabrikam
@@ -1472,7 +1472,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 - 字符串"redis.cache.windows"。<!--no-hyperlink-->net"
-- 1-200 位小写或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串"password"或"pwd"
 - 零到两个空格字符
 - 等号 (=) 
@@ -1506,7 +1506,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
+ (，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。) 
 
 - contoso
 - fabrikam
@@ -1532,7 +1532,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 零到两个空格字符
 - 小写或大写字母、数字或百分号之间的 43-53 个字符的任意组合 (%) 
 - 字符串"%3d"
-- 任何不是小写或大写字母、数字或百分号的字符 (%) 
+- 不是小写或大写字母、数字或百分号的任何字符 (%) 
 
 ### <a name="checksum"></a>校验和
 
@@ -1564,9 +1564,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 1-200 位小写或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串"servicebus.windows"。<!--no-hyperlink-->net"
-- 1-200 位小写或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串"SharedAccessKey"
 - 零到两个空格字符
 - 等号 (=) 
@@ -1600,7 +1600,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
+ (，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。) 
 
 - contoso
 - fabrikam
@@ -1629,7 +1629,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 86 个字符的任意组合，包括小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
+- 小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 两个等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1660,13 +1660,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_azure_emulator_storage_account_filter"></a>CEP_azure_emulator_storage_account_filter
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
+ (，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。) 
 
 - Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
+ (，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。) 
 
 - contoso
 - fabrikam
@@ -1678,7 +1678,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - testacs。<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->net
 
-## <a name="azure-storage-account-key-generic"></a>Azure 存储常规 (帐户密钥) 
+## <a name="azure-storage-account-key-generic"></a>Azure 存储常规 (帐户) 
 
 ### <a name="format"></a>格式
 
@@ -2073,7 +2073,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -2502,7 +2502,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -2588,7 +2588,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - национален номер
 - номер на гражданството
 - 2013 年 1 月 2 日
-- ql граждански граждански id
+- 2016 年 4 月граждански граждански id
 - униформ граждански не
 - униформ граждански номер
 - униформгражданскиid#
@@ -3075,7 +3075,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - passportnumber
 - パスポート
 - パスポート番号
-- パスポのNum
+- パスポのnum
 - パスポート＃
 - Numéro de passeport
 - Passeport n °
@@ -3256,7 +3256,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 可选时间段
 - 三个数字
 - 短划线
-- 一个数字或 (不区分大小写) 一个数字或字母，这是一个检查数字
+- 一个数字或 (不区分大小写) 是一个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -4236,7 +4236,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -4368,7 +4368,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -5373,7 +5373,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -5842,7 +5842,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - speldblok
 - veiligheid nr
 - 将igheidsaantal
-- 将igheidscode
+- 一个
 - 将igheidsnummer
 - verfalldatum
 
@@ -6226,7 +6226,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -6472,7 +6472,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="definition"></a>定义
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数Func_french_drivers_license找到与模式匹配的内容。
+- 函数Func_french_drivers_license查找与模式匹配的内容。
 - 找到来自Keyword_french_drivers_license关键字。
 
 ```xml
@@ -6621,7 +6621,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -6965,7 +6965,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -7247,7 +7247,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 校验和通过。
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找与 2010 (9 个字符模式匹配（不含 2010 年前颁发的检查数字）或 `Regex_germany_id_card` 10 位数字模式) 。
+- 正则表达式查找与 2010 (9 个字符模式匹配的内容，而不检查 `Regex_germany_id_card` 2010 或 2010 年颁发的 10 个数字模式颁发的 2010) 。
 - 找到 Keyword_germany_id_card 中的一个关键字。
 
 DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
@@ -7318,7 +7318,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 校验和通过。
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 该函数查找与九个字符模式匹配的内容， (`Func_german_passport` 无检查数字和可选 d/D) 。
+- 该函数查找与九个字符模式匹配的内容 (`Func_german_passport` 无检查数字和可选 d/D) 。
 - 找到 或 `Keyword_german_passport` `Keywords_eu_passport_number_common` 中的关键字。
 
 DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
@@ -7458,7 +7458,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -7759,7 +7759,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
 - 正则表达式查找  `Regex_greece_eu_passport_number` 与模式匹配的内容。
 - 找到 或  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_greece_eu_passport_date` DD MMM YY 格式的日期 (示例 - 8 月 19 日) 找到关键字 `Keywords_greece_eu_passport_date`
+- 正则表达式查找 `Regex_greece_eu_passport_date` DD MMM YY 格式的日期 (示例 - 8 月 19) 找到关键字 `Keywords_greece_eu_passport_date`
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
 - 正则表达式查找  `Regex_greece_eu_passport_number` 与模式匹配的内容。
@@ -7817,7 +7817,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -7875,7 +7875,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -8195,7 +8195,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -8397,7 +8397,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -8478,7 +8478,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -8717,7 +8717,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 15 个字母或数字：
 - 表示有效状态代码的两个数字
 - 可选空格或短划线
-- 10 个字符，代表 PAN (的)  
+- 10 个字符，代表 PAN (")  
 - 一个字母或数字
 - 可选空格或短划线
 - 一个字母"z"或"Z"
@@ -9065,7 +9065,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="keywords"></a>关键字
 
-None
+无
 
 
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>ICD-10-CM (国际) 
@@ -9106,9 +9106,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="keywords"></a>关键字
 
-基于国际Dictionary_icd_10_updated分类、第十次修订、修订修改和 [ICD-10-CM ](https://go.microsoft.com/fwlink/?linkid=852604) (关键字词典) 。 此类型仅查找术语，而不是保险代码。
+基于国际Dictionary_icd_10_updated分类、第十次修订、修订修改和 [ICD-10-CM ](https://go.microsoft.com/fwlink/?linkid=852604) (关键字词典的任何) 。 此类型仅查找术语，而不是保险代码。
 
-基于国际Dictionary_icd_10_codes分类、第十次修订、修订修改和 [ICD-10-CM ](https://go.microsoft.com/fwlink/?linkid=852604) (的关键字词典中的) 。 此类型仅查找保险代码，而不是说明。
+基于国际Dictionary_icd_10_codes分类、第十次修订、修订修改和 [ICD-10-CM ](https://go.microsoft.com/fwlink/?linkid=852604) (关键字词典的任何) 。 此类型仅查找保险代码，而不是说明。
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>ICD-9-CM (国际) 
 
@@ -9147,16 +9147,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="keywords"></a>关键字
 
-基于国际Dictionary_icd_9_updated分类、第九次修订、修订修改和 [ICD-9-CM ](https://go.microsoft.com/fwlink/?linkid=852605) (关键字词典的任何) 。 此类型仅查找术语，而不是保险代码。
+来自Dictionary_icd_9_updated关键字词典的任何术语，该词典基于国际医学分类、第九次修订、修改 ([ICD-9-CM) 。 ](https://go.microsoft.com/fwlink/?linkid=852605) 此类型仅查找术语，而不是保险代码。
 
-来自Dictionary_icd_9_codes关键字词典的任何术语，该词典基于国际医学分类、第九次修订、修改 ([ICD-9-CM) 。 ](https://go.microsoft.com/fwlink/?linkid=852605) 此类型仅查找保险代码，而不是说明。
+基于国际Dictionary_icd_9_codes分类、第九次修订、修订修改和 [ICD-9-CM ](https://go.microsoft.com/fwlink/?linkid=852605) (的关键字词典) 。 此类型仅查找保险代码，而不是说明。
 
 ## <a name="ip-address"></a>IP 地址
 
 ### <a name="format"></a>格式
 
 #### <a name="ipv4"></a>IPv4：
-适用于 IPv4 地址 (格式) 和无格式 (IPv4 地址) 句点的复杂模式
+适用于 IPv4 地址 (格式) 和无格式 (IPv4) 模式的复杂模式
 
 #### <a name="ipv6"></a>IPv6：
 包含带格式的 IPv6 号码的复杂 (包括冒号) 
@@ -9220,7 +9220,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-适用于 IPv4 地址 (格式) 和无格式 (IPv4 地址) 句点的复杂模式
+适用于 IPv4 地址 (格式) 和无格式 (IPv4) 模式的复杂模式
 
 ### <a name="pattern"></a>模式
 
@@ -9498,7 +9498,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
 - 正则表达式查找  `Regex_ireland_eu_passport_number` 与模式匹配的内容。
 - 找到 或  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` 中的关键字。
-- 正则表达式查找格式为 `Regex_ireland_eu_passport_date` DD MMM/MMM YYYYY (Example - 01 BEA/MAY 1988) 或找到的 `Keywords_eu_passport_date` 关键字的日期
+- 正则表达式查找格式为 `Regex_ireland_eu_passport_date` DD MMM/MMM YYYYY (Example - 01 BEA/MAY 1988) 或找到的 `Keywords_eu_passport_date` 关键字
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
 - 正则表达式查找  `Regex_ireland_eu_passport_number` 与模式匹配的内容。
@@ -9566,7 +9566,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 旧格式 (2012 年 12 月 31) ：
 - 七个数字后跟 1-2 个字母
 
-2013 年 1 月 1 (及之后的新格式) ：
+2013 年 1 (1 日及之后的新) ：
 - 七个数字后跟两个字母
 
 ### <a name="pattern"></a>模式
@@ -9575,7 +9575,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 七个数字
 - 一到两个字母 (不区分大小写) 
 
-2013 年 1 月 1 (及之后的新格式) ：
+2013 年 1 (1 日及之后的新) ：
 - 七个数字
 - 字母 (不区分大小写) 字母检查数字
 - A-I 或"W"范围中的可选字母
@@ -9937,7 +9937,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -9949,9 +9949,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 三个字母，对应于系列名称中的前三个辅音
 - 三个字母，分别对应名字中的第一个、第三个和第四个辅音
 - 两个数字，对应于出生日期的最后一个数字
-- 一个对应于出生日期月份字母的字母 -字母按字母顺序使用，但只有字母 A 到 E、H、L、M、P、R 到 T (因此，January 为 A，10 月为 R) 
+- 一个对应于出生日期月份字母的字母 - 字母按字母顺序使用，但只有字母 A 到 E、H、L、M、P、R 到 T (因此，January 为 A，10 月为 R) 
 - 为区分性别，与当月中的一天对应的两个数字，40 个数字将添加到女士的出生日期
-- 四个数字，对应于特定的地区代码，该人的 (国家/地区代码用于国家/地区) 
+- 四个数字，对应于特定的地区代码，该号码是此人的 (国家/地区代码用于其他国家/地区) 
 - 一个奇偶校验数字
 
 ### <a name="checksum"></a>校验和
@@ -10040,7 +10040,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
 - 正则表达式查找  `Regex_italy_eu_passport_number` 与模式匹配的内容。
 - 找到 或  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` 中的关键字。
-- 正则表达式查找格式为 `Regex_italy_eu_passport_date` DD MMM/MMM YYYYY (Example - 01 GEN/JAN 1988) 或找到的 `Keywords_eu_passport_date` 关键字
+- 正则表达式查找格式为 `Regex_italy_eu_passport_date` DD MMM/MMM YYYYY (Example - 01 GEN/JAN 1988) 或找到的 `Keywords_eu_passport_date` 关键字的日期
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
 - 正则表达式查找  `Regex_italy_eu_passport_number` 与模式匹配的内容。
@@ -10107,7 +10107,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -10171,7 +10171,7 @@ bank account number：
 - 七个或八个数字
 - bank account branch code：
 - 四个数字
-- 可选属性， (或) 
+- 空格或短划线 (可选) 
 - 三个数字
 
 校验和
@@ -10319,7 +10319,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 免許証ナンバー
 - 転証no
 - 転転no
-- 免証no
+- 証no
 - 免
 - 運転経歴証明書番号
 - 運転経歴証明書
@@ -10340,7 +10340,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -10402,7 +10402,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -10503,7 +10503,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - パスポートナンバー
 - パスポート＃
 - パスポート#
-- パスポパスポパスポ。
+- パスポパスポ。
 - 旅券番号
 - 旅券番号＃
 - 旅券番号♯
@@ -10967,7 +10967,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-两个字母或数字后跟七个数字，没有空格或分隔符
+两个字母或数字后跟七个数字，无空格或分隔符
 
 ### <a name="pattern"></a>模式
 
@@ -11205,8 +11205,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver s_license_number
 
 - vair一pažymėjimas
-- vair一pažymėjimo numeris
-- vair一pažymėjimo jo pažymėjimo num在i
+- vair一pažymėjimo jo numeris
+- vair一pažymėjimo jo pažymėjimo num进行
 
 ## <a name="lithuania-personal-code"></a>立陶宛个人代码
 此敏感信息类型仅在：
@@ -11214,7 +11214,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -11268,7 +11268,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - citizen service number
 - mokesčių ID
 - mokesčių identif一vimas numeris
-- mokesčių identifikavimo numeris
+- mokesčių identif一vimo numeris
 - mokesčių numeris
 - national identification number
 - 个人代码
@@ -11534,13 +11534,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - fahrerlaubnis
 - Führerschhrin
 
-## <a name="luxemburg-national-identification-number-natural-persons"></a>阿比塞明卡国民身份证 (自然人) 
+## <a name="luxemburg-national-identification-number-natural-persons"></a>阿比塞卡州国民身份证 (自然人) 
 此敏感信息类型仅在：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -11696,7 +11696,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 到期日期
 
 
-## <a name="luxemburg-national-identification-number-non-natural-persons"></a>阿比塞卡 (非自然人的身份证号) 
+## <a name="luxemburg-national-identification-number-non-natural-persons"></a>阿比塞 (非自然人的身份证号) 
 
 ### <a name="format"></a>格式
 
@@ -11865,9 +11865,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 两个字符和六个数字的组合：
 
 - 两个字符 (数字或字母，不区分大小写) 
-- 一个 (可选) 
+- 空格 (可选) 
 - 三个数字
-- 一个 (可选) 
+- 空格 (可选) 
 - 三个数字
 
 ### <a name="checksum"></a>校验和
@@ -12029,7 +12029,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -12075,7 +12075,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - citizen service number
 - id tat-taxxa
 - identifjet numru tal-jett
-- kodiċi数字个人
+- kodiċi数字 personali
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
 - numru ta 'identifikazzjoni uniku
@@ -12251,7 +12251,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - uniqueidentityno#
 
 
-## <a name="medicare-beneficiary-identifier-mbi-card"></a>MBI 卡 (收入) 标识符
+## <a name="medicare-beneficiary-identifier-mbi-card"></a>一个 MBI (的) 标识符
 
 ### <a name="format"></a>格式
 
@@ -12376,7 +12376,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - clavepersonalIdentidad
 
 
-## <a name="netherlands-citizens-service-bsn-number"></a>荷兰公民服务 (BSN) 号码
+## <a name="netherlands-citizens-service-bsn-number"></a>荷兰公民服务号码 (BSN) 号码
 
 ### <a name="format"></a>格式
 
@@ -12624,7 +12624,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
 - 正则表达式查找  `Regex_netherlands_eu_passport_number` 与模式匹配的内容。
 - 找到 或  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` 中的关键字。
-- 正则表达式查找格式 `Regex_netherlands_eu_passport_date` 为 DD MMM/MMM YYYYY (Example - 26 MAA/MAR 2012) 
+- 正则表达式查找 `Regex_netherlands_eu_passport_date` DD MMM/MMM YYYYY 格式的日期 (示例 - 26 MAA/MAR 2012) 
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
 - 正则表达式查找  `Regex_netherlands_eu_passport_number` 与模式匹配的内容。
@@ -12679,7 +12679,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -12762,7 +12762,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -12824,7 +12824,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -12886,7 +12886,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -13001,7 +13001,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -13063,7 +13063,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="pattern"></a>模式
 
-- 三个字母 (区分大小写) "I"和"O"除外
+- 三个字母 (不区分大小写) "I"和"O"除外
 - 四个数字
 
 ### <a name="checksum"></a>校验和
@@ -13111,7 +13111,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -13624,7 +13624,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -13690,7 +13690,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -14318,7 +14318,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -14429,7 +14429,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
 - 正则表达式查找  `Regex_romania_eu_passport_number` 与模式匹配的内容。
 - 找到 或  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_romania_eu_passport_date` DD MMM/MMM YY 格式的日期 (示例- 01 2 月/2 月 10) 或找到的 `Keywords_eu_passport_date` 关键字
+- 正则表达式查找 `Regex_romania_eu_passport_date` DD MMM/MMM YY 格式的日期 (示例- 01 2 月/2 月 10) 或找到 `Keywords_eu_passport_date` 的关键字
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
 - 正则表达式查找  `Regex_romania_eu_passport_number` 与模式匹配的内容。
@@ -14490,7 +14490,7 @@ numnrrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -14552,7 +14552,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -14875,7 +14875,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -14884,7 +14884,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 - 六个数字，表示出生日期
-- 可选斜 (/) 
+- 可选斜杠 (/) 
 - 三个数字
 - 一个可选检查数字
 
@@ -14944,7 +14944,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - ssn
 - személyi igazolvlvy szám
 - személyi igazolvlvy száma
-- személymézolvlvy szám
+- személy一zolvlvy szám
 - tax file no
 - tax file number
 - tax id
@@ -15214,7 +15214,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -15374,7 +15374,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -15735,7 +15735,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -15909,9 +15909,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 11-12 个数字：
 - 两个数字
-- 可选参数 (斜杠) 
+- 可选参数， (正斜) 
 - 七到八个数字
-- 可选参数 (斜杠) 
+- 可选参数， (正斜) 
 - 两个数字
 
 ### <a name="checksum"></a>校验和
@@ -15959,7 +15959,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -15970,31 +15970,31 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 具有西班牙国家身份证的西班牙自然人：
 
 - 八个数字
-- 一个小写字母 (区分大小写) 
+- 一个小写 (区分大小写) 
 
 没有西班牙国家身份证的非常驻 Spaniards
 
 - 一个小写字母"L" (区分大小写) 
 - 七个数字
-- 一个小写字母 (区分大小写) 
+- 一个小写 (区分大小写) 
 
 没有西班牙国家身份证的 14 岁以下的儿童的常驻 Spaniards：
 
 - 一个小写字母"K" (区分大小写) 
 - 七个数字
-- 一个小写字母 (区分大小写) 
+- 一个小写 (区分大小写) 
 
 具有一位用户标识号的百位用户
 
 - 一个区分大小写的大写字母"X"、"Y"或"Z" (区分大小写) 
 - 七个数字
-- 一个小写字母 (区分大小写) 
+- 一个小写 (区分大小写) 
 
 没有标识号的百分卡
 
 - 一个区分大小写的大写字母 ("M") 
 - 七个数字
-- 一个小写字母 (区分大小写) 
+- 一个小写 (区分大小写) 
 
 ### <a name="checksum"></a>校验和
 
@@ -16072,10 +16072,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 - 字符串"用户 ID"、"用户 ID"、"uid"或"UserId"
-- 1-200 位小写或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串"Password"或"pwd"，其中"pwd"的前面没有小写字母
 - 等号 (=) 
-- 任何不是美元符号的字符 ($) ，百分比符号 (%) ，大于符号 (>) ，符号为 (@) ，引号 (") ，分号 (;) ，左大括号 ([) ，或左括号 ({) 
+- 不是美元符号的任何字符 ($) ，百分比符号 (%) ，大于符号 (>) ，符号为 (@) ，引号 (") ，分号 (;) ，左大括号 ([) ，或左括号 ({) 
 - 7-128 个字符的任意组合，这些字符不是分号 (;) 、正斜杠 (/) 或引号 (") 
 - 分号 (;) 或引号 (") 
 
@@ -16325,7 +16325,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 10 或 12 位数字和可选的分隔符：
 - 两个数字 (可选) 
 - 采用日期格式 YYMMDD 的六位数字
-- 可选参数"-"或"+" () 
+- 可选参数"-"或"+" (分隔) 
 - 四个数字
 
 ### <a name="checksum"></a>校验和
@@ -16397,7 +16397,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
 - 正则表达式Regex_sweden_passport_number查找与模式匹配的内容。
 - 找到或 `Keywords_eu_passport_number` `Keyword_sweden_passport` 找到的关键字。
-- 正则表达式查找 `Regex_sweden_eu_passport_date` DD MMM/MMM YY (01 JAN/JAN 12) 格式的日期或 `Keywords_eu_passport_date` 找到的关键字。
+- 正则表达式查找 `Regex_sweden_eu_passport_date` DD MMM/MMM YY (01 JAN/JAN 12) 或找到关键字 `Keywords_eu_passport_date` 的日期。
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
 - 正则表达式Regex_sweden_passport_number查找与模式匹配的内容。
@@ -16477,7 +16477,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -16632,7 +16632,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -16704,7 +16704,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-一个字母 (英文) 后跟九个数字
+一个字母 (英语) 后跟九个数字
 
 ### <a name="pattern"></a>模式
 
@@ -16948,7 +16948,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - TC Kim且否
 - TC Kim且 nu一
 - Vat一2k nu一s
-- Vat一体车 no
+- Vat一体车否
 
 ## <a name="uk-drivers-license-number"></a>英国 driver's license number
 
@@ -16959,7 +16959,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 18 个字母和数字：
-- 五个字母 (不区分大小写，) 数字"9"来表示字母。
+- 五个字母 (不区分大小写) 或数字"9"来表示字母。
 - 一个数字。
 - 日期格式 MMDDY 表示出生日期的五个数字。 如果驱动程序是男性，则第七个字符将递增 50;对于考试，51 到 62，而不是 01 到 12。
 - 两个字母 (不区分大小写) 或数字"9"来表示字母。
@@ -17237,7 +17237,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 两种可能的模式：
 
-- 两个字母 (有效 NINOs 仅使用此前缀中的某些字符，此模式对此进行验证;不区分大小写) 
+- 两个字母 (有效 NINOs 仅使用此前缀中的某些字符，此模式将对此进行验证;不区分大小写) 
 - 六个数字
 - "A"、B、C 或"D" (类似前缀，后缀中只允许某些字符;不区分大小写) 
 
@@ -17311,7 +17311,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -17806,7 +17806,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
@@ -17854,7 +17854,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 通信合规性策略
 - 信息治理
 - 记录管理
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 

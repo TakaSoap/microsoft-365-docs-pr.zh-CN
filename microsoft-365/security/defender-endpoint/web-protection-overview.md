@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 42dc7d0c3ce7662cee61754ccced0666f907114f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 004c3c3617f97fe9b37037a5af7d55ed27bc664c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963367"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61106622"
 ---
 # <a name="web-protection"></a>Web 保护
 
@@ -37,7 +37,7 @@ ms.locfileid: "60963367"
 
 ## <a name="about-web-protection"></a>关于 Web 保护
 
-Microsoft Defender for Endpoint 中的 Web 保护功能由[Web 威胁防护、Web](web-threat-protection.md)[内容筛选](web-content-filtering.md)和自定义[指示器构成](manage-indicators.md)。 通过 Web 保护，您可以保护设备免受 Web 威胁，并帮助您控制不需要的内容。 可以在 Web 门户中查找 Web Microsoft 365 Defender报告，> **Web 保护**。
+Microsoft Defender for Endpoint 中的 Web 保护功能由[Web 威胁防护、Web](web-threat-protection.md)[内容筛选](web-content-filtering.md)和自定义[指示器构成](manage-indicators.md)。 通过 Web 保护，您可以保护设备免受 Web 威胁，并帮助您控制不需要的内容。 您可以在 Web 门户中查找 Web Microsoft 365 Defender报告，> **Web 保护**。
 
 :::image type="content" alt-text="所有 Web 保护卡的图像。" source="images/web-protection.png" lightbox="images/web-protection.png":::
 
@@ -79,9 +79,9 @@ Web 内容筛选包括：
 
 ## <a name="order-of-precedence"></a>优先顺序
 
-Web 保护由以下组件组成，按优先顺序列出。 每个组件都由 Microsoft Edge 中的 SmartScreen 客户端和所有其他浏览器和进程中的网络保护客户端强制执行。
+Web 保护由以下组件组成，按优先顺序列出。 其中每个组件都由 Microsoft Edge 中的 SmartScreen 客户端和所有其他浏览器和进程中的网络保护客户端强制执行。
 
-- 自定义指示器 (IP/URL、MICROSOFT CLOUD APP SECURITY (MCAS) 策略) 
+- 自定义指示器 (IP/URL，Microsoft Defender for Cloud Apps 策略) 
   - 允许
   - Warn
   - 阻止
@@ -93,11 +93,11 @@ Web 保护由以下组件组成，按优先顺序列出。 每个组件都由 Mi
 - WCF (Web) 
 
 > [!NOTE]
-> Microsoft Cloud App Security (MCAS) 当前仅为阻止的 URL 生成指示器。
+> Microsoft Defender for Cloud Apps 当前仅生成阻止的 URL 的指示器。
 
-优先级顺序与计算 URL 或 IP 的操作顺序相关。 例如，如果你有 Web 内容筛选策略，可以通过自定义 IP/URL 指示器创建排除项。 IoC (泄露) 的优先级顺序比 WCF 块高。
+优先级顺序与计算 URL 或 IP 的操作顺序相关。 例如，如果你有 Web 内容筛选策略，可以通过自定义 IP/URL 指示器创建排除项。 IoC (的) 指示器的优先级顺序比 WCF 块高。
 
-同样，在指示器冲突期间，允许始终优先于块 (替代) 。 这意味着允许指示器将超过存在的任何阻止指示器。
+同样，在指示器冲突期间，允许始终优先于块 (替代逻辑) 。 这意味着允许指示器将超过存在的任何阻止指示器。
 
 下表总结了在 Web 保护堆栈中出现冲突的一些常见配置。 它还根据上面列出的优先级确定结果。
 
@@ -105,7 +105,7 @@ Web 保护由以下组件组成，按优先顺序列出。 每个组件都由 Mi
 
 ****
 
-|自定义指示器策略|Web 威胁策略|WCF 策略|MCAS 策略|结果|
+|自定义指示器策略|Web 威胁策略|WCF 策略|云应用 Defender 策略|结果|
 |---|---|---|---|---|
 |允许|阻止|阻止|阻止|允许 (Web 保护覆盖) |
 |允许|允许|阻止|阻止|允许 (WCF 异常) |
@@ -136,7 +136,7 @@ Web 保护由以下组件组成，按优先顺序列出。 每个组件都由 Mi
 |---|---|
 |CustomPolicy|WCF|
 |CustomBlockList|自定义指示器|
-|CasbPolicy|MCAS|
+|CasbPolicy|Defender for Cloud Apps|
 |恶意|Web 威胁|
 |网络钓鱼|Web 威胁|
 |||
@@ -146,21 +146,21 @@ Web 保护由以下组件组成，按优先顺序列出。 每个组件都由 Mi
 高级搜寻中的 Kusto 查询可用于汇总组织中最多 30 天的 Web 保护块。 这些查询使用上面列出的信息来区分各种块源，并采用用户友好的方式汇总它们。 例如，下面的查询列出了源自数据库的所有 WCF Microsoft Edge。
 
 ```kusto
-DeviceEvents 
-| where ActionType == "SmartScreenUrlWarning"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomBlockList"
+DeviceEvents
+| where ActionType == "SmartScreenUrlWarning"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
+| where Experience == "CustomBlockList"
 ```
 
-同样，您可以使用下面的查询列出源自 Network Protection 应用程序的所有 WCF 块 (例如，第三方浏览器中的 WCF 块) 。 请注意，ActionType 已更新，"Experience"已更改为"ResponseCategory"。
+同样，您可以使用下面的查询列出源自网络保护网站的所有 WCF (例如，第三方浏览器中的 WCF 块) 。 请注意，ActionType 已更新，"Experience"已更改为"ResponseCategory"。
 
 ```kusto
-DeviceEvents 
-| where ActionType == "ExploitGuardNetworkProtectionBlocked"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
-| where ResponseCategory == "CustomPolicy"
+DeviceEvents 
+| where ActionType == "ExploitGuardNetworkProtectionBlocked"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
+| where ResponseCategory == "CustomPolicy"
 ```
 
 若要列出由于自定义指示器 (其他功能而) ，请参阅上表，其中概述了每个功能及其各自的响应类别。 还可以修改这些查询以搜索与组织中特定计算机相关的遥测。 请注意，上述每个查询中显示的 ActionType 将只显示 Web 保护功能阻止的连接，不会显示所有网络流量。
@@ -172,7 +172,7 @@ DeviceEvents 
 > [!div class="mx-imgBorder"]
 > ![页面被阻止Microsoft Edge。](../../media/web-protection-malicious-block.png)
 
-如果 WCF 或自定义指示器阻止，Microsoft Edge阻止页，告知用户此网站被组织阻止。
+如果 WCF 或自定义指示器阻止，Microsoft Edge阻止页显示，告知用户此网站被组织阻止。
 
 > [!div class="mx-imgBorder"]
 > ![组织阻止的页面。](../../media/web-protection-indicator-blockpage.png)

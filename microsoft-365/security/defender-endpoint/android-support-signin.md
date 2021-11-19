@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3c769f0ddf3e986f96ff80c0dbf54b23f9b9eafc
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 556a76e2305de6137fa16303f9dcbf888384bee5
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753179"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111863"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>排查 Android 上 Microsoft Defender for Endpoint 的问题
 
@@ -66,7 +66,7 @@ ms.locfileid: "60753179"
 
 **原因：**
 
-您未Microsoft 365许可证，或者您的组织没有用于订阅Microsoft 365 企业版许可证。
+您未分配Microsoft 365许可证，或者您的组织没有用于订阅Microsoft 365 企业版许可证。
 
 **解决方案：**
 
@@ -110,7 +110,7 @@ ms.locfileid: "60753179"
 
 **原因：**
 
-在 Android 11 中，用户更改了电池优化权限。 不允许 Defender 将此设置配置为忽略电池优化。
+在 Android 11 中，用户更改了电池优化权限。 不允许 Defender for Endpoint 将此设置配置为忽略电池优化。
 
 **解决方案：**
 
@@ -133,17 +133,17 @@ ms.locfileid: "60753179"
 
    ![第二步将下拉列表更改为显示"所有应用"。](images/show-all-apps-1.png)
 
-5. 找到"Microsoft Defender 终结点"，然后选择 **"不优化"。**
+5. 找到"适用于终结点的 Microsoft Defender"，然后选择 **"不优化"。**
 
-   ![找到"Microsoft Defender 终结点"，然后选择"不开发"。](images/select-dont-optimise.png)
+   ![找到"Microsoft Defender for Endpoint"，然后选择"不优化"。](images/select-dont-optimise.png)
 
-返回到 Microsoft Defender 终结点载入屏幕，选择" **允许"，** 你将重定向到仪表板屏幕。
+返回到适用于终结点的 Microsoft Defender 载入屏幕，选择"允许"，你将重定向到仪表板屏幕。
 
 ## <a name="send-in-app-feedback"></a>发送应用内反馈
 
 如果用户面临以上部分中尚未解决的问题，或者无法使用列出的步骤解决问题，则用户可以提供应用内 **反馈以及诊断****数据**。 然后，我们团队可以调查日志以提供正确的解决方案。 用户可以按照以下步骤执行相同的操作：
 
-1.  在 **设备上打开 MDE** 应用程序，然后单击左上角的配置文件图标。
+1.  在设备上 **打开 MDE** 应用程序，然后单击左上角的配置文件图标。
 
     :::image type="content" alt-text="单击配置文件图标。" source="images/select-profile-icon-1.jpg":::
 

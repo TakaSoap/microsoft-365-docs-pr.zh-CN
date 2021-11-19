@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ba613d2368bbb7cbefdaaaea30595bdc235a41ef
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: f0b66558e74a0a71ab158621d5b8e9aa703f6d16
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963223"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110135"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -66,7 +66,7 @@ ms.locfileid: "60963223"
 
 PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、显示意外广告或最差时安装其他软件（可能是意外的或不需要的）。
 
-启用此功能，以便 (PUA) 在租户的所有设备上修正可能不需要的应用程序，即使未在设备上配置 PUA 保护。 这有助于防止用户无意中在设备上安装不需要的应用程序。 关闭后，修正取决于设备配置。
+启用此功能，以便 (PUA) 在租户中所有设备上修正可能不需要的应用程序，即使未在设备上配置 PUA 保护。 这有助于防止用户无意中在设备上安装不需要的应用程序。 关闭后，修正取决于设备配置。
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>限制与作用域内设备组之间的关联
 
@@ -77,7 +77,7 @@ PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、�
 
 ## <a name="enable-edr-in-block-mode"></a>启用EDR阻止模式
 
-在阻止模式下 (EDR) 终结点检测和响应功能可提供对恶意项目的保护，即使Microsoft Defender 防病毒被动模式下运行时也一样。 打开后，EDR模式阻止在设备上检测到的恶意项目或行为。 EDR阻止模式在后台工作，以修正在泄露后检测到的恶意项目。
+终结点检测和响应 (EDR) 在阻止模式下提供对恶意项目的保护，即使 Microsoft Defender 防病毒处于被动模式时。 打开后，EDR模式阻止在设备上检测到的恶意项目或行为。 EDR阻止模式在后台工作，以修正在泄露后检测到的恶意项目。
 
 ## <a name="autoresolve-remediated-alerts"></a>Autoresolve 修正警报
 
@@ -102,7 +102,7 @@ PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、�
 
 若要打开 **"允许"或"阻止** 文件"：：
 
-1. 在导航窗格中，**选择"设置** \>  \> **终结点常规** \> **高级功能** \> **允许或阻止文件"。**
+1. 在导航窗格中，**选择"设置** \>  \> **终结点""常规** \> **高级功能** \> **""允许"或"阻止文件"。**
 
 1. 切换开和 **关****之间的设置**。
  
@@ -126,15 +126,15 @@ PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、�
 ## <a name="tamper-protection"></a>防篡改保护
 在某些类型的网络攻击期间，不良参与者会尝试在你的计算机上禁用安全功能，如防病毒保护。 不良操作者希望禁用安全功能，以便更轻松地访问数据、安装恶意软件或以其他方式利用你的数据、标识和设备。
 
-防篡改保护实质上Microsoft Defender 防病毒和防止通过应用和方法更改安全设置。
+防篡改保护实质上Microsoft Defender 防病毒，并阻止通过应用和方法更改安全设置。
 
-如果你的组织使用基于云的保护，Microsoft Defender 防病毒启用基于云的保护时，此功能可用。 有关详细信息，请参阅通过云保护在 Microsoft Defender 防病毒[中使用下一代技术](cloud-protection-microsoft-defender-antivirus.md)。
+如果你的组织使用基于云的保护Microsoft Defender 防病毒启用基于云的保护，则此功能可用。 有关详细信息，请参阅通过云保护在 Microsoft Defender 防病毒[中使用下一代技术](cloud-protection-microsoft-defender-antivirus.md)。
 
 保持防篡改功能打开，以防止对安全解决方案及其基本功能进行不必要的更改。
 
 ## <a name="show-user-details"></a>显示用户详细信息
 
-打开此功能，以便你可以查看存储在Azure Active Directory。 详细信息包括调查用户帐户实体时的用户图片、姓名、职务和部门信息。 您可以在以下视图中找到用户帐户信息：
+启用此功能，以便你可以查看存储在Azure Active Directory。 详细信息包括调查用户帐户实体时的用户图片、姓名、职务和部门信息。 您可以在以下视图中找到用户帐户信息：
 
 - 安全操作仪表板
 - 警报队列
@@ -144,7 +144,7 @@ PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、�
 
 ## <a name="skype-for-business-integration"></a>Skype for Business 集成
 
-通过启用Skype for Business集成，可以使用电子邮件、Skype for Business或电话与用户进行通信。 当你需要与用户通信并降低风险时，这很方便。
+通过启用Skype for Business集成，可以使用电子邮件、电子邮件或Skype for Business与用户进行通信。 当你需要与用户通信并降低风险时，这很方便。
 
 > [!NOTE]
 > 当设备与网络隔离时，有一个弹出窗口，你可以选择启用 Outlook 和 Skype 通信，这将允许用户在断开与网络的连接时与其通信。 此设置适用于设备在Skype Outlook时的通信和通信。
@@ -158,32 +158,32 @@ PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、�
 
 ## <a name="office-365-threat-intelligence-connection"></a>Office 365威胁智能连接
 
-此功能仅在你具有活动状态Office 365 E5或威胁智能加载项时可用。 有关详细信息，请参阅 Office 365 企业版 E5 产品页面。
+仅当你有活动用户或威胁情报Office 365 E5时，此功能才可用。 有关详细信息，请参阅 Office 365 企业版 E5 产品页。
 
 启用此功能后，你将能够将 Microsoft Defender for Office 365 数据合并到 Microsoft 365 Defender 中，以便跨 Office 365 邮箱和 Windows 设备进行全面安全调查。
 
 > [!NOTE]
 > 你需要具有相应的许可证才能启用此功能。
 
-若要在威胁情报中接收Office 365集成，你需要在安全与合规中心仪表板中启用 Defender for Endpoint &设置。 有关详细信息，请参阅威胁 [调查和响应](/microsoft-365/security/office-365-security/office-365-ti)。
+若要在威胁情报Office 365上下文设备集成，你需要在安全与合规中心仪表板中启用 Defender for Endpoint &设置。 有关详细信息，请参阅威胁 [调查和响应](/microsoft-365/security/office-365-security/office-365-ti)。
 
 ## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft 威胁专家 - 目标攻击通知
 
 在两个 Microsoft 威胁专家组件中，目标攻击通知一般可用。 专家按需功能仍处于预览阶段。 如果你已申请预览，并且你的应用程序已获得批准，你只能使用专家按需功能。 可以通过 Defender for Endpoint 门户的警报仪表板Microsoft 威胁专家接收来自你的终结点门户的定向攻击通知（如果已配置的话）。
 
 > [!NOTE]
-> Defender for Endpoint 中的 Microsoft 威胁专家 功能随适用于 企业移动性 + 安全性 的 E5[许可证一企业移动性 + 安全性。](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+> Defender Microsoft 威胁专家 中的 Microsoft 威胁专家 功能随适用于 企业移动性 + 安全性 的 E5[许可证一企业移动性 + 安全性。](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-启用此设置将 Defender for Endpoint 信号转发到Microsoft Cloud App Security深入了解云应用程序使用情况。 转发数据的存储和处理位置与转发数据云应用安全位置。
+启用此设置将 Defender for Endpoint 信号转发到 Microsoft Defender for Cloud Apps，以便更深入地了解云应用程序使用情况。 转发的数据存储和处理位置与 Defender for Cloud Apps 数据位于同一位置。
 
 > [!NOTE]
-> 此功能将随 E5 许可证一起提供[，企业移动性 + 安全性](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)运行 Windows 10， 版本 1709 (OS 内部版本 16299.1085（带[KB4493441](https://support.microsoft.com/help/4493441)) 、Windows 10、版本 1803 (OS 内部版本 17134.704、KB4493464) 、Windows 10 版本 1809 (OS 内部版本 17763.379） [](https://support.microsoft.com/help/4493464)[KB4489899](https://support.microsoft.com/help/4489899)) 更高版本Windows 10或 Windows 11。
+> 此功能将随 E5 许可证一起提供[，企业移动性 + 安全性](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)运行 Windows 10。 版本 1709 (OS 内部版本 16299.1085（带[KB4493441](https://support.microsoft.com/help/4493441)) ，Windows 10，版本 1803 (OS 内部版本 17134.704，具有[KB4493464](https://support.microsoft.com/help/4493464)) ，Windows 10 版本 1809 (OS 内部版本 17763.379[KB4489899](https://support.microsoft.com/help/4489899)) 、Windows 10版本或 Windows 11。
 
 ## <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
-将 Microsoft Defender for Endpoint 信号转发到安全中心中的 Microsoft Microsoft 365分数。 启用此功能后，Microsoft 安全功能分数可了解设备的安全状态。 转发数据的存储和处理位置与 Microsoft 安全分数数据位于同一位置。
+在安全中心门户中将 Microsoft Defender for Endpoint 信号转发Microsoft 365 Defender Microsoft 安全分数。 启用此功能后，Microsoft 安全功能分数可了解设备的安全状态。 转发数据的存储和处理位置与 Microsoft 安全分数数据位于同一位置。
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>从 Microsoft Defender 标识门户启用适用于终结点的 Microsoft Defender 集成
 
@@ -216,8 +216,8 @@ Defender for Endpoint 可以[](/intune/what-is-intune)与 Microsoft Intune[集�
 
 此功能仅在具有以下功能时可用：
 
-- 许可租户，适用于 企业移动性 + 安全性 E3 E5 Windows E5 (或 Microsoft 365 企业版 E5) 
-- Active Microsoft Intune 环境，Intune 托管Windows设备[已Azure AD加入](/azure/active-directory/devices/concept-azure-ad-join/)。
+- 适用于 E5 企业移动性 + 安全性 E3或 Windows E5 (或 Microsoft 365 企业版 的许可) 
+- 一个Microsoft Intune环境，Intune 托管的设备Windows已Azure AD[设备](/azure/active-directory/devices/concept-azure-ad-join/)。
 
 ### <a name="conditional-access-policy"></a>条件访问策略
 

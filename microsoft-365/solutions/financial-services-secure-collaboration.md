@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: 了解金融服务机构如何通过使用 Microsoft 365 和 Teams 来维持财务安全合规性并高效协作。
 f1.keywords: NOCSH
-ms.openlocfilehash: 073f24bc751bcb9f11a415d4ef142172fd5387ed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8f974340423156c46e907d7ed6b8793a255ad189
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207519"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111527"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -177,7 +177,7 @@ Microsoft 365 允许所有组织通过一组强大的功能来识别组织内的
 
 此外，Microsoft 还提供了“可训练的分类器”，它们使用机器学习模型根据内容识别敏感数据，而不是简单地通过模式匹配或内容中的元素进行识别。 分类器通过查看大量要分类的内容的示例，了解如何标识内容类型。 要训练分类器，首先为其提供特定类别中内容示例。 从这些示例中学习后，通过提供匹配和不匹配示例组合对该模型进行测试。 分类器预测给定示例是否属于该类别。 然后，用户可通过确认结果，对正、负、假正和假负进行分类，来帮助提高分类器预测的准确性。 发布训练后的分类器时，它将处理 Microsoft SharePoint Online、Exchange Online 和 OneDrive for Business 中的内容，并自动对内容进行分类。
 
-将灵敏度标签应用于文档和电子邮件将嵌入标识对象内所选灵敏度的元数据。 然后，灵敏度与数据一起移动。 因此，即使标记的文档存储在用户桌面或本地系统中，它仍会受到保护。 此功能可使其他 Microsoft 365 解决方案（如 Microsoft Cloud App Security）或网络边缘设备识别敏感数据并自动实施安全控制。 灵敏度标签具有额外的优势，那就是让员工了解组织内哪些数据被视为敏感数据，以及如何在接收数据时对其进行处理。
+将灵敏度标签应用于文档和电子邮件将嵌入标识对象内所选灵敏度的元数据。 然后，灵敏度与数据一起移动。 因此，即使标记的文档存储在用户桌面或本地系统中，它仍会受到保护。 此功能可使其他 Microsoft 365 解决方案 (如 Microsoft Defender for Cloud Apps) 或网络边缘设备识别敏感数据并自动实施安全控制。 灵敏度标签具有额外的优势，那就是让员工了解组织内哪些数据被视为敏感数据，以及如何在接收数据时对其进行处理。
 
 **[Office 365 数据丢失防护 (DLP)](../compliance/dlp-learn-about-dlp.md)** 会通过扫描敏感数据并对这些对象强制执行策略来识别包含敏感数据的文档、电子邮件和对话。 会对 SharePoint 和 OneDrive for Business 中的文档实施策略。 当用户发送电子邮件，以及在 Teams 聊天和频道对话中，也会实施这些策略。 可配置策略来查找关键字、敏感数据类型、保留标签，以及数据是在组织内共享，还是在外部共享。 提供了一些控制，可帮助组织微调 DLP 策略以减少误报。 找到敏感数据后，可向 Microsoft 365 应用程序中的用户显示可自定义的策略提示，通知他们其内容包含敏感数据，然后提出纠正措施。 策略还可以防止用户访问文档、共享文档或发送包含特定类型敏感数据的电子邮件。 Microsoft 365 支持 100 多种内置敏感数据类型。 组织可以配置自定义敏感数据类型以满足其策略。
 
@@ -200,7 +200,7 @@ Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 �
 
 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是一个统一的终结点安全平台，可用于预防性保护、入侵后检测，以及自动调查和响应。 Defender for Endpoint 提供了内置功能，可在企业终结点上发现和保护敏感数据。
 
-[Microsoft Cloud App Security (MCAS)](/cloud-app-security/what-is-cloud-app-security) 使组织能够在粒度级别实施策略，并基于通过机器学习自动定义的单个用户配置文件来检测行为异常。 MCAS 策略可基于 Azure 条件访问策略生成，通过评估与所访问文档的用户行为和属性相关的其他信号来保护敏感公司资产。 随着时间的推移，MCAS 将了解每位员工对其所访问的数据和所使用的应用程序的典型行为。 根据已知的行为模式，如果员工行为超出该行为配置文件的范围，则策略可自动实施安全控制。 例如，如果员工通常在周一至周五上午 9 点至下午 5 点访问会计应用程序，但突然在星期天晚上频繁访问该应用程序，则 MCAS 可动态执行策略，要求用户重新进行身份验证。 这有助于确保用户凭据没有遭到泄漏。 MCAS 还可帮助识别组织中的“影子 IT”，帮助信息安全团队确保员工在处理敏感数据时使用批准的工具。 最后，MCAS 可以保护云中任意位置的敏感数据，甚至是 Microsoft 365 平台之外的数据。 它使组织能够批准（或不批准）特定的外部云应用，从而控制访问和监视使用。
+[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) 使组织能够在粒度级别实施策略，并基于通过机器学习自动定义的单个用户配置文件来检测行为异常。 Defender for Cloud Apps 策略可基于 Azure 条件访问策略生成，通过评估与所访问文档的用户行为和属性相关的其他信号来保护敏感公司资产。 随着时间的推移，Defender for Cloud Apps 将了解每位员工对其所访问的数据和所使用的应用程序的典型行为。 根据已知的行为模式，如果员工行为超出该行为配置文件的范围，则策略可自动实施安全控制。 例如，如果员工通常在周一至周五上午 9 点至下午 5 点访问会计应用程序，但突然在星期天晚上频繁访问该应用程序，则 Defender for Cloud Apps 可动态执行策略，要求用户重新进行身份验证。 这有助于确保用户凭据没有遭到泄漏。 Defender for Cloud Apps 还可帮助识别组织中的“影子 IT”，帮助信息安全团队确保员工在处理敏感数据时使用批准的工具。 最后，Defender for Cloud Apps 可以保护云中任意位置的敏感数据，甚至是 Microsoft 365 平台之外的数据。 它使组织能够批准（或不批准）特定的外部云应用，从而控制访问和监视使用。
  
 [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) 是一种基于云的安全解决方案，可利用本地 Active Directory 信号来识别、检测和调查针对组织的高级威胁、已遭入侵标识和恶意内部行为。 AATP 使 SecOp 分析师和安全专家能够在混合环境中检测高级攻击，从而实现以下目的：
 * 使用基于学习的分析来监视用户、实体行为和活动。

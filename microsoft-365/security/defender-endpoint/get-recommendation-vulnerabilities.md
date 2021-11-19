@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b74a5e4861e068bca7c31465c4ba7c8f4169a983
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fb60dcf41a0190b92525cfaac2b5f7d5e39e128f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212903"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111167"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>按建议列出漏洞
 
@@ -45,7 +45,7 @@ ms.locfileid: "60212903"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Vulnerability.Read.All  |"读取威胁和漏洞管理安全建议信息"
+应用程序|Vulnerability.Read.All|"读取威胁和漏洞管理安全建议信息"
 委派（工作或学校帐户）|Vulnerability.Read|"读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求

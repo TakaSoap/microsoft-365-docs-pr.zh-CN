@@ -21,19 +21,19 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 了解如何使用 Office 365 内容分发网络 (CDN) 来加快你的 SharePoint Online 资产的交付。
-ms.openlocfilehash: 21ef8fd29e53e2c832a518613a3ed44d8f7687cf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ad4eb1df63e201e49ba0b4c56c9123a04e37c184
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154862"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110159"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>结合使用 Office 365 内容分发网络和 SharePoint Online
 
 可以使用内置的 Office 365 内容分发网络 (CDN) 来托管静态资产，以便提高 SharePoint Online 页面的性能。 Office 365 CDN 将静态资产缓存到距离请求这些资产的浏览器更近的位置，这样可以加快下载速度并减少延迟，进而提高性能。 此外，Office 365 CDN[使用 HTTP/2](https://en.wikipedia.org/wiki/HTTP/2)协议改进压缩和 HTTP 管道传输。 Office 365 CDN 服务被归入 SharePoint Online 订阅。
 
 > [!NOTE]
-> The Office 365 CDN is only available to tenants in the **Production** (worldwide) cloud. 美国政府、中国德国云中的租户当前不支持Office 365 CDN。
+> 此Office 365 CDN仅适用于全球生产 (云中的) 租户。  美国政府、中国德国云中的租户当前不支持Office 365 CDN。
 
 Office 365 CDN 由多个 CDN 组成，用户可以在多个位置（即 _源_）托管静态资产，并从全局高速网络提供这些资产。 可以添加 **公共** 源、**私有** 源或同时添加这两种源，具体取决于想要托管在 Office 365 CDN 中的内容种类。 有关 [公用源和专用](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) 源之间区别的信息，请参阅选择每个源是公共源还是私有源。
 
@@ -52,22 +52,22 @@ Office 365 CDN 由多个 CDN 组成，用户可以在多个位置（即 _源_）
 
 + [规划部署Office 365 CDN](use-microsoft-365-cdn-with-spo.md#plan-for-deployment-of-the-office-365-cdn)
 
-  + [确定要托管在应用程序上的静态CDN。](use-microsoft-365-cdn-with-spo.md#CDNAssets)
+  + [确定要托管在应用程序上的静态](use-microsoft-365-cdn-with-spo.md#CDNAssets)CDN。
   + [确定要存储资产的位置](use-microsoft-365-cdn-with-spo.md#CDNStoreAssets)。 此位置可以是网站SharePoint库或文件夹，_称为源_。
   + [选择每个源应为公共源还是私有源](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)。 你可以添加公共和私有类型的多个源。
 
 + 使用 PowerShell 或 CDN Online CLI 设置和配置SharePoint客户端
 
-  + [使用 CDN Online 命令行管理SharePoint设置和配置命令行管理程序](use-microsoft-365-cdn-with-spo.md#CDNSetupinPShell)
+  + [使用 CDN Online 命令行管理程序设置SharePoint配置命令行管理程序](use-microsoft-365-cdn-with-spo.md#CDNSetupinPShell)
   + [使用 PnP PowerShell CDN和配置应用程序](use-microsoft-365-cdn-with-spo.md#CDNSetupinPnPPosh)
   + [使用 CDN CLI 设置和配置Office 365](use-microsoft-365-cdn-with-spo.md#CDNSetupinCLI)
 
   完成此步骤后，您将具有：
 
-  + 为CDN启用此策略。
+  + 为CDN启用策略。
   + 添加了源，将每个源标识为公用或私有。
 
-完成设置后，可以按[以下](use-microsoft-365-cdn-with-spo.md#CDNManage)方式Office 365 CDN管理安装程序：
+完成设置后，可以通过以下方式[Office 365 CDN管理安装程序](use-microsoft-365-cdn-with-spo.md#CDNManage)：
 
 + 添加、更新和删除资源
 + 添加和删除源
@@ -76,13 +76,13 @@ Office 365 CDN 由多个 CDN 组成，用户可以在多个位置（即 _源_）
 
 最后，[请参阅使用CDN资源](use-microsoft-365-cdn-with-spo.md#using-your-cdn-assets)，了解如何从公用源CDN源访问你的资产。
 
-有关[解决常见问题Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting)请参阅疑难解答。
+请参阅[Troubleshooting the Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting) for guidance on resolving common issues。
 
 ## <a name="plan-for-deployment-of-the-office-365-cdn"></a>规划部署Office 365 CDN
 
 在部署 Office 365 CDN 租户Office 365，在规划过程中应考虑以下因素。
 
-  + [确定要托管在应用程序上的静态CDN](use-microsoft-365-cdn-with-spo.md#CDNAssets)
+  + [确定要托管在主机上的静态CDN](use-microsoft-365-cdn-with-spo.md#CDNAssets)
   + [确定要存储资产的位置](use-microsoft-365-cdn-with-spo.md#CDNStoreAssets)
   + [选择每个源应为公共源还是专用源](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)
 
@@ -91,39 +91,39 @@ Office 365 CDN 由多个 CDN 组成，用户可以在多个位置（即 _源_）
 
 通常，CDN 最适用于托管静态 _资产_ 或不经常更改的资产。 一个很好的经验法则是标识满足以下部分或所有条件的文件：
 
-+ 嵌入页面的静态 (脚本和图像) 会对页面加载时间产生显著增量影响
++ 嵌入页面的静态文件 (脚本和图像) 对页面加载时间有显著增量影响
 + 大型文件，如可执行文件和安装文件
 + 支持客户端代码的资源库
 
-例如，在将 SharePoint Online 网站添加到 CDN 源时，重复请求的小文件（如网站图像和脚本）可以显著提高网站呈现性能，并逐步减少 SharePoint Online 网站的负载。 可以从 CDN 下载较大的文件（如安装可执行文件）以对性能产生积极的影响，并随后减少 SharePoint Online 网站上负载，即使它们未经常访问。
+例如，在将 SharePoint Online 网站添加到 CDN 源时，重复请求的小文件（如网站图像和脚本）可以显著提高网站呈现性能并逐步减少 SharePoint Online 网站的负载。 可以从 CDN 下载安装可执行文件等较大文件，从而对性能产生积极的影响，并随后减少 SharePoint Online 网站的负载，即使它们未经常访问。
 
-基于每个文件的性能改进取决于许多因素，包括客户端与最近的 CDN 终结点的邻近度、本地网络上暂时的条件等等。 许多静态文件非常小，可以在不到一Office 365从文件下载。 但是，网页可能包含许多嵌入式文件，其累积下载时间为几秒。 从网站中CDN这些文件可以显著缩短整个页面加载时间。 有关[示例，请参阅CDN性能](content-delivery-networks.md#what-performance-gains-does-a-cdn-provide)提升？
+基于每个文件的性能改进取决于许多因素，包括客户端与最近的 CDN 终结点的邻近度、本地网络上暂时的情况等等。 许多静态文件非常小，可以在不到Office 365下载。 但是，网页可能包含许多嵌入式文件，其累积下载时间为几秒。 从网站中CDN这些文件可以显著缩短整个页面加载时间。 有关[示例，请参阅CDN性能](content-delivery-networks.md#what-performance-gains-does-a-cdn-provide)提升？
 
 <a name="CDNStoreAssets"> </a>
 ### <a name="determine-where-you-want-to-store-your-assets"></a>确定要存储资产的位置
 
-The CDN fetches your assets from a location called an _origin_. 源可以是 URL SharePoint访问的文档网站、文档库或文件夹。 当你为组织指定来源时，你具有极大的灵活性。 例如，可以指定多个源或一个要放入所有源资源CDN源。 你可以选择同时为组织提供公共源或专用源。 大多数组织都将选择实施这两者的组合。
+the CDN fetches your assets from a location called an _origin_. 源可以是 URL SharePoint访问的文档网站、文档库或文件夹。 当你为组织指定来源时，你具有极大的灵活性。 例如，可以指定多个源或一个要放入所有源资源CDN源。 你可以选择同时为组织提供公共源或专用源。 大多数组织都将选择实施这两者的组合。
 
 你可以为源（如文件夹或文档库）创建新容器，并添加想要从文档库CDN。 如果你希望从 CDN 获得一组特定的资产，并且希望将 CDN 资产集限制为容器中的这些文件，则这是一个不错的方法。
 
-您还可以将现有网站集、网站、库或文件夹配置为源，这样容器中的所有符合条件的资产都将从 CDN。 在将现有容器添加为源之前，请务必确保了解其内容和权限，以便不会无意中向匿名访问或未经授权的用户公开资产。
+您还可以将现有网站集、网站、库或文件夹配置为源，这样容器内的所有符合条件的资产都将从 CDN。 在将现有容器添加为源之前，请务必确保了解其内容和权限，以便不会无意中向匿名访问或未经授权的用户公开资产。
 
-你可以定义 _CDN_ 策略以从源中排除CDN。 CDN按文件类型和网站分类等属性排除公用源或专用源中的资产，并应用于在策略中指定的 CdnType (private 或 public) 的所有源。 例如，如果添加由包含多个子网站的网站组成的专用源，您可以定义一个策略来排除标记为"机密"的网站，以便不会从 CDN提供应用了该分类的网站中的内容。 该策略将应用于已 _添加到_ 策略的所有私有源CDN。
+你可以定义 _CDN_ 策略以从源中排除CDN。 CDN策略按文件类型和网站分类等属性排除公用源或专用源中的资产，并应用于在策略中指定的 CdnType (private 或 public) 的所有源。 例如，如果添加由包含多个子网站的网站组成的专用源，您可以定义一个策略来排除标记为"机密"的网站，以便不会从 CDN提供应用了该分类的网站中的内容。 该策略将应用于已 _添加到_ 策略的所有私有源CDN。
 
 请记住，源数量越大，对服务处理请求CDN的影响越大。 我们建议你尽可能限制源的数量。
 
 <a name="CDNOriginChoosePublicPrivate"> </a>
 ### <a name="choose-whether-each-origin-should-be-public-or-private"></a>选择每个源应为公共源还是专用源
 
-标识源时，指定应公开 _还是私有。_  对CDN源中资产的访问权限是匿名的，并且CDN源中的内容受动态生成的令牌保护，从而获得更高的安全性。 无论你选择哪个选项，Microsoft 都会在管理用户本身时，CDN繁重的工作。 此外，在设置组并标识CDN之后，你可以改变主意。
+标识源时，指定应公开 _还是私有。_  对CDN源中资产的访问权限是匿名的，并且CDN源中的内容受动态生成的令牌保护，从而获得更高的安全性。 无论你选择哪个选项，Microsoft 都会在管理用户本身时，CDN繁重的工作。 此外，在设置组并识别CDN之后，你可以改变主意。
 
 公共和专用选项都提供相似的性能提升，但每个选项都有独特的属性和优点。
 
 **可** 匿名访问Office 365 CDN内部的公共源，并且拥有资产 URL 的任何人都可以访问托管资产。 由于对公共源中内容的访问属于匿名访问，因此只能使用它们缓存非敏感的常规内容，如 JavaScript 文件、脚本、图标和图片。
 
-**应用程序** 内的专用源Office 365 CDN用户内容（如 SharePoint Online 文档库、网站和专有图像）的专用访问权限。 对专用源中内容的访问受动态生成的令牌保护，因此只有对原始文档库或存储位置具有权限的用户才能访问它。 Office 365 CDN中的专用源只能用于 SharePoint Online 内容，并且你仅可以通过从 SharePoint Online 租户重定向来访问专用源中的资产。
+**库中** 的专用源Office 365 CDN用户内容（如 SharePoint Online 文档库、网站和专有图像）的专用访问权限。 对专用源中内容的访问受动态生成的令牌保护，因此只有对原始文档库或存储位置具有权限的用户才能访问它。 Office 365 CDN中的专用源只能用于 SharePoint Online 内容，并且你仅可以通过从 SharePoint Online 租户重定向来访问专用源中的资产。
 
-可以在使用私有源中的CDN中阅读有关对私有源中资产的访问权限[的工作方式。](use-microsoft-365-cdn-with-spo.md#using-assets-in-private-origins)
+可以在使用专用源中的CDN中阅读有关对私有源中资产的访问权限[的工作方式。](use-microsoft-365-cdn-with-spo.md#using-assets-in-private-origins)
 
 #### <a name="attributes-and-advantages-of-hosting-assets-in-public-origins"></a>在公共源中托管资产的属性和优点
 
@@ -143,7 +143,7 @@ The CDN fetches your assets from a location called an _origin_. 源可以是 URL
 
 #### <a name="attributes-and-advantages-of-hosting-assets-in-private-origins"></a>在专用源中托管资产的属性和优点
 
-+ 专用源只能用于在线SharePoint资产。
++ 专用源只能用于 SharePoint Online 资产。
 
 + 只有用户有权访问容器，他们才能访问专用源中的资产。 禁止匿名访问这些资产。
 
@@ -155,13 +155,13 @@ The CDN fetches your assets from a location called an _origin_. 源可以是 URL
 
 + 与公用源一样，您可以配置策略以排除由您指定的网站分类标识的资产，即使您使用通配符将文件夹或文档库内的所有资产都包括其中。
 
-有关为什么使用 Office 365 CDN、常规 CDN 概念以及其他可以与 Office 365 租户一同使用的 Microsoft CDN 的信息，请参阅内容交付[网络](content-delivery-networks.md)。
+有关为什么使用 Office 365 CDN、常规 CDN 概念和其他可以与 Office 365 租户一同使用的 Microsoft CDN 的信息，请参阅内容交付[网络](content-delivery-networks.md)。
 
 ### <a name="default-cdn-origins"></a>默认CDN源
 
-除非另行指定，否则Office 365启用该设置时，将设置一些默认Office 365 CDN。 如果你最初选择不预配它们，可以在完成设置后添加这些源。 除非了解跳过默认源设置的后果，并且有特定原因需要这样做，否则在启用默认源时，应允许创建CDN。
+除非另行指定，否则Office 365启用该参数时，将设置一些默认Office 365 CDN。 如果你最初选择不预配它们，可以在完成设置后添加这些源。 除非了解跳过默认源设置的后果，并且有特定原因需要这样做，否则在启用默认源时，应允许创建CDN。
 
-默认专用CDN源：
+默认私有CDN源：
 
 + \*/userphoto.aspx
 + \*/siteassets
@@ -173,14 +173,14 @@ The CDN fetches your assets from a location called an _origin_. 源可以是 URL
 + \*/clientsideassets
 
 > [!NOTE]
-> _clientsideassets_ 是 2017 年 12 月添加到 Office 365 CDN 服务的默认公用源。 此源必须存在，以便SharePoint 框架解决方案CDN工作。 如果在 2017 年 12 Office 365 CDN之前启用了该设置，或者如果在启用默认源时跳过了默认源CDN，可以手动添加此源。 有关详细信息，请参阅[我的客户端 Web 部件或SharePoint 框架解决方案无法工作](use-microsoft-365-cdn-with-spo.md#my-client-side-web-part-or-sharepoint-framework-solution-isnt-working)。
+> _clientsideassets_ 是 2017 年 12 月添加到 Office 365 CDN 服务的默认公用源。 必须存在此源，SharePoint 框架解决方案CDN工作。 如果在 2017 年 12 Office 365 CDN之前启用了该设置，或者如果在启用默认源时跳过了默认源CDN，可以手动添加此源。 有关详细信息，请参阅[我的客户端 Web 部件或SharePoint 框架解决方案无法工作](use-microsoft-365-cdn-with-spo.md#my-client-side-web-part-or-sharepoint-framework-solution-isnt-working)。
 
 <a name="CDNSetupinPShell"> </a>
-## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a>使用 Office 365 CDN Online 命令行管理程序设置SharePoint配置命令行管理程序
+## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a>使用 Office 365 CDN Online 命令行管理SharePoint设置和配置命令行管理程序
 
 本节中的过程要求使用 SharePoint Online 命令行管理程序连接到 SharePoint Online。 有关说明，请参阅[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
 
-完成这些步骤以使用 CDN Online 命令行管理程序设置和SharePoint Online SharePoint托管资产。
+完成这些步骤以使用 CDN Online 命令行管理程序在 SharePoint Online 中设置和配置SharePoint资产。
 
 <details>
   <summary>单击展开</summary>
@@ -193,7 +193,7 @@ The CDN fetches your assets from a location called an _origin_. 源可以是 URL
 Connect-SPOService -Url https://contoso-admin.sharepoint.com
 ```
 
-现在，使用 **Get-SPOTenantCdnEnabled** cmdlet 从租户CDN状态设置：
+现在使用 **Get-SPOTenantCdnEnabled** cmdlet 从租户CDN状态设置：
 
 ```powershell
 Get-SPOTenantCdnEnabled -CdnType <Public | Private>
@@ -251,7 +251,7 @@ Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 Set-SPOTenantCdnPolicy -CdnType <Public | Private> -PolicyType IncludeFileExtensions -PolicyValue "<Comma-separated list of file types >"
 ```
 
-例如，若要启用CDN .css 和 .png 文件，请输入命令：
+例如，若要使CDN .css 和 .png文件，请输入命令：
 
 ```powershell
 Set-SPOTenantCdnPolicy -CdnType Private -PolicyType IncludeFileExtensions -PolicyValue "CSS,PNG"
@@ -292,7 +292,7 @@ _IncludeFileExtensions_ 属性包含文件扩展名的列表，该文件扩展�
 > [!NOTE]
 > 默认文件扩展名在公用和专用之间有所不同。
 
-_ExcludeRestrictedSiteClassifications_ 属性包含您希望从网站列表中排除CDN。 例如，您可以排除标记为"机密"的网站，以便网站中应用了该分类的内容将不会从网站CDN。
+_ExcludeRestrictedSiteClassifications_ 属性包含要从网站列表中排除CDN。 例如，您可以排除标记为"机密"的网站，以便网站中应用了该分类的内容不会从网站CDN。
 
 _ExcludeIfNoScriptDisabled_ 属性根据网站级别的 _NoScript_ 属性CDN排除网站中的内容。 默认情况下 _，NoScript_ 属性设置为"为新式 **网站** 启用"和"**对经典** 网站 _禁用_"。 这取决于你的租户设置。
 
@@ -407,7 +407,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 
 有关此命令及其语法的信息，请参阅 [Add-SPOTenantCdnOrigin](/powershell/module/sharepoint-online/Add-SPOTenantCdnOrigin)。
 
-运行命令后，系统将跨数据中心同步配置。 你可能会看到"配置 _挂起_"消息，预计 SharePoint Online 租户连接到 CDN 服务。 这最多可能需要 15 分钟。
+运行命令后，系统将跨数据中心同步配置。 你可能会看到"_配置挂起_"消息，预计 SharePoint Online 租户连接到 CDN 服务。 这最多可能需要 15 分钟。
 
 <a name="CDNManage"> </a>
 ### <a name="manage-the-office-365-cdn"></a>管理Office 365 CDN
@@ -435,14 +435,14 @@ Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 <a name="Office365CDNforSPOModifyOrigin"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>修改源中的Office 365 CDN
 
-无法修改已创建的源。 请删除原点，然后添加新源。 有关详细信息，请参阅从资源[中删除Office 365 CDN](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPosh)[和为资产添加源](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPOOriginPosh)。
+无法修改已创建的源。 请删除原点，然后添加新源。 有关详细信息，请参阅从资源[中删除](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPosh)Office 365 CDN和[为资产添加源](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPOOriginPosh)。
 
 <a name="Office365CDNforSPODisable"> </a>
 #### <a name="disable-the-office-365-cdn"></a>禁用Office 365 CDN
 
-使用 **Set-SPOTenantCdnEnabled** cmdlet 可禁用CDN配置。 如果同时为 cmdlet 启用了公用源CDN源，则需要运行两次 cmdlet，如以下示例所示。
+使用 **Set-SPOTenantCdnEnabled** cmdlet 可禁用CDN配置。 如果同时为 cmdlet 启用了公用源CDN源，则需要运行 cmdlet 两次，如以下示例所示。
 
-若要在命令行中禁止使用CDN，请输入以下命令：
+若要在命令行中禁止使用公用CDN，请输入以下命令：
 
 ```powershell
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $false
@@ -470,7 +470,7 @@ Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 
 ### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>允许组织使用Office 365 CDN
 
-在更改租户策略设置CDN，应在租户中检索专用CDN配置Office 365状态。 连接 PnP PowerShell 访问租户：
+在更改租户策略设置CDN，应先检索租户中专用CDN配置Office 365状态。 连接 PnP PowerShell 访问租户：
 
 ```powershell
 Connect-PnPOnline -Url https://contoso-admin.sharepoint.com -UseWebLogin
@@ -575,7 +575,7 @@ _IncludeFileExtensions_ 属性包含文件扩展名的列表，该文件扩展�
 > [!NOTE]
 > 默认文件扩展名在公用和专用之间有所不同。
 
-_ExcludeRestrictedSiteClassifications_ 属性包含您希望从网站列表中排除CDN。 例如，您可以排除标记为"机密"的网站，以便网站中应用了该分类的内容不会从网站CDN。
+_ExcludeRestrictedSiteClassifications_ 属性包含您希望从网站列表中排除CDN。 例如，您可以排除标记为"机密"的网站，以便网站中应用了该分类的内容将不会从网站CDN。
 
 _ExcludeIfNoScriptDisabled_ 属性根据网站级别的 _NoScript_ 属性CDN排除网站中的内容。 默认情况下 _，NoScript_ 属性设置为"为新式 **网站** 启用"和"**对经典** 网站 _禁用_"。 这取决于你的租户设置。
 
@@ -593,7 +593,7 @@ _ExcludeIfNoScriptDisabled_ 属性根据网站级别的 _NoScript_ 属性CDN排�
 Add-PnPTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-path _的值是_ 包含资产的库或文件夹的相对路径。 除了相对路径之外，还可以使用通配符。 源支持在 URL 前加通配符。 这允许你创建跨多个站点的来源。 例如，若要将所有网站的 masterpages 文件夹中的所有资产作为公共源包括在 CDN 中，请键入以下命令：
+path _的值是_ 包含资产的库或文件夹的相对路径。 除了相对路径之外，还可以使用通配符。 源支持在 URL 前加通配符。 这允许你创建跨多个站点的来源。 例如，若要将所有网站的 masterpages 文件夹中的所有资产作为公共源包含到 CDN，请键入以下命令：
 
 ```powershell
 Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
@@ -690,12 +690,12 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 
 有关此命令及其语法的信息，请参阅 [Add-PnPTenantCdnOrigin](/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)。
 
-运行命令后，系统将跨数据中心同步配置。 你可能会看到"配置 _挂起_"消息，预计 SharePoint Online 租户连接到 CDN 服务。 这最多可能需要 15 分钟。
+运行命令后，系统将跨数据中心同步配置。 你可能会看到"_配置挂起_"消息，预计 SharePoint Online 租户连接到 CDN 服务。 这最多可能需要 15 分钟。
 
 <a name="CDNManagePnPPosh"> </a>
 ### <a name="manage-the-office-365-cdn"></a>管理Office 365 CDN
 
-设置网站集CDN，可以在更新内容或更改需求时更改配置，如本节中所述。
+设置网站集后CDN，可以在更新内容或更改需求时更改配置，如本节中所述。
 
 <a name="Office365CDNforSPOaddremoveassetPnPPosh"> </a>
 #### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a>添加、更新或删除资源Office 365 CDN
@@ -718,12 +718,12 @@ Remove-PnPTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 <a name="Office365CDNforSPOModifyOriginPnPPosh"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>修改源中的Office 365 CDN
 
-无法修改已创建的源。 请删除原点，然后添加新源。 有关详细信息，请参阅从资源[中删除Office 365 CDN](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPnPPosh)[和添加资产的来源](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPOOriginPnPPosh)。
+无法修改已创建的源。 请删除原点，然后添加新源。 有关详细信息，请参阅从资源[中删除](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPnPPosh)Office 365 CDN和[为资产添加源](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPOOriginPnPPosh)。
 
 <a name="Office365CDNforSPODisable"> </a>
 #### <a name="disable-the-office-365-cdn"></a>禁用Office 365 CDN
 
-使用 **Set-PnPTenantCdnEnabled** cmdlet 为CDN禁用此配置。 如果同时为 cmdlet 启用了公用源CDN源，则需要运行两次 cmdlet，如以下示例所示。
+使用 **Set-PnPTenantCdnEnabled** cmdlet 可禁用CDN配置。 如果同时为 cmdlet 启用了公用源CDN源，则需要运行 cmdlet 两次，如以下示例所示。
 
 若要在命令行中禁止使用公用CDN，请输入以下命令：
 
@@ -769,7 +769,7 @@ spo cdn set --type Private --enabled true
 
 #### <a name="view-the-current-status-of-the-office-365-cdn"></a>查看 Office 365 CDN 的当前状态
 
-若要检查特定类型Office 365 CDN是否已启用，请使用[spo cdn get](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-get/)命令。
+若要检查特定类型 Office 365 CDN是否已启用，请使用[spo cdn get](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-get/)命令。
 
 若要检查 Office 365 公用 CDN 是否已启用，请运行以下命令：
 
@@ -785,12 +785,12 @@ spo cdn get --type Public
 spo cdn origin list --type Public
 ```
 
-有关[启用](use-microsoft-365-cdn-with-spo.md#default-cdn-origins)CDN时默认预配的源的信息，请参阅默认源Office 365 CDN。
+请参阅[默认CDN](use-microsoft-365-cdn-with-spo.md#default-cdn-origins)源，了解启用默认设置源时预配Office 365 CDN。
 
 ### <a name="add-an-office-365-cdn-origin"></a>添加Office 365 CDN源
 
 > [!IMPORTANT]
-> 您永远不应将组织的敏感资源放在配置为公用源SharePoint文档库中。
+> 不应将视为对组织敏感的资源放在配置为公用源SharePoint文档库中。
 
 运行 [spo cdn origin add](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) 命令可以定义 CDN 源。 可以定义多个源。 源是 SharePoint 库或文件夹的 URL，其中包含要由 CDN 托管的资产。
 
@@ -819,14 +819,14 @@ spo cdn origin add --type Private --origin sites/site1/siteassets
 
 运行 [spo cdn origin remove](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-remove/) 命令可以删除指定类型 CDN 的 CDN 源。
 
-若要从应用程序配置中删除CDN源，请执行：
+要从配置中删除公用源CDN，请执行：
 
 ```cli
 spo cdn origin remove --type Public --origin */masterpage
 ```
 
 > [!NOTE]
-> 删除CDN源不会影响存储在任何匹配该源的文档库中的文件。 如果已使用它们的 URL 引用SharePoint，SharePoint将自动切换回指向文档库的原始 URL。 但是，如果已使用公用 CDN URL 引用资产，则删除源将断开链接，你将需要手动更改它们。
+> 删除CDN源不会影响存储在任何与源匹配的文档库中的文件。 如果已使用资产库的 url 引用SharePoint，SharePoint将自动切换回指向文档库的原始 URL。 但是，如果已使用公用 url CDN资源，则删除源将断开链接，并且你将需要手动更改它们。
 
 ### <a name="modify-an-office-365-cdn-origin"></a>修改Office 365 CDN源
 
@@ -839,7 +839,7 @@ spo cdn origin remove --type Public --origin */masterpage
 > [!NOTE]
 > 如果更改文件类型列表，也就是覆盖当前定义的列表。 若要添加其他文件类型，请先运行 [spo cdn policy list](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) 命令，确定当前配置的文件类型。
 
-若要将 _JSON_ 文件类型添加到公共应用程序中包含的文件类型的默认列表中，CDN执行：
+若要将 _JSON_ 文件类型添加到公共文件中包含的文件类型的默认列表中，CDN：
 
 ```cli
 spo cdn policy set --type Public --policy IncludeFileExtensions --value "CSS,EOT,GIF,ICO,JPEG,JPG,JS,MAP,PNG,SVG,TTF,WOFF,JSON"
@@ -872,7 +872,7 @@ spo cdn set --type Public --enabled false
 
 现在，你已启用CDN配置的来源和策略，可以开始使用CDN资源。
 
-本节将帮助您了解如何在 SharePoint 页面和内容中使用 CDN URL，以便 SharePoint 将公用源和私有源中的资产请求重定向到 CDN。
+本节将帮助您了解如何在 SharePoint 页面和内容中使用 CDN URL，以便 SharePoint 将公用源和专用源中的资产请求重定向到 CDN。
 
 + [更新指向资产CDN链接](use-microsoft-365-cdn-with-spo.md#updating-links-to-cdn-assets)
 + [使用公共源中的资产](use-microsoft-365-cdn-with-spo.md#using-assets-in-public-origins)
@@ -887,18 +887,18 @@ spo cdn set --type Public --enabled false
 
 若要使用已添加到源中的资源，只需使用指向原始文件的路径更新指向原始文件的链接。
 
-+ 编辑包含已添加到源中的资产的链接的页面或内容。 如果要将链接更新到给定资产出现的任何位置，您还可以使用多种方法之一在输入站点或网站集中进行全局搜索和替换链接。
++ 编辑包含已添加到源中的资产的链接的页面或内容。 如果要将链接更新到给定资产出现的任何位置，您也可以使用多种方法之一在输入站点或网站集中进行全局搜索和替换链接。
 + 对于指向源中资产的每个链接，请将路径替换为源中文件CDN路径。 可以使用相对路径。
 + 保存页面或内容。
 
-例如，考虑已复制到文档库文件夹 _/site/CDN_origins/public/_ 的图像 _/site/SiteAssets/images/image.png_。 若要使用CDN资源，请将图像文件位置的原始路径替换为原点的路径，使新的 URL _/site/CDN_origins/public/image.png_。
+例如，考虑已复制到 _文档库文件夹 /site/CDN_origins/public/ 的图像 /site/SiteAssets/images/image.png_ 。 若要使用CDN资源，请将图像文件位置的原始路径替换为原点的路径，以将新的 URL _/site/CDN_origins/public/image.png_。
 
 如果要使用资产的完整 URL 而不是相对路径，请构建如下所示的链接：
 
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> 通常，不应将 URL 直接硬编码到资源CDN。 但是，如果需要，你可以手动为公用源中的资产构建 URL。 有关详细信息，请参阅[硬CDN URL。](use-microsoft-365-cdn-with-spo.md#constructing-cdn-urls-for-public-assets)
+> 通常，不应将 URL 直接硬编码为资源CDN。 但是，如果需要，你可以手动为公用源中的资产构建 URL。 有关详细信息，请参阅[Hardcoding CDN URL for public assets](use-microsoft-365-cdn-with-spo.md#constructing-cdn-urls-for-public-assets)。
 
 若要了解如何验证是否正在从 CDN 提供资产，请参阅疑难解答中的如何确认 CDN 正在提供资产[Office 365 CDN。](use-microsoft-365-cdn-with-spo.md#CDNConfirm) [](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting)
 
@@ -906,7 +906,7 @@ spo cdn set --type Public --enabled false
 
 SharePoint  Online 中的发布功能会自动将存储在公共源中的资产的 URL 重写为 CDN 等效项，以便资产从 CDN 服务而不是 SharePoint 提供。
 
-如果您的源位于启用了"发布"功能的网站中，并且要卸载到 CDN 的资产位于以下类别之一，SharePoint 将自动重写源中资产的 URL，只要 CDN 策略尚未排除该资产。
+如果你的源位于启用了发布功能的网站中，并且你想要卸载到 CDN 的资产位于以下类别之一，SharePoint 将自动重写源中资产的 URL，只要 CDN 策略未排除该资产。
 
 下面概述了 SharePoint 发布功能自动重写的链接：
 
@@ -918,21 +918,21 @@ SharePoint  Online 中的发布功能会自动将存储在公共源中的资产�
   + 支持超链接字段和 PublishingImage 字段
 + SharePoint图像再现
 
-下图说明了当用户收到SharePoint包含来自公共源的资产的页面的请求时，工作流。
+下图说明了当用户收到SharePoint来自公共源的资产的页面的请求时，工作流。
 
 ![工作流图：从Office 365 CDN检索资源。](../media/O365-CDN/o365-cdn-public-steps-transparent.png "工作流：从Office 365 CDN检索资源")
 
 > [!TIP]
 > 如果要禁用页面上特定 URL 的自动重写，可以签出页面并添加查询字符串参数 **？NoAutoReWrites=true** 到要禁用的每个链接的末尾。
 
-#### <a name="constructing-cdn-urls-for-public-assets"></a>构造CDN资产 URL
+#### <a name="constructing-cdn-urls-for-public-assets"></a>为CDN构建 URL
 
 如果未为公共源启用发布功能，或者资产不是 CDN 服务的自动重写功能支持的链接类型之一，您可以手动构造指向资产的 CDN 位置的 URL，并在你的内容中使用这些 URL。
 
 > [!NOTE]
 > 无法硬编码或构造CDN源中资产的 URL，因为生成形成 URL 的最后一节所需的访问令牌是在请求资源时生成的。 您可以构造公用网站的 URL CDN URL 不应硬编码，因为它可能会更改。
 
-对于公共CDN资源，URL 格式将如下所示：
+对于CDN资源，URL 格式将如下所示：
 
 ```http
 https://publiccdn.sharepointonline.com/<TenantHostName>/sites/site/library/asset.png
@@ -950,7 +950,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 ### <a name="using-assets-in-private-origins"></a>使用专用源中的资产
 
-使用专用源中的资产不需要其他配置。 SharePoint联机自动重写专用源中资产的 URL，因此将始终从应用程序提供CDN。 无法手动生成 URL CDN私有源中的资产，因为这些 URL 包含的令牌必须由 SharePoint Online 在请求资产时自动生成。
+使用专用源中的资产不需要其他配置。 SharePoint Online 自动重写专用源中资产的 URL，因此将始终从应用程序请求CDN。 无法手动构建 URL CDN私有源中的资产，因为这些 URL 包含的令牌必须由 SharePoint Online 在请求资产时自动生成。
 
 对专用源中的资产的访问权限受基于用户对源权限的动态生成的令牌的保护，以下各节介绍了一些注意事项。 用户必须至少具有 **对源** 的读取访问权限，CDN内容。
 
@@ -960,9 +960,9 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 #### <a name="token-based-authorization-in-private-origins"></a>私有源中基于令牌的授权
 
-对专用源中资产的访问权限Office 365 CDN由 SharePoint Online 生成的令牌授予。 对于已有权访问由源指定的文件夹或库的用户，系统会自动授予允许用户基于其权限级别访问文件的令牌。 这些访问令牌在生成后 30 到 90 分钟内有效，以帮助防止令牌重播攻击。
+对应用程序专用源中的资产Office 365 CDN由 SharePoint Online 生成的令牌授予。 对于已有权访问由源指定的文件夹或库的用户，系统会自动授予允许用户基于其权限级别访问文件的令牌。 这些访问令牌在生成后 30 到 90 分钟内有效，以帮助防止令牌重播攻击。
 
-生成访问令牌后，SharePoint Online 会向包含两个授权参数的客户端返回自定义 URI， (边缘授权令牌) 和 _oat_ (源授权令牌) 。 每个令牌的结构都<纪元时间格式的过期时间>__<_安全签名>。_ 例如：
+生成访问令牌后，SharePoint Online 会向包含两个授权参数的客户端返回自定义 URI， (边缘授权令牌 _)_ 和 _oat_ (源授权令牌) 。 每个令牌的结构都<纪元时间格式的过期时间>__<_安全签名>。_ 例如：
 
 ```http
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -979,27 +979,29 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 |---------|---------|---------|
 |用户 1     |有权访问 folder1         |可以从image1.jpg访问CDN         |
 |用户 2     |无法访问 folder1         |无法从image1.jpg访问CDN         |
-|用户 3     |无权访问 folder1，但被授予了访问 image1.jpg Online SharePoint权限         |可以直接从 image1.jpg Online 访问资产SharePoint，但不能从 CDN         |
-|用户 4     |具有对 folder1 的访问权限，但已明确拒绝image1.jpg SharePoint Online         |无法从 SharePoint Online 访问资产，但可以从 CDN即使被拒绝访问 SharePoint Online 中的文件         |
+|用户 3     |无权访问 folder1，但被授予了访问 image1.jpg Online SharePoint权限         |可以直接从 image1.jpg Online SharePoint资产，但不能从 CDN         |
+|用户 4     |有权访问 folder1，但已明确拒绝访问 image1.jpg Online SharePoint         |无法从 SharePoint Online 访问资产，但可以从 CDN尽管被拒绝访问 SharePoint Online 中的文件         |
 
-<a name="CDNTroubleshooting"> </a>
+<a name="CDNTroubleshooting"></a>
+
 ## <a name="troubleshooting-the-office-365-cdn"></a>疑难解答Office 365 CDN
 
-<a name="CDNConfirm"> </a>
+<a name="CDNConfirm"></a>
+
 ### <a name="how-do-i-confirm-that-assets-are-being-served-by-the-cdn"></a>如何确认资产由组织CDN？
 
-向页面添加指向 CDN 资产的链接后，您可以通过浏览到该页面、在图像呈现并查看图像 URL 后右键单击图像来确认资产是否从 CDN 提供。
+向页面添加指向 CDN 资产的链接后，您可以通过浏览到页面、在图像呈现后右键单击图像并查看图像 URL，确认资产是否从 CDN 提供。
 
 您还可以使用浏览器的开发人员工具查看页面上每个资产的 URL，或使用第三方网络跟踪工具。
 
 > [!NOTE]
-> 如果使用网络工具（如 Fiddler）在从 SharePoint 页面呈现资产之外测试资产，则必须手动将引用器标头"Referer： "添加到 GET 请求，其中 URL 是 SharePoint Online 租户的根 `https://yourdomain.sharepoint.com` URL。
+> 如果使用网络工具（如 Fiddler）在从 SharePoint 页面呈现资产外测试资产，则必须手动将引用器标头"Referer： "添加到 GET 请求，其中 URL 是 SharePoint Online 租户的根 `https://yourdomain.sharepoint.com` URL。
 
 无法直接CDN Web 浏览器中测试 URL，因为必须有来自 SharePoint Online 的参考程序。 但是，如果您将CDN资源 URL 添加到 SharePoint 页面，然后在浏览器中打开该页面，则会看到页面上呈现的 CDN 资源。
 
 有关在浏览器浏览器中使用开发人员工具Microsoft Edge，请参阅Microsoft Edge[工具。](/microsoft-edge/devtools-guide)
 
-若要观看在 SharePoint 开发人员模式和做法[YouTube](https://aka.ms/sppnp-videos)频道中托管的演示如何验证 CDN 是否正常工作的简短视频，请参阅验证[CDN 使用情况](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5)并确保最佳网络连接。
+若要观看 SharePoint 开发人员模式和做法[YouTube](https://aka.ms/sppnp-videos)频道中托管的简短视频，演示如何验证 CDN 是否正常工作，请参阅验证[CDN 使用情况](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5)并确保最佳网络连接。
 
 ### <a name="why-are-assets-from-a-new-origin-unavailable"></a>为什么新源中的资产不可用？
 新源中的资产不会立即可供使用，因为注册需要一段时间才能传遍 CDN 并且需要将资产从源上载到 CDN 存储。 资源在文件中可用CDN取决于资产数量和文件大小。
@@ -1012,7 +1014,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 + */STYLE 库
 + */CLIENTSIDEASSETS
 
-如果缺少 */clientsideassets 源，SharePoint 框架解决方案将失败，并且不会生成警告或错误消息。 此源可能丢失，原因是CDN _-NoDefaultOrigins_ 参数设置为 **$true，** 或者因为已手动删除源。
+如果缺少 */clientsideassets 源，SharePoint 框架解决方案将失败，并且不会生成警告或错误消息。 此源可能丢失，原因是CDN _-NoDefaultOrigins_ 参数设置为 **$true** 启用，或者源已手动删除。
 
 可以通过以下 PowerShell 命令查看存在哪些源：
 
@@ -1040,7 +1042,7 @@ spo cdn origin add --origin */CLIENTSIDEASSETS
 
 ### <a name="what-powershell-modules-and-cli-shells-do-i-need-to-work-with-the-office-365-cdn"></a>我需要使用哪些 PowerShell 模块和 CLI shell 来使用Office 365 CDN？
 
-可以选择使用 Office 365 CDN **Online 命令行** 管理程序 PowerShell 模块SharePoint或 Office 365 **CLI。**
+可以选择使用 Office 365 CDN **Online 命令行** 管理程序 PowerShell 模块SharePoint或 OFFICE 365 **CLI。**
 
 + [SharePoint Online 命令行管理程序入门](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 + [安装 Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)

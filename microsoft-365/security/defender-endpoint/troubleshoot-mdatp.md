@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: d46fb5d456377a3089e5d6cfa45918eb42849227
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e79fbc82faada816d3499d6f05f285c544002b20
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553852"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111227"
 ---
 # <a name="troubleshoot-service-issues"></a>服务疑难解答
 
@@ -40,9 +40,9 @@ ms.locfileid: "60553852"
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>门户上缺少的元素或数据
 
-如果客户端上缺少某些元素或Microsoft 365 Defender则代理设置可能会阻止它。
+如果客户端上缺少某些元素或Microsoft 365 Defender代理设置可能会阻止它。
 
-确保包括 `*.security.microsoft.com` 代理允许列表。
+请确保包括 `*.security.microsoft.com` 代理允许列表。
 
 > [!NOTE]
 > 添加以下终结点时，必须使用 HTTPS 协议。
@@ -83,7 +83,7 @@ ms.locfileid: "60553852"
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>Microsoft Defender for Endpoint 租户在欧洲自动创建
 
-使用 Azure Defender 监视服务器时，会自动创建适用于终结点的 Microsoft Defender 租户。 默认情况下，Microsoft Defender for Endpoint 数据存储在欧洲。
+当你使用 Microsoft Defender for Cloud 监视服务器时，会自动创建一个 Microsoft Defender 终结点租户。 默认情况下，Microsoft Defender for Endpoint 数据存储在欧洲。
 
 ## <a name="related-topics"></a>相关主题
 

@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 19a54dca079c8b43110d3140a9ad3543634086e3
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 971c8999f36dc2cdb282371a41c89f46b85ff278
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883205"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111347"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>使用受控文件夹访问保护文重要件夹
 
@@ -36,7 +36,7 @@ ms.locfileid: "60883205"
 
 ## <a name="what-is-controlled-folder-access"></a>什么是受控文件夹访问权限？
 
-受控文件夹访问权限有助于保护你有价值的数据免受恶意应用和威胁（如勒索软件）的侵害。 受控文件夹访问权限通过针对已知受信任应用列表检查应用来保护你的数据。 在 Windows Server 2019、Windows Server 2022、Windows 10 和 Windows 11 客户端上支持，可以使用 Windows 安全中心 App、Microsoft Endpoint Configuration Manager或 Intune (托管设备) 。
+受控文件夹访问权限有助于保护你有价值的数据免受恶意应用和威胁（如勒索软件）的侵害。 受控文件夹访问权限通过针对已知受信任应用列表检查应用来保护你的数据。 在 Windows Server 2019、Windows Server 2022、Windows 10 和 Windows 11 客户端上，可以使用 Windows 安全中心 App 启用受控文件夹访问权限。Microsoft Endpoint Configuration Manager托管设备 (或 Intune) 。
 
 > [!NOTE]
 > 脚本引擎不受信任，你无法允许它们访问受控的受保护文件夹。 例如，即使允许使用证书和文件指示器，PowerShell 也不受受控文件夹访问权限 [信任](/microsoft-365/security/defender-endpoint/indicator-certificates)。
@@ -54,7 +54,7 @@ ms.locfileid: "60883205"
 
 根据应用的普遍程度和信誉将应用添加到列表中。 在整个组织中非常普遍且从未显示任何被视为恶意行为的应用被视为可信赖。 这些应用会自动添加到列表中。
 
-还可使用 Configuration Manager 或 Intune 将应用手动添加到受信任的列表中。 可以从安全中心控制台执行其他操作。 
+还可使用 Configuration Manager 或 Intune 将应用手动添加到受信任的列表中。 可以从管理门户执行Microsoft 365 Defender操作。 
 
 ## <a name="why-controlled-folder-access-is-important"></a>受控文件夹访问权限为什么很重要
 
@@ -62,9 +62,9 @@ ms.locfileid: "60883205"
 
 受保护的 [文件夹包括](#review-controlled-folder-access-events-in-windows-event-viewer) 公用系统文件夹 (包括启动) ，你可以 [添加更多文件夹](customize-controlled-folders.md#protect-additional-folders)。 还可以允许 [应用](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) 向它们授予对受保护文件夹的访问权限。
 
-可以使用审核 [模式评估](audit-windows-defender.md) 受控文件夹访问权限启用后对组织的影响。 您还可以访问 Windows Defender Test ground[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)以确认功能是否正常工作并查看其工作方式。
+可以使用审核 [模式评估](audit-windows-defender.md) 受控文件夹访问权限启用后对组织的影响。 您还可以访问 Windows Defender Test ground[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认该功能是否正常工作并查看其工作方式。
 
-受控文件夹访问权限支持以下版本的 Windows：
+受控文件夹访问权限受以下版本的文件夹Windows：
 
 - [Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)及更高版本
 - Windows 11
@@ -94,7 +94,7 @@ Windows默认保护系统文件夹以及其他一些文件夹：
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>在管理门户中查看受控文件夹Microsoft 365 Defender事件
 
-Defender for Endpoint 提供事件的详细报告和阻止，作为其警报[](investigate-alerts.md)调查方案的一Microsoft 365 Defender门户。  ([.Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)中的 Microsoft Defender for Endpoint ) 
+Defender for Endpoint 提供事件的详细报告和阻止，作为其警报[](investigate-alerts.md)调查方案的一Microsoft 365 Defender门户。  (请参阅 Microsoft [Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).) 
 
 可以使用高级搜寻查询 Microsoft Defender 的终结点 [数据](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)。 如果你使用的是审核[模式](audit-windows-defender.md)，可以使用高级搜寻来查看受控[](advanced-hunting-overview.md)文件夹访问权限设置在启用后将如何影响你的环境。
 
@@ -107,12 +107,12 @@ DeviceEvents
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在事件查看器中查看受控Windows访问事件
 
-你可以查看Windows事件日志，以查看当受控文件夹访问权限阻止应用 (或审核) 创建的事件：
+你可以查看 Windows 事件日志，以查看当受控文件夹访问权限阻止应用 (或审核应用) 创建的事件：
 
 1. 下载 [评估包](https://aka.ms/mp7z2w) ，将文件 *cfa-events.xml* 到设备上易于访问的位置。
 2. 在 **事件** 查看器中键入"开始"菜单以打开Windows事件查看器。
 3. 在左侧面板的"操作 **"下**，选择 **"导入自定义视图..."。**
-4. 导航到 *提取文件cfa-events.xml* 并选择它。 或者，[直接复制 XML。](event-views.md)
+4. 导航到提取 *文件cfa-events.xml并选择* 它。 或者，[直接复制 XML。](event-views.md)
 5. 选择“**确定**”。
 
 下表显示与受控文件夹访问权限相关的事件：

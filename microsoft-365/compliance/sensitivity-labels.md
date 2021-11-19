@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 3f9f0a3975081cfd136420ed6ac95d86b2f4861e
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 2614512499c9ded8952ab5a071e7d1cf56d1d9ec
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071400"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109943"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -59,13 +59,13 @@ ms.locfileid: "61071400"
 
 - **跨不同平台和设备保护 Office 应用中的内容。** 受 Office 桌面应用和 Office 网页版中的 Word、Excel、PowerPoint 和 Outlook 支持。 在 Windows、macOS、iOS 和 Android 上受支持。
 
-- 利用 Microsoft 云应用安全性 **保护第三方应用和服务中的内容**。 借助 Cloud App Security，可检测、分类、标记和保护第三方服务和应用（如 SalesForce、Box 或 Dropbox）中的内容，即使第三方应用或服务无法读取或不支持敏感度标签也不例外。
+- 利用 Microsoft Defender for Cloud Apps **保护第三方应用和服务中的内容**。 借助 Defender for Cloud Apps，可检测、分类、标记和保护第三方服务和应用 (如 SalesForce、Box 或 Dropbox) 中的内容，即使第三方应用或服务无法读取或不支持敏感度标签也不例外。
 
 - **保护容器**，包括 Teams、Microsoft 365 组和 SharePoint 网站。 例如，设置隐私设置、外部用户访问权限和外部共享，以及来自非托管设备的访问。
 
 - **将敏感度标签扩展到 Power BI**：启用此功能后，可以在 Power BI 中应用和查看标签，并在数据保存在服务之外时保护数据。
 
-- **将敏感度标签扩展为Azure Purview** 中的资产：启用此功能时，可以在Azure Purview中将敏感度标签应用于文件和架构化的数据资产。 架构化的数据资产包括 SQL、Azure SQL、Azure Synapse、Azure Cosoms 和 AWS RDS。
+- **将敏感度标签扩展为 Azure Purview** 中的资产: 启用此功能时 (目前处于预览状态)，可以在 Azure Purview 中将敏感度标签应用于文件和架构化的数据资产。 架构化的数据资产包括 SQL、Azure SQL、Azure Synapse、Azure Cosoms 和 AWS RDS。
 
 - **将敏感度标签扩展到第三方应用程序和服务。** 使用 Microsoft 信息保护 SDK，则第三方应用程序可读取敏感度标签并应用保护设置。
 
@@ -118,7 +118,7 @@ ms.locfileid: "61071400"
     
     ![提示分配所需的标签。](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    有关创建或编辑敏感度标签时文件和电子邮件设置的 **自动标记** 的详细信息，请参阅[将敏感度标签应用于 Office 应用自动](apply-sensitivity-label-automatically.md)的内容，并在Azure Purview中[标签](/azure/purview/create-sensitivity-label)。
+    有关创建或编辑敏感度标签时文件和电子邮件设置的 **自动标记** 的详细信息，请参阅 [将敏感度标签应用于 Office 应用自动](apply-sensitivity-label-automatically.md)的内容，并在Azure Purview中 [标签](/azure/purview/create-sensitivity-label)。
 
 ### <a name="label-scopes"></a>标记范围
 

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1babfd14883520968af283ed050945950bf3f6e0
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 44492fb0f763f81a743baf5cce72e9f19f86da48
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962575"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111359"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>确保设备配置正确
 
@@ -44,7 +44,7 @@ ms.locfileid: "60962575"
 
 *设备配置管理页*
 
-可以通过指向 Microsoft Intune 和 Microsoft 365 安全中心上的设备管理页面的直接深层链接，在组织一级跟踪配置状态并快速采取措施，以响应载入范围不佳、合规性问题以及攻击面缓解的不优化。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>
+可以通过直接、深层链接到 Microsoft Intune 和 Microsoft 365 Defender 门户上的设备管理页面，在组织级别跟踪配置状态并快速采取措施，以响应载入覆盖范围不佳、合规性问题以及攻击面缓解性能<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">不佳</a>的问题。
 
 在执行此操作时，您将受益于：
 
@@ -89,6 +89,6 @@ ms.locfileid: "60962575"
 :---|:---
 [将设备载入到 Defender for Endpoint](configure-machines-onboarding.md)|跟踪 Intune 托管设备的载入状态，并通过 Intune 载入更多设备。 
 [提高 Defender for Endpoint 安全基线的合规性](configure-machines-security-baseline.md)|跟踪基线合规性和不符合情况。 将安全基线部署到更多 Intune 托管的设备。
-[优化 ASR 规则部署和检测](configure-machines-asr.md)|查看规则部署，然后使用安全中心内的影响分析工具<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365检测</a>。
+[优化 ASR 规则部署和检测](configure-machines-asr.md)|查看规则部署，并调整使用影响分析工具在<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender检测</a>。
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)。

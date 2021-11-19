@@ -17,13 +17,13 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: 使用合规性管理器快速入门指南帮助你了解、设置和使用合规性管理器。
-ms.openlocfilehash: e614c8abb46b9562db45afb0c3e67d990f627ce6
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+description: 使用合规性管理器快速入门指南，帮助你了解、设置和使用合规性管理器。
+ms.openlocfilehash: 2992b05c2f5993ec0fb04f1310841a43850d7c36
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747210"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110867"
 ---
 # <a name="compliance-manager-quickstart"></a>合规性管理器快速入门
 
@@ -51,7 +51,7 @@ ms.locfileid: "60747210"
 
 ## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>加速：配置合规性管理器以管理合规性活动
 
-熟悉基础知识后，是时候设置一些内容来满足组织的需求了。 你可以开始使用评估并执行改进操作，以实施控制措施并提高合规性分数。 了解如何在此阶段执行所有活动可帮助您的组织遵守并证明遵守整个行业和地区的法规。 请访问以下链接以深入研究：
+熟悉基础知识后，可以设置一些内容来满足组织的需求。 你可以开始使用评估并执行改进操作，以实施控制措施并提高合规性分数。 了解如何在此阶段执行所有活动可帮助您的组织遵守并证明遵守整个行业和地区的法规。 请访问以下链接以深入研究：
 
 - [选择预建评估以创建和管理第一个评估](compliance-manager-assessments.md)
 - [了解如何使用模板生成评估](compliance-manager-templates.md)

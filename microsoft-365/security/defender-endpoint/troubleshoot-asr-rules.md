@@ -19,12 +19,12 @@ ms.custom:
 ms.topic: article
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fd23f0cdf35a9b7e236a957fed0922192091beb3
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 8103aad218f4e439c5eb3ebf6c76f369715afd84
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963139"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111239"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-endpoint-asr-rules"></a>报告 Microsoft Defender for Endpoint ASR 规则并排除故障
 
@@ -35,10 +35,10 @@ ms.locfileid: "60963139"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-安全<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a>中心是跨 Microsoft 标识、数据、设备、应用和基础结构监视和管理安全性的新界面。 可在此处轻松查看组织的安全运行状况、配置设备、用户和应用，并获取可疑活动的警报。 Microsoft 365 安全中心旨在帮助安全管理员和安全操作团队更好地管理和保护其组织。 请访问 上Microsoft 365安全中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> 。
+Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>是一个新的界面，用于监视和管理 Microsoft 标识、数据、设备、应用和基础结构的安全性。 可在此处轻松查看组织的安全运行状况、配置设备、用户和应用，并获取可疑活动的警报。 Microsoft 365 Defender门户旨在供安全管理员和安全运营团队更好地管理和保护其组织。 请访问 上Microsoft 365 Defender门户 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> 。
 
-在<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a>中心中，我们将提供您当前 ASR 规则配置和您资产中的事件的完整外观。 请注意，你的设备必须载入到 Microsoft Defender for Endpoint 服务中，以填充这些报告。
-下面是报告设备攻击面减少Microsoft 365下 (安全 \>  \> **中心) 。** 在设备级别 **，从攻击** 面减少规则 **窗格中选择配置** 。 将显示以下屏幕，可在其中选择特定设备并检查其单独的 ASR 规则配置。
+在<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>门户中，我们将提供您当前 ASR 规则配置和您资产中的事件的完整视图。 请注意，你的设备必须载入到 Microsoft Defender for Endpoint 服务中，以填充这些报告。
+下面是报告设备攻击面减少Microsoft 365 Defender下 ( \>  \> **门户中的** 屏幕截图) 。 在设备级别 **，从攻击** 面减少规则 **窗格中选择配置** 。 将显示以下屏幕，可在其中选择特定设备并检查其单独的 ASR 规则配置。
 
 :::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="ASR 规则屏幕。":::
 
@@ -46,7 +46,7 @@ ms.locfileid: "60963139"
 
 Microsoft Defender for Endpoint 的最强大功能之一是高级搜寻。 如果你不熟悉高级搜寻，请参阅使用高级搜寻主动 [搜寻威胁](advanced-hunting-overview.md)。
 
-高级搜寻是基于查询的 (Kusto 查询语言) 威胁搜寻工具，允许你浏览从你的设备收集的最多 30 天的捕获 (原始) 数据。 通过高级搜寻，你可以主动检查事件以查找有趣的指示器和实体。 灵活访问数据有助于不受约束地搜寻已知威胁和潜在威胁。
+高级搜寻是基于查询的 (Kusto 查询语言) 威胁搜寻工具，允许你浏览从你的设备中收集的最多 30 天的捕获 (原始) 数据。 通过高级搜寻，你可以主动检查事件以查找有趣的指示器和实体。 灵活访问数据有助于不受约束地搜寻已知威胁和潜在威胁。
 
 通过高级搜寻，可以提取 ASR 规则信息、创建报告，并获取有关给定 ASR 规则审核或阻止事件的上下文的深入信息。
 
@@ -68,7 +68,7 @@ Microsoft Defender for Endpoint 计算机时间线是高级搜寻的替代方法
 
 ## <a name="how-to-troubleshoot-asr-rules"></a>如何解决 ASR 规则问题？
 
-第一种也是最直接的方法就是在本地检查 Windows 设备上哪些 ASR 规则已启用 (其配置) 是使用 PowerShell cmdlet。
+第一种也是最直接的方法就是在本地在 Windows 设备上检查哪些 ASR 规则已启用 (其配置) 是使用 PowerShell cmdlet。
 
 下面是一些其他一些信息源，Windows ASR 规则的影响和操作疑难解答。
 
@@ -92,9 +92,9 @@ Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Id
 
 :::image type="content" source="images/getmpref-examplenew.png" alt-text="获取 mpreference 示例。":::
 
-上面显示了设置不同于"0"的 ASR 规则的所有 (未配置) 。
+上面显示了 ASR 规则的所有设置不同于 0 的 ID， (未配置) 。
 
-下一步是列出配置每个规则 (审核) 的实际操作。
+然后，下一步是列出每个 (配置) 的"阻止"或"审核"操作。
 
 ```powershell
 Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions
@@ -104,9 +104,9 @@ Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ac
 
 ### <a name="querying-blocking-and-auditing-events"></a>查询阻止和审核事件
 
-可以在活动日志中查看 ASR 规则Windows Defender事件。
+可以在管理日志中查看 ASR 规则Windows Defender事件。
 
-若要访问它，请Windows事件查看器，并浏览到应用程序和服务日志 Microsoft Windows Windows Defender \>  \>  \>  \> **操作**。
+若要访问它，请Windows事件查看器，并浏览到应用程序和服务日志 \> **Microsoft** Windows Windows Defender \>  \>  \> **操作**。
 
 :::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="事件查看器 scr。":::
 

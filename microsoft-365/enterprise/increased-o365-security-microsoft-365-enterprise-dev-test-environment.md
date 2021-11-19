@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南为企业Microsoft 365环境启用Microsoft 365安全设置。
-ms.openlocfilehash: 3976ad11b6cac7ae74e0fd2d94ad35b610273052
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 5d431bba21c02daf2ec5af384e2d4fde53ab6edb
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960858"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111695"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>为Microsoft 365测试环境Microsoft 365安全性提高
 
@@ -65,15 +65,15 @@ ms.locfileid: "60960858"
 
 ### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>启用 Defender for Office 365 for SharePoint、OneDrive for Business 和 Microsoft Teams
 
-Defender for Office 365 for SharePoint，OneDrive，Microsoft Teams保护你的组织避免意外共享恶意文件。
+defender for Office 365 for SharePoint， OneDrive， and Microsoft Teams protects your organization from inadvertently sharing malicious files.
 
 1. 转到安全 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">与&</a> 中心，然后使用全局管理员帐户登录。
 
-2. 在左侧导航窗格中，在"**威胁** 管理"下，单击"策略"，然后单击"保险箱 **附件"。** 
+2. 在左侧导航窗格中 **的"威胁** 管理"下，单击"策略"，然后单击"保险箱 **附件"。** 
 
-3. 在 **"保护文件SharePoint、OneDrive和Microsoft Teams"** 下。 选择 **打开 ATP 进行SharePoint、OneDrive和Microsoft Teams。**
+3. 在 **"保护文件SharePoint、OneDrive和Microsoft Teams"** 下。 选择 **打开 ATP SharePoint、OneDrive 和 Microsoft Teams。**
 
-4. 单击“**保存**”。
+4. 单击 **“保存”**。
 
 
 ### <a name="enable-anti-malware"></a>启用反恶意软件
@@ -110,7 +110,7 @@ Microsoft 365中的威胁管理可帮助您控制和管理对组织数据的移�
 
 Microsoft 安全功能分数以数字显示安全状态，它指明了相对于订阅中可用功能的当前级别。 它还为你提供了可用于提高分数的改进操作列表。
 
-1. 在浏览器中创建新选项卡，转到安全 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365，</a>然后单击"安全 **分数"。**
+1. 在浏览器中创建新选项卡，转到"Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户"，</a>然后单击"安全 **分数"。**
 2. 在" **概述**  "选项卡上，记下当前的安全分数及其与全局平均值和许可证数量相似的订阅之间的比较方式。
 3. 在 **"改进操作** "选项卡上，通读可采取的操作列表以提高分数。
 

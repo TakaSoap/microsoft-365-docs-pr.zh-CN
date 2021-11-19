@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4ead5c123920670113a336d92fb98e69fea372b9
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 144003528b322aa86ae0fa22aa40fa7aa934a0c7
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882257"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110903"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>管理 Microsoft Defender 防病毒更新并扫描过期的终结点
 
@@ -40,7 +40,7 @@ Microsoft Defender 防病毒定义终结点可以避免更新的所需时间，�
 
 ## <a name="set-up-catch-up-protection-updates-for-endpoints-that-havent-updated-for-a-while"></a>为一段时间未更新的终结点设置跟进保护更新
 
-如果Microsoft Defender 防病毒时间未下载保护更新，可以设置为在下次登录时自动检查并下载最新更新。 如果你已全局禁用启动时的自动更新 [下载，这将非常有用](manage-event-based-updates-microsoft-defender-antivirus.md)。
+如果Microsoft Defender 防病毒在指定的时段内未下载保护更新，可以设置为在下次登录时自动检查并下载最新更新。 如果你已全局禁用启动时的自动更新 [下载，这将非常有用](manage-event-based-updates-microsoft-defender-antivirus.md)。
 
 ### <a name="use-configuration-manager-to-configure-catch-up-protection-updates"></a>使用 Configuration Manager 配置跟进保护更新
 
@@ -51,7 +51,7 @@ Microsoft Defender 防病毒定义终结点可以避免更新的所需时间，�
     1. 将 **"如果客户端计算机在连续计划更新** 两次以上时处于脱机状态，则强制进行安全智能更新"设置为 **"是"。**
     2. 对于  **"如果配置管理器用作** 安全智能更新的源..."，请指定配置管理器提供的保护更新应视为过期的小时数。 这将基于定义的回退源顺序，导致使用下一 [个更新位置](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)。
 
-3. 单击“**确定**”。
+3. 单击“确定”。
 
 4. [像往常一样部署更新的策略](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
@@ -67,7 +67,7 @@ Microsoft Defender 防病毒定义终结点可以避免更新的所需时间，�
 
 5. 双击定义需要更新安全智能的天数设置，将选项设置为 **已启用**。 输入希望 Microsoft Defender AV 检查并下载最新保护更新的天数。
 
-6. 单击“**确定**”。
+6. 单击“确定”。
 
 ### <a name="use-powershell-cmdlets-to-configure-catch-up-protection-updates"></a>使用 PowerShell cmdlet 配置跟进保护更新
 
@@ -77,7 +77,7 @@ Microsoft Defender 防病毒定义终结点可以避免更新的所需时间，�
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender cmdlet，](/powershell/module/defender/)详细了解如何将 PowerShell 与 Microsoft Defender 防病毒。
+请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender for Cloud cmdlet，](/powershell/module/defender/)了解有关如何将 PowerShell 与 Microsoft Defender 防病毒 一Microsoft Defender 防病毒。
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>使用 Windows Management Instruction (WMI) 配置跟进保护更新
 
@@ -89,11 +89,11 @@ SignatureUpdateCatchupInterval
 
 有关详细信息和允许的参数，请参阅以下内容：
 
-- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="set-the-number-of-days-before-protection-is-reported-as-out-of-date"></a>设置保护报告为过期前的天数
 
-还可以指定保护被视为旧Microsoft Defender 防病毒过期的天数。 指定天数后，客户端将自行报告为过期，并向电脑用户显示错误。 还可能导致 Microsoft Defender 防病毒 根据定义的回退源顺序[) ](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)尝试从其他源 (下载更新，例如将 WSUS 或 Microsoft Update 设置为第一个源后将 MMPC 用作辅助源时。
+还可以指定保护被视为旧Microsoft Defender 防病毒过期的天数。 指定天数后，客户端将自行报告为过期，并向电脑用户显示错误。 还可能导致 Microsoft Defender 防病毒 根据定义的回退源顺序[) ](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order) (尝试从其他源 (下载更新，例如将 WSUS 或 Microsoft Update 设置为第一个源后将 MMPC 用作辅助源时。
 
 ### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>使用组策略指定保护被视为过期前的天数
 
@@ -107,15 +107,15 @@ SignatureUpdateCatchupInterval
 
     1. 双击定义 **间谍软件定义** 被视为过期的天数，将选项设置为 **已启用**。 输入希望 Microsoft Defender AV 考虑间谍软件安全智能过期的天数。
 
-    2. 单击“**确定**”。
+    2. 单击“确定”。
 
     3. 双击"**定义病毒定义** 被视为过期的天数"，将选项设置为"**已启用"。** 输入您希望 Microsoft Defender AV 考虑病毒安全智能过期的天数。
 
-    4. 单击“**确定**”。
+    4. 单击“确定”。
 
 ## <a name="set-up-catch-up-scans-for-endpoints-that-have-not-been-scanned-for-a-while"></a>为一段时间未扫描的终结点设置跟进扫描
 
-你可以设置连续计划扫描在用户强制扫描之前Microsoft Defender 防病毒扫描的数量。
+你可以设置连续计划扫描的丢失次数，然后Microsoft Defender 防病毒扫描。
 
 启用此功能的过程为：
 
@@ -138,9 +138,9 @@ SignatureUpdateCatchupInterval
 5. 展开树以Windows **扫描> Microsoft Defender 防病毒 >组件** 并配置以下设置：
 
     1. 如果已设置计划快速扫描，请双击"启用捕获快速扫描"设置，将该选项设置为 **"已启用"。**
-    2. 如果已设置计划的完全扫描，请双击"启用捕获完全 **扫描**"设置，将该选项设置为 **"已启用"。** 单击“**确定**”。
+    2. 如果已设置计划的完全扫描，请双击"启用捕获完全 **扫描**"设置，将该选项设置为 **"已启用"。** 单击“确定”。
     3. 双击定义 **强制进行** 跟进扫描的天数设置，将选项设置为 **已启用**。
-    4. 输入在用户下次登录电脑时自动运行扫描之前可能错过的扫描数。 运行的扫描类型由指定用于计划扫描的扫描类型确定 (请参阅计划扫描主题) 。 [](scheduled-catch-up-scans-microsoft-defender-antivirus.md) 单击“**确定**”。
+    4. 输入在用户下次登录电脑时自动运行扫描之前可能错过的扫描数。 运行的扫描类型由指定要用于计划扫描的扫描类型确定 (请参阅计划扫描主题) 。 [](scheduled-catch-up-scans-microsoft-defender-antivirus.md) 单击“确定”。
 
 > [!NOTE]
 > 组策略设置标题是指天数。 但是，该设置应用于在运行 (扫描) 之前扫描次数。
@@ -155,7 +155,7 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)管理 Microsoft Defender 防病毒[和 Defender cmdlet，](/powershell/module/defender/)详细了解如何将 PowerShell 与 Microsoft Defender 防病毒。
+请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)管理 Microsoft Defender 防病毒 和[Defender for Cloud cmdlet，](/powershell/module/defender/)详细了解如何将 PowerShell 与 Microsoft Defender 防病毒。
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>使用 Windows Management Instruction (WMI) 配置跟进扫描
 
@@ -168,7 +168,7 @@ DisableCatchupQuickScan
 
 有关详细信息和允许的参数，请参阅以下内容：
 
-- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ### <a name="use-configuration-manager-to-configure-catch-up-scans"></a>使用 Configuration Manager 配置跟进扫描
 
@@ -176,7 +176,7 @@ DisableCatchupQuickScan
 
 2. 转到计划 **扫描** 部分，如果客户端计算机脱机，则强制扫描所选扫描类型 **...** 到 **是**。
 
-3. 单击“**确定**”。
+3. 单击“确定”。
 
 4. [像往常一样部署更新的策略](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 

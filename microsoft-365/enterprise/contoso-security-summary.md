@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Contoso 如何使用企业Microsoft 365功能。
-ms.openlocfilehash: f4d35ef3c5b862b42bf0a995f25b29c26eedd408
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Contoso 如何使用企业Microsoft 365安全功能。
+ms.openlocfilehash: 15fd559b6dade63d56647c8f5f3437a57d27a56b
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152738"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109907"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Microsoft 365企业安全管理摘要
 
@@ -40,7 +40,7 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 1. 限制云的管理员帐户
 
-   Contoso 对现有的 Active Directory 域服务 (AD DS) 进行了广泛审查，并设置了一系列专用云管理员帐户和组。
+   Contoso 对现有的 Active Directory 域服务 (AD DS) 管理员帐户进行了广泛审查，并设置了一系列专用云管理员帐户和组。
 
 2. 将数据分为三个安全级别
 
@@ -56,9 +56,9 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 - 使用 MFA 和 PIM 的专用全局管理员帐户
 
-  Contoso 创建了三个使用强密码的专用全局管理员帐户，而不是将全局管理员角色分配给日常用户帐户。 帐户受 Azure AD 多重身份验证 (MFA) 和 Azure Active Directory (Azure AD) Privileged Identity Management (PIM) 。 *PIM 仅在 Microsoft 365 E5 中提供。*
+  Contoso 创建了三个使用强密码的专用全局管理员帐户，而不是将全局管理员角色分配给日常用户帐户。 这些帐户受 MFA Azure AD和 PIM (身份验证) Azure Active Directory (Azure AD) Privileged Identity Management (保护) 。 *PIM 仅在 Microsoft 365 E5 中提供。*
 
-  使用 Azure **AD DC 管理员或****全局** 管理员帐户登录仅适用于特定管理任务。 密码仅对指定员工已知，并且只能在 Azure AD PIM 中配置的时段内使用。
+  使用 DC 管理员 **Azure AD** 全局管理员帐户登录仅适用于特定的管理任务。 密码仅对指定员工已知，并且只能在 PIM 中配置的Azure AD使用。
 
   Contoso 安全管理员为适合 IT 工作者的工作职能的帐户分配了较低管理员角色。
 
@@ -66,9 +66,9 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 - 用于所有用户帐户的 MFA
 
-  MFA 为登录过程添加了一层额外的保护。 它要求用户在正确输入密码后确认智能手机上的电话呼叫、短信或应用通知。 通过 MFA，Azure AD 用户帐户受到保护，防止未经授权的登录，即使帐户密码受到威胁。
+  MFA 为登录过程添加了一层额外的保护。 它要求用户在正确输入密码后确认智能手机上的电话呼叫、短信或应用通知。 通过 MFA，Azure AD用户帐户免遭未经授权的登录，即使帐户密码受到威胁。
 
-   - 若要防止泄露订阅Microsoft 365，Contoso 需要所有 **Azure AD DC** 管理员或 **全局管理员帐户** 的 MFA。
+   - 若要防止泄露订阅Microsoft 365，Contoso 需要所有 DC Azure AD **或****全局** 管理员帐户的 MFA。
    - 为防止钓鱼攻击（攻击者会泄露组织中受信任的个人的凭据并发送恶意电子邮件），Contoso 对所有用户帐户（包括经理和行政人员）都启用了 MFA。
 
 - 使用条件访问策略更安全地访问设备和应用程序
@@ -77,11 +77,11 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 - Windows Hello 企业版
 
-  Contoso 部署了[Windows Hello for Business，](/windows/security/identity-protection/hello-for-business/hello-identity-verification)最终无需在运行 Windows 10 企业版 的 PC 和移动设备上使用强双因素身份验证。
+  Contoso 部署了[Windows Hello for Business，](/windows/security/identity-protection/hello-for-business/hello-identity-verification)以便最终无需在运行 Windows 10 企业版 的 PC 和移动设备上使用强双因素身份验证。
 
 - Windows Defender Credential Guard
 
-  为了使用管理权限阻止在操作系统中运行的目标攻击和恶意软件，Contoso 通过 AD DS Windows Defender启用[Credential Guard。](/windows/security/identity-protection/credential-guard/credential-guard)
+  为了使用管理权限阻止在操作系统中运行的目标攻击和恶意软件，Contoso 通过 AD DS Windows Defender[启用 Credential Guard。](/windows/security/identity-protection/credential-guard/credential-guard)
 
 ## <a name="threat-protection"></a>威胁防护
 
@@ -117,9 +117,9 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
   Contoso 使用 Windows 信息保护[ (WIP) ](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)防止数据通过基于 Internet 的应用和服务、企业应用以及企业拥有的设备以及员工带到工作的个人设备上的数据泄露。
 
-- 使用 Microsoft Cloud App Security 进行云监视
+- 使用 Microsoft Defender for Cloud Apps 进行云监视
 
-  Contoso 使用 [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) 来映射其云环境、监视其使用情况，并检测安全事件和事件。 *Microsoft Cloud App Security 仅在 Microsoft 365 E5 中提供。*
+  Contoso 使用 [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) 映射其云环境、监视其使用情况并检测安全事件和事件。 *Microsoft Defender for Cloud Apps 仅适用于 Microsoft 365 E5。*
 
 - 使用 Microsoft Intune 的设备管理
 
@@ -127,10 +127,10 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 ## <a name="security-management"></a>安全管理
 
-- 使用 Azure Defender 的 IT 中心安全仪表板
+- 使用 Microsoft Defender for Cloud 的 IT 中心安全仪表板
 
-  Contoso 使用 [Azure Defender](https://azure.microsoft.com/services/security-center/) 提供统一的安全和威胁防护视图，跨其工作负载管理安全策略，并响应网络攻击。
+  Contoso 使用 [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/) 呈现统一的安全和威胁防护视图，管理其工作负载中的安全策略，并响应网络攻击。
 
 - Windows Defender 安全中心适用于用户的安全中心仪表板
 
-  Contoso 将[](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)Windows 安全中心 应用部署到运行 Windows 10 企业版 电脑和设备，以便用户可以一目了然地查看其安全状态并采取措施。
+  Contoso 将[](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)Windows 安全中心 应用部署到运行 Windows 10 企业版 电脑和设备，以便用户可以一目了然地查看其安全状况并采取措施。

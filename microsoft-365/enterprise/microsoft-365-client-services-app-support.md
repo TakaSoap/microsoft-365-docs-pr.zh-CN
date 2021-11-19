@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: 本文查找有关客户端Microsoft 365服务应用支持的详细信息。
-ms.openlocfilehash: 4ae294865bb506ae9e8a25e8f5ab28fff967171e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 本文将查找有关客户端Microsoft 365服务应用支持的详细信息。
+ms.openlocfilehash: db69da1203138435b22383de145ddde71f763c14
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173320"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110327"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365客户端和服务应用支持
 
@@ -30,7 +30,7 @@ Microsoft 支持多种安全、身份验证和合规性功能，以确保客户�
 
 ### <a name="continuous-access-evaluation-preview"></a>连续访问评估 (预览) 
 
-连续访问评估通过启用服务（如 Exchange Online、SharePoint Online 和 Teams）来订阅 Azure Active Directory 中的关键事件，以便几乎可以实时地评估和强制执行这些事件。 关键事件评估不依赖于条件访问策略，因此可在任何租户中使用。
+连续访问评估通过允许服务（如 Exchange Online、SharePoint Online 和 Teams）订阅 Azure Active Directory 中的关键事件来实施，以便几乎可以实时地评估和强制执行这些事件。 关键事件评估不依赖于条件访问策略，因此可在任何租户中使用。
 
 当前评估以下事件：
 
@@ -38,7 +38,7 @@ Microsoft 支持多种安全、身份验证和合规性功能，以确保客户�
 - 更改或重置用户的密码
 - 为用户启用多重身份验证
 - 管理员显式撤消用户的所有刷新令牌
-- Azure AD Identity Protection 检测到的提升的用户风险
+- Identity Protection 检测到的提升Azure AD风险
 
 有关客户端和服务应用支持的连续访问评估的详细信息，请参阅连续访问评估 ([预览) 。 ](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
 
@@ -46,11 +46,11 @@ Microsoft 支持多种安全、身份验证和合规性功能，以确保客户�
 
 ### <a name="certificate-based-authentication"></a>基于证书的身份验证
 
-CBA (基于证书) 是使用数字证书在授予对资源、网络、应用程序或服务的访问权限之前标识用户、计算机或设备。 在用户身份验证中，它通常与用户名和密码等传统方法协调部署。
+CBA (基于证书) 是，在授予对资源、网络、应用程序或服务的访问权限之前，使用数字证书标识用户、计算机或设备。 在用户身份验证中，它通常与用户名和密码等传统方法协调部署。
 
 某些传统解决方案仅适用于用户，例如生物识别以及 OTP (一) 。 使用基于证书的身份验证，可针对所有终结点使用相同的解决方案;用户、设备和不断增多的物联网 (IoT) 。
 
-有关客户端和服务应用支持的基于证书的身份验证Microsoft 365请参阅客户端[应用支持：基于证书的身份验证](microsoft-365-client-support-certificate-based-authentication.md)。
+有关客户端和服务应用支持的基于证书的身份验证Microsoft 365请参阅客户端应用支持[：基于证书的身份验证](microsoft-365-client-support-certificate-based-authentication.md)。
 
 ### <a name="conditional-access"></a>条件访问
 
@@ -63,7 +63,7 @@ CBA (基于证书) 是使用数字证书在授予对资源、网络、应用程�
 - 设备信息
 - 应用程序信息
 - 实时和计算的风险检测
-- Microsoft Cloud App Security (MCAS)
+- Microsoft Defender for Cloud Apps
 
 做出这些访问决策时，策略可以采取不同的操作：
 
@@ -72,9 +72,9 @@ CBA (基于证书) 是使用数字证书在授予对资源、网络、应用程�
 
     - 多重身份验证
     - 要标记为合规的设备
-    - 设备已加入混合 Azure AD
+    - 已加入混合Azure AD设备
     - 已批准的客户端应用程序
-    - 在预览版中配置 (保护) 
+    - 配置了应用保护策略 (预览) 
 
 有关客户端和服务应用支持的条件访问详细信息，请参阅：
 
@@ -88,7 +88,7 @@ CBA (基于证书) 是使用数字证书在授予对资源、网络、应用程�
 
 对于组织管理的内容，您可以应用应用程序管理策略，以控制如何使用 Microsoft Intune 访问、共享和使用数据。 例如，支持以下操作：
 
-- 远程擦除托管组织 (也称为组织数据) 
+- 远程擦除托管组织内容 (也称为组织数据) 
 - 防止将组织内容粘贴到非组织位置
 - 需要 PIN 来访问组织内容
 - 阻止托管应用在已越狱或获得 root 权限的设备上运行
@@ -112,7 +112,7 @@ CBA (基于证书) 是使用数字证书在授予对资源、网络、应用程�
 
 ### <a name="single-sign-on"></a>单一登录
 
-SSO (单一登录) 当用户登录到 SSO 中的应用程序时，可添加安全性和Azure Active Directory。 借助单一登录，用户可以使用一个帐户登录一次，以访问本地 Active Directory 域服务 (AD DS) 已加入域的设备、软件即服务 (SaaS) 应用程序和您组织的 Web 应用程序。
+SSO (单一) ，当用户登录到 SSO 中的应用程序时，可添加安全性和Azure Active Directory。 借助单一登录，用户可以使用一个帐户登录一次，以访问本地 Active Directory 域服务 (AD DS) 已加入域的设备、软件即服务 (SaaS) 应用程序和您组织的 Web 应用程序。
 
 有关客户端和服务应用支持的单一登录信息，请参阅Microsoft 365[客户端应用支持：单一登录。](microsoft-365-client-support-single-sign-on.md)
 
@@ -135,11 +135,11 @@ SSO (单一登录) 当用户登录到 SSO 中的应用程序时，可添加安�
 
 Azure Active Directory (Azure AD) 条件访问规则允许客户根据设备合规性或网络位置等属性控制对联机服务的访问。 可能会使用下列解决方案：
 
-- 基于 Azure AD 多重身份验证的条件访问
-- 基于 Azure AD 位置的条件访问
-- 基于 Azure AD 设备的条件访问
+- Azure AD基于多重身份验证的条件访问
+- Azure AD基于位置的条件访问
+- Azure AD基于设备的条件访问
 
-Azure AD 条件访问规则适用于每个应用程序，客户可以使用这些规则根据不同的条件控制访问。 使用[移动设备管理 (MDM) 或 Intune，](/mem/intune/fundamentals/what-is-device-management)客户必须能够将 Microsoft 365 的访问权限限制为仅针对使用组织设备或已注册其个人设备进行管理的用户。 例如，客户可以配置条件访问规则以强制执行如下控件：
+Azure AD条件访问规则针对每个应用程序应用，并且可供客户根据不同的条件控制访问。 使用移动设备管理 (MDM) 或[Intune，](/mem/intune/fundamentals/what-is-device-management)客户必须能够将 Microsoft 365 的访问权限限制为仅针对使用组织设备或已注册其个人设备进行管理的用户。 例如，客户可以配置条件访问规则以强制执行如下控件：
 
 - 仅允许从已加入域或符合域的设备访问
 - 强制对服务的所有访问进行多重Exchange Online身份验证
@@ -150,6 +150,6 @@ Azure AD 条件访问规则适用于每个应用程序，客户可以使用这�
 
 为了为客户提供一流的加密，Microsoft 计划停止支持 Office 365 和 Office 365 GCC 中的传输层安全性 (TLS) 版本 1.0 和 1.1。
 
-我们知道您的数据的安全性非常重要，并且我们承诺对可能影响使用 TLS 服务的更改保持透明公开。 我们建议所有客户端-服务器和浏览器-服务器组合使用 TLS 1.2 (或更高版本) 来维护与 Office 365 服务的连接。 你可能必须更新某些客户端-服务器和浏览器-服务器组合。
+我们知道您的数据的安全性非常重要，并且我们承诺对可能影响使用 TLS 服务的更改保持透明公开。 我们建议所有客户端-服务器和浏览器-服务器组合使用 TLS 1.2 (或更高版本) 维护与 Office 365 服务的连接。 你可能必须更新某些客户端-服务器和浏览器-服务器组合。
 
 有关 TLS 1.2 支持和服务支持的信息，请参阅 Office 365 和 Office 365 GCC 中的准备[TLS 1.2。](../compliance/prepare-tls-1.2-in-office-365.md)

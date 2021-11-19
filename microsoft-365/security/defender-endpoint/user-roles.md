@@ -1,6 +1,6 @@
 ---
 title: 为基于角色的访问控制创建和管理角色
-description: 创建角色，并定义分配给角色的权限，作为该角色中基于角色的访问控制实现Microsoft 365 Defender
+description: 创建角色，并将分配给角色的权限定义为角色中基于角色的访问控制实现Microsoft 365 Defender
 keywords: 用户角色， 角色， 访问 rbac
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 02e2d3249bbec9c4c0c4211a53cae0cee1789c1f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 06b5ecb4b07259392bc0d90465dbc1fa2459bd85
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960846"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110531"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>为基于角色的访问控制创建和管理角色
 
@@ -37,11 +37,11 @@ ms.locfileid: "60960846"
 
 ## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>创建角色并将角色分配给Azure Active Directory组
 
-以下步骤将指导您如何在 Microsoft 365 Defender。 它假定你已创建Azure Active Directory用户组。
+以下步骤指导您如何在角色创建Microsoft 365 Defender。 它假定你已创建Azure Active Directory用户组。
 
 1. 使用分配<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>全局管理员角色的帐户登录登录。
 
-2. 在导航窗格中，在"权限 \> **设置"** 下 \> **(") "** 终结点角色"。
+2. 在导航窗格中，选择"设置权限" ("终结点角色 \>  \> **) 。**
 
 3. 选择 **"添加项目"。**
 
@@ -66,17 +66,17 @@ ms.locfileid: "60960846"
 
 - **可用修正操作**
   - **安全操作** - 执行响应操作、批准或消除挂起的修正操作、管理自动化和指示器的允许/阻止列表
-  - **威胁和漏洞管理 - 异常处理**- 创建新的异常和管理活动异常
+  - **威胁和漏洞管理 - 异常处理**- 创建新异常和管理活动异常
   - **威胁和漏洞管理 - 修正处理**- 提交新的修正请求、创建票证和管理现有修正活动
 
 - **警报调查** - 管理警报、启动自动调查、运行扫描、收集调查包、管理设备标记，以及仅下载可移植的可执行 (PE) 文件
 
-- **管理门户系统设置** - 配置存储设置、SIEM 和威胁情报 API 设置 (适用于全球) 、高级设置、自动文件上载、角色和设备组
+- **管理门户系统设置** - 配置存储设置、SIEM 和威胁情报 API (应用全局) 、高级设置、自动文件上传、角色和设备组
 
     > [!NOTE]
     > 此设置仅适用于 Microsoft Defender 终结点管理员 (默认) 角色。
 
-- **在安全中心管理安全设置** - 配置警报抑制设置、管理用于自动化的文件夹排除项、载入和载出设备、管理电子邮件通知、管理评估实验室
+- **在 Defender for Cloud** 中管理安全设置 - 配置警报抑制设置、管理自动化的文件夹排除项、载入和载出设备、管理电子邮件通知、管理评估实验室
 
 - **实时响应功能**
   - **基本** 命令：
@@ -95,7 +95,7 @@ ms.locfileid: "60960846"
 
 1. 使用分配<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>全局管理员角色的帐户登录登录。
 
-2. 在导航窗格中，在"权限 \> **设置"** 下 \> **(") "** 终结点角色"。
+2. 在导航窗格中，选择"设置权限" ("终结点角色 \>  \> **) 。**
 
 3. 选择要编辑的角色。
 
@@ -109,7 +109,7 @@ ms.locfileid: "60960846"
 
 1. 使用分配<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>全局管理员角色的帐户登录登录。
 
-2. 在导航窗格中，在"权限 \> **设置"** 下 \> **(") "** 终结点角色"。
+2. 在导航窗格中，选择"设置权限" ("终结点角色 \>  \> **) 。**
 
 3. 选择要删除的角色。
 

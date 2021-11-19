@@ -14,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 40b683a04527eb4a528f2aeaa25071e94fdd62e0
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 00e03927696d32eb72991a5eaa82643325b59925
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884009"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110435"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>性能分析器Microsoft Defender 防病毒
 
 **什么是Microsoft Defender 防病毒器？**
 
-在某些情况下，你可能需要在扫描特定文件和文件夹Microsoft Defender 防病毒优化文件的性能。 性能分析器是一个 PowerShell 命令行工具，可帮助确定哪些文件、文件扩展名和进程可能导致各个终结点出现性能问题。 此信息可用于更好地评估性能问题和应用修正操作。
+在某些情况下，可能需要在扫描特定文件和文件夹时Microsoft Defender 防病毒性能。 性能分析器是一个 PowerShell 命令行工具，可帮助确定哪些文件、文件扩展名和进程可能导致各个终结点出现性能问题。 此信息可用于更好地评估性能问题和应用修正操作。
 
 要分析的一些选项包括：
 
@@ -53,7 +53,7 @@ ms.locfileid: "60884009"
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    其中 `-RecordTo` 参数指定保存跟踪文件的完整路径位置。 有关 cmdlet 的更多信息，请参阅 [Defender](/powershell/module/defender)。
+    其中 `-RecordTo` 参数指定保存跟踪文件的完整路径位置。 有关 cmdlet 的更多信息，请参阅[Microsoft Defender 防病毒 cmdlet。](/powershell/module/defender)
 
 2. 如果认为进程或服务会影响性能，请通过执行相关任务重现这种情况。
 
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 
 ### <a name="get-mpperformancereport"></a>Get-MpPerformanceReport
 
-下一节介绍 Get-MpPerformanceReport PowerShell cmdlet。 分析和报告 MDAV Microsoft Defender 防病毒 (性能) 记录。
+下一节介绍 Get-MpPerformanceReport PowerShell cmdlet。 分析和报告 MDAV Microsoft Defender 防病毒 (记录) 记录。
 
 #### <a name="syntax-get-mpperformancereport"></a>语法：Get-MpPerformanceReport
 
@@ -410,7 +410,7 @@ Accept wildcard characters: False
 
 
 ### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess 
-指定每个顶部进程每个顶部文件的输出的顶级扫描次数，按"持续时间"排序。
+指定每个顶部进程每个顶部文件的输出（按"持续时间"排序）的顶级扫描次数。
 
 
 ```yaml
@@ -457,4 +457,3 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-

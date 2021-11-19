@@ -15,16 +15,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: 数据丢失防护的规划过程概述
-ms.openlocfilehash: 144f07a75bc7ab2ae5cd06b04328f91f06c9a91f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c695a6a2a4bd21a147e5e81bc73fb65ab1378960
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201897"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109871"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>规划 DLP (数据丢失) 
 
-每个组织都将以不同的方式 (DLP) 数据丢失防护，因为每个组织的业务需求、目标、资源和情况对于他们来说都是独一无二的。 但是，所有成功的 DLP 实现都有一些共同的元素。 本文介绍组织在 DLP 规划中使用的最佳实践。
+每个组织都将以不同的方式 (DLP) 数据丢失防护，因为每个组织的业务需求、目标、资源和情况对于它们都是独一无二的。 但是，所有成功的 DLP 实现都有一些共同的元素。 本文介绍组织在 DLP 规划中使用的最佳实践。
 
 ## <a name="multiple-starting-points"></a>多个起点
 
@@ -32,11 +32,11 @@ ms.locfileid: "60201897"
 
 组织可以开始其 DLP 旅程：
 
-- 来自平台焦点，例如想要保护聊天Teams频道消息或Windows 10的信息
+- 来自平台焦点，例如想要保护聊天Teams频道消息或Windows 10信息
 - 了解他们希望优先保护哪些敏感信息（如医疗保健记录）并直接定义保护策略
 - 在不知道敏感信息是什么、敏感信息位于何处以及谁对敏感信息执行哪些操作的情况下，他们从发现和分类开始，采取更系统的方法
 - 他们不知道敏感信息是什么、什么位置或谁在使用它做什么，但他们直接进入定义策略，将那些结果用作起点，然后从这些位置优化其策略
-- 知道他们需要实现信息保护Microsoft 365，因此打算采用更长期、有条理的方法
+- 知道他们需要实现完整的信息Microsoft 365堆栈，因此打算采用更长期、有条理的方法
 
 这些只是客户如何处理 DLP 的一些示例，从何处开始并不重要，Microsoft 365 DLP 足够灵活，足以适应从开始到完全实现的数据丢失防护策略的各种类型的信息保护之旅。 
 
@@ -132,27 +132,27 @@ start small and always in test mode. Note that DLP policies can feed into inside
 
 ##### <a name="what-sensitive-items-does-your-organization-have-that-must-be-protected-from-leakage"></a>你的组织具有哪些必须防止泄露的敏感项目？
 
-在贵组织了解其就法规合规性需求而言的情况后，您将了解需要保护哪些敏感项目免受泄露，以及您希望如何确定策略实施优先级以保护它们。 这将帮助你选择最合适的 DLP 策略模板。 Microsoft 365预配置的 DLP 模板用于财务、医疗与健康、隐私，并且您可以使用自定义模板构建您自己的模板。 设计和创建实际 DLP 策略时，了解此问题的回答还将帮助你选择正确的 [敏感信息类型](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)。
+一旦组织了解其在法规遵从性需求方面的情况，您就会了解需要保护哪些敏感项目免受泄露，以及您希望如何确定策略实施优先级以保护它们。 这将帮助你选择最合适的 DLP 策略模板。 Microsoft 365附带针对财务、医疗与健康、隐私的预配置 DLP 模板，并且您可以使用自定义模板构建您自己的模板。 设计和创建实际 DLP 策略时，了解此问题的回答还将帮助你选择正确的 [敏感信息类型](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)。
 
 **示例** 若要快速入门，请选取 `U.K. Financial Data` 策略模板，其中包括 、 和 `Credit Card Number` `EU Debit Card Number` `SWIFT Code` 敏感信息类型。 
 
 ##### <a name="where-are-the-sensitive-items-and-what-business-processes-are-they-involved-in"></a>敏感项目及其涉及的业务流程在哪里？
 
-在业务过程中，每天都会使用包含组织敏感信息的项目。 您需要了解该敏感信息的实例可能会发生在何处以及这些实例在哪些业务流程中使用。 这将帮助你选择要应用 DLP 策略的合适位置。 Microsoft 365DLP 策略适用于位置：
+在业务过程中，每天都会使用包含组织敏感信息的项目。 您需要了解该敏感信息的实例可能会发生在何处以及这些实例在哪些业务流程中使用。 这将帮助你选择要应用 DLP 策略的合适位置。 Microsoft 365 DLP 策略应用于位置：
 
 - Exchange 电子邮件
 - SharePoint 网站
 - OneDrive 账户
 - Teams 聊天和通道消息
 - Windows 10设备
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - 本地存储库
 
-**示例** 组织的内部审核员正在跟踪一组信用卡号。 它们将其电子表格放在安全的安全SharePoint中。 一些员工会进行复制，并将其保存到工作OneDrive for Business网站，该站点会同步到Windows 10设备。 其中一个将其中 14 个人的列表粘贴到电子邮件中，并尝试将其发送给外部审核员进行审阅。 您希望将策略应用于安全安全SharePoint、所有内部审核员OneDrive for Business帐户、Windows 10设备和Exchange电子邮件。
+**示例** 组织的内部审核员正在跟踪一组信用卡号。 它们将其电子表格放在安全的 SharePoint 网站中。 一些员工会复制并将其保存到工作OneDrive for Business网站，该网站将同步到Windows 10设备。 其中一个将其中 14 个人的列表粘贴到电子邮件中，并尝试将其发送给外部审核员进行审阅。 您希望将策略应用于安全安全SharePoint、所有内部审核员OneDrive for Business帐户、Windows 10设备以及Exchange电子邮件。
 
 ##### <a name="what-is-your-organizations-tolerance-for-leakage"></a>组织对泄露的容忍度如何？
 
-贵组织中不同的组可能对敏感项目泄露的可接受级别和不可接受程度有不同的观点。 实现零泄露的实现可能会给业务造成太高的成本。
+贵组织中不同的组可能对敏感项目泄露的可接受级别和不可接受程度有不同的观点。 实现零泄露的实现可能给业务造成太高的成本。
 
 **示例** 组织的安全组以及法律团队都觉得不得与组织外部的任何人共享信用卡号，并坚持零泄露。 但是，作为定期审核信用卡号活动的一部分，内部审核员必须与第三方审核员共享一些信用卡号。 如果您的 DLP 策略禁止在组织外共享所有信用卡号，业务流程重大中断并增加了成本，以减少中断，以便内部审核员完成跟踪。 管理层领导无法接受此额外成本。 若要解决此问题，需要进行内部对话，以决定可接受的泄露级别。 一旦决定，该策略可以为特定人员提供共享信息的例外，或者可在仅审核模式下应用它。
 
@@ -167,13 +167,13 @@ start small and always in test mode. Note that DLP policies can feed into inside
 
 #### <a name="policy-deployment"></a>策略部署
 
-创建 DLP 策略时，您应考虑逐步部署策略，在完全强制执行策略之前评估其影响，并测试其有效性。 例如，您不希望新的 DLP 策略无意中阻止对数千个文档的访问或破坏现有业务流程。
+创建 DLP 策略时，您应考虑逐步部署策略，在完全强制执行策略之前评估其影响，并测试其有效性。 例如，您不希望新的 DLP 策略无意中阻止对成千上万个文档的访问或破坏现有业务流程。
   
 如果你创建的 DLP 策略具有较大的潜在影响，建议你按以下顺序执行操作：
   
 1. **在不使用策略提示的情况下启动测试模式**，然后使用 DLP 报告和任何事件报告评估影响。 您可以使用 DLP 报告查看匹配策略的次数、位置、类型和严重性。 根据结果，您可以根据需要微调策略。 在测试模式下，DLP 策略不会影响您组织内的工作人员的工作效率。 此外，使用此阶段测试您的工作流，进行 DLP 事件审阅并发出修正。
     
-2. **使用通知和** 策略策略使用技巧移动到测试模式，以便你可以开始向用户学习合规性策略，并为将要应用的策略做好准备。 通过指向组织策略页的链接，该链接在策略提示中提供有关策略的更多详细信息，这非常有用。 在此阶段，您还可以要求用户报告误报，以便可以进一步优化策略。 一旦确定策略应用程序的结果与利益干系人记住的结果一致，就进入此阶段。 
+2. **移动到使用通知和** 策略策略测试使用技巧以便你可以开始向用户学习合规性策略，并为将要应用的策略做好准备。 通过指向组织策略页的链接，在策略提示中提供有关策略的更多详细信息，这非常有用。 在此阶段，您还可以要求用户报告误报，以便可以进一步优化策略。 当您确定策略应用程序的结果与利益干系人牢记的结果一致后，移动到此阶段。 
     
 3. **开始完全强制执行策略**，以便应用规则中的操作，并保护内容。 继续监视 DLP 报告及任何事件报告或通知，确保结果是你所期望的。 
 
@@ -201,7 +201,7 @@ start small and always in test mode. Note that DLP policies can feed into inside
 |---------|---------|
 |**Contoso Bank** 是一个高度管控的行业，在许多不同位置具有许多不同类型的敏感项目。 </br> - 了解敏感信息类型是最高优先级。 </br> - 随着策略的推出，必须最大限度地减少业务中断。 </br> - 具有 IT 资源，可以雇用专家来帮助规划、设计部署 </br> - 与 Microsoft 签订顶级支持合同| - 花时间了解他们必须遵守哪些法规以及如何遵守。 </br> -花时间了解信息保护堆栈的Microsoft 365价值 </br> - 为优先项目制定敏感度标签方案并应用 </br> - 涉及业务流程所有者 </br>- 设计/代码策略，在测试模式下部署，培训用户 </br>- 重复|
 |**TailSpin Toys** 不知道它们是什么或在哪里，并且很少甚至没有资源深度。 它们广泛使用Teams、OneDrive for Business和Exchange应用。     |- 从优先位置的简单策略开始。 </br>- 监视识别哪些项 </br>- 相应地应用敏感度标签 </br>- 优化策略，培训用户       |
-|**Fabrikam** 是一家小型初创公司，希望保护其知识产权，并且必须快速移动。 他们愿意投入一些资源，但无法承受聘用外部专家。 </br>- 敏感项目全部Microsoft 365 OneDrive for Business/SharePoint </br>- 应用OneDrive for Business和SharePoint速度较慢，员工/影子 IT 使用 DropBox 和 Google 驱动器来共享/存储项目 </br>- 员工在数据保护规范方面的价值工作速度 </br>- 客户清除并购买所有 18 名员工Windows 10设备     |- 利用默认 DLP 策略Teams </br>- 对项目使用默认设置SharePoint受限 </br>- 部署阻止外部共享的策略 </br>- 将策略部署到优先位置 </br>- 将策略部署到Windows 10设备 </br>- 阻止上载到非OneDrive for Business云存储      |
+|**Fabrikam** 是一家小型初创公司，希望保护其知识产权，并且必须快速移动。 他们愿意投入一些资源，但无法承受聘用外部专家。 </br>- 敏感项目全部Microsoft 365 OneDrive for Business/SharePoint </br>- 应用OneDrive for Business和SharePoint速度较慢，员工/影子 IT 使用 DropBox 和 Google 驱动器共享/存储项目 </br>- 员工在数据保护规范方面的价值工作速度 </br>- 客户清除并购买所有 18 名员工Windows 10设备     |- 利用默认 DLP 策略Teams </br>- 对项目使用默认设置SharePoint受限 </br>- 部署阻止外部共享的策略 </br>- 将策略部署到优先位置 </br>- 将策略部署到Windows 10设备 </br>- 阻止上载到非OneDrive for Business云存储      |
 
 <!--
 

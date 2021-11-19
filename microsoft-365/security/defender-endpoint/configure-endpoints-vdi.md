@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 7475a9efa6cd8059b03e97786b2689fbfec4f5d5
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 36938380f46400b04e642d9cd8dfc4076e679a32
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962755"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111179"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>将非永久性虚拟桌面基础结构 (VDI) 设备载入Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "60962755"
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)。
 
  > [!NOTE]
-  > **永久性 VDI**  - [将永久性 VDI 计算机](configure-endpoints.md)载入 Microsoft Defender for Endpoint 的处理方式与载入物理计算机（如台式机或笔记本电脑）的方式相同。 组策略Microsoft Endpoint Manager和其他方法可用于载入永久计算机。 在安全中心中， (载入下，选择你的首选载入方法，然后 https://security.microsoft.com) 按照该类型的说明进行操作。 
+  > **永久性 VDI**  - [将永久性 VDI 计算机](configure-endpoints.md)载入 Microsoft Defender for Endpoint 的处理方式与载入物理计算机（如台式机或笔记本电脑）的方式相同。 组策略Microsoft Endpoint Manager和其他方法可用于载入永久计算机。 在Microsoft 365 Defender门户中， (下选择你的首选载入方法，然后按照 https://security.microsoft.com) 该类型的说明进行操作。 
 
 ## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>在 VDI 设备上载入 (虚拟) 基础结构
 
@@ -65,7 +65,7 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 ### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>对于 Windows 10、Windows 11、Windows Server 2019 或 Windows Server 2022
 
-1.  打开 VDI 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender包</a>：
+1.  打开 VDI 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 载入向导下载的文件。 还可以从应用门户获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender包</a>：
 
     1. 在导航窗格中，选择 **"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
 
@@ -75,9 +75,9 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
     1. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将文件从从 .zip 文件提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。 
+2. 将文件从从 .zip 文件中提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 。 
 
-2. 将文件从从 .zip 文件提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。
+2. 将文件从从 .zip 文件中提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 。
     1. 如果要为每台设备实现多个条目（每个会话一个条目），请复制 WindowsDefenderATPOnboardingScript.cmd。
     2. 如果你要针对每台设备实现单个条目，请同时复制 Onboard-NonPersistentMachine.ps1 和 WindowsDefenderATPOnboardingScript.cmd。
 

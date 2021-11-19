@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 156ddfc6a44074db23369ca20e8d7c3d4471459e
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 2718522668d4c5bc6586c0e7d867efa4e3d021ef
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963115"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109691"
 ---
 # <a name="device-discovery-overview"></a>设备发现概述
 
@@ -73,7 +73,7 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 ### <a name="basic-discovery"></a>基本发现
 
-在此模式中，终结点将被动收集网络中事件并从中提取设备信息。 基本发现使用SenseNDR.exe二进制进行被动网络数据收集，并且不会启动任何网络流量。 终结点只需从载入的设备看到的每一个网络流量中提取数据。
+在此模式中，终结点将被动收集网络中事件并从中提取设备信息。 基本发现将SenseNDR.exe二进制文件用于被动网络数据收集，并且不会启动任何网络流量。 终结点只需从载入的设备看到的每一个网络流量中提取数据。
 
 ### <a name="standard-discovery"></a>标准发现
 
@@ -120,7 +120,7 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 设备发现将适用于终结点载入设备的 Microsoft Defender 用作网络数据源，将活动属性化为未载入的设备。 这意味着，如果 Microsoft Defender for Endpoint 已载入设备与非载入设备通信，则未载入的设备上的活动可以在时间线上和通过高级搜寻 DeviceNetworkEvents 表看到。
 
-新事件是基于连接的传输控制 (TCP) ，并且适合当前的 DeviceNetworkEvents 方案。 从启用了非 Microsoft Defender for Endpoint 的设备进入启用终结点的 Microsoft Defender 设备的 TCP。
+新事件是传输控制协议 (TCP) 基于连接，并且适合当前的 DeviceNetworkEvents 方案。 从启用了非 Microsoft Defender for Endpoint 的设备进入启用终结点的 Microsoft Defender 设备的 TCP。
 
 还添加了以下操作类型：
 
@@ -137,7 +137,7 @@ DeviceNetworkEvents
 
 ## <a name="changed-behavior"></a>已更改行为
 
-以下部分列出了启用此功能后，你将在 Microsoft Defender for Endpoint 和<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">/Microsoft 365</a>安全中心中观察到的更改。
+以下部分列出了你将在 Microsoft Defender for Endpoint 中观察到的更改，Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">启用此功能</a>时在 Microsoft Defender 终结点门户中观察到的更改。
 
 1. 未载入到 Microsoft Defender for Endpoint 的设备应显示在设备清单、高级搜寻和 API 查询中。 这可能会显著增加查询结果的大小。
     1. 高级搜寻中的"DeviceInfo"和"DeviceNetworkInfo"表现在将保留发现的设备。 可以使用"OnboardingStatus"属性筛选出这些设备。

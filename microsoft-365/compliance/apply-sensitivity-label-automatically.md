@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 8d45308bc9bb4562cc82417ddb8ed762d8ac65b1
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 3d190db3b3df060075f55adbb2eeaf4cabf64284
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914280"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071434"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> 有关在 Azure Purview 中对数据进行分类和标记的详细信息，请参阅当前处于预览中的[在 Azure Purview 中自动标记内容](/azure/purview/create-sensitivity-label)。
+> 有关在 Azure Purview 中自动应用敏感度标签的信息，请参阅 [在 Azure Purview 中贴标签](/azure/purview/create-sensitivity-label)。
 
 创建敏感度标签时，你可以自动将该标签分配给内容（如果它符合你指定的条件）。
 
@@ -47,7 +47,7 @@ ms.locfileid: "60914280"
 
 - **用户编辑文档或撰写（以及答复或转发）电子邮件时的客户端标记**：使用为 Office 应用（Word、Excel、PowerPoint 和 Outlook）的自动标记配置的标签。
 
-    此方法支持向用户推荐标签，并自动应用标签。 但在这两种情况下，用户都可以决定接受还是拒绝标签，以帮助确保正确标记内容。 此客户端标记的文档延迟最少，因为即使在保存文档之前也可以应用标签。 但是，并非所有客户端应用都支持自动标记。 Azure 信息保护统一标记客户端和包含[某些 Office 版本](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)的内置标签支持此功能。
+    此方法支持向用户推荐标签，并自动应用标签。 但在这两种情况下，用户都可以决定接受还是拒绝标签，以帮助确保正确标记内容。 此客户端标记的文档延迟最少，因为即使在保存文档之前也可以应用标签。 但是，并非所有客户端应用都支持自动标记。 Azure 信息保护统一标记客户端和包含 [某些 Office 版本](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) 的内置标签支持此功能。
 
     有关配置说明，请参阅此页面上的[如何配置 Office 应用的自动标签](#how-to-configure-auto-labeling-for-office-apps)。
 
@@ -78,7 +78,7 @@ ms.locfileid: "60914280"
     - 如果存在匹配项，则具有 IRM 加密但没有标签的电子邮件将通过自动标记替换为具有加密设置的标签。
     - 与自动标记条件匹配时，将标记传入电子邮件：
     - 如果已将标签配置为[加密](encryption-sensitivity-labels.md)，则不会应用该加密。
-    - 如果标签配置为应用[动态标记](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)，请注意，这可能会影响组织外部人员的姓名。
+    - 如果标签配置为应用 [动态标记](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)，请注意，该配置可能会影响组织外部人员的姓名。
     - 如果标签应用了加密，则[权限管理颁发者和权限管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)是发送电子邮件的人。 目前无法为自动加密的所有传入电子邮件设置权限管理器所有者。
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>将 Office 应用的自动标记与自动标记策略进行比较

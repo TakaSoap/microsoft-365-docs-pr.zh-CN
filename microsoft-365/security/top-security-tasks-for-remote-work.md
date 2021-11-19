@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: 保护你的业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。
-ms.openlocfilehash: 91099106cd9c90b415382619ee9747b02033ff18
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: bc45df84ed1f8daa3faf5f042b7f3ca5c64c5625
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962531"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110639"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>支持在家工作的安全团队的 12 大任务
 
@@ -32,12 +32,12 @@ ms.locfileid: "60962531"
 
 如果你是使用 Microsoft 业务计划之一的中小型组织，请改为参阅以下资源：
 
-- [保护业务计划的 Office 365 Microsoft 365的十大方法](../admin/security-and-compliance/secure-your-business-data.md)
+- [保护业务计划的Office 365 Microsoft 365的十大方法](../admin/security-and-compliance/secure-your-business-data.md)
 - [Microsoft 365活动 (](../campaigns/index.md)包括建议的安全配置Microsoft 365商业) 
 
 对于使用企业计划的客户，Microsoft 建议你完成下表中列出的适用于你的服务计划的任务。 如果要合并订阅，Microsoft 365购买企业版计划，请注意以下事项：
 
-- Microsoft 365 E3包括 企业移动性 + 安全性 (EMS) E3 和 Azure AD P1
+- Microsoft 365 E3包括企业移动性 + 安全性 (EMS) E3 和 Azure AD P1
 - Microsoft 365 E5包括 EMS E5 和 Azure AD P2
 
 ****
@@ -54,11 +54,11 @@ ms.locfileid: "60962531"
 |8 |[将电脑注册到设备管理中，并需要兼容电脑](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![包含。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[针对云连接优化网络](#9-optimize-your-network-for-cloud-connectivity)|![包含。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10 |[培训用户](#10-train-users)|![包含。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11|[Microsoft Cloud App Security 入门](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11|[Microsoft Defender 云应用入门](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[监视威胁并采取措施](#12-monitor-for-threats-and-take-action)|![包含。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
-开始之前，请在安全Microsoft 365[中](./defender/microsoft-secure-score.md)检查Microsoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">安全分数</a>。 在集中式仪表板中，你可以监视和提高Microsoft 365标识、数据、应用、设备和基础结构的安全性。 你可以获得配置建议安全功能、执行安全相关任务 (如查看报告) ，或者使用第三方应用程序或软件解决建议。 本文中推荐的任务将提高分数。
+在开始之前，请查看Microsoft 365[门户](./defender/microsoft-secure-score.md)中的安全Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">分数</a>。 在集中式仪表板中，你可以监视和提高你的Microsoft 365、数据、应用、设备和基础结构的安全性。 你可以获得配置建议安全功能、执行与安全相关的任务 (如查看报告) ，或者使用第三方应用程序或软件解决建议。 本文中推荐的任务将提高分数。
 
 ![Microsoft 安全分数的屏幕截图。](../media/secure-score.png)
 
@@ -86,7 +86,7 @@ ms.locfileid: "60962531"
 - 反恶意软件保护
 - 防止恶意 URL 和文件
 - 防钓鱼保护
-- 反垃圾邮件防护
+- 反垃圾邮件保护
 
 有关[可以用作Office 365](office-365-security/protect-against-threats.md)的指导，请参阅防止威胁。
 
@@ -122,7 +122,7 @@ Microsoft Defender for Office 365：
 
 ## <a name="5-turn-on-microsoft-365-defender"></a>5：打开Microsoft 365 Defender
 
-现在，你已配置 Microsoft Defender for Office 365 和 Microsoft Defender for Identity，可以在一个仪表板中查看这些功能的组合信号。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)跨工作负载将警报、事件、自动调查和响应以及高级搜寻汇集在一起 (Microsoft Defender for Identity、Defender for Office 365、Microsoft Defender for Endpoint 和 Microsoft Cloud App Security) 集成到一个窗格中，位置为<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365安全中心 。</a>
+现在，你已配置 Microsoft Defender for Office 365 和 Microsoft Defender for Identity，可以在一个仪表板中查看这些功能的组合信号。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)跨工作负载将警报、事件、自动调查和响应以及高级搜寻汇集在一起 (Microsoft Defender for Identity、Defender for Office 365、Microsoft Defender for Endpoint 和 Microsoft Cloud App Security) <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">集成到Microsoft 365 Defender门户</a>。
 
 ![MTP 仪表板图示。](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
@@ -145,14 +145,14 @@ Microsoft Intune移动应用程序管理 (MAM) 允许你管理和保护电话和
 
 若要配置移动应用保护，请使用常见标识和设备访问策略 [中的指南](./office-365-security/identity-access-policies.md)：
 
- 1. 使用 [应用应用数据保护策略指南](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) 创建适用于 iOS 和 Android 的策略。 建议为 (保护) 级别 2。
+ 1. 使用 [应用应用数据保护策略指南](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) 创建适用于 iOS 和 Android 的策略。 2 级 (增强) 建议用于基础保护。
  2. 创建条件访问规则，以 [要求批准的应用和应用保护](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)。
 
 ## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7：为来宾配置 MFA 和条件访问，包括 Intune 移动应用保护
 
-接下来，让我们确保你可以继续协作并与来宾合作。 如果你使用的是 Microsoft 365 E3计划，并且为所有用户实现了 MFA，则你已设置。
+接下来，让我们确保你可以继续协作并与来宾合作。 如果你使用 Microsoft 365 E3计划，并且为所有用户实现了 MFA，则你已设置。
 
-如果你使用的是 Microsoft 365 E5 计划，并且正在利用 Azure Identity Protection 进行基于风险的 MFA，则需要对 (做一些调整，因为 Azure AD Identity protection 不会扩展到来宾) ：
+如果你使用的是 Microsoft 365 E5 计划，并且正在利用 Azure Identity Protection 进行基于风险的 MFA，则需要对 (做一些调整，因为 Azure AD 标识保护不会扩展到来宾) ：
 
 - 创建新的条件访问规则，要求始终对来宾和外部用户执行 MFA。
 - 更新基于风险的 MFA 条件访问规则以排除来宾和外部用户。
@@ -173,11 +173,11 @@ Microsoft Intune移动应用程序管理 (MAM) 允许你管理和保护电话和
 还可以充分利用以下教程：
 
 - [使用 Autopilot 在 Intune Windows注册设备](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
-- [使用 Apple Business Manager 中的 Apple 企业设备注册功能 (ABM) Intune 中注册 iOS/iPadOS 设备](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
+- [使用 Apple Business Manager (ABM) 中的 Apple 公司设备注册功能在 Intune 中注册 iOS/iPadOS 设备](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
 注册设备后，使用通用标识和设备访问 [策略中的指南](./office-365-security/identity-access-policies.md) 创建这些策略：
 
-- [定义设备合规性策略](./office-365-security/identity-access-policies.md#define-device-compliance-policies)— 建议用于Windows 10防病毒保护。 如果你已Microsoft 365 E5，请使用 Microsoft Defender for Endpoint 监视员工设备的运行状况。 确保其他操作系统的合规性策略包括防病毒保护和终点保护软件。
+- [定义设备合规性策略](./office-365-security/identity-access-policies.md#define-device-compliance-policies)— 建议用于Windows 10防病毒保护。 如果已Microsoft 365 E5，请使用 Microsoft Defender for Endpoint 监视员工设备的运行状况。 确保其他操作系统的合规性策略包括防病毒保护和终点保护软件。
 - [需要合规电脑](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)— 这是强制实施设备合规性策略Azure AD条件访问规则。
 
 只有一个组织可以管理设备，因此请确保将来宾帐户从 Azure AD 条件访问规则中排除。 如果不从要求设备符合性的策略中排除来宾和外部用户，这些策略将阻止这些用户。 有关详细信息，请参阅 [更新常用策略以允许和保护来宾和外部访问](./office-365-security/identity-access-policies-guest-access.md)。
@@ -188,7 +188,7 @@ Microsoft Intune移动应用程序管理 (MAM) 允许你管理和保护电话和
 
 网络元素（如 VPN 主控器、中央网络出口设备 (如代理和数据丢失防护设备) 、中央 Internet 带宽、回程 MPLS 电路、NAT 功能等）突然因使用它们的整个业务负载而变得极大压力。 最终结果是性能和工作效率不佳，加上适应在家工作的用户的用户体验不佳。
 
-过去通过公司网络路由回流量提供的一些保护由用户正在访问的云应用提供。 如果你已到达本文中的此步骤，你已针对服务Microsoft 365实现一组复杂的云安全控件。 借助这些控件，你可以准备好将远程用户的流量直接路由到Office 365。 如果仍然需要 VPN 链接才能访问其他应用程序，可以通过实现拆分隧道大大提高性能和用户体验。 在组织中达成一致后，由协调良好的网络团队在一天内完成此操作。
+过去通过公司网络路由回流量提供的一些保护由用户正在访问的云应用提供。 如果你已到达本文中的这一步，则你已经为基于云的服务和数据Microsoft 365一套复杂的云安全控件。 借助这些控件，你可以准备好将远程用户的流量直接路由到Office 365。 如果仍然需要 VPN 链接才能访问其他应用程序，可以通过实现拆分隧道大大提高性能和用户体验。 在组织中达成一致后，由协调良好的网络团队在一天内完成此操作。
 
 有关详细信息，请参阅 Docs 上的以下资源：
 
@@ -206,7 +206,7 @@ Microsoft Intune移动应用程序管理 (MAM) 允许你管理和保护电话和
 
 美国国家/地区学校网络安全 [宣传活动](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) 手册提供了有关在组织中建立强大的安全意识文化的指导，包括培训用户识别网络钓鱼攻击。
 
-Microsoft 365提供了以下资源来帮助通知贵组织的用户：
+Microsoft 365提供了以下资源来帮助通知组织的用户：
 
 ****
 
@@ -221,7 +221,7 @@ Microsoft 365提供了以下资源来帮助通知贵组织的用户：
 
 - 使用强密码
 - 保护设备
-- 为非托管设备Windows 10 Mac 电脑 (安全功能) 
+- 为非托管设备Windows 10 Mac (启用安全功能) 
 
 Microsoft 还建议用户采取以下文章中建议的操作来保护其个人电子邮件帐户：
 
@@ -229,27 +229,27 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 - [使用 2 步验证保护 Gmail 帐户](https://go.microsoft.com/fwlink/p/?linkid=2015688)
 
-## <a name="11-get-started-with-microsoft-cloud-app-security"></a>11：开始Microsoft Cloud App Security
+## <a name="11-get-started-with-microsoft-defender-for-cloud-apps"></a>11：Microsoft Defender for Cloud Apps 入门
 
-[Microsoft Cloud App Security](/cloud-app-security)提供丰富的可见性、对数据传输的控制以及复杂的分析，以识别和防御所有云服务中的网络威胁。 开始使用异常检测云应用安全将自动启用异常检测策略，但 云应用安全 的初始学习期为 7 天，在此期间并非所有异常检测警报都会引发。
+[Microsoft Defender for Cloud Apps](/cloud-app-security) 提供了丰富的可见性、对数据旅行的控制以及复杂的分析，以识别和防御所有云服务中的网络威胁。 开始使用适用于云应用的 Defender 后，将自动启用异常检测策略，但云应用的 Defender 初始学习期为七天，在此期间并非所有异常检测警报都会引发。
 
-现在云应用安全入门。 稍后，您可以设置更复杂的监视和控件。
+现在开始使用 Defender for Cloud Apps。 稍后，您可以设置更复杂的监视和控件。
 
-- [快速入门：快速入门云应用安全](/cloud-app-security/getting-started-with-cloud-app-security)
+- [快速入门：开始使用 Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security)
 - [获取即时行为分析和异常检测](/cloud-app-security/anomaly-detection-policy)
-- [详细了解Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+- [详细了解 Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 - [查看新特性和功能](/cloud-app-security/release-notes)
 - [请参阅基本设置说明](/cloud-app-security/general-setup)
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12：监视威胁并采取措施
 
-Microsoft 365包括多种监视状态和采取适当操作的方法。 最佳起点是安全<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a>中心，你可以在这里查看组织的[Microsoft 安全](./defender/microsoft-secure-score.md)分数以及任何需要你注意的警报或实体。
+Microsoft 365包括多种监视状态和采取适当操作的方法。 最佳起点是Microsoft 365 Defender门户，<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>可在其中查看组织的[Microsoft 安全](./defender/microsoft-secure-score.md)分数以及任何需要你注意的警报或实体。
 
 - [开始使用 Microsoft 365 Defender 门户](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 - [请参阅安全门户Microsoft 365](./defender/portals.md)
 
 ## <a name="next-steps"></a>后续步骤
 
-恭喜！ 您快速实施了一些最重要的安全保护，并且您的组织更加安全。 现在，你可以进一步使用威胁防护功能 (包括 Microsoft Defender for Endpoint) 、数据分类和保护功能，以及保护管理帐户。 有关更深入、有条理的安全建议集Microsoft 365，请参阅 Microsoft 365 Security [for Business Decision Makers (BDM) ](Microsoft-365-security-for-bdm.md)。
+恭喜！ 您快速实施了一些最重要的安全保护，并且您的组织更加安全。 现在，你可以进一步使用威胁防护功能 (包括 Microsoft Defender for Endpoint) 、数据分类和保护功能，以及保护管理帐户。 有关更深入、系统化的安全建议集Microsoft 365，请参阅 Microsoft 365 [Security for Business Decision Makers (BDM) ](Microsoft-365-security-for-bdm.md)。
 
-另请访问 Microsoft 的新安全[中心，docs.microsoft.com/security。](/security)
+此外，请访问 Microsoft 的新 Defender for Cloud on [docs.microsoft.com/security。](/security)
