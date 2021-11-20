@@ -4,11 +4,11 @@
   items:
     - name: 入门
       items:
+        - name: Microsoft 365 零信任部署计划
+          href: microsoft-365-zero-trust.md
         - name: 支持在家工作的首要任务
           href: top-security-tasks-for-remote-work.md
-        - name: 适用于 BDM 的 Microsoft 365 安全中心
-          href: Microsoft-365-security-for-bdm.md
-    - name: 标识和设备访问配置
+    - name: 零信任标识和设备访问配置
       items:
         - name: 概述
           href: ./office-365-security/microsoft-365-policies-configurations.md
@@ -20,11 +20,11 @@
           href: ./office-365-security/identity-access-policies-guest-access.md
         - name: 建议的 Teams 访问策略
           href: ./office-365-security/teams-access-policies.md
-        - name: 建议的 Exchange Online 访问策略
+        - name: 建议的 Exchange 访问策略
           href: ./office-365-security/secure-email-recommended-policies.md
-        - name: 建议的 SharePoint Online 访问策略
+        - name: 推荐的 SharePoint 访问策略
           href: ./office-365-security/sharepoint-file-access-policies.md
-        - name: 建议的适用于 SaaS 应用的 Microsoft Defender for Cloud Apps 策略
+        - name: 建议的适用于 SaaS 应用的 Defender for Cloud Apps 策略
           href: ./office-365-security/mcas-saas-access-policies.md
         - name: 连续访问评估
           href: ./office-365-security/microsoft-365-continuous-access-evaluation.md

@@ -619,7 +619,7 @@
           href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
     - name: 使用集中式部署 PowerShell 管理加载项
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
-- name: Windows 10 和 Office 365 部署实验室工具包
+- name: Windows 和 Office 365 部署实验室工具包
   href: modern-desktop-deployment-and-management-lab.md
 - name: 测试实验室指南
   href: m365-enterprise-test-lab-guides.md

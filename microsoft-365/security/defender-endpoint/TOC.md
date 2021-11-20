@@ -70,7 +70,7 @@
 
 
 
-#### [与 Microsoft Defender for Cloud](azure-server-integration.md) 集成
+#### [与 Microsoft Defender for Cloud 集成](azure-server-integration.md)
 
 #### [无需访问 Internet 载入设备](onboard-offline-machines.md)
 #### [在新载入的设备上运行检测测试](run-detection-test.md)
@@ -282,7 +282,6 @@
 ### 下一代保护
 #### [下一代保护概述](next-generation-protection.md)
 ##### [Microsoft Defender 防病毒软件概述](microsoft-defender-antivirus-windows.md)
-##### [Windows Server 上的 Microsoft Defender 防病毒软件](microsoft-defender-antivirus-on-windows-server.md)
 ##### [更好地结合：Microsoft Defender 防病毒软件和 Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [一起更得心防万一：Microsoft Defender 防病毒软件和 Office 365](office-365-microsoft-defender-antivirus.md)
 #### [评估 Microsoft Defender 防病毒软件](evaluate-microsoft-defender-antivirus.md)

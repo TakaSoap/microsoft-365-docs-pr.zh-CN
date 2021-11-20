@@ -19,15 +19,16 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
+- adminvideo
 search.appverid: MET150
 description: 使用现有付款方式，或在 Microsoft 365 管理中心添加新的付款方式，购买 Microsoft 的业务产品或服务。
 ms.date: 04/02/2021
-ms.openlocfilehash: 1008beb9caf42b68e741406bef3be9efbe2fa2de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e155b483082ceee938bf5861e84beeb0a245d55
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190955"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128624"
 ---
 # <a name="manage-payment-methods"></a>管理支付方式
 
@@ -45,9 +46,15 @@ ms.locfileid: "60190955"
 >
 > 必须使用与租户相同的国家/地区发布的付款方式。
 
+## <a name="watch-update-your-payment-method"></a>观看：更新付款方式
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
+
+可以轻松更新 Microsoft 365 商业版订阅的付款方式。 可以更改详细信息，例如所使用的信用卡、姓名或地址。
+
 ## <a name="before-you-begin"></a>开始之前
 
-你必须是全局管理员或帐单管理员才能执行本文中的任务。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+你必须是全局管理员或帐单管理员才能执行本文中的任务。有关详细信息，请参阅“[关于管理员角色](../../admin/add-users/about-admin-roles.md)”。
 
 ## <a name="add-a-payment-method"></a>添加付款方式
 

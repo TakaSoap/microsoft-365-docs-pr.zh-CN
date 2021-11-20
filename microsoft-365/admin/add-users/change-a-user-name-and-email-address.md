@@ -18,18 +18,19 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解 Microsoft 365 全局管理员可以如何更改用户的电子邮件地址以及在名称更改时更改显示名称。 '
-ms.openlocfilehash: f3400947130d84ebe7831676ec3c1d31e9ab1bd3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 52ec631859411eef1d64fe44c85c27e2466d86c2
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161866"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128385"
 ---
 # <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
@@ -39,7 +40,14 @@ ms.locfileid: "60161866"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc]
 
+1. 在 Microsoft 365 管理中心中，选择“**用户**” > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">“**活动用户**”</a>。
+1. 从活动用户列表中选择用户。
+1. 选择“**管理联系人信息**”。
+1. 更改显示名称，然后选择“**保存更改**”。
+
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
+
+## <a name="before-you-begin"></a>准备工作
 
 必须是 [全局管理员](about-admin-roles.md) 才能完成这些步骤。
 
@@ -53,7 +61,7 @@ ms.locfileid: "60161866"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -125,7 +133,7 @@ ms.locfileid: "60161866"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 

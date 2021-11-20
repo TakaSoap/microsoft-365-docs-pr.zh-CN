@@ -18,12 +18,12 @@ ms.collection:
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC) 以验证从你的组织发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f80d4521f8d5faf3b126db93b9ad9d3397a12d73
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 7b166a481bf503ce2d46e79f2cb674861935f4ff
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064291"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61118343"
 ---
 # <a name="use-dmarc-to-validate-email"></a>使用 DMARC 验证电子邮件
 
@@ -43,11 +43,11 @@ ms.locfileid: "61064291"
 
  电子邮件可能包含多个发送方、发件人或地址。这些地址用于不同用途。例如，以下列地址为例：
 
-- **“邮件发件人”地址**：标识发件人，并指定在传送邮件过程中出现任何问题（例如未送达通知）时发送返回通知的地址。该地址出现在电子邮件的信封部分，而电子邮件应用程序通常不显示此地址。有时称其为“5321.MailFrom 地址”或“反向路径地址”。
+- **“邮件发件人”地址**：标识发件人，并指定在传送邮件过程中出现任何问题（例如未送达通知）时发送返回通知的地址。 该地址出现在电子邮件的信封部分，而电子邮件应用程序不显示此地址。 有时称其为" 5321.MailFrom 地址"或"反向路径地址"。
 
 - **“发件人”地址**：由邮件应用程序显示为发件人地址的地址。此地址标识电子邮件的作者。即，负责撰写邮件的个人或系统的邮箱。有时称其为“5322.From 地址”。
 
-SPF 使用 DNS TXT 记录为给定的域提供获得授权的发送 IP 地址的列表。通常情况下，仅会针对 5321.MailFrom 地址执行 SPF 检查。这意味着，使用 SPF 本身时 5322.From 地址未通过身份验证。这样允许用户接收通过 SPF 检查但具有伪造的 5322.From 发件人地址的邮件。以下面的 SMTP 脚本为例：
+SPF 使用 DNS TXT 记录为给定的域提供获得授权的发送 IP 地址的列表。 通常情况下，仅会针对 5321.MailFrom 地址执行 SPF 检查。 这意味着，使用 SPF 本身时 5322.From 地址未通过身份验证。 这样允许用户接收通过 SPF 检查但具有伪造的 5322.From 发件人地址的邮件。 以下面的 SMTP 脚本为例：
 
 ```console
 S: Helo woodgrovebank.com
@@ -61,7 +61,7 @@ S:
 S: Greetings User,
 S:
 S: We need to verify your banking details.
-S: Please click the following link to verify that we have the right information for your account.
+S: Please click the following link to verify that Microsoft has the right information for your account.
 S:
 S: https://short.url/woodgrovebank/updateaccount/12-121.aspx
 S:
@@ -76,7 +76,7 @@ S: .
 
 - 发件人地址 (5322.From)：security@woodgrovebank.com
 
-如果你配置了 SPF，那么接收服务器针对从 phish@phishing.contoso.com 地址发送的邮件执行检查。如果该邮件来自 phishing.contoso.com 域的有效源，则会通过 SPF 检查。由于电子邮件客户端仅显示发件人地址，用户可以看到此邮件来自 security@woodgrovebank.com。单独使用 SPF，永远不会验证 woodgrovebank.com 的有效性。
+如果你配置了 SPF，那么接收服务器针对从 phish@phishing.contoso.com 地址发送的邮件执行检查。 如果该邮件来自 phishing.contoso.com 域的有效源，则会通过 SPF 检查。 由于电子邮件客户端仅显示发件人地址，用户可以看到此邮件来自 security@woodgrovebank.com。 单独使用 SPF，永远不会验证 woodgrovebank.com 的有效性。
 
 使用 DMARC 时，接收服务器还会针对发件人地址执行检查。在上面的示例中，如果正好存在 woodgrovebank.com 的 DMARC TXT 记录，那么针对发件人地址的检查会失败。
 
@@ -94,7 +94,7 @@ _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=
 
 ## <a name="set-up-dmarc-for-inbound-mail"></a>为入站邮件设置 DMARC
 
-你不必为在 Microsoft 365 中收到的邮件设置 DMARC。我们已经为你处理好了一切。如果你想了解未通过我们的 DMARC 检查时如何处理邮件，请参阅 [Microsoft 365 如何处理未通过 DMARC 检查的入站电子邮件](#how-microsoft-365-handles-inbound-email-that-fails-dmarc)。
+你不必为在 Microsoft 365 中收到的邮件设置 DMARC。 这一切都由你负责。 如果想了解未通过我们的 DMARC 检查时如何处理邮件，请参阅 [Microsoft 365 如何处理未通过 DMARC 检查的入站电子邮件](#how-microsoft-365-handles-inbound-email-that-fails-dmarc)。
 
 ## <a name="set-up-dmarc-for-outbound-mail-from-microsoft-365"></a>从 Microsoft 365 中为出站邮件设置 DMARC
 
@@ -112,7 +112,7 @@ _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=
 
 ### <a name="step-1-identify-valid-sources-of-mail-for-your-domain"></a>步骤 1：为域标识邮件的有效源
 
-如果你已经设置了 SPF，那么你已经通过了本练习。但是，对于 DMARC，还有其他一些注意事项。为域标识邮件的源时需要回答以下两个问题：
+如果你已经设置了 SPF，那么你已经通过了本练习。 但是，对于 DMARC，还有其他一些注意事项。 为域标识邮件的源时需要回答以下两个问题:
 
 - 哪些 IP 地址从我的域发送邮件？
 
@@ -188,7 +188,8 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 在此示例 DMARC TXT 记录中：`dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"`，可以看到由第三方公司 Agari 处理过的 *rua* 地址。 此地址用于发送“聚合反馈”用于分析，用于生成报告。
 
 > [!TIP]
-> 如需查看更多可提供 Microsoft 365 的 DMARC 报告的第三方供应商，请访问 [MISA 名录](https://www.microsoft.com/misapartnercatalog?IntegratedProducts=DMARCReportingforOffice365)。 有关 DMARC“rua”地址的详细信息，请参阅 [RFC 74890](https://datatracker.ietf.org/doc/html/rfc7489)。
+> 访问 [MISA 目录](https://www.microsoft.com/misapartnercatalog)，查看更多可提供 Microsoft 365 的 DMARC 报告的第三方供应商。 有关 DMARC ‘rua’ 地址的详细信息，请参阅 [IETF.org 的‘基于域的邮件身份验证、报告和一致性 (DMARC)’](https://datatracker.ietf.org/doc/html/rfc7489)。
+
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>在 Microsoft 365 中实现 DMARC 的最佳做法
 
@@ -198,7 +199,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
     从请求 DMARC 接收器向你发送关于使用该域时看到的消息的统计信息的子域或域的简单的监视模式记录开始。监视模式记录是将策略设置为无 (p=none) 的 DMARC TXT 记录。许多公司发布了 p=none 的 DMARC TXT 记录，因为他们不确定通过发布更严格的 DMARC 策略可能会丢失多少电子邮件。
 
-    即使在邮件传递基础结构中实现 SPF 或 DKIM 之前，你也可以这样做。但是，你将无法使用 DMARC 有效地隔离或拒绝邮件，直到你也实现了 SPF 和 DKIM 之后才可以。当引入 SPF 和 DKIM 时，通过 DMARC 生成的报告将提供通过这些检查和未通过检查的邮件的数量和源。你可以轻松地查看这些邮件占用了多少合法通信量，并解决所有问题。你还将开始看到即将发送的欺诈邮件的数量以及发送地点。
+    即使在邮件传递基础结构中实现 SPF 或 DKIM 之前，你也可以这样做。 但是，你将无法使用 DMARC 有效地隔离或拒绝邮件，直到你也实现了 SPF 和 DKIM 之后才可以。 当引入 SPF 和 DKIM 时，通过 DMARC 生成的报告将提供通过这些检查和未通过检查的邮件的数量和源。 你可以轻松地查看这些邮件占用了多少合法通信量，并解决所有问题。 还将开始看到即将发送的欺诈邮件的数量以及发送地点。
 
 2. 请求外部邮件系统隔离未通过 DMARC 的邮件
 
@@ -210,7 +211,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
 4. 如何设置子域的 DMARC？
 
-   DMARC通过在DNS中以TXT记录的形式发布策略来实现，并且是分层的（例如，为contoso.com发布的策略将适用于sub.domain.contonos.com，除非为子域明确定义了不同的策略）。 此功能很有用，因为组织可以指定较少数量的高级 DMARC 记录以扩大覆盖面。 如果不想让子域继承顶级域的 DMARC 记录，应注意配置明确的子域 DMARC 记录。
+   DMARC 通过在 DNS 中以 TXT 记录的形式发布策略来实现，并且是分层的 (例如，为 contoso.com 发布的策略将适用于 sub.domain.contonos.com，除非为子域明确定义了不同的策略)。 此功能很有用，因为组织可以指定较少数量的高级 DMARC 记录以扩大覆盖面。 如果不想让子域继承顶级域的 DMARC 记录，应注意配置明确的子域 DMARC 记录。
 
    此外，当子域不应发送电子邮件时，还可通过添加 `sp=reject` 值来添加 DMARC 的通配符类型策略。例如：
 
@@ -255,7 +256,7 @@ contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```
 
-由于它是主 MX，全部或大部分电子邮件将首先被路由到 mail.contoso.com，然后将邮件路由到 EOP。 在某些情况下，你甚至不可能将 EOP 列为 MX 记录，并直接挂接连接器来路由你的电子邮件。 EOP 不必是执行 DMARC 验证的第一个条目。 它只是确保验证，因为我们不能确定所有本地/非 O365 服务器都将执行 DMARC 检查。  设置 DMARC TXT 记录时，可以对客户的域（而不是服务器）强制执行 DMARC，但是实际上强制执行取决于接收服务器。  如果将 EOP 设置为接收服务器，那么 EOP 强制执行 DMARC。
+由于它是主 MX，全部或大部分电子邮件将首先被路由到 mail.contoso.com，然后将邮件路由到 EOP。 在某些情况下，你甚至不可能将 EOP 列为 MX 记录，并直接挂接连接器来路由你的电子邮件。 EOP 不必是执行 DMARC 验证的第一个条目。 它只是确保验证，以确定所有本地/非 O365 服务器都将执行 DMARC 检查。  设置 DMARC TXT 记录时，可以对客户的域（而不是服务器）强制执行 DMARC，但是实际上强制执行取决于接收服务器。  如果将 EOP 设置为接收服务器，那么 EOP 强制执行 DMARC。
 
 :::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="DMARC 的疑难解答图形，由 Daniel Mande 提供" lightbox="../../media/Tp_DMARCTroublehoot.png":::
 
