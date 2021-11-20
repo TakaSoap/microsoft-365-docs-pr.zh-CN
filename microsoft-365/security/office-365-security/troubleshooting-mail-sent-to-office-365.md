@@ -19,12 +19,12 @@ ms.custom:
 description: 本文提供有关将电子邮件发送到收件箱的问题的疑难解答信息，Microsoft 365 &客户进行批量邮件Microsoft 365最佳实践。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e51173e589bac06fb4ca1ba92657137e77ade92
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f5fe128989b66f110899e6af08180e830319b739
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203803"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121395"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>有关发送到 Microsoft 365 的邮件的疑难解答
 
@@ -34,11 +34,11 @@ ms.locfileid: "60203803"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
-本文提供了发件人在尝试向 Microsoft 365 中的收件箱发送电子邮件时遇到问题的发件人的疑难解答信息，以及批量发邮件给客户的最佳实践。
+本文提供有关发件人在尝试向 Microsoft 365 中的收件箱发送电子邮件时遇到问题的发件人的疑难解答信息，以及批量发邮件给客户的最佳实践。
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>您是否正在管理您的 IP 和域的发送信誉？
 
-EOP 筛选技术旨在提供反垃圾邮件保护，Microsoft 365其他 Microsoft 产品（如 Exchange Server）。 我们还利用 SPF、DKIM、DMARC 和电子邮件身份验证技术来帮助解决欺骗和网络钓鱼的问题，通过验证发送电子邮件的域是否被授权执行此操作来帮助解决。 EOP 筛选受到许多因素的影响，如发送 IP、域、身份验证、列表精度、投诉率和内容等相关因素。 其中，拉低发件人信誉和传送电子邮件能力的关键因素之一是他们的垃圾邮件投诉率。
+EOP 筛选技术旨在为电子邮件和其他 Microsoft 产品Microsoft 365反垃圾邮件Exchange Server。 我们还使用 SPF、DKIM 和 DMARC;电子邮件身份验证技术，通过验证发送电子邮件的域是否有权这样做，帮助解决欺骗和网络钓鱼问题。 EOP 筛选受许多与发送 IP、域、身份验证、列表准确性、投诉率、内容等相关的因素影响。 其中，拉低发件人信誉和传送电子邮件能力的关键因素之一是他们的垃圾邮件投诉率。
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>您是否正从新的 IP 地址发送电子邮件？
 
@@ -62,7 +62,7 @@ EOP 筛选技术旨在提供反垃圾邮件保护，Microsoft 365其他 Microsof
 
 出现一些传送问题是因为发件人的 IP 地址被 Microsoft 阻止或用户账户由于以前的垃圾邮件活动被标识为已禁止的发件人。如果您认为您错误地收到了 NDR，首先按照在 NDR 邮件中解决此问题的说明进行操作。
 
-有关你收到的错误的详细信息，请参阅电子邮件未送达报告中的错误代码列表[Exchange Online。](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
+有关收到的错误的详细信息，请参阅电子邮件未送达报告中的错误代码列表[Exchange Online。](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
  例如，如果您收到以下 NDR，则表明发送 IP 地址已被 Microsoft 阻止：
 
@@ -88,7 +88,7 @@ EOP 筛选技术旨在提供反垃圾邮件保护，Microsoft 365其他 Microsof
 
 ## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>向用户发送批量电子邮件Microsoft 365最佳实践
 
-如果你经常向用户发起批量电子邮件Microsoft 365，并且希望确保你的电子邮件以安全且及时的方式到达，请按照本部分中的提示操作。
+如果你经常向用户进行批量电子邮件Microsoft 365，并且希望确保你的电子邮件以安全且及时的方式到达，请按照本部分中的提示操作。
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>确保"发送者"名称反映发送邮件的人
 
@@ -120,7 +120,7 @@ EOP 筛选技术旨在提供反垃圾邮件保护，Microsoft 365其他 Microsof
 
 在注册过程中，如果"是，请向我发送您的新闻稿"或"是，请向我发送您的优惠"复选框在默认情况下处于选中状态，没有仔细查看的用户可能会无意中注册他们并不想接收的营销邮件或新闻稿。
 
- 我们建议使用双重加入方案来代替，这意味着营销电子邮件或新闻稿的复选框在默认状态下处于未选中的状态。此外，用户一旦提交了注册表，就会收到一封带有 URL 的验证电子邮件，允许他们确认是否决定接收营销电子邮件。
+ Microsoft 建议改为选择双重加入选项，这意味着营销电子邮件或新闻稿的复选框在默认情况下未选中。 此外，用户一旦提交了注册表，就会收到一封带有 URL 的验证电子邮件，允许他们确认是否决定接收营销电子邮件。
 
  这将有助于确保只有想要接收营销电子邮件的用户注册电子邮件，随后清除任何可疑的电子邮件营销活动的发送公司。
 
@@ -140,7 +140,7 @@ EOP 筛选技术旨在提供反垃圾邮件保护，Microsoft 365其他 Microsof
 
   `options.bulkmailer.com`
 
-  错误 (所有域是不同的) ：
+  所有 (域不同时错误) ：
 
   `unsubscribe.bulkmailer.com`
 

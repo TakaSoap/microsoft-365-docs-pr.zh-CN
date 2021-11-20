@@ -19,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 610b2959794bfa10faa5eeafb355c9ecb6e4676f
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 090f5a81c624b22298c257fae890691c8e5151ee
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110399"
+ms.locfileid: "61121174"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>允许来宾访问和 B2B 外部用户访问的策略
 
-本文讨论调整推荐的设备和标识访问策略，以允许具有 Azure Active Directory (Azure AD) 企业到企业 (B2B) 帐户的来宾和外部用户访问。 本指南基于通用[标识和设备访问策略。](identity-access-policies.md)
+本文讨论调整推荐的零信任标识和设备访问策略，以允许具有 Azure Active Directory (Azure AD) 企业到企业 (B2B) 帐户的来宾和外部用户访问。 本指南基于通用[标识和设备访问策略。](identity-access-policies.md)
 
-这些建议旨在应用于保护 **的基线** 层。 但是，也可以根据敏感和高度管控保护的特定需求 **调整建议**。 
+这些建议旨在应用于保护 **的起点** 层。 但是，也可以根据企业的特定需要和专门的安全 **保护调整****建议**。
 
 如果为 B2B 帐户提供一个向 Azure AD 进行身份验证的路径，这些帐户将无法访问整个环境。 B2B 用户及其帐户具有通过条件访问策略与它们共享的服务和资源（如文件）的访问权限。
 
@@ -38,15 +38,14 @@ ms.locfileid: "61110399"
 
 此图显示了在 B2B 来宾和外部用户访问的常见标识和设备访问策略中添加或更新的策略。
 
-[![用于保护来宾访问的策略更新摘要。](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="用于保护来宾访问的策略更新摘要。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
 
 下表列出了创建和更新所需的策略。 常见策略链接到常见标识和设备访问策略文章中的关联 [配置说明](identity-access-policies.md) 。
 
 |保护级别|策略|更多信息|
 |---|---|---|
-|**Baseline**|[始终要求来宾和外部用户使用 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|创建新策略并配置： <ul><li>对于 **分配>用户和>包括"，** 选择"**选择用户和** 组"，然后选择"所有 **来宾和外部用户"。**</li><li>对于 **">条件**>登录"，保留所有选项未选中状态，以始终对 MFA (多重) 。</li></ul>|
+|**起点**|[始终要求来宾和外部用户使用 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|创建新策略并配置： <ul><li>对于 **分配>用户和>包括"，** 选择"**选择用户和** 组"，然后选择"所有 **来宾和外部用户"。**</li><li>对于 **">条件**>登录"，保留所有选项未选中状态，以始终对 MFA (多重) 。</li></ul>|
 ||[当登录风险为中或高 *时需要* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|修改此策略以排除来宾和外部用户。|
-||[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|修改此策略以排除来宾和外部用户。|
 
 若要在条件访问策略中包括或排除来宾和外部用户，>用户和组>包括或排除"，请检查"**所有** 来宾和 **外部用户"。**
 
@@ -72,7 +71,7 @@ Microsoft Teams定义以下用户：
 
 ### <a name="excluding-guests-and-external-users-from-risk-based-mfa"></a>从基于风险的 MFA 中排除来宾和外部用户
 
-尽管组织可以使用 Azure AD Identity Protection 对 B2B 用户强制执行基于风险的策略，但由于 B2B 协作用户的身份存在于其主目录中，因此在资源目录中实现 Azure AD Identity Protection 存在一些限制。 由于这些限制，Microsoft 建议你将来宾从基于风险的 MFA 策略中排除，并要求这些用户始终使用 MFA。
+虽然组织可以使用 Azure AD Identity Protection 对 B2B 用户强制执行基于风险的策略，但由于 B2B 协作用户的身份已保留于其主目录中，因此，在资源目录中实现 Azure AD Identity Protection 时存在一些限制。 由于这些限制，Microsoft 建议你将来宾从基于风险的 MFA 策略中排除，并要求这些用户始终使用 MFA。
 
 有关详细信息，请参阅 [B2B 协作用户的身份保护限制](/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users)。
 

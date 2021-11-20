@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8219192416bc286714b3fddc3878ce8ed5de949b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a040b42b3d6006e99101596548105701aa36f935
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210671"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121682"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>步骤 3. 对第一个事件执行事后评审
 
@@ -36,9 +36,9 @@ ms.locfileid: "60210671"
 **适用于：**
 - Microsoft 365 Defender
 
-NIST 国家标准 (技术协会) 建议，一旦采取所有步骤从攻击中恢复，组织必须检查事件以从事件中学习，并改进安全状况或流程。 在准备下一个事件时，评估事件处理的各个方面变得非常重要。
+国家标准和技术协会 (NIST) 建议，一旦采取所有步骤从攻击中恢复，组织必须检查事件以从事件中学习，并改进安全状况或流程。 在准备下一个事件时，评估事件处理的各个方面变得非常重要。
 
-Microsoft 365 Defender向组织提供符合 MITRE ATT 和 CK Framework 的警报，[帮助&活动](https://attack.mitre.org/)。 所有 Microsoft Defender 解决方案都根据 ATT 和 CK 策略&标记攻击。 
+Microsoft 365 Defender向组织提供符合[MITRE ATT](https://attack.mitre.org/)和 CK Framework 的警报，帮助&活动。 所有 Microsoft Defender 解决方案根据 ATT 和 CK 策略&标记攻击。
 
 通过向此行业框架映射警报，你可以：
 
@@ -46,7 +46,7 @@ Microsoft 365 Defender向组织提供符合 MITRE ATT 和 CK Framework 的警报
 - 确定对手和宣传活动属性。
 - 执行趋势分析。
 - 确定攻击方法感知中的技能差异。
-- 创建一Power Automate Playbook，以加快修正速度。 
+- 创建一Power Automate Playbook，以加快修正速度。
 
 事件后审阅活动还可以微调安全配置和安全团队的流程，从而增强组织的响应功能。
 

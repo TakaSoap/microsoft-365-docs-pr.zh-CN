@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 637c56e5c02283e4efee5a456c21f4a74fcda40d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f0f15f8a3cf7f40bd1fd2e64d4d37466cc12d67e
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178283"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122077"
 ---
 # <a name="software-resource-type"></a>软件资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "60178283"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 <br>
 
@@ -49,11 +49,11 @@ ms.locfileid: "60178283"
 
 |方法|返回类型|说明|
 |---|---|---|
-|[列出软件](get-software.md)|软件集合|列出组织软件清单。|
-|[按 Id 获取软件](get-software-by-id.md)|软件|按软件 ID 获取特定软件。|
-|[列出软件版本分发](get-software-ver-distribution.md)|通讯组集合|按软件 ID 列出软件版本分发。|
-|[按软件列出计算机](get-machines-by-software.md)|MachineRef 集合|检索与软件 ID 关联的设备列表。|
-|[按软件列出漏洞](get-vuln-by-software.md)|[漏洞](vulnerability.md) 集合|检索与软件 ID 关联的漏洞列表。|
+|[列出软件](get-software.md)|软件集合|列出组织软件清单|
+|[按 ID 获取软件](get-software-by-id.md)|软件|按软件 ID 获取特定软件|
+|[列出软件版本分发](get-software-ver-distribution.md)|通讯组集合|按软件 ID 列出软件版本分发|
+|[按软件列出计算机](get-machines-by-software.md)|MachineRef 集合|检索与软件 ID 关联的设备列表|
+|[按软件列出漏洞](get-vuln-by-software.md)|[漏洞](vulnerability.md) 集合|检索与软件 ID 关联的漏洞列表|
 |[查找缺失的 KBS](get-missing-kbs-software.md)|KB 集合|获取与软件 ID 关联的缺失的 KB 列表|
 |
 
@@ -67,10 +67,10 @@ ms.locfileid: "60178283"
 |---|---|---|
 |id|String|软件 ID|
 |名称|String|软件名称|
-|供应商|String|软件供应商名称|
+|供应商|String|软件发布者名称|
 |漏洞|长型|发现的漏洞数量|
-|publicExploit|布尔值|存在针对某些漏洞的公共攻击|
-|activeAlert|布尔值|活动警报与此软件关联|
+|publicExploit|Boolean|存在针对某些漏洞的公共攻击|
+|activeAlert|Boolean|活动警报与此软件关联|
 |exposedMachines|长型|公开的设备数量|
 |impactScore|双精度|此软件的曝光评分影响|
 |

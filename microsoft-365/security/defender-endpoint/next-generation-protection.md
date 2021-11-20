@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5bd2fb3fcd09e41b7da5aa6f75ecfd692dbc76fe
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 17b1a57a16c829bbeced091c9a8678e00e5b9735
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553840"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121945"
 ---
 # <a name="next-generation-protection-overview"></a>下一代保护概述
 
@@ -48,4 +48,4 @@ Microsoft Defender for Endpoint 包括加强网络安全外围的下一代保护
 有关如何配置下一代保护服务的信息，请参阅[配置 Microsoft Defender 防病毒功能](configure-microsoft-defender-antivirus-features.md)。
 
 > [!NOTE]
-> 在 Windows Server 中，配置和管理与在 Windows 客户端中大致相同。 但存在一些差异。 要了解详细信息，请参阅 [Windows Server 上的 Microsoft Defender 防病毒](microsoft-defender-antivirus-on-windows-server.md)。
+> 在 Windows Server 中，配置和管理与在 Windows 客户端中大致相同。 但存在一些差异。 

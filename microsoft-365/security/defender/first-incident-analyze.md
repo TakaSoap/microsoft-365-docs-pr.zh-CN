@@ -1,6 +1,6 @@
 ---
 title: 步骤 1. 会审和分析第一个事件
-description: 如何对事件进行会审并开始分析第一个Microsoft 365 Defender。
+description: 如何对事件进行会审并开始分析第一Microsoft 365 Defender。
 keywords: 事件， 警报， 调查， 关联， 攻击， 计算机， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365， 事件响应， 网络攻击
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d539f34f72b5fe6c26325646452a15b5df76a5a7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8e3d80cf1446541687ee2da1795b37ecf5d71865
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199545"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121646"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>步骤 1. 会审和分析第一个事件
 
@@ -44,22 +44,23 @@ ms.locfileid: "60199545"
 
 Microsoft 365 Defender多个 Microsoft 安全平台接收警报和事件作为检测源，以创建恶意活动的整体图片和上下文。 这些是可能的检测源：
 
-- [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)是终结点检测和响应 (EDR) ，它使用 Microsoft Defender 防病毒以及使用 Microsoft 安全中心启用云的高级威胁Graph。 Defender for Endpoint 是一个统一的平台，用于预防性保护、攻破后检测、自动调查和响应。 它可保护终结点免受网络威胁的攻击，检测高级攻击和数据泄露，自动执行安全事件，并改进安全状况。
-- [Microsoft Defender for Identity](/defender-for-identity/what-is) 是一种基于云的安全解决方案，它使用本地 Active Directory 域服务 (AD DS) 信号来识别、检测和调查针对你的组织的高级威胁、泄露的身份和恶意内部操作。
-- [Microsoft Cloud App Security](/cloud-app-security/)充当网关人，在企业用户和用户使用的云资源之间实时代理访问，无论用户位于何处，无论他们使用何种设备。
+- [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)是一种终结点检测和响应 (EDR) ，它使用 Microsoft Security Graph 使用 Microsoft Defender 防病毒和启用云的高级威胁Graph。 Defender for Endpoint 是一个统一的平台，用于预防性保护、攻破后检测、自动调查和响应。 它可保护终结点免受网络威胁的攻击，检测高级攻击和数据泄露，自动执行安全事件，并改进安全状况。
+- [Microsoft Defender for Identity](/defender-for-identity/what-is) 是一种基于云的安全解决方案，它使用本地 Active Directory 域服务 (AD DS) 信号识别、检测和调查针对你的组织的高级威胁、泄露的身份和恶意内部操作。
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/) 充当网关守卫，在企业用户和用户使用的云资源之间实时代理访问，无论用户位于何处，无论他们使用何种设备。
 - [Microsoft Defender for Office 365](../office-365-security/overview.md)保护你的组织免受电子邮件、链接 (URL) 和协作工具中的恶意威胁。
 - [Azure 安全](/azure/security-center/security-center-introduction) 中心是一个统一的基础结构安全管理系统，可增强数据中心的安全状态，并跨云和本地混合工作负载提供高级威胁防护。
 
-在Microsoft 365 Defender[中](incidents-overview.md)，通过关联来自这些不同检测源的警报来标识事件。 你可以立即开始事件队列，而不是花费资源在一起或将多个警报区分为各自的事件Microsoft 365 Defender队列。 这使你可以有效地跨终结点、标识、电子邮件和应用程序对事件进行会审，并减少攻击造成的损失。
+
+在Microsoft 365 Defender[中](incidents-overview.md)，通过关联来自这些不同检测源的警报来标识事件。 你可以立即开始处理事件队列，而不是花费资源字符串或将多个警报区分到其各自的事件中Microsoft 365 Defender队列。 这使你可以有效地跨终结点、标识、电子邮件和应用程序对事件进行会审，并减少攻击造成的损失。
 
 ## <a name="triage-your-incidents"></a>对事件进行会审
 
-使用组织Microsoft 365 Defender优先顺序对事件列表分类后，事件响应中事件响应即开始。 会审是指为事件分配重要性或紧急程度，然后确定调查事件的顺序。
+使用组织Microsoft 365 Defender优先顺序对事件列表分类后，将开始响应事件中的事件。 会审是指为事件分配重要性或紧急程度，然后确定调查事件的顺序。
 
-一个有用的示例指南，可用于确定在事件Microsoft 365 Defender优先级，公式如下：严重性 + 影响 *= 优先级*。
+一个有用的示例指南，用于确定要确定事件优先级Microsoft 365 Defender公式可以汇总：严重性 + 影响 *= 优先级*。
 
-- **严重性** 是由安全组及其Microsoft 365 Defender组件指定的级别。
-- 影响由组织确定，通常包括但不限于受影响的用户、设备、受影响服务的阈值数量 (或受影响的) ，甚至警报类型。
+- **严重性** 是由安全组件及其Microsoft 365 Defender组件指定的级别。
+- 影响由组织确定，通常包括但不限于受影响的用户、设备、受影响服务的阈值 (或其) ，甚至警报类型。
 
 然后，分析员根据组织设置的 **优先级** 条件启动调查。
 
@@ -67,11 +68,11 @@ Microsoft 365 Defender多个 Microsoft 安全平台接收警报和事件作为�
 
 下面只是一种会审方法：
 
-1. 转到事件 [页面](incidents-overview.md) 以启动会审。 你可以在此处查看影响组织的事件列表。 默认情况下，它们从最近的事件到最早的事件进行排列。 在此处，您还可以查看每个事件的不同列，这些列显示其严重性、类别、活动警报数量以及影响的实体等等。 您可以通过选择列名称来自定义列集，并按这些列中的一些列对事件队列进行排序。 您还可以根据需求筛选事件队列。 有关可用筛选器的完整列表，请参阅确定 [事件的优先级](incident-queue.md#available-filters)。
+1. 转到事件 [页面](incidents-overview.md) 以启动会审。 你可以在此处查看影响组织的事件列表。 默认情况下，它们从最近的事件到最早的事件进行排列。 在此处，您还可以查看每个事件的不同列，这些列显示其严重性、类别、活动警报数量以及影响的实体等等。 您可以通过选择列名称来自定义列集，并按其中某些列对事件队列进行排序。 您还可以根据需求筛选事件队列。 有关可用筛选器的完整列表，请参阅确定 [事件的优先级](incident-queue.md#available-filters)。
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-queue.png" alt-text="事件队列的示例。":::
 
-    如何对此组事件执行会审的一个示例是确定影响更多用户和设备的事件的优先级。 本示例中，可能会设置事件 ID 6769 的优先级，因为它影响最多数量的实体：7 个设备、6 个用户和 2 个邮箱。 此外，该事件似乎包含来自 Microsoft Defender for Identity 的警报，这些警报指示基于标识的警报和可能的凭据盗窃。
+    如何对此组事件执行会审的一个示例是确定影响更多用户和设备的事件的优先级。 本示例中，可能会设置事件 ID 6769 的优先级，因为它影响最多数量的实体：7 个设备、6 个用户和 2 个邮箱。 此外，事件似乎包含来自 Microsoft Defender for Identity 的警报，指示基于标识的警报和可能的凭据盗窃。
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="影响很大事件的示例。":::
 
@@ -87,7 +88,7 @@ Microsoft 365 Defender多个 Microsoft 安全平台接收警报和事件作为�
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-details.png" alt-text="事件侧窗格详细信息的示例。":::
 
-3. 在侧窗格中的更下一步，可以找到关联的警报。 Microsoft 365 Defender已执行这些警报与单个事件之间的关联，从而节省你修正攻击所花的时间和资源。 警报是可疑的，因此可能是恶意系统事件，这些事件表示网络上存在攻击者。
+3. 在侧窗格的更下一步，你可以找到关联的警报。 Microsoft 365 Defender警报与单个事件之间的关联，从而节省你修正攻击所花的时间和资源。 警报是可疑的，因此可能是恶意系统事件，这些事件表示网络上存在攻击者。
 
    本示例中，87 个单独警报被确定为一个安全事件的一部分。 你可以查看所有警报，快速了解攻击的播放。
 
@@ -99,7 +100,7 @@ Microsoft 365 Defender多个 Microsoft 安全平台接收警报和事件作为�
 
 有多种方法可以读取和分析数据，Microsoft 365 Defender但分析人员的最终目标是尽快响应事件。 尽管Microsoft 365 Defender自动调查和响应功能 ([MTTR](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)) 修正平均时间，但始终存在需要手动分析的情况。 [](m365d-autoir.md)
 
-下面是一个示例：
+示例如下：
 
 1. 确定会审优先级后，分析员通过选择事件名称开始深入分析。 此页面将显示"事件 **摘要** "，其中数据显示在选项卡中，以帮助进行分析。 在 **"警报"** 选项卡下，将显示警报类型。 分析员可以单击每个警报，向下钻取到各自的检测源。
 
@@ -107,23 +108,23 @@ Microsoft 365 Defender多个 Microsoft 安全平台接收警报和事件作为�
 
     有关每个检测源涵盖的域的快速指南，请查看本文的 [检测](#detection-by-microsoft-365-defender) 部分。
 
-2. 从 **"警报"** 选项卡中，分析员可以透视到检测源，以执行更深入的调查和分析。 例如，选择"恶意软件检测Microsoft Cloud App Security作为检测源"，分析员将访问其对应的警报页面。
+2. 从 **"警报"** 选项卡中，分析员可以透视到检测源，以执行更深入的调查和分析。 例如，选择"使用 Microsoft Defender for Cloud Apps 进行恶意软件检测"作为检测源，分析人员将访问其对应的警报页面。
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="选择事件警报的示例。":::
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="页面中相应页面Microsoft Cloud App Security。":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Microsoft Defender for Cloud Apps 中相应页面的示例。":::
 
 3. 若要进一步调查我们的示例，请滚动到页面底部以查看受影响的 **用户**。 To see the activity and context surrounding the malware detection， select Annette Hill's user page .
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="用户页面示例。":::
 
-4. 在用户页面上，按时间顺序排列的事件列表，从 *TOR* 网络 IP 地址警报的有风险登录开始。 虽然活动的可疑程度取决于组织如何开展其业务的性质，但在大多数情况下，使用 Onion 路由器 (TOR) （允许用户在企业环境中匿名浏览 Web 的网络）对于常规联机操作可能被视为不可能和不必要的。
+4. 在用户页面上，从 *TOR* 网络 IP 地址警报的"有风险登录"开始的事件按时间顺序排列。 虽然活动的可疑程度取决于组织如何开展业务的性质，但在大多数情况下，使用 Onion 路由器 (TOR) （允许用户在企业环境中匿名浏览 Web 的网络）对于常规联机操作来说可能不太可能和不必要。
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="用户的事件按时间顺序列表的示例。":::
 
 5. 可以选择每个警报以获取有关活动详细信息。 例如，从 **"Tor IP** 地址"警报中选择"活动"将引导你访问该警报自己的页面。 Annette 是 Office 365 管理员，这意味着她具有提升的权限，并且源事件可能导致访问机密信息。
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="示例 的警报详细信息Microsoft Cloud App Security 。":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="适用于云应用的 Microsoft Defender 的警报详细信息示例。":::
 
 6. 通过选择其他警报，分析员可以全面了解攻击情况。
 

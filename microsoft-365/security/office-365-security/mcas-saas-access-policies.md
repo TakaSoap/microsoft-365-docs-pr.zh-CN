@@ -15,17 +15,18 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f916aaab4c544b50cc06bfbd4fbb963f1987df03
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8d94207be88bd7c9e070057ac1790845a3be17ca
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111719"
+ms.locfileid: "61121984"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>适用于 SaaS 应用的推荐的 Microsoft Defender 云应用策略
-Microsoft Defender for Cloud Apps 基于 Azure AD 条件访问策略构建，支持使用 SaaS 应用实时监视和控制粒度操作，例如阻止下载、上传、复制和粘贴以及打印。 此功能为具有固有风险的会话添加了安全性，例如，当非托管设备或来宾用户访问公司资源时。
 
-Microsoft Defender for Cloud Apps 也与 Microsoft 信息保护 集成，提供实时内容检查，以根据敏感信息类型和敏感度标签查找敏感数据，并采取适当的措施。
+Microsoft Defender for Cloud Apps 基于 Azure AD 条件访问策略构建，支持实时监视和控制 SaaS 应用的精细操作，例如阻止下载、上传、复制和粘贴以及打印。 此功能为具有固有风险的会话添加了安全性，例如，当非托管设备或来宾用户访问公司资源时。
+
+Defender for Cloud Apps 还本地与 Microsoft 信息保护 集成，提供实时内容检查，以根据敏感信息类型和敏感度标签查找敏感数据，并采取适当的措施。
 
 本指南包括针对以下方案的建议：
 
@@ -35,33 +36,33 @@ Microsoft Defender for Cloud Apps 也与 Microsoft 信息保护 集成，提供�
 
 ## <a name="bring-saas-apps-into-it-management"></a>将 SaaS 应用引入 IT 管理
 
-使用 Microsoft Defender for Cloud Apps 管理 SaaS 应用的第一步是发现它们，然后将它们添加到你的 Azure AD 租户。 如果需要发现帮助，请参阅 [发现和管理网络中 SaaS 应用](/cloud-app-security/tutorial-shadow-it)。 在发现应用后，将其添加到你的Azure AD[租户。](/azure/active-directory/manage-apps/add-application-portal)
+使用 Defender for Cloud Apps 管理 SaaS 应用的第一步是发现它们，然后将它们添加到你的 Azure AD 租户。 如果需要发现帮助，请参阅 [发现和管理网络中 SaaS 应用](/cloud-app-security/tutorial-shadow-it)。 在发现应用后，将其添加到你的Azure AD[租户。](/azure/active-directory/manage-apps/add-application-portal)
 
 可以通过执行以下操作开始管理这些操作：
 
 1. 首先，在Azure AD，创建新的条件访问策略，并配置为"使用条件访问应用控制"。 这会将请求重定向到 Defender for Cloud Apps。 你可以创建一个策略，并添加所有 SaaS 应用到此策略。
 1. 接下来，在 Defender for Cloud Apps 中，创建会话策略。 为要应用的每个控件创建一个策略。
 
-对 SaaS 应用的权限通常基于对应用的访问权限的业务需求。 这些权限可以是高度动态的。 使用 Defender for Cloud Apps 策略可确保保护应用数据，无论用户被分配到的 Azure AD 组与基线、敏感或高度管控保护相关。
+对 SaaS 应用的权限通常基于对应用的访问权限的业务需求。 这些权限可以是高度动态的。 使用 Defender for Cloud Apps 策略可确保对应用数据的保护，无论用户被分配到的 Azure AD 组与起始点、企业还是专门的安全保护相关联。
 
-为了跨 SaaS 应用集合保护数据，下图说明了在条件访问策略Azure AD可以在 Defender for Cloud Apps 中创建的建议策略。 在此例中，在 Defender for Cloud Apps 中创建的策略将应用于你正在管理的所有 SaaS 应用。 这些控件旨在根据设备是否受管理以及已应用于文件的敏感度标签来应用适当的控件。
+为了跨 SaaS 应用集合保护数据，下图说明了在条件访问策略Azure AD可以在 Defender for Cloud Apps 中创建的建议策略的必要步骤。 在此例中，在 Defender for Cloud Apps 中创建的策略将应用于你正在管理的所有 SaaS 应用。 这些控件旨在根据设备是否受管理以及已应用于文件的敏感度标签来应用适当的控件。
 
-![在适用于云应用的 Defender 中管理 SaaS 应用的策略。](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="在适用于云应用的 Defender 中管理 SaaS 应用的策略。" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
-下表列出了必须在新条件访问策略Azure AD。
+下表列出了必须在新策略中创建的新条件访问Azure AD。
 
 |保护级别|Policy|更多信息|
 |---|---|---|
-|所有保护级别|[在 Defender for Cloud Apps 中使用条件访问应用控制](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|这会将你的 IdP (Azure AD) 与 Defender for Cloud Apps 一起运行。|
+|所有保护级别|[在 Defender for Cloud Apps 中使用条件访问应用控制](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|这会将你的 IdP (Azure AD) 与 Defender for Cloud Apps 一起使用。|
 ||||
 
 下表列出了上面说明的示例策略，你可以创建这些策略来保护所有 SaaS 应用。 请务必评估自己的业务、安全性和合规性目标，然后创建为环境提供最合适的保护的策略。
 
 |保护级别|Policy|
 |---|---|
-|基线|监视来自非托管设备的流量 <p> 向从非托管设备下载文件添加保护|
-|敏感|阻止从非托管设备下载标记为敏感或分类的文件 (这可以提供仅浏览器) |
-|高度管控|阻止从所有设备下载标记为已分类 (这将提供仅浏览器访问权限) |
+|起点|监视来自非托管设备的流量 <p> 向从非托管设备下载文件添加保护|
+|企业|阻止从非托管设备下载标记为敏感或分类的文件 (这可以提供仅浏览器) |
+|专用安全|阻止从所有设备下载标记为已分类 (这将提供仅浏览器访问权限) |
 |||
 
 有关设置条件访问应用控件的端到端说明，请参阅为特色应用部署条件 [访问应用控制](/cloud-app-security/proxy-deployment-aad)。 本文将引导你完成在 SaaS 应用中创建Azure AD访问策略的过程。
@@ -95,13 +96,13 @@ Microsoft Defender for Cloud Apps 也与 Microsoft 信息保护 集成，提供�
 
 下图和表提供了一些策略示例，可配置这些策略以帮助遵守 GDPR 一般数据保护 (法规) 。 在这些示例中，策略查找特定数据。 根据数据的敏感度，每个策略都配置为采取相应的操作。
 
-![数据丢失防护的适用于云应用的 Defender 策略示例。](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="数据丢失防护的适用于云应用的 Defender 策略示例。" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
 
 |保护级别|示例策略|
 |---|---|
-|基线|当包含此敏感信息类型的文件 ("信用卡号") 组织外部共享时发出警报 <p> >阻止下载包含此敏感信息类型的文件 ("信用卡号") 非托管设备|
-|敏感|保护包含此敏感信息类型的文件的下载 ("信用卡号") 托管设备 <p> 阻止下载包含此敏感信息类型的文件 ("信用卡号") 非托管设备 <p> 当包含这些标签的文件上载到 OneDrive for Business 或 Box (客户数据、人力资源：工资数据、人力资源、员工数据) |
-|高度管控|将具有此标签的文件 ("高度分类") 下载到托管设备时发出警报 <p> 阻止下载具有此标签的文件 ("高度分类") 非托管设备|
+|起点|当包含此敏感信息类型的文件 ("信用卡号") 组织外部共享时发出警报 <p> >阻止下载包含此敏感信息类型的文件 ("信用卡号") 非托管设备|
+|企业|保护包含此敏感信息类型的文件的下载 ("信用卡号") 托管设备 <p> 阻止下载包含此敏感信息类型的文件 ("信用卡号") 非托管设备 <p> 当包含这些标签的文件上载到 OneDrive for Business 或 Box (客户数据、人力资源：工资数据、人力资源、员工数据) |
+|专用安全|将具有此标签的文件 ("高度分类") 下载到托管设备时发出警报 <p> 阻止下载具有此标签的文件 ("高度分类") 非托管设备|
 |||
 
 ## <a name="next-steps"></a>后续步骤

@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 201f8c57057b1f8a314bdd42ba53042a4f6d00e3
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 465a2775bdec232e248cb6d14a96b86770b64e5c
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552652"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121634"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows 10 中的 Microsoft Defender 防病毒
 
@@ -90,6 +90,5 @@ Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 中下一代保�
 
 ## <a name="see-also"></a>另请参阅
 
-- [Windows Server 上的 Microsoft Defender 防病毒软件](microsoft-defender-antivirus-on-windows-server.md)
 - [Microsoft Defender 防病毒管理和配置](configuration-management-reference-microsoft-defender-antivirus.md)
 - [评估 Microsoft Defender 防病毒保护](evaluate-microsoft-defender-antivirus.md)

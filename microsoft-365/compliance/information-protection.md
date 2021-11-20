@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: 实施 Microsoft 信息保护 (MIP)，无论在何处生活或旅居在外，均可助你保护敏感信息。
-ms.openlocfilehash: d011877bf31e996144b73978337ad63cb3a22c6a
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: d82ca36b99c2a19ce2a2a66b56f29f9ddf58bdf4
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071386"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109739"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息保护
 
@@ -62,7 +62,7 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
 |[SharePoint 信息权限管理 (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|保护 SharePoint 列表和库，以便当用户签出文档时，对下载的文件进行保护，即仅获得授权人员可根据指定策略查看和使用该文件。 | [在 SharePoint 管理中心设置信息权限管理 (IRM)](set-up-irm-in-sp-admin-center.md)|
 [权限管理连接器](/azure/information-protection/deploy-rms-connector) |保护 - 仅适用于使用 Exchange 或 SharePoint Server 的现有本地部署，或运行 Windows Server 和文件分类基础结构的文件服务器 (FCI) 的文件服务器。 | [部署 RMS 连接器的步骤](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Azure 信息保护统一标记扫描器](/azure/information-protection/deploy-aip-scanner)| 发现、标记和保护驻留在本地数据存储区中的敏感信息。 | [配置和安装 Azure 信息保护统一标记扫描器](/azure/information-protection/deploy-aip-scanner-configure-install)|
-|[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)| 发现、标记和保护驻留在云中数据存储区内的敏感信息。 | [发现、分类、标记和保护存储在云中的管控和敏感数据](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| 发现、标记和保护驻留在云中数据存储区内的敏感信息。 | [发现、分类、标记和保护存储在云中的管控和敏感数据](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |[Microsoft 信息保护 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|将灵敏度标签扩展到第三方应用和服务。 <p> 示例方案： [设置和获取灵敏度标签 (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft 信息保护 (MIP) SDK 安装和配置](/information-protection/develop/setup-configure-mip)|
 
 

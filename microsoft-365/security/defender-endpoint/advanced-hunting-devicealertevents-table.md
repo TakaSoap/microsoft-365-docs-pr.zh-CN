@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: 58e0ae53cc679136bca960f05e2eb6cf2c5a09a6
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 692fc5a0f3bee738f9d8a14ad9b51446aed623a7
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554008"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122209"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -28,8 +28,6 @@ ms.locfileid: "60554008"
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
-
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)。
 
@@ -50,8 +48,8 @@ ms.locfileid: "60554008"
 |`SHA1`|string|录制操作所应用到的文件的 SHA-1|
 |`RemoteUrl`|string|连接到的 URL 或完全限定域名 (FQDN)|
 |`RemoteIP`|string|连接到的 IP 地址|
-|`AttackTechniques`|string|MITRE ATT&触发警报的活动相关的 CK 技术|
-|`ReportId`|long|基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 和 `DeviceName` `Timestamp` 列一起使用|
+|`AttackTechniques`|string|MITRE ATT&触发警报的活动关联的 CK 技术|
+|`ReportId`|long|基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 和 `DeviceName` `Timestamp` 列一同使用|
 |`Table`|string|包含事件详细信息的表|
 
 ## <a name="related-topics"></a>相关主题

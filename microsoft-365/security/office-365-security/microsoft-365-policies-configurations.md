@@ -1,9 +1,9 @@
 ---
-title: 标识和设备访问配置 - Microsoft 365配置
-description: 介绍用于部署安全电子邮件、文档和应用策略和配置的 Microsoft 建议和核心概念。
+title: 零信任标识和设备访问配置 - Microsoft 365配置
+description: 介绍用于部署零信任的安全电子邮件、文档和应用策略和配置的 Microsoft 建议和核心概念。
 ms.author: josephd
 author: JoeDavies-MSFT
-manager: laurawi
+manager: dansimp
 ms.prod: m365-security
 ms.topic: article
 audience: Admin
@@ -18,27 +18,65 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
+- m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: e3d807337cfa2e7fa6a27f63e58bd441d95716d5
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 96aeb70da1bf31ca48858bef8db08911157ece71
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110063"
+ms.locfileid: "61121217"
 ---
-# <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
+# <a name="zero-trust-identity-and-device-access-configurations"></a>零信任标识和设备访问配置
 
 **适用对象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
-组织的新式安全外围现在扩展到网络之外，包括从任何位置使用各种设备访问基于云的应用的用户。 安全基础结构需要确定是否应授予给定访问请求以及应在哪些条件下授予。
+<!--
+The modern security perimeter of your organization now extends beyond your network to include users accessing cloud-based apps from any location with a variety of devices. Your security infrastructure needs to determine whether a given access request should be granted and under what conditions.
 
-此确定应基于登录的用户帐户、所使用的设备、用户用于访问的应用、提出访问请求的位置以及请求风险的评估。 这个功能有助于确保只有经过批准的用户和设备才能访问关键的公司资源。
+This determination should be based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
 
-本系列文章介绍了一组标识和设备访问先决条件配置以及一组 Azure Active Directory (Azure AD) 条件访问、Microsoft Intune 和其他策略，用于保护对 Microsoft 365 用于企业云应用和服务、其他 SaaS 服务以及使用应用程序代理发布的Azure AD应用程序。
+--> 
 
-在三个层中推荐标识和设备访问设置和策略：基线保护、敏感保护，以及针对具有高度管控或分类数据的环境的保护。 这些层及其相应的配置会跨数据、标识和设备，提供一致级别的保护。
+依赖于网络防火墙和虚拟专用网络 (VPN) 隔离和限制对组织技术资源和服务的访问的安全体系结构对于经常需要访问传统企业网络边界之外的应用程序和资源的员工来说不再足够。
+
+为了应对这一新的计算领域，Microsoft 强烈建议使用零信任安全模型，该模型基于以下指导原则：
+
+- 显式验证
+
+  始终基于所有可用数据点进行身份验证和授权。 这是零信任标识和设备访问策略对登录和持续验证至关重要的地方。
+
+- 使用最小特权访问
+
+  使用 JIT/JEA (实时和 Just-Enough-Access) 、基于风险的自适应策略和数据保护来限制用户访问。  
+
+- 假定泄露
+
+  尽量减少爆炸半径和线段访问。 验证端到端加密，并使用分析获取可见性、促进威胁检测和加强防范。
+
+下面是零信任的整体体系结构。
+
+:::image type="content" source="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png" alt-text="Microsoft 零信任体系结构" lightbox="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png":::
+
+零信任标识和设备访问策略满足 **以下各项的验证明确** 指导原则：
+
+- 身份
+
+  当标识尝试访问资源时，请验证身份是否具有强身份验证，并确保所请求的访问是合规且典型的。
+
+- 设备 (也称为终结点) 
+
+  监视和实施设备运行状况和合规性要求，以确保安全访问。
+
+- 应用程序
+
+  应用控件和技术以发现影子 IT、确保适当的应用内权限、基于实时分析的入口访问、监视异常行为、控制用户操作并验证安全配置选项。
+
+本系列文章介绍了一组标识和设备访问先决条件配置，以及一组 Azure Active Directory (Azure AD) 条件访问、Microsoft Intune 和其他针对零信任访问Microsoft 365 用于企业云应用和服务、其他 SaaS 服务以及使用应用程序代理发布的Azure AD应用程序。
+
+零信任标识和设备访问设置和策略分三层建议：针对具有高度管控或分类数据的环境的起点、企业专用安全。 这些层及其相应的配置可跨数据、标识和设备提供一致的零信任保护级别。
 
 这些功能及其建议：
 
@@ -79,21 +117,24 @@ ms.locfileid: "61110063"
 
 大多数组织都具有安全性和数据保护方面的特定要求。 这些要求因行业部门和组织内的工作职能而异。 例如，法律部门及管理员可能需要针对其电子邮件通信进行额外的安全和信息保护控制，而其他业务部门不需要这些控制。
 
-每个行业也有自己独特的一组规定。 针对三种不同安全和保护层提供了建议，可以基于你的需求粒度应用这三种不同安全和保护层，而不是提供所有可能的安全选项列表或每个行业部门或工作职能的建议。
+每个行业也有自己独特的一组规定。 针对三个不同级别的安全和保护提供了建议，可以基于你的需求粒度应用这三个不同级别的安全和保护，而不是提供所有可能的安全选项列表或每个行业部门或工作职能的建议。
 
-- **基线** 保护：建议建立用于保护数据以及访问数据的标识和设备的最低标准。 你可以遵循这些基线建议来提供强大的默认保护，以满足许多组织的需求。
-- **敏感保护**：某些客户具有必须在较高级别进行保护的数据子集，或者他们可能要求在较高级别保护所有数据。 你可以对环境中的所有或特定数据集应用增强Microsoft 365保护。 建议以与安全性相当的级别保护访问敏感数据的标识和设备。
-- **高度管控**：某些组织可能有少量高度机密、构成商业秘密或受监管数据的数据。 Microsoft 提供多种功能，帮助组织满足相关要求，包括为标识和设备添加保护。
+- **起始点**：我们建议所有客户都制定并使用保护数据以及访问你的数据的标识和设备的最低标准。 你可以遵循这些建议，以提供强大的默认保护作为所有组织的起点。
+- **Enterprise：** 某些客户具有必须在较高级别保护的数据子集，或者他们可能要求在较高级别保护所有数据。 可以将增强的保护应用于环境中的所有或Microsoft 365集。 建议以与安全性相当的级别保护访问敏感数据的标识和设备。
+- **专用安全**：如果需要，一些客户具有少量高度机密、构成商业机密或受监管的数据。 Microsoft 提供了一些功能来帮助这些客户满足这些要求，包括对标识和设备添加了保护。
 
-![安全圆锥 - 所有>特定>的客户。 广泛的应用程序到特定应用程序。](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+![安全圆锥 - 所有>一些>客户](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
-本指南显示了如何针对这些保护层中的每个标识和设备实施保护。 使用本指南作为组织的起点，并调整策略以满足组织的特定要求。
+本指南演示如何针对这些保护级别的标识和设备实施零信任保护。 使用本指南作为组织的最低要求，并调整策略以满足组织的特定要求。
 
-请务必在数据、标识和设备中使用一致的保护级别。 例如，如果你实现本指南，请确保在相当的级别保护你的数据。
+在标识、设备和数据之间使用一致的保护级别非常重要。 例如，对于拥有优先帐户的用户（如主管、领导、经理和其他人员）的保护，应包含针对其身份、设备和他们访问的数据的相同 &mdash; &mdash; 级别的保护。 
+<!--
 
-Identity **and device protection for Microsoft 365** model shows you which capabilities are comparable.
+The **Zero Trust identity and device protection for Microsoft 365** architecture model shows you which capabilities are comparable.
 
-[![用于海报标识和设备保护的缩略图Microsoft 365图像。](../../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [以 PDF 格式查看](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下载为Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
+[![Thumb image for Zero Trust Identity and device protection for Microsoft 365 poster.](../../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-thumbnail.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [View as a PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)
+
+--> 
 
 此外，请参阅[部署数据隐私法规信息](../../solutions/information-protection-deploy.md)保护解决方案来保护存储在Microsoft 365。
 
@@ -108,11 +149,11 @@ Identity **and device protection for Microsoft 365** model shows you which capab
 - 了解用户，并灵活满足其安全性和功能要求。
 - 及时应用安全策略并确保其有意义。
 
-## <a name="services-and-concepts-for-identity-and-device-access-protection"></a>标识和设备访问保护的服务和概念
+## <a name="services-and-concepts-for-zero-trust-identity-and-device-access-protection"></a>零信任标识和设备访问保护的服务和概念
 
 Microsoft 365企业版专为大型组织设计，使每个人都能够发挥创造力并安全地协同工作。
 
-本节概述了对标识Microsoft 365访问非常重要的服务和功能。
+本节概述了对零Microsoft 365和设备访问非常重要的服务和功能。
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -129,9 +170,9 @@ Azure AD提供了一整套标识管理功能。 我们建议使用这些功能�
 |[Azure AD密码保护](/azure/active-directory/authentication/concept-password-ban-bad)|检测并阻止已知的弱密码及其变体以及特定于您的组织的其他弱术语。 默认全局禁止使用的密码列表将自动应用于 Azure AD 租户中的所有用户。 可在自定义禁止密码列表中定义额外条目。 用户更改或重置其密码时，将检查这些禁止的密码列表，强制使用强密码。|Microsoft 365 E3 或 E5|
 |
 
-下面是标识和设备访问的组件，包括 Intune 和 Azure AD 对象、设置和子服务。
+以下是零信任标识和设备访问的组件，包括 Intune 和 Azure AD 对象、设置和子服务。
 
-![标识和设备访问的组件。](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="零信任标识和设备访问的组件。" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -145,25 +186,25 @@ Azure AD提供了一整套标识管理功能。 我们建议使用这些功能�
 
 ### <a name="microsoft-365"></a>Microsoft 365
 
-本指南演示如何实施一组策略来保护对 Microsoft 365 云服务的访问，包括 Microsoft Teams、Exchange Online、SharePoint Online 和 OneDrive for Business。 除了实施这些策略外，我们还建议你使用这些资源提高租户的保护级别：
+本指南演示如何实施一组策略来保护对 Microsoft 365 云服务的访问，包括 Microsoft Teams、Exchange、SharePoint 和 OneDrive。 除了实施这些策略外，我们还建议你使用这些资源提高租户的保护级别：
 
 - [配置租户以提高安全性](tenant-wide-setup-for-increased-security.md)
 
-  推荐适用于租户的基准安全性。
+  推荐适用于租户的起始点安全性。
 
 - [安全路线图：前 30 天、前 90 天及以后的首要任务](security-roadmap.md)
 
   推荐，包括日志记录、数据管理、管理员访问和威胁防护。
 
-### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 和 Microsoft 365 企业应用版
+### <a name="windows-11-or-windows-10-with-microsoft-365-apps-for-enterprise"></a>Windows 11 Windows 10或Microsoft 365 企业应用版
 
-Windows 10是Microsoft 365 企业应用版推荐用于电脑的客户端环境。 我们建议Windows 10，因为 Azure 旨在为本地和本地部署环境提供尽可能Azure AD。 Windows 10还包括可通过 Intune 管理的高级安全性功能。 Microsoft 365 企业应用版包括最新版本的 Office 应用程序。 这些身份验证使用新式验证，这是更安全且条件访问的要求。 这些应用还包括增强的合规性和安全工具。
+Windows 11 Windows 10或Microsoft 365 企业应用版是电脑的推荐客户端环境。 我们建议Windows 11或Windows 10，因为 Azure 旨在为本地和本地部署环境提供尽可能Azure AD。 Windows 11或Windows 10还包括可通过 Intune 管理的高级安全功能。 Microsoft 365 企业应用版包括最新版本的 Office 应用程序。 这些身份验证使用新式验证，这是更安全且条件访问的要求。 这些应用还包括增强的合规性和安全工具。
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>跨三层保护应用这些功能
 
 下表总结了我们对跨三层保护使用这些功能的建议。
 
-|保护机制|基线|敏感|高度管控|
+|保护机制|起点|企业|专用安全|
 |---|---|---|---|
 |强制执行 MFA|针对中级或以上登录风险|针对低级或以上登录风险|针对所有新会话|
 |**强制更改密码**|对于高风险用户|对于高风险用户|对于高风险用户|
@@ -179,34 +220,34 @@ Windows 10是Microsoft 365 企业应用版推荐用于电脑的客户端环境�
 
 ## <a name="deployment-and-your-apps"></a>部署和应用
 
-在配置和推出集成了应用的标识和设备Azure AD配置之前，你必须：
+在配置和推出适用于集成了 Azure AD应用的零信任标识和设备访问配置之前，你必须：
 
 - 确定要保护的组织中使用的应用。
 - 分析此应用列表，以确定提供适当保护级别的策略集。
 
   不应为每个应用创建单独的策略集，因为管理它们可能会变得很麻烦。 Microsoft 建议对对相同用户具有相同的保护要求的应用进行分组。
 
-  例如，你可以拥有一组策略，其中包括适用于所有用户的所有 Microsoft 365 应用进行基线保护，第二组策略适用于所有敏感应用（如人力资源或财务部门使用的策略）并应用于这些组。
+  例如，你可以拥有一组策略，其中包括针对所有用户的所有 Microsoft 365 应用，用于起始点保护;第二组策略适用于所有敏感应用（如人力资源或财务部门使用的策略）并应用于这些组。
 
 确定要保护的应用的策略集后，以增量方式向用户推出策略，同时解决问题。
 
-例如，配置将用于所有 Microsoft 365 应用的策略，Exchange Online其他更改Exchange。 向用户推出这些策略，并解决任何问题。 然后，添加Teams及其其他更改，并推出给用户。 然后，添加SharePoint其其他更改。 继续添加其余的应用，直到你可以放心地配置这些基线策略以包含所有Microsoft 365应用。
+例如，配置将用于所有 Microsoft 365 应用的策略，Exchange应用的其他Exchange。 向用户推出这些策略，并解决任何问题。 然后，添加Teams及其其他更改，并推出给用户。 然后，添加SharePoint其其他更改。 继续添加其余的应用，直到你可以放心地配置这些起始点策略以包含所有Microsoft 365应用。
 
 同样，对于敏感应用，创建一组策略，一次添加一个应用，并解决所有问题，直到所有问题都包含在敏感应用策略集内。
 
 Microsoft 建议不要创建适用于所有应用的策略集，因为这可能会导致一些意外配置。 例如，阻止所有应用的策略可能会将管理员锁定在 Azure 门户之外，并且无法为重要终结点（如 Microsoft Graph）配置排除项。
 
-## <a name="steps-to-configure-identity-and-device-access"></a>配置标识和设备访问的步骤
+## <a name="steps-to-configure-zero-trust-identity-and-device-access"></a>配置零信任标识和设备访问的步骤
 
-![配置标识和设备访问的步骤。](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
+![配置零信任标识和设备访问的步骤。](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. 配置先决条件标识功能及其设置。
 2. 配置通用标识和访问条件访问策略。
 3. 为来宾用户和外部用户配置条件访问策略。
-4. 为云应用配置Microsoft 365访问策略（如 Microsoft Teams、Exchange Online 和 SharePoint）和 Microsoft Defender for Cloud Apps 策略。
+4. 为云应用配置Microsoft 365访问策略，如 Microsoft Teams、Exchange 和 SharePoint 和 &mdash; Microsoft Defender for Cloud &mdash; Apps 策略。
 
-配置标识和设备访问后，请参阅[Azure AD 功能](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)部署指南，了解要考虑的其他功能的分阶段清单，Azure AD Identity Governance 来保护、监视[和](/azure/active-directory/governance/)审核访问。
+配置零信任标识和设备访问后，请参阅[Azure AD 功能](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)部署指南，了解要考虑的其他功能的分阶段清单，Azure AD [Identity Governance](/azure/active-directory/governance/)来保护、监视和审核访问。
 
 ## <a name="next-step"></a>后续步骤
 
-[实现标识和设备访问策略的先决条件工作](identity-access-prerequisites.md)
+[实现零信任标识和设备访问策略的先决条件工作](identity-access-prerequisites.md)

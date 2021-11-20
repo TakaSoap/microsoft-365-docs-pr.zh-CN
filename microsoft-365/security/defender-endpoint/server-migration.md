@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6512dd38fbcdd0a257635431406f837f713456a6
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 9e4381063d872a097423fed4a3cb47b05b42bf38
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111563"
+ms.locfileid: "61122353"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>上一个基于 MMA 的 Microsoft Defender 终结点解决方案中的服务器迁移方案
 
@@ -43,13 +43,13 @@ ms.locfileid: "61111563"
 > 不支持安装 Microsoft Defender for Endpoint 的操作系统升级。 请先卸载，然后再继续升级。
 
 > [!NOTE]
-> 在预览版Microsoft Endpoint Configuration Manager 2111 版 MECM 中提供了用于执行自动升级的完全自动化和集成功能。 在 2107 版本中，可以使用 Endpoint Protection 节点进行配置，以及组策略、PowerShell、Microsoft Endpoint Manager租户附加或本地配置。 此外，您还可以利用 Microsoft Endpoint Configuration Manager中的现有功能来自动执行手动升级步骤;下面介绍了这些方法。
+> 在预览期间，Microsoft Endpoint Configuration Manager 2111 版 MECM 中提供了用于执行自动升级的完全自动化和集成功能。 从 2107 版本中，可以使用 Endpoint Protection 节点进行配置，以及组策略、PowerShell、Microsoft Endpoint Manager租户附加或本地配置。 此外，您还可以利用 Microsoft Endpoint Configuration Manager中的现有功能来自动执行手动升级步骤;下面介绍其方法。
 
 ## <a name="installer-script"></a>安装程序脚本
 
 为了便于在 Microsoft Endpoint Configuration Manager 或 Microsoft Defender for Cloud 不可用或尚无法执行升级时进行升级，可以使用此升级[脚本](https://github.com/microsoft/mdefordownlevelserver)。 它可以帮助自动执行以下所需步骤：
 
-1. 删除 Microsoft Defender for Endpoint 的 OMS 工作区 (OPTIONAL) 。
+1. 删除 Microsoft Defender 终结点的 OMS 工作区 (可选) 。
 2. 如果System Center Endpoint Protection，请删除客户端。
 3. 下载并安装 (Windows Server 2012 R2) [必备](configure-server-endpoints.md#prerequisites)组件（如果需要）。
 4. 安装 Microsoft Defender for Endpoint。
@@ -61,7 +61,7 @@ ms.locfileid: "61111563"
 
 ## <a name="microsoft-endpoint-configuration-manager-migration-scenarios"></a>Microsoft Endpoint Configuration Manager迁移方案 
 
-### <a name="you-are-currently-using-microsoft-endpoint-configuration-manager-to-manage-your-servers-including-system-center-endpoint-protection-scep-and-are-running-the-microsoft-monitoring-agent-mma-based-sensor-you-want-to-upgrade-to-the-microsoft-defender-for-endpoint-unified-solution-preview"></a>你当前正在使用Microsoft Endpoint Configuration Manager管理服务器，包括 System Center Endpoint Protection (SCEP) ，并且正在运行基于 Microsoft Monitoring Agent (MMA) 传感器。 你想要升级到 Microsoft Defender for Endpoint 统一解决方案 **预览** 版。
+### <a name="you-are-currently-using-microsoft-endpoint-configuration-manager-to-manage-your-servers-including-system-center-endpoint-protection-scep-and-are-running-the-microsoft-monitoring-agent-mma-based-sensor-you-want-to-upgrade-to-the-microsoft-defender-for-endpoint-unified-solution-preview"></a>你当前正在使用Microsoft Endpoint Configuration Manager管理服务器，包括 System Center Endpoint Protection (SCEP) ，并且正在运行基于 MMA Microsoft Monitoring Agent () 传感器。 你想要升级到 Microsoft Defender for Endpoint 统一解决方案 **预览** 版。
 
 >[!NOTE]
 >你需要安装 2107 Microsoft Endpoint Configuration Manager版本。
@@ -84,31 +84,31 @@ ms.locfileid: "61111563"
 5. 创建和/或 (现有) Endpoint Protection策略分配给集合。
 6. 应用更新。
 
-### <a name="you-are-currently-using-microsoft-endpoint-configuration-manager-to-manage-your-servers-are-running-a-non-microsoft-antivirus-solution-and-the-mma-based-sensor-you-want-to-upgrade-to-the-new-microsoft-defender-for-endpoint"></a>你当前Microsoft Endpoint Configuration Manager服务器，正在运行非 Microsoft 防病毒解决方案和基于 MMA 的传感器。 你想要升级到新的 Microsoft Defender for Endpoint。
+### <a name="you-are-currently-using-microsoft-endpoint-configuration-manager-to-manage-your-servers-are-running-a-non-microsoft-antivirus-solution-and-the-mma-based-sensor-you-want-to-upgrade-to-the-new-microsoft-defender-for-endpoint"></a>您当前Microsoft Endpoint Configuration Manager服务器，正在运行非 Microsoft 防病毒解决方案和基于 MMA 的传感器。 你想要升级到新的 Microsoft Defender for Endpoint。
 
 迁移步骤：
 
 1. 完全更新计算机，包括Microsoft Defender 防病毒 (Windows Server 2016) 。
 2. 创建一个包含成员身份规则的新集合，以包含要迁移的计算机。 
 3. 确保第三方防病毒管理不再将防病毒推送到这些计算机。*
-4. 在 MECM 的 Endpoint Protection 节点中创作策略，并面向新创建的集合。*
+4. 在 MECM 的 Endpoint Protection 节点中创作您的策略，并面向新创建的集合。*
 5. 创建应用程序以执行以下任务：
    1. 删除 Microsoft Defender for Endpoint 的 MMA 工作区配置。 请参阅 [使用 PowerShell 删除工作区](/azure/azure-monitor/agents/agent-manage)。 此步骤是可选的;上一EDR传感器将在较新的传感器变为活动状态后停止 (请注意，这可能需要几个小时) 。
    2. 安装 [必备组件](configure-server-endpoints.md#prerequisites) （如果适用）。
-   3. 安装适用于 R2 和 2016 Windows Server 2012的 Microsoft Defender for Endpoint，**并启用被动模式**。 请参阅[Install Microsoft Defender 防病毒 using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line)。
+   3. 安装适用于 R2 和 2016 Windows Server 2012的 Microsoft Defender for Endpoint 并 **启用被动模式**。 请参阅[Install Microsoft Defender 防病毒 using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line)。
    4. 应用载入脚本 **，以与** 从 Microsoft Defender 安全中心 下载的组 [策略一Microsoft Defender 安全中心。](https://securitycenter.microsoft.com)
 6. 应用更新。
 7. 使用非 Microsoft 防病毒控制台或根据情况使用 Microsoft Endpoint Configuration Manager删除非 Microsoft 防病毒软件。 确保删除被动模式配置。*
 
-提示：可以将 [安装程序脚本](server-migration.md#installer script) 用作应用程序的一部分，以自动执行上述步骤。 若要启用被动模式，请应用 -Passive 标志。 示例：.\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
+> [!TIP]
+> 可以将安装程序 [脚本用作](server-migration.md#installer script) 应用程序的一部分，以自动执行上述步骤。 若要启用被动模式，请应用 -Passive 标志。 例如，.\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
 
-*这些步骤仅适用于要替换非 Microsoft 防病毒解决方案时。 请参阅[更好的一起：Microsoft Defender 防病毒和 Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)。
+*这些步骤仅适用于要替换非 Microsoft 防病毒解决方案时。 请参阅[更好地结合：Microsoft Defender 防病毒和 Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)。
 
 若要将计算机从被动模式移开，将以下键设置为 0：
 
-路径：HKLM\SOFTWARE\Policies\Microsoft\Windows高级威胁防护名称：ForceDefenderPassiveMode 类型：REG_DWORD值：0
+路径：HKLM\SOFTWARE\Policies\Microsoft\Windows 高级威胁防护名称：ForceDefenderPassiveMode 类型：REG_DWORD值：0
 
-有关详细信息，请参阅需要[将Microsoft Defender 防病毒被动模式？。](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)
 
 ## <a name="other-migration-scenarios"></a>其他迁移方案
 
@@ -136,15 +136,15 @@ ms.locfileid: "61111563"
 6. 使用组策略、PowerShell 或第三方管理解决方案创建和应用策略。
 
 > [!TIP]
-> 可以使用安装程序 [脚本来帮助自动](server-migration.md#installer-script) 执行步骤 1 到步骤 4。 若要启用被动模式，请应用 -Passive 标志，这将确保 Defender 防病毒在载入前进入被动模式，并且不会干扰非 Microsoft 反恶意软件解决方案。 然后，确保 Defender 防病毒在载入后保持被动模式，以支持 EDR 功能（如 EDR 阻止）请确保设置"ForceDefenderPassiveMode"注册表项。 示例： `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive` 有关详细信息，请参阅需要将Microsoft Defender 防病毒[被动模式？。](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)
+> 可以使用安装程序 [脚本来帮助自动](server-migration.md#installer-script) 执行步骤 1 到步骤 4。 若要启用被动模式，请应用 -Passive 标志，这将确保 Defender 防病毒在载入前进入被动模式，并且不会干扰非 Microsoft 反恶意软件解决方案。 然后，确保 Defender 防病毒在载入后保持被动模式，以支持 EDR 功能，如 EDR Block，请确保设置"ForceDefenderPassiveMode"注册表项。 示例： `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
 
-*此步骤仅适用于要替换非 Microsoft 防病毒解决方案的情况。 我们建议使用 Microsoft Defender 防病毒（包含在 Microsoft Defender for Endpoint 中）来提供完整的功能集。 请参阅[更好地结合：Microsoft Defender 防病毒和 Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)。
+
+*此步骤仅适用于要替换非 Microsoft 防病毒解决方案的情况。 我们建议使用 Microsoft Defender 防病毒（包含在 Microsoft Defender for Endpoint 中）来提供完整的功能集。 请参阅[更好的一起：Microsoft Defender 防病毒和 Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)。
 
 若要将计算机从被动模式移开，将以下键设置为 0：
 
-路径：HKLM\SOFTWARE\Policies\Microsoft\Windows 高级威胁防护名称：ForceDefenderPassiveMode 类型：REG_DWORD值：0
+路径：HKLM\SOFTWARE\Policies\Microsoft\Windows高级威胁防护名称：ForceDefenderPassiveMode 类型：REG_DWORD值：0
 
-有关详细信息，请参阅需要[将Microsoft Defender 防病毒被动模式？。](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)
 
 ## <a name="microsoft-defender-for-cloud-scenarios"></a>Microsoft Defender 云方案
 

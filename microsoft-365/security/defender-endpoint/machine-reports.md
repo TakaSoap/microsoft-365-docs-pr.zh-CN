@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db2b82f1f966946f66a1c23dbe8b1c708549dc8e
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 9efd1b6785c711855e32f80580d567a2d0befa93
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556156"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121167"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的设备运行状况和合规性报告
 
@@ -30,13 +30,14 @@ ms.locfileid: "60556156"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 设备状态报告提供有关组织中设备的高级别信息。 该报告包括显示传感器运行状况状态、防病毒状态、操作系统平台以及 Windows 10 (和 Windows 11) 的信息。
 
 仪表板分为两个部分：
 
-![设备报告的图像。](images/device-reports.png)
+:::image type="content" alt-text="设备报告的图像。" source="images/device-reports.png" lightbox="images/device-reports.png":::
+
 
 <br>
 
@@ -50,10 +51,10 @@ ms.locfileid: "60556156"
 
 ## <a name="device-trends"></a>设备趋势
 
-默认情况下，设备趋势显示从最后一整天结束的 30 天期间的设备信息。 为了更好地了解组织中出现的趋势，您可以通过调整所显示的时间段来微调报告期间。 若要调整时间段，请从下拉列表选项中选择一个时间范围：
+默认情况下，设备趋势显示从最后一整天结束的 30 天期间的设备信息。 为了更好地了解组织中发生的趋势，您可以通过调整所显示的时间段来微调报告期间。 若要调整时间段，请从下拉列表选项中选择一个时间范围：
 
 - 30 天
-- 3 个月
+- 三个月
 - 6 个月
 - 自定义警报
 
@@ -76,9 +77,9 @@ ms.locfileid: "60556156"
 报告由显示以下设备属性的卡片所决定：
 
 - **运行状况：** 显示有关设备上传感器状态的信息，提供活动、通信受损、非活动或未看到传感器数据的设备的聚合视图。
-- **活动Windows 10防病毒状态**：显示设备数量和Microsoft Defender 防病毒。
+- **活动Windows 10** 的防病毒状态：显示设备的数量和Microsoft Defender 防病毒。
 - **操作系统** 平台 ：显示存在于您的组织中的操作系统平台的分布。
-- **Windows 10版本**： 显示组织中Windows 10设备及其版本的分布。
+- **Windows 10版本**： 显示组织中Windows 10设备及其版本的分布情况。
 
 ## <a name="filter-data"></a>筛选数据
 

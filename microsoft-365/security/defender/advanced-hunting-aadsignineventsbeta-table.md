@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 AADSignInEventsBeta 表
 description: 了解Azure Active Directory搜寻架构的登录事件表
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 描述， 文件， IP 地址， 设备， 计算机， 用户， 帐户， 标识， AAD
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， 文件， IP 地址， 设备， 计算机， 用户， 帐户， 标识， AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3c25132cc8743bf791123ae2cc4d29a195faa34a
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 4df4b12d6b82a4738653485b7c32f954f26dccac
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755345"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122497"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -32,7 +32,7 @@ ms.locfileid: "60755345"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> 该表当前处于 beta 版本，并短期提供，以便你可以Azure Active Directory (AAD) `AADSignInEventsBeta` 登录事件。 客户需要拥有一Azure Active Directory Premium P2许可证才能收集和查看此表的活动。 我们最终将所有登录架构信息移动到 `IdentityLogonEvents` 表中。
+> 该表当前处于 beta 版本，并短期提供，以便你可以Azure Active Directory (AAD) `AADSignInEventsBeta` 登录事件。 客户需要拥有一Azure Active Directory Premium P2许可证才能收集和查看此表的活动。 所有登录架构信息最终将移动到 `IdentityLogonEvents` 表中。
 
 高级 `AADSignInEventsBeta` 搜寻架构中的表包含有关Azure Active Directory和非交互式登录的信息。了解有关登录活动报告中Azure Active Directory[的详细信息 - 预览](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。 
 
@@ -47,13 +47,13 @@ ms.locfileid: "60755345"
 |`Timestamp`|datetime|生成记录的日期和时间|
 |`Application`|string|执行录制的操作的应用程序|
 |`ApplicationId`|string|应用程序的唯一标识符|
-|`LogonType`|string|登录会话类型、交互式、远程 (RDP) 、网络、批处理和服务|
+|`LogonType`|string|登录会话类型、交互式、远程交互式 (RDP) 、网络、批处理和服务|
 |`ErrorCode`|int|包含登录错误时的错误代码。 若要查找特定错误代码的说明，请访问 <https://aka.ms/AADsigninsErrorCodes> 。|
 |`CorrelationId`|string|登录事件的唯一标识符|
 |`SessionId`|string|在访问或会话期间由网站服务器分配给用户的唯一号码|
 |`AccountDisplayName`|string|通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间名首字母和姓氏或姓氏的组合。|
 |`AccountObjectId`|string|Azure AD|
-|`AccountUpn`|string|帐户 (UPN) 用户主体名称|
+|`AccountUpn`|string|帐户 (UPN) 的用户主体名称|
 |`IsExternalUser`|int|指示登录的用户是否位于外部。 可能的值：-1 (未) ，0 (外部) ，1 (外部) 。|
 |`IsGuestUser`|boolean|指示登录的用户是否是租户中的来宾|
 |`AlternateSignInName`|string|本地用户主体名称 (UPN) 登录用户的 UPN Azure AD|
@@ -63,21 +63,21 @@ ms.locfileid: "60755345"
 |`ResourceTenantId`|string|访问的资源的租户的唯一标识符|
 |`DeviceName`|string|计算机的完全限定域名 (FQDN)|
 |`AadDeviceId`|string|设备上设备的唯一Azure AD|
-|`OSPlatform`|string|计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10 和 Windows 7。|
+|`OSPlatform`|string|计算机上运行的操作系统平台。 指示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10 和 Windows 7。|
 |`DeviceTrustType`|string|指示登录设备的信任类型。 仅适用于托管设备方案。 可能的值是 Workplace、AzureAd 和 ServerAd。|
 |`IsManaged`|int|指示启动登录的设备是否是托管设备 (1) 0 (托管) |
 |`IsCompliant`|int|指示启动登录的设备是否符合 (1) 0 () |
 |`AuthenticationProcessingDetails`|string|有关身份验证处理器的详细信息|
 |`AuthenticationRequirement`|string|登录所需的身份验证类型。 可能的值：multiFactorAuthentication (MFA 是必需的) singleFactorAuthentication (不需要 MFA) 。|
-|`TokenIssuerType`|int|指示令牌颁发者是否Azure Active Directory (0) Active Directory 联合身份验证服务 (1) |
+|`TokenIssuerType`|int|指示令牌颁发者是 Azure Active Directory (0) 还是 Active Directory 联合身份验证服务 (1) |
 |`RiskLevelAggregated`|int|登录期间聚合的风险级别。 可能的值：0 (未设置) 、1 (无) 、10 (低) 、50 (medium) 或 100 (high) 。|
 |`RiskDetails`|int|有关登录用户的风险状态的详细信息|
-|`RiskState`|int|指示有风险的用户状态。 可能的值：0 (无) 、1 (经确认的安全) 、2 (已修复) 、3 (已消除) 、4 (存在风险) 或 5 (确认遭到入侵) 。|
+|`RiskState`|int|指示有风险的用户状态。 可能的值：0 (无) 、1 (确认安全) 、2 (已修复) 、3 (已消除) 、4 (存在风险) 或 5 (确认已泄露) 。|
 |`UserAgent`|string|来自 Web 浏览器或其他客户端应用程序的用户代理信息|
 |`ClientAppUsed`|string|指示使用的客户端应用|
 |`Browser`|string|有关用于登录的浏览器版本的详细信息|
 |`ConditionalAccessPolicies`|string|应用于登录事件的条件访问策略的详细信息|
-|`ConditionalAccessStatus`|int|应用于登录的条件访问策略的状态。 可能的值是 0 (应用的策略) 1 (尝试应用策略失败) 或 2 (策略未) 。|
+|`ConditionalAccessStatus`|int|应用于登录的条件访问策略的状态。 可能的值是 0 (应用) ，1 (尝试应用策略失败) ，或 2 (策略未) 。|
 |`IPAddress`|string|分配给终结点的 IP 地址，在相关的网络通信期间使用|
 |`Country`|string|指示客户端 IP 地址已异地地理位置的两个字母的代码|
 |`State`|string|登录发生的位置（如果可用）|

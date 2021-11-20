@@ -1,6 +1,6 @@
 ---
 title: 实时响应命令示例
-description: 了解如何为 Microsoft Defender for Endpoint 运行基本或高级实时响应命令，并查看有关其使用方式的示例。
+description: 了解如何为 Microsoft Defender for Endpoint 运行基本或高级实时响应命令，并查看有关如何使用它们的示例。
 keywords: 示例， command， cli， remote， shell， connection， live， response， real-time， command， script， remediate， hunt， export， log， drop， download， file
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6b234a27ccf011cdc20b7c1c5ab34e4322bfc5fd
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 39afd823c0d51494e5ad6e16f15f6cfc1eac131b
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587703"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121933"
 ---
 # <a name="live-response-command-examples"></a>实时响应命令示例
 
@@ -34,9 +34,9 @@ ms.locfileid: "60587703"
 
 了解实时响应中使用的常用命令，并查看常用命令使用方法的示例。
 
-根据已授予的角色，可以运行基本或高级实时响应命令。 有关基本命令和高级命令详细信息，请参阅使用实时响应调查 [设备上的实体](live-response.md)。
+根据你拥有的角色，你可以运行基本或高级实时响应命令。 有关基本命令和高级命令详细信息，请参阅使用实时响应调查 [设备上的实体](live-response.md)。
 
-## <a name="analyze"></a>analyze
+## `analyze`
 
 ```console
 # Analyze the file malware.txt
@@ -48,7 +48,7 @@ analyze file c:\Users\user\Desktop\malware.txt
 analyze process 1234
 ```
 
-## <a name="connections"></a>connections
+## `connections`
 
 ```console
 # List active connections in json format using parameter name
@@ -60,7 +60,7 @@ connections -output json
 connections json
 ```
 
-## <a name="dir"></a>dir
+## `dir`
 
 ```console
 # List files and sub-folders in the current folder
@@ -77,21 +77,21 @@ dir C:\Users\user\Desktop\
 dir -output json
 ```
 
-## <a name="fileinfo"></a>fileinfo
+## `fileinfo`
 
 ```console
 # Display information about a file
 fileinfo C:\Windows\notepad.exe
 ```
 
-## <a name="findfile"></a>findfile
+## `findfile`
 
 ```console
 # Find file by name
 findfile test.txt
 ```
 
-## <a name="getfile"></a>getfile
+## `getfile`
 
 ```console
 # Download a file from a machine
@@ -105,18 +105,18 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 > [!NOTE]
 >
-> 无法使用此命令 **从** 实时响应中下载以下文件类型：
+> 无法使用此命令 *从* 实时响应中下载以下文件类型：
 >
 > - [重新分析点文件](/windows/desktop/fileio/reparse-points/)
 > - [稀疏文件](/windows/desktop/fileio/sparse-files/)
 > - 空文件
 > - 虚拟文件或在本地未完全呈现的文件
 >
-> PowerShell **支持** 这些 [文件类型](/powershell/scripting/overview)。
+> PowerShell *支持* 这些 [文件类型](/powershell/scripting/overview)。
 >
 > 如果遇到在实时响应中使用此命令时遇到问题，请使用 PowerShell 作为备选方法。
 
-## <a name="library"></a>库
+## `library`
 
 ```console
 # List files in the library
@@ -128,7 +128,7 @@ library
 library delete script.ps1
 ```
 
-## <a name="processes"></a>processes
+## `processes`
 
 ```console
 # Show all processes
@@ -150,7 +150,7 @@ processes -pid 123
 processes -name notepad.exe
 ```
 
-## <a name="putfile"></a>putfile
+## `putfile`
 
 ```console
 # Upload file from library
@@ -167,7 +167,7 @@ putfile get-process-by-name.ps1 -overwrite
 putfile get-process-by-name.ps1 -keep
 ```
 
-## <a name="registry"></a>注册表
+## `registry`
 
 ```console
 # Show information about the values in a registry key
@@ -180,7 +180,7 @@ registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
 
-## <a name="remediate"></a>修正
+## `remediate`
 
 ```console
 # Remediate file in specific path
@@ -197,7 +197,7 @@ remediate process 7960
 remediate list
 ```
 
-## <a name="run"></a>run
+## `run`
 
 ```console
 # Run PowerShell script from the library without arguments
@@ -214,7 +214,7 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 > 对于长时间运行的命令（如 **"run"** 或 **"getfile"，** 您可能需要在命令末尾使用""符号在后台 **&** 执行该操作。
 > 这将允许你在使用 **'fg'** 基本命令完成时继续调查计算机并返回到 [后台命令](live-response.md#basic-commands)。
 
-## <a name="scheduledtask"></a>scheduledtask
+## `scheduledtask`
 
 ```console
 # Get all scheduled tasks
@@ -231,7 +231,7 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-## <a name="undo"></a>undo
+## `undo`
 
 ```console
 # Restore remediated registry

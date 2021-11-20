@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3773e124aa63b5975bf1dc8156e32edb0f3f3c8a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e1072029313915421ce1fe38aa3421701569d455
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194173"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122465"
 ---
 # <a name="get-machineaction-api"></a>获取 machineAction API
 
@@ -41,16 +41,16 @@ ms.locfileid: "60194173"
 
 ## <a name="limitations"></a>限制
 
-1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
+- 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
 ## <a name="permissions"></a>权限
 
-若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅对 [终结点 API 使用 Defender](apis-intro.md)
+若要调用此 API，需要以下权限之一。 若要了解更多信息，包括如何选择权限，请参阅对[终结点 API 使用 Defender。](apis-intro.md)
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Machine.Read.All|"读取所有计算机配置文件"
-Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+应用程序|Machine.Read.All|"读取所有计算机配置文件"
+应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.Read|"读取计算机信息"
 委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 
@@ -91,7 +91,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/2e9da30d-27f6-42
 
 ### <a name="response-example"></a>响应示例
 
-下面是一个响应示例。
+以下是响应示例。
 
 ```json
 HTTP/1.1 200 Ok

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 56630e211d5d445e675e4f9af655c062db4ad4b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5ee59bb41e4c126d13db03fc570de9635c0fe7cf
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211296"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122461"
 ---
 # <a name="get-alert-related-user-information-api"></a>获取与警报相关的用户信息 API
 
@@ -44,8 +44,8 @@ ms.locfileid: "60211296"
 
 ## <a name="limitations"></a>限制
 
-1. 你可以根据配置的保留期查询上次更新的警报。
-2. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
+- 你可以根据配置的保留期查询上次更新的警报。
+- 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
 ## <a name="permissions"></a>权限
 
@@ -59,8 +59,8 @@ Application|User.Read.All|"读取用户配置文件"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (创建和管理设备组，了解) [](machine-groups.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
+> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -72,7 +72,7 @@ GET /api/alerts/{id}/user
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 必需。
+Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

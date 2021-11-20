@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e801cf81dff4b05995d5c9a47508fc16dcf8b524
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2348197f42e12e5fca64bee8beb881a9fdba909e
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110759"
+ms.locfileid: "61122545"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows载入 Microsoft Defender for Endpoint 服务
 
@@ -155,11 +155,12 @@ Microsoft Defender for Endpoint 与 Microsoft Defender for Cloud 无缝集成。
 3. 选择 **下载安装程序包** 并保存.msi文件。 可以通过安装向导运行 msi 程序包，或按照使用命令行安装 Microsoft Defender [for Endpoint 中的命令行步骤操作](#install-microsoft-defender-for-endpoint-using-command-line)。
 
    > [!NOTE]
-   > Microsoft Defender 防病毒将安装并处于活动状态，除非你将它设置为被动模式。 有关详细信息，请参阅需要[将Microsoft Defender 防病毒被动模式？。](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)
+   > Microsoft Defender 防病毒将安装并处于活动状态，除非你将它设置为被动模式。 
+ 
 
 4. 选择 **下载载入程序包** 并保存.zip文件。
 
-5. 使用任一选项安装安装程序包Microsoft Defender 防病毒。  (请参阅 Microsoft Defender 防病毒[Server .Windows 上的](microsoft-defender-antivirus-on-windows-server.md)) 
+5. 使用任一选项安装安装程序包Microsoft Defender 防病毒。 
 
 6. 按照载入步骤部分中 [提供的步骤](#onboarding-steps) 操作。
 
@@ -173,13 +174,17 @@ Microsoft Defender for Endpoint 与 Microsoft Defender for Cloud 无缝集成。
 
 运行以下命令以安装 Microsoft Defender for Endpoint：
 
-`msiexec /i md4ws.msi /quiet`
+```console
+Msiexec /i md4ws.msi /quiet
+```
 
 若要卸载，请确保首先使用相应的卸载脚本将计算机卸载。 然后，使用控制面板 \> 程序 \> 程序和功能执行卸载。
 
 或者，运行以下卸载命令以卸载 Microsoft Defender for Endpoint：
 
-`msiexec /x md4ws.msi /quiet`
+```console
+Msiexec /x md4ws.msi /quiet
+```
 
 必须使用相同的程序包进行安装，上述命令才能成功。
 
@@ -187,8 +192,6 @@ Microsoft Defender for Endpoint 与 Microsoft Defender for Cloud 无缝集成。
 
 > [!NOTE]
 > Microsoft Defender 防病毒不会自动进入被动模式。 如果你运行的是非 Microsoft Microsoft Defender 防病毒/反恶意软件解决方案，你可以选择将应用设置为在被动模式下运行。 对于命令行安装，可选组件 `FORCEPASSIVEMODE=1` 会立即Microsoft Defender 防病毒被动模式以避免干扰。 然后，为了确保 Defender 防病毒在载入后保持被动模式以支持 EDR 阻止等功能，请设置"ForceDefenderPassiveMode"注册表项。
->
-> 有关详细信息，请参阅需要[将Microsoft Defender 防病毒被动模式？。](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)
 >
 > - Windows Server 2019 和 Windows Server 2022 的载入Microsoft Endpoint Manager目前附带脚本。 若要详细了解如何在 Configuration Manager 中部署脚本，请参阅 Configuration [Manager 中的程序包和程序](/configmgr/apps/deploy-use/packages-and-programs)。
 > - 本地脚本适用于概念证明，但不应用于生产部署。 对于生产部署，我们建议使用组策略或Microsoft Endpoint Configuration Manager。
@@ -232,7 +235,7 @@ Windows Server 2019 和 Windows Server 2022 的载入Microsoft Endpoint Manager�
         ```
 
         > [!NOTE]
-        >
+
         > - Microsoft Defender for servers 和 Microsoft Defender for Endpoint 之间的集成已扩展为支持 Windows Server 2022、Windows [Server 2019 和 Windows Virtual Desktop (WVD) 。 ](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
         > - 已针对客户禁用利用此集成的服务器终结点Office 365 GCC监视。
 
@@ -256,16 +259,18 @@ Defender for Endpoint 收集的数据存储在预配期间标识的租户地理�
 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md)设备运行检测测试。
 
 > [!NOTE]
-> 虽然Microsoft Defender 防病毒运行，但建议这样做。 如果另一个防病毒供应商产品是主要终结点保护解决方案，可以在被动模式下运行 Defender 防病毒。 在验证 Microsoft Defender for Endpoint 传感器是否处于运行状态后，你 (被动) 处于打开状态。
+> 无需Microsoft Defender 防病毒运行应用程序，但建议这样做。 如果另一个防病毒供应商产品是主要终结点保护解决方案，可以在被动模式下运行 Defender 防病毒。 在验证 Microsoft Defender for Endpoint 传感器是否处于运行状态后，你 (被动) 处于打开状态。
 
-1. 运行以下命令以验证Microsoft Defender 防病毒安装：
+1. 运行以下命令来验证Microsoft Defender 防病毒安装：
 
     >[!NOTE]
     >只有在将 Microsoft Defender 防病毒用作活动的反恶意软件解决方案时，才需要执行此步骤。
 
     `sc.exe query Windefend`
 
-    如果结果是 `The specified service doesn't exist as an installed service` ，则需要安装 Microsoft Defender 防病毒。 有关详细信息，请参阅 Microsoft Defender 防病毒[Server Windows。](microsoft-defender-antivirus-on-windows-server.md)
+
+    如果结果是"指定的服务作为已安装的服务不存在"，则需要安装Microsoft Defender 防病毒。 
+
 
     有关如何使用组策略配置和管理 Microsoft Defender 防病毒 服务器Windows的信息，请参阅使用组策略设置配置[和管理](use-group-policy-microsoft-defender-antivirus.md)Microsoft Defender 防病毒。
 

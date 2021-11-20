@@ -16,16 +16,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3535e258cb5825a5be4ff97e4bd03a700c80589c
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 3976ff16d303db93d2ae7929afe1244f8ab1dda5
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914208"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121813"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>管理事件Microsoft 365 Defender
 
@@ -37,7 +38,8 @@ ms.locfileid: "60914208"
 
 事件管理对于确保包含和解决威胁至关重要。
 
-在快速启动 Microsoft 365 Defender 门户&事件>**事件** (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
+用户动态动态 快速启动 Microsoft 365 Defender 门户&事件>**事件** 事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
+
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -78,7 +80,7 @@ Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影�
 
 ## <a name="assign-an-incident"></a>分配事件
 
-如果尚未分配事件，可以选择"分配到"框，并指定用户帐户 (预览) 。 Te re-assign an incident， remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. 分配事件的所有权会为与其关联的所有警报分配相同的所有权。
+如果尚未分配事件，可以选择"分配给"框，并指定用户帐户 (预览) 。 Te re-assign an incident， remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. 分配事件的所有权会为与其关联的所有警报分配相同的所有权。
 
 通过筛选事件队列，您可以获取分配给您的事件列表。 
 
