@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 双字节字符集支持的发行说明。
-ms.openlocfilehash: 3731e32594461df29a9cc5ec3f21bf3eb17ee79c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e87e88b63bf44c7ea4154fa24c05c0e8e252a446
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190673"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111491"
 ---
 # <a name="support-for-double-byte-character-set-release-notes"></a>双字节字符集支持发行说明
 
@@ -30,7 +30,7 @@ ms.locfileid: "60190673"
 - 韩语
 - 日语
 
-此支持适用于敏感信息类型和关键字词典，并将在数据丢失防护（适用于 Exchange Online、SharePoint Online、OneDrive for Business 和 Teams）、通信合规性、Office 应用中的自动标签和 Microsoft 云应用安全中有所体现。
+此支持适用于敏感信息类型和关键字词典，并将在数据丢失防护（适用于 Exchange Online、SharePoint Online、OneDrive for Business 和 Teams）、通信合规性、Office 应用中的自动标签和 Microsoft Defender for Cloud Apps 中有所体现。
 
 ## <a name="known-issues"></a>已知问题
 
@@ -47,5 +47,3 @@ ms.locfileid: "60190673"
   - “附件包含其中任意字词”
 
 相反，建议使用可检测邮件和附件中的模式的关键字字典创建自定义敏感信息类型 (SIT)，并将此自定义 SIT 作为通信合规性策略条件。
-
-

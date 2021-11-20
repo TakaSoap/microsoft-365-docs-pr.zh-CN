@@ -19,16 +19,17 @@ ms.custom:
 - OKR_SMB_M365
 - seo-marvel-mar
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 description: 设置 Microsoft Defender Office 365保护敏感数据免受网络钓鱼、恶意软件和其他威胁的侵害。
-ms.openlocfilehash: 89405628488d5a8574636025a614a3aac7e20dd9
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3aa65b31c3995e39164b6bd5d7aa3aa07e7f6009
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667778"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128672"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -40,7 +41,15 @@ ms.locfileid: "60667778"
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>提高邮件中恶意软件防护级别
 
-您的Office 365环境Microsoft 365恶意软件防护。 您可以通过阻止具有通常用于恶意软件的文件类型的附件来增强此保护。 增强电子邮件中的恶意软件保护：
+您的Office 365环境Microsoft 365恶意软件防护。 您可以通过阻止具有通常用于恶意软件的文件类型的附件来增强此保护。 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OA7Z?autoplay=false]
+
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心，</a>choose **Show more**， **Admin centers**， and then Security **& Compliance**.
+1. 选择 **"威胁管理**"，然后选择"**策略"。**
+1. 从可用的策略中，选择 **"反恶意软件"。**
+
+增强电子邮件中的恶意软件保护：
 
 1. 转到 [https://protection.office.com](https://protection.office.com) ，然后使用管理员帐户凭据登录。
 
@@ -62,11 +71,18 @@ ms.locfileid: "60667778"
 
 ## <a name="protect-against-ransomware"></a>防范勒索软件
 
-勒索软件通过加密文件或锁定计算机屏幕来限制对数据的访问。 然后，它尝试通过请求"勒索"（通常采用加密货币（如"Itin"）来从犯罪中勒索资金，以交换对数据的访问权限。
+勒索软件通过加密文件或锁定计算机屏幕来限制对数据的访问。 然后，它尝试通过请求"勒索"（通常采用加密货币（如"Itin"）来从犯罪中勒索资金，以交换对数据的访问。
 
-若要防范勒索软件，请创建一个或多个邮件流规则，以阻止通常用于勒索软件的文件扩展名。  (在提高邮件步骤中的恶意软件防护级别中添加[](#raise-the-level-of-protection-against-malware-in-mail)了这些规则。) 您还可以警告通过电子邮件接收这些附件的用户。
+若要防范勒索软件，请创建一个或多个邮件流规则，以阻止通常用于勒索软件的文件扩展名。  (在提高邮件步骤中的恶意软件防护级别[](#raise-the-level-of-protection-against-malware-in-mail)中添加了这些规则) 您还可以警告通过电子邮件接收这些附件的用户。
 
 除了在上一步中阻止的文件之外，最佳做法是创建一个规则，在打开包含宏的 Office 文件附件之前警告用户。 勒索软件可以隐藏在宏内，因此警告用户不要从他们不知道的人打开这些文件。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrWGt?autoplay=false]
+
+1. 在管理中心中 [https://admin.microsoft.com](https://admin.microsoft.com) ，选择 **"Exchange** 中心 **"下的"管理中心"。**
+1. 从左侧的菜单中，选择"**邮件流"。**
+1. On the rules tab， choose the arrow next to the plus (+) symbol， and then choose **Create a new rule**.
+1. 在"**新规则**"页上，输入规则名称，滚动到底部，然后选择"更多 **选项"。**
 
 创建邮件传输规则：
 
@@ -80,7 +96,7 @@ ms.locfileid: "60667778"
 
 5. 为规则应用下表中的设置。 对其余设置使用默认值，除非您要更改它们。
 
-6. 选择“**保存**”。
+6. 选择 **“保存”**。
 
 |Setting|在打开文件附件之前Office警告|
 |---|---|
@@ -112,7 +128,7 @@ ms.locfileid: "60667778"
 
 5. 应用下表中的设置。 对其余设置使用默认值，除非您要更改它们。
 
-6. 选择“**保存**”。
+6. 选择 **“保存”**。
 
 |Setting|在打开文件附件之前Office警告|
 |---|---|
@@ -122,14 +138,13 @@ ms.locfileid: "60667778"
 |执行以下操作...|阻止邮件 。 . . 拒绝邮件并给出说明。|
 |提供消息文本|出于安全考虑，阻止在此组织外自动转发电子邮件。|
 
-
 ## <a name="protect-your-email-from-phishing-attacks"></a>保护电子邮件免受网络钓鱼攻击
 
 如果已针对您的 Office 365 或 Microsoft 365 环境配置了一个或多个自定义域，您可以配置目标防钓鱼保护。 防钓鱼保护是 Microsoft Defender Office 365的一部分，可帮助保护组织免受基于恶意模拟的网络钓鱼攻击和其他网络钓鱼攻击。 如果尚未配置自定义域，则无需这样做。
 
 我们建议你通过创建一个策略来保护最重要的用户和自定义域来开始使用此保护。
 
-若要在 Microsoft Defender for Office 365创建防钓鱼策略，请观看[](../../business-video/setup-anti-phishing.md)此简短培训视频，或完成以下步骤：
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
 1. 转到 [https://protection.office.com](https://protection.office.com)。
 
@@ -148,7 +163,7 @@ ms.locfileid: "60667778"
 |名称|域和最有价值的宣传活动人员|
 |说明|确保不会模拟最重要的员工和域。|
 |添加要保护的用户|选择 **+ 添加条件，收件人是**。 键入用户名或输入候选人、市场活动经理和其他重要员工成员的电子邮件地址。 您最多可以添加 20 个要防止模拟的内部和外部地址。|
-|添加要保护的域|选择 **+ 添加条件，收件人域为**。 如果已定义自定义域，请输入Microsoft 365订阅关联的自定义域。 可以输入多个域。|
+|添加要保护的域|选择 **+ 添加条件，收件人域为**。 如果定义了自定义域，请输入Microsoft 365订阅关联的自定义域。 可以输入多个域。|
 |选择操作|如果电子邮件由模拟用户发送：选择"将邮件重定向到其他电子邮件地址"，然后键入安全管理员的电子邮件地址;例如 *，Alice <span> <span> @contoso.com*。 如果电子邮件是由模拟域发送的：请选择“隔离邮件”。|
 |邮箱智能|默认情况下，创建新的反钓鱼策略时，将选择邮箱智能。 最好将此设置保留为“打开”。|
 |添加受信任的发件人和域|可以在此处添加您自己的域，或任何其他受信任域。|
@@ -156,7 +171,7 @@ ms.locfileid: "60667778"
 
 ## <a name="protect-against-malicious-attachments-and-files-with-safe-attachments"></a>防范恶意附件和带附件保险箱文件
 
-人们定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 通过查看电子邮件来判断附件是安全还是恶意并不总是那么容易。 Microsoft Defender for Office 365包括保险箱附件保护，但默认情况下不启用此保护。 我们建议您创建一个新规则以开始使用此保护。 此保护扩展到 SharePoint、OneDrive 和 Microsoft Teams 中的文件。
+人们定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 通过查看电子邮件来判断附件是安全还是恶意并不总是那么容易。 Microsoft Defender for Office 365包括保险箱附件保护，但默认情况下不会启用此保护。 我们建议您创建一个新规则以开始使用此保护。 此保护扩展到 SharePoint、OneDrive 和 Microsoft Teams 中的文件。
 
 若要创建保险箱附件策略，请观看此[简短](../../business-video/safe-attachments.md)视频，或完成以下步骤：
 
@@ -164,9 +179,9 @@ ms.locfileid: "60667778"
 
 2. 在安全 &amp; 与合规中心的左侧导航窗格中，在"威胁管理"下，选择"策略 **"。**
 
-3. 在"策略"页上，选择 **"保险箱附件"。**
+3. 在"策略"页面上，选择 **"保险箱附件"。**
 
-4. 在"保险箱附件"页上，通过选中"打开 **ATP for SharePoint、OneDrive** 和 Microsoft Teams"复选框来广泛应用此保护。
+4. On the 保险箱 attachments page， apply this protection broadly by selecting the **Turn on ATP for SharePoint， OneDrive， and Microsoft Teams** check box.
 
 5. 选择 **+** 以创建新策略。
 
@@ -182,11 +197,19 @@ ms.locfileid: "60667778"
 |检测时重定向附件|启用重定向 (选中此框) 输入要隔离的管理员帐户或邮箱设置。          如果恶意软件扫描附件出现时间过或出现错误，请应用 (选中此框) 。|
 |应用于|收件人域为 。 . . 选择你的域。|
 
-有关详细信息，请参阅在 Microsoft Defender 中设置防[钓鱼策略Office 365。](../../security/office-365-security/set-up-anti-phishing-policies.md)
+有关详细信息，请参阅在 Microsoft Defender 中为用户设置防钓鱼[Office 365。](../../security/office-365-security/set-up-anti-phishing-policies.md)
 
 ## <a name="protect-against-phishing-attacks-with-safe-links"></a>使用链接抵御网络钓鱼保险箱攻击
 
-黑客有时会在电子邮件或其他文件中的链接中隐藏恶意网站。 保险箱链接是 Microsoft Defender for Office 365 的一部分，通过提供对电子邮件和文档内 Web 地址和 URL (URL) 的点击时间验证，Office组织。 保护通过链接保险箱定义。
+黑客有时会在电子邮件或其他文件中的链接中隐藏恶意网站。 保险箱链接是 Microsoft Defender for Office 365 的一部分，它可以通过提供电子邮件和 Office 文档中的 Web 地址 (URL) 的点击时间验证来帮助保护你的组织。 保护通过链接保险箱定义。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
+
+Microsoft Defender for Office 365（以前称为Microsoft 365 ATP 或高级威胁防护）可帮助保护你的企业免受恶意网站的攻击，当用户单击 Office 应用中的链接。
+
+1. 转到管理 [中心，然后选择](https://admin.microsoft.com)"设置 **"。**
+2. 向下滚动以 **提升对高级威胁的保护**。 选择 **"管理**"，然后选择 **保险箱链接"。**
+3. 选择 **"全局设置"，** 在"阻止 **以下 URL"** 中，输入要阻止的 URL。
 
 我们建议您执行以下操作：
 
@@ -206,17 +229,17 @@ ms.locfileid: "60667778"
 
 1. 在"保险箱链接"页上的"适用于整个组织的策略"**下**，选择"**默认策略**"。
 
-2. 在 **设置适用于** 电子邮件以外的内容"下 **，Microsoft 365 企业应用版，Office适用于 iOS 和 Android。**
+2. 在 **设置适用于** 电子邮件以外的内容"下，选择 **"Microsoft 365 企业应用版、Office for iOS 和 Android"。**
 
-3. 选择“**保存**”。
+3. 选择 **“保存”**。
 
-若要创建面向域中所有收件人的新策略：
+要创建面向域中所有收件人的新策略，请执行：
 
 1. On the 保险箱 links page， under **Policies that apply to the entire organization**， select to create a new **+** policy.
 
 2. 应用下表中列出的设置。
 
-3. 选择“**保存**”。
+3. 选择 **“保存”**。
 
 |设置或选项|推荐设置|
 |---|---|
@@ -233,6 +256,6 @@ ms.locfileid: "60667778"
 
 2. 选择 **"所有服务**"，在 *"搜索框"***中键入** Intune。
 
-3. 显示结果后，选择"开始"Microsoft Intune，使其成为收藏项且易于稍后查找。
+3. 显示结果后，选择"开始"Microsoft Intune，使其成为收藏项，并且易于稍后查找。
 
 除了管理中心外，您还可以使用 Intune 注册和管理组织的设备。 有关详细信息，请参阅适用于设备注册Windows[和](/intune/enrollment/enrollment-method-capab) [Intune](/intune/enrollment-options)管理的设备的注册选项。

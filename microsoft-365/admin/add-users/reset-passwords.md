@@ -20,6 +20,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -28,16 +29,16 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 使用 Microsoft 365 管理员帐户登录，重置 Microsoft 365 商业版订阅中的用户密码。
-ms.openlocfilehash: 84bb282f7b86036e2743d4af7998a4ce887e5b11
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f1444513f336cad5423881420d299528a347927c
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157214"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128386"
 ---
 # <a name="reset-passwords"></a>重置密码
 
-本文介绍了当你拥有适用于企业订阅的订阅时，如何为自己和用户Microsoft 365密码。
+本文介绍如何在拥有适用于企业订阅的 Microsoft 365重置密码。
 
 > [!NOTE]
 > 您还可以为用户设置自助服务密码重置，以便他们可以重置自己的密码。 若要了解更多信息，请参阅 [允许用户重置自己的密码](let-users-reset-passwords.md)。
@@ -53,6 +54,11 @@ ms.locfileid: "60157214"
 观看有关重置用户密码的简短视频。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
+
+1. 当用户请求新密码时，你将收到电子邮件中的密码重置请求。 若要重置密码，请打开应用启动器并选择"管理员 **"。**
+1. In the Microsoft 365 管理中心， select **Users**， <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>， and then select the key icon next to the user who requested the reset.
+1. 选择 **"自动生成密码** "以自动创建随机密码。
+1. 选择"**重置"。**
 
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
   
@@ -72,7 +78,7 @@ ms.locfileid: "60157214"
 
 ## <a name="reset-my-admin-password"></a>重置我的管理员密码
 
-如果你忘记了密码，但能够登录密码，Microsoft 365，例如，密码保存在浏览器中：
+如果忘记了密码，但能够登录密码，请使用Microsoft 365，例如，密码保存在浏览器中：
 
 1. Select your name (icon) in upper right corner > **My Account**  >  **Personal Info**.
 
@@ -120,7 +126,7 @@ ms.locfileid: "60157214"
 
 请参阅这篇由 Microsoft MVP Vasil Michev 撰写的出色博客文章：[为 Office 365 中的所有用户强制更改密码](https://go.microsoft.com/fwlink/?linkid=853693)。
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>我并没有适用于Microsoft 365订阅的订阅
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>没有适用于企业Microsoft 365订阅
 
 请尝试阅读此文：[我忘记了 Office 所用的帐户用户名或密码。](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   
@@ -129,5 +135,5 @@ ms.locfileid: "60157214"
 [允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
 [重置密码](../add-users/reset-passwords.md)（文章）\
 [将个人用户密码设置为永不过期](set-password-to-never-expire.md)（文章）\
-[为组织设置密码过期策略 (](../manage/set-password-expiration-policy.md) 文章) \
+[为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) \
 [Microsoft 365 商业版培训视频](../../business-video/index.yml)(链接页面)

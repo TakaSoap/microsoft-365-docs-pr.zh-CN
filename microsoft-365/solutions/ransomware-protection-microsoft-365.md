@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件, 人为操作的勒索软件, 人为操作的勒索软件, HumOR, 勒索攻击, 勒索软件攻击, 加密, 加密病毒, 零信任
 description: 逐步保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: bdfb793ef5a86a21abf421addfd9d1e84dfdba61
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 81f97ba6327f5f1803d972ad9e62f2333e65bc2b
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703513"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110267"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>为 Microsoft 365 租户部署勒索软件保护
 
@@ -115,11 +115,11 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 
     - 基于敏感度标签的机密组织信息。
 
-- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 
     阻止下载敏感信息，如文件。 
 
-    还可以将会话策略用于[ Microsoft Cloud App Security 条件访问应用程序控件](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization)，以实时监视用户和应用程序之间的信息流。
+    你还可以将会话策略用于 [Microsoft Defender for Cloud Apps 条件访问应用控制](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization)，以实时监视用户和应用程序之间的信息流。
 
 ## <a name="whats-in-this-solution"></a>此解决方案中的内容
 
@@ -170,7 +170,7 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 | Microsoft Defender for Office 365 | 保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 <br><br> 防范恶意软件、网络钓鱼、欺骗和其他攻击类型 | 网络钓鱼攻击。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
 | Microsoft Defender for Endpoint | 启用跨终结点(设备)对高级威胁的检测和响应  | 恶意软件安装和设备入侵。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
 | Azure Active Directory (Azure AD) 身份保护 | 自动检测和修正基于身份的风险并调查这些风险 | Azure AD 帐户的凭据泄露和特权提升。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
-| Microsoft Cloud App Security | 跨所有 Microsoft 和第三方云服务进行发现、调查和治理的云访问安全代理 | 横向移动和数据外泄。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
+| Microsoft Defender for Cloud Apps | 跨所有 Microsoft 和第三方云服务进行发现、调查和治理的云访问安全代理 | 横向移动和数据外泄。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
 |
 
 ### <a name="3-identities"></a>3. 身份
@@ -208,7 +208,7 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 | 文件夹限制访问 | 通过对照已知的受信任应用列表检查应用来保护你的数据 | 防止勒索软件更改或加密文件。 | Microsoft 365 E3 或 Microsoft 365 E5 |
 | Microsoft 信息保护 | 允许将敏感度标签应用于可勒索的信息 | 阻止使用已外泄的信息。 | Microsoft 365 E3 或 Microsoft 365 E5 |
 | 数据丢失防护 (DLP) | 防止用户以不当方式共享敏感数据，从而保护敏感数据并降低风险 | 防止数据外泄。 | Microsoft 365 E3 或 Microsoft 365 E5 |
-| Microsoft Cloud App Security | 用于发现、调查和治理的云访问安全代理 | 检测横向移动并防止数据外泄。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
+| Microsoft Defender for Cloud Apps | 用于发现、调查和治理的云访问安全代理 | 检测横向移动并防止数据外泄。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
 |
 
 ## <a name="impact-on-users-and-change-management"></a>对用户和变更管理的影响
@@ -261,12 +261,12 @@ Microsoft Azure：
 - [备份和还原计划以防范勒索软件](/security/compass/backup-plan-to-protect-against-ransomware)
 - [使用 Microsoft Azure 备份帮助防范勒索软件](https://www.youtube.com/watch?v=VhLOr2_1MCg)（26 分钟视频）
 - [从系统性标识泄露中恢复](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Azure Sentinel 中的高级多阶段攻击检测](/azure/sentinel/fusion#ransomware)
-- [Azure Sentinel 中勒索软件融合检测](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Microsoft Sentinel 中的高级多阶段攻击检测](/azure/sentinel/fusion#ransomware)
+- [Microsoft Sentinel 中的勒索软件融合检测](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security：
+Microsoft Defender for Cloud Apps：
 
--  [在 Cloud App Security 中创建异常检测策略](/cloud-app-security/anomaly-detection-policy)
+-  [在 Defender for Cloud Apps 中创建异常检测策略](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft 安全团队博客文章：
 
@@ -289,4 +289,3 @@ Microsoft 安全团队博客文章：
 
 - [勒索软件应对 - 是否支付勒索金额？（2019 年 12 月）](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro 以透明方式应对勒索软件攻击（2019 年 12 月）](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
-

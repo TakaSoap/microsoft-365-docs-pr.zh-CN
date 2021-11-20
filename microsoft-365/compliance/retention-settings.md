@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: d80ae2a6f3fac26acfc5d9f8a324e578677cb962
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 475ed6226c5482a1b9256d38798b9cbbdd8be31e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063521"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110543"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -248,7 +248,7 @@ ms.locfileid: "61063521"
 
 当选择 **SharePoint 网站** 位置时，保留策略可以保留和删除 SharePoint 通信网站、未由 Microsoft 365 组连接的团队网站以及经典网站中的文档。 除非使用的是 [自适应策略作用域](#exceptions-for-adaptive-policy-scopes)，否则通过 Microsoft 365 组连接的团队网站不支持此选项，而是使用适用于组邮箱、网站和文件中内容的 **Microsoft 365 组** 位置。
 
-有关在配置 SharePoint 和 OneDrive 的保留设置时应包含和排除哪些内容的详细信息，请参阅[保留和删除哪些内容](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion)。 
+有关在配置 SharePoint 和 OneDrive 的保留设置时应包含和排除哪些内容的详细信息，请参阅[保留和删除哪些内容](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion)。
 
 当为 SharePoint 网站或 OneDrive 帐户指定位置时，无需访问这些网站的权限。 对于静态作用域，在 **编辑位置** 页面上指定 URL 时不会进行任何验证。 但是，会检查指定的 SharePoint 网站是否存在于配置的最后一页上。 如果此检查失败，你会看到一条消息，指出输入的 URL 验证失败，且在验证检查通过之前无法创建保留策略。 如果看到此消息，请返回配置流程以更改 URL 或从保留策略中删除网站。
 
@@ -256,9 +256,9 @@ ms.locfileid: "61063521"
 
 > [!NOTE]
 > 指定单个 OneDrive 帐户时，请注意，除非 oneDrive 帐户 [预配](/onedrive/pre-provision-accounts)，否则在用户首次访问其 OneDrive 之前不会创建 URL。
-> 
-> 此外，如果用户的 UPN 发生更改，OneDrive URL 将 [自动更改](/onedrive/upn-changes) 。 例如，更改姓名事件，如结婚。 或域名更改以支持组织的重命名或业务重组。 如果 UPN 发生更改，则需要更新为保留设置指定的 OneDrive URL。
-> 
+>
+> 此外，如果用户的 UPN 发生更改，OneDrive URL 将 [自动更改](/onedrive/upn-changes) 。 例如，更名事件（如结婚）或域名更改以支持组织的重命名或业务重组。 如果 UPN 发生更改，则需要更新为保留设置指定的 OneDrive URL。
+>
 > 由于为单个用户可靠地指定 URL 以针对静态作用域进行包含或排除存在挑战，因此具有 **用户** 作用域类型的 [自适应作用域](retention.md#adaptive-or-static-policy-scopes-for-retention) 更适合实现此目的。
 
 #### <a name="exceptions-for-adaptive-policy-scopes"></a>自适应策略作用域的异常

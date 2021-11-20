@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: 了解如何使用 Microsoft 365 合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
-ms.openlocfilehash: 721129905d6d0818304972572b1515ff167bffc8
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 7424aeb482339da92c82afc3e50ac1f4471e741c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804925"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109751"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 
@@ -238,10 +238,10 @@ Yes, this capability is now available.
 
 #### <a name="what-kind-of-hard-drives-are-supported-for-drive-shipping"></a>哪类硬盘支持驱动器传送？
 
-对于 Office365 导入服务，仅支持使用 2.5 英寸固态硬盘 (SSD) 或者 2.5 或 3.5 英寸 SATA II/III 内部硬盘。可以使用容量最大为 10 TB 的硬盘驱动器。对于导入作业，将仅处理硬盘驱动器上的第一个数据卷。必须使用 NTFS 格式化数据卷。将数据复制到硬盘驱动器上时，可使用 2.5 英寸 SSD 或 2.5 或 3.5 英寸 SATA II/III 连接线将其直接连接，或可使用外部 2.5 英寸 SSD 或 2.5 或 3.5 英寸 SATA II/III USB 适配器在外部连接。
+仅支持将 2.5 英寸固态硬盘 (SSD) 或 2.5 英寸或 3.5 英寸 SATA II/III 内部硬盘与 Office 365 导入服务结合使用。 可使用最多 10 TB 的硬盘。 对于导入作业，仅将处理硬盘上的第一个数据卷。 必须使用 NTFS 格式化数据卷。 将数据复制到硬盘时，可使用 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III 连接器直接连接硬盘，或可使用外部 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III USB 适配器在外部连接硬盘。
 
 > [!IMPORTANT]
-> Office365 导入服务不支持附带内置 USB 适配器的外部硬盘。此外，不能使用外部硬盘驱动器外壳内的磁盘。请不要运送外部硬盘。
+> Office 365 导入服务不支持内置 USB 适配器随附的外部硬盘。 此外，无法使用外部硬盘盒内的磁盘。 Please don't ship external hard drives.
 
 #### <a name="how-many-hard-drives-can-i-ship-for-a-single-import-job"></a>How many hard drives can I ship for a single import job?
 

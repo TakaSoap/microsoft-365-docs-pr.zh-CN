@@ -20,22 +20,35 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 description: 了解如何在设置Windows 10后保护电脑Microsoft 365 商业高级版。
-ms.openlocfilehash: 11b91796d5c838cdcba656de430b875327be3db4
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: bc970928c9e82bfefcc5a8f87007f14ef431c122
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554356"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128804"
 ---
 # <a name="secure-windows-10-computers"></a>保护 Windows 10 计算机
 
 本文适用于Microsoft 365 商业高级版。
 
 在设置[Microsoft 365 商业高级版](business-set-up.md)后，应该保护组织中的Windows 10计算机免受盗窃以及病毒和恶意软件等恶意威胁的侵害。
+
+## <a name="watch-secure-your-windows-10-pcs"></a>观看：保护Windows 10电脑
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
+
+在 Microsoft 365 Business 中设置设备保护后，请按照以下步骤保护Windows 10计算机。
+
+1. In the Microsoft 365 管理中心， choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
+1. 在 **"保护Windows计算机"下**，选择"查看 **"。**
+1. 选择 **"开始使用"。**
+1. 在 **Who策略** 应应用于？"下，选择是将你的选择应用于组织中的每个人，还是应用于特定安全组。
+1. 选择  **保存更改**。
 
 ## <a name="to-secure-your-windows-10-computers"></a>保护你的Windows 10计算机
 
@@ -45,7 +58,7 @@ ms.locfileid: "60554356"
 
     在页面顶部，选择"**开始使用"。**
 
-4. 在 **"保护Windows 10** 计算机"窗格中，选择要打开的选项。 有关设置详细信息，请参阅安全[Windows 10设备](../misc/secure-windows-10-devices.md) (文章) 。 
+4. 在"**保护Windows 10** 计算机"窗格中，选择要打开的选项。 有关设置详细信息，请参阅安全[Windows 10设备](../misc/secure-windows-10-devices.md) (文章) 。 
     
     对于大多数组织来说，此处的选项提供了良好的安全级别，但是，如果你的组织具有更复杂的安全需求，则还可以使用预定义的安全基线保护Windows 10设备。 有关详细信息，请参阅[安全基线Windows 10设备](/mem/intune/protect/security-baselines)。   
 

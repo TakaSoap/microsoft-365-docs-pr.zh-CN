@@ -16,16 +16,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3126523fd68afba29e3401533f7de2313f7df65b
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: cdc853ff4d22708143a9f23fd9399917e7fe91f6
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724759"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61127990"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>调查警报Microsoft 365 Defender
 
@@ -38,13 +39,13 @@ ms.locfileid: "60724759"
 
 在Microsoft 365 Defender中，相关警报聚合在一起以形成[事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。 
 
-警报 **队列** 显示当前警报集。 在快速启动 Microsoft 365 Defender ( security.microsoft.com) 时，你可以从事件&警报>警报[) 。](https://security.microsoft.com)
+警报 **队列** 显示当前警报集。 在快速启动 & 门户时，你可以从事件&警报>**警报**"进入 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">警报Microsoft 365 Defender队列</a>。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="报告门户中的警报队列Microsoft 365 Defender示例。":::
 
 来自不同 Microsoft 安全解决方案（如 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft 365 Defender 警报显示在此处。
 
-默认情况下，Microsoft 365 Defender门户中的警报队列显示过去 30 天内的新警报和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
+默认情况下，通知门户中的警报Microsoft 365 Defender显示过去 30 天内新的和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
 
 从默认警报队列中，可以选择"筛选器"以查看"筛选器"窗格，可以从中指定警报的子集。 下面是一个示例。
 
@@ -54,17 +55,15 @@ ms.locfileid: "60724759"
 
 - Severity
 - 状态
-- Category
-- 检测源
-- 标记
-- Policy
+- 服务源
 - 影响的资产
+- 自动调查状态
 
 ## <a name="required-roles-for-defender-for-office-365-alerts"></a>Defender for Office 365 警报所需的角色
 
 你需要具有以下任一角色来访问 Microsoft Defender Office 365警报：
 
-- 对于Azure Active Directory (Azure AD) 角色：
+- 对于Azure Active Directory (Azure AD) 全局角色：
 
    - 全局管理员
 
@@ -100,25 +99,25 @@ ms.locfileid: "60724759"
 在整个警报页面中，可以选择任意实体旁边的省略号 (**...)** 以查看可用操作，例如打开警报页面或将警报链接到其他事件。
 
 ### <a name="alert-sources"></a>警报源
-Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 等解决方案，以及适用于 Microsoft Cloud App Security 的应用管理Microsoft Cloud App Security。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
+
+Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps 以及适用于云应用的 Microsoft Defender 的应用管理加载项等解决方案。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
 
 > [!NOTE]
-> - 预置的 GUID 仅特定于统一体验，如统一警报队列、统一警报页面、统一调查和统一事件。<br>
-> - 预置字符不会更改警报的 GUID。 对 GUID 的唯一更改是预置的组件。<br>
+> - 预置的 GUID 仅特定于统一体验，如统一警报队列、统一警报页面、统一调查和统一事件。
+> - 预置字符不会更改警报的 GUID。 对 GUID 的唯一更改是预置的组件。
 
-
-警报源 | Prepended 字符 
-:---|:---
-Microsoft Defender for Office 365 | `fa{GUID}` <br> 例如：`fa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Defender for Endpoint | `da` 或 `ed` 用于自定义检测警报 <br> 
-Microsoft Defender for Identity | `aa{GUID}` <br> 例如：`aa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Cloud App Security |`ca{GUID}` <br> 例如：`ca123a456b-c789-1d2e-12f1g33h445h6i` 
+| 警报源 | Prepended 字符 |
+| :---|:--- |
+| Microsoft Defender for Office 365 | `fa{GUID}` <br> 例如：`fa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender for Endpoint | `da` 或 `ed` 用于自定义检测警报 <br> |
+| Microsoft Defender for Identity | `aa{GUID}` <br> 例如：`aa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender for Cloud Apps |`ca{GUID}` <br> 例如：`ca123a456b-c789-1d2e-12f1g33h445h6i` |
 
 ### <a name="analyze-affected-assets"></a>分析受影响的资产
 
 " **已采取** 操作"部分包含受影响资产的列表，如受此警报影响的邮箱、设备和用户。 
 
-还可以选择"**在操作中心中** 查看"以查看操作中心的"历史记录"选项卡，Microsoft 365 Defender门户。 
+还可以选择"在操作中心 **中** 查看"以查看操作中心的"历史记录"选项卡，Microsoft 365 Defender门户。 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>跟踪警报情景中的警报角色
 
@@ -143,7 +142,7 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 例如：`ca123a456b-c789-1d2e-12f
 
 - 警报状态 (新建、已解决、正在进行) 。
 - 已分配警报的用户帐户
-- 警报的分类 (未设置、真警报、假警报) 。
+- 警报的分类 (未设置，为真警报，假警报) 。
 - 对于分类为真正的警报，为"确定"字段中警报 **的威胁** 类型。
 - 对警报的注释。
 
@@ -182,21 +181,21 @@ SecOps (新式安全) 团队需要自动化才能高效工作。 为了专注于
 
 - 用户未标记为高风险
 
-如果两者都为 true，则 SecOps 将警报标记为合法旅行并解决。 通知在解决后Microsoft Teams中发布。 
+如果两者都为 true，则 SecOps 将警报标记为合法旅行并解决。 通知在解决后Microsoft Teams中发布。
 
-### <a name="connect-power-automate-to-microsoft-cloud-app-security"></a>连接 Power Automate Microsoft Cloud App Security
+### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>连接 Power Automate Microsoft Defender for Cloud Apps
 
-若要创建自动化，你需要一个 API 令牌，然后才能将Power Automate连接到Microsoft Cloud App Security。 
+若要创建自动化，你将需要一个 API 令牌，然后才能Power Automate Microsoft Defender for Cloud Apps。
 
-1. 单击 **设置"，** 选择"**安全扩展"，** 然后单击"API令牌"选项卡中的"**添加令牌**"。 
+1. 单击 **设置"，** 选择"**安全扩展"，** 然后单击"API令牌"选项卡中的"**添加令牌**"。
 
 2. 为令牌提供名称，然后单击"生成 **"。** 保存令牌，因为稍后将需要它。
 
 ### <a name="create-an-automated-flow"></a>创建自动化流
 
-有关详细的分步过程，请参阅此处 [的视频](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn)。 
+有关详细的分步过程，请参阅此处 [的视频](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn)。
 
-此视频还介绍如何将电源自动化连接到云应用安全。 
+此视频还介绍了如何将电源自动连接到 Defender for Cloud Apps。
 
 ## <a name="next-steps"></a>后续步骤
 

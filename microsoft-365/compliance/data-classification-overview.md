@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: f6446fb61d0c38855a040da75a57ae85faafbb9f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: e3f621b3ab6ec6d095e5ba8687cf06734cfa0170
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962851"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110003"
 ---
 # <a name="learn-about-data-classification"></a>了解数据分类。
 
@@ -44,7 +44,7 @@ ms.locfileid: "60962851"
 - [内容浏览器](data-classification-content-explorer.md)。
 - [活动资源管理器](data-classification-activity-explorer.md)
 
-可以在“<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>”或“<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 安全中心</a>” > “**分类**” > “**数据分类**”中找到数据分类。
+你可以在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>或 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a> > “**分类**” > “**数据分类**”中找到数据分类。
 
 获取介绍我们的数据分类功能的视频教程。
 

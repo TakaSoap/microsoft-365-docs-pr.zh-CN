@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 387dc9074808c6ee463b2402e98358d77cf1d24b
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 605858e433287e7d967d7d1908bc62c9255573c7
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064047"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110519"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -467,7 +467,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
         
         隐式保留策略需要具有 **所有收件人** （对于 Exchange 电子邮件）或 **所有组** （对于Microsoft 365 组）配置的静态策略范围。
     
-    有关应用了保留策略的非活动邮箱的详细信息，请参阅 [非活动邮箱和Microsoft 365保留策略](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention-policies)。
+    有关应用了保留策略的非活动邮箱的详细信息，请参阅[非活动邮箱和 Microsoft 365 保留](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention)。
 
 ## <a name="auditing-retention-configuration-and-actions"></a>审核保留配置和操作
 

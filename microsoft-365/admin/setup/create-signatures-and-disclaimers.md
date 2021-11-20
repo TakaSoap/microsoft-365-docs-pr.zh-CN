@@ -20,18 +20,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 管理电子邮件签名，包括进入或离开组织的所有电子邮件的法律免责声明或披露声明。
-ms.openlocfilehash: 566cf595365a578f0e92d7e41e8ed7c7764c0cf4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5e2dc52c881bd2dbe87552ab71a369662ade60e5
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197793"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128228"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围内的签名和免责声明
 
@@ -40,6 +41,11 @@ ms.locfileid: "60197793"
 ## <a name="watch-create-a-company-wide-email-signature"></a>观看：创建公司范围的电子邮件签名
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心"</a>中，选择 **"Exchange"。**
+1. 选择 **"邮件流"。**
+1. 选择 **"添加 +**"，然后选择"**应用免责声明"。**
+1. 在" **新建规则"** 页上，完成步骤。 
 
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
 
@@ -81,7 +87,7 @@ ms.locfileid: "60197793"
 6. 在 **"应用此规则"** 下，选择 **"[应用于所有邮件]"。**
     
     > [!TIP]
-    > [了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)有关应用条件的详细信息。  (此范围文章适用于Exchange Server，但它也适用于 Microsoft 365.)  
+    > [了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)有关应用条件的详细信息。  (此范围文章适用于Exchange Server，但也适用于 Microsoft 365.)  
   
 7. 在"执行以下操作"下，保留" **附加免责声明**"处于选中状态。 
     

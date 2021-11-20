@@ -16,13 +16,13 @@ ms.collection:
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
-description: 使用受控文件夹访问权限、MIP、DLP 和 Microsoft Cloud App Security 来保护 Microsoft 365 敏感数据。
-ms.openlocfilehash: cd2f7526de1b9089c6c2febfb667b4df7d816913
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: 使用受控文件夹访问权限、MIP、DLP 和 Microsoft Defender for Cloud Apps 来保护你的 Microsoft 365 敏感数据。
+ms.openlocfilehash: 4d6218ef32b10f99fcd1836444add49a7c4cb40c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666730"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110039"
 ---
 # <a name="step-5-protect-information"></a>步骤 5. 保护信息
 
@@ -92,7 +92,7 @@ ms.locfileid: "60666730"
 
 - 使用 Microsoft 365 [数据丢失防护 (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) 根据内部和外部敏感度标签来检测、警告和阻止对包含个人或机密信息的数据进行有风险、无意或不当共享。
 
-- 使用 [ Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) 阻止下载敏感信息（例如，文件）。 还可以使用 [云应用安全异常检测策略](/cloud-app-security/anomaly-detection-policy#ransomware-activity) 来检测高速文件上传或文件删除活动。
+- 使用 [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) 阻止下载敏感信息（如文件）。 你还可以使用 [Defender for Cloud Apps 异常检测策略](/cloud-app-security/anomaly-detection-policy#ransomware-activity)来检测高速文件上传或文件删除活动。
 
 ## <a name="impact-on-users-and-change-management"></a>对用户和更改管理的影响
 
@@ -141,19 +141,19 @@ Microsoft Azure：
 - [备份和还原计划以防范勒索软件](/security/compass/backup-plan-to-protect-against-ransomware)
 - [使用 Microsoft Azure 备份帮助防范勒索软件](https://www.youtube.com/watch?v=VhLOr2_1MCg)（26 分钟视频）
 - [从系统性标识泄露中恢复](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Azure Sentinel 中的高级多阶段攻击检测](/azure/sentinel/fusion#ransomware)
-- [Azure Sentinel 中勒索软件融合检测](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Microsoft Sentinel 中的高级多阶段攻击检测](/azure/sentinel/fusion#ransomware)
+- [Microsoft Sentinel 中的勒索软件融合检测](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security：
+Microsoft Defender for Cloud Apps：
 
--  [在 Cloud App Security 中创建异常检测策略](/cloud-app-security/anomaly-detection-policy)
+-  [在 Defender for Cloud Apps 中创建异常检测策略](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft 安全团队博客文章：
 
 - [防范和从勒索软件中恢复的 3 个步骤（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [抵御人工操作勒索软件的指南：第 1 部分（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 
-  有关 Microsoft 检测和响应团队 (RANSOM) 执行勒索软件事件调查的关键步骤。
+  有关 Microsoft 检测和响应团队 (DART) 执行勒索软件事件调查的关键步骤。
 
 - [抵御人工操作勒索软件的指南：第 2 部分（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 
@@ -169,4 +169,3 @@ Microsoft 安全团队博客文章：
 
 - [勒索软件应对 - 是否支付勒索金额？（2019 年 12 月）](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro 以透明方式应对勒索软件攻击（2019 年 12 月）](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
-

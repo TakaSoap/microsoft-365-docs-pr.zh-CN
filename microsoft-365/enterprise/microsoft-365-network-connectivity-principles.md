@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 本文提供了有关安全优化 Microsoft 365 网络连接的最新指南。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ad7607fb03aee49fa86adaaf1e8970c864ea310
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1cea07745295f945f472dfeaa7042d3b027eea85
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212877"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111671"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 网络连接原则
 
@@ -206,7 +206,7 @@ Microsoft 提供了一系列 Microsoft 365 安全功能，并提供了采用安�
   
 - **使用多重身份验证 (MFA)** MFA 向强密码策略中添加一层额外保护，方法是要求用户在正确输入密码后在其智能手机上确认电话呼叫、短信或应用通知。
 
-- **使用 Microsoft Cloud App Security** 配置策略来跟踪反常活动并做出应对。使用 Microsoft Cloud App Security 设置警报，方便管理员查看反常或有风险的用户活动，如下载大量数据、多次登录尝试失败，或者来自未知或危险 IP 地址的连接。
+- **使用 Microsoft Defender for Cloud Apps** 配置策略以跟踪异常活动并做出应对。 使用 Microsoft Defender for Cloud Apps 设置警报，方便管理员查看反常或有风险的用户活动，如下载大量数据、多次登录尝试失败，或者来自未知或危险 IP 地址的连接。
 
 - **配置数据丢失防护 (DLP)** DLP 可用于识别敏感数据并创建有助于防止用户意外或有意共享数据的策略。 DLP 可跨 Microsoft 365 服务进行工作，包括 Exchange Online、SharePoint Online 和 OneDrive，以便你的用户在不中断工作流的情况下保持合规。
 

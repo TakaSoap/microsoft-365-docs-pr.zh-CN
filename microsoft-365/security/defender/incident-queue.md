@@ -17,17 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d3dea119e73da7d0b0e8745ea1f96969f4818ac8
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 0705424080f58d58f8c45b4a403fae01beb53373
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914316"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128828"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定事件优先级Microsoft 365 Defender
 
@@ -40,7 +41,7 @@ Microsoft 365 Defender相关分析，将不同产品的相关警报和自动调�
 
 **事件队列** 显示跨设备、用户和邮箱创建的事件集合。 它可以帮助你对事件进行排序，从而确定优先级并制定明智的网络安全响应决策。 这也称为事件会审。
 
-在 Microsoft 365 Defender (security.microsoft.com) 快速启动时，你可以从事件& **>** 警报和事件Microsoft 365 Defender [队列](https://security.microsoft.com)。 下面是一个示例。
+在快速启动事件门户时&事件>**事件** 和事件Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">队列</a>。 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -65,22 +66,26 @@ Microsoft 365 Defender相关分析，将不同产品的相关警报和自动调�
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="事件队列的筛选器窗格示例。" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
+默认筛选器是显示具有"新建"和"正在进行"状态的所有 **警报****和** 事件。
+
 此表列出了可用的筛选器名称。
 
-| 筛选器名称 | Description |
+| 筛选器名称 | 说明 |
 |:-------|:-----|
-| 分配到 | 你可以选择显示分配给你或由自动化处理警报的警报。 |
+| 状态 | 选择 **"新建****"、"正在进行"** 或"已 **解决"。** |
+| Severity | 事件的严重性表明它可以对资产产生的影响。 严重性越高，影响越大，通常需要最直接的关注。 选择 **"高****"、中****"、低**"或"**信息"。** |
+| 事件分配 | 选择"分配给任何人"、"分配给我"或"未分配"。 |
+| 多个服务源  | 指定筛选器是否适用于多个服务源。 |
+| 服务源  | 筛选以仅查看包含警报的事件：应用治理、Microsoft 365 Defender、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Cloud Apps。 |
+| 标记 | 从列表中选择一个或多个标记名称。 |
+| 多个类别  | 指定筛选器是否适用于多个类别。 |
 | 类别 | 选择类别以专注于特定的策略、技术或看到的攻击组件。 |
-| 分类 | 根据相关警报的集分类筛选事件。 值包括真警报、假警报或未设置。 |
-| 数据敏感性 | 某些攻击主要针对容易泄露或有价值的数据。 通过应用筛选器查看事件中是否涉及敏感数据，可以快速确定敏感信息是否可能已泄露，并优先解决这些事件。 <br><br> 仅适用于已启用 Microsoft 信息保护的情况。|
-| 设备组 | 按定义的设备组进行筛选。 |
-| 调查状态 | 按自动调查的状态筛选事件。  |
-| 多个类别 | 可以选择仅查看映射到多个类别并因此可能导致更多损坏的事件。 |
-| 多个服务源  | 筛选以仅查看包含来自不同来源的警报的事件 (Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity、Microsoft Defender for Office 365) 。 |
 | OS 平台 | 按操作系统限制事件队列视图。 |
-| 服务源 | 通过选择特定来源，可以集中精力处理包含至少一个来自该选定来源的警报的事件。 |
-| Severity | 事件的严重性表明它可以对资产产生的影响。 严重性越高，影响越大，通常需要最直接的关注。 |
-| 状态 | 可以根据事件的状态选择限制所显示事件的列表，以查看哪些事件处于活动状态/已解决状态。 |
+| 分类 | 根据相关警报的集分类筛选事件。 选择 **"真警报****"、"假警报"** 或"**未设置"。** |
+| 调查状态 | 按自动调查的状态筛选事件。  |
+| 关联威胁 | 按命名威胁筛选事件。  |
+| Actors | 按指定威胁参与者筛选事件。  |
+| 数据敏感性 | 某些攻击主要针对容易泄露或有价值的数据。 通过应用筛选器查看事件中是否涉及敏感数据，可以快速确定敏感信息是否可能已泄露，并优先解决这些事件。 <br><br>此筛选器仅在打开Microsoft 信息保护时可用。|
 |||
 
 ## <a name="save-defined-filters-as-urls"></a>将定义的筛选器另存为 URL

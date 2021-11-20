@@ -26,17 +26,18 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-mar
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 了解适用于 Microsoft 365 商业高级版的安装步骤，包括添加域和用户、设置安全策略等。
-ms.openlocfilehash: 9c2c9da3e9427f77f067001c5f244e7c6d4e247f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9fd4189754f11983770a01f8a9eb3e4858f55dec
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196197"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128036"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在Microsoft 365 商业高级版向导中设置网站
 
@@ -46,9 +47,16 @@ ms.locfileid: "60196197"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
+## <a name="watch-set-up-microsoft-365-business-premium"></a>观看：设置Microsoft 365 商业高级版
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
+
+1. 登录到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心</a>"，然后选择"**转到设置"。** 安装向导将启动。
+1. 设置完成后，返回到 Microsoft 管理中心。 在管理中心，你可以继续在"设置"Windows 10设置策略、DLP **等** 功能。
+
 ## <a name="add-your-domain-users-and-set-up-policies"></a>添加域、用户和设置策略
 
-当你购买Microsoft 365 商业高级版时，可以选择使用你拥有的域，或在注册期间购买[一个](../../business-video/sign-up.md)域。
+购买Microsoft 365 商业高级版时，可以选择使用你拥有的域，或在注册期间购买[一个](../../business-video/sign-up.md)域。
 
 - 如果你在注册时购买了新域，则域已全部设置好，你可以继续[添加用户并分配许可证](#add-users-and-assign-licenses)。
 
@@ -70,7 +78,7 @@ ms.locfileid: "60196197"
     !["个性化您的登录"页面的屏幕截图。](../../media/adddomain.png)
 
     
-4. 按照向导中的步骤，在验证您是否拥有该域的任何[DNS Microsoft 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)创建 DNS 记录。 如果你知道域主机，另请参阅[向Microsoft 365](/microsoft-365/admin/setup/add-domain)添加域。
+4. 按照向导中的步骤，在验证您是否拥有该域的任何 DNS Microsoft 365创建[DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)记录。 如果你知道域主机，另请参阅[向Microsoft 365](/microsoft-365/admin/setup/add-domain)添加域。
 
     如果你的托管服务提供商是 GoDaddy 或启用了 [domain connect](/office365/admin/get-help-with-domains/domain-connect) 的其他主机，则此过程很简单，系统会自动要求你登录并让 Microsoft 代表你进行身份验证。
 
@@ -86,7 +94,7 @@ ms.locfileid: "60196197"
 
 ![向导中"添加新用户"页的屏幕截图。](../../media/addnewuserspage.png)
 
-1. 如果你Microsoft 365 商业高级版订阅的现有用户 (，例如，如果你使用 Azure AD 连接) ，则你现在可以选择为其分配许可证。 继续操作，并为这些用户添加许可证。
+1. 如果你Microsoft 365 商业高级版订阅的现有用户 (，例如，如果你已使用Azure AD 连接) ，则你现在可以选择为其分配许可证。 继续操作，并为这些用户添加许可证。
 
 2. 添加用户之后，还将显示与添加的新用户共享凭据的选项。可以选择打印、通过电子邮件发送或下载凭据。
 
@@ -97,7 +105,7 @@ ms.locfileid: "60196197"
   
 必须更新 DNS 主机或域注册机构的一些记录才能设置服务。
   
-1. 安装向导通常将检测你的注册机构，并提供更新注册机构网站上 NS 记录分步说明的链接。 如果没有，请[更改名称服务器以设置Microsoft 365注册机构的名称](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md)。 
+1. 安装向导通常将检测你的注册机构，并提供更新注册机构网站上 NS 记录分步说明的链接。 如果没有，请更改[名称服务器以设置Microsoft 365注册机构的名称](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md)。 
 
     - 如果你有现有的 DNS 记录（例如现有网站），但你的 DNS 主机已启用 [domain connect](/office365/admin/get-help-with-domains/domain-connect)，请选择“**为我添加记录**”。 在“**选择联机服务**”页面上，接受所有默认设置，选择“**下一步**”，然后在DNS 主机页面上选择“**授权**”。
     - 如果具有具有其他 DNS 主机的现有 DNS 记录（未对域连接启用），需要管理自己的 DNS 记录以确保现有服务保持连接。有关详细信息，请参阅[域基础知识](/office365/admin/get-help-with-domains/dns-basics)。
@@ -115,7 +123,7 @@ ms.locfileid: "60196197"
     !["增加保护"页面的屏幕截图。](../../media/increasetreatprotection.png)
 
 
-2. 在"防止泄露敏感数据"页上，接受默认设置以启用 Office 365 数据丢失防护 (DLP) 以跟踪 Office 应用中的敏感数据并防止在组织外部意外共享这些数据。
+2. 在"防止泄露敏感数据"页上，接受默认设置以启用 Office 365 数据丢失防护 (DLP) ，以跟踪 Office 应用中的敏感数据并防止在组织外部意外共享这些数据。
 
 3. On the **Protect data in Office for mobile** page， leave mobile app management on， expand the settings and review them， and then select Create mobile app management **policy**.
 
@@ -124,15 +132,15 @@ ms.locfileid: "60196197"
 
 ## <a name="secure-windows-10-pcs"></a>保护 Windows 10 电脑
 
-在左侧导航上，选择"**设置**"，然后在"登录和安全"下，选择"保护 **你的Windows 10计算机"。** 选择 **"视图** "开始。 请参阅[保护Windows 10计算机](secure-win-10-pcs.md)，了解完整说明。
+在左侧导航上，选择"**设置**"，然后在"登录和安全"下，选择"保护 **Windows 10计算机"。** 选择 **"视图** "开始。 有关[完整说明，Windows 10](secure-win-10-pcs.md)保护计算机安全。
 
 ## <a name="deploy-office-365-client-apps"></a>部署Office 365客户端应用
 
-如果选择在安装期间自动安装 Office 应用，则当用户使用工作凭据从 Windows 设备登录 Azure AD 后，这些应用将安装在 Windows 10 设备上。
+如果你选择在安装期间自动安装 Office 应用，则当用户使用工作凭据从 Windows 设备登录 Azure AD 后，这些应用将安装在 Windows 10 设备上。
 
 若要在Office iOS 或 Android 设备上安装移动设备，请参阅为用户[Microsoft 365 商业高级版移动设备](set-up-mobile-devices.md)。
 
-也可以单独安装Office安装。 有关[说明Office在电脑或 Mac 上](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)安装设备。
+也可以单独安装Office安装。 有关[说明Office，请参阅在电脑或 Mac 上](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)安装设备。
 
 ## <a name="related-content"></a>相关内容
 

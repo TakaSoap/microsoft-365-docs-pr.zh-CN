@@ -609,7 +609,7 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: 管理非活动邮箱
       items:
-        - name: 非活动邮箱概述
+        - name: 了解非活动邮箱
           href: inactive-mailboxes-in-office-365.md
         - name: 创建和管理非活动邮箱
           href: create-and-manage-inactive-mailboxes.md

@@ -19,17 +19,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: 了解适用于企业Microsoft 365保护设备安全Windows 10设置。
-ms.openlocfilehash: 1217c6ad8be6b74c4b1fa05294f5bc51f275bea2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解企业Microsoft 365中可用的设置，以确保Windows 10设备。
+ms.openlocfilehash: 4019fb5d76824dc33bb5947d1bd3b25072b39bbd
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165468"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128024"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>编辑或创建电脑的设备Windows 10设置
 
@@ -37,7 +38,7 @@ ms.locfileid: "60165468"
 
 在"设置"页上设置Windows保护设置后，可以添加适用于所有用户或一组用户的新设置。 还可以编辑已创建的任何文件。
 
-## <a name="create-protection-settings-for-windows-10-devices"></a>为设备创建Windows 10设置
+## <a name="watch-create-protection-settings-for-windows-10-devices"></a>观看：为设备Windows 10保护设置
 
 观看一个视频，了解如何使用Windows 10保护Microsoft 365 商业高级版：
   
@@ -70,7 +71,7 @@ ms.locfileid: "60165468"
 有关详细信息，请参阅如何将保护[功能Microsoft 365 高级版映射到 Intune 设置](map-protection-features-to-intune-settings.md)。 
 
 
-|设置  <br/> |说明  <br/> |
+|Setting  <br/> |说明  <br/> |
 |:-----|:-----|
 |使用 Windows Defender 防病毒软件帮助保护电脑免遭病毒和其他威胁  <br/> |需要启用 Windows Defender 防病毒软件，保护电脑免遭连接 Internet 产生的危险。  <br/> |
 |帮助保护电脑免遭 Microsoft Edge 中基于 Web 的威胁  <br/> |在 Microsoft Edge 中启用有助于保护用户免遭恶意网站和下载威胁的设置。  <br/> |
@@ -79,7 +80,7 @@ ms.locfileid: "60165468"
 |防止网络访问 Internet 上的潜在恶意内容  <br/> |使用此设置可阻止出站用户与可能承载网络钓鱼欺诈、攻击或其他恶意内容的低信誉 Internet 位置的连接。 此设置仅在设置为"打开Windows Defender 防病毒时 **可用**。 有关详细信息，请参阅 [保护你的网络](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)。  <br/> |
 |使用 BitLocker 帮助保护 PC 上的文件和文件夹免遭未经授权的访问  <br/> |Bitlocker 通过加密计算机硬盘来保护数据，在计算机丢失或被盗时防止数据泄露。 有关详细信息，请参阅 [Bitlocker FAQ](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)。  <br/> |
 |允许用户从 Microsoft Store 下载应用  <br/> |允许用户从 Microsoft Store 下载和安装应用。应用种类繁多，囊括了游戏和生产力工具，因此将此设置保留为" **开**"，但可将其关闭以增强安全性。  <br/> |
-|允许用户访问 Cortana  <br/> |Cortana 非常有用！ Cortana你可以打开或关闭设置，提供方向，并确保你及时进行约会，因此默认情况下，我们将 **此设置保持打开** 状态。  <br/> |
+|允许用户访问 Cortana  <br/> |Cortana 非常有用！ Cortana可以打开或关闭设置、提供方向，并确保你及时进行约会，因此默认情况下，我们将 **此设置保持打开** 状态。  <br/> |
 |允许用户接收来自 Microsoft 的 Windows 提示和广告  <br/> |Windows 提示非常方便，可在新功能发布时为用户提供指导。  <br/> |
 |让 Windows 10 设备自动保持最新状态  <br/> |确保 Windows 10 设备会自动接收最新的更新。  <br/> |
 |在空闲此时长后关闭设备屏幕  <br/> |确保用户处于空闲时，公司数据受到保护。用户可能会在咖啡店等公共场所工作，短暂离开或心不在焉，其设备有被随意瞥视的风险。借助此设置，可以控制用户处于空闲状态多长时间后关闭屏幕。  <br/> |

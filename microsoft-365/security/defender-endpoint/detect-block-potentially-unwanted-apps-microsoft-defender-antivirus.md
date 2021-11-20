@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: de5b108c3e7a3fbd0831f4bb02385611a1c6ae3c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ea8df5216464feb0cd1807e7f64d8adbdde3f2e7
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555880"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110195"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>检测并阻止可能不需要的应用程序
 
@@ -153,7 +153,7 @@ Set-MpPreference -PUAProtection Disabled
 
 如果已启用该功能，将此 cmdlet 的值设置为 `Disabled` 将禁用该功能。
 
-有关详细信息，请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md)和 [Defender cmdlet](/powershell/module/defender/index)。
+有关详细信息，请参阅[使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md)和 [Defender for Cloud cmdlet](/powershell/module/defender/index)。
 
 ## <a name="view-pua-events-using-powershell"></a>使用 PowerShell 查看 PUA 事件
 
