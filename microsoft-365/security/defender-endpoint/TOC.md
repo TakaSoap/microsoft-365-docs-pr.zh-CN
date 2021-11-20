@@ -70,7 +70,7 @@
 
 
 
-#### [与 Azure Defender 集成](azure-server-integration.md)
+#### [与 Microsoft Defender for Cloud](azure-server-integration.md) 集成
 
 #### [无需访问 Internet 载入设备](onboard-offline-machines.md)
 #### [在新载入的设备上运行检测测试](run-detection-test.md)
@@ -487,7 +487,7 @@
 ### [了解威胁智能概念](threat-indicator-concepts.md)
 ### [配置与其他 Microsoft 解决方案的集成]()
 #### [配置条件访问](configure-conditional-access.md)
-#### [配置 Microsoft Cloud App Security 集成](microsoft-cloud-app-security-config.md)
+#### [配置 Microsoft Defender for Cloud Apps 集成](microsoft-cloud-app-security-config.md)
 ### [管理和 API]()
 #### [管理和 API 概述](management-apis.md)
 #### [API 发行说明](api-release-notes.md)
@@ -645,7 +645,6 @@
 ##### [将高级搜寻事件流式传输至 Azure 事件中心](raw-data-export-event-hub.md)
 ##### [将高级搜寻事件流式传输至存储账户](raw-data-export-storage.md)
 
-
 #### [SIEM 集成]()
 ##### [使用 Microsoft Defender for Endpoint 创建 SIEM 工具](configure-siem.md)
 ##### [Microsoft Defender for Endpoint 检测域](api-portal-mapping.md)
@@ -685,7 +684,7 @@
 ### [集成]()
 #### [Microsoft Defender for Endpoint 集成](threat-protection-integration.md)
 #### [通过条件访问保护用户、数据和设备](conditional-access.md)
-#### [Microsoft Cloud App Security 集成概述](microsoft-cloud-app-security-integration.md)
+#### [Microsoft Defender for Cloud Apps 集成概述](microsoft-cloud-app-security-integration.md)
 
 ### [Windows 中的信息保护概述]()
 #### [Windows 集成](information-protection-in-windows-overview.md)
