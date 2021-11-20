@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 860f43fe8bf82a9aed7983085b2b5d774229e2d0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ad4da096240b1c2d547eca1b2415dca0dbc056c9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159422"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110459"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -137,10 +137,10 @@ Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供主动搜寻
 
 Defender for Endpoint 直接集成了各种 Microsoft 解决方案，包括：
 
-- Azure Defender
-- Azure Sentinel
+- Microsoft Defender for Cloud
+- Microsoft Sentinel
 - Intune
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 - Microsoft Defender for Office
 - Skype for Business
@@ -160,4 +160,3 @@ Defender for Endpoint 直接集成了各种 Microsoft 解决方案，包括：
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/paths/defender-endpoint-fundamentals/)
-

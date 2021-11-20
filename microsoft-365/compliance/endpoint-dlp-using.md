@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: b1365a699f7d69c1ff01e902fa2e97da0aee66fe
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: fef221ce23ac04d156084ebad7b837840004f066
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61073097"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111851"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -355,7 +355,7 @@ ms.locfileid: "61073097"
 
 2. 展开 **不允许的应用**。
 
-3. 选择 **添加或编辑不允许的应用** ，并将 *OneDrive* 添加为显示名称，并将可执行文件名称添加 *onedrive.exe*  ，以禁止 onedrive.exe 访问 **高度机密** 标签的项目。
+3. 选择“**添加或编辑不允许的应用**”，并添加“*OneDrive*”（作为显示名称）和可执行文件名称“*onedrive.exe*”，以禁止 onedrive.exe 访问带有“**高度机密**”标签的项目。
 
 4. 选择 **自动隔离**，然后 **保存**。
 
