@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -26,19 +27,28 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 824eefed4dbda14edab7608324a317b0f504b7ef
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ba8e0794c1918095d029e862cbd8c860066ed51e
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554152"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128240"
 ---
 # <a name="set-up-multifactor-authentication"></a>设置多重身份验证
 
-根据你对 [Microsoft 365 中的多重身份验证 (MFA) 及其支持的理解](multi-factor-authentication-microsoft-365.md)，可对其进行设置并推广到你的组织。
+多重身份验证意味着你和你的员工必须提供多种登录 Microsoft 365 的方式，它是保护业务的最简单方法之一。 根据你对 [Microsoft 365 中的多重身份验证 (MFA) 及其支持的理解](multi-factor-authentication-microsoft-365.md)，可对其进行设置并推广到你的组织。 
 
 > [!IMPORTANT]
 > 如果你在 2019 年 10 月 21 日之后购买了订阅或试用版，并且你在登录时收到 MFA 的提示，则已经自动为你的订阅启用[安全性默认值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
+
+## <a name="watch-turn-on-multifactor-authentication"></a>观看：打开多重身份验证
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
+
+1. 转到 Microsoft 365 管理中心：<a href="https://admin.microsoft.com/ " target="_blank">https://admin.microsoft.com</a>。
+1. 选择 **显示全部**，然后选择 **Azure Active Directory 管理中心**。
+1. 选择 **Azure Active Directory**、**属性**、**管理安全默认值**。
+1. 在“**启用安全默认设置**”下，选择“**是**”，然后选择“**保存**”。
 
 ## <a name="before-you-begin"></a>准备工作
 

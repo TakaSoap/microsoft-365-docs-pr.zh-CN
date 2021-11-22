@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定 Microsoft 365 客户数据在全球范围内的存储位置
-ms.openlocfilehash: adab62809b8533c255ce390cd40818b8373b3a6b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 2779290e2f338be9128e0fad8ab8a1b4aa8c51bd
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552616"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128852"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客户数据的存储位置
 
@@ -139,6 +139,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | 韩国 | 釜山、首尔 |
 | 挪威 | 奥斯陆、斯塔万格 |
 | 南非 | 开普敦、约翰内斯堡 |
+| 瑞典 | 耶夫勒、桑德维肯、斯塔凡斯托普 |
 | 瑞士 | 日内瓦、苏黎世 |
 | 阿拉伯联合酋长国 | 迪拜、阿布扎比 |
 | 英国 | 达勒姆、伦敦、加的夫 |
@@ -5239,19 +5240,19 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 
 | 服务 | 位置 |
 | --- | --- |
-| Exchange Online | 欧盟 |
-| OneDrive for Business | 欧盟 |
-| SharePoint Online | 欧盟 |
+| Exchange Online | 瑞典 |
+| OneDrive for Business | 瑞典 |
+| SharePoint Online | 瑞典 |
 | Skype for Business | 欧盟 |
-| Microsoft Teams | 欧盟 |
-| Office Online &amp; Mobile | 欧盟 |
-| EOP | 欧盟 |
+| Microsoft Teams | 瑞典 |
+| Office Online &amp; Mobile | 瑞典 |
+| EOP | 瑞典 |
 | Intune | 欧盟 |
-| MyAnalytics | 欧盟 |
+| MyAnalytics | 瑞典 |
 | Planner | 欧盟 |
 | Sway | 美国 |
 | Yammer | 欧盟  |
-| OneNote 服务 | 欧盟 |
+| OneNote 服务 | 瑞典 |
 | Stream | 欧盟 |
 | Whiteboard | 欧盟 |
 | Forms | 欧盟 |

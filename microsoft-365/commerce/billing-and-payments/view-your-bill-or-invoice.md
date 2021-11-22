@@ -22,14 +22,15 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
+- adminvideo
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
 ms.date: 07/31/2020
-ms.openlocfilehash: d0b0f75615b7d1110d1a0366b96f32807a033fd7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0124f9c2f1375da162975f808138f24a8dead4fd
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189665"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128192"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 
@@ -43,6 +44,14 @@ ms.locfileid: "60189665"
 
 只有全局或帐单管理员才能执行本文所述步骤。
   
+## <a name="watch-view-download-or-print-your-bill"></a>观看：查看、下载或打印账单
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
+
+1. 在 Microsoft 365 管理中心内，选择左侧导航窗格中的“**账单**”，然后选择“<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">**发票**”选项卡</a>。
+1. 选择一张发票进行查看。 如果看不到发票，请从下拉列表中选择“**筛选依据:过去 6 个月**”。
+1. 要查看发票详细信息，请在发票右上角选择“**下载 PDF**”。
+
 ## <a name="view-a-bill-or-invoice"></a>查看账单或发票
 
 ::: moniker range="o365-worldwide"

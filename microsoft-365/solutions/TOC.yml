@@ -29,6 +29,24 @@
           href: empower-people-to-work-remotely-teams-productivity-apps.md
         - name: 步骤 6。培训员工
           href: empower-people-to-work-remotely-train-monitor-usage.md
+    - name: 使用 Intune 和 Microsoft 365 管理终结点
+      items:
+        - name: 概述
+          href: manage-devices-with-intune-overview.md
+        - name: 步骤 1. 实现级别 2 应用保护策略
+          href: manage-devices-with-intune-app-protection.md
+        - name: 步骤 2. 将设备注册到管理中
+          href: manage-devices-with-intune-enroll.md
+        - name: 步骤 3. 设置合规性策略
+          href: manage-devices-with-intune-compliance-policies.md
+        - name: 步骤 4. 需要正常且合规的设备
+          href: manage-devices-with-intune-require-compliance.md
+        - name: 步骤 5. 部署设备配置文件
+          href: manage-devices-with-intune-configuration-profiles.md
+        - name: 步骤 6. 监视设备风险和对安全基线的符合性
+          href: manage-devices-with-intune-monitor-risk.md
+        - name: 步骤 7. 使用信息保护功能实现数据丢失防护（DLP）
+          href: manage-devices-with-intune-dlp-mip.md
     - name: 与 Microsoft 365 建立安全协作
       items:
         - name: 概述

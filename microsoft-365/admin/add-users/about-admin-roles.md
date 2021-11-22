@@ -18,24 +18,34 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 例如服务管理员等管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。
-ms.openlocfilehash: 644e03fcfd5cfdc2997793097b26a3ca6a494d50
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ff4c4053760ad8f4810ea1c92a0d7ba4ecbaa61d
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158822"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128120"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
 Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 将这些角色分配给组织中的用户。每个管理员角色都映射到常用的业务功能，并授予组织中的用户在管理中心执行特定任务的权限。
 
 通过 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>，可以管理 Azure AD 角色和 Microsoft Intune 角色。 然而，这些角色是 Azure 门户和 Intune 管理中心中可用角色的子集。
+
+## <a name="watch-what-is-an-admin"></a>观看：什么是管理员？
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
+
+1. 登录 Microsoft 365 后，选择应用启动器。 如果看到“管理”按钮，则表示你就是管理员。
+1. 选择“**管理**”以转至 Microsoft 365 管理中心。
+1. 在左侧导航窗格中，选择“**用户**” > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">“**活动用户**”</a>。
+1. 选择要设置为管理员的人员。用户的详细信息显示在右侧对话框中。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -44,10 +54,6 @@ Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 <a
 正在查找你可以在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 中管理的详细 Intune 角色说明的完整列表？  查看 [Microsoft Intune 中的基于角色的访问控制 (RBAC)](/mem/intune/fundamentals/role-based-access-control)。
 
 有关在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 中分配角色的详细信息，请参阅 [分配管理员角色](assign-admin-roles.md)。
-
-## <a name="watch-what-is-an-admin"></a>观看：什么是管理员？
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
 ## <a name="security-guidelines-for-assigning-roles"></a>分配角色的安全准则
 

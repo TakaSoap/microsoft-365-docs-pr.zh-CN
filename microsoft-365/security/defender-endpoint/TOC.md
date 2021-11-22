@@ -9,7 +9,7 @@
 ### [数据存储和隐私](data-storage-privacy.md)
 ### [Microsoft Defender 安全中心概述](use.md)
 ### [门户概述](portal-overview.md)
-### [ Endpoint 计划 1（预览版）的定义程序]()
+### [Defender for Endpoint 计划 1]()
 #### [概述](defender-endpoint-plan-1.md)
 #### [安装和配置](mde-p1-setup-configuration.md)
 #### [入门](mde-plan1-getting-started.md)
