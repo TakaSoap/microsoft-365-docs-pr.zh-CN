@@ -29,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 使用 Microsoft 365 管理员帐户登录，重置 Microsoft 365 商业版订阅中的用户密码。
-ms.openlocfilehash: f1444513f336cad5423881420d299528a347927c
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 9a74eaf1524058d5a5c92e057290a37f2d812fee
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128386"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61136951"
 ---
 # <a name="reset-passwords"></a>重置密码
 
@@ -64,7 +64,7 @@ ms.locfileid: "61128386"
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>步骤：重置用户的业务密码
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在"**活动用户"** 页上，选择用户，然后选择"**重置密码"。**
 
@@ -101,13 +101,13 @@ ms.locfileid: "61128386"
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同时重置组织中每个人的所有业务密码
 <a name="bkmk_forgot"> </a>
 
-这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分，其中"批量重置密码" (一次最多重置 40) 。
+这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分有关批量重置密码 (一次最多 40 个用户重置) 。
   
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择"显示名称 **"旁边的** 选项以选择企业中的每个人。 然后取消选中你自己。 重置其他所有用户的密码时无法重置自己的密码。
 
-3. 选择 **"重置密码"。** 
+3. 选择 **"重置密码"。**
 
 4. 按照"重置密码"**页面上的说明操作**，然后选择"重置 **"。**  如果选择自动生成密码，将显示新的临时密码。
 
@@ -126,7 +126,7 @@ ms.locfileid: "61128386"
 
 请参阅这篇由 Microsoft MVP Vasil Michev 撰写的出色博客文章：[为 Office 365 中的所有用户强制更改密码](https://go.microsoft.com/fwlink/?linkid=853693)。
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>没有适用于企业Microsoft 365订阅
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>我并没有适用于Microsoft 365订阅
 
 请尝试阅读此文：[我忘记了 Office 所用的帐户用户名或密码。](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   

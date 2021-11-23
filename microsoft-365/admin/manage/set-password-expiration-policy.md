@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解管理员如何在 Microsoft 365 管理中心中针对你的企业、学校或非营利组织设置密码过期策略。
-ms.openlocfilehash: 9a9c01b292fcc4162e79b899b23f082e4f6413e2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 59d5469eb798b6bf93de34c6659c999e84b27ea5
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785782"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137059"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 
@@ -57,10 +57,10 @@ ms.locfileid: "60785782"
 1. 选择“**密码过期策略**”。
   
 1. 如果不希望强制用户更改密码，请取消选择“**将用户密码设置为以下天数后过期**”旁边的复选框。
-  
+
 1. 键入密码应采用的过期频率。从 14 到 730 之间选择一个天数。
   
-6. 在第二个框中键入通知用户其密码将过期的时间，然后选择“**保存**”。 选择从 1 到 30 的天数。
+1. 在第二个框中键入通知用户其密码将过期的时间，然后选择“**保存**”。 选择从 1 到 30 的天数。
 
 > [!IMPORTANT]
 > Microsoft 365 管理中心或任何 Office 应用不再支持密码过期通知。

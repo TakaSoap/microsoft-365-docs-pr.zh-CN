@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 合规中心解决方案试用版 playbook。
-ms.openlocfilehash: 1a4d7c69114821e10f301fda0ee408eef7389f9f
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: ca791a4be3c199527bae3b75c0b529198cef9f4a
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129063"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137143"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>试用版 playbook: Microsoft 365 合规中心解决方案
 
@@ -235,7 +235,7 @@ ms.locfileid: "61129063"
 多个组织使用 Microsoft 365 中的高级电子数据展示解决方案以处理关键电子数据展示流程。 这包括响应法规请求、调查和诉讼。
 
 1. 管理高级电子数据展示 –[了解如何配置高级电子数据展示、使用安全与合规中心以管理案例、在高级电子数据展示中管理工作流以及分析高级电子数据展示搜索结果](/learn/modules/manage-advanced-ediscovery)。
-1. [使用高级电子数据展示的大型案例功能创建电子数据展示案例](advanced-ediscovery-large-cases.md)
+1. [使用高级电子数据展示的新案例格式创建电子数据展示案例](advanced-ediscovery-new-case-format.md)
 1. [关闭或删除案例](close-or-delete-case.md) - 完成法律案例或调查后，可以关闭或删除案例。 还可以重新打开已关闭的案例。
 
 ### <a name="step-3-optional-settings"></a>步骤 3 (可选): 设置
