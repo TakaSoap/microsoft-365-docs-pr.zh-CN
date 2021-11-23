@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ba63747b93bab97a987f2ab8b400bea9583d332d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 10c6522a2c6ca612636a91e8a730c903912e49c7
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157742"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61144916"
 ---
 # <a name="overview-of-microsoft-defender-security-center"></a>Microsoft Defender 安全中心概述
 
@@ -37,8 +37,6 @@ ms.locfileid: "60157742"
 
 Microsoft Defender 安全中心是一个门户，你可以在这里访问 Microsoft Defender for Endpoint 功能。
 
-使用 **安全操作** 仪表板可深入了解网络中设备和用户的各种警报。
-
 使用 **威胁&漏洞** 管理仪表板，可扩大组织整体安全状况的可见性。 你将看到需要关注的设备和建议，它们可以帮助你减少组织中的攻击面。
 
 使用 **威胁分析仪表板** 持续评估和控制 Spectre 和 Spectre 的风险暴露。
@@ -53,6 +51,5 @@ Microsoft Defender 安全中心是一个门户，你可以在这里访问 Micros
 主题 | 说明
 :---|:---
 [门户概述](portal-overview.md) | 了解门户布局和区域说明。
-[查看安全操作仪表板](security-operations-dashboard.md) | Microsoft Defender for Endpoint  **Security 操作仪表板** 提供网络的快照。 你可以查看警报聚合、网络上设备服务的总体状态、调查设备、文件和 URL，并查看设备上看到的威胁快照。
 [查看威胁&漏洞管理仪表板](tvm-dashboard-insights.md) | 通过 **威胁&** 漏洞管理仪表板，你可以并行查看曝光和设备的安全分数以及顶级安全建议、软件漏洞、修正活动和公开的设备。
 [查看威胁分析仪表板，采取建议的缓解操作](threat-analytics.md) | 威胁 **分析仪表板** 可帮助你持续评估和控制威胁的风险暴露。 使用图表快速识别设备是否存在缓解。

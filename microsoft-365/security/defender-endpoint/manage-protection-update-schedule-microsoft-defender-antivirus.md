@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3030cc4f6040a5011db17fe95e62618d942e3cee
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 32ca742e4b8a964200f0effac1b6186ed64a911b
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111611"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148643"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>管理应下载和应用保护更新的时间日程安排
 
@@ -52,7 +52,7 @@ Microsoft Defender 防病毒允许你确定它应何时查找和下载更新。
       1. 将 **"检查Endpoint Protection安全智能更新..."** 设置为 **"0"。**
       2. 将 **"每天Endpoint Protection检查安全智能更新..."** 设置为应检查更新的时间。
       3
-4. 若要持续检查和下载更新，请Endpoint Protection检查安全智能更新...设置为两次更新之间应发生的小时数。
+4. 若要持续检查并下载更新，请Endpoint Protection检查安全智能更新...设置为两次更新之间应发生的小时数。
 
 5. [像往常一样部署更新的策略](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
@@ -67,11 +67,11 @@ Microsoft Defender 防病毒允许你确定它应何时查找和下载更新。
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以 **Windows签名** Microsoft Defender 防病毒 \>  \> **更新的组件并** 配置以下设置：
+4. 展开树以 **Windows签名** \> **Microsoft Defender 防病毒** \> **更新的组件并** 配置以下设置：
 
-    1. 双击指定 **一周中的哪些天检查** 安全智能更新设置，将选项设置为 **已启用**。 输入一周中的一天以检查更新。 单击“确定”。
-    2. 双击指定 **检查安全智能更新的** 间隔设置，将选项设置为 **已启用**。 输入更新之间的小时数。 单击“确定”。
-    3. 双击指定 **检查安全智能更新** 的时间设置，将选项设置为 **已启用**。 输入应检查更新的时间。 时间基于终结点的本地时间。 单击“确定”。
+    1. 双击指定 **一周中的哪些天检查** 安全智能更新设置，将选项设置为 **已启用**。 输入一周中的一天以检查更新。 单击“**确定**”。
+    2. 双击指定 **检查安全智能更新的** 间隔设置，将选项设置为 **已启用**。 输入更新之间的小时数。 单击“**确定**”。
+    3. 双击指定 **检查安全智能更新** 的时间设置，将选项设置为 **已启用**。 输入应检查更新的时间。 时间基于终结点的本地时间。 单击“**确定**”。
 
 ## <a name="use-powershell-cmdlets-to-schedule-protection-updates"></a>使用 PowerShell cmdlet 计划保护更新
 
@@ -83,7 +83,7 @@ Set-MpPreference -SignatureScheduleTime
 Set-MpPreference -SignatureUpdateInterval
 ```
 
-请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender for Cloud cmdlet，](/powershell/module/defender/)了解有关如何将 PowerShell 与 Microsoft Defender 防病毒 一Microsoft Defender 防病毒。
+请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和 Defender 防病毒[cmdlet，](/powershell/module/defender/)详细了解如何将 PowerShell 与 Microsoft Defender 防病毒。
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a>使用 Windows Management Instruction (WMI) 计划保护更新
 

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8c35f6c399e7668883b5b276fffd56f162984669
-ms.sourcegitcommit: f6cb10b1dc4b679b7890d059f7242870fc40b9f5
+ms.openlocfilehash: baedfaf23ed8012a04eb25407ac614efd51fd882
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60225016"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61144984"
 ---
 # <a name="manage-indicators"></a>管理指示器
 
@@ -34,7 +34,7 @@ ms.locfileid: "60225016"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)。
 
-1. 在导航窗格中，选择"设置 \> **规则"** 下 (\> 终结点) 。 
+1. 在导航窗格中，选择"设置"下 (终结点 \>  \> ) 。 
 
 2. 选择要管理的实体类型的选项卡。
 
@@ -46,7 +46,7 @@ ms.locfileid: "60225016"
 
 下载示例 CSV，了解受支持的列属性。
 
-1. 在导航窗格中，选择"设置 \> **规则"** 下 (\> 终结点) 。 
+1. 在导航窗格中，选择"设置"下 (终结点 \>  \> ) 。 
 
 2. 选择要导入其指示器的实体类型的选项卡。
 
@@ -56,9 +56,12 @@ ms.locfileid: "60225016"
 
 5. 选择“**完成**”。
 
+> [!NOTE]
+> 每个批次只能上载 500 个指示器。
+
 下表显示了受支持的参数。
 
-参数|类型|描述
+参数|类型|说明
 :---|:---|:---
 indicatorType|枚举|指示器的类型。 可能的值是："FileSha1"、"FileSha256"、"IpAddress"、"DomainName"和"Url"。 **Required**
 indicatorValue|String|Indicator [实体的](ti-indicator.md) 标识。 **Required**
@@ -76,7 +79,7 @@ GenerateAlert|字符串|是否应该生成警报。 可能的值是：True 或 F
 
 
 > [!NOTE]
-> IP 地址Inter-Domain无 (CIDR) 表示法不受支持。
+> 不支持无Inter-Domain IP (CIDR) 表示法。
 有关详细信息，请参阅 [Microsoft Defender for Endpoint 警报类别现在与 MITRE ATT&CK！](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748)一致。
 
 ## <a name="see-also"></a>另请参阅

@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c8a51358d18edaf4bab680d2c63268638eca3283
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 9620fd5209bb72617cf41b6b9aff48f39d607b61
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60585925"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61144983"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -61,12 +61,12 @@ ms.locfileid: "60585925"
 |---|---|
 |**键**|antivirusEngine|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
 
 #### <a name="enable--disable-real-time-protection"></a>启用/禁用实时保护
 
-确定是否在启用实时 (时扫描文件) 文件。
+确定是否启用实时保护 (扫描文件时是否) 这些文件。
 
 <br>
 
@@ -76,7 +76,7 @@ ms.locfileid: "60585925"
 |---|---|
 |**键**|enableRealTimeProtection|
 |**数据类型**|布尔值|
-|**可能的值**|true (默认值)  <p> false|
+|**可能的值**|true (默认)  <p> false|
 |
 
 #### <a name="enable--disable-passive-mode"></a>启用/禁用被动模式
@@ -112,7 +112,7 @@ ms.locfileid: "60585925"
 
 |说明|值|
 |---|---|
-|**键**|name|
+|**键**|behaviorMonitoring|
 |**数据类型**|String|
 |**可能的值**|disabled <p> 已启用 (默认) |
 |**Comments**|适用于终结点版本 101.45.00 或更高版本的 Defender 中可用。|
@@ -128,8 +128,8 @@ ms.locfileid: "60585925"
 |说明|值|
 |---|---|
 |**键**|scanAfterDefinitionUpdate|
-|**数据类型**|布尔值|
-|**可能的值**|true (默认值)  <p> false|
+|**数据类型**|Boolean|
+|**可能的值**|true (默认)  <p> false|
 |**Comments**|适用于终结点版本 101.45.00 或更高版本的 Defender 中可用。|
 |
 
@@ -144,8 +144,8 @@ ms.locfileid: "60585925"
 |说明|值|
 |---|---|
 |**键**|scanArchives|
-|**数据类型**|布尔值|
-|**可能的值**|true (默认值)  <p> false|
+|**数据类型**|Boolean|
+|**可能的值**|true (默认)  <p> false|
 |**Comments**|适用于终结点版本 101.45.00 或更高版本的 Microsoft Defender 中可用。|
 |||
 
@@ -185,7 +185,7 @@ ms.locfileid: "60585925"
 #### <a name="scan-exclusions"></a>扫描排除项
 
 从扫描中排除的实体。 排除项可以通过完整路径、扩展名或文件名指定。
- (排除项指定为项目数组，管理员可以按任意顺序指定所需数量的元素。) 
+ (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量的元素) 
 
 <br>
 
@@ -195,7 +195,7 @@ ms.locfileid: "60585925"
 |---|---|
 |**键**|排除项|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
 
 ##### <a name="type-of-exclusion"></a>排除类型
@@ -229,7 +229,7 @@ ms.locfileid: "60585925"
 |**Comments**|仅在 *排除$type**时适用*|
 |
 
-##### <a name="path-type-file--directory"></a>文件 (/目录路径的路径) 
+##### <a name="path-type-file--directory"></a>文件 (目录的路径) 
 
 指示 path *属性* 是否引用文件或目录。
 
@@ -240,7 +240,7 @@ ms.locfileid: "60585925"
 |说明|值|
 |---|---|
 |**键**|isDirectory|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|仅在 *排除$type**时适用*|
 |
@@ -291,7 +291,7 @@ ms.locfileid: "60585925"
 |**数据类型**|字符串数组|
 |
 
-#### <a name="disallowed-threat-actions"></a>不允许威胁操作
+#### <a name="disallowed-threat-actions"></a>不允许的威胁操作
 
 限制设备的本地用户在检测到威胁时可采取的操作。 此列表中包含的操作不会显示在用户界面中。
 
@@ -319,7 +319,7 @@ ms.locfileid: "60585925"
 |---|---|
 |**键**|threatTypeSettings|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
 
 ##### <a name="threat-type"></a>威胁类型
@@ -358,7 +358,7 @@ ms.locfileid: "60585925"
 
 #### <a name="threat-type-settings-merge-policy"></a>威胁类型设置合并策略
 
-指定威胁类型设置的合并策略。 这可以是管理员定义的设置和用户定义的设置 () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
+指定威胁类型设置的合并策略。 它可以是管理员定义的设置和用户定义的设置 () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
 
 <br>
 
@@ -372,7 +372,7 @@ ms.locfileid: "60585925"
 |**Comments**|适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。|
 |
 
-#### <a name="antivirus-scan-history-retention-in-days"></a>防病毒扫描历史记录保留 (天数) 
+#### <a name="antivirus-scan-history-retention-in-days"></a>防病毒扫描历史记录保留时间 (天数) 
 
 指定结果在设备的扫描历史记录中保留的天数。 旧扫描结果将从历史记录中删除。 也从磁盘中删除的旧隔离文件。
 
@@ -416,7 +416,7 @@ ms.locfileid: "60585925"
 |---|---|
 |**键**|cloudService|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下各节。|
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>启用/禁用云提供的保护
@@ -431,7 +431,7 @@ ms.locfileid: "60585925"
 |---|---|
 |**键**|enabled|
 |**数据类型**|布尔值|
-|**可能的值**|true (默认值)  <p> false|
+|**可能的值**|true (默认)  <p> false|
 |
 
 #### <a name="diagnostic-collection-level"></a>诊断集合级别
@@ -480,7 +480,7 @@ ms.locfileid: "60585925"
 |---|---|
 |**键**|automaticDefinitionUpdateEnabled|
 |**数据类型**|布尔值|
-|**可能的值**|true (默认值)  <p> false|
+|**可能的值**|true (默认)  <p> false|
 |
 
 ## <a name="recommended-configuration-profile"></a>建议的配置文件
@@ -620,4 +620,4 @@ python -m json.tool mdatp_managed.json
 
 ## <a name="configuration-profile-deployment"></a>配置文件部署
 
-为企业生成配置文件后，可以通过企业使用的管理工具进行部署。 Linux 上的 Defender for Endpoint 从 */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* 文件读取托管配置。
+为企业生成配置文件后，可以通过企业使用的管理工具进行部署。 Linux 上的终结点的 Defender 从 */etc/opt/microsoft/mdatp/managed/mdatp_managed.json 文件读取托管* 配置。

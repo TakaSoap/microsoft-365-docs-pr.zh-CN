@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d056c1addb428d63fa855d09fcce54d8e5ca5994
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: bd7cd5b0979f4d572261c02cc86cd6393f884720
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110711"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148775"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>配置并运行按需 Microsoft Defender 防病毒软件扫描
 
@@ -42,14 +42,14 @@ ms.locfileid: "61110711"
 
 2. 选择 **终结点安全** \> **防病毒**。
 
-3. 在选项卡列表中，选择"Windows 10 **不正常的** 终结点"或 **Windows 11不正常的终结点"。**
+3. 在选项卡列表中，选择"Windows 10 **不正常的终结点**"或Windows 11 **不正常的终结点"。**
 
-4. 从所提供的操作列表中，选择"快速扫描" (") 完全 **扫描"。**
+4. 从所提供的操作列表中，选择"快速扫描" (") "完全 **扫描"。**
 
    [![扫描"不正常Windows 10"选项卡上的选项。](images/mem-antivirus-scan-on-demand.png)](images/mem-antivirus-scan-on-demand.png#lightbox)
 
 > [!TIP]
-> 有关使用 Microsoft Endpoint Manager运行扫描的信息，请参阅[反恶意软件和防火墙任务：如何执行按需扫描](/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers)。
+> 有关使用 Microsoft Endpoint Manager运行扫描的信息，请参阅反恶意软件和防火墙任务[：如何执行按需扫描](/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers)。
 
 ## <a name="use-the-mpcmdrunexe-command-line-utility-to-run-a-scan"></a>使用mpcmdrun.exe命令行实用工具运行扫描
 
@@ -67,9 +67,9 @@ mpcmdrun.exe -scan -scantype 1
 
 2. 从边栏中， **选择"设备** \> **""** 所有设备"，然后选择你想要扫描的设备。
 
-3. 选择 **...更多**。 从选项中，选择快速 **扫描** (推荐) 或 **完全扫描**。
+3. 选择 **...更多**。 从选项中，选择快速 **扫描 (** 推荐) 或 **完全扫描**。
 
-## <a name="use-the-windows-security-app-to-run-a-scan"></a>使用Windows 安全中心运行扫描
+## <a name="use-the-windows-security-app-to-run-a-scan"></a>使用Windows 安全中心应用运行扫描
 
 有关[在个别终结点上运行Windows 安全中心](microsoft-defender-security-center-antivirus.md)的说明，请参阅在应用中运行扫描。
 
@@ -81,7 +81,7 @@ mpcmdrun.exe -scan -scantype 1
 Start-MpScan
 ```
 
-若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒 一起使用，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender for Cloud cmdlet。](/powershell/module/defender/)
+若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一起使用，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和 Defender 防病毒[cmdlet。](/powershell/module/defender/)
 
 ## <a name="use-windows-management-instruction-wmi-to-run-a-scan"></a>使用 Windows Management Instruction (WMI) 运行扫描
 

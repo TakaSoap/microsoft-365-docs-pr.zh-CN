@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8e3237eefdf9f8a9a5419e9d01e32d73eb949360
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: d206b41e6aa4ff2bcac74aa0eb229b50f1fae2ee
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110927"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148655"
 ---
 # <a name="manage-event-based-forced-updates"></a>管理基于事件的强制更新
 
@@ -32,7 +32,7 @@ ms.locfileid: "61110927"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender 防病毒允许你确定更新是应 (还是不应) 发生在某些事件之后，例如启动时还是从云提供的保护服务接收特定报告之后。
+Microsoft Defender 防病毒允许你确定更新是应 (还是不应) 某些事件之后发生，例如启动时还是从云提供的保护服务接收特定报告之后。
 
 ## <a name="check-for-protection-updates-before-running-a-scan"></a>在运行扫描之前检查保护更新
 
@@ -40,11 +40,11 @@ Microsoft Defender 防病毒允许你确定更新是应 (还是不应) 发生在
 
 ### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>运行扫描之前，使用 Configuration Manager 检查保护更新
 
-1. 在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"概述Endpoint Protection反恶意软件策略 \>  \> ) 
+1. 在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"概述 Endpoint Protection \>  \> **反** 恶意软件策略") 
 
 2. 转到计划 **扫描部分** ，将运行扫描之前检查最新的安全 **智能更新** 设置为 **是**。
 
-3. 单击“确定”。
+3. 单击“**确定**”。
 
 4. [像往常一样部署更新的策略](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
@@ -60,7 +60,7 @@ Microsoft Defender 防病毒允许你确定更新是应 (还是不应) 发生在
 
 5. 在运行计划 **扫描之前** ，双击检查最新的病毒和间谍软件定义，将选项设置为 **已启用**。
 
-6. 单击“确定”。
+6. 单击“**确定**”。
 
 ### <a name="use-powershell-cmdlets-to-check-for-protection-updates-before-running-a-scan"></a>运行扫描之前，使用 PowerShell cmdlet 检查保护更新
 
@@ -70,7 +70,7 @@ Microsoft Defender 防病毒允许你确定更新是应 (还是不应) 发生在
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-有关详细信息，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender for Cloud cmdlet。](/powershell/module/defender/index)
+有关详细信息，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置并运行 Microsoft Defender 防病毒 和 Defender 防病毒[cmdlet。](/powershell/module/defender/index)
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>使用 Windows Management Instruction (WMI) 在运行扫描之前检查保护更新
 
@@ -96,7 +96,7 @@ CheckForSignaturesBeforeRunningScan
 
 5. 双击启动时 **检查最新的病毒和** 间谍软件定义，将选项设置为 **已启用**。
 
-6. 单击“确定”。
+6. 单击“**确定**”。
 
 您还可以使用组策略、PowerShell 或 WMI 配置Microsoft Defender 防病毒启动时检查更新，即使更新未运行。
 
@@ -112,7 +112,7 @@ CheckForSignaturesBeforeRunningScan
 
 5. 双击启动时 **启动安全智能更新** ，将选项设置为 **已启用**。
 
-6. 单击“确定”。
+6. 单击“**确定**”。
 
 ### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>当不存在更新时，使用 PowerShell cmdlet Microsoft Defender 防病毒下载更新
 
@@ -122,9 +122,9 @@ CheckForSignaturesBeforeRunningScan
 Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-有关详细信息，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)管理 Microsoft Defender 防病毒 和[Defender for Cloud cmdlet，](/powershell/module/defender/index)了解有关如何将 PowerShell 与 Microsoft Defender 防病毒 一Microsoft Defender 防病毒。
+有关详细信息，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)管理 Microsoft Defender 防病毒 和 Defender 防病毒[cmdlet，](/powershell/module/defender/index)了解有关如何将 PowerShell 与 Microsoft Defender 防病毒 一Microsoft Defender 防病毒。
 
-### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>使用 Windows Management Instruction (WMI) ，以在Microsoft Defender 防病毒更新时下载更新
+### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>使用 Windows Management Instruction (WMI) ，以在 Microsoft Defender 防病毒 不存在时下载更新
 
 对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
 

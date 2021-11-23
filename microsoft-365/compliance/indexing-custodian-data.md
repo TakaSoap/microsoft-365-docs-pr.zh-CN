@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 将保管人添加到Advanced eDiscovery案例时，任何被视为部分索引的内容将被重新处理，使其完全可搜索。
-ms.openlocfilehash: 205594031bcfb65b882d10217ccdcd10e4ed014d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9209732925c87277755c89381791154bf9dbe953
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201045"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148898"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>保管人数据的高级索引
 
@@ -41,7 +41,7 @@ ms.locfileid: "60201045"
 
 完成高级索引过程后，您可以了解重新处理的有效性。  在案例的"处理"选项卡上的"高级索引结果"视图中，图形列出了添加到混合索引 *的项目数*。  混合索引是高级电子数据展示存储重新处理的内容的位置。
 
-此视图还包括需要修正的项目数和按文件类型显示的另一个错误图表。 有关详细信息，请参阅：
+此视图还包括需要修正的项目数和按文件类型显示的另一个错误图表。 有关更多信息，请参阅：
 
 - [修正处理数据时出现的错误](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
@@ -49,7 +49,7 @@ ms.locfileid: "60201045"
 
 ## <a name="updating-the-advanced-index-for-custodians"></a>更新保管人的高级索引
 
-将保管人添加到托管Advanced eDiscovery，将重新处理所有部分索引项。 但是，随着时间的推移，可能会将更多的部分索引项目添加到用户的邮箱或OneDrive帐户。  如有必要，可以更新特定保管人索引。 有关详细信息，请参阅管理案例[的保管Advanced eDiscovery。](manage-new-custodians.md#re-index-custodian-data) 在一种情况下，您还可以通过单击"处理"选项卡上的 **"** 更新索引"来更新所有保管 **人** 索引。
+将保管人添加到一个Advanced eDiscovery案例时，将重新处理所有部分索引项。 但是，随着时间的推移，可能会将更多的部分索引项目添加到用户的邮箱或OneDrive帐户。  如有必要，可以更新特定保管人索引。 有关详细信息，请参阅管理案例[的保管人Advanced eDiscovery案例](manage-new-custodians.md#reindex-custodian-data)。 在一种情况下，您还可以通过单击"处理"选项卡上的 **"** 更新索引"来更新所有保管 **人** 索引。
 
 > [!NOTE]
 > 更新保管人索引是一个长时间运行的过程。 建议您在一种情况下每天更新索引不要超过一次。

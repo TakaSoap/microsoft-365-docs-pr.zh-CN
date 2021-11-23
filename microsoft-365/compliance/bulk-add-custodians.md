@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用导入工具 d 快速将多个保管人及其关联的数据源添加到Advanced eDiscovery。
-ms.openlocfilehash: f0d9290d6014b820008408ea6ab9249c0c5a28f4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 5e2ce53a227462a1fddd7785faf83355ca70611c
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757452"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148727"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>将保管人导入Advanced eDiscovery案例
 
@@ -59,7 +59,7 @@ ms.locfileid: "60757452"
 |||
 
 > [!NOTE]
-> <sup>1</sup> 使用保管人导入过程和 CSV 文件，最多可将 1，000 个邮箱和 100 个网站置于保留状态。 您可以使用此过程向案例添加超过 1，000 个保管人，但保留限制仍然适用。 有关保留限制详细信息，请参阅 Advanced eDiscovery[中的限制](limits-ediscovery20.md#hold-limits)。
+> <sup>1</sup> 当您将 1，000 多个邮箱或 100 个网站置于保留状态时，系统将根据需要自动扩展电子数据展示保留。 这意味着系统会自动将数据位置添加到多个保留，而不是将它们添加到单个保留中。 但是，每个组织保留 10，000 个案例的限制仍然适用。 有关保留限制详细信息，请参阅 Advanced eDiscovery[中的限制](limits-ediscovery20.md#hold-limits)。
 <br>
 > <sup>2</sup> 在 CSV 文件中添加 TeamsMailbox 和 YammerMailbox 工作负载时，默认情况下会自动添加组网站 (TeamSite 和 YammerSite) 。 无需在 CSV 文件中单独指定 TeamsSite 和 YammerSite。
 
@@ -94,7 +94,7 @@ ms.locfileid: "60757452"
 
 验证保管人并添加到案例后，OneDrive添加与保管人关联的每个主邮箱和邮箱帐户。
 
-但是，如果找不到与保管人关联的任何其他数据源 (例如 SharePoint 网站、Microsoft Teams、Microsoft 365 组或 Yammer 组) ，则没有一个分配给保管人，且"未验证"值将显示在数据源上保管人旁边的"状态"**列中。** 选项卡。
+但是，如果找不到与保管人关联的任何其他数据源 (例如 SharePoint 网站、Microsoft Teams、Microsoft 365 组或 Yammer 组) ，则没有分配给保管人，并且"未验证"值显示在数据源上保管人旁边的"状态"**列中。** 选项卡。
 
 为保管人添加经过验证的数据源：
 
@@ -110,7 +110,7 @@ ms.locfileid: "60757452"
 
 若要手动添加和关联之前无效的数据源，
 
-1. 在 **"数据源"** 选项卡上，选择要手动添加和关联之前无效的数据源的保管人。
+1. 在 **"数据源"** 选项卡上，选择要手动添加和关联以前无效的数据源的保管人。
 
 2. 单击 **飞** 出页面顶部的"编辑"，将邮箱、站点、Teams或Yammer组关联到保管人。 为此 **，单击相应** 数据位置类型旁边的"编辑"。
 

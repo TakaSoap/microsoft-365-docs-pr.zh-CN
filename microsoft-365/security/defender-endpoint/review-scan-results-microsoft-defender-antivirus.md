@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 74384f8f80d477b3299d607f94c320e280eb9b01
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: b9e6247a8bf17f047eade35fc1b2597fe8072ac4
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110723"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148886"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>查看Microsoft Defender 防病毒扫描结果
 
@@ -32,7 +32,7 @@ ms.locfileid: "61110723"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-在Microsoft Defender 防病毒扫描完成后，无论是按需扫描还是计划扫描，将记录[](run-scan-microsoft-defender-antivirus.md)结果，并且您可以查看[](scheduled-catch-up-scans-microsoft-defender-antivirus.md)结果。 
+完成Microsoft Defender 防病毒（无论是按需扫描还是计划扫描）后，将记录[](run-scan-microsoft-defender-antivirus.md)结果，并且您可以查看[](scheduled-catch-up-scans-microsoft-defender-antivirus.md)结果。 
 
 
 ## <a name="use-configuration-manager-to-review-scan-results"></a>使用 Configuration Manager 查看扫描结果
@@ -59,7 +59,7 @@ Get-MpThreat
 
 :::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell 代码。":::
 
-请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender for Cloud cmdlet，](/powershell/module/defender/)了解有关如何将 PowerShell 与 Microsoft Defender 防病毒 一Microsoft Defender 防病毒。
+请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和 Defender 防病毒[cmdlet，](/powershell/module/defender/)详细了解如何将 PowerShell 与 Microsoft Defender 防病毒。
 
 ## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>使用 Windows Management Instruction (WMI) 查看扫描结果
 

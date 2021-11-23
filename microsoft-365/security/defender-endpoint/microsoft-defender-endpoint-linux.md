@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1b8fceed1e749a21323ade7ee87ab54a7fcffde8
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 045f3ed99f119ff744d7c8e3cbed8a5cdab88fee
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478981"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61145030"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -37,7 +37,7 @@ ms.locfileid: "60478981"
 本主题介绍如何在 Linux 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Linux 上运行其他第三方终结点保护产品以及 Microsoft Defender for Endpoint 可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Linux EDR 上的 Defender for Endpoint[功能](linux-preferences.md#enable--disable-passive-mode)。
+> 在 Linux 上运行其他第三方终结点保护产品以及 Microsoft Defender for Endpoint 可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Linux EDR 上的 Defender for [Endpoint 功能](linux-preferences.md#enable--disable-passive-mode)。
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安装 Microsoft Defender for Endpoint
 
@@ -68,6 +68,9 @@ ms.locfileid: "60478981"
     - [使用部署配置管理工具进行部署](linux-deploy-defender-for-endpoint-with-chef.md)
 
 如果遇到任何安装失败，请参阅 Linux 上的 Microsoft Defender for Endpoint 中的安装 [失败疑难解答](linux-support-install.md)。
+
+> [!NOTE]
+> 不支持在默认安装路径外的其他任何其他位置安装 Microsoft Defender for Endpoint。 
 
 ### <a name="system-requirements"></a>系统要求
 
@@ -169,7 +172,7 @@ ms.locfileid: "60478981"
 
 ### <a name="configuring-exclusions"></a>配置排除项
 
-将排除项添加到Microsoft Defender 防病毒时，应注意用于排除的常见[Microsoft Defender 防病毒](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+将排除项添加到Microsoft Defender 防病毒时，应注意用于Microsoft Defender 防病毒[](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>网络连接
 
@@ -192,12 +195,12 @@ Defender for Endpoint 可以使用以下发现方法发现代理服务器：
 - 透明代理
 - 手动静态代理配置
 
-如果代理或防火墙阻止匿名流量，请确保允许匿名流量位于前面列出的 URL 中。 对于透明代理，不需要对 Defender for Endpoint 进行其他配置。 对于静态代理，请按照手动静态代理 [配置 中的步骤操作](linux-static-proxy-configuration.md)。
+如果代理或防火墙阻止匿名流量，请确保前面列出的 URL 中允许匿名流量。 对于透明代理，不需要对 Defender for Endpoint 进行其他配置。 对于静态代理，请按照手动静态代理 [配置 中的步骤操作](linux-static-proxy-configuration.md)。
 
 > [!WARNING]
 > 不支持 PAC、WPAD 和经过身份验证的代理。 确保仅使用静态代理或透明代理。
 >
-> 出于安全考虑，也不支持 SSL 检查和截获代理。 为 SSL 检查和代理服务器配置例外，以将数据从 Linux 上的 Defender for Endpoint 直接传递到相关 URL，而不会拦截。 将拦截证书添加到全局存储将不允许拦截。
+> 出于安全考虑，也不支持 SSL 检查和截获代理。 为 SSL 检查和代理服务器配置例外，以直接将数据从 Linux 上的 Defender for Endpoint 传递到相关 URL，而不会拦截。 将拦截证书添加到全局存储将不允许拦截。
 
 有关疑难解答步骤，请参阅在 Linux 上解决 [Microsoft Defender for Endpoint 的云连接问题](linux-support-connectivity.md)。
 
