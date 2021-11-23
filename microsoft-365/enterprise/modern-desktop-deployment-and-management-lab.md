@@ -1,5 +1,5 @@
 ---
-title: Windows和Office 365部署实验室工具包
+title: Windows 和 Office 365 部署实验室工具包
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -15,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解从何处访问 Windows Office 部署实验室工具包。
-ms.openlocfilehash: cda0cf9df86e6a02139af7e0baa133afd19f1c13
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 9a388a1f9095994e45b07d403e347a5fbfb413a7
+ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128163"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61152402"
 ---
-# <a name="windows-and-office-365-deployment-lab-kit"></a>Windows和Office 365部署实验室工具包
+# <a name="windows-and-office-365-deployment-lab-kit"></a>Windows 和 Office 365 部署实验室工具包
 
 Windows和 Office 365 部署实验室工具包旨在帮助你规划、测试和验证运行 Windows 10 企业版 或 Windows 11 Enterprise 和 Microsoft 365 企业应用版 的桌面的部署Microsoft 365 企业应用版。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、桌面分析、Office自定义工具、OneDrive、Windows Autopilot 等。
 
 强烈建议准备升级到 Windows 8.1 的组织Windows 10。 如果当前使用的是 2019 Windows 10、Microsoft 365 企业应用版 (或 Office 365 专业增强版) ，Office适用。 作为隔离环境，生成的实验室非常适合探索部署工具更新和测试与部署相关的自动化。
 
-## <a name="windows-10-and-windows-11-versions-of-the-lab-kit-are-now-available-for-free-download-in-the-microsoft-evaluation-center"></a>Windows 10 microsoft Windows 11中心中可免费下载实验室工具包的最新版本和最新版本。 
+**Windows 10 Microsoft Windows 11中心中可免费下载实验室工具包的最新版本和最新版本。**
 
-[下载 Windows 10 和 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)下载 Windows 11 
- [Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
+[下载 Windows 10 和 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
+[下载 Windows 11 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 ## <a name="a-complete-lab-environment"></a>完整的实验室环境
 
@@ -39,7 +39,7 @@ Windows和 Office 365 部署实验室工具包旨在帮助你规划、测试和�
 
 - Windows 10 企业版，版本 21H1 或 Windows 11 Enterprise
 - Windows 7 企业版
-- 新增内容！ Microsoft Endpoint Configuration Manager，版本 2103
+- Microsoft Endpoint Configuration Manager，版本 2103
 - 适用于 Windows 10 的 Windows 评估和部署工具包
 - Microsoft Deployment Toolkit
 - Microsoft Application Virtualization (App-V)
@@ -56,7 +56,7 @@ Windows和 Office 365 部署实验室工具包旨在帮助你规划、测试和�
 
 详细的实验室指南会带你了解多个部署和管理方案。 实验室已针对 Intune 和 Configuration Manager 的最新版本进行了更新。
 
-注意：Windows 11版本包括 Windows 10 版本 21H1 实验室指南。 即将Windows 11实验室指南的最新版本。 
+注意：Windows 11版本包括 Windows 10 21H1 实验室指南。 实验室Windows 11版本即将推出。 
 
 ### <a name="plan-and-prepare-infrastructure"></a>计划和准备基础结构
 
@@ -84,7 +84,7 @@ Windows和 Office 365 部署实验室工具包旨在帮助你规划、测试和�
 ### <a name="deploy-windows-10"></a>部署 Windows 10
 
 - Configuration Manager 中的 OS 部署任务序列
-- MICROSOFT Deployment Toolkit (MDT) 
+- Microsoft Deployment Toolkit (MDT) 
 - Windows Autopilot
 - 部署和管理新Microsoft Edge
 
@@ -103,8 +103,9 @@ Windows和 Office 365 部署实验室工具包旨在帮助你规划、测试和�
 
 - 准备、部署、优化
 
-[下载 Windows 10 和 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)下载 Windows 11 
- [Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
+## <a name="download-the-lab"></a>下载实验室
+[下载 Windows 10 和 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
+[下载 Windows 11 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]
 > 请使用宽带 Internet 连接下载此内容，并允许自动预配 30-45 分钟。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 实验室Windows 10 2022 年 2 月 16 日过期。 实验室Windows 11 2022 年 2 月 10 日过期。 新版本将在过期前发布。
@@ -122,5 +123,5 @@ Windows和 Office 365 部署实验室工具包旨在帮助你规划、测试和�
 - [Microsoft 365 简介](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Office 365 企业版](https://products.office.com/business/office)
 - [企业移动性 + 安全性简介](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [Windows企业](https://www.microsoft.com/windows/business)
+- [Windows for business](https://www.microsoft.com/windows/business)
 
