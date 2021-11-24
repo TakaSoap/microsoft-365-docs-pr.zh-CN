@@ -16,6 +16,8 @@
       items:
         - name: 概述
           href: content-sources-365-admin-center.md
+        - name: 管理内容在 Viva Learning 中的显示方式
+          href: use-tabs.md
         - name: 添加 SharePoint
           href: configure-sharepoint-content-source.md
         - name: 添加 Learning Management System
