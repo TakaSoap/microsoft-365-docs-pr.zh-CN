@@ -774,9 +774,9 @@
           items:
             - name: 创建和管理案例
               href: create-and-manage-advanced-ediscoveryv2-case.md
-            - name: 使用大型案例（预览版）
-              href: advanced-ediscovery-large-cases.md
-        - name: Teams 内容的高级电子数据展示工作流（预览版）
+            - name: 使用新问题单格式
+              href: advanced-ediscovery-new-case-format.md
+        - name: Teams 内容的高级电子数据展示工作流
           href: teams-workflow-in-advanced-ediscovery.md
         - name: 管理保管人和非保管人数据源
           href: managing-custodians.md
