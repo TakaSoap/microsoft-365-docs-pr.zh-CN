@@ -6,24 +6,25 @@ manager: pamgreen
 ms.reviewer: cjtan; lauris
 audience: admin
 ms.topic: article
-ms.service: ''
-ms.prod: microsoft-365-enterprise
+ms.custom: intro-overview
+ms.service: viva
+ms.subservice: viva-topics
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 ms.localizationpriority: medium
 description: 了解如何在组织中使用 Viva 主题。
-ms.openlocfilehash: 9b719c77a54271078bf2ee80f657352a84d9713b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2e5aab7edd5b84ad9e1ee987bd90f2d4e9aec5a5
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173207"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153624"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva 主题概述 
 
-Viva 主题使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，从 SharePoint 新式页面、Microsoft 搜索 和 Word、PowerPoint、Outlook 和 Excel 中的搜索开始，向用户介绍他们日常使用的 Microsoft 365 应用中的知识。
+Viva 主题使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，将知识带到他们日常使用的 Microsoft 365 应用中，从 SharePoint 新式页面、Microsoft 搜索 和 Word 中的搜索开始，PowerPoint、Outlook 和 Excel。
 
 <br/>
 
@@ -58,7 +59,7 @@ Viva Topics 使用 AI 自动搜索和识别组织中的 *主题*。 它会编译
 
 ### <a name="office-application-search"></a>Office应用程序搜索
 
-在 Office 应用（如 Word、PowerPoint、Outlook 或 Excel）（通过搜索框或上下文菜单中的"搜索"）中使用搜索时，主题答案将显示在搜索结果中。
+当您在 Office 应用（如 Word、PowerPoint、Outlook 或 Excel）（通过搜索框或选择上下文菜单中的"搜索"）中使用搜索时，将在搜索结果中显示主题答案。
 
    ![显示 Word 中通过"搜索"框进行搜索的屏幕截图。](../media/knowledge-management/word-search-2.png)
 

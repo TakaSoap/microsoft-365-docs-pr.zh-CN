@@ -6,6 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
+ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
@@ -13,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解 Microsoft SharePoint Syntex 中的文档理解。
-ms.openlocfilehash: dab209fc47db18875f0bc48d3b2816cd9d1927b8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fe09298e32ce76cab3c8ea16e3d1075a0925f60f
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172205"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153696"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的文档理解概述
 
@@ -39,11 +40,11 @@ ms.locfileid: "60172205"
 > [!NOTE]
 > 只读或密封的内容类型无法更新，因此不能在模型中使用。
 
-向文档理解模型添加 *分类器* 和 *提取器* 以执行以下操作： 
+将 *分类器**和提取器* 添加到文档理解模型中，以执行以下操作： 
 
 - 分类器用于识别上载到文档库的文档并对其进行分类。 例如，一个分类器可通过“训练有素”来标识上载到库的所有 *合同续订* 文档。 当你创建分类器时，合同续订内容类型由你定义。
 
-- 提取器从这些文档提取信息。 例如，对于文档库中标识的所有合同续订文档，将在视图中显示每个合同续订文档的 *服务开始日期* 和 *客户*。 
+- 提取器从这些文档提取信息。 例如，对于文档库中标识的每个合同续订文档，将显示显示每个文档的 *服务* 开始日期和 *客户端* 的列。 
 
 可使用示例文件在模型中培训并测试分类器和提取器。 示例文件提供了有关尝试从文件识别和提取数据时要查找的内容的模型示例。 例如，你将使用公司使用的合同续订文档的示例来训练你的合同续订分类和提取器。 还可以使用示例文件来测试模型的有效性。
 
@@ -51,9 +52,9 @@ ms.locfileid: "60172205"
 
 ## <a name="file-limitations"></a>文件限制
 
-了解模型时，在通过光学字符识别 （OCR） 技术扫描 PDF、图像和 TIFF 文件时，包括当使用示例文件对模型进行训练时，以及针对文档库中的文件运行模型时。
+文档理解模型使用光学字符识别 (OCR) 技术扫描 PDF、图像和 TIFF 文件。 在使用示例文件训练模型时，以及针对文档库中的文件运行模型时，将扫描文件。
 
-请注意以下与 Microsoft Office 基于文本的文件和 OCR 扫描文件（PDF、图像或 TIFF）有关的差异：
+请注意基于文本的文件Microsoft Office OCR 扫描的文件 (PDF、图像或 TIFF 文件) ：
 
 - Office 文件：截断为 64,000 个字符（在培训中以及针对文档库中的文件运行时）。
 

@@ -4,23 +4,23 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
-ms.date: 10/10/2021
 audience: enabler, admin
 ms.topic: landing-page
 ms.custom: intro-hub-or-landing
-ms.prod: microsoft-365-enterprise
+ms.service: viva
+ms.subservice: viva-topics
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 ms.localizationpriority: medium
 description: 了解如何查找 Microsoft Viva Topics 的资源。
-ms.openlocfilehash: a5e5d688a3838da95dde92e0adf27c1d1c833430
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ea158b266154cee1f911a40983c352d1f7b4cc43
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668272"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153672"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva 简介
 
@@ -37,7 +37,7 @@ Viva 主题是一Microsoft 365服务，可帮助组织将信息转换为知识�
 
 ## <a name="get-started"></a>入门
 
-本节中的资源可帮助您了解有关什么是 Viva 主题以及该主题可以如何提供帮助的信息。
+本节中的资源可帮助你了解有关什么是 Viva 主题以及如何提供帮助的信息。
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
@@ -56,6 +56,7 @@ Viva 主题是一Microsoft 365服务，可帮助组织将信息转换为知识�
 |:-----|:-----|
 |了解如何开始规划使用 Viva 主题 |[入门](topics-adoption-getstarted.md)|  
 |为 Viva 主题设置并运行试用计划 |[运行试用版](trial-topics.md)|
+|通过 Viva 主题查找资源，帮助你的组织完成采用之旅 |[采用资源](adoption-resources.md)|
 
 ## <a name="set-up-and-administration"></a>设置和管理
 

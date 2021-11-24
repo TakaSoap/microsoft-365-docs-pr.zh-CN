@@ -4,12 +4,12 @@ description: 包含文件
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: e4ac49ce9e10e8a6e9c1a7536c310e003ab67ba4
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 3a71ae9b77e49ff88c12383b00faf17d5a52b10d
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61149544"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61155420"
 ---
 ## <a name="prerequisites"></a>先决条件
 
@@ -33,6 +33,7 @@ ms.locfileid: "61149544"
 - 必须在Azure Active Directory通过联合身份验证或同步 (配置混合AAD 连接加入) 
 - AAD 连接 Sync 必须包括作用域中的设备对象，以在需要加入Azure Active Directory (时与) 
 - AAD 连接需要支持 Server 2012 R2 时，必须修改 Server 2012 R2 (的同步规则) 
+- 所有设备都必须在托管 Microsoft Defender for Endpoint Azure Active Directory的租户的租户中注册。 不支持跨租户方案。 
 
 ### <a name="connectivity-requirements"></a>连接要求
 
@@ -80,13 +81,13 @@ ms.locfileid: "61149544"
 
 ## <a name="configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management"></a>配置租户以支持 Microsoft Defender 进行终结点安全配置管理
 
-若要通过管理中心支持 Microsoft Defender 终结点安全Microsoft Endpoint Manager管理，你必须在每个控制台中启用它们之间的通信。
+若要通过管理中心支持 Microsoft Defender 的终结点安全Microsoft Endpoint Manager管理，你必须在每个控制台中启用它们之间的通信。
 
 1. 登录到[Microsoft 365 Defender，](https://security.microsoft.com/)然后转到设置终结点配置管理强制范围，并启用  >    >    >  用于安全设置管理的平台：
 
    :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="在 Microsoft Defender 门户中启用适用于终结点Microsoft 365 Defender管理。":::
 
-2. 确保相关用户有权管理 Microsoft Endpoint Manager 中的终结点安全设置，或者通过配置 Microsoft 365 Defender 门户中的角色来授予Microsoft 365 Defender权限。 转到设置  >  **角色**  >  **添加项**：
+2. 确保相关用户有权管理 Microsoft Endpoint Manager 中的终结点安全设置，或者通过配置 Microsoft 365 Defender 门户中的角色来授予这些权限。 转到设置  >  **角色**  >  **添加项**：
 
    :::image type="content" source="../media/add-role-in-mde.png" alt-text="在管理门户中Microsoft 365 Defender角色。":::
 
@@ -99,7 +100,7 @@ ms.locfileid: "61149544"
 
 4. 登录到 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-5. 选择 **终结点安全**  >  **Microsoft Defender for Endpoint，** 将允许 Microsoft Defender for Endpoint 强制实施终结点安全配置 **(预览**) **设置为"打开"。**
+5. 选择 **终结点安全**  >  **Microsoft Defender for Endpoint，** 将允许 Microsoft **Defender for Endpoint 强制实施** 终结点安全配置 (预览) 设置为 **"打开"。**
 
    :::image type="content" source="../media/enable-mde-settings-management-mem.png" alt-text="在管理中心中为终结点设置Microsoft Endpoint Manager Microsoft Defender。":::
 
