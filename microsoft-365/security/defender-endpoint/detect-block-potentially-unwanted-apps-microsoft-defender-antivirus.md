@@ -16,18 +16,18 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7e6bebd01ba3740efcf99677f83006e2d26c2157
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 6610fbc770e8a4d9e6119c417f4419919362515f
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148862"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166430"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>检测并阻止可能不需要的应用程序
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
 
 可能不需要的应用程序 (PUA) 用来指代一类软件，它们会导致计算机运行缓慢、显示意外广告，最糟的是，它还会安装其他意外的或不需要的软件。 PUA 不是病毒、恶意软件或其他威胁，但它可能会对终结点进行一些操作，对其性能或使用产生负面的影响。 *PUA* 这个术语也可以指那些由于某些不当行为，被 Microsoft Defender for Endpoint 评估为具有较差信誉的应用程序。
