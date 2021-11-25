@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: 410fa890e159d18e3aacedbf08be44ee047ee189
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3be5e7f0710155cb8e5e8e60e19577cf423190eb
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158162"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165194"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
@@ -35,9 +35,9 @@ ms.locfileid: "60158162"
 
 请使用以下功能支持 Microsoft 365 中的记录管理解决方案：
 
-- **将内容标记为记录**。创建并配置将内容标记为[记录](#records)的保留标签，该类标签随后可由用户应用，或通过标识敏感信息、关键字或内容类型自动应用。
+- **将内容标记为记录**。创建并配置将内容标记为 [记录](#records)的保留标签，该类标签随后可由用户应用，或通过标识敏感信息、关键字或内容类型自动应用。
 
-- **使用文件计划迁移和管理保留要求**。通过使用[文件计划](file-plan-manager.md)，可将现有保留计划引入 Microsoft 365，或者构建一个新的保留计划来增强管理功能。
+- **使用文件计划迁移和管理保留要求**。通过使用 [文件计划](file-plan-manager.md)，可将现有保留计划引入 Microsoft 365，或者构建一个新的保留计划来增强管理功能。
 
 - **使用保留标签配置保留和删除设置**。根据各种因素（包括上次修改日期或上次创建日期）配置有关保留期和操作的 [保留标签](retention.md#retention-labels)。
 
@@ -79,19 +79,19 @@ ms.locfileid: "60158162"
 
 |操作| 保留标签 |记录 - 已锁定| 记录 - 已解锁| 合规性记录 |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|编辑内容|允许 | **阻止** | Allowed | **阻止**|
-|编辑属性（包括重命名）|Allowed |Allowed | Allowed| **阻止**|
+|编辑内容|允许 | **阻止** | 允许 | **阻止**|
+|编辑属性（包括重命名）|Allowed |允许 | 允许| **阻止**|
 |删除|允许 <sup>1</sup> |**阻止** |**阻止**| **阻止**|
-|复制|允许 |Allowed | Allowed| 允许|
-|在容器 <sup>2</sup> 中移动|允许 |Allowed | Allowed| 允许|
+|复制|允许 |允许 | Allowed| Allowed|
+|在容器 <sup>2</sup> 中移动|允许 |允许 | Allowed| 允许|
 |围绕容器 <sup>2</sup> 移动|允许 |如果从未解锁，则允许 | **阻止** | **阻止**|
-|打开/读取|允许 |Allowed | Allowed| Allowed|
+|打开/读取|Allowed |Allowed | 允许| Allowed|
 |更改标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
 |删除标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
 
 页脚：
 
-<sup>1</sup>OneDrive 和 Exchange 支持此功能，方法是在安全位置保留一份副本，但 SharePoint 阻止此功能。
+<sup>1</sup>对于 SharePoint 和 OneDrive，可在 Microsoft 365 合规中心 > **记录管理** > **记录管理设置** > **保留标签** > **删除项目** 中作为租户设置被阻止。
 
 当你将保留标签应用于具有文档附件的列表项时，该文档不会继承保留设置，因此可以从列表项中删除。 相比之下，如果该列表项被声明为带有保留标签的记录，则文档附件将继承保留设置，并且无法删除。
 

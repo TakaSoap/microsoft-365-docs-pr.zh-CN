@@ -15,16 +15,18 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 17b1a57a16c829bbeced091c9a8678e00e5b9735
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 2427e2e9e162beb551d37da4280fa27bdf068069
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121945"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166742"
 ---
 # <a name="next-generation-protection-overview"></a>下一代保护概述
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+**适用对象**
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint 包括加强网络安全外围的下一代保护。 下一代保护旨在捕获所有类型的新威胁。 除了 Microsoft Defender 防病毒，下一代保护服务还包括以下功能：
 
