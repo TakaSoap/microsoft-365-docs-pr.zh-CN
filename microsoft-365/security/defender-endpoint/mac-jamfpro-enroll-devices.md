@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: afe044e2f8cc495ce7f74bc482a99689af3e9482
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bec8c6a2a329bff8e80c6822480ea03dd5db4898
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207831"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171073"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>在 macOS 设备上注册 Microsoft Defender for Endpoint 到 Jamf Pro
 
@@ -29,7 +29,8 @@ ms.locfileid: "60207831"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
@@ -47,7 +48,7 @@ ms.locfileid: "60207831"
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>注册方法 1：注册邀请
 
-1. 在 Jamf Pro仪表板中，导航到"**注册邀请"。**
+1. 在 Jamf Pro仪表板中，导航到注册 **邀请**。
 
     ![配置设置 1 的图像。](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
@@ -55,7 +56,7 @@ ms.locfileid: "60207831"
 
     ![自动生成的徽标描述的关闭。](images/b6c7ad56d50f497c38fc14c1e315456c.png)
 
-3. In **Specify Recipients for the Invitation** > under Email **Addresses** enter the e-mail address (es) of the recipients.
+3. 在 **"为邀请指定** 收件人>电子邮件地址"下，输入收件人 (电子邮件地址) 电子邮件地址。
 
     ![配置设置 2 的图像。](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
 
@@ -87,7 +88,7 @@ ms.locfileid: "60207831"
 
 1. 选择 **"继续** "，然后从"系统首选项" **窗口安装 CA** 证书。
 
-    ![Jamf Pro enrollment1 的图像。](images/jamfpro-ca-certificate.png)
+    ![Jamf Pro 1 的图像。](images/jamfpro-ca-certificate.png)
 
 2. 安装 CA 证书后，返回到浏览器窗口，然后选择" **继续** "并安装 MDM 配置文件。
 
@@ -99,11 +100,11 @@ ms.locfileid: "60207831"
 
 4. 选择 **"** 继续"继续安装 MDM 配置文件。
 
-    ![Jamf Pro enrollment4 的图像。](images/jamfpro-install-mdm.png)
+    ![Jamf Pro注册4 的图像。](images/jamfpro-install-mdm.png)
 
 5. 选择 **"继续** "以安装 MDM 配置文件。
 
-    ![Jamf Pro enrollment5 的图像。](images/jamfpro-mdm-unverified.png)
+    ![Jamf Pro注册5 的图像。](images/jamfpro-mdm-unverified.png)
 
 6. 选择 **"继续**  "完成配置。
 

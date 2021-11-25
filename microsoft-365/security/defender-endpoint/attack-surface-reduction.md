@@ -18,18 +18,19 @@ ms.custom:
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6e42cdaa8ecd464581a786d47a4b2044b2907ca9
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 956a20030e61b47a1dfa66872fc2e4ecc5eca967
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962490"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171469"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则来避免感染恶意软件
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>攻击面减少规则为什么很重要
@@ -48,7 +49,7 @@ ms.locfileid: "60962490"
 
 ## <a name="assess-rule-impact-before-deployment"></a>在部署之前评估规则影响
 
-你可以评估攻击面减少规则可能会如何影响你的网络，在 危险和漏洞管理 中打开该规则[的安全建议](/windows/security/threat-protection/#tvm)。
+你可以评估攻击面减少规则可能会如何影响你的网络，在 危险和漏洞管理 中打开该[规则的安全建议](/windows/security/threat-protection/#tvm)。
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="攻击面减少规则的安全重新成本。":::
 
@@ -62,7 +63,7 @@ ms.locfileid: "60962490"
 
 ## <a name="warn-mode-for-users"></a>用户警告模式
 
- (**新**！) 在警告模式功能之前，已启用的攻击面减少规则可以设置为审核模式或阻止模式。 使用新的警告模式，只要内容被攻击面减少规则阻止，用户就会看到一个指示内容被阻止的对话框。 该对话框还允许用户选择取消阻止内容。 然后，用户可以重试其操作，操作完成。 当用户取消阻止内容时，该内容将保持取消阻止状态 24 小时，然后阻止恢复。
+**(！)** 警告模式功能之前，已启用的攻击面减少规则可以设置为审核模式或阻止模式。 使用新的警告模式，只要内容被攻击面减少规则阻止，用户就会看到一个指示内容被阻止的对话框。 该对话框还允许用户选择取消阻止内容。 然后，用户可以重试其操作，操作完成。 当用户取消阻止内容时，该内容将保持取消阻止状态 24 小时，然后阻止恢复。
 
 警告模式可帮助组织制定攻击面减少规则，而不会阻止用户访问执行其任务所需的内容。
 
@@ -85,13 +86,13 @@ Microsoft Defender 防病毒在活动模式下使用实时[保护运行](/window
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>不支持警告模式的情况
 
-当你在三个攻击面减少规则中配置警告模式时，它们不受Microsoft Endpoint Manager。  (如果使用组策略配置攻击面减少规则，则支持警告模式。) 在 Microsoft Endpoint Manager 中配置警告模式时不支持警告模式的三个规则如下所示：
+在三个攻击面减少规则中配置警告模式时，三个攻击面减少规则Microsoft Endpoint Manager。  (如果使用组策略配置攻击面减少规则，则支持警告模式。) 在 Microsoft Endpoint Manager 中配置时不支持警告模式的三个规则如下所示：
 
 - [阻止 JavaScript 或 VBScript 使用](attack-surface-reduction-rules.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) GUID (下载的可执行 `d3e037e1-3eb8-44c8-a917-57927947596d`) 
-- [通过 WMI 事件订阅和 GUID](attack-surface-reduction-rules.md#block-persistence-through-wmi-event-subscription) (阻止 `e6db77e5-3df2-4cf1-b95a-636979351e5b`) 
+- [通过 WMI 事件订阅和 GUID](attack-surface-reduction-rules.md#block-persistence-through-wmi-event-subscription) (阻止 `e6db77e5-3df2-4cf1-b95a-636979351e5b` 持久性) 
 - [使用高级防护抵御勒索软件](attack-surface-reduction-rules.md#use-advanced-protection-against-ransomware) (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35`) 
 
-此外，运行早期版本的 Windows 的设备上不支持警告Windows。 在这种情况下，配置为在警告模式下运行的攻击面减少规则将在阻止模式下运行。
+此外，运行早期版本的 Windows 的设备不支持警告Windows。 在这种情况下，配置为在警告模式下运行的攻击面减少规则将在阻止模式下运行。
 
 ## <a name="notifications-and-alerts"></a>通知和警报
 
@@ -109,7 +110,7 @@ Microsoft Defender 防病毒在活动模式下使用实时[保护运行](/window
 
 有关高级搜寻详细信息，请参阅使用高级搜寻主动 [搜寻威胁](advanced-hunting-overview.md)。
 
-## <a name="attack-surface-reduction-features-across-windows-versions"></a>跨多个版本的攻击Windows功能
+## <a name="attack-surface-reduction-features-across-windows-versions"></a>跨版本的攻击面Windows功能
 
 你可以为运行以下任一版本和版本的设备设置攻击面减少Windows：
 
@@ -121,10 +122,10 @@ Microsoft Defender 防病毒在活动模式下使用实时[保护运行](/window
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
   >[!NOTE]
-  >Windows Server 2016和 Windows Server 2012 R2 将需要按照[载入 Windows 服务器](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)中的说明载入，此功能将正常工作。 
+  >Windows Server 2016和 Windows Server 2012 R2 将需要按照载入 Windows[服务器](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)中的说明载入，此功能将正常工作。 
 
 
-尽管攻击面减少规则不需要使用 Windows [E5](/windows/deployment/deploy-enterprise-licenses)许可证，但如果已Windows E5，则获得高级管理功能。 仅在 E5 中提供的高级Windows包括：
+尽管攻击面减少规则不需要使用 Windows [E5](/windows/deployment/deploy-enterprise-licenses)许可证，但如果已使用 Windows E5，则获得高级管理功能。 仅在 E5 中提供的高级Windows包括：
 
 - Defender for Endpoint 中提供的监视、 [分析和工作流](microsoft-defender-endpoint.md)
 - 中的报告和配置[Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
@@ -135,7 +136,7 @@ Microsoft Defender 防病毒在活动模式下使用实时[保护运行](/window
 
 Defender for Endpoint 提供事件和阻止的详细报告，作为警报调查方案的一部分。
 
-可以使用高级搜寻查询 defender 的终结点[Microsoft 365 Defender](microsoft-defender-security-center.md)[中的终结点数据](advanced-hunting-query-language.md)。 如果你运行的是审核 [模式](audit-windows-defender.md)，可以使用高级搜寻了解攻击面减少规则可能会如何影响你的环境。
+可以使用高级搜寻 在 Microsoft 365 Defender[中查询](microsoft-defender-security-center.md)Defender 的[终结点数据](advanced-hunting-query-language.md)。 如果你运行的是审核 [模式](audit-windows-defender.md)，可以使用高级搜寻了解攻击面减少规则可能会如何影响你的环境。
 
 示例查询如下所示:
 
@@ -176,21 +177,21 @@ DeviceEvents
 
 |规则名称|GUID|文件&文件夹排除项|支持的最低操作系统|
 |---|:---:|---|---|
-|[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11|
-|[阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
-|[阻止所有Office应用程序创建子进程](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br> Windows Server 2016|
-|[阻止从本地安全Windows (lsass.exe) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br><br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)|
-|[阻止来自电子邮件客户端和 Webmail 的可执行内容](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2|
-|[阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11|
-|[阻止执行可能混淆的脚本](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
-|[阻止 JavaScript 或 VBScript 启动下载的可执行内容](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br> Windows Server 2016|
-|[阻止Office应用程序创建可执行内容](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2 |
-|[阻止Office应用程序将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11|
-|[阻止Office应用程序创建子进程](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11|
-|[通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|不支持|[Windows 10版本 1903 (](/windows/whats-new/whats-new-windows-10-version-1903)版本 18362 或) 或Windows 11|
-|[阻止源自 PSExec 和 WMI 命令的进程创建](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br> <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
+|[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|受支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11|
+|[阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|受支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
+|[阻止所有Office应用程序创建子进程](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|受支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br> Windows Server 2016|
+|[阻止从本地安全Windows (lsass.exe) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|受支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br><br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)|
+|[阻止来自电子邮件客户端和 Webmail 的可执行内容](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|受支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2|
+|[阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|受支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11|
+|[阻止执行可能混淆的脚本](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|受支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
+|[阻止 JavaScript 或 VBScript 启动下载的可执行内容](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|受支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br> Windows Server 2016|
+|[阻止Office应用程序创建可执行内容](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|受支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2 |
+|[阻止Office将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|受支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11|
+|[阻止Office应用程序创建子进程](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|受支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11|
+|[通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|不支持|[Windows 10版本 1903 (](/windows/whats-new/whats-new-windows-10-version-1903)版本 18362) 或更高版本，或 Windows 11|
+|[阻止源自 PSExec 和 WMI 命令的进程创建](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|受支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br> <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 |
-|[阻止从 USB 运行的不受信任的和未签名的进程](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11|
+|[阻止从 USB 运行的不受信任的和未签名的进程](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|受支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11|
 |[阻止从宏Office Win32 API 调用](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11|
 |[使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、内部版本 16299) 或Windows 11 <br> <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
 |
@@ -242,9 +243,9 @@ GUID：`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 ### <a name="block-all-office-applications-from-creating-child-processes"></a>阻止所有Office应用程序创建子进程
 
-此规则阻止Office创建子进程。 Office应用程序包括 Word、Excel、PowerPoint、OneNote 和 Access。
+此规则阻止Office创建子进程。 Office包括 Word、Excel、PowerPoint、OneNote 和 Access。
 
-创建恶意子进程是常见的恶意软件策略。 滥用作为Office的恶意软件通常运行 VBA 宏并攻击代码以下载并尝试运行更多有效负载。 但是，某些合法的业务线应用程序也可能出于恶意目的生成子进程;例如生成命令提示符或使用 PowerShell 配置注册表设置。
+创建恶意子进程是常见的恶意软件策略。 滥用作为Office的恶意软件通常会运行 VBA 宏，并利用代码下载并尝试运行更多有效负载。 但是，某些合法的业务线应用程序也可能出于恶意目的生成子进程;例如生成命令提示符或使用 PowerShell 配置注册表设置。
 
 支持的操作系统：
 
@@ -261,7 +262,7 @@ GUID：`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>阻止从本地安全Windows窃取凭据
 
-此规则通过锁定 LSASS 应用程序的本地安全颁发机构子系统服务 (凭据) 。
+此规则通过锁定 LSASS 服务中的本地安全机构子系统服务 (凭据) 。
 
 LSASS 对登录 Windows进行身份验证。 Microsoft Defender Credential Guard Windows 10通常会阻止尝试从 LSASS 提取凭据。 但是，某些组织无法在所有计算机上启用 Credential Guard，因为自定义智能卡驱动程序或其他加载到本地安全机构 (LSA) 。 在这些情况下，攻击者可以使用 Mimikatz 等黑客工具从 LSASS 中清除明文密码和 NTLM 哈希。
 
@@ -308,7 +309,7 @@ GUID：`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 > [!NOTE]
 > 规则 **"阻止来自电子邮件客户端和 Webmail** 的可执行内容"具有以下替代说明，具体取决于你使用的应用程序：
 >
-> - Intune (Configuration Profiles) ：执行从电子邮件 (webmail/mail 客户端 (删除的可执行内容 (exe、dll、ps、js、vbs 等 ) )  (没有) 。
+> - Intune (Configuration Profiles) ： Execution of executable content (exe， dll， ps， js， vbs， etc.) dropped from email (webmail/mail client)  (no exceptions) .
 > - Endpoint Manager：阻止从电子邮件和 Webmail 客户端下载可执行内容。
 > - 组策略：阻止来自电子邮件客户端和 Webmail 的可执行内容。
 
@@ -327,7 +328,7 @@ GUID：`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 >
 > 规则 **阻止可执行文件运行** ，除非它们符合普遍程度、年龄或受信任列表条件（具有 GUID）归 Microsoft 所有，且未由管理员 `01443614-cd74-433a-b99e-2ecdc07bfc25` 指定。 此规则使用云提供的保护定期更新其受信任列表。
 >
-> 可以使用文件夹路径或完全限定的资源 (指定单个文件或文件夹) 但无法指定哪些规则或排除项适用。
+> 可以使用文件夹路径或完全限定的资源 (指定单个文件或文件夹) 但无法指定适用于哪些规则或排除项。
 
 支持的操作系统：
 
@@ -385,9 +386,9 @@ GUID：`D3E037E1-3EB8-44C8-A917-57927947596D`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>阻止Office应用程序创建可执行内容
 
-此规则Office Word、Excel 和 PowerPoint 等应用阻止恶意代码写入磁盘，从而阻止这些应用创建潜在恶意可执行内容。
+此规则Office Word、Excel 和 PowerPoint 等应用创建潜在恶意可执行内容，从而阻止恶意代码写入磁盘。
 
-滥用作为Office的恶意软件可能会尝试破坏Office，将恶意组件保存到磁盘。 这些恶意组件在计算机重新启动后将一直保留于系统。 因此，此规则可防御常见的持久性技术。
+滥用作为Office的恶意软件可能会尝试破坏安全Office恶意组件保存到磁盘。 这些恶意组件在计算机重新启动后将一直保留于系统。 因此，此规则可防御常见的持久性技术。
 
 支持的操作系统：
 
@@ -404,9 +405,9 @@ GUID：`3B576869-A4EC-4529-8536-B80A7769E899`
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>阻止Office应用程序将代码注入其他进程
 
-此规则阻止代码注入尝试Office应用注入其他进程。
+此规则阻止代码注入尝试Office应用注入到其他进程。
 
-攻击者可能会尝试使用Office代码注入将恶意代码迁移到其他进程中，因此代码可以伪装成一个干净流程。
+攻击者可能会尝试使用Office通过代码注入将恶意代码迁移到其他进程中，因此代码可以伪装成一个干净流程。
 
 使用代码注入没有已知的合法业务用途。
 
@@ -427,9 +428,9 @@ GUID：`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>阻止Office应用程序创建子进程
 
-此规则阻止Outlook子进程，同时仍允许合法Outlook进程。
+此规则阻止Outlook子进程，同时仍允许合法Outlook功能。
 
-此规则可防止社会工程攻击，并防止利用代码滥用 Outlook。 它还[可Outlook用户](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)凭据泄露时攻击者可以使用的一些规则和表单攻击。
+此规则可防止社会工程攻击，并防止利用代码滥用Outlook。 它还[可Outlook用户](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)凭据泄露时攻击者可能使用的规则和表单攻击。
 
 > [!NOTE]
 > 此规则阻止 DLP 策略提示和工具提示Outlook。 此规则仅适用于 Outlook Outlook.com。
@@ -471,7 +472,7 @@ GUID：`e6db77e5-3df2-4cf1-b95a-636979351e5b`
 此规则阻止通过 [PsExec](/sysinternals/downloads/psexec) 和 [WMI 创建](/windows/win32/wmisdk/about-wmi) 的进程运行。 PsExec 和 WMI 都可以远程执行代码，因此存在恶意软件滥用此功能以用于命令和控制目的，或在整个组织的网络中传播感染的风险。
 
 > [!WARNING]
-> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置[管理器Microsoft Endpoint Configuration Manager管理](/configmgr)不兼容，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
+> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置管理器[Microsoft Endpoint Configuration Manager](/configmgr)管理不兼容，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
 
 支持的操作系统：
 
@@ -508,7 +509,7 @@ GUID：`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 此规则阻止 VBA 宏调用 Win32 API。
 
-Office VBA 启用 Win32 API 调用。 恶意软件可能会滥用此功能，例如调用 [Win32 API 以启动恶意 shellcode，](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) 而无需将任何内容直接写入磁盘。 大多数组织不依赖于在日常运行中调用 Win32 API 的功能，即使它们以其他方式使用宏。
+Office VBA 支持 Win32 API 调用。 恶意软件可能会滥用此功能，例如调用 [Win32 API 以启动恶意 shellcode，](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) 而无需将任何内容直接写入磁盘。 大多数组织不依赖于在日常运行中调用 Win32 API 的功能，即使它们以其他方式使用宏。
 
 支持的操作系统：
 

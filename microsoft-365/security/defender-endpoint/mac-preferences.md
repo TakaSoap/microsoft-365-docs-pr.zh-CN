@@ -16,20 +16,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56308de5f4bfacec7558f72e4fc1cb9e007f5d94
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 8506534f1645659d051b240b77dcf96b4f9e4078
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121359"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171697"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上设置适用于终结点的 Microsoft Defender 的首选项
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-
 - [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!IMPORTANT]
 > 本文包含有关如何在企业组织中为 macOS 上的 Microsoft Defender for Endpoint 设置首选项的说明。 若要使用命令行界面在 macOS 上配置适用于终结点的 Microsoft Defender，请参阅 [资源](mac-resources.md#configuring-from-the-command-line)。
@@ -42,7 +43,7 @@ ms.locfileid: "61121359"
 
 ## <a name="configuration-profile-structure"></a>配置文件结构
 
-配置文件是一个 *.plist* 文件，它由键 (标识的条目表示首选项) 的名称，后跟一个值，具体取决于首选项的性质。 值可以是简单的 (，如数值) 或复杂，如嵌套的首选项列表。
+配置文件是一个 *.plist* 文件，它包含由键 (它表示首选项) 的名称，后跟一个值，具体取决于首选项的性质的条目。 值可以是简单的 (，如数值) 或复杂，如嵌套的首选项列表。
 
 > [!CAUTION]
 >配置文件的布局取决于你使用的管理控制台。 以下各节包含 JAMF 和 Intune 的配置文件示例。
@@ -175,7 +176,7 @@ ms.locfileid: "61121359"
 #### <a name="scan-exclusions"></a>扫描排除项
 
 指定被扫描排除的实体。 排除项可以通过完整路径、扩展名或文件名指定。
- (排除项指定为项目数组，则管理员可按任意顺序指定所需数量的元素。) 
+ (排除项指定为项目数组，管理员可以按任意顺序指定所需数量的元素。) 
 
 <br>
 
@@ -253,7 +254,7 @@ ms.locfileid: "61121359"
 |?|匹配任何单个字符|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`|
 ||||||
 
-### <a name="path-type-file--directory"></a>文件 (目录的路径) 
+### <a name="path-type-file--directory"></a>路径类型 (文件/目录) 
 
 指示 *path 属性* 是否引用文件或目录。
 
@@ -265,7 +266,7 @@ ms.locfileid: "61121359"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**键**|isDirectory|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|仅在 *排除$type**时适用*|
 |||
@@ -289,7 +290,7 @@ ms.locfileid: "61121359"
 
 ### <a name="process-excluded-from-the-scan"></a>从扫描中排除的进程
 
-指定一个进程，所有文件活动都从扫描中排除。 可以通过进程的名称或名称指定 (例如，) 或完整 (`cat` 例如 `/bin/cat` ，) 。
+指定一个进程，所有文件活动都从扫描中排除。 可以通过进程的名称或名称来指定 (例如，) 或完整 `cat` (，例如 `/bin/cat`) 。
 
 <br>
 
@@ -370,7 +371,7 @@ ms.locfileid: "61121359"
 
 ##### <a name="action-to-take"></a>要采取的措施
 
-指定在检测到上一节中指定的类型的威胁时要采取什么操作。 从以下选项中进行选择：
+指定在检测到上一节中指定的类型的威胁时要采取什么操作。 从以下选项中选择：
 
 - **审核**：你的设备不受此类型威胁的保护，但会记录关于威胁的条目。
 - **阻止**：你的设备受到此类型威胁的保护，并且你将在用户界面和安全控制台中收到通知。
@@ -435,7 +436,7 @@ ms.locfileid: "61121359"
 |**域**|`com.microsoft.wdav`|
 |**键**|scanHistoryMaximumItems|
 |**数据类型**|String|
-|**可能的值**|默认值为 10000 (10000) 。 允许的值从 5000 个项目到 15000 个项目。|
+|**可能的值**|10000 (默认值) 。 允许的值从 5000 个项目到 15000 个项目。|
 |**Comments**|适用于终结点版本 101.07.23 或更高版本的 Microsoft Defender 中可用。|
 |||
 
@@ -468,7 +469,7 @@ ms.locfileid: "61121359"
 |**域**|`com.microsoft.wdav`|
 |**键**|enabled|
 |**数据类型**|Boolean|
-|**可能的值**|true (默认)  <p> false|
+|**可能的值**|true (默认值)  <p> false|
 |||
 
 #### <a name="diagnostic-collection-level"></a>诊断集合级别
@@ -500,7 +501,7 @@ ms.locfileid: "61121359"
 |**域**|`com.microsoft.wdav`|
 |**键**|automaticSampleSubmission|
 |**数据类型**|Boolean|
-|**可能的值**|true (默认)  <p> false|
+|**可能的值**|true (默认值)  <p> false|
 |||
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>启用/禁用自动安全智能更新
@@ -515,7 +516,7 @@ ms.locfileid: "61121359"
 |---|---|
 |**键**|automaticDefinitionUpdateEnabled|
 |**数据类型**|Boolean|
-|**可能的值**|true (默认)  <p> false|
+|**可能的值**|true (默认值)  <p> false|
 |||
 
 ### <a name="user-interface-preferences"></a>用户界面首选项
@@ -546,7 +547,7 @@ ms.locfileid: "61121359"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**键**|hideStatusMenuIcon|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|false（默认值） <p> true|
 |||
 
@@ -569,7 +570,7 @@ ms.locfileid: "61121359"
 
 ### <a name="endpoint-detection-and-response-preferences"></a>终结点检测和响应首选项
 
-管理 macOS 上 Microsoft Defender for Endpoint (EDR) 的终结点检测和响应的首选项。
+管理 macOS 上 Microsoft Defender for Endpoint (EDR) 的终结点检测和响应组件首选项。
 
 <br>
 
@@ -647,7 +648,7 @@ ms.locfileid: "61121359"
 - 启用实时保护 (RTP) 
 - 指定如何处理以下威胁类型：
   - **阻止 PUA (可能不需要)** 的应用程序
-  - **存档 (** 高压缩率的文件) 审核到 Microsoft Defender 的终结点日志
+  - **存档 (** 高压缩率的文件) Microsoft Defender 终结点日志进行审核
 - 启用自动安全智能更新
 - 启用云保护
 - 启用自动提交示例
@@ -1076,7 +1077,7 @@ com.microsoft.wdav.plist: OK
 
 ### <a name="jamf-deployment"></a>JAMF 部署
 
-从 JAMF 控制台中，打开 **计算机** 配置文件，导航到你要使用的配置文件， \> 然后选择自定义设置。  使用 创建用作 `com.microsoft.wdav` 首选项域的条目并上载之前生成的 *.plist。*
+从 JAMF 控制台中，打开 **计算机** 配置文件，导航到你要使用的配置文件，然后选择自定义 \> 设置。  使用 创建用作 `com.microsoft.wdav` 首选项域的条目并上载之前生成的 *.plist。*
 
 > [!CAUTION]
 > 必须输入正确的首选项域 `com.microsoft.wdav` () ;否则，Microsoft Defender for Endpoint 无法识别首选项。
@@ -1095,7 +1096,7 @@ com.microsoft.wdav.plist: OK
 
 6. 选择“**确定**”。
 
-7. 选择 **"管理** \> **工作分配"。** 在"**包含"** 选项卡中，**选择"分配给所有用户&所有设备"。**
+7. 选择 **"管理** \> **工作分配"。** 在"**包含"** 选项卡中，**选择"分配给&所有设备"。**
 
 > [!CAUTION]
 > 必须输入正确的自定义配置文件名称;否则，Microsoft Defender for Endpoint 无法识别这些首选项。

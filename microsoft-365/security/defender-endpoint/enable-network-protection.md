@@ -14,19 +14,20 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 66be1b35e98176c8282f52248899aef52b032845
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: bf58173d2c17ef66b0cb74f0781038040d25898b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899712"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168722"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -66,7 +67,7 @@ ms.locfileid: "60899712"
 
 ### <a name="powershell"></a>PowerShell
 
-1. 在"管理"中"开始"菜单 **powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
+1. 在"管理"中"开始"菜单 **powershell，** 右键 **单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
 
 2. 输入以下 cmdlet：
 
@@ -98,7 +99,7 @@ ms.locfileid: "60899712"
 
 4. 转到 **"终结点保护**  >  **基础知识"，** 为配置文件提供名称，然后选择"下一 **步"。**
 
-5. 在"**配置设置"** 部分，转到 **"Microsoft Defender 攻击防护**  >  **网络筛选**  >  **网络保护**  >  **启用或****审核"。** 选择“**下一步**”。
+5. 在"**配置设置"** 部分，转到 **"Microsoft Defender 攻击防护**  >  **网络筛选**  >  **""网络保护**  >  **启用"** 或"**审核"。** 选择 **下一步**。
 
 6. 根据组织 **需要****，选择** 适当的 **范围** 标记、分配和适用性规则。 管理员可以设置更多要求。
 
@@ -119,7 +120,7 @@ ms.locfileid: "60899712"
 3. 展开树以 **Windows Exploit** Guard \> **网络Microsoft Defender 防病毒Windows Defender** \>  \> **组件**。
 
    > [!NOTE]
-   > 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
+   > 在旧版 Windows中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
 
 4. 双击阻止用户和应用 **访问** 危险网站设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
     - **阻止** - 用户无法访问恶意 IP 地址和域。

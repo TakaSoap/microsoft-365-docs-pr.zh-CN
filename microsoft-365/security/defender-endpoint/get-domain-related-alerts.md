@@ -16,19 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: aef9c876d9c2dc4ca8d68538d0742141525e2cfd
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 9eb13c65c6df9bcf6a71ab9e59bcf0c3a2db713b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122221"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166934"
 ---
 # <a name="get-domain-related-alerts-api"></a>获取与域相关的警报 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -52,16 +53,16 @@ ms.locfileid: "61122221"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Alert.Read.All|"读取所有警报"
-应用程序|Alert.ReadWrite.All|"读取和写入所有警报"
+Application|Alert.Read.All|"读取所有警报"
+Application|Alert.ReadWrite.All|"读取和写入所有警报"
 委派（工作或学校帐户）|Alert.Read|"读取警报"
 委派（工作或学校帐户）|Alert.ReadWrite|"读取和写入警报"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
-> - 根据设备组设置，响应将仅包含与设备关联的警报 (有关详细信息，请参阅创建和管理设备) [](machine-groups.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 响应将仅包含与设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

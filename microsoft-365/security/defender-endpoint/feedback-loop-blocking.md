@@ -16,12 +16,12 @@ ms.custom:
 - edr
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 30e1fdb8baede9506af52ae844f456baed1097a9
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 82d5fb32a9535a5b341bca8e5bee989d88ad8232
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882677"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167354"
 ---
 # <a name="feedback-loop-blocking"></a>反馈循环阻止
 
@@ -29,7 +29,7 @@ ms.locfileid: "60882677"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 ## <a name="overview"></a>概述
 
@@ -44,7 +44,7 @@ ms.locfileid: "60882677"
 
 ## <a name="configuring-feedback-loop-blocking"></a>配置反馈循环阻止
 
-如果你的组织对终结点使用 Defender，则默认启用反馈循环阻止。 但是，通过结合使用 Defender for Endpoint 功能、机器学习保护功能和 Microsoft 安全服务中的信号共享，可以快速提供保护。 确保已启用和配置 Defender for Endpoint 的以下特性和功能：
+如果你的组织对终结点使用 Defender，则默认启用反馈循环阻止。 但是，通过结合使用 Defender for Endpoint 功能、机器学习保护功能和 Microsoft 安全服务中的信号共享，可快速提供保护。 确保已启用和配置 Defender for Endpoint 的以下特性和功能：
 
 - [适用于终结点的 Microsoft Defender 基线](/microsoft-365/security/defender-endpoint/configure-machines-security-baseline)
 
@@ -54,7 +54,7 @@ ms.locfileid: "60882677"
 
 - [减少攻击面](/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 
-- [下一代防病毒](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (保护) 
+- [下一代保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (防病毒) 
 
 ## <a name="related-articles"></a>相关文章
 

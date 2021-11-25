@@ -17,20 +17,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8623a4932c23748e35af480613c1e5baac3bbcf6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 48cd107e5e2040a8b7d9775d97ab1bd53dfe2534
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191895"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167366"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>支持的 Microsoft Defender for Endpoint API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：** 
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 ## <a name="endpoint-uri-and-versioning"></a>终结点 URI 和版本控制
 
@@ -48,7 +49,7 @@ ms.locfileid: "60191895"
 >
 > 若要使用特定版本，请使用此格式 `https://api.securitycenter.microsoft.com/api/{Version}` ：。 例如：`https://api.securitycenter.microsoft.com/api/v1.0/alerts`
 >
-> 如果不指定任何版本 (例如) `https://api.securitycenter.microsoft.com/api/alerts` 将进入最新版本。
+> 如果你没有指定任何版本 (例如) `https://api.securitycenter.microsoft.com/api/alerts` 你将进入最新版本。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

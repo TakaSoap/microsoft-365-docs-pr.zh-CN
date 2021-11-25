@@ -1,5 +1,5 @@
 ---
-title: 收集诊断数据的Microsoft Defender 防病毒
+title: 收集诊断数据Microsoft Defender 防病毒
 description: 使用工具来收集数据以排查Microsoft Defender 防病毒
 keywords: 疑难解答， 错误， 修复， 更新合规性， oms， 监视器， 报告， Microsoft Defender av， 组策略对象， 设置， 诊断数据
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f32300976136c8a7526d62547515d739a681e51c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 73f07a7346edbaebe7e53cd4e17e29a5e6764073
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665785"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170514"
 ---
 # <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>收集Microsoft Defender 防病毒诊断数据
 
@@ -31,7 +31,8 @@ ms.locfileid: "60665785"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 本文介绍如何收集诊断数据，Microsoft 支持和工程团队可以使用这些数据来帮助解决在使用 Microsoft Defender 防病毒 时可能遇到的问题。
 
@@ -103,7 +104,7 @@ mpcmdrun.exe -GetFiles -SupportLogLocation <path>
 
 ****
 
-|字段|说明|
+|字段|Description|
 |---|---|
 |path|命令行中指定的路径或从配置中检索的路径|
 |MMDD|收集诊断数据的月份和 (例如，0530) |
@@ -116,7 +117,7 @@ mpcmdrun.exe -GetFiles -SupportLogLocation <path>
 
 ## <a name="specify-location-where-diagnostic-data-is-created"></a>指定创建诊断数据的位置
 
-您还可以指定使用组策略.cab GPO 文件创建诊断 (文件) 。
+还可以指定使用组策略对象.cab GPO 文件创建诊断 (位置) 。
 
 1. 打开本地组策略编辑器，并找到 SupportLogLocation GPO，位置为： `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation` 。
 

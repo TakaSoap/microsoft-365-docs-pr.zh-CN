@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77d0bfb569837a508221d78d811c985153533ed7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f7feb83c867d008e027f21c3247c80ec2a7fc638
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152222"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168986"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>导出每个设备的软件清单评估
 
@@ -29,23 +29,24 @@ ms.locfileid: "60152222"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-不同的 API 调用用于获取不同类型的数据。 由于数据量可能很大，因此有两种方法可以检索数据：
+
+不同的 API 调用获取不同类型的数据。 由于数据量可能很大，因此有两种方法可以检索数据：
 
 - [导出软件清单评估 **JSON 响应**](#1-export-software-inventory-assessment-json-response) API 将提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-- [通过文件导出 **软件清单评估**](#2-export-software-inventory-assessment-via-files)  此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，可以从以下Azure 存储下载所有数据：
+- [通过文件导出 **软件清单评估**](#2-export-software-inventory-assessment-via-files)  此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，你可以从 Azure 存储下载数据，如下所示：
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
   - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
-使用 _Json_ 响应 (通过文件收集的数据) 当前状态的当前快照，并且不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
+使用 _Json_ 响应 _(通过文件_ 收集的数据) 当前状态的当前快照。 它不包含历史数据。 若要收集历史数据，客户必须将数据保存在自己的数据存储中。
 
 > [!NOTE]
-> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出，**** 按设备 (也称作按 **_设备) 。_**
+> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出和 **** 按设备 (也称为按 **_设备) 。_**
 
 ## <a name="1-export-software-inventory-assessment-json-response"></a>1. 导出 JSON 响应 (软件清单) 
 
@@ -76,7 +77,7 @@ GET /api/machines/SoftwareInventoryByMachine
 ### <a name="14-parameters"></a>1.4 参数
 
 - pageSize (默认值 = 50，000) ：响应中的结果数。
-- $top：返回 (的结果数不会返回 @odata.nextLink，因此不会拉取所有) 
+- $top：要返回的结果 (不返回 @odata.nextLink，因此不会拉取所有) 
 
 ### <a name="15-properties"></a>1.5 属性
 
@@ -99,7 +100,7 @@ EndOfSupportDate|string|此软件支持已结束或将终止的日期。|2020-12
 EndOfSupportStatus|string|停止提供支持状态。 可以包含以下可能的值：None、EOS Version、Upcoming EOS Version、EOS Software、Upcoming EOS Software。|即将推出的 EOS
 Id|string|记录的唯一标识符。|123ABG55_573AG&mnp！
 NumberOfWeaknesses|int|此设备上此软件上漏洞的数量|3
-OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
+OSPlatform|string|在设备上运行的操作系统的平台。 这些是同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
 RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
 RegistryPaths|Array[string]|注册表证据，表明产品已安装在设备中。|[ "HKEY_LOCAL_MACHINE \\SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
 SoftwareFirstSeenTimestamp|string|首次在设备上看到此软件。|2019-04-07 02:06:47
@@ -210,7 +211,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 }
 ```
 
-## <a name="2-export-software-inventory-assessment-via-files"></a>2. 通过文件 (导出软件清单) 
+## <a name="2-export-software-inventory-assessment-via-files"></a>2. 通过文件库导出 (清单) 
 
 ### <a name="21-api-method-description"></a>2.1 API 方法说明
 
@@ -243,7 +244,7 @@ GET /api/machines/SoftwareInventoryExport
 
 > [!NOTE]
 >
-> - 文件是 gzip 压缩文件& JSON 格式。
+> - 这些文件是 gzip 压缩文件& JSON 格式。
 > - 下载 URL 的有效期仅为 3 小时。 否则，可以使用 参数。
 > - 为了最大限度提高数据的下载速度，你可以确保从数据所在的同一 Azure 区域进行下载。
 

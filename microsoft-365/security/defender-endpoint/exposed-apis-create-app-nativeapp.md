@@ -1,7 +1,7 @@
 ---
 title: 将 Microsoft Defender 用于终结点 API
 ms.reviewer: ''
-description: 了解如何设计本机 Windows 应用，无需用户即可以编程方式访问 Microsoft Defender for Endpoint。
+description: 了解如何设计本机 Windows应用，无需用户即可以编程方式访问 Microsoft Defender for Endpoint。
 keywords: api， 图形 api， 受支持的 api， 参与者， 警报， 设备， 用户， 域， ip， 文件， 高级搜寻， 查询
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bcd09c1a2f828545243d1f4d56c9e2cab49356ab
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 747397d8baee103a311a6aec842af189403ef0fc
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190553"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168734"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>将 Microsoft Defender 用于终结点 API
 
@@ -30,7 +30,7 @@ ms.locfileid: "60190553"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
@@ -48,11 +48,11 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 通常，你将需要执行以下步骤来使用 API：
 
-- 创建 AAD 应用程序
+- 创建AAD应用程序
 - 使用此应用程序获取访问令牌
 - 使用令牌访问 Defender for Endpoint API
 
-此页面介绍如何创建 AAD 应用程序、获取 Microsoft Defender for Endpoint 的访问令牌并验证令牌。
+此页面介绍如何创建一个 AAD 应用程序、获取 Microsoft Defender for Endpoint 的访问令牌并验证令牌。
 
 > [!NOTE]
 > 代表用户访问 Microsoft Defender for Endpoint API 时，需要正确的应用程序权限和用户权限。
@@ -65,7 +65,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 1. 使用具有全局管理员角色的用户帐户 **登录到** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory** \> **应用注册** \> **""新注册"。**
+2. 导航到 **Azure Active Directory** \> **应用注册** \> **新注册 。**
 
    ![应用程序注册Microsoft Azure导航的图像。](images/atp-azure-new-app2.png)
 
@@ -94,7 +94,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 4. 允许应用程序访问适用于终结点的 Microsoft Defender，并为其分配"读取警报"权限：
 
-   - 在应用程序页面上，选择 **"API** 权限""添加我的组织使用的权限 \>  \> API"> **WindowsDefenderATP"，** 然后选择 **在 WindowsDefenderATP 上选择**。
+   - 在应用程序页面上，选择 **"API** 权限""添加我的组织使用的权限 API"> \>  \>  **WindowsDefenderATP"，** 然后选择 **"WindowsDefenderATP"。**
    - **注意***：WindowsDefenderATP* 不会显示在原始列表中。 开始在文本框中写入其名称，以查看其显示。
 
      ![添加权限。](images/add-permission.png)
@@ -125,7 +125,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 ## <a name="get-an-access-token"></a>获取访问令牌
 
-有关 AAD 令牌详细信息，请参阅 [Azure AD 教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+有关令牌AAD，请参阅Azure AD[教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-c"></a>使用 C\#
 
@@ -183,10 +183,10 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>使用令牌访问 Microsoft Defender for Endpoint API
 
 - 选择想要使用的 API - [支持的 Microsoft Defender 终结点 API](exposed-apis-list.md)
-- 将你发送的 HTTP 请求中的 Authorization 标头设置为"Bearer {token}" (Bearer 是授权方案) 
-- 令牌的过期时间是 1 小时 (你可以使用相同的令牌发送多个请求) 
+- 将发送的 HTTP 请求中的 Authorization 标头设置为"Bearer {token}"， (Bearer 是授权方案) 
+- 令牌的过期时间为 1 小时 (你可以使用相同的令牌发送多个请求) 
 
-- 发送请求以使用请求获取警报列表 **C#**
+- 发送请求以使用请求获取警报列表 **的示例C#**
 
     ```csharp
     var httpClient = new HttpClient();

@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d7de5d6b897d93b0112745ed566879a451e5448
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: e20b993d577f144e80c99479bac7bf70e484f785
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268550"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168878"
 ---
 # <a name="resources"></a>资源
 
@@ -30,7 +30,7 @@ ms.locfileid: "60268550"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
@@ -86,7 +86,7 @@ ms.locfileid: "60268550"
 
 ### <a name="manual-uninstallation"></a>手动卸载
 
-- `sudo yum remove mdatp` For RHEL and variants (CentOS and Oracle Linux) .
+- `sudo yum remove mdatp` 用于 CentOS 和 Oracle Linux (RHEL 和) 。
 - `sudo zypper remove mdatp` 用于 SLES 和变量。
 - `sudo apt-get purge mdatp` 用于 Ubuntu 和 Debian 系统。
 
@@ -116,7 +116,7 @@ ms.locfileid: "60268550"
 |配置|打开/关闭 AV 被动模式|`mdatp config passive-mode --value [enabled\|disabled]`|
 |配置|添加/删除文件扩展名的防病毒排除项|`mdatp exclusion extension [add\|remove] --name [extension]`|
 |配置|添加/删除文件的防病毒排除项|`mdatp exclusion file [add\|remove] --path [path-to-file]`|
-|配置|添加/删除目录的防病毒排除项|`mdatp exclusion folder [add\|remove] --path [path-to-directory]`|
+|配置|添加/删除目录的防病毒排除|`mdatp exclusion folder [add\|remove] --path [path-to-directory]`|
 |配置|添加/删除某个进程的防病毒排除项|`mdatp exclusion process [add\|remove] --path [path-to-process]` <p> `mdatp exclusion process [add\|remove] --name [process-name]`|
 |配置|列出所有防病毒排除项|`mdatp exclusion list`|
 |配置|向允许列表添加威胁名称|`mdatp threat allowed add --name [threat-name]`|
@@ -127,15 +127,15 @@ ms.locfileid: "60268550"
 |配置|打开 PUA 保护的审核模式|`mdatp threat policy set --type potentially_unwanted_application --action audit`|
 |配置|配置按需扫描的并行度|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |配置|在安全智能更新后打开/关闭扫描|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
-|配置|仅按需扫描 (/关闭存档扫描) |`mdatp config scan-archives --value [enabled/disabled]`|
+|配置|仅按需扫描 (/关闭存档) |`mdatp config scan-archives --value [enabled/disabled]`|
 |诊断|更改日志级别|`mdatp log level set --level verbose [error|warning|info|verbose]`|
 |诊断|生成诊断日志|`mdatp diagnostic create --path [directory]`|
 |运行状况|检查产品的运行状况|`mdatp health`|
-|Protection|扫描路径|`mdatp scan custom --path [path] [--ignore-exclusions]`|
-|Protection|执行快速扫描|`mdatp scan quick`|
-|Protection|执行完全扫描|`mdatp scan full`|
-|Protection|取消正在进行的按需扫描|`mdatp scan cancel`|
-|Protection|请求安全智能更新|`mdatp definitions update`|
+|保护|扫描路径|`mdatp scan custom --path [path] [--ignore-exclusions]`|
+|保护|执行快速扫描|`mdatp scan quick`|
+|保护|执行完全扫描|`mdatp scan full`|
+|保护|取消正在进行的按需扫描|`mdatp scan cancel`|
+|保护|请求安全智能更新|`mdatp definitions update`|
 |保护历史记录|打印完整保护历史记录|`mdatp threat list`|
 |保护历史记录|获取威胁详细信息|`mdatp threat get --id [threat-id]`|
 |隔离管理|列出所有隔离的文件|`mdatp threat quarantine list`|
@@ -143,7 +143,7 @@ ms.locfileid: "60268550"
 |隔离管理|将检测为威胁的文件添加到隔离区|`mdatp threat quarantine add --id [threat-id]`|
 |隔离管理|从隔离区中删除检测为威胁的文件|`mdatp threat quarantine remove --id [threat-id]`|
 |隔离管理|从隔离区还原文件|`mdatp threat quarantine restore --id [threat-id]`|
-|终结点检测和响应|设置早期预览 (未使用的) |`mdatp edr early-preview [enable|disable]`|
+|终结点检测和响应|设置未使用的 (预览) |`mdatp edr early-preview [enable|disable]`|
 |终结点检测和响应|设置 group-id|`mdatp edr group-ids --group-id [group-id]`|
 |终结点检测和响应|设置/删除标记，仅 `GROUP` 受支持|`mdatp edr tag set --name GROUP --value [tag]`|
 |终结点检测和响应|列出根 (排除) |`mdatp edr exclusion list [processes|paths|extensions|all]`|

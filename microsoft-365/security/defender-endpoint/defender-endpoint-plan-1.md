@@ -14,14 +14,18 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b21c72c44f19e4f9aede5a72c4860cbd6fac1c5c
-ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
+ms.openlocfilehash: 48d0884c84f6c609b2924875bfea579dcac3fcc4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61152390"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167510"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>适用于终结点计划 1 的 Microsoft Defender 概述
+
+**适用对象**
+
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!TIP]
 > 如果你已Microsoft 365 E3 A3，Microsoft 365 E5或 A5，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 注册预览计划！
@@ -149,13 +153,13 @@ Defender for Endpoint Plan 1 包括以下功能：
 
 ### <a name="application-control"></a>应用程序控制
 
-应用程序控件通过仅在系统核心和内核Windows中运行受信任的应用程序和代码来保护 (终结点) 。 安全团队可以定义考虑应用程序属性的应用程序控制规则，例如其代码签名证书、信誉、启动过程等。 应用程序控件在 Windows 10或更高版本中可用。
+应用程序控件通过仅在系统核心Windows内核中运行受信任的应用程序和代码来保护 (终结点) 。 安全团队可以定义考虑应用程序属性的应用程序控制规则，例如其代码签名证书、信誉、启动过程等。 应用程序控件在 Windows 10或更高版本中可用。
 
-若要了解更多信息，请参阅[应用程序控件Windows。](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+若要了解更多信息，请参阅应用程序[控件Windows。](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 
 ## <a name="centralized-management"></a>集中管理
 
-Defender for Endpoint Plan 1 包含 Microsoft 365 Defender 门户，使安全团队能够查看有关检测到的威胁的当前信息，采取适当的措施缓解威胁，并集中管理组织的威胁防护设置。
+Defender for Endpoint Plan 1 包括 Microsoft 365 Defender 门户，使安全团队能够查看有关检测到的威胁的当前信息，采取相应措施缓解威胁，并集中管理组织的威胁防护设置。
 
 若要了解更多信息，请参阅[Microsoft 365 Defender门户概述](portal-overview.md)。
 
@@ -167,7 +171,7 @@ Defender for Endpoint Plan 1 包含 Microsoft 365 Defender 门户，使安全团
 
 ### <a name="reporting"></a>Reporting
 
-通过Microsoft 365 Defender门户 () 可轻松访问有关检测到的威胁和 [https://security.microsoft.com](https://security.microsoft.com) 操作的信息，以解决这些威胁。 
+通过Microsoft 365 Defender门户 () 可以轻松访问有关检测到 [https://security.microsoft.com](https://security.microsoft.com) 的威胁和操作的信息，以应对这些威胁。 
 
 - **主页** 包含卡片，可一目了然地显示哪些用户或设备处于风险中、检测到的威胁数量以及创建哪些警报/事件。
 - **"事件&警报**"部分列出了因触发的警报而创建的任何事件。 当跨设备检测到威胁时，将生成警报和事件。

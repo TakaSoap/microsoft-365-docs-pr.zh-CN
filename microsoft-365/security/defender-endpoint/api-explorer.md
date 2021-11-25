@@ -18,19 +18,20 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3235ed9e3b4f51b9156267e324573f04443eccc6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aa2fabf744c1eeb272415fcd87bf5ef7b72d0ce3
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210037"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168794"
 ---
 # <a name="api-explorer"></a>API 资源管理器
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint API Explorer 是一款工具，可帮助你以交互方式浏览各种 Defender for Endpoint API。
 
@@ -48,7 +49,7 @@ Microsoft Defender for Endpoint API Explorer 是一款工具，可帮助你以�
 
 ## <a name="access-api-explorer"></a>Access API 资源管理器
 
-从左侧导航菜单中，选择"合作伙伴 **& API** \> **资源管理器"。**
+从左侧导航菜单中，选择"合作伙伴 **& API API** \> **资源管理器"。**
 
 ## <a name="supported-apis"></a>受支持的 API
 

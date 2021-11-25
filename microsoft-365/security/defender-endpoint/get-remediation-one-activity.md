@@ -1,5 +1,5 @@
 ---
-title: 按 ID 获取一个修正活动
+title: 按 ID 获取修正活动
 description: 返回指定修正活动的信息。
 keywords: api， 修正， 修正 api， 获取， 修正任务， 按 ID 修正，
 search.product: eADQiWindows 10XVcnh
@@ -16,29 +16,29 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5e6dbf619854d3c6e2c14e49bac7227a7bd31116
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 25040682cad424531aa4b0a6d51978639d71ef83
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150086"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167270"
 ---
-# <a name="get-one-remediation-activity-by-id"></a>按 ID 获取一个修正活动
+# <a name="get-one-remediation-activity-by-id"></a>按 ID 获取修正活动
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+[!Include[Prerelease information](../../includes/prerelease.md)]
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API 说明
 
@@ -46,7 +46,7 @@ ms.locfileid: "60150086"
 
 [详细了解修正活动](tvm-remediation.md)。
 
-## <a name="list-a-specified-remediation-activity-for-id"></a>列出 id 指定的 (修正) 
+## <a name="list-a-specified-remediation-activity-for-id"></a>列出指定 ID (修正) 
 
 **URL：** GET： /api/remediationTasks/ \{ id\}
 
@@ -61,35 +61,35 @@ Application|RemediationTasks.Read.All|\'阅读威胁和漏洞管理漏洞信息\
 
 ## <a name="properties"></a>属性
 
-属性 (id) |数据类型|说明|返回值的示例
+属性 (ID) |数据类型|说明|返回值的示例
 :---|:---|:---|:---
-“类别”|String|软件/安全配置 (修正活动的) |软件
-completerEmail|String|如果修正活动是由某人手动完成的，此列将包含他们的电子邮件|空
-completerId|String|如果修正活动是由某人手动完成的，则此列包含其对象 ID|空
-completionMethod|String|如果所有设备都由选择"标记为已完成) 或"手动" (，可"自动"完成修正活动。|自动
+类别|字符串|软件/安全配置 (修正活动的) |软件
+completerEmail|String|如果修正活动是由某人手动完成的，此列将包含他们的电子邮件|NULL
+completerId|String|如果修正活动是由某人手动完成的，则此列包含其对象 ID|NULL
+completionMethod|String|如果所有设备 (都由选择"标记为已完成) 或"手动"进行修补，则修正活动可以"自动"完成。|自动
 createdOn|日期时间|创建此修正活动的时间|2021-01-12T18：54：11.5499478Z
 说明|String|此修正活动的说明|将 Microsoft Silverlight 更新到更高版本，以减少影响设备的已知漏洞。
 dueOn|日期时间|此修正活动的创建者设置的截止日期|2021-01-13T00：00：00Z
 fixedDevices||已修复的设备数量|2
-id|字符串|此修正活动的 ID|097d9735-5479-4899-b1b7-77398899df92
-nameId|字符串|相关产品名称|Microsoft Silverlight
-priority|String|为此修正活动设置的创建者设置的优先级 (高\中\低) |高
-productId|字符串|相关产品 ID|microsoft-_-silverlight
-productivityImpactRemediationType|String|只能请求对没有用户影响的设备进行一些配置更改。 此值指示"所有公开的设备"或"仅不会影响用户的设备"之间的选择。|AllExposedAssets
+ID|String|此修正活动的 ID|097d9735-5479-4899-b1b7-77398899df92
+nameId|String|相关产品名称|Microsoft Silverlight
+优先级|String|针对此修正活动的创建者设置的优先级 (高\中\低) |高
+productId|String|相关产品 ID|microsoft-_-silverlight
+productivityImpactRemediationType|String|只能请求对不影响用户的设备进行一些配置更改。 此值指示"所有公开的设备"或"仅不会影响用户的设备"之间的选择。|AllExposedAssets
 rbacGroupNames|String|相关设备组名称|[ "Windows Servers"， "Windows 10" ]
-recommendedProgram|字符串|要升级到的推荐程序|空
-recommendedVendor|String|建议升级到的供应商|空
-recommendedVersion|字符串|要更新/升级到的建议版本|空
-relatedComponent|String|此修正活动的相关组件 (安全建议计划的相关组件) |Microsoft Microsoft Silverlight
+recommendedProgram|String|要升级到的推荐程序|NULL
+recommendedVendor|String|建议升级到的供应商|NULL
+recommendedVersion|String|要更新/升级到的建议版本|NULL
+relatedComponent|String|此修正活动的相关组件 (安全建议服务的相关组件) |Microsoft Silverlight
 requesterEmail|String|创建者电子邮件地址|globaladmin@UserName.contoso.com
 requesterId|String|Creator 对象 ID|r647211f-2e16-43f2-a480-16ar3a2a796r
-requesterNotes|字符串|注释 (此) 活动的创建者添加的自定义文本|空
-scid|String|相关安全建议 SCID|空
-status|String|修正活动状态 (/已完成) |活动
+requesterNotes|String|注释 (为) 修正活动添加的自定义文本|NULL
+Scid|String|相关安全建议 SCID|NULL
+状态|String|修正活动状态 (/已完成) |活动
 statusLastModifiedOn|日期时间|更新状态字段的日期|2021-01-12T18：54：11.5499487Z
 targetDevices|长型|此修正适用于的公开设备数量|43
-title|String|此修正活动的标题|Microsoft Silverlight
-type|String|修正类型|更新
+Title|String|此修正活动的标题|Microsoft Silverlight
+类型|String|修正类型|更新
 vendorId|String|相关供应商名称|Microsoft
 
 ## <a name="example"></a>示例

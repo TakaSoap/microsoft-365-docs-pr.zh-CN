@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b3c01215db133f5e39c56596c051e071388b5b80
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 82c1418d58679fef1b59e51b41052e4dfe584635
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963271"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168531"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警报问题
 
@@ -31,8 +31,9 @@ ms.locfileid: "60963271"
 **适用于：**
 
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-本文提供了一些常规步骤，以缓解事件门户中缺少Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">警报</a>。
+本文提供了一些常规步骤，以减少事件门户中缺少Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">警报</a>。
 
 在 **设备上** 正确安装 Microsoft Defender for Endpoint 后 _，将在门户_ 中生成设备页面。 可以在设备页面的时间线选项卡或高级搜寻页面中查看所有记录的事件。 本节解决缺失某些或所有预期事件的情况。
 例如，如果缺少 _所有 CreatedFile_ 事件。

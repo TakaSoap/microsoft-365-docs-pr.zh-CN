@@ -16,17 +16,20 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ded0c6ac55fbf6265fb77e0391700aa2a70e0756
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: dc7f3a88f26ae738f3de718bd590933f44ed4906
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962935"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167186"
 ---
 # <a name="onboard-windows-devices-using-a-local-script"></a>使用本地脚本载入 Windows 设备
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**适用于：**
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)。
@@ -36,21 +39,21 @@ ms.locfileid: "60962935"
 > [!IMPORTANT]
 > 此脚本已优化为在最多 10 台设备上使用。
 >
-> 若要大规模部署，请使用 [其他部署选项](configure-endpoints.md)。 例如，可以使用使用组策略 载入 Windows 中的脚本将载入脚本部署到生产中的 10[多个设备](configure-endpoints-gp.md)。
+> 若要大规模部署，请使用 [其他部署选项](configure-endpoints.md)。 例如，可以使用使用组策略 载入 Windows 设备中提供的脚本，将载入脚本部署到生产中的 10[多个设备](configure-endpoints-gp.md)。
 
 请查看[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 的各种路径。 
 
 ## <a name="onboard-devices"></a>载入设备 
 
-1.  打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender包</a>：
+1.  打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从门户获取Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">包</a>：
 
-    1. 在导航窗格中，选择 **"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
+    1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
 
 
 请查看[PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)或[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 的各种路径。
 
-1. 打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender包</a>：
-    1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **载入"。**
+1. 打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从门户获取Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">包</a>：
+    1. 在导航窗格中，选择 **"设置** \>  \> **终结点设备管理** \> **载入"。**
     2. 选择Windows 10或Windows 11操作系统。
     3. 在"**部署方法"** 字段中，选择"**本地脚本"。**
     4. 单击 **下载程序包** 并保存.zip文件。
@@ -74,7 +77,7 @@ ms.locfileid: "60962935"
 
 ## <a name="configure-sample-collection-settings"></a>配置示例集合设置
 
-对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 请求提交文件进行深入分析时是否可以从设备收集示例。
+对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 提交文件进行深入分析时是否可以从设备收集示例。
 
 可以通过使用 *regedit* 或创建并运行 .reg 文件，在设备上手动配置 *示例共享* 设置。
 
@@ -105,7 +108,7 @@ Value: 0 or 1
 > 不得同时在同一设备上部署载入和载出策略，否则将导致不可预知的冲突。
 
 1. 从门户获取Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">包</a>：
-    1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **""载出"。**
+    1. 在导航窗格中，选择 **"设置** \>  \> **终结点设备管理** \> **""载出"。**
     2. 选择Windows 10或Windows 11操作系统。
     3. 在"**部署方法"** 字段中，选择"**本地脚本"。**
     4. 单击 **下载程序包** 并保存.zip文件。

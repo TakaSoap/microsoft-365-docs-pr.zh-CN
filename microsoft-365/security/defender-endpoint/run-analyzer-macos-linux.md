@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a49e2a862f3b95bde40620f3093d2f149111ad3d
-ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
+ms.openlocfilehash: d91bae340db5e52d04bd0263068892065dd3eebd
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889815"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166658"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>在 macOS 或 Linux 上运行客户端分析器
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## <a name="running-the-analyzer-through-gui-scenario"></a>通过 GUI 方案运行分析器
 
@@ -37,7 +37,7 @@ ms.locfileid: "60889815"
    > [!NOTE]
    > 从上述链接下载的"XMDEClientAnalyzer.zip"的当前 SHA256 哈希为："34C7F043211575544BB2C9CE30AB0998172066E44CD51E1CA018EDE9C96AB834"。
 
-2. 提取计算机上XMDEClientAnalyzer.zip的内容。
+2. 提取计算机上XMDEClientAnalyzer.zip内容。
 
 3. 打开终端会话，将目录更改为提取的位置并运行：
 
@@ -104,7 +104,7 @@ ms.locfileid: "60889815"
 
   说明：在任一 macOS 上运行 *mdatp* 诊断创建时生成的相同 [诊断输出](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
-  或
+  或者
 
   [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 

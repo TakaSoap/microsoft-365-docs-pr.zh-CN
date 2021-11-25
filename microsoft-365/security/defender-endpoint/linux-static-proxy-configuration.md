@@ -16,19 +16,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d05cf31ab773aa1b2b6583aca290514077621b3a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3b5061f0230a9704cb0fb9b80752c4d38954ad12
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152210"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168532"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>在 Linux 上为静态代理发现配置 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint 可以使用环境变量发现 `HTTPS_PROXY` 代
   > [!CAUTION]
   > 请注意，上述两种方法可定义要用于系统上其他应用程序的代理。 请谨慎使用此方法，或仅在本该配置是一般全局配置时使用此方法。
 
-- 变量 `HTTPS_PROXY` 位于安装或卸载命令的之前。 例如，使用 APT 程序包管理器，在安装适用于 Endpoint 的 Microsoft Defender 时，按如下所示在变量前预置：
+- 变量 `HTTPS_PROXY` 位于安装或卸载命令的之前。 例如，对于 APT 程序包管理器，在安装适用于 Endpoint 的 Microsoft Defender 时，按如下所示在变量前预置：
 
   ```bash
   HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
@@ -65,7 +65,7 @@ Microsoft Defender for Endpoint 可以使用环境变量发现 `HTTPS_PROXY` 代
 
 在 `HTTPS_PROXY` 卸载过程中，环境变量可能同样定义。
 
-请注意，如果需要代理但不配置代理，安装和卸载不一定失败。 但是，将不会提交遥测，由于网络超时，操作可能需要更长时间。
+请注意，如果需要代理但不配置代理，则安装和卸载不一定失败。 但是，将不会提交遥测，由于网络超时，操作可能需要更长时间。
 
 ## <a name="post-installation-configuration"></a>安装后配置
 

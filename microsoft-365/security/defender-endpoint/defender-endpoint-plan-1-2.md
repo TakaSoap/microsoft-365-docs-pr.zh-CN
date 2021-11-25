@@ -15,14 +15,19 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9f04d1a8f9cf0d7a8c85ef21454e89433bcb8c9d
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: f20739d13d4b8ef9e9b570d7c12b8e2cd1108cb6
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61127796"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61169034"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-and-plan-2"></a>Microsoft Defender for Endpoint Plan 1 和 Plan 2
+
+**适用对象**
+
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint 是企业终结点安全平台，旨在帮助企业网络阻止、检测、调查和响应高级威胁。 Defender for Endpoint 提供高级威胁防护，包括防病毒、反恶意软件、勒索软件缓解等，以及集中管理和报告。 很快，将推出两个计划：   
  
@@ -33,7 +38,7 @@ Microsoft Defender for Endpoint 是企业终结点安全平台，旨在帮助企
 
 下表介绍了每个计划在高级别包含哪些内容。 <br/><br/>
 
-| [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) <br/> (预览)  | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) <br/> (现在)  |
+| [Defender for Endpoint 计划 1](defender-endpoint-plan-1.md) <br/> (预览)  | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) <br/> (现在)  |
 |:---|:---|
 | [下一代保护](defender-endpoint-plan-1.md#next-generation-protection) <br/> (包括反恶意软件和防病毒)  <p> [减少攻击面](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [手动响应操作](defender-endpoint-plan-1.md#manual-response-actions) <p> [集中管理](defender-endpoint-plan-1.md#centralized-management) <p>[安全报告](defender-endpoint-plan-1.md#reporting) <p>[API](defender-endpoint-plan-1.md#apis)  | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)， plus： <p> [设备发现](device-discovery.md) <p> [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md) <p> [自动调查和响应](automated-investigations.md) <p> [高级搜寻](advanced-hunting-overview.md) <p> [终结点检测和响应](overview-endpoint-detection-response.md) <p> [Microsoft 威胁专家](microsoft-threat-experts.md)  |
 | [支持 Windows 10、iOS、Android OS 和 macOS 设备](defender-endpoint-plan-1.md#cross-platform-support) | 支持Windows (客户端和服务器) 和非Windows平台<br/>  (macOS、iOS、Android 和 Linux)  |

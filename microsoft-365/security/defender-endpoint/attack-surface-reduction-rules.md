@@ -16,14 +16,19 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9db0543a8d6c68c74b2ae6eba98a14bffb3411f7
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4941f2aa207cfedffdb7dc9687023c3bdaa47ab2
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882665"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171649"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻击面减少规则
+
+**适用于：**
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 本文提供有关攻击减少规则的信息：
 
@@ -46,7 +51,7 @@ ms.locfileid: "60882665"
 > - 除非另有说明，否则最低 Windows 10 内部版本为版本 &nbsp; 1709 (RS3、内部版本 16299) 或更高版本;最低 Windows Server 内部版本为 &nbsp; 版本 1809 或更高版本。
 >
 
-| 规则名称 | &nbsp;WindowsServer 2016 <sup> [[1](#fn1)]<sup></sup> | &nbsp;WindowsServer 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
+| 规则名称 | Windows Server &nbsp; 2016 <sup> [[1](#fn1)]<sup></sup> | Windows &nbsp; Server 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
 |---|:---:|:---:|
 |[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y |
 |[阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes) | Y | Y |
@@ -59,14 +64,14 @@ ms.locfileid: "60882665"
 |[阻止Office应用程序创建可执行内容](#block-office-applications-from-creating-executable-content) | Y | Y |
 |[阻止Office应用程序将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y |
 |[阻止Office应用程序创建子进程](#block-office-communication-application-from-creating-child-processes) | Y | Y |
-|[通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription) \*_不支持文件和文件夹排除项。_ | 网络 | 网络 |
+|[通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription) \*_不支持文件和文件夹排除项。_ | N | N |
 |[阻止源自 PSExec 和 WMI 命令的进程创建](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y | Y |
 |[阻止从 USB 运行的不受信任的和未签名的进程](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y |
-|[阻止从宏Office Win32 API 调用](#block-win32-api-calls-from-office-macros) | 网络 | 网络 |
+|[阻止从宏Office Win32 API 调用](#block-win32-api-calls-from-office-macros) | N | N |
 |[使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware) | Y | Y |
-| **规则名称** | **Windows &nbsp;Server 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows &nbsp;Server 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
+| **规则名称** | **Windows &nbsp; Server 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows Server &nbsp; 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
 
- (<a id="fn1">1</a>) 2016 年 1 月指适用于 Windows Server 2012 和 2016 的新式统一解决方案。 有关详细信息，请参阅将 Windows[服务器载入到 Defender for Endpoint 服务](configure-server-endpoints.md)。
+ (<a id="fn1">1</a>) 2016 的新式统一Windows Server 2012解决方案。 有关详细信息，请参阅将 Windows[服务器载入到 Defender for Endpoint 服务](configure-server-endpoints.md)。
 
 _结束公共预览版：支持的操作系统_
 
@@ -79,7 +84,7 @@ _结束公共预览版：支持的操作系统_
 > - 除非另有说明，否则最低 Windows 10 内部版本为版本 &nbsp; 1709 (RS3、内部版本 16299) 或更高版本;最低 Windows Server 内部版本为 &nbsp; 版本 1809 或更高版本。
 >
 
-|规则名称|&nbsp;Windows10|&nbsp;WindowsServer 2019|&nbsp;Windows服务器|&nbsp;WindowsServer 2016|&nbsp;WindowsServer 2012 R2|
+|规则名称|Windows &nbsp; 10|Windows Server &nbsp; 2019|Windows &nbsp; 服务器|Windows Server &nbsp; 2016|Windows Server &nbsp; 2012 R2|
 |---|:---:|:---:|:---:|:---:|:---:|
 |[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y 版本 1803 (半年频道) 或更高版本 |  |  |
 |[阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes) | Y 版本 1809 或更高版本 | Y | Y  <br><br> |  |  |
@@ -90,14 +95,14 @@ _结束公共预览版：支持的操作系统_
 |[阻止执行可能混淆的脚本](#block-execution-of-potentially-obfuscated-scripts) | Y | Y <br><br> | Y <br><br> |  |  |
 |[阻止 JavaScript 或 VBScript 启动下载的可执行内容](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y <br><br> | Y <br><br> |  |  |
 |[阻止Office应用程序创建可执行内容](#block-office-applications-from-creating-executable-content) | Y | Y <br><br> | Y <br><br> |  |  |
-|[阻止Office代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y <br><br> | Y <br><br> |  |  |
+|[阻止Office将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y <br><br> | Y <br><br> |  |  |
 |[阻止Office应用程序创建子进程](#block-office-communication-application-from-creating-child-processes) | Y | Y <br><br> | Y <br><br> |  |  |
 |[通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription) <br><br> \*_不支持文件和文件夹排除项。_ | Y 版本 1903 (版本 18362) 或更高版本| Y | Y <br><br> 版本 1903 (版本 18362) 或更高版本 |  |  |
 |[阻止源自 PSExec 和 WMI 命令的进程创建](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y 版本 1803 或更高版本 | Y <br><br> | Y <br><br>  |  |  |
 |[阻止从 USB 运行的不受信任的和未签名的进程](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y <br><br> | Y <br><br> |  |  |
 |[阻止从宏Office Win32 API 调用](#block-win32-api-calls-from-office-macros) | Y | Y <br><br> | Y <br><br> |  |  |
 |[使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware) | Y 版本 1803 或更高版本 | Y <br><br> | Y <br><br> |  |  |
-| **规则名称** |  **&nbsp;Windows10** | **&nbsp;WindowsServer 2019** | **&nbsp;Windows服务器** | **&nbsp;WindowsServer 2016** | **&nbsp;WindowsServer 2012 R2** |
+| **规则名称** |  **Windows &nbsp; 10** | **Windows Server &nbsp; 2019** | **Windows &nbsp; 服务器** | **Windows Server &nbsp; 2016** | **Windows Server &nbsp; 2012 R2** |
 
 ## <a name="supported-configuration-management-systems"></a>支持的配置管理系统
 
@@ -114,7 +119,7 @@ _结束公共预览版：支持的操作系统_
 |[阻止执行可能混淆的脚本](#block-execution-of-potentially-obfuscated-scripts) | Y |   |  Y  <br><br> CB 1710 | Y  | Y  |
 |[阻止 JavaScript 或 VBScript 启动下载的可执行内容](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y |   | Y <br><br> CB 1710 | Y  | Y  |
 |[阻止Office应用程序创建可执行内容](#block-office-applications-from-creating-executable-content) | Y |  |Y <br><br> CB 1710 | Y  | Y  |
-|[阻止Office代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes) | Y |  | Y <br><br> CB 1710 | Y  | Y  |
+|[阻止Office将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes) | Y |  | Y <br><br> CB 1710 | Y  | Y  |
 |[阻止Office应用程序创建子进程](#block-office-communication-application-from-creating-child-processes) | Y |  |Y <br><br> CB 1710 | Y  | Y  |
 |[通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription) |  |  |  |Y   | Y  |
 |[阻止源自 PSExec 和 WMI 命令的进程创建](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y |   |   |  Y | Y  |
@@ -126,14 +131,14 @@ _结束公共预览版：支持的操作系统_
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
-- [Microsoft Endpoint ManagerCB 1710](/configmgr/core/servers/manage/updates)
+- [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM 现已Microsoft Endpoint Configuration Manager。_
 
 ## <a name="per-rule-descriptions"></a>每个规则说明
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>阻止滥用被攻击的易受攻击的已签名驱动程序
 
-此规则阻止应用程序将易受攻击的已签名驱动程序写入磁盘。 具有获取内核访问权限的足够权限的本地应用程序可能会利用通配符、易受攻击的已 \-  \- 签名驱动程序。 易受攻击的已签名驱动程序使攻击者能够禁用或规避安全解决方案，最终导致系统泄露。
+此规则阻止应用程序将易受攻击的已签名驱动程序写入磁盘。 具有获取内核访问权限的足够权限的本地应用程序可能会利用通配符、易受攻击的已 \-  \- 签名驱动程序。 易受攻击的已签名驱动程序使攻击者能够禁用或规避安全解决方案，并最终导致系统泄露。
 
 阻止 **滥用被攻击的易受攻击的** 已签名驱动程序规则不会阻止加载系统中已存在的驱动程序。
 
@@ -199,9 +204,9 @@ GUID：`d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>阻止从本地安全Windows窃取凭据
 
-此规则通过锁定 LSASS 应用程序的本地安全机构子系统服务 (凭据) 。
+此规则通过锁定 LSASS 服务中的本地安全机构子系统服务 (凭据) 。
 
-LSASS 对在计算机中登录的用户Windows身份验证。 Microsoft Defender Credential Guard Windows通常会阻止尝试从 LSASS 中提取凭据。 但是，某些组织无法在所有计算机上启用 Credential Guard，因为自定义智能卡驱动程序或其他加载到本地安全机构 (LSA) 的程序的兼容性问题。 在这些情况下，攻击者可以使用 Mimikatz 等黑客工具从 LSASS 中清除明文密码和 NTLM 哈希。
+LSASS 对登录 Windows进行身份验证。 Microsoft Defender Credential Guard Windows通常会阻止尝试从 LSASS 提取凭据。 但是，某些组织无法在所有计算机上启用 Credential Guard，因为自定义智能卡驱动程序或其他加载到本地安全机构 (LSA) 。 在这些情况下，攻击者可以使用 Mimikatz 等黑客工具从 LSASS 中清除明文密码和 NTLM 哈希。
 
 > [!NOTE]
 > 在某些应用中，该代码枚举所有正在运行的进程，并尝试以详尽的权限打开它们。 此规则拒绝应用的进程打开操作，将详细信息记录到安全事件日志中。 此规则会产生大量噪音。 如果你的应用仅枚举 LSASS，但在功能方面没有实际影响，则无需将其添加到排除列表。 此事件日志条目本身不一定表示恶意威胁。
@@ -221,7 +226,7 @@ GUID：`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>阻止来自电子邮件客户端和 Webmail 的可执行内容
 
-此规则阻止从 Microsoft Outlook 应用程序或其他热门 webmail 提供程序Outlook打开的电子邮件启动以下文件类型：
+此规则阻止从 Microsoft Outlook 应用程序、Outlook.com 和其他热门 Web 邮件提供程序内打开的电子邮件启动以下文件类型：
 
 - 可执行文件 (，如 .exe、.dll 或 .scr) 
 - 脚本文件 (如 PowerShell .ps、Visual Basic .vbs 或 JavaScript .js文件) 
@@ -242,7 +247,7 @@ GUID：`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 > [!NOTE]
 > 规则 **"阻止来自电子邮件客户端和 Webmail** 的可执行内容"具有以下替代说明，具体取决于你使用的应用程序：
 >
-> - Intune (Configuration Profiles) ：执行从电子邮件 (webmail/mail 客户端 (删除的可执行内容 (exe、dll、ps、js、vbs 等 ) )  (，) 。
+> - Intune (Configuration Profiles) ： Execution of executable content (exe， dll， ps， js， vbs， etc.) dropped from email (webmail/mail client)  (no exceptions) .
 > - Endpoint Manager：阻止从电子邮件和 Webmail 客户端下载可执行内容。
 > - 组策略：阻止来自电子邮件客户端和 Webmail 的可执行内容。
 
@@ -261,7 +266,7 @@ GUID：`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 >
 > 规则 **阻止可执行文件运行** ，除非它们符合普遍程度、年龄或受信任列表条件（具有 GUID）归 Microsoft 所有，且未由管理员 `01443614-cd74-433a-b99e-2ecdc07bfc25` 指定。 此规则使用云提供的保护定期更新其受信任列表。
 >
-> 可以使用文件夹路径或完全限定的资源 (指定的单个文件或文件夹) 但无法指定适用于哪些规则或排除项。
+> 可以使用文件夹路径或完全限定的资源 (指定单个文件或文件夹) 但无法指定适用于哪些规则或排除项。
 
 Intune 名称： `Executables that don't meet a prevalence, age, or trusted list criteria`
 
@@ -316,7 +321,7 @@ GUID：`d3e037e1-3eb8-44c8-a917-57927947596d`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>阻止Office应用程序创建可执行内容
 
-此规则Office Word、Excel 和 PowerPoint 等应用阻止恶意代码写入磁盘，从而阻止这些应用创建潜在恶意可执行内容。
+此规则Office Word、Excel 和 PowerPoint 等应用创建潜在恶意可执行内容，从而阻止恶意代码写入磁盘。
 
 滥用作为Office的恶意软件可能会尝试破坏安全Office恶意组件保存到磁盘。 这些恶意组件在计算机重新启动后将一直保留于系统。 因此，此规则可防御常见的持久性技术。
 
@@ -335,7 +340,7 @@ GUID：`3b576869-a4ec-4529-8536-b80a7769e899`
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>阻止Office应用程序将代码注入其他进程
 
-此规则阻止代码注入尝试Office应用注入其他进程。
+此规则阻止代码注入尝试Office应用注入到其他进程。
 
 攻击者可能会尝试使用Office通过代码注入将恶意代码迁移到其他进程中，因此代码可以伪装成一个干净流程。
 
@@ -358,7 +363,7 @@ GUID：`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>阻止Office应用程序创建子进程
 
-此规则阻止Outlook创建子进程，同时仍允许合法Outlook运行。
+此规则阻止Outlook子进程，同时仍允许合法Outlook功能。
 
 此规则可防止社会工程攻击，并防止利用代码滥用Outlook。 它还[可Outlook用户](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)凭据泄露时攻击者可能使用的规则和表单攻击。
 
@@ -380,12 +385,12 @@ GUID：`26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>通过 WMI 事件订阅阻止持久性
 
-此规则可防止恶意软件滥用 WMI 在设备上获得持久性。
+此规则可防止恶意软件滥用 WMI 来达到设备上的持久性。
 
 > [!IMPORTANT]
 > 文件和文件夹排除项不适用于此攻击面减少规则。
 
-无文件威胁采用各种策略来保持隐藏，以避免在文件系统中可见，并获得定期执行控制。 某些威胁可能会滥用 WMI 存储库和事件模型来保持隐藏状态。
+无文件威胁使用各种策略来保持隐藏状态，以避免在文件系统中被看到，并获得定期执行控制。 某些威胁可能会滥用 WMI 存储库和事件模型，使其保持隐藏状态。
 
 Intune 名称：不可用
 
@@ -405,7 +410,7 @@ GUID：`e6db77e5-3df2-4cf1-b95a-636979351e5b`
 此规则阻止通过 [PsExec](/sysinternals/downloads/psexec) 和 [WMI 创建](/windows/win32/wmisdk/about-wmi) 的进程运行。 PsExec 和 WMI 都可以远程执行代码，因此存在恶意软件滥用此功能以用于命令和控制目的，或在整个组织的网络中传播感染的风险。
 
 > [!WARNING]
-> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置管理器[Microsoft Endpoint Configuration Manager，](/configmgr)因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
+> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置管理器Microsoft Endpoint Configuration Manager[管理不兼容](/configmgr)，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
 
 Intune 名称： `Process creation from PSExec and WMI commands`
 
@@ -422,7 +427,7 @@ GUID：`d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>阻止从 USB 运行的不受信任的和未签名的进程
 
-通过此规则，管理员可以阻止未签名或不受信任的可执行文件从 USB 可移动驱动器（包括 SD 卡）运行。 阻止的文件类型包括可执行 (文件，例如 .exe、.dll 或 .scr) 
+通过此规则，管理员可以阻止未签名或不受信任的可执行文件从 USB 可移动驱动器（包括 SD 卡）运行。 阻止的文件类型包括可执行 (文件，如 .exe、.dll 或 .scr) 
 
 Intune 名称： `Untrusted and unsigned processes that run from USB`
 
@@ -441,12 +446,12 @@ GUID：`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 此规则阻止 VBA 宏调用 Win32 API。
 
-OfficeVBA 启用 Win32 API 调用。 恶意软件可能会滥用此功能，例如调用 [Win32 API 以启动恶意 shellcode，](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) 而无需将任何内容直接写入磁盘。 大多数组织不依赖于在日常运行中调用 Win32 API 的功能，即使它们以其他方式使用宏。
+Office VBA 支持 Win32 API 调用。 恶意软件可能会滥用此功能，例如调用 [Win32 API 以启动恶意 shellcode，](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) 而无需将任何内容直接写入磁盘。 大多数组织不依赖于在日常运行中调用 Win32 API 的功能，即使它们以其他方式使用宏。
 
 支持的操作系统：
 
 - [Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 

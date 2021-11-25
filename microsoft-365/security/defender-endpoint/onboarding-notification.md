@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 654de92a89c85bb696aea8cc5ea88797d79b0726
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 36713496b5885866dd21a3402dcfe66b4af5b76e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199737"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166766"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>使用本地载入或载出脚本时创建通知规则
 
@@ -28,7 +28,8 @@ ms.locfileid: "60199737"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -51,7 +52,7 @@ ms.locfileid: "60199737"
 
 1. 在 [flow.microsoft.com](https://flow.microsoft.com/)中。
 
-2. 导航到 **"我的流>新>计划 - 从空白。**
+2. 从空白 **导航到"我的>">计划的新流"。**
 
     ![流的图像。](images/new-flow.png)
 
@@ -71,7 +72,7 @@ ms.locfileid: "60199737"
    - 方法："GET"作为获取设备列表的值。
    - URI：输入 `https://api.securitycenter.microsoft.com/api/machines` 。
    - 身份验证：选择"Active Directory OAuth"。
-   - 租户：登录并导航到Azure Active Directory > https://portal.azure.com **注册并** 获取租户 ID 值。
+   - 租户：登录并导航到Azure Active Directory > https://portal.azure.com **应用注册并** 获取租户 ID 值。
    - 访问群体： `https://securitycenter.onmicrosoft.com/windowsatpservice\`
    - 客户端 ID：登录并导航到Azure Active Directory > https://portal.azure.com **应用注册并** 获取客户端 ID 值。
    - 凭据类型：选择"机密"。
@@ -173,10 +174,10 @@ ms.locfileid: "60199737"
 
     ```
 
-10. 从 JSON 调用中提取值，并检查已载入设备 (是否) /已在 SharePoint 列表注册为示例：
+10. 从 JSON 调用中提取值，并检查已载入设备 (是否) /已在 SharePoint 列表注册，例如：
 
     - 如果是，则不触发任何通知
-    - 如果否，将在" (") 注册新的已载入SharePoint，并且会向 Defender for Endpoint 管理员发送通知
+    - 如果否，将在 SharePoint 列表中 (新的已载入) 设备，并且会向 Defender for Endpoint 管理员发送通知
 
     ![适用于每个图像的图像。](images/flow-apply.png)
 
@@ -201,13 +202,13 @@ ms.locfileid: "60199737"
   - 每 60 分钟：
     - 使用过去 7 天内最后看到的所有设备。
 
-- 对于每个设备：
-  - 如果上次看到的属性的时间间隔为 [-7 天， -7days + 60 分钟 ] ->发生载出可能性的警报。
+- 对于每个设备:
+  - 如果上次看到的属性的时间间隔为 [-7 天， -7days + 60 分钟 ] ->的一小时间隔。
   - 如果第一次看到是过去一小时 ->载入警报。
 
 在此解决方案中，你将没有重复的警报：存在具有大量设备的租户。 获取所有这些设备可能非常昂贵，并且可能需要分页。
 
 您可以拆分为两个查询：
 
-1. 对于载出，使用 OData $filter此间隔，并且仅在满足条件时通知。
-2. 查看过去一小时内最后看到的所有设备，并检查第一次看到的属性 (如果第一次看到的属性是过去一小时，则最后一次看到的设备必须太) 。
+1. 对于"出载"，只需使用此 OData $filter，并且仅在满足条件时通知。
+2. 查看过去一小时内最后看到的所有设备，并检查第一次看到的属性 (如果第一次看到的属性是过去一小时，则最后一次看到的设备必须位于) 。

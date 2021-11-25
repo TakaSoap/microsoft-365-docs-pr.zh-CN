@@ -16,18 +16,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d980bca8584bbd99cdc695e24a5a1d7a476ff8c9
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 867d537e70c832a7005186875db40290db933afc
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122080"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168566"
 ---
 # <a name="get-software-by-id"></a>按 ID 获取软件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：** 
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
@@ -45,7 +46,7 @@ ms.locfileid: "61122080"
 
 权限类型|权限|权限显示名称
 ---|---|---
-应用程序|Software.Read.All|"读取威胁和漏洞管理软件信息"
+Application|Software.Read.All|"读取威胁和漏洞管理软件信息"
 委派（工作或学校帐户）|Software.Read|"读取威胁和漏洞管理软件信息"
 
 ## <a name="http-request"></a>HTTP 请求

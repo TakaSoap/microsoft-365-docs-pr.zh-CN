@@ -16,19 +16,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c7306782d62f91cea528a70ff0c3754085d0d3c2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 20579b54e0ce9e58c1466afbbda348730ffad839
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195241"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168518"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>JAMF 的设备控制策略示例
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -113,7 +114,7 @@ ms.locfileid: "60195241"
 
 ## <a name="restrict-all-devices-from-specific-vendors"></a>限制来自特定供应商的所有设备
 
-以下示例将限制来自特定供应商的所有设备， (由 和 `fff0` `4525`) 。 所有其他设备将不受限制，因为策略的顶级定义的权限列出了所有可能的权限 (读取、写入和执行) 。
+以下示例将限制来自特定供应商的所有设备， (由 和 `fff0` `4525`) 。 所有其他设备将不受限制，因为策略顶级定义的权限列出了所有可能的权限 (读取、写入和执行) 。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -157,7 +158,7 @@ ms.locfileid: "60195241"
 
 ## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>限制由供应商 ID、产品 ID 和序列号标识的特定设备
 
-以下示例限制由供应商 ID、产品 ID 和序列号标识的两个 `fff0` `1000` 特定 `04ZSSMHI2O7WBVOA` 设备 `04ZSSMHI2O7WBVOB` 。 在策略的所有其他级别，权限包括所有可能的值 (读取、写入和执行) ，这意味着所有其他设备将不受限制。
+以下示例限制由供应商 ID、产品 ID 和序列号标识的两个 `fff0` `1000` 特定 `04ZSSMHI2O7WBVOA` 设备 `04ZSSMHI2O7WBVOB` 。 在策略的所有其他级别，权限包括所有可能 (读取、写入和执行) ，这意味着所有其他设备将不受限制。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

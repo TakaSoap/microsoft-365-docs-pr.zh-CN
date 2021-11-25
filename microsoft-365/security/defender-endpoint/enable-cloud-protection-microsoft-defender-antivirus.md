@@ -15,25 +15,25 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0a84fb78ef46c63016de936b035611b8fcabdebe
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: c44435fe61acacce760b7920313e432e889a4f14
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109331"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168746"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>在云中打开云Microsoft Defender 防病毒
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender 防病毒
 
 [云保护Microsoft Defender 防病毒](cloud-protection-microsoft-defender-antivirus.md)提供准确、实时和智能的保护。 默认情况下应启用云保护;但是，你可以配置云保护以满足组织的需求。
 
 ## <a name="methods-to-configure-cloud-protection"></a>配置云保护的方法
 
-可以通过使用Microsoft Defender 防病毒之一打开或关闭云保护：
+可以使用多种Microsoft Defender 防病毒之一打开或关闭云保护：
 
 - Microsoft Endpoint Manager，包括Microsoft Intune和配置管理器
 - 组策略
@@ -48,7 +48,7 @@ ms.locfileid: "61109331"
 
 ## <a name="use-intune-to-turn-on-cloud-protection"></a>使用 Intune 打开云保护
 
-1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 并登录。
+1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 登录。
 
 2. 在"**主页"** 窗格中，选择"设备 **配置>配置文件"。**
 
@@ -64,7 +64,7 @@ ms.locfileid: "61109331"
 
 ## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-protection"></a>使用Microsoft Endpoint Manager启用云保护
 
-1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 并登录。
+1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 登录。
 
 2. 选择 **终结点安全** \> **防病毒**。
 
@@ -89,18 +89,18 @@ ms.locfileid: "61109331"
 
 3. 选择 **"管理模板"。**
 
-4. 展开树以 **Windows MAPS**  >  **Microsoft Defender 防病毒 >组件**
+4. 展开树以Windows **MAPS**  >  **Microsoft Defender 防病毒 >组件**
 
 5. 双击加入 **Microsoft MAPS**。 确保该选项已打开，并设置为 **基本 MAPS** 或 **高级 MAPS。** 选择“**确定**”。
 
 6. 双击需要进 **一步分析时发送文件示例**。 确保第一个选项设置为 **"已启用** "，并且其他选项设置为：
 
    - **发送安全示例** (1) 
-   - **发送所有示例 (** 3) 
+   - **发送所有示例** (3) 
 
    >[!NOTE]
    > " **发送安全 (** 1) "选项意味着将自动发送大多数示例。 可能包含个人信息的文件仍将提示并需要其他确认。
-   > 将选项设置为"始终 **提示** (0) 会降低设备的保护状态。 将其设置为永不 **发送** (2) 意味着 Microsoft Defender [](configure-block-at-first-sight-microsoft-defender-antivirus.md) for Endpoint 的"首次看到时阻止"功能将不起作用。
+   > 将选项设置为"始终 **提示** (0) 会降低设备的保护状态。 将其设置为"从不 **(** 2) "意味着 Microsoft Defender for [](configure-block-at-first-sight-microsoft-defender-antivirus.md) Endpoint 的"首次看到时阻止"功能将不起作用。
 
 7. 选择“**确定**”。
 

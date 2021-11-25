@@ -17,21 +17,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
 ms.custom: api
-ms.openlocfilehash: 0a9180c1705f7a583244d93ff9aa323aed1feb9c
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 699a7e2738f1e0c89977bd152832f45935a06387
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586465"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167474"
 ---
 # <a name="get-kb-collection-api"></a>获取 KB 集合 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**适用于：** 
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,7 +41,7 @@ ms.locfileid: "60586465"
 
 检索 RBAC 设备组的集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 用户需要读取权限。
 
@@ -53,7 +55,7 @@ GET /testwdatppreview/machinegroups
 
 标头|值
 :---|:---
-Authorization | Bearer {token}。 **必需**。
+Authorization | Bearer {token}。 必需。
 内容类型 | application/json
 
 ## <a name="request-body"></a>请求正文

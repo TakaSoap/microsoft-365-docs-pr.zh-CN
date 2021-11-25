@@ -1,6 +1,6 @@
 ---
 title: 使用事件查看器查看事件和错误
-description: 获取 Microsoft Defender 终结点服务 (报告) 事件的说明和进一步疑难解答步骤。
+description: 获取说明和进一步疑难解答 (如有必要) Microsoft Defender for Endpoint 服务报告的所有事件。
 keywords: 疑难解答， 事件查看器， 日志摘要， 故障代码， 失败， Microsoft Defender for Endpoint 服务， 无法启动， 断开， 无法启动
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 92a9a1f01ad8747719ecf41f16e1fb1f1c4f8625
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a09f034ac35aa3380ea834eafc149eaad9a7cb3d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552688"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61169046"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>使用事件查看器查看事件和错误
 
@@ -29,7 +29,8 @@ ms.locfileid: "60552688"
 
 **适用于：**
 - 事件查看器
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
@@ -42,9 +43,9 @@ ms.locfileid: "60552688"
 
 1. 单击 **菜单** 上的"开始 **Windows，键入事件查看器**，然后按 **Enter。**
 
-2. 在日志列表中的"日志 **摘要"** 下，滚动到看到 **Microsoft-Windows-SENSE/Operational。** 双击该项以打开日志。
+2. 在日志列表中的"日志 **摘要"下**，滚动，直到看到 **"Microsoft-Windows-SENSE/Operational"。** 双击该项以打开日志。
 
-   您还可以通过展开"应用程序和服务日志 \> **"Microsoft** Windows SENSE 并单击 \> **"操作"来访问** \> **日志**。
+   您还可以通过展开"应用程序和服务日志 \> **"Microsoft** Windows SENSE 并单击 \> **"操作"来** \> 访问 **日志**。
 
    > [!NOTE]
    > SENSE 是内部名称，用于引用支持 Microsoft Defender for Endpoint 的行为传感器。
@@ -55,14 +56,14 @@ ms.locfileid: "60552688"
 
    ****
 
-   |事件 ID|邮件|说明|Action|
+   |事件 ID|邮件|Description|Action|
    |---|---|---|---|
    |1|Microsoft Defender for Endpoint 服务 (版本 `variable`) 。|在系统启动、关闭和载入期间发生。|正常操作通知;无需任何操作。|
    |2|Microsoft Defender for Endpoint 服务关闭。|在设备关闭或载出时发生。|正常操作通知;无需任何操作。|
    |3|Microsoft Defender for Endpoint 服务启动失败。 失败代码 `variable` ：。|服务未启动。|查看其他消息以确定可能的原因和疑难解答步骤。|
-   |4 |Microsoft Defender for Endpoint 服务与 位于 的服务器联系 `variable` 。|变量 = 适用于终结点处理服务器的 Defender 的 URL。 <p> 此 URL 将匹配防火墙或网络活动中显示的内容。|正常操作通知;无需任何操作。|
+   |4|Microsoft Defender for Endpoint 服务与 位于 的服务器联系 `variable` 。|变量 = 适用于终结点处理服务器的 Defender 的 URL。 <p> 此 URL 将匹配防火墙或网络活动中显示的内容。|正常操作通知;无需任何操作。|
    |5|Microsoft Defender for Endpoint 服务无法连接到 位于 的服务器 `variable` 。|变量 = 适用于终结点处理服务器的 Defender 的 URL。 <p> 该服务无法通过该 URL 与外部处理服务器联系。|检查与 URL 的连接。 请参阅 [配置代理和 Internet 连接](configure-proxy-internet.md)。|
-   |6 |Microsoft Defender for Endpoint 服务未载入，并且未找到任何载入参数。|设备未正确载入，不会向门户报告。|在启动该服务之前，必须运行载入。 <p> 检查载入设置和脚本是否正确部署。 尝试重新部署配置包。 <p> 请参阅[载入Windows 10设备](configure-endpoints.md)。|
+   |6 |Microsoft Defender for Endpoint 服务未载入，并且未找到载入参数。|设备未正确载入，不会向门户报告。|在启动该服务之前，必须运行载入。 <p> 检查载入设置和脚本是否正确部署。 尝试重新部署配置包。 <p> 请参阅[载入Windows 10设备](configure-endpoints.md)。|
    |7 |Microsoft Defender for Endpoint 服务无法读取载入参数。 失败 `variable` ：。|变量 = 详细的错误描述。 设备未正确载入，不会向门户报告。|检查载入设置和脚本是否正确部署。 尝试重新部署配置包。 <p> 请参阅[载入Windows 10设备](configure-endpoints.md)。|
    |8 |Microsoft Defender for Endpoint 服务无法清理其配置。 失败代码 `variable` ：。|**载入期间：** 服务在载入期间未能清理其配置。 载入过程继续进行。 <p> **在载出期间：** 该服务在载出过程中未能清理其配置。 载出过程已完成，但服务继续运行。|**载入：** 无需任何操作。 <p> **载出：** 重新启动系统。 <p> 请参阅[载入Windows 10设备](configure-endpoints.md)。|
    |9 |Microsoft Defender for Endpoint 服务未能更改其启动类型。 失败代码 `variable` ：。|**载入期间：** 设备未正确载入，不会向门户报告。 <p>**在载出期间：** 未能更改服务启动类型。 载出过程继续进行。 |检查载入设置和脚本是否正确部署。 尝试重新部署配置包。 <p> 请参阅[载入Windows 10设备](configure-endpoints.md)。|
@@ -77,20 +78,20 @@ ms.locfileid: "60552688"
    |20|无法等待 OOBE (Windows欢迎) 完成。 失败代码 `variable` ：。|内部错误。|如果此错误在系统重新启动后仍然存在，请确保Windows安装完整更新。|
    |25|Microsoft Defender for Endpoint 服务无法重置注册表中的运行状况状态。 失败代码 `variable` ：。|设备未正确载入。 它将报告给门户，但该服务可能不会显示为在 SCCM 或注册表中注册。|检查载入设置和脚本是否正确部署。 尝试重新部署配置包。 <p> 请参阅[载入Windows 10设备](configure-endpoints.md)。|
    |26|Microsoft Defender for Endpoint 服务未能在注册表中设置载入状态。 失败代码 `variable` ：。|设备未正确载入。 <p> 它将报告给门户，但该服务可能不会显示为在 SCCM 或注册表中注册。|检查载入设置和脚本是否正确部署。 尝试重新部署配置包。 <p> 请参阅[载入Windows 10设备](configure-endpoints.md)。|
-   |27|Microsoft Defender for Endpoint 服务未在终结点中启用 SENSE 感知Microsoft Defender 防病毒。 载入过程失败。 失败代码 `variable` ：。|通常，Microsoft Defender 防病毒设备正常运行，并且设备正在向 Defender for Endpoint 报告其他实时反恶意软件产品，则此设备将进入特殊的被动状态。|检查载入设置和脚本是否正确部署。 尝试重新部署配置包。 <p> 请参阅[载入Windows 10设备](configure-endpoints.md)。 <p> 确保实时反恶意软件保护运行正常。|
+   |27|Microsoft Defender for Endpoint 服务未能在终结点中启用 SENSE 感知Microsoft Defender 防病毒。 载入过程失败。 失败代码 `variable` ：。|通常，Microsoft Defender 防病毒另一个实时反恶意软件产品在设备上正常运行，并且设备向 Defender for Endpoint 报告，则此设备将进入特殊的被动状态。|检查载入设置和脚本是否正确部署。 尝试重新部署配置包。 <p> 请参阅[载入Windows 10设备](configure-endpoints.md)。 <p> 确保实时反恶意软件保护运行正常。|
    |28|Microsoft Defender 终结点连接用户体验和遥测服务注册失败。 失败代码 `variable` ：。|遥测服务Windows错误。|[确保诊断数据服务已启用](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。 <p> 检查载入设置和脚本是否正确部署。 尝试重新部署配置包。 <p> 请参阅[载入Windows 10设备](configure-endpoints.md)。|
    |29|未能读取 offboarding参数。 错误类型：%1，错误代码：%2，说明：%3|当系统无法读取载出参数时，将发生此事件。|确保设备可以访问 Internet，然后再次运行整个载出过程。 确保载出包尚未过期。|
-   |30|Microsoft Defender for Endpoint 服务在运行中无法禁用 SENSE 感知Microsoft Defender 防病毒。 失败代码 `variable` ：。|通常，Microsoft Defender 防病毒设备正常运行，并且设备正在向 Defender for Endpoint 报告其他实时反恶意软件产品，则此设备将进入特殊的被动状态。|检查载入设置和脚本是否正确部署。 尝试重新部署配置包。 <p> 请参阅[载入Windows 10设备](configure-endpoints.md)。 <p> 确保实时反恶意软件保护运行正常。|
+   |30|Microsoft Defender for Endpoint 服务在运行中无法禁用 SENSE 感知Microsoft Defender 防病毒。 失败代码 `variable` ：。|通常，Microsoft Defender 防病毒另一个实时反恶意软件产品在设备上正常运行，并且设备向 Defender for Endpoint 报告，则此设备将进入特殊的被动状态。|检查载入设置和脚本是否正确部署。 尝试重新部署配置包。 <p> 请参阅[载入Windows 10设备](configure-endpoints.md)。 <p> 确保实时反恶意软件保护运行正常。|
    |31|Microsoft Defender 终结点连接用户体验和遥测服务注销失败。 失败代码 `variable` ：。|载入期间，Windows遥测服务出错。 载出过程继续进行。|[检查遥测服务 Windows错误](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)。|
    |32|Microsoft Defender for Endpoint 服务在离开进程后无法请求自行停止。 失败代码：%1|在载出期间出错。|重新启动设备。|
-   |33|Microsoft Defender for Endpoint 服务无法保留 SENSE GUID。 失败代码 `variable` ：。|唯一标识符用于表示向门户报告的每个设备。 <p> 如果标识符未保留，同一设备可能在门户中出现两次。|检查设备的注册表权限，以确保服务可以更新注册表。|
+   |33|Microsoft Defender for Endpoint 服务无法保留 SENSE GUID。 失败代码 `variable` ：。|唯一标识符用于表示向门户报告的每个设备。 <p> 如果标识符未保留，同一设备可能在门户中出现两次。|检查设备的注册表权限，以确保该服务可以更新注册表。|
    |34|Microsoft Defender for Endpoint 服务无法将自身添加为对连接用户体验和遥测服务的依赖，从而导致载入过程失败。 失败代码 `variable` ：。|遥测服务Windows错误。|[确保诊断数据服务已启用](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。 <p> 检查载入设置和脚本是否正确部署。 尝试重新部署配置包。 <p> 请参阅[载入Windows 10设备](configure-endpoints.md)。|
    |35|Microsoft Defender for Endpoint 服务无法删除自身作为连接用户体验和遥测服务依赖项。 失败代码 `variable` ：。|在载出期间Windows遥测服务出错。 载出过程继续进行。|检查诊断数据服务Windows错误。|
    |36|Microsoft Defender 终结点连接用户体验和遥测服务注册成功。 完成代码 `variable` ：。|为终结点注册已成功完成连接用户体验和遥测服务的 Defender。|正常操作通知;无需任何操作。|
    |37|Microsoft Defender for Endpoint A 模块即将超过其配额。 模块：%1，配额：{%2} {%3}，配额使用率百分比：%4。|设备几乎已使用当前 24 小时时段的已分配配额。 即将被限制。|正常操作通知;无需任何操作。|
-   |38|网络连接标识为低。 Microsoft Defender for Endpoint 将每 %1 分钟与服务器联系一次。 按流量计费的连接：%2，Internet 可用：%3，可用网络：%4。|设备使用按流量计费/付费网络，并且与服务器联系的频率将较低。|正常操作通知;无需任何操作。|
-   |39|网络连接被标识为正常连接。 Microsoft Defender for Endpoint 将每 %1 分钟与服务器联系一次。 按流量计费的连接：%2，Internet 可用：%3，可用网络：%4。|设备没有使用按流量计费/付费的连接，将照常与服务器联系。|正常操作通知;无需任何操作。|
-   |40|电池状态标识为低。 Microsoft Defender for Endpoint 将每 %1 分钟与服务器联系一次。 电池状态：%2。|设备具有低电池电量，并且与服务器的联系频率较低。|正常操作通知;无需任何操作。|
+   |38|网络连接标识为低。 Microsoft Defender for Endpoint 将每 %1 分钟与服务器联系一次。 按流量计费的连接：%2，Internet 可用：%3，免费网络可用：%4。|设备使用按流量计费/付费网络，并且与服务器联系的频率将较低。|正常操作通知;无需任何操作。|
+   |39|网络连接被标识为正常连接。 Microsoft Defender for Endpoint 将每 %1 分钟与服务器联系一次。 按流量计费的连接：%2，Internet 可用：%3，免费网络可用：%4。|设备没有使用按流量计费/付费的连接，将照常与服务器联系。|正常操作通知;无需任何操作。|
+   |40|电池状态标识为低。 Microsoft Defender for Endpoint 将每 %1 分钟与服务器联系一次。 电池状态：%2。|设备的电池电量较低，并且与服务器的联系频率较低。|正常操作通知;无需任何操作。|
    |41|电池状态标识为正常。 Microsoft Defender for Endpoint 将每 %1 分钟与服务器联系一次。 电池状态：%2。|设备没有低电池电量，将照常与服务器联系。|正常操作通知;无需任何操作。|
    |42|Microsoft Defender for Endpoint 组件无法执行操作。 组件：%1，操作：%2，异常类型：%3，异常消息：%4|内部错误。 服务启动失败。|如果此错误仍然存在，请联系支持人员。|
    |43|Microsoft Defender for Endpoint 组件无法执行操作。 组件：%1，操作：%2，异常类型：%3，异常错误：%4，异常消息：%5|内部错误。 服务启动失败。|如果此错误仍然存在，请联系支持人员。|
@@ -109,7 +110,7 @@ ms.locfileid: "60552688"
    |57|捕获计算机快照以进行故障排除。|正在收集调查包（也称为取证包）。|正常操作通知;无需任何操作。|
    |59|启动命令：%1|开始执行响应命令。|正常操作通知;无需任何操作。|
    |60|未能运行命令 %1，错误：%2。|未能执行响应命令。|如果此错误仍然存在，请联系支持人员。|
-   |61|数据收集命令参数无效：SasUri：%1，compressionLevel：%2。|未能读取或分析数据集合命令参数， (无效) 。|如果此错误仍然存在，请联系支持人员。|
+   |61|数据收集命令参数无效：SasUri：%1，compressionLevel：%2。|无法读取或分析数据集合命令参数， (无效) 。|如果此错误仍然存在，请联系支持人员。|
    |62|无法启动连接用户体验和遥测服务。 失败代码：%1|连接用户体验和遥测 (diagtrack) 服务无法启动。 不会从此计算机发送非 Microsoft Defender for Endpoint 遥测。|在事件日志中查找更多疑难解答提示：Microsoft-Windows-UniversalTelemetryClient/Operational。|
    |63|更新外部服务的启动类型。 名称：%1，实际开始类型：%2，预期开始类型：%3，退出代码：%4|更新了外部服务的启动类型。|正常操作通知;无需任何操作。|
    |64|启动已停止的外部服务。 名称：%1，退出代码：%2|启动外部服务。|正常操作通知;无需任何操作。|
@@ -124,7 +125,7 @@ ms.locfileid: "60552688"
    |74|注册表中的设备标记超出长度限制。 标记名称：%2。 长度限制：%1。|设备标记超出长度限制。|使用较短的设备标记。|
    |81|未能为终结点 ETW 自动记录器创建 Microsoft Defender。 失败代码：%1|未能创建 ETW 会话。|重新启动设备。 如果此错误仍然存在，请联系支持人员。|
    |82|未能删除适用于 Endpoint ETW 自动记录器 Microsoft Defender。 失败代码：%1|未能删除 ETW 会话。|联系支持人员。|
-   |84|设置Windows Defender 防病毒模式。 强制被动模式：%1，结果代码：%2。|将 defender 运行模式设置为 (主动或被动) 。|正常操作通知;无需任何操作。|
+   |84|设置Windows Defender 防病毒模式。 强制被动模式：%1，结果代码：%2。|将 defender 运行模式设置为 (或被动) 。|正常操作通知;无需任何操作。|
    |85|未能触发 Microsoft Defender for Endpoint 可执行文件。 失败代码：%1|Starring SenseIR 可执行文件失败。|重新启动设备。 如果此错误仍然存在，请联系支持人员。|
    |86|再次启动已停止应启动的外部服务。 名称：%1，退出代码：%2|再次启动外部服务。|正常操作通知;无需任何操作。|
    |87|无法启动外部服务。 名称：%1|无法启动外部服务。|联系支持人员。|

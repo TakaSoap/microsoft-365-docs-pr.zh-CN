@@ -17,21 +17,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5d5f0e7ec66deabcc037d529676fadabd9999729
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 02b4d16e6ef99f6f3827d2879cd6d26aeb887112
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804937"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61169022"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>从 MSSP 客户租户提取警报
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 > [!NOTE]
 > 此操作由 MSSP 执行。
@@ -61,7 +61,7 @@ ms.locfileid: "60804937"
 
 4. 指定以下值：
 
-    - 名称 \<Tenant_name\> ：SIEM MSSP 连接器 (租户Tenant_name替换为租户显示名称) 
+    - 名称 \<Tenant_name\> ：SIEM MSSP 连接器 (将Tenant_name替换为租户显示名称) 
 
     - 支持的帐户类型：仅此组织目录中的帐户
     - 重定向 URI：选择"Web"，然后 `https://<domain_name>/SiemMsspConnector` ("<domain_name>租户名称") 
@@ -83,7 +83,7 @@ ms.locfileid: "60804937"
 
 ### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>步骤 2：从客户的租户获取访问和刷新令牌
 
-本部分指导你如何使用 PowerShell 脚本从客户的租户获取令牌。 此脚本使用上一步中的应用程序，使用 OAuth 授权代码和刷新令牌Flow。
+本部分指导你如何使用 PowerShell 脚本从客户的租户获取令牌。 此脚本使用上一步中的应用程序，使用 OAuth 授权代码令牌获取访问令牌和Flow。
 
 提供凭据后，你需要同意应用程序，以便应用程序在客户的租户中预配。
 
@@ -94,7 +94,7 @@ ms.locfileid: "60804937"
     > [!NOTE]
     > 在行 30 中，将 `authorzationUrl` 替换为 `authorizationUrl` 。
 
-3. 创建包含以下内容的文件，并将其与文件夹中 `MsspTokensAcquisition.ps1` 的名称一起保存：
+3. 创建包含以下内容的文件，并将其与文件夹中的名称 `MsspTokensAcquisition.ps1` 一起保存：
 
     ```powershell
     param (
@@ -148,17 +148,17 @@ ms.locfileid: "60804937"
 
 6. 输入以下命令： `.\MsspTokensAcquisition.ps1 -clientId <client_id> -secret <app_key> -tenantId <customer_tenant_id>`
 
-    - 将 \<client_id\> 替换为 **上一 ()** 应用程序客户端客户端 ID。
+    - 将 \<client_id\> 替换为 **上一 ()** 应用程序客户端 ID。
     - 将 \<app_key\> 替换为在上一步中创建的客户端密码。
     - 将 \<customer_tenant_id\> 替换为客户的租户 **ID。**
 
 7. 你将被要求提供你的凭据和同意。 忽略页面重定向。
 
-8. 在 PowerShell 窗口中，您将收到访问令牌和刷新令牌。 保存刷新令牌以配置 SIEM 连接器。
+8. 在 PowerShell 窗口中，你将收到访问令牌和刷新令牌。 保存刷新令牌以配置 SIEM 连接器。
 
 ### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>步骤 3：允许应用程序Microsoft 365 Defender
 
-你需要允许在应用程序中创建的应用程序Microsoft 365 Defender。
+你需要允许你在应用程序中创建的应用程序Microsoft 365 Defender。
 
 你需要具有管理门户 **系统设置权限** 才能允许应用程序。 否则，你将需要请求客户允许应用。
 

@@ -1,6 +1,6 @@
 ---
 title: Linux 上的 Microsoft Defender for Endpoint 的隐私
-description: 隐私控制，如何配置影响隐私的策略设置，以及 Linux 上的 Microsoft Defender for Endpoint 中收集的诊断数据信息。
+description: 隐私控制，如何配置影响隐私的策略设置和有关在 Linux 上的 Microsoft Defender for Endpoint 中收集的诊断数据的信息。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 隐私， 诊断
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,26 +14,26 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1c15e5ba5b48380e20ddfd6c291df5c5afafa251
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d2da0f15b392da9a461c8a2e50e7110610fcc5a2
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191751"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168890"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的隐私
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-Microsoft 致力于提供你在 Linux 上使用 Defender for Endpoint 时，选择收集和使用数据方式时需要的信息和控件。
+Microsoft 致力于提供你选择在 Linux 上使用 Defender for Endpoint 时如何收集和使用数据时需要的信息和控件。
 
-本主题介绍产品内可用的隐私控件、如何使用策略设置管理这些控件，以及所收集的数据事件的更多详细信息。
+本文介绍了产品内可用的隐私控件、如何使用策略设置管理这些控件，以及所收集的数据事件的更多详细信息。
 
 ## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 中的隐私控件概述
 
@@ -43,7 +43,7 @@ Microsoft 致力于提供你在 Linux 上使用 Defender for Endpoint 时，选�
 
 诊断数据用于使 Defender for Endpoint 保持安全和最新，检测、诊断和修复问题，并改进产品。
 
-某些诊断数据是必需的，而某些诊断数据是可选的。 我们允许你选择是否通过使用隐私控件（如组织的策略设置）向我们发送必需或可选的诊断数据。
+某些诊断数据是必需的，而某些诊断数据是可选的。 我们让你能够选择是使用隐私控制向我们发送必需诊断数据还是可选诊断数据，例如组织的策略设置。
 
 对于 Defender for Endpoint 客户端软件，有两个级别的诊断数据可供选择：
 
@@ -65,14 +65,14 @@ Microsoft 致力于提供你在 Linux 上使用 Defender for Endpoint 时，选�
 有三个级别用于控制示例提交：
 
 - **无**：不会向 Microsoft 提交任何可疑样本。
-- **保险箱：** 只有不包含个人身份信息或个人身份信息的可疑 (将自动) 提交。 这是此设置的默认值。
+- **保险箱：** 仅自动提交不包含个人身份信息和个人身份信息 () 样本。 此值为默认值。
 - **全部**：所有可疑示例都提交到 Microsoft。
 
 ## <a name="manage-privacy-controls-with-policy-settings"></a>通过策略设置管理隐私控件
 
 如果您是 IT 管理员，您可能希望在企业级别配置这些控件。
 
-The privacy controls for the various types of data described in the preceding section are described in [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
+The privacy controls for the various types of data that is described in the preceding section are described in [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
 
 与任何新策略设置一样，应在受限的受控环境中仔细测试它们，以确保在组织中更广泛地实现策略设置之前，所配置的设置具有所需的效果。
 
@@ -109,7 +109,7 @@ The privacy controls for the various types of data described in the preceding se
 
 **Microsoft Defender for Endpoint 安装/卸载**：
 
-将会收集以下字段：
+收集以下字段：
 
 |字段|说明|
 |---|---|
@@ -143,7 +143,7 @@ The privacy controls for the various types of data described in the preceding se
 
 **安全智能更新报告**：
 
-将会收集以下字段：
+收集以下字段：
 
 |字段|说明|
 |---|---|
@@ -186,7 +186,7 @@ The privacy controls for the various types of data described in the preceding se
 
 如果你选择向我们发送可选诊断数据，则还需要包括必需的诊断数据。
 
-可选诊断数据的示例包括 Microsoft 收集有关产品配置 (例如，在设备) 上设置的排除数以及产品性能 (聚合了有关产品配置组件性能) 。
+可选诊断数据的示例包括 Microsoft 收集有关产品配置的数据 (例如设备) 上设置的排除项数 (以及有关产品) 组件性能的聚合度量。
 
 #### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>可选诊断数据的软件安装和清单数据事件
 
@@ -232,13 +232,13 @@ The privacy controls for the various types of data described in the preceding se
 |字段|说明|
 |---|---|
 |sha256|支持日志的 SHA256 标识符。|
-|大小|支持日志的大小。|
-|original_path|始终 (在 */var/opt/microsoft/mdatp/wdavdiag/)* 下的支持日志路径。|
+|size|支持日志的大小。|
+|original_path|始终在 */var/opt/microsoft/mdatp/wdavdiag/ (下的支持日志*) 。|
 |format|支持日志的格式。|
 
 #### <a name="diagnostic-log-upload-completed-report"></a>诊断日志上载已完成报告
 
-将会收集以下字段：
+收集以下字段：
 
 |字段|说明|
 |---|---|
@@ -254,7 +254,7 @@ The privacy controls for the various types of data described in the preceding se
 
 **内核扩展统计信息**：
 
-将会收集以下字段：
+收集以下字段：
 
 |字段|说明|
 |---|---|

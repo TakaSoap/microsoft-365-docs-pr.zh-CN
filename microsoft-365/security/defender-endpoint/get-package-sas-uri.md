@@ -16,20 +16,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b18d62b7fe5279c7655144c228fe155e36b89007
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9201e4fff677d166f126baf14e2f75d98c9e6eea
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212949"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167294"
 ---
 # <a name="get-package-sas-uri-api"></a>获取程序包 SAS URI API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：** 
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -60,7 +62,7 @@ Application|"Machine.ReadWrite.All|"读取和写入所有计算机信息"
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 用户需要具有对设备的访问权限，根据设备组设置 (创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -80,7 +82,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 200 正常响应代码，该对象在"value"参数中保存指向包的链接。 此链接的有效时间非常短，应该立即用于将程序包下载到本地存储。 如果集合计算机操作存在，但无法完成，则返回"404 未找到"。
+如果成功，此方法返回 200 正常响应代码，该对象在"value"参数中保存指向包的链接。 此链接的有效时间非常短，应该立即用于将程序包下载到本地存储。 如果集合计算机操作存在，但无法完成，则返回 404 未找到。
 
 ## <a name="example"></a>示例
 

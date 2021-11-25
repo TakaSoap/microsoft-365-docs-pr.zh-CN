@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26a8761b8df141626cf7fcffaeb18e2a32bae69a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ad99fe597a9c445d1c7d0dcd07b1dcd19a5ac7d5
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206955"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170561"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的性能问题
 
@@ -31,14 +31,15 @@ ms.locfileid: "60206955"
 **适用于：**
 
 - [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 本主题提供了一些常规步骤，可用于缩小与 macOS 上的 Microsoft Defender for Endpoint 相关的性能问题。
 
-RTP (实时) 是 macOS 上 Microsoft Defender for Endpoint 的一项功能，可持续监视和保护设备免受威胁。 它包含文件和进程监视以及其他启发。
+RTP (RTP) 是 macOS 上 Microsoft Defender for Endpoint 的一项功能，可持续监视和保护设备免受威胁。 它包含文件和进程监视以及其他启发。
 
 根据正在运行的应用程序和设备特征，在 macOS 上运行 Microsoft Defender for Endpoint 时可能会遇到性能不优化的问题。 特别是，在短时间内访问许多资源的应用程序或系统进程可能会导致 macOS 上的 Microsoft Defender for Endpoint 中的性能问题。
 
@@ -97,7 +98,7 @@ RTP (实时) 是 macOS 上 Microsoft Defender for Endpoint 的一项功能，可
       ```
 
       > [!NOTE]
-      > Using **--output json** (note the double dash) ensures that the output format is ready for parsing.
+      > 使用 **--output json** (请注意双) 短划线可确保输出格式已准备好进行分析。
       此命令的输出将显示所有进程及其关联的扫描活动。
 
 4. 在 Mac 系统上，使用 命令下载 python high_cpu_parser.py 示例：
@@ -130,7 +131,7 @@ RTP (实时) 是 macOS 上 Microsoft Defender for Endpoint 的一项功能，可
         cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
       ```
 
-      以上输出是性能问题的主要参与者的列表。 第一列是 PID (进程) ，第二列是进程名称，最后一列是扫描的文件数，按影响排序。
+      以上输出是性能问题的主要参与者的列表。 第一列是 PID (的进程标识符) ，第二列是 te 进程名称，最后一列是扫描的文件数，按影响排序。
 
       例如，该命令的输出如下所示：
 

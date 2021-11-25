@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9620fd5209bb72617cf41b6b9aff48f39d607b61
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: d6ead5c1c23facbab1e80c29cac664ef50a6e8a0
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61144983"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168902"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -29,7 +29,7 @@ ms.locfileid: "61144983"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
@@ -66,7 +66,7 @@ ms.locfileid: "61144983"
 
 #### <a name="enable--disable-real-time-protection"></a>启用/禁用实时保护
 
-确定是否启用实时保护 (扫描文件时是否) 这些文件。
+确定是否在启用实时 (时扫描) 文件。
 
 <br>
 
@@ -75,7 +75,7 @@ ms.locfileid: "61144983"
 |说明|值|
 |---|---|
 |**键**|enableRealTimeProtection|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认)  <p> false|
 |
 
@@ -144,7 +144,7 @@ ms.locfileid: "61144983"
 |说明|值|
 |---|---|
 |**键**|scanArchives|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|true (默认)  <p> false|
 |**Comments**|适用于终结点版本 101.45.00 或更高版本的 Microsoft Defender 中可用。|
 |||
@@ -185,7 +185,7 @@ ms.locfileid: "61144983"
 #### <a name="scan-exclusions"></a>扫描排除项
 
 从扫描中排除的实体。 排除项可以通过完整路径、扩展名或文件名指定。
- (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量的元素) 
+ (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量的元素。) 
 
 <br>
 
@@ -229,7 +229,7 @@ ms.locfileid: "61144983"
 |**Comments**|仅在 *排除$type**时适用*|
 |
 
-##### <a name="path-type-file--directory"></a>文件 (目录的路径) 
+##### <a name="path-type-file--directory"></a>路径类型 (文件/目录) 
 
 指示 path *属性* 是否引用文件或目录。
 
@@ -240,7 +240,7 @@ ms.locfileid: "61144983"
 |说明|值|
 |---|---|
 |**键**|isDirectory|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|仅在 *排除$type**时适用*|
 |
@@ -274,12 +274,12 @@ ms.locfileid: "61144983"
 |**键**|name|
 |**数据类型**|String|
 |**可能的值**|任何字符串|
-|**Comments**|仅在排除 *$type FileName 时适用*|
+|**Comments**|仅在 *排除**$type FileName 时适用*|
 |
 
 #### <a name="allowed-threats"></a>允许的威胁
 
-威胁列表 (名称) 产品未阻止但允许运行的威胁列表。
+威胁列表 (名称标识) 产品未阻止但允许运行的威胁列表。
 
 <br>
 
@@ -358,7 +358,7 @@ ms.locfileid: "61144983"
 
 #### <a name="threat-type-settings-merge-policy"></a>威胁类型设置合并策略
 
-指定威胁类型设置的合并策略。 它可以是管理员定义的设置和用户定义的设置 () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
+指定威胁类型设置的合并策略。 这可以是管理员定义的设置和用户定义的设置的组合， () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
 
 <br>
 
@@ -372,7 +372,7 @@ ms.locfileid: "61144983"
 |**Comments**|适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。|
 |
 
-#### <a name="antivirus-scan-history-retention-in-days"></a>防病毒扫描历史记录保留时间 (天数) 
+#### <a name="antivirus-scan-history-retention-in-days"></a>防病毒扫描历史记录保留 (天数) 
 
 指定结果在设备的扫描历史记录中保留的天数。 旧扫描结果将从历史记录中删除。 也从磁盘中删除的旧隔离文件。
 
@@ -451,10 +451,10 @@ ms.locfileid: "61144983"
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>启用/禁用自动示例提交
 
-确定是否将 (可能包含威胁的可疑) 发送给 Microsoft。 有三个级别用于控制示例提交：
+确定是否将 (威胁威胁的可疑) 发送给 Microsoft。 有三个级别用于控制示例提交：
 
 - **无**：不会向 Microsoft 提交任何可疑样本。
-- **保险箱：** 仅自动提交不包含个人身份信息或个人身份 (的) 样本。 这是此设置的默认值。
+- **保险箱：** 只有不包含个人身份信息或个人身份信息的可疑 (将自动) 提交。 这是此设置的默认值。
 - **全部**：所有可疑示例都提交到 Microsoft。
 
 <br>
@@ -620,4 +620,4 @@ python -m json.tool mdatp_managed.json
 
 ## <a name="configuration-profile-deployment"></a>配置文件部署
 
-为企业生成配置文件后，可以通过企业使用的管理工具进行部署。 Linux 上的终结点的 Defender 从 */etc/opt/microsoft/mdatp/managed/mdatp_managed.json 文件读取托管* 配置。
+为企业生成配置文件后，可以通过企业使用的管理工具进行部署。 Linux 上的 Defender for Endpoint 从 */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* 文件中读取托管配置。

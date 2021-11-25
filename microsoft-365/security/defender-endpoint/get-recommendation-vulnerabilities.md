@@ -16,18 +16,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fb60dcf41a0190b92525cfaac2b5f7d5e39e128f
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ee1b99ceae87cdb6542e06ea7ee22c52db23ee96
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111167"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168604"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>按建议列出漏洞
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：** 
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
@@ -45,7 +46,7 @@ ms.locfileid: "61111167"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Vulnerability.Read.All|"读取威胁和漏洞管理安全建议信息"
+Application|Vulnerability.Read.All|"读取威胁和漏洞管理安全建议信息"
 委派（工作或学校帐户）|Vulnerability.Read|"读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求

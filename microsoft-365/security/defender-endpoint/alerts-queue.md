@@ -15,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 39c456b3f7ad31181d47318570176710840ad8b2
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: b4606eb25f2cea9c18db8c13beba0e107d0e7950
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587977"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167018"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>查看并组织 Microsoft Defender for Endpoint 警报队列
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-alertsq-abovefoldlink)。
 
@@ -54,24 +54,24 @@ ms.locfileid: "60587977"
 
 ### <a name="severity"></a>Severity
 
-警报严重性|说明
+警报严重性|Description
 ---|---
 高 <br>  (红色) |通常看到的与 APT 高级永久性威胁 (警报) 。 这些警报表明存在高风险，因为它们可能会损坏设备的严重性。 例如：凭据盗窃工具活动、未与任何组关联的勒索软件活动、篡改安全传感器或任何恶意活动，这些活动会指示人类对手。
-中 <br>  (橙色) |终结点检测和响应泄露后行为的警报，这些行为可能是 APT 高级永久性威胁 (的) 。 这包括观察到的攻击阶段的典型行为、异常注册表更改、执行可疑文件等。 尽管其中一些可能是内部安全测试的一部分，但它需要进行调查，因为它也可能属于高级攻击。
+Medium <br>  (橙色) |终结点检测和响应泄露后行为的警报，这些行为可能是 APT 高级永久性威胁 (的) 。 这包括观察到的攻击阶段的典型行为、异常注册表更改、执行可疑文件等。 尽管其中一些可能是内部安全测试的一部分，但它需要进行调查，因为它也可能属于高级攻击。
 低 <br>  (黄色) |与流行恶意软件相关的威胁警报。 例如，黑客工具、非恶意软件黑客工具（如运行探索命令、清除日志等）通常不会指示面向组织的高级威胁。 它还可能来自组织中用户隔离的安全工具测试。
 信息 <br>  (灰色) |可能被视为对网络有害的警报，但可以提升组织对潜在安全问题的安全意识。
 
 #### <a name="understanding-alert-severity"></a>了解警报严重性
 
-Microsoft Defender 防病毒 (Microsoft Defender AV) 和 Defender for Endpoint 警报严重性是不同的，因为它们表示不同的范围。
+Microsoft Defender 防病毒 (Microsoft Defender AV) 和 Defender for Endpoint 警报严重性不同，因为它们表示不同的范围。
 
-威胁Microsoft Defender 防病毒威胁严重性表示检测到的威胁 (恶意软件) 的绝对严重性，并基于单个设备的潜在风险（如果受感染）进行分配。
+威胁Microsoft Defender 防病毒威胁严重性表示检测到的威胁 (恶意软件) 的绝对严重性，如果受感染，则根据单个设备的潜在风险进行分配。
 
 Defender for Endpoint 警报严重性表示检测到的行为的严重性，即设备的实际风险，但更重要的是对组织带来潜在风险。
 
 例如：
 
-- 有关检测到的已完全阻止Microsoft Defender 防病毒未感染设备的已检测到威胁的 Defender for Endpoint 警报的严重性被归类为"信息"，因为没有实际损害。
+- 针对终结点的 Defender 警报严重性Microsoft Defender 防病毒检测到的、已完全阻止且未感染设备的威胁被归类为"信息"，因为没有实际损害。
 - 有关商业恶意软件的警报在执行时被检测到，但被 Microsoft Defender AV 阻止和修复，被分类为"低"，因为它可能给单个设备造成一些损坏，但不构成组织威胁。
 - 有关在执行时检测到的恶意软件的警报，不仅会对单个设备造成威胁，而且会对组织造成威胁，无论最终是否被阻止，都将被排名为"中"或"高"。
 - 根据相同的组织威胁注意事项，未阻止或修正的可疑行为警报将被排名为"低"、"中"或"高"。
@@ -88,14 +88,14 @@ Defender for Endpoint 警报严重性表示检测到的行为的严重性，即�
 |命令和控件|CommandAndControl|连接到攻击者控制的网络基础结构以中继数据或接收命令。|
 |凭据访问|CredentialAccess|获取有效凭据以扩展对网络中设备和其他资源的控制。|
 |防御者|DefenseEvasion|例如，通过关闭安全应用、删除芯片和运行 rootkit 来避免安全控制。|
-|Discovery|Discovery|收集有关重要设备和资源（如管理员计算机、域控制器和文件服务器）的信息。|
+|发现|发现|收集有关重要设备和资源（如管理员计算机、域控制器和文件服务器）的信息。|
 |执行|执行|启动攻击者工具和恶意代码，包括 RAT 和后门。|
 |外泄|外泄|将数据从网络提取到外部攻击者控制的位置。|
 |攻击|攻击|攻击代码和可能的利用活动。|
 |初始访问|InitialAccess|获取目标网络的初始条目，通常涉及密码猜测、攻击或钓鱼电子邮件。|
 |横向移动|LateralMovement|在目标网络中设备之间移动以到达关键资源或获得网络持久性。|
 |恶意软件|恶意软件|后门、特洛伊木马和其他类型的恶意代码。|
-|持久性|持久性|创建自动启动扩展点 (ASP) 保持活动状态，并保存系统重新启动。|
+|持久性|持久性|创建自动启动扩展点 (ASP) 保持活动状态并保存系统重新启动。|
 |特权提升|PrivilegeEscalation|在特权进程或帐户上下文中运行代码，以获取更高的代码权限级别。|
 |勒索软件|勒索软件|加密文件和扩展付款以还原访问权限的恶意软件。|
 |可疑活动|SuspiciousActivity|可能是恶意软件活动或攻击一部分的非典型活动。|
@@ -115,7 +115,7 @@ Defender for Endpoint 警报严重性表示检测到的行为的严重性，即�
 
 ### <a name="assigned-to"></a>分配到
 
-可以选择显示分配给你的警报还是自动显示。
+你可以选择显示分配给你的警报还是自动显示。
 
 ### <a name="detection-source"></a>检测源
 

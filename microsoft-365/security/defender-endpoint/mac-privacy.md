@@ -15,19 +15,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d9ad9b3bfe8aec36a3fdf7db456ed6383c586176
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12ca6e57fdbb8e2e197d3f57d07ec70694748a48
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168322"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170970"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上适用于终结点的 Microsoft Defender 的隐私
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -72,7 +73,7 @@ Microsoft Defender for Endpoint 客户端软件有两个级别的诊断数据可
 
 The privacy controls for the various types of data described in the preceding section are described in [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).
 
-与任何新的策略设置一样，应在受限的受控环境中仔细测试它们，以确保在组织中更广泛地实现策略设置之前，所配置的设置具有所需的效果。
+与任何新策略设置一样，应在受限的受控环境中仔细测试它们，以确保在组织中更广泛地实现策略设置之前，所配置的设置具有所需的效果。
 
 ## <a name="diagnostic-data-events"></a>诊断数据事件
 
@@ -99,7 +100,7 @@ The privacy controls for the various types of data described in the preceding se
 
 ### <a name="required-diagnostic-data"></a>必需诊断数据
 
-**必需的诊断** 数据是帮助使 Microsoft Defender for Endpoint 保持安全、最新，并按预期在安装它的设备上执行所需的最少数据。
+**必需诊断** 数据是帮助使 Microsoft Defender for Endpoint 保持安全、最新，并按预期在安装它的设备上执行所需的最少数据。
 
 必需的诊断数据有助于识别与设备或软件配置相关的 Microsoft Defender for Endpoint 问题。 例如，它可以帮助确定 Microsoft Defender for Endpoint 功能在特定操作系统版本上崩溃的频率是否更频繁、是否具有新引入的功能，或者何时禁用某些 Microsoft Defender for Endpoint 功能。 必需的诊断数据可帮助 Microsoft 更快速地检测、诊断和修复这些问题，以便降低对用户或组织的影响。
 
@@ -107,7 +108,7 @@ The privacy controls for the various types of data described in the preceding se
 
 **Microsoft Defender for Endpoint 安装/卸载**：
 
-将会收集以下字段：
+收集以下字段：
 
 |字段|说明|
 |---|---|
@@ -141,7 +142,7 @@ The privacy controls for the various types of data described in the preceding se
 
 **安全智能更新报告**：
 
-将会收集以下字段：
+收集以下字段：
 
 |字段|说明|
 |---|---|
@@ -158,7 +159,7 @@ The privacy controls for the various types of data described in the preceding se
 
 在应用程序意外退出时收集系统信息和应用程序的状态。
 
-将会收集以下字段：
+收集以下字段：
 
 |字段|说明|
 |---|---|
@@ -198,7 +199,7 @@ The privacy controls for the various types of data described in the preceding se
 
 如果你选择向我们发送可选诊断数据，则还需要包括必需的诊断数据。
 
-可选诊断数据的示例包括 Microsoft 收集有关产品配置的数据 (例如设备) 上设置的排除数 (以及有关产品) 组件性能的聚合度量。
+可选诊断数据的示例包括 Microsoft 收集有关产品配置的数据 (例如设备) 上设置的排除项数 (以及有关产品) 组件性能的聚合度量。
 
 #### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>可选诊断数据的软件安装和清单数据事件
 
@@ -244,13 +245,13 @@ The privacy controls for the various types of data described in the preceding se
 |字段|说明|
 |---|---|
 |sha256|支持日志的 SHA256 标识符。|
-|大小|支持日志的大小。|
+|size|支持日志的大小。|
 |original_path|支持日志路径始终 (*/Library/Application Support/Microsoft/Defender/wdavdiag/) 。*|
 |format|支持日志的格式。|
 
 #### <a name="diagnostic-log-upload-completed-report"></a>诊断日志上载已完成报告
 
-将会收集以下字段：
+收集以下字段：
 
 |字段|说明|
 |---|---|
@@ -266,7 +267,7 @@ The privacy controls for the various types of data described in the preceding se
 
 **内核扩展统计信息**：
 
-将会收集以下字段：
+收集以下字段：
 
 |字段|说明|
 |---|---|

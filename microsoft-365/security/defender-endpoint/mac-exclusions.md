@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d779ee570e310a2d8a07154d73fe353db8bce907
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dcc4faa8289ad1a51345407442d866ddb0f8000b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207879"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167210"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上配置和验证适用于终结点的 Microsoft Defender 的排除项
 
@@ -29,7 +29,8 @@ ms.locfileid: "60207879"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
@@ -55,13 +56,13 @@ ms.locfileid: "60207879"
 文件扩展名|计算机上任意位置具有扩展名的所有文件|`.test`
 文件|由完整路径标识的特定文件|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
 Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
-流程|由 (的完整路径或文件名指定的特定进程) 及其打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`
+流程|由 (的完整路径或文件名指定的特定) 及其打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`
 
 文件、文件夹和进程排除项支持以下通配符：
 
 通配符|说明|示例|匹配|不匹配
 ---|---|---|---|---
-\*|匹配任意数目的任何字符，包括无字符 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+\*|匹配任意数目的任何字符，包括无 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
 ?|匹配任何单个字符|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
 > [!NOTE]

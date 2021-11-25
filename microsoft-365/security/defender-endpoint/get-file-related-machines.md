@@ -16,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3f8a30dc09ab3bfd18b5d65335788a18984e1574
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f50864609ff5143181fa6dd12093d3c82f82955a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213669"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168638"
 ---
 # <a name="get-file-related-machines-api"></a>获取与文件相关的计算机 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
@@ -44,7 +44,7 @@ ms.locfileid: "60213669"
 ## <a name="limitations"></a>限制
 
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
-2. 只有 SHA-1 哈希函数 (MD5 或 SHA-256 哈希) 。
+2. 只有 SHA-1 哈希函数 (MD5 或 SHA-256) 。
 
 ## <a name="permissions"></a>权限
 
@@ -61,7 +61,7 @@ Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
+> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -73,7 +73,7 @@ GET /api/files/{id}/machines
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

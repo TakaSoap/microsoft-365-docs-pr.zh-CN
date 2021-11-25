@@ -14,19 +14,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 59f59ac097cf2c2be3116f67abb4316d17a9ef97
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 79c637f815ad4f31dd611d6ba05ca566806f71db
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556360"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167258"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>成为 Microsoft Defender for Endpoint 合作伙伴
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -57,12 +58,12 @@ Microsoft Defender for Endpoint 支持使用嵌入在 Microsoft Defender [](part
 2. 要显示的产品的名称。
 3. 提供 15 字的产品说明。
 4. 链接到客户完成集成或博客文章的登陆页面，该集成或博客文章将为客户提供足够的信息。 营销和工程团队应审阅任何新闻稿，包括 Microsoft Defender for Endpoint 产品名称。 等待至少 10 天，待审阅过程完成。
-5. 如果使用多租户租户Azure AD，我们将需要Azure AD应用程序名称来跟踪应用程序的使用情况。
-6. 在User-Agent Microsoft Defender for Endpoint 公共 API 集或安全中心 API 的每个 API 调用Graph字段。 这将用于统计目的、疑难解答和合作伙伴识别。 此外，此步骤是 Microsoft Intelligent Security Association (MISA) 。
+5. 如果使用多租户Azure AD方法，我们将需要Azure AD应用程序名称来跟踪应用程序的使用情况。
+6. 在每个 API 调用User-Agent Microsoft Defender for Endpoint 公共 API 集或安全Graph字段。 这将用于统计目的、疑难解答和合作伙伴识别。 此外，此步骤是 Microsoft Intelligent Security Association (MISA) 的要求。
 
-   请按以下步骤操作：
+   请按照下列步骤操作：
 
-   - 将User-Agent HTTP 请求标头中的字段设置为以下格式。
+   - 将User-Agent HTTP 请求标头中的"请求"字段设置为以下格式。
 
      ```http
      MdePartner-{CompanyName}-{ProductName}/{Version}

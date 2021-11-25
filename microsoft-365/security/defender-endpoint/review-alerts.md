@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: d6265ec92e8827fd6b581dabba38c0d1e0275b24
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5ea3ffa3f326c8a38c6f8fe52a20ebf872474d56
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699193"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166706"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>查看 Microsoft Defender for Endpoint 中的警报
 
@@ -30,13 +30,13 @@ ms.locfileid: "60699193"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)。
 
 Microsoft Defender for Endpoint 中的警报页面通过组合与所选警报相关的攻击信号和警报，为警报提供完整的上下文，以构建详细的警报情景。
 
-对影响组织的警报快速会审、调查和采取有效操作。 了解触发它们的原因，及其从一个位置的影响。 有关详细信息，请在此概述中了解。
+对影响组织的警报快速会审、调查和采取有效措施。 了解触发它们的原因，及其从一个位置的影响。 有关详细信息，请在此概述中了解。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4yiO5]
 
@@ -46,7 +46,7 @@ Microsoft Defender for Endpoint 中的警报页面通过组合与所选警报相
 
 1. **警报标题** 显示警报的名称，并提醒你哪个警报启动了当前调查，无论你在页面上选择了什么内容。
 2. [**受影响的资产**](#review-affected-assets) 列出了受此警报影响的设备和用户的卡片，可单击这些卡片了解详细信息和操作。
-3. 警报 **情景** 通过树视图显示与警报相关的所有实体。 当你第一次登录所选警报的页面时，标题中的警报将是焦点。 警报情景中的实体可展开且可单击，通过允许您在警报页面上下文中立即采取措施来提供其他信息并加快响应速度。 使用警报情景开始调查。 在调查 [Microsoft Defender for Endpoint 中的警报中了解如何](/microsoft-365/security/defender-endpoint/investigate-alerts)操作。
+3. 警报 **情景** 通过树视图显示与警报相关的所有实体。 当你首次登录所选警报的页面时，标题中的警报将是焦点。 警报情景中的实体可展开且可单击，通过允许您在警报页面上下文中立即采取措施来提供其他信息并加快响应速度。 使用警报情景开始调查。 在调查 [Microsoft Defender for Endpoint 中的警报中了解如何](/microsoft-365/security/defender-endpoint/investigate-alerts)操作。
 4. 详细信息 **窗格** 将首先显示所选警报的详细信息，以及与此警报相关的详细信息和操作。 如果在警报情景中选择任何受影响的资产或实体，详细信息窗格将更改为提供所选对象的上下文信息和操作。
 
 记下警报的检测状态。

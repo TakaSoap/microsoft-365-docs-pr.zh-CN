@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: da2f7b17725c7acb54b50a6280492e8f45fa6215
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 81e96d8846d507a7b763d79f419695b835ea6cbc
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208645"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167594"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender for Endpoint API - Hello World
 
@@ -30,10 +30,11 @@ ms.locfileid: "60208645"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+>希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -51,13 +52,13 @@ ms.locfileid: "60208645"
 
 ### <a name="do-i-need-a-permission-to-connect"></a>是否需要连接权限？
 
-对于应用程序注册阶段，你必须在 Azure  AD 租户Azure Active Directory (全局) 角色。
+对于应用程序注册阶段，你必须在租户 **中** 拥有全局Azure Active Directory (Azure AD) 角色。
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>步骤 1 - 在 Azure Active Directory
 
 1. 使用全局管理员 **用户登录到** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory** \> **应用注册** \> **""新注册"。**
+2. 导航到 **Azure Active Directory** \> **应用注册** \> **新注册 。**
 
    ![应用程序注册Microsoft Azure导航的图像。](images/atp-azure-new-app2.png)
 

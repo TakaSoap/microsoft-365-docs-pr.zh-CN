@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
-ms.date: 02/02/2021
+ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: abb8bbce480312a799e6360f2f91cca8e31500a0
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 738cdd4d312de4bb7c7f74404a6905cd02c1d3f4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109859"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167390"
 ---
 # <a name="overview-of-automated-investigations"></a>自动调查概述
 
@@ -84,14 +84,14 @@ ms.locfileid: "61109859"
 
 ## <a name="requirements-for-air"></a>AIR 的要求
 
-你的组织必须具有适用于终结点的 Defender (请参阅[Microsoft Defender for Endpoint) 。](minimum-requirements.md)
+你的组织必须拥有适用于终结点的 Defender (请参阅[Microsoft Defender for Endpoint) 。](minimum-requirements.md)
 
 目前，AIR 仅支持以下操作系统版本：
 
 - Windows Server 2019
 - Windows Server 2022
 - Windows 10版本 1709 (版本 16299.1085（包含[KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
-- Windows 10版本 1803 (OS 内部版本 17134.704，) [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)或更高版本
+- Windows 10版本 1803 (OS 内部版本 17134.704（包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
 - Windows 10版本[1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019)或更高版本
 - Windows 11
 
@@ -105,4 +105,4 @@ ms.locfileid: "61109859"
 
 - [PUA 保护](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-air)
-- [Microsoft 365 Defender 中的自动调查和响应](/microsoft-365/security/defender/mtp-autoir)
+- [Microsoft 365 Defender 中的自动调查和响应](/microsoft-365/security/defender/m365d-autoir)

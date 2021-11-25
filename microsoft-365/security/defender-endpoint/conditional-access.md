@@ -16,19 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 93b547718bca2fb157c3b4e0a4b08d383ec92e4f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8ee1b1542eb2e737da509ce12ad9c2a605a4ffa5
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196989"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170503"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>启用条件访问以更好地保护用户、设备和数据
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-abovefoldlink)。
@@ -41,7 +42,7 @@ ms.locfileid: "60196989"
 
 可以通过强制执行策略来阻止应用程序运行，直到设备返回到兼容状态，来定义设备和应用程序可以运行和访问网络信息的安全条件。
 
-在 Defender for Endpoint 中实施条件访问基于 Microsoft Intune (Intune) 合规性策略，Azure Active Directory (Azure AD) 条件访问策略。
+Defender for Endpoint 中条件访问的实现基于 Intune Microsoft Intune (设备) 策略和条件Azure Active Directory (Azure AD) 策略。
 
 合规性策略与条件访问一起用于仅允许满足一个或多个设备合规性策略规则的设备访问应用程序。
 
@@ -55,7 +56,7 @@ ms.locfileid: "60196989"
 
 例如，可以将 Intune 配置为在高风险设备上应用条件访问。
 
-在 Intune 中，设备合规性策略与 Azure AD 条件访问结合使用，以阻止对应用程序的访问。 同时，启动自动调查和修正过程。
+在 Intune 中，设备合规性策略与条件Azure AD结合使用，以阻止对应用程序的访问。 同时，启动自动调查和修正过程。
 
  在进行自动调查和修正时，用户仍可以使用该设备，但在完全修复威胁之前，将阻止访问企业数据。
 
@@ -75,8 +76,8 @@ ms.locfileid: "60196989"
 
 1. 用户打开恶意文件，并且 Defender for Endpoint 将设备标志为高风险。
 2. 高风险评估将传递到 Intune。 同时，启动自动调查以修正已识别的威胁。 还可以执行手动修正来修正已识别的威胁。
-3. 根据在 Intune 中创建的策略，设备被标记为不兼容。 然后，通过 Intune 条件访问策略将评估传达给 Azure AD。 在 Azure AD 中，应用相应的策略来阻止对应用程序的访问。
-4. 已完成手动或自动调查和修正，并删除威胁。 Defender for Endpoint 发现设备上没有风险，Intune 评估设备是否合规。 Azure AD 应用允许访问应用程序的策略。
+3. 根据在 Intune 中创建的策略，设备被标记为不兼容。 然后，评估将Azure AD Intune 条件访问策略告知用户。 在Azure AD中，将应用相应的策略来阻止对应用程序的访问。
+4. 已完成手动或自动调查和修正，并删除威胁。 Defender for Endpoint 发现设备上没有风险，Intune 评估设备是否合规。 Azure AD应用允许访问应用程序的策略。
 5. 用户现在可以访问应用程序。
 
 ## <a name="related-topic"></a>相关主题

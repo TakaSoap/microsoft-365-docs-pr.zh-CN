@@ -14,12 +14,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7dccc8992d808b5f9cea2b190a9b40cdf75f3392
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 04c722e7aea4cffee34846f38d9b313a3e7f8f3a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883169"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61169058"
 ---
 # <a name="view-attack-surface-reduction-events"></a>查看攻击面减少活动
 
@@ -27,7 +27,8 @@ ms.locfileid: "60883169"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -70,7 +71,7 @@ ms.locfileid: "60883169"
 
 ### <a name="copy-the-xml-directly"></a>直接复制 XML
 
-1. 在 **事件查看器** 中键入"开始"菜单，然后打开Windows **事件查看器。**
+1. 在 **事件查看器** 中键入"开始"菜单，然后Windows **事件查看器。**
 
 2. 在左侧面板的"操作 **"下**，选择 **"创建自定义视图..."。**
 
@@ -138,12 +139,12 @@ ms.locfileid: "60883169"
 
 ## <a name="list-of-attack-surface-reduction-events"></a>攻击面减少事件列表
 
-所有攻击面减少事件都位于 **Microsoft** >应用程序和服务日志> Windows下，然后位于下表中列出的文件夹或提供程序下。
+所有攻击面减少事件都位于 **Microsoft** > 应用程序和服务日志> Windows，然后位于下表中列出的文件夹或提供程序下。
 
 可以在事件查看器中Windows这些事件：
 
 1. 打开" **开始"** 菜单并 **键入事件查看器**，然后选择 **事件查看器** 结果。
-2. 展开 **"Microsoft** >服务日志> Windows然后转到下表中的"提供程序 **/源**"下列出的文件夹。
+2. 展开 **Microsoft >** 应用程序和服务日志> Windows然后转到下表中的提供程序 **/源** 下列出的文件夹。
 3. 双击子项以查看事件。 滚动浏览事件以查找你正在查找的事件。
 
    ![使用事件查看器显示动画。](images/event-viewer.gif)
@@ -179,7 +180,7 @@ ms.locfileid: "60883169"
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |23|ROP SimExec 审核|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |24|ROP SimExec 强制|
 |漏洞保护|WER-诊断|5|CFG 阻止|
-|漏洞保护|Win32K (Operational) |260|不受信任的字体|
+|漏洞保护|Win32K (操作) |260|不受信任的字体|
 |网络保护|Windows Defender (操作) |5007|更改设置时的事件|
 |网络保护|Windows Defender (操作) |1125|在审核模式下触发网络保护时的事件|
 |网络保护|Windows Defender (操作) |1126|在阻止模式下触发网络保护时的事件|

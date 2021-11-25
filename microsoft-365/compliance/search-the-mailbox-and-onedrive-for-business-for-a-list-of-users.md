@@ -19,16 +19,16 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 使用本文中的内容搜索和脚本搜索一组OneDrive for Business邮箱和网站。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12a97cddaa26fbd6f63f9af60bcebe9105b970ec
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fdf749511cc859c0aec2ea947c3a53cb800cf8c
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197457"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170425"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用内容搜索在邮箱和 OneDrive for Business 站点中搜索用户列表
 
-安全&中心 PowerShell 提供了许多 cmdlet，可让你自动执行与电子数据展示相关的耗时任务。 目前，在 Microsoft 365 合规中心创建内容搜索以搜索大量保管人内容位置需要时间和准备工作。 创建搜索之前，必须收集每个 OneDrive for Business 网站的 URL，然后将每个邮箱和OneDrive for Business网站添加到搜索中。 在将来的版本中，此操作将更容易在 Microsoft 365 合规中心。 在此之前，您可以使用本文中的脚本自动执行此过程。 此脚本会提示您输入组织的 MySite 域 (例如，URL) 中的 **contoso、** 用户电子邮件地址列表、新内容搜索的名称以及使用的搜索 `https://contoso-my.sharepoint.com` 查询。 该脚本获取列表中每个用户的 OneDrive for Business URL，然后使用您提供的搜索查询创建并启动内容搜索，以搜索列表中的每个用户的邮箱和 OneDrive for Business 网站。
+安全&中心 PowerShell 提供了许多 cmdlet，可让你自动执行与电子数据展示相关的耗时任务。 目前，在 Microsoft 365 合规中心创建内容搜索以搜索大量保管人内容位置需要时间和准备工作。 创建搜索之前，必须收集每个 OneDrive for Business 网站的 URL，然后将每个邮箱和OneDrive for Business网站添加到搜索。 在将来的版本中，此操作将更容易在 Microsoft 365 合规中心。 在此之前，您可以使用本文中的脚本自动执行此过程。 此脚本会提示您输入您组织的"MySite"域 (例如，URL) 中的 **contoso、** 用户电子邮件地址列表、新内容搜索的名称以及使用的搜索 `https://contoso-my.sharepoint.com` 查询。 该脚本获取列表中每个用户的 OneDrive for Business URL，然后使用您提供的搜索查询创建并启动内容搜索，以搜索列表中的每个用户的邮箱和 OneDrive for Business 网站。
   
 ## <a name="permissions-and-script-information"></a>权限和脚本信息
 
@@ -36,7 +36,7 @@ ms.locfileid: "60197457"
 
 - 请确保将步骤 2 中创建的用户列表和步骤 3 中的脚本保存到同一文件夹中。 这样更易于运行脚本。
 
-- 该脚本包括最少的错误处理。 其主要用途是快速而轻松地搜索每个用户OneDrive for Business和网站。
+- 该脚本包括最少的错误处理。 其主要用途是快速轻松地搜索每个用户的OneDrive for Business网站。
 
 - 本主题中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。
 
@@ -44,7 +44,7 @@ ms.locfileid: "60197457"
 
 第一步是安装 SharePoint 命令行管理程序。 不必在此过程中使用命令行管理程序，但必须安装它，因为它包含步骤 3 中运行的脚本所需的先决条件。 这些先决条件允许脚本与 SharePoint Online 进行通信，以便获取网站OneDrive for Business URL。
   
-转到设置[SharePoint Online 命令行](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)管理程序 Windows PowerShell 环境，并执行步骤 1 和步骤 2 以安装 SharePoint Online 命令行管理程序。
+转到设置[SharePoint Online Management Shell Windows PowerShell 环境](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)，并执行步骤 1 和步骤 2 以安装 SharePoint Online 命令行管理程序。
   
 ## <a name="step-2-generate-a-list-of-users"></a>步骤 2：生成用户列表
 
@@ -64,7 +64,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   
 - **用户凭据**- 脚本将使用你的凭据访问 SharePoint Online，获取 OneDrive for Business URL 并连接到安全&中心 PowerShell。 
     
-- **MySite 域** 的名称 - MySite 域是包含组织中所有OneDrive for Business网站的域。 例如，如果 MySite 域的 URL 为 ，则当脚本提示您输入 MySite 域的名称时， **https://contoso-my.sharepoint.com**  `contoso` 您将输入 。 
+- **MySite** 域的名称 - MySite 域是包含组织中所有OneDrive for Business网站的域。 例如，如果 MySite 域的 URL 为 ，则当脚本提示您输入 MySite 域的名称时， **https://contoso-my.sharepoint.com**  `contoso` 您将输入 。 
     
 - **步骤 2 中的** 文本文件的路径名 - 在步骤 2 中创建的文本文件的路径名。 如果文本文件和脚本位于同一文件夹中，请输入文本文件的名称。 否则，输入文本文件的完整路径名。 
     
@@ -75,7 +75,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 **若要运行该脚本，请执行下列操作：**
     
-1. 将以下文本保存到Windows PowerShell脚本文件中，使用文件名后缀 .ps1;例如， `SearchEXOOD4B.ps1` 。 将文件保存到步骤 2 中保存用户列表的同一文件夹中。
+1. 将以下文本保存到Windows PowerShell脚本文件中，使用文件名后缀.ps1例如， `SearchEXOOD4B.ps1` 。 将文件保存到步骤 2 中保存用户列表的同一文件夹中。
     
   ```powershell
   # This PowerShell script will prompt you for the following information:
@@ -101,17 +101,13 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   $searchName = Read-Host "Enter the name for the new search"
   $searchQuery = Read-Host "Enter the search query you want to use"
   $emailAddresses = Get-Content $inputfile | where {$_ -ne ""}  | foreach{ $_.Trim() }
-  # Connect to Office 365
+  # Connect to Security & Compliance Center PowerShell
   if (!$s -or !$a)
   {
-      $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.compliance.protection.outlook.com/powershell-liveid" -Credential $credentials -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
-      $a = Import-PSSession $s -AllowClobber
-      if (!$s)
-      {
-          Write-Error "Could not create PowerShell session."
-          return;
-      }
+      Import-Module ExchangeOnlineManagement
+      Connect-IPPSSession
   }
+  
   # Load the SharePoint assemblies from the SharePoint Online Management Shell
   # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
   if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)

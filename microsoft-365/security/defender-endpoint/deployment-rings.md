@@ -17,19 +17,19 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2cbc3590ae6a2139fe6ea343698bcb88adf09e16
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 981e1839627bab05797ab413745b45416db053c9
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110225"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168782"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>在圈中部署 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
@@ -105,7 +105,7 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 ### <a name="windows-endpoints"></a>Windows终结点
 
-对于 Windows 和/或 Windows 服务器，可以使用 SU **) VP** (中的安全更新验证计划在修补) 之前选择多个计算机提前测试 ( (。
+对于 Windows 和/或 Windows 服务器，使用安全更新验证计划 ( (**SUVP**) 在修补) 星期二之前，选择要提前测试几台计算机。
 
 有关更多信息，请参阅：
 

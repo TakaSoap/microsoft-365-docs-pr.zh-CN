@@ -16,21 +16,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5875568c21fb9128e6d3edc8db31721f20d19b4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 231cbafc595713a66590cbddbbdee1bb7136b028
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176891"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166946"
 ---
 # <a name="find-devices-by-tag-api"></a>按标记 API 查找设备
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：** 
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -60,9 +62,9 @@ Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 响应将仅包括用户基于设备组设置有权访问的设备 (有关详细信息，请参阅创建和管理设备) [](machine-groups.md)
+> - 响应将仅包括用户基于设备组设置有权访问的设备 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 > - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 响应将仅包括用户基于设备组设置有权访问的设备 (有关详细信息，请参阅创建和管理设备) [](machine-groups.md)
+> - 响应将仅包括用户基于设备组设置有权访问的设备 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -78,9 +80,9 @@ Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-uri-parameters"></a>请求 URI 参数
 
-名称|类型|说明
+名称|类型|Description
 :---|:---|:---
-tag|String|标记名称。 **必需**。
+tag|String|标记名称。 必需。
 useStartsWithFilter|布尔值|设置为 true 时，搜索将查找标记名称以查询中的给定标记开头的所有设备。 默认值为 false。 **可选。**
 
 ## <a name="request-body"></a>请求正文

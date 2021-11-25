@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 05e9eadb9047fd4a2c8a4d01ecefc3ec2f73f9db
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 27c480a0d4c95e79619e10f8fa42efb2c268b18c
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207985"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171709"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>使用基本权限访问门户
 
@@ -27,7 +27,8 @@ ms.locfileid: "60207985"
 
 **适用于：**
 - Azure Active Directory
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-basicaccess-abovefoldlink)。
@@ -57,12 +58,12 @@ ms.locfileid: "60207985"
 
 - 连接到Azure Active Directory。 有关详细信息，请参阅[连接-MsolService。](/powershell/module/msonline/connect-msolservice)
 
-  - **完全访问权限**：具有完全访问权限的用户可以登录、查看所有系统信息并解决警报、提交文件进行深入分析以及下载载入程序包。 分配完全访问权限需要将用户添加到"安全管理员"或"全局管理员"AAD 内置角色。
+  - **完全访问权限**：具有完全访问权限的用户可以登录、查看所有系统信息并解决警报、提交文件进行深入分析以及下载载入程序包。 分配完全访问权限需要将用户添加到内置角色中的"安全管理员"或AAD全局管理员"。
   - **只读访问**：具有只读访问权限的用户可以登录、查看所有警报和相关信息。
 
     他们将不能更改警报状态、提交文件进行深入分析或执行任何状态更改操作。
 
-    分配只读访问权限需要将用户添加到"安全读者"Azure AD 内置角色。
+    分配只读访问权限需要将用户添加到"安全读者"Azure AD内置角色。
 
 使用以下步骤分配安全角色：
 
@@ -82,7 +83,7 @@ ms.locfileid: "60207985"
 
 ## <a name="assign-user-access-using-the-azure-portal"></a>使用 Azure 门户分配用户访问权限
 
-有关详细信息，请参阅将管理员和非管理员角色分配给具有此[权限Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)
+有关详细信息，请参阅将[管理员和非管理员角色](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)分配给具有Azure Active Directory。
 
 ## <a name="related-topic"></a>相关主题
 

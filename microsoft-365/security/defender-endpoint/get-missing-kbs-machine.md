@@ -16,20 +16,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fd8bb1d004259a3c3f8595b4686e5c78266495c2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b3fb1c443d8776d342e5e7937e7ca761bba9f842
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152239"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168943"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>按设备 ID 获取缺少的 KB
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：** 
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,9 +43,9 @@ ms.locfileid: "60152239"
 ```http
 GET /api/machines/{machineId}/getmissingkbs
 ```
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
-调用此 API 需要以下权限。 若要了解更多信息，包括如何选择权限，请参阅使用[Microsoft Defender for Endpoint API。](apis-intro.md)
+调用此 API 需要以下权限。 若要了解更多信息，包括如何选择权限，请参阅使用适用于终结点 API[的 Microsoft Defender。](apis-intro.md)
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
@@ -54,7 +55,7 @@ Application | Software.Read.All | "读取威胁和漏洞管理软件信息"
 
 名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

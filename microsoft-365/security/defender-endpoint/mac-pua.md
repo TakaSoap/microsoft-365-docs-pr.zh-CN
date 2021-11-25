@@ -16,19 +16,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f372835ebcdd64225f3eb3952dc6b227d1a70627
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 23838ce85603abfb213e2ae0afdcb65ee6ba2ae3
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699181"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170965"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>使用 macOS 上的 Microsoft Defender for Endpoint 检测并阻止可能不需要的应用程序
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -39,7 +40,7 @@ macOS 上的 Microsoft Defender for Endpoint (PUA) 保护功能可能不需要�
 
 这些应用程序会增加网络受到恶意软件感染的风险，导致恶意软件感染更难识别，并且可能会浪费 IT 资源来清理应用程序。
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>如何工作
 
 macOS 上的 Microsoft Defender for Endpoint 可以检测和报告 PUA 文件。 在阻止模式下配置时，PUA 文件将移动到隔离区。
 
@@ -51,7 +52,7 @@ macOS 上的 Microsoft Defender for Endpoint 可以检测和报告 PUA 文件。
 
 - **关闭**：PUA 保护已禁用。
 - **审核**：PUA 文件在产品日志中报告，但不在Microsoft 365 Defender中。 不会向用户显示任何通知，产品不会采取任何操作。
-- **Block**：PUA 文件在产品日志和发布门户中Microsoft 365 Defender报告。 用户会收到通知，产品会采取操作。
+- **阻止**：PUA 文件在产品日志和发布门户Microsoft 365 Defender报告。 用户会收到通知，产品会采取操作。
 
 > [!WARNING]
 > 默认情况下，PUA 保护在 **审核模式下配置** 。

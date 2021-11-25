@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2e133c9f924b614c8cc34c9a943895736526e6e7
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 64847494bba34be838617842481ce6016e0b803a
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668020"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171313"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上为 Microsoft Defender for Endpoint (MDM) 部署不同的移动设备管理
 
@@ -29,7 +29,8 @@ ms.locfileid: "60668020"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
@@ -45,7 +46,7 @@ ms.locfileid: "60668020"
 
 > 目前，Microsoft 正式仅支持 Intune 和 JAMF 在 macOS 上部署和管理 Microsoft Defender for Endpoint。 Microsoft 对下面提供的信息不做出明示或暗示的担保。
 
-如果你的组织使用未正式支持的移动设备管理 (MDM) 解决方案，这并不意味着无法在 macOS 上部署或运行 Microsoft Defender for Endpoint。
+如果你的组织使用未正式支持的移动设备管理 (MDM) 解决方案，这并不意味着你无法在 macOS 上部署或运行 Microsoft Defender for Endpoint。
 
 macOS 上的 Microsoft Defender for Endpoint 不依赖于任何特定于供应商的功能。 它可以与支持以下功能的任何 MDM 解决方案一同使用：
 
@@ -76,7 +77,7 @@ macOS 上的 Microsoft Defender for Endpoint 不依赖于任何特定于供应�
 
 MDM 解决方案可能称其为"自定义设置配置文件"，因为 macOS 上的 Microsoft Defender for Endpoint 不是 macOS 的一部分。
 
-使用属性列表 jamf/WindowsDefenderATPOnboarding.plist，可从从 Microsoft 365 Defender 门户下载的载入[包](mac-install-with-jamf.md)中提取。
+使用属性列表 jamf/WindowsDefenderATPOnboarding.plist，可从从 Microsoft 365 Defender 门户下载的载入[包中提取](mac-install-with-jamf.md)。
 您的系统可能支持 XML 格式的任意属性列表。 在这种情况下，你可以像现在一样上传 jamf/WindowsDefenderATPOnboarding.plist 文件。
 或者，可能需要先将属性列表转换为其他格式。
 
@@ -88,7 +89,7 @@ MDM 使用它将设置文件部署到客户端设备的 **/Library/Managed Prefe
 设置 KEXT 或内核扩展策略。 使用团队标识符 **UBF8T346G9** 允许 Microsoft 提供的内核扩展。
 
 > [!CAUTION]
-> 如果您的环境由 Apple 芯片 (M1) ，则这些计算机不应接收包含 KEXT 策略的配置文件。
+> 如果你的环境由 Apple 芯片 (M1) ，则这些计算机不应接收包含 KEXT 策略的配置文件。
 > Apple 在这些计算机上不支持 KEXT，在 M1 计算机上部署此类配置文件将失败。
 
 ### <a name="system-extension-policy"></a>系统扩展策略

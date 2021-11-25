@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ceeae633c85912d4c344ed8a74fe66def168efd5
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: bc9e6814dc599b6a3474a00cd51676bbe708716a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882581"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166814"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>管理 Microsoft Defender 更新的逐步推出过程
 
@@ -31,8 +31,7 @@ ms.locfileid: "60882581"
 
 
 **适用于：**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 确保客户端组件是最新的，以提供关键保护功能和防止攻击，这一点非常重要。
 
@@ -45,7 +44,7 @@ ms.locfileid: "60882581"
 使用逐步发布过程每月发布一次更新。 此过程有助于启用早期故障检测，以在影响发生时捕获影响，并快速在更大推出前解决它。
 
 > [!NOTE]
-> 若要详细了解如何控制日常安全智能更新，请参阅计划Microsoft Defender 防病毒[更新](manage-protection-update-schedule-microsoft-defender-antivirus.md)。 更新可确保下一代保护可以抵御新威胁，即使云提供的保护对终结点不可用。
+> 若要详细了解如何控制日常安全智能更新，请参阅计划Microsoft Defender 防病毒[保护更新。](manage-protection-update-schedule-microsoft-defender-antivirus.md) 更新可确保下一代保护可以抵御新威胁，即使云提供的保护对终结点不可用。
 
 ## <a name="microsoft-gradual-rollout-model"></a>Microsoft 逐步推出模型
 
@@ -59,12 +58,12 @@ ms.locfileid: "60882581"
 
 ## <a name="how-to-customize-your-internal-deployment-process"></a>如何自定义内部部署过程
 
-如果你的计算机从 Windows 更新接收 Defender 更新，逐步推出过程可能会导致你的某些计算机接收 Defender 更新早于其他计算机。 以下部分介绍如何定义一种策略，该策略允许自动更新通过利用更新通道配置以不同方式流向特定设备组。
+如果你的计算机从 Windows 更新接收 Defender 更新，逐步推出过程可能会导致你的某些计算机接收 Defender 更新的快于其他计算机。 以下部分介绍如何定义一种策略，该策略允许自动更新通过利用更新通道配置以不同方式流向特定设备组。
 
 > [!NOTE]
 > 在规划自己的逐步发布时，请确保始终有一些设备订阅到预览频道和分步频道。 这将为组织和 Microsoft 提供防止或查找并修复特定于你的环境的问题的机会。
 
-例如，对于通过 WSUS) Windows Server Update Services (或 MICROSOFT ENDPOINT CONFIGURATION MANAGER (MECM) 接收更新的计算机，可供所有 Windows 更新使用更多选项，包括适用于终结点的 Microsoft Defender 选项。
+例如，对于通过 WSUS) 或 Microsoft Endpoint Configuration Manager (MECM) 接收更新的计算机，所有 Windows 更新都提供了更多选项，包括适用于终结点的 Microsoft Defender 选项。 Windows Server Update Services (
 
 - 若要详细了解如何使用 WSUS、MECM 等解决方案管理更新的分发和应用程序，请参阅管理 Microsoft Defender 防病毒[更新](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates)和应用基线 - Windows安全 。
 
@@ -80,14 +79,14 @@ ms.locfileid: "60882581"
 
 ****
 
-|频道名称|说明|Application|
+|频道名称|Description|Application|
 |---|---|---|
-|Beta 渠道 - 预发布|在其他人之前测试更新|设置为此频道的设备将是第一个接收新每月更新的设备。 选择 Beta 渠道以参与识别问题并报告给 Microsoft。 默认情况下，Windows预览体验计划中的设备订阅此频道。 仅在测试环境中使用。|
+|Beta 渠道 - 预发布|在其他人之前测试更新|设置为此频道的设备将是第一个接收新每月更新的设备。 选择 Beta 渠道以参与识别问题并报告给 Microsoft。 默认情况下，Windows预览体验计划中的设备订阅到此频道。 仅在测试环境中使用。|
 |当前频道（预览）|在逐步发布 **期间提前获取** 当前频道更新|在逐步发布周期中，将最早向设置为此频道的设备提供更新。 建议用于预生产/验证环境。|
 |当前频道 (阶段) |在逐步发布期间获取当前频道更新|设备将在逐步发布周期的稍后阶段提供更新。 建议应用于设备总体中具有代表性的较小部分 (大约 10%) 。|
-|当前频道 (广泛) |在逐步发布结束时获取更新|仅在逐步发布周期完成后，才向设备提供更新。 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。|
+|Current Channel (Broad) |在逐步发布结束时获取更新|仅在逐步发布周期完成后，才向设备提供更新。 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。|
 |关键：时间延迟|延迟 Defender 更新|为设备提供延迟为 48 小时的更新。 最适合仅接收有限更新的数据中心计算机。 仅针对关键环境建议。|
-| (默认) ||如果禁用或不配置此策略，设备将保留在当前频道 (默认) ：在逐步发布周期中自动保持最新。 适用于大多数设备。|
+| (默认) ||如果禁用或不配置此策略，设备将保留在当前频道 (默认) ：在逐步发布周期内自动保持最新。 适用于大多数设备。|
 |
 
 ### <a name="update-channels-for-daily-updates"></a>每日更新的更新频道
@@ -98,11 +97,11 @@ ms.locfileid: "60882581"
 
 ****
 
-|频道名称|说明|Application|
+|频道名称|Description|Application|
 |---|---|---|
 |当前频道 (阶段) |在逐步发布期间获取当前频道更新|设备将在逐步发布周期的稍后阶段提供更新。 建议应用于设备总体中具有代表性的较小部分 (大约 10%) 。|
-|当前频道 (广泛) |在逐步发布结束时获取更新|设备将在逐步发布周期后提供更新。 最适合仅接收有限更新的数据中心计算机。 注意：此设置适用于所有 Defender 更新。|
-| (默认) ||如果禁用或不配置此策略，设备将保留在当前频道 (默认) ：在逐步发布周期中自动保持最新。 适用于大多数设备|
+|Current Channel (Broad) |在逐步发布结束时获取更新|设备将在逐步发布周期后提供更新。 最适合仅接收有限更新的数据中心计算机。 注意：此设置适用于所有 Defender 更新。|
+| (默认) ||如果禁用或不配置此策略，设备将保留在当前频道 (默认) ：在逐步发布周期内自动保持最新。 适用于大多数设备|
 |
 
 > [!NOTE]
@@ -134,4 +133,4 @@ ms.locfileid: "60882581"
 - Microsoft Endpoint Manager
 - PowerShell
 
-有关如何使用这些工具的详细信息，请参阅为 Microsoft [Defender 更新创建自定义逐步推出过程](configure-updates.md)。
+有关如何使用这些工具的详细信息，请参阅为 Microsoft Defender 更新创建自定义 [逐步推出过程](configure-updates.md)。

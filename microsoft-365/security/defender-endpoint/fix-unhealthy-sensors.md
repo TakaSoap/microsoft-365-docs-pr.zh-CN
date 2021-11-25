@@ -13,24 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/06/2020
+ms.date: 11/23/2020
 ms.technology: mde
-ms.openlocfilehash: a01fa71e8d52a9e6de522483ee982458f04141af
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 71b0ca22a7a040aaa49fc160038a89292c20019c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555280"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167342"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>修复 Microsoft Defender for Endpoint 中的不正常传感器
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)。
 
 分类为错误配置或非活动的设备可能由于各种原因被标记。 本节提供有关可能导致设备被分类为非活动或错误配置的一些说明。
 
@@ -40,16 +41,16 @@ ms.locfileid: "60555280"
 
 ### <a name="device-is-not-in-use"></a>设备未在使用中
 
-如果设备出于任何原因未使用七天以上，它将在门户中保持"非活动"状态。
+如果设备由于任何原因未使用超过七天，它将在门户中保持"非活动"状态。
 
 ### <a name="device-was-reinstalled-or-renamed"></a>已重新安装或重命名设备
-重新安装或重命名的设备将在新设备中生成Microsoft Defender 安全中心。 以前的设备实体在门户中将保持"非活动"状态。 如果重新安装了设备并部署了 Defender for Endpoint 程序包，请搜索新设备名称以验证设备是否正常报告。
+重新安装或重命名的设备将在设备上生成Microsoft Defender 安全中心。 以前的设备实体在门户中将保持"非活动"状态。 如果重新安装了设备并部署了 Defender for Endpoint 程序包，请搜索新设备名称以验证设备是否正常报告。
 
 ### <a name="device-was-offboarded"></a>设备已载出
 如果设备已载出，它仍将显示在设备列表中。 七天后，设备运行状况应更改为非活动状态。
 
 ### <a name="device-is-not-sending-signals"></a>设备未发送信号
-如果设备出于任何原因（包括属于错误配置设备分类的条件）未向任何 Microsoft Defender 终结点通道发送超过 7 天的信号，则设备可视为非活动状态。 
+如果设备出于任何原因（包括错误配置设备分类下的条件）未向任何 Microsoft Defender 终结点通道发送超过 7 天的信号，则设备可视为非活动状态。 
 
 你是否希望设备的状态为"活动"？ [打开支持票证](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561)。
 
@@ -73,6 +74,7 @@ ms.locfileid: "60555280"
 
 ### <a name="no-sensor-data"></a>无传感器数据
 状态为"无传感器数据"的错误配置设备与服务通信，但只能报告部分传感器数据。
+
 按照以下操作更正与状态为"无传感器数据"的错误配置设备相关的已知问题：
 
 - [确保设备具有 Internet 连接](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>

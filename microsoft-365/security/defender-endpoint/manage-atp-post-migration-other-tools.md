@@ -19,19 +19,19 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/23/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 4109a7754cb277f615ba7dc337606d32fb191d1e
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 2cd4a37d611dc3060c7f2d2c9b93b63debf65d7c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962743"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166838"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>使用 PowerShell、WMI 和 MPCmdRun.exe
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -40,10 +40,10 @@ ms.locfileid: "60962743"
 > 我们建议使用[Microsoft Endpoint Manager](/mem)管理组织对也称为终结点 (的设备的威胁防护) 。 Endpoint Manager包括[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)和[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)。
 >
 > - [详细了解Endpoint Manager](/mem/endpoint-manager-overview)
-> - [使用 Configuration Manager 和 Intune 在 Windows 10 Windows 11 设备上共同管理 Microsoft Defender for Endpoint](manage-atp-post-migration-intune.md)
+> - [使用 Configuration Manager 和 Intune 在 Windows 10 和 Windows 11 设备上共同管理 Microsoft Defender for Endpoint](manage-atp-post-migration-intune.md)
 > - [使用 Intune 管理 Microsoft Defender for Endpoint](manage-atp-post-migration-intune.md)
 
-可以使用[PowerShell、Windows](#configure-microsoft-defender-for-endpoint-with-powershell) [Management Instrumentation](#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi) (WMI) 和[Microsoft 恶意软件](#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe)保护命令行实用程序 (MPCmdRun.exe) 在设备上管理某些 Microsoft Defender 防病毒 设置。 例如，您可以管理一些Microsoft Defender 防病毒设置。 在某些情况下，你可以自定义攻击面减少规则和 Exploit Protection 设置。
+可以使用[PowerShell、Windows](#configure-microsoft-defender-for-endpoint-with-powershell) [Management Instrumentation](#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi) (WMI) 和[Microsoft 恶意软件](#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe)保护命令行实用工具 (MPCmdRun.exe) 在设备上管理一些 Microsoft Defender 防病毒 设置。 例如，您可以管理一些Microsoft Defender 防病毒设置。 在某些情况下，你可以自定义攻击面减少规则和 Exploit Protection 设置。
 
 > [!IMPORTANT]
 > 使用 PowerShell、WMI 或 MCPmdRun.exe配置配置设置可能会覆盖使用 Intune 或 Configuration Manager 配置配置功能。
@@ -59,8 +59,8 @@ ms.locfileid: "60962743"
 |**使用** PowerShell 配置攻击面减少规则 <br/><br/> *可以使用 PowerShell 从攻击面减少规则中排除文件和文件夹。*|[自定义攻击面减少规则：使用 PowerShell 排除文件夹中&文件](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders) <br/><br/> 另请参阅 [Antio Vasconcelo 的图形](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI)用户界面工具，以使用 PowerShell 设置攻击面减少规则。|
 |**使用** PowerShell 启用网络保护 <br/><br/> *可以使用 PowerShell 启用网络保护。*|[使用 PowerShell 打开网络保护](/microsoft-365/security/defender-endpoint/enable-network-protection#powershell)|
 |**配置受控文件夹访问权限** 以防范勒索软件 <br/><br/> *[受控文件夹访问权限](/microsoft-365/security/defender-endpoint/controlled-folders) 也称为反反somware保护。*|[使用 PowerShell 启用受控文件夹访问权限](/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell)|
-|**配置 Microsoft Defender 防火墙** 以阻止未经授权的网络流量流入或流出组织的设备|[使用安全管理高级安全 Microsoft Defender 防火墙Windows PowerShell](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
-|**配置加密和 BitLocker** 以保护在组织中运行加密Windows|[BitLocker PowerShell 参考指南](/powershell/module/bitlocker/)|
+|**配置 Microsoft Defender 防火墙** 以阻止未经授权的网络流量流入或流出组织的设备|[使用高级安全管理 Microsoft Defender 防火墙Windows PowerShell](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
+|**配置加密和 BitLocker** 以保护组织中运行加密Windows|[BitLocker PowerShell 参考指南](/powershell/module/bitlocker/)|
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi"></a>使用 Windows Management Instrumentation (WMI 配置 Microsoft Defender for Endpoint) 
 
@@ -69,9 +69,9 @@ WMI 是一个脚本界面，允许您检索、修改和更新设置。 若要了
 |任务|了解详细信息的资源|
 |---|---|
 |**在设备上启用** 云保护|[使用 Windows Management Instruction (WMI) 启用云保护](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-windows-management-instruction-wmi-to-enable-cloud-delivered-protection)|
-|**检索、修改和更新Microsoft Defender 防病毒**|[使用 WMI 配置和管理 Microsoft Defender 防病毒] (/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus <br/><br/> [查看可用 WMI 类和示例脚本的列表](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/> 另请参阅已存档的[Windows Defender WMIv2 提供程序参考信息](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN)|
+|**检索、修改和更新 Microsoft Defender 防病毒**|[使用 WMI 配置和管理 Microsoft Defender 防病毒] (/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus <br/><br/> [查看可用 WMI 类和示例脚本的列表](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/> 另请参阅已存档的[Windows Defender WMIv2 提供程序参考信息](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN)|
 
-## <a name="configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe"></a>使用 Microsoft 恶意软件防护工具 MPCmdRun.exeMPCmdRun.exe Command-Line为终结点配置 Microsoft Defender) 
+## <a name="configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe"></a>使用 Microsoft 恶意软件防护工具 MPCmdRun.exeMPCmdRun.exe Command-Line配置 Microsoft Defender for) Endpoint
 
 在单台设备上，可以使用命令行工具运行扫描、启动诊断跟踪、检查安全mpcmdrun.exe更新等。 可以在 中查找此实用工具 `%ProgramFiles%\Windows Defender\MpCmdRun.exe` 。 从命令提示符运行它。
 
@@ -91,6 +91,6 @@ WMI 是一个脚本界面，允许您检索、修改和更新设置。 若要了
 
 - [获取威胁和漏洞管理的概述](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [访问 Microsoft Defender 安全中心安全操作仪表板](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [访问Microsoft Defender 安全中心操作仪表板](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 
 - [使用 Intune 管理 Microsoft Defender for Endpoint](manage-atp-post-migration-intune.md)

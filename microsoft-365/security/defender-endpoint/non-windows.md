@@ -17,19 +17,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9089a14e274df2d75c9c3960c0dd111b36f5cde4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9348e0de384850a24a9173c46ab331466f26f912
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212483"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163466"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>适用于非 Windows 平台的 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -73,13 +73,13 @@ Linux 上的 Microsoft Defender for Endpoint 为 Linux (AV) 、终结点检测�
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint
 
-Android 版 Microsoft Defender for Endpoint 是适用于运行 Android 6.0 及更高版本的设备的移动威胁防护解决方案。 Android Enterprise (工作配置文件) 和设备管理员模式均受支持。 在 Android 上，我们提供 Web 保护，包括防钓鱼、阻止不安全连接以及设置自定义指示器。 此解决方案扫描 PUA (恶意软件和可能不需要的应用程序) 通过与 MICROSOFT ENDPOINT MANAGER 和条件访问集成，提供其他泄露防护功能。 有关关键功能和优势的信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)。
+Android 版 Microsoft Defender for Endpoint 是适用于运行 Android 6.0 及更高版本的设备的移动威胁防护解决方案。 Android Enterprise (工作配置文件) 和设备管理员模式均受支持。 在 Android 上，我们提供 Web 保护，包括防钓鱼、阻止不安全连接以及设置自定义指示器。 该解决方案扫描 PUA (恶意软件和可能不需要的应用程序) 通过与 MICROSOFT ENDPOINT MANAGER 和条件访问集成，提供其他泄露防护功能。 有关关键功能和优势的信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)。
 
 若要详细了解如何开始使用，请访问 Android 版 Microsoft Defender for Endpoint [文档](microsoft-defender-endpoint-android.md)。
 
 ## <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint
 
-iOS 上的 Microsoft Defender for Endpoint 是适用于运行 iOS 11.0 及更高版本的设备的移动威胁防护解决方案。 支持在客户的租户中注册的设备 (注册或注销) 注册。 受监督注册的设备和未监管注册设备均受支持。 在 iOS 上，我们提供 Web 保护，包括防钓鱼、阻止不安全连接和设置自定义指示器以及越狱检测。 有关主要功能和优点详细信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。
+iOS 上的 Microsoft Defender for Endpoint 是适用于运行 iOS 11.0 及更高版本的设备的移动威胁防护解决方案。 支持在客户的租户中注册的设备 (注册或注销) 注册。 受监督的注册设备和未监管注册设备均受支持。 在 iOS 上，我们提供 Web 保护，包括防钓鱼、阻止不安全连接和设置自定义指示器以及越狱检测。 有关主要功能和优点详细信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。
 
 若要详细了解如何开始使用，请访问 iOS 上的 Microsoft Defender for Endpoint [文档](microsoft-defender-endpoint-ios.md)。
 

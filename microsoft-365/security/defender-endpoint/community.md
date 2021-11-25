@@ -15,20 +15,23 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e6ad46340192f2fa574d291ba13c2f0e2c57549c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 64cd1417bf143d93a2f2fc4a4bbfceb0ee7f9095
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553576"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171637"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>访问 Microsoft Defender for Endpoint 社区中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
@@ -40,9 +43,9 @@ Defender for Endpoint Community 中心是社区成员可以学习、协作和共
 - 最近更新
 - 威胁智能
 
-可通过多种方式访问 Community 中心：
+可通过多种方法访问Community中心：
 
-- 在Microsoft 365 Defender导航窗格中，选择 **"Community中心"。** 将打开一个新的浏览器选项卡，并让你访问 Defender for Endpoint Tech Community 页面。
+- 在"Microsoft 365 Defender门户"导航窗格中，选择 **"Community中心"。** 将打开一个新的浏览器选项卡，并让你访问 Defender for Endpoint Tech Community页面。
 - 通过 Microsoft [Defender 终结点技术中心页面访问Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)社区
 
 你可以立即查看和阅读社区中发布的对话。

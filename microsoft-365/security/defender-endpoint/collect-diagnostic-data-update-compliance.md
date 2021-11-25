@@ -1,6 +1,6 @@
 ---
 title: 收集更新合规性和更新更新的诊断Microsoft Defender 防病毒
-description: 使用工具收集数据，解决在使用评估加载项时Microsoft Defender 防病毒合规性问题。
+description: 使用工具收集数据，解决在使用评估加载项时Microsoft Defender 防病毒更新合规性问题。
 keywords: 疑难解答， 错误， 修复， 更新合规性， oms， 监视器， 报告， Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,19 +17,20 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b8a0c196373cf0d6ef03b2eccb171d125917a993
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 9e368f2cb3cecf9359c4aed5e727aef2ee21c02b
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665797"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171673"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>收集更新合规性诊断数据进行Microsoft Defender 防病毒评估
 
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 本文介绍如何收集诊断数据，Microsoft 支持和工程团队可以使用这些数据来帮助解决在使用更新合规性外接程序中的"Microsoft Defender 防病毒 评估"部分时可能遇到的问题。
 

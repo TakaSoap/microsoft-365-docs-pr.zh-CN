@@ -17,21 +17,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 18da838cf57b330d5015f535fefcbd2db42b73ef
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7d134cfb7d8c0aff1e7a50b1e0ce9cc2daa9a8b1
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209893"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167138"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>使用 Microsoft Defender for Endpoint 的 OData 查询
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,10 +44,10 @@ ms.locfileid: "60209893"
 
 ## <a name="properties-that-support-filter"></a>支持属性$filter
 
-- [警报](alerts.md) `alertCreationTime` `lastUpdateTime` `incidentId` `InvestigationId` ：、、、、 `status` `severity` 和 `category` 。
-- [计算机](machine.md) `ComputerDnsName` `LastSeen` `HealthStatus` ：、、、、 `OsPlatform` `onboardingStatus` `RiskScore` 和 `RbacGroupId` 。
-- [MachineAction](machineaction.md)： `Status` 、 、 和 `MachineId` `Type` `Requestor` `CreationDateTimeUtc` 。
-- [指示器](ti-indicator.md) `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` ：、、、 `createdBy` `severity` 和 `action` 。
+- [警报](alerts.md) `alertCreationTime` `lastUpdateTime` `incidentId` ：、、、、、、 `InvestigationId` `status` 和 `severity` `category` 。
+- [计算机](machine.md) `ComputerDnsName` `LastSeen` `HealthStatus` ：、、、、、 `OsPlatform` `onboardingStatus` 和 `RiskScore` `RbacGroupId` 。
+- [](machineaction.md) `Status` `MachineId` MachineAction：、、、 `Type` `Requestor` 和 `CreationDateTimeUtc` 。
+- [指示器](ti-indicator.md) `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` `createdBy` ：、、、、 `severity` 和 `action` 。
 
 ### <a name="example-1"></a>示例 1
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2abd270aeee07e84cf31711494d68ca15885515
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ee8ea26c53bf5ae56c558f7aaa956974474dd101
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174671"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171433"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -31,7 +31,8 @@ ms.locfileid: "60174671"
 **适用于：**
 
 - [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -67,7 +68,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 > [!IMPORTANT]
 > 在 Microsoft AutoUpdate 版本 4.29 之前，频道具有不同的名称：
 >
-> - `Beta` 被命名为 `InsiderFast` (Insider Fast) 
+> - `Beta` 已 (`InsiderFast` Insider Fast) 
 > - `Preview` 被命名为 `External` (Insider Slow) 
 > - `Current` 已命名 `Production`
 
@@ -81,7 +82,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**Key**|ChannelName|
+|**键**|ChannelName|
 |**数据类型**|String|
 |**可能的值**|Beta <p> 预览 <p> Current|
 |||
@@ -104,7 +105,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**Key**|UpdateCheckFrequency|
+|**键**|UpdateCheckFrequency|
 |**数据类型**|整数|
 |**默认值**|720 (分钟) |
 |**Comment**|此值以分钟数设置。|
@@ -121,7 +122,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**Key**|HowToCheck|
+|**键**|HowToCheck|
 |**数据类型**|String|
 |**可能的值**|手动 <p> AutomaticCheck <p> AutomaticDownload|
 |**Comment**|请注意，如果可能，AutomaticDownload 将执行下载并静默安装。|
@@ -138,8 +139,8 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**Key**|EnableCheckForUpdatesButton|
-|**数据类型**|布尔值|
+|**键**|EnableCheckForUpdatesButton|
+|**数据类型**|Boolean|
 |**可能的值**|为 (默认值)  <p> False|
 |||
 
@@ -154,8 +155,8 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**Key**|DisableInsiderCheckbox|
-|**数据类型**|布尔值|
+|**键**|DisableInsiderCheckbox|
+|**数据类型**|Boolean|
 |**可能的值**|False (默认值)  <p> True|
 |||
 
@@ -170,7 +171,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**Key**|SendAllTelemetryEnabled|
+|**键**|SendAllTelemetryEnabled|
 |**数据类型**|布尔值|
 |**可能的值**|为 (默认值)  <p> False|
 |||

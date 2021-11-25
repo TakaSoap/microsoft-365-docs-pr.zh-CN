@@ -14,27 +14,27 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 95f377992c745045667a016fcf7dae1b391f2323
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ad66a651406706d0e2730f9913839540418bb02b
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554068"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170641"
 ---
 # <a name="create-and-manage-device-groups"></a>创建和管理设备组
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-
 - Azure Active Directory
 - Office 365
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 在企业方案中，通常会为安全运营团队分配一组设备。 这些设备根据一组属性（如域、计算机名称或指定标记）分组在一起。
 
-在 Microsoft Defender for Endpoint 中，你可以创建设备组，并使用它们：
+在 Microsoft Defender for Endpoint 中，你可以创建设备组并使用它们：
 
 - 将相关警报和数据的访问权限限制为Azure AD [RBAC](rbac.md)角色的特定组
 - 为不同的设备集配置不同的自动修正设置
@@ -102,7 +102,7 @@ ms.locfileid: "60554068"
 > 在同一条件类型的行之间使用"OR"运算符，这允许每个属性具有多个值。
 > 您最多可以添加 10 行 (每个) 类型的值 - 标记、设备名称、域。
 
-有关链接到设备组定义的信息，请参阅设备[组 -](https://sip.security.microsoft.com/homepage)Microsoft 365安全。
+有关链接到设备组定义的信息，请参阅设备组 - Microsoft 365[安全](https://sip.security.microsoft.com/homepage)。
 
 ## <a name="related-topics"></a>相关主题
 

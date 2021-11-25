@@ -16,19 +16,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 53230a4361bc74207fd630bf6f4631e87055dda8
-ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
+ms.openlocfilehash: 152cce7e3e46771cd0869f898c6235ea11b9ebda
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60971960"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170504"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -82,8 +82,8 @@ ms.locfileid: "60971960"
 - 从此版本开始，在通过命令行客户端触发的按需防病毒扫描期间检测到的威胁将自动修正。 扫描期间通过用户界面触发的威胁仍然需要手动操作。
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
-  - `--top N`：显示前 N 个 (仅在还指定了值 `--sort` 时) 
-- 性能改进 (功能专门用于在 BUG 修复) &使用时
+  - `--top N`：显示前 N 个 (仅在指定了值 `--sort` 时) 
+- 性能改进 (在将功能用于 BUG 修复) &使用时的性能改进
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0) 
 
@@ -92,7 +92,7 @@ ms.locfileid: "60971960"
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0) 
 
 - macOS 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。
-- 性能改进 (XCode 模拟器应用用于修复错误) &的情况。
+- 性能改进 (专为使用 XCode 模拟器应用修复错误) &的情况。
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
 
@@ -122,12 +122,12 @@ ms.locfileid: "60971960"
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0) 
 
 - 改进了在 macOS 11 Big Sur 上运行的代理的可靠性
-- 添加了一个新的命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV `mdatp scan custom` 排除 () 
+- 添加了一个新的命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV 排除 `mdatp scan custom` () 
 - Bug 修复&性能改进
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0) 
 
-- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 清单到内核内核错误时的条件
+- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 错误（清单到内核内核错误）时的条件
 - 修复了在 Mac 11 和 Big Sur (运行时 Endpoint Security 系统扩展) 
 - 错误修补程序
 
@@ -275,7 +275,7 @@ ms.locfileid: "60971960"
 - 增加了对 macOS 加泰罗尼亚语的支持
 
   > [!CAUTION]
-  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序无法访问磁盘上的某些位置 (如文档、下载、桌面等) 未经明确同意。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，未经明确同意 (应用程序无法访问磁盘上的某些位置) 例如文档、下载、桌面等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
   >
   > 授予此同意的机制取决于你部署适用于终结点的 Microsoft Defender 的方式：
   >

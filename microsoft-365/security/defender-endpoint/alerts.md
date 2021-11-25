@@ -16,21 +16,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e0d7649c4e39651cec8cdf293177abf66709964e
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 9171fe01cfe03769cac29110352cf4d0d9fe0061
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121371"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168818"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+>希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -89,7 +89,7 @@ ms.locfileid: "61121371"
 |threatName|String|威胁名称。|
 |machineId|String|与 [警报关联的](machine.md) 计算机实体的 ID。|
 |computerDnsName|String|[计算机](machine.md) 完全限定的名称。|
-|aadTenantId|String|Azure Active Directory ID。|
+|aadTenantId|String|用户Azure Active Directory ID。|
 |一个|String|触发警报的检测器的 ID。|
 |comments|警报注释列表|Alert Comment 对象包含：注释字符串、createdBy 字符串和 createTime 日期时间。|
 |证据|警报证据列表|与警报相关的证据。 请参阅下面的示例。|

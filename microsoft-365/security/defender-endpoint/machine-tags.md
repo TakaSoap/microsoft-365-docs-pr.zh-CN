@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 38b5d3f2ddcab56fc712c771019982d05a18e20e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d4e429ca851a21c3ad4863d11dd90d7223d9c6b3
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199749"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170513"
 ---
 # <a name="create-and-manage-device-tags"></a>创建和管理设备标签
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -80,7 +80,7 @@ ms.locfileid: "60199749"
 >
 > - Windows 11
 > - Windows 10版本 1709 或更高版本
-> - Windows服务器版本 1803 或更高版本
+> - Windows Server 版本 1803 或更高版本
 > - Windows Server 2016
 > - Windows Server 2012 R2
 > - Windows Server 2008 R2 SP1

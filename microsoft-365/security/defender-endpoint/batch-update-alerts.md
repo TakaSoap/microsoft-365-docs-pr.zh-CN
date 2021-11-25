@@ -16,21 +16,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: b8109c71206ee9f689cafb28d7def14ff3122704
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 007dd161ac221a51ce2d2a424974db51177db615
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586133"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170999"
 ---
 # <a name="batch-update-alerts"></a>批量更新警报
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**适用于：** 
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+>希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -63,7 +65,7 @@ Application | Alert.ReadWrite.All | "读取和写入所有警报"
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："警报调查" (请参阅创建和管理角色，了解) [](user-roles.md)
-> - 用户需要具有对与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
+> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -75,8 +77,8 @@ POST /api/alerts/batchUpdate
 
 名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
-Content-Type | String | application/json. **必需**。
+Authorization | String | Bearer {token}。 必需。
+Content-Type | String | application/json. 必需。
 
 ## <a name="request-body"></a>请求正文
 
@@ -86,13 +88,13 @@ Content-Type | String | application/json. **必需**。
 
 为了实现最佳性能，不得添加未变化的现有值。
 
-属性 | 类型 | 说明
+属性 | 类型 | Description
 :---|:---|:---
 alertIds | 列表 &lt; 字符串&gt;| 要更新的警报的 ID 列表。 **Required**
 status | String | 指定指定警报的更新状态。 属性值为："New"、InProgress 和"Resolved"。
 assignedTo | String | 指定警报的所有者
 classification | 字符串 | 指定指定警报的规范。 属性值为："Unknown"、"FalsePositive"和"TruePositive"。 
-确定 | String | 指定指定警报的确定。 属性值包括："NotAvailable"、"Apt"、"Malware"、"SecurityPersonnel"、"SecurityTesting"、"UnwantedSoftware"和"Other"
+确定 | String | 指定指定警报的确定。 属性值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"
 注释 | String | 要添加到指定警报的注释。
 
 ## <a name="response"></a>响应

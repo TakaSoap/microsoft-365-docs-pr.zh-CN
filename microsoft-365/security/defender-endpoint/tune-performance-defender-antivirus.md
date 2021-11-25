@@ -14,14 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00e03927696d32eb72991a5eaa82643325b59925
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ec7fb61d548cd5f214a52eed5ff49b454a40a743
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110435"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167654"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>性能分析器Microsoft Defender 防病毒
+
+**适用对象**
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 **什么是Microsoft Defender 防病毒器？**
 
@@ -41,7 +45,7 @@ ms.locfileid: "61110435"
 1. 运行性能分析器以收集终结点上Microsoft Defender 防病毒事件的性能记录。
 
    > [!NOTE]
-   > Microsoft **Microsoft Defender 防病毒-Antimalware-Engine** 类型的事件的性能通过性能分析器进行记录。
+   > **Microsoft-antimalware-Engine** 类型的 Microsoft Defender 防病毒 事件的性能通过性能分析器进行记录。
 
 2. 使用不同的录制报告分析扫描结果。
 
@@ -87,7 +91,7 @@ ms.locfileid: "61110435"
 
 - **若要转换**： `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>要求
+### <a name="requirements"></a>Requirements
 Microsoft Defender 防病毒性能分析器具有以下先决条件：
 
 - 支持Windows版本：Windows 10、Windows 11 和 Windows Server 2016 及以上版本

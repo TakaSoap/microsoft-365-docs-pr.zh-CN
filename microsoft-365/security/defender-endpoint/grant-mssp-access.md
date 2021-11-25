@@ -1,5 +1,5 @@
 ---
-title: '向 MSSP 托管服务提供程序 (访问) '
+title: '向 MSSP 托管安全服务提供程序 (访问权限) '
 description: 执行必要步骤以配置 MSSP 与 Microsoft Defender for Endpoint 的集成
 keywords: 托管安全服务提供程序， mssp， 配置， 集成
 ms.prod: m365-security
@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e262c6b7176ba5c269c086b4a196a685a25bc8ed
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 3f370e1a491006a5dc42df807994db97f68abcb0
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553876"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168914"
 ---
-# <a name="grant-managed-security-service-provider-mssp-access-preview"></a>向 MSSP 托管 (提供程序) 访问 (预览) 
+# <a name="grant-managed-security-service-provider-mssp-access-preview"></a>向 MSSP (托管安全) 访问 (预览) 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)。
@@ -90,7 +91,7 @@ ms.locfileid: "60553876"
 
     有关详细信息，请参阅创建 [资源目录](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
-3. **为 MSSP 资源创建访问包客户AAD：标识管理**
+3. **为 MSSP 资源创建访问包客户AAD：标识治理**
 
     访问包是请求者在审批时将授予的权限和访问权限的集合。
 
