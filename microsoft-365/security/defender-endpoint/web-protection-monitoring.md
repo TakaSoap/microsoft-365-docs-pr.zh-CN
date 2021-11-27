@@ -15,26 +15,27 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4bbe7fa9bb9db540451c2878806f04b0d31b1165
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 6d10354f68dd5ba26db7f4260425559167c8888c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881837"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61160471"
 ---
 # <a name="monitor-web-browsing-security"></a>监视 Web 浏览安全性
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)。
 
-通过 Web 保护，可以通过"报告"和"Web 保护"下的报表>**组织的 Web** 浏览Microsoft 365 Defender安全。 该报告包含提供 Web 威胁检测统计信息的卡片。
+通过 Web 保护，可以通过"报告"和"Web 保护"下的报表>**组织的 Web** 浏览Microsoft 365 Defender安全性。 该报告包含提供 Web 威胁检测统计信息的卡片。
 
-- **随着时间的推移进行 Web** 威胁防护检测 - 此趋势卡片显示在所选时间段（"过去 30 天 (最近 30 天、过去 3 个月、过去 6 个月）内按类型检测到的 Web 威胁) 
+- **随着时间的推移进行** Web 威胁防护检测 - 此趋势卡片显示所选时间段（"过去 30 天 (最近 30 天、过去 3 个月、过去 6 个月）内按类型检测到的 Web 威胁) 
 
   :::image type="content" alt-text="显示一段时间的 Web 威胁防护检测的卡片的图像。" source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
 
@@ -51,7 +52,7 @@ Web 保护将恶意和不需要的网站分类为：
 
 - **网络钓鱼** - 包含欺骗性 Web 表单和其他网络钓鱼机制的网站，旨在欺骗用户泄露凭据和其他敏感信息
 - **恶意** - 托管恶意软件和攻击代码的网站
-- **自定义指示器**- 已添加到自定义指示器列表以阻止的 URL [或域的网站](manage-indicators.md)
+- **自定义指示器** - 已添加到用于阻止的自定义指示器列表的 URL [或](manage-indicators.md) 域的网站
 
 ## <a name="view-the-domain-list"></a>查看域列表
 

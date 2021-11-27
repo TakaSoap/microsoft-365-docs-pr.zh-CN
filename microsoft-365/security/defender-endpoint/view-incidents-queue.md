@@ -1,7 +1,7 @@
 ---
 title: 查看和组织事件队列
 ms.reviewer: ''
-description: 查看事件列表，并了解如何应用筛选器来限制列表并获取更集中的视图。
+description: 查看事件列表，了解如何应用筛选器来限制列表并获取更集中的视图。
 keywords: 视图， 组织， 事件， 聚合， 调查， 队列， ttp
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,19 +15,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4db3016236963f77ded08981f0380876f7819653
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: d57097d255b9f64782320dbd380f90b7a98573cb
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587381"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61160476"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>查看并组织 Microsoft Defender for Endpoint 事件队列
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)。
@@ -53,10 +54,10 @@ ms.locfileid: "60587381"
 
 ### <a name="severity"></a>Severity
 
-事件严重性 | 说明
+事件严重性 | Description
 :---|:---
 高 </br> (红色)  | 通常与高级永久性威胁和 APT (相关的) 。 这些事件表明，由于设备可造成严重损坏，因此存在高风险。
-中 </br> (橙色)  | 很少在组织中观察到的威胁，例如异常注册表更改、可疑文件的执行和观察到的攻击阶段典型行为。
+Medium </br> (橙色)  | 很少在组织中观察到的威胁，例如异常注册表更改、可疑文件的执行和观察到的攻击阶段典型行为。
 低 </br> (黄色)  | 与流行恶意软件和黑客工具关联的威胁，这些威胁不一定表示针对组织的高级威胁。
 信息 </br> (灰色)  | 信息事件可能被视为对网络没有危害，但可以跟踪。
 
@@ -74,7 +75,7 @@ ms.locfileid: "60587381"
 
 ## <a name="incident-naming"></a>事件命名
 
-为了一目了然地了解事件的范围，事件名称根据警报属性自动生成，如受影响的终结点数量、受影响的用户、检测源或类别。
+为了一目了然地了解事件的范围，事件名称将基于警报属性自动生成，如受影响的终结点数量、受影响的用户、检测源或类别。
 
 例如： *多个源报告的多个终结点上的多阶段事件。*
 

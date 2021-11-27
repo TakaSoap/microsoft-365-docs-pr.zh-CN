@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6cb0fdb8b2fec03c616b1c0607e4f8be6476b96e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 96a565456f0e95ffc33cbff9a36abcf24db94c24
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191691"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61160500"
 ---
 # <a name="score-resource-type"></a>分数资源类型
 
@@ -29,7 +29,8 @@ ms.locfileid: "60191691"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -40,9 +41,9 @@ ms.locfileid: "60191691"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
-方法|返回类型|说明
+方法|返回类型|Description
 :---|:---|:---
 [获取曝光分数](get-exposure-score.md)|[分数](score.md)|获取组织曝光分数。
 [获取设备安全分数](get-device-secure-score.md)|[分数](score.md)|获取组织设备安全分数。
@@ -50,7 +51,7 @@ ms.locfileid: "60191691"
 
 ## <a name="properties"></a>属性
 
-属性|类型|说明
+属性|类型|Description
 :---|:---|:---
 得分|双精度|当前分数。
 时间|日期时间|调用此 API 的日期和时间。
