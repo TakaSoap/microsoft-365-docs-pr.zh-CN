@@ -16,24 +16,24 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 507bcd55dc04c86d98550da19f78486e64abf556
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: be22e59f6d2be30ead354099f2cc168868959752
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555508"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61160278"
 ---
 # <a name="schedule-antivirus-scans-using-windows-management-instrumentation-wmi"></a>使用 Windows Management Instrumentation (WMI) 安排防病毒扫描
 
 **适用于：**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 本文介绍如何使用 WMI 配置计划扫描。 若要了解有关计划扫描和扫描类型有关详细信息，请参阅配置计划的快速或完全Microsoft Defender 防病毒[扫描](schedule-antivirus-scans.md)。 
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-scans"></a>使用 Windows Management Instruction (WMI) 计划扫描
 
-对 [**下列** 属性使用 **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) 类的 Set 方法：
+对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
 
 ```WMI
 ScanParameters
@@ -42,11 +42,11 @@ ScanScheduleTime
 RandomizeScheduleTaskTimes
 ```
 
-有关详细信息和允许的参数，请参阅 Windows Defender [WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+有关详细信息和允许的参数，请参阅Windows Defender [WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="wmi-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>不使用终结点时用于计划扫描的 WMI
 
-对 [以下属性MSFT_MpPreference类](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) 的 Set 方法：
+对 [下列属性使用 MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) 类的 Set 方法：
 
 ```WMI
 ScanOnlyIfIdleEnabled
@@ -60,7 +60,7 @@ ScanOnlyIfIdleEnabled
 
 ## <a name="wmi-for-scheduling-scans-to-complete-remediation"></a>用于计划扫描以完成修正的 WMI
 
-对 [**下列** 属性使用 **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) 类的 Set 方法：
+对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
 
 ```WMI
 RemediationScheduleDay
@@ -71,7 +71,7 @@ RemediationScheduleTime
 
 ## <a name="wmi-for-scheduling-daily-scans"></a>用于计划每日扫描的 WMI
 
-对 [**下列** 属性使用 **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) 类的 Set 方法：
+对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
 
 ```WMI
 ScanScheduleQuickScanTime
