@@ -16,18 +16,18 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 251c220ab8ede37f69e820e48af08495507504a6
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: e1cbdd156306d7cc2ee41fd85baadb1fa51cf1ac
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148826"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163034"
 ---
 # <a name="schedule-antivirus-scans-using-powershell"></a>使用 PowerShell 安排防病毒扫描
 
 **适用于：**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 本文介绍如何使用 PowerShell cmdlet 配置计划扫描。 若要了解有关计划扫描和扫描类型有关详细信息，请参阅配置计划的快速或完全Microsoft Defender 防病毒[扫描](schedule-antivirus-scans.md)。 
 
@@ -53,7 +53,7 @@ Set-MpPreference -RandomizeScheduleTaskTimes
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-有关详细信息，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置并运行Microsoft Defender 防病毒和 Defender 防病毒[cmdlet。](/powershell/module/defender/)
+有关详细信息，请参阅[使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md)和 [Defender for Cloud cmdlet](/powershell/module/defender/)。
 
 > [!NOTE]
 > 在终结点不使用时计划扫描时，扫描不会接受 CPU 限制配置，并且将充分利用可用资源尽快完成扫描。
@@ -67,7 +67,7 @@ Set-MpPreference -RemediationScheduleDay
 Set-MpPreference -RemediationScheduleTime
 ```
 
-请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和 Defender 防病毒[cmdlet，](/powershell/module/defender/)详细了解如何将 PowerShell 与 Microsoft Defender 防病毒。
+请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和 Defender 防病毒[cmdlet，](/powershell/module/defender/)了解有关如何将 PowerShell 与 Microsoft Defender 防病毒 一Microsoft Defender 防病毒。
 
 ## <a name="powershell-cmdlets-for-scheduling-daily-scans"></a>用于计划每日扫描的 PowerShell cmdlet
 
