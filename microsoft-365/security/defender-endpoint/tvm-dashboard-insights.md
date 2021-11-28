@@ -1,7 +1,7 @@
 ---
 title: 仪表板见解 - 危险和漏洞管理
-description: 仪表板危险和漏洞管理 SecOps 和安全管理员解决网络安全威胁，并构建组织的安全恢复能力。
-keywords: Microsoft Defender for Endpoint-tvm， Microsoft Defender for Endpoint-tvm dashboard， 威胁 & 漏洞管理， 危险和漏洞管理， 基于风险的威胁 & 漏洞管理， 安全配置， 适用于设备的 Microsoft 安全分数， 曝光分数
+description: 仪表板危险和漏洞管理 SecOps 和安全管理员解决网络安全威胁，并构建其组织的安全恢复能力。
+keywords: Microsoft Defender for Endpoint-tvm， Microsoft Defender for Endpoint-tvm dashboard， 威胁 & 漏洞管理， 危险和漏洞管理， 基于风险的威胁 & 漏洞管理， 安全配置， Microsoft 设备安全分数， 曝光分数
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 63d994ce521f3915daea6a585f64c407fd241eee
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 129537fe810148f49628790e347479b8d376888d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963211"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61160485"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>仪表板见解 - 危险和漏洞管理
 
@@ -30,7 +30,7 @@ ms.locfileid: "60963211"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,7 +40,7 @@ ms.locfileid: "60963211"
 
 - 与终结点漏洞相关的实时终结点检测和响应（EDR）见解
 - 事件调查期间有价值的设备漏洞上下文
-- 内置修正过程通过Microsoft Intune和Microsoft Endpoint Configuration Manager
+- 内置修正过程通过Microsoft Intune Microsoft Endpoint Configuration Manager
 
 可以使用 危险和漏洞管理 门户中的 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">功能</a>：
 

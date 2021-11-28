@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 22b5d6382a46eb45bc2365d8c31bb7a00eb5da17
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: bdd92a4be90aca4e7ca85489923ff94850114391
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882965"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61160473"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>安全建议 - 危险和漏洞管理
 
@@ -29,7 +29,7 @@ ms.locfileid: "60882965"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -42,7 +42,7 @@ ms.locfileid: "60882965"
 > [!TIP]
 > 若要获取有关新漏洞事件的电子邮件，请参阅在 Microsoft [Defender for Endpoint](configure-vulnerability-email-notifications.md)中配置漏洞电子邮件通知
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>如何工作
 
 组织的每台设备都基于三个重要因素进行评分，以帮助客户在正确的时间专注于正确的内容。
 
@@ -55,7 +55,7 @@ ms.locfileid: "60882965"
 以几种不同方式访问"安全建议"页：
 
 - 漏洞管理门户中的威胁和Microsoft 365 Defender[菜单](portal-overview.md)
-- 仪表板中的顶级[危险和漏洞管理建议](tvm-dashboard-insights.md)
+- 仪表板中的危险和漏洞管理[建议](tvm-dashboard-insights.md)
 
 查看以下位置的相关安全建议：
 
@@ -68,7 +68,7 @@ ms.locfileid: "60882965"
 
 ### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>仪表板中危险和漏洞管理建议
 
-在给定一天中，作为安全管理员，你可以查看 危险和漏洞管理 仪表板[](tvm-dashboard-insights.md)，以查看你的曝光分数与你的[](tvm-exposure-score.md)Microsoft 设备安全分数[并排](tvm-microsoft-secure-score-devices.md)显示。 目标是 **降低组织对** 漏洞的暴露程度，提高组织的设备安全性，以抵御网络安全威胁攻击。 顶级安全建议列表可帮助你实现该目标。
+在给定一天中，作为安全管理员，你可以查看 危险和漏洞管理 仪表板[](tvm-dashboard-insights.md)，以查看你的曝光分数与设备的[](tvm-exposure-score.md)Microsoft 安全[分数并排](tvm-microsoft-secure-score-devices.md)显示。 目标是 **降低组织对** 漏洞的暴露程度，提高组织的设备安全性，以抵御网络安全威胁攻击。 顶级安全建议列表可帮助你实现该目标。
 
 ![顶级安全建议卡片示例，具有四个安全建议。](images/top-security-recommendations350.png)
 
@@ -103,7 +103,7 @@ ms.locfileid: "60882965"
 
 - **打开软件页** - 打开软件页，获取有关软件及其分发方式的更多上下文。 这些信息可能包括威胁上下文、相关建议、发现的漏洞、公开的设备数量、发现的漏洞、已安装软件的设备的名称和详细信息以及版本分发。
 
-- [**修正选项**](tvm-remediation.md)- 提交修正请求以在 Microsoft Intune中打开票证，让 IT 管理员进行选取和解决。 在"修正"页中跟踪修正活动。
+- [**修正选项**](tvm-remediation.md)- 提交修正请求以在 Microsoft Intune中打开票证，供 IT 管理员选取并处理。 在"修正"页中跟踪修正活动。
 
 - [**例外选项**](tvm-exception.md) - 提交异常、提供理由以及设置异常持续时间（如果尚无法修正问题）。
 
@@ -120,7 +120,7 @@ ms.locfileid: "60882965"
 
 ## <a name="request-remediation"></a>请求修正
 
-此危险和漏洞管理修复功能通过修正请求工作流填补了安全和 IT 管理员之间的空白。 安全管理员（如你可以请求 IT 管理员将漏洞从安全建议页面修正到Intune） [了解有关修正选项的详细信息](tvm-remediation.md)
+修复危险和漏洞管理修复功能通过修正请求工作流填补了安全和 IT 管理员之间的空白。 安全管理员（如你可以请求 IT 管理员将漏洞从安全建议页面修正到Intune） [了解有关修正选项的详细信息](tvm-remediation.md)
 
 ### <a name="how-to-request-remediation"></a>如何请求修正
 
@@ -132,7 +132,7 @@ ms.locfileid: "60882965"
 
 只有具有"异常处理"权限的用户才能添加异常。 [详细了解 RBAC 角色](user-roles.md)。
 
-为建议创建例外时，建议不再处于活动状态。 建议状态将更改为"完全 **异常** "或 **"部分** 异常 (组设置) 。
+为建议创建例外时，建议不再处于活动状态。 建议状态将更改为"完全 **异常**"或"部分异常 (组设置) 。
 
 ### <a name="how-to-create-an-exception"></a>如何创建异常
 
@@ -140,7 +140,7 @@ ms.locfileid: "60882965"
 
 ![显示"异常选项"按钮在安全建议飞出控件中的位置。](images/tvm-exception-options.png)
 
-填写表单并提交。 若要查看当前 (和过去) 的所有异常，请导航到"威胁 & 漏洞管理 [](tvm-remediation.md)"菜单下的"修正 **"** 页并选择"异常 **"选项卡。** 详细了解如何创建 [异常](tvm-exception.md#create-an-exception)
+填写表单并提交。 若要查看当前 (和过去) 的所有异常，请导航到"威胁 & 漏洞 [](tvm-remediation.md)管理"菜单下的"修正 **"** 页并选择"异常 **"选项卡。** 详细了解如何创建 [异常](tvm-exception.md#create-an-exception)
 
 ## <a name="report-inaccuracy"></a>报告 inaccuracy
 

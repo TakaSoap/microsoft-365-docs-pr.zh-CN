@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e2535de64276048f933fba4d12c654a46ab1991d
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: bf0eb7b210ccb033e47b86b45a5f4dec00e9d795
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587133"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61160472"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender 安全中心安全操作仪表板
 
@@ -27,7 +27,7 @@ ms.locfileid: "60587133"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)。
 
@@ -67,7 +67,7 @@ ms.locfileid: "60587133"
 
 ## <a name="devices-at-risk"></a>处于风险之中的设备
 
-此磁贴显示活动警报数最高的设备列表。 每个设备的警报总数在设备名称旁的圆圈中显示，然后按严重级别进一步分类到磁贴 (将鼠标悬停在每个严重性栏上以查看其标签) 。
+此磁贴显示活动警报数最高的设备列表。 每个设备的警报总数在设备名称旁的圆圈中显示，然后按严重性级别进一步分类磁贴 (将鼠标悬停在每个严重性栏上以查看其标签) 。
 
 !["处于风险中的设备"图块显示警报数最高的设备列表，以及警报严重性的细目。](images/devices-at-risk-tile.png)
 
