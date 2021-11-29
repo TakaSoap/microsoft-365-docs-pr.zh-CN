@@ -1,5 +1,5 @@
 ---
-title: 攻击面减少规则部署阶段 2 - 测试
+title: ASR 规则部署阶段 2 - 测试
 description: 提供测试攻击面减少规则部署的指导。
 keywords: 攻击面减少规则部署， ASR 部署， 启用 asr 规则， 配置 ASR， 主机入侵防护系统， 保护规则， 反攻击规则， 反攻击， 攻击规则， 感染防护规则， Microsoft Defender for Endpoint， 配置 ASR 规则
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ee6e8f1ce7f6e75b2e45e058f41403433cc707d4
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 33e62ce97b5fa1374369a0d212b0c615b47f4c5f
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171729"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218114"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-2-test"></a>攻击面减少规则部署阶段 2：测试
 
@@ -33,7 +33,7 @@ ms.locfileid: "61171729"
 
 ## <a name="step-1-test-asr-rules-using-audit"></a>步骤 1：使用审核测试 ASR 规则
 
-首先打开 ASR 规则，将规则设置为审核，从圈 1 中的冠军用户或设备开始测试阶段。 通常，建议在审核策略中启用 (规则) 以便可以确定在测试阶段触发哪些规则。 请注意，设置为"审核"的规则通常不会影响应用该规则的一个或多个实体的功能，但会为评估生成记录的事件;对最终用户没有影响。
+首先打开 ASR 规则，将规则设置为审核，从圈 1 中的冠军用户或设备开始测试阶段。 通常，建议在审核策略中 (所有) ，以便可以确定在测试阶段触发哪些规则。 请注意，设置为"审核"的规则通常不会影响应用该规则的一个或多个实体的功能，但会为评估生成记录的事件;对最终用户没有影响。
 
 ### <a name="configure-asr-rules-using-mem"></a>使用 MEM 配置 ASR 规则
 
@@ -57,7 +57,7 @@ You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure cust
     >[!Note]
     >某些 ASR 规则模式列表存在变化;_阻止和__启用_ 提供相同的功能。
 
-8. [可选]在 **范围标记窗格中** ，你可以将标记信息添加到特定设备。 您还可以使用基于角色的访问控制和范围标记，以确保适当的管理员对正确的 Intune 对象具有适当的访问权限和可见性。 了解更多：在 Intune 中为分布式 IT (RBAC) 和范围标记使用 [基于角色的访问控制](/mem/intune/fundamentals/scope-tags)。
+8. [可选]在 **范围标记窗格中** ，你可以将标记信息添加到特定设备。 您还可以使用基于角色的访问控制和范围标记，以确保适当的管理员对正确的 Intune 对象具有适当的访问权限和可见性。 了解更多： [在 Intune](/mem/intune/fundamentals/scope-tags)中为分布式 IT (基于角色的访问控制) 和范围标记。
 9. 在 **"分配** "窗格中，你可以将配置文件部署或"分配给"用户或设备组。 了解更多信息：[在设备上分配Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 10. Review your settings in the **Review + create** pane. 单击 **"创建** "以应用规则。
 
@@ -119,7 +119,7 @@ ASR 规则报告页面位于 **报告攻击Microsoft 365 Defender**  >    >  **�
 > ![攻击面减少规则检测筛选规则](images/asr-defender365-filter.png)
 
 >[!Note]
->如果你有 Microsoft Microsoft 365 安全 E5 或 A5、Windows E5 或 A5 许可证，则以下链接将打开 Microsoft Defender 365 报告 >[攻击](https://security.microsoft.com/asr?viewid=detections)面>检测"选项卡。
+>如果你有 Microsoft Microsoft 365 安全 E5 或 A5、Windows E5 或 A5 许可证，以下链接将打开 Microsoft Defender 365 报告 > 攻击面减少[>](https://security.microsoft.com/asr?viewid=detections)检测"选项卡。
 
 ### <a name="configuration-tab"></a>"配置"选项卡
 
@@ -133,7 +133,7 @@ ASR 规则报告页面位于 **报告攻击Microsoft 365 Defender**  >    >  **�
 > [!div class="mx-imgBorder"]
 > ![攻击面减少规则已启用和模式](images/asr-defender365-configurations.settings.png)
 
-"**入门"** 链接Microsoft Endpoint Manager管理中心，可在其中为 ASR 创建或修改终结点保护策略：
+"**入门**"链接将Microsoft Endpoint Manager管理中心，可在其中为 ASR 创建或修改终结点保护策略：
 
 > [!div class="mx-imgBorder"]
 > ![MEM 中的攻击面减少规则](images/asr-defender365-05b-mem1.png)
@@ -149,7 +149,7 @@ ASR 规则报告页面位于 **报告攻击Microsoft 365 Defender**  >    >  **�
 > ![终结点安全管理窗格](images/asr-defender365-05b-mem3.png)
 
 >[!Note]
->如果你有 Microsoft Defender 365 E5 (或 Windows E5？) 许可证，此链接将打开 Microsoft Defender 365 报告>攻击面减少 >[配置](https://security.microsoft.com/asr?viewid=configuration)"选项卡。
+>如果你有 Microsoft Defender 365 E5 (或 Windows E5？) 许可证，此链接将打开 Microsoft Defender 365 报告 > 攻击面减少 >[配置](https://security.microsoft.com/asr?viewid=configuration)"选项卡。
 
 ### <a name="add-exclusions"></a>添加排除项
 
@@ -162,14 +162,14 @@ ASR 规则报告页面位于 **报告攻击Microsoft 365 Defender**  >    >  **�
 > ![终结点安全 Asr 工具](Images/asr-defender365-06d.png)
 
 > [!Note]
->如果你有 Microsoft Defender 365 E5 (或 Windows E5？) 许可证，此链接将打开 Microsoft Defender 365 报告>攻击面减少>[排除](https://security.microsoft.com/asr?viewid=exclusions)"选项卡。
+>如果你有 Microsoft Defender 365 E5 (或 Windows E5？) 许可证，此链接将打开 Microsoft Defender 365 报告>攻击面减少 >[排除"选项卡](https://security.microsoft.com/asr?viewid=exclusions)。
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题
 
-[攻击面减少规则部署指南 - 概述](attack-surface-reduction-rules-deployment.md)
+[ASR 规则部署指南 - 概述](attack-surface-reduction-rules-deployment.md)
 
-[攻击面减少规则部署阶段 1 - 计划](attack-surface-reduction-rules-deployment-phase-1.md)
+[ASR 规则部署阶段 1 - 计划](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[攻击面减少规则部署阶段 3 - 实施](attack-surface-reduction-rules-deployment-phase-3.md)
+[ASR 规则部署阶段 3 - 实现](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[攻击面减少规则部署阶段 4 - 可操作](attack-surface-reduction-rules-deployment-phase-4.md)
+[ASR 规则部署阶段 4 - 可操作](attack-surface-reduction-rules-deployment-phase-4.md)

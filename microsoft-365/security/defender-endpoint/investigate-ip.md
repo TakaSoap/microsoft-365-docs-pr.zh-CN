@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: d6a6b9161aa613ff16aba86169eff58ac2cc113e
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 2e314f15719d4a6a0e75d5fd26ae788e2382b75a
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588013"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217886"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>调查与 Microsoft Defender for Endpoint 警报关联的 IP 地址
 
@@ -30,13 +30,14 @@ ms.locfileid: "60588013"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-检查设备和外部 Internet 协议与 IP 地址 () 通信。
+检查你的设备和外部 Internet 协议与 IP (地址) 通信。
 
 标识组织中与可疑或已知的恶意 IP 地址通信的所有设备，如命令和控制 (C2) 服务器，有助于确定潜在的泄露范围、关联文件和受感染的设备。
 
@@ -74,7 +75,7 @@ ms.locfileid: "60588013"
 2. 在"搜索"字段中 **输入** IP 地址。
 3. 单击搜索图标或按 **Enter。**
 
-将显示有关 IP 地址的详细信息，包括：注册详细信息 (（如果) 可用）、反向 IP (例如域) 、在可选择的时间段) 内与此 IP 地址 (通信的组织中设备的普遍程度，以及组织中观测到与此 IP 地址通信的设备。
+将显示有关 IP 地址的详细信息，包括：注册详细信息 (（如果可用) 、反向 IP (例如域) 、在可选择的时间段) 内与此 IP 地址 (通信的组织中设备的普遍程度，以及组织中观测到与此 IP 地址通信的设备。
 
 > [!NOTE]
 > 将仅返回与组织中设备通信时观察到的 IP 地址的搜索结果。

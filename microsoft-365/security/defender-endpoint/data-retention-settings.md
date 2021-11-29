@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e58fc856cf1af6a51e4ded8c167e1d6b18d11f4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fb27a097f2f9dfd26e1b611c56be6d078ecadc52
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207925"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217430"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>验证数据存储位置并更新 Microsoft Defender for Endpoint 的数据保留设置
 
@@ -27,7 +27,8 @@ ms.locfileid: "60207925"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -41,7 +42,7 @@ ms.locfileid: "60207925"
 在 [设置阶段](production-deployment.md)，你已选择存储数据的位置。 
 
 
-通过导航到"常规"菜单下的"终结点 \> **设置"** 数据 (\> **验证) 。**
+通过导航到"常规""终结点"下设置终结点数据 (\>  \> **验证) 。**
 
 
 ## <a name="update-data-retention-settings"></a>更新数据保留设置

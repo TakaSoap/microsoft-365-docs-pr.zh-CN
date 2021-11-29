@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: baedfaf23ed8012a04eb25407ac614efd51fd882
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: fbed4f51fcd0b2154c46a88dc3d408330238ec63
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61144984"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217646"
 ---
 # <a name="manage-indicators"></a>管理指示器
 
@@ -28,7 +28,8 @@ ms.locfileid: "61144984"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -71,10 +72,10 @@ title|String|指示器警报标题。 **Required**
 expirationTime|DateTimeOffset|指示器的过期时间，格式为 YYYY-MM-DDTHH：MM：SS.0Z。 **可选**
 severity|枚举|指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。 **可选**
 recommendedActions|String|TI 指示器警报建议操作。 **可选**
-rbacGroupNames|字符串|将应用指示器的 RBAC 组名称的逗号分隔列表。 **可选**
+rbacGroupNames|String|将应用指示器的 RBAC 组名称的逗号分隔列表。 **可选**
 “类别”|String|警报的类别。 示例包括：执行和凭据访问。 **可选**
 mitretechniques|String|MITRE 技术代码/id (逗号分隔) 。 有关详细信息，请参阅策略[Enterprise策略](https://attack.mitre.org/tactics/enterprise/)。 **可选** 建议在 MITRE 技术时在类别中添加值。
-GenerateAlert|字符串|是否应该生成警报。 可能的值是：True 或 False。 **可选**
+GenerateAlert|String|是否应该生成警报。 可能的值是：True 或 False。 **可选**
 
 
 

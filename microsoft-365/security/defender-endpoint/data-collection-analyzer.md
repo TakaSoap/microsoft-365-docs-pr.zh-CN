@@ -18,26 +18,27 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 469e1cd227e83facb678c85bd123f4ea250cd08c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 07660b2d15adae7eb2534b8b9a7bcfbb6b311571
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555904"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218210"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>用于在 Windows 上进行高级故障排除的数据收集
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-与 Microsoft 支持专业人员协作时，系统可能会要求你使用客户端分析器收集数据，以对更复杂的方案进行疑难解答。 分析器脚本支持用于此目的的其他参数，并可以基于需要调查的观察到症状收集特定日志集。
+与 Microsoft 支持专业人员协作时，系统可能会要求您使用客户端分析器收集数据，以排查更复杂的方案。 分析器脚本支持用于此目的的其他参数，并可以基于需要调查的观察到症状收集特定日志集。
 
 运行 '**MDEClientAnalyzer.cmd /？**' 查看可用参数的列表及其说明：
 
 ![命令行中的客户端分析器参数的图像。](images/d89a1c04cf8441e4df72005879871bd0.png)
 
 > [!NOTE]
-> 使用任何高级疑难解答参数时，分析器还会调用[](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance)MpCmdRun.exe以收集Microsoft Defender 防病毒支持日志。
+> 使用任何高级疑难解答参数时，分析器还会调用[MpCmdRun.exe以收集](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance)Microsoft Defender 防病毒支持日志。
 
 **-h** - 调用 [Windows记录](/windows-hardware/test/wpt/wpr-command-line-options)器以收集详细的常规性能跟踪以及标准日志集。
 
@@ -49,18 +50,18 @@ ms.locfileid: "60555904"
 
 **-b** - 与"-c"相同，但进程监视器跟踪将在下次启动期间启动，并且仅在再次使用 -b 时停止。
 
-**-a** -[调用 Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options)以收集特定于与防病毒进程 (MsMpEng.exe) 相关的高 CPU 问题分析的具体性能跟踪。
+**-a** -[调用Windows](/windows-hardware/test/wpt/wpr-command-line-options)记录器以收集特定于与防病毒进程 (MsMpEng.exe) 相关的高 CPU 问题分析的具体性能跟踪。
 
-**-v** - 使用MpCmdRun.exe [ 最](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) 详细 -trace 标志的命令行参数。
+**-v** - 使用MpCmdRun.exe [ 最详细](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) -trace 标志的命令行参数。
 
 **-t** - 启动与 Endpoint DLP 相关的所有客户端组件详细跟踪。 这适用于 [DLP](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) 操作未如预期发生的文件方案。
 
-**-q** - 从DLPDiagnose.ps1工具"目录调用终结点 DLP 的基本配置和要求的工具脚本。
+**-q** - 从验证 Endpoint DLP DLPDiagnose.ps1配置和要求的分析器"工具"目录中调用脚本。
 
 **-d** - 收集 MsSense **S** 的内存转储，.exe (或较旧的操作系统Windows Server 2016及相关) 进程上的传感器进程。
 
 - \* 此标志可与上述标志结合使用。
-- \*\* 目前，分析器不支持捕获 [受 PPL](/windows-hardware/drivers/install/early-launch-antimalware) 保护的进程（MsSense.exe或 MsMpEng.exe 进程）的内存转储。
+- \*\* 目前，分析器不支持捕获 [受 PPL](/windows-hardware/drivers/install/early-launch-antimalware) 保护的进程（MsSense.exe或MsMpEng.exe进程）的内存转储。
 
 **-z** - 配置计算机上注册表项，以通过 [CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard)将其准备用于完整的计算机内存转储集合。 这对分析计算机冻结问题非常有用。
 
@@ -80,6 +81,6 @@ ms.locfileid: "60555904"
 >
 >    **MDEClientAnalyzer.cmd -r -i -m 5**
 >
->   - **-r** - 指示工具正在从远程上下文 (或非交互上下文) 
+>   - **-r** - 指示工具正在从远程环境或非交互 (运行) 
 >   - **-i** - 用于收集网络跟踪以及其他相关日志的方案标志
 >   - **-m** \# - 在以上示例中运行 (5 分钟的分钟数) 

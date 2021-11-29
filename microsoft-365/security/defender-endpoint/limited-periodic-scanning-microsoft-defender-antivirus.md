@@ -1,6 +1,6 @@
 ---
 title: 启用有限定期Microsoft Defender 防病毒扫描功能
-description: 有限定期扫描使你除了Microsoft Defender 防病毒安装的 AV 提供程序之外，还可以使用
+description: 有限定期扫描使你除了Microsoft Defender 防病毒安装的 AV 提供程序之外，还能够使用
 keywords: lps， 受限， 定期， 扫描， 兼容性， 第三方， 其他 av， 禁用
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c97947ae081d6b01db2717cfc35a4c328e7c61ec
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e0a8293709da44dc3a46cf565ad099666e8dae24
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555760"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217436"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>在 Microsoft Defender 防病毒程序内使用有限的定期扫描
 
@@ -29,9 +29,10 @@ ms.locfileid: "60555760"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-有限定期扫描是一种特殊类型的威胁检测和修正，可在你已安装其他防病毒产品后在 Windows 10 或 Windows 11 设备上启用。
+有限定期扫描是一种特殊类型的威胁检测和修正，当你在设备或设备上安装了其他防病毒产品Windows 10 Windows 11启用。
 
 它只能在特定情况下启用。 有关有限定期扫描以及Microsoft Defender 防病毒防病毒产品的工作方式的详细信息，请参阅Microsoft Defender 防病毒[兼容性](microsoft-defender-antivirus-compatibility.md)。
 
@@ -45,9 +46,9 @@ ms.locfileid: "60555760"
 
 ![Windows 安全中心 Microsoft Defender AV 选项（包括扫描选项、设置和更新选项）的应用。](images/vtp-wdav.png)
 
-如果安装了另一个防病毒产品并正常运行，Microsoft Defender 防病毒将自行禁用。 Windows 安全中心应用将更改病毒&威胁防护部分，以显示有关 AV 产品的状态，并提供指向产品配置选项的链接。
+如果安装了另一个防病毒产品并正常运行，Microsoft Defender 防病毒将自行禁用。 该Windows 安全中心应用将更改病毒&威胁防护部分，以显示有关 AV 产品的状态，并提供指向产品配置选项的链接。
 
-在任何第三方 AV 产品下，新链接将显示为Microsoft Defender 防病毒 **选项。** 单击此链接将展开以显示启用有限定期扫描的切换。 请注意，有限定期选项是启用或禁用定期扫描的开关。 
+在任何第三方 AV 产品下，新链接将显示为Microsoft Defender 防病毒 **选项**。 单击此链接将展开以显示启用有限定期扫描的切换。 请注意，有限定期选项是启用或禁用定期扫描的开关。 
 
 将开关滑动到 **开** 将显示第三方 AV 产品下方的标准 Microsoft Defender AV 选项。 有限定期扫描选项将显示在页面底部。
 

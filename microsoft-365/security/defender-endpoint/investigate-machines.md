@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 83f025ed8319e74eaa2e908765a1ac1922ac8415
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 185e0009fda70f78ca93f4bc72b2fb844508c111
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587845"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217898"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>调查 Microsoft Defender 终结点设备列表中的设备
 
@@ -29,7 +29,7 @@ ms.locfileid: "60587845"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)。
@@ -152,7 +152,7 @@ ms.locfileid: "60587845"
 
 ### <a name="security-recommendations"></a>安全性建议
 
-**安全建议** 从 Microsoft Defender 针对终结点的威胁和漏洞& [生成](tvm-dashboard-insights.md) 。 选择建议将显示一个面板，您可以在其中查看相关详细信息，如建议说明和与不实施建议相关的潜在风险。 有关详细信息 [，请参阅安全](tvm-security-recommendation.md) 建议。
+**安全建议** 从 Microsoft Defender 针对终结点的威胁和& [漏洞管理功能生成](tvm-dashboard-insights.md) 。 选择建议将显示一个面板，您可以在其中查看相关详细信息，如建议说明和与不实施建议相关的潜在风险。 有关详细信息 [，请参阅安全](tvm-security-recommendation.md) 建议。
 
 ![安全建议选项卡的图像。](images/security-recommendations-device.png)
 

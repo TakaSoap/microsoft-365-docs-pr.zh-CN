@@ -1,5 +1,5 @@
 ---
-title: 攻击面减少规则部署阶段 3 - 实施
+title: ASR 规则部署阶段 3 - 实现
 description: 提供实现攻击面减少规则部署的指南。
 keywords: 攻击面减少规则部署， ASR 部署， 启用 asr 规则， 配置 ASR， 主机入侵防护系统， 保护规则， 反攻击规则， 反攻击， 攻击规则， 感染防护规则， Microsoft Defender for Endpoint， 配置 ASR 规则
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8489e31f0178fb4c0ab8e5159a71bc0691276689
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 6556389ecef571626c1927aca9341945f113d150
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171727"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217403"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-3-implement"></a>攻击面减少规则部署阶段 3：实施
 
@@ -65,10 +65,10 @@ ms.locfileid: "61171727"
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题
 
-[攻击面减少规则部署指南 - 概述](attack-surface-reduction-rules-deployment.md)
+[ASR 规则部署指南 - 概述](attack-surface-reduction-rules-deployment.md)
 
-[攻击面减少规则部署阶段 1 - 计划](attack-surface-reduction-rules-deployment-phase-1.md)
+[ASR 规则部署阶段 1 - 计划](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[攻击面减少规则部署阶段 2 - 测试](attack-surface-reduction-rules-deployment-phase-2.md)
+[ASR 规则部署阶段 2 - 测试](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[攻击面减少规则部署阶段 4 - 可操作](attack-surface-reduction-rules-deployment-phase-4.md)
+[ASR 规则部署阶段 4 - 可操作](attack-surface-reduction-rules-deployment-phase-4.md)

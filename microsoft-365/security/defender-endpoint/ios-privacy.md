@@ -16,17 +16,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcfa13256807e5a3f55d2f26fb5c7bafd4645cda
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4fc5d4fb51170a70edc8664d5ccba0943b93353d
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188885"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217382"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>隐私信息 - 适用于 iOS 上的终结点的 Microsoft Defender
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
@@ -52,9 +53,9 @@ iOS 上的 Defender for Endpoint 从已配置的 iOS 设备收集信息，并存
 
 ### <a name="device-and-account-information"></a>设备和帐户信息
 
-- 设备信息，如&时间、iOS 版本、CPU 信息和设备标识符，其中设备标识符为以下项之一：
+- 诸如日期、&、iOS 版本、CPU 信息和设备标识符等设备信息，其中设备标识符为以下项之一：
   - Wi-Fi适配器 MAC 地址
-  - GUID 记录中随机生成的 (唯) 
+  - GUID 值中随机生成的 (唯一) 
 - 租户、设备和用户信息
   - Azure Active Directory (AD) 设备 ID 和 Azure 用户 ID - 唯一标识设备，即 Azure Active directory 中的用户。
   - Azure 租户 ID - 标识组织内部Azure Active Directory。

@@ -15,19 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e90495ee1f803731296cc1df6b55ddf99bbdad35
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: da37abb5251a59f22f03cfb6462bc68ad4193dd7
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240473"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217718"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>创建 IP 和 URL/域指示器
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -43,9 +43,9 @@ Defender for Endpoint 可以阻止 Microsoft 视为恶意 IP/URL、通过适用�
 如果你认为某些组的风险大于或低于其他组，可以通过设置页面或计算机组来这样做。
 
 > [!NOTE]
-> IP 地址Inter-Domain无 (CIDR) 表示法不受支持。
+> 不支持无Inter-Domain IP (CIDR) 表示法。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 在创建 IPS、URL 或域的指示器之前，了解以下先决条件非常重要：
 
 - URL/IP 允许和阻止依赖于 Defender for Endpoint 组件网络保护在阻止模式下启用。 有关网络保护和配置说明详细信息，请参阅启用 [网络保护](enable-network-protection.md)。
@@ -53,7 +53,7 @@ Defender for Endpoint 可以阻止 Microsoft 视为恶意 IP/URL、通过适用�
 - 在 Windows 10 版本 1709 或更高版本、Windows 11、Windows Server 2016、Windows Server 2012 R2、Windows Server 2019 和 Windows Server 2022 上支持。
    
     >[!NOTE]
-    >Windows Server 2016和 Windows Server 2012 R2 将需要按照[载入 Windows 服务器](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)中的说明载入，此功能将正常工作。 
+    >Windows Server 2016和 Windows Server 2012 R2 将需要按照载入 Windows[服务器](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)中的说明载入，此功能将正常工作。 
 
 - 确保自定义 **网络指示器在** 高级Microsoft Defender 安全中心 > 设置 >**中启用**。 有关详细信息，请参阅高级 [功能](advanced-features.md)。
 - 有关 iOS 上的指示器支持，请参阅 [配置自定义指示器](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)。
@@ -68,11 +68,11 @@ Defender for Endpoint 可以阻止 Microsoft 视为恶意 IP/URL、通过适用�
 >
 > - 所有三种协议均支持 IP
 > - 没有 CIDR 块或 IP 范围 (仅支持单个 IP 地址) 
-> - 只有在第一 (、边缘) 浏览器上才能阻止加密的 URL (Internet Explorer完整) 
-> - 只有在 FQDN (FQDN) 才能阻止第一方浏览器（ (Internet Explorer、边缘) 
-> - 可以在域级别应用完整 URL 路径块，并应用所有未加密的 URL
+> - 只有在第一 (浏览器) 、边缘和边缘 (Internet Explorer才能阻止加密的 URL 和完整) 
+> - 只有 FQDN (FQDN 的加密) ，才能阻止第一方浏览器 (Internet Explorer、边缘) 
+> - 完整 URL 路径块可以应用于域级别以及所有未加密的 URL
 >
-> 延迟时间可能最多为 2 (，) 和阻止 URL 和 IP 之间的延迟通常更少。
+> 延迟时间可能最多为 2 小时 (通常) 操作和阻止 URL 和 IP 之间的延迟时间通常较少。
 
 使用警告模式时，可以配置以下控件：
 
@@ -93,7 +93,7 @@ Defender for Endpoint 可以阻止 Microsoft 视为恶意 IP/URL、通过适用�
 
 ## <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>从设置页面为 IP、URL 或域创建指示器
 
-1. 在导航窗格中，选择"设置"下 (终结点 \>  \> ) 。 
+1. 在导航窗格中，选择"设置规则"下 (\>  \> 终结点) 。 
 
 2. 选择 **"IP 地址或 URL/域"** 选项卡。
 

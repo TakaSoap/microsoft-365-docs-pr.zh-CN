@@ -15,36 +15,36 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b3cfbfc2e0330ce7b09bc34d379d45fc75dde8ca
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: e27439a23d21dd95bb717104b5d87291b7e4592f
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586109"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218438"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>调查正向代理背后发生的连接事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)。
 
 Defender for Endpoint 支持来自不同级别的网络堆栈的网络连接监视。 一个难题是，当网络使用转发代理作为 Internet 网关时。
 
-代理的作用就像它是目标终结点一样。 在这些情况下，简单的网络连接监视器将审核与代理的连接，该代理是正确的，但调查值较低。
+代理的作用就像它是目标终结点一样。 在这些情况下，简单的网络连接监视器将审核与正确但调查值较低的代理的连接。
 
 Defender for Endpoint 通过网络保护支持高级 HTTP 级别监视。 打开后，将显示新的事件类型，以公开真实目标域名。
 
 ## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a>使用网络保护监视防火墙后的网络连接
 
-由于源自网络保护的其他网络事件，可以监视转发代理后面的网络连接。 若要在设备时间线上查看它们，请至少 (在审核模式下打开网络) 。
+由于源自网络保护的其他网络事件，可以监视转发代理后面的网络连接。 若要在设备时间线上查看它们，请至少 (审核模式启用网络) 。
 
 可以使用以下模式控制网络保护：
 
-- **阻止**：将阻止用户或应用连接到危险域。 你将能够在"活动"中查看Microsoft Defender 安全中心。
+- **阻止**：将阻止用户或应用连接到危险域。 你将能够在"活动"中查看此Microsoft Defender 安全中心。
 - **审核**：不会阻止用户或应用连接到危险域。 但是，你仍将看到此活动Microsoft Defender 安全中心。
 
 

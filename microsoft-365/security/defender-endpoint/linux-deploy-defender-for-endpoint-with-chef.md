@@ -14,18 +14,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6db031fd473475a07581faf476e3989bd68e4407
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 212d6464fa471e848eb83d06004bdf2796dc0a64
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704519"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217634"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>通过 Chef 在 Linux 上部署 Defender for Endpoint
 
+**适用于：**
+
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 开始之前：安装解压缩（如果尚未安装）。
 
-已安装开发组件，并且存在一个 Repositor 存储库 (生成存储库) 以存储将用于部署到 Endpoint 托管 Linux 服务器上 Defender for Endpoint 的指南 \<reponame\> 。
+已安装开发组件，并且存在一个" (存储库"生成存储库) 以存储将用于部署到 Endpoint 托管 Linux 服务器上 Defender for Endpoint 的指南 \<reponame\> 。
 
 可以通过从你的存储库内的"手册"文件夹内运行以下命令，在现有的存储库中创建新的手册：
 
@@ -113,8 +117,8 @@ end
 
 请确保将路径名称更新为载入文件的位置。
 若要测试在部署工作站上部署它，只需运行 ``sudo chef-client -z -o mdatp`` 。
-部署后，应考虑根据在 Linux 上为 Microsoft Defender for Endpoint 设置首选项，创建配置文件并 [部署到服务器](/linux-preferences.md)。
-创建并测试配置文件后，你可以将该文件放置到指南/mdatp/files文件夹中，其中还放置了载入程序包。 然后，可以在 mdatp/recipies settings_mdatp创建一个 settings_mdatp.rb 文件并添加以下文本：
+部署后，你应考虑根据在 Linux 上设置 Microsoft Defender for Endpoint 的首选项，创建配置文件并 [部署到服务器](/linux-preferences.md)。
+创建并测试配置文件后，你可以将该文件放置到指南/mdatp/files文件夹中，其中还放置了载入程序包。 然后，可以在 mdatp/recipies 文件夹中创建 settings_mdatp.rb 文件并添加以下文本：
 
 ```powershell
 #Copy the configuration file
@@ -128,7 +132,7 @@ end
 ```
 
 若要将此步骤作为食谱的一部分包含，只需include_recipe将"：：settings_mdatp"添加到食谱文件夹中的 default.rb 文件中。
-还可使用 crontab 计划自动更新[计划 Microsoft Defender for Endpoint (Linux) 。 ](linux-update-MDE-Linux.md)
+还可使用 crontab 安排自动更新 计划 Microsoft Defender 终结点更新 ([Linux) 。 ](linux-update-MDE-Linux.md)
 
 卸载 MDATP 手册：
 

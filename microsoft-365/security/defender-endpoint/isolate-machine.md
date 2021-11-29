@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 639b2255b7bef0e673a5816aed0da48715c682f6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f01a63dd5a2fa5d5aa56f171617041044a267fbb
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204067"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218126"
 ---
 # <a name="isolate-machine-api"></a>隔离计算机 API
 
@@ -29,7 +29,8 @@ ms.locfileid: "60204067"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -51,9 +52,9 @@ ms.locfileid: "60204067"
 
 > [!IMPORTANT]
 >
-> - 完全隔离适用于 Windows 10 版本 1703 上的设备。
-> - 选择性隔离适用于 Windows 10版本 1709 或更高版本上的设备。
-> - 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议对适用于终结点的 Microsoft Defender 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
+> - 完全隔离适用于版本 1703 Windows 10上的设备。
+> - 选择性隔离适用于 Windows 10 版本 1709 或更高版本上的设备。
+> - 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议为 Microsoft Defender for Endpoint 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
 
 ## <a name="permissions"></a>权限
 
@@ -89,7 +90,7 @@ Content-Type|string|application/json. 必需。
 
 参数|类型|说明
 :---|:---|:---
-评论|字符串|要与操作关联的注释。 **必需**。
+评论|字符串|要与操作关联的注释。 必需。
 IsolationType|String|隔离的类型。 允许的值包括："Full"或"Selective"。
 
 **IsolationType** 控制要执行隔离的类型，可以是下列类型之一：

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: db2e25cb2d1690adeb581ece309e4a368471f192
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b86cad016af0f7819d69f0156498336652e6292d
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206943"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218102"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上配置并验证 Microsoft Defender for Endpoint 的排除项
 
@@ -28,7 +28,7 @@ ms.locfileid: "60206943"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
@@ -36,7 +36,7 @@ ms.locfileid: "60206943"
 本文提供有关如何定义适用于按需扫描以及实时保护和监视的排除项的信息。
 
 > [!IMPORTANT]
-> 本文中介绍的排除项不适用于 Linux 上的其他 Defender for Endpoint 功能，包括终结点检测和响应 (EDR) 。 使用本文中所述的方法排除的文件仍可以触发EDR检测。
+> 本文中介绍的排除项不适用于 Linux 上的其他 Defender for Endpoint 功能，包括终结点检测和响应 (EDR) 。 使用本文中介绍的方法排除的文件仍可以触发EDR检测。
 
 你可以从 Linux 扫描上的 Defender for Endpoint 中排除某些文件、文件夹、进程和进程打开的文件。
 
@@ -54,7 +54,7 @@ ms.locfileid: "60206943"
 文件扩展名|扩展名位于设备上任意位置的所有文件|`.test`
 文件|由完整路径标识的特定文件|`/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Folder|指定文件夹下的所有 (以递归) |`/var/log/`<br/>`/var/*/`
-流程|由 (的完整路径或文件名指定的特定进程) 及其打开的所有文件|`/bin/cat`<br/>`cat`<br/>`c?t`
+流程|由 (的完整路径或文件名指定的特定) 及其打开的所有文件|`/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
 > 上述路径必须是硬链接，而不是符号链接，才能成功排除。 可以通过运行 来检查路径是否为符号链接 `file <path-name>` 。
@@ -63,7 +63,7 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/`<br/>`/var/*/`
 
 通配符|说明|示例|匹配|不匹配
 ---|---|---|---|---
-\*|匹配任意数目的任何字符，包括无字符 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+\*|匹配任意数目的任何字符，包括无 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
 ?|匹配任何单个字符|`file?.log`|`file1.log`<br/>`file2.log`|`file123.log`
 
 ## <a name="how-to-configure-the-list-of-exclusions"></a>如何配置排除项列表

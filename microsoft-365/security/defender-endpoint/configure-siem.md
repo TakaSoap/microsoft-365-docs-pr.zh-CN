@@ -15,19 +15,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a08aca1749e9d5dc613b97347cbb040fe9f6e40c
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: e241ae3b5250839d98d1692f38fb36333e9a69ca
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804757"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218666"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>将 SIEM 工具与 Microsoft Defender for Endpoint 集成
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 ## <a name="ingest-alerts-using-security-information-and-events-management-siem-tools"></a>使用 SIEM 工具中的安全信息和事件 (接收) 警报
@@ -65,12 +67,12 @@ Microsoft Defender for Endpoint 当前支持以下 SIEM 解决方案集成：
 
 ### <a name="splunk"></a>Splunk
 
-使用Microsoft 365 Defender Splunk 的加载项： 
+使用Microsoft 365 Defender Splunk 加载项支持： 
 
 - 为终结点警报接收 Microsoft Defender 
 - 在 Microsoft Defender for Endpoint 中从 Splunk 更新警报 
 
-有关 Splunk Microsoft 365 Defender加载项的信息，请参阅[splunkbase](https://splunkbase.splunk.com/app/4959/)。
+有关 Splunk 加载项Microsoft 365 Defender，请参阅[splunkbase](https://splunkbase.splunk.com/app/4959/)。
 
 ### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
 
@@ -78,13 +80,13 @@ Microsoft Defender for Endpoint 当前支持以下 SIEM 解决方案集成：
 
 有关适用于新 ArcSight SmartConnector for Microsoft 365 Defender，请参阅[ArcSight 产品文档](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender)。
 
-SmartConnector 将替换以前用于Microsoft 365 Defender。
+SmartConnector 取代了以前为 Microsoft 365 Defender。
   
 ### <a name="ibm-qradar"></a>IBM QRadar
 
 >[!NOTE]
 >
->IBM QRadar 与 Microsoft Defender for Endpoint 的集成现在受新的 Microsoft 365 Defender 设备支持模块 (DSM) 支持，该模块调用 Microsoft 365 Defender 流式处理[API，](../defender/streaming-api.md)允许从 Microsoft 365 Defender 产品（包括 Microsoft）中提供流式处理事件数据适用于终结点的 Defender。 有关受支持的事件类型详细信息，请参阅支持 [的事件类型](../defender/supported-event-types.md)。
+>IBM QRadar 与 Microsoft Defender for Endpoint 的集成现在受新的 Microsoft 365 Defender 设备支持模块 (DSM) 支持，该模块调用允许从 Microsoft 365 Defender 中纳入流式处理事件数据的 Microsoft 365 Defender 流式处理[API](../defender/streaming-api.md) 产品，包括 Microsoft Defender for Endpoint。 有关受支持的事件类型详细信息，请参阅支持 [的事件类型](../defender/supported-event-types.md)。
 不再使用之前的 QRadar Microsoft Defender ATP 设备支持模块 (DSM) 载入新客户，建议现有客户采用新的 Microsoft 365 Defender DSM 作为他们与所有 Microsoft 365 Defender 产品的单一集成点。
 
 ## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>从事件流 API 中为终结点事件Microsoft 365 Defender Microsoft Defender

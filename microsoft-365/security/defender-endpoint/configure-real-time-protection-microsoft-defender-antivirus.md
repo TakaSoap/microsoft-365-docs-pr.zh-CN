@@ -15,23 +15,24 @@ ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b428767dab4a3087c857de389ee8e6b66f3e42ab
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 6e5ca79903824024eb906d9899c8fdb1ac6e1180
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588188"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217982"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>在组策略中启用和配置 Microsoft Defender 防病毒软件始终启用保护
 
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 始终持续保护包括实时保护、行为监视和启发，以根据已知的可疑和恶意活动识别恶意软件。
 
-这些活动包括事件，如进程对现有文件进行异常更改、修改或创建自动启动注册表项和启动位置 (也称为自动启动扩展点或 ASP) ，以及对文件系统或文件结构的其他更改。
+这些活动包括事件，如进程对现有文件进行异常更改、修改或创建自动启动注册表项和启动位置 (也称为自动启动扩展点或 ASP) ，以及文件系统或文件结构的其他更改。
 
 ## <a name="enable-and-configure-always-on-protection-in-group-policy"></a>在组策略中启用和配置始终启用的保护
 
@@ -41,25 +42,25 @@ ms.locfileid: "60588188"
 
 1. 打开 **"本地组策略编辑器"，** 如下所示：
 
-    1. 在"Windows 10或Windows 11搜索"框中，键入 **gpedit**。
+    1. 在"Windows 10或Windows 11"搜索框中，键入 **gpedit**。
 
     2. 在 **"最佳匹配"** 下 **，选择"编辑组策略**"以启动 **"本地组策略编辑器"。**
     
        ![GPEdit 任务栏搜索结果。](images/gpedit-search.png)
 
-2. 在本地组策略 **编辑器** 的左窗格中，将树展开到计算机配置管理模板 \>  \> **Windows 组件** \> **Microsoft Defender 防病毒。**
+2. 在本地组策略 **编辑器** 的左窗格中，将树展开到计算机配置管理模板 \>  \> **Windows 组件** \> **Microsoft Defender 防病毒**。
 
 3. 配置Microsoft Defender 防病毒反恶意软件服务策略设置。
 
-   在Microsoft Defender 防病毒 **详细信息**"窗格中，双击"允许反恶意软件服务启动 **正常** 优先级"，并设置为 **"已启用"。**
+   在Microsoft Defender 防病毒 **详细信息**"窗格中，双击"允许 **反** 恶意软件服务启动正常优先级"，并设置为"**已启用"。**
 
    然后，选择“**确定**”。
 
 4. 配置Microsoft Defender 防病毒实时保护策略设置，如下所示：
 
-    1. 在Microsoft Defender 防病毒 **详细信息**"窗格中，双击"**实时保护"。** 或者，**在左Microsoft Defender 防病毒** 树中，选择 **"实时保护"。**
+    1. 在Microsoft Defender 防病毒 **详细信息**"窗格中，双击"**实时保护"。** 或者，**从左Microsoft Defender 防病毒** 树中选择"**实时保护"。**
 
-    2. 在 **右侧"实时** 保护"详细信息窗格中，双击本文稍后介绍的"实时保护策略 (中 [](#real-time-protection-policy-settings)指定的策略) 。
+    2. 在 **右侧"实时** 保护详细信息"窗格中，双击本文稍后介绍的"实时保护策略设置" (中指定的) 。 [](#real-time-protection-policy-settings)
 
     3. 配置相应设置，然后选择"确定 **"。**
 
@@ -67,7 +68,7 @@ ms.locfileid: "60588188"
 
 5. 配置Microsoft Defender 防病毒扫描策略设置，如下所示：
 
-    1. From the **Microsoft Defender 防病毒** tree on left pane， select **Scan**.
+    1. 从左 **Microsoft Defender 防病毒** 树中，选择"扫描 **"。**
     
    2. 在右侧 **"** 扫描详细信息"窗格中，双击"**启用启发** 式"，将其设置为 **"已启用"。** 
 
@@ -77,11 +78,11 @@ ms.locfileid: "60588188"
 
 ### <a name="real-time-protection-policy-settings"></a>实时保护策略设置
 
-|Setting|默认设置|
+|设置|默认设置|
 |---|---|
 |打开行为监视 <p> 防病毒引擎将监视终结点上的文件进程、文件和注册表更改以及其他事件，以发现可疑和已知的恶意活动。|已启用|
-|扫描所有下载的文件和附件 <p> 将自动扫描下载的文件和附件。 除了 SmartScreen 筛选器之外，此扫描Windows Defender SmartScreen 筛选器在下载之前和下载过程中扫描文件。|已启用|
-|监视您的计算机上的文件和程序活动 <p> Microsoft Defender 防病毒 引擎会记录任何文件更改 (文件写入，例如移动、复制或修改) 以及一般程序活动 (程序，这些程序已打开或正在运行，导致其他程序运行) 。|已启用|
+|扫描所有下载的文件和附件 <p> 将自动扫描下载的文件和附件。 除了 SmartScreen 筛选器之外，此扫描Windows Defender，该筛选器在下载之前和下载过程中扫描文件。|已启用|
+|监视您的计算机上的文件和程序活动 <p> Microsoft Defender 防病毒 引擎会记录 (文件写入的任何文件更改，例如移动、复制或修改) 以及打开或运行的导致其他程序运行) 的常规程序活动 (程序。|已启用|
 |打开原始卷写入通知 <p> 行为监视将分析有关原始卷写入的信息。|已启用|
 |启用实时保护时打开进程扫描 <p> 你可以独立启用Microsoft Defender 防病毒引擎扫描正在运行的进程，以发现可疑的修改或行为。 如果你暂时禁用了实时保护，并且想要自动扫描在禁用时启动的进程，这将非常有用。|已启用|
 |定义要扫描的已下载文件和附件的最大大小 <p> 可以定义大小（以 KB 为单位）。|已启用|
@@ -90,7 +91,7 @@ ms.locfileid: "60588188"
 |配置本地设置覆盖以监视您的计算机上的文件和程序活动 <p> 为计算机上文件和程序活动的监视配置配置本地覆盖。 此设置只能由组策略设置。 如果启用此设置，本地首选项设置将优先于组策略。 如果禁用或不配置此设置，则组策略将优先于本地首选项设置。|已启用|
 |配置本地设置覆盖以启用实时保护 <p> 为配置配置配置配置本地覆盖以启用实时保护。 此设置只能由组策略设置。 如果启用此设置，本地首选项设置将优先于组策略。 如果禁用或不配置此设置，则组策略将优先于本地首选项设置。|已启用|
 |配置本地设置覆盖以监视传入和传出文件活动 <p> 为传入和传出文件活动的监视配置配置本地覆盖。 此设置只能由组策略设置。 如果启用此设置，本地首选项设置将优先于组策略。 如果禁用或不配置此设置，则组策略将优先于本地首选项设置。|已启用|
-|配置对传入和传出文件和程序活动的监视 <p> 指定监控应在传入、传出和/或两个方向上执行。 此操作与 Windows Server 安装相关，其中您定义了特定服务器或服务器角色，这些服务器角色仅看到一个方向中的大量文件更改，并且您希望提高网络性能。 网络上 (和) 的完全更新的终结点将几乎看不到性能影响，无论文件更改的数量或方向如何。|启用 (两个方向) |
+|配置对传入和传出文件和程序活动的监视 <p> 指定监控应在传入、传出和/或两个方向上执行。 此操作与 Windows Server 安装相关，其中您定义了特定服务器或服务器角色，这些服务器角色仅看到一个方向中的大量文件更改，并且您希望提高网络性能。 无论文件 (更改) ，网络上已完全更新的终结点和服务器都几乎看不到性能影响。|启用 (两个方向) |
 
 ## <a name="disable-real-time-protection-in-group-policy"></a>在组策略中禁用实时保护
 
@@ -103,10 +104,10 @@ ms.locfileid: "60588188"
 
 1. 打开 **"本地组策略编辑器"。**
 
-   1. 在"Windows 10或Windows 11搜索"框中，键入 **gpedit**。
+   1. 在"Windows 10或Windows 11"搜索框中，键入 **gpedit**。
    2. 在 **"最佳匹配"** 下 **，选择"编辑组策略**"以启动 **"本地组策略编辑器"。**
 
-2. 在本地组策略编辑器的左窗格中，将树展开到计算机配置管理模板 Windows 组件Microsoft Defender 防病毒 \>  \>  \>  \> **实时保护**。
+2. 在本地组策略编辑器的左窗格中，将树展开到计算机配置管理模板 \>  \> **Windows 组件** Microsoft Defender 防病毒 \>  \> **实时保护**。
 
 3. 在 **右侧"实时保护"** 详细信息窗格中，双击"**关闭实时保护"。**
 

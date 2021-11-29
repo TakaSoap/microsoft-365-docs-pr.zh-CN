@@ -1,6 +1,6 @@
 ---
 title: 调查适用于终结点的 Microsoft Defender 文件
-description: 使用调查选项获取有关与警报、行为或事件相关联的文件的详细信息。
+description: 使用调查选项获取有关与警报、行为或事件关联的文件的详细信息。
 keywords: 调查， 调查， 文件， 恶意活动， 攻击动机， 深度分析， 深度分析报告
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,19 +17,20 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: dc0b5326f4f5a0400ea624a85a57bc0cb12b577a
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 704510b6b31e47b1a68ab90ffbf5e6e7353d0969
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588085"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217934"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>调查与 Microsoft Defender for Endpoint 警报关联的文件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 

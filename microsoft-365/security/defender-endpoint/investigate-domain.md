@@ -16,12 +16,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 9f2514c0f43bd8a7f1ab5dade389c0a12f3c4e54
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: bc309c3215524b20ff93c6f1f9c16248fdfffac1
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587785"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218618"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>调查与 Microsoft Defender for Endpoint 警报关联的域
 
@@ -29,7 +29,8 @@ ms.locfileid: "60587785"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatedomain-abovefoldlink)。
@@ -69,7 +70,7 @@ ms.locfileid: "60587785"
 
 " **在组织中观测** 到"选项卡提供有关在 URL 上观测到的事件和关联警报按时间顺序排列的视图。 此选项卡包括时间线和可自定义的表格，其中列出了事件详细信息，如时间、设备和所发生事件的简要说明。 
 
-可以通过在表格标题上方的文本字段中输入日期来查看不同时间段的事件。 您还可以通过选择时间线的不同区域来自定义时间范围。
+您可以通过在表格标题上方的文本字段中输入日期来查看不同时间段的事件。 您还可以通过选择时间线的不同区域来自定义时间范围。
 
 **调查域：**
 

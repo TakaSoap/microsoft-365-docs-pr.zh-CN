@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bf58173d2c17ef66b0cb74f0781038040d25898b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 465a510ef25b0be0ba406c1265096476959d8c19
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168722"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218015"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -46,6 +46,8 @@ ms.locfileid: "61168722"
 2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"选项"。
 
 3. 导航到软件策略Microsoft Windows Defender Windows Defender \>  \>  \>  \> **攻击防护** \> **网络保护**。
+
+如果密钥缺失，请导航到 **软件** \> **Microsoft** \> **Windows Defender Windows Defender** \> **Exploit Guard** \> **网络保护**。
 
 4. 选择 **EnableNetworkProtection** 以查看设备上网络保护的当前状态：
 

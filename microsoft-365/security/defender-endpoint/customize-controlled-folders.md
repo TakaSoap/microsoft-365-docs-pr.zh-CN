@@ -15,17 +15,17 @@ ms.date: 10/19/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ff4b1f7b5fc271c01ef1d9eee079b4e4b4397ba2
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 9593b7798a969e5e8adca82c005c65bf7236eebb
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883217"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218594"
 ---
 # <a name="customize-controlled-folder-access"></a>自定义受控文件夹访问
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -49,13 +49,13 @@ ms.locfileid: "60883217"
 
 还可以指定网络共享和映射驱动器。 支持环境变量和通配符。 有关使用通配符的信息，请参阅在文件名和文件夹路径或扩展名排除列表中 [使用通配符](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
-可以使用移动设备管理Windows 安全中心、组策略、PowerShell cmdlet 或移动设备管理配置服务提供程序添加和删除受保护的文件夹。
+可以使用 Windows 安全中心、组策略、PowerShell cmdlet 或移动设备管理配置服务提供程序添加和删除受保护的文件夹。
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>使用 Windows 安全中心 应用保护其他文件夹
 
-1. 打开Windows 安全中心应用，选择任务栏中的防护图标，或搜索安全"开始"菜单。 
+1. 通过在Windows 安全中心中选择防护图标或在安全栏中搜索安全，打开 "开始"菜单。 
 
-2. 选择 **病毒&威胁防护**"，然后向下滚动到 **勒索软件保护** 部分。
+2. 选择 **病毒&威胁防护**，然后向下滚动到 **勒索软件保护** 部分。
 
 3. 选择 **管理勒索软件保护** 以打开 **勒索软件保护** 窗格。
 
@@ -73,7 +73,7 @@ ms.locfileid: "60883217"
 
 3. 在组 **策略管理编辑器中**，转到计算机 **配置** \> **策略** \> **管理模板**。
 
-4. 展开树以 **Windows受** 攻击 \> **Microsoft Defender 防病毒Windows Defender** \> **受控** \> **文件夹访问权限的组件**。 <br/>**注意**：在早期版本的 Windows 中，**你可能会看到** Windows Defender 防病毒 而不是 **Microsoft Defender 防病毒**。
+4. 展开树以 **Windows攻击** \> **Microsoft Defender 防病毒Windows Defender** \> **受控** \> **文件夹访问权限的组件**。 <br/>**注意**：在早期版本的 Windows 中，**你可能会看到** Windows Defender 防病毒 而不是 **Microsoft Defender 防病毒**。
 
 5. 双击"**已配置的受保护文件夹"，** 然后将该选项设置为"**已启用"。** 选择 **"** 显示"，并指定要保护的每个文件夹。
 
@@ -81,14 +81,14 @@ ms.locfileid: "60883217"
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>使用 PowerShell 保护其他文件夹
 
-1. 在"管理"中"开始"菜单 **PowerShell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **脚本中键入 PowerShell** "开始"菜单 **右键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
 
 2. 键入以下 PowerShell cmdlet，将 替换为文件夹的路径 `<the folder to be protected>` (例如 `"c:\apps\"`) ：
 
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessProtectedFolders "<the folder to be protected>"
     ```
-3. 对要保护的每个文件夹重复步骤 2。 受保护的文件夹显示在应用Windows 安全中心中。
+3. 对要保护的每个文件夹重复步骤 2。 受保护的文件夹在应用Windows 安全中心可见。
 
    :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="显示 cmdlet 的 PowerShell 窗口。":::
 
@@ -104,15 +104,15 @@ ms.locfileid: "60883217"
 你可以指定某些应用是否始终被视为安全应用，并授予对受保护文件夹中文件的写访问权限。 如果你知道和信任的特定应用被受控文件夹访问权限功能阻止，则允许应用非常有用。
 
 > [!IMPORTANT]
-> 默认情况下，Windows将视为友好的应用添加到允许列表中。 自动添加的此类应用不会记录在 Windows 安全中心 或关联的 PowerShell cmdlet 中显示的列表中。 你无需添加大多数应用。 仅在应用被阻止时添加应用，你可以验证其可信度。
+> 默认情况下，Windows将视为友好的应用添加到允许列表中。 自动添加的此类应用不会记录在应用程序Windows 安全中心或关联的 PowerShell cmdlet 中显示的列表中。 你无需添加大多数应用。 仅在应用被阻止时添加应用，你可以验证其可信度。
 
-添加应用时，必须指定应用的位置。 仅允许位于该位置的应用访问受保护的文件夹。 如果应用 (同名) 位于不同的位置，它将不会添加到允许列表中，并且可能会受到受控文件夹访问权限的阻止。
+添加应用时，必须指定应用的位置。 仅允许位于该位置的应用访问受保护的文件夹。 如果应用 (同名) 位于不同的位置，它将不会添加到 allowlist，并且可能会受到受控文件夹访问权限的阻止。
 
 允许的应用程序或服务在启动后仅对受控文件夹具有写访问权限。 例如，在允许更新服务停止并重新启动之前，该服务将继续触发事件。
 
 ### <a name="use-the-windows-defender-security-app-to-allow-specific-apps"></a>使用 Windows Defender 安全应用允许特定应用
 
-1. 通过Windows 安全中心"安全"的"开始"菜单打开"开始"**菜单**。
+1. 通过Windows 安全中心安全"的"开始"菜单打开"开始"**菜单**。
 
 2. 选择病毒& **威胁** 防护磁贴 (或左侧菜单栏上的防护图标) 然后选择管理 **勒索软件保护**。
 
@@ -128,13 +128,13 @@ ms.locfileid: "60883217"
 
 2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-3. 展开树以 **Windows受** 攻击 \> **Microsoft Defender 防病毒Windows Defender** \> **受控** \> **文件夹访问权限的组件**。
+3. 展开树以 **Windows攻击** \> **Microsoft Defender 防病毒Windows Defender** \> **受控** \> **文件夹访问权限的组件**。
 
 4. 双击配置允许 **的应用程序** 设置，将选项设置为 **已启用**。 选择 **"显示** "并输入每个应用。
 
 ### <a name="use-powershell-to-allow-specific-apps"></a>使用 PowerShell 允许特定应用
 
-1. 在"管理"中"开始"菜单 **PowerShell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **脚本中键入 PowerShell** "开始"菜单 **右键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell

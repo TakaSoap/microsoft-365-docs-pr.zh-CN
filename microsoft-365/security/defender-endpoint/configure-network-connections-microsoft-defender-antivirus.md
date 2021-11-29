@@ -16,20 +16,21 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4ded08af0dfa0bf904d83eef43a76bed3dd4cc2f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 29ac4f34bbb89d860ec5110af1f8f62fe5799ffa
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552436"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218078"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>配置和验证 Microsoft Defender 防病毒软件网络连接
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-为了确保Microsoft Defender 防病毒保护正常工作，安全团队必须配置网络以允许终结点和某些 Microsoft 服务器之间连接。 本文列出必须允许的连接（如使用防火墙规则）并提供验证连接的说明。 正确配置保护有助于确保从云提供的保护服务获得最佳价值。
+为了确保Microsoft Defender 防病毒保护正常工作，安全团队必须将网络配置为允许终结点和某些 Microsoft 服务器连接。 本文列出必须允许的连接（如使用防火墙规则）并提供验证连接的说明。 正确配置保护有助于确保从云提供的保护服务获得最佳价值。
 
 有关网络连接的一些详细信息，请参阅博客文章 [对 Microsoft Active Protection Services](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) 终结点的重要更改。
 
@@ -59,17 +60,17 @@ ms.locfileid: "60552436"
 
 |服务和说明|URL|
 |---|---|
-|Microsoft Defender 防病毒云保护服务，也称为地图Microsoft Active Protection Service (MAPS) <p>此服务由组织Microsoft Defender 防病毒提供云保护|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
-|MICROSOFT Update Service (MU) and Windows Update Service (WU)  <p>这些服务允许安全智能和产品更新|`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> 有关详细信息，请参阅[Connection endpoints for Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
-|安全智能更新 ADL (备用) <p>如果安装的安全智能在 Microsoft Defender 防病毒 7 天或 7 (过期，则这是安全智能更新的备用) |`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
+|Microsoft Defender 防病毒云保护服务，也称为 MAPS Microsoft Active Protection Service () <p>此服务由云Microsoft Defender 防病毒提供云保护|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
+|MICROSOFT Update Service (WU) Windows 更新服务 (WU)  <p>这些服务允许安全智能和产品更新|`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> 有关详细信息，请参阅[Connection endpoints for Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
+|安全智能更新 ADL (备用) <p>如果安装的安全智能在 Microsoft Defender 防病毒 7 天或 7 (过期，则这是安全智能更新的) |`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
 |恶意软件提交存储 <p>这是通过提交表单或自动示例提交提交到 Microsoft 的文件的上传位置|`ussus1eastprod.blob.core.windows.net` <p> `ussus2eastprod.blob.core.windows.net` <p> `ussus3eastprod.blob.core.windows.net` <p> `ussus4eastprod.blob.core.windows.net` <p> `wsus1eastprod.blob.core.windows.net` <p> `wsus2eastprod.blob.core.windows.net` <p> `ussus1westprod.blob.core.windows.net` <p> `ussus2westprod.blob.core.windows.net` <p> `ussus3westprod.blob.core.windows.net` <p> `ussus4westprod.blob.core.windows.net` <p> `wsus1westprod.blob.core.windows.net` <p> `wsus2westprod.blob.core.windows.net` <p> `usseu1northprod.blob.core.windows.net` <p> `wseu1northprod.blob.core.windows.net` <p> `usseu1westprod.blob.core.windows.net` <p> `wseu1westprod.blob.core.windows.net` <p> `ussuk1southprod.blob.core.windows.net` <p> `wsuk1southprod.blob.core.windows.net` <p> `ussuk1westprod.blob.core.windows.net` <p> `wsuk1westprod.blob.core.windows.net`|
 |CRL (证书吊销)  <p>在创建与 MAPS 的 SSL Windows更新 CRL 时，系统使用此列表|`http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p> `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs`|
-|符号存储 <p>符号存储由 Microsoft Defender 防病毒在修正流期间还原某些关键文件|`https://msdl.microsoft.com/download/symbols`|
-|通用遥测客户端 <p> 此客户端由 Windows用于发送客户端诊断数据 <p> Microsoft Defender 防病毒遥测进行产品质量监视|此更新使用 SSL (TCP 端口 443) 下载清单，将诊断数据上载到使用下列 DNS 终结点的 Microsoft： <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
+|符号存储 <p>符号存储由用户Microsoft Defender 防病毒修正流期间还原某些关键文件|`https://msdl.microsoft.com/download/symbols`|
+|通用遥测客户端 <p> 此客户端由 Windows用于发送客户端诊断数据 <p> Microsoft Defender 防病毒遥测来监视产品质量|此更新使用 SSL (TCP 端口 443) 下载清单，将诊断数据上载到使用下列 DNS 终结点的 Microsoft： <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
 
 ## <a name="validate-connections-between-your-network-and-the-cloud"></a>验证网络和云之间的连接
 
-允许上面列出的 URL 后，你可以测试你是否连接到 Microsoft Defender 防病毒 云服务并正确报告和接收信息，以确保完全受保护。
+允许上面列出的 URL 后，可以测试你是否连接到 Microsoft Defender 防病毒 云服务，并正确报告和接收信息，以确保完全受保护。
 
 ### <a name="use-the-cmdline-tool-to-validate-cloud-delivered-protection"></a>使用 cmdline 工具验证云保护
 
@@ -82,7 +83,7 @@ ms.locfileid: "60552436"
 > [!NOTE]
 > 需要打开命令提示符的管理员级别版本。 右键单击用户策略中的 **"开始"菜单，** 单击"以管理员角色运行"，在权限提示符下单击"是"。 此命令仅适用于 Windows 10 版本 1703 或更高版本，或 Windows 11。
 
-有关详细信息，请参阅使用命令行Microsoft Defender 防病毒[管理mpcmdrun.exe管理。](command-line-arguments-microsoft-defender-antivirus.md)
+有关详细信息，请参阅使用 Microsoft Defender 防病毒[命令行mpcmdrun.exe管理命令](command-line-arguments-microsoft-defender-antivirus.md)。
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>尝试从 Microsoft 下载假恶意软件文件
 
@@ -107,14 +108,14 @@ ms.locfileid: "60552436"
 
 1. 通过单击Windows 安全中心中的防护图标或搜索"安全"的"开始"菜单打开 **应用。**
 
-2. 选择 **病毒&威胁防护，** 然后选择保护 **历史记录**。
+2. 选择 **病毒&威胁防护**，然后选择保护 **历史记录**。
 
 3. 在" **隔离的威胁"** 部分下， **选择"查看完整历史记录** "以查看检测到的假恶意软件。
 
    > [!NOTE]
    > 版本 1703 Windows 10版本版本具有不同的用户界面。 请参阅[Microsoft Defender 防病毒应用中Windows 安全中心应用。](microsoft-defender-security-center-antivirus.md)
 
-   事件Windows还会显示客户端Windows Defender ID [1116](troubleshoot-microsoft-defender-antivirus.md)。
+   事件Windows还将显示客户端Windows Defender [ID 1116](troubleshoot-microsoft-defender-antivirus.md)。
 
 ## <a name="see-also"></a>另请参阅
 

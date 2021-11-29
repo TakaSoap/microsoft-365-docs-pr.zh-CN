@@ -1,5 +1,5 @@
 ---
-title: 攻击面减少规则部署阶段 1 - 计划
+title: ASR 规则部署阶段 1 - 计划
 description: 提供规划攻击面减少规则部署的指南。
 keywords: 攻击面减少规则部署， ASR 部署， 启用 asr 规则， 配置 ASR， 主机入侵防护系统， 保护规则， 反攻击规则， 反攻击， 攻击规则， 感染防护规则， Microsoft Defender for Endpoint， 配置 ASR 规则
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8ce9e215af286c5a1a94d83f9f407a53eb9b8e3f
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: ca6c7ed6265a1c68a513d6025227780fa429f6e8
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171728"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217394"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-1-plan"></a>攻击面减少规则部署阶段 1：计划
 
@@ -55,7 +55,7 @@ ASR 规则冠军是贵组织的成员，有助于在初步测试和实施阶段�
 ## <a name="get-inventory-of-line-of-business-apps-and-understand-the-business-unit-processes"></a>获取业务线应用的清单并了解业务部门流程
 
 全面了解整个组织中使用的应用程序和每个业务部门的过程对于成功部署 ASR 规则至关重要。 此外，必须了解在组织的各个业务部门中如何使用这些应用。
-首先，你应该获得经批准在整个组织范围使用的应用的清单。 可以使用管理中心等工具Microsoft 365 应用版清单软件应用程序。 请参阅：[管理中心中的Microsoft 365 应用版概述](/deployoffice/admincenter/inventory)。
+首先，你应该获得经批准在整个组织范围使用的应用的清单。 可以使用管理中心等工具Microsoft 365 应用版软件应用程序清单。 请参阅：[管理中心中的Microsoft 365 应用版概述](/deployoffice/admincenter/inventory)。
 
 ## <a name="define-reporting-and-response-team--roles-and-responsibilities"></a>定义报告和响应团队角色和责任
 
@@ -69,7 +69,7 @@ ASR 规则冠军是贵组织的成员，有助于在初步测试和实施阶段�
 
 - IT 管理员：实施 ASR 规则，管理排除项。 在应用和流程上使用不同的业务部门。 组合报告并共享给利益干系人
 - CSOC (安全运营) ：负责投资高优先级的阻止流程，以确定威胁是否有效
-- CISO (首席) ：负责组织的整体安全状况和运行状况
+- CISO (首席信息安全) ：负责组织的整体安全状况和运行状况
 
 ## <a name="ring-deployment"></a>环形部署
 
@@ -79,10 +79,10 @@ ASR 规则冠军是贵组织的成员，有助于在初步测试和实施阶段�
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题
 
-[攻击面减少规则部署指南 - 概述](attack-surface-reduction-rules-deployment.md)
+[ASR 规则部署指南 - 概述](attack-surface-reduction-rules-deployment.md)
 
-[攻击面减少规则部署阶段 2 - 测试](attack-surface-reduction-rules-deployment-phase-2.md)
+[ASR 规则部署阶段 2 - 测试](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[攻击面减少规则部署阶段 3 - 实施](attack-surface-reduction-rules-deployment-phase-3.md)
+[ASR 规则部署阶段 3 - 实现](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[攻击面减少规则部署阶段 4 - 可操作](attack-surface-reduction-rules-deployment-phase-4.md)
+[ASR 规则部署阶段 4 - 可操作](attack-surface-reduction-rules-deployment-phase-4.md)

@@ -16,19 +16,20 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 113b144421d99811afc4ce94965a143f34b2b882
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 182e0b39c1a9c7795fbdd716fc2e260d06d5c451
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555916"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217418"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>为 Microsoft Defender 防病毒检测配置修正
 
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 当Microsoft Defender 防病毒扫描时，它会尝试修正或删除检测到的威胁。 你可以配置Microsoft Defender 防病毒应对特定威胁、是否应在修正前创建还原点以及何时应删除威胁。
 
@@ -50,19 +51,19 @@ ms.locfileid: "60555916"
 
 <br/><br/>
 
-|位置|Setting|说明|如果未配置 (默认设置) |
+|位置|设置|说明|如果未配置 (，则默认设置) |
 |---|---|---|---|
 |扫描|创建系统还原点|在尝试清理或扫描之前，将每天创建一个系统还原点|已禁用|
 |扫描|打开从扫描历史记录文件夹中删除项目|指定项目应在扫描历史记录中保留的天数|30 天|
-|根|关闭常规修正|你可以指定是Microsoft Defender 防病毒自动修正威胁，还是应询问终结点用户应该怎么办。|禁用 (自动修正威胁) |
-|Quarantine|配置从隔离文件夹删除项目|指定在删除项目之前应在隔离中保留的天数|90 天|
-|威胁|指定检测到威胁警报时不应采取默认操作的威胁警报级别|系统为每个检测到的威胁Microsoft Defender 防病毒一个威胁级别 (低、中等、高或严重级别) 。 可以使用此设置定义在隔离、删除或忽略每个威胁级别 (、删除或忽略威胁) |不适用|
+|根|关闭常规修正|你可以指定是Microsoft Defender 防病毒自动修正威胁，还是应询问终结点用户应该怎么办。|禁用 (自动修复威胁) |
+|隔离|配置从隔离文件夹删除项目|指定在删除项目之前应在隔离中保留的天数|90 天|
+|威胁|指定检测到威胁警报时不应采取默认操作的威胁警报级别|系统为每个检测到的威胁Microsoft Defender 防病毒一个威胁级别 (低、中等、高或严重) 。 可以使用此设置定义在隔离、删除或忽略威胁时，如何 (威胁级别的所有威胁) |不适用|
 |威胁|指定检测到时不应采取默认操作的威胁|指定应该如何 (威胁 ID 来) 特定威胁。 你可以指定是应隔离、删除还是忽略特定威胁|不适用|
 
 > [!IMPORTANT]
 > Microsoft Defender 防病毒基于许多因素检测并修正文件。 有时，完成修正需要重新启动。 即使检测稍后被确定为误报，也必须完成重新启动以确保所有其他修正步骤已完成。
 >
-> 如果你确定Microsoft Defender 防病毒误报隔离文件，可以在设备重新启动后从隔离中还原该文件。 请参阅[Restore quarantined files in Microsoft Defender 防病毒](restore-quarantined-files-microsoft-defender-antivirus.md)。
+> 如果确定已Microsoft Defender 防病毒误报隔离文件，可以在设备重启后从隔离中还原文件。 请参阅[在中还原隔离Microsoft Defender 防病毒。](restore-quarantined-files-microsoft-defender-antivirus.md)
 >
 > 若要在将来避免此问题，可以从扫描中排除文件。 请参阅[配置并验证扫描Microsoft Defender 防病毒排除项](configure-exclusions-microsoft-defender-antivirus.md)。
 

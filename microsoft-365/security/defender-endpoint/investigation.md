@@ -18,32 +18,33 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 069e74b8ad0aef33caab411b92c24c4d0b72f022
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4ecea6cdac4c254126c6f4bad1400a090505c9eb
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194149"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218642"
 ---
 # <a name="investigation-resource-type"></a>调查资源类型
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 代表 Defender for Endpoint 中的自动调查实体。
 
-有关详细信息 [，请参阅自动](automated-investigations.md) 调查概述。
+有关详细信息，请参阅 [自动调查概述](automated-investigations.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 方法|返回类型|说明
 :---|:---|:---
@@ -55,11 +56,11 @@ ms.locfileid: "60194149"
 
 属性|类型|说明
 :---|:---|:---
-id|String|调查实体的标识。 
+ID|String|调查实体的标识。 
 startTime|DateTime Nullable|创建调查的日期和时间。
 endTime|DateTime Nullable|调查完成的日期和时间。
-cancelledBy|字符串|取消调查的用户/应用程序的 ID。
-state|枚举|调查的当前状态。 可能的值包括："Unknown"、"Terminated"、 "SuccessfullyRemediated"、"Benign"、"Failed"、"PartiallyRemediated"、"Running"、"PendingApproval"、"PendingResource"、"PartiallyInvestigated"、"TerminatedByUser"、"TerminatedBySystem"、"Queued"、"InnerFailure"、"PreexistingAlert"、"UnsupportedOs"、"UnsupportedAlertType"和"SuppressedAlert"。
+cancelledBy|String|取消调查的用户/应用程序的 ID。
+状态|枚举|调查的当前状态。 可能的值包括："Unknown"、"Terminated"、 "SuccessfullyRemediated"、"Benign"、"Failed"、"PartiallyRemediated"、"Running"、"PendingApproval"、"PendingResource"、"PartiallyInvestigated"、"TerminatedByUser"、"TerminatedBySystem"、"Queued"、"InnerFailure"、"PreexistingAlert"、"UnsupportedOs"、"UnsupportedAlertType"和"SuppressedAlert"。
 statusDetails|String|有关调查状态的其他信息。
 machineId|String|执行调查的设备 ID。
 computerDnsName|String|执行调查的设备的名称。
