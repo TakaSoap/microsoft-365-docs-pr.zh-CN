@@ -15,19 +15,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fe787895690fa066ab21ec6bad6d4c240217bc3e
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: 1119d13998510927f249288cc40a47eda45dc9ac
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61144372"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218402"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>排查与 iOS 上的 Microsoft Defender for Endpoint 相关的问题并查找常见问题解答
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -42,11 +43,11 @@ ms.locfileid: "61144372"
 ## <a name="apps-dont-work-when-vpn-is-turned-on"></a>打开 VPN 后，应用无法工作
 某些应用在检测到活动 VPN 时停止运行。 可以在使用此类应用时禁用 VPN。 
 
-默认情况下，iOS 上的 Defender for Endpoint 包括并启用 Web 保护功能。 [Web](web-protection-overview.md) 保护有助于保护设备免受 Web 威胁，并保护用户免受网络钓鱼攻击。 iOS 上的 Defender for Endpoint 使用 VPN 来提供此保护。 请注意，这是本地 VPN，与传统 VPN 不同，网络流量不会发送到设备外部。
+默认情况下，iOS 上的 Defender for Endpoint 包括并启用 Web 保护功能。 [Web 保护](web-protection-overview.md)有助于保护设备免受 Web 威胁，并保护用户免受钓鱼网站攻击。 iOS 上的 Defender for Endpoint 使用 VPN 来提供此保护。 请注意，这是本地 VPN，与传统 VPN 不同，网络流量不会发送到设备外部。
 
 虽然默认启用，但在某些情况下可能需要你禁用 VPN。 例如，你想要运行一些在配置 VPN 时不起作用的应用。 在这种情况下，你可以选择直接从 Defender for Endpoint 应用或按照以下步骤禁用 VPN：
 
-1. 在 iOS 设备上，打开"设置应用"，单击 **或****点击"** 常规"，然后单击 **"VPN"。**
+1. 在 iOS 设备上，打开 **"设置应用**"，单击 **或点击"** 常规"，然后单击 **"VPN"。**
 1. 单击或点击 Microsoft Defender for Endpoint 的"i"按钮。
 1. 关闭 **"连接按需"** 以禁用 VPN。
 
@@ -64,7 +65,7 @@ Apple iOS 不支持多个 **设备范围的** VPN 同时处于活动状态。 �
 
 为了提供对基于 Web 的威胁的一切保护，Microsoft Defender for Endpoint 需要一切都在后台运行。 这可能会导致设备的总电池消耗轻微增加。 如果你看到电池严重消耗，请 [向我们发送反馈](ios-troubleshoot.md#send-in-app-feedback) ，我们将进行调查。
 
-此外，在设置应用中，iOS 仅显示特定时间内对用户可见的应用的电池使用情况。 屏幕上显示的应用的电池使用量仅在该持续时间内，由 iOS 根据大量因素（包括 CPU 和网络使用情况）计算。 Microsoft Defender for Endpoint 在后台使用本地/环回 VPN 来检查任何恶意网站或连接的 Web 流量。 来自任何应用的网络数据包都经过此检查，这会导致 Microsoft Defender for Endpoint 的电池使用情况计算不准确。 Microsoft Defender for Endpoint 的实际电池消耗低于设备上"电池设置页面上显示的内容。
+此外，在设置应用中，iOS 只显示特定时间内对用户可见的应用的电池使用情况。 屏幕上显示的应用的电池使用量仅在该持续时间内，由 iOS 根据大量因素（包括 CPU 和网络使用情况）计算。 Microsoft Defender for Endpoint 在后台使用本地/环回 VPN 来检查任何恶意网站或连接的 Web 流量。 来自任何应用的网络数据包都经过此检查，这会导致 Microsoft Defender for Endpoint 的电池使用情况计算不准确。 Microsoft Defender for Endpoint 的实际电池消耗低于设备上"电池设置页面上显示的内容。
 
 请注意，使用的 VPN 是本地 VPN，不同于传统 VPN，网络流量不会发送到设备外部。
 
@@ -94,7 +95,7 @@ Microsoft Defender for Endpoint 可保护你免受网络钓鱼或其他基于 We
 载入后，设备需要几个小时才能显示在 Defender for Endpoint 安全控制台的设备清单中。 此外，请确保设备已正确注册Azure Active Directory并且设备具有 Internet 连接。 若要成功载入，设备必须通过 Microsoft Authenticator 或 Intune 公司门户 并且用户需要使用设备在 Azure AD 中注册的同一帐户登录。
 
 > [!NOTE]
-> 有时，设备名称与 Intune) 控制台中的设备Microsoft Endpoint Manager (一致。 Defender for Endpoint 控制台中的设备名称采用 <username_iPhone/iPad模式>。 还可使用 Azure AD ID 在 Defender for Endpoint 控制台中标识设备。
+> 有时，设备名称与 Intune 控制台Microsoft Endpoint Manager (设备) 一致。 Defender for Endpoint 控制台中的设备名称采用 <username_iPhone/iPad模式>。 还可使用 Azure AD ID 在 Defender for Endpoint 控制台中标识设备。
 
 ## <a name="data-and-privacy"></a>数据和隐私
 
