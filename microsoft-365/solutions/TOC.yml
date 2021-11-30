@@ -33,7 +33,7 @@
       items:
         - name: 概述
           href: manage-devices-with-intune-overview.md
-        - name: 步骤 1. 实现级别 2 应用保护策略
+        - name: 步骤 1. 实施应用保护策略
           href: manage-devices-with-intune-app-protection.md
         - name: 步骤 2. 将设备注册到管理中
           href: manage-devices-with-intune-enroll.md
@@ -317,7 +317,7 @@
         - name: Microsoft Defender for Endpoint
           href: /microsoft-365/security/defender-endpoint/deployment-phases.md
         - name: 从非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
-          href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+          href: ../security/defender-endpoint/switch-to-mde-overview.md
         - name: 从非 Microsoft 保护工具切换到 Microsoft Defender for Office 365
           href: ../security/office-365-security/migrate-to-defender-for-office-365.md
         - name: Microsoft 365 中优先帐户安全建议

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: 了解 MIP 策略的默认标签 Microsoft 信息保护 (策略) 分类和保护敏感内容。
-ms.openlocfilehash: ffa0be4d64218fde0e88da4646d93a57f7a3a0b1
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: dd9a2eef45e8ccb7ecb9c637a94f64ad6796a8f9
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962827"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221348"
 ---
 # <a name="default-labels-and-policies-for-microsoft-information-protection"></a>默认标签和 Microsoft 信息保护策略
 
@@ -58,6 +58,12 @@ ms.locfileid: "60962827"
     :::image type="content" alt-text="对预配置标签和策略进行 Microsoft 信息保护激活。" source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
     
     如果未看到此信息与激活选项一起显示，则当前没有资格自动创建敏感度标签和策略。 可以稍后重新检查此状态是否已更改，或者可以使用以下设置信息手动创建相同的标签和策略。
+
+3. 现在为 SharePoint 和 OneDrive 启用敏感度标签。 此附加步骤是使用 Office 网页版中的敏感度标签以及 SharePoint 和 OneDrive 的自动标记策略的先决条件。
+
+    选择 **Labels** 选项卡，然后 **立即打开**。
+    
+    有关完整说明，请参阅[如何为 SharePoint 和 OneDrive 启用敏感度标签（选择加入）](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in)。
 
 ## <a name="default-sensitivity-labels"></a>默认敏感度标签
 
