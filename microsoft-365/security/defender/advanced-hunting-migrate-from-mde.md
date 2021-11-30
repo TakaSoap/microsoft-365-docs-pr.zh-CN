@@ -1,7 +1,7 @@
 ---
 title: 从 Microsoft Defender for Endpoint 迁移高级搜寻查询
 description: 了解如何调整适用于终结点的 Microsoft Defender 查询，以便你可以将其用于Microsoft 365 Defender
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， Microsoft Defender for Endpoint， 搜索， 查询， 遥测， 自定义检测， 架构， kusto， 映射
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 适用于终结点的 Microsoft Defender， 搜索， 查询， 遥测， 自定义检测， 架构， kusto， 映射
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 93696fb5ca883a849a8f7bcb534cb57469f20815
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3cb59c3c4a98a492dcda11e34e01a18afc8c5555
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174443"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221192"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>从 Microsoft Defender for Endpoint 迁移高级搜寻查询
 
@@ -39,21 +39,21 @@ ms.locfileid: "60174443"
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
-- Microsoft 云应用安全
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 
 >[!NOTE]
 >大多数 Microsoft Defender for Endpoint 客户可以使用[Microsoft 365 Defender许可证。](prerequisites.md#licensing-requirements) 若要开始从 Defender for Endpoint 转换高级搜寻工作流，[请Microsoft 365 Defender。](m365d-enable.md)
 
-你可以转换，而不影响现有的 Defender for Endpoint 工作流。 保存的查询保持不变，并且自定义检测规则将继续运行并生成警报。 但是，这些对象将在Microsoft 365 Defender。 
+你可以转换，而不影响现有的 Defender for Endpoint 工作流。 保存的查询保持不变，并且自定义检测规则将继续运行并生成警报。 但是，它们将在Microsoft 365 Defender。 
 
-## <a name="schema-tables-in-microsoft-365-defender-only"></a>仅 Microsoft 365 Defender中的架构表
-高级[Microsoft 365 Defender架构](advanced-hunting-schema-tables.md)提供了包含各种安全解决方案中Microsoft 365表。 下表仅适用于Microsoft 365 Defender：
+## <a name="schema-tables-in-microsoft-365-defender-only"></a>仅架构Microsoft 365 Defender表
+高级[Microsoft 365 Defender架构](advanced-hunting-schema-tables.md)提供了包含来自各种安全解决方案的数据Microsoft 365表。 下表仅适用于Microsoft 365 Defender：
 
 | 表名 | 说明 |
 |------------|-------------|
 | [AlertEvidence](advanced-hunting-alertevidence-table.md) | 与警报关联的文件、IP 地址、URL、用户或设备 |
-| [AlertInfo](advanced-hunting-alertinfo-table.md) | 来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的警报，包括严重性信息和威胁类别  |
+| [AlertInfo](advanced-hunting-alertinfo-table.md) | 来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps 和 Microsoft Defender for Identity 的警报，包括严重性信息和威胁类别  |
 | [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | 有关电子邮件所附文件的信息 |
 | [EmailEvents](advanced-hunting-emailevents-table.md) | Microsoft 365 电子邮件事件，包括电子邮件送达和阻止事件 |
 | [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | 在传递后所发生的安全事件，即在 Microsoft 365 将电子邮件传递给收件人邮箱后所发生的安全事件 |
@@ -64,7 +64,7 @@ ms.locfileid: "60174443"
 | [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Active Directory 对象的查询，例如用户、组、设备和域 |
 
 >[!IMPORTANT]
-> 使用仅在 Microsoft 365 Defender 中可用的架构表的查询和自定义Microsoft 365 Defender。
+> 使用架构表的查询和自定义检测只能在 Microsoft 365 Defender中查看Microsoft 365 Defender。
 
 ## <a name="map-devicealertevents-table"></a>映射 DeviceAlertEvents 表
 和 `AlertInfo` `AlertEvidence` 表替换 `DeviceAlertEvents` Microsoft Defender for Endpoint 架构中的表。 除了有关设备警报的数据，这两个表还包括有关标识、应用和电子邮件警报的数据。
@@ -88,8 +88,8 @@ ms.locfileid: "60174443"
 | `RemoteUrl` | `AlertEvidence` table |
 | `RemoteIP` | `AlertEvidence` table |
 | `AttackTechniques` | `AlertInfo` table |
-| `ReportId` | 此列通常在 Microsoft Defender for Endpoint 中用于查找其他表中的相关记录。 在Microsoft 365 Defender中，可以直接从表中获取 `AlertEvidence` 数据。 |
-| `Table` | 此列通常在 Microsoft Defender for Endpoint 中用于其他表中的其他事件信息。 在Microsoft 365 Defender中，可以直接从表中获取 `AlertEvidence` 数据。 |
+| `ReportId` | 此列通常在 Microsoft Defender for Endpoint 中用于查找其他表中的相关记录。 在Microsoft 365 Defender中，可以直接从表中获取 `AlertEvidence` 相关数据。 |
+| `Table` | 此列通常在 Microsoft Defender for Endpoint 中用于其他表中的其他事件信息。 在Microsoft 365 Defender中，可以直接从表中获取 `AlertEvidence` 相关数据。 |
 
 ## <a name="adjust-existing-microsoft-defender-for-endpoint-queries"></a>调整现有的 Microsoft Defender 终结点查询
 Microsoft Defender for Endpoint 查询将像现在一样工作，除非它们引用 `DeviceAlertEvents` 表。 若要在查询中使用这些Microsoft 365 Defender，请应用以下更改：
@@ -106,7 +106,7 @@ DeviceAlertEvents
 | where AttackTechniques has "PowerShell (T1086)" and FileName == "powershell.exe"
 ```
 ### <a name="modified-query"></a>修改后的查询
-以下查询已调整为用于Microsoft 365 Defender。 它无需直接从 中检查文件名，而是联接并检查 `DeviceAlertEvents` `AlertEvidence` 该表中的文件名。
+以下查询已调整为用于Microsoft 365 Defender。 它联接并检查该表中的文件名，而不是直接从 `DeviceAlertEvents` `AlertEvidence` 中检查文件名。
 
 ```kusto
 AlertInfo 
@@ -118,7 +118,7 @@ AlertInfo
 
 ## <a name="migrate-custom-detection-rules"></a>迁移自定义检测规则
 
-当在终结点上编辑 Microsoft Defender Microsoft 365 Defender，它们将继续像以前一样运行，就像生成的查询仅查看设备表一样。 
+在终结点上编辑 Microsoft Defender Microsoft 365 Defender，它们将继续像以前一样运行，就像生成的查询仅查看设备表一样。 
 
 例如，由仅查询设备表的自定义检测规则生成的警报将继续传递到 SIEM 并生成电子邮件通知，具体取决于你在 Microsoft Defender for Endpoint 中配置这些警报的方式。 Defender for Endpoint 中现有的抑制规则也将继续适用。
 
@@ -130,9 +130,9 @@ AlertInfo
 - 停止传递到 SIEM 或生成电子邮件通知。 若要解决此更改，请通过 Microsoft 365 Defender配置通知，获取警报。 可以使用 Microsoft 365 Defender [API](api-incident.md)接收有关客户检测警报或相关事件的通知。
 - Microsoft Defender 的终结点抑制规则不会抑制。 若要阻止为某些用户、设备或邮箱生成警报，请修改相应的查询以明确排除这些实体。
 
-如果您这样编辑规则，则系统会在应用此类更改之前提示您进行确认。
+如果通过此方式编辑规则，在应用此类更改之前，系统会提示您进行确认。
 
-由自定义检测规则在 Microsoft 365 Defender 门户中生成的新警报将显示在提供以下信息的警报页面中：
+由自定义检测规则在Microsoft 365 Defender生成的新警报将显示在提供以下信息的警报页中：
 
 - 警报标题和说明 
 - 影响的资产
@@ -141,11 +141,11 @@ AlertInfo
 - 有关自定义检测规则的信息 
  
 > [!div class="mx-imgBorder"]
-> ![新警报页面的图像。](../../media/new-alert-page.png)
+> :::image type="content" source="../../media/new-alert-page.png" alt-text="警报页面的示例，其中显示由自定义检测规则在 Microsoft 365 Defender 生成的新警报" lightbox="../../media/new-alert-page.png":::
 
 ## <a name="write-queries-without-devicealertevents"></a>编写不含 DeviceAlertEvents 的查询
 
-在Microsoft 365 Defender架构中，提供了 和 表，以适应来自各种来源的警报附带的 `AlertInfo` `AlertEvidence` 各种信息集。 
+在Microsoft 365 Defender架构中，提供了 和 表以适应来自各种来源的警报附带的 `AlertInfo` `AlertEvidence` 各种信息集。 
 
 若要获取用于从 Microsoft Defender for Endpoint 架构中的表获取的相同警报信息，请通过筛选表，然后将每个唯一 ID 与表联接，该表提供详细的事件和 `DeviceAlertEvents` `AlertInfo` `ServiceSource` `AlertEvidence` 实体信息。 
 

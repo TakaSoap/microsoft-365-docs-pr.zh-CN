@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 了解如何审核 Microsoft 365 组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 726aa84157b82b3f4a5ea6ddfe1fed9734b3991b
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: ff7a456317827fc629d4e704037ad7586bad9f0d
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60363974"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221360"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 中的审核解决方案
 
@@ -123,7 +123,6 @@ Microsoft 365 提供两种审核解决方案：基本审核和高级审核。
 - Microsoft 365 Frontline F5 合规性或 F5 安全与合规加载项
 - Office 365 企业版 E5 订阅
 - Office 365 教育版 A5 订阅
-- Office 365 企业版 E3 订阅和 Office 365 高级合规版附加设备（不再适用于新订阅）
 
 ## <a name="set-up-microsoft-365-auditing-solutions"></a>设置 Microsoft 365 审核解决方案
 

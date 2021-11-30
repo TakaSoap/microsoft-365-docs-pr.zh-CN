@@ -21,19 +21,19 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a81fa60b1b66c8eb735da72e1e2108df804b2ef1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1a986bf129361954953e3b29e5906c71a0f482ed
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206801"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163118"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>在设备上运行实时响应命令
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -50,9 +50,9 @@ ms.locfileid: "60206801"
 
 ## <a name="limitations"></a>限制
 
-1. 此 API 的速率限制是每分钟 10 次 (HTTP 429 请求响应其他) 。
+1. 此 API 的速率限制是每分钟 10 次调用 (HTTP 429 请求响应其他) 。
 
-2. 25 个并发 (超过限制的请求将收到"429 - 请求过多"响应) 。
+2. 25 个并发运行的 (超出限制的请求将收到"429 - 请求过多"响应) 。
 
 3. 如果计算机不可用，会话将排入队列最多 3 天。
 
@@ -68,9 +68,9 @@ ms.locfileid: "60206801"
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的 Windows** 版本。
+- **验证是否正在运行受支持的** Windows 版本。
 
-  设备必须运行以下版本之一的 Windows
+  设备必须运行以下版本之一Windows
 
   - **Windows 10**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
@@ -79,9 +79,9 @@ ms.locfileid: "60206801"
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **WindowsServer 2019 - 仅适用于公共预览版**
-    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
-    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+  - **Windows Server 2019 - 仅适用于公共预览版**
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
+    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
     
   - **Windows Server 2022**
 
@@ -109,7 +109,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## <a name="request-body"></a>请求正文
 
-|参数|类型|说明|
+|参数|类型|Description|
 |---|---|---|
 |评论|字符串|要与操作关联的注释。|
 |命令|数组|要运行的命令。 允许的值为 PutFile、RunScript、GetFile。|

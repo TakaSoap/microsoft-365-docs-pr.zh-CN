@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 高级搜寻示例
+title: Microsoft Defender for Office 365 高级搜寻Office 365
 description: 使用高级搜寻开始搜索电子邮件威胁
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 自定义检测， 架构， kusto
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e0e5a44811138604abeec4eb6f9b83668a6988ca
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 04e4fd2267cc3774e9a816539f0de044ae988dfb
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787079"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221180"
 ---
-# <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 高级搜寻示例
+# <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 高级搜寻Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "60787079"
 2. 设置名称中保险箱"值的所有内容。
    - 安全链接
    - 安全附件
-3. 保护工作负载（例如 SharePoint联机、OneDrive和Teams) 。
+3. 保护工作负载（例如 SharePoint Online、OneDrive 和 Teams) 。
 4. 使用零时差自动清除进行保护。
 
 以及一 [链接](../office-365-security/protect-against-threats.md) 一起跳入，在"第 1 天"进行配置。
@@ -73,7 +73,7 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/ah-query-example-new.png" alt-text="&quot;高级搜寻&quot; (在&quot;搜寻) &quot;下，其中&quot;查询&quot;处于查询面板顶部，并运行 Kusto 查询以捕获过去 7 天内的 ZAP 操作。":::
+:::image type="content" source="../../media/ah-query-example-new.png" alt-text="&quot;高级搜寻&quot; (在&quot;搜寻) &quot;下，其中&quot;查询&quot;在查询面板顶部处于选中状态，并运行 Kusto 查询以捕获过去 7 天内的 ZAP 操作。" lightbox="../../media/ah-query-example-new.png":::
 
 来自此查询的数据将在查询自身下方的结果面板中显示。 结果包括可自定义结果集内的信息，如"DeviceName"、"AccountDisplayName"和"<3>pTime"。 也可以为记录导出结果。 如果您再次需要查询，请选择 **保存** > **“另存为”**，然后将查询添加到查询，共享或社区查询列表中。
 

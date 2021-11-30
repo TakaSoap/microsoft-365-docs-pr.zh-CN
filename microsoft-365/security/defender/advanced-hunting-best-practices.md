@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a5d64106d801dfe554fe01290011e2d3e2b7767e
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: d797fb8843bdf5d29e9af43cac152461eb379e5f
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786072"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221396"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 
@@ -40,14 +40,14 @@ ms.locfileid: "60786072"
 
 运行查询后，可以看到执行时间及其资源使用率 (低、中、高) 。 High 指示查询需要更多资源来运行，可以改进以更有效地返回结果。
 
-![显示资源不足指示器的图像](../../media/resource-usage.png)
+:::image type="content" source="../../media/resource-usage.png" alt-text="查询门户中 **Results** 选项卡下的Microsoft 365 Defender详细信息" lightbox="../../media/resource-usage.png":::
 
 定期运行多个查询的客户应跟踪使用情况，并应用本文中的优化指南，以最大限度地减少因超出配额或使用参数而导致的中断。
 
 ## <a name="general-optimization-tips"></a>常规优化提示
 
 - **调整新查询** 的大小 — 如果您怀疑查询将返回大型查询结果集，请首先使用 count 运算符 [来评估它](/azure/data-explorer/kusto/query/countoperator)。 使用 [limit](/azure/data-explorer/kusto/query/limitoperator) 或它的同义词 `take` 以避免大型结果集。
-- 提前应用筛选器 **—** 应用时间筛选器和其他筛选器以减少数据集，尤其是在使用转换和分析函数（如 [substring ()](/azure/data-explorer/kusto/query/substringfunction) [、replace ()](/azure/data-explorer/kusto/query/replacefunction) [、trim ()](/azure/data-explorer/kusto/query/trimfunction) [、toupper ()](/azure/data-explorer/kusto/query/toupperfunction)或 [parse_json ()](/azure/data-explorer/kusto/query/parsejsonfunction)）之前。 在下面的示例中，在筛选运算符减少记录数后，使用分析函数 [extractjson () ](/azure/data-explorer/kusto/query/extractjsonfunction) 。
+- **提前** 应用筛选器 — 应用时间筛选器和其他筛选器以减少数据集，尤其是在使用转换和分析函数（如 [substring ()](/azure/data-explorer/kusto/query/substringfunction) [、replace ()](/azure/data-explorer/kusto/query/replacefunction) [、trim ()](/azure/data-explorer/kusto/query/trimfunction) [、toupper ()](/azure/data-explorer/kusto/query/toupperfunction)或 [parse_json ()](/azure/data-explorer/kusto/query/parsejsonfunction)）之前。 在下面的示例中，在筛选运算符减少记录数后，使用分析函数 [extractjson () ](/azure/data-explorer/kusto/query/extractjsonfunction) 。
 
     ```kusto
     DeviceEvents
@@ -59,7 +59,7 @@ ms.locfileid: "60786072"
 
 - **Has beats contains**-To avoid searching substrings within words unnecessarily， use the `has` operator instead of `contains` . [了解字符串运算符](/azure/data-explorer/kusto/query/datatypes-string-operators)
 - **查看特定列**— 查看特定列，而不是在所有列中运行全文搜索。 请勿使用 `*` 检查所有列。
-- **对于速度，区分** 大小写 — 区分大小写的搜索更为具体，通常性能也更高。 区分大小写的字符串 [运算符的名称，](/azure/data-explorer/kusto/query/datatypes-string-operators)例如 和 `has_cs` `contains_cs` ，通常以 结尾 `_cs` 。 您还可以使用区分大小写的等号运算符 `==` ，而不是 `=~` 。
+- **对于速度，区分** 大小写 — 区分大小写的搜索更为具体，通常性能也更高。 区分大小写的字符串 [运算符的名称，](/azure/data-explorer/kusto/query/datatypes-string-operators)例如 和 `has_cs` `contains_cs` ，通常以 结尾 `_cs` 。 您还可以使用区分大小写的等于运算符 `==` ，而不是 `=~` 。
 - **分析，不要提取**— 尽可能使用 [分析](/azure/data-explorer/kusto/query/parseoperator) 运算符或分析函数（如 [parse_json ()](/azure/data-explorer/kusto/query/parsejsonfunction)）。 避免 `matches regex` 使用字符串运算符或 [extract () ](/azure/data-explorer/kusto/query/extractfunction)函数，两者均使用正则表达式。 保留对更复杂的方案的正则表达式的使用。 [阅读有关分析函数的更多信息](#parse-strings)
 - **筛选表不是表达式**-如果可以筛选表列，则不要筛选计算列。
 - **无三字符术语**- 避免使用带三个字符或更少字符的术语进行比较或筛选。 这些术语未编制索引，匹配它们将需要更多资源。
@@ -83,7 +83,7 @@ ms.locfileid: "60786072"
     on AccountSid
     ```
 
-- 使用 **inner-join 风格**-[](/azure/data-explorer/kusto/query/joinoperator#join-flavors)默认联接风格或 [innerunique-join](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor)重复删除左表中的行，然后按联接键将每个匹配项的行返回到右表。 如果左表有多个行，这些行的键值相同，则删除这些行，以保留每个唯一值的一 `join` 个随机行。
+- 使用 **inner-join 风格**-[](/azure/data-explorer/kusto/query/joinoperator#join-flavors)默认联接风格或 [innerunique-join](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor)重复删除左表中的行，然后按联接键将每个匹配项的行返回到右表。 如果左表有多个行，这些行的键值相同，则这些行将进行重复数据删除，以保留每个唯一值的一 `join` 个随机行。
 
     此默认行为可能会从左侧表中排除可提供有用见解的重要信息。 例如，下面的查询将只显示一封包含特定附件的电子邮件，即使该同一附件是使用多个电子邮件发送的：
 
@@ -141,7 +141,7 @@ ms.locfileid: "60786072"
     on AccountObjectId
     ```
 
-    当 **[左边的](/azure/data-explorer/kusto/query/broadcastjoin)** 表格很小，最多有 100，000 (记录时，广播提示) 右表非常大。 例如，下面的查询尝试将具有特定主题的一些电子邮件与表中包含链接的所有邮件 `EmailUrlInfo` 加入：
+    当 **[左边的](/azure/data-explorer/kusto/query/broadcastjoin)** 表很小，最多有 100，000 (记录时，广播提示) 右表非常大。 例如，下面的查询尝试将具有特定主题的一些电子邮件与表中包含链接的所有邮件 `EmailUrlInfo` 加入：
 
     ```kusto
     EmailEvents
@@ -176,7 +176,7 @@ summarize [运算符](/azure/data-explorer/kusto/query/summarizeoperator) 聚合
     | summarize by SenderFromAddress, RecipientEmailAddress
     ```
 
-- **收缩查询**— 虽然最好在具有重复值的列中使用，但相同的列也可以具有高基数或大量 `summarize` 唯一值。  与 运算符一样，还可以将收缩提示与 一起应用，以分配处理负载，并有可能在高基数列 `join` [](/azure/data-explorer/kusto/query/shufflequery) `summarize` 上操作时提高性能。
+- **收缩查询**— 虽然最好在具有重复值的列中使用，但相同的列也可以具有高基数或大量 `summarize` 唯一值。  与 运算符一样，还可以将收缩提示与 一起应用，以分配处理负载，并可能改进在高基数列 `join` [](/azure/data-explorer/kusto/query/shufflequery) `summarize` 上操作时的性能。
 
     下面的查询用于计算不同的收件人电子邮件地址，这些地址可以在数十万大型 `summarize` 组织中运行。 为了提高性能，它包含了 `hint.shufflekey` ：
 
@@ -212,7 +212,7 @@ DeviceNetworkEvents
 
 若要围绕命令行创建更持久的查询，请应用以下做法：
 
-- 通过匹配文件名 (（而不是筛选命令行本身net.exe，psexec.exe) 名称字段来标识已知进程，例如net.exe或) 。 
+- 通过匹配 (字段（而不是筛选命令行本身）psexec.exe) 标识已知进程，例如net.exe或) 。 
 - 使用 parse_command_line [ () 函数分析命令行部分](/azure/data-explorer/kusto/query/parse-command-line)
 - 查询命令行参数时，请勿按特定顺序查找多个不相关参数的完全匹配。 而是使用正则表达式或使用多个单独的 Contains 运算符。
 - 使用不区分大小写的匹配项。 例如，使用 `=~` 、 `in~` 和 `contains` ，而不是 、 和 `==` `in` `contains_cs` 。
@@ -255,7 +255,7 @@ SHA256,ThreatTypes,DetectionMethods
 ```
 
 ### <a name="parse-strings"></a>分析字符串
-可以使用多种函数高效处理需要分析或转换的字符串。
+可以使用多种函数高效处理需要解析或转换的字符串。
 
 | String | 函数 | 用法示例 |
 |--|--|--|
@@ -263,12 +263,12 @@ SHA256,ThreatTypes,DetectionMethods
 | Paths | [parse_path () ](/azure/data-explorer/kusto/query/parsepathfunction) | 提取文件或文件夹路径的各个部分。 |
 | 版本号 | [parse_version () ](/azure/data-explorer/kusto/query/parse-versionfunction) | 解构一个版本号，每个节最多包含四个部分，最多八个字符。 使用分析的数据比较版本使用期。 |
 | IPv4 地址 | [parse_ipv4 () ](/azure/data-explorer/kusto/query/parse-ipv4function) | 将 IPv4 地址转换为长整型。 若要比较 IPv4 地址而不转换它们，请使用 [ipv4_compare () ](/azure/data-explorer/kusto/query/ipv4-comparefunction)。 |
-| IPv6 地址 | [parse_ipv6 () ](/azure/data-explorer/kusto/query/parse-ipv6function)  | 将 IPv4 或 IPv6 地址转换为规范 IPv6 表示法。 若要比较 IPv6 地址，请使用 [ipv6_compare () ](/azure/data-explorer/kusto/query/ipv6-comparefunction)。 |
+| IPv6 地址 | [parse_ipv6 () ](/azure/data-explorer/kusto/query/parse-ipv6function)  | 将 IPv4 或 IPv6 地址转换为规范 IPv6 表示法。 若要比较 IPv6 地址，ipv6_compare [ () ](/azure/data-explorer/kusto/query/ipv6-comparefunction)。 |
 
 若要了解所有受支持的分析函数，请阅读 [Kusto 字符串函数](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)。
 
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender"](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender，](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>相关主题
 - [Kusto 查询语言文档](/azure/data-explorer/kusto/query/)

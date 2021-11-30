@@ -14,14 +14,17 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c95a674c59e52c7bfe699b670a69fec468361d54
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 1ae0636f103c830866c0b7bcd1af488f2fc4e070
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128528"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220868"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>管理 Microsoft Defender 终结点计划 1
+
+**适用对象**
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!TIP]
 > 如果你已Microsoft 365 E3 A3，Microsoft 365 E5或 A5，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 注册预览计划！
@@ -45,7 +48,7 @@ ms.locfileid: "61128528"
 
 Defender for Endpoint 提供了很多灵活性和配置选项。 您可以调整和微调设置，以满足组织的需求。 例如，可以使用 Microsoft Endpoint Manager、组策略和其他方法来管理终结点安全设置。 
 
-若要了解更多信息，请参阅[管理适用于终结点的 Defender。](manage-atp-post-migration.md)
+若要了解更多信息，请参阅[管理适用于终结点的 Defender。](manage-mde-post-migration.md)
 
 ## <a name="address-false-positivesnegatives"></a>解决误报/负数
 

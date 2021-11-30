@@ -14,12 +14,12 @@ metadata:
   audience: ITPro
   ms.date: 10/19/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 39d198f01b1b6bce10ccb3d0f1c6a16971bc15c9
-  ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+  ms.openlocfilehash: e692e1a82183a46703cf3d09ac5ac803e6737ea5
+  ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/23/2021
-  ms.locfileid: "60552628"
+  ms.lasthandoff: 11/30/2021
+  ms.locfileid: "61220856"
 landingContent:
 - title: 基础解决方案指南
   linkLists:
@@ -128,7 +128,7 @@ landingContent:
   - linkListType: how-to-guide
     links:
     - text: 从非 Microsoft 终结点保护解决方案切换到 Microsoft Defender for Endpoint
-      url: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+      url: ../security/defender-endpoint/switch-to-mde-overview.md
 - title: 工作负载资源
   linkLists:
   - linkListType: reference

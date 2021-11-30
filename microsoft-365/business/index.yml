@@ -4,7 +4,7 @@ summary: Microsoft 365 商业高级版（旧称为“Microsoft 365 商业版”�
 brand: m365
 metadata:
   title: Microsoft 365 商业高级版资源
-  description: 有关设置和运行文档Microsoft 365 商业高级版。
+  description: 有关设置和运行Microsoft 365 商业高级版。
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
@@ -44,7 +44,7 @@ conceptualContent:
         - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
           itemType: overview
           text: 比较各计划
-        - url: /office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+        - url: 'https://go.microsoft.com/fwlink/?linkid=2164213'
           itemType: reference
           text: 服务说明
         - url: ../admin/misc/microsoft-365-business-faqs.yml

@@ -14,14 +14,14 @@ ms.collection:
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
-ms.date: 06/14/2021
+ms.date: 11/29/2021
 ms.technology: mde
-ms.openlocfilehash: 81de8401a9b09fdcc008a02a240bb66010d6ef33
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f37d7cf1cbf7916e2f3a4d8417a83470cad0b1d5
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154754"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220904"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>转换到 Microsoft Defender for Endpoint
 
@@ -41,9 +41,8 @@ ms.locfileid: "60154754"
 |---|---|
 |你还没有终结点保护解决方案，并且想要了解有关 Defender for Endpoint 的更多信息。 在环境中部署 Defender for Endpoint 之前，你想要了解它的工作原理。|[Microsoft Defender for Endpoint 评估实验室](evaluation-lab.md)|
 |你已拥有适用于终结点的 Defender，并且你需要一些帮助来设置和配置所有内容。|[Microsoft Defender for Endpoint 部署指南](deployment-phases.md)|
-|你计划从非 Microsoft 终结点保护解决方案切换到 Defender for Endpoint Microsoft Defender 防病毒。 您希望大致了解迁移过程以及如何进行切换。|[转换到 Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md)|
-|你已迁移或载入到 Defender for Endpoint。 需要一些有关下一步的帮助，例如管理安全设置、配置更多功能或微调安全策略。|[管理 Microsoft Defender for Endpoint，迁移后](manage-atp-post-migration.md)|
-|
+|你计划从非 Microsoft 终结点保护解决方案切换到 Defender for Endpoint，其中包括Microsoft Defender 防病毒。 您希望大致了解迁移过程以及如何进行切换。|[转换到 Microsoft Defender for Endpoint](switch-to-mde-overview.md)|
+|你已迁移或载入到 Defender for Endpoint。 需要一些有关下一步的帮助，例如管理安全设置、配置更多功能或微调安全策略。|[管理 Microsoft Defender for Endpoint，迁移后](manage-mde-post-migration.md)|
 
 
 ## <a name="do-you-have-feedback-for-us"></a>是否向我们提供反馈？

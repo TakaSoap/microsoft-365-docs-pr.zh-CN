@@ -16,19 +16,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0728c633b87b18d1bc4cec04d1ea6aeacab764d5
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: a411de512d5e07eb58f5a93163882836af823906
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61144948"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221252"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 评估实验室
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
@@ -105,7 +105,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 ## <a name="add-devices"></a>添加设备
 
-当你将设备添加到你的环境时，Defender for Endpoint 会设置具有连接详细信息的配置良好的设备。 可以添加 Windows 10、Windows 11、Windows Server 2019 或 Windows Server 2022 设备。
+当你将设备添加到你的环境时，Defender for Endpoint 会设置具有连接详细信息的配置良好的设备。 You can add Windows 10， Windows 11， Windows Server 2019， Windows Server 2016， and Linux (Ubuntu) .
 
 设备将配置最新版本的操作系统和 Office 2019 Standard 以及其他应用（如 Java、Python 和 SysIntenals）。
 
@@ -119,9 +119,9 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 - [首次看到时阻止](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 - [受控文件夹访问](controlled-folders.md)
 - [漏洞保护](enable-exploit-protection.md)
-- [网络保护功能](network-protection.md)
+- [网络保护](network-protection.md)
 - [可能不需要的应用程序检测](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
-- [云保护](cloud-protection-microsoft-defender-antivirus.md)
+- [云端保护](cloud-protection-microsoft-defender-antivirus.md)
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
@@ -134,7 +134,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 1. 从仪表板中，选择"**添加设备"。**
 
-2. 选择要添加的设备类型。 可以选择在 Server 2019 Windows 10 Windows 11、Windows Server 2019 或 Windows 服务器。
+2. 选择要添加的设备类型。 你可以选择将 Windows 10、Windows 11、Windows Server 2019、Windows Server 2016 和 Linux (Ubuntu) 。
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="使用设备选项的实验室设置。":::
 

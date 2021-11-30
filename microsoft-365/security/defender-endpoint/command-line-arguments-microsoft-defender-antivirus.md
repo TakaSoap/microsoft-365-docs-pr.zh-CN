@@ -15,12 +15,12 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0d9a2d84febb15dd626fb603faecc2bb0ba74af1
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: f7ae9c9d0986463b6d6368edd0dac050600e3373
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171032"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220880"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>使用 Microsoft Defender 防病毒命令行mpcmdrun.exe配置和管理客户端
 
@@ -31,7 +31,7 @@ ms.locfileid: "61171032"
 您可以使用专用的命令行工具Microsoft Defender 防病毒中执行各种 **mpcmdrun.exe。** 当您希望自动执行任务时，此实用工具Microsoft Defender 防病毒很有用。 可以在 中查找此实用工具 `%ProgramFiles%\Windows Defender\MpCmdRun.exe` 。 从命令提示符运行它。
 
 > [!TIP]
-> 您可能需要打开命令提示符的管理员级别版本。 当你在命令提示 **符** 上搜索命令"开始"菜单，选择"以 **管理员角色运行"。** 如果你运行的是更新的 Microsoft Defender 反恶意软件平台版本，请 `MpCmdRun` 从以下位置运行 `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` ：。 有关反恶意软件平台详细信息，请参阅Microsoft Defender 防病毒[更新和基线](manage-updates-baselines-microsoft-defender-antivirus.md)。
+> 您可能需要打开命令提示符的管理员级别版本。 当你在命令提示 **符** 上搜索命令"开始"菜单，选择以 **管理员角色运行**。 如果你运行的是更新的 Microsoft Defender 反恶意软件平台版本，请 `MpCmdRun` 从以下位置运行 `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` ：。 有关反恶意软件平台详细信息，请参阅Microsoft Defender 防病毒[更新和基线](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 MpCmdRun 实用工具使用下列语法：
 
@@ -60,7 +60,7 @@ MpCmdRun.exe -Scan -ScanType 2
 |`-RemoveDefinitions [-DynamicSignatures]`|仅删除动态下载的安全智能|
 |`-RemoveDefinitions [-Engine]`|还原以前安装的引擎|
 |`-SignatureUpdate [-UNC \|-MMPC]`|检查新的安全智能更新|
-|`-Restore  [-ListAll \|[[-Name <name>] [-All] \|[-FilePath <filePath>]] [-Path <path>]]`|还原或列出已隔离 (项) |
+|`-Restore  [-ListAll \|[[-Name <name>] [-All] \|[-FilePath <filePath>]] [-Path <path>]]`|还原或列出已隔离 (项目) |
 |`-AddDynamicSignature [-Path]`|加载动态安全智能|
 |`-ListAllDynamicSignatures`|列出已加载的动态安全智能|
 |`-RemoveDynamicSignature [-SignatureSetID]`|删除动态安全智能|
@@ -73,9 +73,9 @@ MpCmdRun.exe -Scan -ScanType 2
 
 |错误消息|可能的原因|
 |---|---|
-|**ValidateMapsConnection (800106BA** **) 失败0x800106BA**|禁用Microsoft Defender 防病毒服务。 启用该服务，然后重试。 如果需要有关重新启用Microsoft Defender 防病毒的帮助，请参阅[在终结点Microsoft Defender 防病毒/启用策略](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)。<p> **提示**：在 Windows 10 1909 或较早版本，Windows Server 2019 或更旧版本中，该服务以前称为 *Windows Defender 防病毒。*|
-|**0x80070667**|您运行的命令来自版本 `-ValidateMapsConnection` 1607 或Windows 10版本或版本Windows Server 2016版本的计算机。 从版本 1703 或更高版本Windows 10或 Windows Server 2019 或更高版本运行命令。|
-|**MpCmdRun 无法识别为内部或外部命令、可操作程序或批处理文件。**|该工具必须从任一或 (运行，其中可能会有所不同，因为除 3 月之外，平台更新 `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` `2012.4-0` 是每月) |
+|**ValidateMapsConnection 失败 (800106BA** **) 或** 0x800106BA|禁用Microsoft Defender 防病毒服务。 启用该服务，然后重试。 如果你需要有关重新启用Microsoft Defender 防病毒的帮助，请参阅[在终结点Microsoft Defender 防病毒/启用应用](switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)。<p> **提示**：在 Windows 10 1909 或更旧版本Windows Server 2019 或更旧版本中，该服务以前称为 *Windows Defender 防病毒。*|
+|**0x80070667**|您从版本 1607 或Windows 10或版本较旧版本的计算机Windows Server 2016 `-ValidateMapsConnection` 命令。 从版本 1703 或更高版本Windows 10或 Windows Server 2019 或更高版本运行命令。|
+|**MpCmdRun 无法识别为内部或外部命令、可操作程序或批处理文件。**|该工具必须从任一或 (运行，其中可能会有所不同，因为平台更新是每月一次，但 3 月除外 `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` `2012.4-0`) |
 |**ValidateMapsConnection 未能建立与 MAPS (hr=80070005 httpcode=450)**|试图使用权限不足的命令。 使用命令提示符 (cmd.exe) 管理员。|
 |**ValidateMapsConnection 未能建立与 MAPS (hr=80070006 httpcode=451)**|防火墙阻止连接或执行 SSL 检查。|
 |**ValidateMapsConnection 未能建立与 MAPS (hr=80004005 httpcode=450)**|可能的网络相关问题，如名称解析问题|

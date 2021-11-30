@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: d626e805c0e680dc64236066c962ce40229fd3bd
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 7ac39c068060fec945d04137688e6d9bb4b81655
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804973"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220988"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "60804973"
 有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 
 > [!NOTE]
-> 如果使用与号 (&) 自定义敏感信息类型中的关键字的一部分，请注意存在一个已知问题。 您应该添加一个附加术语，该字符周围有空格，以确保正确标识该字符，例如 L & P _而不是_ L&P。
+> 如果使用与号 (&) 自定义敏感信息类型中关键字的一部分，请注意存在一个已知问题。 您应该添加一个附加术语，该字符周围有空格，以确保正确标识该字符，例如 L & P _而不是_ L&P。
 
 ## <a name="sample-xml-of-a-rule-package"></a>规则包 XML 示例
 
@@ -422,7 +422,7 @@ Microsoft 365两个通用验证程序
 
 ### <a name="date-validator"></a>日期验证程序
 
-本示例中，为日期的正则表达式部分定义日期验证程序。
+本示例为日期的正则表达式部分定义日期验证程序。
 
 ```xml
 <Validators id="date_validator_1"> <Validator type="DateSimple"> <Param name="Pattern">DDMMYYYY</Param> <!—supported patterns DDMMYYYY, MMDDYYYY, YYYYDDMM, YYYYMMDD, DDMMYYYY, DDMMYY, MMDDYY, YYDDMM, YYMMDD --> </Validator> </Validators>
@@ -485,6 +485,10 @@ Microsoft 365两个通用验证程序
 ## <a name="potential-validation-issues-to-be-aware-of"></a>要注意的潜在验证问题
 
 当你上传规则包 XML 文件时，系统会验证 XML，并检查是否有已知的错误模式和明显的性能问题。验证检查正则表达式时，需要检查其中是否有下面的一些已知问题：
+  
+- 正则表达式中的 lookbehind 或 lookahead 断言应仅具有固定长度。 可变长度断言将导致错误。
+    
+  例如，" (？<=^|\s|) "无法通过验证，因为其中的第一个选项是"^"，其长度为零，而下一个 _tow 选项 ("\s"_ 和") "长度为 1。 此正则表达式的替代方法是" (？：^| (？<=\s|_) ) "
   
 - 不得以匹配所有项的交替符“|”开头或结尾，因为这被视为空匹配。
     

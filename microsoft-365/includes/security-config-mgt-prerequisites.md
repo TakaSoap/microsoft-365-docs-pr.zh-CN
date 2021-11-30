@@ -4,12 +4,12 @@ description: 包含文件
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 3a71ae9b77e49ff88c12383b00faf17d5a52b10d
-ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
+ms.openlocfilehash: 2ae8fa9e8cb3c28cf20ab9c57183b43d067b16b6
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61155420"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61222253"
 ---
 ## <a name="prerequisites"></a>先决条件
 
@@ -19,7 +19,6 @@ ms.locfileid: "61155420"
 
 当设备载入到适用于终结点的 Microsoft Defender 时：
 
-- 设备正在等待现有Endpoint Manager状态，包括 Configuration Manager 或 Intune
 - 没有安全状态Endpoint Manager启用安全管理功能
 - 如果不存在信任Azure Active Directory，则创建信任
 - Azure Active Directory信任用于与 Intune Endpoint Manager (通信) 检索策略
@@ -98,7 +97,7 @@ ms.locfileid: "61155420"
 
    :::image type="content" source="../media/add-role.png" alt-text="授予用户管理设置的权限。":::
 
-4. 登录到 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+4. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 5. 选择 **终结点安全**  >  **Microsoft Defender for Endpoint，** 将允许 Microsoft **Defender for Endpoint 强制实施** 终结点安全配置 (预览) 设置为 **"打开"。**
 
@@ -113,7 +112,10 @@ Microsoft Defender for Endpoint 支持多种载入设备的选项。 有关当�
 > [!IMPORTANT]
 > 在设备载入 Microsoft Defender for Endpoint 后，必须先使用 **MDE 管理** 进行标记，然后才能注册 Microsoft Defender for Endpoint 的安全管理。 有关 MDE 中的设备标记详细信息，请参阅 [*创建和管理设备标记*](/microsoft-365/security/defender-endpoint/machine-tag)。
 
-此方案不支持使用 Intune 或 Configuration Manager 管理的设备。
+
+## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>与组织共存Microsoft Endpoint Configuration Manager
+使用 Configuration Manager 时，安全策略管理的最佳路径是使用 [Configuration Manager 租户附加](/mem/configmgr/tenant-attach/endpoint-security-get-started)。 在某些环境中，可能需要对 Microsoft Defender 使用安全管理。 将 Microsoft Defender 安全管理与 Configuration Manager 一同使用时，终结点安全策略应隔离到单个控制平面。 通过这两个渠道控制策略将创造冲突和不预期结果的机会。
+
 
 ## <a name="create-azure-ad-groups"></a>创建Azure AD组
 
@@ -143,7 +145,7 @@ Microsoft Defender for Endpoint 支持多种载入设备的选项。 有关当�
 >
 > Microsoft Endpoint Manager支持将每个终结点安全策略类型的多个实例部署到同一设备，每个策略实例由设备单独接收。 因此，设备可能会从不同的策略接收相同设置的单独配置，这导致冲突。 某些 (如防病毒排除) 将在客户端上合并并成功应用。
 
-1. 登录到 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 转到 **"终结点安全性**"，然后选择要配置的策略类型，即"防病毒"或"防火墙"，然后选择"创建 **策略"。**
 
@@ -159,10 +161,10 @@ Microsoft Defender for Endpoint 支持多种载入设备的选项。 有关当�
 
    - 对于防火墙规则策略，选择：
      - 平台 **：Windows 10、Windows 11 和 Windows Server (Preview)**
-     - 配置文件 **：Microsoft Defender 防火墙规则 (预览)**
+     - 配置文件 **：Microsoft Defender 防火墙规则 (预览版)**
 
    - 对于"终结点检测和响应"策略，选择：
-     - 平台 **：Windows 10、Windows 11 和 Windows Server (Preview)**
+     - 平台 **：Windows 10、Windows 11** 和 Windows Server (Preview) 
      - 配置文件： **终结点检测和响应 (预览)**
 
 4. 选择“**创建**”。
