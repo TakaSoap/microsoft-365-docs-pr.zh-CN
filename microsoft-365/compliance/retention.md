@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 605858e433287e7d967d7d1908bc62c9255573c7
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 586c0555ddd10838a17e1d7151d4eb60d46ce1b8
+ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110519"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61234611"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -356,7 +356,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 
 有关四种不同原则的说明：
   
-1. **保留优先于删除。** 当内容也具有保留设置以保留它时，它不会被永久删除。 虽然这一原则确保了内容因合规原因而保留，但删除过程仍会启动，并可能从用户视图中删除内容。 例如在 SharePoint 中，文件从原来的文件夹移到了保藏文件夹中。 但是，已挂起永久删除。 关于内容如何保存以及保存在哪里的更多信息，请使用以下每个工作负载的链接：
+1. **保留优先于删除。** 当内容也具有保留设置以保留它时，它不会被永久删除。 虽然这一原则确保了内容因合规原因而保留，但删除过程仍会启动，并可能从用户视图中删除内容。 例如在 SharePoint 中，文件从原始文件夹移到了保留文件夹中。 但是，已挂起永久删除。 关于内容如何保存以及保存在哪里的更多信息，请使用以下每个工作负载的链接：
     
     - [用于 SharePoint 和 OneDrive 的保留的工作原理](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
     - [用于 Microsoft Teams 的保留工作原理](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
