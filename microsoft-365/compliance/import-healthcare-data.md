@@ -13,25 +13,25 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: 管理员可以设置数据连接器，将 EHR 中的电子 (记录) 其医疗保健系统中导入Microsoft 365。 这样，你可以将 EHR 数据用于内部风险管理策略，以帮助你检测员工对患者数据的未经授权的访问活动。
-ms.openlocfilehash: f7f87b229528bd9f4a43592e9e6a9cf656359094
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: 管理员可以设置一个数据连接器，以将 EHR 中的电子 (记录) 其医疗保健系统的数据导入Microsoft 365。 这样，你可以将 EHR 数据用于内部风险管理策略，以帮助你检测员工对患者数据的未经授权的访问活动。
+ms.openlocfilehash: e6c2387154108d54b429ec436c959925758a897b
+ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717424"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61234551"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>设置连接器以导入医疗保健 EHR 审核数据 (预览) 
 
-您可以在 EHR Microsoft 365 合规中心中设置数据连接器，以在组织的电子医疗保健记录 (EHR) 中导入用户活动的审核数据。 医疗保健 EHR 系统的审核数据包括有关访问患者健康记录的事件的数据。 医疗保健 EHR 审核数据可用于Microsoft 365风险管理[解决方案](insider-risk-management.md)，以帮助保护组织免受对患者信息的未经授权的访问。
+您可以在组织中设置数据连接器Microsoft 365 合规中心在组织的电子医疗保健记录服务 EHR) 系统中导入用户活动的 (数据。 您的医疗保健 EHR 系统审核数据包括与访问患者健康记录相关的事件的数据。 医疗保健 EHR 审核数据可用于Microsoft 365风险管理[解决方案](insider-risk-management.md)，以帮助保护组织免受对患者信息的未经授权的访问。
 
 设置医疗保健连接器包括以下任务：
 
-- 在应用程序中Azure Active Directory (Azure AD) 以访问 API 终结点，该终结点接受以制表符分隔的文本文件，其中包含医疗保健 EHR 审核数据。
+- 在 Azure Active Directory (Azure AD) 应用程序以访问 API 终结点，该终结点接受以制表符分隔的文本文件，其中包含医疗保健 EHR 审核数据。
 
 - 创建包含连接器架构中定义的所有必填字段的文本文件。
 
-- 在服务中创建医疗保健Microsoft 365 合规中心。
+- 在服务中心内创建Microsoft 365 合规中心。
 
 - 运行脚本将医疗保健 EHR 审核数据推送到 API 终结点。
 
@@ -39,7 +39,7 @@ ms.locfileid: "60717424"
 
 ## <a name="before-you-set-up-the-connector"></a>设置连接器之前
 
-- 必须在步骤 3 中为在步骤 3 中创建医疗保健连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[](\Exchange\permissions-exo\role-groups#create-role-groups)组中的角色组[](\Exchange\permissions-exo\role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 3 中为在步骤 3 中创建医疗保健连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](\Exchange\permissions-exo\role-groups#create-role-groups)"[](\Exchange\permissions-exo\role-groups#modify-role-groups)一文的"创建角色组"或"修改角色组"Exchange Online。
 
 - 您需要确定如何每天从组织的医疗保健 EHR 系统 (检索或导出数据) 并创建步骤 2 中所述的文本文件。 在步骤 4 中运行的脚本将文本文件中的数据推送到 API 终结点。
 
@@ -47,11 +47,11 @@ ms.locfileid: "60717424"
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤 1：在 Azure Active Directory
 
-第一步是在应用程序创建和注册Azure Active Directory (Azure AD) 。 该应用将对应于你在步骤 3 创建的医疗保健连接器。 创建此应用程序允许Azure AD对包含医疗保健 EHR 审核数据的文本文件的推送请求进行身份验证。 创建此应用程序Azure AD，请务必保存以下信息。 这些值将在稍后的步骤中使用。
+第一步是在应用程序创建和注册Azure Active Directory (Azure AD) 。 该应用将对应于你在步骤 3 创建的医疗保健连接器。 创建此应用Azure AD对包含医疗保健 EHR 审核数据的文本文件的推送请求进行身份验证。 创建此应用程序Azure AD，请务必保存以下信息。 这些值将在稍后的步骤中使用。
 
-- Azure AD应用程序 ID (也称为 *应用程序 ID* 或 *客户端 ID*) 
+- Azure AD ID (也称为 *应用 ID* 或 *客户端 ID*) 
 
-- Azure AD应用程序密码 (也称为 *客户端密码)*
+- Azure AD应用程序密码 (也称为 *客户端密码*) 
 
 - 租户 ID (*也称为目录 ID*) 
 
@@ -61,9 +61,12 @@ ms.locfileid: "60717424"
 
 下一步是创建一个文本文件，其中包含有关员工在组织的医疗保健 EHR 系统中访问患者健康记录的信息。 如前所述，您需要确定如何从医疗保健 EHR 系统生成此文本文件。 医疗保健连接器工作流需要具有制表符分隔值的文本文件，以使用所需连接器架构映射文本文件中的该数据。 支持的文件格式是逗号 (.csv) 、管道 (.psv) 或选项卡 (.tsv) 分隔的文本文件。
 
-下表列出了启用内部风险管理方案所需的字段。 这些字段的子集是必需的。 这些字段用星号* (突出显示) 。 如果文本文件中缺少任何必需字段，将不会验证该文件，并且不会导入该文件的数据。
+> [!NOTE]
+> 包含审核数据的文本文件的最大大小为 3 GB。 最大行数为 500 万。 此外，请务必仅包含来自医疗保健 EHR 系统的相关审核数据。
 
-|字段|Category|
+下表列出了启用内部风险管理方案所需的字段。 这些字段的子集是必需的。 这些字段用星号 (*) 。 如果文本文件中缺少任何必需字段，将不会验证该文件，并且不会导入该文件的数据。
+
+|字段|类别|
 |:----|:----------|
 | 创建时间 *<br/> 事件名称*<br/>工作站 ID<br/>Event Section<br/>事件类别 |这些字段用于标识您的医疗保健 EHR 系统中的访问活动事件。|
 | 患者注册表 ID<br/>患者名字 *<br/> 患者中间名 <br/> 患者姓氏* <br/>患者地址第 1 行* <br/>患者地址第 2 行<br/>患者城市* <br/>患者邮政编码*  <br/>患者状态 <br/>患者国家/地区 <br/>患者部门              | 这些字段用于标识患者配置文件信息。|
@@ -71,8 +74,8 @@ ms.locfileid: "60717424"
 | 电子邮件地址 (UPN) SamAccountName*<br/>员工用户名 <br/> 员工 ID <br/> 员工姓氏 <sup>1</sup> <br/> 员工名字 <sup>1</sup> | 这些字段用于标识确定对"家庭/邻接/员工"记录的访问权限所需的地址和名称匹配的员工个人资料信息。 |
 |||
 
-> [!NOTE]
-> <sup>1</sup>默认情况下，此字段在医疗保健系统中可能不可用。 您需要配置导出以确保文本文件包含此字段。
+> [!NOTE] 
+> <sup>1</sup>默认情况下，此字段在医疗保健 EHR 系统中可能不可用。 您需要配置导出以确保文本文件包含此字段。
 
 ## <a name="step-3-create-the-healthcare-connector"></a>步骤 3：创建医疗保健连接器
 
@@ -94,7 +97,7 @@ ms.locfileid: "60717424"
 
 6. 在"**文件映射方法**"页上，选择下列选项之一，然后单击"下一步 **"。**
 
-   - **Upload示例文件**。 如果选择此选项，请单击"Upload **文件**"以上载在步骤 2 中准备的文件。 此选项允许你从下拉列表中快速选择文本文件中的列名称，以将列映射到医疗保健连接器所需的架构。 
+   - **Upload示例文件**。 如果选择此选项，请单击"Upload文件"以上载在步骤 2 中准备的文件。 此选项允许你从下拉列表中快速选择文本文件中的列名称，以将列映射到医疗保健连接器所需的架构。 
 
     或
 
@@ -130,11 +133,14 @@ ms.locfileid: "60717424"
 
 设置医疗保健连接器的最后一步是运行示例脚本，该脚本将在你在步骤 1) 中创建的文本文件 (中将医疗保健 EHR 审核数据上载到 Microsoft 云。 具体而言，脚本将数据上载到医疗保健连接器。 运行脚本后，在步骤 3 中创建的医疗保健连接器将医疗保健 EHR 审核数据导入 Microsoft 365 组织，其他合规性工具（如预览体验成员风险管理解决方案）可以访问该数据。 运行脚本后，请考虑安排每天自动运行该脚本的任务，以便将最新的员工离职数据上传到 Microsoft 云。 请参阅 [ (可选) 步骤 6：将脚本安排为自动运行](#optional-step-6-schedule-the-script-to-run-automatically)。
 
+> [!NOTE]
+> 如前所述，包含审核数据的文本文件的最大大小为 3 GB。 最大行数为 500 万。 在此步骤中运行的脚本将大约需要 30 至 40 分钟从大型文本文件导入审核数据。 此外，该脚本还将大型文本文件划分为包含 10 万行的较小块，然后按顺序导入这些块。
+
 1. 转到上一步中打开的窗口，通过示例脚本GitHub网站。 或者，打开已添加书签的网站或使用您复制的 URL。
 
 2. 单击" **原始** "按钮以在文本视图中显示脚本。
 
-3. 复制示例脚本中所有的行，然后将它们保存到文本文件中。
+3. 复制示例脚本中所有行，然后将它们保存到文本文件。
 
 4. 如有必要，修改组织的示例脚本。
 
@@ -152,7 +158,7 @@ ms.locfileid: "60717424"
 
 |参数  |说明|
 |:----------|:----------|
-|tenantId|这是在步骤 1 Microsoft 365获得的组织 ID。 还可以在管理中心的"概述"边栏选项卡上获取Azure AD ID。 这用于标识您的组织。|
+|tenantId|这是在步骤 1 Microsoft 365获取的组织的 ID。 还可以在管理中心的"概述"边栏选项卡上获取Azure AD ID。 这用于标识您的组织。|
 |appId|这是Azure AD步骤 1 中创建的应用的应用程序Azure AD ID。 当脚本尝试Azure AD组织时，此参数Microsoft 365进行身份验证。|
 |appSecret|这是Azure AD步骤 1 中创建的应用的Azure AD密码。 这还用于身份验证。|
 |jobId|这是在步骤 3 中创建的医疗保健连接器的作业 ID。 这用于将上载到 Microsoft 云的医疗保健 EHR 审核数据与医疗保健连接器关联。|
@@ -172,7 +178,7 @@ ms.locfileid: "60717424"
 
 ## <a name="step-5-monitor-the-healthcare-connector"></a>步骤 5：监视医疗保健连接器
 
-创建医疗保健连接器并推送 EHR 审核数据后，可以查看连接器，并上传Microsoft 365 合规中心。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
+创建医疗保健连接器并推送 EHR 审核数据后，可以查看该连接器，并上传Microsoft 365 合规中心。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
 
 1. 转到左侧 <https://compliance.microsoft.com> 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 
@@ -184,9 +190,9 @@ ms.locfileid: "60717424"
 
 如果尚未在步骤 4 中运行脚本，则"上次导入"下将显示用于下载脚本 **的链接**。 可以下载脚本，然后按照步骤运行脚本。
 
-## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a> (可选) 步骤 6：计划脚本自动运行
+## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a> (可选) 步骤 6：将脚本安排为自动运行
 
-若要确保医疗保健 EHR 系统中的最新审核数据可供内部风险管理解决方案等工具使用，建议安排脚本每天自动运行。 这还要求你在类似的 (（如果不是同一) 计划）上更新文本文件中的 EHR 审核数据，以便其中包含员工有关患者记录访问活动的最新信息。 目标是上载最新的审核数据，以便医疗保健连接器能够将其提供给内部风险管理解决方案。
+若要确保医疗保健 EHR 系统中的最新审核数据可供内部风险管理解决方案等工具使用，建议安排脚本每天自动运行。 这还要求在类似的 (（如果不是同一) 计划）上更新同一文本文件中的 EHR 审核数据，以便其中包含员工有关患者记录访问活动的最新信息。 目标是上载最新的审核数据，以便医疗保健连接器能够将其提供给内部风险管理解决方案。
 
 You can user the Task Scheduler app in Windows to automatically run the script every day.
 
@@ -214,18 +220,24 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 7. 选择" **操作"** 选项卡，单击 **"新建**"，然后执行以下操作：
 
+   ![为医疗保健连接器脚本创建新的计划任务的操作设置。](../media/GenericHealthCareConnectorScheduleTask1.png)
+
     1. 在 **"操作** "下拉列表中，确保已 **选择"启动程序** "。
 
     2. 在"**程序/脚本**"框中，单击"浏览"，然后转到以下位置并选择它，以便路径显示在框中：C:.0.exe。
 
-    3. 在" **添加 (可选) "** 框中，粘贴在步骤 4 中运行相同的脚本命令。 例如，`..ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Healthcare\audit\records.txt"`
+    3. 在" **添加 (可选) "** 框中，粘贴在步骤 4 中运行相同的脚本命令。 例如，`.\HealthcareConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Healthcare\audit\records.txt"`
 
     4. 在 **" (可选**) "框中，粘贴在步骤 4 中运行脚本的文件夹位置。 例如，C：\Healthcare\audit。
 
     5. 单击 **"** 确定"保存新操作的设置。
 
-8. 在" **创建任务"** 窗口中，单击" **确定** "保存计划任务。 系统可能会提示你输入用户帐户凭据。
+8. 在" **创建任务"** 窗口中，单击" **确定** "保存计划任务。 系统可能会提示您输入用户帐户凭据。
 
-显示脚本上次运行的时间和计划运行的下一次。 可以双击任务进行编辑。
+   新任务将显示在任务计划程序库中。
 
-还可以验证脚本上次在合规中心中相应医疗保健连接器的飞出页面上运行的时间。
+   ![医疗保健连接器脚本的新任务显示在任务计划程序库中。](../media/HealthcareConnectorTaskSchedulerLibrary.png)
+
+   显示脚本上次运行的时间和计划运行的下一次。 可以双击任务进行编辑。
+
+   还可以验证脚本上次在合规中心中相应医疗保健连接器的飞出页面上运行的时间。

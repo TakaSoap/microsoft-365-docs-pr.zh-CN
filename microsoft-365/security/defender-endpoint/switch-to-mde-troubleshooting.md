@@ -19,15 +19,15 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 11/29/2021
+ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: fa8dab5e72f2e3833508bce92b5a9f0b9d699f6b
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: bbde6e79f35bf69b29d589186054bc072124d1ea
+ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221450"
+ms.locfileid: "61234527"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>切换到 Microsoft Defender for Endpoint 时的问题疑难解答
 
@@ -38,9 +38,9 @@ ms.locfileid: "61221450"
 
 本文为在从非 Microsoft 终结点保护解决方案切换到 Microsoft Defender for Endpoint 时遇到问题的安全管理员提供了疑难解答信息。
 
-## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Microsoft Defender 防病毒服务器上卸载Windows程序
+## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Microsoft Defender 防病毒卸载的 Windows Server
 
-当你切换到 Defender for Endpoint 时，你首先在活动模式下使用非 Microsoft 防病毒/反恶意软件保护。 作为设置过程的一部分，在被动Microsoft Defender 防病毒配置策略。 有时，非 Microsoft 防病毒/反恶意软件解决方案可能会阻止 Microsoft Defender 防病毒 Server Windows运行。 事实上，它看起来好像Microsoft Defender 防病毒服务器Windows已删除。
+当你切换到 Defender for Endpoint 时，你首先在活动模式下使用非 Microsoft 防病毒/反恶意软件保护。 作为设置过程的一部分，在被动Microsoft Defender 防病毒配置策略。 有时，非 Microsoft 防病毒/反恶意软件解决方案可能会阻止 Microsoft Defender 防病毒 Server Windows运行。 事实上，它看起来可能Microsoft Defender 防病毒服务器Windows服务器。
 
 若要解决此问题，请执行以下步骤：
 
@@ -83,7 +83,7 @@ Defender for Endpoint 的某些排除项必须在现有的非 Microsoft 终结�
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-manually"></a>手动Microsoft Defender 防病毒被动模式
 
-在 Windows Server 2019、Windows Server 版本 1803 或更高版本、Windows Server 2016 或 Windows Server 2012 R2 上，您必须手动将 Microsoft Defender 防病毒 设置为被动模式。 此操作有助于防止在服务器上安装多个防病毒产品导致的问题。 可以使用 PowerShell Microsoft Defender 防病毒组策略或注册表项将用户设置为被动模式。
+在 Windows Server 2019、Windows Server 版本 1803 或更高版本、Windows Server 2016 或 Windows Server 2012 R2 上，必须手动将 Microsoft Defender 防病毒 设置为被动模式。 此操作有助于防止在服务器上安装多个防病毒产品导致的问题。 可以使用 PowerShell Microsoft Defender 防病毒组策略或注册表项将用户设置为被动模式。
 
 可以通过设置Microsoft Defender 防病毒注册表项，将用户设置为被动模式：
 
@@ -96,12 +96,22 @@ Defender for Endpoint 的某些排除项必须在现有的非 Microsoft 终结�
 值：`1`
 
 > [!NOTE]
-> 若要使被动模式在运行 Windows Server 2016 和 Windows Server 2012 R2 的终结点上工作，必须使用载入 Windows 服务器 中的说明载入这些[终结点](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
+> 若要使被动模式在运行 Windows Server 2016 和 Windows Server 2012 R2 的终结点上工作，这些终结点必须使用载入 Windows[服务器 中的说明载入](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
 
 有关详细信息，请参阅 Microsoft Defender 防病毒[Server Windows。](microsoft-defender-antivirus-on-windows-server.md)
+
+## <a name="i-am-having-trouble-reinstalling-microsoft-defender-antivirus-on-windows-server-2016"></a>我在重新安装 Microsoft Defender 防病毒 时Windows Server 2016
+
+如果您在 Windows Server 2016 上使用非 Microsoft 防病毒/反恶意软件解决方案，则现有解决方案可能需要Microsoft Defender 防病毒或卸载此解决方案。 您可以使用恶意软件防护[Command-Line实用工具](command-line-arguments-microsoft-defender-antivirus.md)在Microsoft Defender 防病毒上重新启用Windows Server 2016。
+
+1. 作为服务器的本地管理员，打开命令提示符。
+
+2. 运行以下命令：`MpCmdRun.exe -wdenable`
+
+3. 重启设备。
 
 ## <a name="see-also"></a>另请参阅
 
 - [Microsoft Defender 防病毒安全产品的兼容性](microsoft-defender-antivirus-compatibility.md)
 
-- [适用于 Defender for Endpoint 中Windows的载入工具和方法](configure-endpoints.md) 
+- [适用于 Defender for Endpoint 中 Windows设备的载入工具和方法](configure-endpoints.md) 

@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 2cd42f5443506a51539638d4ddaa7ab2bd19ebcd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e49cae704e9ee62801af7423ba10b45e0b13574d
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646951"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220964"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -970,6 +970,13 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已启用组织中人员协作<sup>*</sup>|EnableSameOrgCollaboration|表单所有者打开设置，允许当前组织中的用户查看和编辑表单。|
 |已启用特定人员协作<sup>*</sup>|EnableSpecificCollaboaration|表单所有者启用设置，仅允许当前组织中的特定人员或特定组查看和编辑表单。|
 |已连接到 Excel 工作簿<sup>*</sup>|ConnectToExcelWorkbook|已将表单连接到 Excel 工作簿。 <br><br>属性 ExcelWorkbookLink:string 指示当前表单的关联 Excel 工作簿 ID。|
+|已创建集合|CollectionCreated|表单所有者创建了一个集合。|
+|已更新集合|CollectionUpdated|表单所有者更新了集合属性。|
+|已从回收站中删除集合|CollectionHardDeleted|表单所有者硬删除了回收站中的集合。|
+|已将集合移动到回收站|CollectionSoftDeleted|表单所有者将集合移到了回收站。|
+|已重命名集合|CollectionRenamed|表单所有者更改了集合的名称。|
+|已将表单移动到集合中|MovedFormIntoCollection|表单所有者将表单移入集合。|
+|已将表单从集合中移出|MovedFormOutofCollection|表单所有者已将表单移出集合。|
 ||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>合著者和匿名响应者执行的 Forms 活动

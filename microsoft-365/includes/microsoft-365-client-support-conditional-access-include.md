@@ -4,7 +4,6 @@
 |ACCESS|不适用|不适用|不适用|Planned|不适用|
 |AZURE ACTIVE DIRECTORY 管理员|不适用|不适用|不适用|Planned|不适用|
 |公司门户|Planned|Planned|Planned|不适用|Planned|
-|CORTANA|不适用|不适用|不适用|不适用|Planned|
 |EXCEL|✔|✔|✔|✔|不适用|
 |EXCHANGE 管理员|不适用|不适用|不适用|✔|不适用|
 |FORMS|不适用|不适用|不适用|不适用|不适用|
@@ -31,7 +30,7 @@
 |SWAY|不适用|不适用|不适用|不适用|Planned|
 |TEAMS|✔|✔|✔|✔|不适用|
 |TO-DO|Planned|Planned|Planned|不适用|Planned|
-|VISIO|不适用|✔|不适用|不适用|不适用|
+|VISIO|不适用|✔|不适用|✔|不适用|
 |WHITEBOARD|✔|Planned|不适用|不适用|Planned|
 |WORD|✔|✔|✔|✔|不适用|
 |工作区分析|不适用|不适用|不适用|不适用|不适用|
