@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 SharePoint 和 OneDrive 的保留的工作原理。
-ms.openlocfilehash: 26dbe5729081c501f5a80e1ecfdde4a184938328
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c86c8afc219074506e7e58bb63fb0792e5116317
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167570"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241184"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>了解用于 SharePoint 和 OneDrive 的保留
 
@@ -49,7 +49,9 @@ ms.locfileid: "61167570"
 > [!TIP]
 > 当你将[带有自动应用策略的查询用于保留标签](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)时，可以使用以下条目排除特定文档库：`NOT(DocumentLink:"<URL to document library>")`
 
-列表项不受保留策略支持，但是受保留标签支持，系统列表中的项例外。 这些是 SharePoint 用于管理系统的隐藏列表，并且包括主控页目录、解决方案目录和数据源。 在将保留标签应用于具有文档附件的受支持列表项时：
+列表项不受保留策略支持，但是受保留标签支持，系统列表中的项例外。 这些是 SharePoint 用于管理系统的隐藏列表，并且包括主控页目录、解决方案目录和数据源。 将保留标签应用于受支持的列表项时，将始终根据保留设置保留它们，但如果它们在搜索中被隐藏，则不会删除。
+
+在将保留标签应用于具有文档附件的受支持列表项时：
 - 对于标准保留标签（不会将项目声明为记录）：
     - 文档附件不会自动继承标签的保留设置，但可以单独标记。
 - 对于将该项目声明为记录的保留标签： 
@@ -58,6 +60,7 @@ ms.locfileid: "61167570"
 保留策略和保留标签的保留设置不适用于包括库、列表和文件夹的组织结构。
 
 对于保留策略和自动应用标签策略：必须为要应用的保留设置编制 SharePoint 网站索引。 但是，如果 SharePoint 文档库中的项目配置为不显示在搜索结果中，则此配置不会排除保留设置中的文件。
+
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>用于 SharePoint 和 OneDrive 的保留的工作原理
 

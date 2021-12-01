@@ -33,7 +33,7 @@
 #### [使用 Microsoft Endpoint Manager 载入](onboarding-endpoint-manager.md)
 
 ## [迁移指南](migration-guides.md)
-### [迁移概述](switch-to-mde-overview.md)
+### [迁移到 Defender for Endpoint](switch-to-mde-overview.md)
 #### [阶段 1：准备](switch-to-mde-phase-1.md)
 #### [阶段 2：设置](switch-to-mde-phase-2.md)
 #### [阶段 3：开始使用](switch-to-mde-phase-3.md)

@@ -16,16 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，了解如何管理租户列表。
-ms.openlocfilehash: 458a0fadfa883cd9f57a12c330af731c91c5aa01
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: c2a1bfe65f2002f6b8c6548eabea5dc450366c32
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123276"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254389"
 ---
 # <a name="manage-your-tenant-list"></a>管理租户列表
 
-为了帮助你管理租户列表中的Microsoft 365 Lighthouse，你可以将自定义标记应用到租户。 这些标记可用于组织租户，还可以帮助您筛选可用于相关租户集的现有视图和见解。 可以从租户页面管理标记。 创建和分配后，可以基于标记筛选租户、用户、设备、威胁管理和 Windows 365 页面中的数据。
+> [!NOTE]
+> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+
+为了帮助你管理租户列表中的Microsoft 365 Lighthouse，你可以将自定义标记应用到租户。 这些标记可用于组织租户，还可以帮助您筛选可用于相关租户集的现有视图和见解。 可以从租户页面管理标记。 创建和分配后，你可以基于标记筛选租户、用户、设备、威胁管理和 Windows 365 页面中的数据。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -49,7 +52,7 @@ ms.locfileid: "61123276"
 
 4. 输入名称和说明。
 
-5. 选择 **“保存”**。
+5. 选择“**保存**”。
 
 ## <a name="edit-a-tag"></a>编辑标记
 
@@ -61,13 +64,13 @@ ms.locfileid: "61123276"
 
 4. 根据需要编辑名称和/或说明。
 
-5. 选择 **“保存”**。
+5. 选择“**保存**”。
 
 ## <a name="assign-a-tag"></a>分配标记
 
 1. In the left navigation pane in Lighthouse， select **Tenants**.
 
-2. 从租户列表中选择三个点 (要) 标记的租户旁边的更多操作。
+2. 从租户列表中，选择三个点 (要) 标记的租户旁边的更多操作。
 
 3. 选择 **标记**。
 
@@ -91,7 +94,7 @@ ms.locfileid: "61123276"
 
 1. In the left navigation pane in Lighthouse， select **Tenants**.
 
-2. 从租户列表中选择三个点 (要编辑) 旁边的其他操作。
+2. 从租户列表中，选择三个点 (要) 编辑的租户旁边的其他操作。
 
 3. 选择 **标记**。
 

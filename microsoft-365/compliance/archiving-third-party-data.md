@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何从社交媒体平台、即时消息平台和文档协作平台导入和存档第三方数据以Microsoft 365邮箱。
-ms.openlocfilehash: 3b9868d112e6f4add560da31346df786dff1e96e
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: af337894e2eefed2b723d5086e6dcf5442826da5
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217730"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254456"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>存档第三方数据Microsoft 365
 
@@ -108,7 +108,7 @@ The Microsoft 365 合规中心 provides native third-party data connectors from 
 
 本节中的表列出了与 TeleMessage 合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
 
-您必须使用 TeleMessage 为组织设置存档服务，然后才能在 Microsoft 365 中存档第三方数据。 有关详细信息，请单击"第三方数据"列中的链接，转到有关创建该连接器的分步说明数据类型。
+您必须使用 TeleMessage 为组织设置存档服务，然后才能在 Microsoft 365 中存档第三方数据。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
 
 TeleMessage 数据连接器还可用于美国政府GCC云中的Microsoft 365环境中。 有关详细信息，请参阅本文 [中的](#data-connectors-in-the-us-government-cloud) 美国政府云数据连接器部分。
 
@@ -132,9 +132,9 @@ TeleMessage 数据连接器还可用于美国政府GCC云中的Microsoft 365环�
 
 本节中的表列出了与 17a-4 LLC 合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
 
-在 Microsoft 365 中存档第三方数据之前，您必须使用 17a-4 LLC 为组织设置其存档服务 (*DataParser*) 。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
+在 Microsoft 365 中存档第三方数据之前，您必须使用 17a-4 LLC 为组织设置其存档服务 (*称为 DataParser*) 。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
 
-17a-4 数据连接器还可用于美国政府GCC中Microsoft 365环境中。 有关详细信息，请参阅本文 [中的](#data-connectors-in-the-us-government-cloud) 美国政府云数据连接器部分。
+17a-4 数据连接器还可用于美国政府GCC云中的Microsoft 365环境中。 有关详细信息，请参阅本文 [中的](#data-connectors-in-the-us-government-cloud) 美国政府云数据连接器部分。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -162,7 +162,7 @@ TeleMessage 数据连接器还可用于美国政府GCC云中的Microsoft 365环�
 
 本节中的表列出了与 CellTrust 合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
 
-在将第三方数据存档到 Microsoft 365 中之前，您必须使用 CellTrust 为组织设置 (*CellTrust SL2*) 存档服务。 有关详细信息，请单击"第三方数据"列中的链接，转到创建 CellTrust SL2 连接器的分步说明。
+在将第三方数据存档到 Microsoft 365 之前，您必须使用 CellTrust 为组织设置其 (*称为 CellTrust SL2*) 服务。 有关详细信息，请单击"第三方数据"列中的链接，转到创建 CellTrust SL2 连接器的分步说明。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -173,31 +173,31 @@ CellTrust SL2 数据连接器还可用于美国政府GCC环境中Microsoft 365�
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>支持第三方数据的合规性解决方案概述
 
-以下各节介绍一些Microsoft 365合规性解决方案可以帮助您管理上表中列出的第三方数据。
+以下各节介绍了合规性Microsoft 365可帮助您管理上表中列出的第三方数据的一些内容。
 
 ### <a name="litigation-hold"></a>诉讼保留
 
-将用户 [邮箱置于](create-a-litigation-hold.md) 诉讼保留以保留第三方数据。 创建保留时，您可以指定保留持续时间 *(* 也称为基于时间的保留) 以便删除和修改的第三方数据将在指定的时段内保留，然后从邮箱中永久删除。 或者，您可以无限期保留 (称为"无限期 *保留")* 或删除诉讼保留。
+将用户 [邮箱置于](create-a-litigation-hold.md) 诉讼保留以保留第三方数据。 创建保留时，您可以指定保留持续时间 (也称为基于时间的保留 *) 以便* 删除和修改的第三方数据将保留指定的时间段，然后从邮箱中永久删除。 或者，您可以无限期地保留 (称为"无限期保留") 或删除诉讼保留。
 
 ### <a name="ediscovery"></a>电子数据展示
 
-Microsoft 365中三个主要电子数据展示工具是内容搜索、核心电子数据展示Advanced eDiscovery。
+其中三个主要电子数据展示工具Microsoft 365内容搜索、核心电子数据展示和Advanced eDiscovery。
 
 - **[内容搜索](content-search.md)。** 您可以使用内容搜索工具在邮箱中搜索您导入的第三方数据。 您可以使用搜索查询和条件来缩小搜索结果范围，并导出搜索结果。
 
 - **[核心电子数据展示](get-started-core-ediscovery.md)。** 此工具基于基本搜索和导出功能构建，通过创建案例，您可以控制谁可以访问事例数据、将用户邮箱或与搜索条件匹配的邮箱内容置于保留状态。 这意味着您可以将电子数据展示保留置于导入到用户邮箱的第三方数据上。
 
-- **[Advanced eDiscovery](overview-ediscovery-20.md)。** 这一强大的工具通过让您向案例添加保管人、将保管人的数据置于保留状态，然后将保管人的第三方数据加载到审阅中以进一步分析（如主题和重复检测）来扩展核心电子数据展示的案例功能。 在将第三方数据加载到审阅集后，可以查询并筛选到较窄结果集。
+- **[Advanced eDiscovery](overview-ediscovery-20.md)。** 这一强大的工具通过让您向案例添加保管人、将保管人的数据置于保留状态，然后将保管人的第三方数据加载到审阅中以进一步分析（如主题和重复检测）来扩展核心电子数据展示的案例功能。 将第三方数据加载到审阅集后，可以查询并筛选到较窄结果集。
 
    核心电子数据展示Advanced eDiscovery可让你管理可能与组织的法律或内部调查相关的第三方数据。
 
 ### <a name="retention-settings"></a>保留设置
 
-可以将 [保留策略应用于](retention.md) 用户邮箱以保留，然后在保留期到期 (删除第三方) 内容。 您还可以使用保留策略删除特定期限的第三方数据，或使用保留标签在第[](disposition.md)三方数据的保留期到期时触发处置评审。
+可以将保留策略应用于 [用户](retention.md) 邮箱以保留，然后在保留期到期 (删除第三) 内容。 您还可以使用保留策略删除特定期限的第三方数据，或使用保留标签在第[](disposition.md)三方数据的保留期到期时触发处置评审。
 
 ### <a name="records-management"></a>记录管理
 
-通过[记录](records-management.md)管理工具中的Microsoft 365，您可将第三方数据声明为记录。 这可以通过应用保留标签（将邮箱中第三方数据标记为记录）的用户手动完成。 或者，您可以通过标识第三方数据中的敏感信息、关键字或内容类型来自动应用保留标签。
+通过[记录管理](records-management.md)Microsoft 365将第三方数据声明为记录。 这可以通过应用保留标签（将邮箱中第三方数据标记为记录）的用户手动完成。 或者，您可以通过标识第三方数据中的敏感信息、关键字或内容类型来自动应用保留标签。
 
 ### <a name="communication-compliance"></a>通信合规性
 
@@ -206,39 +206,6 @@ Microsoft 365中三个主要电子数据展示工具是内容搜索、核心电�
 ### <a name="insider-risk-management"></a>内部风险管理
 
 预览体验成员风险管理解决方案可以使用来自第三方数据的信号（如选择性 HR[](insider-risk-management.md)数据）来最大程度地降低内部风险，让你可以检测、调查和处理组织中存在风险的活动。 例如，HR 数据连接器导入的数据用作风险指示器，以帮助检测离职的员工数据盗窃。
-
-## <a name="role-group-membership-required-to-create-data-connectors"></a>创建数据连接器所需的角色组成员身份
-
-若要创建第三方数据连接器，您组织的用户必须是以下角色组之一Microsoft 365 合规中心：
-
-- 通信合规性
-
-- 通信合规性管理员
-
-- 合规管理员
-
-- 合规数据管理员
-
-- 合规性管理器管理员
-
-- 合规性管理器评估员
-
-- 合规性管理器参与者
-
-- 内部风险管理
-
-- 内部风险管理管理员
-
-- 组织管理
-
-> [!NOTE]
-> 从 2021 年 11 月 30 开始，不必在 Exchange Online 分配邮箱导入导出角色来创建数据连接器。 在此日期之后，你只需是之前角色组中角色组之一Microsoft 365 合规中心才能创建数据连接器。
-
-有关角色Microsoft 365 合规中心以及如何将用户添加到合规性角色组的信息，请参阅：
-
-- [安全与合规中心内的权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
-
-- "将用户添加到合规性角色组"部分，该[部分在Microsoft 365 合规中心](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group)
 
 ## <a name="using-ediscovery-tools-to-search-for-third-party-data"></a>使用电子数据展示工具搜索第三方数据
 
@@ -345,7 +312,7 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>与 Microsoft 合作伙伴合作存档第三方数据
 
-导入和存档第三方数据的另一个选项是让组织与 Microsoft 合作伙伴合作。 如果 Microsoft 合规中心提供的数据连接器不支持第三方 数据类型，你可以与合作伙伴合作，该合作伙伴可以提供一个自定义连接器，该连接器将配置为定期提取第三方数据源中的项目，然后通过第三方 API 连接到 Microsoft 云，然后将这些项目导入 Microsoft 365。 合作伙伴连接器还将项目的内容从第三方数据源转换为电子邮件，然后将它导入 Microsoft 365。
+导入和存档第三方数据的另一个选项是让组织与 Microsoft 合作伙伴合作。 如果 Microsoft 合规中心内提供的数据连接器不支持第三方 数据类型，你可以与合作伙伴合作，该合作伙伴可以提供自定义连接器，该连接器将配置为定期提取第三方数据源中的项目，然后通过第三方 API 连接到 Microsoft 云，然后将这些项目导入 Microsoft 365。 合作伙伴连接器还将项目的内容从第三方数据源转换为电子邮件，然后将它导入到 Microsoft 365 中的邮箱。
 
 有关可以合作的合作伙伴列表以及此方法的分步过程，请参阅与合作伙伴协作以在 Microsoft 365[中存档第三方数据](work-with-partner-to-archive-third-party-data.md)。
 

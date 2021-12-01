@@ -42,3 +42,5 @@
       href: ./index.yml
     - name: Microsoft 365 合规中心
       href: ../compliance/index.yml
+    - name: 管理 Office 文档中的活动内容
+      href: active-content-in-trusted-docs.md
