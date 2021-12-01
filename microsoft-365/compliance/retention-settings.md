@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: 475ed6226c5482a1b9256d38798b9cbbdd8be31e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ade850732a637356e4bb0d3b4de3ea8a8ac6c683
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110543"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240812"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -218,7 +218,7 @@ ms.locfileid: "61110543"
 
 通过在邮箱级别应用保留设置，**Exchange 电子邮件** 位置支持用户的电子邮件、日历和其他邮箱项的保留。还支持共享的邮箱。
 
-不支持 Exchange 电子邮件的资源邮箱、联系人和Microsoft 365 组邮箱。 对于 Microsoft 365 群组邮箱，请选择 **Microsoft 365 群组** 位置。
+不支持 Exchange 电子邮件的资源邮箱、联系人和Microsoft 365 组邮箱。 对于 Microsoft 365 群组邮箱，请选择 **Microsoft 365 群组** 位置。 虽然 Exchange 位置最初允许为静态作用域选择组邮箱，但在尝试保存保留策略时，你将收到一条错误消息，表明“RemoteGroupMailbox”不是此位置的有效选项。
 
 根据策略配置， 可能包含或不包含[非活动邮箱](create-and-manage-inactive-mailboxes.md)：
 
@@ -269,10 +269,10 @@ ms.locfileid: "61110543"
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 组的配置信息
 
-若要保留或删除 Microsoft 365 组（以前称为 Office 365 组）的内容，请使用 **Microsoft 365 组** 位置。 此位置包含组邮箱和 SharePoint 团队网站。
+若要保留或删除 Microsoft 365 组（以前称为 Office 365 组）的内容，请使用 **Microsoft 365 组** 位置。 对于保留策略，此位置包括组邮箱和 SharePoint 团队网站。 对于保留标签，此位置仅包括 SharePoint 团队网站。
 
 > [!NOTE]
-> 即使 Microsoft 365 组有 Exchange 邮箱，**Exchange 电子邮件** 位置的保留策略也不会包含Microsoft 365 组邮箱中的内容。 
+> 即使 Microsoft 365 组有 Exchange 邮箱，**Exchange 电子邮件** 位置的保留策略也不会包含Microsoft 365 组邮箱中的内容。
 
 如果使用静态作用域: 虽然静态作用域的 **Exchange 电子邮件** 位置最初允许指定要包含或排除的组邮箱，但当尝试保存保留策略时，将看到错误消息，指出 "RemoteGroupMailbox" 不是 Exchange 位置的有效选择。
 
@@ -293,7 +293,7 @@ ms.locfileid: "61110543"
 
 #### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>如果在应用策略后删除 Microsoft 365 组，会发生什么情况
 
-如果将保留策略应用于 Microsoft 365 组，并且该组随后从Azure Active Directory 中删除：
+将保留策略（静态策略作用域或自适应）应用于 Microsoft 365 组，然后从 Azure Active Directory 中删除该组时：
 
 - 通过组连接的 SharePoint 网站将会保留，并继续由相应 **Microsoft 365 组** 位置的保留策略管理。 在删除该组之前有权访问相应网站的用户仍然可以访问这些网站，但所有新权限现在都必须通过 SharePoint 管理。
     

@@ -1,7 +1,7 @@
 ---
 title: 内部风险管理计划
 description: 了解如何在组织中规划使用内部风险管理策略。
-keywords: Microsoft 365、内部风险、风险管理、合规性
+keywords: Microsoft 365， 内部风险， 风险管理， 合规性
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: d380fcccb43f78d55f67678c0d1e6c5ea6abdbca
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 848d1ea09cf64d107750e3a09580f2aaafff4887
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786730"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241196"
 ---
 # <a name="plan-for-insider-risk-management"></a>内部风险管理计划
 
@@ -32,7 +32,7 @@ ms.locfileid: "60786730"
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>与组织中的利益干系人合作
 
-确定组织中适当的利益干系人，以协作对内部风险管理警报和案例采取措施。 在初始计划和端到端内部风险管理工作流中应考虑包括在内的一些建议利益干系[](insider-risk-management.md#workflow)人是组织以下领域的人员：
+确定组织中适当的利益干系人，以协作对内部风险管理警报和案例采取措施。 在初始计划和端到端内部风险管理工作流中要考虑的一些建议利益干系人[](insider-risk-management.md#workflow)是组织以下领域的人员：
 
 - 信息技术
 - 合规性
@@ -45,16 +45,16 @@ ms.locfileid: "60786730"
 
 不同的地理和组织区域可能有与组织的其他区域不同的合规性和隐私要求。 与这些领域的利益干系人合作，确保他们了解内部风险管理中的合规性和隐私控制，以及如何在组织的不同区域使用这些控制措施。 在某些情况下，合规性和隐私要求可能需要策略，根据用户的情况或针对该领域的法规或策略要求，指定或限制某些利益干系人进行调查和案件。
 
-如果您要求特定利益干系人参与涉及特定区域、角色或部门用户的情况调查，您可能需要实施单独的 (即使相同的) 内部风险管理策略针对不同的地区和群体。 [](insider-risk-management-policies.md) 通过此配置，适当的利益干系人可以更轻松地对与角色和地区相关的案例进行会审和管理。 此外，你可能要考虑为调查者和审阅者使用与用户相同的语言的区域创建流程和策略，以帮助简化内部风险管理警报和事例的上报过程。
+如果你有特定利益干系人参与涉及某些区域、角色或部门用户案例调查的要求，你可能希望实现单独的 (即使相同的) 内部风险管理策略针对不同的地区和群体。 [](insider-risk-management-policies.md) 通过此配置，适当的利益干系人可以更轻松地对与角色和地区相关的案例进行会审和管理。 此外，你可能要考虑为调查者和审阅者使用与用户相同的语言的区域创建流程和策略，以帮助简化内部风险管理警报和事例的上报过程。
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>规划审阅和调查工作流
 
-选择专门的利益干系人，以定期监视和查看警报和事例<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">，Microsoft 365 合规中心。</a> 请务必了解如何向内部风险管理中提供的不同角色组分配不同的利益干系人。
+选择专门的利益干系人，以定期监视和查看警报和事例[，Microsoft 365 合规中心。](https://compliance.microsoft.com) 请务必了解如何向内部风险管理中提供的不同角色组分配不同的利益干系人。
 
 >[!IMPORTANT]
->根据选择) ，确保"内部风险管理"或"内部风险管理管理员"角色组 (中始终至少有一个用户，以便当特定用户离开组织时，内部风险管理配置不会进入"零管理员"方案。
+>根据你选择的选项)  (，确保你的内部风险管理或内部风险管理管理员角色组中始终至少有一个用户，以便你的内部风险管理配置不会进入"零管理员"方案（如果特定用户离开组织）。
 
-根据合规性管理团队的结构，有选项将用户分配到特定角色组，以管理不同的预览体验计划风险管理功能集。 若要查看管理 **角色** 组Microsoft 365 合规中心"权限"选项卡，您需要被分配到组织管理角色组，或者需要分配有 *"角色* 管理"角色。 配置内部风险管理时，请从以下角色组选项中进行选择：
+根据合规性管理团队的结构，有选项将用户分配到特定角色组，以管理不同的预览体验计划风险管理功能集。 若要查看管理 **角色** 组Microsoft 365 合规中心"权限"选项卡，您需要被分配到组织管理角色组，或需要分配有 *"角色* 管理"角色。 配置内部风险管理时，请从以下角色组选项中进行选择：
 
 | **角色组** | **角色权限** |
 | :------------- | :------------------- |
@@ -70,11 +70,11 @@ ms.locfileid: "60786730"
 
 **许可：** 内部风险管理作为各种许可订阅的一Microsoft 365提供。 有关详细信息，请参阅内部风险管理 [入门文章](insider-risk-management-configure.md#subscriptions-and-licensing) 。
 
-如果你没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试内部风险管理，你可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册 E5 Microsoft 365 企业版试用版。 [](https://www.microsoft.com/microsoft-365/enterprise)
+如果你没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试内部风险管理，可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册 E5 Microsoft 365 企业版试用版。 [](https://www.microsoft.com/microsoft-365/enterprise)
 
 **策略模板要求：** 根据选择的策略模板，在组织中配置内部风险管理之前，您需要了解和规划以下要求：
 
-- 使用"离开 **用户的数据** 盗窃"模板时，必须配置一个Microsoft 365 HR 连接器，以便定期为贵组织的用户导入过期和终止日期信息。 请参阅 [HR 连接器导入数据](import-hr-data.md) 文章，了解为组织配置 Microsoft 365 HR 连接器的分步指导。
+- 使用"离开 **用户的数据** 盗窃"模板时，必须配置一个Microsoft 365 HR 连接器，以便定期导入组织中用户的终止日期和终止日期信息。 请参阅 [HR 连接器导入数据](import-hr-data.md) 文章，了解为组织配置 Microsoft 365 HR 连接器的分步指导。
 - 使用数据泄露模板时，必须至少配置一个数据丢失防护 (DLP) 策略，以定义您组织的敏感信息，并接收针对高严重性 DLP 策略警报的内部风险警报。 请参阅 [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md) ，了解为组织配置 DLP 策略的分步指导。
 - 使用 **安全策略违反** 模板时，必须在 Defender 安全中心中为内部风险管理集成启用 Microsoft Defender for Endpoint，以导入安全违反警报。 有关启用 Defender for Endpoint 与内部风险管理集成的分步指南，请参阅在 [Microsoft Defender for Endpoint 中配置高级功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features)。
 - 使用 **Disgruntled** 用户模板时，您必须将 Microsoft 365 HR 连接器配置为定期导入组织中用户的绩效或降级状态信息。 请参阅 [HR 连接器导入数据](import-hr-data.md) 文章，了解为组织配置 Microsoft 365 HR 连接器的分步指导。

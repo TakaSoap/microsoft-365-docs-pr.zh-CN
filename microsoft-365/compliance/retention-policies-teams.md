@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: f14e729858f3285f9cefc4d3db7da99d6c6f9e7d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0fadd66b3d1519dee0d96a24eaa74b05fef89133
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189317"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241076"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -185,7 +185,7 @@ Teams 使用 Azure 支持的聊天服务作为其所有消息 (聊天和频道�
 
 当外部用户加入你的组织主持的会议时：
 
-- 如果外部用户使用租户中的来宾帐户加入，此用户将有一个影子邮箱，可遵循组织的 Teams 保留策略。 会议中的任何邮件都存储在用户的邮箱和影子邮箱中。 
+- 如果外部用户使用租户中的来宾帐户加入，则来自会议的任何邮件都存储在用户邮箱和授予来宾帐户的影子邮箱中。 但是，影子邮箱不支持保留策略，即使可以将它们报告为包含在整个位置的保留策略中（有时称为“组织范围的策略”）。
 
 - 如果外部用户使用另一个 Microsoft 365 组织的账户加入，你的保留策略则不能删除该用户的邮件，因为它们存储在另一个租户的用户邮箱中。然而，对于同样的会议，你的保留策略却可以删除你的用户的邮件。
 

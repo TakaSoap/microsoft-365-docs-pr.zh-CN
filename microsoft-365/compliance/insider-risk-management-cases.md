@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 3a7a8f8e7f839c47f369e32507acc7b70edc0d63
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: d37a47a3cb46214d098623edbf5f0b9bea4b242a
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785818"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241220"
 ---
 # <a name="insider-risk-management-cases"></a>内部风险管理案例
 
@@ -38,7 +38,7 @@ ms.locfileid: "60785818"
 内部风险管理案例 **仪表板** 允许你查看和操作案例。 仪表板上的每个报表小部件显示最近 30 天的信息。
 
 - **活跃案例**：正在调查的活动事例总数。
-- **过去 30** 天内的事例数：创建的事例总数，按"活动"和"已关闭 *"**状态* 排序。
+- **过去 30** 天内的事例 ：创建的事例总数，按"活动"和"已关闭 *"**状态* 排序。
 - **统计信息**：活动案例的平均时间，以小时、天或月列出。
 
 事例队列列出了组织的所有活动案例和结束案例，以及以下事例属性的当前状态：
@@ -99,7 +99,7 @@ ms.locfileid: "60785818"
 " **警报"** 选项卡汇总了案例中包含的当前警报。 新警报可能会添加到现有案例，并将在分配时添加到警报队列中。  队列列出了以下警报属性：
 
 - 状态
-- 严重性
+- Severity
 - 检测到的时间
 
 Select an alert from the queue to display the **Alert detail** page.
@@ -107,7 +107,7 @@ Select an alert from the queue to display the **Alert detail** page.
 使用搜索控件搜索特定文本的警报名称，并使用警报筛选器按以下属性对事例进行排序：
 
 - 状态
-- 严重性
+- Severity
 - 检测时间、开始日期和结束日期
 
 使用筛选器控件按多个属性筛选警报，包括：
@@ -126,15 +126,15 @@ Select an alert from the queue to display the **Alert detail** page.
 1. **时间筛选器**：默认情况下，在案例确认的最近六个月警报显示在用户活动图表中。 通过选择气泡图上的 *"6* 个月 *、3* 个月"或 *"1* 个月"选项卡，可以轻松筛选图表视图。
 2. **风险提醒活动和详细信息**：风险活动在用户活动图表中以彩色气泡显示。 为不同类别的风险创建气泡，而气泡大小与类别的风险活动数成比例。 选择气泡以显示每个风险活动的详细信息。 详细信息包括：
     - 风险活动的 **日期**。
-    - 风险 **活动类别**。 例如，*电子邮件 ()* 组织外部发送的附件，或从 *SharePoint Online* 下载的文件 (文件) 附件。
+    - 风险 **活动类别**。 例如，*电子邮件 ()* 组织外部发送的附件，或者从) Online 下载 (文件SharePoint *附件*。
     - 警报的 **风险分数**。 此分数是警报风险严重性级别的数字分数。
     - 与警报相关联的事件数。 还会提供指向与风险活动关联的每个文件或电子邮件的链接。
-3. 风险 **(预览**) ：风险活动按时间顺序是风险调查的一个重要方面，识别这些相关活动是评估组织的整体风险的重要部分。 与相关的警报活动通过连接线显示，以突出显示这些活动与较大的风险区域相关联。 这种活动视图可帮助调查人员逐字地"连接点"可能被视为独立或一次事件的风险活动。 选择序列中的任意气泡以显示所有关联风险活动的详细信息。 详细信息包括：
+3. 风险 **(预览**) ：风险活动按时间顺序是风险调查的一个重要方面，识别这些相关活动是评估组织的总体风险的重要部分。 与相关的警报活动通过连接线显示，以突出显示这些活动与较大的风险区域相关联。 此活动视图可帮助调查人员逐字地"连接点"可能被视为独立或一次事件的风险活动。 选择序列中的任意气泡以显示所有关联风险活动的详细信息。 详细信息包括：
 
     - **序列** 的名称。
     - **序列****的日期或** 日期范围。
     - **序列** 的风险评分。 此分数是序列中每个相关活动的组合警报风险严重性级别序列的数字分数。
-    - **与序列中每个警报关联的事件数**。 还会提供指向与每个风险活动关联的每个文件或电子邮件的链接。
+    - **与序列中每个警报关联的事件数**。 还可链接到与每个风险活动关联的每个文件或电子邮件。
     - **按顺序显示活动**。 将序列显示为气泡图上的突出显示线，并展开警报详细信息以显示序列中的所有相关警报。
 
 4. **风险活动** 图例：在用户活动图表的底部，颜色编码的图例可帮助你快速确定每个警报的风险类别。
@@ -158,7 +158,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 ![内部风险管理案例内容资源管理器。](../media/insider-risk-content-explorer.png)
 
-### <a name="case-notes"></a>案例备注
+### <a name="case-notes"></a>案例注释
 
 在 **案例的"** 案例备注"选项卡中，风险分析员和调查人员可以分享有关其案例工作的评论、反馈和见解。 注释将永久添加到案例，在保存注释后无法编辑或删除它。 当通过警报创建案例时，在“**确认警报并创建内部风险案例**”对话框中输入的注释会自动添加为案例注释。
 
@@ -166,7 +166,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 向案例添加注释：
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Cases** tab.
 2. 选择一个案例，然后选择" **案例备注"** 选项卡。
 3. 选择 **"添加大小写注释"。**
 4. 在" **添加大小写注释** "对话框中，键入适用于该案例的注释。 Select **Save** to add the note to the case or select **Cancel** close without saving the note to the case.
@@ -183,7 +183,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 向案例添加参与者：
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Cases** tab.
 2. 选择一个案例，然后选择"参与者 **"** 选项卡。
 3. 选择 **"添加参与者"。**
 4. 在 **"添加参与者** "对话框中，开始键入要添加的用户的名称，然后从建议的用户列表中选择该用户。 此列表从租户订阅Azure Active Directory生成。
@@ -191,17 +191,17 @@ Select an alert from the queue to display the **Alert detail** page.
 
 ## <a name="case-actions"></a>案例操作
 
-风险调查人员可以通过多种方法之一对案例采取措施，具体取决于该案例的严重性、用户的风险历史记录和组织的风险准则。 在某些情况下，您可能需要将案例上报给用户或数据调查，以与组织的其他活动协作，并深入了解风险活动。 内部风险管理与其他合规性Microsoft 365紧密集成，以帮助你进行端到端解决方案管理。
+风险调查人员可以通过多种方法之一对案例采取措施，具体取决于该案例的严重性、用户的风险历史记录和组织的风险准则。 在某些情况下，您可能需要将案例上报给用户或数据调查，以与组织的其他活动协作，并深入了解风险活动。 内部风险管理与其他合规性解决方案Microsoft 365紧密集成，以帮助你进行端到端解决方案管理。
 
 ### <a name="send-email-notice"></a>发送电子邮件通知
 
 在大多数情况下，创建内部风险警报的用户操作是无意或无意的。 通过电子邮件向用户发送提醒通知是记录案例审阅和操作的有效方法，也是提醒用户了解公司策略或让他们刷新培训的方法。 通知由你为内部风险管理基础结构 [创建的通知](insider-risk-management-notices.md) 模板生成。
 
-切记，向用户 ***** 发送电子邮件通知不会将大小写解析为 _Closed*。 在某些情况下，在向用户发送通知以查找更多风险活动而不打开新案例后，您可能需要保持案例为打开状态。 如果你希望在发送通知后解决案例，则必须在发送通知后选择“**解决案件**”作为后续步骤。
+必须记住，向用户 ***** 发送电子邮件通知不会将大小写解析为 _Closed*。 在某些情况下，在向用户发送通知以查找更多风险活动而不打开新案例后，您可能需要保持案例为打开状态。 如果你希望在发送通知后解决案例，则必须在发送通知后选择“**解决案件**”作为后续步骤。
 
 若要向分配给案例的用户发送通知，请执行以下操作：
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Cases** tab.
 2. 选择一个案例，然后选择案例 **操作** 工具栏上的"发送电子邮件通知"按钮。
 3. 在 **"发送电子邮件通知"对话框中** ，选择" **选择** 通知模板"下拉列表控件以选择通知的通知模板。 此选择会预填充通知上的其他字段。
 4. 查看通知字段并在适当时进行更新。 此处输入的值将替代模板上的值。
@@ -213,7 +213,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 将案例上报给用户调查：
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Cases** tab.
 2. 选择一个案例，然后选择案例操作工具栏上的"上报进行调查"按钮。
 3. 在" **上报进行调查** "对话框中，输入新用户调查的名称。 如果需要，请输入关于案例的注释， **然后选择升级**。
 4. 查看通知字段并在适当时进行更新。 此处输入的值将替代模板上的值。
@@ -240,24 +240,24 @@ Select an alert from the queue to display the **Alert detail** page.
 
 ### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>查看或创建Microsoft Teams案例团队
 
-在Microsoft Teams启用内部风险管理集成后，Microsoft Teams每次确认警报并创建案例时，都会自动创建一个团队。 风险研究人员和分析员可以快速打开Microsoft Teams并在案例操作工具栏上选择"查看Microsoft Teams团队，直接导航 **到** 团队了解案例。
+在Microsoft Teams启用内部风险管理集成后，Microsoft Teams每次确认警报并创建案例时，都会自动创建一个团队。 风险研究人员和分析员可以快速打开Microsoft Teams并在案例操作工具栏上选择"查看Microsoft Teams团队，直接导航 **到** 团队查看案例。
 
 对于在启用 Microsoft Team 集成之前打开的事例，风险研究人员和分析师可以通过在事例操作工具栏上选择"创建 Microsoft Teams团队"，为事例创建新的 Microsoft Teams 团队。
 
 解决案例后，关联的 Microsoft 团队将自动存档 (隐藏，并打开为只读) 。
 
-若要了解有关内部Microsoft Teams管理的信息，请参阅内部[风险管理设置入门](insider-risk-management-settings.md#microsoft-teams-preview)。
+若要详细了解如何Microsoft Teams内部风险管理，请参阅内部[风险管理设置入门](insider-risk-management-settings.md#microsoft-teams-preview)。
 
 ### <a name="resolve-the-case"></a>解决案例
 
-风险分析师和调查人员完成审阅和调查后，可以解决一个案例，以对当前包含在该案例内的所有警报采取行动。 解决案例会添加解决方案分类，将案例状态更改为"已关闭"，解决方案操作原因将自动添加到"案例笔记"仪表板上的案例 **注释队列中。** 案例将解决为：
+风险分析师和调查人员完成审阅和调查后，可以解决一个案例，以对当前包含在该案例内的所有警报采取行动。 解决案例会添加解决方案分类，将案例状态更改为"已关闭"，解决方案操作原因会自动添加到"案例笔记"仪表板上的案例 **注释队列中。** 案例将解决为：
 
 - **恶意**：策略匹配警报评估为低风险、非严重或误报的情况的分类。
 - **已确认** 的策略违反：对策略匹配警报评估为有风险、严重或恶意目的结果的情况的分类。
 
 要解决这种情况，需要：
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Cases** tab.
 2. 选择一个案例，然后选择案例操作工具栏上的"解决大小写"按钮。
 3. 在" **解决案例** "对话框中 **，选择"** 解析为"下拉列表控件以选择案例的解析分类。 选项为 **"安全"****或"已确认的策略违反"。**
 4. 在" **解决案例** "对话框中，在"已采取操作的文本"字段中输入解析 **分类** 的原因。

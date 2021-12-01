@@ -21,22 +21,22 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ee9ddb26736ba52b5ddade576d7587f5883931ab
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 423fe7b0c608aae668706cc72e578271f19d2386
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072697"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240836"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
-使用通信合规性策略，以识别用户通信，供内部或外部审阅者检查。 有关通信合规性策略如何帮助监视组织内通信的详细信息，请参阅 [Microsoft 365 中的通信合规性策略](communication-compliance.md)。 如果您想了解 Contoso 如何快速配置通信合规性策略，以监视 Microsoft Teams、Exchange Online 和 Yammer 通信中的不当内容，请查看此[案例研究](communication-compliance-case-study.md)。
+使用通信合规性策略，以识别用户通信，供内部或外部审阅者检查。 有关通信合规性策略如何帮助监视组织内通信的详细信息，请参阅 [Microsoft 365 中的通信合规性策略](communication-compliance.md)。 如果您想查看 Contoso 如何快速配置通信合规性策略，以监视 Microsoft Teams、Exchange Online 和 Yammer 通信中的不当内容，请查看此[案例研究](communication-compliance-case-study.md)。
 
 ## <a name="subscriptions-and-licensing"></a>订阅和许可
 
 在开始通信合规性入门之前，应该先确认 [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) 以及任何加载项。 若要访问和使用通信合规性，组织必须具有以下订阅或加载项之一：
 
-- Microsoft 365 E5/A5/G5 订阅 (付费版或试用版) 
+- Microsoft 365 E5/A5/G5 订阅 (付费或试用版) 
 - Microsoft 365 E3/A3/G5 订阅 + Microsoft 365 E5/A5/G5 合规性加载项
 - Microsoft 365 E3/A3/G5 订阅 + Microsoft 365 E5/A5/G5 内部风险管理加载项
 - Office 365 企业版 E5 订阅（付费或试用版本）
@@ -50,9 +50,9 @@ ms.locfileid: "61072697"
 
 如果你没有现有的 Office 365 企业版 E5 套餐，并且想要尝试通信合规性，可以 [添加 Microsoft 365](/office365/admin/try-or-buy-microsoft-365) 到现有订阅，或 [注册试用](https://www.microsoft.com/microsoft-365/enterprise) Office 365 企业版 E5。
 
-## <a name="recommended-actions-preview"></a>建议 (预览) 
+## <a name="recommended-actions-preview"></a>预览 (建议) 
 
-建议的操作可帮助组织开始使用通信合规性功能，并充分利用现有策略。 建议操作 **包含在"策略** "页上，可提供见解，并总结了组织中通信中的敏感信息类型和不适当的内容活动。 Insights数据分类[以及](data-classification-overview.md)敏感度标签、保留标签和敏感信息类型分类的应用支持数据分类。 这些见解不包括组织中用户 (个人身份) 个人身份信息。
+建议的操作可帮助组织开始使用通信合规性功能，并充分利用现有策略。 建议操作 **包含在"策略** "页上，可提供见解，并总结了组织中通信中的敏感信息类型和不适当的内容活动。 Insights数据分类以及敏感度标签、[](data-classification-overview.md)保留标签和敏感信息类型分类的应用支持。 这些见解不包括组织中用户 (个人身份) 个人身份信息。
 
 ![通信合规性建议操作。](../media/communication-compliance-recommended-actions.png)
 
@@ -73,8 +73,8 @@ ms.locfileid: "61072697"
 
 | 角色 | 角色权限 |
 |:-----|:-----|
-| **通信合规性** | 使用此角色组在单个组中管理组织的通信合规性。 通过添加指定管理员、分析者、调查者和查看者的所有用户账户，可以在单个组中配置通信合规性权限。 此角色组包含所有通信合规性权限角色。 这一配置是通信合规性快速入门的最简单方式，非常适合不需要为单独用户组定义单独权限的组织。 作为通信合规性管理员创建策略的用户的邮箱必须托管在 Exchange Online。|
-| **通信合规性管理员** | 使用此角色组进行通信合规性初始配置，后期可将通信合规性管理员隔离到已定义组中。 分配到此角色组的用户可以创建、读取、更新和删除通信合规性策略、全局设置和角色组分配。 分配到此角色组的用户无法查看消息警报。 作为通信合规性管理员创建策略的用户的邮箱必须托管在 Exchange Online。|
+| **通信合规性** | 使用此角色组在单个组中管理组织的通信合规性。 通过添加指定管理员、分析者、调查者和查看者的所有用户账户，可以在单个组中配置通信合规性权限。 此角色组包含所有通信合规性权限角色。 这一配置是通信合规性快速入门的最简单方式，非常适合不需要为单独用户组定义单独权限的组织。 以通信合规性管理员角色创建策略的用户的邮箱必须托管在 Exchange Online。|
+| **通信合规性管理员** | 使用此角色组进行通信合规性初始配置，后期可将通信合规性管理员隔离到已定义组中。 分配到此角色组的用户可以创建、读取、更新和删除通信合规性策略、全局设置和角色组分配。 分配到此角色组的用户无法查看消息警报。 以通信合规性管理员角色创建策略的用户的邮箱必须托管在 Exchange Online。|
 | **通信合规性分析者** | 使用此组向执行通信合规性分析者操作的用户分配权限。 分配到此角色组的用户可以查看分配其为审阅者的策略，查看消息元数据（而不是消息内容）、升级到其他审阅者，或向用户发送通知。 分析者不能解决挂起的警报。 |
 | **通信合规性调查者** | 使用此组向执行通信合规性调查者操作的用户分配权限。 分配到此角色组的用户可以查看消息元数据和内容、升级到其他审阅者、升级到高级 eDiscovery 案例、向用户发送通知、以及解决警报。 |
 | **通信合规性查看者** | 使用此组向管理通信报告的用户分配权限。 分配到此角色组的用户可以访问通信合规性主页上的所有报告小组件，并且可以查看所有通信合规性报告。 |
@@ -99,7 +99,7 @@ ms.locfileid: "61072697"
 
 使用此选项将用户分配到特定角色组，以区分组织中不同用户的通信合规性访问和职责。
 
-1. 使用 Microsoft 365 合规中心 组织中管理员帐户的凭据登录Microsoft 365，然后转到"<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**权限"。**</a>
+1. 使用 [Microsoft 365 合规中心](https://compliance.microsoft.com)组织中管理员帐户的凭据登录Microsoft 365，然后转到"**权限"。** </a>
 
 2. 选择链接以查看和管理 Office 365 中的角色。
 
@@ -123,7 +123,7 @@ ms.locfileid: "61072697"
 
 通信合规性需要审核日志显示警报和跟踪审阅者采取的修正操作。 审核日志是与已定义的组织策略，或任何时刻的通信合规性策略更改相关联的所有活动摘要。
 
-默认情况下，为Microsoft 365启用审核。 某些组织可能由于特定原因禁用了审核。 如果为组织禁用了审核，这可能是因为另一个管理员已将其关闭。 我们建议确认在完成此步骤时可以重新启用审核。
+默认情况下，为 Microsoft 365 组织启用审核。 一些组织可能出于特定原因禁用了审核。 如果组织禁用了审核，则可能是因为其他管理员已将其禁用。 我们建议确认在完成此步骤时可以重新启用审核。
 
 有关启用审核的逐步操作说明，请参阅 [打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。 打开审核之后，将显示一条消息，内容为正在准备审核日志，你可以在准备完成后几个小时内运行搜索。 此操作只需要执行一次。 有关使用审核日志的详细信息，请参阅 [搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
 
@@ -140,7 +140,7 @@ ms.locfileid: "61072697"
 
 在策略中分配通讯组时，策略会监视通讯组每个用户的所有电子邮件和 Teams 聊天。 在策略中分配 Microsoft 365 组时，策略会监视发送到该组的所有电子邮件和 Teams 聊天，而不是每个团队成员收到的单个电子邮件和聊天。
 
-如果你是具有 Exchange 本地部署或外部电子邮件提供商的组织，并且想要监视用户的 Microsoft Teams 聊天，则必须创建一个通讯组以便具有本地或外部邮箱的用户进行监视。 在这些步骤的稍后部分，你将此通讯组分配为策略向导中的 **受监督用户和组**。 有关为本地用户启用基于云的存储和 Teams 支持的要求和限制，请参阅 Search for Teams chat data for [on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md)。
+如果你是具有 Exchange 本地部署或外部电子邮件提供商的组织，并且想要监视用户的 Microsoft Teams 聊天，则必须创建一个通讯组以便具有本地或外部邮箱的用户进行监视。 在这些步骤的稍后部分，你将此通讯组分配为策略向导中的 **受监督用户和组**。 有关为本地用户启用基于云的存储和 Teams 支持的要求和限制，请参阅搜索本地用户的 Teams 聊天[数据](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 若要在大型企业组织中管理受监督的用户，可能需要监视大型组的所有用户。 可使用 PowerShell 为已分配组配置全局通信合规性策略的通讯组。 这样，可以使用一个策略监视成千上万个用户，并在新员工加入组织时保持通信合规性策略的更新。
 
@@ -193,7 +193,7 @@ ms.locfileid: "61072697"
 >[!TIP]  
 >想要查看有关设置新通信合规性策略和修正警报的深入演练？ 观看 [此 15](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) 分钟的视频，了解通信合规性策略如何帮助您检测不恰当的消息、调查潜在的违反和修正合规性问题。
 
-1. 使用<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心组织中</a>管理员帐户的凭据登录Microsoft 365帐户。
+1. 使用[Microsoft 365 合规中心](https://compliance.microsoft.com)组织中管理员帐户的凭据登录Microsoft 365帐户。
 
 2. 在 Microsoft 365 合规中心中，选择“**通信合规性**”。
 
@@ -212,7 +212,7 @@ ms.locfileid: "61072697"
     - 选择有限条件字段，通常是要应用于该策略的敏感信息类型或关键字词典。
 
     > [!NOTE]
-    > 如果要启用光学字符识别 [ (OCR)](communication-compliance-policies.md#optical-character-recognition-ocr)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用"从图像中提取打印或  >  **手写** 文本"进行评估。
+    > 如果要启用光学字符识别[ (OCR) ](communication-compliance-policies.md#optical-character-recognition-ocr)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用"从图像中提取打印或手写文本"进行评估  >  。 
 
     如果选择使用策略向导创建自定义策略，将需要：
 
@@ -248,7 +248,7 @@ ms.locfileid: "61072697"
 
 当调查策略匹配并针对邮件采取措施时，还可以选择对显示用户名启用匿名处理。
 
-1. 使用<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心组织中</a>管理员帐户的凭据登录Microsoft 365帐户。
+1. 使用[Microsoft 365 合规中心](https://compliance.microsoft.com)组织中管理员帐户的凭据登录Microsoft 365帐户。
 
 2. 在 Microsoft 365 合规中心中，转到“**通信合规性**”。
 

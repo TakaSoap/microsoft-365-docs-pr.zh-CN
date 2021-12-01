@@ -1,7 +1,7 @@
 ---
 title: 调查内部风险管理活动
 description: 了解如何调查企业内部风险管理Microsoft 365
-keywords: Microsoft 365、内部风险、风险管理、合规性
+keywords: Microsoft 365， 内部风险， 风险管理， 合规性
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -13,22 +13,22 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 7f3e87e7c804793603ac4b5af464c052abcc857e
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 447628d7ff9014606c59a11b81f3846540d54665
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786934"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241232"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>调查内部风险管理活动
 
-调查有风险的用户活动是最大程度地降低组织内部风险的重要第一步。 这些风险可能是从内部风险管理策略生成警报的活动，或者是从策略检测到的活动生成风险，但不立即为用户创建内部风险管理警报。 可以使用"用户活动报告"或"警报"仪表板 (预览) 调查 **这些****类型的活动**。
+调查有风险的用户活动是最大程度地降低组织内部风险的重要第一步。 这些风险可能是从内部风险管理策略生成警报的活动，或者是从策略检测到的活动生成风险，但不立即为用户创建内部风险管理警报。 可以使用"用户活动报表"或"警报"仪表板 (或) 调查 **这些****类型的活动**。
 
 ## <a name="user-activity-reports-preview"></a>用户活动报表 (预览) 
 
-用户活动报告允许你检查指定时段内特定用户的活动，而无需将其临时或显式分配给内部风险管理策略。 在大多数内部风险管理方案中，用户明确在策略中定义，并且他们可能具有策略警报 (具体取决于触发事件) 活动的风险评分。 但在某些情况下，你可能想要检查未在策略中显式定义的用户的活动。 这些活动可能适用于你已收到有关用户和可能存在风险的活动的提示的用户，或者通常不需要分配给内部风险管理策略的用户。
+用户活动报告允许你检查指定时段内特定用户的活动，而无需将其临时或显式分配给内部风险管理策略。 在大多数内部风险管理方案中，用户明确在策略中定义，并且他们可能具有策略警报 (具体取决于触发事件) 活动的风险评分。 但在某些情况下，你可能想要检查未在策略中显式定义的用户的活动。 这些活动可能针对你已收到有关用户和可能存在风险的活动的提示的用户，或者通常不需要分配给内部风险管理策略的用户。
 
-在内部风险管理中心页面上配置 **设置后，** 将检测到与所选指标关联的风险活动的用户活动。 不需要为用户活动报告配置策略来检测和报告组织中用户的风险活动。 用户活动报告中包括的活动不需要触发事件来显示活动。 此配置意味着用户的所有检测到的活动都可供查看，无论活动是否触发事件或是否创建警报。 报告基于每个用户创建，可以包含自定义 90 天期间的所有活动。 不支持同一用户的多个报告。
+在内部风险管理策略页面上配置设置后，将检测到与所选指标关联的风险活动的用户活动。 不需要为用户活动报告配置策略来检测和报告组织中用户的风险活动。 用户活动报告中包括的活动不需要触发事件来显示活动。 此配置意味着用户的所有检测到的活动都可供查看，无论其是否具有触发事件或是否创建警报。 报告基于每个用户创建，可以包含自定义 90 天期间的所有活动。 不支持同一用户的多个报告。
 
 在检查用户的活动后，调查人员可以以恶意方式消除个别活动，与其他调查人员共享或通过电子邮件发送指向报告的链接，或者选择将用户临时或显式分配给内部风险管理策略。 必须将用户分配到预览体验 *成员风险管理研究人员* 角色组，以查看" **用户活动报告"** 页。  
 
@@ -45,12 +45,12 @@ ms.locfileid: "60786934"
 
 所选 **用户的用户** 活动报告包含" **用户活动"** 和" **活动资源管理器"** 选项卡：
 
-- **用户活动**：使用此图表视图可调查活动并查看序列中发生的潜在活动。 此选项卡的结构用于快速查看案例，包括所有活动的历史时间线、活动详细信息、用户在这种情况下的当前风险评分、风险事件的顺序，以及有助于调查工作的筛选控件。
+- **用户活动**：使用此图表视图可调查活动并查看序列中发生的潜在活动。 此选项卡的结构用于快速查看案例，包括所有活动的历史时间线、活动详细信息、用户在这种情况下的当前风险评分、风险事件的顺序，以及可帮助调查工作的筛选控件。
 - **活动资源管理器****："活动资源管理器**"选项卡为风险调查人员提供了一个全面的分析工具，提供有关活动的详细信息。 使用活动资源管理器，审阅者可以快速查看检测到的风险活动的日程表，并识别并筛选与警报关联的所有风险活动。 若要了解有关使用活动资源管理器的更多信息，请参阅本文稍后介绍的活动资源管理器部分。
 
 ## <a name="alert-dashboard"></a>警报仪表板
 
-内部风险管理警报是由内部风险管理策略中定义的风险指标自动生成的。 这些警报使合规分析员和调查员对当前的风险状况有一个全面的了解，并使贵组织能够对发现的风险进行分类并采取措施。 默认情况下，策略会生成一定数量的低、中和高严重性警报，但你可以增加或减少警报量以满足你[](insider-risk-management-settings.md#alert-volume)的需求。 此外，可以使用策略 [创建工具](insider-risk-management-settings.md#indicator-level-settings-preview) 创建新策略时配置策略指示器的警报阈值。
+内部风险管理警报是由内部风险管理策略中定义的风险指标自动生成的。 这些警报使合规分析员和调查员对当前的风险状况有一个全面的了解，并使贵组织能够对发现的风险进行分类并采取措施。 默认情况下，策略会生成一定数量的低、中和高严重性警报，但你可以增加或减少警报量以满足你[](insider-risk-management-settings.md#alert-volume)的需求。 此外，在使用策略 [创建工具创建新](insider-risk-management-settings.md#indicator-level-settings-preview) 策略时，还可以配置策略指示器的警报阈值。
 
 请查看 [Insider Risk Management Alerts Triage Experience](https://www.youtube.com/watch?v=KgmpxBLJLPI) 视频，大致了解警报如何为风险活动提供详细信息、上下文和相关内容，以及如何提高调查过程效率。
 
@@ -104,19 +104,19 @@ ms.locfileid: "60786934"
 
 若要消除内部风险警报，请完成以下步骤：
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the **Alerts** tab.
-2. 在 **警报仪表板上**，选择 (或 *) 需要审阅* 状态时要消除的警报。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
+2. 在 **警报仪表板上**，选择 (或 *) 需要审阅* 状态的警报。
 3. 在警报命令栏上，选择 **消除警报**。
 4. 在 **"消除警报详细信息** "窗格中，你可以查看与所选警报关联的用户和策略详细信息。
-5. 选择 **"消除警报**"以将警报解析为恶意警报，或选择"取消"关闭详细信息窗格而不消除警报。
+5. 选择 **"消除警报**"将警报解析为恶意警报，或选择"取消"关闭详细信息窗格而不消除警报。
 
 ## <a name="triage-alerts"></a>会审警报
 
 若要对内部风险警报进行会审，请完成以下步骤：
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
 2. 在 **警报仪表板上**，选择要会审的警报。
-3. 在 **"警报详细信息** "页上，你可以查看有关警报的信息，并可以确认警报并创建新案例、确认警报并添加到现有案例，或者消除警报。 此页面还包括警报的当前状态和警报风险严重性级别，列为"高、中"或"低"。 如果警报未分类，严重性级别可能会随着时间的推移而增加或减小。
+3. 在 **"警报详细信息** "页上，你可以查看有关警报的信息，并可以确认警报并创建新案例、确认警报并添加到现有案例，或者消除警报。 此页面还包括警报的当前状态和警报风险严重性级别，列为"高、中"或"低"。 如果警报未分类，严重性级别可能会随着时间的推移增加或减小。
 
     警报详细信息页面上 **的** 选项卡提供有关警报的详细信息：
     - **摘要：** 此选项卡包含有关警报的常规信息。
@@ -154,7 +154,7 @@ ms.locfileid: "60786934"
 
 若要使用 **活动资源管理器**，请完成以下步骤：
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
 2. 在 **警报仪表板上**，选择要会审的警报。
 3. 在警报 **详细信息窗格中，选择** 打开 **展开的视图**。
 4. 在所选警报的页面上，选择" **活动资源管理器"** 选项卡。
@@ -172,9 +172,9 @@ ms.locfileid: "60786934"
 
 在审核和会审警报时，您可以创建一个新案例以进一步调查风险活动。 若要为警报创建案例，请按照以下步骤操作：
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
 2. 在 **警报仪表板上**，选择要确认的警报并创建一个新案例。
-3. 在警报 **详细信息窗格中，** 选择 **操作**  >  **确认警报&创建案例**。
+3. 在警报 **详细信息窗格中，选择****操作**  >  **确认警报&创建案例**。
 4. 在" **确认警报并创建内部** 风险案例"对话框中，输入案例名称，选择要添加为参与者的用户，并根据需要添加注释。 注释会自动作为案例注释添加到案例。
 5. 选择 **"创建** 案例"创建新案例，或选择" **取消** "关闭对话框而不创建案例。
 
@@ -182,7 +182,7 @@ ms.locfileid: "60786934"
 
 ## <a name="get-help-managing-your-insider-risk-alert-queue"></a>获取有关管理内部风险警报队列的帮助
 
-查看、调查和操作内部风险警报是最大程度地降低组织中内部风险的重要部分。 快速采取措施以最大限度地减少这些风险的影响可能会为组织节省时间、金钱以及法规或法律后果。 在此修正过程中，查看警报的第一步对于许多分析师和调查人员来说似乎是最困难的任务。 根据你的环境，你在处理内部风险警报时可能会面临一些次要障碍。 查看以下建议并了解如何优化警报审阅过程。
+查看、调查和操作内部风险警报是最大程度地降低组织中内部风险的重要部分。 快速采取措施以最大限度地减少这些风险的影响可能会为组织节省时间、金钱以及法规或法律后果。 在此修正过程中，查看警报的第一步对于许多分析员和调查人员来说似乎是最困难的任务。 根据你的环境，你在处理内部风险警报时可能会面临一些次要障碍。 查看以下建议并了解如何优化警报审阅过程。
 
 ### <a name="too-many-alerts-to-review"></a>要审阅的警报过多
 
@@ -190,7 +190,7 @@ ms.locfileid: "60786934"
 
 - **调整内部风险策略**：选择和配置正确的内部风险策略是解决警报类型和数量的最基本方法。 从相应的 [策略模板开始](insider-risk-management-policies.md#policy-templates) 有助于关注你将看到的风险活动和警报的类型。 可能会影响警报量的其他因素是范围内用户和组的大小，以及具有优先级 [的内容和频道](insider-risk-management-policies.md#prioritize-content-in-policies)。 请考虑调整策略，以将这些方面细化到对组织最重要的方面。
 - **修改内部风险设置**：内部风险设置包括各种配置选项，这些选项会影响你将收到的警报数量和类型。 其中包括策略 [指示器、](insider-risk-management-settings.md#indicators)指示器 [阈值](insider-risk-management-settings.md#indicator-level-settings-preview)和策略 [时间范围的设置](insider-risk-management-settings.md#policy-timeframes)。 请考虑配置 [智能检测](insider-risk-management-settings.md#intelligent-detections) 选项以排除特定文件类型，在策略报告活动警报之前定义最小阈值，以及将警报量配置更改为较低设置。
-- **批量删除警报（如果适用**）：这有助于为分析员和研究人员节省会审时间，立即立即消除 [多个](insider-risk-management-activities.md#dismiss-multiple-alerts-preview) 警报。 可以选择一次最多消除 400 个警报。
+- **批量删除警报（如果适用**）：这有助于为分析员和调查人员节省会审时间，立即立即消除 [多个](insider-risk-management-activities.md#dismiss-multiple-alerts-preview) 警报。 可以选择一次最多消除 400 个警报。
 
 ### <a name="not-familiar-with-the-alert-triage-process"></a>不熟悉警报会审过程
 
@@ -201,7 +201,7 @@ ms.locfileid: "60786934"
 3. **选择警报以发现详细信息并查看警报详细信息**。 如果需要，使用 [活动资源管理器](insider-risk-management-activities.md#activity-explorer) 查看关联的风险行为的时间线，并确定警报的所有风险活动。
 4. **对警报 采取行动**。 你可以确认并 [创建警报](insider-risk-management-activities.md#create-a-case-for-an-alert) 案例，也可以消除并解决警报。
 
-### <a name="resource-constraints-in-my-organization"></a>我的组织的资源约束
+### <a name="resource-constraints-in-my-organization"></a>我的组织中资源约束
 
 现代工作场所用户通常对时间承担各种责任和需求。 你可以采取一些操作来帮助解决资源约束：
 

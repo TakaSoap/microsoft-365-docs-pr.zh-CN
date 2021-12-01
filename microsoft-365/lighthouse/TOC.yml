@@ -28,10 +28,16 @@
   items:
     - name: 用户页面概述
       href: m365-lighthouse-users-page-overview.md
+    - name: 阻止用户登录
+      href: m365-lighthouse-block-user-signin.md
     - name: 管理多重身份验证
       href: m365-lighthouse-manage-mfa.md
     - name: 管理自助服务密码重置
       href: m365-lighthouse-manage-sspr.md
+    - name: 重置用户密码
+      href: m365-lighthouse-reset-user-password.md
+    - name: 搜索用户
+      href: m365-lighthouse-search-for-users.md
 - name: 管理设备
   items:
     - name: 设备合规性页面概述

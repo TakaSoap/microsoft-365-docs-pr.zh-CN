@@ -1,6 +1,6 @@
 ---
 title: 内部风险管理通知模板
-description: 了解企业内部风险管理通知模板Microsoft 365
+description: 了解管理中心中的内部风险管理通知Microsoft 365
 keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -13,16 +13,16 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 1800f8371bebe3a0548196d8b6c1d4119a677058
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: cfa9628861e592b1e8cf235fe5c68e538be354ba
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786814"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241088"
 ---
 # <a name="insider-risk-management-notice-templates"></a>内部风险管理通知模板
 
-通过内部风险管理通知模板，您可以在为已生成策略匹配和已确认警报的活动创建案例时自动向用户发送电子邮件。 对于大多数生成案例的警报，用户操作是错误或无意活动的结果，没有恶意目的。 通知可让用户更加小心、提供刷新培训信息或公司策略资源的链接， 通知可以是内部合规性培训计划的重要部分，并且有助于为具有定期风险活动的用户创建记录审核线索。
+通过内部风险管理通知模板，您可以在为已生成策略匹配和已确认警报的活动创建案例时自动向用户发送电子邮件。 对于大多数生成案例的警报，用户操作是错误或无意活动的结果，没有恶意。 通知可以让用户更加小心、提供用于刷新培训的信息或公司策略资源的链接，这一点非常简单。 通知可以是内部合规性培训计划的重要部分，并且有助于为具有定期风险活动的用户创建记录审核线索。
 
 如果要在案例解决过程中向用户发送策略匹配项的电子邮件提醒通知，请创建通知模板。 通知只能发送到与所审阅的特定案例关联的用户电子邮件地址。 选择要应用于策略匹配的通知模板时，可以选择接受模板中定义的字段值或根据需要覆盖字段
 
@@ -50,7 +50,7 @@ ms.locfileid: "60786814"
 ```
 
 > [!NOTE]
-> 内部风险管理通知模板中的 HTML href 属性实现当前仅支持单引号，而不支持 URL 引用的双引号。
+> 内部风险管理通知模板中的 HTML href 属性实现目前仅支持单引号，而不支持 URL 引用的双引号。
 
 ## <a name="create-a-new-notice-template"></a>创建新的通知模板
 
@@ -58,7 +58,7 @@ ms.locfileid: "60786814"
 
 完成以下步骤以创建新的内部风险管理通知模板：
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the Notice **templates** tab.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the Notice **templates** tab.
 2. 选择 **"创建通知模板** "以打开通知创建工具。
 3. 在" **新建通知模板"页上** ，填写下列字段：
     - **模板名称**：为通知输入友好名称。 从案例发送通知时，此名称将显示在通知仪表板上的通知列表和通知选择列表中。
@@ -66,13 +66,13 @@ ms.locfileid: "60786814"
     - **"抄** 送"和"密件抄送"字段：从订阅的 Active Directory 选择的策略匹配通知的可选用户或组。
     - **主题**：邮件主题行中显示的信息支持文本字符。
     - **邮件正文**：邮件正文中显示的信息支持文本或 HTML 值。
-4. 选择 **"创建** "以创建并保存通知模板， **或选择"** 取消"以关闭而不保存通知模板。
+4. 选择 **"创建** "以创建和保存通知模板， **或选择"** 取消"以关闭而不保存通知模板。
 
 ## <a name="update-a-notice-template"></a>更新通知模板
 
 若要更新现有的内部风险管理通知模板，请完成以下步骤：
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the Notice **templates** tab.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the Notice **templates** tab.
 2. 在通知仪表板上，选择要管理的通知模板。
 3. 在通知详细信息页面上，选择"编辑 **"**
 4. 在 **"编辑** "页上，可以编辑以下字段：
@@ -81,13 +81,13 @@ ms.locfileid: "60786814"
     - **"抄** 送"和"密件抄送"字段：更新要收到策略匹配通知的可选用户或组（从订阅的 Active Directory 选择）。
     - **主题**：更新邮件主题行中显示的信息，支持文本字符。
     - **邮件正文**：更新邮件正文中显示的信息，支持文本或 HTML 值。
-5. 选择 **"保存** "更新并保存通知，或 **选择"** 取消"关闭而不保存通知模板。
+5. 选择 **"保存** "更新并保存通知，或选择 **"** 取消"关闭而不保存通知模板。
 
 ## <a name="delete-a-notice-template"></a>删除通知模板
 
 若要删除现有的内部风险管理通知模板，请完成以下步骤：
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心，</a>go to **Insider risk management** and select the Notice **templates** tab.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the Notice **templates** tab.
 2. 在通知仪表板上，选择要删除的通知模板。
 3. 选择工具栏 **上的"** 删除"图标。
 4. 若要删除通知模板，请在删除 **对话框中选择** "是"。 若要取消删除，请选择"取消 **"。**
