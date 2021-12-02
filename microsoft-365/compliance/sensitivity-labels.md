@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2614512499c9ded8952ab5a071e7d1cf56d1d9ec
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e3c92ad9f9fc0dd1f69e11ebcede83c4d8224055
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109943"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254473"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -183,7 +183,7 @@ ms.locfileid: "61109943"
 - 为未标记文档和电子邮件以及新建容器 **指定默认标签**（在已 [为 Microsoft Teams、Microsoft 365 组和 SharePoint 网站启用敏感度标签](sensitivity-labels-teams-groups-sites.md) 时），然后现在 [为 Power BI 内容](/power-bi/admin/service-security-sensitivity-label-default-label-policy) 指定默认标签。 你可以为所有四种类型项目指定相同或不同的标签。 用户可以更改已应用的默认敏感度标签，以更好地匹配其内容或容器的敏感度。
     
     > [!NOTE]
-    > 针对使用内置标签的 Office 应用推出：此设置在用户打开现有文档时支持现有文档，以及新建文档。 这种行为更改提供了与 Azure 信息保护统一标记客户端同等的功能。 有关每个应用的推出和最低版本的详细信息，请参阅 word、Excel 和 PowerPoint 的 [功能表](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)。
+    > 对于使用内置标签的 Office 应用，此设置现在支持用户打开的现有文档以及新文档。 这种行为更改提供了与 Azure 信息保护统一标记客户端同等的功能。 有关每个应用的推出和最低版本的详细信息，请参阅 word、Excel 和 PowerPoint 的 [功能表](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)。
     
     考虑使用默认标签来设置你想要应用于所有内容的基本级别的保护设置。 但是，如果没有用户培训和其他控件，此设置也会导致标签不准确。 最好不要选择应用加密的标签作为文档的默认标签。 例如，许多组织需要向外部用户发送并与其共享文档，这些用户可能不具有支持加密的应用，或者他们可能未使用可以获得授权的帐户。 有关此方案的详细信息，请参阅[与外部用户共享加密的文档](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)。
     

@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 购买 Microsoft 365 商业标准版时，你可以选择使用自己拥有的域，也可以在注册期间购买一个域。
-ms.openlocfilehash: 3144c61b0aa6f329fa4f0159cedbad21c2038169
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9893084ad351bd6d1195df9f066f3a540af5ded2
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169343"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254437"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>使用新域或现有域设置 Microsoft 365 商业标准版
 
@@ -166,10 +166,18 @@ Microsoft 365 不提供适用于公司的公共网站。 如需设置一个公�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-## <a name="related-content"></a>相关内容
+## <a name="invite-users-to-join-your-subscription-and-organization"></a>邀请用户加入你的订阅和组织
+
+设置组织后，可以邀请其他用户加入Microsoft 365业务订阅。 他们将有权访问订阅的所有功能。
+
+[邀请用户加入我的订阅](../simplified-signup/admin-invite-business-standard.md)
+
+让用户知道他们可以按照以下文章中的步骤加入你的组织和订阅。
+
+- [接受电子邮件邀请](../simplified-signup/user-invite-business-standard.md)
+
+- [使用 Outlook、Yahoo、Gmail 或其他帐户（用户）](../simplified-signup/user-invite-msa-nodomain-join.md)接受电子邮件邀请
+
+## <a name="related-topics"></a>相关主题
 
 [将数据迁移到 Microsoft 365 商业标准版订阅](../simplified-signup/migrate-data-business-standard.md)
-
-[注册 Microsoft 365 商业标准版订阅](../simplified-signup/signup-business-standard.md)
-
-[接受对 Microsoft 365 商业标准版订阅（用户）的邀请](../simplified-signup/user-invite-business-standard.md)

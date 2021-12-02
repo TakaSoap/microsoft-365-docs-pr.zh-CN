@@ -304,10 +304,10 @@
               href: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: 安全性
       items:
+        - name: Microsoft 365 零信任部署计划
+          href: ../security/microsoft-365-zero-trust.md
         - name: 安全团队为支持在家办公需完成的首要任务
           href: ../security/top-security-tasks-for-remote-work.md
-        - name: 面向业务决策者 (BDM) 的 Microsoft 365 安全
-          href: ../security/microsoft-365-security-for-bdm.md
         - name: 标识和设备访问配置
           href: ../security/office-365-security/microsoft-365-policies-configurations.md
         - name: 评估和试点 Microsoft 365 Defender
@@ -315,7 +315,7 @@
         - name: 响应你的第一个事件
           href: ../security/defender/first-incident-overview.md
         - name: Microsoft Defender for Endpoint
-          href: /microsoft-365/security/defender-endpoint/deployment-phases.md
+          href: ../security/defender-endpoint/deployment-phases.md
         - name: 从非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
           href: ../security/defender-endpoint/switch-to-mde-overview.md
         - name: 从非 Microsoft 保护工具切换到 Microsoft Defender for Office 365

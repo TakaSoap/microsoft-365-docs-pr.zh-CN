@@ -29,16 +29,16 @@
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: 将数据迁移到 Microsoft 365 商业标准版订阅
               href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: 为业务组织设置 Microsoft 365
+        - name: 注册Microsoft Apps商业版
+          items:
+            - name: 注册Microsoft 365商业应用
+              href: setup/signup--apps-business.md
+            - name: 为Microsoft 365商业应用设置
+              href: setup/setup-apps-for-business.md
+        - name: 设置 Microsoft 365 商业基础版
           items:
             - name: Microsoft 365 商业基础版
               href: setup/setup-business-basic.md
-            - name: Microsoft 365 商业标准版
-              href: setup/setup-business-standard.md
-            - name: Microsoft 365 商业高级版
-              href: setup/business-set-up.md
-            - name: Microsoft 365 商业应用版
-              href: setup/setup-apps-for-business.md
         - name: 浏览“安装”页和向导
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: 保护 Windows 10 计算机
