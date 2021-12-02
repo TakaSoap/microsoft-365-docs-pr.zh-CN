@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 152cce7e3e46771cd0869f898c6235ea11b9ebda
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: bfea41b11a441b10fda3c9c6a4ac7ce66bf718b6
+ms.sourcegitcommit: c2e8a4febb019b398d549a72c489f012cfbc0b32
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170504"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61265186"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -32,6 +32,11 @@ ms.locfileid: "61170504"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+
+## <a name="1014925-20121092149250"></a>101.49.25 (20.121092.14925.0) 
+
+- 向命令行工具添加了一个新开关，以控制在按需扫描过程中是否扫描存档。 这可以通过 进行配置 `mdatp config scan-archives --value [enabled/disabled]` 。 默认情况下，这设置为 `enabled` 。
+- 错误修补程序
 
 ## <a name="1014727-20121082147270"></a>101.47.27 (20.121082.14727.0) 
 
@@ -70,7 +75,7 @@ ms.locfileid: "61170504"
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0) 
 
 - [macOS 的设备](mac-device-control-overview.md) 控件现已一般可用
-- 解决了无法从 macOS 11 和 Big Sur (状态菜单启动快速) 
+- 解决了无法从 macOS 11 ("大 Sur"菜单上启动快速) 
 - 其他 Bug 修复
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0) 
@@ -82,12 +87,12 @@ ms.locfileid: "61170504"
 - 从此版本开始，在通过命令行客户端触发的按需防病毒扫描期间检测到的威胁将自动修正。 扫描期间通过用户界面触发的威胁仍然需要手动操作。
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
-  - `--top N`：显示前 N 个 (仅在指定了值 `--sort` 时) 
-- 性能改进 (在将功能用于 BUG 修复) &使用时的性能改进
+  - `--top N`：显示前 N 个 (仅在还指定了 `--sort` 值时) 
+- 性能改进 (在将一些 BUG 修复) &使用时的性能改进
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0) 
 
-- 修复以适应 macOS Catalina 和更早版本 Apple 证书过期。 此修补程序还原 TVM &威胁 (漏洞) 功能。
+- 修复以适应 macOS Catalina 和更早版本 Apple 证书过期。 此修补程序还原 TVM &威胁 (管理) 功能。
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0) 
 
@@ -127,7 +132,7 @@ ms.locfileid: "61170504"
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0) 
 
-- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 错误（清单到内核内核错误）时的条件
+- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 清单到内核内核错误时的条件
 - 修复了在 Mac 11 和 Big Sur (运行时 Endpoint Security 系统扩展) 
 - 错误修补程序
 
@@ -150,7 +155,7 @@ ms.locfileid: "61170504"
   > [!NOTE]
   > **2021** 年 1 月 1 日将从产品中删除旧的命令行工具语法。
 
-- 使用 `mdatp diagnostic create` 新的参数扩展 () ，该参数允许将诊断日志 `--path [directory]` 保存到其他目录
+- 使用新的参数扩展 () ，该参数允许将诊断日志 `mdatp diagnostic create` `--path [directory]` 保存到其他目录
 - Bug 修复&性能改进
 
 ## <a name="1010949"></a>101.09.49
@@ -275,7 +280,7 @@ ms.locfileid: "61170504"
 - 增加了对 macOS 加泰罗尼亚语的支持
 
   > [!CAUTION]
-  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，未经明确同意 (应用程序无法访问磁盘上的某些位置) 例如文档、下载、桌面等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，未经明确同意 (应用程序无法访问磁盘上的某些位置) 下载、桌面等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
   >
   > 授予此同意的机制取决于你部署适用于终结点的 Microsoft Defender 的方式：
   >

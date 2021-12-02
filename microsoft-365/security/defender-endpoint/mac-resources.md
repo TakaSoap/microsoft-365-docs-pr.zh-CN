@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56b740bc5bd62f6329b53878c1a12c1486f7480f
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: e3656d864b5fe240bea7375999ad9501adf3b2a1
+ms.sourcegitcommit: c2e8a4febb019b398d549a72c489f012cfbc0b32
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171289"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61265192"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的资源
 
@@ -86,7 +86,7 @@ ms.locfileid: "61171289"
 
 ### <a name="interactive-uninstallation"></a>交互式卸载
 
-- 打开 **Finder > Applications**。 右键单击 **Microsoft Defender for Endpoint >移动到回收站**。
+- 打开 **Finder > Applications**。 右键单击 **适用于终结点的 Microsoft Defender >移动到回收站**。
 
 ### <a name="from-the-command-line"></a>从命令行
 
@@ -111,6 +111,7 @@ ms.locfileid: "61171289"
 |配置|打开/关闭防病毒被动模式|`mdatp config passive-mode --value [enabled/disabled]`|
 |配置|配置按需扫描的并行度|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |配置|在安全智能更新后打开/关闭扫描|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|配置|仅按需扫描 (/关闭存档扫描) |`mdatp config scan-archives --value [enabled/disabled]`|
 |诊断|更改日志级别|`mdatp log level set --level [error/warning/info/verbose]`|
 |诊断|生成诊断日志|`mdatp diagnostic create --path [directory]`|
 |运行状况|检查产品的运行状况|`mdatp health`|
@@ -160,4 +161,4 @@ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>适用于终结点的 Microsoft Defender 门户信息
 
-[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的新功能现已到达，在 Microsoft Defender for Endpoint 博客上，提供有关 Microsoft Defender for Endpoint 安全中心中预期内容的详细指南。
+[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的新功能现已到达，位于 Microsoft Defender for Endpoint 博客上，提供有关 Microsoft Defender for Endpoint 安全中心中预期内容的详细指南。
