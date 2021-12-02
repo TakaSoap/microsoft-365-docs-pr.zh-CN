@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Endpoint Manager 管理设备上的 Microsoft Defender for Endpoint 配置设置
-description: 了解如何通过 Microsoft Defender for Endpoint 在 Microsoft Endpoint Manager启用安全设置。
+description: 了解如何通过 Microsoft Defender for Endpoint 在 Microsoft Endpoint Manager中启用安全设置。
 keywords: 设备管理，为终结点设备配置 Microsoft Defender，Microsoft Endpoint Manager
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a890bf27cb24418faef52a56a29c902ad79fd374
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: a8a57b14480c45ddbc154d71bc4f2ded315c83ae
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786142"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262835"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 管理设备上的 Microsoft Defender for Endpoint 配置设置
 
@@ -64,11 +64,11 @@ Microsoft Defender for Endpoint 的安全管理是一项功能，适用于不由
 
 使用以下步骤验证终结点是否成功完成了 Microsoft Defender 终结点载入过程的安全管理。
 
-1.  验证设备是否显示在设备的"设备清单"[部分](https://security.microsoft.com/)Microsoft 365 Defender。
+1.  验证设备是否显示在设备的"设备清单"[部分Microsoft 365 Defender。](https://security.microsoft.com/)
 
-2.  在[Azure Active Directory 门户](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers)中，验证设备已成功注册。
+2.  在[Azure Active Directory门户](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/)中，验证设备已成功注册。
 
-3.  在 [Microsoft Endpoint Manager管理](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview)中心中，通过在所有设备中查找设备，验证>**注册** 成功。
+3.  在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview)管理中心 中，通过在所有设备中查找设备，验证>**注册** 成功。
 
 
 ## <a name="offboard-devices"></a>载出设备
