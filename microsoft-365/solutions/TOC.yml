@@ -354,6 +354,8 @@
           href: energy-secure-collaboration.md
     - name: 医疗
       items:
+        - name: 概述
+          href: healthcare-overview.md
         - name: 适用于医疗保健业的 Teams
           href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
     - name: 教育
