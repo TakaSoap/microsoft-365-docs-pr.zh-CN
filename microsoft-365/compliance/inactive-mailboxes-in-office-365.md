@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何通过将邮箱转换为非活动邮箱来保留以前员工的邮箱内容。
-ms.openlocfilehash: e00edd01e3f439050bdacce99ae006665052d82d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 0cc8e7fd980d48be44da824bad84343231c166ea
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61106422"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284621"
 ---
 # <a name="learn-about-inactive-mailboxes"></a>了解非活动邮箱
 
@@ -35,13 +35,13 @@ ms.locfileid: "61106422"
 
 当员工离开组织 (或长期离开) ，可以删除其Microsoft 365帐户。 删除帐户后，员工的邮箱数据将保留 30 天。 在此期间，您仍可以通过取消删除帐户来恢复邮箱数据。 30 天后，数据将永久删除。
 
-但是，如果在删除邮箱帐户之前对邮箱应用了保留Microsoft 365，则邮箱将转换为非活动邮箱。 以下各节包含有关可用于电子数据展示保留Microsoft 365保留的信息。
+但是，如果在删除邮箱帐户之前对邮箱应用了保留Microsoft 365，则邮箱将转换为非活动邮箱。 以下各节包含有关可应用于电子数据展示保留Microsoft 365保留的信息。
 
-当组织出于法规或其他原因需要保留以前员工的邮箱内容时，非活动邮箱非常有用。 尽管本文档中列出的任何类型的保留都会强制邮箱在删除用户对象时变为非活动状态，但我们建议通过应用 Microsoft 365 保留策略或保留标签执行此操作，确认已应用保留，然后删除相应的 Microsoft 365[](#confirming-a-hold-is-applied-to-a-mailbox)帐户。 此时，非活动邮箱的内容在删除用户帐户之前指定的保留期内保留。 您仍可以在 30 天内恢复相应的用户帐户，但在 30 天后，邮箱作为非活动邮箱保留在 Microsoft 365 中，直到删除保留策略或保留标签。
+当组织出于法规或其他原因需要保留以前员工的邮箱内容时，非活动邮箱非常有用。 虽然本文档中列出的任何类型的保留将在删除用户对象时强制使邮箱变为非活动状态，但我们建议通过应用 Microsoft 365 保留策略或保留标签执行此操作，确认已应用保留，然后删除相应的 Microsoft 365[](#confirming-a-hold-is-applied-to-a-mailbox)帐户。 此时，非活动邮箱的内容在删除用户帐户之前指定的保留期内保留。 您仍可以在 30 天内恢复相应的用户帐户，但在 30 天后，邮箱作为非活动邮箱保留在 Microsoft 365 中，直到删除保留策略或保留标签。
 
 > [!IMPORTANT]
-> 如前面所述，我们建议使用Microsoft 365保留来创建非活动邮箱：
-> - In-Place管理Exchange中的保留现已停用。 截至 2020 年 7 月 1 In-Place，无法在 Exchange Online 中创建新的保留。 从 2020 年 10 月 1 日起，就地保留的保留期无法再更改。 应用了"保留"In-Place任何非活动邮箱都只能通过删除"保留"In-Place删除。 在删除保留之前，In-Place处于保留状态的现有非活动邮箱将继续保留。 有关保留停用In-Place，请参阅 [停用旧版电子数据展示工具](legacy-ediscovery-retirement.md)。
+> 如前所述，我们建议您使用Microsoft 365保留来创建非活动邮箱：
+> - In-Place管理Exchange中的保留现已停用。 自 2020 年 7 月 1 日起，无法在 In-Place 中创建新的保留Exchange Online。 从 2020 年 10 月 1 日起，就地保留的保留期无法再更改。 应用了"保留In-Place的任何非活动邮箱都只能通过删除"保留"In-Place删除。 在删除保留之前，In-Place处于保留状态的现有非活动邮箱将继续保留。 有关保留停用In-Place，请参阅 [停用旧版电子数据展示工具](legacy-ediscovery-retirement.md)。
 > 
 > - [诉讼保留](create-a-litigation-hold.md) 仍受支持，作为在删除用户帐户后保留邮箱内容并使其处于非活动状态的替代方法。 但是，作为较旧的技术，我们建议你改为Microsoft 365保留。
 
@@ -49,7 +49,7 @@ ms.locfileid: "61106422"
 
 ### <a name="confirming-a-hold-is-applied-to-a-mailbox"></a>确认对邮箱应用了保留
 
-无论是应用 Microsoft 365 保留策略、保留标签、电子数据展示保留、诉讼保留还是具有现有 In-Place 保留，都可以使用 PowerShell 确认保留已成功应用于邮箱。 如果最近配置了保留，可能需要等到该保留应用于邮箱。
+无论是应用 Microsoft 365 保留策略、保留标签、电子数据展示保留、诉讼保留，还是应用现有 In-Place 保留，都可以使用 PowerShell 确认保留已成功应用于邮箱。 如果最近配置了保留，可能需要等到该保留应用于邮箱。
 
 为了防止意外或无意删除，我们建议您在删除用户帐户之前确认保留。 如果未应用保留，则邮箱不会转换为非活动邮箱。
 
@@ -89,7 +89,7 @@ ms.locfileid: "61106422"
 
 - 您可以快速确定分配给组织中非活动邮箱的保留策略，从而在必要时更轻松地更改保留设置。 
 
-- 永久删除非活动邮箱更容易，因为您可以基于非活动邮箱的属性或属性配置自适应范围以[](retention-settings.md#to-configure-an-adaptive-scope)将其排除，以将其从策略中删除。 否则，在删除[邮箱Exchange Online必须使用 PowerShell。](delete-an-inactive-mailbox.md#remove-an-inactive-mailbox-from-a-retention-policy) [](delete-an-inactive-mailbox.md#before-you-delete-an-inactive-mailbox)
+- 永久删除非活动邮箱更容易，因为您可以基于非活动邮箱的属性或属性配置自适应范围以[](retention-settings.md#to-configure-an-adaptive-scope)将其排除，以将其从策略中删除。 否则，在删除Exchange Online之前，必须使用[PowerShell。](delete-an-inactive-mailbox.md#remove-an-inactive-mailbox-from-a-retention-policy) [](delete-an-inactive-mailbox.md#before-you-delete-an-inactive-mailbox)
 
 > [!NOTE]
 > 根据自适应策略范围的配置，非活动邮箱可能会包含也可能不包含在内。  若要专门面向或排除自适应策略作用域中的非活动邮箱，请参阅电子邮件Exchange[公用文件夹Exchange配置信息](retention-settings.md#locations)。
@@ -101,22 +101,22 @@ ms.locfileid: "61106422"
 - 使用默认 **所有收件人** 配置但不支持 [特定包含或排除](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions) 时，静态策略作用域将包含非活动邮箱。 但是，如果在应用策略时包含或排除具有活动邮箱的收件人，并且该邮箱随后变为非活动状态，则将继续应用或排除保留设置。 在此方案中， [特定包含和排除限制](retention-limits.md) 仍然适用。
     
     > [!NOTE]
-    > 这也意味着，使用Microsoft 365"所有收件人"默认选择的静态作用域的任何新邮箱保留设置将自动包括所有现有的非活动邮箱。
+    > 这还意味着，使用Microsoft 365作用域（应用于"所有收件人"的默认选择）的任何新的保留设置将自动包括所有现有的非活动邮箱。
 
 - 如果将"所有收件人"的默认选择更改为包含特定收件人，则策略的保留设置将不再应用于任何非活动邮箱，这些邮箱现在有资格自动删除。
 
 - 如果要释放应用于非活动邮箱的保留策略，请参阅 [发布保留策略](retention.md#releasing-a-policy-for-retention)。
 
 > [!CAUTION]
-> 使用Microsoft 365保留使邮箱变为非活动状态时，请勿在删除相应的用户帐户之前更改或删除邮箱的用户主体名称 (UPN) 。 此外，不要更改派生自 UPN (的主 SMTP 地址) 或先从与邮箱关联的辅助 SMTP 地址列表中移除此电子邮件地址，然后再使邮箱变为非活动状态。
+> 使用保留Microsoft 365使邮箱变为非活动状态时，在删除相应的用户帐户之前，不要更改或删除邮箱的用户主体名称 (UPN) 。 此外，不要更改派生自 UPN (的主 SMTP 地址) 或先从与邮箱关联的辅助 SMTP 地址列表中移除此电子邮件地址，然后再使邮箱变为非活动状态。
 > 
-> 如果更改在应用保留设置) 时分配给邮箱的 UPN 或电子邮件地址 (然后删除用户帐户使邮箱变为非活动状态，则如果您不再需要保留非活动邮箱，将无法删除该邮箱。 这是因为无法通过使用 UPN 或电子邮件地址 (来标识非活动邮箱) 这不同于最初将保留设置应用于邮箱时已存在的非活动邮箱) 。 有关删除非活动邮箱的信息，[请参阅删除非](delete-an-inactive-mailbox.md)活动Office 365。
+> 如果更改在应用) 保留设置时分配给邮箱的 UPN 或电子邮件地址 (然后删除用户帐户使邮箱变为非活动状态，则如果不再需要保留非活动邮箱，将无法删除该邮箱。 这是因为无法通过使用 UPN 或电子邮件地址 (来标识非活动邮箱) 这不同于最初将保留设置应用于邮箱时已存在的非活动邮箱) 。 有关删除非活动邮箱的信息，[请参阅删除非](delete-an-inactive-mailbox.md)活动Office 365。
 
 ## <a name="inactive-mailboxes-and-ediscovery-case-holds"></a>非活动邮箱和电子数据展示案例保留
 
-如果与 Microsoft 365 合规中心 中的电子数据展示案例[](./get-started-core-ediscovery.md)关联的保留置于邮箱上，然后删除邮箱或用户帐户，则邮箱将变为非活动邮箱。 但是，我们不建议使用电子数据展示案例保留来使邮箱处于非活动状态。 这是因为电子数据展示事例适用于与安全问题相关的特定、有时间限制的事例。 有时，法律案件可能会结束，并且将删除与该案件关联的保留，并关闭电子数据展示案例。 事实上，如果非活动邮箱上置于的保留与电子数据展示案例关联，然后该保留被解除，或者电子数据展示案例已关闭 (或删除) ，则非活动邮箱将被永久删除。 此外，无法创建基于时间电子数据展示保留。 这意味着非活动邮箱中的内容将永久保留，或者一直保留到删除保留并删除非活动邮箱。 因此，我们建议对非Microsoft 365邮箱使用保留策略。
+如果与 Microsoft 365 合规中心 中的电子数据展示案例[](./get-started-core-ediscovery.md)关联的保留置于邮箱上，然后删除邮箱或用户帐户，则邮箱将变为非活动邮箱。 但是，我们不建议使用电子数据展示案例保留来使邮箱处于非活动状态。 这是因为电子数据展示事例适用于与安全问题相关的特定、有时间限制的事例。 有时，法律案件可能会结束，并且将删除与该案件关联的保留，并关闭电子数据展示案例。 事实上，如果非活动邮箱上置于的保留与电子数据展示案例关联，然后释放该保留或关闭 (或删除) ，则非活动邮箱将被永久删除。 此外，无法创建基于时间电子数据展示保留。 这意味着非活动邮箱中的内容将永久保留，或者一直保留到删除保留并删除非活动邮箱。 因此，我们建议对非Microsoft 365邮箱使用保留策略。
 
-有关电子数据展示保留和保留Microsoft 365，请参阅何时使用保留策略和保留标签或[电子数据展示保留](retention.md#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds)。
+有关电子数据展示保留和保留Microsoft 365，请参阅何时使用保留策略和保留标签[或电子数据展示保留](retention.md#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds)。
 
 ## <a name="inactive-mailboxes-and-auto-expanding-archives"></a>非活动邮箱和自动扩展存档
 
@@ -128,43 +128,12 @@ ms.locfileid: "61106422"
 
 ## <a name="inactive-mailboxes-and-exchange-mrm-retention-policies"></a>非活动邮箱Exchange MRM 保留策略
 
-在 Exchange Online) 中Exchange保留策略 (邮件记录管理或 MRM 功能不会在删除用户帐户时创建非活动邮箱。
+如果对 Exchange Online) 中的Exchange保留策略 (邮件记录管理或 MRM 功能，则删除用户帐户时不会创建非活动邮箱。
 
-但是，如果此 MRM 保留策略在邮箱处于非活动状态之前应用于该邮箱，则使用 Delete 操作) 配置的任何删除策略 (MRM 保留标记将继续在非活动邮箱上进行处理。 这意味着，在保留期到期时，用 MRM 删除策略标记的项目将[](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)移动到"可恢复的项目"文件夹。 在保留期过期时，这些项目会从非活动邮箱中清除。 如果没有为非活动邮箱指定保留期，则"恢复项目"文件夹中的项目将无限期保留。
+但是，如果此 MRM 保留策略在邮箱处于非活动状态之前应用于该邮箱，则任何删除策略 (使用 Delete **操作**) 配置的 MRM 保留标记将继续在非活动邮箱上进行处理。 这意味着，在保留期到期时，用 MRM 删除策略标记的项目将[](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)移动到"可恢复的项目"文件夹。 在保留期过期时，这些项目会从非活动邮箱中清除。 如果没有为非活动邮箱指定保留期，则"恢复项目"文件夹中的项目将无限期保留。
 
 相反，任何存档策略 (分配给非活动邮箱的 MRM 保留策略中包含的使用 **MoveToArchive** 操作) 配置的 MRM 保留标记。 也就是说，在保留期过期时，非活动邮箱中标记有存档策略的项目会保留在主邮箱中。 这些项目不会移到存档邮箱或其中的“可恢复的项目”文件夹内。 它们将被无限期保留。
 
-## <a name="creating-an-inactive-mailbox"></a>创建非活动邮箱
+## <a name="next-steps"></a>后续步骤
 
-若要使邮箱变为非活动状态，必须为其分配 Exchange Online 计划 2 许可证 (或具有 Exchange Online Archiving 附加许可证) 的 Exchange Online 计划 1 许可证，以便可以在删除邮箱之前将诉讼保留或 Microsoft 365 保留策略应用于邮箱。 删除用户帐户后，Exchange Online用户帐户的任何许可证将可用于分配给新用户。
-
-下表总结了为不同保留方案创建非活动邮箱的过程。 有关详细信息，请参阅管理 [非活动邮箱](create-and-manage-inactive-mailboxes.md)。
-
-<br/>
-
-|自。。。|为此...|结果|
-|---|---|---|
-|员工离开组织后无限期保留邮箱内容|1. Microsoft 365保留设置以及保留策略 (保留策略) 或特定电子邮件项目的保留 (一个或多个保留标签) 。 <br /><br> 2. 等待应用保留设置。 <br /><br> 3. 删除用户Microsoft 365帐户。|已应用保留设置的非活动邮箱中所有内容（包括"可恢复的项目"文件夹中的项目）将无限期保留。|
-|在员工离开组织后，将所有邮箱内容保留一段特定时间，然后删除邮箱|1. 将Microsoft 365保留策略应用于保留设置保留的邮箱，然后在保留期到期时删除项目。 <br /><br> 2. 等待应用保留设置。 <br /><br> 3. 删除用户Microsoft 365帐户。|当邮箱项目的保留期过期时，该项目将移动到"可恢复的项目"文件夹，然后当 Exchange 邮箱) 的已删除邮件保留期 (过期时，该项目将从非活动邮箱中永久删除 (已清除) 。 保留策略的保留Microsoft 365始终基于接收或创建邮箱项目的原始日期。|
-
-
-> [!NOTE]
-> 如果Microsoft 365保留或保留然后删除内容的保留设置已应用于邮箱或邮箱项目，或者邮箱上已设置诉讼保留，或者创建非活动邮箱所必须执行的所有操作就是删除相应的用户帐户。
-
-## <a name="managing-inactive-mailboxes"></a>管理非活动邮箱
-
-将邮箱变为非活动邮箱后，您可以对非活动邮箱执行各种管理任务。
-
-- **更改非活动邮箱的保留期。** 邮箱变为非活动邮箱后，可以更改诉讼保留的保留期，Microsoft 365应用于非活动邮箱的保留策略。 有关分步过程，请参阅更改非活动邮箱 [的保留期](change-the-hold-duration-for-an-inactive-mailbox.md)。
-
-  > [!NOTE]
-  > 不能将其他保留策略应用于非活动邮箱。 只能更改应用于非活动邮箱的现有保留策略的保留期。
-
-- **恢复非活动邮箱。** 如果以前的员工 (或休假的员工) 回到您的组织，或者如果聘用了一位新员工来承担前员工的工作职责，您可以恢复非活动邮箱的内容。 恢复非活动邮箱时，邮箱将转换为新邮箱，非活动邮箱的内容和文件夹结构将保留，并且该邮箱将链接到新的用户帐户。 恢复后，非活动邮箱不再存在。 有关恢复非活动邮箱时所发生事情的分步过程和信息，请参阅 [恢复非活动邮箱](recover-an-inactive-mailbox.md)。
-
-  > [!NOTE]
-  > 如果恢复已分配给保留策略的非活动邮箱，保留锁定 (称为锁定保留策略 *) ，* 则恢复的邮箱将分配到相同的锁定保留策略。 如果恢复未保留锁定的情况下分配给保留策略的非活动邮箱，则恢复的邮箱将从解锁的保留策略中删除。 但是，恢复的邮箱上启用了诉讼保留，以防止基于删除超过特定期限的内容的任何组织范围的保留策略删除邮箱内容。
-
-- **还原非活动邮箱。** 如果另一名员工承担以前员工的工作职责，或者如果其他人需要访问非活动邮箱的内容，您可以还原 (或将) 非活动邮箱的内容合并到现有邮箱。 还原非活动邮箱时，内容将复制到另一个邮箱。 非活动邮箱将保留并保留为非活动邮箱。 仍可以使用电子数据展示工具搜索非活动邮箱，其内容可以还原到另一个邮箱，稍后可以恢复或删除。 有关分步过程，请参阅 [还原非活动邮箱](restore-an-inactive-mailbox.md)。
-
-- **删除非活动邮箱。** 当您不再需要保留非活动邮箱的内容时，可以通过删除应用于非活动邮箱的所有保留策略或Microsoft 365保留策略来永久删除该邮箱。 如果邮箱在 30 天之前变为非活动状态，则删除保留后，该邮箱将被标记为永久删除。 如果邮箱在前 30 天内变为非活动状态，可以在删除保留或保留策略后使其再次处于活动状态。 有关分步过程，请参阅删除 [非活动邮箱](delete-an-inactive-mailbox.md)。
+若要使邮箱变为非活动邮箱并管理它，例如恢复、还原和删除邮箱，请参阅创建 [和管理非活动邮箱](create-and-manage-inactive-mailboxes.md)。

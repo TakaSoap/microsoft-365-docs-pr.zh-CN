@@ -2,7 +2,6 @@
 title: 常见的 Microsoft Defender 终结点 API 错误
 description: 包含说明的常见 Microsoft Defender 终结点 API 错误列表。
 keywords: API， Microsoft Defender for Endpoint API， 错误， 疑难解答
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 406706f5ceba4268cfad99dec07d76e15f447b2b
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: d960091409a71fd23e52a098ae3d8164c7df5aef
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171253"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284597"
 ---
 # <a name="common-rest-api-error-codes"></a>常见的 REST API 错误代码
 
@@ -63,7 +62,7 @@ DisallowedOperation|禁止 (403) |{不允许的操作和原因}。
 NotFound|404 (未找到) |"常规未找到"错误消息。
 ResourceNotFound|404 (未找到) |未找到资源 {请求的资源}。
 InternalServerError|内部服务器错误 (500) | (无错误消息，请重试) 
-TooManyRequests|请求过多 (429) |响应表示请求数或 CPU 达到配额限制。
+TooManyRequests|请求数过多 (429) |响应表示请求数或 CPU 达到配额限制。
 
 ## <a name="body-parameters-are-case-sensitive"></a>正文参数区分大小写
 

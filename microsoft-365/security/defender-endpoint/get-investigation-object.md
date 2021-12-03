@@ -2,7 +2,6 @@
 title: 获取调查对象 API
 description: 使用此 API 创建与获取 Investigation 对象相关的调用
 keywords: api， 图形 api， 受支持的 api， 调查对象
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c5d6dc6c8b54422f83f5692bfcea333f4d61dd1e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8fc4fea909fcaa2ebfd755d47a7282419c2860b9
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166922"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282810"
 ---
 # <a name="get-investigation-api"></a>获取调查 API
 
@@ -54,8 +53,8 @@ ms.locfileid: "61166922"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Alert.Read.All|"读取所有警报"
-Application|Alert.ReadWrite.All|"读取和写入所有警报"
+应用程序|Alert.Read.All|"读取所有警报"
+应用程序|Alert.ReadWrite.All|"读取和写入所有警报"
 委派（工作或学校帐户） | Alert.Read | "读取警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 

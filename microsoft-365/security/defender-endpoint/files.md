@@ -2,7 +2,6 @@
 title: File 资源类型
 description: 检索最近与文件相关的 Microsoft Defender for Endpoint 警报。
 keywords: api， 图形 api， 受支持的 api， 获取， 警报， 最近
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,21 +15,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4e7cbc65971c2f916d362e6a997d73e5581c9022
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7fef64136e27b8b9a85163fe9e25fdf59ab6d2aa
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205495"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283481"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：** 
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,7 +39,7 @@ ms.locfileid: "60205495"
 
 表示 Defender for Endpoint 中的文件实体。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 方法|返回类型 |说明
 :---|:---|:---
@@ -53,19 +54,19 @@ ms.locfileid: "60205495"
 |属性 | 类型 | 说明 |
 |:---|:---|:---|
 |sha1 | String | 文件内容的 Sha1 哈希 |
-|sha256 | 字符串 | 文件内容的 Sha256 哈希 |
+|sha256 | String | 文件内容的 Sha256 哈希 |
 |globalPrevalence | Nullable long | 跨组织的文件普遍程度 |
 |globalFirstObserved | DateTimeOffset | 首次观察到文件时 |
 |globalLastObserved | DateTimeOffset | 上次观测到该文件的时间 |
-|大小 | Nullable long | 文件大小 |
+|size | Nullable long | 文件大小 |
 |fileType | String | 文件类型 |
-|isPeFile | 布尔值 | 如果文件是可移植的可执行文件， (如"DLL"、"EXE"等，)  |
+|isPeFile | Boolean | 如果文件可移植的可执行文件 (例如"DLL"、"EXE"等，则其为 true)  |
 |filePublisher | String | 文件发布者 |
 |fileProductName | String | 产品名称 |
-|signer | 字符串 | 文件签名者 |
+|signer | String | 文件签名者 |
 |issuer | String | 文件颁发者 |
 |signerHash | String | 签名证书的哈希 |
-|isValidCertificate | 布尔值 | Microsoft Defender for Endpoint 代理是否成功验证了对证书的签名 |
+|isValidCertificate | Boolean | Microsoft Defender for Endpoint 代理是否成功验证了对证书的签名 |
 |determinationType | String | 文件的确定类型 |
 |determinationValue | String | 确定值 |
 

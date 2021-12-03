@@ -3,7 +3,6 @@ title: 创建应用以在没有用户的情况下访问 Microsoft Defender for E
 ms.reviewer: ''
 description: 了解如何设计 Web 应用，无需用户即可以编程方式访问 Microsoft Defender for Endpoint。
 keywords: api， 图形 api， 受支持的 api， 参与者， 警报， 设备， 用户， 域， ip， 文件， 高级搜寻， 查询
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,21 +16,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d98a642450dd47088446144db01fab0a73e24855
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e32f05792b4658c7d7b42f78e88d989dfb134a78
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157970"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283180"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>创建应用以在没有用户的情况下访问 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：** 
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,32 +42,32 @@ ms.locfileid: "60157970"
 Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 这些 API 将帮助你自动执行基于 Defender for Endpoint 功能的工作流和创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 通常，你将需要执行以下步骤来使用 API：
-- 创建 Azure AD Azure Active Directory (应用程序) Azure AD 应用程序。
+- 创建Azure Active Directory (Azure AD) 应用程序。
 - 使用此应用程序获取访问令牌。
 - 使用令牌访问 Defender for Endpoint API。
 
-本文介绍了如何创建 Azure AD 应用程序、获取 Microsoft Defender for Endpoint 的访问令牌以及验证令牌。
+本文介绍如何创建一个Azure AD应用程序、获取 Microsoft Defender for Endpoint 的访问令牌以及验证令牌。
 
 ## <a name="create-an-app"></a>创建应用
 
 1. 使用具有全局管理员角色 **的用户登录到** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory** \> **应用注册** \> **""新注册"。** 
+2. 导航到 **Azure Active Directory** \> **应用注册** \> **新注册**。 
 
-   ![应用程序注册Microsoft Azure导航的图像。](images/atp-azure-new-app2.png)
+    :::image type="content" alt-text="应用程序注册Microsoft Azure导航的图像。" source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
 
 3. 在注册表单中，选择应用程序的名称，然后选择"注册 **"。**
 
-4. 若要使你的应用能够访问 Defender for Endpoint并为其分配"读取所有警报"权限，请在应用程序页面上，选择"API 权限""添加我的组织使用 > 的权限 \>  \> API"，键入 **WindowsDefenderATP，** 然后选择 **"WindowsDefenderATP"。**
+4. 若要使你的应用能够访问适用于终结点的 Defender 并为其分配"读取所有警报"权限，请在应用程序页面上，选择 **"API** 权限""添加我的组织使用 > 的权限 \>  \> API"，键入 **WindowsDefenderATP，** 然后选择 **"WindowsDefenderATP"。**
 
    > [!NOTE]
    > *WindowsDefenderATP* 不会显示在原始列表中。 开始在文本框中写入其名称，以查看其显示。
 
-   ![添加权限。](images/add-permission.png)
+   :::image type="content" alt-text="添加权限。" source="images/add-permission.png" lightbox="images/add-permission.png":::
 
-   - 选择 **"应用程序权限** \> **""Alert.Read.All"，** 然后选择"**添加权限"。**
+   选择 **"应用程序权限** \> **""Alert.Read.All"，** 然后选择"**添加权限"。**
 
-   ![应用权限。](images/application-permissions.png)
+   :::image type="content" alt-text="应用权限。" source="images/application-permissions.png" lightbox="images/application-permissions.png":::
 
      您需要选择相关权限。 "读取所有警报"只是一个示例。 例如：
 
@@ -82,7 +82,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
     ![授予权限。](images/grant-consent.png)
 
-6. 若要向应用程序添加密码，请选择"证书&**密码"，** 向密码添加说明，然后选择"添加 **"。**
+6. 若要将密码添加到应用程序，请选择"证书&**密码"，** 向密码添加说明，然后选择"添加 **"。**
 
     > [!NOTE]
     > 选择"添加 **"后**，**选择"复制生成的机密值"。** 离开后将无法检索此值。
@@ -91,9 +91,9 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 7. 记下应用程序 ID 和租户 ID。 在应用程序页面上，转到" **概述"** 并复制以下内容。
 
-   ![已创建应用 ID 的图像。](images/app-and-tenant-ids.png)
+   :::image type="content" alt-text="已创建应用 ID 的图像。" source="images/app-and-tenant-ids.png" lightbox="images/app-and-tenant-ids.png":::
 
-8. **仅适用于适用于终结点合作伙伴的 Microsoft Defender。** 在获得同意后，将 (设置为可在所有租户) 。 例如 **，** 如果你创建一个旨在在多个客户的租户 (运行的应用，则第三方应用需要) 。 如果创建的 **服务仅在** 租户中运行，则无需这样做 (例如，如果创建一个应用程序供自己使用，而该应用程序仅与你自己的数据记录进行交互) 。 若要将应用设置为多租户：
+8. **仅适用于适用于终结点合作伙伴的 Microsoft Defender。** 在获得同意后，将 (设置为可供所有租户) 。 例如 **，** 如果你创建一个旨在在多个客户的租户 (运行的应用，则第三方应用需要) 。 如果创建的 **服务仅在** 租户中运行 (例如，如果创建一个应用程序供自己使用，而该应用程序仅与你自己的数据记录进行交互，则不需要) 。 若要将应用设置为多租户：
 
     - 转到 **身份验证**，并添加 `https://portal.azure.com` 为 **重定向 URI**。
 
@@ -105,7 +105,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
     同意链接格式如下： 
 
-    ```
+    ```https
     https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
     ```
 
@@ -116,7 +116,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 ## <a name="get-an-access-token"></a>获取访问令牌
 
-有关 Azure AD 令牌详细信息，请参阅 [Azure AD 教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
+有关令牌Azure AD，请参阅Azure AD[教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
 
 ### <a name="use-powershell"></a>使用 PowerShell
 
@@ -148,13 +148,13 @@ $token = $authResponse.access_token
 1. 安装NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)。
 1. 添加以下内容：
 
-    ```
+    ```csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
-1. 将以下代码复制并粘贴到应用中 (不要忘记更新三个变量 ```tenantId, appId, appSecret``` ：) ：
+1. 在应用中复制并粘贴以下 (请不要忘记更新三个变量 ```tenantId, appId, appSecret``` ：) ：
 
-    ```
+    ```csharp
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
@@ -183,25 +183,27 @@ $token = $authResponse.access_token
 1. 将TENANT_ID设置为想要使用你的应用访问 Defender for Endpoint 的客户的 Azure 租户 ID。
 1. 运行以下命令：
 
-```
-curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
-```
-
-您将获得以下形式的答案：
-
-```
-{"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
-```
-
+    ```console
+    curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
+    ```
+    
+    您将获得以下形式的答案：
+    
+    ```console
+    {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
+    ```
+    
 ## <a name="validate-the-token"></a>验证令牌
 
 确保你收到了正确的令牌：
 
 1. 将上一步获取的令牌复制并粘贴到 [JWT](https://jwt.ms) 中，以便解码它。
-1. 验证您是否获得具有所需权限的"角色"声明
-1. 在下图中，你可以看到从应用获取的解码令牌，该应用具有对 Endpoint 的所有 Microsoft Defender 角色的权限：
 
-![令牌验证的图像。](images/webapp-decoded-token.png)
+1. 验证您是否获得具有所需权限的"角色"声明。
+
+   在下图中，你可以看到从应用获取的解码令牌，该应用具有对 Endpoint 的所有 Microsoft Defender 角色的权限：
+
+   :::image type="content" alt-text="令牌验证的图像。" source="images/webapp-decoded-token.png" lightbox="images/webapp-decoded-token.png":::
 
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>使用令牌访问 Microsoft Defender for Endpoint API
 
@@ -209,17 +211,18 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 1. 将你发送到"Bearer {token}"的 http 请求中的授权标头 (Bearer 是) 。
 1. 令牌的过期时间为一小时。 可以使用同一令牌发送多个请求。
 
-下面是使用以下方法发送请求获取警报列表 **C#：** 
-```
-    var httpClient = new HttpClient();
+下面是一个通过以下方法发送请求获取警报列表 **C#：**
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
+```csharp
+var httpClient = new HttpClient();
 
-    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
 
-    var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-    // Do something useful with the response
+var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+
+// Do something useful with the response
 ```
 
 ## <a name="see-also"></a>另请参阅

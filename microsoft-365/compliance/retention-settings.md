@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: ade850732a637356e4bb0d3b4de3ea8a8ac6c683
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 049181657dd74639fb4c4a22e371015830baf19a
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240812"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282977"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -220,7 +220,7 @@ ms.locfileid: "61240812"
 
 不支持 Exchange 电子邮件的资源邮箱、联系人和Microsoft 365 组邮箱。 对于 Microsoft 365 群组邮箱，请选择 **Microsoft 365 群组** 位置。 虽然 Exchange 位置最初允许为静态作用域选择组邮箱，但在尝试保存保留策略时，你将收到一条错误消息，表明“RemoteGroupMailbox”不是此位置的有效选项。
 
-根据策略配置， 可能包含或不包含[非活动邮箱](create-and-manage-inactive-mailboxes.md)：
+根据策略配置， 可能包含或不包含[非活动邮箱](inactive-mailboxes-in-office-365.md)：
 
 - 使用默认 **所有收件人** 配置但不支持 [特定包含或排除](#a-policy-with-specific-inclusions-or-exclusions) 时，静态策略作用域将包含非活动邮箱。 但是，如果在应用策略时包含或排除具有活动邮箱的收件人，并且该邮箱随后变为非活动状态，则将继续应用或排除保留设置。
 

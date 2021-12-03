@@ -2,7 +2,6 @@
 title: 计算机资源类型
 description: 了解 Microsoft Defender for Endpoint 中 Machine 资源类型的方法和属性。
 keywords: api， 受支持的 api， 获取， 计算机
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5f500c43aad99d36e2e40e0968f6093943c7f199
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 80ac3e9ed43de98d32fd14063261452cfd5b1372
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171181"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284045"
 ---
 # <a name="machine-resource-type"></a>计算机资源类型
 
@@ -46,7 +45,7 @@ ms.locfileid: "61171181"
 
 ****
 
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |---|---|---|
 |[列出计算机](get-machines.md)|[计算机](machine.md) 集合|列出 [组织中的计算机](machine.md) 实体集。|
 |[获取计算机](get-machine-by-id.md)|[计算机](machine.md)|按 [计算机标识](machine.md) 获取计算机。|
@@ -87,7 +86,7 @@ ms.locfileid: "61171181"
 |rbacGroupId|String|计算机组 ID。|
 |riskScore|Nullable Enum|由 Microsoft Defender 终结点评估的风险评分。 可能的值包括："None"、"Informational"、"Low"、"Medium"和"High"。|
 |aadDeviceId|Nullable 表示形式 Guid|AAD加入 ([时，AAD](machine.md)设备 ID) 。|
-|machineTags|字符串集合|计算机 [标记](machine.md) 集。|
+|machineTags|String collection|计算机 [标记](machine.md) 集。|
 |exposureLevel|Nullable Enum|由 Microsoft Defender for Endpoint 评估的曝光级别。 可能的值包括："None"、"Low"、"Medium"和"High"。|
 |deviceValue|Nullable Enum|[设备 的值](tvm-assign-device-value.md)。 可能的值包括："Normal"、"Low"和"High"。|
 |ipAddresses|IpAddress 集合|***IpAddress 对象*** 集。 请参阅[获取计算机 API。](get-machines.md)|

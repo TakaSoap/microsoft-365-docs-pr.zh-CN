@@ -2,7 +2,6 @@
 title: 获取与文件相关的计算机 API
 description: 了解如何使用获取与文件相关的计算机 API 获取与 Microsoft Defender for Endpoint 中的文件哈希相关的计算机集合。
 keywords: api， 图形 api， 受支持的 api， 获取， 设备， 哈希
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f50864609ff5143181fa6dd12093d3c82f82955a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cce211ca79a6e00484174c989ebc6224a1fdc03c
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168638"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284213"
 ---
 # <a name="get-file-related-machines-api"></a>获取与文件相关的计算机 API
 
@@ -52,8 +51,8 @@ ms.locfileid: "61168638"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Machine.Read.All|"读取所有计算机配置文件"
-Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+应用程序|Machine.Read.All|"读取所有计算机配置文件"
+应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.Read|"读取计算机信息"
 委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 
@@ -61,7 +60,7 @@ Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

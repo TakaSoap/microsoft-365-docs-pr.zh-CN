@@ -2,7 +2,6 @@
 title: 导出每个设备的软件漏洞评估
 description: API 响应针对每个设备，并且包含安装在公开设备上易受攻击的软件以及这些软件产品中的任何已知漏洞。 此表还包括操作系统信息、CVE ID 和漏洞严重性信息。
 keywords: api， api， 导出评估， 按设备评估， 漏洞评估报告， 设备漏洞评估， 设备漏洞报告， 安全配置评估， 安全配置报告， 软件漏洞评估， 软件漏洞报告， 计算机漏洞报告，
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 738d8a90dc6cbfdfa73c7c62eb076c934bbcb336
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 062765ce75317b604b4017610360c8d181bf9e88
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167330"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282821"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>导出每个设备的软件漏洞评估
 
@@ -40,7 +39,7 @@ ms.locfileid: "61167330"
 
 1. [导出软件漏洞评估 **JSON 响应**](#1-export-software-vulnerabilities-assessment-json-response)  API 将提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-2. [通过文件导出 **软件漏洞评估**](#2-export-software-vulnerabilities-assessment-via-files) 此 API 解决方案允许更快、更可靠地提取大量数据。 对于拥有 100 K 以上设备的大型组织，建议使用 Via-files。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，你可以从 Azure 存储下载数据，如下所示：
+2. [通过文件导出 **软件漏洞评估**](#2-export-software-vulnerabilities-assessment-via-files) 此 API 解决方案允许更快、更可靠地提取大量数据。 对于拥有 100 K 以上设备的大型组织，建议使用 Via-files。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从 Azure 存储下载你的所有数据：
    - 调用 API 获取包含所有组织数据的下载 URL 列表。
    - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
@@ -73,7 +72,7 @@ API 拉取你组织的数据作为 Json 响应。 响应将分页，因此您可
 
 权限类型|权限|权限显示名称
 ---|---|---
-Application|Vulnerability.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
+应用程序|Vulnerability.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
 委派（工作或学校帐户）|Vulnerability.Read|\'阅读威胁和漏洞管理漏洞信息\'
 
 ### <a name="13-url"></a>1.3 URL
@@ -85,7 +84,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 ### <a name="14-parameters"></a>1.4 参数
 
 - pageSize (默认值 = 50，000) ：响应中的结果数。
-- $top：要返回 (的结果数不会返回 @odata.nextLink，因此不会拉取所有) 。
+- $top：返回 (的结果数不会返回 @odata.nextLink，因此不会拉取所有) 。
 
 ### <a name="15-properties"></a>1.5 属性
 
@@ -101,7 +100,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 属性 (ID) |数据类型|说明|返回值的示例
 :---|:---|:---|:---
-CveId|String|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。|CVE-2020-15992
+CveId|String|CVE 安全机制中常见漏洞和曝光下分配给 (的唯一) 标识符。|CVE-2020-15992
 CvssScore|String|CVE 的 CVSS 分数。|6.2
 DeviceId|String|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|String|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com
@@ -110,7 +109,7 @@ ExploitabilityLevel|String|此漏洞的利用级别 (NoExploit、ExploitIsPublic
 FirstSeenTimestamp|String|首次在设备上看到此产品的 CVE 时。|2020-11-03 10:13:34.8476880
 Id|String|记录的唯一标识符。|123ABG55_573AG&mnp！
 LastSeenTimestamp|String|上次在设备上看到 CVE 的时间。|2020-11-03 10:13:34.8476880
-OSPlatform|String|在设备上运行的操作系统的平台。 此属性指示同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
+OSPlatform|String|在设备上运行的操作系统的平台。 此属性指示同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 11。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10 和 Windows 11
 RbacGroupName|String|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
 RecommendationReference|String|对此软件相关建议 ID 的引用。|va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (可选) |String|软件供应商提供的用于解决漏洞的安全更新的名称或说明。|2020 年 4 月安全更新
@@ -141,7 +140,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f612345daf756462bde6bd733b9a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eed224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d089e79bdfa178eabfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -164,7 +163,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f912345daf756462bde6db733b6a9c59ad4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e79bdfa178eabfa25e8de6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -189,7 +188,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f912345daf756462bde6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eed80b089e79bdfa178eadfa25e8be6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -214,7 +213,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f91234daf759492dbe6bd733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_189663d45612eed224b2be2f5ea3142729e63f16a.DomainPII_21eed80b086e79bdfa178eadfa25e8de6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -239,11 +238,11 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f912345daf756462dbe6db733d6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eeb224d2be2f5ea3142729e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8de6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
-            "softwareName": "windows_10",
+            "softwareName": "windows_10" "Windows_11",
             "softwareVersion": "10.0.17763.1637",
             "cveId": null,
             "vulnerabilitySeverityLevel": null,
@@ -255,14 +254,14 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 14:17:26",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-windows_10"
+            "recommendationReference": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11"
         }
     ],
     "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitiesByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
 }
 ```
 
-## <a name="2-export-software-vulnerabilities-assessment-via-files"></a>2. 导出通过文件 (软件漏洞) 
+## <a name="2-export-software-vulnerabilities-assessment-via-files"></a>2. 导出通过文件 (软件漏洞评估) 
 
 ### <a name="21-api-method-description"></a>2.1 API 方法说明
 
@@ -278,7 +277,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
 
 权限类型|权限|权限显示名称
 ---|---|---
-Application|Vulnerability.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
+应用程序|Vulnerability.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
 委派（工作或学校帐户）|Vulnerability.Read|\'阅读威胁和漏洞管理漏洞信息\'
 
 ### <a name="23-url"></a>2.3 URL
@@ -338,10 +337,10 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 
 ### <a name="31-api-method-description"></a>3.1 API 方法说明
 
-返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 API 拉取你组织的数据作为 Json 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 与完整的软件漏洞评估 (JSON 响应)  (它用于获取设备) 组织的软件漏洞评估的完整快照) 增量导出 JSON 响应 API 调用用于仅获取所选日期和当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 JSON 响应 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？"
+返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 API 拉取你组织的数据作为 Json 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 与完整的软件漏洞评估 (JSON 响应)  (不同，它用于获取设备) 组织的软件漏洞评估的完整快照。增量导出 JSON 响应 API 调用用于仅获取所选日期和当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 JSON 响应 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？"
 
 > [!NOTE]
-> 强烈建议你至少每周使用一次设备 API 调用评估的完整导出软件漏洞，并且此额外的导出软件漏洞会通过设备 (delta) API 调用一周中的所有其他日期进行更改。 与其他评估 JSON 响应 API 不同，"增量导出"不是完全导出。 增量导出仅包括所选日期与当前日期之间发生的更改 ("delta"API 调用) 。
+> 强烈建议你至少每周使用一次通过设备 API 调用进行的完整导出软件漏洞评估，并且此额外的导出软件漏洞会通过设备 (delta) API 调用在一周中的所有其他天进行更改。 与其他评估 JSON 响应 API 不同，"增量导出"不是完全导出。 增量导出仅包括所选日期与当前日期之间发生的更改 ("delta"API 调用) 。
 
 #### <a name="311-limitations"></a>3.1.1 限制
 
@@ -355,7 +354,7 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 
 权限类型|权限|权限显示名称
 ---|---|---
-Application|Vulnerability.Read.All|"读取威胁和漏洞管理漏洞信息"
+应用程序|Vulnerability.Read.All|"读取威胁和漏洞管理漏洞信息"
 委派（工作或学校帐户）|Vulnerability.Read|"读取威胁和漏洞管理漏洞信息"
 
 ### <a name="33-url"></a>3.3 URL
@@ -368,7 +367,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 - sinceTime (必需) ：所选时间和今天之间的数据。
 - pageSize (默认值 = 50，000) ：响应中的结果数。
-- $top：要返回 (的结果数不会返回 @odata.nextLink，因此不会拉取所有) 。
+- $top：要返回的结果 (不返回 @odata.nextLink，因此不会拉取所有) 。
 
 ### <a name="35-properties"></a>3.5 属性
 
@@ -385,17 +384,17 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 属性 (ID) |数据类型|说明|返回值的示例
 :---|:---|:---|:---
-CveId |String|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。|CVE-2020-15992  
+CveId |String|CVE 安全机制中常见漏洞和曝光下分配给 (的唯一) 标识符。|CVE-2020-15992  
 CvssScore|String|CVE 的 CVSS 分数。|6.2  
 DeviceId|String|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
 DeviceName|String|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com  
 DiskPaths|Array[string]|表明产品已安装在设备的磁盘证据。|["C：\Program Files (x86) \Microsoft\Silverlight\Application\silverlight.exe"]  
 EventTimestamp|String|找到此 delta 事件的时间。|2021-01-11T11：06：08.291Z
-ExploitabilityLevel|String| (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) |ExploitIsInKit  
+ExploitabilityLevel|String|此漏洞的利用级别 (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) |ExploitIsInKit  
 FirstSeenTimestamp|String|首次在设备上看到此产品的 CVE 时。|2020-11-03 10:13:34.8476880  
 Id|String|记录的唯一标识符。|123ABG55_573AG&mnp！  
 LastSeenTimestamp|String|上次在设备上看到 CVE 的时间。|2020-11-03 10:13:34.8476880  
-OSPlatform|String|在设备上运行的操作系统的平台;同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10  
+OSPlatform|String|在设备上运行的操作系统的平台;同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 11。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10 和 Windows 11 
 RbacGroupName|String|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器  
 RecommendationReference|string|对此软件相关建议 ID 的引用。|va--microsoft--silverlight  
 RecommendedSecurityUpdate |String|软件供应商提供的用于解决漏洞的安全更新的名称或说明。|2020 年 4 月安全更新  
@@ -404,7 +403,7 @@ RegistryPaths |Array[string]|注册表证据，表明产品已安装在设备�
 SoftwareName|String|软件产品的名称。|Chrome  
 SoftwareVendor|String|软件供应商的名称。|Google  
 SoftwareVersion|String|软件产品的版本号。|81.0.4044.138  
-状态|String|**新增功能**   (如果设备上不再存在此漏洞（这意味着已修复此漏洞)  (1) **修复** (，则说明在设备上引入的新漏洞  ) 。  (2)  **更新**   (如果设备上漏洞已更改。 可能的更改包括：CVSS 分数、攻击性级别、严重性级别、DiskPaths、RegistryPaths、RecommendedSecurityUpdate) 。 |Fixed
+状态|String|**新增功能**   (此漏洞在设备上)  (1) **修复** (（如果此漏洞在设备上不再存在，这意味着已  ) ）。  (2) 更新 ( ****   如果设备上漏洞已更改。 可能的更改包括：CVSS 分数、攻击性级别、严重性级别、DiskPaths、RegistryPaths、RecommendedSecurityUpdate) 。 |Fixed
 VulnerabilitySeverityLevel|String|分配给安全漏洞的严重性级别。 它基于 CVSS 分数和受威胁环境影响的动态因素。|Medium
 |
 
@@ -414,7 +413,7 @@ VulnerabilitySeverityLevel|String|分配给安全漏洞的严重性级别。 它
    1. 修复：1.0 版上的 CVE-A 已修复。
    1. 新增：已添加版本 2.0 上的 CVE-A。
 
-- 例如，如果特定漏洞 (，在 (（例如，) 年 1 月 10 日针对 1.0 版软件）首次看到 CVE-A) ，而该软件在数天后更新到版本 2.0（也向同一 CVE-A 公开）时，您将收到这两个分开的事件：
+- 如果特定漏洞 (例如，CVE-A) 在 (（例如，) 年 1 月 10 日针对 1.0 版软件）首次看到，而该软件在几天之后更新到版本 2.0（也向同一 CVE-A 公开）时，您将收到以下两个分开的事件：
    1. 修复：CVE-X、FirstSeenTimestamp 1 月 10 日版本 1，0。
    1. 新增：CVE-X、FirstSeenTimestamp 1 月 10 日版本 2.0。
 
@@ -437,7 +436,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "008198251234544f7dfa715e278b4cec0c19c171",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_1c8fee370690ca24b6a0d3f34d193b0424943a8b8.DomainPII_0dc1aee0fa366d175e514bd91a9e7a5b2b07ee8e.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
             "softwareVendor": "google",
@@ -466,7 +465,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "00e56c91234533860738ecf488eec8abf296e41e",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_82c13a8ad8cf3dbaf7bf34fada9fa3aebc124116.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.18363.1256",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -493,7 +492,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "01aa8c73065bb12345918693f3f94ce322107d24",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_42684eb981bea2d670027e7ad2caafd3f2b381a3.DomainPII_21eed80b086e76dbfa178eabfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
             "softwareVendor": "mozilla",
@@ -522,7 +521,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "029f0fcb13245fbd2decd1a336702131422d392e",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_a5706750acba75f15d69cd17f4a7fcd268d6422c.DomainPII_f290e982685f7e8eee168b4332e0ae5d2a069cd6.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -549,7 +548,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "038df381234510d357ac19b0113ef922e4e212b3",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_365f5c0bb7202c163937dad3d017969b2d760eb4.DomainPII_29596a43a2ef2bbfa00f6a16c0cb1d108bc63e32.DomainPII_3c5fefd2e6fda2f36257359404f6c1092aa6d4b8.net",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.18363.1256",
             "osArchitecture": "x64",
             "softwareVendor": "google",

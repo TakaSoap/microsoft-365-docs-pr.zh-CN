@@ -2,7 +2,6 @@
 title: 批更新警报实体 API
 description: 了解如何使用此 API 批量更新 Microsoft Defender 终结点警报。 可以更新状态、确定、分类和 assignedTo 属性。
 keywords: api， 图形 api， 受支持的 api， 获取， 警报， 信息， id
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 007dd161ac221a51ce2d2a424974db51177db615
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: a2d695a2b406d4850f0e9896af3ec3b2aede8870
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170999"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283637"
 ---
 # <a name="batch-update-alerts"></a>批量更新警报
 
@@ -58,14 +57,14 @@ ms.locfileid: "61170999"
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-Application | Alert.ReadWrite.All | "读取和写入所有警报"
+应用程序 | Alert.ReadWrite.All | "读取和写入所有警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："警报调查" (请参阅创建和管理角色，了解) [](user-roles.md)
-> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
+> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -88,10 +87,10 @@ Content-Type | String | application/json. 必需。
 
 为了实现最佳性能，不得添加未变化的现有值。
 
-属性 | 类型 | Description
+属性 | 类型 | 说明
 :---|:---|:---
 alertIds | 列表 &lt; 字符串&gt;| 要更新的警报的 ID 列表。 **Required**
-status | String | 指定指定警报的更新状态。 属性值为："New"、InProgress 和"Resolved"。
+状态 | String | 指定指定警报的更新状态。 属性值为："New"、InProgress 和"Resolved"。
 assignedTo | String | 指定警报的所有者
 classification | 字符串 | 指定指定警报的规范。 属性值为："Unknown"、"FalsePositive"和"TruePositive"。 
 确定 | String | 指定指定警报的确定。 属性值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"

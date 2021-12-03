@@ -2,7 +2,6 @@
 title: 导出每个设备的评估方法和属性
 description: 提供有关拉取"危险和漏洞管理"数据的 API 的信息。 不同的 API 调用用于获取不同类型的数据。 通常，每个 API 调用都包含组织中设备的必要数据。
 keywords: api， api， 导出评估， 按设备评估， 每计算机评估， 漏洞评估报告， 设备漏洞评估， 设备漏洞报告， 安全配置评估， 安全配置报告， 软件漏洞评估， 软件漏洞报告， 按计算机进行漏洞报告，
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e394513cdb3170eaa3f347d018bcc13382797271
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1d3f136f3715b81b245f6b157927ae98a9444c06
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167117"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284441"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>导出每个设备的评估方法和属性
 
@@ -39,7 +38,7 @@ ms.locfileid: "61167117"
 提供有关基于每个设备拉取数据危险和漏洞管理 API 的方法和属性详细信息。 不同的 API 调用用于获取不同类型的数据。 通常，每个 API 调用都包含组织中设备的必要数据。
 
 > [!NOTE]
-> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出和 **** 按设备 (也称为按 **_设备) 。_**
+> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出，**** 按设备 (也称为按 **_设备) 。_**
 
 可以使用导出评估 API 检索 (导出) 类型的信息：
 
@@ -53,7 +52,7 @@ ms.locfileid: "61167117"
 
 - **JSON 响应**  API 拉取组织的所有数据作为 JSON 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-- **通过文件** 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，你可以从以下Azure 存储下载所有数据：
+- **通过文件** 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从 Azure 存储下载你的所有数据：
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
   - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
@@ -65,10 +64,10 @@ ms.locfileid: "61167117"
 
 ### <a name="11-methods"></a>1.1 方法
 
-Method|数据类型|说明
+方法|数据类型|说明
 :---|:---|:---
 导出安全配置评估 **(JSON 响应)**|按设备集合的安全配置。 请参阅 [：1.2 JSON (1.2 属性) ](#12-properties-json-response)|返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 API 拉取组织的所有数据作为 JSON 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
-导出通过文件 **(安全配置)**|按设备集合的安全配置。 请参阅 [：1.3 通过文件 (的属性) ](#13-properties-via-files)|返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，你可以从以下Azure 存储下载所有数据： <ol><li>调用 API 获取包含所有组织数据的下载 URL 列表。</li><li>使用下载 URL 下载所有文件并处理您喜欢的数据。</li></ol>
+导出通过文件 **(安全配置)**|按设备集合的安全配置。 请参阅 [：1.3 属性 (文件) ](#13-properties-via-files)|返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从 Azure 存储下载你的所有数据： <ol><li>调用 API 获取包含所有组织数据的下载 URL 列表。</li><li>使用下载 URL 下载所有文件并处理您喜欢的数据。</li></ol>
 
 ### <a name="12-properties-json-response"></a>1.2 JSON (属性) 
 
@@ -76,7 +75,7 @@ Method|数据类型|说明
 :---|:---|:---
 configurationCategory|String|配置所属的类别或分组：应用程序、操作系统、网络、帐户、安全控件。
 configurationId|String|特定配置的唯一标识符。
-configurationImpact|String|配置对总体配置分数的评分影响 (为 1-10) 。
+configurationImpact|String|配置对总体配置分数的评分 (为 1-10) 。
 configurationName|String|配置的显示名称。
 configurationSubcategory|String|配置所属的子类别或子组。 在许多情况下，特定功能或功能。
 deviceId|String|服务中设备的唯一标识符。
@@ -84,7 +83,7 @@ deviceName|String|设备的完全限定 (FQDN) FQDN。
 isApplicable|Bool|指示配置或策略是否适用。
 isCompliant|Bool|指示配置或策略是否正确配置。
 isExpectedUserImpact|Bool|指示将应用配置时用户是否受到影响。
-osPlatform|String|在设备上运行的操作系统的平台。 同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 TVM 支持的操作系统和平台。
+osPlatform|String|在设备上运行的操作系统的平台。 同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 11。 有关详细信息，请参阅 TVM 支持的操作系统和平台。
 osVersion|String|设备上运行的操作系统的特定版本。
 rbacGroupName|String|基于角色的访问控制 (RBAC) 组。 如果设备未分配到任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。
 rbacGroupId|String|基于角色的访问控制 (RBAC) 组 ID。
@@ -104,10 +103,10 @@ GeneratedTime|String|导出的生成时间。
 
 ### <a name="21-methods"></a>2.1 方法
 
-|Method|数据类型|说明|
+|方法|数据类型|说明|
 |:---|:---|:---|
 |导出软件清单评估 **(JSON 响应)**|按设备集合列出软件清单。 请参阅 [：2.2 JSON (2.2 属性) ](#22-properties-json-response)|返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。 API 拉取组织的所有数据作为 JSON 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 |
-| 通过文件库 **导出 (清单)**|按设备文件列出软件清单。 请参阅 [：2.3 属性 (文件) ](#23-properties-via-files)|返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，你可以从Azure 存储数据，如下所示： <ol><li>调用 API 获取包含组织数据的下载 URL 列表</li><li>使用下载 URL 下载文件并处理您喜欢的数据。</li></ol> |
+| 通过文件库 **导出 (清单)**|按设备文件列出软件清单。 请参阅 [：2.3 通过文件 (的属性) ](#23-properties-via-files)|返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，可以从以下Azure 存储下载数据： <ol><li>调用 API 获取包含组织数据的下载 URL 列表</li><li>使用下载 URL 下载文件并处理您喜欢的数据。</li></ol> |
 
 ### <a name="22-properties-json-response"></a>2.2 JSON (2.2 属性) 
 
@@ -119,7 +118,7 @@ DiskPaths|Array[string]|表明产品已安装在设备的磁盘证据。
 EndOfSupportDate|String|此软件支持已结束或将终止的日期。
 EndOfSupportStatus|String|停止提供支持状态。 可以包含以下可能的值：None、EOS Version、Upcoming EOS Version、EOS Software、Upcoming EOS Software。
 NumberOfWeaknesses|Int|此设备上此软件上漏洞的数量。
-OSPlatform|String|在设备上运行的操作系统的平台;同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
+OSPlatform|String|在设备上运行的操作系统的平台;同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 11。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
 RbacGroupName|String|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。
 rbacGroupId|String|基于角色的访问控制 (RBAC) 组 ID。
 RegistryPaths|Array[string]|注册表证据，表明产品已安装在设备中。
@@ -128,7 +127,7 @@ SoftwareName|String|软件产品的名称。
 SoftwareVendor|String|软件供应商的名称。
 SoftwareVersion|String|软件产品的版本号。
 
-### <a name="23-properties-via-files"></a>2.3 属性 (文件) 
+### <a name="23-properties-via-files"></a>2.3 通过文件 (的属性) 
 
 属性 (ID) |数据类型|说明
 :---|:---|:---
@@ -141,31 +140,31 @@ GeneratedTime|String|导出的生成时间。
 
 ### <a name="31-methods"></a>3.1 方法
 
-Method|数据类型|说明
+方法|数据类型|说明
 :---|:---|:---
-导出 **JSON 响应 (软件漏洞)**|调查集合请参阅 [：3.2 属性 (JSON 响应) ](#32-properties-json-response)|返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 API 拉取组织的所有数据作为 JSON 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
-导出通过文件 (**软件漏洞)**|调查实体 请参阅 [：3.3 通过文件 (的属性) ](#33-properties-via-files)|返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，你可以从以下Azure 存储下载所有数据： <ol><li>调用 API 获取包含所有组织数据的下载 URL 列表。</li><li>使用下载 URL 下载所有文件并处理您喜欢的数据。</li></ol>
+导出 **JSON 响应 (软件漏洞)**|调查集合，请参阅 [：3.2 属性 (JSON 响应) ](#32-properties-json-response)|返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 API 拉取组织的所有数据作为 JSON 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
+导出通过文件 (**软件漏洞评估)**|调查实体 请参阅 [：3.3 属性 (文件) ](#33-properties-via-files)|返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从 Azure 存储下载你的所有数据： <ol><li>调用 API 获取包含所有组织数据的下载 URL 列表。</li><li>使用下载 URL 下载所有文件并处理您喜欢的数据。</li></ol>
 **Delta 导出** 软件漏洞评估 **(JSON 响应)**|调查集合请参阅 [：3.4 Properties Delta export (JSON response) ](#34-properties-delta-export-json-response)|返回一个表，其中每个唯一组合都有一个条目：DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 和 EventTimestamp。 <p> API 拉取你组织的数据作为 JSON 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 JSON 响应 (软件漏洞评估) 用于按设备获取组织的软件漏洞评估的完整快照。 但是，增量导出 API 调用用于仅提取所选日期与当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？" <p> 由于软件漏洞的 Delta 导出 API 调用仅返回目标日期范围的数据，因此不被视为完全 _导出_。
 
 ### <a name="32-properties-json-response"></a>3.2 JSON (属性) 
 
 属性 (ID) |数据类型|说明
 :---|:---|:---
-CveId|String|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。
+CveId|String|CVE 安全机制中常见漏洞和曝光下分配给 (的唯一) 标识符。
 CvssScore|String|CVE 的 CVSS 分数。
 DeviceId|String|服务中设备的唯一标识符。
 DeviceName|String|设备的完全限定 (FQDN) FQDN。
 DiskPaths|数组 \[ 字符串\]|表明产品已安装在设备的磁盘证据。
-ExploitabilityLevel|String| (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) 
+ExploitabilityLevel|String|此漏洞的利用级别 (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) 
 FirstSeenTimestamp|String|首次在设备上看到此产品的 CVE 时。
 Id|String|记录的唯一标识符。
 LastSeenTimestamp|String|上次在设备上看到 CVE 的时间。
-OSPlatform|String|在设备上运行的操作系统的平台;同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
+OSPlatform|String|在设备上运行的操作系统的平台;同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 11。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
 RbacGroupName|String|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。
 rbacGroupId|String|基于角色的访问控制 (RBAC) 组 ID。
 RecommendationReference|String|对此软件相关建议 ID 的引用。
 RecommendedSecurityUpdate|String|软件供应商提供的用于解决漏洞的安全更新的名称或说明。
-RecommendedSecurityUpdateId|String|适用安全更新的标识符或相应指南或知识库的标识符 (KB) 文章。
+RecommendedSecurityUpdateId|String|相应指南或知识库的适用安全更新或标识符的标识符 (KB) 文章。
 注册表路径 数组 \[ 字符串\]|注册表证据，表明产品已安装在设备中。
 SoftwareName|String|软件产品的名称。
 SoftwareVendor|String|软件供应商的名称。
@@ -183,21 +182,21 @@ GeneratedTime|String|导出的生成时间。
 
 属性 (ID) |数据类型|说明
 :---|:---|:---
-CveId |String|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。
+CveId |String|CVE 安全机制中常见漏洞和曝光下分配给 (的唯一) 标识符。
 CvssScore|String|CVE 的 CVSS 分数。
 DeviceId|String|服务中设备的唯一标识符。
 DeviceName|String|设备的完全限定 (FQDN) FQDN。
 DiskPaths|Array[string]|表明产品已安装在设备的磁盘证据。
 EventTimestamp|String|找到 delta 事件的时间。
-ExploitabilityLevel|String|NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit (漏洞的可攻击性) 
+ExploitabilityLevel|String|NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit)  (
 FirstSeenTimestamp|String|首次在设备上看到产品的 CVE 时。
 Id|String|记录的唯一标识符。  
 LastSeenTimestamp|String|上次在设备上看到 CVE 的时间。
-OSPlatform|String|在设备上运行的操作系统的平台;同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
+OSPlatform|String|在设备上运行的操作系统的平台;同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 11。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
 RbacGroupName|String|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。
 RecommendationReference|String|对此软件相关建议 ID 的引用。
 RecommendedSecurityUpdate |String|软件供应商提供的用于解决漏洞的安全更新的名称或说明。
-RecommendedSecurityUpdateId |String|适用安全更新的标识符或相应指南或知识库的标识符 (KB) 文章
+RecommendedSecurityUpdateId |String|适用安全更新的标识符或相应指南或知识库 (KB) 标识符
 RegistryPaths |Array[string]|注册表证据，表明产品已安装在设备中。
 SoftwareName|String|软件产品的名称。
 SoftwareVendor|String|软件供应商的名称。

@@ -2,7 +2,6 @@
 title: 获取警报 API
 description: 了解 Microsoft Defender for Endpoint 中警报资源类型的方法和属性。
 keywords: api， 图形 api， 受支持的 api， 获取， 警报， 最近
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9171fe01cfe03769cac29110352cf4d0d9fe0061
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3344bb13d785739f7957c3b0d000b04ae7fea95b
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168818"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284381"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 
@@ -80,7 +79,7 @@ ms.locfileid: "61168818"
 |mitreTechniques|String|Mitre Enterprise技术 ID。|
 |relatedUser|String|与特定警报相关的用户的详细信息。|
 |severity|枚举|警报的严重性。 可能的值包括："UnSpecified"、"Informational"、"Low"、"Medium"和"High"。|
-|status|枚举|指定警报的当前状态。 可能的值包括："Unknown"、"New"、"InProgress"和"Resolved"。|
+|状态|枚举|指定警报的当前状态。 可能的值包括："Unknown"、"New"、"InProgress"和"Resolved"。|
 |classification|Nullable Enum|警报的规范。 可能的值是："Unknown"、"FalsePositive"、"TruePositive"。|
 |确定|Nullable Enum|指定警报的确定。 可能的值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"。|
 |“类别”|String|警报的类别。|
@@ -89,7 +88,7 @@ ms.locfileid: "61168818"
 |threatName|String|威胁名称。|
 |machineId|String|与 [警报关联的](machine.md) 计算机实体的 ID。|
 |computerDnsName|String|[计算机](machine.md) 完全限定的名称。|
-|aadTenantId|String|用户Azure Active Directory ID。|
+|aadTenantId|String|Azure Active Directory ID。|
 |一个|String|触发警报的检测器的 ID。|
 |comments|警报注释列表|Alert Comment 对象包含：注释字符串、createdBy 字符串和 createTime 日期时间。|
 |证据|警报证据列表|与警报相关的证据。 请参阅下面的示例。|

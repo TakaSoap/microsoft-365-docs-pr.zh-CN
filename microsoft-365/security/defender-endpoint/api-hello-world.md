@@ -3,7 +3,6 @@ title: 适用于终结点 API 的 Microsoft Defender Hello World
 ms.reviewer: ''
 description: 创建对 Microsoft Defender for Endpoint API 的"Hello world"样式 API 调用做法。
 keywords: api， 受支持的 api， 高级搜寻， 查询， microsoft defender atp， microsoft defender for endpoint
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 81e96d8846d507a7b763d79f419695b835ea6cbc
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 55d01dfe6d0b6fd69bf32016b1b5dd585827e168
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167594"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282989"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender for Endpoint API - Hello World
 
@@ -52,15 +51,15 @@ ms.locfileid: "61167594"
 
 ### <a name="do-i-need-a-permission-to-connect"></a>是否需要连接权限？
 
-对于应用程序注册阶段，你必须在租户 **中** 拥有全局Azure Active Directory (Azure AD) 角色。
+对于应用程序注册阶段，你必须 **在租户中** 拥有全局Azure Active Directory (Azure AD) 角色。
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>步骤 1 - 在 Azure Active Directory
 
 1. 使用全局管理员 **用户登录到** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory** \> **应用注册** \> **新注册 。**
+2. 导航到 **Azure Active Directory** \> **应用注册** \> **新注册**。
 
-   ![应用程序注册Microsoft Azure导航的图像。](images/atp-azure-new-app2.png)
+   :::image type="content" alt-text="应用程序注册Microsoft Azure导航的图像。" source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
 
 3. 在注册表单中，为应用程序选择一个名称，然后单击"注册 **"。**
 
@@ -68,39 +67,43 @@ ms.locfileid: "61167594"
 
    - 在应用程序页面上，单击 **"API** 权限""添加我的组织使用的权限 \>  \> API"> **WindowsDefenderATP"，** 然后单击 **"WindowsDefenderATP"。**
 
-   - **注意**：WindowsDefenderATP 不会显示在原始列表中。 你需要开始在文本框中写入其名称，以查看其显示。
+     > [!NOTE]
+     > WindowsDefenderATP 不会显示在原始列表中。 你需要开始在文本框中写入其名称，以查看其显示。
 
-   ![API 访问和 API 选择 1 的图像。](images/add-permission.png)
+     :::image type="content" alt-text="API 访问和 API 选择 1 的图像。" source="images/add-permission.png" lightbox="images/add-permission.png":::
 
-   - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**
+   - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**.
 
-   ![API 访问和 API 选择 2 的图像。](images/application-permissions.png)
+     :::image type="content" alt-text="API 访问和 API 选择 2 的图像。" source="images/application-permissions.png" lightbox="images/application-permissions.png":::
 
-   **重要说明**：需要选择相关权限。 "读取所有警报"只是一个示例！
+     > [!IMPORTANT]
+     > 您需要选择相关权限。 "读取所有警报"只是一个示例！
 
-     例如，
+     例如：
 
-     - 若要 [运行高级查询，请选择](run-advanced-query-api.md)"运行高级查询"权限
-     - 若要 [隔离计算机，](isolate-machine.md)请选择"隔离计算机"权限
+     - 若要 [运行高级查询，请选择](run-advanced-query-api.md)"运行高级查询"权限。
+     - 若要 [隔离计算机，请选择](isolate-machine.md)"隔离计算机"权限。
      - 若要确定所需的权限，请查看你感兴趣的 API中的权限部分。
 
-5. 单击 **"授予同意"**
+5. 单击 **"授予同意"。**
 
-   - **注意**：每次添加权限时，都必须单击"授予 **许可** ，让新权限生效"。
+   > [!NOTE]
+   > 每次添加权限时，必须单击"授予 **许可** ，使新权限生效"。
 
    ![授予权限的图像。](images/grant-consent.png)
 
 6. 向应用程序添加密码。
 
-   - 单击 **"&密码"，** 将说明添加到密码，然后单击"添加 **"。**
+    单击 **证书&** 密码，将说明添加到密码， **然后单击添加**。
 
-    **重要** 提示：单击"添加" **后，复制生成的机密值**。 离开后将无法检索！
+    > [!IMPORTANT]
+    > 单击"添加" **后，复制生成的机密值**。 离开后将无法检索！
 
     ![创建应用密钥的图像。](images/webapp-create-key2.png)
 
-7. 记下应用程序 ID 和租户 ID：
+7. 记下应用程序 ID 和租户 ID。
 
-   - 在应用程序页上，转到" **概述"** 并复制以下内容：
+   在应用程序页上，转到" **概述"** 并复制以下内容：
 
    ![已创建应用 ID 的图像。](images/app-and-tenant-ids.png)
 
@@ -108,8 +111,8 @@ ms.locfileid: "61167594"
 
 ### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>步骤 2 - 使用应用获取令牌，并使用此令牌访问 API。
 
-- 将下面的脚本复制到 PowerShell ISE 或文本编辑器，并将其另存为 **"Get-Token.ps1"**
-- 运行此脚本将生成一个令牌，并将其保存在名称"Latest-token.txt"**下的工作** 文件夹中。
+- 将下面的脚本复制到 PowerShell ISE 或文本编辑器，并将其另存为 **Get-Token.ps1。**
+- 运行此脚本将生成令牌，并将其保存在工作文件夹中的名称为 **Latest-token.txt。**
 
    ```powershell
    # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -135,12 +138,12 @@ ms.locfileid: "61167594"
 
 - 有效性检查：
   - 运行脚本。
-  - 在浏览器中转到： <https://jwt.ms/>
+  - 在浏览器中转到 <https://jwt.ms/> ：。
   - 复制令牌 (文件Latest-token.txt的内容) 。
   - 粘贴到顶部框中。
-  - 查找"角色"部分。 查找 Alert.Read.All 角色。
+  - 查找"角色"部分。 查找 _Alert.Read.All_ 角色。
 
-  ![图像 jwt.ms。](images/api-jwt-ms.png)
+  :::image type="content" alt-text="图像 jwt.ms。" source="images/api-jwt-ms.png" lightbox="images/api-jwt-ms.png":::
 
 ### <a name="lets-get-the-alerts"></a>让我们获取警报！
 

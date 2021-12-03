@@ -2,7 +2,6 @@
 title: 获取与警报相关的文件信息
 description: 使用 Microsoft Defender for Endpoint 检索与特定警报相关的所有文件。
 keywords: api， 图形 api， 受支持的 api， 获取警报信息， 警报信息， 相关文件
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 09f86688ed5d8f3cc5700687a48ccc1427758c53
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 609329739849c87dc45dfb5a0767bd2b4b850485
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61169010"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283901"
 ---
 # <a name="get-alert-related-files-information-api"></a>获取警报相关的文件信息 API
 
@@ -53,14 +52,14 @@ ms.locfileid: "61169010"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|File.Read.All|"读取文件配置文件"
+应用程序|File.Read.All|"读取文件配置文件"
 委派（工作或学校帐户）|File.Read.All|"读取文件配置文件"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
+> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 

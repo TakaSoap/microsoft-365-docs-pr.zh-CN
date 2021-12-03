@@ -2,7 +2,6 @@
 title: 导出每个设备的安全配置评估
 description: 返回 DeviceId、ConfigurationId 每个唯一组合的条目。
 keywords: api， api， 导出评估， 按设备评估， 漏洞评估报告， 设备漏洞评估， 设备漏洞报告， 安全配置评估， 安全配置报告， 软件漏洞评估， 软件漏洞报告， 计算机漏洞报告，
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 01e2e312af0158aa2d55ae9d8589712eef618f51
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 04e2ac7a29dddb9fe02e558e6ba545c51048bd51
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150064"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284237"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>导出每个设备的安全配置评估
 
@@ -29,7 +28,7 @@ ms.locfileid: "60150064"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -40,7 +39,7 @@ ms.locfileid: "60150064"
 
 - [导出安全配置评估 **JSON 响应**](#1-export-secure-configuration-assessment-json-response)：API 将提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-- [通过文件 **导出安全配置评估**](#2-export-secure-configuration-assessment-via-files)：此 API 解决方案允许更快、更可靠地拉取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，可以从以下Azure 存储下载所有数据：
+- [通过文件 **导出安全配置评估**](#2-export-secure-configuration-assessment-via-files)：此 API 解决方案允许更快、更可靠地拉取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，你可以从 Azure 存储下载数据，如下所示：
 
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
 
@@ -49,7 +48,7 @@ ms.locfileid: "60150064"
 使用 _JSON_ 响应 (通过文件收集的数据) 当前状态的当前快照，并且不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
 
 > [!NOTE]
-> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出和 **** 按设备 (也称为按 **_设备) 。_**
+> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出，**** 按设备 (也称为按 **_设备) 。_**
 
 ## <a name="1-export-secure-configuration-assessment-json-response"></a>1. 导出安全配置评估 (JSON 响应) 
 
@@ -69,7 +68,7 @@ ms.locfileid: "60150064"
 
 权限类型|权限|权限显示名称
 ---|---|---
-Application|Vulnerability.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
+应用程序|Vulnerability.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
 委派（工作或学校帐户）|Vulnerability.Read|\'阅读威胁和漏洞管理漏洞信息\'
 
 ### <a name="13-url"></a>1.3 URL
@@ -103,10 +102,10 @@ ConfigurationName|string|配置的显示名称|将设备载入到 Microsoft Defe
 ConfigurationSubcategory|string|配置所属的子类别或子组。 在许多情况下，它用于描述特定的功能。|载入设备
 DeviceId|string|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|string|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com
-IsApplicable|布尔值|指示配置或策略是否适用|true
+IsApplicable|布尔值|指示配置或策略是否适用|True
 IsCompliant|布尔值|指示是否正确配置了配置或策略|false
-IsExpectedUserImpact|布尔值|指示是否将应用配置时影响用户|true
-OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
+IsExpectedUserImpact|布尔值|指示是否将应用配置时影响用户|True
+OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如Windows 10和Windows 11。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10 和 Windows 11
 RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
 RecommendationReference|string|对此软件相关建议 ID 的引用。|sca-_-scid-20000
 Timestamp|string|上次在设备上看到配置的时间|2020-11-03 10:13:34.8476880
@@ -130,7 +129,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00013ee62c6b12345b10214e1801b217b50ab455c293d",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_5d96860d69c73fdd06fc8d1679e1eb73eceb8330",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "NT kernel 6.x",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-10000",
@@ -147,7 +146,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "0002a1be533813b9a8c6de739785365bce7910",
             "rbacGroupName": "hhh",
             "deviceName": null,
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-20000",
@@ -164,7 +163,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "0002a1de123456a8c06de736785395d4ce7610",
             "rbacGroupName": "hhh",
             "deviceName": null,
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-10000",
@@ -181,7 +180,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00044f912345bdaf756492dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663d45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e76bdfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-39",
@@ -198,7 +197,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00044f912345daf759462bde6bd733d6a9c56ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45612eeb224d2de2f5ea3142726e63f16a.DomainPII_21eed80d086e76dbfa178eadfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-6093",
@@ -232,7 +231,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 权限类型|权限|权限显示名称
 ---|---|---
-Application|Vulnerability.Read.All|\'读取"危险和漏洞管理"漏洞信息\'
+应用程序|Vulnerability.Read.All|\'读取"危险和漏洞管理"漏洞信息\'
 委派（工作或学校帐户）|Vulnerability.Read|\'读取"危险和漏洞管理"漏洞信息\'
 
 ### <a name="23-url"></a>2.3 URL
@@ -243,13 +242,13 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 
 ### <a name="parameters"></a>参数
 
-- sasValidHours：下载 URL 在最长 24 小时 (有效的小时数) 。
+- sasValidHours：下载 URL 有效期为 24 小时 (24 小时) 。
 
 ### <a name="25-properties"></a>2.5 属性
 
 > [!NOTE]
 >
-> - 文件是 gzip 压缩& Json 格式。
+> - 文件是 gzip 压缩文件& Json 格式。
 > - 下载 URL 的有效期仅为 3 小时;否则，可以使用 参数。
 > - 为了最大限度提高数据的下载速度，你可以确保从数据所在的同一 Azure 区域进行下载。
 

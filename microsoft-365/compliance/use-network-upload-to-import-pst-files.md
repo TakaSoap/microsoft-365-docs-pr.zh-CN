@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 面向管理员：了解如何使用网络上传将多个 PST 文件批量导入 Microsoft 365 中的用户邮箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3d6465d1428ec66f1d80cc1b821fa816b794040a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b72b408ef08c125f016a356a2ceda21e86cf8cfd
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200265"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283565"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用网络上传将组织的 PST 文件导入到 Microsoft 365
 
@@ -326,7 +326,7 @@ Azure 存储资源管理器独立应用程序通常是可用的。 可以使用�
 
   - 在[审核日志](search-the-audit-log-in-security-and-compliance.md)中搜索影响你导入的数据的邮箱相关事件。
 
-  - 将数据导入到[非活动邮箱](create-and-manage-inactive-mailboxes.md)，以出于合规目的对数据进行存档。 
+  - 将数据导入到[非活动邮箱](inactive-mailboxes-in-office-365.md)，以出于合规目的对数据进行存档。 
 
   - 使用[数据丢失防护策略](dlp-learn-about-dlp.md)来防止敏感数据被泄露到组织外部。
   

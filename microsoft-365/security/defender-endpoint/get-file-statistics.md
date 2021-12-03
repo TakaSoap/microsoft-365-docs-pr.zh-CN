@@ -2,7 +2,6 @@
 title: 获取文件统计信息 API
 description: 了解如何使用获取文件统计信息 API 检索 Microsoft Defender for Endpoint 中给定文件的统计信息。
 keywords: api， 图形 api， 受支持的 api， 获取， 文件， 统计信息
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c30422d7fe24fc50f378c65212357f954d05c601
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 83901799d6dc5e8f6aa81ad57580e64167bfa134
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168626"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284201"
 ---
 # <a name="get-file-statistics-api"></a>获取文件统计信息 API
 
@@ -53,7 +52,7 @@ ms.locfileid: "61168626"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|File.Read.All|"读取文件配置文件"
+应用程序|File.Read.All|"读取文件配置文件"
 委派（工作或学校帐户）|File.Read.All|"读取文件配置文件"
 
 > [!NOTE]
@@ -75,9 +74,9 @@ Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-uri-parameters"></a>请求 URI 参数
 
-名称|类型|Description
+名称|类型|说明
 :---|:---|:---
-lookBackHours|Int32|定义我们重新搜索以获取统计信息的小时数。 默认为 30 天。 **可选。**
+lookBackHours|Int32|定义我们重新搜索以获取统计信息的小时数。 默认为 30 天。 **可选**。
 
 ## <a name="request-body"></a>请求正文
 

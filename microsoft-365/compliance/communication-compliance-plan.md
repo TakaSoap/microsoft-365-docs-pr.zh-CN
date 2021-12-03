@@ -18,23 +18,23 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e5bb82d82d0b96334e716c4c0efd5cb700942f4e
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 1e584a252f93acfa6429c4f67c89c814c27ce4c8
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792300"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283001"
 ---
 # <a name="plan-for-communication-compliance"></a>通信合规性规划
 
 在开始使用 [组织中通信](communication-compliance.md) 合规性之前，信息技术和合规性管理团队应查看重要的规划活动和注意事项。 全面了解和规划以下方面的部署有助于确保实现和使用通信合规性功能顺利进行，并且符合解决方案的最佳实践。
 
-## <a name="transitioning-from-supervision-in-office-365"></a>在管理中从监督Office 365
+## <a name="transitioning-from-supervision-in-office-365"></a>从监督转换Office 365
 
-对于在组织中使用Office 365策略的组织，您应立即计划转换为 Microsoft 365 通信合规性策略，并需要了解以下要点：
+对于在组织中使用监督策略Office 365，您应立即计划转换到组织中通信合规性策略Microsoft 365并需要了解以下要点：
 
 - Office 365中的监督解决方案已被 Microsoft 365 中的通信合规性解决方案完全Microsoft 365。 我们建议在通信合规性中创建新策略，这些策略的设置与现有监督策略相同，以使用新的调查和修正改进。
-- 在策略匹配中Office 365保存在监督中的邮件不能移动或共享到Microsoft 365。
+- 在策略匹配中Office 365保存在监督中的邮件不能移动或共享到 Microsoft 365。
 - 对于在转换过程中并行使用这两个解决方案的组织，每个解决方案中使用的策略必须具有唯一的策略名称。 在过渡期间，可以在两种策略之间共享组和自定义关键字词典。
 
 有关停用信息，Office 365，请参阅Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)了解详细信息。
@@ -54,16 +54,33 @@ ms.locfileid: "60792300"
 
 ### <a name="permissions"></a>权限
 
-选择专门的利益干系人，以定期监视和查看警报和事例[，Microsoft 365 合规中心。](https://compliance.microsoft.com/) 请务必了解如何将用户和利益干系人分配到组织中不同的通信合规性角色组。
-
-共有 5 个角色组，用于配置权限以管理通信合规性功能。 若要在 Microsoft 365 合规中心中将 **通信合规性** 作为菜单选项提供并继续执行这些配置步骤，必须将你分配给 *通信符合性* 或 *通信符合性管理员* 角色组。 若要在初始配置后访问和管理通信合规性功能，用户必须是至少一个通信合规性角色组的成员。
+选择专门的利益干系人，以定期监视和查看警报和案件[Microsoft 365 合规中心。](https://compliance.microsoft.com/) 确保您了解如何将用户和利益干系人分配给组织中不同的通信合规性角色组。
 
 > [!IMPORTANT]
-> 默认状态下，全局管理员没有对通信合规性功能的访问权限。 在可以访问任何通信合规性功能之前，必须在此步骤中分配角色。
+> 配置角色组之后，可能需要长达 30 分钟时间将角色组权限应用到整个组织的已分配用户。
 
-根据希望管理通信策略和警报的方式，你需要将用户分配到特定的角色组。 可以选择将具有不同的合规性职责的用户分配给特定角色组，以管理通信合规性功能的不同区域。 或者可以决定将指定管理员、分析者、调查者和查看者的所有用户账户分配到 *通信合规性* 角色组。 使用单个角色组或多个角色组，以充分符合你的合规性管理要求。
+有六个角色组用于配置管理通信合规性功能的初始权限。 若要使 **通信** 合规性作为菜单中的菜单选项Microsoft 365 合规中心并继续这些配置步骤，必须分配给以下角色或角色组之一：
 
-配置通信合规性时，请从这些角色组中进行选择：
+- Azure Active Directory [*全局管理员*](/azure/active-directory/roles/permissions-reference#global-administrator)角色
+- Azure Active Directory [*合规性管理员*](/azure/active-directory/roles/permissions-reference#compliance-administrator)角色
+- Microsoft 365 合规中心 [*组织管理角色*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)组
+- Microsoft 365 合规中心 [*合规性管理员*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)角色组
+- *通信合规性* 角色组
+- *通信合规性管理员* 角色组
+
+以下角色的成员具有 Communication *Compliance Admin* 角色组中包含的相同解决方案权限：
+
+- Azure Active Directory *全局管理员*
+- Azure Active Directory *合规性管理员*
+- Microsoft 365 合规中心 *组织管理*
+- Microsoft 365 合规中心 *合规性管理员*
+
+> [!IMPORTANT]
+> 确保"通信合规性"或"通信合规性管理员"角色组 (中始终至少有一个用户，具体取决于选择") "，这样，如果特定用户离开组织，通信合规性配置不会进入"零管理员"方案。
+
+根据希望管理通信合规性策略和警报的方式，需要将用户分配给特定角色组来管理不同的通信合规性功能集。 可以选择将具有不同合规性职责的用户分配给特定的角色组，以管理不同区域的通信合规性功能。 或者可以决定将指定管理员、分析者、调查者和查看者的所有用户账户分配到 *通信合规性* 角色组。 使用单个角色组或多个角色组，以充分符合你的合规性管理要求。
+
+配置和管理通信合规性时，请从以下解决方案角色组选项中进行选择：
 
 |**角色**|**角色权限**|
 |:-----|:-----|
@@ -78,11 +95,11 @@ ms.locfileid: "60792300"
 在开始使用通信合规性之前，必须确定需要审查谁的通信。 在策略中，用户的电子邮件地址可以标记需要接受监管的人员或组。 这些组的一些示例Microsoft 365组、Exchange通讯组列表、Yammer社区以及Microsoft Teams频道。 你也可以设置特定的排除组或排除组列表，将特定的用户或组排除在审查范围外。 有关通信合规性策略中支持的组类型详细信息，请参阅 [通信合规性入门](communication-compliance-configure.md#step-3-optional-set-up-groups-for-communication-compliance)。
 
 > [!IMPORTANT]
-> 通信合规性策略涵盖的用户必须具有 Microsoft 365 E5 合规 许可证、Office 365 企业版 高级合规性加载项的 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。 如果你没有现有的 E5 Enterprise，并且想要尝试通信合规性，可以注册[E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)Office 365 企业版试用版。
+> 通信合规性策略涵盖的用户必须具有 Microsoft 365 E5 合规 许可证、Office 365 企业版高级合规性加载项的 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。 如果你没有现有的 E5 Enterprise，并且想要尝试通信合规性，可以注册[E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)Office 365 企业版试用版。
 
 ### <a name="reviewers"></a>审阅者
 
-创建通信合规性策略时，必须确定审阅受监督用户消息的用户。 在策略中，用户的电子邮件地址可以标记负责审查通信的人员或组。 所有审阅者都必须将邮箱托管在 Exchange Online且必须分配给 *Communication Compliance Analysis* 或 Communication Compliance *Investigation* 角色。 分析 (或研究人员的审阅) 还必须分配 *通信合规性案例管理* 角色。 审阅者添加到策略时，他们会自动收到一封电子邮件，通知他们分配到此策略，并提供有关审阅过程的信息的链接。
+创建通信合规性策略时，必须确定审阅受监督用户消息的用户。 在策略中，用户的电子邮件地址可以标记负责审查通信的人员或组。 所有审阅者都必须将邮箱托管在Exchange Online且必须分配到 *通信* 合规性分析或 *通信合规性调查* 角色。 分析 (或调查人员) 还必须分配 *通信合规性案例管理* 角色。 审阅者添加到策略时，他们会自动收到一封电子邮件，通知他们分配到此策略，并提供有关审阅过程的信息的链接。
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>受监督用户和审阅者的组
 
@@ -94,7 +111,7 @@ ms.locfileid: "60792300"
 
 | **策略成员** | **支持的组** | **不支持的组** |
 |:-----|:-----|:-----|
-|受监督用户 <br> 已排除用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 <br> Microsoft 365动态成员身份的组 |
+|受监督用户 <br> 已排除用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 <br> Microsoft 365成员资格的组 |
 | 审阅者 | 无 | 通讯组 <br> 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 |
 
 ### <a name="privacy"></a>隐私
@@ -129,4 +146,4 @@ ms.locfileid: "60792300"
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 
-若要为 Microsoft 365 组织配置通信合规性，请参阅为[Microsoft 365](communication-compliance-configure.md)配置通信合规性或查看[Contoso](communication-compliance-case-study.md)的案例研究，以及他们如何快速配置通信合规性策略以监视 Microsoft Teams、Exchange Online 和 Yammer 通信中不适当的内容。
+若要为 Microsoft 365 组织配置通信合规性，请参阅为[Microsoft 365](communication-compliance-configure.md)配置通信合规性或查看[Contoso](communication-compliance-case-study.md)的案例研究，以及他们如何快速配置通信合规性策略来监视 Microsoft Teams 中的内容，Exchange Online，Yammer通信。

@@ -2,7 +2,6 @@
 title: 获取 IP 相关警报 API
 description: 使用 Microsoft Defender for Endpoint 检索与给定 IP 地址相关的警报集合
 keywords: api， 图形 api， 受支持的 api， 获取， ip， 相关， 警报
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a14dab02a24856a925dff4fa80f12c67167626a3
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b46e67a6fe2d30a4b6480b88ea3a40f842227669
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166910"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283781"
 ---
 # <a name="get-ip-related-alerts-api"></a>获取 IP 相关警报 API
 
@@ -52,8 +51,8 @@ ms.locfileid: "61166910"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Alert.Read.All|"读取所有警报"
-Application|Alert.ReadWrite.All|"读取和写入所有警报"
+应用程序|Alert.Read.All|"读取所有警报"
+应用程序|Alert.ReadWrite.All|"读取和写入所有警报"
 委派（工作或学校帐户） | Alert.Read | "读取警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 

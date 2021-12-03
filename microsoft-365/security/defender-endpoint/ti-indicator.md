@@ -2,7 +2,6 @@
 title: 指示器资源类型
 description: 使用 Microsoft Defender for Endpoint 指定实体详细信息并定义指示器的过期时间。
 keywords: api， 受支持的 api， 获取， TiIndicator， 指示器， 最近
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d31bce9aa3cc6c64771e0931c22849aa1d92eec
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8e8660574f65d614bacfe705d7fad19e39d501a6
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110075"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282796"
 ---
 # <a name="indicator-resource-type"></a>指示器资源类型
 
@@ -29,7 +28,8 @@ ms.locfileid: "61110075"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -40,7 +40,7 @@ ms.locfileid: "61110075"
 
 - 请参阅门户 [中的相应](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) "指示器"页。
 
-方法|返回类型|Description
+方法|返回类型|说明
 :---|:---|:---
 [列出指示器](get-ti-indicators-collection.md)|[指示器](ti-indicator.md) 集合|列表 [指示器](ti-indicator.md) 实体。
 [提交指示器](post-ti-indicator.md)|[指示器](ti-indicator.md)|提交或更新 [指示器](ti-indicator.md) 实体。
@@ -76,7 +76,7 @@ generateAlert|枚举|**如果** 警报生成是必需的，则其为 **True;** �
 
 API 支持的指示器操作类型为：
 
-- Allowed
+- 允许
 - Audit
 - 阻止
 - BlockAndRemediate
@@ -86,7 +86,7 @@ API 支持的指示器操作类型为：
 
 > [!Note]
 >
-> AlertAndBlock (和 Alert) 2022 年 1 月前受支持。 在此日期之后，所有客户都必须使用上面列出的操作类型之一。
+> 在 2022 年 1 (AlertAndBlock 和 Alert) 响应操作将受支持。 在此日期之后，所有客户都必须使用上面列出的操作类型之一。
 
 ## <a name="json-representation"></a>Json 表示形式
 

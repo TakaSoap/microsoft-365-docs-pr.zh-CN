@@ -3,7 +3,6 @@ title: 访问 Microsoft Defender for Endpoint API
 ms.reviewer: ''
 description: 了解如何使用 API 根据 Microsoft Defender for Endpoint 功能自动执行工作流创新
 keywords: api， api， wdatp， open api， microsoft defender for endpoint api， microsoft defender atp， 公共 api， 受支持的 api， 警报， 设备， 用户， 域， ip， 文件， 高级搜寻， 查询
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0f9b568bf5cd63e310a4c122b8bfb49a5305b463
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a73df39c6d26bdfd44a7f4f629e148e7f0afabb2
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166982"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283217"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>访问 Microsoft Defender for Endpoint API
 

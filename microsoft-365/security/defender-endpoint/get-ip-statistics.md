@@ -2,7 +2,6 @@
 title: 获取 IP 统计信息 API
 description: 使用 Microsoft Defender for Endpoint 获取 IP 的最新统计信息。
 keywords: api， 图形 api， 受支持的 api， 获取， ip， 统计信息， 普遍程度
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 48b0f40f6d995e2a197c6220b71192d5179eb5ba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a98b78e85956d49c3b7d7e389882e017dcede3a4
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204055"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283244"
 ---
 # <a name="get-ip-statistics-api"></a>获取 IP 统计信息 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -50,7 +50,7 @@ ms.locfileid: "60204055"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Ip.Read.All|"读取 IP 地址配置文件"
+应用程序|Ip.Read.All|"读取 IP 地址配置文件"
 委派（工作或学校帐户）|Ip.Read.All|"读取 IP 地址配置文件"
 
 > [!NOTE]

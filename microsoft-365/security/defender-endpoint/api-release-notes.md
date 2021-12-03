@@ -2,7 +2,6 @@
 title: Microsoft Defender for Endpoint API 发行说明
 description: 对 Microsoft Defender for Endpoint API 集进行更新的发行说明。
 keywords: Microsoft Defender for Endpoint API 发行说明， mde， API， 适用于终结点的 Microsoft Defender API， 更新， 注释， 发布
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8b63723d005d2881a2c01e735a6be003f1b04ca5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 2c34add5968021d6a31bffc80ec16e0ebed9baf0
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166994"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283649"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Microsoft Defender for Endpoint API 发行说明
 
@@ -44,7 +43,7 @@ ms.locfileid: "61166994"
 
 ### <a name="06102021"></a>06.10.2021
 
-- 添加了新的导出评估 API 方法 - _Delta Export software vulnerabilities assessment (JSON response)_ Export assessment methods and properties per [device](get-assessment-methods-properties.md)。
+- 新增了导出评估 API 方法 - _Delta Export software vulnerabilities assessment (JSON response)_ Export assessment methods and properties per [device](get-assessment-methods-properties.md)。
 
 ### <a name="05252021"></a>05.25.2021
 

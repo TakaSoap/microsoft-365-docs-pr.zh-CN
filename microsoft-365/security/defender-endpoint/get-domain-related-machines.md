@@ -1,8 +1,7 @@
 ---
 title: 获取域相关的计算机 API
-description: 了解如何使用获取域相关的计算机 API 获取与 Microsoft Defender for Endpoint 中的域通信的计算机或从中进行通信的计算机。
+description: 了解如何使用获取与域相关的计算机 API 获取与 Microsoft Defender for Endpoint 中的域通信的计算机或与域通信的计算机。
 keywords: api， 图形 api， 受支持的 api， 获取， 域， 相关， 设备
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,26 +15,27 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: df82c3c36ba4abf128eb11166e946f98d90e670d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a9f1a00173228cf973ed0149d88c81b3d3f2c6fa
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191859"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283061"
 ---
 # <a name="get-domain-related-machines-api"></a>获取域相关的计算机 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API 说明
 
@@ -52,16 +52,16 @@ ms.locfileid: "60191859"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Machine.Read.All|"读取所有计算机配置文件"
-Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+应用程序|Machine.Read.All|"读取所有计算机配置文件"
+应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.Read|"读取计算机信息"
 委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 响应将仅包括用户可以访问的设备，基于设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理角色) [](user-roles.md)
+> - 响应将仅包括用户可以访问的设备，基于设备组设置 (有关详细信息，请参阅创建和管理 [设备](machine-groups.md) 组) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -73,7 +73,7 @@ GET /api/domains/{domain}/machines
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 
@@ -81,7 +81,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功且域存在 - 200 正常，包含 [计算机实体](machine.md) 列表。 如果域不存在 - 200 正常，但设置为空。
+如果成功且域存在 - 200 正常，包含 [计算机实体](machine.md) 列表。 如果域不存在 - 200 正常，但具有空集。
 
 ## <a name="example"></a>示例
 

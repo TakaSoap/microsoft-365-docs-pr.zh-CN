@@ -2,7 +2,6 @@
 title: 导入指示器 API
 description: 了解如何使用 Microsoft Defender for Endpoint 中的导入批量指示器 API。
 keywords: api， 受支持的 api， 提交， ti， 指示器， 更新
-search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 60d587637f282b36c9d13280fc3f488ad86a80b5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 7306489e537e583055e037ce9d8ce04add248844
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167102"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283697"
 ---
 # <a name="import-indicators-api"></a>导入指示器 API
 
@@ -55,8 +54,8 @@ ms.locfileid: "61167102"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Ti.ReadWrite|"读取和写入指示器"
-Application|Ti.ReadWrite.All|"读取和写入所有指示器"
+应用程序|Ti.ReadWrite|"读取和写入指示器"
+应用程序|Ti.ReadWrite.All|"读取和写入所有指示器"
 委派（工作或学校帐户）|Ti.ReadWrite|"读取和写入指示器"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -76,7 +75,7 @@ Content-Type|string|application/json. 必需。
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|Description
+参数|类型|说明
 :---|:---|:---
 指示器|列表<[指示器](ti-indicator.md)>|指标 [列表](ti-indicator.md)。 **Required**
 

@@ -2,7 +2,6 @@
 title: 导出每个设备的软件清单评估
 description: 返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。
 keywords: api， api， 导出评估， 按设备评估， 漏洞评估报告， 设备漏洞评估， 设备漏洞报告， 安全配置评估， 安全配置报告， 软件漏洞评估， 软件漏洞报告， 计算机漏洞报告，
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f7feb83c867d008e027f21c3247c80ec2a7fc638
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 950892e39d91c1aeaa2179eac56d58bfa2ef9030
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168986"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283448"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>导出每个设备的软件清单评估
 
@@ -39,7 +38,7 @@ ms.locfileid: "61168986"
 
 - [导出软件清单评估 **JSON 响应**](#1-export-software-inventory-assessment-json-response) API 将提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-- [通过文件导出 **软件清单评估**](#2-export-software-inventory-assessment-via-files)  此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，你可以从 Azure 存储下载数据，如下所示：
+- [通过文件导出 **软件清单评估**](#2-export-software-inventory-assessment-via-files)  此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从 Azure 存储下载你的所有数据：
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
   - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
@@ -65,7 +64,7 @@ ms.locfileid: "61168986"
 
 权限类型|权限|权限显示名称
 ---|---|---
-Application|Software.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
+应用程序|Software.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
 委派（工作或学校帐户）|Software.Read|\'阅读威胁和漏洞管理漏洞信息\'
 
 ### <a name="13-url"></a>1.3 URL
@@ -77,7 +76,7 @@ GET /api/machines/SoftwareInventoryByMachine
 ### <a name="14-parameters"></a>1.4 参数
 
 - pageSize (默认值 = 50，000) ：响应中的结果数。
-- $top：要返回的结果 (不返回 @odata.nextLink，因此不会拉取所有) 
+- $top：要返回 (的结果数不会返回 @odata.nextLink，因此不会拉取所有) 
 
 ### <a name="15-properties"></a>1.5 属性
 
@@ -100,7 +99,7 @@ EndOfSupportDate|string|此软件支持已结束或将终止的日期。|2020-12
 EndOfSupportStatus|string|停止提供支持状态。 可以包含以下可能的值：None、EOS Version、Upcoming EOS Version、EOS Software、Upcoming EOS Software。|即将推出的 EOS
 Id|string|记录的唯一标识符。|123ABG55_573AG&mnp！
 NumberOfWeaknesses|int|此设备上此软件上漏洞的数量|3
-OSPlatform|string|在设备上运行的操作系统的平台。 这些是同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
+OSPlatform|string|在设备上运行的操作系统的平台。 这些是同一系列中具有变体的特定操作系统，如 Windows 10 和 Windows 11。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10 和 Windows 11
 RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
 RegistryPaths|Array[string]|注册表证据，表明产品已安装在设备中。|[ "HKEY_LOCAL_MACHINE \\SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
 SoftwareFirstSeenTimestamp|string|首次在设备上看到此软件。|2019-04-07 02:06:47
@@ -127,9 +126,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
-            "softwareName": "windows_10",
+            "softwareName": "windows_10" "Windows_11",
             "softwareVersion": "10.0.17763.1637",
             "numberOfWeaknesses": 58,
             "diskPaths": [],
@@ -142,7 +141,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
             "softwareName": ".net_framework",
             "softwareVersion": "4.0.0.0",
@@ -159,7 +158,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eed80d086e79bdfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
             "softwareName": "system_center_2012_endpoint_protection",
             "softwareVersion": "4.7.214.0",
@@ -176,7 +175,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f68765ddaf71234bde6bd733d6a9c59ad4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178aedfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
             "softwareName": "configuration_manager",
             "softwareVersion": "5.0.8634.1000",
@@ -193,7 +192,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f38765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
             "softwareName": "system_center_2012_endpoint_protection",
             "softwareVersion": "4.10.209.0",
@@ -211,7 +210,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 }
 ```
 
-## <a name="2-export-software-inventory-assessment-via-files"></a>2. 通过文件库导出 (清单) 
+## <a name="2-export-software-inventory-assessment-via-files"></a>2. 通过文件 (导出软件清单) 
 
 ### <a name="21-api-method-description"></a>2.1 API 方法说明
 
@@ -227,7 +226,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 
 权限类型|权限|权限显示名称
 ---|---|---
-Application|Software.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
+应用程序|Software.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
 委派（工作或学校帐户）|Software.Read|\'阅读威胁和漏洞管理漏洞信息\'
 
 ### <a name="23-url"></a>2.3 URL
@@ -238,13 +237,13 @@ GET /api/machines/SoftwareInventoryExport
 
 ### <a name="parameters"></a>参数
 
-- sasValidHours：下载 URL 有效期为 24 小时 (24 小时) 
+- sasValidHours：下载 URL 在最长 24 小时 (的有效小时数) 
 
 ### <a name="25-properties"></a>2.5 属性
 
 > [!NOTE]
 >
-> - 这些文件是 gzip 压缩文件& JSON 格式。
+> - 文件是 gzip 压缩文件& JSON 格式。
 > - 下载 URL 的有效期仅为 3 小时。 否则，可以使用 参数。
 > - 为了最大限度提高数据的下载速度，你可以确保从数据所在的同一 Azure 区域进行下载。
 

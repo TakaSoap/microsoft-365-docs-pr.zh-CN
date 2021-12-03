@@ -2,7 +2,6 @@
 title: 获取与域相关的警报 API
 description: 了解如何使用获取域相关警报 API 检索与 Microsoft Defender for Endpoint 中的给定域地址相关的警报。
 keywords: api， 图形 api， 受支持的 api， 获取， 域， 相关， 警报
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9eb13c65c6df9bcf6a71ab9e59bcf0c3a2db713b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b67b97ac115057b0e17bfd492e6330a13ee9e213
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166934"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284633"
 ---
 # <a name="get-domain-related-alerts-api"></a>获取与域相关的警报 API
 
@@ -53,8 +52,8 @@ ms.locfileid: "61166934"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Alert.Read.All|"读取所有警报"
-Application|Alert.ReadWrite.All|"读取和写入所有警报"
+应用程序|Alert.Read.All|"读取所有警报"
+应用程序|Alert.ReadWrite.All|"读取和写入所有警报"
 委派（工作或学校帐户）|Alert.Read|"读取警报"
 委派（工作或学校帐户）|Alert.ReadWrite|"读取和写入警报"
 
@@ -62,7 +61,7 @@ Application|Alert.ReadWrite.All|"读取和写入所有警报"
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 响应将仅包含与设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
+> - 响应将仅包含与设备关联的警报，根据设备组设置 (请参阅创建和管理设备组了解详细信息) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

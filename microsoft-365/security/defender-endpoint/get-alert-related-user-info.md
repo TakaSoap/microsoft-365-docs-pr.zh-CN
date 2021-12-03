@@ -2,7 +2,6 @@
 title: 获取警报相关用户信息
 description: 了解如何使用获取与警报相关的用户信息 API 检索与 Microsoft Defender for Endpoint 中的特定警报相关的用户。
 keywords: api， 图形 api， 受支持的 api， 获取， 警报， 信息， 相关， 用户
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6276cac409133a119424181d4e358a51fbd3af90
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: bbf417139a1bfb64f528df97d4d8d0ce9cbb2045
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168998"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284477"
 ---
 # <a name="get-alert-related-user-information-api"></a>获取与警报相关的用户信息 API
 
@@ -61,7 +60,7 @@ Application|User.Read.All|"读取用户配置文件"
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
+> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 

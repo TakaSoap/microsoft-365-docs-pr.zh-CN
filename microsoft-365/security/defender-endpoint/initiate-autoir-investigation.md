@@ -2,7 +2,6 @@
 title: 启动调查 API
 description: 使用此 API 在设备上开始调查。
 keywords: api， 图形 api， 受支持的 api， 调查
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d930fdf8546a4fbb7106e6e0449d1446858bd624
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 4a336824a3f7119de8b02f4ccff10dd7956a4f46
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217670"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283949"
 ---
 # <a name="start-investigation-api"></a>启动调查 API
 
@@ -55,9 +54,10 @@ ms.locfileid: "61217670"
 
 - Windows Server 2019
 - Windows Server 2022
-- Windows 10版本 1709 (版本 16299.1085（包含[KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
-- Windows 10版本 1803 (版本 17134.704（包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
+- Windows 10版本 1709 (OS 内部版本 16299.1085（包含[KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
+- Windows 10版本 1803 (OS 内部版本 17134.704，包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本
 - Windows 10版本[1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019)或更高版本
+- Windows 11
 
 ## <a name="permissions"></a>权限
 
@@ -65,7 +65,7 @@ ms.locfileid: "61217670"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Alert.ReadWrite.All|"读取和写入所有警报"
+应用程序|Alert.ReadWrite.All|"读取和写入所有警报"
 委派（工作或学校帐户）|Alert.ReadWrite|"读取和写入警报"
 
 > [!NOTE]

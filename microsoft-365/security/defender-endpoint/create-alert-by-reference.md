@@ -2,7 +2,6 @@
 title: 从事件 API 创建警报
 description: 了解如何使用创建警报 API 在 Microsoft Defender for Endpoint 中的事件顶部创建新的警报。
 keywords: api， 图形 api， 受支持的 api， 获取， 警报， 信息， id
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d513c29dc57dd169eb9a7760cb433d764ad78f6
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: d1d6f141f1453ce92d08045d20ff49753c99dfd7
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218462"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284501"
 ---
 # <a name="create-alert-api"></a>创建警报 API
 
@@ -59,14 +58,14 @@ ms.locfileid: "61218462"
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-Application | Alert.ReadWrite.All | "读取和写入所有警报"
+应用程序 | Alert.ReadWrite.All | "读取和写入所有警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理[角色) ](user-roles.md)
-> - 用户需要具有对与警报关联的设备的访问权限，根据设备组设置 (有关详细信息，请参阅创建和管理 [设备](machine-groups.md) 组) 
+> - 用户至少需要具有以下角色权限："警报调查"权限 (有关详细信息，请参阅创建和管理[角色) ](user-roles.md)
+> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (有关详细信息，请参阅创建和管理设备[组) ](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

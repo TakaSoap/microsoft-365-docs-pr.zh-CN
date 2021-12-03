@@ -1,10 +1,8 @@
 ---
-title: 为云应用集成配置 Microsoft Defender
+title: 配置 Microsoft Defender for Cloud Apps 集成
 ms.reviewer: ''
 description: 了解如何启用设置以启用 Microsoft Defender for Endpoint 与 Microsoft Defender for Cloud Apps 集成。
 keywords: 云， 应用， 安全性， 设置， 集成， 发现， 报告
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 88952a3f2c8173b20b8ee81322a0312144197ad5
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 666a0fd4a6f81db343082dd0c9c6209b6409fd53
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111599"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283673"
 ---
 # <a name="configure-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中为云应用配置 Microsoft Defender
 
@@ -37,8 +35,9 @@ ms.locfileid: "61111599"
 若要从适用于终结点的 Microsoft Defender 云应用发现信号中获益，请打开 Microsoft Defender for Cloud Apps 集成。
 
 > [!NOTE]
-> 此功能将随 E5 许可证一起提供[，企业移动性 + 安全性](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)运行 Windows 10。 版本 1709 (OS 内部版本 16299.1085（带[KB4493441](https://support.microsoft.com/help/4493441)) ，Windows 10，版本 1803 (OS 内部版本 17134.704，具有[KB4493464](https://support.microsoft.com/help/4493464)) ，Windows 10 版本 1809 (OS 内部版本 17763.379[KB4489899](https://support.microsoft.com/help/4489899)) 或更高版本Windows 10版本。
+> 此功能将随 E5 许可证一起提供[，企业移动性 + 安全性](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)运行 Windows 10 Windows 11。
 
+> [!TIP]
 > 有关 [Microsoft Defender for Endpoint](/cloud-app-security/mde-integration) 与 Microsoft Defender for Cloud Apps 的详细集成，请参阅 Microsoft Defender for Endpoint 与 Microsoft Defender for Cloud Apps 集成。
 
 ## <a name="enable-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中启用 Microsoft Defender for Cloud Apps

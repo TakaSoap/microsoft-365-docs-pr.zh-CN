@@ -2,7 +2,6 @@
 title: 提交或更新指示器 API
 description: 了解如何使用提交或更新指示器 API 在 Microsoft Defender for Endpoint 中提交或更新新的指示器实体。
 keywords: api， 图形 api， 受支持的 api， 提交， ti， 指示器， 更新
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 186fd6eb13198d15ba6e99815592ee07d2b9f606
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: 0adf9b74398cafb7bd326dbc9183588feb30ee13
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61145018"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283661"
 ---
 # <a name="submit-or-update-indicator-api"></a>提交或更新指示器 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -78,7 +78,7 @@ Content-Type|string|application/json. 必需。
 
 参数|类型|说明
 :---|:---|:---
-indicatorValue|字符串|Indicator [实体的](ti-indicator.md) 标识。 **Required**
+indicatorValue|String|Indicator [实体的](ti-indicator.md) 标识。 **Required**
 indicatorType|枚举|指示器的类型。 可能的值是："FileSha1"、"FileMd5"、"CertificateThumbprint"、"FileSha256"、"IpAddress"、"DomainName"和"Url"。 **Required**
 action|枚举|如果在组织中发现指示器，将采取的操作。 可能的值包括："Alert"、"Warn"、"Block"、"Audit"、"BlockAndRemediate"、"AlertAndBlock"和"Allowed"。 必需。 在创建包含"Audit"的操作时，必须将"GenerateAlert"参数设置为"TRUE"。
 应用程序|String|与指示器关联的应用程序。 此字段仅适用于新指示器。 它将不会更新现有指示器上的值。 **可选**
@@ -87,7 +87,7 @@ title|String|指示器警报标题。 **Required**
 expirationTime|DateTimeOffset|指示器的过期时间。 **可选**
 severity|枚举|指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。 **可选**
 recommendedActions|String|TI 指示器警报建议操作。 **可选**
-rbacGroupNames|字符串|将应用指示器的 RBAC 组名称的逗号分隔列表。 **可选**
+rbacGroupNames|String|将应用指示器的 RBAC 组名称的逗号分隔列表。 **可选**
 
 ## <a name="response"></a>响应
 

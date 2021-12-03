@@ -2,7 +2,6 @@
 title: 列表指示器 API
 description: 了解如何使用列表指示器 API 检索 Microsoft Defender for Endpoint 中所有活动指示器的集合。
 keywords: api， 公共 api， 受支持的 api， 指示器集合
-search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +15,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f48e3b0f7546936af55b50cf53db650e0af548fc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: adc3cfecba10431a909b72f875442d80b6638f03
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184565"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283733"
 ---
 # <a name="list-indicators-api"></a>列表指示器 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：**
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -57,8 +58,8 @@ OData 的查询在以下项上受支持 `$filter` ：、 `application` `createdB
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Ti.ReadWrite|"读取和写入指示器"
-Application|Ti.ReadWrite.All|"读取和写入所有指示器"
+应用程序|Ti.ReadWrite|"读取和写入指示器"
+应用程序|Ti.ReadWrite.All|"读取和写入所有指示器"
 委派（工作或学校帐户）|Ti.ReadWrite|"读取和写入指示器"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -71,7 +72,7 @@ GET https://api.securitycenter.microsoft.com/api/indicators
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

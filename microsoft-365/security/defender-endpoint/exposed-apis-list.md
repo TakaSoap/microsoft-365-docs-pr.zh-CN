@@ -3,7 +3,6 @@ title: 支持的 Microsoft Defender for Endpoint API
 ms.reviewer: ''
 description: 了解可在其中创建 API 调用的特定受支持的 Microsoft Defender 终结点实体。
 keywords: api， 受支持的 api， 参与者， 警报， 设备， 用户， 域， ip， 文件， 高级查询， 高级搜寻
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 48cd107e5e2040a8b7d9775d97ab1bd53dfe2534
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 94c5698845f556936373ee4548d9aa137f03867b
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167366"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283049"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>支持的 Microsoft Defender for Endpoint API
 
@@ -49,7 +48,7 @@ ms.locfileid: "61167366"
 >
 > 若要使用特定版本，请使用此格式 `https://api.securitycenter.microsoft.com/api/{Version}` ：。 例如：`https://api.securitycenter.microsoft.com/api/v1.0/alerts`
 >
-> 如果你没有指定任何版本 (例如) `https://api.securitycenter.microsoft.com/api/alerts` 你将进入最新版本。
+> 如果不指定任何版本 (例如) `https://api.securitycenter.microsoft.com/api/alerts` 将进入最新版本。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

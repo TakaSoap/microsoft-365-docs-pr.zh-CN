@@ -2,7 +2,6 @@
 title: 获取已安装的软件
 description: 检索与给定设备 ID 相关的已安装软件的集合。
 keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 软件清单， 每个设备安装的软件， 威胁 & 漏洞管理 api， Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f42fdb4c961c1f8d12c46d27a7e05cd956e606f7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a853a346b26d66708f81a1b8479cb7066c29745a
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167114"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282846"
 ---
 # <a name="get-installed-software"></a>获取已安装的软件
 
@@ -47,7 +46,7 @@ ms.locfileid: "61167114"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application |Software.Read.All|"读取威胁和漏洞管理软件信息"
+应用程序 |Software.Read.All|"读取威胁和漏洞管理软件信息"
 委派（工作或学校帐户）|Software.Read|"读取威胁和漏洞管理软件信息"
 
 ## <a name="http-request"></a>HTTP 请求
