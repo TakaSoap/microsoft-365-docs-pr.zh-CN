@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定 Microsoft 365 客户数据在全球范围内的存储位置
-ms.openlocfilehash: 8647bb2ff9fdb273e1c33293446a04e57da741f0
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: c12e492b3a36f8da98fd0021bd3354c0e340d538
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218702"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283397"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客户数据的存储位置
 
@@ -120,7 +120,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 
   - 个人应用的数据驻留基于用户的邮箱位置。
   
-  - 经理/领导者数据区域由租户的主区域决定，而不是由单个用户确定。
+  - “经理/领导者”和“高级”的数据区域由租户（而不是单个用户）的主要区域确定。
 
 ## <a name="data-center-locations"></a>数据中心位置
 
