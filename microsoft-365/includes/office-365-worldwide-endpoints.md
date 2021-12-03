@@ -59,7 +59,7 @@ ID | 类别 | ER | Addresses | 端口
 47 | 默认<BR>必填 | 否 | `*.cdn.office.net, contentstorage.osi.office.net` | **TCP：** 443
 49 | 默认<BR>必填 | 否 | `*.onenote.com` | **TCP：** 443
 50 | 默认<BR>可选<BR>**备注：** OneNote 笔记本（通配符） | 否 | `*.microsoft.com, *.office.net` | **TCP：** 443
-51 | 默认<BR>必填 | 否 | `*cdn.onenote.net` | **TCP：** 443
+51 | 默认<BR>必填 | 否 | `cdn.onenote.net, edunotebookssite-cdn.onenote.net, site-cdn.onenote.net, res-1.cdn.office.net` | **TCP：** 443
 52 | 默认<BR>可选<BR>**备注：** OneNote 第三方支持服务和 CDN | 否 | `ad.atdmt.com, s.ytimg.com, www.youtube.com` | **TCP：** 443
 53 | 默认<BR>必填 | 否 | `ajax.aspnetcdn.com, apis.live.net, cdn.optimizely.com, officeapps.live.com, www.onedrive.com` | **TCP：** 443
 56 | 允许<BR>必填 | 是 | `*.msftidentity.com, *.msidentity.com, account.activedirectory.windowsazure.com, accounts.accesscontrol.windows.net, adminwebservice.microsoftonline.com, api.passwordreset.microsoftonline.com, autologon.microsoftazuread-sso.com, becws.microsoftonline.com, clientconfig.microsoftonline-p.net, companymanager.microsoftonline.com, device.login.microsoftonline.com, graph.microsoft.com, graph.windows.net, login.microsoft.com, login.microsoftonline.com, login.microsoftonline-p.com, login.windows.net, logincert.microsoftonline.com, loginex.microsoftonline.com, login-us.microsoftonline.com, nexus.microsoftonline-p.com, passwordreset.microsoftonline.com, provisioningapi.microsoftonline.com`<BR>`20.190.128.0/18, 40.126.0.0/18, 2603:1006:2000::/48, 2603:1007:200::/48, 2603:1016:1400::/48, 2603:1017::/48, 2603:1026:3000::/48, 2603:1027:1::/48, 2603:1036:3000::/48, 2603:1037:1::/48, 2603:1046:2000::/48, 2603:1047:1::/48, 2603:1056:2000::/48, 2603:1057:2::/48` | **TCP：** 443、80
@@ -67,7 +67,7 @@ ID | 类别 | ER | Addresses | 端口
 64 | 允许<BR>必填 | 是 | `*.compliance.microsoft.com, *.protection.office.com, *.security.microsoft.com, compliance.microsoft.com, protection.office.com, security.microsoft.com`<BR>`52.108.0.0/14, 2603:1006:1400::/40, 2603:1016:2400::/40, 2603:1026:2400::/40, 2603:1036:2400::/40, 2603:1046:1400::/40, 2603:1056:1400::/40, 2a01:111:200a:a::/64, 2a01:111:2035:8::/64, 2a01:111:f406:1::/64, 2a01:111:f406:c00::/64, 2a01:111:f406:1004::/64, 2a01:111:f406:1805::/64, 2a01:111:f406:3404::/64, 2a01:111:f406:8000::/64, 2a01:111:f406:8801::/64, 2a01:111:f406:a003::/64` | **TCP：** 443
 65 | 允许<BR>必填 | 是 | `account.office.net`<BR>`52.108.0.0/14, 2603:1006:1400::/40, 2603:1016:2400::/40, 2603:1026:2400::/40, 2603:1036:2400::/40, 2603:1046:1400::/40, 2603:1056:1400::/40, 2a01:111:200a:a::/64, 2a01:111:2035:8::/64, 2a01:111:f406:1::/64, 2a01:111:f406:c00::/64, 2a01:111:f406:1004::/64, 2a01:111:f406:1805::/64, 2a01:111:f406:3404::/64, 2a01:111:f406:8000::/64, 2a01:111:f406:8801::/64, 2a01:111:f406:a003::/64` | **TCP：** 443、80
 66 | 默认值<BR>必填 | 否 | `*.portal.cloudappsecurity.com, suite.office.net` | **TCP：** 443
-67 | 默认值<BR>可选<BR>**备注：** 安全与合规中心电子数据展示导出 | 否 | `*.blob.core.windows.net` | **TCP：** 443
+67 | 默认<BR>可选<BR>**备注：** 安全与合规中心电子数据展示导出 | 否 | `*.blob.core.windows.net` | **TCP：** 443
 68 | 默认<BR>可选<BR>**备注：** 门户和共享：第三方 Office 集成（包括 CDN） | 否 | `*.helpshift.com, *.localytics.com, connect.facebook.net, firstpartyapps.oaspapps.com, outlook.uservoice.com, prod.firstpartyapps.oaspapps.com.akadns.net, telemetryservice.firstpartyapps.oaspapps.com, wus-firstpartyapps.oaspapps.com` | **TCP：** 443
 69 | 默认<BR>必填 | 否 | `*.aria.microsoft.com, *.events.data.microsoft.com` | **TCP：** 443
 70 | 默认<BR>必填 | 否 | `*.o365weve.com, amp.azure.net, appsforoffice.microsoft.com, assets.onestore.ms, auth.gfx.ms, c1.microsoft.com, dgps.support.microsoft.com, docs.microsoft.com, msdn.microsoft.com, platform.linkedin.com, prod.msocdn.com, shellprod.msocdn.com, support.content.office.net, support.microsoft.com, technet.microsoft.com, videocontent.osi.office.net, videoplayercdn.osi.office.net` | **TCP：** 443
@@ -77,7 +77,7 @@ ID | 类别 | ER | Addresses | 端口
 75 | 默认<BR>可选<BR>**备注：** Graph.windows.net、Office 365 Management Pack for Operations Manager、SecureScore、Azure AD Device Registration、Forms、StaffHub、Application Insights、captcha services | 否 | `*.hockeyapp.net, *.sharepointonline.com, dc.services.visualstudio.com, mem.gfx.ms, staffhub.ms, staffhub.uservoice.com` | **TCP：** 443
 78 | 默认<BR>可选<BR>**备注：** 这些域（包括 CDN）中的部分 Office 365 功能需要使用终结点。这些通配符中的许多特定 FQDN 最近已发布，我们正在努力删除或更好地解释与这些通配符相关的指导。 | 否 | `*.microsoft.com, *.msocdn.com, *.office.net, *.onmicrosoft.com` | **TCP：** 443、80
 79 | 默认值<BR>必填 | 否 | `o15.officeredir.microsoft.com, officepreviewredir.microsoft.com, officeredir.microsoft.com, r.office.microsoft.com` | **TCP：** 443、80
-83 | 默认值<BR>必填 | 否 | `activation.sls.microsoft.com` | **TCP：** 443
+83 | 默认<BR>必填 | 否 | `activation.sls.microsoft.com` | **TCP：** 443
 84 | 默认<BR>必填 | 否 | `crl.microsoft.com` | **TCP：** 443、80
 86 | 默认<BR>必填 | 否 | `office15client.microsoft.com, officeclient.microsoft.com` | **TCP：** 443
 88 | 默认<BR>必填 | 否 | `insertmedia.bing.office.net` | **TCP：** 443、80
