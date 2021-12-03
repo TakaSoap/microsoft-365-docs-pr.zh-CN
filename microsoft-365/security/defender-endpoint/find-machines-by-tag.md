@@ -2,8 +2,7 @@
 title: 按标记 API 查找设备
 description: 查找包含指定标记的所有设备
 keywords: api， 受支持的 api， 获取， 设备， 查找， 查找设备， 按标记， 标记
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 231cbafc595713a66590cbddbbdee1bb7136b028
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 93363ba9cb6252a32406c0c29dfb7d757d2f411d
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166946"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302190"
 ---
 # <a name="find-devices-by-tag-api"></a>按标记 API 查找设备
 
@@ -54,8 +53,8 @@ ms.locfileid: "61166946"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Machine.Read.All|"读取所有计算机配置文件"
-Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+应用程序|Machine.Read.All|"读取所有计算机配置文件"
+应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.Read|"读取计算机信息"
 委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 
@@ -80,10 +79,10 @@ Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-uri-parameters"></a>请求 URI 参数
 
-名称|类型|Description
+名称|类型|说明
 :---|:---|:---
 tag|String|标记名称。 必需。
-useStartsWithFilter|布尔值|设置为 true 时，搜索将查找标记名称以查询中的给定标记开头的所有设备。 默认值为 false。 **可选。**
+useStartsWithFilter|Boolean|设置为 true 时，搜索将查找标记名称以查询中的给定标记开头的所有设备。 默认值为 false。 **可选**。
 
 ## <a name="request-body"></a>请求正文
 

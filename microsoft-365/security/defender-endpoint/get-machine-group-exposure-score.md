@@ -2,8 +2,7 @@
 title: 按设备组列出曝光分数
 description: 按设备组检索曝光评分列表。
 keywords: api， 图形 api， 受支持的 api， 获取， 曝光分数， 设备组， 设备组曝光分数
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 03d3535ec972522313bbabeebc1743db3fb55009
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ba046d35b6cf93754fc1daf3d2b211d69e6c27d8
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209845"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301626"
 ---
 # <a name="list-exposure-score-by-device-group"></a>按设备组列出曝光分数
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -47,7 +46,7 @@ ms.locfileid: "60209845"
 
 权限类型|权限|权限显示名称
 ---|---|---
-Application|Score.Read.All|"读取威胁和漏洞管理分数"
+应用程序|Score.Read.All|"读取威胁和漏洞管理分数"
 委派（工作或学校帐户）|Score.Read|"读取威胁和漏洞管理分数"
 
 ## <a name="http-request"></a>HTTP 请求

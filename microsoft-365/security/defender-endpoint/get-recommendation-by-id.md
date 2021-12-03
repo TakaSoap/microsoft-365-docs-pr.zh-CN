@@ -2,8 +2,7 @@
 title: 按 Id 获取建议
 description: 按 ID 检索安全建议。
 keywords: api， 图形 api， 受支持的 api， 获取， 安全建议， 按 ID 的安全建议， 危险和漏洞管理， 危险和漏洞管理 api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8075d648165bdc2e61f6c3535db85f03c6e48081
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ea02c3a102f88418b146eba24d7db34c2bd07ed4
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168938"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302226"
 ---
 # <a name="get-recommendation-by-id"></a>按 ID 获取建议
 
@@ -46,7 +45,7 @@ ms.locfileid: "61168938"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|SecurityRecommendation.Read.All|"读取威胁和漏洞管理安全建议信息"
+应用程序|SecurityRecommendation.Read.All|"读取威胁和漏洞管理安全建议信息"
 委派（工作或学校帐户）|SecurityRecommendation.Read|"读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求

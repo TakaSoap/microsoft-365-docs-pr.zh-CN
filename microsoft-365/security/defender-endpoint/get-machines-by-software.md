@@ -2,8 +2,7 @@
 title: 按软件列出设备
 description: 检索已安装此软件的设备列表。
 keywords: api， 图形 api， 受支持的 api， 获取， 列表设备， 设备列表， 按软件列出设备， Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 96f9ee111bc638339c4f4a001062cbeca1b20783
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 32dd0531d0919613621d656f7f3b9aef3e4bec0d
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167486"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301578"
 ---
 # <a name="list-devices-by-software"></a>按软件列出设备
 
@@ -46,7 +45,7 @@ ms.locfileid: "61167486"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Software.Read.All|"读取威胁和漏洞管理软件信息"
+应用程序|Software.Read.All|"读取威胁和漏洞管理软件信息"
 委派（工作或学校帐户）|Software.Read|"读取威胁和漏洞管理软件信息"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -91,13 +90,13 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machi
         {
             "id": "7c7e1896fa39efb0a32a2cf421d837af1b9bf762",
             "computerDnsName": "dave_desktop",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "rbacGroupName": "GroupTwo"
         },
         {
             "id": "7d5cc2e7c305e4a0a290392abf6707f9888fda0d",
             "computerDnsName": "jane_PC",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "rbacGroupName": "GroupTwo"
         }
         ...

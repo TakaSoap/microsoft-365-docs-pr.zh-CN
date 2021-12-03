@@ -2,7 +2,6 @@
 title: 在设备上运行实时响应命令
 description: 了解如何在设备上运行实时响应命令序列。
 keywords: api， 图形 api， 受支持的 api， 上载到库
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,12 +20,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1a986bf129361954953e3b29e5906c71a0f482ed
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6e8146a5e73cb056f6e22ec975f909c281d0890a
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163118"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300954"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>在设备上运行实时响应命令
 
@@ -50,9 +49,9 @@ ms.locfileid: "61163118"
 
 ## <a name="limitations"></a>限制
 
-1. 此 API 的速率限制是每分钟 10 次调用 (HTTP 429 请求响应其他) 。
+1. 此 API 的速率限制是每分钟 10 次 (HTTP 429 请求响应其他) 。
 
-2. 25 个并发运行的 (超出限制的请求将收到"429 - 请求过多"响应) 。
+2. 25 个并发运行的 (超过限制的请求将收到"429 - 请求过多"响应) 。
 
 3. 如果计算机不可用，会话将排入队列最多 3 天。
 
@@ -68,10 +67,12 @@ ms.locfileid: "61163118"
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的** Windows 版本。
+- **验证是否正在运行受支持的 Windows** 版本。
 
   设备必须运行以下版本之一Windows
 
+  - **Windows 11**
+  
   - **Windows 10**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
     - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
@@ -80,7 +81,7 @@ ms.locfileid: "61163118"
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **Windows Server 2019 - 仅适用于公共预览版**
-    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
     - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
     
   - **Windows Server 2022**
@@ -91,7 +92,7 @@ ms.locfileid: "61163118"
 
 |权限类型|权限|权限显示名称|
 |---|---|---|
-|Application|Machine.LiveResponse|在特定的计算机上运行实时响应|
+|应用程序|Machine.LiveResponse|在特定的计算机上运行实时响应|
 |委派（工作或学校帐户）|Machine.LiveResponse|在特定的计算机上运行实时响应|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -104,12 +105,12 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |名称|类型|说明|
 |---|---|---|
-|Authorization|String|Bearer\<token>\. 必需。|
+|Authorization|String|Bearer\<token>\. 必填。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
 
-|参数|类型|Description|
+|参数|类型|说明|
 |---|---|---|
 |评论|字符串|要与操作关联的注释。|
 |命令|数组|要运行的命令。 允许的值为 PutFile、RunScript、GetFile。|

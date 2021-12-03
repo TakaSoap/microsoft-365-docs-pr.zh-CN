@@ -2,7 +2,6 @@
 title: 通过计算机和软件获取所有漏洞
 description: 检索计算机和软件影响组织的所有漏洞的列表
 keywords: api， 图形 api， 受支持的 api， 获取， 漏洞信息， Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 75194ec1c0d549ba5bb8727db31e182a381187f8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 45c29a70f97c681e6236f4327fed8e344d9dc8ac
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162634"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301638"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>按计算机和软件列出漏洞
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -54,7 +53,7 @@ ms.locfileid: "60162634"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Vulnerability.Read.All|"读取威胁和漏洞管理漏洞信息"
+应用程序|Vulnerability.Read.All|"读取威胁和漏洞管理漏洞信息"
 委派（工作或学校帐户）|Vulnerability.Read|"读取威胁和漏洞管理漏洞信息"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -67,7 +66,7 @@ GET /api/vulnerabilities/machinesVulnerabilities
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 
@@ -75,7 +74,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在正文中返回 200 OK 和漏洞列表。
+如果成功，此方法返回 200 OK，并返回正文中的漏洞列表。
 
 ## <a name="example"></a>示例
 

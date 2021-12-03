@@ -2,8 +2,6 @@
 title: 将 Microsoft Defender for Endpoint 事件流式处理到 Azure 事件中心
 description: 了解如何配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式处理到事件中心。
 keywords: 原始数据导出， 流式 API， API， Azure 事件中心， Azure 存储， 存储帐户， 高级搜寻， 原始数据共享
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ac97d7a4210d1f498fa82453eb66e01398718c37
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0dddebc27f776e317090ac3424c27f01f26126ed
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209257"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300185"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式传输至 Azure 事件中心
 
@@ -30,16 +28,15 @@ ms.locfileid: "60209257"
 
 
 **适用于：**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 1. 在 [租户中创建](/azure/event-hubs/) 事件中心。
 
-2. 登录到 [你的 Azure 租户](https://ms.portal.azure.com/)，转到**订阅>你的订阅>资源>注册到 **Microsoft.insights****。
+2. 登录到 [你的 Azure](https://ms.portal.azure.com/)租户，转到**订阅>你的订阅>资源>注册到 **Microsoft.insights****。
 
 ## <a name="enable-raw-data-streaming"></a>启用原始数据流
 
@@ -57,13 +54,13 @@ ms.locfileid: "60209257"
 
    若要获取事件中心资源 **ID，** 请转到 [Azure](https://ms.portal.azure.com/) > 属性选项卡上的 Azure 事件中心命名空间页面，复制资源 \> ID **下的文本**：
 
-   ![事件中心资源 Id1 的图像。](images/event-hub-resource-id.png)
+   :::image type="content" alt-text="事件中心资源 Id1 的图像。" source="images/event-hub-resource-id.png" lightbox="images/event-hub-resource-id.png":::
 
 7. 选择要流式传输的事件，然后单击"保存 **"。**
 
 ## <a name="the-schema-of-the-events-in-azure-event-hubs"></a>Azure 事件中心中的事件的架构
 
-```text
+```json
 {
     "records": [
                     {
@@ -79,9 +76,9 @@ ms.locfileid: "60209257"
 
 - Azure 事件中心中的每个事件中心消息都包含记录列表。
 
-- 每条记录都包含事件名称、Microsoft Defender for Endpoint 收到事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为 **"properties"** 的属性。
+- 每条记录都包含事件名称、Microsoft Defender for Endpoint 接收事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为 **"properties"** 的属性。
 
-- 有关 Microsoft Defender for Endpoint 事件的架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
+- 有关适用于终结点事件的 Microsoft Defender 架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
 
 - 在高级搜寻中 **，DeviceInfo** 表有一个名为 **MachineGroup** 的列，其中包含设备组。 此处还将用此列修饰每个事件。 有关详细信息 [，请参阅](machine-groups.md) 设备组。
 
@@ -93,7 +90,7 @@ ms.locfileid: "60209257"
 
 2. 运行以下查询，获取每个事件的数据类型映射：
 
-   ```text
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType 

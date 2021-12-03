@@ -2,7 +2,6 @@
 title: 载出计算机 API
 description: 了解如何使用 API 从 Microsoft Defender for Endpoint 中将设备载出。
 keywords: api， 图形 api， 受支持的 api， 收集调查包
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1b07ad9252b414dd84d2c73afa38c124851faef4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4d1170b03d510bb0c79376d55c771311e10251c8
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167042"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302382"
 ---
 # <a name="offboard-machine-api"></a>载出计算机 API
 
@@ -49,7 +48,7 @@ ms.locfileid: "61167042"
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> 此 API 在 Windows 10 版本 1703 及更高版本或 Windows Server 2019 及更高版本上受支持。
+> 此 API 在 Windows 11、Windows 10 版本 1703 及更高版本或 Windows Server 2019 及更高版本上受支持。
 >
 > 此 API 在 MacOS 或 Linux 设备上不受支持。
 
@@ -59,7 +58,7 @@ ms.locfileid: "61167042"
 
 权限类型|权限|权限显示名称
 ---|---|---
-Application|Machine.Offboard|"载出计算机"
+应用程序|Machine.Offboard|"载出计算机"
 委派（工作或学校帐户）|Machine.Offboard|"载出计算机"
 
 > [!NOTE]
@@ -85,7 +84,7 @@ Content-Type|string|application/json. 必需。
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|Description
+参数|类型|说明
 ---|---|---
 评论|字符串|要与操作关联的注释。 必需。
 

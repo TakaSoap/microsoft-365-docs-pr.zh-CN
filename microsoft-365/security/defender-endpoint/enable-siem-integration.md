@@ -1,9 +1,7 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中启用 SIEM 集成
-description: 启用 SIEM 集成以在 SIEM 解决方案的安全信息和事件 (接收) 检测。
+description: 启用 SIEM 集成以在 SIEM 解决方案中接收安全 (事件) 检测。
 keywords: 启用 siem 连接器， siem， 连接器， 安全信息和事件
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f94bbd6da16d7c0cdffe2b5f49085ab4b774e03c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 881f6d3691add12af8c8f4e808417bf4cef6e5ea
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166970"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300174"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中启用 SIEM 集成
 
@@ -33,7 +31,7 @@ ms.locfileid: "61166970"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
-启用 SIEM (安全信息和事件) 集成，以便你可以从 SIEM Microsoft 365 Defender。 使用 SIEM 解决方案或直接连接到检测 REST API 拉取检测。
+在 SIEM (启用安全信息和事件) 集成，以便你可以从 SIEM Microsoft 365 Defender。 使用 SIEM 解决方案或直接连接到检测 REST API 拉取检测。
 
 > [!NOTE]
 >
@@ -46,7 +44,7 @@ ms.locfileid: "61166970"
 - 激活该设置的用户必须有权在 Azure Active Directory (AAD) 。 这是具有以下角色的人：
 
   - 安全管理员和全局管理员之一
-  - 云 应用程序管理员
+  - 云应用程序管理员
   -  应用程序管理员
   - 服务主体的所有者
 
@@ -56,7 +54,7 @@ ms.locfileid: "61166970"
 
 1. 在导航窗格中，选择 **"设置** \>  \> **终结点 API** \> **SIEM"。**
 
-   :::image type="content" source="../../media/enable-siemnew.png" alt-text="来自菜单 1 的 SIEM 设置图像。":::
+   :::image type="content" source="../../media/enable-siemnew.png" lightbox="../../media/enable-siemnew.png" alt-text="来自菜单 1 的 SIEM 设置图像。":::
 
    > [!TIP]
    > 如果在尝试启用 SIEM 连接器应用程序时遇到错误，请检查浏览器的弹出窗口阻止程序设置。 启用该功能时，它可能会阻止打开的新窗口。
@@ -66,7 +64,7 @@ ms.locfileid: "61166970"
     > [!WARNING]
     > 客户端密码只显示一次。 请确保将其副本放在安全的位置。
 
-    ![来自菜单 2 的 SIEM 设置图像。](images/siem_details.png)
+    :::image type="content" alt-text="来自菜单 2 的 SIEM 设置图像。" source="images/siem_details.png" lightbox="images/siem_details.png":::
 
 3. 选择你在组织使用的 SIEM 类型。
 

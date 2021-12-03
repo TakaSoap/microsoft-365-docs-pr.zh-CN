@@ -2,8 +2,7 @@
 title: 获取 MachineAction 对象 API
 description: 了解如何使用 Get MachineAction API 在 Microsoft Defender for Endpoint 中按其 ID 检索特定计算机操作。
 keywords: api， 图形 api， 受支持的 api， machineaction 对象
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a842c768ac3a5dd7edde3471378f00fc872fcc49
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ea532b791b15320379655546ca86c798dbfc8674
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168590"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301602"
 ---
 # <a name="get-machineaction-api"></a>获取 machineAction API
 
@@ -51,8 +50,8 @@ ms.locfileid: "61168590"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Machine.Read.All|"读取所有计算机配置文件"
-Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+应用程序|Machine.Read.All|"读取所有计算机配置文件"
+应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.Read|"读取计算机信息"
 委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 

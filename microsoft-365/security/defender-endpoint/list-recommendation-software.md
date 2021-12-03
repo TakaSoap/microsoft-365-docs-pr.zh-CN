@@ -2,8 +2,7 @@
 title: 按建议列出软件
 description: 检索与特定软件相关的安全建议。
 keywords: api， 图形 api， 受支持的 api， 获取， 安全建议， 软件安全建议， 危险和漏洞管理， 危险和漏洞管理 api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,18 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 333aeeb69a2c4cab586b5717ac30005eac5477b4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1d5ca404554d667ae9c36533fc1ad9cb866caff7
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199773"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302394"
 ---
 # <a name="list-software-by-recommendation"></a>按建议列出软件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：**
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
@@ -46,7 +46,7 @@ ms.locfileid: "60199773"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Software.Read.All|"读取威胁和漏洞管理软件信息"
+应用程序|Software.Read.All|"读取威胁和漏洞管理软件信息"
 委派（工作或学校帐户）|SecurityRecommendation.Read|"读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -59,7 +59,7 @@ GET /api/recommendations/{id}/software
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 必需。
+Authorization|String|Bearer {token}。 必需。
 
 ## <a name="request-body"></a>请求正文
 

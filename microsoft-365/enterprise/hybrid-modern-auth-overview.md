@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/15/2020
+ms.date: 12/03/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 本文将介绍混合新式验证，以及用于内部部署服务器和 Skype for Business Exchange的先决条件。
-ms.openlocfilehash: c6e12638ca0568bcf2ca692b53008971d897290e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9cb8db650a52b8789c66243d5d47bab1c9857230
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209749"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301698"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式验证概述以及将其与本地 Skype for Business和 Exchange 服务器一起使用的先决条件
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-_新式验证_ 是一种标识管理，它提供更安全的用户身份验证和授权。 它适用于本地 Skype for Business 服务器和本地 Exchange 服务器的 Office 365 混合部署以及拆分域 Skype for Business 混合部署。 本文链接到有关先决条件、设置/禁用新式验证的相关文档，以及一些相关客户端（例如 Outlook 和 Skype 客户端）的信息。
+_新式验证_ 是一种标识管理，它提供更安全的用户身份验证和授权。 它可用于 Office 365 本地和 Skype for Business 服务器本地的混合Exchange，以及拆分域Skype for Business混合。 本文链接到有关先决条件、设置/禁用新式验证的相关文档，以及一些相关客户端（例如 Outlook 和 Skype 客户端）的信息。
 
 - [什么是新式验证？](hybrid-modern-auth-overview.md#BKMK_WhatisModAuth)
 - [使用新式验证时有何变化？](hybrid-modern-auth-overview.md#BKMK_WhatChanges)
@@ -40,13 +40,13 @@ _新式验证_ 是一种标识管理，它提供更安全的用户身份验证�
 
 新式验证是客户端（例如，笔记本电脑或手机）和服务器之间的身份验证和授权方法的组合，以及某些依赖于你可能已经熟悉的访问策略的安全措施的总称。 其中包括：
 
-- **身份验证方法**：多重身份验证 (MFA)；智能卡身份验证；基于客户端证书的身份验证
+- **身份验证方法**：多重身份验证 (MFA) ;智能卡身份验证;基于客户端证书的身份验证
 - **身份验证方法**：Microsoft 的开放授权 (OAuth) 实施
 - **条件访问策略**：移动应用程序管理 (MAM) 和 Azure Active Directory (Azure AD) 条件访问
 
 通过新式验证来管理用户身份，可以为管理员提供多种保护资源的工具，并为本地（Exchange 和 Skype for Business）、Exchange 混合以及 Skype for Business 混合/拆分域方案提供更安全的身份管理方法。
 
-请注意，由于 Skype for Business 与 Exchange 紧密合作，因此 Skype for Business 客户端用户将看到的登录行为将受 Exchange 的新式验证状态影响。 如果你具有 Skype for Business _拆分域_ 混合体系结构，你在其中同时拥有本地 Skype for Business Online 和本地 Skype for Business，并且用户同时位于两个位置，则此方式也适用。
+由于Skype for Business与 Exchange 紧密配合，Skype for Business客户端用户将看到的登录行为将受新式身份验证状态Exchange。 如果你具有 Skype for Business _拆分域_ 混合体系结构，你在其中同时拥有本地 Skype for Business Online 和本地 Skype for Business，并且用户同时位于两个位置，则此方式也适用。
 
 有关新式验证在 Office 365 中Office 365，请参阅客户端应用支持[- 多重身份验证](microsoft-365-client-support-multi-factor-authentication.md)。
 
@@ -60,7 +60,7 @@ _新式验证_ 是一种标识管理，它提供更安全的用户身份验证�
 
 对 evoSTS 的更改使你的本地服务器可以利用 OAuth（令牌发行）对客户端进行授权，还可以让你的本地服务器使用云中常见的安全方法（例如多重身份验证）。 另外，evoSTS 还会发行令牌，使用户可以请求访问资源而无需在请求中提供密码。 无论用户位于何处（线上还是本地）、无论哪个位置托管所需资源，一旦配置了新式验证，EvoSTS 都将成为授权用户和客户端的核心。
 
-例如，如果 Skype for Business 客户端需要访问 Exchange 服务器以代表用户获取日历信息，则会使用 Active Directory 身份验证库 (ADAL) 来执行此操作。 ADAL 是一个代码库，旨在使用 OAuth 安全令牌将目录中的安全资源提供给客户端应用程序。 ADAL 与 OAuth 一起使用以验证声明并交换令牌（而不是密码），以授予用户对资源的访问权限。 过去，此类事务中的授权服务（知道如何验证用户声明并发出所需令牌的服务器）可能是本地安全令牌服务，甚至是 Active Directory 联合身份验证服务。 但是，新式验证通过使用 Azure AD 集中了该授权服务。
+例如，Skype for Business客户端需要访问 Exchange 服务器来代表用户获取日历信息，则它使用 Microsoft 身份验证库 (MSAL) 来这样做。 MSAL 是一个代码库，旨在使用 OAuth 安全令牌使目录中的安全资源可供客户端应用程序使用。 MSAL 与 OAuth 一起验证声明，并交换 (而不是密码) ，以授予用户访问资源的权限。 过去，这种事务中的颁发机构（知道如何验证用户声明和颁发所需令牌的服务器）可能是本地安全令牌服务，甚至是 Active Directory 联合身份验证服务。 但是，新式验证通过使用 Azure AD 集中了该授权服务。
 
 这也意味着，即使你的 Exchange 服务器和 Skype for Business 环境可能完全位于本地，授权服务器也将处于联机状态，并且你的本地环境必须具有创建和维护与云中的 Office 365 订阅（以及你的订阅将其用作目录的 Azure AD 实例）的连接的能力。
 

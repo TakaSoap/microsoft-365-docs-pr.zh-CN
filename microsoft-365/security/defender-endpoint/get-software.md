@@ -2,8 +2,7 @@
 title: 列出软件
 description: 检索软件清单列表
 keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 软件清单， 威胁& 漏洞管理 api， Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ef30f7b21b760d8e3695fcd670cf5cebbd43bd79
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0f2db10e24212808253e197c562468c03f3ae293
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167439"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300894"
 ---
 # <a name="list-software-inventory-api"></a>列出软件清单 API
 
@@ -52,7 +51,7 @@ ms.locfileid: "61167439"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Software.Read.All|"读取威胁和漏洞管理软件信息"
+应用程序|Software.Read.All|"读取威胁和漏洞管理软件信息"
 委派（工作或学校帐户）|Software.Read|"读取威胁和漏洞管理软件信息"
 
 ## <a name="http-request"></a>HTTP 请求

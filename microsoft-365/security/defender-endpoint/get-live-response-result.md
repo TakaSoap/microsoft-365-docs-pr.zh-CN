@@ -2,7 +2,6 @@
 title: 获取实时响应结果
 description: 了解如何按其索引检索特定实时响应命令结果。
 keywords: api， 图形 api， 受支持的 api， 上载到库
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,19 +20,19 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4b7c2b79892874fad37be382ba7eecea1b761fe7
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: ce0fd83e95be6fd1f26b40a5992303162a265c3e
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753561"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300450"
 ---
 # <a name="get-live-response-results"></a>获取实时响应结果
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -55,10 +54,12 @@ ms.locfileid: "60753561"
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的** Windows。
+- **验证是否正在运行受支持的 Windows** 版本。
 
   设备必须运行以下版本之一Windows
 
+  - **Windows 11**
+  
   - **Windows 10**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
     - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
@@ -66,9 +67,9 @@ ms.locfileid: "60753561"
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **WindowsServer 2019 - 仅适用于公共预览版**
+  - **Windows Server 2019 - 仅适用于公共预览版**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
-    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
     
   - **Windows Server 2022**  
 

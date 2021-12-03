@@ -1,9 +1,8 @@
 ---
 title: 高级搜寻与 Python API 指南
 ms.reviewer: ''
-description: 通过示例，了解如何使用 Microsoft Defender for Endpoint API（使用 Python）进行查询。
+description: 了解如何使用 Microsoft Defender for Endpoint API（使用 Python）和示例进行查询。
 keywords: api， 受支持的 api， 高级搜寻， 查询
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,20 +16,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 260e191a2948544ee98223c8b7f1563719693c9c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 73be2b3c2aa40bb88ac6ccff60eec5cb7f55338c
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154730"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300773"
 ---
 # <a name="advanced-hunting-using-python"></a>通过 Python 高级搜寻
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：** 
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -77,8 +77,8 @@ aadToken = jsonResponse["access_token"]
 其中
 
 - tenantId：要代表其运行查询的租户的 ID (即，查询将针对此租户数据运行) 
-- appId：Azure AD 应用的 ID (应用必须具有对适用于 Endpoint 应用的 Microsoft Defender 的"运行高级查询") 
-- appSecret：Azure AD 应用密钥
+- appId：应用Azure AD应用的 ID (应用必须具有对适用于终结点应用的 Microsoft Defender 的"运行高级查询") 
+- appSecret：Azure AD密钥
 
 ## <a name="run-query"></a>运行查询
 
@@ -128,7 +128,7 @@ for result in results:
     print(result["EventTime"]) # Prints only the property 'EventTime' from the result
 ```
 
-若要以 CSV 格式输出文件格式的查询结果，file1.csv执行下列操作：
+若要以 CSV 格式以文件格式输出查询结果，file1.csv执行下列操作：
 
 ```python
 import csv

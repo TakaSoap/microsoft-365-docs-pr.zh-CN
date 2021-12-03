@@ -2,7 +2,6 @@
 title: 隔离计算机 API
 description: 了解如何使用隔离计算机 API 隔离设备以在 Microsoft Defender for Endpoint 中访问外部网络。
 keywords: api， 图形 api， 受支持的 api， 隔离设备
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f01a63dd5a2fa5d5aa56f171617041044a267fbb
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 52063135280d9e91ca531546b4ae03cf5b42ccbf
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218126"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300786"
 ---
 # <a name="isolate-machine-api"></a>隔离计算机 API
 
@@ -52,9 +51,9 @@ ms.locfileid: "61218126"
 
 > [!IMPORTANT]
 >
-> - 完全隔离适用于版本 1703 Windows 10上的设备。
-> - 选择性隔离适用于 Windows 10 版本 1709 或更高版本上的设备。
-> - 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议为 Microsoft Defender for Endpoint 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
+> - 完全隔离适用于 Windows 10 版本 1703 和 Windows 11。
+> - 选择性隔离适用于 Windows 10 版本 1709 或更高版本以及 Windows 11。
+> - 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议对适用于终结点的 Microsoft Defender 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
 
 ## <a name="permissions"></a>权限
 
@@ -62,7 +61,7 @@ ms.locfileid: "61218126"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Machine.Isolate|"隔离计算机"
+应用程序|Machine.Isolate|"隔离计算机"
 委派（工作或学校帐户）|Machine.Isolate|"隔离计算机"
 
 > [!NOTE]

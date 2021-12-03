@@ -2,7 +2,6 @@
 title: machineAction 资源类型
 description: 了解 Microsoft Defender for Endpoint 中 MachineAction 资源类型的方法和属性。
 keywords: api， 受支持的 api， 获取， machineaction， 最近
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 79503f4089f1ff19bc9f47c6032b6ebc33b244d8
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 625170f0e589ece6f6277dc8445f3af7bef11837
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171157"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301854"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction 资源类型
 
@@ -41,7 +40,7 @@ ms.locfileid: "61171157"
 
 - 有关详细信息，请参阅响应 [操作](respond-machine-alerts.md)。
 
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |---|---|---|
 |[列出 MachineActions](get-machineactions-collection.md)|[计算机操作](machineaction.md)|列出 [计算机操作](machineaction.md) 实体。|
 |[获取 MachineAction](get-machineaction-object.md)|[计算机操作](machineaction.md)|获取单个 [Machine Action](machineaction.md) 实体。|
@@ -74,7 +73,7 @@ ms.locfileid: "61171157"
 |cancellationRequestor|String|取消操作的人的标识。|
 |requestorComment|String|发出操作时写入的注释。|
 |cancellationComment|String|取消操作时写入的注释。|
-|status|枚举|命令的当前状态。 可能的值包括："Pending"、"InProgress"、"Succeeded"、"Failed"、"TimeOut"和"Cancelled"。|
+|状态|枚举|命令的当前状态。 可能的值包括："Pending"、"InProgress"、"Succeeded"、"Failed"、"TimeOut"和"Cancelled"。|
 |machineId|String|已 [执行](machine.md) 该操作的虚拟机的 ID。|
 |computerDnsName|String|已 [执行](machine.md) 该操作计算机的名称。|
 |creationDateTimeUtc|DateTimeOffset|创建该操作的日期和时间。|

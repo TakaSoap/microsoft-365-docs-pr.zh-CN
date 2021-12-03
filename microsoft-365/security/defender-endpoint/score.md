@@ -2,7 +2,6 @@
 title: 分数方法和属性
 description: 按设备组检索组织的曝光分数、设备安全分数和曝光分数
 keywords: api， 图形 api， 受支持的 api， 分数， 曝光分数， 设备安全分数， 按设备组的曝光分数
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 96a565456f0e95ffc33cbff9a36abcf24db94c24
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: fe69b42c2d8bf80089b749cd41e59664cc2921e3
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61160500"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300978"
 ---
 # <a name="score-resource-type"></a>分数资源类型
 
@@ -43,7 +42,7 @@ ms.locfileid: "61160500"
 
 ## <a name="methods"></a>Methods
 
-方法|返回类型|Description
+方法|返回类型|说明
 :---|:---|:---
 [获取曝光分数](get-exposure-score.md)|[分数](score.md)|获取组织曝光分数。
 [获取设备安全分数](get-device-secure-score.md)|[分数](score.md)|获取组织设备安全分数。
@@ -51,7 +50,7 @@ ms.locfileid: "61160500"
 
 ## <a name="properties"></a>属性
 
-属性|类型|Description
+属性|类型|说明
 :---|:---|:---
 得分|双精度|当前分数。
 时间|日期时间|调用此 API 的日期和时间。

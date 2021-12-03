@@ -2,7 +2,6 @@
 title: 取消计算机操作 API
 description: 了解如何取消已启动计算机操作
 keywords: api、 图形 api、
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,12 +20,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8ae30dbf371afa6668de4846cebe85ae45fe09be
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 86adc16c5e275daf371c98c7a9709df4977025e8
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171625"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302154"
 ---
 # <a name="cancel-machine-action-api"></a>取消计算机操作 API
 
@@ -58,7 +57,7 @@ ms.locfileid: "61171625"
 
 |权限类型|权限|权限显示名称|
 |---|---|---|
-|Application|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|收集取证 <br>隔离计算机<br>限制代码执行<br>  扫描计算机<br>  卸载计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
+|应用程序|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|收集取证 <br>隔离计算机<br>限制代码执行<br>  扫描计算机<br>  卸载计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
 |委派（工作或学校帐户）|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|收集取证<br> 隔离计算机<br>  限制代码执行<br> 扫描计算机<br>卸载计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -76,7 +75,7 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## <a name="request-body"></a>请求正文
 
-|参数|类型|Description|
+|参数|类型|说明|
 |---|---|---|
 |评论|字符串|要与取消操作关联的注释。|
 

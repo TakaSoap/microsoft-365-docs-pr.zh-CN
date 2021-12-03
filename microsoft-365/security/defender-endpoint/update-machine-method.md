@@ -2,7 +2,6 @@
 title: 更新计算机实体 API
 description: 了解如何使用此 API 更新计算机标记。 你可以更新标记和设备值属性。
 keywords: api， 图形 api， 受支持的 api， 获取， 警报， 信息， id
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 12e4935c38a2c4748b05226237c5e31be756676c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 77876024faa7452ff284e30a587e72855068cc98
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203983"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301110"
 ---
 # <a name="update-machine"></a>更新计算机 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -55,7 +55,7 @@ ms.locfileid: "60203983"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Machine.ReadWrite.All|"读取和写入所有计算机的计算机信息"
+应用程序|Machine.ReadWrite.All|"读取和写入所有计算机的计算机信息"
 委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 
 > [!NOTE]
@@ -73,8 +73,8 @@ PATCH /api/machines/{machineId}
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 必需。
-Content-Type|String|application/json. **必需**。
+Authorization|String|Bearer {token}。 必需。
+Content-Type|String|application/json. 必需。
 
 ## <a name="request-body"></a>请求正文
 
@@ -91,7 +91,7 @@ deviceValue|Nullable Enum|[设备 的值](tvm-assign-device-value.md)。 可能�
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 200 OK 和 [包含](machine.md) 更新属性的 machine 实体。
+如果成功，此方法在响应正文中返回 200 OK 和 [计算机](machine.md) 实体以及更新的属性。
 
 如果 body 中的计算机标记集合不包含现有计算机标记 - 请将所有标记替换为请求正文中提供的标记。
 
@@ -113,7 +113,7 @@ PATCH https://api.securitycenter.microsoft.com/api/machines/{machineId}
     "machineTags": [
                      "Demo Device",
                      "Generic User Machine - Attack Source",
-                     "Windows 10",
+                     "Windows 10" "Windows11",
                      "Windows Insider - Fast"
     ]
 }

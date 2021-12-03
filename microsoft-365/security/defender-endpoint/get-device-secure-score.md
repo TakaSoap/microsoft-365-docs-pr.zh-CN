@@ -2,7 +2,6 @@
 title: 获取设备安全分数
 description: 检索组织设备安全分数。
 keywords: api， 图形 api， 受支持的 api， 获取， 警报， 最近
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bf3e13700fe1e827de4e5e24234d48c59cce95af
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 69385a5a1da4b9e91084b4fc524334956c2d8403
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168650"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300198"
 ---
 # <a name="get-device-secure-score"></a>获取设备安全分数
 
@@ -45,7 +44,7 @@ ms.locfileid: "61168650"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Score.Read.All|"读取威胁和漏洞管理分数"
+应用程序|Score.Read.All|"读取威胁和漏洞管理分数"
 委派（工作或学校帐户）|Score.Read|"读取威胁和漏洞管理分数"
 
 ## <a name="http-request"></a>HTTP 请求

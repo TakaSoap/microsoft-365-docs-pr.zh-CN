@@ -2,8 +2,6 @@
 title: 从 MSSP 客户租户提取警报
 description: 了解如何从客户租户获取警报
 keywords: 托管安全服务提供程序， mssp， 配置， 集成
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 02b4d16e6ef99f6f3827d2879cd6d26aeb887112
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: dce95b2053d95ebb03502d38cf35619c596253e1
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61169022"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300414"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>从 MSSP 客户租户提取警报
 
@@ -64,7 +62,7 @@ ms.locfileid: "61169022"
     - 名称 \<Tenant_name\> ：SIEM MSSP 连接器 (将Tenant_name替换为租户显示名称) 
 
     - 支持的帐户类型：仅此组织目录中的帐户
-    - 重定向 URI：选择"Web"，然后 `https://<domain_name>/SiemMsspConnector` ("<domain_name>租户名称") 
+    - 重定向 URI：选择 `https://<domain_name>/SiemMsspConnector` "Web"， ("<domain_name>租户名称") 
 
 5. 单击“**注册**”。 应用程序显示在你拥有的应用程序列表中。
 
@@ -83,7 +81,7 @@ ms.locfileid: "61169022"
 
 ### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>步骤 2：从客户的租户获取访问和刷新令牌
 
-本部分指导你如何使用 PowerShell 脚本从客户的租户获取令牌。 此脚本使用上一步中的应用程序，使用 OAuth 授权代码令牌获取访问令牌和Flow。
+本部分指导你如何使用 PowerShell 脚本从客户的租户获取令牌。 此脚本使用上一步中的应用程序，使用 OAuth 授权代码和刷新令牌Flow。
 
 提供凭据后，你需要同意应用程序，以便应用程序在客户的租户中预配。
 
@@ -158,7 +156,7 @@ ms.locfileid: "61169022"
 
 ### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>步骤 3：允许应用程序Microsoft 365 Defender
 
-你需要允许你在应用程序中创建的应用程序Microsoft 365 Defender。
+你需要允许在应用程序中创建的应用程序Microsoft 365 Defender。
 
 你需要具有管理门户 **系统设置权限** 才能允许应用程序。 否则，你将需要请求客户允许应用。
 

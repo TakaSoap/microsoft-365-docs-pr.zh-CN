@@ -2,7 +2,6 @@
 title: 建议方法和属性
 description: 检索最近的警报。
 keywords: api， 图形 api， 受支持的 api， 获取， 警报， 最近
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +15,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5e1364b19ac29f7d753c6d5b479303b8c0ef355b
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: f6e8295d83d5ab6fb86726903800d2779f394836
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122449"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301482"
 ---
 # <a name="recommendation-resource-type"></a>建议资源类型
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：**
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
@@ -79,7 +80,7 @@ ms.locfileid: "61122449"
 |状态|枚举|建议例外状态。 可能的值是："Active"和"Exception"|
 |configScoreImpact|双精度|Microsoft 设备影响安全分数|
 |exposureImpact|双精度|曝光分数影响|
-|totalMachineCount|长型|已安装设备的数量|
+|totalMachineCount|长型|已安装的设备数|
 |exposedMachinesCount|长型|向漏洞公开的已安装设备的数量|
 |nonProductivityImpactedAssets|长型|不受影响的设备数量|
 |relatedComponent|String|相关软件组件|

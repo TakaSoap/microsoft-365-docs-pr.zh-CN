@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1ae0636f103c830866c0b7bcd1af488f2fc4e070
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: c950730586363312999488ea15c82293388058fa
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61220868"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302466"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>管理 Microsoft Defender 终结点计划 1
 
@@ -60,4 +60,4 @@ Defender for Endpoint 提供了很多灵活性和配置选项。 您可以调整
 
 ## <a name="next-steps"></a>后续步骤
 
-- [查看 Microsoft Defender for Endpoint 中的新增功能](whats-new-in-microsoft-defender-atp.md)
+- [查看 Microsoft Defender for Endpoint 中的新增功能](whats-new-in-microsoft-defender-endpoint.md)

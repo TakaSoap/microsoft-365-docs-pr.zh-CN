@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: bcarter
 author: brendacarter
-manager: johmar
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- remotework
-description: 实现零信任原则、体系结构和功能以用于Microsoft 365。
-ms.openlocfilehash: 0328c6db55a6cd277df0fdbdb5741d55ee79663e
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+- m365solution-zerotrust
+- m365solution-overview
+description: 实现零信任原则、体系结构和功能，以用于Microsoft 365。
+ms.openlocfilehash: ef916e576c6e7b837c46dda47cdc975fa02883f0
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284609"
+ms.locfileid: "61301664"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 零信任部署计划
 
@@ -55,7 +56,7 @@ For more information about this architecture, including deployment objectives fo
 
 ## <a name="deploying-zero-trust-for-microsoft-365"></a>为部署零信任Microsoft 365
 
-Microsoft 365是特意构建的，它具有许多安全和信息保护功能，可帮助你在你的环境中构建零信任。 可以扩展许多功能，以保护对组织使用的其他 SaaS 应用以及这些应用内的数据的访问。
+Microsoft 365是特意构建的，它具有许多安全和信息保护功能，可帮助你将零信任构建到环境中。 可以扩展许多功能，以保护对组织使用的其他 SaaS 应用以及这些应用内的数据的访问。
 
 此图表示部署零信任功能的工作。 此工作分为多个工作单元，可以一起配置工作，从底部开始并工作到顶部以确保先决条件工作已完成。
 
@@ -82,7 +83,7 @@ Microsoft 365是特意构建的，它具有许多安全和信息保护功能，�
 
 |Includes  |先决条件  |不包括  |
 |---------|---------|---------|
-|用于三层保护的建议标识和设备访问策略：<br>- 起始点<br>- Enterprise (推荐) <br>- 专用<br><br>针对以下项的其他建议：<br>- 外部用户 (来宾<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Cloud App Security | Microsoft E3 或 E5<br><br>Azure Active Directory以下任一模式下运行：<br>- 仅云<br>- 使用密码哈希同步与 PHS (身份验证) 混合<br>- 使用传递身份验证与 PTA (混合) <br>- 联合     |需要托管设备的策略的设备注册。 请参阅"使用 Intune 管理终结点"以注册设备 |
+|用于三层保护的建议标识和设备访问策略：<br>- 起始点<br>- Enterprise (推荐) <br>- 专用<br><br>针对以下项的其他建议：<br>- 外部用户 (来宾<br>- Microsoft Teams<br>- SharePoint Online<br>- 适用于云应用的 Microsoft Defender| Microsoft E3 或 E5<br><br>Azure Active Directory以下任一模式下运行：<br>- 仅云<br>- 使用密码哈希同步与 PHS (身份验证) 混合<br>- 通过传递身份验证与 PTA (混合) <br>- 联合     |需要托管设备的策略的设备注册。 请参阅"使用 Intune 管理终结点"以注册设备 |
 | | | |
 
 首先实现起始点层。 这些策略不需要将设备注册到管理中。 
@@ -112,13 +113,13 @@ Microsoft 365是特意构建的，它具有许多安全和信息保护功能，�
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="零信任标识和访问策略与设备管理" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 
-返回到[常见标识和设备访问策略](office-365-security/identity-access-policies.md)，并添加Enterprise层。  
+返回到[通用标识和设备访问策略](office-365-security/identity-access-policies.md)，并添加Enterprise层。  
 
 :::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="零信任标识和访问策略 — Enterprise (推荐) 层" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
 
 ## <a name="step-4-evaluate-pilot-and-deploy-microsoft-365-defender"></a>步骤 4. 评估、试验和部署Microsoft 365 Defender
 
-Microsoft 365 Defender 是一种扩展检测和响应 (XDR) 解决方案，可自动收集、关联和分析来自 Microsoft 365 环境的信号、威胁和警报数据，包括终结点、电子邮件、应用程序和标识。
+Microsoft 365 Defender是一种扩展检测和响应 (XDR) 解决方案，可自动收集、关联和分析来自 Microsoft 365 环境的信号、威胁和警报数据，包括终结点、电子邮件、应用程序和标识。
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="将Microsoft 365 Defender添加到零信任体系结构" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
@@ -126,7 +127,7 @@ Microsoft 365 Defender 是一种扩展检测和响应 (XDR) 解决方案，可�
 
 |Includes  |先决条件  |不包括  |
 |---------|---------|---------|
-| 设置所有组件的评估和试验环境：<br>- Defender for Identity<br>- Defender for Office 365<br>- 适用于终结点的 Defender<br>- Microsoft Cloud App Security<br><br>抵御威胁<br><br> 调查并响应威胁   | 请参阅指南以阅读有关每个应用程序组件的体系结构Microsoft 365 Defender。        | Azure AD Identity Protection 不包含在此解决方案指南中。 它包含在步骤 1：配置零信任标识和设备访问保护中。        |
+| 设置所有组件的评估和试验环境：<br>- Defender for Identity<br>- Defender for Office 365<br>- 适用于终结点的 Defender<br>- 适用于云应用的 Microsoft Defender<br><br>抵御威胁<br><br> 调查并响应威胁   | 请参阅指南以阅读有关每个应用程序组件的体系结构Microsoft 365 Defender。        | Azure AD Identity Protection 不包含在此解决方案指南中。 它包含在步骤 1：配置零信任标识和设备访问保护中。        |
 |    |         |         |
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>步骤 5. 保护并管理敏感数据

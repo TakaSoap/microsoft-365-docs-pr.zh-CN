@@ -2,8 +2,6 @@
 title: 将 Microsoft Defender for Endpoint 事件流式存储帐户
 description: 了解如何配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式传输存储帐户。
 keywords: 原始数据导出， 流式 API， API， 事件中心， Azure 存储， 存储帐户， 高级搜寻， 原始数据共享
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 49d14074af42437caaca9684cbfa3fc46362d32d
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: f853917497a34ff4cd82f10cc83d23f530572e45
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786287"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301398"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式传输存储帐户
 
@@ -30,11 +28,11 @@ ms.locfileid: "60786287"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 1. 在[租户存储](/azure/storage/common/storage-account-overview)帐户。
 
@@ -52,9 +50,9 @@ ms.locfileid: "60786287"
 
 5. Choose **Forward events to Azure 存储**.
 
-6. 键入你的 **存储帐户资源 ID。** 若要获取你的 存储 帐户资源 **ID，** 请转到 [Azure](https://ms.portal.azure.com/)门户属性选项卡上的 存储 帐户页面，复制"存储帐户资源 \> \> **ID"下的文本**：
+6. 键入你的 **存储帐户资源 ID。** 若要获取你的帐户 **存储 ID，** 请转到 [Azure](https://ms.portal.azure.com/)门户属性选项卡上的你的 存储 帐户页面复制帐户存储 \> ID \> **下的文本**：
 
-   ![事件中心资源 ID1 的图像。](images/storage-account-resource-id.png)
+   :::image type="content" alt-text="事件中心资源 ID1 的图像。" source="images/storage-account-resource-id.png" lightbox="images/storage-account-resource-id.png":::
 
 7. 选择要流式传输的事件，然后单击"保存 **"。**
 
@@ -62,16 +60,16 @@ ms.locfileid: "60786287"
 
 - 将针对每种事件类型创建 blob 容器：
 
-  ![事件中心资源 ID2 的图像。](images/storage-account-event-schema.png)
+  :::image type="content" alt-text="事件中心资源 ID2 的图像。" source="images/storage-account-event-schema.png" lightbox="images/storage-account-event-schema.png":::
 
 - blob 中每行的架构为以下 JSON：
 
   ```json
   {
-          "time": "<The time WDATP received the event>"
-          "tenantId": "<Your tenant ID>"
-          "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-          "properties": { <WDATP Advanced Hunting event as Json> }
+      "time": "<The time WDATP received the event>"
+      "tenantId": "<Your tenant ID>"
+      "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+      "properties": { <WDATP Advanced Hunting event as Json> }
   }
   ```
 
@@ -79,7 +77,7 @@ ms.locfileid: "60786287"
 
 - 每行都包含事件名称、Defender for Endpoint 收到事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为"properties"的属性。
 
-- 有关 Microsoft Defender for Endpoint 事件的架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
+- 有关适用于终结点事件的 Microsoft Defender 架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
 
 - 在高级搜寻中 **，DeviceInfo** 表有一个名为 **MachineGroup** 的列，其中包含设备组。 此处还将用此列修饰每个事件。 有关详细信息 [，请参阅](machine-groups.md) 设备组。
 

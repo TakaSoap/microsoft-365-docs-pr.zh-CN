@@ -15,30 +15,30 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，请了解"设备合规性"页。
-ms.openlocfilehash: b3672c155f55d314f3e11a945e3a81d9a100142c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 对于托管服务提供商 (MSP) ，Microsoft 365 Lighthouse设备合规性页面。
+ms.openlocfilehash: d1c4cb8fde2d3f653e77020e4ad29f70da266a06
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152510"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302346"
 ---
 # <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouse设备合规性页面概述
 
 > [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
-Microsoft 365 Lighthouse通过选择左侧导航窗格中的"设备"打开"设备合规性"页，查看有关所有客户租户的 Intune 设备合规性的见解和信息。  在此页面中，你可以获取跨租户的合规性状态的概述，查看每个租户的设备列表，并获取有关合规性策略和设置的状态报告。
+Microsoft 365 Lighthouse通过选择左侧导航窗格中的"设备"打开"设备合规性"页，查看有关所有客户租户的Intune 设备合规性的见解和信息。 在此页面中，你可以获取跨租户的合规性状态的概述，查看每个租户的设备列表，并获取有关合规性策略和设置的状态报告。
 
 ## <a name="overview-tab"></a>"概述"选项卡  
   
-在"概述"选项卡上，可以查看租户中的设备合规性状态、查看每月设备合规性趋势，并跟踪设备是否分配有合规性策略。 还可以根据条件访问策略查看有关租户设备合规性操作和要求的信息。 
+在"概述"选项卡上，可以查看租户中的设备合规性状态、查看每月设备合规性趋势，并跟踪设备是否分配有合规性策略。 还可以查看多少租户没有使用条件访问策略强制执行任何设备合规性要求。 可以选择" **查看更多"** 以查看更多详细信息。
 
 若要获取特定客户租户的详细设备合规性信息，请在该租户的任何状态列下选择一个值。 这将打开"设备"选项卡，以便你可以查看所选租户的设备合规性详细信息。
 
-若要将设备合规性数据导出到Excel逗号分隔的值 (.csv) 文件，请选择"导出 **"。**
+若要将设备合规性数据导出到Excel逗号分隔值 (.csv) 文件，请选择"导出 **"。**
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="&quot;概述&quot;选项卡的屏幕截图。":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="&quot;概述&quot;选项卡的屏幕截图。" lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png":::
 
 ## <a name="devices-tab"></a>"设备"选项卡
 
@@ -46,20 +46,20 @@ Microsoft 365 Lighthouse通过选择左侧导航窗格中的"设备"打开"设�
 
 若要了解哪些租户的设备具有特定的合规性状态，请从计数注释栏中选择该状态以筛选列表。 若要查看一个或多个特定客户租户的设备合规性状态，请使用"租户"下拉菜单筛选列表。
 
-选择列表中的任意设备名称以查看有关该设备的当前合规性状态的详细信息。 你可以同步或重新启动设备，或者如果你需要进行故障排除 **或** 执行进一步操作Microsoft Endpoint Manager请选择"在设备上查看设备"。
+选择列表中的任意设备名称以查看有关该设备的当前合规性状态的详细信息。 你可以同步或重新启动设备，如果需要进行故障排除 **或** 执行进一步Microsoft Endpoint Manager请选择"在设备上查看设备"。
 
 > [!NOTE]
 > 重新启动设备时，设备所有者不会自动收到通知，并且可能会丢失未保存的工作。 因此，你可能想要在重启设备之前通知设备所有者。
 
 "设备"选项卡还包括以下选项：
 
-- **导出：** 选择将设备合规性数据导出到Excel逗号分隔 (.csv) 文件中。
+- **导出：** 选择将设备合规性数据导出到Excel逗号分隔值 (.csv) 文件。
 - **刷新：** 选择以检索最新的设备合规性数据。
 - **同步：** 从列表中选择状态为"不兼容、宽限期或未评估"的一个或多个设备，然后选择此选项以强制这些设备签入 Intune 并立即接收已分配给它们的任何策略。
-- **重新启动：** 从列表中选择状态为"不符合、宽限期或未评估"的一个或多个设备，然后选择此选项以重新启动这些设备。
+- **重新启动：** 从列表中选择一个或多个状态为"不符合、宽限期"或"未评估"的设备，然后选择此选项以重新启动这些设备。
 - **搜索：** 输入关键字以快速找到列表中的特定设备。
  
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="&quot;设备&quot;选项卡的屏幕截图。":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="&quot;设备&quot;选项卡的屏幕截图。" lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png":::
 
 ## <a name="policies-tab"></a>"策略"选项卡
 
@@ -71,15 +71,15 @@ Microsoft 365 Lighthouse通过选择左侧导航窗格中的"设备"打开"设�
 
 "策略"选项卡还包括以下选项：
 
-- **导出：** 选择将设备合规性策略数据导出到Excel逗号分隔 (.csv) 文件中。
+- **导出：** 选择将设备合规性策略数据导出到Excel逗号分隔值 (.csv) 文件。
 - **刷新：** 选择以检索最新的设备合规性策略数据。
 - **搜索：** 输入关键字以快速找到列表中的特定设备合规性策略。
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" alt-text="&quot;策略&quot;选项卡的屏幕截图。":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" alt-text="&quot;策略&quot;选项卡的屏幕截图。" lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png":::
 
 ## <a name="settings-tab"></a>设置选项卡
 
-the 设置 tab provides an aggregated report of non-complians settings across tenant devices. 
+the 设置 tab provides an aggregated report of non-compliant settings across tenant devices. 
 
 若要查看特定平台上设备的不兼容设置，请使用"平台"下拉菜单筛选列表。  若要查看一个或多个特定客户租户的不兼容设置，请使用"租户"下拉菜单筛选列表。
 
@@ -87,11 +87,11 @@ the 设置 tab provides an aggregated report of non-complians settings across te
 
 "设置"选项卡还包括以下选项：
 
-- **导出：** 选择以将不兼容的设置数据导出到Excel逗号分隔 (.csv) 文件中。
+- **导出：** 选择以将不兼容的设置数据导出到Excel逗号分隔值 (.csv) 文件中。
 - **刷新：** 选择以检索最新的不合规设置数据。
 - **搜索：** 输入关键字以在列表中快速找到特定的不兼容设置。
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="&quot;设置&quot;选项卡设置屏幕截图。":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="&quot;设置&quot;选项卡设置屏幕截图。" lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png":::
 
 ## <a name="related-content"></a>相关内容
 

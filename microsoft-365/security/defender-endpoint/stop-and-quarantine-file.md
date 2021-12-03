@@ -1,8 +1,7 @@
 ---
 title: 停止和隔离文件 API
-description: 了解如何停止在设备上运行文件，并删除 Microsoft Defender for Endpoint 中的文件。 请参阅 示例。
+description: 了解如何停止在设备上运行文件，并删除 Microsoft Defender for Endpoint 中的文件。 请参阅示例。
 keywords: api， 图形 api， 受支持的 api， 停止和隔离文件
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +15,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2c89aa8951cce3ba5c66528a66b3ff9e463d2b88
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f61e238030c5c8c31e514ef76cf90ffc4b5bd92
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210897"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300942"
 ---
 # <a name="stop-and-quarantine-file-api"></a>停止和隔离文件 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：**
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -48,7 +49,7 @@ ms.locfileid: "60210897"
 > [!IMPORTANT]
 > 只有在：
 >
-> - 正在采取操作的设备正在运行Windows 10版本 1703 或更高版本
+> - 正在采取操作的设备正在运行Windows 10版本 1703 或更高版本，或Windows 11
 > - 该文件不属于受信任的第三方发布者，或者未由 Microsoft 签名
 > - Microsoft Defender 防病毒必须至少在被动模式下运行。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
@@ -59,9 +60,9 @@ ms.locfileid: "60210897"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Machine.StopAndQuarantine|"停止和隔离"
-Application|Machine.Read.All|"读取所有计算机配置文件"
-Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+应用程序|Machine.StopAndQuarantine|"停止和隔离"
+应用程序|Machine.Read.All|"读取所有计算机配置文件"
+应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.StopAndQuarantine|"停止和隔离"
 
 > [!NOTE]
@@ -80,8 +81,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
-Content-Type|string|application/json. **必需**。
+Authorization|String|Bearer {token}。 必需。
+Content-Type|string|application/json. 必需。
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象：
@@ -89,7 +90,7 @@ Content-Type|string|application/json. **必需**。
 参数|类型|说明
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 必需。
-Sha1|字符串|在设备上停止和隔离的文件的 Sha1。 **必需**。
+Sha1|String|在设备上停止和隔离的文件的 Sha1。 必需。
 
 ## <a name="response"></a>响应
 

@@ -2,7 +2,6 @@
 title: 按 ID 获取修正活动
 description: 返回指定修正活动的信息。
 keywords: api， 修正， 修正 api， 获取， 修正任务， 按 ID 修正，
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 25040682cad424531aa4b0a6d51978639d71ef83
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d1d6b075bdba189e02cc50a4c19d874afd5802e7
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167270"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301098"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>按 ID 获取修正活动
 
@@ -46,7 +45,7 @@ ms.locfileid: "61167270"
 
 [详细了解修正活动](tvm-remediation.md)。
 
-## <a name="list-a-specified-remediation-activity-for-id"></a>列出指定 ID (修正) 
+## <a name="list-a-specified-remediation-activity-for-id"></a>列出 ID (指定的修正) 
 
 **URL：** GET： /api/remediationTasks/ \{ id\}
 
@@ -56,7 +55,7 @@ ms.locfileid: "61167270"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|RemediationTasks.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
+应用程序|RemediationTasks.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
 委派（工作或学校帐户）|RemediationTask.Read.Read|\'阅读威胁和漏洞管理漏洞信息\'
 
 ## <a name="properties"></a>属性
@@ -66,7 +65,7 @@ Application|RemediationTasks.Read.All|\'阅读威胁和漏洞管理漏洞信息\
 类别|字符串|软件/安全配置 (修正活动的) |软件
 completerEmail|String|如果修正活动是由某人手动完成的，此列将包含他们的电子邮件|NULL
 completerId|String|如果修正活动是由某人手动完成的，则此列包含其对象 ID|NULL
-completionMethod|String|如果所有设备 (都由选择"标记为已完成) 或"手动"进行修补，则修正活动可以"自动"完成。|自动
+completionMethod|String|如果所有 (设备都由选择"标记为已完成") 或"手动"进行修补，则修正活动可以"自动"完成。|自动
 createdOn|日期时间|创建此修正活动的时间|2021-01-12T18：54：11.5499478Z
 说明|String|此修正活动的说明|将 Microsoft Silverlight 更新到更高版本，以减少影响设备的已知漏洞。
 dueOn|日期时间|此修正活动的创建者设置的截止日期|2021-01-13T00：00：00Z
@@ -76,7 +75,7 @@ nameId|String|相关产品名称|Microsoft Silverlight
 优先级|String|针对此修正活动的创建者设置的优先级 (高\中\低) |高
 productId|String|相关产品 ID|microsoft-_-silverlight
 productivityImpactRemediationType|String|只能请求对不影响用户的设备进行一些配置更改。 此值指示"所有公开的设备"或"仅不会影响用户的设备"之间的选择。|AllExposedAssets
-rbacGroupNames|String|相关设备组名称|[ "Windows Servers"， "Windows 10" ]
+rbacGroupNames|String|相关设备组名称|[ "Windows Servers"、"Windows 11"、"Windows 10" ]
 recommendedProgram|String|要升级到的推荐程序|NULL
 recommendedVendor|String|建议升级到的供应商|NULL
 recommendedVersion|String|要更新/升级到的建议版本|NULL

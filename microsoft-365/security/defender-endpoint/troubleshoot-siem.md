@@ -2,8 +2,6 @@
 title: 解决 Microsoft Defender for Endpoint 中的 SIEM 工具集成问题
 description: 解决将 SIEM 工具与 Microsoft Defender for Endpoint 一同使用时可能出现的问题。
 keywords: 疑难解答， siem， 客户端密码， 密码
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 9218ba1c104f2792362f566850c584f0cf5dc795
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5c0f02834fe70c086ca5db7def6d9f2fed2c7543
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196774"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301734"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>SIEM 工具集成问题疑难解答
 
@@ -29,7 +27,8 @@ ms.locfileid: "60196774"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -45,15 +44,15 @@ ms.locfileid: "60196774"
 
 1. 登录到 [Azure 管理门户](https://portal.azure.com)。
 
-2. 选择“**Azure Active Directory**”。
+2. 选择“Azure Active Directory”。
 
 3. 选择租户。
 
 4. 单击 **"应用注册"。** 然后在"应用程序"列表中，选择应用程序。
 
-5. 选择 **"&** 密码"部分，单击"新建客户端密码"，然后提供说明并指定有效期。
+5. 选择 **"&密码"** 部分，单击"新建客户端密码"，然后提供说明并指定有效期。
 
-6. 单击“**保存**”。 将显示键值。
+6. 单击 **“保存”**。 将显示键值。
 
 7. 复制值并将其保存在安全的位置。
 
@@ -63,7 +62,7 @@ ms.locfileid: "60196774"
 
 1. 登录到 [Azure 管理门户](https://ms.portal.azure.com)。
 
-2. 选择“**Azure Active Directory**”。
+2. 选择“Azure Active Directory”。
 
 3. 选择租户。
 
@@ -74,7 +73,7 @@ ms.locfileid: "60196774"
    - 对于英国： `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
    - 对于美国  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` ：。
 
-6. 单击“**保存**”。
+6. 单击 **“保存”**。
 
 ## <a name="error-while-enabling-the-siem-connector-application"></a>启用 SIEM 连接器应用程序时出错
 

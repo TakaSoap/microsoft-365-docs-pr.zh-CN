@@ -2,8 +2,7 @@
 title: 按建议列出漏洞
 description: 检索与安全建议关联的漏洞列表。
 keywords: api， 图形 api， 受支持的 api， 获取， 漏洞列表， 安全建议， 针对漏洞的安全建议， 危险和漏洞管理， 危险和漏洞管理 api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ee1b99ceae87cdb6542e06ea7ee22c52db23ee96
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 05e4719e69601024af25b2b797477506f195d328
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168604"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300222"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>按建议列出漏洞
 
@@ -46,7 +45,7 @@ ms.locfileid: "61168604"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Vulnerability.Read.All|"读取威胁和漏洞管理安全建议信息"
+应用程序|Vulnerability.Read.All|"读取威胁和漏洞管理安全建议信息"
 委派（工作或学校帐户）|Vulnerability.Read|"读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求

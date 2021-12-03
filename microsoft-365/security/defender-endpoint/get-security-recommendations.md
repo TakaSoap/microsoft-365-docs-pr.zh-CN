@@ -2,8 +2,7 @@
 title: 获取安全建议
 description: 检索与给定设备 ID 相关的安全建议集合。
 keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 每个设备的安全建议， 威胁& 漏洞管理 api， Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b15ca754b83b717d033cd927e683b4e362cbd64d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6441610fb9c1ebdee823badce2bd2c5439142cf3
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168926"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300246"
 ---
 # <a name="get-security-recommendations"></a>获取安全建议
 
@@ -46,7 +45,7 @@ ms.locfileid: "61168926"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|SecurityRecommendation.Read.All|"读取威胁和漏洞管理安全建议信息"
+应用程序|SecurityRecommendation.Read.All|"读取威胁和漏洞管理安全建议信息"
 委派（工作或学校帐户）|SecurityRecommendation.Read|"读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求

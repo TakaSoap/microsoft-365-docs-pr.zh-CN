@@ -2,7 +2,6 @@
 title: 收集调查包 API
 description: 使用此 API 创建与从设备收集调查包相关的调用。
 keywords: api， 图形 api， 受支持的 api， 收集调查包
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4359d2f135b965a06003d060def12b4ed053ca27
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: e6a310c167a0f77f0022b9ba35ed9aa94e437eb9
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171493"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302214"
 ---
 # <a name="collect-investigation-package-api"></a>收集调查包 API
 
@@ -49,7 +48,7 @@ ms.locfileid: "61171493"
 
 > [!IMPORTANT]
 >
-> - 这些响应操作仅适用于 Windows 10 版本 1703 或更高版本上的设备。
+> - 这些响应操作仅适用于 Windows 10 版本 1703 或更高版本以及 Windows 11。
 
 ## <a name="permissions"></a>权限
 
@@ -57,13 +56,13 @@ ms.locfileid: "61171493"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Machine.CollectForensics|"收集取证"
+应用程序|Machine.CollectForensics|"收集取证"
 委派（工作或学校帐户）|Machine.CollectForensics|"收集取证"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："警报调查" (请参阅创建和管理角色，了解) [](user-roles.md)
 > - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -83,7 +82,7 @@ Content-Type|string|application/json. 必需。
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|Description
+参数|类型|说明
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 必需。
 

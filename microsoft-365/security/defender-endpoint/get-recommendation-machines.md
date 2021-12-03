@@ -2,8 +2,7 @@
 title: 按建议列出设备
 description: 检索与安全建议关联的设备列表。
 keywords: api， 图形 api， 受支持的 api， 获取， 针对易受攻击的设备的安全建议， 危险和漏洞管理， 危险和漏洞管理 api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a228df3c18ae29eeac20d1a5fd42f2c1ed1ba094
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b30c558c2e202000145c89e9ab5a122d0dbe6283
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167282"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301566"
 ---
 # <a name="list-devices-by-recommendation"></a>按建议列出设备
 
@@ -46,7 +45,7 @@ ms.locfileid: "61167282"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|SecurityRecommendation.Read.All|"读取威胁和漏洞管理安全建议信息"
+应用程序|SecurityRecommendation.Read.All|"读取威胁和漏洞管理安全建议信息"
 委派（工作或学校帐户）|SecurityRecommendation.Read|"读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -90,7 +89,7 @@ GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-c
         {
             "id": "e058770379bc199a9c179ce52a23e16fd44fd2ee",
             "computerDnsName": "niw_pc",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "rbacGroupName": "GroupTwo"
         }
         ...

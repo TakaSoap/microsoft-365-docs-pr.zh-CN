@@ -2,8 +2,6 @@
 title: 使用 REST API 拉取 Microsoft Defender 的终结点检测
 description: 了解如何调用 Microsoft Defender for Endpoint API 终结点，以使用 SIEM REST API 拉取 JSON 格式的检测。
 keywords: 检测， 拉取检测， rest api， 请求， 响应
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2ca1f3d257e40fab340972b3b0d96ce0f7b9977b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f4f5dbcde4a80b01c3df7ee7c32b41afc89dbba6
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194029"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301002"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>使用 SIEM REST API 拉取 Microsoft Defender 的终结点检测
 
@@ -30,7 +28,8 @@ ms.locfileid: "60194029"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)。
@@ -55,7 +54,7 @@ Microsoft Defender for Endpoint 支持 OAuth 2.0 协议从 API 拉取检测。
 
 有关 OAuth 规范详细信息，请参阅 [OAuth 网站](http://www.oauth.net)。
 
-Microsoft Defender for Endpoint 支持 _授权_ 授予流和客户端凭据流来获取拉取检测的访问权限，Azure Active Directory (AAD) 授权服务器。 
+Microsoft Defender for Endpoint 支持 _授权_ 授予流和 _客户端_ 凭据流来获取拉取检测的访问权限，Azure Active Directory (AAD) 授权服务器。
 
 授权 _授予流_ 使用用户凭据获取授权代码，然后使用授权代码获取访问令牌。
 
@@ -66,9 +65,9 @@ Microsoft Defender for Endpoint 支持 _授权_ 授予流和客户端凭据流�
 > [!NOTE]
 > Microsoft Defender 安全中心将类似的警报检测合并到单个警报中。 此 API 基于您设置的查询参数，以原始形式拉取警报检测，从而使您可以应用自己的分组和筛选。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-- 在调用 Microsoft Defender for Endpoint 终结点以拉取检测之前，你需要在 AAD Azure Active Directory (启用 SIEM) 。 有关详细信息，请参阅在 [Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
+- 在调用 Microsoft Defender for Endpoint 终结点以拉取检测之前，你需要在 Azure Active Directory (AAD) 中启用 SIEM 集成应用程序。 有关详细信息，请参阅在 [Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
 
 - 请记下 Azure 应用程序注册过程中的下列值。需要使用这些值在服务或守护程序应用中配置 OAuth 流：
   - 应用程序 ID（应用程序专用）
@@ -106,7 +105,7 @@ resource=https%3A%2F%2Fgraph.windows.net&client_id=35e0f735-5fe4-4693-9e68-3de80
 }
 ```
 
-现在，可以在对 *Defender* for Endpoint API 的请求access_token字段的值。
+你现在可以在对 *Defender* for Endpoint API 的请求access_token字段的值。
 
 ## <a name="request"></a>请求
 
@@ -122,7 +121,7 @@ GET|使用适用于你地区的 URI。 <p> **对于欧盟**： `https://wdatp-al
 
 标头|类型|说明|
 ---|---|---
-Authorization|string|必需。 Azure AD 访问令牌，格式为 **Bearer** &lt; *token* &gt; 。|
+Authorization|string|必填。 The Azure AD access token in the form **Bearer** &lt; *token* &gt; .|
 
 ### <a name="request-parameters"></a>请求参数
 
@@ -136,7 +135,7 @@ ago|string|在下列时间范围内拉取警报： `(current_time - ago)` 时而
 limit|int|定义要检索的警报数。 将基于定义的号码检索最新警报。<p> **注意**：如果未指定，将检索该时间范围内可用的所有警报。
 machinegroups|string|指定要拉取警报的设备组。 <p> **注意**：如果未指定，将检索来自所有设备组的警报。 <p> 示例： <br><br> `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines`
 DeviceCreatedMachineTags|string|注册表中的单个设备标记。
-CloudCreatedMachineTags|string|在活动中创建的设备Microsoft Defender 安全中心。
+CloudCreatedMachineTags|string|在应用程序中创建的设备Microsoft Defender 安全中心。
 
 ### <a name="request-example"></a>请求示例
 

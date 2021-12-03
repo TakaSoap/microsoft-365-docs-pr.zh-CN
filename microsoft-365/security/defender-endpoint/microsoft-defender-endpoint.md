@@ -14,18 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ad4da096240b1c2d547eca1b2415dca0dbc056c9
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 87e57c8744ebca36008e0c7767fc27309fa87617
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110459"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301458"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -75,7 +76,7 @@ Defender for Endpoint 使用内置于 Windows 10 和 Microsoft 的可靠云服�
 
 > [!TIP]
 >
-> - 了解 Defender for Endpoint 中的最新增强功能：[Microsoft Defender for Endpoint 中的新增功能](whats-new-in-microsoft-defender-atp.md)。
+> - 了解 Defender for Endpoint 中的最新增强功能：[Microsoft Defender for Endpoint 中的新增功能](whats-new-in-microsoft-defender-endpoint.md)。
 > - Microsoft Defender for Endpoint 在最近的 MITRE 评估中演示了业界领先的光学和检测功能。请参阅：[来自基于 MITRE ATT&CK 的评估的见解](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
 
 <a name="tvm"></a>

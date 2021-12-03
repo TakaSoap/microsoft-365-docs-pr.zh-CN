@@ -2,7 +2,6 @@
 title: 获取与用户相关的计算机 API
 description: 了解如何使用获取与用户相关的计算机 API 检索与 Microsoft Defender for Endpoint 中的用户 ID 相关的设备集合。
 keywords: api， 图形 api， 受支持的 api， 获取， 用户， 用户相关警报
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a1a8972d17aaf2d03961f36619006c9b3ddf72e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0ed5410005bb07c2e0fe97a6a7d26fddcdacbe50
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167426"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302082"
 ---
 # <a name="get-user-related-machines-api"></a>获取与用户相关的计算机 API
 
@@ -52,8 +51,8 @@ ms.locfileid: "61167426"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application |Machine.Read.All|"读取所有计算机配置文件"
-Application |Machine.ReadWrite.All |"读取和写入所有计算机信息"
+应用程序 |Machine.Read.All|"读取所有计算机配置文件"
+应用程序 |Machine.ReadWrite.All |"读取和写入所有计算机信息"
 委派（工作或学校帐户） | Machine.Read | "读取计算机信息"
 委派（工作或学校帐户） | Machine.ReadWrite | "读取和写入计算机信息"
 
@@ -69,7 +68,7 @@ Application |Machine.ReadWrite.All |"读取和写入所有计算机信息"
 GET /api/users/{id}/machines
 ```
 
-**ID 不是完整的 UPN，而只是用户名。 (，若要检索计算机以便 user1@contoso.com /api/users/user1/machines)**
+**ID 不是完整的 UPN，而只是用户名。 (，若要检索计算机以使用 /api/users/user1/) machines user1@contoso.com**
 
 ## <a name="request-headers"></a>请求标头
 

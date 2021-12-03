@@ -3,8 +3,6 @@ title: Microsoft Defender for Endpoint 中的已连接应用程序
 ms.reviewer: ''
 description: 查看使用标准 OAuth 2.0 协议对连接的合作伙伴应用程序进行身份验证并提供与 Microsoft Defender for Endpoint API 一同使用的令牌。
 keywords: partners， applications， third-party， connections， sentinelone， lookout， bitdefender， corrata， morphisec， paloalto， ziften， better mobile
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2e69f353c654fb8b5f476dad32805b21a3ccf96b
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 4dd630dd2b35c2fedc0340cd873ff065b2685b41
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218006"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300642"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的已连接应用程序
 

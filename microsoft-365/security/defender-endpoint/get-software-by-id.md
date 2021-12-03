@@ -2,8 +2,7 @@
 title: 按 ID 获取软件
 description: 按 ID 检索软件详细信息列表。
 keywords: api， 图形 api， 受支持的 api， 获取， 软件， Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 867d537e70c832a7005186875db40290db933afc
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0f5749fcb98253feda4bec1dde08f7765227f676
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168566"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301902"
 ---
 # <a name="get-software-by-id"></a>按 ID 获取软件
 
@@ -46,7 +45,7 @@ ms.locfileid: "61168566"
 
 权限类型|权限|权限显示名称
 ---|---|---
-Application|Software.Read.All|"读取威胁和漏洞管理软件信息"
+应用程序|Software.Read.All|"读取威胁和漏洞管理软件信息"
 委派（工作或学校帐户）|Software.Read|"读取威胁和漏洞管理软件信息"
 
 ## <a name="http-request"></a>HTTP 请求

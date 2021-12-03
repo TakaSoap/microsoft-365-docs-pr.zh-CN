@@ -2,8 +2,7 @@
 title: 获取程序包 SAS URI API
 description: 使用此 API 获取允许下载调查包的 URI。
 keywords: api， 图形 api， 受支持的 api， 获取包， sas， uri
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9201e4fff677d166f126baf14e2f75d98c9e6eea
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d64219ad2a48a64926bf177fb506d6611ece0ca3
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167294"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302406"
 ---
 # <a name="get-package-sas-uri-api"></a>获取程序包 SAS URI API
 
@@ -42,7 +41,7 @@ ms.locfileid: "61167294"
 
 > [!IMPORTANT]
 >
-> - 这些操作仅适用于 Windows 10 版本 1703 或更高版本上的设备。
+> - 这些操作仅适用于 Windows 10 版本 1703 或更高版本以及 Windows 11。
 
 ## <a name="limitations"></a>限制
 
@@ -54,14 +53,14 @@ ms.locfileid: "61167294"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Machine.Read.All|"'读取所有计算机配置文件'"
-Application|"Machine.ReadWrite.All|"读取和写入所有计算机信息"
+应用程序|Machine.Read.All|"'读取所有计算机配置文件'"
+应用程序|"Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.CollectForensics|"收集取证"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："警报调查" (创建和管理角色，了解) [](user-roles.md)
 > - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求

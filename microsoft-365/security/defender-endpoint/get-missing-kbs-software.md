@@ -2,8 +2,7 @@
 title: 通过软件 ID 获取缺失的 KB
 description: 按软件 ID 检索缺少的安全更新
 keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 软件 ID， 威胁& 漏洞管理 api， Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e5e94d29cb8779ba38ce0200ec2dd981dda22b57
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 692d0ca44a46ef11bd7ab3e9bb32a0c98dd7e01a
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167306"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301434"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>通过软件 ID 获取缺失的 KB
 
@@ -36,7 +35,7 @@ ms.locfileid: "61167306"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-检索缺少的 (，) 软件 ID 更新
+按软件 ID (缺少的) 更新
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +43,7 @@ ms.locfileid: "61167306"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Software.Read.All|"读取威胁和漏洞管理软件信息"
+应用程序|Software.Read.All|"读取威胁和漏洞管理软件信息"
 委派（工作或学校帐户）|Software.Read|"读取威胁和漏洞管理软件信息"
 
 ## <a name="http-request"></a>HTTP 请求

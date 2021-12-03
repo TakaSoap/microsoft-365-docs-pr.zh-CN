@@ -2,8 +2,7 @@
 title: 列出 machineActions API
 description: 了解如何使用 List MachineActions API 检索 Microsoft Defender for Endpoint 中的计算机操作集合。
 keywords: api， 图形 api， 受支持的 api， machineaction 集合
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 885186ee528233a0f4fecc71dcfab6c1a639da01
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0c7f5b1097e7fe59f9ccaa28800da27d943f1176
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167318"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301590"
 ---
 # <a name="list-machineactions-api"></a>列出 MachineActions API
 
@@ -63,8 +62,8 @@ OData 的 `$filter` 查询在以下项上受 `id` 支持 `status` ：、、、�
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-Application|Machine.Read.All|"读取所有计算机配置文件"
-Application|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+应用程序|Machine.Read.All|"读取所有计算机配置文件"
+应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
 委派（工作或学校帐户）|Machine.Read|"读取计算机信息"
 委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 

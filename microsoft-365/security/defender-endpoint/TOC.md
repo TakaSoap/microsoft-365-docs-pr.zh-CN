@@ -4,7 +4,7 @@
 ### [什么是 Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
 ### [Compare Defender for Endpoint Plan 1 到计划 2](defender-endpoint-plan-1-2.md)
 ### [最低要求](minimum-requirements.md)
-### [Microsoft Defender for Endpoint 中的新增功能](whats-new-in-microsoft-defender-atp.md)
+### [Microsoft Defender for Endpoint 中的新增功能](whats-new-in-microsoft-defender-endpoint.md)
 ### [预览功能](preview.md)
 ### [数据存储和隐私](data-storage-privacy.md)
 ### [Microsoft Defender 安全中心概述](use.md)
@@ -136,7 +136,7 @@
 ###### [静态代理配置](linux-static-proxy-configuration.md)
 ###### [设置首选项](linux-preferences.md)
 ###### [检测并阻止可能不需要的应用程序](linux-pua.md)
-###### [使用 Microsoft Defender for Endpoint on Linux 定期扫描](linux-schedule-scan-atp.md)
+###### [使用 Microsoft Defender for Endpoint on Linux 定期扫描](linux-schedule-scan-mde.md)
 ###### [计划更新 Microsoft Defender for Endpoint （Linux）](linux-update-MDE-Linux.md)
 
 
