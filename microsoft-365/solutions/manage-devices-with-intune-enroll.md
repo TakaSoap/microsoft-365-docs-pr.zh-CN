@@ -11,15 +11,17 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
-ms.custom: seo-marvel-jun2020
+- m365solution-managedevices
+- m365solution-scenario
+ms.custom: ''
 keywords: ''
 description: ''
-ms.openlocfilehash: 466bb739085625a8992595a2d518e6f1cbdeb4a4
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 5091aa197727602a550030bb462cc2e85d21c88d
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129071"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301326"
 ---
 # <a name="step-2-enroll-devices-into-management-with-intune"></a>步骤 2. 使用 Intune 将设备注册到管理
 
@@ -36,24 +38,24 @@ ms.locfileid: "61129071"
 ## <a name="windows-enrollment"></a>Windows 注册
 有多种选项可用于注册 Windows 10 和 Windows 11 设备。 最常见的方法包含以下两种:
 
-- Azure Active Directory (Azure AD)联接 - 将设备与Azure Active Directory 联接，并使用户能够使用其Azure AD 凭据登录到 Windows。 如果已启用自动注册，则设备会自动在 Intune 中注册。 自动注册的好处是用户流程只有一步。 否则，他们必须通过仅限 MDM 注册单独注册并重新输入其凭据。 用户在初始 Windows OOBE 期间或在“设置”中以这种方式注册。 设备在 Intune 中被标记为企业所有的设备。
+- Azure Active Directory (Azure AD)联接 - 将设备与Azure Active Directory 联接，并使用户能够使用其Azure AD 凭据登录到 Windows。 如果已启用自动注册，则设备会自动在 Intune 中注册。 自动注册的好处在于，用户可以单步执行过程。 否则，他们必须通过仅限 MDM 注册单独注册并重新输入其凭据。 用户在初始 Windows OOBE 或“设置”期间以这种方式注册。 设备在 Intune 中被标记为企业所有的设备。
 - Autopilot - 自动执行 Azure AD 联接并将新的企业所有的设备注册到 Intune。 此方法简化了开箱即用体验，且无需将自定义操作系统映像应用于设备。 当管理员使用 Intune 管理 Autopilot 设备时，他们可以在注册后管理策略、配置文件、应用等内容。 有四种类型的 Autopilot 部署: 自部署模式(适用于展台、数字标牌或共享设备)、用户驱动模式(适用于传统用户)、适用于预配部署的 Windows Autopilot 使合作伙伴或 IT 人员能够预配运行 Windows 10 或 Windows 11 的电脑，以使其完全配置且可用于业务，以及适用于现有设备的 Autopilot 使你能够轻松地将最新版本的 Windows 部署到现有设备。
 
-有关其他选项(包括注册 BYOD Windows 设备)，请参阅 [适用于 Windows 设备的 Intune 注册方法](/mem/intune/enrollment/windows-enrollment-methods)。
+有关其他选项（包括注册 BYOD Windows 设备），请参阅 [在 Microsoft Intune 中注册 Windows 设备](/mem/intune/fundamentals/deployment-guide-enrollment-windows)。
 
 ## <a name="iosipados-and-ipados-enrollment"></a>iOS/iPadOS 和 iPadOS 注册
 
 对于用户所有的(BYOD)设备，可以允许用户使用以下其中一种方法注册其个人设备以进行 Intune 管理。
-- 设备注册是你可能认为的典型 BYOD 注册。 它为管理员提供了各种管理选项。
+- 设备注册是你可能认为的典型 BYOD 注册。 它为管理员提供各种管理选项。
 - 用户注册是更简化的注册流程，为管理员提供设备管理选项子集。 此功能目前处于预览阶段。
 
 对于为其用户购买设备的组织，Intune 支持以下 iOS/iPadOS 公司所有的设备注册方法:
-- Apple 的自动设备注册(ADE)
+- Apple 的自动设备注册 (ADE)
 - Apple School Manager
-- Apple 配置器设置助手注册
-- Apple 配置器直接注册
+- Apple Configurator 设置助理注册
+- Apple Configurator 直接注册
 
-有关详细信息，请参阅 [在 Intune 中注册 iOS/iPadOS 设备](/mem/intune/enrollment/ios-enroll)。
+有关详细信息，请参阅 [在 Microsoft Intune 中注册 iOS 和 iPadOS 设备](/mem/intune/fundamentals/deployment-guide-enrollment-ios-ipados)。
 
 ## <a name="android-enrollment"></a>Android 注册 
 
@@ -61,9 +63,9 @@ ms.locfileid: "61129071"
 
 使用 Android 工作配置文件后，最终用户的信息会清楚地与数据容器以及供工作和个人使用的单独应用分开。 对于用户来说，要注册设备并仍然维护其自身数据的隐私和企业数据的安全性，这是一种理想的方式。 
 
-但是，如果你的组织正在证明 Android 设备，则你可以选择使用所谓的完全托管(用户关联)或专用(无用户关联)设备。
+但是，如果你的组织提供 Android 设备，则你可能会选择使用所谓的完全托管（用户关联）或专用（无用户关联）设备。
 
-要了解 Android 注册以及自动化 Android 注册的详细信息，请参阅 [注册 Android 设备](/mem/intune/enrollment/android-enroll)。
+要了解有关 Android 注册的更多信息，请参阅 [在 Microsoft Intune 中注册 Android 设备](/mem/intune/fundamentals/deployment-guide-enrollment-android)。
 
 ## <a name="macos-enrollment"></a>macOS 注册
 
@@ -71,7 +73,7 @@ ms.locfileid: "61129071"
 - 仅限 Intune 注册 — 这适用于 macOS 设备的基本管理。 它需要执行手动流程，就像大多数其他基于用户的注册选项一样。 但是，如果有少量 Mac 设备，则这可能比仅为少数用户设置完整的自动化基础结构更简单。 使用仅限 Intune 注册能够部署证书、密码配置和应用程序等内容。 还可以配置合规性策略并启发条件访问以及强制执行加密和设备擦除的功能。 
 - Intune 和 Jamf 注册 — 对于那些寻求对 Mac 管理的最深入支持的人员，我们凭借适用于条件访问的 Jamf + Intune 提供了一种出色的解决方案，它结合了 Jamf 的大量 Mac 管理功能和 Intune 合规性，以启用条件访问。 在此方案中，你仍然正在使用 Jamf 以完全托管设备，同时能够从 Jamf 接收这些信号以提高安全性。
 
-要了解有关 macOS 注册的详细信息，请参阅 [在 Intune 中为 macOS 设备设置注册](/mem/intune/enrollment/macOS-enroll)。
+要了解有关 macOS 注册的更多信息，请参阅 [在 Microsoft Intune 中注册 macOS 设备](/mem/intune/fundamentals/deployment-guide-enrollment-macos)。
 
 ## <a name="next-steps"></a>后续步骤
 

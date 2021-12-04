@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: 了解如何使用合规性中心来启用存档邮箱，以支持组织的邮件保留、电子数据展示和法定保留要求。
-ms.openlocfilehash: 0519853f526254173c086ff353c6e5f5cf0208a2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 938410a8f12e62549bf3ec8e8778036440df5aea
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786370"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283998"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>在合规性中心中启用存档邮箱
 
@@ -51,15 +51,15 @@ Microsoft 365 中的存档（又称为 *就地存档*）为用户提供额外的
    > [!NOTE]
    > **存档** 页面最多显示500个用户。
 
-4. 在邮箱的列表中，选择要启用存档邮箱的用户。
+3. 在邮箱的列表中，选择要启用存档邮箱的用户。
 
    ![单击所选用户的详细信息窗格中的“启用”以启用存档邮箱。](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
 
-5. 在所选用户的详细信息窗格中, 单击 **启用**。
+4. 在所选用户的详细信息窗格中, 单击 **启用**。
 
    将显示警告，指示如果启用存档邮箱，用户邮箱中早于分配给邮箱的存档策略的项目将移动到新的存档邮箱。默认存档策略是分配给 ExchangeOnline 邮箱的保留策略的一部分，在项目传递到邮箱或用户创建两年后，它会将项目移动到存档邮箱。有关详细信息，请参阅本文的 **详细信息** 部分。
 
-6. 单击“是”启用存档邮箱。
+5. 单击“是”启用存档邮箱。
 
    可能需要一些时间才会创建存档邮箱。创建后，“**存档邮箱: 已启用**”将显示在所选用户的详细信息窗格中。可能需要单击“**刷新**”“![刷新”图标 ](../media/O365-MDM-Policy-RefreshIcon.gif) 才能更新详细信息窗格中的信息。
 
@@ -131,6 +131,16 @@ Disable-Mailbox -Identity <username> -Archive
 ```powershell
 Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Disable-Mailbox -Archive
 ```
+
+## <a name="run-diagnostics-on-archive-mailboxes"></a>在存档邮箱上运行诊断
+
+你可以对用户的存档邮箱运行自动诊断检查，以识别任何问题和建议的解决方法。
+
+要运行诊断检查，请转到“[运行测试：存档邮箱](https://aka.ms/PillarArchiveMailbox)”。
+
+![在存档邮箱上运行诊断。](../media/ArchiveMailboxDiagnostics.png)
+
+将在 Microsoft 365 管理中心中打开浮出控件页面。 输入要检查的邮箱的电子邮件地址，然后单击“**运行测试**”。
 
 ## <a name="more-information"></a>更多信息
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: 实施 Microsoft 信息治理功能，以管理数据，满足合规性或监管要求。
-ms.openlocfilehash: 66b8bde34cefbb783e4de7c4c12f99b373bbe9b7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0637913acf42a89fc82c7c8a6caacc029b5a0d6
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200469"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283422"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息治理
 
@@ -43,7 +43,7 @@ ms.locfileid: "60200469"
 |[保留策略和保留标签](retention.md)| 通过策略管理和删除工作流程以保留或删除电子邮件、文档、即时消息等内容。 <br /><br />示例方案：[自动保留应用内容标签](apply-retention-labels-automatically.md) | [开始使用保留策略和保留标签](get-started-with-retention.md)|
 |[导入服务](importing-pst-files-to-office-365.md)| 将 PST 文件批量导入到 Exchange Online 邮箱，以保留和搜索电子邮件信息，以满足合规性或法规要求 | [使用网络上传将组织的 PST 文件导入到 Microsoft 365](use-network-upload-to-import-pst-files.md)|
 |[存档第三方数据](archiving-third-party-data.md)| 从社交媒体平台、即时通讯平台、文档协作平台导入、归档、应用第三方数据的合规性解决方案。| [第三方连接器](archiving-third-party-data.md#third-party-data-connectors)|
-|[非活动邮箱](inactive-mailboxes-in-office-365.md)| 在员工离开组织后保留邮箱内容 | [创建和管理非活动邮箱](create-and-manage-inactive-mailboxes.md)|
+|[非活动邮箱](inactive-mailboxes-in-office-365.md)| 在员工离开组织后保留邮箱内容，以便管理员、合规专员和记录经理仍可访问此内容 | [创建和管理非活动邮箱](create-and-manage-inactive-mailboxes.md)|
 
 ## <a name="records-management"></a>记录管理
 
