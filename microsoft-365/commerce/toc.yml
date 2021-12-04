@@ -76,6 +76,8 @@
       href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
 - name: 管理与合作伙伴的关系
   href: manage-partners.md
+- name: 查看合作伙伴特权
+  href: review-partner-admin-privileges.md
 - name: 关闭你的帐户
   href: close-your-account.md
 - name: 联系支持人员
