@@ -14,10 +14,10 @@ metadata:
   ms.localizationpriority: high
 productDirectory:
   items:
-    - title: 入门
+    - title: 开始行动
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: 规划向Microsoft 365迁移。
-      url: what-is-microsoft-365.md
+      summary: 规划移动到 Microsoft 365 for business。
+      url: ../admin/admin-overview/what-is-microsoft-365.md
     - title: 设置 Microsoft 365 商业版
       imageSrc: 'https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg'
       summary: 添加域、添加用户、设置安全策略...

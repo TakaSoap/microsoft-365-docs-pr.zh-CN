@@ -204,5 +204,5 @@ conceptualContent:
           itemType: how-to-guide
           text: 迁移到 Microsoft 365 企业版 E3
       footerLink:
-        url: ../business-video/what-is-microsoft-365.md
+        url: ../admin/admin-overview/what-is-microsoft-365.md
         text: 查看更多信息

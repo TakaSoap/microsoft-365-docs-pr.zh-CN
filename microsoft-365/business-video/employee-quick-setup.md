@@ -20,17 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 帮助员工了解如何设置Office使用应用获取Microsoft 365 商业高级版。
-ms.openlocfilehash: 2a1c3c082cfb676b33e7b033c6516f2f4c37980e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 帮助员工了解如何设置Office应用Microsoft 365 商业高级版。
+ms.openlocfilehash: 396af5d94b7bf68aef6998e86388306303ea1f26
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156950"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311778"
 ---
 # <a name="employee-quick-setup"></a>员工快速设置
 
-你是第一次Microsoft 365企业？ :::image type="icon" source="../media/video-call-icon.png" border="false":::[观看此视频](what-is-microsoft-365.md)了解它。 然后按照下列步骤操作。
+你是第一次Microsoft 365业务？ :::image type="icon" source="../media/video-call-icon.png" border="false":::[观看此视频](../admin/admin-overview/what-is-microsoft-365.md)了解它。 然后按照下列步骤操作。
 
 :::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="显示快速员工设置步骤的图像。":::
 
@@ -41,7 +41,7 @@ ms.locfileid: "60156950"
 
 ## <a name="2-download-and-install-office-apps"></a>2. 下载并安装Office应用程序
 
-1. 选择 **右上角Office"** 安装"。
+1. 选择 **右上角Office** 安装"。
     - 在 Chrome 中，转到页面底部的下载，然后选择" **打开**"。
     - 在 Microsoft Edge/IE 中，选择" **保存**"然后选择" **运行**"。
     
@@ -61,12 +61,12 @@ ms.locfileid: "60156950"
 
 ## <a name="4-save-or-copy-files-to-onedrive"></a>4. 将文件保存或复制到OneDrive
 
-- 保存 **文档OneDrive****应用中的"** 另存为"Office菜单中。
+- 将文档保存到 **OneDrive****应用中的"** 另存为"Office菜单中。
     :::image type="content" source="../media/save-onedrive.png" alt-text="与如何另存为以OneDrive。":::
 
 - 或将文件从桌面或文档复制到" **OneDrive**"。
 
-    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="显示如何从&quot;文档&quot;OneDrive文件的图像。":::
+    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="显示如何从&quot;文档&quot;OneDrive文件夹保存的图像。":::
 
     > [!TIP]
     > 您还可以将文件存储在网站[中的](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)Microsoft 365。

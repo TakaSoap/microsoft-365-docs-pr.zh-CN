@@ -29,13 +29,13 @@ search.appverid:
 - MOL140
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
-description: 了解如何从 Gmail 或其他电子邮件提供商导入联系人、日历和电子邮件，并迁移到Microsoft 365。
-ms.openlocfilehash: ccf170862d00984332891cfee294edba1c08a6b7
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+description: 了解如何从 Gmail 或其他电子邮件提供商导入联系人、日历和电子邮件，并迁移到 Microsoft 365。
+ms.openlocfilehash: ffc7bd021ae1a92ec75ab89f439fad886fbf691d
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128816"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311766"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>将电子邮件和联系人迁移到 Microsoft 365
 
@@ -43,7 +43,7 @@ ms.locfileid: "61128816"
   
  **需要有关此的帮助？**  [请联系Microsoft 365商业支持人员](../../business-video/get-help-support.md)。 
   
-对于此任务，你需要Outlook桌面安装的版本。 Outlook大多数计划都包含Microsoft 365[计划](https://go.microsoft.com/fwlink/p/?LinkId=723731)。
+对于此任务，你需要Outlook安装在桌面上的版本。 Outlook大多数计划都包含Microsoft 365[计划](https://go.microsoft.com/fwlink/p/?LinkId=723731)。
   
 ## <a name="watch-import-and-redirect-email"></a>观看：导入和重定向电子邮件
 
@@ -79,7 +79,7 @@ ms.locfileid: "61128816"
     
 2. [将联系人导入到 Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
-若要启动此过程，请打开 **"Outlook"文件** \> **""打开 &amp; 导出** \> **导入/导出"。**
+若要启动此过程，请打开 **Outlook并选择"** 文件 \> **""打开 &amp; 导出** \> **导入/导出"。**
   
 ![文件菜单中Outlook 2016。](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Open &amp; Export command in Outlook 2016](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![导入/导出按钮Outlook 2016](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
@@ -103,6 +103,6 @@ ms.locfileid: "61128816"
 
 ## <a name="related-content"></a>相关内容
 
-[Plan your setup of Microsoft 365 for business](plan-your-setup.md) (article) \
+[Plan your setup of Microsoft 365 for business (](plan-your-setup.md) article) \
 [Install Office applications](install-applications.md) (link page) \
 [Microsoft 365 管理中心概述](../../business-video/admin-center-overview.md)（视频）

@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: 了解移动到适用于Microsoft 365的要求和注意事项。
-ms.openlocfilehash: 070d3d57d998edabb0711ca11c082f8e41a3406f
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: fd91da48fe7b6ef1bde9340c5fbb4a926055514b
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128660"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311696"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>规划 Microsoft 365 商业版安装
 
-本文适用于已订阅企业Microsoft 365用户。
+本文适用于订阅了企业Microsoft 365用户。
   
 在将组织迁移到Microsoft 365之前，需要满足一些要求、需要获得的信息以及必须做出的决策。
 
@@ -43,7 +43,7 @@ ms.locfileid: "61128660"
 
 ## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>运行安装向导之前要拥有的信息
 
-当你准备好运行安装向导，将域移动到Microsoft 365时，你需要获取以下信息：
+当你准备好运行安装向导，将域移动到 Microsoft 365 时，下面提供了你需要的信息：
   
 - 要添加到其中Microsoft 365。 即使已将它们添加到Microsoft 365，如果要更新域信息，也需要在此处输入其名称。
 
@@ -53,14 +53,14 @@ ms.locfileid: "61128660"
 
 ## <a name="what-happens-when-you-run-the-microsoft-365-setup-wizard"></a>运行安装向导时Microsoft 365会发生什么情况
 
-安装向导将引导你完成在计算机上安装 Microsoft 365 应用、添加和验证域、添加用户并为其分配许可证以及连接域。
+安装向导将指导你在你的计算机上安装 Microsoft 365 应用、添加和验证域、添加用户并为其分配许可证，以及连接你的域。
 
 > [!NOTE]
-> 如果需要将 Microsoft 365 [for business](../add-users/assign-admin-roles.md)中的管理员角色分配给在向导中添加的用户，可以在稍后的"用户"页面上 **执行**。 
+> 如果需要将 Microsoft 365 [企业](../add-users/assign-admin-roles.md)版中的管理员角色分配给在向导中添加的用户，可以在稍后的"用户"页面上 **执行** 该操作。 
   
 如果未完成安装向导，则你随时都可以从管理中心安装程序 [完成安装](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **任务**。 你可以在此处从另一个电子邮件服务迁移电子邮件和联系人、更改管理员帐户的域、管理帐单信息、添加或删除用户、重置密码以及执行其他业务功能。 有关安装向导和"安装"页之间的差异详细信息，请参阅安装程序向导Microsoft 365[安装页面之间的差异](o365-setup-wizard-and-setup-page.md)。
 
-如果遇到问题，请随时致电我们。[我们可随时提供帮助！](../../business-video/get-help-support.md)
+如果遇到问题，请致电我们。 [我们在此提供帮助！。](../../business-video/get-help-support.md)
   
 ## <a name="when-not-to-use-the-setup-wizard-active-directory-synchronization-and-hybrid-environments"></a>何时不使用设置向导？Active Directory 同步和混合环境
 
@@ -102,7 +102,7 @@ ms.locfileid: "61128660"
   
 如果要对电子邮件使用Microsoft 365：
   
-- 若要将企业电子邮件地址 (例如 *rob \@ contoso.com*) 从另一个电子邮件服务移动到 Microsoft 365，需要将邮件传递到新的 Microsoft 365 邮箱。 为此，在"设置"页上选择"迁移用户数据"，我们会逐步指导你在域主机上完成所需的更新。
+- 若要将业务电子邮件地址 (（如 *rob \@ contoso.com*) ）从另一个电子邮件服务移动到 Microsoft 365，需要将邮件传递到新的 Microsoft 365 邮箱。 为此，在"设置"页上选择"迁移用户数据"，我们会逐步指导你在域主机上完成所需的更新。
 
 - 更新域主机后，所做更改通常在一小时或两小时后生效。 但请注意，有时可能需要 72 小时才能通过 Internet 更新更改。
 
@@ -115,34 +115,34 @@ ms.locfileid: "61128660"
 |**多少个邮箱？**|**建议**|
 |:-----|:-----|
 |仅几个  <br/> |如果不想使用"安装"页迁移邮箱，可以允许邮箱所有者迁移自己的电子邮件和联系人。 请参阅[将电子邮件和联系人迁移到Microsoft 365企业。](migrate-email-and-contacts-admin.md)  <br/> |
-|多个  <br/> |如果要从 Gmail 迁移，请参阅将[G Suite 邮箱迁移到 Microsoft 365。](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes)  <br/> 如果要从另一个电子邮件提供商（包括 Exchange）进行迁移，请参阅将多个电子邮件帐户迁移到[Microsoft 365。](/Exchange/mailbox-migration/mailbox-migration)  <br/> |
+|多个  <br/> |如果要从 Gmail 迁移，请参阅将 G Suite 邮箱迁移到[Microsoft 365。](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes)  <br/> 如果要从另一个电子邮件提供商（包括 Exchange）进行迁移，请参阅将多个电子邮件帐户迁移到[Microsoft 365。](/Exchange/mailbox-migration/mailbox-migration)  <br/> |
 
 ## <a name="plan-for-file-storage-and-migration"></a>计划文件存储和迁移
 
-Microsoft 365为个人、小型组织和企业提供云存储。 有关存储位置的指南，请参阅文档存储位置[Microsoft 365。](../../business-video/store-files.md)
+Microsoft 365为个人、小型组织和企业提供云存储。 有关存储位置的指南，请参阅文档存储[位置Microsoft 365。](../../business-video/store-files.md)
   
-- **你可以将数百个文件移动到**[OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB)或移动到SharePoint [网站](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242)。 一次可以上传 100 个文件。 请避免上传超过 2 GB 的文件，这是默认最大文件大小。
+- **可以将数百个文件移动到** OneDrive [或移动到](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB)SharePoint [网站](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242)。 一次可以上传 100 个文件。 请避免上传超过 2 GB 的文件，这是默认最大文件大小。
   
-- **如果要将数千个文件移动到** Microsoft 365，请查看 SharePoint [Online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)。 建议使用迁移工具或考虑雇用[合作伙伴](https://go.microsoft.com/fwlink/?linkid=391089)来帮助进行迁移。 有关如何迁移大量文件的信息，请参阅 [SharePoint Online 和 OneDrive 迁移用户指南](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)。
+- **如果要将数千个文件移动到** Microsoft 365存储中，请查看 SharePoint [Online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)。 建议使用迁移工具或考虑雇用[合作伙伴](https://go.microsoft.com/fwlink/?linkid=391089)来帮助进行迁移。 有关如何迁移大量文件的信息，请参阅 [SharePoint Online 和 OneDrive 迁移用户指南](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)。
   
 ## <a name="plan-for-teams"></a>规划Teams
 
-可以使用Microsoft Teams呼叫组织中订阅的其他人员。 例如，如果组织有 10 个人，则无需任何特殊设置，即可使用Teams相互呼叫和即时消息。 有关详细信息，请参阅开始[Microsoft Teams。](/MicrosoftTeams/get-started-with-teams-quick-start)
+可以使用Microsoft Teams呼叫组织中订阅的其他人员。 例如，如果您的组织有 10 个人，则无需任何特殊设置，即可使用 Teams相互呼叫和 IM。 有关详细信息，请参阅开始[Microsoft Teams。](/MicrosoftTeams/get-started-with-teams-quick-start)
 
 对于大型组织，或者如果你从本地Skype for Business部署开始，请参阅如何部署[Microsoft Teams。](/MicrosoftTeams/how-to-roll-out-teams)
   
 ## <a name="plan-for-integration-with-active-directory-or-other-software"></a>计划与 Active Directory 或其他软件集成
 
-- **是否想要与你的本地 Active Directory 集成？** 可以使用 Azure Active Directory 连接 将本地 Active Directory 与 Microsoft 365 集成。 有关说明，请参阅为 Microsoft 365 设置[目录同步](../../enterprise/set-up-directory-synchronization.md)。
+- **是否想要与你的本地 Active Directory 集成？** 可以使用 Microsoft 365 将本地 Active Directory 与 Azure Active Directory 连接。 有关说明，请参阅为 Microsoft 365 设置[目录同步](../../enterprise/set-up-directory-synchronization.md)。
   
-- **是否想要将Microsoft 365与其他公司的软件集成？** 如果需要将组织Microsoft 365软件集成，建议考虑雇用合作伙伴来帮助进行部署。 [](https://go.microsoft.com/fwlink/?linkid=391089)
+- **是否想要将Microsoft 365与其他公司的软件集成？** 如果需要将 Microsoft 365与组织的其他软件集成，建议考虑雇用合作伙伴来帮助你进行部署。 [](https://go.microsoft.com/fwlink/?linkid=391089)
   
 ## <a name="do-you-want-someone-to-help-you-set-up-microsoft-365"></a>是否希望有人帮助你设置Microsoft 365？
 
 - **如果你的员工不到 50 人：**
 
-  - **寻求帮助，我们将致电 。** 购买Microsoft 365后，你无需运行安装程序 (就可以访问管理中心) 。 在管理中心底部，选择" **需要帮助？"** 描述你的问题，我们将致电你。 
-  - **如果 [Microsoft 365问题，请致电 Microsoft 365](../../business-video/get-help-support.md) for Business Support。** We're here to help! 
+  - **寻求帮助，我们将致电 。** 购买Microsoft 365后，你可以访问管理中心 (无需运行安装程序就可以访问) 。 在管理中心底部，选择" **需要帮助？"** 描述你的问题，我们将致电你。 
+  - **如果 [Microsoft 365问题，](../../business-video/get-help-support.md)请致电商业支持人员**。 We're here to help! 
   - **考虑雇用 [Microsoft 合作伙伴](https://go.microsoft.com/fwlink/?linkid=391089)** 。 如果你的时间很短，或者对 (如将成千上万个文件移动到 Microsoft 365 云存储或与其他软件) 集成，经验丰富的合作伙伴可能会大有帮助。 
 
 - **如果你的员工超过 50 人** ，则 [FastTrack 实施中心](https://go.microsoft.com/fwlink/?LinkId=517115)可对你的部署提供帮助。

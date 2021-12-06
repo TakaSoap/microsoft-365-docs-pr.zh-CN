@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
 description: 了解如何在适用于企业Microsoft 365 AutoPilot 创建 CSV 文件。
-ms.openlocfilehash: de29df41f60a1cf257291942eda70a776466c09c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 62dbcddbdab1a08ab3b19c6616b814c421a57c04
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180432"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311754"
 ---
 # <a name="device-list-csv-file"></a>设备列表 CSV 文件
 
@@ -52,4 +52,4 @@ ms.locfileid: "60180432"
 
 [Microsoft 365文档和资源](../../index.yml)
   
-[企业Microsoft 365入门](../../business-video/what-is-microsoft-365.md)
+[企业Microsoft 365入门](../../admin/admin-overview/what-is-microsoft-365.md)
