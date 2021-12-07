@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 合规中心解决方案试用版 playbook。
-ms.openlocfilehash: ca791a4be3c199527bae3b75c0b529198cef9f4a
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 83e78759bb98ddf623d5a39866e2c812964225d5
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137143"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320787"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>试用版 playbook: Microsoft 365 合规中心解决方案
 
@@ -425,6 +425,8 @@ ms.locfileid: "61137143"
 主动识别并防范隐私风险，例如数据囤积、数据传输和数据过度共享，并帮助组织大规模自动执行并管理主体请求。
 
 [了解有关 Microsoft 365 隐私管理的详细信息](/privacy/solutions/privacymanagement/privacy-management)。
+
+[试用版 playbook：Microsoft 365 隐私管理](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## <a name="additional-resources"></a>其他资源
 

@@ -258,6 +258,8 @@
 ### [设备发现]()
 #### [设备发现概述](device-discovery.md)
 #### [配置设备发现](configure-device-discovery.md)
+#### [Microsoft Defender for IoT 集成](enable-microsoft-defender-for-iot-integration.md)
+#### [启用 Corelight 数据集成](corelight-integration.md)
 #### [设备发现常见问题](device-discovery-faq.md)
 
 ### [网络设备](network-devices.md)

@@ -15,6 +15,8 @@
               href: ../business/sign-up.md
             - name: 使用安装向导安装 Microsoft 365 商业高级版
               href: ../business/set-up.md
+            - name: Microsoft 365 商业高级版（视频）
+              href: admin-overview/what-is-microsoft-365.md
         - name: 注册 Microsoft 365 商业标准版
           items:
             - name: 注册 Microsoft 365 商业标准版
@@ -441,6 +443,6 @@
     - name: 疑难解答
       href: /office/troubleshoot/
     - name: 联系支持人员
-      href: ../business-video/get-help-support.md
+      href: get-help-support.md
     - name: 导航指南
       href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json

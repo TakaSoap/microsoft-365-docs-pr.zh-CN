@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍了如何创建和发布保留标签，以便能够在应用中应用它们，从而保留所需内容，并删除不需要内容。
-ms.openlocfilehash: 3fe6e976d5b71bc7534eaadf2e45ac076dc5d978
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 8b923085f0832db193588cdb60ef91a2b66ce229
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240860"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320693"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>创建保留标签并将其应用到应用中
 
@@ -120,13 +120,13 @@ ms.locfileid: "61240860"
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>当保留标签可应用时
 
-对于 OneDrive 和 SharePoint 位置，通常会显示在一两天内发布的标签供用户选择。 然而，最多允许八天。
+对于 OneDrive 和 SharePoint 位置，通常会显示在一两天内发布的标签供用户选择。 不过，最长可能需要 7 天才能显示。
 
-对于 Exchange 和 Microsoft 365 组位置，在 Outlook 中为用户显示已发布的保留标签最多可能需要 8 天，并且邮箱必须包含至少 10 MB 的数据。
+对于 Exchange 和 Microsoft 365 组位置，最多可能需要 8 天才能向 Outlook 中的用户显示已发布的保留标签，并且邮箱必须包含至少 10 MB 的数据。
 
 ![已发布标签何时生效的关系图。](../media/retention-labels-published-timings.png)
 
-如果 8 天后未显示标签，请从合规中心的 **标签策略** 页面中检查标签策略的 **状态**。 如果看到“**关闭(错误)**”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行PowerShell 命令 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) ，重新尝试策略分发：
+如果 7 天后未显示标签，请从合规中心的“**标签策略**”页面中检查标签策略的“**状态**”。 如果看到“**关闭(错误)**”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行PowerShell 命令 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) ，重新尝试策略分发：
 
 1. [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
