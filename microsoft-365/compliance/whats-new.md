@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新解决方案添加到合规中心、根据反馈更新现有功能，还是推出最新更新的文档，Microsoft 365都可以帮助您随时了解不断变化的合规性环境。 了解我们本月已经进行了哪些工作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 738f1ca79f0cbfa304b77198217d31e7bf1a44bb
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: d0b8b819f01c0fa41b15d037743dc6ed2395ef71
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311612"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320679"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
-无论是向[Microsoft 365 合规中心](microsoft-365-compliance-center.md)添加新解决方案、根据反馈更新现有功能，还是推出最新更新的文档，Microsoft 365 都可以帮助您随时了解不断变化的合规性环境。 请看一下下面的内容，了解当前Microsoft 365的新增功能。
+无论是向[Microsoft 365 合规中心](microsoft-365-compliance-center.md)添加新解决方案、根据反馈更新现有功能，还是推出最新更新的文档，Microsoft 365 都可以帮助您随时了解不断变化的合规性环境。 查看下面的内容，了解当前Microsoft 365的新增功能。
 
 > [!NOTE]
 > 一些合规性功能以不同的速度为客户提供推出。 如果尚未看到功能，请尝试将自己添加到 [定向发布](/office365/admin/manage/release-options-in-office-365)。
@@ -35,7 +35,7 @@ ms.locfileid: "61311612"
 > [!TIP]
 > 有兴趣了解其他管理中心中如何工作？ 请查看以下文章：
 >
-> - [Microsoft 365 管理中心](/office365/admin/whats-new-in-preview)
+> - [最新功能Microsoft 365 管理中心](/office365/admin/whats-new-in-preview)
 > - [SharePoint管理中心的新增功能](/sharepoint/what-s-new-in-admin-center)
 > - [Microsoft 365 Defender 的新增功能](../security/defender/whats-new.md)
 >
@@ -59,10 +59,10 @@ ms.locfileid: "61311612"
 
 ### <a name="ediscovery"></a>电子数据展示
 
-- [在将新大小写格式发布Advanced eDiscovery](advanced-ediscovery-new-case-format.md)正式发布，并重命名为"大案例格式"后，使用新大小写格式
+- [在将新大小写格式Advanced eDiscovery](advanced-ediscovery-new-case-format.md)正式发布并重命名为"大案例格式"后，使用新大小写格式
 
 ### <a name="retention-and-records-management"></a>保留和记录管理
-- 用于控制用户是否可以删除SharePoint和OneDrive标记项目的新记录管理设置
+- 新的记录管理设置，用于控制用户是否可以SharePoint OneDrive和标记项。 以前，配置为保留内容且未将项目标记为记录的保留标签阻止用户在 SharePoint 中允许此操作时删除 OneDrive。 有关详细信息，请参阅保留如何[适用于SharePoint和OneDrive。](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
 
 ### <a name="sensitive-information-types"></a>敏感信息类型
 
@@ -101,7 +101,7 @@ ms.locfileid: "61311612"
 ### <a name="data-loss-prevention"></a>数据丢失防护
 
 - [了解数据丢失防护已](endpoint-dlp-learn-about.md) 针对 macOS 支持和高级分类进行更新;更新了用于创建自定义 DLP 策略以审核所有受支持的文件类型的活动。
-- [终结点数据丢失防护Microsoft 365](endpoint-dlp-getting-started.md) macOS 支持和高级分类的终结点数据丢失防护入门。
+- [开始使用Microsoft 365](endpoint-dlp-getting-started.md) macOS 支持和高级分类更新终结点数据丢失防护。
 - [已针对](endpoint-dlp-using.md) macOS 支持和高级分类更新了使用终结点数据丢失防护。
 - [数据丢失防护策略提示参考](dlp-policy-tips-reference.md) 已针对 macOS 支持和高级分类进行了更新。
 - [将 macOS 设备载入Microsoft 365 (预览) ](device-onboarding-macos-overview.md)针对 macOS 支持和高级分类进行了更新。
@@ -170,7 +170,7 @@ ms.locfileid: "61311612"
 
 ### <a name="data-connectors"></a>数据连接器
 
-- [在 CellTrust 和](archiving-third-party-data.md#data-connectors-in-the-us-government-cloud)17a-4 LLC Microsoft 365数据连接器中存档第三方数据现在在美国政府云中的 GCC 组织中可用
+- [从](archiving-third-party-data.md#data-connectors-in-the-us-government-cloud)CellTrust 和 17a-4 LLC Microsoft 365数据连接器中存档第三方数据现在可用于美国政府云中的 GCC 组织
 - [设置连接器以存档 YouTube 数据](archive-youtube-data.md) 为公共预览版中的此功能提供了新的指南。
 
 ### <a name="ediscovery"></a>电子数据展示
@@ -206,7 +206,7 @@ ms.locfileid: "61311612"
 - [警报见解的扩展条目](app-governance-anomaly-detection-alerts.md#collection-alerts)。 添加了新条目来描述应用管理中现在可用的其他警报见解。
 
 ### <a name="communication-compliance"></a>通信合规性
-- [通信合规性频道](communication-compliance-channels.md)增加了对私人聊天和频道中新式附件扫描Teams新的预览功能支持。
+- [通信合规性通道](communication-compliance-channels.md)添加了对专用聊天和频道中新式附件扫描Teams新的预览功能支持。
 
 ### <a name="compliance--service-assurance"></a>合规性&服务保证
 
@@ -295,7 +295,7 @@ ms.locfileid: "61311612"
 - Microsoft [隐私管理](/privacy/solutions/privacymanagement/privacy-management) 已进入公共预览阶段。 隐私管理可帮助你的组织了解和管理你的Microsoft 365、修正潜在的隐私风险以及履行主体权利请求。
 
 ### <a name="retention-and-records-management"></a>保留和记录管理
-- 预览版[：Teams](create-retention-policies.md#retention-policy-for-teams-locations)保留策略现在支持将私人频道作为Teams或编辑保留策略时的新频道位置
+- 预览版[：Teams](create-retention-policies.md#retention-policy-for-teams-locations)保留策略现在支持私人频道作为Teams或编辑保留策略时的新频道位置
 - 导入 [文件计划的说明](file-plan-manager.md#import-retention-labels-into-your-file-plan) 已更新，以包含每个条目的法规记录和依赖关系
 
 ### <a name="sensitive-information-types"></a>敏感信息类型
@@ -307,10 +307,10 @@ ms.locfileid: "61311612"
 - [使用 PowerShell 删除自定义敏感信息类型](sit-remove-a-custom-sensitive-information-type-in-powershell.md)
 
 ### <a name="sensitivity-labels"></a>敏感度标签
-- 可训练分类器现已在 GA () 中普遍可用，可用于[Office Windows](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)应用和 (Office Online) 
+- 可训练分类器现 (GA) 中提供，可在[Office](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) for Windows 应用和 Web (Office Online) 
 - 强制标记现在扩展到预览Power BI ([中) ](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
 - 对于 [使用敏感度标签加密]( sensitivity-labels-coauthoring.md)的文件共同创作：推出对将敏感度标签用作条件和电子邮件未加密附件的 DLP 策略的支持
-- 适用于 Outlook 的审核事件现在适用于 macOS、iOS 和 Android，并且适用于 Outlook 网页版
+- 现在，适用于 Outlook 的审核事件适用于 macOS、iOS 和 Android，并且适用于 Outlook 网页版
 
 ## <a name="june-2021"></a>2021 年 6 月
 

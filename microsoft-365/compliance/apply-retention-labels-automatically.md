@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: 670dc6c4b095ca8d124b80bb0bade0ee3db22a7f
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 2bfeb19404972d56765871d46b3ae533f9e2759f
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064255"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320608"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -364,11 +364,11 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保留标签需要多长时间才能生效
 
-根据敏感信息、关键字、可搜索属性或可训练分类器自动应用保留标签时，可能需要最多八天才能应用保留标签：
+基于敏感信息、关键字或可搜索属性或可训练分类器自动应用保留标签时，可能需要 7 天才能应用保留标签：
   
 ![自动应用标签生效时间关系图。](../media/retention-labels-autoapply-timings.png)
 
-如果 8 天后未显示期望的标签，请从合规中心的 **标签策略** 页面中检查自动应用策略的 **状态**。 如果看到“**关闭(错误)**”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行 [RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重新尝试策略分发：
+如果 7 天后未显示期望的标签，请从合规中心的 **标签策略** 页面中检查自动应用策略的 **状态**。 如果看到“**关闭(错误)**”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行 [RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重新尝试策略分发：
 
 1. [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 

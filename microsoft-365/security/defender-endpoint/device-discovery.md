@@ -1,6 +1,6 @@
 ---
 title: 设备发现概述
-description: 了解如何利用终结点发现Microsoft 365 Defender查找网络中非托管设备
+description: 了解如何利用终结点发现Microsoft 365 Defender在网络中查找非托管设备
 keywords: 设备发现， 发现， 被动， 主动， 网络， 可见性， 服务器， 工作站， 载入， 非托管设备
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a827330541dba24dff54b59cf8c14b1f58162daa
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: e32880b46b04ce9ee755c09b6cbff2e3e484f4ff
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311886"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320847"
 ---
 # <a name="device-discovery-overview"></a>设备发现概述
 
@@ -59,9 +59,9 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 有两种可用的发现模式：
 
-- **基本发现**：在此模式下，终结点将被动收集网络中事件并从中提取设备信息。 基本发现将SenseNDR.exe二进制文件用于被动网络数据收集，并且不会启动任何网络流量。 终结点只需从载入的设备看到的每一个网络流量中提取数据。 通过基本发现，你只能有限地查看网络中非托管终结点。
+- **基本发现**：在此模式下，终结点将被动收集网络中事件并从中提取设备信息。 基本发现使用SenseNDR.exe二进制进行被动网络数据收集，并且不会启动任何网络流量。 终结点只需从载入的设备看到的每一个网络流量中提取数据。 通过基本发现，你只能有限地查看网络中非托管终结点。
 
-- 标准 (推荐) ：此模式允许终结点主动查找网络中设备，以丰富收集的数据并发现更多设备 - 帮助你构建可靠且一致的设备清单。 除了使用被动方法观察到的设备之外，标准模式还利用使用网络中多播查询的常见发现协议来查找更多设备。 标准模式使用智能的活动探测来发现有关观测到的设备的其他信息，以丰富现有设备信息。 启用标准模式时，组织中网络监视工具可能会观察到由发现传感器生成的最小且可以忽略不计的网络活动。
+- 标准发现 (推荐) ：此模式允许终结点主动查找网络中设备，以丰富收集的数据并发现更多设备 - 帮助你构建可靠且一致的设备清单。 除了使用被动方法观察到的设备之外，标准模式还利用使用网络中多播查询的常见发现协议来查找更多设备。 标准模式使用智能的活动探测来发现有关观测到的设备的其他信息，以丰富现有设备信息。 启用标准模式时，组织中网络监视工具可能会观察到由发现传感器生成的最小且可以忽略不计的网络活动。
 
 你可以更改和自定义发现设置，有关详细信息，请参阅配置 [设备发现](configure-device-discovery.md)。
 
@@ -91,7 +91,7 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 组织中部署大量非托管网络设备会创建较大的攻击面，并给整个企业带来重大风险。 Microsoft Defender for Endpoint 网络发现功能可帮助你确保发现网络设备、准确分类网络设备并添加到资产清单。
 
-网络设备不作为标准终结点进行管理，因为 Defender for Endpoint 本身没有内置于网络设备中的传感器。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 为此，将在每个网段上使用指定的 Microsoft Defender for Endpoint 设备，以定期对预配置的网络设备执行经过身份验证的扫描。 发现后，适用于终结点的 Defender 危险和漏洞管理功能提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。
+网络设备不作为标准终结点进行管理，因为 Defender for Endpoint 本身没有内置于网络设备中的传感器。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 为此，将在每个网段上使用指定的 Microsoft Defender for Endpoint 设备，以定期对预配置的网络设备执行经过身份验证的扫描。 一旦发现，适用于终结点的 defender 危险和漏洞管理 功能将提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。
 
 有关详细信息，请参阅 [网络设备](network-devices.md)。
 
@@ -99,9 +99,9 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 为了应对获得足够的可见性以查找、标识并保护完整的 OT/IOT 资产清单这一难题，Microsoft Defender for Endpoint 现在支持以下集成：
 
-- **Corelight：Microsoft** 已与 Corelight 合作接收来自 Corelight 网络设备的数据。 这Microsoft 365 Defender可增强对非托管设备的网络活动的可见性，包括与其他非托管设备或外部网络的通信。 有关详细信息，请参阅启用 [Corelight 集成](corelight-integration.md)。
+- **Corelight：Microsoft** 已与 Corelight 合作接收来自 Corelight 网络设备的数据。 这样Microsoft 365 Defender可进一步查看非托管设备的网络活动，包括与其他非托管设备或外部网络的通信。 有关详细信息，请参阅启用 [Corelight 数据集成](corelight-integration.md)。
 
-- **Microsoft Defender for IoT：** 此集成将适用于终结点的 Microsoft Defender 设备发现功能与 Microsoft Defender for IoT 的无代理监视功能相结合，保护连接到 IT 网络 (例如，Voice over Internet Protocol (VoIP) 、打印机和智能电视) 的企业 IoT 设备。 有关详细信息，请参阅启用 [Microsoft Defender for IoT 集成](enable-microsoft-defender-for-iot-integration.md)。
+- **Microsoft Defender for IoT：** 此集成将适用于终结点的 Microsoft Defender 设备发现功能与 Microsoft Defender for IoT 的无代理监视功能相结合，用于保护连接到 IT 网络 (例如，Internet 语音 (VoIP) 、打印机和智能电视) 的企业 IoT 设备。 有关详细信息，请参阅启用 [Microsoft Defender for IoT 集成](enable-microsoft-defender-for-iot-integration.md)。
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>已发现设备的漏洞评估
 
@@ -119,7 +119,7 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 设备发现将适用于终结点载入设备的 Microsoft Defender 用作网络数据源，将活动属性化为未载入的设备。 这意味着，如果 Microsoft Defender for Endpoint 已载入设备与非载入设备通信，则未载入的设备上的活动可以在时间线上和通过高级搜寻 DeviceNetworkEvents 表看到。
 
-新事件是传输控制协议 (TCP) 基于连接，并且适合当前的 DeviceNetworkEvents 方案。 从启用了非 Microsoft Defender for Endpoint 的设备进入启用终结点的 Microsoft Defender 设备的 TCP。
+新事件是基于连接的传输控制 (TCP) ，并且适合当前的 DeviceNetworkEvents 方案。 从启用了非 Microsoft Defender for Endpoint 的设备进入启用终结点的 Microsoft Defender 设备的 TCP。
 
 还添加了以下操作类型：
 
@@ -136,7 +136,7 @@ DeviceNetworkEvents
 
 ## <a name="changed-behavior"></a>已更改行为
 
-以下部分列出了你将在 Microsoft Defender for Endpoint 和 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">启用</a>此功能时看到的更改。
+以下部分列出了在启用此功能后，你将在 Microsoft Defender for <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a> Endpoint 和 Microsoft 365 Defender门户中观察到的更改。
 
 1. 未载入到 Microsoft Defender for Endpoint 的设备应显示在设备清单、高级搜寻和 API 查询中。 这可能会显著增加查询结果的大小。
     1. 高级搜寻中的"DeviceInfo"和"DeviceNetworkInfo"表现在将保留发现的设备。 可以使用"OnboardingStatus"属性筛选出这些设备。

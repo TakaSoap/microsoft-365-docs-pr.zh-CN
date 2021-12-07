@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3de7b4fafd70c3c11a18f59fb7b4c68e4dfb4eca
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 62bddf15a041ef47df13bbbd036d10727c15d3d6
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311923"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320835"
 ---
 # <a name="enable-corelight-data-integration"></a>启用 Corelight 数据集成
 
@@ -61,7 +61,7 @@ Microsoft 与 [Corelight 合作，Corelight](https://corelight.com/integrations/
 > [!NOTE]
 > 你必须是全局管理员才能授予 Corelight 访问组织中资源的权限。
 
-1. 作为租户全局管理员，请转到： <https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true> 授予权限。
+1. 作为租户全局管理员，转到此 [链接以](<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true>) 授予权限。
 2. 转到 [https://security.microsoft.com](https://security.microsoft.com/) 门户，选择 **"设置Microsoft 365 Defender"，** \> 然后记下租户 **ID。** 配置 Corelight 设备时将需要此信息。
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>步骤 3：配置 Corelight 设备以将数据发送到Microsoft 365 Defender
@@ -72,7 +72,7 @@ Microsoft 与 [Corelight 合作，Corelight](https://corelight.com/integrations/
 > 若要在支持发送数据的早期版本上启用，必须先执行 `corelight-client configuration update --enable.adfiot 1` ：。
 
 > [!NOTE]
->请注意，你的传感器需要 Internet 连接，以同时访问 Defender 和 Corelight 云服务，解决方案可以正常工作。
+> 你需要将你的传感器连接到 Internet，以同时访问 Defender 和 Corelight 云服务，解决方案可以正常工作。
 
 #### <a name="enabling-in-the-corelight-sensor-gui"></a>在 Corelight 传感器 GUI 中启用
 

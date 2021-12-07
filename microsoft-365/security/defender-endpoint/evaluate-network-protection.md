@@ -14,22 +14,23 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0f26b92d9475daf0c151d18f9ab024e3ad3bb34f
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 2db9df56a858bd069141c2c9389cf232b7feee7c
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883157"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320739"
 ---
 # <a name="evaluate-network-protection"></a>网络保护功能评估
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[网络](network-protection.md) 保护有助于防止员工使用任何应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。
+[网络](network-protection.md) 保护有助于防止员工使用任意应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。
 
 本文通过启用该功能并引导您访问测试站点，帮助你评估网络保护。 此评估文章中的网站并非恶意网站。 它们是专门创建的网站，冒充恶意网站。 网站将复制用户访问恶意站点或域时将发生的行为。
 
@@ -38,16 +39,16 @@ ms.locfileid: "60883157"
 
 ## <a name="enable-network-protection-in-audit-mode"></a>在审核模式下启用网络保护
 
-在审核模式下启用网络保护，以查看哪些 IP 地址和域已被阻止。 你可以确保它不会影响业务线应用，或了解阻止出现的时间。
+在审核模式下启用网络保护，以查看哪些 IP 地址和域已被阻止。 你可以确保它不会影响业务线应用，或了解阻止出现频繁发生的情况。
 
-1. 在"管理"中"开始"菜单 **powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"管理"中"开始"菜单 powershell，** 右键单击"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
     Set-MpPreference -EnableNetworkProtection AuditMode
     ```
 
-### <a name="visit-a-fake-malicious-domain"></a>访问 (恶意) 的假名
+### <a name="visit-a-fake-malicious-domain"></a>访问恶意 (假) 的站点
 
 1. 打开Internet Explorer浏览器、Google Chrome 或你选择的其他浏览器。
 
@@ -62,7 +63,7 @@ ms.locfileid: "60883157"
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>在事件查看器中查看Windows保护事件
 
-若要查看已阻止的应用，请打开事件查看器，并筛选 Microsoft-Windows-Windows-Defender/Operational 日志中的事件 ID 1125。 下表列出了所有网络保护事件。
+若要查看已阻止的应用，请打开事件查看器，并筛选 Microsoft-Windows-Windows Defender/Operational 日志中的事件 ID 1125。 下表列出了所有网络保护事件。
 
 | 事件 ID | 提供/源 | 说明 |
 |---|---|---|
