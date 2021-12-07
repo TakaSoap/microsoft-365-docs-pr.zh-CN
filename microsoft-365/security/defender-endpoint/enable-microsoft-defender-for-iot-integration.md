@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 540273109d0168e14b2f87b328b57f65d53b4c22
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 70d8586cb8f8babcdc709a67632f32103e9420ce
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320751"
+ms.locfileid: "61327684"
 ---
 # <a name="enable-microsoft-defender-for-iot-integration"></a>启用 Microsoft Defender for IoT 集成
 
@@ -36,7 +36,7 @@ ms.locfileid: "61320751"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
-Microsoft Defender for Endpoint 现在可以与 Microsoft Defender for IoT 集成。 此集成通过 Microsoft Defender for IoT 提供的无代理监视功能扩展了设备发现功能。 这将帮助保护连接到 IT 网络的企业 IoT 设备，例如 Ip 语音 (VoIP) 设备、打印机和相机。 它允许组织利用一个可保护其所有 IoT 和操作技术 (OT) 解决方案。 有关详细信息，请参阅Enterprise [IoT 网络保护](/azure/defender-for-iot/organizations/overview-eiot.md)。
+Microsoft Defender for Endpoint 现在可以与 Microsoft Defender for IoT 集成。 此集成通过 Microsoft Defender for IoT 提供的无代理监视功能扩展了设备发现功能。 这将帮助保护连接到 IT 网络的企业 IoT 设备，例如 Ip 语音 (VoIP) 设备、打印机和相机。 它允许组织利用一个可保护其所有 IoT 和操作技术 (OT) 解决方案。 有关详细信息，请参阅Enterprise [IoT 网络保护](/azure/defender-for-iot/organizations/overview-eiot)。
 
 启用此集成后，适用于终结点的 Microsoft Defender 将增强可见性，以帮助查找、标识并保护网络中 IoT 设备。 由 Microsoft Defender for IoT 或 Microsoft Defender for Endpoint 发现的 IoT 设备将在两个门户之间自动同步。 这将提供完整 OT/IoT 清单的单个统一视图，以及其他 IT 设备 (工作站、服务器和移动) 。
 
