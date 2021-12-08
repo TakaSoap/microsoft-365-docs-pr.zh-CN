@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: 2bfeb19404972d56765871d46b3ae533f9e2759f
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 755050de00bdffdd9169325c3a0e56b3eec7cede
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320608"
+ms.locfileid: "61327576"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -83,7 +83,7 @@ ms.locfileid: "61320608"
     - 如果你没有使用记录管理：
        - “**解决方案**” > “**信息治理**” > “**标签**”选项卡 > +“**创建标签**”
     
-    没有立即在导航窗格中看到解决方案? 首先选择“**全部显示**”。 
+    无法立即在导航窗格中看到解决方案？ 首先选择“**全部显示**”。 
 
 2. 按照配置中的提示操作。
     
@@ -385,7 +385,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 对于为云附件配置的自动应用保留标签策略：由于此策略适用于新共享文件而不是现有文件，对所选标签和策略的配置更改将自动仅应用于新共享的内容。
 
 某些设置无法在创建并保存标签或策略后更改，包括：
-- 保留标签和策略名称以及保留期以外的其他保留设置。 但是，如果保留期基于项目的标记时间，则不能更改保留期。
+- 保留标签及其策略的名称、范围类型（自适应或静态）以及除保留期以外的保留设置。 但是，如果保留期基于项目的标记时间，则不能更改保留期。
 - 用于将项目标记为记录的选项。
 
 ### <a name="deleting-retention-labels"></a>创建保留标签。
