@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 961390fab02344d38ddeb6889f8aec2c8a779d46
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: d3b8ab3fac4156b638a0508bbac0bebfc2dfdee6
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757009"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327530"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -210,3 +210,25 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
     你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](retention-settings.md#settings-for-retaining-and-deleting-content)。
 
 6. 完成配置并保存设置。
+
+## <a name="how-long-it-takes-for-retention-policies-to-take-effect"></a>保留策略需要多长时间才能生效
+
+创建并提交保留策略后，最长可能需要 7 天才会应用该保留策略：
+  
+![保留策略生效时间图。](../media/retention-policy-timings.png)
+
+首先，需要将保留策略分发到所选位置，然后将其应用于内容。 始终可以通过从合规中心的“**保留策略**”页面选择保留策略来检查保留策略的分发状态。 在浮出控件窗格中，如果你看到“**关闭(错误)**”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重新尝试策略分发：
+
+1. [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
+
+2. 运行以下命令：
+    
+    ```PowerShell
+    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+    ```
+
+## <a name="updating-retention-policies"></a>更新保留策略
+
+如果保留策略中的设置已应用于内容，则策略配置的更改将自动应用于此内容以及新识别的内容。
+
+某些设置在创建并保存策略后无法进行更改，包括保留策略的名称、作用域类型（自适应或静态）和保留设置（保持期除外）。
