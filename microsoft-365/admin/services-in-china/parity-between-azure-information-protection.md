@@ -22,7 +22,7 @@ description: 深入了解适用于由世纪互联运营的 Office 365 的 Azure 
 monikerRange: o365-21vianet
 ms.openlocfilehash: 5bf93be6c802dffac9a9f6c2f039364de99539ad
 ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/07/2021
 ms.locfileid: "61320799"
@@ -86,15 +86,15 @@ ms.locfileid: "61320799"
 
 默认情况下，“**Microsoft 信息保护同步服务**”服务主体在 Azure 中国租户中不可用，而 Azure 信息保护需要该服务主体。 通过 Azure Az PowerShell 模块手动创建此服务主体。
 
-1. 如果没有安装 Azure Az 模块，请安装它或使用 Azure Az 模块预安装的资源，例如 [Azure Cloud Shell](/azure/cloud-shell/overview)。 有关详细信息，请参阅安装 [Azure Az PowerShell 模块](/powershell/azure/install-az-ps)。
+1. 如果未安装 Azure Az 模块，请安装它或使用已预安装 Azure Az 模块的资源，例如 [Azure Cloud Shell](/azure/cloud-shell/overview)。 有关详细信息，请参阅 [安装 Azure Az PowerShell 模块](/powershell/azure/install-az-ps)。
 
-1.  [连接-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) cmdlet 和环境名称连接服务 `azurechinacloud` ：
+1.  使用 [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) cmdlet 和 `azurechinacloud` 环境名称连接到服务：
 
     ```powershell
     Connect-azacount -environmentname azurechinacloud
     ```
 
-1. 使用 **Microsoft 信息保护** [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet 和 Microsoft 信息保护 Sync Service 的应用程序 ID 手动创建 `870c4f2e-85b6-4d43-bdda-6ed9a579b725` Microsoft 信息保护 服务主体：
+1. 使用 [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet 和 Microsoft 信息保护同步服务的 `870c4f2e-85b6-4d43-bdda-6ed9a579b725` 应用程序 ID 手动创建 **Microsoft 信息保护同步服务** 服务主体：
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
