@@ -25,22 +25,16 @@
           href: connect.md
         - name: 安装 Microsoft Office 应用
           href: install-office.md
-        - name: 设置 Outlook，使用电子邮件功能
-          href: setup-outlook.md
         - name: 导入并重定向邮件
           href: import-email.md
-        - name: 将文件移动到 OneDrive
-          href: files-to-onedrive.md
-        - name: 将公司文件移动到 SharePoint
-          href: files-to-sharepoint.md
     - name: 移动版
       items:
         - name: 随时随地开展工作
           href: work-from-anywhere.md
         - name: 在 Android 上安装 Office 应用
-          href: install-apps-android.md
+          href: 'https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f'
         - name: 在 iOS 上安装 Office 应用
-          href: install-apps-ios.md
+          href: 'https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f'
         - name: 获取管理移动应用
           href: admin-mobile.md
     - name: 协作
@@ -48,35 +42,35 @@
         - name: 使用 Outlook 和 Teams
           href: collab-outlook-teams.md
         - name: Teams 入门
-          href: get-started-teams-small-business.md
+          href: 'https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937'
         - name: 创建组电子邮件地址
-          href: group-email.md
+          href: 'https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c'
         - name: 创建共享日历
-          href: shared-calendar.md
+          href: 'https://support.microsoft.com/office/353ed2c1-3ec5-449d-8c73-6931a0adab88'
         - name: 创建全组织范围小组
-          href: org-wide-team.md
+          href: /microsoftteams/create-an-org-wide-team
         - name: 以来宾身份创建团队
-          href: team-with-guests.md
+          href: 'https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f'
         - name: 作为来宾加入团队
-          href: join-team-guest.md
+          href: /microsoftteams/guest-experience
         - name: 与客户和员工聊天
-          href: start-and-pin-chats.md
+          href: 'https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92'
         - name: 联机会议概述
           href: overview-online-meetings.md
         - name: 安排有来宾用户参加的会议
-          href: schedule-guest-meeting.md
+          href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
         - name: 以来宾身份加入会议
-          href: join-guest-meeting.md
+          href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
     - name: 云存储
       items:
         - name: 共享概述
           href: overview-file-sharing.md
         - name: 文件存储位置
-          href: store-files.md
+          href: 'https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e'
         - name: 在外部安全地共享文件
-          href: securely-share-files-externally.md
+          href: 'https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07'
         - name: 在外部轻松共享文件
-          href: share-files-externally.md
+          href: 'https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07'
     - name: 商务语音
       items:
         - name: 商务语音概述
@@ -86,7 +80,7 @@
     - name: 生产力应用
       items:
         - name: Bookings 概述
-          href: overview-bookings.md
+          href: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
         - name: 通过 Microsoft 列表跟踪业务信息
           href: track-info-lists.md
         - name: 计划活动
@@ -95,8 +89,6 @@
       items:
         - name: 什么是管理员
           href: what-is-admin.md
-        - name: 管理中心概述
-          href: admin-center-overview.md
         - name: 查看、下载或打印账单
           href: view-bill.md
         - name: 购买新许可证
@@ -111,8 +103,6 @@
           href: set-up-self-serve-password-reset.md
         - name: 添加用户
           href: add-user.md
-        - name: 删除用户
-          href: delete-user.md
         - name: 添加其他管理员
           href: add-admin.md
         - name: 更改用户名和电子邮件地址
@@ -123,8 +113,6 @@
           href: company-wide-signature.md
         - name: 操作使用情况报告
           href: act-on-report.md
-        - name: 添加其他域
-          href: add-domain.md
         - name: 设置新的企业电子邮件地址
           href: set-up-a-new-business-email-address.md
     - name: 管理设备
@@ -140,7 +128,7 @@
         - name: 使用 MFA 保护员工帐户
           href: turn-on-mfa.md
         - name: 在手机上设置双重登录
-          href: set-up-mfa.md
+          href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
         - name: 启用恶意软件检测
           href: anti-malware.md
         - name: 创建针对勒索软件的电子邮件规则
@@ -157,8 +145,6 @@
           href: create-sensitivity-labels.md
     - name: 支持
       items:
-        - name: 获取帮助或支持
-          href: get-help-support.md
         - name: 查找文档和培训
           href: find-help-answers.md
         - name: 员工快速设置

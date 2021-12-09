@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 21f9fa37662093c8214cc548bd3b7de79543dc15
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 21f691bdc79c7e2708cc93660e3c217d13b056a1
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199089"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371660"
 ---
 # <a name="contact-support-for-nepal"></a>联系尼泊尔支持人员
 
-[查找另一个国家/地区](../../business-video/get-help-support.md)。
+[查找另一个国家/地区](../get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 电话支持不可用;仅联机支持。

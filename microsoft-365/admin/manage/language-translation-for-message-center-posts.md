@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
-description: 消息中心帖子仅提供英语版本，但可以使用您为邮件中心指定的语言自动Microsoft 365。
-ms.openlocfilehash: 0afdd98b56b6cb13a5f4bef014d8612c30dfbf11
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 邮件中心帖子仅以英语显示，但可以使用您为邮件中心指定的语言自动Microsoft 365。
+ms.openlocfilehash: 54c9d0c20045805029774fa37f2eeb5f992cbd49
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164328"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369956"
 ---
 # <a name="language-translation-for-message-center-posts"></a>翻译消息中心的帖子
 
@@ -52,7 +52,7 @@ ms.locfileid: "60164328"
 
 ## <a name="related-content"></a>相关内容
 
-[视频Microsoft 365 管理中心 (](../../business-video/admin-center-overview.md)概述) \
+[概述Microsoft 365 管理中心] ([视频Microsoft 365 管理中心 (](../admin-overview/admin-center-overview.md)概述) \
 [我订阅了哪些产品？](../admin-overview/what-subscription-do-i-have.md) （文章）\
 [随时了解本文 (](../manage/stay-on-top-of-updates.md) 更改) 
 

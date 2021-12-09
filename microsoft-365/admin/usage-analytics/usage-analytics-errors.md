@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
-description: 了解如何排查有关 Microsoft 365 使用情况分析模板应用的问题。
-ms.openlocfilehash: 5d1c6234f07f7d524ba2698720db8596474ce94d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解如何排查有关Microsoft 365分析模板应用的问题。
+ms.openlocfilehash: e9bb73eea33e882fb5c9b138610cdc0f8fe9a7c5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200817"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373748"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>使用率Microsoft 365疑难解答
 
@@ -36,9 +36,9 @@ ms.locfileid: "60200817"
 
  **错误代码** ：422 
   
- **将在什么位置看到此消息：** In Power BI when you are connecting to the Microsoft 365 Usage Analytics template app or when directly calling the Microsoft 365 Reporting APIs. 
+ **将在什么位置看到此消息：** 此外Power BI连接到 Microsoft 365 使用情况分析模板应用或直接调用 Microsoft 365 报告 API 时。 
   
- **原因：** 在可以连接到应用之前，你必须从应用程序订阅Microsoft 365 管理中心。 如果未首先完成此步骤，将无法连接到模板应用，即使提供租户MICROSOFT 365 ID。 
+ **原因：** 在可以连接到应用之前，你必须从应用程序订阅Microsoft 365 管理中心。 如果未首先完成此步骤，将无法连接到模板应用，即使你提供你的租户Microsoft 365 ID。 
   
  **若要修复此错误：** 若要订阅数据，请转到管理中心"报告使用情况"，Microsoft 365主仪表板页面上的"使用情况分析" \>  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank"></a>磁贴。 选择 **"开始"** 按钮，然后在打开的"报告"窗格中，打开"使数据可用于Microsoft 365使用情况分析"Power BI"**保存****"。**
   
@@ -48,7 +48,7 @@ ms.locfileid: "60200817"
   
  **原因：** 当你 [选择从模板](enable-usage-analytics.md)应用中查看Microsoft 365 管理中心时，Microsoft 365系统开始为组织生成历史使用情况数据。 此步骤可能需要 2 至 48 小时的时间，具体取决于租户的大小。 
   
- **若要修复此问题，请进行修复：** 请耐心等待，但如果邮件未在 3天后更改为"[数据已](../../business-video/get-help-support.md)准备就绪"，请与Microsoft 365联系。
+ **若要修复此问题，请进行修复：** 请耐心等待，但如果邮件未在 3天后更改为"数据已准备就绪"，[联系 Microsoft 365 商业支持人员] ([获取支持](../get-help-support.md)。
   
 ## <a name="we-are-unable-to-process-your-request-at-this-time-we-are-still-preparing-the-data-for-your-organization"></a>我们现在无法处理你的请求。仍在准备组织数据
 
@@ -66,7 +66,7 @@ ms.locfileid: "60200817"
   
  **将在什么位置看到此消息：** In Power BI， when you are connecting to the Microsoft 365 Usage Analytics template app or when directly calling the Microsoft 365 Reporting APIs. 
   
- **原因：** 租户 ID 是 guid，必须采用 xxxxxxxx-xxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx 格式。 如果在租户输入框中输入任何其他字符串，将会收到此错误。 
+ **原因：** 租户 ID 是 guid，必须采用 xxxxxxxx-xxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx 格式。 如果在租户输入框中输入任何其他字符串，将收到此错误。 
   
  **若要修复此错误：** 转到管理中心 \> **"报告** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>"，Microsoft 365主仪表板页面上的"使用率分析"磁贴。 租户 ID 在磁贴上列出。 你可以从此处复制它，并将其粘贴到对话框中以连接到模板应用。 
   
@@ -74,7 +74,7 @@ ms.locfileid: "60200817"
 
  **错误代码：** 404 
   
- **将在什么位置看到此消息：** In Power BI when you are connecting to the Microsoft 365 Usage Analytics template app or when directly calling the Microsoft 365 Reporting APIs. 
+ **将在什么位置看到此消息：** 此外Power BI连接到 Microsoft 365 使用情况分析模板应用或直接调用 Microsoft 365 报告 API 时。 
   
  **原因：** 你提供的租户 ID 无效或不存在。 
   
@@ -84,7 +84,7 @@ ms.locfileid: "60200817"
 
 错误代码:302
   
- **将在什么位置看到此消息：** In Power BI when you are connecting to the Microsoft 365 Usage Analytics template app or when directly calling the Microsoft 365 Reporting APIs. 
+ **将在什么位置看到此消息：** 此外Power BI连接到 Microsoft 365 使用情况分析模板应用或直接调用 Microsoft 365 报告 API 时。 
   
  **原因：** 授权代码失败，可能需要再次输入凭据。 
   
@@ -94,7 +94,7 @@ ms.locfileid: "60200817"
 
  **错误代码：** 403 
   
- **将在什么位置看到此消息：** In Power BI when you are connecting to the Microsoft 365 Usage Analytics template app or when directly calling the Microsoft 365 Reporting APIs. 
+ **将在什么位置看到此消息：** 此外Power BI连接到 Microsoft 365 使用情况分析模板应用或直接调用 Microsoft 365 报告 API 时。 
   
  **原因：** 授权代码失败，因为尝试连接到模板应用的用户没有访问此数据的授权级别。 
   

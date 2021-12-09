@@ -20,18 +20,18 @@ ms.custom:
 search.appverid: MET150
 description: 了解 Microsoft 365 for Business 订阅到期、禁用或取消后对我的数据的影响。
 ms.date: 09/16/2021
-ms.openlocfilehash: 491a279aac94b4242252df801bd9f65fcb9f8a5b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1b53b62d62a385ca8cad7367da342aa0b4184281
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151238"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372656"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for Business 订阅结束后对我的数据和访问有何影响？
 
 如果订阅结束 (无论是因为过期，还是因为你决定取消) 对 Microsoft 365 服务、应用程序和客户数据的访问都会在完全关闭订阅或 *删除* 订阅之前经历多个状态。 如果你意识到这一进展，则会更好地准备好在无法挽回之前将订阅恢复到活动状态，或者 — 如果你要离开 Microsoft 365 — 则可以在最终删除之前备份你的数据。
 
-在联系 [Microsoft 365 支持](../../business-video/get-help-support.md) 之前，请阅读这些重要信息。
+在联系 [Microsoft 365 支持](../../admin/get-help-support.md) 之前，请阅读这些重要信息。
 
 > [!NOTE]
 > 对于某些订阅，只能在购买或续订订阅后的有限时间段内取消。 如果取消时段已过，请在订阅期限结束时关闭定期计费以取消订阅。

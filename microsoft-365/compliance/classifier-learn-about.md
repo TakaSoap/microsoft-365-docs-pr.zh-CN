@@ -18,13 +18,13 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: 可Microsoft 365分类器是一种工具，你可以训练它，通过向标签或策略应用程序提供要查看的正面和负面示例来识别不同类型的内容。
-ms.openlocfilehash: 69074baf8ce39352341a484c1d0aa6ce99bf94cd
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+description: 可Microsoft 365分类器是一种工具，你可以训练它，通过提供要查看的正面和负面示例来识别用于标记或策略应用程序的各种类型的内容。
+ms.openlocfilehash: 13e16394e9be1a2dd6b3d9cdcf4e18a736de158b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302178"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373772"
 ---
 # <a name="learn-about-trainable-classifiers"></a>了解可训练的分类器
 
@@ -38,21 +38,21 @@ ms.locfileid: "61302178"
 
 此分类机制类别包括按以下方法查找内容：
 
-- 关键字或元数据值 (关键字查询语言) 。
-- 使用之前标识的敏感信息模式（如社会保险、信用卡或银行帐号） ([敏感信息类型实体定义) 。 ](sensitive-information-type-entity-definitions.md)
-- 识别项目，因为它是模板上的变体， ([手指) 。 ](document-fingerprinting.md)
+- 关键字或元数据值 (查询语言) 。
+- 使用以前标识的敏感信息模式（如社会保险、信用卡或银行帐号） ([敏感信息类型实体定义) 。 ](sensitive-information-type-entity-definitions.md)
+- 识别项目，因为它是模板上的变体 ([文档手指) 。 ](document-fingerprinting.md)
 - 使用确切字符串的存在确切 [数据匹配](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)。
 
-然后，可以自动应用敏感度和保留标签，使内容可供在了解数据丢失防护策略[](dlp-learn-about-dlp.md)和自动应用保留) 策略中[使用](apply-retention-labels-automatically.md)。
+然后，可以自动应用敏感度和保留标签，使内容可供"了解数据丢失防护和[](dlp-learn-about-dlp.md)自动应用保留标签策略"[中的使用](apply-retention-labels-automatically.md)。
 
 ## <a name="classifiers"></a>分类器
 
 此分类方法特别适用于无法通过手动或自动模式匹配方法轻松标识的内容。 这种分类方法更多的是训练一个分类器，以根据项目是什么来识别项目，而不是通过项目中的元素（模式匹配）。 分类器通过查看对分类感兴趣的内容的数百个示例来了解如何识别内容类型。 首先馈送该类别中肯定属于该类别的示例。 处理这些示例后，通过同时提供匹配示例和非匹配示例进行测试。 然后，分类器将预测任何给定项目是否属于你正在构建的类别。 然后确认其结果，对真正的正数、负数、误报和漏报进行排序，以帮助提高预测的准确性。 
 
-发布分类器时，分类器将按 SharePoint Online、Exchange 和 OneDrive 等位置中的项目进行排序，并对内容进行分类。 发布分类器后，可以继续使用与初始培训过程类似的反馈流程对分类器进行培训。
+发布分类器时，分类器会对 SharePoint Online、Exchange 和 OneDrive 等位置中的项目进行排序，并对内容进行分类。 发布分类器后，可以继续使用与初始培训过程类似的反馈流程对分类器进行培训。
 
 ### <a name="where-you-can-use-trainable-classifiers"></a>在哪里可以使用可训练分类器
-内置分类器和可训练分类器都作为一个条件Office敏感度标签自动[](apply-sensitivity-label-automatically.md)标记，根据条件和通信合规性自动应用保留[标签策略](communication-compliance.md)。 [](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) 
+内置分类器和可训练分类器都作为一个条件Office敏感度标签进行[](apply-sensitivity-label-automatically.md)自动标记，根据条件和通信合规性自动应用保留[标签策略](communication-compliance.md)。 [](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) 
 
 敏感度标签可以使用分类器作为条件，请参阅自动将 [敏感度标签应用于内容](apply-sensitivity-label-automatically.md)。
 
@@ -72,7 +72,7 @@ Microsoft 365多个预先训练的分类器：
 > 我们正在弃用 **冒犯性语言** 预训练分类器，因为它会生成大量误报。 请勿使用，如果当前正在使用，应将业务流程从其中移开。 我们建议改为使用 **威胁**、 **亵亵** 和 **骚扰** 预先训练的分类器。
 
 - **简历**：检测是收信人个人、教育、专业资格、工作体验和其他个人识别信息的文本帐户的项目
-- **源代码**：检测包含一组使用前 25 种使用计算机编程语言编写的指令和语句GitHub
+- **源代码 ：** 检测包含一组使用前 25 种使用计算机编程语言编写的指令和语句GitHub
     - ActionScript
     - C
     - C#
@@ -114,7 +114,7 @@ Microsoft 365多个预先训练的分类器：
 - **税务**：检测税务关系内容，如税务计划、税单、税务申报、税务法规
 - **威胁**：检测与威胁相关的特定类别的冒犯性语言文本项，以实施暴力或对人员或属性进行物理损害或损害
 
-它们显示在"数据 **Microsoft 365 合规中心** 可训练  >    >  **分类器**"视图中，状态为 `Ready to use` 。
+这些 **列Microsoft 365 合规中心数据**  >  **分类**  >  **可训练分类** 器视图，状态为 `Ready to use` 。
 
 ![classifiers-pre-trained-classifiers。](../media/classifiers-ready-to-use-classifiers.png)
 

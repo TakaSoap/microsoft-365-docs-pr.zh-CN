@@ -13,12 +13,12 @@ ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
 description: 了解如何在多地理位置Microsoft 365具有指定首选数据位置的组。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05e910d82c44e37497b365a9d0757a80805c895a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6ce4ed337b07206e6508a5955edc2c264586df4b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201597"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370940"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>创建具有Microsoft 365首选数据位置的组
 
@@ -58,3 +58,5 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 ## <a name="related-topics"></a>相关主题
 
 [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+
+[使用 api 创建具有特定首选数据位置Graph组](/graph/api/group-post-groups)

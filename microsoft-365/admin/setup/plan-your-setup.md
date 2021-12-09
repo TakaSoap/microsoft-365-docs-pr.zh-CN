@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: 了解移动到适用于Microsoft 365的要求和注意事项。
-ms.openlocfilehash: fd91da48fe7b6ef1bde9340c5fbb4a926055514b
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: f02cd28c403cbe5b27b427fae94975ec4b608591
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311696"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373028"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>规划 Microsoft 365 商业版安装
 
-本文适用于订阅了企业Microsoft 365用户。
+本文适用于已订阅企业Microsoft 365用户。
   
 在将组织迁移到Microsoft 365之前，需要满足一些要求、需要获得的信息以及必须做出的决策。
 
@@ -39,13 +39,13 @@ ms.locfileid: "61311696"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg?autoplay=false]
 
-祝贺你决定使用云将业务移动到Microsoft 365！ 无论你的企业中是否有一个人或 20 个人，进行一些规划都将帮助你在工作Microsoft 365 商业高级版。
+祝贺你决定使用云将业务移动到Microsoft 365！ 无论你的企业中是否有一个人或 20 个人，做一些规划将有助于你获得最大Microsoft 365 商业高级版。
 
 ## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>运行安装向导之前要拥有的信息
 
 当你准备好运行安装向导，将域移动到 Microsoft 365 时，下面提供了你需要的信息：
   
-- 要添加到其中Microsoft 365。 即使已将它们添加到Microsoft 365，如果要更新域信息，也需要在此处输入其名称。
+- 要添加到其中Microsoft 365。 即使已将它们添加到 Microsoft 365，如果要更新域信息，也需要在此处输入其名称。
 
 - 如何通知员工其用户 ID 和密码，以便他们可以登录。 是否要打电话通知他们此信息？ 或是将信息发送到他们的个人电子邮件地址？ 他们无法访问他们的电子邮件，因此你无法使用它。
 
@@ -53,10 +53,10 @@ ms.locfileid: "61311696"
 
 ## <a name="what-happens-when-you-run-the-microsoft-365-setup-wizard"></a>运行安装向导时Microsoft 365会发生什么情况
 
-安装向导将指导你在你的计算机上安装 Microsoft 365 应用、添加和验证域、添加用户并为其分配许可证，以及连接你的域。
+安装向导将引导你完成在计算机上安装 Microsoft 365 应用、添加和验证域、添加用户并为其分配许可证以及连接域。
 
 > [!NOTE]
-> 如果需要将 Microsoft 365 [企业](../add-users/assign-admin-roles.md)版中的管理员角色分配给在向导中添加的用户，可以在稍后的"用户"页面上 **执行** 该操作。 
+> 如果需要将 Microsoft 365 [企业](../add-users/assign-admin-roles.md)版中的管理员角色分配给在向导中添加的用户，可以在稍后的"用户"页面上 **执行**。 
   
 如果未完成安装向导，则你随时都可以从管理中心安装程序 [完成安装](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **任务**。 你可以在此处从另一个电子邮件服务迁移电子邮件和联系人、更改管理员帐户的域、管理帐单信息、添加或删除用户、重置密码以及执行其他业务功能。 有关安装向导和"安装"页之间的差异详细信息，请参阅安装程序向导Microsoft 365[安装页面之间的差异](o365-setup-wizard-and-setup-page.md)。
 
@@ -66,7 +66,7 @@ ms.locfileid: "61311696"
 
 有两种方案，包括从本地环境迁移数据或用户或设置包含目录同步的混合系统。 如果属于任一类别，请按照以下文章中的说明操作：
   
-- 若要设置与本地 Active Directory 的目录同步，请参阅为[Microsoft 365](../../enterprise/set-up-directory-synchronization.md)设置目录同步，若要了解 Microsoft 365 中的不同标识模型，请阅读了解[Microsoft 365 标识和](../../enterprise/about-microsoft-365-identity.md)Azure Active Directory。
+- 若要设置与本地 Active Directory 的目录同步，请参阅为[Microsoft 365](../../enterprise/set-up-directory-synchronization.md)设置目录同步，并了解 Microsoft 365 中的不同标识模型，请阅读了解 Microsoft 365 标识和[Azure Active Directory。](../../enterprise/about-microsoft-365-identity.md)
 
 - 若要设置 Exchange 混合，可在此处找到完整的相关说明，该说明指导用户使用不同方法来完成混合 Exchange的设置（包括设置 DNS 记录）：[Exchange Server 部署助理](/exchange/exchange-deployment-assistant)
 
@@ -74,9 +74,9 @@ ms.locfileid: "61311696"
 
 ## <a name="move-to-microsoft-365-all-at-once-or-in-stages"></a>一Microsoft 365或分步移动到所有项目
 
-- **是否要将组织一次Microsoft 365迁移？** 如果是这样，请计划将你的域Microsoft 365移动。 首先运行Microsoft 365向导;它将提示你设置域。
+- **是否要将组织一次Microsoft 365迁移？** 如果是，请计划将域Microsoft 365移动。 首先运行Microsoft 365向导;它将提示你设置域。
 
-- **是否要逐渐移动到Microsoft 365？** 如果要分步Microsoft 365迁移，请跳过运行 Microsoft 365 安装向导，并考虑按以下Microsoft 365采用这些功能：
+- **是否要逐渐移动到Microsoft 365？** 如果要分步移动到Microsoft 365，请跳过运行 Microsoft 365 安装向导，并考虑按以下Microsoft 365采用这些功能：
 
     1. [将员工添加到Microsoft 365](../add-users/add-users.md)以便他们可以下载和安装 Office 应用。
 
@@ -84,13 +84,13 @@ ms.locfileid: "61311696"
 
     3. [设置Microsoft Teams](#plan-for-teams)会议使用的组。
 
-    4. [将内容移动到Microsoft 365云](set-up-file-storage-and-sharing.md)存储 (OneDrive或SharePoint团队) 。
+    4. [将内容移动到Microsoft 365云 (OneDrive](set-up-file-storage-and-sharing.md)或SharePoint网站) 。
 
     5. 准备好后，在管理中心，选择[](https://go.microsoft.com/fwlink/p/?linkid=2024339)左侧导航窗格中的"设置"，然后使用"设置"页移动[域和电子邮件](add-domain.md)。
 
 ## <a name="check-that-your-devices-meet-system-requirements"></a>检查你的设备是否满足系统要求
 
-组织中的每个人都可以在最多五台电脑和 Mac 上安装 Office 2016 (Word、Excel、PowerPoint 等) 套件。 请参阅安装 [Office 2016 套件](https://go.microsoft.com/fwlink/?LinkId=534827)商业版的操作系统和计算机要求。
+组织中的每个人都可以在最多五台电脑和 Mac 上安装 Office 2016 应用套件 (Word、Excel、PowerPoint 等) 。 请参阅安装 [Office 2016 套件](https://go.microsoft.com/fwlink/?LinkId=534827)商业版的操作系统和计算机要求。
   
 移动应用可以安装在 iOS、Android 和 Windows设备上。 可在 [Office 的系统需求](https://go.microsoft.com/fwlink/?LinkId=534827)中找到有关移动设备和浏览器支持的信息。
   
@@ -102,7 +102,7 @@ ms.locfileid: "61311696"
   
 如果要对电子邮件使用Microsoft 365：
   
-- 若要将业务电子邮件地址 (（如 *rob \@ contoso.com*) ）从另一个电子邮件服务移动到 Microsoft 365，需要将邮件传递到新的 Microsoft 365 邮箱。 为此，在"设置"页上选择"迁移用户数据"，我们会逐步指导你在域主机上完成所需的更新。
+- 若要将企业电子邮件地址 (（如 *rob \@ contoso.com*) ）从另一个电子邮件服务移动到 Microsoft 365，需要将邮件传递到新的 Microsoft 365 邮箱。 为此，在"设置"页上选择"迁移用户数据"，我们会逐步指导你在域主机上完成所需的更新。
 
 - 更新域主机后，所做更改通常在一小时或两小时后生效。 但请注意，有时可能需要 72 小时才能通过 Internet 更新更改。
 
@@ -115,19 +115,19 @@ ms.locfileid: "61311696"
 |**多少个邮箱？**|**建议**|
 |:-----|:-----|
 |仅几个  <br/> |如果不想使用"安装"页迁移邮箱，可以允许邮箱所有者迁移自己的电子邮件和联系人。 请参阅[将电子邮件和联系人迁移到Microsoft 365企业。](migrate-email-and-contacts-admin.md)  <br/> |
-|多个  <br/> |如果要从 Gmail 迁移，请参阅将 G Suite 邮箱迁移到[Microsoft 365。](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes)  <br/> 如果要从另一个电子邮件提供商（包括 Exchange）进行迁移，请参阅将多个电子邮件帐户迁移到[Microsoft 365。](/Exchange/mailbox-migration/mailbox-migration)  <br/> |
+|多个  <br/> |如果要从 Gmail 迁移，请参阅将 G Suite 邮箱迁移到[Microsoft 365。](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes)  <br/> 如果要从另一个电子邮件提供商（包括 Exchange）进行迁移，请参阅将多个电子邮件帐户迁移到 Microsoft 365 [。](/Exchange/mailbox-migration/mailbox-migration)  <br/> |
 
 ## <a name="plan-for-file-storage-and-migration"></a>计划文件存储和迁移
 
-Microsoft 365为个人、小型组织和企业提供云存储。 有关存储位置的指南，请参阅文档存储[位置Microsoft 365。](../../business-video/store-files.md)
+Microsoft 365为个人、小型组织和企业提供云存储。 有关存储位置的指南，请参阅文档存储[位置Microsoft 365。](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)
   
-- **可以将数百个文件移动到** OneDrive [或移动到](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB)SharePoint [网站](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242)。 一次可以上传 100 个文件。 请避免上传超过 2 GB 的文件，这是默认最大文件大小。
+- **可以将数百个文件移动到** OneDrive [或SharePoint](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB)[网站](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242)。 一次可以上传 100 个文件。 请避免上传超过 2 GB 的文件，这是默认最大文件大小。
   
-- **如果要将数千个文件移动到** Microsoft 365存储中，请查看 SharePoint [Online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)。 建议使用迁移工具或考虑雇用[合作伙伴](https://go.microsoft.com/fwlink/?linkid=391089)来帮助进行迁移。 有关如何迁移大量文件的信息，请参阅 [SharePoint Online 和 OneDrive 迁移用户指南](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)。
+- **如果要将数千个文件移动到** Microsoft 365存储中，请查看 SharePoint Online [限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)。 建议使用迁移工具或考虑雇用[合作伙伴](https://go.microsoft.com/fwlink/?linkid=391089)来帮助进行迁移。 有关如何迁移大量文件的信息，请参阅 [SharePoint Online 和 OneDrive 迁移用户指南](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)。
   
 ## <a name="plan-for-teams"></a>规划Teams
 
-可以使用Microsoft Teams呼叫组织中订阅的其他人员。 例如，如果您的组织有 10 个人，则无需任何特殊设置，即可使用 Teams相互呼叫和 IM。 有关详细信息，请参阅开始[Microsoft Teams。](/MicrosoftTeams/get-started-with-teams-quick-start)
+可以使用Microsoft Teams呼叫组织中订阅的其他人员。 例如，如果组织有 10 个人，则无需任何特殊设置，即可Teams相互呼叫和即时消息。 有关详细信息，请参阅开始[Microsoft Teams。](/MicrosoftTeams/get-started-with-teams-quick-start)
 
 对于大型组织，或者如果你从本地Skype for Business部署开始，请参阅如何部署[Microsoft Teams。](/MicrosoftTeams/how-to-roll-out-teams)
   

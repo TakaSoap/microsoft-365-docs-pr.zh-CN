@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4197e5a224cb11fff64d4b0ceba7a4a6b0cbdd2d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 77ca2217c456b2605136679349ba504fbf5b79b4
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155822"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372188"
 ---
 # <a name="contact-support-for-palestinian-authority"></a>联系支持人员
 
-[查找另一个国家/地区](../../business-video/get-help-support.md)。
+[查找另一个国家/地区](../get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +962 6 5503451

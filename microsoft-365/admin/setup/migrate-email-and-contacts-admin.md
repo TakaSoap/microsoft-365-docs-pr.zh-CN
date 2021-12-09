@@ -30,20 +30,20 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 了解如何从 Gmail 或其他电子邮件提供商导入联系人、日历和电子邮件，并迁移到 Microsoft 365。
-ms.openlocfilehash: ffc7bd021ae1a92ec75ab89f439fad886fbf691d
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 16573cd9658762c1b04417ef03bd3e96373fd349
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311766"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371852"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>将电子邮件和联系人迁移到 Microsoft 365
 
 将电子邮件从 Gmail 或其他电子邮件提供商导入或迁移到Microsoft 365。
   
- **需要有关此的帮助？**  [请联系Microsoft 365商业支持人员](../../business-video/get-help-support.md)。 
+ **需要有关此的帮助？**  [联系 Microsoft 365 for business support](../../business-video/get-help-support.md)。 
   
-对于此任务，你需要Outlook安装在桌面上的版本。 Outlook大多数计划都包含Microsoft 365[计划](https://go.microsoft.com/fwlink/p/?LinkId=723731)。
+你需要使用安装在桌面上的Outlook版本执行此任务。 Outlook大多数计划都包含Microsoft 365[计划](https://go.microsoft.com/fwlink/p/?LinkId=723731)。
   
 ## <a name="watch-import-and-redirect-email"></a>观看：导入和重定向电子邮件
 
@@ -91,18 +91,18 @@ ms.locfileid: "61311766"
 
 将帐户（如专用 Gmail 帐户）添加到Outlook。
   
-- 打开Outlook"，然后转到"**文件** \> **""添加帐户"。**
+- 打开Outlook"，然后转到"文件 \> **""添加帐户"。**
     
 是否需要更详细的步骤？ 请参阅 [添加帐户](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)。
   
 [![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   
-## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>多个邮箱：管理员可以将电子邮件、联系人和日历批量导入Microsoft 365
+## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>多个邮箱：管理员可以将电子邮件、联系人和日历批量导入到Microsoft 365
 
 根据您的源电子邮件系统，您可以从多种批量迁移方法中选择。 阅读[将多个电子邮件帐户迁移到](/Exchange/mailbox-migration/mailbox-migration)Microsoft 365，以决定哪种方法适合你。
 
 ## <a name="related-content"></a>相关内容
 
-[Plan your setup of Microsoft 365 for business (](plan-your-setup.md) article) \
-[Install Office applications](install-applications.md) (link page) \
-[Microsoft 365 管理中心概述](../../business-video/admin-center-overview.md)（视频）
+[Plan your setup of Microsoft 365 for business](plan-your-setup.md) (article) \
+[Install Office applications (](install-applications.md) link page) \
+[概述Microsoft 365 管理中心] ([视频Microsoft 365 管理中心 (](../admin-overview/admin-center-overview.md)概述) 

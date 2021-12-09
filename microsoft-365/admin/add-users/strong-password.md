@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何使用 Windows PowerShell 为用户设置强密码要求。
-ms.openlocfilehash: 90ce3949b88a186c573d2a7718ede10b1a955c2c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解如何使用 Windows PowerShell 为用户设置强密码Windows PowerShell。
+ms.openlocfilehash: 25e0db3da797fbcaa78dbf91bd81abce0104d725
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154109"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370580"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>为用户关闭强密码要求
 
@@ -34,7 +34,7 @@ ms.locfileid: "60154109"
 
 ## <a name="before-you-begin"></a>准备工作
 
-本文适用于管理企业、学校或非营利组织的密码策略的用户。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](/microsoft-365/business-video/admin-center-overview) 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
+本文适用于管理企业、学校或非营利组织的密码策略的用户。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？] ([概述Microsoft 365 管理中心](../admin-overview/admin-center-overview.md)必须是全局[管理员或密码管理员](about-admin-roles.md)才能执行这些步骤。
 
 还必须使用 PowerShell Microsoft 365客户端。
 

@@ -1,6 +1,6 @@
 ---
 title: 部署Microsoft 365 Lighthouse基线
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，了解如何部署Microsoft 365 Lighthouse基线。
-ms.openlocfilehash: c241dae7839c6c0724a397912decc5da74ec556f
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e60e364579abdc414ec9f7f3d16863f0139c9e6d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111443"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372644"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>部署Microsoft 365 Lighthouse基线 
 
@@ -33,17 +33,17 @@ Microsoft 365 Lighthouse基线，您可以部署标准托管租户配置，以�
 - 要求管理员使用 MFA
 - 要求最终用户使用 MFA
 - 阻止旧式身份验证
-- 在 Microsoft Endpoint Manager - Azure AD 中设置设备注册
+- 设置设备注册Microsoft Endpoint Manager – Azure AD加入
 - 为设备配置 defender 防病毒Windows策略
 - 为设备配置Windows策略
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-确保你和客户租户满足要求[for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)中列出的要求。
+确保你和客户租户满足要求[中](m365-lighthouse-requirements.md)所列的Microsoft 365 Lighthouse。
 
 ## <a name="learn-more-about-the-default-baseline"></a>详细了解默认基线
 
-从 **左侧导航** 窗格中选择"比较基准"以打开"比较基准"页。 你将看到默认基线已添加到默认租户组， (所有租户) 。 若要查看默认基线配置，请选择" **查看比较基准** "以打开"默认比较基准"页。 配置作为部署步骤列出。 选择任意部署步骤以查看部署详细信息和用户影响。
+从 **左侧导航** 窗格中选择"比较基准"以打开"比较基准"页。 你将看到默认基线已添加到默认租户组， (租户) 。 若要查看默认基线配置，请选择" **查看比较基准** "以打开"默认比较基准"页。 配置作为部署步骤列出。 选择任意部署步骤以查看部署详细信息和用户影响。
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Default baseline page.>。":::
 

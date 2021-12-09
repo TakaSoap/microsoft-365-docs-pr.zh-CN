@@ -21,17 +21,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
-description: 了解如何将用户Microsoft 365联系人（如员工、合作伙伴或供应商）添加到电子邮件通讯组。
-ms.openlocfilehash: b66f599ec2fd59aeb5749e98473c8fba4a8ecb0d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解如何向电子邮件通讯Microsoft 365用户或联系人（如员工、合作伙伴或供应商）。
+ms.openlocfilehash: 1f70f56b26b35bae3509a9189ceb8b5fc222dfa5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165168"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370040"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>向通讯组添加用户或联系人
 
-作为组织的管理员，您可能需要将一个用户或联系人添加到通讯组[ (请参阅在](../setup/create-distribution-lists.md)通讯组中Microsoft 365) 。 例如，您可以将员工、外部合作伙伴或供应商添加到电子邮件通讯组。
+作为组织的管理员，可能需要将一个用户或联系人添加到通讯组[ (请参阅在](../setup/create-distribution-lists.md)通讯组中Microsoft 365。 例如，您可以将员工、外部合作伙伴或供应商添加到电子邮件通讯组。
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>向通讯组添加用户或联系人
 

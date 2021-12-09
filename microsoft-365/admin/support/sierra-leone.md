@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 41f2711911bfcd1d2a031ee4982d0d4682dc21bd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a63b2296a4c960660a62e4865eb4153fb4429c9b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161008"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373136"
 ---
 # <a name="contact-support-for-sierra-leone"></a>联系支持人员，
 
-[查找另一个国家/地区](../../business-video/get-help-support.md)。
+[查找另一个国家/地区](../get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5151

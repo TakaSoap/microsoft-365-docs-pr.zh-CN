@@ -16,7 +16,7 @@ productDirectory:
   items:
     - title: 开始行动
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: 规划移动到 Microsoft 365 for business。
+      summary: 规划移动到Microsoft 365企业。
       url: ../admin/admin-overview/what-is-microsoft-365.md
     - title: 设置 Microsoft 365 商业版
       imageSrc: 'https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg'
@@ -45,7 +45,7 @@ productDirectory:
     - title: 设置业务应用
       imageSrc: 'https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg'
       summary: 设置并了解 Bookings、列表、任务...
-      url: overview-bookings.md
+      url: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
     - title: 管理订阅
       imageSrc: 'https://docs.microsoft.com/office/media/icons/settings.svg'
       summary: 管理用户、重置密码、查看帐单...
@@ -61,7 +61,7 @@ productDirectory:
     - title: 获取支持
       imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-blue.svg'
       summary: 获取有关适用于Microsoft 365的帮助。
-      url: get-help-support.md
+      url: ../admin/get-help-support.md
 additionalContent:
   sections:
     - title: 了解详细信息

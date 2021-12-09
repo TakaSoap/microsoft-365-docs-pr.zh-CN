@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 了解如何设置策略以允许用户使用自助服务密码重置工具重置自己的密码。
-ms.openlocfilehash: d36ddc604ca73ab09fc2de8eed6c1c8675c61877
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 7a284e4b24fb21ff100e1be99998103026e320ca
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128420"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370256"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
@@ -57,7 +57,7 @@ ms.locfileid: "61128420"
 
 - **如果你使用的是本地 Active Directory，** 则上述两点不适用。 相反，你可以进行设置，**但需要付费订阅** 才能Azure AD Premium。
 
-本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](../../business-video/admin-center-overview.md)
+本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？] ([概述Microsoft 365 管理中心](../admin-overview/admin-center-overview.md)
 
 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 
@@ -65,7 +65,7 @@ ms.locfileid: "61128420"
 
 以下步骤将为企业中的所有人启用自助密码重置。
 
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">中心</a>中，转到"设置  >  **组织设置"** 页面。
+1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">中心</a>中，转到 **"设置**  >  **组织设置"** 页面。
 
 2. 在"组织设置"页 **的顶部** ，选择"安全& **隐私"** 选项卡。
   
@@ -79,6 +79,6 @@ ms.locfileid: "61128420"
 
 ## <a name="related-content"></a>相关内容
 
-[为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) \
+[为组织设置密码过期策略 (](../manage/set-password-expiration-policy.md) 文章) \
 [将个人用户密码设置为永不过期](set-password-to-never-expire.md)（文章）\
 [Microsoft 365业务培训视频 (](../../business-video/index.yml)链接页) 

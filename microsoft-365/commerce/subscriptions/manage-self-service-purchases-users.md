@@ -16,18 +16,18 @@ ms.custom:
 - commerce_ssp
 search.appverid:
 - MET150
-description: 用户可以了解如何管理其自助购买。
+description: 用户可以了解如何管理自助购买。
 ms.date: 03/17/2021
-ms.openlocfilehash: e4d8fe771340efa1e5084e77a1870e4db20bfe67
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 86b147ebd81842dee4aa15795650dee9c0f3fe5c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203347"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372896"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助购买（用户）
 
-作为用户，你可以购买某些产品的订阅，并将这些订阅的许可证分配给团队中的人员。 你负责支付你进行的任何自助服务购买。 可以在 Microsoft 365 管理中心 中管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com。</a>
+作为用户，你可以购买某些产品的订阅，并将这些订阅的许可证分配给团队中的人员。 你负责支付你进行的任何自助服务购买。 可以在 admin.microsoft.com 中的 Microsoft 365 管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理 admin.microsoft.com。</a>
 
 你的管理员具有你购买的任何订阅的只读视图。 他们可以看到所购买的每个订阅的产品、购买者名称、购买的订阅、到期日期、购买价格以及分配的用户。
 
@@ -38,12 +38,6 @@ ms.locfileid: "60203347"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
 
 ::: moniker-end
 
@@ -58,12 +52,6 @@ ms.locfileid: "60203347"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
 
 ::: moniker-end
 
@@ -85,12 +73,6 @@ ms.locfileid: "60203347"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
- 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
  1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>”页面。
@@ -98,7 +80,7 @@ ms.locfileid: "60203347"
 ::: moniker-end
 2. 选择要为其分配许可证的订阅。
 3. 选择 **分配许可证**。
-4. 在“**向用户分配许可证**”窗格中，开始键入名称，然后从结果中将其选中，将其添加到列表中。 一次最多可添加 20 名用户。
+4. 在 **向用户分配许可证** 窗格中，开始键入名称，然后从结果中将其选中，将其添加到列表中。一次最多可添加 20 名用户。
     > [!NOTE]
     > 只能向组织人员分配许可证。
 5. 选择 **"分配"，** 然后选择"**关闭"。**
@@ -108,12 +90,6 @@ ms.locfileid: "60203347"
 ：： moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
 
@@ -135,19 +111,13 @@ ms.locfileid: "60203347"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
 ::: moniker-end
 2. 在“**产品**”选项卡上，找到要取消的订阅，选择三个点（更多操作），然后选择“**取消订阅**”。
 3. 在“**取消订阅**”窗格中，选择取消原因。 （可选）提供你拥有的任何反馈。
-4. 选择“**保存**”。
+4. 选择 **保存**。
 
 ## <a name="manage-your-payment-details"></a>管理付款详细信息
 
@@ -160,14 +130,14 @@ ms.locfileid: "60203347"
 
 ### <a name="update-an-existing-payment-method"></a>更新现有的付款方式
 
-1. In the admin center， go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing & payments</a> page.
+1. 在管理中心，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">""帐单&付款</a>"页面。
 2. 在" **付款方式"** 选项卡上，从列表中选择现有的付款方式。
 3. 在右侧窗格中，选择"编辑 **"。** 你可以更改安全代码、到期日期、卡片上的名称和地址。
 4. 进行任何所需的更改，然后选择"保存 **"。**
 
 ### <a name="add-a-new-payment-method"></a>添加新的付款方式
 
-1. In the admin center， go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing & payments</a> page.
+1. 在管理中心，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">""帐单&付款</a>"页面。
 2. 在"**付款方式"** 选项卡上，选择 **"添加付款方式"。**
 3. 在 **"添加付款方式"** 窗格中，输入新付款方式的信息，然后选择"添加 **"。**
 
@@ -180,4 +150,4 @@ ms.locfileid: "60203347"
 
 有关自助服务购买的常见问题，请参阅 [自助服务购买常见问题](self-service-purchase-faq.yml)解答。
 
-如果你有问题或需要自助服务购买帮助， [请联系支持](../../business-video/get-help-support.md)人员。
+如果你有问题或需要自助服务购买帮助， [请联系支持](../../admin/get-help-support.md)人员。

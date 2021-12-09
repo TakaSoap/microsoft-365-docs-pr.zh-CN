@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划为保留标签提供了高级管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 47f9c3646968dc54aaa9b2d78182585560a8ba1f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 5154a5347fa22e5315abd148327d8eab5508f0d3
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555077"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372754"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用文件计划管理保留标签
 
@@ -135,7 +135,11 @@ ms.locfileid: "60555077"
 
    ![空白文件计划模板下载选项](../media/file-plan-blank-template-option.png)
 
-3. 下载模板后，为每个标签添加一行，然后保存文件。 有关描述每个性能的属性和有效值的信息，请参阅[下一节](#information-about-the-label-properties-for-import)。 
+3. 下载模板后，为每个标签添加一行，然后保存文件。 有关描述每个性能的属性和有效值的信息，请参阅[下一节](#information-about-the-label-properties-for-import)。
+    
+    填充模板示例：
+    
+    ![填写了信息的文件计划模板。](../media/file-plan-filled-out-template.png)
 
 4. 选择“**上传文件**”，以上传填写的模板。
     

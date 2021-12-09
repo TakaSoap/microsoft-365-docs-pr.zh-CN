@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0a2d76904c7f04974315c92425ca30700b10497
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: cf2bd90fb4719e1e742ae8f57ae7cfd6462e5c4a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962947"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373664"
 ---
 # <a name="explorer-and-real-time-detections-basics"></a>资源管理器和实时检测基础知识
 
@@ -37,13 +37,13 @@ ms.locfileid: "60962947"
 - [所需的许可证和权限](#required-licenses-and-permissions)
 
 > [!NOTE]
-> 这是 **资源管理器 (（** 也称为威胁资源管理器) 、电子邮件安全性、资源管理器和实时检测基础知识）的 **3** 篇文章系列的一 **部分 (如** 工具之间的差异以及操作它们所需的权限) 。 本系列中的其他两篇文章 [是资源管理器中](threat-hunting-in-threat-explorer.md) 的威胁搜寻和资源管理器 [中的电子邮件安全](email-security-in-microsoft-defender.md)。
+> 这是 **资源管理器 (（** 也称为威胁资源管理器) 、电子邮件安全性、资源管理器和实时检测基础知识）的 **3** 篇系列文章的一部分 (如工具之间的差异以及运行) 所需的权限。 本系列中的其他两篇文章 [是资源管理器中](threat-hunting-in-threat-explorer.md) 的威胁搜寻和资源管理器 [中的电子邮件安全](email-security-in-microsoft-defender.md)。
 
 本文介绍了资源管理器和实时检测报告以及所需的许可证和权限的区别。
 
-如果你的组织拥有适用于 Office 365 的 Microsoft [Defender，](defender-for-office-365.md)并且你拥有 [](#required-licenses-and-permissions)权限，可以使用 **资源管理器** (也称为威胁资源管理器 **)** 或实时检测来检测和修正威胁。 
+如果你的组织拥有适用于 Office 365 的 Microsoft [Defender，](defender-for-office-365.md)并且你 [](#required-licenses-and-permissions)拥有权限，可以使用 **资源管理器** (也称为威胁资源管理器 **)** 或实时检测来检测和修正威胁。
 
-在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到"电子邮件 **&协作"，** 然后选择"**资源管理器**"或 **"实时检测"。**
+在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到"电子邮件 **&协作"，** 然后选择"**资源管理器**"_或_**"实时检测"。**
 
 使用这些工具，你可以：
 
@@ -56,10 +56,10 @@ ms.locfileid: "60962947"
 
 ## <a name="differences-between-explorer-and-real-time-detections"></a>资源管理器和实时检测之间的差异
 
-- *实时检测是* Defender for Office 365计划 1 中可用的报告工具。 *威胁资源管理器* 是一款威胁搜寻和修正工具，适用于 Office 365计划 2。
-- 实时检测报告允许你实时查看检测。 威胁资源管理器也这样做，但它提供给定攻击的其他详细信息（如突出显示攻击活动）并赋予安全运营团队修正威胁 (包括触发自动调查和响应调查[) 。](automated-investigation-response-office.md)
+- *实时检测是* Defender for Office 365计划 1 中可用的报告工具。 *威胁资源管理器* 是威胁搜寻和修正工具，适用于 Office 365计划 2。
+- 实时检测报告允许你实时查看检测。 威胁资源管理器也这样做，但它提供给定攻击的其他详细信息，例如突出显示攻击活动，并赋予安全运营团队修正威胁 (包括触发自动调查和响应 [调查](automated-investigation-response-office.md)。
 - " *所有* 电子邮件"视图在威胁资源管理器中可用，但不包括在实时检测报告中。
-- 威胁资源管理器中包含丰富的筛选功能和修正操作。 有关详细信息，请参阅[Microsoft Defender for Office 365 服务说明：跨 Defender for Office 365 计划的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 威胁资源管理器中包含丰富的筛选功能和修正操作。 有关详细信息，请参阅[Microsoft Defender for Office 365 Service Description： Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
@@ -74,7 +74,7 @@ ms.locfileid: "60962947"
 
 - 在 Defender for Office 365：
   - 组织管理
-  - 安全 (可以在管理中心管理中心Azure Active Directory分配 <https://aad.portal.azure.com> () 
+  - 安全 (可以在管理中心Azure Active Directory分配 <https://aad.portal.azure.com> () 
   - 安全信息读取者
 - 在Exchange Online：
   - 组织管理

@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 购买时添加记录合作伙伴Microsoft 365更改合作伙伴，或删除订阅中的合作伙伴。
-ms.openlocfilehash: 2347fc6f90032e07c5c09021194f725e82d27249
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: abd82531e503e37370b12f881ea2744d7da0ff32
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157178"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371072"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>添加、更改或删除订阅顾问合作伙伴
 
@@ -41,13 +41,7 @@ ms.locfileid: "60157178"
 
 ::: moniker range="o365-worldwide"
 
-作为你的订阅顾问的 Microsoft 授权合作伙伴可向你提供销售、支持和技术方面的专业知识，以帮助你设置和维护订阅。 当你购买订阅顾问合作伙伴时，你可以添加订阅顾问合作伙伴Microsoft 365或其他时间。 如果当前未与合作伙伴合作，还可以在 [Microsoft Pinpoint](https://pinpoint.microsoft.com) 网站上找到一个合作伙伴。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-作为你的订阅顾问的 Microsoft 授权合作伙伴可向你提供销售、支持和技术方面的专业知识，以帮助你设置和维护订阅。 你可以在购买 Office 365 时或其他时间将订阅顾问合作伙伴添加为在录合作伙伴。 如果当前未与合作伙伴合作，还可以在 [Microsoft Pinpoint](https://pinpoint.microsoft.com) 网站上找到一个合作伙伴。
+作为你的订阅顾问的 Microsoft 授权合作伙伴可向你提供销售、支持和技术方面的专业知识，以帮助你设置和维护订阅。 当你购买订阅顾问合作伙伴或其他时间时，Microsoft 365合作伙伴作为记录合作伙伴。 如果当前未与合作伙伴合作，还可以在 [Microsoft Pinpoint](https://pinpoint.microsoft.com) 网站上找到一个合作伙伴。
 
 ::: moniker-end
 
@@ -59,15 +53,9 @@ ms.locfileid: "60157178"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-您选择的合作伙伴取决于您使用的 Office 365 服务以及将在哪个国家/地区使用这些服务。如果您要添加合作伙伴或更改您的订阅的合作伙伴，首先需要通过向合作伙伴询问来获取合作伙伴的 Microsoft 合作伙伴 ID。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
-作为 Office 365管理员，您可以创建或编辑用户、重置用户密码、管理用户许可证、管理域以及将管理员权限分配给组织中其他用户等。 但是，如果希望其他人执行这些管理任务，可以通过创建合作伙伴关系，将此角色委派给世纪银行的授权合作伙伴。
+作为 Office 365 管理员，您可以创建或编辑用户、重置用户密码、管理用户许可证、管理域以及向组织中其他用户分配管理员权限等。 但是，如果希望其他人执行这些管理任务，可以通过创建合作关系，将此角色委派给世纪银行的授权合作伙伴。
 
 ::: moniker-end
 
@@ -76,20 +64,6 @@ ms.locfileid: "60157178"
 ## <a name="add-a-partner-at-the-time-of-purchase"></a>在购买时添加合作伙伴
 
 1. In the admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase services**</a> page.
-2. 选择要购买的产品，然后选择"购买 **"。**
-3. 若要添加新合作伙伴，请展开 **"需要订单帮助？"，** 然后选择"**从 Microsoft 合作伙伴获取帮助"。**<br>
-按照"提供程序"页上的步骤搜索或与合作伙伴匹配。
-4. 如果已有合作伙伴，请在签出向导的第二步中，在右侧窗格中的"合作伙伴信息"下，选择"添加 **"。**
-5. 键入您要添加的合作伙伴的 Microsoft 合作伙伴 ID。您可以通过向合作伙伴询问来获取合作伙伴的 Microsoft 合作伙伴 ID。
-6. 完成向导的其他部分，以完成购买订阅。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-## <a name="add-a-partner-at-the-time-of-purchase"></a>在购买时添加合作伙伴
-
-1. 在管理 [中心](https://go.microsoft.com/fwlink/p/?linkid=848041)中，转到" **账单""** \> **购买服务"**  页面。
 2. 选择要购买的产品，然后选择"购买 **"。**
 3. 若要添加新合作伙伴，请展开 **"需要订单帮助？"，** 然后选择"**从 Microsoft 合作伙伴获取帮助"。**<br>
 按照"提供程序"页上的步骤搜索或与合作伙伴匹配。
@@ -110,16 +84,6 @@ ms.locfileid: "60157178"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
-2. 如果你有多个订阅，请选择要编辑的订阅。
-3. 在右侧，在订阅成本下，选择三个点 (添加记录合作伙伴) > **执行更多操作**。
-4. 键入要添加的合作伙伴的 Microsoft 合作伙伴 ID，选择" **检查 ID**"，然后选择" **提交**"。你可以通过向合作伙伴询问来获取其 Microsoft 合作伙伴 ID。
-5. 合作伙伴 ID 将显示在" **订阅**"页面。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 此过程由授权合作伙伴启动。 合作伙伴会向您发送一封电子邮件，询问您是否要授予他们充当记录合作伙伴的权限。
@@ -127,9 +91,9 @@ ms.locfileid: "60157178"
 接受此优惠
   
 1. 阅读电子邮件中的合作伙伴条款。
-2. 若要授权协议，请选择链接，该链接将转到 Office 365。
+2. 若要授权协议，请选择链接，该链接将转到 Office 365 中的授权页面。
 3. 在 **"合作伙伴关系****"** 下，选择"是"以授权合作伙伴成为你的委派管理员，然后选择"下一 **步"。**
-4. 如果合作伙伴关系优惠与试用订阅或购买产品/服务一起提供，请创建试用或订阅帐户。
+4. 如果合作伙伴关系优惠与试用订阅或购买产品/服务一起提供，请创建试用版或订阅帐户。
 
 ::: moniker-end
 
@@ -138,12 +102,6 @@ ms.locfileid: "60157178"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
@@ -167,12 +125,6 @@ ms.locfileid: "60157178"
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
@@ -190,12 +142,6 @@ ms.locfileid: "60157178"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-  
-如果要删除经销商关系，"删除"选项将灰显，并且必须要求你的经销商合作伙伴遵循以下说明：[删除与合作伙伴的经销商关系](/partner-center/remove-a-relationship)。
-  
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
   
 你必须要求你的经销商合作伙伴遵循以下说明： [删除与合作伙伴的经销商关系](/partner-center/remove-a-relationship)。
@@ -205,4 +151,4 @@ ms.locfileid: "60157178"
 ## <a name="related-content"></a>相关内容
 
 [查找你的Microsoft 365合作伙伴或经销商](../manage/find-your-partner-or-reseller.md) (文章) \
-[Plan your setup of Microsoft 365 for business (](../setup/plan-your-setup.md) article) 
+[Plan your setup of Microsoft 365 for business](../setup/plan-your-setup.md) (article) 

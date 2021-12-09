@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 08de4f4f6938bf13d8fdd4dcf4e9d4c5ebaeb321
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b68a4c28e3b7ec3d38640bae6c645a5eb514347b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197745"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371792"
 ---
 # <a name="contact-support-for-curacao"></a>联系库拉索的支持人员
 
-[查找另一个国家/地区](../../business-video/get-help-support.md)。
+[查找另一个国家/地区](../get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 377 302 1308

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: 6ea5027daad00e6c141bfb53137307113321aa7a
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a881f6829d99ef8e7a47340140609cbc75d7e5c3
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60655440"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370304"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -44,12 +44,6 @@ ms.locfileid: "60655440"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**报表**”\>“**使用情况**”页面。
 
 ::: moniker-end
 

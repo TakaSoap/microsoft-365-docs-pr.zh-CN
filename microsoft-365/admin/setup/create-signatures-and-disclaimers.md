@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 管理电子邮件签名，包括进入或离开组织的所有电子邮件的法律免责声明或披露声明。
-ms.openlocfilehash: 5e2dc52c881bd2dbe87552ab71a369662ade60e5
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: fe23d3c316750d1db02b2d4aff5872479889509b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128228"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373448"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围内的签名和免责声明
 
@@ -60,12 +60,6 @@ ms.locfileid: "61128228"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> 的管理中心。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a> 的管理中心。
@@ -87,7 +81,7 @@ ms.locfileid: "61128228"
 6. 在 **"应用此规则"** 下，选择 **"[应用于所有邮件]"。**
     
     > [!TIP]
-    > [了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)有关应用条件的详细信息。  (此范围文章适用于Exchange Server，但也适用于 Microsoft 365.)  
+    > [了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)有关应用条件的详细信息。  (此范围文章适用于Exchange Server，但它也适用于 Microsoft 365.)  
   
 7. 在"执行以下操作"下，保留" **附加免责声明**"处于选中状态。 
     
@@ -122,11 +116,11 @@ ms.locfileid: "61128228"
   
 ## <a name="more-resources"></a>更多资源
 
-有关使用 PowerShell 的信息，请参阅组织范围内的邮件免责声明、签名、页脚或[Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
+有关使用 PowerShell 的信息，请参阅组织范围内的邮件免责声明、[签名](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)、页脚或 Exchange Online。
 
 ## <a name="related-content"></a>相关内容
 
 [将电子邮件和联系人迁移到Microsoft 365 (](migrate-email-and-contacts-admin.md)视频) \
 [用户电子邮件设置](../email/office-365-user-email-settings.md) (文章) \
-[Microsoft 365 管理中心概述](../../business-video/admin-center-overview.md)（视频）
+[概述Microsoft 365 管理中心] ([视频Microsoft 365 管理中心 (](../admin-overview/admin-center-overview.md)概述) 
 

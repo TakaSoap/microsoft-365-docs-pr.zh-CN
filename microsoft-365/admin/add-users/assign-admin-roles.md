@@ -29,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 了解如何将管理员角色分配给企业中的一个或多个用户，以便他们可以在管理中心执行特定任务。
-ms.openlocfilehash: 4a112f17f253289383353720db8bb3365095d645
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: fd38bb9ed378e6b3ffc20a79ca71eb2943599dcc
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128408"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370616"
 ---
 # <a name="assign-admin-roles"></a>分配管理员角色
 
@@ -48,8 +48,8 @@ ms.locfileid: "61128408"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-1. 注册商业Microsoft 365，将自动成为全局管理员。为了帮助管理业务，还可以让其他人成为管理员。 
-1. 在"Microsoft 365 管理中心"中，选择"**用户**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户"。**</a>
+1. 当你注册 Microsoft 365 Business 时，将自动成为全局管理员。为了帮助管理业务，还可以让其他人成为管理员。 
+1. 在 Microsoft 365 管理中心中，选择“**用户**” > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">“**活动用户**”</a>。
 1. 选择要成为管理员的用户，然后选择"管理 **角色"。**
 
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
@@ -63,10 +63,10 @@ ms.locfileid: "61128408"
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>使用角色向用户分配管理员角色
 
-1. 在管理中心中，转到"<a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**角色分配"。**</a> 选择Azure AD **或 Intune** 选项卡以查看适用于你的组织的管理员角色。
+1. 在管理中心中，转到"<a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**角色分配"。**</a> 选择Azure AD **或 Intune** 选项卡查看适用于你的组织的管理员角色。
 2. 选择要为其分配用户的管理员角色。
 3. 选择 **分配管理员添加**  >  。
-4. 键入 **用户的显示名称****或用户名**，然后从建议列表中选择用户。
+4. 键入用户的 **显示名称****或用户名**，然后从建议列表中选择用户。
 5. 添加多个用户，直到完成。
 6. 选择 **"** 保存"，然后将用户添加到分配的管理员列表中。
 
@@ -75,12 +75,6 @@ ms.locfileid: "61128408"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到"用户 > [""活动用户"](https://go.microsoft.com/fwlink/p/?linkid=834822)页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -114,4 +108,4 @@ ms.locfileid: "61128408"
 [关于 Microsoft 365 管理员角色](about-admin-roles.md)（文章）\
 [Azure AD文章 (](/azure/active-directory/roles/permissions-reference)内置) \
 [使用 PowerShell 向用户帐户分配](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) 角色 (文章) \
-[授权或删除本文 (](../misc/add-partner.md) 的) 
+[授权或删除 (](../misc/add-partner.md) 文章) 

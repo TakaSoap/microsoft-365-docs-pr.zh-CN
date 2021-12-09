@@ -1,5 +1,5 @@
 ---
-title: 关闭帐户
+title: 关闭你的帐户
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ ms.custom:
 search.appverid: MET150
 description: 关闭 Microsoft 帐户时，将删除与帐户相关的所有信息，包括许可证、用户和用户数据。
 ms.date: 04/02/2021
-ms.openlocfilehash: b19328ffaf785479b81d6253c602c8f80fca99ae
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bfa5243eab6826626410ee54659a351f8ca7711a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202017"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371240"
 ---
-# <a name="close-your-account"></a>关闭帐户
+# <a name="close-your-account"></a>关闭你的帐户
 
 当关闭你的 Microsoft 帐户时，与你的帐户相关的所有信息都将被删除。 此信息包括订阅、许可证、付款方式、用户和用户数据。
 
@@ -36,7 +36,7 @@ ms.locfileid: "60202017"
 
 开始此过程之前，请确保备份要保留的所有数据。
 
-你必须是全局管理员或帐单管理员才能执行本文中的任务。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
+你必须是全局管理员或帐单管理员才能执行本文中的任务。有关详细信息，请参阅“[关于管理员角色](../admin/add-users/about-admin-roles.md)”。
 
 ## <a name="step-1-delete-users"></a>步骤 1：删除用户
 
@@ -48,11 +48,11 @@ ms.locfileid: "60202017"
 
 您还可以使用 [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet 批量删除用户。
 
-如果你的组织使用与 Azure AD Microsoft Azure Active Directory (同步的 Active Directory) ，请改为从 Active Directory 中删除用户帐户。 有关说明，请参阅批量[删除用户Azure Active Directory。](/azure/active-directory/users-groups-roles/users-bulk-delete)
+如果组织使用的 Active Directory 与 Microsoft Azure Active Directory (Azure AD) 同步，请改为从 Active Directory 中删除用户帐户。 有关说明，请参阅批量[删除用户Azure Active Directory。](/azure/active-directory/users-groups-roles/users-bulk-delete)
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步骤 2：取消所有活动订阅
 
-1. 在管理中心中，转到 **“账单”** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">“你的产品”</a>页面。
+1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 2. 在" **产品"** 选项卡上，查找活动订阅。 选择三个点（更多操作），然后选择“**取消订阅**”。
 3. 在“**取消订阅**”窗格中，选择取消原因。可选择提供任何反馈。
 4. 选择“**保存**”。
@@ -60,7 +60,7 @@ ms.locfileid: "60202017"
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>步骤 3：删除所有已禁用的订阅
 
-1. 在管理中心中，转到 **“账单”** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">“你的产品”</a>页面。
+1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 2. 在" **产品"** 选项卡上，选择已禁用的订阅。
 3. 在订阅详细信息页面上的 **订阅和付款** 设置部分中，选择删除 **订阅**。
 4. 在"**删除订阅"窗格中**，选择"**删除订阅"。**
@@ -68,7 +68,7 @@ ms.locfileid: "60202017"
 6. 对于每个已禁用的订阅，重复步骤 3 至 5，直到删除所有订阅。
 
 > [!NOTE]
-> 如果无法立即删除已禁用的订阅，请联系 [支持人员](../business-video/get-help-support.md)。
+> 如果无法立即删除已禁用的订阅，请联系 [支持人员](../admin/get-help-support.md)。
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>步骤 4：禁用多重身份验证
 
@@ -82,8 +82,8 @@ ms.locfileid: "60202017"
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步骤 5：删除Azure Active Directory
 
-1. 使用全局管理员帐户登录到 <a href="https://aad.portal.azure.com/" target="_blank">Azure AD</a> 管理中心。
-2. 选择“**Azure Active Directory**”。
+1. 使用全局管理员<a href="https://aad.portal.azure.com/" target="_blank">Azure AD</a>登录管理中心。
+2. 选择“Azure Active Directory”。
 3. 切换到要删除的组织。
 4. 选择 **"删除租户"。**
 5. 如果您的组织未能通过一项或多项检查，则会看到一个链接，该链接指向有关通过检查详细信息。 通过所有检查后，选择" **删除** "以完成此过程。

@@ -10,29 +10,29 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 12/08/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 30328a651c5473f4a3d2bcee6244eb39087cb4a6
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 46eab67f459e763a212178d768f9a411aaf7adb7
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110207"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372620"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>虚拟桌面基础结构 （VDI） 环境中 Microsoft Defender 防病毒软件的部署指南
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-除了标准本地配置或硬件配置之外，还可以在远程桌面 (RDS) 或虚拟桌面基础结构 Microsoft Defender 防病毒 VDI) 环境中使用 (。
+除了 Microsoft Defender 防病毒标准本地配置或硬件配置，您还可以在远程桌面 (RDS) 或 VDI) 环境中使用 () 。
 
-有关 Microsoft 远程桌面 服务和 VDI 支持的更多详细信息，请参阅[Azure 虚拟](/azure/virtual-desktop)桌面文档。
+有关 Azure Microsoft 远程桌面 和 VDI 支持的信息，请参阅[Azure 虚拟桌面文档](/azure/virtual-desktop)。
 
-对于基于 Azure 的虚拟机，请参阅 Install [Endpoint Protection in Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection)。
+有关基于 Azure 的虚拟机，请参阅 Install [Endpoint Protection in Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection)。
 
 通过轻松将更新部署到在 VDIs 中运行的 VM，我们缩短了本指南，侧重于如何快速轻松地获取计算机更新。 你不再需要定期创建和密封黄金映像，因为更新会扩展到主机服务器上组件位，然后在虚拟机打开时直接下载到虚拟机。
 
@@ -46,16 +46,16 @@ ms.locfileid: "61110207"
 - [扫描过期的计算机或已脱机一段时间的计算机](#scan-vms-that-have-been-offline)
 - [应用排除项](#exclusions)
 
-还可以下载虚拟桌面基础结构上的白皮书[Microsoft Defender 防病毒，](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)该白皮书将查看新的共享安全智能更新功能，以及性能测试和有关如何在你自己的 VDI 上测试防病毒性能的指导。
+还可以下载虚拟桌面Microsoft Defender 防病毒上的白皮书，[](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)该白皮书将查看新的共享安全智能更新功能，以及性能测试和有关如何在你自己的 VDI 上测试防病毒性能的指导。
 
 > [!IMPORTANT]
 > 尽管 VDI 可以托管在 Windows Server 2012 或 Windows Server 2016 上，但虚拟机 (VM) 至少应运行 Windows 10，1607，因为保护技术和功能在 Windows 早期版本中不可用。
 >
-> Microsoft Defender AV 在 Windows 10 Insider Preview 内部版本 18323 (及更高版本中的虚拟机上的操作方式有性能和功能) 。 如果你需要使用 Insider Preview 版本，我们将在本指南中确定;如果未指定，则最佳保护和性能的最低必需版本为 Windows 10 1607。
+> 对 Microsoft Defender AV 在 Windows 10 Insider Preview 内部版本 18323 (及更高版本中的虚拟机上的操作方式进行了性能和功能) 。 如果你需要使用 Insider Preview 版本，我们将在本指南中确定;如果未指定，则最佳保护和性能的最低必需版本为 Windows 10 1607。
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>设置专用的 VDI 文件共享
 
-在 Windows 10 版本 1903 中，我们引入了共享安全智能功能，此功能将下载的安全智能更新的解包卸载到主机上，从而节省各个计算机上以前的 CPU、磁盘和内存资源。 此功能已进行备份，现在适用于 Windows 10版本 1703 及以上版本。 可以使用组策略或 PowerShell 设置此功能。
+在 Windows 10 版本 1903 中，我们引入了共享安全智能功能，此功能将下载的安全智能更新的解包卸载到主机上，从而节省各个计算机上以前的 CPU、磁盘和内存资源。 此功能已被备份，现在适用于 Windows 10版本 1703 及以上版本。 可以使用组策略或 PowerShell 设置此功能。
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>使用组策略启用共享安全智能功能：
 
@@ -65,7 +65,7 @@ ms.locfileid: "61110207"
 
 3. 单击 **"管理模板"。**
 
-4. 展开树以 **Windows安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
+4. 展开树以Windows **安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
 
 5. 双击为 **VDI 客户端定义安全智能** 位置，然后将选项设置为 **已启用**。 将自动显示一个字段。
 
@@ -107,6 +107,29 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 安全智能包通常每三到四小时发布一次。 建议不要设置小于 4 小时的频率，因为这会增加管理计算机上网络开销，而没有任何好处。
 
+还可以设置单个服务器或计算机，以定期代表 VM 获取更新，将它们放在文件共享中供使用。
+当设备对共享具有读取访问权限的共享和 NTFS 权限，以便它们可以获取更新时，这是可能的。
+
+为此:
+ 1. 创建 SMB/CIFS 文件共享。 
+ 
+ 2. 使用以下示例创建具有以下共享权限的文件共享。
+
+    ```PowerShell
+    PS c:\> Get-SmbShareAccess -Name mdatp$
+
+    Name   ScopeName AccountName AccessControlType AccessRight
+    ----   --------- ----------- ----------------- -----------
+    mdatp$ *         Everyone    Allow             Change
+    ```
+   
+    > [!NOTE]
+    > 为经过身份验证的用户添加了 NTFS **权限：读取：**。 
+
+    对于此示例，文件共享为：
+
+    \\fileserver.fqdn\mdatp$\wdav-update
+
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>设置计划任务以运行 PowerShell 脚本
 
 1. 在管理计算机上，打开"任务"开始"菜单键入 **"任务计划程序"。** 打开它，然后选择 **侧面板** 上的"创建任务..."。
@@ -145,7 +168,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 除了实时保护和扫描之外，计划的 [扫描也运行](configure-real-time-protection-microsoft-defender-antivirus.md)。
 
-扫描本身的开始时间仍基于计划扫描策略 (**ScheduleDay、ScheduleTime** 和 **ScheduleQuickScanTime**) 。  随机化将导致Microsoft Defender 防病毒从计划扫描设置的时间起，在 4 小时时段内在每台计算机中启动扫描。
+扫描本身的开始时间仍基于计划扫描策略 (**ScheduleDay、ScheduleTime** 和 **ScheduleQuickScanTime**) 。  随机化将导致Microsoft Defender 防病毒从计划扫描设置的时间起，在 4 小时窗口中在每台计算机中启动扫描。
 
 有关 [可用于计划](scheduled-catch-up-scans-microsoft-defender-antivirus.md) 扫描的其他配置选项，请参阅计划扫描。
 
@@ -153,7 +176,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 可以指定在计划扫描期间应执行的扫描类型。 快速扫描是首选方法，因为它们旨在查找恶意软件需要驻留的所有位置以处于活动状态。 以下过程介绍如何使用组策略设置快速扫描。
 
-1. 在组策略编辑器中，转到"管理 **模板** Windows \> **组件** Microsoft Defender 防病毒 \>  \> **扫描"。**
+1. 在组策略编辑器中，转到"管理 **模板** \> **Windows组件** Microsoft Defender 防病毒 \>  \> **扫描"。**
 
 2. 选择 **"指定要用于计划扫描** 的扫描类型"，然后编辑策略设置。
 
@@ -165,7 +188,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ## <a name="prevent-notifications"></a>阻止通知
 
-有时，Microsoft Defender 防病毒多个会话发送通知或保留通知。 为了尽可能减小此问题，您可以锁定Microsoft Defender 防病毒用户界面。 以下过程介绍如何使用组策略禁止通知。
+有时，Microsoft Defender 防病毒多个会话发送通知或保留通知。 为了最大程度地减小此问题，您可以锁定Microsoft Defender 防病毒用户界面。 以下过程介绍如何使用组策略禁止通知。
 
 1. 在组策略编辑器中，转到Windows **客户端** Microsoft Defender 防病毒 \>  \> **组件。**
 
@@ -175,10 +198,10 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 4. 如通常一样部署组策略对象。
 
-当完成扫描或Microsoft Defender 防病毒操作时，禁止通知Windows 10在操作中心中显示通知。 但是，安全运营团队将在"安全中心"门户中Microsoft 365 Defender[扫描结果](microsoft-defender-security-center.md)。
+禁止通知可防止Microsoft Defender 防病毒扫描或采取修正操作Windows 10在操作中心中显示通知。 但是，安全运营团队将在"安全中心"门户中Microsoft 365 Defender[扫描结果](microsoft-defender-security-center.md)。
 
 > [!TIP]
-> 若要在 Windows 10 或 Windows 11 操作中心，请执行以下步骤之一：
+> 若要在 Windows 10 或 Windows 11 上打开操作中心，请执行以下步骤之一：
 >
 > - 在任务栏的右侧，选择操作中心图标。
 > - 按Windows键按钮 + A。
@@ -205,7 +228,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ## <a name="scan-vms-that-have-been-offline"></a>扫描已脱机的 VM
 
-1. 在组策略编辑器中，转到"Windows **扫描Microsoft Defender 防病毒** \>  \> **组件"。**
+1. 在组策略编辑器中，转到Windows **扫描Microsoft Defender 防病毒** \>  \> **组件**。
 
 2. 选择 **"打开捕获快速扫描"，** 然后编辑策略设置。
 
@@ -231,7 +254,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 此策略对Microsoft Defender 防病毒最终用户隐藏整个用户界面。
 
-## <a name="exclusions"></a>排除项
+## <a name="exclusions"></a>排除
 
 可以添加、删除或自定义排除项，以满足你的需求。
 
@@ -239,6 +262,6 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ## <a name="additional-resources"></a>其他资源
 
-- [Tech Community博客：Microsoft Defender 防病毒非永久性 VDI 计算机配置设备](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
+- [Tech Community博客：Microsoft Defender 防病毒非永久性 VDI 计算机配置网络](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
 - [远程桌面服务和 VDI 上的 TechNet 论坛](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)
 - [SignatureDownloadCustomTask PowerShell 脚本](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)

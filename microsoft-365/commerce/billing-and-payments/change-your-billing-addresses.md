@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何更新帐单邮寄地址或用于接收适用于Microsoft 365帐单通知的电子邮件地址。
 ms.date: 04/07/2021
-ms.openlocfilehash: abc86bdaad0f28bf0590e19d8a7d37fbc21239b8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 839dab1c63394f76c41abb7dd784253bb636ba38
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202053"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371276"
 ---
 # <a name="change-your-billing-addresses"></a>更改帐单邮寄地址
 
@@ -40,19 +40,13 @@ ms.locfileid: "60202053"
 
 大多数情况下，这些地址都相同。 如果需要，可更改其中一个或多个地址。 您还可以提供备用电子邮件地址以接收帐单通知并更改其他管理员的备用电子邮件地址。
 
-若要了解有关帐单或发票的信息，请参阅 [查看帐单或发票](view-your-bill-or-invoice.md) 和 [了解帐单或发票](understand-your-invoice2.md)。
+若要了解有关帐单或发票的更多信息，请参阅 [查看帐单或发票](view-your-bill-or-invoice.md) 和 [了解帐单或发票](understand-your-invoice2.md)。
 
 ## <a name="change-your-sold-to-address"></a>更改售达地址
 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**Billing accounts**</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">中心</a>中，转到"计费 > **计费帐户"** 页面。
 
 ::: moniker-end
 
@@ -71,12 +65,6 @@ ms.locfileid: "60202053"
 ::: moniker range="o365-worldwide"
 
 1. In the admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>， go to the **Billing** > **Payment methods** page.
 
 ::: moniker-end
 
@@ -100,12 +88,6 @@ ms.locfileid: "60202053"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
@@ -124,7 +106,7 @@ ms.locfileid: "60202053"
 
 默认情况下，组织的帐单通知将发送到 Microsoft 电子邮件地址以及组织中每个全局管理员和帐单管理员的备用电子邮件地址。 每个管理员可以通过更新其个人资料信息来更改其备选电子邮件地址。
   
-1. 以全局Microsoft 365登录到使用你的工作或学校帐户登录。了解如何[登录](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用你的 Microsoft 365 工作或学校帐户作为全局管理员登录。[了解如何登录](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 选择"**用户"图标**，然后选择"**我的帐户"。**
   
@@ -141,12 +123,6 @@ ms.locfileid: "60202053"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">账单通知</a>”页面。
 
 ::: moniker-end
 

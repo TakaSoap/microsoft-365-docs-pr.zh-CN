@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d09e65a4e45719a207e0816092d1353d5ae366e8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a7b11143ef3d80bafe32784c11012d435922a75d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188681"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373532"
 ---
 # <a name="contact-support-for-micronesia"></a>联系密尼西亚支持人员
 
-[查找另一个国家/地区](../../business-video/get-help-support.md)。
+[查找另一个国家/地区](../get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5148

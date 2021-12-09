@@ -21,16 +21,16 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 1d0c8c007a9e1e06980f06c7db0add1830c28ae0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 391a3f3d59b5583a89db4e0b2a3d54b3e488f729
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198933"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372404"
 ---
 # <a name="tax-information"></a>税务信息
 
-购买Microsoft 365服务时，所支付税款由以下两项之一决定：您的业务地址或发货地址（如果不同）。 如果您的组织位于美国，则必须向 FEIN 组织提供联邦 (号) 。
+购买Microsoft 365服务时，所支付税款由以下两项之一决定：您的业务地址或送货地址（如果不同）。 如果您的组织位于美国，则必须向 FEIN 组织提供联邦 (号) 。
 
 以下国家/地区的企业可以提供其 VAT 号码或本地等效项：
 
@@ -104,11 +104,11 @@ ms.locfileid: "60198933"
 
 在 EMEA Microsoft 365购买服务时，此购买可能受 VAT Value-Added税款 () 。
   
-- 如果您位于欧盟成员国家/地区亚美尼亚、白俄罗斯、挪威、土耳其或阿拉伯联合酋长国，并且您不提供有效的当地 VAT ID，Microsoft Ireland Operations Ltd. 将基于您的帐户设置为的计费国家/地区，应用当前的当地 VAT 税率。
+- 如果您位于欧盟成员国家/地区亚美尼亚、白俄罗斯、挪威、土耳其或阿拉伯联合酋长国，并且您不提供有效的当地 VAT ID，Microsoft Ireland Operations Ltd. 将基于您的帐户设置为的计费国家/地区应用当前的当地 VAT 税率。
 
 - 如果你位于列支敦士登、俄罗斯、塞尔维亚、南非或瑞士，则应用 VAT，无论你是否提供 VAT ID。
 
-- 对于欧盟客户，在我们可以验证 VAT ID 之前，它必须可用于 VAT 信息 Exchange 系统 (VIES) 。 如果无法验证 VAT ID，请联系当地税务机构。
+- 对于欧盟客户，在我们验证 VAT ID 之前，它必须可用于在 VAT 信息系统 Exchange VIES (验证) 。 如果无法验证 VAT ID，请联系当地税务机构。
 
 如果符合以下条件，你可能有资格享受 VAT 零分级：
   
@@ -134,7 +134,7 @@ ms.locfileid: "60198933"
 
 在美国、加拿大、墨西哥、智利和哥伦比亚，根据产品性质和你的位置，各种税率适用。
   
-如果你的帐单由 Microsoft Corporation (查看你的发票[) ，](view-your-bill-or-invoice.md)并且你在美国、加拿大、波多黎各、智利和哥伦比亚之外的 Microsoft 365 注册，则通常不收取税款。
+如果你的帐单由 Microsoft Corporation (查看你的[](view-your-bill-or-invoice.md)发票，并且你注册了美国、加拿大、波多黎各、智利和哥伦比亚之外的 Microsoft 365，则通常不收取税款。
 
 ## <a name="add-your-vat-id"></a>添加 VAT ID
 
@@ -142,7 +142,7 @@ ms.locfileid: "60198933"
 2. 在“**产品**”选项卡上，选择要更新的订阅。
 3. 在订阅详细信息页面上的"服务使用地址"**部分**，选择"**编辑服务使用地址"。**
 4. 在" **编辑服务使用地址** "窗格的 **"VAT** 号码"框中，输入 VAT ID（包括前缀）且不带任何空格。
-5. 选择“**保存**”。
+5. 选择 **保存**。
 
 ## <a name="how-taxes-are-calculated"></a>如何计算税款
 
@@ -158,11 +158,11 @@ ms.locfileid: "60198933"
 
 ## <a name="apply-for-tax-exempt-status"></a>申请免税身份
 
-如果你符合在你的市场中获得免税身份的资格，请启动服务[](../../business-video/get-help-support.md)请求，为组织建立免税状态。
+如果你符合在你的市场中获得免税身份的资格，请启动服务[](../../admin/get-help-support.md)请求，为组织建立免税状态。
 
 |国家/地区或区域设置 | 文档 |
 |------------------|----------------|
-| 加拿大 | 豁免证书 (授权书或同等授权)  |
+| 加拿大 | 豁免证书 (或等效授权书)  |
 | 智利 | ICO status/RUT (Registro Unico Tribu一)  |
 | 哥伦比亚 | ICO status/RUT (Registro Unico Tribu一)  |
 | 持有免税的国际标准组织 | 来自当地税务机构的认证/信函确认 |

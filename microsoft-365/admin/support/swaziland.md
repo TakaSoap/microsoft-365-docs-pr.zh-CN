@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 800f1aa2d8405ebd1b2a24523f22e0a8420e56a7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4a66c8ae4e894ca85bd94245887f3ad625f5782a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172883"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372044"
 ---
 # <a name="contact-support-for-swaziland"></a>联系美国支持部门
 
-[查找另一个国家/地区](../../business-video/get-help-support.md)。
+[查找另一个国家/地区](../get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5151
@@ -29,7 +29,7 @@ ms.locfileid: "60172883"
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-英语：Mon-Fri 10 AM-6 PM
+英语：Mon-Fri上午 10 点到下午 6 点
 
 ### <a name="technical-support"></a>技术支持：
 

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0ed5410005bb07c2e0fe97a6a7d26fddcdacbe50
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 5dd8cbd36fdac4aa3d0661a9b418a30ec2bae44f
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302082"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369860"
 ---
 # <a name="get-user-related-machines-api"></a>获取与用户相关的计算机 API
 
@@ -59,7 +59,7 @@ ms.locfileid: "61302082"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"。 有关详细信息，请参阅创建 [和管理角色](user-roles.md)) 
+> - 用户至少需要具有以下角色权限："查看数据"。 有关详细信息，请参阅 [创建和管理角色](user-roles.md)
 > - 响应将仅包括用户可以基于设备组设置访问的设备。 有关详细信息，请参阅创建 [和管理设备组](machine-groups.md)。
 
 ## <a name="http-request"></a>HTTP 请求

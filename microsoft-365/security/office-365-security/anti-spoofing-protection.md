@@ -22,12 +22,12 @@ ms.localizationpriority: high
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0ea3c4a9749219060de10bdc988d8a2ba8cf02c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f685e1aaa7b88cd2a86b2c4d7af4c9015edc225
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196629"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372164"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -168,7 +168,7 @@ Microsoft 区分两种不同类型的欺骗邮件：
 
   - 在电子邮件客户端中创建邮箱规则，以将邮件移动到收件箱。 此外，还可以要求管理员按照 [EOP 中的欺骗智能见解](learn-about-spoof-intelligence.md)和[管理租户允许/阻止列表](tenant-allow-block-list.md)部分的说明配置替代。
 
-  - 使用 Microsoft 365 创建支持票证，以便为邮件列表创建替代，以将其视为合法邮件。 有关详细信息，请参阅[就商业版产品问题联系支持人员 - 管理员帮助](../../business-video/get-help-support.md)。
+  - 使用 Microsoft 365 创建支持票证，以便为邮件列表创建替代，以将其视为合法邮件。 有关详细信息，请参阅[就商业版产品问题联系支持人员 - 管理员帮助](../../admin/get-help-support.md)。
 
 如果其他所有操作均失败，则可以向 Microsoft 报告该邮件为误报。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 

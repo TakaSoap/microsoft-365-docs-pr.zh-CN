@@ -26,27 +26,27 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: 了解你需要了解哪些信息，然后再完成注册Office 365。
+description: 了解在完成注册过程以使用 Office 365 之前您需要了解Office 365。
 ms.date: 03/17/2021
-ms.openlocfilehash: 6fc322c895797b7e5419d5c10bb5ddf76efd43d8
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: c7748eb6a7c7bae68b72416cfb599c0ab5e85794
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128360"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370196"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何注册 - 管理员帮助
 
-注册 Microsoft 365 商业版，以便团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
+注册Microsoft 365商业版，以便团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
 
 ::: moniker range="o365-21vianet"
 
-如果你在中国，由世纪Office 365运营的云服务旨在满足中国对安全、可靠且可扩展的云服务的需求。 此服务由 Microsoft 授权给世纪互联使用的技术提供支持。 Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管理此服务的交付。 世纪互联是中国最大的运营商中立 Internet 数据中心服务提供商，提供托管、托管网络服务及云计算基础结构服务。 By licensing Microsoft technologies， 21Vianet operates local Microsoft datacenters to provide you the ability to use Microsoft 服务 while keeping your data within China. 世纪互联还提供订阅、计费服务和支持。
+如果你在中国，由世纪Office 365运营的云服务旨在满足中国对安全、可靠且可扩展的云服务的需求。 此服务由 Microsoft 授权给世纪互联使用的技术提供支持。 Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管理此服务的交付。 世纪互联是中国最大的运营商中立 Internet 数据中心服务提供商，提供托管、托管网络服务及云计算基础结构服务。 通过授权 Microsoft 技术，世纪银行运营本地 Microsoft 数据中心，让你能够使用 Microsoft 服务，同时将数据保留在中国。 世纪互联还提供订阅、计费服务和支持。
   
 > [!NOTE]
 > 这些服务受到中国法律的制约。
   
-注册由世纪Office 365运营的组，以便你的团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
+注册由世纪Office 365运营的 Office 365，以便你的团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
   
 准备好注册了吗？ [选择计划](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)。
   
@@ -67,15 +67,6 @@ ms.locfileid: "61128360"
   
 ::: moniker-end
 
-::: moniker range="o365-germany"
-## <a name="choose-a-plan"></a>选择计划
-
-购买之前，请思考一下注册的计划。 这将有助于避免今后因增长而带来的不便。
-  
-需要有关选择计划的帮助？ 销售顾问可以解答你的疑问。 只需转到 [比较所有产品并选择](https://products.office.com/compare-all-microsoft-office-products?tab=2) 页面左侧列出的联系支持选项之一。 
-  
-::: moniker-end
-
 ::: moniker range="o365-worldwide"
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>准备好注册免费试用版或购买订阅了吗？
 
@@ -91,17 +82,6 @@ ms.locfileid: "61128360"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>准备好注册免费试用版或购买订阅了吗？
-
-转到 [比较所有产品](https://products.office.com/compare-all-microsoft-office-products?tab=2) 以选择要购买的计划并启动注册向导。 
-  
-如果从免费试用版开始，可以 [稍后购买](../../commerce/try-or-buy-microsoft-365.md)。 试用版中所有的用户和数据仍存在。
-  
-无需取消试用版。 如果你不购买试用版订阅，它将自动在试用期结束时过期，并且所有信息将永久删除。
-  
-::: moniker-end
-
 ## <a name="youll-be-asked-for-the-following-information-when-you-sign-up"></a>注册时，系统将会要求你提供以下信息
 
 - **您的订阅的地址和联系信息：**
@@ -113,7 +93,7 @@ ms.locfileid: "61128360"
     > [!NOTE]
     > 您在此处输入的电子邮件地址不同于Microsoft 365电子邮件地址 (登录名下方) 。 因为我们也会向此地址发送您的帐单信息，因此建议您使用适用于接收业务电子邮件的电子邮件地址。
   
-- **用户 ID (登录) ：** 此用户 ID 将成为你Microsoft 365，只是为了快速入门。
+- **登录名 (用户 ID) ：** 此用户 ID 将成为你Microsoft 365，只是为了快速入门。
 
     此用户 ID 是用于登录的电子邮件地址。 例如，如果您的企业名称是 Fourth Coffee，则您可能会选择使用 rob@fourthcoffee.onmicrosoft.com 作为用户 ID。
 

@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: 64ee2649127445e8438d915734dad9f2aa965933
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a2c4480d443874c99cf014570e01845708d18d88
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165036"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371144"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
@@ -51,12 +51,6 @@ ms.locfileid: "60165036"
 ::: moniker range="o365-worldwide"
 
 2. 在管理中心，转到 **Teams 和组**\><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>页。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-2. 在 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)中，转到 **Teams 和组**\>**共享邮箱** 页。
 
 ::: moniker-end
 
@@ -117,12 +111,6 @@ ms.locfileid: "60165036"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 

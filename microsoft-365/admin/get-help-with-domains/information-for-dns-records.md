@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 收集创建 DNS 记录所需的值/信息，以将域连接到 Microsoft 365 订阅。
-ms.openlocfilehash: 52d3dfdf0e964c750a0aecd67d2fb6064eb0625e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 81a1bd650e507e7f2c15a16cd5a048181ca6c816
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164676"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371120"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>收集创建 DNS 记录所需的信息
 
@@ -40,12 +40,6 @@ ms.locfileid: "60164676"
 ::: moniker range="o365-worldwide"
 
 1. In the Microsoft 365 管理中心， go to the **设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>”页面。
 
 ::: moniker-end
 
@@ -63,7 +57,7 @@ ms.locfileid: "60164676"
     
 5. 转到 ["添加 DNS 记录"以连接域](create-dns-records-at-any-dns-hosting-provider.md)，然后按照步骤在 DNS 主机的网站上添加记录。
     
-6. 按照在 DNS 主机上 (TXT 记录或 MX 记录) 的步骤操作，然后重新在Microsoft 365。
+6. 按照在 DNS 主机上 (TXT 记录或 MX 记录) 的步骤操作，然后将域验证回Microsoft 365。
 
 7. 在 DNS 主机 (域) 后，从 DNS 主机中删除 TXT 记录或 MX Microsoft 365。
     
@@ -72,12 +66,6 @@ ms.locfileid: "60164676"
 ::: moniker range="o365-worldwide"
 
 1. In the Microsoft 365 管理中心， go to the **设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
-
-::: moniker-end
-    
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>”页面。
 
 ::: moniker-end
 

@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 118e836fbd55f9b69acfc892cf16edb1b19d2eff
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 080e48d62d7ef6417da92703c3fd3266337771e3
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554428"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371060"
 ---
 # <a name="contact-support-for-china"></a>联系中国支持人员
 
-[查找另一个国家/地区](../../business-video/get-help-support.md)。
+[查找另一个国家/地区](../get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 800 988 0365
@@ -39,12 +39,12 @@ ms.locfileid: "60554428"
 
 英语：全天候
 
-备用电话电话号码：400 920 0365 (Mobile) 
+备用电话号码：400 920 0365 (Mobile) 
 
 ## <a name="follow-us-on-wechat"></a>在微信上关注我们
 ![WeChat QR 代码。](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
-## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>仅联系由世纪Office 365运营的技术支持人员
+## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>仅联系由世纪Office 365运营的部门的支持人员
 ## <a name="phone-number"></a>电话号码
 +86 4000 890 365
 
@@ -57,4 +57,4 @@ ms.locfileid: "60554428"
 
 中文和英语电话支持：Mon-Fri 9 AM-9 PM
 
-通过管理中心 (中文和英语在线支持) ：一天 24 小时，每周 7 天
+中文和英语在线 (通过管理中心进行) ：一天 24 小时，每周 7 天

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
 description: 了解如何删除或还原用户的帐户Microsoft 365帐户。
-ms.openlocfilehash: 991e9dd21b35aad54bd35532dfad114d977107f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a405e486bb6791649d546e1871e9c9fde5bb53dd
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164316"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372116"
 ---
 # <a name="quick-help-deleted-user"></a>快速帮助：已删除的用户
 
@@ -37,12 +37,6 @@ ms.locfileid: "60164316"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -59,7 +53,7 @@ ms.locfileid: "60164316"
   
 ## <a name="restore-a-user"></a>还原用户
 
-您可以通过在主页上搜索已删除的用户，在结果中选择"已删除的用户"，或者从左侧导航栏中进入"已删除用户"页面并选择要还原的用户来还原用户。  [阅读完整文章](../add-users/delete-a-user.md)。
+您可以通过在主页上搜索已删除的用户，在结果中选择"已删除用户"，或者从左侧导航栏中进入"已删除用户"页面并选择要还原的用户来还原用户。  [阅读完整文章](../add-users/delete-a-user.md)。
   
 ## <a name="what-are-deleted-users"></a>什么是已删除的用户？
 
@@ -67,7 +61,7 @@ ms.locfileid: "60164316"
   
 ## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>删除用户是否将释放其Microsoft 365许可证？
 
-可以，删除用户会释放分配给Microsoft 365许可证的许可证。 然后，您可以分配该许可证给另一个用户。 [阅读完整文章](../../commerce/licenses/buy-licenses.md)。
+可以，删除用户会释放分配给Microsoft 365许可证。 然后，您可以分配该许可证给另一个用户。 [阅读完整文章](../../commerce/licenses/buy-licenses.md)。
   
 ## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>"已删除的用户"中列有一个已删除的用户，然后它消失了。发生了什么？
 
@@ -83,4 +77,4 @@ ms.locfileid: "60164316"
   
 ## <a name="how-do-i-restore-a-user"></a>如何还原用户？
 
-您可以通过在主页上搜索已删除的用户，在结果中选择"已删除的用户"，或者从左侧导航栏中进入"已删除用户"页面并选择要还原的用户来还原用户。  [阅读完整文章](../add-users/delete-a-user.md)。
+您可以通过在主页上搜索已删除的用户，在结果中选择"已删除用户"，或者从左侧导航栏中进入"已删除用户"页面并选择要还原的用户来还原用户。  [阅读完整文章](../add-users/delete-a-user.md)。

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 管理员可以了解如何管理其组织中用户购买的自助服务。
 ms.date: 03/26/2021
-ms.openlocfilehash: edfacf8ebd1cd6815ec715e975b8bebc273dafc6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 854a013779f9d1b3d141b1770860740f633e8130
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158451"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371912"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助购买（管理员）
 
@@ -39,12 +39,6 @@ ms.locfileid: "60158451"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
 
 ::: moniker-end
 
@@ -64,12 +58,6 @@ ms.locfileid: "60158451"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
 
@@ -108,12 +96,6 @@ ms.locfileid: "60158451"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到 **账单** > **购买服务** 页面。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到 **账单** > **购买服务** 页面。
@@ -146,12 +128,6 @@ ms.locfileid: "60158451"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，转到" **帐单** > **""你的产品"** 页面。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到" **帐单** > **""你的产品"** 页面。
@@ -177,12 +153,6 @@ ms.locfileid: "60158451"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，转到" **帐单** > **""你的产品"** 页面。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到" **帐单** > **""你的产品"** 页面。
@@ -202,4 +172,4 @@ ms.locfileid: "60158451"
 
 有关自助服务购买的常见问题，请参阅 [自助服务购买常见问题](self-service-purchase-faq.yml)解答。
 
-如果你有问题或需要自助服务购买帮助， [请联系支持](../../business-video/get-help-support.md)人员。
+如果你有问题或需要自助服务购买帮助， [请联系支持](../../admin/get-help-support.md)人员。

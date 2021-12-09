@@ -18,14 +18,14 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 ROBOTS: NOINDEX
-description: 了解如何向通过第三方Microsoft 365购买、由 Microsoft 识别的订阅添加许可证。
+description: 了解如何向通过第三Microsoft 365购买、由 Microsoft 识别的订阅添加许可证。
 ms.date: 08/27/2021
-ms.openlocfilehash: d5c8c689db74c1e12588ab1ad1bcefc102f9476d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5ebba7e0a27efdd0a49ba9719c93e04f5c2760b4
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203455"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369740"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>向通过批量许可服务中心购买的订阅添加许可证
 
@@ -36,17 +36,11 @@ ms.locfileid: "60203455"
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
 ::: moniker-end
 
-2. 选择要添加许可证的订阅，然后选择批量许可服务中心 (**VLSC)** 链接。
+2. 选择要添加许可证的订阅，然后选择"批量许可服务中心" (**VLSC)** 链接。
 
 3. 请按照 VLSC 中的步骤完成购买。

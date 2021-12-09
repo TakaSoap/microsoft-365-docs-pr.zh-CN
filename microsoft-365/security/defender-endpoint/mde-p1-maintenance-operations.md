@@ -7,27 +7,24 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 12/07/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c950730586363312999488ea15c82293388058fa
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: b6fcb95a0a0f784a73de823c55d0a830a7faf1a9
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302466"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370688"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>管理 Microsoft Defender 终结点计划 1
 
 **适用对象**
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
-> [!TIP]
-> 如果你已Microsoft 365 E3 A3，Microsoft 365 E5或 A5，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 注册预览计划！
 
 当你在组织中使用 Defender for Endpoint Plan 1 时，安全团队可以采取某些步骤来维护你的安全解决方案。 当安全团队将维护和操作计划汇集在一起时，请确保至少包括以下活动：
 

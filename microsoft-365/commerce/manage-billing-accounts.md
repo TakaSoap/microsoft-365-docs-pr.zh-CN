@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解计费帐户及其如何用于管理帐户设置、发票、付款方式和购买。
 ms.date: 03/17/2021
-ms.openlocfilehash: 07997e8001ee753de2693b62d693e3dc2e2261c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5107ca7bd545eb202999d96266e6ab7688db767c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151322"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370928"
 ---
 # <a name="understand-billing-accounts"></a>了解计费帐户
 
@@ -34,8 +34,8 @@ ms.locfileid: "60151322"
 
 当前<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>支持以下类型的计费帐户：
 
-- Microsoft Online Services计划：此计费帐户是在你直接注册订阅时Microsoft 365帐户。
-- Microsoft &服务协议 (MPSA) 计划：当你的组织签署 MPSA 批量许可协议以购买软件和联机服务时，将创建此计费帐户。
+- Microsoft Online Services计划：此计费帐户是在你直接注册 Microsoft 365订阅时创建的。
+- Microsoft 产品&服务协议 (MPSA) 计划：当你的组织签署 MPSA 批量许可协议以购买软件和联机服务时，将创建此计费帐户。
 - Microsoft 客户协议：当你的组织与 Microsoft 代表、授权的合作伙伴合作或单独购买时，将创建此计费帐户。
 
 " <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">计费帐户</a> "页提供 Microsoft 商业帐户的视图。 默认情况下，你的组织至少具有一个与在直接购买时或通过批量许可安排接受的协议相关联的计费帐户。
@@ -56,12 +56,12 @@ ms.locfileid: "60151322"
 | 计费配置文件 | 帐单配置文件定义发票的属性，如谁收到帐单、帐单的交付方式、付款期限和 PO 编号。 若要在整个组织中分配计费，可以创建多个计费配置文件，在购买时标识相应的计费配置文件。 有关计费配置文件以及如何使用它们为组织生成更灵活的计费选项的详细信息，请参阅 [了解计费配置文件](billing-and-payments/manage-billing-profiles.md)。 |
 
 > [!NOTE]
-> 如果需要更改"售达 **"** 名称或地址，但看不到"编辑"链接，则必须联系支持 [人员以更改](../business-video/get-help-support.md)它。 对"售 **达名称** "更改的请求将需要核实信用。 填写 [此表单](https://www.microsoft.com/download/details.aspx?id=102732)，并准备好在联系支持人员时与 Microsoft 共享以下文档之一：
+> 如果需要更改"售达 **"** 名称或地址，但看不到"编辑"链接，则必须联系支持 [人员以更改](../admin/get-help-support.md)它。 对"售 **达名称** "更改的请求将需要核实信用。 填写 [此表单](https://www.microsoft.com/download/details.aspx?id=102732)，并准备好在联系支持人员时与 Microsoft 共享以下文档之一：
 >
 > - 政府颁发的文档或注册信
 > - 打印出本地公司的注册表
 >
-> 如果仅更改客户名称，但实体保持不变，则支持可帮助更改名称和地址。 提供的文档应清楚地显示仅实体的名称已更改。 如果更改是交易的结果，包括出售业务、更改控制措施，或者客户联盟的收购或"出售"，请联系你的 Microsoft 卖家。
+> 如果仅更改客户名称，但实体保持不变，则支持可帮助更改名称和地址。 提供的文档应清楚地显示仅实体的名称已更改。 如果更改是交易的结果，包括出售业务、更改控制措施，或者客户联盟的资产出售或"出售"，请联系你的 Microsoft 卖家。
 
 ## <a name="shipping-addresses"></a>发货地址
 

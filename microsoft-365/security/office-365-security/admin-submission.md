@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 42cac5be8879b7db49175800b9c2b297bc91c569
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: d84ce2b2ec6131419f8344976335dc681fdc002c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064411"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373992"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用提交门户将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft
 
@@ -69,25 +69,24 @@ ms.locfileid: "61064411"
 
 ## <a name="report-suspicious-content-to-microsoft"></a>向 Microsoft 报告可疑内容
 
-1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到"电子邮件 **&协作** \> **提交"。**
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，在"&**提交"** 下，转到 **"提交"。**
 
-2. 在 **"提交"** 页上，确认已选择" **已提交进行分析"** 选项卡，然后单击 ![ "广告图标"。](../../media/m365-cc-sc-create-icon.png) **提交到 Microsoft 进行分析**。
+2. 在 **"提交"** 页上，验证"电子邮件"选项卡是否选中，选择要报告的电子邮件，然后单击 ![ 广告图标。](../../media/m365-cc-sc-create-icon.png) **提交到 Microsoft 进行分析**。
 
-3. 使用 **"提交到 Microsoft 查看** "飞出页面来提交邮件、URL 或电子邮件附件，如以下各节所述。
+3. 使用 **"提交到 Microsoft 进行分析** "飞出内容来提交电子邮件、URL 或电子邮件附件，如以下各节所述。
 
    > [!NOTE]
    > 不允许数据离开环境的云中不可用文件和 URL 提交。 选择文件或 URL 的能力将灰出来。
 
 ### <a name="notify-users-from-within-the-portal"></a>从门户中通知用户
 
-1. 在 Microsoft 365 Defender门户中，转到 位于 **的提交** 页面 <https://security.microsoft.com/reportsubmission> 。
+1. In the Microsoft 365 Defender portal， under **Actions & submissions，** go to **Submissions**.
 
-2. 选择 **"用户报告的邮件**"，然后选择要标记并通知的邮件。
+2. 选择 **"用户报告的邮件** "选项卡，然后选择要标记并通知的邮件。
 
 3. 选择"**标记为并通知**"下拉列表，然后选择"**未找到网络钓鱼** 或垃圾邮件的威胁 \> **"。**
 
-   > [!div class="mx-imgBorder"]
-   > ![从门户发送邮件。](../../media/admin-review-send-message-from-portal.png)
+   :::image type="content" alt-text="从门户发送邮件。" source="../../media/unified-submission-user-reported-message.png" lightbox="../../media/unified-submission-user-reported-message.png":::
 
 报告的邮件将被标记为误报或漏报。 系统会自动从门户向报告邮件的用户发送电子邮件通知。
 
@@ -96,22 +95,22 @@ ms.locfileid: "61064411"
 1. 在 **"选择提交类型"** 框中，确认 **"电子邮件** "在下拉列表中已选中。
 
 2. 在 **"添加网络邮件 ID 或上载电子邮件文件** "部分，使用以下选项之一：
-   - 添加电子邮件网络邮件 **ID：** 这是一个 GUID 值，可用于邮件中的 **X-MS-Exchange-Organization-Network-Message-Id** 头或隔离邮件中的 **X-MS-Office365-Filtering-Correlation-Id** 头。
+   - 添加电子邮件网络邮件 **ID：** 这是一个 GUID 值，可用于邮件中的 **X-MS-Exchange-Organization-Network-Message-Id** 标头或隔离邮件中的 **X-MS-Office365-Filtering-Correlation-Id** 头。
    - **Upload电子邮件文件 (.msg 或 .eml) ：单击"浏览****文件"。** 在打开的对话框中，查找并选择 .eml 或 .msg 文件，然后单击"打开 **"。**
 
 3. 在 **"选择具有问题的** 收件人"框中，指定要针对其运行策略检查的收件人。 策略检查将确定电子邮件是否由于用户或组织策略而绕过扫描。
 
 4. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **不应阻止误报 (错误)**
-   - **应已被** 阻止：在"电子邮件应已分类为出现的部分"中，选择以下值之一 (如果你不确定，请使用最佳判断) ：
+   - **不应阻止误报 (误报)**
+   - 应已被阻止 (假负 **) ：** 在"电子邮件应已分类为出现的部分"中，选择下列值之一 (如果你不确定，请使用最佳判断) ：
      - **网络钓鱼**
-     - **垃圾邮件**
      - **恶意软件**
+     - **垃圾邮件**
 
-5. 完成后，单击"提交 **"** 按钮。
+5. 完成后，请单击“**提交**”。
 
-> [!div class="mx-imgBorder"]
-> ![新的 URL 提交示例。](../../media/submission-flyout-email.png)
+    > [!div class="mx-imgBorder"]
+    > ![新的 URL 提交示例。](../../media/submission-flyout-email.png)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>向 Microsoft 发送可疑 URL
 
@@ -120,47 +119,46 @@ ms.locfileid: "61064411"
 2. 在出现的 **"URL"** 框中，输入完整的 URL (例如 `https://www.fabrikam.com/marketing.html` ，) 。
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **不应阻止误报 (错误)**
-   - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，选择"**网络钓鱼**"或"恶意软件 **"。**
+   - **不应阻止误报 (误报)**
+   - **应已被阻止 (假负) ：** 在"此 **URL 应** 已分类为出现的部分"中，选择"网络钓鱼"或 **"恶意软件****"。**
 
-4. 完成后，单击"提交 **"** 按钮。
+4. 完成后，请单击“**提交**”。
 
-> [!div class="mx-imgBorder"]
-> ![新建电子邮件提交示例。](../../media/submission-url-flyout.png)
+    > [!div class="mx-imgBorder"]
+    > ![新建电子邮件提交示例。](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>将可疑的电子邮件附件提交给 Microsoft
 
-1. 在"**选择提交类型"框中****，从下拉列表** 中选择"文件"。
+1. 在" **选择提交类型"框中** ，从下拉列表 **中选择** "电子邮件附件"。
 
 2. 在出现的 **"文件**"部分，单击"**浏览文件"。** 在打开的对话框中，查找并选择文件，然后单击"打开 **"。**
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **不应阻止误报 (错误)**
-   - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，恶意软件 **是唯一** 的选择，并且会自动选中。
+   - **不应阻止误报 (误报)**
+   - **应已被** 阻止 (假负) ：在此文件应已分类为出现的部分，**恶意软件是唯一** 的选择，并自动选择。
 
-4. 完成后，单击"提交 **"** 按钮。
+4. 完成后，请单击“**提交**”。
 
-> [!div class="mx-imgBorder"]
-> ![新附件提交示例。](../../media/submission-file-flyout.png)
+    > [!div class="mx-imgBorder"]
+    > ![新附件提交示例。](../../media/submission-file-flyout.png)
 
 > [!NOTE]
 > 如果恶意软件筛选将邮件附件替换为"恶意软件警报Text.txt文件，则需要从隔离区提交包含原始附件的原始邮件。 有关隔离以及如何释放带恶意软件误报的邮件的信息，请参阅以管理员角色管理隔离的邮件 [和文件](manage-quarantined-messages-and-files.md)。
 
 ## <a name="view-admin-submissions-to-microsoft"></a>查看向 Microsoft 提交的管理员
 
-1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到"电子邮件 **&协作** \> **提交"。**
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，在"&**提交"** 下，转到 **"提交"。**
 
-2. 在 **"提交"** 页上，确认已选择" **已提交进行分析"** 选项卡。
+2. 在 **"提交"** 页上，验证"**电子邮件****、URL"** 或"**电子邮件附件"** 选项卡已选中。
 
    - 可以通过单击可用列标题来对条目进行排序。 单击 **"自定义列** "最多可显示七列。 默认值标有星号（<sup>\*</sup>）：
      - **提交名称**<sup>\*</sup>
      - **发件人**<sup>\*</sup>
+     - **收件人**
      - **提交日期**<sup>\*</sup>
-     - **提交类型**<sup>\*</sup>
      - **提交原因**<sup>\*</sup>
      - **重新扫描状态**<sup>\*</sup>
      - **重新扫描结果**<sup>\*</sup>
-     - **标记**<sup>\*</sup>
      - **筛选裁定**
      - **传递/阻止原因**
      - **提交 ID**
@@ -171,16 +169,23 @@ ms.locfileid: "61064411"
      - **目标**
      - **策略操作**
      - **提交者**
+     - **网络钓鱼模拟**
+     - **标记**<sup>\*</sup>
+     - **允许**
 
      完成后，单击“**应用**”。
 
+     > [!div class="mx-imgBorder"]
+     > ![新建 管理员提交的自定义列选项。](../../media/admin-submission-customize-columns.png)
+
    - 若要筛选条目，请单击"筛选器 **"。** 以下筛选器可用：
      - **提交日期**：**开始日期和****结束日期**。
-     - **提交类型****：Email、URL** 或 **File**。 
      - **提交 ID：** 分配给每个提交的 GUID 值。
      - **网络消息 ID**
      - **Sender**
-     - **Tags**
+     - **收件人**
+     - **名称**
+     - **提交者**
 
      完成后，单击“**应用**”。
 
@@ -193,6 +198,7 @@ ms.locfileid: "61064411"
      - **原因**
      - **状态**
      - **重新扫描结果**
+     - **Tags**
 
    - 若要导出条目，请单击"导出 **"。** 在出现的对话框中，保存.csv文件。
 
@@ -209,13 +215,13 @@ ms.locfileid: "61064411"
 
 ## <a name="view-user-submissions-to-microsoft"></a>查看向 Microsoft 提交用户
 
-如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上查看报告哪些用户。 [](enable-the-report-phish-add-in.md) 
+如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上查看报告的用户。 [](enable-the-report-phish-add-in.md) 
 
-1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到"电子邮件 **&协作** \> **提交"。**
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，在"&**提交"** 下，转到 **"提交"。**
 
 2. 在" **提交"** 页上，选择" **用户报告的邮件"** 选项卡。
 
-   - 可以通过单击可用列标题来对条目进行排序。 单击 **"自定义列** "最多可显示七列。 默认值标有星号（<sup>\*</sup>）：
+   - 可以通过单击可用列标题来对条目进行排序。 单击 **"自定义列** "以显示选项。 默认值标有星号（<sup>\*</sup>）：
 
      - **电子邮件主题**<sup>\*</sup>
      - **报告者**<sup>\*</sup>
@@ -223,11 +229,15 @@ ms.locfileid: "61064411"
      - **发件人**<sup>\*</sup>
      - **报告的原因**<sup>\*</sup>
      - **重新扫描结果**<sup>\*</sup>
-     - **标记**<sup>\*</sup>
      - **邮件报告 ID**
      - **网络消息 ID**
      - **发件人 IP**
+     - **报告自**
      - **网络钓鱼模拟**
+     - **标记**<sup>\*</sup>
+     - **标记为**<sup>\*</sup>
+     - **标记者**
+     - **标记的日期**
 
      完成后，单击“**应用**”。
 
@@ -253,8 +263,10 @@ ms.locfileid: "61064411"
      - **Sender**
      - **报告者**
      - **重新扫描结果**
+     - **报告自**
      - **网络钓鱼模拟**
-
+     - **Tags**
+   
    - 若要导出条目，请单击"导出 **"。** 在出现的对话框中，保存.csv文件。
 
 > [!NOTE]

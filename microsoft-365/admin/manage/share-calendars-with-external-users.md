@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 在组织中启用日历Microsoft 365 管理中心以便用户可以与组织内外的任何人共享其日历。
-ms.openlocfilehash: b3ad3735c8cf5b33ddc501310e8f34dcc3c6f786
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7b7e13dd0472cdd8d61bb7a28c067eadb1b00cc
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171767"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370532"
 ---
 # <a name="share-calendars-with-external-users"></a>与外部用户共享日历
 
@@ -39,11 +39,11 @@ ms.locfileid: "60171767"
 > [!NOTE]
 > 如果要与使用 Exchange Server 2013（内部部署解决方案）的组织共享日历，Exchange 管理员需要设置与云的身份验证关系。 这称为联合，必须满足最低软件要求。 有关详细信息，请参阅[共享](/exchange/sharing-exchange-2013-help)。
   
-## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>使用"日历"功能启用Microsoft 365 管理中心
+## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>启用日历共享Microsoft 365 管理中心
 
-1. 在管理中心中，转到"设置"组织设置 **"，在**"服务"选项卡上 \> ，选择"<a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"></a>**日历"。**
+1. 在管理中心中，转到"设置"组织设置"，**在**"服务"选项卡上 \> ，选择"**日历"。** <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"></a>
   
-3. 在 **"日历**"页上，选择是否允许用户与组织外部拥有日历或Microsoft 365 Exchange。 选择是否允许匿名用户 (没有凭据的用户) 通过电子邮件邀请访问日历。
+3. 在 **"日历**"页上，选择是否允许用户与组织外部拥有日历或Microsoft 365 Exchange。 选择是否允许匿名用户允许 (凭据的用户) 通过电子邮件邀请访问日历。
 
 4. 选择要为用户提供的日历信息类型。 你可以允许所有信息，或仅将信息限制为时间或时间、主题和位置。
 
@@ -53,6 +53,6 @@ ms.locfileid: "60171767"
 
 ## <a name="related-content"></a>相关内容
 
-[打开或关闭网站外部](/sharepoint/change-external-sharing-site) 共享 (文章) \
-[视频Microsoft 365 管理中心 (](../../business-video/admin-center-overview.md)概述) \
+[打开或关闭网站外部共享 (](/sharepoint/change-external-sharing-site) 文章) \
+[概述Microsoft 365 管理中心] ([视频Microsoft 365 管理中心 (](../admin-overview/admin-center-overview.md)概述) \
 [管理电子邮件和日历](/admin) (链接页) 

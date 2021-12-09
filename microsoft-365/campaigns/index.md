@@ -24,17 +24,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: 适用于小型企业（包括小型公司、惯例和政治活动）的 Microsoft 365 商业高级版安全和协作建议。
-ms.openlocfilehash: efa38b27680365caeaa207dbbeea9834f46490be
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解如何安全地在小型企业或活动中与 Microsoft 365 商业高级版。
+ms.openlocfilehash: 25cc7e34d3ec0beb3432fb983748c35cda00f962
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200733"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372692"
 ---
 # <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>面向小型企业和活动的Microsoft 365
 
-如有 Microsoft 365 商业高级版，则此库中的指南是设置安全并开始安全协作的最快方法。 在当今世界，保持数据和通信安全是优先事项，特别是对于医疗和法律实践、政治活动和许多其他小型企业。 该解决方案提供了一系列建议，旨在帮助保护你和你的数据。 无论何种企业类型，此库包括有关设置和使用此推荐环境的帮助。
+在当今世界，保持数据和通信安全是优先事项，特别是对于医疗和法律实践、政治活动和许多其他小型企业。 利用企业中的安全功能Microsoft 365 商业高级版在小型企业内安全地协作。 该解决方案提供了一系列建议，旨在帮助保护你和你的数据。 无论何种企业类型，此库包括有关设置和使用此推荐环境的帮助。
 
 
 ![Microsoft 365 商业高级版可保护你的生产力工具、协作工具、文件存储、电子邮件、设备和标识。](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何安装Microsoft Office应用。
-ms.openlocfilehash: 55f384350db4763d7e93aa887191691583c7b421
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5bef05c11735b6ff95e7add6f9e542885c1e8599
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173891"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369896"
 ---
 # <a name="install-office-apps"></a>安装 Office 应用 
 
@@ -38,7 +38,7 @@ Microsoft Office"开始"**菜单上找到** 这些应用。 如果看不到&#39;
 1. 转到 office.com。 你可能需要使用你的工作帐户登录。
 2. 选择 **"Office Microsoft 365**   >   **运行"，**   >   然后选择"是 **"。**
 3. 将Office应用程序。 此过程可能需要几分钟时间。 完成后，**选择关闭。**
-4. 若要安装Microsoft Teams，请转到"office.com"页面，然后选择 **"Teams"。**
+4. 若要安装Microsoft Teams，请转到"office.com"页，然后选择 **"Teams"。**
 5. 获取Windows应用，然后选择"运行 **"。** Teams安装完成时显示提示。
 
 已安装Office的应用现在显示在"开始"**菜单中**。
@@ -49,7 +49,6 @@ Microsoft Office"开始"**菜单上找到** 这些应用。 如果看不到&#39;
 
 [将Microsoft 365 管理移动应用安装在手机上 (](admin-mobile.md)视频) 
 
-[从小型企业Microsoft Teams视频 (](get-started-teams-small-business.md)入门) 
+[开始使用小型企业Microsoft Teams视频](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937) (中的) 
 
-[轻松地在视频视频 (](share-files-externally.md) 外部) 
-
+[轻松地在视频视频 (](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07) 外部) 

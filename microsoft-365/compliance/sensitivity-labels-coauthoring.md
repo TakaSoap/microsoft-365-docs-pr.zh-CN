@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: 5af87a3a2d8ca6d37816cbaf0fd35426c8e828a4
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8670bdf0c1cefbddadb88a08c6aecf82fc52aa80
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109955"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373064"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
@@ -149,7 +149,7 @@ ms.locfileid: "61109955"
 
 ![显示针对敏感度标签开启共同创作的选项。](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-如在打开此设置时从屏幕截图中看到的，可联系 Microsoft [支持人员](../business-video/get-help-support.md) 请求关闭此设置。 此请求可能需要几天时间，并且你需要证明你是租户的全局管理员。 通常需要支付支持费用。 
+如在打开此设置时从屏幕截图中看到的，可联系 Microsoft [支持人员](../admin/get-help-support.md) 请求关闭此设置。 此请求可能需要几天时间，并且你需要证明你是租户的全局管理员。 通常需要支付支持费用。 
 
 如果支持工程师为租户禁用此设置：
 

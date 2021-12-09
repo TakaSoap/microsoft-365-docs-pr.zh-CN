@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b45ce1de5b2149251b691d81c29aea717d5dffc9
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: b5c016d3368231b146be61da086e77ece1fa3dd9
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282773"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369872"
 ---
 # <a name="get-machine-logon-users-api"></a>获取计算机登录用户 API
 
@@ -57,7 +57,7 @@ Application |User.Read.All |"读取用户配置文件"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"。 有关详细信息，请参阅创建 [和管理角色](user-roles.md)) 。
+> - 用户至少需要具有以下角色权限："查看数据"。 有关详细信息，请参阅创建 [和管理角色](user-roles.md)。
 > - 响应将仅在设备对用户可见时包含用户，基于设备组设置。 有关详细信息，请参阅创建 [和管理设备组](machine-groups.md)。
 
 ## <a name="http-request"></a>HTTP 请求

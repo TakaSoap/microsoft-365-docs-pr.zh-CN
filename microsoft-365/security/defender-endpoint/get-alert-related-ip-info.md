@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 58b7ef4b180824d09fd0539530107771b74ea709
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: c2268658223ff0bce0e879e23ea4a5c1ce843aaf
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283889"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371192"
 ---
 # <a name="get-alert-related-ips-information-api"></a>获取与警报相关的 IP 的信息 API
 
@@ -59,8 +59,8 @@ ms.locfileid: "61283889"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理角色) [](user-roles.md)
-> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (有关详细信息，请参阅创建和管理设备[组) ](machine-groups.md)
+> - 用户至少需要具有以下角色权限："查看数据" (有关详细信息，请参阅创建 [和管理角色](user-roles.md)
+> - 用户需要具有对与警报关联的设备的访问权限，根据设备组设置 (有关详细信息，请参阅创建和管理 [设备组](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: 许可证分配取决于是向特定用户分配产品许可证，还是向特定产品分配用户许可证。
 ms.date: 09/16/2021
-ms.openlocfilehash: eb122a7bce8aba070bf50e4654a54db6c40a1157
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 68124f26037e6d21e9b3f1cb0b7888edc005fe77
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164544"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371096"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 
@@ -61,12 +61,6 @@ ms.locfileid: "60164544"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>”页面。
@@ -93,12 +87,6 @@ ms.locfileid: "60164544"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>”页面。
@@ -120,12 +108,6 @@ ms.locfileid: "60164544"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -155,12 +137,6 @@ ms.locfileid: "60164544"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 

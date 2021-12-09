@@ -12,32 +12,32 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何滚动存储在 Azure Key Vault 中与客户密钥一同使用的客户根密钥。 服务包括Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和 Teams 文件。
-ms.openlocfilehash: 22cf7d1ee9635a92684d377d05a4c53a909eb4bb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 5f2de108d493e4b6d4233f4a932a24f524e468bb
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553960"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373268"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>滚动或旋转客户密钥或可用性密钥
 
 > [!CAUTION]
-> 只有在安全或合规性要求规定必须滚动密钥时，才能滚动用于客户密钥的加密密钥。 此外，不要删除任何与策略关联的密钥。 在滚动密钥时，将会有使用之前密钥加密的内容。 例如，虽然活动邮箱将频繁重新加密，但非活动、断开连接和禁用的邮箱仍可能使用以前的密钥进行加密。 SharePoint联机执行内容备份以用于还原和恢复，因此可能仍使用旧密钥存档内容。
+> 只有在安全或合规性要求规定必须滚动密钥时，才能滚动用于客户密钥的加密密钥。 此外，不要删除任何与策略关联的密钥。 在滚动密钥时，将会有使用之前密钥加密的内容。 例如，虽然活动邮箱将频繁重新加密，但非活动、断开连接和禁用的邮箱仍可能使用以前的密钥进行加密。 SharePoint Online 执行内容备份以用于还原和恢复，因此可能仍使用旧密钥存档内容。
 
 ## <a name="about-rolling-the-availability-key"></a>关于滚动可用性密钥
 
-Microsoft 不会将可用性密钥的直接控制公开给客户。 例如，你只能滚动 (旋转) 你在 Azure Key Vault 中拥有密钥。 Microsoft 365在内部定义的计划上滚动可用性密钥。 对于这些关键回滚，没有面向客户的服务级别 (SLA) SLA。 Microsoft 365在自动化的非手动Microsoft 365使用服务代码来轮换可用性密钥。 Microsoft 管理员可以启动滚动过程。 使用自动机制回滚密钥，无需直接访问密钥存储。 对可用性密钥密钥存储的访问未预配给 Microsoft 管理员。 可用性密钥滚动利用最初生成密钥所使用的相同机制。 有关可用性密钥详细信息，请参阅 [了解可用性密钥](customer-key-availability-key-understand.md)。
+Microsoft 不会将可用性密钥的直接控制公开给客户。 例如，你只能滚动 (旋转) 你在 Azure Key Vault 中拥有密钥。 Microsoft 365在内部定义的计划上滚动可用性密钥。 对于这些关键回滚，没有面向客户的服务级别协议 (SLA) SLA。 Microsoft 365在自动化的非手动Microsoft 365使用服务代码来轮换可用性密钥。 Microsoft 管理员可以启动滚动过程。 使用自动机制回滚密钥，无需直接访问密钥存储。 对可用性密钥密钥存储的访问未预配给 Microsoft 管理员。 可用性密钥滚动利用最初生成密钥所使用的相同机制。 有关可用性密钥详细信息，请参阅 [了解可用性密钥](customer-key-availability-key-understand.md)。
 
 > [!IMPORTANT]
-> Exchange Online一Skype for Business DEP 的客户可以有效回滚所有可用性密钥，因为会为创建的每个 DEP 生成唯一的可用性密钥。 SharePoint Online、OneDrive for Business 和 Teams 文件的可用性密钥存在于林级别，并且跨 DEP 和客户共享，这意味着滚动仅在 Microsoft 内部定义的日程安排中发生。 为了降低每次新建 DEP、SharePoint、OneDrive 和 Teams 滚动租户中间密钥 (TIK) （客户根密钥和可用性密钥包装的密钥）每次创建一个新的 DEP 时不滚动可用性密钥的风险。
+> Exchange Online一Skype for Business DEP 的客户可以有效回滚所有可用性密钥，因为会为创建的每个 DEP 生成唯一的可用性密钥。 SharePoint Online、OneDrive for Business 和 Teams 文件的可用性密钥存在于林级别，并且跨 DEP 和客户共享，这意味着滚动仅按照 Microsoft 内部定义的计划进行。 为了降低每次新建 DEP、SharePoint、OneDrive 和 Teams 滚动租户中间密钥 (TIK) （客户根密钥和可用性密钥包装的密钥）每次创建一个新的 DEP 时不滚动可用性密钥的风险。
 
 ## <a name="request-a-new-version-of-each-existing-root-key-you-want-to-roll"></a>请求要滚动的每个现有根密钥的新版本
 
-在滚动密钥时，将请求现有密钥的新版本。 若要请求现有密钥的新版本，请使用与最初创建密钥时相同的 cmdlet [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey)语法。 完成滚动与数据加密策略 (DEP) 关联的任何密钥后，运行另一个 cmdlet 以确保客户密钥开始使用新密钥。 在每个 Azure 密钥保管库和 AKV (中) 。
+在滚动密钥时，将请求现有密钥的新版本。 若要请求现有密钥的新版本，请使用与最初创建密钥时相同的 cmdlet [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey)语法。 完成滚动与数据加密策略 (DEP) 关联的任何密钥后，运行另一个 cmdlet 以确保客户密钥开始使用新密钥。 在每个 Azure 密钥保管库和 AKV (执行) 。
 
 例如：
 
-1. 使用帐户登录 Azure Azure PowerShell。 有关说明，请参阅[使用 Azure PowerShell 登录](/powershell/azure/authenticate-azureps)。
+1. 使用 Azure PowerShell 登录 Azure 订阅。 有关说明，请参阅[使用 Azure PowerShell 登录](/powershell/azure/authenticate-azureps)。
 
 2. 运行 Add-AzKeyVaultKey cmdlet，如以下示例所示：
 
@@ -73,7 +73,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Refresh
 
 滚动与用于 Exchange Online 和 Skype for Business 的 DEP 关联的任一 Azure 密钥保管库密钥时，必须更新 DEP 以指向新密钥。 这不会旋转可用性密钥。
 
-若要指示客户密钥使用新密钥加密邮箱，请Set-DataEncryptionPolicy cmdlet：
+若要指示客户密钥使用新密钥加密邮箱，请运行 Set-DataEncryptionPolicy cmdlet，如下所示：
 
 1. 在Set-DataEncryptionPolicy中运行 Azure PowerShell：
   
@@ -85,7 +85,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Refresh
   
 ## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>更新 SharePoint Online、OneDrive for Business 和 Teams 文件的密钥
 
-SharePoint联机仅允许你一次滚动一个键。 如果要在密钥保管库中滚动这两个密钥，请等待第一个操作完成。 Microsoft 建议你错开操作，以避免此问题。 滚动与用于 SharePoint Online 和 OneDrive for Business 的 DEP 关联的任一 Azure 密钥保管库密钥时，必须更新 DEP 以指向新密钥。 这不会旋转可用性密钥。
+SharePoint Online 仅允许你一次滚动一个密钥。 如果要在密钥保管库中滚动这两个密钥，请等待第一个操作完成。 Microsoft 建议错开操作，以避免此问题。 滚动与用于 SharePoint Online 和 OneDrive for Business 的 DEP 关联的任一 Azure 密钥保管库密钥时，必须更新 DEP 以指向新密钥。 这不会旋转可用性密钥。
 
 1. 运行 Update-SPODataEncryptionPolicy cmdlet，如下所示：
   
@@ -98,7 +98,7 @@ SharePoint联机仅允许你一次滚动一个键。 如果要在密钥保管库
 2. To see the progress of the key roll operation， run the Get-SPODataEncryptionPolicy cmdlet as follows：
 
    ```powershell
-   Get-SPODataEncryptionPolicy  <SPOAdminSiteUrl>
+   Get-SPODataEncryptionPolicy <SPOAdminSiteUrl>
    ```
 
 ## <a name="related-articles"></a>相关文章

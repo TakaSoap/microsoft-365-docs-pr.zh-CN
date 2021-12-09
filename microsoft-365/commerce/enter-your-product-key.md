@@ -22,18 +22,18 @@ ms.custom:
 - AdminTemplateSet
 description: 如果从零售商店购买了 Microsoft 365 商业标准版，请了解如何兑换产品密钥和激活订阅。
 ms.date: 11/13/2020
-ms.openlocfilehash: d872a61de9f2d704f6cee92234d3358ca0d1c26f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 149fd15529937d3d8301b90ccfeefcd3e76664e0
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195865"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370100"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>输入 Microsoft 365 商业版标准版的产品密钥
 
 如果从零售商店购买了 Microsoft 365 商业版标准版，本文可帮助你激活订阅。
   
- **需要其他内容？****有关 Microsoft 365 家庭版或 Microsoft 365 个人版**，请参阅[将产品密钥用于 Office ](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)。  
+ **需要其他内容？****有关 Microsoft 365 家庭版或 Microsoft 365 个人版**，请参阅 [将产品密钥用于 Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)。  
  **批量许可客户？** 如果通过 [Microsoft Open License 计划](https://go.microsoft.com/fwlink/p/?LinkID=613298)购买了 Microsoft 365 商业版，请参阅 [输入从 Microsoft Open 购买的产品密钥](purchases-from-microsoft-open.md)。
   
 ## <a name="activate-a-new-subscription"></a>激活新订阅
@@ -63,7 +63,7 @@ ms.locfileid: "60195865"
 
 请查看此列表中的常见错误和解决方案： [365 商业版产品密钥有问题？](product-key-errors-and-solutions.md)
   
-或者， [致电 Microsoft 支持人员](../business-video/get-help-support.md)。
+或者， [致电 Microsoft 支持人员](../admin/get-help-support.md)。
 
 ## <a name="related-content"></a>相关内容
 

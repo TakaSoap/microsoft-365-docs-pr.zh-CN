@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e18874eabbd2f1ddf31a9a303718eb9430f8d34e
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 4efe1460374350d054bbe6d19543c75454d7b5ce
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282785"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370316"
 ---
 # <a name="update-alert"></a>更新警报
 
@@ -62,7 +62,7 @@ ms.locfileid: "61282785"
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："警报调查"权限 (有关详细信息，请参阅创建和管理[角色) ](user-roles.md)
-> - 用户需要具有对与警报关联的设备的访问权限，根据设备组设置 (有关详细信息，请参阅创建和管理设备[组) ](machine-groups.md)
+> - 用户需要具有对与警报关联的设备的访问权限，根据设备组设置 (有关详细信息，请参阅创建和管理 [设备组](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

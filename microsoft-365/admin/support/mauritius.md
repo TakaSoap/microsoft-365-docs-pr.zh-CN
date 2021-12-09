@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c5b609ef0abbff7a21f039be531cd763051d55de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 92bcf96a3a2009921f006f2efaf7e3275ee7522a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163990"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371684"
 ---
 # <a name="contact-support-for-mauritius"></a>联系毛里求斯支持人员
 
-[查找另一个国家/地区](../../business-video/get-help-support.md)。
+[查找另一个国家/地区](../get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 802 044 0086
@@ -35,6 +35,6 @@ ms.locfileid: "60163990"
 
 ### <a name="technical-support"></a>技术支持：
 
-法语：Mon-Fri午夜 11 点
+法语：Mon-Fri上午 11 点到午夜
 
 英语：全天候

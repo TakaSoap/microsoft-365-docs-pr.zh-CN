@@ -29,19 +29,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 为Windows设置运行Windows 10 专业版的设备Microsoft 365 商业高级版，从而实现集中式管理和安全控制。
-ms.openlocfilehash: 250c701a41e9243c81641df2bcc0fd6d6158ec47
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+description: 为Windows用户设置运行Windows 10 专业版的设备Microsoft 365 商业高级版，从而实现集中式管理和安全控制。
+ms.openlocfilehash: 40577f2130c185f8a98a3c8f873da80233e56cf0
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128648"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373052"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>为Windows用户设置Microsoft 365 商业高级版设备
 
 ## <a name="before-you-begin"></a>准备工作
 
-在你可以为 Microsoft 365 商业高级版 用户设置 Windows 设备之前，请确保所有 Windows 设备都运行 Windows 10 专业版 版本 1703 (创意者更新) 。 Windows 10 专业版是部署 Windows 10 商业版 的先决条件，这是一组云服务和设备管理功能，可补充 Windows 10 专业版 并启用 Microsoft 365 商业高级版 的集中管理和安全控制。
+在你可以为 Microsoft 365 商业高级版 用户设置 Windows 设备之前，请确保所有 Windows 设备都运行 Windows 10 专业版 版本 1703 (创意者更新) 。 Windows 10 专业版部署 Windows 10 商业版 的先决条件，这是一组云服务和设备管理功能，可补充 Windows 10 专业版 并启用 Microsoft 365 商业高级版 的集中管理和安全控制。
   
 如果你有Windows运行 Windows 7 Pro、Windows 8 专业版 或 Windows 8.1 专业版 的设备，Microsoft 365 商业高级版 订阅将授权你进行 Windows 10 升级。
   
@@ -77,9 +77,9 @@ ms.locfileid: "61128648"
 
  **将用户连接到 Azure AD：**
   
-1. 1.在用户运行 Windows 10 专业版 1703（创意者更新）的 Windows 电脑上（详见[先决条件](../security-and-compliance/pre-requisites-for-data-protection.md)），单击 Windows 徽标，然后单击"设置"图标。
+1. 在运行 Windows 10 专业版 版本 1703 (创意者更新)  (的用户 Windows 电脑中，单击 Windows 徽标，然后单击[](../security-and-compliance/pre-requisites-for-data-protection.md)设置 图标。
   
-   ![在""开始"菜单"中，单击Windows 设置图标。](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
+   ![在""开始"菜单"中，单击"Windows 设置图标"。](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   
 2. 2.在" **设置**"中，转到" **帐户**"。
   
@@ -87,11 +87,11 @@ ms.locfileid: "61128648"
   
 3. 3.在" **你的信息**"页面上，单击" **访问工作或学校**"\>" **连接**"。
   
-   ![在"连接工作或学校"下选择"管理"。](../../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
+   ![选择连接工作或学校"下的"管理"。](../../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
   
 4. 4.在" **设置工作或学校帐户**"对话框的" **备用操作**"下，选择" **将此设备加入 Azure Active Directory**"。
   
-   ![单击"加入此设备"Azure Active Directory。](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
+   ![单击"加入此设备"以Azure Active Directory。](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
 5. On the **Let's get you signed in** page, enter your work or school account \> **Next**.
   
@@ -109,7 +109,7 @@ ms.locfileid: "61128648"
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>验证设备是否连接到 Azure AD
 
-若要验证同步状态，请在"访问工作或学校"设置，选择 **"已连接到 _"** 区域以公开按钮"信息"和"断开连接 \<organization name\> **"。**  选择 **"** 信息"获取同步状态。 
+若要验证同步状态，请在"访问工作或学校"设置，选择"连接到 _ **_"** 区域以公开按钮"信息"和"断开连接 \<organization name\> **"。**  选择 **"** 信息"获取同步状态。 
   
 在" **同步状态"** 页面上，选择 **"同步** "，获取电脑上的最新移动设备管理策略。
   
@@ -119,7 +119,7 @@ To start using the Microsoft 365 商业高级版 account， go to the Windows **
   
 ## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>验证电脑是否升级到Windows 10 商业版
 
-验证已Azure AD设备Windows 10已升级为Windows 10 商业版订阅的一Microsoft 365 商业高级版部分。
+验证已加入Azure AD Windows 10设备是否Windows 10 商业版作为你的 Microsoft 365 商业高级版 订阅的一部分。
   
 1. 转到" **设置**"\>" **系统**"\>" **关于**"。
     

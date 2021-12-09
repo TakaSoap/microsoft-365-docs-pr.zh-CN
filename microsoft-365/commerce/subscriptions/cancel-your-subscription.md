@@ -20,19 +20,19 @@ ms.custom:
 search.appverid: MET150
 description: 如果你的用户的许可证少于 25 个，则你可以在管理中心取消 Microsoft 365 商业版试用或付费订阅。
 ms.date: 09/16/2021
-ms.openlocfilehash: 942953f586a65659609660363593c0f6e86c8ca6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e24c2bc4067f046c86af2f72e3105bc20a69b732
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204571"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373304"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
 > [!IMPORTANT]
 > 本文仅适用于 Microsoft 365 商业版订阅。 如果你有 Microsoft 365 家庭版或个人版，请参阅 [取消 Microsoft 365 订阅](https://support.microsoft.com/en-us/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link)。
 
-*资格：* 如果分配给用户的许可证少于 25 个，则你可以随时在 Microsoft 365 管理中心在线取消 Microsoft 365 商业版试用或付费订阅。 如果向用户分配的许可证超过 25 个，请将其缩小到 25 个以下，或 [致电支持人员取消订阅](../../business-video/get-help-support.md)。
+*资格：* 如果分配给用户的许可证少于 25 个，则你可以随时在 Microsoft 365 管理中心在线取消 Microsoft 365 商业版试用或付费订阅。 如果向用户分配的许可证超过 25 个，请将其缩小到 25 个以下，或 [致电支持人员取消订阅](../../admin/get-help-support.md)。
 
 *退款：* 在下一个计费周期内，将向你退还所有按比例分配的信用额度。
 
@@ -52,12 +52,6 @@ ms.locfileid: "60204571"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
 
 ::: moniker-end
 

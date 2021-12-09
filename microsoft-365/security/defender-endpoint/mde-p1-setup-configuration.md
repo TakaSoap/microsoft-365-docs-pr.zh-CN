@@ -7,24 +7,24 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 12/07/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 03f9a8268ac3d1652840a9d99d3493358cf71ee4
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 8955c3d28b8d29a23af1def673fc3bdcfbcc8c71
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128012"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370376"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>为终结点计划 1 设置和配置 Microsoft Defender
 
-> [!TIP]
-> 如果你已Microsoft 365 E3 A3，Microsoft 365 E5或 A5，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 注册预览计划！
+**适用于：**
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 本文介绍如何为终结点计划 1 设置和配置 Defender。 无论你是否获得帮助，都可以将本文用作整个部署的指南。  
 
@@ -51,7 +51,7 @@ ms.locfileid: "61128012"
 
 | 要求 | 说明 |
 |:---|:---|
-| 许可要求 | Defender for Endpoint Plan 1 <br/><br/>*如果你拥有Microsoft 365 E3 A3，可以加入预览计划。* |
+| 许可要求 | Defender for Endpoint 计划 1 |
 | 浏览器要求 | Microsoft Edge <br/> Internet Explorer版本 11 <br/> Google Chrome |
 | 操作系统 | Windows 10版本 1709 或更高版本 <br/>macOS：11.5 (Big Sur) 、10.15.7 (加泰罗尼亚语) 或 10.14.6 (Mojave)  <br/>iOS <br/>Android OS  |
 | 数据中心版 | 以下数据中心位置之一： <br/>- 欧盟 <br/>- 英国 <br/>- 美国 |
@@ -63,8 +63,8 @@ ms.locfileid: "61128012"
 
 | 方法 | 说明 |
 |:---|:---|
-| [Microsoft Intune (](/mem/intune/fundamentals/what-is-intune)包含在Microsoft Endpoint Manager)  | 使用 Intune 在云本机环境中管理终结点 |
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)中包含的 (和 Configuration [Manager](/mem/configmgr/core/understand/introduction) Microsoft Endpoint Manager)  | 使用 Intune 和 Configuration Manager 管理跨本地和云环境的终结点和工作负载 |
+| [Microsoft Intune (](/mem/intune/fundamentals/what-is-intune)中包含的Microsoft Endpoint Manager)  | 使用 Intune 在云本机环境中管理终结点 |
+| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)和[Configuration Manager](/mem/configmgr/core/understand/introduction) (包含在Microsoft Endpoint Manager)  | 使用 Intune 和 Configuration Manager 管理跨本地和云环境的终结点和工作负载 |
 | [配置管理器](/mem/configmgr/core/understand/introduction) | 使用 Configuration Manager 通过 Defender for Endpoint 的基于云的功能保护本地终结点 |
 | 从门户下载的本地Microsoft 365 Defender脚本 | 在终结点上使用本地脚本运行试点或载入几台设备 |
 
@@ -90,9 +90,9 @@ ms.locfileid: "61128012"
 
 ## <a name="assign-roles-and-permissions"></a>分配角色和权限
 
-若要访问安全Microsoft 365 Defender、配置 Defender for Endpoint 的设置或执行任务（例如，对检测到的威胁采取响应操作）必须分配适当的权限。 Defender for Endpoint[使用 Azure Active Directory 中的内置角色](/azure/active-directory/roles/permissions-reference)。 
+若要访问安全Microsoft 365 Defender、配置 Defender for Endpoint 的设置或执行任务（如对检测到的威胁执行响应操作）必须分配适当的权限。 Defender for Endpoint[使用 Azure Active Directory 中的内置角色](/azure/active-directory/roles/permissions-reference)。 
 
-Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以使用基本权限管理或基于角色的访问控制来分配权限， ([](rbac.md) RBAC) 。 
+Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过使用基本权限管理，或者通过使用基于角色的访问控制和 RBAC [](rbac.md) (分配) 。 
 
 - 通过基本权限管理，全局管理员和安全管理员具有完全访问权限，而安全读者则具有只读访问权限。
 - 使用 RBAC，可以通过更多角色设置更精细的权限。 例如，你可以拥有安全读者、安全操作员、安全管理员、终结点管理员等。
@@ -102,14 +102,14 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 | 角色 | 说明 |
 |:---|:---|
-| 全局管理员 (也称为全局管理员)  <br/><br/> *最佳做法是限制全局管理员的数量。* | 全局管理员可以执行所有类型的任务。 默认情况下，注册你的公司Microsoft 365 Microsoft Defender for Endpoint Plan 1 的人是全局管理员。 <br/><br/> 全局管理员能够跨所有门户访问/Microsoft 365设置，例如： <br/>- [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心 ()  <br/>- Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) ()  <br/>- Microsoft Endpoint Manager管理中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ()   |
+| 全局管理员 (也称为全局管理员)  <br/><br/> *最佳做法是限制全局管理员的数量。* | 全局管理员可以执行所有类型的任务。 默认情况下，为公司注册 Microsoft 365 或 Microsoft Defender for Endpoint Plan 1 的人是全局管理员。 <br/><br/> 全局管理员能够跨所有管理门户访问/Microsoft 365设置，例如： <br/>- [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心 ()  <br/>- Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) ()  <br/>- Microsoft Endpoint Manager管理中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ()   |
 | 安全管理员 (也称为安全管理员)  | 安全管理员可以执行安全操作员任务以及以下任务： <br/>- 监视与安全相关的策略 <br/>- 管理安全威胁和警报 <br/>- 查看报告 |
 | 安全操作员 | 安全操作员可以执行安全读者任务以及以下任务： <br/>- 查看有关检测到的威胁的信息 <br/>- 调查和响应检测到的威胁  |
 | 安全读者 | 安全读者可以执行以下任务： <br/>- 查看跨服务的安全Microsoft 365策略 <br/>- 查看安全威胁和警报 <br/>- 查看报告  |
 
 
 > [!TIP]
-> 若要了解有关用户角色Azure Active Directory，请参阅为具有此权限的用户分配管理员[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 有关 Defender for Endpoint 的角色详细信息，请参阅 [基于角色的访问控制](prepare-deployment.md#role-based-access-control)。
+> 若要了解有关用户角色Azure Active Directory，请参阅向具有此权限的用户分配管理员[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 有关 Defender for Endpoint 的角色详细信息，请参阅 [基于角色的访问控制](prepare-deployment.md#role-based-access-control)。
 
 ## <a name="onboard-to-defender-for-endpoint"></a>载入到适用于终结点的 Defender
 
@@ -153,9 +153,9 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 | [勒索软件缓解](#ransomware-mitigation) | 通过配置受控文件夹访问权限来设置勒索软件缓解功能，这有助于保护组织有价值的数据免受恶意应用和威胁（如勒索软件）的侵害。 | 
 | [设备控制](#device-control) | 为组织配置设备控制设置，以允许或阻止可移动设备 (如 USB 驱动器) 。 | 
 | [网络保护](#network-protection) | 设置网络保护以防止组织成员使用访问 Internet 上危险域或恶意内容的应用程序。 |
-| [Web 保护功能](#web-protection) | 设置 Web 威胁防护来保护组织设备免受网络钓鱼网站、攻击站点和其他不受信任的或低信誉网站的威胁。 设置 Web 内容筛选，以根据网站的内容类别（如 (、高带宽、成人内容或法律责任等）跟踪和) 。 |
+| [Web 保护功能](#web-protection) | 设置 Web 威胁防护来保护组织设备免受网络钓鱼网站、攻击站点和其他不受信任的或低信誉网站的威胁。 设置 Web 内容筛选，以根据网站的内容类别（如 (、高带宽、成人内容或法律责任) ）跟踪和) 。 |
 | [网络防火墙](#network-firewall) | 使用规则配置网络防火墙，这些规则确定允许哪些网络流量进入或来自组织的设备。 |
-| [应用程序控制](#application-control)  | 如果希望仅允许受信任的应用程序和进程在受信任的设备上运行，请配置Windows规则。    |
+| [应用程序控制](#application-control)  | 如果要仅允许受信任的应用程序和进程在受信任的设备上运行，请配置Windows规则。    |
 
 ### <a name="attack-surface-reduction-rules"></a>攻击面减少规则
 
@@ -175,13 +175,13 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 6. 在配置 **设置选项卡上** ，展开 **攻击面减少规则**。
 
-7. 指定每个规则的设置，然后选择"下一 **步"。**  (有关每个规则执行哪些功能的信息，请参阅攻击面减少 [规则](attack-surface-reduction.md).)  
+7. 指定每个规则的设置，然后选择"下一 **步"。**  (有关每个规则执行哪些功能的信息，请参阅攻击 [面减少规则](attack-surface-reduction.md).)  
 
 8. 在" **范围标记** "选项卡上，如果组织正在使用范围标记，请选择 **"+ 选择** 范围标记"，然后选择想要使用的标记。 然后，选择"下 **一步"。** 
    
    若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 [ (RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
 
-9. 在"**分配**"选项卡上，指定应应用策略的用户和组，然后选择"下一步 **"。**  (若要了解有关分配的信息，[请参阅在](/mem/intune/configuration/device-profile-assign).Microsoft Intune .) 
+9. 在"**分配**"选项卡上，指定应应用策略的用户和组，然后选择"下一步 **"。**  (若要了解有关分配的信息，请参阅在 .Microsoft Intune [.) ](/mem/intune/configuration/device-profile-assign)
 
 10. 在"**查看 + 创建"** 选项卡上，查看设置，然后选择"创建 **"。**
 
@@ -205,7 +205,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 3. 选择 **+ 创建策略**。 
 
-4. 对于 **"平台****"，Windows 10** 和更高版本 **，对于配置文件**，选择 **攻击面减少规则**。 然后选择" **创建**"。 
+4. 对于 **"平台****"，Windows 10** 和更高版本 **，对于配置文件**，选择攻击 **面减少规则**。 然后选择" **创建**"。 
 
 5. 在 **"基本信息"** 选项卡上，为策略命名并添加说明。 选择 **下一步**。 
 
@@ -221,7 +221,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
    
    若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 [ (RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
 
-8. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备组。) 
+8. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备) 
 
 9. 在"**查看 + 创建**"选项卡上，查看策略的设置，然后选择"创建 **"。** 该策略将应用于不久后载入到 Defender for Endpoint 的任何终结点。
 
@@ -251,7 +251,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
    
    若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 [ (RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
 
-9. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备组。) 
+9. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备) 
 
 10. 在"**查看 + 创建**"选项卡上，查看策略的设置，然后选择"创建 **"。** 该策略将应用于不久后载入到 Defender for Endpoint 的任何终结点。
 
@@ -276,11 +276,11 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 5. 在"**配置设置"** 选项卡上，展开 **"Microsoft Defender 攻击防护"，** 然后展开"网络 **筛选"。**
 
-   将 **"网络保护"** 设置为 **"启用"。**  (可以选择"审核"，以首先查看网络保护在环境中) 
+   将 **"网络保护"** 设置为 **"启用"。**  (可以选择"审核"，首先查看网络保护在环境中) 
 
    然后选择“**下一步**”。
 
-6. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备组。) 
+6. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备) 
 
 7. 在" **适用性规则"** 选项卡上，设置规则。 你配置的配置文件将仅应用于符合你指定的组合条件的设备。 
 
@@ -295,7 +295,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 ### <a name="web-protection"></a>Web 保护
 
-借助 Web 保护，你可以保护组织设备免受 Web 威胁和不需要的内容。 Web 保护包括 [Web 威胁防护](#configure-web-threat-protection) 和 [Web 内容筛选](#configure-web-content-filtering) (预览) 。 配置这两组功能。 我们建议使用 Microsoft Endpoint Manager配置 Web 保护设置。
+借助 Web 保护，你可以保护组织设备免受 Web 威胁和不需要的内容。 Web 保护包括 [Web 威胁防护](#configure-web-threat-protection) 和 [Web 内容筛选](#configure-web-content-filtering)。 配置这两组功能。 我们建议使用 Microsoft Endpoint Manager配置 Web 保护设置。
 
 #### <a name="configure-web-threat-protection"></a>配置 Web 威胁防护
 
@@ -303,13 +303,13 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
  
 2. 选择 **"终结点安全**  >  **攻击面减少"，** 然后选择 **"+ 创建策略"。**
 
-3. 选择平台（如 Windows 10 **及更高版本**）选择 **Web 保护** 配置文件，然后选择"创建 **"。** 
+3. 选择平台（如 Windows 10 及 **更高版本**）选择 **Web 保护** 配置文件，然后选择"创建 **"。** 
 
 4. 在"**基本信息"** 选项卡上，指定名称和说明，然后选择"下一步 **"。**
 
 5. 在"**配置设置"** 选项卡上，展开 **"Web 保护"，** 指定下表中的设置，然后选择"下一步 **"。** <br/><br/>
 
-   | Setting | 建议 |
+   | 设置 | 建议 |
    |:---|:---|
    | **启用网络保护** | 设置为已启用。 阻止用户访问恶意网站或域。 <br/><br/>或者，你可以将网络保护设置为 **审核模式** 以查看它在环境中如何工作。 在审核模式下，网络保护不会阻止用户访问网站或域，但会作为事件跟踪检测。 |
    | **需要 SmartScreen Microsoft Edge 旧版** | 设置为 **"是"。** 帮助保护用户免受潜在网络钓鱼欺诈和恶意软件的攻击。 |
@@ -328,9 +328,6 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 > 若要了解有关 Web 威胁防护的信息，请参阅 [保护你的组织免受 Web 威胁](web-threat-protection.md)。
 
 #### <a name="configure-web-content-filtering"></a>配置 Web 内容筛选
-
-> [!NOTE]
-> Web 内容筛选当前处于预览阶段。
 
 1. 转到"Microsoft 365 Defender门户 [https://security.microsoft.com/](https://security.microsoft.com/) () 并登录。
 
@@ -361,7 +358,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 2. 选择 **"终结点安全**  >  **防火墙"，** 然后选择 **"+ 创建策略"。**
 
-3. 选择平台（如 Windows 10 **及** 更高版本）选择 **Microsoft Defender 防火墙** 配置文件，然后选择"创建 **"。** 
+3. 选择平台（如 Windows 10 和 **更高版本**）选择 Microsoft **Defender 防火墙** 配置文件，然后选择"创建 **"。** 
 
 4. 在"**基本信息"** 选项卡上，指定名称和说明，然后选择"下一步 **"。**
 
@@ -381,7 +378,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
    
    若要了解有关范围标记的信息，请参阅使用基于角色的访问控制 [ (RBAC](/mem/intune/fundamentals/scope-tags)) 分配 IT 的范围标记。
 
-8. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备组。) 
+8. 在"**分配"** 选项卡上 **，选择"添加所有用户"和****"+ 添加所有设备**"，然后选择"下一 **步"。**  (你可以交替指定特定的用户组或设备) 
 
 9. 在"**查看 + 创建"** 选项卡上，查看策略设置，然后选择"创建 **"。**
 

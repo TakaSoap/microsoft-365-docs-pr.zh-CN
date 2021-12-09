@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好部署敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 7287b45a37a5da286a66ffdb2797c3e84746f326
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: ff003d22df59023233705c216a1c5fdd3207931c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072164"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371216"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -55,7 +55,7 @@ ms.locfileid: "61072164"
 
 许多不同的订阅都支持灵敏度标签，并且用户的许可要求取决于你使用的功能。
 
-若要查看许可用户以便受益于 Microsoft 365 合规性功能的选项，请参阅 [Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。 对于敏感度标签，请参阅[信息保护](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)部分和相关 PDF 下载内容，以了解功能级别许可要求。
+若要查看许可用户以便受益于 Microsoft 365 合规性功能的选项，请参阅 [Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。 对于敏感度标签，请参阅[信息保护：敏感度标签](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-sensitivity-labeling)部分和相关 [PDF 下载](https://go.microsoft.com/fwlink/?linkid=2139145)内容，以了解功能级别许可要求。
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>创建和管理敏感度标签所需的权限
 

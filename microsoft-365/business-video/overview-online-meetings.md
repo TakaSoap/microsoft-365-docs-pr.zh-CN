@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何为企业主持联机会议。
-ms.openlocfilehash: 9988caf32fe36d74b90da217ffb6114f2986f7f8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cb5e777860c2c8a87f2353f7759a8039e582494f
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194749"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371504"
 ---
 # <a name="host-online-meetings-for-your-business"></a>为企业主持联机会议
 
@@ -33,7 +33,7 @@ ms.locfileid: "60194749"
 
 他们需要下载免费版本或在浏览器中联机[](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c)加入[，才能获取](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9)视频和屏幕共享。
 
-如果你经常与客户、客户或合作伙伴就项目紧密协作，请考虑为客户端创建团队，这样[](team-with-guests.md)你可以轻松地邀请他们参加会议，还可以在 Microsoft Teams 中展开对话、共享文件和跟踪项目。
+如果你经常与客户、客户或合作伙伴就项目紧密协作，请考虑为客户端创建团队，这样[](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)你可以轻松地邀请他们参加会议，还可以在 Microsoft Teams 中对话、共享文件和跟踪项目。
 
 下载信息图，快速了解如何通过以下工具加入或主持Microsoft Teams：
 
@@ -58,12 +58,12 @@ ms.locfileid: "60194749"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn?autoplay=false]
 
-使用 Microsoft Teams 可以加入与公司内员工和公司外部客户的会议。 试一试：
+使用 Microsoft Teams 可以同时与公司内的员工和公司外部的客户加入会议。 试一试：
 
 1. In Microsoft Teams， in the left navigation， choose **Meetings**.
 1. 打开要加入的会议，然后选择"加入Microsoft Teams **会议"。**
 1. 当会议打开时，选择"立即 **加入"。**
-1. 受邀加入会议的任何客户端都将在日历中打开会议，选择会议链接，下载 Teams 应用或在 Web 上打开它，输入其名称，然后选择"加入 **"。**
+1. 受邀加入会议的任何客户端都将在日历中打开会议、选择会议链接、下载 Teams 应用或在 Web 上打开它、输入其名称，然后选择"加入 **"。**
 1. 当你看到客户端出现在大厅中时，选择" **允许** "以允许他们进入。
 1. 只要每个人都加入，就可以开始会议。
  

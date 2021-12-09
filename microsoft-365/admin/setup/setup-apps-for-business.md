@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解如何设置 Microsoft 365 商业应用版订阅。
-ms.openlocfilehash: 2a21ba525fa743b8a9105e571717d80d4eb42258
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 48b26e3c19ba8c02798e9eb365ab763b03a1029a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254377"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373424"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>设置 Microsoft 365 商业应用版
 
@@ -40,12 +40,6 @@ ms.locfileid: "61254377"
  ::: moniker range="o365-worldwide"
 
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 的管理中心。
 
 ::: moniker-end
 
@@ -73,12 +67,6 @@ ms.locfileid: "61254377"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-如果你使用的是 Office 365 Germany，请转到 [https://portal.office.de/OLS/MySoftware.aspx](https://portal.office.de/OLS/MySoftware.aspx)。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 如果使用 由世纪互联运营的 Office 365，请转到 [https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx](https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx)。
@@ -99,7 +87,7 @@ ms.locfileid: "61254377"
   
 ## <a name="store-files-online"></a>联机存储文件
 
-Microsoft 轻松实现联机存储文件。若要了解最适合企业的存储位置，请参阅 [Office 365 中可存储文件的位置](../../business-video/store-files.md)。
+Microsoft 轻松实现联机存储文件。若要了解最适合企业的存储位置，请参阅 [Office 365 中可存储文件的位置](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)。
   
 为用户创建 Microsoft 帐户时，每个用户都会自动获得 **OneDrive** 云存储位置。借助 OneDrive，可以跨计算机、手机和平板电脑访问文件。
   

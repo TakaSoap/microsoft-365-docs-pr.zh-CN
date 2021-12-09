@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 授予用户访问其他用户邮箱的权限，此操作允许用户从其他用户的邮箱读取和发送电子邮件。
-ms.openlocfilehash: cd6f54ac578f1d1a65b20d3093b0efdeb1110567
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: ec014a744f47b97dd0a65b432510c2e90dea17e4
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262759"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370268"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>向其他用户授予邮箱权限 - 管理员帮助
 
@@ -79,20 +79,6 @@ ms.locfileid: "61262759"
  
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
-
-2. 选择所需用户，展开“**邮件设置**”，然后选择 "**邮箱权限**”旁边的“**编辑**"。
-
-3. 在"**发送方式**" 旁，选择“**编辑**”。 
-
-4. 选择“**添加权限**”，然后选择你希望该用户可以使用其身份发送的人员的姓名。 
-    
-5. 选择“**添加**”。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
@@ -129,20 +115,6 @@ ms.locfileid: "61262759"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
-  
-2. 选择所需用户，展开“**邮件设置**”，然后选择 "**邮箱权限**"旁边的“**编辑**"。
-    
-3. 在 "**读取和管理**" 旁，选择“**编辑**”。 
-    
-4. 选择“**添加权限**”，然后选择允许其从该邮箱读取电子邮件的用户的姓名。
-
-5. 选择“**添加**”。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
@@ -173,20 +145,6 @@ ms.locfileid: "61262759"
 5. 选择“**添加权限**”，然后选择允许其代表该邮箱发送电子邮件的用户的姓名。
 
 6. 选择“**添加**”。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
-
-2. 选择所需用户，展开“**邮件设置**”，然后选择 "**邮箱权限**"旁边的“**编辑**"。
-
-3. 在"**代表发送**”旁边，选择“**编辑**"。
-    
-4. 选择“**添加权限**”，然后选择允许其代表该邮箱发送电子邮件的用户的姓名。
-
-5. 选择“**添加**”。
 
 ::: moniker-end
 

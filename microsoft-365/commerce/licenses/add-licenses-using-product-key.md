@@ -21,12 +21,12 @@ search.appverid: MET150
 description: 了解如何使用产品密钥向订阅添加许可证或扩展订阅。
 ROBOTS: NOINDEX
 ms.date: 04/07/2021
-ms.openlocfilehash: a3d6f2d87952a9601a422854c1df2f96f497efdf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e9fed54eb7006906e7d54888709c14cdbff8a903
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194713"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370952"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>使用产品密钥向订阅添加许可证或延长付费订阅
 
@@ -42,12 +42,6 @@ ms.locfileid: "60194713"
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
@@ -55,7 +49,7 @@ ms.locfileid: "60194713"
 
 2. 在 **"产品** "选项卡上，选择要添加许可证的订阅。
 3. On the subscription details page， in the **Licenses** section， select **Add more licenses**.
-4. 在"**添加更多许可证"窗格中**，选择 **"使用新的和未使用的产品密钥"，** 然后选择"下一 **步"。**
+4. 在"**添加更多许可证"窗格中**，**选择"使用新的和未使用的** 产品密钥"，然后选择"下一 **步"。**
 5. 输入产品密钥，然后选择下一 **步**。
     > [!NOTE]
     > 如果有多个产品密钥，可以选择" **添加其他产品密钥**"以输入产品密钥。
@@ -66,12 +60,6 @@ ms.locfileid: "60194713"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"

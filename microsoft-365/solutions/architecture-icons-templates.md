@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365体系结构图标和模板
-description: 用于构建体系结构图表的图标Microsoft 365。
+title: Microsoft 365体系结构图表模板和图标
+description: 使用Microsoft 365图标、模具和Visio创建网站体系结构图。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -10,14 +10,14 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: b4fedde7404f8ef274cab90fa87fdd21c093d8eb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 8fd6815b94e44094ec01d405c22f33232f101503
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556264"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372452"
 ---
-# <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365体系结构图标和模板
+# <a name="microsoft-365-architecture-templates-and-icons"></a>Microsoft 365体系结构模板和图标
 
 帮助我们的合作伙伴和客户设计和构建新解决方案非常重要。 本指南中包含的体系结构图表可帮助传达设计决策和环境中组件之间的关系。 我们使用一组符号和图标以及 Visio 模板来创建我们产品的体系结构图表，并在此处提供这些工具，以帮助你为下一个解决方案生成自定义体系结构图。
 

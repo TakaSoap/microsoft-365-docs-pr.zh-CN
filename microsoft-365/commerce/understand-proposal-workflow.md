@@ -20,12 +20,12 @@ search.appverid: MET150
 description: 了解帮助你购买 Microsoft 产品和服务的建议。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 0a067049f278daee3c6e55aba00a81dcb2746c3c
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: c358022648bb81c5ca90d348a9d3c3b812c36ff2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754773"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372884"
 ---
 # <a name="understand-the-proposal-workflow"></a>了解建议工作流
 
@@ -97,7 +97,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 " **你的组织** "部分显示与之关联的计费帐户。 计费帐户信息从现有计费帐户提取，或由 Microsoft 代表创建。 如果您的组织是另一个组织的关联，则还会看到包含该组织的名称和地址的潜在客户组织部分。
 
-如果这是你的组织第一次与 Microsoft 建立商业关系，并且你尚未签署 MCA，如果贵组织或潜在客户组织下的信息不正确，请联系代表来进行更改。 接受 MCA 后，可以在"帐单"页面上查看和更改组织的地址和联系人信息，Microsoft 365 管理中心。 [](https://go.microsoft.com/fwlink/p/?linkid=2084771) 如果组织名称发生更改，请打开服务请求以进行更新。 [了解如何打开服务请求。](../business-video/get-help-support.md)
+如果这是你的组织第一次与 Microsoft 建立商业关系，并且你尚未签署 MCA，如果贵组织或潜在客户组织下的信息不正确，请联系代表来进行更改。 接受 MCA 后，可以在"帐单"页面上查看和更改组织的地址和联系人Microsoft 365 管理中心。 [](https://go.microsoft.com/fwlink/p/?linkid=2084771) 如果组织名称发生更改，请打开服务请求以进行更新。 [了解如何打开服务请求](../admin/get-help-support.md)。
 
 ### <a name="your-information"></a>你的信息
 
@@ -153,7 +153,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 - **补充条款** MCA 的任何修正列表，其中包含组织的条款。 例如，此列表可能包括 HIPAA 或 GDPR 条款。
 - **现在购买** 在建议接受工作流结束时签出期间支付的项目列表。
 - **应用于 (费用折扣)** 作为建议一部分收到的折扣列表。
-- **包含** 包含在建议包中的项目列表，无需额外付费。 这些项目中的某些项目将来可能具有与其相关的成本。
+- **包含** 包含在建议包中的项目列表，无需额外付费。 这些项目中的某些项目将来可能具有相关成本。
 
 ### <a name="summary"></a>摘要
 
@@ -167,7 +167,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 如果你是一名新客户，并且已购买 Azure 产品作为建议的一部分，下一步是设置新的计费帐户。 若要了解如何，请参阅 [为 Microsoft 客户协议设置计费帐户](/azure/cost-management-billing/manage/mca-setup-account)。
 
-如果你是具有 企业协议 的现有 Azure 客户，并且你是第一次对 MCA 进行签名，下一步是了解协议之间的更改，以及如何使用新的计费帐户完成任务。 若要了解更多信息，请参阅[完成企业协议客户协议的计费帐户中的任务](/azure/cost-management-billing/manage/mca-enterprise-operations)。
+如果你是具有 企业协议 的现有 Azure 客户，并且你是第一次签署 MCA，下一步是了解协议之间的更改，以及如何使用新的计费帐户完成任务。 若要了解更多信息，请参阅[企业协议客户协议的计费帐户中完成所有任务](/azure/cost-management-billing/manage/mca-enterprise-operations)。
 
 ## <a name="understand-invoicing"></a>了解发票
 

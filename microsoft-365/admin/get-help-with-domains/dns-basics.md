@@ -25,28 +25,18 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 域名系统将计算机主机名映射到 IP 地址，了解 DNS 和域注册机构基本信息可帮助管理域。
-ms.openlocfilehash: 3195e6ba1e8483a5444eb0f8046add1e3e7725f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9bbd099a7c44aecdd37772cd97333a905585e33f
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164772"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370016"
 ---
 # <a name="dns-basics"></a>DNS 基础
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
 ::: moniker range="o365-worldwide"
-
-域名（如 contoso.com）可通过全球范围的域注册机构和数据库托管。 域名系统（DNS ）在可人工读取的计算机主机名与网络设备所用的 IP 地址之间进行映射。 理解 DNS 和域注册机构的基础知识，有助于管理域。
-
-## <a name="watch-domains--dns-an-overview"></a>观看：域和 DNS：概述
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
 
 域名（如 contoso.com）可通过全球范围的域注册机构和数据库托管。 域名系统（DNS ）在可人工读取的计算机主机名与网络设备所用的 IP 地址之间进行映射。 理解 DNS 和域注册机构的基础知识，有助于管理域。
 
@@ -119,12 +109,6 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-假设 contoso.com 的 NS 记录为 “godaddy.com”。 现在 Internet 知道，GoDaddy.com 是查找区域文件的位置，区域文件列出了用于 contoso.com 的所有其他 DNS 记录。 这些 DNS 记录包含 MS 记录，显示发送 contoso.com 电子邮件和其他记录的位置。 如果 MX 拥有一个数值 "send email to Microsoft 365"，表示所有发送至 contoso.com 电子邮件地址（如 joe@contoso.com）的所有电子邮件将被发送到那里。 随后只要此位置有一个名为“joe”的收件箱，电子邮件就会被递送。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 假设 contoso.com 的 NS 记录为 “hichina.com”。 现在 Internet 知道，hichina.com 是查找区域文件的位置，区域文件列出了用于 contoso.com 的所有其他 DNS 记录。 这些 DNS 记录包含 MS 记录，显示发送 contoso.com 电子邮件和其他记录的位置。 如果 MX 拥有一个数值 "send email to Microsoft 365"，表示所有发送至 contoso.com 电子邮件地址（如 joe@contoso.com）的所有电子邮件将被发送到那里。 随后只要此位置有一个名为“joe”的收件箱，电子邮件就会被递送。
@@ -134,12 +118,6 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
 如果在域设置步骤中设置域，必须输入以使用 Microsoft 365 工作的实际值为你列出。 若要手动执行设置，可将值复制并粘贴到 DNS 主机上的正确 DNS 记录（MX 记录、CNAME 记录等）中，这可能是域注册机构，但不强制。
   
 ::: moniker range="o365-worldwide"
-
-为什么域区域文件可能是在域注册机构之外的其他位置？ 嗯，你可能会在域注册机构（如 GoDaddy）中注册域名，但 DNS 记录可能被托管在其他位置，如独立 DNS 托管公司或 web 托管公司。 域 NS 记录存储的信息，能够使 DNS 服务器知道在哪里查找。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
 
 为什么域区域文件可能是在域注册机构之外的其他位置？ 嗯，你可能会在域注册机构（如 GoDaddy）中注册域名，但 DNS 记录可能被托管在其他位置，如独立 DNS 托管公司或 web 托管公司。 域 NS 记录存储的信息，能够使 DNS 服务器知道在哪里查找。
 
@@ -165,25 +143,6 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
 - **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的 [初始 onmicrosoft.com 电子邮件](../setup/domains-faq.yml)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Microsoft 365 的工作帐户）可能是 joe@contoso.com。 
     
 - **网站：** 如果你有包含 SharePoint Online 公共网站的 Microsoft 365 订阅（不能再购买），你的公共网站附带有如下初始地址：contoso-public.sharepoint.com。 如果你为你的企业设置网站，则可以使用自定义域名将网站地址重命名为类似于 www.contoso.com 的地址。 
-    
-- **即时消息**：也可以自定义 Skype for Business Online 地址以使用你的域名，以便你组织中的人员可以在 Skype for Business Online 上使用更容易记住的较短地址（如 joe@contoso.com）相互联系。 
-    
-::: moniker-end
-
-::: moniker range="o365-germany"
-## <a name="why-add-a-domain-in-microsoft-365"></a>为什么要在 Microsoft 365 中添加域？
-
-
-添加自定义域（如 fourthcoffee.com）至 Microsoft 365，让你能够使用更短、更熟悉的电子邮件和 userID 及服务。 注册 Microsoft 365 帐户时，将会[提供一个域供使用](../setup/domains-faq.yml)，但它包含 "onmicrosoft.com"。 如果计划将 Microsoft 365 用于电子邮件，许多人更愿意添加组织或商业域。 
-  
-> [!NOTE]
-> 如果只希望下载和使用 Microsoft 365 应用（如 Outlook 或 Word），则不需要添加域：[在 PC 或 Mac 上安装 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) 即可。 
-  
-您可以在 Microsoft 365 中为您的电子邮件、公共网站和即时消息地址使用您的域名。
-  
-- **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的 [初始 onmicrosoft.com 电子邮件](../setup/domains-faq.yml)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Microsoft 365 的工作帐户）可能是 joe@contoso.com。 
-    
-- **网站：** 如果你有包含 SharePoint Online 公共网站的订阅（不能再购买），你的公共网站附带有如下初始地址：contoso-public.sharepoint.com。 如果你为你的企业设置网站，则可以使用自定义域名将网站地址重命名为类似于 www.contoso.com 的地址。 
     
 - **即时消息**：也可以自定义 Skype for Business Online 地址以使用你的域名，以便你组织中的人员可以在 Skype for Business Online 上使用更容易记住的较短地址（如 joe@contoso.com）相互联系。 
     

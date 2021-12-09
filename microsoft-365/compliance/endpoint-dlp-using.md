@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: fef221ce23ac04d156084ebad7b837840004f066
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 892f151234aee8daee0cac12622d08cd39f27769
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111851"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372908"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -43,9 +43,20 @@ ms.locfileid: "61111851"
   > [!div class="mx-imgBorder"]
   > ![DLP 设置。](../media/endpoint-dlp-1-using-dlp-settings.png)
 
+### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>终结点 DLP Windows 10 和 macOS 设置
+
+|Setting |Windows 10、1809 及更高版本  |macOS Catalina 10.15 或更高版本（预览）  |Notes  |
+|---------|---------|---------|---------|
+|文件路径排除     |支持         |支持         |macOS 包括默认启用的推荐排除项列表          |
+|不允许的应用程序     |支持         |支持         |         |
+|不允许的蓝牙应用    |支持         |不支持         |         |
+|敏感项目的浏览器和域限制      |支持         |支持         |         |
+|终结点 DLP 的其他设置     |支持         |支持         |macOS 设备仅支持默认业务理由         |
+|始终审核已载入设备的文件活动     |支持         |支持         |         |
+
 ### <a name="advanced-classification-scanning-and-protection"></a>高级分类扫描和保护
 
-## <a name="get-registered"></a>注册
+#### <a name="get-registered"></a>注册
 
 若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅[注册 Microsoft 365 macOS 支持](https://aka.ms/EndpointDLPIgnite21-Previews)。
 
@@ -66,19 +77,6 @@ ms.locfileid: "61111851"
 
 > [!NOTE]
 > DLP 策略评估始终发生在云中，即使未发送用户内容。
-
-### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>终结点 DLP Windows 10 和 macOS 设置
-
-|Setting |Windows 10、1809 及更高版本  |macOS Catalina 10.15 或更高版本（预览）  |Notes  |
-|---------|---------|---------|---------|
-|文件路径排除     |支持         |支持         |macOS 包括默认启用的推荐排除项列表          |
-|不允许的应用程序     |支持         |支持         |         |
-|不允许的蓝牙应用    |支持         |不支持         |         |
-|敏感项目的浏览器和域限制      |支持         |支持         |         |
-|终结点 DLP 的其他设置     |支持         |支持         |macOS 设备仅支持默认业务理由         |
-|始终审核已载入设备的文件活动     |支持         |支持         |         |
-
-
 
 ### <a name="file-path-exclusions"></a>文件路径排除
 

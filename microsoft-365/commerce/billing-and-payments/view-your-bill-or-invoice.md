@@ -25,12 +25,12 @@ ms.custom:
 - adminvideo
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
 ms.date: 07/31/2020
-ms.openlocfilehash: 0124f9c2f1375da162975f808138f24a8dead4fd
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: bbede67dd093ad726933f25b7774b63e587dd24a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128192"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371252"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 
@@ -38,7 +38,7 @@ ms.locfileid: "61128192"
   
 如果需要帮助解读在帐单上看到的费用，请参阅[了解你的帐单或发票](understand-your-invoice2.md)获取详细演练。
   
-**对账单有问题？** [联系支持人员，获得有关商业版产品的帮助](../../business-video/get-help-support.md)。
+**对账单有问题？** [联系支持人员，获得有关商业版产品的帮助](../../admin/get-help-support.md)。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -57,12 +57,6 @@ ms.locfileid: "61128192"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**账单**”\> “<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">账单和付款</a>”页。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**账单**”\> “<a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">账单和付款</a>”页。
 
 ::: moniker-end
 

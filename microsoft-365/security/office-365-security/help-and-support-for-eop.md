@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4ee0affc301500d3ebebd8d17ff13f569356c123
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f4db5851edcbb4daa2a0be1fa36770b7bb2d4b94
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149578"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371168"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 
@@ -29,7 +29,7 @@ ms.locfileid: "60149578"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在 Microsoft 365 组织中，如果邮箱在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱，那么本文中列出的技术支持资源将帮助您在遇到问题时找到答案。EOP。 Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
+在具有 Exchange Online 或独立 Exchange Online Protection (EOP) 组织邮箱且没有 Exchange Online 邮箱的 Microsoft 365 组织中，本文中列出的技术支持资源将帮助您在遇到问题时找到答案使用 EOP。 Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
 
 ## <a name="self-support-options"></a>自助支持选项
 
@@ -37,7 +37,7 @@ ms.locfileid: "60149578"
 
 [Exchange Online Protection 产品概述](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[联系商业版产品的支持人员 - 管理员帮助](../../business-video/get-help-support.md)
+[联系商业版产品的支持人员 - 管理员帮助](../../admin/get-help-support.md)
 
 [Microsoft 365社区](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
@@ -67,7 +67,7 @@ ms.locfileid: "60149578"
 
 1. 登录到Microsoft 365 管理中心。
 
-2. 有关常规产品问题， **请转到支持** \> **人员询问客户支持** \> **致电技术支持** 人员。
+2. 有关一般产品问题，请转到 **支持** \> **人员询问客户支持** \> **致电技术支持** 人员。
 
    For questions before you buy EOP, or questions about billing and subscriptions, go to **Support** \> **Ask for Customer Support** \> **Call billing and subscription support**.
 

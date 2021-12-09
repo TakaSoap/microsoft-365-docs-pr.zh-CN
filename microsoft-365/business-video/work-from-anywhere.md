@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 概述Microsoft 365随时随地进行工作。
-ms.openlocfilehash: 7312f74bb27ba166650356ed6fa835c079ce0b76
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 概述Microsoft 365如何帮助您从任何位置工作。
+ms.openlocfilehash: 56fff54805db76f7022747bdd911317aac0dd97c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188561"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369788"
 ---
 # <a name="work-from-anywhere---overview"></a>随时随地工作 - 概述
 
@@ -41,17 +41,17 @@ ms.locfileid: "60188561"
 
 **考虑定期在家工作？**
 
-使用此模板来分析你的习惯和工作方式，以创建一个在过渡到家庭办公室时的工作方式。 收集材料并探索以优化你的空间，并保持高效和完成任务。 [下载模板](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
+使用此模板来分析你的习惯以及你的工作方式，以创建一个在过渡到家庭办公室时的工作方式。 收集材料并探索以优化你的空间，并保持高效和完成任务。 [下载模板](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
 
 ## <a name="install-outlook-and-keep-in-touch"></a>安装Outlook并保持联系
 
 你可以随时在手机上使用 Outlook电子邮件和约会。 下载应用，然后启动、登录并设置帐户。
 
-获取有关如何在手机上安装Outlook[的详细信息](install-apps-android.md)。
+获取有关如何在手机上安装Outlook[的详细信息](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f)。
 
 ## <a name="save-your-files-to-the-cloud"></a>将文件保存到云中
 
-将业务文件存储在 Microsoft Teams 或 SharePoint。 这样，即使你不在办公室，你和公司中的其他人也可以访问他们。
+将业务文件存储在Microsoft Teams或SharePoint。 这样，即使你不在办公室，你和公司中的其他人也可以访问他们。
 
 **设置SharePoint和Microsoft Teams移动应用**
 
@@ -65,15 +65,15 @@ ms.locfileid: "60188561"
 1. 打开OneDrive并登录。
 1. 按照说明完成设置并开始同步。
 
-需要一些帮助？ 获取有关[文件存储位置、](store-files.md)如何使用 OneDrive[移动应用](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e)以及如何[同步文件和文件夹的建议](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)。
+需要一些帮助？ 获取有关[在何处存储文件、](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)如何使用 OneDrive[移动应用](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e)以及如何同步[文件和文件夹的建议](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)。
 
 ## <a name="open-and-edit-your-files-from-any-device"></a>从任何设备打开和编辑文件
 
 ### <a name="work-on-your-phone-or-tablet"></a>在手机或平板电脑上工作
 
-在Office或平板电脑上安装应用程序，随时随地工作。 下载应用，然后启动、登录并设置帐户。
+在Office或平板电脑上安装应用程序并随时随地工作。 下载应用，然后启动、登录并设置帐户。
 
-了解有关在以下设备上安装[Office 应用：Android](install-apps-android.md)  |  [iOS。](install-apps-ios.md)
+详细了解如何安装以下[Office 应用：Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f)  |  [iOS。](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f)
 
 不确定在手机或平板电脑上可以做什么？ 阅读有关使用应用Office的信息：
 
@@ -86,9 +86,9 @@ ms.locfileid: "60188561"
 
 ### <a name="work-in-a-browser"></a>在浏览器中工作
 
-您还可以直接在浏览器中创建和编辑文档。 打开文件、编辑文本、调整格式、添加图片，以及创建 Word、Excel 和 PowerPoint。 当您与同事或客户共享文件时，甚至可以同时处理文档。 [](overview-file-sharing.md)
+您还可以直接在浏览器中创建和编辑文档。 在 Word、Excel 和 PowerPoint 中打开文件、编辑文本、调整格式、添加图片和创建PowerPoint。 当您与同事或客户共享文件时，甚至可以同时处理文档。 [](overview-file-sharing.md)
 
-1. 使用你的[Office.com](https://office.com) Microsoft 365登录。
+1. Sign in to [Office.com](https://office.com) with your Microsoft 365 account.
 1. 启动Office 应用开始工作。
 
 **在浏览器中使用 Office Online**

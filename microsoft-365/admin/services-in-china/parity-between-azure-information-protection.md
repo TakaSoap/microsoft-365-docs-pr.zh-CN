@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 深入了解适用于由世纪互联运营的 Office 365 的 Azure 信息保护 （AIP） 以及如何为中国客户进行配置。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 5bf93be6c802dffac9a9f6c2f039364de99539ad
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
-ms.translationtype: HT
+ms.openlocfilehash: 92c9460d9a2be4e09021073c455dd5287cba222b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320799"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372680"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>适用于由世纪互联运营的 Office 365 的 Azure 信息保护支持
 
@@ -37,9 +37,9 @@ ms.locfileid: "61320799"
 
 以下列表包含世纪互联运营的 Office 365 的 AIP 与 2021 年 1 月前的商业产品之间的现有缺陷：
 
-- 仅 Microsoft 365 企业版应用（内部版本 11731.10000 或更高版本）支持信息权限管理 （IRM）。 不支持 Office 2010、Office 2013 和其他 Office 2016 版本。
+- Active Directory Rights Management Services () 11731.10000 Microsoft 365 企业应用版 (内部版本 11731.10000 或更高版本) 。 Office Professional Plus不支持 AD RMS。
 
-- 目前无法从 Active Directory 权限管理服务 （AD RMS） 迁移到 AIP。
+- 从 AD RMS 到 AIP 的迁移当前不可用。
   
 - 支持在商业云中与用户共享受保护的电子邮件。
   
@@ -88,10 +88,10 @@ ms.locfileid: "61320799"
 
 1. 如果未安装 Azure Az 模块，请安装它或使用已预安装 Azure Az 模块的资源，例如 [Azure Cloud Shell](/azure/cloud-shell/overview)。 有关详细信息，请参阅 [安装 Azure Az PowerShell 模块](/powershell/azure/install-az-ps)。
 
-1.  使用 [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) cmdlet 和 `azurechinacloud` 环境名称连接到服务：
+1.    使用 [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) cmdlet 和 `azurechinacloud` 环境名称连接到服务：
 
     ```powershell
-    Connect-azacount -environmentname azurechinacloud
+    Connect-azaccount -environmentname azurechinacloud
     ```
 
 1. 使用 [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet 和 Microsoft 信息保护同步服务的 `870c4f2e-85b6-4d43-bdda-6ed9a579b725` 应用程序 ID 手动创建 **Microsoft 信息保护同步服务** 服务主体：

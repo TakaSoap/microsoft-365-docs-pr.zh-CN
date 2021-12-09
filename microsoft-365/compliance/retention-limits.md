@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: 了解策略、每个保留策略和保留标签策略项目的最大数量
-ms.openlocfilehash: 52318fb2f8ae81022734bb1f620b220830214ad7
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: d8746f99961d209fb76f1fbe146162d9b6e2ed59
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432645"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370064"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的限制
 
@@ -112,4 +112,4 @@ SharePoint 示例：
 
 - 处置证明在项被处置后至多七年内可用，此期间每个保留标签最多 1000000 个项。 
     
-如果你需要超过 1000000 个记录项的证明，请联系 [Microsoft 支持](../business-video/get-help-support.md)。
+如果你需要超过 1000000 个记录项的证明，请联系 [Microsoft 支持](../admin/get-help-support.md)。

@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何配置对来自 iPv6 源的匿名入站电子邮件的支持，Exchange Online Exchange Online Protection。
+description: 管理员可以了解如何配置对来自 Exchange Online 和 Exchange Online Protection 中来自 IPv6 源的匿名入站Exchange Online Protection。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6ba52efb6ad18bc0515084b3aee4a8bbdd6c7312
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 78b2e653aa284e34af2315ac696d7390dce71884
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203863"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373652"
 ---
-# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>在电子邮件中添加对通过 IPv6 的匿名入站Microsoft 365
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>在邮箱中添加对通过 IPv6 的匿名入站Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,13 +34,13 @@ ms.locfileid: "60203863"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365邮箱和独立 Exchange Online EOP Exchange Online Protection (组织) 没有 Exchange Online 邮箱的组织支持通过 IPv6 发送的匿名入站电子邮件。 源 IPv6 电子邮件服务器必须满足以下两个要求：
+Microsoft 365具有 Exchange Online 邮箱和独立 Exchange Online Protection (EOP) 组织Exchange Online IPv6 支持匿名入站电子邮件。 源 IPv6 电子邮件服务器必须满足以下两个要求：
 
 - 源 IPv6 地址必须具有有效的反向 DNS (PTR) 记录，该记录允许目标从 IPv6 地址查找域名。
 
 - 发件人必须通过 SPF 验证（在 [RFC 7208](https://tools.ietf.org/html/rfc7208) 中定义）或 [DKIM 验证](http://dkim.org/)（在 [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt) 中定义）。
 
-在组织可以通过 IPv6 接收匿名入站电子邮件之前，管理员需要联系 Microsoft 支持人员并请求获取。 有关如何打开支持请求的说明，请参阅联系商业产品支持 [人员 - 管理员帮助](../../business-video/get-help-support.md)。
+在组织可以通过 IPv6 接收匿名入站电子邮件之前，管理员需要联系 Microsoft 支持人员并请求获取。 有关如何打开支持请求的说明，请参阅联系商业产品支持 [人员 - 管理员帮助](../../admin/get-help-support.md)。
 
 在组织中启用匿名入站 IPv6 邮件支持后，邮件将经过该服务提供的正常邮件筛选。
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 83a0f7828b5a0ef9e598b416a9f3b105cdf391d7
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 125c90a6c9839e2899e97b197c951c0e26d6fc37
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171529"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371480"
 ---
 # <a name="overview-of-automated-investigations"></a>自动调查概述
 
@@ -80,18 +80,18 @@ ms.locfileid: "61171529"
 所有修正操作（无论是挂起操作还是已完成操作）都跟踪在操作 [中心中](auto-investigation-action-center.md)。 如有必要，安全运营团队可以撤消修正操作。 若要了解更多信息，请参阅 [在自动调查后审阅并批准修正操作](/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
 
 > [!TIP]
-> 查看企业门户中新的统一调查Microsoft 365 Defender页面。 若要了解更多信息，请参阅 ([ NEW！) 统一调查页面](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
+> 查看企业门户中新的统一调查Microsoft 365 Defender页面。 若要了解更多信息，请参阅 ([ NEW！) Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
 
 ## <a name="requirements-for-air"></a>AIR 的要求
 
-你的组织必须拥有适用于终结点的 Defender (请参阅[Microsoft Defender for Endpoint) 。](minimum-requirements.md)
+你的组织必须有适用于终结点的 Defender (请参阅 [Microsoft Defender for Endpoint 的最低要求](minimum-requirements.md)。
 
 目前，AIR 仅支持以下操作系统版本：
 
 - Windows Server 2019
 - Windows Server 2022
 - Windows 10版本 1709 (版本 16299.1085（包含[KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
-- Windows 10版本 1803 (OS 内部版本 17134.704（包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
+- Windows 10版本 1803 (操作系统版本 17134.704（包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
 - Windows 10版本[1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019)或更高版本
 - Windows 11
 

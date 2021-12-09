@@ -26,13 +26,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: 通过购买域名并添加 tom@fourthcoffee.com 电子邮件地址，将电子邮件地址更改为友好电子邮件地址，Microsoft 365。
-ms.openlocfilehash: bf6de4115b37e6f83da7b924cc41f4d2c13ac427
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+description: 将电子邮件地址更改为友好电子邮件地址，tom@fourthcoffee.com 购买域名并添加到电子邮件地址Microsoft 365。
+ms.openlocfilehash: f388bfcea3131df6a66733c940ed2f566827d2e5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61127976"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370568"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>将电子邮件地址更改为使用您的自定义域
 
@@ -44,19 +44,13 @@ ms.locfileid: "61127976"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-你在德国的初始电子邮件地址Office 365 .onmicrosoft.de，tom@fourthcoffee.onmicrosoft.de。 你可以将地址更改为更友好的地址，tom@fourthcoffee.de。 你将需要自己的域名，如 fourthcoffee.de 域名。 如果您已有一个，太好了！ 如果没有，您可以了解如何[从域注册机构购买](../get-help-with-domains/buy-a-domain-name.md)。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
-由世纪Office 365运营的 Partner.onmschina.cn 中的初始电子邮件地址 tom@fourthcoffee.partner.onmschina.cn。 你可以将地址更改为更友好的地址，tom@fourthcoffee.cn。 你将需要你自己的域名，如 fourthcoffee.cn 域名。 如果您已有一个，太好了！ 如果没有，您可以了解如何[从域注册机构购买](../get-help-with-domains/buy-a-domain-name.md)。
+由世纪Office 365运营的 partner.onmschina.cn 中的初始电子邮件地址 tom@fourthcoffee.partner.onmschina.cn。 你可以将地址更改为更友好的地址，tom@fourthcoffee.cn。 你将需要自己的域名，如 fourthcoffee.cn 域名。 如果您已有一个，太好了！ 如果没有，您可以了解如何[从域注册机构购买](../get-help-with-domains/buy-a-domain-name.md)。
 
 ::: moniker-end
 
-当您在设置期间通过更新域的 MX 记录将域的电子邮件更改为Microsoft 365，发送到该域的所有电子邮件都将开始Microsoft 365。 在更改 MX 记录之前，请确保Microsoft 365域中拥有电子邮件的每个人添加用户并创建了邮箱。 不想将域中的每个人的电子邮件移动到Microsoft 365？ 你可以采取一些[步骤来Microsoft 365一些电子邮件地址进行试点](../misc/pilot-microsoft-365-from-my-custom-domain.md)。
+当您将域的电子邮件更改为发送到 Microsoft 365 时，在设置期间通过更新域的 MX 记录，发送到该域的所有电子邮件都将开始Microsoft 365。 在更改 MX 记录之前，请确保Microsoft 365域中拥有电子邮件的每个人添加用户并创建了邮箱。 不想将域中的每个人的电子邮件移动到Microsoft 365？ 你可以采取一些[步骤来Microsoft 365一些电子邮件地址进行试点](../misc/pilot-microsoft-365-from-my-custom-domain.md)。
   
 ## <a name="set-up-business-email-with-a-new-domain"></a>使用新域设置业务电子邮件
 
@@ -88,12 +82,6 @@ ms.locfileid: "61127976"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> 的管理中心。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 转到 管理中心 。 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>
@@ -111,10 +99,10 @@ ms.locfileid: "61127976"
 6. 选择用户以编辑其用户名，并更改为你刚刚添加的域。
 
 > [!NOTE]
-> 如果未使用 Exchange 许可证，则不能使用域从租户发送或接收Microsoft 365电子邮件。
+> 如果未使用 Exchange许可证，则不能使用域从租户发送或接收Microsoft 365电子邮件。
   
 ## <a name="related-content"></a>相关内容
 
-[使用自定义域Microsoft 365 (](../get-help-with-domains/buy-a-domain-name.md)购买) \
+[使用自定义域购买Microsoft 365 (](../get-help-with-domains/buy-a-domain-name.md)文章) \
 [管理域](/admin) (链接页) \
 [域常见问题](../setup/domains-faq.yml) （文章）

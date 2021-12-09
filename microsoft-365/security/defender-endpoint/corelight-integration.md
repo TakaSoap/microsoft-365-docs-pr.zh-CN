@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 62bddf15a041ef47df13bbbd036d10727c15d3d6
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 51762f9a2273817f926a55f8fef630cbfd7d2df1
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320835"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372512"
 ---
 # <a name="enable-corelight-data-integration"></a>启用 Corelight 数据集成
 
@@ -36,7 +36,7 @@ ms.locfileid: "61320835"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
-Microsoft 与 [Corelight 合作，Corelight](https://corelight.com/integrations/iot-security)是业界领先的开放网络检测和响应 (NDR) 平台提供商，可帮助你发现整个组织的 IoT/OT 设备。 使用从 Corelight 网络设备发送的数据Microsoft 365 Defender可增强非托管设备的网络活动的可见性，包括与其他非托管设备或外部网络的通信。
+Microsoft 与 [Corelight（](https://corelight.com/integrations/iot-security)行业领先的开放网络检测和响应 (NDR) 平台提供商）合作，帮助你发现整个组织的 IoT/OT 设备。 使用从 Corelight 网络设备发送的数据Microsoft 365 Defender可增强非托管设备的网络活动的可见性，包括与其他非托管设备或外部网络的通信。
 
 启用此数据源后，Corelight 网络设备的所有事件将发送到Microsoft 365 Defender。 可以在非托管设备时间线（Microsoft Defender for Endpoint 设备清单中提供）中查看这些活动。 有关详细信息，请参阅设备 [发现](device-discovery.md)。
 
@@ -62,11 +62,11 @@ Microsoft 与 [Corelight 合作，Corelight](https://corelight.com/integrations/
 > 你必须是全局管理员才能授予 Corelight 访问组织中资源的权限。
 
 1. 作为租户全局管理员，转到此 [链接以](<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true>) 授予权限。
-2. 转到 [https://security.microsoft.com](https://security.microsoft.com/) 门户，选择 **"设置Microsoft 365 Defender"，** \> 然后记下租户 **ID。** 配置 Corelight 设备时将需要此信息。
+2. 转到门户 [https://security.microsoft.com](https://security.microsoft.com/) ，选择 \> **"设置Microsoft 365 Defender"，** 然后记下租户 **ID。** 配置 Corelight 设备时将需要此信息。
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>步骤 3：配置 Corelight 设备以将数据发送到Microsoft 365 Defender
 
-**适用于：Corelight** 传感器软件 v24.2 及更高版本
+**适用于：Corelight** 传感器软件 v23.2 及更高版本
 
 > [!NOTE]
 > 若要在支持发送数据的早期版本上启用，必须先执行 `corelight-client configuration update --enable.adfiot 1` ：。

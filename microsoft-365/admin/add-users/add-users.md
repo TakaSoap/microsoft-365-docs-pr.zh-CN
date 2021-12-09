@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 description: 每个团队成员都需要用户帐户，然后才能登录和访问 Microsoft 365 商业版。了解如何添加用户和分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: dffe719c5dbd1478cdf23bae2551daa26289d1e4
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: dad5c6693489fd62eb77df46de6d538da93da515
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128504"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370640"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同时添加用户和分配许可证
 
@@ -51,12 +51,6 @@ ms.locfileid: "61128504"
 ::: moniker range="o365-worldwide"
 
 1. 转到位于 <https://admin.microsoft.com> 的管理中心。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 的管理中心。
 
 ::: moniker-end
 
@@ -86,12 +80,6 @@ ms.locfileid: "61128504"
 ::: moniker range="o365-worldwide"
 
 1. 请转到位于 <https://admin.microsoft.com> 的管理中心。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 的管理中心。
 
 ::: moniker-end
 

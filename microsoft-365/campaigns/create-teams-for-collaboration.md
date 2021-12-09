@@ -1,5 +1,5 @@
 ---
-title: 创建协作团队
+title: 在企业内Microsoft Teams团队，以便你的小型企业或市场活动可以协作
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -22,17 +22,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 为团队创建一个协作空间，Microsoft Teams。
-ms.openlocfilehash: ad0c9c938d7c5766bffc6fc960197b0568eb9cb5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解为什么以及如何在企业内创建Microsoft Teams以便你的小型企业或市场活动可以协作。
+ms.openlocfilehash: a8aae7eb1492a45cf80cd5e56b9df7393f08eb7d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189701"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371288"
 ---
-# <a name="create-teams-for-collaboration-in-microsoft-teams"></a>创建团队以在 Microsoft Teams
+# <a name="create-a-team-in-microsoft-teams-so-your-small-business-or-campaign-can-collaborate"></a>在企业内Microsoft Teams团队，以便你的小型企业或市场活动可以协作
 
-Microsoft Teams是一款协作应用，可帮助员工从任何设备保持有序并展开对话。 可以使用 Microsoft Teams 与组织外部的员工或来宾进行即时对话。 还可以拨打电话、主持会议和共享文件。
+Microsoft Teams是一款协作应用，可帮助员工从任何设备保持有序并展开对话。 可以使用Microsoft Teams与组织外部的员工或来宾进行即时对话。 还可以拨打电话、主持会议和共享文件。
 
 ## <a name="best-practices"></a>最佳做法
 
@@ -47,7 +47,7 @@ Microsoft Teams是一款协作应用，可帮助员工从任何设备保持有�
 1. **单个团队：** 为较小的组设置团队，以协作处理其日常工作。
 1. **外部通信团队：** 与供应商、合作伙伴或客户进行协调，而不让他们进入任何敏感内容。 为特定组设置不同的频道。
 
-![包含三Microsoft Teams团队的"安全通信和协作"窗口示意图。](../media/m365-democracy-teams-business-collab.png)
+![包含三Microsoft Teams团队的"安全通信和协作"窗口的图示。](../media/m365-democracy-teams-business-collab.png)
 
 市场活动可以创建以下团队来安全地沟通和协作：
 

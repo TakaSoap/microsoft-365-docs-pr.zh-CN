@@ -14,20 +14,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 接受加入组织Microsoft 365 商业标准版邀请
-ms.openlocfilehash: c9855a02cbc494ad5e0b3b9defbfc9d91c1ca4e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e73d46686e59bb34c1e33565f8c8784788f54431
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176039"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372440"
 ---
-# <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>接受用户或用户Microsoft 365 商业标准版 (电子邮件) 
+# <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>接受用户或用户Microsoft 365 商业标准版电子邮件 (电子邮件) 
 
 如果你已经将 Microsoft 365 Business 与 Gmail、Outlook、Yahoo (或类似) 电子邮件地址一同使用， (例如管理员或企业所有者) 可能会邀请你升级 Microsoft 365 以开始使用专业品牌电子邮件。  在此方案中，你将切换电子邮件地址并了解如何升级。
 
 :::image type="content" source="../../media/ssu-accept-invite-upgrade.png" alt-text="Screenshot： Accept email invite for new business email account":::
 
-如果你是组织管理员，其中用户仍在使用 Gmail、Outlook、Yahoo 或类似的电子邮件地址，并且你正在了解如何设置品牌电子邮件，请改为查看这些步骤：将域添加到[Microsoft 365](../setup/add-domain.md)以及使用电子邮件和云存储设置你的组织。 [](../setup/setup-business-standard.md#finish-setting-up)
+如果你是组织管理员，其中的用户仍在使用 Gmail、Outlook、Yahoo 或类似的电子邮件地址，并且你正在了解如何设置品牌电子邮件，请改为查看以下步骤：将域添加到[Microsoft 365](../setup/add-domain.md)和 设置你的组织[与](../setup/setup-business-standard.md#finish-setting-up)电子邮件和云存储。
 
 > [!IMPORTANT]
 > 如果你是管理员，并且正在查找如何向用户发送 Microsoft 365 商业标准版 订阅邀请的步骤，请查看邀请用户Microsoft 365 商业标准版 ([管理员](admin-invite-business-standard.md)) 。
@@ -42,19 +42,19 @@ ms.locfileid: "60176039"
 
 3. 阅读有关如何处理数据的信息。
 
-4. 在"**如何登录"页上，** 了解新帐户并选择"下一步 **"。**
+4. 在"**如何登录**"页上，了解新帐户并选择"下一步 **"。**
 
 5. 在"**将新帐户** 添加到桌面应用"页上，打开Microsoft 365应用，选择你的配置文件，然后使用新的用户名和临时密码登录。 选择 **下一步**。
 
-6. 按照"将 **新帐户添加到** 帐户Outlook页上的步骤设置Outlook。 选择“**下一步**”。
+6. 按照"添加新帐户以 **Outlook"** 页上的步骤设置Outlook。 选择 **下一步**。
 
-7. 按照"**将文件移动到** 文件OneDrive for Business页上的步骤设置OneDrive。 选择“**下一步**”。
+7. 按照"**将文件移动到** 文件OneDrive for Business页上的步骤设置OneDrive。 选择 **下一步**。
 
 8. 在"**添加新帐户Microsoft Teams** 页上，按照步骤设置Teams。 完成后 **，选择** "我已完成"。
 
 ### <a name="next-steps---migrate-your-data-to-microsoft-365-business-standard"></a>下一步 - 将数据迁移到Microsoft 365 商业标准版
 
-按照将数据迁移到我的[](migrate-data-business-standard.md)Microsoft 365 商业标准版 订阅中的步骤OneDrive、Outlook Teams数据。
+按照将数据迁移到我的 Microsoft 365 商业标准版 订阅[中的](migrate-data-business-standard.md)步骤移动OneDrive、Outlook Teams数据。
 
 ### <a name="no-data-to-migrate"></a>没有要迁移的数据？
 
@@ -68,7 +68,7 @@ ms.locfileid: "60176039"
 
 ### <a name="i-have-a-question-about-upgrading-my-account-who-can-i-talk-to"></a>我对升级我的帐户有一个问题，我可以与谁交谈？
 
-联系我们的小型企业支持专家，他们可以帮助你升级你的Microsoft 365订阅。 有关详细信息，请 [获取支持](../../business-video/get-help-support.md)。
+联系我们的小型企业支持专家，他们可以帮助你升级你的Microsoft 365订阅。 有关详细信息，请 [获取支持](../get-help-support.md)。
 
 ### <a name="what-happens-to-my-data-and-account-when-i-upgrade"></a>升级时，我的数据和帐户会发生什么情况？
 
@@ -81,7 +81,7 @@ ms.locfileid: "60176039"
 
 ### <a name="why-does-it-say-my-admin-now-handles-my-data"></a>为什么它说我的管理员现在处理我的数据？
 
-使用升级的 Microsoft 365 Business 帐户时，Microsoft Office (内部以及 Microsoft 365 商业标准版) 中其他应用内创建的文档、电子邮件和数据归您组织的技术管理员所有。 例如，发送给你的邀请电子邮件的人或你的企业所有者。
+使用已升级 Microsoft 365 商业版帐户时，Microsoft Office (内部和 Microsoft 365 商业标准版) 中其他应用内创建的文档、电子邮件和数据归您组织的技术管理员所有。 例如，发送给你的邀请电子邮件的人或你的企业所有者。
 
 ### <a name="how-do-i-get-started-with-my-new-account"></a>如何开始使用新帐户？
 
@@ -93,9 +93,9 @@ ms.locfileid: "60176039"
 
 ### <a name="how-can-i-send-and-receive-emails-with-my-new-business-email"></a>如何使用我的新商业电子邮件发送和接收电子邮件？
 
-当你使用Outlook商业帐户启动 Microsoft 邮箱时，将自动设置你的新邮箱。
+当你使用新的Outlook启动 Microsoft 邮箱时，将自动设置你的新邮箱。
 
-1. 首先关注[：设置Outlook商业电子邮件。](../../business-video/setup-outlook.md)
+1. 首先关注：[设置 Outlook for business email] (设置Microsoft 365 专属 Outlook[商业电子邮件。](../setup/setup-outlook.md)
 2. 然后关注[：在 "电子邮件"Outlook。](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360)
 
 ### <a name="how-can-i-leave-this-business-and-stop-using-this-license"></a>如何离开此业务 (并停止使用此许可证) ？

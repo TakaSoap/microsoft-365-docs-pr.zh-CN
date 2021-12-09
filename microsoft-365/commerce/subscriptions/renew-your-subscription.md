@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何通过关闭或打开定期计费来续订大多数 Microsoft 365 商业版订阅。
 ms.date: 05/04/2021
-ms.openlocfilehash: a2f43433c883a5380f4f4f92921bc99e5bf9effb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fe78acab6423bbedefe2cad9dc7ae7ae3efe449
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188429"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370076"
 ---
 # <a name="renew-microsoft-365-for-business"></a>续订 Microsoft 365 商业版
 
@@ -49,12 +49,6 @@ ms.locfileid: "60188429"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
 
 ::: moniker-end
 

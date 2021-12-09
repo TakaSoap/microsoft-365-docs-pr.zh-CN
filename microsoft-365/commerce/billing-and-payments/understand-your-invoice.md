@@ -23,18 +23,18 @@ search.appverid: MET150
 description: 了解如何阅读和了解 Microsoft 商业产品的账单或发票。
 keywords: 帐单帐户，组织信息，发票
 ms.date: 05/04/2021
-ms.openlocfilehash: f7f61baea5e965da2a6edf3d66075f2eaa12a95f
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3f6eaef9e26578f759a64fdf55dfeb6882be2458
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756192"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371264"
 ---
 # <a name="understand-your-bill-or-invoice"></a>了解你的帐单或发票
 
 发票提供您的费用摘要和付款说明。 您可以在 Microsoft 365 管理中心中[查看您的在线发票](#view-your-online-invoice)。 您也可以以可移植文档格式（.pdf）下载它，以通过电子邮件发送。
 
-若要查看和打印发票，请：
+若要查看和打印发票，请进行查看和打印：
 
 1. 在 **计费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">“帐单和付款”</a>页面上，选择发票日期范围。
 2. 要打印或保存账单的PDF副本，请选择 **下载发票PDF**，然后打印PDF。
@@ -149,11 +149,11 @@ Azure 预付款仅作为付款方式提供给符合条件的 Azure 产品和服�
 
 如果您对Azure信用有疑问或需要帮助，<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">请使用Azure支持创建支持请求</a>。
 
-如果您在Microsoft 365管理中心中对发票有疑问或需要帮助，[请与企业产品支持联系](../../business-video/get-help-support.md)。
+如果您在Microsoft 365管理中心中对发票有疑问或需要帮助，[请与企业产品支持联系](../../admin/get-help-support.md)。
 
 ## <a name="related-content"></a>相关内容
 
 [了解适用于企业Microsoft 365的](understand-your-invoice2.md)帐单 (发票) \
-[跟踪 Microsoft 客户协议 Azure 信用平衡](/azure/billing/billing-mca-check-azure-credits-balance) (文章) \
+[跟踪 Microsoft 客户协议 Azure 信用 (](/azure/billing/billing-mca-check-azure-credits-balance) 文章) \
 [查看 Microsoft 客户协议发票](/azure/cost-management-billing/understand/review-customer-agreement-bill) (文章) \
 [Microsoft 客户协议计费帐户入门 (](/azure/billing/billing-mca-overview) 文章) 

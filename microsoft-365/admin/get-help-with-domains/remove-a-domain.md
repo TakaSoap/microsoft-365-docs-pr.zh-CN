@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 了解如何从域中删除旧域Microsoft 365将用户和组移动到另一个域或取消订阅。
-ms.openlocfilehash: 1077f7c2cec8b99581c28b177e73f9c7b32f50c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3b6bd67c8678d4be2b483865ee76574fd727cda5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164628"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370004"
 ---
 # <a name="remove-a-domain"></a>删除域
 
@@ -44,12 +44,6 @@ ms.locfileid: "60164628"
 ::: moniker range="o365-worldwide"
 
 1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>。
 
 ::: moniker-end
 
@@ -77,12 +71,6 @@ ms.locfileid: "60164628"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。
@@ -106,11 +94,6 @@ ms.locfileid: "60164628"
 1. 在管理中心，转到组 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>页面。
 
 ::: moniker-end
-::: moniker range="o365-germany"
-
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">中心</a>中，转到组 > **组** 页面。
-
-::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
@@ -132,12 +115,6 @@ ms.locfileid: "60164628"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到"设置 **域** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">"</a> 页面。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心，转到"设置 **域** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">"</a> 页面。
@@ -152,11 +129,11 @@ ms.locfileid: "60164628"
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>删除域需要多长时间？
 
-如果域未在安全组、通讯组列表、用户和通讯组等很多位置引用，Microsoft 365删除域可能需要 5 分钟Microsoft 365。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
+如果域未在很多位置（如安全组、通讯组列表、用户和组）中引用，Microsoft 365删除域可能需要 Microsoft 365 5 分钟。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
 
 如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain)。
 
-## <a name="still-need-help"></a>是否仍需要帮助？
+## <a name="still-need-help"></a>仍然需要帮助？
 
 ::: moniker range="o365-worldwide"
 
@@ -164,15 +141,6 @@ ms.locfileid: "60164628"
 > 不能从你的帐户中删除 [".onmicrosoft.com"](../setup/domains-faq.yml) 域。 删除域时，用户帐户将恢复为".onmicrosoft.com"地址作为主 SMTP/UserprincipalName。
 
 仍然无法正常工作？你的域可能需要手动删除。[请致电我们](../../business-video/get-help-support.md)，让我们打理一切！
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!NOTE]
-> 无法从帐户 [中删除".onmicrosoft.de"](../setup/domains-faq.yml) 域。 删除域时，用户帐户将恢复为".onmicrosoft.de"地址作为主 SMTP/UserprincipalName。
-
-仍然无法正常工作？你的域可能需要手动删除。[请致电我们](../../business-video/get-help-support.md?view=o365-germany&preserve-view=true)，让我们打理一切！
 
 ::: moniker-end
 
@@ -189,6 +157,6 @@ ms.locfileid: "60164628"
 
 [域常见问题](../setup/domains-faq.yml) （文章）
 
-[切换到适用于Microsoft 365计划的不同 (](../../commerce/subscriptions/switch-to-a-different-plan.md)文章) 
+[切换到其他业务Microsoft 365， (](../../commerce/subscriptions/switch-to-a-different-plan.md)文章) 
 
 [取消订阅 (](../../commerce/subscriptions/cancel-your-subscription.md) 文章) 

@@ -14,20 +14,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-description: 查找有关使用 Microsoft 365 企业远程工作的最新操作方法信息、提示、资源和Microsoft 365。
-ms.openlocfilehash: bff6e8b54262ab4bc71f219ccfe401877269d0ee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 查找有关使用 Microsoft 365 的企业远程工作的最新操作方法信息、提示、资源和Microsoft 365。
+ms.openlocfilehash: 2fb23bc74034bc3f8f27bc6aa06bf42311ee8bb8
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158726"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370844"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>通过远程工作为小型企业提供支持
 
 随着企业适应让员工进行远程工作并虚拟与客户联系的需求不断增加，此网站将针对使用 Microsoft 365 的企业远程工作的最新操作方法信息、提示、资源和指南进行更新。
 
 > [!TIP]
-> 没有Microsoft_Teams？ 注册 1 年后Microsoft Teams，Office 6 个月的 (免费订阅) 。 获取本文中介绍的技术作为优惠的一部分。 有关详细信息，请参阅免费试用 [1 个月](https://aka.ms/SMBTeamsOffer)。
+> 没有Microsoft_Teams？ 注册 1 年后Microsoft Teams 6 Office可免费 (1 个月的) 。 获取本文中介绍的技术作为优惠的一部分。 有关详细信息，请参阅免费试用 [1 个月](https://aka.ms/SMBTeamsOffer)。
 
 ## <a name="remote-work-for-your-small-business-video"></a>针对小型企业的远程工作 (视频) 
 
@@ -35,9 +35,9 @@ ms.locfileid: "60158726"
 
 ## <a name="transitioning-to-a-remote-workforce"></a>过渡到远程工作人员
 
-根据新型冠状病毒 (新型冠状病毒) ，许多企业所有者发现自己具有完全远程的工作人员。 下面是转换到远程工作安全、安全且高效的可操作操作。
+根据新型冠状病毒 (新型冠状病毒) 爆发，许多企业所有者发现自己具有完全远程的工作人员。 下面是转换到远程工作安全、安全且高效的可操作操作。
 
-有关详细信息，请参阅[小型企业中的Microsoft Teams入门](../../business-video/get-started-teams-small-business.md)。
+有关详细信息，请参阅[小型企业中的Microsoft Teams入门](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937)。
 
 已订阅但需要设置？ 请参阅[Microsoft 365小型企业培训](../../business-video/index.yml)。
 
@@ -49,7 +49,7 @@ ms.locfileid: "60158726"
 
 通过会议与员工、客户或合作伙伴一起主持音频、视频和Microsoft Teams。
 
-有关详细信息，请参阅主持 [联机会议和](../../business-video/start-and-pin-chats.md) 与 [员工和客户聊天](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92)。
+有关详细信息，请参阅主持 [联机会议和](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92) 与 [员工和客户聊天](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92)。
 
 ### <a name="store-and-share-files"></a>存储和共享文件
 
@@ -61,7 +61,7 @@ ms.locfileid: "60158726"
 
 邀请员工和客户加入团队，以便可以直接与他们在一个地方进行协调和协作。
 
-有关详细信息，请参阅创建[团队和](../../business-video/team-with-guests.md)[启用来宾访问](/MicrosoftTeams/guest-access)。
+有关详细信息，请参阅创建[团队和](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)[启用来宾访问](/MicrosoftTeams/guest-access)。
 
 ## <a name="manage-and-secure-your-business-to-run-remotely"></a>管理和保护企业远程运行
 
@@ -81,13 +81,13 @@ ms.locfileid: "60158726"
 
 ### <a name="more-for-admins-and-partners"></a>更多适用于管理员和合作伙伴
 
-适用于 Microsoft 365 Business 的技术文档中心使用新的安全远程工作指南进行更新。
+适用于 Microsoft 365 Business 的技术文档中心使用新的安全远程工作指南进行了更新。
 
 有关详细信息，请参阅Microsoft 365 [Business 资源](/microsoft-365/business)。
 
 ## <a name="need-to-ask-a-question"></a>需要提问？
 
-在管理员[Teams论坛或](https://answers.microsoft.com/msteams/forum)Office[论坛中提问](https://answers.microsoft.com)。
+在管理员[Teams或](https://answers.microsoft.com/msteams/forum)管理员Office[中提问](https://answers.microsoft.com)。
 
 > [!NOTE]
-> 本文和视频中的大多数任务都可以通过订阅以前Microsoft 365 商业基础版 (完成，Office 365 商业协作版) 一些需要高级订阅。
+> 本文和视频中的大部分任务都可以通过订阅之前Microsoft 365 商业基础版 (完成，Office 365 商业协作版) 一些需要高级订阅。
