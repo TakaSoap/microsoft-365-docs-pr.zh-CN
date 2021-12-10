@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 393f58020880c6e69813e536cc692590ed1a8368
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 3f59b381e74dee32a438722b09044570bf8d870e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883097"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165818"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>事件时间线 - 危险和漏洞管理
 
@@ -29,7 +29,7 @@ ms.locfileid: "60883097"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
@@ -51,7 +51,7 @@ ms.locfileid: "60883097"
 
 ### <a name="exposure-score-and-microsoft-secure-score-for-devices-graphs"></a>设备曝光分数和 Microsoft 安全分数图
 
-在危险和漏洞管理仪表板中，将鼠标悬停在"曝光分数"图上，查看当天影响设备的顶部软件漏洞事件。 将鼠标悬停在 Microsoft 设备安全分数图上可查看影响分数的新安全配置评估。
+在危险和漏洞管理仪表板中，将鼠标悬停在曝光分数图上，查看当天影响设备的顶部软件漏洞事件。 将鼠标悬停在 Microsoft 设备安全分数图上可查看影响分数的新安全配置评估。
 
 如果没有影响你的设备或你的设备分数的事件，则不会显示任何事件。
 
@@ -118,7 +118,7 @@ ms.locfileid: "60883097"
 
 ## <a name="view-event-timelines-in-software-pages"></a>在软件页面中查看事件时间线
 
-若要打开软件页面，请选择事件>在 ("相关组件"部分选择超链接软件名称 Visual Studio) 如 Visual Studio 2017）。 [详细了解软件页面](tvm-software-inventory.md#software-pages)
+若要打开软件页面，请选择事件>在 (称为"相关组件"的部分中选择超链接软件名称 (如 Visual Studio 2017) 。 [详细了解软件页面](tvm-software-inventory.md#software-pages)
 
 将显示一个完整的页面，其中包含特定软件的所有详细信息。 将鼠标悬停在图形上以查看该特定软件的事件时间线。
 

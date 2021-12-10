@@ -15,19 +15,20 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 75e17dbeff38fd7e40c9a8f22217407773981c96
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: bd5b88c5d43f2ec20c200ee55458e2ef204775ae
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111815"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164150"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>优化 ASR 规则部署和检测
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)。
@@ -47,11 +48,11 @@ ms.locfileid: "61111815"
 
 选择 **转到攻击面管理** \> **报告** \> **攻击面减少规则** \> **添加排除** 项。 然后，你可以导航到门户的其他Microsoft 365 Defender部分。
 
-![在攻击面减少规则页面中的添加排除项选项卡Microsoft 365 Defender门户。](images/secconmgmt_asr_m365exlusions.png)<br>
-Microsoft 365 Defender *门户中攻击面减少规则页中的"添加排除项"选项卡*
+![Microsoft 365 Defender门户中攻击面减少规则页中的"添加Microsoft 365 Defender选项卡。](images/secconmgmt_asr_m365exlusions.png)<br>
+Microsoft 365 Defender ***门户** 中攻击面减少规则页中的"添加排除项Microsoft 365 Defender选项卡*
 
 > [!NOTE]
-> 若要访问Microsoft 365 Defender门户，您需要一个 Microsoft 365 E3 或 E5 许可证以及一个在 Azure Active Directory 上具有特定角色的帐户。 [阅读所需的许可证和权限](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+> 若要访问Microsoft 365 Defender门户，您需要一个 Microsoft 365 E3 或 E5 许可证以及一个在 Azure Active Directory 上具有特定角色Azure Active Directory。 [阅读所需的许可证和权限](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
 有关在门户中部署 ASR 规则<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender，</a>请参阅监视和管理[ASR 规则部署和检测](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
 

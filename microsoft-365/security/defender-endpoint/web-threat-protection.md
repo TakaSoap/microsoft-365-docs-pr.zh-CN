@@ -1,7 +1,7 @@
 ---
 title: 保护组织免受 Web 威胁
 description: 了解 Microsoft Defender for Endpoint 中的 Web 保护及其如何保护你的组织。
-keywords: Web 保护， Web 威胁防护， Web 浏览， 安全性， 网络钓鱼， 恶意软件， 攻击， 网站， 网络保护， Edge， Internet Explorer， Chrome， Firefox， Web 浏览器
+keywords: Web 保护， Web 威胁防护， Web 浏览， 安全， 网络钓鱼， 恶意软件， 攻击， 网站， 网络保护， Edge， Internet Explorer， Chrome， Firefox， Web 浏览器
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,24 +15,25 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a0c80ca78503cef9d7acce25cf2f18255c0c9f6b
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 398fdb8bbfb5bba59fce83e24e7d6cdd496e90bd
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883385"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168338"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>保护组织免受 Web 威胁
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)。
 
-Web 威胁防护是 [Defender](web-protection-overview.md) for Endpoint 中的 Web 保护的一部分。 它 [使用网络保护](network-protection.md) 保护你的设备免受 Web 威胁。 通过集成 Microsoft Edge Chrome 和 Firefox 等热门第三方浏览器，Web 威胁防护无需 Web 代理即可阻止 Web 威胁，并可在设备离开或位于本地时保护设备。 Web 威胁防护会停止对钓鱼网站、恶意软件矢量、攻击网站、不受信任的或低信誉网站以及自定义指示器列表中阻止 [的网站的访问](manage-indicators.md)。
+Web 威胁防护是 [Defender](web-protection-overview.md) for Endpoint 中的 Web 保护的一部分。 它 [使用网络保护](network-protection.md) 保护你的设备免受 Web 威胁。 通过与 chrome Microsoft Edge Firefox 等热门第三方浏览器集成，Web 威胁防护无需 Web 代理即可阻止 Web 威胁，并可在设备离开或位于本地时保护设备。 Web 威胁防护会停止对钓鱼网站、恶意软件矢量、攻击网站、不受信任的或低信誉网站以及自定义指示器列表中阻止 [的网站的访问](manage-indicators.md)。
 
 > [!NOTE]
 > 设备可能需要一小时才能接收新的自定义指示器。
@@ -43,7 +44,7 @@ Web 保护使用网络保护在 web 和第三Microsoft Edge Web 浏览器上提�
 
 若要在设备上打开网络保护，请运行：
 
-- 在 Web 网络保护下编辑 Defender for Endpoint **&，** 以在部署或重新部署网络保护之前启用网络保护。 [了解如何查看和分配 Defender for Endpoint 安全基线](configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline)
+- 编辑 Web 网络保护下的 Defender for Endpoint **&，** 以在部署或重新部署网络保护之前启用网络保护。 [了解如何查看和分配 Defender for Endpoint 安全基线](configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline)
 - 使用 Intune 设备配置、SCCM、组策略或 MDM 解决方案打开网络保护。 [阅读有关启用网络保护的更多信息](enable-network-protection.md)
 
 > [!NOTE]
@@ -68,7 +69,7 @@ Web 保护使用网络保护在 web 和第三Microsoft Edge Web 浏览器上提�
    - 若要防止用户绕过有关潜在恶意站点的警告，将阻止 **恶意站点访问** 设置为 **"是"。**
    - 若要防止用户绕过警告并下载未经验证的文件，请设置阻止 **未经验证的文件下载** tl **是**。 
 
-6. 在"**范围标记**"选项卡上，如果组织正在使用范围标记，请选择 **"+ 选择范围标记**"，然后选择"下一步 **"。**  (如果未使用范围标记，请选择"下一步".) 若要了解有关范围标记的信息，请参阅使用基于角色的访问控制[ (RBAC) 和](/mem/intune/fundamentals/scope-tags)适用于分布式 IT 的范围标记。 
+6. 在"**范围标记**"选项卡上，如果组织正在使用范围标记，请选择 **"+ 选择范围标记**"，然后选择"下一步 **"。**  (如果不使用范围标记，请选择"下一步".) 若要了解有关范围标记的信息，请参阅使用基于角色的访问控制[ (RBAC) ](/mem/intune/fundamentals/scope-tags)和适用于分布式 IT 的范围标记。 
 
 7. 在"**分配**"选项卡上，指定要接收 Web 保护策略的用户和设备，然后选择"下一步 **"。**
 
@@ -80,4 +81,4 @@ Web 保护使用网络保护在 web 和第三Microsoft Edge Web 浏览器上提�
 - [Web 威胁防护功能](web-threat-protection.md)
 - [监视 web 安全性](web-protection-monitoring.md)
 - [响应 web 威胁](web-protection-response.md)
-- [网络保护功能](network-protection.md)
+- [网络保护](network-protection.md)

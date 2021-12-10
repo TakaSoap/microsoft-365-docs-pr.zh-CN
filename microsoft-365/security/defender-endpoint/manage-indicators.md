@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1c15b0fe82e2d6dbadce7fe7a5efaa73c6b45940
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: c241438e2cd9a0a5bd9bb018d671340c22ef7d0d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110915"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163538"
 ---
 # <a name="create-indicators"></a>创建指示器
 
@@ -28,14 +28,14 @@ ms.locfileid: "61110915"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 >
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)。
 
-ICS (泄露) 是每个终结点保护解决方案中的重要功能。 此功能使 SecOps 能够设置检测指标列表和阻止 (防护和响应) 。
+ICS (泄露) 是每个终结点保护解决方案中的重要功能。 此功能使 SecOps 能够设置指示器列表，用于检测并阻止 (防护和响应) 。
 
 创建定义实体的检测、防护和排除的指示器。 你可以定义要采取的操作以及何时应用该操作的持续时间，以及要应用该操作的设备组的范围。
 
@@ -59,7 +59,7 @@ EnableFileHashComputation 设置在文件扫描期间计算证书和文件 IoC �
 
 - 允许 – 允许 IoC 在你的设备上运行。
 - 审核 – IoC 运行时将触发警报。
-- 警告 - IoC 将提示一条警告，提示用户仅 (适用于云应用的 Defender) 
+- 警告 - IoC 将提示一条警告，提示用户 (Defender for Cloud Apps only) 
 - 阻止执行 - 不允许运行 IoC。
 - 阻止和修正 - 不允许运行 IoC，并且修正操作将应用于 IoC。
 
@@ -72,7 +72,7 @@ EnableFileHashComputation 设置在文件扫描期间计算证书和文件 IoC �
 - [IP 地址、URL/域](indicator-ip-domain.md)
 - [证书](indicator-certificates.md)
 
-下表确切显示了每个指标的可用操作 (IoC) 类型：
+下表确切显示了每个指标在 IoC 类型 (可用的) 操作：
 
 | IoC 类型 | 可用操作 |
 |:---|:---|

@@ -1,6 +1,6 @@
 ---
 title: 软件清单危险和漏洞管理
-description: 适用于终结点的 Microsoft Defender 软件清单危险和漏洞管理显示软件中检测到的漏洞数量。
+description: 适用于终结点的 Microsoft Defender 软件清单危险和漏洞管理显示了软件中检测到的漏洞数量。
 keywords: 危险和漏洞管理， Microsoft Defender for Endpoint， Microsoft Defender for Endpoint 软件清单， Microsoft Defender for Endpoint threat & 漏洞管理， Microsoft Defender for Endpoint threat & 漏洞管理 software inventory， Microsoft Defender for Endpoint tvm software inventory， tvm software inventory
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,27 +16,27 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 63af06a3d7565ede3fb703ccb5aeaacc77d3612d
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: b0e32fe31b69149bac4bac1796a0260763e9a078
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883829"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164234"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>软件清单 - 危险和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
-危险和漏洞管理软件清单是组织中具有正式公共平台枚举的已知软件列表 ([CPE) 。 ](https://nvd.nist.gov/products/cpe) 没有正式 CPE 的软件产品没有发布漏洞。 它还包括供应商名称、漏洞数量、威胁和公开的设备数量等详细信息。
+危险和漏洞管理软件清单是组织中具有 CPE 正式通用平台枚举的已知[ () 。 ](https://nvd.nist.gov/products/cpe) 没有正式 CPE 的软件产品没有发布漏洞。 它还包括供应商名称、漏洞数量、威胁和公开的设备数量等详细信息。
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>如何工作
 
 在发现领域，我们正在利用在 Microsoft Defender 中负责检测和漏洞评估的同一组信号，用于终结点检测和 [响应功能](overview-endpoint-detection-response.md)。
 
@@ -97,20 +97,20 @@ ms.locfileid: "60883829"
 可以通过几种不同的方式查看软件页面：
 
 - "软件清单">在 **>"选择打开** 软件"页中选择软件名称
-- ["安全建议">](tvm-security-recommendation.md) 在>选择"打开软件" **页** 中的"选择建议"
-- [事件时间线页面](threat-and-vuln-mgt-event-timeline.md)> 选择事件>在 ("相关组件"部分中选择超链接软件名称 Visual Studio) 如 Visual Studio 2017
+- ["安全建议">](tvm-security-recommendation.md) 在>"选择 **打开** 软件"页中选择建议
+- [事件时间线页面](threat-and-vuln-mgt-event-timeline.md)> 选择事件>在 ("相关组件"部分中选择超链接软件名称 (如 Visual Studio 2017) 
 
  将显示一个完整的页面，其中包含特定软件的所有详细信息和以下信息：
 
-- 包含供应商信息的侧面板、组织中软件的普遍程度 (包括其安装的设备数量、未修补) 的公开设备、是否可用和攻击，以及你的曝光评分。
+- 包含供应商信息的侧面板、组织中软件的普遍程度 (包括其安装的设备数量，以及未修补) 的公开设备、是否可用和攻击，以及你的曝光评分。
 - 显示漏洞和错误配置的数量和严重性的数据可视化。 此外，使用公开的设备数的图形。
 - 显示以下信息的选项卡：
   - 针对所识别的漏洞的相应安全建议。
-  - 发现的漏洞的已命名的 CVEs。
+  - 发现的漏洞的命名 CVEs。
   - 安装了软件的设备 (设备名称、域、操作系统等) 。
   - 软件版本列表 (包括安装版本的设备数、发现的漏洞数以及已安装设备的名称) 。
 
-    :::image type="content" alt-text="2017 Visual Studio软件示例页面，包含软件详细信息、漏洞、公开的设备等。" source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
+    :::image type="content" alt-text="Visual Studio 2017 的软件示例页面，包含软件详细信息、漏洞、公开的设备等。" source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
 
 ## <a name="report-inaccuracy"></a>报告 inaccuracy
 

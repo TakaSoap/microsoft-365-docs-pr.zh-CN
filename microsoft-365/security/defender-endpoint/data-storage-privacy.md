@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a435dc0f0fb1858edcc86291c0c4c7b5ef7c565f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7e6e530406b4211c62d315f26b8f956cf6bf1bde
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166548"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165062"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint 数据存储和隐私
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
@@ -34,7 +35,7 @@ ms.locfileid: "60166548"
 本部分涵盖有关 Defender for Endpoint 的隐私和数据处理的一些最常见的问题。
 
 > [!NOTE]
-> 本文档介绍与 Defender for Endpoint 相关的数据存储和隐私详细信息。 有关适用于终结点的 Defender 以及其他产品和服务（如 Microsoft Defender 防病毒 和 Windows）的信息，请参阅 Microsoft[隐私声明](https://go.microsoft.com/fwlink/?linkid=827576)。 有关详细信息[，Windows](https://go.microsoft.com/fwlink/?linkid=827577)隐私常见问题解答。
+> 本文档介绍与 Defender for Endpoint 相关的数据存储和隐私详细信息。 有关适用于终结点的 Defender 以及其他产品和服务（如 Microsoft Defender 防病毒 和 Windows）的信息，请参阅[Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=827576)。 有关详细信息[，Windows隐私](https://go.microsoft.com/fwlink/?linkid=827577)常见问题解答。
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Microsoft Defender for Endpoint 会收集哪些数据？
 
@@ -42,11 +43,11 @@ Microsoft Defender for Endpoint 将在特定于服务的客户专用和隔离租
 
 收集的信息包括文件数据 (如文件名、大小和哈希) 、进程数据 (正在运行的进程、哈希) 、注册表数据、网络连接数据 (主机 IP 和端口) 以及设备详细信息 (例如设备标识符、名称和操作系统版本) 。
 
-Microsoft 安全地存储此数据Microsoft Azure根据 Microsoft 隐私实践和 Microsoft 信任[中心策略进行维护](https://go.microsoft.com/fwlink/?linkid=827578)。
+Microsoft 安全地存储此数据Microsoft Azure Microsoft 隐私做法和[Microsoft 信任中心策略进行维护](https://go.microsoft.com/fwlink/?linkid=827578)。
 
 此数据使 Defender for Endpoint 能够：
 
-- 主动识别组织中 IA (IA) 攻击指标
+- 主动识别组织中 IA (攻击) IA
 - 如果检测到可能的攻击，生成警报
 - 为安全操作提供与来自网络的威胁信号相关的设备、文件和 URL 的视图，使你可以调查和探索网络上是否存在安全威胁。
 
@@ -86,7 +87,7 @@ Defender for Endpoint 在Microsoft Azure、英国或美国的数据中心运行�
 
 ## <a name="is-data-shared-with-other-customers"></a>数据是否与其他客户共享？
 
-不需要。 客户数据与其他客户隔离，不共享。 但是，有关由 Microsoft 处理产生的数据（不包含任何特定于客户的数据）的见解可能会与其他客户共享。 每个客户只能访问从其自己的组织收集的数据和 Microsoft 提供的一般数据。
+否。 客户数据与其他客户隔离，不共享。 但是，有关由 Microsoft 处理产生的数据（不包含任何特定于客户的数据）的见解可能会与其他客户共享。 每个客户只能访问从其自己的组织收集的数据和 Microsoft 提供的一般数据。
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Microsoft 将存储我的数据多久？ 什么是 Microsoft 的数据保留策略？
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6bae723100c0b465265c51e18bc60855ef41e6c2
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: db844645088806551231b8d26b9825340cf3a5ab
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554248"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164474"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>适用于终结点资源的有用 Microsoft Defender
 
@@ -27,7 +27,7 @@ ms.locfileid: "60554248"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -49,9 +49,9 @@ ms.locfileid: "60554248"
 
 ## <a name="threat-vulnerability-management"></a>威胁漏洞管理
 
-- [终结点威胁防御&漏洞管理现已公开提供！](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Threat-amp-Vulnerability-Management-now-publicly-available/ba-p/460977)
+- [终结点威胁防御&漏洞管理现已公开可用！](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Threat-amp-Vulnerability-Management-now-publicly-available/ba-p/460977)
 
-## <a name="operational"></a>可操作
+## <a name="operational"></a>操作
 
 - [黄金小时重做 - 定义成功安全操作的指标](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/The-Golden-Hour-remake-Defining-metrics-for-a-successful/ba-p/782014)
 

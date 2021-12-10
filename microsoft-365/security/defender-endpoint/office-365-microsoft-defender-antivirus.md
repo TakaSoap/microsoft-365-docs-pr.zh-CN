@@ -1,5 +1,5 @@
 ---
-title: 更好地结合 - Microsoft Defender 防病毒和Office 365 (包括OneDrive) - 更好地防御勒索软件和网络威胁
+title: 更好地结合 - Microsoft Defender 防病毒和Office 365 (包括OneDrive) - 更好地防止勒索软件和网络威胁
 description: Office 365，包括OneDrive，与 Microsoft Defender 防病毒 一起。 阅读本文可了解更多信息。
 keywords: windows defender， 防病毒， office 365， onedrive， 还原， 勒索软件
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d674e5d2724dc25652ddb8d9c0aa8c528665df39
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: fbbac9e2b2c30748158cf245cdf55aa6a1a82333
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129536"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163382"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>一起更得心防万一：Microsoft Defender 防病毒软件和 Office 365
 
@@ -31,19 +31,20 @@ ms.locfileid: "61129536"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender 防病毒
 - Microsoft 365
 
 您可能已经知道：
 
-- **Microsoft Defender 防病毒保护你的Windows** 设备免受软件威胁，如病毒、恶意软件和间谍软件。 Microsoft Defender 防病毒完整、持续的保护，内置Windows 10 Windows 11，随时可供使用。 [Microsoft Defender 防病毒下一代保护](./microsoft-defender-antivirus-in-windows-10.md)。 
+- **Microsoft Defender 防病毒保护你的Windows** 设备免受软件威胁，如病毒、恶意软件和间谍软件。 Microsoft Defender 防病毒完整的持续保护，内置于Windows 10 Windows 11中，随时可供使用。 [Microsoft Defender 防病毒是下一代保护](./microsoft-defender-antivirus-in-windows-10.md)。 
 
-- **Office 365包括反病毒、反垃圾邮件和反恶意软件保护**。 借助 Office 365 订阅，你可以获取高级电子邮件和日历、Office 应用、1 TB 云存储空间 (OneDrive) 以及所有设备的高级安全性。 这适用于家庭用户和业务用户。 如果你是业务用户，并且你的组织正在使用 Office 365 E5，则你通过 Microsoft Defender Office 365使用 Office 365 抵御[威胁](/microsoft-365/security/office-365-security/protect-against-threats)。
+- **Office 365包括反病毒、反垃圾邮件和反恶意软件保护**。 借助 Office 365 订阅，你可以获取高级电子邮件和日历、Office 应用、1 TB 的云存储空间 (OneDrive) ，以及所有设备的高级安全性。 这适用于家庭用户和业务用户。 如果你是企业用户，并且你的组织正在使用 Office 365 E5，则通过 Microsoft Defender 为 Office 365 保护免受威胁[Office 365。](/microsoft-365/security/office-365-security/protect-against-threats)
 
-- OneDrive，包含在Office 365中，使您可以联机存储文件和文件夹，并 **共享它们，因为你认为合适**。 你可以与用户协作 (工作或有趣的) ，以及存储在OneDrive。 还可以在 PC、手机和平板电脑设备上访问 (设备中的) 。 [管理共享OneDrive。](/OneDrive/manage-sharing)
+- OneDrive，包括在Office 365中，使您可以联机存储文件和文件夹，并 **共享它们，因为你认为合适**。 你可以与用户协作 (工作或有趣的) ，以及存储在OneDrive。 还可以在 PC、手机和平板电脑设备上访问 (设备中的) 。 [管理共享OneDrive。](/OneDrive/manage-sharing)
 
-**但是，你是否知道将安全原因与Microsoft Defender 防病毒一起Office 365？** 有两种支持方式：
+**但是，你是否知道将安全原因与Microsoft Defender 防病毒一** Office 365？ 有两种支持方式：
 
  1. [你获得勒索软件保护和恢复](#ransomware-protection-and-recovery)。
 
@@ -85,7 +86,7 @@ Microsoft Defender for Office 365集成了 Microsoft Defender for Endpoint 意�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/70b4d256-46fb-481f-ad9b-921ef5fd7bed]
 
-## <a name="want-to-learn-more-see-these-resources"></a>想要了解详细信息？ 请参阅以下资源：
+## <a name="want-to-learn-more-see-these-resources"></a>想要了解详细信息？ 请查看以下资源：
 
 - [OneDrive](/onedrive)
 

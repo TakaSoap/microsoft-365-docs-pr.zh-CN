@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb9a45313c099ba30537bde061ef0f2a90012e9b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 84893d7f015ec354bc27ac706c00e864705a42e5
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553624"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165662"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的威胁防护报告
 
@@ -27,7 +27,7 @@ ms.locfileid: "60553624"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)。
@@ -44,7 +44,7 @@ ms.locfileid: "60553624"
 2|警报摘要
 
 ## <a name="alert-trends"></a>警报趋势
-默认情况下，警报趋势显示以最后一整天结尾的 30 天时段的警报信息。 为了更好地了解组织中出现的趋势，您可以通过调整所显示的时间段来微调报告期间。 若要调整时间段，请从下拉列表选项中选择一个时间范围：
+默认情况下，警报趋势显示以最后一整天结尾的 30 天时段的警报信息。 为了更好地了解组织中发生的趋势，您可以通过调整所显示的时间段来微调报告期间。 若要调整时间段，请从下拉列表选项中选择一个时间范围：
 
 - 30 天
 - 3 个月
@@ -72,7 +72,7 @@ ms.locfileid: "60553624"
 - **检测源**：显示有关传感器和检测技术的信息，这些传感器和检测技术提供 Microsoft Defender for Endpoint 用于触发警报的数据。
 - **威胁类别**：显示触发警报的威胁或攻击活动类型，指示安全操作可能重点关注的区域。
 - **严重性**：显示警报的严重性级别，指示威胁对组织的潜在共同影响以及解决这些威胁所需的响应级别。
-- **状态**：显示警报的解析状态，指示手动警报响应的效率以及自动修正 (（如果启用) ）。
+- **状态**：显示警报的解析状态，指示手动警报响应的效率以及自动修正 (如果已启用) 。
 - 分类 **&** 确定：显示如何在解决时对警报进行分类，是将它们分类为实际威胁 (真正的警报) 还是错误检测 (错误警报) 。 这些卡片还显示已解决警报的确定，提供其他见解，如找到的实际威胁类型或错误检测到的合法活动。
 
 ## <a name="filter-data"></a>筛选数据

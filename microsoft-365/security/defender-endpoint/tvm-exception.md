@@ -1,6 +1,6 @@
 ---
 title: 创建和查看安全建议例外 - 危险和漏洞管理
-description: 创建并监视安全建议在安全危险和漏洞管理。
+description: 在安全报告中创建和监视安全建议危险和漏洞管理。
 keywords: Microsoft Defender for Endpoint tvm 修正， Microsoft Defender for Endpoint tvm， 危险和漏洞管理， 威胁 & 漏洞管理， 威胁 & 漏洞管理 修正， tvm 修正 intune， tvm 修正 sccm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b837199972f225a44406c7e18a57ae417363d15d
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: a3986d44027824f2ba9ca508567d518cce270450
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883469"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61160470"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>创建和查看安全建议例外 - 危险和漏洞管理
 
@@ -29,7 +29,7 @@ ms.locfileid: "60883469"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -39,7 +39,7 @@ ms.locfileid: "60883469"
 
 为建议创建例外时，建议在例外持续时间结束之前不会处于活动状态。 建议状态将更改为"完全 **异常** "或 **"部分** 异常 (组设置) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 只有具有"异常处理"权限的用户才能管理异常 (包括创建或取消) 。 [详细了解 RBAC 角色](user-roles.md)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "60883469"
 
 #### <a name="filtered-views"></a>筛选的视图
 
-如果你已按任意页面的设备组进行危险和漏洞管理，则只有经过筛选的设备组将显示为选项。
+如果你已按任意页面的设备组进行筛选危险和漏洞管理，则只有经过筛选的设备组将显示为选项。
 
 这是要按设备组筛选任意页面的危险和漏洞管理按钮：
 
@@ -125,7 +125,7 @@ ms.locfileid: "60883469"
 
 ## <a name="view-impact-after-exceptions-are-applied"></a>应用例外后查看影响
 
-在"安全推荐"页中，选择"自定义列"，并选中"在异常发生后公开 ("和"在) 后影响 ("复选框 **) 。**
+在"安全推荐页上，选择"自定义列"，并选中"在异常发生后公开 ("和"在) 后影响 (设备 **) "。**
 
 ![显示自定义列选项。](images/tvm-after-exceptions.png)
 

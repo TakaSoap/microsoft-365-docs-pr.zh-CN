@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3d39f2de9d1dcfed8b81e2c4aba2350796005daa
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 3fc6d5a8b8fa7889f65f21111b3af82e124516b4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883637"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168086"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>管理移动设备和虚拟机 （VM） 的更新
 
@@ -29,7 +29,8 @@ ms.locfileid: "60883637"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 移动设备和 VM 可能需要进行更多配置，以确保性能不会受更新影响。
 
@@ -45,7 +46,7 @@ ms.locfileid: "60883637"
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>选择在没有 WSUS 连接的情况下在移动计算机上加入 Microsoft 更新
 
-当运行 Microsoft Defender 防病毒 未连接到企业网络或没有 WSUS 连接时，可以使用 Microsoft 更新使这些移动设备上的安全智能保持最新。
+当运行 Microsoft Defender 防病毒 的移动设备未连接到企业网络或没有 WSUS 连接时，可以使用 Microsoft 更新使安全智能保持最新。
 
 这意味着，即使将 WSUS 设置为覆盖 Microsoft 更新， (Microsoft 更新) 保护更新也可以传递到设备。
 
@@ -75,7 +76,7 @@ ms.locfileid: "60883637"
 
 ### <a name="manually-opt-in-to-microsoft-update"></a>手动选择加入 Microsoft 更新
 
-1. 在 **Windows选择** 加入 **&** 更新"中打开"更新"和"安全设置"。
+1. 在 **Windows选择** 加入 **&** 更新"中打开"更新""安全设置"。
 
 2. 选择 **"高级选项** "。
 

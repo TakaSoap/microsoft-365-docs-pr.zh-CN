@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 09bd7b0318169e69e91a511c9d27033c5aeb0efa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54c0f7f67b62216eae4264c8e7a55c0e34c82fb0
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151962"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166118"
 ---
 # <a name="manage-automation-folder-exclusions"></a>管理自动化文件夹排除
 
@@ -27,7 +27,7 @@ ms.locfileid: "60151962"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)。
@@ -56,9 +56,9 @@ ms.locfileid: "60151962"
     - Folder
     - 扩展
     - 文件名
-    - 说明
+    - Description
 
-4. 单击“**保存**”。
+4. 单击 **“保存”**。
 
 > [!NOTE]
 > 用于收集或检查已排除文件的 Live Response 命令将失败，并出现错误："已排除文件"。 此外，自动调查将忽略排除的项目。

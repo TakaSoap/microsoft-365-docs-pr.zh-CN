@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 805f61d5a7a00056f204b77c4550672ac17982b7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1c86dad2f303df149921efab87d3ffd026e0f93d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199641"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165770"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>通过威胁分析跟踪和响应新出现的威胁
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -95,7 +95,7 @@ _威胁分析报告的概述部分_
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>分析员报告：从 Microsoft 安全研究人员获取专家见解
 
-转到" **分析员报告** "部分，阅读详细的专家撰写。 大多数报告都提供攻击链的详细说明，包括映射到 MITRE ATT&CK 框架的策略和技术、详细的建议列表和强大的 [威胁](advanced-hunting-overview.md) 搜寻指南。
+转到" **分析员报告** "部分，阅读详细的专家撰写。 大多数报告都提供攻击链的详细说明，包括映射到 MITRE ATT&CK 框架的策略和技术、详尽的建议列表和强大的 [威胁](advanced-hunting-overview.md) 搜寻指南。
 
 [详细了解分析员报告](threat-analytics-analyst-reports.md)
 
@@ -110,7 +110,7 @@ _威胁分析报告的概述部分_
   - PUA 保护 (可能不需要) 应用程序
   - 实时保护
 
-本节中的缓解信息包含来自 危险和漏洞管理[](next-gen-threat-and-vuln-mgt.md)的数据，其中还提供了报告中各个链接的详细深化信息。
+本节中的缓解信息包含来自 危险和漏洞管理[](next-gen-threat-and-vuln-mgt.md)的数据，它还提供报告中各个链接的详细向下钻取信息。
 
 ![威胁分析报告的缓解部分的图像。](images/ta-mitigations.png)
 

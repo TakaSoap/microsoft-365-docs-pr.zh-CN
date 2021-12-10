@@ -16,19 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a63587500952687ea182d5d2162432195f91ea05
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 2705eb4e3010a06c707ad071a907da90dc0ec1fc
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554200"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165362"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>合作伙伴通过 Microsoft Defender 终结点 API 访问
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**适用于：** 
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
@@ -36,14 +37,14 @@ ms.locfileid: "60554200"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-此页面介绍如何创建一个Azure Active Directory (Azure AD) 应用程序，以代表你的客户以编程方式访问 Microsoft Defender for Endpoint。
+此页面介绍如何创建一Azure Active Directory (Azure AD) 应用程序，以代表你的客户以编程方式访问 Microsoft Defender for Endpoint。
 
 Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 这些 API 将帮助你基于 Microsoft Defender for Endpoint 功能自动执行数据流创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 通常，你将需要执行以下步骤来使用 API：
 
 - 创建 **多租户租户** Azure AD应用程序。
-- 获取 (同意) 客户管理员同意你的应用程序访问所需的 Defender for Endpoint 资源。
+- 获取 (授权) 客户管理员同意你的应用程序访问所需的 Defender for Endpoint 资源。
 - 使用此应用程序获取访问令牌。
 - 使用令牌访问 Microsoft Defender for Endpoint API。
 
@@ -69,7 +70,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 4. 允许应用程序访问 Microsoft Defender for Endpoint，并为其分配完成集成所需的最低权限集。
 
-   - 在应用程序页面上，选择 **"API** 权限""添加我的组织使用的权限 \>  \> API"> **WindowsDefenderATP"，** 然后选择 **"WindowsDefenderATP"。**
+   - 在应用程序页面上，选择 **"API** 权限""添加我的组织使用的权限 API"> \>  \>  **WindowsDefenderATP"，** 然后选择 **"WindowsDefenderATP"。**
 
    - **注意***：WindowsDefenderATP* 不会显示在原始列表中。 开始在文本框中写入其名称，以查看其显示。
 
@@ -96,7 +97,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 3. 向应用程序添加密码。
 
-   - 选择 **"&** 密码"，将说明添加到密码，然后选择"添加 **"。**
+   - 选择 **"&** 密码"，将说明添加到密码，然后选择"**添加"。**
 
     **重要** 提示：单击"添加" **后，复制生成的机密值**。 离开后将无法检索！
 
@@ -126,7 +127,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
    ![同意的图像。](images/app-consent-partner.png)
 
-   此外，你将需要请求客户提供其租户 ID，并保存它供以后在获取令牌时使用。
+   此外，你将需要要求客户提供其租户 ID，并保存它供以后在获取令牌时使用。
 
 6. **完成！** 已成功注册应用程序！ 有关令牌获取和验证，请参阅以下示例。
 
@@ -172,7 +173,7 @@ return $token
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
-- 复制/粘贴应用程序中的以下代码 (不要忘记更新三个变量：、 和 `tenantId` `appId` `appSecret`) 
+- 复制/粘贴应用程序中的以下代码 (请不要忘记更新三个变量：、 `tenantId` `appId` 和 `appSecret`) 
 
     ```console
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
@@ -195,12 +196,12 @@ return $token
 ### <a name="using-curl"></a>使用百度
 
 > [!NOTE]
-> 以下过程假设计算机上Windows的一部分
+> 以下过程假设计算机上Windows安装有适用于该示例的一部分
 
 - 打开命令窗口
 - 将CLIENT_ID设置为 Azure 应用程序 ID
 - 将CLIENT_SECRET设置为 Azure 应用程序密码
-- 将TENANT_ID设置为想要使用应用程序访问 Microsoft Defender for Endpoint 应用程序的客户的 Azure 租户 ID
+- 将TENANT_ID设置为想要使用你的应用程序访问 Microsoft Defender for Endpoint 应用程序的客户的 Azure 租户 ID
 - 运行以下命令：
 
 ```curl
@@ -227,8 +228,8 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>使用令牌访问 Microsoft Defender for Endpoint API
 
 - 选择你想要使用的 API，有关详细信息，请参阅支持的 Microsoft [Defender 终结点 API](exposed-apis-list.md)
-- 将你发送到"Bearer {token}"的 Http 请求中的授权标头 (Bearer 是授权方案) 
-- 令牌的过期时间为 1 小时， (使用相同的令牌发送多个请求) 
+- 将你发送的 Http 请求中的 Authorization 标头设置为"Bearer {token}" (Bearer 是授权方案) 
+- 令牌的过期时间为 1 小时 (你可以使用相同的令牌发送多个请求) 
 
 - 发送请求以使用请求获取警报列表 **的示例C#**
 

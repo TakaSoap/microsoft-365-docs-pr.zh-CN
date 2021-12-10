@@ -1,7 +1,7 @@
 ---
 title: 通过模拟攻击体验 Microsoft Defender (MDE) 体验
-description: 试用你的Microsoft 365 Defender试验实验室或试验环境。
-keywords: Microsoft 365 Defender试用版，请尝试Microsoft 365 Defender，评估Microsoft 365 Defender，Microsoft 365 Defender实验室，Microsoft 365 Defender试点， 网络安全性， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+description: 试用Microsoft 365 Defender或试验环境。
+keywords: Microsoft 365 Defender试用版，请尝试Microsoft 365 Defender、评估Microsoft 365 Defender、Microsoft 365 Defender评估实验室Microsoft 365 Defender 试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,14 +21,18 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 93e5b0cb5a152868749a68d34ac476660b41cc92
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 832d7095f635c51aefe17b1fa82f9e3b42e9e2d4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152402"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163982"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-mde-through-simulated-attacks"></a>通过模拟攻击体验 Microsoft Defender (MDE) 体验
+
+**适用于：**
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+
 
 > [!TIP]
 >
@@ -45,7 +49,7 @@ ms.locfileid: "60152402"
 
 ## <a name="run-a-simulation"></a>运行模拟
 
-1. 在 **帮助** \> **模拟&** 教程中，选择要模拟的可用攻击方案：
+1. 在 \> **帮助模拟&** 教程中，选择要模拟的可用攻击方案：
 
    - **方案 1：文档丢弃后门** - 模拟传递社交工程的诱使文档。 文档启动一个专门设计的后门，该后门为攻击者提供控制。
 
@@ -77,12 +81,12 @@ ms.locfileid: "60152402"
 
 ### <a name="do-it-yourself-attack-scenarios"></a>自己动手攻击方案
 
-如果你要查找预先模拟，可以使用我们的"自己执行" [攻击方案](https://securitycenter.windows.com/tutorials)。 这些脚本安全、有记录且易于使用。 这些方案将反映 Defender for Endpoint 功能，并演练调查体验。
+如果你要查找预先模拟，可以使用我们的"自己执行" [攻击方案](https://securitycenter.windows.com/tutorials)。 这些脚本安全、有记录且易于使用。 这些方案将反映适用于终结点的 Defender 功能并演练调查体验。
 
 > [!NOTE]
 > 与测试设备的连接使用 RDP 完成。 请确保防火墙设置允许 RDP 连接。
 
-1. 连接你的设备，然后通过选择"攻击模拟 **"连接。**
+1. 连接你的设备，通过选择""选项运行攻击 **连接。**
 
     ![测试设备的连接按钮的图像。](images/test-machine-table.png)
 
@@ -138,4 +142,4 @@ ms.locfileid: "60152402"
 
 运行模拟后，我们鼓励你演练实验室进度栏，并探索 Microsoft Defender **for Endpoint 触发了自动调查和修正**。 查看功能收集和分析的证据。
 
-使用丰富的查询语言和原始遥测通过高级搜寻来搜寻攻击证据，并查看威胁分析中记录一些全球威胁。
+使用丰富的查询语言和原始遥测通过高级搜寻来搜寻攻击证据，并查看威胁分析中记录的世界范围威胁。

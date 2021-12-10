@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8da23203a7ab2f8faf86603f6a68700b65cc83e5
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: fb60bbd8172c54a7fa6ef9a5c0dce708f5506e3a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111551"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165686"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender for Endpoint 和其他 Microsoft 解决方案
 
@@ -27,7 +27,7 @@ ms.locfileid: "61111551"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -65,7 +65,7 @@ Microsoft Defender for Cloud Apps 利用 Microsoft Defender for Endpoint 信号�
 [Defender for Office 365](/office365/securitycompliance/office-365-atp)通过 保险箱 链接、保险箱 附件、高级防钓鱼和欺骗智能功能帮助保护你的组织免受电子邮件或文件中恶意软件的攻击。 Microsoft Defender for Office 365 和 Microsoft Defender for Endpoint 之间的集成使安全分析师能够前往上游调查攻击的入口点。 通过威胁情报共享，可以包含和阻止攻击。
 
 > [!NOTE]
-> Defender for Office 365最近 30 天内的事件显示数据。 对于警报，defender for Office 365基于第一个活动时间显示数据。 此后，数据将不再在 Defender for Office 365。
+> Defender for Office 365显示最近 30 天内的事件数据。 对于警报，defender for Office 365 数据根据第一次活动时间显示。 此后，数据将不再在 Defender for Office 365。
 
 ### <a name="skype-for-business"></a>Skype for Business
 

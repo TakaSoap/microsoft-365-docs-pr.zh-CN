@@ -16,24 +16,25 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c8992e6f5f4d4d37de06862675f999891fc4853c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 7f9f51e9ce31881d66ca8a8e72fa128c458229aa
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111635"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166166"
 ---
 # <a name="device-control-for-macos"></a>macOS 的设备控件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 macOS 的设备控件具有以下先决条件：
 
@@ -70,7 +71,7 @@ macOS 的设备控件具有以下先决条件：
 
 ### <a name="customize-url-target-for-notifications-raised-by-device-control"></a>自定义由设备控件引发通知的 URL 目标
 
-例如，如果已就位的设备控制策略在设备上强制执行 (例如，对可移动媒体设备的访问受限) ，则向用户显示一条通知。
+在设备上强制执行你已放置的设备控制策略时 (例如，对可移动媒体设备的访问权限受限) ，则向用户显示一条通知。
 
 ![设备控制通知。](images/mac-device-control-notification.png)
 

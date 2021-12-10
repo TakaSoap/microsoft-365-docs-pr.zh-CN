@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3bc58ec36775065b03ab368b65b833bc4ccaad5c
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: 6a587c0de131cd92ee3126688702763bac8dd340
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217074"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165590"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>解决订阅和门户访问问题
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)。
@@ -37,14 +38,14 @@ ms.locfileid: "60217074"
 
 ## <a name="no-subscriptions-found"></a>未找到订阅
 
-如果在访问 Microsoft 365 Defender收到"未找到订阅"消息，这意味着用于登录门户的用户的 Azure Active Directory (Azure AD) 没有 Microsoft Defender 终结点许可证。
+如果在访问Microsoft 365 Defender收到"未找到订阅"消息，则意味着用于登录Azure Active Directory (Azure AD) 登录门户的 Azure Active Directory (Azure AD) 没有 Microsoft Defender for Endpoint 许可证。
 
 可能的原因：
 
 - Windows E5 和 Office E5 许可证是分开的。
-- 许可证已购买，但没有预配到此 Azure AD 实例。
+- 许可证已购买，但没有预配到此Azure AD实例。
   - 这可能是许可证预配问题。
-  - 可能是您无意中将许可证预配到与用于Microsoft Azure AD身份验证的许可证不同。
+  - 这可能是您无意中将许可证预配到与Microsoft Azure AD身份验证所使用的许可证不同的证书。
 
 对于这两种情况，你应联系 Microsoft 支持部门，地址为 [适用于终结点的一](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) 般 Microsoft Defender 或 [批量许可证支持](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)。
 

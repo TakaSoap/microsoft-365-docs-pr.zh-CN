@@ -1,6 +1,6 @@
 ---
-title: 在Windows桌面中载入多会话设备
-description: 阅读本文中有关在 Azure 虚拟Windows加入多会话设备
+title: 在Windows Azure 虚拟桌面中载入多会话设备
+description: 阅读本文中有关在 Azure 虚拟桌面Windows多会话设备载入
 keywords: Azure 虚拟桌面， WVD， microsoft defender， 终结点， 载入
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -15,24 +15,24 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0681144d09a430d0f4e4a2349f24ba442382cd14
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1d8f11d6d3dc3301444b7e188c220683ac7015d2
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110567"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168074"
 ---
-# <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>在Windows桌面中载入多会话设备
+# <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>在Windows Azure 虚拟桌面中载入多会话设备
 
 6 分钟阅读
 
-应用于：
-
+**适用于：**
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows Azure 虚拟桌面和 AVD (上运行的多) 
 
 Microsoft Defender for Endpoint 支持监视 VDI 和 Azure 虚拟桌面会话。 根据组织的需求，可能需要实现 VDI 或 Azure 虚拟桌面会话，以帮助员工从非托管设备、远程位置或类似方案访问公司数据和应用。 通过 Microsoft Defender for Endpoint，你可以监视这些虚拟机的异常活动。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 熟悉非永久性 [VDI 的注意事项](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 虽然[Azure 虚拟](/azure/virtual-desktop/overview)桌面不提供非持久性选项，但它确实提供了使用黄金 Windows 映像的方法，可用于预配新主机和重新部署计算机。 这会增加环境中的变化，从而影响在 Microsoft Defender 终结点门户中创建和维护的条目，从而可能降低安全分析师的可见性。
 
@@ -53,7 +53,7 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 有几种方法可以载入 WVD 主机：
 
-- 在黄金映像中运行脚本 (在启动期间从共享) 运行脚本。
+- 在黄金映像中运行脚本 (在启动期间从共享) 运行。
 - 使用管理工具运行脚本。
 - 通过与 [Microsoft Defender for Cloud 集成](azure-server-integration.md)
 
@@ -69,7 +69,7 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 此方案使用位于中央的脚本并使用基于域的组策略运行它。 还可以将脚本放在黄金映像中，并使用相同的方式运行它。
 
-##### <a name="download-the-windowsdefenderatponboardingpackagezip-file-from-the-windows-defender-security-center"></a>从WindowsDefenderATPOnboardingPackage.zip安全中心Windows Defender文件
+##### <a name="download-the-windowsdefenderatponboardingpackagezip-file-from-the-windows-defender-security-center"></a>从安全WindowsDefenderATPOnboardingPackage.zip下载Windows Defender文件
 
 1. 打开 VDI 配置包.zip文件 (WindowsDefenderATPOnboardingPackage.zip) 
 
@@ -78,15 +78,15 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
     1. 在 **"部署方法"** 字段中，选择"非永久性终结点的 VDI 载入脚本"。
     1. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 **OptionalParamsPolicy** 的文件夹以及 **WindowsDefenderATPOnboardingScript.cmd** 和 **Onboard-NonPersistentMachine.ps1**。
+2. 将文件.zip文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 **OptionalParamsPolicy** 的文件夹以及 **WindowsDefenderATPOnboardingScript.cmd** 和 **Onboard-NonPersistentMachine.ps1。**
 
 ##### <a name="use-group-policy-management-console-to-run-the-script-when-the-virtual-machine-starts"></a>当虚拟机启动时，使用组策略管理控制台运行脚本
 
-1. 打开 GPMC (组策略管理) ，右键单击要配置的组策略对象 (GPO) 然后单击 **编辑。**
+1. 打开组策略管理控制台 (GPMC) ，右键单击要配置的组策略对象 (GPO) 然后单击 **编辑。**
 
 2. 在组策略管理编辑器中，转到计算机 **配置** \> **首选项** \> **控制面板设置**。
 
-3. 右键单击 **计划任务**，单击 **新建**，**然后单击立即任务** (至少Windows 7) 。
+3. 右键单击 **计划任务**，单击 **新建**，**然后单击即时任务** (至少Windows 7) 。
 
 4. 在打开的任务窗口中，转到常规 **选项卡** 。在" **安全选项"** 下 **，单击"更改用户或组"，** 然后键入"系统"。 单击 **"检查名称"，** 然后单击"确定"。 NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。
 

@@ -1,5 +1,5 @@
 ---
-title: 为自定义设置配置Microsoft Defender 防病毒替代
+title: 配置本地覆盖以用于Microsoft Defender 防病毒设置
 description: 启用或禁用用户在本地更改 Microsoft Defender AV 中的设置。
 keywords: 本地覆盖， 本地策略， 组策略， gpo， 锁定， 合并， 列表
 ms.prod: m365-security
@@ -16,29 +16,30 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: aec2283b1d55e395f0080d412a3ea0a836cc8b39
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: ec916b008ddb3e0669111efe2bd493c709327296
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882329"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168254"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>阻止或允许用户在本地修改Microsoft Defender 防病毒策略设置
 
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 默认情况下，Microsoft Defender 防病毒组策略对象部署到网络中终结点的设置将阻止用户在本地更改设置。 在某些实例中可以更改此情况。
 
-例如，可能需要允许某些用户组 (，例如安全研究人员和威胁) 进一步控制他们使用的终结点上的单个设置。
+例如，可能需要允许某些用户组 (例如安全研究人员和威胁) 进一步控制他们使用的终结点上的单个设置。
 
-## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>为自定义设置配置Microsoft Defender 防病毒替代
+## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>配置本地覆盖以用于Microsoft Defender 防病毒设置
 
 这些策略的默认设置是 **Disabled**。
 
-如果设置为"已启用"，则终结点上的用户可以使用[Windows 安全中心](microsoft-defender-security-center-antivirus.md)应用、本地组策略设置和 PowerShell cmdlet 对关联的设置进行更改， (适当的) 。 
+如果设置为"启用"，则终结点上的用户可以使用[Windows 安全中心](microsoft-defender-security-center-antivirus.md)应用、本地组策略设置和 PowerShell cmdlet 对关联的设置进行更改， (适当的) 。 
 
 下表列出了每个替代策略设置以及关联的功能或设置的配置说明。
 
@@ -48,7 +49,7 @@ ms.locfileid: "60882329"
 
 2. 在组 **策略管理编辑器中** ，转到计算机 **配置，** 然后单击 **管理模板**。
 
-3. 展开树以Windows **组件**  >  **Microsoft Defender 防病毒，** 然后在本文的设置表中 (指定的位置) 。 
+3. 展开树以 **Windows组件**  >  **Microsoft Defender 防病毒，** 然后选择本文的设置表中 (指定的位置) 。 
 
 4. 双击 **下表中指定的** 策略设置，将选项设置为所需的配置。 单击 **"确定**"，然后对任何其他设置重复上述操作。
 
@@ -58,10 +59,10 @@ ms.locfileid: "60882329"
 
 <br/><br/>
 
-| 位置 | Setting | 文章 |
+| 位置 | 设置 | 文章 |
 |---|---|---|---|
 | MAPS |配置向 Microsoft MAPS 报告的本地设置替代|[启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md) |
-| Quarantine|为从隔离文件夹中删除项目配置本地设置替代|[配置扫描修正](configure-remediation-microsoft-defender-antivirus.md) |
+| 隔离|为从隔离文件夹中删除项目配置本地设置替代|[配置扫描修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 实时保护|配置本地设置覆盖以监视您的计算机上的文件和程序活动|[启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | 实时保护|配置本地设置覆盖以监视传入和传出文件活动 | [启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | 实时保护|配置用于扫描所有下载的文件和附件的本地设置替代|[启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |

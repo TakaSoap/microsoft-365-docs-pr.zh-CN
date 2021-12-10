@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 01914a99c627237568cadbc5b5a3f6205ac3ce55
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 774d7df5a42fb84b4bb6a29bd2c1945059e33ea8
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963403"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168135"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Microsoft 365 Defender 门户概述
 
@@ -30,7 +30,7 @@ ms.locfileid: "60963403"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -54,20 +54,20 @@ Enterprise安全团队可以使用Microsoft 365 Defender监视和协助响应潜
  ![Microsoft Defender 终结点门户。](images/mdatp-portal-overview.png)
 
 > [!NOTE]
-> 仅在你的设备将恶意软件相关的检测Microsoft Defender 防病毒反恶意软件的默认实时保护产品。
+> 仅在你的设备将恶意软件相关的检测Microsoft Defender 防病毒作为默认的反恶意软件实时保护产品。
 
 可以使用所有部分中可用的菜单选项在门户中导航。 请参阅下表，了解每个部分的说明。
 
 领域|说明
 :---|:---
-**(1) 导航窗格** | 使用导航窗格在仪表板、事件、设备列表、**警报** 队列、**自动** 调查、高级搜寻、报告、合作伙伴 &  **API、** 威胁 &**漏洞** 管理、评估和教程、**服务** 运行状况、配置管理和 设置 **之间移动**。   选择导航窗格顶部的水平线以显示或隐藏它。
+**(1) 导航窗格** | 使用导航窗格在仪表板、事件、**设备** 列表、**警报** 队列、**自动** 调查、高级搜寻、**报告**、合作伙伴 &  **API、** 威胁 &**漏洞** 管理、评估和教程、**服务** 运行状况、配置管理和 设置之间 **移动**。 选择导航窗格顶部的水平线以显示或隐藏它。
 **仪表板** | 访问活动的自动调查、活动警报、自动调查统计信息、处于风险中的设备、处于风险中的用户、具有传感器问题的设备、服务运行状况、检测源和每日设备报告仪表板。
 **事件** | 查看已聚合为事件的警报。
 **设备列表** | 显示已载入 Defender for Endpoint 的设备列表、有关它们的一些信息及其曝光和风险级别。
 **警报队列** | 查看从组织中设备生成的警报。
 **自动调查** | 显示网络中已进行的自动调查、触发警报、每个调查的状态以及其他详细信息，如调查的开始时间以及调查的持续时间。
 **高级搜寻** | 借助高级搜寻，可以使用功能强大的搜索和查询工具在组织中主动搜寻和调查。
-**报告** | 查看详细介绍威胁防护、设备运行状况和合规性、Web 保护和漏洞的图形。
+**报表** | 查看详细介绍威胁防护、设备运行状况和合规性、Web 保护和漏洞的图形。
 **合作伙伴和 API** | 查看受支持的合作伙伴连接，以增强平台的检测、调查和威胁智能功能。 还可以查看连接的应用程序、API 资源管理器、API 使用情况概述和数据导出设置。
 **威胁&漏洞管理** | 查看你的 Microsoft 设备安全分数、曝光分数、公开的设备、易受攻击的软件，并针对最高安全建议采取措施。
 **评估和教程** | 管理测试设备、攻击模拟和报告。 在试用环境中通过指导性演练了解并体验 Defender for Endpoint 功能。

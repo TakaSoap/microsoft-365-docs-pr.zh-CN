@@ -17,19 +17,19 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e631bc8f35a49ab87237ddfb952af00c68645e9
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 49ee01e5bd9cb71b685bc8dcbe290f13f5a3e915
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109895"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164498"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 载入
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -50,10 +50,10 @@ ms.locfileid: "61109895"
 
 本主题指导用户：
 
-- 步骤 1：在 MEM 中通过创建组将设备载入Microsoft Endpoint Manager () 分配配置
+- 步骤 1：在 MEM 中通过创建组将设备载入服务Microsoft Endpoint Manager () 分配配置
 - 步骤 2：使用 Microsoft Endpoint Manager
 
-此载入指南将指导你完成在使用应用时需要执行Microsoft Endpoint Manager：
+本载入指南将指导你完成在使用应用时需要执行Microsoft Endpoint Manager：
 
 - [标识目标设备或用户](#identify-target-devices-or-users)
   - 创建用户Azure Active Directory设备 (组) 
@@ -81,7 +81,7 @@ ms.locfileid: "61109895"
 在此部分中，我们将创建一个测试组来分配配置。
 
 > [!NOTE]
-> Intune 使用Azure Active Directory (Azure AD) 组来管理设备和用户。 作为 Intune 管理员，你可以设置组以满足你的组织需求。
+> Intune 使用 Azure Active Directory (Azure AD) 组来管理设备和用户。 Intune 管理员可以设置组以适合组织需求。
 >
 > 有关详细信息，请参阅[添加用于组织用户和设备的组](/mem/intune/fundamentals/groups-add)。
 
@@ -134,7 +134,7 @@ ms.locfileid: "61109895"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal4 的图像。](images/58dcd48811147feb4ddc17212b7fe840.png)
 
-3. 在 **"平台"下，Windows 10"和"稍后"，选择"配置文件 - 终结点检测和响应>创建"。**
+3. 在 **"平台"下，Windows 10"和"更高版本"，然后选择"配置文件 - 终结点检测和响应>创建"。**
 
 4. 输入名称和说明，然后选择"下一 **步"。**
 
@@ -189,7 +189,7 @@ ms.locfileid: "61109895"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal13 的图像。](images/a7d738dd4509d65407b7d12beaa3e917.png)
 
-5. 在"**配置设置"页**：设置云保护Microsoft Defender 防病毒 (排除项、Real-Time保护和修正) 。
+5. 在"**配置设置"页**：设置云保护Microsoft Defender 防病毒 (排除项、Real-Time保护和修正策略) 。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal14 的图像。](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
@@ -300,10 +300,10 @@ ms.locfileid: "61109895"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal30 的图像。](images/45cefc8e4e474321b4d47b4626346597.png)
 
-9. 选择 **查看并创建>创建**。
+9. 选择 **"审阅"和"创建>创建"。**
 
     > [!div class="mx-imgBorder"]
-    > ![portal31 Microsoft Endpoint Manager图像。](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
+    > ![Microsoft Endpoint Manager portal31 的图像。](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
 
 10. 查看策略。
 

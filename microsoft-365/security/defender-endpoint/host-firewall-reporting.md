@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中托管防火墙报告
-description: 在门户中承载和查看Microsoft 365 Defender报告。
+description: 在门户中托管和查看Microsoft 365 Defender报告。
 keywords: windows defender， 防火墙
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,32 +15,31 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 843a359459eef01d6c7aae35e924a462e537d34e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e8124e9f2445ad2bf2b9fd6f5c56869d5feaaa07
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110183"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164462"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中托管防火墙报告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-如果你是管理员，你现在可以托管防火墙报告到 Microsoft 365 Defender[门户](https://security.microsoft.com)。 此功能使您能够从集中Windows 10查看 Windows 10、Windows 11、Windows Server 2019 和 Windows Server 2022 防火墙报告。
+如果你是管理员，你现在可以托管防火墙报告到 Microsoft 365 Defender[门户](https://security.microsoft.com)。 利用此功能，你可以从集中Windows 10 Windows 11、Windows Server 2019 和 Windows Server 2022 防火墙报告。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 必须运行 Windows 10 Windows 11 Server 2019 Windows 或 Windows Server 2022。
+- 必须运行 Windows 10 server 2019 Windows 11 Windows Server 2022 或 Windows Server 2022。
 - 若要将设备载入到 Microsoft Defender for Endpoint 服务，请参阅 [此处](onboard-configure.md)。
-- 若要<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>门户开始接收数据，必须启用高级安全防火墙Windows Defender审核事件：
+- 若要<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>门户开始接收数据，必须为高级安全防火墙Windows Defender审核事件： 
   - [审核筛选平台数据包丢弃](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [审核筛选平台连接](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
-- 使用组策略对象编辑器、本地安全策略或命令启用这些事件auditpol.exe命令。 有关详细信息，请参阅 [此处](/windows/win32/fwp/auditing-and-logging)。
+- 使用组策略对象编辑器、本地安全策略或策略命令启用这些事件auditpol.exe命令。 有关详细信息，请参阅 [此处](/windows/win32/fwp/auditing-and-logging)。
   - 两个 PowerShell 命令是：
     - **auditpol /set /subcategory："Filtering Platform Packet Drop" /failure：enable**
     - **auditpol /set /subcategory："Filtering Platform Connection" /failure：enable**
@@ -67,7 +66,7 @@ Ring0 Preview 期间支持以下方案。
 > [!div class="mx-imgBorder"]
 > !["主机防火墙报告"页。](\images\host-firewall-reporting-page.png)
 
-也可以访问这些报告，方式为，访问位于"防火墙阻止的入站连接) 底部的"报告安全报告设备" ("部分  >    >  。 
+也可以访问这些报告，方式为访问位于"防火墙阻止的入站连接 (底部的) 报告安全报告  >    >  **设备**"部分。
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>从"连接被阻止的计算机"到设备
 

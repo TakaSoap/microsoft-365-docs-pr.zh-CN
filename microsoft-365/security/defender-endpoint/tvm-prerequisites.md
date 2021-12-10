@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d3684d8b13020605fbca20e67093c28d3e782da2
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 343a5fd1033a6d954c7cd62e2558a4b401f69b20
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881740"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165542"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>权限&的先决条件 - 危险和漏洞管理
 
@@ -27,7 +27,7 @@ ms.locfileid: "60881740"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -43,7 +43,7 @@ ms.locfileid: "60881740"
 
   > 发布 | 安全更新 KB 编号和链接
   > :---|:---
-  > Windows 10版本 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) [和 KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+  > Windows 10版本 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) 和 [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
   > Windows 10版本 1803 | [KB4493464](https://support.microsoft.com/help/4493464) [和 KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
   > Windows 10版本 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
   > Windows 10版本 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
@@ -59,7 +59,7 @@ ms.locfileid: "60881740"
 
 ## <a name="relevant-permission-options"></a>相关权限选项
 
-1. 使用分配Microsoft 365 Defender全局管理员角色的帐户登录到安全门户。
+1. 使用分配Microsoft 365 Defender全局管理员角色的帐户登录门户。
 2. 在导航窗格中，选择"设置 >**终结点>角色"。**
 
 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。

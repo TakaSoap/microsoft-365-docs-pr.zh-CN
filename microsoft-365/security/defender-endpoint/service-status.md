@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 728d152d8c755464669d59e11746566472acd737
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ab79b6e2aa1653e6b2987434fcfdc49e1050b630
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553857"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165890"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>检查 Microsoft Defender 终结点服务运行状况
 
@@ -27,7 +27,8 @@ ms.locfileid: "60553857"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-servicestatus-abovefoldlink)。
 
@@ -54,7 +55,7 @@ ms.locfileid: "60553857"
 - 后续步骤
 - 预期的解决时间
 
-问题解决时，页面上将反映问题进度的更新。 你将看到有关更新的信息，例如更新的估计解决时间或下一步步骤。
+当问题解决时，页面上将反映问题进度的更新。 你将看到有关更新的信息，例如更新的估计解决时间或下一步步骤。
 
 当问题解决时，该问题将记录在"状态 **历史记录"** 选项卡中。
 

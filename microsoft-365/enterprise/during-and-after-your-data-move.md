@@ -16,23 +16,23 @@ f1.keywords:
 - NOCSH
 description: 数据移动是 Microsoft 将租户的服务和关联数据移动到新的数据中心地理位置时发生的后端操作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 68c73d8931f0f1813ebecfa0415b037f91065626
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1fcb62897f1feabe0ca8c447c51e61c7d752138c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189149"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164630"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
-数据移动是一种后端操作，对最终用户的影响最小。 当 Microsoft 将租户的每个服务和关联数据移动到新的数据中心地理位置时，无需任何操作。 数据传输和验证会提前在后台进行，对用户的影响最小。
+数据移动是后端操作，对最终用户的影响最小。 当 Microsoft 将租户的每个服务和关联数据移动到新的数据中心地理位置时，无需任何操作。 数据传输和验证会提前在后台进行，对用户的影响最小。
   
 > [!NOTE]
 > 对于每个服务，移动在不同的时间发生。 因此，你将在不同时间看到描述的每个服务的缩减功能。 
   
-观看Microsoft 365消息中心，确认何时移动每个 Exchange Online、SharePoint Online 和 Teams 聊天服务。 如下表所示，注册期结束后最多可能需要 24 个月才能完成将核心客户数据移动到新的数据中心地理位置。   
+查看Microsoft 365消息中心，确认移动每个Exchange Online、SharePoint Online 和Teams聊天服务完成。 如下表所示，注册期结束后最多可能需要 24 个月才能完成将核心客户数据移动到新的数据中心地理位置。   
 
-|**具有注册国家/地区的客户**|**完成的所有移动**|
+| 具有注册国家/地区的客户 | 完成的所有移动 |
 |:-----|:-----|
 |澳大利亚、新西兰、斐济  <br/> |2022 年 7 月 1 日  <br/> |
 |日本  <br/> |2022 年 7 月 1 日  <br/> |
@@ -47,6 +47,7 @@ ms.locfileid: "60189149"
 |挪威  <br/> |2022 年 11 月 1 日  <br/> |
 |德国  <br/> |2023 年 5 月 1 日  <br/> |
 |巴西  <br/> |2023 年 6 月 1 日  <br/> |
+|瑞典  <br/> |2024 年 6 月 1 日  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -54,12 +55,12 @@ ms.locfileid: "60189149"
   
 ### <a name="open-shared-folder-in-outlook-web-access"></a>在 Web Access 中打开Outlook文件夹"
 
-某些用户从另一个邮箱打开共享邮件文件夹 (该邮箱文件夹是用户使用"共享文件夹"功能在) Outlook Web Access 中拥有读取或写入权限的邮件文件夹。 下表介绍了在邮箱移动过程中对共享文件夹的访问权限的工作方式。 请注意，对共享邮箱具有完全权限的用户可以在移动过程中使用 Outlook Web Access 打开邮箱。 
+某些用户从另一个邮箱打开共享邮件文件夹 (该邮箱文件夹具有对) Web Access 中的 Outlook 的读取或写入权限（使用"共享文件夹"功能）。 下表介绍了在邮箱移动过程中对共享文件夹的访问权限的工作方式。 请注意，对共享邮箱具有完全权限的用户可以在移动过程中使用 Outlook Web Access 打开邮箱。 
   
-|**配置**|**说明**|
+| 配置 | Description |
 |:-----|:-----|
 |用户对另一个邮箱具有邮箱文件夹权限  <br/> |可能有限。  <br/> 如果用户 A 和邮箱 B 在租户移动过程中不在同一地理位置，则如果用户 A 仅对邮箱 B 中的特定文件夹具有权限，则用户 A 无法打开 Outlook Web Access 中的邮箱 B 文件夹。  <br/> 若要添加共享文件夹，请在左侧导航面板中右键单击用户名，然后选择"**添加共享文件夹"。**  <br/> |
-|对另一个邮箱具有完全邮箱权限的用户  <br/> |完全支持。  <br/> 如果用户 A 具有对邮箱 B 的"完全访问"权限，则用户 A 可以单击 Outlook Web Access 中左侧导航面板中的共享文件夹，打开一个显示邮箱 B 的窗口。 用户可以在移动过程中使用 Outlook Web Access 打开共享邮箱，而没有任何负面影响。 此限制仅适用于邮箱中的文件夹级共享。           |
+|对另一个邮箱具有完全邮箱权限的用户  <br/> |完全支持。  <br/> 如果用户 A 具有对邮箱 B 的"完全访问"权限，则用户 A 可以单击 Outlook Web Access 中左侧导航面板中的共享文件夹，打开一个显示邮箱 B 的窗口。 用户可以在移动过程中使用 Outlook Web Access 打开共享邮箱，而不会造成任何负面影响。 此限制仅适用于邮箱中的文件夹级共享。           |
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 

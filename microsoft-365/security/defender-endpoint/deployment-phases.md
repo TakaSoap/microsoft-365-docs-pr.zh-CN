@@ -17,19 +17,19 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6b7c9c4389506e59998609f7d960016abf694ebc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8463d4b9c330d65ad36d60f20e93fbf00d95959e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190529"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164534"
 ---
 # <a name="deployment-phases"></a>部署阶段
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
@@ -68,7 +68,7 @@ ms.locfileid: "60190529"
 
 ****
 
-|功能|说明|
+|功能|Description|
 |---|---|
 |终结点检测和响应|终结点检测和响应功能已到位，以检测、调查和响应入侵尝试和主动泄露。|
 |下一代保护|为了进一步巩固你的网络的安全外围，Microsoft Defender for Endpoint 使用下一代保护来捕获所有类型的新兴威胁。|
@@ -81,7 +81,7 @@ ms.locfileid: "60190529"
 
 ### <a name="in-scope"></a>在作用域内
 
-- 使用 Microsoft Endpoint Manager 和 Microsoft Endpoint Manager将终结点载入服务并配置功能
+- 使用 Microsoft Endpoint Manager Microsoft Endpoint Manager将终结点载入服务并配置功能
 - 启用 Defender 终结点检测和响应 (EDR) 功能
 - 启用适用于终结点保护平台的 Defender (EPP) 功能
   - 下一代保护

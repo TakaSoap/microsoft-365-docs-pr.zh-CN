@@ -1,7 +1,7 @@
 ---
 title: 使用安全修复危险和漏洞管理
-description: 修正通过安全建议发现的安全缺陷，并根据需要在安全危险和漏洞管理。
-keywords: Microsoft Defender for Endpoint tvm 修正， Microsoft Defender for Endpoint tvm， 危险和漏洞管理， 威胁 & 漏洞管理， 威胁& 漏洞管理修正， tvm 修正 intune， tvm 修正 sccm
+description: 修正通过安全建议发现的安全缺陷，并根据需要在安全报告中创建危险和漏洞管理。
+keywords: Microsoft Defender for Endpoint tvm 修正， Microsoft Defender for Endpoint tvm， 危险和漏洞管理， 威胁 & 漏洞管理， 威胁 & 漏洞管理 修正， tvm 修正 intune， tvm 修正 sccm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +16,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8126021051f939a08fb0ea5ef6bd07d8f67c1662
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: c4f00e28e4dfa1c7806167c789a869be70c6fb78
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883397"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164258"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>使用安全修复危险和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,7 +40,7 @@ Microsoft Defender for Endpoint 中的 危险和漏洞管理 功能通过修正�
 
 ### <a name="enable-microsoft-intune-connection"></a>启用Microsoft Intune连接
 
-若要使用此功能，请启用Microsoft Intune连接。 在 Microsoft 365 Defender 门户中，导航到 **设置** \> **高级** \> **功能"。** 向下滚动并查找Microsoft Intune **连接**。 默认情况下，切换处于关闭状态。 打开你的 **Microsoft Intune连接****切换。**
+若要使用此功能，请启用Microsoft Intune连接。 在 Microsoft 365 Defender 门户中，导航到设置 \> **高级** \> **功能"。** 向下滚动并查找Microsoft Intune **连接**。 默认情况下，切换处于关闭状态。 打开连接 **Microsoft Intune****打开。**
 
 **注意**：如果启用了 Intune 连接，则创建修正请求时可以选择创建 Intune 安全任务。 如果未设置连接，则不显示此选项。
 
@@ -72,7 +72,7 @@ Microsoft Defender for Endpoint 中的 危险和漏洞管理 功能通过修正�
 
 ## <a name="view-your-remediation-activities"></a>查看修正活动
 
-当你从"安全建议"页提交修正请求时，它会启动修正活动。 将创建一个可在"修正危险和漏洞管理 **中** 跟踪的安全任务，并创建一个修正Microsoft Intune。
+当你从"安全建议"页提交修正请求时，它会启动修正活动。 将创建一个可在"修正危险和漏洞管理中跟踪的安全任务，并创建一个修正Microsoft Intune。
 
 如果选择"注意必需"修正选项，则没有进度栏、票证状态或截止日期，因为我们可以监视任何实际操作。
 
@@ -88,7 +88,7 @@ Microsoft Defender for Endpoint 中的 危险和漏洞管理 功能通过修正�
 使用"修正"页上的"完成者"列跟踪哪些人关闭了修正活动。
 
 - **电子邮件地址**：手动完成任务的人的电子邮件
-- **系统确认**：已修复所有设备 (任务已) 
+- **系统确认**：在已修正 (自动完成任务) 
 - **N/A：** 信息不可用，因为我们不知道此旧任务的完成情况
 
 :::image type="content" alt-text="由具有两行的列创建和完成。&quot;完成者&quot;的一行包含电子邮件示例，另一行显示系统确认。" source="images/tvm-completed-by.png":::

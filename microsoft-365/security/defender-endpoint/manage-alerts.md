@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1d4df8855e9aea643860d21b07473e82019f2323
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: d8626b256b1e0e3d6d19ab532388ab8ba1cf5c8f
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587157"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168098"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>管理 Microsoft Defender for Endpoint 警报
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -78,7 +79,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 2. 选择 **"创建抑制规则"。**
 
-    可以使用这些属性创建抑制条件。 在每种条件之间应用 AND 运算符，因此仅在满足所有条件时，才进行抑制。
+    可以使用这些属性创建抑制条件。 在每种条件之间应用 AND 运算符，因此仅在满足所有条件时才进行抑制。
 
     - 文件 SHA1
     - 文件名 - 支持通配符
@@ -113,7 +114,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 例如，团队主管可以审阅所有 **新** 警报，并决定将其分配给进行中 **队列** ，以进一步分析。
 
-或者，如果团队领导知道警报是无害的、来自与安全管理员) 无关的设备（例如属于安全管理员) 的设备）或正在通过早期警报处理，则他们可以将警报分配给已解决队列。 (
+或者，如果团队领导知道警报是无害的、来自不相关的 (（例如属于安全管理员) 的设备）或正在通过早期警报处理，则他们可以将警报分配给"已解决"队列。
 
 ## <a name="alert-classification"></a>警报分类
 

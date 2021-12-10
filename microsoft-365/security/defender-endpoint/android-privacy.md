@@ -14,17 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 185ffab8d4fb67040d11dbf8b36459b94341a0d2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 44b1cc75f5922d25d54cc32c7b48b13a36a9ac8a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176903"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164594"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 上的 Microsoft Defender for Endpoint - 隐私信息
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -43,7 +44,7 @@ Android 上的 Defender for Endpoint 从已配置的 Android 设备收集信息�
 
 ### <a name="app-information"></a>应用信息
 
-有关设备上 **恶意** Android (程序包) API 的信息，包括
+有关设备上 **恶意** Android 应用程序包 (API) 的信息，包括
 
 - 安装源
 - 存储 APK (文件路径) 位置
@@ -60,11 +61,11 @@ Android 上的 Defender for Endpoint 从已配置的 Android 设备收集信息�
 - 设备信息，如&时间、Android 版本、OEM 型号、CPU 信息和设备标识符。
 - 设备标识符是以下项之一：
   - Wi-Fi适配器 MAC 地址
-  - [Android ID](https://developer.android.com/reference/android/provider/Settings.Secure#ANDROID_ID) (由 Android 在首次启动设备时生成) 。
+  - [Android ID](https://developer.android.com/reference/android/provider/Settings.Secure#ANDROID_ID) (在首次启动设备时由 Android 生成) 。
   - 随机生成的全局唯一标识符 (GUID) 。
 
 - 租户、设备和用户信息
-  - Azure Active Directory (AD) 设备 ID 和 Azure 用户 ID：唯一标识设备，即 Azure Active Directory 中的用户。
+  - Azure Active Directory (AD) 设备 ID 和 Azure 用户 ID：唯一标识设备，分别在 Azure Active directory 中标识用户。
   - Azure 租户 ID：用于标识组织中组织的 GUID Azure Active Directory。
   - Microsoft Defender for Endpoint 组织 ID：与设备所属的企业关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定企业以及有多少企业受到影响。
   - 用户主体名称：用户的电子邮件 ID

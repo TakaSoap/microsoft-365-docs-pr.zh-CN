@@ -15,19 +15,20 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4c316c09ced5e38b51395faea7a84adccc2c2645
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 2bf43507b624cc1dae78534d579d01c1f2cef096
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962623"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167942"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -37,7 +38,7 @@ Web 内容筛选是 Microsoft Defender for Endpoint 中的 [Web](web-protection-
 
 配置跨设备组的策略以阻止某些类别。 阻止类别会阻止指定设备组内的用户访问与该类别关联的 URL。 对于未阻止的任何类别，将自动审核 URL。 用户无需中断即可访问 URL，并且你将收集访问统计信息以帮助创建更自定义的策略决策。 如果用户正在查看的页面上的元素正在调用阻止的资源，则会看到阻止通知。
 
-Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defender SmartScreen (Microsoft Edge) 和网络保护 (Chrome、Firefox、Filtering 和 Opera) 执行) 。 有关浏览器支持的信息，请参阅先决条件部分。
+Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defender SmartScreen (Microsoft Edge) 和网络保护 (Chrome、Firefox、Filtering 和 Opera) 。 有关浏览器支持的信息，请参阅先决条件部分。
 
 ## <a name="benefits-of-web-content-filtering"></a>Web 内容筛选的好处
 
@@ -51,11 +52,11 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 在尝试此功能之前，请确保满足以下要求：
 
-- 订阅包括以下各项之一：Windows 10 企业版 E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或 Microsoft Defender for Endpoint独立许可证。 
+- 你的订阅包括以下各项之一：Windows 10 企业版 E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或 Microsoft Defender for Endpoint独立许可证。 
 
 - 你有权访问 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>。
 
-- 组织的设备正在运行 Windows 10 周年更新 (版本 1607) 或更高版本，或 Windows 11最新防病毒/反恶意软件[更新](manage-updates-baselines-microsoft-defender-antivirus.md)。
+- 组织的设备正在运行 Windows 10 周年更新 (版本 1607) 或更高版本，或 Windows 11 具有最新的防病毒[/反恶意软件更新](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 - Windows Defender在组织的设备上启用 SmartScreen 和网络保护。
 
@@ -114,11 +115,11 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 **黑客** 攻击：提供资源以非法或有问题地使用计算机软件或硬件的网站，包括分发已被盗的受版权保护材料的网站。
 
-**恶意&：** 网站宣传有关可能由种族、性别、性别、年龄、年龄、身体障碍、经济状况、性取向或其他任何生活方式选择识别的任何部分具有攻击性、降级或滥用性观点的网站。
+恶意 **&：** 网站宣传有关可能由种族、性别、性别、年龄、年龄、身体残障、经济情况、性取向或其他任何生活方式选择识别的任何群体具有攻击性、降级或滥用性的想法。
 
 **非法武器**：销售非法/受控非法非法者、宣传滥用或销售相关参数的站点。
 
-**非法软件**：包含或宣传使用恶意软件、间谍软件、botnet、欺诈邮件或盗用版权&的网站。
+**非法软件**：包含或宣传使用恶意软件、间谍软件、botnet、网络钓鱼欺诈或盗用版权&的网站。
 
 **学校欺诈**：与欺骗或学校欺骗相关的网站。 
 
@@ -202,7 +203,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 ### <a name="url-category-lookup"></a>URL 类别查找
 
-若要确定网站的类别，可以使用终结点搜索 下Microsoft 365 Defender门户 () <https://security.microsoft.com> **URL** \> **搜索函数**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
+若要确定网站的类别，可以使用终结点搜索 下Microsoft 365 Defender门户 () <https://security.microsoft.com> **URL** \> **搜索功能**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
 
 ![Web 内容筛选类别查找结果的图像。](../../media/web-content-filtering-category-lookup.png)
 

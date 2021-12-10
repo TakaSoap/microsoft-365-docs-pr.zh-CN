@@ -1,7 +1,7 @@
 ---
 title: 设备的 Microsoft 安全功能分数
 description: 你的设备分数显示设备在应用程序、操作系统、网络、帐户和安全控件中的统一安全配置状态。
-keywords: Microsoft 设备安全分数， Microsoft Defender for Endpoint Microsoft 设备安全分数， 安全分数， 配置分数， 危险和漏洞管理， 安全控制， 改进机会， 一段时间的安全配置分数， 安全状况， 基线
+keywords: Microsoft 设备安全分数，Microsoft Defender for Endpoint Microsoft 设备安全分数，安全分数，配置分数，危险和漏洞管理，安全控制，改进机会，一段时间的安全配置分数，安全状况，基线
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0cd0dc7a68fc399d46b0a028753c7132df53a468
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: ccd5164839244250c5e2d908f41c35a706e0f49d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882953"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165554"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>设备的 Microsoft 安全功能分数
 
@@ -29,7 +29,7 @@ ms.locfileid: "60882953"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +38,7 @@ ms.locfileid: "60882953"
 > [!NOTE]
 > 配置分数现在是 Microsoft 危险和漏洞管理 Microsoft 安全分数的一部分。
 
-你的设备分数显示在 危险和漏洞管理[门户](tvm-dashboard-insights.md)的 Microsoft 365 Defender 仪表板中。 设备的 Microsoft 安全分数越高，你的终结点就更能够抵御网络安全威胁攻击。 它反映了你的设备跨以下类别的安全配置状态：
+你的设备分数显示在 危险和漏洞管理[门户](tvm-dashboard-insights.md)的 Microsoft 365 Defender 仪表板中。 设备的 Microsoft 安全分数越高，你的终结点就更能够抵御网络安全威胁攻击。 它反映你的设备跨以下类别的安全配置状态：
 
 - 应用程序
 - 操作系统
@@ -54,13 +54,13 @@ ms.locfileid: "60882953"
 
 更改可能需要几个小时才能反映在仪表板中。
 
-1. 在导航窗格中，转到"设置 \>  \> **终结点""常规** \> **高级功能"**
+1. 在导航窗格中，**转到"设置** \>  \> **终结点""常规** \> **高级功能"**
 
 2. 向下滚动到 **Microsoft 安全分数**，将设置切换为 **"打开"。**
 
-3. 选择 **保存首选项**。
+3. 选择“**保存首选项**”。
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>如何工作
 
 > [!NOTE]
 > Microsoft 设备安全分数当前支持通过组策略设置的配置。 由于当前部分 Intune 支持，可能通过 Intune 设置的配置可能会显示为错误配置。 如果你的组织使用 Intune 进行安全配置管理，请与 IT 管理员联系以验证实际配置状态。

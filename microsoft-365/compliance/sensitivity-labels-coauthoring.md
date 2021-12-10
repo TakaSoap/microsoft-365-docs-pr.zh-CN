@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: 8670bdf0c1cefbddadb88a08c6aecf82fc52aa80
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 57e86f1e41d3b4974a0f148c27be35adcb637714
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373064"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401410"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
@@ -66,6 +66,11 @@ ms.locfileid: "61373064"
 查看下一部分，查看支持此设置以及标签元数据的更改的应用和服务列表。
 
 ## <a name="prerequisites"></a>先决条件
+
+> [!IMPORTANT]
+> 此功能要求所有用户都具有Microsoft 365企业应用。 Office 半年企业频道更新尚不支持此共同创作功能。 如果将此更新频道用于 Office 应用，请将其更改为当前频道或每月企业频道。
+> 
+> 有关详细信息，请参阅[如何配置和管理更新通道](/deployoffice/overview-update-channels#how-to-configure-and-manage-update-channels)。
 
 启用此功能前，请确保了解以下先决条件。
 

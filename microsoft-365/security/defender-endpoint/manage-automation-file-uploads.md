@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6472414b2e27bbdf42f2b9508f2aff18387c0547
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 21e7eb17759ff6127f3d91137023c058abe2715e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152003"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166130"
 ---
 # <a name="manage-automation-file-uploads"></a>管理自动化文件上载
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automationefileuploads-abovefoldlink)。
@@ -39,7 +40,7 @@ ms.locfileid: "60152003"
 
 ## <a name="add-file-extension-names-and-attachment-extension-names"></a>添加文件扩展名和附件扩展名。
 
-1. 在导航窗格中，选择 **"设置** \>  \> **终结点规则** \> **自动上载"。**
+1. 在导航窗格中，选择 **"设置** \> **终结点** \> **规则** \> **自动上载"。**
 
 2. 在开和 **关之间切换** 内容分析 **设置**。
 

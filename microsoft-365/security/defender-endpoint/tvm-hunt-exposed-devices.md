@@ -1,7 +1,7 @@
 ---
 title: 搜索暴露的设备
-description: 了解如何危险和漏洞管理管理员、IT 管理员和 SecOps 协作。
-keywords: 适用于 Endpoint-tvm 方案的 Microsoft Defender， 适用于终结点的 Microsoft Defender， tvm， tvm 方案， 减少威胁 & 漏洞暴露， 减少威胁和漏洞， 改进安全配置， 提高 Microsoft 设备安全分数， 增加威胁 & 漏洞 Microsoft 设备安全分数， Microsoft 设备安全分数， 曝光分数， 安全控制
+description: 了解如何危险和漏洞管理安全管理员、IT 管理员和 SecOps 协作。
+keywords: 适用于 Endpoint-tvm 方案的 Microsoft Defender、适用于终结点的 Microsoft Defender、电视、电视方案、减少威胁 & 漏洞暴露、减少威胁和漏洞、改进安全配置、提高 Microsoft 设备的安全分数、增加威胁 & 漏洞 Microsoft 设备安全分数、设备 Microsoft 安全分数、曝光分数、安全控件
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a7133bcb939bc19e9a705a5be5985e76ebee4fe
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 40544ab3879acd026d7f327e63d02bdb79d00d83
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881669"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167966"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>搜寻公开的设备 - 危险和漏洞管理
 
@@ -29,7 +29,7 @@ ms.locfileid: "60881669"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

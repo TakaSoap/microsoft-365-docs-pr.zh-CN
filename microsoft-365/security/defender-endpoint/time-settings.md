@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 461b87750b40e37493ff88acfa2b4a5521494841
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8a3f98af5251a5666a42c1f39539d557322e71e9
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151814"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165632"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender时区设置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-settings-abovefoldlink)。
@@ -37,7 +38,7 @@ ms.locfileid: "60151814"
 
 时间方面对于评估和分析感知的和实际的网络攻击非常重要。
 
-网络forensic调查通常依赖时间戳来拼贴事件序列。 系统反映正确的时区设置很重要。
+网络forensic调查通常依赖时间戳来拼贴事件序列。 系统反映正确的时区设置非常重要。
 
 Microsoft Defender for Endpoint 可以显示协调世界时 (UTC) 本地时间。
 
@@ -75,7 +76,7 @@ Microsoft Defender for Endpoint 可以显示协调世界时 (UTC) 本地时间�
 
 #### <a name="internet-explorer-ie-and-microsoft-edge"></a>Internet Explorer (IE) 和 Microsoft Edge
 
-IE 和 Microsoft Edge使用"控制面板"中"时钟、语言和地区"选项中配置的"区域"设置。 
+IE 和 Microsoft Edge使用"控制面板"中"时钟、**语言** 和地区"选项中配置的"区域"设置。 
 
 #### <a name="known-issues-with-regional-formats"></a>区域格式的已知问题
 

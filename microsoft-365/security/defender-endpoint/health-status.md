@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f43905fe3487f44d3736e098c19964eaad3bf126
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12fdabadf5c2479ff65f18f7d8bc514a26f7ddc7
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206967"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164486"
 ---
 # <a name="investigate-agent-health-issues"></a>调查代理运行状况问题
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 下表提供了有关运行命令时返回的值 `mdatp health` 及其相应说明的信息。
@@ -35,10 +35,10 @@ ms.locfileid: "60206967"
 
 ****
 
-|值|说明|
+|值|Description|
 |---|---|
 |automatic_definition_update_enabled|如果启用了自动防病毒定义更新，则其参数为 True，否则为 false。|
-|cloud_automatic_sample_submission_consent|当前示例提交级别。 可以是下列值之一： <ul><li>**无**：不会向 Microsoft 提交任何可疑示例。</li><li>**保险箱：** 只有不包含个人身份信息或个人身份信息的可疑 (将自动) 提交。 这是此设置的默认值。</li><li>**全部**：所有可疑示例都提交到 Microsoft。</li></ul>|
+|cloud_automatic_sample_submission_consent|当前示例提交级别。 可以是下列值之一： <ul><li>**无**：不会向 Microsoft 提交任何可疑示例。</li><li>**保险箱：** 只有不包含个人身份信息的可疑样本 (PII) 自动提交。 这是此设置的默认值。</li><li>**全部**：所有可疑示例都提交到 Microsoft。</li></ul>|
 |cloud_diagnostic_enabled|如果启用可选诊断数据收集，则其参数为 True，否则为 false。 有关适用于终结点的 Defender 以及其他产品和服务（如 Microsoft Defender 防病毒 和 Windows）的信息，请参阅 Microsoft[隐私声明](https://go.microsoft.com/fwlink/?linkid=827576)。|
 |cloud_enabled|如果启用云保护，则其参数为 True，否则为 false。|
 |conflicting_applications|可能与 Microsoft Defender for Endpoint 冲突的应用程序列表。 此列表包括但不限于其他安全产品和其他已知导致兼容性问题的应用程序。|
@@ -56,12 +56,12 @@ ms.locfileid: "60206967"
 |许可|如果设备已载入租户，则其为 True，否则为 false。|
 |log_level|产品的当前日志级别。|
 |machine_guid|防病毒组件使用的唯一计算机标识符。|
-|network_protection_status|仅 macOS 中的网络 (状态) 。 可以是下列值之一： <ul><li>**starting** - 网络保护正在启动</li><li>**failed_to_start** - 由于错误，无法启动网络保护</li><li>**started** - 网络保护当前正在设备上运行</li><li>**正在重启** - 网络保护当前正在重新启动</li><li>**stopping** - 网络保护正在停止</li><li>**已停止** - 网络保护未运行</li></ul>|
+|network_protection_status|仅 macOS 中的网络保护 (状态) 。 可以是下列值之一： <ul><li>**starting** - 网络保护正在启动</li><li>**failed_to_start** - 由于错误，无法启动网络保护</li><li>**started** - 网络保护当前正在设备上运行</li><li>**正在重启** - 网络保护当前正在重新启动</li><li>**stopping** - 网络保护正在停止</li><li>**已停止** - 网络保护未运行</li></ul>|
 |org_id|设备载入到的组织。 如果设备尚未载入任何组织，则打印时不可用。 有关载入详细信息，请参阅 [载入到 Microsoft Defender for Endpoint](onboarding.md)。|
 |passive_mode_enabled|如果防病毒组件设置为在被动模式下运行，则其为 True，否则为 false。|
 |product_expiration|当前产品版本达到支持终止的日期和时间。|
 |real_time_protection_available|如果实时保护组件正常运行，则其为 True，否则为 false。|
 |real_time_protection_enabled|如果启用了实时防病毒保护，则其参数为 True，否则为 false。|
-|real_time_protection_subsystem|用于提供实时保护的子系统。 如果实时保护未如期运行，则打印将不可用。|
+|real_time_protection_subsystem|用于提供实时保护的子系统。 如果实时保护未如预期运行，则打印时不可用。|
 |release_ring|释放圈。 有关详细信息，请参阅部署 [圈](deployment-rings.md)。|
 |

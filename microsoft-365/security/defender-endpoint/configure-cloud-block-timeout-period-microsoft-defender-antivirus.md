@@ -1,7 +1,7 @@
 ---
 title: 配置Microsoft Defender 防病毒阻止超时期限
 description: 你可以配置在Microsoft Defender 防病毒确定时阻止文件运行的时间。
-keywords: Microsoft Defender 防病毒， 反恶意软件， 安全性， defender， 云， 超时， 块， 时间段， 秒
+keywords: Microsoft Defender 防病毒， 反恶意软件， 安全性， defender， 云， 超时， 阻止， 时间段， 秒
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,32 +16,32 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e3f267218155b7aa503237aaa4e52e2e8637019d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1acd1a95ddc3aa679f0e5f1295e14cf33b4f97a0
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110795"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168290"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>配置云块超时时间段
 
 **适用于：**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 当Microsoft Defender 防病毒发现可疑文件时，它会阻止该文件在查询 Microsoft Defender 防病毒[云服务时运行](cloud-protection-microsoft-defender-antivirus.md)。
 
-文件被阻止的默认 [时间段](configure-block-at-first-sight-microsoft-defender-antivirus.md) 为 10 秒。 如果您是安全管理员，您可以指定在允许文件运行之前等待的时间。 延长云阻止超时期限有助于确保有足够的时间从云云服务收到Microsoft Defender 防病毒决定。
+文件被阻止的默认 [时间段](configure-block-at-first-sight-microsoft-defender-antivirus.md) 为 10 秒。 如果您是安全管理员，您可以指定在允许文件运行之前等待的时间。 延长云阻止超时期有助于确保有足够的时间从云云服务收到Microsoft Defender 防病毒决定。
 
 ## <a name="prerequisites-to-use-the-extended-cloud-block-timeout"></a>使用扩展云阻止超时的先决条件
 
 [必须先启用"首次](configure-block-at-first-sight-microsoft-defender-antivirus.md) 看到时阻止"及其先决条件，然后才能指定延长的超时期限。
 
-## <a name="specify-the-extended-timeout-period-using-microsoft-endpoint-manager"></a>使用参数指定延长的超时Microsoft Endpoint Manager
+## <a name="specify-the-extended-timeout-period-using-microsoft-endpoint-manager"></a>使用规则指定延长的超时Microsoft Endpoint Manager
 
 可以使用终结点安全策略指定云阻止超时[Microsoft Endpoint Manager。](/mem/intune/protect/endpoint-security-policy)
 
-1. 转到管理Endpoint Manager中心 () [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/) 登录。
+1. 转到管理Endpoint Manager中心 [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/) () 登录。
 
 2. 选择 **"终结点安全性"，** 然后在"管理 **"下**，选择 **"防病毒"。**
 
