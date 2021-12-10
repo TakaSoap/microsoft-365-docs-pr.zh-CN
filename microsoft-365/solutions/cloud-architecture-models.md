@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b036c6ca93310e6f88dee78171749c09056de84b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f7c2d35cbc8343779f9ccfb2cc369da9b4d7db4a
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373688"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401494"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>适用于 IT 架构师的 Microsoft 云插图
 
@@ -42,7 +42,7 @@ IT 决策者和架构师可以使用这些资源来确定其工作负载的理�
   
 | 项目 | 说明 |
 |:-----|:-----|
-|[![Microsoft 云标识模型的缩略图。](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf ) <br/> [PDF](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf )  <br/> 2021 年 11 月更新 | 此模型包含：  <ul> <li> Microsoft 云标识简介 </li><li> Azure AD IDaaS 功能 </li><li>零信任标识和设备访问策略</li><li> 将本地 Active Directory 域服务 (AD DS) 帐户与 Azure AD </li><li> 将目录组件放入 Azure IaaS 中 </li><li> Azure IaaS 中工作负载的 AD DS 选项 </li></ul><br/>  <br/>|
+|[![Microsoft 云标识模型的缩略图。](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf ) <br/> [PDF](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf )  <br/> 2021 年 11 月更新 | 此模型包含：  <ul> <li> Microsoft 云标识简介 </li><li> Azure AD IDaaS 功能 </li><li>零信任标识和设备访问策略</li><li> 将本地 Active Directory 域服务与 (AD DS) 集成Azure AD </li><li> 将目录组件放入 Azure IaaS 中 </li><li> Azure IaaS 中工作负载的 AD DS 选项 </li></ul><br/>  <br/>|
 
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-it-architects"></a>适用于 IT 架构师的 Microsoft 云安全性
@@ -51,7 +51,7 @@ IT 决策者和架构师可以使用这些资源来确定其工作负载的理�
   
 | 项目 | 说明 |
 |:-----|:-----|
-|[![适用于企业架构师的 Microsoft 云安全性模型缩略图。](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> 2021 年 11 月更新 | 此模型包含： <ul><li>Microsoft 和客户安全职责</li><li>标识和设备访问</li><li>威胁防护</li><li>信息保护 </ul><br/>|
+|[![适用于企业架构师的 Microsoft 云安全性模型缩略图。](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> 2021 年 12 月更新 | 此模型包含： <ul><li>Microsoft 和客户安全职责</li><li>标识和设备访问</li><li>威胁防护</li><li>信息保护 </li><li>云应用保护 </li></ul><br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-it-architects"></a>适用于 IT 架构师的 Microsoft 云网络

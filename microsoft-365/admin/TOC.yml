@@ -53,6 +53,12 @@
           href: setup/set-up-windows-devices.md
         - name: 设置移动设备
           href: setup/set-up-mobile-devices.md
+        - name: 针对企业电子邮件设置 Microsoft 365 专属 Outlook (视频)
+          href: setup/setup-outlook.md
+        - name: 将文件移动到 OneDrive (视频)
+          href: setup/files-to-onedrive.md
+        - name: 将文件移动到 SharePoint (视频)
+          href: setup/files-to-sharepoint.md
         - name: 将数据迁移到 Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: 推出 Teams
@@ -78,7 +84,7 @@
     - name: Microsoft 365 管理中心概述
       items:
         - name: 管理中心概述
-          href: ../business-video/admin-center-overview.md
+          href: admin-overview/admin-center-overview.md
         - name: 关于管理员角色
           href: add-users/about-admin-roles.md
         - name: 管理移动应用
@@ -435,11 +441,11 @@
         - name: 与来宾用户共享日历
           href: manage/share-calendars-with-external-users.md
         - name: 创建包含来宾用户的团队
-          href: ../business-video/team-with-guests.md
+          href: 'https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f'
         - name: 安排有来宾用户参加的 Teams 会议
-          href: ../business-video/schedule-guest-meeting.md
+          href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
         - name: 加入有来宾用户参加的 Teams 会议
-          href: ../business-video/join-guest-meeting.md
+          href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
     - name: 疑难解答
       href: /office/troubleshoot/
     - name: 联系支持人员

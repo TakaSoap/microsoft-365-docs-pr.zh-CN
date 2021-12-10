@@ -20,6 +20,8 @@
               href: microsoft-365-security-mdo-redirection.md
         - name: Microsoft 365 Defender 与 Microsoft Sentinel 的集成
           href: microsoft-365-defender-integration-with-azure-sentinel.md
+        - name: 面向美国政府客户的 Microsoft 365 Defender
+          href: usgov.md
         - name: 行业测试
           href: ./top-scoring-industry-tests.md
     - name: 计划
@@ -208,6 +210,8 @@
               href: advanced-hunting-take-action.md
             - name: 使用开始搜寻快速调查
               href: advanced-hunting-go-hunt.md
+            - name: 将查询结果链接到事件
+              href: advanced-hunting-link-to-incident.md
             - name: 优化 & 处理错误
               items:
                 - name: 应用查询最佳做法
@@ -412,3 +416,5 @@
           href: /defender-for-identity
         - name: Defender for Cloud Apps
           href: /cloud-app-security
+        - name: Defender for Business
+          href: ../defender-business/index.yml

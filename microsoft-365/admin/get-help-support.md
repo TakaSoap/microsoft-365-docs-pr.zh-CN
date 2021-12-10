@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何为 Microsoft 365 商业版订阅获取在线或电话支持。 必须是企业订阅的管理员才能获得支持。
-ms.openlocfilehash: 9ac6d422de569bf990528af6b25bf57a6c0f3ba1
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 6109498aed5522e0ad7c128208463f33f99eeba2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311915"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370028"
 ---
 # <a name="get-support"></a>获取支持
 
@@ -48,7 +48,7 @@ ms.locfileid: "61311915"
 
 可通过在线发起服务请求节省时间。我们将帮助你查找解决方案，或请技术支持人员与你联系。
 
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a> 的管理中心。如果收到消息，显示无权访问此页或执行此操作，那么则应该不是管理员。有关详细信息，请参阅[谁在我的公司中拥有管理员权限？](../business-video/admin-center-overview.md#who-has-admin-permissions-in-my-business)。
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a> 的管理中心。 如果你收到消息，显示你无权访问此页或执行此操作，则你不是管理员。有关详细信息，请参阅 [谁在我的公司中拥有管理员权限]？([Microsoft 365 管理中心概述](../admin/admin-overview/admin-center-overview.md)。
 2. 在页面右下角，选择 **帮助和支持**。
 3. 请将问题或关键字键入到文本框中。如果收到下拉列表，请选择最接近问题的列表，或继续键入问题，然后按 **Enter 键**。
 4. 如果结果没有帮助，请在底部选择 **联系支持人员**。
@@ -216,34 +216,6 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 扫描此 QR 码在微信上关注我们，获取由世纪互联运营的 Office 365 的最新动态。
 
 ![世纪互联运营的 Office 365 更新 QR 代码。](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-本文适用于 Office 365 Germany 的客户，此类客户的域名以 onmicrosoft.de 结尾。有关详细信息，请参阅[了解 Office 365 Germany](../admin/admin-overview/learn-about-office-365-germany.md)。
-
-作为 Office 365 Germany 管理员，你可以免费联系我们的资深支持专员，让其协助你解决技术问题，以及获取预售、帐户和帐单支持。你也可以代表你组织中的 Office 365 Germany 用户联系我们。
-
-> [!NOTE]
-> 下面的所有支持选项都是针对 Microsoft 云德国版的。有关 Microsoft 如何使用你在联系 Microsoft 支持人员时提供的数据的更多信息，请参阅[隐私声明](https://go.microsoft.com/fwlink/p/?LinkId=512132)。
-
-## <a name="get-assisted-support"></a>获取辅助支持
-
-辅助支持选项仅面向订阅 Office 365 Germany 的组织中的管理员提供。如果你是在工作单位或学校中使用 Office 365 Germany，但不是管理员，则仍然可以在社区论坛中或通过联系管理员或 IT 部门获得支持。
-
-- **开启在线请求。** 通过在线发起服务请求节省时间。在管理中心内，选择“**支持**”\>“**新建服务请求**”。我们将帮助你找到解决方案，或请专家通过电子邮件或电话与你联系。
-
-- **致电支持人员。** 欢迎来电。管理员应在致电时准备好提供帐户详细信息。
-
-| 区域 | 电话号码 | 工作时间 |
-|-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 德国 | 0800&nbsp;589&nbsp;2330 | 计费支持： <ul><li>德语：柏林时间星期一至星期五上午 9 点至下午 5 点</li><li>英语：柏林时间星期一至星期五上午 9 点至下午 5 点</li></ul><br />技术支持： <ul><li>德语：全天候</li><li>英语：全天候</li></ul><br />备选电话号码：069 380 789 305（需支付本地话费） |
-| 欧洲经济区内的所有其他市场 | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | 计费支持： <ul><li>德语：柏林时间星期一至星期五上午 9 点至下午 5 点 (UTC+1)</li><li>英语：柏林时间星期一至星期五上午 9 点至下午 5 点 (UTC+1)</li></ul><br />技术支持： <ul><li>德语：全天候</li><li>英语：全天候</li></ul><br />可通过向德国拨打国际电话获得电话支持。需支付国际长途话费。通过管理中心提交支持票证，可避免支付话费。 |
-
-## <a name="let-our-community-help"></a>通过社区获取帮助
-
-你也可以[搜索 Microsoft 365 商业版社区论坛](https://go.microsoft.com/fwlink/p/?LinkId=518605)，查找已知问题和新潮主题，或发帖提出新问题。社区论坛由训练有素的 Microsoft 支持专员监管，他们可以帮助你解决问题。
 
 ::: moniker-end
 

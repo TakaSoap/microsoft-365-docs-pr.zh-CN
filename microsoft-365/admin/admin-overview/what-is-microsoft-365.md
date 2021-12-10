@@ -20,12 +20,12 @@ search.appverid:
 description: 了解 Microsoft 365 商业高级版，这是一种处理 IT 部分的订阅服务。
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: 53460bdffa9ee078d4ad07875841c9aad8b36c3f
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: bb0709aad16da6da08ba8643d4f24084b0fe9201
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311904"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370184"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 商业高级版
 
@@ -42,7 +42,7 @@ Microsoft 365商业高级版是一项订阅服务，可让您在云中运行组�
 
 |功能|说明|
 | --- | --- |
-| 抵御威胁 | Microsoft 365商业高级版通过高级威胁防护，安全附件和安全链接保护帮助您防御威胁。 |
+| 抵御威胁 | Microsoft 365 商业高级版通过高级威胁防护功能来帮助你抵御威胁。 这些功能包括安全附件和安全链接保护。 <br/><br/>请查看 [Microsoft Defender for Business 概述](../../security/defender-business/mdb-overview.md)(预览版!)，以了解其他安全和威胁防护功能。 |
 | 保护业务数据的安全 | 您的个人数据在具有PIN访问权限的个人设备上受到保护，并且复制和保存受到限制。 您还可以添加信息保护，以确保只有授权人员才能访问敏感信息。 |
 | 保护您的设备 | 您可以通过限制移动访问（例如复制和粘贴）来保护设备上的工作文件。 如果已注册的移动设备丢失或被盗，您还可以有选择地擦除业务数据。 |
 | 其他安全功能 | Microsoft 365商业高级版中的高级功能可用来帮助您保护企业免受网络威胁并保护敏感信息。 这些功能包括 Microsoft Defender for Office 365 计划 1，数据丢失防护策略（DLP），Exchange Online 存档，Azure 信息保护和 Intune。 |
