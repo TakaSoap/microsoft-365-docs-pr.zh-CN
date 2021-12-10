@@ -71,8 +71,6 @@
           href: setup/customize-sign-in-page.md
         - name: 自定义组织主题
           href: setup/customize-your-organization-theme.md
-        - name: 了解 Office 365 Germany
-          href: admin-overview/learn-about-office-365-germany.md
         - name: 访问本地用户和资源
           items:
             - name: 将域用户同步到 Microsoft 365
