@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 解释你的企业帐单或发票Microsoft 365、帐单和付款信息，以及如何更改采购订单编号。
 ms.date: 05/04/2021
-ms.openlocfilehash: 7b6f82570416b84d1b0b8c5b65cf13ce94522063
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 946f403d05150a4995aeacf8adc99f02ffb6c761
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151454"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374624"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解你的 Microsoft 365 商业版账单或发票
 
@@ -93,7 +93,7 @@ ms.locfileid: "60151454"
 |服务使用地址|表示正在使用服务的地址，通常与你的售达地址相同。 若要更新服务使用地址，请参阅[更改帐单邮寄地址](change-your-billing-addresses.md)。|
 |售达地址|你的公司名称和地址。若要更新此信息，请参阅[更改你组织的地址、技术联系人电子邮件和其他信息](../../admin/manage/change-address-contact-and-more.md)。  |
 |分类汇总|发票上列出的每个订阅都具有针对所有费用、折扣、贷项、分类汇总和税款的单独分类汇总行，以及所有针对该订阅的列。|
-|税款|发票的第 1 页显示税款总额。第 2 页显示所采用的税率，以及各行项目的税款总额。如果你的发票包含税款而你的公司是免税的，请[联系支持人员](../../business-video/get-help-support.md)。  |
+|税款|发票的第 1 页显示税款总额。第 2 页显示所采用的税率，以及各行项目的税款总额。如果你的发票包含税款而你的公司是免税的，请[联系支持人员](../../admin/get-help-support.md)。  |
 |总计|发票计费周期的到期金额。|
 
 ## <a name="change-your-purchase-order-number"></a>更改采购订单编号
@@ -106,12 +106,6 @@ ms.locfileid: "60151454"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
 
 ::: moniker-end
 
@@ -129,9 +123,9 @@ ms.locfileid: "60151454"
 
 ## <a name="related-content"></a>相关内容
 
-[了解如何查找和查看帐单或](view-your-bill-or-invoice.md) 发票 (文章) \
+[Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md) (article) \
 [Microsoft 365 商业版（墨西哥）的帐单信息](mexico-billing-info.md) （文章）\
-[更改帐单邮寄 (](change-your-billing-addresses.md) 文章) \
+[更改帐单邮寄地址](change-your-billing-addresses.md) (文章) \
 [更改组织地址、技术联系人电子邮件和其他信息](../../admin/manage/change-address-contact-and-more.md) ， (文章) \
 [支付商业Microsoft 365订阅费用 (](pay-for-your-subscription.md)文章) \
 [Minecraft:Education Edition 付款方式](/education/windows/school-get-minecraft)（文章）

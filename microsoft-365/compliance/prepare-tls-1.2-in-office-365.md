@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 2ae758ef9e5c36b2406527e2a10c43f57986ea1f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d2562e52c307fcf251b0b3030219aca68dc96a0a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159750"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374576"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>在 Office 365 和 Office 365 GCC 中准备 TLS 1.2
 
@@ -30,7 +30,7 @@ ms.locfileid: "60159750"
 
 有关如何删除 TLS 1.0 和 1.1 依赖项的信息，请参阅以下白皮书：[解决 TLS 1.0 问题](https://www.microsoft.com/download/details.aspx?id=55266)。
 
-升级到 TLS 1.2 后，请确保 Azure Front Door 支持你使用加密套件。 Microsoft 365 Azure 前端在加密套件支持方面稍有不同。 有关详细信息，请参阅 Azure Front Door 支持的当前密码套件[是什么？。](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)
+升级到 TLS 1.2 后，请确保 Azure Front Door 支持你使用加密套件。 Microsoft 365 Azure 前端在密码套件支持方面稍有不同。 有关详细信息，请参阅 Azure Front Door 支持的当前密码套件[是什么？。](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)
 
 ## <a name="more-information"></a>更多信息
 
@@ -41,7 +41,7 @@ ms.locfileid: "60159750"
   > [!NOTE]
   > 对于 SMTP 入站邮件流，在 TLS 1.0 和 1.1 弃用后，我们将仅接受 TLS 1.2 连接。 但是，我们将继续接受未加密的 SMTP 连接，该连接没有任何 TLS。 尽管我们不建议在没有任何加密的情况下进行电子邮件传输。 
 
-你需要更新通过 TLS 1.0 或 TLS 1.1 调用 Microsoft 365 API 的应用程序，以使用 TLS 1.2。 .NET 4.5 默认为 TLS 1.1。 若要更新 .NET 配置，请参阅如何在客户端上启用[TLS (TLS) 1.2。](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
+你需要更新通过 TLS 1.0 或 TLS 1.1 调用 Microsoft 365 API 的应用程序，以使用 TLS 1.2。 .NET 4.5 默认为 TLS 1.1。 若要更新 .NET 配置，请参阅如何在客户端上启用传输层安全性[ (TLS) 1.2。](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
 
 以下是已知的无法使用 TLS 1.2 的客户端。 更新这些客户端以确保对服务的访问不会间断。
 
@@ -86,3 +86,6 @@ ms.locfileid: "60159750"
 - [Exchange Server TLS 指南，第 2 部分：启用 TLS 1.2 并识别不使用它的客户端](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-2-enabling-tls-1-2-and/ba-p/607761)
 - [Exchange Server TLS 指南，第 3 部分：关闭 TLS 1.0/1.1](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-3-turning-off-tls-1-0-1-1/ba-p/607898)
 - [在 Office Online Server 中启用 TLS 1.1 和 TLS 1.2 支持](/officeonlineserver/enable-tls-1-1-and-tls-1-2-support-in-office-online-server)
+- [启用 SharePoint 2013 中的 TLS 和 SSL 支持](/sharepoint/security-for-sharepoint-server/enable-tls-and-ssl-support-in-sharepoint-2013)
+- [在 SharePoint Server 2016 中启用 TLS 1.1 和 TLS 1.2 支持](/sharepoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016)
+- [在 SharePoint Server 2019 中启用 TLS 1.1 和 TLS 1.2 支持](/sharepoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2019)

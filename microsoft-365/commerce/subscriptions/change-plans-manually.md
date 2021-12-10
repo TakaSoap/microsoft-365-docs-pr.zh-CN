@@ -20,12 +20,12 @@ search.appverid: MET150
 description: 通过购买新订阅并确保两个订阅都列出且处于活动状态，手动更改订阅。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 7239cda6c00785626471b35be19c1d550acf91e3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12ff6bdec77e6407d1b854dc7a5fd78f0401c253
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173675"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374588"
 ---
 # <a name="change-plans-manually"></a>手动更改计划
 
@@ -52,7 +52,7 @@ ms.locfileid: "60173675"
 
 **购买新订阅和许可证：** 按照购买另 [一Microsoft 365商业版订阅中的步骤](../try-or-buy-microsoft-365.md)购买新订阅。
 
-请确保为用户当前在同一组织购买订阅。 例如，检查要移动的用户的电子邮件地址。 如果他们的电子邮件地址包含 contoso.com，则必须购买新订阅 \@ contoso.com。
+请确保为用户当前在同一组织购买订阅。 例如，检查要移动的用户的电子邮件地址。 如果他们的电子邮件地址包含 \@ contoso.com，则必须购买新订阅 contoso.com。
 包括要移动的每个用户的许可证。
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步骤 3：检查新订阅和许可证
@@ -61,7 +61,7 @@ ms.locfileid: "60173675"
 
 2. **验证这两个订阅是否列出且处于活动状态** 用户迁移自的订阅和要移动用户的订阅必须一起列出。 如果首次检查时新订阅不存在，请稍后重试。 检查这两个订阅是否处于活动状态。 [新订阅未列出，或不是活动订阅](#the-new-subscription-isnt-listed-or-isnt-active)。
 
-3. **检查是否有足够的许可证供每个用户使用** 每个用户都需要一个匹配其订阅的许可证。 因此，如果你想要将 10 个用户Microsoft 365 商业高级版，则需要确保 10 个许可证可用。
+3. **检查是否有足够的许可证供每个用户使用** 每个用户都需要一个匹配其订阅的许可证。 因此，如果你想要将 10 个用户Microsoft 365 商业高级版，则需要确保十个许可证可用。
 
 4. **需要新订阅的更多许可证？**
    转到你的 **产品页面** 并 [购买更多许可证](../licenses/buy-licenses.md)。
@@ -72,7 +72,7 @@ ms.locfileid: "60173675"
 
 - **如果购买了两个** 订阅，但此处未列出这两个订阅，则它们可能是为不同组织购买， (用于不同域) 。 订阅不能跨越组织边界。
 
-- **如果您知道您具有其他订阅**，并且此处未列出，或者它未处于活动状态， [请致电 Microsoft 支持](../../business-video/get-help-support.md)人员。
+- **如果您知道您具有其他订阅**，并且此处未列出，或者它未处于活动状态， [请致电 Microsoft 支持](../../admin/get-help-support.md)人员。
 
 ### <a name="what-about-the-old-licenses"></a>旧许可证呢？
 
@@ -115,4 +115,5 @@ If you moved all users from one subscription to another, and you no longer need 
 如果仅将部分用户移动到其他订阅，请 [删除](../licenses/buy-licenses.md) 不再需要的许可证。
 
 ## <a name="call-support-to-help-you-change-plans"></a>致电支持人员，帮助你更改计划
-[致电 Microsoft 支持人员](../../business-video/get-help-support.md)
+
+[致电 Microsoft 支持人员](../../admin/get-help-support.md)。

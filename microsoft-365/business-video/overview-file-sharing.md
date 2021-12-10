@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何共享业务文件的概述。
-ms.openlocfilehash: 7c4dde8f3ce19a2f7c443efffbbc780a746ba174
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3548177ad97453949b622ba50149fad81e5459cb
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155678"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374768"
 ---
 # <a name="overview-of-sharing-business-files"></a>共享业务文件概述
 
@@ -40,10 +40,10 @@ ms.locfileid: "60155678"
 
 ## <a name="share-a-file-with-someone-outside-of-your-company"></a>与公司外部的某人共享文件
 
-- 如果您只需要客户或客户 (客户或客户) ，请通过电子邮件与公司外部的其他人共享文件。
+- 与公司外部的某人共享文件 (例如客户或客户) ，只需进行单向访问。
 - 如果需要回复，或者希望他们填写一些信息并将其发送回，可以使用 SharePoint 或 Microsoft Teams 与编辑链接共享。
 
-详细了解如何使用安全 [链接](securely-share-files-externally.md) 在组织外部共享文件，以及如何与任何人 [链接共享文件](share-files-externally.md)。
+详细了解如何使用安全 [链接](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07) 在组织外部共享文件，以及如何与任何人 [链接共享文件](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07)。
 
 ## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>与客户或业务合作伙伴共享和协作
 
@@ -53,16 +53,16 @@ ms.locfileid: "60155678"
 1. 上传文件。
 1. 邀请合作伙伴或供应商作为"来宾"用户加入团队，以授予他们访问权限。
 
-详细了解如何使用安全 [链接在组织外部共享文件](securely-share-files-externally.md)。
+详细了解如何使用安全 [链接在组织外部共享文件](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07)。
 
 ## <a name="share-inside-your-business"></a>在企业内部共享
 
-如果你正在处理在企业内部共享的文件，在业务中设置团队也是一个不错的Microsoft Teams。 在那里共享文件，企业中的每个人都可以轻松查找和编辑文件，并且你知道自己正在同一页面上工作。
+如果你正在处理在企业内部共享的文件，在企业内部设置团队也是一个好主意Microsoft Teams。 在那里共享文件，企业中的每个人都可以轻松查找和编辑文件，并且你知道自己正在同一页面上工作。
 
 1. 创建团队并邀请团队加入。
 1. 上传文件。
 
-详细了解公司[文件存储和](files-to-sharepoint.md)[员工文件存储](files-to-onedrive.md)。
+了解有关将文件[移动到SharePoint](../admin/setup/files-to-sharepoint.md)[和将文件移动到OneDrive。](../admin/setup/files-to-onedrive.md)
 
 ## <a name="how-to-get-it-done"></a>如何完成
 
@@ -70,5 +70,5 @@ ms.locfileid: "60155678"
 
 - [发送和接收附件](https://support.microsoft.com/office/sending-and-receiving-attachments-d32cd5ad-c7c5-49df-814d-4c17a5d3beb0)
 - [与用户共享文件和OneDrive](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
-- [创建公司范围的团队](org-wide-team.md)
+- [创建公司范围的团队](/microsoftteams/create-an-org-wide-team)
 - [将来宾添加到团队](https://support.microsoft.com/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)

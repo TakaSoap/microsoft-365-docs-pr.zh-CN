@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下载第三方审核，了解 Microsoft 如何保护客户数据安全，并了解如何在使用 MICROSOFT OFFICE 365 时遵守 ISO、HIPAA、FINRA 和 FedRAMP。
-ms.openlocfilehash: df0cf99a3cfba0c6f5358fb48c45cfd3da62799e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b836df70de9905c0bd55edce4a2d9f5beeccbda5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150986"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374564"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全与合规中心内的服务保证
 
-使用安全与合规&服务保证来访问描述各种主题的文档，包括： 
+使用安全与合规&服务保证访问描述各种主题的文档，包括： 
   
 - Microsoft 针对存储在客户数据中的客户数据Office 365。 
     
@@ -33,7 +33,7 @@ ms.locfileid: "60150986"
     
 - 用于保护数据的安全、隐私和合规性Office 365和测试详细信息。 
     
-您还可以了解客户Office 365遵守行业标准、法律和法规，例如：
+您还可以了解客户Office 365跨行业遵守标准、法律和法规，例如：
   
 -  国际标准化组织 (ISO) 27001 和 27018 
     
@@ -41,11 +41,11 @@ ms.locfileid: "60150986"
     
 - 联邦风险和授权管理项目 (FedRAMP)
     
-## <a name="who-can-access-office-365-service-assurance-and-how"></a>Who服务保证Office 365，如何？
+## <a name="who-can-access-office-365-service-assurance-and-how"></a>Who服务保证Office 365，以及如何访问？
 
- **新客户和评估 Microsoft 联机** 服务的客户可以访问 Office 365 企业版 E3 和 E5 计划中包含的服务保证， (试用版和付费订阅) 。 如果你没有这些计划之一，并且想要试用服务保证，可以注册[E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)Office 365 企业版试用版。
+ **新客户和评估 Microsoft 联机** 服务的客户可以访问 Office 365 企业版 E3 和 E5 计划中包含的服务保证， (试用订阅和付费) 。 如果你没有这些计划之一，并且想要试用服务保证，可以注册[E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)Office 365 企业版试用版。
   
- **默认情况下，O365** 订阅成员可以访问 Office 365保护中心中的服务保证部分。 服务保证提供报告和文档，介绍 Microsoft 针对存储在客户安全中心中的客户数据Office 365。 它还提供有关报告的独立第三方审核Office 365。
+ **默认情况下，O365** 订阅成员可以访问 Office 365中心中的服务保证部分。 服务保证提供报告和文档，介绍 Microsoft 针对存储在客户安全中心中的客户数据Office 365。 它还提供有关报告的独立第三方Office 365。
  
 ## <a name="choose-your-industry-and-regional-settings"></a>选择你的行业和区域设置
 <a name="Chooseyourindustryregional"> </a>
@@ -67,7 +67,7 @@ ms.locfileid: "60150986"
 
 若要查看和下载内容，请从导航窗格中选择一个选项：
   
-- **合规性报告**，以查看独立审核Office 365和其他 Microsoft 云服务的评估，如以下屏幕截图中所示。 
+- **合规性报告**，可查看对 Office 365 和其他 Microsoft 云服务的独立审核和评估，如以下屏幕截图中所示。 
     
     ![显示服务保证页面：服务合规性报告。](../media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
   
@@ -95,11 +95,11 @@ ms.locfileid: "60150986"
 ## <a name="get-help-with-service-assurance"></a>获取有关服务保证的帮助
 <a name="addother"> </a>
 
-[联系商业版产品的支持人员 - 管理员帮助](../business-video/get-help-support.md)。
+[联系商业版产品的支持人员 - 管理员帮助](../admin/get-help-support.md)。
   
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 <a name="addother"> </a>
 
  **为什么我收到一个错误，指出来自服务保证的文档已损坏？**
   
-大多数服务保证文档都采用 PDF 格式。 选择 **"** 保存"以将这些文件保存到本地计算机，然后从本地计算机打开它们。
+大多数服务保证文档都采用 PDF 格式。 选择 **"** 保存"将这些文件保存到本地计算机，然后从本地计算机打开它们。

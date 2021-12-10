@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 部署Microsoft 365安全性和合规性功能，并保护个人信息。
-ms.openlocfilehash: c1223dac804e1a9e514f3a5d0effad9f138e403a
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 2739da0b5e9c4896b65751c63d9b2e5f3b026a2e
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137119"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374552"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>保护受数据隐私条例保护的信息
 
@@ -38,7 +38,7 @@ ms.locfileid: "61137119"
 ![保护受数据隐私条例保护的个人信息的关键服务。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 > [!NOTE]
-> 此解决方案介绍用于保护受数据隐私法规限制的信息的安全和合规性功能。 有关安全中心中安全功能的完整Microsoft 365，请参阅Microsoft 365[安全文档](../security/index.yml)。 有关合规性文档中的合规性功能的完整Microsoft 365，请参阅Microsoft 365[合规性文档](../compliance/index.yml)。
+> 此解决方案介绍用于保护受数据隐私法规限制的信息的安全和合规性功能。 有关安全文档中安全功能的完整Microsoft 365，请参阅Microsoft 365[安全文档](../security/index.yml)。 有关合规性文档中的合规性功能的完整Microsoft 365，请参阅Microsoft 365[合规性文档](../compliance/index.yml)。
 
 ## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>影响信息保护控制的数据隐私法规
 
@@ -58,15 +58,15 @@ ms.locfileid: "61137119"
 - 基于风险的保护机制的应用。
 - 在适当时使用加密。
 
-您的组织可能还希望出于其他Microsoft 365（如其他合规性需求或出于业务原因）保护内容。 应制定数据隐私信息保护方案，作为整体信息保护规划、实施和管理的一部分。
+您的组织可能还需要出于其他Microsoft 365（如其他合规性需求或出于业务原因）保护内容。 应制定数据隐私信息保护方案，作为整体信息保护规划、实施和管理的一部分。
 
-为了帮助你开始使用 Microsoft 365 中的信息保护方案，下一节包括一个简短列表，其中列出了针对 Microsoft 365 的相关功能和改进操作。 该列表包括适用于数据隐私法规的功能和改进操作。 但是，如果有较新的功能在很大程度上取代较旧的功能，则该列表不包含较旧的技术。 例如，列表中 (IRM) IRM SharePoint OneDrive但包含敏感度标签。
+为了帮助你开始使用 Microsoft 365 中的信息保护方案，下一节包括一个简短列表，其中列出了有关 Microsoft 365。 该列表包括适用于数据隐私法规的功能和改进操作。 但是，如果有较新的功能在很大程度上取代较旧的功能，则该列表不包含较旧的技术。 例如，列表中 (I) RM (IRM SharePoint SharePoint OneDrive但包含敏感度标签。
 
 ## <a name="managing-information-protection-in-microsoft-365"></a>管理信息保护Microsoft 365
 
 Microsoft[信息保护解决方案](../compliance/information-protection.md)包括许多跨 Microsoft 365、Microsoft Azure 和 Microsoft Windows 的集成Windows。 在Microsoft 365中，信息保护解决方案包括：
 
-- [评估数据](../compliance/sensitive-information-type-entity-definitions.md) (和识别敏感项目一文中所述 [的](information-protection-deploy-assess.md) 敏感信息) 
+- [评估数据](../compliance/sensitive-information-type-entity-definitions.md) 隐私 (识别敏感项目一文中所述 [的敏感信息类型](information-protection-deploy-assess.md)
 - [敏感度标签](../compliance/sensitivity-labels.md)
   - 服务/容器级别
   - 客户端/内容级别
@@ -77,7 +77,7 @@ Microsoft[信息保护解决方案](../compliance/information-protection.md)包�
 
 此外，网站和库级别保护是任何保护方案中要包括的重要机制。
 
-有关外部其他信息保护功能的信息Microsoft 365，请参阅：
+有关外部其他信息保护功能的信息Microsoft 365请参阅：
 
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/)
 - [Azure 信息保护](/azure/information-protection/what-is-information-protection)
@@ -86,7 +86,7 @@ Microsoft[信息保护解决方案](../compliance/information-protection.md)包�
 
 ## <a name="sensitivity-labels"></a>敏感度标签
 
-通过来自 Microsoft 信息保护 框架的敏感度标签，你可以对组织的数据进行分类和保护，而不受用户工作效率和协作能力的影响。
+利用来自 Microsoft 信息保护 框架的敏感度标签，你可以对组织的数据进行分类和保护，而不受用户工作效率和协作能力的影响。
 
 > [!div class="mx-imgBorder"]
 > ![敏感度标签Microsoft 365。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
@@ -99,11 +99,11 @@ Microsoft[信息保护解决方案](../compliance/information-protection.md)包�
    - **业务需求。** 确定在企业中应用敏感度标签的业务原因。 例如，你的信息保护数据隐私要求。
    - **敏感度标签功能。** 敏感度标签可能会变得复杂，因此请确保在开始使用之前 [阅读敏感度标签](../compliance/sensitivity-labels.md) 文档。
    - **要记住的关键内容** 敏感度标签在 Microsoft 合规性管理中心内进行管理，但目标定位和应用程序选项明显不同。
-      - 容器级别的站点、组和网站Teams有敏感度标签 (这些设置不适用于容器容器内) 。 当设置网站、组或团队时，这些策略将发布到应用它们的用户和组。
+      - 容器级别的站点、组和网站Teams有敏感度标签 (这些设置不适用于容器内的内容) 。 当设置网站、组或团队时，这些策略将发布到应用它们的用户和组。
       - 活动内容有敏感度标签。 这些也会发布到用户或组，这些用户或组可以手动应用它们，或在以下条件时自动应用：
         - 文件将打开/编辑/保存到用户的桌面或SharePoint网站。
         - 电子邮件已起草并发送。
-      - 除了通过 Exchange 传输的电子邮件外，SharePoint和 OneDrive 中的其余文件自动应用敏感度Exchange。 它们面向所有网站或特定网站，并自动应用于这些环境中处于其余位置的文件。
+      - 除了通过 OneDrive 传输的电子邮件外，SharePoint和 OneDrive 中可自动将敏感度标签自动应用至Exchange。 它们面向所有网站或特定网站，并自动应用于这些环境中处于其余位置的文件。
 
 2. 通过过去的方法或替代方法使当前敏感度标签合理化
 
@@ -112,7 +112,7 @@ Microsoft[信息保护解决方案](../compliance/information-protection.md)包�
       当前敏感度标签方案可能需要与任何现有的 [Azure 信息](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) 保护标签实现协调。
    - OME
 
-      如果你计划将新式敏感度标签用于电子邮件保护，并且现有电子邮件加密方法（如 OME）已就位，它们可以共存，但你应了解其中任一种应用的方案。 请参阅[Office 365 邮件加密 OME ](#office-365-message-encryption-ome-new-capabilities) (OME) 的新功能，其中包括比较现代敏感度标签类型保护与基于 OME 的保护的表。
+      如果你计划将新式敏感度标签用于电子邮件保护，并且现有电子邮件加密方法（如 OME）已就位，它们可以共存，但你应了解其中任一种应用的方案。 请参阅[Office 365 邮件加密 OME ](#office-365-message-encryption-ome-new-capabilities) (OME) 的新功能，其中包括一个比较现代敏感度标签类型保护与基于 OME 的保护的表。
 
 3. 规划集成到更广泛的信息保护方案中。 除了与 OME 共存外，还可以同时使用敏感度标签，如 Microsoft 365 数据丢失防护 (DLP) 和 Microsoft Defender for Cloud Apps。 请参阅[Microsoft 信息保护Microsoft 365](../compliance/information-protection.md)实现数据隐私相关信息保护目标。
 
@@ -134,7 +134,7 @@ Microsoft[信息保护解决方案](../compliance/information-protection.md)包�
 
 ### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>为网站、组和团队创建和部署敏感度标签
 
-当你在[应用内创建](../compliance/sensitivity-labels-teams-groups-sites.md)敏感度Microsoft 365 合规中心，<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>现在可以将它们应用于这些容器：
+当你在["标签"Microsoft 365 合规中心](../compliance/sensitivity-labels-teams-groups-sites.md)时，<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>现在可以将它们应用于以下容器：
 
 - Microsoft Teams网站
 - Microsoft 365组 (组Office 365组) 
@@ -142,7 +142,7 @@ Microsoft[信息保护解决方案](../compliance/information-protection.md)包�
 
 使用以下标签设置来帮助保护这些容器中的内容：
 
-- 隐私 (组连接的) Microsoft 365站点Teams隐私
+- 隐私 (组) Microsoft 365组Teams隐私策略
 - 外部用户访问
 - 非托管设备的访问
 
@@ -150,7 +150,7 @@ Microsoft[信息保护解决方案](../compliance/information-protection.md)包�
 
 ### <a name="create-and-deploy-sensitivity-labels-for-content"></a>为内容创建和部署敏感度标签
 
-应用于文件的敏感度标签允许你加密其内容、为内容添加水印，并定义 Office 应用程序内容的其他控件，包括Outlook和Office web 版。
+通过应用于文件的敏感度标签，你可以加密其内容、为内容添加水印，并定义 Office 应用程序内容的其他控件，包括Outlook和Office web 版。
 
 当你准备好使用敏感度标签开始保护组织的数据时：
 
@@ -158,7 +158,7 @@ Microsoft[信息保护解决方案](../compliance/information-protection.md)包�
 2. **定义每个标签的用途。** 配置要与每个标签关联的保护设置。 例如，你可能希望较低敏感度内容 (如"常规"标签) 应用一个页眉或页脚，而较高敏感度内容 (如"机密"标签) 应具有水印并启用加密。
 3. **发布标签。** 配置灵敏度标签后，使用标签策略发布它们。 确定应该应用标签的用户和组以及要使用的策略设置。 单个标签可重复使用。 定义一次，然后可以将其包括在分配给不同用户的多个标签策略中。
 
-从应用发布敏感度标签Microsoft 365 合规中心，它们<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>开始显示在 Office[应用中](../compliance/sensitivity-labels-office-apps.md)，以便用户在创建或编辑内容时对其进行分类和保护。
+从应用发布敏感度标签Microsoft 365 合规中心，它们<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>开始显示在Office[应用中](../compliance/sensitivity-labels-office-apps.md)，以便用户在创建或编辑内容时对其进行分类和保护。
 
 ![敏感度标签部署流Microsoft 365。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
@@ -181,13 +181,13 @@ Microsoft[信息保护解决方案](../compliance/information-protection.md)包�
 
 此客户端标记的文档延迟最少，因为即使在保存文档之前也可以应用标签。 但是，并非所有客户端应用都支持自动标记。 Azure 信息保护统一标签客户端和某些版本的应用支持Office[此功能](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
 
-有关配置说明，请参阅如何为应用配置[自动Office标记](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
+有关配置说明，请参阅[如何为应用配置自动Office标记](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
 
 对于数据隐私，可自动为包含敏感个人信息的内容应用敏感度标签。
 
 ### <a name="service-side-auto-labeling-when-content-is-already-saved"></a>保存内容时的服务端自动标记
 
-此方法称为使用敏感度标签自动分类。 对于 SharePoint 和 OneDrive) 中的文档以及传输 (中由 Exchange) 发送或接收的电子邮件的数据，您可能还听到它称为"为其余 (的数据自动标记"。 例如Exchange，它不包含邮箱中的电子邮件。
+此方法称为使用敏感度标签自动分类。 对于 SharePoint 和 OneDrive) 中的文档和传输 (中由 Exchange) 发送或接收的电子邮件，您可能还听到它称为"为处于其余位置的数据自动标记 ("。 例如Exchange，它不包含邮箱中的电子邮件。
 
 由于此标签是由服务本身应用，而不是由用户应用程序应用，因此无需担心用户拥有的应用和版本。 因此，可立即在整个组织中使用此功能，并且适合大规模标记。 自动标记策略不支持推荐的标记，因为用户不与标记过程交互。 相反，管理员将在模拟模式下运行策略，以便在实际应用标签前，帮助确保正确标记内容。
 
@@ -210,7 +210,7 @@ DLP 允许您：
 
 使用 Microsoft 365 合规中心 中的<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>DLP 策略，可以标识、监视和自动保护 Microsoft 365 中多个位置的敏感项目，例如 Exchange Online、SharePoint、OneDrive 和Microsoft Teams。
 
-例如，您可以标识包含存储在任何 OneDrive 网站中的信用卡号的任何文档，也可以仅监视OneDrive用户的网站。
+例如，您可以标识包含存储在任何 OneDrive 网站中的信用卡号的任何文档，也可以仅监视特定OneDrive的网站。
 
 您还可以监视和保护本地安装的 Excel、PowerPoint 和 Word 版本中的敏感项目，其中包括识别敏感项目和应用 DLP 策略的能力。 当用户从这些应用程序共享内容时，DLP Office持续监视。
 

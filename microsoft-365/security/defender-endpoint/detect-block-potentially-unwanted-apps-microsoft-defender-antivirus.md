@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6610fbc770e8a4d9e6119c417f4419919362515f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5b0be9c044b48788e5abb04f469b9f6ab0038cd5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166430"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374528"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>检测并阻止可能不需要的应用程序
 
@@ -75,7 +75,7 @@ Microsoft Defender 防病毒软件中可能不需要的应用程序 (PUA) 保护
 > [!NOTE]
 > Windows 10、Windows 11、Windows Server 2019、Windows Server 2022 和 Windows Server 2016 中提供此功能。
 
-Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下载、移动、运行或安装它们的任何尝试。 阻止的 PUA 文件随即移动到隔离区。 在终结点上检测到 PUA 文件时，Microsoft Defender 防病毒软件会以与其他威胁检测相同的格式向用户发送通知（[除非通知已禁用](configure-notifications-microsoft-defender-antivirus.md)）。 以通知的字体作为 `PUA:` 以指示其内容。
+Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下载、移动、运行或安装它们的任何尝试。 阻止的 PUA 文件随即移动到隔离区。 在终结点上检测到 PUA 文件时，Microsoft Defender 防病毒向用户发送通知（[除非已禁用通知](configure-notifications-microsoft-defender-antivirus.md) 与其他威胁检测相同的格式。 以通知的字体作为 `PUA:` 以指示其内容。
 
 该通知显示在 Windows 安全应用 [中正常出现的隔离](microsoft-defender-security-center-antivirus.md)。
 

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a336824a3f7119de8b02f4ccff10dd7956a4f46
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: efffd6bdb0ab6db5b17a8d6beab09a0d84f5ff6c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283949"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374780"
 ---
 # <a name="start-investigation-api"></a>启动调查 API
 
@@ -48,14 +48,14 @@ ms.locfileid: "61283949"
 
 ## <a name="requirements-for-air"></a>AIR 的要求
 
-你的组织必须拥有适用于终结点的 Defender (请参阅[Microsoft Defender for Endpoint) 。](minimum-requirements.md)
+你的组织必须具有适用于终结点的 Defender (请参阅 [Microsoft Defender for Endpoint 的最低要求](minimum-requirements.md)。
 
 目前，AIR 仅支持以下操作系统版本：
 
 - Windows Server 2019
 - Windows Server 2022
-- Windows 10版本 1709 (OS 内部版本 16299.1085（包含[KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
-- Windows 10版本 1803 (OS 内部版本 17134.704，包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本
+- Windows 10版本 1709 (版本 16299.1085（包含[KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
+- Windows 10版本 1803 (操作系统版本 17134.704（包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
 - Windows 10版本[1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019)或更高版本
 - Windows 11
 

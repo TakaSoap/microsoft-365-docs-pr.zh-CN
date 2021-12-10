@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 51e0c757dc73f66ac4d2b1de151c84dd3decddb4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ed0cf7a715952a66f13b9cb6b40ebc9761ebc01c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175883"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374696"
 ---
 # <a name="contact-support-for-brazil"></a>联系巴西支持人员
 
-[查找另一个国家/地区](../../business-video/get-help-support.md)。
+[查找另一个国家/地区](../get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 0800 762 1146
@@ -39,7 +39,7 @@ ms.locfileid: "60175883"
 
 英语：全天候
 
-备用电话数：
+备用电话号码：
 
 0800 047 4958 (本地免费电话) 
 

@@ -1,0 +1,73 @@
+- name: Microsoft Defender for Business
+  href: index.yml
+  items:
+    - name: 概述
+      items:
+        - name: 什么是 Microsoft Defender for Business？
+          href: mdb-overview.md
+        - name: 简化的配置过程
+          href: mdb-simplified-configuration.md
+        - name: 如何获取 Defender for Business
+          href: get-defender-business.md
+        - name: 比较中小型企业计划
+          href: compare-mdb-m365-plans.md
+        - name: 与 Microsoft 365 Lighthouse
+          href: mdb-lighthouse-integration.md
+    - name: 设置和配置
+      items:
+        - name: 设置概述
+          href: mdb-setup-configuration.md
+        - name: 步骤 1 - 查看要求
+          href: mdb-requirements.md
+        - name: 步骤 2 - 分配角色和权限
+          href: mdb-roles-permissions.md
+        - name: 步骤 3 - 设置电子邮件通知
+          href: mdb-email-notifications.md
+        - name: 步骤 4 - 载入设备
+          href: mdb-onboard-devices.md
+        - name: 步骤 5 - 配置安全设置
+          href: mdb-configure-security-settings.md
+    - name: 开始行动
+      items:
+        - name: 开始使用门户
+          href: mdb-get-started.md
+        - name: 尝试教程和模拟
+          href: mdb-tutorials.md
+    - name: 使用 Microsoft Defender for Business
+      items:
+        - name: 查看和管理设备
+          href: mdb-manage-devices.md
+        - name: 查看和管理事件
+          href: mdb-view-manage-incidents.md
+        - name: 响应和缓解威胁
+          href: mdb-respond-mitigate-threats.md
+        - name: 查看修正操作
+          href: mdb-review-remediation-actions.md
+        - name: 查看和使用报告
+          href: mdb-reports.md
+    - name: 管理设置和策略
+      items:
+        - name: 查看和编辑策略
+          href: mdb-view-edit-policies.md
+        - name: 创建新策略
+          href: mdb-create-new-policy.md
+        - name: 策略顺序
+          href: mdb-policy-order.md
+        - name: 创建设备组
+          href: mdb-create-edit-device-groups.md
+        - name: 下一代保护设置
+          href: mdb-next-gen-configuration-settings.md
+        - name: 防火墙设置
+          href: mdb-firewall.md
+        - name: 管理防火墙策略的规则
+          href: mdb-custom-rules-firewall.md
+    - name: 参考信息
+      items:
+        - name: 如何获取帮助或联系支持人员
+          href: mdb-get-help.md
+        - name: 常见问题解答
+          href: mdb-faq.yml
+        - name: 疑难解答
+          href: mdb-troubleshooting.yml
+        - name: Microsoft 365 Lighthouse
+          href: /microsoft-365/lighthouse/m365-lighthouse-overview
