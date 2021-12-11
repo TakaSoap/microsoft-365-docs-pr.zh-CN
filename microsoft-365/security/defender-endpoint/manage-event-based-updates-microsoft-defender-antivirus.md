@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d206b41e6aa4ff2bcac74aa0eb229b50f1fae2ee
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: c99e4e085de32ac4e7ec77a2155182f1a930d432
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148655"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168494"
 ---
 # <a name="manage-event-based-forced-updates"></a>管理基于事件的强制更新
 
@@ -29,18 +29,18 @@ ms.locfileid: "61148655"
 
 
 **适用于：**
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
-
-Microsoft Defender 防病毒允许你确定更新是应 (还是不应) 某些事件之后发生，例如启动时还是从云提供的保护服务接收特定报告之后。
+Microsoft Defender 防病毒允许你确定更新是应 (还是不应) 在某些事件之后发生，例如启动时还是从云提供的保护服务接收特定报告之后。
 
 ## <a name="check-for-protection-updates-before-running-a-scan"></a>在运行扫描之前检查保护更新
 
-可以使用 Microsoft Endpoint Configuration Manager、组策略、PowerShell cmdlet 和 WMI 强制 Microsoft Defender 防病毒 在运行计划扫描之前检查和下载保护更新。
+可以使用 Microsoft Endpoint Configuration Manager、组策略、PowerShell cmdlet 和 WMI 来强制 Microsoft Defender 防病毒 在运行计划扫描之前检查和下载保护更新。
 
 ### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>运行扫描之前，使用 Configuration Manager 检查保护更新
 
-1. 在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"概述 Endpoint Protection \>  \> **反** 恶意软件策略") 
+1. 在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"反恶意软件策略Endpoint Protection概述)  \>  \> 
 
 2. 转到计划 **扫描部分** ，将运行扫描之前检查最新的安全 **智能更新** 设置为 **是**。
 
@@ -70,7 +70,7 @@ Microsoft Defender 防病毒允许你确定更新是应 (还是不应) 某些事
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-有关详细信息，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置并运行 Microsoft Defender 防病毒 和 Defender 防病毒[cmdlet。](/powershell/module/defender/index)
+有关详细信息，请参阅[使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md)和 [Defender for Cloud cmdlet](/powershell/module/defender/index)。
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>使用 Windows Management Instruction (WMI) 在运行扫描之前检查保护更新
 
@@ -92,7 +92,7 @@ CheckForSignaturesBeforeRunningScan
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以 **Windows安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
+4. 展开树以Windows **安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
 
 5. 双击启动时 **检查最新的病毒和** 间谍软件定义，将选项设置为 **已启用**。
 
@@ -108,7 +108,7 @@ CheckForSignaturesBeforeRunningScan
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以 **Windows安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
+4. 展开树以Windows **安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
 
 5. 双击启动时 **启动安全智能更新** ，将选项设置为 **已启用**。
 
@@ -150,7 +150,7 @@ Microsoft Defender AV 可以基于云保护更改其保护。 此类更改可能
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以 **Windows安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
+4. 展开树以Windows **安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
 
 5. 双击允许基于 Microsoft **MAPS** 报告进行实时安全智能更新，将选项设置为 **已启用**。 单击" **确定**"。
 

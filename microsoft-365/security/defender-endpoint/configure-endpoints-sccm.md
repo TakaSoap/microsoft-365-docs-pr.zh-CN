@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: bbaf1dbee85ac02c1ad44cff78a7434b611e3c20
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: b506cf15e2d08568633533ba29af5e2f809c2134
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962587"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166514"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>使用Windows管理器载入设备
 
@@ -29,7 +29,8 @@ ms.locfileid: "60962587"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Endpoint Configuration Manager当前分支
 - System Center 2012 R2 Configuration Manager
@@ -48,18 +49,18 @@ ms.locfileid: "60962587"
 对于 Windows Server 2012 R2 和 Windows Server 2016 - 完成载入步骤后，你需要配置和更新System Center Endpoint Protection[客户端](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients)。
 
 > [!NOTE]
-> 在 OOBE 的"开箱即用体验"阶段，Defender [ (OOBE) ](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 载入。 确保用户在运行完安装或升级后Windows OOBE。
+> 在 OOBE 的"开箱即用体验"阶段，Defender [ (OOBE) ](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 载入。 确保用户在运行完安装或升级Windows OOBE。
 >
 > 请注意，在 Configuration Manager 应用程序上创建检测规则可以持续检查设备是否已载入。 应用程序是一种与包和程序不同的对象类型。
-> 如果由于挂起的 OOBE (任何其他原因) ，设备尚未载入，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
+> 如果由于 OO) BE 完成 (任何其他原因 (未载入设备，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
 >
 > 通过创建检测规则检查"OnboardingState"注册表值是否为 (= 1，REG_DWORD) 实现此行为。
 > 此注册表值位于"HKLM\SOFTWARE\Microsoft\Windows高级威胁防护\状态"下。
-有关详细信息，请参阅 Configure [Detection Methods in System Center 2012 R2 Configuration Manager。](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)
+有关详细信息，请参阅[Configure Detection Methods in System Center 2012 R2 Configuration Manager。](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)
 
 ### <a name="configure-sample-collection-settings"></a>配置示例集合设置
 
-对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 请求提交文件进行深入分析时，是否可以从设备收集示例。
+对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 提交文件进行深入分析时是否可以从设备收集示例。
 
 > [!NOTE]
 > 这些配置设置通常通过 Configuration Manager 完成。
@@ -140,15 +141,15 @@ Value: 0 or 1
 
 ### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>使用当前分支Microsoft Endpoint Manager载设备
 
-如果使用 Microsoft Endpoint Manager当前分支，请参阅[创建载出配置文件](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
+如果使用Microsoft Endpoint Manager分支，请参阅[创建载出配置文件](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>使用 System Center 2012 R2 Configuration Manager 的载出设备
 
 1. 从门户获取Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">包</a>：
-    1. 在导航窗格中，**选择"设置** \>  \> **终结点设备管理** \> **""载出"。**  
+    1. 在导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **""载出"。**  
     1. 选择Windows 10或Windows 11操作系统。
     1. 在"**部署方法"** 字段中，选择 **"System Center Configuration Manager 2012/2012 R2/1511/1602"。**
-    1. 选择 **"下载程序包**"，然后保存.zip文件。
+    1. 选择 **"下载** 程序包"，然后保存.zip文件。
 
 2. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
@@ -161,9 +162,9 @@ Value: 0 or 1
 
 ## <a name="monitor-device-configuration"></a>监视设备配置
 
-如果你正在使用当前分支Microsoft Endpoint Manager，请使用 Configuration Manager 控制台中的内置 Defender for Endpoint 仪表板。 有关详细信息，请参阅 [Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
+如果你使用的是当前分支Microsoft Endpoint Manager，请使用 Configuration Manager 控制台中的内置 Defender for Endpoint 仪表板。 有关详细信息，请参阅 [Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
 
-如果使用 2012 R2 配置System Center，则监控由两部分组成：
+如果使用的是 System Center 2012 R2 Configuration Manager，则监控由两部分组成：
 
 1. 确认配置包已正确部署，并且正在 (或已成功) 网络中设备上运行配置包。
 

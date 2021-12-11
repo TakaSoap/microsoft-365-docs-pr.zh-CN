@@ -1,7 +1,7 @@
 ---
 title: 易受攻击的设备报告 - 危险和漏洞管理
 description: 显示易受攻击的设备趋势和当前统计信息的报告。 目标是了解设备曝光的目的和范围。
-keywords: Microsoft Defender for Endpoint-tvm 易受攻击的设备， Microsoft Defender for Endpoint， tvm， reduce threat & vulnerability exposure， reduce threat and vulnerability， monitor security configuration
+keywords: 适用于 Endpoint-tvm 易受攻击的设备的 Microsoft Defender， 适用于终结点的 Microsoft Defender， tvm， &漏洞暴露， 减少威胁和漏洞， 监视安全配置
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65a218a78641856cb247d7bcf2d1d69de09d8609
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 1f096433534abb91b9cb14b8db2737dacf566624
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882941"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167978"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>易受攻击的设备报告 - 危险和漏洞管理
 
@@ -29,7 +29,7 @@ ms.locfileid: "60882941"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -68,13 +68,13 @@ ms.locfileid: "60882941"
 
 ## <a name="vulnerable-devices-by-operating-system-platform-graphs"></a>操作系统平台图的易受攻击的设备
 
-因软件漏洞而公开的每个操作系统上的设备数量。
+因软件漏洞而公开的每台操作系统上的设备数量。
 
 :::image type="content" alt-text="一张按操作系统平台显示当前易受攻击的设备的图形，以及一张显示操作系统平台随着时间的易受攻击的设备的图形。" source="images/tvm-report-os.png" lightbox="images/tvm-report-os.png":::
 
 ## <a name="vulnerable-devices-by-windows-version-graphs"></a>按版本图Windows易受攻击的设备
 
-因易受攻击的应用程序或操作系统Windows 10或Windows 11版本上的设备数。
+因易受攻击的应用程序或操作系统Windows 10或Windows 11版本上的设备数量。
 
 ![按版本显示当前易受攻击Windows 10的一个图，以及一个按版本Windows 10易受攻击的设备的图形。](images/tvm-report-version.png)lightbox="images/tvm-report-version.png"：：：
 

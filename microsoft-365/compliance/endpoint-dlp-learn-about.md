@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 文件在合规性解决方案中可见 '
-ms.openlocfilehash: c8f9ee3405d6c79577603cde008796244b3a49ad
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e1c46f89a9a1a8d354facbc6c3f1d095e42b3f5e
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109763"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373760"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -34,6 +34,9 @@ ms.locfileid: "61109763"
 
 > [!TIP]
 > 如果正在查找可移动存储的设备控制，请查看 [Microsoft Defender for Endpoint 设备控制可移动存储访问控制](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control)。
+
+> [!NOTE]
+> 在 Microsoft 365 合规性中，敏感项的 DLP 策略评估会集中进行，因此将策略和策略更新分发到单个设备时不会有时间延迟。 在合规中心更新策略时，通常需要大约一小时才能跨服务同步这些更新。 同步策略更新后，目标设备上的项在下次访问或修改时会自动重新评估。”
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>可监视并对其执行操作的终结点活动
 

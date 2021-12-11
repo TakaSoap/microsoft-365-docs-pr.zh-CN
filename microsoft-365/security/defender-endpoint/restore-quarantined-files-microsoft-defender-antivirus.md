@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a1e5926233d5e1e86101d2f22dfe3e149746a120
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 717efaff970165c52c15e0422e6e2be4bc832d00
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884021"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168422"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>在 Microsoft Defender 防病毒软件中还原隔离的文件
 
@@ -29,12 +29,12 @@ ms.locfileid: "60884021"
 
 
 **适用于：**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 如果Microsoft Defender 防病毒配置为检测和修正设备上的威胁，Microsoft Defender 防病毒隔离可疑文件。 如果确定隔离文件不是威胁，可以还原它。
 
-1. 打开 **Windows 安全中心**。
+1. 打开 **Windows 安全中心。**
 2. 选择 **病毒&威胁防护"，** 然后单击"保护 **历史记录"。**
 3. 在所有最近项的列表中，筛选"**隔离项目"。**
 4. 选择要保留的项，然后执行还原等操作。
@@ -48,4 +48,4 @@ ms.locfileid: "60884021"
 - [查看扫描结果](review-scan-results-microsoft-defender-antivirus.md)
 - [根据文件名、扩展名和文件夹位置配置和验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [在 Microsoft Defender 防病毒 Server 上配置Windows排除项](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [在 Microsoft Defender 防病毒 服务器上配置Windows排除项](configure-server-exclusions-microsoft-defender-antivirus.md)

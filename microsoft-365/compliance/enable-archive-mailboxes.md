@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: 了解如何使用合规性中心来启用存档邮箱，以支持组织的邮件保留、电子数据展示和法定保留要求。
-ms.openlocfilehash: 938410a8f12e62549bf3ec8e8778036440df5aea
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1e92c3c8a4c19aa33124b930574f9646ac5bfabe
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283998"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374300"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>在合规性中心中启用存档邮箱
 
@@ -136,11 +136,17 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 你可以对用户的存档邮箱运行自动诊断检查，以识别任何问题和建议的解决方法。
 
-要运行诊断检查，请转到“[运行测试：存档邮箱](https://aka.ms/PillarArchiveMailbox)”。
+若要运行诊断检查，请单击下面的按钮。 
+
+> [!div class="nextstepaction"]
+> [运行测试: 存档邮箱](https://aka.ms/PillarArchiveMailbox)
 
 ![在存档邮箱上运行诊断。](../media/ArchiveMailboxDiagnostics.png)
 
 将在 Microsoft 365 管理中心中打开浮出控件页面。 输入要检查的邮箱的电子邮件地址，然后单击“**运行测试**”。
+
+> [!NOTE]
+> 必须是 Microsoft 365 全局管理员才能使用存档邮箱诊断检查。 此外，此功能不适用于 Microsoft 365 政府云、由世纪互联运营的 Microsoft 365 或 Microsoft 365 德国。
 
 ## <a name="more-information"></a>更多信息
 

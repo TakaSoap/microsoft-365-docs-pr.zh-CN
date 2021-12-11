@@ -17,19 +17,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a8f30a42fac3cc52de38e06b4193ab4098258262
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 9d9b764425807f45f41f0be5c57ad872223e0c3f
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478897"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166298"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的安装问题
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
@@ -125,7 +125,7 @@ service mdatp status
 
     其中 `<systemd_path>` 适用于 `/lib/systemd/system` Ubuntu 和 Debian 分发，/usr/lib/systemd/system' 用于 Rhel、CentOS、Oracle 和 SLES。 然后重新运行步骤 2。
 
-4. 如果上述步骤不起作用，请检查是否安装了 SE 提供了实施模式。 如果是，请尝试将此设置设置为 (模式) 禁用模式。 可以通过在文件中将 参数设置为"许可"或"禁用"，然后 `SELINUX` `/etc/selinux/config` 重新启动来完成。 有关更多详细信息，请查看 se分页的"人名"页面。
+4. 如果上述步骤不起作用，请检查是否安装了 SE 提供了实施模式。 如果是这样，请尝试将它设置为允许 (模式) 禁用模式。 可以通过在文件中将 参数设置为"许可"或"禁用"，然后 `SELINUX` `/etc/selinux/config` 重新启动来完成。 有关更多详细信息，请查看 se分页的"人名"页面。
 现在，请尝试使用步骤 2 重新启动 mdatp 服务。 在尝试配置更改并重新启动后，出于安全考虑，立即还原配置更改。
 
 5. 如果 `/opt` 目录是符号链接，请为 创建绑定装载 `/opt/microsoft` 。

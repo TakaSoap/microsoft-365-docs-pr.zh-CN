@@ -1,6 +1,6 @@
 ---
 title: 曝光分数（以危险和漏洞管理
-description: 公开危险和漏洞管理分数反映了你的组织对网络安全威胁的易受攻击程度。
+description: 公开危险和漏洞管理分数反映了组织对网络安全威胁的易受攻击程度。
 keywords: 曝光分数， Microsoft Defender 终结点曝光分数， Microsoft Defender 终结点电视曝光分数， 组织曝光分数， 电视组织曝光分数， 危险和漏洞管理， Microsoft Defender for Endpoint
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,26 +16,26 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56b994513d28c2714aecba05453af5c0a62a3912
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: a82d49e7ac6f87847e7ac61cc4451ad63c2bdeef
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881682"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168386"
 ---
-# <a name="exposure-score---threat-and-vulnerability-management"></a>曝光评分 - 危险和漏洞管理
+# <a name="exposure-score---threat-and-vulnerability-management"></a>曝光分数 - 危险和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
-你的曝光分数显示在威胁和漏洞管理[门户的](tvm-dashboard-insights.md)"威胁Microsoft 365 Defender仪表板中。 它反映了你的组织对网络安全威胁的易受攻击程度。 低曝光分数意味着你的设备更容易被利用。
+你的曝光分数显示在威胁和漏洞管理[门户](tvm-dashboard-insights.md)的"威胁Microsoft 365 Defender仪表板中。 它反映了你的组织对网络安全威胁的易受攻击程度。 低曝光分数意味着你的设备更容易被利用。
 
 - 快速了解和识别有关组织中安全状态的高层次要点。
 - 检测和响应需要调查或操作以改进当前状态的区域。
@@ -45,7 +45,7 @@ ms.locfileid: "60881682"
 
 ![曝光分数卡。](images/tvm_exp_score.png)
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>如何工作
 
 曝光分数分为以下级别：
 

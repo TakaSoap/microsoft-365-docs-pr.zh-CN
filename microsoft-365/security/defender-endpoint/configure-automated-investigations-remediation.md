@@ -16,19 +16,19 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 875e5b929014c4ae442dd4232f73cc45abb9d217
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: f98461071de0db8179339b28b1c67c2bc9437c52
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555328"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166502"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置自动调查和修正功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
@@ -42,7 +42,7 @@ ms.locfileid: "60555328"
 
 ## <a name="turn-on-automated-investigation-and-remediation"></a>启用自动调查和修正
 
-1. 作为全局管理员或安全管理员，转到Microsoft Defender 安全中心 () <https://securitycenter.windows.com> 并登录。
+1. 作为全局管理员或安全管理员，转到Microsoft Defender 安全中心 () <https://securitycenter.windows.com> 登录。
 2. 在导航窗格中，选择 **"设置"。**
 3. 在"**常规"** 部分，选择"**高级功能"。**
 4. 同时启用 **自动调查和****自动解决警报**。
@@ -55,7 +55,7 @@ ms.locfileid: "60555328"
    - 为设备组指定名称和说明。
    - 在 **"自动化级别"列表中**，选择一个级别，例如"完全 **- 自动修正威胁"。** 自动化级别确定是自动执行修正操作，还是仅在批准后执行修正操作。 若要了解更多信息，请参阅 [自动化调查和修正中的自动化级别](automation-levels.md)。
    - 在 **"成员** "部分，使用一个或多个条件来标识和包括设备。
-   - 在 **"用户访问"** 选项卡上 [，Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)应有权访问所创建设备组的用户组。
+   - 在 **"用户访问"**[选项卡上，Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)应有权访问所创建设备组的用户组。
 4. 完成 **设备** 组的设置后，选择"完成"。
 
 ## <a name="next-steps"></a>后续步骤

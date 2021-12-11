@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 07091dfaa997ff0415ecdb981b0b26f301cf0dce
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 1e5eafd86d3ce052655a72668bfc17083dff14f4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587169"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166214"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -34,7 +34,7 @@ ms.locfileid: "60587169"
 
 实时响应使安全运营团队可以即时访问 (也称为计算机) 使用远程 shell 连接的设备。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。
 
-实时响应旨在通过使安全运营团队能够收集取证数据、运行脚本、发送可疑实体进行分析、修正威胁和主动搜寻新出现的威胁来增强调查。
+实时响应旨在增强调查，使安全运营团队能够收集取证数据、运行脚本、发送可疑实体进行分析、修正威胁并主动搜寻新出现的威胁。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW]
 
@@ -57,7 +57,7 @@ ms.locfileid: "60587169"
   - **Windows 10 & 11**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
     - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [版本 1809 (RS 5) ](/windows/whats-new/whats-new-windows-10-version-1809) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [版本 1809 (RS 5 ](/windows/whats-new/whats-new-windows-10-version-1809)) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
@@ -65,13 +65,13 @@ ms.locfileid: "60587169"
   
   - **Linux** - 仅适用于公共预览版，最低要求版本：101.45.13 
     
-  - **Windows Server 2012 R2** - 使用 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+  - **Windows Server 2012 R2** - 具有 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
   
   - **Windows Server 2016** - 使用 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
 
   - **Windows Server 2019**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
-    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
     
   - **Windows Server 2022**
 
@@ -112,7 +112,7 @@ ms.locfileid: "60587169"
   只有已预配了相应权限的用户才能启动会话。 有关角色分配详细信息，请参阅 [创建和管理角色](user-roles.md)。
 
   > [!IMPORTANT]
-  > 将文件上载到库的选项仅适用于具有"管理安全管理设置"权限的用户。
+  > 将文件上载到库的选项仅适用于具有"管理安全性设置"权限的用户。
   > 对于仅具有委派权限的用户，按钮显示为灰色。
 
   根据已授予的角色，可以运行基本或高级实时响应命令。 用户权限由 RBAC 自定义角色控制。
@@ -121,7 +121,7 @@ ms.locfileid: "60587169"
 
 在设备上启动实时响应会话时，将打开仪表板。 仪表板提供有关会话的信息，如下所示：
 
-- Who创建了会话
+- Who会话
 - 会话开始时间
 - 会话的持续时间
 
@@ -163,20 +163,20 @@ ms.locfileid: "60587169"
 | cd  | 更改当前目录。  | Y  | Y | Y |
 | cls  | 清除控制台屏幕。  | Y  | Y  | Y  |
 | connect  | 启动到设备的实时响应会话。  | Y  | Y  | Y  |
-| connections  | 显示所有活动连接。  | Y  | N | 网络 |
+| connections  | 显示所有活动连接。  | Y  | N | N |
 | dir  | 显示目录中的文件和子目录的列表。  | Y  | Y  |Y  |
-| drivers  | 显示设备上安装的所有驱动程序。  | Y |  N | 网络  |
+| drivers  | 显示设备上安装的所有驱动程序。  | Y |  N | N  |
 | fg `<command ID>`  | 将指定的作业放在前台的前台，使其成为当前作业。  注意：fg 从作业（而不是 PID）接受一个可用的"命令 ID"  | Y  | Y  | Y  |
 | fileinfo  | 获取有关文件的信息。  |Y  | Y  | Y  |
 | findfile  | 在设备上按给定名称查找文件。  | Y | Y  | Y  |
 | getfile <file_path>  | 下载文件。  | Y  | Y  | Y  |
 | 帮助  | 提供实时响应命令的帮助信息。  |Y  | Y | Y  |
 | jobs  | 显示当前运行的作业及其 ID 和状态。  | Y  | Y | Y |
-| 持久性  | 显示设备上所有已知的持久性方法。  | Y  | N | 网络 |
+| 持久性  | 显示设备上所有已知的持久性方法。  | Y  | N | N |
 | processes  | 显示设备上运行的所有进程。  | Y  | Y  | Y  |
-| 注册表  | 显示注册表值。  | Y  | N | 网络 |
-| scheduledtasks  | 显示设备上的所有计划任务。  | Y | N | 网络 |
-| 服务  | 显示设备上的所有服务。  | Y  | N | 网络 |
+| 注册表  | 显示注册表值。  | Y  | N | N |
+| scheduledtasks  | 显示设备上的所有计划任务。  | Y | N | N |
+| 服务  | 显示设备上的所有服务。  | Y  | N | N |
 | trace  | 将终端的日志记录模式设置为调试。  | Y  | Y  |Y  |
 
 ### <a name="advanced-commands"></a>高级命令
@@ -189,15 +189,15 @@ ms.locfileid: "60587169"
 
 | 命令  | 说明  | Windows 和 Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
-| analyze  | 使用各种描述引擎分析实体以作出裁定。  | Y  | N  | 网络  |
-| collect  | 从计算机收集取证包  | 网络  | Y  | Y  |
-| isolate  | 断开设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接  | 网络  | Y  | N  |
-| release  | 解除设备网络隔离  | 网络  | Y  | N  |
+| analyze  | 使用各种描述引擎分析实体以作出裁定。  | Y  | N  | N  |
+| collect  | 从计算机收集取证包  | N  | Y  | Y  |
+| isolate  | 断开设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接  | N  | Y  | N  |
+| release  | 解除设备网络隔离  | N  | Y  | N  |
 | run  | 从设备的库中运行 PowerShell 脚本。  | Y  | Y  | Y  |
 | 库  | 列出上载到实时响应库的文件。  | Y  | Y  | Y  |
 | putfile  | 将库中的文件置于设备。 文件保存在工作文件夹中，在设备默认重启时将被删除。  | Y  | Y  | Y  |
 | 修正  | 修正设备上的实体。 修正操作将因实体类型而异：File： delete Process： stop， delete image file Service： stop， delete image file Registry entry： delete Scheduled task： remove Startup folder item： delete file NOTE： This command has a prerequisite command. 可以将 -auto 命令与修正结合使用，以自动运行必备组件命令。  | Y  | Y  | Y  |
-| scan  | 断开设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接  | 网络  | Y  | Y  |
+| scan  | 断开设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接  | N  | Y  | Y  |
 | undo  | 还原已修正的实体。  | Y  | Y  | Y  |
 
 
@@ -234,7 +234,7 @@ ms.locfileid: "60587169"
 
 |命令|功能|
 |---|---|
-|`getfile "C:\windows\some_file.exe" &`|开始在后台下载名为 *some_file.exe* 的文件。|
+|`getfile "C:\windows\some_file.exe" &`|开始下载 *在后台some_file.exe文件* 。|
 |`fg 1234`|将命令 ID 为 *1234* 的下载返回到前台。|
 |
 
@@ -306,7 +306,7 @@ ms.locfileid: "60587169"
   <command name> -type file -id <file path> - auto
   ```
 
-  或
+  或者
 
   ```powershell
   remediate file <file path> - auto`

@@ -15,19 +15,20 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 44492fb0f763f81a743baf5cce72e9f19f86da48
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 61b275e5e42a10743eee744ab44bce48a25fa2eb
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111359"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166468"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>确保设备配置正确
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)。
@@ -44,7 +45,7 @@ ms.locfileid: "61111359"
 
 *设备配置管理页*
 
-可以通过直接、深层链接到 Microsoft Intune 和 Microsoft 365 Defender 门户上的设备管理页面，在组织级别跟踪配置状态并快速采取措施，以响应载入覆盖范围不佳、合规性问题以及攻击面缓解性能<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">不佳</a>的问题。
+可以通过直接、深层链接到 Microsoft Intune 和<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>门户上的设备管理页面，在组织一级跟踪配置状态并快速采取措施，以响应载入范围不佳、合规性问题以及攻击面缓解的不优化。
 
 在执行此操作时，您将受益于：
 
@@ -57,17 +58,17 @@ ms.locfileid: "61111359"
 
 设备配置管理与 Intune 设备管理密切合作，以建立组织中设备的清单和基线安全配置。 你将能够在 Intune 托管的设备上跟踪和管理Windows问题。
 
-在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows注册选项。 有关 Intune 注册选项的详细信息，请阅读有关[为设备Windows注册的信息](/intune/windows-enroll)。
+在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows注册选项。 有关 Intune 注册选项的详细信息，请阅读有关[为设备设置Windows的信息](/intune/windows-enroll)。
 
 > [!NOTE]
-> 若要Windows设备注册到 Intune，管理员必须已分配有许可证。 [阅读有关分配设备注册许可证的信息](/intune/licenses-assign)。
+> 若要Windows设备注册到 Intune，管理员必须已分配有许可证。 [了解如何为设备注册分配许可证](/intune/licenses-assign)。
 
 > [!TIP]
 > 若要通过 Intune 优化设备管理， [请将 Intune 连接到 Defender for Endpoint](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。
 
 ## <a name="obtain-required-permissions"></a>获取所需权限
 
-默认情况下，只有已分配有 Azure AD 上的全局管理员或 Intune 服务管理员角色的用户才能管理和分配载入设备和部署安全基线所需的设备配置文件。
+默认情况下，只有分配了 Azure AD 上的全局管理员或 Intune 服务管理员角色的用户才能管理和分配载入设备和部署安全基线所需的设备配置文件。
 
 如果已分配其他角色，请确保你拥有必要的权限：
 

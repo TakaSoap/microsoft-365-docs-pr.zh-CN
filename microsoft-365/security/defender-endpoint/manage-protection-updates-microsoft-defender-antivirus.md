@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: db3bdb7fc7c4dec7697fc8881687f70ad21e0642
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 2636756a3a91156041843c1375211a8640c5e701
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148874"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168506"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>管理 Microsoft Defender 防病毒软件保护更新源
 
@@ -28,7 +28,8 @@ ms.locfileid: "61148874"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=22154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -160,7 +161,7 @@ SignatureDefinitionUpdateFileSharesSource
 
 ## <a name="what-if-were-using-a-third-party-vendor"></a>如果我们使用的是第三方供应商，该做什么？
 
-本文介绍如何配置和管理 Microsoft Defender 防病毒。 但是，第三方供应商可用于执行这些任务。
+本文介绍如何配置和管理更新程序Microsoft Defender 防病毒。 但是，第三方供应商可用于执行这些任务。
 
 例如，假定 Contoso 已雇用 Fabrikam 来管理其安全解决方案，其中包括Microsoft Defender 防病毒。 Fabrikam 通常Windows [Management Instrumentation、PowerShell](./use-wmi-microsoft-defender-antivirus.md) [cmdlet](./use-powershell-cmdlets-microsoft-defender-antivirus.md)或 Windows[命令行](./command-line-arguments-microsoft-defender-antivirus.md)来部署修补程序和更新。
 
@@ -195,7 +196,7 @@ SignatureDefinitionUpdateFileSharesSource
 
 6. 提取文件。
 
-7. 将文件SignatureDownloadCustomTask.ps1复制到之前创建的文件夹 C：\Tool\PS-Scripts\ 。
+7. 将文件SignatureDownloadCustomTask.ps1之前创建的文件夹 C：\Tool\PS-Scripts\ 。
 
 8. 使用命令行设置计划任务。
 
