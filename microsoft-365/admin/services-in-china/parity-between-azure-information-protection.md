@@ -22,7 +22,7 @@ description: 深入了解适用于由世纪互联运营的 Office 365 的 Azure 
 monikerRange: o365-21vianet
 ms.openlocfilehash: 7d5faeef81c59e068a1a61272f267379b9ce23f3
 ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/10/2021
 ms.locfileid: "61401434"
@@ -37,9 +37,9 @@ ms.locfileid: "61401434"
 
 以下列表包含世纪互联运营的 Office 365 的 AIP 与 2021 年 1 月前的商业产品之间的现有缺陷：
 
-- Active Directory Rights Management Services (11731.10000) Microsoft 365 企业应用版 (内部版本 11731.10000 或更高版本) 。 Office Professional Plus不支持 AD RMS。
+- 仅 Microsoft 365 企业应用版（内部版本 11731.10000 或更高版本）支持 Active Directory Rights Management Services (AD RMS) 加密。 Office Professional Plus 不支持 AD RMS。
 
-- 从 AD RMS 到 AIP 的迁移当前不可用。
+- 从 AD RMS 迁移到 AIP 目前不可用。
   
 - 支持在商业云中与用户共享受保护的电子邮件。
   
