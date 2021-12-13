@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,22 +16,22 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: caa6013a68ab8ed50b16d26dcc24e91ac7d55616
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 663ecf1b998658829e604fd5c9160b4bf0cd09ae
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374890"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421098"
 ---
-# <a name="create-a-new-policy-in-microsoft-defender-for-business"></a>在 Microsoft Defender for Business 中创建新策略
+# <a name="create-a-new-policy-in-microsoft-defender-for-business-preview"></a>在 Microsoft Defender for Business 预览版中 (策略) 
 
 > [!IMPORTANT]
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未包含 (一些) 。
 
-Microsoft Defender for Business 包括默认策略，这些策略使用推荐的设置从一开始保护你的公司设备。 例如，**你具有使用** 建议的安全设置构建的下一代保护策略和防火墙策略。 但不限于默认策略。 也可以创建新策略，如本文中所述。
+Microsoft Defender for Business (预览) 包括默认策略，这些策略使用推荐设置保护公司设备，自第一天开始。 例如，**你具有使用** 建议的安全设置构建的下一代保护策略和防火墙策略。 但不限于默认策略。 也可以创建新策略，如本文中所述。
 
 > [!TIP]
-> 如果要编辑现有策略，请参阅在 Microsoft [Defender for Business 中查看或编辑策略](mdb-view-edit-policies.md)。
+> 如果要编辑现有策略，请参阅在 Microsoft Defender for Business 中查看或[编辑策略 (预览) 。 ](mdb-view-edit-policies.md)
 
 ## <a name="create-a-new-policy"></a>创建新策略
 
@@ -58,7 +58,7 @@ Microsoft Defender for Business 包括默认策略，这些策略使用推荐的
 
    若要了解有关设备组的信息，请参阅 。 
 
-8. 在"**配置设置"** 选项卡上，指定策略的设置，然后选择"下一步 **"。** 有关各个设置详细信息，请参阅 Microsoft [Defender for Business 的配置设置](mdb-next-gen-configuration-settings.md)。
+8. 在"**配置设置"** 选项卡上，指定策略的设置，然后选择"下一步 **"。** 有关各个设置的详细信息，请参阅 Microsoft [Defender for Business (预览版) 。 ](mdb-next-gen-configuration-settings.md)
 
 9. 在 **"查看策略"** 选项卡上，查看常规信息、目标设备和配置设置。 
 
@@ -69,7 +69,7 @@ Microsoft Defender for Business 包括默认策略，这些策略使用推荐的
 
 选择以下一个或多个任务：
 
-- [开始使用 Defender for Business](mdb-get-started.md)
+- [开始使用 Defender for Business (预览) ](mdb-get-started.md)
 
 - [查看或编辑策略](mdb-view-edit-policies.md)
 

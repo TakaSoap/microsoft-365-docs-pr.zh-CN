@@ -15,18 +15,20 @@ ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
-ms.custom: seo-marvel-apr2020
-description: 使用 OFFICE 365 中的 DLP 报告查看 DLP 策略匹配项、替代或误报的数量，并查看它们是否随着时间的推移呈上升或下降趋势。
-ms.openlocfilehash: 711ed74ca53ec09be6b2fd5738246dffab332307
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
+description: 使用 DLP 报告中Office 365查看 DLP 策略匹配项、替代或误报的数量，并查看它们是否随着时间的推移呈上升或下降趋势。
+ms.openlocfilehash: cbf03a4d981d4b37bd22db8fa08c728b77318ddf
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264932"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423616"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>查看数据丢失防护报告
 
-在 DLP (策略 (数据丢失防护) ，您需要验证它们是否正常工作，并帮助您保持合规性。 使用安全与合规中心中的 DLP 报告 &amp; ，可以快速查看：
+在 DLP (策略) 数据丢失防护后，您需要验证它们是否正常工作，并帮助您保持合规性。 使用安全与合规中心中的 DLP 报告 &amp; ，可以快速查看：
   
 - **DLP 策略匹配** 此报告显示随着时间的推移 DLP 策略匹配项的计数。 你可以按日期、位置、策略或操作筛选报表。 您可以使用此报表实现以下目的： 
     
@@ -78,17 +80,17 @@ ms.locfileid: "60264932"
 
 若要在安全与合规&查看 DLP 报告，您必须获得以下权限：
 
-- **安全读者** 角色Exchange管理中心。 默认情况下，此角色分配给管理中心中的组织管理和安全读者Exchange组。
+- **安全读者** 角色在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange中心</a>。 默认情况下，此角色分配给管理中心中的组织管理和安全读者Exchange组。
 
 - **安全与合规中心** 中的"仅查看 DLP 合规性&角色。 默认情况下，此角色分配给安全与合规中心中的合规性管理员、组织管理、安全管理员和安全读者&组。
 
-- **"仅查看收件人"** 角色Exchange管理中心。 默认情况下，此角色分配给管理中心中的合规性管理、组织View-Only组织管理Exchange组。
+- **View-Only Recipients** role in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. 默认情况下，此角色分配给管理中心中的合规性管理、组织View-Only组织管理Exchange组。
 
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>查找 DLP 报表的 cmdlet
 
 若要使用安全 &amp; 合规中心的大多数 cmdlet，你需要执行以下操作：
   
-1. [连接远程 &amp; PowerShell 访问安全与合规中心](/powershell/exchange/connect-to-scc-powershell)
+1. [连接安全 &amp;使用远程 PowerShell 的合规中心](/powershell/exchange/connect-to-scc-powershell)
     
 2. 使用以下任一 [安全 &amp; 与合规中心 cmdlet](/powershell/exchange/exchange-online-powershell)
     

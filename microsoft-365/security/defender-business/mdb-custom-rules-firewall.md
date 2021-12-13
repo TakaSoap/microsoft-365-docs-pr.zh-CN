@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,21 +16,21 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: d4c064623cd00a45dec189aa55a19ab51b26d01b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c397bd1cee5392ce0f9de45f63d6bd11cb40b29f
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374889"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423871"
 ---
-# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>在 Microsoft Defender for Business 中管理防火墙策略的自定义规则
+# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business-preview"></a>在 Microsoft Defender for Business 预览版中管理防火墙策略 (规则) 
 
 > [!IMPORTANT]
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未包含 (一些) 。
+> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未 (一些) 。
 
-Microsoft Defender for Business 包括防火墙策略，可帮助保护设备免受不需要的网络流量的影响。 可以使用自定义规则定义防火墙策略的例外。 也就是说，您可以使用自定义规则阻止或允许特定连接。
+Microsoft Defender for Business (预览) 包括防火墙策略，可帮助保护设备免受不需要的网络流量的影响。 可以使用自定义规则定义防火墙策略的例外。 也就是说，您可以使用自定义规则阻止或允许特定连接。
 
-若要了解有关防火墙策略和设置的信息，请参阅 [Microsoft Defender for Business 中的防火墙](mdb-firewall.md)。
+若要了解有关防火墙策略和设置的详细信息，请参阅 Microsoft Defender for Business 中的防火墙 ([预览) 。 ](mdb-firewall.md)
 
 **本文介绍如何：**
 
@@ -102,8 +102,8 @@ Microsoft Defender for Business 包括防火墙策略，可帮助保护设备免
 
 ## <a name="next-steps"></a>后续步骤
 
-- [在 Microsoft Defender for Business 中查看和管理事件](mdb-view-manage-incidents.md)
+- [在 Microsoft Defender for Business 预览版中查看 (事件) ](mdb-view-manage-incidents.md)
 
-- [响应和缓解 Microsoft Defender for Business 中的威胁](mdb-respond-mitigate-threats.md)
+- [在 Microsoft Defender for Business 预览版中响应 (缓解) ](mdb-respond-mitigate-threats.md)
 
 - [查看操作中心中的修正操作](mdb-review-remediation-actions.md)

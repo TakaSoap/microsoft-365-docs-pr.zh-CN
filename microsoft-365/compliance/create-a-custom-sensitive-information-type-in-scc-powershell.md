@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: 7ac39c068060fec945d04137688e6d9bb4b81655
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 4139a7cd8f2a87bf8db25e9b23201132e321b31d
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61220988"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422563"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "61220988"
 有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 
 > [!NOTE]
-> 如果使用与号 (&) 自定义敏感信息类型中关键字的一部分，请注意存在一个已知问题。 您应该添加一个附加术语，该字符周围有空格，以确保正确标识该字符，例如 L & P _而不是_ L&P。
+> 如果使用与号 (&) 作为自定义敏感信息类型中关键字的一部分，请注意存在一个已知问题。 您应该在字符周围添加一个附加的术语，并添加空格以确保正确标识该字符，例如 L & P _而不是_ L&P。
 
 ## <a name="sample-xml-of-a-rule-package"></a>规则包 XML 示例
 
@@ -397,7 +397,7 @@ Microsoft 365公开常用 SIT 的函数处理器作为验证程序。 以下是�
 </Entity>
 ```
 
-Microsoft 365两个通用验证程序
+Microsoft 365提供了两个泛型验证程序
 
 ### <a name="checksum-validator"></a>校验和验证程序
 
@@ -431,7 +431,7 @@ Microsoft 365两个通用验证程序
   
 ## <a name="changes-for-exchange-online"></a>针对 Exchange Online 的变化
 
-之前，你可能使用 Exchange Online PowerShell 来导入 DLP 的自定义敏感信息类型。而现在，自定义敏感信息类型可同时在 Exchange 管理中心和安全与合规中心使用。作为该项改进的一部分，你应使用合规中心 PowerShell 来导入自定义敏感信息类型 - 不可再从 Exchange PowerShell 中导入它们。自定义敏感信息类型将继续像之前一样发挥作用，但是，在合规中心内对自定义敏感信息类型所做更改可能最多 1 个小时后才会在 Exchange 管理中心内显示。
+以前，你可能已使用过 Exchange Online PowerShell 为 DLP 导入自定义敏感信息类型。 现在，自定义敏感信息类型可在管理中心和合规Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">使用</a>。 此次改进后，应使用合规中心 PowerShell 导入自定义敏感信息类型，不再可从 Exchange PowerShell 导入它们。 自定义敏感信息类型将像往常一样正常工作，但是，在合规中心进行的更改可能需要至多一小时才会出现在 Exchange 管理中心。
   
 请注意，在合规中心中，可以使用 **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** cmdlet 上载规则包。 （以前，在 Exchange 管理中心中，使用的是 **ClassificationRuleCollection**`cmdlet。） 
   
@@ -488,7 +488,7 @@ Microsoft 365两个通用验证程序
   
 - 正则表达式中的 lookbehind 或 lookahead 断言应仅具有固定长度。 可变长度断言将导致错误。
     
-  例如，" (？<=^|\s|) "无法通过验证，因为其中的第一个选项是"^"，其长度为零，而下一个 _tow 选项 ("\s"_ 和") "长度为 1。 此正则表达式的替代方法是" (？：^| (？<=\s|_) ) "
+  例如，" (？<=^|\s|) "无法通过验证，因为其中的第一个选项是"^"，其长度为零，而下一个 tow 选项 _('\s'_ 和 ') 长度为 1。 此正则表达式的替代方法是" (？：^| (？<=\s|_) ) "
   
 - 不得以匹配所有项的交替符“|”开头或结尾，因为这被视为空匹配。
     

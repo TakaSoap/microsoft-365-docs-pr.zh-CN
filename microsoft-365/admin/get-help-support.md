@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何为 Microsoft 365 商业版订阅获取在线或电话支持。 必须是企业订阅的管理员才能获得支持。
-ms.openlocfilehash: 6109498aed5522e0ad7c128208463f33f99eeba2
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 2be324661fa80ed58b9f9e5dc351726ad0c9f69a
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370028"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422023"
 ---
 # <a name="get-support"></a>获取支持
 
@@ -223,4 +223,4 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 
 [查找文档和培训](../business-video/find-help-answers.md)（文章）\
 [员工快速设置](../business-video/employee-quick-setup.md)（文章）\
-[Microsoft 365 商业高级版设置概述](../business-video/setup-overview.md)（视频）
+[Microsoft 365 商业高级版设置概述](setup/plan-your-setup.md)（视频）

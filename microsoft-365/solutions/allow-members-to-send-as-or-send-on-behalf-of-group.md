@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - m365solution-collabgovernance
+ms.custom: admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: 了解如何允许团队成员以组Microsoft 365或代表组发送电子邮件Microsoft 365发送电子邮件。
-ms.openlocfilehash: 54fe4691f4523934e1850ebbf0711efaa3eb6034
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: a21e30ef613f557d1206ada5bc9ab4be8a083834
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064059"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421578"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允许成员以组的名义发送或代表组发送
 
@@ -31,7 +32,7 @@ ms.locfileid: "61064059"
 
 本文介绍全局管理员或Exchange管理员如何设置这些权限。
   
-例如，如果 Megan Bowen 是 **Training** Microsoft 365 组的一部分，并且对该组具有"发送为"权限，那么如果她以组发送电子邮件，则看起来就像培训组已发送电子邮件一样。 
+例如，如果 Megan Bowen 是 **Training** Microsoft 365 组的一部分，并且对该组具有"发送为"权限，那么如果作为组发送电子邮件，则看起来是 **"培训**"组已发送电子邮件。 
   
 "**代表发送**"权限允许用户代表组Microsoft 365发送电子邮件。 例如，如果 Alex Wilber 是 Marketing **Microsoft 365** 组的一部分，并且具有"代表发送"权限并作为组发送电子邮件，则电子邮件看起来好像是由 **Alex Wilber** 代表 Marketing 发送的。
 
@@ -43,9 +44,9 @@ ms.locfileid: "61064059"
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>允许成员以组发送电子邮件
 
-本部分介绍如何允许用户在 Exchange[管理](https://go.microsoft.com/fwlink/p/?linkid=2059104)中心中以组 (EAC) Exchange Online。
+本部分介绍如何允许用户在 Exchange 管理中心内以组 (<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">EAC</a>) 电子邮件Exchange Online。
   
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center，</a>go to **Recipients** \> **Groups**.
+1. In the Exchange admin center， go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
     
 2. 选择 **"编辑** ![ 编辑组图标"。  ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 上要允许用户发送为 的 。 
     
@@ -61,9 +62,9 @@ ms.locfileid: "61064059"
   
 ## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>允许成员代表组发送电子邮件
 
-本部分介绍如何允许用户代表 Exchange 管理中心中的组发送电子邮件 (EAC) Exchange Online。
+本部分介绍如何允许用户代表 Exchange 管理中心中的组发送电子邮件<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank"> (EAC</a>) Exchange Online。
   
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center，</a>go to **Recipients** \> **Groups**.
+1. In the Exchange admin center， go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
     
 2. 选择 **"编辑** ![ 编辑组图标"。](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 上要允许用户发送为 的 。 
     

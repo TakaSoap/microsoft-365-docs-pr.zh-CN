@@ -1,5 +1,5 @@
 ---
-title: 查看 Microsoft Defender for Business 中的修正操作
+title: '查看 Microsoft Defender for Business 预览版中的 (修正) '
 description: 查看自动采取的修正或在操作中心等待审批的修正
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5550892a1d16ff8872d2a634f8a7560932cef6e0
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 314bb913a161e21ef61c09568cd87aad61ccd10e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375034"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421866"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>查看操作中心中的修正操作
 
 > [!IMPORTANT]
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向可能介绍 Microsoft Defender for Business 预览版中未包含的一些 (内容) 。
+> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未包含 (一些) 。
 
 检测到威胁时，修正操作将生效。 根据特定威胁和安全设置的配置方式，可能会自动执行修正操作，或仅在获得批准后执行修正操作。 修正操作的示例包括将文件发送到隔离区、阻止进程运行以及删除计划任务。 所有修正操作在操作中心进行跟踪。
 
@@ -49,7 +49,7 @@ ms.locfileid: "61375034"
 
 ## <a name="remediation-actions"></a>修正操作
 
-Microsoft Defender for Business 包括若干修正操作。 这些操作包括手动响应操作、自动调查后的操作和实时响应操作。
+Microsoft Defender for Business (预览) 包括若干修正操作。 这些操作包括手动响应操作、自动调查后的操作和实时响应操作。
 
 下表列出了可用的修正操作：
 
@@ -61,6 +61,6 @@ Microsoft Defender for Business 包括若干修正操作。 这些操作包括�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [响应和缓解 Microsoft Defender for Business 中的威胁](mdb-respond-mitigate-threats.md)
+- [在 Microsoft Defender for Business 预览版中响应 (缓解) ](mdb-respond-mitigate-threats.md)
 
-- [在 Microsoft Defender for Business 中管理设备](mdb-manage-devices.md)
+- [在 Microsoft Defender for Business 预览版中 (设备) ](mdb-manage-devices.md)

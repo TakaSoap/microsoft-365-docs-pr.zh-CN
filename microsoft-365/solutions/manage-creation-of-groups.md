@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: 了解如何控制哪些用户可以创建Microsoft 365组。
-ms.openlocfilehash: cea1529071cce92e2b6fad74d4946d1e4c7f3594
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 279c8826599bf2a41690c95c4202f81fe3206ff4
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064315"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422095"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理可创建 Microsoft 365 组的人员
 
@@ -42,29 +42,29 @@ ms.locfileid: "61064315"
 - Microsoft Stream
 - Planner
 - Power BI (经典) 
-- Project Web/路线图
+- Project/路线图
 
 本文中的步骤不会阻止某些角色的成员创建组。 Office 365全局管理员可以通过 Microsoft 365 管理中心、Planner、Exchange 和 SharePoint Online 创建组。 其他角色可以通过有限的方式创建组，如下所示。
 
 - Exchange管理员：Exchange管理中心，Azure AD
-- 合作伙伴层 1 支持：Microsoft 365 管理中心、Exchange管理中心、Azure AD
+- 合作伙伴第 1 层支持：Microsoft 365 管理中心、Exchange管理中心、Azure AD
 - 合作伙伴第 2 层支持：Microsoft 365 管理中心、Exchange管理中心、Azure AD
 - 目录编写器：Azure AD
 - SharePoint管理员：SharePoint管理中心，Azure AD
 - Teams服务管理员：Teams管理中心，Azure AD
-- 用户管理员：Microsoft 365 管理中心Azure AD
+- 用户管理员：Microsoft 365 管理中心、Azure AD
 
-如果您是其中一个角色的成员，您可以为受限Microsoft 365组，然后将该用户分配为组的所有者。
+如果您是这些角色之一的成员，您可以为受限Microsoft 365组，然后将该用户分配为组的所有者。
 
 ## <a name="licensing-requirements"></a>许可要求
 
-若要管理创建组的用户，以下人员需要Azure AD Premium许可证Azure AD分配的基本 EDU 许可证：
+若要管理创建组的用户，以下人员Azure AD Premium分配Azure AD基本 EDU 许可证：
 
 - 配置这些组创建设置的管理员
 - 允许创建组的组的成员
 
 > [!NOTE]
-> 若要[详细了解如何](/azure/active-directory/fundamentals/license-users-groups)分配 Azure 许可证，请参阅Azure Active Directory门户中的分配或删除许可证。
+> 若要详细了解如何分配 Azure[许可证，请参阅](/azure/active-directory/fundamentals/license-users-groups)Azure Active Directory门户中的分配或删除许可证。
 
 以下人员不需要分配Azure AD Premium或Azure AD基本 EDU 许可证：
 
@@ -96,7 +96,7 @@ ms.locfileid: "61064315"
 
 - 如果已安装预览版，请运行 `Install-Module AzureADPreview`，确保它是此模块的最新版本。
 
-将以下脚本复制到文本编辑器（如 记事本 或[Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)中）。
+将以下脚本复制到文本编辑器（如 记事本 或[Windows PowerShell ISE 中](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)）。
 
 将 *\<GroupName\>* 替换为您创建的组的名称。 例如：
 

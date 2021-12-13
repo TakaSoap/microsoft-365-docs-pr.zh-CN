@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,19 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: d0753b5833ec2bdcff0f790a605e5caed72fc9c9
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: a79b9591a8954cd6609faedc816adbc469e66dee
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374969"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423007"
 ---
-# <a name="get-microsoft-defender-for-business"></a>获取 Microsoft Defender for Business
+# <a name="get-microsoft-defender-for-business-preview"></a>获取 Microsoft Defender for Business (预览) 
 
 > [!IMPORTANT]
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向可能介绍 Microsoft Defender for Business 预览版中未包含的一些 (内容) 。
+> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未 (一些) 。
 
-Microsoft Defender for Business 在预览版中可用！ 通过参与预览计划，可以在 Defender for Business 普遍可用之前试用它。 预览计划可用于：
+Microsoft Defender for Business (预览) 预览版提供！ 通过参与预览计划，可以在 Defender for Business 普遍可用之前试用它。 预览计划可用于：
 
 - 向中小型企业提供 IT 服务的 Microsoft 合作伙伴
 - 中小型企业最多 (300 名员工) 
@@ -60,6 +60,6 @@ Microsoft Defender for Business 在预览版中可用！ 通过参与预览计�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [请参阅 Microsoft Defender for Business 的安装和配置过程](mdb-setup-configuration.md)
+- [请参阅 Microsoft Defender for Business 预览版 (和配置) ](mdb-setup-configuration.md)
 
-- [了解如何获取 Microsoft Defender for Business 的帮助和支持](mdb-get-help.md)
+- [了解如何获取 Microsoft Defender for Business 预览版 (和支持) ](mdb-get-help.md)

@@ -126,19 +126,11 @@
         - name: Microsoft 365 商业高级版安全概述
           href: overview-m365-security.md
         - name: 使用 MFA 保护员工帐户
-          href: turn-on-mfa.md
+          href: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
         - name: 在手机上设置双重登录
           href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
-        - name: 启用恶意软件检测
-          href: anti-malware.md
-        - name: 创建针对勒索软件的电子邮件规则
-          href: prevent-ransom-in-email.md
-        - name: 设置防网络钓鱼
-          href: setup-anti-phishing.md
         - name: 管理安全附件
           href: safe-attachments.md
-        - name: 管理安全链接
-          href: safe-links.md
         - name: 防止数据丢失
           href: set-up-dlp.md
         - name: 创建敏感度标签

@@ -9,25 +9,27 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: 了解如何在管理权限Microsoft 365 合规中心。
+description: 了解如何管理用户Microsoft 365 合规中心。
 ms.collection: M365-security-compliance
-ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b19e0ce095fe4b0eb25f8fbf81b3f3e739271e1e
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: 45540713452b91da171f6fc52eef8210fa256c4e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786430"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423691"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合规中心中的权限
 
-该Microsoft 365 合规中心最近已更新，现在支持直接管理在 Microsoft 365 中执行合规性任务Microsoft 365。 此更新意味着，你无需再使用 Office 365 安全&中心管理合规性解决方案的权限。 使用 Microsoft 365 合规中心中的"新权限"页，你可以管理用户的权限，以执行设备管理、数据丢失防护、电子数据展示、内部风险管理、保留等功能中的合规性任务。 用户只能执行您明确授予其访问权限的合规性任务。
+该Microsoft 365 合规中心最近已更新，现在支持直接管理在 Microsoft 365 中执行合规性任务的用户的权限。 此更新意味着你不再需要使用安全与合规Office 365&管理合规性解决方案的权限。 使用 Microsoft 365 合规中心中的新"权限"页，你可以管理用户的权限，以执行设备管理、数据丢失防护、电子数据展示、内部风险管理、保留等功能中的合规性任务。 用户只能执行您明确授予其访问权限的合规性任务。
 
-若要查看 Microsoft 365 合规中心中的"权限"选项卡，用户需要是全局管理员，或需要分配有角色管理角色 (角色仅分配给组织管理角色组) 。  *角色管理* 角色允许用户查看、创建和修改角色组。
+若要查看 Microsoft 365 合规中心中的"权限"选项卡，用户需要是全局管理员，或需要分配有角色管理角色 (角色只能分配给组织管理角色组) 。  *角色管理* 角色允许用户查看、创建和修改角色组。
 
 !["权限"页Microsoft 365 合规中心。](../media/m365-compliance-center-permissions.png)
 
-用户权限Microsoft 365 合规中心基于基于角色的访问控制 (RBAC) 权限模型。 RBAC 与大多数 Microsoft 365 服务使用的权限模型相同，因此如果您熟悉这些服务中的权限结构，那么将熟悉在 Microsoft 365 合规中心 中授予权限。 切记，在管理中心中Microsoft 365 合规中心权限并不涉及管理每个单独服务中所需的所有权限。 你仍然需要在管理中心中管理特定服务的特定权限。 例如，如果需要分配存档、审核和 MRM 保留策略的权限，则需要在管理中心管理这些Exchange权限。
+该权限Microsoft 365 合规中心基于基于角色的访问控制 (RBAC) 权限模型。 RBAC 与大多数 Microsoft 365 服务使用的权限模型相同，因此如果您熟悉这些服务中的权限结构，那么将熟悉在 Microsoft 365 合规中心 中授予权限。 切记，在 Microsoft 365 合规中心 中管理的权限并不涵盖每个服务中所需的所有权限的管理。 你仍然需要在管理中心中管理特定服务的特定权限。 例如，如果需要分配存档、审核和 MRM 保留策略的权限，则需要在管理中心中管理Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">权限</a>。
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>成员、角色和角色组之间的关系
 
@@ -39,13 +41,13 @@ ms.locfileid: "60786430"
 
 ## <a name="permissions-needed-to-use-features-in-the-microsoft-365-compliance-center"></a>使用应用程序功能所需的Microsoft 365 合规中心
 
-若要查看 Microsoft 365 合规中心 中可用的所有默认角色组以及默认情况下分配给角色组的角色，请参阅安全与合规中心&[权限](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
+若要查看 Microsoft 365 合规中心 中可用的所有默认角色组以及默认情况下分配给角色组的角色，请参阅安全与合规中心&[权限。](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 
-管理网站中Microsoft 365 合规中心仅允许用户访问功能范围内提供的合规性Microsoft 365 合规中心。 如果要向 Microsoft 365 合规中心 中未包含的其他功能授予权限，例如 Exchange 邮件流规则 (也称为传输规则) ，则需要使用 Exchange 管理中心。
+管理网站中Microsoft 365 合规中心仅允许用户访问功能范围内提供的合规性Microsoft 365 合规中心。 如果要向 Microsoft 365 合规中心 中未包含的其他功能授予权限，例如 Exchange 邮件流规则 (也称为传输规则) ，则需要使用<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>管理中心。
 
-## <a name="azure-roles-in-the-microsoft-365-compliance-center"></a>Azure 中的角色Microsoft 365 合规中心
+## <a name="azure-roles-in-the-microsoft-365-compliance-center"></a>Azure 角色Microsoft 365 合规中心
 
-"权限"**页Azure AD**  >  角色"部分Microsoft 365 合规中心 **角色** Azure Active Directory角色。 这些角色旨在与组织 IT 组中的工作职能保持一致，从而可以轻松地使人员获得完成其工作所需的所有权限。 通过选择管理员角色并查看角色面板详细信息，可以查看当前分配给每个角色的用户。 若要管理角色Azure AD，请选择"管理Azure AD"。 此选项会将你重定向到 Azure 管理门户。
+"权限"页Azure AD  >  角色"部分Microsoft 365 合规中心 **角色** Azure Active Directory角色。 这些角色旨在与组织 IT 组中的工作职能保持一致，从而可以轻松地使人员获得完成其工作所需的所有权限。 通过选择管理员角色并查看角色面板详细信息，可以查看当前分配给每个角色的用户。 若要管理角色Azure AD，请选择"管理Azure AD"。 此选项会将你重定向到 Azure 管理门户。
 
 |Role|说明|
 |:---|:----------|
@@ -88,7 +90,7 @@ ms.locfileid: "60786430"
 
 完成以下步骤以创建自定义角色组：
 
-1. 使用组织中管理员帐户Microsoft 365 合规中心登录管理员帐户的权限Microsoft 365，然后转到"<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**权限"。**</a>
+1. 使用你的组织中管理员帐户Microsoft 365 合规中心登录管理员帐户的权限区域，Microsoft 365"权限 <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**"。**</a>
 1. 在"**权限&角色"页上**，选择"合规性 **中心>角色"。**
 1. 在"**合规性中心角色"页上**，选择"创建 **"。**
 1. 在" **命名角色组** "页上的"名称"字段中输入自定义角色 **组** 的名称。 角色组的名称无法在角色组创建后更改。 如果需要，请在"说明"字段中输入自定义角色 **组** 的说明。 选择“**下一步**”以继续。
@@ -104,7 +106,7 @@ ms.locfileid: "60786430"
 
 完成以下步骤以更新自定义角色组：
 
-1. 使用组织中管理员帐户Microsoft 365 合规中心登录管理员帐户的权限Microsoft 365，然后转到"<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**权限"。**</a>
+1. 使用你的组织中管理员帐户Microsoft 365 合规中心登录管理员帐户的权限区域，Microsoft 365"权限 <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**"。**</a>
 1. 在"**权限&角色"页上**，选择"合规性 **中心>角色"。**
 1. 在" **合规中心角色"** 页上，选择要更新的角色组。
 1. 在所选角色组的详细信息窗格中，选择"编辑 **角色组"。**
@@ -120,7 +122,7 @@ ms.locfileid: "60786430"
 
 完成以下步骤以更新自定义角色组：
 
-1. 使用组织中管理员帐户Microsoft 365 合规中心登录管理员帐户的权限Microsoft 365，然后转到"<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**权限"。**</a>
+1. 使用你的组织中管理员帐户Microsoft 365 合规中心登录管理员帐户的权限区域，Microsoft 365"权限 <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**"。**</a>
 1. 在"**权限&角色"页上**，选择"合规性 **中心>角色"。**
 1. 在" **合规中心角色"** 页上，选择要更新的角色组。
 1. 在所选角色组的详细信息窗格中，选择"**删除角色组"。**

@@ -7,23 +7,23 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: c99184fe90e5bbce8e878d15fae3ded8a14285b6
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 60d0c58edba42b8a32062c2f7adaf417fd8c7203
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374872"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421074"
 ---
 # <a name="set-up-email-notifications"></a>设置电子邮件通知
 
 > [!IMPORTANT]
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向可能介绍 Microsoft Defender for Business 预览版中未包含的一些 (内容) 。
+> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未包含 (一些) 。
 
 你可以为安全团队设置电子邮件通知。 然后，当生成警报或发现新漏洞时，安全团队中人员将自动收到通知。 
 
@@ -48,9 +48,9 @@ ms.locfileid: "61374872"
 > [!TIP]
 > **电子邮件通知不是安全团队了解** 新警报或漏洞的唯一方式。
 > 
-> 电子邮件通知是一种有助于实时通知安全团队的便捷方式。 但还有其他功能！ 例如，每当安全团队登录 Microsoft 365 Defender门户 () ，他们将看到突出显示新威胁、警报和漏洞的 [https://security.microsoft.com](https://security.microsoft.com) 卡片。 Defender for Business 旨在突出显示安全团队在登录后关注的重要信息。
+> 电子邮件通知是一种有助于实时通知安全团队的便捷方式。 但还有其他功能！ 例如，每当安全团队登录 Microsoft 365 Defender门户 () 时，他们将看到突出显示新威胁、警报和漏洞的 [https://security.microsoft.com](https://security.microsoft.com) 卡片。 Defender for Business (预览) 旨在突出显示安全团队在登录后关注的重要信息。
 > 
-> 安全团队 **还可以在导航** 窗格中选择"事件"以查看信息。 若要了解更多信息，请参阅 [在 Microsoft Defender for Business 中查看和管理事件](mdb-view-manage-incidents.md)。
+> 安全团队 **还可以在导航** 窗格中选择"事件"以查看信息。 若要了解的详细信息，请参阅在 Microsoft Defender for Business 中[查看和管理事件 (预览) 。 ](mdb-view-manage-incidents.md)
 
 ## <a name="view-and-edit-email-notifications"></a>查看和编辑电子邮件通知
 
@@ -72,5 +72,5 @@ ms.locfileid: "61374872"
 
 继续：
 
-- [步骤 4：将设备载入 Microsoft Defender for Business](mdb-onboard-devices.md)
+- [步骤 4：将设备载入 Microsoft Defender for Business (预览) ](mdb-onboard-devices.md)
 

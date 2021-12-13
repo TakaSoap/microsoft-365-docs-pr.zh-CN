@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 365 中的简化视图管理常见任务，或使用仪表板视图获取更复杂的设置和任务。
-ms.openlocfilehash: b5b1bf2c82e61bbaad227511925700e817b7b175
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c6443ef9406f49fe8f27aa5977aac1e046583587
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374875"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421806"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心概述
 
@@ -192,4 +192,6 @@ Microsoft 365 管理中心已完全本地化为 40 种语言。
 
 ## <a name="related-content"></a>相关内容
 
-[什么是 Microsoft 365 管理员？](../../business-video/what-is-admin.md)  (文章) 添加管理员 (视频) [](../../business-video/add-admin.md)自定义组织的 Microsoft 365 主题 (视频) [](../setup/customize-your-organization-theme.md)
+[什么是 Microsoft 365 管理员？](../add-users/about-admin-roles.md) （视频）\
+[将管理员角色 (](../add-users/assign-admin-roles.md) 视频) \
+[为组织自定义 Microsoft 365 主题](../setup/customize-your-organization-theme.md)（文章）

@@ -21,15 +21,16 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: 数据丢失防护参考资料
-ms.openlocfilehash: cce8aa10f0ae84daa3a89881b689b93a212ef472
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 85fa08419b964555ce036b96a78f8c3fe6bab3a1
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204415"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422863"
 ---
 # <a name="data-loss-prevention-reference"></a>数据丢失防护参考
 
@@ -528,7 +529,7 @@ DLP 评估可编制索引的任何内容。 有关默认的爬网文件类型的
 
 当创建一个将 Exchange Online 包含为位置的 DLP 策略时，系统会将策略从 Office 365 安全 &amp; 合规中心同步到 Exchange Online，然后从 Exchange Online 同步到 Outlook 网页版和 Outlook。
 
-在 Outlook 中撰写消息时，会显示策略提示，因为会根据 DLP 策略对创建的内容进行评估。 邮件发送后，会根据 DLP 策略对其进行评估，作为邮件流程的正常部分，还会使用 Exchange 管理中心中创建的 Exchange 邮件流规则（也称为传输规则）和 DLP 策略进行评估。 DLP 策略会扫描邮件及其所有附件。
+在 Outlook 中撰写消息时，会显示策略提示，因为会根据 DLP 策略对创建的内容进行评估。 邮件发送后，会根据 DLP 策略评估邮件流的正常部分，以及 Exchange 邮件流规则 (也称为传输规则) 和在<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>管理中心中创建的 DLP 策略。 DLP 策略会扫描邮件及其所有附件。
 
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Office 桌面程序中的策略评估
 

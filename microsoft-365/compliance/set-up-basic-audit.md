@@ -15,20 +15,21 @@ ms.collection:
 - m365solution-audit
 - m365initiative-compliance
 - m365solution-scenario
+ms.custom: admindeeplinkEXCHANGE
 search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何设置基本审核，以便您可以开始搜索组织中用户和管理员执行的审核活动。
-ms.openlocfilehash: 9190383fdfab8e4207186ca93895ec9ce23ec6d4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e4ae5901c9a4f400e2a01659395d27947ad433c2
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200313"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423607"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>在"管理"中设置Microsoft 365
 
-使用"Microsoft 365基本审核"，可以搜索用户和管理员在不同 Microsoft 365 服务中执行的活动的审核记录。 由于默认情况下为大多数 Microsoft 365 Office 365 组织启用了基本审核，因此只有一些操作需要执行，您和您的组织中的其他人才能搜索审核日志。
+通过"Microsoft 365基本审核"，可以搜索用户和管理员在不同 Microsoft 365 服务中执行的活动的审核记录。 由于默认情况下为大多数 Microsoft 365 和 Office 365 组织启用了基本审核，因此只有一些操作需要执行，您和您的组织中的其他人才能搜索审核日志。
 
 本文讨论设置基本审核所需的以下步骤。
 
@@ -48,9 +49,9 @@ ms.locfileid: "60200313"
 
 ## <a name="step-2-assign-permissions-to-search-the-audit-log"></a>步骤 2：分配搜索搜索审核日志
 
-必须为管理员和调查团队的成员分配View-Only审核日志或审核日志"角色Exchange Online搜索审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 的组织管理角色组成员。 若要让用户能够使用最低权限级别搜索审核日志，可以在 Exchange Online 中创建自定义角色组，添加“仅供查看审核日志”或“审核日志”角色，然后将用户添加为新角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](/Exchange/permissions-exo/role-groups)。
+必须为管理员和调查团队的成员分配View-Only审核日志或审核日志"角色Exchange Online搜索审核日志。 默认情况下，在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>中的“**权限**”页面上将这些角色分配给“合规性管理”和“组织管理”角色组。 Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 的组织管理角色组成员。 若要让用户能够使用最低权限级别搜索审核日志，可以在 Exchange Online 中创建自定义角色组，添加“仅供查看审核日志”或“审核日志”角色，然后将用户添加为新角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](/Exchange/permissions-exo/role-groups)。
 
-以下屏幕截图显示了分配给管理中心内"组织管理"角色组的两个Exchange角色。
+以下屏幕截图显示了分配给管理中心中"组织管理"角色组的两个Exchange角色。
 
 ![审核分配给角色组中角色Exchange Online。](../media/EACAuditRoles.png)
 
@@ -60,7 +61,7 @@ ms.locfileid: "60200313"
 
 1. 转到 <https://compliance.microsoft.com> ，然后使用已分配有相应审核权限的帐户登录。
 
-2. 在页面的左侧导航窗格中，Microsoft 365 合规中心 **全部显示**"，然后单击"审核 **"。**
+2. 在页面的左侧导航窗格中 **Microsoft 365 合规中心"全部显示**"，然后单击"审核 **"。**
 
 3. 在" **审核** "页上，使用"搜索"选项卡上的以下条件 **配置搜索** 。 
 

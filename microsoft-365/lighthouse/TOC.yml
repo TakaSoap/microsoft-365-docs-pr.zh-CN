@@ -48,6 +48,8 @@
   items:
     - name: 威胁管理页面概述
       href: m365-lighthouse-threat-management-page-overview.md
+    - name: 使用威胁缓解Microsoft Defender 防病毒
+      href: m365-lighthouse-mitigate-threats.md
 - name: 获取帮助和支持
   items:
     - name: 获取帮助和支持

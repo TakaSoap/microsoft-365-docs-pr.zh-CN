@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d3a5fe0f04249a5d9573e74fa4f8ad6b81fe5395
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f4a3e227dd43a812bea64e227e315d207eb6fc7b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167642"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421446"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>缓解零日漏洞 - 危险和漏洞管理
 
@@ -35,9 +35,9 @@ ms.locfileid: "61167642"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
-零日漏洞是公开披露的漏洞，尚未发布正式的修补程序或安全更新程序。 零日漏洞通常具有高严重性级别，并且被主动利用。
+零日漏洞是尚未发布正式修补程序或安全更新的软件缺陷。 软件供应商可能或可能不会注意到此漏洞，并且没有关于此风险的公共信息。 零日漏洞通常具有高严重性级别，并且被主动利用。
 
-威胁漏洞管理将仅显示其拥有相关信息的零日漏洞。
+威胁漏洞管理仅显示其拥有相关信息的零日漏洞。
 
 ## <a name="find-information-about-zero-day-vulnerabilities"></a>查找有关零日漏洞的信息
 
@@ -84,7 +84,7 @@ ms.locfileid: "61167642"
 
 如果有软件具有零日漏洞和其他要解决的漏洞，你将获得关于所有漏洞的一个建议。
 
-:::image type="content" alt-text="安全建议Windows Server 2016零日示例。" source="images/tvm-zero-day-security-recommendation.png" lightbox="images/tvm-zero-day-security-recommendation.png":::
+:::image type="content" alt-text="安全建议Windows Server 2016零日事件示例。" source="images/tvm-zero-day-security-recommendation.png" lightbox="images/tvm-zero-day-security-recommendation.png":::
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>解决零日漏洞
 
@@ -98,17 +98,17 @@ ms.locfileid: "61167642"
 
 ## <a name="track-zero-day-remediation-activities"></a>跟踪零日修正活动
 
-转到["危险和漏洞管理"](tvm-remediation.md)页面查看修正活动项。 如果选择"注意需要"修正选项，则没有进度栏、票证状态或截止日期，因为我们可以监视任何实际操作。 您可以按修正类型（如"软件更新"或"需要注意"）进行筛选，以查看同一类别的所有活动项。
+转到["危险和漏洞管理"](tvm-remediation.md)页以查看修正活动项。 如果选择"注意需要"修正选项，则没有进度栏、票证状态或截止日期，因为我们可以监视任何实际操作。 您可以按修正类型（如"软件更新"或"需要注意"）进行筛选，以查看同一类别的所有活动项。
 
 ## <a name="patching-zero-day-vulnerabilities"></a>修补零日漏洞
 
 当修补程序在零日发布时，建议将更改为"更新"，其旁边的蓝色标签显示"零日的新安全更新"。 它不再视为零日，将从所有页面中删除零日标记。
 
-![建议使用新修补程序Windows 10"更新 Microsoft 修补程序"。](images/tvm-zero-day-patch.jpg)
+![建议使用新修补程序Windows 10"更新 Microsoft 应用"。](images/tvm-zero-day-patch.jpg)
 
 ## <a name="related-articles"></a>相关文章
 
-- [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威胁漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [仪表板](tvm-dashboard-insights.md)
 - [安全性建议](tvm-security-recommendation.md)
 - [软件库存](tvm-software-inventory.md)

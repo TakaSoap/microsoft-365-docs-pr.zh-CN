@@ -1,5 +1,5 @@
 ---
-title: 有关安全建议中的Microsoft 365、优先级帐户、Office 365中的优先级帐户、Microsoft 365
+title: 针对安全建议中的优先级帐户Microsoft 365、优先级帐户、Office 365中的优先级帐户、Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,19 +17,20 @@ ms.collection:
 - M365-security-compliance
 - m365solution-overview
 - m365solution-protecthve
-description: 管理员可以了解如何提升安全设置并使用报告、警报和调查，以在组织中Microsoft 365帐户。
+ms.custom: admindeeplinkEXCHANGE
+description: 管理员可以了解如何提升安全设置，并使用报告、警报和调查，以在组织中Microsoft 365帐户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 07cd37c97711b2f80ddc2f0914ef7429c5ea9310
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 17143da7310542a4f77074ee83562f2626d28aa5
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211857"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422287"
 ---
-# <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>针对企业中的优先级帐户的安全Microsoft 365
+# <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 中优先帐户安全建议
 
-并非所有用户帐户都有权访问相同的公司信息。 某些帐户有权访问敏感信息，如财务数据、产品开发信息、合作伙伴对关键生成系统的访问权限等。 如果泄露，有权访问高度机密信息的帐户将构成严重的威胁。 我们将这些类型的帐户称为 _"优先级帐户"。_ 优先级帐户 (但不限于) CEO、COS、CFO、基础结构管理员帐户、生成系统帐户等。
+并非所有用户帐户都有权访问相同的公司信息。 某些帐户有权访问敏感信息，如财务数据、产品开发信息、合作伙伴对关键生成系统的访问权限等。 如果泄露，有权访问高度机密信息的帐户将构成严重的威胁。 我们将这些类型的帐户称为 _"优先级帐户"。_ 优先级帐户 (，但不限于) CEO、COS、CFO、基础结构管理员帐户、生成系统帐户等。
 
 对于攻击者，为普通用户或未知用户转换随机网络的普通网络钓鱼攻击效率很低。 另一方面，_以_ 优先级帐户为目标的网络钓鱼或钓鱼攻击对攻击者来说非常具有攻击性。 因此，优先级帐户需要比普通保护更强大，以帮助防止帐户泄露。
 
@@ -51,23 +52,23 @@ Microsoft 365和 Microsoft Defender for Office 365包含多个关键功能，这
 |
 
 > [!NOTE]
-> 有关保护管理员帐户 (特权 _帐户) ，_ 请参阅 [本主题](/azure/architecture/framework/security/critical-impact-accounts)。
+> 有关保护管理员帐户的 _特权 (_ 的信息) ，请参阅 [本主题](/azure/architecture/framework/security/critical-impact-accounts)。
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>提高优先级帐户的登录安全性
 
-优先级帐户需要更高的登录安全性。 通过要求使用 MFA 身份验证和禁用 (身份验证) ，可以增强其登录安全性。
+优先级帐户需要更高的登录安全性。 通过要求使用 MFA 身份验证和禁用 (身份验证) ，可以增强登录安全性。
 
 有关说明，请参阅步骤 [1。使用 MFA 提高远程工作者的登录安全性](../../solutions/empower-people-to-work-remotely-secure-sign-in.md)。 尽管本文介绍的是远程工作者，但相同的概念也适用于优先用户。
 
-**注意**：我们强烈建议你针对所有优先级用户全局禁用旧版身份验证协议，如上一篇文章中所述。 如果您的业务需求阻止您这样做，Exchange Online以下控件来帮助限制旧身份验证协议的范围：
+**注意**：我们强烈建议你针对所有优先级用户全局禁用旧版身份验证协议，如上一篇文章中所述。 如果您的业务要求阻止您这样做，Exchange Online以下控件来帮助限制旧身份验证协议的范围：
 
-- 您可以使用[Exchange Online](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)中的身份验证[](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)策略和客户端访问规则来阻止或允许基本身份验证和旧版身份验证协议，如 POP3、IMAP4 和特定用户的已验证 SMTP。
+- 您可以使用[Exchange Online](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)中的身份验证[](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)策略和客户端访问规则来阻止或允许特定用户的基本身份验证和旧版身份验证协议（如 POP3、IMAP4 和经过身份验证的 SMTP）。
 
-- 可以在单个邮箱上禁用 POP3 和 IMAP4 访问。 您可以在组织一级禁用已验证的 SMTP，并启用它到仍然需要它的特定邮箱上。 有关说明，请参阅以下文章：
+- 可以在单个邮箱上禁用 POP3 和 IMAP4 访问。 您可以在组织一级禁用已验证的 SMTP，并启用它，以在仍然需要它的特定邮箱上启用它。 有关说明，请参阅以下文章：
   - [为用户启用或禁用 POP3 或 IMAP4 访问](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [启用或禁用 SMTP AUTH (身份验证的客户端 SMTP) ](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
-还值得一提的是，Exchange Online 中正在对 Exchange Exchange Online Web 服务 (EWS) 、Exchange ActiveSync、POP3、IMAP4 和远程 PowerShell 弃用基本身份验证。 有关详细信息，请参阅此 [博客文章](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/)。
+还值得注意的是，对于 Exchange Web 服务 (EWS) 、Exchange ActiveSync、POP3、IMAP4 和远程 PowerShell，Exchange Online 中正在弃用基本身份验证。 有关详细信息，请参阅此 [博客文章](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/)。
 
 ## <a name="use-strict-preset-security-policies-for-priority-accounts"></a>对优先级帐户使用严格预设安全策略
 
@@ -83,11 +84,11 @@ Microsoft 365和 Microsoft Defender for Office 365包含多个关键功能，这
 
 ## <a name="apply-user-tags-to-priority-accounts"></a>将用户标记应用于优先级帐户
 
-Microsoft Defender for Office 365 计划 2 (中的用户标记是 Microsoft 365 E5 或加载项订阅) 的一部分，是一种在报告和事件调查中快速标识特定用户或用户组并进行分类的方法。
+作为 Microsoft 365 E5 或加载项订阅) 的一部分，Microsoft Defender for Office 365 计划 2 (中的用户标记是一种在报告和事件调查中快速标识和分类特定用户或用户组的方法。
 
 **优先级帐户** 是一种内置用户标记 (称为系统标记) ，可用于标识涉及优先帐户的事件和警报。 有关优先级帐户 **详细信息，** 请参阅管理和 [监视优先级帐户](../../admin/setup/priority-accounts.md)。
 
-还可以创建自定义标记以进一步标识和分类优先级帐户。 有关详细信息，请参阅用户 [标记](user-tags.md)。 可以在自定义 **用户标记 (** 界面) 系统标记中的优先级帐户。
+还可以创建自定义标记以进一步标识和分类优先级帐户。 有关详细信息，请参阅用户 [标记](user-tags.md)。 可以在与自定义 **用户 (** 相同的界面) 系统标记中的优先级帐户。
 
 ## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>监视警报、报告和检测中的优先级帐户
 
@@ -101,9 +102,9 @@ Microsoft Defender for Office 365 计划 2 (中的用户标记是 Microsoft 365 
 |---|---|
 |警报|受影响用户的用户标记在门户的警报页面上可见并Microsoft 365 Defender筛选器。  有关详细信息，请参阅 [查看警报](../../compliance/alert-policies.md#viewing-alerts)。|
 |资源管理器 <p> 实时检测|在 **资源管理器** (Defender for Office 365 计划 2) 或实时检测 **(** Defender for Office 365 计划 1) 中，用户标记显示在"电子邮件"网格视图和"电子邮件详细信息"飞出控件中。 用户标记也可作为可筛选属性使用。 有关详细信息，请参阅资源管理器  [中的标记](threat-explorer.md#tags-in-threat-explorer)。|
-|市场活动视图|用户标记是 Microsoft Defender for Office 365 计划 2 中的多个可筛选属性之一。 有关详细信息，请参阅 Campaign [Views](campaigns.md)。|
+|市场活动视图|用户标记是 Microsoft Defender for Office 365 计划 2 的"市场活动视图"中的许多可筛选属性之一。 有关详细信息，请参阅 Campaign [Views](campaigns.md)。|
 |威胁防护状态报告|在威胁防护状态报告中的几乎所有视图和详细信息表中，你可以按优先级帐户 **筛选结果**。 有关详细信息，请参阅威胁 [防护状态报告](view-email-security-reports.md#threat-protection-status-report)。|
-|优先级帐户的电子邮件问题报告|EAC Exchange **管理** 中心中的"优先级帐户的电子邮件 () 包含有关优先级帐户的未送达和延迟 **邮件的信息**。 有关详细信息，请参阅优先级 [帐户的电子邮件问题报告](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。|
+|优先级帐户的电子邮件问题报告|管理 **中心中的**"优先级帐户的电子邮件Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">报告</a>包含有关优先级帐户的未送达和延迟 **邮件的信息**。 有关详细信息，请参阅优先级 [帐户的电子邮件问题报告](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。|
 |
 
 ## <a name="train-users"></a>培训用户
@@ -129,7 +130,7 @@ Microsoft 365提供了以下资源来帮助通知贵组织的用户：
 
 - 使用强密码
 - 保护设备
-- 为非托管设备Windows Mac 电脑 (安全功能) 
+- 在非托管设备上Windows Mac (启用安全功能) 
 
 ## <a name="see-also"></a>另请参阅
 

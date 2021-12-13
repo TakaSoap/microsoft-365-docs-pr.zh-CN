@@ -15,19 +15,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: 查找有关使用 Microsoft 365 的企业远程工作的最新操作方法信息、提示、资源和Microsoft 365。
-ms.openlocfilehash: 2fb23bc74034bc3f8f27bc6aa06bf42311ee8bb8
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 673d323a64687b9f2413993d7ddd386529e1ffc8
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370844"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422371"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>通过远程工作为小型企业提供支持
 
-随着企业适应让员工进行远程工作并虚拟与客户联系的需求不断增加，此网站将针对使用 Microsoft 365 的企业远程工作的最新操作方法信息、提示、资源和指南进行更新。
+随着企业适应用户远程工作并虚拟与客户联系的需求不断增加，此网站将针对使用 Microsoft 365 的企业远程工作的最新操作方法信息、提示、资源和指南进行更新。
 
 > [!TIP]
-> 没有Microsoft_Teams？ 注册 1 年后Microsoft Teams 6 Office可免费 (1 个月的) 。 获取本文中介绍的技术作为优惠的一部分。 有关详细信息，请参阅免费试用 [1 个月](https://aka.ms/SMBTeamsOffer)。
+> 没有Microsoft_Teams？ 注册 1 年后Microsoft Teams 6 Office， (6 个月的免费) 。 获取本文中介绍的技术作为优惠的一部分。 有关详细信息，请参阅免费试用 [1 个月](https://aka.ms/SMBTeamsOffer)。
 
 ## <a name="remote-work-for-your-small-business-video"></a>针对小型企业的远程工作 (视频) 
 
@@ -35,7 +35,7 @@ ms.locfileid: "61370844"
 
 ## <a name="transitioning-to-a-remote-workforce"></a>过渡到远程工作人员
 
-根据新型冠状病毒 (新型冠状病毒) 爆发，许多企业所有者发现自己具有完全远程的工作人员。 下面是转换到远程工作安全、安全且高效的可操作操作。
+鉴于新型冠状病毒（新型冠状病毒） (，许多企业所有者) 完全远程工作的员工。 下面是转换到远程工作安全、安全且高效的可操作操作。
 
 有关详细信息，请参阅[小型企业中的Microsoft Teams入门](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937)。
 
@@ -71,7 +71,7 @@ ms.locfileid: "61370844"
 
 使用多重身份验证来保护你的数据和设备。
 
-有关详细信息，请参阅启用 [多重身份验证](../../business-video/turn-on-mfa.md)。
+有关详细信息，请参阅启用 [多重身份验证](../security-and-compliance/set-up-multi-factor-authentication.md)。
 
 ### <a name="secure-your-devices"></a>保护您的设备
 
@@ -83,11 +83,11 @@ ms.locfileid: "61370844"
 
 适用于 Microsoft 365 Business 的技术文档中心使用新的安全远程工作指南进行了更新。
 
-有关详细信息，请参阅Microsoft 365 [Business 资源](/microsoft-365/business)。
+有关详细信息，请参阅 Microsoft 365 [Business 资源](/microsoft-365/business)。
 
 ## <a name="need-to-ask-a-question"></a>需要提问？
 
 在管理员[Teams或](https://answers.microsoft.com/msteams/forum)管理员Office[中提问](https://answers.microsoft.com)。
 
 > [!NOTE]
-> 本文和视频中的大部分任务都可以通过订阅之前Microsoft 365 商业基础版 (完成，Office 365 商业协作版) 一些需要高级订阅。
+> 本文和视频中的大多数任务都可以通过订阅之前Microsoft 365 商业基础版 (完成，Office 365 商业协作版) 一些需要高级订阅。

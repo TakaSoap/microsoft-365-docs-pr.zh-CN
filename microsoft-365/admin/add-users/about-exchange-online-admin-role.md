@@ -12,24 +12,26 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange联机管理员管理组织的电子邮件和邮箱。 例如，他们恢复用户邮箱中的已删除项目。
-ms.openlocfilehash: 2362731a3837950ecbf0f3fea5e6887311e94d97
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Exchange管理员管理组织的电子邮件和邮箱。 例如，他们恢复用户邮箱中的已删除项目。
+ms.openlocfilehash: f889b2c482734518d1a73802c3422c13bc5c4a59
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162010"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421386"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>关于Exchange Online管理员角色
 
-为了帮助你管理Microsoft 365，你可以向用户分配权限，[](assign-admin-roles.md)以从管理中心管理Exchange[邮箱](/exchange/exchange-admin-center)。 为此，可将其分配到Exchange管理员角色。
+为了帮助你管理Microsoft 365，可以从管理中心向用户[](assign-admin-roles.md)分配管理组织的电子邮件<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">和Exchange权限</a>。 为此，可将其分配到Exchange管理员角色。
   
  **提示**：将某人分配给 Exchange管理员角色时，还要将其分配到服务管理员角色。 这样，他们就可以在 Microsoft 365 管理中心中查看重要信息，如 Exchange Online 服务的运行状况，以及更改和发布通知。
 
@@ -61,6 +63,6 @@ ms.locfileid: "60162010"
 
 - [关于 SharePoint Online 管理员角色](/sharepoint/sharepoint-admin-role)
 
-- [关于Skype for Business管理员角色](/skypeforbusiness/skype-for-business-online)
+- [关于 Skype for Business 管理员角色](/skypeforbusiness/skype-for-business-online)
 
 - [使用Microsoft Teams管理员角色](/MicrosoftTeams/using-admin-roles)

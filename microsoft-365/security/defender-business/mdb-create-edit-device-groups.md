@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,19 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: efa840909915653d0aa0a8af51f3c75c7d16a25d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 350228d45124ddf9f1c6e0b9e030ef125bc3ff2c
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374884"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423883"
 ---
-# <a name="device-groups-in-microsoft-defender-for-business"></a>Microsoft Defender for Business 中的设备组
+# <a name="device-groups-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business 预览版中的 (组) 
 
 > [!IMPORTANT]
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未包含 (一些) 。
 
-在 Microsoft Defender for Business 中，策略通过称为设备组的某些集合应用于设备。 
+在 Microsoft Defender for Business (预览) 中，策略通过称为设备组的某些集合应用于设备。 
 
 **本文介绍**：  
 
@@ -37,15 +37,15 @@ ms.locfileid: "61374884"
 
 ## <a name="what-is-a-device-group"></a>什么是设备组？
 
-设备组是因某些指定条件（如操作系统版本）而分组在一起的设备的集合。 符合条件的设备包含在该设备组中，除非你排除它们。 在 Microsoft Defender for Business 中，通过使用设备组将策略应用于设备。 
+设备组是因某些指定条件（如操作系统版本）而分组在一起的设备的集合。 符合条件的设备包含在该设备组中，除非你排除它们。 在 Microsoft Defender for Business (预览) ，通过使用设备组将策略应用于设备。 
 
-Defender for Business 包括可以使用的默认设备组。 默认设备组包括已载入 Defender for Business 的所有设备。 但是，还可以创建新的设备组，以将具有特定设置的策略分配给某些设备。 
+Defender for Business (预览) 包括可以使用的默认设备组。 默认设备组包括已载入 Defender for Business (预览版) 。 但是，还可以创建新的设备组，以将具有特定设置的策略分配给某些设备。 
 
 所有设备组（包括默认设备组和定义的任何自定义设备组）都存储在[Azure Active Directory (Azure AD) 。](/azure/active-directory/fundamentals/active-directory-whatis)
 
 ## <a name="create-a-new-device-group"></a>创建新的设备组
 
-目前，在 Defender for Business 中，可以在创建或编辑策略的过程中创建新设备组，如以下过程所述： 
+目前，在 Defender for Business (预览版) 中，可以在创建或编辑策略的过程中创建新设备组，如以下过程所述： 
 
 1. 转到"Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
 
@@ -81,8 +81,8 @@ Defender for Business 包括可以使用的默认设备组。 默认设备组包
 
 - [创建新策略](mdb-create-new-policy.md)
 
-- [在 Microsoft Defender for Business 中查看和管理事件](mdb-view-manage-incidents.md)
+- [在 Microsoft Defender for Business 预览版中查看 (事件) ](mdb-view-manage-incidents.md)
 
-- [响应和缓解 Microsoft Defender for Business 中的威胁](mdb-respond-mitigate-threats.md)
+- [在 Microsoft Defender for Business 预览版中响应 (缓解) ](mdb-respond-mitigate-threats.md)
 
 - [查看操作中心中的修正操作](mdb-review-remediation-actions.md)

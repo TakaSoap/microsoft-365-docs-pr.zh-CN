@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '了解如何将专用邮箱转换为多个人员（而不是一个人）可以访问的共享邮箱。 '
-ms.openlocfilehash: 48799e99bca316dd3a5a073be2c24f1057a07151
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 45ed21e1638bfee2d13ee59193a542bd4f70e05b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165048"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422263"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 
@@ -39,7 +40,7 @@ ms.locfileid: "60165048"
 
 - 要转换的用户邮箱需要分配有许可证，然后才能将其转换为共享邮箱。 否则，将看不到用于转换邮箱的选项。 如果已删除许可证，请重新添加它，以便转换邮箱。 将邮箱转换为共享邮箱后，可以从用户帐户中删除许可证。
 
-- 共享邮箱可以具有多达 50 GB 的数据，而无需为其分配许可证。 要保留的数据超过此限制，需要为其分配许可证。 你可能需要从共享邮箱中删除一 (，例如带有附件) 缩小共享邮箱，以便你可以删除许可证。
+- 共享邮箱可以具有多达 50 GB 的数据，而无需为其分配许可证。 要保留的数据超过此限制，需要为其分配许可证。 你可能需要删除一大 (电子邮件，例如，从共享邮箱) 包含附件的电子邮件，以便缩小邮箱大小，以便可以删除许可证。
 
 - 不要删除旧用户帐户。 这是定位共享邮箱所需的。 如果已删除用户帐户，请参阅转换已删除 [用户的邮箱](#convert-the-mailbox-of-a-deleted-user)。
 
@@ -107,11 +108,11 @@ ms.locfileid: "60165048"
 
 4. 返回到管理中心。 在 **"用户**"下，选择与旧共享邮箱关联的用户帐户。 将许可证分配给帐户，然后重置密码。
 
-   设置邮箱需要几分钟时间，但之后，打算使用该帐户的人就可以准备就绪了。 登录后，他们会看到共享邮箱中过去的电子邮件和日历项目。
+   设置邮箱需要几分钟时间，但之后，打算使用该帐户的人就可以了。 登录后，他们会看到共享邮箱中过去的电子邮件和日历项目。
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>在混合环境中转换用户邮箱
 
-有关在混合环境中将用户邮箱转换为共享邮箱Exchange，请参阅：
+有关将用户邮箱转换为混合环境中共享邮箱Exchange，请参阅：
 
  - [在内部部署部署环境中创建或修改远程共享邮箱Exchange Cmdlet](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
  - [在混合部署中运行目录同步后，共享邮箱Exchange转换为用户邮箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)

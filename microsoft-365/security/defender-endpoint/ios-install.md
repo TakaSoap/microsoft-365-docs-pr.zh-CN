@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ad0372c82d0fdd0a869ff55d22025c35532140eb
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: a4e1952c4760fad75c5aaf0edd39fec259164a1b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217490"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423512"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>在 iOS 上部署 Microsoft Defender for Endpoint
 
@@ -79,6 +79,8 @@ ms.locfileid: "61217490"
 
 管理员可以配置 VPN 配置文件的自动设置。 这将自动设置 Defender for Endpoint VPN 配置文件，无需用户在载入时这样做。 请注意，VPN 用于提供 Web 保护功能。 这不是常规 VPN，它是不接受设备外流量的本地/自循环 VPN。
 
+此步骤通过设置 VPN 配置文件来简化载入过程。 有关零接触或无提示载入体验，请参阅下一节： [零接触载入](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint)。
+
 1. 在 [Microsoft Endpoint Manager 管理中心中](https://go.microsoft.com/fwlink/?linkid=2109431)，转到 **"设备**  ->  **配置文件""**  ->  **创建配置文件"。**
 1. 选择 **"平台** 为 **iOS/iPadOS"** 和 **"配置文件类型** 为 **VPN"。** 单击“**创建**”。
 1. 键入配置文件的名称，然后单击下一 **步**。
@@ -92,10 +94,37 @@ ms.locfileid: "61217490"
     - 自动 VPN 的类型 = 按需 VPN
     - 单击 **"** 为 **按需规则添加**"，然后选择"我想执行以下操作 = 建立 **VPN，****我希望限制为 = 所有域"。**
 
-    ![VPN 配置文件配置的屏幕截图。](images/ios-deploy-8.png)
+    ![VPN 配置文件配置设置的屏幕截图](images/ios-deploy-8.png)
 
 1. 单击"下一步"，并将配置文件分配给目标用户。
 1. 在"*审阅 + 创建*"部分，验证输入的所有信息是否正确，然后选择"创建 **"。**
+
+## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint"></a>适用于终结点的 Microsoft Defender 的零接触载入
+
+管理员可以将 Microsoft Defender for Endpoint 配置为以静默方式部署和激活。 在此流中，用户只需收到安装通知。 自动安装 Defender for Endpoint，无需用户打开应用。 按照以下步骤在已注册的 iOS 设备上设置 Defender for Endpoint 的零接触或无提示部署：
+
+1. 在 [Microsoft Endpoint Manager 管理中心中](https://go.microsoft.com/fwlink/?linkid=2109431)，转到 **"设备**  >  **配置文件""**  >  **创建配置文件"。**
+1. 选择 **"平台** 为 **iOS/iPadOS"** 和 **"配置文件类型** 为 **VPN"。** 选择“**创建**”。
+1. 键入配置文件的名称，然后选择下一 **步**。
+1. 为 **"连接** 类型"选择"自定义 **VPN"，在"基本 VPN"** 部分，输入以下内容：
+    - 连接名称 = Microsoft Defender for Endpoint
+    - VPN 服务器地址 = 127.0.0.1
+    - Auth 方法 = "Username and password"
+    - 拆分隧道 = 禁用
+    - VPN 标识符 = com.microsoft.scmx
+    - 在键值对中，输入 **SilentOnboard** 键，将值设置为 **True**。
+    - 自动 VPN 的类型 = 按需 VPN
+    - 选择 **"** 为 **按需规则添加**"，然后选择"我想执行以下操作 = 建立 **VPN，****我希望限制为 = 所有域"。**
+
+    ![VPN 配置文件配置的屏幕截图。](images/ios-deploy-9.png)
+
+1. 选择 **"** 下一步"，并将配置文件分配给目标用户。
+1. 在"*审阅 + 创建*"部分，验证输入的所有信息是否正确，然后选择"创建 **"。**
+
+完成上述配置并与设备同步后，将在目标 iOS 设备上执行以下 (操作) ：
+    - Microsoft Defender for Endpoint 将部署并静默载入，设备将在 Defender for Endpoint 门户中显示。
+    - 临时通知将发送到用户设备。
+    - 将激活 Web 保护和其他功能。
 
 ## <a name="complete-onboarding-and-check-status"></a>完成载入和检查状态
 
@@ -103,7 +132,7 @@ ms.locfileid: "61217490"
 
     ![自动生成的智能手机描述的屏幕截图。](images/41627a709700c324849bf7e13510c516.png)
 
-2. 点击 MSDefender (Defender for Endpoint 应用) 并按照屏幕上的说明完成载入步骤。 详细信息包括最终用户接受 iOS 上终结点的 Defender 所需的 iOS 权限。
+2. 点击 MSDefender (Defender for Endpoint 应用图标) 并按照屏幕上的说明完成载入步骤。 详细信息包括最终用户接受 iOS 上终结点的 Defender 所需的 iOS 权限。
 
 3. 成功载入后，设备将开始显示在 Microsoft 365 Defender 列表中。
 
@@ -128,7 +157,7 @@ Intune 允许你通过应用配置策略配置适用于 iOS 的 Defender 应用�
 
 1. 在 *"创建应用配置策略"* 页中，提供以下信息：
     - 策略名称
-    - 平台：选择“iOS/iPadOS”
+    - 平台：选择 iOS/iPadOS
     - 目标应用：从 **列表中选择适用于终结点的 Microsoft Defender**
 
     > [!div class="mx-imgBorder"]
@@ -154,5 +183,5 @@ Intune 允许你通过应用配置策略配置适用于 iOS 的 Defender 应用�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [配置应用保护策略，以将 Defender for Endpoint 风险信号 (MAM) ](ios-install-unmanaged.md)
+- [配置应用保护策略以将 Defender for Endpoint 风险信号 (MAM) ](ios-install-unmanaged.md)
 - [在 iOS 功能上为终结点配置 Defender](ios-configure-features.md)
