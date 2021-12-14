@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 03b1924e32eb1a02842da38655739d8d36ea83ac
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 4fadefe8ae55aff79a749188631e69c9bf263263
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422971"
+ms.locfileid: "61426491"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨租户邮箱迁移 (预览) 
 
@@ -46,7 +46,7 @@ ms.locfileid: "61422971"
 
 在启动之前，请确保你拥有在 Azure、EXO 迁移终结点和 EXO 组织关系中配置移动邮箱应用程序所需的权限。
 
-此外，源租户中至少需要一个启用邮件的安全组。 这些组用于确定可以从源租户移动到目标租户 (有时称为资源) 租户的邮箱列表。 这允许源租户管理员限制或限定需要移动的特定邮箱集，以防止迁移非预期用户。 不支持嵌套组。
+此外，源租户中至少需要一个启用邮件的安全组。 这些组用于将可以从源租户移动到目标租户 (有时称为资源) 邮箱列表。 这允许源租户管理员限制或限定需要移动的特定邮箱集，以防止迁移非预期用户。 不支持嵌套组。
 
 你还需要与你的受信任合作伙伴公司 (，你要将邮箱移动到) 以获取其Microsoft 365 ID。 此租户 ID 用于"组织关系域名"字段。
 
@@ -57,7 +57,7 @@ ms.locfileid: "61422971"
    > [!NOTE]
    > 必须先配置目标 (目标) 目标。 若要完成这些步骤，你无需拥有或知道源租户和目标租户的租户管理员凭据。 不同管理员可分别针对每个租户执行步骤。
 
-### <a name="prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret"></a>通过创建迁移 () 准备目标目标租户
+### <a name="prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret"></a>通过创建 (和) 准备目标目标租户
 
 1. 使用目标租户管理员Azure AD () 登录你的门户 <https://portal.azure.com> 门户
 
@@ -89,7 +89,7 @@ ms.locfileid: "61422971"
 
 10. 在"拥有的应用程序"下，找到你刚刚创建的应用并单击它。
 
-11. 在 ^Essentials 下，你需要向下复制应用程序 (客户端) ID，因为稍后将需要它来创建目标租户的 URL。
+11. 在 ^Essentials 下，你将需要向下复制应用程序 (客户端) ID，因为稍后将需要它来创建目标租户的 URL。
 
 12. 现在，在左侧导航栏上，单击"API 权限"以查看分配给你的应用的权限。
 
@@ -128,7 +128,7 @@ ms.locfileid: "61422971"
 
 24. 你可以返回到门户窗口，然后选择"刷新"以确认接受。
 
-25. 制定要发送到源租户管理员 (信任) URL，以便他们还可以接受应用程序以启用邮箱迁移。 下面是要提供的 URL 示例，你将需要刚创建的应用的应用程序 ID：
+25. 制定要发送到受信任合作伙伴的 URL (租户管理员) 以便他们还可以接受应用程序以启用邮箱迁移。 下面是要提供的 URL 示例，你将需要刚创建的应用的应用程序 ID：
 
     ```powershell
     https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
@@ -148,7 +148,7 @@ ms.locfileid: "61422971"
 2. 为跨租户邮箱移动创建新的迁移终结点
 
    > [!NOTE]
-   > 将需要刚创建的邮箱迁移应用程序的应用程序 ID 和密码 (您) 配置的密码。 此外，根据Microsoft 365使用终结点的云实例可能会有所不同。 请参阅"Microsoft 365[终结点](/microsoft-365/enterprise/microsoft-365-endpoints)"页面，为租户选择正确的实例，并查看"Exchange Online"所需地址并根据需要进行替换。
+   > 您需要刚创建的邮箱迁移应用程序的应用程序 ID，以及 (您) 配置的密码。 此外，根据Microsoft 365的云实例可能有所不同。 请参阅"Microsoft 365[终结点](/microsoft-365/enterprise/microsoft-365-endpoints)"页面，为租户选择正确的实例，并查看"Exchange Online"所需地址并根据需要替换。
 
    ```powershell
    $AppId = "[guid copied from the migrations app]"
@@ -174,7 +174,7 @@ ms.locfileid: "61422971"
    }
    ```
 
-### <a name="prepare-the-source-current-mailbox-location-tenant-by-accepting-the-migration-application-and-configuring-the-organization-relationship"></a>通过接受 (并配置) 关系，为租户的当前邮箱位置准备源
+### <a name="prepare-the-source-current-mailbox-location-tenant-by-accepting-the-migration-application-and-configuring-the-organization-relationship"></a>通过接受 (并配置) 关系，为租户中的当前邮箱位置准备源
 
 1. 从浏览器转到受信任合作伙伴提供的 URL 链接，以同意邮箱迁移应用程序。 URL 如下所示：
 
@@ -206,7 +206,10 @@ ms.locfileid: "61422971"
        New-OrganizationRelationship "[name of your organization relationship]" -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -DomainNames $targetTenantId -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
    }
    ```
-
+   
+> [!NOTE]
+> 作为租户输入的租户 ID $sourceTenantId$targetTenantId GUID 而不是租户域名。 有关租户 ID 的示例和有关查找租户 ID 的信息，请参阅[查找租户Microsoft 365 ID。](/onedrive/find-your-office-365-tenant-id)
+   
 ### <a name="how-do-i-know-this-worked"></a>我如何知道这有效？
 
 可以通过针对在目标租户上创建的跨租户迁移终结点运行 [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet 来验证跨租户邮箱迁移配置。
@@ -371,7 +374,7 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 
 **是否Teams跨租户迁移会议？**
 
-会议将移动，但是Teams跨租户迁移时，会议 URL 不会更新。 由于目标租户中的 URL 无效，因此你将需要删除并重新创建Teams会议。
+会议将移动，但Teams迁移跨租户时，会议 URL 不会更新。 由于目标租户中的 URL 将无效，因此你将需要删除并重新创建Teams会议。
 
 **聊天Teams内容是否跨租户迁移？**
 
@@ -388,7 +391,7 @@ Get-MoveRequest -Flags "CrossTenant"
 **能否提供用于复制测试中使用的属性的示例脚本？**
 
 > [!NOTE]
-> SAMPLE – AS IS， NO WARRANTY 此脚本假定连接到源邮箱 (以获取源值) 和目标本地 Active Directory 域服务 (以标记 ADUser 对象) 。 如果源已启用诉讼或单个项目恢复，则对目标帐户设置此项。  这会将目标帐户的垃圾站大小增加至 100 GB。
+> SAMPLE – AS IS， NO WARRANTY 此脚本假定连接到源邮箱 (，以获取源值) 和目标本地 Active Directory 域服务 (以标记 ADUser) 。 如果源已启用诉讼或单个项目恢复，则对目标帐户设置此项。  这会将目标帐户的垃圾站大小增加至 100 GB。
 
 
 

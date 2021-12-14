@@ -21,17 +21,18 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 description: 购买 Microsoft 365 商业标准版时，你可以选择使用自己拥有的域，也可以在注册期间购买一个域。
-ms.openlocfilehash: 9893084ad351bd6d1195df9f066f3a540af5ded2
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 51f88847a1e0ca04e216044172dbacf572fb82e3
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254437"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421398"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>使用新域或现有域设置 Microsoft 365 商业标准版
 
@@ -44,7 +45,7 @@ ms.locfileid: "61254437"
 要添加、修改或删除域，你必须是全局管理员。 有关详细信息，请参阅 [关于管理员角色](../add-users/about-admin-roles.md)。
 
 > [!IMPORTANT]
-> 注册 Microsoft 365 商业版的人员（通常是业务所有者）自动成为组织的技术管理员。 如果希望帮助管理 Microsoft 365 服务，可以将其他人添加为管理员。 有关详细信息，请查看 [添加管理员](../../business-video/add-admin.md)。
+> 注册 Microsoft 365 商业版的人员（通常是业务所有者）自动成为组织的技术管理员。 如果希望帮助管理 Microsoft 365 服务，可以将其他人添加为管理员。 有关详细信息，请参阅[分配管理员角色](../add-users/assign-admin-roles.md)。
 
 ## <a name="watch-add-an-existing-domain-to-your-microsoft-365-business-standard-subscription"></a>观看：将现有域添加到 Microsoft 365 商业标准版订阅
 
@@ -146,7 +147,7 @@ ms.locfileid: "61254437"
   
 请参阅[使用 Outlook 导入电子邮件](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de)，了解有关详细信息。
 
-还可以使用 Exchange 管理中心导入每个人的电子邮件。 有关详细信息，请参阅[迁移多个电子邮件帐户](/Exchange/mailbox-migration/mailbox-migration)。
+还可以使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>导入每个人的电子邮件。 有关详细信息，请参阅[迁移多个电子邮件帐户](/Exchange/mailbox-migration/mailbox-migration)。
 
 ## <a name="set-up-microsoft-teams-and-onedrive-for-business"></a>设置 Microsoft Teams 和 OneDrive for Business
 

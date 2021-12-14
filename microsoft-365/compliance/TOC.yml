@@ -541,6 +541,8 @@
               href: archive-rogers-network-archiver-data.md
             - name: 信号存档程序
               href: archive-signal-archiver-data.md
+            - name: StarHub 网络存档程序（预览版）
+              href: archive-starhub-network-archiver-data.md
             - name: Telegram 存档程序
               href: archive-telegram-archiver-data.md
             - name: TELUS 网络

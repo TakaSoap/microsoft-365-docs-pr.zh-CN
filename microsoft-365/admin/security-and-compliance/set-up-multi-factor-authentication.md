@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: c99d856382f88d9938a124770179610d8a16a33c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 384e904a77b1582c65ef24c22fe2f96d2946c381
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373040"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421158"
 ---
 # <a name="set-up-multifactor-authentication"></a>设置多重身份验证
 
@@ -118,7 +118,6 @@ ms.locfileid: "61373040"
 
 ## <a name="related-content"></a>相关内容
 
-
-[打开多重身份验证](../../business-video/turn-on-mfa.md)（视频）
+[设置多重身份验证](set-up-multi-factor-authentication.md)（视频） 
 
 [打开手机的多重身份验证](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)（视频）

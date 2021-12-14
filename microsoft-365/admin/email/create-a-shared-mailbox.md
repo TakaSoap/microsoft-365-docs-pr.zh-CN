@@ -18,23 +18,24 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: a2c4480d443874c99cf014570e01845708d18d88
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 19e27510b9ffd28aaae739c6d4da4299bca1a4fb
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371144"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422299"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
 > [!NOTE]
-> 如果组织使用混合 Exchange 环境，则应使用本地 Exchange 管理中心(EAC)创建并管理共享邮箱。请参阅 [在 Exchange 管理中心中创建共享邮箱](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
+> 如果你的组织使用的是混合 Exchange 环境，则你应使用本地 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>创建和管理共享邮箱。 请参阅[在 Exchange 管理中心创建共享邮箱](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
 >
 > 如果不确定是应为 Outlook 创建共享邮箱还是 Microsoft 365 组，可参阅[比较组](../create-groups/compare-groups.md)获取一些指导。 请注意，暂无法将共享邮箱迁移到 Microsoft 365 组中。 如果这不是你想要的结果，请通过[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)告诉我们。
 
@@ -90,7 +91,7 @@ ms.locfileid: "61371144"
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>使用 EAC 编辑共享邮箱委派
 
-1. 在 EAC 中，转到 **共享** \> **的**。 选择共享邮箱，然后选择“**编辑**”“![编辑图标](../../media/ITPro-EAC-EditIcon.png)”。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>，转到“**收件人**”\>“**共享**”。 选择共享邮箱，然后选择“**编辑**”“![编辑图标](../../media/ITPro-EAC-EditIcon.png)”。
 
 2. 选择“**邮箱委派**”。
 

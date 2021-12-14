@@ -14,18 +14,21 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
+- admindeeplinkMAC
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 ms.localizationpriority: high
 search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 365 中的工具来识别并响应遭到入侵的电子邮件帐户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e2b38179556c8658cf6619e40f87bb803fec80e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c848a62793e6397f4cfd489c68d156a194b7911d
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208382"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421110"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>响应遭到入侵的电子邮件帐户
 
@@ -59,11 +62,11 @@ ms.locfileid: "60208382"
 - 最近添加了邮件转发功能。
 - 最近添加了异常的签名，例如假银行签名或处方药签名。
 
-如果用户报告了上述任何症状，你应该进一步展开调查。 [Microsoft 365 Defender](https://security.microsoft.com) 和 Azure 门户提供了各种工具，可帮助你对疑似遭到入侵的用户帐户活动展开调查。
+如果用户报告了上述任何症状，你应该进一步展开调查。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a>和 Azure 门户提供的工具可帮助你调查你怀疑可能遭到入侵的用户帐户的活动。
 
 - **Microsoft 365 Defender 门户内的统一审核日志**：通过筛选从可疑活动发生前到当前日期的日期范围内的结果来审阅可疑帐户的所有活动。不要在搜索期间筛选活动。
 
-- **EAC 中的管理员审核日志**：在 Exchange Online 中，可以使用 Exchange 管理中心 (EAC) 搜索和查看管理员审核日志中的条目。 管理员审核日志根据管理员和分配有管理员权限的用户执行的 Exchange Online PowerShell cmdlet 来记录特定操作。 管理员审核日志中的条目向您提供有关所运行的 cmdlet、所使用的参数、运行 cmdlet 的用户以及受影响的对象的相关信息。
+- **EAC 中的管理员审核日志**：在 Exchange Online 中，可以使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心 (EAC)</a> 搜索和查看管理员审核日志中的条目。 管理员审核日志根据管理员和分配有管理员权限的用户执行的 Exchange Online PowerShell cmdlet 来记录特定操作。 管理员审核日志中的条目向您提供有关所运行的 cmdlet、所使用的参数、运行 cmdlet 的用户以及受影响的对象的相关信息。
 
 - **Azure AD 门户中的 Azure AD 登录日志和其他风险报告**：检查以下列中的值：
   - 查看 IP 地址
@@ -99,7 +102,7 @@ ms.locfileid: "60208382"
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>步骤 2 删除可疑的电子邮件转发地址
 
-1. 在 <https://admin.microsoft.com> 打开 Microsoft 365 管理中心。
+1. 转到 Microsoft 365 管理中心：<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>。
 
 2. 转到“**用户**”\>“**活动用户**”。找到有问题的用户帐户，然后选择该用户（行），而不选中复选框。
 
@@ -128,13 +131,13 @@ ms.locfileid: "60208382"
 > [!IMPORTANT]
 > 你可以阻止疑似遭到入侵的帐户登录，直到你认为重新启用访问权限是安全的。
 
-1. 在 <https://admin.microsoft.com> 打开 Microsoft 365 管理中心，然后转到“**用户**”\>“**活动用户**”。
+1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的 Microsoft 365 管理中心，然后转到“**用户**”\>“**活动用户**”。
 
 2. 查找并选择用户帐户，单击“![更多图标](../../media/ITPro-EAC-MoreOptionsIcon.png)”，然后选择“**编辑登录状态**”。
 
 3. 出现“**阻止登录**”的窗格上，选择“**阻止此用户登录**”，然后单击“**保存更改**”。
 
-4. 在 <https://admin.exchange.microsoft.com> 进入 Exchange 管理中心 (EAC)，并转到“**收件人**”\>“**邮箱**”。
+4. 打开 Exchange 管理中心 （EAC），然后转到“**收件人**”\><a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">“**邮箱**”</a>。
 
 5. 查找并选择用户。在打开的邮箱详细信息浮出控件中，执行以下步骤：
    - 在 **电子邮件应用** 部分中，通过将切换开关移到右侧“![禁用](../../media/scc-toggle-on.png)”来阻止所有可用设置：
@@ -152,12 +155,12 @@ ms.locfileid: "60208382"
 > [!NOTE]
 > 在帐户受到保护后，可以恢复管理角色组成员身份。
 
-1. 使用全局管理员帐户在 <https://admin.microsoft.com> 打开Microsoft 365 管理中心并执行以下步骤：
+1. 使用全局管理员帐户转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的 Microsoft 365 管理中心，然后执行以下步骤：
    1. 转到“**用户**”\>“**活动用户**”。
    2. 查找并选择用户帐户，单击“![更多图标](../../media/ITPro-EAC-MoreOptionsIcon.png)”，然后选择“**管理角色**”。
    3. 删除分配给该帐户的任何管理角色。 完成后，单击“**保存更改**”。
 
-2. 在 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户并执行以下步骤：
+2. 打开 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a>，然后执行以下步骤：
    1. 转到“**权限和角色**”\>“**电子邮件和协作角色**”\>“**角色**”。
    2. 在 **权限** 页面上，在列表中选择每个角色组，然后在出现的详细信息浮出控件的“**成员**”部分查找用户帐户。如果角色组包含用户账户，请执行以下步骤：
       1. 在“**成员**”部分中，单击“**编辑**”。
@@ -167,8 +170,8 @@ ms.locfileid: "60208382"
 
          完成后，单击“**完成**”、“**保存**”，然后单击“**关闭**”。
 
-3. 在 <https://admin.exchange.microsoft.com> 打开 EAC 并执行以下步骤：
-   1. 选择“**角色**”\>“**管理员角色**”。
+3. 打开 EAC，然后执行以下步骤：
+   1. 选择“**角色**”\><a href="https://go.microsoft.com/fwlink/?linkid=2183234" target="_blank">“**管理员角色**”</a>。
    2. 在 **管理员角色** 页面上，手动选择每个角色组，然后在详细信息窗格中，选择“**已分配**”选项卡以验证用户帐户。 如果角色组包含该用户帐户，请执行以下步骤：
       1. 选择用户帐户。
       2. 单击 ![删除图标。](../../media/m365-cc-sc-delete-icon.png).

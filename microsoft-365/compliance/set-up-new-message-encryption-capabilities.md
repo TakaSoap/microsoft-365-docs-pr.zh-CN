@@ -20,12 +20,13 @@ description: 了解新的 Office 365 邮件加密功能，可与组织内部和�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: d76b350736ead1620f2dc52bfed607ec2c9f7893
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: 006bef8a78a50e3cc47bfcfe7910621a3fa9ef85
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188093"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422983"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>设置全新的邮件加密功能
 
@@ -125,7 +126,7 @@ ms.locfileid: "60188093"
 
 若要更新现有规则以使用新的 OME 功能，请执行以下操作：
 
-1. 在 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339) 中，转到“**管理中心”>“Exchange**”。
+1. 在 Microsoft 365 管理中心中，转到 **管理中心** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>。
 2. 在 Exchange 管理中心，转到“**邮件流>规则**”。
 3. 对于每条规则, 在 **执行下列操作** 中：
     - 选择“**修改邮件安全性**”。

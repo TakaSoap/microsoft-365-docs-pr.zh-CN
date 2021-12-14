@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 授予用户访问其他用户邮箱的权限，此操作允许用户从其他用户的邮箱读取和发送电子邮件。
-ms.openlocfilehash: ec014a744f47b97dd0a65b432510c2e90dea17e4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0b3871b57f9c486ca5eea6a5d121821c203f7a20
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370268"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421554"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>向其他用户授予邮箱权限 - 管理员帮助
 
@@ -111,7 +112,7 @@ ms.locfileid: "61370268"
 
 
 > [!NOTE]
-> “**读取**”和“**管理**”权限在 Exchange 管理中心中授予时称为“**完全访问**”权限。 此权限允许分配的用户邮箱读取和管理分配权限的用户邮箱中的电子邮件。 完全访问权限不授予 **“发送方式”** 或 **“代表发送”** 权限。
+> “**读取**”和“**管理**”权限在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>中授予时称为“**完全访问**”权限。 此权限允许分配的用户邮箱读取和管理分配权限的用户邮箱中的电子邮件。 完全访问权限不授予 **“发送方式”** 或 **“代表发送”** 权限。
 
 ::: moniker-end
 

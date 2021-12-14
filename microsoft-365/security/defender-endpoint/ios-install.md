@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4e1952c4760fad75c5aaf0edd39fec259164a1b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: c492d106e84eb01d36f26aa9db333ddf9b5db7c5
+ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423512"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61436688"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>在 iOS 上部署 Microsoft Defender for Endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "61423512"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-本主题介绍如何在已注册的设备上在 iOS Intune 公司门户 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅在 Intune 中注册 [iOS/iPadOS 设备](/mem/intune/enrollment/ios-enroll)。
+本主题介绍在已注册的设备上在 iOS Intune 公司门户 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅在 Intune 中注册 [iOS/iPadOS 设备](/mem/intune/enrollment/ios-enroll)。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -79,7 +79,7 @@ ms.locfileid: "61423512"
 
 管理员可以配置 VPN 配置文件的自动设置。 这将自动设置 Defender for Endpoint VPN 配置文件，无需用户在载入时这样做。 请注意，VPN 用于提供 Web 保护功能。 这不是常规 VPN，它是不接受设备外流量的本地/自循环 VPN。
 
-此步骤通过设置 VPN 配置文件来简化载入过程。 有关零接触或无提示载入体验，请参阅下一节： [零接触载入](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint)。
+此步骤通过设置 VPN 配置文件来简化载入过程。 有关零接触或无提示载入体验，请参阅下一节： [零接触载入](#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview)。
 
 1. 在 [Microsoft Endpoint Manager 管理中心中](https://go.microsoft.com/fwlink/?linkid=2109431)，转到 **"设备**  ->  **配置文件""**  ->  **创建配置文件"。**
 1. 选择 **"平台** 为 **iOS/iPadOS"** 和 **"配置文件类型** 为 **VPN"。** 单击“**创建**”。
@@ -99,7 +99,12 @@ ms.locfileid: "61423512"
 1. 单击"下一步"，并将配置文件分配给目标用户。
 1. 在"*审阅 + 创建*"部分，验证输入的所有信息是否正确，然后选择"创建 **"。**
 
-## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint"></a>适用于终结点的 Microsoft Defender 的零接触载入
+## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview"></a>适用于 Endpoint (Preview) 的零接触载入
+
+
+> [!IMPORTANT]
+> 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
+
 
 管理员可以将 Microsoft Defender for Endpoint 配置为以静默方式部署和激活。 在此流中，用户只需收到安装通知。 自动安装 Defender for Endpoint，无需用户打开应用。 按照以下步骤在已注册的 iOS 设备上设置 Defender for Endpoint 的零接触或无提示部署：
 
@@ -134,7 +139,7 @@ ms.locfileid: "61423512"
 
 2. 点击 MSDefender (Defender for Endpoint 应用图标) 并按照屏幕上的说明完成载入步骤。 详细信息包括最终用户接受 iOS 上终结点的 Defender 所需的 iOS 权限。
 
-3. 成功载入后，设备将开始显示在 Microsoft 365 Defender 列表中。
+3. 成功载入后，设备将开始显示在"设备"列表上的Microsoft 365 Defender门户。
 
     > [!div class="mx-imgBorder"]
     > ![自动生成的手机描述的屏幕截图。](images/device-inventory-screen.png)
@@ -183,5 +188,5 @@ Intune 允许你通过应用配置策略配置适用于 iOS 的 Defender 应用�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [配置应用保护策略以将 Defender for Endpoint 风险信号 (MAM) ](ios-install-unmanaged.md)
+- [配置应用保护策略，以将 Defender for Endpoint 风险信号 (MAM) ](ios-install-unmanaged.md)
 - [在 iOS 功能上为终结点配置 Defender](ios-configure-features.md)

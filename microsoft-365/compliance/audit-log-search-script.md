@@ -15,14 +15,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: 使用在 Exchange Online 中运行 Search-UnifiedAuditLog cmdlet 的 PowerShell 脚本搜索审核日志。 此脚本已经过优化，可在每次运行时返回大量审核记录。 该脚本会将这些记录导出为 CSV 文件，可在 Excel 中使用 Power Query 查看或转换这些文件。
-ms.openlocfilehash: d104ac5bb056d898dd03aaf3765a35950a7ea094
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: 60f78f5a5eebeaa90f01b4b251d917f178c06ae9
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268562"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421350"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>使用 PowerShell 脚本搜索审核日志
 
@@ -48,7 +50,7 @@ ms.locfileid: "60268562"
 
   **UnifiedAuditLogestionEnabled** 属性的 `True` 值表明已打开审核日志搜索。
 
-- 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能成功运行脚本。 默认情况下，在 Exchange 管理中心中的“权限”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 有关详细信息，请参阅[在合规中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)中的“搜索审核日志的要求”部分。
+- 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能成功运行脚本。 默认情况下，这些角色是在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>中的“权限”页上被分配给“合规性管理”和“组织管理”角色组。 有关详细信息，请参阅[在合规中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)中的“搜索审核日志的要求”部分。
 
 - 完成该脚本可能需要很长时间。 运行所需的时长取决于配置脚本以为其检索审核记录的日期范围和时间间隔大小。 较大的日期范围和较小的间隔将导致运行时间较长。 请参阅步骤 2 中的表格，了解有关日期范围和间隔的信息。
 

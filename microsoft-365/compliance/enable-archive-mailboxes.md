@@ -21,13 +21,14 @@ ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
 description: 了解如何使用合规性中心来启用存档邮箱，以支持组织的邮件保留、电子数据展示和法定保留要求。
-ms.openlocfilehash: 1e92c3c8a4c19aa33124b930574f9646ac5bfabe
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 33bbb0987779f7810d797d7cb5a6255c32c34c75
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374300"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422335"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>在合规性中心中启用存档邮箱
 
@@ -38,7 +39,7 @@ Microsoft 365 中的存档（又称为 *就地存档*）为用户提供额外的
 
 ## <a name="get-the-necessary-permissions"></a>获取必要的权限
 
-必须在 Exchange Online 中分配 "邮件收件人" 角色, 才能启用或禁用存档邮箱。 默认情况下, 此角色分配给 Exchange 管理中心的 **权限** 页上的 "收件人管理" 和 "组织管理" 角色组。 如果在 Microsoft 365 合规中心中看不到 **存档** 页，则请管理员为你分配必要的权限。
+必须在 Exchange Online 中分配 "邮件收件人" 角色, 才能启用或禁用存档邮箱。 默认情况下, 此角色将分配给 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>的 **权限** 页上的“收件人管理”和“组织管理”角色组。 如果在 Microsoft 365 合规中心中看不到 **存档** 页，则请管理员为你分配必要的权限。
 
 ## <a name="enable-an-archive-mailbox"></a>启用存档邮箱
 
