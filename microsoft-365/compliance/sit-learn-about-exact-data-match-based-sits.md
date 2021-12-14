@@ -1,5 +1,5 @@
 ---
-title: 了解基于精确数据匹配的敏感信息类型
+title: 了解基于确切数据匹配的敏感信息类型
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 description: 了解基于准确数据匹配的敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 552d86e4c460ee0195ec83d88965592298a17d90
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: d6b8b2bb5387257bf016e751713b9cba61de9691
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914744"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426467"
 ---
-# <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>了解基于精确数据匹配的敏感信息类型
+# <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>了解基于确切数据匹配的敏感信息类型
 
-[](sensitive-information-type-learn-about.md)敏感信息类型用于帮助标识敏感项目，以便防止意外或不当共享它们，帮助在电子数据展示中查找敏感数据，以及将管理操作应用于某些类型的信息。 您根据以下信息在 SIT (自定义) 类型：
+[](sensitive-information-type-learn-about.md)敏感信息类型用于帮助标识敏感项目，以便防止意外或不当共享它们，帮助在电子数据展示中查找敏感数据，以及将管理操作应用于某些类型的信息。 你可以根据以下信息定义一个 (SIT) 类型：
 
 - 模式
 - 关键字证据，*如员工**、社会保险号* 或 *ID*
 - 字符近似特定模式的证据
 - 可信度
 
-但是，如果需要使用使用精确或接近精确数据值的 (SIT) ，而不是基于通用模式找到匹配项的自定义敏感信息类型，应该如何呢？ 使用精确数据 (EDM) 基于分类，你可以创建自定义敏感信息类型，该类型旨在：
+但是，如果需要使用使用精确或接近精确数据值的 (SIT) ，而不是基于通用模式找到匹配项的自定义敏感信息类型，应该如何呢？ 使用精确数据 (EDM) 分类，你可以创建自定义敏感信息类型，该类型旨在：
 
 - 动态且轻松地刷新
 - 更具可伸缩性
@@ -71,7 +71,7 @@ ms.locfileid: "60914744"
 
 ### <a name="sensitive-information-source-table"></a>敏感信息源表
 
-包含 EDM SIT 将查找的敏感信息值的敏感源表。 它由列和 roes 组成。 列标题是字段名称，行是数据的实例，每个单元格包含该字段的实例的值。
+敏感源表包含 EDM SIT 将查找的敏感信息值。 它由列和行组成。 列标题是字段名称，行是数据的实例，每个单元格包含该字段的实例的值。
 
 下面是敏感信息源表的简单示例。
 
@@ -98,7 +98,7 @@ ms.locfileid: "60914744"
 
 ### <a name="primary-and-secondary-support-elements"></a>主要和辅助支持元素
 
-创建 EDM SIT 时，在规则 *包中* 定义主元素字段。 主要字段是搜索所有内容的元素，这些元素需要遵循定义的模式才能进行标识。 在扫描的项中发现主元素后，EDM 将查找不需要遵循模式且与主要元素接近的辅助或支持元素。 EDM 要求首先可以通过现有 SIT 发现主元素。 请参阅 [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md) ，了解可用 SIT 的完整列表。 你必须找到其中一个检测 EDM SIT 要检测的类的类。 例如，如果您的 EDM SIT 架构将美国社会保险号作为主元素，则当您创建 EDM 架构时，会将 EDM 架构与美国社会保险号 [ (SSN) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT 关联。
+创建 EDM SIT 时，在规则 *包中* 定义主元素字段。 主要字段是搜索所有内容的元素，这些元素需要遵循定义的模式才能进行标识。 在扫描的项中发现主元素后，EDM 将查找不需要遵循模式且与主要元素接近的辅助或支持元素。 EDM 要求首先可以通过现有 SIT 发现主元素。 请参阅 [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md) ，了解可用 SIT 的完整列表。 你必须找到其中一个检测 EDM SIT 要检测的类的类。 例如，如果您的 EDM SIT 架构将美国社会保险号作为主要元素，则当您创建 EDM 架构时，会将 EDM 架构与美国社会保险号 [ (SSN) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT 关联。
 
 
 ## <a name="how-matching-works"></a>匹配的工作原理
@@ -110,5 +110,5 @@ EDM 通过将找到的内容与定义的敏感数据表进行比较来查找匹�
 
 ## <a name="see-also"></a>另请参阅
 
-- [开始使用基于精确数据匹配的敏感信息类型](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
+- [基于精确数据匹配的敏感信息类型入门](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
    

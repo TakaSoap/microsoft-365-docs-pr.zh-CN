@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 892f151234aee8daee0cac12622d08cd39f27769
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d595e931e364aa04c0e4dd72dc996e1f93c7ab05
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372908"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426395"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -43,9 +43,9 @@ ms.locfileid: "61372908"
   > [!div class="mx-imgBorder"]
   > ![DLP 设置。](../media/endpoint-dlp-1-using-dlp-settings.png)
 
-### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>终结点 DLP Windows 10 和 macOS 设置
+### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>终结点 DLP Windows 10/11 和 macOS 设置
 
-|Setting |Windows 10、1809 及更高版本  |macOS Catalina 10.15 或更高版本（预览）  |Notes  |
+|Setting |Windows 10，1809 及更高版本，Windows 11  |macOS Catalina 10.15 或更高版本（预览）  |Notes  |
 |---------|---------|---------|---------|
 |文件路径排除     |支持         |支持         |macOS 包括默认启用的推荐排除项列表          |
 |不允许的应用程序     |支持         |支持         |         |
@@ -53,6 +53,9 @@ ms.locfileid: "61372908"
 |敏感项目的浏览器和域限制      |支持         |支持         |         |
 |终结点 DLP 的其他设置     |支持         |支持         |macOS 设备仅支持默认业务理由         |
 |始终审核已载入设备的文件活动     |支持         |支持         |         |
+|来自不允许的应用的自动隔离文件 | 支持 | 不支持| |
+|高级分类 | 支持 | 不支持| |
+|策略提示中的业务理由 | 支持 | 支持| |
 
 ### <a name="advanced-classification-scanning-and-protection"></a>高级分类扫描和保护
 
@@ -139,6 +142,7 @@ ms.locfileid: "61372908"
 > 请注意，必须通过与在其上面运行的操作系统对应的唯一路径进入跨平台应用程序。
 
 若要查找 Mac 应用程序的完整路径：
+
 1. 在 macOS 设备上，打开“**活动监视器**”。 查找并双击要限制的进程
 
 2. 选择“**打开文件和端口**”选项卡。
@@ -169,7 +173,15 @@ ms.locfileid: "61372908"
 
 #### <a name="unallowed-browsers"></a>不允许的浏览器
 
-你将添加由执行文件名标识的浏览器，这些浏览器将被阻止访问与强制 DLP 策略的条件匹配的文件，在该 DLP 策略中，“上载到云服务的限制”设置为“阻止”或“阻止覆盖”。 当这些浏览器被阻止访问文件时，最终用户将看到一则定制通知，要求他们通过 Microsoft Edge Chromium 打开文件。
+对于 Windows 设备，如果添加由可执行名称标识的浏览器，浏览器将受到阻止，无法访问与强制实施的 DLP 策略（其中上传到云服务限制设为“阻止”或“阻止替代”）条件匹配的文件。 当阻止这些浏览器访问文件时，最终用户将看到一则 toast 通知，要求他们通过 Microsoft Edge 打开文件。
+
+对于 macOS 设备，必须添加完整的文件路径。 若要查找 Mac 应用程序的完整路径：
+
+1. 在 macOS 设备上，打开“**活动监视器**”。 查找并双击要限制的进程
+
+2. 选择“**打开文件和端口**”选项卡。
+  
+3. 应用名称位于完整路径的末尾。
 
 #### <a name="service-domains"></a>服务域
 
@@ -220,7 +232,7 @@ ms.locfileid: "61372908"
 
 通过终结点 DLP 和 Microsoft Edge Chromium Web 浏览器，可以将意外共享敏感项目限制为不允许的云应用和服务。 Microsoft Edge Chromium可以了解终结点 DLP 策略何时限制项目，并实施访问限制。
 
-在将终结点 DLP 用作正确配置的 DLP 策略和 Microsoft Edge Chromium 浏览器中的位置时，你在这些设置中定义的不允许的浏览器将无法访问与 DLP 策略控件匹配的敏感项目。 相反，用户将被重定向以使用 Edge Chromium，该浏览器了解 DLP 施加的限制，可以在满足 DLP 策略中的条件时阻止或限制活动。
+在将终结点 DLP 用作正确配置的 DLP 策略和 Microsoft Edge 浏览器中的位置时，你在这些设置中定义的不允许的浏览器将无法访问与 DLP 策略控制匹配的敏感项。 相反，用户将被重定向以使用 Microsoft Edge，该浏览器了解 DLP 施加的限制，因此可以在满足 DLP 策略中的条件时阻止或限制活动。
 
 若要使用此限制，需要配置三个重要部分：
 

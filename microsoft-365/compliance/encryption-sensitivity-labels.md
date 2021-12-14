@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05e09bbd07bb8b4d15ce9bb82b64f49b49d88ffd
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 024759362cd2e329655935c784a77a1789603f37
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239956"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426335"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -310,7 +310,7 @@ ms.locfileid: "60239956"
 
 在 Word、PowerPoint 和 Excel 中，当用户向文档应用允许其分配权限的敏感度标签时，系统会提示他们在应用加密时指定其对用户和权限的选择。
 
-例如，用户可通过 Azure 信息保护统一标记客户端：
+例如，使用 Azure 信息保护统一标记客户端，除非 [启用了共同创作](sensitivity-labels-coauthoring.md)，否则用户可以：
 
 - 选择权限级别，例如查看者（可分配“仅查看”权限）或合著者（可分配“查看”、“编辑”、“复制”和“打印”权限）。
 - 选择用户、组或组织。 这可包括你所在组织内部或外部的人员。
@@ -318,11 +318,14 @@ ms.locfileid: "60239956"
 
 ![用户使用自定义权限保护的选项。](../media/sensitivity-aip-custom-permissions-dialog.png)
 
-对于内置标签，用户在选择以下项时也会看到此对话框：
+对于内置标签以及 [启用共同创作](sensitivity-labels-coauthoring.md) 时的 Azure 信息保护统一标记客户端，用户会看到相同的对话框，就像他们选择了以下内容一样：
 
 - Windows：“**文件**”选项卡 >“**信息**” > “**保护文档**” > “**限制访问**” > “**受限访问**”
 
 - macOS：“**审阅**”选项卡 >“**保护**” > “**权限**” > “**受限访问**”
+
+> [!TIP]
+> 如果用户熟悉在 [启用共同创作](sensitivity-labels-coauthoring.md) 之前使用使用 Azure 信息保护统一标记客户端来配置自定义权限，你可能发现查看权限级别与单个使用权限的映射很有帮助：[权限级别中包含的权限](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)。
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>加密设置的配置示例
 
