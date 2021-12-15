@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c7ad9678f797fd3e8df34b40fe39fea5672e13d5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 2cd8c91717af8390160bf45a625ae3a3044ee387
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704473"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531479"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -37,23 +37,23 @@ ms.locfileid: "60704473"
 
 | 列 | 数据类型 | 说明 |
 |------------|---------------|-------------|
-| `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
-| `SHA256` | string | 已应用录制操作的文件的 SHA-256 |
-| `MD5` | string | 已记录操作所应用到的文件的 MD5 哈希 |
-| `FileSize` | int | 文件大小（以字节为单位） |
-| `GlobalPrevalence` | int | Microsoft 全局观察到的实体实例数 |
-| `GlobalFirstSeen` | datetime | Microsoft 全局首次观测到实体的日期和时间 |
-| `GlobalLastSeen` | datetime | Microsoft 全局上次观测到实体的日期和时间 |
-| `Signer` | string | 有关文件签名者的信息 |
-| `Issuer` | string | 有关 CA 证书颁发机构 (的信息)  |
-| `SignerHash` | string | 标识签名者的唯一哈希值 |
-| `IsCertificateValid` | boolean | 用于对文件进行签名的证书是否有效 |
-| `IsRootSignerMicrosoft` | boolean | 指示根证书的签名者是否是 Microsoft |
-| `SignatureState` | string | 文件签名的状态：SignedValid - 使用有效签名对文件进行签名，SignedInvalid - 文件已签名，但证书无效，未签名 - 文件未签名，未知 - 无法检索有关文件的信息
-| `IsExecutable` | boolean | 文件是否是可移植可执行文件 (PE) 文件 |
-| `ThreatName` | string | 找到的任何恶意软件或其他威胁的检测名称 |
-| `Publisher` | string | 发布该文件的组织的名称 |
-| `SoftwareName` | string | 软件产品的名称 |
+| `SHA1` | `string` | 录制操作所应用到的文件的 SHA-1 |
+| `SHA256` | `string` | 已应用录制操作的文件的 SHA-256 |
+| `MD5` | `string` | 已记录操作所应用到的文件的 MD5 哈希 |
+| `FileSize` | `int` | 文件大小（以字节为单位） |
+| `GlobalPrevalence` | `int` | Microsoft 全局观察到的实体实例数 |
+| `GlobalFirstSeen` | `datetime` | Microsoft 全局首次观测到实体的日期和时间 |
+| `GlobalLastSeen` | `datetime` | Microsoft 全局上次观测到实体的日期和时间 |
+| `Signer` | `string` | 有关文件签名者的信息 |
+| `Issuer` | `string` | 有关 CA 证书颁发机构 (的信息)  |
+| `SignerHash` | `string` | 标识签名者的唯一哈希值 |
+| `IsCertificateValid` | `boolean` | 用于对文件进行签名的证书是否有效 |
+| `IsRootSignerMicrosoft` | `boolean` | 指示根证书的签名者是否是 Microsoft |
+| `SignatureState` | `string` | 文件签名的状态：SignedValid - 使用有效签名对文件进行签名，SignedInvalid - 文件已签名，但证书无效，未签名 - 文件未签名，未知 - 无法检索有关文件的信息
+| `IsExecutable` | `boolean` | 文件是否是可移植可执行文件 (PE) 文件 |
+| `ThreatName` | `string` | 找到的任何恶意软件或其他威胁的检测名称 |
+| `Publisher` | `string` | 发布该文件的组织的名称 |
+| `SoftwareName` | `string` | 软件产品的名称 |
 
 ## <a name="syntax"></a>语法
 

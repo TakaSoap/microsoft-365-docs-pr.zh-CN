@@ -1,5 +1,5 @@
 ---
-title: ASR 规则部署阶段 4 - 可操作
+title: ASR 规则部署阶段 4 - 操作化
 description: 提供操作攻击面减少规则部署的指导。
 keywords: 攻击面减少规则部署， ASR 部署， 启用 asr 规则， 配置 ASR， 主机入侵防护系统， 保护规则， 反攻击规则， 反攻击， 攻击规则， 感染防护规则， Microsoft Defender for Endpoint， 配置 ASR 规则
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7c06be427df2425a2160201324a6ed267d88d0fd
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 01556e67738ffac18a46c09c85bc2e70d1f5f29e
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218330"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531686"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-4-operationalize"></a>攻击面减少规则部署阶段 4：操作
 
@@ -30,7 +30,7 @@ ms.locfileid: "61218330"
 
 ## <a name="manage-false-positives"></a>管理误报
 
-任何威胁防护解决方案都可能发生误报/负面影响。 误报是检测到实体 (或进程) 被检测为恶意实体，尽管实体实际上不是威胁。 相比之下，漏报是未检测为威胁但恶意的实体。 有关误报和漏报信息，请参阅：在 Microsoft Defender for Endpoint 中解决 [误报/负数](defender-endpoint-false-positives-negatives.md)
+任何威胁防护解决方案都可能发生误报/负面影响。 误报是检测到实体 (进程或进程) 被检测并标识为恶意实体的情况，尽管实体实际上不是威胁。 相比之下，漏报是未检测为威胁但恶意的实体。 有关误报和漏报信息，请参阅：在 Microsoft Defender for Endpoint 中解决 [误报/负数](defender-endpoint-false-positives-negatives.md)
 
 ## <a name="keeping-up-with-reports"></a>保持与报告保持一起
 
@@ -38,12 +38,12 @@ ms.locfileid: "61218330"
 
 ## <a name="hunting"></a>搜寻
 
-搜索功能最强大的功能[之一Microsoft 365 Defender](https://securitycenter.microsoft.com)高级搜寻。 如果你不熟悉高级搜寻，请参阅：使用高级搜寻主动 [搜寻威胁](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。
+搜索功能最强大的功能[之一Microsoft 365 Defender](https://security.microsoft.com)高级搜寻。 如果你不熟悉高级搜寻，请参阅：使用高级搜寻主动 [搜寻威胁](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。
 
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender高级搜寻](images/asr-defender365-advanced-hunting2.png)
 
-高级搜寻是基于查询的 (Kusto 查询语言) 威胁搜寻工具，允许你浏览 Microsoft Defender ATP 终结点检测和响应 (EDR) 从你的所有计算机收集的最多 30 天的已捕获 (原始) 数据。 通过高级搜寻，你可以主动检查事件，以便找到有趣的指示器和实体。 灵活访问数据有助于无约束搜寻已知威胁和潜在威胁。
+高级搜寻是基于查询的 (Kusto 查询语言) 威胁搜寻工具，允许你浏览 Microsoft Defender ATP 终结点检测和响应 (EDR) 从你的所有计算机收集的最多 30 天捕获的 (原始) 数据。 通过高级搜寻，你可以主动检查事件，以便找到有趣的指示器和实体。 灵活访问数据有助于无约束搜寻已知威胁和潜在威胁。
 
 通过高级搜寻，可以提取 ASR 规则信息、创建报告，并获取有关给定 ASR 规则审核或阻止事件的上下文的深入信息。
 
@@ -62,7 +62,7 @@ ms.locfileid: "61218330"
 - AsrOfficeChildProcess 事件 2 个， (1 个事件（已审核）和 1 个针对阻止) 
 - AsrPsexecWmiChildProcessAudited 的 8 个事件
 
-如果您想重点关注 AsrOfficeChildProcess 规则并获取有关实际文件和过程的详细信息，请更改 ActionType 的筛选器，将汇总行替换为需要字段 (的投影，在这种情况下它们是 DeviceName、FileName、FolderPath 等 ) 。
+如果要专注于 AsrOfficeChildProcess 规则，并获取有关实际文件和过程的详细信息，请更改 ActionType 的筛选器，将汇总行替换为需要字段 (的投影，在这种情况下它们是 DeviceName、FileName、FolderPath 等 ) 。
 
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender高级搜寻查询](images/asr-defender365-advanced-hunting4b.png)

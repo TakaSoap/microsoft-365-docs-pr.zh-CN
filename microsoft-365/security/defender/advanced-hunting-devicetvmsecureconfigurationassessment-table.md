@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3487ced09cfd0bbd3a25f8e8124f84a05368d290
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.openlocfilehash: 43f44458cde7d466d1097034e7bcc9d0e3072745
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61035966"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530699"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -43,18 +43,18 @@ ms.locfileid: "61035966"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `DeviceId` | string | 服务中设备的唯一标识符 |
-| `DeviceName` | string | 设备的完全限定 (FQDN) FQDN |
-| `OSPlatform` | string | 在设备上运行的操作系统的平台。 指示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10 和 Windows 7。|
-| `Timestamp` | datetime | 生成记录的日期和时间 |
-| `ConfigurationId` | string | 特定配置的唯一标识符 |
-| `ConfigurationCategory` | string | 配置所属的类别或分组：应用程序、OS、网络、帐户、安全控件 |
-| `ConfigurationSubcategory` | string | 配置所属的子类别或子组。 在许多情况下，string 描述特定功能。 |
-| `ConfigurationImpact` | string | 配置对总体配置评分的影响程度 (1-10) |
-| `IsCompliant` | boolean | 指示是否正确配置了配置或策略 |
-| `IsApplicable` | 布尔 | 指示配置或策略是否适用于设备 |
-| `Context` | string | 有关配置或策略的其他上下文信息 |
-| `IsExpectedUserImpact` | boolean | 指示应用配置或策略时是否将影响用户 |
+| `DeviceId` | `string` | 服务中设备的唯一标识符 |
+| `DeviceName` | `string` | 设备的完全限定 (FQDN) FQDN |
+| `OSPlatform` | `string` | 在设备上运行的操作系统的平台。 指示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10 和 Windows 7。|
+| `Timestamp` | `datetime` | 生成记录的日期和时间 |
+| `ConfigurationId` | `string` | 特定配置的唯一标识符 |
+| `ConfigurationCategory` | `string` | 配置所属的类别或分组：应用程序、OS、网络、帐户、安全控件 |
+| `ConfigurationSubcategory` | `string` | 配置所属的子类别或子组。 在许多情况下，string 描述特定功能。 |
+| `ConfigurationImpact` | `string` | 配置对总体配置评分的影响程度 (1-10) |
+| `IsCompliant` | `boolean` | 指示是否正确配置了配置或策略 |
+| `IsApplicable` | `boolean` | 指示配置或策略是否适用于设备 |
+| `Context` | `string` | 有关配置或策略的其他上下文信息 |
+| `IsExpectedUserImpact` | `boolean` | 指示应用配置或策略时是否将影响用户 |
 
 可以尝试此示例查询返回具有不兼容防病毒配置的设备上的信息以及表中相关的配置 `DeviceTvmSecureConfigurationAssessmentKB` 元数据：
 

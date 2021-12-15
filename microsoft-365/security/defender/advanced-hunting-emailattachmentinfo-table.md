@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f810929d254056ee261defa0a7f2a1458145f8f0
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: ac3e7aeff6778709f68aa1da74446cf55a1a6c06
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753055"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531299"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -42,21 +42,21 @@ ms.locfileid: "60753055"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | 记录事件的日期和时间 |
-| `NetworkMessageId` | string | 由用户生成的电子邮件的唯一Microsoft 365 |
-| `SenderFromAddress` | string | 发件人标题中的发件人电子邮件地址（电子邮件收件人在其电子邮件客户端上可以看到） |
-| `SenderDisplayName` | string | 通讯簿中显示的发件人姓名，通常是给定或名字、中间名首字母和姓氏或姓氏的组合 |
-| `SenderObjectId` | string | 发件人帐户在邮件中的唯一Azure AD |
-| `RecipientEmailAddress` | string | 收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址 |
-| `RecipientObjectId` | string | 电子邮件收件人的唯一标识符Azure AD |
-| `FileName` | string | 录制操作所应用到的文件的名称 |
-| `FileType` | string | 文件扩展名类型 |
-| `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
-| `ThreatTypes` | string | 关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定 |
-| `ThreatNames` | string | 找到的恶意软件或其他威胁的检测名称 |
-| `DetectionMethods` | string | 用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法 |
-| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。 |
-| `FileSize` | string | 文件大小（以字节为单位） |
+| `Timestamp` | `datetime` | 记录事件的日期和时间 |
+| `NetworkMessageId` | `string` | 由用户生成的电子邮件的唯一Microsoft 365 |
+| `SenderFromAddress` | `string` | 发件人标题中的发件人电子邮件地址（电子邮件收件人在其电子邮件客户端上可以看到） |
+| `SenderDisplayName` | `string` | 通讯簿中显示的发件人姓名，通常是给定或名字、中间名首字母和姓氏或姓氏的组合 |
+| `SenderObjectId` | `string` | 发件人帐户在邮件中的唯一Azure AD |
+| `RecipientEmailAddress` | `string` | 收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址 |
+| `RecipientObjectId` | `string` | 电子邮件收件人的唯一标识符Azure AD |
+| `FileName` | `string` | 录制操作所应用到的文件的名称 |
+| `FileType` | `string` | 文件扩展名类型 |
+| `SHA256` | `string` | 录制操作所应用到的文件的 SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
+| `ThreatTypes` | `string` | 关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定 |
+| `ThreatNames` | `string` | 找到的恶意软件或其他威胁的检测名称 |
+| `DetectionMethods` | `string` | 用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法 |
+| `ReportId` | `long` | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。 |
+| `FileSize` | `string` | 文件大小（以字节为单位） |
 
 ## <a name="related-topics"></a>相关主题
 

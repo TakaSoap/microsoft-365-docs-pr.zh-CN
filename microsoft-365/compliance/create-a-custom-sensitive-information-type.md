@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在安全与合规中心内为 DLP 创建、修改、删除和测试&类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee45db291cef56784f254ea1af481d873d2810ca
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: a091608f7741b279b06a6289fb97b521976fc9ea
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914568"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531881"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自定义敏感信息类型入门
 
@@ -58,20 +58,31 @@ ms.locfileid: "60914568"
 使用以下步骤可以创建完全定义的新敏感信息类型。 
 
 1. 在合规性中心中，转到"**数据分类** \> **""敏感信息类型"，** 然后选择"**创建敏感信息类型"。**
+
 2. 填写“**名称**”和“**说明**” 的值，然后选择“**下一步**”。
+
 3. 选择“**创建模式**”。 在定义新的敏感信息类型时，可以创建多个模式，每个模式具有不同的元素和置信度。
+
 4. 选择模式的默认可信度。 这些值是“**低可信度**”、“**中可信度**”和“**高可信度**”。
+
 5. 选择并定义 **主要元素**。 主要元素可以是带有可选验证程序的 **正则表达式**、**关键字列表**、**关键字字典** 或预先配置的 **函数** 之一。 有关 DLP 函数的详细信息，请参阅 [DLP 函数查找的内容](what-the-dlp-functions-look-for.md)。 有关日期和校验和验证程序的信息，请参阅有关 [正则表达式验证程序详细信息](#more-information-on-regular-expression-validators)。
+
 6. 填写 **字符领近度** 的值。
+
 7. （可选）添加支持元素（如有）。 支持元素可以是带有可选验证程序的正则表达式、关键字列表、关键字字典或预定义的函数之一。 支持元素可以有自己的 **字符邻近** 度配置。 
+
 8. （可选）从可用检查列表中添加任何 [**其他检查**](#more-information-on-additional-checks)。
+
 9. 选择“**创建**”。
+
 10. 选择“**下一步**”。
+
 11. 为此敏感信息类型选择 **建议的可信度**。
+
 12. 检查设置并选择“**提交**”。
 
-> [!IMPORTANT]
-> Microsoft 365 使用搜索爬网程序来确定 SharePoint Online 和 OneDrive for Business 网站中的敏感信息并对其分类。 要确定现有内容中新的自定义敏感信息类型，必须对该内容重新爬网。 根据计划对内容进行爬网，但你可手动重新爬网内容来查找网站集、列表或库。 有关详细信息，请参阅[Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content)（手动请求对网站、库或列表进行爬网和重新编制索引）。
+    > [!IMPORTANT]
+    > Microsoft 365 使用搜索爬网程序来确定 SharePoint Online 和 OneDrive for Business 网站中的敏感信息并对其分类。 要确定现有内容中新的自定义敏感信息类型，必须对该内容重新爬网。 根据计划对内容进行爬网，但你可手动重新爬网内容来查找网站集、列表或库。 有关详细信息，请参阅[Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content)（手动请求对网站、库或列表进行爬网和重新编制索引）。
 
 13. 在“**数据分类**”页面上，将看到列出的所有敏感信息类型。 选择“**刷新**”，然后浏览或使用搜索工具查找你创建的敏感信息类型。
 
@@ -80,13 +91,34 @@ ms.locfileid: "60914568"
 可以测试列表中的任何敏感信息类型。 我们建议在策略中使用之前，测试创建的每种敏感信息类型。
 
 1. 准备两个文件，比如 Word 文档。 一个包含与敏感信息类型中指定的元素匹配的内容，另一个不匹配。
+
 2. 在“合规中心”中，转到“**数据分类**”\>“**敏感信息类型**”，然后从列表中选择敏感信息类型，以打开“详细信息”窗格并选择“**测试**”。
+
 3. 上传文件并选择“**测试**”。
+
 4. 在“**匹配结果**”页面上，查看结果并选择“**完成**”。
+
+## <a name="custom-sensitive-information-types-limits"></a>自定义敏感信息类型限制
+
+为了确保高性能和更低的延迟，自定义 SIT 配置存在一些限制。
+
+|限制|值|
+|--------|--------|
+|通过合规中心创建的自定义 SIT 的最大数量| 500 |
+|正则表达式的最大长度| 1024 个字符|
+|关键字列表中给定术语的最大长度| 50 个字符|
+|关键字列表中的最大术语数| 2048|
+|每个敏感信息类型的最大不同正则表达式数| 20|
+|关键字词典的最大大小 (后压缩) | 1MB (大约 1，000，000 个字符) |
+|租户中基于关键字字典的 SIT 的最大数量|50 |
+
+> [!NOTE] 
+> 如果你有创建 500 多个自定义 SIT 的业务需求，请提出支持票证。
 
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>在合规中心内修改自定义敏感信息类型
 
 1. 在“合规中心”中，转到“**数据分类**”\>“**敏感信息类型**”，然后从要修改的列表中选择敏感信息类型，然后选择“**编辑**”。
+
 2. 可以添加其他模式，其中包括唯一的主元素和支持元素、可信度、字符邻近度和 [**其他检查**](#more-information-on-additional-checks)，或者编辑/删除现有的模式。
 
 ## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a>移除合规中心中的自定义敏感信息类型 
@@ -98,6 +130,7 @@ ms.locfileid: "60914568"
 > 删除自定义敏感信息类型前，请先验证没有 DLP 策略或 Exchange 邮件流规则（亦称为“传输规则”）仍在引用此敏感信息类型。
 
 1. 在“合规中心”中，转到“**数据分类**”\>“**敏感信息类型**”，然后从列表中选择要删除的敏感信息类型。
+
 2. 在打开的浮出控件中，选择“**删除**”。
 
 ## <a name="copy-and-modify-a-sensitive-information-type"></a>复制和修改敏感信息类型
@@ -105,18 +138,31 @@ ms.locfileid: "60914568"
 使用以下步骤可以创建基于现有敏感信息类型的新敏感信息类型。 
 
 1. 在“合规中心”中，转到“**数据分类**”\>“**敏感信息类型**”，然后选择要复制的敏感信息类型。
+
 2. 在浮出控件中，选择“**复制**”。
+
 3. 在敏感信息类型列表中选择“**刷新**”，然后浏览或搜索刚刚创建的副本。 部分字串搜索有用，所以可以只搜索 `copy`，搜索将返回名称中包含 `copy` 文字的所有敏感信息类型。 
+
 4. 填写“**名称**”和“**说明**” 的值，然后选择“**下一步**”。
+
 5. 选择敏感信息类型“副本”，然后选择“**编辑**”。 
+
 6. 为新的敏感信息类型提供新“**名称**”和“**描述**”。
+
 7. 您可以选择编辑或删除现有模式，以及添加新模式。 选择新模式的默认可信度。 这些值是“**低可信度**”、“**中可信度**”和“**高可信度**”。
+
 8. 选择并定义 **主要元素**。 主要元素可以是 **正则表达式**、**关键字列表**、**关键字字典** 或预先配置的 **函数** 之一。 请参阅，[DLP 函数查找的内容](what-the-dlp-functions-look-for.md)。
+
 9. 填写 **字符领近度** 的值。
+
 10. （可选）如果有 **支持元素** 或任何 [**其他检查**](#more-information-on-additional-checks)，请添加它们。 如果需要，可以将你的 **支持元素** 分组。
+
 11. 选择“**创建**”。
+
 12. 选择“**下一步**”。
+
 13. 为此敏感信息类型选择 **建议的可信度**。
+
 14. 检查设置并选择“**提交**”。
 
 > [!NOTE]
@@ -133,7 +179,7 @@ ms.locfileid: "60914568"
 
 此外，还可以使用 PowerShell 和精确的数据匹配功能创建自定义敏感信息类型。 若要了解有关这些方法的详细信息，请参阅：
 - [使用安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [了解基于精确数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [了解基于确切数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 ## <a name="more-information-on-regular-expression-validators"></a>有关正则表达式验证程序详细信息
 
@@ -141,7 +187,14 @@ ms.locfileid: "60914568"
 
 如果需要对正则表达式中的数字运行校验和，可以使用 *校验和验证程序*。 例如，假设你需要为八位数的许可证号码创建 SIT，其中最后一个数字是校验和数字，使用 mod 9 计算进行验证。 你已设置校验和算法，如下所示：
 
-Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value ！= digit 8 Account number is invalid
+```console
+Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8
+Mod value = Sum % 9
+If Mod value == digit 8
+    Account number is valid
+If Mod value != digit 8
+    Account number is invalid
+```
 
 1. 定义具有此正则表达式的主元素：
 
@@ -150,12 +203,13 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
    ```
 
 2. 然后添加校验和验证程序。
+
 3. 添加用逗号分隔的权重值、检查数字的位置和 Mod 值。 有关 Modulo 操作详细信息，请参阅 [Modulo 操作](https://en.wikipedia.org/wiki/Modulo_operation)。
 
-> [!NOTE]
-> 如果校验位不是校验和计算的一部分，则使用 0 作为校验位的权重。 例如，如果检查数字不用于计算检查数字，则上述情况下权重 8 将等于 0。  Modulo_operation) 。
+   > [!NOTE]
+   > 如果校验位不是校验和计算的一部分，则使用 0 作为校验位的权重。 例如，如果检查数字不用于计算检查数字，则上述情况下权重 8 将等于 0。  Modulo_operation) 。
 
-![配置的校验和验证器的屏幕截图。](../media/checksum-validator.png)
+   :::image type="content" alt-text="配置的校验和验证器的屏幕截图。" source="../media/checksum-validator.png" lightbox="../media/checksum-validator.png":::
 
 ### <a name="date-validator"></a>日期验证程序
 
@@ -168,9 +222,10 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
    ```
 
 2. 然后添加日期验证程序。
+
 3. 选择日期格式和开始偏移。 由于日期字符串是前六个数字，因此偏移量是 `0` 。
 
-![已配置日期验证器的屏幕截图。](../media/date-validator.png)
+   :::image type="content" alt-text="已配置日期验证器的屏幕截图。" source="../media/date-validator.png" lightbox="../media/date-validator.png":::
 
 ### <a name="functional-processors-as-validators"></a>作为验证程序的功能处理器
 

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3b961990d7826a7e1d58586fcc5bf2e016fa5d37
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b09d1774ab35dbca9119deb98864d6c6f78051a9
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704296"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531431"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -42,22 +42,22 @@ ms.locfileid: "60704296"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `AccountObjectId` | string | Azure AD |
-| `AccountUpn` | string | 帐户 (UPN) 的用户主体名称 |
-| `OnPremSid` | string | 帐户的 SID (本地) 标识符 |
-| `CloudSid` | string | 帐户的云安全标识符 |
-| `GivenName` | string | 帐户用户的给定名称或名字 |
-| `Surname` | string | 帐户用户的姓氏、姓氏 |
-| `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间启动和姓氏或姓氏的组合。 |
-| `Department` | string | 帐户用户所属的部门的名称 |
-| `JobTitle` | string | 帐户用户职务 |
-| `AccountName` | string | 帐户的用户名 |
-| `AccountDomain` | string | 帐户的域 |
-| `EmailAddress` | string | 帐户的 SMTP 地址 |
-| `SipProxyAddress` | string | IP 语音 (VOIP) 会话初始 (SIP) 地址 |
-| `City` | string | 帐户用户所在的城市 |
-| `Country` | string | 帐户用户所在的国家/地区 |
-| `IsAccountEnabled` | boolean | 指示帐户是否已启用 |
+| `AccountObjectId` | `string` | Azure AD |
+| `AccountUpn` | `string` | 帐户 (UPN) 的用户主体名称 |
+| `OnPremSid` | `string` | 帐户的 SID (本地) 标识符 |
+| `CloudSid` | `string` | 帐户的云安全标识符 |
+| `GivenName` | `string` | 帐户用户的给定名称或名字 |
+| `Surname` | `string` | 帐户用户的姓氏、姓氏 |
+| `AccountDisplayName` | `string` | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间启动和姓氏或姓氏的组合。 |
+| `Department` | `string` | 帐户用户所属的部门的名称 |
+| `JobTitle` | `string` | 帐户用户职务 |
+| `AccountName` | `string` | 帐户的用户名 |
+| `AccountDomain` | `string` | 帐户的域 |
+| `EmailAddress` | `string` | 帐户的 SMTP 地址 |
+| `SipProxyAddress` | `string` | IP 语音 (VOIP) 会话初始 (SIP) 地址 |
+| `City` | `string` | 帐户用户所在的城市 |
+| `Country` | `string` | 帐户用户所在的国家/地区 |
+| `IsAccountEnabled` | `boolean` | 指示帐户是否已启用 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

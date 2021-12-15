@@ -14,12 +14,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3965b02e4bf4e4b6bce35a6abaf368dc4f47be83
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 992c8802f3a4f44b1558004e2ee27ddbedf70a1a
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218282"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531167"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>自定义减少攻击面规则
 
@@ -33,7 +33,7 @@ ms.locfileid: "61218282"
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-[攻击面减少规则](enable-attack-surface-reduction.md) 有助于防止经常滥用以损害设备或网络的软件行为。 例如，攻击者可能会尝试从 U 盘运行未签名的脚本，或者让 Office 文档中的宏直接调用 Win32 API。 攻击面减少规则可以限制这些类型的风险行为，并改进组织的防御状态。
+[攻击面减少规则](enable-attack-surface-reduction.md) 有助于防止经常滥用以损害设备或网络的软件行为。 例如，攻击者可能尝试从 USB 驱动器运行未签名的脚本，或者让 Office 文档中的宏直接调用 Win32 API。 攻击面减少规则可以限制这些类型的风险行为，并改进组织的防御状态。
 
 了解如何通过排除文件和文件夹或向用户计算机上[](#exclude-files-and-folders)显示的通知警报添加自定义文本[](#customize-the-notification)来自定义攻击面减少规则。
 
@@ -41,7 +41,7 @@ ms.locfileid: "61218282"
 
 - Windows 10 专业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - Windows 10 企业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
-- Windows Server[版本 1803 (半年](/windows-server/get-started/whats-new-in-windows-server-1803)频道) 或更高版本
+- Windows Server 版本[1803 (半年](/windows-server/get-started/whats-new-in-windows-server-1803)频道) 或更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 -  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
@@ -59,7 +59,7 @@ ms.locfileid: "61218282"
 
 勒索软件规则旨在帮助企业客户降低勒索软件攻击的风险，同时确保业务连续性。 默认情况下，勒索软件规则错误应谨慎处理，并防范尚未获得足够信誉和信任的文件。 为了重新强调一下，勒索软件规则仅针对未基于数百万客户的使用情况指标获得足够正面信誉和普遍程度的文件触发。 通常，块是自行解析的，因为每个文件的"信誉和信任"值都会随着无问题使用率的增加而递增升级。
 
-如果无法及时解决阻止问题，客户可以使用自助服务机制或基于 IOC () 的"允许列表"功能自行取消阻止文件，但需要自行承担风险。
+如果无法及时解决阻止问题，客户可以自行承担风险，使用自助服务机制或基于IOC (IOC) 的"允许列表"功能来取消阻止文件本身。
 
 > [!WARNING]
 > 排除或取消阻止文件或文件夹可能会允许不安全的文件运行并感染你的设备。 排除文件或文件夹可以严重削弱攻击面减少规则提供的保护。 将允许运行规则阻止的文件，并且不会记录任何报告或事件。
@@ -71,31 +71,7 @@ ms.locfileid: "61218282"
 攻击面减少支持环境变量和通配符。 有关使用通配符的信息，请参阅在文件名和文件夹路径或扩展名排除列表中 [使用通配符](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 。
 如果在检测你认为不应检测到的文件的规则方面遇到问题，请使用审核模式 [测试规则](evaluate-attack-surface-reduction.md)。
 
-<br>
-
-****
-
-|规则说明|GUID|
-|---|---|
-|阻止滥用被攻击的易受攻击的已签名驱动程序|`56a863a9-875e-4185-98a7-b882c64b5ce5`|
-|阻止 Adobe Reader 创建子进程|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|
-|阻止所有Office应用程序创建子进程|`d4f940ab-401b-4efc-aadc-ad5f3c50688a`|
-|阻止从本地安全Windows (lsass.exe) |`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|
-|阻止来自电子邮件客户端和 Webmail 的可执行内容|`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`|
-|阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件|`01443614-cd74-433a-b99e-2ecdc07bfc25`|
-|阻止执行可能混淆的脚本|`5beb7efe-fd9a-4556-801d-275e5ffc04cc`|
-|阻止 JavaScript 或 VBScript 启动下载的可执行内容|`d3e037e1-3eb8-44c8-a917-57927947596d`|
-|阻止Office应用程序创建可执行内容|`3b576869-a4ec-4529-8536-b80a7769e899`|
-|阻止Office应用程序将代码注入其他进程|`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`|
-|阻止Office应用程序创建子进程|`26190899-1602-49e8-8b27-eb1d0a1ce869`|
-|通过 WMI 事件订阅阻止持久性|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|
-|阻止源自 PSExec 和 WMI 命令的进程创建|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|
-|阻止从 USB 运行的不受信任的和未签名的进程|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|
-|阻止来自宏的 Win32 API Office调用|`92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`|
-|使用高级防护抵御勒索软件|`c1db55ab-c21a-4637-bb3f-a12568109d35`|
-|
-
-有关 [每个规则的详细信息](attack-surface-reduction.md) ，请参阅攻击面减少主题。
+有关每个 [规则的详细信息](attack-surface-reduction-rules-reference.md) ，请参阅攻击面减少规则参考主题。
 
 ### <a name="use-group-policy-to-exclude-files-and-folders"></a>使用组策略排除文件和文件夹
 
@@ -103,7 +79,7 @@ ms.locfileid: "61218282"
 
 2. 在组 **策略管理编辑器中**，转到计算机 **配置，** 然后单击 **管理模板**。
 
-3. 展开树以 **Windows攻击** \>  \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \> **的组件**。
+3. 展开树以 **Windows攻击** \>  \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \> **减少的组件**。
 
 4. 双击从攻击 **面减少规则中排除** 文件和路径设置，将选项设置为 **已启用**。 选择 **"显示** "，在"值名称"列中 **输入每个文件或** 文件夹。 在"值"**列中为** 每个项目输入 **0。**
 
@@ -112,7 +88,7 @@ ms.locfileid: "61218282"
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>使用 PowerShell 排除文件和文件夹
 
-1. 在"管理"中"开始"菜单 **powershell，** 右键 **单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
+1. 在"管理"中"开始"菜单 **powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
 
 2. 输入以下 cmdlet：
 

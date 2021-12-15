@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8c6cae9e8d4d043ced17129b49493a95e13bc8fc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 10a184e6ce36129a84197cc02caae3b96625e39a
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661079"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530906"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -47,16 +47,16 @@ ms.locfileid: "60661079"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `DeviceId` | string | 服务中的计算机的唯一标识符 |
-| `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
-| `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10 和 Windows 7。 |
-| `OSVersion` | string | 计算机上运行的操作系统版本 |
-| `OSArchitecture` | string | 计算机上运行的操作系统的体系结构 |
-| `SoftwareVendor` | string | 软件供应商的名称 |
-| `SoftwareName` | string | 软件产品的名称 |
-| `SoftwareVersion` | string | 软件产品版本号 |
-| `EndOfSupportStatus` | string | 指示软件产品的生命周期阶段（相对于其指定的停止支持终止 (EOS) 或生命周期结束 (EOL) 日期 |
-| `EndOfSupportDate` | string |  (EOS) 或生命周期结束 (EOL) 日期结束 |
+| `DeviceId` | `string` | 服务中的计算机的唯一标识符 |
+| `DeviceName` | `string` | 计算机的完全限定域名 (FQDN) |
+| `OSPlatform` | `string` | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10 和 Windows 7。 |
+| `OSVersion` | `string` | 计算机上运行的操作系统版本 |
+| `OSArchitecture` | `string` | 计算机上运行的操作系统的体系结构 |
+| `SoftwareVendor` | `string` | 软件供应商的名称 |
+| `SoftwareName` | `string` | 软件产品的名称 |
+| `SoftwareVersion` | `string` | 软件产品版本号 |
+| `EndOfSupportStatus` | `string` | 指示软件产品的生命周期阶段（相对于其指定的 EOS (停止) 或生命周期结束 (EOL) 日期 |
+| `EndOfSupportDate` | `string` | 在软件产品 (EOS) 或生命周期 () 停止支持 |
 
 
 

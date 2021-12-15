@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e8febbf47e8aa7c6d4e78bd783c5274f2b20c9af
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: a6588134ba2cdf166a465998cd0b1a4fd7134dbb
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121688"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531519"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -46,18 +46,18 @@ ms.locfileid: "61121688"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `DeviceId` | string | 服务中的计算机的唯一标识符 |
-| `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
-| `OSPlatform` | string | 计算机上运行的操作系统平台。 指示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10 和 Windows 7。 |
-| `OSVersion` | string | 计算机上运行的操作系统版本 |
-| `OSArchitecture` | string | 计算机上运行的操作系统的体系结构 |
-| `SoftwareVendor` | string | 软件发布者的名称 |
-| `SoftwareName` | string | 软件产品的名称 |
-| `SoftwareVersion` | string | 软件产品版本号 |
-| `CveId` | string | 通用漏洞披露 (CVE) 系统下分配给安全漏洞的唯一标识符 |
-| `VulnerabilitySeverityLevel` | string | 基于 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别 |
-| `RecommendedSecurityUpdate` | string | 软件发布者提供的用于解决漏洞的安全更新的名称或说明 |
-| `RecommendedSecurityUpdateId` | string | 相应指南或知识库的适用安全更新或标识符的标识符 (KB) 文章 |
+| `DeviceId` | `string` | 服务中的计算机的唯一标识符 |
+| `DeviceName` | `string` | 计算机的完全限定域名 (FQDN) |
+| `OSPlatform` | `string` | 计算机上运行的操作系统平台。 指示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10 和 Windows 7。 |
+| `OSVersion` | `string` | 计算机上运行的操作系统版本 |
+| `OSArchitecture` | `string` | 计算机上运行的操作系统的体系结构 |
+| `SoftwareVendor` | `string` | 软件发布者的名称 |
+| `SoftwareName` | `string` | 软件产品的名称 |
+| `SoftwareVersion` | `string` | 软件产品版本号 |
+| `CveId` | `string` | 通用漏洞披露 (CVE) 系统下分配给安全漏洞的唯一标识符 |
+| `VulnerabilitySeverityLevel` | `string` | 基于 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别 |
+| `RecommendedSecurityUpdate` | `string` | 软件发布者提供的用于解决漏洞的安全更新的名称或说明 |
+| `RecommendedSecurityUpdateId` | `string` | 适用安全更新的标识符或相应指南或知识库 (KB) 标识符 |
 
 
 

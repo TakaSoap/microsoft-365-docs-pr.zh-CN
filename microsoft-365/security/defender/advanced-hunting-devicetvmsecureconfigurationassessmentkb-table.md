@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bf65634e38d7676eaef20386b3effa828aa46f4b
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.openlocfilehash: 81f03a665a0c825388335c925cb908f3b931a918
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61035978"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531551"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -45,16 +45,16 @@ ms.locfileid: "61035978"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `ConfigurationId` | string | 特定配置的唯一标识符 |
-| `ConfigurationImpact` | string | 配置对总体配置评分的影响程度 (1-10) |
-| `ConfigurationName` | string | 配置的显示名称 |
-| `ConfigurationDescription` | string | 配置的说明 |
-| `RiskDescription` | string | 关联风险的说明 |
-| `ConfigurationCategory` | string | 配置所属的类别或分组：应用程序、OS、网络、帐户、安全控件|
-| `ConfigurationSubcategory` | string |配置所属的子类别或子组。 在许多情况下，它用于描述特定的功能。 |
-| `ConfigurationBenchmarks` | string | 推荐相同或类似配置的行业基准的列表 |
-| `Tags` | string | 表示用于标识或分类安全配置的各种属性的标签 |
-| `RemediationOptions` | string | 用于降低或解决任何关联风险的建议操作 |
+| `ConfigurationId` | `string` | 特定配置的唯一标识符 |
+| `ConfigurationImpact` | `string` | 配置对总体配置评分的影响程度 (1-10) |
+| `ConfigurationName` | `string` | 配置的显示名称 |
+| `ConfigurationDescription` | `string` | 配置的说明 |
+| `RiskDescription` | `string` | 关联风险的说明 |
+| `ConfigurationCategory` | `string` | 配置所属的类别或分组：应用程序、OS、网络、帐户、安全控件|
+| `ConfigurationSubcategory` | `string` |配置所属的子类别或子组。 在许多情况下，它用于描述特定的功能。 |
+| `ConfigurationBenchmarks` | `string` | 推荐相同或类似配置的行业基准的列表 |
+| `Tags` | `string` | 表示用于标识或分类安全配置的各种属性的标签 |
+| `RemediationOptions` | `string` | 用于降低或解决任何关联风险的建议操作 |
 
 可以尝试此示例查询返回相关配置元数据以及表中具有不兼容防病毒配置的设备上 `DeviceTvmSecureConfigurationAssessment` 的信息：
 

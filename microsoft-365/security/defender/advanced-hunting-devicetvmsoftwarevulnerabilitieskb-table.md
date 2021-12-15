@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceTvmSoftwareVulnerabilitiesKB 表
 description: 在高级搜寻架构的 DeviceTvmSoftwareVulnerabilitiesKB 表中，了解由威胁和漏洞管理跟踪的软件漏洞。
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构， 参考， kusto， 表格， 列， 数据类型， 说明， 威胁 & 漏洞管理， TVM， 设备管理， 软件， 清单， 漏洞， CVE ID， CVSS， DeviceTvmSoftwareVulnerabilitiesKB
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构， 参考， kusto， 表格， 列， 数据类型， 描述， 威胁 & 漏洞管理， TVM， 设备管理， 软件， 清单， 漏洞， CVE ID， CVSS， DeviceTvmSoftwareVulnerabilitiesKB
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d6a6da54fea668eefc200247bd4f9879ba8fcb03
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 545e2a3ba12924d364facda14a7a564ead212f30
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665405"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531083"
 ---
 # <a name="devicetvmsoftwarevulnerabilitieskb"></a>DeviceTvmSoftwareVulnerabilitiesKB
 
@@ -42,14 +42,14 @@ ms.locfileid: "60665405"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `CveId` | string | 通用漏洞披露 (CVE) 系统下分配给安全漏洞的唯一标识符 |
-| `CvssScore` | string | 通用漏洞评分系统 (CVSS) 下分配给安全漏洞的严重性评分 |
-| `IsExploitAvailable` | boolean | 指示该漏洞的攻击代码是否公开可用 |
-| `VulnerabilitySeverityLevel` | string | 基于 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别 |
-| `LastModifiedTime` | datetime | 上次修改项或相关元数据的日期和时间 |
-| `PublishedDate` | datetime | 向公众公开漏洞的日期 |
-| `VulnerabilityDescription` | string | 漏洞和相关风险的描述 |
-| `AffectedSoftware` | string | 受漏洞影响的所有软件产品列表 |
+| `CveId` | `string` | 通用漏洞披露 (CVE) 系统下分配给安全漏洞的唯一标识符 |
+| `CvssScore` | `string` | 通用漏洞评分系统 (CVSS) 下分配给安全漏洞的严重性评分 |
+| `IsExploitAvailable` | `boolean` | 指示该漏洞的攻击代码是否公开可用 |
+| `VulnerabilitySeverityLevel` | `string` | 基于 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别 |
+| `LastModifiedTime` | `datetime` | 上次修改项或相关元数据的日期和时间 |
+| `PublishedDate` | `datetime` | 向公众公开漏洞的日期 |
+| `VulnerabilityDescription` | `string` | 漏洞和相关风险的描述 |
+| `AffectedSoftware` | `string` | 受漏洞影响的所有软件产品列表 |
 
 ## <a name="related-topics"></a>相关主题
 

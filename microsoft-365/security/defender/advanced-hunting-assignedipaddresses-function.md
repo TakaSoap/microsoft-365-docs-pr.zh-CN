@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c60f9ff0b302948d5fd2d8c450e33a12768e8db0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b82a079a476ee6ed3d5465b52bca381cd49746b5
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665523"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530903"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -39,11 +39,11 @@ ms.locfileid: "60665523"
 
 | 列 | 数据类型 | 说明 |
 |------------|-------------|-------------|
-| `Timestamp` | datetime | 使用 IP 地址观测到设备的最新时间 |
-| `IPAddress` | string | 设备使用的 IP 地址 |
-| `IPType` | string | 指示 IP 地址是公用地址还是专用地址 |
-| `NetworkAdapterType` | int | 已分配 IP 地址的设备使用的网络适配器类型。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `ConnectedNetworks` | int | 具有分配 IP 地址的适配器所连接至的网络。 每个 JSON 数组都包含网络名称、类别 (公共、专用或域) 、说明以及指示其是否公开连接到 Internet 的标志 |
+| `Timestamp` | `datetime` | 使用 IP 地址观测到设备的最新时间 |
+| `IPAddress` | `string` | 设备使用的 IP 地址 |
+| `IPType` | `string` | 指示 IP 地址是公用地址还是专用地址 |
+| `NetworkAdapterType` | `int` | 已分配 IP 地址的设备使用的网络适配器类型。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | `int` | 具有分配 IP 地址的适配器所连接至的网络。 每个 JSON 数组都包含网络名称、类别 (公共、专用或域) 、说明以及指示其是否公开连接到 Internet 的标志 |
 
 ## <a name="syntax"></a>语法
 
@@ -65,7 +65,7 @@ AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
 ### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>获取设备使用的 IP 地址并查找与设备通信的设备
-此查询使用 函数获取特定日期或 () 或之前为设备分配的 `AssignedIPAddresses()` IP `example-device-name` `example-date` () 。 然后，它使用 IP 地址查找与其他设备启动的设备的连接。 
+此查询使用 函数获取特定日期或 () 或之前的设备分配的 `AssignedIPAddresses()` IP `example-device-name` `example-date` () 。 然后，它使用 IP 地址查找与其他设备启动的设备的连接。 
 
 ```kusto
 let Date = datetime(example-date);

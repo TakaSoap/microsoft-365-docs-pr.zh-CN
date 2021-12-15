@@ -28,24 +28,24 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 使用 Microsoft 365 管理员帐户登录，重置 Microsoft 365 商业版订阅中的用户密码。
-ms.openlocfilehash: 891c579bd1fe2f7b9d4596ef1ef0415734f46ce5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: 使用你的 Microsoft 365 管理员帐户登录，以重置 Microsoft 365 商业版订阅中的用户的密码。
+ms.openlocfilehash: 2d79a1e7ea24782102c821100493b3b2eb8349ed
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370220"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530401"
 ---
 # <a name="reset-passwords"></a>重置密码
 
-本文介绍了当你拥有适用于企业订阅的订阅时，如何为自己和用户Microsoft 365密码。
+本文介绍如何在拥有适用于企业订阅的 Microsoft 365重置密码。
 
 > [!NOTE]
 > 您还可以为用户设置自助服务密码重置，以便他们可以重置自己的密码。 若要了解更多信息，请参阅 [允许用户重置自己的密码](let-users-reset-passwords.md)。
 
 ## <a name="before-you-begin"></a>准备工作
 
-本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？] ([概述 Microsoft 365 管理中心](../admin-overview/admin-center-overview.md)。
+本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？] (概述Microsoft 365 管理中心] (。/admin-overview/admin-center-overview.md) 。
 
 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 
@@ -107,7 +107,7 @@ ms.locfileid: "61370220"
 
 2. 选择"显示名称 **"旁边的** 选项以选择企业中的每个人。 然后取消选中你自己。 重置其他所有用户的密码时无法重置自己的密码。
 
-3. 选择 **"重置密码"。**
+3. 选择 **重置密码**。
 
 4. 按照"重置密码"**页面上的说明操作**，然后选择"重置 **"。**  如果选择自动生成密码，将显示新的临时密码。
 
@@ -126,7 +126,7 @@ ms.locfileid: "61370220"
 
 请参阅这篇由 Microsoft MVP Vasil Michev 撰写的出色博客文章：[为 Office 365 中的所有用户强制更改密码](https://go.microsoft.com/fwlink/?linkid=853693)。
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>我并没有适用于Microsoft 365订阅的订阅
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>我并没有适用于Microsoft 365订阅
 
 请尝试阅读此文：[我忘记了 Office 所用的帐户用户名或密码。](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   
@@ -135,5 +135,5 @@ ms.locfileid: "61370220"
 [允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
 [重置密码](../add-users/reset-passwords.md)（文章）\
 [将个人用户密码设置为永不过期](set-password-to-never-expire.md)（文章）\
-[为组织设置密码过期策略 (](../manage/set-password-expiration-policy.md) 文章) \
+[为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) \
 [Microsoft 365 商业版培训视频](../../business-video/index.yml)(链接页面)

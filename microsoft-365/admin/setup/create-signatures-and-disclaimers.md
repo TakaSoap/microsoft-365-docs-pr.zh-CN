@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 管理电子邮件签名，包括进入或离开组织的所有电子邮件的法律免责声明或披露声明。
-ms.openlocfilehash: fe23d3c316750d1db02b2d4aff5872479889509b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d2e8b93825b98724bfd2698d95b93289dee30e00
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373448"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531179"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围内的签名和免责声明
 
@@ -110,17 +110,17 @@ ms.locfileid: "61373448"
     
 - 在电子邮件签名中嵌入图像
     
-- 跳过包含无法更新的变量 (例如，由于未为用户或用户提供值) 
+- 跳过包含无法更新的变量 (例如，由于未为用户或用户提供) 
     
 若要获得这些和管理电子邮件签名的其他功能，请使用第三方工具。 请对电子邮件签名软件 **执行 Internet 搜索**。 许多提供商是 Microsoft 金牌合作伙伴，其软件提供这些功能。 
   
 ## <a name="more-resources"></a>更多资源
 
-有关使用 PowerShell 的信息，请参阅组织范围内的邮件免责声明、[签名](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)、页脚或 Exchange Online。
+有关使用 PowerShell 的信息，请参阅组织范围内的邮件免责声明、签名、页脚或[Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
 
 ## <a name="related-content"></a>相关内容
 
 [将电子邮件和联系人迁移到Microsoft 365 (](migrate-email-and-contacts-admin.md)视频) \
 [用户电子邮件设置](../email/office-365-user-email-settings.md) (文章) \
-[概述Microsoft 365 管理中心] ([视频Microsoft 365 管理中心 (](../admin-overview/admin-center-overview.md)概述) 
+[概述Microsoft 365 管理中心] (概述Microsoft 365 管理中心] (。/admin-overview/admin-center-overview.md)  (视频) 
 

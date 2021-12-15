@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint
-description: 介绍如何在 Android 上部署 Microsoft Defender for Endpoint Microsoft Intune
+description: 介绍如何使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mde， android， 安装， 部署， 卸载，
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f08cf9ddc80e35d1c070fae5eef783496d38f208
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: babe21ec9026ac78849b86c8310b24a83bdf41c0
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164702"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531722"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint
 
@@ -38,7 +38,7 @@ ms.locfileid: "61164702"
 > [!NOTE]
 > **Android 上的 Defender for Endpoint 现已在 [Google Play 上可用](https://play.google.com/store/apps/details?id=com.microsoft.scmx)**
 >
-> 你可以从 Intune 连接到 Google Play，以跨设备管理员和 Android Enterprise终结点应用。
+> 你可以从 Intune 连接到 Google Play，以跨设备管理员和 Android Enterprise部署 Defender for Endpoint 应用。
 >
 > 通过 Google Play 自动更新应用。
 
@@ -65,7 +65,7 @@ ms.locfileid: "61164702"
 
    :::image type="content" alt-text="管理中心Microsoft Endpoint Manager应用信息的图像。" source="images/mda-addappinfo.png" lightbox="images/mda-addappinfo.png":::
 
-3. 在" *分配"* 部分，转到" **必需"** 部分并选择" **添加组"。** 然后，你可以选择要 (Android) Defender for Endpoint 的用户组。 选择 **"选择**"，然后选择"下一 **步"。**
+3. 在" *分配"* 部分，转到" **必需"** 部分并选择" **添加组"。** 然后，你可以选择你要 (Android) Defender for Endpoint 的用户组策略。 选择 **"选择**"，然后选择"下一 **步"。**
 
     > [!NOTE]
     > 所选用户组应由 Intune 注册的用户组成。
@@ -112,7 +112,7 @@ Android 上的 Defender for Endpoint 支持 Android Enterprise注册的设备。
 
 2. 在随后加载的托管 Google Play 页面上，转到搜索框并输入 `Microsoft Defender` 。 你的搜索应在托管 Google Play 中显示 Microsoft Defender for Endpoint 应用。 从应用搜索结果中单击 Microsoft Defender for Endpoint 应用。
 
-    ![管理中心Microsoft Endpoint Manager应用搜索的图像。](images/0f79cb37900b57c3e2bb0effad1c19cb.png)
+    ![管理Microsoft Endpoint Manager应用搜索的图像。](images/0f79cb37900b57c3e2bb0effad1c19cb.png)
 
 3. 在接下来启动的应用描述页面中，你应该能够看到 Defender for Endpoint 上的应用详细信息。 查看页面上的信息，然后选择"批准 **"。**
 
@@ -143,9 +143,9 @@ Android 上的 Defender for Endpoint 支持 Android Enterprise注册的设备。
 
     :::image type="content" alt-text="Android 应用列表的图像。" source="images/fa4ac18a6333335db3775630b8e6b353.png" lightbox="images/fa4ac18a6333335db3775630b8e6b353.png":::
 
-9. Defender for Endpoint 通过 Intune 支持托管设备的应用配置策略。 此功能可用于自动授予适用的 Android () ，因此最终用户无需接受这些 (权限) 。
+9. Defender for Endpoint 通过 Intune 支持托管设备的应用配置策略。 此功能可用于自动授予适用的 Android (权限) ，因此最终用户无需接受这些 (权限) 。
 
-    1. 在应用 **页面中** ，转到策略> **应用配置策略>添加>托管设备**。
+    1. 在应用 **页面中** ，转到策略 **>应用配置策略>添加>托管设备**。
 
        :::image type="content" alt-text="android Microsoft Endpoint Manager管理中心托管设备的图像。" source="images/android-mem.png":::
 
@@ -186,7 +186,7 @@ Android 上的 Defender for Endpoint 支持 Android Enterprise注册的设备。
 
     :::image type="content" alt-text="应用列表的图像。" source="images/mda-properties.png" lightbox="images/mda-properties.png":::
 
-11. 将应用分配为 *用户组所需的* 应用。 在设备下一次 *同步* 期间，它会自动安装在工作配置文件中，公司门户应用。 此分配可通过导航到"必需"部分"添加组"，选择用户组并单击" \> 选择 **"完成**。
+11. 将应用分配为 *用户组所需的* 应用。 下次通过应用 *同步* 设备时，它会自动安装在公司门户配置文件中。 此分配可通过导航到"必需"部分"添加组"，选择用户组并单击" \> 选择 **"完成**。
 
     > [!div class="mx-imgBorder"]
     > ![编辑应用程序页的图像。](images/ea06643280075f16265a596fb9a96042.png)
@@ -257,7 +257,7 @@ Defender for Endpoint 通过 Intune 支持托管设备的设备配置策略。 �
 
     ![使用 Microsoft Defender for Endpoint 应用的移动设备的图像](images/MDE_new.png)
 
-4. 在此阶段，设备已成功载入 Android 上的 Defender for Endpoint。 可以通过导航到"设备 ["Microsoft Defender 安全中心](https://securitycenter.microsoft.com)在设备上 **验证这一** 点。
+4. 在此阶段，设备已成功载入 Android 上的 Defender for Endpoint。 可以通过导航到"设备 [清单"Microsoft 365 Defender](https://security.microsoft.com)在门户 **上验证这一** 点。
 
     :::image type="content" alt-text="适用于终结点的 Microsoft Defender 门户的图像。" source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 

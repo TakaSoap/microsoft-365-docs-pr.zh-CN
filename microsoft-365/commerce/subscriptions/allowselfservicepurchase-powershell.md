@@ -21,12 +21,12 @@ search.appverid:
 description: 了解如何使用 AllowSelfServicePurchase PowerShell cmdlet 打开或关闭自助服务购买。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/16/2021
-ms.openlocfilehash: 31ef425bf82f40d9720eec0a65b3278e63186ba9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4c4272b532fd40f1062404716614f8a7ee4a5230
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172571"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531893"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块
 
@@ -91,23 +91,27 @@ Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-下表列出了可用的产品及其 **ProductId。**
+下表列出了可用产品及其 **ProductId。**
 
 | 产品 | ProductId |
 |-----------------------------|--------------|
 | Power Apps每个用户 | CFQ7TTC0KP0P |
 | Power Automate每个用户 | CFQ7TTC0KP0N |
-| Power AutomateRPA | CFQ7TTC0KXG6  |
+| Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (独立)  | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| Project 计划 1 | CFQ7TTC0KXND |
-| Project 计划 3 | CFQ7TTC0KXNC |
-| Visio 计划 1 | CFQ7TTC0KXN9 |
-| Visio 计划 2 | CFQ7TTC0KXN8 |
-| Windows 365 Enterprise | CFQ7TTC0HTC9 |
+| Project 计划 1* | CFQ7TTC0HDB1 |
+| Project 计划 3* | CFQ7TTC0HDB0 |
+| Visio 计划 1* | CFQ7TTC0HD33 |
+| Visio 计划 2* | CFQ7TTC0HD32 |
+| Windows 365 企业版 | CFQ7TTC0HTC9 |
 | Windows 365 商业版 | CFQ7TTC0J203 |
 | Windows混合权益的 Windows 365 商业版 | CFQ7TTC0HX99 |
+
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>查看或设置 AllowSelfServicePurchase 的状态
+
+>[!NOTE] 
+> 这些 ID 已更改。 如果您之前使用旧 ID 阻止了产品，则会自动使用新 ID 阻止它们。 无需执行其他工作。
 
 查看可供自助购买的产品列表后，可以查看或修改特定产品的设置。
 
@@ -131,7 +135,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>禁用 AllowSelfServicePurchase 的示例脚本
 
-以下示例将引导您完成如何导入 **MSCommerce** 模块、使用您的帐户登录、获取 Power Automate 的 **ProductId，** 然后禁用该产品的 **AllowSelfServicePurchase。**
+以下示例将引导您完成如何导入 **MSCommerce** 模块、使用帐户登录、获取 Power Automate 的 **ProductId，** 然后禁用该产品的 **AllowSelfServicePurchase。**
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -181,6 +185,6 @@ Uninstall-Module -Name MSCommerce
 
 ## <a name="related-content"></a>相关内容
 
-[管理自助服务购买 (管理)  (](manage-self-service-purchases-admins.md) 文章) 
+[管理管理员 (自助服务)  (](manage-self-service-purchases-admins.md) 文章) 
 
 [自助服务购买常见问题 (](self-service-purchase-faq.yml) 文章) 

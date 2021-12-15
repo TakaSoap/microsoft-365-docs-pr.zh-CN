@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51182f87eae4a26153b08c934c3f77e0164f4b8b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d0c9a8f1456aaeedbc8d296a1f738d0b2c57a156
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702057"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531539"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -39,11 +39,11 @@ ms.locfileid: "60702057"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | 记录事件的日期和时间 |
-| `NetworkMessageId` | string | 由用户生成的电子邮件的唯一Microsoft 365 |
-| `Url` | string | 电子邮件主题、正文或附件中的完整 URL |
-| `UrlDomain` | string | URL 的域名或主机名 |
-| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
+| `Timestamp` | `datetime` | 记录事件的日期和时间 |
+| `NetworkMessageId` | `string` | 由用户生成的电子邮件的唯一Microsoft 365 |
+| `Url` | `string` | 电子邮件主题、正文或附件中的完整 URL |
+| `UrlDomain` | `string` | URL 的域名或主机名 |
+| `ReportId` | `long` | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

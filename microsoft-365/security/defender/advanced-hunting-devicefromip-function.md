@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c2482c83eef315c390e2748e371ddf26dcb3c012
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 4a1f1198c247aefbcbb093d1a5f5105704255692
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705347"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531575"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -43,8 +43,8 @@ ms.locfileid: "60705347"
 
 | 列 | 数据类型 | 说明 |
 |------------|-------------|-------------|
-| `IP` | string | IP 地址  |
-| `DeviceId` | string | 服务中设备的唯一标识符 |
+| `IP` | `string` | IP 地址  |
+| `DeviceId` | `string` | 服务中设备的唯一标识符 |
 
 
 ## <a name="syntax"></a>语法

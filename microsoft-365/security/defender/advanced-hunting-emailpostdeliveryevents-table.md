@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3f3338639ed0db6b11a2796def8ec4eb209a9824
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 59d611ae89aeedf386cd0dcad5939a9510f0820e
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646879"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530664"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -33,10 +33,10 @@ ms.locfileid: "60646879"
 **适用于：**
 - Microsoft 365 Defender
 
-高级 `EmailPostDeliveryEvents` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关对邮件发送者处理的电子邮件执行传递后Microsoft 365。 使用此参考来构建从此表返回信息的查询。
+高级 `EmailPostDeliveryEvents` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关对邮件处理的电子邮件执行传递后Microsoft 365。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关表支持的事件 (值) ，请使用安全中心中提供的内置架构 `ActionType` 参考。
+> 有关表支持的事件 (值) ，请使用 Defender for Cloud 中提供的内置 `ActionType` 架构参考。
 
 若要获取有关各个电子邮件的信息，您还可以使用 、 和 [`EmailEvents`](advanced-hunting-emailevents-table.md) [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md) [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) 表。 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -45,18 +45,18 @@ ms.locfileid: "60646879"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | 记录事件的日期和时间 |
-| `NetworkMessageId` | string | 由用户生成的电子邮件的唯一Microsoft 365 |
-| `InternetMessageId` | string | 发送电子邮件系统设置的电子邮件的面向公众的标识符 |
-| `Action` | string | 对实体采取的操作 |
-| `ActionType` | string | 触发事件的活动类型：手动修正、钓鱼邮件 ZAP、恶意软件 ZAP |
-| `ActionTrigger` | string | 指示操作是由管理员手动触发 (还是通过批准挂起的自动操作) 触发，还是由某些特殊机制（如 ZAP 或动态传递）触发 |
-| `ActionResult` | string | 操作结果 |
-| `RecipientEmailAddress` | string | 收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址 |
-| `DeliveryLocation` | string | 发送电子邮件的位置：收件箱/文件夹、本地/外部、垃圾箱、隔离区、已失败、已弃用、已删除的邮件 |
-| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。 |
-| `ThreatTypes` | string | 关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定 |
-| `DetectionMethods` | string | 用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法 |
+| `Timestamp` | `datetime` | 记录事件的日期和时间 |
+| `NetworkMessageId` | `string` | 由用户生成的电子邮件的唯一Microsoft 365 |
+| `InternetMessageId` | `string` | 发送电子邮件系统设置的电子邮件的面向公众的标识符 |
+| `Action` | `string` | 对实体采取的操作 |
+| `ActionType` | `string` | 触发事件的活动类型：手动修正、钓鱼邮件 ZAP、恶意软件 ZAP |
+| `ActionTrigger` | `string` | 指示操作是由管理员手动触发 (还是通过审批挂起的自动操作) 触发，还是由某些特殊机制（如 ZAP 或动态传递）触发 |
+| `ActionResult` | `string` | 操作结果 |
+| `RecipientEmailAddress` | `string` | 收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址 |
+| `DeliveryLocation` | `string` | 发送电子邮件的位置：收件箱/文件夹、本地/外部、垃圾箱、隔离区、已失败、已弃用、已删除的邮件 |
+| `ReportId` | `long` | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。 |
+| `ThreatTypes` | `string` | 关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定 |
+| `DetectionMethods` | `string` | 用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法 |
 
 ## <a name="supported-event-types"></a>支持的事件类型
 此表捕获具有以下值 `ActionType` 的事件：

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: 了解如何重置密码并将电子邮件发送给新的Microsoft 365用户。
-ms.openlocfilehash: bc7504970da6e3844c359fe0652b051c0f9d0225
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 83b1dd5a82189947dae42a2c659032f97d17a256
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370592"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530171"
 ---
 # <a name="resend-a-users-password---admin-help"></a>重新发送用户密码 - 管理员帮助
 
@@ -33,7 +33,7 @@ ms.locfileid: "61370592"
 
 ## <a name="before-you-begin"></a>准备工作
 
-本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？] ([概述 Microsoft 365 管理中心](../admin-overview/admin-center-overview.md)。
+本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？] (概述Microsoft 365 管理中心] (。/admin-overview/admin-center-overview.md) 。
 
 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 

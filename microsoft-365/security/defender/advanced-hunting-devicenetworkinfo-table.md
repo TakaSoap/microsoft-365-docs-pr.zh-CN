@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 83441d7e3ce9ccde5297bc7492a0e35684933167
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 86c087c8a8cdfa80904612625c08ec37ca6813ca
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704495"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531119"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -42,21 +42,21 @@ ms.locfileid: "60704495"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | 记录事件的日期和时间 |
-| `DeviceId` | string | 服务中的计算机的唯一标识符 |
-| `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
-| `NetworkAdapterName` | string | 网络适配器的名称 |
-| `MacAddress` | string | 网络适配器的 MAC 地址 |
-| `NetworkAdapterType` | string | 网络适配器类型。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `NetworkAdapterStatus` | string | 网络适配器的运行状态。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.operationalstatus) |
-| `TunnelType` | string | 隧道协议（如果接口用于此目的，例如 6to4、Teredo、ISATAP、PPTP、SSTP 和 SSH） |
-| `ConnectedNetworks` | string | 适配器连接到的网络。 每个 JSON 数组都包含网络名称、类别 (公共、专用或域) 、说明以及指示其是否公开连接到 Internet 的标志 |
-| `DnsAddresses` | string | JSON 数组格式的 DNS 服务器地址 |
-| `IPv4Dhcp` | string | DHCP 服务器的 IPv4 地址 |
-| `IPv6Dhcp` | string | DHCP 服务器的 IPv6 地址 |
-| `DefaultGateways` | string | JSON 数组格式的默认网关地址 |
-| `IPAddresses` | string | 包含分配给适配器的所有 IP 地址及其各自的子网前缀和 IP 地址空间（如公共、专用或链接本地）的 JSON 数组 |
-| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
+| `Timestamp` | `datetime` | 记录事件的日期和时间 |
+| `DeviceId` | `string` | 服务中的计算机的唯一标识符 |
+| `DeviceName` | `string` | 计算机的完全限定域名 (FQDN) |
+| `NetworkAdapterName` | `string` | 网络适配器的名称 |
+| `MacAddress` | `string` | 网络适配器的 MAC 地址 |
+| `NetworkAdapterType` | `string` | 网络适配器类型。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `NetworkAdapterStatus` | `string` | 网络适配器的运行状态。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.operationalstatus) |
+| `TunnelType` | `string` | 隧道协议（如果接口用于此目的，例如 6to4、Teredo、ISATAP、PPTP、SSTP 和 SSH） |
+| `ConnectedNetworks` | `string` | 适配器连接到的网络。 每个 JSON 数组都包含网络名称、类别 (公共、专用或域) 、说明以及指示其是否公开连接到 Internet 的标志 |
+| `DnsAddresses` | `string` | JSON 数组格式的 DNS 服务器地址 |
+| `IPv4Dhcp` | `string` | DHCP 服务器的 IPv4 地址 |
+| `IPv6Dhcp` | `string` | DHCP 服务器的 IPv6 地址 |
+| `DefaultGateways` | `string` | JSON 数组格式的默认网关地址 |
+| `IPAddresses` | `string` | 包含分配给适配器的所有 IP 地址及其各自的子网前缀和 IP 地址空间（如公共、专用或链接本地）的 JSON 数组 |
+| `ReportId` | `long` | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

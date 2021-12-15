@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: the Microsoft 365 管理中心 - learn about the features that were added this month.
-ms.openlocfilehash: d2573180fd254063da5450acbdeeb78aa99d6367
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 7d01786878c9bb87347d9207b0863593842e526b
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422767"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531905"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心
 
@@ -38,7 +38,7 @@ ms.locfileid: "61422767"
 
 ::: moniker-end
 
-我们正在不断将新功能添加到 [Microsoft 365 管理中心] (概述[Microsoft 365 管理中心，](admin-overview/admin-center-overview.md)修复我们了解的问题，并基于你的反馈进行更改。 请看下面的内容，了解现在可供你使用的信息。 一些功能以不同的速度推出给客户。 如果尚未看到功能，请尝试 [将自己添加到定向发布](manage/release-options-in-office-365.md)。
+我们正在不断将新功能添加到 [Microsoft 365 管理中心] (overview of the Microsoft 365 管理中心] (admin-overview/admin-center-overview.md) ，修复我们了解的问题，并基于你的反馈进行更改。 请看下面的内容，了解现在可供你使用的信息。 一些功能以不同的速度推出给客户。 如果尚未看到功能，请尝试 [将自己添加到定向发布](manage/release-options-in-office-365.md)。
 
 如果你希望了解其他 Microsoft 云服务的新增功能：
 
@@ -99,9 +99,9 @@ To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid
 
 :::image type="content" source="../media/Keep-track-support-ticket-updates2.PNG" alt-text="屏幕截图：跟踪支持票证更新":::
 
-### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>随时了解应用和你的应用订阅的Microsoft 365更新
+### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>随时了解应用和 Microsoft 365 订阅的Microsoft 365更新
 
-- 通过消息中心推送通知了解 Microsoft 365 订阅的所有主要更新， (默认启用) 。
+- 通过消息中心推送通知随时了解 Microsoft 365 订阅的所有主要更新， (默认启用) 。
 
 - 使用新增功能部分跟踪应用中 **提供的最新** 功能。 转到 **设置**  >  **新增功能？**
 
@@ -148,7 +148,7 @@ To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid
 
 :::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot： Office apps what's new page showing improvements to Power BI":::
 
-## <a name="ignite-2020-august--september"></a>Ignite 2020 (& 9) 
+## <a name="ignite-2020-august--september"></a>Ignite 2020 (& 9 月) 
 
 欢迎使用 Microsoft Ignite - 我们的第一个仅联机 Ignite。 我们希望在我们的其中一个会话中看到你 [：Microsoft Ignite 2020 会话目录](https://myignite.microsoft.com/sessions)。 下面只是我们将在 Ignite 上讨论的一些内容。
 > [!NOTE]
@@ -262,7 +262,7 @@ To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid
 
 ### <a name="your-products"></a>你的产品
 
-订阅管理中已完成大量工作，使页面加载速度更快、查找所查找内容更快，并且符合 Web 辅助功能标准 ([WCAG 2.1](http://www.w3.org/TR/WCAG21/) 准则) 。
+订阅管理中已完成大量工作，使页面加载速度更快、查找所查找内容更快以及符合 Web 辅助功能标准 ([WCAG 2.1](http://www.w3.org/TR/WCAG21/) 准则) 。
 
 - **表重新设计**：该表已经过重新设计，以便你可以对类似的订阅进行分组。 转到"**计费**  >  **""你的产品"。**
 - **产品详细信息**：通过在列表中选择产品，获取比以往更多的订阅详细信息。
@@ -286,7 +286,7 @@ To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid
 
 在几个月之前，我们添加了一个设置，允许你管理显示在用户应用中的新增Office消息。 本月，我们发布了新的主页卡，该卡将帮助您快速操作并跟踪您希望向组织用户显示的"新增功能"邮件。
 
-### <a name="docs-training-and-videos-june"></a>) 年 6 月 (文档、培训和视频
+### <a name="docs-training-and-videos-june"></a>) 年 6 月提供的文档 (培训) 
 
 - [Teams](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937)
 
@@ -296,9 +296,9 @@ To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid
 
 5 月 12 日，我们宣布提供适用于每月频道Office频道Enterprise频道。 此更新频道在每月的第二个星期二Office一次新的更新功能。
 
-如果你允许用户从门户自助安装Office，你可以为用户选择每月Enterprise频道。 为此，请登录到 Microsoft 365 管理中心并转到显示所有 设置 Org  >   >  **设置**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**服务**</a>  >  **Office软件下载设置。** 如果选择每月一 **次 (Monthly Enterprise Channel) ，** 则 Office 的任何新的自助安装均配置为使用每月频道Enterprise频道。
+如果你允许用户从门户自行安装Office，你可以为用户选择"每月Enterprise频道"。 为此，请登录到 Microsoft 365 管理中心并转到显示所有 设置 Org  >   >  **设置**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**服务**</a>  >  **Office软件下载设置**。 如果您选择每月一 **次 (Monthly Enterprise Channel) ，** 则 Office 的任何新的自助安装均配置为使用每月频道Enterprise频道。
 
-结合每月频道Enterprise，我们还正在修改现有更新频道的名称。 例如，每月频道被重命名为当前频道。 新名称将于 2020 年 6 月 9 日生效。
+结合每月频道频道Enterprise，我们还正在修改现有更新频道的名称。 例如，每月频道被重命名为当前频道。 新名称将于 2020 年 6 月 9 日生效。
 
 有关详细信息，请参阅[对 Microsoft 365 应用版的更新频道所做的更改](/DeployOffice/update-channels-changes)。
 
@@ -307,7 +307,7 @@ To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid
 我们已将一些新的 Azure Active Directory 管理员角色添加到 <<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>。
 
 - 混合标识管理员角色授予用户管理云预配和身份验证服务的权限。
-- 网络管理员角色允许用户管理网络位置并查看适用于软件Microsoft 365服务应用的网络见解。
+- 网络管理员角色允许用户管理网络位置，并查看适用于软件Microsoft 365服务应用的网络见解。
 - 打印机管理员角色授予管理打印机和打印机连接所有方面的权限。
 - 打印机技术人员是打印机管理员角色的子集，在这些角色中，这些用户可以注册和注销打印机，并更新打印机状态。
 若要了解有关这些角色的更多信息，请参阅关于 [管理员角色](./add-users/about-admin-roles.md)。
@@ -318,7 +318,7 @@ To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 解决方案和体系结构中心
 
-刚刚在本月，我们在 docs.microsoft.com 上发布了一个称为[Microsoft 365](../solutions/index.yml)解决方案和体系结构中心的新网站，该网站整合了了解、规划和实施集成 Microsoft 365 解决方案所需的技术指导，实现安全合规的协作。 在此中心，你将找到：
+刚刚在本月，我们在 docs.microsoft.com 上发布了一个称为[Microsoft 365](../solutions/index.yml)解决方案和体系结构中心的新网站，该网站整合了了解、规划和实施集成 Microsoft 365 解决方案所需的技术指南，实现安全且合规的协作。 在此中心，你将找到：
 
 - 基础解决方案指南
 - 工作负载解决方案和方案指南
@@ -326,10 +326,10 @@ To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid
 - 行业特定指南
 - Enterprise体系结构设计主体
 
-### <a name="docs-training-and-videos-may"></a>5 月提供的文档、 (视频) 
+### <a name="docs-training-and-videos-may"></a>5 月提供的文档 (培训) 
 
 - **Microsoft 365** 视频系列中的新增功能：本月，我们将介绍 Teams 管理和安全与合规中心中的新支持体验、Planner 与消息中心的集成以及 Microsoft Teams 中新的 3x3 视频布局。 
-- 已[Microsoft 365 管理中心](./index.yml)帮助中心页面，以帮助你更快找到所需的内容。 如果你立即查看该页面，我们添加了一张卡片，告知你重要更新和更改。
+- 已[Microsoft 365 管理中心帮助](./index.yml)中心页面，以帮助你更快找到所需的内容。 如果你立即查看该页面，我们添加了一张卡片，告知你重要更新和更改。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -337,7 +337,7 @@ To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid
 
 [2020 年 4 月](#april-2020)
 
-我们这样做了！ 我们针对统一角色体验已执行第二步，你现在可以在 Microsoft 365 管理中心 中<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理 Intune 角色</a>。 您还可以利用搜索角色和查看角色权限等功能。 这意味着，无需使用两个单独的工具来管理 Microsoft 365 和 Intune 的角色。 当你登录到 Microsoft 365 管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>时，你将看到"角色"页面上有两个透视表，一个适用于 Azure AD，一个适用于 Intune。
+我们这样做了！ 我们已执行统一角色体验的第二步，你现在可以在角色集中管理 Intune <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心。</a> 您还可以利用搜索角色和查看角色权限等功能。 这意味着，无需使用两个单独的工具来管理 Microsoft 365 和 Intune 的角色。 当你登录到 Microsoft 365 管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>时，你将看到"角色"页面上有两个透视表，一个适用于 Azure AD，一个适用于 Intune。
 
 ![选择 Intune 透视表的角色页面。](../media/MAC-WN-IntuneRoles.png)
 
@@ -349,11 +349,11 @@ To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid
 
 ### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>"需要帮助吗？" 在安全Teams合规&管理中心中启动
 
-现在Teams管理中心、安全中心和合规中心使用相同的"需要帮助？" 用于查找<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 管理中心</a>联系支持人员的功能。 我们收到了许多来自管理员的反馈，你希望获得相同级别的帮助和支持，并且我们乐意为你带来帮助和支持。 试一试，并告诉我们你的反馈！
+现在Teams管理中心、安全中心和合规中心使用相同的"需要帮助？" 功能<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">，Microsoft 365 管理中心</a>查找帮助和联系支持人员。 我们收到了许多来自管理员的反馈，你希望获得相同级别的帮助和支持，并且我们乐意为你带来帮助和支持。 试一试，并告诉我们你的反馈！
 
 #### <a name="need-chat"></a>需要聊天？
 
-我们的支持代理一直在在家工作，同时在家工作时仍接受客户案例和 Internet 带宽限制可能会影响客户呼叫质量。 为了继续支持你，我们已为商业客户在 Microsoft 365 管理中心 中启动<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">实时聊天Microsoft 365 管理中心。</a>
+我们的支持代理一直在在家工作，同时在家工作时仍接受客户案例和 Internet 带宽限制可能会影响客户呼叫质量。 为了继续支持你，我们已为商业客户在 Microsoft 365 管理中心 中<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">启动实时聊天支持选项</a>。
 
 创建服务请求时，除了电话和电子邮件外，你现在还会看到聊天选项。 选择"聊天"作为首选的通信通道并创建请求。 创建请求后，可以在准备好与 Microsoft 代理聊天时开始聊天。
 
@@ -363,8 +363,8 @@ To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid
 
 - 管理中心主页上的新建议卡显示哪些用户 30 天内未Teams用户。 你可以向这些用户发送培训电子邮件，让他们开始使用Teams。
 - **将人员与** 团队汇集在一起：转到设置以查看新页面，帮助你为许可用户打开 Teams 并允许来宾访问，以便你可以与 Teams 中的外部客户合作。
-- 默认情况下Microsoft Teams卡已固定到主页。 它显示Teams是否打开，以及是否允许来宾访问。 它还允许你检查新授权用户的安装Teams，并检查网络问题是否可能会影响Teams用户。
-- 最后，Teams购买包含许可证的许可证，则此许可证现在是初始设置流中的一Teams。
+- 现在Microsoft Teams卡已默认固定到主页。 它显示Teams是否打开，以及是否允许来宾访问。 它还允许你检查新授权用户Teams的安装状态，并检查网络问题是否可能会影响Teams用户。
+- 最后，Teams许可证是初始设置流程的一个步骤（如果您购买了包含 Teams）。
 
 ### <a name="productivity-score"></a>工作效率分数
 
@@ -384,9 +384,9 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 - 现在，您可以编辑 Office 365 组的电子邮件地址 (也称为 Outlook 中的组，并且很快Microsoft 365组) 。
 - 我们收到你的反馈，并且添加了更明确的错误消息，说明你无法将组转换为 Microsoft 团队的原因。
 
-### <a name="docs-videos-and-training-april"></a> (年 4 月提供的文档、视频和) 
+### <a name="docs-videos-and-training-april"></a>) 年 4 月 (文档、视频和培训
 
-**Microsoft 365** 视频系列中的新增功能：本月，我们将介绍帮助小型企业过渡到远程工作的提示和资源，包括如何推出 Microsoft Teams、远程工作培训资源以与客户端和合作伙伴保持联系，以及新的 Microsoft 365 商务语音 计划。 [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+**Microsoft 365** 视频系列中的新增功能：本月，我们将介绍帮助小型企业过渡到远程工作的提示和资源，包括如何推出 Microsoft Teams、与客户端和合作伙伴保持联系的远程工作培训资源，以及新的 Microsoft 365 商务语音 计划。 [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 #### <a name="for-your-users"></a>对于用户
 
@@ -414,25 +414,25 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 
 ### <a name="microsoft-teams-home-page-card"></a>Microsoft Teams主页卡
 
-随着使用情况的Teams，一些组织将获取固定的仪表板卡片，这样Teams更可发现。 该卡片还具有指向培训和文档的链接，可帮助你的组织过渡到远程工作。 只需转到 **主页** 查看新卡片。
+随着使用情况的Teams，一些组织将获取固定的仪表板卡，这样Teams更可发现。 该卡片还具有指向培训和文档的链接，可帮助你的组织过渡到远程工作。 只需转到 **主页** 查看新卡片。
 
 ![Microsoft Teams主页卡。](../media/MAC-WN-TeamsCard.PNG)
 
 ### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>自定义组织的移动应用SharePoint主题
 
-通过使用<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心，</a>现在可以在适用于 iOS 的 SharePoint 中自定义组织的主题，SharePoint Android 移动应用中自定义组织的主题。 此功能便捷地提供移动 Intranet 应用体验，可匹配SharePoint员工在线体验。 主题自定义包括徽标图像、导航栏颜色、文本和图标颜色以及主题色，便于识别。
+使用<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心，</a>现在可以在适用于 iOS 的 SharePoint 移动应用和适用于 Android 的 SharePoint 中自定义组织的主题。 此功能提供移动 Intranet 应用体验，方便员工SharePoint在线体验。 主题自定义包括徽标图像、导航栏颜色、文本和图标颜色以及主题色，便于识别。
 
 ![将管理中心设置映射到移动应用的图表。](../media/MAC-WN-CustThemeSP.png)
 
 ### <a name="improvements-to-the-add-a-group-wizard"></a>对"添加组"向导的改进
 
-当管理员创建了一个新组，并同时将其创建为团队时，他们可分配没有包含此组许可证Teams。 这导致一些麻烦。 我们更新了向导流，以验证所有者是否Teams许可证，以及是否禁用了将组转换为团队的选项。
+当管理员创建了一个新组，并同时将其创建为团队时，他们可分配没有包含此组许可证Teams。 这导致一些麻烦。 我们更新了向导流，以验证所有者是否Teams许可证，以及是否禁用将组转换为团队的选项。
 
 ### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Microsoft 365中小型企业提供的产品/服务
 
 我们知道这是下个月的公告，但我们希望确保你已做好准备。
 
-从 4 月 21 日起，我们将更改与中小型企业的 Office 365 订阅相关的更改，并Office 365 专业增强版。 这些产品现在将使用Microsoft 365品牌。
+从 4 月 21 日起，我们将更改与适用于中小型企业的 Office 365 订阅相关的更改，并Office 365 专业增强版。 这些产品现在将使用Microsoft 365品牌。
 
 新产品名称于 2020 年 4 月 21 日生效。 This is a change to the product name only， and there are no pricing or feature changes at this time.
 

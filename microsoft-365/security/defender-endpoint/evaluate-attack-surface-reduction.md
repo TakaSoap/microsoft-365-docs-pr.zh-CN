@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6ed8100db6bb5eee14276ef99c959d2ee29a0879
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a7d91adf6e511c9eada8a45f166442e279e6d55b
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165350"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531347"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>评估攻击面减少规则
 
@@ -38,7 +38,7 @@ ms.locfileid: "61165350"
 
 - Windows 10 专业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - Windows 10 企业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
-- Windows Server[版本 1803 (半年](/windows-server/get-started/whats-new-in-windows-server-1803)频道) 或更高版本
+- Windows Server 版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 -  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
@@ -50,7 +50,7 @@ ms.locfileid: "61165350"
 了解如何通过启用审核模式直接在你的组织中测试[](audit-windows-defender.md)功能来评估攻击面减少规则。
 
 > [!TIP]
-> 还可以访问 Microsoft Defender for Endpoint 演示方案[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)网站，demo.wd.microsoft.com 以确认功能是否正常工作并查看其工作方式。
+> 还可以访问 Microsoft Defender for Endpoint 演示方案[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)网站，demo.wd.microsoft.com 确认功能是否正常工作并查看其工作方式。
 
 ## <a name="use-audit-mode-to-measure-impact"></a>使用审核模式衡量影响
 
@@ -62,7 +62,7 @@ ms.locfileid: "61165350"
 Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
 ```
 
-其中 `<rule ID>` 是 [攻击面减少规则的 GUID 值](attack-surface-reduction-rules.md)。
+其中 `<rule ID>` 是 [攻击面减少规则的 GUID 值](attack-surface-reduction-rules-reference.md)。
 
 若要在审核模式下启用所有添加的攻击面减少规则，请使用以下 PowerShell cmdlet：
 
