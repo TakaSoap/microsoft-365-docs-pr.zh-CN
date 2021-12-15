@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: 4139a7cd8f2a87bf8db25e9b23201132e321b31d
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: a8a085d29ee3d4552091e11d154900a79de7b45e
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422563"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507310"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -307,7 +307,7 @@ Pattern 元素有必需的 confidenceLevel 属性。可将 confidenceLevel 值�
 
 如果合规性团队使用 Microsoft 365 合规中心创建不同区域设置和不同语言的策略，你可以提供自定义敏感信息类型的名称和说明的本地化版本。这样，如果合规性团队在使用 Microsoft 365 时采用你所支持的语言，就会在 UI 中看到本地化名称。
   
-![实例计数和匹配准确度选项。](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![实例计数和匹配准确度配置。](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 Rule 元素必须包含 LocalizedStrings 元素，因为其中包含引用自定义实体 GUID 的 Resource 元素。相应地，每个 Resource 元素都包含一个或多个 Name 和 Description 元素，这些元素使用 langcode 特性来提供特定语言的本地化字符串。
   
@@ -431,7 +431,7 @@ Microsoft 365提供了两个泛型验证程序
   
 ## <a name="changes-for-exchange-online"></a>针对 Exchange Online 的变化
 
-以前，你可能已使用过 Exchange Online PowerShell 为 DLP 导入自定义敏感信息类型。 现在，自定义敏感信息类型可在管理中心和合规Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">使用</a>。 此次改进后，应使用合规中心 PowerShell 导入自定义敏感信息类型，不再可从 Exchange PowerShell 导入它们。 自定义敏感信息类型将像往常一样正常工作，但是，在合规中心进行的更改可能需要至多一小时才会出现在 Exchange 管理中心。
+以前，你可能已使用过 Exchange Online PowerShell 为 DLP 导入自定义敏感信息类型。 现在，自定义敏感信息类型可用于管理Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">和</a>合规中心。 此次改进后，应使用合规中心 PowerShell 导入自定义敏感信息类型，不再可从 Exchange PowerShell 导入它们。 自定义敏感信息类型将像往常一样正常工作，但是，在合规中心进行的更改可能需要至多一小时才会出现在 Exchange 管理中心。
   
 请注意，在合规中心中，可以使用 **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** cmdlet 上载规则包。 （以前，在 Exchange 管理中心中，使用的是 **ClassificationRuleCollection**`cmdlet。） 
   
@@ -487,8 +487,8 @@ Microsoft 365提供了两个泛型验证程序
 当你上传规则包 XML 文件时，系统会验证 XML，并检查是否有已知的错误模式和明显的性能问题。验证检查正则表达式时，需要检查其中是否有下面的一些已知问题：
   
 - 正则表达式中的 lookbehind 或 lookahead 断言应仅具有固定长度。 可变长度断言将导致错误。
-    
-  例如，" (？<=^|\s|) "无法通过验证，因为其中的第一个选项是"^"，其长度为零，而下一个 tow 选项 _('\s'_ 和 ') 长度为 1。 此正则表达式的替代方法是" (？：^| (？<=\s|_) ) "
+
+    例如，此正则表达式无法通过验证，因为此表达式的第一个选项的长度为零，而后两个选项的长度为 `"(?<=^|\s|_)"` `^` `\s` `_` 1。  编写此正则表达式以便其进行验证的替代方法是 `"(?:^|(?<=\s|_))"` 。
   
 - 不得以匹配所有项的交替符“|”开头或结尾，因为这被视为空匹配。
     

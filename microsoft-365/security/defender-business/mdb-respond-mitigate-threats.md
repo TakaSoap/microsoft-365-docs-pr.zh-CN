@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: cbd05b701c5276644e98671c9f07b4fbcf27c682
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 0858f4bf59aa9c5a5eb713e50c382bdf475e5126
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421122"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507226"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business-preview"></a>响应和缓解 Microsoft Defender for Business 预览版 (威胁) 
 
 > [!IMPORTANT]
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未包含 (一些) 。
+> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 
+> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
 通过Microsoft 365 Defender门户，安全团队可以响应并缓解检测到的威胁。
 
@@ -50,7 +52,7 @@ ms.locfileid: "61421122"
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="所选设备的可用操作屏幕截图":::
 
-6. 选择可用操作。 例如，你可以选择"运行 **防病毒扫描**"，这Microsoft Defender 防病毒在设备上启动快速扫描。 或者，可以选择启动 **自动调查** 以在设备上触发自动调查。
+6. 选择可用操作。 例如，你可以选择"运行 **防病毒** 扫描"，这Microsoft Defender 防病毒在设备上启动快速扫描。 或者，可以选择启动 **自动调查** 以在设备上触发自动调查。
 
 ## <a name="next-steps"></a>后续步骤
 

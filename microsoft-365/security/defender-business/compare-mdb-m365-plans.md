@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 3c9ce07007d67c3a65acec607056cc8a5bb965e0
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 42cd947dec6e954ae675cda233dc4126c2bb2b39
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423043"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507430"
 ---
 # <a name="compare-microsoft-defender-for-business-preview-to-microsoft-365-business-premium"></a>比较 Microsoft Defender for Business (预览) 与Microsoft 365 商业高级版
 
 > [!IMPORTANT]
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未包含 (一些) 。
+> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 
+> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
 Microsoft 提供各种云解决方案和服务，包括针对中小型企业的几个不同计划。 例如[，Microsoft 365 商业高级版](../../business/microsoft-365-business-overview.md)包括安全和设备管理功能，以及工作效率功能，如Office应用。 
 
@@ -36,7 +38,7 @@ Microsoft 提供各种云解决方案和服务，包括针对中小型企业的�
 - [比较 Defender for Business 与适用于终结点企业产品/服务 Microsoft Defender](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2)
 
 
-**你不必拥有一个 Microsoft 365 订阅，即购买和使用 Microsoft Defender for Business (预览) 。** Microsoft Defender for Business (预览) 是一款适用于中小型企业的独立安全解决方案。 如果你已有其他订阅， (如 Microsoft 365 商业基础版 或 Standard) ，请考虑添加 Microsoft Defender for Business，以获得其他威胁防护功能。 
+**你不必拥有一个 Microsoft 365 订阅，即购买和使用 Microsoft Defender for Business (预览) 。** Microsoft Defender for Business (预览) 是一款适用于中小型企业的独立安全解决方案。 如果你已拥有其他订阅 (如 Microsoft 365 商业基础版 或 Standard) ，请考虑添加 Microsoft Defender for Business，以获得其他威胁防护功能。 
 
 > [!TIP]
 > 如果你的公司是小型企业或中型企业 (300 个或更少用户) 并且你要注册 Microsoft Defender for Business 预览计划，请访问 [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) 。 若要了解更多信息，请参阅[获取 Microsoft Defender for Business。](get-defender-business.md)
@@ -44,15 +46,15 @@ Microsoft 提供各种云解决方案和服务，包括针对中小型企业的�
 ## <a name="compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>比较 Microsoft Defender for Business 中的安全功能与Microsoft 365 商业高级版
 
 > [!NOTE]
-> 本文旨在提供 Microsoft Defender for Business 预览版和预览版中 (威胁防护) Microsoft 365 商业高级版。 本文不用作服务说明或许可合同文档。 有关详细信息，请参阅Microsoft 365[安全与合规&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> 本文旨在提供 Microsoft Defender for Business 预览版和预览版 (中包含的威胁防护) Microsoft 365 商业高级版。 本文不用作服务说明或许可合同文档。 有关详细信息，请参阅Microsoft 365[安全与合规&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 下表比较了 Defender for Business 中的安全特性和功能Microsoft 365 商业高级版 Defender for Business 在预览版中。 当 Defender for Business 普遍可用时，它将包含在 Microsoft 365 商业高级版。 <br/><br/>
 
 | 功能 | [Microsoft Defender for Business](mdb-overview.md) (预览)  | [Microsoft 365 商业高级版](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
 | 电子邮件保护 | 是 ([电子邮件扫描Microsoft Defender 防病毒) ](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) | 是[ (Exchange Online Protection) ](../office-365-security/exchange-online-protection-overview.md) |
-| 反垃圾邮件保护 | 是 (设备)  | 是 (电子邮件Microsoft 365，例如邮件和附件)  |
-| 反恶意软件保护 | 是 (设备)  | 是 (电子邮件Microsoft 365，例如邮件和附件)  |
+| 反垃圾邮件保护 | 是 (设备)  | 是 (电子邮件Microsoft 365，如邮件和附件)  |
+| 反恶意软件保护 | 是 (设备)  | 是 (电子邮件Microsoft 365，如邮件和附件)  |
 | [下一代保护](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/>  (防病毒和反恶意软件保护)  | 是 (Microsoft Defender 防病毒包括在Windows 10及)   | 是 (Microsoft Defender 防病毒包括在Windows 10及)  |
 | [减少攻击面](../defender-endpoint/overview-attack-surface-reduction.md) <br/> (攻击面减少规则和其他保护)   | 是 (内置在攻击面减少规则Windows 10及更高版本中，以及集中管理的功能)  | 是 (和更高版本中内置的攻击面Windows 10规则)  |
 | [终结点检测和响应](../defender-endpoint/overview-endpoint-detection-response.md) | 是。 包括： <br/>- 基于行为的检测 <br/>- 手动响应操作 <br/>- 实时响应   | 否 |
@@ -87,7 +89,7 @@ Defender for Business (预览) 为中小型企业提供 Defender for Endpoint �
 
  (<a id="fn2">2</a>) 这些功能针对中小型企业进行了优化。
 
- (<a id="fn3">3</a>) 在预览计划期间，Windows支持 Microsoft 365 Defender 门户 [https://security.microsoft.com](https://security.microsoft.com) () 。
+ (<a id="fn3">3</a>) 在预览计划Windows，Microsoft 365 Defender支持 ([https://security.microsoft.com](https://security.microsoft.com)) 。
 
 ## <a name="next-steps"></a>后续步骤
 

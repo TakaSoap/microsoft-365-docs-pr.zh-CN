@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: efb246e07c7a55dbf71102f06e90fbbd9b0c202b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: c2ccbb0ae11703b8da25569a34655cabee940c5b
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422995"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507729"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business-preview"></a>了解 Microsoft Defender for Business 预览版中的 (顺序) 
 
 > [!IMPORTANT]
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未 (一些) 。
+> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 
+> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
 ## <a name="policy-order-in-microsoft-defender-for-business"></a>Microsoft Defender for Business 中的策略顺序
 

@@ -1,5 +1,5 @@
 ---
-title: '将设备载入 Microsoft Defender for Business (预览版) '
+title: '将设备载入 Microsoft Defender for Business (预览) '
 description: '了解 Microsoft Defender for Business 预览版中的设备载入 (选项) '
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 330d0ca65916d647ff970468d32ede75f36d63a6
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 2b86836926546c8efdb17d760a406c0be31dc65d
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423211"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507717"
 ---
-# <a name="onboard-devices-to-microsoft-defender-for-business-preview"></a>将设备载入 Microsoft Defender for Business (预览版) 
+# <a name="onboard-devices-to-microsoft-defender-for-business-preview"></a>将设备载入 Microsoft Defender for Business (预览) 
 
 > [!IMPORTANT]
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未包含 (一些) 。
+> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 
+> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
 借助 Microsoft Defender for Business (预览) ，你可以从多个选项中进行选择以载入你的公司设备。 本文将引导你完成你的选项，并包括载入工作原理的概述。
 
@@ -89,7 +91,7 @@ ms.locfileid: "61423211"
 
 ## <a name="run-a-detection-test"></a>运行检测测试
 
-手动载入设备后，你可以运行检测测试，以确保一切正常使用 Defender for Business (预览版) 。
+手动载入设备后，可以运行检测测试，以确保使用 Defender for Business (预览版) 。
 
 1. 在设备上，创建一个文件夹 `C:\test-MDATP-test` ：。
 
@@ -113,7 +115,7 @@ ms.locfileid: "61423211"
 
 3. 在 **"设备管理"** 下，选择 **"载出"。**
 
-4. 选择 **"Windows 10和 11"，** 然后在"从设备载出"下的"部署方法 **"部分，** 选择"**本地脚本"。** 
+4. 选择 **Windows 10和 11"，** 然后在"部署方法"部分中的"载出 **设备**"下，选择"**本地脚本"。**  
 
 5. 在确认屏幕中，查看信息，然后选择" **下载"** 继续。
 
@@ -121,7 +123,7 @@ ms.locfileid: "61423211"
 
 7. 在每台设备上，按照以下步骤操作： 
 
-   1. 将配置包 () 下载到设备，然后 `WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD` 提取其内容。 你可以将内容提取到设备的 **桌面文件夹** 。  (`YYYY-MM-DD` package.) 
+   1. 将配置包 () 下载到设备，然后 `WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD` 提取其内容。 你可以将内容提取到设备的 **桌面文件夹** 。  (表示 `YYYY-MM-DD` package.) 
 
    2. 以管理员角色打开命令提示符。
 

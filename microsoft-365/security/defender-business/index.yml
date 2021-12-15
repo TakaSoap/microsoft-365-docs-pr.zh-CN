@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Microsoft Defender for Business
-summary: Microsoft Defender for Business 文档
+title: Microsoft Defender 商业版
+summary: Microsoft Defender for Business 现在为预览版，将逐步向注册以请求它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动一组初始方案，我们将定期添加功能。
 metadata:
   title: Microsoft Defender for Business 文档
   description: 获取 Microsoft Defender for Business 的概述和设置信息
@@ -12,13 +12,13 @@ metadata:
   - M365-security-compliance
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 12/08/2021
-  ms.openlocfilehash: 882536032df80721881c27f87d99c606063c35f0
-  ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+  ms.date: 12/13/2021
+  ms.openlocfilehash: 4b6e48f130b3cf89d097b552f8d536df989a867e
+  ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/09/2021
-  ms.locfileid: "61375010"
+  ms.lasthandoff: 12/14/2021
+  ms.locfileid: "61508306"
 landingContent:
 - title: 概述
   linkLists:
@@ -50,7 +50,7 @@ landingContent:
       url: mdb-onboard-devices.md
     - text: 步骤 5 - 配置安全设置
       url: mdb-view-edit-policies.md
-- title: 开始行动
+- title: 入门
   linkLists:
   - linkListType: get-started
     links:
@@ -98,7 +98,7 @@ landingContent:
     links:
     - text: 如何获取帮助或联系支持人员
       url: mdb-get-help.md
-    - text: 常见问题解答
+    - text: 常见问题
       url: mdb-faq.yml
     - text: 疑难解答
       url: mdb-troubleshooting.yml

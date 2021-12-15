@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,20 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 663ecf1b998658829e604fd5c9160b4bf0cd09ae
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: aaeb816b833a15e5ea7bf5d7577b062f8b5dbc6b
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421098"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61508271"
 ---
 # <a name="create-a-new-policy-in-microsoft-defender-for-business-preview"></a>在 Microsoft Defender for Business 预览版中 (策略) 
 
 > [!IMPORTANT]
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未包含 (一些) 。
+> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 
+> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
+
 
 Microsoft Defender for Business (预览) 包括默认策略，这些策略使用推荐设置保护公司设备，自第一天开始。 例如，**你具有使用** 建议的安全设置构建的下一代保护策略和防火墙策略。 但不限于默认策略。 也可以创建新策略，如本文中所述。
 
@@ -47,7 +50,7 @@ Microsoft Defender for Business (预览) 包括默认策略，这些策略使用
 
    1. 指定名称和说明。 此信息将帮助你和团队稍后识别策略。
    2. 查看策略顺序，并在必要时编辑它。  (有关详细信息，请参阅策略 [顺序](mdb-policy-order.md).) 
-   3. 选择“**下一步**”。 
+   3. 选择 **下一步**。 
 
 7. 在 **"设备组"** 选项卡上，创建新设备组或使用现有组。 策略通过设备组分配给设备。 以下是需要记住的一些内容：
 

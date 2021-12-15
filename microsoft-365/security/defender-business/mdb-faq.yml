@@ -8,7 +8,7 @@ metadata:
   manager: dansimp
   audience: Admin
   ms.topic: overview
-  ms.date: 12/10/2021
+  ms.date: 12/13/2021
   ms.prod: m365-security
   ms.technology: mdb
   localization_priority: Normal
@@ -17,14 +17,14 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 74bfe8abd006b07f634285182fb1620213cc904f
-  ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+  ms.openlocfilehash: c732382adf1db8add348f7e4922edd3506bbd45b
+  ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/13/2021
-  ms.locfileid: "61423499"
+  ms.lasthandoff: 12/14/2021
+  ms.locfileid: "61507442"
 title: Microsoft Defender for Business (预览) - 常见问题和解答
-summary: ''
+summary: "Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。 \n\n本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。\n\n使用本文获取你可能对 Defender for Business (预览版) 。\n"
 sections:
 - name: 常规
   questions:

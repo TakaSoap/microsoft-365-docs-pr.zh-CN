@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ff1a50a0ba04880680e663d1f960d3f10582d628
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 8f1f1f9f3879b7e44f7c718b026d3daba55d7c62
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423460"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507352"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business 预览版中的教程 (模拟) 
 
 > [!IMPORTANT]
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未包含 (一些) 。
+> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](#try-these-preview-scenarios)，我们将定期添加功能。
+> 
+> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
 如果你刚刚完成设置 Microsoft Defender for Business (预览版) ，你可能想知道从何处开始了解 Defender for Business (预览版) 的工作原理。 本文介绍了要试用的预览方案，以及适用于 Defender for Business 预览版预览版 (教程) 。 这些资源旨在帮助你了解 Defender for Business (预览) 公司工作。
 

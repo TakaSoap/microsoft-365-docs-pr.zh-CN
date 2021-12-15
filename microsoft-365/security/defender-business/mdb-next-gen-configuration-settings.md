@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 619d3a03789eab7e525a6d4d07621d7950e907cb
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: ab2d82c3b5db6b114b8172e0f4bf4aa3658eb28a
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423259"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507238"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business-preview"></a>了解 Microsoft Defender for Business 预览版中的下一代 (配置) 
 
 > [!IMPORTANT]
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本文包含指向联机内容的链接，这些链接可能介绍 Microsoft Defender for Business 预览版中未 (一些) 。
+> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 
+> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
 Microsoft Defender for Business 预览版中的下一代 (包括) 防病毒和反恶意软件保护。 默认策略旨在保护设备和用户，而不受工作效率的影响;但是，您也可以自定义策略以满足业务需求。 
 
@@ -66,7 +68,7 @@ Microsoft Defender for Business 预览版中的下一代 (包括) 防病毒和�
 - 在 [AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender) (打开可移动驱动器) 
 - 每日快速扫描没有预设的时间 ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender)) 
 - 在运行防病毒扫描之前检查安全智能更新 ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender)) 
-- 使用 [SignatureUpdateInterval (四小时](/windows/client-management/mdm/policy-csp-defender) 进行一次安全) 
+- 在 [SignatureUpdateInterval (，安全智能](/windows/client-management/mdm/policy-csp-defender) 检查每四) 
 
 ## <a name="next-steps"></a>后续步骤
 
