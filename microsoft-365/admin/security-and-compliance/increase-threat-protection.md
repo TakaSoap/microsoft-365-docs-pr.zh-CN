@@ -23,13 +23,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 设置 Microsoft Defender Office 365保护敏感数据免受网络钓鱼、恶意软件和其他威胁。
-ms.openlocfilehash: 7b19f73a08dc34821f755a64cd0dda502ef4a144
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: 设置 Microsoft Defender Office 365保护敏感数据免受网络钓鱼、恶意软件和其他威胁的侵害。
+ms.openlocfilehash: 20e939b0717e73e3148b3bbaf93e3190414609d4
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421314"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520988"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -73,13 +73,13 @@ ms.locfileid: "61421314"
 
 勒索软件通过加密文件或锁定计算机屏幕来限制对数据的访问。 然后，它尝试通过请求"勒索"（通常采用加密货币（如"Itin"）来从犯罪中勒索资金，以交换对数据的访问。
 
-若要防范勒索软件，请创建一个或多个邮件流规则，以阻止通常用于勒索软件的文件扩展名。  (在提高邮件步骤中的恶意软件防护级别中添加[](#raise-the-level-of-protection-against-malware-in-mail)了这些规则。) 您还可以警告通过电子邮件接收这些附件的用户。
+若要防范勒索软件，请创建一个或多个邮件流规则，以阻止通常用于勒索软件的文件扩展名。  (在提高邮件步骤中的恶意软件防护级别[](#raise-the-level-of-protection-against-malware-in-mail)中添加了这些规则。) 您还可以警告通过电子邮件接收这些附件的用户。
 
 除了在上一步中阻止的文件之外，最佳做法是创建一个规则，在打开包含宏的 Office 文件附件之前警告用户。 勒索软件可以隐藏在宏内，因此警告用户不要从他们不知道的人打开这些文件。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrWGt?autoplay=false]
 
-1. 在管理中心中 [https://admin.microsoft.com](https://admin.microsoft.com) ，选择 **"Exchange** 中心 **"下的"管理中心"。**
+1. 在管理中心中 [https://admin.microsoft.com](https://admin.microsoft.com) ，选择 **"Exchange****中心"下的"管理中心"。**
 1. 从左侧的菜单中，选择"**邮件流"。**
 1. On the rules tab， choose the arrow next to the plus (+) symbol， and then choose **Create a new rule**.
 1. 在"**新规则**"页上，输入规则名称，滚动到底部，然后选择"更多 **选项"。**
@@ -169,19 +169,32 @@ ms.locfileid: "61421314"
 |添加受信任的发件人和域|可以在此处添加您自己的域，或任何其他受信任域。|
 |应用于|选择“收件人域为”。 在“以下任何项”中，选择“选择”。 选择“+ 添加”。 选中域名称旁边的复选框，例如 *contoso。 <span> <span>com*，在列表中，**然后选择添加**。 选择“**完成**”。|
 
-## <a name="protect-against-malicious-attachments-and-files-with-safe-attachments"></a>防范恶意附件和带附件保险箱文件
+## <a name="watch-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>观看：防范恶意附件和带附件保险箱文件
 
-人们定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 通过查看电子邮件来判断附件是安全还是恶意并不总是那么容易。 Microsoft Defender for Office 365包括保险箱附件保护，但此保护默认未打开。 我们建议您创建一个新规则以开始使用此保护。 此保护扩展到 SharePoint、OneDrive 和 Microsoft Teams 中的文件。
+人们定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 通过查看电子邮件来判断附件是安全还是恶意并不总是那么容易。 Microsoft Defender for Office 365（以前称为Microsoft 365 ATP 或高级威胁防护）包括 保险箱 附件保护，但默认情况下不会启用此保护。 我们建议您创建一个新规则以开始使用此保护。 此保护扩展到 SharePoint、OneDrive 和 Microsoft Teams 中的文件。
 
-若要创建保险箱附件策略，请观看此[简短](../../business-video/safe-attachments.md)视频，或完成以下步骤：
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
+
+1. 转到管理 [中心，然后选择](https://admin.microsoft.com)"设置 **"。**
+1. 向下滚动以 **提升对高级威胁的保护**。 选择 **"查看****、管理**"，然后选择 **"ATP 安全附件"。**
+1. 选择安全附件规则，然后选择"编辑 **"** 图标。
+1. 选择 **"** 设置"，然后验证是否选择了"阻止"。
+1. 向下滚动。 选择 **"启用** 重定向"，然后输入你的电子邮件地址或你要查看阻止的附件的人的地址。
+1. 选择 **"应用到"，** 然后选择您的域名。
+1. 选择你拥有的任何 (域，onmicrosoft.com 要) 应用规则的域。 选择 **"添加**"，然后选择"**确定"。**
+1. 选择“**保存**”。
+
+已更新 ATP 安全附件规则。 现在，保护已就位，你将无法从 Outlook、OneDrive、SharePoint 或 Teams 打开恶意Teams。 受影响的文件旁边将具有红色防护。 如果有人尝试打开阻止的文件，他们将收到一条警告消息。
+
+策略实施一段时间后，请访问"报告"页面查看已扫描的内容。
 
 1. 转到 [https://protection.office.com](https://protection.office.com) ，然后使用管理员帐户登录。
 
 2. 在安全 &amp; 与合规中心的左侧导航窗格中，在"威胁管理"下，选择"策略 **"。**
 
-3. 在"策略"页上，选择 **"保险箱附件"。**
+3. 在"策略"页面上，选择 **"保险箱附件"。**
 
-4. 在"保险箱附件"页上，选中"打开 **ATP for SharePoint、OneDrive** 和 Microsoft Teams"复选框，以广泛应用此保护。
+4. On the 保险箱 attachments page， apply this protection broadly by selecting the **Turn on ATP for SharePoint， OneDrive， and Microsoft Teams** check box.
 
 5. 选择 **+** 以创建新策略。
 
@@ -256,6 +269,6 @@ Microsoft Defender for Office 365（以前称为Microsoft 365 ATP 或高级威�
 
 2. 选择 **"所有服务**"，在 *"搜索框"***中键入** Intune。
 
-3. 显示结果后，选择"开始"Microsoft Intune"开始"，使其成为收藏项，并且易于稍后查找。
+3. 显示结果后，选择"开始"Microsoft Intune，使其成为收藏且易于稍后查找。
 
 除了管理中心外，您还可以使用 Intune 注册和管理组织的设备。 有关详细信息，请参阅适用于设备注册Windows[和](/intune/enrollment/enrollment-method-capab) [Intune](/intune/enrollment-options)管理的设备的注册选项。

@@ -12,15 +12,16 @@ ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何创建、修改和删除 Microsoft Defender for Office 365 中提供的高级防钓鱼策略。
+ms.custom: admindeeplinkDEFENDER
+description: 管理员可以了解如何创建、修改和删除 Microsoft Defender for Office 365 组织提供的高级防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9681f1d110280a99e43283d56a7de3bb11e0f8b3
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 0c343df51be49e9512d16782ee9d012cc5ced4bd
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907953"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520916"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365
 
@@ -30,18 +31,18 @@ ms.locfileid: "60907953"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络钓鱼策略可帮助保护组织免受基于恶意模拟的网络钓鱼攻击和其他类型的网络钓鱼攻击。 有关 Exchange Online Protection (EOP) 中的反网络钓鱼策略与 Microsoft Defender for Office 365 中的反网络钓鱼策略之间的差异，请参阅反网络钓鱼[防护](anti-phishing-protection.md)。
+Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络钓鱼策略可帮助保护组织免受基于恶意模拟的网络钓鱼攻击和其他类型的网络钓鱼攻击。 有关 Exchange Online Protection (EOP) 中的反网络钓鱼策略与 Microsoft Defender for Office 365 中的防钓鱼策略之间的差异，请参阅反钓鱼[保护](anti-phishing-protection.md)。
 
 管理员可以查看、编辑和配置 (，但不能) 默认的防钓鱼策略。 更精细地来说，您还可以创建适用于组织中特定用户、组或域的自定义防钓鱼策略。 自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
 
-可以在 Defender 中配置反网络钓鱼策略，Office 365在 Microsoft 365 Defender 门户或 Exchange Online PowerShell 中配置。
+可以在 Defender 中配置防钓鱼策略，Office 365在 Microsoft 365 Defender 门户或 Exchange Online PowerShell 中配置。
 
 有关在 Exchange Online Protection (中可用的反网络钓鱼策略（即没有 Defender for Office 365) 的组织）中配置更多限制的信息，请参阅在[EOP](configure-anti-phishing-policies-eop.md)中配置反网络钓鱼策略。
 
 防钓鱼策略的基本元素包括：
 
 - **防钓鱼策略**：指定要启用或禁用的网络钓鱼防护，以及要应用选项的操作。
-- **反网络钓鱼规则**：指定策略应用于 (策略的收件人筛选器) 策略的优先级和收件人筛选器。
+- **反网络钓鱼规则**：指定策略 (策略应用于哪些用户) 策略的优先级和收件人筛选器。
 
 在安全门户中管理防钓鱼策略时，这两个元素Microsoft 365 Defender明显：
 
@@ -76,7 +77,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
   - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的权限。有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
-- 有关 Defender for Office 365 中的反网络钓鱼策略建议设置，请参阅 Defender 中的反网络钓鱼策略，Office 365[设置](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)。
+- 有关 Defender for Office 365 中的反网络钓鱼策略建议设置，请参阅 Defender 中的反网络钓鱼策略，了解Office 365[设置](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)。
 
 - 最多允许应用新策略或更新策略 30 分钟。
 
@@ -84,9 +85,9 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies"></a>使用Microsoft 365 Defender门户创建防钓鱼策略
 
-在 Microsoft 365 Defender 门户中创建自定义防钓鱼策略可同时创建反网络钓鱼规则和相关反网络钓鱼策略，对二者使用相同的名称。
+在 Microsoft 365 Defender 门户中创建自定义防钓鱼策略可同时使用同一名称创建反网络钓鱼规则和相关防钓鱼策略。
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&协作策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。 
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>中，**转到**"策略"&中的"电子邮件&协作策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。 
 
 2. 在" **防钓鱼"页上** ，单击" ![ 创建图标"。](../../media/m365-cc-sc-create-icon.png) **Create**。
 
@@ -114,7 +115,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 5. 在出现的 **"网络钓鱼&** 保护"页上，配置以下设置：
 
    - **网络钓鱼电子邮件阈值**：使用滑块选择以下值之一：
-     - **1 - 标准** (此值为默认值。) 
+     - **1 - (** 此值为默认值。) 
      - **2 - 主动**
      - **3 - 更主动**
      - **4 - 最积极**
@@ -125,14 +126,14 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
      > [!NOTE]
      >
-     > - 在每个防钓鱼策略中，最多可指定 350 个受保护 (发件人电子邮件地址) 。 不能在多个策略中指定同一受保护的用户。
+     > - 在每个防钓鱼策略中，最多可以指定 350 个受保护的用户 (发件人电子邮件地址) 。 不能在多个策略中指定同一受保护的用户。
      > - 如果发件人和收件人之前通过电子邮件进行通信，则用户模拟保护不起作用。 如果发件人和收件人从未通过电子邮件进行通信，则邮件将被标识为模拟尝试。
 
-     - **允许用户保护**：默认值为 off， (未) 。 若要打开它，请选中该复选框，然后单击"管理 (**nn")  (显示**) "链接。
+     - **允许用户保护**：默认值为 off， (未) 。 若要打开它，请选中该复选框，然后单击"管理 (**nn")  (") "** 链接。
 
        在 **出现的"管理发件人以执行模拟保护** "飞出中，执行以下步骤：
 
-       - **内部发件人：** 单击 ![ "添加内部图标"。](../../media/m365-cc-sc-add-internal-icon.png) **选择内部**。 In the **Add internal senders** flyout that appears， click in the box and select an internal user from the list. 可以通过键入用户，然后从结果中选择用户来筛选列表。 您可以使用大部分标识符 (、显示名称、别名、电子邮件地址、帐户名等 ) ，但结果显示名称显示相应的标识符。
+       - **内部发件人：** 单击 ![ "添加内部图标"。](../../media/m365-cc-sc-add-internal-icon.png) **选择内部**。 In the **Add internal senders** flyout that appears， click in the box and select an internal user from the list. 可以通过键入用户，然后从结果中选择用户来筛选列表。 您可以使用大部分标识符 (名称、显示名称、别名、电子邮件地址、帐户名等 ) ，但结果显示名称显示相应的标识符。
 
          根据需要重复执行此步骤（次数不限）。 若要删除现有值，请单击值旁边的 ![删除图标。](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
 
@@ -152,7 +153,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
      - **启用域保护**：默认值为 off， (未) 。 若要打开它，请选中该复选框，然后配置以下一个或两个显示的设置：
        - **包括我拥有的域**：若要启用此设置，请选中复选框。 若要查看您拥有的域，请单击"**查看我的域"。**
-       - **包括自定义域**：若要启用此设置，请选中该复选框，然后单击出现的"管理 (**nn) 自定义域 ()** 链接。 在出现的 **"管理用于模拟保护的** 自定义域"飞出控件中，单击" ![ 添加域图标"。](../../media/m365-cc-sc-create-icon.png) **添加域**。
+       - 包括 **自定义** 域：若要启用此设置，请选中该复选框，然后单击出现的"管理 (**nn**) 自定义 () 链接。 在出现的 **"管理用于模拟保护的** 自定义域"飞出控件中，单击" ![ 添加域图标"。](../../media/m365-cc-sc-create-icon.png) **添加域**。
 
          在出现的 **"添加自定义** 域"飞出控件中，在"域"框中单击，输入值，然后按 Enter 或选择显示在该框下方的值。 根据需要重复执行此步骤（次数不限）。 若要删除现有值，请单击删除 ![删除图标。](../../media/m365-cc-sc-remove-selection-icon.png) 它位于值的旁边。
 
@@ -188,12 +189,12 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
        建议通过选中复选框来打开此设置。 若要关闭此设置，请清除该复选框。
 
-   - **欺骗**：在此部分中，使用" **启用欺骗** 智能"复选框打开或关闭欺骗智能。 默认值在选中 (时) ，建议保留它。 在下一页的"如果邮件被检测为欺骗"设置中，指定对来自被阻止的欺骗发件人的邮件要采取的操作。
+   - **欺骗**：在此部分中，使用" **启用欺骗** 智能"复选框打开或关闭欺骗智能。 默认值在选定 (上) ，建议保留它。 在下一页的"如果邮件被检测为欺骗"设置中，指定对来自被阻止的欺骗发件人的邮件要采取的操作。
 
      若要关闭欺骗智能，请清除此复选框。
 
      > [!NOTE]
-     > 如果你的 MX 记录没有指向反欺骗保护，则无需Microsoft 365;改为启用连接器的增强筛选。 有关说明，请参阅[增强的连接器筛选Exchange Online。](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+     > 如果你的 MX 记录不指向 Microsoft 365，则不需要关闭反欺骗保护;相反，你需要启用增强的连接器筛选。 有关说明，请参阅[增强的连接器筛选Exchange Online。](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
    完成后，单击“**下一步**”。
 
@@ -217,7 +218,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
        - **将邮件移动到收件人的"垃圾邮件"文件夹**
        - **隔离邮件**：如果选择此操作，则会显示"应用隔离策略"框，选择适用于域模拟保护隔离的邮件的隔离策略。
 
-         空白的 **"应用隔离策略** "值表示默认隔离策略 (DefaultFullAccessPolicy 用于域模拟检测) 。 以后编辑防钓鱼策略或查看设置时，将显示默认隔离策略名称。
+         空白 **的"应用隔离策略** "值意味着默认隔离策略 (DefaultFullAccessPolicy 进行域模拟检测) 。 以后编辑防钓鱼策略或查看设置时，将显示默认隔离策略名称。
 
        - **传递邮件，将其他地址添加到"Bcc"行**
        - **在邮件传递之前删除邮件**
@@ -228,7 +229,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
        - **将邮件移动到收件人的"垃圾邮件"文件夹**
        - **隔离邮件**：如果选择此操作，则会显示"应用隔离策略"框，选择适用于由邮箱智能保护隔离的邮件的隔离策略。 隔离策略定义用户可以对隔离邮件执行哪些操作，以及用户是否收到隔离通知。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
 
-         空白 **的"应用隔离策略** "值意味着默认隔离策略 (DefaultFullAccessPolicy 中用于邮箱智能) 。 以后编辑防钓鱼策略或查看设置时，将显示默认隔离策略名称。
+         空白的 **"应用隔离策略** "值意味着默认隔离策略 (DefaultFullAccessPolicy 用于邮箱智能检测) 。 以后编辑防钓鱼策略或查看设置时，将显示默认隔离策略名称。
 
        - **传递邮件，将其他地址添加到"Bcc"行**
        - **在邮件传递之前删除邮件**
@@ -240,12 +241,12 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
          空白的 **"应用隔离策略** "值意味着默认隔离策略 (DefaultFullAccessPolicy 用于欺骗智能) 。 以后编辑防钓鱼策略或查看设置时，将显示默认隔离策略名称。
 
    - **安全提示&：** 配置以下设置：
-     - **显示第一安全提示** 联系人：有关详细信息，请参阅第一 [个联系人安全提示。](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+     - **显示第一安全提示** 联系人：有关详细信息，请参阅第 [一个联系人安全提示。](set-up-anti-phishing-policies.md#first-contact-safety-tip)
      - **显示用户模拟安全提示：** 只有在上一页上选择了"**允许用户保护"** 时，此设置才可用。
      - **显示域模拟安全提示：** 只有在上一页上选择了"启用要保护的域"时 **，此设置才** 可用。
-     - **显示用户模拟异常字符安全提示** 只有在上一页上选择了"允许用户保护域"或"启用要保护的域"时 **，此设置才** 可用。
-     - **显示 (？)** 欺骗的未经身份验证的发件人的信息：仅在上一页上选择了"启用欺骗智能"时，此设置才可用。  如果邮件未通过 SPF 或 DKIM 检查且邮件未通过 DMARC 或复合身份验证，则向Outlook 中的发件人照片添加问[号](email-validation-and-authentication.md#composite-authentication)。
-     - **显示"通过"标记**：仅在你在上一页上选择了" **启用** 欺骗智能"时，此设置才可用。 如果 via 标记 (chris@contoso.com 通过 fabrikam.com) 添加到"收件人"地址（如果它不同于 DKIM 签名或 **MAIL FROM** 地址中的域）。 默认值在选定 (时) 。 若要将其关闭，请清除该复选框。
+     - **显示用户模拟异常安全提示** 仅在你选择了"允许用户保护"或"使域能够保护"在上一页上时，此设置才可用。
+     - **显示 (？)** 欺骗的未经身份验证的发件人：仅在上一页上选择了"启用欺骗智能"时，此设置才可用。  如果邮件未通过 SPF 或 DKIM 检查，并且邮件未通过 DMARC 或复合身份验证，则向 Outlook 中的发件人照片添加问号 (？) 。 [](email-validation-and-authentication.md#composite-authentication)
+     - **显示"通过"标记**：仅在你在上一页上选择了" **启用** 欺骗智能"时，此设置才可用。 如果通过 (chris@contoso.com 地址 fabrikam.com) DKIM 签名或 **MAIL FROM** 地址中的域不同，则向"收件人"地址添加 via 标记。 默认值在选定 (上) 。 若要将其关闭，请清除该复选框。
 
      若要打开某个设置，请选中该复选框。 若要将其关闭，请清除该复选框。
 
@@ -257,7 +258,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
 8. 在出现的确认页面上，单击“**完成**”。
 
-## <a name="use-the-microsoft-365-defender-portal-to-view-anti-phishing-policies"></a>使用Microsoft 365 Defender查看防钓鱼策略
+## <a name="use-the-microsoft-365-defender-portal-to-view-anti-phishing-policies"></a>使用Microsoft 365 Defender门户查看防钓鱼策略
 
 1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&协作策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。 
 
@@ -272,13 +273,13 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>使用Microsoft 365 Defender门户修改防钓鱼策略
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&协作策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。 
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到"策略"&中的"电子邮件&协作策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。 
 
 2. 在 **"防钓鱼"** 页上，通过单击名称从列表中选择一个策略。
 
 3. 在出现的策略详细信息浮出控件中，选择每个部分中的“**编辑**”以修改该部分中的设置。 有关设置详细信息，请参阅本文前面使用[](#use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies)Microsoft 365 Defender 门户创建防钓鱼策略一节。
 
-   对于默认的防钓鱼策略，"用户、组和域"部分不可用 (该策略适用于所有) ，并且无法重命名该策略。
+   对于默认的防钓鱼策略，"用户、组和域"部分不可用 (该策略适用于所有用户) ，并且无法重命名该策略。
 
 若要启用或禁用策略或设置策略优先级顺序，请参阅以下几节。
 
@@ -286,7 +287,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
 无法禁用默认的防钓鱼策略。
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&协作策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。 
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到"策略"&中的"电子邮件&协作策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。 
 
 2. 在 **"防钓鱼"** 页上，通过单击名称从列表中选择自定义策略。
 
@@ -302,22 +303,22 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
 ### <a name="set-the-priority-of-custom-anti-phishing-policies"></a>设置自定义防钓鱼策略的优先级
 
-默认情况下，基于反网络钓鱼策略在 (较旧策略中创建的顺序，反网络钓鱼策略的优先级低于较旧策略) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
+默认情况下，基于反网络钓鱼策略在 (中创建策略的顺序，为反网络钓鱼策略提供优先级) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
 要更改策略的优先级，请在策略属性中单击“**提高优先级**”或“**降低优先级**”（不能在 Microsoft 365 Defender 门户中直接修改 **优先级** 编号）。仅当具有多个策略时，更改策略的优先级才有意义。
 
  **注意**：
 
-- 在Microsoft 365 Defender门户中，只能在创建后更改反网络钓鱼策略的优先级。 在 PowerShell 中，您可以在创建反网络钓鱼规则策略时替代默认优先级 (这可能会影响现有规则优先级) 。
+- 在Microsoft 365 Defender门户中，只能在创建后更改反网络钓鱼策略的优先级。 在 PowerShell 中，您可以在创建反网络钓鱼规则策略时覆盖默认优先级 (这可能会影响现有规则集的) 。
 - 反网络钓鱼策略按照其显示顺序进行处理， (策略的优先级值为 0) 。  默认防钓鱼策略的优先级值为 **"** 最低"，你无法更改它。
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&协作策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。 
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到"策略"&中的"电子邮件&协作策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。 
 
 2. 在 **"防钓鱼"** 页上，通过单击名称从列表中选择自定义策略。
 
 3. 在出现的策略详细信息浮出控件顶部，你会看到“**提高优先级**”或“**降低优先级**”，具体取决于当前优先级值和自定义策略数量：
    - 优先级值为 **0** **的策略** 只有"**减少优先级"** 选项可用。
-   - 优先级值最低的 **策略 (例如****，3**) 只有"增加优先级 **"** 选项可用。
+   - 优先级 **值最低的策略** (例如 **，3**) 只有"增加优先级 **"** 选项可用。
    - 如果你有三个或多个策略，则最高优先级值和最低优先级值之间的策略同时具有"增加 **优先级** "和" **减少优先级"** 选项。
 
    单击![“提高优先级”图标。](../../media/m365-cc-sc-increase-icon.png) **“提高优先级”** 或![“降低优先级”图标](../../media/m365-cc-sc-decrease-icon.png) **“降低优先级”** 以更改 **“优先级”** 值。
@@ -326,9 +327,9 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-anti-phishing-policies"></a>使用Microsoft 365 Defender门户删除自定义防钓鱼策略
 
-当您使用 Microsoft 365 Defender门户删除自定义防钓鱼策略时，防钓鱼规则及相应的反网络钓鱼策略都将被删除。 无法删除默认的防钓鱼策略。
+当你使用 Microsoft 365 Defender 门户删除自定义防钓鱼策略时，防钓鱼规则以及相应的防钓鱼策略都将被删除。 无法删除默认的防钓鱼策略。
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&协作策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。 
+1. 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，转到"策略"&中的"电子邮件&协作策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。 
 
 2. 在 **"防钓鱼"** 页上，通过单击策略的名称从列表中选择自定义策略。
 
@@ -356,9 +357,9 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
  **注意**：
 
 - 你可以创建新的防钓鱼规则，并为其分配现有的未关联的反网络钓鱼策略。 反网络钓鱼规则不能与多个防钓鱼策略关联。
-- 可以在 PowerShell 中对新的防钓鱼策略配置以下设置，这些设置在 Microsoft 365 Defender 门户中不可用，除非创建策略：
+- 可以在 PowerShell 中对新的防钓鱼策略配置以下设置，这些设置在 Microsoft 365 Defender 门户中不可用，直到创建策略之后：
   - 在 `$false` **New-AntiPhishRule** cmdlet (上创建禁用的新策略) 。
-  - 在 _\<Number\>_ **New-AntiPhishRule** cmdlet (中) 策略的优先级) 。
+  - 在 _\<Number\>_ **New-AntiPhishRule** cmdlet cmdlet (中) 策略的优先级) 。
 - 在 PowerShell 中新建的防钓鱼策略在 Microsoft 365 Defender门户中不可见，除非将策略分配给防钓鱼规则。
 
 #### <a name="step-1-use-powershell-to-create-an-anti-phish-policy"></a>步骤 1：使用 PowerShell 创建防钓鱼策略
@@ -374,11 +375,11 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Addit
 - 如果策略 (_Enabled_ 参数，则启用该策略，默认值为 `$true`) 。
 - 描述为：研究部门策略。
 - 将欺骗检测的默认操作更改为"隔离"，并使用隔离邮件的默认隔离 [](quarantine-policies.md)策略 (我们使用的不是 _SpoofQuarantineTag_ 参数) 。
-- 针对所有接受的域启用组织域保护，为组织域启用目标域 fabrikam.com。
+- 针对所有接受的域启用组织域保护，为组织启用目标域 fabrikam.com。
 - 将 Quarantine 指定为域模拟检测的操作，并使用隔离邮件的默认隔离策略 ([](quarantine-policies.md)我们使用的不是 _TargetedDomainQuarantineTag_ 参数) 。
-- 指定一 (mfujito@fabrikam.com) 用户的身份进行保护，防止模拟。
-- 将 Quarantine 指定为用户模拟检测的操作，并使用隔离邮件的默认隔离策略 ([](quarantine-policies.md)我们未使用 _TargetedUserQuarantineTag_ 参数) 。
-- 启用邮箱智能 (_EnableMailboxIntelligence_) ，允许邮箱智能保护对邮件 (_EnableMailboxIntelligenceProtection_) 采取操作，将隔离指定为检测到的邮件的操作，并使用隔离邮件的默认隔离策略 (我们未使用 _MailboxIntelligenceQuarantineTag_ 参数) 。 [](quarantine-policies.md)
+- 指定一 (mfujito@fabrikam.com) 用户的身份防止模拟。
+- 将 Quarantine 指定为用户模拟检测的操作，并使用隔离邮件的默认隔离策略 ([](quarantine-policies.md)我们使用的不是 _TargetedUserQuarantineTag_ 参数) 。
+- 启用邮箱智能 (_EnableMailboxIntelligence_) ，允许邮箱智能保护对邮件 (_EnableMailboxIntelligenceProtection_) 采取操作，将隔离指定为检测到的邮件的操作，并使用隔离邮件的默认隔离策略 (我们使用的不是 _MailboxIntelligenceQuarantineTag_ 参数) 。 [](quarantine-policies.md)
 - 启用所有安全提示。
 
 ```powershell
@@ -468,9 +469,9 @@ Get-AntiPhishRule -Identity "Contoso Executives"
 
 除了以下项目外，在 PowerShell 中修改防钓鱼策略时可用的设置与创建策略时相同，如本文前面步骤 [1：使用 PowerShell](#step-1-use-powershell-to-create-an-anti-phish-policy) 创建防钓鱼策略一节中所述。
 
-- _MakeDefault_ 开关将指定策略转换为应用于所有人的默认策略 (，优先级始终为最低，并且只有修改 PowerShell 中的防钓鱼策略时) 才能将其删除。
+- _MakeDefault_ 开关将指定策略转换为应用于所有人的默认策略 (，优先级始终为最低，并且你无法将其删除) 仅在在 PowerShell 中修改防钓鱼策略时可用。
 
-- 如果 **Set-AntiPhishPolicy** cmdlet 没有 Name (，则不能重命名反网络钓鱼) 。  在安全门户中重命名防钓鱼Microsoft 365 Defender，只需重命名防钓鱼 _规则_。
+- 如果 **Set-AntiPhishPolicy** cmdlet 没有 Name 参数 (，则不能重命名防钓鱼) 。 在安全门户中重命名防钓鱼策略Microsoft 365 Defender，只是重命名了反网络钓鱼 _规则_。
 
 要修改防钓鱼策略，请使用以下语法：
 
@@ -499,7 +500,7 @@ Set-AntiPhishRule -Identity "<RuleName>" <Settings>
 
 ### <a name="use-powershell-to-enable-or-disable-anti-phish-rules"></a>使用 PowerShell 启用或禁用防钓鱼规则
 
-在 PowerShell 中启用或禁用反网络钓鱼规则会启用或禁用整个防钓鱼策略 (以及分配的防钓鱼策略策略) 。 无法启用或禁用默认的防钓鱼策略 (它始终应用于所有收件人) 。
+在 PowerShell 中启用或禁用反网络钓鱼规则可启用或禁用整个防钓鱼策略 (反网络钓鱼规则，以及分配的防钓鱼策略) 。 无法启用或禁用默认反网络钓鱼策略 (它始终应用于所有收件人或) 。
 
 若要在 PowerShell 中启用或禁用防钓鱼规则，请使用以下语法：
 
@@ -583,7 +584,7 @@ Remove-AntiPhishRule -Identity "Marketing Department"
 
 若要验证是否成功配置了 Defender for Office 365 中的防钓鱼策略，请执行以下步骤之一：
 
-- 在Microsoft 365 Defender门户中，转到"策略"部分中的&电子邮件&策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。  验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请从列表中选择策略，方法是单击名称并查看出现的飞出内容中的详细信息。
+- 在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>中，转到"策略"部分中的&电子邮件&协作策略&规则威胁策略 \>  \>  \> **""** 防钓鱼"。 验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请从列表中选择策略，方法是单击名称并查看出现的飞出内容中的详细信息。
 
 - 在 Exchange Online PowerShell 中，将 替换为策略或规则的名称，然后运行 \<Name\> 以下命令并验证设置：
 

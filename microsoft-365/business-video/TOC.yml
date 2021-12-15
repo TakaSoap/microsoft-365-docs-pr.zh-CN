@@ -55,8 +55,6 @@
           href: /microsoftteams/guest-experience
         - name: 与客户和员工聊天
           href: 'https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92'
-        - name: 联机会议概述
-          href: overview-online-meetings.md
         - name: 安排有来宾用户参加的会议
           href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
         - name: 以来宾身份加入会议
@@ -81,10 +79,6 @@
       items:
         - name: Bookings 概述
           href: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
-        - name: 通过 Microsoft 列表跟踪业务信息
-          href: track-info-lists.md
-        - name: 计划活动
-          href: plan-event.md
     - name: 管理服务
       items:
         - name: 什么是管理员
@@ -129,17 +123,9 @@
           href: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
         - name: 在手机上设置双重登录
           href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
-        - name: 管理安全附件
-          href: safe-attachments.md
-        - name: 防止数据丢失
-          href: set-up-dlp.md
-        - name: 创建敏感度标签
-          href: create-sensitivity-labels.md
     - name: 支持
       items:
         - name: 查找文档和培训
-          href: find-help-answers.md
-        - name: 员工快速设置
-          href: employee-quick-setup.md
+          href: ../admin/index.yml
     - name: 从 Google Workspace 切换
       href: moveto-microsoft-365/move-from-google-workspace-overview.md

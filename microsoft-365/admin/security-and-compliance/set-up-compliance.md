@@ -23,23 +23,34 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置合规性功能以防止数据丢失，并帮助保护你和客户敏感信息的安全。
-ms.openlocfilehash: 09e9e0fda6969cc89a4eb6b5a106e7db5166e869
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 69960c4f158a30d9d47d749ed1e7eb2d2d74f430
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178091"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521038"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
 你的Microsoft 365 商业高级版附带用于保护你的数据和设备的功能，并且可帮助你保护你和客户敏感信息的安全。
 
-## <a name="set-up-dlp-features"></a>设置 DLP 功能
+## <a name="watch-set-up-dlp-features"></a>观看：设置 DLP 功能
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3TGvL?autoplay=false]
+
+数据丢失防护策略可帮助识别和保护企业敏感信息，如社会保险号或医疗记录。
+
+1. To get started， go to the [admin center](https://admin.microsoft.com)， and select **Setup**.
+1. 向下滚动到 **"设置数据丢失防护"，** 然后选择"**查看**"，然后选择"管理 **"。**
+1. 若要编辑策略，请选择它，选择" **编辑策略**"，然后选择要更改的项。 例如，选择 **"位置** "可更改扫描内容。
+1. 若要创建新策略，请选择"**创建策略"。**
+1. 你可以创建自定义策略或从模板开始。 例如，若要创建 HIPAA 策略，请选择"医疗健康"模板，然后选择"美国健康保险法案 **(HIPAA) "。** 选择 **下一步**。
+1. 查看你的设置， **然后选择创建**。 策略生效后，包含描述的敏感信息的电子邮件将被阻止，并且尝试发送该信息的发件人会看到一条警告消息。
 
 请参阅 [从模板创建 DLP](../../compliance/create-a-dlp-policy-from-a-template.md) 策略，了解如何设置策略以防范个人数据丢失的示例。 
   
-DLP 附带许多适用于许多不同区域设置的现成策略模板。 例如，澳大利亚财务数据、加拿大个人信息法案、美国财务数据等。 有关 [完整列表，请参阅 DLP](../../compliance/what-the-dlp-policy-templates-include.md) 策略模板包含的内容。 所有这些模板都可以启用，类似于 PII 模板示例。 
-  
+DLP 附带许多适用于许多不同区域设置的现成策略模板。 例如，澳大利亚财务数据、加拿大个人信息法案、美国财务数据等。 有关 [完整列表，请参阅 DLP](../../compliance/what-the-dlp-policy-templates-include.md) 策略模板包含的内容。 所有这些模板都可以启用，类似于 PII 模板示例。
+ 
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>设置电子邮件保留时间Exchange Online Archiving
 
  **Exchange Online Archiving** 许可证功能通过保留电子数据展示的电子邮件内容来帮助维护合规性和法规标准。 它还有助于在有诉讼时降低风险，并提供一种在安全漏洞或需要恢复已删除项目时恢复数据的方法。 您可以使用诉讼保留保留用户的所有内容，或使用保留策略自定义要保留的内容。
@@ -50,7 +61,7 @@ DLP 附带许多适用于许多不同区域设置的现成策略模板。 例如
     
 1. 在左侧导航中，转到"用户 \> **""活动用户"。**
     
-2. 选择要将其邮箱置于诉讼保留状态的用户。 在用户窗格中，展开"**邮件设置"，****在"更多** 设置"旁边，选择"编辑 **Exchange属性"。**
+2. 选择要将其邮箱置于诉讼保留状态的用户。 在用户窗格中，展开"**邮件设置"，****在"更多** 设置"旁边，选择"编辑Exchange **属性"。**
     
 3. On the mailbox page for the user， choose ** mailbox features ** on the left nav， and then choose the **Enable** link under **Litigation hold**.
     
@@ -58,19 +69,28 @@ DLP 附带许多适用于许多不同区域设置的现成策略模板。 例如
     
 **保留：** 例如，您可以启用自定义保留策略以保留特定时间，或在保留期结束时永久删除内容。 若要了解更多信息，请参阅 [保留策略概述](../../compliance/retention.md)。
 
-## <a name="set-up-sensitivity-labels"></a>设置敏感度标签
+## <a name="watch-set-up-sensitivity-labels"></a>观看：设置敏感度标签
 
-敏感度标签随 Azure 信息保护 (AIP) 计划 1 一起提供，可帮助你通过应用标签对文档和电子邮件进行分类和选择性保护。 标签可自动由定义规则和条件的管理员应用，由用户手动应用，也可结合使用为用户提供建议。
+敏感度标签随 Azure 信息保护 (AIP) 计划 1 提供，可帮助你通过应用标签对文档和电子邮件进行分类和选择性保护。 标签可自动由定义规则和条件的管理员应用，由用户手动应用，也可结合使用为用户提供建议。
 
-若要设置敏感度标签，请 [观看创建和管理敏感度标签](../../business-video/create-sensitivity-labels.md) 视频。
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3VRGT?autoplay=false]
 
+1. 在管理 [中心中](https://admin.microsoft.com)，选择 **合规性** 管理中心。
+1. 选择 **"分类**"，然后选择 **"敏感度标签"。**
+1. 选择 **"创建标签"，** 当出现警告时，选择"**是"。**
+1. 查看你的设置， **然后选择创建**。 已创建标签。 对任何其他需要的标签重复此过程。
+1. 默认情况下，标签按此Office显示在应用中：**机密**、**内部** 和 **公用**。 若要更改顺序，请针对每个标签选择三个点 (执行) 操作，然后向上或向下移动标签。 通常，权限按从低到高的权限级别列出。
+1. 查看设置，然后选择"发布 **"。**
 
+若要使标签正常工作，每个用户都需要下载 Azure 信息保护统一标签客户端。 在 Web 上 **AzinfoProtection_UL.exe，** 然后从 Microsoft 下载中心下载它，然后在用户计算机上运行它。
+
+下次打开 Word Office 应用时，你将看到已创建的敏感度标签。 若要更改或应用标签，请选择"敏感度"，然后选择标签。
 
 ### <a name="install-the-azure-information-protection-client-manually"></a>手动安装 Azure 信息保护客户端
 
 若要手动安装 AIP 客户端，请执行以下操作：
 
-1. 从 **AzinfoProtection_UL.exe**[下载中心下载文件](https://www.microsoft.com/download/details.aspx?id=53018)。
+1. 从 **microsoftAzinfoProtection_UL.exe**[下载中心 下载文件](https://www.microsoft.com/download/details.aspx?id=53018)。
  
 2. 您可以通过查看 Word 文档并确保"开始"选项卡上提供"敏感度"选项来验证安装 **是否** 有效。
 <br/>![Word 文档中的"保护"选项卡下拉列表。](../../media/word-sensitivity.png)

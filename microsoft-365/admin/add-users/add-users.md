@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 description: 每个团队成员都需要用户帐户，然后才能登录和访问 Microsoft 365 商业版。了解如何添加用户和分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: dad5c6693489fd62eb77df46de6d538da93da515
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 161b1cec937197dc3cc81b34027b6574676f7d95
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370640"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520772"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同时添加用户和分配许可证
 
@@ -105,7 +105,7 @@ ms.locfileid: "61370640"
 
 ## <a name="next-steps"></a>后续步骤
 
-添加用户后，你收到一封来自 Microsoft 的电子邮件通知。 该电子邮件包含对应人员的用户 ID 和密码，使其可以登录到 Microsoft 365。 使用常规流程告知新密码。 与新用户共享 [员工快速入门指南](../../business-video/employee-quick-setup.md)，以设置一些内容，例如怎样从 [在电脑或 Mac 上下载和安装 Office 应用](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)，以及如何 [在移动设备上设置 Office 应用和电子邮件](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)。
+添加用户后，你收到一封来自 Microsoft 的电子邮件通知。 该电子邮件包含对应人员的用户 ID 和密码，使其可以登录到 Microsoft 365。 使用常规流程告知新密码。 与新用户共享 [员工快速入门指南](../setup/employee-quick-setup.md)，以设置一些内容，例如怎样从 [在电脑或 Mac 上下载和安装 Office 应用](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)，以及如何 [在移动设备上设置 Office 应用和电子邮件](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)。
 
 ## <a name="related-content"></a>相关内容
 

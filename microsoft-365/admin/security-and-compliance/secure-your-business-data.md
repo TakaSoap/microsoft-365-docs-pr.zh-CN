@@ -1,5 +1,5 @@
 ---
-title: 保护业务计划的 Microsoft 365的十大方法
+title: 保护业务Microsoft 365的十大方法
 f1.keywords:
 - CSH
 ms.author: sharik
@@ -27,14 +27,14 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 如何保护业务电子邮件和数据免受网络威胁（包括勒索软件、网络钓鱼和恶意附件）的攻击。
-ms.openlocfilehash: e0f2595bc6717fde3dc9d0d31e285ec2ae0a7767
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 9fbb327ff38d2de46f70c9aaa33b5217ed3c1c02
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421182"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521062"
 ---
-# <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护业务计划的 Microsoft 365的十大方法
+# <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护业务Microsoft 365的十大方法
 
 如果你是使用 Microsoft 业务计划之一的中小型组织，并且你的组织类型被网络犯罪和黑客攻击，请使用本文中的指导提高组织的安全性。 本指南可帮助你的组织实现《时分学校网络安全宣传活动手册》中所述 [的目标](https://go.microsoft.com/fwlink/p/?linkid=2015598)。
 
@@ -63,13 +63,13 @@ Microsoft 建议你完成下表中列出的适用于你的服务计划的任务�
 
 如有 Microsoft 商业高级版，设置安全性并开始安全协作的最快方法是遵循此库中的指南：[面向小型企业和活动的 Microsoft 365](../../campaigns/index.md)。 本指南是与 Microsoft 防御百年团队合作开发的，可保护所有小型企业客户免受复杂黑客发起的网络威胁。
 
-在开始之前，请查看Microsoft 365[门户](../../security/defender/microsoft-secure-score.md)中的安全Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">分数</a>。 在集中式仪表板中，你可以监视和提高Microsoft 365标识、数据、应用、设备和基础结构的安全性。 您将获得配置建议安全功能、执行与安全相关的任务 (如查看报告) ，或者使用第三方应用程序或软件解决建议。 通过进一步深入了解一组更广泛的 Microsoft 产品和服务，你可以确信地报告组织的安全运行状况。
+在开始之前，请查看Microsoft 365[门户](../../security/defender/microsoft-secure-score.md)中的安全Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">分数</a>。 在集中式仪表板中，你可以监视和提高Microsoft 365标识、数据、应用、设备和基础结构的安全性。 你可以获得配置建议安全功能、执行与安全相关的任务 (如查看报告) ，或者使用第三方应用程序或软件解决建议。 通过进一步深入了解一组更广泛的 Microsoft 产品和服务，你可以确信地报告组织的安全运行状况。
 
 ![Microsoft 安全分数的屏幕截图。](../../media/secure-score.png)
 
 ## <a name="1-set-up-multi-factor-authentication"></a>1：设置多重身份验证
 
-使用多重身份验证是提高组织安全性的最简单且最有效的方法之一。 它比这听起来容易 - 登录时，多重身份验证意味着你将从手机键入一个代码，以访问Microsoft 365。 如果黑客知道您的密码，这可以防止黑客接管。 多重身份验证也称为双重验证。 个人可以轻松将 2 步验证添加到大多数帐户，例如，添加到其 Google 或 Microsoft 帐户。 下面将分两步 [验证添加到你的个人 Microsoft 帐户](https://go.microsoft.com/fwlink/p/?linkid=2016403)。
+使用多重身份验证是提高组织安全性的最简单且最有效的方法之一。 它比这听起来容易 - 当你登录时，多重身份验证意味着你将从手机键入一个代码，以访问Microsoft 365。 如果黑客知道您的密码，这可以防止黑客接管。 多重身份验证也称为双重验证。 个人可以轻松将 2 步验证添加到大多数帐户，例如，添加到其 Google 或 Microsoft 帐户。 下面将分两步 [验证添加到你的个人 Microsoft 帐户](https://go.microsoft.com/fwlink/p/?linkid=2016403)。
 
 对于使用 Microsoft 365 的企业，添加要求用户使用多重身份验证登录的设置。 进行此更改时，用户下次登录时将提示他们设置手机进行双重身份验证。
 若要观看有关如何设置 MFA 以及用户如何完成设置的培训视频，请参阅 [设置 MFA](set-up-multi-factor-authentication.md) 和 [用户设置](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)。
@@ -88,7 +88,7 @@ Microsoft 建议你完成下表中列出的适用于你的服务计划的任务�
 4. 在页面底部，选择“**管理安全性默认值**”。
 5. 选择“**是**”启用安全性默认值，或选择“**否**”禁用安全性默认值，然后选择“**保存**”。
 
-为你的组织设置多重身份验证后，你的用户将需要在其设备上设置双重验证。 有关详细信息，请参阅设置[两步验证以验证Microsoft 365。](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+为你的组织设置多重身份验证后，你的用户将需要在其设备上设置双重验证。 有关详细信息，请参阅设置两步验证[Microsoft 365。](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
 
 有关完整详细信息和完整建议，请参阅为用户设置 [多重身份验证](set-up-multi-factor-authentication.md)。
 
@@ -112,7 +112,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 ## <a name="3-use-dedicated-admin-accounts"></a>3：使用专用管理员帐户
 
-用于管理您的管理帐户Microsoft 365提升的权限。 这些是黑客和网络黑客的有价值目标。 仅将管理员帐户用于管理。 管理员应具有单独的用户帐户，用于常规的非管理用途，并且仅在必要时使用其管理帐户来完成与其工作职能相关联的任务。 其他建议：
+用于管理环境的管理帐户Microsoft 365提升的权限。 这些是黑客和网络黑客的有价值目标。 仅将管理员帐户用于管理。 管理员应具有单独的用户帐户，用于常规的非管理用途，并且仅在必要时使用其管理帐户来完成与其工作职能相关联的任务。 其他建议：
 
 - 请确保管理员帐户还针对多重身份验证进行设置。
 
@@ -144,9 +144,9 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 您可以通过创建一个或多个邮件流规则来阻止通常用于勒索软件的文件扩展名，或警告通过电子邮件接收这些附件的用户，从而防范勒索软件。 一个很好的起点是创建两个规则：
 
-- 在打开包含宏Office文件附件之前警告用户。 勒索软件可以隐藏在宏内，因此我们将警告用户不要从他们不知道的人打开这些文件。
+- 在打开包含Office的文件附件之前警告用户。 勒索软件可以隐藏在宏内，因此我们将警告用户不要从他们不知道的人打开这些文件。
 
-- 阻止可能包含勒索软件或其他恶意代码的文件类型。 我们将从下表中列出的可执行文件 (一个) 。 如果组织使用这些可执行类型中的任意一种，并且希望通过电子邮件发送这些类型，请将其添加到上一规则中 (警告用户) 。
+- 阻止可能包含勒索软件或其他恶意代码的文件类型。 我们将从下表中列出的可执行文件 (一个公用) 。 如果组织使用这些可执行类型中的任意一种，并且希望通过电子邮件发送这些类型，请将其添加到上一规则中 (警告用户) 。
 
 若要创建邮件传输规则，请观看简短的 [培训视频](increase-threat-protection.md#protect-against-ransomware)，或完成以下步骤：
 
@@ -162,7 +162,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 6. 选择“**保存**”。
     
-| Setting | 在打开文件附件之前Office警告 | 阻止可能包含勒索软件或其他恶意代码的文件类型 |
+| Setting | 在打开文件附件之前警告Office附件 | 阻止可能包含勒索软件或其他恶意代码的文件类型 |
 |:-----|:-----|:-----|
 |名称  <br/> |反勒索软件规则：警告用户  <br/> |反勒索软件规则：阻止文件类型  <br/> |
 |在 中应用此规则。 . .  <br/> |任何附件 。 . . 文件扩展名匹配 。 . .  <br/> |任何附件 。 . . 文件扩展名匹配 。 . .  <br/> |
@@ -210,7 +210,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 Office邮件加密包含在Microsoft 365。 已设置。 使用Office加密，组织可以在组织内外人员之间发送和接收加密的电子邮件。 Office 365 邮件加密可与 Outlook.com、Yahoo!、Gmail 和其他电子邮件服务搭配使用。 电子邮件加密有助于确保只有预期收件人才能查看邮件内容。
 
-Office邮件加密在发送邮件时提供两种保护选项：
+Office邮件加密提供了两种邮件保护选项：
 
 - 不要转发
 
@@ -276,7 +276,7 @@ Office邮件加密在发送邮件时提供两种保护选项：
 
 人们定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 通过查看电子邮件来判断附件是安全还是恶意并不总是那么容易。 Microsoft Defender for Office 365包括保险箱附件保护，但此保护默认未打开。 我们建议您创建一个新规则以开始使用此保护。 此保护扩展到 SharePoint、OneDrive 和 Microsoft Teams 中的文件。
 
-若要创建保险箱策略，请观看简短的[培训视频](../../business-video/safe-attachments.md)，或完成以下步骤：
+若要创建保险箱策略，请观看简短的[培训视频](increase-threat-protection.md)，或完成以下步骤：
 
 1. 转到 <https://protection.office.com> ，然后使用管理员帐户登录。
 
@@ -341,7 +341,7 @@ Office邮件加密在发送邮件时提供两种保护选项：
 
 |设置或选项|推荐设置|
 |---|---|
-|名称|保险箱域中所有收件人的链接策略|
+|Name|保险箱域中所有收件人的链接策略|
 |为邮件中的未知潜在恶意 URL 选择操作|选择打开 - 当用户单击链接时，URL 将被重写，并针对 **已知恶意链接列表进行检查**。|
 |对指向文件的可疑链接应用实时 URL 扫描|选中此框。|
 |应用于|收件人域为 。 . . 选择你的域。|

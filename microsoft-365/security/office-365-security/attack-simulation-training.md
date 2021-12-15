@@ -11,20 +11,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: admindeeplinkDEFENDER
-description: 管理员可以了解如何使用 Microsoft Defender for Office 365 计划 2 中的攻击模拟培训其用户进行网络钓鱼防护。
+description: 管理员可以了解如何使用 Microsoft Defender for Office 365 计划 2 中的攻击模拟培训用户进行网络钓鱼防护。
 ms.technology: mdo
-ms.openlocfilehash: 59a761a9f6925816946cb655e71f5e418d6ca8de
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 4b67ab279a1d125c03df81941388626369d2cb8b
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111371"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521000"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>在 Defender for Office 365
 
 **适用于 Microsoft** [Defender for Office 365计划 2](defender-for-office-365.md)
 
-Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培训允许你在组织中运行良好的网络攻击模拟。 这些模拟将测试你的安全策略和做法，并培训你的员工提高认知度并减少他们对攻击的敏感性。 本文将指导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
+通过 Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培训，你可以在你的组织中运行恶意网络攻击模拟。 这些模拟将测试你的安全策略和做法，并培训你的员工提高认知度并减少他们对攻击的敏感性。 本文将指导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
 
 有关攻击模拟培训的入门信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
@@ -45,7 +45,7 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
 
 ## <a name="select-a-social-engineering-technique"></a>选择社交工程技术
 
-在" **选择技术** "页上，选择一种可用的社交工程技术，该技术由 [MITRE ATT&CK®设计](https://attack.mitre.org/techniques/enterprise/)。 不同的有效负载可用于不同的技术。 可以使用以下社交工程技术：
+在"**选择技术**"页上，选择一种可用的社交工程技术，该技术由 [MITRE ATT&CK®设计。](https://attack.mitre.org/techniques/enterprise/) 不同的有效负载可用于不同的技术。 可以使用以下社交工程技术：
 
 - **凭据获取**：尝试通过让用户访问具有输入框的已知网站来提交用户名和密码来收集凭据。
 - **恶意软件附件**：向邮件添加恶意附件。 当用户打开附件时，将运行任意代码，以帮助攻击者破坏目标设备。
@@ -77,14 +77,14 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
 - **名称**
 - **语言**：有效负载内容的语言。 Microsoft 的有效负载目录 (全局) 提供 10 多种语言（也可以筛选）的有效负载。
 - **单击率**：单击此有效负载的人。
-- **预测的泄露率**：整个 Microsoft 365 负载的历史数据，用于预测受此负载威胁的百分比。
+- **预测入侵率**：预测此负载Microsoft 365威胁的负载的历史数据。
 - **模拟启动** 计算此有效负载在其他模拟中使用的次数。
 
 在" ![ 搜索"图标中。](../../media/m365-cc-sc-search-icon.png) **搜索** 框，可以键入部分有效负载名称，然后按 Enter 筛选结果。
 
 如果单击 **"筛选器"，** 则以下筛选器可用：
 
-- **复杂性**：根据有效负载中指示可能的攻击和拼写错误 (紧急性等的指示器数量计算) 。 更多指示器更易于识别为攻击，并指示复杂度更低。 可用值有：
+- **复杂性**：根据有效负载中指示可能的攻击 (拼写错误、紧急性等的指示器) 。 更多指示器更易于识别为攻击，并指示复杂度更低。 可用值有：
   - **低**
   - **中**
   - **高**
@@ -92,7 +92,7 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
   - **全局** (内置) 
   - **租户** (自定义) 
   - **全部**
-- 语言 ：可用值为：中文 **(简** 体) 、中文 (**繁体) 、****英语**、**法语**、**德语**、**意大利语**、**日语**、**朝鲜** 语、**葡萄牙语、****俄语**、**西班牙语** 和 **荷兰语**。
+- 语言 ：可用值为：中文 (简体 **) 、** 中文 (**繁体) 、****英语**、**法语**、**德语**、**意大利语**、**日语**、**朝鲜** 语、**葡萄牙语、****俄语**、**西班牙语** 和 **荷兰语**。
 - **添加 (标记)**
 - **按主题** 筛选：可用值为：**帐户** 激活、**帐户** 验证、**计费**、**清理邮件**、已接收 **文档**、**费用**、**传真**、财务报告、**传入** 邮件、**发票**、已接收项目、**登录通知**、**已接收邮件**、**密码**、**付款**、**工资** 单、个性化 **优惠****、隔离远程工作**，**审阅邮件**，**安全更新**，**服务** 挂起 **，** 需要签名 ，**升级邮箱存储 验证邮箱**、**语音邮件** 和其他 **。**
 - 按品牌筛选：可用值为 **：American Express、Capital** One、DHL、DocuSign、Dropbox、Facebook、First      American、Microsoft、Netflix、Scotiabank、SendGrid、Stewart      **Title、Tesco、Wells** Fargo、Syrinx **Cloud** **和其他**。
@@ -109,7 +109,7 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
 - " **概述** "选项卡包含有关有效负载的示例和其他详细信息。
 - 模拟 **启动选项卡** 包含 **模拟名称**、单击 **率****、泄露率****和操作**。
 
-![负载详细信息在 Microsoft 365 Defender 门户的攻击模拟培训中。](../../media/attack-sim-training-simulations-select-payload-details.png)
+![有效负载详细信息在 Microsoft 365 Defender 门户的攻击模拟培训中。](../../media/attack-sim-training-simulations-select-payload-details.png)
 
 如果通过单击名称从列表中选择有效负载，则会显示 ![ "发送测试有效负载"图标。](../../media/m365-cc-sc-create-icon.png) **"发送测试** "按钮显示在主页上，你可以向自己发送有效负载电子邮件的副本 (当前登录的用户) 进行检查。
 
@@ -143,11 +143,11 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
         - 选择 **所有标题**
         - 选择现有的"标题"值。
 
-      ![用户门户中攻击模拟培训中的目标用户Microsoft 365 Defender筛选。](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      ![用户门户中攻击模拟培训中的"目标用户"页面上Microsoft 365 Defender筛选。](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
 
       确定条件后，受影响的用户将显示在出现的"用户列表"部分，您可以在其中选择部分或所有发现的收件人。
 
-      完成后，单击"应用 x **(x) "，** 然后单击"添加 x **用户"。**
+      完成后，单击"应用 x **(x) "，** 然后单击"**添加 x 用户"。**
 
   返回到主 **"目标用户"** 页面，您可以使用"搜索 ![ "图标。](../../media/m365-cc-sc-search-icon.png) **搜索** 框以查找受影响的用户。 还可以单击"删除 ![ 用户"图标。](../../media/m365-cc-sc-search-icon.png) **删除** 以删除特定用户。
 
@@ -231,17 +231,27 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
 
 在 **登录页面** 页面上，配置用户在模拟中打开有效负载时将访问的网页。
 
+Microsoft 提供的登陆页面有 12 种语言版本：中文 (简体) 、中文 (繁体) 、英语、法语、德语、意大利语、日语、朝鲜语、葡萄牙语、俄语、西班牙语和荷兰语。
+
 - **选择登陆页面首选项**：可用值为：
   - **使用 Microsoft 默认登陆** 页面：这是要配置的以下关联选项的默认值：
     - **选择登陆页面布局**：选择一个可用的模板。
-    - **添加徽标**：单击 **"浏览** "查找并选择.png、.jpeg 或 .gif 文件。
-    - **向电子邮件添加** 有效负载指示器：选择此设置可帮助用户了解如何识别网络钓鱼邮件。
+    - **添加徽标**：单击 **"浏览** "查找并选择.png、.jpeg 或 .gif 文件。 若要删除徽标，请单击"删除 **"。**
+    - **向电子邮件添加** 有效负载指示器：如果你之前在"选择技术"页上选择了"恶意软件附件"或"链接到恶意软件"，[则此设置](#select-a-social-engineering-technique)不可用。
+
+      选择 **"将有效负载指示器添加到电子邮件** "可帮助用户了解如何识别网络钓鱼邮件。
 
     可以通过单击页面底部的"打开预览面板"按钮来预览结果。
 
-  - **使用自定义 URL：** 如果选择此值，则需要在出现的"输入自定义登陆 **页面 URL"** 框中添加 URL。 页面上没有其他可用选项。
+  - **使用自定义 URL：** 如果你之前在"选择技术"页上选择了"恶意软件附件"或"链接到恶意软件"，[则此设置](#select-a-social-engineering-technique)不可用。
+
+    如果选择" **使用自定义 URL"，** 则需要在出现的"输入自定义登陆 **页面 URL"** 框中添加 URL。 页面上没有其他可用选项。
+
   - **创建你自己的登陆页面**：此值具有以下要配置的关联选项：
-    - **向电子邮件添加** 有效负载指示器：选择此设置可帮助用户了解如何识别网络钓鱼邮件。
+    - **向电子邮件添加** 有效负载指示器：如果你之前在"选择技术"页上选择了"恶意软件附件"或"链接到恶意软件"，[则此设置](#select-a-social-engineering-technique)不可用。
+
+      选择 **"将有效负载指示器添加到电子邮件** "可帮助用户了解如何识别网络钓鱼邮件。
+
     - 页面内容：有两个选项卡可用：
       - **文本**：可以使用格式文本编辑器创建登陆页面。 除了典型的字体和格式设置之外，以下设置也可用：
         - **动态标记**：从以下标记中选择：
@@ -280,7 +290,7 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
 
 在 **"查看模拟** "页上，你可以查看模拟的详细信息。
 
-单击" ![ 发送测试"图标。](../../media/m365-cc-sc-send-icon.png) **发送测试** 按钮，向自己发送有效负载电子邮件 (当前登录的用户) 检查。
+单击" ![ 发送测试"图标。](../../media/m365-cc-sc-send-icon.png) **发送测试** 按钮，向自己发送有效负载电子邮件 (当前登录的用户) 进行检查。
 
 可以在每个部分中选择“**编辑**”来修改该部分中的设置。 或者，可以单击“**返回**”或选择向导中的特定页面。
 
