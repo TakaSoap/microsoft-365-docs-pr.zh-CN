@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: 049181657dd74639fb4c4a22e371015830baf19a
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 81a5219826fc1f8e4bc43a54d0687306738a57da
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282977"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520928"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -158,23 +158,30 @@ ms.locfileid: "61282977"
 
 1. 使用具有 [相应 Exchange Online 管理员权限](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet) 的账户 [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 使用带 *-Filter* 参数的 [Get-Recipient](/powershell/module/exchange/get-recipient) 或 [Get-Mailbox](/powershell/module/exchange/get-mailbox) 和 [OPATH 查询](/powershell/exchange/filter-properties) 来获取用大括号括起来的自适应范围（`{`，`}`）。 如果特性值包含空格，则使用双引号或单引号将这些值括起来。 
+2. 使用带 *-Filter* 参数的 [Get-Recipient](/powershell/module/exchange/get-recipient) 或 [Get-Mailbox](/powershell/module/exchange/get-mailbox) 和 [OPATH 查询](/powershell/exchange/filter-properties) 来获取用大括号括起来的自适应范围（`{`，`}`）。 如果属性值为字符串，则使用双引号或单引号将这些值括起来。  
 
-    如果正在验证 **用户** 范围，则在命令中包含 `-RecipientTypeDetails UserMailbox`；否则对于 **Microsoft 365 组范围**，则应包含 `-RecipientTypeDetails GroupMailbox`。
+    可以通过确定为查询所选的 [OPATH 属性](/powershell/exchange/filter-properties) 支持哪个 cmdlet 来决定是使用 `Get-Mailbox` 还是 `Get-Recipient` 来进行验证。
 
-    > [!TIP]
-    > 可以根据确定是使用 `Get-Mailbox` 还是 `Get-Recipient` 来进行验证，具体取决于你选择的 [OPATH 属性](/powershell/exchange/filter-properties) 在查询支持中使用了哪些 cmdlet。
+    > [!IMPORTANT]
+    > `Get-Mailbox` 不支持 *MailUser* 收件人类型，因此，`Get-Recipient` 必须用于验证在混合环境中包含本地邮箱的查询。
+
+    要验证 **用户** 范围，请使用以下任一项：
+    - `Get-Mailbox`（具有`-RecipientTypeDetails UserMailbox`）或
+    - 具有 `-RecipientTypeDetails UserMailbox,MailUser` 的 `Get-Recipient`
+    
+    要验证 **Microsoft 365 组** 范围，请使用：
+    - `Get-Mailbox` 或具有 `-RecipientTypeDetails GroupMailbox` 的 `Get-Recipient`
 
     例如，如果要验证 **用户** 范围，则可以使用：
     
     ````PowerShell
-    Get-Recipient -RecipientTypeDetails UserMailbox -Filter {Department -eq "Sales and Marketing"} -ResultSize Unlimited
+    Get-Recipient -RecipientTypeDetails UserMailbox,MailUser -Filter {Department -eq "Marketing"} -ResultSize Unlimited
     ````
     
     要验证 **Microsoft 365 组** 范围，则可以使用：
     
     ```PowerShell
-    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Sales and Marketing"} -ResultSize Unlimited
+    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
     ```
 
 3. 验证输出是否与自适应作用域的预期用户或组匹配。 如果不匹配，请与 Azure AD 或 Exchange 的相关管理员共同检查查询和值。

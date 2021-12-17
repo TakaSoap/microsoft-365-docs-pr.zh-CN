@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: 了解Microsoft 365企业版如何帮助你完成一般数据保护条例 （GDPR） 过程。
-ms.openlocfilehash: 50ee497d57438994a4a5f839ff5a2afb103cd59b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f84c9e93c92c40ce40cc2835100ef2786a23a69d
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174023"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520868"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>简化的 GDPR: 适用于小型企业的指南
 
@@ -133,7 +133,7 @@ GDPR 建立数据主体权限，这意味着，对于其个人数据，客户、
 如果选择将个人数据存储在云中（例如通过Microsoft 365），则可以使用安全功能，例如，可帮助你管理文件和文件夹的权限、用于保存文件的集中式安全位置（OneDrive 或 SharePoint 文档库），以及在发送或检索文件时进行数据加密。 
 
 #### <a name="microsoft-365-features-that-can-help"></a>Microsoft 365可提供帮助的功能
-可以使用 [Microsoft 数据丢失防护 （DLP）](/microsoft-365/business-video/set-up-dlp) 来帮助保护企业的敏感信息。 可以[设置使用 [GDPR 模板](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr)的 DLP 策略](/microsoft-365/compliance/create-a-dlp-policy-from-a-template)。
+可以使用 [设置 DLP 功能](set-up-compliance.md#watch-set-up-dlp-features) 来帮助保护企业的敏感信息。 可以[设置使用 [GDPR 模板](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr)的 DLP 策略](/microsoft-365/compliance/create-a-dlp-policy-from-a-template)。
 
 ### <a name="step-5-keep-documentation-on-your-data-processing-activities"></a>步骤 5：保留有关数据处理活动的文档
 

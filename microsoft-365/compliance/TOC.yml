@@ -333,6 +333,8 @@
           items:
             - name: 数据丢失预防计划
               href: dlp-overview-plan-for-dlp.md
+            - name: 设计 DLP 策略
+              href: dlp-policy-design.md
             - name: 数据丢失防护策略参考
               href: dlp-policy-reference.md
         - name: 开始使用 DLP
@@ -541,8 +543,6 @@
               href: archive-rogers-network-archiver-data.md
             - name: 信号存档程序
               href: archive-signal-archiver-data.md
-            - name: StarHub 网络存档程序（预览版）
-              href: archive-starhub-network-archiver-data.md
             - name: Telegram 存档程序
               href: archive-telegram-archiver-data.md
             - name: TELUS 网络

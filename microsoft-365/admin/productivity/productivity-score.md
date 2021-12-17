@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 生产力分数如何反映人员和技术体验度量，并与类似规模的组织进行比较。
-ms.openlocfilehash: fabfc66a6624cac16675d1276758b4ef16d35392
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: be8715942639b3e00fc3a8d49782684bbef99fbf
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372860"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530843"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生产力分数 
 
@@ -163,4 +163,4 @@ Microsoft 致力于保护个人隐私。此 [隐私文件](privacy.md) 解释了
 
 [使用报告监视 Microsoft 365 活动](../../admin/activity-reports/activity-reports.md)（文章）\
 [启用 Microsoft 365 使用情况分析](../../admin/usage-analytics/enable-usage-analytics.md)（文章）\
-[Microsoft 365 管理中心概述]（[Microsoft 365 管理中心](../admin-overview/admin-center-overview.md) 概述（视频）
+[Microsoft 365 管理中心概述]（Microsoft 365 管理中心概述）（../admin-overview/admin-center-overview.md）（视频）

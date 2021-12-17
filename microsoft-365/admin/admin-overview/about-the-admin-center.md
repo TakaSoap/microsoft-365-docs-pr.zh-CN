@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用管理员权限登录到 Microsoft 365 管理中心在云中设置组织，并管理用户和管理订阅。
-ms.openlocfilehash: 07881fd0307653e0633ed6e5ea1e38c3de8f58f9
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 487d7df940dfefe0819f98f770d51c901326c365
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370208"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530459"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 
@@ -56,7 +56,7 @@ ms.locfileid: "61370208"
 
 ## <a name="admin-center-features-and-settings"></a>管理中心功能和设置
 
-可在管理中心的左侧导航中找到以下功能和设置。 在 [管理员帮助]([Microsoft 365 管理中心概述](admin-center-overview.md)中了解有关管理员任务的详细信息。
+可在管理中心的左侧导航中找到以下功能和设置。 在[管理员帮助]（Microsoft 365 管理中心概述]（admin-center-overview.md）中了解有关管理员任务的详细信息。
 
 <br>
 
