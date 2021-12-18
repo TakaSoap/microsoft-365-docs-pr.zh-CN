@@ -24,18 +24,18 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 摘要：Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政府社区云 (GCC)）的客户，应该可以访问以下终结点。
 hideEdit: true
-ms.openlocfilehash: d223ec20be108cdcfa53a2357e95cccdf6474e69
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c4bde6517bc2dfe22d8e52161ee1f47917ee0fb3
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700874"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566707"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 和 IP 地址范围
 
 Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政府社区云 (GCC)）的客户，应该可以访问以下终结点。
   
-*Office 365 全球 （+GCC）* \| [由 21 Vianet 运营的 Office 365](urls-and-ip-address-ranges-21vianet.md) \| [Office 365 Germany](microsoft-365-germany-endpoints.md) \| [Office 365 美国政府版 DoD](microsoft-365-u-s-government-dod-endpoints.md) \| [Office 365 美国政府版GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) \|
+*Office 365 全球版 (+GCC)* \| [由 21 Vianet 运营的 Office 365](urls-and-ip-address-ranges-21vianet.md) \| [Office 365 美国政府 DoD](microsoft-365-u-s-government-dod-endpoints.md) \| [Office 365 美国政府 GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) \|
 
 |备注|下载|用途|
 |---|---|---|
@@ -84,8 +84,6 @@ Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政
 [Microsoft Azure IP 范围和服务标签 – 公共云](https://www.microsoft.com/download/details.aspx?id=56519)
 
 [Microsoft Azure IP 范围和服务标签 - 美国政府云](https://www.microsoft.com/download/details.aspx?id=57063)
-
-[Microsoft Azure IP 范围和服务标签 – 德国云](https://www.microsoft.com/download/details.aspx?id=57064)
 
 [Microsoft Azure IP 范围和服务标签 – 中国云](https://www.microsoft.com/download/details.aspx?id=57062)
   
