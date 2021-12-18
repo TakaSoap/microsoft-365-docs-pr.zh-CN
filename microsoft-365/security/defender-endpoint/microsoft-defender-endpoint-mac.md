@@ -17,19 +17,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bfd0b5e44eef9713d8a5cdda67948da9ef8a3709
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: f6982d6b0140b02aa677d78120fbd2fddee47f45
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300750"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560344"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -37,7 +38,7 @@ ms.locfileid: "61300750"
 本主题介绍如何在 Mac 上安装、配置、更新和使用 Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Mac 上的 Microsoft Defender for Endpoint 旁边运行其他第三方终结点保护产品可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Mac 上的 Defender for Endpoint EDR[功能](mac-preferences.md#enable--disable-passive-mode)。
+> 在 Mac 上的 Microsoft Defender for Endpoint 旁边运行其他第三方终结点保护产品可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Mac 上的 Defender for Endpoint EDR[功能。](mac-preferences.md#enable--disable-passive-mode)
 
 ## <a name="whats-new-in-the-latest-release"></a>最新版本的新增功能
 
@@ -75,9 +76,9 @@ ms.locfileid: "61300750"
 支持 macOS 的三个最新主要版本。
 
 > [!IMPORTANT]
-> 在 macOS 11 (大 Sur) 及以上，Microsoft Defender for Endpoint 需要其他配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署 [macOS Catalina](mac-sysext-policies.md)的新配置文件和较新版本的 macOS 中列出的其他配置文件。
+> 在 macOS 11 (及) ，Microsoft Defender for Endpoint 需要额外的配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署 [macOS Catalina](mac-sysext-policies.md)的新配置文件和较新版本的 macOS 中列出的其他配置文件。
 
-- 12 (Rey) ， 11 (Big Sur) ， 10.15 (加泰罗尼亚语) ， 10.14 (mojave) 
+- 12 (Rey) ，11 (Big Sur) ，10.15 (加泰罗尼亚) ，10.14 (Mojave) 
 - 磁盘空间：1GB
 
 不支持 macOS 的 Beta 版本。
@@ -103,7 +104,7 @@ Mac 上的 Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可�
 
 ### <a name="configuring-exclusions"></a>配置排除项
 
-添加排除项时，请注意适用于 Microsoft Defender 防病毒 的[常见Microsoft Defender 防病毒。](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+添加排除项时，请注意用于添加的[Microsoft Defender 防病毒。](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>网络连接
 

@@ -17,20 +17,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 52c99b4c43f17a551929cb657fb4eb9ea3420d51
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2affbe19484348a511487930d034da6799ca348c
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111270"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560183"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>网络设备发现和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -39,15 +38,15 @@ ms.locfileid: "61111270"
 > [!NOTE]
 > 2021 年 4 月[](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 13 日发布的网络设备发现和漏洞评估博客提供了有关 Defender for Endpoint 中新网络设备发现功能的 \) 见解。  本文概述了网络设备发现旨在应对的挑战，并详细介绍了如何使用这些新功能。
 
-网络发现功能在 Microsoft 365 Defender 和Microsoft 365 Defender 控制台的设备<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>清单部分提供。
+网络发现功能在 Microsoft 365 Defender 和Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">控制台</a>的设备清单部分提供。
 
-指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 一旦发现，适用于终结点的 defender 危险和漏洞管理 功能将提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。
+指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 发现后，适用于终结点的 defender 危险和漏洞管理 功能提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。
 
 发现网络设备并进行分类后，安全管理员将能够接收最新的安全建议，并查看最近在组织中部署的网络设备上发现的漏洞。
 
 ## <a name="approach"></a>方法
 
-由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备使用 SNMP (只读) 对网络设备执行经过身份验证的扫描。
+由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备使用 SNMP 或只读 (对网络设备执行经过身份验证) 。
 
 需要记住两种类型的设备：
 
@@ -73,7 +72,7 @@ ms.locfileid: "61111270"
 
 第一步是选择将执行经过身份验证的网络扫描的设备。
 
-1. 确定适用于终结点的 Defender (客户端或) ，该客户端或服务器具有与计划扫描的网络设备的管理端口的网络连接。
+1. 确定终结点载入的 Defender (客户端或) ，该客户端或服务器具有与计划扫描的网络设备的管理端口的网络连接。
 
 2. 必须允许 Defender for Endpoint 评估设备和目标网络设备之间的 SNMP 流量 (例如，防火墙) 。
 
@@ -97,13 +96,13 @@ ms.locfileid: "61111270"
     > [!NOTE]
     > 并非所有 URL 都指定在 Defender for Endpoint 记录允许的数据收集列表中。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 若要配置评估作业，需要以下用户权限选项：在 **Defender 中管理安全设置**。 可以通过访问角色 来设置 \> **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
 
 ## <a name="install-the-network-scanner"></a>安装网络扫描程序
 
-1. 转到 **"Microsoft 365网络** \>  \> **设置"** 下 (\> **安全终结点评估**) 。
+1. 转到 **"Microsoft 365安全设置** 终结点"下 (\>  \>  \> **评估作业**) 。
     1. 在Microsoft 365 Defender门户中，转到"设置 >作业"页。
 
 2. 下载网络扫描程序，将其安装在指定的 Defender for Endpoint 评估设备上。
@@ -128,7 +127,7 @@ ms.locfileid: "61111270"
 
 ## <a name="configure-a-new-assessment-job"></a>配置新的评估作业
 
-在"评估作业"页 **的** 设置，选择"**添加网络评估作业"。** 按照设置过程选择要定期扫描并添加到设备清单的网络设备。
+在"评估作业"页的 **设置，** 选择 **"添加网络评估作业"。** 按照设置过程选择要定期扫描并添加到设备清单的网络设备。
 
 若要防止网络设备清单中的设备重复，请确保跨多个评估设备仅配置每个 IP 地址一次。
 

@@ -18,24 +18,24 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9e40adc906b9e13082e114dd8834186ff17a629d
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: f34390890f2b49c3058c50a12d3ce67454e4dd37
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555724"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560764"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 威胁专家
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-Microsoft 威胁专家是一项托管威胁搜寻服务，可为安全操作中心 (SOC) 提供专家级别的监视和分析，以帮助它们确保不会错过独特环境中的关键威胁。
+Microsoft 威胁专家是一项托管威胁搜寻服务，可为安全操作中心 (SOC) 提供专家级别的监视和分析，以帮助他们确保不会错过独特环境中的关键威胁。
 
 此托管威胁搜寻服务通过以下两项功能提供专家驱动的见解和数据：目标攻击通知和按需访问专家。
 
@@ -44,13 +44,13 @@ Microsoft 威胁专家是一项托管威胁搜寻服务，可为安全操作中�
 > [!NOTE]
 > 在应用托管威胁搜寻服务之前，与 Microsoft 技术服务提供商和帐户团队讨论资格要求。
 
-如果你是适用于终结点的 Microsoft Defender 客户，你需要申请 Microsoft 威胁专家 **-** 目标攻击通知，获取特殊见解和分析，帮助识别环境中最重要的威胁，以便你可以快速响应它们。
+如果你是适用于终结点的 Microsoft Defender 客户，则需要申请 Microsoft 威胁专家 **-** 目标攻击通知，以获得有助于识别环境中最重要的威胁的特殊见解和分析，以便快速响应它们。
 
-若要注册Microsoft 威胁专家 - 目标攻击通知权益，请转到设置终结点常规高级Microsoft 威胁专家- 要应用 \>  \>  \>  \> **的目标攻击** 通知。 接受后，你将受益于定向攻击通知。
+若要注册Microsoft 威胁专家 - 目标攻击通知权益，请转到设置终结点常规高级Microsoft 威胁专家 \>  \>  \>  \> **- 要应用的目标攻击** 通知。 接受后，你将受益于定向攻击通知。
 
 联系你的客户团队或 Microsoft 代表，订阅 Microsoft 威胁专家 **-** 专家按需咨询我们的威胁专家，了解组织面临的相关检测和对手。
 
-有关详细信息[，Microsoft 威胁专家配置](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin)自定义功能。
+有关详细信息[，请参阅配置Microsoft 威胁专家](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin)功能。
 
 ## <a name="microsoft-threat-experts---targeted-attack-notification"></a>Microsoft 威胁专家 - 目标攻击通知
 

@@ -18,24 +18,25 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 793fa5bb18fbf766b8174866d7741f8419af66cb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67aea0004e38ca5aee14e16fba47612e0e44f5ff
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206861"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560464"
 ---
 # <a name="microsoft-defender-security-center"></a>Microsoft Defender 安全中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-Microsoft Defender 安全中心是一个门户，你可以在这里访问 Microsoft Defender for Endpoint 功能。 它为企业安全运营团队提供了单一的窗格体验，以帮助保护网络安全。
+Microsoft Defender 安全中心是一个门户，可在其中访问 Microsoft Defender for Endpoint 功能。 它为企业安全运营团队提供了单一的窗格体验，以帮助保护网络安全。
 
 ## <a name="in-this-section"></a>本节内容
 

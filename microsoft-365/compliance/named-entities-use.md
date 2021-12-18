@@ -16,19 +16,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 使用这些过程可以利用数据丢失防护策略中的命名实体
-ms.openlocfilehash: eec82365e6fb4af4b6ca23896addd491637ec022
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 75a203b578217c5bbc1e8f67cf04b8d564735bd0
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110807"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560428"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>在数据丢失防护策略中使用命名实体（预览版）
 
 > [!IMPORTANT]
-> 命名实体功能正在推出，并且将在可供你使用时显示在租户中。 在内容资源管理器中和 DLP 策略创作流的数据丢失防护 (DLP) 检查它们。 
+> 命名实体功能正在推出，并且将在可供你使用时显示在租户中。 在内容资源管理器和 DLP 策略创作流的数据丢失 (检查) 检查它们。 
 
-在开始 [使用它们之前， ](named-entities-learn.md) 请 (了解) 实体和预览模式。
+在开始使用 [命名实体之前 ](named-entities-learn.md) ， (预览) 了解这些实体。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -43,7 +43,7 @@ ms.locfileid: "61110807"
 
 有关完整许可的详细信息，请参阅服务 [说明](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)。
 
-### <a name="permissions"></a>权限
+### <a name="permissions"></a>Permissions
 
 在 DLP 策略中用于创建和编辑数据丢失防护 (的帐户) **DLP 合规性管理** 角色权限。 有关详细信息，请参阅向[用户授予对 Office 365 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
@@ -55,10 +55,11 @@ ms.locfileid: "61110807"
 - SharePoint 网站
 - OneDrive 账户
 - Teams 聊天和通道消息
+- 终结点 (Windows 10的设备) 
 
 命名实体 SIT 和增强策略不支持用于：
 
-- 终结点 (Windows 10的设备) 
+
 - 本地存储库
 
 ## <a name="create-and-edit-enhanced-policies"></a>创建和编辑增强策略
@@ -84,9 +85,9 @@ ms.locfileid: "61110807"
 |Outlook策略提示     |不支持 |
 |终结点 (Windows 10设备)      |不支持  |
 |Exchange传输规则     |不支持 |
-|OneDrive for Business数据-rest     |支持         |
+|OneDrive for Business处于其余时间的数据     |支持         |
 |SharePoint联机数据-rest     |支持         |
-|Teams数据-rest     |支持         |
+|Teams处于其余时间的数据     |支持         |
 |电子邮件数据处于其余时间     |不支持         |
 |Microsoft Defender for Cloud Apps     |支持         |
 
@@ -94,13 +95,13 @@ ms.locfileid: "61110807"
 
 |工作负载/服务 |对命名实体的公共预览支持  |
 |---------|---------|
-|Office Win32 客户端   |支持，用户必须选择标签并手动应用 |
+|Office Win32 客户端脱机   |支持，用户必须选择标签并手动应用 |
 |联机Office Win32 客户端联机|支持旧可信度方案 |
 |Outlook联机   |支持旧可信度方案  |
 |Office WAC 客户端     |支持 |
 |OWA     |支持 |
 |Exchange传输     |不支持 |
-|OneDrive for Business数据-rest     |支持 |
+|OneDrive for Business处于其余时间的数据     |支持 |
 |SharePoint联机数据-rest|支持|
 |Azure 信息保护 (AIP) 扫描程序|不支持|
 
@@ -109,9 +110,10 @@ ms.locfileid: "61110807"
 |问题  |影响  |
 |---------|---------|
 |OWA、Outlook、Office Win32 客户端 (DLP 策略)      |   具有实体条件的策略提示将导致"不匹配"      |
-| 中文、日语、朝鲜语 (对人名的亚洲语言)     | 仅支持基于拉丁语的字符集的命名实体 (，即，人名不支持) 日文汉字        |
-|终结点 (设备)      | 作为工作负荷不受支持 – 不允许使用命名实体创作策略        |
+| 中文、日语、朝鲜语 (对人名的亚洲语言)     | 仅支持基于拉丁语的字符集的命名实体 (即，人名不支持) 日文汉字        |
 |本地存储库    | 不支持作为工作负荷|
+
+<!--|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |-->
 
 ## <a name="for-further-information"></a>有关详细信息
 <!-- - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)-->

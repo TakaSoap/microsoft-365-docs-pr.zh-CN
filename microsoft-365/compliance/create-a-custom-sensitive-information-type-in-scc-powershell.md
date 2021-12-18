@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: a8a085d29ee3d4552091e11d154900a79de7b45e
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: d4d41ef638ecdc54e99fa6d52d9212189b0bc231
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507310"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559780"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "61507310"
 有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 
 > [!NOTE]
-> 如果使用与号 (&) 作为自定义敏感信息类型中关键字的一部分，请注意存在一个已知问题。 您应该在字符周围添加一个附加的术语，并添加空格以确保正确标识该字符，例如 L & P _而不是_ L&P。
+> 如果使用与号 (&) 自定义敏感信息类型中的关键字的一部分，请注意存在一个已知问题。 您应该添加一个附加术语，该字符周围有空格，以确保正确标识该字符，例如 L & P _而不是_ L&P。
 
 ## <a name="sample-xml-of-a-rule-package"></a>规则包 XML 示例
 
@@ -397,7 +397,7 @@ Microsoft 365公开常用 SIT 的函数处理器作为验证程序。 以下是�
 </Entity>
 ```
 
-Microsoft 365提供了两个泛型验证程序
+Microsoft 365两个通用验证程序
 
 ### <a name="checksum-validator"></a>校验和验证程序
 
@@ -431,7 +431,7 @@ Microsoft 365提供了两个泛型验证程序
   
 ## <a name="changes-for-exchange-online"></a>针对 Exchange Online 的变化
 
-以前，你可能已使用过 Exchange Online PowerShell 为 DLP 导入自定义敏感信息类型。 现在，自定义敏感信息类型可用于管理Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">和</a>合规中心。 此次改进后，应使用合规中心 PowerShell 导入自定义敏感信息类型，不再可从 Exchange PowerShell 导入它们。 自定义敏感信息类型将像往常一样正常工作，但是，在合规中心进行的更改可能需要至多一小时才会出现在 Exchange 管理中心。
+以前，你可能已使用过 Exchange Online PowerShell 为 DLP 导入自定义敏感信息类型。 现在，自定义敏感信息类型可在管理中心和合规Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">使用</a>。 此次改进后，应使用合规中心 PowerShell 导入自定义敏感信息类型，不再可从 Exchange PowerShell 导入它们。 自定义敏感信息类型将像往常一样正常工作，但是，在合规中心进行的更改可能需要至多一小时才会出现在 Exchange 管理中心。
   
 请注意，在合规中心中，可以使用 **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** cmdlet 上载规则包。 （以前，在 Exchange 管理中心中，使用的是 **ClassificationRuleCollection**`cmdlet。） 
   
@@ -486,9 +486,9 @@ Microsoft 365提供了两个泛型验证程序
 
 当你上传规则包 XML 文件时，系统会验证 XML，并检查是否有已知的错误模式和明显的性能问题。验证检查正则表达式时，需要检查其中是否有下面的一些已知问题：
   
-- 正则表达式中的 lookbehind 或 lookahead 断言应仅具有固定长度。 可变长度断言将导致错误。
+- 正则表达式中的查找断言应仅具有固定长度。 可变长度断言将导致错误。
 
-    例如，此正则表达式无法通过验证，因为此表达式的第一个选项的长度为零，而后两个选项的长度为 `"(?<=^|\s|_)"` `^` `\s` `_` 1。  编写此正则表达式以便其进行验证的替代方法是 `"(?:^|(?<=\s|_))"` 。
+    例如，此正则表达式无法通过验证，因为此表达式的第一个选项的长度为零，而后两个选项的长度为 `"(?<=^|\s|_)"` `^` `\s` `_` 1。  编写此正则表达式的替代方法是 `"(?:^|(?<=\s|_))"` 。
   
 - 不得以匹配所有项的交替符“|”开头或结尾，因为这被视为空匹配。
     

@@ -11,26 +11,26 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: admindeeplinkDEFENDER
-description: 管理员可以了解如何使用 Microsoft Defender for Office 365 计划 2 中的攻击模拟培训用户进行网络钓鱼防护。
+description: 管理员可以了解如何使用 Microsoft Defender for Office 365计划 2 中的攻击模拟培训其用户进行网络钓鱼防护。
 ms.technology: mdo
-ms.openlocfilehash: 4b67ab279a1d125c03df81941388626369d2cb8b
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 9e33da3aa34c30f273581de97cd27c2ca534e3d3
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521000"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560778"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>在 Defender for Office 365
 
 **适用于 Microsoft** [Defender for Office 365计划 2](defender-for-office-365.md)
 
-通过 Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培训，你可以在你的组织中运行恶意网络攻击模拟。 这些模拟将测试你的安全策略和做法，并培训你的员工提高认知度并减少他们对攻击的敏感性。 本文将指导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
+Microsoft Defender 中针对计划 2 Office 365攻击模拟Microsoft 365 E5使你可以在你的组织中运行良好的网络攻击模拟。 这些模拟将测试你的安全策略和做法，并培训你的员工提高认知度并减少他们对攻击的敏感性。 本文将指导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
 
 有关攻击模拟培训的入门信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
 若要启动模拟网络钓鱼攻击，请执行以下步骤：
 
-1. 在 Microsoft 365 Defender 门户中 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> ，转到"电子邮件& \> **协作攻击模拟** \> **培训模拟"** 选项卡。
+1. 在 Microsoft 365 Defender 门户中 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> ，转到"电子邮件 **&** \> **协作攻击模拟** \> **培训模拟"** 选项卡。
 
    若要直接转到模拟 **选项卡** ，请使用 <https://security.microsoft.com/attacksimulator?viewid=simulations> 。
 
@@ -77,7 +77,7 @@ ms.locfileid: "61521000"
 - **名称**
 - **语言**：有效负载内容的语言。 Microsoft 的有效负载目录 (全局) 提供 10 多种语言（也可以筛选）的有效负载。
 - **单击率**：单击此有效负载的人。
-- **预测入侵率**：预测此负载Microsoft 365威胁的负载的历史数据。
+- **预测的泄露率**：整个Microsoft 365的历史数据，用于预测受此负载危害的百分比。
 - **模拟启动** 计算此有效负载在其他模拟中使用的次数。
 
 在" ![ 搜索"图标中。](../../media/m365-cc-sc-search-icon.png) **搜索** 框，可以键入部分有效负载名称，然后按 Enter 筛选结果。
@@ -92,10 +92,10 @@ ms.locfileid: "61521000"
   - **全局** (内置) 
   - **租户** (自定义) 
   - **全部**
-- 语言 ：可用值为：中文 (简体 **) 、** 中文 (**繁体) 、****英语**、**法语**、**德语**、**意大利语**、**日语**、**朝鲜** 语、**葡萄牙语、****俄语**、**西班牙语** 和 **荷兰语**。
+- 语言 ：可用值为：中文 **(简体) 、** 中文 (**繁体) 、****英语**、**法语**、**德语**、**意大利语**、**日语**、**朝鲜** 语、**葡萄牙语、****俄语**、**西班牙语** 和 **荷兰语**。
 - **添加 (标记)**
 - **按主题** 筛选：可用值为：**帐户** 激活、**帐户** 验证、**计费**、**清理邮件**、已接收 **文档**、**费用**、**传真**、财务报告、**传入** 邮件、**发票**、已接收项目、**登录通知**、**已接收邮件**、**密码**、**付款**、**工资** 单、个性化 **优惠****、隔离远程工作**，**审阅邮件**，**安全更新**，**服务** 挂起 **，** 需要签名 ，**升级邮箱存储 验证邮箱**、**语音邮件** 和其他 **。**
-- 按品牌筛选：可用值为 **：American Express、Capital** One、DHL、DocuSign、Dropbox、Facebook、First      American、Microsoft、Netflix、Scotiabank、SendGrid、Stewart      **Title、Tesco、Wells** Fargo、Syrinx **Cloud** **和其他**。
+- 按品牌筛选：可用值为 **：American Express、Capital** One、DHL、DocuSign、Dropbox、Facebook、First      American、Microsoft、Netflix、Scotiabank、SendGrid、Stewart      **Title、Tesco、Wells** Fargo、Syrinx  **Cloud****和其他**。
 - **按行业** 筛选：可用值为：**银行**、商业服务、**消费者** 服务、**教育**、**能源**、**建筑**、**咨询**、**金融服务**、**政府**、**城市**、保险、**法律****、Courier 服务****、IT、****医疗保健**、**制造**、**零售**、**电信**、**房地产**、 和其他。
 - **当前事件**：可用值为"**是**"或"**否"。**
 - **中国**：可用值为"**是**"或"**否"。**
@@ -109,9 +109,9 @@ ms.locfileid: "61521000"
 - " **概述** "选项卡包含有关有效负载的示例和其他详细信息。
 - 模拟 **启动选项卡** 包含 **模拟名称**、单击 **率****、泄露率****和操作**。
 
-![有效负载详细信息在 Microsoft 365 Defender 门户的攻击模拟培训中。](../../media/attack-sim-training-simulations-select-payload-details.png)
+![Microsoft 365 Defender门户中攻击模拟培训中的有效负载Microsoft 365 Defender出。](../../media/attack-sim-training-simulations-select-payload-details.png)
 
-如果通过单击名称从列表中选择有效负载，则会显示 ![ "发送测试有效负载"图标。](../../media/m365-cc-sc-create-icon.png) **"发送测试** "按钮显示在主页上，你可以向自己发送有效负载电子邮件的副本 (当前登录的用户) 进行检查。
+如果通过单击名称从列表中选择有效负载，则会显示 ![ "发送测试有效负载"图标。](../../media/m365-cc-sc-create-icon.png) **"发送测试** "按钮显示在主页上，你可以向自己发送有效负载电子邮件的副本 (当前登录的用户) 检查。
 
 若要创建自己的有效负载，请单击 ![ "创建有效负载图标"。](../../media/m365-cc-sc-create-icon.png) **创建有效负载**。 有关详细信息，请参阅为攻击 [模拟培训创建自定义负载](attack-simulation-training-payloads.md)。
 
@@ -143,11 +143,11 @@ ms.locfileid: "61521000"
         - 选择 **所有标题**
         - 选择现有的"标题"值。
 
-      ![用户门户中攻击模拟培训中的"目标用户"页面上Microsoft 365 Defender筛选。](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      ![用户门户中攻击模拟培训中的目标用户Microsoft 365 Defender筛选。](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
 
       确定条件后，受影响的用户将显示在出现的"用户列表"部分，您可以在其中选择部分或所有发现的收件人。
 
-      完成后，单击"应用 x **(x) "，** 然后单击"**添加 x 用户"。**
+      完成后，单击"应用 x (**x) "，** 然后单击"添加 x **用户"。**
 
   返回到主 **"目标用户"** 页面，您可以使用"搜索 ![ "图标。](../../media/m365-cc-sc-search-icon.png) **搜索** 框以查找受影响的用户。 还可以单击"删除 ![ 用户"图标。](../../media/m365-cc-sc-search-icon.png) **删除** 以删除特定用户。
 
@@ -174,14 +174,14 @@ ms.locfileid: "61521000"
     - **自定义培训 URL** (必需) 
     - **自定义培训名称 (** 必填) 
     - **自定义培训说明**
-    - **自定义培训 (分钟) ：** 默认值为 0，表示没有指定的培训持续时间。
+    - **自定义培训 (分钟**) ：默认值为 0，表示没有指定的培训持续时间。
     - **截止日期：** 选择下列值之一：
       - **模拟结束后 30 天**：这是默认值。
       - **模拟结束后 15 天**
       - **模拟结束后 7 天**
   - **无培训**：如果你选择此值，页面上的唯一选项是"下一步"按钮，将你导航到 [**登陆页面**](#landing-page)页面。
 
-![在企业门户中攻击模拟培训中的"培训作业"页面上添加Microsoft 365 Defender培训。](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+![在安全门户中攻击模拟培训中的"培训作业"页面上添加Microsoft 365 Defender培训。](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
 
 ### <a name="training-assignment"></a>培训作业
 
@@ -231,12 +231,12 @@ ms.locfileid: "61521000"
 
 在 **登录页面** 页面上，配置用户在模拟中打开有效负载时将访问的网页。
 
-Microsoft 提供的登陆页面有 12 种语言版本：中文 (简体) 、中文 (繁体) 、英语、法语、德语、意大利语、日语、朝鲜语、葡萄牙语、俄语、西班牙语和荷兰语。
+Microsoft 特意提供的登陆页面有 12 种语言版本：中文 (简体) 、中文 (繁体) 、英语、法语、德语、意大利语、日语、朝鲜语、葡萄牙语、俄语、西班牙语和荷兰语。
 
 - **选择登陆页面首选项**：可用值为：
   - **使用 Microsoft 默认登陆** 页面：这是要配置的以下关联选项的默认值：
     - **选择登陆页面布局**：选择一个可用的模板。
-    - **添加徽标**：单击 **"浏览** "查找并选择.png、.jpeg 或 .gif 文件。 若要删除徽标，请单击"删除 **"。**
+    - **添加徽标**：单击" **浏览** "查找并选择.png、.jpeg 或 .gif 文件。 若要删除徽标，请单击"删除 **"。**
     - **向电子邮件添加** 有效负载指示器：如果你之前在"选择技术"页上选择了"恶意软件附件"或"链接到恶意软件"，[则此设置](#select-a-social-engineering-technique)不可用。
 
       选择 **"将有效负载指示器添加到电子邮件** "可帮助用户了解如何识别网络钓鱼邮件。
@@ -269,6 +269,71 @@ Microsoft 提供的登陆页面有 12 种语言版本：中文 (简体) 、中�
 
 > [!NOTE]
 > 某些商标、徽标、符号、签名和其他源标识符受到当地、州、联邦法规和法律的保护。 未经授权使用此类指示器可能会使用户遭受处罚，包括罚款。 虽然这不是一个广泛列表，但其中包括"百科百科"、"Vice Vice"和"一流"（该名称为"一家"）、"社会保险局"、"一家"和"Medicaid"、美国国内收入服务和"美国商务部"。 除了这些类别的商标之外，使用和修改任何第三方商标会带来固有风险。 在有效负载中使用自己的商标和徽标的风险较低，尤其是在组织允许使用的情况下。 如果对创建或配置负载时适合使用或不适合使用的任何进一步问题，请咨询法律顾问。
+
+## <a name="select-end-user-notification"></a>选择最终用户通知
+
+在 **"选择最终用户通知"页上** ，从以下通知选项中进行选择：
+
+- **不传递通知****：在出现的** 警报对话框中单击"继续"。 如果选择此选项，将在单击"下一步"时访问 [](#launch-details)"启动详细信息 **"页**。
+
+- **Microsoft 默认通知 (推荐) ：** 页面上提供了以下附加设置：
+  - 选择默认语言：可用值为：中文 **(简体) 、** 中文 (繁体 **) 、****英语**、**法语**、**德语**、**意大利语**、**日语**、**朝鲜** 语、**葡萄牙语、****俄语**、**西班牙语** 和 **荷兰语**。
+  - 默认情况下，唯一可用的通知是 Microsoft **积极通知**。 通知中提供了以下信息：
+    - **通知** (名称) ：值为 **Microsoft 默认正误报通知**。
+    - **语言**：如果通知包含多个翻译，则直接显示前两种语言。 To see the remaining languages， hover over the numeric icon (for example， **+10**) .
+    - **类型**：值是 **正的。**
+    - **传递首选项**：从以下值中选择：
+      - **不交付**
+      - **市场活动结束后提供**
+      - **在市场活动期间交付**
+    - **传递至**：值 **不适用**。
+    - **操作**：如果单击"视图 ![ "图标。](../../media/m365-cc-sc-view-icon.png) **查看** 图标， **将显示"审阅通知** "页，并包含以下信息：
+      - **预览** 选项卡：查看通知邮件。 若要查看不同语言的邮件，请使用" **选择语言"** 框。
+      - **详细信息** 选项卡：查看有关通知的详细信息：
+        - **通知说明**
+        - **源**：对于内置通知，值为 **Global**。 对于自定义通知，值为 **Tenant**。
+        - **通知类型**
+        - **修改者**
+        - **上次修改时间**
+
+        完成后，单击“关闭”。
+
+  如果选择此选项，将在单击"下一步"时访问 [](#launch-details)"启动详细信息 **"页**。
+
+- **自定义最终用户通知**：单击"下一步"时，你将访问"正误报通知"页面，如下一节中所述，可以从现有通知中选择或创建新通知。
+
+完成后，单击“**下一步**”。
+
+### <a name="positive-reinforcement-notification"></a>正面的误报通知
+
+只有在 **上一页上** 选择了"自定义最终用户通知"时，" **积极积极"** 通知页面才可用。
+
+- **传递首选项**：选择下列值之一：
+  - **不交付**
+  - **在用户报告网络钓鱼和市场活动结束后进行传递**
+  - **在用户报告网络钓鱼后立即传递**
+
+- **选择一个积极向上** 的通知：可以选择现有通知，也可以创建一个使用" **积极** 积极通知"类型的新通知：
+  - 若要选择现有通知，请单击通知名称旁边的空白区域。 如果单击通知名称，则选择通知，并出现预览飞出。 若要取消选择通知，请清除通知旁边的复选框。
+  - 若要搜索现有通知，请使用搜索 ![ 图标。](../../media/m365-cc-sc-search-icon.png) **用于** 搜索名称的搜索框。
+  - 若要创建新通知，请单击" ![ 创建新图标"。](../../media/m365-cc-sc-create-icon.png) **创建新的**。
+  - 若要修改现有自定义通知，请选择它，然后单击" ![ 编辑通知图标"。](../../media/m365-cc-sc-edit-icon.png) **编辑通知**。
+
+#### <a name="create-new-notification-wizard"></a>新建通知向导
+
+如果单击了" ![ 创建新图标"。](../../media/m365-cc-sc-create-icon.png) **在"正值** 通知 **"页面上新建，** 将打开通知创建向导。
+
+创建步骤与创建最终用户通知 中所述 [的步骤相同](attack-simulation-traning-end-user-notifications.md#create-end-user-notifications)。
+
+> [!NOTE]
+> 在"**定义详细信息**"页上，确保为"选择通知类型"选择值 **"** 正值 **通知"。** 不要选择模拟 **通知**。
+
+完成后，将返回到"积极肯定"通知页面，此时，你刚刚创建的通知显示在"选择积极向上的通知 **"** 列表中。
+
+- 若要创建新通知，请单击 ![创建新图标。](../../media/m365-cc-sc-create-icon.png).
+- 若要修改通知或添加其他翻译，请从列表中选择通知，然后单击"编辑 ![ 通知图标"。](../../media/m365-cc-sc-edit-icon.png) **编辑通知** 以启动通知向导，如 (已填充大多数值) 。 如果通知已有 12 种支持语言的翻译，则不能添加更多翻译。
+
+选择想要使用的通知，然后单击"下一步 **"。**
 
 ## <a name="launch-details"></a>启动详细信息
 

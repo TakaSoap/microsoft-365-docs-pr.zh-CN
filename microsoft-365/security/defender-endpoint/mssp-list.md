@@ -14,17 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e22ee784609ab04973d88de7539b567027cc98d6
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: d05da8e18ce02e5b41227486d44368edf29a58ed
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283121"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560440"
 ---
 # <a name="supported-managed-security-service-providers"></a>受支持的安全服务提供商
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -42,11 +43,11 @@ ms.locfileid: "61283121"
 ![云 SOC 徽标的图像。](images/cloudsoc-logo.png)| [云 SOC](https://go.microsoft.com/fwlink/?linkid=2104265) | 云 SOC 提供基于 Microsoft 云的 24/7 安全监视服务，可帮助你持续改进安全状况
 ![CSIS 托管检测&响应徽标的图像。](images/csis-logo.png)| [CSIS 托管检测&响应](https://go.microsoft.com/fwlink/?linkid=2091005) | 24/7 监视和分析安全警报，使公司可以操作地了解安全事件发生的位置、时间以及如何发生
 ![CyberProof 徽标的图像。](images/cyberproof-logo.png) |[CyberProof Managed Detection & Response (MDR) ](https://go.microsoft.com/fwlink/?linkid=2163964) | 24x7 托管威胁检测和响应服务与 Microsoft Sentinel 和 Defender for Endpoint 完全集成。
-![Dell 技术高级威胁防护徽标的图像。](images/dell-logo.png)| [Dell 技术高级威胁防护](https://go.microsoft.com/fwlink/?linkid=2091004) | Professional 24/7 功能监控恶意行为和异常服务
+![Dell 技术高级威胁防护徽标的图像。](images/dell-logo.png)| [Dell 技术高级威胁防护](https://go.microsoft.com/fwlink/?linkid=2091004) | Professional 24/7 功能监视恶意行为和异常
 ![终结点威胁DXC-Managed和响应徽标的图像。](images/dxc-logo.png)| [DXC 托管的终结点威胁检测和响应](https://go.microsoft.com/fwlink/?linkid=2090395) | 识别绕过传统安全防护的终结点威胁，并包含小时数或分钟数（而不是数天）
 ![eSentire 日志的图像。](images/esentire-logo.png) | [eSentire 托管检测和响应](https://go.microsoft.com/fwlink/?linkid=2154970) | 通过 Microsoft Defender for Endpoint 进行 24x7 威胁调查和响应。
 ![徽标图像。](images/expel-logo.png)| [适用于终结点的 Microsoft Defender 的托管检测和响应](https://go.microsoft.com/fwlink/?linkid=2162430) | 通过检测 Microsoft Defender for Endpoint 中的安全风险，Microsoft 可帮助你保持安全。
-![Mandiant 徽标的图像。](images/mandiant-logo.png) | [适用于 Microsoft Defender for Endpoint 的 (防御) MDR 策略](https://go.microsoft.com/fwlink/?linkid=2164352) | 通过 24/7 的一线 MDR 智能和来自 Mandiant 的专业知识来验证 Defender for Endpoint。
+![Mandiant 徽标的图像。](images/mandiant-logo.png) | [Microsoft Defender for Endpoint 的 (托管防御) MDR 策略](https://go.microsoft.com/fwlink/?linkid=2164352) | 通过 24/7 的一线 MDR 智能和来自 Mandiant 的专业知识来验证 Defender for Endpoint。
 ![NTT 安全徽标的图像。](images/ntt-logo.png)| [NTT 安全性](https://go.microsoft.com/fwlink/?linkid=2095320) | NTT 的 EDR 服务跨终结点和网络提供 24/7 &安全监视响应
 ![OneVinn 徽标的图像。](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| 24/7 基于 Microsoft 365 Defender 和 Microsoft Sentinel 构建的托管检测和响应，使用 Onevinn 的威胁智能进行丰富。
 ![仲裁网络徽标的图像。](images/quorum-logo.png) | [仲裁网络](https://go.microsoft.com/fwlink/?linkid=2155202)| 一项边缘威胁搜寻&安全工程服务。
@@ -56,7 +57,7 @@ ms.locfileid: "61283121"
 ![Trustwave 威胁检测&响应服务徽标的图像。](images/trustwave-logo.png)| [Trustwave 威胁检测&响应服务](https://go.microsoft.com/fwlink/?linkid=2127542) | 使用与 Sentinel 和 Defender for Endpoint 集成的 Azure 威胁检测和响应服务
 ![White Managed Security Services 的图像。](images/white-shark.png)| [White Shark Managed Security Services](https://go.microsoft.com/fwlink/?linkid=2154210) |通过每个平台（包括移动设备）的透明定价实现网络安全的真正专家方法。
 ![Wortell 云 SOC 徽标的图像。](images/wortell-logo.png)| [Wortell 的云 SOC](https://go.microsoft.com/fwlink/?linkid=2108415) | 24x7 托管 Defender for Endpoint 服务，用于&响应
-![零信任分析平台 (ZTAP) 图像。](images/ztap-logo.png)| [零信任分析平台 (ZTAP) ](https://go.microsoft.com/fwlink/?linkid=2090971) | 将警报减少 99%，并访问移动设备中的全部安全性功能
+![零信任分析平台图像 (ZTAP) 徽标。](images/ztap-logo.png)| [零信任分析平台 (ZTAP) ](https://go.microsoft.com/fwlink/?linkid=2090971) | 将警报减少 99%，并访问移动设备中的全部安全性功能
 
 ## <a name="related-topics"></a>相关主题
 - [配置托管服务安全提供程序集成](configure-mssp-support.md)

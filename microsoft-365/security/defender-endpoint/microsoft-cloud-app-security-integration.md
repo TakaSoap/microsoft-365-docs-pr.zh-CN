@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: a107cd297c7ca80ff7cd740a8195d57badbc4df4
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8260903ba8031bae76f420a7b010ed73df1c833d
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111107"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560380"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-defender-for-endpoint-overview"></a>适用于终结点的 Defender 中的 Microsoft Defender 云应用概述
 
@@ -30,7 +30,8 @@ ms.locfileid: "61111107"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -39,7 +40,7 @@ ms.locfileid: "61111107"
 Microsoft Defender for Cloud Apps 是一个全面的解决方案，让你能够控制和限制对云应用的访问权限，同时强制执行对云中存储数据的合规性要求，从而了解云应用和服务。 有关详细信息，请参阅适用于云[应用的 Defender。](/cloud-app-security/what-is-cloud-app-security)
 
 > [!NOTE]
-> 此功能随 E5 许可证[提供，企业移动性 + 安全性](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)版本 1809 Windows 10或更高版本或 Windows 11。
+> 此功能随 E5 许可证提供，企业移动性 + 安全性[](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)版本 1809 Windows 10或更高版本或 Windows 11。
 
 ## <a name="microsoft-defender-for-endpoint-and-defender-for-cloud-apps-integration"></a>Microsoft Defender for Endpoint 和 Defender for Cloud Apps 集成
 
@@ -51,12 +52,12 @@ Microsoft Defender for Cloud Apps 是一个全面的解决方案，让你能够�
 
 - 可在任何位置使用 - 由于网络活动直接从终结点收集，因此无论设备位于公司网络内部还是外部，设备都可用，因为它不再依赖于通过企业防火墙或代理服务器路由的流量。
 
-- 开箱即用，无需配置 - 将云流量日志转发到 Defender for Cloud Apps 需要防火墙和代理服务器配置。 借助适用于终结点的 Defender 和适用于云应用的 Defender 集成，无需任何配置。 只需在Microsoft Defender 安全中心中打开它，你一起操作吧。\
+- 开箱即用，无需配置 - 将云流量日志转发到 Defender for Cloud Apps 需要防火墙和代理服务器配置。 借助适用于终结点的 Defender 和适用于云应用的 Defender 集成，无需任何配置。 只需在Microsoft Defender 安全中心中打开它，你可继续操作。
 
-- 设备上下文 - 云流量日志缺少设备上下文。 Defender for Endpoint 网络活动通过设备上下文报告 (哪些设备已访问云应用) ，因此你能够准确了解 (设备) 网络活动的发生位置，以及执行网络活动的 (用户) 。
+- 设备上下文 - 云流量日志缺少设备上下文。 Defender for Endpoint 网络活动通过设备上下文报告 (哪些设备访问云应用) ，以便你能够准确了解 (设备) 网络活动的发生位置，以及执行网络活动的 (用户) 。
 
 有关云发现详细信息，请参阅 [使用发现的应用](/cloud-app-security/discovered-apps)。
 
 ## <a name="related-topic"></a>相关主题
 
-- [为云应用集成配置 Microsoft Defender](microsoft-cloud-app-security-config.md)
+- [配置 Microsoft Defender for Cloud Apps 集成](microsoft-cloud-app-security-config.md)

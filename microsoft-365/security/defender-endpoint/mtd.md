@@ -17,24 +17,24 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c575cc6b235f82c02404f29d33712731609322a2
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 83871a547aa2f644d70ada5cb121d3b32a6d9bdb
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646916"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560349"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender for Endpoint - 移动威胁防护
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-Android 和 iOS 上的 Microsoft Defender for Endpoint 是我们移动 **威胁防护解决方案 (MTD) 。** 通常，公司会主动保护电脑免受漏洞和攻击，而移动设备通常不受监视且不受保护。 在移动平台具有内置保护（如应用隔离和经过审查的消费者应用商店）的位置，这些平台仍易受基于 Web 或其他复杂攻击的攻击。 随着越来越多的员工使用设备工作并访问敏感信息，公司必须部署 MTD 解决方案来保护设备和你的资源免受对移动设备的日益复杂的攻击。
+Android 和 iOS 上的 Microsoft Defender for Endpoint 是我们 **移动威胁防护解决方案 (MTD) 。** 通常，公司会积极保护电脑免受漏洞影响和恶意攻击，但通常不会监视和保护移动设备。 在移动平台具有内置保护（如应用隔离和经过审查的消费者应用商店）的位置，这些平台仍易受基于 Web 或其他复杂攻击的攻击。 随着越来越多的员工使用设备工作并访问敏感信息，公司必须部署 MTD 解决方案来保护设备和你的资源免受对移动设备的日益复杂的攻击。
 
 ## <a name="key-capabilities"></a>关键功能
 
@@ -45,7 +45,7 @@ Android 和 iOS 上的 Microsoft Defender for Endpoint 提供以下关键功能�
 |功能|说明|
 |---|---|
 |Web 保护|防钓鱼、阻止不安全的网络连接以及支持自定义指示器。|
-|仅 android (恶意软件防护) |扫描恶意应用。|
+|仅 Android (恶意软件防护) |扫描恶意应用。|
 |越狱检测 (仅 iOS) |已越狱设备的检测。|
 |TVM (威胁和漏洞) 。 处于预览阶段。 请参阅下面的注释*|已载入移动设备的漏洞评估。 访问此页面[了解有关](next-gen-threat-and-vuln-mgt.md)Microsoft Defender for Endpoint 危险和漏洞管理的更多信息。 *请注意，在此预览版中仅支持 iOS 上的操作系统漏洞。*|
 |统一警报|来自统一 M365 安全控制台中所有平台的警报|

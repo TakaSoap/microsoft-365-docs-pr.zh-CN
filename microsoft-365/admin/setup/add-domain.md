@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 使用设置向导，通过添加 DNS Microsoft 365 DNS Microsoft 365 管理中心将域添加到域中。
-ms.openlocfilehash: d3ddcd9b0eb97b568650a28e360f2e5b296cda54
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 390cb4cfff2b895902449e34134538a768d03aa1
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426323"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559924"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>将域添加到 Microsoft 365
 
@@ -85,7 +85,7 @@ ms.locfileid: "61426323"
     
 6. 选择希望 Microsoft 使用域所需的 DNS 更改。
     
-    1. 如果你 **的** 注册机构支持域 [连接，](#domain-connect-registrars-integrating-with-microsoft-365)请选择"为我添加 DNS 记录"，Microsoft [](../get-help-with-domains/domain-connect.md)会通过登录注册机构并确认连接到你的注册机构来自动设置Microsoft 365。
+    1. 如果你 **的** 注册机构支持域 [连接，](#domain-connect-registrars-integrating-with-microsoft-365)请选择"为我添加 DNS 记录"，Microsoft [](../get-help-with-domains/domain-connect.md)会通过登录注册机构并确认连接到你的注册机构来自动Microsoft 365。
     2. Choose **I'll add the DNS records自己** if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later. **如果确切了解执行内容，请选择此选项。**
 
 7. 如果选择自己添加 *DNS* 记录，请选择"下一步"，你将看到一个页面，包含需要添加到注册机构网站以设置域的所有记录。 
@@ -132,21 +132,37 @@ ms.locfileid: "61426323"
 - [WordPress.com](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
-- SecureServer 或 WildWestDomains (使用 SecureServer DNS 托管客户端的 GoDaddy) 
+- SecureServer 或 WildWestDomains (SecureServer DNS 托管服务与 GoDaddy 经销商) 
     - 示例：
         - [DomainsPricedRight](https://www.domainspricedright.com/products/domain-registration)
         - [DomainRightNow](https://www.domainrightnow.com/)
 
 ### <a name="what-happens-to-my-email-and-website"></a>我的电子邮件和网站会发生什么情况？
 
-完成设置后，你的域的 MX 记录将更新为指向Microsoft 365并且你的域的所有电子邮件都将开始Microsoft 365。 确保你已添加用户，并针对域中收到电子邮件的Microsoft 365用户设置邮箱！
+完成设置后，你的域的 MX 记录将更新为指向Microsoft 365并且你的域的所有电子邮件都将开始Microsoft 365。 确保你已添加用户，并针对在你的域中收到电子邮件的Microsoft 365邮箱！
   
 如果你有一个用于你的企业的网站，它将在其所在的位置保持工作。 域连接设置步骤不会影响您的网站。
+
+### <a name="add-an-onmicrosoftcom-domain"></a>添加 onmicrosoft.com 域
+
+每个Microsoft 365组织最多具有三个 onmicrosoft.com 域。
+
+> [!NOTE]
+> 必须是全局管理员或域名管理员才能添加域。
+
+
+若要添加 onmicrosoft.com 域：
+
+1. 转到 Microsoft 管理中心 **，设置**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"。**</a>
+
+2. 在"概述 **"** 选项卡上，选择"**添加 onmicrosoft.com 域"。**
+
+可以将你拥有的任何域设置为默认域。
 
 ## <a name="related-content"></a>相关内容
 
 [域常见问题](domains-faq.yml) （文章）</br>
 [什么是域？](../get-help-with-domains/what-is-a-domain.md)  (文章) </br>
-[购买域名Microsoft 365 (](../get-help-with-domains/buy-a-domain-name.md)文章) </br>
+[在本文Microsoft 365 (](../get-help-with-domains/buy-a-domain-name.md)购买) </br>
 [添加 DNS 记录以连接域](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (文章) </br>
 [更改名称服务器以使用任意域注册机构设置 Microsoft 365](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md)（文章）
