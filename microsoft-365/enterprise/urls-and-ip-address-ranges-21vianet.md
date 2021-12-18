@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: 本文列出了由中国的世纪互联运营的 Office 365 的 Url 和 IP 地址范围。
 hideEdit: true
-ms.openlocfilehash: 79bd6f023828bc6ac3bdb33b29a1dbc37f26ff89
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e96226ff9db25eb8b46edc07bde1ec738f2e427b
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150566"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566671"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365 的 URL 和 IP 地址范围
 
@@ -34,7 +34,7 @@ ms.locfileid: "60150566"
 
 **摘要**：以下终结点（FQDN、端口、URL、IPv4 和 IPv6 前缀）适用于由世纪互联运营的 Office 365，旨在为仅使用这些计划的组织提供生产力服务。
   
- **Office 365 终结点：**[全球（包括 GCC）](urls-and-ip-address-ranges.md)  | *由世纪互联运营的 Office 365* | [Office 365 Germany](microsoft-365-germany-endpoints.md) | [Office 365 美国政府版 DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 美国政府版 GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
+ **Office 365终结点**：全球 (包括 Office 365 [GCC) 由](urls-and-ip-address-ranges.md)世纪Office 365美国政府 doD Office 365 21   |  *Vianet*  |  [Office 365 DoD](microsoft-365-u-s-government-dod-endpoints.md)GCC  |  [GCC](microsoft-365-u-s-government-gcc-high-endpoints.md) |
   
 **上次更新时间：** 2021 年 9 月 28 日 -![ RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 

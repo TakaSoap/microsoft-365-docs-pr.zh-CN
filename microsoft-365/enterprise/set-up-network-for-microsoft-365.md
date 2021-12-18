@@ -19,19 +19,19 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: ''
-description: 查找指向文章的链接，这些文章包含可帮助您为 Microsoft 365设置网络的信息，包括网络连接概述和终结点列表。
-ms.openlocfilehash: 0608fed03721a12d89fdac7d9bdd1574e34471b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 查找指向文章的链接，其中的信息可帮助你设置Microsoft 365，包括网络连接概述和终结点列表。
+ms.openlocfilehash: c21a7a09e43957c806bca9dd64d425fcef2415fc
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213225"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566623"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>为用户设置Microsoft 365
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-载入的一Microsoft 365一部分是为了确保网络和 Internet 连接已设置为优化访问。 将本地网络配置为访问全局分布式软件即服务 (SaaS) 云与针对到内部部署数据中心的流量和中央 Internet 连接进行了优化的传统网络不同。 
+载入的一Microsoft 365一部分是为了确保网络和 Internet 连接已设置为优化访问。 将本地网络配置为访问全局分布式软件即服务 (SaaS) 云不同于针对到本地数据中心的流量和中央 Internet 连接优化的传统网络。 
 
 使用以下文章来理解它们之间的关键区别，并修改你的边缘设备、客户端计算机和内部网络，以为本地用户获得最佳性能。
 
@@ -65,7 +65,6 @@ ms.locfileid: "60213225"
 | [美国政府 DoD 端点](microsoft-365-u-s-government-dod-endpoints.md) | 针对美国国防部 (DoD) 订阅的端点。 |
 | [美国政府 GCC 高端点](microsoft-365-u-s-government-gcc-high-endpoints.md) | 针对美国政府社区云高（GCC 高）订阅的端点。 |
 | [由世纪互联运营的 Office 365 端点](urls-and-ip-address-ranges-21vianet.md) | 由世纪互联运营的 Office 365 的端点，旨在满足中国境内对 Office 365 的需求。 |
-| [Office 365 Germany 端点](microsoft-365-germany-endpoints.md) | 为德国、欧盟 (EU) 和欧洲自由贸易协会 (EFTA) 中监管最严格的客户在欧洲建立的独立云的端点。 |
 |||
 
 若要自动获取 Office 365 云的最新端点列表，请参阅 [Office 365 IP 地址和 URL Web 服务](microsoft-365-ip-web-service.md)。

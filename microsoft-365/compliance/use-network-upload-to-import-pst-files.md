@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 面向管理员：了解如何使用网络上传将多个 PST 文件批量导入 Microsoft 365 中的用户邮箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c9ab46c5f801a9069f4b1614f6b04161ee431d5b
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 18751128d4804cfb3a61377caefba1478b7bd515
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531770"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560284"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用网络上传将组织的 PST 文件导入到 Microsoft 365
 
@@ -63,8 +63,6 @@ ms.locfileid: "61531770"
     > 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于导入 PST 文件。若要获得导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。
   
 - 唯一受支持的将 PST 文件导入到 Microsoft 365 的方法是使用 AzCopy 工具，如本文中所述。 无法使用 Azure 存储资源管理器将 PST 文件直接上传到 Azure 存储区域。
-
-- 需要将要导入到 Microsoft 365 中的 PST 文件存储在组织中的文件服务器或共享文件夹中。 目前不支持将 PST 文件从组织的 Azure 存储帐户复制到 Microsoft 365 导入服务使用的 Azure 存储位置。 在步骤 2 中，你将运行 AzCopy 工具，以便将存储在文件服务器或共享文件夹中的 PST 文件上传到 Microsoft 云。
 
 - 大型 PST 文件可能会影响 PST 导入过程的性能。 因此，我们建议你在步骤 2 中上传到 Azure 存储位置的每个 PST 文件不应大于 20 GB。
 
@@ -352,7 +350,7 @@ Azure 存储资源管理器独立应用程序通常是可用的。 可以使用�
 
   - 使用[数据丢失防护策略](dlp-learn-about-dlp.md)来防止敏感数据被泄露到组织外部。
 
-- 如前所述，在 PST 文件导入到邮箱之后，Microsoft 365 导入服务将启用保留挂起设置 (无限期)。 这意味着 *RetentionHoldEnabled* 属性设置为 **True**，因此不会处理分配给该邮箱的保留策略。 这样可以防止某条删除或存档策略将旧邮件删除或存档，让邮箱所有者有时间管理新导入的邮件。 可采用以下步骤来管理此保留挂起：
+- 如前所述，在 PST 文件导入到邮箱之后，Microsoft 365 导入服务将启用保留挂起设置（无限期）。 这意味着 *RetentionHoldEnabled* 属性设置为 **True**，因此不会处理分配给该邮箱的保留策略。 这样可以防止某条删除或存档策略将旧邮件删除或存档，让邮箱所有者有时间管理新导入的邮件。 可采用以下步骤来管理此保留挂起：
 
   - 一段时间后，可通过运行 **Set-Mailbox -RetentionHoldEnabled $false** 命令来关闭保留挂起。 有关说明，请参阅[将邮箱置于保留挂起](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
 

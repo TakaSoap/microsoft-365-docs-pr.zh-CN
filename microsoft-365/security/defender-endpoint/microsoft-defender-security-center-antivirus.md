@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3e833d4115eb71d766d33666f6da36cbdad99d02
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 3daa63ace419ed1a73511647c28b8fab9ac12d0d
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560752"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566455"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender 防病毒应用中Windows 安全中心
 
@@ -34,7 +34,7 @@ ms.locfileid: "61560752"
 设置以前属于 Windows Defender 客户端和主 Windows 设置 的客户端已组合并移动到新应用，该应用默认作为 Windows 10 版本 1703 的一部分安装。
 
 > [!IMPORTANT]
-> 禁用 Windows 安全中心 应用服务不会禁用Microsoft Defender 防病毒或Windows Defender[防火墙。](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) 当安装第三方防病毒或防火墙产品并保持最新时，将自动禁用这些功能。
+> 禁用 Windows 安全中心 应用服务不会禁用Microsoft Defender 防病毒或[Windows Defender防火墙](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。 当安装第三方防病毒或防火墙产品并保持最新时，将自动禁用这些功能。
 >
 > 如果禁用 Windows 安全中心 应用服务，或将其关联的组策略设置配置为阻止其启动或运行，Windows 安全中心 应用可能会显示有关设备上安装的任何防病毒或防火墙产品的过时或不准确信息。
 > 如果具有Microsoft Defender 防病毒或过时的第三方防病毒程序，或者卸载之前可能安装的任何第三方防病毒产品，它也可能阻止用户自行启用。
@@ -42,17 +42,17 @@ ms.locfileid: "61560752"
 
 有关[可在Windows 安全中心](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center)监视的其他 Windows 安全功能，请参阅本文。
 
-Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户端接口。 这不是用于Microsoft Defender 安全中心 Microsoft [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)的 Web 门户。
+Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户端界面。 这不是用于Microsoft Defender 安全中心 Microsoft [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)的 Web 门户。
 
-## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>查看应用程序应用中的病毒和威胁Windows 安全中心设置
+## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>查看病毒和威胁防护应用中的病毒Windows 安全中心设置
 
 :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="病毒和威胁防护应用中Windows 安全中心设置。":::
 
-1. 通过单击Windows 安全中心中的防护图标或搜索 **"Defender for Cloud"** 的"开始"菜单打开"安全防护"应用。
+1. 通过Windows 安全中心任务栏中的防护图标或搜索"开始"菜单中的"开始"菜单 **，Windows 安全中心。**
 
 2. 选择病毒 **&威胁** 防护磁贴 (或左侧菜单栏上的防护) 。
 
-以下各节介绍如何在查看或交互由 Microsoft Defender 防病毒 应用中提供的威胁防护时执行一些最常见的Windows 安全中心任务。
+以下各节介绍如何在查看或与 Windows 安全中心 应用中的 Microsoft Defender 防病毒 所提供的威胁防护交互时执行一些最常见的任务。
 
 > [!NOTE]
 > 如果使用组策略配置和部署这些设置，本部分中所述的设置将灰出，并且无法用于各个终结点。 通过组策略对象进行的更改必须先部署到个别终结点，然后 Windows 设置中的相关设置才会更新。 Configure [end-user interaction with Microsoft Defender 防病毒](configure-end-user-interaction-microsoft-defender-antivirus.md)主题介绍了如何配置本地策略覆盖设置。
@@ -97,9 +97,9 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 
 2. 选择病毒 **&威胁** 防护磁贴 (或左侧菜单栏上的防护) 。
 
-3. 在"**管理设置"下**，选择 **"病毒&威胁防护设置"。**
+3. 在“**病毒和威胁防护设置**”下选择“**管理设置**”。
 
-4. 在"**排除项"** 设置下，选择 **"添加或删除排除项"。**
+4. 在 **"排除"** 下，**选择"添加或删除排除项"。**
 
 5. Select the plus icon (**+**) to choose the type and set the options for each exclusion.
 

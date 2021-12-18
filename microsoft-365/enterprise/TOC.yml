@@ -73,8 +73,6 @@
               href: microsoft-365-u-s-government-gcc-high-endpoints.md
             - name: 由世纪互联运营的 Office 365 终结点
               href: urls-and-ip-address-ranges-21vianet.md
-            - name: Office 365 Germany 终结点
-              href: microsoft-365-germany-endpoints.md
         - name: 内容分发网络
           href: content-delivery-networks.md
         - name: Office 365 服务中的 IPv6 支持
@@ -269,32 +267,6 @@
           href: o365-data-locations.md
         - name: 欧盟的数据位置
           href: eu-data-storage-locations.md
-        - name: Microsoft Cloud Deutschland
-          items:
-            - name: 概述
-              href: ms-cloud-germany-transition.md
-            - name: 哪些方面将发生更改
-              href: ms-cloud-germany-transition-experience.md
-            - name: 选择加入迁移
-              href: ms-cloud-germany-migration-opt-in.md
-            - name: 预迁移
-              href: ms-cloud-germany-transition-add-pre-work.md
-            - name: 迁移阶段操作和影响
-              href: ms-cloud-germany-transition-phases.md
-            - name: 迁移后
-              href: ms-cloud-germany-transition-add-experience.md
-            - name: 其他信息
-              items:
-                - name: AD FS 迁移步骤
-                  href: ms-cloud-germany-transition-add-adfs.md
-                - name: Azure AD
-                  href: ms-cloud-germany-transition-azure-ad.md
-                - name: CSP
-                  href: ms-cloud-germany-transition-add-csp.md
-                - name: 设备
-                  href: ms-cloud-germany-transition-add-devices.md
-                - name: 电子数据展示
-                  href: ms-cloud-germany-transition-add-scc.md
 - name: 标识
   items:
     - name: 路线图

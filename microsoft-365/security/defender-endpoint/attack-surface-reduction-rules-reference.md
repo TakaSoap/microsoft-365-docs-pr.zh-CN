@@ -16,12 +16,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4941f2aa207cfedffdb7dc9687023c3bdaa47ab2
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 64dbfb4c569c6ae388c0149789ead38ceddad0f4
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531918"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566491"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻击面减少规则
 
@@ -51,7 +51,7 @@ ms.locfileid: "61531918"
 > - 除非另有说明，否则最低 Windows 10 内部版本为版本 &nbsp; 1709 (RS3、内部版本 16299) 或更高版本;最低 Windows Server 内部版本为 &nbsp; 版本 1809 或更高版本。
 >
 
-| 规则名称 | Windows &nbsp; Server 2016 <sup> [[1](#fn1)]<sup></sup> | Windows &nbsp; Server 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
+| 规则名称 | Windows Server &nbsp; 2016 <sup> [[1](#fn1)]<sup></sup> | Windows Server &nbsp; 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
 |---|:---:|:---:|
 |[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y |
 |[阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes) | Y | Y |
@@ -69,7 +69,7 @@ ms.locfileid: "61531918"
 |[阻止从 USB 运行的不受信任的和未签名的进程](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y |
 |[阻止从宏Office Win32 API 调用](#block-win32-api-calls-from-office-macros) | N | N |
 |[使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware) | Y | Y |
-| **规则名称** | **Windows &nbsp; Server 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows Server &nbsp; 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
+| **规则名称** | **Windows Server &nbsp; 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows Server &nbsp; 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
 
  (<a id="fn1">1</a>) 2016 年 1 月指适用于 Windows Server 2012 和 2016 的新式统一解决方案。 有关详细信息，请参阅将[Windows 服务器载入到 Defender for Endpoint 服务](configure-server-endpoints.md)。
 
@@ -84,7 +84,7 @@ _结束公共预览版：支持的操作系统_
 > - 除非另有说明，否则最低 Windows 10 内部版本为版本 &nbsp; 1709 (RS3、内部版本 16299) 或更高版本;最低 Windows Server 内部版本为 &nbsp; 版本 1809 或更高版本。
 >
 
-|规则名称|Windows &nbsp; 10|Windows Server &nbsp; 2019|Windows &nbsp; 服务器|Windows &nbsp; Server 2016|Windows Server &nbsp; 2012 R2|
+|规则名称|Windows &nbsp; 10|Windows Server &nbsp; 2019|Windows &nbsp; 服务器|Windows Server &nbsp; 2016|Windows Server &nbsp; 2012 R2|
 |---|:---:|:---:|:---:|:---:|:---:|
 |[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y 版本 1803 (半年频道) 或更高版本 |  |  |
 |[阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes) | Y 版本 1809 或更高版本 | Y | Y  <br><br> |  |  |
@@ -95,14 +95,14 @@ _结束公共预览版：支持的操作系统_
 |[阻止执行可能混淆的脚本](#block-execution-of-potentially-obfuscated-scripts) | Y | Y <br><br> | Y <br><br> |  |  |
 |[阻止 JavaScript 或 VBScript 启动下载的可执行内容](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y <br><br> | Y <br><br> |  |  |
 |[阻止Office应用程序创建可执行内容](#block-office-applications-from-creating-executable-content) | Y | Y <br><br> | Y <br><br> |  |  |
-|[阻止Office应用程序将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y <br><br> | Y <br><br> |  |  |
+|[阻止Office将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y <br><br> | Y <br><br> |  |  |
 |[阻止Office应用程序创建子进程](#block-office-communication-application-from-creating-child-processes) | Y | Y <br><br> | Y <br><br> |  |  |
 |[通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription) <br><br> \*_不支持文件和文件夹排除项。_ | Y 版本 1903 (版本 18362) 或更高版本| Y | Y <br><br> 版本 1903 (版本 18362) 或更高版本 |  |  |
 |[阻止源自 PSExec 和 WMI 命令的进程创建](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y 版本 1803 或更高版本 | Y <br><br> | Y <br><br>  |  |  |
 |[阻止从 USB 运行的不受信任的和未签名的进程](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y <br><br> | Y <br><br> |  |  |
 |[阻止从宏Office Win32 API 调用](#block-win32-api-calls-from-office-macros) | Y | Y <br><br> | Y <br><br> |  |  |
 |[使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware) | Y 版本 1803 或更高版本 | Y <br><br> | Y <br><br> |  |  |
-| **规则名称** |  **Windows &nbsp; 10** | **Windows Server &nbsp; 2019** | **Windows &nbsp; 服务器** | **Windows &nbsp; Server 2016** | **Windows Server &nbsp; 2012 R2** |
+| **规则名称** |  **Windows &nbsp; 10** | **Windows Server &nbsp; 2019** | **Windows &nbsp; 服务器** | **Windows Server &nbsp; 2016** | **Windows Server &nbsp; 2012 R2** |
 
 ## <a name="supported-configuration-management-systems"></a>支持的配置管理系统
 
@@ -119,7 +119,7 @@ _结束公共预览版：支持的操作系统_
 |[阻止执行可能混淆的脚本](#block-execution-of-potentially-obfuscated-scripts) | Y |   |  Y  <br><br> CB 1710 | Y  | Y  |
 |[阻止 JavaScript 或 VBScript 启动下载的可执行内容](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y |   | Y <br><br> CB 1710 | Y  | Y  |
 |[阻止Office应用程序创建可执行内容](#block-office-applications-from-creating-executable-content) | Y |  |Y <br><br> CB 1710 | Y  | Y  |
-|[阻止Office应用程序将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes) | Y |  | Y <br><br> CB 1710 | Y  | Y  |
+|[阻止Office将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes) | Y |  | Y <br><br> CB 1710 | Y  | Y  |
 |[阻止Office应用程序创建子进程](#block-office-communication-application-from-creating-child-processes) | Y |  |Y <br><br> CB 1710 | Y  | Y  |
 |[通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription) |  |  |  |Y   | Y  |
 |[阻止源自 PSExec 和 WMI 命令的进程创建](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y |   |   |  Y | Y  |
@@ -253,13 +253,7 @@ GUID：`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件
 
-此规则阻止可执行文件（.exe、.dll 或 .scr）启动，除非满足以下任一条件：
-
-- 普遍：可执行文件在 1，000 多个终结点上找到
-- 年龄：可执行文件在 24 小时之前发布
-- 位置：可执行文件包含在受信任的列表或排除列表中
-
-启动不受信任的或未知的可执行文件可能会存在风险，因为最初可能不明确这些文件是恶意文件。
+此规则阻止可执行文件（.exe、.dll 或 .scr）启动。 因此，启动不受信任的或未知的可执行文件可能会存在风险，因为这些文件是否恶意最初可能不明确。
 
 > [!IMPORTANT]
 > 必须 [启用云保护才能](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 使用此规则。
@@ -321,9 +315,9 @@ GUID：`d3e037e1-3eb8-44c8-a917-57927947596d`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>阻止Office应用程序创建可执行内容
 
-此规则Office Word、Excel 和 PowerPoint 等应用创建潜在恶意可执行内容，从而阻止将恶意代码写入磁盘。
+此规则Office Word、Excel 和 PowerPoint 等应用阻止恶意代码写入磁盘，从而阻止这些应用创建潜在恶意可执行内容。
 
-滥用作为Office的恶意软件可能会尝试破坏安全Office恶意组件保存到磁盘。 这些恶意组件在计算机重新启动后将一直保留于系统。 因此，此规则可防御常见的持久性技术。
+滥用作为Office的恶意软件可能会尝试Office恶意组件保存到磁盘。 这些恶意组件在计算机重新启动后将一直保留于系统。 因此，此规则可防御常见的持久性技术。
 
 Intune 名称： `Office apps/macros creating executable content`
 
@@ -338,7 +332,7 @@ GUID：`3b576869-a4ec-4529-8536-b80a7769e899`
 
 依赖项：MDAV、RPC
 
-### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>阻止Office应用程序将代码注入其他进程
+### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>阻止Office将代码注入其他进程
 
 此规则阻止代码注入尝试Office应用注入其他进程。
 
@@ -365,7 +359,7 @@ GUID：`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 此规则阻止Outlook子进程，同时仍允许合法Outlook进程。
 
-此规则可防止社会工程攻击，并防止利用代码滥用Outlook。 它还[可Outlook用户](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)凭据遭到泄露时攻击者可能使用的规则和表单攻击。
+此规则可防止社会工程攻击，并防止利用代码滥用Outlook。 它还[可Outlook用户](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)凭据泄露时攻击者可能使用的规则和表单攻击。
 
 > [!NOTE]
 > 此规则阻止 DLP 策略提示和工具提示Outlook。 此规则仅适用于 Outlook Outlook.com。
@@ -410,7 +404,7 @@ GUID：`e6db77e5-3df2-4cf1-b95a-636979351e5b`
 此规则阻止通过 [PsExec](/sysinternals/downloads/psexec) 和 [WMI 创建](/windows/win32/wmisdk/about-wmi) 的进程运行。 PsExec 和 WMI 都可以远程执行代码，因此存在恶意软件滥用此功能以用于命令和控制目的，或在整个组织的网络中传播感染的风险。
 
 > [!WARNING]
-> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置管理器[Microsoft Endpoint Configuration Manager，因为](/configmgr)此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
+> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置[管理器Microsoft Endpoint Configuration Manager管理](/configmgr)不兼容，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
 
 Intune 名称： `Process creation from PSExec and WMI commands`
 

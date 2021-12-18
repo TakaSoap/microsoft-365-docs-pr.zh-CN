@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 对于 Microsoft 365 流量的目标 IP 地址和 URL，请针对不同 Microsoft 365 云的 Internet 终结点使用此文章列表。
-ms.openlocfilehash: 56e67304998a4031244fdbad63848f556fe94039
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ba2cb102bfee3ab49a563b0816b754788dec1015
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197313"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566647"
 ---
 # <a name="microsoft-365-endpoints"></a>Microsoft 365 终结点
 
@@ -44,7 +44,6 @@ ms.locfileid: "60197313"
 | [美国政府 DoD 端点](microsoft-365-u-s-government-dod-endpoints.md) | 针对美国国防部 (DoD) 订阅的端点。 |
 | [美国政府 GCC 高端点](microsoft-365-u-s-government-gcc-high-endpoints.md) | 针对美国政府社区云高（GCC 高）订阅的端点。 |
 | [由世纪互联运营的 Microsoft 365 终结点](urls-and-ip-address-ranges-21vianet.md) | 由世纪互联运营的 Microsoft 365 的终结点，旨在满足中国 Microsoft 365 的需求。 |
-| [Microsoft 365 Germany 终结点](microsoft-365-germany-endpoints.md) | 为德国、欧盟 (EU) 和欧洲自由贸易协会 (EFTA) 中监管最严格的客户在欧洲建立的独立云的端点。 |
 |||
 
 若要自动获取 Microsoft 365 云的最新终结点列表，请参阅 [Office 365 IP 地址和 URL Web 服务](microsoft-365-ip-web-service.md)。
