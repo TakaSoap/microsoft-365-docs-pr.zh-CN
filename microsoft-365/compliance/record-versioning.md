@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有关记录的信息，以便在 Microsoft 365 中实现记录管理解决方案。
-ms.openlocfilehash: 77a6cb185b599c6e96f3ff19331b233c9f28a318
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2d08a6a29d2bb4a32b0669bed8d97cda3767538a
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177383"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559996"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>使用记录版本控制来更新存储在 SharePoint 或 OneDrive 中的记录
 
@@ -30,6 +30,8 @@ ms.locfileid: "60177383"
 
 > [!NOTE]
 > 由于监管记录会阻止编辑，因此不提供适用于监管记录的版本控制。
+>
+> 还可以阻止租户的记录版本控制，即使未使用法规记录：转到 Microsoft 365 合规中心中的 **记录管理** 节点 >“**记录管理设置**” > “**保留标签**” > “**配置记录版本控制**”，然后禁用“**启用记录版本控制**”的设置。
 
 将文档标记为 [记录](records-management.md#records) 并限制可对记录执行的操作的功能是任何记录管理解决方案的基本目标。但是，用户可能还需要协作才能创建后续版本。
 
@@ -53,14 +55,14 @@ ms.locfileid: "60177383"
 当文档处于已解锁状态时，拥有标准编辑权限的任何用户均可编辑此文件。 但是，用户无法编辑此文件，因为它仍然是记录。 完成编辑后，用户可再次将“**记录状态**”从“**已解锁**”切换回“**已锁定**”，此状态下可阻止用户进一步编辑该记录。
 <br/><br/>
 
-![标记为记录的文档上的记录状态属性。](../media/recordversioning8.png)
+:::image type="content" alt-text="标记为记录的文档上的记录状态属性。" source="../media/recordversioning8.png" lightbox="../media/recordversioning8.png":::
 
 ## <a name="locking-and-unlocking-a-record"></a>锁定和解锁记录
 
 在向文档应用将内容标记为记录的保留标签后，任何拥有参与权限或更窄权限水平的用户可解锁记录或锁定未解锁的记录。
 <br/><br/>
 
-![记录状态显示记录文档已解锁。](../media/recordversioning9.png)
+:::image type="content" alt-text="记录状态显示记录文档已解锁。" source="../media/recordversioning9.png" lightbox="../media/recordversioning9.png":::
 
 当用户解锁记录时，将会发生以下操作：
 
@@ -81,7 +83,7 @@ ms.locfileid: "60177383"
 用户每次解锁记录时，最新版本将复制到保存保留库，且该版本包含版本历史记录的 **批注** 字段中 **"记录** "的值。
 <br/><br/>
 
-![保留库中显示的记录。](../media/recordversioning10.png)
+:::image type="content" alt-text="保留库中显示的记录。" source="../media/recordversioning10.png" lightbox="../media/recordversioning10.png":::
 
 要查看版本历史记录，请在文档库中选择一个文档，然后在项菜单中单击“版本历史记录”。
 

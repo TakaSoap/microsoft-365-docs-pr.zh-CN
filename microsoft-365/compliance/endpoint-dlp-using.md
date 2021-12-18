@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: d595e931e364aa04c0e4dd72dc996e1f93c7ab05
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: e6ab91d8baf3182cd857e7e6002f61b57a8f101e
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426395"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560596"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -59,11 +59,13 @@ ms.locfileid: "61426395"
 
 ### <a name="advanced-classification-scanning-and-protection"></a>高级分类扫描和保护
 
-#### <a name="get-registered"></a>注册
+<!--#### Get registered
 
-若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅[注册 Microsoft 365 macOS 支持](https://aka.ms/EndpointDLPIgnite21-Previews)。
+To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
 
-启用后，“**高级分类扫描和保护**”允许更高级的 Microsoft 365 基于云的数据分类服务，可以扫描项目、对项目进行分类，以及将结果返回到本地计算机。 这意味着你可以利用[准确数据匹配](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)分类、[命名实体（预览）](named-entities-learn.md#learn-about-named-entities-preview)和分类技术。
+When enabled,--> 
+
+高级分类扫描和保护允许更高级的 Microsoft 365 基于云的数据分类服务，可扫描项目、对其进行分类，以及将结果返回到本地计算机。 这意味着你可以利用[准确数据匹配](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)分类、[命名实体（预览）](named-entities-learn.md#learn-about-named-entities-preview)和分类技术。
 
 在高级分类中，内容从本地设备发送到云服务进行扫描和分类。 如果带宽利用率是关注的问题，则可以在此全局设置中设置一个限制，该限制适用于在滚动 24 小时周期内可以使用多少设备。 如果设置了带宽利用率限制且超出该限制，DLP 将停止将用户内容发送到云，并且将会继续在设备上本地进行数据分类。 当累积带宽利用率降至低于滚动的 24 小时限制时，将恢复与云服务的通信。
 
@@ -196,6 +198,14 @@ ms.locfileid: "61426395"
 
 > [!IMPORTANT]
 > 服务限制模式设置为“允许”时，在强制执行限制之前，必须至少配置一个服务域。
+
+使用服务域的 FQDN 格式，而不带结尾的 `.` 
+
+例如：
+
+ `www.contoso.com` 
+
+不支持通配符。
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>终结点 DLP 的其他设置
 
