@@ -12,12 +12,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: high
-ms.openlocfilehash: 6dcd4bae638a9193e1fba2c0719339a5ddedc18d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7e5acdde2d60db88b68273d0f1158ae1694a523e
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372848"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559948"
 ---
 # <a name="push-content-types-to-a-hub"></a>将内容类型推送到中心
 
@@ -43,6 +43,6 @@ ms.locfileid: "61372848"
 
 第一次将内容类型推送到现有中心和其现有关联站点时，从访问中心或关联站点开始，可能需要长达一小时的时间才能在站点中更新设置。与中心的任何新关联都不需要此等待，并且将在几分钟内反映设置。
 
-更新设置后，具有这些设置的内容类型将在几分钟内在任何与中心新关联的网站中变得可用。 默认库视图将更改为其中一个自动创建的视图。 然后，任何新创建的列表或库都将在创建后几分钟内自动添加该内容类型。 仅当推送的内容类型从文档内容类型直接或间接派生时，才会将其添加到文档库，并且仅在它不直接或间接从文档内容类型派生的情况下，才会将内容类型添加到列表中。
+更新设置后，具有这些设置的内容类型将在几分钟内在任何与中心新关联的网站中变得可用。 默认库视图将更改为其中一个自动创建的视图。 如果有多个内容类型推送到同一个库，则最新内容类型（基于将这些内容类型推送到此库所属中心的操作顺序）将设为默认视图。  然后，任何新创建的列表或库都将在创建后几分钟内自动添加该内容类型。 仅当推送的内容类型从文档内容类型直接或间接派生时，才会将其添加到文档库，并且仅在它不直接或间接从文档内容类型派生的情况下，才会将内容类型添加到列表中。
 
 ## <a name="see-also"></a>另请参阅

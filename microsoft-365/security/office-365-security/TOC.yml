@@ -162,6 +162,8 @@
               href: attack-simulation-training-simulation-automations.md
             - name: 攻击模拟训练中的有效负载自动化
               href: attack-simulation-training-payload-automations.md
+            - name: 攻击模拟训练的最终用户通知
+              href: attack-simulation-traning-end-user-notifications.md
             - name: 攻击模拟训练中的见解和报告
               href: attack-simulation-training-insights.md
             - name: 攻击模拟培训部署注意事项和常见问题解答

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: 3be5e7f0710155cb8e5e8e60e19577cf423190eb
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f3322af11f724920e5833182128346c1bc4c41c5
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165194"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559864"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
@@ -79,23 +79,25 @@ ms.locfileid: "61165194"
 
 |操作| 保留标签 |记录 - 已锁定| 记录 - 已解锁| 合规性记录 |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|编辑内容|允许 | **阻止** | 允许 | **阻止**|
-|编辑属性（包括重命名）|Allowed |允许 | 允许| **阻止**|
-|删除|允许 <sup>1</sup> |**阻止** |**阻止**| **阻止**|
-|复制|允许 |允许 | Allowed| Allowed|
-|在容器 <sup>2</sup> 中移动|允许 |允许 | Allowed| 允许|
-|围绕容器 <sup>2</sup> 移动|允许 |如果从未解锁，则允许 | **阻止** | **阻止**|
-|打开/读取|Allowed |Allowed | 允许| Allowed|
+|编辑内容|允许 | **阻止** | Allowed | **阻止**|
+|编辑属性（包括重命名）|Allowed |允许 <sup>1</sup> | Allowed | **阻止**|
+|删除|允许 <sup>2</sup> |**阻止** |**阻止**| **阻止**|
+|复制|Allowed |Allowed | Allowed| Allowed|
+|在容器 <sup>3</sup> 中移动|Allowed |Allowed | Allowed| Allowed|
+|跨容器 <sup>3</sup> 移动|允许 |如果从未解锁，则允许 | **阻止** | **阻止**|
+|打开/读取|允许 |Allowed | 允许| Allowed|
 |更改标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
 |删除标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
 
 页脚：
 
-<sup>1</sup>对于 SharePoint 和 OneDrive，可在 Microsoft 365 合规中心 > **记录管理** > **记录管理设置** > **保留标签** > **删除项目** 中作为租户设置被阻止。
+<sup>1</sup> 默认为允许，但可以由大于 0 字节的文件的租户设置阻止：转到 Microsoft 365 合规中心中的 **记录管理** 节点 >“**记录管理设置**” > “**保留标签**” > “**允许编辑记录属性**”，然后禁用设置“**允许用户编辑记录属性**”。
+
+<sup>2</sup> 对于 SharePoint 和 OneDrive，可在 Microsoft 365 合规中心 >“**记录管理**” > “**记录管理设置**” > “**保留标签**” > “**删除项**”中作为租户设置被阻止。
 
 当你将保留标签应用于具有文档附件的列表项时，该文档不会继承保留设置，因此可以从列表项中删除。 相比之下，如果该列表项被声明为带有保留标签的记录，则文档附件将继承保留设置，并且无法删除。
 
-<sup>2</sup> 个容器包括 SharePoint 文档库、OneDrive 帐户和 Exchange 邮箱。
+<sup>3</sup> 容器包括 SharePoint 文档库、OneDrive 帐户和 Exchange 邮箱。
 
 > [!IMPORTANT]
 > 合规性记录的最重要的差别是，在应用到内容后，任何人（哪怕是是全局管理员）都无法删除标签。
