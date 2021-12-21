@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1953dfe4c4c9f1e8303448f1d29aa9a8c4273102
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: d4052ef2e73b7b81630c8013e17cad533383b215
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218414"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578527"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上配置 Microsoft Defender for Endpoint
 
@@ -37,13 +37,13 @@ ms.locfileid: "61218414"
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>在 iOS 上通过 Defender for Endpoint 进行条件访问
 
-iOS 上的 Microsoft Defender for Endpoint 以及 Microsoft Intune Azure Active Directory启用基于设备风险评分强制执行设备合规性和条件访问策略。 Defender for Endpoint 是移动威胁防护 (MTD) 解决方案，你可以部署该解决方案以通过 Intune 利用此功能。
+iOS 上的 Microsoft Defender for Endpoint 以及 Microsoft Intune 和 Azure Active Directory 支持根据设备风险评分强制实施设备合规性和条件访问策略。 Defender for Endpoint 是移动威胁防护 (MTD) 解决方案，你可以部署该解决方案以通过 Intune 利用此功能。
 
 若要详细了解如何使用 iOS 上的 Defender for Endpoint 设置条件访问，请参阅[Defender for Endpoint 和 Intune。](/mem/intune/protect/advanced-threat-protection)
 
 ### <a name="jailbreak-detection-by-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的越狱检测
 
-Microsoft Defender for Endpoint 能够检测已越狱的非托管和托管设备。 如果检测到设备已越狱，高风险警报将报告给Microsoft 365 Defender 门户，如果根据设备风险评分设置条件访问，则设备将阻止访问公司数据。
+Microsoft Defender for Endpoint 能够检测已越狱的非托管和托管设备。 如果检测到设备已越狱，高风险警报将报告给Microsoft 365 Defender 门户，如果根据设备风险评分设置条件访问，则设备将阻止其访问公司数据。
 
 ## <a name="web-protection-and-vpn"></a>Web 保护和 VPN
 
@@ -51,7 +51,7 @@ Microsoft Defender for Endpoint 能够检测已越狱的非托管和托管设备
 
 虽然默认启用，但在某些情况下可能需要你禁用 VPN。 例如，你想要运行一些在配置 VPN 时不起作用的应用。 在这种情况下，你可以选择按照以下步骤在设备上禁用应用中的 VPN：
 
-1. 在 iOS 设备上，打开"设置应用"，单击 **或点击"** 常规 **"，** 然后单击 **"VPN"。**
+1. 在 iOS 设备上，打开 **"设置应用**"，单击 **或点击"** 常规"，然后单击 **"VPN"。**
 1. 单击或点击 Microsoft Defender for Endpoint 的"i"按钮。
 1. 关闭 **"连接按需"** 以禁用 VPN。
 
@@ -65,15 +65,15 @@ Microsoft Defender for Endpoint 能够检测已越狱的非托管和托管设备
 
 Apple iOS 不支持多个设备范围的 VPN 同时处于活动状态。 虽然设备上可以存在多个 VPN 配置文件，但一次只能有一个 VPN 处于活动状态。
 
-## <a name="configure-microsoft-defender-for-endpoint-risk-signal-in-app-protection-policy-mam"></a>在 MAM 应用保护策略中配置 Microsoft Defender (终结点) 
+## <a name="configure-microsoft-defender-for-endpoint-risk-signal-in-app-protection-policy-mam"></a>在 MAM 应用保护策略中为终结点风险信号 (Microsoft Defender) 
 
-Microsoft Defender for Endpoint 可以配置为发送要用于应用保护策略 (APP（也称为 iOS/iPadOS 上的 MAM) MAM 应用） 中的威胁信号。 借助此功能，也可使用 Microsoft Defender for Endpoint 保护从注销的设备访问公司数据。
+Microsoft Defender for Endpoint 可以配置为发送要用于应用保护策略 (APP（也称为 iOS/iPadOS 上的 MAM) ）中的威胁信号。 借助此功能，也可使用 Microsoft Defender for Endpoint 保护从注销的设备访问公司数据。
 
 使用 Microsoft Defender for Endpoint 设置应用保护策略的步骤如下所示：
 
-1. 设置从你的 Microsoft Endpoint Manager 租户到 Microsoft Defender for Endpoint 的连接。 在 [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心 中，转到"设置) "下的"跨平台) 或终结点安全 Microsoft Defender \>  \> **for**  \> **Endpoint** ("下的"适用于终结点的 Microsoft Defender (租户管理连接器和令牌"，然后打开适用于 **iOS** 的应用保护策略 设置 下的切换。
+1. 设置从你的 Microsoft Endpoint Manager 租户到 Microsoft Defender for Endpoint 的连接。 在 [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心中，转到"设置) "下的"跨平台) 或 Endpoint Security Microsoft Defender for Endpoint ("下的"租户管理连接器和 \>  \> **令牌 Microsoft Defender for Endpoint**  \>  ("，然后打开适用于 **iOS** 的应用保护策略 设置 下的切换。
 1. 选择“保存”。 应看到"**连接状态**"现在设置为"**已启用"。**
-1. 创建应用保护策略：完成 Microsoft Defender for Endpoint 连接器设置后，导航到"策略 (下的应用应用保护策略) 以创建新策略或 \> 更新现有策略。
+1. 创建应用保护策略：完成 Microsoft Defender for Endpoint 连接器设置后，导航到策略 (下的应用应用保护策略) 以创建新策略或更新 \> 现有策略。
 1. 选择组织为策略 **所需的** 平台、应用、数据保护、访问要求设置。
 1. 在 **"条件启动** \> **设备条件**"下，你将找到设置 **"允许的最大设备威胁级别"。** 这将需要配置为低、中、高或安全。 可用操作为"阻止 **访问"或**"**擦除数据"。** 在此设置生效之前，你可能会看到一个信息对话框，确保你已设置连接器。 如果连接器已设置，可以忽略此对话框。
 1. 完成分配并保存策略。
@@ -85,6 +85,27 @@ Microsoft Defender for Endpoint 可以配置为发送要用于应用保护策略
 iOS 上的 Microsoft Defender for Endpoint 支持应用保护策略方案，并且适用于 Apple 应用商店。
 
 最终用户应直接从 Apple 应用商店安装应用的最新版本。
+
+## <a name="privacy-controls"></a>隐私控制
+
+> [!IMPORTANT]
+> 适用于 iOS 上的 Microsoft Defender 终结点的隐私控件预览版。 以下信息与预发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
+
+### <a name="configure-privacy-in-phish-alert-report"></a>在网络钓鱼警报报告中配置隐私
+
+客户现在可以为 iOS 上的 Microsoft Defender for Endpoint 发送的网络钓鱼报告启用隐私控制。 这将确保在 Microsoft Defender for Endpoint 检测到并阻止网络钓鱼网站时，域名不会作为网络钓鱼警报的一部分发送。
+
+使用以下步骤启用隐私，并且不会收集域名作为网络钓鱼警报报告的一部分。
+
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** App  >  **configuration policies**  >  **Add**  >  **Managed devices**.
+1. 为策略命名"Platform **> iOS/iPadOS"，** 选择配置文件类型。
+1. 选择 **Microsoft Defender for Endpoint** 作为目标应用。
+1. 在设置页面中，选择"使用配置设计器"，将 **DefenderExcludeURLInReport** 添加为密钥和值类型作为 **布尔值类型**
+   - 若要启用隐私，并且不收集域名，请输入值作为 `true` ，并将此策略分配给用户。 默认情况下，此值设置为 `false` 。
+   - 对于密钥设置为 的用户，只要 Defender for Endpoint 检测到并阻止恶意站点，网络钓鱼警报将 `true` 不包含域名信息。
+1. 单击 **"** 下一步"，并将此配置文件分配给目标设备/用户。
+
+打开或关闭上述隐私控制不会影响设备合规性检查或条件访问。
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>针对越狱设备配置合规性策略
 

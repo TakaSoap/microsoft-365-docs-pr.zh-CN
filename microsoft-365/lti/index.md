@@ -12,30 +12,27 @@ search.appverid: ''
 ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: ''
-description: 了解 M365 中的 Learning Tools Interoperability (LTI) Office 应用，以及他们将 Office 应用集成到其 Learning Management System (LMS) 时如何帮助教师。
-ms.openlocfilehash: bfe9bad68d1bf8a6839bfa2a0463a9c52102c862
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解 M365 中的 Learning Tools Interoperability (LTI) Office 应用，以及他们将 Office 应用集成到其 Learning Management System (LMS) 中时如何帮助教师。
+ms.openlocfilehash: d6fbce11bf583a168f6b0d71f9aa15f144179515
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213969"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578063"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>将 Microsoft 产品与 LEARNING Management System (LMS) 
 
-> [!IMPORTANT]
-> 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
-
-- [OneDriveLTI 与 Canvas](#onedrive-lti-with-canvas)
-- [Teams会议 LTI 与画布](#teams-meetings-lti-with-canvas)
+- [OneDrive画布使用 LTI](#onedrive-lti-with-canvas)
+- [Teams画布的 LTI 会议](#teams-meetings-lti-with-canvas)
 - [Teams类 LTI](#teams-classes-lti)
 
-Microsoft 教育部和第三方合作伙伴了解，教学和学习流程跨越了解决方案边界。 我们正在努力提供更加无缝的体验，让教师和教师专注于他们的目标，而不是必须拼接工具。 我们将在任何进行教学和学习的地方集成 Microsoft 产品，包括 LMS Learning Management Systems () 。 我们已与 LMS 合作伙伴合作，使用[Learning Tools Interoperability (LTI) 标准](https://www.imsglobal.org/activity/learning-tools-interoperability)创建一套工具，将 Microsoft 的最佳功能直接引入 LMS。
+Microsoft 教育部和第三方合作伙伴了解，教学和学习流程跨越了解决方案边界。 我们正在努力提供更加无缝的体验，让教师和教师专注于他们的目标，而不是必须拼接工具。 我们将在进行教学和学习的地方集成 Microsoft 产品，包括 LEARNING Management Systems (LMS) 。 我们已与 LMS 合作伙伴合作，使用[Learning Tools Interoperability (LTI) 标准](https://www.imsglobal.org/activity/learning-tools-interoperability)创建一套工具，将 Microsoft 的最佳功能直接引入 LMS。
 
-这些工具包括新的 OneDrive LTI 应用、新的 Teams Meetings LTI 应用和一个新的 Teams LTI 应用。 这些新工具高度安全，与 LTI 1.3 和 LTI 优势标准完全兼容。 使用 OneDrive LTI 应用，教师和学生可以直接将OneDrive云存储和Office 365到 LMS 中的作业和内容创建工作流中。 通过 Teams 会议 LTI 应用，教师和学生可以管理、安排和访问其 TEAMS 会议，这些会议位于 LMS 的会议中心内。 课堂Teams LTI 应用允许教师使用 LMS 课程名单和每日名单更新，在其 LMS 内为课程创建团队。 然后，学生可以从 LMS 内访问团队。 我们很高兴将这些新工具引入客户，并根据你的反馈继续改进我们的解决方案。
+这些工具包括新的 OneDrive LTI 应用、新的 Teams 会议 LTI 应用和一个新的 Teams LTI 应用。 这些新工具高度安全，与 LTI 1.3 和 LTI 优势标准完全兼容。 使用 OneDrive LTI 应用，教师和学生可以直接将OneDrive云存储和Office 365到 LMS 中的作业和内容创建工作流中。 通过Teams会议 LTI 应用，教师和学生可以管理、安排和访问其 Teams 会议，这些会议位于 LMS 的会议中心内。 课堂Teams LTI 应用允许教师使用 LMS 课程名单和每日名单更新，在其 LMS 内为课程创建团队。 然后，学生可以从 LMS 内访问团队。 我们很高兴将这些新工具引入客户，并根据你的反馈继续改进我们的解决方案。
 
-## <a name="onedrive-lti-with-canvas"></a>OneDriveLTI 与 Canvas
+## <a name="onedrive-lti-with-canvas"></a>OneDrive画布使用 LTI
 
-详细了解如何对 LMS Microsoft OneDrive Learning 使用 () 。
+详细了解如何对 LMS Microsoft OneDrive使用 Learning Management System () 。
 
 - **将Microsoft Office 365直接引入工作流**
 
@@ -51,11 +48,11 @@ Microsoft 教育部和第三方合作伙伴了解，教学和学习流程跨越�
 
 - **新式和丰富用户体验**
 
-Microsoft OneDrive LTI 应用将 Microsoft 的最佳功能融入到你的 LMS 体验中。 我们正在改进 LMS 中现有的 Office 365 集成，提供更现代用户体验，包括新的扩展 Microsoft OneDrive 文件选取器以及针对 Office 文件的更丰富的编辑体验。 Microsoft 还将完全拥有 Microsoft OneDrive LTI 应用，这意味着你始终自动获得最新且最最好的 LTI 应用。
+MICROSOFT ONEDRIVE LTI 应用将 Microsoft 的最佳功能融入到你的 LMS 体验中。 我们正在改进 LMS 中现有的 Office 365 集成，提供更现代用户体验，包括新的扩展的 Microsoft OneDrive 文件选取器以及更丰富的 Office 文件编辑体验。 Microsoft 还将完全拥有 Microsoft OneDrive LTI 应用，这意味着你始终自动获得最新且最最好的 LTI 应用。
 
 使用 Microsoft OneDrive LTI 应用，你可以：
 
-- 从Office 365内容编辑器中附加 PowerPoint 文件，Excel Word 文档、演示文稿和文档。
+- 从Office 365内容编辑器中附加 PowerPoint 文件，包括 Word 文档PowerPoint演示文稿和文档Excel文档。
 - 分配Office 365分配。
 - 查看和组织你的个人和课程Microsoft OneDrive文件。
 - 创建协作，课程成员可以实时协作处理共享文档。
@@ -65,9 +62,9 @@ Microsoft OneDrive LTI 应用将 Microsoft 的最佳功能融入到你的 LMS �
 
 有关配置步骤，请参阅将[Microsoft OneDrive LTI 与 Canvas 集成](onedrive-lti.md)。
 
-## <a name="teams-lti-apps"></a>TeamsLTI 应用
+## <a name="teams-lti-apps"></a>Teams LTI 应用
 
-### <a name="teams-meetings-lti-with-canvas"></a>Teams会议 LTI 与画布
+### <a name="teams-meetings-lti-with-canvas"></a>Teams画布的 LTI 会议
 
 Microsoft Teams会议 LTI 应用可帮助管理员将Teams合并到教育机构的 LMS 课程。 教师和学生可以查看过去和即将召开的会议、安排个人或定期会议，以及加入与课程相关的团队会议，所有这些都来自 LMS。
 
