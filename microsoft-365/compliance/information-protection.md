@@ -17,36 +17,37 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 recommendations: false
-description: 实施 Microsoft 信息保护 (MIP)，无论在何处生活或旅居在外，均可助你保护敏感信息。
-ms.openlocfilehash: 45448ee509b580a5fbd35388b95f130b684325d4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: 实施 Microsoft 信息保护 (MIP) 功能，无论在何处生活或旅居在外，均可助你保护敏感信息。
+ms.openlocfilehash: b3c7fc80f3735452ece4361ae3031ef6aa8f6bfc
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369680"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61577777"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息保护
 
 >*[Microsoft 365 安全和合规性许可](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-实施 Microsoft 信息保护 (MIP)，无论在何处生活或旅居在外，均可助你发现、分类和保护敏感信息。
+实施 Microsoft 信息保护 (MIP) 功能，无论在何处生活或旅居在外，均可助你发现、分类和保护敏感信息。
 
 MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-your-data)、[保护数据](#protect-your-data)和[防止数据丢失](#prevent-data-loss)的工具。
 
 ![有关 MIP 如何帮助你发现、分类和保护敏感数据的图像。](../media/powered-by-intelligent-platform.png)
 
+关于为组织部署 MIP 解决方案的规范性指导，请参阅 [部署 Microsoft 信息保护解决方案](information-protection-solution.md)。
+
 有关管理数据的信息，请参阅 [Microsoft 365 中的 Microsoft 信息管理](manage-Information-governance.md)。
 
 ## <a name="know-your-data"></a>了解你的数据
 
-若要了解在混合环境中的数据全景并发现重要数据，请使用以下功能：
+若要了解在混合环境中的数据全景并发现敏感数据，请使用以下功能:
 
 |功能|它能解决什么问题？|开始行动|
 |:------|:------------|:--------------------|
 |[敏感信息类型](sensitive-information-type-learn-about.md)| 使用内置或自定义正则表达式或函数识别敏感数据。补强证据包括关键字、可信度和接近度。| [自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)|
 |[可训练的分类器](classifier-learn-about.md)| 通过使用您感兴趣的数据示例而不是识别项中的元素来标识敏感数据（模式匹配）。 可使用内置分类器，或使用自己的内容培训分类器。| [可训练的分类器入门](classifier-get-started-with.md) |
 |[数据分类](data-classification-overview.md) | 组织中具有敏感度标签、保留标签或已分类的项目的图形标识。 此信息还可用于深入了解用户正在针对这些项目采取的操作。 | [内容资源管理器入门](data-classification-content-explorer.md) <p> [活动资源管理器入门](data-classification-activity-explorer.md) |
-|[Azure Purview](/azure/purview/overview) |识别敏感数据并将自动标签应用于 Azure Purview 资产中的任何内容，如 Azure Blob 存储、Azure 文件存储、Azure Data Lake Storage 和多云数据源。 |[在 Azure Purview 中贴标签](/azure/purview/create-sensitivity-label) |
 
 ## <a name="protect-your-data"></a>保护数据
 
@@ -63,6 +64,7 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
 [权限管理连接器](/azure/information-protection/deploy-rms-connector) |保护 - 仅适用于使用 Exchange 或 SharePoint Server 的现有本地部署，或运行 Windows Server 和文件分类基础结构的文件服务器 (FCI) 的文件服务器。 | [部署 RMS 连接器的步骤](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Azure 信息保护统一标记扫描器](/azure/information-protection/deploy-aip-scanner)| 发现、标记和保护驻留在本地数据存储区中的敏感信息。 | [配置和安装 Azure 信息保护统一标记扫描器](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| 发现、标记和保护驻留在云中数据存储区内的敏感信息。 | [发现、分类、标记和保护存储在云中的管控和敏感数据](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[Azure Purview](/azure/purview/overview) |标识敏感数据并对 Azure Purview 资产中的内容应用自动标记。 其中包含存储中的文件，如 Azure Data Lake 和 Azure Files，以及 Azure SQL DB 和 Cosmos DB 中的列等图表化数据。 |[在 Azure Purview 中贴标签](/azure/purview/create-sensitivity-label) |
 |[Microsoft 信息保护 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|将灵敏度标签扩展到第三方应用和服务。 <p> 示例方案： [设置和获取灵敏度标签 (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft 信息保护 (MIP) SDK 安装和配置](/information-protection/develop/setup-configure-mip)|
 
 
