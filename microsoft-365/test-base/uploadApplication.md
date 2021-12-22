@@ -3,7 +3,7 @@ title: 上载包
 description: 如何将应用程序、二进制文件和依赖项上传到测试库
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: rshastri
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
@@ -14,16 +14,16 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 2bda97c9168f7d3162c07ece4629dad795645638
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 99b25757b3f7b0b3d4fcd43f97bab2ac303de6fa
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154130"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586177"
 ---
 # <a name="step-2-uploading-a-package"></a>步骤 2：上载程序包
 
-在"测试基础门户"页上，Upload左侧导航栏上的"新建程序包"选项，如下所示：
+在"测试基础门户"页上，导航Upload左侧导航栏上的"新建程序包"选项，如下所示：
 
 :::image type="content" alt-text="Upload一个新程序包。" source="Media/Upload-New-Package.png" lightbox="Media/Upload-New-Package.png":::
 
@@ -42,7 +42,7 @@ ms.locfileid: "60154130"
     > [!NOTE]
     > 输入的程序包名称和版本组合在组织中必须是唯一的。 检查标记对此进行验证，如下所示。
 
-    - 如果选择重复使用程序包的名称，版本号必须是唯一的 (也就是说，从不用于包含该特定名称的程序包) 。
+    - 如果选择重复使用程序包的名称，则版本号必须是唯一 (，即从不用于包含该特定名称的程序包) 。
 
     - 如果程序包名称 + 版本的组合未通过唯一性检查，你将看到一条错误消息，显示"程序包包含此程序包版本 *已存在"。*
 
@@ -54,7 +54,7 @@ ms.locfileid: "60154130"
 
 3. 选择要在此程序包上运行的测试类型。
 
-      **Out-of-box (OOB)***测试执行程序包* 的安装、启动、*关闭* 和卸载。 安装后，在运行单个卸载之前，launch-close 例程将重复 30 次。
+    开 **箱即用 OOB (OOB)***测试将执行* 程序包的安装、启动、*关闭* 和卸载。 安装后，在运行单个卸载之前，launch-close 例程将重复 30 次。
 
     此 OOB 测试提供了程序包上的标准化遥测，可跨内部版本Windows比较。
 
@@ -74,11 +74,11 @@ ms.locfileid: "60154130"
 
 5. 选择操作系统版本 () 安全更新测试。
 
-    在多选下拉列表中，选择操作系统版本 () Windows程序包的程序包。
+    在多选下拉列表中， (安装) Windows操作系统版本。
 
-    - 若要仅针对客户端Windows测试程序包，请从菜单Windows 11 操作系统版本。
-    - 若要仅针对 Windows Server 操作系统测试程序包，请从Windows选择适用的服务器操作系统版本。
-    - 若要仅针对 Windows 和 Windows Server 操作系统测试程序包，请从菜单列表中选择所有适用的操作系统。
+    - 若要仅针对客户端Windows测试程序包，请从Windows列表中选择适用的客户端操作系统版本。
+    - 若要仅针对 Windows Server 操作系统测试程序包，请从Windows列表中选择适用的 Windows Server 操作系统版本。
+    - 若要针对客户端Windows和 Windows Server 操作系统测试程序包，请从菜单列表中选择所有适用的操作系统。
 
     > [!NOTE]
     > 如果选择针对服务器和客户端 OSes 测试程序包，请确保程序包兼容，并且可在两个 OSes 上运行
@@ -94,7 +94,7 @@ ms.locfileid: "60154130"
 
       我们目前使用预览体验成员 Beta 渠道中测试的内部版本。
 
-    - 在"为 Insight 选择操作系统基线"选项上，Windows要用作比较测试结果基线的 OS 版本。
+    - 在"为 Insight 选择操作系统基线"选项上，Windows用作比较测试结果的基线的 OS 版本。
 
     > [!NOTE]
     > 目前我们不支持服务器 OSes 的功能更新测试
@@ -115,7 +115,7 @@ ms.locfileid: "60154130"
 我们的下一篇文章介绍了将二进制文件上传到服务。
 
 > [!div class="nextstepaction"]
-> [下一步](binaries.md)
+> [后续步骤](binaries.md)
 
 <!---
 Add button for next page

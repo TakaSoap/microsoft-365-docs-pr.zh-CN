@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 3d190db3b3df060075f55adbb2eeaf4cabf64284
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 03251d9f3b09f0c6a54b76298e16957c32737f44
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071434"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586671"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -382,41 +382,6 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 - [Remove-AutoSensitivityLabelRule](/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
-
-## <a name="recent-enhancements-for-auto-labeling-policies"></a>自动标记策略的最新增强功能
-
-最近推出的针对 OneDrive 和 SharePoint 的自动标签策略的最新增强功能与之前的版本相比有以下改进：
-
-- 每个租户最多可以有 100 个自动标签策略，而不是 10 个。
-
-- 支持所有 OneDrive 和 SharePoint 站点 (新策略的默认值)，并能选择可用的 SharePoint 站点，而不必按 URL 输入每个站点。 当使用新的 **“全部”** 默认值时，租户中所有现有的 SharePoint 站点和 OneDrive 账户以及任何新创建的站点和账户都将自动包含在策略中。 选择为 SharePoint **“选择站点”** 时，如有需要，仍可通过其 URL 手动输入站点。
-
-- 在自动标记策略中指定单个站点时，现在最多支持 100 个站点，而不是 10 个站点。
-
-- 在模拟模式下，每个自动标记策略最多有 1,000,000 个匹配文件。 如果在模拟期间匹配的文件数超过此数目，则无法打开策略。 重新配置自动标记策略以匹配较少的文件数，然后重新运行模拟。
-
-- 模拟改进:
-  - 在模拟模式下运行自动贴标策略，在 12 小时内完成，而不是长达 48 小时。
-  - 通过为每个站点 (OneDrive 或 SharePoint) 提供多达 100 个随机抽样的匹配文件供审查，而不是每个匹配项目供审查，从而提高性能。
-  - 模拟完成后，将向配置为接受 [活动警报](alert-policies.md) 的用户发送电子邮件通知。
-
-- 改进措施以帮助审查匹配的项目:
-  - 已取样匹配项目的额外元数据信息。
-  - 能够导出有关匹配项目的信息，如 SharePoint 站点名称和文件所有者。 可以使用这些信息来透视和分析匹配的文件，并在需要时委托给文件所有者进行审查。
-
-> [!TIP]
-> 若要利用所支持的更多策略和站点，使用 PowerShell 有效地创建新的策略，并向现有策略添加额外的站点。 有关详细信息，请参阅本页面上的 [使用 PowerShell 自动标记策略](#use-powershell-for-auto-labeling-policies) 部分。
-
-### <a name="how-to-determine-whether-your-tenant-has-the-new-enhancements"></a>如何确定租户是否有新的改进措施
-
-当租户拥有新的增强功能时，会在 **自动标记** 标签上看到以下通知:
-
-![确认租户拥有新的增强功能的通知横幅。](../media/auto-labeling-updatedbanner.png)
-
-> [!NOTE]
-> 如果租户收到新的增强功能时，有任何处于模拟模式的自动标记策略，则必须重新运行模拟。 如果此方案适用于你，则在查看模拟时，系统会提示选择 **“重启模拟”**。 如果不重新启动模拟，则无法完成。
->
-> 然而，这些增强功能仍然适用于任何不经模拟而运行的自动标记策略以及所创建的所有新的自动标记策略。
 
 ## <a name="tips-to-increase-labeling-reach"></a>提高标记覆盖范围的提示
 
