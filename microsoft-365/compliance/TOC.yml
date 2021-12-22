@@ -144,6 +144,8 @@
   items:
     - name: 了解数据，保护数据，避免丢失。
       href: information-protection.md
+    - name: 部署 MIP 解决方案
+      href: information-protection-solution.md
     - name: 默认标签和 Microsoft 信息保护策略
       href: mip-easy-trials.md
     - name: 敏感信息类型
