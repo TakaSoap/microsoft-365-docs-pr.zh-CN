@@ -267,11 +267,7 @@
 ### [在 Microsoft Defender for Endpoint 中托管防火墙报告](host-firewall-reporting.md)
 
 ### [减少攻击面]()
-#### [减少攻击面概述](overview-attack-surface-reduction.md)
-#### [配置攻击面减少功能](configure-attack-surface-reduction.md)
-#### [为攻击面减少使用审核模式](audit-windows-defender.md)
-#### [查看攻击面减少活动](event-views.md)
-#### [关于攻击面减少的常见问题解答](attack-surface-reduction-faq.yml)
+#### [了解并使用攻击面减少](overview-attack-surface-reduction.md)
 #### [攻击面减少（ASR）规则]()
 ##### [了解 ASR 规则](attack-surface-reduction.md)
 ##### [部署 ASR 规则](attack-surface-reduction-rules-deployment.md)
@@ -283,6 +279,7 @@
 ##### [评估 ASR 规则](evaluate-attack-surface-reduction.md)
 ##### [启用 ASR 规则](enable-attack-surface-reduction.md)
 ##### [自定义 ASR 规则](customize-attack-surface-reduction.md)
+#### [关于攻击面减少的常见问题解答](attack-surface-reduction-faq.yml)
 
 ### 下一代保护
 #### [下一代保护概述](next-generation-protection.md)
