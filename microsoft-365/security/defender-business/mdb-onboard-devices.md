@@ -1,5 +1,5 @@
 ---
-title: '将设备载入 Microsoft Defender for Business (预览) '
+title: '将设备载入 Microsoft Defender for Business (预览版) '
 description: '了解 Microsoft Defender for Business 预览版中的设备载入 (选项) '
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/23/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,14 +16,14 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 2b86836926546c8efdb17d760a406c0be31dc65d
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: c5c5d2116ab3a1f06bc7b1d3f5e3be7aceaee78b
+ms.sourcegitcommit: 5912d47da483d24cb76715e4b9894104f2a181e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507717"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609093"
 ---
-# <a name="onboard-devices-to-microsoft-defender-for-business-preview"></a>将设备载入 Microsoft Defender for Business (预览) 
+# <a name="onboard-devices-to-microsoft-defender-for-business-preview"></a>将设备载入 Microsoft Defender for Business (预览版) 
 
 > [!IMPORTANT]
 > Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
@@ -55,9 +55,9 @@ ms.locfileid: "61507717"
 
 | 载入方法  | 说明  |
 |---------|---------|
-| **自动载入**<br/> (*已使用 Microsoft Endpoint Manager)* | 如果你在获取 Defender for Business Microsoft Endpoint Manager预览版之前 (已) ，则 Defender for Business 将检测到这一点。 系统将会询问你是否要对之前已载入到 Microsoft Endpoint Manager 的设备使用自动载入Microsoft Endpoint Manager。 自动载入在 Defender for Business (预览版) 和 Microsoft Endpoint Manager 之间设置连接，然后将设备载入 Defender for Business (预览版) 。 此选项使你可以快速、高效地将设备载入 Defender for Business (预览) 预览版。<br/><br/>如果你选择自动载入过程，则 *所有在* Microsoft Endpoint Manager注册的设备都将载入到适用于终结点的 Defender。 <br/><br/>如果你想要使用自动载入，请跳过本文中的过程，然后继续执行步骤 [5： ](mdb-configure-security-settings.md)在 Microsoft Defender for Business 中配置安全设置和策略 (预览版) 。  |
-| **本地脚本**<br/> (*预览期间推荐使用;可用于* 一次载入几台设备)   | 在预览版中，可以使用本地脚本在 Defender for Business (预览) 载入设备。 Microsoft Defender for Business (预览版) 可下载的脚本，可以在 Windows 10 11 设备上使用。 在设备上运行脚本将创建与 Azure Active Directory (Azure AD) 的信任，并注册设备Microsoft Intune。<br/><br/>如果要使用此方法，请继续执行使用 Microsoft 365 Defender[中的本地脚本载入设备](#onboard-a-device-using-a-local-script-in-defender-for-business)。 |
-| **Microsoft Intune** <br/> (*已使用 Microsoft Intune)* | 如果你在获取 Defender for Business Microsoft Intune预览版之前 (过) ，可以使用 Microsoft Intune载入设备。 例如，在预览期间，你可以将 iOS、macOS、Linux 和 Android 设备载入 Defender for Business (预览版) 。 <br/><br/>如果你想要使用此方法，请参阅 [Intune 中的设备注册](/mem/intune/enrollment/device-enrollment)。 |
+| **自动载入**<br/> (*已使用 Microsoft Endpoint Manager)* | 如果你在获取 Defender for Business Microsoft Endpoint Manager预览版之前 (已) ，Defender for Business 将检测到这一点。 系统将会询问你是否要对之前已载入到 Microsoft Endpoint Manager 的设备使用自动载入Microsoft Endpoint Manager。 <br/><br/>自动载入在 Defender for Business (预览版) 和 Microsoft Endpoint Manager 之间设置连接，然后将设备载入到 Defender for Business (预览) 。 此选项使你能够快速高效地将设备载入 Defender for Business (预览) 预览版。 当前Windows注册的所有Microsoft Endpoint Manager都将载入到 Defender for Business。 <br/><br/>如果选择自动载入，请跳过本文中的过程，然后继续执行步骤 [5： ](mdb-configure-security-settings.md)在 Microsoft Defender for Business 中配置安全设置和策略 (预览) 。  |
+| **本地脚本**<br/> (*预览期间推荐使用;可用于* 一次载入几台设备)   | 在预览期间，可以使用在 macOS、Windows 10 或 11 以及 Linux 设备上下载和运行的脚本在 Defender for Business (预览版) 中载入设备。 在设备上运行脚本将创建与 Azure Active Directory (Azure AD) 的信任，并注册设备Microsoft Intune。 此过程与将设备载入 [到 Microsoft Defender for Endpoint 的过程非常相似](../defender-endpoint/onboarding.md)。<br/><br/>若要使用此方法，请继续执行使用 Microsoft 365 Defender[中的本地脚本载入设备](#onboard-a-device-using-a-local-script-in-defender-for-business)。 |
+| **Microsoft Intune** <br/> (*已使用 Microsoft Intune)* | 如果你在获取 Defender for Business [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)预览版之前 (已) ，Microsoft Intune设备。 在预览版中，Microsoft Intune将 Windows、iOS、macOS、Linux 和 Android 设备载入 Defender for Business (预览版) 。 <br/><br/>若要使用此方法，请参阅 [Intune 中的设备注册](/mem/intune/enrollment/device-enrollment)。 |
 
 > [!TIP]
 > 如果在载入设备时出错，请参阅 Microsoft Defender for Business ([预览) 疑难解答](mdb-troubleshooting.yml)。 
@@ -68,32 +68,30 @@ ms.locfileid: "61507717"
 
 2. 在导航窗格中，**选择"设置**  >  **终结点"，** 然后在"设备管理"下选择 **"载入"。**
 
-3. 选择 **Windows 10 11"，** 然后在"载入 **设备**"下的"部署方法"部分，选择"**本地脚本"。** 
+3. 选择操作系统（如 Windows 10 **和 11，** 然后在"载入 **设备**"下的"部署方法"部分，选择"本地 **脚本"。** 
 
 4. 选择 **下载载入程序包**。 我们建议将载入程序包保存为可移动驱动器。
 
-5. 在每台设备上，按照以下步骤操作： 
+5. 请按照以下文章中的指导操作：
 
-   1. 将 `WindowsDefenderATPOnboardingPackage.zip` 下载的文件复制到设备，并提取其内容。 你可以将内容提取到设备的 **桌面文件夹** 。
-   
-   2. 以管理员角色打开命令提示符。
-   
-   3. 在命令提示符窗口中，键入脚本文件的位置。 例如，如果将文件复制到桌面 **文件夹，请** 键入 `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd` ，然后按 Enter 键。
+   - Windows设备[：Windows本地脚本载入设备](../defender-endpoint/configure-endpoints-script.md#onboard-devices)
+   - macOS 设备：[在 macOS 上手动](../defender-endpoint/mac-install-manually.md#client-configuration)部署 Microsoft Defender for Endpoint
+   - Linux 设备： [手动在 Linux 上部署 Microsoft Defender for Endpoint](../defender-endpoint/linux-install-manually.md#client-configuration)
 
-6. 继续运行 [检测测试](#run-a-detection-test)。
+6. 继续为[设备运行](#run-a-detection-test)检测Windows测试。
 
 > [!IMPORTANT]
 > 如果出现问题且载入过程失败，请参阅 Microsoft Defender for Business ([预览) 疑难解答](mdb-troubleshooting.yml)。
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>使用移动设备载入Microsoft Intune
 
-如果你在获取 Defender for Business Microsoft Intune预览版之前 (过) ，可以使用 Microsoft Intune载入设备。 若要获取有关此内容的帮助，请参阅设备[注册Microsoft Intune。](/mem/intune/enrollment/device-enrollment)
+如果你在获取 Defender for Business Microsoft Intune预览版之前 (已) ，Microsoft Intune设备。 若要获取有关此内容的帮助，请参阅设备[注册Microsoft Intune。](/mem/intune/enrollment/device-enrollment)
 
 ## <a name="run-a-detection-test"></a>运行检测测试
 
-手动载入设备后，可以运行检测测试，以确保使用 Defender for Business (预览版) 。
+手动载入 Windows设备后，可以运行检测测试，以确保使用 Defender for Business (预览版) 。
 
-1. 在设备上，创建一个文件夹 `C:\test-MDATP-test` ：。
+1. 在Windows上，创建一个文件夹 `C:\test-MDATP-test` ：。
 
 2. 以管理员角色打开命令提示符。
 
@@ -111,23 +109,26 @@ ms.locfileid: "61507717"
 
 1. 转到"Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
 
-2. 在导航窗格中，**选择**"设置"，然后选择"**终结点"。**
+2. 在导航窗格中，选择 **"设置"，** 然后选择"**终结点"。**
 
 3. 在 **"设备管理"** 下，选择 **"载出"。**
 
-4. 选择 **Windows 10和 11"，** 然后在"部署方法"部分中的"载出 **设备**"下，选择"**本地脚本"。**  
+4. 选择操作系统，如 Windows 10 **和 11，然后在**"部署方法"部分中的"载出 **设备**"下，选择"**本地脚本"。** 
 
 5. 在确认屏幕中，查看信息，然后选择" **下载"** 继续。
 
-6. 将压缩文件夹保存到一个位置，例如可移动驱动器。
+6. 选择 **下载载出程序包**。 我们建议将载出包保存为可移动驱动器。
 
-7. 在每台设备上，按照以下步骤操作： 
+7. 在你想要从每台设备上运行脚本。 
 
-   1. 将配置包 () 下载到设备，然后 `WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD` 提取其内容。 你可以将内容提取到设备的 **桌面文件夹** 。  (表示 `YYYY-MM-DD` package.) 
+   需要此任务的帮助？ 参阅以下资源：   
 
-   2. 以管理员角色打开命令提示符。
+   - Windows：使用Windows[脚本的载出设备](../defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
+   - macOS 设备： [在 macOS 上卸载](../defender-endpoint/mac-resources.md#uninstalling)
+   - Linux 设备： [在 Linux 上卸载](../defender-endpoint/linux-resources.md#uninstall)
 
-   3. 在命令提示符窗口中，键入脚本文件的位置。 例如，如果将文件复制到桌面 **文件夹，请** 键入 `%userprofile%\Desktop\WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD.cmd` ，然后按 Enter 键。
+> [!IMPORTANT]
+> 将设备载出会导致设备停止向 Defender for Business 发送数据， (预览) 。 但是，在载出之前收到的数据最多保留六 (6) 个月。
 
 ## <a name="next-steps"></a>后续步骤
 
