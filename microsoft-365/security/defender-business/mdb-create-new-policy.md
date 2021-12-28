@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/27/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: aaeb816b833a15e5ea7bf5d7577b062f8b5dbc6b
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: bb6ec4c3488eff847933935ce7cf84ec5194c3cc
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508271"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612508"
 ---
 # <a name="create-a-new-policy-in-microsoft-defender-for-business-preview"></a>在 Microsoft Defender for Business 预览版中 (策略) 
 
@@ -40,7 +40,7 @@ Microsoft Defender for Business (预览) 包括默认策略，这些策略使用
 
 1. 转到 Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () ，然后登录。 
 
-2. 在导航窗格中，选择"**设备配置"。** 策略按操作系统策略 (，Windows **客户端**) 策略类型 (如下一代保护和防火墙) 。   
+2. 在导航窗格中，选择"**设备配置"。** 策略按操作系统策略 (，Windows **客户端**) 策略类型 (下一代保护和防火墙) 。   
 
 3. 选择操作系统选项卡 (例如，Windows客户端) ，然后查看下一代保护 **策略** 的列表。 
 
@@ -50,7 +50,7 @@ Microsoft Defender for Business (预览) 包括默认策略，这些策略使用
 
    1. 指定名称和说明。 此信息将帮助你和团队稍后识别策略。
    2. 查看策略顺序，并在必要时编辑它。  (有关详细信息，请参阅策略 [顺序](mdb-policy-order.md).) 
-   3. 选择 **下一步**。 
+   3. 选择“**下一步**”。 
 
 7. 在 **"设备组"** 选项卡上，创建新设备组或使用现有组。 策略通过设备组分配给设备。 以下是需要记住的一些内容：
 
@@ -59,9 +59,9 @@ Microsoft Defender for Business (预览) 包括默认策略，这些策略使用
    - 设置设备组时，请指定某些条件，如操作系统版本。 符合条件的设备包含在该设备组中，除非你排除它们。 
    - 所有设备组（包括定义的默认和自定义设备组）都存储在Azure Active Directory (Azure AD) 。
 
-   若要了解有关设备组的信息，请参阅 。 
+   若要了解有关设备组的详细信息，请参阅 Defender for Business 中的设备组[ (预览) 。 ](mdb-create-edit-device-groups.md)
 
-8. 在"**配置设置"** 选项卡上，指定策略的设置，然后选择"下一步 **"。** 有关各个设置的详细信息，请参阅 Microsoft [Defender for Business (预览版) 。 ](mdb-next-gen-configuration-settings.md)
+8. 在"**配置设置"** 选项卡上，指定策略的设置，然后选择"下一步 **"。** 有关各个设置的详细信息，请参阅 Microsoft Defender for Business 配置设置[ (预览) 。 ](mdb-next-gen-configuration-settings.md)
 
 9. 在 **"查看策略"** 选项卡上，查看常规信息、目标设备和配置设置。 
 

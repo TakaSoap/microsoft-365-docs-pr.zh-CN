@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 了解如何将一个或多个通讯组列表升级到 Microsoft 365 中的Outlook，以及如何使用 PowerShell 同时升级多个通讯组列表。
-ms.openlocfilehash: bf68d5c0e9c00536013e89a690e5708ca79739fe
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 7a6e0eff49958b99df9ca59702b814b364aefb46
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422503"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612568"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>在 Outlook 中将通讯组列表升级为 Microsoft 365 组
 
@@ -50,11 +50,11 @@ ms.locfileid: "61422503"
 4. 在"准备好升级 **？"对话框中，单击**"升级 **"。** 该过程立即开始。 根据要升级的通讯组列表组的大小和数量，此过程可能需要几分钟或数小时。
 
 > [!NOTE]
-> 顶部的横幅表示升级，例如，通讯组 (*升级) 通讯组。需要 5 分钟才能反映更改。按Microsoft 365组筛选，以查看已升级 (组) 。*
+> 顶部的横幅表示升级，例如，通讯 (*组) 升级。需要 5 分钟才能反映更改。按Microsoft 365组筛选，以查看已升级的 (组) 。*
 
-### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>使用经典 EAC 将一个或多个通讯组列表组升级到 Microsoft 365 组Outlook
+### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>使用经典 EAC 将一个或多个通讯组列表组升级到Microsoft 365组Outlook
 
-1. 转到收件人Exchange管理>**中心** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a>。<br/>你将看到一条通知，指示你拥有有资格升级到 (组) 通讯组Microsoft 365通讯组。<br/> ![选择"开始"按钮。](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+1. 转到收件人Exchange管理>**中心** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a>。<br/>你将看到一条通知，指示你拥有一个通讯 (也称为) 可以升级到通讯组Microsoft 365通讯组。<br/> ![选择"开始"按钮。](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 1. Select one or more distribution lists (also called a **distribution group**) from the **groups** page.<br/>![选择通讯组。](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
@@ -73,9 +73,11 @@ ms.locfileid: "61422503"
 
 无法升级的通讯组列表保持不变。
 
-如果一个或多个符合条件的 **通讯** 组列表无法升级，请打开支持 [票证](../../business-video/get-help-support.md)。 需要将问题上报给组工程团队，让他们找出问题。
+如果一个或多个 **符合条件的通讯** 组列表无法升级， 
 
-由于服务中断，通讯组列表可能不会升级，但不太可能升级。 如果需要，请稍等一下，然后再次尝试升级 DL。
+1. 使用此[脚本](https://aka.ms/DLToM365Group)可扫描可能阻止通讯组列表升级到 Microsoft 365 组的问题，修复脚本报告的任何问题，并再次尝试升级通讯组列表。 
+
+2. 如果上述脚本没有帮助或问题仍然存在，请打开支持 [票证](../../business-video/get-help-support.md)。 需要将问题上报给组工程团队，让他们找出问题。
 
 ## <a name="how-to-use-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>如何使用 PowerShell 同时升级多个通讯组列表
 
@@ -170,13 +172,13 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-an-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>为什么联系人卡片仍显示通讯组列表？ 我应该如何阻止升级的通讯组列表显示在我的自动建议列表中？
 
-- 例如Outlook：当有人尝试在 Outlook 中通过键入 Microsoft 365 组名称在迁移后发送电子邮件时，收件人将解析为通讯组列表而不是组。 收件人的联系人卡片将是通讯组列表联系人卡片。 这是因为收件人缓存或名称缓存位于Outlook。 电子邮件将成功发送到组，但可能会导致发件人混淆。<br/>可以执行本文中有关自动完成Outlook[重置](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list)缓存的信息，这将修复此问题。
+- 例如Outlook：当有人尝试在 Outlook 中通过在迁移后键入 Microsoft 365 组名称来发送电子邮件时，收件人将解析为通讯组列表而不是组。 收件人的联系人卡片将是通讯组列表联系人卡片。 这是因为收件人缓存或名称缓存位于Outlook。 电子邮件将成功发送到组，但可能会导致发件人混淆。<br/>可以执行本文中有关自动完成Outlook[重置](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list)缓存的信息，这将修复此问题。
 
 - 例如Outlook 网页版：如果Outlook 网页版，通讯组列表收件人仍将保留在缓存中。 你可以按照从自动完成列表中[](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58)删除建议的名称或电子邮件地址中的步骤刷新缓存以查看组联系人卡片。
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新组的成员是否收到收件箱中的欢迎电子邮件？
 
-否。 默认情况下，启用欢迎消息的设置设置为 false。 此设置会影响在迁移完成后可加入的现有和新的组的成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在收件箱中收到欢迎电子邮件。 来宾成员可以继续使用组。
+不正确。 默认情况下，启用欢迎消息的设置设置为 false。 此设置会影响在迁移完成后可加入的现有和新的组的成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在收件箱中收到欢迎电子邮件。 来宾成员可以继续使用组。
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>如果未升级一个或多个 DLL，将如何？
 
@@ -185,6 +187,11 @@ Get-DistributionGroup| Foreach-Object{
 - 如果 **管理员为组织中** 各组应用了组电子邮件地址策略，并且他们尝试升级不满足条件的 DLL，则 DLL 将不会升级
 
 - **MemberJoinRestriction 或** **MemberDepartRestriction** 设置为 **Closed** 的 DLL 无法升级
+
+- 使用Microsoft 365中的步骤，仅允许少数用户创建[组](/microsoft-365/solutions/manage-creation-of-groups)。 在这种情况下，如果不允许通讯组列表的所有者创建Microsoft 365组，则通讯组列表将不会升级到 Microsoft 365 组。 解决方法：对以上方案使用以下解决方法之一：
+1)  确保允许作为 DL 所有者提及的所有用户创建 M365 组，即是允许 M365 组使用的安全组的成员。
+或
+2)  暂时将不允许创建 M365 组的 DL 的所有者替换为允许创建 M365 组的用户
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>如果从 EAC 升级失败，DL 会发生什么情况？
 

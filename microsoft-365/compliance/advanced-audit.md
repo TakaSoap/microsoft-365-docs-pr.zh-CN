@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: b88aabd96f89f175ae09df1102ba3aff45af27f2
-ms.sourcegitcommit: 96618d21ad0424b7b51090afad5079ad0e955c21
+ms.openlocfilehash: 0cfa6c1b672dabcbe5d5418461a0a55ea42867ab
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60251108"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612616"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
@@ -65,14 +65,11 @@ ms.locfileid: "60251108"
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
 
 - [Microsoft 365 中的其他高级审核事件](#other-advanced-audit-events-in-microsoft-365)
-
-> [!NOTE]
-> <sup>*</sup> 目前，此事件在 Office 365 和 Microsoft 365 政府版 GCC High 和 DoD 环境中不可用。
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 

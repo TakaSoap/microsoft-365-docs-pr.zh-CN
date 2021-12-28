@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 CloudAppEvents 表
 description: 了解高级搜寻架构的 CloudAppEvents 表中的云应用和服务中的事件
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， CloudAppEvents， 云应用安全， MCAS
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， CloudAppEvents， 云应用的 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 128d4f9ce80bff6192771ee1806f708d0d15c00f
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: daed3fb87aab498cdf91247a59e48af685aed010
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531131"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612532"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -50,7 +50,7 @@ ms.locfileid: "61531131"
 | `Application` | `string` | 执行录制的操作的应用程序 |
 | `ApplicationId` | `string` | 应用程序的唯一标识符 |
 | `AccountObjectId` | `string` | Azure Active Directory |
-| `AccountId` | `string` | 由用户找到的帐户的Microsoft Cloud App Security。 可以是Azure Active Directory ID、用户主体名称或其他标识符。 |
+| `AccountId` | `string` | Microsoft Defender for Cloud Apps 找到的帐户标识符。 可以是Azure Active Directory ID、用户主体名称或其他标识符。 |
 | `AccountDisplayName` | `string` | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间启动和姓氏或姓氏的组合。 |
 | `IsAdminOperation` | `string` | 指示活动是否由管理员执行 |
 | `DeviceType` | `string` | 基于用途和功能的设备类型，例如"网络设备"、"工作站"、"服务器"、"移动"、"游戏控制台"或"打印机" | 
@@ -59,7 +59,7 @@ ms.locfileid: "61531131"
 | `IsAnonymousProxy` | `string` | 指示 IP 地址是否属于已知匿名代理 |
 | `CountryCode` | `string` | 指示客户端 IP 地址已异地地理位置的两个字母的代码 |
 | `City` | `string` | 已异地分配客户端 IP 地址的城市 |
-| `Isp` | `string` | 与 IP 地址 (ISP) 服务提供商 |
+| `Isp` | `string` | Internet 服务提供商 (ISP) IP 地址相关联 |
 | `UserAgent` | `string` | 来自 Web 浏览器或其他客户端应用程序的用户代理信息 |
 | `ActivityType` | `string` | 触发事件的活动类型 |
 | `ActivityObjects` | `dynamic` | 记录的活动所涉及的对象列表，如文件或文件夹 |
@@ -71,7 +71,7 @@ ms.locfileid: "61531131"
 | `AdditionalFields` | `dynamic` | 有关实体或事件的其他信息 |
 | `AccountType` | `string` | 用户帐户的类型，指示其常规角色和访问级别，例如常规、系统、管理员、DcAdmin、系统、应用程序 | 
 | `IsExternalUser` | `boolean` | 指示网络内部的用户是否不属于组织的域 | 
-| `IsImpersonated` | `boolean` | 指示活动是否由一个用户为另一个 (用户) 执行 | 
+| `IsImpersonated` | `boolean` | 指示活动是否由一个用户为另一个模拟 (用户) 执行 | 
 | `IPTags` | `dynamic` | 应用于特定 IP 地址和 IP 地址范围的客户定义信息 | 
 | `IPCategory` | `string` | 有关 IP 地址的其他信息 | 
 | `UserAgentTags` | `dynamic` | Microsoft Defender for Cloud Apps 在用户代理字段中的 标记中提供详细信息。 可具有以下任何值：本机客户端、过时浏览器、过时操作系统、Robot | 

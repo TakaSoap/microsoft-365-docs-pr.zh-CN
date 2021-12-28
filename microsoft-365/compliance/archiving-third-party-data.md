@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何从社交媒体平台、即时消息平台和文档协作平台导入和存档第三方数据以Microsoft 365邮箱。
-ms.openlocfilehash: 59388d85ba1e768add90461b6905ed5763fcd87d
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.openlocfilehash: b5ef40d895ced6d7ff40d97e80fc91b359b576b6
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61586609"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612520"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>存档第三方数据Microsoft 365
 
@@ -63,7 +63,8 @@ The Microsoft 365 合规中心 provides native third-party data connectors from 
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![复选标记。](../media/checkmark.png)|![复选标记。](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[领英](archive-linkedin-data.md)   |![复选标记。](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
 |[物理保护](import-physical-badging-data.md) ||||||![复选标记](../media/checkmark.png)|
-|[Twitter](archive-twitter-data-with-sample-connector.md)     |![复选标记。](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
+|[可宽延时间电子数据展示](archive-slack-data-microsoft.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Twitter](archive-twitter-data-with-sample-connector.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
 ||||||||
 
 ### <a name="veritas-data-connectors"></a>Veritas 数据连接器
@@ -111,7 +112,7 @@ The Microsoft 365 合规中心 provides native third-party data connectors from 
 
 您必须使用 TeleMessage 为组织设置存档服务，然后才能在 Microsoft 365 中存档第三方数据。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
 
-TeleMessage 数据连接器还可用于美国政府云GCC环境中Microsoft 365环境。 有关详细信息，请参阅本文 [中的](#data-connectors-in-the-us-government-cloud) 美国政府云数据连接器部分。
+TeleMessage 数据连接器还可用于美国政府GCC中Microsoft 365环境中。 有关详细信息，请参阅本文 [中的](#data-connectors-in-the-us-government-cloud) 美国政府云数据连接器部分。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -163,7 +164,7 @@ TeleMessage 数据连接器还可用于美国政府云GCC环境中Microsoft 365�
 
 本节中的表列出了与 CellTrust 合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
 
-在将第三方数据存档到 Microsoft 365 中之前，您必须使用 CellTrust 为组织设置 (*CellTrust SL2*) 存档服务。 有关详细信息，请单击"第三方数据"列中的链接，转到创建 CellTrust SL2 连接器的分步说明。
+在将第三方数据存档到 Microsoft 365 中之前，您必须使用 CellTrust 为组织设置其 (*CellTrust SL2*) 服务。 有关详细信息，请单击"第三方数据"列中的链接，转到创建 CellTrust SL2 连接器的分步说明。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -178,11 +179,11 @@ CellTrust SL2 数据连接器还可用于美国政府GCC环境中Microsoft 365�
 
 ### <a name="litigation-hold"></a>诉讼保留
 
-将用户 [邮箱置于](create-a-litigation-hold.md) 诉讼保留以保留第三方数据。 创建保留时，您可以指定保留持续时间 (也称为基于时间的保留 *) 以便* 已删除和修改的第三方数据将保留一段指定时间，然后从邮箱中永久删除。 或者，您可以无限期地保留 (称为"无限期 *保留")* 或删除诉讼保留。
+将用户 [邮箱置于](create-a-litigation-hold.md) 诉讼保留以保留第三方数据。 创建保留时，您可以指定保留持续时间 (也称为基于时间的保留 *) 以便* 删除和修改的第三方数据将保留指定的时间段，然后从邮箱中永久删除。 或者，您可以无限期保留 (称为"无限期 *保留")* 或删除诉讼保留。
 
 ### <a name="ediscovery"></a>电子数据展示
 
-网站中的三个主要电子数据展示Microsoft 365内容搜索、核心电子数据展示和Advanced eDiscovery。
+其中三个主要电子数据展示工具Microsoft 365内容搜索、核心电子数据展示和Advanced eDiscovery。
 
 - **[内容搜索](content-search.md)。** 您可以使用内容搜索工具在邮箱中搜索您导入的第三方数据。 您可以使用搜索查询和条件来缩小搜索结果范围，并导出搜索结果。
 
@@ -268,12 +269,12 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 |:---------|:---------|:---------|:---------|
 |Android 存档器 | 是 | 否 | 否 |
 |AT&T 短信/彩信网络存档程序 | 是 | 否 | 否 |
-|铃声短信/彩信网络存档程序 | 是 | 否 | 否 |
-|企业编号存档器 | 是 | 否 | 否 |
-|O2 SMS 和语音网络存档器 | 是         | 否 | 否 |
+|铃声短信/彩信网络存档程序 | 可访问 | 否 | 否 |
+|企业编号存档器 | 可访问 | 否 | 否 |
+|O2 SMS 和语音网络存档器 | 可访问         | 否 | 否 |
 |集成网络存档器 | 是         | 否 | 否 |
-|信号存档程序 | 是 | 否 | 否 |
-|Telegram 存档程序 | 是 | 否 | 否 |
+|信号存档程序 | 可访问 | 否 | 否 |
+|Telegram 存档程序 | 可访问 | 否 | 否 |
 |TELUS SMS 网络存档器 | 是 | 否 | 否 |
 |Verizon 短信/彩信网络存档程序 | 是 | 否 | 否 |
 |微信存档器 | 是 | 否 | 否 |
@@ -292,13 +293,13 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 |数据连接器  |GCC  |GCC 高  |DoD  |
 |:---------|:---------|:---------|:---------|
 |BlackBerry DataParser | 是 | 否 | 否 |
-|Bloomberg DataParser  | 是 | 否 | 否 |
-|Cisco Jabber DataParser  | 是 | 否 | 否 |
-|Cisco Webex DataParser  | 是 | 否 | 否 |
-|FactSet DataParser  | 是 | 否 | 否 |
-|Fuze DataParser  | 是 | 否 | 否 |
-|FX Connect DataParser  | 是 | 否 | 否 |
-|ICE DataParser  | 是 | 否 | 否 |
+|Bloomberg DataParser  | 可访问 | 否 | 否 |
+|Cisco Jabber DataParser  | 可访问 | 否 | 否 |
+|Cisco Webex DataParser  | 可访问 | 否 | 否 |
+|FactSet DataParser  | 可访问 | 否 | 否 |
+|Fuze DataParser  | 可访问 | 否 | 否 |
+|FX Connect DataParser  | 可访问 | 否 | 否 |
+|ICE DataParser  | 可访问 | 否 | 否 |
 |InvestEdge DataParser  | 是 | 否 | 否 |
 |LivePerson 对话云 DataParser  | 是 | 否 | 否 |
 |Quip DataParser  | 是 | 否 | 否 |
@@ -313,6 +314,6 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>与 Microsoft 合作伙伴合作存档第三方数据
 
-导入和存档第三方数据的另一个选项是让组织与 Microsoft 合作伙伴合作。 如果 Microsoft 合规中心内提供的数据连接器不支持第三方 数据类型，你可以与合作伙伴合作，该合作伙伴可以提供一个自定义连接器，该连接器将配置为定期提取第三方数据源中的项目，然后通过第三方 API 连接到 Microsoft 云，然后将这些项目导入 Microsoft 365。 合作伙伴连接器还将项目的内容从第三方数据源转换为电子邮件，然后将它导入到 Microsoft 365 中的邮箱。
+导入和存档第三方数据的另一个选项是让组织与 Microsoft 合作伙伴合作。 如果 Microsoft 合规中心内提供的数据连接器不支持第三方 数据类型，你可以与合作伙伴合作，该合作伙伴可以提供自定义连接器，该连接器将配置为定期提取第三方数据源中的项目，然后通过第三方 API 连接到 Microsoft 云，然后将这些项目导入 Microsoft 365。 合作伙伴连接器还将项目的内容从第三方数据源转换为电子邮件，然后将它导入到 Microsoft 365 中的邮箱。
 
 有关可以合作的合作伙伴列表以及此方法的分步过程，请参阅与合作伙伴协作以在 Microsoft 365[中存档第三方数据](work-with-partner-to-archive-third-party-data.md)。
