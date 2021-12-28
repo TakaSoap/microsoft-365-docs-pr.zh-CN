@@ -21,20 +21,20 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何从社交媒体平台、即时消息平台和文档协作平台导入和存档第三方数据以Microsoft 365邮箱。
-ms.openlocfilehash: b5ef40d895ced6d7ff40d97e80fc91b359b576b6
-ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
+ms.openlocfilehash: c1d2d293b1439c2459a35c2f92d9cce1829982b0
+ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/28/2021
-ms.locfileid: "61612520"
+ms.locfileid: "61620440"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>存档第三方数据Microsoft 365
 
-Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入和存档到组织Microsoft 365邮箱。 使用数据连接器在 Microsoft 365 中导入和存档第三方数据的一个主要好处是，您可以在导入数据后对这些数据应用各种 Microsoft 365 合规性解决方案。 这有助于确保组织的非 Microsoft 数据符合影响组织的法规和标准。
+Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入和存档到组织Microsoft 365邮箱。 使用数据连接器在 Microsoft 365 中导入和存档第三方数据的一个主要好处是，您可以在导入数据后将各种 Microsoft 365 合规性解决方案应用于这些数据。 这有助于确保组织的非 Microsoft 数据符合影响组织的法规和标准。
 
 ## <a name="third-party-data-connectors"></a>第三方数据连接器
 
-The Microsoft 365 合规中心 provides native third-party data connectors from Microsoft to import data from various data sources， such as LinkedIn， Instant Bloomberg， and Twitter and data connectors that support the Insider risk management solution. 除了这些数据连接器之外，Microsoft 还与以下合作伙伴合作，在 Microsoft 365 合规中心 中提供更多第三方数据Microsoft 365 合规中心。 贵组织与这些合作伙伴一起设置存档服务，然后再在存档服务中创建Microsoft 365 合规中心。
+The Microsoft 365 合规中心 provides native third-party data connectors from Microsoft to import data from various data sources， such as LinkedIn， Instant Bloomberg， and Twitter and data connectors that support the Insider risk management solution. 除了这些数据连接器之外，Microsoft 与以下合作伙伴合作，在数据连接器中提供更多第三Microsoft 365 合规中心。 贵组织与这些合作伙伴一起设置存档服务，然后才在存档服务中创建Microsoft 365 合规中心。
 
 - [百里达](#veritas-data-connectors)
 
@@ -50,7 +50,7 @@ The Microsoft 365 合规中心 provides native third-party data connectors from 
 
 下表列出了本机第三方数据连接器，这些连接器可用于Microsoft 365 合规中心。 该表还汇总了在导入并存档第三方数据之后可应用Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
 
-单击"第 **三方数据** "列中的链接，转到有关为第三方数据列创建连接器的数据类型。
+单击"第 **三** 方数据"列中的链接，转到有关为第三方数据列创建连接器的数据类型。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -58,7 +58,7 @@ The Microsoft 365 合规中心 provides native third-party data connectors from 
 |[发展 EHR 医疗保健](import-epic-data.md) ||||||![复选标记](../media/checkmark.png)|
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![复选标记。](../media/checkmark.png)|![复选标记。](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
 |[通用 EHR 医疗保健](import-healthcare-data.md) ||||||![复选标记](../media/checkmark.png)|
-|[人力资源 (HR) ](import-hr-data.md) ||||||![复选标记](../media/checkmark.png)|
+|[人力资源 (人力资源) ](import-hr-data.md) ||||||![复选标记](../media/checkmark.png)|
 |[ICE 聊天](archive-icechat-data.md)     |![复选标记。](../media/checkmark.png)|![复选标记。](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![复选标记。](../media/checkmark.png)|![复选标记。](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[领英](archive-linkedin-data.md)   |![复选标记。](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
@@ -71,7 +71,7 @@ The Microsoft 365 合规中心 provides native third-party data connectors from 
 
 本节中的表列出了与它合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
 
-在您将第三方数据存档到 Microsoft 365 中之前，您必须与用户一起为组织设置名为 *Merge1* (的存档服务) 。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
+在您将第三方数据存档到 Microsoft 365 中之前，您必须与它一起为组织设置其 (*Merge1*) 存档服务。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -102,7 +102,7 @@ The Microsoft 365 合规中心 provides native third-party data connectors from 
 |[XIP](archive-xip-data.md)|![复选标记。](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[XSLT/XML](archive-xslt-xml-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
 |[Yieldbroker](archive-yieldbroker-data.md)|![复选标记。](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[Twitter](archive-youtube-data.md)|![复选标记。](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
+|[YouTube](archive-youtube-data.md)|![复选标记。](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
 |[Zoom 会议](archive-zoommeetings-data.md)     |![复选标记。](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 ||||||||
 
@@ -112,7 +112,7 @@ The Microsoft 365 合规中心 provides native third-party data connectors from 
 
 您必须使用 TeleMessage 为组织设置存档服务，然后才能在 Microsoft 365 中存档第三方数据。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
 
-TeleMessage 数据连接器还可用于美国政府GCC中Microsoft 365环境中。 有关详细信息，请参阅本文 [中的](#data-connectors-in-the-us-government-cloud) 美国政府云数据连接器部分。
+TeleMessage 数据连接器还可用于美国政府云GCC环境中Microsoft 365环境。 有关详细信息，请参阅本文 [中的](#data-connectors-in-the-us-government-cloud) 美国政府云数据连接器部分。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -134,7 +134,7 @@ TeleMessage 数据连接器还可用于美国政府GCC中Microsoft 365环境中�
 
 本节中的表列出了与 17a-4 LLC 合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
 
-在 Microsoft 365 中存档第三方数据之前，您必须使用 17a-4 LLC 为组织设置其 (称为 *DataParser*) 。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
+在 Microsoft 365 中存档第三方数据之前，您必须使用 17a-4 LLC 为组织设置其存档服务 (*DataParser*) 。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
 
 17a-4 数据连接器还可用于美国政府GCC云中的Microsoft 365环境中。 有关详细信息，请参阅本文 [中的](#data-connectors-in-the-us-government-cloud) 美国政府云数据连接器部分。
 
@@ -164,7 +164,7 @@ TeleMessage 数据连接器还可用于美国政府GCC中Microsoft 365环境中�
 
 本节中的表列出了与 CellTrust 合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
 
-在将第三方数据存档到 Microsoft 365 中之前，您必须使用 CellTrust 为组织设置其 (*CellTrust SL2*) 服务。 有关详细信息，请单击"第三方数据"列中的链接，转到创建 CellTrust SL2 连接器的分步说明。
+在将第三方数据存档到 Microsoft 365 中之前，您必须使用 CellTrust 为组织设置 (*CellTrust SL2*) 存档服务。 有关详细信息，请单击"第三方数据"列中的链接，转到创建 CellTrust SL2 连接器的分步说明。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -179,11 +179,11 @@ CellTrust SL2 数据连接器还可用于美国政府GCC环境中Microsoft 365�
 
 ### <a name="litigation-hold"></a>诉讼保留
 
-将用户 [邮箱置于](create-a-litigation-hold.md) 诉讼保留以保留第三方数据。 创建保留时，您可以指定保留持续时间 (也称为基于时间的保留 *) 以便* 删除和修改的第三方数据将保留指定的时间段，然后从邮箱中永久删除。 或者，您可以无限期保留 (称为"无限期 *保留")* 或删除诉讼保留。
+将用户 [邮箱置于](create-a-litigation-hold.md) 诉讼保留以保留第三方数据。 创建保留时，您可以指定保留持续时间 (也称为基于时间的保留 *) 以便* 已删除和修改的第三方数据将保留一段指定时间，然后从邮箱中永久删除。 或者，您可以无限期地保留 (称为"无限期 *保留")* 或删除诉讼保留。
 
 ### <a name="ediscovery"></a>电子数据展示
 
-其中三个主要电子数据展示工具Microsoft 365内容搜索、核心电子数据展示和Advanced eDiscovery。
+网站中的三个主要电子数据展示Microsoft 365内容搜索、核心电子数据展示和Advanced eDiscovery。
 
 - **[内容搜索](content-search.md)。** 您可以使用内容搜索工具在邮箱中搜索您导入的第三方数据。 您可以使用搜索查询和条件来缩小搜索结果范围，并导出搜索结果。
 
