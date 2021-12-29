@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 22b129d148a6e42a9b0f72b48f1e1188f4864d64
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 319e8414d9d78eaa4735864f7e47ff146d2b9734
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241112"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612628"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -244,7 +244,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 |功能|保留策略 |保留标签|
 |:-----|:-----|:-----|:-----|
 |保留设置可以是“保留后删除”、“仅保留”或“仅删除” |是 |是 |
-|支持的工作负载： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 组 <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 | <br /> 是，但公用文件夹除外 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否 <br /> 否 |
+|支持的工作负载： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 组 <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 可访问 <br /> 可访问 <br /> 是 | <br /> 是，但公用文件夹除外 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否 <br /> 否 |
 |自动应用保留 | 是 | 是 |
 |基于条件应用保留 <br /> - 敏感信息类型、KQL 查询和关键字、可训练的分类器、云附件| 否 | 是 |
 |手动应用保留 | 否 | 是 |
@@ -256,7 +256,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 |最长 7 年的处置证明 | 否 |是，使用处置评审或项目被标记为记录时|
 |审核管理员活动| 是 | 是|
 |审核保留操作| 不支持 | 是的 <sup>\*</sup> |
-|识别遵循保留设置的项： <br /> - 内容搜索 <br /> - 数据分类页、内容资源管理器、活动资源管理器 | <br /> 否 <br /> 否 | <br /> 是 <br /> 是|
+|识别遵循保留设置的项： <br /> - 内容搜索 <br /> - 数据分类页、内容资源管理器、活动资源管理器 | <br /> 否 <br /> 否 | <br /> 可访问 <br /> 是|
 
 **脚注：**
 
@@ -271,6 +271,19 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 2. 你创建并配置一个保留标签来永久保留内容，同时你将此标签添加到发布到所有 OneDrive 帐户的标签策略中。 你向用户解释如何将此标签手动应用于特定文档，这些文档应排除在 5 年未修改后自动删除范围之外。
 
 若要详细了解保留策略和保留标签是如何协同工作的，以及如何确定它们的合并结果，请参阅下一部分，其中介绍了保留原则和优先级。
+
+## <a name="how-long-it-takes-for-retention-settings-to-apply"></a>应用保留设置需要多长时间
+
+提交工作负荷的保留策略和标签策略以自动应用保留标签时，最多允许 7 天来将保留设置应用于内容：
+
+- [保留策略需要多长时间才能生效](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
+- [保留标签需要多长时间才能生效](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)
+
+同样，发布标签后，最多允许保留标签在应用中可见 7 天：
+
+- [当保留标签可应用时](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply)
+
+通常不到 7 天这些策略就会生效，标签就会可见。 但是，由于许多潜在变量可能会影响此过程，最好计划最长的 7 天。
 
 ## <a name="adaptive-or-static-policy-scopes-for-retention"></a>用于保留的自适应或静态策略范围
 

@@ -469,6 +469,8 @@
               href: archive-linkedin-data.md
             - name: 物理徽章数据
               href: import-physical-badging-data.md
+            - name: Slack 电子数据展示（预览版）
+              href: archive-slack-data-microsoft.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
         - name: Veritas 数据连接器
