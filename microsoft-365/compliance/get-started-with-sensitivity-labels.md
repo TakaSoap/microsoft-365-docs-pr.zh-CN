@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好部署敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: ff003d22df59023233705c216a1c5fdd3207931c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 052f4d84d4e974faad75c80d18d02cbac3501196
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371216"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645946"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -32,7 +32,7 @@ ms.locfileid: "61371216"
 
 如需了解什么是敏感度标签以及该标签如何帮助你保护组织数据，请参阅[了解敏感度标签](sensitivity-labels.md)。
 
-如果拥有 [Azure 信息保护](/azure/information-protection/what-is-information-protection)，并且仍然使用通过 Azure 门户管理的 Azure 信息保护标签，则必须将这些标签迁移到[统一标签平台](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)。 对于 Windows 计算机，可以[选择将哪个标签客户端用于](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)已发布的敏感度标签。
+如果你有 [Azure 信息保护](/azure/information-protection/what-is-information-protection) ，并且仍在使用从 Azure 门户管理的 Azure 信息保护标签，则必须将这些标签迁移到 [统一标签平台](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)。 对于 Windows 计算机，可以[选择将哪个标签客户端用于](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)已发布的敏感度标签。
 
 如果已准备好使用敏感度标签来开始保护组织的数据：
 

@@ -6,22 +6,22 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: 使用 Intune 和 Autopilot 将设备注册到管理，以确保在设备上运行的应用合规并防止公司数据泄露。
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- enroll devices into management
+- enroll devices with Intune
+- Intune mobile device platforms
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: 5091aa197727602a550030bb462cc2e85d21c88d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 56226aee898dad607d3dd85641b7736e764b2be2
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301326"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645604"
 ---
 # <a name="step-2-enroll-devices-into-management-with-intune"></a>步骤 2. 使用 Intune 将设备注册到管理
 
@@ -31,7 +31,7 @@ ms.locfileid: "61301326"
 
 设备注册流程会在用户、设备和 Microsoft Intune 服务之间建立关系。 将 Microsoft Intune 用作独立服务便于使用单个基于 Web 的管理控制台以管理 Windows 电脑、macOS 和最热门的移动设备平台。
 
-本文推荐了使用 Intune 将设备注册到管理的方法。 有关这些方法以及如何部署每个方法的详细信息，请参阅 [部署指南: 在 Microsoft Intune 中注册设备](/microsoft-365/security/defender/eval-overview?view=o365-worldwide)。
+本文推荐了使用 Intune 将设备注册到管理的方法。 有关这些方法以及如何部署每个方法的详细信息，请参阅 [部署指南: 在 Microsoft Intune 中注册设备](/microsoft-365/security/defender/eval-overview)。
 
 ![管理设备的步骤](../media/devices/intune-mdm-steps-1.png#lightbox)
 
