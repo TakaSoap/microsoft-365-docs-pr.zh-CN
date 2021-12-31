@@ -23,17 +23,18 @@ ms.custom:
 - commerce_signup
 - AdminTemplateSet
 - adminvideo
+- intro-get-started
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: 了解在完成注册过程以使用 Office 365 之前您需要了解Office 365。
 ms.date: 03/17/2021
-ms.openlocfilehash: c7748eb6a7c7bae68b72416cfb599c0ab5e85794
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0c372f52f1da5fef680a9eaeb499fcede7278489
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370196"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643708"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何注册 - 管理员帮助
 
@@ -46,7 +47,7 @@ ms.locfileid: "61370196"
 > [!NOTE]
 > 这些服务受到中国法律的制约。
   
-注册由世纪Office 365运营的 Office 365，以便你的团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
+注册由世纪Office 365运营的 Excel，以便你的团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
   
 准备好注册了吗？ [选择计划](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)。
   

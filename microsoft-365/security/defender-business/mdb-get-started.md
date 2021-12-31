@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 3762afe07c045649211197b188e5c4eef035018c
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.custom: intro-get-started
+ms.openlocfilehash: 39bab3355b518d581844604f3f38ed2858e77f2f
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61506697"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61641581"
 ---
 # <a name="get-started-using-microsoft-defender-for-business-preview"></a>开始使用 Microsoft Defender for Business (预览) 
 
@@ -51,16 +52,16 @@ Microsoft 365 Defender门户 () 是使用和管理 Microsoft Defender for Busine
 | **操作中心** | 将您带至响应操作列表，包括已完成或挂起的操作。 <br/>- 选择 **"历史记录** "选项卡以查看已采取的操作。 自动执行某些操作;其他人在获得批准后手动或完成。 <br/>- 选择" **挂起** "选项卡以查看需要审批的操作以继续。 <br/><br/>若要详细了解操作中心，请参阅在操作中心查看 [修正操作](mdb-review-remediation-actions.md)。 |
 | **威胁分析** | 将你带去当前威胁的视图，并提供你威胁形势的概览视图。 威胁分析还包括来自 Microsoft 安全研究人员的报告和信息。 <br/><br/>若要了解有关威胁分析的更多信息，请参阅通过威胁分析跟踪和响应 [新出现的威胁](../defender-endpoint/threat-analytics.md)。 |
 | **安全分数** | 为您提供公司安全位置的表示形式，并提供改进建议。<br/><br/>若要了解有关安全分数的信息，请参阅 [适用于设备的 Microsoft 安全分数](../defender-endpoint/tvm-microsoft-secure-score-devices.md)。 |
-| **Learning中心** | 通过订阅中包含的学习路径提供对安全培训和其他资源的访问权限。 你可以按产品、技能级别、角色等进行筛选。 Learning 中心可以帮助你的安全团队在 Defender for Business (预览版) 以及更多 Microsoft 产品（如适用于终结点的[Microsoft Defender](../defender-endpoint/microsoft-defender-endpoint.md)和适用于 Office 365 的[Microsoft Defender）](../office-365-security/defender-for-office-365.md)中提升安全功能 & 功能。  |
-| **终结点**  > **搜索** | 使你能够搜索已载入 Microsoft Defender for Business 的一个或多个设备， (预览) 。 |
-| **终结点**  > **设备清单** | 使你能够搜索已载入 Microsoft Defender for Business 的一个或多个设备， (预览) 。 |
+| **Learning中心** | 通过订阅中包含的学习路径提供对安全培训和其他资源的访问权限。 你可以按产品、技能级别、角色等进行筛选。 Learning 中心可以帮助你的安全团队在 Defender for Business (预览版) 以及更多 Microsoft 产品（如适用于终结点的[Microsoft Defender](../defender-endpoint/microsoft-defender-endpoint.md)和适用于 Office 365 的 Microsoft [Defender）](../office-365-security/defender-for-office-365.md)中提升安全功能 & 功能。  |
+| **终结点**  > **搜索** | 使你能够搜索已载入 Microsoft Defender for Business 的一个或多个设备 (预览版) 。 |
+| **终结点**  > **设备清单** | 使你能够搜索已载入 Microsoft Defender for Business 的一个或多个设备 (预览版) 。 |
 | **终结点**  > **漏洞管理** | 为您提供仪表板、建议、修正活动、软件清单和公司内的潜在弱点列表。 |
 | **终结点**  > **教程** | 提供对演练和模拟的访问权限，以帮助你了解有关威胁防护功能如何工作更多信息。 <br/><br/>选择" **在尝试获取** 每个教程的模拟文件之前阅读演练"链接。 一些模拟Office应用（如 Microsoft Word）来阅读演练。 |
 | **终结点**  > **设备配置** | 按操作系统和类型列出安全策略。 <br/><br/>若要了解有关你的安全策略和设置的详细信息，请参阅在 Microsoft Defender for Business 中查看或[编辑 (预览) 。 ](mdb-view-edit-policies.md) |
 | **报表** | 列出可用的安全报告。 这些报告使你可以查看安全趋势、查看有关威胁检测和警报的详细信息，并了解有关公司易受攻击的设备的详细信息。 |
-| **运行状况** | 使您可以查看服务运行状况状态并规划即将进行的更改。 <br/>-**选择"服务** 运行状况"以查看Microsoft 365订阅中包含的服务运行状况。 <br/>- 选择 **消息中心** 以了解计划更改和预期内容。  |
+| **运行状况** | 使您可以查看服务运行状况状态并规划即将进行的更改。 <br/>-**选择"服务** 运行状况"以查看Microsoft 365包含在公司订阅中的服务运行状况。 <br/>- 选择 **消息中心** 以了解计划更改和预期内容。  |
 | **角色&权限** | 使您可以将权限分配给公司中将管理安全并查看事件和报告（在 Microsoft 365 Defender 门户中）的用户。 此外，还可以设置和管理设备组，以载入公司的设备并分配威胁防护策略。  |
-| **Settings** | 使你能够编辑 Microsoft 365 Defender 门户和 Microsoft Defender for Business (预览) 。 例如，你可以将 (或) 上线，你的公司设备 (也称为终结点) 。 还可以定义规则（如警报抑制规则）并设置指示器以阻止或允许某些文件或进程。  |
+| **设置** | 使你能够编辑 Microsoft 365 Defender 门户和 Microsoft Defender for Business (预览) 。 例如，你可以 (或载出) 公司的设备 (也称为终结点) 。 还可以定义规则（如警报抑制规则）并设置指示器以阻止或允许某些文件或进程。  |
 | **更多资源** | 导航到其他门户，如Azure Active Directory。 请记住，Microsoft 365 Defender门户应满足您的需求，而无需导航到其他门户。 |
 
 ## <a name="complete-a-learning-module-about-incidents-and-response-actions"></a>完成有关事件和响应操作的学习模块
@@ -68,11 +69,11 @@ Microsoft 365 Defender门户 () 是使用和管理 Microsoft Defender for Busine
 请参阅学习模块 [检测和响应安全问题](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)，以大致了解事件和响应操作。 您将了解可以采取的事件队列、警报和响应操作。 本课程将帮助你开始使用 Defender for Business 预览版中的 (事件) 。
 
 > [!NOTE]
-> 虽然学习模块 (检测和响应安全问题 [) ](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/) 实际上适用于 Microsoft Defender for Endpoint，但基本概念和整体流与在 Defender for Business (预览版) 中将看到的内容类似。
+> 尽管学习模块 (检测和响应安全问题 [) ](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/) 实际上适用于 Microsoft Defender for Endpoint，但基本概念和整体流与在 Defender for Business (预览版) 中将看到的内容类似。
 
 ## <a name="next-steps"></a>后续步骤
 
-现在，你已大致了解 Defender for Business (预览) ，请尝试以下一个或多个任务：
+现在，你已大致了解 Defender for Business (预览) ，请尝试执行以下一个或多个任务：
 
 - [尝试 Microsoft Defender for Business 预览版中的教程 (模拟) ](mdb-tutorials.md)
 
@@ -80,7 +81,7 @@ Microsoft 365 Defender门户 () 是使用和管理 Microsoft Defender for Busine
 
 - [在 Microsoft Defender for Business 预览版中查看 (事件) ](mdb-view-manage-incidents.md)
 
-- [在 Microsoft Defender for Business 预览版中响应 (缓解) ](mdb-respond-mitigate-threats.md)
+- [响应和缓解 Microsoft Defender for Business 预览版 (中) ](mdb-respond-mitigate-threats.md)
 
 - [查看操作中心中的修正操作](mdb-review-remediation-actions.md)
 

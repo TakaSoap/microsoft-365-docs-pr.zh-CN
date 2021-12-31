@@ -17,13 +17,13 @@ metadata:
   - MET150
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
-  description: 本文包含管理员有关使用 Microsoft 365 导入服务将 PST 文件导入到Office 365常见问题的解答。
-  ms.openlocfilehash: e6baaf6125817956bdc09048e852e1eca2e66d88
-  ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+  description: 本文包含管理员有关使用 Microsoft 365 导入服务将 PST 文件导入Office 365常见问题的解答。
+  ms.openlocfilehash: 400fd5873bc074c6d27adc76630e0cca49cf7ae0
+  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/06/2021
-  ms.locfileid: "60804613"
+  ms.lasthandoff: 12/30/2021
+  ms.locfileid: "61643244"
 title: 有关导入 PST 文件的常见问题解答
 summary: >
   **本文适用于管理员。是否要将 PST 文件导入到您自己的邮箱？请参阅 [从 .pst 文件](https://go.microsoft.com/fwlink/p/?LinkID=785075)导入电子邮件Outlook联系人和日历**
@@ -42,17 +42,10 @@ sections:
   - question: >
       在 Office 365 导入服务中创建导入作业需要哪些权限？
     answer: >
-      必须分配有 Exchange Online 邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。默认情况下，此角色未分配给 Exchange Online 中的任何角色组。可以将邮箱导入导出角色添加到组织管理角色组。或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。有关详细信息，请参阅[ Exchange Online 中管理角色组中](/Exchange/permissions-exo/role-groups)的“向角色组添加角色”或“创建角色组”部分。
+      必须分配有邮箱导入导出角色Exchange Online邮箱中的导入作业Microsoft 365 合规中心 PST 文件导入到用户邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。
 
 
-      此外，若要在 Microsoft 365 合规中心创建导入作业，必须满足以下条件之一：
-
-
-      - 在 Exchange Online 中必须分配有“邮件收件人”角色。默认情况下，此角色分配给“组织管理和收件人管理”角色组。
-
-          或
-
-      - 必须是你组织中的全局管理员。
+      除了邮箱导入导出角色之外，还必须在邮箱中分配"邮件收件人"Exchange Online。 默认情况下，此角色分配给组织中"组织管理"和"收件人管理"角色Exchange Online。
 
 
       > [!TIP]
@@ -72,7 +65,7 @@ sections:
   - question: >
       What version of the PST file format is supported for importing to Office 365?
     answer: >
-      There are two versions of the PST file format: ANSI and Unicode. 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Office 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的信息，请参阅使用网络上载将组织的[PST](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file)文件导入到 Office 365。
+      There are two versions of the PST file format: ANSI and Unicode. 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Office 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的信息，请参阅使用网络上载将组织的[PST](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file)文件导入到 Office 365 中。
 
 
       此外，来自 Outlook 2007 和更高版本 Outlook 的 PST 文件可导入到 Office 365。
@@ -124,28 +117,19 @@ sections:
   - question: >
       创建网络上传导入作业时，是否有屏幕分辨率要求？
     answer: >
-      如果本地计算机的屏幕分辨率设置为 1366 x 768，则创建导入作业时可能会出问题。 如果是这种情况，建议您将屏幕分辨率更改为其他设置，然后创建新的导入作业。 我们正在努力解决此问题。
+      如果本地计算机的屏幕分辨率设置为 1366 x 768，则创建导入作业时可能有问题。 如果是这种情况，建议您将屏幕分辨率更改为其他设置，然后创建新的导入作业。 我们正在努力解决此问题。
 
 
       ## <a name="using-drive-shipping-to-import-pst-files"></a>使用驱动器寄送导入 PST 文件
 
 
-      有关分步说明，请参阅使用[驱动器寄送将 PST 文件导入Office 365。](use-drive-shipping-to-import-pst-files-to-office-365.md)
+      有关分步说明，请参阅使用驱动器寄送将[PST 文件导入Office 365。](use-drive-shipping-to-import-pst-files-to-office-365.md)
   - question: >
       在 Office 365 导入服务中创建导入作业需要哪些权限？
     answer: >
-      必须分配有 Exchange Online 邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。默认情况下，此角色未分配给 Exchange Online 中的任何角色组。可以将邮箱导入导出角色添加到组织管理角色组。或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。有关详细信息，请参阅[ Exchange Online 中管理角色组中](/Exchange/permissions-exo/role-groups)的“向角色组添加角色”或“创建角色组”部分。
+      必须分配有邮箱导入导出角色Exchange Online邮箱中的导入作业Microsoft 365 合规中心 PST 文件导入到用户邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。
 
-
-      此外，若要在 Microsoft 365 合规中心创建导入作业，必须满足以下条件之一：
-
-
-      - 在 Exchange Online 中必须分配有“邮件收件人”角色。默认情况下，此角色分配给“组织管理和收件人管理”角色组。
-
-          或
-
-      - 必须是你组织中的全局管理员。
-
+       除了邮箱导入导出角色之外，还必须在邮箱中分配"邮件收件人"Exchange Online。 默认情况下，此角色分配给组织中"组织管理"和"收件人管理"角色Exchange Online。
 
       > [!TIP]
 
@@ -208,7 +192,7 @@ sections:
   - question: >
       哪个版本的 PST 文件格式支持导入到 Microsoft 365？
     answer: >
-      可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Microsoft 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的信息，请参阅使用驱动器寄送将 PST 文件导入到 Office 365[中的步骤 3。](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)
+      可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Microsoft 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件详细信息，请参阅使用驱动器寄送将[PST](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)文件导入到 Office 365 中。
 
 
       此外，来自 Outlook 2007 和更高版本 Outlook 的 PST 文件可导入到 Office 365。
@@ -266,4 +250,4 @@ sections:
       你发运到 Microsoft 的硬盘可能会跨越国际边界。如果是这种情况，你有责任确保硬盘及其所含数据是根据适用法律导入和/或导出的。发运硬盘前，请与顾问联系以验证驱动器和数据可以合法地发送到指定的 Microsoft 数据中心。此操作有助于确保其及时送达 Microsoft。
   - question: >
       创建驱动器寄送的导入作业时，是否有屏幕分辨率要求？
-    answer: 如果本地计算机的屏幕分辨率设置为 1366 x 768，则创建导入作业时可能会出问题。 如果是这种情况，建议您将屏幕分辨率更改为其他设置，然后创建新的导入作业。 我们正在努力解决此问题。
+    answer: 如果本地计算机的屏幕分辨率设置为 1366 x 768，则创建导入作业时可能有问题。 如果是这种情况，建议您将屏幕分辨率更改为其他设置，然后创建新的导入作业。 我们正在努力解决此问题。

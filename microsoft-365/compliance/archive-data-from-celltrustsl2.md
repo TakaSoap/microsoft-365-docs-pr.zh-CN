@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 CellTrust SL2 数据连接器来导入和存档移动应用数据。
-ms.openlocfilehash: d412f00fda12a44fc9d09d9c61d5c59ea17cb8a2
-ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
+ms.openlocfilehash: d1b0d651acb09ebe1a4fe2437ddd0434e48f9c2e
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61612556"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643268"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>将数据从 CellTrust SL2 存档到Microsoft 365
 
@@ -47,7 +47,7 @@ CellTrust 的 SL2 平台捕获来自多个源的通信数据。 SL2 数据源为
 
 - 必须在步骤 1 中创建 CellTrust SL2 数据连接器 (并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，不会向角色组分配此角色Exchange Online。 可以将"邮箱导入导出"角色添加到"管理"角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
-- 此数据连接器可用于美国政府GCC云Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
+- 此 CellTrust 数据连接器可用于美国政府GCC中Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="step-1-create-a-celltrust-sl2-connector"></a>步骤 1：创建 CellTrust SL2 连接器
 

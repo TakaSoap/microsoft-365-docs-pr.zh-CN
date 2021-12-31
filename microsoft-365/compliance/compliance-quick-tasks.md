@@ -11,19 +11,21 @@ ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
+- admindeeplinkDEFENDER
+- intro-get-started
 ms.localizationpriority: medium
 description: 了解将帮助您快速开始使用 Microsoft 365 中Microsoft 365。
-ms.openlocfilehash: 621bcbdbbe38be4cbda79e5cf6afcc9846f87e0d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 028226c92c9707d852c2bde80cea6d0a3bf86adf
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111035"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643062"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 合规性入门快速任务
 
-如果你是第一次了解Microsoft 365并想知道从何处开始，本文将提供有关基本要求的指导，并优先执行重要的合规性任务。 本文将帮助你快速开始管理和监视数据、保护信息以及将内部风险最小化。
+如果你是第一次Microsoft 365并想知道从何处开始，本文将提供有关基本准则的指南，并优先执行重要的合规性任务。 本文将帮助你快速开始管理和监视数据、保护信息以及将内部风险最小化。
 
 如果你正在找出如何以最佳方式管理风险、保护数据并符合新远程员工的法规和标准，本文也很有用。 员工现在以新方式相互协作和联系，这意味着你现有的合规性流程和控制措施可能需要进行调整。 在组织中识别和管理这些新合规性风险对于保护数据并最大限度地减少威胁和风险至关重要。
 
@@ -33,9 +35,9 @@ ms.locfileid: "61111035"
 
 管理组织中哪些人员有权访问 Microsoft 365 合规中心查看内容和执行管理任务非常重要。 Microsoft 365提供特定于合规性和使用应用程序中包含的工具的管理Microsoft 365 合规中心。
 
-首先，向组织人员分配合规性权限，以便他们可以执行这些任务，并防止未经授权的人员访问其职责之外的区域。 在开始配置和实施合规性解决方案之前，需要确保向合规性数据管理员和合规性管理员管理员角色分配适当的人员Microsoft 365。  你还需要将用户分配给全局Azure Active Directory查看合规性管理器数据。
+首先，向组织人员分配合规性权限，以便他们可以执行这些任务，并防止未经授权的人员访问其职责之外的区域。 在开始配置和实施合规性解决方案之前，需要确保向合规性数据管理员和合规性管理员管理员角色分配适当的人员Microsoft 365。  你还需要将用户分配给全局Azure Active Directory角色，以查看合规性管理器中的数据。
 
-有关配置权限和将人员分配给管理员角色的分步指南，请参阅安全与合规中心& [权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
+有关配置权限和将人员分配给管理员角色的分步指南，请参阅安全与合规中心&[权限。](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 
 ## <a name="task-2-know-your-state-of-compliance"></a>任务 2：了解合规性状态
 
@@ -48,7 +50,7 @@ ms.locfileid: "61111035"
 > [!IMPORTANT]
 > 大多数组织都紧密集成了安全性和合规性。 组织解决基本安全、威胁防护、标识和访问管理方面的问题非常重要，这有助于提供针对安全性和合规性的深层防御方法。
 >
-> 在[Microsoft 365门户](../security/defender/microsoft-secure-score.md)中检查Microsoft 365 Defender安全分数，<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>并完成以下文章中概述的任务：
+> 在[Microsoft 365门户](../security/defender/microsoft-secure-score.md)中检查<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>安全分数，并完成以下文章中概述的任务：
 >
 > - [安全路线图 - 前 30 天、前 90 天及以后的首要任务](../security/office-365-security/security-roadmap.md)
 > - [支持在家工作的安全团队的 12 大任务](../security/top-security-tasks-for-remote-work.md)
@@ -83,13 +85,13 @@ Microsoft 提供了几个内置警报策略，可帮助识别管理员权限滥�
 
 当内容受保留策略影响时，用户可以继续编辑和操作内容，就像没有任何变化一样。 内容将就地保留在其原始位置。 但是，如果有人编辑或删除受保留策略限制的内容，原始内容的副本将保存到保留该内容的安全位置，同时该内容的保留策略生效。
 
-您可以快速为 Microsoft 365 环境中的多个位置（如 Exchange 邮件、SharePoint 网站、OneDrive 帐户和 Microsoft 365 组）设置保留策略。 此策略可自动包含的邮箱或网站数没有限制。 但是，如果需要更具选择性，可以通过为特定位置配置保留策略并包括或排除网站或用户来这样做。
+您可以在 Microsoft 365 环境中为多个位置快速放置保留策略，例如 Exchange 邮件、SharePoint 网站、OneDrive 帐户Microsoft 365组。 此策略可自动包含的邮箱或网站数没有限制。 但是，如果需要更具选择性，可以通过为特定位置配置保留策略并包括或排除网站或用户来这样做。
 
 有关配置保留策略的分步指南，请参阅创建 [和配置保留策略](create-retention-policies.md)。 如果你刚开始在 Microsoft 365 中配置保留，请参阅[开始使用保留策略和保留标签](get-started-with-retention.md)。
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>任务 7：配置敏感信息和冒犯性语言策略
 
-保护敏感信息以及检测和处理工作场所骚扰事件是遵守内部策略和标准的重要组成部分。 [电子邮件中的](communication-compliance.md)Microsoft 365合规性可帮助您快速检测、捕获电子邮件和邮件通信并执行修正操作，从而Microsoft Teams风险。 其中包括包含亵亵、威胁、骚扰和在组织内外共享敏感信息的不当通信。
+保护敏感信息以及检测和处理工作场所骚扰事件是遵守内部策略和标准的重要组成部分。 [通信合规性](communication-compliance.md)Microsoft 365快速检测、捕获电子邮件和邮件通信并执行修正操作，帮助最大程度地降低Microsoft Teams风险。 其中包括包含亵亵、威胁、骚扰和在组织内外共享敏感信息的不当通信。
 
 预定义的 *冒犯性* 语言和反冒犯性策略模板允许你扫描内部和外部通信中的策略匹配项，以便指定的审阅者可以检查这些匹配。 审阅者可以调查组织中扫描的电子邮件、Microsoft Teams、Yammer 或第三方通信，并采取适当的补救措施以确保他们符合组织标准。
 
@@ -149,14 +151,14 @@ Microsoft 提供了几个内置警报策略，可帮助识别管理员权限滥�
 
 ### <a name="prevent-data-loss"></a>防止数据丢失
 
-[通过 DLP (策略) ](dlp-learn-about-dlp.md)数据丢失防护，您可以识别、监视和自动保护组织中Microsoft 365敏感信息。 使用 DLP 策略可标识整个 Microsoft 服务 中的敏感项目，防止意外共享敏感项目，并帮助用户了解如何保持合规性而不会中断其工作流。
+[通过 DLP (数据丢失](dlp-learn-about-dlp.md)) ，您可以识别、监视和自动保护组织中敏感信息Microsoft 365。 使用 DLP 策略可标识整个 Microsoft 服务 中的敏感项目，防止意外共享敏感项目，并帮助用户了解如何保持合规性而不会中断其工作流。
 
-有关配置 DLP 策略的分步指南，请 [创建](create-test-tune-dlp-policy.md)、测试和调整 DLP 策略。 有关数据丢失管理许可信息，请参阅Microsoft 365[安全与合规&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)。
+有关配置 DLP 策略的分步指南，请 [创建](create-test-tune-dlp-policy.md)、测试和调整 DLP 策略。 有关数据丢失管理许可信息，请参阅Microsoft 365安全[与合规&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)。
 
 ### <a name="detect-and-act-on-insider-risks"></a>检测内部风险并采取行动
 
 越来越多的员工拥有创建、管理和共享各种平台和服务的数据的访问权。 在大多数情况下，组织具有有限的资源和工具来识别和缓解组织范围内的风险，同时还满足合规性要求和员工隐私标准。 这些风险可能包括因员工离职而窃取数据，以及因意外泄露或恶意意图而泄露组织外部信息。
 
-[Microsoft 365中的](insider-risk-management-policies.md)内部风险管理使用整个服务和第三方指示器来帮助你快速识别、会审和操作有风险的用户活动。 通过使用来自Microsoft 365和Microsoft Graph的日志，内部风险管理允许你定义特定策略来识别风险指示器并采取措施来缓解这些风险。
+[Microsoft 365](insider-risk-management-policies.md)中的内部风险管理使用整个服务和第三方指标来帮助你快速识别、会审和操作有风险的用户活动。 通过使用来自Microsoft 365和Microsoft Graph的日志，内部风险管理允许你定义特定策略来识别风险指示器并采取措施来缓解这些风险。
 
-有关计划和配置内部风险管理策略的分步指南，请参阅规划内部风险管理和内部[](insider-risk-management-plan.md)[风险管理入门](insider-risk-management-configure.md)。 有关内部风险管理许可信息，请参阅Microsoft 365安全[与合规&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management)。
+有关计划和配置内部风险管理策略的分步指南，请参阅规划内部风险管理和内部[](insider-risk-management-plan.md)[风险管理入门](insider-risk-management-configure.md)。 有关内部风险管理许可信息，请参阅Microsoft 365[安全与合规&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management)。

@@ -11,21 +11,21 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理员可以设置一个连接器，从 Microsoft 365 中导入和存档来自 连接 FX Microsoft 365。 此连接器允许您在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 045a53fe7a0433e56a7b6b4c04f04f6e39bd6e16
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 管理员可以设置连接器，以从 Microsoft 365 中从 连接 导入和存档Microsoft 365。 此连接器允许您在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
+ms.openlocfilehash: 1ea9d4f9a02d94ab3e16bf5ddadd6ec32bfe36bc
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193311"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643632"
 ---
 # <a name="set-up-a-connector-to-archive-fx-connect-data"></a>设置连接器以存档 FX 连接数据
 
-使用 Microsoft 365 合规中心 中的一个 连接 连接器，将数据从 FX 连接 导入并存档到组织的用户Microsoft 365邮箱。 对于配置为捕获[FX 连接](https://globanet.com/fx-connect/)项目，以及将这些项目导入到连接的 FX Microsoft 365。 连接器将来自 FX 连接 的内容（如诉讼、邮件以及您组织的 FX 连接 帐户的其他详细信息）转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的用户邮箱。
+使用 Microsoft 365 合规中心 中的一个 连接 连接器，将数据从 FX 连接 导入并存档到组织的用户Microsoft 365邮箱。 对于配置为捕获[FX 连接](https://globanet.com/fx-connect/)项目，以及将这些项目导入到连接的 FX Microsoft 365。 连接器将 FX 连接 中的内容（如诉讼、邮件以及您组织的 FX 连接 帐户的其他详细信息）转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的用户邮箱。
 
-在 FX 连接数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 FX 连接 连接器导入数据并存档数据Microsoft 365有助于组织遵守政府及法规策略。
+在 FX 连接数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 FX 连接 连接器导入和存档数据Microsoft 365有助于组织遵守政府法规策略。
 
-## <a name="overview-of-archiving-fx-connect-data"></a>存档 FX 连接概述
+## <a name="overview-of-archiving-fx-connect-data"></a>存档 FX 连接数据概述
 
 以下概述介绍使用连接器将 FX 连接存档在Microsoft 365。
 
@@ -35,15 +35,17 @@ ms.locfileid: "60193311"
 
 2. 每 24 小时一次，来自 FX 帐户连接项目将复制到"完成"合并 1 网站。 连接器还会将 FX 连接转换为电子邮件格式。
 
-3. 在 Microsoft 365 合规中心 创建的 FX 连接 连接器，每天连接到一个 Microsoft 云中的 Fx 连接 项目并转移到安全 Azure 存储 位置。
+3. 在 Microsoft 365 合规中心 中创建的 FX 连接 连接器，每天连接到一个 Microsoft Clouds Merge1 网站，将 FX 连接 项目转移到 Microsoft 云中的安全 Azure 存储 位置。
 
-4. 连接器使用自动用户映射的 *Email* 属性值将项目导入特定用户的邮箱，如步骤 [3 中所述](#step-3-map-users-and-complete-the-connector-setup)。 "收件箱"文件夹中名为 **FX 连接** 文件夹的子文件夹是在用户邮箱中创建的，并且项目会导入到该文件夹中。 连接器使用 *Email* 属性的值实现此操作。 每个 FX 连接项都包含此属性，该属性用项目每个参与者的电子邮件地址填充。
+4. 连接器使用自动用户映射的 *Email* 属性值将项目导入特定用户的邮箱，如步骤 [3 中所述](#step-3-map-users-and-complete-the-connector-setup)。 在用户邮箱中创建名为 **FX 连接"** 收件箱"文件夹中的子文件夹，项目将导入到该文件夹中。 连接器使用 *Email* 属性的值实现此操作。 每个 FX 连接项都包含此属性，该属性用项目每个参与者的电子邮件地址填充。
 
 ## <a name="before-you-begin"></a>准备工作
 
 - 为 Microsoft 连接器创建一个 Microsoft Merge1 帐户。  若要创建帐户，请联系["用户支持人员"。](https://globanet.com/ms-connectors-contact) 在步骤 1 中创建连接器时，将登录到此帐户。
 
-- 必须在步骤 1 (步骤 3) 中创建 FX 连接 连接器的用户分配到 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此 **角色Microsoft 365 合规中心。** 默认情况下，不会向角色组分配此角色Exchange Online。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 连接 中创建 FX 连接 连接器， (在步骤 3) 中完成该连接器的用户必须分配至 Exchange Online 中的邮箱导入导出角色。 若要在数据连接器页上添加连接器，需要此 **角色Microsoft 365 合规中心。** 默认情况下，不会向角色组分配此角色Exchange Online。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+
+- 此位于美国政府云中的 GCC 环境Microsoft 365预览版。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="step-1-set-up-the-fx-connect-connector"></a>步骤 1：设置 FX 连接连接器
 
@@ -59,7 +61,7 @@ ms.locfileid: "60193311"
 
 5. 登录到 Merge1 帐户以配置连接器。
 
-## <a name="step-2-configure-the-fx-connect-connector-on-the-veritas-merge1-site"></a>步骤 2：在 连接 Merge1 网站上配置 FX 连接器
+## <a name="step-2-configure-the-fx-connect-connector-on-the-veritas-merge1-site"></a>步骤 2：在"连接 Merge1"网站上配置 FX 连接器
 
 第二步是在 Merge1 连接配置 FX 连接器。 若要了解如何配置 FX 连接器连接，请参阅[Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20FX%20Connect%20User%20Guide%20.pdf)。
 
@@ -69,13 +71,13 @@ ms.locfileid: "60193311"
 
 若要映射用户并完成连接器Microsoft 365 合规中心，请按照以下步骤操作：
 
-1. 在"**映射 FX 连接用户Microsoft 365，** 启用自动用户映射。 FX 连接项目包括名为 *Email* 的属性，该属性包含组织中用户的电子邮件地址。 如果连接器可以将此地址与Microsoft 365关联，则项目将导入该用户的邮箱。
+1. 在"**将 FX 连接用户Microsoft 365页上，** 启用自动用户映射。 FX 连接包括名为 *Email* 的属性，该属性包含组织中用户的电子邮件地址。 如果连接器可以将此地址与Microsoft 365关联，则项目将导入该用户的邮箱。
 
 2. 单击 **"下** 一步"，查看设置，然后转到"数据连接器"页以查看新连接器的导入过程的进度。
 
 ## <a name="step-4-monitor-the-fx-connect-connector"></a>步骤 4：监视 FX 连接连接器
 
-创建 FX 连接连接器后，可以在"新建"视图中查看Microsoft 365 合规中心。
+创建 FX 连接连接器后，可以查看该连接器在 Microsoft 365 合规中心。
 
 1. 转到左侧 <https://compliance.microsoft.com/> 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 

@@ -14,27 +14,28 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
+- intro-overview
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，Microsoft 365 Lighthouse如何在一个位置保护和管理客户租户。
-ms.openlocfilehash: 269927ee46d821c38a6ad8f6d0b92f76b7fdc64e
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d7e2d67b62f8db9d767154ea6049e52a496bc4e7
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373700"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645176"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>概述Microsoft 365 Lighthouse
 
 > [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
 Microsoft 365 Lighthouse 是一个管理门户，可帮助托管服务提供商 (MSP) 为使用 Microsoft 365 商业高级版 或 Microsoft 365 E3 的中小型商业 (SMB) 客户大规模保护和管理设备、数据和用户。 
 
 Lighthouse 通过建议为 SMB 客户定制的安全配置基线，并跨所有客户环境提供多租户视图，简化了 Microsoft 365 商业高级版 和 Microsoft 365 E3 租户的载入过程。 借助 Lighthouse，MSP 可以扩展其客户的管理，关注最重要的内容，快速查找和调查风险，并采取措施使客户进入健康、安全的状态。
 
-使用 Lighthouse 管理 Microsoft 365 和连接的设备不会增加任何成本。 Lighthouse 目前处于预览阶段，适用于注册 云解决方案提供商 (CSP) 计划并拥有 Microsoft 365 商业高级版 或 Microsoft 365 E3 订阅的 SMB 客户。
+使用 Lighthouse 管理 Microsoft 365 连接设备不会增加任何成本。 Lighthouse 目前处于预览阶段，适用于注册 云解决方案提供商 (CSP) 计划并拥有 Microsoft 365 商业高级版 或 Microsoft 365 E3 订阅的 SMB 客户。
 
-Microsoft 云解决方案提供商频道合作伙伴（支持客户使用 Microsoft 365 商业高级版 或 Microsoft 365 E3 使用 Lighthouse。 这包括云解决方案提供商合作伙伴直接与 Microsoft 交易，以及通过间接提供商与分销商 (交易) 。 
+支持客户使用 Microsoft CSP 渠道合作伙伴Microsoft 365 商业高级版或Microsoft 365 E3使用 Lighthouse。 这包括云解决方案提供商合作伙伴直接与 Microsoft 交易，以及通过间接提供商与分销商 (交易) 。 
 
 > [!IMPORTANT] 
 > 若要使用 Lighthouse，MSP 及其客户租户必须满足以下要求Microsoft 365 Lighthouse[要求](m365-lighthouse-requirements.md)。     
@@ -54,7 +55,7 @@ Lighthouse 可帮助 MSP 通过Microsoft 365保护和管理连接终结点的安
 - 简化常见任务，如重置密码。
 - 配置多重身份验证和自助服务密码重置，包括有助于推动用户采用的工具。 
 - 了解并防范有风险的登录。
-- 通过提供由 Windows 10 检测到的威胁的详细信息来管理 Microsoft 365 Defender 设备上的威胁，以及解决问题和使设备保持最新状态要采取的操作。
+- 通过提供由 Microsoft 365 Defender 检测到的威胁的详细信息来管理 Windows 10 设备上的威胁，以及为解决问题和使设备保持最新而要采取的操作。
 - 提供对影响Microsoft 365租户的服务事件和公告的见解。
 
 > [!NOTE] 
@@ -66,4 +67,4 @@ Lighthouse 可帮助 MSP 通过Microsoft 365保护和管理连接终结点的安
 [Microsoft 365 Lighthouse文章 (](m365-lighthouse-tenants-page-overview.md)租户)    
 [Microsoft 365 Lighthouse设备合规性页面概述 (](m365-lighthouse-device-compliance-page-overview.md)文章)    
 [Microsoft 365 Lighthouse常见问题](m365-lighthouse-faq.yml) (文章)    
-[Microsoft Defender for Business](../security/defender-business/index.yml)
+[Microsoft Defender 商业版](../security/defender-business/index.yml)

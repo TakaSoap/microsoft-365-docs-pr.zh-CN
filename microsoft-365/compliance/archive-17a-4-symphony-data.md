@@ -1,5 +1,5 @@
 ---
-title: 设置一个安装 DataParser 连接器以将数据存档在Microsoft 365
+title: 设置一个显示数据分析器连接器以将数据存档在Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,22 +12,22 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 用户数据Parser 连接器，以导入和存档 Microsoft 365。
-ms.openlocfilehash: f26fe081708ca6130a63338261144e98691e269a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b949b646c227f26575182d173f1d34d54f40b3ed
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188321"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643780"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-symphony"></a>设置连接器以存档来自"百年"的数据
 
-使用 17a-4 LLC 中的一个百分百数据[Parser，](https://www.17a-4.com/Symphony-dataparser/)将百分百通信数据导入并存档到组织Microsoft 365邮箱。 DataParser 包括一个配置为捕获第三方数据源中的项目，以及将这些项目导入到第三方数据源的 Microsoft 365。 该百年数据Parser 连接器将百年数据转换为电子邮件格式，然后将这些项目导入用户邮箱Microsoft 365。
+使用来自 17a-4 LLC 的[一组用户数据Parser，将百](https://www.17a-4.com/Symphony-dataparser/)分百通信数据导入并存档到组织Microsoft 365邮箱。 DataParser 包括一个配置为捕获第三方数据源中的项目，以及将这些项目导入到第三方数据源的 Microsoft 365。 该百年数据Parser连接器将百年数据转换为电子邮件格式，然后将这些项目导入到用户邮箱Microsoft 365。
 
-在将百年数据存储在用户邮箱中后，你可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用一个百年连接器导入数据并Microsoft 365可帮助你的组织遵守政府及法规策略。
+在将百万数据存储在用户邮箱中后，你可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用一个百年连接器在企业邮箱中导入和Microsoft 365可帮助你的组织遵守政府法规策略。
 
 ## <a name="overview-of-archiving-symphony-data"></a>存档百年数据概述
 
-以下概述介绍了使用数据连接器在云中存档 Microsoft 365。
+以下概述介绍使用数据连接器在云中存档 Microsoft 365。
 
 ![17a-4 中用于"百分百"数据的存档工作流。](../media/SymphonyDataParserConnectorWorkflow.png)
 
@@ -37,15 +37,15 @@ ms.locfileid: "60188321"
 
 3. 在 Microsoft 365 合规中心 创建的部署 DataParser 连接器连接到 DataParser，将邮件传输至 Microsoft 云中的安全 Azure 存储 位置。
 
-4. 在用户邮箱中创建名为 **"Inboxy DataParser"** 的"收件箱"文件夹中的子文件夹，并且"百年"项目将导入到该文件夹中。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个"百年"项目都包含此属性，该属性填充了每个参与者的电子邮件地址。
+4. 在用户邮箱中创建一个名为 **"Inboxy DataParser"** 的"收件箱"文件夹中的子文件夹，并且将"Inboxy"项目导入到该文件夹中。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个"百年"项目都包含此属性，该属性填充了每个参与者的电子邮件地址。
 
 ## <a name="before-you-set-up-a-connector"></a>设置连接器之前
 
 - 为 Microsoft 连接器创建 DataParser 帐户。 为此，请联系 [17a-4 LLC](https://www.17a-4.com/contact/)。 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 必须在步骤 1 (步骤 1 中创建并完成此连接器的用户) 该连接器必须分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此 **角色Microsoft 365 合规中心。** 默认情况下，不会向角色组分配此角色Exchange Online。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 (步骤 3) 中创建并完成该连接器的用户分配到 Exchange Online 中的邮箱导入导出角色。 需要此角色才能在数据连接器页的"数据连接器"页上添加Microsoft 365 合规中心。 默认情况下，不会向角色组分配此角色Exchange Online。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
 
-- 此数据连接器可用于美国政府GCC中Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
+- 此 17a-4 数据连接器适用于美国政府GCC环境中Microsoft 365环境。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="step-1-set-up-a-symphony-dataparser-connector"></a>步骤 1：设置安装 DataParser 连接器
 

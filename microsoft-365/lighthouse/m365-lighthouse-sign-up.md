@@ -14,14 +14,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
+- intro-get-started
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，了解如何注册 Microsoft 365 Lighthouse。
-ms.openlocfilehash: 58721d83529fb70552d151cd0a0b19ce5ba85c28
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7eceb0ee205e7de99a7943ba05e6c07f66bd491e
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374048"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61641593"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>注册Microsoft 365 Lighthouse
 
@@ -30,11 +31,11 @@ ms.locfileid: "61374048"
 
 ## <a name="before-you-begin"></a>准备工作
 
-- Microsoft 365 Lighthouse部署在合作伙伴租户中，而不仅是在客户租户中，而是确保你和客户租户满足Microsoft 365 Lighthouse &mdash; [要求](m365-lighthouse-requirements.md)。
+- Microsoft 365 Lighthouse部署在合作伙伴租户中，而不仅是在客户租户中，而是确保你和客户租户满足客户要求 中列出的Microsoft 365 Lighthouse &mdash; [要求](m365-lighthouse-requirements.md)。
 
 - 你必须是要登录的合作伙伴租户中的全局管理员。
 
-## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>注册Microsoft 365 Lighthouse
+## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>注册 Microsoft 365 Lighthouse
 
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> "Microsoft 365 管理中心"，然后使用合作伙伴租户凭据登录。 
 
@@ -44,14 +45,14 @@ ms.locfileid: "61374048"
 
     如果遇到购买服务错误页面，请选择页面底部的"查看产品"。
 
-1. 在 **"Microsoft 365 Lighthouse公共预览版"下，** 选择"**详细信息"。** 
+1. 在 **"Microsoft 365 Lighthouse合作伙伴公共预览版"下，** 选择"**详细信息"。** 
 
 1. 选择 **购买**。
 
     > [!NOTE]
     > Lighthouse 仅需要合作伙伴租户的一个许可证。 合作伙伴不需要其他每用户许可证，任何客户租户中都不需要 Lighthouse 许可证。 
 
-    若要验证"Lighthouse"已成功添加到租户，Microsoft 365 Lighthouse">"中的 **"Microsoft 365 管理中心"** 下查找Microsoft 365 管理中心。
+    若要验证"Lighthouse"已成功添加到租户中，Microsoft 365 Lighthouse在">**中的**"帐单"下Microsoft 365 管理中心。
 
 1. 如果未重定向到"灯楼"门户，请转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a> 。
 

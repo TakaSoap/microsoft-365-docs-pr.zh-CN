@@ -6,6 +6,7 @@ ms.author: bcarter
 author: brendacarter
 manager: dansimp
 audience: Admin
+description: 了解如何将零Microsoft 365安全部署到环境中，以抵御威胁和保护敏感数据。
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
@@ -13,16 +14,14 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
-- m365solution-zerotrust
-- m365solution-overview
-description: 实现零信任原则、体系结构和功能，以用于Microsoft 365。
-ms.openlocfilehash: ef916e576c6e7b837c46dda47cdc975fa02883f0
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+- deploy zero trust
+- zero trust strategy
+ms.openlocfilehash: a1283f3bff8586c88a1c0bdcb84c246cf3a873f8
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301664"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643324"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 零信任部署计划
 
@@ -56,7 +55,7 @@ For more information about this architecture, including deployment objectives fo
 
 ## <a name="deploying-zero-trust-for-microsoft-365"></a>为部署零信任Microsoft 365
 
-Microsoft 365是特意构建的，它具有许多安全和信息保护功能，可帮助你将零信任构建到环境中。 可以扩展许多功能，以保护对组织使用的其他 SaaS 应用以及这些应用内的数据的访问。
+Microsoft 365是有意构建的，它具有许多安全和信息保护功能，可帮助你在环境中构建零信任。 可以扩展许多功能，以保护对组织使用的其他 SaaS 应用以及这些应用内的数据的访问。
 
 此图表示部署零信任功能的工作。 此工作分为多个工作单元，可以一起配置工作，从底部开始并工作到顶部以确保先决条件工作已完成。
 
@@ -119,7 +118,7 @@ Microsoft 365是特意构建的，它具有许多安全和信息保护功能，�
 
 ## <a name="step-4-evaluate-pilot-and-deploy-microsoft-365-defender"></a>步骤 4. 评估、试验和部署Microsoft 365 Defender
 
-Microsoft 365 Defender是一种扩展检测和响应 (XDR) 解决方案，可自动收集、关联和分析来自 Microsoft 365 环境的信号、威胁和警报数据，包括终结点、电子邮件、应用程序和标识。
+Microsoft 365 Defender是一个扩展检测和响应 (XDR) 解决方案，可自动收集、关联和分析来自 Microsoft 365 环境中的信号、威胁和警报数据，包括终结点、电子邮件、应用程序和标识。
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="将Microsoft 365 Defender添加到零信任体系结构" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 

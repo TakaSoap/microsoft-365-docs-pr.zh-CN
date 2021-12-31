@@ -11,23 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理员可以设置一个连接器，以将来自 Microsoft 365 的一些处理数据导入并Microsoft 365。 通过此连接器，可以在 Microsoft 365 中存档来自第三方数据源Microsoft 365。 在存档此数据后，可以使用合规性功能（如合法保留、内容搜索和保留策略）管理第三方数据。
-ms.openlocfilehash: 8605316303e1c23045f432080f365300692fb5f0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 管理员可以设置一个连接器，以将来自 Microsoft 365 的 Reuters 交易数据导入和Microsoft 365。 通过此连接器，可以在 Microsoft 365 中存档来自第三方数据源Microsoft 365。 在存档此数据后，可以使用合规性功能（如合法保留、内容搜索和保留策略）管理第三方数据。
+ms.openlocfilehash: fa2108b4e2c0438d743a675dc4b87d09af93bf51
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167482"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643564"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-dealing-data"></a>设置连接器以存档 Reuters 交易数据
 
-使用 Microsoft 365 合规中心 中的一个"Microsoft 365 合规中心"连接器，将数据从"Reuters 处理"平台导入并存档到组织Microsoft 365邮箱。 该连接器配置为定期捕获第[](https://globanet.com/reuters-dealing/)三方数据源 (中的项目，) 然后将这些项目导入到 Microsoft 365。 连接器将处理通信从 Reuters 处理帐户转换为电子邮件格式，然后在 Microsoft 365 中将这些邮件导入到用户邮箱。
+使用 Microsoft 365 合规中心 中的一个"Microsoft 365 合规中心"连接器，将数据从"Reuters 处理"平台导入并存档到组织Microsoft 365邮箱。 对于配置为定期捕获第三[](https://globanet.com/reuters-dealing/)方数据源 (中的项目，) 然后将这些项目导入到 Microsoft 365。 连接器将处理通信从 Reuters 处理帐户转换为电子邮件格式，然后将这些项目导入到用户邮箱中的 Microsoft 365。
 
-在 Reuters 处理数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 Reuters 处理连接器导入数据并存档Microsoft 365可帮助组织遵守政府法规策略。
+在 Reuters 处理数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 Reuters 处理连接器在 Microsoft 365 导入和存档数据可帮助组织遵守政府及法规策略。
 
 ## <a name="overview-of-archiving-reuters-dealing-data"></a>Archiving Reuters Dealing data 概述
 
-以下概述介绍了使用连接器在数据记录中存档Microsoft 365。
+以下概述说明了使用连接器将"Reuters 处理"数据存档在Microsoft 365。
 
 ![Archiving workflow for Reuters Dealing data.](../media/ReuetersDealingConnectorWorkflow.png)
 
@@ -35,7 +35,7 @@ ms.locfileid: "60167482"
 
 2. 一次每 24 小时一次，Reuters 处理项目将复制到"是否合并 1"网站。 连接器还会将项目转换为电子邮件格式。
 
-3. 在 Microsoft 365 合规中心 创建的 Reuters 处理连接器Microsoft 365 合规中心连接到 Microsoft 云中的一个安全 Azure 存储 位置。
+3. 在 Microsoft 365 合规中心 创建的 Reuters 处理连接器每天连接到一个 Microsoft 365 合规中心 Merge1 网站，将内容传输至 Microsoft 云中的Azure 存储位置。
 
 4. 连接器使用自动用户映射的 *Email* 属性值将项目导入特定用户的邮箱，如步骤 [3 中所述](#step-3-map-users-and-complete-the-connector-setup)。 在用户邮箱中创建名为 **"Reuters Dealing"** 的"收件箱"文件夹中的子文件夹，项目将导入该文件夹。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 Reuters 处理项目都包含此属性，该属性用项目每个参与者的电子邮件地址填充。
 
@@ -43,7 +43,9 @@ ms.locfileid: "60167482"
 
 - 为 Microsoft 连接器创建一个 Microsoft Merge1 帐户。 若要创建帐户，请联系["用户支持人员"。](https://globanet.com/contact-us) 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 必须在步骤 1 (步骤 3) 创建并完成该连接器的用户分配到 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此 **角色Microsoft 365 合规中心。** 默认情况下，不会为此角色组分配此角色Exchange Online。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中的角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 (步骤 3) 创建并完成该连接器的用户分配到 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页的"数据连接器"页上添加 **连接器，需要** 此Microsoft 365 合规中心。 默认情况下，不会为此角色组分配此角色Exchange Online。 可以将"邮箱导入导出"角色添加到"管理"角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中的角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+
+- 此位于美国政府云中的 GCC 环境Microsoft 365预览版。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="step-1-set-up-the-reuters-dealing-connector"></a>步骤 1：设置 Reuters 处理连接器
 
@@ -69,7 +71,7 @@ ms.locfileid: "60167482"
 
 若要映射用户并完成连接器Microsoft 365 合规中心，请按照以下步骤操作：
 
-1. 在 **"Map Reuters 处理Microsoft 365用户"页上**，启用自动用户映射。
+1. 在"**地图""Microsoft 365用户"页上**，启用自动用户映射。
 
    Reuters 交易项目包括一个称为 *Email* 的属性，该属性包含组织中用户的电子邮件地址。 如果连接器可以将此地址与Microsoft 365关联，则项目会导入该用户的邮箱。
 
@@ -77,13 +79,13 @@ ms.locfileid: "60167482"
 
 ## <a name="step-4-monitor-the-reuters-dealing-connector"></a>第 4 步：监视"视频处理连接器"
 
-创建"Reuters 处理连接器"后，可以查看"Microsoft 365 合规中心"中的连接器状态。
+创建"Reuters 处理连接器"后，可以在"会议"视图中查看Microsoft 365 合规中心。
 
 1. 转到左侧 [https://compliance.microsoft.com](https://compliance.microsoft.com/) 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 
 2. 单击 **"连接器"** 选项卡，然后选择 **"Reuters 处理** 连接器"以显示包含连接器的属性和信息的飞出页。
 
-3. 在 **"源的连接器状态"** 下， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
+3. 在 **"源的连接器状态"下**， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
 
 ## <a name="known-issues"></a>已知问题
 

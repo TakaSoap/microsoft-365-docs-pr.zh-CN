@@ -17,31 +17,28 @@ search.appverid:
 - MOE150
 - MET150
 description: 搜索可能与核心电子数据展示案例相关的内容。
-ms.openlocfilehash: fdf623ec56f3f40ba3316fd546f044610829bbc2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 57ea95458df568de3687e1b0d38a70991b09a850
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189281"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643357"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>搜索核心电子数据展示案例中的内容
 
-创建核心电子数据展示案例并保留该案例的关注人员后，可以创建并运行一个或多个搜索，以查找与案例相关的内容。 与核心电子数据展示案例关联的搜索不会在"内容搜索"页上Microsoft 365 合规中心。  这些搜索将列在与 **搜索** 关联的核心电子数据展示案例的"搜索"页面上。 这也意味着与案例关联的搜索只能由案例成员访问。
+创建核心电子数据展示案例并保留该案例的关注人员后，可以创建并运行一个或多个搜索，以查找与案例相关的内容。 与核心电子数据展示案例关联的搜索不会在"内容"搜索页上Microsoft 365 合规中心。  这些搜索将列在与 **搜索** 关联的核心电子数据展示案例的"搜索"页面上。 这也意味着与案例关联的搜索只能由案例成员访问。
 
 创建核心电子数据展示搜索：
   
 1. 转到 ，然后使用用户帐户的凭据登录，该帐户已分配有相应的电子数据展示权限，并且是案例 <https://compliance.microsoft.com> 的成员。
 
-2. 在左侧导航窗格中，单击 **Microsoft 365 合规中心全部显示**"，然后单击"电子数据展示>**核心"。**
+2. 在导航窗格的左侧导航 **Microsoft 365 合规中心，单击**"全部显示"，然后单击"电子数据展示>**核心"。**
 
 3. 在"**核心电子数据展示**"页上，选择要创建关联搜索的案例，然后单击"打开 **案例"。**
 
 4. 在案例 **的主页** 上，单击"搜索 **"** 选项卡，然后单击"新建 **搜索"。**
 
    ![单击"新建搜索"以创建核心电子数据展示搜索。](../media/CoreeDiscoverySearch1.png)
-
-   > [!NOTE]
-   > “**按 ID 列表搜索**”选项使你可以使用 Exchange ID 列表搜索特定电子邮件和其他邮箱项目。 若要创建 ID 列表搜索，你可以提交一个用于标识要搜索的特定邮箱项的逗号分隔符值 (CSV) 文件。 有关说明，请参阅 [为 ID 列表搜索准备 CSV 文件](csv-file-for-an-id-list-content-search.md)。
 
 5. 在 **"新建搜索** "向导中，键入搜索的名称和帮助标识搜索的可选说明。 搜索名称在你的组织中必须保持唯一。
 
@@ -70,7 +67,7 @@ ms.locfileid: "60189281"
       > [!NOTE]
       > 为了帮助减少因海量关键字列表导致的问题，已将关键字列表中的最大行数限制为 20 行。
 
-   3. 可以添加搜索条件来缩小搜索范围并返回更精确的结果集。 每个条件向开始搜索时创建和运行的搜索查询添加一个子句。 可通过使用功能类似于 **AND** 运算符的逻辑运算符 (**c:c**) 在逻辑上将条件连接至关键字查询（在关键字框中指定）。 这意味着，项必须满足关键字查询和要在结果中包括的一个或多个条件。 这就是条件如何帮助缩小结果范围的原理。 有关可在搜索查询中使用的条件的列表和说明，请参阅[搜索条件](keyword-queries-and-search-conditions.md#search-conditions)。
+   3. 也可以添加搜索条件以缩小搜索范围并返回更精确的结果集。每个条件可以将一个子句添加到开始搜索时创建并运行的搜索查询中。条件在逻辑上通过一个与 **AND** 运算符功能类似的逻辑运算符 (**c:c**) 连接到关键字查询 (在关键字框中指定)。这意味着项目需要同时满足关键字查询以及一个或多个条件才能出现在结果中。这就是条件帮助缩小结果范围的原理。有关可在搜索查询中使用的条件的列表和说明，请参阅 [搜索条件](keyword-queries-and-search-conditions.md#search-conditions)。
 
 8. 查看搜索设置（并在必要时进行编辑），然后提交搜索以开始搜索。
 
@@ -78,8 +75,8 @@ ms.locfileid: "60189281"
 
 ## <a name="more-information-about-searching-content-locations"></a>有关搜索内容位置详细信息
 
-- 单击" **选择用户、组或** 团队"以指定要搜索的邮箱时，显示的邮箱选取器为空。 这种设计旨在增强性能。 To add recipients to this list， click **Choose users， groups， or teams**， type a name (a minimum of three characters) in the search box， select the check box next to the name， and then click **Choose**.
+- 单击" **选择用户、组或** 团队"以指定要搜索的邮箱时，显示的邮箱选取器为空。 这种设计旨在增强性能。 若要将收件人添加到此列表，请单击"选择用户、组或团队"，在搜索框中键入至少三个字符 () ，选中名称旁边的复选框，然后单击"选择 **"。**
 
-- 您可以将非活动邮箱、Microsoft Teams、Yammer 组Office 365组和通讯组添加到要搜索的邮箱列表中。 不支持动态通讯组。 如果添加Microsoft Teams、Yammer组或Office 365组，将搜索组或团队邮箱;不搜索其成员的邮箱。
+- 您可以将非活动邮箱、Microsoft Teams、Yammer 组Office 365组和通讯组添加到要搜索的邮箱列表中。 不支持动态通讯组。 如果您添加Microsoft Teams组Yammer组"或"Office 365组"，将搜索组或团队邮箱;不搜索该组成员的邮箱。
 
-- 若要将网站添加到搜索，请打开切换，然后单击选择 **网站**。 键入要搜索的每个网站的 URL。 还可以为 Microsoft 团队、SharePoint组或 Yammer 组添加 Office 365 URL。
+- 若要将网站添加到搜索，请打开切换，然后单击选择 **网站**。 键入要搜索的每个网站的 URL。 还可以为 Microsoft 团队、SharePoint组或 Office 365 组添加 Yammer URL。

@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理员可以设置连接器以将 CellTrust 数据从 Microsoft 365 导入和存档。 此连接器允许您将来自第三方数据源的数据存档到 Microsoft 365。 在存档此数据后，可以使用合规性功能（如合法保留、内容搜索和保留策略）管理第三方数据。
-ms.openlocfilehash: 89d19be7b23d76c5edbfe6949ba6b6b0166458a4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fd2ae7c905a1f0104112d30b8a4f195ccd146a07
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195709"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61644536"
 ---
 # <a name="set-up-a-connector-to-archive-celltrust-data"></a>设置连接器以存档 CellTrust 数据
 
 使用 Microsoft 365 合规中心 连接器将数据从 CellTrust 平台导入并存档到组织Microsoft 365邮箱。 该连接器提供[CellTrust](https://globanet.com/celltrust/)连接器，用于捕获第三方数据源中的项目，并导入这些项Microsoft 365。 连接器将短信的内容从 CellTrust 帐户转换为电子邮件格式，然后将这些项目导入用户邮箱中的 Microsoft 365。
 
-将 CellTrust 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 CellTrust 连接器在组织中导入和存档Microsoft 365可帮助组织遵守政府及法规策略。
+将 CellTrust 数据存储在用户邮箱中后，Microsoft 365诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性等合规性功能。 使用 CellTrust 连接器在 Microsoft 365 导入和存档数据可帮助组织遵守政府及法规策略。
 
 ## <a name="overview-of-archiving-celltrust-data"></a>存档 CellTrust 数据概述
 
@@ -35,7 +35,7 @@ ms.locfileid: "60195709"
 
 2. 每 24 小时复制一次 CellTrust 项，然后复制到该"是否合并 1"网站。 连接器还会将邮件内容转换为电子邮件格式。
 
-3. 在 Microsoft 云中创建的 CellTrust 连接器Microsoft 365 合规中心每天连接到该 Microsoft 365 合规中心 Merge1 网站，将邮件传输至 Microsoft 云中的安全 Azure 存储 位置。
+3. 在 Microsoft 云中创建的 CellTrust 连接器Microsoft 365 合规中心每天连接到 Microsoft 云中的一个安全 Azure 存储 位置。
 
 4. 作为连接器的自动用户映射使用步骤 [3](#step-3-map-users-and-complete-the-connector-setup)中所述 *的 Email* 属性的值将项目导入特定用户的邮箱。 在用户邮箱中创建名为 **CellTrust** 的收件箱文件夹中的子文件夹，邮件项目将导入该文件夹。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 CellTrust 项目都包含此属性，该属性填充了每个参与者的电子邮件地址。
 
@@ -43,7 +43,9 @@ ms.locfileid: "60195709"
 
 - 为 Microsoft 连接器创建 Merge1 帐户。 若要创建帐户，请联系["用户支持人员"。](https://www.veritas.com/content/support/) 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 必须在步骤 1 中创建 CellTrust 连接器 (并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此 **角色Microsoft 365 合规中心。** 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 中创建 CellTrust 连接器 (在步骤 3) 中完成该连接器的用户必须分配至 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到"管理"角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+
+- 此数据连接器在美国政府云的 GCC 环境中Microsoft 365预览版。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="step-1-set-up-the-celltrust-connector"></a>步骤 1：设置 CellTrust 连接器
 
@@ -69,7 +71,7 @@ ms.locfileid: "60195709"
 
 若要映射用户并完成在 Microsoft 365 合规中心 中设置的连接器，请按照以下步骤操作：
 
-1. 在"**将 CellTrust 用户映射到Microsoft 365"页上**，启用自动用户映射。 CellTrust 项目包括名为 *Email* 的属性，该属性包含组织中用户的电子邮件地址。 如果连接器可以将此地址与Microsoft 365关联，则项目将导入该用户的邮箱。
+1. 在"**将 CellTrust 用户映射到Microsoft 365"页上**，启用自动用户映射。 CellTrust 项目包括名为 *Email* 的属性，该属性包含组织中用户的电子邮件地址。 如果连接器可以将此地址与Microsoft 365关联，则项目会导入该用户的邮箱。
 
 2. 单击 **"下** 一步"，查看设置，然后转到"数据连接器"页以查看新连接器的导入过程的进度。
 
@@ -81,7 +83,7 @@ ms.locfileid: "60195709"
 
 2. 单击 **"连接器"** 选项卡，然后选择 **CellTrust** 连接器以显示包含连接器的属性和信息的飞出页。
 
-3. 在 **"源的连接器状态"** 下， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
+3. 在 **"源的连接器状态"下**， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
 
 ## <a name="known-issues"></a>已知问题
 

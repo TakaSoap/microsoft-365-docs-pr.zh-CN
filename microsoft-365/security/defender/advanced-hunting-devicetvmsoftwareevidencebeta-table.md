@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dd71e4b3554b2cd45b648300f84ec96a73e5116b
-ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
+ms.openlocfilehash: 7fd064b906e4afe5e337df85d9dc6f174edc99cf
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61620538"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645834"
 ---
 # <a name="devicetvmsoftwareevidencebeta"></a>DeviceTvmSoftwareEvidenceBeta
 
@@ -35,7 +35,8 @@ ms.locfileid: "61620538"
 - Microsoft Defender for Endpoint
 
 > [!IMPORTANT]
-> 该表当前处于 beta 版中，提供该表可让你快速搜寻表明设备上 `DeviceTvmSoftwareEvidenceBeta` 存在软件的证据。
+> 该表 `DeviceTvmSoftwareEvidenceBeta` 当前处于 beta 版本。 一旦它离开 beta 版本，最终表名称将更改，列名称也可能更改。 然后，修改可能会中断仍在使用以前名称的查询。 建议用户在此表最终确定时查看和调整其查询。 
+
 
 高级 `DeviceTvmSoftwareEvidenceBeta` 搜寻架构中的表包含来自威胁& [与](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 软件证据相关的 [漏洞管理部分的数据](/microsoft-365/security/defender-endpoint/tvm-software-inventory#software-evidence)。 此表允许你查看设备上检测到特定软件位置的证据。 例如，可以使用此表来标识特定软件的文件路径。 使用此参考来构建从该表返回信息的查询。
 

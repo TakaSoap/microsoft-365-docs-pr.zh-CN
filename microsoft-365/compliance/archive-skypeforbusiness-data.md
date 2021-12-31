@@ -1,5 +1,5 @@
 ---
-title: 设置连接器以在 Skype for Business 中存档Microsoft 365
+title: 设置连接器以在Skype for Business中存档Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,13 +11,13 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 了解如何在邮箱中设置和使用Microsoft 365 合规中心导入和存档数据Skype for Business到Microsoft 365。
-ms.openlocfilehash: 39ce8dbe114e9c6a6d57e29701b375c279e446a9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解如何在 Microsoft 365 合规中心 中设置和使用连接器，以将数据从 Skype for Business 导入Microsoft 365。
+ms.openlocfilehash: 68d89fc4dc71fb3426170efd5005455172f30e9b
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153314"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643732"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>设置连接器以存档Skype for Business数据
 
@@ -27,7 +27,7 @@ ms.locfileid: "60153314"
 
 ## <a name="overview-of-archiving-skype-for-business-data"></a>存档数据Skype for Business概述
 
-以下概述介绍使用连接器在数据记录Skype for Business存档Microsoft 365。
+以下概述介绍使用连接器在 Microsoft 365 中Skype for Business数据的过程。
 
 ![存档数据Skype for Business工作流。](../media/SkypeforBusinessConnectorWorkflow.png)
 
@@ -43,7 +43,9 @@ ms.locfileid: "60153314"
 
 - 为 Microsoft 连接器创建 Merge1 帐户。 若要进行此操作，请联系["用户支持人员"。](https://www.veritas.com/form/requestacall/ms-connectors-contact.html) 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 必须在步骤 1 (步骤 1 中创建 Skype for Business 连接器并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页的"数据连接器"页上添加 **连接器，需要** Microsoft 365 合规中心。 默认情况下，不会为此角色组分配此角色Exchange Online。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中的角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 (步骤 1 中创建 Skype for Business 连接器并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，不会为此角色组分配此角色Exchange Online。 可以将"邮箱导入导出"角色添加到"管理"角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+
+- 此数据连接器在美国政府云的 GCC 环境中Microsoft 365预览版。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="step-1-set-up-the-skype-for-business-connector"></a>步骤 1：设置Skype for Business连接器
 
@@ -61,7 +63,7 @@ ms.locfileid: "60153314"
 
 ## <a name="step-2-configure-the-skype-for-business-on-the-veritas-merge1-site"></a>步骤 2：在 Skype for Business Merge1 网站上配置网站集
 
-第二步是在 Skype for Business Merge1 网站上配置连接器。 若要了解如何配置连接器Skype for Business，请参阅[Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Skype%20for%20Business%20%20User%20Guide.pdf)。
+第二步是在 Skype for Business Merge1 网站上配置连接器。 若要了解如何配置连接器Skype for Business，请参阅 Merge1 第三方[连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Skype%20for%20Business%20%20User%20Guide.pdf)。
 
 单击"保存&**完成****"后**，将显示连接器向导中的"用户Microsoft 365 合规中心页。
 
@@ -69,7 +71,7 @@ ms.locfileid: "60153314"
 
 若要映射用户并完成连接器Microsoft 365 合规中心，请按照以下步骤操作：
 
-1. 在"**将Skype for Business用户Microsoft 365页上，** 启用自动用户映射。 The Skype for Business items include a property called *Email*， which contains email addresses for users in your organization. 如果连接器可以将此地址与Microsoft 365关联，则项目会导入该用户的邮箱。
+1. 在"**映射Skype for Business用户Microsoft 365页上，** 启用自动用户映射。 这些Skype for Business包括一个称为 *Email* 的属性，该属性包含组织中用户的电子邮件地址。 如果连接器可以将此地址与Microsoft 365关联，则项目会导入该用户的邮箱。
 
 2. 单击 **"下** 一步"，查看设置，然后转到"数据连接器"页以查看新连接器的导入过程的进度。
 
@@ -79,9 +81,9 @@ ms.locfileid: "60153314"
 
 1. 转到左侧 <https://compliance.microsoft.com/> 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 
-2. 单击 **"连接器"****选项卡**，然后选择Skype for Business连接器以显示包含有关连接器的属性和信息的飞出页。
+2. 单击 **"连接器"****选项卡**，然后选择Skype for Business连接器以显示该飞出页，其中包含有关连接器的属性和信息。
 
-3. 在 **"源的连接器状态"** 下， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
+3. 在 **"源的连接器状态"下**， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
 
 ## <a name="known-issues"></a>已知问题
 

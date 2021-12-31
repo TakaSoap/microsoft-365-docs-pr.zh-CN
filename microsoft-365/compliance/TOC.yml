@@ -672,8 +672,6 @@
               href: search-for-and-delete-messages-in-your-organization.md
             - name: 搜索 Teams 中本地用户的聊天数据
               href: search-cloud-based-mailboxes-for-on-premises-users.md
-            - name: 准备用于 ID 列表搜索的 CSV 文件
-              href: csv-file-for-an-id-list-content-search.md
             - name: 重试失败的搜索
               href: retry-failed-content-search.md
             - name: 为搜索保留密件抄送收件人
