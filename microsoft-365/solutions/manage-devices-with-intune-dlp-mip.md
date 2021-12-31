@@ -10,18 +10,18 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- endpoint dlp
+- data loss prevention
+- dlp policies
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: f07a820de887179e89024a35cda3801c86fc1416
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+description: 通过与信息保护和管理团队合作，为组织创建 DLP 策略，实现终结点 DLP。
+ms.openlocfilehash: e041e03b1318553937f094868e4e40675b06d47e
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300150"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645822"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>步骤 7. 使用信息保护功能实现数据丢失防护（DLP）
 
