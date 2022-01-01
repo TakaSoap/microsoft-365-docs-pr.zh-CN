@@ -7,21 +7,22 @@ f1.keywords:
 manager: dougeby
 audience: ITPro
 ms.topic: article
+description: 将终结点设备作为零信任安全体系结构的一部分注册到 Microsoft Intune，在为远程工作者构建防护的同时防御勒索软件。
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-overview
+- enroll devices into Intune
+- manage device endpoints
+- zero trust deployment stack
+- device management with zero trust
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: b16903ee5f93be193dd6973291aedb0d1099b931
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 7a5a4ceb9f96a90d5778e1f2470bfda29a681e49
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301160"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645034"
 ---
 # <a name="manage-devices-with-intune-overview"></a>使用 Intune Overview 管理设备
 
@@ -34,9 +35,9 @@ ms.locfileid: "61301160"
 另一方面，如果环境包括共同管理计划（包括 Microsoft Endpoint Configuration Manager），请参阅[共同管理文档](/mem/configmgr/comanage/)为组织安排最佳路径。 如果你的环境包括 Windows 365 云电脑的计划，请参阅 [Windows 365 企业版文档](/windows-365/enterprise/)为组织安排最佳路径。 
 
 ## <a name="why-manage-endpoints"></a>为什么要管理终结点？
-新式企业具有可访问其数据的丰富多样的终结点。 这会产生巨大的攻击面，因此，终结点很容易成为零信任安全策略中最弱的一环。 
+新式企业具有可访问其数据的丰富多样的终结点。 此设置会产生巨大的攻击面，因此，终结点很容易成为零信任安全策略中最弱的一环。 
 
-在必要性的驱动下，世界转向远程或混合工作模式，用户现在随时随地在任何设备上工作，这在历史上是不曾有过的。 攻击者正在快速调整其策略以利用此变化。 许多组织在应对这些新的业务挑战时都面临资源受限的问题。 几乎一夜之间，公司都加速了数字化转型。 简单地说，人们的工作方式已经变了–我们不再期望仅从办公室和公司的设备访问大量公司资源。
+随着世界转向远程或混合工作模式，在必要性的驱动下，用户现在可以随时随地在任何设备上工作，这在历史上是不曾有过的。 攻击者正在快速调整其策略以利用此变化。 许多组织在应对这些新的业务挑战时都面临资源受限的问题。 几乎一夜之间，公司都加速了数字化转型。 简单地说，人们的工作方式已经变了–我们不再期望仅从办公室和公司的设备访问大量公司资源。
 
 了解访问公司资源的终结点是零信任设备策略的第一步。 通常，公司会主动保护电脑免受漏洞和攻击，而移动设备通常不受监视且没有保护。 为了确保你没有将数据暴露在风险中，我们需要监视每个终结点是否存在风险，并使用精细的访问控制来根据组织策略提供适当的访问级别。 例如，如果个人设备已越狱，则可以阻止访问，以确保企业应用程序不会暴露于已知漏洞。
 
@@ -54,7 +55,7 @@ ms.locfileid: "61301160"
 在此图中： 
 
 
-|  |步骤 |说明  |许可要求  |
+|&nbsp;|步骤 |说明  |许可要求  |
 |---------|---------|---------|---------|
 |1     | 配置起始点零信任标识和设备访问策略       | 请与标识管理员合作[实现级别 2 应用保护策略 (APP) 数据保护](manage-devices-with-intune-app-protection.md)。 这些策略不需要管理设备。 在 Intune 中配置 APP 策略。 标识管理员将条件访问策略配置为需要批准的应用。          |E3、E5、F1、F3、F5    |
 |2     | 将设备注册到管理中       | 此任务需要更多规划和时间来实现。 虽然可以选择工具和方法来完成此操作，但[第 3 步–将设备注册到管理](manage-devices-with-intune-enroll.md)指导你使用具有 Autopilot 和自动注册的 Intune 完成此过程。      | E3、E5、F1、F3、F5        |

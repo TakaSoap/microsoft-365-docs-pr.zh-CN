@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 面向管理员：了解如何使用网络上传将多个 PST 文件批量导入 Microsoft 365 中的用户邮箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 18751128d4804cfb3a61377caefba1478b7bd515
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: b189be60efb48af33d26ea459bbee77878d4a93c
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560284"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643864"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用网络上传将组织的 PST 文件导入到 Microsoft 365
 
@@ -49,15 +49,9 @@ ms.locfileid: "61560284"
 
 ## <a name="before-you-import-pst-files"></a>导入 PST 文件前
   
-- 必须分配 Exchange Online 邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。默认情况下，此角色未分配给 Exchange Online 中的任何角色组。可以将邮箱导入导出角色添加到组织管理角色组。或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己添加为成员。有关详细信息，请参阅[ 管理角色组中](/Exchange/permissions-exo/role-groups)的“向角色组添加角色”或“创建角色组”部分。
+- 必须在 Exchange Online 中被分配“邮箱导入导出”角色，才能在 Microsoft 365 合规中心中创建导入作业并将 PST 文件导入到用户邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者，可以创建一个角色组，分配“邮箱导入导出”角色，然后将自己添加为成员。 有关详细信息，请参阅[管理角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。
 
-    此外，若要在 Microsoft 365 安全与合规中心创建导入作业，必须满足以下条件之一：
-
-  - 在 Exchange Online 中必须分配有“邮件收件人”角色。默认情况下，此角色分配给“组织管理和收件人管理”角色组。
-
-    或
-
-  - 必须是你组织中的全局管理员。
+    除了“邮箱导入导出”角色外，你还必须在 Exchange Online 中被分配“邮件收件人”角色。 默认情况下，此角色分配给 Exchange Online 中的“组织管理和收件人管理”角色组。
 
     > [!TIP]
     > 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于导入 PST 文件。若要获得导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。

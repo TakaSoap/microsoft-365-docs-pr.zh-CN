@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: 使用合规中心中的内容搜索电子数据展示工具，搜索各种 Microsoft 365 服务中的内容。
-ms.openlocfilehash: d1636885e03544a78432516e77bfabb8cd52575d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 68270466625cc5f9b76359ae7697536956c727aa
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754897"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643380"
 ---
 # <a name="create-a-content-search"></a>创建内容搜索
 
@@ -46,7 +46,7 @@ ms.locfileid: "60754897"
 
 ## <a name="before-you-run-a-search"></a>运行搜索之前
 
-- 如果要访问 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> 的内容搜索工具（以运行搜索和预览并导出结果），则管理员、合规部主管或电子数据展示管理员必须是 Microsoft 365 合规中心的电子数据展示管理员角色组中的成员。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
+- 若要访问 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>的“内容搜索”工具页面（以运行搜索和预览并导出结果），管理员、合规专员或电子数据展示管理员必须是 Microsoft 365 合规中心的电子数据展示管理员角色组中的成员。有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
 
 - 在 Exchange 混合部署中，无法使用内容搜索工具来搜索本地邮箱。 只能使用该工具搜索基于云的邮箱。
 
@@ -57,9 +57,6 @@ ms.locfileid: "60754897"
 2. 在 Microsoft 365 合规中心的左侧导航窗格中，单击“**内容搜索**”。
 
 3. 在“**内容搜索**”页面，单击“**新建搜索**”。
-
-   > [!NOTE]
-   > “**按 ID 列表搜索**”选项使你可以使用 Exchange ID 列表搜索特定电子邮件和其他邮箱项目。 若要创建 ID 列表搜索，你可以提交一个用于标识要搜索的特定邮箱项的逗号分隔符值 (CSV) 文件。 有关说明，请参阅 [为 ID 列表搜索准备 CSV 文件](csv-file-for-an-id-list-content-search.md)。
 
 4. 键入搜索名称以及帮助标识搜索的可选描述。 搜索名称在你的组织中必须保持唯一。
 

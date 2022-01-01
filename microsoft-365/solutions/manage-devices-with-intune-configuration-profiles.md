@@ -6,22 +6,22 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: 开始使用配置文件，使用 Intune 在设备上强制实施安全设置，以将这些安全控制权转移到云。
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- Configuration profiles
+- Windows security baselines for Intune
+- customize configuration profiles
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: 4f0847c70f5293a50cdaf80e657be5b5ac8753b4
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 0cb966e16d30619cb6666cc73020189532abba8f
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301338"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645046"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>步骤 5. 在 Microsoft Intune 中部署设备配置文件
 
@@ -44,13 +44,13 @@ Microsoft Intune 包含可在组织中的不同设备上启用或禁用的设置
 
 目前，只需部署最合适的 MDM 安全基线。 请参阅 [管理 Microsoft Intune 中的安全基线配置文件](/mem/intune/protect/security-baselines-configure)，以创建配置文件并选择基线版本。
 
-稍后，在设置 Microsoft Defender for Endpoint 并连接 Intune 时，部署 Defender for Endpoint 基线。 本系列的下一篇文章对此进行了介绍：[第 6 步 - 监视设备风险和对安全基线的符合性](manage-devices-with-intune-monitor-risk.md)。
+稍后，在设置 Microsoft Defender for Endpoint 并连接 Intune 时，部署 Defender for Endpoint 基线。 本系列的下一篇文章对此主题进行了介绍：[第 6 步 - 监视设备风险和对安全基线的符合性](manage-devices-with-intune-monitor-risk.md)。
 
 请务必了解这些安全基线并不符合 CIS 或 NIST，但与它们的建议非常相似。 有关详细信息，请参阅 [Intune 安全基线是否符合 CIS 或 NIST](/mem/intune/protect/security-baselines)？
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>自定义组织的配置文件
 
-除了部署预配置的基线之外，许多企业规模的组织还实施配置文件以实现更精细的控制。 这有助于减少对本地 Active Directory 环境中组策略对象的依赖，并将安全控制权移动到云中。 
+除了部署预配置的基线之外，许多企业规模的组织还实施配置文件以实现更精细的控制。 此配置有助于减少对本地 Active Directory 环境中组策略对象的依赖，并将安全控制权移动到云中。 
 
 可以使用配置文件进行配置的许多设置可以分为四个类别，如下所示。
 
