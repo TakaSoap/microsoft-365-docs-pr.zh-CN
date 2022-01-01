@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: 0cfa6c1b672dabcbe5d5418461a0a55ea42867ab
-ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
+ms.openlocfilehash: 5f132f5e17f92f4a155a68d2f0151588034d3a9d
+ms.sourcegitcommit: 678e827a1c3bc9f4edfc48003f9b29f7bbf20ab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61612616"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649519"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
@@ -136,7 +136,7 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-与搜索邮箱项目类似，当有人在 SharePoint 中搜索项目时，会触发 SearchQueryInitiatedSharePoint 事件。 在以下类型的SharePoint站点中进行搜索时，将触发事件：
+与搜索邮箱项目类似，当有人在 SharePoint 中搜索项目时，会触发 SearchQueryInitiatedSharePoint 事件。 在以下类型的 SharePoint 网站的根页或默认页上执行搜索时，将触发事件：
 
 - 首页
 
