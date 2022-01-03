@@ -22,12 +22,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: 了解在 Microsoft 365 中用于限制或禁用共享的选项。
-ms.openlocfilehash: 9d1784e4520b59aedc53a71110f1c7ab0e9d8914
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a34a1a457ed9c53f6393d65617f8ac0d9e611209
+ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154154"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "61660162"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>限制 Microsoft 365 中的共享
 
@@ -183,13 +183,13 @@ ms.locfileid: "60154154"
 默认情况下，网站成员可以通过使用 *组织中的人员* 链接与组织中的其他人共享文件和文件夹。可以通过使用 PowerShell 来禁用 *组织中的人员* 链接：
 
 ```powershell
-Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks
+Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks Disabled
 ```
 
 例如：
 
 ```powershell
-Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks
+Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks Disabled
 ```
 
 ## <a name="create-sites-groups-and-teams"></a>创建网站、组和团队
