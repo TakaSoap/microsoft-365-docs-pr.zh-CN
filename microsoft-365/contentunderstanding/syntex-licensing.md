@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: 了解 SharePoint Syntex 的许可
-ms.openlocfilehash: 2e252ba496d89d388b67330bd1106b5f82c9aeb2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c8ed6b8b5864e0d859e0cbf8655406966e78ff3b
+ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198549"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "61660150"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>SharePoint Syntex 的许可
 
@@ -29,7 +29,7 @@ ms.locfileid: "60198549"
  
 ## <a name="tasks-requiring-a-license"></a>需要许可证的任务
  
-以下任务需要执行此任务的用户的 SharePoint Syntex 许可证：
+以下任务需要执行者拥有 [SharePoint Syntex 许可证](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)：
  
 - 将文档理解模型应用于库。（可以向未经授权的用户授予对内容中心的访问权限，并可在其中创建文档理解模型，但不能将其应用于文档库。）
 - 通过库中的入口点创建表单处理模型

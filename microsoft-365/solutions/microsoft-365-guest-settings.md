@@ -19,12 +19,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: 8028258b1b5a7ec13c2a9c9e2e89e52756c97d38
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bf0a85f43733ac90d55dde9ded38efd273a9c485
+ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202341"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "61660106"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -79,7 +79,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
 |允许组织外部的组成员访问组内容|打开|设置为“**打开**”时，来宾可以访问组内容；设置为“**关闭**”时，则不能访问。 对于来宾与 Microsoft 365 组或 Teams 进行交互的任何情况，此设置应为“**打开**”。|
-|允许组所有者将组织外部的人员添加到组|打开|设置为“打开”时，Microsoft 365 组或 Teams 的所有者可邀请新来宾加入组。 设置为“**关闭**”时，所有者只能邀请目录中已有的来宾。|
+|允许组所有者将组织外部的人员添加到组|打开|设置为“**打开**”时，Microsoft 365 组或 Teams 的所有者可邀请新来宾加入组。 设置为“**关闭**”时，则不能。 对于将来宾添加到组的任何情况，此设置应为“**打开**”。|
 
 这些设置均为组织级别的设置。有关如何使用 PowerShell 在组级别更改这些设置的信息，请参阅[创建针对特定组的设置](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group)。
 
