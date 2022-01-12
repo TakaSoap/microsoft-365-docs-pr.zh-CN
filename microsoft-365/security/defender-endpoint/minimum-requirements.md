@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fdc22ecb1e540c2408cc6178c0190dbce676d761
-ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
+ms.openlocfilehash: b48503eddbb0093bc5e022d981fb719cd6f42e47
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61620464"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941800"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的最低要求
 
@@ -40,38 +40,8 @@ ms.locfileid: "61620464"
 > - Defender for Endpoint 在最新的 MITRE 评估中展示了行业领先的光学镜头和检测功能。 阅读：[来自基于 MITRE ATT&CK 的评估的见解](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
 
 ## <a name="licensing-requirements"></a>许可要求
+有关 Microsoft Defender for Endpoint 的信息许可要求，请参阅 [适用于终结点的 Microsoft Defender 许可信息](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint)。
 
-Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一：
-
-- Windows 11 Enterprise E5
-- Windows 11 教育版 A5
-- Windows 10 企业版 E5
-- Windows 10 教育版 A5
-- Microsoft 365 E5 (M365 E5) 包括 Windows 10 企业版 E5 或 Windows 11 Enterprise E5
-- Microsoft 365 A5 (M365 A5)  
-- Microsoft 365 E3 (M365 E3) E5 企业移动性 + 安全性 E5 加载项
-- Microsoft 365 商业高级版购买时Microsoft 云解决方案提供商[](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)
-- Microsoft 365 E5 安全性
-- Microsoft 365 A5 安全性
-- Microsoft Defender for Endpoint
-
-> [!NOTE]
-> 符合条件的许可用户可以在最多五台并发设备上使用 Microsoft Defender for Endpoint。
-> Microsoft Defender for Endpoint 还可从云解决方案提供商云解决方案提供商 (购买) 。
-> RDSH VM 不需要单独的 Defender for Endpoint 许可证。
-
-适用于服务器的 Microsoft Defender for Endpoint 需要以下许可选项之一：
-
-- [启用了增强安全功能的 Microsoft Defender 云](/azure/security-center/enable-enhanced-security)
-- Microsoft Defender for Endpoint for Server (覆盖的服务器服务器一) 
-
-> [!NOTE]
-> 对于 Microsoft Defender for Endpoint for Servers，客户至少可以 (一个覆盖的服务器操作系统环境 (OSE) ) 获取以下一个或多个用户许可证至少 50 个许可证：
->
-> - Microsoft Defender for Endpoint
-> - Windows E5/A5
-> - Microsoft 365 E5/A5
-> - Microsoft 365 E5/A5 安全性
 
 有关许可的详细信息，请参阅产品 [条款网站](https://www.microsoft.com/licensing/terms/) ，并与你的帐户团队合作，了解有关条款和条件的详细信息。
 
@@ -92,7 +62,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 ### <a name="supported-windows-versions"></a>支持的 Windows 版本
 
 - Windows 7 SP1 Enterprise ([需要 ESU 以支持](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
-- Windows 7 SP1 Pro (需要[ESU 以支持](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
+- Windows 7 SP1 Pro ([需要 ESU 以支持](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
 - Windows 8.1 企业版
 - Windows 8.1 专业版
 - Windows 11 企业版
@@ -205,24 +175,24 @@ Defender for Endpoint 传感器可以使用每日平均带宽 5 MB 与 Defender 
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Microsoft Defender 防病毒配置要求
 
-Defender for Endpoint 代理依赖于Microsoft Defender 防病毒扫描文件并提供有关文件的信息的能力。
+Defender for Endpoint 代理依赖于用户Microsoft Defender 防病毒扫描文件并提供有关文件的信息的能力。
 
-在 Defender for Endpoint 设备上配置安全智能更新，Microsoft Defender 防病毒反恶意软件是否有效。 有关详细信息，请参阅管理更新[Microsoft Defender 防病毒应用基线](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)。
+在 Defender for Endpoint 设备上配置安全智能更新Microsoft Defender 防病毒反恶意软件是否有效。 有关详细信息，请参阅管理更新[Microsoft Defender 防病毒应用基线](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)。
 
-如果Microsoft Defender 防病毒在你的组织中不是主动反恶意软件，并且你使用 Defender for Endpoint 服务，Microsoft Defender 防病毒被动模式。
+如果你Microsoft Defender 防病毒在你的组织中不是主动反恶意软件，并且你使用 Defender for Endpoint 服务，Microsoft Defender 防病毒被动模式。
 
 如果组织已通过组策略Microsoft Defender 防病毒其他方法关闭已载入的设备，则必须从该组策略中排除已载入的设备。
 
 如果你正在载入服务器，Microsoft Defender 防病毒服务器上不是主动反恶意软件，Microsoft Defender 防病毒需要配置为进入被动模式或卸载。 配置取决于服务器版本。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](microsoft-defender-antivirus-compatibility.md)。
 
 > [!NOTE]
-> 常规组策略不适用于防篡改保护，当防篡改保护打开Microsoft Defender 防病毒将忽略对组设置所做的更改。
+> 常规组策略不适用于防篡改保护，当"防篡改保护"打开Microsoft Defender 防病毒更改将被忽略。
 
 ## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Microsoft Defender 防病毒启用早期启动反恶意软件 (ELAM) 启用
 
-如果你正在设备上Microsoft Defender 防病毒作为主要的反恶意软件产品，则 Defender for Endpoint 代理将成功载入。
+如果你正在设备上Microsoft Defender 防病毒作为主要的反恶意软件产品运行，则 Defender for Endpoint 代理将成功载入。
 
-如果正在运行第三方反恶意软件客户端并使用移动设备管理解决方案或 Microsoft Endpoint Manager (current branch) ，则需要确保 Microsoft Defender 防病毒 ELAM 驱动程序已启用。 有关详细信息，请参阅[确保策略Microsoft Defender 防病毒禁用此策略](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
+如果正在运行第三方反恶意软件客户端并使用移动设备管理解决方案或 Microsoft Endpoint Manager (current branch) ，则需要确保 Microsoft Defender 防病毒 ELAM 驱动程序已启用。 有关详细信息，请参阅[确保策略Microsoft Defender 防病毒禁用策略](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
 ## <a name="related-topics"></a>相关主题
 

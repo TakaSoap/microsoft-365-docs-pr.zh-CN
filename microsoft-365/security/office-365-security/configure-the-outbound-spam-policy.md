@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何在 EOP 服务中查看、创建、修改和删除Exchange Online Protection (垃圾邮件) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08621035f5bdd89b43cbe64e84802cdf0dfc5a79
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7f635eb17d458ca707f7a18d3eb1f7fe655bd2b9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196557"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941488"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中配置出站垃圾邮件筛选
 
@@ -37,18 +37,18 @@ ms.locfileid: "60196557"
 
 在 Microsoft 365 组织中，邮箱在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱，则自动检查通过 EOP 发送的出站电子邮件是否包含垃圾邮件和异常发送活动。
 
-来自组织中用户的出站垃圾邮件通常指示帐户遭到入侵。 无论垃圾邮件可信度或 SCL) 是什么，可疑出站邮件都会标记为垃圾邮件 (并通过高风险传送池进行路由，以帮助[](high-risk-delivery-pool-for-outbound-messages.md)保护服务 (即使 Microsoft 365 源电子邮件服务器不受 IP 阻止列表) 限制。 管理员将自动收到可疑的出站电子邮件活动的通知，并且会通过警报策略阻止 [用户](../../compliance/alert-policies.md)。
+来自组织中用户的出站垃圾邮件通常指示帐户遭到入侵。 无论垃圾邮件可信度或 SCL) 是什么，可疑出站邮件都会标记为垃圾邮件 (并通过高风险传送池进行路由，以帮助[](high-risk-delivery-pool-for-outbound-messages.md)保护服务 (的信誉，即使 Microsoft 365 源电子邮件服务器不受 IP 阻止列表) 限制。 管理员将自动收到可疑的出站电子邮件活动的通知，并且会通过警报策略阻止 [用户](../../compliance/alert-policies.md)。
 
 EOP 使用出站垃圾邮件策略作为组织对垃圾邮件的整体防御的一部分。 有关详细信息，请参阅[反垃圾邮件保护](anti-spam-protection.md)。
 
 管理员可以查看、编辑和配置 (，但不能) 默认出站垃圾邮件策略。 更精细地来说，您还可以创建适用于组织中特定用户、组或域的自定义出站垃圾邮件策略。 自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
 
-您可以在邮件门户中或在 PowerShell Microsoft 365 Microsoft 365 Defender PowerShell 中为邮箱在 Microsoft 365 中的组织 (Exchange Online PowerShell 配置出站Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
+您可以在 Microsoft 365 Microsoft 365 Defender 门户中或在 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织配置出站垃圾邮件策略;独立 EOP PowerShell 用于没有邮箱Exchange Online组织) 。
 
 EOP 中的出站垃圾邮件策略的基本元素包括：
 
 - **出站垃圾邮件筛选策略**：指定出站垃圾邮件筛选裁定和通知选项的操作。
-- **出站垃圾邮件筛选器** 规则：指定策略 (策略应用于出站垃圾邮件) 的优先级和收件人筛选器。
+- **出站垃圾邮件筛选器** 规则：指定策略应用于 (筛选器的优先级和收件人筛选器) 出站垃圾邮件筛选策略的收件人筛选器。
 
 当您在邮件门户中管理出站垃圾邮件管理时，这两个元素Microsoft 365 Defender明显：
 
@@ -60,7 +60,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
 每个组织都有一个名为 Default 的内置出站垃圾邮件策略，该策略具有以下属性：
 
-- 即使与策略关联的收件人筛选器没有出站垃圾邮件筛选规则， (应用于组织) 所有收件人。
+- 即使没有出站垃圾邮件筛选规则，该策略将应用于组织 (筛选器) 策略。
 - 该策略具有无法修改的自定义优先级值“**最低**”（表示此策略始终最后应用）。 你创建的任何自定义策略的优先级始终高于名为“默认”的策略。
 - 该策略是默认策略（**IsDefault** 属性的值为 `True`），你无法删除默认策略。
 
@@ -80,22 +80,22 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
   **注意**：
 
-  - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的权限。有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 - 有关针对出站垃圾邮件策略的建议设置，请参阅 [EOP 出站垃圾邮件筛选器策略设置](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings)。
 
-- 名为 [](../../compliance/alert-policies.md)Email **sending limit、Suspicious** **email sending patterns detected** 和 User restricted from sending **email** 的默认警报策略已向 **TenantAdmins** (**全局** 管理员) 组的成员发送有关异常出站电子邮件活动和因出站垃圾邮件被阻止的用户的电子邮件通知。 有关详细信息，请参阅 [验证受限用户的警报设置](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 我们建议您使用这些警报策略，而不是出站垃圾邮件策略中的通知选项。
+- 名为"电子邮件发送限制已超出、检测到可疑电子邮件发送模式"和"限制发送电子邮件的用户"的默认警报策略已经向 **TenantAdmins** (全局管理员 **)** 组的成员发送有关异常出站电子邮件活动和因出站垃圾邮件被阻止的用户的电子邮件通知。 [](../../compliance/alert-policies.md) 有关详细信息，请参阅 [验证受限用户的警报设置](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 我们建议您使用这些警报策略，而不是出站垃圾邮件策略中的通知选项。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies"></a>使用Microsoft 365 Defender门户创建出站垃圾邮件策略
 
-在门户中创建自定义出站垃圾邮件Microsoft 365 Defender会同时使用同一名称创建垃圾邮件筛选规则和相关垃圾邮件筛选器策略。
+在门户中创建自定义出站垃圾邮件策略Microsoft 365 Defender使用相同的名称同时创建垃圾邮件筛选器规则和相关垃圾邮件筛选器策略。
 
-1. 在 Microsoft 365 Defender 门户中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>的“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户的 <https://security.microsoft.com> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://security.microsoft.com/antispam>。
 
 2. 在" **反垃圾邮件策略"页上** ，单击" ![ 创建图标"。](../../media/m365-cc-sc-create-icon.png) **创建策略** ，然后从 **下拉列表** 中选择"出站"。
 
-3. 将打开策略向导。 在“**命名策略页面**”上，配置以下设置：
+3. 策略向导随即打开。在 **命名策略页面** 上，配置以下设置：
    - **名称**：输入策略的唯一描述性名称。
    - **说明**：输入策略的可选说明。
 
@@ -108,7 +108,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
    单击相应的框，开始键入值，然后从结果中选择所需的值。 根据需要多次重复此过程。 若要删除现有值，请单击值旁边的 ![删除图标。](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
 
-   对于用户或组，可以使用大多数标识符（姓名、显示名称、别名、电子邮件地址、帐户名称等），但是相应的显示名称会显示在结果中。 对于用户，请自行输入星号 (\*) 以查看所有可用值。
+   对于用户或组，可以使用大多数标识符（名称、显示名称、别名、电子邮件地址、帐户名称等），但相应的显示名称则显示在结果中。对于用户，请自行输入星号（\*），以查看所有可用值。
 
    同一个条件的多个值使用 OR 逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件使用 AND 逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
@@ -128,23 +128,23 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
    - **对达到邮件限制的用户** 施加的限制：当超过"保护设置"部分的任何限制时，从下拉列表中选择一个操作。
 
-     对于所有操作，在"用户限制发送电子邮件通知策略 ("中指定的收件人以及现在冗余的"如果发件人因发送出站垃圾邮件设置被阻止，则通知这些用户和组") 接收电子邮件通知。
+     对于所有操作，在"用户限制发送电子邮件通知策略" (中和现在冗余的"如果发件人因发送出站垃圾邮件设置被阻止，则通知这些用户和组"中指定的收件人) 接收电子邮件通知。
 
      - **限制用户发送邮件，直到第二天**：此为默认值。 将发送电子邮件通知，用户将无法再发送任何邮件，直到第二天，基于 UTC 时间。 管理员无法覆盖此阻止。
-       - 名为"用户 **被限制** 发送电子邮件"的警报策略 (通过电子邮件发送通知管理员，并通知管理员&警报查看警报 \> ") 。
+       - 名为"用户 **被限制** 发送电子邮件"的警报策略 (通知管理员，并通知管理员&警报查看警报 \> ") 。
        - 还会通知策略中"如果发件人因发送出站垃圾邮件而受阻，则通知特定人员"设置中指定的任何收件人。
        - 用户将无法发送其他任何邮件，直到第二天，基于 UTC 时间。 管理员无法覆盖此阻止。
      - 限制用户发送邮件：发送电子邮件通知、将用户添加到 Microsoft 365 Defender 门户中的受限用户，并且用户无法发送电子邮件，除非管理员将用户从受限用户中删除。 <https://security.microsoft.com/restrictedusers> 管理员从列表中删除用户后，该天不会再次限制该用户。 有关说明，请参阅 [在发送垃圾邮件后从受限用户门户删除用户](removing-user-from-restricted-users-portal-after-spam.md)。
      - **无操作，仅** 警报：发送电子邮件通知。
 
-   - **转发规则**：使用本节中的设置控制自动电子邮件转发，Exchange Online **邮箱** 转发给外部发件人。 有关详细信息，请参阅在电子邮件中控制[自动外部](external-email-forwarding.md)Microsoft 365。
+   - **转发规则**：使用本节中的设置控制自动电子邮件转发，Exchange Online **邮箱** 转发给外部发件人。 有关详细信息，请参阅在邮件中[控制自动外部电子邮件Microsoft 365。](external-email-forwarding.md)
 
      > [!NOTE]
      > 禁用自动转发后，如果外部发件人向已就地转发的邮箱发送电子邮件 (收件人将收到未送达报告 (也称为 NDR 或退回邮件) 。 如果邮件由内部发件人发送，并且转发方法是邮箱转发 (也称为 [](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) _SMTP_) ，则内部发件人将获取 NDR。 如果转发由于收件箱规则而发生，则内部发件人不会获得 NDR。
 
      从"自动转发规则"下拉列表 **中选择下列** 操作之一：
 
-     - **自动 - 系统控制**：允许出站垃圾邮件筛选控制自动外部电子邮件转发。 此为默认值。
+     - **自动 - 系统控制**：允许出站垃圾邮件筛选控制自动外部电子邮件转发。 此值为默认值。
      - **On**：策略不会禁用自动外部电子邮件转发。
      - **关闭**：策略禁用所有自动外部电子邮件转发。
 
@@ -165,7 +165,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
      >
      > - 此设置正在被出站垃圾邮件策略弃用。
      >
-     > - 名为"[](../../compliance/alert-policies.md)限制发送电子邮件的用户"的默认警报策略已在用户因超出"收件人限制"部分的限制而被阻止时，向 **TenantAdmins** (全局管理员 **)** 组的成员发送电子邮件通知。  **强烈建议使用警报** 策略，而不是出站垃圾邮件策略中的此设置来通知管理员和其他用户。 有关说明，请参阅 [验证受限用户的警报设置](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。
+     > - 名为"[](../../compliance/alert-policies.md)限制发送电子邮件的用户"的默认警报策略已在用户因超出"收件人 **限制"部分** 的限制被阻止时向 **TenantAdmins** (全局管理员) 组的成员发送电子邮件通知。  **强烈建议使用警报** 策略，而不是出站垃圾邮件策略中的此设置来通知管理员和其他用户。 有关说明，请参阅 [验证受限用户的警报设置](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。
 
    完成后，单击“**下一步**”。
 
@@ -177,7 +177,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-outbound-spam-policies"></a>使用Microsoft 365 Defender查看出站垃圾邮件策略
 
-1. 在 Microsoft 365 Defender 门户中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>的“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户的 <https://security.microsoft.com> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://security.microsoft.com/antispam>。
 
 2. 在 **“反垃圾邮件”策略** 页面上，查找以下值之一:
    - 类型 **值为** " **自定义出站垃圾邮件策略"**
@@ -198,7 +198,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
 2. 在 **"反垃圾邮件策略"** 页上，通过单击名称从列表中选择出站垃圾邮件策略：
    - 您创建的自定义策略，其中"类型"**列中的值为****"自定义出站垃圾邮件策略"。**
-   - 名为"反垃圾邮件 **出站策略"的默认策略 (默认) 。**
+   - 名为"反垃圾邮件出站策略"的默认策略 **(默认) 。**
 
 3. 在出现的策略详细信息浮出控件中，选择每个部分中的“**编辑**”以修改该部分中的设置。 有关设置详细信息，请参阅本文中的上一Microsoft 365 Defender门户创建[出站](#use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies)垃圾邮件策略部分。
 
@@ -228,7 +228,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
 默认情况下，根据出站垃圾邮件策略在 (中的创建顺序，出站垃圾邮件策略的优先级低于旧版策略) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
-若要更改策略的优先级，请单击策略属性中的“**提高优先级**”或“**降低优先级**”（不能直接修改 Microsoft 365 Defender 门户中的“**优先级**”数字）。 只有当你有多个策略时，更改策略的优先级才有意义。
+要更改策略的优先级，请在策略属性中单击“**提高优先级**”或“**降低优先级**”（不能在 Microsoft 365 Defender 门户中直接修改 **优先级** 编号）。仅当具有多个策略时，更改策略的优先级才有意义。
 
  **注意**：
 
@@ -241,18 +241,18 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
 3. 在出现的策略详细信息浮出控件顶部，你会看到“**提高优先级**”或“**降低优先级**”，具体取决于当前优先级值和自定义策略数量：
    - 优先级值为 **0** 的出站垃圾邮件策略仅提供 **"减少优先级"** 选项。
-   - 优先级值最低的出站垃圾邮件策略 (例如 **，3**) 只有"增加 **优先级"** 选项可用。
+   - 优先级值最低的出站垃圾邮件策略 (例如 **，3**) 只有"增加优先级 **"** 选项可用。
    - 如果您有三个或多个出站垃圾邮件策略，则最高优先级和最低优先级值之间的策略同时具有"增加优先级"和"**减少优先级"** 选项。
 
    单击![“提高优先级”图标。](../../media/m365-cc-sc-increase-icon.png) **“提高优先级”** 或![“降低优先级”图标](../../media/m365-cc-sc-decrease-icon.png) **“降低优先级”** 以更改 **“优先级”** 值。
 
 4. 完成后，单击策略详细信息浮出控件中的“**关闭**”。
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-outbound-spam-policies"></a>使用 Microsoft 365 Defender门户删除自定义出站垃圾邮件策略
+## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-outbound-spam-policies"></a>使用 Microsoft 365 Defender 门户删除自定义出站垃圾邮件策略
 
 使用自定义Microsoft 365 Defender删除自定义出站垃圾邮件策略时，垃圾邮件筛选器规则及相应的垃圾邮件筛选策略都将被删除。 不能删除默认出站垃圾邮件策略。
 
-1. 在 Microsoft 365 Defender 门户中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>的“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户的 <https://security.microsoft.com> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://security.microsoft.com/antispam>。
 
 2. 在 **"反垃圾邮件策略"** 页上，单击名称，从列表中选择"类型"值为"自定义出站垃圾邮件策略"的策略。 在显示的策略详细信息浮出控件顶部，单击![更多操作图标。](../../media/m365-cc-sc-more-actions-icon.png) **更多操作** \> ![删除策略图标](../../media/m365-cc-sc-delete-icon.png) **删除策略**。
 
@@ -275,12 +275,12 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 1. 创建出站垃圾邮件筛选器策略。
 2. 创建出站垃圾邮件筛选器规则，该规则指定该规则适用的出站垃圾邮件筛选器策略。
 
-   **注意**:
+   **注意**：
 
-   - 您可以创建一个新的出站垃圾邮件筛选器规则，并为其分配现有的未关联的出站垃圾邮件筛选器策略。 出站垃圾邮件筛选器规则不能与多个出站垃圾邮件筛选器策略关联。
+   - 您可以创建新的出站垃圾邮件筛选器规则，并为其分配现有的未关联的出站垃圾邮件筛选器策略。 出站垃圾邮件筛选器规则不能与多个出站垃圾邮件筛选器策略关联。
    - 可以在 PowerShell 中的新出站垃圾邮件筛选器策略上配置以下设置，这些设置在 Microsoft 365 Defender 门户中不可用，直到创建策略之后：
      - 在 `$false` **New-HostedOutboundSpamFilterRule** cmdlet (上创建禁用的新) 。
-     - 在 _\<Number\>_ **New-HostedOutboundSpamFilterRule** cmdlet (中) 策略创建期间设置的优先级) 。
+     - 在 _\<Number\>_ **New-HostedOutboundSpamFilterRule** cmdlet (中) 策略的优先级) 。
    - 在 PowerShell 中新建的出站垃圾邮件筛选器策略在 Microsoft 365 Defender门户中不可见，除非将策略分配给出站垃圾邮件筛选器规则。
 
 #### <a name="step-1-use-powershell-to-create-an-outbound-spam-filter-policy"></a>步骤 1：使用 PowerShell 创建出站垃圾邮件筛选器策略
@@ -291,7 +291,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Additional Settings>
 ```
 
-本示例将创建一个名为 Contoso Executives 的新出站垃圾邮件筛选器策略，该策略具有以下设置：
+本示例创建一个名为 Contoso Executives 的新出站垃圾邮件筛选器策略，该策略具有以下设置：
 
 - 收件人速率限制仅限于默认值较小的值。 有关详细信息，请参阅跨选项[发送Microsoft 365限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)。
 
@@ -387,7 +387,7 @@ Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 在 PowerShell 中修改恶意软件筛选器策略时可用的设置与创建策略时相同，如本文前面步骤 [1：使用 PowerShell](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) 创建出站垃圾邮件筛选器策略一节中所述。
 
 > [!NOTE]
-> 如果 **Set-HostedOutboundSpamFilterPolicy** cmdlet 没有 _Name_ (，则不能重命名出站垃圾邮件) 。 在邮件门户中重命名出站垃圾邮件Microsoft 365 Defender，只需重命名出站垃圾邮件筛选器 _规则_。
+> 如果 **Set-HostedOutboundSpamFilterPolicy** cmdlet 没有 _Name_ 参数， (出站垃圾邮件筛选器策略) 。 在邮件门户中重命名出站垃圾邮件Microsoft 365 Defender，只是重命名出站垃圾邮件筛选器 _规则_。
 
 若要修改出站垃圾邮件筛选器策略，请使用以下语法：
 
@@ -413,7 +413,7 @@ Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" <Settings>
 
 ### <a name="use-powershell-to-enable-or-disable-outbound-spam-filter-rules"></a>使用 PowerShell 启用或禁用出站垃圾邮件筛选规则
 
-启用或禁用 PowerShell 中的出站垃圾邮件筛选规则启用或禁用整个出站垃圾邮件策略 (出站垃圾邮件筛选器规则，以及分配的出站垃圾邮件筛选器策略) 。 不能启用或禁用默认出站垃圾邮件策略 (它始终应用于所有收件人或) 。
+在 PowerShell 中启用或禁用出站垃圾邮件筛选器规则可启用或禁用整个出站垃圾邮件策略 (出站垃圾邮件筛选器规则，以及分配的出站垃圾邮件筛选器策略) 。 不能启用或禁用默认出站垃圾邮件策略 (该策略始终应用于所有邮件) 。
 
 若要在 PowerShell 中启用或禁用出站垃圾邮件筛选规则，请使用以下语法：
 

@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint
-description: 介绍如何使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint
+description: 介绍如何在 Android 上部署 Microsoft Defender for Endpoint 和 Microsoft Intune
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mde， android， 安装， 部署， 卸载，
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: babe21ec9026ac78849b86c8310b24a83bdf41c0
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 380e2ecb9ee8df7eb066eef600f796685215662f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531722"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941236"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint
 
@@ -52,7 +52,7 @@ ms.locfileid: "61531722"
 
 1. In [Microsoft Endpoint Manager admin center，](https://go.microsoft.com/fwlink/?linkid=2109431) go to **Apps** \> **Android Apps** Add Android store \> **\> app** and choose **Select**.
 
-   :::image type="content" alt-text="管理中心Microsoft Endpoint Manager android 应用商店应用程序的图像。" source="images/mda-addandroidstoreapp.png" lightbox="images/mda-addandroidstoreapp.png":::
+   :::image type="content" alt-text="管理员中心Microsoft Endpoint Manager android 应用商店应用程序的图像。" source="images/mda-addandroidstoreapp.png" lightbox="images/mda-addandroidstoreapp.png":::
 
 2. 在" **添加应用程序"页** 的"应用程序信息"部分 *，输入* ：
 
@@ -65,7 +65,7 @@ ms.locfileid: "61531722"
 
    :::image type="content" alt-text="管理中心Microsoft Endpoint Manager应用信息的图像。" source="images/mda-addappinfo.png" lightbox="images/mda-addappinfo.png":::
 
-3. 在" *分配"* 部分，转到" **必需"** 部分并选择" **添加组"。** 然后，你可以选择你要 (Android) Defender for Endpoint 的用户组策略。 选择 **"选择**"，然后选择"下一 **步"。**
+3. 在" *分配"* 部分，转到" **必需"** 部分并选择" **添加组"。** 然后，你可以选择要 (Android) Defender for Endpoint 的用户组。 选择 **"选择**"，然后选择"下一 **步"。**
 
     > [!NOTE]
     > 所选用户组应由 Intune 注册的用户组成。
@@ -90,7 +90,7 @@ ms.locfileid: "61531722"
 
 2. 点击 Microsoft Defender for Endpoint 应用图标并按照屏幕上的说明完成应用载入。 详细信息包括最终用户接受 Android 上的 Defender for Endpoint 所需的 Android 权限。
 
-3. 成功载入后，设备将开始显示在设备列表中的Microsoft Defender 安全中心。
+3. 成功载入后，设备将开始显示在设备门户中的设备Microsoft 365 Defender上。
 
     :::image type="content" alt-text="Defender for Endpoint 门户中的设备图像。" source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 
@@ -112,7 +112,7 @@ Android 上的 Defender for Endpoint 支持 Android Enterprise注册的设备。
 
 2. 在随后加载的托管 Google Play 页面上，转到搜索框并输入 `Microsoft Defender` 。 你的搜索应在托管 Google Play 中显示 Microsoft Defender for Endpoint 应用。 从应用搜索结果中单击 Microsoft Defender for Endpoint 应用。
 
-    ![管理Microsoft Endpoint Manager应用搜索的图像。](images/0f79cb37900b57c3e2bb0effad1c19cb.png)
+    ![管理中心Microsoft Endpoint Manager应用搜索的图像。](images/0f79cb37900b57c3e2bb0effad1c19cb.png)
 
 3. 在接下来启动的应用描述页面中，你应该能够看到 Defender for Endpoint 上的应用详细信息。 查看页面上的信息，然后选择"批准 **"。**
 
@@ -143,7 +143,7 @@ Android 上的 Defender for Endpoint 支持 Android Enterprise注册的设备。
 
     :::image type="content" alt-text="Android 应用列表的图像。" source="images/fa4ac18a6333335db3775630b8e6b353.png" lightbox="images/fa4ac18a6333335db3775630b8e6b353.png":::
 
-9. Defender for Endpoint 通过 Intune 支持托管设备的应用配置策略。 此功能可用于自动授予适用的 Android (权限) ，因此最终用户无需接受这些 (权限) 。
+9. Defender for Endpoint 通过 Intune 支持托管设备的应用配置策略。 此功能可用于自动授予适用的 Android () ，因此最终用户无需接受这些 (权限) 。
 
     1. 在应用 **页面中** ，转到策略 **>应用配置策略>添加>托管设备**。
 
@@ -195,12 +195,12 @@ Android 上的 Defender for Endpoint 支持 Android Enterprise注册的设备。
 
 ### <a name="auto-setup-of-always-on-vpn"></a>自动设置始终打开 VPN
 
-Defender for Endpoint 通过 Intune 支持托管设备的设备配置策略。 此功能可用于在 Android Enterprise 设备上自动设置始终打开 **VPN，** 因此最终用户无需在载入时设置 VPN 服务。
+Defender for Endpoint 通过 Intune 支持托管设备的设备配置策略。 此功能可用于在 Android Enterprise设备上自动设置始终打开 **VPN，** 因此最终用户无需在载入时设置 VPN 服务。
 
 1. 在 **设备上，** 选择 **配置文件 创建** \> **配置文件** \> **平台** \> **Android Enterprise**
 
    根据 **你的设备** 注册类型，在下列选项之一下选择设备限制：
-   - **完全托管、专用Corporate-Owned工作配置文件**
+   - **完全托管、专用和Corporate-Owned工作配置文件**
    - **个人拥有的工作配置文件**
 
    选择“**创建**”。

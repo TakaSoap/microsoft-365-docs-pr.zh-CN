@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 45446cf3d3346df10620f5ef6020949e401e7d75
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 2fa55e3bdf0ca9c06093e843e9dca4d8ed502128
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218486"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940550"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>使用受控文件夹访问保护文重要件夹
 
@@ -58,11 +58,11 @@ ms.locfileid: "61218486"
 
 ## <a name="why-controlled-folder-access-is-important"></a>受控文件夹访问权限为什么很重要
 
-受控文件夹访问权限在帮助保护文档和信息免受勒索软件攻击 [方面尤其有用](https://www.microsoft.com/wdsi/threats/ransomware)。 在勒索软件攻击中，你的文件可以加密并保存。 受控文件夹访问权限就位后，应用尝试对受保护文件夹中的文件进行更改的计算机上将显示一条通知。 你可以使用公司的详细信息和联系人信息[自定义通知](customize-attack-surface-reduction.md#customize-the-notification)。 还可以单独启用规则以自定义功能所监视的技术。
+受控文件夹访问权限在帮助保护文档和信息免受勒索软件攻击 [方面尤其有用](https://www.microsoft.com/wdsi/threats/ransomware)。 在勒索软件攻击中，你的文件可以加密并保存。 受控文件夹访问权限就位后，应用尝试对受保护文件夹中的文件进行更改的计算机上将显示一条通知。 你可以使用公司的详细信息和联系人信息[自定义通知](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules)。 还可以单独启用规则以自定义功能所监视的技术。
 
 受保护的 [文件夹包括](#review-controlled-folder-access-events-in-windows-event-viewer) 公用系统文件夹 (包括启动) ，你可以 [添加更多文件夹](customize-controlled-folders.md#protect-additional-folders)。 还可以允许 [应用](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) 向它们授予对受保护文件夹的访问权限。
 
-可以使用审核 [模式评估](audit-windows-defender.md) 受控文件夹访问权限启用后对组织的影响。 您还可以访问 Windows Defender Test ground[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认该功能是否正常工作并查看其工作方式。
+可以使用审核 [模式评估](audit-windows-defender.md) 受控文件夹访问权限启用后对组织的影响。 您还可以访问 Windows Defender 测试场[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)以确认功能是否正常工作并查看其工作方式。
 
 受控文件夹访问权限支持以下版本的 Windows：
 
@@ -71,7 +71,7 @@ ms.locfileid: "61218486"
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - Windows Server 2022
 
-## <a name="windows-system-folders-are-protected-by-default"></a>Windows系统文件夹受默认保护
+## <a name="windows-system-folders-are-protected-by-default"></a>Windows默认保护系统文件夹
 
 Windows默认保护系统文件夹以及其他一些文件夹：
 
@@ -86,7 +86,7 @@ Windows默认保护系统文件夹以及其他一些文件夹：
 - `c:\Users\<username>\Favorites`
 
 > [!NOTE]
-> 可以将其他文件夹配置为受保护，但无法删除Windows系统文件夹。
+> 可以将其他文件夹配置为受保护，但不能删除Windows系统文件夹的默认文件夹。
 
 ## <a name="requirements-for-controlled-folder-access"></a>受控文件夹访问权限的要求
 
@@ -105,14 +105,14 @@ DeviceEvents
 | where ActionType in ('ControlledFolderAccessViolationAudited','ControlledFolderAccessViolationBlocked')
 ```
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在事件查看器中查看受控文件夹Windows事件
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在事件查看器中查看受控Windows访问事件
 
-你可以查看Windows事件日志，以查看当受控文件夹访问权限阻止应用 (或审核应用) 创建的事件：
+你可以查看Windows事件日志，以查看当受控文件夹访问权限阻止 (或审核应用) 创建的事件：
 
 1. 下载 [评估包](https://aka.ms/mp7z2w) ，将文件 *cfa-events.xml* 到设备上易于访问的位置。
-2. 在 **事件** 查看器中键入"开始"菜单以打开Windows事件查看器。
+2. 在 **事件** 查看器中"开始"菜单事件查看器以Windows事件查看器。
 3. 在左侧面板的"操作 **"下**，选择 **"导入自定义视图..."。**
-4. 导航到提取 *文件cfa-events.xml并选择* 它。 或者，[直接复制 XML。](event-views.md)
+4. 导航到提取 *内容cfa-events.xml并选择* 它。 或者，[直接复制 XML。](event-views.md)
 5. 选择“**确定**”。
 
 下表显示与受控文件夹访问权限相关的事件：
@@ -127,7 +127,7 @@ DeviceEvents
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>查看或更改受保护的文件夹列表
 
-可以使用 Windows 安全中心 查看受受控文件夹访问权限保护的文件夹列表。
+可以使用该Windows 安全中心查看受受控文件夹访问权限保护的文件夹列表。
 
 1. 在 Windows 10 或 Windows 11 设备上，打开Windows 安全中心应用。
 2. 选择“**病毒和威胁防护**”。
@@ -138,4 +138,4 @@ DeviceEvents
    - 若要删除文件夹，请选择该文件夹，然后选择"删除 **"。**
 
 > [!NOTE]
-> [Windows默认保护](#windows-system-folders-are-protected-by-default)系统文件夹，并且无法从列表中删除它们。
+> [Windows系统文件夹](#windows-system-folders-are-protected-by-default)默认受到保护，并且无法从列表中删除它们。

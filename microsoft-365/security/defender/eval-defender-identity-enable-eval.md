@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 966ccb0437f47b35c376c5ad4926464610871c92
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 184ec4dcdd5601585e046ced410141047fdfa24f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181123"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942664"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>启用 Microsoft Defender 标识评估环境
 
@@ -51,7 +49,7 @@ ms.locfileid: "60181123"
 |  |步骤     |更多信息  |
 |---------|---------|---------|
 |1     | 创建 Defender for Identity 实例        | [快速开始：创建 Microsoft Defender for Identity 实例](/defender-for-identity/install-step1)        |
-|2     | 连接 Active Directory 林中设置 Defender for Identity 实例   | [快速入门：连接 Active Directory 林](/defender-for-identity/install-step2)  |
+|2     | 连接 Active Directory 林创建 Defender for Identity 实例   | [快速入门：连接 Active Directory 林](/defender-for-identity/install-step2)  |
 | | |
 
 ## <a name="step-2-install-and-configure-the-sensor"></a>步骤 2. 安装和配置传感器
@@ -63,7 +61,7 @@ ms.locfileid: "60181123"
 |1     | 确定你需要多少个 Microsoft Defender for Identity 传感器。        | [为 Microsoft Defender for Identity 规划容量](/defender-for-identity/capacity-planning)   |
 |2     | 下载传感器安装程序包  |  [快速入门：下载 Microsoft Defender for Identity 传感器安装程序包](/defender-for-identity/install-step3)   |
 |3     | 安装 Defender for Identity 传感器    |  [快速入门：安装 Microsoft Defender for Identity 传感器](/defender-for-identity/install-step4)       |
-|4      | 配置传感器       |  [配置 Microsoft Defender for Identity 传感器设置 ](/defender-for-identity/install-step5)   |
+|4     | 配置传感器       |  [配置 Microsoft Defender for Identity 传感器设置 ](/defender-for-identity/install-step5)   |
 |   |         |         |
 
 ## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>步骤 3. 使用传感器在计算机中配置事件日志和代理设置
@@ -72,7 +70,7 @@ ms.locfileid: "60181123"
 
 |  |步骤     |更多信息  |
 |---------|---------|---------|
-|1     | 配置Windows事件日志集合         | [配置Windows事件集合](/defender-for-identity/configure-windows-event-collection)        |
+|1     | 配置Windows事件日志集合         | [配置 Windows 事件集合](/defender-for-identity/configure-windows-event-collection)        |
 |2     | 配置 Internet 代理设置        | [为 Microsoft Defender for Identity Sensor 配置终结点代理和 Internet 连接设置](/defender-for-identity/configure-proxy)        |
 |   |         |         |
 

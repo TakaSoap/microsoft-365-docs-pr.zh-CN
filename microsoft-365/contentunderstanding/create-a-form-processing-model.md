@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何在 SharePoint Syntex 中创建表单处理模型。
-ms.openlocfilehash: 5ac00352c64f1403f87ff1c16f3fa44e8c737896
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 53beb46c2615a4cb3634907262be07e1458ef283
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198585"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61993397"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建表单处理模型
 
@@ -134,6 +134,37 @@ ms.locfileid: "60198585"
 3. 将文件上传到文档库。 任何由模型识别为其内容类型的文件都会在视图中列出文件，并在列中显示提取的数据。
 
     ![已完成。](../media/content-understanding/doc-lib-done.png) 
+
+### <a name="use-flows-to-extract-information"></a>使用流提取信息
+
+有两个流可用于处理已应用表单处理模型的库中的一个或一批文件。
+
+- **使用表单处理模型** 从图像或 PDF 文件中提取信息 — 用于通过运行表单处理模型从所选图像或 PDF 文件中提取文本。 一次支持单个选定文件，并且仅支持 PNG、JPG 和 JPEG (PDF 文件和图像) 。 若要运行流，请选择一个文件，**然后选择自动**  >  **提取信息**。
+
+    ![显示突出显示"提取信息"的"自动"菜单的屏幕截图。](../media/content-understanding/automate-extract-info.png)  
+
+- **使用表单处理模型** 从文件中提取信息 — 与表单处理模型一起使用，从一批文件中读取和提取信息。 一次最多处理 5，000 SharePoint文件。 运行此流时，可以设置某些参数。 可以执行下列操作：
+
+    - 选择是否包括之前处理的文件 (默认设置是不包括之前处理过的文件) 。
+    - 选择要处理的文件数 (默认值为 100 个文件) 。
+    - 指定处理文件的顺序 (文件 ID、文件名、文件创建时间或上次修改时间) 。
+    - 指定按升序或降序 (排序的顺序) 。
+
+    ![显示突出显示参数选项的"运行流"面板的屏幕截图。](../media/content-understanding/run-flow-panel.png)  
+
+### <a name="classification-date-field"></a>分类日期字段
+
+将SharePoint Syntex表单处理模型 (或文档理解模型) 文档库时，"分类日期"字段将包含在库架构中。  默认情况下，此字段为空。 但是，当文档由模型处理和分类时，此字段会使用完成日期时间戳进行更新。 
+
+使用分类日期标记模型时，可以使用SharePoint Syntex 处理文件流后发送电子邮件，以通知用户新文件已由 SharePoint 文档库中的模型处理和分类。
+
+运行流：
+
+1. 选择文件，然后选择"集成Power Automate  >    >  **创建流"。**
+
+2. 在"**创建流"面板** 上，选择"**处理文件SharePoint Syntex发送电子邮件"。**
+
+    ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
 ## <a name="see-also"></a>另请参阅
   

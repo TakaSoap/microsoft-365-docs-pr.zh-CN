@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用流程图确定项具有多个保留策略或保留标签和保留策略时的结果
-ms.openlocfilehash: b99f54178adc05987249f05c0f2d1c00194f0db0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b9c3b94dcb50499b6af72fd124da384f90d16da9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159762"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935821"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>用于确定何时保留或永久删除项的流程图
 
@@ -35,7 +35,7 @@ ms.locfileid: "60159762"
 - 应用了多个保留策略
 - 存在一个保留标签和一个或多个保留策略
 
-当某个项受电子数据展示保留约束时，它将始终保留在保留策略和保留标签的决策流之前。
+当项受电子数据展示保留（或诉讼保留或就地保留的旧技术）约束时，它将始终保留在保留策略和保留标签的决策流之前。
 
 如果不熟悉此流程图中使用的任何术语，请参阅 [了解保留策略和保留标签](retention.md)。
 

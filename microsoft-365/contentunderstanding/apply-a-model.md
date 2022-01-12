@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何将已发布的模型应用到 Microsoft SharePoint 中的文档SharePoint Syntex。
-ms.openlocfilehash: 6f5cee5bc5896ebe5e9a26bef73103fb94bf3d1d
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: a761fc7d0474f8324d6bae9303fb97371672ab01
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531737"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61993439"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中应用文档理解模型
 
@@ -59,7 +59,7 @@ ms.locfileid: "61531737"
 
 5. 选择 **“添加”** 将模型应用到库中。
 
-6. 在模型主页上的"**应用** 模型的地方"部分，应看到列出的SharePoint的名称。
+6. 在模型主页上的"**应用** 模型位置"部分，应看到列出的SharePoint的名称。
 
 7. 转到你的文档库，并确保你处于模型的文档库视图中。 选择 **"自动化**  >  **查看文档了解模型"。**
 
@@ -108,17 +108,25 @@ ms.locfileid: "61531737"
 
 ### <a name="classification-date-field"></a>分类日期字段
 
-当SharePoint Syntex文档理解或表单处理模型应用于文档库时，分类 **日期** 字段将包含在库架构中。 默认情况下，此字段为空。 但是，当文档由模型处理和分类时，此字段会使用完成日期时间戳进行更新。 
+当文档SharePoint Syntex模型 (或表单处理模型) 应用于文档库时，分类日期字段将包含在库架构中。  默认情况下，此字段为空。 但是，当文档由模型处理和分类时，此字段会使用完成日期时间戳进行更新。 
 
    ![显示"分类日期"列的文档库的屏幕截图。](../media/content-understanding/class-date-column.png) 
 
-"分类 **日期**"字段由"当 [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)文件由内容理解模型分类时"触发器使用，在 Syntex 内容理解模型完成对文件或文件夹的处理并更新了"分类日期"字段后，运行Power Automate 流。
+"分类 **日期**"字段由"当 [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)文件由内容理解模型分类时"触发器使用，在模型完成对文件或文件夹的内容的处理并更新了"分类日期"字段后，运行 Power Automate 流。 
 
    ![Flow触发器。](../media/content-understanding/trigger.png)
 
-The **When a file is classified by a content understanding model** trigger can then be used to start another workflow using any extracted information from the file or folder.
+The **When a file is classified by a content understanding model** trigger can then be used to start a flow using any extracted information from the file or folder.
 
+例如，当使用分类日期标记模型时，可以在 **SharePoint Syntex** 处理文件流后发送电子邮件，以通知用户新文件已由 SharePoint 文档库中的模型处理和分类。
 
+运行流：
+
+1. 选择文件，然后选择"集成Power Automate  >    >  **创建流"。**
+
+2. 在"**创建流"面板** 上，选择"**处理文件SharePoint Syntex发送电子邮件"。**
+
+    ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
 ## <a name="see-also"></a>另请参阅
 

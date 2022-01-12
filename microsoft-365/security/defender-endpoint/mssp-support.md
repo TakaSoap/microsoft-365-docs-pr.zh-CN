@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 161cb29c99ac442805685417195fe1dfd07fa4a2
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: f29c40e9c813ec27a1d8976f53ed958cb3a8d1d4
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560390"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941752"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>托管安全服务提供商合作关系机会
 
@@ -42,7 +42,7 @@ ms.locfileid: "61560390"
 
 Defender for Endpoint 增加了此方案的合作关系机会，并允许 MSSP 执行以下操作：
 
-- 获取对 MSSP 客户门户Microsoft Defender 安全中心的访问权限
+- 获取对 MSSP 客户门户Microsoft 365 Defender的访问权限
 - 获取电子邮件通知和 
 - 使用 SIEM 工具通过安全信息和事件管理 (警报) 警报
 

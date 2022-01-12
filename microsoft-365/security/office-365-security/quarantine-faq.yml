@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 71a8154ee822d12ee755d120a4113dcaa14b9957
-  ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+  ms.openlocfilehash: 839469f1aa872ff89c4dd488ed441cf51c911a8d
+  ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/02/2021
-  ms.locfileid: "60667824"
+  ms.lasthandoff: 01/12/2022
+  ms.locfileid: "61941440"
 title: 隔离邮件常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -40,7 +40,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  本主题提供有关在 Exchange Online 中拥有邮箱的 Microsoft 365 组织或没有邮箱的独立 Exchange Online Protection (EOP) 组织的隔离Exchange Online常见问题和解答。
+  本主题为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织或没有邮箱的独立 Exchange Online Protection (EOP) 组织提供了有关隔离Exchange Online常见问题和解答。
 
 
   有关反垃圾邮件保护的问题和解答，请参阅 [反垃圾邮件保护常见问题解答](anti-spam-protection-faq.yml)。
@@ -59,7 +59,7 @@ sections:
       默认情况下，只有管理员才能管理因恶意软件隔离的邮件。 有关详细信息，请参阅 [以管理员角色管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。
 
 
-      但是，管理员可以创建隔离策略，将隔离策略应用于为用户定义更多功能的反恶意软件策略。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
+      但是，管理员可以创建隔离策略， _将_ 隔离策略应用于为用户定义更多功能的反恶意软件策略。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
   - question: >
       如何隔离垃圾邮件？
     answer: >
@@ -71,13 +71,13 @@ sections:
   - question: >
       最终用户可以在隔离中访问哪些邮件？
     answer: >
-      隔离策略根据邮件被隔离的原因来定义用户是否可以访问隔离的邮件 ([支持的功能) 。](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
+      隔离策略根据隔离邮件的原因来定义用户是否可以访问隔离的邮件， ([支持的功能) 。](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
 
 
       默认情况下，用户可以访问以下类型的已隔离邮件，这些邮件是收件人：
 
 
-      - **反垃圾邮件策略**：垃圾邮件、批量电子邮件和网络钓鱼邮件 (高可信度钓鱼邮件) 。
+      - **反垃圾邮件策略**：垃圾邮件、批量电子邮件和网络钓鱼邮件 (高可信度网络钓鱼) 。
 
       - 反网络钓鱼策略：欺骗发件人、用户模拟保护 (Defender for Office 365) 、域模拟保护 (Defender for Office 365) 和邮箱智能保护 (Defender for Office 365) 。
 
@@ -101,7 +101,7 @@ sections:
   - question: >
       邮件在隔离区中保留多久？
     answer: >
-      这取决于邮件被隔离的原因。 有关详细信息，请参阅隔离[邮件在 EOP 和 Defender for Office 365](quarantine-email-messages.md)。
+      这取决于邮件被隔离的原因。 有关详细信息，请参阅 [EOP 和 Defender for Office 365 中的隔离邮件](quarantine-email-messages.md)。
   - question: >
       能否一次释放或报告多个隔离邮件？
     answer: >
@@ -115,7 +115,7 @@ sections:
       通配符在应用程序门户中不受Microsoft 365 Defender支持。 例如，在搜索发件人时，需要指定完整的电子邮件地址。 但是，可以在 PowerShell 或独立 EOP PowerShell Exchange Online通配符。
 
 
-      例如，将以下 PowerShell 代码复制到记事本，将文件另存为 .ps1，位置便于您查找 (例如，C:\Data\QuarantineRelease.ps1) 。
+      例如，将以下 PowerShell 代码复制到记事本，.ps1文件另存为 (，例如，C:\Data\QuarantineRelease.ps1) 。
 
 
       然后，在连接到 Exchange Online [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)或[Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)后，运行以下命令以运行脚本：
@@ -131,7 +131,7 @@ sections:
       该脚本执行以下操作：
 
 
-      - 查找从 fabrikam 域中所有发件人隔离为垃圾邮件的未发布邮件。 最大结果数为 50，000， (50 页（包含 1000 个结果) ）。
+      - 查找从 fabrikam 域中所有发件人隔离为垃圾邮件的未发布邮件。 最大结果数为 50，000，1000 (1000 个结果的 50) 。
 
       - 将结果保存到 CSV 文件。
 

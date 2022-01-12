@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 本文定义审阅集内文档的元数据字段，在 Advanced eDiscovery 中Microsoft 365。
-ms.openlocfilehash: aa4cda3d005d0433c56b77d30d24c789cdd70f2e
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+description: 本文定义审阅集内文档的元数据字段，例如Advanced eDiscovery Microsoft 365。
+ms.openlocfilehash: 84b7a63f61091a799978fd3d880666b81f5a5df4
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218354"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942880"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
@@ -72,7 +72,7 @@ ms.locfileid: "61218354"
 |创建文档的日期|CreatedTime|Doc_date_created|从文档元数据创建日期。|
 |DocIndex*|||系列中的索引。 **-1** 或 **0** 表示它是根。|
 |文档关键字||Doc_keywords|文档元数据中的关键字。|
-|修改者的文档||Doc_modified_by|文档元数据的上次修改日期。|
+|修改者的文档||Doc_modified_by|上次从文档元数据修改文档的用户。|
 |文档修订|Doc_Version|Doc_Version|文档元数据的修订。|
 |文档主题||Doc_subject|文档元数据中的主题。|
 |文档模板||Doc_template|文档元数据中的模板。|
@@ -126,22 +126,22 @@ ms.locfileid: "61218354"
 |标记为具有代表性|MarkAsRepresentative||将每组精确重复项中的一个文档标记为代表。|
 |会议结束日期|MeetingEndDate|Meeting_end_date|会议的会议结束日期。|
 |会议开始日期|MeetingStartDate|Meeting_start_date|会议的会议开始日期。|
-|邮件类型|MessageKind|Message_kind|要搜索的邮件类型。 可能的值 **<p> <br> ：contacts docs <br> email <br> externaldata <br> faxes im meetings <br> <br> <br> <br> microsoftteams** (returns items from chats， meetings， and calls in Microsoft Teams) **<br> notes <br> posts <br> rssfeeds <br> tasks <br> voicemail**|
+|邮件类型|MessageKind|Message_kind|要搜索的邮件类型。 可能的值 **<p> <br> ：contacts docs <br> email <br> externaldata <br> faxs im meetings <br> <br> <br> <br> microsoftteams** (returns items from chats， meetings， and calls in Microsoft Teams) **<br> notes <br> posts <br> rssfeeds <br> tasks <br> voicemail**|
 |新式附件父 ID||ModernAttachment_ParentId|文档的父级的不可变 ID。|
 |本机扩展|NativeExtension|Native_extension|项的本机扩展。|
 |本机文件名|NativeFileName|Native_file_name|项的本机文件名。|
 |NativeMD5||Native_MD5|MD5 哈希 (文件流) 128 位哈希值。|
 |NativeSHA256||Native_SHA_256|SHA256 哈希 (文件流中的 256) 哈希值。|
-|ND/ET 排序：排除附件|NdEtSortExclAttach|ND_ET_sort_excl_attach|电子邮件线程连接 ET (设置) 近 (ND) 集。 此字段用于在审阅时进行有效的排序。 D 的前缀为 ND 集 **，E** 为 ET 集前缀。|
+|ND/ET 排序：排除附件|NdEtSortExclAttach|ND_ET_sort_excl_attach|电子邮件线程连接 ET () 和近 (ND) 集。 此字段用于在审阅时进行有效的排序。 D 的前缀为 ND 集 **，E** 为 ET 集前缀。|
 |ND/ET 排序：包括附件|NdEtSortInclAttach|ND_ET_sort_incl_attach|连接电子邮件线程 (ET) 设置和近 (ND) 集。 此字段用于在审阅时进行有效的排序。 D 的前缀为 ND 集 **，E** 为 ET 集前缀。 ET 集合中的每个电子邮件项目后跟相应的附件。|
 |近重复集||ND_set|与透视文档类似的项目共享相同的ND_set。|
-|O365 作者||O365_authors|作者SharePoint。|
-|O365 创建者||O365_created_by|由 SharePoint。|
+|O365 作者||O365_authors|创作自SharePoint。|
+|O365 创建者||O365_created_by|由用户SharePoint。|
 |O365 创建日期||O365_date_created|创建日期SharePoint。|
 |O365 修改日期||O365_date_modified|上次修改日期（SharePoint）。|
 |修改者 O365||O365_modified_by|修改者SharePoint。|
 |其他保管人|DedupedCustodians|Deduped_custodians|与电子邮件完全相同的文档保管人 (，基于内容;基于哈希值对文档) 。|
-|其他文件 ID|DedupedFileIds|Deduped_file_IDs|与电子邮件完全相同的文档的文件 (列表（基于内容）;基于哈希值对文档) 。|
+|其他文件 ID|DedupedFileIds|Deduped_file_IDs|与电子邮件完全相同的文档的文件 (，基于内容;基于哈希值对文档) 。|
 |其他路径|Dedupedcompoundpath|Deduped_compound_path|与电子邮件完全相同的文档的复合路径列表 (：基于内容、文档：基于哈希) 。|
 |父 ID|ParentId|Parent_ID|项的父级的 ID。|
 |ParentNode||Parent_node|电子邮件线程中最接近的前一封电子邮件。|
@@ -173,7 +173,7 @@ ms.locfileid: "61218354"
 |主题|主题|Email_subject|邮件的主题。|
 |主题/标题|SubjectTitle||计算字段，由项目的主题或标题组成。|
 |标记|标记|标记|在审阅集内应用的标记。|
-|频道名称|频道|ChannelName|这是频道Teams名称。 仅适用于内容Microsoft Teams内容。|
+|频道名称|频道|ChannelName|这是Teams名称。 仅适用于Microsoft Teams内容。|
 |工作组名称|TeamName|TeamName|**Teams：** 团队名称<br>**Yammer：Community** 名称|
 |主题列表|ThemesList|Themes_list|为分析计算的主题列表。|
 |Title|Title|Doc_title|文档元数据中的标题。 文档元数据中的标题。 对于Teams和Yammer，这是 ConversationName 属性的值。|

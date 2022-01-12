@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 212d6464fa471e848eb83d06004bdf2796dc0a64
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 799fc4d163b120b4197b6cd044efe4740e4a3cc7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217634"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941920"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>通过 Chef 在 Linux 上部署 Defender for Endpoint
 
@@ -29,7 +29,7 @@ ms.locfileid: "61217634"
 
 开始之前：安装解压缩（如果尚未安装）。
 
-已安装开发组件，并且存在一个" (存储库"生成存储库) 以存储将用于部署到 Endpoint 托管 Linux 服务器上 Defender for Endpoint 的指南 \<reponame\> 。
+已安装开发组件，并且存在一个" (存储库") 生成存储库，以存储将用于部署到 Endpoint 托管 Linux 服务器上 Defender for Endpoint 的指南 \<reponame\> 。
 
 可以通过从你的存储库内的"手册"文件夹内运行以下命令，在现有的存储库中创建新的手册：
 
@@ -44,7 +44,7 @@ chef generate cookbook mdatp
 mkdir mdatp/files
 ```
 
-将可以从 Microsoft Defender 安全中心 门户下载的 Linux Server 载入 zip 文件转移到此新文件文件夹。
+将可以从 Microsoft 365 Defender 门户下载的 Linux Server 载入 zip 文件转移到此新文件文件夹。
 
 On the Recipe Workstation， navigate to the mdatp/recipes folder. 此文件夹是在生成手册时创建的。 使用首选文本编辑器 (vi 或 nano) 将以下说明添加到 default.rb 文件的末尾：
 
@@ -118,7 +118,7 @@ end
 请确保将路径名称更新为载入文件的位置。
 若要测试在部署工作站上部署它，只需运行 ``sudo chef-client -z -o mdatp`` 。
 部署后，你应考虑根据在 Linux 上设置 Microsoft Defender for Endpoint 的首选项，创建配置文件并 [部署到服务器](/linux-preferences.md)。
-创建并测试配置文件后，你可以将该文件放置到指南/mdatp/files文件夹中，其中还放置了载入程序包。 然后，可以在 mdatp/recipies 文件夹中创建 settings_mdatp.rb 文件并添加以下文本：
+创建并测试配置文件后，你可以将该文件放置到指南/mdatp/files文件夹中，其中还放置了载入程序包。 然后，可以在 mdatp/recipies settings_mdatp创建一个 settings_mdatp.rb 文件并添加以下文本：
 
 ```powershell
 #Copy the configuration file
@@ -131,8 +131,8 @@ cookbook_file '/etc/opt/microsoft/mdatp/managed/mdatp_managed.json' do
 end
 ```
 
-若要将此步骤作为食谱的一部分包含，只需include_recipe将"：：settings_mdatp"添加到食谱文件夹中的 default.rb 文件中。
-还可使用 crontab 安排自动更新 计划 Microsoft Defender 终结点更新 ([Linux) 。 ](linux-update-MDE-Linux.md)
+若要将此步骤作为食谱的一部分包含，只需include_recipe"：：settings_mdatp"添加到食谱文件夹中的 default.rb 文件中。
+还可使用 crontab 安排自动更新[计划 Microsoft Defender for Endpoint (Linux) 。 ](linux-update-MDE-Linux.md)
 
 卸载 MDATP 手册：
 

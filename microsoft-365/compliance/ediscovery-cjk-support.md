@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -15,13 +15,13 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 了解Advanced eDiscovery语言Microsoft 365支持使用双字节字符集的 CJK (CJK) 语言。
-ms.openlocfilehash: 0d6287afb373c6c1c51ea61de3906ce994590e87
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解Advanced eDiscovery的语言Microsoft 365中文、日语和朝鲜语 (CJK) ，这些语言使用双字节字符集。
+ms.openlocfilehash: 8a2ed33c75fabfa92f8ddd8f6fc8a704a2e8a15f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197613"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942172"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>CJK 语言支持Advanced eDiscovery
 
@@ -47,7 +47,7 @@ Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体�
 
 这取决于你的搜索方案。
 
-- 在[查询评价集](review-set-search.md)内的数据时Advanced eDiscovery，可以搜索多种语言。
+- 在[查询评价集内的数据时](review-set-search.md)Advanced eDiscovery，可以搜索多种语言。
 
 - 创建 [搜索以收集数据时](create-search-to-collect-data.md)，请为所面向的每种语言创建单独的搜索。 例如，如果要搜索同时包含中文和朝鲜语的文档，请选择"中文"作为第一个查询，并选择"朝鲜语"作为第二个查询。
 
@@ -63,7 +63,7 @@ Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体�
 
 否，不能按审阅集内的文档语言进行筛选、排序或搜索。
 
-**此 CJK 版本用于审阅集方案是否将影响我的任何现有搜索和审阅集？**
+**此 CJK 版本用于审阅集方案是否会影响我的任何现有搜索和审阅集？**
 
 否，现有的搜索和审阅集不会更改。 无需对现有数据重新索引，英文文本的搜索结果将相同。
 
@@ -75,7 +75,7 @@ Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体�
 
 - OCR 不支持图像文件的 CJK 字符
 
-- CJK (在 ["](view-documents-in-review-set.md#annotate-view) 批注"视图中) *.eml 和 *.msg 等电子邮件文件。
+- CJK (不支持批注视图中) *.eml 和 *.msg 等电子邮件文件。 [](view-documents-in-review-set.md#annotate-view)
 
 - CJK 语言不支持 [在](view-documents-in-review-set.md#text-view) 文本视图中突出显示搜索词。
 

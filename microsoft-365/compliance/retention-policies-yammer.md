@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Yammer 的保留策略。
-ms.openlocfilehash: 88e4081ba23ce38153af7eb5fe8af69a00df73b8
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d5efabef17f70067aa054ea995dba85eff711502
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667702"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934533"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解用于 Yammer 的保留
 
@@ -43,6 +43,9 @@ ms.locfileid: "60667702"
 
 可以使用 Yammer的保留策略删除 Yammer 用户消息和社区消息，除了消息中的文本外，出于合规性原因，还可以保留以下项目：超文本链接和指向其他 Yammer 消息的链接。
 
+> [!NOTE]
+> 如以下部分所述，用户消息包括个人用户的私有消息，以及与该用户关联的任何社区消息。
+
 用户消息包括对话中所有人员的姓名，社区消息包括社区名称和消息标题（如有提供）。
 
 使用 Yammer 的保留策略时，不会保留其他人以表情符号的形式做出的反应。
@@ -55,7 +58,7 @@ ms.locfileid: "60667702"
 
 可以使用保留策略在 Yammer 中保留社区邮件和用户邮件中的数据，并删除这些邮件。 Exchange 邮箱在后台用于存储从这些邮件中复制的数据。 来自 Yammer 用户邮件的数据存储包含于用户邮件中每个用户邮箱内的隐藏文件夹中，组邮箱中的类似隐藏文件夹则用于社区邮件。
 
-当 @提及用户或通知用户有人答复时，社区邮件的副本也可以存储在用户邮箱的隐藏文件夹中。 尽管这些邮件源自社区邮件，但 Yammer 用户邮件的保留策略通常包括社区邮件的副本。
+当 @提及用户或通知用户有人答复时，社区邮件的副本也可以存储在用户邮箱的隐藏文件夹中。 尽管这些邮件源自社区邮件，但 Yammer 用户邮件的保留策略通常包括社区邮件的副本。 因此，用户消息不限于私有消息。
 
 这些隐藏的文件夹不是为了供用户或管理员直接访问，而是存储合规性管理员可以使用电子数据展示工具搜索的数据。
 
@@ -64,15 +67,17 @@ ms.locfileid: "60667702"
 > 
 > 但是，原始邮件的副本在社区组邮箱的隐藏文件夹中仍然可用，并可出于合规目的通过电子数据展示搜索进行访问。
 
-Yammer 消息不受为 Exchange 邮箱配置的保留策略的影响。即使 Yammer 消息存储在 Exchange 中，此 Yammer 数据仍将仅包含在为 **Yammer 社区消息** 和 **Yammer 用户消息** 位置配置的保留策略中。
+即使它们存储在 Exchange 中，Yammer 消息也仅包含在为 **Yammer 社区消息配置的保留策略中，** 或 **Yammer 用户消息** 位置。
 
 > [!NOTE]
 > 如果用户包含在保留 Yammer 数据的活动保留策略中，并且删除了包含在此策略中的用户邮箱，为了保留 Yammer 数据，邮箱会转换为[非活动邮箱](inactive-mailboxes-in-office-365.md)。 如果不需要为用户保留此 Yammer 数据，请在删除用户的邮箱之前，将用户帐户从保留策略中排除。
 
 为 Yammer 消息配置保留策略后，Exchange 服务中的计时器作业会定期评估存储这些 Yammer 消息的隐藏文件夹中的项目。 计时器作业最多需要 7 天才能运行。 这些项目的保留期限到期后，它们将被移至 SubstrateHolds 文件夹，此文件夹是每个用户或组邮箱中的隐藏文件夹，用于在永久删除“软删除”项目之前存储这些项目。
 
-> [!NOTE]
-> 由于[第一个保留策略](retention.md#the-principles-of-retention-or-what-takes-precedence)，如果由于另一个保留策略而必须保留同一项目，或者由于法律或调查原因而处于电子数据展示保留状态，则永久删除始终处于暂停状态。
+> [!IMPORTANT]
+> 由于保留[第一原则](retention.md#the-principles-of-retention-or-what-takes-precedence)，并且由于 Yammer 邮件存储在 Exchange Online 邮箱中，因此，如果邮箱受另一保留策略（包括应用于 Exchange 位置的策略）、诉讼保留、延迟保留，或者出于法律或诉讼原因对邮箱应用电子数据展示保留，则始终暂停从 SubstrateHolds 文件夹永久删除。
+>
+> 虽然邮箱包含在适用的保留中，但已删除的 Yammer 邮件将不再在 Yammer 中可见，但将继续通过电子数据展示进行发现。
 
 为 Yammer 消息配置保留策略后，内容路径取决于保留策略是“保留后删除”、“仅保留”还是“仅删除”。
 

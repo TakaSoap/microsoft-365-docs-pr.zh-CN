@@ -25,12 +25,12 @@ ms.custom:
 - adminvideo
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
 ms.date: 07/31/2020
-ms.openlocfilehash: bbede67dd093ad726933f25b7774b63e587dd24a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0bbcb8ac5a1b12ae781636753c734a1009dbc9ef
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371252"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941368"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 
@@ -100,10 +100,19 @@ ms.locfileid: "61371252"
 
 ### <a name="to-receive-your-billing-statement-in-email"></a>以电子邮件的方式接收帐单
 
-1. 在管理中心中，转到“**账单**”  >  “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。
-    - 如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">帐单通知</a>页。
-    - 如果使用由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">帐单通知</a>页。
-1. 在“**以电子邮件附件形式接收帐单？**”下将开关切换到“**开**”。
+::: moniker range="o365-worldwide"
+
+1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">账单通知</a>”页面。
+    
+::: moniker-end
+
+2. 在“**以电子邮件附件形式接收帐单？**”下将开关切换到“**开**”。
 
     将开关切换到" **关**"可随时停止接收帐单电子邮件。
 

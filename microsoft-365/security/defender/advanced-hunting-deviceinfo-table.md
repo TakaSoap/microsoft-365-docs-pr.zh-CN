@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: acba50ec85e0d8d2f61a51aa902a26e5bcbed6f9
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 245a9aa11bcaf10ba6f3b8fe0fe429267a355560
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530795"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941740"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -49,7 +49,7 @@ ms.locfileid: "61530795"
 | `OSPlatform` | `string` | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 11、Windows 10 和 Windows 7。 |
 | `OSBuild` | `string` | 计算机上运行的操作系统的生成版本 |
 | `IsAzureADJoined` | `boolean` | 用于指示计算机是否已加入域的布尔Azure Active Directory |
-| `AadObjectId` | `string` | 设备上设备的唯一Azure AD |
+| `AadDeviceId` | `string` | 设备上设备的唯一Azure AD |
 | `LoggedOnUsers` | `string` | 事件时以 JSON 数组格式登录的所有用户的列表 |
 | `RegistryDeviceTag` | `string` | 通过注册表添加的机器标记 |
 | `OSVersion` | `string` | 计算机上运行的操作系统版本 |
@@ -59,9 +59,9 @@ ms.locfileid: "61530795"
 |`AdditionalFields` | `string` | 有关 JSON 数组格式的事件的其他信息 |
 |`DeviceCategory` | `string` | 将特定设备类型分组到以下类别的更广泛的分类：终结点、网络设备、IoT、未知 |
 |`DeviceType` | `string` | 基于目的和功能的设备类型，例如网络设备、工作站、服务器、移动设备、游戏控制台或打印机 |
-|`DeviceSubType` | `string` | 某些类型的设备的其他修饰符，例如，移动设备可以是平板电脑或智能手机 |
-|`Model` | `string` | 供应商或制造商的产品型号或编号 |
-|`Vendor` | `string` | 产品供应商或制造商的名称 |
+|`DeviceSubType` | `string` | 某些类型的设备的其他修饰符，例如，移动设备可以是平板电脑或智能手机;仅在设备发现找到有关此属性的足够信息时可用 |
+|`Model` | `string` | 供应商或制造商的产品型号或编号，仅在设备发现找到有关此属性的足够信息时可用 |
+|`Vendor` | `string` | 产品供应商或制造商的名称，仅在设备发现找到有关此属性的足够信息时可用 |
 |`OSDistribution` | `string` | 操作系统平台的分发，如适用于 Linux 平台的 Ubuntu 或 RedHat |
 |`OSVersionInfo` | `string` | 有关操作系统版本的其他信息，例如常用名称、代码名称或版本号 |
 |`MergedDeviceIds` | `string` | 已分配给同一设备的以前的设备 ID |

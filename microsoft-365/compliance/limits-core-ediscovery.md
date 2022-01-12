@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 本文介绍 Microsoft 365 中的核心电子数据展示Microsoft 365。
-ms.openlocfilehash: 82caa5214f777effb912ab1a2a3054b1e4432ae6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 本文介绍在电子数据展示中的核心电子数据展示Microsoft 365。
+ms.openlocfilehash: 28db179aea27bfff2520199d89b93c8260b7f089
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190697"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940958"
 ---
 # <a name="limits-in-core-ediscovery"></a>核心电子数据展示中的限制
 
@@ -32,8 +32,8 @@ ms.locfileid: "60190697"
   |:-----|:-----|
   |组织的最大事例数。  <br/> |无限制  <br/> |
   |组织的最大案例保留数。  <br/> |10,000  <br/> |
-  |单个案例保留中的最大邮箱数。 此限制包括用户邮箱总数，以及与组组、Microsoft Teams组Microsoft 365关联的Yammer邮箱。  <br/> |1,000  <br/> |
-  |单个案例保留中的最大网站数。 此限制包括与 OneDrive for Business 组、SharePoint 组、Microsoft Teams 和 Yammer 组关联的网站Microsoft 365总数。  <br/> |100  <br/> |
+  |单个案例保留中的最大邮箱数。 此限制包括用户邮箱总数，以及与组、Microsoft 365 组Microsoft Teams组Yammer邮箱。  <br/> |1,000  <br/> |
+  |单个案例保留中的最大网站数。 此限制包括与 OneDrive for Business 组、SharePoint 组、Microsoft Teams 组Microsoft 365关联的网站Yammer总数。  <br/> |100  <br/> |
   |核心电子数据展示主页上显示的最大事例数，以及事例中"保留项、搜索"和"导出"选项卡上显示的最大项目数。 <sup>1</sup> |1,000|
   |||
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 76512d28363fc295d912ce014885614284eba90a
-ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
+ms.openlocfilehash: 8354693f7f748771c9b6543455cf96177afacd05
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61436664"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61993283"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -64,7 +64,7 @@ ms.locfileid: "61436664"
 > [!WARNING]
 > 在初始安装后切换通道需要重新安装产品。 若要切换产品渠道：卸载现有程序包，将设备重新配置为使用新通道，然后按照本文档中的步骤从新位置安装程序包。
 
-### <a name="rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2"></a>CentOS、Fedora、Oracle Linux 和 Amazon Linux 2 (RHEL 和) 
+### <a name="rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2"></a>CentOS、Fedora、Oracle Linux 和 Amazon Linux 2 (的 RHEL 和) 
 
 - 如果 `yum-utils` 尚未安装，请安装：
 
@@ -73,7 +73,7 @@ ms.locfileid: "61436664"
     ```
 
   > [!NOTE]
-  > 分发和版本，并确定最接近的条目 (按主要，然后按) 次要条目 `https://packages.microsoft.com/config/rhel/` 。
+  > 分发和版本，并确定最近的条目 (按主要，然后按) 次要条目 `https://packages.microsoft.com/config/rhel/` 。
 
     使用下表可帮助指导你找到程序包：
 
@@ -81,7 +81,7 @@ ms.locfileid: "61436664"
 
     ****
 
-    |Distro & version|程序包|
+    |发布&版本|程序包|
     |---|---|
     |对于 RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
     |对于 RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
@@ -117,16 +117,10 @@ ms.locfileid: "61436664"
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
     ```
 
-- 下载并启用当前启用的 yum 存储库的所有元数据：
-
-    ```bash
-    yum makecache
-    ```
-
 ### <a name="sles-and-variants"></a>SLES 和变量
 
 > [!NOTE]
-> 分发和版本，并确定最接近的条目 (按主要，然后按) 次要条目 `https://packages.microsoft.com/config/sles/` 。
+> 分发和版本，并确定最近的条目 (按主要，然后按) 次要条目 `https://packages.microsoft.com/config/sles/` 。
 
    在下列命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
@@ -164,7 +158,7 @@ ms.locfileid: "61436664"
     ```
 
 > [!NOTE]
-> 分发和版本，并确定最接近的条目 (按主要，然后按) 次要条目 `https://packages.microsoft.com/config/[distro]/` 。
+> 分发和版本，并确定最近的条目 (按主要，然后按) 次要条目 `https://packages.microsoft.com/config/[distro]/` 。
 
    在下面的命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
@@ -306,7 +300,7 @@ ms.locfileid: "61436664"
 > [!IMPORTANT]
 > 如果错过此步骤，执行的任何命令将显示一条警告消息，指示产品未授权。 此外 `mdatp health` ，该命令返回 的值 `false` 。
 
-1. In the Microsoft 365 Defender portal， go to **设置 > Endpoints > Device management > Onboarding**.
+1. 在Microsoft 365 Defender门户中，转到"设置 >终结点 **>">载入"。**
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 第二个下拉菜单中，选择" **本地脚本** "作为部署方法。
 3. 选择 **下载载入程序包**。 将文件另存为WindowsDefenderATPOnboardingPackage.zip。
 
@@ -383,7 +377,7 @@ ms.locfileid: "61436664"
 
 5. 运行 AV 检测测试，验证设备是否正确载入并报告给服务。 对新载入的设备执行以下步骤：
 
-    - 确保实时保护 (由运行以下命令或命令的结果 `1`) ：
+    - 确保启用实时保护 (运行以下命令或命令的结果 `1`) ：
 
         ```bash
         mdatp health --field real_time_protection_enabled
@@ -403,11 +397,11 @@ ms.locfileid: "61436664"
 
 6. 运行EDR检测测试并模拟检测，以验证设备是否正确载入并报告给服务。 对新载入的设备执行以下步骤：
 
-    - 验证载入的 Linux 服务器是否显示在Microsoft 365 Defender。 如果这是计算机首次载入，可能需要最多 20 分钟才会显示。
+    - 验证已载入的 Linux 服务器是否Microsoft 365 Defender。 如果这是计算机首次载入，可能需要最多 20 分钟才会显示。
 
     - 将脚本文件 [下载并](https://aka.ms/LinuxDIY) 解压缩到载入的 Linux 服务器并运行以下命令： `./mde_linux_edr_diy.sh`
 
-    - 几分钟后，应在运行中引发Microsoft 365 Defender。
+    - 几分钟后，应在测试中引发Microsoft 365 Defender。
 
     - 查看警报详细信息、计算机时间线，并执行典型的调查步骤。
 
@@ -439,7 +433,7 @@ Options:
 
 请参阅 [日志](linux-resources.md#log-installation-issues) 安装问题，详细了解如何在发生错误时查找安装程序创建的自动生成的日志。
 
-## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>如何从生产Insiders-Fast迁移到生产渠道
+## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>如何从生产Insiders-Fast到生产渠道
 
 1. 在 Linux 上卸载 Defender for Endpoint 的"Insiders-Fast channel"版本。
 
@@ -447,7 +441,7 @@ Options:
     sudo yum remove mdatp
     ```
 
-1. 在 Linux 上禁用 Defender for Endpoint Insiders-Fast存储库
+1. 在 Linux 客户端存储库上禁用 defender Insiders-Fast终结点
 
     ```bash
     sudo yum repolist

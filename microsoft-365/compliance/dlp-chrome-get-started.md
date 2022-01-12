@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: 准备及部署 Microsoft 合规性扩展。
-ms.openlocfilehash: 295e811e6437bb931e1b735725f3c69016cfae8a
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 04c56c78ac854141e2e9c6e207745b3722537e74
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950673"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938825"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft 合规性扩展入门
 
@@ -74,6 +74,25 @@ ms.locfileid: "60950673"
 - 全局读取者
 - 安全读者
 - 报表阅读人员
+
+#### <a name="roles-and-role-groups-in-preview"></a>预览版中的角色和角色组
+
+预览版中有角色和角色组，你可以测试这些角色和角色组以微调访问控制。
+
+下面是预览版中Microsoft 信息保护 （MIP） 角色的列表。 若要了解有关它们的详细信息，请参阅[安全与合规中心](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)中的角色
+
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查员
+- 信息保护读者
+
+下面是处于预览状态的 MIP 角色组的列表。 若要了解有关 的详细信息，请参阅[安全与合规中心](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)中的角色组
+
+- 信息保护
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查员
+- 信息保护读者
 
 ### <a name="overall-installation-workflow"></a>整体安装工作流
 
