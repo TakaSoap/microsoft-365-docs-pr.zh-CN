@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec7fb61d548cd5f214a52eed5ff49b454a40a743
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6350b91a700000a5d8fecec90462d53721d2f1ca
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167654"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936013"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>性能分析器Microsoft Defender 防病毒
 
@@ -29,7 +29,7 @@ ms.locfileid: "61167654"
 
 **什么是Microsoft Defender 防病毒器？**
 
-在某些情况下，可能需要在扫描特定文件和文件夹时Microsoft Defender 防病毒性能。 性能分析器是一个 PowerShell 命令行工具，可帮助确定哪些文件、文件扩展名和进程可能导致各个终结点出现性能问题。 此信息可用于更好地评估性能问题和应用修正操作。
+在某些情况下，你可能需要在扫描特定文件和文件夹Microsoft Defender 防病毒优化文件的性能。 性能分析器是一个 PowerShell 命令行工具，可帮助确定哪些文件、文件扩展名和进程可能导致各个终结点出现性能问题。 此信息可用于更好地评估性能问题和应用修正操作。
 
 要分析的一些选项包括：
 
@@ -45,7 +45,7 @@ ms.locfileid: "61167654"
 1. 运行性能分析器以收集终结点上Microsoft Defender 防病毒事件的性能记录。
 
    > [!NOTE]
-   > **Microsoft-antimalware-Engine** 类型的 Microsoft Defender 防病毒 事件的性能通过性能分析器进行记录。
+   > Microsoft **Microsoft Defender 防病毒-Antimalware-Engine** 类型的事件的性能通过性能分析器进行记录。
 
 2. 使用不同的录制报告分析扫描结果。
 
@@ -96,7 +96,7 @@ Microsoft Defender 防病毒性能分析器具有以下先决条件：
 
 - 支持Windows版本：Windows 10、Windows 11 和 Windows Server 2016 及以上版本
 - 平台版本：4.18.2108.7+
-- PowerShell 版本：PowerShell 版本 5.1
+- PowerShell 版本：PowerShell 版本 5.1、PowerShell ISE
 
 ## <a name="powershell-reference"></a>PowerShell 参考
 有两个新的 PowerShell cmdlet 用于优化Microsoft Defender 防病毒： 
@@ -195,7 +195,7 @@ Get-MpPerformanceReport    [-Path] <String>
 #### <a name="description-get-mpperformancereport"></a>说明：Get-MpPerformanceReport
 此 cmdlet 分析以前收集的 Microsoft Defender 防病毒 性能记录 `Get-MpPerformanceReport` ([New-MpPerformanceRecording](#new-mpperformancerecording)) 并报告对 Microsoft Defender 防病毒 扫描产生最大影响的文件路径、文件扩展名和进程。
 
-性能分析器可深入了解可能导致性能降低的有问题的Microsoft Defender 防病毒。 此工具是"AS IS"提供的，并不用于提供有关排除项的建议。 排除项会降低终结点上的保护级别。 应谨慎定义排除项（如果有）。
+性能分析器提供对可能导致性能下降的有问题的文件的Microsoft Defender 防病毒。 此工具是"AS IS"提供的，并不用于提供有关排除项的建议。 排除项会降低终结点上的保护级别。 应谨慎定义排除项（如果有）。
 
 有关性能分析器详细信息，请参阅 [Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) 文档。
 

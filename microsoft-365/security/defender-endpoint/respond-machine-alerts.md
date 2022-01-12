@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6e2a55fb1dc924ba278510f6a379240cb9fba39e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 133bdc1e14c9e4b0c93ea190b4a6c58a529b2f16
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164786"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940303"
 ---
 # <a name="take-response-actions-on-a-device"></a>在设备上执行响应操作
 
@@ -55,7 +55,7 @@ ms.locfileid: "61164786"
 
 > [!IMPORTANT]
 >
-> - 这些响应操作仅适用于 Windows 10、版本 1703 或更高版本、Windows 11、Windows Server 2019 和 Windows Server 2022 上的设备。
+> - 这些响应操作仅适用于 Windows 10 版本 1703 或更高版本、Windows 11、Windows Server 2019 和 Windows Server 2022 上的设备。
 > - 对于非Windows平台， (设备隔离) 依赖于第三方功能。
 > - 对于 Microsoft 第一方代理，请参阅每个功能下的"详细信息"链接，了解最低操作系统要求。
 
@@ -109,13 +109,13 @@ ms.locfileid: "61164786"
 
 ****
 
-|Folder|Description|
+|Folder|说明|
 |---|---|
-|自动运行|包含一组文件，每个文件分别表示已知自动启动入口点 (ASEP) 的注册表内容，以帮助识别攻击者在设备上是否具有持久性。 <p> <div class="alert"><b>注意：</b> 如果找不到注册表项，则文件将包含以下消息："错误：系统无法找到指定的注册表项或值。"<div>|
-|已安装的程序|此.CSV文件包含已安装的程序的列表，这些程序可帮助确定设备上当前安装的内容。 有关详细信息，请参阅Win32_Product [类](https://go.microsoft.com/fwlink/?linkid=841509)。|
-|网络连接|此文件夹包含一组与连接信息相关的数据点，可帮助识别与可疑 URL 的连接、攻击者的命令和控制 (C&C) 基础结构、任何横向移动或远程连接。 <ul><li>ActiveNetConnections.txt：显示协议统计信息和当前的 TCP/IP 网络连接。 提供查找进程建立可疑连接的能力。</li><li>Arp.txt：在所有接口的缓存表中 (ARP) 当前地址解析协议。 ARP 缓存可以显示网络上已受到威胁的其他主机或网络上可能用于运行内部攻击的可疑系统。</il><li>DnsCache.txt：显示 DNS 客户端解析程序缓存的内容，该缓存包括从本地 Hosts 文件预加载的条目和最近为计算机解析的名称查询获取的任何资源记录。 这有助于识别可疑连接。</li><li>IpConfig.txt：显示所有适配器的完整 TCP/IP 配置。 适配器可以表示物理接口（如已安装的网络适配器）或逻辑接口（如拨号连接）。</li><li>FirewallExecutionLog.txt 和 pfirewall.log</li></ul><p><div class="alert"><b>注意：</b> pfirewall.日志文件必须存在于 %windir%\system32\logfiles\firewall\pfirewall.log 中，因此它将包含在调查包中。 有关创建防火墙日志日志文件，请参阅使用高级安全Windows Defender[配置防火墙](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
+|自动运行|包含一组文件，每个文件分别表示已知自动启动入口点 (ASEP) 的注册表内容，以帮助确定攻击者在设备上是否具有持久性。 <p> <div class="alert"><b>注意：</b> 如果找不到注册表项，则文件将包含以下消息："错误：系统无法找到指定的注册表项或值。"<div>|
+|已安装的程序|此.CSV文件包含已安装的程序列表，这些程序可帮助确定设备上当前安装的内容。 有关详细信息，请参阅Win32_Product [类](https://go.microsoft.com/fwlink/?linkid=841509)。|
+|网络连接|此文件夹包含一组与连接信息相关的数据点，可帮助识别与可疑 URL 的连接、攻击者的命令和控制 (C&C) 基础结构、任何横向移动或远程连接。 <ul><li>ActiveNetConnections.txt：显示协议统计信息和当前的 TCP/IP 网络连接。 提供查找进程建立可疑连接的能力。</li><li>Arp.txt：在所有接口的缓存表中 (ARP) 当前的地址解析协议。 ARP 缓存可以显示网络上已受到威胁的其他主机或网络上可能用于运行内部攻击的可疑系统。</il><li>DnsCache.txt：显示 DNS 客户端解析程序缓存的内容，该缓存包括从本地 Hosts 文件预加载的条目和最近为计算机解析的名称查询获取的任何资源记录。 这有助于识别可疑连接。</li><li>IpConfig.txt：显示所有适配器的完整 TCP/IP 配置。 适配器可以表示物理接口（如已安装的网络适配器）或逻辑接口（如拨号连接）。</li><li>FirewallExecutionLog.txt和 pfirewall.log</li></ul><p><div class="alert"><b>注意：</b> pfirewall.日志文件必须存在于 %windir%\system32\logfiles\firewall\pfirewall.log 中，因此它将包含在调查包中。 有关创建防火墙日志日志文件，请参阅 Configure [the Windows Defender Firewall with Advanced Security Log](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
 |预取文件|Windows预取文件旨在加快应用程序启动过程。 它可用于跟踪系统中最近使用的所有文件，并查找可能已删除但仍可在预取文件列表中找到的应用程序的跟踪。 <ul><li>预取文件夹：包含 中的预取文件的副本 `%SystemRoot%\Prefetch` 。 注意：建议下载预取文件查看器以查看预取文件。</li><li>PrefetchFilesList.txt：包含可用于跟踪预取文件夹是否有复制失败的所有复制文件的列表。</li></ul>|
-|进程|包含.CSV一个列出正在运行的进程并提供标识设备上运行的当前进程的能力。 在标识可疑进程及其状态时，这非常有用。|
+|进程|包含.CSV一个列出正在运行的进程并提供识别设备上运行的当前进程的能力。 在标识可疑进程及其状态时，这非常有用。|
 |计划任务|包含一.CSV列出计划任务的文件，可用于标识在所选设备上自动执行的例程，以查找已设置为自动运行的可疑代码。|
 |安全事件日志|包含安全事件日志，其中包含登录或注销活动的记录，或者由系统的审核策略指定的其他与安全相关的事件。 <p><div class="alert"><b>注意：</b> 使用事件查看器日志文件事件视图。</div>|
 |服务|包含一.CSV服务及其状态的列表文件。|
@@ -123,7 +123,7 @@ ms.locfileid: "61164786"
 |系统信息|包含SystemInformation.txt操作系统版本和网络卡等系统信息的文件。|
 |临时目录|包含一组文本文件，其中列出了系统中每个用户位于 %Temp% 中的文件。 <p> 这可以帮助跟踪攻击者可能丢弃在系统上的可疑文件。 <p> <div class="alert"><b>注意：</b> 如果文件包含以下消息："系统找不到指定的路径"，这意味着此用户没有临时目录，可能是因为用户未登录到系统。</div>|
 |用户和组|提供每个表示一个组及其成员的文件的列表。|
-|WdSupportLogs|提供MpCmdRunLog.txt和MPSupportFiles.cab  <p> <div class="alert"><b>注意：</b>只有在安装了 2020 年 2 月更新汇总Windows 10版本 1709 或更高版本上，才能创建此文件夹： <ul><li>Win10 1709 (RS3) 内部版本 16299.1717：KB4537816 [](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) 内部版本 17134.1345：KB4537795 [](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) 内部版本 17763.1075：KB4537818 [](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) 内部版本 18362.693 和 [18363.693：KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
+|WdSupportLogs|提供MpCmdRunLog.txt和MPSupportFiles.cab  <p> <div class="alert"><b>注意：</b>只有在安装了 2020 年 2 月更新汇总Windows 10版本 1709 或更高版本上，才能创建此文件夹： <ul><li>Win10 1709 (RS3) 内部版本 16299.1717：KB4537816 [](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) 版本 17134.1345：KB4537795 [](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) 版本 17763.1075：KB4537818 [](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) 内部版本 18362.693 和 [18363.693：KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
 |CollectionSummaryReport.xls|此文件是调查包集合的摘要，它包含数据点列表、用于提取数据的命令、执行状态以及错误代码（如果失败）。 可以使用此报告跟踪程序包是否包含所有预期数据，并确定是否有错误。|
 |
 
@@ -154,8 +154,8 @@ ms.locfileid: "61164786"
 
 >[!IMPORTANT]
 > - 此操作适用于 Windows 10 版本 1709 或更高版本、Windows 11 和 Windows Server 2016。 
-> - 如果组织使用此功能，则Microsoft Defender 防病毒。
-> - 此操作需要满足应用程序控制Windows Defender完整性策略格式和签名要求。 有关详细信息，请参阅代码 [完整性策略格式和签名](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)) 。
+> - 如果组织使用此功能，则此功能Microsoft Defender 防病毒。
+> - 此操作需要满足Windows Defender控制代码完整性策略格式和签名要求。 有关详细信息，请参阅代码 [完整性策略格式和签名](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)) 。
 
 为了限制应用程序运行，应用了代码完整性策略，该策略只允许文件在由 Microsoft 颁发的证书签名时运行。 这种限制方法有助于防止攻击者控制受到威胁的设备，并执行进一步恶意活动。
 
@@ -183,11 +183,11 @@ ms.locfileid: "61164786"
 >- macOS 和 Linux 当前不支持此操作。 使用实时响应运行操作。 有关实时响应详细信息，请参阅使用实时响应 [调查设备上的实体](live-response.md)
 >- 完全隔离适用于 Windows 10 版本 1703、Windows 11、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2 和 Windows Server 2022 上的设备。
 >- 选择性隔离适用于 Windows 10 版本 1709 或更高版本以及 Windows 11。
->- 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议为 Microsoft Defender for Endpoint 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
+>- 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议对适用于终结点的 Microsoft Defender 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
 
 此设备隔离功能断开受损设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接，该服务将继续监视设备。
 
-在Windows 10版本 1709 或更高版本上，您将可以更加控制网络隔离级别。 还可以选择启用Outlook、Microsoft Teams和Skype for Business连接 (，例如"选择性隔离") 。
+在Windows 10版本 1709 或更高版本上，您将可以更加控制网络隔离级别。 还可以选择启用Outlook、Microsoft Teams和Skype for Business连接 ("选择性隔离") 。
 
 > [!NOTE]
 > 你将能够随时将设备重新连接到网络。 设备页面上的按钮将更改为"从隔离中释放 **"，** 然后执行与隔离设备相同的步骤。
@@ -197,7 +197,7 @@ ms.locfileid: "61164786"
 ![隔离设备的图像。](images/isolate-device.png)
 
 > [!NOTE]
-> 设备将保持与 Defender for Endpoint 服务连接，即使它与网络隔离。 如果你已选择启用Outlook和Skype for Business通信，则你将能够在设备隔离时与用户通信。
+> 设备将保持与 Defender for Endpoint 服务连接，即使它与网络隔离。 如果你已选择启用 Outlook 和 Skype for Business 通信，则你将能够在设备隔离时与用户通信。
 
 ### <a name="notification-on-device-user"></a>有关设备用户的通知
 
@@ -207,7 +207,7 @@ ms.locfileid: "61164786"
 
 ## <a name="consult-a-threat-expert"></a>咨询威胁专家
 
-你可以咨询 Microsoft 威胁专家，了解有关可能受到威胁的设备或已受到威胁的设备的更多见解。 Microsoft 威胁专家可以直接在内部使用Microsoft Defender 安全中心及时准确的响应。 专家不仅提供有关潜在威胁设备的见解，还可以更好地了解复杂的威胁、你收到的目标攻击通知，或者你需要有关警报或你在门户仪表板上看到的威胁情报上下文详细信息。
+你可以咨询 Microsoft 威胁专家，了解有关可能受到威胁的设备或已受到威胁的设备的更多见解。 Microsoft 威胁专家可以直接在内部使用Microsoft 365 Defender及时准确的响应。 专家不仅提供有关潜在威胁设备的见解，还可以更好地了解复杂的威胁、你收到的目标攻击通知，或者你需要有关警报或你在门户仪表板上看到的威胁情报上下文详细信息。
 
 有关详细信息 [，请参阅咨询 Microsoft 威胁](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 专家。
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4e7d27e892b79c1b4b7d5d95f3f951490b6aabf7
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: cbea3514d9f2f12a8adce0f74ca0203dcc4195ae
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560241"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936194"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "61560241"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-**iOS 上的 Microsoft Defender for Endpoint** 可抵御来自网站、电子邮件和应用的网络钓鱼和不安全的网络连接。 所有警报都将通过警报窗格中的单个Microsoft Defender 安全中心。 该门户为安全团队提供了 iOS 设备上威胁的集中视图以及其他平台。
+**iOS 上的 Microsoft Defender for Endpoint** 可抵御来自网站、电子邮件和应用的网络钓鱼和不安全的网络连接。 所有警报都将通过门户中的一个窗口窗格Microsoft 365 Defender提供。 该门户为安全团队提供了 iOS 设备上威胁的集中视图以及其他平台。
 
 > [!CAUTION]
 > 在 iOS 上运行其他第三方终结点保护产品以及 Defender for Endpoint 可能会导致性能问题和不可预知的系统错误。
@@ -47,7 +47,7 @@ ms.locfileid: "61560241"
 - 分配给最终用户的 Microsoft Defender for Endpoint 许可证 (应用的) 许可证。 请参阅 [Microsoft Defender for Endpoint 许可要求](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)。
 
 - **对于注册的设备**：
-    - 设备 ([设备) 通过](/mem/intune/user-help/enroll-your-device-in-intune-ios)应用注册Intune 公司门户强制执行 Intune 设备合规性策略。 这要求向最终用户分配一个Microsoft Intune许可证。
+    - 设备 ([设备) 通过](/mem/intune/user-help/enroll-your-device-in-intune-ios)应用注册Intune 公司门户强制执行 Intune 设备合规性策略。 这要求为最终用户分配一个Microsoft Intune许可证。
     - Intune 公司门户应用可以从[Apple App Store 下载](https://apps.apple.com/us/app/intune-company-portal/id719171358)。
     
     >[!NOTE]
@@ -61,11 +61,11 @@ ms.locfileid: "61560241"
 
 **对于管理员**
 
-- 访问 Microsoft Defender 安全中心 门户。
+- 访问 Microsoft 365 Defender 门户。
 
-- 访问Microsoft Endpoint Manager[管理中心 ，](https://go.microsoft.com/fwlink/?linkid=2109431)以：
+- 访问[Microsoft Endpoint Manager 管理中心 ，](https://go.microsoft.com/fwlink/?linkid=2109431)以：
    - 将应用部署到组织中注册的用户组。
-   - 在应用保护策略中为 Microsoft Defender 配置 MAM (终结点) 
+   - 在应用保护策略中配置 Microsoft Defender for Endpoint 风险信号 (MAM) 
 
 
     > [!NOTE]
@@ -76,14 +76,14 @@ ms.locfileid: "61560241"
 
 - 运行 iOS 12.0 及以上的 iOS 设备。 也支持 iPad。
 
-- 设备已注册到 Intune 公司门户[应用，或者](https://apps.apple.com/us/app/intune-company-portal/id719171358)通过 Azure Active Directory[注册](https://apps.apple.com/app/microsoft-authenticator/id983156458)Microsoft Authenticator。
+- 设备已注册Intune 公司门户[应用，或者](https://apps.apple.com/us/app/intune-company-portal/id719171358)通过Azure Active Directory注册[Microsoft Authenticator注册。](https://apps.apple.com/app/microsoft-authenticator/id983156458)
 
 ## <a name="installation-instructions"></a>安装说明
 
-可以在 iOS 上部署 Microsoft Defender for Endpoint，Microsoft Endpoint Manager (MEM) 且受监督设备及不受监督的设备均受支持。 最终用户还可以直接从 Apple 应用商店 [安装应用](https://aka.ms/mdatpiosappstore)。
+可通过使用 MEM Microsoft Endpoint Manager (在 iOS 上部署 Microsoft Defender for Endpoint) 并且支持受监督的设备和不受监督的设备。 最终用户还可以直接从 Apple 应用商店 [安装应用](https://aka.ms/mdatpiosappstore)。
 
-- 有关通过 iOS 或 Intune 在已注册设备上Microsoft Endpoint Manager的信息，请参阅[在 iOS](ios-install.md)上部署 Microsoft Defender for Endpoint。
-- 有关在 MAM 应用保护策略 (使用 Defender for Endpoint) ，请参阅配置应用保护策略以将 Defender for Endpoint 风险信号 ([MAM) ](ios-install-unmanaged.md)
+- 有关通过 iOS 或 Intune 在已注册Microsoft Endpoint Manager部署的信息，请参阅在 iOS 上部署[Microsoft Defender for Endpoint。](ios-install.md)
+- 有关在 MAM 应用保护策略 (使用 Defender for Endpoint) 的信息，请参阅配置应用保护策略以将 Defender for Endpoint risk signals ([MAM) ](ios-install-unmanaged.md)
 
 ## <a name="resources"></a>资源
 

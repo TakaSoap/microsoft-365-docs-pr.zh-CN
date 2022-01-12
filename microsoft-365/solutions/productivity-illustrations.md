@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: b49e6c98970012989bfa22f2e3c419796a47a700
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 1636d7647a6c48b44608e991e1b8411b05367fb6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372464"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867611"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
@@ -31,9 +31,19 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 |:-----|:-----|
 |[![Teams逻辑体系结构海报。](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2021 年 1 月更新   |Microsoft 提供了一系列生产力服务，这些服务协同工作，提供数据治理、安全性和符合性相关功能的协作体验。 <br/> <br/>此系列图示展示了企业架构师生产力服务的逻辑体系结构，以 Microsoft Teams 为主导。|
 
+## <a name="corporate-communications-with-microsoft-365--a-contoso-case-study"></a>公司与 Microsoft 365 通信 — Contoso 案例研究
+员工参与度是任何组织的工作场所满意度、保留率和工作效率的重要参与者。 跨Microsoft 365，有多种方法可以沟通和吸引受众。 
+
+了解 (使用的方法) 组合，以及何时使用它们取决于受众和组织的通信文化。 
+
+| Item | 说明 |
+|:-----|:-----|
+|[![Teams逻辑体系结构海报。](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>2022 年 1 月更新   |此海报说明了 Contoso 如何跨热门通信方案使员工了解情况并让他们参与。 Contoso 使用各种 M365 应用，包括新产品/服务 Viva Connections。<br/><br/>**相关解决方案指南** <br/> <ul><li>[组织通信：指南、方法和产品](/sharepoint/corporate-communications-overview)|
+
+
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>面向 IT 架构师的 Microsoft 365 中的组
-此图包括 IT 架构师有关组Microsoft 365的信息。 若要了解如何在组织中配置Microsoft 365组和团队进行协作，请参阅使用 Microsoft 365 设置安全协作[和](/microsoft-365/solutions/setup-secure-collaboration-with-teams)[什么是协作治理？。](/microsoft-365/solutions/collaboration-governance-overview)
+此图包括 IT 架构师有关组Microsoft 365的信息。 若要了解如何配置和管理 Microsoft 365 组和团队，以在组织中进行协作，请参阅使用 Microsoft 365 设置安全协作[和](/microsoft-365/solutions/setup-secure-collaboration-with-teams)[什么是协作治理？。](/microsoft-365/solutions/collaboration-governance-overview)
 
 | Item | 说明 |
 |:-----|:-----|
@@ -93,7 +103,7 @@ Recommended Zero Trust capabilities for protecting identities and devices that a
 <a name="BKMK_ediscovery"></a>
 ##Advanced eDiscovery体系结构Microsoft 365
 
-Advanced eDiscovery端到端工作流和数据流，包括Microsoft 365多地理位置环境内。
+Advanced eDiscovery端到端工作流和数据流，Microsoft 365多地理位置环境中。
 
 | Item | 说明 |
 |:-----|:-----|

@@ -10,23 +10,23 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
-description: 管理员可以了解该门户中的攻击Microsoft 365 Defender培训如何影响用户，并可以从模拟和培训结果中获得见解。
+ms.custom: ''
+description: 管理员可以了解该门户中的攻击模拟Microsoft 365 Defender如何影响用户，并可以从模拟和培训结果中获得见解。
 ms.technology: mdo
-ms.openlocfilehash: 362f094d340b4f80a7b6fd54b1325540b812fa3e
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: c06cea01fcc7bb8fdc9c869fe8117f85eb627685
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962911"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935473"
 ---
-# <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Insights Defender for Office 365 中攻击模拟培训的报告和报告
+# <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Insights Defender for Office 365 中攻击模拟培训的Office 365
 
 **适用于 Microsoft** [Defender for Office 365计划 2](defender-for-office-365.md)
 
 在 Microsoft Defender 中针对 Office 计划 2 或 Microsoft 365 E5 的攻击模拟培训中，Microsoft 提供来自模拟结果和相应培训的见解和报告。 此信息可让你了解用户的威胁就绪进度，以及建议执行哪些步骤，以便用户更好地为将来的攻击做好准备。
 
-Insights门户中攻击模拟培训中的以下位置提供了Microsoft 365 Defender报告：
+Insights门户中的攻击模拟培训中的以下位置提供了Microsoft 365 Defender报告：
 
 - " **概述"** 选项卡。
 - 模拟选项卡上的 **模拟** 详细信息。
@@ -37,7 +37,7 @@ Insights门户中攻击模拟培训中的以下位置提供了Microsoft 365 Defe
 
 ## <a name="insights-and-reports-on-the-overview-tab-of-attack-simulation-training"></a>Insights攻击模拟培训的概述选项卡上的报告和报告
 
-To go to the **Overview** tab， open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> ， go to Email & **collaboration** Attack \> **simulation training**， and verify that the **Overview** tab is selected (it's the default) . 若要直接转到攻击 **模拟培训** 页面上的概述 **选项卡** ，请使用 <https://security.microsoft.com/attacksimulator?viewid=overview> 。
+To go to the **Overview** tab， open the Microsoft 365 Defender portal at <https://security.microsoft.com> ， go to Email & **collaboration** Attack \> **simulation training**， and verify that the **Overview** tab is selected (it's the default) . 若要直接转到攻击 **模拟培训** 页面上的概述 **选项卡** ，请使用 <https://security.microsoft.com/attacksimulator?viewid=overview> 。
 
 本部分的其余部分介绍了攻击模拟培训的"概述 **"选项卡上** 的信息。
 
@@ -55,11 +55,11 @@ To go to the **Overview** tab， open the Microsoft 365 Defender portal at <a hr
 
 ### <a name="behavior-impact-on-compromise-rate-card"></a>对泄露率卡的行为影响
 
-"**概述"选项卡** 上的"行为对泄露率卡的影响"显示用户对模拟的回复与当前测试中的历史数据Microsoft 365。 通过针对同一组用户运行多个模拟，可以使用这些见解跟踪用户威胁准备情况的进度。
+"**概述"选项卡** 上的"行为对泄露率卡的影响"显示用户对模拟的回复与 Microsoft 365 中历史数据Microsoft 365。 通过针对同一组用户运行多个模拟，可以使用这些见解跟踪用户威胁准备情况的进度。
 
 图表数据本身显示以下信息：
 
-- **预测入侵率**：攻击模拟培训模拟的平均入侵率，该模拟在所有其他组织之间使用相同 <sup>\*</sup> Microsoft 365率。
+- **预测入侵率**：攻击模拟培训模拟的平均入侵率，在所有其他组织之间使用相同 <sup>\*</sup> Microsoft 365率。
 - **实际泄露率** <sup>\*</sup> ：进行模拟的用户的实际百分比。
 
 如果将鼠标悬停在图表中的数据点上，将显示实际百分比值。
@@ -75,7 +75,7 @@ To go to the **Overview** tab， open the Microsoft 365 Defender portal at <a hr
 
 ### <a name="simulation-coverage-card"></a>模拟覆盖卡
 
-"概述"选项卡上的模拟覆盖卡显示组织中已收到模拟 (模拟用户 **)** 的用户与未收到模拟 (非模拟用户) 的用户的百分比。  您可以将鼠标悬停在图表中的一部分上，以查看每个类别中的实际用户数。
+"概述"选项卡上的"模拟覆盖卡"显示组织中已收到模拟 (模拟用户 **)** 的用户与非模拟用户 (用户数) 。  您可以将鼠标悬停在图表中的一部分上，以查看每个类别中的实际用户数。
 
 选择 **"启动非模拟** 用户的模拟"将启动模拟创建向导，其中，在"目标用户"页面上自动选择未收到 **模拟** 的用户。 有关详细信息，请参阅在 Defender for Office 365 中[模拟网络钓鱼Office 365。](attack-simulation-training.md)
 
@@ -97,7 +97,7 @@ To go to the **Overview** tab， open the Microsoft 365 Defender portal at <a hr
 
 ### <a name="repeat-offenders-card"></a>重复错误卡片
 
-"**概述"选项卡上的**"重复错误"卡片显示有关重复错误的信息。 重复 _错误_ 是由连续模拟泄露的用户。 连续模拟的默认数量为 2，**但你可以** 更改 攻击模拟设置选项卡上的值 <https://security.microsoft.com/attacksimulator?viewid=setting> 。
+"**概述"选项卡上的**"重复错误"卡片显示有关重复错误的信息。 重复 _错误_ 是由连续模拟泄露的用户。 连续模拟的默认数量为 2，但你可以更改 攻击模拟设置选项卡上的值 <https://security.microsoft.com/attacksimulator?viewid=setting> 。
 
 该图表按模拟类型组织重复 [重复数据](attack-simulation-training.md#select-a-social-engineering-technique)：
 
@@ -174,7 +174,7 @@ To go to the **Overview** tab， open the Microsoft 365 Defender portal at <a hr
 
 #### <a name="training-completion-tab-for-the-attack-simulation-report"></a>攻击模拟报告的培训完成选项卡
 
-![Microsoft 365 Defender门户中攻击模拟报告中的培训完成选项卡。](../../media/attack-sim-report-training-completion-view.png)
+![Microsoft 365 Defender门户中攻击模拟报告中的培训Microsoft 365 Defender选项卡。](../../media/attack-sim-report-training-completion-view.png)
 
 在 **"培训完成** "选项卡上，图表显示" **已完成**"、 **正在进行** 和 **未完成** 模拟的数量。 如果将鼠标悬停在图表中的节上，将显示实际值。
 
@@ -207,9 +207,9 @@ To go to the **Overview** tab， open the Microsoft 365 Defender portal at <a hr
 
 #### <a name="repeat-offenders-tab-for-the-attack-simulation-report"></a>攻击模拟报告的"重复攻击"选项卡
 
-![Microsoft 365 Defender门户中攻击模拟报告中的"重复攻击"选项卡。](../../media/attack-sim-report-repeat-offenders-view.png)
+![Microsoft 365 Defender门户中攻击模拟报告中的"重复攻击Microsoft 365 Defender选项卡。](../../media/attack-sim-report-repeat-offenders-view.png)
 
-重复 _错误_ 是由连续模拟泄露的用户。 连续模拟的默认数量为 2，**但** 你可以更改 攻击模拟设置选项卡上的值 <https://security.microsoft.com/attacksimulator?viewid=setting> 。
+重复 _错误_ 是由连续模拟泄露的用户。 连续模拟的默认数量为 2，但你可以更改 攻击模拟培训的设置 选项卡上的值 <https://security.microsoft.com/attacksimulator?viewid=setting> 。
 
 在" **重复限制** "选项卡上，图表按模拟类型组织 [重复重复数据](attack-simulation-training.md#select-a-social-engineering-technique)：
 
@@ -249,15 +249,15 @@ To go to the **Overview** tab， open the Microsoft 365 Defender portal at <a hr
 
 ## <a name="insights-and-reports-in-the-simulation-details-of-attack-simulation-training"></a>Insights攻击模拟培训的模拟详细信息中的报告和报告
 
-To go to the **Simulations** tab， open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> ， go to Email & **collaboration** Attack \> **simulation training**， and then click the **Simulations** tab.若要直接转到攻击 **模拟** 培训页面上的模拟选项卡 **，请使用** <https://security.microsoft.com/attacksimulator?viewid=simulations> 。
+To go to the **Simulations** tab， open the Microsoft 365 Defender portal at <https://security.microsoft.com> ， go to Email & **collaboration** Attack \> **simulation training**， and then select the **Simulations** tab.若要直接转到攻击 **模拟** 培训页面上的模拟选项卡 **，请使用** <https://security.microsoft.com/attacksimulator?viewid=simulations> 。
 
-当你从列表中选择模拟时，将打开一个详细信息页面。 此页面包含模拟的配置设置，你将看到 (状态、发布日期、使用的负载等) 。
+当你从列表中选择模拟时，将打开一个详细信息页面。 此页面包含模拟的配置设置，你将看到 (状态、启动日期、使用的负载等) 。
 
 本节的其余部分介绍了模拟详细信息页面上提供的见解和报告。
 
 ### <a name="simulation-impact-section"></a>模拟影响部分
 
-模拟 **详细信息** 页上的"模拟影响"部分显示模拟完全欺骗了多少用户，以及模拟中的用户总数。 显示的信息因模拟类型而异。 例如：
+模拟 **详细信息** 页上的"模拟影响"部分显示模拟完全欺骗了多少用户，以及模拟中的用户总数。 显示的信息因模拟类型而异。 例如: 
 
 - 链接：**输入的凭据****和未输入凭据**。
 
@@ -271,7 +271,7 @@ To go to the **Simulations** tab， open the Microsoft 365 Defender portal at <a
 
 ### <a name="all-user-activity-section"></a>"用户活动"部分
 
-模拟 **详细信息页面上** 的"所有用户活动"部分显示模拟的可能结果的数字。 显示的信息因模拟类型而异。 例如：
+模拟 **详细信息页面上** 的"所有用户活动"部分显示模拟的可能结果的数字。 显示的信息因模拟类型而异。 例如: 
 
 - **SuccessfullyDeliveredEmail**
 - **ReportedEmail：** 有多少用户将模拟邮件报告为可疑邮件。

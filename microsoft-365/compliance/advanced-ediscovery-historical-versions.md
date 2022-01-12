@@ -1,5 +1,5 @@
 ---
-title: 在 Advanced eDiscovery
+title: 在 Advanced eDiscovery 中设置历史版本
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -15,25 +15,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 使用文档中的历史Advanced eDiscovery从存储在 SharePoint 和 OneDrive 的所有版本的文档中OneDrive。
-ms.openlocfilehash: 8da7b390a982b9be0a4752e167399ad633377854
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+description: 使用文档中的历史Advanced eDiscovery从存储在 SharePoint 和 OneDrive 的所有版本的文档中收集内容。
+ms.openlocfilehash: 5ecbb9c9216482223ce756aed5742e25a3b851a1
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779017"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936650"
 ---
 # <a name="set-up-historical-versions-in-advanced-ediscovery-preview"></a>在预览版中Advanced eDiscovery (历史) 
 
 通过 Advanced eDiscovery 中的历史版本功能，您组织中的电子数据展示管理员可以搜索并收集存储在 SharePoint Online 和 OneDrive for Business 中所有版本OneDrive for Business。 然后，您可以将该内容添加到审阅集进行分析和审阅。 这可以帮助您从文档的特定版本查找和查看与案例或调查相关的内容，即使同一文档的最新版本不包含相关信息。
 
-若要在组织中支持历史版本Advanced eDiscovery，SharePoint必须启用其组织中网站的版本控制。 然后，当用户修改 SharePoint 或 OneDrive 中的文档时，在将文档保存或自动保存 (时，将创建隐式常规) 。 SharePoint版本控制允许跟踪对文档、SharePoint项目 (文档、事件和任务) 。 此版本控制功能留下可在法律调查中提供证据的审核线索。 组织可以使用这些较旧版本的文档，组织可能需要在法律事务中发现期间共享包含敏感或相关内容的此类版本。
+若要在组织中支持历史版本Advanced eDiscovery，SharePoint必须启用其组织中网站的版本控制。 然后，当用户修改 SharePoint 或 OneDrive 中的文档时，在将文档保存或自动保存 (创建隐式常规) 。 SharePoint版本控制允许跟踪对项目上SharePoint的活动 (包括文档、事件和任务) 。 此版本控制功能留下可在法律调查中提供证据的审核线索。 组织可以使用这些较旧版本的文档，组织可能需要在法律事务中发现期间共享包含敏感或相关内容的此类版本。
 
-电子数据展示管理员打开组织的历史版本，然后为特定 SharePoint 网站激活它后，SharePoint 内容推送服务将爬网激活网站上文档的所有主要版本和次要版本，然后发送这些版本进行索引。 完成爬网和索引过程后，文档及其版本可用于电子数据展示搜索。 只要特定版本可以通过版本历史记录 (，) 就可以在一个 Advanced eDiscovery 搜索中发现。
+电子数据展示管理员打开组织的历史版本，然后为特定 SharePoint 网站激活它后，SharePoint 内容推送服务将爬网激活网站上文档的所有主要版本和次要版本，然后发送这些版本进行索引。 完成爬网和索引过程后，文档及其版本可用于电子数据展示搜索。 只要特定版本可以按版本历史记录 (，) ，该版本就可以在 Advanced eDiscovery 搜索中发现。
 
 ## <a name="set-up-historical-versions"></a>设置历史版本
 
-若要在 Advanced eDiscovery 中启用历史版本，组织必须将其打开，然后激活特定网站，以便为存储在这些网站上的所有文档版本编制索引以便进行搜索。 设置历史Advanced eDiscovery版本版本之前，必须启用版本控制SharePoint。
+若要在 Advanced eDiscovery 中启用历史版本，组织必须将其打开，然后激活特定网站，以便为存储在这些网站上的所有文档版本编制索引以便进行搜索。 在设置Advanced eDiscovery版本版本之前，必须启用版本控制SharePoint。
 
 ### <a name="step-1-turn-on-versioning-in-sharepoint"></a>步骤 1：在 SharePoint
 
@@ -50,7 +50,7 @@ ms.locfileid: "60779017"
 
    ![选择Advanced eDiscovery设置](..\media\HistoricalVersions1.png)
 
-2. 在 **"设置"** 页上，选择"历史版本 (**预览**) "选项卡，然后将"历史 **版本**"租户控件切换开关切换为"打开"。
+2. 在 **"设置"** 页上，选择"历史版本" (**预览**) "选项卡，然后将"历史 **版本**"租户控件切换开关切换为"打开"。
 
    ![打开切换以启用历史版本](..\media\HistoricalVersions2.png)
 
@@ -69,7 +69,7 @@ ms.locfileid: "60779017"
 
    ![单击"启用"以激活历史版本的网站](..\media\HistoricalVersions3.png)  
 
-   将显示一个飞出页面，其中包含组织中所有SharePoint网站的列表。
+   将显示一个飞出页面，其中包含组织中SharePoint网站的列表。
 
 2. 选择要激活的网站，然后单击" **启用** "以针对历史版本激活它。 您可以使用搜索框搜索特定网站。
 
@@ -93,7 +93,7 @@ ms.locfileid: "60779017"
 
 **当为网站启用历史版本时，是否会影响网站的性能？**
 
-不正确。 为网站启用历史版本后，网站的性能将和启用网站之前的性能相同。 启用网站后对网站执行的爬网和索引编制过程的速度将较慢，并且将在非高峰时段执行。 为网站启用历史版本将启动回填过程，此过程将查找网站上的所有文档版本，然后将这些版本发送到索引。 此回填过程可能会影响服务运行状况，具体取决于网站的文档版本数。 我们通过以下方式缓解了这种潜在影响：
+否。 为网站启用历史版本后，网站的性能将和启用网站之前的性能相同。 启用网站后对网站执行的爬网和索引编制过程的速度将较慢，并且将在非高峰时段执行。 为网站启用历史版本将启动回填过程，此过程将查找网站上的所有文档版本，然后将这些版本发送到索引。 此回填过程可能会影响服务运行状况，具体取决于网站的文档版本数。 我们通过以下方式缓解了这种潜在影响：
 
 - 我们会尽力在非高峰时段处理这些版本。
 

@@ -18,24 +18,23 @@ ms.collection:
 description: 将 Microsoft Defender for Office 365与 Microsoft Defender for Endpoint 一起，获取有关针对你的设备和电子邮件内容的威胁的更多详细信息。
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ecb8cfc64768e206a1723105462ec87f2116c81e
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: ea7d4ba04b14c8889a3a95e225aaaf09dfa3e070
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284669"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938176"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>将 Microsoft Defender for Office 365 Microsoft Defender for Endpoint 一起使用
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft Defender for Office 365](defender-for-office-365.md)可以配置为与 Microsoft [Defender for Endpoint 一起运行](/windows/security/threat-protection)。
+[Microsoft Defender for Office 365](defender-for-office-365.md)可以配置为与[Microsoft Defender for Endpoint 一起运行](/windows/security/threat-protection)。
 
-将 Microsoft Defender for Office 365与 Microsoft Defender for Endpoint 集成可帮助你的安全操作团队在用户设备存在风险时快速监视和采取措施。 例如，启用集成后，安全运营团队将能够看到受检测到的电子邮件潜在影响的设备，以及 Microsoft Defender for Endpoint 中为这些设备生成的最近警报数。
+将 Microsoft Defender for Office 365 Microsoft Defender for Endpoint 可帮助你的安全操作团队在用户设备存在风险时快速监视和采取措施。 例如，启用集成后，安全运营团队将能够看到受检测到的电子邮件潜在影响的设备，以及 Microsoft Defender for Endpoint 中为这些设备生成的最近警报数。
 
 下图描述了启用 Microsoft Defender  for Endpoint 集成后"设备"选项卡的外观：
 
@@ -46,13 +45,13 @@ ms.locfileid: "61284669"
 > [!TIP]
 > Microsoft 365 Defender门户将替换Microsoft Defender 安全中心。 请参阅[Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)。
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 - 你的组织必须具有 Microsoft Defender for Office 365 (或 Office 365 E5) 和 Microsoft Defender for Endpoint。
 
-- 必须在角色分配中分配全局管理员或安全Microsoft 365。 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
+- 您必须在服务器中分配全局管理员或安全管理员Microsoft 365。 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
-- 你必须有权访问 Explorer ([或实时检测) 。 ](threat-explorer.md)
+- 你必须有权访问 Explorer ([或实时) 。 ](threat-explorer.md)
 
 ## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a>将 Microsoft Defender for Office 365与 Microsoft Defender for Endpoint 集成
 
@@ -64,7 +63,7 @@ ms.locfileid: "61284669"
 
 3. 在 **"资源管理器**"页上的屏幕右上角，选择 **"MDE 设置"。**
 
-3. 在出现的 **Microsoft Defender for Endpoint** 连接飞出区中，连接 Microsoft Defender for **Endpoint** (切换"打开。) ，然后选择" ![ ](../../media/scc-toggle-on.png) 关闭 **"。**
+3. 在出现的 **Microsoft Defender for Endpoint** 连接飞出区中，连接 Microsoft Defender for **Endpoint** (切换"打开。) 然后选择" ![ ](../../media/scc-toggle-on.png) 关闭 **"。**
 
     :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE 连接。":::
 
@@ -72,7 +71,7 @@ ms.locfileid: "61284669"
 
 5. 在打开 **的"终结点**"页上，选择"**高级功能"。**
 
-6. 向下滚动到 **"Office 365** 智能"连接，然后打开 ![ " ("。) 。 ](../../media/scc-toggle-on.png)
+6. 向下滚动到 **"Office 365** 智能"连接，然后打开"打开 ![ ("。) 。 ](../../media/scc-toggle-on.png)
 
    完成后，选择保存 **首选项**。
 

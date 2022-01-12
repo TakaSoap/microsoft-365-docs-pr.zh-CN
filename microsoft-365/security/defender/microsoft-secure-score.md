@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 3bce20b1b86ea569014313f345bcf7e4f6dd2cc0
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 91371583a6dde3a7fcb97037146b3eab1410e86c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724316"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61936879"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -72,7 +72,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 每个改进操作都值 10 分或更少，大多数改进操作都以二进制方式进行评分。 如果实施改进操作（如创建新策略或启用特定设置），则获得 100% 的分数。 对于其他改进操作，分数以总配置百分比表示。
 
-例如，改进操作通过多重身份验证保护所有用户而获得 10 分。 你只有 50 个保护的总数为 100 个用户，因此你获得的部分分数为 5 分 (50 分/共 100 分 * 10 最大 pts = 5 pts) 。
+例如，改进操作通过多重身份验证保护所有用户而获得 10 分。 你只有 50 个受保护用户（共 100 个）受保护，因此你获得的部分分数为 5 分 (50 分/共 100 分 * 10 最大 pts = 5 磅) 。
 
 ### <a name="products-included-in-secure-score"></a>安全分数中包含的产品
 
@@ -82,18 +82,18 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 - Azure Active Directory
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
-- 云应用安全
+- Defender for Cloud Apps
 - Microsoft Teams
 
 推荐即将推出其他安全产品。 建议不会涵盖与每个产品关联的所有攻击面，但它们是一个很好的基线。 还可以将改进操作标记为第三方或备用缓解涵盖。
 
 ### <a name="security-defaults"></a>安全性默认值
 
-Microsoft 安全分数已更新了改进操作，以支持[Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)中的安全默认值，从而可以更轻松地使用针对常见攻击的预配置安全设置来帮助保护组织。
+Microsoft 安全分数已更新了改进操作以支持[Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)中的安全默认值，从而可以更轻松地使用针对常见攻击的预配置安全设置来帮助保护组织。
 
 如果启用安全默认值，将被授予以下改进操作的完整分数：
 
-- 确保所有用户都可以完成多重身份验证， (9 个点) 
+- 确保所有用户都可以通过 9 个点安全访问 (多重) 
 - 管理角色需要 MFA (10) 
 - 启用策略以阻止 7 (旧身份验证) 
 
@@ -102,7 +102,7 @@ Microsoft 安全分数已更新了改进操作，以支持[Azure Active Director
 
 ## <a name="required-permissions"></a>所需权限
 
-若要有权访问 Microsoft 安全分数，必须在 Microsoft 安全分数中分配以下角色之Azure Active Directory。
+若要具有访问 Microsoft 安全分数的权限，必须在 Microsoft 安全分数中分配以下角色之Azure Active Directory。
 
 ### <a name="read-and-write-roles"></a>读取和写入角色
 
@@ -130,7 +130,7 @@ Microsoft 安全分数是安全状态的数字摘要，基于系统配置、用�
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 
-如果有任何问题，请通过发布到安全、隐私和合规性社区 [&告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
+如果有任何问题，请通过发布在安全、隐私和合规性社区中& [告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
 
 ## <a name="related-resources"></a>相关资源
 

@@ -1,5 +1,5 @@
 ---
-title: '向 MSSP 托管安全服务提供程序 (访问权限) '
+title: '向 MSSP 托管服务提供程序 (访问) '
 description: 执行必要步骤以配置 MSSP 与 Microsoft Defender for Endpoint 的集成
 keywords: 托管安全服务提供程序， mssp， 配置， 集成
 ms.prod: m365-security
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3f370e1a491006a5dc42df807994db97f68abcb0
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cb92b67b3f19c578d12eb9673d2f80d5fadd131f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168914"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937840"
 ---
-# <a name="grant-managed-security-service-provider-mssp-access-preview"></a>向 MSSP (托管安全) 访问 (预览) 
+# <a name="grant-managed-security-service-provider-mssp-access-preview"></a>向 MSSP 托管安全 (授予) 访问 (预览) 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -55,7 +55,7 @@ ms.locfileid: "61168914"
 
 2. 在 Customer Defender for Endpoint 中为相应的访问级别创建适用于终结点的 Defender 角色。
 
-    若要在客户服务中启用 RBAC Microsoft Defender 安全中心，请设置 >全局管理员或安全管理员权限的用户帐户访问 > **Permissions > Roles** 和"Turn on roles"。
+    若要在客户门户Microsoft 365 Defender RBAC，请设置 >全局管理员或安全管理员权限的用户帐户访问 设置 > **Permissions > Roles** 和"Turn on roles"。
 
     ![MSSP 访问的图像。](images/mssp-access.png)
 
@@ -91,7 +91,7 @@ ms.locfileid: "61168914"
 
     有关详细信息，请参阅创建 [资源目录](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
-3. **为 MSSP 资源创建访问包客户AAD：标识治理**
+3. **为 MSSP 资源创建访问包客户AAD：标识管理**
 
     访问包是请求者在审批时将授予的权限和访问权限的集合。
 
@@ -128,7 +128,7 @@ ms.locfileid: "61168914"
 
 2. 在 UI 的" **审批"部分批准** 或拒绝请求。
 
-    此时，已预配分析师访问权限，并且每个分析师应能够访问客户Microsoft Defender 安全中心：`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    此时，已设置分析员访问权限，并且每个分析师应能够访问客户的Microsoft 365 Defender门户：`https://security.microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>相关主题
 

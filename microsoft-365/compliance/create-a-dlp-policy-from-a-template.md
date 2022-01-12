@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: 本文将了解如何使用本文中包含的模板之一创建 DLP Office 365。
-ms.openlocfilehash: e581a395e6d817a7d6d0dc9ac79a9b2b7c0327d4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 92c26c23461c9a03e50ea3a8f0ebb20a2b5151ba
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747234"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939101"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>通过模板创建 DLP 策略
 
@@ -36,6 +36,43 @@ Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规
 您可以通过修改模板的任何现有规则或添加新规则来微调模板。 例如，您可以将新的敏感信息类型添加到规则中，以及修改规则中的计数以使其更难以触发或更易于触发，使用户通过提供业务理由替代规则中的操作，或更改要向其发送通知和事件报告的用户。 对于许多常见的合规性方案来说，DLP 策略模板都是一个灵活的起点。
 
 您还可以选择不带有任何默认规则的自定义模板，从头开始配置您的 DLP 策略以满足组织的特定合规性要求。
+
+## <a name="permissions"></a>权限
+
+创建 DLP 策略的合规性团队成员需要具有对合规中心的访问权限。 默认情况下，租户管理员将具有访问权限，可授予合规部官员和其他人员访问权限。 请按照下列步骤操作：
+  
+1. 在 Microsoft 365 中创建组并向其添加合规部主管。
+    
+2. 在安全 &amp; 合规中心的“**权限**”页面上创建一个角色组。 
+
+3. 创建角色组时，请使用" **选择** 角色"部分将以下角色添加到角色组 **：DLP Compliance Management**。
+    
+4. 使用“**选择成员**”部分，将先前创建的 Microsoft 365 组添加到角色组中。
+
+使用" **仅查看 DLP 合规性管理** "角色创建具有 DLP 策略和 DLP 报告仅查看权限的角色组。
+
+有关详细信息，请访问[向用户授予对 Office 365 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+  
+创建和应用 DLP 策略时需要这些权限，才能不强制执行策略。
+
+### <a name="roles-and-role-groups-in-preview"></a>预览版中的角色和角色组
+
+预览版中的角色和角色组可以进行测试以微调访问控制。
+
+下面是预览中Microsoft 信息保护 (MIP) 角色的列表。 若要详细了解它们，请参阅安全 [与合规&中的角色](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查人员
+- 信息保护读者
+
+下面是预览中的 MIP 角色组列表。 若要详细了解 ，请参阅安全与合规中心 [&组](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- 信息保护
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查人员
+- 信息保护读者
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>从模板创建 DLP 策略
 
@@ -57,7 +94,7 @@ Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规
 
 5. 选择希望 DLP 策略保护的位置，并接受每个位置的默认范围或自定义范围。 请参阅 [作用域](dlp-policy-reference.md#locations) 选项的位置。
 
-6. 选择 \> **下一步**。
+6. 选择“\> **下一步**”。
  
 1. <!-->，请执行下列操作之一：
 
@@ -66,11 +103,11 @@ Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规
 
    若要包含或排除整个位置，如Exchange或所有OneDrive帐户，请打开或关闭该位置的"状态"。 
 
-   若要仅包含SharePoint或OneDrive for Business帐户，请切换到"状态"，然后单击"包含"下的链接以选择特定网站或帐户。  将策略应用到网站后，该策略中配置的规则将自动应用到该网站的所有子网站。
+   若要仅包含SharePoint或OneDrive for Business，请切换到"状态"打开，然后单击"包含"下的链接以选择特定网站或帐户。  将策略应用到网站后，该策略中配置的规则将自动应用到该网站的所有子网站。
 
    ![可以应用 DLP 策略的位置的选项。](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
-   本示例中，若要保护存储在所有 OneDrive for Business 帐户的敏感信息，请同时关闭 Exchange 电子邮件和 **SharePoint** 网站的"状态"，并保留 OneDrive 帐户的"状态"> 
+   本示例中，若要保护存储在所有 OneDrive for Business 帐户的敏感信息，请同时关闭 Exchange电子邮件和 **SharePoint** 网站的"状态"，并保留 OneDrive 帐户的"状态 **">**
 
 7. 选择 **"查看"，然后从模板"下一步"自定义** \> **默认设置**。
 
@@ -84,7 +121,7 @@ Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规
     1. OneDrive
     1. Teams聊天和频道消息 
 
-10. 选择 **下一步**。
+10. 选择“**下一步**”。
 
 11. 如果需要 **，可以在** "保护操作"页上自定义策略提示通知和通知电子邮件。 启用 **当内容与策略条件匹配时**，向用户显示策略提示，然后向用户发送电子邮件通知，然后选择自定义 **提示和电子邮件**。
 12. 选择" **下一步**"。

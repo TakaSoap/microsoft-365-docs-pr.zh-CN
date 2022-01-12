@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e5eafd86d3ce052655a72668bfc17083dff14f4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 9e447f764ea8b5f5d0a44a7233812845592157ee
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166214"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873605"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -42,15 +42,15 @@ ms.locfileid: "61166214"
 
 - 运行基本和高级命令以在设备上执行调查工作。
 - 下载恶意软件示例和 PowerShell 脚本结果等文件。
-- 在后台下载新 (！) 。
+- 在后台下载文件 (新建！) 。
 - Upload PowerShell 脚本或可执行文件到库，然后从租户级别在设备上运行它。
 - 执行或撤消修正操作。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的** Windows 版本。
+- **验证是否正在运行受支持的 Windows** 版本。
 
   设备必须运行以下版本之一Windows
 
@@ -65,13 +65,13 @@ ms.locfileid: "61166214"
   
   - **Linux** - 仅适用于公共预览版，最低要求版本：101.45.13 
     
-  - **Windows Server 2012 R2** - 具有 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+  - **Windows Server 2012 R2** - 包含 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
   
   - **Windows Server 2016** - 使用 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
 
   - **Windows Server 2019**
-    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
-    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
+    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     
   - **Windows Server 2022**
 
@@ -84,7 +84,7 @@ ms.locfileid: "61166214"
   > [!NOTE]
   > 只有具有管理安全性或全局管理员角色的用户才能编辑这些设置。
 
-- **从高级设置页面启用服务器** 实时响应 (推荐) 。
+- **从高级设置页面启用** 服务器实时响应 (推荐) 。
 
   > [!NOTE]
   > 只有具有管理安全性或全局管理员角色的用户才能编辑这些设置。
@@ -97,7 +97,7 @@ ms.locfileid: "61166214"
 
   ![错误消息的图像。](images/live-response-error.png)
 
-- **启用实时响应未签名脚本执行** (可选) 。
+- **启用实时响应未签名脚本执行 (** 可选) 。
 
   >[!IMPORTANT]
   >签名验证仅适用于 PowerShell 脚本。 
@@ -112,7 +112,7 @@ ms.locfileid: "61166214"
   只有已预配了相应权限的用户才能启动会话。 有关角色分配详细信息，请参阅 [创建和管理角色](user-roles.md)。
 
   > [!IMPORTANT]
-  > 将文件上载到库的选项仅适用于具有"管理安全性设置"权限的用户。
+  > 将文件上载到库的选项仅适用于具有"管理安全设置"权限的用户。
   > 对于仅具有委派权限的用户，按钮显示为灰色。
 
   根据已授予的角色，可以运行基本或高级实时响应命令。 用户权限由 RBAC 自定义角色控制。
@@ -128,7 +128,7 @@ ms.locfileid: "61166214"
 通过仪表板还可以访问：
 
 - 断开会话连接
-- Upload文件到库
+- Upload文件到库中
 - 命令控制台
 - 命令日志
 
@@ -306,7 +306,7 @@ ms.locfileid: "61166214"
   <command name> -type file -id <file path> - auto
   ```
 
-  或者
+  或
 
   ```powershell
   remediate file <file path> - auto`
@@ -345,6 +345,7 @@ processes > output.txt
 
 - 实时响应会话一次限制为 25 个实时响应会话。
 - 实时响应会话非活动超时值为 30 分钟。
+- Getfile 命令非活动超时值为 30 分钟。 当命令在后台运行时，它被视为非活动状态。
 - 用户可以启动最多 10 个并发会话。
 - 设备一次只能在一个会话中。
 - 以下文件大小限制适用：

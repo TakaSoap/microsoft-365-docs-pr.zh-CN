@@ -1,6 +1,6 @@
 ---
 title: 查看 Microsoft Defender for Endpoint 体系结构要求和关键概念
-description: Microsoft 365 Defender 中的 Microsoft Defender for Endpoint 的技术图表将帮助你在构建试用实验室或Microsoft 365之前了解 microsoft Defender 终结点中的标识。
+description: Microsoft 365 Defender 中的 Microsoft Defender for Endpoint 的技术图表将帮助你在构建试用实验室或Microsoft 365环境之前了解 microsoft Defender 中的身份。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9330a312bb00ca72e7a3fbc5e2e80f1521927b3f
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 32c40c61675ed5291093b88a6fd834bc92fcad87
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111059"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933223"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>查看 Microsoft Defender for Endpoint 体系结构要求和关键概念
 
@@ -44,7 +42,7 @@ ms.locfileid: "61111059"
 
 ![将 Microsoft Defender for Office添加到 Defender 评估环境的步骤。](../../media/defender/m365-defender-endpoint-architecture.png)
 
-下表介绍了此图。
+下表对该图进行了说明。
 
 呼叫 | 说明
 :---|:---|

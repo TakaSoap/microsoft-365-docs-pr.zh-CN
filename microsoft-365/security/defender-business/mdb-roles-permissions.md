@@ -1,5 +1,5 @@
 ---
-title: '在 Microsoft Defender for Business 预览版中分配 (和) '
+title: '在 Microsoft Defender for Business 预览版中 (角色) '
 description: '了解如何在 Microsoft Defender for Business 预览版中 (角色) '
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,14 +16,14 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 1a003bc5ad0208972f03e761dbfb251c2b2509b0
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 9086831d4d220e66d4de1956e8a2c8e33c651262
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507418"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938536"
 ---
-# <a name="assign-roles-and-permissions-in-microsoft-defender-for-business-preview"></a>在 Microsoft Defender for Business 预览版中分配 (和) 
+# <a name="assign-roles-and-permissions-in-microsoft-defender-for-business-preview"></a>在 Microsoft Defender for Business 预览版中 (角色) 
 
 > [!IMPORTANT]
 > Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
@@ -40,14 +40,20 @@ ms.locfileid: "61507418"
 
 3. [继续执行下一步](#next-steps)。
 
+>
+> **有空吗？**
+> 请参加有关 <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business 的简短调查</a>。 我们非常乐意听取你的宝贵意见！
+>
+
+
 ## <a name="roles-in-defender-for-business"></a>Defender for Business 中的角色
 
 下表介绍了可以在 Defender for Business 预览版中分配的三 (角色) 。 [了解有关管理员角色和](../../admin/add-users/about-admin-roles.md)。 <br/><br/>
 
 | 权限级别 | 说明 |
 |:---|:---|
-| **全局管理员** (也称为全局管理员)  <br/><br/> *最佳做法是限制全局管理员的数量。* | 全局管理员可以执行所有类型的任务。 默认情况下，注册你的公司Microsoft 365 Microsoft Defender for Business 预览版 () 全局管理员。 <br/><br/> 全局管理员能够跨所有门户访问/更改Microsoft 365设置，例如： <br/>- [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心 ()  <br/>- Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) ()  |
-| **安全管理员** (也称为安全管理员)  | 安全管理员可以执行以下任务： <br/>- 查看和管理安全策略和设置 <br/>- 查看和管理这些活动中的 (威胁和警报，包括对活动终结点采取)  <br/>- 查看安全信息和报告 |
+| **全局管理员** (也称为全局管理员)  <br/><br/> *最佳做法是限制全局管理员的数量。* | 全局管理员可以执行所有类型的任务。 默认情况下，注册公司注册 Microsoft 365 或 Microsoft Defender for Business 预览版 () 全局管理员。 <br/><br/> 全局管理员能够跨所有门户访问/Microsoft 365设置，例如： <br/>- [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心 ()  <br/>- Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) ()  |
+| **安全管理员** (也称为安全管理员)  | 安全管理员可以执行以下任务： <br/>- 查看和管理安全策略和设置 <br/>- 查看和管理这些活动的安全威胁和 (包括对活动终结点采取响应)  <br/>- 查看安全信息和报告 |
 | **安全信息读取者** | 安全读者可以执行以下任务： <br/>- 查看安全策略和设置 <br/>- 查看安全威胁和警报 <br/>- 查看安全信息和报告  |
 
 

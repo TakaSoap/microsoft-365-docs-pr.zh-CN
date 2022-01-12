@@ -1,7 +1,7 @@
 ---
 title: 适用于终结点资源的有用 Microsoft Defender
 description: 访问有用资源，例如指向博客的链接和与 Microsoft Defender for Endpoint 相关的其他资源
-keywords: Microsoft Defender 安全中心、产品简介、简短、功能、许可
+keywords: Microsoft 365 Defender、产品简介、简短、功能、许可
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: db844645088806551231b8d26b9825340cf3a5ab
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cfd0a95e16c07ae000a0f0dad69e44d0864a9a7d
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164474"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937348"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>适用于终结点资源的有用 Microsoft Defender
 
@@ -49,7 +49,7 @@ ms.locfileid: "61164474"
 
 ## <a name="threat-vulnerability-management"></a>威胁漏洞管理
 
-- [终结点威胁防御&漏洞管理现已公开可用！](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Threat-amp-Vulnerability-Management-now-publicly-available/ba-p/460977)
+- [终结点威胁防御&漏洞管理现已公开提供！](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Threat-amp-Vulnerability-Management-now-publicly-available/ba-p/460977)
 
 ## <a name="operational"></a>操作
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f34390890f2b49c3058c50a12d3ce67454e4dd37
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 96fd95ca7f774d7aec5800f10e68fd23c10987cf
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560764"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936073"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 威胁专家
 
@@ -39,12 +39,12 @@ Microsoft 威胁专家是一项托管威胁搜寻服务，可为安全操作中�
 
 此托管威胁搜寻服务通过以下两项功能提供专家驱动的见解和数据：目标攻击通知和按需访问专家。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 > [!NOTE]
 > 在应用托管威胁搜寻服务之前，与 Microsoft 技术服务提供商和帐户团队讨论资格要求。
 
-如果你是适用于终结点的 Microsoft Defender 客户，则需要申请 Microsoft 威胁专家 **-** 目标攻击通知，以获得有助于识别环境中最重要的威胁的特殊见解和分析，以便快速响应它们。
+如果你是适用于终结点的 Microsoft Defender 客户，则需要申请 Microsoft 威胁专家 **-** 目标攻击通知，以获得有助于识别环境中最重要的威胁的特殊见解和分析，以便你可以快速响应它们。
 
 若要注册Microsoft 威胁专家 - 目标攻击通知权益，请转到设置终结点常规高级Microsoft 威胁专家 \>  \>  \>  \> **- 要应用的目标攻击** 通知。 接受后，你将受益于定向攻击通知。
 
@@ -63,7 +63,7 @@ Microsoft 威胁专家 - 目标攻击通知可主动搜寻网络最重要的威�
 
 ## <a name="microsoft-threat-experts---experts-on-demand"></a>Microsoft 威胁专家 - 专家按需
 
-客户可以直接在内部与我们的安全专家Microsoft Defender 安全中心及时准确的响应。 专家提供所需的见解，以便更好地了解影响组织的复杂威胁，包括警报查询、可能受到威胁的设备、可疑网络连接的根本原因，以及有关正在进行的高级永久性威胁活动的其他威胁情报。 使用此功能，你可以：
+客户可以直接在内部与我们的安全专家Microsoft 365 Defender及时准确的响应。 专家提供所需的见解，以便更好地了解影响组织的复杂威胁，包括警报查询、可能受到威胁的设备、可疑网络连接的根本原因，以及有关正在进行的高级永久性威胁活动的其他威胁情报。 使用此功能，你可以：
 
 - 获取有关警报的其他说明，包括事件的根本原因或范围
 - 在遇到高级攻击者时，清楚了解可疑设备行为和下一步步骤

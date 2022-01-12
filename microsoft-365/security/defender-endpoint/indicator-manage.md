@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fbed4f51fcd0b2154c46a88dc3d408330238ec63
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 2f66106dd39b9cd1f590148addfdd2cae89748c6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217646"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938476"
 ---
 # <a name="manage-indicators"></a>管理指示器
 
@@ -35,7 +35,7 @@ ms.locfileid: "61217646"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)。
 
-1. 在导航窗格中，选择"设置"下 (终结点 \>  \> ) 。 
+1. 在导航窗格中，选择"设置规则"下 (\>  \> 终结点) 。 
 
 2. 选择要管理的实体类型的选项卡。
 
@@ -47,7 +47,7 @@ ms.locfileid: "61217646"
 
 下载示例 CSV，了解受支持的列属性。
 
-1. 在导航窗格中，选择"设置"下 (终结点 \>  \> ) 。 
+1. 在导航窗格中，选择"设置规则"下 (\>  \> 终结点) 。 
 
 2. 选择要导入其指示器的实体类型的选项卡。
 
@@ -68,8 +68,8 @@ indicatorType|枚举|指示器的类型。 可能的值是："FileSha1"、"FileS
 indicatorValue|String|Indicator [实体的](ti-indicator.md) 标识。 **Required**
 action|枚举|如果在组织中发现指示器，将采取的操作。 可能的值包括："Alert"、"AlertAndBlock"和"Allowed"。 **Required**
 title|String|指示器警报标题。 **Required**
-说明|String| 指示器的说明。 **Required**
-expirationTime|DateTimeOffset|指示器的过期时间，格式为 YYYY-MM-DDTHH：MM：SS.0Z。 **可选**
+description|String| 指示器的说明。 **Required**
+expirationTime|DateTimeOffset|指示器的过期时间，格式为 YYYY-MM-DDTHH：MM：SS.0Z。 如果过期时间过去，并且过期时间发生的任何事件在 SS (秒时发生，该指示器) 删除。 **可选**
 severity|枚举|指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。 **可选**
 recommendedActions|String|TI 指示器警报建议操作。 **可选**
 rbacGroupNames|String|将应用指示器的 RBAC 组名称的逗号分隔列表。 **可选**
@@ -80,7 +80,7 @@ GenerateAlert|String|是否应该生成警报。 可能的值是：True 或 Fals
 
 
 > [!NOTE]
-> 不支持无Inter-Domain IP (CIDR) 表示法。
+> 不支持无Inter-Domain路由 (IP) 的 CIDR 路由和表示法。
 有关详细信息，请参阅 [Microsoft Defender for Endpoint 警报类别现在与 MITRE ATT&CK！](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748)一致。
 
 ## <a name="see-also"></a>另请参阅

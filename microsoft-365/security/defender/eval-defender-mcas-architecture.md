@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 065dd43af376c16ee9e5daa332a08bc25b0d6b11
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 7e9542e152b2c218a83fd4a431588c14afecbda8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110315"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933152"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-cloud-apps"></a>查看 Microsoft Defender for Cloud Apps 的体系结构要求和关键概念
 
@@ -87,20 +85,20 @@ Microsoft Defender for Cloud Apps 充当反向代理，提供对批准的云应�
 
 #### <a name="integrating-with-azure-ad-with-conditional-access-app-control"></a>与条件Azure AD应用程序控件集成
 
-你可能已经将 SaaS 应用添加到 Azure AD 租户以强制执行多重身份验证和其他条件访问策略。 Microsoft Defender for Cloud Apps 本机与 Azure AD。 只需在云应用中配置策略Azure AD在 Defender for Cloud Apps 中使用条件访问应用控制。 这将通过 Defender for Cloud Apps 作为代理路由这些托管 SaaS 应用的网络流量，从而允许云应用的 Defender 监视此流量并应用会话控件。 
+你可能已经将 SaaS 应用添加到 Azure AD 租户以强制执行多重身份验证和其他条件访问策略。 Microsoft Defender for Cloud Apps 本地与 Azure AD 集成。 只需在云应用中配置策略Azure AD在 Defender for Cloud Apps 中使用条件访问应用控制。 这将通过 Defender for Cloud Apps 作为代理路由这些托管 SaaS 应用的网络流量，从而允许云应用的 Defender 监视此流量并应用会话控件。 
 
 ![Microsoft Defender for Cloud Apps 的体系结构 - SaaS 应用。](../../media/defender/m365-defender-mcas-architecture-e.png)
 
 在此图中：
 - SaaS 应用与 Azure AD 集成。 这允许Azure AD条件访问策略，包括多重身份验证。
-- 策略将添加到 Azure Active Directory，以将 SaaS 应用的流量直接引导到适用于云应用的 Defender。 策略指定要应用此策略的 SaaS 应用。 因此，Azure AD强制执行适用于这些 SaaS 应用的任何条件访问策略后，Azure AD 会通过 Defender for Cloud Apps (代理) 会话流量。
+- 策略将添加到 Azure Active Directory，以将 SaaS 应用的流量引导到适用于云应用的 Defender。 策略指定要应用此策略的 SaaS 应用。 因此，Azure AD强制执行适用于这些 SaaS 应用的任何条件访问策略后，Azure AD 会通过 Defender for Cloud Apps (代理) 会话流量。
 - 云应用的 Defender 监视此流量，并应用管理员配置的任何会话控制策略。 
 
-你可能已使用 Defender for Cloud Apps 发现和批准的云应用，这些应用尚未添加到Azure AD。 通过将这些云应用添加到你的租户和条件访问规则的范围，Azure AD条件访问应用控制。
+你可能已使用 Defender for Cloud Apps 发现和批准的云应用，这些应用尚未添加到Azure AD。 你可以利用条件访问应用控制，通过将这些云应用Azure AD租户和条件访问规则的范围。
 
 #### <a name="protecting-your-organization-from-hackers"></a>保护组织免受黑客攻击
 
-Defender for Cloud Apps 本身提供强大的保护。 但是，当与云应用的其他功能Microsoft 365 Defender，Defender for Cloud Apps 会向共享信号提供数据，这共同有助于阻止攻击。
+Defender for Cloud Apps 本身提供强大的保护。 但是，当与云应用的其他Microsoft 365 Defender结合使用时，Defender for Cloud Apps 会向共享信号提供数据，这共同有助于阻止攻击。
 
 从概述到本试点评估和试点指南，值得Microsoft 365 Defender此图示。 
 
@@ -135,7 +133,7 @@ Defender for Cloud Apps 本身提供强大的保护。 但是，当与云应用�
 
 ### <a name="applying-azure-ad-conditional-access-policies-to-cloud-apps"></a>将Azure AD访问策略应用于云应用
 
-条件访问应用控制 (条件访问策略应用于云应用) 需要与 Azure AD。 这不是开始使用 Defender for Cloud Apps 的要求。 我们鼓励你在试点阶段（步骤 [3）中试用此步骤。试用 Microsoft Defender for Cloud Apps](eval-defender-mcas-pilot.md)。
+条件访问应用 (将条件访问策略应用于云应用) 需要与 Azure AD。 这不是开始使用 Defender for Cloud Apps 的要求。 我们鼓励你在试点阶段（步骤 [3）中试用此步骤。试用 Microsoft Defender for Cloud Apps](eval-defender-mcas-pilot.md)。
 
 ## <a name="siem-integration"></a>SIEM 集成
 

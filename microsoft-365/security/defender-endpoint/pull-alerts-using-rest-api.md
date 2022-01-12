@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f4f5dbcde4a80b01c3df7ee7c32b41afc89dbba6
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 5baf1619b97be0be7225ac9042c64cf4f1532696
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301002"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61890931"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>使用 SIEM REST API 拉取 Microsoft Defender 的终结点检测
 
@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint 支持 OAuth 2.0 协议从 API 拉取检测。
 
 有关 OAuth 规范详细信息，请参阅 [OAuth 网站](http://www.oauth.net)。
 
-Microsoft Defender for Endpoint 支持 _授权_ 授予流和 _客户端_ 凭据流来获取拉取检测的访问权限，Azure Active Directory (AAD) 授权服务器。
+Microsoft Defender for Endpoint 支持 _授权_ 授予流和客户端凭据流来获取拉取检测的访问权限，Azure Active Directory (AAD) 授权服务器。 
 
 授权 _授予流_ 使用用户凭据获取授权代码，然后使用授权代码获取访问令牌。
 
@@ -63,7 +63,7 @@ Microsoft Defender for Endpoint 支持 _授权_ 授予流和 _客户端_ 凭据�
 使用 Microsoft Defender for Endpoint API 中的以下方法拉取 JSON 格式的检测。
 
 > [!NOTE]
-> Microsoft Defender 安全中心将类似的警报检测合并到单个警报中。 此 API 基于您设置的查询参数，以原始形式拉取警报检测，从而使您可以应用自己的分组和筛选。
+> Microsoft 365 Defender将类似的警报检测合并到单个警报中。 此 API 基于您设置的查询参数，以原始形式拉取警报检测，从而使您可以应用自己的分组和筛选。
 
 ## <a name="before-you-begin"></a>开始之前
 
@@ -105,7 +105,7 @@ resource=https%3A%2F%2Fgraph.windows.net&client_id=35e0f735-5fe4-4693-9e68-3de80
 }
 ```
 
-你现在可以在对 *Defender* for Endpoint API 的请求access_token字段的值。
+你现在可以在对 Defender for Endpoint API 的请求 *access_token* 字段的值。
 
 ## <a name="request"></a>请求
 
@@ -121,7 +121,7 @@ GET|使用适用于你地区的 URI。 <p> **对于欧盟**： `https://wdatp-al
 
 标头|类型|说明|
 ---|---|---
-Authorization|string|必填。 The Azure AD access token in the form **Bearer** &lt; *token* &gt; .|
+Authorization|string|必需。 The Azure AD access token in the form **Bearer** &lt; *token* &gt; .|
 
 ### <a name="request-parameters"></a>请求参数
 
@@ -135,7 +135,7 @@ ago|string|在下列时间范围内拉取警报： `(current_time - ago)` 时而
 limit|int|定义要检索的警报数。 将基于定义的号码检索最新警报。<p> **注意**：如果未指定，将检索该时间范围内可用的所有警报。
 machinegroups|string|指定要拉取警报的设备组。 <p> **注意**：如果未指定，将检索来自所有设备组的警报。 <p> 示例： <br><br> `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines`
 DeviceCreatedMachineTags|string|注册表中的单个设备标记。
-CloudCreatedMachineTags|string|在应用程序中创建的设备Microsoft Defender 安全中心。
+CloudCreatedMachineTags|string|在应用程序中创建的设备Microsoft 365 Defender。
 
 ### <a name="request-example"></a>请求示例
 

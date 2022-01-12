@@ -17,14 +17,14 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (和 Microsoft Defender for) 中提供的防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca7c19066847b3a1aa5ad5a971315e3962fc08b7
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 899a76fac01c6058d5642cb52af5a6e8fb7d11ee
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520904"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939725"
 ---
-# <a name="anti-phishing-policies-in-microsoft-365"></a>邮件中的防钓鱼Microsoft 365
+# <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -54,19 +54,19 @@ ms.locfileid: "61520904"
 |创建自定义策略|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
 |常见策略设置<sup>\*</sup>|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
 |欺骗设置|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
-|第一个安全提示|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
+|第一个联系人安全提示|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
 |模拟设置||![复选标记](../../media/checkmark.png)|
 |高级网络钓鱼阈值||![复选标记](../../media/checkmark.png)|
 |
 
-<sup>\*</sup> 在默认策略中，策略名称和说明是只读 (说明为空) ，并且无法指定策略应用于 (默认策略将应用于) 的所有收件人。
+<sup>\*</sup> 在默认策略中，策略名称和说明是只读的 (说明为空) ，并且无法指定策略应用于哪些用户 (默认策略将应用于) 。
 
 若要配置防钓鱼策略，请参阅以下文章：
 
 - [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)
 - [在 Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
 
-本文的其余部分介绍了 EOP 和 Defender for Office 365 中的防钓鱼策略中可用的设置。
+本文的其余部分介绍了 EOP 和 Defender for Office 365 中的反网络钓鱼策略中的Office 365。
 
 ## <a name="common-policy-settings"></a>常见策略设置
 
@@ -94,9 +94,9 @@ ms.locfileid: "61520904"
 
 ## <a name="spoof-settings"></a>欺骗设置
 
-欺骗是电子邮件中的发件人地址 (电子邮件客户端中显示的发件人地址) 与电子邮件源的域不匹配。 有关欺骗功能详细信息，请参阅反欺骗[Microsoft 365。](anti-spoofing-protection.md)
+欺骗是电子邮件中的发件人地址 (电子邮件客户端中显示的发件人地址) 与电子邮件源的域不匹配。 有关欺骗功能详细信息，请参阅 Microsoft 365 中的[反欺骗Microsoft 365。](anti-spoofing-protection.md)
 
-EOP 和 Defender for Office 365 中的防钓鱼策略中提供了以下欺骗Office 365：
+EOP 和 Defender for Office 365 中的反网络钓鱼策略中提供了以下欺骗Office 365：
 
 - **启用欺骗智能**：打开或关闭欺骗智能。 建议将其保持打开。
 
@@ -117,17 +117,17 @@ EOP 和 Defender for Office 365 中的防钓鱼策略中提供了以下欺骗Off
   - **隔离邮件**：将邮件发送到隔离邮箱，而不是目标收件人。 若要了解隔离，请参阅以下文章：
     - [隔离Microsoft 365](quarantine-email-messages.md)
     - [以管理员角色管理隔离的邮件和Microsoft 365](manage-quarantined-messages-and-files.md)
-    - [在邮件中以用户状态查找并释放隔离Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [在邮件中以用户模式查找并释放隔离Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
     如果选择" **隔离邮件"，** 还可以选择适用于被欺骗智能保护隔离的邮件的隔离策略。 隔离策略定义用户可以对隔离邮件执行哪些操作，以及用户是否收到隔离通知。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
 
 ### <a name="unauthenticated-sender"></a>未经身份验证的发件人
 
-未经身份验证的发件人通知是 EOP 和[](#spoof-settings)Defender for Office 365 中提供的欺骗设置的一部分，如上一部分所述。 以下设置仅在启用欺骗智能时可用：
+未经身份验证的发件人通知是 EOP 和[](#spoof-settings)Defender for Office 365 反网络钓鱼策略中提供的欺骗设置的一部分，如上一部分所述。 以下设置仅在启用欺骗智能时可用：
 
-- 为欺骗的未经身份验证的发件人显示 **(？) ：** 如果邮件未通过 SPF 或 DKIM 检查，并且邮件未通过 DMARC 或复合身份验证，则此通知会将问号添加到发件人的照片 [中。](email-validation-and-authentication.md#composite-authentication) 关闭此设置后，不会将问号添加到发件人的照片中。
+- 为欺骗的未经身份验证的发件人显示 **(？？) ：** 如果邮件未通过 SPF 或 DKIM 检查且邮件未通过 DMARC 或复合身份验证，则此通知会将问号添加到发件人照片的"发件人"[框中。](email-validation-and-authentication.md#composite-authentication) 关闭此设置后，不会将问号添加到发件人的照片中。
 
-- 显示"通过 <u>"标记</u>**？：** 如果"发件人"地址 (电子邮件客户端中显示的邮件发件人) 中的域不同于 DKIM 签名或 **MAIL FROM** 地址中的域，此通知将在"发件人"框中通过 fabrikam.com) 添加通过标记 (chris@contoso.com。 有关这些地址详细信息，请参阅 [电子邮件标准概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
+- 显示 **"通过"标记？：** 如果"发件人"地址 (电子邮件客户端) 中显示的邮件发件人与 DKIM 签名或 MAIL **FROM** 地址中的域不同，此通知将在"发件人"框中通过 <u>fabrikam.com)</u>添加通过标记 (chris@contoso.com。 有关这些地址详细信息，请参阅 [电子邮件标准概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
 
 若要防止向来自特定发件人的邮件添加问号或通过标记，可以使用以下选项：
 
@@ -138,9 +138,9 @@ EOP 和 Defender for Office 365 中的防钓鱼策略中提供了以下欺骗Off
 
 有关详细信息，请参阅在[Outlook.com](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)和 Outlook 网页版
 
-## <a name="first-contact-safety-tip"></a>第一个安全提示
+## <a name="first-contact-safety-tip"></a>第一个联系人安全提示
 
-"**显示第一安全提示** 联系人"设置在 EOP 和 Defender 中对 Office 365 组织可用，并且不依赖于欺骗智能或模拟保护设置。 以下安全提示向收件人显示收件人：
+"**显示第一安全提示** 联系人"设置在 EOP 和 Defender 中可用于 Office 365 组织，并且对欺骗智能或模拟保护设置没有依赖性。 以下安全提示向收件人显示收件人：
 
 - 他们第一次从发件人收到邮件时
 - 他们通常不会收到来自发件人的邮件。
@@ -168,10 +168,10 @@ EOP 和 Defender for Office 365 中的防钓鱼策略中提供了以下欺骗Off
 模拟是邮件中的发件人或发件人的电子邮件域看起来类似于真实发件人或域的情况：
 
 - 域 contoso.com 的模拟示例是 ćóntoso.com。
-- 用户模拟是用户的电子邮件地址和显示名称的组合。 例如，将一 (vbarrios@contoso.com) 可能模拟为一个为一个，但电子邮件地址完全不同。
+- 用户模拟是用户的电子邮件地址和显示名称的组合。 例如，将一个 (vbarrios@contoso.com) Barrios 可能模拟为一个为一个，但电子邮件地址完全不同。
 
 > [!NOTE]
-> 模拟保护查找类似域。 例如，如果你的域是 contoso.com，我们会检查不同的顶级域（A0.com、.biz 等) 作为模拟尝试，还有一些类似的域。 例如，contosososo.com 或 contoabcdef.com 可能会被视为模拟尝试 contoso.com。
+> 模拟保护查找类似域。 例如，如果你的域 contoso.com，我们会检查不同的顶级域（A0.com、.biz 等) 模拟尝试，但也检查一些类似的域。 例如，contosososo.com 或 contoabcdef.com 可能会被视为模拟尝试 contoso.com。
 
 模拟的域可能被视为合法（注册的域、配置的电子邮件身份验证记录等），但其意图是欺骗收件人。
 
@@ -183,14 +183,14 @@ EOP 和 Defender for Office 365 中的防钓鱼策略中提供了以下欺骗Off
 
   > [!NOTE]
   >
-  > - 在每个防钓鱼策略中，最多可指定 350 个受保护 (发件人电子邮件地址) 。 不能在多个策略中指定同一受保护的用户。 因此，无论向收件人应用多少策略，每个收件人 (发件人电子邮件地址) 用户的最大数量为 350。 有关策略优先级以及策略处理如何在应用第一个策略后停止的信息，请参阅电子邮件保护的顺序 [和优先级](how-policies-and-protections-are-combined.md)。
+  > - 在每个防钓鱼策略中，最多可以指定 350 个受保护的用户 (发件人电子邮件地址) 。 不能在多个策略中指定同一受保护的用户。 因此，无论向收件人应用多少策略，每个收件人 (发件人电子邮件地址) 用户数量上限为 350。 有关策略优先级以及策略处理如何在应用第一个策略后停止的信息，请参阅电子邮件保护的顺序 [和优先级](how-policies-and-protections-are-combined.md)。
   > - 如果发件人和收件人之前通过电子邮件进行通信，则用户模拟保护不起作用。 如果发件人和收件人从未通过电子邮件进行通信，则邮件将被标识为模拟尝试。
 
   默认情况下，不会将发件人电子邮件地址配置为在"用户"中用于保护的 **模拟保护**。 因此，默认情况下，在默认策略或自定义策略中，模拟保护不会覆盖发件人电子邮件地址。
 
-  当您将内部或外部电子邮件地址添加到"用户保护"列表时，来自这些发件人的邮件将接受模拟保护检查。 如果将邮件发送到应用于默认策略的所有收件人的收件人，则检查 (是否模拟;**自定义策略中的** 用户、组和域) 。 如果在发件人的电子邮件地址中检测到模拟，则用户模拟保护操作将应用于邮件 (以及对邮件执行哪些操作、是否显示模拟用户安全提示等) 。
+  当您将内部或外部电子邮件地址添加到"用户保护"列表时，来自这些发件人的邮件将接受模拟保护检查。 如果将邮件发送到应用于默认策略的所有收件人的收件人，则检查 (是否模拟;**自定义策略中的** 用户、组和域) 。 如果在发件人的电子邮件地址中检测到模拟，则用户模拟保护操作将应用于邮件 (对邮件执行哪些操作，是否显示模拟用户安全提示等) 。
 
-- **启用域进行保护**：阻止在邮件发件人的域中 **模拟指定的域**。 例如，你拥有的所有域 (接受) 或特定[](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)自定义域 (拥有或合作伙伴域) 。 此防止 **模拟** 的发件人域列表不同于策略应用于默认策略的所有 (收件人的收件人列表;特定收件人，如"通用策略设置"部分"用户、组和域"[](#common-policy-settings)设置) 。
+- **启用域进行保护**：阻止在邮件发件人的域中 **模拟指定的域**。 例如，你拥有的所有域 (接受) 或特定[](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)自定义 (拥有或合作伙伴域) 。 此防止 **模拟** 的发件人域列表不同于策略应用于默认策略的所有 (收件人的收件人列表;特定收件人，如"通用策略设置"部分"用户、组和域"[](#common-policy-settings)设置) 。
 
   > [!NOTE]
   > 可以在所有反网络钓鱼策略中定义的受保护域的最大数量为 50 个。
@@ -206,7 +206,7 @@ EOP 和 Defender for Office 365 中的防钓鱼策略中提供了以下欺骗Off
   - **隔离邮件**：将邮件发送到隔离邮箱，而不是目标收件人。 若要了解隔离，请参阅以下文章：
     - [隔离Microsoft 365](quarantine-email-messages.md)
     - [以管理员角色管理隔离的邮件和Microsoft 365](manage-quarantined-messages-and-files.md)
-    - [在邮件中以用户状态查找并释放隔离Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [在邮件中以用户模式查找并释放隔离Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
     如果选择" **隔离邮件"，** 则还可以选择适用于由用户模拟或域模拟保护隔离的邮件的隔离策略。 隔离策略定义用户可以对隔离邮件执行哪些操作。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
 
@@ -216,13 +216,13 @@ EOP 和 Defender for Office 365 中的防钓鱼策略中提供了以下欺骗Off
 - **模拟安全提示**：打开或关闭以下模拟安全提示，这些提示将显示未通过模拟检查的邮件：
   - **显示模拟用户的提示**："自"地址包含" **允许用户保护用户** "。 仅在启用 **和配置** "启用用户保护"时可用。
   - **显示模拟域的提示**："自"地址包含" **允许域保护域** "。 仅在启用 **要保护的域** 已打开并配置时可用。
-  - 显示异常字符的提示：发件人地址包含异常字符集 (例如，在"允许用户保护发件人"或"启用域以保护发件人域"中，数学符号和文本或大写和小写字母) 的组合。   仅在启用 **用户保护或**_启用_ 要保护的域打开并配置时可用。
+  - 显示异常字符的提示：发件人地址包含异常字符集 (例如，数学符号和文本，或者使用户可以保护发件人或启用域以保护发件人域中的大写和小写字母) 的组合。   仅在启用 **用户保护或**_启用_ 要保护的域打开并配置时可用。
 
 - **启用邮箱智能**：启用或禁用 (AI) ，该智能智能功能可确定具有常用联系人的用户电子邮件模式。 此设置可帮助 AI 区分来自合法发件人和模拟发件人的邮件。
 
-  例如，一 (glaureano@contoso.com) 一位用户是贵公司的 CEO，因此在"允许用户保护策略设置"中将她添加为受保护的发件人。  但是，应用该策略的一些收件人会定期与一个名为"一名为一名的 Vendora Laureano (glaureano@fabrikam.com) "。 由于这些收件人具有与 glaureano@fabrikam.com 的通信历史记录，因此邮箱智能不会将来自 glaureano@fabrikam.com 的邮件识别为这些收件人 glaureano@contoso.com 模拟尝试。
+  例如，一 (glaureano@contoso.com) 一位用户是贵公司的 CEO，因此在"允许用户保护策略设置"中将她添加为受保护的发件人。  但是，应用该策略的一些收件人会定期与一个名为"一名为一名的 Vendora Laureano (glaureano@fabrikam.com) "。 由于这些收件人具有与 glaureano@fabrikam.com 的通信历史记录，因此邮箱智能不会将来自 glaureano@fabrikam.com 的邮件识别为这些 glaureano@contoso.com 的模拟尝试。
 
-  若要使用由邮箱智能 (了解的常用联系人和缺少不为) 来帮助保护用户免受模拟攻击，可以在启用邮箱智能后启用智能模拟 **保护**。
+  若要使用由邮箱智能 (了解的常用联系人和缺少) 以帮助保护用户免受模拟攻击，可以在启用邮箱智能后启用智能模拟 **保护**。 
 
 - **启用智能模拟保护**：打开此设置可指定对邮件执行哪些操作以从邮箱智能结果进行模拟检测：
   - **不要应用任何操作**：请注意，此值与启用邮箱智能但关闭启用智能模拟保护具有相同的 **结果**。
@@ -234,13 +234,13 @@ EOP 和 Defender for Office 365 中的防钓鱼策略中提供了以下欺骗Off
 
 - **添加受信任的发件人和域**：模拟保护设置例外。 策略不会将来自指定发件人和发件人域的邮件分类为基于模拟的攻击。 换句话说，对受保护的发件人、受保护的域或邮箱智能保护的操作不会应用于这些受信任的发件人或发件人域。 这些列表的最大限制为 1024 个条目。
 
-### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的防钓鱼策略中的高级网络钓鱼Office 365
+### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反网络钓鱼策略中的高级网络钓鱼Office 365
 
-以下高级网络钓鱼阈值仅适用于 Defender for Office 365 中的防钓鱼策略。 这些阈值控制将机器学习模型应用到邮件以确定网络钓鱼裁定的敏感度：
+以下高级网络钓鱼阈值仅在 Defender for Office 365 中的反网络钓鱼策略中Office 365。 这些阈值控制将机器学习模型应用到邮件以确定网络钓鱼裁定的敏感度：
 
 - **1 - 标准**：这是默认值。 对邮件采取的操作的严重性取决于邮件是网络钓鱼邮件的可信度 (低、中、高或非常高) 。 例如，可信度非常高的标识为网络钓鱼的邮件应用了最严重的操作，而被标识为低可信度的网络钓鱼邮件应用了不太严重的操作。
 - **2 - 积极**：被标识为高可信度网络钓鱼的邮件被视为可信度非常高的邮件。
 - **3 - 更积极**：被标识为具有中等或高可信度的网络钓鱼的邮件被视为具有非常高可信度的邮件。
 - **4 - 最积极**：被标识为低、中或高可信度网络钓鱼的邮件被视为可信度非常高的邮件。
 
-当你增加此设置时， (标记为错误) 误报的可能性会增加。 有关推荐设置的信息，请参阅 Microsoft Defender 中的防钓鱼策略[Office 365设置](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)。
+当增加此设置时， (标记为错误) 误报的可能性会增加。 有关推荐设置的信息，请参阅 Microsoft Defender 中的防钓鱼策略[，Office 365设置](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)。

@@ -7,20 +7,20 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
 ms.custom: intro-overview
-ms.openlocfilehash: 0025abb9aa900da4b6e22b7ecf1a48014f25552a
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 139015e1e1b12dd14510fa0cdd8b546b4ad52405
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645538"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872437"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>适用于终结点计划 1 的 Microsoft Defender 概述
 
@@ -55,7 +55,7 @@ Defender for Endpoint Plan 1 包括以下功能：
 - **[下一代保护](#next-generation-protection)** ，包括行业领先的可靠反恶意软件和防病毒保护
 - **[检测到威胁](#manual-response-actions)** 时，安全团队可以对设备或文件执行手动响应操作（如将文件发送到隔离区）
 - **[攻击面减少功能](#attack-surface-reduction)** ，可强化设备、防止零时差攻击，并提供对终结点访问和行为精细的控制
-- **[集中配置和管理与](#centralized-management)** Microsoft 365 Defender 门户，并集成Microsoft Endpoint Manager
+- **[集中配置和管理与](#centralized-management)** Microsoft 365 Defender 门户集成Microsoft Endpoint Manager
 - **[对各种平台的保护](#cross-platform-support)**，包括 Windows、macOS、iOS 和 Android 设备
 
 以下各节提供有关这些功能的更多详细信息。 
@@ -151,13 +151,13 @@ Defender for Endpoint Plan 1 包括以下功能：
 
 ### <a name="application-control"></a>应用程序控制
 
-应用程序控件通过仅在系统核心Windows内核中运行受信任的应用程序和代码来保护 (终结点) 。 安全团队可以定义考虑应用程序属性的应用程序控制规则，例如其代码签名证书、信誉、启动过程等。 应用程序控件在 Windows 10或更高版本中可用。
+应用程序控件通过仅在系统核心和内核Windows中运行受信任的应用程序和代码来保护 (终结点) 。 安全团队可以定义考虑应用程序属性的应用程序控制规则，例如其代码签名证书、信誉、启动过程等。 应用程序控件在 Windows 10或更高版本中可用。
 
-若要了解更多信息，请参阅应用程序[控制Windows。](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+若要了解更多信息，请参阅[应用程序控件Windows。](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 
 ## <a name="centralized-management"></a>集中管理
 
-Defender for Endpoint Plan 1 包含 Microsoft 365 Defender 门户，使安全团队能够查看有关检测到的威胁的当前信息，采取相应措施缓解威胁，并集中管理组织的威胁防护设置。
+Defender for Endpoint Plan 1 包含 Microsoft 365 Defender 门户，使安全团队能够查看有关检测到的威胁的当前信息，采取适当的措施缓解威胁，并集中管理组织的威胁防护设置。
 
 若要了解更多信息，请参阅[Microsoft 365 Defender门户概述](portal-overview.md)。
 
@@ -169,10 +169,10 @@ Defender for Endpoint Plan 1 包含 Microsoft 365 Defender 门户，使安全团
 
 ### <a name="reporting"></a>报表
 
-通过Microsoft 365 Defender门户 () 可轻松访问有关检测到 [https://security.microsoft.com](https://security.microsoft.com) 的威胁和操作的信息，以解决这些威胁。 
+通过Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 可轻松访问有关检测到的威胁和用于应对这些威胁的操作的信息。 
 
 - **主页** 包含卡片，可一目了然地显示哪些用户或设备处于风险中、检测到的威胁数量以及创建哪些警报/事件。
-- **"事件&警报**"部分列出了因触发的警报而创建的任何事件。 当跨设备检测到威胁时，将生成警报和事件。
+- **"事件&** 警报"部分列出了因触发的警报而创建的任何事件。 当跨设备检测到威胁时，将生成警报和事件。
 - 操作 **中心** 列出了已采取的修正操作。 例如，如果文件被发送到隔离区，或 URL 被阻止，每个操作都列在"历史记录"选项卡上的"操作 **中心** "中。
 - " **报告** "部分包括显示检测到的威胁及其状态的报告。 
 

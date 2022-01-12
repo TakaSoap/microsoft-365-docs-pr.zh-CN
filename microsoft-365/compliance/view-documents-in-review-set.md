@@ -6,21 +6,21 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 选择在视图视图中查看内容Advanced eDiscovery，如文本、批注、转换或本机视图。
+description: 选择在视图视图中Advanced eDiscovery，如文本、批注、转换或本机视图。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1fd0d6a5001a2d01b542a276aad142e6d52821c2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4086d79b611596b8a32a15f994174a0f8f58b0bc
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205961"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937468"
 ---
 # <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>查看审阅集内的文档Advanced eDiscovery
 

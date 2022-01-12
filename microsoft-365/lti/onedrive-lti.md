@@ -1,5 +1,5 @@
 ---
-title: 使用Microsoft OneDrive Learning工具互操作性
+title: 使用 Microsoft OneDrive Learning 工具互操作性
 ms.author: heidip
 author: MicrosoftHeidi
 manager: serdars
@@ -12,17 +12,17 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: 使用新的 Microsoft OneDrive Learning 互操作性应用创建和评级作业、构建和选择课程内容，并实时协作处理文件。
-ms.openlocfilehash: 445c12077c7b7b61269c0bef9e216db0ff1ddfb2
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+description: 使用新的工具互操作性应用创建作业和作业、生成和选择课程内容，并实时协作处理Microsoft OneDrive Learning文件。
+ms.openlocfilehash: 68622305e6a277b44538d4a05ee42a6b680749f3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578167"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61905621"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>将 Microsoft OneDrive LTI 与 Canvas 集成
 
-将 Microsoft OneDrive LTI 与 Canvas 集成的过程有两个步骤。 第一步在 Canvas 中Microsoft OneDrive，第二步使 Microsoft OneDrive LTI 在 Canvas 课程内可用。
+将 Microsoft OneDrive LTI 与 Canvas 集成的过程有两个步骤。 第一步在 Canvas Microsoft OneDrive，第二步使 Microsoft OneDrive LTI 在 Canvas 课程内可用。
 
 ## <a name="recommended-browser-settings"></a>建议的浏览器设置
 
@@ -31,12 +31,12 @@ ms.locfileid: "61578167"
 
 > [!NOTE]
 > - 默认情况下，Cookie 不会在 Chrome 浏览器隐身模式下启用，并且需要启用。
-> - Microsoft OneDrive LTI 在专用模式下在 Microsoft Edge 运行。 确保您未阻止默认情况下 (启用的 cookie) 。
+> - Microsoft OneDrive LTI 在专用模式下在专用Microsoft Edge运行。 确保您未阻止默认情况下 (启用的 cookie) 。
 
 ## <a name="enable-microsoft-onedrive-lti-in-canvas"></a>在画布Microsoft OneDrive LTI
 
 > [!IMPORTANT]
-> 执行此集成的人应是 Canvas 的管理员和 Microsoft 365 管理员。
+> 执行此集成的人应是 Canvas 的管理员和 Microsoft 365 租户的管理员。
 
 1. 登录到 Microsoft OneDrive <a href="https://onedrivelti.microsoft.com/admin" target="_blank">LTI 注册门户</a>
 1. 选择 **"管理员同意"** 按钮并接受权限。
@@ -47,7 +47,7 @@ ms.locfileid: "61578167"
 3. 选择" **新建 LTI 租户"** 按钮。 在"LTI 注册"页上，选择下拉列表中的" **画布** "，然后输入 Canvas 实例的基本 URL。
 
 > [!NOTE]
-> 例如，如果 Canvas 实例为 https://contoso.test.instructure.com ] (https://contoso.test.instructure.com) ，则应该输入完整的 URL。
+> 例如，如果 Canvas 实例为 https://contoso.test.instructure.com ] (，则应该输入 https://contoso.test.instructure.com) 完整的 URL。
 
 :::image type="content" source="media/OneDrive-LTI-07.png" alt-text="LTI 租户管理页面，包含用于选择 LTI 使用者平台的下拉列表字段和 URL 文本字段。":::
 
@@ -59,7 +59,13 @@ ms.locfileid: "61578167"
 
 :::image type="content" source="media/OneDrive-LTI-14.png" alt-text="显示左侧导航栏（已选择&quot;开发工具&quot;，并且从页面右侧下拉列表选择 LTI 键条目）的屏幕截图。":::
 
-6. On the Configure page， in the **Method** dropdown， select **Paste JSON** as the method and paste the JSON text you copied in Step 5 in the text field that appears.
+6. On the Configure page， in the **Method** dropdown， select **Paste JSON** as the method and paste the JSON text you copied in Step 4 in the text field that appears.
+
+    > [!TIP]
+    > **可选步骤：** 如果你的学校教师希望自己控制其课程导航中显示的链接，可以在复制的 JSON 中修改 ``default`` 参数。 参数 ``default`` 设置为自动 ``enabled`` ;但是，将 参数更改为 ``default`` 允许教师 ``disabled`` 选择其自己的课程导航。
+    >
+    > 若要详细了解教师如何修改课程导航链接，请参阅如何 [管理课程导航链接？](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
+
 7. 保存密钥，它以 Off 状态在 Canvas **中** 可用。 打开该 **键** 并复制"详细信息"列中给定的键，以用于下一步。
 
 :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="键设置为关闭状态中的&quot;画布&quot;页。需要将其打开，并且需要从此页面的详细信息列中复制密钥。":::

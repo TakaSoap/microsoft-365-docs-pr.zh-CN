@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aefa9c38be0ec25545b64e28514b48c91cfbcdd0
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 0556527e7eac3eed4b54a2dd948a9ca8dae76fc7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560209"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867837"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -97,6 +97,9 @@ ms.locfileid: "61560209"
        - 对于 6.9：2.6.32-696.* 
        - 对于 6.10：2.6.32.754.2.1.el6.x86_64 2.6.32-754.41.2：
 
+ > [!NOTE]
+ > 发布新程序包版本后，仅对前两个版本的支持减少到技术支持。 提供的版本低于本节中列出的版本仅提供技术升级支持。
+
     版本列表：
 
     - 2.6.32-754.2.1.el6.x86_64 
@@ -168,11 +171,11 @@ ms.locfileid: "61560209"
 - 必须 `auditd` () 审核框架。
 
   > [!NOTE]
-  > 通过添加到 的规则捕获的系统事件将添加到 (，) `/etc/audit/rules.d/` `audit.log` 主机审核和上游收集。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
+  > 添加到 的规则捕获的系统事件将添加到 (，) 并可能影响主机 `/etc/audit/rules.d/` `audit.log` 审核和上游收集。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
 
 ### <a name="configuring-exclusions"></a>配置排除项
 
-在向用户Microsoft Defender 防病毒排除项时，应注意用于Microsoft Defender 防病毒[](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+在向Microsoft Defender 防病毒排除项时，应注意用于Microsoft Defender 防病毒[](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>网络连接
 
@@ -214,7 +217,7 @@ Microsoft 会定期发布软件更新，以提高性能、安全性和提供新�
 
 ## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>适用于终结点的 Microsoft Defender 的常见应用程序可能会影响
 
-安装 Microsoft Defender for Endpoint 时，某些应用程序中的高 I/O 工作负载可能会遇到性能问题。 其中包括用于开发人员方案（如 Jenkins 和 Jira）的应用程序，以及数据库工作负荷（如 OracleDB 和 Postgres）。 如果遇到性能下降，请考虑为受信任应用程序设置排除[项，并](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)记住Microsoft Defender 防病毒错误。 有关其他指南，请考虑有关第三方应用程序的防病毒排除项的咨询文档。
+安装 Microsoft Defender for Endpoint 时，某些应用程序中的高 I/O 工作负载可能会遇到性能问题。 其中包括用于开发人员方案（如 Jenkins 和 Jira）的应用程序，以及数据库工作负荷（如 OracleDB 和 Postgres）。 如果遇到性能下降，请考虑为受信任应用程序设置排除项，并记住[Microsoft Defender 防病毒错误。](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) 有关其他指南，请考虑有关第三方应用程序的防病毒排除项的咨询文档。
 
 ## <a name="resources"></a>资源
 

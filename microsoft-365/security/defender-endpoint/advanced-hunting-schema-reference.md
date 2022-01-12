@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 18fddf99be6b6bd96457607ddec987ef6cc2d07d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 290d302f815de38c4cd84f417118205ed6504fe2
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167906"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934257"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>了解 Microsoft Defender for Endpoint 中的高级搜寻架构
 
@@ -54,7 +54,7 @@ ms.locfileid: "61167906"
 
 以下引用列出了高级搜寻架构中的所有表。 每个表名称链接到描述该表的列名称的页面。
 
-表和列名称也列在Microsoft Defender 安全中心中，在高级搜寻屏幕上的架构表示形式中。
+表和列名称还将在Microsoft 365 Defender门户中以高级搜寻屏幕上的架构表示形式列出。
 
 <br>
 
@@ -62,7 +62,7 @@ ms.locfileid: "61167906"
 
 |表名|说明|
 |---|---|
-|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|有关警报Microsoft Defender 安全中心|
+|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|有关警报Microsoft 365 Defender |
 |**[DeviceInfo](advanced-hunting-deviceinfo-table.md)**|设备信息，包括操作系统信息|
 |**[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)**|设备的网络属性，包括适配器、IP 和 MAC 地址，以及连接的网络和域|
 |**[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)**|过程创建和相关事件|
@@ -81,9 +81,9 @@ ms.locfileid: "61167906"
 |
 
 > [!TIP]
-> 使用[Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview)中的高级搜寻，使用 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps 和 Microsoft Defender for Identity 数据搜寻威胁。 [打开"Microsoft 365 Defender"。](/microsoft-365/security/defender/m365d-enable)
+> 使用 Microsoft 365 Defender 中的高级[搜寻](/microsoft-365/security/defender/advanced-hunting-overview)，使用 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps 和 Microsoft Defender for Identity 数据搜寻威胁。 [打开"Microsoft 365 Defender"。](/microsoft-365/security/defender/m365d-enable)
 
-在从 Microsoft Defender for Endpoint 迁移高级搜寻查询中Microsoft 365 Defender将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[其他位置](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)。
+若要详细了解如何将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 Defender从[Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)迁移高级搜寻查询。
 
 ## <a name="related-topics"></a>相关主题
 

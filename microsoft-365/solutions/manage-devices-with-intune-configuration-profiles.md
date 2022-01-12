@@ -3,7 +3,9 @@ title: 步骤 5. 在 Microsoft Intune 中部署设备配置文件
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- configuration profiles
+- Windows security baselines for Intune
+- customize configuration profiles
 manager: dougeby
 audience: ITPro
 description: 开始使用配置文件，使用 Intune 在设备上强制实施安全设置，以将这些安全控制权转移到云。
@@ -13,15 +15,17 @@ ms.localizationpriority: high
 ms.collection:
 - Configuration profiles
 - Windows security baselines for Intune
-- customize configuration profiles
+- customize configuration profiles-
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 0cb966e16d30619cb6666cc73020189532abba8f
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 94825143349b329cf571c9735a3573f8fc65e8b8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645046"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939293"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>步骤 5. 在 Microsoft Intune 中部署设备配置文件
 

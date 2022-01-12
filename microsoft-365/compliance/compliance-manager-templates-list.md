@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器提供用于构建符合国家、区域和行业法规、标准和法律的评估的模板。
-ms.openlocfilehash: 4201dac3b83c73dd61f39a01f7ba2d98b6207bc4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7ea918b1273335c39866d2de684acf9a2be076b7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700861"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871847"
 ---
 # <a name="compliance-manager-templates-list"></a>合规性管理器模板列表
 
@@ -33,13 +33,15 @@ ms.locfileid: "60700861"
 
 ## <a name="overview"></a>概述
 
-[Microsoft 合规性管理器](compliance-manager.md) 提供了一组用于创建评估的综合模板。 这些模板可帮助组织遵守管理数据的收集和使用的国家、区域和行业特定要求。
+[Microsoft 合规性管理器](compliance-manager.md) 提供了一组用于创建评估的综合模板。 这些模板可以帮助组织满足治理数据收集和使用的国家、地区和行业特定的要求。
 
 随着新法律和法规的生效，模板将添加到合规性管理器中。 合规性管理器还会在基础法律或法规发生变化时更新其模板。 详细了解如何查看 [和接受更新](compliance-manager-assessments.md#accept-updates-to-assessments)。
 
 ## <a name="list-of-templates-and-where-to-find-them"></a>模板列表及其查找位置
 
-下面是合规性管理器中模板的完整列表。 下面的模板名称中的链接将你介绍有关该标准、法规或法律的相关文档。
+下面是合规性管理器中模板的完整列表。 下面的模板名称中的链接可让你找到有关该标准、法规或法律的相关文档。
+
+您还可以在合规性管理器中选择单个模板以查看有关它们的信息，包括模板法规和属性的说明。 阅读 **"关于** "部分，了解摘要。
 
 ### <a name="where-to-find-your-templates"></a>在哪里查找模板
 
@@ -62,7 +64,7 @@ ms.locfileid: "60700861"
 这些模板目前可用于预览。 使用这些模板创建评估不会计入你已使用的许可模板总数。
 
 - 适用于 Azure (Preview 的 ISO 27001：2013) 
-- Dynamics 365 预览版 ISO 27001：2013 (预览) 
+- 适用于 Dynamics 365 预览版 (ISO 27001：2013) 
 - FedRAMP Moderate for Dynamics 365 (Preview) 
 - FedRAMP Moderate for Azure (Preview) 
 - FedRAMP High for Azure (Preview) 
@@ -90,34 +92,34 @@ ms.locfileid: "60700861"
 - ISO 27799：2016，运行状况信息 — 运行状况管理中的 (Microsoft 365) 
 - ISO 28000 – 供应链安全管理系统规范 (Microsoft 365) 
 - ISO 31000：2018 (Microsoft 365) 
-- ISO 55001 – 资产管理 -- 管理系统--要求 (Microsoft 365) 
+- ISO 55001 – 资产管理 -- 管理系统 --要求 (Microsoft 365) 
 - ISO IEC 80001-1：2010 (Microsoft 365) 
 - ISO/IEC 27001：2013
 - [ISO/IEC 27018：2019](/compliance/regulatory/offering-iso-27018) (Microsoft 365) 
 - ISO/IEC 27033-1：2015 (Microsoft 365) 
 - [ISO/IEC 27701：2019](/compliance/regulatory/offering-iso-27701) (Microsoft 365) 
 - [SOC (系统和组织) 1](/compliance/regulatory/offering-soc)
-- [SOC (2 的系统) 组织控制](/compliance/regulatory/offering-soc)
+- [SOC (系统和组织) 2](/compliance/regulatory/offering-soc)
 
 ### <a name="industry"></a>行业
 
-- AICPA/CICA 正式接受的隐私原则 (GAPP)  (Microsoft 365) 
+- AICPA/CICA 正式接受的隐私 (GAPP)  (Microsoft 365) 
 - ARMA - 在 GARP 记录中实现 (记录)  (Microsoft 365) 
 - [CDSA 内容保护&安全标准](/compliance/regulatory/offering-cdsa) (Microsoft 365) 
 - [CIS 实现组 1、组 2、组 3](/compliance/regulatory/offering-cis-benchmark)
-- CIS Microsoft 365 Foundation Level 1 和 2
+- CIS Microsoft 365 Foundation 级别 1 和 2
 - [云安全联盟 (CSA) 云控制矩阵 (CCM) ](/compliance/regulatory/offering-csa-star-attestation)
 - COBIT 5 (Microsoft 365) 
 - FINRA 网络安全清单 (Microsoft 365) 
-- 使用 2007 年 10 月 1 日版 (MICROSOFT 365) 
+- 为它提供 2007 年 10 月 (MICROSOFT 365) 
 - 联合委员会信息管理标准 (Microsoft 365) 
 - [动作图片关联 (MPA) 内容安全性最佳实践](/compliance/regulatory/offering-mpaa) (Microsoft 365) 
 - [NERC CIP](/compliance/regulatory/offering-nerc-cip) (Microsoft 365) 
 - SWIFT 客户安全 (Microsoft 365) 
-- 适用于开发人员的 OWASP ProActive 控件 2018 v3.0 (Microsoft 365) 
+- 适用于开发人员的 OWASP ProActive Controls 2018 v3.0 (Microsoft 365) 
 -  (NAIC) 保护客户信息模型法规 MDL-673 的标准
 - [PCI DSS v3.2.1](/compliance/regulatory/offering-pci-dss) (Microsoft 365) 
-- 《消费者财务和健康信息条例》，NAIC MDL-672，2017 年第 2 季度 (Microsoft 365) 
+- 消费者财务和健康信息条例隐私，NAIC MDL-672，2017 年第 2 季度 (Microsoft 365) 
 - 修订了对运行风险进行良好管理的原则， (Iii Ops Risks)  (Microsoft 365) 
 - 标准化信息收集 (SIG) 调查表 (Microsoft 365) 
 - [受信任的信息安全评估Exchange](/compliance/regulatory/offering-tisax-germany)
@@ -132,8 +134,8 @@ ms.locfileid: "60700861"
 - 《计算机欺诈和滥用法》 (CFAA)  (Microsoft 365) 
 - 用于管理医疗设备中网络安全的预市场提交内容 (Microsoft 365) 
 - [刑事犯罪信息服务 (CJIS) 安全策略 (Microsoft 365) ](/compliance/regulatory/offering-cjis)
-- 网络医疗设备（包含现成 (OTS) 的网络安全 - FDA (Microsoft 365) 
-- 网络安全成熟度模型认证 (CMMC) 级别 1 至 5 (Microsoft 365) 
+- 网络医疗设备（包含现成或现成 (OTS) 网络安全 - FDA (Microsoft 365) 
+- CMMC 的网络安全成熟度模型 (1) 5 级 (Microsoft 365) 
 - [DFARS](/compliance/regulatory/offering-dfars) (Microsoft 365) 
 - e-CFR - 身份盗窃 (Microsoft 365) 
 - 联邦法规电子代码 - 第 748.0 部分和附录 A (Microsoft 365) 
@@ -154,30 +156,30 @@ ms.locfileid: "60700861"
 - NIST 800-37 (Microsoft 365) 
 - NIST 800-53 修订版 5 (Microsoft 365) 
 - NIST 800-63 数字标识 (Microsoft 365) 
-- NIST 800-78-4：个人身份验证身份验证加密算法和密钥 (Microsoft 365) 
-- NIST 800-137A - 评估 ISCM (ISCM) 的信息安全持续 (Microsoft 365) 
+- NIST 800-78-4：个人身份验证方法的加密算法和密钥 (Microsoft 365) 
+- NIST 800-137A - 评估 ISCM (计划) 持续 (Microsoft 365) 
 - [NIST 800-171](/compliance/regulatory/offering-nist-sp-800-171) (Microsoft 365) 
 - NIST 800-184：网络安全事件恢复指南 (Microsoft 365) 
 - [NIST CSF](/compliance/regulatory/offering-nist-csf) (Microsoft 365) 
 - NIST 隐私框架
 - NIST SP 1800-5 IT 资产管理 (Microsoft 365) 
-- NIST Special Publication 1800-1 Securing Electronic Health Records on Mobile Devices (Microsoft 365) 
+- NIST 特殊出版物 1800-1 保护移动设备上的电子运行状况 (Microsoft 365) 
 - NIST 特殊出版物 800-128 (Microsoft 365) 
 - NIST Special Publication 800-210： General Access Control Guidance for Cloud Systems (Microsoft 365) 
 - [萨班斯-奥克斯利法案](/compliance/regulatory/offering-sox)
 - [SEC 17-4 ()  (Microsoft 365) ](/compliance/regulatory/offering-sec-17a-4)
 - 美国隐私法案 (Microsoft 365) 
-- 美国 - 阐明合法合法使用 (云) 法案 (Microsoft 365) 
+- 美国 - 阐明合法合法使用 (云) 《 (Microsoft 365) 
 - 美国 - 委员会关于公共公司网络安全披露声明 (Microsoft 365) 
 - 美国 - 美国能源 (DOE) 协助国际原子能源活动 (Microsoft 365) 
-- [美国 - FERPA 家庭教育权利 (隐私) ](/compliance/regulatory/offering-ferpa)
+- [美国 - FERPA (家庭教育权和隐私) ](/compliance/regulatory/offering-ferpa)
 - 2014 年美国联邦信息安全现代化法案 (FISMA)  (Microsoft 365) 
-- 美国 - 保护并保护基础设施免受攻击法案 (Microsoft 365) 
+- 美国 - 保护并保护销毁设施免受攻击法案 (Microsoft 365) 
 
 ### <a name="us-states-and-territories"></a>美国国家和地区
 
 - Alabama - 策略 621：数据泄露通知 - 草稿 (Microsoft 365) 
-- 的保护州 - 第 48 章 - 个人信息保护法 (Microsoft 365) 
+- 州 - 第 48 章 - 个人信息保护法 (Microsoft 365) 
 - 州 - 安全系统中泄露 (Microsoft 365) 
 - Arkansas Code Title 4， Subtitle 7， Chapter 110， Personal Information Protection Act (Microsoft 365) 
 - 加州 - 邮政编码第 1798 节
@@ -187,14 +189,14 @@ ms.locfileid: "60700861"
 - 加利福尼亚 - SB-327 信息隐私：连接的设备 (Microsoft 365) 
 - 加州消费者信用报告机构法案 (Microsoft 365) 
 - Colorado Privacy Act (CPA)  (Microsoft 365) 
-- [加州消费者隐私法案 (CCPA)  (Microsoft 365) ](/compliance/regulatory/offering-ccpa)
+- [加州消费者隐私法案 (CCPA](/compliance/regulatory/offering-ccpa))  (Microsoft 365) 
 - 针对消费者数据隐私保护的 Colorado (Microsoft 365) 
-- Colorado 修订了条例，第 6-1-716 节，安全泄露 (Microsoft 365) 
+- Colorado 修订了条例，第 6-1-716 节，《安全泄露 (Microsoft 365) 
 - Connect一 - 显示和使用社会保险号码和个人信息 (Microsoft 365) 
-- Connect一般条例 - 州承包商接收机密信息的一般 (Microsoft 365) 
-- 连接信息安全计划以保护个人信息 (Microsoft 365) 
+- Connect一般条例 - 针对接收机密信息的州承包商的一般 (Microsoft 365) 
+- Connect一些信息安全计划，用于保护个人信息 (Microsoft 365) 
 - Connect一州法律 - 包含个人信息泄露的重新计算机化 (Microsoft 365) 
-- D.C. 第 16-237 号法律 - 消费者个人信息安全泄露通知法 (Microsoft 365) 
+- D.C. 第 16-237 号法律 - 消费者个人信息安全泄露通知 (Microsoft 365) 
 - Delaware - 学生数据隐私保护法案 (Microsoft 365) 
 - Delaware Computer Security Breaches- Commerce and Trade Subtitle II - 12B-100 to 12B-104
 - 州标题 XXXII，第 501 章，第 501.171 节，保密个人信息的安全 (Microsoft 365) 
@@ -202,23 +204,23 @@ ms.locfileid: "60700861"
 - 波多黎各个人信息泄露通知 (Microsoft 365) 
 - 太平洋 - 个人信息泄露第 487N 章
 - Idaho Identity Theft (Microsoft 365) 
-- 740 (740 ILCS 14/1) 生物识别信息隐私法案 (Microsoft 365) 
+- 美国 (740 ILCS 14/1) 生物识别信息隐私法案 (Microsoft 365) 
 - 《美国个人信息保护法》 (Microsoft 365) 
-- 安全漏洞泄露泄露泄露 (Microsoft 365) 
+- 违反安全条例的泄漏 (Microsoft 365) 
 - 州 - 学生个人信息保护法案 (Microsoft 365) 
 - 百万码。 标题 XVI。 第 715C 章。 个人信息安全泄露防护 (Microsoft 365) 
 - 州消费者信息、安全漏洞条例 (Microsoft 365) 
-- 奇特基数据泄露 (Microsoft 365) 
-- 该州数据库安全泄露通知法 (号法案。 382)  (Microsoft 365) 
+- 发生泄露数据泄露 (Microsoft 365) 
+- 该州数据库安全漏洞通知法 (号法案。 382)  (Microsoft 365) 
 - Maine - 保护在线消费者信息隐私法案
 - Maine - 个人数据传输风险 (Microsoft 365) 
 - 哥伦比亚省政府代码 - 政府机构保护 (Microsoft 365) 
 - 国家/地区个人信息保护法案 - 安全漏洞通知要求， (MICROSOFT 365) 
 - 该州学生数据隐私法案 (Microsoft 365) 
 - 剑桥州 - 201 CMR 17.00：保护居民个人信息的标准
-- 剑桥州数据泄露通知法 93H 第 1-6 节 (Microsoft 365) 
-- 《美国标识盗窃保护法 (Microsoft 365) 
-- 美国安全与安全与 (Microsoft 365) 
+- 剑桥州数据泄露通知法 93H 1-6 (Microsoft 365) 
+- 《美国标识盗窃保护法》 (Microsoft 365) 
+- 美国安全与 (Microsoft 365) 
 - Montana - 身份盗窃 (Microsoft 365) 
 - Nebraska 的数据保护和消费者数据安全泄露通知法 (Microsoft 365) 
 - 第 603A 章 - 个人信息的安全和隐私 (Microsoft 365) 
@@ -229,25 +231,25 @@ ms.locfileid: "60700861"
 - 新墨西哥消费者信息隐私法案 (Microsoft 365) 
 - 《新墨西哥数据泄露通知法》 (Microsoft 365) 
 - 纽约 - 23 NYCRR 第 500 (Microsoft 365) 
-- 纽约市管理代码 - 安全漏洞通知 (Microsoft 365) 
+- 纽约市管理代码 - 安全漏洞 (Microsoft 365) 
 - 纽约一般商业法 - 数据安全泄露通知和数据保护 (Microsoft 365) 
 - 纽约隐私法案 - 草稿 (Microsoft 365) 
 - 北美 - 身份盗窃保护法案 (Microsoft 365) 
 - North Dakota Chapter 51-30 Notice of Security Breach for Personal Information (Microsoft 365) 
 - 州 - 安全漏洞通知 (Microsoft 365) 
 - 2018 年《美国数据保护法》 (Microsoft 365) 
-- 2016 年 12 月 30 日《 (Microsoft 365) 
+- 《 (Microsoft 365) 
 - Oregon 消费者标识盗窃信息保护法案 (Microsoft 365) 
 - 《泄露个人信息通知法》 (Microsoft 365) 
 - 波多黎各 - 关于数据银行安全法案 (Microsoft 365) 
 - 太平洋岛 - 身份盗窃保护法案 (Microsoft 365) 
 - 南部州 - 泄露 (Microsoft 365) 
 - 南达库塔 - 泄露 (Microsoft 365) 
-- 47-18-2107 年 4 月 4 日版个人消费者信息 (Microsoft 365) 
+- 47-18-2107 年 4 月 18 日发布的个人消费者信息 (Microsoft 365) 
 - 德克萨斯州 - 身份盗窃强制执行和保护法 (Microsoft 365) 
 - 德克萨斯州保护社会保险号码隐私策略 (Microsoft 365) 
 - Cit Consumer Credit Protection Act (Microsoft 365) 
-- 一个电子信息或数据隐私 (Microsoft 365) 
+- 一个电子信息或数据 (Microsoft 365) 
 - 顶点 - 关于数据隐私和消费者保护法 (Microsoft 365) 
 - 《个人信息泄露法》 (Microsoft 365) 
 - Cdn Consumer Data Privacy Act (CDPA)  (Microsoft 365) 
@@ -257,7 +259,7 @@ ms.locfileid: "60700861"
 
 ### <a name="regional"></a>区域
 
-#### <a name="asia-pacific-countries"></a>Asia-Pacific国家/地区
+#### <a name="asia-pacific-countries"></a>Asia-Pacific 国家/地区
 
 - 亚太地区经济合作 () 隐私框架
 - 澳大利亚 - ASD Essential 8 (Microsoft 365) 
@@ -272,20 +274,20 @@ ms.locfileid: "60700861"
 - 澳大利亚能源部门网络安全框架 (AESCSF)  (Microsoft 365) 
 - [澳大利亚信息安全注册评估员计划 (IRAP) 版本 3](/compliance/regulatory/offering-ccsl-irap-australia) (Microsoft 365) 
 - [澳大利亚审慎监管局 CPS](/compliance/regulatory/offering-apra-australia) (Microsoft 365) 
-- VpDSS 2.0 (保护数据安全标准 V2.0)  (Microsoft 365) 
-- 澳大利亚政府信息管理标准 - 澳大利亚国家 (NAA)  (Microsoft 365) 
+- VpDSS 2.0 (保护数据安全标准 v2.0)  (Microsoft 365) 
+- 澳大利亚政府信息管理标准 - 澳大利亚国家存档 (NAA)  (Microsoft 365) 
 - 中国 - 个人信息安全规范 (Microsoft 365) 
 - 中华人民共和国网络安全法 (Microsoft 365) 
 - 香港特别行政区 - 个人数据 (隐私) 隐私 (Microsoft 365) 
-- 印度信息技术 (合理安全实践和程序以及敏感个人数据或) 规则
+- 印度信息技术 (合理安全实践和程序以及敏感个人数据或信息) 规则
 - 印度 - 信息技术法案 (Microsoft 365) 
-- [印度银行网络安全](/compliance/regulatory/offering-rbi-irdai-india)框架 (Microsoft 365) 
-- 印度尼西亚 - 2008 年 11 月 11 (Microsoft 365) 
+- [印度银行网络安全框架](/compliance/regulatory/offering-rbi-irdai-india) (Microsoft 365) 
+- 印度尼西亚 - 法律 11/2008 (Microsoft 365) 
 - 日本 - 禁止未经授权的计算机访问 (Microsoft 365) 
 - 日本 - 政府机构和相关机构信息安全措施通用 (Microsoft 365) 
 - 日本 - 针对政府机构和相关机构的信息安全措施通用 (Microsoft 365) 
 - 日本隐私标记 - JIS Q 15001 ： 2017 (Microsoft 365) 
-- 日本《个人信息保护法 (法》 2003 年 5 月 57)  (Microsoft 365) 
+- 日本《个人信息保护法 (法》 2003 年 5 月 57 日)  (Microsoft 365) 
 - 韩国 - 信用信息使用和保护法 (Microsoft 365) 
 - 韩国 - 促进信息和通信网络利用和数据保护 (Microsoft 365) 
 - 韩国个人信息保护法案 (Microsoft 365) 
@@ -293,7 +295,7 @@ ms.locfileid: "60700861"
 - RMiT 技术与 (的马来西亚)  (Microsoft 365) 
 - 缅甸 - 保护公民隐私和安全的法律
 - 尼泊尔 - 信息权利法案
-- 新西兰 - 2020 年隐私法 (Microsoft 365) 
+- 新西兰 - 2020 年隐私法案 (Microsoft 365) 
 - 新西兰 - 公共记录法案 (Microsoft 365) 
 - 新西兰 - 保留银行 BS11 外包策略 (Microsoft 365) 
 - 新西兰 - 电信信息隐私 (Microsoft 365) 
@@ -309,17 +311,17 @@ ms.locfileid: "60700861"
 - 新加坡 - 网络安全 2018 (Microsoft 365) 
 - 新加坡 - IMDA IoT 网络安全指南 (Microsoft 365) 
 - 新加坡 - 新加坡金融管理局技术风险管理框架 (Microsoft 365) 
-- [新加坡 - MTCS (标准) 多层云](/compliance/regulatory/offering-mtcs-singapore) (Microsoft 365) 
-- 新加坡 - 2012 年 10 月个人数据保护 (Microsoft 365) 
+- [新加坡 - MTCS 标准 (层) 云](/compliance/regulatory/offering-mtcs-singapore) (Microsoft 365) 
+- 新加坡 - 2012 年《个人数据保护法》/2012 (Microsoft 365) 
 - 新加坡垃圾邮件控制法案 (Microsoft 365) 
-- 台湾 - 2015 年电子金融机构内部审核和内部控制系统实施 (Microsoft 365) 
+- 台湾 - 2015 年电子金融机构内部审核和内部控制系统 (Microsoft 365) 
 - 台湾 - 金融保险公司和银行的内部审核和内部控制系统实施规则
 - 台湾 - 监管批准和管理涉及银行间资金转移和结算结算的金融服务 (Microsoft 365) 
 - 台湾 - 监管信息系统标准和电子付款机构安全管理 (Microsoft 365) 
 - PDPA (中国台湾个人数据)  (Microsoft 365) 
 - 泰国 PDPA (Microsoft 365) 
 - 中华人民共和国《商业秘密法 (Microsoft 365) 
-- 乌兹别克斯坦共和国个人数据保护法 (Microsoft 365) 
+- 乌兹别克斯坦共和国关于个人数据 (Microsoft 365) 
 - 越南 - 消费者权利保护法 (Microsoft 365) 
 - 越南 - 网络安全法 (Microsoft 365) 
 - 越南 - 网络安全法
@@ -331,7 +333,7 @@ ms.locfileid: "60700861"
 - 澳大利亚电信法案 2003 (Microsoft 365) 
 - 亚美尼亚 - 亚美尼亚共和国保护个人数据法 (Microsoft 365) 
 - 白俄罗斯信息、信息化和信息保护法 (Microsoft 365) 
-- 比利时 - 关于处理个人数据保护的《保护自然人 (Microsoft 365) 
+- 比利时 - 关于保护自然人处理个人数据法 (Microsoft 365) 
 - [比利时 NBB 2015 年 12](/compliance/regulatory/offering-nbb-fsma-belgium)月 (Microsoft 365) 
 - 波斯尼亚和黑塞哥维那保护个人数据法
 - 博茨瓦纳 - 数据保护法案 (Microsoft 365) 
@@ -339,8 +341,8 @@ ms.locfileid: "60700861"
 - 科威特中央银行网络安全框架 (Microsoft 365) 
 - 塞浦路斯处理个人数据法 (Microsoft 365) 
 - 捷克语 - 第 1 号法案。 110/2019 Coll. on Personal Data Processing - 2019 (Microsoft 365) 
-- 捷克语 - 关于网络安全和相关法案 (-《网络安全法) - 第 10 号法案。 181 (Microsoft 365) 
-- 丹麦 -《数据保护法 (Microsoft 365) 
+- 捷克语 - 关于网络安全和更改相关 (网络安全法 -) - 法案。 181 (Microsoft 365) 
+- 丹麦 -《数据保护法》 (Microsoft 365) 
 - 丹麦 - 在终端设备中存储和访问信息时所需信息和同意End-User命令
 - 欧洲欧盟和欧盟委员会第 2013/40/eu (Microsoft 365) 
 - 阿拉伯联合酋长国 - 健康数据保护 (Microsoft 365) 
@@ -360,10 +362,10 @@ ms.locfileid: "60700861"
 - 德国 - 风险管理最低要求注释文本 (Microsoft 365) 
 - [德国 - 云计算合规性控制目录 (C5)  (Microsoft 365) ](/compliance/regulatory/offering-c5-germany)
 - 德国 - 联邦数据保护法案 (Microsoft 365) 
-- 德国 - 金融机构 IT 部门监管要求 (使用，)  (MICROSOFT 365) 
+- 德国 - 金融机构和 FINANCIALT (IT 的监管)  (Microsoft 365) 
 - 加纳 - 数据保护法案 (Microsoft 365) 
 - 爱尔兰数据保护法案 (Microsoft 365) 
-- 以色列 - 隐私保护 (数据传输到数据库违反) 法规 (Microsoft 365) 
+- 以色列 - 隐私保护 (数据传输到数据库违反《) 条例 (Microsoft 365) 
 - 以色列隐私法 (Microsoft 365) 
 - 约旦云平台&服务策略 (Microsoft 365) 
 - 肯尼亚数据保护法案 (Microsoft 365) 
@@ -377,14 +379,14 @@ ms.locfileid: "60700861"
 - 卡塔尔云安全策略
 - 罗马尼亚 - 数据保护法 190/2018 (Microsoft 365) 
 - 俄罗斯 - 关于信息、信息技术和信息安全的联邦法律 149-FZ
-- [有关个人数据保护的](/compliance/regulatory/offering-russia-data-localization) (Microsoft 365) 
-- 南非消费者保护法案 68 2008 (Microsoft 365) 
+- [有关个人数据数据的俄语联邦](/compliance/regulatory/offering-russia-data-localization) (Microsoft 365) 
+- 南非消费者保护法案 2008 年 68 (Microsoft 365) 
 - 2002 年《南非电子通信和交易法 (Microsoft 365) 
 - 南非 - 促进信息访问法 (Microsoft 365) 
 - 南非 POPIA (Microsoft 365) 
 - 关于保护个人数据保护的斯洛伐克 (Microsoft 365) 
-- 西班牙 - 国家/地区安全 (Microsoft 365) 
-- 瑞士 - 联邦数据保护法案 (FADP)  (Microsoft 365) 
+- 西班牙 - 国家/地区安全框架 (Microsoft 365) 
+- 瑞士 - 联邦数据保护法 (FADP)  (Microsoft 365) 
 - 土耳其 - KVKK 保护个人数据 6698 (Microsoft 365) 
 - 阿拉伯联合酋长国 - 防止网络犯罪的法律 (Microsoft 365) 
 - 阿拉伯联合酋长国 - 关于电子交易和商业的联邦法律
@@ -394,7 +396,7 @@ ms.locfileid: "60700861"
 - 阿拉伯联合酋长国联邦法律监管电信部门 (Microsoft 365) 
 - 肯尼亚 -《数据保护和隐私法》 (Microsoft 365) 
 - 英国 - 适用于供应商 Standard 05-138 (Microsoft 365) 
-- 英国 - 2011 年 10 月《中国 (Microsoft 365) 
+- 英国 - 2011 年 10 月《国家/地区 (Microsoft 365) 
 - [英国网络 (Microsoft 365) ](/compliance/regulatory/offering-cyber-essentials-plus-uk)
 - 英国数据保护法案 (Microsoft 365) 
 - 英国数据保留法案 (Microsoft 365) 
@@ -432,5 +434,5 @@ ms.locfileid: "60700861"
 - 巴西 - 《一般数据保护法》 (LGPD)  (Microsoft 365) 
 - 哥伦比亚 - 法律第 2004 1377/2013 (Microsoft 365) 
 - 哥伦比亚 - 2018 年 7 月外部 (Microsoft 365) 
-- 哥伦比亚 - 法律 1266/2008- Habeas data Act (Microsoft 365) 
+- 哥伦比亚 - 法律 1266/2008- Habeas data act (Microsoft 365) 
 - 秘鲁法律 29733 数据隐私保护法

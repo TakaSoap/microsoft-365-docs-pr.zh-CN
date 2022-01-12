@@ -18,16 +18,15 @@ ms.collection:
 description: 管理员可以了解如何使用欺骗智能策略和欺骗智能见解来允许或阻止检测到的欺骗发件人。
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b1509a83b47b4f23ab5f99ba752b231479985269
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: bd0d5a97a917cb6f04957b078980d1a495a54795
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373820"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872077"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>使用 EOP 中的欺骗智能策略和欺骗智能见解管理欺骗发件人
 
@@ -38,18 +37,17 @@ ms.locfileid: "61373820"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> 本文介绍在"反垃圾邮件策略"页上的"反垃圾邮件策略" (替换的旧版欺骗发件人管理) 。  有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
+> 本文介绍在"反垃圾邮件策略"页上 (欺骗智能策略替换的旧版欺骗发件人管理) 。   有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
 
-在 Microsoft 365 组织中，在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱，自 2018 年 10 日起，入站电子邮件将自动防止 EOP 欺骗。 EOP **使用欺骗智能** 作为组织防御网络钓鱼的整体防御的一部分。 有关详细信息，请参阅 [EOP 中的反欺骗保护](anti-spoofing-protection.md)。
+在 Microsoft 365 组织中，在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱，自 2018 年 10 日起，入站电子邮件将自动受到 EOP 的欺骗保护。 EOP **使用欺骗智能** 作为组织防御网络钓鱼的整体防御的一部分。 有关详细信息，请参阅 [EOP 中的反欺骗保护](anti-spoofing-protection.md)。
 
-默认 (仅) 欺骗智能策略有助于确保合法发件人发送的欺骗性电子邮件不会在 EOP 垃圾邮件筛选器中被发现，同时保护用户免受垃圾邮件或网络钓鱼攻击。 您还可以使用欺骗智能见解快速确定哪些外部发件人从未通过 SPF、DKIM 或 DMARC 检查的域合法地向您发送未经身份验证 (电子邮件) 。
+默认 (仅) 欺骗智能策略有助于确保合法发件人发送的欺骗性电子邮件不会在 EOP 垃圾邮件筛选器中被发现，同时保护用户免受垃圾邮件或网络钓鱼攻击。 您还可以使用欺骗智能见解快速确定哪些外部发件人从未通过 SPF、DKIM 或 DMARC 检查的域合法地向您发送未经身份验证的电子邮件 (邮件) 。
 
 您可以在 Microsoft 365 Defender 门户中或在 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织管理欺骗智能;适用于没有邮箱的组织的独立 EOP PowerShell Exchange Online mailboxes) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 访问 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> 以打开 Microsoft 365 Defender 门户。
-  - 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
+- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -83,9 +81,9 @@ ms.locfileid: "61373820"
 ### <a name="manage-spoofed-senders-in-the-spoof-intelligence-policy"></a>管理欺骗智能策略中的欺骗发件人
 
 > [!IMPORTANT]
-> 本文介绍在"反垃圾邮件策略"页上的"反垃圾邮件策略" (替换的旧版欺骗发件人管理) 。  有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
+> 本文介绍在"反垃圾邮件策略"页上 (欺骗智能策略替换的旧版欺骗发件人管理) 。   有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户的 <https://security.microsofot.com> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
 
 2. 在 **"反垃圾邮件策略"** 页上 **，通过单击** 名称选择"欺骗智能策略"。
 
@@ -107,7 +105,7 @@ ms.locfileid: "61373820"
 
    您看到的列和值如下列表所示：
 
-   - **欺骗用户**：被欺骗的用户帐户。 这是"发件人"地址 (也称为电子邮件 `5322.From`) 中显示的地址发件人。 SPF 不检查此地址的有效性。
+   - **欺骗用户**：被欺骗的用户帐户。 这是"发件人"地址 (也称为电子邮件 `5322.From`) 中显示的地址。 SPF 不检查此地址的有效性。
      - 在 **"你的域** "选项卡上，值包含一个电子邮件地址，或者，如果源电子邮件服务器欺骗多个用户帐户，则它包含 **多个**。
      - 在 **"外部域** "选项卡上，值包含欺骗用户的域，而不是完整的电子邮件地址。
 
@@ -128,16 +126,16 @@ ms.locfileid: "61373820"
 
    - **允许欺骗？：** 你在此处看到的值是：
      - **是**：允许来自欺骗用户和发送基础结构组合的邮件，并且不会被视为欺骗电子邮件。
-     - **否**：来自欺骗用户和发送基础结构组合的邮件被标记为欺骗邮件。 该操作由默认反网络钓鱼策略或自定义防钓鱼策略控制 (默认值为"将邮件移动到垃圾邮件文件夹") 。  有关详细信息，请参阅下一节。
+     - **否**：来自欺骗用户和发送基础结构组合的邮件被标记为欺骗邮件。 该操作由默认的防钓鱼策略或自定义防钓鱼策略控制， (默认值为"将邮件移动到垃圾邮件文件夹") 。  有关详细信息，请参阅下一节。
 
-     - **某些用户** (你的域"选项卡) ：发送基础结构是欺骗多个用户，其中允许一些欺骗用户，另一些不允许。 使用 **"详细** "选项卡查看特定地址。
+     - **某些用户** (你的域"选项卡) ：发送基础结构是欺骗多个用户，其中一些欺骗用户是允许的，另一些则不允许。 使用 **"详细** "选项卡查看特定地址。
 
 6. 完成后，单击“**保存**”。
 
 #### <a name="use-powershell-to-manage-spoofed-senders"></a>使用 PowerShell 管理欺骗性发件人
 
 > [!IMPORTANT]
-> 本文介绍在"反垃圾邮件策略"页上的"反垃圾邮件策略" (替换的旧版欺骗发件人管理) 。  有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
+> 本文介绍在"反垃圾邮件策略"页上 (欺骗智能策略替换的旧版欺骗发件人管理) 。   有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
 
 若要查看欺骗智能中允许和阻止的发件人，请使用以下语法：
 
@@ -162,7 +160,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
    ```
 
 2. 编辑 CSV 文件以添加或修改以下值：
-   - **源** (PTR 记录或 IP/24 地址记录中的发件人) 
+   - **发件人** (源服务器的 PTR 记录或 IP/24 地址记录中的) 
    - **SpoofedUser：** 下列值之一：
      - 内部用户的电子邮件地址。
      - 外部用户的电子邮件域。
@@ -187,9 +185,9 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 ### <a name="manage-spoofed-senders-in-the-spoof-intelligence-insight"></a>在欺骗智能见解中管理欺骗发件人
 
 > [!IMPORTANT]
-> 本文介绍在"反垃圾邮件策略"页上的"反垃圾邮件策略" (替换的旧版欺骗发件人管理) 。  有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
+> 本文介绍在"反垃圾邮件策略"页上 (欺骗智能策略替换的旧版欺骗发件人管理) 。   有关租户允许/阻止列表 (中的"欺骗"选项卡) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)。
 
-1. 在安全与&中心中，转到"**威胁管理仪表板** \> **"。**
+1. 在安全与&中心，转到"**威胁管理仪表板** \> **"。**
 
 2. 在 **Insights** 行中，查找下列项目之一：
 
@@ -223,7 +221,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
    - **欺骗类型**：此值为 **External**。
    - **允许欺骗？：** 你在此处看到的值是：
      - **是**：允许来自欺骗用户域和发送基础结构组合的邮件，且不会被视为欺骗电子邮件。
-     - **否**：来自欺骗用户域和发送基础结构组合的邮件被标记为欺骗邮件。 该操作由默认反网络钓鱼策略或自定义防钓鱼策略控制 (默认值为"将邮件移动到垃圾邮件文件夹") 。 
+     - **否**：来自欺骗用户域和发送基础结构组合的邮件被标记为欺骗邮件。 该操作由默认的防钓鱼策略或自定义防钓鱼策略控制， (默认值为"将邮件移动到垃圾邮件文件夹") 。 
 
 2. 在列表中选择一个项目，在飞出视图中查看有关域/发送基础结构对的详细信息。 这些信息包括：
    - 我们为什么捕获到此。

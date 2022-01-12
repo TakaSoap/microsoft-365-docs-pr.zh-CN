@@ -1,7 +1,7 @@
 ---
 title: 尝试Microsoft 365 Defender环境中使用事件响应功能
 description: 在威胁检测中Microsoft 365 Defender事件响应功能，确定事件的优先级并管理事件、自动调查和使用高级搜寻。
-keywords: Microsoft 365 Defender试用版，请尝试Microsoft 365 Defender、评估Microsoft 365 Defender、Microsoft 365 Defender Microsoft 365 Defender 试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+keywords: Microsoft 365 Defender试用版，请尝试Microsoft 365 Defender、评估Microsoft 365 Defender、Microsoft 365 Defender评估实验室Microsoft 365 Defender 试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,24 +18,22 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0c4e3a2dbaeedc1ebf45e54d29217e9377dca247
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: d5e0dce11edc0c1179c77dbf23c4495507569652
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962767"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938188"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>尝试Microsoft 365 Defender环境中使用事件响应功能
 
 **适用于：**
 - Microsoft 365 Defender
 
-本文是使用试点环境对事件进行调查和响应的过程中第 2 步Microsoft 365 Defender [2](eval-defender-investigate-respond.md)步。 有关此过程详细信息，请参阅 [概述](eval-defender-investigate-respond.md) 文章。
+本文是使用试验环境对事件进行调查和响应的过程中第 2 步Microsoft 365 Defender [2](eval-defender-investigate-respond.md)步。 有关此过程详细信息，请参阅 [概述](eval-defender-investigate-respond.md) 文章。
 
 对模拟攻击[执行事件](eval-defender-investigate-respond-simulate-attack.md)响应后，下面是一些Microsoft 365 Defender功能：
 
@@ -108,7 +106,7 @@ ms.locfileid: "60962767"
 
 ## <a name="examine-automated-investigation-and-response-with-the-action-center"></a>使用操作中心检查自动调查和响应
 
-根据组织的自动调查和响应功能配置方式，自动执行修正操作，或仅在安全运营团队批准后执行修正操作。 所有操作（无论是挂起操作还是已完成操作）都列在操作[](m365d-action-center.md)中心中，其中列出了设备的挂起和已完成的修正操作、电子邮件&协作内容和一个位置中的标识。
+根据组织的自动调查和响应功能配置方式，自动执行修正操作，或仅在安全运营团队批准后执行修正操作。 所有操作（无论是挂起操作还是已完成操作）都列在操作[](m365d-action-center.md)中心中，其中列出了设备、电子邮件&协作内容和标识的挂起和已完成的修正操作。
 
 下面是一个示例。
 
@@ -118,7 +116,7 @@ ms.locfileid: "60962767"
 
 :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="批准或拒绝操作。":::
 
-尽快 (批准或拒绝) 挂起的操作，以便自动调查可以继续并及时完成。
+尽快 (批准或拒绝) 待处理操作，以便自动调查可以继续并及时完成。
 
 有关详细信息，请参阅自动[调查和响应](m365d-autoir.md)[以及操作中心](m365d-action-center.md)。
 
@@ -144,7 +142,7 @@ ms.locfileid: "60962767"
 1. 验证租户是否已启用[Microsoft 365 Defender。](m365d-enable.md#confirm-that-the-service-is-on)
 2. 确定用于接收电子邮件的目标邮箱。
 
-   - Microsoft Defender 必须监视此邮箱Office 365
+   - 此邮箱必须受 Microsoft Defender 监视，Office 365
 
    - 要求 3 中的设备需要访问此邮箱
 
@@ -212,7 +210,7 @@ ms.locfileid: "60962767"
    | where AttachmentCount > 0 and EmailDirection == "Inbound"
    ```
 
-5. 接下来，包括有关附件 (，例如：文件名、) 哈希结果集。 为此，请加入 **EmailAttachmentInfo** 表。 用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId**。
+5. 接下来，包含有关附件 (，例如：文件名、) 哈希结果集。 为此，请加入 **EmailAttachmentInfo** 表。 用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId**。
 
    以下查询还包括一个附加行"| **项目重命名 EmailTimestamp=Timestamp**"，有助于确定与电子邮件相关的时间戳与下一步将添加的文件操作相关的时间戳。
 

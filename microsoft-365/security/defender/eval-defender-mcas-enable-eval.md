@@ -1,6 +1,6 @@
 ---
 title: 为 Microsoft Defender for Cloud Apps 启用评估环境
-description: 了解 Microsoft Defender 中适用于云应用的 Defender 体系结构，Office 365并了解 Microsoft 365 Defender 之间的交互。
+description: 了解 Microsoft Defender 中适用于云应用的 Defender 体系结构Office 365并了解 Microsoft 365 Defender 产品之间的交互。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,16 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e62a87188eb3a092399ef03647a9c70318f37197
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 9d0418b2f183884793be3c2d8a72f571d0072a61
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61106535"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933140"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-cloud-apps"></a>为 Microsoft Defender for Cloud Apps 启用评估环境
 
@@ -39,7 +37,7 @@ ms.locfileid: "61106535"
 
 若要发现环境中使用的云应用，你可以执行以下一项或两项操作：
 
-- 与 Microsoft Defender for Endpoint 集成，快速启动并运行云发现。 通过此本机集成，你可以立即开始在网络内和Windows 10 Windows 11设备上收集云流量数据。
+- 与 Microsoft Defender for Endpoint 集成，快速启动并运行云发现。 此本机集成使你能够立即开始在网络内和Windows 10 Windows 11设备上收集云流量数据。
 - 若要发现连接到网络的所有设备访问的所有云应用，请在你的防火墙和其他代理上部署 Defender for Cloud Apps 日志收集器。 这将从终结点收集数据，并将其发送到 Defender for Cloud Apps 进行分析。 云应用的 Defender 在本机与一些第三方代理集成，实现更多功能。
 
 本文包括这两种方法的指南。
@@ -67,9 +65,9 @@ ms.locfileid: "61106535"
 
 ## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>步骤 2. 与 Microsoft Defender for Endpoint 集成
 
-Microsoft Defender for Cloud Apps 与 Microsoft Defender for Endpoint 本地集成。 集成简化了云发现的推出，将云发现功能扩展到企业网络之外，并启用基于设备的调查。 此集成显示从 IT 托管的设备和移动设备Windows 10 Windows 11服务。
+Microsoft Defender for Cloud Apps 与 Microsoft Defender for Endpoint 本地集成。 集成简化了云发现的推出，将云发现功能扩展到企业网络之外，并启用基于设备的调查。 此集成显示从 IT 托管的云应用和服务Windows 10和Windows 11访问。
 
-如果你已设置适用于终结点的 Microsoft Defender，则配置与 Defender for Cloud Apps 的集成是 Microsoft 365 Defender。 启用集成后，你可以返回到 Defender for Cloud Apps 门户，并查看云发现仪表板中的丰富数据。
+如果你已设置 Microsoft Defender for Endpoint，则配置与 Defender for Cloud Apps 的集成是应用中的Microsoft 365 Defender。 启用集成后，你可以返回到 Defender for Cloud Apps 门户，并查看云发现仪表板中的丰富数据。
 
 若要完成这些任务，请参阅[Microsoft Defender for Endpoint integration with Microsoft Defender for Cloud Apps。](/cloud-app-security/mde-integration)
 
@@ -79,7 +77,7 @@ Microsoft Defender for Cloud Apps 与 Microsoft Defender for Endpoint 本地集�
 
 要覆盖连接到网络的所有设备，请将 Defender for Cloud Apps 日志收集器部署到防火墙和其他代理上，以从终结点收集数据并将其发送到 Defender for Cloud Apps 进行分析。
 
-如果你使用 SWG 中的以下安全 Web 网关 (之一) ，则 Defender for Cloud Apps 将提供无缝部署和集成：
+如果你使用 SWG 中的以下安全 Web 网关 (，) Defender for Cloud Apps 提供无缝部署和集成：
 
 - Zscaler
 - iboss

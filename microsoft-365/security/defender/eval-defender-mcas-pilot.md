@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4b8293be5123ac57aefa3f8c5a5212e9fc8f1e95
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: cb3de75afef883743f3f5fd46c1a98fd5e1c7c10
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111047"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933034"
 ---
 # <a name="pilot-microsoft-defender-for-cloud-apps-with-microsoft-365-defender"></a>试用 Microsoft Defender for Cloud Apps with Microsoft 365 Defender
 
@@ -55,11 +53,11 @@ Microsoft Defender for Cloud Apps 使你能够确定你的部署范围。 通过
 
 可以配置的最强大保护之一是条件访问应用控制。 这需要与 Azure Active Directory (Azure AD) 。 它允许你将条件访问策略（包括相关策略 (如要求正常运行的设备) 已批准的云应用。 
 
-使用 Microsoft Defender for Cloud Apps 管理 SaaS 应用的第一步是发现它们，然后将它们添加到你的 Azure AD 租户。 如果需要发现帮助，请参阅 [发现和管理网络中 SaaS 应用](/cloud-app-security/tutorial-shadow-it)。 在发现应用后，将其添加到你的Azure AD[租户。](/azure/active-directory/manage-apps/add-application-portal)
+使用 Microsoft Defender for Cloud Apps 管理 SaaS 应用的第一步是发现它们，然后将它们添加到你的 Azure AD 租户。 如果需要发现帮助，请参阅 [发现和管理网络中 SaaS 应用](/cloud-app-security/tutorial-shadow-it)。 在发现应用后，将其添加到你的Azure AD[租户](/azure/active-directory/manage-apps/add-application-portal)。
 
 可以通过执行以下操作开始管理这些操作：
 
-- 首先，在Azure AD，创建新的条件访问策略，并配置为"使用条件访问应用控制"。 这会将请求重定向到 Defender for Cloud Apps。 你可以创建一个策略，并添加所有 SaaS 应用到此策略。
+- 首先，在Azure AD，创建新的条件访问策略，将其配置为"使用条件访问应用控制"。 这会将请求重定向到 Defender for Cloud Apps。 你可以创建一个策略，并添加所有 SaaS 应用到此策略。
 - 接下来，在 Defender for Cloud Apps 中，创建会话策略。 为要应用的每个控件创建一个策略。
 
 有关详细信息，包括受支持的应用和客户端，请参阅使用 [Microsoft Defender for Cloud Apps 条件访问应用控制保护应用](/cloud-app-security/proxy-intro-aad)。 

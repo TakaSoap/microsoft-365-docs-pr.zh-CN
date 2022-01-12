@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cc4ffb2d2a1c60c9c58be4f6f3fe7439f1aab074
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6efb9c53bbbcd0412ab55f35e02faf4d3595694e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167678"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61884163"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻击面减少规则疑难解答
 
@@ -45,7 +45,7 @@ ms.locfileid: "61167678"
 
 1. [确认先决条件](#confirm-prerequisites)
 2. [使用审核模式测试规则](#use-audit-mode-to-test-the-rule)
-3. [为指定规则添加针对误报 (](#add-exclusions-for-a-false-positive) 排除) 
+3. [为指定的误报规则 (](#add-exclusions-for-a-false-positive) 排除项) 
 4. [提交支持日志](#collect-diagnostic-data-for-file-submissions)
 
 ## <a name="confirm-prerequisites"></a>确认先决条件
@@ -64,11 +64,11 @@ ms.locfileid: "61167678"
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>使用审核模式测试规则
 
-你可以访问 demo.wd.microsoft.com 上的[Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)测试场网站，以确认攻击面减少规则通常适用于设备上预配置的方案和流程，或者可以使用审核模式（启用仅报告规则）。
+你可以访问 demo.wd.microsoft.com 上的[Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)测试场网站，以确认攻击面减少规则通常适用于设备上预配置的方案和进程，或者可以使用审核模式，该模式仅启用报告规则。
 
 按照使用演示 [工具中的以下说明查看攻击面](evaluate-attack-surface-reduction.md) 减少规则如何工作，以测试遇到问题的特定规则。
 
-1. 为要测试的特定规则启用审核模式。 使用组策略将规则设置为审核模式 (**值：2**) 启用 [攻击面减少规则中所述](enable-attack-surface-reduction.md)。 审核模式允许规则报告文件或进程，但仍允许它运行。
+1. 为要测试的特定规则启用审核模式。 使用组策略将规则设置为审核模式 (值 **：2**) 启用 [攻击面减少规则中所述](enable-attack-surface-reduction.md)。 审核模式允许规则报告文件或进程，但仍允许它运行。
 
 2. 执行导致问题的活动 (例如，打开或执行应阻止但允许阻止的文件或) 。
 
@@ -80,15 +80,15 @@ ms.locfileid: "61167678"
 
 如果你已使用演示工具和审核模式测试了规则，并且攻击面减少规则正在预配置的方案中运行，但规则未按预期工作，请根据你的情况继续执行以下任一部分：
 
-1. 如果攻击面减少规则阻止了它不应阻止 (也称为误报) ，你可以首先添加攻击面减少[规则排除 。](#add-exclusions-for-a-false-positive)
+1. 如果攻击面减少规则阻止了不应阻止的攻击 (也称为误报) ，你可以首先添加攻击面减少[规则排除 。](#add-exclusions-for-a-false-positive)
 
-2. 如果攻击面减少规则未阻止应阻止 (也称为漏报) ，你可以立即进入最后一步，收集诊断数据，将问题提交给 [我们](#collect-diagnostic-data-for-file-submissions)。
+2. 如果攻击面减少规则未阻止应阻止 (也称为漏报) ，你可以立即继续执行最后一步，收集诊断数据，将问题提交给 [我们](#collect-diagnostic-data-for-file-submissions)。
 
 ## <a name="add-exclusions-for-a-false-positive"></a>添加误报的排除项
 
 如果攻击面减少规则阻止不应阻止的内容 (也称为误报) ，你可以添加排除项以防止攻击面减少规则评估排除的文件或文件夹。
 
-若要添加排除项，请参阅 [自定义攻击面减少](customize-attack-surface-reduction.md)。
+若要添加排除项，请参阅 [自定义攻击面减少](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules)。
 
 > [!IMPORTANT]
 > 可以指定要排除的单个文件和文件夹，但不能指定单个规则。

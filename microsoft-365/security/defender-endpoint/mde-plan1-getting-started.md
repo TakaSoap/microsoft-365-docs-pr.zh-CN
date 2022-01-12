@@ -7,27 +7,27 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 24ad63d5f49154a8a167b90a08d7d838655dc65d
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: c2eb73b241bf49ef4f89598874a6648a3f9c8d70
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645078"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61891915"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender 终结点计划 1 入门
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-通过Microsoft 365 Defender门户 () 查看有关检测到的威胁的信息、管理警报和事件、对检测到的威胁采取任何所需操作以及 [https://security.microsoft.com](https://security.microsoft.com) 管理设备。 在Microsoft 365 Defender门户中，你可以开始与使用 Defender for Endpoint Plan 1 获取的威胁防护功能进行交互。 以下各节介绍如何开始：
+通过Microsoft 365 Defender门户 () 查看有关检测到的威胁的信息、管理警报和事件、对检测到的威胁采取任何所需操作以及 [https://security.microsoft.com](https://security.microsoft.com) 管理设备。 在Microsoft 365 Defender门户中，你可以开始与使用 Defender for Endpoint Plan 1 获取的威胁防护功能交互。 以下各节介绍如何开始：
 
 - [Microsoft 365 Defender 门户](#the-microsoft-365-defender-portal)
 - [查看和管理事件&警报](#view-and-manage-incidents--alerts)
@@ -36,14 +36,14 @@ ms.locfileid: "61645078"
 
 ## <a name="the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户
 
-Microsoft 365 Defender门户 () 查看警报、管理设备和 [https://security.microsoft.com](https://security.microsoft.com) 查看报告。 当你登录到 Microsoft 365 Defender 门户时，你将从主页开始，如下图所示：
+"Microsoft 365 Defender门户 () 是查看警报、管理设备和 [https://security.microsoft.com](https://security.microsoft.com) 查看报告的地方。 当你登录到 Microsoft 365 Defender门户时，你将从主页开始，如下图所示：
 
 :::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="Microsoft 365 Defender 门户":::
 
 主页为安全团队提供了警报、设备状态和检测到的威胁的快照聚合视图。 已设置 Defender for Cloud，以便你的安全运营团队可以快速轻松地找到他们正在寻找的信息。
 
 > [!NOTE]
-> 本文中所示的示例可能不同于你在应用程序门户Microsoft 365 Defender的内容。 在门户中看到的内容取决于许可证和权限。 此外，安全团队可以通过添加、删除和重新设置卡片来自定义组织的门户。
+> 本文中显示的示例可能不同于在门户门户Microsoft 365 Defender的内容。 在门户中看到的内容取决于许可证和权限。 此外，安全团队可以通过添加、删除和重新设置卡片来自定义组织的门户。
 
 ### <a name="cards-highlight-key-information-and-include-recommendations"></a>卡片突出显示关键信息并包括建议
 
@@ -75,14 +75,14 @@ Microsoft 365 Defender门户 () 查看警报、管理设备和 [https://security
 |  **终结点**  > **配置&基线**  > **配置管理** | 导航到 **"设备配置管理** "页，可在其中查看有关已载入设备的信息，并采取措施载入更多设备。 |
 | **报表** | 导航到报告， [如威胁防护](threat-protection-reports.md)报告、设备运行状况和合规性 [报告](machine-reports.md)以及 [Web 保护报告](web-protection-overview.md)。 |
 | **运行状况** | 包括指向服务 **运行状况和消息****中心的链接**。  |
-| **运行状况**  > **服务运行状况** | 导航到网站中的"服务运行状况"Microsoft 365 管理中心。 通过此页面，您可以查看组织订阅提供的所有服务的运行状况状态。   |
-| **运行状况**  > **消息中心** | 导航到邮件消息中心Microsoft 365 管理中心。 消息中心提供有关计划更改的信息。 每条消息都描述即将发生的变化、它可能会如何影响用户以及如何管理更改。 |  
-| **角色&权限** | 使您可以授予使用 Microsoft 365 Defender 门户的权限。 权限通过用户角色Azure Active Directory (Azure AD) 。 选择一个角色，将出现一个飞出窗格。 该飞出列表包含一个Azure AD，可在其中添加或删除角色组的成员。 <br/><br/> 若要了解更多信息，请参阅 [使用基于角色的访问控制管理门户访问](rbac.md)。  |
-| **设置** | 导航到"安全中心"Microsoft 365 Defender门户 ("安全中心") "适用于终结点的Defender" (列为 **终结点) 。** <br/><br/> 若要了解更多信息[，请参阅](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)设置。 |
+| **运行状况**  > **服务运行状况** | 导航到"服务运行状况"页中的Microsoft 365 管理中心。 通过此页面，您可以查看组织订阅提供的所有服务的运行状况状态。   |
+| **运行状况**  > **消息中心** | 导航到消息中心中的Microsoft 365 管理中心。 消息中心提供有关计划更改的信息。 每条消息都描述即将发生的变化、它可能会如何影响用户以及如何管理更改。 |  
+| **角色&权限** | 使您可以授予使用 Microsoft 365 Defender 门户的权限。 权限通过角色或角色Azure Active Directory (Azure AD) 。 选择一个角色，将出现一个飞出窗格。 该飞出包含一个Azure AD链接，可在其中添加或删除角色组的成员。 <br/><br/> 若要了解更多信息，请参阅 [使用基于角色的访问控制管理门户访问](rbac.md)。  |
+| **设置** | 导航到作为安全中心 (和 Defender for Endpoint) 列出的 Microsoft 365 Defender 门户的常规 (列为 **终结点) 。** <br/><br/> 若要了解更多信息[，请参阅](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)设置。 |
 | **更多资源** | 显示更多门户和中心的列表，如Azure Active Directory和Microsoft 365 合规中心。 <br/><br/> 若要了解更多信息，请参阅 [Microsoft 安全门户和管理中心](../defender/portals.md)。 |
 
 > [!TIP]
-> 若要了解更多信息，请参阅 Microsoft 365 Defender[门户概述](../defender/microsoft-365-security-center-mde.md)。
+> 若要了解更多信息，请参阅Microsoft 365 Defender[门户概述](../defender/microsoft-365-security-center-mde.md)。
 
 ## <a name="view-and-manage-incidents--alerts"></a>查看和管理事件&警报
 
@@ -135,13 +135,13 @@ Microsoft 365 Defender门户 () 查看警报、管理设备和 [https://security
 
 ### <a name="threat-protection-report"></a>威胁防护报告
 
-若要访问威胁防护报告，在 Microsoft 365 Defender门户中，选择"报告"，然后选择"**威胁防护"。**  威胁防护报告显示警报趋势、状态、类别等。 视图按两列排列： **警报趋势** 和 **警报状态**，如下图所示：
+若要访问威胁防护报告，在 Microsoft 365 Defender 门户中，选择"报告"，然后选择"**威胁防护"。** 威胁防护报告显示警报趋势、状态、类别等。 视图按两列排列： **警报趋势** 和 **警报状态**，如下图所示：
 
 :::image type="content" source="../../media/mde-p1/threat-protection-report.png" alt-text="威胁防护报告":::
 
 向下滚动以查看每个列表中的所有视图。
 
-- 默认情况下，"警报趋势"列中的视图显示过去 30 天的数据，但你可以设置视图以显示过去三个月、过去六个月或自定义时间范围的数据 (最多 180 天) 。
+- 默认情况下，"警报趋势"列中的视图显示过去 30 天的数据，但你可以设置视图以显示最近三个月、过去六个月或自定义时间范围的数据 (最多 180 天) 。
 - 警报状态 **列中的** 视图是前一个工作天的快照。
 
 > [!TIP]
@@ -149,18 +149,18 @@ Microsoft 365 Defender门户 () 查看警报、管理设备和 [https://security
 
 ### <a name="device-health-report"></a>设备运行状况报告
 
-若要访问设备运行状况报告，在Microsoft 365 Defender门户中，选择"报告"，然后选择"设备 **运行状况"。** 设备运行状况报告显示组织中各设备的运行状况状态和防病毒。 与威胁[防护报告类似](#threat-protection-report)，视图按两列排列：设备趋势和设备摘要，如下图所示：
+若要访问设备运行状况报告，在Microsoft 365 Defender门户中，选择"报告"，然后选择"设备 **运行状况"。**  设备运行状况报告显示组织中各设备的运行状况状态和防病毒。 与威胁[防护报告类似](#threat-protection-report)，视图按两列排列：设备趋势和设备摘要，如下图所示：
 
 :::image type="content" source="../../media/mde-p1/device-health-report.png" alt-text="设备运行状况报告":::
 
-向下滚动以查看每个列表中的所有视图。 默认情况下，"设备趋势"列中的视图显示过去 30 天的数据，但你可以更改视图以显示过去三个月、过去六个月或自定义时间范围的数据 (最多 180 天) 。 设备 **摘要视图** 是上一个工作天的快照。
+向下滚动以查看每个列表中的所有视图。 默认情况下，"设备趋势"列中的视图显示过去 30 天的数据，但你可以更改视图以显示最近三个月、过去六个月或自定义时间范围的数据 (最多 180 天) 。 设备 **摘要视图** 是上一个工作天的快照。
 
 > [!TIP]
 > 若要了解更多信息，请参阅 [设备运行状况](machine-reports.md)。
 
 ### <a name="web-protection-report"></a>Web 保护报告
 
-若要访问设备运行状况报告，在Microsoft 365 Defender门户中，选择"报告"，然后选择 **"Web 保护"。** Web 保护报告显示一段时间的检测，如恶意 URL 和尝试访问阻止的 URL，如下图所示：
+若要访问设备运行状况报告，在 Microsoft 365 Defender门户中，选择"报告"，然后选择 **"Web 保护"。** Web 保护报告显示一段时间的检测，如恶意 URL 和尝试访问阻止的 URL，如下图所示：
 
 :::image type="content" source="../../media/mde-p1/web-protection-report.png" alt-text="Web 保护报告":::
 

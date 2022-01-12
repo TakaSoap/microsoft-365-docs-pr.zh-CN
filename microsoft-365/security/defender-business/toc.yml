@@ -27,7 +27,7 @@
           href: mdb-onboard-devices.md
         - name: 步骤 5 - 配置安全设置
           href: mdb-configure-security-settings.md
-    - name: 开始行动
+    - name: 入门
       items:
         - name: 开始使用门户
           href: mdb-get-started.md
@@ -47,10 +47,8 @@
           href: mdb-reports.md
     - name: 管理设置和策略
       items:
-        - name: 查看和编辑策略
-          href: mdb-view-edit-policies.md
-        - name: 创建新策略
-          href: mdb-create-new-policy.md
+        - name: 查看、编辑和创建策略
+          href: mdb-view-edit-create-policies.md
         - name: 策略顺序
           href: mdb-policy-order.md
         - name: 创建设备组
@@ -65,7 +63,7 @@
       items:
         - name: 如何获取帮助或联系支持人员
           href: mdb-get-help.md
-        - name: 常见问题
+        - name: 常见问题解答
           href: mdb-faq.yml
         - name: 疑难解答
           href: mdb-troubleshooting.yml

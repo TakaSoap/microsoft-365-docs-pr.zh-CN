@@ -14,15 +14,14 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
-- m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 981e1839627bab05797ab413745b45416db053c9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a7a9673591f4d77197390541a58169a58b04fe91
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168782"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872425"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>在圈中部署 Microsoft Defender for Endpoint
 
@@ -105,12 +104,12 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 ### <a name="windows-endpoints"></a>Windows终结点
 
-对于 Windows 和/或 Windows 服务器，使用安全更新验证计划 ( (**SUVP**) 在修补) 星期二之前，选择要提前测试几台计算机。
+对于 Windows 和/或 Windows 服务器，通过使用安全更新验证计划 (**SUVP**) 在修补星期二)  (之前选择多台计算机进行测试。
 
 有关更多信息，请参阅：
 
 - [什么是安全更新验证计划](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
-- [软件更新验证计划与Microsoft 恶意软件防护中心 - TwC 交互式时间线第 4 部分](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
+- [软件更新验证计划与Microsoft 恶意软件防护中心 - TwC 互动时间线第 4 部分](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
 ### <a name="non-windows-endpoints"></a>非Windows终结点
 

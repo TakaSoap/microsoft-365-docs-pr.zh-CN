@@ -21,20 +21,24 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何从社交媒体平台、即时消息平台和文档协作平台导入和存档第三方数据以Microsoft 365邮箱。
-ms.openlocfilehash: 787b4b5c48ec882692991b7c140761361f7d74d5
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: c96e1f6d1663fd932ceb7ffd56a727cb718f5d22
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645958"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61874084"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>存档第三方数据Microsoft 365
 
 Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入和存档到 Microsoft 365 组织中。 使用数据连接器在 Microsoft 365 中导入和存档第三方数据的一个主要好处是，您可以在导入数据后对这些数据应用各种 Microsoft 365 合规性解决方案。 这有助于确保组织的非 Microsoft 数据符合影响组织的法规和标准。
 
+观看此交互式指南，该指南演示如何创建数据连接器以存档第三方数据，以及将合规性解决方案导入到 Microsoft 365 后向数据应用合规性解决方案Microsoft 365。
+
+> [!VIDEO https://mslearn.cloudguides.com/guides/Archive%20data%20from%20non-Microsoft%20sources%20in%20Microsoft%20365]
+
 ## <a name="third-party-data-connectors"></a>第三方数据连接器
 
-The Microsoft 365 合规中心 provides native third-party data connectors from Microsoft to import data from various data sources， such as LinkedIn， Instant Bloomberg， and Twitter and data connectors that support the Insider risk management solution. 除了这些数据连接器之外，Microsoft 还与以下合作伙伴合作，在 Microsoft 365 合规中心 中提供更多第三Microsoft 365 合规中心。 贵组织与这些合作伙伴合作，在存档服务中创建相应的数据连接器Microsoft 365 合规中心。
+The Microsoft 365 合规中心 provides native third-party data connectors from Microsoft to import data from various data sources， such as LinkedIn， Instant Bloomberg， and Twitter and data connectors that support the Insider risk management solution. 除了这些数据连接器之外，Microsoft 还与以下合作伙伴合作，在 Microsoft 365 合规中心 中提供更多第三方数据Microsoft 365 合规中心。 贵组织与这些合作伙伴合作，在存档服务中创建相应的数据Microsoft 365 合规中心。
 
 - [百里达](#veritas-data-connectors)
 
@@ -44,13 +48,13 @@ The Microsoft 365 合规中心 provides native third-party data connectors from 
 
 - [CellTrust](#celltrust-data-connectors)
 
-以下各节中列出的第三方数据 (除用于 Microsoft 365 预览体验成员风险管理解决方案) 的 HR 数据和物理密码数据外）将导入到用户邮箱中。 支持Microsoft 365第三方数据的合规性解决方案将应用于存储数据的用户邮箱。
+以下各节中列出的第三方数据 (除用于 Microsoft 365 预览体验成员风险管理解决方案) 的 HR 数据和物理密码数据外）将导入到用户邮箱中。 支持Microsoft 365数据的合规性解决方案将应用于存储数据的用户邮箱。
 
 ### <a name="microsoft-data-connectors"></a>Microsoft 数据连接器
 
 下表列出了本机第三方数据连接器，这些连接器可用于Microsoft 365 合规中心。 该表还汇总了在导入并存档第三方数据之后可应用Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
 
-单击"第 **三** 方数据"列中的链接，转到有关为第三方数据列创建连接器的数据类型。
+单击"第 **三方数据** "列中的链接，转到有关为第三方数据列创建连接器的数据类型。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -71,7 +75,7 @@ The Microsoft 365 合规中心 provides native third-party data connectors from 
 
 本节中的表列出了与它合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
 
-在您将第三方数据存档到 Microsoft 365 中之前，您必须与用户一起为组织设置其 (*Merge1*) 存档服务。 有关详细信息，请单击"第三方数据"列中的链接，转到有关创建该连接器的分步说明数据类型。
+在您将第三方数据存档到 Microsoft 365 中之前，您必须与 Microsoft 365 一起为组织设置其名为 *Merge1* (的存档服务) 。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -136,7 +140,7 @@ TeleMessage 数据连接器还可用于美国政府GCC环境中Microsoft 365环�
 
 在 Microsoft 365 中存档第三方数据之前，您必须使用 17a-4 LLC 为组织设置其存档服务 (*DataParser*) 。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
 
-17a-4 数据连接器还可用于美国政府GCC云中的Microsoft 365环境中。 有关详细信息，请参阅本文 [中的](#data-connectors-in-the-us-government-cloud) 美国政府云数据连接器部分。
+17a-4 数据连接器也可在美国政府云GCC环境中Microsoft 365环境。 有关详细信息，请参阅本文 [中的](#data-connectors-in-the-us-government-cloud) 美国政府云数据连接器部分。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -175,31 +179,31 @@ CellTrust SL2 数据连接器还可用于美国政府GCC环境中Microsoft 365�
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>支持第三方数据的合规性解决方案概述
 
-以下各节介绍了合规性解决方案Microsoft 365帮助您管理上表中列出的第三方数据的一些内容。
+以下各节介绍一些Microsoft 365合规性解决方案可以帮助您管理上表中列出的第三方数据。
 
 ### <a name="litigation-hold"></a>诉讼保留
 
-将用户 [邮箱置于](create-a-litigation-hold.md) 诉讼保留以保留第三方数据。 创建保留时，您可以指定保留持续时间 *(* 也称为基于时间的保留) 以便删除和修改的第三方数据将保留指定的时间段，然后从邮箱中永久删除。 或者，您可以无限期地保留 (称为"无限期保留") 或删除诉讼保留。
+将用户 [邮箱置于](create-a-litigation-hold.md) 诉讼保留以保留第三方数据。 创建保留时，您可以指定保留持续时间 *(* 也称为基于时间的保留) 以便已删除和修改的第三方数据将保留一段指定时间，然后从邮箱中永久删除。 或者，您可以无限期保留 (称为") 保留"，或者一直保留到删除诉讼保留。
 
 ### <a name="ediscovery"></a>电子数据展示
 
-Microsoft 365中三个主要电子数据展示工具是内容搜索、核心电子数据展示Advanced eDiscovery。
+网站中的三个主要电子数据展示Microsoft 365内容搜索、核心电子数据展示和Advanced eDiscovery。
 
 - **[内容搜索](content-search.md)。** 您可以使用内容搜索工具在邮箱中搜索您导入的第三方数据。 您可以使用搜索查询和条件来缩小搜索结果范围，并导出搜索结果。
 
 - **[核心电子数据展示](get-started-core-ediscovery.md)。** 此工具基于基本搜索和导出功能构建，通过创建案例，您可以控制谁可以访问事例数据、将用户邮箱或与搜索条件匹配的邮箱内容置于保留状态。 这意味着您可以将电子数据展示保留置于导入到用户邮箱的第三方数据上。
 
-- **[Advanced eDiscovery](overview-ediscovery-20.md)。** 这一强大的工具通过让您向案例添加保管人、将保管人的数据置于保留状态，然后将保管人的第三方数据加载到审阅中以进一步分析（如主题和重复检测）来扩展核心电子数据展示的案例功能。 将第三方数据加载到审阅集后，可以查询并筛选数据以缩小结果集。
+- **[Advanced eDiscovery](overview-ediscovery-20.md)。** 这一强大的工具通过让您向案例添加保管人、将保管人的数据置于保留状态，然后将保管人的第三方数据加载到审阅中以进一步分析（如主题和重复检测）来扩展核心电子数据展示的案例功能。 将第三方数据加载到审阅集后，可以查询并筛选到较窄结果集。
 
    核心电子数据展示Advanced eDiscovery可让你管理可能与组织的法律或内部调查相关的第三方数据。
 
 ### <a name="retention-settings"></a>保留设置
 
-可以将 [保留策略应用于](retention.md) 用户邮箱，以在保留期到期后保留 (删除第三) 内容。 您还可以使用保留策略删除特定期限的第三方数据，或使用保留标签在第[](disposition.md)三方数据的保留期到期时触发处置评审。
+可以将保留策略应用于 [用户](retention.md) 邮箱以保留，然后在保留期到期 (删除第三) 内容。 您还可以使用保留策略删除特定期限的第三方数据，或使用保留标签在第[](disposition.md)三方数据的保留期到期时触发处置评审。
 
 ### <a name="records-management"></a>记录管理
 
-通过[记录](records-management.md)管理工具中的Microsoft 365，您可将第三方数据声明为记录。 这可以通过应用保留标签（将邮箱中第三方数据标记为记录）的用户手动完成。 或者，您可以通过标识第三方数据中的敏感信息、关键字或内容类型来自动应用保留标签。
+通过[记录管理](records-management.md)Microsoft 365，您可将第三方数据声明为记录。 这可以通过应用保留标签（将邮箱中第三方数据标记为记录）的用户手动完成。 或者，您可以通过标识第三方数据中的敏感信息、关键字或内容类型来自动应用保留标签。
 
 ### <a name="communication-compliance"></a>通信合规性
 
@@ -213,7 +217,7 @@ Microsoft 365中三个主要电子数据展示工具是内容搜索、核心电�
 
 使用数据连接器导入和存档用户邮箱中的第三方数据后，可以使用 Microsoft 365 电子数据展示工具搜索第三方数据。 您还可以使用电子数据展示工具创建与核心电子数据展示相关联的基于查询的保留，Advanced eDiscovery事例以保留第三方数据。 有关电子数据展示工具的更多信息，请参阅 Microsoft 365 中的[电子数据展示解决方案](ediscovery.md)。
 
-若要 (或保留) 使用数据连接器导入到用户邮箱的任何类型的第三方数据，可以使用以下搜索查询。 请确保将搜索范围确定为用户邮箱。
+若要搜索 (或将已导入) 连接器导入到用户邮箱的任何类型的第三方数据置于保留状态，可以使用以下搜索查询。 请确保将搜索范围确定为用户邮箱。
 
 ```powershell
 kind:externaldata
@@ -255,7 +259,7 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 | WhatsApp 存档器         | ipm.externaldata.whatsapparchiver* |
 |||
 
-*itemclass 属性的值* 不区分大小写。 通常，使用第三方名称（不含数据类型 (空格）后) 通配符 ( * ) 字符。
+*itemclass 属性的值* 不区分大小写。 通常，使用第三方名称（数据类型 (空格）后) 通配符 * ( * ) 字符。
 
 有关创建电子数据展示搜索查询的信息，请参阅关键字查询和电子数据展示 [的搜索条件](keyword-queries-and-search-conditions.md)。
 
@@ -263,33 +267,33 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 某些数据连接器在美国政府云中可用。 以下各节指示支持第三方数据连接器的特定政府环境。 有关美国政府云的信息，请参阅美国政府[Microsoft 365云](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy)。
 
-### <a name="veritas-data-connectors-in-the-us-government-cloud-preview"></a>美国政府云预览版中的 (数据连接器) 
+### <a name="veritas-data-connectors-in-the-us-government-cloud-preview"></a>美国政府云预览版中的 (数据) 
 
 |数据连接器  |GCC  |GCC 高  |DoD  |
 |:---------|:---------|:---------|:---------|
 |CellTrust| 是 | 否 | 否 |
 |MS SQL 上的 Cisco Jabber| 是 | 否 | 否 |
-|Oracle 上的 Cisco Jabber| 可访问 | 否 | 否 |
-|PostgreSQL 上的 Cisco Jabber| 可访问 | 否 | 否 |
+|Oracle 上的 Cisco Jabber| 是 | 否 | 否 |
+|PostgreSQL 上的 Cisco Jabber| 是 | 否 | 否 |
 |EML| 是 | 否 | 否 |
-|FX 连接| 可访问 | 否 | 否 |
-|Jive| 可访问 | 否 | 否 |
-|MS SQL 数据库| 可访问 | 否 | 否 |
-|Pivot| 可访问 | 否 | 否 |
+|FX 连接| 是 | 否 | 否 |
+|Jive| 是 | 否 | 否 |
+|MS SQL 数据库| 是 | 否 | 否 |
+|Pivot| 是 | 否 | 否 |
 |Redtail Speak| 是 | 否 | 否 |
 |Reuters Dealing| 是 | 否 | 否 |
 |Reuters Eikon| 是 | 否 | 否 |
 |Reuters FX| 是 | 否 | 否 |
 |RingCentral| 是 | 否 | 否 |
-|Salesforce Chatter| 可访问 | 否 | 否 |
-|ServiceNow| 可访问 | 否 | 否 |
-|Skype for Business| 可访问 | 否 | 否 |
-|可宽延时间电子数据展示| 可访问 | 否 | 否 |
-|Symphony| 可访问 | 否 | 否 |
-|文本分隔| 可访问 | 否 | 否 |
-|Twitter| 可访问 | 否 | 否 |
+|Salesforce Chatter| 是 | 否 | 否 |
+|ServiceNow| 是 | 否 | 否 |
+|Skype for Business| 是 | 否 | 否 |
+|可宽延时间电子数据展示| 是 | 否 | 否 |
+|Symphony| 是 | 否 | 否 |
+|文本分隔| 是 | 否 | 否 |
+|Twitter| 是 | 否 | 否 |
 |Webex Teams| 是 | 否 | 否 |
-|网页| 可访问 | 否 | 否 |
+|网页| 是 | 否 | 否 |
 |Workplace from Facebook| 是 | 否 | 否 |
 |XIP| 是 | 否 | 否 |
 |XSLT/XML| 是 | 否 | 否 |
@@ -305,8 +309,8 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 |Android 存档器 | 是 | 否 | 否 |
 |AT&T 短信/彩信网络存档程序 | 是 | 否 | 否 |
 |铃声短信/彩信网络存档程序 | 是 | 否 | 否 |
-|企业编号存档器 | 可访问 | 否 | 否 |
-|O2 SMS 和语音网络存档器 | 可访问         | 否 | 否 |
+|企业编号存档器 | 是 | 否 | 否 |
+|O2 SMS 和语音网络存档器 | 是         | 否 | 否 |
 |集成网络存档器 | 是         | 否 | 否 |
 |信号存档程序 | 是 | 否 | 否 |
 |Telegram 存档程序 | 是 | 否 | 否 |
@@ -320,14 +324,14 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 |数据连接器  |GCC  |GCC 高  |DoD  |
 |:---------|:---------|:---------|:---------|
-|BlackBerry DataParser | 可访问 | 否 | 否 |
-|Bloomberg DataParser  | 可访问 | 否 | 否 |
-|Cisco Jabber DataParser  | 可访问 | 否 | 否 |
+|BlackBerry DataParser | 是 | 否 | 否 |
+|Bloomberg DataParser  | 是 | 否 | 否 |
+|Cisco Jabber DataParser  | 是 | 否 | 否 |
 |Cisco Webex DataParser  | 是 | 否 | 否 |
 |FactSet DataParser  | 是 | 否 | 否 |
 |Fuze DataParser  | 是 | 否 | 否 |
-|FX Connect DataParser  | 可访问 | 否 | 否 |
-|ICE DataParser  | 可访问 | 否 | 否 |
+|FX Connect DataParser  | 是 | 否 | 否 |
+|ICE DataParser  | 是 | 否 | 否 |
 |InvestEdge DataParser  | 是 | 否 | 否 |
 |LivePerson 对话云 DataParser  | 是 | 否 | 否 |
 |Quip DataParser  | 是 | 否 | 否 |

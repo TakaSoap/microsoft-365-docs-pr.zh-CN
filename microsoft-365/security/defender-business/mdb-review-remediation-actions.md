@@ -1,5 +1,5 @@
 ---
-title: '查看 Microsoft Defender for Business 预览版中的 (修正) '
+title: '查看 Microsoft Defender for Business 预览版 (修正) '
 description: 查看自动采取的修正或在操作中心等待审批的修正
 search.appverid: MET150
 author: denisebmsft
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 0b71088421b71f117eff4521eee1d8f5ef87971a
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: c67746803c9b094b6a87d9b0ab6273b883ce4cd1
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507376"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936338"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>查看操作中心中的修正操作
 
@@ -39,6 +39,11 @@ ms.locfileid: "61507376"
 - [如何使用操作中心](#how-to-use-the-action-center)
 - [修正操作](#remediation-actions)
 
+>
+> **有空吗？**
+> 请参加有关 <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business 的简短调查</a>。 我们非常乐意听取你的宝贵意见！
+>
+
 ## <a name="how-to-use-the-action-center"></a>如何使用操作中心
 
 1. 转到 Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () ，然后登录。
@@ -51,11 +56,11 @@ ms.locfileid: "61507376"
 
 ## <a name="remediation-actions"></a>修正操作
 
-Microsoft Defender for Business (预览) 包括若干修正操作。 这些操作包括手动响应操作、自动调查后的操作和实时响应操作。
+Microsoft Defender for Business (预览) 包括一些修正操作。 这些操作包括手动响应操作、自动调查后的操作和实时响应操作。
 
 下表列出了可用的修正操作：
 
-| Source  | 操作  |
+| 源  | 操作  |
 |---------|---------|
 | [自动调查](../defender-endpoint/automated-investigations.md)      | - 隔离文件 <br/>- 删除注册表项 <br/>- 终止进程 <br/>- 停止服务 <br/>- 禁用驱动程序 <br/>- 删除计划任务        |
 | [手动响应操作](../defender-endpoint/respond-machine-alerts.md)   | - 运行防病毒扫描 <br/>- 隔离设备 <br/>- 停止和隔离 <br/>- 添加指示器以阻止或允许文件       |
@@ -63,6 +68,6 @@ Microsoft Defender for Business (预览) 包括若干修正操作。 这些操�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [在 Microsoft Defender for Business 预览版中响应 (缓解) ](mdb-respond-mitigate-threats.md)
+- [响应和缓解 Microsoft Defender for Business 预览版 (中) ](mdb-respond-mitigate-threats.md)
 
 - [在 Microsoft Defender for Business 预览版中 (设备) ](mdb-manage-devices.md)

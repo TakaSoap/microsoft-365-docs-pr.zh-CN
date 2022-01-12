@@ -8,18 +8,18 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: 使用此页面创建员工列表并管理员工详细信息，例如姓名、电话号码和电子邮件地址。
-ms.openlocfilehash: b76b3e647af6f43f1c8ad7364fe24c895dc86b45
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 0c9d376889d99ba9d689e30f4444f305fab22ad9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553972"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933667"
 ---
 # <a name="add-staff-to-bookings"></a>向 Bookings 添加员工
 
 Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（如姓名、电话号码和电子邮件地址）的地方。 您还可以在此处为每位员工设置工作时间。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 尽管 Bookings 是一项Microsoft 365功能，但并非所有员工成员都需要拥有Microsoft 365帐户。 所有员工都必须具有有效的电子邮件地址，以便他们可以接收预订和计划更改。
 
@@ -54,7 +54,7 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
 
     :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="来自 Bookings 的通知电子邮件。":::
 
-7. 如果希望 **Office 365员工日历中的忙**/闲信息通过 Bookings 影响预订服务的可用性，请选择"日历上的事件影响可用性"。
+7. 如果希望 **员工日历中的Office 365/** 忙信息通过 Bookings 影响预订服务的可用性，请选择"日历上的事件会影响可用性"。
 
     例如，如果员工有安排在星期三下午 3 点召开团队会议或个人约会，则 Bookings 将显示该员工无法在这一时间段预订。 该时间将在 Bookings 日历视图中显示为忙碌或暂定，如以下示例所示。
 
@@ -65,14 +65,14 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
 
 8. 选择 **"使用营业时间**"将员工的所有可预订时间设置为仅在"业务信息"页上的"营业时间"部分中设置的营业时间内。
 
-    通过取消选中此框，可以给员工提供自定义小时数，以进一步限制可以预订的时间。 这适用于以下情形：员工可能只能在星期二和星期三开会，或者将上午专用于一种类型的约会，以及安排其他类型的约会。
+    通过取消选中此框，可以给员工提供自定义小时数，以进一步限制可以预订的时间。 这适用于以下情形：员工只能在星期二和星期三开会，或者将上午专用于一种类型的约会，以及安排其他类型的约会。
 
     > [!NOTE]
-    > 在向服务分配员工时，只会显示添加到员工页面的前 31 名员工。
+    > 向服务分配员工时，将会出现添加到员工页面的前 100 名员工。
 
 ## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>使 Bookings 用户成为超级用户，而不将用户添加为 Bookings 中的 Staff
 
-你可能想要在 Bookings 中将人员添加到员工列表中，而不向客户或客户提供此人。 一旦使他们成为超级用户，他们将成为预订邮箱的管理员。 作为预订邮箱管理员的定义是拥有对预订邮箱的完全访问权限和发送权限。
+你可能想要在 Bookings 中将人员添加到员工列表中，而不向客户或客户提供。 一旦使他们成为超级用户，他们将成为预订邮箱的管理员。 作为预订邮箱管理员的定义是拥有对预订邮箱的完全访问权限和发送权限。
 
 > [!NOTE]
 > 这些步骤仅在所添加的用户尚未在 Bookings 中 **分配查看者** 角色时运行。
@@ -102,7 +102,7 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
 2. 然后运行此命令：
 
     ```powershell
-    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    Add-RecipientPermission -Identity "daycare@contoso.com" -Trustee "Allie Bellew" -AccessRights SendAs -Confirm:$false
     ```
 
 **Allie Bellew** 现在具有管理员访问权限，但在 Bookings 中不会显示为可预订员工。

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: e0058e5673b4a77942ff887ddb2b07dedd508172
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 32dbff60a37c31cdbfd492eb5d746a10d9b7a185
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167558"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934377"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "61167558"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)。
 
-高级 `DeviceAlertEvents` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关搜索中警报Microsoft Defender 安全中心。 使用此参考来构建从该表返回信息的查询。
+高级 `DeviceAlertEvents` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关搜索中警报Microsoft 365 Defender。 使用此参考来构建从该表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请参阅 [高级搜寻架构参考](advanced-hunting-schema-reference.md)。
 

@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 活动资源管理器通过查看和筛选用户对你的标记内容执行的操作来完善数据分类功能的功能。
-ms.openlocfilehash: 113fd3ec196ec6b16c49435e14ed213cd193e5db
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+description: 通过活动资源管理器，你可以查看和筛选用户对已标记内容采取的操作。
+ms.openlocfilehash: 73e0d135112d109370aa4f3cdc75d30a8ab087a3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264740"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61874036"
 ---
 # <a name="get-started-with-activity-explorer"></a>活动资源管理器入门
 
@@ -57,7 +57,26 @@ ms.locfileid: "60264740"
 
 ### <a name="permissions"></a>权限
 
- 若要获取对活动资源管理器选项卡的访问权限，必须为帐户显式分配这些角色组中任何一个的成员身份或明确授予该角色。
+必须为帐户显式分配其中任何一个角色组的成员身份或明确授予该角色。
+
+### <a name="roles-and-role-groups-in-preview"></a>预览版中的角色和角色组
+
+预览版中的角色和角色组可以进行测试以微调访问控制。
+
+下面是预览中Microsoft 信息保护 (MIP) 角色的列表。 若要详细了解它们，请参阅安全 [与合规&中的角色](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查人员
+- 信息保护读者
+
+下面是预览中的 MIP 角色组列表。 若要详细了解 ，请参阅安全与合规中心 [&组](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- 信息保护
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查人员
+- 信息保护读者
 
 <!--
 > [!IMPORTANT]
@@ -80,7 +99,7 @@ ms.locfileid: "60264740"
 
 活动资源管理器从多个活动源的审核日志中收集活动信息。 有关哪些标签活动可用于活动资源管理器的更多详细信息，请参阅活动资源管理器中可用的标签 [事件](data-classification-activity-explorer-available-events.md)。
 
- Office本机应用程序、Azure信息保护外接程序、SharePoint Online 中的敏感度标签活动和Exchange Online (标签的保留标签) 和OneDrive。 示例如下：
+ Office 本机应用程序、Azure 信息保护外接程序、SharePoint Online、Exchange Online (仅) 和 OneDrive 中的敏感度标签活动和保留标签活动。  示例如下：
 
 - 已应用的标签
 - 已更改（已升级、已降级或已删除）的标签
@@ -94,7 +113,7 @@ ms.locfileid: "60264740"
 - 已删除保护
 - 发现的文件 
 
-活动资源管理器还通过收集来自 Exchange Online、SharePoint Online、OneDrive、Teams 聊天和频道 (预览) 、本地 SharePoint 文件夹和库、本地文件共享和 Windows 10 设备的 **DLP** 策略匹配事件 **DLP (终结点数据丢失) 。** 设备中的一Windows 10事件包括文件：
+活动资源管理器还通过收集 **来自** Exchange Online、SharePoint Online、OneDrive、Teams 聊天和频道 (预览) 、本地 SharePoint 文件夹和库、本地文件共享和 Windows 10 设备的 DLP 策略匹配事件 **终结点数据丢失防护 (DLP)**。 设备中的一Windows 10事件包括文件：
 
 - deletions
 - creations
@@ -106,7 +125,7 @@ ms.locfileid: "60264740"
 - 复制到网络共享
 - 由不允许的应用访问 
 
-了解对敏感标记内容采取的操作的价值是，你可以看到已放置的控件（如数据丢失防护）是否有效。 [](dlp-learn-about-dlp.md) 如果无效，或者发现某项意外内容（如大量项目被标记为`highly confidential`并降级为`general`），则可管理各种策略并采取新操作来限制意外行为。
+了解对敏感标记内容采取的操作可帮助您查看已就位的控件（如数据丢失防护策略）是否有效。 [](dlp-learn-about-dlp.md) 如果无效，或者发现某项意外内容（如大量项目被标记为`highly confidential`并降级为`general`），则可管理各种策略并采取新操作来限制意外行为。
 
 > [!NOTE]
 > 活动资源管理器当前不监视 Exchange Online 的保留活动。

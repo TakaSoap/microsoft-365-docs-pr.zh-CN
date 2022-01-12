@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -17,25 +17,25 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: 了解如何收集 Microsoft 支持案例电子数据展示诊断信息。
-ms.openlocfilehash: 5c62aead0e21411cc2c5befd023f29a7a2403e06
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: cab21c71168119b27a478b99a19ad5693ffb678e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786346"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871703"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>收集电子数据展示诊断信息
 
 有时，当你打开与核心电子数据展示或电子数据展示相关的支持案例时，Microsoft 支持工程师需要有关Advanced eDiscovery。 本文提供有关如何收集诊断信息以帮助支持工程师调查和解决问题的指南。 通常，在 Microsoft 支持工程师要求你收集此信息之前，你无需收集此信息。
 
 > [!IMPORTANT]
-> 本文中所述的 cmdlet 和诊断信息的输出可能包括有关组织中诉讼或内部调查的敏感信息。 在将原始诊断信息发送到 Microsoft 支持之前，您应查看该信息，并修订任何敏感信息 (例如名称或其他有关诉讼或调查各方的信息，) 替换为 `XXXXXXX` 。 使用此方法还将向 Microsoft 支持工程师指示信息已修订。
+> 本文中所述的 cmdlet 和诊断信息的输出可能包括有关组织中诉讼或内部调查的敏感信息。 在将原始诊断信息发送到 Microsoft 支持之前，您应查看该信息，并修订任何敏感信息 (例如名称或其他有关诉讼或调查各方的信息) 替换为 `XXXXXXX` 。 使用此方法还将向 Microsoft 支持工程师指示信息已修订。
 
 ## <a name="collect-diagnostic-information-for-core-ediscovery"></a>收集核心电子数据展示的诊断信息
 
 收集核心电子数据展示的诊断信息基于 cmdlet，因此你必须使用安全&中心 PowerShell。 以下 PowerShell 示例将运行 cmdlet，然后将输出保存到指定的文本文件。 在大多数支持情况下，你只应运行这些命令之一。
 
-若要运行以下 cmdlet，[请连接到安全&中心 </span> PowerShell。](/powershell/exchange/connect-to-scc-powershell) 连接后，运行以下一个或多个命令，并确保使用实际的对象名称替换占位符。
+若要运行以下 cmdlet，[请连接到安全与&中心 PowerShell。 </span> ](/powershell/exchange/connect-to-scc-powershell) 连接后，运行以下一个或多个命令，并确保使用实际的对象名称替换占位符。
 
 查看生成的文本文件并修订敏感信息后，将其发送给处理你的案例的 Microsoft 支持工程师。
 
@@ -52,7 +52,7 @@ Get-ComplianceSearch "<Search name>" | FL > "ComplianceSearch.txt"
 
 ### <a name="collect-information-about-search-actions"></a>收集有关搜索操作的信息
 
-以下命令收集信息以调查预览、导出或清除与核心电子数据展示案例关联的内容搜索或搜索的结果时存在的问题。 可以通过单击"导出"选项卡上列出的导出来标识搜索 **操作** 的名称。若要标识预览和清除操作的名称，可以运行 **Get-ComplianceSearchAction** cmdlet 显示所有操作的列表。 搜索操作名称的格式通过追加 、 或 追加到相应搜索 `_Preview` `_Export` `_Purge` 的名称来构造。
+以下命令收集信息以调查预览、导出或清除与核心电子数据展示案例关联的内容搜索或搜索的结果时存在的问题。 可以通过单击"导出"选项卡上列出的导出来标识搜索 **操作** 的名称。若要标识预览和清除操作的名称，可以运行 **Get-ComplianceSearchAction** cmdlet 来显示所有操作的列表。 搜索操作名称的格式通过追加 、 或 追加到相应搜索 `_Preview` `_Export` `_Purge` 的名称来构造。
 
 ```powershell
 Get-ComplianceSearchAction "<Search action name>" | FL > "ComplianceSearchAction.txt"
@@ -68,7 +68,7 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 
 ### <a name="collect-all-case-information"></a>收集所有案例信息
 
-有时，Microsoft 支持需要哪些信息来调查你的问题并不明显。 在这种情况下，你可以收集核心电子数据展示案例的所有诊断信息。 以下 *命令* 中的核心电子数据展示案例名称与在"核心电子数据展示"页上显示Microsoft 365 合规中心。 
+有时，Microsoft 支持需要哪些信息来调查你的问题并不明显。 在这种情况下，你可以收集核心电子数据展示案例的所有诊断信息。 以下 *命令* 中的核心电子数据展示案例名称与显示在"核心电子数据展示"页上的"核心电子数据展示"页上的Microsoft 365 合规中心。
 
 ```powershell
 Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
@@ -88,6 +88,6 @@ Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-C
 
 5. 在文本框中 (文本文件记事本) ，然后将信息粘贴到文本文件中。
 
-6. 保存文本文件并将其命名为类似 (`AeD Diagnostic Info YYYY.MM.DD` 例如 `AeD Diagnostic Info 2020.11.03` ，) 。
+6. 保存文本文件并将其命名为类似 `AeD Diagnostic Info YYYY.MM.DD` (，例如 `AeD Diagnostic Info 2020.11.03` ，) 。
 
 查看文件并修订敏感信息后，将其发送给处理你的案例的 Microsoft 支持工程师。

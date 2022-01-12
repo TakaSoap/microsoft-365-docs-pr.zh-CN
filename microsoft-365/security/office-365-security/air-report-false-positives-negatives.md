@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 0096cb5f8c0d878ecc888de74f1548c77ed0dda9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aaf3e052e29893f0584edd730cf80bd82c34257e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196641"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61882158"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自动调查和响应功能中报告误报/负面影响
 
@@ -37,10 +37,10 @@ ms.locfileid: "60196641"
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-如果[自动调查和响应 (AIR](automated-investigation-response-office.md)) 未Office 365检测错误，则安全运营团队可以采取一些措施来解决此问题。 此类操作包括：
+如果[自动调查和响应 (AIR) ](automated-investigation-response-office.md)中检测到Office 365或错误检测到某些内容，则安全运营团队可以采取一些措施来解决此问题。 此类操作包括：
 
 - [向 Microsoft 报告误报/负数](#report-a-false-positivenegative-to-microsoft-for-analysis);
-- [根据需要调整警报](#adjust-an-alert-to-prevent-false-positives-from-recurring) (调整) ;和
+- [根据需要调整 (](#adjust-an-alert-to-prevent-false-positives-from-recurring) 警报) ;和
 - [撤消已采取的修正操作](#undo-a-remediation-action)。
 
 使用本文作为指南。
@@ -53,9 +53,9 @@ ms.locfileid: "60196641"
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>调整警报以防止误报重复发生
 
-如果警报是由合法使用触发的，或者该警报不准确，可以在 云应用安全[门户中管理警报](/cloud-app-security/managing-alerts)。
+如果警报由合法使用触发，或者警报不准确，可以在 [Defender for Cloud Apps 门户](/cloud-app-security/managing-alerts)中管理警报。
 
-如果你的组织除 Office 365 外还使用[Microsoft Defender for Endpoint，](/windows/security/threat-protection)并且文件、IP 地址、URL 或域在设备上被视为恶意软件，即使安全，你可以为设备创建一个包含"允许"操作的自定义[指示器。](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
+如果你的组织除了使用 Office 365 之外还使用[Microsoft Defender for Endpoint，](/windows/security/threat-protection)并且文件、IP 地址、URL 或域在设备上被视为恶意软件，即使安全，也可以为设备创建包含"允许"操作的自定义[指示器。](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
 
 ## <a name="undo-a-remediation-action"></a>撤消修正操作
 
@@ -72,7 +72,7 @@ ms.locfileid: "60196641"
 
 ****
 
-|应用场景|撤消选项|了解详细信息|
+|方案|撤消选项|了解详细信息|
 |---|---|---|
 |电子邮件已路由到用户的"垃圾邮件"文件夹|<ul><li>将邮件移动到用户的"已删除邮件"文件夹</li><li>将邮件移动到用户的收件箱</li><li>删除邮件</li></ul>|[查找并调查在邮件中传递的恶意Office 365](investigate-malicious-email-that-was-delivered.md)|
 |已隔离电子邮件或文件|<ul><li>释放电子邮件或文件</li><li> 删除电子邮件或文件</li></ul>|[以管理员角色管理隔离邮件](manage-quarantined-messages-and-files.md)|
@@ -82,11 +82,10 @@ ms.locfileid: "60196641"
 
 在操作中心，你可以看到已采取的修正操作并可能撤消该操作。
 
-1. 转到 Microsoft 365 Defender 门户 <https://security.microsoft.com> () 。
-2. 在导航窗格中，选择操作 **中心**。
-3. 选择 **"历史记录** "选项卡以查看已完成操作的列表。
-4. 选择一个项目。 将打开其飞出窗格。
-5. 在飞出窗格中， **选择撤消**。  (只有可以撤消的操作才 **具有"撤消** "按钮。) 
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> ， go to the Action center by selecting Action **center**. 若要直接转到操作中心，请使用 <https://security.microsoft.com/action-center/> 。
+2. 在操作中心，选择" **历史记录** "选项卡以查看已完成操作的列表。
+3. 选择一个项目。 将打开其飞出窗格。
+4. 在飞出窗格中， **选择撤消**。  (只有可以撤消的操作才 **具有"撤消** "按钮。) 
 
 ## <a name="see-also"></a>另请参阅
 

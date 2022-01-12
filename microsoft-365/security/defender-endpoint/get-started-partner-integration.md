@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 79c637f815ad4f31dd611d6ba05ca566806f71db
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6a4981d77c544b8d4bd0b5824f6a20a3a3731c0b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167258"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937900"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>成为 Microsoft Defender for Endpoint 合作伙伴
 
@@ -40,15 +40,11 @@ ms.locfileid: "61167258"
 
 ## <a name="step-2-fulfill-the-solution-validation-and-certification-requirements"></a>步骤 2：满足解决方案验证和认证要求
 
-技术合作伙伴认证其集成工作的最佳方法就是让联合客户批准建议的集成设计 (客户可以使用 Microsoft Defender 安全中心) 合作伙伴应用程序页面中的推荐合作伙伴选项，并经过测试并降级到 Microsoft [](https://securitycenter.microsoft.com/interoperability/partners) Defender for Endpoint 团队。
+技术合作伙伴验证其集成工作的最佳方法就是让联合客户批准建议的集成设计 (客户可以使用 Microsoft Defender 安全中心) 合作伙伴应用程序页面中的推荐合作伙伴选项，并经过测试并降级到 Microsoft [](https://securitycenter.microsoft.com/interoperability/partners) Defender for Endpoint 团队。
 
 Microsoft Defender for Endpoint 团队审阅并批准集成后，我们将指导你成为 Microsoft 智能安全协会的合作伙伴。
 
-## <a name="step-3-become-a--microsoft-intelligent-security-association-member"></a>步骤 3：成为 Microsoft Intelligent Security Association 成员
-
-[Microsoft Intelligent Security Association](https://www.microsoft.com/security/partnerships/intelligent-security-association) 是一项专门针对 Microsoft 安全合作伙伴的计划，可帮助丰富安全产品并提高客户对 Microsoft 安全产品的集成可发现性。
-
-## <a name="step-4-get-listed-in-the-microsoft-defender-for-endpoint-partner-application-portal"></a>步骤 4：在 Microsoft Defender for Endpoint 合作伙伴应用程序门户中列出
+## <a name="step-3-get-listed-in-the-microsoft-defender-for-endpoint-partner-application-portal"></a>步骤 3：在 Microsoft Defender for Endpoint 合作伙伴应用程序门户中列出
 
 Microsoft Defender for Endpoint 支持使用嵌入在 Microsoft Defender [](partner-applications.md) for Endpoint 管理门户中的产品内合作伙伴页面发现和集成第三方应用程序。
 
@@ -59,11 +55,11 @@ Microsoft Defender for Endpoint 支持使用嵌入在 Microsoft Defender [](part
 3. 提供 15 字的产品说明。
 4. 链接到客户完成集成或博客文章的登陆页面，该集成或博客文章将为客户提供足够的信息。 营销和工程团队应审阅任何新闻稿，包括 Microsoft Defender for Endpoint 产品名称。 等待至少 10 天，待审阅过程完成。
 5. 如果使用多租户Azure AD方法，我们将需要Azure AD应用程序名称来跟踪应用程序的使用情况。
-6. 在每个 API 调用User-Agent Microsoft Defender for Endpoint 公共 API 集或安全Graph字段。 这将用于统计目的、疑难解答和合作伙伴识别。 此外，此步骤是 Microsoft Intelligent Security Association (MISA) 的要求。
+6. 在User-Agent Microsoft Defender for Endpoint 公共 API 集或安全中心 API 的每个 API 调用Graph字段。 这将用于统计目的、疑难解答和合作伙伴识别。 此外，此步骤是 Microsoft Intelligent Security Association (MISA) 。
 
    请按照下列步骤操作：
 
-   - 将User-Agent HTTP 请求标头中的"请求"字段设置为以下格式。
+   - 将User-Agent HTTP 请求标头中的"报告"字段设置为以下格式。
 
      ```http
      MdePartner-{CompanyName}-{ProductName}/{Version}

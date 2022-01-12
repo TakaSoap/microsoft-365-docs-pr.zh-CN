@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 深入了解 Microsoft SharePoint Syntex 中的短语列表、正则表达式和接近度解释类型。
-ms.openlocfilehash: 4f155b4a7e6aef9c12b97f56e414de9fcda88536
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 71c7379b3a9fcd71b996da5eefd18b6aaaef5016
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152822"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872533"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的说明类型
 
@@ -211,6 +211,17 @@ Redmond, WA 98034<br>
    ![自定义范围。](../media/content-understanding/custom-file.png)
 
     在查看器中，可以手动调整选择框以包括出现短语的位置。 对于此设置，需要选择一个 **开始** 和 **结束** 位置。 这些值表示从文档开头开始的令牌数。 尽管可以手动输入这些值，但在查看器中手动调整选择框更加方便。
+    
+## <a name="considerations-when-configuring-explanations"></a>配置说明时应考虑的因素
+培训分类器时，需要记住一些内容，以产生更可预测的结果：
+
+- 通过训练的文档越多，分类器越准确。  如果可能，请使用 5 多个好文档，并使用 1 多个错误文档。  如果您使用的库具有多个不同的文档类型，则每种类型中的多个文档类型都会导致更可预测的结果。
+- 标记文档在培训过程中非常重要。  它们与说明一起用于训练模型。  在使用文档中没有太多内容的文档对分类器进行培训时，你可能会看到一些异常。  该说明可能与文档中任何内容都不匹配，但由于该文档被标记为"良好"文档，因此你可能会在培训期间看到它匹配。
+- 创建说明时，它会将 OR 逻辑与标签结合使用，以确定其是否匹配。  使用 AND 逻辑的正则表达式可能更可预测。  下面是要作为实际文档的培训使用的示例正则表达式。  请注意，红色突出显示的文本是 (查找) 的短语。
+
+    <pre>(?=.*network provider)(?=.*participating providers).*</pre>
+    
+- 标签和说明协同工作，并用于模型培训。  这不是一系列可取消耦合的规则，以及应用于已配置的每个变量的精确权重或预测。  培训中使用的文档变体越大，模型的准确性就更高。
 
 ### <a name="see-also"></a>另请参阅
 

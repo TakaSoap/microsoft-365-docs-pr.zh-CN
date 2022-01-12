@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在内容资源管理器中向可训练分类器提供反馈。
-ms.openlocfilehash: 00162bcce2f8291ff151d1f8a9f692581c9ee9b2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bbc724b94997a4668115314df0c627dcfa5ddc77
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203275"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933607"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新训练内容资源管理器中的分类器
 
-可Microsoft 365分类器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 接受培训后，可用于标识用于应用敏感度Office、通信合规性策略和保留标签策略的项目。
+可Microsoft 365分类器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 接受培训后，可以使用它标识用于应用敏感度Office、通信合规性策略和保留标签策略的项目。
 
-本文介绍了如何通过提供其他反馈来提高自定义可训练分类器以及一些预先训练的分类器的性能。
+本文介绍了如何通过提供其他反馈来提高自定义可训练分类器的性能。
 
 若要详细了解不同类型的分类器，请参阅 [了解可训练分类器](classifier-learn-about.md)。
 
@@ -36,6 +36,8 @@ ms.locfileid: "60203275"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
 
+> [!NOTE]
+> 预先训练的分类器无法重新培训。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +52,7 @@ ms.locfileid: "60203275"
 ## <a name="overall-workflow"></a>总体工作流
 
 > [!IMPORTANT]
-> 您可以在内容资源管理器中提供反馈，以自动应用保留标签策略Exchange项并使用分类器作为条件。 **如果没有保留策略，该保留策略自动将保留标签应用于Exchange并使用分类器作为条件，请在此处停止。**
+> 在内容资源管理器中提供反馈，以自动应用保留标签策略Exchange项并使用分类器作为条件。 **如果你没有自动将保留标签应用于项目并使用分类Exchange分类器作为条件的保留策略，请在此处停止。**
 
 使用分类器时，可能需要提高分类器所分类的精度。 为此，可评估对已标识为匹配项或不匹配项进行的分类质量。 对分类器进行 30 次评估后，它将接受该反馈并自动自我重新培训。
 

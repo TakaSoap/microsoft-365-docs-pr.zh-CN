@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e27439a23d21dd95bb717104b5d87291b7e4592f
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: c0a2bdab641f0289975f1d8475627d3066ecf1f8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218438"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934197"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>调查正向代理背后发生的连接事件
 
@@ -44,11 +44,11 @@ Defender for Endpoint 通过网络保护支持高级 HTTP 级别监视。 打开
 
 可以使用以下模式控制网络保护：
 
-- **阻止**：将阻止用户或应用连接到危险域。 你将能够在"活动"中查看此Microsoft Defender 安全中心。
-- **审核**：不会阻止用户或应用连接到危险域。 但是，你仍将看到此活动Microsoft Defender 安全中心。
+- **阻止**：将阻止用户或应用连接到危险域。 你将能够在"活动"中查看此Microsoft 365 Defender。
+- **审核**：不会阻止用户或应用连接到危险域。 但是，你仍将看到此活动Microsoft 365 Defender。
 
 
-如果关闭网络保护，将不会阻止用户或应用连接到危险域。 你将不会在 Microsoft Defender 安全中心 中看到任何网络Microsoft Defender 安全中心。
+如果关闭网络保护，将不会阻止用户或应用连接到危险域。 你将不会在 Microsoft 365 Defender 中看到任何网络Microsoft 365 Defender。
 
 如果未配置它，则默认情况下将关闭网络阻止。
 

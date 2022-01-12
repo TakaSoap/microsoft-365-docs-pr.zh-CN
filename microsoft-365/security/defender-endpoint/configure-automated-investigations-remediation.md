@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: f98461071de0db8179339b28b1c67c2bc9437c52
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3f51ce7c0eb45861a8b5277266b18e6d03e53178
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166502"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872485"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置自动调查和修正功能
 
@@ -42,20 +42,20 @@ ms.locfileid: "61166502"
 
 ## <a name="turn-on-automated-investigation-and-remediation"></a>启用自动调查和修正
 
-1. 作为全局管理员或安全管理员，转到Microsoft Defender 安全中心 () <https://securitycenter.windows.com> 登录。
+1. 作为全局管理员或安全管理员，转到 Microsoft 365 Defender门户 () <https://security.microsoft.com> 并登录。
 2. 在导航窗格中，选择 **"设置"。**
 3. 在"**常规"** 部分，选择"**高级功能"。**
 4. 同时启用 **自动调查和****自动解决警报**。
 
 ## <a name="set-up-device-groups"></a>设置设备组
 
-1. In the Microsoft Defender 安全中心 (<https://securitycenter.windows.com>) ， on the **设置** page， under **Permissions，** select **Device groups**.
+1. 在Microsoft 365 Defender门户 () "中，在"设置"页上的"权限"下， <https://security.microsoft.com> 选择"**设备组"。**  
 2. 选择 **+ 添加设备组**。
 3. 创建至少一个设备组，如下所示：
    - 为设备组指定名称和说明。
    - 在 **"自动化级别"列表中**，选择一个级别，例如"完全 **- 自动修正威胁"。** 自动化级别确定是自动执行修正操作，还是仅在批准后执行修正操作。 若要了解更多信息，请参阅 [自动化调查和修正中的自动化级别](automation-levels.md)。
    - 在 **"成员** "部分，使用一个或多个条件来标识和包括设备。
-   - 在 **"用户访问"**[选项卡上，Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)应有权访问所创建设备组的用户组。
+   - 在 **"用户访问"** 选项卡上 [，Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)应有权访问所创建设备组的用户组。
 4. 完成 **设备** 组的设置后，选择"完成"。
 
 ## <a name="next-steps"></a>后续步骤

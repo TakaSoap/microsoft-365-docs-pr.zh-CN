@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 386cfaa00143ee64ff2710a913e4498813380a95
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 22a8c8cdd5ebcaa8038c37b73aeeb6c5f80d4267
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530928"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932814"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>跟踪 Microsoft 安全分数历史记录并实现目标
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft 安全](microsoft-secure-score.md) 分数是组织安全状况的度量，较高的数字表示采取更多改进措施。 可以在网站门户 的 https://security.microsoft.com/securescore [Microsoft 365 Defender 找到它](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
+[Microsoft 安全](microsoft-secure-score.md) 分数是组织安全状况的度量，较高的数字表示采取更多改进措施。 可以在门户 的 Microsoft 365 Defender https://security.microsoft.com/securescore [找到它](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>深入了解影响分数的活动
 
@@ -50,7 +50,7 @@ ms.locfileid: "61530928"
 
 ## <a name="discover-trends-and-set-goals"></a>发现趋势并设定目标
 
-在 **"指标&** 趋势"选项卡中，有几个图表可让你进一步查看趋势和设定目标。 你可以为整个可视化页面设置日期范围。 可视化效果包括：
+在 **"指标&** 趋势"选项卡中，有几个图表可让你进一步查看趋势和设置目标。 你可以为整个可视化页面设置日期范围。 可视化效果包括：
 
 * **安全分数区域** - 根据组织目标和良好、正常和错误分数范围的定义进行自定义。
 * **回归趋势** - 由于配置、用户或设备更改而已回归的点的时间线。  
@@ -64,17 +64,13 @@ ms.locfileid: "61530928"
 
 #### <a name="comparison-bar-chart"></a>比较条形图
 
-比较条形图是"概述 **"** 选项卡。将鼠标悬停在图表上可查看得分和得分机会。 对比较数据进行匿名处理，因此我们不确切知道哪些其他租户位于混合中。
+比较条形图位于"概述" **选项卡** 上。将鼠标悬停在图表上可查看得分和得分机会。 
+
+**如果你的组织（** 如你组织）是同一地区内其他租户的平均分数 (只要我们至少有五个或五个租户) 与你的组织规模相似的租户进行比较。
+
+对比较数据进行匿名处理，因此我们不确切知道哪些其他租户位于混合中。
 
 ![相似组织的分数的条形图。](../../media/secure-score/secure-score-comparison-screenshot.png)
-
-- **组织喜欢你的** 组织：如果我们至少有五 (个租户要比较符合以下条件) 租户的平均得分，我们会计算这些租户的平均分：
-    1. 同一行业
-    2. 组织规模相同
-    3. 所有区域
-    4. 使用的 Microsoft 产品有 80% 相似
-    5. 机会 (租户 20% 范围内的当前许可证) 可获取的最大分数
-
 
 #### <a name="comparison-trend"></a>比较趋势
 
@@ -84,7 +80,7 @@ ms.locfileid: "61530928"
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 
-如果有任何问题，请通过发布到安全、隐私和合规性社区 [&告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
+如果有任何问题，请通过发布在安全、隐私和合规性社区中& [告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
 
 ## <a name="related-resources"></a>相关资源
 

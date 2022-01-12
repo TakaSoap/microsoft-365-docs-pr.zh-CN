@@ -1,6 +1,6 @@
 ---
 title: 通过 Microsoft 安全分数评估安全状况
-description: 介绍如何采取措施来提高 Microsoft 安全分数在 Microsoft 365 Defender 门户。
+description: 介绍如何在 Microsoft 安全中心门户中采取措施Microsoft 365 Defender分数。
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， microsoft 安全分数， Microsoft 365 Defender门户， 改进操作
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: ca8282c70f6fd831ae4859749078701b97014e13
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 6519cf97fb35bfb0eb7b325475d4ce350ec0c3bb
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724436"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61936976"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状态
 
@@ -33,14 +33,14 @@ ms.locfileid: "60724436"
 
 Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高表示采取的改进措施越多。 可以在网站门户 的 Microsoft 365 Defender https://security.microsoft.com/securescore [找到它](microsoft-365-defender.md)。
 
-为了帮助您更快找到所需的信息，Microsoft 改进操作分为以下组：
+为了帮助您更快找到所需的信息，Microsoft 改进操作分为多个组：
 
-- 标识 (Azure Active Directory角色&帐户) 
+- 标识 (Azure Active Directory角色&角色) 
 - Device (For Endpoint 的 Microsoft Defender，称为 ["适用于](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) 设备的 Microsoft 安全分数) 
-- 应用 (电子邮件和云应用，包括Office 365和Microsoft Cloud App Security) 
+- 应用 (和云应用，包括 Office 365 和 Microsoft Defender for Cloud Apps) 
 
 >[!NOTE]
->在 Microsoft 安全分数的最近版本中，发布了一个改进的评分模型，使得 Microsoft 安全分数暂时与 Identity Secure Score 和 Graph API 不兼容。 [查看详细信息](microsoft-secure-score-whats-new.md)
+>在 Microsoft 安全分数的最近版本中，发布了一个改进的评分模型，这使得 Microsoft 安全分数暂时与 Identity Secure Score 和 Graph API 不兼容。 [查看详细信息](microsoft-secure-score-whats-new.md)
 
 在"Microsoft 安全分数概述"页中，查看在这些组之间如何拆分分数以及可用分数。 通过基准比较，还可以全面查看总分数、安全分数的历史趋势，以及可采取优先改进措施来提高分数。
 
@@ -72,7 +72,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 ### <a name="view-improvement-action-details"></a>查看改进操作详细信息
 
-当您选择特定的改进操作时，将显示一个整页的飞出图。  
+当您选择特定的改进操作时，将出现一个整页的飞出图。  
 
 ![改进操作飞出示例。](../../media/secure-score/secure-score-improvement-action-details.png)
 

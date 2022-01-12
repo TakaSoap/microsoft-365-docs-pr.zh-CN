@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: 8260903ba8031bae76f420a7b010ed73df1c833d
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: d3cf5259aeb070175d5d2a4a95154974c6cd4d56
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560380"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867809"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-defender-for-endpoint-overview"></a>适用于终结点的 Defender 中的 Microsoft Defender 云应用概述
 
@@ -52,9 +52,9 @@ Microsoft Defender for Cloud Apps 是一个全面的解决方案，让你能够�
 
 - 可在任何位置使用 - 由于网络活动直接从终结点收集，因此无论设备位于公司网络内部还是外部，设备都可用，因为它不再依赖于通过企业防火墙或代理服务器路由的流量。
 
-- 开箱即用，无需配置 - 将云流量日志转发到 Defender for Cloud Apps 需要防火墙和代理服务器配置。 借助适用于终结点的 Defender 和适用于云应用的 Defender 集成，无需任何配置。 只需在Microsoft Defender 安全中心中打开它，你可继续操作。
+- 开箱即用，无需配置 - 将云流量日志转发到 Defender for Cloud Apps 需要防火墙和代理服务器配置。 借助适用于终结点的 Defender 和适用于云应用的 Defender 集成，无需任何配置。 只需在Microsoft 365 Defender中打开它，你一开始操作就大了。
 
-- 设备上下文 - 云流量日志缺少设备上下文。 Defender for Endpoint 网络活动通过设备上下文报告 (哪些设备访问云应用) ，以便你能够准确了解 (设备) 网络活动的发生位置，以及执行网络活动的 (用户) 。
+- 设备上下文 - 云流量日志缺少设备上下文。 Defender for Endpoint 网络活动通过设备上下文报告 (哪些设备访问了云应用) ，因此你能够准确了解 (设备) 网络活动的发生位置，以及执行网络活动的 (用户) 。
 
 有关云发现详细信息，请参阅 [使用发现的应用](/cloud-app-security/discovered-apps)。
 

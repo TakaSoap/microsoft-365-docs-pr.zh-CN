@@ -12,22 +12,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365solution-migratetomdatp
-- m365solution-overview
-- m365solution-mcafeemigrate
-- m365solution-symantecmigrate
+- m365solution-scenario
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 11/30/2021
+ms.date: 01/11/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: b16cd5c9642c017c7354b98c5445c2614bde10bf
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 6729d136da90c674c0d726f2bfe7321a75bdb79a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240800"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937168"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>切换到 Microsoft Defender for Endpoint 时的问题疑难解答
 
@@ -38,9 +34,9 @@ ms.locfileid: "61240800"
 
 本文为在从非 Microsoft 终结点保护解决方案切换到 Microsoft Defender for Endpoint 时遇到问题的安全管理员提供了疑难解答信息。
 
-## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Microsoft Defender 防病毒卸载的 Windows Server
+## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Microsoft Defender 防病毒卸载 Windows Server
 
-当你切换到 Defender for Endpoint 时，你首先在活动模式下使用非 Microsoft 防病毒/反恶意软件保护。 作为设置过程的一部分，在被动Microsoft Defender 防病毒配置策略。 有时，非 Microsoft 防病毒/反恶意软件解决方案可能会Microsoft Defender 防病毒服务器Windows运行。 事实上，它看起来可能Microsoft Defender 防病毒服务器Windows服务器。
+当你切换到 Defender for Endpoint 时，你首先在活动模式下使用非 Microsoft 防病毒/反恶意软件保护。 作为设置过程的一部分，在被动Microsoft Defender 防病毒配置策略。 有时，非 Microsoft 防病毒/反恶意软件解决方案可能会阻止 Microsoft Defender 防病毒 Server Windows运行。 事实上，它看起来可能Microsoft Defender 防病毒服务器Windows服务器。
 
 若要解决此问题，请执行以下步骤：
 
@@ -50,7 +46,7 @@ ms.locfileid: "61240800"
 
 ### <a name="set-the-disableantispyware-registry-key-to-false"></a>将 DisableAntiSpyware 注册表项设置为 false
 
-[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)注册表项过去用于禁用 Microsoft Defender 防病毒，并部署其他防病毒产品，如 McAfee、Symantec 或其他产品。 **通常，不应在 Windows** 设备和终结点上具有此注册表项;但是，如果已配置，下面将说明如何设置其值 `DisableAntiSpyware` 为 false：
+[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)注册表项过去用于禁用 Microsoft Defender 防病毒，并部署其他防病毒产品，如 McAfee、Symantec 或其他产品。 **通常，不应在 Windows** 设备和终结点上拥有此注册表项;但是，如果已配置，下面将说明如何设置其值 `DisableAntiSpyware` 为 false：
 
 1. 在 Windows Server 设备上，打开注册表编辑器。
 
@@ -96,13 +92,13 @@ Defender for Endpoint 的某些排除项必须在现有的非 Microsoft 终结�
 值：`1`
 
 > [!NOTE]
-> 若要使被动模式适用于运行 Windows Server 2016 和 Windows Server 2012 R2 的终结点，这些终结点必须使用载入 Windows[服务器 中的说明载入](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
+> 若要使被动模式在运行 Windows Server 2016 和 Windows Server 2012 R2 的终结点上工作，这些终结点必须使用载入 Windows[服务器 中的说明载入](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
 
-有关详细信息，请参阅 Microsoft Defender 防病毒[Server Windows。](microsoft-defender-antivirus-on-windows-server.md)
+有关详细信息，请参阅 Microsoft Defender 防病毒[server Windows。](microsoft-defender-antivirus-on-windows-server.md)
 
 ## <a name="i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016"></a>我在重新启用Microsoft Defender 防病毒时Windows Server 2016
 
-如果您在 Windows Server 2016 上使用非 Microsoft 防病毒/反恶意软件解决方案，则现有解决方案Microsoft Defender 防病毒或卸载此解决方案。 您可以使用恶意软件防护[Command-Line实用工具](command-line-arguments-microsoft-defender-antivirus.md)在Microsoft Defender 防病毒上重新Windows Server 2016。
+如果在设备上使用非 Microsoft 防病毒/反恶意软件Windows Server 2016，则现有解决方案可能需要Microsoft Defender 防病毒或卸载。 您可以使用恶意软件保护[Command-Line实用工具](command-line-arguments-microsoft-defender-antivirus.md)重新启用Microsoft Defender 防病毒Windows Server 2016。
 
 1. 作为服务器的本地管理员，打开命令提示符。
 

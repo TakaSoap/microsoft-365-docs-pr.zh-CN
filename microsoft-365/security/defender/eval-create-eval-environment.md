@@ -1,6 +1,6 @@
 ---
 title: 创建Microsoft 365 Defender评估环境
-description: 通过激活Microsoft 365 Defender来设置你的试用实验室或试验环境。 然后设置 Microsoft Defender for Identity (MDI) 所有其他 M365D 评估。
+description: 通过激活试用Microsoft 365 Defender设置你的试用实验室或试验环境。 然后设置 Microsoft Defender for Identity (MDI) 所有其他 M365D 评估。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: f333b872ee89bf37dcf8404ba7d2ce05f6cc2703
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 8f8ef31b037709f7b5b87c888f40b1a5a3a5b438
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122341"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940158"
 ---
 # <a name="create-the-microsoft-365-defender-evaluation-environment"></a>创建Microsoft 365 Defender评估环境
 
@@ -48,7 +46,7 @@ ms.locfileid: "61122341"
 
 5. 确认你的请求，然后单击立即 **尝试** 按钮。
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="在&quot;签出，确认订单&quot;面板上有一个&quot;立即试用&quot;按钮， (25 个用户试用一Office 365 E5 25 个用户) 。":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="&quot;签出，确认订单&quot;面板上有一个&quot;立即试用&quot;按钮， (25 个用户试用一Office 365 E5 25) 。":::
 
 ## <a name="next-steps"></a>后续步骤
 

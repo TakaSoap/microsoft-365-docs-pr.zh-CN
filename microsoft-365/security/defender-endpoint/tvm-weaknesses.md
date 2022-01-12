@@ -1,6 +1,6 @@
 ---
 title: 我的组织中漏洞 - 危险和漏洞管理
-description: 列出 CVE 中常见的 (和) 在组织中运行的软件中发现漏洞的 ID。 由 Microsoft Defender for Endpoint 危险和漏洞管理发现。
+description: 列出 CVE 中常见的漏洞 () 在组织中运行的软件中发现漏洞的 ID。 由 Microsoft Defender for Endpoint 危险和漏洞管理发现。
 keywords: Microsoft Defender for Endpoint threat & 漏洞管理， 危险和漏洞管理， Microsoft Defender for Endpoint tvm vulnerabilites page， finding vulnerabilites through tvm， tvm vulnerability list， vulnerability details in tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 552209e6a93ba70c0cf279694fdc703923bcc509
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 12ee0e4464383bb634605ab6553485e1a946c003
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164750"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936988"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>我的组织中漏洞 - 危险和漏洞管理
 
@@ -34,9 +34,12 @@ ms.locfileid: "61164750"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
+> [!IMPORTANT]
+> 威胁和漏洞管理可以帮助识别应用程序和组件中的 Log4j 漏洞。 [了解详细信息](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM)。
+
 威胁和漏洞管理使用 Defender for Endpoint 终结点保护中的相同信号扫描和检测漏洞。
 
-" **漏洞** "页通过列出 CVE 中的常见漏洞和曝光 (CVE) 漏洞。 还可以查看严重性、常见漏洞评分系统 (CVSS) 分级、组织中的普遍程度、相应的漏洞、威胁见解等。
+" **漏洞** "页列出了你的设备通过 CVE 帐户 ID 列出的常见漏洞 (暴露) 漏洞。 还可以查看严重性、常见漏洞评分系统 (CVSS) 分级、组织中的普遍程度、相应的漏洞、威胁见解等。
 
 > [!NOTE]
 > 如果没有为漏洞分配正式的 CVE-ID，则此漏洞名称由 危险和漏洞管理。
@@ -48,7 +51,7 @@ ms.locfileid: "61164750"
 
 以几种不同方式访问"漏洞"页面：
 
-- 从 **[Microsoft 365 Defender** 门户] 菜单中的"漏洞管理"导航菜单中选择"漏洞 (portal-overview.md) 
+- 从 **[Microsoft 365 Defender** 门户 **]** 菜单中的"漏洞管理"导航菜单中选择 (portal-overview.md) 
 - 全局搜索
 
 ### <a name="navigation-menu"></a>导航菜单
@@ -58,7 +61,7 @@ ms.locfileid: "61164750"
 ### <a name="vulnerabilities-in-global-search"></a>全局搜索中的漏洞
 
 1. 转到全局搜索下拉菜单。
-2. 选择 **要查找** 的常见漏洞和 (CVE) ID 中的漏洞和密钥，然后选择搜索图标。 " **漏洞"** 页面将打开，并包含要查找的 CVE 信息。
+2. 选择 **要查找** 的 CVE (常见漏洞和) ID 中的漏洞和密钥，然后选择搜索图标。 " **漏洞"** 页面将打开，并包含要查找的 CVE 信息。
 ![已选择下拉列表选项"漏洞"的全局搜索框和示例 CVE。](images/tvm-vuln-globalsearch.png)
 3. 选择 CVE 打开包含详细信息的飞出面板，包括漏洞描述、详细信息、威胁见解和公开的设备。
 
@@ -101,7 +104,7 @@ ms.locfileid: "61164750"
 
 :::image type="content" alt-text="公开的设备筛选器。" source="images/tvm-exposed-devices-filter.png":::
 
-## <a name="view-common-vulnerabilities-and-exposures-cve-entries-in-other-places"></a>查看其他位置的 CVE (项) 漏洞和曝光
+## <a name="view-common-vulnerabilities-and-exposures-cve-entries-in-other-places"></a>查看其他位置的 CVE (项) 的常见漏洞和曝光
 
 ### <a name="top-vulnerable-software-in-the-dashboard"></a>仪表板中最易受攻击的软件
 
@@ -137,9 +140,9 @@ ms.locfileid: "61164750"
 
 #### <a name="cve-detection-logic"></a>CVE 检测逻辑
 
-与软件证据类似，我们现在显示了在设备上应用的检测逻辑，以表明该设备易受攻击。 新部分称为"检测逻辑"， (发现的设备页中发现的任何漏洞) 显示检测逻辑和来源。
+与软件证据类似，我们现在显示了在设备上应用的检测逻辑，以表明该设备易受攻击。 新部分称为"检测逻辑" (设备页面发现的任何漏洞中的"检测逻辑) 显示检测逻辑和来源。
 
-相关方案中也显示了"OS 功能"类别。 只有在启用了特定操作系统组件时，CVE 才会影响运行易受攻击的操作系统的设备。 假设 Windows Server 2019 或 Windows Server 2022 在其 DNS 组件中具有漏洞。 借助此新功能，我们将仅将此 CVE 附加到操作系统中启用了 DNS 功能的 Windows Server 2019 和 Windows Server 2022 设备。
+相关方案中也显示了"OS 功能"类别。 只有在启用了特定操作系统组件时，CVE 才会影响运行易受攻击的操作系统的设备。 假设 Windows Server 2019 或 Windows Server 2022 在其 DNS 组件中具有漏洞。 借助这一新功能，我们将仅将此 CVE 附加到操作系统中启用了 DNS 功能的 Windows Server 2019 和 Windows Server 2022 设备。
 
 :::image type="content" alt-text="检测逻辑示例，列出在设备和 KB 上检测到的软件。" source="images/tvm-cve-detection-logic.png":::
 

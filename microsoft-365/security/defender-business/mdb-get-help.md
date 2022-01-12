@@ -15,13 +15,13 @@ ms.collection:
 search.appverid: MET150
 ms.reviewer: inbadian, shlomiakirav
 description: '了解如何在 Microsoft Defender for Business 预览版中获取帮助或 (支持) '
-ms.date: 12/10/2021
-ms.openlocfilehash: 0a49dcb9f94491b189fda46947643793007c75e9
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.date: 01/06/2022
+ms.openlocfilehash: 63873d5713e6f41ead43cfbb9cbc37fd4ba6567e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507262"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938548"
 ---
 # <a name="get-help-and-support-for-microsoft-defender-for-business-preview"></a>获取有关 Microsoft Defender for Business 预览版 (的帮助) 
 
@@ -32,9 +32,14 @@ ms.locfileid: "61507262"
 
 ## <a name="get-help-and-support"></a>获取帮助和支持
 
-如果需要 Microsoft Defender for Business (预览版) ，请选择屏幕右上角的"帮助"图标 (？) 。 键入问题。 将列出一些选项，如快速解答或帮助文章。
+如果需要 Microsoft Defender for Business 预览版 (帮助) ，请选择屏幕右上角的"帮助"图标 (？) 。 键入问题。 将列出一些选项，如快速解答或帮助文章。
 
 如果看不到问题的答案，可以打开支持票证。
+
+>
+> **有空吗？**
+> 请参加有关 <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business 的简短调查</a>。 我们非常乐意听取你的宝贵意见！
+>
 
 ## <a name="see-also"></a>另请参阅
 

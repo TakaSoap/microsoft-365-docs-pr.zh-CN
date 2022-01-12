@@ -15,18 +15,18 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，请了解"用户"页面。
-ms.openlocfilehash: 365b40e863b15b762fb391ef39eb523811981c99
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 对于托管服务提供商 (MSP) ，Microsoft 365 Lighthouse"用户"页面。
+ms.openlocfilehash: d7b20d37aa9669ac6726efab19268018f5d10973
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197157"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937456"
 ---
 # <a name="microsoft-365-lighthouse-users-page-overview"></a>Microsoft 365 Lighthouse用户页面概述 
 
 > [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
 Microsoft 365 Lighthouse通过选择左侧导航窗格中的"用户"打开"用户"页面，跨客户租户帐户管理用户。 在此页中，可以搜索用户，并评估用户帐户的安全状态并采取行动。 您还可以查看风险用户的见解，以及多重身份验证和自助服务密码重置的状态。  
   
@@ -50,11 +50,11 @@ The Multifactor Authentication tab provides detailed information on the status o
 
 ## <a name="password-reset-tab"></a>密码重置选项卡
 
-"密码重置"选项卡显示有关租户中自助服务密码重置启用状态的详细信息。
+"密码重置"选项卡显示有关租户中自助服务密码重置启用状态的详细信息。 它还提供关于已启用但仍需要注册的用户的见解，然后他们才能自行重置密码。
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="&quot;密码重置&quot;选项卡的屏幕截图。":::
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365 Lighthouse设备合规性页面概述](m365-lighthouse-device-compliance-page-overview.md) (文章) \
+[Microsoft 365 Lighthouse设备合规性页面概述 (](m365-lighthouse-device-compliance-page-overview.md)文章) \
 [Microsoft 365 Lighthouse常见问题](m365-lighthouse-faq.yml) (文章) 

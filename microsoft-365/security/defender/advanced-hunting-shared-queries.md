@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e2ba6decb92f81ff1f834ba4cb94b9520b62d62c
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 06952be112f4eb28867a4a0cd4bffbee0c664b5c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785548"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935605"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>使用高级搜寻的共享查询
 
@@ -71,7 +71,7 @@ ms.locfileid: "60785548"
 Microsoft 安全研究人员定期在[指定的 GitHub 公共存储库](https://aka.ms/hunting-queries)中共享高级搜寻查询。 此存储库可自行参与。 [免费加入 GitHub](https://github.com/)，即可参与。
 
 >[!tip]
->此外，Microsoft 研究人员还提供了高级搜寻查询，你可以使用它们查找与存在的威胁关联的活动和指示器。 将这些查询作为 Microsoft Defender 安全中心[威胁分析](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)报告的一部分提供。
+>此外，Microsoft 研究人员还提供了高级搜寻查询，你可以使用它们查找与存在的威胁关联的活动和指示器。 这些查询作为威胁分析报告中[的一](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)Microsoft 365 Defender。
 
 
 ## <a name="related-topics"></a>相关主题

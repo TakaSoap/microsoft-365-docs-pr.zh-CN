@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 73252b604c252fea73c5269597bc68fe7a2bf6e9
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 3453645f9c28149bedf617e21f28c89d828028d6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507214"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937372"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business-preview"></a>设置和配置 Microsoft Defender for Business (预览) 
 
@@ -31,6 +31,11 @@ ms.locfileid: "61507214"
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
 Microsoft Defender for Business (预览) 提供了简化的安装和配置体验，专为中小型企业设计。 使用本文作为指南。
+
+>
+> **有空吗？**
+> 请参加有关 <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business 的简短调查</a>。 我们非常乐意听取你的宝贵意见！
+>
 
 ## <a name="the-setup-and-configuration-process"></a>安装和配置过程
 
@@ -48,5 +53,5 @@ Microsoft Defender for Business (预览) 提供了简化的安装和配置体验
 
 继续：
 
-- [步骤 1：查看 Microsoft Defender for Business 预览版 (的要求) ](mdb-requirements.md)
+- [步骤 1：查看 Microsoft Defender for Business (预览版) ](mdb-requirements.md)
 

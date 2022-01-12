@@ -21,20 +21,20 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: 开始定义和管理数据丢失防护策略的警报。
-ms.openlocfilehash: 442929df84508d99ee9ae3d88bc2297e293ecc73
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3c177bc75ff0f5820a07609c04bb20851a70e52a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747338"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933523"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>数据丢失防护警报仪表板入门
 
-DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。 对敏感项目采取操作时，可以通过配置 DLP 警报来通知您。 本文演示如何定义与 DLP 策略或 DLP 策略的数据丢失防护 (警报) 策略。 你将看到如何使用仪表板中的[DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)警报管理Microsoft 365 合规中心查看 DLP 策略违反的<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">警报</a>、事件和关联元数据。
+DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。 对敏感项目采取操作时，可以通过配置 DLP 警报来通知您。 本文演示如何定义与 DLP 策略或 DLP 策略的数据丢失防护 (警报) 策略。 你将看到如何使用仪表板中的[DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)警报管理Microsoft 365 合规中心查看 DLP<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>策略违反的警报、事件和关联元数据。
 
 如果您是 DLP 警报的新增用户，则应该查看了解数据丢失防护 [警报仪表板](dlp-alerts-dashboard-learn.md)
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在开始之前，请确保你具有必要的先决条件：
 
@@ -70,7 +70,6 @@ DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 若要
 
 ### <a name="roles"></a>角色
 
-
 如果要查看 DLP 警报管理仪表板或编辑 DLP 策略中的警报配置选项，您必须是以下角色组之一的成员：
 
 - 合规管理员
@@ -93,6 +92,25 @@ DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 若要
 - 内容资源管理器内容查看器角色组
 
 已预分配数据分类内容查看器角色。
+
+### <a name="roles-and-role-groups-in-preview"></a>预览版中的角色和角色组
+
+预览版中的角色和角色组可以进行测试以微调访问控制。
+
+以下是预览中Microsoft 信息保护 (MIP) 角色的列表。 若要详细了解它们，请参阅安全 [与合规&中的角色](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查人员
+- 信息保护读者
+
+下面是预览中的 MIP 角色组列表。 若要详细了解 ，请参阅安全 [与合规中心&组](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- 信息保护
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查人员
+- 信息保护读者
 
 ## <a name="dlp-alert-configuration"></a>DLP 警报配置
 

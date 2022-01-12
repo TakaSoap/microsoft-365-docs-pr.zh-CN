@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中启用 SIEM 集成
-description: 启用 SIEM 集成以在 SIEM 解决方案中接收安全 (事件) 检测。
+description: 启用 SIEM 集成以在 SIEM 解决方案的安全信息和事件 (接收) 检测。
 keywords: 启用 siem 连接器， siem， 连接器， 安全信息和事件
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 881f6d3691add12af8c8f4e808417bf4cef6e5ea
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 3faecae3965cfc51104a707eaa82f375ba169f84
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300174"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935629"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中启用 SIEM 集成
 
@@ -31,7 +31,10 @@ ms.locfileid: "61300174"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
-在 SIEM (启用安全信息和事件) 集成，以便你可以从 SIEM Microsoft 365 Defender。 使用 SIEM 解决方案或直接连接到检测 REST API 拉取检测。
+> [!IMPORTANT]
+> Microsoft Defender for Endpoint SIEM REST API 将于 2022 年 3 月 1 日停用，作为 Microsoft Defender for Endpoint Alert API 和 Microsoft 365 Defender 事件 API，替换它可提供更丰富的元数据，包括警报最新状态、与警报相关的证据实体、分析员输入的评论，以及支持更新状态 assignedTo、 以编程方式分类和确定字段。 **立即生效，将不支持新客户载入 SIEM REST API。**
+
+在 SIEM (启用安全信息和事件) ，以便你可以从 SIEM 中拉取Microsoft 365 Defender。 使用 SIEM 解决方案或直接连接到检测 REST API 拉取检测。
 
 > [!NOTE]
 >
@@ -44,7 +47,7 @@ ms.locfileid: "61300174"
 - 激活该设置的用户必须有权在 Azure Active Directory (AAD) 。 这是具有以下角色的人：
 
   - 安全管理员和全局管理员之一
-  - 云应用程序管理员
+  - 云 应用程序管理员
   -  应用程序管理员
   - 服务主体的所有者
 
@@ -59,7 +62,7 @@ ms.locfileid: "61300174"
    > [!TIP]
    > 如果在尝试启用 SIEM 连接器应用程序时遇到错误，请检查浏览器的弹出窗口阻止程序设置。 启用该功能时，它可能会阻止打开的新窗口。
 
-2. 选择 **启用 SIEM 集成**。 这会使用预填充的值激活 **SIEM** 连接器访问详细信息部分，并且应用程序在 Azure Active Directory (Azure AD) 租户下创建。
+2. 选择 **启用 SIEM 集成**。 这会使用预填充的值激活 **SIEM** 连接器访问详细信息部分，并且应用程序在租户租户Azure Active Directory (Azure AD) 创建。
 
     > [!WARNING]
     > 客户端密码只显示一次。 请确保将其副本放在安全的位置。

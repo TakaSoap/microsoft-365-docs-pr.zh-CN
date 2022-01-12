@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 215c98cde0cf526eeca62d4d0cb5644d0c406421
-ms.sourcegitcommit: 1a3b79b3dff13a4895dfa4090a22bce2fcd0942b
+ms.openlocfilehash: b3fa261f78f06089ebf110d0c20a3cd685ab3279
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61597587"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937048"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>支持的操作系统、平台和功能 - 适用于危险和漏洞管理
 
@@ -38,7 +38,7 @@ ms.locfileid: "61597587"
 开始之前，请确保满足以下操作系统或平台要求危险和漏洞管理以便正确考虑设备中的活动。
 
 > [!NOTE]
-> 支持用于终结点的危险和漏洞管理和平台可能不同于["Microsoft Defender for Endpoint](minimum-requirements.md)的最低要求"列表。
+> 支持用于终结点的危险和漏洞管理和平台可能不同于[Microsoft Defender for Endpoint](minimum-requirements.md)列表的最低要求。
 
 ## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>支持的操作系统和平台 (操作系统) 功能
 
@@ -63,8 +63,8 @@ Ubuntu 16.04 LTS 或更高版本 LTS|是|是|是|是|是
 Oracle Linux 7.2 或更高版本|是|是|是|是|是
 SUSE Linux Enterprise Server 12 或更高版本|是|是|是|是|是
 Linux Debian 9 或更高版本|是|是|是|是|是
-Android 6.0 或更高版本 (预览版) |是|是|不支持|不支持|不支持
-预览版中的 iOS 12.0 (或) |是|不支持|不支持|不支持|不支持
+Android 6.0 或更高版本|是|是|不支持|不支持|不支持
+iOS 12.0 或更高版本|是|不支持|不支持|不支持|不支持
 
 > [!NOTE]
 > 某些功能不适用于低级别操作系统，请查看 Microsoft 365 Defender 门户，了解有关受支持的操作系统的更多详细信息。

@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c2f98baae8ceafb04be939b007e76fe2badda62d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 2f2cc71b13965311340dda5f8007f072d6e9220d
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167834"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935797"
 ---
-# <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>适用于 Defender for Endpoint 中Windows的载入工具和方法
+# <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>适用于 Defender for Endpoint 中 Windows设备的载入工具和方法
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,18 +46,23 @@ ms.locfileid: "61167834"
 
 Windows设备 | 载入工具或方法
 :---|:---
-|<ul><li> Windows 10</li> <li>Windows Server 1803、2019 和 2022</li> <li>Windows Server 2012 R2 和 2016 <sup> [[1](#fn1)]<sup></li></ul>  |   [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md)<br>   [组策略](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft Endpoint Manager/ Intune (移动设备管理) ](configure-endpoints-mdm.md)<br>    [VDI 脚本](configure-endpoints-vdi.md) <br><br> **注意**：本地脚本适用于概念证明，但不应用于生产部署。 对于生产部署，我们建议使用组策略、Microsoft Endpoint Configuration Manager或 Intune。
+|<ul><li> Windows 10</li> <li>Windows Server 1803、2019 和 2022</li> <li>Windows Server 2012 R2 和 2016 <sup> [[1](#fn1)]<sup></li></ul>  |   [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md)<br>   [组策略](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft Endpoint Manager/Intune (移动设备管理) ](configure-endpoints-mdm.md)<br>    [VDI 脚本](configure-endpoints-vdi.md) <br><br> **注意**：本地脚本适用于概念证明，但不应用于生产部署。 对于生产部署，我们建议使用组策略、Microsoft Endpoint Configuration Manager或 Intune。
 |<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA) ](onboard-downlevel.md) <br>[载入以前版本的 Windows](onboard-downlevel.md)或 Microsoft [Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **注意**：Microsoft Monitoring Agent现在为 Azure Log Analytics 代理。 若要了解更多信息，请参阅 [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent)。  
 |<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 专业版 </li> <li> Windows 8.1 企业版</li></ul>  | [Microsoft Monitoring Agent (MMA) ](onboard-downlevel.md) <br><br> **注意**：Microsoft Monitoring Agent现在为 Azure Log Analytics 代理。 若要了解更多信息，请参阅 [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent)。
 
 
 
- (<a id="fn1">1</a>) Windows Server 2016和 Windows Server 2012 R2 将需要按照 Onboard [Windows servers 中的说明进行载入](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
+ (<a id="fn1">1</a>) Windows Server 2016和 Windows Server 2012 R2 将需要按照载入服务器中的说明Windows[载入](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
+
+
+>[!IMPORTANT]
+>若要有资格购买适用于 Endpoint Server SKU 的 Microsoft Defender，必须已购买以下任一项的组合最低许可证：Windows E5/A5、Microsoft 365 E5/A5 或 Microsoft 365 E5 安全性 订阅许可证。  有关许可详细信息，请参阅产品 [条款](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all)。  
+
 
 主题|说明
 :---|:---
 [使用组策略载入设备](configure-endpoints-gp.md)|使用组策略在设备上部署配置包。
-[使用 Microsoft Endpoint Configuration Manager 载入设备](configure-endpoints-sccm.md)|可以使用 Microsoft Endpoint Manager (当前分支) 版本 1606 或 Microsoft Endpoint Manager (current branch) 版本 1602 或更早版本在设备上部署配置包。
+[使用 Microsoft Endpoint Configuration Manager 载入设备](configure-endpoints-sccm.md)|可以使用 Microsoft Endpoint Manager (当前分支) 版本 1606 或 Microsoft Endpoint Manager (当前分支) 版本 1602 或更早版本在设备上部署配置包。
 [使用移动设备管理工具载入设备](configure-endpoints-mdm.md)|使用移动设备管理工具或 Microsoft Intune 在设备上部署配置包。
 [使用本地脚本载入设备](configure-endpoints-script.md)|了解如何使用本地脚本在终结点上部署配置包。
 [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)|了解如何使用配置包配置 VDI 设备。

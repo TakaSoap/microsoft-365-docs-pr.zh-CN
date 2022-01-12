@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d8626b256b1e0e3d6d19ab532388ab8ba1cf5c8f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5e0cde3a8a852fab426c1e0bf0290f9785aa0b40
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168098"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61896401"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>管理 Microsoft Defender for Endpoint 警报
 
@@ -51,7 +51,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 ## <a name="suppress-alerts"></a>抑制警报
 
-在某些情况下，可能需要禁止警报显示在Microsoft Defender 安全中心。 通过 Defender for Endpoint，你可以为已知不安全的特定警报（如组织中已知的工具或流程）创建抑制规则。
+在某些情况下，可能需要禁止警报显示在Microsoft 365 Defender。 通过 Defender for Endpoint，你可以为已知不安全的特定警报（如组织中已知的工具或流程）创建抑制规则。
 
 可以从现有警报创建抑制规则。 如果需要，可以禁用和重新启用它们。
 
@@ -98,11 +98,11 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 5. 输入规则名称和注释。
 
-6. 单击 **“保存”**。
+6. 单击“保存”。
 
 #### <a name="view-the-list-of-suppression-rules"></a>查看抑制规则列表
 
-1. 在导航窗格中，选择 **"设置** \> **抑制"。**
+1. 在导航窗格中，**选择"设置** \> **抑制"。**
 
 2. 抑制规则列表显示组织中用户已创建的所有规则。
 
@@ -114,7 +114,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 例如，团队主管可以审阅所有 **新** 警报，并决定将其分配给进行中 **队列** ，以进一步分析。
 
-或者，如果团队领导知道警报是无害的、来自不相关的 (（例如属于安全管理员) 的设备）或正在通过早期警报处理，则他们可以将警报分配给"已解决"队列。
+或者，如果团队领导知道警报是无害的、来自与安全管理员 (无关的设备（例如属于安全管理员) 的设备）或正在通过早期警报处理，则他们可以将警报分配给已解决队列。
 
 ## <a name="alert-classification"></a>警报分类
 

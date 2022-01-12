@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 83871a547aa2f644d70ada5cb121d3b32a6d9bdb
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: b77e44b7e60c5255f4fb6fb25d00cef1df5e102c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560349"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940315"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender for Endpoint - 移动威胁防护
 
@@ -34,7 +34,7 @@ ms.locfileid: "61560349"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-Android 和 iOS 上的 Microsoft Defender for Endpoint 是我们 **移动威胁防护解决方案 (MTD) 。** 通常，公司会积极保护电脑免受漏洞影响和恶意攻击，但通常不会监视和保护移动设备。 在移动平台具有内置保护（如应用隔离和经过审查的消费者应用商店）的位置，这些平台仍易受基于 Web 或其他复杂攻击的攻击。 随着越来越多的员工使用设备工作并访问敏感信息，公司必须部署 MTD 解决方案来保护设备和你的资源免受对移动设备的日益复杂的攻击。
+Android 和 iOS 上的 Microsoft Defender for Endpoint 是我们移动 **威胁防护解决方案 (MTD) 。** 通常，公司会积极保护电脑免受漏洞影响和恶意攻击，但通常不会监视和保护移动设备。 在移动平台具有内置保护（如应用隔离和经过审查的消费者应用商店）的位置，这些平台仍易受基于 Web 或其他复杂攻击的攻击。 随着越来越多的员工使用设备工作并访问敏感信息，公司必须部署 MTD 解决方案来保护设备和你的资源免受对移动设备的日益复杂的攻击。
 
 ## <a name="key-capabilities"></a>关键功能
 
@@ -45,12 +45,12 @@ Android 和 iOS 上的 Microsoft Defender for Endpoint 提供以下关键功能�
 |功能|说明|
 |---|---|
 |Web 保护|防钓鱼、阻止不安全的网络连接以及支持自定义指示器。|
-|仅 Android (恶意软件防护) |扫描恶意应用。|
+|仅 android (恶意软件防护) |扫描恶意应用。|
 |越狱检测 (仅 iOS) |已越狱设备的检测。|
-|TVM (威胁和漏洞) 。 处于预览阶段。 请参阅下面的注释*|已载入移动设备的漏洞评估。 访问此页面[了解有关](next-gen-threat-and-vuln-mgt.md)Microsoft Defender for Endpoint 危险和漏洞管理的更多信息。 *请注意，在此预览版中仅支持 iOS 上的操作系统漏洞。*|
+|TVM (威胁和漏洞) 。 处于预览阶段。 请参阅下面的注释*|已载入移动设备的漏洞评估。 访问此页面[了解有关](next-gen-threat-and-vuln-mgt.md)在 Microsoft Defender for Endpoint 危险和漏洞管理的更多信息。 *请注意，在此预览版中仅支持 iOS 上的操作系统漏洞。*|
 |统一警报|来自统一 M365 安全控制台中所有平台的警报|
 |条件访问、条件启动|阻止有风险的设备访问公司资源。 此外，还可以将 Defender for Endpoint 风险信号添加到 MAM (应用) |
-|与 Microsoft Tunnel|可以与 Microsoft Tunnel集成，这是一种 VPN 网关解决方案，可在单个应用中实现安全性和连接性。 当前仅在 Android 上可用|
+|与 Microsoft Tunnel|可以与 MICROSOFT TUNNEL集成，这是一种 VPN 网关解决方案，可在单个应用中实现安全性和连接性。 当前仅在 Android 上可用|
 
 所有这些功能都适用于适用于终结点许可证持有者的 Microsoft Defender。 有关详细信息，请参阅 [许可要求](minimum-requirements.md#licensing-requirements)。
 
@@ -104,7 +104,7 @@ Android 和 iOS 上的 Microsoft Defender for Endpoint 提供以下关键功能�
 
 - [配置 Android 功能](android-configure.md)
 - [配置 iOS 功能](ios-configure-features.md)
-- [为受监督的 iOS 设备配置监督模式](ios-install.md#configure-microsoft-defender-for-endpoint-for-supervised-mode)
+- [为受监督的 iOS 设备配置没有 VPN 的 Web 保护](ios-install.md#complete-deployment-for-supervised-devices)
 
 ## <a name="resources"></a>资源
 
