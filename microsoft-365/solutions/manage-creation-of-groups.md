@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: 了解如何控制哪些用户可以创建Microsoft 365组。
-ms.openlocfilehash: 279c8826599bf2a41690c95c4202f81fe3206ff4
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 4280b6859358580547302ccf9497e8cd1e7ed752
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422095"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939401"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理可创建 Microsoft 365 组的人员
 
@@ -42,7 +42,7 @@ ms.locfileid: "61422095"
 - Microsoft Stream
 - Planner
 - Power BI (经典) 
-- Project/路线图
+- Project Web/路线图
 
 本文中的步骤不会阻止某些角色的成员创建组。 Office 365全局管理员可以通过 Microsoft 365 管理中心、Planner、Exchange 和 SharePoint Online 创建组。 其他角色可以通过有限的方式创建组，如下所示。
 
@@ -54,23 +54,23 @@ ms.locfileid: "61422095"
 - Teams服务管理员：Teams管理中心，Azure AD
 - 用户管理员：Microsoft 365 管理中心、Azure AD
 
-如果您是这些角色之一的成员，您可以为受限Microsoft 365组，然后将该用户分配为组的所有者。
+如果你是其中一个角色的成员，你可以为受限用户Microsoft 365组"，然后将该用户分配为组的所有者。
 
 ## <a name="licensing-requirements"></a>许可要求
 
-若要管理创建组的用户，以下人员Azure AD Premium分配Azure AD基本 EDU 许可证：
+若要管理创建组的用户，以下人员Azure AD Premium分配给他们的许可证：
 
 - 配置这些组创建设置的管理员
 - 允许创建组的组的成员
 
 > [!NOTE]
-> 若要详细了解如何分配 Azure[许可证，请参阅](/azure/active-directory/fundamentals/license-users-groups)Azure Active Directory门户中的分配或删除许可证。
+> 若要[详细了解如何](/azure/active-directory/fundamentals/license-users-groups)分配 Azure 许可证，请参阅Azure Active Directory门户中的分配或删除许可证。
 
-以下人员不需要分配Azure AD Premium或Azure AD基本 EDU 许可证：
+以下人员不需要分配Azure AD Premium许可证：
 
 - 作为组Microsoft 365且无法创建其他组的人。
 
-## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>步骤 1：为需要创建组的用户Microsoft 365组
+## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>步骤 1：为需要创建组的用户创建Microsoft 365组
 
 组织中只能有一个组可用于控制能够创建组的人。 但是，可以将其他组嵌套为此组的成员。
 
@@ -88,7 +88,7 @@ ms.locfileid: "61422095"
 
 ## <a name="step-2-run-powershell-commands"></a>步骤 2：运行 PowerShell 命令
 
-必须使用 Azure Active Directory [PowerShell for Graph (AzureAD](/powershell/azure/active-directory/install-adv2))  (模块名称 **AzureADPreview**) 的预览版本更改组级别的来宾访问设置：
+必须使用 Azure Active Directory PowerShell for [Graph (AzureAD](/powershell/azure/active-directory/install-adv2))  (模块名称 **AzureADPreview**) 预览版更改组级别的来宾访问设置：
 
 - 如果之前未安装任何 Azure AD PowerShell 模块版本，请参阅[安装 Azure AD 模块](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview)并按照说明安装公共预览版。
 
@@ -96,9 +96,9 @@ ms.locfileid: "61422095"
 
 - 如果已安装预览版，请运行 `Install-Module AzureADPreview`，确保它是此模块的最新版本。
 
-将以下脚本复制到文本编辑器（如 记事本 或[Windows PowerShell ISE 中](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)）。
+将下面的脚本复制到文本编辑器（如 记事本 或[Windows PowerShell ISE 中](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)）。
 
-将 *\<GroupName\>* 替换为您创建的组的名称。 例如：
+将 *\<GroupName\>* 替换为您创建的组的名称。 例如: 
 
 `$GroupName = "Group Creators"`
 
