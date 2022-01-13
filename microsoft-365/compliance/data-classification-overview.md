@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: e3f621b3ab6ec6d095e5ba8687cf06734cfa0170
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 3236c0edc40cf585b5e6c9e207746e066e95cb9c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110003"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942976"
 ---
 # <a name="learn-about-data-classification"></a>了解数据分类。
 
@@ -67,6 +67,25 @@ ms.locfileid: "61110003"
 
 > [!NOTE]
 > 最佳做法是始终使用特权最低的角色来授予对 Microsoft 365 数据分类的访问权限。
+
+#### <a name="roles-and-role-groups-in-preview"></a>预览版中的角色和角色组
+
+预览版中有角色和角色组，你可以测试这些角色和角色组以微调访问控制。
+
+下面是预览版中Microsoft 信息保护 （MIP） 角色的列表。 若要了解有关它们的详细信息，请参阅[安全与合规中心](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)中的角色
+
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查员
+- 信息保护读者
+
+下面是处于预览状态的 MIP 角色组的列表。 若要了解有关 的详细信息，请参阅[安全与合规中心](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)中的角色组
+
+- 信息保护
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查员
+- 信息保护读者
 
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>内容中的最常用敏感信息类型
 

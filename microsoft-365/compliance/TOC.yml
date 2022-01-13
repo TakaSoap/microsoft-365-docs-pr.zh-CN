@@ -218,7 +218,7 @@
           href: classifier-how-to-retrain-content-explorer.md
     - name: 数据分类
       items:
-        - name: 了解数据分类
+        - name: 了解数据分类。
           href: data-classification-overview.md
         - name: 内容资源管理器入门
           href: data-classification-content-explorer.md
@@ -309,6 +309,8 @@
           href: set-up-irm-in-sp-admin-center.md
         - name: 技术参考
           href: technical-reference-details-about-encryption.md
+        - name: Microsoft 365 加密链
+          href: encryption-office-365-certificate-chains.md
         - name: Office 365 的 TLS 1.0 和 1.1 停用
           href: tls-1.0-and-1.1-deprecation-for-office-365.md
         - name: Office 365 GCC High 和 DoD 中的 TLS 1.0 和 1.1 停用
@@ -652,12 +654,12 @@
         - name: 搜索内容
           href: content-search.md
           items:
-            - name: 内容搜索的功能参考
-              href: content-search-reference.md
             - name: 关键字查询和搜索条件
               href: keyword-queries-and-search-conditions.md
             - name: 使用 KQL 编辑器生成搜索查询
               href: ediscovery-kql-editor.md
+            - name: 搜索 Teams 中本地用户的聊天数据
+              href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: 配置搜索权限筛选
               href: permissions-filtering-for-content-search.md
             - name: 预览电子数据展示搜索结果
@@ -670,14 +672,14 @@
               href: export-a-content-search-report.md
             - name: 搜索和删除电子邮件
               href: search-for-and-delete-messages-in-your-organization.md
-            - name: 搜索 Teams 中本地用户的聊天数据
-              href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: 重试失败的搜索
               href: retry-failed-content-search.md
             - name: 为搜索保留密件抄送收件人
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
         - name: 内容搜索参考
           items:
+            - name: 内容搜索的功能参考
+              href: content-search-reference.md
             - name: 电子数据展示搜索限制
               href: limits-for-content-search.md
             - name: 存储在邮箱中用于电子数据展示的内容
@@ -936,12 +938,12 @@
   items:
     - name: 如何识别为邮箱设置的保留类型
       href: identify-a-hold-on-an-exchange-online-mailbox.md
-    - name: 创建诉讼保留
-      href: create-a-litigation-hold.md
     - name: 删除保留状态邮箱的“可恢复的项目”文件夹中的项目
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: 为置于保留状态的邮箱增加可恢复项目的配额
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: 创建诉讼保留
+      href: create-a-litigation-hold.md
     - name: 保存密件抄送和展开的通讯组收件人
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: 管理审核和警报策略
@@ -954,12 +956,12 @@
           href: set-up-basic-audit.md
         - name: 搜索审核日志
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: 导出、配置和查看审核日志记录
+          href: export-view-audit-log-records.md
         - name: 使用 PowerShell 脚本搜索审核日志
           href: audit-log-search-script.md
         - name: 审核日志中的详细属性
           href: detailed-properties-in-the-office-365-audit-log.md
-        - name: 导出、配置和查看审核日志记录
-          href: export-view-audit-log-records.md
         - name: 打开或关闭审核
           href: turn-audit-log-search-on-or-off.md
         - name: 使用审核日志调查常见问题

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 文件在合规性解决方案中可见 '
-ms.openlocfilehash: 4094df4d465256475e09f8bbaf706c90bbebe34e
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: bdcc690232678b5673950bf75d844a7e658a0c30
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422323"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943576"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -36,7 +36,7 @@ ms.locfileid: "61422323"
 > 如果正在查找可移动存储的设备控制，请查看 [Microsoft Defender for Endpoint 设备控制可移动存储访问控制](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control)。
 
 > [!NOTE]
-> 在 Microsoft 365 合规性中，敏感项的 DLP 策略评估会集中进行，因此将策略和策略更新分发到单个设备时不会有时间延迟。 在合规中心更新策略时，通常需要大约一小时才能跨服务同步这些更新。 同步策略更新后，目标设备上的项在下次访问或修改时会自动重新评估。”
+> 在 Microsoft 365 合规性中，敏感项的 DLP 策略评估会集中进行，因此将策略和策略更新分发到单个设备时不会有时间延迟。 在合规中心更新策略时，通常需要大约一小时才能跨服务同步这些更新。 同步策略更新后，目标设备上的项在下次访问或修改时会自动重新评估。
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>可监视并对其执行操作的终结点活动
 

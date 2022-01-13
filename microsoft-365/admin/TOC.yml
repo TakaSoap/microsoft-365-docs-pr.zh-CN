@@ -1,6 +1,10 @@
 - name: Microsoft 365 管理中心帮助
   href: index.yml
   items:
+    - name: 排名前 20 的管理员帮助文章
+      href: top-m365-admin-articles.yml
+    - name: 管理员培训视频库
+      href: admin-video-library.yml
     - name: 入门
       items:
         - name: 注册

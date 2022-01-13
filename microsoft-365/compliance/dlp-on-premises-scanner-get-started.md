@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 本地扫描仪数据丢失防护
-ms.openlocfilehash: fabe83372822f401fdf8ddd1330bc974dc710fd2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 1154a565f286cfafb5f1f03fdefbf3740b6e9907
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787126"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942964"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>本地扫描程序数据丢失防护入门
 
@@ -46,13 +46,31 @@ ms.locfileid: "60787126"
 
 ### <a name="permissions"></a>权限
 
-
 可在[活动资源管理器](data-classification-activity-explorer.md)中查看终结点 DLP 中的数据。 有四个角色可向活动资源管理器授予权限，用于访问数据的帐户必须是其中任何一个的成员。
 
 - 全局管理员
 - 合规性管理员
 - 安全管理员
 - 合规性数据管理员
+
+#### <a name="roles-and-role-groups-in-preview"></a>预览版中的角色和角色组
+
+预览版中有角色和角色组，你可以测试这些角色和角色组以微调访问控制。
+
+下面是预览版中Microsoft 信息保护 （MIP） 角色的列表。 若要了解有关它们的详细信息，请参阅[安全与合规中心](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)中的角色
+
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查员
+- 信息保护读者
+
+下面是处于预览状态的 MIP 角色组的列表。 若要了解有关 的详细信息，请参阅[安全与合规中心](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)中的角色组
+
+- 信息保护
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查员
+- 信息保护读者
 
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>DLP 本地扫描仪先决条件
 

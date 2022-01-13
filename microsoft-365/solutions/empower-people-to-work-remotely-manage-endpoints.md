@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft Endpoint Manager 管理管理设备、电脑和其他终结点。
-ms.openlocfilehash: 6033ee8f84d72aa8cfb163dc41ef03e427226790
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3d4a46a3513078b904afbe2b4f09642f338c8a81
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199293"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939415"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步骤 4。为设备、电脑和其他终结点部署终结点管理
 
@@ -40,7 +40,7 @@ Microsoft Intune 是一种基于云的服务，侧重于 Microsoft 365 所包含
 
 - **MAM：** 远程工作者可能不希望你对他们的个人设备（也称为自带 (BYOD) 设备）拥有完全控制权。 可给混合工作者提供选项，同时仍要保护组织。 例如，混合工作者如果希望完全访问你的组织资源，可以注册其设备。 或者，如果这些用户仅希望访问电子邮件或 Microsoft Teams，则可使用需要多重身份验证 (MFA) 的应用保护策略来使用这些应用。
 
-有关详细信息，请参阅此 [Microsoft Intune 概述](/intune/fundamentals/what-is-intune)。
+有关详细信息，请参阅[使用 Intune 管理终结点和Microsoft 365](manage-devices-with-intune-overview.md) 基础解决方案。
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
@@ -56,11 +56,11 @@ Configuration Manager 是一种本地管理解决方案，可用于管理网络�
 
 有关详细信息，请参阅此[协同管理概述](/mem/configmgr/comanage/overview)。
 
-## <a name="desktop-analytics"></a>桌面分析
+## <a name="endpoint-analytics"></a>终结点分析
 
-桌面分析是一种基于云的服务，可与 Configuration Manager 集成并为你提供洞察和情报，以便就 Windows 客户端作出明智决策。 它将组织中的数据与连接到 Microsoft 云服务的其他数百万台设备的数据合并。 
+端点分析是一种基于云的服务，可与 Configuration Manager 集成并为你提供洞察和情报，以便就 Windows 客户端作出明智决策。 它将组织中的数据与连接到 Microsoft 云服务的其他数百万台设备的数据合并。 
 
-借助桌面分析，你可以：
+使用 Endpoint Analytics，可以：
 
 - 创建组织中运行的应用的清单。
 - 评估应用程序与最新 Windows 10 功能更新的兼容性。
@@ -68,7 +68,7 @@ Configuration Manager 是一种本地管理解决方案，可用于管理网络�
 - 创建可在最小的一组设备内代表全部应用程序和驱动程序的试点组。
 - 将 Windows 10 部署到试点设备和生产管理设备。
 
-有关详细信息，请参阅此[桌面分析概述](/mem/configmgr/desktop-analytics/overview)。
+有关详细信息，请参阅此[端点分析概述](/mem/configmgr/desktop-analytics/overview)。
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 

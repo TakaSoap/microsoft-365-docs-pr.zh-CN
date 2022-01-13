@@ -17,16 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e2ae9e71764895cd87deefad1e01aacf965dcf7
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 1740d910f95a0076da34b7a08e66853fb7cca598
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064519"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939629"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -133,7 +132,7 @@ TTL: 3600 (or your provider default)
 - 如果 **配置了 DKIM**，请通过运行以下命令轮换位数：
 
   ```powershell
-  Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
+  Rotate-DkimSigningConfig -KeySize 2048 -Identity <DkimSigningConfigIdParameter>
   ```
 
   **或者**
@@ -185,22 +184,22 @@ Get-DkimSigningConfig -Identity <domain> | Format-List Selector1CNAME, Selector2
 CNAME 记录使用以下格式。
 
 > [!IMPORTANT]
-> 如果你是我们的 GCC High 客户，我们会以不同方式计算 _domainGuid_！ 不是查找你的 _initialDomain_ 来计算 _domainGuid_，而是直接从自定义域计算。 例如，如果自定义域名为“contoso.com”，则 domainGuid 将变为“contoso-com”，任何句点都将替换为短划线。 因此，无论 initialDomain 指向什么 MX 记录，你都将始终使用上述方法来计算要在 CNAME 记录中使用的 domainGuid。
+> 如果你是我们的 GCC High 客户，我们会以不同方式计算 _customDomainIdentifier_！ 不是查找你的 _initialDomain_ 来计算 _customDomainIdentifier_，而是直接从自定义域计算。 例如，如果自定义域名为“contoso.com”，则 _customDomainIdentifier_ 将变为“contoso-com”，任何句点都将替换为短划线。 因此，无论 _initialDomain_ 指向什么 MX 记录，你都将始终使用上述方法来计算要在 CNAME 记录中使用的 _customDomainIdentifier_。
 
 ```console
 Host name:            selector1._domainkey
-Points to address or value:    selector1-<domainGUID>._domainkey.<initialDomain>
+Points to address or value:    selector1-<customDomainIdentifier>._domainkey.<initialDomain>
 TTL:                3600
 
 Host name:            selector2._domainkey
-Points to address or value:    selector2-<domainGUID>._domainkey.<initialDomain>
+Points to address or value:    selector2-<customDomainIdentifier>._domainkey.<initialDomain>
 TTL:                3600
 ```
 
 其中：
 
 - 对于 Microsoft 365，选择器始终为“selector1”或“selector2”。
-- _domainGUID_ 与显示在 mail.protection.outlook.com 前面的自定义域的自定义 MX 记录中的 _domainGUID_ 相同。例如，在域 contoso.com 的以下 MX 记录中，_domainGUID_ 为 contoso com：
+- _customDomainIdentifier_ 与显示在 mail.protection.outlook.com 前面的自定义域的自定义 MX 记录中的 _customDomainIdentifier_ 相同。 例如，在域 contoso.com 的以下 MX 记录中，_customDomainIdentifier_ 为 contoso com：
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
@@ -236,19 +235,17 @@ TTL:                3600
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>若要在 Microsoft 365 Defender 门户中为自定义域启用 DKIM 签名
 
-1. 使用工作或学校帐户打开 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a>。
+1. 在 Microsoft 365 Defender 门户的 <https://security.microsoft.com> 中，转到“**规则**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**DKIM**”。 若要直接转到 DKIM 页面，请使用 <https://security.microsoft.com/dkimv2>。
 
-2. 转到 **“规则”** 部分的 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **DKIM**。 或者，若要直接转到 DKIM 页面，请使用 <https://security.microsoft.com/dkimv2>。
+2. 在 **DKIM** 页面，通过点击名称选择域。
 
-3. 在 **DKIM** 页面，通过点击名称选择域。
-
-4. 在出现的详细信息浮出控件中，将 **使用 DKIM 签名为该域签名消息** 设置更改为 **已启用**（![切换打开。](../../media/scc-toggle-on.png)）
+3. 在出现的详细信息浮出控件中，将 **使用 DKIM 签名为该域签名消息** 设置更改为 **已启用**（![切换打开。](../../media/scc-toggle-on.png)）
 
    完成后，请点击 **轮换 DKIM 密钥**。
 
-5. 对每个自定义域重复这些步骤。
+4. 对每个自定义域重复这些步骤。
 
-6. 如果是首次配置 DKIM，并且看到错误“没有为此域保存 DKIM 密钥”，则必须使用 Windows PowerShell 启用 DKIM 签名，如下一步中所述。
+5. 如果是首次配置 DKIM，并且看到错误“没有为此域保存 DKIM 密钥”，则必须使用 Windows PowerShell 启用 DKIM 签名，如下一步中所述。
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>使用 PowerShell 为自定义域启用 DKIM 签名
 
@@ -396,7 +393,7 @@ Return-Path: <communication@bulkemailprovider.com>
 
 **尽管 DKIM 旨在帮助防止欺骗，但 DKIM 与 SPF 和 DMARC 协同工作效果更佳。**
 
-设置了 DKIM 后，如果你尚未设置 SPF，则应执行此操作。有关 SPF 的简要介绍以及快速配置 SPF 的信息，请参阅 [**在 Microsoft 365 中设置 SPF 以帮助防止欺骗**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。有关 Microsoft 365 如何使用 SPF 的更深入了解，或者有关故障排除或非标准部署（如混合部署）的信息，请首先阅读 [Microsoft 365 如何使用发件人策略框架 (SPF) 来防止欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)。 
+设置了 DKIM 后，如果你尚未设置 SPF，则应执行此操作。有关 SPF 的简要介绍以及快速配置 SPF 的信息，请参阅 [**在 Microsoft 365 中设置 SPF 以帮助防止欺骗**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。有关 Microsoft 365 如何使用 SPF 的更深入了解，或者有关故障排除或非标准部署（如混合部署）的信息，请首先阅读 [Microsoft 365 如何使用发件人策略框架 (SPF) 来防止欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)。
 
 接下来，请参阅 [**使用 DMARC 验证电子邮件**](use-dmarc-to-validate-email.md)。 [反垃圾邮件邮件头](anti-spam-message-headers.md)包括 Microsoft 365 用来执行 DKIM 检查的语法和头字段。
 
@@ -410,4 +407,4 @@ Return-Path: <communication@bulkemailprovider.com>
 
 通过 PowerShell 进行密钥轮换：[Rotate DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig) 
 
-[使用 DMARC 验证电子邮件](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
+[使用 DMARC 验证电子邮件](use-dmarc-to-validate-email.md)
