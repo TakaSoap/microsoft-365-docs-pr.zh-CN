@@ -17,15 +17,16 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Microsoft 365 Defender 门户中从“受限的用户”页面删除用户。 用户之所以被添加到“受限的用户”门户是因为发送出站垃圾邮件，这通常是由于帐户遭入侵所致。
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9a4cea0a21dce8115c31f39033639c90fdd1bf0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 66b810f7bb6381d405ee7ffc0d6b1cf7a10f2bf2
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180731"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941428"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>在 Microsoft 365 中从“受限的用户”门户中删除被阻止的用户
 
@@ -66,7 +67,7 @@ ms.locfileid: "60180731"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-a-user-from-the-restricted-users-list"></a>使用 Microsoft 365 Defender 门户从“受限的用户”列表中删除用户
 
-1. 在 Microsoft 365 Defender 门户中，转到 **电子邮件和协作**\>**查看**\>**受限用户**。
+1. 在 Microsoft 365 Defender 门户 <https://security.microsoft.com> 中，转到 **电子邮件和协作** \> **查看** \> **受限用户**。 若要直接转到 **受限用户** 页，请使用 <https://security.microsoft.com/restrictedusers>。
 
 2. 在“**受限的用户**”页面上，查找你希望取消阻止的用户并通过单击该用户进行选择。
 

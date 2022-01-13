@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: a2a94a47ca9f19087bfa5cf9b8d027ae2c551641
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: c59c9c06dfb8b15b6ee4bbd54cf86f54ad816e0a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560080"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937480"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -997,7 +997,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 ### <a name="sensitivity-label-activities"></a>敏感度标签活动
 
-下表列出了因标记 SharePoint Online 和 Teams 网站的活动而产生的事件。
+下表列出了使用[敏感度标签](sensitivity-labels.md)时产生的事件。
 
 |友好名称|操作|说明|
 |:-----|:-----|:-----|

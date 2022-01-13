@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好部署敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 052f4d84d4e974faad75c80d18d02cbac3501196
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: e07279a2de421985b0ba6f97d2b6ad843d2ba9fa
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645946"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61874024"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -65,7 +65,17 @@ ms.locfileid: "61645946"
 
 如果不使用这些默认角色，则可以创建新的角色组，并将 **敏感度标签管理员** 或 **组织配置** 角色添加到此组。对于只读角色，请使用 **敏感度标签读取者**。 
 
-有关将用户添加到默认角色或创建自己的角色组的说明，请参阅 [Microsoft 365 合规中心中的权限](microsoft-365-compliance-center-permissions.md)。
+> [!NOTE]
+> 现在，在预览版中，可以使用以下角色组：
+> - **信息保护**
+> - **信息保护管理员**
+> - **信息保护分析师**
+> - **信息保护调查员**
+> - **信息保护读取器**
+>
+> 有关每个角色及其包含的新角色的说明，请在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> > **权限和角色** > **合规中心** > **角色** 选择一个角色组， 然后在浮出控件窗格中查看说明。 或者，请参阅[安全与合规中心中的角色组](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)。
+
+有关将用户添加到默认角色组、角色，或创建自己的角色组的说明，请参阅 [Microsoft 365 合规中心中的权限](microsoft-365-compliance-center-permissions.md)。
 
 只有在创建和配置灵敏度标签及其标签策略时才需要这些权限。 在应用或服务中应用标这些签时不需要这些权限。 如果与敏感度标签相关的特定配置需要其他权限，则这些权限将在其各自的文档说明中列出。
 

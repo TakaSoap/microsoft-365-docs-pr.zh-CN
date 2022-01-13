@@ -16,14 +16,14 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: 使用 Microsoft 365 中的电子数据展示工具在 Exchange 混合部署中搜索和导出本地用户的 Teams 聊天数据。
+description: 管理员可以使用 Microsoft 365 中的电子数据展示工具在 Exchange 混合部署中搜索和导出本地用户的 Teams 聊天数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2398ff8328b075403906c460f51a738664fec42d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fdd142783313418c8c65c04f9b5e344ff325ec2c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192147"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871439"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>搜索 Teams 中本地用户的聊天数据
 
@@ -52,29 +52,23 @@ ms.locfileid: "60192147"
   
 除了此功能之外，你还可以使用电子数据展示工具在基于云的 SharePoint 网站和与每个 Microsoft Team 关联的 Exchange 邮箱中搜索、预览和导出 Teams 内容，以及在基于云的用户的 Exchange Online 邮箱中搜索、预览和导出 1xN Teams 聊天数据。
 
-### <a name="how-this-feature-is-supported-in-content-search-and-core-ediscovery-search-tools"></a>“内容搜索”和核心电子数据展示搜索工具如何支持此功能
-
-Microsoft 365 合规中心中的“内容搜索”以及与核心电子数据展示事例关联的搜索工具中的以下 UI 元素：
-  
-- “**为本地用户添加应用内容**”复选框显示在内容搜索工具的“**位置**”向导页上，并默认选中。 选中此复选框可在内容搜索中包括本地用户的基于云的存储。
-
-    ![向内容搜索 UI 添加“为本地用户添加 Office 应用内容”复选框](../media/EHAMShardCheckBox.png)
-  
-- 当选择搜索特定用户时，可以搜索本地用户。
-
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>搜索本地用户的 Teams 聊天内容
 
-下面介绍了如何使用 Microsoft 365 合规中心中的“内容搜索”来搜索本地用户的 Teams 聊天数据。
+下面介绍了如何使用 Microsoft 365 合规中心中的“内容搜索”来搜索本地用户的 Teams 聊天数据。 还可以使用核心电子数据展示中的搜索工具搜索本地用户的聊天数据。
   
 1. 在 Microsoft 365 合规中心中，转到“**内容搜索**”。
 
 2. 在“**搜索**”选项卡上，单击“**新建搜索**”，然后命名新搜索。
 
-3. 在“**位置**”页面上，为 Exchange 邮箱将切换设置为“**打开**”。 请注意，“**为本地用户添加应用内容**”复选框已显示，并默认选中。
+3. 在“**位置**”页面上，为 Exchange 邮箱将切换设置为“**打开**”。
 
-4. 若要搜索特定用户的 Teams 内容，请选择“**选择用户、组或团队**”，并选择特定用户包含在搜索中。 否则，单击“**下一步**”搜索所有用户（包括本地用户）的 Teams 内容
+4. 若要搜索特定用户（包括本地用户）的 Teams 内容，请选择“**选择用户、组或团队**”，并选择特定用户包含在搜索中。 如果未列出特定用户，搜索将包括所有用户，包括本地用户。
 
-5. 在“**定义搜索条件**”页面上，创建关键字查询，并在必要时将条件添加到搜索查询。 若要仅搜索 Teams 聊天数据，可在“**关键字**”框中添加以下查询：
+5. 确保选中 **为本地用户添加应用内容** 复选框。 这可确保搜索本地用户的云库存储。
+
+    ![在“位置”向导页上，选中“为本地用户添加 Office 应用内容”复选框。](../media/EHAMShardCheckBox.png)
+
+6. 在“**定义搜索条件**”页面上，创建关键字查询，并在必要时将条件添加到搜索查询。 若要仅搜索 Teams 聊天数据，可在“**关键字**”框中添加以下查询：
 
     ```text
     kind:im AND kind:microsoftteams
@@ -90,7 +84,7 @@ Microsoft 365 合规中心中的“内容搜索”以及与核心电子数据展
 
 ## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>使用 PowerShell 搜索本地用户的 Teams 聊天数据
 
-你可以使用安全与合规中心 PowerShell 中的 **New-ComplianceSearch** 和 **Set-ComplianceSearch** cmdlet 来搜索本地用户的 Teams 聊天数据。 如前文所述，无需提交支持请求即可使用 PowerShell 来搜索本地用户的 Teams 聊天数据。
+你还可以使用安全与合规中心 PowerShell 中的 **New-ComplianceSearch** cmdlet 来搜索本地用户的 Teams 聊天数据。 如前文所述，无需提交支持请求即可使用 PowerShell 来搜索本地用户的 Teams 聊天数据。
   
 1. [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
@@ -113,8 +107,6 @@ Microsoft 365 合规中心中的“内容搜索”以及与核心电子数据展
 有关使用这些 cmdlet 的详细信息，请参阅：
   
 - [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
-
-- [Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch)
 
 - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 

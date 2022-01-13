@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: 0332584988ab9a88ef7440f6e5fc71ef3c9cbd5d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: fb7448ffd4ed56deb41bbb1d128608b88e9617ea
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747772"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871823"
 ---
 # <a name="get-started-with-content-explorer"></a>内容资源管理器入门
 
@@ -79,6 +79,25 @@ ms.locfileid: "60747772"
 你还可以将任一个角色或全部两个角色都分配到自定义角色组，以便对内容资源管理器的访问权限进行量身定制。
 
 全局管理员可以分配必要的“内容资源管理器列表查看者”和“内容资源管理器内容查看者”角色组成员身份。
+
+#### <a name="roles-and-role-groups-in-preview"></a>预览版中的角色和角色组
+
+预览版中有角色和角色组，你可以测试这些角色和角色组以微调访问控制。
+
+下面是预览版中Microsoft 信息保护 （MIP） 角色的列表。 若要了解有关它们的详细信息，请参阅[安全与合规中心](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)中的角色
+
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查员
+- 信息保护读者
+
+下面是处于预览状态的 MIP 角色组的列表。 若要了解有关 的详细信息，请参阅[安全与合规中心](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)中的角色组
+
+- 信息保护
+- 信息保护管理员
+- 信息保护分析师
+- 信息保护调查员
+- 信息保护读者
 
 ## <a name="content-explorer"></a>内容资源管理器
 

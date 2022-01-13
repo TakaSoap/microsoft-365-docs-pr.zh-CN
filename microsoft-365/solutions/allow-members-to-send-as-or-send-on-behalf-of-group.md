@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
-description: 了解如何允许团队成员以组Microsoft 365或代表组发送电子邮件Microsoft 365发送电子邮件。
-ms.openlocfilehash: a21e30ef613f557d1206ada5bc9ab4be8a083834
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: 了解如何允许组成员以组Microsoft 365或代表组发送电子邮件Microsoft 365发送电子邮件。
+ms.openlocfilehash: e3742b645d1efb2acb4bd14d109314947d781246
+ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421578"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62009029"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允许成员以组的名义发送或代表组发送
 
@@ -32,19 +32,19 @@ ms.locfileid: "61421578"
 
 本文介绍全局管理员或Exchange管理员如何设置这些权限。
   
-例如，如果 Megan Bowen 是 **Training** Microsoft 365 组的一部分，并且对该组具有"发送为"权限，那么如果作为组发送电子邮件，则看起来是 **"培训**"组已发送电子邮件。 
+例如，如果 Megan Bowen 是 **Training** Microsoft 365 组的一部分，并且对该组具有"发送为"权限，那么如果她以组发送电子邮件，则看起来就像培训组已发送电子邮件一样。 
   
-"**代表发送**"权限允许用户代表组Microsoft 365发送电子邮件。 例如，如果 Alex Wilber 是 Marketing **Microsoft 365** 组的一部分，并且具有"代表发送"权限并作为组发送电子邮件，则电子邮件看起来好像是由 **Alex Wilber** 代表 Marketing 发送的。
+"**代表发送"** 权限允许用户代表组Microsoft 365发送电子邮件。 例如，如果 Alex Wilber 是 Marketing **Microsoft 365** 组的一部分，并且具有"代表发送"权限并作为组发送电子邮件，则电子邮件看起来好像是由 **Alex Wilber** 代表 Marketing 发送的。
 
 > [!IMPORTANT]
 > 您可以为 **给定用户配置****"** 代理发送"或"代表发送"，但不能同时配置这两者。 如果同时配置这两者，它将默认 **为"发送为"。**
 
-> [!TIP]
-> 请参阅[从组](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)或代表Microsoft 365发送电子邮件，了解如何使用 Outlook 和 Outlook Web 从组发送电子邮件。
+> [!NOTE]
+> **混合和** 混合 **配置** 不支持代理发送Outlook for Mac代表Exchange发送。
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>允许成员以组发送电子邮件
 
-本部分介绍如何允许用户在 Exchange 管理中心内以组 (<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">EAC</a>) 电子邮件Exchange Online。
+本部分介绍如何允许用户在 Exchange 管理中心中以组 (<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">EAC</a>) Exchange Online。
   
 1. In the Exchange admin center， go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
     
@@ -79,6 +79,8 @@ ms.locfileid: "61421578"
     ![键入 以从列表中搜索或选取用户。](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>相关文章
+
+[从组或代表组发送电子邮件Microsoft 365发送电子邮件](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
 
 [协作治理规划建议](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 

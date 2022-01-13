@@ -16,17 +16,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 - intro-overview
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d6d237b489848870d58a8288ee787c3634072742
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 07dcc4c5d6d9758828fe2b48344a3c6ccc3b8a2e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645616"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873533"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -97,7 +96,7 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>配置 Microsoft Defender for Office 365 策略
 
-借助 Microsoft Defender for Office 365，组织的安全团队可以通过在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a> \> **电子邮件和写作** \> **策略和规则** \> **威胁策略** 中定义策略来配置保护。
+借助 Microsoft Defender for Office 365，组织的安全团队可以通过在 Microsoft 365 Defender 门户 <https://security.microsoft.com> **电子邮件和写作** \> **策略和规则** \> **威胁策略** 中定义策略来配置保护。 或者，可以使用 <https://security.microsoft.com/threatpolicy> 直接转到 **威胁策略** 页。
 
 观看[此视频](https://www.youtube.com/watch?v=vivvTmWJ_3c)了解更多信息。
 
@@ -118,7 +117,7 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>查看 Microsoft Defender for Office 365 报告
 
-Microsoft Defender for Office 365 包括 [报告](view-reports-for-mdo.md) 以监视 Defender for Office 365。 你可以在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a>中通过“**报告**”\>“**电子邮件和协作**”\>“**电子邮件和协作报告**”，或直接通过 <https://security.microsoft.com/securityreports> 来访问报告。
+Microsoft Defender for Office 365 包括 [报告](view-reports-for-mdo.md) 以监视 Defender for Office 365。 你可以在 Microsoft 365 Defender 门户 <https://security.microsoft.com> 中通过 **报告** \> **电子邮件和协作** \> **电子邮件和协作报告**。 或者，可以使用 <https://security.microsoft.com/securityreports> 直接转到 **电子邮件和协作报告** 页。
 
 实时更新报告，为你提供最新见解。 这些报告还提供建议并向你提醒即将面临的威胁。 预定义的报告包括以下内容：
 

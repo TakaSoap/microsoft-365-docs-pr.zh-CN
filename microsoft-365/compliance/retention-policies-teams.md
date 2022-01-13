@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: f3508db76a4a4dca9986de15517ca0df2df5ddb9
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.openlocfilehash: 68ac9febd12faa9d9ee70d97f293db80494f48f5
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61586587"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936578"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -74,8 +74,10 @@ Teams 使用 Azure 支持的聊天服务作为其所有消息 (聊天和频道�
 
 消息在 SubstrateHolds 文件夹中至少保留 1 天，然后如果它们符合删除条件，定时器工作将在下次运行时永久地删除它们。
 
-> [!NOTE]
-> 由于[第一个保留策略](retention.md#the-principles-of-retention-or-what-takes-precedence)，如果由于另一个保留策略而必须保留同一项目，或者由于法律或调查原因而处于电子数据展示保留状态，则永久删除始终处于暂停状态。
+> [!IMPORTANT]
+> 由于保留[第一原则](retention.md#the-principles-of-retention-or-what-takes-precedence)，并且由于 Teams 聊天和频道邮件存储在 Exchange Online 邮箱中，因此，如果邮箱受另一保留策略（包括应用于 Exchange 位置的策略）、诉讼保留、延迟保留，或者出于法律或诉讼原因对邮箱应用电子数据展示保留，则始终暂停从 SubstrateHolds 文件夹永久删除。
+>
+> 虽然邮箱包含在适用的保留中，但已删除的 Teams 聊天和频道邮件将不再在 Teams 应用中可见，但将继续通过电子数据展示进行发现。
 
 为聊天和频道消息配置保留策略后，内容路径取决于保留策略是“保留后删除”、“仅保留”还是“仅删除”。
 

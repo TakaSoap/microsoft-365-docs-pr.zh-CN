@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 MailItemsAccessed 邮箱审核操作对被盗用的用户账户进行司法鉴定调查。
-ms.openlocfilehash: eeb52058a9937b9ba59b53c7491ccf652cac5288
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8446c933f71717e57850bbbf2cce49391e26782c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152966"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872617"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>使用“高级审核”来调查被盗用的帐户
 
 被盗用的用户账户（也称为“*账户接管*”）是攻击的一种类型，攻击者获取用户账户的访问权限并作为用户操作。 这些类型的攻击造成的损害有时比攻击者所需要的更大。 调查被盗电子邮件账户时，必须假设泄露的邮件数据要比通过跟踪攻击者实际存在所指示的数量要多。 根据电子邮件中的数据类型，需要假定敏感信息被盗用或面临着监管罚款，除非能够证明敏感信息未泄露。 例如，如果有证据表明患者健康信息（PHI）被公开，受 HIPAA 监管的组织面临巨额罚款。 在这些情况中，攻击者很可能对患者健康信息感兴趣，但是组织仍然必须汇报数据泄漏，除非他们提供相应证明。
 
-为帮助调查被盗的电子邮件账户，我们现在通过 *MailItemsAccessed* 邮箱审核活动审核由邮件协议和客户端进行的邮件数据存取。 此新审核的操作将可帮助调查人员更好地了解电子邮件数据泄露，并有助于确定可能被盗取指定邮件项的泄漏范围。 使用此新审核活动的目标是司法见证可防御性，以有助于断定特定的邮件数据未被盗取。 如果攻击者获得了对特定邮件的访问权限，Exchange Online 将审核该事件，即使没有迹象表明该邮件项已被实际阅读。
+为帮助调查被盗的电子邮件账户，我们现在通过 *MailItemsAccessed* 邮箱审核活动审核由邮件协议和客户端进行的邮件数据存取。 此新审核的操作将可帮助调查人员更好地了解电子邮件数据泄露，并有助于确定可能被盗取指定邮件项的泄漏范围。 使用此新审核活动的目标是司法见证可防御性，以有助于断定特定的邮件数据未被盗取。 如果攻击者获得了对特定邮件的访问权限，Exchange Online 将审核该事件，即使没有迹象表明该邮件项已被阅读。
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>MailItemsAccessed 邮箱审核操作
 
@@ -37,7 +37,7 @@ MailItemsAccessed 邮箱审核操作包含所有邮件协议：POP、IMAP、 MAP
 
 ### <a name="auditing-sync-access"></a>审核同步访问权限
 
-仅当邮箱由适用于 Windows 或 Mac 的桌面版 Outlook 客户端存取时，才记录同步操作。 同步操作期间，这些客户端通常从云端下载大型邮件项至本地计算机。 同步操作的审核量非常大。 因此我们取代生成同步的各邮件项的审核记录，我们只针对含有被同步项的邮件文件夹生成审核事件。 这假设已同步文件夹中的 *所有* 邮件项已被盗用。 访问权限类型会记录在审核记录的 OperationProperties 字段中。
+仅当邮箱由适用于 Windows 或 Mac 的桌面版 Outlook 客户端存取时，才记录同步操作。 同步操作期间，这些客户端通常从云端下载大型邮件项至本地计算机。 同步操作的审核量非常大。 因此，我们不为同步的每个邮件项目生成审核记录，而是为包含已同步项目的邮件文件夹生成审核事件，并假定已同步文件夹中的 *所有* 邮件项目已泄露。 访问权限类型会记录在审核记录的 OperationProperties 字段中。
 
 参见“[使用 MailItemsAccessed 审核记录进行司法鉴定调查](#use-mailitemsaccessed-audit-records-for-forensic-investigations)”一节的第 2 步了解在审核记录中显示同步访问权限的示例。
 
@@ -49,7 +49,7 @@ MailItemsAccessed 邮箱审核操作包含所有邮件协议：POP、IMAP、 MAP
 
 ### <a name="throttling-of-mailitemsaccessed-audit-records"></a>MailItemsAccessed 审核记录的限制
 
-如果在不到 24 小时内生成超过 1,000 条 MailItemsAccessed 审核记录，Exchange Online 将停止为 MailItemsAccessed 活动生成审核记录。 如果邮箱被限制，MailItemsAccessed 活动将在邮箱被限制后不记录达 24 小时。 如果发生这种i情况，邮箱很可能在此期间被盗用。 MailItemsAccessed 活动的记录将在 24 小时候恢复。
+如果在不到 24 小时内生成超过 1,000 条 MailItemsAccessed 审核记录，Exchange Online 将停止为 MailItemsAccessed 活动生成审核记录。 如果邮箱被限制，MailItemsAccessed 活动将在邮箱被限制后不记录达 24 小时。 如果邮箱被限制，则在此期间邮箱可能会遭到入侵。 MailItemsAccessed 活动的记录将在 24 小时候恢复。
 
 有关限制的事项，请注意以下几点：
 
@@ -101,7 +101,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*IsThrottled:True*"} | FL
    ```
 
-2. 检查同步活动。 如果攻击者使用电子邮件客户端下载邮箱中的邮件，他们可将计算机与互联网断开并本地存取邮件，而不与服务器交互。 这意味着邮箱审核无法审核这些活动。
+2. 检查同步活动。 如果攻击者使用电子邮件客户端下载邮箱中的邮件，他们可将计算机与互联网断开并本地存取邮件，而不与服务器交互。 在这种情况下，邮箱审核将无法审核这些活动。
 
    若要搜索被同步操作所存取邮件项的 MailItemsAccessed 记录，运行下列命令：
 
@@ -129,7 +129,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
    |---|---|
    |ClientInfoString|描述协议、客户端（包含版本）|
    |ClientIPAddress|客户端计算机的 IP 地址。|
-   |SessionId|会话 ID 有助于区分攻击者活动与同一账户的日常账户活动（如果账户被盗用）|
+   |SessionId|会话 ID 有助于区分攻击者活动与同一账户的日常账户活动（适用于遭到入侵的帐户）|
    |UserID|阅读邮件用户的 UPN。|
    |
 
@@ -154,7 +154,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
    可以使用审核数据采用两种方式进行绑定操作：
 
    - 访问或收集攻击者访问的所有电子邮件，方法是使用 InternetMessageId 查找这些邮件，然后检查这些邮件是否包含敏感信息。
-   - 使用 InternetMessageId 搜索与一组可能敏感的电子邮件相关的审核记录。 如果只考虑少数邮件，这非常有用。
+   - 使用 InternetMessageId 搜索与一组可能敏感的电子邮件相关的审核记录。 如果你只关心几条消息，这将非常有用。
 
 ## <a name="filtering-of-duplicate-audit-records"></a>筛选重复的审核记录
 

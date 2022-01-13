@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 818619bef6a752088e1d260171f3d2c645efa842
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b9fb6afa9878f09871823d54d69edf677c1d65a2
+ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938068"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62008981"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>用于保护电子邮件的策略建议
 
@@ -37,7 +37,7 @@ ms.locfileid: "61938068"
 
 这些建议基于三种不同的安全和保护层，这些层可以基于你的需求粒度应用：起始点、企业和 **专用安全**。   You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
 
-这些建议要求用户使用新式电子邮件客户端，Outlook适用于 iOS 和 Android 的客户端。 Outlook for iOS 和 Android 的移动设备支持 Office 365。 这些Outlook应用还构建了支持移动使用的管理功能，并与其他 Microsoft 云安全性功能协同工作。 有关详细信息，请参阅适用于[iOS Outlook Android 常见问题解答](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)。
+这些建议要求用户使用新式电子邮件客户端，包括Outlook适用于 iOS 和 Android 的客户端。 Outlook for iOS 和 Android 的移动设备支持 Office 365。 这些Outlook应用还构建了支持移动使用的管理功能，并与其他 Microsoft 云安全性功能协同工作。 有关详细信息，请参阅适用于[iOS Outlook Android 常见问题解答](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)。
 
 ## <a name="update-common-policies-to-include-email"></a>更新常见策略以包括电子邮件
 
@@ -63,9 +63,11 @@ ms.locfileid: "61938068"
 
 ## <a name="block-activesync-clients"></a>阻止 ActiveSync 客户端
 
-此策略阻止 ActiveSync 客户端绕过其他条件访问策略。 策略配置仅适用于 ActiveSync 客户端。 通过选择 **["需要应用保护策略"，](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** 此策略将阻止 ActiveSync 客户端。 有关创建此策略的详细信息，请参阅使用条件访问要求 [云应用访问的应用保护策略](/azure/active-directory/conditional-access/app-protection-based-conditional-access)。
+Exchange ActiveSync可用于同步桌面和移动设备上的消息和日历数据。
 
-- 按照方案[1](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)中的"步骤 2：使用 ActiveSync (EAS) 为 Exchange Online 配置 Azure AD 条件访问策略"：Office 365 应用需要具有应用保护策略的已批准应用，这将阻止利用基本身份验证的 Exchange ActiveSync 客户端连接到Exchange Online。
+对于移动设备，不支持 Intune 应用保护策略 (或不支持在应用保护策略) 中定义的支持新式验证的 Exchange ActiveSync 客户端或使用基本身份验证的 Exchange ActiveSync 客户端将基于在"要求批准的应用和应用保护"中创建的条件访问策略进行阻止。 [](identity-access-policies.md#require-approved-apps-and-app-protection)
+
+若要阻止Exchange ActiveSync设备上使用基本身份验证，请按照在所有设备上阻止 Exchange ActiveSync 中的步骤操作，这将阻止在非移动设备上使用基本身份验证的[Exchange ActiveSync](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices)客户端连接到Exchange Online。
 
 您还可以使用身份验证策略禁用 [基本身份验证](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)，这将强制所有客户端访问请求使用新式验证。
 
