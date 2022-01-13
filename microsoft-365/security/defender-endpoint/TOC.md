@@ -276,9 +276,7 @@
 ###### [ASR 规则部署阶段 3 - 实现](attack-surface-reduction-rules-deployment-phase-3.md)
 ###### [ASR 规则部署阶段 4 - 操作化](attack-surface-reduction-rules-deployment-phase-4.md)
 ##### [ASR 规则参考](attack-surface-reduction-rules-reference.md)
-##### [评估 ASR 规则](evaluate-attack-surface-reduction.md)
-##### [启用 ASR 规则](enable-attack-surface-reduction.md)
-##### [自定义 ASR 规则](customize-attack-surface-reduction.md)
+##### [启用 ASR 规则备用方法](enable-attack-surface-reduction.md)
 #### [关于攻击面减少的常见问题解答](attack-surface-reduction-faq.yml)
 
 ### 下一代保护

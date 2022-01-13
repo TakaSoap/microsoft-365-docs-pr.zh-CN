@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在家办公，在家办公，混合，远程工作者，混合办公，远程员工，混合连接，远程访问，远程办公，远程办公，远程办公，移动办公，远程工作，随时随地开展工作，灵活的工作场所
 description: 逐步设置基础结构层，以便远程工作者能够安全访问本地和 Microsoft 365 资源。
-ms.openlocfilehash: 296c8ccd3373d7b23b187f60b1a93318538ec8fe
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 3eb70d99e44f296144ea9fa9c79ffd41475888ef
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554512"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871907"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>设置使用 Microsoft 365 实现混合工作的基础结构
 
@@ -60,7 +60,7 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 
 - 安全
 
-  使用 Microsoft 365 和 Windows 10 的多重身份验证 (MFA) 和内置安全功能来保护登录，防止恶意软件、恶意攻击和数据丢失。
+  使用 Microsoft 365 和 Windows 11 或 10 的多重身份验证 (MFA) 和内置安全功能来保护登录，防止恶意软件、恶意攻击和数据丢失。
 
 - 托管
 
@@ -76,7 +76,7 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 
   - 用于划分工作并完成任务的共享任务和工作流。
 
-为获得无缝登录体验，应将本地 Active Directory 域服务 (AD DS) 用户帐户与 Azure Active Directory (Azure AD) 同步。 若要保护 Windows 10 设备，应在 Intune 中对其进行注册。 下面是基础结构的高级视图。
+为获得无缝登录体验，应将本地 Active Directory 域服务 (AD DS) 用户帐户与 Azure Active Directory (Azure AD) 同步。 要保护 Windows 11 或 10 设备，应在 Intune 中注册这些设备。 下面是基础结构的高级视图。
 
 ![面向使用 Microsoft 365 的混合工作者的基本基础结构。](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
@@ -90,13 +90,13 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 |自助服务密码重置 (SSPR)|允许用户重置或解锁其密码或帐户。|Microsoft 365 E3 或 E5|
 |Azure AD 应用程序代理|为 Intranet 服务器上托管的基于 Web 的应用程序提供安全的远程访问权限。|需要单独的付费 Azure 订阅|
 |配置点到站点 VPN|通过 Azure 虚拟网络创建从远程工作者的设备到 intranet 的安全连接。|需要单独的付费 Azure 订阅|
-|Windows 虚拟桌面|支持只能将其个人和非托管设备与在 Azure 中运行的虚拟桌面配合使用的远程工作者。|需要单独的付费 Azure 订阅|
+|Windows 365|支持只能通过 Windows 365 云电脑使用其个人和非托管设备的远程工作者。|需要单独的付费 Azure 订阅|
 |远程桌面 |允许员工通过 Intranet 连接到基于 Windows 的计算机。|Microsoft 365 E3 或 E5|
 |远程桌面服务网关|加密通信，防止 RDS 主机直接向 Internet 公开。|需要单独的 Windows Server 许可证|
 |Microsoft Intune|管理设备和应用程序。|Microsoft 365 E3 或 E5|
 |内容和功能，|管理设备上的软件安装、更新和设置|需要单独的 Configuration Manager 许可证|
-|桌面分析|确定你的 Windows 客户端的更新准备情况。|需要单独的 Configuration Manager 许可证|
-|Windows Autopilot|设置和预配置新的 Windows 10 设备，以便高效使用。|Microsoft 365 E3 或 E5|
+|终结点分析|确定你的 Windows 客户端的更新准备情况。|需要单独的 Configuration Manager 许可证|
+|Windows Autopilot|设置和预配置新的 Windows 11 或 10 设备，以便高效使用。|Microsoft 365 E3 或 E5|
 |Microsoft Teams、Exchange Online、SharePoint Online 和 OneDrive、Microsoft 365 应用版、Microsoft Power Platform、Yammer|创建、沟通和协作。|Microsoft 365 E3 或 E5|
 ||||
 
@@ -106,15 +106,13 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 
 [![助力混合工作者海报。](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
 
-你还可以以 [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) 格式下载海报，并将其打印在信件、法律文件或小报(11 x 17)大小的纸张上。
-
 ## <a name="provide-hybrid-working-for-all-of-your-workers"></a>为所有工作者提供混合工作
 
 使用以下设备，你可以使所有工作者随时随地保持生产力：
 
-- 一个新式设备，例如 Surface laptop 和 Windows 10，具备通过网页直接访问 Microsoft 365 云应用和服务的功能、安全性和性能。
+- 新式设备（例如 Surface laptop 和 Windows 11 或 10），具备通过网页直接访问 Microsoft 365 云应用和服务的功能、安全性和性能。
 
-- 包括旧式家用笔记本电脑或台式机在内的任何设备，可通过快速部署的[基于 Windows 10 的虚拟桌面](empower-people-to-work-remotely-remote-access.md#deploy-azure-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices)间接访问 Microsoft 365 云应用和服务。此选项可提供高性能、强安全性和简化的 IT 管理。
+- 包括旧式家用笔记本电脑或台式机在内的任何设备，这些设备可通过 [Windows 365 云电脑](empower-people-to-work-remotely-remote-access.md#deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices) 间接访问 Microsoft 365 云应用和服务。 该选项能提高性能、增强安全性并简化 IT 管理。
 
 ## <a name="next-steps"></a>后续步骤
 

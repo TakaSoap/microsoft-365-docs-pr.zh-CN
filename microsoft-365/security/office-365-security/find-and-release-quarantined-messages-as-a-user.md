@@ -20,12 +20,12 @@ ms.custom:
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 262ffa4cdb4aae7af0624fe3b51b10b9b088b3c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1cfdd441cff8481ef1ec7ea5ef3cabc54f062694
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213489"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873485"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 
@@ -72,7 +72,7 @@ _隔离策略_ 根据在 [受支持功能](quarantine-policies.md#step-2-assign-
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开 Microsoft 365 Defender 门户，请转到 <https://security.microsoft.com>。 要直接打开“**隔离**”页，请使用 <https://security.microsoft.com/quarantine>。
+- 若要打开 Microsoft 365 Defender 门户，请转到 <https://security.microsoft.com>。 要直接转到“**隔离**”页，请使用 <https://security.microsoft.com/quarantine>。
 
 - 管理员可以配置邮件在永久删除前的隔离期限（反垃圾邮件策略）。 隔离到期的邮件不可恢复。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
@@ -83,7 +83,8 @@ _隔离策略_ 根据在 [受支持功能](quarantine-policies.md#step-2-assign-
 > [!NOTE]
 > 查看已隔离邮件的能力由应用于隔离邮件类型的 [隔离策略](quarantine-policies.md) 控制(出于隔离原因，这可能是 [默认的隔离策略](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features))。
 
-1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**检查**”\>“**隔离**”。
+1. 在位于 <https://security.microsoft.com> 的 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**审阅**”\>“**隔离**”。 要直接转到“**隔离**”页，请使用 <https://security.microsoft.com/quarantine>。
+
 2. 在“**隔离**”页上，可以通过单击可用的列标题对结果进行排序。 单击“**自定义列**”以更改显示的列。 默认值标有星号（<sup>\*</sup>）：
 
    - **接收时间**<sup>\*</sup>

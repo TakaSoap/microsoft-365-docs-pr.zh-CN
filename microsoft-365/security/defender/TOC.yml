@@ -98,6 +98,8 @@
           href: deploy-supported-services.md
         - name: 启用 Microsoft 365 Defender 常见问题解答
           href: m365d-enable-faq.md
+        - name: 培训安全人员
+          href: microsoft-365-defender-train-security-staff.md
     - name: 抵御威胁
       items:
         - name: Microsoft 安全功能分数

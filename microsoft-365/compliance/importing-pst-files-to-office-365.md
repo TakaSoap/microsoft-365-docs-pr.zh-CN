@@ -21,29 +21,29 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: 了解如何使用 Microsoft 365 合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
-ms.openlocfilehash: 7424aeb482339da92c82afc3e50ac1f4471e741c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 67488566b65648f20cf48b7ab767e95a8732da57
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109751"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873311"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 
 > [!NOTE]
-> 本文适用于管理员。 你正在尝试将 PST 文件导入到自己的邮箱吗？ 请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)。
+> 这篇文章的使用对象为管理员。你是否正在尝试将 PST 文件导入到自己的邮箱？请参阅 [从 Outlook.pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)。
 
-可以使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> 的导入服务将 PST 文件快速批量导入到组织的 Exchange Online 邮箱中。可以通过两种方式将 PST 文件导入到 Office 365：
+可以使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> 的导入服务，将 PST 文件快速批量导入到组织的 Exchange Online 邮箱中。 可通过两种方法将 PST 文件导入到 Microsoft 365 中：
 
-- **网络上传** ![云上传。](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) –通过网络将 PST 文件上传到 Microsoft 云中的临时 Azure 存储位置。 然后，使用 Office 365 导入服务将 PST 数据导入到组织的邮箱中。
+- **网络上传** ![云上传。](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) –通过网络将 PST 文件上传到 Microsoft 云中的临时 Azure 存储位置。 然后，使用 Microsoft 365 导入服务将 PST 数据导入到组织的邮箱中。
 
-- **驱动器配送** ![硬盘。](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) –将 PST 文件复制到 BitLocker 加密的硬盘中，然后将驱动器实际寄到 Microsoft。 Microsoft 收到硬盘后，数据中心工作人员会将数据上传到 Microsoft 云中的临时 Azure 存储位置。 然后，使用 Office 365 导入服务将数据导入到组织的邮箱中。
+- **驱动器配送** ![硬盘。](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) –将 PST 文件复制到 BitLocker 加密的硬盘中，然后将驱动器实际寄到 Microsoft。 Microsoft 收到硬盘后，数据中心工作人员会将数据上传到 Microsoft 云中的临时 Azure 存储位置。 然后，使用 Microsoft 365 导入服务将数据导入到组织的邮箱中。
 
 ## <a name="step-by-step-instructions"></a>分步说明
 
-请参阅以下主题，获取有关将组织的 PST 文件导入到 Office 365 的详细分步说明。
+请参阅以下主题之一，以获取有关将组织的 PST 文件导入到 Microsoft 365 的详细分步说明。
 
-- [使用网络上载将 PST 文件导入到 Office 365](use-network-upload-to-import-pst-files.md)
+- [使用网络上载将 PST 文件导入到 Microsoft 365](use-network-upload-to-import-pst-files.md)
 
 - [使用驱动器传送导入 PST 文件](use-drive-shipping-to-import-pst-files-to-office-365.md)
 
@@ -63,7 +63,7 @@ ms.locfileid: "61109751"
 
     - **驱动器寄送：** WAImportExport.exe 工具（在步骤 1 中下载）用于将 PST 文件复制到硬盘。 该工具使用 BitLocker 加密硬盘，然后将 PST 复制到硬盘。 与网络上传方法类似，想要复制到硬盘的 PST 文件必须位于组织的文件共享或文件服务器上。
 
-3. **创建 PST 导入映射文件** - 将 PST 文件上传至 Azure 存储位置或复制到硬盘之后，下一步是创建逗号分隔值 (CSV) 文件，用于指定 PST 文件将要导入到的用户邮箱（并且 PST 文件可导入到用户的主邮箱或其存档邮箱）。 [下载 PST 导入映射文件的副本](https://go.microsoft.com/fwlink/p/?LinkId=544717)。 Office 365 导入服务将使用此信息来导入 PST 文件。
+3. **创建 PST 导入映射文件** - 将 PST 文件上传至 Azure 存储位置或复制到硬盘之后，下一步是创建逗号分隔值 (CSV) 文件，用于指定 PST 文件将要导入到的用户邮箱（并且 PST 文件可导入到用户的主邮箱或其存档邮箱）。 [下载 PST 导入映射文件的副本](https://go.microsoft.com/fwlink/p/?LinkId=544717)。 Microsoft 365 导入服务将使用该信息来导入 PST 文件。
 
 4. **创建 PST 导入作业** - 下一步是在 Microsoft 365 合规中心 中的"**导入 PST文件**"页上创建 PST 导入作业，并提交在上一步中创建的 PST 导入映射文件。 对于网络上传（因为 PST 文件已上传至 Azure），Microsoft 365 将分析 PST 文件中的数据，然后为你提供设置筛选器的机会，以便控制哪些数据被实际导入到 PST 导入映射文件中指定的邮箱。
 
@@ -122,7 +122,7 @@ ms.locfileid: "61109751"
 
 ## <a name="frequently-asked-questions-about-importing-pst-files"></a>有关导入 PST 文件的常见问题解答
 
-以下是与使用 Office 365 导入服务将 PST 文件批量上传至 Microsoft 365 邮箱相关的常见问题。
+以下是与使用 Microsoft 365 导入服务将 PST 文件批量上传到 Microsoft 365 邮箱相关的常见问题。
 
 - [使用网络上传导入 PST 文件](#using-network-upload-to-import-pst-files)
 
@@ -130,7 +130,7 @@ ms.locfileid: "61109751"
 
 ### <a name="using-network-upload-to-import-pst-files"></a>使用网络上传导入 PST 文件
 
-#### <a name="what-permissions-are-required-to-create-import-jobs-in-the-office-365-import-service-using-network-upload"></a>在 Office 365 导入服务中使用网络上传创建导入作业需要哪些权限？
+#### <a name="what-permissions-are-required-to-create-import-jobs-in-the-microsoft-365-import-service-using-network-upload"></a>在 Microsoft 365 导入服务中使用网络上传创建导入作业需要哪些权限？
 
 必须分配有 Exchange Online 邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。默认情况下，此角色未分配给 Exchange Online 中的任何角色组。可以将邮箱导入导出角色添加到组织管理角色组。或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。有关详细信息，请参阅[ Exchange Online 中管理角色组中](/Exchange/permissions-exo/role-groups)的“向角色组添加角色”或“创建角色组”部分。
 
@@ -143,7 +143,7 @@ ms.locfileid: "61109751"
 - 必须是你组织中的全局管理员。
 
 > [!TIP]
-> 请考虑在 Exchange Online 中创建专门用于将 PST 文件导入到 Office 365 的新角色组。要获得导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。
+> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Microsoft 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。
 
 #### <a name="where-is-network-upload-available"></a>网络上传在哪些地区提供？
 
@@ -153,13 +153,13 @@ ms.locfileid: "61109751"
 
 Using network upload to import PST files is free.
 
-这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在 [ Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)已完成导入作业的文件列表中。虽然导入作业可能仍然列在“**将数据导入到 Office 365**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
+这也意味着在将 PST 文件从 Azure 存储区域删除后，将不再显示在 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339) 内已完成导入作业的文件列表中。 虽然导入作业可能仍然列在“**将数据导入到 Microsoft 365**”页面上，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
 
-#### <a name="what-version-of-the-pst-file-format-is-supported-for-importing-to-office-365"></a>What version of the PST file format is supported for importing to Office 365?
+#### <a name="what-version-of-the-pst-file-format-is-supported-for-importing-to-microsoft-365"></a>哪个版本的 PST 文件格式支持导入到 Microsoft 365？
 
-可选两个版本的 PST 文件格式：ANSI 和 Unicode。建议导入使用 Unicode PST 文件格式的文件。但是，采用 ANSI PST 文件格式的文件也可以导入到 Office365，如语言采用双字节字符集 (DBCS) 的文件。有关导入 ANSI PST 文件的详细信息，请参阅[使用网络上传将 PST 文件导入到 Office 365 ](./use-network-upload-to-import-pst-files.md)中的步骤 4。
+可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Microsoft 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的详细信息，请参阅 [使用网络上传将 PST 文件导入到 Microsoft 365](./use-network-upload-to-import-pst-files.md) 中的步骤 4。
 
-此外，来自 Outlook 2007 和更高版本 Outlook 的 PST 文件可导入到 Office 365。
+此外，来自 Outlook 2007 和更高版本 Outlook 的 PST 文件可导入到 Microsoft 365。
 
 #### <a name="after-i-upload-my-pst-files-to-the-azure-storage-area-how-long-are-they-kept-in-azure-before-theyre-deleted"></a>将 PST 文件上传到 Azure 存储区域后，这些文件在删除前可在 Azure 中保留多长时间？
 
@@ -169,7 +169,7 @@ Using network upload to import PST files is free.
 
 #### <a name="how-long-does-it-take-to-import-a-pst-file-to-a-mailbox-using-network-upload"></a>使用网络上传将 PST 文件导入邮箱需要多长时间？
 
-这取决于你的网络容量，但每 TB 数据通常需要几个小时才能上传到组织的 Azure 存储区域。 将 PST 文件复制到 Azure 存储区域后，PST 文件将以每天大约 24 GB 的速度导入到 Microsoft 365 邮箱<sup>\*</sup>。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据导入 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](/Exchange/mailbox-migration/mailbox-migration)。
+这取决于你的网络容量，但每 TB 数据通常需要几个小时才能上传到组织的 Azure 存储区域。 将 PST 文件复制到 Azure 存储区域后，PST 文件将以每天大约 24 GB 的速度导入到 Microsoft 365 邮箱<sup>\*</sup>。 如果此速度不能满足你的需求，可能需要考虑采用其他方法将电子邮件数据导入 Microsoft 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Microsoft 365 的方法](/Exchange/mailbox-migration/mailbox-migration)。
 
 如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 如果将多个 PST 文件导入同一个邮箱，则将按顺序（一次导入一个）导入这些文件，而非同时导入。
 
@@ -192,7 +192,7 @@ Using network upload to import PST files is free.
 
 是的。不能导入包含 300 个或更多级别的嵌套文件夹的 PST 文件。
 
-#### <a name="can-i-use-network-upload-to-import-pst-files-to-an-inactive-mailbox-in-office-365"></a>Can I use network upload to import PST files to an inactive mailbox in Office 365?
+#### <a name="can-i-use-network-upload-to-import-pst-files-to-an-inactive-mailbox-in-microsoft-365"></a>是否可以使用网络上传将 PST 文件导入到 Microsoft 365 中的非活动邮箱？
 
 Yes, this capability is now available.
 
@@ -206,7 +206,7 @@ Yes, this capability is now available.
 
 ### <a name="using-drive-shipping-to-import-pst-files"></a>使用驱动器寄送导入 PST 文件
 
-#### <a name="what-permissions-are-required-to-create-import-jobs-in-the-office-365-import-service-using-drive-shipping"></a>在 Office 365 导入服务中使用驱动器传送创建导入作业需要哪些权限？
+#### <a name="what-permissions-are-required-to-create-import-jobs-in-the-microsoft-365-import-service-using-drive-shipping"></a>在 Microsoft 365 导入服务中使用驱动器传送创建导入作业需要哪些权限？
 
 必须分配有 Exchange Online 邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。默认情况下，此角色未分配给 Exchange Online 中的任何角色组。可以将邮箱导入导出角色添加到组织管理角色组。或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。有关详细信息，请参阅[ Exchange Online 中管理角色组中](/Exchange/permissions-exo/role-groups)的“向角色组添加角色”或“创建角色组”部分。
 
@@ -219,7 +219,7 @@ Yes, this capability is now available.
 - 必须是你组织中的全局管理员。
 
 > [!TIP]
-> 请考虑在 Exchange Online 中创建专门用于将 PST 文件导入到 Office 365 的新角色组。要获得导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。
+> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Microsoft 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。
 
 #### <a name="where-is-drive-shipping-available"></a>哪些地区提供驱动器传送服务？
 
@@ -238,10 +238,10 @@ Yes, this capability is now available.
 
 #### <a name="what-kind-of-hard-drives-are-supported-for-drive-shipping"></a>哪类硬盘支持驱动器传送？
 
-仅支持将 2.5 英寸固态硬盘 (SSD) 或 2.5 英寸或 3.5 英寸 SATA II/III 内部硬盘与 Office 365 导入服务结合使用。 可使用最多 10 TB 的硬盘。 对于导入作业，仅将处理硬盘上的第一个数据卷。 必须使用 NTFS 格式化数据卷。 将数据复制到硬盘时，可使用 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III 连接器直接连接硬盘，或可使用外部 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III USB 适配器在外部连接硬盘。
+仅支持将 2.5 英寸固态硬盘 (SSD) 或 2.5 英寸或 3.5 英寸 SATA II/III 内部硬盘与 Microsoft 365 导入服务结合使用。 可使用最多 10 TB 的硬盘。 对于导入作业，仅将处理硬盘上的第一个数据卷。 必须使用 NTFS 格式化数据卷。 将数据复制到硬盘时，可使用 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III 连接器直接连接硬盘，或可使用外部 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III USB 适配器在外部连接硬盘。
 
 > [!IMPORTANT]
-> Office 365 导入服务不支持内置 USB 适配器随附的外部硬盘。 此外，无法使用外部硬盘盒内的磁盘。 Please don't ship external hard drives.
+> Microsoft 365 导入服务不支持内置 USB 适配器随附的外部硬盘。 此外，无法使用外部硬盘盒内的磁盘。 Please don't ship external hard drives.
 
 #### <a name="how-many-hard-drives-can-i-ship-for-a-single-import-job"></a>How many hard drives can I ship for a single import job?
 

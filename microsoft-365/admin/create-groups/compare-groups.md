@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 组成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
-ms.openlocfilehash: 655b90ca13631c1df7937443e37d1bf904814e14
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: f990f2c605ce72668f28831b903ebdf8ee50c5f9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335414"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934617"
 ---
 # <a name="compare-groups"></a>比较组
 
@@ -40,13 +40,14 @@ ms.locfileid: "60335414"
 - **安全组** 用于授予对资源（如 SharePoint 网站）的访问权限。
 - **启用邮件的安全组** 用于授予对资源（如 SharePoint）的访问权限，并向这些用户发送电子邮件通知。
 - 当多个用户需要访问同一邮箱（例如公司信息或支持电子邮件地址）时，将使用 **共享邮箱**。
+- 创建 **动态通讯组** 的目的是加快组织内电子邮件消息和其他信息的批量发送。
 
 某些组允许动态成员身份或电子邮件。
 
-||Microsoft 365 组|通讯组|安全组|启用邮件功能的安全组|共享邮箱|
-|:----|:----|:----|:----|:----|:----|
-|**已启用邮件**|是|是|否|是|是|
-|**Azure AD 中的动态成员资格**|是|否|是|否|否|
+||Microsoft 365 组|通讯组|安全组|启用邮件功能的安全组|共享邮箱|动态通讯组|
+|:----|:----|:----|:----|:----|:----|:----|
+|**已启用邮件**|是|是|否|是|是|是|
+|**Azure AD 中的动态成员资格**|是|否|是|否|否|否|
 
 所有这些组类型都可以与 Power Automate 一起使用。
 
@@ -75,6 +76,12 @@ Microsoft 365 组不支持与其他Microsoft 365 组或通讯组或安全组进�
 可以将通讯组添加到 Microsoft Teams 中的团队，但只添加成员，而不添加组本身。
 
 Microsoft 365 组不能是通讯组的成员。
+
+## <a name="dynamic-distribution-groups"></a>动态通讯组 
+
+[动态通讯组](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) 是启用了邮件的组，用于向具有特定属性（如部门或位置）的人员发送邮件。 这些属性是在 Exchange 管理中心而不是 Azure AD 中定义的。
+
+与包含一组已定义成员的常规通讯组不同，每次向动态通讯组发送邮件时，都将根据所定义的筛选器和条件来计算该组的成员列表。电子邮件发送到动态通讯组时，将被传递到组织中所有与为该动态通讯组定义的条件匹配的收件人。
 
 ## <a name="security-groups"></a>安全组
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 要求混合工作者使用多重身份验证 (MFA) 登录。
-ms.openlocfilehash: 586a4f1782cec2baf305b9e72cc3b4a4c732b7f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dfcda3eb0f79003a3e09bbda9d3c53dff6ae2f8f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162070"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934821"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>步骤 1 为使用 MFA 的混合工作者提高登录安全性
 
@@ -59,7 +59,7 @@ ms.locfileid: "60162070"
 
 通过此策略，当为用户分配或取消分配了上述管理员角色时，你可以根据其组成员身份要求进行 MFA，而不是针对单个用户帐户进行 MFA 配置。
 
-你还可以使用条件访问策略来实现更高级的功能，例如，要求从合规设备（例如运行 Windows 10 的电脑）完成登录。
+你还可以使用条件访问策略来实现更高级的功能，例如要求从合规设备（例如运行 Windows 11 或 10 的电脑）完成登录。
 
 条件访问需要 Microsoft 365 E3 和 E5 随附的 Azure AD Premium P1 许可证。
 

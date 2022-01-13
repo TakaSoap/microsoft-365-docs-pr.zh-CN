@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 安全和合规性服务保护混合工作者的应用、数据和设备。
-ms.openlocfilehash: cfa2c8fa8725e96326faac4cbe4b83cd1b039641
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e1a5c277f9b5f06313fc924756dc72dbf47fad78
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110279"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934703"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>步骤 3：为混合工作者部署安全性和合规性
 
@@ -34,7 +34,7 @@ ms.locfileid: "61110279"
 
 - 控制对混合工作者使用的生产力应用（如 Microsoft Teams）的访问
 - 对远程工作者创建和使用的数据的受控访问和保护，例如聊天对话或共享文件
-- 保护 Windows 10 设备免受恶意软件和其他类型的网络攻击
+- 保护 Windows 11 或 10 设备免受恶意软件和其他类型的网络攻击
 - 使用一致的敏感度和保护级别标签保护电子邮件、文件和站点
 - 防止信息泄漏
 - 遵守区域数据法规
@@ -87,7 +87,7 @@ ms.locfileid: "61110279"
 
 - 安全性
   - 控制对混合工作者用于通信和协作的应用和数据的访问
-  - 针对云服务数据、电子邮件和 Windows 10 设备的恶意软件保护
+  - 针对云服务数据、电子邮件和 Windows 11 或 10 设备的恶意软件保护
 - 合规性
   - 一致的敏感度和保护级别标签
   - 防止信息泄露的策略

@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: 管理员可了解 EOP 如何使用电子邮件身份验证（SPF、DKIM 和 DMARC）来帮助防止欺骗、网络钓鱼和垃圾邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f358f6c20e6c4643a7a6aeb0ae3aae2513aad34
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c0e7bc2ddd620b454979418735fb6982b71501c3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212025"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934029"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的电子邮件身份验证
 
@@ -87,7 +87,7 @@ Authentication-Results:
 
 复合身份验证可以让这些原本无法通过身份验证检查的邮件通过检查，从而解决这些限制。
 
-为简单起见，下面的例子集中关注电子邮件身份验证结果。其他后端智能因素可以识别通过电子邮件身份验证的欺骗邮件，或未通过电子邮件身份验证的合法邮件。
+为简单起见，以下示例专注于电子邮件身份验证结果。 其他后端智能因素可能会将通过电子邮件身份验证的邮件识别为欺骗邮件，或者将未通过电子邮件身份验证的邮件识别为合法邮件。
 
 例如，fabrikam.com 域没有 SPF、DKIM 或 DMARC 记录。 来自 fabrikam.com 域中的发件人的邮件可能无法通过复合身份验证（请注意 `compauth` 的值和理由）：
 

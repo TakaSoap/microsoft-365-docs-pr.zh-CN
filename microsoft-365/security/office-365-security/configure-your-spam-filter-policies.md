@@ -14,16 +14,16 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom: ''
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 03ed0e111e86a4283e5f54fd4cb61566e88979fb
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 29e21c53ef7fa7456b8e38433006b1eab210f610
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284465"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873557"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -63,7 +63,7 @@ ms.locfileid: "61284465"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 访问 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> 以打开 Microsoft 365 Defender 门户。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
+- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -84,7 +84,7 @@ ms.locfileid: "61284465"
 
 在 Microsoft 365 Defender 门户中创建自定义反垃圾邮件策略，会同时使用相同的名称创建垃圾邮件筛选规则和关联的垃圾邮件筛选策略。
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户的 <https://security.microsoft.com> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
 
 2. 在“**反垃圾邮件** 策略”页面上点击“![创建图标](../../media/m365-cc-sc-create-icon.png)”，“**创建策略**”，然后从下拉列表中选择“**入站**”。
 
@@ -247,7 +247,7 @@ ms.locfileid: "61284465"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>使用 Microsoft 365 Defender 门户查看反垃圾邮件策略
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户的 <https://security.microsoft.com> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
 
 2. 在 **“反垃圾邮件”策略** 页面上，查找以下值之一:
    - “**类型**”值是“**自定义反垃圾邮件策略**”
@@ -264,7 +264,7 @@ ms.locfileid: "61284465"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>使用 Microsoft 365 Defender 门户修改反垃圾邮件策略
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户的 <https://security.microsoft.com> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择反垃圾邮件策略：
    - 你创建的自定义策略，其中“**类型**”列中的值为“**自定义反垃圾邮件策略**”。
@@ -280,7 +280,7 @@ ms.locfileid: "61284465"
 
 无法禁用默认反垃圾邮件策略。
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户的 <https://security.microsoft.com> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择“**类型”** 值为“**自定义反垃圾邮件策略**”的策略。
 
@@ -305,7 +305,7 @@ ms.locfileid: "61284465"
 - 在 Microsoft 365 Defender 门户中，你只能在创建反垃圾邮件策略后更改其优先级。在 PowerShell 中，你可以在创建垃圾邮件筛选规则时覆盖默认优先级（这可能会影响现有规则的优先级）。
 - 反垃圾邮件策略将按其显示顺序进行处理（第一个策略的“**优先级**”值为 0）。 默认反垃圾邮件策略的优先级值为“**最低**”，你无法更改此值。
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户的 <https://security.microsoft.com> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择“**类型”** 值为“**自定义反垃圾邮件策略**”的策略。
 
@@ -322,7 +322,7 @@ ms.locfileid: "61284465"
 
 当你使用 Microsoft 365 Defender 门户删除自定义反垃圾邮件策略时，垃圾邮件筛选规则和相应的垃圾邮件筛选策略都将被删除。无法删除默认反垃圾邮件策略。
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户的 <https://security.microsoft.com> 中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**反垃圾邮件**”。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择“**类型”** 值为“**自定义反垃圾邮件策略**”的策略。 在显示的策略详细信息浮出控件顶部，单击![更多操作图标。](../../media/m365-cc-sc-more-actions-icon.png) **更多操作** \> ![删除策略图标](../../media/m365-cc-sc-delete-icon.png) **删除策略**。
 
@@ -502,7 +502,7 @@ Set-HostedContentFilterRule -Identity "{Fabrikam Spam Filter}" -Name "Fabrikam S
 
 ### <a name="use-powershell-to-enable-or-disable-spam-filter-rules"></a>使用 PowerShell 启用或禁用垃圾邮件筛选规则
 
-在 PowerShell 中启用或禁用垃圾邮件筛选规则会启用或禁用整个反垃圾邮件策略（即垃圾邮件筛选规则和分配的垃圾邮件筛选策略）。 无法启用或禁用默认反垃圾邮件策略（它始终应用于所有收件人）。
+在 PowerShell 中启用或禁用垃圾邮件筛选规则会启用或禁用整个反垃圾邮件策略（即垃圾邮件筛选规则和分配的垃圾邮件筛选策略）。 无法启用或禁用默认反垃圾邮件策略（该策略始终应用于所有收件人）。
 
 若要在 PowerShell 中启用或禁用垃圾邮件筛选规则，请使用以下语法：
 
