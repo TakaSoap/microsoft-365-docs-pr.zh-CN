@@ -3,18 +3,18 @@ title: 合规性
 description: 本文列出了与产品相关的合规性Microsoft 托管桌面。
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: b2200a649394c750aaaee76ce736934410affa5e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d34807d20f0b203efb3d45b6fe45eddce632e275
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212745"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035072"
 ---
 # <a name="compliance"></a>合规性
 
@@ -36,13 +36,13 @@ Microsoft 托管桌面已获得以下认证：
 - [服务组织控制 (SOC) 1、2、3](/compliance/regulatory/offering-SOC)
 - [信息安全注册评估员计划 (IRAP) ](/compliance/regulatory/offering-ccsl-irap-australia)
 - [支付卡行业 (PCI) 数据安全标准 (DSS)](/compliance/regulatory/offering-PCI-DSS)
-- [《健康保险可移植性和责任法案》 (HIPAA) ](/compliance/regulatory/offering-hipaa-hitech)
-- [健康信息信任联盟 (HITRUST) CSF (Common Security Framework) ](/compliance/regulatory/offering-hitrust)
+- [《健康保险可移植性和责任法》 (HIPAA) ](/compliance/regulatory/offering-hipaa-hitech)
+- [健康信息信任联盟 (HITRUST) CSF (COMMON Security Framework) ](/compliance/regulatory/offering-hitrust)
 
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>审核员报告和合规性证书
 
-您可以在服务信任门户[ (STP ](https://servicetrust.microsoft.com/)) （有关产品/服务的此类信息的中央存储库）Microsoft Cloud Service相关信息。 可以从 STP 的审核报告部分下载审核员报告[](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)、合规性证书等。
+您可以在服务信任门户[ (STP ](https://servicetrust.microsoft.com/)) （有关产品/服务的此类信息的中央存储库）中查找相关信息，包括Microsoft Cloud Service要求。 可以从 STP 的审核报告部分下载审核员报告[](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)、合规性证书等。
 
 > [!NOTE]
 > 由于Microsoft 托管桌面 Azure 上运行，因此相关文档通常具有"Microsoft Azure、Dynamics 365 和其他联机服务"等文件名。 在这些文档中，通常可以找到Microsoft 托管桌面"Microsoft Online Services"或"监控 + 管理"下的文档。

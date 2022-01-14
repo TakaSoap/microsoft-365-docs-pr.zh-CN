@@ -3,18 +3,18 @@ title: 管理支持
 description: 介绍主动和被动事件管理Microsoft 托管桌面。
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de23054454a9e73ae429920450d71ed5b34a8045
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d62b7c237a5eb99ac07d160c00cbaed1515789e8
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208069"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035012"
 ---
 # <a name="admin-support"></a>管理支持
 
@@ -22,8 +22,8 @@ Microsoft 将提供主动和被动事件管理。 Microsoft 在管理门户中Mi
 
 客户可以针对Microsoft 托管桌面操作联系：
 - 有关租户或Microsoft 托管桌面的信息请求
-- 将请求更改为设备Microsoft 托管桌面配置
-- 报告事件或中断
+- 更改配置 Microsoft 托管桌面设备的请求
+- 报告事件或故障
 
 ## <a name="whats-included"></a>包含哪些内容？
 
@@ -36,16 +36,16 @@ Microsoft 托管桌面支持包括：
 支持的产品：
 
 - Windows 10 Microsoft Defender for Endpoint
-- 这些Microsoft 365 企业应用版应用程序：Outlook、Word、PowerPoint、Excel、Skype for Business 客户端Microsoft Teams 
+- 这些Microsoft 365 企业应用版应用：Outlook、Word、PowerPoint、Excel、Skype for Business 客户端Microsoft Teams 
 - 适用于企业的 Microsoft Store 
 - OneDrive客户端 
 
 支持详细信息：
 
-- 当前：美国、加拿大 (24x7x365) 、英国、比利时、卢森堡、荷兰、澳大利亚和新西兰 (24x7x365)  
+- 当前：美国、加拿大 (，) 、英国、比利时、卢森堡、荷兰、澳大利亚和新西兰 24x7x365 (24x7x365)  
 - 英语是与客户进行电话和聊天对话的唯一受支持语言 
 - 我们正在与公司支持人员合作，而不是替换你的企业支持人员;业务线 (LOB) 应用、网络资源等仍由支持人员处理 
-- Microsoft 托管桌面"测试"组的设备以及不是"测试"Microsoft 托管桌面不在作用域中的设备 
+- Microsoft 托管桌面"测试"组的设备以及不是"测试"Microsoft 托管桌面的设备超出范围 
 
 
 ## <a name="related-topics"></a>相关主题

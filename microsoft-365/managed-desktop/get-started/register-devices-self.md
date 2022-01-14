@@ -2,25 +2,25 @@
 title: 自行注册新设备
 description: 自己注册设备，以便由设备Microsoft 托管桌面
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: b051ea3c1ea04eb90584654389f335ad6ecedefc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 566472128cef48a14aa18de6d9e82a4bc0f2b91c
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213921"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035698"
 ---
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
-Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已经拥有的设备 (这将要求你重新映像它们) 。 可以在应用门户Microsoft 托管桌面注册Microsoft Endpoint Manager设备。
+Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已拥有的设备 (这将要求你将它们重新映像) 。 可以在应用门户Microsoft 托管桌面注册Microsoft Endpoint Manager设备。
 
 > [!NOTE]
 > 与合作伙伴合作获取设备 如果是这样，你无需担心获取硬件哈希;他们会负责你。 请确保你的合作伙伴与你在合作伙伴中心 [建立了关系](https://partner.microsoft.com/dashboard)。 你的合作伙伴可以在合作伙伴中心 [帮助 中了解更多信息](/partner-center/request-a-relationship-with-a-customer)。 建立此关系后，你的合作伙伴将仅代表你注册设备，无需你执行任何进一步的操作。 如果你希望查看详细信息，或者你的合作伙伴有疑问，请参阅合作伙伴 [注册设备的步骤](register-devices-partner.md)。 注册设备后，你可以继续 [检查](#check-the-image) 映像，将设备 [传送](#deliver-the-device) 给用户。
@@ -81,20 +81,20 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 
 ### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
-在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)**中，选择** 左侧导航窗格中的"设备"。 查找菜单Microsoft 托管桌面部分 **并选择设备。** 在Microsoft 托管桌面设备"工作区中，选择 **" +** 注册设备"，这将打开一个飞入以注册新设备。
+在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)**中，选择** 左侧导航窗格中的"设备"。 查找菜单Microsoft 托管桌面部分，**然后选择设备。** 在Microsoft 托管桌面设备"工作区中，选择 **" +** 注册设备"，这将打开一个飞入以注册新设备。
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age.](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
-请按以下步骤操作：
+请按照下列步骤操作：
 
 1. 在 **"文件** 上载"中，提供之前创建的 CSV 文件的路径。
 2. 在 [下拉菜单中选择](../service-description/profiles.md) 设备配置文件。
 3. 选择 **注册设备**。 系统将设备添加到设备上设备列表，标记为注册 **挂起。**  注册通常少于 10 分钟，并且成功后，设备将显示为"为用户准备就绪"，这意味着它已准备好并等待用户开始使用。
 
 > [!NOTE]
-> 如果手动更改设备Azure Active Directory (AAD) 组成员身份，系统将自动将其重新分配给组，用于其设备配置文件，并删除任何冲突组。
+> 如果手动更改设备Azure Active Directory (AAD) 组成员身份，系统会自动将其重新分配给设备配置文件的组，并删除任何冲突组。
 
 你可以监视主页上的设备注册进度。 其中报告的可能状态包括：
 
@@ -125,7 +125,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 ### <a name="autopilot-group-tag"></a>Autopilot 组标记
 
 当你使用管理门户注册设备时，我们会自动分配与使用合作伙伴中心注册设备中列出的设备配置文件相关联的 Autopilot [组标记](register-devices-partner.md#register-devices-by-using-partner-center)。
-该服务每天监视Microsoft 托管桌面设备，并将组标记分配给任何尚未安装组标记的设备。
+该服务每天Microsoft 托管桌面所有设备，并将组标记分配给任何尚未安装组标记的设备。
 
 ### <a name="deliver-the-device"></a>交付设备
 

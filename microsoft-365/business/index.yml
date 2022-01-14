@@ -31,8 +31,8 @@ productDirectory:
       url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/introducing-microsoft-defender-for-business/ba-p/2898701'
     - title: 加入合作伙伴网络研讨会系列
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: 了解 Microsoft Defender for Business（一种新的终结点安全解决方案）及其合作伙伴价值与优势。
-      url: 'https://aka.ms/DefenderforBusinessWebinar'
+      summary: 了解如何通过 microsoft Defender for Business 和 Microsoft 365 商业高级版 提高销售Microsoft 365 Lighthouse。
+      url: 'https://aka.ms/M365MDBseries'
 conceptualContent:
   items:
     - title: 什么是 Microsoft 365 商业高级版？

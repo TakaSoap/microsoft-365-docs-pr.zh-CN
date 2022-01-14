@@ -3,22 +3,22 @@ title: 应用使用情况报告
 description: 如何使用应用使用情况报告
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: d738a90655ce4c24f982d60c4d7c8fc11ad0074c
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 241bb500ae7f89aac175c4b84ebd8d29ff3b6dcd
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364889"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034853"
 ---
 # <a name="app-usage-report"></a>应用使用情况报告
 
-此报告可帮助你了解应用程序在 Microsoft 托管桌面 设备中的使用方式。 它还可充当参考，以帮助您在发现应用程序问题时评估对用户的任何影响。 
+此报告可帮助你了解应用程序在设备上Microsoft 托管桌面使用。 它还可充当参考，以帮助你在发现应用程序问题时评估对用户的任何影响。 
 
 此报告中的信息包括： 
 

@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 75a8c5e86d2d07a0b6a33e93029f5d650eef3f52
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: afefa32227750a70c70d2cb8b10ebfda1a2ae08e
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283013"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034661"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -52,7 +52,7 @@ ms.locfileid: "61283013"
 
 ## <a name="recommended-actions-preview"></a>预览 (建议) 
 
-建议的操作可帮助组织开始使用通信合规性功能，并充分利用现有策略。 建议操作 **包含在"策略** "页上，可提供见解，并总结了组织中通信中的敏感信息类型和不适当的内容活动。 Insights数据分类以及敏感度标签、[](data-classification-overview.md)保留标签和敏感信息类型分类的应用支持数据分类。 这些见解不包括组织中用户 (个人身份) 个人身份信息。
+建议的操作可帮助组织开始使用通信合规性功能，并充分利用现有策略。 建议操作 **包含在"策略** "页上，可提供见解，并总结了组织中通信中的敏感信息类型和不适当的内容活动。 Insights数据分类以及敏感度标签、[](data-classification-overview.md)保留标签和敏感信息类型分类的应用支持。 这些见解不包括组织中用户 (个人身份) 个人身份信息。
 
 ![通信合规性建议操作。](../media/communication-compliance-recommended-actions.png)
 
@@ -69,7 +69,7 @@ ms.locfileid: "61283013"
 
 - Azure Active Directory [*全局管理员*](/azure/active-directory/roles/permissions-reference#global-administrator)角色
 - Azure Active Directory [*合规性管理员*](/azure/active-directory/roles/permissions-reference#compliance-administrator)角色
-- Microsoft 365 合规中心 [*组织管理角色*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)组
+- Microsoft 365 合规中心 [*组织管理*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)角色组
 - Microsoft 365 合规中心 [*合规性管理员*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)角色组
 - *通信合规性* 角色组
 - *通信合规性管理员* 角色组
@@ -82,7 +82,7 @@ ms.locfileid: "61283013"
 - Microsoft 365 合规中心 *合规性管理员*
 
 > [!IMPORTANT]
-> 确保"通信合规性"或"通信合规性管理员"角色组中始终至少有一个用户 (具体取决于选择") "的选项，这样，如果特定用户离开组织，通信合规性配置不会进入"零管理员"方案。
+> 确保"通信合规性"或"通信合规性管理员"角色组 (中始终至少有一个用户，具体取决于选择") "，这样，如果特定用户离开组织，通信合规性配置不会进入"零管理员"方案。
 
 根据希望管理通信合规性策略和警报的方式，需要将用户分配给特定角色组来管理不同的通信合规性功能集。 可以选择将具有不同合规性职责的用户分配给特定的角色组，以管理不同区域的通信合规性功能。 或者可以决定将指定管理员、分析者、调查者和查看者的所有用户账户分配到 *通信合规性* 角色组。 使用单个角色组或多个角色组，以充分符合你的合规性管理要求。
 
@@ -152,7 +152,7 @@ ms.locfileid: "61283013"
 
 | **策略成员** | **支持的组** | **不支持的组** |
 |:-----|:-----|:-----|
-|受监督用户 <br> 已排除用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 <br> Microsoft 365成员资格的组 |
+|受监督用户 <br> 已排除用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 <br> Microsoft 365动态成员身份的组 |
 | 审阅者 | 无 | 通讯组 <br> 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 |
 
 在策略中分配通讯组时，策略会监视通讯组每个用户的所有电子邮件和 Teams 聊天。 在策略中分配 Microsoft 365 组时，策略会监视发送到该组的所有电子邮件和 Teams 聊天，而不是每个团队成员收到的单个电子邮件和聊天。
@@ -229,7 +229,7 @@ ms.locfileid: "61283013"
     - 选择有限条件字段，通常是要应用于该策略的敏感信息类型或关键字词典。
 
     > [!NOTE]
-    > 如果要启用光学字符识别[ (OCR) ](communication-compliance-policies.md#optical-character-recognition-ocr)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用"从图像中提取打印或手写文本"进行评估  >  。 
+    > 如果要启用光学字符识别 [ (OCR)](communication-compliance-policies.md#optical-character-recognition-ocr)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用"从图像中提取打印或  >  **手写** 文本"进行评估。
 
     如果选择使用策略向导创建自定义策略，将需要：
 
@@ -265,7 +265,7 @@ ms.locfileid: "61283013"
 
 当调查策略匹配并针对邮件采取措施时，还可以选择对显示用户名启用匿名处理。
 
-1. 使用[Microsoft 365 合规中心](https://compliance.microsoft.com)组织中管理员帐户的凭据登录Microsoft 365帐户。
+1. 使用[Microsoft 365 合规中心组织中](https://compliance.microsoft.com)管理员帐户的凭据登录Microsoft 365帐户。
 
 2. 在 Microsoft 365 合规中心中，转到“**通信合规性**”。
 
@@ -309,3 +309,5 @@ ms.locfileid: "61283013"
 完成这些步骤以创建第一个通信合规性策略后，将在 24-48 小时之后开始从活动指标接收警报。 使用本文中步骤 5 中的指南，根据需要配置其他策略。
 
 若要深入了解如何调查通信合规性警报，请参阅 [调查并修正通信合规性警报](communication-compliance-investigate-remediate.md)。
+
+若要了解最新的通信合规性更新，请选择贵组织通信合规性[的](https://compliance.microsoft.com/)新增功能。

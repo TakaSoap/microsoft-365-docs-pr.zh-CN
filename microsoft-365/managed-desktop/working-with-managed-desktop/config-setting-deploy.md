@@ -1,20 +1,20 @@
 ---
 title: 在部署中部署可Microsoft 托管桌面
-description: 部署和跟踪 Microsoft 托管桌面 中的可配置设置更改。
+description: 部署和跟踪 Microsoft 托管桌面 中的可配置Microsoft 托管桌面。
 keywords: Microsoft 托管桌面、Microsoft 365、服务、文档、部署、分步部署、可配置设置
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 9a541ccf5a7bcd4197e1b24a2a6667995c08ea7f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4950afb8446eb9b687749fc657a6826bb1eb7768
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177011"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035434"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署和跟踪可配置设置 - Microsoft 托管桌面
 
@@ -24,12 +24,12 @@ ms.locfileid: "60177011"
 
 这些状态将针对每个部署显示。
 
-状态 | 说明
+Status | 说明
 --- | ---
 部署 | 您的更改正在等待部署到此组。
 正在进行 | 更改将应用于此组的活动设备。
 完成 | 此组中所有活动设备上完成更改。
-已失败 | 更改在组中 10% 的活动设备上失败，因此部署已停止。<br><br> 将自动打开支持请求，Microsoft 托管桌面操作对部署进行疑难解答。
+已失败 | 更改在组中 10% 的活动设备上失败，因此部署已停止。<br><br> 将自动打开支持请求，Microsoft 托管桌面操作解决部署问题。
 已还原 | 更改已还原为已成功部署到所有部署组的最后一个更改。
 
 ## <a name="deploy-changes"></a>部署更改

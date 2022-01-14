@@ -3,23 +3,23 @@ title: 新版 Microsoft Edge
 description: 说明如何部署和更新新的 Edge 浏览器
 keywords: 浏览器， Microsoft 托管桌面， Microsoft 365， 服务， 文档
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2534319ad890fbac20fa106216740f49eb5a3572
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: ed4ec04ebe6ae0aae3a55880190b720b140252a7
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756671"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035470"
 ---
-# <a name="new-microsoft-edge-app"></a>新建Microsoft Edge应用
+# <a name="new-microsoft-edge-app"></a>新Microsoft Edge应用
 
-浏览器[Microsoft Edge](https://www.microsoft.com/edge)浏览器提供了世界一流的性能，在浏览时具有更多的隐私性、更高的工作效率和更多价值。 Microsoft 托管桌面提供环境中新边缘浏览器部署的公共预览版。
+浏览器[Microsoft Edge浏览器](https://www.microsoft.com/edge)提供了世界一流的性能，在浏览时具有更多的隐私性、更高的工作效率和更多价值。 Microsoft 托管桌面提供环境中新边缘浏览器部署的公共预览版。
 
 ## <a name="initial-deployment"></a>初始部署
 
@@ -33,7 +33,7 @@ Microsoft 托管桌面部署稳定[渠道](/deployedge/microsoft-edge-channels#s
 
 Beta [渠道](/deployedge/microsoft-edge-channels#beta-channel) 将部署到"测试"和"第一组"中的设备，以在组织中进行代表性验证。 此频道完全受支持，大约每六周自动更新一次新功能。
 
-为了确保正确Microsoft Edge，请不要修改更新Microsoft Edge[策略](/deployedge/microsoft-edge-update-policies)。
+若要确保正确Microsoft Edge，请不要修改更新Microsoft Edge[策略](/deployedge/microsoft-edge-update-policies)。
 
 
 
@@ -48,7 +48,7 @@ Microsoft 托管桌面创建了一组默认策略，Microsoft Edge保护浏览�
 #### <a name="extension-installation-blocklist"></a>扩展安装阻止列表
 **默认值：** 全部
 
-Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chrome 扩展。 存在与扩展Chromium相关的已知风险，包括数据丢失保护、隐私和其他可能损害设备的风险。 
+Microsoft 托管桌面此策略以防止 Chrome 扩展安装在托管终结点上。 与扩展模型相关的已知风险Chromium包括数据丢失保护、隐私和其他可能损害设备的风险。 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允许在没有管理员权限的情况下安装 (级本机消息传递) 
 
@@ -78,7 +78,7 @@ Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chr
 
 默认情况下启用以帮助保护用户。
 
-#### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows DefenderSmartScreen 网站提示
+#### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender SmartScreen 网站提示
 
 **默认值：** 已启用
 
@@ -108,7 +108,7 @@ Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chr
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Internet Explorer模式Microsoft Edge
 
-Microsoft Edge 上的 IE 模式使你能够轻松地在单一浏览器中使用组织所需的所有网站。 它将集成 Chromium 引擎用于与 Chromium 呈现引擎兼容的网站，并使用 Internet Explorer 11 (IE11) 中的 Trident MSHTML 引擎来访问不依赖 IE 功能或依赖 IE 功能的网站。 [了解更多](/DeployEdge/edge-ie-mode)
+Microsoft Edge 上的 IE 模式使你能够轻松地在单一浏览器中使用组织所需的所有网站。 它使用与 Chromium 呈现引擎兼容的网站的集成 Chromium 引擎，并且对于不依赖于 IE 功能或依赖 IE 功能的网站，它使用 Internet Explorer 11 (IE11) 中的 Trident MSHTML 引擎。 [了解更多](/DeployEdge/edge-ie-mode)
 
 Microsoft 托管桌面为Internet Explorer启用设备模式。
 
@@ -145,24 +145,24 @@ Microsoft 托管桌面基本身份验证或摘要式身份验证方案。
 
 ## <a name="settings-you-manage"></a>设置管理
 
-可以使用管理Microsoft Edge模板配置文件部署之前未介绍的任何Microsoft Intune。 有关详细信息，请参阅使用 Microsoft Edge[配置策略Microsoft Intune。](/deployedge/configure-edge-with-intune) 如果要评估当前未包含在 Intune Microsoft Edge 管理模板中的策略，可以在 Intune 中为 Windows 10 设备使用自定义设置。
+可以使用管理模板Microsoft Edge部署之前未介绍的任何Microsoft Intune。 有关详细信息，请参阅使用 Microsoft Edge[配置策略Microsoft Intune。](/deployedge/configure-edge-with-intune) 如果要评估当前未包含在 Intune Microsoft Edge 管理模板中的策略，可以在 Intune 中为 Windows 10 设备使用自定义设置。
 
 ### <a name="enabling-specific-chrome-extensions"></a>启用特定 Chrome 扩展
 
-管理模板提供了一个设置，用于部署特定 Chrome Microsoft Intune。 可以在计算机配置> Microsoft Edge >**扩展>允许安装特定扩展）中查找它**。
+管理模板提供了一个设置，用于部署特定 Chrome Microsoft Intune。 可以在计算机配置> Microsoft Edge >扩展>允许安装特定 **扩展）中查找。**
 
 ### <a name="install-extensions-silently"></a>以静默方式安装扩展
 
-您还可以使用管理模板来设置Microsoft Edge安装扩展而不通知用户。 可以在计算机配置> Microsoft Edge >**扩展>控制** 以静默方式安装哪些扩展。
+您还可以使用管理模板来设置Microsoft Edge安装扩展而不通知用户。 可以在计算机配置> Microsoft Edge >扩展>控制以静默方式安装哪些 **扩展**。
 
 ### <a name="microsoft-edge-update-policies"></a>Microsoft Edge更新策略
-为了确保正确Microsoft Edge，请不要修改更新Microsoft Edge[策略](/deployedge/microsoft-edge-update-policies)。
+若要确保正确Microsoft Edge，请不要修改更新Microsoft Edge[策略](/deployedge/microsoft-edge-update-policies)。
 
 ### <a name="other-common-enterprise-policies"></a>其他常见企业策略
 
 Microsoft Edge提供了许多其他策略。 这些是一些更常见的方法：
  
-- [在站点列表和 IE Enterprise配置站点](/deployedge/edge-ie-mode-sitelist)
+- [在站点列表Enterprise IE 模式下配置站点](/deployedge/edge-ie-mode-sitelist)
 - [配置启动、主页和新选项卡页设置](/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)
 - [配置"浏览"游戏设置](/deployedge/microsoft-edge-policies#allowsurfgame)
 - [配置代理服务器设置](/deployedge/microsoft-edge-policies#proxy-server)

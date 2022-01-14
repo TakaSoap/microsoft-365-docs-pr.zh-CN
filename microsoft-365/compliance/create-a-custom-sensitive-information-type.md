@@ -15,14 +15,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何在安全与合规中心内为 DLP 创建、修改、删除和测试&类型。
+description: 了解如何在安全与合规中心内为 DLP 创建、修改、删除&类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a091608f7741b279b06a6289fb97b521976fc9ea
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 08d3f0604516da2c31ca3a1cb6a1a3f2e2ed9dc9
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531881"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035048"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自定义敏感信息类型入门
 
@@ -114,6 +114,28 @@ ms.locfileid: "61531881"
 
 > [!NOTE] 
 > 如果你有创建 500 多个自定义 SIT 的业务需求，请提出支持票证。
+
+### <a name="instance-count-supported-values-for-sit"></a>SIT 的实例计数支持的值
+
+在以下解决方案中使用 SIT 时，将应用 SIT 实例计数限制：
+
+- DLP 策略
+- 信息保护
+- 信息治理
+- 通信合规性
+- 记录管理
+- Microsoft Cloud App Security
+- 隐私管理
+
+若要使扫描的项目满足规则条件，任何单个项中 SIT 的唯一实例数都必须介于最小值和最大值之间。 这称为实例 **计数**。
+
+- **Min** 字段：在 (项) 要触发匹配的项中必须找到的 SIT 的唯一实例的最小数量下限。 min 字段支持以下值：
+    - 1 到 500
+- **最大** 字段：在项中可找到并仍触发匹配的 SIT 唯一实例数的上限。 max 字段支持以下值：
+    - 1 到 500 - 当您要针对项中的 SIT 实例数设置一个小于或 500 的特定上限时，请使用此限制。
+    - Any - 当在扫描的项中发现 SIT 的唯一实例数量未定义且唯一实例数达到或超过唯一实例值的最小数目时，使用 。 `Any` 换句话说，只要达到最小值，就符合唯一实例计数条件。
+
+例如，如果希望规则在单个项中至少找到 500 个 SIT 唯一实例时触发匹配，将最小值设置为 ，将最大值 `500` 设置为 `Any` 。
 
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>在合规中心内修改自定义敏感信息类型
 

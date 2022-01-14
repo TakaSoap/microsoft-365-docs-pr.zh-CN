@@ -3,27 +3,27 @@ title: 了解设备配置文件
 description: 管理员可以分配给设备的各种配置文件
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 353bda15ee1eb5f50cf5814e06e4ccbb64e1b8d4
-ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
+ms.openlocfilehash: 0b2bf3b0b4912d9e9b25c38b06262efb696f0cf2
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/13/2022
-ms.locfileid: "62009017"
+ms.locfileid: "62034949"
 ---
 # <a name="device-profiles"></a>设备配置文件
 
 你可以为设备分配不同的 ("设备配置文件) 配置，每个配置都针对特定类型的用户的需求进行了优化。 有三个设备配置文件可用：
 
-- 标准
+- Standard
 - 敏感数据
 - Power user
 
@@ -35,7 +35,7 @@ ms.locfileid: "62009017"
 
 设备配置文件显示在下一个较高级别。 每个Microsoft 托管桌面设备必须分配一 (一个) 配置文件。 管理员可以选择已分配设备的配置文件。
 
-更高级别的是其他 [自定义](customizing.md)项。 每台设备可以具有一个或多个自定义 (或) 自定义。 它们可以修改设备配置文件中的 (层或基础配置) ，或者作为一个全新请求，在标准配置的基础上分层。
+更高级别的是其他 [自定义](customizing.md)项。 每台设备可以具有一个或多个自定义 (或) 自定义。 它们可以修改设备配置文件中的 (层或基础) ，或者是一个全新请求，在标准配置的基础上分层。
 
 最上面是你自己的修改，如网络详细信息或应用程序。 设备可以有任意数目的修改，这些修改不会由设备管理或Microsoft 托管桌面。
 
@@ -48,7 +48,7 @@ ms.locfileid: "62009017"
 
 ****
 
-|功能|敏感数据|Power User|标准|
+|功能|敏感数据|Power User|Standard|
 |---|:---:|:---:|:---:|
 |**阻止外部存储**|是|是|否|
 |**[云块级别](/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel)**|高|高|高|

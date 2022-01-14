@@ -3,23 +3,23 @@ title: 可下载的准备情况评估检查器
 description: 检查设备和网络设置，包括所需的终结点
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 57739b657f3aa296b92b67c16b7b7c5c3628e8b9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 126819ac8d08841165c94503ddf1d3feb72e91ba
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152438"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035158"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>可下载的准备情况评估检查器
 
-若要很好地使用Microsoft 托管桌面，设备必须满足硬件和设置的某些要求。 此外，每台设备必须能够到达关键终结点。 下载并运行此工具以获取 HTML 报告、查看结果，然后采取措施。 你需要下载该工具和支持文件，然后在你想要在设备上注册的每台设备上手动Microsoft 托管桌面。
+若要很好地使用Microsoft 托管桌面，设备必须满足硬件和设置的某些要求。 此外，每台设备必须能够到达关键终结点。 下载并运行此工具以获取 HTML 报告、查看结果，然后采取措施。 你将需要下载该工具和支持文件，然后在你想要在设备上注册的每台设备上手动Microsoft 托管桌面。
 
 对于每个检查，该工具将报告三个可能的结果之一：
 

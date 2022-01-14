@@ -31,6 +31,14 @@ productDirectory:
   title: 入门
   summary: 设置订阅和电子邮件、添加用户并安装应用。
   items:
+    - title: 本月查看最多的 20 篇管理员帮助文章
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
+      summary: 查看其他管理员最热门的帮助文章。
+      url: top-m365-admin-articles.yml
+    - title: 管理员培训视频库
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
+      summary: 了解如何通过简短的视频Microsoft 365和管理业务部署。
+      url: admin-video-library.yml
     - title: 入门
       imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
       summary: 注册和设置 Microsoft 365。

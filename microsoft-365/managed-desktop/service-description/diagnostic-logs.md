@@ -3,22 +3,22 @@ title: 诊断日志
 description: 在疑难解答期间可能从设备收集的日志及其存储方式
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 5c890ea42da4bb13c163e7b8b123080e0264d025
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 62c96c4badd9659879bad81a631a496423259754
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201525"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035638"
 ---
 # <a name="diagnostic-logs"></a>诊断日志
 
-当我们在由 Microsoft 托管桌面 管理的设备上解决问题时，无论你已报告问题还是由服务识别的问题，我们可能需要从设备中收集某些诊断日志，而无需用户干预。 我们不会从用户目录中收集任何用户生成的内容或信息。 我们仅收集与设备运行状况和状态有关诊断和日志数据。
+当我们对由 Microsoft 托管桌面 管理的设备上的问题进行故障排除时，无论你已报告问题还是由服务识别的问题，我们可能需要从设备中收集某些诊断日志，而无需用户干预。 我们不会从用户目录中收集任何用户生成的内容或信息。 我们仅收集与设备运行状况和状态有关诊断和日志数据。
 
 我们将收集的任何日志存储 28 天，然后将其删除。 我们将按照数据处理标准处理从设备 [收集的任何日志](privacy-personal-data.md)。
 
@@ -68,7 +68,7 @@ ms.locfileid: "60201525"
 - %windir% \\ system32 \\netsh.exe advfirewall 显示所有文件
 - %windir% \\ system32 \\netsh.exe advfirewall 显示全局
 - %windir% \\ system32 \\netsh.exe lan 显示配置文件
-- %windir% \\ system32 \\netsh.exe winhttp 显示代理
+- %windir% \\ system32 \\netsh.exe winhttp show proxy
 - %windir% \\ system32 \\netsh.exe wlan 显示配置文件
 - %windir% \\ system32 \\netsh.exe wlan 显示 wlanreport
 - %windir% \\ system32 \\ping.exe -n 50 localhost
@@ -92,21 +92,21 @@ ms.locfileid: "60201525"
 ### <a name="event-logs"></a>事件日志
 
 - Application
-- Microsoft-Windows-AppLocker/EXE 和 DLL
-- Microsoft-Windows-AppLocker/MSI 和脚本
-- Microsoft-Windows-AppLocker/封装应用部署
-- Microsoft-Windows-AppLocker/封装应用执行
+- Microsoft-Windows-AppLocker/EXE and DLL
+- Microsoft-Windows-AppLocker/MSI and Script
+- Microsoft-Windows-AppLocker/Packaged app-Deployment
+- Microsoft-Windows-AppLocker/Packaged app-Execution
 - Microsoft-Windows-Bitlocker/Bitlocker Management
 - Microsoft-Windows-SENSE/Operational
 - Microsoft-Windows-SenseIR/Operational
-- 设置
-- System
+- 安装
+- 系统警报
 
 ### <a name="files"></a>文件
 
 - %ProgramData% \\ Microsoft \\ DiagnosticLogCSP \\ Collectors \\ \* .etl
 - %ProgramData% \\ Microsoft \\ IntuneManagementExtension \\ Logs \\ \* .\*
-- %ProgramData% \\ Microsoft Windows Defender Support \\ \\ \\MpSupportFiles.cab
+- %ProgramData% \\ Microsoft \\ Windows Defender \\ 支持 \\MpSupportFiles.cab
 - %ProgramData% \\ Microsoft \\ Windows \\ WlanReport \\wlan-report-latest.html
 - %ProgramData% \\ Microsoft \\ Windows \\ WlanReport -SourceFileName wlan-report-latest.html
 - %windir% \\ ccm \\ logs \* .log
@@ -115,8 +115,8 @@ ms.locfileid: "60201525"
 - %windir% \\ logs \\ measuredboot \* .\*
 - %windir% \\ Logs \\ WindowsUpdate \* .etl
 - %windir% \\ inf \\ \* .log
-- %windir% \\ \\ 服务 \\ 会话ActionList.xml
-- %windir% \\ \\ 服务 \\ 会话Sessions.xml
+- %windir% \\ \\ 服务 \\ 会话数ActionList.xml
+- %windir% \\ \\ 服务 \\ 会话数Sessions.xml
 - %windir% \\ SoftwareDistribution \\ DataStore \\ Logs \\ edb.log
 - %windir% \\ SoftwareDistribution \\ DataStore \\ DataStore.edb
 - %windir% \\ logs \\ dism \\ dism.log

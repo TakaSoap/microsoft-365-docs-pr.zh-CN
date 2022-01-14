@@ -3,19 +3,19 @@ title: 开始使用应用程序控制
 description: ''
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 375357e52e7aedf416b4a0d9988da18f39bda5ec
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bafbb32d83f1b9f4381f62b41254f5666d7f3a49
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211521"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034697"
 ---
 # <a name="get-started-with-app-control"></a>开始使用应用程序控制
 
@@ -29,7 +29,7 @@ Microsoft 托管桌面关注获取安全基本策略的更具挑战性方面，�
 
 ### <a name="devices-not-yet-in-use"></a>尚未使用的设备
 
-如果你尚未使用任何设备，请打开一个服务票证，Microsoft 托管桌面操作请求我们打开应用控制。 按照此计划，操作将逐步将策略部署到部署组：
+如果你尚未使用任何设备，请打开一个服务票证，Microsoft 托管桌面操作请求我们启用应用控制。 按照此计划，操作将逐步将策略部署到部署组：
 
 |部署组  |策略类型  |Timing  |
 |---------|---------|---------|
@@ -44,7 +44,7 @@ Microsoft 托管桌面关注获取安全基本策略的更具挑战性方面，�
 
 如果已至少有一个Microsoft 托管桌面设备，请按照以下步骤操作：
 
-1. 使用请求打开应用Microsoft 托管桌面的"操作"打开服务票证。 操作将审核 [策略部署到](../service-description/app-control.md#audit-policy) 所有设备。
+1. 打开服务票证，Microsoft 托管桌面操作请求我们启用应用控制。 操作将审核 [策略部署到](../service-description/app-control.md#audit-policy) 所有设备。
 2. [测试应用程序](../working-with-managed-desktop/work-with-app-control.md#add-a-new-app) 以查看是否阻止了任何应用程序。 如果应用程序被阻止，请打开 [签名者请求](../working-with-managed-desktop/work-with-app-control.md#add-or-remove-a-trusted-signer)。 
 3. 完成测试后，无论 (结果如何，) 通知操作，并通知任何挂起的签名者请求。 按照此计划，操作将逐步将策略部署到部署组：
 

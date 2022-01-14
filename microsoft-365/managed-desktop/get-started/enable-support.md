@@ -3,25 +3,25 @@ title: 启用用户支持功能
 description: 如何为用户支持启用提升和升级功能
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: e8d679eea96c221ee245ac0029ea291436fd84da
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7f0c6283d6e5a2fec722c3051420ea7d52ad3f64
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168394"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034721"
 ---
 # <a name="enable-user-support-features"></a>启用用户支持功能
 
-无论你是提供你自己的用户支持，还是与合作伙伴合作提供支持，请按照以下步骤使支持提供商能够请求提升的设备访问或将问题上报给 Microsoft 托管桌面（如果需要）。
+无论你是提供自己的用户支持，还是与合作伙伴合作提供，请按照以下步骤使支持提供商能够请求提升的设备访问或将问题上报给 Microsoft 托管桌面（如果需要）。
 
-1. 如果用户还没有帐户，则用户在 AAD Azure Active Directory (域中需要) 帐户Microsoft 托管桌面帐户。
-2. 将步骤 1 中的用户帐户添加到 AAD 中的新式 **工作区Roles-Support合作伙伴** 安全组。
+1. 如果用户还没有帐户，则用户需要一个与Azure Active Directory (AAD) 相同的域中Microsoft 托管桌面帐户。
+2. 将步骤 1 中的用户帐户添加到 AAD 中的新式 **工作区** Roles-Support合作伙伴安全组。
 
 <!--when available, add link to downloadable articles at DLC--> 
 

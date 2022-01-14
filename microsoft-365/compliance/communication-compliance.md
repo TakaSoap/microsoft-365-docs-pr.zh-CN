@@ -20,16 +20,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 83614f0c12b58206c8b9d6f779a73c901ebbcecf
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ab331c9e93799290348d60ede4e814f3f12675fc
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647410"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034589"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>了解通信合规性Microsoft 365
 
-通信合规性是组织中内部风险Microsoft 365，通过帮助你检测、捕获和操作组织中不适当的邮件，帮助最大程度地降低通信风险。 预定义和自定义的策略让你能够扫描内部和外部通讯，查看与策略的匹配情况，让委派的审阅者能检查它们。 审阅者可以调查组织中扫描的电子邮件、Microsoft Teams、Yammer 或第三方通信，并采取适当的措施确保他们符合组织的邮件标准。
+通信合规性是组织中一种内部Microsoft 365解决方案，可帮助您检测、捕获和操作组织中不适当的邮件，从而将通信风险降至最低。 预定义和自定义的策略让你能够扫描内部和外部通讯，查看与策略的匹配情况，让委派的审阅者能检查它们。 审阅者可以调查组织中扫描的电子邮件、Microsoft Teams、Yammer 或第三方通信，并采取适当的措施确保他们符合组织的邮件标准。
 
 Microsoft 365 中的通信合规性策略可以帮助你克服很多与合规性、内部和外部通信有关的新式挑战：
 
@@ -44,11 +44,13 @@ Microsoft 365 中的通信合规性策略可以帮助你克服很多与合规性
 - [通过通信合规性培养安全和包含文化](https://www.youtube.com/watch?v=oLVzxcaef3w)
 - [了解如何降低组织内部的通信风险](https://www.youtube.com/watch?v=vzARb1YaxGo)
 - [通过通信合规性满足法规合规性要求](https://www.youtube.com/watch?v=gagOhtCBfgU)
-- [更好地与Microsoft Teams - 详细了解通信合规性Teams集成功能的最新本机解决方案](https://www.youtube.com/watch?v=m4jukD5Fh-o)
+- [更好地使用Microsoft Teams - 了解有关通信合规性中Teams集成功能的最新本机解决方案](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 有关通信合规性的快速概述，请参阅 Microsoft Mechanics 频道上的检测工作场所骚扰[Microsoft 365通信合规性](https://youtu.be/z33ji7a7Zho)[响应](https://www.youtube.com/user/OfficeGarageSeries)。
 
 查看 [TD Security 如何使用通信合规性](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) 来解决其监管义务并满足其安全性和稳定性需求。
+
+若要了解最新的通信合规性更新，请选择贵组织通信合规性[的](https://compliance.microsoft.com/)新增功能。
 
 ## <a name="scenarios-for-communication-compliance"></a>通信合规性的场景
 
@@ -92,13 +94,13 @@ Microsoft 365 中的通信合规性策略可以帮助你克服很多与合规性
 - **对话策略匹配**：对话中的消息按策略匹配进行分组，让你可以更加了解对话与通信策略的关联。 例如，"挂起通知"视图中的对话策略匹配将自动显示与"不当内容"策略Teams匹配的所有邮件。 不会显示对话中与"不当内容"策略不匹配的其他消息。
 - **关键字突出显示**：邮件文本视图中将突出显示匹配策略条件的术语，以便帮助审阅者快速定位并修正策略警报。
 - **精确和接近重复检测**：除了扫描匹配通信合规性策略的准确字词之外，近重复检测将文本类似的字词和消息分在一起，以帮助加快审阅过程。
-- **OCR (OCR)  (预览) ：** 扫描、检测和调查嵌入或附加到电子邮件或聊天消息的图像中的打印和手写Microsoft Teams文本。
+- **O)  (CR (预览**) ：扫描、检测和调查嵌入或附加到电子邮件或聊天消息的图像中的打印和手写文本Microsoft Teams文本。
 - **新筛选器**：使用多个字段的邮件筛选器更快地调查和修正策略警报，包括发件人、收件人、日期、域等。
 - **改进的消息视图**：现在，使用新的邮件源、文本和注释视图，调查和修正操作会更快。 现在可以查看邮件附件，以在采取修正操作时提供完整上下文。
 - **用户历史记录**：现在，在修正工作流过程中，所有用户邮件修正活动（如过去的通知和策略匹配升级）的历史视图为审阅者提供了更多上下文。 用户的第一次或重复的策略匹配实例现在已存档且易于查看。
 - **模式检测到通知**：许多威胁和威胁操作会随着时间的推移发生，并且涉及用户重新出现相同行为的实例。 警报详细信息中显示的新模式检测到的通知有助于引起用户注意这些警报和这种类型的行为。
 - **翻译**：使用修正工作流中的翻译支持快速调查八种语言的邮件详细信息。 其他语言的邮件将自动转换为审阅者的显示语言。
-- 附件 **检测**：扫描、检测和调查 (邮件的策略分类 (和) OneDrive和Microsoft Teams新式附件Microsoft Teams内容。 附件内容会自动提取到文本文件中，进行详细审阅和操作。
+- 附件 **检测**：扫描、检测和调查 (邮件的策略分类) 和OneDrive Microsoft Teams新式附件Microsoft Teams链接内容。 附件内容会自动提取到文本文件中，进行详细审阅和操作。
 
 ### <a name="actionable-insights"></a>可行见解
 
@@ -112,11 +114,11 @@ Microsoft 365 中的通信合规性策略可以帮助你克服很多与合规性
 
 通信合规性策略跨多个通信渠道扫描和捕获消息，以帮助你快速查看和修正合规性问题：
 
-- **Microsoft Teams：** 在作为独立频道 [源或其他](/MicrosoftTeams/Teams-overview)Microsoft 365 服务的通信合规性中支持公共和专用 Microsoft Teams 频道和单个聊天的聊天通信。 当你选择要在通信合规性策略中监督的用户和组时，你需要手动添加单个用户、通讯组或Microsoft Teams频道。
-- **Exchange Online：** 托管在 Exchange Online 组织中 [Microsoft 365的所有邮箱](/Exchange/exchange-online)都符合扫描条件。 电子邮件和附件与通信合规性策略条件相匹配，可立即进行监视并提交到合规性报告中。 Exchange Online现在是一个可选的源通道，在通信合规性策略中不再需要它。
+- **Microsoft Teams：** 在作为独立频道 [源或其他](/MicrosoftTeams/Teams-overview)Microsoft 365 服务的通信合规性中支持公共和专用 Microsoft Teams 频道和单个聊天的聊天通信。 当您选择要在通信合规性策略中监督的用户和组时，您需要手动添加单个用户、通讯组或特定 Microsoft Teams频道。
+- **Exchange Online：** 托管在 Exchange Online 组织 [Microsoft 365的所有邮箱](/Exchange/exchange-online)都符合扫描条件。 电子邮件和附件与通信合规性策略条件相匹配，可立即进行监视并提交到合规性报告中。 Exchange Online现在是一个可选的源通道，在通信合规性策略中不再需要它。
 - **Yammer**：通信合规性策略支持 [Yammer](/yammer/yammer-landing-page) 中的私人消息和公共社区对话。 Yammer 是一个可选频道，必须处于 [本机模式](/yammer/configure-your-yammer-network/overview-native-mode) 才能进行消息和附件的审查。
 - **Skype for Business Online**：通信合规性策略支持扫描 [Skype for Business Online 中的聊天通信和相关附件](/SkypeForBusiness/skype-for-business-online)。
-- **第三方源**：可以扫描来自第三 [](archiving-third-party-data.md)方源的邮件，以搜索导入到组织邮箱Microsoft 365的数据。 通信合规性支持与多个热门平台（包括 Instant Bloomberg 和其他平台）的连接。
+- **第三方源**：可以扫描来自第三 [](archiving-third-party-data.md)方源的邮件，以检查导入到组织邮箱Microsoft 365的数据。 通信合规性支持与多个热门平台（包括 Instant Bloomberg 和其他平台）的连接。
 
 若要了解有关通信合规性策略中的消息传递通道支持的信息，请参阅检测具有通信合规性 [的通道信号](communication-compliance-channels.md)。
 
@@ -137,7 +139,8 @@ Microsoft 365 中的通信合规性策略可以帮助你克服很多与合规性
 
 你可以从 Microsoft 365 合规中心的以下策略模板中选择：
 
-- **监视不恰当的内容**：使用此模板快速创建一个策略，该策略使用内置分类器自动检测可能被视为不当、滥用或冒犯性的内容。
+- **监视不恰当的文本**：使用此模板快速创建一个策略，该策略使用内置分类器自动检测邮件中可能被视为不当、滥用或冒犯性的文本。
+- **监视不恰当的** 图像：使用此模板可以快速创建一个策略，该策略使用内置分类器自动检测包含可能被视为在组织中不合适的成人和性图片的内容。
 - 监视敏感信息 **：使用此** 模板可以快速创建策略，以扫描包含已定义的敏感信息类型或关键字的通信，以帮助确保重要数据不会与不应具有访问权限的人共享。
 - **监视财务监管** 合规性：使用此模板可以快速创建策略，以扫描通信，以引用与监管标准相关的标准金融条款。
 - **监视发生冲突的情况**：使用此模板可以快速创建一个策略来监视两个组或两个用户之间的通信，以帮助避免发生冲突。
@@ -165,14 +168,14 @@ Microsoft 365 中的通信合规性策略可以帮助你克服很多与合规性
 - **通知用户**：通常，用户意外或无意违反通信合规性策略。 你可以使用通知功能向用户提供警告通知并解决问题。
 - **呈报给另一个审阅者**：有时，问题的初始审阅者需要其他审阅者输入内容来帮助解决事件。 作为解决流程的组成部分，可以轻松将邮件问题呈报给组织其他领域的审阅者。
 - **报告为错误分类**：错误地检测为合规性策略匹配的邮件偶尔会进入审阅过程。 你可以将这些类型的警报标记为错误分类，向 Microsoft 提交有关错误分类的反馈以帮助改进全局分类器，并自动解决问题。
-- **删除预览Teams (消息：)** 频道或个人及群组聊天消息Microsoft Teams显示不当消息。 删除的不当邮件将替换为因违反策略而删除邮件的通知。
+- **删除预览Teams (消息**) ：可能从频道或个人及群组聊天Microsoft Teams显示不适当的消息。 删除的不当邮件将替换为因违反策略而删除邮件的通知。
 - **上报进行调查**：在最严重的情况下，可能需要与组织的其他审阅者共享通信合规性信息。 内部风险管理与其他 Microsoft 365 合规性功能紧密集成在一起，可帮助你进行端到端解决方案管理。 升级案件进行调查让你可以将数据和管理转移到 Office 365 高级电子数据展示。 高级电子数据展示提供了端到端的工作流程，可用于保存、收集、审查、分析和导出响应组织的内部和外部调查的内容。 它帮助法律团队管理整个法定保留通知工作流。 若要了解有关高级电子数据展示案例的详细信息，请参阅 [Microsoft 365 中的高级电子数据展示概述](overview-ediscovery-20.md)。
 
 ### <a name="monitor"></a>监视
 
 跟踪和管理通信合规性策略标识的合规性问题涉及整个工作流过程。 随着警报的生成以及调查和修正操作的实施，现有策略可能需要查看和更新，并且可能需要创建新策略。
 
-- **监视并报告**：使用通信合规性仪表板小组件、导出日志和记录在统一审核日志中的事件，持续评估和改进合规性状态。
+- **监视并报告**：使用通信合规性仪表板小部件、导出日志和记录在统一审核日志中的事件，持续评估和改进合规性状态。
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 

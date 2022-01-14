@@ -3,34 +3,34 @@ title: 来宾帐户的先决条件
 description: 来宾帐户的配置指南以及如何调整它们
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: db07ca3bb7577aed7b334ba21893f6fe026819a0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 64b0acabf76e1ceb12bd056b02cb2b949df9c957
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197133"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035036"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>来宾帐户的先决条件
 
 ## <a name="external-collaboration-settings"></a>外部协作设置
 
-Microsoft 托管桌面 Azure AD 组织中针对来宾帐户访问推荐以下配置。 可以在 Azure 门户的"[](https://portal.azure.com)外部标识 **/外部协作设置"下调整这些设置**：
+Microsoft 托管桌面为来宾帐户访问Azure AD以下配置。 可以在 Azure 门户的"[](https://portal.azure.com)外部标识 **/外部协作设置"下调整这些设置**：
 
 -   对于 **"来宾用户访问**"，设置为 **"来宾用户对目录对象的属性和成员身份具有有限访问权限"**
 -   对于 **"来宾邀请设置**"，设置为"成员"用户，分配到特定管理员角色的用户可以邀请来宾用户（包括具有 **成员权限的来宾）**
 
-Microsoft 托管桌面 Azure AD 组织中进行以下配置，以访问来宾帐户。 可以在 Azure 门户的"[](https://portal.azure.com)外部标识 **/外部协作设置"下调整此设置**：
+Microsoft 托管桌面组织需要以下配置Azure AD来宾帐户访问。 可以在 Azure 门户的"[](https://portal.azure.com)外部标识 **/外部协作设置"下调整此设置**：
 
 -   **协作限制**，选择以下任一选项：
-    -   如果选择" **允许邀请发送到任何非独占 (域) ，** 则无需其他配置。
-    -   如果选择" **拒绝对指定** 域的邀请"，请确保 Microsoft.com 未在目标域中列出。
+    -   如果选择" **允许邀请发送到任何域"， (包含**) ，则无需其他配置。
+    -   如果选择" **拒绝对指定** 域的邀请"，请确保 Microsoft.com 未列在目标域中。
     -   如果选择"**仅允许** 对限制最严格的 (域) "，请确保 Microsoft.com 列出该域。 
 
 如果设置与这些设置交互的限制，请确保排除"Azure Active Directory **工作区服务帐户"。** 例如，如果你有一个阻止来宾帐户访问 Intune 门户的条件访问策略，则从此策略中排除 **Modern Workplace Service Accounts** 组。
@@ -39,7 +39,7 @@ Microsoft 托管桌面 Azure AD 组织中进行以下配置，以访问来宾帐
 
 ## <a name="unlicensed-intune-admin"></a>未授权 Intune 管理员
 
-必须 **启用"允许访问未授权的管理员** "设置。 如果没有启用此设置，当我们尝试访问 Azure AD 组织进行服务时，可能会发生错误。 你可以安全地启用此设置，而无需担心安全隐患，因为访问范围由分配给用户的角色（包括我们的运营人员）定义。
+必须 **启用"允许访问未授权的管理员** "设置。 如果没有启用此设置，当我们尝试访问你的组织服务时Azure AD错误。 你可以安全地启用此设置，而无需担心安全隐患，因为访问范围由分配给用户的角色（包括我们的运营人员）定义。
 
 若要启用此设置，请按照以下步骤操作：
 
@@ -48,7 +48,7 @@ Microsoft 托管桌面 Azure AD 组织中进行以下配置，以访问来宾帐
 3. 在 **"允许访问未授权的** 管理员"中，选择"**是"。**
 
 > [!IMPORTANT]
-> 选择"是"后，无法撤消 **此设置**。
+> 选择"是"后，不能撤消 **此设置**。
 
 有关详细信息，请参阅未授权[的管理员Microsoft Intune。](/mem/intune/fundamentals/unlicensed-admins)
 

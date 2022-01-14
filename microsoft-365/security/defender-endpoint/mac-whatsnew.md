@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: bfea41b11a441b10fda3c9c6a4ac7ce66bf718b6
-ms.sourcegitcommit: c2e8a4febb019b398d549a72c489f012cfbc0b32
+ms.openlocfilehash: 650b2a91d5ba85e2c614a40941e01d7cdd7daf51
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61265186"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041122"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -32,6 +32,12 @@ ms.locfileid: "61265186"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+
+## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0) 
+
+- 不再支持 mojave (macOS 10.14) mojave 10.14
+- 在管理员通过 MDM 停止管理产品设置后，它现在将恢复为它管理之前的值 (最终用户在本地配置的值，或者，如果未显式提供此类本地值，则恢复为产品) 使用的默认值。 在此更改之前，在停止管理设置后，其托管值将保留，并且仍由产品使用。
+- Bug 修复&性能改进
 
 ## <a name="1014925-20121092149250"></a>101.49.25 (20.121092.14925.0) 
 
@@ -75,7 +81,7 @@ ms.locfileid: "61265186"
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0) 
 
 - [macOS 的设备](mac-device-control-overview.md) 控件现已一般可用
-- 解决了无法从 macOS 11 ("大 Sur"菜单上启动快速) 
+- 解决了无法从 macOS 11 上的"大 Sur"菜单 (快速扫描) 
 - 其他 Bug 修复
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0) 
@@ -92,12 +98,12 @@ ms.locfileid: "61265186"
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0) 
 
-- 修复以适应 macOS Catalina 和更早版本 Apple 证书过期。 此修补程序还原 TVM &威胁 (管理) 功能。
+- 修复以适应 macOS Catalina 和更早版本 Apple 证书过期。 此修补程序还原 TVM &威胁 (漏洞) 功能。
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0) 
 
 - macOS 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。
-- 性能改进 (专为使用 XCode 模拟器应用修复错误) &的情况。
+- 性能改进 (XCode 模拟器应用用于修复错误) &的情况。
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
 
@@ -132,7 +138,7 @@ ms.locfileid: "61265186"
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0) 
 
-- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 清单到内核内核错误时的条件
+- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大) 清单到内核内核错误时的条件
 - 修复了在 Mac 11 和 Big Sur (运行时 Endpoint Security 系统扩展) 
 - 错误修补程序
 
@@ -280,7 +286,7 @@ ms.locfileid: "61265186"
 - 增加了对 macOS 加泰罗尼亚语的支持
 
   > [!CAUTION]
-  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，未经明确同意 (应用程序无法访问磁盘上的某些位置) 下载、桌面等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+  > macOS 10.15 (Catalina) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序在未经明确同意的情况下 (访问磁盘上的某些位置，如文档、下载、桌面) 等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
   >
   > 授予此同意的机制取决于你部署适用于终结点的 Microsoft Defender 的方式：
   >

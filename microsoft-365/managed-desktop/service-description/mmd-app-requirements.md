@@ -3,18 +3,18 @@ title: Microsoft 托管桌面应用要求
 description: 我们使用管理工具
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 29c531599e1122ae596281efbd187081348def6a
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: eeec38806b792ea9799b9359e473d1fd030f4f2a
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587953"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035626"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 托管桌面应用要求
 
@@ -28,14 +28,14 @@ Microsoft 托管桌面要求我们使用特定方法管理设备，以确保设�
 |管理区域  |Microsoft 托管桌面方法  |
 |---------|---------|
 |设备配置或策略管理     |  Microsoft Intune       |
-|应用程序管理     | Microsoft Intune 和 公司门户        |
-|驱动程序部署     |  设备、更新或 intune Windows驱动程序       |
+|应用管理     | Microsoft Intune 和 公司门户        |
+|驱动程序部署     |  设备、更新或 Intune Windows驱动程序       |
 |设备安全性     | 请参阅 [设备安全性](security.md#device-security)      |
 |标识和访问管理     | 请参阅 [标识和访问管理](security.md#identity-and-access-management)        |
 |网络安全性     | 请参阅 [网络安全](security.md#network-security)        |
 |信息安全     |  请参阅 [信息安全](security.md#information-security)       |
 |数据恢复     | OneDrive for Business        |
-|核心生产力     | 适用于企业的 Microsoft 365 应用    |
+|核心生产力     | Microsoft 365 企业应用版    |
 |浏览器     | Microsoft Edge        |
 
 

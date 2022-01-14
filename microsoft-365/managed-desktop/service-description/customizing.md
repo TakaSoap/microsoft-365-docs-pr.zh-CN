@@ -3,18 +3,18 @@ title: 服务计划的例外情况
 description: 如何请求标准服务计划的例外
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: ed071c31d4e5898d790e0a723dec8c2e332da1ca
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b791e20f68d16cdcda415593a9aa42cb7438c084
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60698389"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034901"
 ---
 # <a name="exceptions-to-the-service-plan"></a>服务计划的例外情况
 
@@ -22,7 +22,7 @@ Microsoft 托管桌面提供了一个精心设计的设备列表、标准设备[
  
 ## <a name="types-of-exceptions"></a>异常类型
 
-例外情况是，对基本配置进行Microsoft 托管桌面更改;示例范围从 USB 端口配置到部署新设备驱动程序。 我们按如下方式对各种例外进行分组：
+例外情况是添加或更改基本Microsoft 托管桌面;示例包括 USB 端口配置和部署新设备驱动程序。 我们按如下所示对各种例外进行分组：
 
 |类型  |说明  |
 |---------|---------|
@@ -38,7 +38,7 @@ Microsoft 托管桌面提供了一个精心设计的设备列表、标准设备[
 
 通过管理门户Microsoft 托管桌面更改请求提交请求。 请务必包含以下详细信息：
 
-- 免除类型：属于哪个类别的例外？  (上表) 
+- 免除类型：属于哪个类别的例外？  (上一个表) 
 - 要求：异常的特定业务需求是什么？
 - 建议：你的业务正在请求哪个解决方案？
 - 时间线：希望此异常持续多久？ 
@@ -49,10 +49,10 @@ Microsoft 托管桌面提供了一个精心设计的设备列表、标准设备[
  
 1. 某些要部署到Microsoft 托管桌面的应用程序和策略不会带来任何影响，因此请求不得影响它们。 有关详细信息 [，请参阅](device-policies.md) 设备配置。
 2. 用户完成工作所需的受限工作效率软件可能会获得批准。 
-3. 如果我们可以使用 Microsoft 技术满足你的要求，我们很可能会批准你请求的异常迁移期为 (3 到 12 个月，具体取决于项目) 。
+3. 如果我们可以使用 Microsoft 技术满足你的要求，我们很可能会批准你请求的例外迁移期为 3 到 12 个月 (具体取决于项目迁移) 。
 4. 如果我们使用 Microsoft 技术无法满足您的要求，我们很可能会批准你的请求，除非它违反了关键条件之 [一](#key-conditions)。  
 
-这些原则可确保Microsoft 托管桌面跟踪标准模板的偏差时始终满足您的需求。 
+这些原则可确保Microsoft 托管桌面模板的偏差时始终满足您的需求。 
 
 ## <a name="key-conditions"></a>关键条件
 
@@ -61,10 +61,10 @@ Microsoft 托管桌面提供了一个精心设计的设备列表、标准设备[
 - 异常不得对系统安全性产生不利影响。 
 - 维护异常不得使运行或支持产生Microsoft 托管桌面成本。
 - 异常不得影响系统稳定性，例如，导致内核模式崩溃或挂起。
-- 更改不得限制我们运营该服务或与核心技术Microsoft 托管桌面冲突。
+- 更改不得限制我们操作该服务或与核心技术Microsoft 托管桌面冲突。
 - 例外情况不能涉及个性化用户体验，例如更改"开始"菜单任务栏。
 
-这些条件将来可能会更改。 如果我们进行此类更改，我们将在这些条件生效之前提前 30 天发出通知。  如果Microsoft 托管桌面提供满足已批准例外的替代方法，Microsoft 托管桌面通知客户Microsoft 托管桌面更改支持异常的方式。 
+这些条件将来可能会更改。 如果我们进行此类更改，我们将在这些条件生效之前提前 30 天发出通知。  如果Microsoft 托管桌面提供满足已批准例外的替代方法，Microsoft 托管桌面通知客户Microsoft 托管桌面更改支持例外的方式。 
 
 ## <a name="revoking-approval-for-an-exception"></a>撤销对异常的审批
 

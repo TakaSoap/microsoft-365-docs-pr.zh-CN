@@ -3,23 +3,23 @@ title: 使用应用程序控制
 description: ''
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c1600381062aa61b79ba757d530afef07aca26e6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d7f4bff519fd06a9e8a43030426d7820d68f5153
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208669"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035109"
 ---
 # <a name="work-with-app-control"></a>使用应用程序控制
 
-在环境中部署应用控制后，你和Microsoft 托管桌面操作将持续承担责任。 例如，你可能想要在环境中添加新应用，或者添加 (或删除) 签名者。 为了提高安全性，所有应用都应先进行代码签名，然后再将其发布给用户。 应用的发布者详细信息包括有关签名者的信息。
+在环境中部署应用控制后，你和Microsoft 托管桌面操作都承担持续的责任。 例如，你可能想要在环境中添加新应用，或者添加 (或删除) 签名者。 为了提高安全性，所有应用都应先进行代码签名，然后再将其发布给用户。 应用的发布者详细信息包括有关签名者的信息。
 
 
 ## <a name="add-a-new-app"></a>添加新应用
@@ -37,7 +37,7 @@ ms.locfileid: "60208669"
 打开签名者请求时，需要先提供一些重要的发布者详细信息。 然后按照以下步骤操作：
 
 1. [收集发布者详细信息](#gather-publisher-details)。
-2. 使用 Microsoft 托管桌面 操作打开票证以请求签名者规则，并包括以下详细信息：  
+2. 使用 Microsoft 托管桌面 操作打开票证以请求签署人规则，并包括以下详细信息：  
     - 应用程序名称 
     - 应用程序版本 
     - 说明 
@@ -75,4 +75,4 @@ ms.locfileid: "60208669"
     - 应用程序名称 
     - 应用程序版本 
     - 说明 
-    - Publisher详细信息 (例如："O= <publisher name> 、L= <location> 、S=State、C=Country") 
+    - Publisher详细信息 (例如："O= <publisher name> ， L= <location> ， S=State， C=Country") 

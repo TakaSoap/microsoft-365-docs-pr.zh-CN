@@ -1,24 +1,24 @@
 ---
 title: 设备要求
-description: 设备使用软件的最低硬件和软件要求Microsoft 托管桌面
+description: 设备与移动设备一起运行的最低硬件和软件要求Microsoft 托管桌面
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 1ce5f0c3782b8e8082d0e1ede53339a190b7259f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b27ad8f4781621a9517507e312feb9be0aa310a3
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209461"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034553"
 ---
 # <a name="device-requirements"></a>设备要求
 
-Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文介绍了设备必须满足的硬件和软件要求，才能使用Microsoft 托管桌面。 你可以根据这些要求查看已批准用于服务的特定设备的列表。 筛选Microsoft 托管桌面[商店Windows Pro商业设备"网站上显示的内容](https://www.microsoft.com/en-us/windows/business/devices)
+Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文介绍了设备必须满足的硬件和软件要求，才能使用Microsoft 托管桌面。 你可以根据这些要求查看已批准用于服务的特定设备的列表。 筛选Microsoft 托管桌面[购买商业Windows Pro站点上的筛选器](https://www.microsoft.com/en-us/windows/business/devices)
 
 > [!NOTE]
 > 这些要求可能随时更改，但我们会提前 30 天通知任何硬件要求更改。 最近更改的要求标有 <b>\*</b> 。 
@@ -45,7 +45,7 @@ Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文
 
 设备必须预安装此软件：
 
-- <b>\*</b>Windows 10或 Windows 11：Enterprise、Pro 或 Pro Workstation 版本
+- <b>\*</b>Windows 10或Windows 11：Enterprise、Pro 或 Pro Workstation 版本
 - 64 位版本的 Microsoft 365 企业应用版 
 - 所有适用的设备驱动程序
 
@@ -63,7 +63,7 @@ Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文
 
 > [!NOTE]
 >- ARM处理器不受支持。
->- <b>\*</b>Windows 11 具有其他[硬件要求](/windows/whats-new/windows-11-requirements)。
+>- <b>\*</b>Windows 11具有其他[硬件要求](/windows/whats-new/windows-11-requirements)。
 
 设备应满足或超过以下存储和内存限制：
 
@@ -71,7 +71,7 @@ Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文
 - 启动驱动器的容量必须至少为 128 GB。
 - 内部设备内存 (RAM) 必须等于或超过 8 GB。
 
-如果设备是在 2020 年 7 月 1 日之后制造，它还应具有 IR 相机、指纹读取器或两者，[以便](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)支持Windows Hello。
+如果设备是在 2020 年 7 月 1 日之后进行，它还应具有 IR 相机、指纹读取器或两者，以便支持[Windows Hello。](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
 
 ## <a name="recommended-features"></a>推荐的功能
 

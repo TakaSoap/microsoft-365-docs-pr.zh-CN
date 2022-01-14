@@ -3,21 +3,21 @@ title: 支持的区域
 description: 支持的区域Microsoft 托管桌面
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 6c239f86413fdbe033fd72e86720a19ac749616f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 83ba5e60d77cd4b68834efeceb4572639348d122
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178571"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035060"
 ---
 # <a name="microsoft-managed-desktop-supported-regions"></a>Microsoft 托管桌面支持的区域
 
@@ -25,7 +25,7 @@ ms.locfileid: "60178571"
 
 你仍然可以在这些区域之外使用托管设备，而不会中断 Microsoft 托管桌面 服务。 例如，位于英国的员工在出差到亚洲、欧洲或南非时，可以安全地工作并接收其托管设备的更新。
 
-有关用户和管理员体验Microsoft 托管桌面支持的语言，请参阅[本地化用户体验](../get-started/localization.md)。
+有关用户和管理体验Microsoft 托管桌面支持的语言，请参阅本地化[用户体验](../get-started/localization.md)。
 
 有关用户对 Microsoft 托管桌面 支持[Microsoft 托管桌面。](support.md)
 

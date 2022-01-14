@@ -3,23 +3,23 @@ title: 访问管理门户
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 description: 如何查找和使用管理门户，包括控制对管理门户的访问。
 ms.service: m365-md
-ms.author: jaimeo
-author: jaimeo
+ms.author: tiaraquan
+author: tiaraquan
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
-ms.openlocfilehash: 6d327c88da229947ab47aee1fba2dd41def94bfb
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+manager: dougeby
+ms.openlocfilehash: 9b3e170931fc45eaed98767bd524767a5c03744a
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943552"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034457"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
-您的网关连接到 Microsoft 托管桌面[服务Microsoft Endpoint Manager。](https://endpoint.microsoft.com/) 如果你不熟悉此门户的设备管理功能，请参阅Microsoft Endpoint Manager[文档](/mem/)。
+您的网关连接到 Microsoft 托管桌面[服务Microsoft Endpoint Manager](https://endpoint.microsoft.com/)。 如果你不熟悉此门户的设备管理功能，请参阅Microsoft Endpoint Manager[文档](/mem/)。
 
 > [!NOTE]
 > 在[Microsoft Endpoint Manager](https://endpoint.microsoft.com/)支持以下浏览器：
@@ -28,7 +28,7 @@ ms.locfileid: "61943552"
 > - Chrome（最新版本）
 > - Firefox（最新版本）
 
-管理帐户将需要特定权限才能访问Microsoft 托管桌面管理Microsoft Endpoint Manager。 可以使用基于角色的访问控制在组织中管理对这些功能的管理员访问权限。 多个Azure Active Directory (Azure AD) 管理员角色和内置Microsoft 托管桌面角色可用于更精细地控制管理门户中Microsoft 托管桌面功能。 有关角色Azure Active Directory，请参阅Azure AD[角色](/azure/active-directory/roles/permissions-reference)。 与Azure AD各种 Microsoft 产品和服务的管理员角色不同，内置角色特定于 Microsoft 托管桌面 并且仅保证访问此服务的管理员功能。 管理员可以将内置角色单独分配给用户，也可以将其与管理员角色Azure AD一起向现有管理员Microsoft 托管桌面添加管理员权限。
+管理帐户将需要特定权限才能访问Microsoft 托管桌面管理Microsoft Endpoint Manager。 可以使用基于角色的访问控制在组织中管理对这些功能的管理员访问权限。 多个Azure Active Directory (Azure AD) 管理员角色和内置 Microsoft 托管桌面 角色可用于更精细地控制 Microsoft 托管桌面 管理门户中的不同功能。 有关角色Azure Active Directory，请参阅Azure AD[角色](/azure/active-directory/roles/permissions-reference)。 与Azure AD各种 Microsoft 产品和服务的管理员角色不同，内置角色特定于 Microsoft 托管桌面 并且仅保证访问此服务的管理员功能。 管理员可以将内置角色单独分配给用户，也可以与管理员角色Azure AD一起向现有管理员帐户Microsoft 托管桌面管理员权限。
 
 ## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Azure Active Directory具有访问权限Microsoft 托管桌面角色
 
@@ -38,7 +38,7 @@ ms.locfileid: "61943552"
 |全局读取者     | 具有此角色的管理员将拥有对管理 **门户** 中所有功能的只读Microsoft 托管桌面权限。         |
 |Intune 服务管理员     |  具有此角色的 **管理员将在管理** 门户中对与安全不相关的功能Microsoft 托管桌面权限。       |
 |服务支持管理员     | 具有此角色的管理员将具有对与安全不相关的功能的只读权限，并且具有写入权限来管理支持请求（包括 Microsoft 托管桌面 管理门户中的升级请求）。         |
-|安全管理员 | 具有此角色的管理员将拥有针对所有功能的只读权限，并且将在管理门户的 Microsoft 托管桌面 中写入安全相关功能的权限。 |
+|安全管理员 | 具有此角色的 **管理员将拥有** 针对所有功能的只读权限，并且对管理门户中安全相关Microsoft 托管桌面写入权限。 |
 |安全信息读取者 |具有此角色的管理员将拥有对管理 **门户** 中所有功能的只读Microsoft 托管桌面权限。|
 
 如果需要有关分配角色Azure Active Directory帮助，请参阅Azure AD[角色](/azure/active-directory/roles/permissions-reference)。
@@ -51,8 +51,8 @@ ms.locfileid: "61943552"
 
 |内置角色  |Microsoft 托管桌面权限  |
 |---------|---------|
-|Microsoft 托管桌面服务管理员  | 分配给用户时，此角色为管理员授予对 Microsoft 托管桌面管理门户中与安全不相关的Microsoft 托管桌面读取和写入权限。  |
-|Microsoft 托管桌面 Service Reader | 分配给用户时，此角色授予管理员只读权限，Microsoft 托管桌面管理门户中与安全Microsoft 托管桌面功能。 |
+|Microsoft 托管桌面服务管理员  | 当分配给用户时，此角色授予管理员对Microsoft 托管桌面管理门户中与安全不相关的Microsoft 托管桌面权限。  |
+|Microsoft 托管桌面 Service Reader | 分配给用户时，此角色为管理员授予对Microsoft 托管桌面管理门户中与安全不相关的Microsoft 托管桌面权限。 |
 |Microsoft 托管桌面安全管理器 |分配给用户时，此角色仅向管理员授予对管理门户中与安全相关的Microsoft 托管桌面权限。   |
 |Microsoft 托管桌面支持合作伙伴 |分配给用户时，此角色仅向管理员授予创建和管理提升请求的读取和写入权限，并支持合作伙伴在 Microsoft 托管桌面 管理门户中参与的提升请求。   |
 

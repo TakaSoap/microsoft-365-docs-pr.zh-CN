@@ -3,18 +3,18 @@ title: 获取用户对 Microsoft 托管桌面
 description: 用户如何获取有关服务和设备的帮助
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: d10f2e938e201fa25505abc820d05b03af04e543
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: dbbc783607afb482bf31b985828b59b834784bba
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374408"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035422"
 ---
 # <a name="getting-help-for-users"></a>获取针对用户的帮助
 
@@ -27,15 +27,15 @@ ms.locfileid: "61374408"
 
 在请求提升对设备的访问权限之前，最好查看最适合的操作。
 
-- **典型** 操作是此过程的目的，在解决设备问题时，将定期Microsoft 托管桌面操作。 示例包括：
-    - 提升内置系统疑难解答程序、命令提示符或Windows PowerShell
+- **典型** 操作是此过程的目的，在解决设备问题时将定期Microsoft 托管桌面操作。 示例包括：
+    - 提升内置系统疑难解答、命令提示符或Windows PowerShell
     - 业务线应用程序疑难解答
     - 使用解决方法更正应按设计正常运行 (如 BitLocker 激活或系统时间不更新) 
     - 提升设备管理器以执行更新驱动程序、卸载设备或扫描新更改等操作
 
 - **不建议的操作** 包括：
     - 安装软件或浏览器
-    - 在外部安装驱动程序Windows设置，包括用于外围设备的驱动程序
+    - 在外部安装驱动程序Windows设置，包括用于外设的驱动程序
     - 安装.msi或.exe文件
     - 安装Windows功能
 
@@ -47,7 +47,7 @@ ms.locfileid: "61374408"
 ### <a name="to-request-elevation"></a>请求提升
 
 1. 登录到 ["Microsoft Endpoint Manager](https://endpoint.microsoft.com/)并导航到 **"设备"** 菜单。
-2. 查找 **"Microsoft 托管桌面"** 部分，然后选择"**设备**"边栏选项卡，其中包含两个选项卡："设备"选项卡和"提升 **请求"** 选项卡。 
+2. 查找 **"Microsoft 托管桌面"** 部分，然后选择"**设备**"边栏选项卡，其中包含两个选项卡"设备"选项卡和"提升 **请求"** 选项卡。 
 3. 若要在"设备"选项卡上创建新的提升请求，请选择要提升的单个设备，然后从"设备操作"下拉菜单中选择"请求提升"。 将显示新的提升请求飞入窗格，并预先填充该字段中的设备名称。
 4. 或者，若要在"提升请求"选项卡上创建新的提升请求，请选择 **"+新建提升请求"。**
 5. 提供以下详细信息：

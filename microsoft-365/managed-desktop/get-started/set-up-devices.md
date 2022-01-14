@@ -3,33 +3,33 @@ title: 为设备设置Microsoft 托管桌面
 description: 如何获取新设备或重复使用符合资格的现有设备
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 98adf2e8d6faeb089b74a2ec4050b7ec53620e0f
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 41b10fe4a09a79d50973c478ebd8b6351d13cbeb
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364623"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035146"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>设置 Microsoft 托管桌面设备
 
-你可以同时使用 Microsoft 托管桌面 中的新设备和Microsoft 托管桌面。
+可以在设备中同时使用新的和现有的Microsoft 托管桌面。
 
 ## <a name="to-obtain-new-devices"></a>获取新设备
 
 我们建议与批准的设备合作伙伴之一合作。 你可以与 Microsoft 帐户联系人合作，以了解有关建立设备合作关系的更多帮助。 但是，从本质上说，此过程如下所示：
 
-1. 查看当前推荐的设备列表，方法为在"购买Microsoft 托管桌面商业Windows Pro[筛选内容](https://www.microsoft.com/windows/business/devices)。
+1. 通过筛选"购买"Microsoft 托管桌面"商业设备"Windows Pro[当前推荐的设备](https://www.microsoft.com/windows/business/devices)列表。
 2. 为你想要用于兼容映像的一个或多个设备示例排序。 排序可能需要 [特定的排序步骤](../service-description/device-images.md)。
 3. [验证](validate-device.md) 示例设备。
 5. 验证成功后，订购设备，与批准的设备合作伙伴合作。
-6. 到达后，执行下列操作之一：
+6. 到达后，执行以下操作之一：
     - [自行注册新设备](register-devices-self.md)
     - 与合作伙伴合作注册设备
 7. [让用户准备好](get-started-devices.md)使用Microsoft 托管桌面设备

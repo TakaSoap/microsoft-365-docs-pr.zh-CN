@@ -4,19 +4,19 @@ description: 如何部署Microsoft 365 应用版、如何更新它们以及如�
 keywords: 修订记录
 ms.service: m365-md
 ms.sitesec: library
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: f6df4ed3568be232927b7c427341d16eb869b7ed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 675b9d32c60febd7e70dfd64f49b7869c489aa0b
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199821"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034805"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 企业应用版
 
@@ -28,7 +28,7 @@ Microsoft 托管桌面可确保Microsoft 365 企业应用版 (64) 作为映像�
 - Excel
 - PowerPoint
 - Outlook
-- 发布者
+- Publisher
 - Access
 - Skype for Business
 - OneNote
@@ -36,11 +36,11 @@ Microsoft 托管桌面可确保Microsoft 365 企业应用版 (64) 作为映像�
 此方法最大限度地减少了网络影响，并确保用户一收到其设备就可以提高工作效率。 然后，我们将向托管设备部署更多策略，以设置供使用的应用程序。
 
 > [!NOTE]
-> Microsoft Teams独立于Microsoft 365 企业应用版部署，并且不包含在基本映像中。 
+> Microsoft Teams与映像分开Microsoft 365 企业应用版，并且不包含在基本映像中。 
 
 ### <a name="available-deployment-to-users"></a>可供用户使用的部署
 
-如果用户由于任何原因Microsoft 365 应用版未连接到设备，可以使用程序包将设备返回到其预期状态。 将用户添加到新式 **工作区Office-Office365_Install** 组，应用将在 公司门户 中变为公司门户。
+如果用户出于任何原因Microsoft 365 应用版设备，可以使用程序包将设备返回到其预期状态。 将用户添加到"新式 **工作区Office Office365_Install** 组，应用将在"新式工作区"公司门户。
 
 ### <a name="microsoft-365-apps-for-enterprise-32-bit"></a>Microsoft 365 企业应用版 (32 位) 
 
@@ -61,7 +61,7 @@ Microsoft 托管桌面设置设备的[七天更新](/deployoffice/configure-upda
 
 ### <a name="pausing-or-rolling-back-an-update"></a>暂停或回滚更新
 
-如果你需要出于任何原因暂停或回滚Microsoft 365更新，请通过管理门户提交管理员Microsoft 托管桌面请求。 [](../working-with-managed-desktop/admin-support.md)
+如果你需要出于任何原因暂停或Microsoft 365应用更新，请通过管理门户提交管理员Microsoft 托管桌面请求。 [](../working-with-managed-desktop/admin-support.md)
 
 在发布期间，Microsoft 托管桌面监视所有Microsoft 365 应用版。 如果我们注意到新版本及其前置版本之间的质量显著差异，我们可能会通过管理门户Microsoft 托管桌面联系。 根据严重性，我们将询问您是否要暂停发布，或告知您我们已采取措施来缓解问题。 
 
@@ -69,21 +69,21 @@ Microsoft 托管桌面设置设备的[七天更新](/deployoffice/configure-upda
 
 传递优化是一种可用于企业或企业Windows 10。 它允许设备共享设备通过 Internet 从 Microsoft 下载的内容（如更新）。 使用它有助于减少网络带宽，因为设备可以从本地网络的另一台设备获取部分更新，而无需从 Microsoft 完全下载更新。
 
-[默认情况下，](/deployoffice/delivery-optimization)在运行 Windows 10 企业版 或 Windows 10 教育版 版本上启用传递优化。 
+[默认情况下，](/deployoffice/delivery-optimization)在运行 Windows 10 企业版 或 Windows 10 教育版 版本的设备上启用传递优化。 
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>设置由 Microsoft 托管桌面
 
-Microsoft 将某些设置作为服务的一部分管理。 Microsoft 托管桌面不会管理Office安全基线，但你可以按照你管理的安全性部分中的设置[设置一个](#settings-you-manage)基线。
+Microsoft 将某些设置作为服务的一部分管理。 Microsoft 托管桌面不会管理Office安全基线，但可以按照管理的安全性部分中的设置[设置一个](#settings-you-manage)基线。
 
 ### <a name="update-settings"></a>更新设置
 
-Microsoft 托管桌面维护[托管设备的所有](/deployoffice/configure-update-settings-microsoft-365-apps)更新设置，并且应修改这些设置。
+Microsoft 托管桌面维护托管[设备的所有](/deployoffice/configure-update-settings-microsoft-365-apps)更新设置，并且应修改这些设置。
 
 ### <a name="set-updates-to-occur-automatically"></a>设置自动进行的更新
 
 **默认值：** 已启用
 
-配置此策略是为了确保所有Office设备在云中保持最新状态。 
+配置此策略是为了确保Office设备在云中保持最新状态。 
 
 ### <a name="set-a-deadline-when-updates-have-to-be-applied"></a>设置必须应用更新的截止时间
 
@@ -104,24 +104,24 @@ Microsoft 托管桌面维护[托管设备的所有](/deployoffice/configure-upda
 
 **默认值：False**
 
-在设备上，"隐藏更新通知"Microsoft 托管桌面设置为 **False，** 以在需要更新时通知用户，以提供最佳更新体验。 [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps)
+在设备上，"隐藏更新通知"设置Microsoft 托管桌面"隐藏更新通知"设置为 **False，** 以在需要更新时通知用户，[](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps)以提供最佳更新体验。
 
 ### <a name="specify-a-location-to-look-for-updates"></a>指定用于查找更新的位置
 
 **默认值：** 每月频道Enterprise频道
 
-根据需要使用 **UpdatePath** 和 **UpdateChannel** 策略的组合来实现更新计划。 这些策略设置为确保所有设备Office接收来自每月频道频道CDN更新Enterprise更新。
+根据需要使用 **UpdatePath** 和 **UpdateChannel** 策略的组合来实现更新计划。 设置这些策略是为了确保所有Office设备直接从每月频道频道CDN更新Enterprise更新。
 
 ### <a name="specify-the-target-version-of-microsoft-365-apps"></a>指定目标版本Microsoft 365 应用版
 
-目标版本策略有时由 Microsoft 托管桌面 用于回滚或固定特定版本的Office。 
+目标版本策略有时由 Microsoft 托管桌面，以便回滚或固定特定版本的Office。 
 
 
 ### <a name="hide-the-option-to-enable-or-disable-office-automatic-updates"></a>隐藏启用或禁用自动更新Office选项
 
 **默认值：** 已启用
 
-若要使用户满足Microsoft 托管桌面应用程序的更新目标，Microsoft 365此设置。 
+若要使应用程序Microsoft 托管桌面其更新目标，则此设置Microsoft 365要求。 
 
 ### <a name="first-run-settings"></a>首次运行设置 
 
@@ -147,19 +147,19 @@ Microsoft 托管桌面维护[托管设备的所有](/deployoffice/configure-upda
 
 **默认值：** 已禁用
 
-一些组织关注用户可以访问其设备上公司和个人文件。 您可以向要求启用此设置的 Microsoft 托管桌面 Operations 团队提出服务请求。 
+一些组织关注用户可以访问其设备上公司和个人文件。 您可以向 Microsoft 托管桌面 Operations 团队提出服务请求，要求启用此设置。 
 
 ## <a name="settings-you-manage"></a>设置管理
 
-有许多其他策略Microsoft 托管桌面尚未设置为服务的一部分。 可以使用使用云策略服务Microsoft Intune配置[Office策略。](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) 若要设置这些策略，请按照以下步骤操作：
+有许多其他策略Microsoft 托管桌面尚未设置为服务的一部分。 可以使用使用云策略服务Microsoft Intune配置Office[策略](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied)。 若要设置这些策略，请按照以下步骤操作：
 
-1. 登录到管理Microsoft Endpoint Manager中心。
+1. 登录到 Microsoft Endpoint Manager 管理中心。
 2. 为 **要>的应用选择Office策略>应用**
 3. 在" **创建策略** 配置"页上，执行以下操作：
     - 输入名称。
     - 提供可选 (说明) 。
-    - 在 **分配** 中，选择此策略是应用于 Microsoft 365 企业应用版 所有用户，还是仅应用于使用 Office 网页版 匿名访问文档的用户。
-    - 选择分配给策略配置的基于 AAD 的安全组。 每个策略配置只能分配给一个组，并且只能为每个组分配一个策略配置。
+    - 在 **分配** 中，选择此策略是应用于 Microsoft 365 企业应用版 所有用户，还是仅应用于使用 Office 网页版 匿名访问Office 网页版。
+    - 选择AAD策略配置的基于策略的安全组。 每个策略配置只能分配给一个组，并且只能为每个组分配一个策略配置。
     - 配置要包含在策略配置中的策略设置。 可以搜索策略设置名称以查找要配置的策略设置。 还可以筛选应用程序、策略是否是建议的安全基线以及策略是否已配置。 平台列指示策略是应用于Microsoft 365 企业应用版设备Windows还是Office 网页版应用。
 4. 做出选择后，选择"创建 **"。**
 

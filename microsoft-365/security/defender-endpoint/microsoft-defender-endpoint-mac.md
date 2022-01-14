@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15fbe01678a23de43d61705f2be96e7885f3b406
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 893ec2b7acfc9eddc75d803c297dd40f3c02a674
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941884"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041098"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
@@ -49,7 +49,7 @@ ms.locfileid: "61941884"
 > [!TIP]
 > 如果你有任何要共享的反馈，请通过在你的设备上打开 Mac 上的 Microsoft Defender for Endpoint 并导航到"帮助发送反馈"来 \> **提交它**。
 
-若要获取最新功能，包括预览功能 (如适用于 Mac 设备的终结点检测和响应) ，请配置运行 Microsoft Defender for Endpoint 的 macOS 设备作为"预览体验成员"设备。
+若要获取最新功能（包括预览功能 (如适用于 Mac 设备的终结点检测和响应) ，请配置运行 Microsoft Defender for Endpoint 的 macOS 设备作为"预览体验成员"设备。
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>如何在 Mac 上安装 Microsoft Defender for Endpoint
 
@@ -76,9 +76,9 @@ ms.locfileid: "61941884"
 支持 macOS 的三个最新主要版本。
 
 > [!IMPORTANT]
-> 在 macOS 11 (及) ，Microsoft Defender for Endpoint 需要其他配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署 [macOS Catalina](mac-sysext-policies.md)的新配置文件和较新版本的 macOS 中列出的其他配置文件。
+> 在 macOS 11 (及) ，Microsoft Defender for Endpoint 需要额外的配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署 [macOS Catalina](mac-sysext-policies.md)的新配置文件和较新版本的 macOS 中列出的其他配置文件。
 
-- 12 (，) ，11 (Big Sur) ，10.15 (加泰罗尼亚语) ，10.14 (Mojave) 
+- 12 (Rey) ，11 (Big Sur) ，10.15 (加泰罗尼亚语) 
 - 磁盘空间：1GB
 
 不支持 macOS 的 Beta 版本。
@@ -105,7 +105,7 @@ Mac 上的 Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可�
 
 ### <a name="configuring-exclusions"></a>配置排除项
 
-添加排除项时，请注意用于添加的[Microsoft Defender 防病毒。](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+添加排除项时，请注意适用于 Microsoft Defender 防病毒[的常见排除](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>网络连接
 
@@ -143,7 +143,7 @@ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https:
  `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
-> 建议在客户端设备上保持 [启用 (](https://support.apple.com/HT204899) SIP) 保护。 SIP 是内置的 macOS 安全功能，可防止对操作系统进行低级篡改，并且默认启用。
+> 建议在客户端设备上保持 [启用 (](https://support.apple.com/HT204899) SIP) 系统完整性保护。 SIP 是内置的 macOS 安全功能，可防止对操作系统进行低级篡改，并且默认启用。
 
 安装 Microsoft Defender for Endpoint 后，可通过在终端中运行以下命令来验证连接性：
 
@@ -163,7 +163,7 @@ Microsoft 会定期发布软件更新，以提高性能、安全性和提供新�
 
 为了与 macOS 演变保持一致，我们正在准备利用系统扩展而非内核扩展的 Mac 上的 Microsoft Defender for Endpoint 更新。 有关相关详细信息，请参阅 Mac 上的 [Microsoft Defender for Endpoint 中的新增功能](mac-whatsnew.md)。
 
-## <a name="resources"></a>资源
+## <a name="resources"></a>Resources
 
 - 有关日志记录、卸载或其他主题的信息，请参阅 Mac 上的 [Microsoft Defender for Endpoint 的资源](mac-resources.md)。
 - [Mac 上的 Microsoft Defender for Endpoint 的隐私](mac-privacy.md)。
