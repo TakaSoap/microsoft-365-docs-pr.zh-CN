@@ -27,8 +27,8 @@ productDirectory:
       url: 'https://aka.ms/SMBSecurityKit'
     - title: 新变化？
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: 即将在预览版中推出 -Microsoft Defender for Business，这是一款适用于员工少于 300 名的企业的企业级终结点解决方案。
-      url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/introducing-microsoft-defender-for-business/ba-p/2898701'
+      summary: 立即加入 Microsoft Defender for Business 预览版-一款适用于员工少于 300 名的企业的企业级终结点解决方案。
+      url: 'https://aka.ms/MDB-previewblog'
     - title: 加入合作伙伴网络研讨会系列
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
       summary: 了解如何通过 microsoft Defender for Business 和 Microsoft 365 商业高级版 提高销售Microsoft 365 Lighthouse。

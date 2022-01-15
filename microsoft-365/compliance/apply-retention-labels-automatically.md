@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: 755050de00bdffdd9169325c3a0e56b3eec7cede
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: ecb4a580eb3ada9bcb3d38a8bdfdbc12c9dc7107
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327576"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049344"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -83,7 +83,7 @@ ms.locfileid: "61327576"
     - 如果你没有使用记录管理：
        - “**解决方案**” > “**信息治理**” > “**标签**”选项卡 > +“**创建标签**”
     
-    无法立即在导航窗格中看到解决方案？ 首先选择“**全部显示**”。 
+    没有立即在导航窗格中看到解决方案? 首先选择“**全部显示**”。 
 
 2. 按照配置中的提示操作。
     
@@ -190,6 +190,9 @@ SharePoint 和 OneDrive：
 - 内容包含 1 到 9 个这三种敏感信息类型的实例。 **到** 的默认值为 **任何值**。
 
 有关这些选项的详细信息，请参阅 DLP 文档中的以下指南“[调整规则，使它们更易或更难匹配](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)”。
+
+> [!IMPORTANT]
+> 敏感信息类型具有两种不同的方法来定义最大唯一实例计数参数。 若要了解详细信息，请参阅[ SIT 的实例计数支持的值](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit)。
 
 使用敏感信息类型自动应用保留标签时要考虑的事项：
 

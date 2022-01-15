@@ -78,7 +78,7 @@
           href: communication-compliance-reports-audits.md
         - name: 带有 SIEM 解决方案的通信合规性
           href: communication-compliance-siem.md
-        - name: 案例研究 - Contoso 快速配置冒犯性语言策略
+        - name: 案例研究 - Contoso 快速配置冒犯性文本策略
           href: communication-compliance-case-study.md
     - name: 内部风险管理
       items:

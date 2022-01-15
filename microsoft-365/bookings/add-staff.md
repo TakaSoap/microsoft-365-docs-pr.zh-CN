@@ -8,20 +8,20 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: 使用此页面创建员工列表并管理员工详细信息，例如姓名、电话号码和电子邮件地址。
-ms.openlocfilehash: 0c9d376889d99ba9d689e30f4444f305fab22ad9
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 03ebf5c21e40d53e87067866e05fc37c2c255331
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933667"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049356"
 ---
 # <a name="add-staff-to-bookings"></a>向 Bookings 添加员工
 
 Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（如姓名、电话号码和电子邮件地址）的地方。 您还可以在此处为每位员工设置工作时间。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-尽管 Bookings 是一项Microsoft 365功能，但并非所有员工成员都需要拥有Microsoft 365帐户。 所有员工都必须具有有效的电子邮件地址，以便他们可以接收预订和计划更改。
+尽管 Bookings 是一项Microsoft 365功能，但并非所有员工成员都需要拥有一个Microsoft 365帐户。 所有员工都必须具有有效的电子邮件地址，以便他们可以接收预订和计划更改。
 
 ## <a name="watch-add-your-staff-to-bookings"></a>观看：将员工添加到 Bookings
 
@@ -68,7 +68,7 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
     通过取消选中此框，可以给员工提供自定义小时数，以进一步限制可以预订的时间。 这适用于以下情形：员工只能在星期二和星期三开会，或者将上午专用于一种类型的约会，以及安排其他类型的约会。
 
     > [!NOTE]
-    > 向服务分配员工时，将会出现添加到员工页面的前 100 名员工。
+    > Bookings 在 Bookings 日历中最多支持 100 名员工。
 
 ## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>使 Bookings 用户成为超级用户，而不将用户添加为 Bookings 中的 Staff
 

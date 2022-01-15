@@ -15,17 +15,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- deploy zero trust
-- zero trust strategy
-- M365-security-compliance
 - m365solution-zerotrust
 - m365solution-overview
-ms.openlocfilehash: 88abdf543ebb82e89470a0d6ac0bfe50b9952564
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- M365-security-compliance
+ms.openlocfilehash: 5451d0876530cce1e372dd8f5308f75596c37513
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934473"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049271"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 零信任部署计划
 
@@ -57,9 +55,9 @@ For more information about this architecture, including deployment objectives fo
 
 有关零信任详细信息，请参阅 Microsoft 的 [零信任指南中心](/security/zero-trust)。
 
-## <a name="deploying-zero-trust-for-microsoft-365"></a>为部署零信任Microsoft 365
+## <a name="deploying-zero-trust-for-microsoft-365"></a>为用户部署零Microsoft 365
 
-Microsoft 365是特意构建的，它具有许多安全和信息保护功能，可帮助你在你的环境中构建零信任。 可以扩展许多功能，以保护对组织使用的其他 SaaS 应用以及这些应用内的数据的访问。
+Microsoft 365是特意构建的，它具有许多安全和信息保护功能，可帮助你将零信任构建到环境中。 可以扩展许多功能，以保护对组织使用的其他 SaaS 应用以及这些应用内的数据的访问。
 
 此图表示部署零信任功能的工作。 此工作分为多个工作单元，可以一起配置工作，从底部开始并工作到顶部以确保先决条件工作已完成。
 
@@ -86,7 +84,7 @@ Microsoft 365是特意构建的，它具有许多安全和信息保护功能，�
 
 |Includes  |先决条件  |不包括  |
 |---------|---------|---------|
-|用于三层保护的建议标识和设备访问策略：<br>- 起始点<br>- Enterprise (推荐) <br>- 专用<br><br>针对以下项的其他建议：<br>- 外部用户 (来宾<br>- Microsoft Teams<br>- SharePoint Online<br>- 适用于云应用的 Microsoft Defender| Microsoft E3 或 E5<br><br>Azure Active Directory以下任一模式下运行：<br>- 仅云<br>- 使用密码哈希同步与 PHS (身份验证) 混合<br>- 通过传递身份验证与 PTA (混合) <br>- 联合     |需要托管设备的策略的设备注册。 请参阅"使用 Intune 管理终结点"以注册设备 |
+|用于三层保护的建议标识和设备访问策略：<br>- 起始点<br>- Enterprise (推荐) <br>- 专用<br><br>针对以下项的其他建议：<br>- 外部用户 (来宾<br>- Microsoft Teams<br>- SharePoint Online<br>- 适用于云应用的 Microsoft Defender| Microsoft E3 或 E5<br><br>Azure Active Directory以下任一模式下运行：<br>- 仅云<br>- 使用 PHS 身份验证 (密码哈希) 混合<br>- 通过传递身份验证与 PTA (混合) <br>- 联合     |需要托管设备的策略的设备注册。 请参阅"使用 Intune 管理终结点"以注册设备 |
 | | | |
 
 首先实现起始点层。 这些策略不需要将设备注册到管理中。 
@@ -126,11 +124,11 @@ Microsoft 365 Defender是一种扩展检测和响应 (XDR) 解决方案，可自
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="将Microsoft 365 Defender添加到零信任体系结构" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
-转到[评估和试用](defender/eval-overview.md)Microsoft 365 Defender，获得有关试点和部署组件Microsoft 365 Defender指南。 
+转到[评估和试用Microsoft 365 Defender，](defender/eval-overview.md)获得有关试点和部署组件Microsoft 365 Defender指南。 
 
 |Includes  |先决条件  |不包括  |
 |---------|---------|---------|
-| 设置所有组件的评估和试验环境：<br>- Defender for Identity<br>- Defender for Office 365<br>- 适用于终结点的 Defender<br>- 适用于云应用的 Microsoft Defender<br><br>抵御威胁<br><br> 调查并响应威胁   | 请参阅指南以阅读有关每个应用程序组件的体系结构Microsoft 365 Defender。        | Azure AD Identity Protection 不包含在此解决方案指南中。 它包含在步骤 1：配置零信任标识和设备访问保护中。        |
+| 设置所有组件的评估和试验环境：<br>- Defender for Identity<br>- Defender for Office 365<br>- 适用于终结点的 Defender<br>- 适用于云应用的 Microsoft Defender<br><br>抵御威胁<br><br> 调查并响应威胁   | 请参阅指南以阅读有关每个应用程序组件的体系结构Microsoft 365 Defender。        | Azure AD本解决方案指南中不包含 Identity Protection。 它包含在步骤 1：配置零信任标识和设备访问保护中。        |
 |    |         |         |
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>步骤 5. 保护并管理敏感数据
@@ -150,4 +148,4 @@ Microsoft 信息保护提供了可用于实现特定业务目标的框架、过�
 
 若要详细了解如何计划和部署信息保护，请参阅部署Microsoft 信息保护[解决方案](../compliance/information-protection-solution.md)。 
 
-如果你要针对数据隐私法规部署信息保护，此解决方案指南为整个过程提供了一个建议框架：使用 Microsoft 365 部署数据[隐私法规的信息保护](../solutions/information-protection-deploy.md)。
+如果你要针对数据隐私法规部署信息保护，此解决方案指南为整个过程提供了一个建议框架：使用 Microsoft 365 部署数据隐私[法规的信息保护](../solutions/information-protection-deploy.md)。

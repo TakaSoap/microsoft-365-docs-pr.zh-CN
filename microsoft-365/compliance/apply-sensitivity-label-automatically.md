@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 8ad336e411c5ce83129496fb10490442b43a1aeb
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 91b8da486d3e9fbae6981f3038cbab8725065476
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936602"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049368"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -76,10 +76,9 @@ ms.locfileid: "61936602"
         - 对于这些 Office 文件，支持 Word、PowerPoint 和 Excel。 如果标签应用了加密，则通过使用 [Office 365 邮件加密 (OME)](ome.md) 进行加密。
     - 如果你拥有已应用 IRM 加密的 Exchange 邮件流规则或数据丢失防护 (DLP) 策略：当内容由这些规则或策略和自动标记策略标识时，将应用该标签。 如果该标签已应用加密，则将忽略 Exchange 邮件流规则或 DLP 策略中的 IRM 设置。 但是，如果该标签未应用加密，则除了标签之外，还会应用邮件流规则或 DLP 策略中的 IRM 设置。
     - 如果存在匹配项，则具有 IRM 加密但没有标签的电子邮件将通过自动标记替换为具有加密设置的标签。
-    - 与自动标记条件匹配时，将标记传入电子邮件：
-    - 如果已将标签配置为[加密](encryption-sensitivity-labels.md)，则不会应用该加密。
+    - 与自动标记条件匹配时，将标记传入电子邮件。 如果标签配置为 [加密](encryption-sensitivity-labels.md)，则在发件人来自你的组织时应用该加密，但在发件人位于组织外部时不应用该加密。
     - 如果标签配置为应用 [动态标记](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)，请注意，该配置可能会影响组织外部人员的姓名。
-    - 如果标签应用了加密，则[权限管理颁发者和权限管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)是发送电子邮件的人。 目前无法为自动加密的所有传入电子邮件设置权限管理器所有者。
+    - 如果标签应用了加密，则[权限管理颁发者和权限管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)是发送电子邮件的人。
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>将 Office 应用的自动标记与自动标记策略进行比较
 
@@ -143,6 +142,9 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 ![匹配准确度和实例计数选项。](../media/sit-confidence-level.png)
 
 可通过以下 DLP 文档了解有关这些配置选项的详细信息：[调整规则，使它们更易或更难匹配](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
+
+> [!IMPORTANT]
+> 敏感信息类型具有两种不同的方法来定义最大唯一实例计数参数。 若要了解详细信息，请参阅[ SIT 的实例计数支持的值](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit)。
 
 此外，与 DLP 策略配置类似，可以选择条件是必须检测所有敏感信息类型，还是仅检测其中一种。为了使条件更加灵活或复杂，可以添加[组并在组之间使用逻辑运算符](data-loss-prevention-policies.md)。
 
