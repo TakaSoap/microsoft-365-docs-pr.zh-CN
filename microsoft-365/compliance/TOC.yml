@@ -317,6 +317,8 @@
           href: tls-1-2-in-office-365-gcc.md
         - name: Office 365 中的 TLS 1.2
           href: prepare-tls-1.2-in-office-365.md
+        - name: Office TLS 证书更改
+          href: encryption-office-365-tls-certificates-changes.md
     - name: 数据丢失防护 (DLP)
       items:
         - name: 了解 DLP
@@ -449,7 +451,7 @@
           href: faqimporting-pst-files-to-office-365.yml
     - name: 存档第三方数据
       items:
-        - name: 有关存档第三方数据的概述
+        - name: 了解适用于第三方数据的连接器
           href: archiving-third-party-data.md
         - name: Microsoft 数据连接器
           items:

@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: c59c9c06dfb8b15b6ee4bbd54cf86f54ad816e0a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2b42e33bf57e2cfbc855c06ff4dfeefc9a8e9eb0
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937480"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62054976"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -668,7 +668,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
 |访问的邮箱项目|MailItemsAccessed|已在邮箱中读取或访问邮件。 此活动的审核记录通过下面两种方式之一触发：当邮箱客户端（如 Outlook）对邮件执行绑定操作时，或者当邮箱客户端（如 Exchange ActiveSync 或 IMAP）同步邮箱文件夹中的项目时。 仅对具有 Office 365 或 Microsoft 365 E5 许可证的用户记录此活动。 调查被盗用的电子邮件帐户时，分析此活动的审核记录非常有用。 有关详细信息，请参阅 [高级审核](advanced-audit.md#advanced-audit-events)中的"高级审核事件"部分。 |
-|已添加代理邮箱权限|Add-MailboxPermission|管理员已将一位用户（称为“代理”）的 FullAccess 邮箱权限分配给另一用户邮箱。 FullAccess 权限允许代理打开他人的邮箱，查看和管理邮箱内容。|
+|已添加代理邮箱权限|Add-MailboxPermission|管理员已将一位用户（称为“代理”）的 FullAccess 邮箱权限分配给另一用户邮箱。 FullAccess 权限允许代理打开他人的邮箱，查看和管理邮箱内容。 当 Microsoft 365 服务中的系统帐户定期代表组织执行维护任务时，也会生成此活动的审核记录。 系统帐户执行的常见任务是更新系统邮箱的权限。 有关详细信息，请参阅 [Exchange 邮箱审核记录中的系统帐户](#system-accounts-in-exchange-mailbox-audit-records)。|
 |已添加或删除具有日历文件夹代理访问权限的用户|UpdateCalendarDelegation|已在其他用户邮箱的日历中添加或删除具有代理身份的用户。 日历代理为同一组织内的其他人授予管理邮箱所有者日历的权限。|
 |已向文件夹添加权限|AddFolderPermissions|已添加文件夹权限。 文件夹权限用于控制组织中的哪些用户可以访问邮箱中的文件夹以及位于这些文件夹中的邮件。|
 |已将邮件复制到其他文件夹|复制|已将邮件复制到其他文件夹。|
@@ -691,6 +691,12 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |用户已登录到邮箱|MailboxLogin|用户登录其邮箱。|
 |将邮件标记为记录||用户已将保留标签应用于电子邮件，并且该标签被配置为将项目标记为记录。 |
 ||||
+
+#### <a name="system-accounts-in-exchange-mailbox-audit-records"></a>Exchange 邮箱审核记录中的系统帐户
+
+在某些邮箱活动的审核记录中 (尤其是 **Add-MailboxPermissions**)，你可能会注意到执行活动的用户 (在 User 和 UserId 字段中标识) 为 NT AUTHORITY\SYSTEM 或 NT AUTHORITY\SYSTEM(Microsoft.Exchange.Servicehost)。 这表明进行该活动的“用户”是 Microsoft 云中 Exchange 服务的一个系统账户。 此系统帐户通常代表你的组织执行计划的维护任务。 例如，由 NT AUTHORITY\SYSTEM(Microsoft.Exchange.ServiceHost) 账户执行的一个常见的审计活动是更新系统邮箱 DiscoverySearchMailbox 的权限。 此更新的目的是验证 FullAccess 权限 (默认) 是否分配给 DiscoverySearchMailbox 的发现管理角色组。 这可确保电子数据展示管理员可以在其组织中执行必要的任务。
+
+另一个可能在 **Add-MailboxPermission** 的审计记录中得到确认的系统用户账户是 Administrator@apcprd03.prod.outlook.com。 该服务账户也包括在与验证和更新分配给 DiscoverySearchMailbox 系统邮箱的发现管理角色组的 FullAccess 权限相关的邮箱审计记录中。 具体而言，当 Microsoft 支持人员代表你的组织运行 RBAC 角色诊断工具时，通常会触发识别 Administrator@apcprd03.prod.outlook.com 账户的审计记录。
 
 ### <a name="user-administration-activities"></a>用户管理活动
 
