@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9e06cc5e17aff990da853ce798f24da288bd64ae
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 3e387c8fb6ca9f1aca756ef2ab0b4c0684033370
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302058"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074446"
 ---
 # <a name="list-all-remediation-activities"></a>列出所有修正活动
 
@@ -68,32 +68,32 @@ ms.locfileid: "61302058"
 :---|:---|:---|:---
 类别|字符串|软件/安全配置 (修正活动的) |软件
 completerEmail|String|如果修正活动是由某人手动完成的，此列将包含他们的电子邮件|NULL
-completerId|String|如果修正活动是由某人手动完成的，则此列包含其对象 ID|NULL
+completerId|字符串|如果修正活动是由某人手动完成的，则此列包含其对象 ID|NULL
 completionMethod|String|如果所有 (设备都由选择"标记为已完成") 或"手动"进行修补，则修正活动可以"自动"完成。|自动
-createdOn|日期时间|创建此修正活动的时间|2021-01-12T18：54：11.5499478Z
-说明|String|此修正活动的说明|将 Microsoft Silverlight 更新到更高版本，以减少影响设备的已知漏洞。
-dueOn|日期时间|此修正活动的创建者设置的截止日期|2021-01-13T00：00：00Z
+createdOn|DateTime|创建此修正活动的时间|2021-01-12T18：54：11.5499478Z
+说明|字符串|此修正活动的说明|将 Microsoft Silverlight 更新到更高版本，以减少影响设备的已知漏洞。
+dueOn|DateTime|此修正活动的创建者设置的截止日期|2021-01-13T00：00：00Z
 fixedDevices|.|已修复的设备数量|2
-ID|String|此修正活动的 ID|097d9735-5479-4899-b1b7-77398899df92
-nameId|String|相关产品名称|Microsoft Silverlight
-优先级|String|针对此修正活动的创建者设置的优先级 (高\中\低) |高
-productId|String|相关产品 ID|microsoft-_-silverlight
-productivityImpactRemediationType|String|只能请求对不影响用户的设备进行一些配置更改。 此值指示"所有公开的设备"或"仅不会影响用户的设备"之间的选择。|AllExposedAssets
+ID|字符串|此修正活动的 ID|097d9735-5479-4899-b1b7-77398899df92
+nameId|字符串|相关产品名称|Microsoft Silverlight
+Priority|字符串|针对此修正活动的创建者设置的优先级 (高\中\低) |高
+productId|字符串|相关产品 ID|microsoft-_-silverlight
+productivityImpactRemediationType|字符串|只能请求对不影响用户的设备进行一些配置更改。 此值指示"所有公开的设备"或"仅不会影响用户的设备"之间的选择。|AllExposedAssets
 rbacGroupNames|String|相关设备组名称|[ "Windows Servers"、"Windows 11"、"Windows 10" ]
 recommendedProgram|String|要升级到的推荐程序|NULL
-recommendedVendor|String|建议升级到的供应商|NULL
+recommendedVendor|字符串|建议升级到的供应商|NULL
 recommendedVersion|String|要更新/升级到的建议版本|NULL
-relatedComponent|String|此修正活动的相关组件 (安全建议服务的相关组件) |Microsoft Silverlight
+relatedComponent|String|此修正活动的相关组件 (安全建议计划的相关组件) |Microsoft Silverlight
 requesterEmail|String|创建者电子邮件地址|globaladmin@UserName.contoso.com
 requesterId|String|Creator 对象 ID|r647211f-2e16-43f2-a480-16ar3a2a796r
-requesterNotes|String|注释 (为) 修正活动添加的自定义文本|NULL
+requesterNotes|字符串|注释 (此) 活动添加的自定义文本|NULL
 Scid|String|相关安全建议 SCID|NULL
-状态|String|修正活动状态 (/已完成) |活动
-statusLastModifiedOn|日期时间|更新状态字段的日期|2021-01-12T18：54：11.5499487Z
+Status|String|修正活动状态 (/已完成) |活动
+statusLastModifiedOn|DateTime|更新状态字段的日期|2021-01-12T18：54：11.5499487Z
 targetDevices|长型|此修正适用于的公开设备数量|43
 Title|String|此修正活动的标题|更新 Microsoft Silverlight
 类型|String|修正类型|更新
-vendorId|String|相关供应商名称|Microsoft
+vendorId|字符串|相关供应商名称|Microsoft
 
 ## <a name="example"></a>示例
 

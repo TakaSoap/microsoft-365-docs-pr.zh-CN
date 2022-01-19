@@ -17,14 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ca6c7ed6265a1c68a513d6025227780fa429f6e8
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 589a0f593245be5f71fdd2bf31a74f2c2c7f5a5b
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217394"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074626"
 ---
-# <a name="attack-surface-reduction-rules-deployment-phase-1-plan"></a>攻击面减少规则部署阶段 1：计划
+# <a name="asr-rules-deployment-phase-1-plan"></a>ASR 规则部署阶段 1：计划
 
 开始测试 ASR 规则涉及从正确的业务部门开始。 您需要从特定业务部门中的一小组人员开始。 你可以确定特定业务部门中的一些 ASR 冠军，这些冠军可以为 ASR 规则提供实际影响，并帮助你调整实现。
 
@@ -69,7 +69,7 @@ ASR 规则冠军是贵组织的成员，有助于在初步测试和实施阶段�
 
 - IT 管理员：实施 ASR 规则，管理排除项。 在应用和流程上使用不同的业务部门。 组合报告并共享给利益干系人
 - CSOC (安全运营) ：负责投资高优先级的阻止流程，以确定威胁是否有效
-- CISO (首席信息安全) ：负责组织的整体安全状况和运行状况
+- CISO (首席) ：负责组织的整体安全状况和运行状况
 
 ## <a name="ring-deployment"></a>环形部署
 
@@ -79,10 +79,10 @@ ASR 规则冠军是贵组织的成员，有助于在初步测试和实施阶段�
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题
 
-[ASR 规则部署指南 - 概述](attack-surface-reduction-rules-deployment.md)
+[ASR 规则部署概述](attack-surface-reduction-rules-deployment.md)
 
-[ASR 规则部署阶段 2 - 测试](attack-surface-reduction-rules-deployment-phase-2.md)
+[阶段 2：测试](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR 规则部署阶段 3 - 实现](attack-surface-reduction-rules-deployment-phase-3.md)
+[阶段 3：实现](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[ASR 规则部署阶段 4 - 可操作](attack-surface-reduction-rules-deployment-phase-4.md)
+[阶段 4：操作](attack-surface-reduction-rules-deployment-phase-4.md)

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 950892e39d91c1aeaa2179eac56d58bfa2ef9030
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 4c3464a3aec242bd098503ac5bca997943ac2a4a
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283448"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074566"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>导出每个设备的软件清单评估
 
@@ -38,14 +38,14 @@ ms.locfileid: "61283448"
 
 - [导出软件清单评估 **JSON 响应**](#1-export-software-inventory-assessment-json-response) API 将提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-- [通过文件导出 **软件清单评估**](#2-export-software-inventory-assessment-via-files)  此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从 Azure 存储下载你的所有数据：
+- [通过文件导出 **软件清单评估**](#2-export-software-inventory-assessment-via-files)  此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，你可以从以下Azure 存储下载所有数据：
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
   - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
 使用 _Json_ 响应 _(通过文件_ 收集的数据) 当前状态的当前快照。 它不包含历史数据。 若要收集历史数据，客户必须将数据保存在自己的数据存储中。
 
 > [!NOTE]
-> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出和 **** 按设备 (也称为按 **_设备) 。_**
+> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出，**** 按设备 (也称为按 **_设备) 。_**
 
 ## <a name="1-export-software-inventory-assessment-json-response"></a>1. 导出 JSON 响应 (软件清单) 
 
@@ -76,7 +76,7 @@ GET /api/machines/SoftwareInventoryByMachine
 ### <a name="14-parameters"></a>1.4 参数
 
 - pageSize (默认值 = 50，000) ：响应中的结果数。
-- $top：要返回 (的结果数不会返回 @odata.nextLink，因此不会拉取所有) 
+- $top：返回 (的结果数不会返回 @odata.nextLink，因此不会拉取所有) 
 
 ### <a name="15-properties"></a>1.5 属性
 
@@ -237,13 +237,13 @@ GET /api/machines/SoftwareInventoryExport
 
 ### <a name="parameters"></a>参数
 
-- sasValidHours：下载 URL 在最长 24 小时 (的有效小时数) 
+- sasValidHours：下载 URL 有效期为 24 小时 (24 小时) 
 
 ### <a name="25-properties"></a>2.5 属性
 
 > [!NOTE]
 >
-> - 文件是 gzip 压缩文件& JSON 格式。
+> - 这些文件是 gzip 压缩文件& JSON 格式。
 > - 下载 URL 的有效期仅为 3 小时。 否则，可以使用 参数。
 > - 为了最大限度提高数据的下载速度，你可以确保从数据所在的同一 Azure 区域进行下载。
 

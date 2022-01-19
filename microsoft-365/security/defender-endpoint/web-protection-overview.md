@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 503db220cc9df0d643a9ad9a0b76b34cae05e88d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d21fdd481ade59ca869d5cfe086e537c0c431228
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164714"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074638"
 ---
 # <a name="web-protection"></a>Web 保护
 
@@ -38,7 +38,7 @@ ms.locfileid: "61164714"
 
 ## <a name="about-web-protection"></a>关于 Web 保护
 
-Microsoft Defender for Endpoint 中的 Web 保护功能由[Web 威胁防护、Web](web-threat-protection.md)[内容筛选](web-content-filtering.md)和自定义[指示器构成](manage-indicators.md)。 通过 Web 保护，您可以保护设备免受 Web 威胁，并帮助您控制不需要的内容。 您可以在 Web 门户中查找 Web Microsoft 365 Defender报告，> **Web 保护**。
+Microsoft Defender for Endpoint 中的 Web 保护功能由[Web 威胁防护、Web](web-threat-protection.md)[内容筛选](web-content-filtering.md)和自定义[指示器构成](manage-indicators.md)。 通过 Web 保护，您可以保护设备免受 Web 威胁，并帮助您控制不需要的内容。 您可以在 Web 门户中查找 Web Microsoft 365 Defender报告，> **Web 保护**" 。
 
 :::image type="content" alt-text="所有 Web 保护卡的图像。" source="images/web-protection.png" lightbox="images/web-protection.png":::
 
@@ -91,12 +91,12 @@ Web 保护由以下组件组成，按优先顺序列出。 其中每个组件都
   - SmartScreen Intel，包括 Exchange Online Protection (EOP) 
   - 升级
 
-- WCF (Web) 
+- WCF (Web 内容) 
 
 > [!NOTE]
 > Microsoft Defender for Cloud Apps 当前仅生成阻止的 URL 的指示器。
 
-优先级顺序与计算 URL 或 IP 的操作顺序相关。 例如，如果你有 Web 内容筛选策略，可以通过自定义 IP/URL 指示器创建排除项。 IoC (泄露) 的优先级顺序比 WCF 块高。
+优先级顺序与计算 URL 或 IP 的操作顺序相关。 例如，如果你有 Web 内容筛选策略，可以通过自定义 IP/URL 指示器创建排除项。 IoC (的) 指标的优先级顺序比 WCF 块高。
 
 同样，在指示器冲突期间，允许始终优先于块 (替代逻辑) 。 这意味着允许指示器将超过存在的任何阻止指示器。
 
@@ -113,7 +113,7 @@ Web 保护由以下组件组成，按优先顺序列出。 其中每个组件都
 |Warn|阻止|阻止|阻止|警告 (覆盖) |
 |
 
-自定义指示器不支持内部 IP 地址。 对于最终用户绕过的警告策略，默认情况下，该用户的站点将取消阻止 24 小时。 此时间范围由管理员修改，并通过 SmartScreen 云服务向下传递。 此外，在使用 Web 威胁阻止 CSP Microsoft Edge恶意软件/网络钓鱼 (时，也可以禁用绕过) 。 有关详细信息，请参阅 SmartScreen Microsoft Edge [SmartScreen 设置。](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies)
+自定义指示器不支持内部 IP 地址。 对于最终用户绕过的警告策略，默认情况下，该用户的站点将取消阻止 24 小时。 此时间范围由管理员修改，并通过 SmartScreen 云服务向下传递。 此外，在使用 Web 威胁阻止的 CSP Microsoft Edge恶意软件/网络钓鱼 (可以禁用绕过警告) 。 有关详细信息，请参阅 SmartScreen Microsoft Edge [SmartScreen 设置。](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies)
 
 ## <a name="protect-browsers"></a>保护浏览器
 
@@ -148,16 +148,16 @@ Web 保护由以下组件组成，按优先顺序列出。 其中每个组件都
 
 ```kusto
 DeviceEvents
-| where ActionType == "SmartScreenUrlWarning"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
+| where ActionType == "SmartScreenUrlWarning"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
 | where Experience == "CustomBlockList"
 ```
 
-同样，您可以使用下面的查询列出源自网络保护应用程序的所有 WCF (例如，第三方浏览器中的 WCF 块) 。 请注意，ActionType 已更新，"Experience"已更改为"ResponseCategory"。
+同样，您可以使用下面的查询列出源自网络保护的所有 WCF (例如，第三方浏览器中的 WCF 块) 。 请注意，ActionType 已更新，"Experience"已更改为"ResponseCategory"。
 
 ```kusto
-DeviceEvents 
+DeviceEvents
 | where ActionType == "ExploitGuardNetworkProtectionBlocked"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)

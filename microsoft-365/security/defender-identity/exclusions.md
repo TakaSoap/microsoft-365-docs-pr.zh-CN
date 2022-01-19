@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Identity detection exclusions in <DICT__Microsoft⚐365⚐Defender>Microsoft 365 Defender</DICT__Microsoft⚐365⚐Defender>
+title: Microsoft Defender for Identity detection exclusions in Microsoft 365 Defender
 description: 了解如何在 Microsoft Defender 中配置标识检测排除Microsoft 365 Defender。
 ms.date: 11/02/2021
 ms.topic: how-to
@@ -7,24 +7,24 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: d4a8fb5cb8677acaf574eb25df6e8e32720e4628
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: feaa1743e00c515e02301090ce811afee5c26e74
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787724"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074422"
 ---
-# <a name="configure-defender-for-identity-detection-exclusions-in-microsoft-365-defender-preview"></a>Configure Defender for Identity detection exclusions in Microsoft 365 Defender (Preview) 
+# <a name="configure-defender-for-identity-detection-exclusions-in-microsoft-365-defender"></a>Configure Defender for Identity detection exclusions in Microsoft 365 Defender
 
 **适用于：**
 
 - Microsoft 365 Defender
 - Defender for Identity
 
-本文介绍了如何在 Microsoft [Defender](/defender-for-identity)中配置标识[检测排除](/microsoft-365/security/defender/overview-security-center)Microsoft 365 Defender。
+本文介绍了如何在 Microsoft Defender 中[配置标识](/defender-for-identity)[检测排除项](/microsoft-365/security/defender/overview-security-center)Microsoft 365 Defender。
 
 > [!IMPORTANT]
-> 作为聚合的一Microsoft 365 Defender，一些选项和详细信息已从它们的位置更改为 Defender for Identity 门户。 请阅读下面的详细信息，了解在哪里可以找到熟悉的新功能和新功能。
+> 作为与用户Microsoft 365 Defender的一部分，一些选项和详细信息从他们在 Defender for Identity 门户中的位置发生了更改。 请阅读下面的详细信息，了解在哪里可以找到熟悉的新功能和新功能。
 
 [!INCLUDE [Product long](includes/product-long.md)] 允许将特定 IP 地址、计算机、域或用户排除在大量检测之外。
 
@@ -35,7 +35,7 @@ ms.locfileid: "60787724"
 
 ## <a name="how-to-add-detection-exclusions"></a>如何添加检测排除项
 
-1. 在 [Microsoft 365 Defender](https://security.microsoft.com/)中，转到 **"设置"** 和"**标识"。**
+1. In [Microsoft 365 Defender，](https://security.microsoft.com/)go to **设置** and then **Identities**.
 
     ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
 
@@ -69,7 +69,7 @@ ms.locfileid: "60787724"
 
         ![添加要排除的实体。](../../media/defender-identity/add-excluded-entity.png)
 
-    1. 然后选择" **排除此示例 (** IP 地址") 完成排除。
+    1. 然后选择" **排除此示例 (** IP 地址) 完成排除操作。
 
         ![排除 IP 地址。](../../media/defender-identity/exclude-ip-addresses.png)
 
@@ -83,7 +83,7 @@ ms.locfileid: "60787724"
 
 ## <a name="global-excluded-entities"></a>全局排除实体
 
-你现在还可以按全局排除 **实体配置排除项**。 全局排除允许你定义某些实体 (IP 地址、子网、设备或域) 所有检测 Defender for Identity 所排除。 例如，如果你排除设备，它将仅适用于将设备标识作为检测的一部分的检测。
+你现在还可以按全局排除 **实体配置排除项**。 全局排除允许你定义某些实体 (IP 地址、子网、设备或域) 所有检测 Defender for Identity 中排除。 例如，如果你排除设备，它将仅适用于将设备标识作为检测的一部分的检测。
 
 1. 在左侧菜单中，选择全局 **排除的实体**。 你将看到可以排除的实体的类别。
 

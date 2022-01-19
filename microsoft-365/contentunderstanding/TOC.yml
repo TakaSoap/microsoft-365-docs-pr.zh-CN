@@ -70,6 +70,18 @@
       href: syntex-licensing.md
     - name: 设置 SharePoint Syntex
       href: set-up-content-understanding.md
+    - name: 使用 PowerShell 管理 SharePoint Syntex
+      items:
+        - name: 概述
+          href: powershell-syntex-intro.md
+        - name: 导出和导入模型
+          href: powershell-syntex-import-export.md
+        - name: 发布模型
+          href: powershell-syntex-publishing.md
+        - name: 模型处理请求
+          href: powershell-syntex-processing.md
+        - name: 使用模型说明
+          href: powershell-syntex-explanations.md
 - name: 内容服务
   items:
     - name: 使用 SKOS 导入

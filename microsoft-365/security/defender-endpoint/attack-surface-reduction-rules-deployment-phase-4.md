@@ -17,20 +17,20 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 01556e67738ffac18a46c09c85bc2e70d1f5f29e
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 14f1174ab52621fa7b958a5be66c30437a04b3c6
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531686"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074746"
 ---
-# <a name="attack-surface-reduction-rules-deployment-phase-4-operationalize"></a>攻击面减少规则部署阶段 4：操作
+# <a name="asr-rules-deployment-phase-4-operationalize"></a>ASR 规则部署阶段 4：实现
 
 完全部署 ASR 规则后，必须制定流程来监视和响应与 ASR 相关的活动，这一点至关重要。
 
 ## <a name="manage-false-positives"></a>管理误报
 
-任何威胁防护解决方案都可能发生误报/负面影响。 误报是检测到实体 (进程或进程) 被检测并标识为恶意实体的情况，尽管实体实际上不是威胁。 相比之下，漏报是未检测为威胁但恶意的实体。 有关误报和漏报信息，请参阅：在 Microsoft Defender for Endpoint 中解决 [误报/负数](defender-endpoint-false-positives-negatives.md)
+任何威胁防护解决方案都可能发生误报/负面影响。 误报是检测到实体 (进程或进程) 被检测并标识为恶意实体，尽管实体实际上不是威胁。 相比之下，漏报是未检测为威胁但恶意的实体。 有关误报和漏报信息，请参阅：在 Microsoft Defender for Endpoint 中解决 [误报/负数](defender-endpoint-false-positives-negatives.md)
 
 ## <a name="keeping-up-with-reports"></a>保持与报告保持一起
 
@@ -43,7 +43,7 @@ ms.locfileid: "61531686"
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender高级搜寻](images/asr-defender365-advanced-hunting2.png)
 
-高级搜寻是基于查询的 (Kusto 查询语言) 威胁搜寻工具，允许你浏览 Microsoft Defender ATP 终结点检测和响应 (EDR) 从你的所有计算机收集的最多 30 天捕获的 (原始) 数据。 通过高级搜寻，你可以主动检查事件，以便找到有趣的指示器和实体。 灵活访问数据有助于无约束搜寻已知威胁和潜在威胁。
+高级搜寻是基于查询的 (Kusto 查询语言) 威胁搜寻工具，允许你浏览 Microsoft Defender ATP 终结点检测和响应 (EDR) 从你的所有计算机中收集的最多 30 天的已捕获 (原始) 数据。 通过高级搜寻，你可以主动检查事件，以便找到有趣的指示器和实体。 灵活访问数据有助于无约束搜寻已知威胁和潜在威胁。
 
 通过高级搜寻，可以提取 ASR 规则信息、创建报告，并获取有关给定 ASR 规则审核或阻止事件的上下文的深入信息。
 
@@ -59,10 +59,10 @@ ms.locfileid: "61531686"
 
 - 102 表示被阻止
 - 85 表示已审核
-- AsrOfficeChildProcess 事件 2 个， (1 个事件（已审核）和 1 个针对阻止) 
+- AsrOfficeChildProcess 事件 2 个， (1 个事件，1 个事件用于阻止) 
 - AsrPsexecWmiChildProcessAudited 的 8 个事件
 
-如果要专注于 AsrOfficeChildProcess 规则，并获取有关实际文件和过程的详细信息，请更改 ActionType 的筛选器，将汇总行替换为需要字段 (的投影，在这种情况下它们是 DeviceName、FileName、FolderPath 等 ) 。
+如果您想重点关注 AsrOfficeChildProcess 规则并获取有关实际文件和过程的详细信息，请更改 ActionType 的筛选器，将汇总行替换为需要字段 (的投影，在这种情况下，它们是 DeviceName、FileName、FolderPath 等 ) 。
 
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender高级搜寻查询](images/asr-defender365-advanced-hunting4b.png)
@@ -76,10 +76,10 @@ ms.locfileid: "61531686"
 
 ## <a name="topics-in-this-deployment-collection"></a>此部署集合中的主题
 
-[ASR 规则部署指南 - 概述](attack-surface-reduction-rules-deployment.md)
+[ASR 规则部署概述](attack-surface-reduction-rules-deployment.md)
 
-[ASR 规则部署阶段 1 - 计划](attack-surface-reduction-rules-deployment-phase-1.md)
+[阶段 1：计划](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[ASR 规则部署阶段 2 - 测试](attack-surface-reduction-rules-deployment-phase-2.md)
+[阶段 2：测试](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR 规则部署阶段 3 - 实现](attack-surface-reduction-rules-deployment-phase-3.md)
+[阶段 4：操作](attack-surface-reduction-rules-deployment-phase-4.md)

@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7df7915351a4982c3f91f4835002a87493f4f79c
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 0bfd97739637365e7f04d4b824c0c9cde50a0418
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401482"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074494"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -66,7 +66,7 @@ ms.locfileid: "61401482"
 
 #### <a name="enable--disable-real-time-protection"></a>启用/禁用实时保护
 
-确定是否在启用实时保护 (扫描文件时) 这些文件。
+确定是否在启用实时 (时扫描文件) 文件。
 
 <br>
 
@@ -75,7 +75,7 @@ ms.locfileid: "61401482"
 |说明|值|
 |---|---|
 |**键**|enableRealTimeProtection|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认值)  <p> false|
 |
 
@@ -96,7 +96,7 @@ ms.locfileid: "61401482"
 |说明|值|
 |---|---|
 |**键**|passiveMode|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|适用于终结点版本 100.67.60 或更高版本的 Defender 中可用。|
 |
@@ -104,7 +104,7 @@ ms.locfileid: "61401482"
 
 #### <a name="enabledisable-behavior-monitoring"></a>启用/禁用行为监视 
 
-确定是否在设备上启用行为监视和阻止功能。若要提高安全保护的有效性，我们建议保持启用此功能。
+确定是否在设备上启用行为监视和阻止功能。 若要提高安全保护的有效性，我们建议保持启用此功能。
 
 <br>
 
@@ -240,7 +240,7 @@ ms.locfileid: "61401482"
 |说明|值|
 |---|---|
 |**键**|isDirectory|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|仅在 *排除$type**时适用*|
 |
@@ -274,12 +274,12 @@ ms.locfileid: "61401482"
 |**键**|name|
 |**数据类型**|String|
 |**可能的值**|任何字符串|
-|**Comments**|仅在排除 *$type FileName 时适用*|
+|**Comments**|仅在 *排除**$type FileName 时适用*|
 |
 
 #### <a name="allowed-threats"></a>允许的威胁
 
-威胁列表 (名称标识) 产品未阻止但允许运行的威胁列表。
+由 (名称标识的威胁列表) 产品未阻止但允许运行的威胁列表。
 
 <br>
 
@@ -358,7 +358,7 @@ ms.locfileid: "61401482"
 
 #### <a name="threat-type-settings-merge-policy"></a>威胁类型设置合并策略
 
-指定威胁类型设置的合并策略。 它可以是管理员定义的设置和用户定义的设置的组合， () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
+指定威胁类型设置的合并策略。 它可以是管理员定义的设置和用户定义的设置 () 管理员定义的设置 `merge` `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
 
 <br>
 
@@ -400,7 +400,7 @@ ms.locfileid: "61401482"
 |---|---|
 |**键**|scanHistoryMaximumItems|
 |**数据类型**|String|
-|**可能的值**|默认值为 10000 (10000) 。 允许的值从 5000 个项目到 15000 个项目。|
+|**可能的值**|10000 (默认值) 。 允许的值从 5000 个项目到 15000 个项目。|
 |**Comments**|适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。|
 |
 
@@ -454,7 +454,7 @@ ms.locfileid: "61401482"
 确定是否将 (可能包含威胁的可疑) 发送给 Microsoft。 有三个级别用于控制示例提交：
 
 - **无**：不会向 Microsoft 提交任何可疑样本。
-- **保险箱：** 只有不包含个人身份信息或个人身份信息的可疑 (将自动) 提交。 这是此设置的默认值。
+- **保险箱：** 仅自动提交不包含个人身份信息 (个人身份) 的可疑样本。 这是此设置的默认值。
 - **全部**：所有可疑示例都提交到 Microsoft。
 
 <br>
@@ -479,7 +479,7 @@ ms.locfileid: "61401482"
 |说明|值|
 |---|---|
 |**键**|automaticDefinitionUpdateEnabled|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认值)  <p> false|
 |
 
@@ -595,7 +595,7 @@ ms.locfileid: "61401482"
 }
 ```
 
-  ## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>将标记或组 ID 添加到配置文件
+## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>将标记或组 ID 添加到配置文件
 
 首次运行 `mdatp health` 命令时，标记和组 ID 的值将为空。 若要将标记或组 ID 添加到 `mdatp_managed.json` 文件，请按照以下步骤操作：
   
@@ -622,7 +622,7 @@ ms.locfileid: "61401482"
   > [!NOTE]
   > 不要忘记在块末尾的右大括号后面添加 `cloudService` 逗号。 此外，请确保添加 Tag 或组 ID 块后有两个右大括号 (请参阅上面的示例) 。
   
-  ## <a name="configuration-profile-validation"></a>配置文件验证
+## <a name="configuration-profile-validation"></a>配置文件验证
 
 配置文件必须是有效的 JSON 格式文件。 有许多工具可用于验证这一点。 例如，如果你已安装 `python` 在设备上：
 

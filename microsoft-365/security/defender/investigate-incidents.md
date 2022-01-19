@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 1d8440acdc3dfcf633d0570e259525b7589e7bf8
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 1dd603ae4f9f694b3b17794a71d1d5cc44800584
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914189"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074410"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>调查事件Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "60914189"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关警报、资产、调查和证据聚合到事件中，以便全面了解整个攻击范围。
+Microsoft 365 Defender设备、用户和邮箱中的相关警报、资产、调查和证据聚合到事件中，以便全面了解整个攻击范围。
 
 在事件内，分析影响网络的警报，了解它们的含义，并整理证据，以便制定有效的修正计划。
 
@@ -50,7 +50,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="从选中标记列中选择事件的示例。" lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
 
-当你这样做时，将打开一个摘要窗格，其中包含有关事件的关键信息，如严重性、分配到它的人以及事件的[MITRE ATT &trade; ](https://attack.mitre.org/)&CK 类别。 下面是一个示例。
+当你这样做时，会打开一个摘要窗格，其中包含有关事件的关键信息，例如严重性、分配到它的人以及事件的[MITRE ATT &trade; ](https://attack.mitre.org/)&CK 类别。 下面是一个示例。
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="事件的摘要窗格示例。" lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
@@ -66,9 +66,9 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 信息在这些部分中进行组织。
 
-| 节 | Description |
+| 节 | 说明 |
 |:-------|:-----|
-| 警报和类别 | 有关攻击对击杀链的前进进度的可视化和数值视图。 与其他 Microsoft 安全产品一样，Microsoft 365 Defender与[MITRE ATT &trade; ](https://attack.mitre.org/)&CK 框架一致。 警报时间线显示警报发生的时间顺序，以及每个警报的状态和名称。 |
+| 警报和类别 | 有关攻击对击杀链的前进进度的可视化和数值视图。 与其他 Microsoft 安全产品一样，Microsoft 365 Defender与[MITRE ATT &trade; ](https://attack.mitre.org/)&CK 框架保持一致。 警报时间线显示警报发生的时间顺序，以及每个警报的状态和名称。 |
 | 范围 |  显示受影响设备、用户和邮箱的数量，并按风险级别和调查优先级的顺序列出实体。 |
 | 证据 | 显示受事件影响的实体数。 |
 | 事件信息 | 显示事件的属性，如标记、状态和严重性。 |
@@ -82,7 +82,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 - 严重性。
 - 警报中涉及的实体。
-- Microsoft Defender for Identity、Microsoft Defender for Endpoint (Microsoft Defender for Office 365、Defender for Cloud Apps 和应用治理策略等警报) 。
+- 警报来源：Microsoft Defender for Identity、 (Defender for Endpoint、Microsoft Defender for Office 365、Defender for Cloud Apps 和应用治理) 。
 - 链接在一起的原因。
 
 下面是一个示例。
@@ -119,7 +119,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 :::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="事件的&quot;设备&quot;页面示例。" lightbox="../../media/investigate-incidents/incident-devices.png":::
 
-可以选择设备的选中标记以查看设备、目录数据、活动警报和登录用户的详细信息。 选择设备名称以查看 Microsoft Defender for Endpoints 设备清单中的设备详细信息。 下面是一个示例。
+可以选择设备的选中标记以查看设备、目录数据、活动警报和登录用户的详细信息。 选择设备名称以查看 Microsoft Defender for Endpoint 设备清单中的设备详细信息。 下面是一个示例。
 
 :::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="适用于终结点的 Microsoft Defender 的设备页面示例。" lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
@@ -149,7 +149,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 ## <a name="investigations"></a>调查
 
-"**调查**"选项卡列出了此事件中的 [](m365d-autoir.md)警报触发的所有自动调查。 自动调查将执行修正操作或等待分析员批准操作，具体取决于如何将自动调查配置为在 Microsoft Defender for Endpoint 和 Defender for Office 365 中运行。
+"**调查**"选项卡列出了此事件中的 [](m365d-autoir.md)警报触发的所有自动调查。 自动调查将执行修正操作或等待分析员批准操作，具体取决于配置自动调查以在 Microsoft Defender for Endpoint 和 Defender for Office 365 中运行。
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="事件的调查页面示例。" lightbox="../../media/investigate-incidents/incident-investigations.png":::
 
@@ -173,11 +173,11 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 Microsoft 365 Defender自动调查警报中所有事件支持的事件和可疑实体，并提供有关重要电子邮件、文件、进程、服务、IP 地址等的信息。 这可以帮助您快速检测和阻止事件中的潜在威胁。
 
-每个被分析的实体都标有一条 (恶意、可疑、) 和修正状态。 这可以帮助您了解整个事件的修正状态以及可以采取哪些下一步操作。
+每个被分析的实体都标有"恶意 (可疑、清理) 和修正状态。 这可以帮助您了解整个事件的修正状态以及可以采取哪些下一步操作。
 
 ## <a name="graph-preview"></a>Graph (预览) 
 
-the **Graph** tab shows the full scope of the attack， how the attack spread through your network over time， where it started， and how far the attacker. 它将属于攻击的不同可疑实体与用户、设备和邮箱等相关资产连接在一起。 
+the **Graph** tab shows the full scope of the attack， how the attack spread through your network over time， where it started， and how a far the attacker went. 它将属于攻击的不同可疑实体与用户、设备和邮箱等相关资产连接在一起。 
 
 从 **"Graph"** 选项卡中，您可以：
 
@@ -207,4 +207,3 @@ the **Graph** tab shows the full scope of the attack， how the attack spread th
 - [事件概述](incidents-overview.md)
 - [确定事件优先级](incident-queue.md)
 - [管理事件](manage-incidents.md)
-

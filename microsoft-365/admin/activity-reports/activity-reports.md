@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: a881f6829d99ef8e7a47340140609cbc75d7e5c3
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 36176ceee1ace993a95e661ab5d71ee062956692
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370304"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074398"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -75,7 +75,7 @@ ms.locfileid: "61370304"
 
 - 报表阅读人员
 
-- Teams 服务管理员
+- Teams 管理员
 
 - Teams 通信管理员
     

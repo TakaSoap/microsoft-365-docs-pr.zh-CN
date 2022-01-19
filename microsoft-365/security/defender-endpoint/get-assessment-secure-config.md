@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 04e2ac7a29dddb9fe02e558e6ba545c51048bd51
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 2fc9870871641bb7239a6dcdcdf9f54334726384
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284237"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074710"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>导出每个设备的安全配置评估
 
@@ -39,7 +39,7 @@ ms.locfileid: "61284237"
 
 - [导出安全配置评估 **JSON 响应**](#1-export-secure-configuration-assessment-json-response)：API 将提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-- [通过文件 **导出安全配置评估**](#2-export-secure-configuration-assessment-via-files)：此 API 解决方案允许更快、更可靠地拉取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，你可以从 Azure 存储下载数据，如下所示：
+- [通过文件 **导出安全配置评估**](#2-export-secure-configuration-assessment-via-files)：此 API 解决方案允许更快、更可靠地拉取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，你可以从以下Azure 存储下载所有数据：
 
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
 
@@ -50,7 +50,7 @@ ms.locfileid: "61284237"
 > [!NOTE]
 > 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出，**** 按设备 (也称为按 **_设备) 。_**
 
-## <a name="1-export-secure-configuration-assessment-json-response"></a>1. 导出安全配置评估 (JSON 响应) 
+## <a name="1-export-secure-configuration-assessment-json-response"></a>1. 导出 JSON 响应 (安全配置) 
 
 ### <a name="11-api-method-description"></a>1.1 API 方法说明
 
@@ -102,9 +102,9 @@ ConfigurationName|string|配置的显示名称|将设备载入到 Microsoft Defe
 ConfigurationSubcategory|string|配置所属的子类别或子组。 在许多情况下，它用于描述特定的功能。|载入设备
 DeviceId|string|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|string|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com
-IsApplicable|布尔值|指示配置或策略是否适用|True
+IsApplicable|布尔值|指示配置或策略是否适用|true
 IsCompliant|布尔值|指示是否正确配置了配置或策略|false
-IsExpectedUserImpact|布尔值|指示是否将应用配置时影响用户|True
+IsExpectedUserImpact|布尔值|指示是否将应用配置时影响用户|true
 OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如Windows 10和Windows 11。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10 和 Windows 11
 RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
 RecommendationReference|string|对此软件相关建议 ID 的引用。|sca-_-scid-20000
@@ -242,7 +242,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 
 ### <a name="parameters"></a>参数
 
-- sasValidHours：下载 URL 有效期为 24 小时 (24 小时) 。
+- sasValidHours：下载 URL 的有效期为 (24 小时) 。
 
 ### <a name="25-properties"></a>2.5 属性
 

@@ -1,6 +1,6 @@
 ---
 title: 高级搜寻架构中的 AADSpnSignInEventsBeta 表
-description: 了解与 Azure Active Directory服务主体和托管标识登录事件表关联的信息。
+description: 了解与 Azure Active Directory 主体和托管标识登录事件表关联的信息。
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， AlertInfo， 警报， 实体， 证据， 文件， IP 地址， 设备， 计算机， 用户， 帐户， 标识， AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6d9c0c215d37458eab1deaf19f5818f07c1a9f3a
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 77cf2d7b74dfc4ccea88661642579f5244e14089
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531491"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62073672"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -31,7 +31,7 @@ ms.locfileid: "61531491"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> 该表当前处于 beta 版本，并短期提供，以便你可以Azure Active Directory (AAD) `AADSpnSignInEventsBeta` 登录事件。 客户需要拥有Azure Active Directory Premium P2许可证才能收集和查看此表的活动。 Microsoft 最终将将所有登录架构信息移动到 `IdentityLogonEvents` 表中。
+> 该表当前处于 beta 版本，并短期提供，以便你可以Azure Active Directory (AAD) `AADSpnSignInEventsBeta` 登录事件。 客户需要拥有一Azure Active Directory Premium P2许可证才能收集和查看此表的活动。 Microsoft 最终将将所有登录架构信息移动到 `IdentityLogonEvents` 表中。
 
 高级 `AADSpnSignInEventsBeta` 搜寻架构中的表包含有关Azure Active Directory主体和托管标识登录的信息。你可以了解有关登录活动报告中不同类型的登录Azure Active Directory[预览](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。
 

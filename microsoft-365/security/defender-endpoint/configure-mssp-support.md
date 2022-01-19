@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 99ecd48eb0faf7c989c19db4ee47ec67430c1d20
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 1a9a7e24bc08338549a78fcf9e9b2756701cd83f
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218678"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074578"
 ---
 # <a name="configure-managed-security-service-provider-integration"></a>配置托管的安全服务提供商集成
 
@@ -50,7 +50,7 @@ ms.locfileid: "61218678"
 
 MSSP 客户需要授予对 Defender for Endpoint 租户的访问权限，以便 MSSP 可以访问门户，MSSP 客户才能执行这些操作。
 
-通常，MSSP 客户执行初始配置步骤以授予 MSSP 访问其 Windows Defender 安全中心租户的权限。 授予访问权限后，MSSP 客户或 MSSP 可以执行其他配置步骤。
+通常，MSSP 客户执行初始配置步骤以向 MSSP 授予对安全中心租户Windows Defender访问权限。 授予访问权限后，MSSP 客户或 MSSP 可以执行其他配置步骤。
 
 通常，需要执行以下配置步骤：
 

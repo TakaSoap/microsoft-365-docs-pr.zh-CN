@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e447f764ea8b5f5d0a44a7233812845592157ee
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 42fac7b4dd76831339b5b76ea21787ae288b636a
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873605"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074686"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -42,17 +42,17 @@ ms.locfileid: "61873605"
 
 - 运行基本和高级命令以在设备上执行调查工作。
 - 下载恶意软件示例和 PowerShell 脚本结果等文件。
-- 在后台下载文件 (新建！) 。
+- 在后台下载文件 (新的！) 。
 - Upload PowerShell 脚本或可执行文件到库，然后从租户级别在设备上运行它。
 - 执行或撤消修正操作。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的 Windows** 版本。
+- **验证是否正在运行受支持的版本Windows。**
 
-  设备必须运行以下版本之一Windows
+  设备必须运行以下版本之一的 Windows
 
   - **Windows 10 & 11**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
@@ -64,18 +64,16 @@ ms.locfileid: "61873605"
   - **macOS** - 仅适用于公共预览版，最低要求版本：101.43.84 
   
   - **Linux** - 仅适用于公共预览版，最低要求版本：101.45.13 
-    
+
   - **Windows Server 2012 R2** - 包含 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
   
   - **Windows Server 2016** - 使用 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
 
   - **Windows Server 2019**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
-    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
-    
-  - **Windows Server 2022**
+    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
 
-       
+  - **Windows Server 2022**
 
 - **从高级设置页面启用实时响应**。
 
@@ -84,7 +82,7 @@ ms.locfileid: "61873605"
   > [!NOTE]
   > 只有具有管理安全性或全局管理员角色的用户才能编辑这些设置。
 
-- **从高级设置页面启用** 服务器实时响应 (推荐) 。
+- **从高级设置页面启用服务器** 实时响应 (推荐) 。
 
   > [!NOTE]
   > 只有具有管理安全性或全局管理员角色的用户才能编辑这些设置。
@@ -97,7 +95,7 @@ ms.locfileid: "61873605"
 
   ![错误消息的图像。](images/live-response-error.png)
 
-- **启用实时响应未签名脚本执行 (** 可选) 。
+- **启用实时响应未签名脚本执行** (可选) 。
 
   >[!IMPORTANT]
   >签名验证仅适用于 PowerShell 脚本。 
@@ -200,10 +198,9 @@ ms.locfileid: "61873605"
 | scan  | 断开设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接  | N  | Y  | Y  |
 | undo  | 还原已修正的实体。  | Y  | Y  | Y  |
 
-
 ## <a name="use-live-response-commands"></a>使用实时响应命令
 
-控制台中可以使用的命令遵循与命令类似的Windows[原则](/windows-server/administration/windows-commands/windows-commands#BKMK_c)。
+控制台中可以使用的命令遵循与命令类似的Windows[准则](/windows-server/administration/windows-commands/windows-commands#BKMK_c)。
 
 高级命令提供了一组更可靠的操作，允许你执行更强大的操作，如下载和上载文件、在设备上运行脚本，以及对实体执行修正操作。
 
@@ -240,7 +237,7 @@ ms.locfileid: "61873605"
 
 ### <a name="put-a-file-in-the-library"></a>将文件放入库中
 
-实时响应具有一个库，您可以将文件放入其中。 该库存储 (脚本) 脚本库，这些文件可以在租户级别的实时响应会话中运行。
+实时响应具有一个库，您可以将文件放入其中。 该库存储 (脚本) ，这些脚本可以在租户级别的实时响应会话中运行。
 
 实时响应允许运行 PowerShell 脚本，但是必须先将文件放入库中，然后才能运行它们。
 

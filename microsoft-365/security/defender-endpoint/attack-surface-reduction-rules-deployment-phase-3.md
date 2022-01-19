@@ -17,14 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5fb67e6bdd5a6ddbfa61147f1d7adba558c8cf02
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8cd03198fb94bfba582fb148b1f8f0da00beecf1
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873916"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074758"
 ---
-# <a name="attack-surface-reduction-rules-deployment-phase-3-implement"></a>攻击面减少规则部署阶段 3：实施
+# <a name="asr-rules-deployment-phase-3-implement"></a>ASR 规则部署阶段 3：实现
 
 实现阶段将环从测试移动到功能状态。
 
@@ -50,7 +50,7 @@ ms.locfileid: "61873916"
 
 ### <a name="step-2-expand-deployment-to-ring-n--1"></a>步骤 2：展开部署以圈 n + 1
 
-当你确信已正确配置圈 1 的 ASR 规则时，你可以将部署范围扩大到下一个圈 (n + 1) 。
+当你确信已正确配置圈 1 的 ASR 规则时，你可以将部署范围扩大到下一个响铃 (n + 1) 。
 
 每个后续圈的部署过程步骤 1 – 3 基本相同：
 
@@ -75,7 +75,7 @@ ms.locfileid: "61873916"
 
 勒索软件规则旨在帮助企业客户降低勒索软件攻击的风险，同时确保业务连续性。 默认情况下，勒索软件规则错误应谨慎处理，并防范尚未获得足够信誉和信任的文件。 为了重新强调一下，勒索软件规则仅针对未基于数百万客户的使用情况指标获得足够正面信誉和普遍程度的文件触发。 通常，块是自行解析的，因为每个文件的"信誉和信任"值都会随着无问题使用率的增加而递增升级。
 
-如果无法及时解决阻止问题，客户可以使用自助服务机制或基于 IOC) 的"允许列表"功能（自行承担风险）使用自助服务机制或泄露指示器 ("允许列表"功能来取消阻止文件本身。
+如果无法及时解决阻止问题，客户可以使用自助服务机制或基于 IOC () 的"允许列表"功能自行取消阻止文件，并自行承担风险。
 
 > [!WARNING]
 > 排除或取消阻止文件或文件夹可能会允许不安全的文件运行并感染你的设备。 排除文件或文件夹可以严重削弱攻击面减少规则提供的保护。 将允许运行规则阻止的文件，并且不会记录任何报告或事件。
@@ -95,7 +95,7 @@ ms.locfileid: "61873916"
 
 2. 在组 **策略管理编辑器中**，转到计算机 **配置，** 然后单击 **管理模板**。
 
-3. 展开树以 **Windows攻击** \>  \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \> **的组件**。
+3. 展开树以Windows **攻击** \>  \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \> **的组件**。
 
 4. 双击从攻击 **面减少规则中排除** 文件和路径设置，将选项设置为 **已启用**。 选择 **"显示** "，在"值名称"列中 **输入每个文件或** 文件夹。 在"值"**列中为** 每个项目输入 **0。**
 
@@ -104,7 +104,7 @@ ms.locfileid: "61873916"
 
 ##### <a name="use-powershell-to-exclude-files-and-folders"></a>使用 PowerShell 排除文件和文件夹
 
-1. 在"管理"中"开始"菜单 **powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
+1. 在 **"管理"中"开始"菜单 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
 
 2. 输入以下 cmdlet：
 
@@ -127,10 +127,10 @@ ms.locfileid: "61873916"
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题
 
-[ASR 规则部署指南 - 概述](attack-surface-reduction-rules-deployment.md)
+[ASR 规则部署概述](attack-surface-reduction-rules-deployment.md)
 
-[ASR 规则部署阶段 1 - 计划](attack-surface-reduction-rules-deployment-phase-1.md)
+[阶段 1：计划](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[ASR 规则部署阶段 2 - 测试](attack-surface-reduction-rules-deployment-phase-2.md)
+[阶段 2：测试](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR 规则部署阶段 4 - 操作化](attack-surface-reduction-rules-deployment-phase-4.md)
+[阶段 4：操作](attack-surface-reduction-rules-deployment-phase-4.md)

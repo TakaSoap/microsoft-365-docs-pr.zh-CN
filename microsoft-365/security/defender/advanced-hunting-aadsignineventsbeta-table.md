@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 AADSignInEventsBeta 表
 description: 了解Azure Active Directory搜寻架构的登录事件表
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， 文件， IP 地址， 设备， 计算机， 用户， 帐户， 标识， AAD
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 描述， 文件， IP 地址， 设备， 计算机， 用户， 帐户， 标识， AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5afa98c4455387be673186854528dcd776e151f2
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: dad3ea9fe4297d93864032130e3f6d6b5f6e4e82
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531845"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074614"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -34,7 +34,7 @@ ms.locfileid: "61531845"
 > [!IMPORTANT]
 > 该表当前处于 beta 版本，并短期提供，以便你可以Azure Active Directory (AAD) `AADSignInEventsBeta` 登录事件。 客户需要拥有一Azure Active Directory Premium P2许可证才能收集和查看此表的活动。 所有登录架构信息最终将移动到 `IdentityLogonEvents` 表中。
 
-高级 `AADSignInEventsBeta` 搜寻架构中的表包含有关Azure Active Directory和非交互式登录的信息。了解有关登录活动报告中Azure Active Directory[登录的详细信息 - 预览](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。 
+高级 `AADSignInEventsBeta` 搜寻架构中的表包含有关Azure Active Directory和非交互式登录的信息。了解有关登录活动报告中Azure Active Directory[的详细信息 - 预览](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。
 
 使用此参考来构建从该表返回信息的查询。 有关高级搜寻架构中其他表的信息，请参阅高级 [搜寻参考](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference)。
 
@@ -54,9 +54,9 @@ ms.locfileid: "61531845"
 |`AccountDisplayName`|`string`|通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间名首字母和姓氏或姓氏的组合。|
 |`AccountObjectId`|`string`|Azure AD|
 |`AccountUpn`|`string`|帐户 (UPN) 的用户主体名称|
-|`IsExternalUser`|`int`|指示登录的用户是否位于外部。 可能的值：-1 (未) ，0 (外部) ，1 (外部) 。|
+|`IsExternalUser`|`int`|指示登录的用户是否位于外部。 可能的值：-1 (设置) ，0 (外部) ，1 (外部) 。|
 |`IsGuestUser`|`boolean`|指示登录的用户是否是租户中的来宾|
-|`AlternateSignInName`|`string`|本地用户主体名称 (UPN) 登录用户的 UPN Azure AD|
+|`AlternateSignInName`|`string`|本地用户主体名称 (登录) 的 UPN Azure AD|
 |`LastPasswordChangeTimestamp`|`datetime`|上次登录的用户更改其密码的日期和时间|
 |`ResourceDisplayName`|`string`|访问的资源的显示名称|
 |`ResourceId`|`string`|访问的资源的唯一标识符|
@@ -68,7 +68,7 @@ ms.locfileid: "61531845"
 |`IsManaged`|`int`|指示启动登录的设备是否是托管设备 (1) 0 (托管) |
 |`IsCompliant`|`int`|指示启动登录的设备是否符合 (1) 0 () |
 |`AuthenticationProcessingDetails`|`string`|有关身份验证处理器的详细信息|
-|`AuthenticationRequirement`|`string`|登录所需的身份验证类型。 可能的值：需要 multiFactorAuthentication (MFA，) singleFactorAuthentication (不需要 MFA) 。|
+|`AuthenticationRequirement`|`string`|登录所需的身份验证类型。 可能的值：multiFactorAuthentication (MFA 是必需的) singleFactorAuthentication (不需要 MFA) 。|
 |`TokenIssuerType`|`int`|指示令牌颁发者是否Azure Active Directory (0) Active Directory 联合身份验证服务 (1) |
 |`RiskLevelAggregated`|`int`|登录期间聚合的风险级别。 可能的值：0 (未设置) 、1 (无) 、10 (低) 、50 (medium) 或 100 (high) 。|
 |`RiskDetails`|`int`|有关登录用户的风险状态的详细信息|
