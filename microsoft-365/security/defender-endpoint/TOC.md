@@ -76,7 +76,6 @@
 #### [配置代理和 Internet 连接设置](configure-proxy-internet.md)
 #### [创建载入或载出通知规则](onboarding-notification.md)
 
-#### [应用程序许可条款](mde-terms-windows.md)
 
 
 ### [其他操作系统上的 Microsoft Defender for Endpoint]()
@@ -118,7 +117,7 @@
 
 ##### [隐私](mac-privacy.md)
 ##### [资源](mac-resources.md)
-##### [应用程序许可条款](mde-terms-mac.md)
+
 
 #### [Microsoft Defender for Endpoint on Linux]()
 ##### [Microsoft Defender for Endpoint for Linux 概述](microsoft-defender-endpoint-linux.md)
@@ -185,7 +184,6 @@
 
 ###### [隐私](ios-privacy.md)
 
-##### [Microsoft Defender for Endpoint 应用程序许可条款](mde-terms-mobile.md) 
 
 ### [使用 Microsoft Endpoint Manager 管理设备上的 Microsoft Defender for Endpoint 配置设置](security-config-management.md)
 
@@ -270,13 +268,14 @@
 #### [了解并使用攻击面减少](overview-attack-surface-reduction.md)
 #### [攻击面减少（ASR）规则]()
 ##### [了解 ASR 规则](attack-surface-reduction.md)
-##### [部署 ASR 规则](attack-surface-reduction-rules-deployment.md)
-###### [ASR 规则部署阶段 1 - 计划](attack-surface-reduction-rules-deployment-phase-1.md)
-###### [ASR 规则部署阶段 2 - 测试](attack-surface-reduction-rules-deployment-phase-2.md)
-###### [ASR 规则部署阶段 3 - 实现](attack-surface-reduction-rules-deployment-phase-3.md)
-###### [ASR 规则部署阶段 4 - 操作化](attack-surface-reduction-rules-deployment-phase-4.md)
+##### [ASR 规则部署指南]()
+###### [ASR 规则部署概述](attack-surface-reduction-rules-deployment.md)
+###### [第 1 阶段：规划](attack-surface-reduction-rules-deployment-phase-1.md)
+###### [第 2 截断：测试](attack-surface-reduction-rules-deployment-phase-2.md)
+###### [第 3 阶段：实施](attack-surface-reduction-rules-deployment-phase-3.md)
+###### [第 4 阶段：投入生产](attack-surface-reduction-rules-deployment-phase-4.md)
 ##### [ASR 规则参考](attack-surface-reduction-rules-reference.md)
-##### [启用 ASR 规则备用方法](enable-attack-surface-reduction.md)
+##### [启用 ASR 规则陪着备用方法](enable-attack-surface-reduction.md)
 #### [关于攻击面减少的常见问题解答](attack-surface-reduction-faq.yml)
 
 ### 下一代保护

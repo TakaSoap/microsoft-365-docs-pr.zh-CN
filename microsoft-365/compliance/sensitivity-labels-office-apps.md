@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d13c587c86874354e05422b2ff105d923e234c61
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: ff515e927affcc02d92c6fe54b38ed6faf756d9f
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62054880"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074698"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -65,7 +65,7 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |-----------|-------:|----|----|--------|----|
 |[手动应用、更改或删除标签](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[将默认标签应用于](sensitivity-labels.md#what-label-policies-can-do) 新建文档                                         | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|<[将默认标签应用于](sensitivity-labels.md#what-label-policies-can-do) 已有文档 | 预览： [Beta 频道](https://office.com/insider) | 预览： [Beta 频道](https://office.com/insider) | 审阅中 | 审阅中 | 推出：[是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|<[将默认标签应用于](sensitivity-labels.md#what-label-policies-can-do) 已有文档 | 预览：即将于[当前频道（预览）](https://office.com/insider)中退出 | 预览：即将于[当前频道（预览）](https://office.com/insider)中退出 | 审阅中 | 审阅中 | 推出：[是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[需要两端对齐来更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 当前频道：1910+ <br /><br> 每月企业频道：1910+  <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[提供指向自定义帮助页面的帮助链接](sensitivity-labels.md#what-label-policies-can-do)                       | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -119,23 +119,25 @@ Office 内置标签客户端从 Microsoft 365 合规中心下载敏感度标签�
 
 若要使用 Office 内置标签客户端，必须具有合规中心发布给用户的一个或多个[标签策略](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)，以及[受支持的 Office 版本](#support-for-sensitivity-label-capabilities-in-apps)。
 
-如果满足以上两个条件，但需要关闭 Office 应用中的内置标签，请使用以下组策略设置：
+如果满足以上两个条件，但需要关闭 Windows Office 应用中的内置标签，请使用以下组策略设置：
 
 1. 导航到 **/管理模板/Microsoft Office 2016/安全设置**。
 
 2. 设置 **使用 Office 中的敏感度功能来应用和查看** 0 标签 **0**。 
  
-通过使用组策略或 Office 云策略服务中的 [部署此设置](/DeployOffice/overview-office-cloud-policy-service)。 Office 应用重启时，该设置生效。
+通过使用组策略或 Office 云策略服务中的 [部署此设置](/DeployOffice/overview-office-cloud-policy-service)。 这些设置将在这些 Office 应用重启时生效。 
+
+由于此设置特定于 Windows Office 应用，因此它不会影响 Windows 上支持敏感度标签的其他应用（如 Power BI）或其他平台（如 macOS、移动设备和 Office 网页版）。 如果你不希望部分或所有用户在所有应用及所有平台上查看和使用敏感度标签，请不要为这些用户分配敏感度标签策略。 
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 内置标签客户端和 Azure 信息保护客户端
 
-如果用户在其 Windows 计算机上安装了 [Azure 信息保护客户端](/azure/information-protection/rms-client/aip-clientv2)，则默认情况下，内置标签在[支持这些标签的 Office 应用](#labeling-client-for-desktop-apps)中处于关闭状态。 由于内置标签不使用由 Azure 信息保护客户端使用的 Office 加载项，因此这些内置标签具有更高的稳定性和更好的性能。 这些内置标签还支持最新功能，例如高级分类器。
+如果用户在其 Windows 计算机上安装了 [Azure 信息保护客户端](/azure/information-protection/rms-client/aip-clientv2)，则默认情况下，内置标签在[支持这些标签的 Windows Office 应用](#labeling-client-for-desktop-apps)中处于关闭状态。 由于内置标签不使用由 Azure 信息保护客户端使用的 Office 加载项，因此这些内置标签具有更高的稳定性和更好的性能。 这些内置标签还支持最新功能，例如高级分类器。
 
 我们建议不要卸载 Azure 信息保护客户端，而是防止在 Office 应用中加载 Azure 信息保护加载项。 然后，你可以获取 Office 应用中内置标签的好处，以及 Office 应用之外的 Azure 信息保护客户端标签文件的好处。 例如，Azure 信息保护客户端可以使用文件资源管理器和 PowerShell 标记所有文件类型。 有关 Office 应用外部支持的标签功能的详细信息，请参阅[敏感度标签和 Azure 信息保护](sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)。
 
-若要防止在 Office 应用中加载 Azure 信息保护客户端加载项，请使用组策略设置 **托管加载项列表**，如在 [由于 Office 2013 和 Office 2016 程序的组策略设置而未加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中所述。
+若要防止在 Windows Office 应用中加载 Azure 信息保护客户端加载项，请使用组策略设置 **托管加载项列表**，如在[由于 Office 2013 和 Office 2016 程序的组策略设置而未加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中所述。
 
-对于支持内置标签的 Office 应用，请使用 Microsoft Word 2016、Excel 2016、PowerPoint 2016 和 Outlook 2016 的配置，为 Azure 信息保护客户端指定以下编程标识符 (ProgID)，并将选项设置为 **0 ：始终禁用加载项（阻止）**
+对于支持内置标签的 Windows Office 应用，请使用 Microsoft Word 2016、Excel 2016、PowerPoint 2016 和 Outlook 2016 的配置，为 Azure 信息保护客户端指定以下编程标识符 (ProgID)，并将选项设置为 **0 ：始终禁用加载项（阻止）**
 
 |应用程序  |编程标识符  |
 |---------|---------|
