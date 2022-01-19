@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6e0bc97e5f43c5527c0b4d443df030b76685dd8b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8ba3fc2f4728162bcdf22f40db8500757139a286
+ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163262"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62083086"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>在 Windows 上运行客户端分析器
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-1. 将[MDE 客户端分析器工具](https://aka.ms/mdatpanalyzer)下载到Windows调查计算机。
+1. 将[MDE 客户端分析器工具](https://aka.ms/mdatpanalyzer)下载到Windows调查的客户端计算机。
 
-2. 提取计算机上MDEClientAnalyzer.zip内容。
+2. 提取计算机上MDEClientAnalyzer.zip的内容。
 
 3. 打开提升的命令行:
     1. 转到“**开始**”并键入“**cmd**”。
@@ -47,15 +47,15 @@ ms.locfileid: "61163262"
    **将 HardDrivePath 替换为工具提取到的路径，例如：**
 
    ```dos
-   C:\Work\tools\MDATPClientAnalyzer\MDEClientAnalyzer.cmd
+   C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
    ```
 
 除上述内容外，还有一个选项使用 [实时响应收集分析器支持日志](troubleshoot-collect-support-log.md)。
 
 > [!NOTE]
-> 在 Windows 10、Windows Server 2019 或更高版本操作系统版本或 Windows 11 上，客户端分析器脚本将调用可执行文件，以运行对云服务 URL 的连接测试。 `MDEClientAnalyzer.exe`
+> 在 Windows 10/11、Windows Server 2019/2022 或安装了新式统一解决方案的 Windows Server 2012R2/2016 上，客户端分析器脚本将调用可执行文件，以对云服务 URL 运行连接测试。 [](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) `MDEClientAnalyzer.exe`
 >
-> 在 Windows 8.1、Windows Server 2016 或以前的操作系统版本上，客户端分析器脚本将调用可执行文件，以运行命令和控制 (CnC) URL 的连接测试，同时还调用用于网络数据通道 URL 的 Microsoft Monitoring Agent 连接工具。 `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe`
+> 在 Windows 8.1、Windows Server 2016 或任何使用 Microsoft Monitoring Agent (MMA) 载入的操作系统版本上，客户端分析器脚本将调用可执行文件，以运行命令和控制 `MDEClientAnalyzerPreviousVersion.exe` (CnC) URL 的连接测试，同时调用Microsoft Monitoring Agent网络 `TestCloudConnection.exe` 数据通道 URL 的连接工具。
 
 
 分析工具中包含的所有 PowerShell 脚本和模块都由 Microsoft 签名。
@@ -82,7 +82,7 @@ ms.locfileid: "61163262"
 >
 > - 运行分析器的窗口的版本。
 > - 计算机上事件日志通道的可用性。
-> - 如果计算机尚未载入EDR， (感知的启动状态将) 。
+> - 如果计算机尚未EDR， (感知的启动状态将) 。
 > - 如果分析器命令使用了高级疑难解答参数。
 
 默认情况下，解压缩MDEClientAnalyzerResult.zip文件将包含以下项目。
