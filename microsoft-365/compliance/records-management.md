@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: f3322af11f724920e5833182128346c1bc4c41c5
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: d5d4752e76a2a39b1c5fafab964d13ce11873e9b
+ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559864"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62083059"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
@@ -51,7 +51,7 @@ ms.locfileid: "61559864"
 
 借助这些功能，你可以将组织的保留计划和要求合并到用以管理保留、记录声明和处置的记录管理解决方案中，从而支持完整的内容生命周期。
 
-除了阅读联机文档，你还可以收听有关记录管理的[网络研讨会录制内容](https://aka.ms/MIPC/Video-RecordsManagementWebinar)并下载随附的[常见问题幻灯片组](https://aka.ms/MIPC/Blog-RecordsManagementWebinar)，这种方法可能也会非常有用。
+除了联机文档之外，你可能会发现从记录管理网络研讨会下载[常见问题幻灯片组](https://aka.ms/MIPC/Blog-RecordsManagementWebinar)非常有用。 不再提供实际网络研讨会的录制内容。
 
 ## <a name="records"></a>记录
 
@@ -79,13 +79,13 @@ ms.locfileid: "61559864"
 
 |操作| 保留标签 |记录 - 已锁定| 记录 - 已解锁| 合规性记录 |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|编辑内容|允许 | **阻止** | Allowed | **阻止**|
+|编辑内容|允许 | **阻止** | 允许 | **阻止**|
 |编辑属性（包括重命名）|Allowed |允许 <sup>1</sup> | Allowed | **阻止**|
 |删除|允许 <sup>2</sup> |**阻止** |**阻止**| **阻止**|
-|复制|Allowed |Allowed | Allowed| Allowed|
-|在容器 <sup>3</sup> 中移动|Allowed |Allowed | Allowed| Allowed|
+|复制|允许 |允许 | Allowed| Allowed|
+|在容器 <sup>3</sup> 中移动|Allowed |允许 | Allowed| Allowed|
 |跨容器 <sup>3</sup> 移动|允许 |如果从未解锁，则允许 | **阻止** | **阻止**|
-|打开/读取|允许 |Allowed | 允许| Allowed|
+|打开/读取|Allowed |Allowed | Allowed| Allowed|
 |更改标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
 |删除标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
 

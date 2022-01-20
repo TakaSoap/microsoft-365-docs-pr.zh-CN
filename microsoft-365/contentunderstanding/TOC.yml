@@ -32,6 +32,8 @@
       href: apply-a-model.md
     - name: 创建表单处理模型
       href: create-a-form-processing-model.md
+    - name: 使用内容程序集创建文档
+      href: content-assembly.md
     - name: 发布和发现模型
       href: model-discovery.md
     - name: 应用保留标签

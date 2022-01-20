@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff515e927affcc02d92c6fe54b38ed6faf756d9f
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 3dd46502fc4e54e298e1f3be4f776e1e325259a8
+ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074698"
+ms.locfileid: "62083074"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -135,7 +135,7 @@ Office 内置标签客户端从 Microsoft 365 合规中心下载敏感度标签�
 
 我们建议不要卸载 Azure 信息保护客户端，而是防止在 Office 应用中加载 Azure 信息保护加载项。 然后，你可以获取 Office 应用中内置标签的好处，以及 Office 应用之外的 Azure 信息保护客户端标签文件的好处。 例如，Azure 信息保护客户端可以使用文件资源管理器和 PowerShell 标记所有文件类型。 有关 Office 应用外部支持的标签功能的详细信息，请参阅[敏感度标签和 Azure 信息保护](sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)。
 
-若要防止在 Windows Office 应用中加载 Azure 信息保护客户端加载项，请使用组策略设置 **托管加载项列表**，如在[由于 Office 2013 和 Office 2016 程序的组策略设置而未加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中所述。
+若要防止在 Windows Office 应用中加载 Azure 信息保护客户端加载项，请使用组策略设置 **托管加载项列表**，如在 [由于 Office 2013 和 Office 2016 程序的组策略设置而未加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中所述。
 
 对于支持内置标签的 Windows Office 应用，请使用 Microsoft Word 2016、Excel 2016、PowerPoint 2016 和 Outlook 2016 的配置，为 Azure 信息保护客户端指定以下编程标识符 (ProgID)，并将选项设置为 **0 ：始终禁用加载项（阻止）**
 
@@ -317,7 +317,7 @@ Office 应用应用的内容标记和加密与敏感度标签不同，具体取�
 ### <a name="dynamic-markings-with-variables"></a>带变量的动态标记
 
 > [!IMPORTANT]
-> 目前，并非所有平台上的应用都支持动态内容标记，可标记页眉、页脚和水印。 对于不支持此功能的应用，其将标记应用为标签配置中指定的原始文本，而不是解决变量。
+> 如果你的 Office 应用不支持此功能，其将标记应用为标签配置中指定的原始文本，而不是解决变量。
 > 
 > Azure 信息保护统一标签客户端支持动态标记。对于内置于 Office 应用的标签，请参阅此页面上[功能](#support-for-sensitivity-label-capabilities-in-apps)中的表格，了解支持的最低版本。
 
