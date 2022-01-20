@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8f957f1a6aa51380152441f26aaeb47b7df58e7b
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 5621ce43443a3e620ef0166c4b362e9dc04becae
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171230"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156324"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上使用 Microsoft Defender for Endpoint 计划扫描
 
@@ -110,7 +110,7 @@ ms.locfileid: "61171230"
             <key>Hour</key>
             <integer>2</integer>
             <key>Minute</key>
-            <integer>0</integer>
+            <integer>50</integer>
             <key>Weekday</key>
             <integer>5</integer>
         </dict>
@@ -132,10 +132,14 @@ ms.locfileid: "61171230"
     launchctl start <your file name>
     ```
 
-3. 计划扫描将按你在 p-list 中定义的日期、时间和频率运行。 在以上示例中，扫描每周五的上午 2：00 运行。 
+3. 计划扫描将按你在 p-list 中定义的日期、时间和频率运行。 在之前的示例中，扫描每周五的上午 2：50 运行。 
 
-    `Weekday`的值 `StartCalendarInterval` 使用整数指示一周的第五天或星期五。
-
+    - `Weekday`的值 `StartCalendarInterval` 使用整数指示一周的第五天或星期五。 范围介于 0 到 7 之间，7 表示星期日。
+    - `Day`的值 `StartCalendarInterval` 使用整数来指示月的第三天。 范围介于 1 和 31 之间。
+    - `Hour`的值 `StartCalendarInterval` 使用整数来指示一天的第二小时。 范围介于 0 到 24 之间。
+    `Minute`的值 `StartCalendarInterval` 使用整数指示一小时中的 50 分钟。 范围介于 0 和 59 之间。
+    
+    
  > [!IMPORTANT]
  > 当设备处于 *运行状态时* ，通过启动执行的代理不会在计划时间运行。 它们将在设备从睡眠模式恢复后运行。
  >
@@ -143,6 +147,6 @@ ms.locfileid: "61171230"
 
 ## <a name="schedule-a-scan-with-intune"></a>使用 Intune 计划扫描
 
-还可以计划使用扫描Microsoft Intune。 当 [runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) 睡眠模式恢复时， [适用于 Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) 的脚本中提供的命令行管理程序脚本将持续存在。 
+还可以计划使用扫描Microsoft Intune。 当 [设备 runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) 睡眠模式时， [适用于 Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) 的脚本中提供的命令行管理程序脚本将持续存在。 
 
 有关如何 [在企业中使用此脚本](/mem/intune/apps/macos-shell-scripts) 的详细说明，请参阅在 Intune 中使用 macOS 设备的 shell 脚本。

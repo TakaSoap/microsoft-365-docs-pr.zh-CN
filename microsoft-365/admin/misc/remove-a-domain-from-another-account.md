@@ -1,5 +1,5 @@
 ---
-title: 执行内部管理员接管
+title: 从另一个帐户删除域
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -21,26 +21,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: 了解如何验证电子邮件和域所有权以接管由自助用户注册帐户创建的非托管Microsoft 365。
-ms.openlocfilehash: 74ba60191004e5b980621ce6a6b58feb42cdcb92
+description: 了解如何加入由自助服务用户注册在 Microsoft 365 中创建的非托管Microsoft 365。
+ms.openlocfilehash: 23fff52a4c42da05f787bfbe8207d3e090c0105c
 ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156204"
+ms.locfileid: "62156573"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>执行内部管理员接管
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。
 
-如果你是管理员，并且想要接管由自助用户注册创建的非托管帐户，可以按照本文中的步骤执行内部管理员接管。
+如果你是管理员，并且想要接管由自助用户注册创建的非托管帐户，可以通过执行内部管理员接管来完成此操作。
 
 > [!NOTE]
 > 针对使用 Azure AD 的任何云服务的自助注册会将用户添加到非托管或"影子"Azure AD目录并创建非托管帐户。 非托管帐户是一个没有全局管理员的目录。 若要确定帐户是托管帐户还是非托管帐户，请参阅确定 [租户类型](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type)。 
   
 ## <a name="before-you-begin"></a>准备工作
 
-当用户使用电子邮件地址Microsoft 365服务注册时，系统会自动为用户创建一个帐户。 如果管理员想要管理帐户上的用户或购买其他 Microsoft 365 服务，他们必须通过执行以下步骤来接管管理员，成为帐户的管理员。
+有时，无法将域添加到组织帐户，因为其他人已使用该域名Microsoft 365注册了域。 但是，你可以从另一个非托管帐户中删除该域，并将其添加到你的组织管理帐户。
+
+但是，必须先加入非托管帐户并成为该帐户的管理员，然后才能从另一个帐户中删除域并将其添加到你的帐户。 然后，你将从非托管帐户中删除域、重新登录你的帐户，然后将域添加到你的管理帐户。
+
+本文中的步骤仅概述了如何加入其他帐户 (步骤 1 和 2) 并按照管理员接管向导中的步骤操作，成为非托管帐户的管理员 (步骤 3) 。
+
+成为非托管帐户管理员后，可以从非托管帐户中删除域，并将其添加到你的帐户。 
 
 ## <a name="step-1-verify-your-email-address"></a>步骤 1：验证电子邮件地址
 
@@ -57,7 +63,7 @@ ms.locfileid: "62156204"
 
 1. 输入验证码后，你将进入一个页面，可在其中创建新帐户。
 
-2. 使用您想要使用的帐户填写用户名和密码字段，然后完成创建帐户的步骤。
+2. 使用想要使用的帐户填写用户名和密码字段，然后选择"开始 **"。**
 
 ## <a name="step-3-verify-domain-ownership-and-become-the-admin"></a>步骤 3：验证域所有权并成为管理员
 
@@ -65,16 +71,13 @@ ms.locfileid: "62156204"
 
     你将被重定向到管理员接管向导。
 
-1. 选择 **"** 下一步"，通过将 TXT 记录添加到域注册机构来验证您是否拥有要接管的域。
+1. 选择 **"** 下一步"，通过将 TXT 记录添加到域注册机构来验证您是否拥有要接管的域。 
 
     该向导将向您提供要添加的 TXT 记录，并提供指向注册机构网站的链接以及指向分步说明的链接。
 
 1. 在"**你现在是管理员"页面上**，选择 **"转到管理中心"。**
 
-    你拥有管理中心帐户所需的管理员权限。 例如，可以管理帐户用户和组、购买新订阅和进行用户分配以及管理帐户域。
-
-    如果要从此帐户中删除域，以便可以将其添加到另一个帐户，请参阅从另一 [个帐户删除域](remove-a-domain-from-another-account.md)。
-  
+    现在，您具有从另一个帐户删除域所需的管理员权限。 
 ## <a name="related-content"></a>相关内容
 
 YouTube：[执行](https://www.youtube.com/watch?v=xt5EsrQBZZk)IT 管理员接管 Power BI 和 Microsoft 365 (视频) \

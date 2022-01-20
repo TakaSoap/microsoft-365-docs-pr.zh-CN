@@ -15,34 +15,34 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0dddebc27f776e317090ac3424c27f01f26126ed
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: b1d313ed2980f84318a590df55e0a8d8e7b152ab
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300185"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156552"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式传输至 Azure 事件中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **适用于：**
+
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 1. 在 [租户中创建](/azure/event-hubs/) 事件中心。
 
-2. 登录到 [你的 Azure](https://ms.portal.azure.com/)租户，转到**订阅>你的订阅>资源>注册到 **Microsoft.insights****。
+2. 登录到你的 [Azure 租户，](https://ms.portal.azure.com/)转到订阅>你的订阅>**资源>注册到 Microsoft.insights。**
 
 ## <a name="enable-raw-data-streaming"></a>启用原始数据流
 
-1. 以 * [Microsoft Defender 安全中心](https://securitycenter.windows.com)**_** 或 _*_安全_ 管理员 **登录安全帐户。
+1. 以 * [Microsoft 365 Defender](https://security.microsoft.com) **_** 或 _*_安全_ 管理员 **登录安全帐户。
 
-2. 转到"数据[导出设置"页上Microsoft Defender 安全中心。](https://securitycenter.windows.com/interoperability/dataexport)
+2. 转到 Microsoft Defender [门户中的](https://security.microsoft.com/interoperability/dataexport) "数据导出设置"页面。
 
 3. 单击"**添加数据导出设置"。**
 
@@ -76,7 +76,7 @@ ms.locfileid: "61300185"
 
 - Azure 事件中心中的每个事件中心消息都包含记录列表。
 
-- 每条记录都包含事件名称、Microsoft Defender for Endpoint 接收事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为 **"properties"** 的属性。
+- 每条记录都包含事件名称、Microsoft Defender for Endpoint 收到事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为 **"properties"** 的属性。
 
 - 有关适用于终结点事件的 Microsoft Defender 架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
 
@@ -86,7 +86,7 @@ ms.locfileid: "61300185"
 
 若要获取事件属性的数据类型，请执行下列操作：
 
-1. 登录[以Microsoft Defender 安全中心](https://securitycenter.windows.com)转到高级[搜寻页面](https://securitycenter.windows.com/hunting-package)。
+1. 登录[以Microsoft 365 Defender并](https://security.microsoft.com)转到高级[搜寻页面](https://security.microsoft.com/hunting-package)。
 
 2. 运行以下查询，获取每个事件的数据类型映射：
 

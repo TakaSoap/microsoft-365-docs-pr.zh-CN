@@ -15,24 +15,24 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f853917497a34ff4cd82f10cc83d23f530572e45
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: a9db98456cc971b4ac4179cd4f3460dfe2137b91
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301398"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156235"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式传输存储帐户
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **适用于：**
+
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 1. 在[租户存储](/azure/storage/common/storage-account-overview)帐户。
 
@@ -40,9 +40,9 @@ ms.locfileid: "61301398"
 
 ## <a name="enable-raw-data-streaming"></a>启用原始数据流
 
-1. 以 * 全局管理员 **_** 或 _* 安全管理员 ** 登录 [Microsoft Defender 终结点](https://securitycenter.windows.com)_门户_。
+1. 以 * [Microsoft 365 Defender](https://security.microsoft.com) **_** 或 _*_安全管理员_**登录。
 
-2. 转到"[数据导出设置"页上Microsoft Defender 安全中心。](https://securitycenter.windows.com/interoperability/dataexport)
+2. 转到"[数据导出设置"页Microsoft 365 Defender。](https://security.microsoft.com/interoperability/dataexport)
 
 3. 单击"**添加数据导出设置"。**
 
@@ -75,7 +75,7 @@ ms.locfileid: "61301398"
 
 - 每个 blob 包含多行。
 
-- 每行都包含事件名称、Defender for Endpoint 收到事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为"properties"的属性。
+- 每行都包含事件名称、Defender for Endpoint 接收事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为"properties"的属性。
 
 - 有关适用于终结点事件的 Microsoft Defender 架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
 
@@ -85,7 +85,7 @@ ms.locfileid: "61301398"
 
 为了获取事件属性的数据类型，请执行下列操作：
 
-1. 登录[以Microsoft Defender 安全中心](https://securitycenter.windows.com)转到高级[搜寻页面](https://securitycenter.windows.com/hunting-package)。
+1. 登录[以Microsoft 365 Defender](https://security.microsoft.com)转到高级[搜寻页面](https://security.microsoft.com/hunting-package)。
 
 2. 运行以下查询，获取每个事件的数据类型映射：
 

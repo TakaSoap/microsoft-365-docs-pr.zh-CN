@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/03/2022
+ms.date: 01/19/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
 ms.custom: intro-overview
-ms.openlocfilehash: 139015e1e1b12dd14510fa0cdd8b546b4ad52405
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 26643ebf57b8d19499b5d8c0d0c9d0512f0d1866
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872437"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156408"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>适用于终结点计划 1 的 Microsoft Defender 概述
 
@@ -77,7 +77,7 @@ Defender for Endpoint Plan 1 包括以下功能：
 | 文件/设备 | 操作 | 说明 |
 |:---|:---|:---|
 | 设备 | 运行防病毒扫描 | 启动防病毒扫描。 如果在设备上检测到任何威胁，则防病毒扫描期间通常会解决这些威胁。 |
-| 设备 | 隔离设备 | 断开设备与组织的网络的连接，同时保留与 Defender for Endpoint 的连接。 此操作使你能够监视设备并根据需要执行进一步操作。 |
+| Device | 隔离设备 | 断开设备与组织的网络的连接，同时保留与 Defender for Endpoint 的连接。 此操作使你能够监视设备并根据需要执行进一步操作。 |
 | 文件 | 停止和隔离 |停止进程运行并隔离关联的文件。 |
 | 文件 | 添加用于阻止或允许文件的指示器 | 阻止指示器阻止在设备上读取、写入或执行可移植可执行文件。 <p>允许指示器可防止阻止或修正文件。 |
 
@@ -94,7 +94,7 @@ Defender for Endpoint Plan 1 包括以下功能：
 - [勒索软件缓解](#ransomware-mitigation)
 - [设备控制](#device-control)
 - [Web 保护功能](#web-protection)
-- [网络保护功能](#web-protection)
+- [网络保护](#web-protection)
 - [网络防火墙](#network-firewall)
 - [应用程序控制](#application-control)
 
@@ -118,7 +118,7 @@ Defender for Endpoint Plan 1 包括以下功能：
 
 若要了解更多信息，请参阅使用受控 [文件夹访问权限保护重要文件夹](controlled-folders.md)。
 
-### <a name="device-control"></a>设备控件
+### <a name="device-control"></a>设备控制
 
 有时，对组织设备的威胁以可移动驱动器（如 USB 驱动器）上的文件的形式出现。 Defender for Endpoint 包括可帮助防止未经授权的外围设备威胁威胁设备的功能。 你可以将 Defender for Endpoint 配置为阻止或允许可移动设备上可移动设备和文件。 
 
@@ -151,9 +151,9 @@ Defender for Endpoint Plan 1 包括以下功能：
 
 ### <a name="application-control"></a>应用程序控制
 
-应用程序控件通过仅在系统核心和内核Windows中运行受信任的应用程序和代码来保护 (终结点) 。 安全团队可以定义考虑应用程序属性的应用程序控制规则，例如其代码签名证书、信誉、启动过程等。 应用程序控件在 Windows 10或更高版本中可用。
+应用程序控件通过仅在系统核心Windows内核和内核应用中运行受信任的应用程序和代码来保护 (终结点) 。 安全团队可以定义考虑应用程序属性的应用程序控制规则，例如其代码签名证书、信誉、启动过程等。 应用程序控件在 Windows 10或更高版本中可用。
 
-若要了解更多信息，请参阅[应用程序控件Windows。](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+若要了解更多信息，请参阅应用程序[控件Windows。](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 
 ## <a name="centralized-management"></a>集中管理
 
@@ -169,7 +169,7 @@ Defender for Endpoint Plan 1 包含 Microsoft 365 Defender 门户，使安全团
 
 ### <a name="reporting"></a>报表
 
-通过Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 可轻松访问有关检测到的威胁和用于应对这些威胁的操作的信息。 
+通过Microsoft 365 Defender门户 () 可轻松访问有关检测到的威胁和操作的信息 [https://security.microsoft.com](https://security.microsoft.com) ，以应对这些威胁。 
 
 - **主页** 包含卡片，可一目了然地显示哪些用户或设备处于风险中、检测到的威胁数量以及创建哪些警报/事件。
 - **"事件&** 警报"部分列出了因触发的警报而创建的任何事件。 当跨设备检测到威胁时，将生成警报和事件。
@@ -188,6 +188,8 @@ Defender for Endpoint Plan 1 包含 Microsoft 365 Defender 门户，使安全团
 
 大多数组织使用各种设备和操作系统。 目前，Defender for Endpoint Plan 1 支持以下操作系统：
 
+- Windows 7 (ESU) 
+- Windows 8.1
 - Windows 10版本 1709 或更高版本
 - macOS：11.5 (Big Sur) 、10.15.7 (加泰罗尼亚语) 或 10.14.6 (Mojave) 
 - iOS

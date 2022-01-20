@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ba5bc05010aaf2ee14f16f7b57f140f063dcc50b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6a2c29d27814b4ed8c199b7a4db1ee10ce37b86c
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941128"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156216"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -48,7 +48,7 @@ ms.locfileid: "61941128"
 此外，对于 Ansible 部署，您需要熟悉 Ansible 管理任务，配置了 Ansible，并知道如何部署操作手册和任务。 Ansible 有很多方法可以完成同一任务。 这些说明假定受支持的 Ansible 模块（例如 *，贴* 切和未 *存档* ）的可用性，以帮助部署程序包。 您的组织可能使用不同的工作流。 有关详细信息，请参阅 [Ansible](https://docs.ansible.com/) 文档。
 
 - ansible 需要安装在至少一台计算机 (Ansible 调用此控件节点) 。
-- 必须在控制节点和将安装 Defender for Endpoint 的 (设备之间为管理员帐户配置 SSH) ，建议使用公钥身份验证进行配置。
+- 必须在控制节点和将在其上安装 Defender for Endpoint 的所有托管节点 (设备之间为管理员帐户配置 SSH) ，建议使用公钥身份验证配置 SSH。
 - 必须在所有托管节点上安装以下软件：
   - 一个
   - python-apt
@@ -220,7 +220,7 @@ ms.locfileid: "61941128"
               dnf:
                 name: mdatp
                 state: latest
-                enablerepo: packages-microsoft-com-prod-[channel]
+                enablerepo: packages-microsoft-[channel]
         ```
 
         ```bash
@@ -271,7 +271,7 @@ ms.locfileid: "61941128"
 
 将操作系统升级到新的主要版本时，必须先卸载 Linux 上的 Defender for Endpoint，安装升级，最后在设备上重新配置 Linux 上的 Defender for Endpoint。
 
-## <a name="references"></a>参考
+## <a name="references"></a>References
 
 - [添加或删除 YUM 存储库](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_repository_module.html)
 

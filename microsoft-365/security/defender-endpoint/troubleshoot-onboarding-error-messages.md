@@ -14,18 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 6a587c0de131cd92ee3126688702763bac8dd340
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cbf2049841f2987eb71e9c716de133872c1e6a81
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165590"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156540"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>解决订阅和门户访问问题
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
+
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -38,7 +39,7 @@ ms.locfileid: "61165590"
 
 ## <a name="no-subscriptions-found"></a>未找到订阅
 
-如果在访问Microsoft 365 Defender收到"未找到订阅"消息，则意味着用于登录Azure Active Directory (Azure AD) 登录门户的 Azure Active Directory (Azure AD) 没有 Microsoft Defender for Endpoint 许可证。
+如果在访问Microsoft 365 Defender收到"未找到订阅"消息，则意味着Azure Active Directory (Azure AD) 登录门户所使用的帐户没有 Microsoft Defender for Endpoint 许可证。
 
 可能的原因：
 
@@ -84,11 +85,11 @@ ms.locfileid: "61165590"
 - `*.blob.core.windows.net`
 - `crl.microsoft.com`
 - `https://*.microsoftonline-p.com`
-- `https://*.securitycenter.windows.com`
-- `https://automatediracs-eus-prd.securitycenter.windows.com`
+- `https://*.security.microsoft.com`
+- `https://automatediracs-eus-prd.security.microsoft.com`
 - `https://login.microsoftonline.com`
 - `https://login.windows.net`
 - `https://onboardingpackagescusprd.blob.core.windows.net`
 - `https://secure.aadcdn.microsoftonline-p.com`
-- `https://securitycenter.windows.com`
+- `https://security.microsoft.com`
 - `https://static2.sharepointonline.com`

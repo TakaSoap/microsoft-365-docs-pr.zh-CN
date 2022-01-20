@@ -1,6 +1,6 @@
 ---
 title: 使用篡改保护保护安全设置
-ms.reviewer: pahuijbr, hayhov, oogunrinde
+ms.reviewer: mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: 使用防篡改保护防止恶意应用更改重要安全设置。
 keywords: 恶意软件， defender， 防病毒， 防篡改保护
@@ -17,21 +17,21 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 01/14/2022
+ms.date: 01/18/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: eeb1111ae43ca00b7beb9350e72e3d9f62d9dd3c
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: 6cab8e776bea3d9317794df9f96e44610948a0a1
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049259"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156182"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>使用篡改保护保护安全设置
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-防篡改保护可用于运行以下版本或版本Windows：
+防篡改保护适用于运行以下版本之一的Windows：
 
 - Windows 10
 - Windows 11
@@ -44,7 +44,7 @@ ms.locfileid: "62049259"
 - Windows Server 2012 R2
 
 > [!NOTE]
-> R2 Windows Server 2012篡改保护适用于使用新式统一解决方案包载入的设备。 有关详细信息，请参阅适用于[Windows Server 2012 R2 和 2016 Preview 的新式统一解决方案中的新功能](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)。
+> R2 Windows Server 2012篡改保护适用于使用新式统一解决方案包载入的设备。 有关详细信息，请参阅适用于[Windows Server 2012 R2 和 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)Preview 的新式统一解决方案中的新功能。
 
 ## <a name="overview"></a>概述
 
@@ -76,8 +76,8 @@ ms.locfileid: "62049259"
 
 |要执行此任务...|请参阅本部分...|
 |---|---|
-|管理租户中的篡改保护 <p> 使用Microsoft 365 Defender打开或关闭防篡改保护|[使用管理程序管理组织的防篡改Microsoft 365 Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal)|
-|在组织中微调防篡改保护设置 <p> 使用 Intune (Microsoft Endpoint Manager) 打开或关闭防篡改保护。 您可以使用此方法为部分或所有用户配置篡改保护。|[使用 Intune 管理组织的篡改保护](#manage-tamper-protection-for-your-organization-using-intune)|
+|管理租户中的篡改保护 <p> 使用 Microsoft 365 Defender门户打开或关闭防篡改保护|[使用管理程序管理组织的防篡改Microsoft 365 Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal)|
+|在组织中微调防篡改保护设置 <p> 使用 Intune (Microsoft Endpoint Manager) 打开或关闭防篡改保护。 您可以使用此方法为部分或所有用户配置篡改保护。|[使用管理程序管理组织的防篡改Microsoft Endpoint Manager](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager)|
 |使用 Configuration Manager (组织) 或关闭防篡改保护|[使用 Configuration Manager 版本 2006 的租户附加管理组织的防篡改保护](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)|
 |打开或关闭 (设备的防篡改) 或关闭防篡改保护|[在单个设备上管理篡改保护](#manage-tamper-protection-on-an-individual-device)|
 |查看有关设备上篡改尝试的详细信息|[查看有关篡改尝试的信息](#view-information-about-tampering-attempts)|
@@ -100,15 +100,15 @@ ms.locfileid: "62049259"
 
 可以使用 Microsoft 365 Defender 门户为租户打开或关闭防篡改 [https://security.microsoft.com](https://security.microsoft.com) () 。 以下是需要记住的几点：
 
-- 目前，对于新部署，Microsoft 365 Defender门户中管理篡改保护的选项处于打开状态。 对于现有部署，可选择性地使用防篡改保护。 若要选择加入，在Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>**，设置** \> **终结点** \> **高级功能** \> **篡改保护"。**
+- 目前，对于新部署，Microsoft 365 Defender门户中管理篡改保护的选项处于打开状态。 对于现有部署，可选择性地使用防篡改保护。 To opt in， in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal，</a>choose **设置** \> **Endpoints** \> **Advanced features** Tamper \> **protection**.
 
-- 当你使用 Microsoft 365 Defender 门户管理篡改保护时，你不需要使用 Intune 或租户附加方法。
+- 使用 Microsoft 365 Defender 门户管理篡改保护时，不需要使用 Intune 或租户附加方法。
 
-- 在 Microsoft 365 Defender 门户中管理防篡改保护时，该设置将应用于租户范围，从而影响运行 Windows 10、Windows 10 企业版 多会话、Windows 11、Windows 11 Enterprise 多会话、Windows Server 2012 R2、Windows Server 2016、Windows Server 2019 或 Windows Server 2022。 若要微调防篡改 (例如某些设备对防篡改保护，但其他设备) ，请使用[Intune](#manage-tamper-protection-for-your-organization-using-intune)或具有租户附加的[Configuration Manager。](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
+- 在 Microsoft 365 Defender 门户中管理防篡改保护时，该设置将应用于租户范围，从而影响运行 Windows 10、Windows 10 企业版 多会话、Windows 11、Windows 11 Enterprise 多会话、Windows Server 2012 R2、Windows Server 2016、Windows Server 2019 或 Windows Server 2022。 若要微调防篡改 (例如，在某些设备上对防篡改保护，但对另一些设备) ，请使用带租户附加的 Microsoft Endpoint Manager 或[](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager) [Configuration Manager。](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
 
 - 如果你有混合环境，则 Intune 中配置的防篡改保护设置优先于在 Microsoft 365 Defender 门户中配置的设置。
 
-### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-365-defender-portal"></a>管理网站门户中的防篡改Microsoft 365 Defender要求
+### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-365-defender-portal"></a>在门户中管理防篡改Microsoft 365 Defender的要求
 
 - 必须分配有 [适当的](/microsoft-365/security/defender-endpoint/assign-portal-access) 权限，例如全局管理员、安全管理员或安全操作。
 
@@ -118,23 +118,23 @@ ms.locfileid: "62049259"
   - Windows 11
   - Windows 10 企业版多会话
   - Windows 11 Enterprise多会话 
-  - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+  - Windows Server 2019
   - Windows Server 2022
-  - Windows Server 版本[1803](/windows/release-health/status-windows-10-1803)或更高版本
-  - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
-  - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
+  - Windows Server 版本 1803 或更高版本
+  - Windows Server 2016
+  - Windows Server 2012 R2
 
 有关版本详细信息，请参阅Windows 10[发布信息](/windows/release-health/release-information)。
 
 - 你的设备必须[载入到适用于终结点的 Microsoft Defender。](/microsoft-365/security/defender-endpoint/onboarding)
 
-- 你的设备必须使用反恶意软件平台版本 4.18.2010.7 (或) 及) 或 (版反恶意软件引擎版本 1.1.17600.5。  ([管理Microsoft Defender 防病毒更新并应用比较基准](manage-updates-baselines-microsoft-defender-antivirus.md).) 
+- 你的设备必须使用反恶意软件平台版本 (或) 或 (`4.18.2010.7` `1.1.17600.5` 或) 。  ([管理Microsoft Defender 防病毒更新和应用比较](manage-updates-baselines-microsoft-defender-antivirus.md)基准 .) 
 
 - [云提供的保护](enable-cloud-protection-microsoft-defender-antivirus.md) 必须打开。
 
 ### <a name="turn-tamper-protection-on-or-off-in-the-microsoft-365-defender-portal"></a>打开或关闭 (门户) 篡改Microsoft 365 Defender保护
 
-:::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="在门户中打开防篡改Microsoft 365 Defender。":::
+:::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="在门户中打开防篡改Microsoft 365 Defender保护。":::
 
 1. 转到"Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
 
@@ -142,72 +142,56 @@ ms.locfileid: "62049259"
 
 3. 转到" **常规** \> **高级功能"，** 然后打开防篡改保护。
 
-## <a name="manage-tamper-protection-for-your-organization-using-intune"></a>使用 Intune 管理组织的篡改保护
+## <a name="manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager"></a>使用管理程序管理组织的防篡改Microsoft Endpoint Manager
 
-如果你是组织安全团队的一员，并且订阅包含[Intune，](/intune/fundamentals/what-is-intune)可以在 (上或) 上为组织在 Microsoft Endpoint Manager 管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 上打开防篡改保护。 当你想要微调防篡改保护设置时，请使用 Intune。 例如，如果你希望在某些设备上（而不是所有设备）启用篡改保护，请使用 Intune。
+如果你的组织使用 Microsoft Endpoint Manager (MEM) 可以在 (管理中心) 为组织打开或) Microsoft Endpoint Manager防篡改 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 。 当你想要微调防篡改保护设置时，请使用 Intune。 例如，如果你希望在某些设备上（而不是所有设备）启用篡改保护，请使用 Intune。
 
-### <a name="requirements-for-managing-tamper-protection-in-intune"></a>在 Intune 中管理防篡改保护的要求
+### <a name="requirements-for-managing-tamper-protection-in-endpoint-manager"></a>管理防篡改保护Endpoint Manager
 
 - 你的设备必须[载入到适用于终结点的 Microsoft Defender。](/microsoft-365/security/defender-endpoint/onboarding)
 
 - 必须分配有 [适当的](/microsoft-365/security/defender-endpoint/assign-portal-access) 权限，例如全局管理员、安全管理员或安全操作。
 
-- 你的组织使用 [Intune 管理设备](/intune/fundamentals/what-is-device-management)。  ([Intune 许可证](/intune/fundamentals/licenses)是必需的;Intune 包含在 Microsoft 365 E5/E3、企业移动性 + 安全性 E5/E3、Microsoft 365 商业高级版、Microsoft 365 F1/F3、Microsoft 365 政府版 G5/G3 和 Intune for Education.) 
+- 你的组织[Microsoft Endpoint Manager管理设备](/mem/endpoint-manager-getting-started)。  (Microsoft Endpoint Manager (MEM) 许可证是必需的;MEM 包含在 Microsoft 365 E3/E5、企业移动性 + 安全性 E3/E5、Microsoft 365 商业高级版、Microsoft 365 F1/F3、Microsoft 365 政府版 G3/G5 以及相应的教育许可证中。) 
 
-- 你的Windows设备必须Windows 11或Windows 10 OS [1709、1803、1809](/windows/release-health/status-windows-10-1709)或更高版本。 [](/windows/release-health/status-windows-10-1803) [](/windows/release-health/status-windows-10-1809-and-windows-server-2019)  (有关版本详细信息，请参阅 Windows 10 [release information](/windows/release-health/release-information).) 
+- 你的Windows设备必须运行 Windows 11 或 Windows 10 [1709、1803、1809](/windows/release-health/status-windows-10-1709)或[](/windows/release-health/status-windows-10-1809-and-windows-server-2019)更高版本。 [](/windows/release-health/status-windows-10-1803)  (有关版本详细信息，请参阅 Windows 10 release [information](/windows/release-health/release-information).) 
 
-- 必须使用安全Windows，安全智能已更新到版本[](https://www.microsoft.com/wdsi/definitions)1.287.60.0 (或) 。
+- 必须使用安全Windows，安全智能更新到版本[](https://www.microsoft.com/wdsi/definitions)1.287.60.0 (或) 。
 
-- 你的设备必须使用反恶意软件平台版本 4.18.1906.3 (或) 以及反恶意软件引擎版本 1.1.15500.X (或) 以上版本。  ([管理Microsoft Defender 防病毒更新和应用比较](manage-updates-baselines-microsoft-defender-antivirus.md)基准 .) 
+- 你的设备必须使用反恶意软件平台版本 4.18.1906.3 (或) 及 (或) 以上版本的反 `1.1.15500.X` 恶意软件引擎。  ([管理Microsoft Defender 防病毒更新和应用比较](manage-updates-baselines-microsoft-defender-antivirus.md)基准 .) 
 
-### <a name="turn-tamper-protection-on-or-off-in-intune"></a>在 Intune 中打开 (或) 篡改保护
+### <a name="turn-tamper-protection-on-or-off-in-microsoft-endpoint-manager"></a>打开或关闭防 (或) 篡改Microsoft Endpoint Manager
 
-![使用 Intune 打开防篡改保护。](images/turnontamperprotect-MEM.png)
+![打开防篡改保护Endpoint Manager。](images/turnontamperprotectinmem.png)
 
-1. 转到 [Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com) 并登录。
+1. In the [Microsoft Endpoint Manager admin center，](https://go.microsoft.com/fwlink/?linkid=2109431)go to **Endpoint security** \> **Antivirus**， and then choose **+ Create Policy**.
 
-2. 选择 **"设备** \> **配置文件"。**
+   - 在"**平台"** 列表中，选择 **"Windows 10和更高版本"。**
+   - 在"**配置文件"** 列表中，选择 **"Windows 安全中心体验"。**
 
-3. 创建包含以下设置的配置文件：
+2. 创建包含以下设置的配置文件：
 
-    - **平台：Windows 10及更高版本**
-    - **配置文件类型：终结点保护**
-    - **类别：Microsoft 365 Defender**
-    - **防篡改保护：已启用**
+    - **启用篡改保护以防止 Microsoft Defender 被禁用：启用**
 
-4. 将配置文件分配给一个或多个组。
+3. 将配置文件分配给一个或多个组。
+ 
+### <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>使用 Configuration Manager 版本 2006 管理组织的篡改保护
 
-### <a name="are-you-using-windows-server-2016-or-windows-version-1709-1803-or-1809"></a>是使用Windows Server 2016 1709 Windows 1803 还是 1809 版本？
-
-如果你使用的是 Windows Server 2016，Windows 10版本 1709、1803 或[1809，](/windows/release-health/status-windows-10-1809-and-windows-server-2019)你将看不到 Windows 安全中心 保护。  相反，可以使用 PowerShell 确定是否已启用防篡改保护。
-
-在Windows Server 2016时，设置应用在启用防篡改保护时不会准确反映实时保护的状态。
-
-#### <a name="use-powershell-to-determine-whether-tamper-protection-and-real-time-protection-are-turned-on"></a>使用 PowerShell 确定是否打开防篡改保护和实时保护
-
-1. 打开Windows PowerShell应用。
-
-2. 使用 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) PowerShell cmdlet。
-
-3. 在结果列表中，查找 或 `IsTamperProtected` `RealTimeProtectionEnabled` 。  (值为 *true* 表示已启用防篡改) 
-
-## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>使用 Configuration Manager 版本 2006 管理组织的篡改保护
-
-如果你使用的是 Configuration [Manager 版本 2006，](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)可以在 Windows 10、Windows 10 企业版、Windows 11、Windows 11 Enterprise多会话中管理防篡改保护设置。Windows Server 2012租户附加 Windows Server 2016，Windows R2、Windows Server 2019 和 Windows Server 2022。  租户附加使你能够将仅本地 Configuration Manager 设备同步到 Microsoft Endpoint Manager 管理中心，然后将终结点安全配置策略&设备。
+如果你使用的是 Configuration [Manager 版本 2006，](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)可以在 Windows 10、Windows 10 企业版 多会话、Windows 11、Windows 11 Enterprise上管理防篡改保护设置，Windows Server 2012租户附加 Windows Server 2016，Windows R2、Windows Server 2019 和 Windows Server 2022。  租户附加使你能够将仅本地 Configuration Manager 设备同步到 Microsoft Endpoint Manager 管理中心，然后将终结点安全配置策略&设备。
 
 > [!NOTE]
-> 该过程可用于将篡改保护扩展到运行 Windows 10、Windows 10 企业版 多会话、Windows 11、Windows 11 Enterprise 多会话、Windows Server 2019 和 Windows Server 2022 的设备。 请务必查看此过程中提到的资源的先决条件和其他信息。
+> 此过程可用于将篡改保护扩展到运行 Windows 10、Windows 10 企业版 多会话、Windows 11、Windows 11 Enterprise 多会话、Windows Server 2019 和 Windows Server 2022 的设备。 请务必查看此过程中提到的资源的先决条件和其他信息。
 
 1. 设置租户附加。 若要了解更多信息，请参阅 [入门：从管理中心创建和部署终结点安全策略](/mem/configmgr/tenant-attach/endpoint-security-get-started)。
 
 2. In the [Microsoft Endpoint Manager admin center，](https://go.microsoft.com/fwlink/?linkid=2109431)go to **Endpoint security** \> **Antivirus**， and then choose **+ Create Policy**.
 
-   - 在"**平台"** 列表中，**选择"Windows 10、Windows 11"和"Windows Server (ConfigMgr) "。**
+   - 在"**平台"** 列表中，选择 **"Windows 10、Windows 11"和"Windows Server (ConfigMgr) "。**
    - 在配置文件 **列表中**，选择Windows 安全中心 **预览 (体验) 。**
 
 3. 将策略部署到设备集合。
 
-### <a name="need-help-with-this-method"></a>需要有关此方法的帮助？
+#### <a name="need-help-with-this-method"></a>需要有关此方法的帮助？
 
 参阅以下资源：
 
@@ -219,11 +203,11 @@ ms.locfileid: "62049259"
 > [!NOTE]
 > 篡改保护会阻止尝试Microsoft Defender 防病毒注册表修改设置。
 >
-> 若要帮助确保防篡改不会干扰修改这些设置的非 Microsoft 安全产品或企业安装脚本，请转到 **Windows 安全中心，** 将安全智能更新到版本 1.287.60.0 或更高版本。   (安全 [智能更新](https://www.microsoft.com/wdsi/definitions).) 
+> 若要帮助确保防篡改保护不会干扰修改这些设置的非 Microsoft 安全产品或企业安装脚本，请转到 **Windows 安全中心，** 将安全智能更新到版本 1.287.60.0 或更高版本。   (安全 [智能更新](https://www.microsoft.com/wdsi/definitions).) 
 >
 > 进行此更新后，防篡改保护将继续保护注册表设置，并且日志会尝试修改它们而不会返回错误。
 
-如果你是家庭用户，或者不受安全团队管理的设置，可以使用 Windows 安全中心应用管理篡改保护。 必须在设备上具有相应的管理员权限才能更改安全设置，例如防篡改保护。
+如果你是家庭用户，或者不受安全团队管理的设置，可以使用 Windows 安全中心 应用管理篡改保护。 必须在设备上具有相应的管理员权限才能更改安全设置，例如防篡改保护。
 
 下面是在应用应用中Windows 安全中心内容：
 
@@ -235,6 +219,20 @@ ms.locfileid: "62049259"
 
 3. 将 **"防篡改保护****"设置为"开**"或"**关"。**
 
+## <a name="are-you-using-windows-server-2016-or-windows-version-1709-1803-or-1809"></a>是否使用的是Windows Server 2016 1709、1803 或 1809 Windows版本？
+
+如果你使用的是 Windows Server 2016，Windows 10版本 1709、1803 或[1809，](/windows/release-health/status-windows-10-1809-and-windows-server-2019)则将不会在 Windows 安全中心 应用中看到防篡改保护。 相反，可以使用 PowerShell 确定是否已启用防篡改保护。
+
+在Windows Server 2016时设置篡改保护时，设置应用不会准确反映实时保护的状态。
+
+#### <a name="use-powershell-to-determine-whether-tamper-protection-and-real-time-protection-are-turned-on"></a>使用 PowerShell 确定是否打开防篡改保护和实时保护
+
+1. 打开Windows PowerShell应用。
+
+2. 使用 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) PowerShell cmdlet。
+
+3. 在结果列表中，查找 或 `IsTamperProtected` `RealTimeProtectionEnabled` 。  (值为 *true* 表示已启用防篡改) 
+
 ## <a name="view-information-about-tampering-attempts"></a>查看有关篡改尝试的信息
 
 篡改尝试通常指示更大的网络攻击。 不良参与者尝试更改安全设置，作为保留和保持未检测的一种方式。 如果你是组织安全团队的成员，可以查看有关此类尝试的信息，然后采取适当的措施缓解威胁。
@@ -243,21 +241,21 @@ ms.locfileid: "62049259"
 
 ![Microsoft 365 Defender。](images/tamperattemptalert.png)
 
-使用 Microsoft Defender [](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) [for](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) Endpoint 中的终结点检测和响应以及高级搜寻功能，安全运营团队可以调查和处理此类尝试。
+使用 Microsoft Defender [](advanced-hunting-overview.md) [for](overview-endpoint-detection-response.md) Endpoint 中的终结点检测和响应以及高级搜寻功能，安全运营团队可以调查和处理此类尝试。
 
 ## <a name="review-your-security-recommendations"></a>查看安全建议
 
-防篡改保护与 [威胁&漏洞](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) 管理功能集成在一起。 [安全建议](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) 包括确保打开防篡改保护。 例如，可以搜索防 *篡改*。 在结果中，可以选择" **打开防** 篡改保护"了解更多信息并打开它。
+篡改保护与威胁& [漏洞管理功能](next-gen-threat-and-vuln-mgt.md) 集成。 [安全建议](tvm-security-recommendation.md) 包括确保打开防篡改保护。 例如，可以搜索防 *篡改*。 在结果中，可以选择" **打开防** 篡改保护"了解更多信息并打开它。
 
 ![打开防篡改保护。](images/tamperprotectsecurityrecos.png)
 
-若要了解有关威胁和漏洞&，请参阅威胁&[漏洞管理Microsoft 365 Defender。](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center)
+若要了解有关威胁和漏洞&，请参阅仪表板见解 -[危险和漏洞管理。](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
-### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>我可以在哪些版本的Windows配置篡改保护？
+### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>我可以在哪些版本的Windows配置防篡改保护？
 
-Windows 10操作系统 1709、1803、1809 或更高版本以及 Microsoft [Defender for Endpoint。](/microsoft-365/security/defender-endpoint) [](/windows/release-health/status-windows-10-1709) [](/windows/release-health/status-windows-10-1803) [](/windows/release-health/status-windows-10-1809-and-windows-server-2019)
+Windows 10 OS 1709、1803、1809 或更高版本以及[Microsoft Defender for Endpoint。](/microsoft-365/security/defender-endpoint) [](/windows/release-health/status-windows-10-1709) [](/windows/release-health/status-windows-10-1803) [](/windows/release-health/status-windows-10-1809-and-windows-server-2019)
   
 Windows 10 企业版多会话
 
@@ -265,15 +263,15 @@ Windows 11
 
 Windows 11 Enterprise多会话
   
-如果使用的是带租户附加的 Configuration Manager 版本 2006，防篡改保护可以扩展到 Windows Server 2012 R2、Windows Server 2016、Windows Server 2019 和 Windows Server 2022。 请参阅 [租户附加：从 ](/mem/configmgr/tenant-attach/deploy-antivirus-policy)管理中心创建和部署终结点安全防病毒策略 (预览) 。
+如果使用的是具有租户附加的 Configuration Manager 版本 2006，则防篡改保护可以扩展到 Windows Server 2012 R2、Windows Server 2016、Windows Server 2019 和 Windows Server 2022。 请参阅 [租户附加：从 ](/mem/configmgr/tenant-attach/deploy-antivirus-policy)管理中心创建和部署终结点安全防病毒策略 (预览) 。
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>防篡改保护是否会影响非 Microsoft 防病毒注册在 Windows 安全中心 应用中？
 
-不正确。 非 Microsoft 防病毒产品/服务将继续注册到 Windows 安全中心 应用程序。
+不正确。 非 Microsoft 防病毒产品/服务将继续向 Windows 安全中心注册。
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>如果设备Microsoft Defender 防病毒处于活动状态，会发生什么情况？
 
-已载入 Microsoft Defender for Endpoint 的设备将Microsoft Defender 防病毒被动模式下运行。 在这些情况下，防篡改保护将继续保护服务及其功能。
+已载入 Microsoft Defender for Endpoint 的设备将Microsoft Defender 防病毒被动模式运行。 在这些情况下，防篡改保护将继续保护服务及其功能。
 
 ### <a name="how-do-i-turn-tamper-protection-on-or-off"></a>如何打开或关闭防篡改保护？
 
@@ -281,24 +279,23 @@ Windows 11 Enterprise多会话
 
 如果你是使用 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)的组织，你应该能够在 Intune 中管理篡改保护，类似于管理其他终结点保护功能的方式。 请参阅本文的以下部分：
 
-- [使用 Intune 管理篡改保护](#manage-tamper-protection-for-your-organization-using-intune)
-- [使用 Configuration Manager 版本 2006 管理篡改保护](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
-- [使用 Microsoft 365 Defender 门户管理防篡改保护](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal)
+- [使用工具管理防Microsoft Endpoint Manager](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager)
+- [使用管理门户管理Microsoft 365 Defender保护](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal)
 
-### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>在 Intune 中配置篡改保护如何影响我Microsoft Defender 防病毒组策略？
+### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>在 Intune 中配置防篡改保护将如何影响我Microsoft Defender 防病毒组策略？
 
 组策略不适用于篡改保护。 当防篡改Microsoft Defender 防病毒对设置所做的更改将被忽略。
 
-### <a name="if-we-use-microsoft-intune-to-configure-tamper-protection-does-it-apply-only-to-the-entire-organization"></a>如果我们使用Microsoft Intune配置篡改保护，它是否仅适用于整个组织？
+### <a name="if-we-use-microsoft-intune-to-configure-tamper-protection-does-it-apply-only-to-the-entire-organization"></a>如果使用 Microsoft Intune配置篡改保护，它是否仅适用于整个组织？
 
 你可以灵活地使用 Intune 配置防篡改保护。 你可以面向整个组织，或选择特定的设备和用户组。
 
 ### <a name="can-i-configure-tamper-protection-with-microsoft-endpoint-configuration-manager"></a>我能否使用 Microsoft Endpoint Configuration Manager 配置防篡改保护？
 
-如果你使用的是租户附加，可以使用Microsoft Endpoint Configuration Manager。 参阅以下资源：
+如果使用租户附加，可以使用租户Microsoft Endpoint Configuration Manager。 参阅以下资源：
 
 - [使用 Configuration Manager 版本 2006 管理组织的篡改保护](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
-- [Tech Community博客：宣布为 Configuration Manager 租户附加客户端提供防篡改保护](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
+- [Tech Community博客：宣布对 Configuration Manager 租户附加客户端进行篡改保护](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
 ### <a name="i-have-the-windows-e3-enrollment-can-i-use-configuring-tamper-protection-in-intune"></a>我已注册Windows E3。 能否在 Intune 中配置篡改保护？
 
@@ -318,7 +315,7 @@ Windows 11 Enterprise多会话
 
 ### <a name="if-the-status-of-tamper-protection-changes-are-alerts-shown-in-the-microsoft-365-defender-portal"></a>如果篡改保护的状态发生更改，警报是否显示在Microsoft 365 Defender门户中？
 
-是的。 警报显示在警报 [https://security.microsoft.com](https://security.microsoft.com) **下**。
+是。 警报显示在警报 [https://security.microsoft.com](https://security.microsoft.com) **下**。
 
 安全运营团队还可使用搜寻查询，如以下示例：
 

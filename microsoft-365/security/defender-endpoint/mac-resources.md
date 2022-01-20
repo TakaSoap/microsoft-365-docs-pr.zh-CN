@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e3656d864b5fe240bea7375999ad9501adf3b2a1
-ms.sourcegitcommit: c2e8a4febb019b398d549a72c489f012cfbc0b32
+ms.openlocfilehash: ab1cf8a93876c5669d561161874a1c34914b7fa3
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61265192"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156348"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的资源
 
@@ -51,7 +51,7 @@ ms.locfileid: "61265192"
 
 2. 重现问题
 
-3. 运行 `sudo mdatp diagnostic create` 以备份适用于终结点的 Microsoft Defender 日志。 这些文件将存储在一个.zip中。 此命令还会在操作成功后输出备份的文件路径。
+3. 运行 `sudo mdatp diagnostic create` 以备份适用于终结点的 Microsoft Defender 日志。 这些文件将存储在存档.zip中。 此命令还会在操作成功后输出备份的文件路径。
 
    > [!TIP]
    > 默认情况下，诊断日志将保存到 `/Library/Application Support/Microsoft/Defender/wdavdiag/` 。 若要更改保存诊断日志的目录，请传递给以下命令， `--path [directory]` `[directory]` 将 替换为所需的目录。
@@ -86,7 +86,15 @@ ms.locfileid: "61265192"
 
 ### <a name="interactive-uninstallation"></a>交互式卸载
 
-- 打开 **Finder > Applications**。 右键单击 **适用于终结点的 Microsoft Defender >移动到回收站**。
+- 打开 **Finder > Applications**。 右键单击 **"适用于终结点的 Microsoft Defender >移动到回收站"。**
+
+### <a name="supported-output-types"></a>支持的输出类型
+
+支持表和 JSON 格式输出类型。 对于每个命令，都有一个默认输出行为。 可以使用以下命令修改首选输出格式的输出：
+
+`-output json`
+
+`-output table`
 
 ### <a name="from-the-command-line"></a>从命令行
 
@@ -111,7 +119,7 @@ ms.locfileid: "61265192"
 |配置|打开/关闭防病毒被动模式|`mdatp config passive-mode --value [enabled/disabled]`|
 |配置|配置按需扫描的并行度|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |配置|在安全智能更新后打开/关闭扫描|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
-|配置|仅按需扫描 (/关闭存档扫描) |`mdatp config scan-archives --value [enabled/disabled]`|
+|配置|仅按需扫描 (/关闭存档) |`mdatp config scan-archives --value [enabled/disabled]`|
 |诊断|更改日志级别|`mdatp log level set --level [error/warning/info/verbose]`|
 |诊断|生成诊断日志|`mdatp diagnostic create --path [directory]`|
 |运行状况|检查产品的运行状况|`mdatp health`|
@@ -161,4 +169,4 @@ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>适用于终结点的 Microsoft Defender 门户信息
 
-[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的新功能现已到达，位于 Microsoft Defender for Endpoint 博客上，提供有关 Microsoft Defender for Endpoint 安全中心中预期内容的详细指南。
+[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的新功能现已在 Microsoft Defender for Endpoint 博客上提供在适用于终结点安全中心的 Microsoft Defender 中预期内容的详细指导。

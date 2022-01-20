@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3976ff16d303db93d2ae7929afe1244f8ab1dda5
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 9ef59cc47addce2a8f2171038f5894071549a40b
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121813"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156480"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>管理事件Microsoft 365 Defender
 
@@ -38,8 +38,7 @@ ms.locfileid: "61121813"
 
 事件管理对于确保包含和解决威胁至关重要。
 
-用户动态动态 快速启动 Microsoft 365 Defender 门户&事件>**事件** 事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
-
+可以在快速启动 Microsoft 365 Defender门户&事件>事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -80,7 +79,7 @@ Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影�
 
 ## <a name="assign-an-incident"></a>分配事件
 
-如果尚未分配事件，可以选择"分配给"框，并指定用户帐户 (预览) 。 Te re-assign an incident， remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. 分配事件的所有权会为与其关联的所有警报分配相同的所有权。
+如果尚未分配事件，可以选择"分配到"框并指定用户帐户。  若要重新分配事件，请删除当前分配帐户，选择帐户名称旁边的"x"，然后选择" **分配到"** 框。 分配事件的所有权会为与其关联的所有警报分配相同的所有权。
 
 通过筛选事件队列，您可以获取分配给您的事件列表。 
 

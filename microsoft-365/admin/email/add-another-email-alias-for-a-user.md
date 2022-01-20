@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '了解如何将多个电子邮件地址（称为电子邮件别名）与企业Microsoft 365相关联。 '
-ms.openlocfilehash: 005b65bc8f5e34dcddec41e0d197b813a53a1c33
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 16296c9ba748ec76fef52be3ae13bba9ff8552b1
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165204"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62155964"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>为用户添加另一个电子邮件别名
   
@@ -36,7 +36,7 @@ ms.locfileid: "60165204"
   
 用户邮箱中Microsoft 365电子邮件地址通常是用户创建帐户时分配的电子邮件地址。 当用户向其他人发送电子邮件时，其主要电子邮件地址通常在电子邮件应用的" *发件人*  "字段中显示。 他们还可以将多个电子邮件地址与其企业Microsoft 365关联。 其他地址称为别名。 
   
-例如，假设 Jenna 的电子邮件地址 jenna@contosoco.com，但是她还想要在 jen@contosoco.com 接收电子邮件，因为一些人用该姓名引用她。 你可以为她创建别名，以便两个电子邮件地址都转到 Jenna 的收件箱。
+例如，假设 Jenna 的电子邮件地址 jenna@contosoco.com，但是她还想在 jen@contosoco.com 接收电子邮件，因为一些人用该姓名引用她。 你可以为她创建别名，以便两个电子邮件地址都转到 Jenna 的收件箱。
   
 最多可为一个用户创建 400 个别名。无需其他费用或许可证。
   
@@ -59,6 +59,10 @@ ms.locfileid: "60165204"
   
     > [!IMPORTANT]
     > 如果从 GoDaddy 或另一合作伙伴购买订阅，则必须转到 GoDaddy/合作伙伴管理控制台，才能将新别名设置为主要。 
+
+
+   > [!IMPORTANT]
+   >  如果收到错误消息，则 **此用户已与本地 Active Directory 同步。某些详细信息只能** 通过本地 Active Directory 进行编辑，这意味着 Active Directory 对同步用户的属性具有权威性，您需要修改本地 Active Directory 中的属性。
   
     > [!TIP]
     > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅将[域添加到Microsoft 365。](../setup/add-domain.md) 
@@ -71,7 +75,7 @@ ms.locfileid: "60165204"
     用户现在将具有主地址和别名。 例如，发送到 Eliza Hoffman 的主地址、Eliza@NodPublishers.com 和别名 Sales@NodPublishers.com 的所有邮件都将发送到 Eliza 的收件箱。
     
   
-7. **当用户回复时，"*发送* 者"地址将取决于她Outlook客户端。Outlook 网页版会使用收到电子邮件的别名 (我们将此称为 ping-一) 。Outlook桌面将使用她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨文的收件箱。 当 Eliza 使用桌面Outlook邮件时，她的主要电子邮件地址将显示为 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
+7. **当用户回复时，"发送者"地址将取决于她Outlook客户端。Outlook 网页版将使用收到电子邮件的别名 (我们将此称为 ping- 一) 。Outlook桌面将使用她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 当 Eliza 使用桌面Outlook回复邮件时，她的主要电子邮件地址将显示为 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
     
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>您是否收到"找不到与参数名称 EmailAddresses 匹配的参数"？
 
@@ -84,12 +88,12 @@ ms.locfileid: "60165204"
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>轻松地从代理地址发送电子邮件
 
-2021 年 7 月推出一项新功能，允许用户在使用别名时轻松地从别名Outlook 网页版。 当功能推出到租户管理员使用 cmdlet 的租赁时，租户内的用户将有权访问复选框列表，其中每个条目对应于其 Outlook 设置中的别名。 `Set-OrganizationConfig -SendFromAliasEnabled $true` 选择别名将使其出现在"撰写"窗体的"自"下拉列表中。
+2021 年 7 月推出一项新功能，允许用户在使用别名时轻松Outlook 网页版。 当功能推出到租户管理员使用 cmdlet 的租赁时，租户内的用户将有权访问复选框列表，其中每个条目对应其 Outlook 设置中的别名。 `Set-OrganizationConfig -SendFromAliasEnabled $true` 选择别名将使其出现在"撰写"窗体的"自"下拉列表中。
   
 ## <a name="related-content"></a>相关内容
 
 [本文介绍的不同地址 (](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) 发送电子邮件) 
 
-[在本文内容中更改 (](../add-users/change-a-user-name-and-email-address.md) 和) 
+[Change a user name and email address (](../add-users/change-a-user-name-and-email-address.md) article) 
 
 [在 Microsoft 365 中配置电子邮件转发](configure-email-forwarding.md)（文章）

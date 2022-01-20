@@ -17,21 +17,21 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 49ee01e5bd9cb71b685bc8dcbe290f13f5a3e915
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0f1e9c88c003551ca74c76d6348465f52fdbd171
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164498"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156384"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 载入
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
+
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
@@ -44,19 +44,19 @@ ms.locfileid: "61164498"
 
 尽管 Defender for Endpoint 支持载入各种终结点和工具，但本文并未涵盖它们。 有关使用其他受支持的部署工具和方法进行常规载入的信息，请参阅 [载入概述](onboarding.md)。
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview)是统一多个服务的解决方案平台。 它包括Microsoft Intune [](/mem/intune/fundamentals/what-is-intune) 
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview)是统一多个服务的解决方案平台。 它包括Microsoft Intune [](/mem/intune/fundamentals/what-is-intune)
 
 -基于设备管理。
 
 本主题指导用户：
 
-- 步骤 1：在 MEM 中通过创建组将设备载入服务Microsoft Endpoint Manager () 分配配置
+- 步骤 1：在 MEM 中通过创建组将设备载入Microsoft Endpoint Manager (MEM) 分配配置
 - 步骤 2：使用 Microsoft Endpoint Manager
 
-本载入指南将指导你完成在使用应用时需要执行Microsoft Endpoint Manager：
+此载入指南将指导你完成在使用应用时需要执行Microsoft Endpoint Manager：
 
 - [标识目标设备或用户](#identify-target-devices-or-users)
-  - 创建用户Azure Active Directory设备 (组) 
+  - 为用户Azure Active Directory设备 (组) 
 - [创建配置文件](#step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities)
   - 在Microsoft Endpoint Manager中，我们将指导你为每种功能创建单独的策略。
 
@@ -65,12 +65,12 @@ ms.locfileid: "61164498"
 以下是此过程的其余部分所需的链接：
 
 - [MEM 门户](https://aka.ms/memac)
-- [Microsoft Defender for Endpoint](https://securitycenter.windows.com/)
+- [Microsoft 365 Defender](https://security.microsoft.com)
 - [Intune 安全基线](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 有关此Microsoft Endpoint Manager，请查看以下资源：
 
-- [Microsoft Endpoint Manager页](/mem/)
+- [Microsoft Endpoint Manager页面](/mem/)
 - [有关 Intune 和 ConfigMgr 聚合的博客文章](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [MEM 简介视频](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
@@ -323,12 +323,12 @@ ms.locfileid: "61164498"
 1. 打开 MEM 门户并导航到相关策略，如上述步骤所示。 以下示例显示了下一代保护设置。
 
     > [!div class="mx-imgBorder"]
-    > [![portal33 Microsoft Endpoint Manager图像。](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
+    > [![Microsoft Endpoint Manager portal33 的图像。](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
 
 2. 选择 **配置策略** 以查看策略状态。
 
     > [!div class="mx-imgBorder"]
-    > [![portal34 Microsoft Endpoint Manager图像。](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
+    > [![Microsoft Endpoint Manager portal34 的图像。](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
 
 3. 选择  **"设备状态** "以查看状态。
 
@@ -346,7 +346,7 @@ ms.locfileid: "61164498"
     > 此视图对于标识与另一个策略冲突的任何设置非常有用。
 
     > [!div class="mx-imgBorder"]
-    > [![Microsoft Endpoint Manager portal37 的图像。](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
+    > [![portal37 Microsoft Endpoint Manager图像。](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
 ### <a name="confirm-endpoint-detection-and-response"></a>确认终结点检测和响应
 
@@ -408,7 +408,7 @@ ms.locfileid: "61164498"
 
     ![命令行 3 的图像。](images/196a8e194ac99d84221f405d0f684f8c.png)
 
-3. 应用该策略后，打开 PowerShell Windows并键入 `(Get-MpPreference).EnableNetworkProtection` 。
+3. 应用策略后，打开 PowerShell Windows键入 `(Get-MpPreference).EnableNetworkProtection` 。
 
 4. 这应该会以 1 作为响应，如下所示。
 

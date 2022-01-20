@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0556527e7eac3eed4b54a2dd948a9ca8dae76fc7
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: eea9aca5e1c6ac791581e6fab93c768a06b0dc98
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61867837"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156516"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -77,7 +77,8 @@ ms.locfileid: "61867837"
 - 支持 Linux 服务器分发和 x64 (AMD64/EM64T) 版本：
 
   - Red Hat Enterprise Linux 6.7 或更高版本
-  - Red Hat Enterprise Linux 7.2 或更高版本 
+  - Red Hat Enterprise Linux 7.2 或更高版本
+  - Red Hat Enterprise Linux 8.x
   - CentOS 6.7 或更高版本 
   - CentOS 7.2 或更高版本
   - Ubuntu 16.04 LTS 或更高版本 LTS
@@ -171,11 +172,11 @@ ms.locfileid: "61867837"
 - 必须 `auditd` () 审核框架。
 
   > [!NOTE]
-  > 添加到 的规则捕获的系统事件将添加到 (，) 并可能影响主机 `/etc/audit/rules.d/` `audit.log` 审核和上游收集。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
+  > 通过添加到 的规则捕获的系统事件将添加到 (，) 并可能影响主机审核和上游 `/etc/audit/rules.d/` `audit.log` 集合。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
 
 ### <a name="configuring-exclusions"></a>配置排除项
 
-在向Microsoft Defender 防病毒排除项时，应注意用于Microsoft Defender 防病毒[](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+在向Microsoft Defender 防病毒添加排除项时，应注意用于Microsoft Defender 防病毒[](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>网络连接
 

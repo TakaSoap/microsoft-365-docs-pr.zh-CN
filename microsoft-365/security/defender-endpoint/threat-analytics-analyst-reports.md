@@ -15,18 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8523439bbcc8958c1fcb01a6db181c05263ef411
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5cd7c8da3b4d22600293959bdcb47a783a8569c3
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167702"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156221"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>威胁分析中的分析员报告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
+
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -46,15 +47,15 @@ _威胁分析报告的分析员报告部分_
 
 ****
 
-|"报告"部分|Description|
+|"报告"部分|说明|
 |---|---|
 |执行摘要|威胁概述，包括首次看到威胁时、其动机、值得注意的事件、主要目标以及不同的工具和技术。 可以使用此信息进一步评估如何在行业、地理位置和网络上下文中确定威胁的优先级。|
 |分析|有关威胁的技术信息，包括攻击的详细信息以及攻击者如何利用新技术或攻击面|
-|MITRE ATT&观测到的 CK 技术|观察技术如何映射到 [MITRE ATT&CK 攻击框架](https://attack.mitre.org/)|
-|[缓解](#apply-additional-mitigations)|推荐可以停止或帮助降低威胁影响。 本部分还包括未作为威胁分析报告的一部分动态跟踪的缓解。|
+|MITRE ATT&观察到的 CK 技术|观察技术如何映射到 [MITRE ATT&CK 攻击框架](https://attack.mitre.org/)|
+|[缓解措施](#apply-additional-mitigations)|推荐，可以停止或帮助降低威胁的影响。 本部分还包括未作为威胁分析报告的一部分动态跟踪的缓解。|
 |[检测详细信息](#understand-how-each-threat-can-be-detected)|Microsoft 安全解决方案提供的特定和通用检测，可显示与威胁关联的活动或组件。|
 |[高级搜寻](#find-subtle-threat-artifacts-using-advanced-hunting)|[用于主动识别](advanced-hunting-overview.md) 可能的威胁活动的高级搜寻查询。 大多数查询都用于补充检测，尤其是用于找到无法动态评估为恶意的潜在恶意组件或行为。|
-|参考|Microsoft 和分析师在报告创建期间引用的第三方出版物。 威胁分析内容基于 Microsoft 研究人员验证的数据。 公开提供的、第三方源的信息会明确标识。|
+|References|Microsoft 和分析师在报告创建期间引用的第三方出版物。 威胁分析内容基于 Microsoft 研究人员验证的数据。 公开提供的、第三方源的信息会明确标识。|
 |更改日志|报告的发布时间和对报告进行重大更改的时间。|
 |
 
@@ -73,7 +74,7 @@ _威胁分析报告的分析员报告部分_
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>了解如何检测每个威胁
 
-分析员报告还提供来自Microsoft Defender 防病毒 _和终结点检测和响应_ (EDR) 功能。
+分析员报告还提供来自Microsoft Defender 防病毒 _和终结点检测和响应_ (EDR) 检测。
 
 ### <a name="antivirus-detections"></a>防病毒检测
 
@@ -84,7 +85,7 @@ _威胁分析报告的分析员报告部分_
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>终结点检测和响应 (EDR) 警报
 
-EDR已载入[Microsoft Defender for Endpoint](onboard-configure.md)的设备将引发警报。 这些警报通常依赖于 Microsoft Defender for Endpoint 传感器收集的安全信号 (以及充当强大信号源的防病毒、网络保护、防篡改) 等其他终结点功能。
+EDR已载入[Microsoft Defender for Endpoint](onboard-configure.md)的设备将引发警报。 这些警报通常依赖于 Microsoft Defender for Endpoint 传感器收集的安全信号以及其他终结点功能 (例如防病毒、网络保护、防篡改) 充当强大的信号源。
 
 与防病毒检测列表一样，某些EDR警报旨在一般标记可能未与跟踪威胁关联的可疑行为。 在这种情况下，报告将清楚地将警报标识为"通用"，并且它并不影响报告中的任何图表。
 
@@ -94,11 +95,10 @@ EDR已载入[Microsoft Defender for Endpoint](onboard-configure.md)的设备将�
 
 [高级搜寻](advanced-hunting-overview.md) 提供基于 Kusto 查询语言的查询接口，可简化威胁活动的细微指示器的定位。 它还允许你显示上下文信息并验证指示器是否已连接到威胁。
 
-分析报告中的高级搜寻查询已经过 Microsoft 分析师审查，可随时在高级搜寻 [查询编辑器中运行](https://securitycenter.windows.com/advanced-hunting)。 您还可以使用查询创建自定义 [检测规则，](custom-detection-rules.md) 以触发将来匹配项的警报。
+分析报告中的高级搜寻查询已经过 Microsoft 分析师审查，可随时在高级搜寻 [查询编辑器中运行](https://security.microsoft.com/advanced-hunting)。 您还可以使用查询创建自定义 [检测规则，](custom-detection-rules.md) 以触发将来匹配项的警报。
 
 ## <a name="related-topics"></a>相关主题
 
 - [威胁分析概述](threat-analytics.md)
 - [使用高级搜寻主动查找威胁](advanced-hunting-overview.md)
 - [自定义检测规则](custom-detection-rules.md)
-- 
