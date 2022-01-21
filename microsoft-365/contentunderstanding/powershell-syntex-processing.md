@@ -13,19 +13,19 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: normal
 description: 了解如何使用 PowerShell 请求文档SharePoint Syntex处理。
-ms.openlocfilehash: a4bdf9b450306686d19218e13a7a708b37fdb04e
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: f6e013bddbec3c0f12bb8665de538967adfff116
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074807"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159669"
 ---
 # <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>使用 PowerShell 请求文档理解模型进行处理
 
 > [!IMPORTANT]
-> PowerShell cmdlet SharePoint Syntex所有其他 PnP 组件都是开源工具，由提供支持的活动社区提供支持。 没有来自 Microsoft 的官方支持渠道的开放源代码工具支持的 SLA。
+> PowerShell cmdlet SharePoint Syntex所有其他 PnP 组件都是开源工具，由提供相关支持的活动社区提供支持。 没有来自 Microsoft 的官方支持渠道的开放源代码工具支持的 SLA。
 
-了解模型的文档将处理新上载到库的文件。 还可以在 UI 中手动请求处理。 但是，在某些情况下，通过 PowerShell 触发处理会更有效。
+了解模型的文档将处理新上载到库的文件。 还可以在 UI 中手动请求处理。 但是，在某些情况下，通过 PowerShell 触发处理可能会更有效。
 
 ## <a name="request-processing-of-all-items-that-have-not-been-previously-classified"></a>请求处理以前未分类的所有项目
 
@@ -42,7 +42,7 @@ Request-PnPSyntexClassifyAndExtract -List "Documents"
 
 ## <a name="request-processing-of-all-items-in-a-library"></a>请求处理库中的所有项目
 
-你可以请求处理库内的所有文件，即使这些文件之前已分类。 如果你已更新模型或向库添加了其他模型，这可能很有用。
+你可以请求处理库内的所有文件，即使这些文件之前已分类。 如果已更新模型或向库添加了其他模型，这可能很有用。
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -52,11 +52,11 @@ Request-PnPSyntexClassifyAndExtract -List "Documents" -Force
 ```
 
 > [!NOTE]
-> 将 -Force 选项用于超过 5000 个项目将能自动启用非高峰处理。
+> 如果对超过 5000 个项目使用 -Force 选项，将自动启用峰值处理。
 
 ## <a name="request-processing-of-all-items-based-on-a-property"></a>基于属性请求处理所有项目
 
-如果要将处理限制为库中的特定项目子集，可以使用脚本选择一组特定文件。 在下面的示例中，该脚本允许选择一个字段，以及一个字段值进行筛选。 可以使用 [Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html)完成更复杂的查询。
+如果要将处理限制为库中的特定项目子集，可以使用脚本选择一组特定文件。 在下面的示例中，该脚本允许选择一个字段和一个字段值进行筛选。 可以使用 [Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html)完成更复杂的查询。
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process

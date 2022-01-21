@@ -14,23 +14,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: '了解如何使用 JAMF Microsoft 365预览版将 macOS 设备载入和Pro (合规性) '
-ms.openlocfilehash: 03cdf8a7aa5c35d4e207364c3f0870a66712626d
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 2399dd901b9c31c3cd824e35bd4db844610125c5
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074542"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159480"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>使用 JAMF Pro 将 macOS 设备载入和卸载到 Microsoft 365 合规性解决方案（预览版）
 
-可以使用 JAMF Pro macOS 设备载入 Microsoft 365合规性解决方案，如终结点数据丢失防护。
+可以使用 JAMF Pro macOS 设备载入Microsoft 365合规性解决方案，如终结点数据丢失防护。
 
 > [!IMPORTANT]
 > 如果你未将 Microsoft  Defender for Endpoint (MDE) 部署到 macOS 设备，请使用此过程
-
-## <a name="get-registered"></a>注册
-
-若要获取此功能的访问权限，必须向 Microsoft 注册租户。 请参阅[注册 Microsoft 365 macOS 支持](https://aka.ms/EndpointDLPIgnite21-Previews)。
 
 **适用于：**
 
@@ -115,10 +111,10 @@ ms.locfileid: "62074542"
     - 分发方法： `install automatically`
     - 级别： `computer level`
 
-1. 在"**应用程序&自定义设置"** 选项卡上，选择"外部应用程序 **"，** 选择 **"添加**"，然后选择首选项 **域的"** 自定义架构"。 使用此值：
+1. On the **Application & Custom 设置** tab， choose External **Applications**， choose **Add** and choose **Custom Schema** for the preference domain. 使用此值：
     - 首选项域： `com.microsoft.wdav`
 
-1. 选择 **"添加架构****Upload** 以上载 *schema.json* 文件。
+1. 选择 **"添加架构****Upload以** 上载 *schema.json* 文件。
 
 1. 选择“**保存**”。
 
@@ -126,7 +122,7 @@ ms.locfileid: "62074542"
     - 功能 
         - 使用系统扩展 `enabled` ：- 对于加泰罗尼亚语上的网络扩展是必需的
         - 使用数据丢失防护： `enabled`
-    - 防病毒引擎>被动模式 `true|false` ：。 如果 `true` 仅部署 DLP，请使用 。 使用 `false` 或不要分配值，如果部署 DLP 和 Microsoft Defender for Endpoint (MDE) 。
+    - 防病毒引擎>被动模式 `true|false` ：。 如果 `true` 仅部署 DLP，请使用 。 如果在 `false` MDE 中部署 DLP 和 Microsoft Defender for Endpoint (，) 。
 
 1. 选择" **范围"** 选项卡。
 
@@ -165,7 +161,7 @@ ms.locfileid: "62074542"
 
 1. 使用 **fulldisk.mobileconfig** 文件。
 
-1. Upload **fulldisk.mobileconfig 文件** 更新为 JAMF。 请参阅[使用 JAMF 部署自定义配置文件Pro。](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)
+1. Upload **fulldisk.mobileconfig** 文件更新为 JAMF。 请参阅[使用 JAMF 部署自定义配置文件Pro。](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)
 
 ### <a name="create-and-deploy-a-configuration-profile-for-system-extensions"></a>为系统扩展创建和部署配置文件
 
@@ -194,13 +190,13 @@ ms.locfileid: "62074542"
 
 1.  使用 **从网站下载的 netfilter.mobileconfig** GitHub。
 
-2.  Upload JAMF，如[使用 Jamf 部署自定义配置文件Pro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
+2.  Upload使用[Jamf](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)部署自定义配置文件中所述，将其Pro。
 
 ### <a name="grant-accessibility-access-to-dlp"></a>授予对 DLP 的辅助功能访问权限
 
 1. 使用 **从网站下载的 accessibility.mobileconfig** GitHub。
 
-2.  Upload JAMF，如[使用 Jamf 部署自定义配置文件Pro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
+2.  Upload使用[Jamf](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)部署自定义配置文件中所述，将其Pro。
 
 ### <a name="get-the-installation-package"></a>获取安装包
 
@@ -277,7 +273,7 @@ ms.locfileid: "62074542"
     - 网络筛选器
     - 系统扩展配置文件
 
-## <a name="offboard-macos-devices-using-jamf-pro"></a>使用 JAMF 工具的载出 macOS Pro
+## <a name="offboard-macos-devices-using-jamf-pro"></a>使用 JAMF 设备的载 macOS Pro
 
 1. 如果不使用 MDE (，请卸载应用程序) 
     1. 请参阅 JAMF Pro文档 - 包部署 - [JAMF Pro管理员指南](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro 管理员指南

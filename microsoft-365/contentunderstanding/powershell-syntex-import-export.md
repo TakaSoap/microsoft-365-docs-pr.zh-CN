@@ -12,13 +12,13 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: normal
-description: 了解如何在 SharePoint Syntex 中通过 PowerShell 导出和导入文档理解SharePoint Syntex
-ms.openlocfilehash: 289d802fdea50daa0261ec16ea760e9a57b0e9c5
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+description: 了解如何在 SharePoint Syntex 中通过 PowerShell 导出和导入文档理解SharePoint Syntex。
+ms.openlocfilehash: 6751a66d713ada8c06445d8bfd0efdb5c3ac2fad
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074823"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159501"
 ---
 # <a name="export-and-import-document-understanding-models-with-powershell"></a>使用 PowerShell 导出和导入了解模型的文档
 
@@ -47,9 +47,9 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
 Get-PnPSiteTemplate -Out MyModels.pnp -Configuration .\extract.json
 ```
 
-extract.json 定义要导出的模型，允许按名称或 ID 指定模型，并可以选择配置为不提取培训数据
+extract.json 定义要导出的模型，允许按名称或 ID 指定模型，还可以配置为不提取培训数据。
 
-### <a name="example--specify-model-by-name"></a>示例 - 按名称指定模型
+### <a name="example---specify-model-by-name"></a>示例 - 按名称指定模型
 
 ```json
 {
@@ -68,7 +68,7 @@ extract.json 定义要导出的模型，允许按名称或 ID 指定模型，并
 }
 ```
 
-### <a name="example--specify-model-by-id"></a>示例 - 按 ID 指定模型
+### <a name="example---specify-model-by-id"></a>示例 - 按 ID 指定模型
 
 ```json
 {
@@ -90,7 +90,8 @@ extract.json 定义要导出的模型，允许按名称或 ID 指定模型，并
 
 如果不包括属性"includeTrainingData"，则默认行为是包含 。
 
-> 注意：将模型导入目标内容中心时，需要培训数据才能编辑模型
+> [!NOTE]
+> 将模型导入到目标内容中心时，需要培训数据才能对其进行编辑。
 
 ## <a name="import-models-to-a-content-center"></a>将模型导入到内容中心
 可以将已导出到 PnP 模板的文档了解模型导入到任何租户上的内容中心。 如果导出包括培训数据，则导入后模型可编辑。

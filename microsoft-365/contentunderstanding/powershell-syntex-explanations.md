@@ -12,13 +12,13 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: normal
-description: 了解如何在 PowerShell SharePoint Syntex文档了解模型说明
-ms.openlocfilehash: bfb3bf237ba8f5dbc8772c974b37fe85e16e8dbf
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+description: 了解如何在 PowerShell SharePoint Syntex文档了解模型说明。
+ms.openlocfilehash: 06f0eb7314b85f9463689fea32667666e5e167fd
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074824"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159705"
 ---
 # <a name="work-with-document-understanding-model-explanations-in-powershell"></a>在 PowerShell 中处理文档了解模型说明
 

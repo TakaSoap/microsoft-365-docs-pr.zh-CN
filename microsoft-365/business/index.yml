@@ -4,7 +4,7 @@ summary: Microsoft 365 商业高级版（旧称为“Microsoft 365 商业版”�
 brand: m365
 metadata:
   title: Microsoft 365 商业高级版资源
-  description: 有关设置和运行Microsoft 365 商业高级版。
+  description: 有关设置和运行文档Microsoft 365 商业高级版。
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
@@ -71,12 +71,18 @@ conceptualContent:
         - url: 'https://www.microsoft.com/microsoft-365/partners/business'
           itemType: overview
           text: 合作伙伴页面
-        - url: 'https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx'
+        - url: 'https://aka.ms/M365BPPartnerPlaybook'
           itemType: download
-          text: 融资演讲稿（客户聚焦）
-        - url: 'https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx'
+          text: 商业高级版合作伙伴手册
+        - url: 'https://aka.ms/bpbdmpitchdeck'
           itemType: download
-          text: 融资演讲稿（合作伙伴聚焦）
+          text: 业务高级版业务决策制定者 (BDM) 平台
+        - url: 'https://aka.ms/bpitdmpitchdeck'
+          itemType: download
+          text: IT 高级版 IT 决策制定者 (IT) 平台
+        - url: 'https://aka.ms/bppartneropportunitydeck'
+          itemType: download
+          text: 业务高级版合作伙伴机会演示
         - url: 'https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery'
           itemType: download
           text: 技术基础知识
@@ -101,7 +107,7 @@ conceptualContent:
           itemType: how-to-guide
           text: 重置某人的密码
       footerLink:
-        url: /office365/admin/admin-home
+        url: /microsoft-365/admin/
         text: 查看更多信息
     - title: 管理威胁
       links:
@@ -118,7 +124,7 @@ conceptualContent:
           itemType: overview
           text: 条件访问
       footerLink:
-        url: /office365/admin/admin-home
+        url: /microsoft-365/admin/
         text: 查看更多信息
     - title: 管理数据
       links:

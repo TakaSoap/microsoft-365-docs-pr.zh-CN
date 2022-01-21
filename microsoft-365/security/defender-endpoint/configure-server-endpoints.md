@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a284ae69ddf299256c3c91a9a63682f41f95211f
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: efb152c3c72c77f49110b8a4e337107cff5819b0
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156492"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159681"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows载入 Microsoft Defender for Endpoint 服务
 
@@ -41,9 +41,9 @@ ms.locfileid: "62156492"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)。
 
-Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 此支持通过 Microsoft 365 Defender 控制台无缝提供高级攻击检测和Microsoft 365 Defender功能。 对 Windows Server 的支持可更深入地了解服务器活动、内核和内存攻击检测的范围，并启用响应操作。
+Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 此支持通过安全中心控制台无缝提供高级攻击检测和Microsoft 365 Defender功能。 对 Windows Server 的支持可更深入地了解服务器活动、内核和内存攻击检测的范围，并启用响应操作。
 
-本主题介绍如何将特定服务器Windows Microsoft Defender for Endpoint。
+本主题介绍如何将特定 Windows服务器载入到 Microsoft Defender for Endpoint。
 
 有关如何为服务器下载和使用 Windows 安全中心 比较基准Windows，请参阅 Windows 安全中心[Baselines](/windows/device-security/windows-security-baselines)。
 
@@ -65,7 +65,7 @@ Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 �
 - 按照相应工具的载入步骤操作
 
 >[!IMPORTANT]
->为了有资格购买适用于 Endpoint Server SKU 的 Microsoft Defender，你必须已购买以下任一项的组合最低许可证：Windows E5/A5、Microsoft 365 E5/A5 或 Microsoft 365 E5 安全性 订阅许可证。  有关许可详细信息，请参阅产品 [条款](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all)。  
+>若要有资格购买适用于 Endpoint Server SKU 的 Microsoft Defender，必须已购买以下任一许可证的组合最低要求：Windows E5/A5、Microsoft 365 E5/A5 或 Microsoft 365 E5 安全性 订阅许可证。  有关许可详细信息，请参阅产品 [条款](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all)。  
 
 
 
@@ -90,14 +90,14 @@ Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 �
 如果之前已使用 MMA 载入服务器，请按照服务器迁移中提供的指南[](server-migration.md)迁移到新解决方案。
 
 >[!NOTE]
->虽然此 Windows Server 2012 R2 和 Windows Server 2016 的载入方法为预览版，但可以选择继续使用之前使用 MMA Microsoft Monitoring Agent (的载入) 。 有关详细信息，请参阅使用 [MMA 安装和配置终结点](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)。
+>虽然此 Windows Server 2012 R2 和 Windows Server 2016 的载入方法为预览版，但可以选择继续使用之前使用 Microsoft Monitoring Agent (MMA) 。 有关详细信息，请参阅使用 [MMA 安装和配置终结点](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)。
 
 #### <a name="known-issues-and-limitations-on-the-new-unified-solution-package-for-windows-server-2012-r2-and-2016"></a>R2 和 2016 的新统一解决方案包的已知Windows Server 2012限制
 
 以下具体信息适用于 R2 和 Windows Server 2012 2016 的新统一解决方案包：
 
 - 确保满足允许访问代理服务器中的 [Microsoft Defender for Endpoint 服务 URL 中](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) 指定的连接要求。 它们等效于 Windows Server 2019。
-- 以前 Microsoft Monitoring Agent (，OMS/Log Analytics) 允许在 Windows Server 2016 及以下时间使用 MMA 客户端，以提供与 Defender 云服务的连接。 新解决方案（如 Windows Server 2019 上的 Microsoft Defender for Endpoint、Windows Server 2022 和 Windows 10）不支持此网关。
+- 以前，OMS/Log Analytics 网关Microsoft Monitoring Agent (MMA) 在 Windows Server 2016 及以下允许使用，以提供与 Defender 云服务的连接。 新解决方案（如 Windows Server 2019、Windows Server 2022 和 Windows 10 上的 Microsoft Defender for Endpoint）不支持此网关。
 - On Windows Server 2016， verify that Microsoft Defender 防病毒 is installed， is active and up to date. 可以使用"更新"下载并安装Windows版本。 或者，从 [Microsoft](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) 更新目录或 MMPC 手动下载 [更新包](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64)。  
 - 在 Windows Server 2012 R2 上，没有用于Microsoft Defender 防病毒。 此外，Windows Server 2016用户界面只允许基本操作。 若要在本地设备上执行操作，请参阅使用 [PowerShell、WMI ](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools)和 MPCmdRun.exe管理 Microsoft Defender for Endpoint。 因此，专门依赖用户交互的功能（如提示用户做出决定或执行特定任务）可能无法如期工作。 建议禁用或不启用用户界面，也建议在任何托管服务器上进行用户交互，因为它可能会影响保护功能。
 - 并非所有攻击面减少规则都适用于所有操作系统。 请参阅 [攻击面减少 (ASR) 规则](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)。
@@ -112,6 +112,7 @@ Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 �
 - 不支持操作系统升级。 卸载，然后在升级之前卸载。
 - 服务器角色的自动排除 *在* Windows Server 2012 R2 上不受支持;但是，操作系统文件的内置排除项是。 有关添加排除项详细信息，请参阅病毒扫描建议[Enterprise运行](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc)当前受支持版本的病毒扫描Windows。
 
+
 <a name="integration-with-azure-defender"></a>
 
 ## <a name="integration-with-microsoft-defender-for-cloud"></a>与 Microsoft Defender for Cloud 集成
@@ -124,17 +125,17 @@ Microsoft Defender for Endpoint 与 Microsoft Defender for Cloud 无缝集成。
 > 对于Windows Server 2012新式统一解决方案预览的 R2 和 2016，尚未提供与 Microsoft Defender for Cloud/Microsoft Defender 服务器集成以用于警报和自动部署。 尽管你可以在这些计算机上安装新解决方案，但 Microsoft Defender for Cloud 中不会显示任何警报。
 
 > [!NOTE]
-> - Microsoft Defender for servers 和 Microsoft Defender for Endpoint 之间的集成已扩展为支持 Windows Server 2022、Windows [Server 2019 和 Windows Virtual Desktop (WVD) 。 ](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
+> - Microsoft Defender for servers 和 Microsoft Defender for Endpoint 之间的集成已扩展为支持 Windows Server 2022、Windows [Server 2019 和 Windows Virtual Desktop (WVD) ](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)。
 > - 已针对客户禁用利用此集成的服务器终结点Office 365 GCC监视。
 
 ## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 和 Windows Server 2016
 
 > [!NOTE]
-> 虽然此 Windows Server 2012 R2 和 Windows Server 2016 的载入方法为预览版，但可以选择继续使用之前使用 MMA Microsoft Monitoring Agent (的载入) 。 有关详细信息，请参阅使用 [MMA 安装和配置终结点](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)。
+> 虽然此 Windows Server 2012 R2 和 Windows Server 2016 的载入方法为预览版，但可以选择继续使用之前使用 Microsoft Monitoring Agent (MMA) 。 有关详细信息，请参阅使用 [MMA 安装和配置终结点](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)。
 
 ### <a name="prerequisites"></a>先决条件
 
-**Windows Server 2012 R2 的先决条件**
+**R2 Windows Server 2012的先决条件**
 
 如果你已使用最新的每月汇总程序包完全更新计算机 [](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e)，则没有 **其他** 先决条件。
 
@@ -142,18 +143,18 @@ Microsoft Defender for Endpoint 与 Microsoft Defender for Cloud 无缝集成。
 安装程序程序包将检查是否通过更新安装了以下组件：
 
 - [客户体验和诊断遥测更新](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
-- [Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
+- [Windows 中的通用 C 运行时Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
 
 **部署Windows Server 2016** 
 
-除了使用 LCU (最新累积更新) ，Microsoft Defender 防病毒计算机是否处于活动状态且为最新状态。 可以使用"更新"下载并安装Windows版本。 或者，从 [Microsoft](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) 更新目录或 MMPC 手动下载 [更新包](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64)。 
+除了使用最新累积更新 (LCU) 完全更新计算机外，Microsoft Defender 防病毒已安装、处于活动状态且为最新状态。 可以使用"更新"下载并安装Windows版本。 或者，从 [Microsoft](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) 更新目录或 MMPC 手动下载 [更新包](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64)。 
 
 > [!NOTE]
 > 若要将 Windows Defender 的内置版本（版本号从 4.10 开始）成功更新到最新可用平台，必须应用服务堆栈更新以及等于或晚于 2018 年 9 月 20 日的最新累积更新 (LCU) KB4457127 (OS 内部版本 14393.2515) 。
 
 **Windows Server 2012 R2 和 2016 上的 Microsoft Defender for Endpoint 的新更新程序包**
 
-若要接收适用于 EDR 组件的常规产品改进和修补程序，请确保Windows[更新 KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277)获得应用或批准。 此外，若要使保护组件保持更新，请参阅管理Microsoft Defender 防病毒[更新和应用基线](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)。
+若要接收适用于传感器组件的常规产品改进和EDR，请确保已应用Windows[更新 KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277)或获得批准。 此外，若要使保护组件保持更新，请参阅管理Microsoft Defender 防病毒[更新和应用基线](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)。
 
 ### <a name="onboarding-steps-summary"></a>载入步骤摘要
 
@@ -340,15 +341,15 @@ Windows Server 2019 和 Windows Server 2022 到 Microsoft Endpoint Manager的载
 1. 运行以下命令来验证Microsoft Defender 防病毒安装：
 
     >[!NOTE]
-    >只有在将 Microsoft Defender 防病毒用作活动的反恶意软件解决方案时，才需要执行此解决步骤。
+    >只有在将 Microsoft Defender 防病毒用作活动的反恶意软件解决方案时，才需要执行此步骤。
 
     `sc.exe query Windefend`
 
 
-    如果结果是"指定的服务作为已安装的服务不存在"，则需要安装Microsoft Defender 防病毒。 
+    如果结果是"指定的服务不存在为已安装的服务"，则需要安装Microsoft Defender 防病毒。 
 
 
-    有关如何使用组策略配置和管理 Microsoft Defender 防病毒 服务器Windows的信息，[请参阅使用组](use-group-policy-microsoft-defender-antivirus.md)策略设置配置和管理Microsoft Defender 防病毒。
+    有关如何使用组策略在 Microsoft Defender 防病毒 服务器上配置和管理 Windows 的信息，请参阅使用组策略设置配置[和管理](use-group-policy-microsoft-defender-antivirus.md)Microsoft Defender 防病毒。
 
 2. 运行以下命令以验证 Microsoft Defender for Endpoint 是否正在运行：
 
@@ -366,20 +367,20 @@ Windows Server 2019 和 Windows Server 2022 到 Microsoft Endpoint Manager的载
 
 ## <a name="offboard-windows-servers"></a>载出Windows服务器
 
-可以使用适用于 Windows 10 客户端设备的相同方法从 Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC) 、Windows Server 2019、Windows Server 2019 Core 版本上离开。
+可以使用适用于 Windows 10 客户端设备的相同方法Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC) 、Windows Server 2019、Windows Server 2019 Core 版本。
 
 - [使用组策略的载出设备](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [使用 Configuration Manager 的载出设备](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
 - [使用移动设备管理工具离开并监视设备](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
 - [使用本地脚本的载出设备](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 
-对于其他Windows版本，有两个选项Windows从服务中离开服务器：
+对于其他Windows版本，有两个选项可以Windows服务中离开服务器：
 
 - 卸载 MMA 代理
 - 删除 Defender for Endpoint 工作区配置
 
 >[!NOTE]
->*如果你运行的是适用于需要 MMA 的 Windows Server 2016 Windows Server 2012 R2 的 Microsoft Defender for Endpoint，则适用于其他 Windows 服务器版本的这些载出说明也适用。 有关迁移到新的未关注解决方案的说明，请参阅 Microsoft [Defender for Endpoint 中的服务器迁移方案](/microsoft-365/security/defender-endpoint/server-migration)。
+>*如果你运行的是适用于需要 MMA 的 Windows Server 2016 和 Windows Server 2012 R2 的 Microsoft Defender for Endpoint，则适用于其他 Windows 服务器版本的这些载出说明也适用。 有关迁移到新的未关注解决方案的说明，请参阅 Microsoft [Defender for Endpoint 中的服务器迁移方案](/microsoft-365/security/defender-endpoint/server-migration)。
 
 ## <a name="related-topics"></a>相关主题
 

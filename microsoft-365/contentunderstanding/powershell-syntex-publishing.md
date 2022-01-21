@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: normal
 description: 了解如何使用 PowerShell 发布SharePoint Syntex文档了解模型。
-ms.openlocfilehash: 4aa5639d50145cabe5b95a11d3d927b7d2e06749
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 215a073ea5cabe7c701d24a9b8972268c4dd21ff
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074806"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159693"
 ---
 # <a name="publish-document-understanding-models-with-powershell"></a>使用 PowerShell 发布文档了解模型
 
@@ -29,7 +29,7 @@ SharePoint Syntex模型通常部署到租户中的文档库。 这可以使用�
 
 ## <a name="listing-the-available-models-in-a-content-center"></a>列出内容中心中的可用模型
 
-若要概览添加到当前内容中心网站的模型SharePoint Syntex请使用[Get-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) cmdlet：
+若要概览添加到当前内容中心SharePoint Syntex模型，请使用[Get-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) cmdlet：
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -38,7 +38,7 @@ Get-PnPSyntexModel
 
 ## <a name="apply-a-model-to-a-library"></a>将模型应用到库
 
-若要将模型应用到库，可以使用 [Publish-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Publish-PnPSyntexModel.html) cmdlet：
+若要将模型应用到库，请使用 [Publish-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Publish-PnPSyntexModel.html) cmdlet：
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -65,9 +65,7 @@ Unpublish-PnPSyntexModel -Model "Invoice model" -ListWebUrl "https://contoso.sha
 
 ## <a name="apply-models-in-bulk"></a>批量应用模型
 
-如果要将多个模型发布到多个库，则 
-
-首先，创建一个输入 CSV 文件，列出模型和目标位置：
+如果要将多个模型发布到多个库，请创建一个输入 CSV 文件，列出模型和目标位置：
 
 ```CSV
 ModelName,TargetSiteUrl,TargetWebServerRelativeUrl,TargetLibraryServerRelativeUrl
@@ -76,7 +74,7 @@ Contract Notice,https://contoso.sharepoint.com/sites/Site1,/sites/Site1,/sites/s
 Trade Confirmation,https://contoso.sharepoint.com/sites/Site2,/sites/Site2,/sites/site2/shared%20documents
 ```
 
-然后，此 CSV 文件可以用作脚本的输入，该脚本将列出模型发布到相应的库。 在下面的示例中，批处理用于提高请求效率
+然后，此 CSV 文件可以用作脚本的输入，该脚本将列出模型发布到相应的库。 在下面的示例中，批处理用于提高请求的效率。
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourSite"

@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell SharePoint Syntex管理服务
+title: 使用 PowerShell 管理 SharePoint Syntex
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
@@ -12,22 +12,22 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: normal
-description: 了解如何使用 PowerShell SharePoint Syntex管理服务
-ms.openlocfilehash: ea3e73d007d038bffdafdc83d28f3334bc711c67
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+description: 了解如何使用 PowerShell SharePoint Syntex管理服务。
+ms.openlocfilehash: 5ac6defc92e986a7593936cccb9470489ee86227
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074808"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159537"
 ---
-# <a name="manage-sharepoint-syntex-with-powershell"></a>使用 PowerShell SharePoint Syntex管理服务
+# <a name="manage-sharepoint-syntex-with-powershell"></a>使用 PowerShell 管理 SharePoint Syntex
 
 > [!IMPORTANT]
 > PowerShell cmdlet SharePoint Syntex所有其他 PnP 组件都是开源工具，由提供相关支持的活动社区提供支持。 没有来自 Microsoft 的官方支持渠道的开放源代码工具支持的 SLA。
 
-对于这些方案，pnP PowerShell SharePoint Syntex中的 cmdlet 可用于与模型和说明进行交互。 若要详细了解如何安装此模块，请参阅 [**PnP PowerShell 概述**](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets)
+对于这些方案，可以使用 PnP PowerShell 模块中的 SharePoint Syntex cmdlet 与模型和说明进行交互。 若要详细了解如何安装此模块，请参阅 [PnP PowerShell 概述](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets)。
 
-从以下主题中选择，了解如何使用 PowerShell 管理 Syntex：
+从以下方案中选择，了解如何使用 PowerShell 管理SharePoint Syntex：
 
 - [**导入和导出模型**](powershell-syntex-import-export.md)
 
@@ -39,7 +39,7 @@ ms.locfileid: "62074808"
 
 - [**处理**](powershell-syntex-processing.md)
 
-    若要了解如何使用 PowerShell 触发文档理解文档库处理，请从这里开始
+    若要了解如何使用 PowerShell 触发文档理解文档库处理，请从这里开始。
 
 - [**说明**](powershell-syntex-explanations.md)
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 42fac7b4dd76831339b5b76ea21787ae288b636a
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: d114c7aa72c3baa5fb871fc4a52a00a22c21998e
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074686"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159590"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -42,7 +42,7 @@ ms.locfileid: "62074686"
 
 - 运行基本和高级命令以在设备上执行调查工作。
 - 下载恶意软件示例和 PowerShell 脚本结果等文件。
-- 在后台下载文件 (新的！) 。
+- 在后台下载文件 (新建！) 。
 - Upload PowerShell 脚本或可执行文件到库，然后从租户级别在设备上运行它。
 - 执行或撤消修正操作。
 
@@ -52,7 +52,7 @@ ms.locfileid: "62074686"
 
 - **验证是否正在运行受支持的版本Windows。**
 
-  设备必须运行以下版本之一的 Windows
+  设备必须运行以下版本的设备之一Windows
 
   - **Windows 10 & 11**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
@@ -64,16 +64,18 @@ ms.locfileid: "62074686"
   - **macOS** - 仅适用于公共预览版，最低要求版本：101.43.84 
   
   - **Linux** - 仅适用于公共预览版，最低要求版本：101.45.13 
-
-  - **Windows Server 2012 R2** - 包含 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+    
+  - **Windows Server 2012 R2** - 具有 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
   
   - **Windows Server 2016** - 使用 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
 
   - **Windows Server 2019**
-    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
     - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
-
+    
   - **Windows Server 2022**
+
+       
 
 - **从高级设置页面启用实时响应**。
 
@@ -95,7 +97,7 @@ ms.locfileid: "62074686"
 
   ![错误消息的图像。](images/live-response-error.png)
 
-- **启用实时响应未签名脚本执行** (可选) 。
+- **启用实时响应未签名脚本执行 (** 可选) 。
 
   >[!IMPORTANT]
   >签名验证仅适用于 PowerShell 脚本。 
@@ -158,24 +160,26 @@ ms.locfileid: "62074686"
 ****
 | 命令  | 说明  | Windows 和 Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
-| cd  | 更改当前目录。  | Y  | Y | Y |
+| cd  | 更改当前目录。  | Y  | Y  | Y  |
 | cls  | 清除控制台屏幕。  | Y  | Y  | Y  |
 | connect  | 启动到设备的实时响应会话。  | Y  | Y  | Y  |
-| connections  | 显示所有活动连接。  | Y  | N | N |
-| dir  | 显示目录中的文件和子目录的列表。  | Y  | Y  |Y  |
-| drivers  | 显示设备上安装的所有驱动程序。  | Y |  N | N  |
+| connections  | 显示所有活动连接。  | Y  | N  | N  |
+| dir  | 显示目录中的文件和子目录的列表。  | Y  | Y  | Y  |
+| drivers  | 显示设备上安装的所有驱动程序。  | Y  | N  | N  |
 | fg `<command ID>`  | 将指定的作业放在前台的前台，使其成为当前作业。  注意：fg 从作业（而不是 PID）接受一个可用的"命令 ID"  | Y  | Y  | Y  |
-| fileinfo  | 获取有关文件的信息。  |Y  | Y  | Y  |
-| findfile  | 在设备上按给定名称查找文件。  | Y | Y  | Y  |
+| fileinfo  | 获取有关文件的信息。  | Y  | Y  | Y  |
+| findfile  | 在设备上按给定名称查找文件。  | Y  | Y  | Y  |
 | getfile <file_path>  | 下载文件。  | Y  | Y  | Y  |
-| 帮助  | 提供实时响应命令的帮助信息。  |Y  | Y | Y  |
-| jobs  | 显示当前运行的作业及其 ID 和状态。  | Y  | Y | Y |
-| 持久性  | 显示设备上所有已知的持久性方法。  | Y  | N | N |
+| 帮助  | 提供实时响应命令的帮助信息。  | Y  | Y  | Y  |
+| jobs  | 显示当前运行的作业及其 ID 和状态。  | Y  | Y  | Y  |
+| 持久性  | 显示设备上所有已知的持久性方法。  | Y  | N  | N  |
 | processes  | 显示设备上运行的所有进程。  | Y  | Y  | Y  |
-| 注册表  | 显示注册表值。  | Y  | N | N |
-| scheduledtasks  | 显示设备上的所有计划任务。  | Y | N | N |
-| 服务  | 显示设备上的所有服务。  | Y  | N | N |
-| trace  | 将终端的日志记录模式设置为调试。  | Y  | Y  |Y  |
+| 注册表  | 显示注册表值。  | Y  | N  | N  |
+| scheduledtasks  | 显示设备上的所有计划任务。  | Y  | N  | N  |
+| 服务  | 显示设备上的所有服务。  | Y  | N  | N  |
+| startupfolders  | 显示设备上启动文件夹中的所有已知文件。  | Y  | N  | N  |
+| 状态  | 显示特定命令的状态和输出。  | Y  | N  | N  |
+| trace  | 将终端的日志记录模式设置为调试。  | Y  | Y  | Y  |
 
 ### <a name="advanced-commands"></a>高级命令
 
@@ -195,12 +199,13 @@ ms.locfileid: "62074686"
 | 库  | 列出上载到实时响应库的文件。  | Y  | Y  | Y  |
 | putfile  | 将库中的文件置于设备。 文件保存在工作文件夹中，在设备默认重启时将被删除。  | Y  | Y  | Y  |
 | 修正  | 修正设备上的实体。 修正操作将因实体类型而异：File： delete Process： stop， delete image file Service： stop， delete image file Registry entry： delete Scheduled task： remove Startup folder item： delete file NOTE： This command has a prerequisite command. 可以将 -auto 命令与修正结合使用，以自动运行必备组件命令。  | Y  | Y  | Y  |
-| scan  | 断开设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接  | N  | Y  | Y  |
+| scan  | 运行防病毒程序 (快速) 扫描，以帮助识别和修正恶意软件。  | N  | Y  | Y  |
 | undo  | 还原已修正的实体。  | Y  | Y  | Y  |
+
 
 ## <a name="use-live-response-commands"></a>使用实时响应命令
 
-控制台中可以使用的命令遵循与命令类似的Windows[准则](/windows-server/administration/windows-commands/windows-commands#BKMK_c)。
+控制台中可以使用的命令遵循与命令类似的Windows[原则](/windows-server/administration/windows-commands/windows-commands#BKMK_c)。
 
 高级命令提供了一组更可靠的操作，允许你执行更强大的操作，如下载和上载文件、在设备上运行脚本，以及对实体执行修正操作。
 
@@ -231,13 +236,13 @@ ms.locfileid: "62074686"
 
 |命令|功能|
 |---|---|
-|`getfile "C:\windows\some_file.exe" &`|开始下载 *在后台some_file.exe文件* 。|
+|`getfile "C:\windows\some_file.exe" &`|开始在后台下载名为 *some_file.exe* 的文件。|
 |`fg 1234`|将命令 ID 为 *1234* 的下载返回到前台。|
 |
 
 ### <a name="put-a-file-in-the-library"></a>将文件放入库中
 
-实时响应具有一个库，您可以将文件放入其中。 该库存储 (脚本) ，这些脚本可以在租户级别的实时响应会话中运行。
+实时响应具有一个库，您可以将文件放入其中。 该库存储 (脚本) 脚本库，这些脚本可以在租户级别的实时响应会话中运行。
 
 实时响应允许运行 PowerShell 脚本，但是必须先将文件放入库中，然后才能运行它们。
 
@@ -342,7 +347,6 @@ processes > output.txt
 
 - 实时响应会话一次限制为 25 个实时响应会话。
 - 实时响应会话非活动超时值为 30 分钟。
-- Getfile 命令非活动超时值为 30 分钟。 当命令在后台运行时，它被视为非活动状态。
 - 用户可以启动最多 10 个并发会话。
 - 设备一次只能在一个会话中。
 - 以下文件大小限制适用：

@@ -13,22 +13,18 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: '了解如何使用适用于 MDE Microsoft 365预览版中的 MDE Microsoft Intune将 macOS (载入和) '
-ms.openlocfilehash: a1d647fae55b091b8c12df885ce28aa4f1275a1a
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+description: '了解如何使用适用于 MDE 客户的 Microsoft 365 预览版Microsoft Intune macOS (和) '
+ms.openlocfilehash: 0486c08734e049a82550c1fb596b0e3d789126b8
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962995"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159525"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>使用适用于 Microsoft Defender for Endpoint 客户的 Intune 将 macOS 设备载入和卸载到合规性解决方案（预览版）
 
 > [!IMPORTANT]
 > 如果你 ***将*** Microsoft Defender for Endpoint (MDE) macOS 设备，请使用此过程
-
-<!--## Get registered
-
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).-->
 
 **适用于：**
 
@@ -76,11 +72,11 @@ To get access to this feature, you must register your tenant with Microsoft. See
 
 1. 选择 **"创建"**
 
-1. 为配置文件选择一个名称，如 *本示例中的 AccessibilityformacOS。* 选择 **下一步**。
+1. 为配置文件选择一个名称，如 *本示例中的 AccessibilityformacOS。* 选择“**下一步**”。
 
 1. 选择在步骤 1 中下载的 **accessibility.mobileconfig** 文件作为配置文件。
 
-1. 选择 **"下一步"**
+1. 选择 **“下一步”**
 
 1. 在"**分配**"选项卡上，将想要部署这些配置的组添加到 ，然后选择"下一 **步"。**
 
@@ -111,7 +107,7 @@ To get access to this feature, you must register your tenant with Microsoft. See
 > [!IMPORTANT]
 > "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留 6 个月。
 
-1. 在 **Microsoft Endpoint Manager中心**，打开 **设备**  >  **配置文件**，你应该会看到你已创建的配置文件。
+1. 在 **Microsoft Endpoint Manager中**，打开 **"设备**  >  **配置文件"，** 你应该会看到已创建的配置文件。
 
 2. 在配置文件 **页** 中，选择 MDE 首选项配置文件。
 

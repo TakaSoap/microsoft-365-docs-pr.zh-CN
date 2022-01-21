@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint 警报字段
-description: 了解警报字段如何映射到 Microsoft Defender for Endpoint 中的值
+title: Microsoft Defender for Endpoint 检测域
+description: 了解检测字段如何映射到 Microsoft Defender for Endpoint 中的值
 keywords: 检测， 检测字段， 字段， api， 字段， 拉取检测， rest api， 请求， 响应
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2bb199a8ca0f8734da6562304b15cbf2cb4170cf
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a32bec44cfcc3e89dd44dbe89557a9faf2d6850b
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167414"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159609"
 ---
-# <a name="microsoft-defender-for-endpoint-alert-fields"></a>Microsoft Defender for Endpoint 警报字段
+# <a name="microsoft-defender-for-endpoint-detection-fields"></a>Microsoft Defender for Endpoint 检测域
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,18 +34,26 @@ ms.locfileid: "61167414"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-apiportalmapping-abovefoldlink)。
 
+> [!注意] Microsoft Defender for Endpoint SIEM REST API 计划弃用，因为 Microsoft Defender for Endpoint Alert API 和 Microsoft 365 Defender 事件 API 替换它，可提供更为丰富的元数据，包括警报最新状态、与警报相关的所有证据实体、分析员输入的所有注释，并允许更新状态， assignedTo、classification 和确定字段以编程方式。
+> 
+> 不会支持新载入到适用于终结点 SIEM API 的 Microsoft Defender，而是请参阅在 Defender for Endpoint 中启用[SIEM](enable-siem-integration.md)集成，了解有关与 Microsoft Defender for Endpoint 警报 API 或 Microsoft 365 Defender 事件 API 集成的信息。
+> 
+> 有关集成 SIEM 工具 (Splunk、ArcSight 和 QRadar) 的信息，请参阅将 [SIEM](../defender-endpoint/configure-siem.md)工具与 Microsoft Defender for Endpoint 集成。
+
 了解哪些数据字段作为检测 API 的一部分公开，以及如何映射到Microsoft 365 Defender。
 
 > [!NOTE]
 >
-> - [适用于终结点警报的](alerts.md) Defender 由一个或多个检测组成。
-> - **Microsoft Defender ATP 检测** 由设备上发生的可疑事件及其相关的警报 **详细信息组成** 。
+> - [Microsoft Defender 终结点警报](alerts.md) 由一个或多个检测组成。
+> - **Microsoft Defender for Endpoint Detection** 由设备上发生的可疑事件及其相关的 **警报详细信息组成** 。
 > - Microsoft Defender for Endpoint 警报 API 是警报使用的最新 API，包含每个警报的相关证据的详细列表。 有关详细信息，请参阅[警报方法和属性和](alerts.md)[列表警报](get-alerts.md)。
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>检测 API 字段和门户映射
 
 下表列出了检测 API 有效负载中公开的可用字段。 它显示了填充值的示例，并引用了如何在门户上反映数据。
-
+> 
+> 下面介绍的 MicroFocus ArcSight FlexConnector 已替换为调用事件 API Microsoft 365 Defender SmartConnector。 有关详细信息，请参阅在 Defender [for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
+> 
 ArcSight 字段列包含 Defender for Endpoint 字段和 ArcSight 中的内置字段之间的默认映射。 当你启用 SIEM 集成功能时，你可以从门户下载映射文件，并且你可以对其进行修改以满足你的组织的需求。 有关详细信息，请参阅在 Defender [for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
 
 字段编号与下图中的数字匹配。
@@ -68,16 +76,16 @@ ArcSight 字段列包含 Defender for Endpoint 字段和 ArcSight 中的内置�
 > |12 |Md5|deviceCustomString5|db979c04a99b96d370988325bb5a8b21|可用于 Microsoft Defender AV 检测。|
 > |13|ThreatName|deviceCustomString1|HackTool：Win32/M一tz！dha|可用于 Microsoft Defender AV 检测。|
 > |14 |IpAddress|sourceAddress|218.90.204.141|可用于与网络事件关联的检测。 例如，"与恶意网络目标的通信"。|
-> |15 |URL|requestUrl|down.esales360.cn|可用于与网络事件关联的检测。 例如，"与恶意网络目标的通信"。|
+> |15 |Url|requestUrl|down.esales360.cn|可用于与网络事件关联的检测。 例如，"与恶意网络目标的通信"。|
 > |16|RemediationIsSuccess|deviceCustomNumber2|TRUE|可用于 Microsoft Defender AV 检测。 当为 TRUE 时，ArcSight 值为 1，FALSE 时为 0。|
 > |17 |WasExecutingWhileDetected|deviceCustomNumber1|FALSE|可用于 Microsoft Defender AV 检测。 当为 TRUE 时，ArcSight 值为 1，FALSE 时为 0。|
 > |18 |AlertId|externalId|636210704265059241_673569822|可用于每个检测的值。|
 > |19|LinkToWDATP|flexString1|`https://securitycenter.windows.com/alert/636210704265059241_673569822`|可用于每个检测的值。|
 > |20|AlertTime|deviceReceiptTime|2017-05-07T01：56：59.3191352Z|事件发生的时间。 可用于每个检测的值。|
-> | 21|MachineDomain|sourceDnsDomain|contoso.com|与已加入设备AAD域名。 可用于每个检测的值。|
+> | 21|MachineDomain|sourceDnsDomain|contoso.com|与已加入AAD的域名不相关。 可用于每个检测的值。|
 > |22|Actor|deviceCustomString4|一个|可用于与已知主角组相关的警报。|
 > |21+5|ComputerDnsName|无映射|liz-bean.contoso.com|设备完全限定的域名。 可用于每个检测的值。|
-> ||LogOnUsers|sourceUserId|contoso\liz-bean;contoso\为 hardee|事件发生时交互式登录用户的域和用户。 注意：对于 Windows 10版本 1607 的设备，域信息将不可用。|
+> ||LogOnUsers|sourceUserId|contoso\liz-bean;contoso\为 hardee|事件发生时交互式登录用户的域和用户。 注意：对于Windows 10版本 1607 的设备，域信息将不可用。|
 > ||InternalIPv4List|无映射|192.168.1.7, 10.1.14.1|活动网络接口的 IPV4 内部 IP 列表。|
 > ||InternalIPv6List|无映射|fd30：0000：0000：0001：ff4e：003e：0009：000e， FE80：CD00：0000：0CDE：1257：0000：211E：729C|活动网络接口的 IPV6 内部 IP 列表。|
 > ||LinkToMTP|无映射|`https://securitycenter.windows.com/alert/da637370718981685665_16349121`|可用于每个检测的值。
