@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: 了解 dlp 策略条件和例外
-ms.openlocfilehash: 1b6d37356a17fcb9cd5b1aa4ec97a69790c733c0
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: a0354fe6392d739fa1b616e92625b7507cca823f
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159513"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172255"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP 策略条件、异常和操作
 
@@ -50,26 +50,27 @@ DLP 策略中的条件和例外可标识策略应用于的敏感项目。 操作
 
 如果使用发件人地址作为条件或例外，则查找值的实际字段因使用的规则类型而异。 对于基于 DLP 的规则，信封地址用作发件人地址。 例如Exchange邮件头地址用作发件人地址。
 
+<!--
 > [!NOTE]
-> 从 2022 年 1 月 20 日开始，默认发件人地址位置将随 -SenderAddressLocation 参数的可用性一起移动到头地址，以在 DLP 规则级别配置所需行为。
+> Starting January 20, 2022, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
 
 ![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
 
-在租户级别，可以将发件人地址位置配置为在所有规则之间使用，除非被单个规则覆盖。 若要还原租户 DLP 策略配置以跨所有规则从信封评估发件人地址，可以运行以下命令：
+At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
 
 ```PowerShell
 Set-PolicyConfig –SenderAddressLocation Envelope
 ```
 
-若要在 DLP 规则级别配置发件人地址位置，参数为 _SenderAddressLocation_。 可用值有：
+To configure the sender address location at a DLP rule level, the parameter is _SenderAddressLocation_. The available values are:
 
-- **标头**：仅检查邮件头中的发件人 (例如 From、Sender 或 **Reply-To** 字段) 。  此值为默认值。
+- **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value.
 
-- **信封**：仅检查邮件信封中的发件人 (SMTP 传输中使用的 **MAIL FROM** 值，该值通常存储在 **"** 返回路径"字段) 。
+- **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field).
 
-- **邮件头或** () 检查邮件头和邮件信封 `HeaderOrEnvelope` 中的发件人。
+- **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 <br>
-
+-->
 |DLP 中的条件或例外|powerShell 中的条件/Microsoft 365参数|属性类型|说明|
 |---|---|---|---|
 |发件人为|condition： *From* <br/> exception： *ExceptIfFrom*|地址|由组织中指定的邮箱、邮件用户、邮件联系人或Microsoft 365组发送的邮件。|
@@ -77,7 +78,7 @@ Set-PolicyConfig –SenderAddressLocation Envelope
 |发件人 IP 地址为|condition： *SenderIPRanges*<br/> 例外 *：ExceptIfSenderIPRanges*|IPAddressRanges|发件人的 IP 地址匹配指定的 IP 地址或位于指定的 IP 地址范围内的邮件。|
 |发件人地址包含词语|condition： *FromAddressContainsWords* <br/> exception： *ExceptIfFromAddressContainsWords*|Words|发件人电子邮件地址中包含指定词语的邮件。|
 |发件人地址与模式匹配|condition： *FromAddressMatchesPatterns* <br/> exception： *ExceptFromAddressMatchesPatterns*|模式|发件人的电子邮件地址包含匹配指定正则表达式的文本模式的邮件。|
-|发件人域为|condition： *SenderDomainIs* <br/> 例外 *：ExceptIfSenderDomainIs*|DomainName|发件人的电子邮件地址域与指定值匹配的邮件。 如果您需要查找包含指定域 (例如，域) 的任何子域的发件人域，请使用与 **(** *FromAddressMatchesPatterns*) 条件匹配的发件人地址并使用语法"' \. domain \. com$"指定域。|
+|发件人域为|condition： *SenderDomainIs* <br/> 例外 *：ExceptIfSenderDomainIs*|DomainName|发件人的电子邮件地址域与指定值匹配的邮件。 如果需要查找包含指定域 (例如域) 的任何子域的发件人域，请使用与 **(** *FromAddressMatchesPatterns*) 条件匹配的发件人地址，并使用语法"' \. domain \. com$"指定域。|
 |发件人作用域|condition： *FromScope* <br/> exception： *ExceptIfFromScope*|UserScopeFrom|由内部或外部发件人发送的邮件。|
 |发件人的指定属性包括以下任何词语|condition： *SenderADAttributeContainsWords* <br/> 例外 *：ExceptIfSenderADAttributeContainsWords*|首要属性： `ADAttribute` <p> 第二个属性： `Words`|发件人的指定的 Active Directory 属性包含任意的指定词语的邮件。|
 |发件人的指定属性匹配这些文本模式|condition： *SenderADAttributeMatchesPatterns* <br/> 例外 *：ExceptIfSenderADAttributeMatchesPatterns*|首要属性： `ADAttribute` <p> 第二个属性： `Patterns`|发件人的指定的 Active Directory 属性包含与指定正则表达式匹配的文本模式的邮件|
@@ -95,7 +96,7 @@ Set-PolicyConfig –SenderAddressLocation Envelope
 |收件人域为|condition： *RecipientDomainIs* <br/> exception： *ExceptIfRecipientDomainIs*|DomainName|收件人电子邮件地址的域与指定值匹配的邮件。|
 |收件人地址包含字词|condition： *AnyOfRecipientAddressContainsWords* <br/> exception： *ExceptIfAnyOfRecipientAddressContainsWords*|Words|收件人电子邮件地址中包含指定词语的邮件。 <br/>**注意**：此条件不考虑发送到收件人代理地址的邮件。它只匹配发送到收件人主电子邮件地址的邮件。|
 |收件人地址与模式匹配|condition： *AnyOfRecipientAddressMatchesPatterns* <br/> exception： *ExceptIfAnyOfRecipientAddressMatchesPatterns*|模式|收件人的电子邮件地址包含匹配指定正则表达式的文本模式的邮件。 <br/> **注意**：此条件不考虑发送到收件人代理地址的邮件。它只匹配发送到收件人主电子邮件地址的邮件。|
-|发送到的|condition： *SentToMemberOf* <br/> exception： *ExceptIfSentToMemberOf*|地址|包含收件人的邮件，这些收件人是指定通讯组、已启用邮件的安全组或Microsoft 365组的成员。 组可以在邮件的"**收件人****"、"** 抄送"**或"密** 件抄送"字段中。|
+|发送到的|condition： *SentToMemberOf* <br/> exception： *ExceptIfSentToMemberOf*|地址|包含收件人的邮件，这些收件人是指定通讯组、已启用邮件的安全组或Microsoft 365组。 组可以在邮件的"**收件人****"、"** 抄送"**或"密** 件抄送"字段中。|
 |收件人的指定属性包括以下任何词语 |_RecipientADAttributeContainsWords_ <br/> _ExceptIfRecipientADAttributeContainsWords_|首要属性： `ADAttribute` <p> 第二个属性： `Words`|收件人的指定的 Active Directory 属性包含任意的指定词语的邮件。 <p> 请注意 **，Country** 属性需要两个字母的国家/地区代码值 (，例如，DE 表示德国) 。|
 |收件人的指定属性匹配这些文本模式 |_RecipientADAttributeMatchesPatterns_ <br/> _ExceptIfRecipientADAttributeMatchesPatterns_|首要属性： `ADAttribute` <p> 第二个属性： `Patterns`|收件人的指定的 Active Directory 属性包含与指定正则表达式匹配的文本模式的邮件。|
 |
@@ -115,7 +116,7 @@ Set-PolicyConfig –SenderAddressLocation Envelope
 |主题或正文包含字词|condition： *SubjectOrBodyContainsWords* <br/> exception： *ExceptIfSubjectOrBodyContainsWords*|Words|主题字段或邮件正文中具有指定词语的邮件|
 |
 
-### <a name="attachments"></a>Attachments
+### <a name="attachments"></a>附件
 
 <br>
 
@@ -123,7 +124,7 @@ Set-PolicyConfig –SenderAddressLocation Envelope
 
 |DLP 中的条件或例外|powerShell 中的条件/Microsoft 365参数|属性类型|说明|
 |---|---|---|---|
-|附件受密码保护|condition： *DocumentIsPasswordProtected* <br/> exception： *ExceptIfDocumentIsPasswordProtected*|无|附件受密码保护的邮件（因而无法扫描）。 密码检测仅适用于Office文件、.zip文件以及 .7z 文件。|
+|附件受密码保护|condition： *DocumentIsPasswordProtected* <br/> exception： *ExceptIfDocumentIsPasswordProtected*|无|附件受密码保护的邮件（因而无法扫描）。 密码检测仅适用于Office、.zip文件以及 .7z 文件。|
 |附件的文件扩展名为|condition： *ContentExtensionMatchesWords* <br/> 例外 *：ExceptIfContentExtensionMatchesWords*|Words|附件的文件扩展名匹配任意指定词语的邮件。|
 |无法扫描任何电子邮件附件的内容|condition： *DocumentIsUnsupported* <br/>exception： *ExceptIf DocumentIsUnsupported*|不适用|附件在本机无法被用户识别Exchange Online。|
 |任何电子邮件附件的内容未完成扫描|condition： *ProcessingLimitExceeded* <br/> 例外 *：ExceptIfProcessingLimitExceeded*|无|规则引擎无法完成附件扫描的邮件。可以使用此条件创建规则，以协同工作来标识并处理无法完全扫描内容的邮件。|
@@ -176,11 +177,13 @@ Set-PolicyConfig –SenderAddressLocation Envelope
 |将邮件重定向到特定用户|*RedirectMessageTo*|地址|将电子邮件重定向到指定的收件人。邮件不会传递给原始收件人，也不会向发件人或原始收件人发送通知。|
 |将邮件转发给发件人的经理进行审批|适度|第一个属性 *：ModerateMessageByManager*</br> 第二个属性 *：Boolean*|Moderate 参数指定向审查方发送电子邮件的 DLP 规则的操作。 此参数使用语法 @{ModerateMessageByManager = <$true \| $false>;|
 |将邮件转发给特定审批者进行审批|适度|第一个属性 *：ModerateMessageByUser*</br>次要属性：*Addresses*|Moderate 参数指定向审查方发送电子邮件的 DLP 规则的操作。 此参数使用语法：@{ ModerateMessageByUser = @ ("emailaddress1"，"emailaddress2",..."emailaddressN") }|
-|添加收件人|AddRecipients|第一个属性 *：Field*</br>次要属性：*Addresses*|将一个或多个收件人添加到邮件的"收件人/抄送/密件抄送"字段中。 此参数使用语法 ：@{<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
+|添加收件人|AddRecipients|第一个属性 *：Field*</br>次要属性：*Addresses*|将一个或多个收件人添加到邮件的"收件人/抄送/密件抄送"字段中。 此参数使用语法：@{<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
 |将发件人的经理添加为收件人|AddRecipients|第一个属性 *：AddedManagerAction*</br>Second 属性 *：Field*|将发件人的经理添加到邮件中作为指定收件人类型 (To、Cc、Bcc)，或在不通知发件人或收件人的情况下将邮件重定向到发件人的经理。 此操作仅在发件人的 Manager 属性于 Active Directory 中定义时适用。 此参数使用语法：@{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|
 Prepend subject|PrependSubject|String|将指定的文本添加到邮件" Subject "字段的开头。考虑使用空格或冒号 (:) 作为指定文本的最后一个字符以区别于原始的主题文本。  </br>若要防止将同一字符串添加到主题 (中已包含文本的邮件（例如，答复) ），请向规则添加"主题包含单词" (ExceptIfSubjectContainsWords) 例外。|
-|修改主题|ModifySubject|PswsHashTable | 从与特定模式匹配的主题行中删除文本，并将其替换为不同的文本。 请参阅下面的示例。 可以执行下列操作： </br>- **将** 主题中所有匹配项替换为替换文本 </br>- **追加** 以删除主题中所有匹配项，并将替换文本插入到主题的末尾。 </br>- **在删除** 所有匹配项之前，在主题开头插入替换文本。|
-|应用 HTML 免责声明|ApplyHtmlDisclaimer|第一个属性 *：Text*</br>Second 属性 *：Location*</br>第三个属性 *：回退操作*|将指定的 HTML 免责声明应用于邮件的所需位置。</br>此参数使用语法：@{ Text = " " ;Location = <Append \| Prepend>;FallbackAction = <\| Wrap Ignore Reject> \| }|
+|应用 HTML 免责声明|ApplyHtmlDisclaimer|第一个属性 *：Text*</br>Second 属性 *：Location*</br>第三个属性 *：回退操作*|将指定的 HTML 免责声明应用于邮件的所需位置。</br>此参数使用语法：@{ Text = " " ;Location = <\| Append Prepend>;FallbackAction = <\| Wrap Ignore Reject> \| }|
 |删除Office 365 邮件加密和权限保护|RemoveRMSTemplate|不适用|删除Office 365应用于电子邮件的加密|
 |将邮件发送到托管隔离区 |_Quarantine_|无| 此操作当前处于公共 **预览阶段**。 在此阶段中，DLP 策略隔离的电子邮件将显示策略类型为 ExchangeTransportRule。</br> 将邮件发送到 EOP 中的隔离区。 有关详细信息，请参阅 [EOP 中的隔离电子邮件](/microsoft-365/security/office-365-security/quarantine-email-messages)。|
 |
+
+<!--|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: </br>- **Replace** all matches in the subject with the replacement text </br>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. </br>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|-->
+

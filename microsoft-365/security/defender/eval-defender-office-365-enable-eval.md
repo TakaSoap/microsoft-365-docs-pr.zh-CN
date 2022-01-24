@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: fbff56ef52c7b7fc73c8ad2f557a831d36bbbaaa
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4d2f77b41dccd5620b96d816869d7d7b6458a798
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937828"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172171"
 ---
 # <a name="enable-the-evaluation-environment"></a>启用评估环境
 
@@ -73,13 +75,13 @@ ms.locfileid: "61937828"
 2. 选择已验证的电子邮件域，然后单击"管理 DNS"。
 3. 记下生成并分配给 EOP 租户的 MX 记录。
 4. 访问外部 (公共) DNS 区域，并检查与您的电子邮件域关联的主 MX 记录。
-    - *如果公共 MX 记录当前与分配的 EOP* 地址匹配 (例如 tenant-com.mail.protection.outlook.com) ，则不需要进一步路由更改。
+    - *如果公共 MX 记录当前与分配的 EOP* 地址相匹配 (例如 tenant-com.mail.protection.outlook.com) ，则不需要进一步路由更改。
     - 如果公共 MX 记录当前解析为第三方或本地 SMTP 网关，可能需要其他路由配置。
     - 如果公共 MX 记录当前解析为本地Exchange则您可能仍在混合模型中，其中某些收件人邮箱尚未迁移到 EXO。
 
 ## <a name="step-3-audit-accepted-domains"></a>步骤 3：审核接受的域
 
-1. 登录管理Exchange Online，选择"邮件Flow，然后单击"接受域"。
+1. 登录管理Exchange Online，选择"邮件Flow"，然后单击"接受域"。
 2. 在租户中添加并验证的接受域列表中，记下 **主电子邮件域** 的域类型。
     - 如果域类型设置为 ***"*** 权威"，则假定组织的所有收件人邮箱当前都位于Exchange Online。
     - 如果域类型设置为" ***内部*** 中继"，则您可能仍在混合模型中，其中某些收件人邮箱仍驻留在本地。
@@ -101,7 +103,7 @@ ms.locfileid: "61937828"
 
 3. 从导航菜单中，选择电子邮件 **&协作** 下的策略 *&规则*。
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-activate-eval.png" alt-text="下面是指向策略&&quot;协作&quot;菜单图片&图片。单击该按钮！":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-activate-eval.png" alt-text="下面是指向策略和&的电子邮件协作菜单&图片。单击该按钮！":::
 
 4. 在策略策略 *&仪表板* 上，单击威胁 **策略**。
 
@@ -109,9 +111,9 @@ ms.locfileid: "61937828"
 
 5. 向下滚动到"*其他策略"，* 然后选择"**评估 Defender Office 365** 磁贴。
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-activate-eval.png" alt-text="Eval Defender for Office 365磁贴，显示它是跨电子邮件和协作矢量进行 30 &试用版。单击浏览。":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-activate-eval.png" alt-text="Eval Defender for Office 365磁贴显示这是电子邮件和协作矢量的 30 &试用版。单击浏览。":::
 
-6. 现在选择是直接将外部电子邮件路由Exchange Online路由到第三方网关还是第三方网关或服务，然后单击"下一步"。
+6. 现在，选择外部电子邮件Exchange Online直接路由到第三方网关还是服务，然后单击"下一步"。
 
    :::image type="content" source="../../media/mdo-eval/5_mdo-eval-activate-eval.png" alt-text="Defender for Office 365将评估发送到你的邮箱Exchange Online邮件。提供现在如何路由邮件的详细信息，包括路由邮件的出站连接器的名称。如果您仅Exchange Online Protection (EOP) 您将没有连接器。选择我使用第三方或本地提供商之一，或者我仅使用 EOP。":::
 
@@ -130,6 +132,6 @@ ms.locfileid: "61937828"
 
 步骤 3/3：设置 Microsoft Defender for Office 365
 
-返回到评估 Microsoft [Defender for Office 365](eval-defender-office-365-overview.md)
+返回到评估 Microsoft [Defender](eval-defender-office-365-overview.md) for Office 365
 
 返回到评估和试点[计划概述Microsoft 365 Defender](eval-overview.md)

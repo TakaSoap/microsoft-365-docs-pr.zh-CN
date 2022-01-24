@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 184ec4dcdd5601585e046ced410141047fdfa24f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6910336dea0559ad241c240cde09d3929fe2e422
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942664"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62170971"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>启用 Microsoft Defender 标识评估环境
 
@@ -78,7 +80,7 @@ ms.locfileid: "61942664"
 
 Microsoft Defender for Identity 横向移动路径检测依赖于标识特定计算机上本地管理员的查询。 这些查询通过 SAM-R 协议使用 Defender for Identity Service 帐户执行。 
 
-为了确保 Windows 客户端和服务器允许 Defender for Identity 帐户执行 SAM-R，除了网络访问策略中列出的配置帐户之外，还必须修改组策略以添加 Defender for Identity 服务帐户。 请确保将组策略应用于除 **域控制器 之外的所有计算机**。
+若要Windows客户端和服务器允许 Defender for Identity 帐户执行 SAM-R，除了网络访问策略中列出的配置帐户之外，还必须修改组策略以添加 Defender for Identity 服务帐户。 请确保将组策略应用于除 **域控制器 之外的所有计算机**。
 
 有关如何执行此操作的说明，请参阅配置 [Microsoft Defender for Identity 以对 SAM 进行远程调用](/defender-for-identity/install-step8-samr)。 
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: 实施 Microsoft 信息保护 (MIP) 功能，无论在何处生活或旅居在外，均可助你保护敏感信息。
-ms.openlocfilehash: b3c7fc80f3735452ece4361ae3031ef6aa8f6bfc
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: bba0c41fd9018a6952d69a20fcc046a8b65c1e5b
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61577777"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62170983"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息保护
 
@@ -55,17 +55,17 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
 
 |功能|它能解决什么问题？|开始行动|
 |:------|:------------|---------------------|
-|[敏感度标签](sensitivity-labels.md)| 跨应用、服务和设备的单一解决方案可在行经组织内外时标记并保护你的数据。 <p> 示例方案： <p> [管理 Office 应用的敏感度标签](sensitivity-labels-office-apps.md) <p> [加密文档和电子邮件](encryption-sensitivity-labels.md) <p> [在 Power BI 中应用和查看标签](/power-bi/admin/service-security-apply-data-sensitivity-labels) <p> 有关敏感度标签的方案综合列表，请参阅入门文档。|[开始使用敏感度标签](get-started-with-sensitivity-labels.md) |
-|[Azure 信息保护统一标记客户端](/azure/information-protection/rms-client/aip-clientv2)| 对于 Windows 计算机，扩展了其他特性和功能的敏感标签，包括标记和保护文件资源管理器和 PowerShell 中的所有文件类型 <p> 示例附加功能：[自定义配置 Azure 信息保护统一标记客户端](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure 信息保护统一标记客户端管理员指南](/azure/information-protection/rms-client/clientv2-admin-guide)|
+|[敏感度标签](sensitivity-labels.md)| 跨应用、服务和设备的单一解决方案可在行经组织内外时标记并保护你的数据。 <br /><br /> 示例方案： <br />- [管理 Office 应用的敏感度标签](sensitivity-labels-office-apps.md) <br />- [加密文档和电子邮件](encryption-sensitivity-labels.md) <br />-  [在 Power BI 中应用和查看标签](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> 有关敏感度标签的方案综合列表，请参阅入门文档。|[开始使用敏感度标签](get-started-with-sensitivity-labels.md) |
+|[Azure 信息保护统一标记客户端](/azure/information-protection/rms-client/aip-clientv2)| 对于 Windows 计算机，将标签扩展到文件资源管理器和 PowerShell ，并为 Office 应用提供其他功能 （如果需要）| [Azure 信息保护统一标记客户端管理员指南](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[双密钥加密](double-key-encryption.md)| 在所有情况下，只有你可以解密受保护的内容，或者为了满足监管要求，你必须在某一地理范围内持有加密的密钥。 | [部署双密钥加密](double-key-encryption.md#deploy-dke)|
-|[Office 365 邮件加密 (OME)](ome.md)| 请加密发送到任意设备上任何用户的电子邮件和附加文档，以便仅获授权的收件人可阅读电子邮件信息。 <p> 示例方案： [撤消通过高级邮件加密进行加密的电子邮件](revoke-ome-encrypted-mail.md) | [设置全新的邮件加密功能](set-up-new-message-encryption-capabilities.md)|
+|[Office 365 邮件加密 (OME)](ome.md)| 请加密发送到任意设备上任何用户的电子邮件和附加文档，以便仅获授权的收件人可阅读电子邮件信息。 <br /><br />  示例方案： [撤消通过高级邮件加密进行加密的电子邮件](revoke-ome-encrypted-mail.md) | [设置全新的邮件加密功能](set-up-new-message-encryption-capabilities.md)|
 |[使用客户密钥执行服务加密](customer-key-overview.md) | 防止未经授权的系统或人员查看数据，并在 Microsoft 数据中心中补充 BitLocker 磁盘加密。 | [设置 Office 365 的客户密钥](customer-key-set-up.md)|
 |[SharePoint 信息权限管理 (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|保护 SharePoint 列表和库，以便当用户签出文档时，对下载的文件进行保护，即仅获得授权人员可根据指定策略查看和使用该文件。 | [在 SharePoint 管理中心设置信息权限管理 (IRM)](set-up-irm-in-sp-admin-center.md)|
 [权限管理连接器](/azure/information-protection/deploy-rms-connector) |保护 - 仅适用于使用 Exchange 或 SharePoint Server 的现有本地部署，或运行 Windows Server 和文件分类基础结构的文件服务器 (FCI) 的文件服务器。 | [部署 RMS 连接器的步骤](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Azure 信息保护统一标记扫描器](/azure/information-protection/deploy-aip-scanner)| 发现、标记和保护驻留在本地数据存储区中的敏感信息。 | [配置和安装 Azure 信息保护统一标记扫描器](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| 发现、标记和保护驻留在云中数据存储区内的敏感信息。 | [发现、分类、标记和保护存储在云中的管控和敏感数据](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |[Azure Purview](/azure/purview/overview) |标识敏感数据并对 Azure Purview 资产中的内容应用自动标记。 其中包含存储中的文件，如 Azure Data Lake 和 Azure Files，以及 Azure SQL DB 和 Cosmos DB 中的列等图表化数据。 |[在 Azure Purview 中贴标签](/azure/purview/create-sensitivity-label) |
-|[Microsoft 信息保护 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|将灵敏度标签扩展到第三方应用和服务。 <p> 示例方案： [设置和获取灵敏度标签 (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft 信息保护 (MIP) SDK 安装和配置](/information-protection/develop/setup-configure-mip)|
+|[Microsoft 信息保护 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|将灵敏度标签扩展到第三方应用和服务。 <br /><br />  示例方案： [设置和获取灵敏度标签 (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft 信息保护 (MIP) SDK 安装和配置](/information-protection/develop/setup-configure-mip)|
 
 
 ## <a name="prevent-data-loss"></a>防止数据丢失

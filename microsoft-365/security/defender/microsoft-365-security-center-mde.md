@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint in Microsoft 365 Defender
-description: 了解从 Microsoft Defender 安全中心 到 Microsoft 365 Defender
+description: 了解从一个Microsoft Defender 安全中心到Microsoft 365 Defender
 keywords: 入门：Microsoft 365 Defender、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、安全门户、Defender 安全门户
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -18,14 +18,13 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 8400723f06d760657536fc85a711ce9efb2b82eb
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 0a8ec594f59285f1b4e861ec464bbbeb6083f001
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937708"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172387"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender for Endpoint in Microsoft 365 Defender
 
@@ -45,7 +44,7 @@ ms.locfileid: "61937708"
 
 | Microsoft Defender 安全中心 | Microsoft 365 Defender |
 |---------|---------|
-| 仪表板 <ul><li>安全操作</li><li>威胁分析</li></ul>  |家庭版 <ul><li>威胁分析</li></ul>   |
+| 仪表板 <ul><li>安全操作</li><li>威胁分析</li></ul>  |主页 <ul><li>威胁分析</li></ul>   |
 | 事件 | 事件和警报 |
 | 设备清单 | 设备清单 |
 | 警报队列 | 事件和警报 |
@@ -58,13 +57,13 @@ ms.locfileid: "61937708"
 | 配置管理 | 配置管理 |
 | 设置 | 设置 | 
 
-改进的[Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal)结合了保护、检测、调查和响应电子邮件、协作、标识 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> 和设备威胁的管理功能。 这汇集了现有 Microsoft 安全门户中的功能，Microsoft Defender 安全中心安全Office 365安全&中心。
+改进的[Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal)结合了保护、检测、调查和响应电子邮件、协作、标识 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> 和设备威胁的管理功能。 这汇集了现有 Microsoft 安全门户中的功能，包括 Microsoft Defender 安全中心 和 Office 365 安全&中心。
 
 如果您熟悉本文中的Microsoft Defender 安全中心，本文可帮助描述本文中的一些更改Microsoft 365 Defender。 但是，要注意一些新的和更新的元素。
 
-过去[，Microsoft Defender 安全中心](/windows/security/threat-protection/microsoft-defender-atp/portal-overview)一直是 Microsoft Defender for Endpoint 的主页。 Enterprise安全团队已使用它监视和帮助响应潜在高级永久性威胁活动或数据泄露的警报。 为了帮助减少门户数量，Microsoft 365 Defender Microsoft 标识、数据、设备、应用和基础结构中监视和管理安全性的主页。
+过去[，Microsoft Defender 安全中心](/windows/security/threat-protection/microsoft-defender-atp/portal-overview)一直是 Microsoft Defender for Endpoint 的主页。 Enterprise安全团队已使用它监视和帮助响应潜在高级永久性威胁活动或数据泄露的警报。 为了帮助减少门户数量，Microsoft 365 Defender Microsoft 标识、数据、设备、应用和基础结构中用于监视和管理安全性的主页。
 
-microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSP) ](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same way [is granted in the Microsoft Defender 安全中心](mssp-access.md).
+microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSP) ](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same [way is granted in the Microsoft Defender 安全中心](mssp-access.md).
 
 > [!IMPORTANT]
 > 你在当前订阅Microsoft 365 Defender取决于你的当前订阅。 例如，如果你没有 Microsoft Defender for Office 365许可证，将不会显示"电子邮件&协作"部分。
@@ -89,15 +88,15 @@ microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting acc
 | 领域 | 更改说明 |
 |---------|---------|
 | [事件&警报](incidents-overview.md)  | 在Microsoft 365 Defender中，可以跨所有终结点、电子邮件和标识管理事件和警报。 我们已将体验融合在一起，帮助你更轻松地查找相关事件。 有关详细信息，请参阅 [事件概述](incidents-overview.md)。   |
-| [搜寻](advanced-hunting-overview.md)  |  修改在 Microsoft Defender for Endpoint 中创建的自定义检测规则以包含标识和电子邮件表会自动将它们移动到Microsoft 365 Defender。 其相应的警报也会显示在Microsoft 365 Defender。 有关这些更改的更多详细信息，请阅读迁移 [自定义检测规则](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules)。 <br><br>高级 `DeviceAlertEvents` 搜寻的表在Microsoft 365 Defender。 若要在设备上查询特定于设备的警报Microsoft 365 Defender，可以使用 和 表来容纳来自各种源 `AlertInfo` `AlertEvidence` 集的更多信息。 通过以下不含 [DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents)的 Write 查询制作下一个与设备相关的查询。|
-|[操作中心](m365d-action-center.md)    | 列出在自动调查和修正操作之后执行挂起和已完成的操作。 以前，"操作中心"Microsoft Defender 安全中心列出仅对设备上采取的修正操作挂起和已完成的操作，而自动调查列出了警报和状态。 在改进Microsoft 365 Defender中，操作中心将电子邮件、设备和用户之间的修正操作和调查汇集在一起，所有这些操作都位于一个位置。  |
+| [搜寻](advanced-hunting-overview.md)  |  修改在 Microsoft Defender for Endpoint 中创建的自定义检测规则，以包含标识和电子邮件表会自动将它们Microsoft 365 Defender。 其相应的警报也会显示在Microsoft 365 Defender。 有关这些更改的更多详细信息，请阅读迁移 [自定义检测规则](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules)。 <br><br>高级 `DeviceAlertEvents` 搜寻的表在Microsoft 365 Defender。 若要在设备上查询特定于设备的警报Microsoft 365 Defender，可以使用 和 表来容纳来自各种源 `AlertInfo` `AlertEvidence` 集的更多信息。 通过以下不含 [DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents)的 Write 查询制作下一个与设备相关的查询。|
+|[操作中心](m365d-action-center.md)    | 列出在自动调查和修正操作之后执行挂起和已完成的操作。 以前，"操作中心"Microsoft Defender 安全中心列出仅对设备采取的修正操作挂起和已完成的操作，而自动调查列出了警报和状态。 在改进Microsoft 365 Defender中，操作中心将电子邮件、设备和用户之间的修正操作和调查汇集在一起，所有这些操作都位于一个位置。  |
 | [威胁分析](threat-analytics.md) |  移动到导航栏顶部，以便更轻松地发现和使用。 现在包括终结点以及电子邮件和协作的威胁信息。    |
 
 ### <a name="endpoints"></a>终结点
 
 | 领域 | 更改说明 |
 |---------|---------|
-|搜索   |  搜索栏位于页面顶部。 键入时提供建议。 可以在 Defender for Endpoint 和 Defender for Identity 中跨以下实体进行搜索： <br><br> - **设备** - 支持 Defender for Endpoint 和 Defender for Identity。 您甚至可以使用搜索运算符，例如，您可以使用"contains"搜索主机名的一部分。 <br><br> - **用户** - 支持 Defender for Endpoint 和 Defender for Identity。 <br><br> - **文件、IP 和 URL** - 与 Defender for Endpoint 中的功能相同。 <br> 注意：*IP 和 URL 搜索完全匹配，不会显示在搜索结果页面中 ， 它们直接指向实体页面。  <br><br> - **TVM** - 与 Defender for Endpoint 中的相同功能 (漏洞、软件和建议) 。 <br><br>  增强的搜索结果页面集中了来自所有实体的结果。  |
+|搜索   |  搜索栏位于页面顶部。 键入时提供建议。 可以在 Defender for Endpoint 和 Defender for Identity 中跨以下实体进行搜索： <br><br> - **设备** - 支持 Defender for Endpoint 和 Defender for Identity。 您甚至可以使用搜索运算符，例如，您可以使用"contains"搜索主机名的一部分。 <br><br> - **用户** - 支持 Defender for Endpoint 和 Defender for Identity。 <br><br> - **文件、IP 和 URL** - 与 Defender for Endpoint 中的功能相同。 <br> 注意：*IP 和 URL 搜索完全匹配，不会显示在搜索结果页面中 ， 它们直接指向实体页面。  <br><br> - **TVM** - 与 Defender for Endpoint 中的相同 (漏洞、软件和建议) 。 <br><br>  增强的搜索结果页面集中了来自所有实体的结果。  |
 |[仪表板](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  这是安全操作仪表板。 请参阅触发的活动警报数、处于风险中的设备、处于风险中的用户以及警报、设备和用户的严重性级别。 还可以查看任何设备是否具有传感器问题、整体服务运行状况，以及如何检测到任何未解决的警报。 |
 |设备清单 | 无更改。 |
 |[漏洞管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    已缩短名称以适合导航窗格。 它与"页面"部分危险和漏洞管理相同，所有页面位于下方。     |
@@ -109,7 +108,7 @@ microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting acc
 > **自动调查和修正** 现在是事件的一部分。 You can see Automated investigation and remediation events in the **Incident > Investigation** tab.
 
 > [!TIP]
-> 设备搜索从 Endpoints > Search 完成。
+> 设备搜索从终结点和>完成。
 
 ### <a name="access-and-reporting"></a>访问和报告
 
@@ -121,7 +120,7 @@ microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting acc
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365安全导航和功能
 
-左侧导航栏或快速启动栏将看起来熟悉。 但是，该门户中新增了一些更新Microsoft 365 Defender元素。 
+左侧导航栏或快速启动栏将看起来熟悉。 但是，该门户中还有一些新的和更新Microsoft 365 Defender元素。 
 
 ### <a name="incidents-and-alerts"></a>事件和警报
 
@@ -175,7 +174,7 @@ microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting acc
 
 ### <a name="email-alerts"></a>电子邮件警报
 
-你可以继续使用 Defender for Endpoint 的电子邮件警报。 我们已在电子邮件中添加指向警报页面或事件页面中的新Microsoft 365 Defender。 有关详细信息，请参阅将帐户从[Microsoft Defender for Endpoint 重定向到Microsoft 365 Defender。](./microsoft-365-security-mde-redirection.md)
+你可以继续使用 Defender for Endpoint 的电子邮件警报。 我们已在电子邮件中添加指向警报页面或事件页面的新Microsoft 365 Defender。 有关详细信息，请参阅将帐户从[Microsoft Defender for Endpoint 重定向到Microsoft 365 Defender。](./microsoft-365-security-mde-redirection.md)
 
 ### <a name="managed-security-service-providers-mssp"></a>MSSP (托管安全服务) 
 

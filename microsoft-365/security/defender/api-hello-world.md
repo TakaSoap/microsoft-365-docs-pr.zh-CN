@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b4280999786cda02c183bb0eb03bea8c2c93c84
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 1c83a64c3bf1e721ea54b526c0db0c5d7c403fba
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202639"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172435"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World for Microsoft 365 Defender REST API
 
@@ -46,7 +47,7 @@ ms.locfileid: "60202639"
 
 1. 以具有全局管理员角色的用户 **登录** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **""新注册"。**
+2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册**。
 
    ![应用程序注册Microsoft Azure导航的图像。](../../media/atp-azure-new-app2.png)
 
@@ -79,7 +80,7 @@ ms.locfileid: "60202639"
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>使用应用获取令牌并使用令牌访问 API
 
-有关令牌Azure Active Directory，请参阅[Azure AD 教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
+有关令牌Azure Active Directory，请参阅Azure AD[教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
 
 > [!IMPORTANT]
 > 尽管此演示应用中的示例鼓励你为了测试目的粘贴机密值，但不应将密码硬编码到生产中运行的应用程序。 第三方可以使用你的密码访问资源。 通过使用 Azure 密钥保管库，可帮助保护 [应用密钥的安全](/azure/key-vault/general/about-keys-secrets-certificates)。 有关如何保护应用的实际示例，请参阅使用 Azure Key Vault 管理 [服务器应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/)。
@@ -172,10 +173,10 @@ Out-File -FilePath $outputJsonPath -InputObject $incidents
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365 DefenderAPI 概述](api-overview.md)
+- [Microsoft 365 Defender API 概述](api-overview.md)
 - [访问Microsoft 365 Defender API](api-access.md)
-- [创建应用以在没有Microsoft 365 Defender的情况下访问用户](api-create-app-web.md)
-- [创建应用以Microsoft 365 Defender访问 API](api-create-app-user-context.md)
+- [创建应用以在没有用户Microsoft 365 Defender访问应用程序](api-create-app-web.md)
+- [创建应用以Microsoft 365 Defender用户访问 API](api-create-app-user-context.md)
 - [创建具有对应用程序 API 的多租户Microsoft 365 Defender应用程序](api-partner-access.md)
 - [使用 Azure Key Vault 管理服务器应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 用户登录和 API 访问授权](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

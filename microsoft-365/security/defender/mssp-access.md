@@ -1,7 +1,7 @@
 ---
 title: 提供托管安全服务提供程序 (MSSP) 访问权限
-description: 了解从 Microsoft Defender 安全中心 到 Microsoft 365 Defender 门户的更改
-keywords: 入门：Microsoft 365 Defender门户、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、单窗格的门户、聚合门户、安全门户、Defender 安全门户
+description: 了解从网站Microsoft Defender 安全中心到 Microsoft 365 Defender 门户的更改
+keywords: 入门：Microsoft 365 Defender门户、适用于 Office 365 的 Microsoft Defender、Microsoft Defender for Endpoint、MDO、MDE、单窗格的门户、聚合门户、安全门户、Defender 安全门户
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -17,13 +17,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
-ms.openlocfilehash: 9750fc75e5fc90a0f5ea0c308870a4342070a427
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 641636528d35c148ceaa41827721e841dfafd4ec
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209029"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171043"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>提供托管安全服务提供程序 (MSSP) 访问权限 
 
@@ -38,7 +37,7 @@ ms.locfileid: "60209029"
 
 若要实现多租户委派访问解决方案，请执行以下步骤：
 
-1. 在[Microsoft 365 Defender](/windows/security/threat-protection/microsoft-defender-atp/rbac)门户的 Defender for Endpoint 中启用基于角色的访问控制，Azure Active Directory (Azure AD) 组。
+1. 通过[Microsoft 365 Defender](/windows/security/threat-protection/microsoft-defender-atp/rbac)门户为 Defender for Endpoint 启用基于角色的访问控制，并与Azure Active Directory (Azure AD) 连接。
 
 2. 配置 [用于访问请求](/azure/active-directory/governance/identity-governance-overview) 和预配的治理访问包。
 
@@ -46,9 +45,9 @@ ms.locfileid: "60209029"
 
 ## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-defender-portal"></a>在 Microsoft Defender for Endpoint 中启用基于角色的访问控制（Microsoft 365 Defender门户）
 
-1. **为客户 AAD 中的 MSSP 资源创建访问组：组**
+1. **在 Customer AAD： Groups 中为 MSSP 资源创建访问组**
 
-    这些组将链接到在 Defender for Endpoint 门户中Microsoft 365 Defender角色。 为此，在客户 AD 租户中，创建三个组。 在我们的示例方法中，我们将创建以下组：
+    这些组将链接到你在安全门户的 Defender for Endpoint Microsoft 365 Defender角色。 为此，在客户 AD 租户中，创建三个组。 在我们的示例方法中，我们将创建以下组：
 
     - 第 1 层分析员
     - 第 2 层分析员
@@ -56,7 +55,7 @@ ms.locfileid: "60209029"
 
 2. 在客户 Defender for Endpoint 中的相应访问级别创建适用于终结点的 Defender Microsoft 365 Defender门户角色和组。
 
-    若要在客户门户Microsoft 365 Defender RBAC，请>具有全局管理员或安全管理员权限的用户帐户&组>角色"访问"权限">终结点角色"。
+    若要在客户门户Microsoft 365 Defender RBAC，>具有全局管理员或安全管理员权限的用户帐户&组 >**角色**"访问"权限">终结点角色"。
 
     ![MSSP 访问的图像。](../../media/mssp-access.png)
 
@@ -74,13 +73,13 @@ ms.locfileid: "60209029"
 
 ## <a name="configure-governance-access-packages"></a>配置治理访问包
 
-1. **在客户 AAD 中添加 MSSP 作为连接组织：标识治理**
+1. **在 Customer AAD： Identity Governance 中将 MSSP 添加为连接组织**
 
     将 MSSP 添加为连接的组织将允许 MSSP 请求并设置访问权限。 
 
     为此，在客户 AD 租户中，访问标识治理：已连接组织。 添加新组织，然后通过租户 ID 或域搜索 MSSP 分析员租户。 建议为 MSSP 分析员创建单独的 AD 租户。
 
-2. **在客户 AAD：标识治理中创建资源目录**
+2. **在 Customer AAD： Identity Governance 中创建资源目录**
 
     资源目录是在客户 AD 租户中创建的访问包的逻辑集合。
 
@@ -90,7 +89,7 @@ ms.locfileid: "60209029"
 
     有关详细信息，请参阅创建 [资源目录](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
-3. **为 MSSP 资源创建访问包客户 AAD：标识治理**
+3. **为 MSSP 资源创建访问包客户AAD：标识治理**
 
     访问包是请求者在审批时将授予的权限和访问权限的集合。 
 
@@ -105,7 +104,7 @@ ms.locfileid: "60209029"
 
     有关详细信息，请参阅 [创建新的访问包](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
-4. **提供客户 AAD 中 MSSP 资源的访问请求链接：标识治理**
+4. **提供从 Customer AAD：Identity Governance 访问 MSSP 资源的访问请求链接**
 
     MSSP SOC 分析员使用"我的访问门户"链接通过创建的访问包请求访问。 该链接是持久链接，这意味着随着时间的推移，新分析师可能会使用相同的链接。 分析员请求进入一个队列，等待 **MSSP 分析员审批者审批**。
 
@@ -130,4 +129,4 @@ ms.locfileid: "60209029"
     `https://security.microsoft.com/?tid=<CustomerTenantId>` 具有分配的权限和角色。
 
 > [!IMPORTANT]
-> Microsoft Defender for Endpoint 在 Microsoft 365 Defender 中的委派访问权限当前允许每个浏览器窗口访问单个租户。
+> Microsoft Defender for Endpoint 在 Microsoft 365 Defender 门户中的委派访问权限当前允许每个浏览器窗口访问单个租户。

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65288d0644fa7761e91ad08a433d42bd85016e46
-ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
+ms.openlocfilehash: 6f7a3404ec0ae64e3dcdc4d6a3072e7fc2936646
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61436652"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172447"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的性能问题
 
@@ -46,17 +46,24 @@ ms.locfileid: "61436652"
 **适用于：**
 - 仅与 AV 相关的性能问题
 
-RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视和保护设备免受威胁。 它包含文件和进程监视以及其他启发。
+RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视你的设备并保护设备免受威胁。 它包含文件和进程监视以及其他启发。
+
 以下步骤可用于排查并缓解这些问题：
+
 1. 使用下列方法之一禁用实时保护并观察性能是否提高。 此方法有助于缩小 Linux 上的 Defender for Endpoint 是否导致性能问题。
+
     如果你的设备不是由组织管理的，可以通过命令行禁用实时保护：
+
     ```bash
     mdatp config real-time-protection --value disabled
     ```
+
     ```Output
     Configuration property updated
     ```
+
     如果你的设备由你的组织管理，则管理员可以使用在 Linux 上设置 Defender for Endpoint 的首选项中的说明禁用 [实时保护](linux-preferences.md)。
+
     > [!NOTE]
     > 如果实时保护关闭时性能问题仍然存在，则问题根源可能是终结点检测和响应 (EDR) 组件。 在这种情况下，请按照本文使用 **Microsoft Defender for Endpoint Client Analyzer** 解决性能问题部分中的步骤操作。
 
@@ -66,32 +73,47 @@ RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视�
     > 此功能在版本 100.90.70 或更高版本中可用。
 
     默认情况下，在 和 频道上 `Dogfood` 启用 `InsiderFast` 此功能。 如果使用的是其他更新通道，可以通过命令行启用此功能：
+
     ```bash
     mdatp config real-time-protection-statistics --value enabled
     ```
+
     此功能需要启用实时保护。 若要检查实时保护的状态，请运行以下命令：
+
     ```bash
     mdatp health --field real_time_protection_enabled
     ```
+
     验证条目 `real_time_protection_enabled` 是 `true` 。 否则，请运行以下命令以启用它：
+
     ```bash
     mdatp config real-time-protection --value enabled
     ```
+
     ```Output
     Configuration property updated
     ```
+
     若要收集当前统计信息，请运行：
+
     ```bash
     mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
     ```
-    > [!NOTE]
-    > 使用 ```--output json``` (请注意双) 短划线可确保输出格式已准备好进行分析。 此命令的输出将显示所有进程及其关联的扫描活动。
 
-3. 在 Linux 系统上，使用 命令下载 **python high_cpu_parser.py** 示例：
+    > [!NOTE]
+    > 使用 ```--output json``` (请注意双) 短划线可确保输出格式已准备好进行分析。
+
+    此命令的输出将显示所有进程及其关联的扫描活动。
+
+3. 在 Linux 系统中，使用 命令下载 **python high_cpu_parser.py** 示例：
+
     ```bash
     wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
+
     此命令的输出应类似于以下内容：
+
+
     ```Output
     --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
     Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.xxx.xxx
@@ -101,15 +123,20 @@ RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视�
     Saving to: 'high_cpu_parser.py'
     100%[===========================================>] 1,020    --.-K/s   in 0s
     ```
+
 4. 接下来，键入以下命令：
+
     ```bash
     chmod +x high_cpu_parser.py
     ```
+
     ```bash
     cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
     ```
+
       以上输出是性能问题的主要参与者的列表。 第一列是 PID (的进程标识符) ，第二列是进程名称，最后一列是扫描的文件数，按影响排序。
     例如，该命令的输出如下所示： 
+
     ```Output
     ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
     27432 None 76703
@@ -123,8 +150,9 @@ RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视�
     4764 None 228
     125  CrashPlanService 164
     ```
+
     若要提高 Linux 上 Defender for Endpoint 的性能，请在行下找到编号最高的一个， `Total files scanned` 并添加排除项。 有关详细信息，请参阅在 Linux 上配置并验证 [Defender for Endpoint 的排除项](linux-exclusions.md)。
-    
+
     > [!NOTE]
     > 应用程序将统计信息存储在内存中，并仅跟踪自文件启动和启用实时保护以来的文件活动。 在实时保护关闭之前或期间启动的进程不计入在内。 此外，仅计算触发扫描的事件。
 
@@ -132,7 +160,7 @@ RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视�
 
     有关详细信息，请参阅 [并验证 Microsoft Defender for Endpoint 在Linux上的排除](linux-exclusions.md)。
 
-## <a name="diagnose-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>使用 Microsoft Defender for Endpoint Client Analyzer 诊断性能问题
+## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>使用 Microsoft Defender for Endpoint Client Analyzer 解决性能问题
 
 **适用于：**
 - 所有适用于终结点组件的可用 Defender（如 AV 和 EDR  
@@ -140,7 +168,7 @@ RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视�
 Microsoft Defender for Endpoint Client Analyzer (MDECA) 可以收集跟踪、日志和诊断信息，以便解决 Linux 上[](/microsoft-365/security/defender-endpoint/onboard-configure)载入的设备的性能问题。
 
 > [!NOTE]
-> Microsoft 客户支持服务 (CSS) 会定期使用 Microsoft Defender for Endpoint 客户端分析工具收集信息，例如 (但不限于) IP 地址、电脑名称，可帮助解决你在使用 Microsoft Defender for Endpoint 时可能遇到的问题。 有关我们的隐私声明详细信息，请参阅 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
+> Microsoft 客户支持服务 (CSS) 会定期使用 Microsoft Defender for Endpoint 客户端分析器工具收集 (但不限于) IP 地址、可帮助解决 Microsoft Defender for Endpoint 可能遇到的问题的电脑名称。 有关我们的隐私声明详细信息，请参阅 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
 
 ### <a name="requirements"></a>要求
 

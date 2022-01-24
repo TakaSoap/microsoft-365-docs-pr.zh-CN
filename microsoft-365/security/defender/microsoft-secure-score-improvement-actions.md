@@ -1,6 +1,6 @@
 ---
 title: 通过 Microsoft 安全分数评估安全状况
-description: 介绍如何在 Microsoft 安全中心门户中采取措施Microsoft 365 Defender分数。
+description: 介绍如何采取措施来提高 Microsoft 安全分数在 Microsoft 365 Defender 门户中。
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， microsoft 安全分数， Microsoft 365 Defender门户， 改进操作
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -11,7 +11,9 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: article
 search.appverid:
 - MOE150
@@ -20,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 6519cf97fb35bfb0eb7b325475d4ce350ec0c3bb
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ee2aadd844eebf6da436c1d6d02b6244f093bfd6
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61936976"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171979"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状态
 
@@ -35,8 +37,8 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 为了帮助您更快找到所需的信息，Microsoft 改进操作分为多个组：
 
-- 标识 (Azure Active Directory角色&角色) 
-- Device (For Endpoint 的 Microsoft Defender，称为 ["适用于](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) 设备的 Microsoft 安全分数) 
+- 标识 (Azure Active Directory角色&帐户) 
+- Device (Microsoft Defender for Endpoint，称为 ["适用于](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) 设备的 Microsoft 安全分数) 
 - 应用 (和云应用，包括 Office 365 和 Microsoft Defender for Cloud Apps) 
 
 >[!NOTE]
@@ -95,7 +97,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>威胁& 漏洞管理改进操作
 
-对于"设备"类别中的改进操作，你无法选择状态。 相反，你将被定向到危险和漏洞管理[安全](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)建议Microsoft Defender 安全中心采取操作。 [](/windows/security/threat-protection/microsoft-defender-atp/use) 你选择的例外以及你编写的理由将特定于该门户。 它不会在 Microsoft 安全分数门户中显示。
+对于"设备"类别中的改进操作，你无法选择状态。 相反，你将被定向到危险和漏洞管理[安全建议](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)[Microsoft Defender 安全中心采取操作](/windows/security/threat-protection/microsoft-defender-atp/use)。 你选择的例外以及你编写的理由将特定于该门户。 它不会在 Microsoft 安全分数门户中显示。
 
 #### <a name="completed-improvement-actions"></a>已完成的改进操作
 

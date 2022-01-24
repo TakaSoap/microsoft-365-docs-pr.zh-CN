@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d114c7aa72c3baa5fb871fc4a52a00a22c21998e
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: bc7b18088d25e47cd214da2df94ff5eb524f2e78
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159590"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171906"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -32,7 +32,7 @@ ms.locfileid: "62159590"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-实时响应使安全运营团队可以即时访问 (也称为计算机) 使用远程 shell 连接的设备。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。
+实时响应使安全运营团队可以即时访问设备 (也称为计算机) 使用远程 shell 连接。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。
 
 实时响应旨在增强调查，使安全运营团队能够收集取证数据、运行脚本、发送可疑实体进行分析、修正威胁并主动搜寻新出现的威胁。
 
@@ -42,7 +42,7 @@ ms.locfileid: "62159590"
 
 - 运行基本和高级命令以在设备上执行调查工作。
 - 下载恶意软件示例和 PowerShell 脚本结果等文件。
-- 在后台下载文件 (新建！) 。
+- 在后台下载新 (！) 。
 - Upload PowerShell 脚本或可执行文件到库，然后从租户级别在设备上运行它。
 - 执行或撤消修正操作。
 
@@ -52,7 +52,7 @@ ms.locfileid: "62159590"
 
 - **验证是否正在运行受支持的版本Windows。**
 
-  设备必须运行以下版本的设备之一Windows
+  设备必须运行以下版本之一的 Windows
 
   - **Windows 10 & 11**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
@@ -63,6 +63,10 @@ ms.locfileid: "62159590"
 
   - **macOS** - 仅适用于公共预览版，最低要求版本：101.43.84 
   
+   > [!NOTE]
+   > 目前仅支持基于 Intel 的 macOS 系统。
+    
+
   - **Linux** - 仅适用于公共预览版，最低要求版本：101.45.13 
     
   - **Windows Server 2012 R2** - 具有 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
@@ -71,7 +75,7 @@ ms.locfileid: "62159590"
 
   - **Windows Server 2019**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
-    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
+    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     
   - **Windows Server 2022**
 
@@ -128,7 +132,7 @@ ms.locfileid: "62159590"
 通过仪表板还可以访问：
 
 - 断开会话连接
-- Upload文件到库中
+- Upload文件到库
 - 命令控制台
 - 命令日志
 
@@ -199,7 +203,7 @@ ms.locfileid: "62159590"
 | 库  | 列出上载到实时响应库的文件。  | Y  | Y  | Y  |
 | putfile  | 将库中的文件置于设备。 文件保存在工作文件夹中，在设备默认重启时将被删除。  | Y  | Y  | Y  |
 | 修正  | 修正设备上的实体。 修正操作将因实体类型而异：File： delete Process： stop， delete image file Service： stop， delete image file Registry entry： delete Scheduled task： remove Startup folder item： delete file NOTE： This command has a prerequisite command. 可以将 -auto 命令与修正结合使用，以自动运行必备组件命令。  | Y  | Y  | Y  |
-| scan  | 运行防病毒程序 (快速) 扫描，以帮助识别和修正恶意软件。  | N  | Y  | Y  |
+| scan | 运行防病毒扫描以帮助识别和修正恶意软件。 | N | Y | Y |
 | undo  | 还原已修正的实体。  | Y  | Y  | Y  |
 
 
@@ -242,7 +246,7 @@ ms.locfileid: "62159590"
 
 ### <a name="put-a-file-in-the-library"></a>将文件放入库中
 
-实时响应具有一个库，您可以将文件放入其中。 该库存储 (脚本) 脚本库，这些脚本可以在租户级别的实时响应会话中运行。
+实时响应具有一个库，您可以将文件放入其中。 该库存储 (脚本) 脚本库，这些文件可以在租户级别的实时响应会话中运行。
 
 实时响应允许运行 PowerShell 脚本，但是必须先将文件放入库中，然后才能运行它们。
 

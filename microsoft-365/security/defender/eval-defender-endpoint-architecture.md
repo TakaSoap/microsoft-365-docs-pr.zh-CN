@@ -1,6 +1,6 @@
 ---
 title: 查看 Microsoft Defender for Endpoint 体系结构要求和关键概念
-description: Microsoft 365 Defender 中的 Microsoft Defender for Endpoint 的技术图表将帮助你在构建试用实验室或Microsoft 365环境之前了解 microsoft Defender 中的身份。
+description: Microsoft 365 Defender 中的 Microsoft Defender for Endpoint 的技术图表将帮助你在构建试用实验室或Microsoft 365之前了解 microsoft Defender for Endpoint 中的标识。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 32c40c61675ed5291093b88a6fd834bc92fcad87
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7a7e7a397f9cf9f89b75eb1f515e37a5386a73b1
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933223"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171931"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>查看 Microsoft Defender for Endpoint 体系结构要求和关键概念
 
@@ -48,15 +50,15 @@ ms.locfileid: "61933223"
 :---|:---|
 1 | 设备通过受支持的管理工具之一进行。 
 2 | On-boarded devices provide and respond to Microsoft Defender for Endpoint signal data.
-3 | 托管设备已加入和/或注册Azure Active Directory。
+3 | 托管设备已加入和/或已注册Azure Active Directory。
 4 | 已加入域Windows设备使用 Azure Active Directory 同步到Azure Active Directory 连接。
-5 | Microsoft Defender for Endpoint 警报、调查和响应在 Microsoft 365 Defender。
+5 | Microsoft Defender for Endpoint 警报、调查和响应在 Microsoft 365 Defender 中进行管理。
 
 ## <a name="understand-key-concepts"></a>了解关键概念
 
 下表确定了在评估、配置和部署 Microsoft Defender for Endpoint 时必须了解的重要概念： 
 
-概念 | 说明 | 更多信息
+概念 | 说明 | 详细信息
 :---|:---|:---|
 管理门户 | Microsoft 365 Defender用于监视和协助响应潜在高级永久性威胁活动或数据泄露警报的门户。 | [Microsoft Defender for Endpoint 门户概述](/microsoft-365/security/defender-endpoint/portal-overview)
 攻击面减少 | 通过最大程度地减少组织易受网络威胁和攻击的位置，帮助减少攻击面。 | [减少攻击面概述](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)

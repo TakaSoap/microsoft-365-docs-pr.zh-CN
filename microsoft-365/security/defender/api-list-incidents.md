@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 763add69e0512f9fe092dccf453d58cf3907118d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 03fbcb70588158919b54c9153b5d8d32d416cc75
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162382"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172135"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>列出事件 API Microsoft 365 Defender
 
@@ -41,7 +42,7 @@ ms.locfileid: "60162382"
 
 ## <a name="api-description"></a>API 说明
 
-列表事件 API 允许你对事件进行排序，以创建明智的网络安全响应。 它公开在环境保留策略中指定的时间范围内网络中标记的事件集合。 最新事件显示在列表顶部。 每个事件都包含一组相关警报及其相关实体。
+列表事件 API 允许你对事件进行排序，以创建明智的网络安全响应。 它将公开在环境保留策略中指定的时间范围内网络中标记的事件集合。 最新事件显示在列表顶部。 每个事件都包含一组相关警报及其相关实体。
 
 API 支持以下 **OData** 运算符：
 
@@ -60,8 +61,8 @@ API 支持以下 **OData** 运算符：
 
 权限类型|权限|权限显示名称
 ---|---|---
-Application|Incident.Read.All|读取所有事件
-Application|Incident.ReadWrite.All|读取和写入所有事件
+应用程序|Incident.Read.All|读取所有事件
+应用程序|Incident.ReadWrite.All|读取和写入所有事件
 委派（工作或学校帐户）|Incident.Read|读取事件
 委派（工作或学校帐户）|Incident.ReadWrite|读取和写入事件
 
@@ -81,7 +82,7 @@ GET /api/incidents
 
 名称|类型|说明
 ---|---|---
-Authorization|字符串|Bearer {token}。 **Required**
+Authorization|String|Bearer {token}。 **Required**
 
 ## <a name="request-body"></a>请求正文
 
@@ -105,9 +106,9 @@ lastUpdateTime|上次在后端更新事件的时间。 <p> 为检索事件的时
 assignedTo|事件的所有者;如果没有分配 *所有者* ，则为空。|secop2@contoso.com
 classification|事件的规范。 属性值为 *：Unknown、FalsePositive、TruePositive*  |未知
 确定|指定事件的确定。 属性值包括：NotAvailable、Apt、Malware、SecurityPersonnel、SecurityTesting、UnwantedSoftware、Other       |NotAvailable
-detectionSource|指定检测源。|MCAS
-status|将事件分类 (*活动或* 已解决 *) 。* 它可以帮助您组织和管理对事件的响应。|活动
-severity|指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。 <p> 下列值之一 *：Informational、Low、*Medium* 和 *High。* |中型
+detectionSource|指定检测源。|Defender for Cloud Apps
+状态|将事件分类 (*活动"* 或"已解决 *) 。* 它可以帮助您组织和管理对事件的响应。|活动
+severity|指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。 <p> 下列值之一 *：Informational、Low、*Medium* 和 *High。* |中
 标记|与事件关联的自定义标记数组，例如，用于标记一组具有共同特征的事件。|\[\]
 comments|由 secops 在管理事件时创建的注释数组，例如有关分类选择的其他信息。|\[\]
 警报|包含与事件相关的所有警报以及其他信息（如严重性、警报中涉及的实体以及警报来源）的数组。|\[\] (以下警报字段的详细信息) 
@@ -118,16 +119,16 @@ comments|由 secops 在管理事件时创建的注释数组，例如有关分类
 ---|---|---
 alertId|表示警报的唯一标识符|caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
 incidentId|表示与此警报关联的事件的唯一标识符|924565
-serviceSource|警报源自的服务，例如 Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity 或 Microsoft Defender for Office 365。|MicrosoftCloudAppSecurity
+serviceSource|警报源自的服务，例如 Microsoft Defender for Endpoint、Microsoft Defender for Cloud Apps、Microsoft Defender for Identity 或 Microsoft Defender for Office 365。|MicrosoftCloudAppSecurity
 creationTime|首次创建警报的时间。|2020-09-06T14：46：55.7182276Z
 lastUpdatedTime|上次在后端更新警报的时间。|2020-09-06T14：46：57.2433333Z
 resolvedTime|警报解决的时间。|2020-09-10T05：22：59Z
 firstActivity|警报首次报告在后端更新活动的时间。|2020-09-04T05：22：59Z
-职位|简要标识可用于每个警报的字符串值。|勒索软件活动
-说明|描述每个警报的字符串值。|用户 Test User2 (testUser2@contoso.com) 处理了 99 个文件，其多个扩展名以不常见的扩展 *名 herunterladen 结尾*。 这是异常多的文件操作，是潜在勒索软件攻击的表示。
-“类别”|有关攻击在击杀链上的进度的可视和数值视图。 符合 [MITRE ATT&CK™ 框架](https://attack.mitre.org/)。|影响
-status|将警报分类为 *(、活动或* 已解决 *) 。* 它可以帮助你组织和管理对警报的响应。|新增
-severity|指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。<br>下列值之一 *：Informational、Low、Medium* 和 *High。* |中型
+title|简要标识可用于每个警报的字符串值。|勒索软件活动
+说明|描述每个警报的字符串值。|用户 Test User2 (testUser2@contoso.com) 处理了 99 个扩展名以不常见的扩展 *名 herunterladen 结尾的文件*。 这是异常多的文件操作，是潜在勒索软件攻击的表示。
+“类别”|有关攻击在击杀链上的进度的可视和数值视图。 与 [MITRE ATT&CK™一致](https://attack.mitre.org/)。|影响
+状态|将警报分类为 *(、活动或* 已解决 *) 。* 它可以帮助你组织和管理对警报的响应。|新增
+severity|指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。<br>下列值之一 *：Informational、Low、Medium* 和 *High。* |中
 investigationId|此警报触发的自动调查 ID。|1234
 investigationState|有关调查的当前状态的信息。 下列值之一：Unknown、Terminated、SuccessfullyRemediated、Successfully、Failed、PartiallyRemediated、Running、PendingApproval、PendingResource、PartiallyInvestigated、TerminatedByUser、TerminatedBySystem、Queued、InnerFailure、PreexistingAlert、UnsupportedOs、UnsupportedAlertType 、                  *SuppressedAlert*。|UnsupportedAlertType
 classification|事件的规范。 属性值包括：Unknown、FalsePositive、TruePositive 或 null   |未知
@@ -135,7 +136,7 @@ classification|事件的规范。 属性值包括：Unknown、FalsePositive、Tr
 assignedTo|事件的所有者;如果没有分配 *所有者* ，则为空。|secop2@contoso.com
 actorName|与此警报关联的活动组（如果有）。|一个
 threatFamilyName|与此警报关联的威胁系列。|空
-mitreTechniques|攻击技术，与 [MITRE ATT](https://attack.mitre.org/)&CK ™框架一致。|\[\]
+mitreTechniques|攻击技术，与 [MITRE ATT](https://attack.mitre.org/)和 CK&CK ™一致。|\[\]
 设备|已发送与事件相关的警报的所有设备。|\[\] (下面实体字段的详细信息) 
 
 ### <a name="device-format"></a>设备格式
@@ -158,10 +159,10 @@ entities|已标识为给定警报的一部分或与给定警报相关的所有�
 字段名|说明|示例值
 ---|---|---
 entityType|已标识为给定警报的一部分或与给定警报相关的实体。<br>属性值包括：User、Ip、Url、File、Process、MailBox、MailMessage、MailCluster、Registry         |用户
-sha1|如果 entityType 为 File ，则 *可用*。<br>与文件或进程关联的警报的文件哈希。|5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
-sha256|如果 entityType 为 File ，则 *可用*。<br>与文件或进程关联的警报的文件哈希。|28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
-fileName|如果 entityType 为 File ，则 *可用*。<br>与文件或进程关联的警报的文件名|Detector.UnitTests.dll
-filePath|如果 entityType 为 File ，则 *可用*。<br>与文件或进程关联的警报的文件路径|C： \\ \agent_work_temp\Deploy\SYSTEM\2020-09-06 12_14_54\Out
+sha1|如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件哈希。|5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
+sha256|如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件哈希。|28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
+fileName|如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件名|Detector.UnitTests.dll
+filePath|如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件路径|C： \\ \agent_work_temp\Deploy\SYSTEM\2020-09-06 12_14_54\Out
 processId|如果 entityType 为 Process ， *则可用*。|24348
 processCommandLine|如果 entityType 为 Process ， *则可用*。|"你的文件已准备好下载 \_1911150169.exe"
 processCreationTime|如果 entityType 为 Process ， *则可用*。|2020-07-18T03：25：38.5269993Z

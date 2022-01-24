@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c77e825fa680a038ba89a9054e04ce939dcb7941
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 1785186f778c489cb4a254fe39cc41921a4de86e
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203911"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62170999"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>受支持的 Microsoft 365 Defender API 
 
@@ -59,7 +60,7 @@ ms.locfileid: "60203911"
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365 DefenderAPI 概述](api-overview.md)
+- [Microsoft 365 Defender API 概述](api-overview.md)
 - [访问Microsoft 365 Defender API](api-access.md)
 - [Streaming API](../defender-endpoint/raw-data-export.md)
 - [了解 API 限制和许可](api-terms.md)

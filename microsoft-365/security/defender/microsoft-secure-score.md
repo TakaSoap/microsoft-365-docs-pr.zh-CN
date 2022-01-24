@@ -13,6 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365initiative-m365-defender
 - Adm_TOC
 ms.topic: article
 search.appverid:
@@ -22,12 +23,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 91371583a6dde3a7fcb97037146b3eab1410e86c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 60d804594b3e4f1daad2ea4813a55205c24a3dac
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61936879"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172159"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -72,7 +73,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 每个改进操作都值 10 分或更少，大多数改进操作都以二进制方式进行评分。 如果实施改进操作（如创建新策略或启用特定设置），则获得 100% 的分数。 对于其他改进操作，分数以总配置百分比表示。
 
-例如，改进操作通过多重身份验证保护所有用户而获得 10 分。 你只有 50 个受保护用户（共 100 个）受保护，因此你获得的部分分数为 5 分 (50 分/共 100 分 * 10 最大 pts = 5 磅) 。
+例如，改进操作通过多重身份验证保护所有用户而获得 10 分。 你只有 50 个保护的用户（共 100 个）中，因此你获得的部分分数为 5 分 (50 分/共 100 分 * 10 最大 pts = 5 磅) 。
 
 ### <a name="products-included-in-secure-score"></a>安全分数中包含的产品
 
@@ -93,7 +94,7 @@ Microsoft 安全分数已更新了改进操作以支持[Azure Active Directory](
 
 如果启用安全默认值，将被授予以下改进操作的完整分数：
 
-- 确保所有用户都可以通过 9 个点安全访问 (多重) 
+- 确保所有用户都可以完成多重身份验证， (9 个点) 
 - 管理角色需要 MFA (10) 
 - 启用策略以阻止 7 (旧身份验证) 
 
@@ -102,7 +103,7 @@ Microsoft 安全分数已更新了改进操作以支持[Azure Active Directory](
 
 ## <a name="required-permissions"></a>所需权限
 
-若要具有访问 Microsoft 安全分数的权限，必须在 Microsoft 安全分数中分配以下角色之Azure Active Directory。
+要有权访问 Microsoft 安全分数，必须在 Microsoft 安全分数中分配以下角色之Azure Active Directory。
 
 ### <a name="read-and-write-roles"></a>读取和写入角色
 

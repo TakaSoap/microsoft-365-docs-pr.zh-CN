@@ -16,14 +16,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9d0418b2f183884793be3c2d8a72f571d0072a61
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4c8f0ff2ca13d7f1c0e8adfcf4e0bdf09aa1c2ac
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933140"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172039"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-cloud-apps"></a>为 Microsoft Defender for Cloud Apps 启用评估环境
 
@@ -77,7 +79,7 @@ Microsoft Defender for Cloud Apps 与 Microsoft Defender for Endpoint 本地集�
 
 要覆盖连接到网络的所有设备，请将 Defender for Cloud Apps 日志收集器部署到防火墙和其他代理上，以从终结点收集数据并将其发送到 Defender for Cloud Apps 进行分析。
 
-如果你使用 SWG 中的以下安全 Web 网关 (，) Defender for Cloud Apps 提供无缝部署和集成：
+如果你使用 SWG 中的以下安全 Web 网关 (之一) ，则 Defender for Cloud Apps 将提供无缝部署和集成：
 
 - Zscaler
 - iboss

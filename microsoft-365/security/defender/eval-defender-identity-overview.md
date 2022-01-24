@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c407c0ad050a0275f370ea534d62ee9d290903e3
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 77ccebb394230c38140bc8cd62c97262ff1ddf7a
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873545"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171798"
 ---
 # <a name="evaluate-microsoft-defender-for-identity-overview"></a>评估 Microsoft Defender 标识概述
 
@@ -34,7 +35,7 @@ ms.locfileid: "61873545"
 **适用于：**
 - Microsoft 365 Defender
 
-本文概述了启用和试用 Microsoft Defender for Identity 的过程。 在开始此过程之前，请确保你已查看评估项目Microsoft 365 Defender并且已创建Microsoft 365 Defender[评估环境](eval-create-eval-environment.md)。 [](eval-overview.md) 
+本文概述了启用和试用 Microsoft Defender for Identity 的过程。 在开始此过程之前，请确保你已查看评估项目Microsoft 365 Defender并且你已创建Microsoft 365 Defender[](eval-overview.md)[评估环境](eval-create-eval-environment.md)。 
 <br>
 
 使用以下步骤启用和试用 Microsoft Defender for Identity。

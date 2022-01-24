@@ -275,7 +275,7 @@
 ###### [第 3 阶段：实施](attack-surface-reduction-rules-deployment-phase-3.md)
 ###### [第 4 阶段：投入生产](attack-surface-reduction-rules-deployment-phase-4.md)
 ##### [ASR 规则参考](attack-surface-reduction-rules-reference.md)
-##### [启用 ASR 规则陪着备用方法](enable-attack-surface-reduction.md)
+##### [启用 ASR 规则备用配置方法](enable-attack-surface-reduction.md)
 #### [关于攻击面减少的常见问题解答](attack-surface-reduction-faq.yml)
 
 ### 下一代保护
@@ -645,7 +645,7 @@
 
 #### [SIEM 集成]()
 ##### [使用 Microsoft Defender for Endpoint 创建 SIEM 工具](configure-siem.md)
-##### [Microsoft Defender for Endpoint 检测域](api-portal-mapping.md)
+##### [在 Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)
 ##### [使用 SIEM REST API 提取检测](pull-alerts-using-rest-api.md)
 ##### [SIEM 工具集成问题疑难解答](troubleshoot-siem.md)
 

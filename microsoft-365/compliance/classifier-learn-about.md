@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 可训练分类器可以通过提供要查看的正面和负面示例来识别用于标记或策略应用程序的各种类型的内容。
-ms.openlocfilehash: 863f30819988d5f2ecfdc7c9bac858ef357d6ede
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 9301379e55865fc0524dbf814365239d700aa962
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940646"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172147"
 ---
 # <a name="learn-about-trainable-classifiers"></a>了解可训练的分类器
 
@@ -40,14 +40,18 @@ ms.locfileid: "61940646"
 
 - 关键字或元数据值 (关键字查询语言) 。
 - 使用以前标识的敏感信息模式（如社会保险、信用卡或银行帐号） ([敏感信息类型实体定义) 。 ](sensitive-information-type-entity-definitions.md)
-- 识别项目，因为它是模板上的变体， ([打印文档) 。 ](document-fingerprinting.md)
+- 识别项目，因为它是模板上的变体， ([文档手指) 。 ](document-fingerprinting.md)
 - 使用确切字符串的存在确切 [数据匹配](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)。
 
 然后，可以自动应用敏感度和保留标签，使内容可供"了解数据丢失防护和[](dlp-learn-about-dlp.md)自动应用保留标签策略"[中的使用](apply-retention-labels-automatically.md)。
 
 ## <a name="classifiers"></a>分类器
 
-此分类方法非常适合无法通过手动或自动模式匹配方法轻松标识的内容。 此分类方法更与使用分类器根据项目内容来标识项目有关，而不是按与项目模式匹配 (标识) 。 分类器通过查看对分类感兴趣的内容的数百个示例来了解如何识别内容类型。
+此分类方法非常适合无法通过手动或自动模式匹配方法轻松标识的内容。 这种分类方法更关于使用分类器根据项目是什么来标识项目，而不是按项目 (模式匹配) 。 分类器通过查看对分类感兴趣的内容的数百个示例来了解如何识别内容类型。
+
+> [!NOTE]
+> 您可以通过展开筛选器面板中的可训练分类器，在内容资源管理器 **中查看可** 训练分类器。 可训练分类器将自动显示在安全、SharePoint、Teams和OneDrive中发现的事件数，而无需任何标记。
+> 如果不想使用此功能，则必须向 Microsoft 支持人员提出请求以禁用开箱即用分类。 这将在您创建标签策略之前禁用对敏感和标记内容的扫描。
 
 ### <a name="where-you-can-use-classifiers"></a>可以使用分类器的地方
 
@@ -78,16 +82,16 @@ Microsoft 365多个预先训练的分类器：
 
 - **协议**：检测与法律协议（如保密协议、工作声明、贷款和租赁协议、雇佣和非竞争协议）相关的内容。 检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml 文件中的内容。
 - **攻击**：检测明确的语言，并且与其他社区相比，对针对美洲/非洲社区的语言敏感。
-- **财务**：检测公司财务、会计、经济、银行以及投资类别中的内容。 检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、 .one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.pps、.ppam、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xlt、.xlt、.xlam、.xla 文件。
+- **财务**：检测公司财务、会计、经济、银行以及投资类别中的内容。 检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt 中的内容。 .one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.pps、.pps、.ppam、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xlt、.xlt、.xlam、.xla 文件。
 - **冒犯**：根据以下特征检测与针对一个或多个个人的冒犯性行为相关的特定冒犯性语言文本项类别：种族、国家/地区、性别、性取向、年龄、残障。
-- **医疗保健**：检测医疗保健管理方面的内容，如医疗、诊断、处理、索赔等。检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、 .one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.pps、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xlt、.xlt、.xlam、.xla 文件。
-- **HR：** 检测与人力资源相关的招聘、面试、招聘、培训、评估、警告和终止类别的内容。 检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、 .one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.pps、.ppam、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xlt、.xlt、.xlam、.xla 文件。
-- **IP：** 检测知识产权相关类别中的内容，如商业秘密和类似的机密信息。 检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、 .one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.pps、.ppam、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xlt、.xlt、.xlam、.xla 文件。
-- **IT：** 检测信息技术和网络安全类别（如网络设置、信息安全、硬件和软件）中的内容。 检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、 .one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.pps、.ppam、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xlt、.xlt、.xlam、.xla 文件。
+- **医疗保健**：检测医疗保健管理方面的内容，如医疗、诊断、处理、索赔等。检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、 .one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.ppss、.ppam、.ppa、.xlsx、.xlsm、.xlsm、.xls、.csv、.xltx、.xlt、.xlt、.xlam、.xla 文件。
+- **HR：** 检测与人力资源相关的招聘、面试、招聘、培训、评估、警告和终止类别的内容。 检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt 中的内容。 .one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.pps、.pps、.ppam、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xlt、.xlt、.xlam、.xla 文件。
+- **IP：** 检测知识产权相关类别中的内容，如商业秘密和类似的机密信息。 检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt 中的内容。 .one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.pps、.pps、.ppam、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xlt、.xlt、.xlam、.xla 文件。
+- **IT：** 检测信息技术和网络安全类别（如网络设置、信息安全、硬件和软件）中的内容。 检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt 中的内容。 .one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.pps、.pps、.ppam、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xlt、.xlt、.xlam、.xla 文件。
 - **法律事务**：检测法律事务相关类别中的内容，如诉讼、法律诉讼、法律要求、法律术语、法律和法律。 检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml 文件中的内容。
 - **采购**：检测商品、报价、采购和付费商品与服务的类别内容。 检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、.xla 文件中的内容。
 - **冒犯性**：检测特定类别的冒犯性语言文本项，这些文本项包含使大多数用户感同的表达式。
-- **税务**：检测税务关系内容，如税务计划、税单、税务申报、税务法规。 检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、 .one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.pps、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xlt、.xlt、.xlam、xla 文件。
+- **税务**：检测税务关系内容，如税务计划、税单、税务申报、税务法规。 检测 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、 .one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.pot、.ppsx、.ppsm、.pps、.ppa、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、xla 文件。
 - **威胁**：检测与威胁相关的特定类别的冒犯性语言文本项，以实施暴力或对人员或属性进行物理损害或损害。
 
 这些 **列Microsoft 365 合规中心数据**  >  **分类**  >  **可训练分类** 器视图，状态为 `Ready to use` 。
@@ -107,7 +111,7 @@ Microsoft 365多个预先训练的分类器：
 
 通过馈送该类别中肯定属于该类别的示例，你可以开始创建自定义可训练分类器。 处理这些示例后，通过同时提供匹配示例和非匹配示例进行测试。 然后，分类器将预测任何给定项目是否属于你正在构建的类别。 然后确认其结果，对真正的正数、负数、误报和漏报进行排序，以帮助提高预测的准确性。 
 
-发布分类器时，分类器会按 SharePoint Online、Exchange 和 OneDrive 等位置中的项目进行排序，并对内容进行分类。 发布分类器后，可以继续使用与初始培训过程类似的反馈流程对分类器进行培训。
+发布分类器时，它将对 SharePoint Online、Exchange 和 OneDrive 等位置中的项目进行排序，并对内容进行分类。 发布分类器后，可以继续使用与初始培训过程类似的反馈流程对分类器进行培训。
 
 例如，你可以为：
 

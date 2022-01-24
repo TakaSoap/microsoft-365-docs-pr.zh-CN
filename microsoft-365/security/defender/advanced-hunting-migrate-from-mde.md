@@ -1,7 +1,7 @@
 ---
 title: 从 Microsoft Defender for Endpoint 迁移高级搜寻查询
 description: 了解如何调整适用于终结点的 Microsoft Defender 查询，以便你可以将其用于Microsoft 365 Defender
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 适用于终结点的 Microsoft Defender， 搜索， 查询， 遥测， 自定义检测， 架构， kusto， 映射
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， Microsoft Defender for Endpoint， 搜索， 查询， 遥测， 自定义检测， 架构， kusto， 映射
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,16 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 3cb59c3c4a98a492dcda11e34e01a18afc8c5555
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: e64d1a56468d6e87d23c5720bb231e17ecd5679a
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221192"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171955"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>从 Microsoft Defender for Endpoint 迁移高级搜寻查询
 
@@ -35,7 +34,7 @@ ms.locfileid: "61221192"
 **适用于：**
 - Microsoft 365 Defender
 
-从 Microsoft Defender for Endpoint 移动高级搜寻工作流，以使用更广泛的数据集主动搜寻威胁。 在Microsoft 365 Defender中，你可以访问来自其他安全Microsoft 365数据，包括：
+从 Microsoft Defender for Endpoint 移动高级搜寻工作流，以使用更广泛的数据集主动搜寻威胁。 In Microsoft 365 Defender， you get access to data from other Microsoft 365 security solutions， including：
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
@@ -47,7 +46,7 @@ ms.locfileid: "61221192"
 
 你可以转换，而不影响现有的 Defender for Endpoint 工作流。 保存的查询保持不变，并且自定义检测规则将继续运行并生成警报。 但是，它们将在Microsoft 365 Defender。 
 
-## <a name="schema-tables-in-microsoft-365-defender-only"></a>仅架构Microsoft 365 Defender表
+## <a name="schema-tables-in-microsoft-365-defender-only"></a>仅 Microsoft 365 Defender中的架构表
 高级[Microsoft 365 Defender架构](advanced-hunting-schema-tables.md)提供了包含来自各种安全解决方案的数据Microsoft 365表。 下表仅适用于Microsoft 365 Defender：
 
 | 表名 | 说明 |
@@ -88,8 +87,8 @@ ms.locfileid: "61221192"
 | `RemoteUrl` | `AlertEvidence` table |
 | `RemoteIP` | `AlertEvidence` table |
 | `AttackTechniques` | `AlertInfo` table |
-| `ReportId` | 此列通常在 Microsoft Defender for Endpoint 中用于查找其他表中的相关记录。 在Microsoft 365 Defender中，可以直接从表中获取 `AlertEvidence` 相关数据。 |
-| `Table` | 此列通常在 Microsoft Defender for Endpoint 中用于其他表中的其他事件信息。 在Microsoft 365 Defender中，可以直接从表中获取 `AlertEvidence` 相关数据。 |
+| `ReportId` | 此列通常在 Microsoft Defender for Endpoint 中用于查找其他表中的相关记录。 在Microsoft 365 Defender中，可以直接从表中获取 `AlertEvidence` 数据。 |
+| `Table` | 此列通常在 Microsoft Defender for Endpoint 中用于其他表中的其他事件信息。 在Microsoft 365 Defender中，可以直接从表中获取 `AlertEvidence` 数据。 |
 
 ## <a name="adjust-existing-microsoft-defender-for-endpoint-queries"></a>调整现有的 Microsoft Defender 终结点查询
 Microsoft Defender for Endpoint 查询将像现在一样工作，除非它们引用 `DeviceAlertEvents` 表。 若要在查询中使用这些Microsoft 365 Defender，请应用以下更改：
@@ -98,7 +97,7 @@ Microsoft Defender for Endpoint 查询将像现在一样工作，除非它们引
 - 将 `AlertInfo` 和 表 `AlertEvidence` 联接在 一 `AlertId` 起可获取等效数据。
 
 ### <a name="original-query"></a>原始查询
-以下查询使用 `DeviceAlertEvents` Microsoft Defender for Endpoint 获取涉及以下powershell.exe： __
+以下查询在 `DeviceAlertEvents` Microsoft Defender for Endpoint 中用于获取涉及以下powershell.exe：
 
 ```kusto
 DeviceAlertEvents
@@ -118,11 +117,11 @@ AlertInfo
 
 ## <a name="migrate-custom-detection-rules"></a>迁移自定义检测规则
 
-在终结点上编辑 Microsoft Defender Microsoft 365 Defender，它们将继续像以前一样运行，就像生成的查询仅查看设备表一样。 
+在终结点上编辑 Microsoft Defender Microsoft 365 Defender，它们将继续像以前一样运行，就像生成的查询只查看设备表一样。 
 
 例如，由仅查询设备表的自定义检测规则生成的警报将继续传递到 SIEM 并生成电子邮件通知，具体取决于你在 Microsoft Defender for Endpoint 中配置这些警报的方式。 Defender for Endpoint 中现有的抑制规则也将继续适用。
 
-编辑 Defender for Endpoint 规则以便查询仅在 Microsoft 365 Defender 中可用的标识和电子邮件表后，该规则将自动移动到 Microsoft 365 Defender。 
+编辑 Defender for Endpoint 规则以便查询仅在 Microsoft 365 Defender 中可用的标识和电子邮件表后，该规则将自动移动到Microsoft 365 Defender。 
 
 由迁移的规则生成的警报：
 

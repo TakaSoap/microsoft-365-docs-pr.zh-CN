@@ -1,7 +1,7 @@
 ---
 title: 尝试Microsoft 365 Defender环境中使用事件响应功能
 description: 在威胁检测中Microsoft 365 Defender事件响应功能，确定事件的优先级并管理事件、自动调查和使用高级搜寻。
-keywords: Microsoft 365 Defender试用版，请尝试Microsoft 365 Defender、评估Microsoft 365 Defender、Microsoft 365 Defender评估实验室Microsoft 365 Defender 试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+keywords: Microsoft 365 Defender试用版，请尝试Microsoft 365 Defender、评估Microsoft 365 Defender、Microsoft 365 Defender Microsoft 365 Defender 试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,30 +18,32 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d5e0dce11edc0c1179c77dbf23c4495507569652
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c9f1a4c051aaf9cb542e73a7cf077c7ed1038411
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938188"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171115"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>尝试Microsoft 365 Defender环境中使用事件响应功能
 
 **适用于：**
 - Microsoft 365 Defender
 
-本文是使用试验环境对事件进行调查和响应的过程中第 2 步Microsoft 365 Defender [2](eval-defender-investigate-respond.md)步。 有关此过程详细信息，请参阅 [概述](eval-defender-investigate-respond.md) 文章。
+本文是使用试验环境对 Microsoft 365 Defender 事件进行调查和响应的过程中的第 2 步（第[2](eval-defender-investigate-respond.md)步）。 有关此过程详细信息，请参阅 [概述](eval-defender-investigate-respond.md) 文章。
 
-对模拟攻击[执行事件](eval-defender-investigate-respond-simulate-attack.md)响应后，下面是一些Microsoft 365 Defender功能：
+对模拟攻击[执行事件](eval-defender-investigate-respond-simulate-attack.md)响应后，下面是一Microsoft 365 Defender一些可浏览的功能：
 
 |功能 |说明 |
 |:-------|:-----|
 | [确定事件优先级](#prioritize-incidents) | 使用事件队列的筛选和排序来确定接下来要处理的事件。 |
 | [管理事件](#manage-incidents) | 修改事件属性以确保正确分配、添加标记和注释以及解决事件。 |
-| [自动调查和响应](#examine-automated-investigation-and-response-with-the-action-center) | AIR (自动调查和) 功能，可帮助安全运营团队更有效地应对威胁。 操作中心是事件和警报任务（如批准挂起的修正操作）的"单窗格"体验。 |
+| [自动调查和响应](#examine-automated-investigation-and-response-with-the-action-center) | AIR 自动调查和响应 (AIR) 功能，可帮助安全运营团队更有效地应对威胁。 操作中心是事件和警报任务（如批准挂起的修正操作）的"单窗格"体验。 |
 | [高级搜寻](#advanced-hunting) | 基于查询的威胁搜寻工具，可让你主动检查网络中事件并查找威胁指示器和实体。 在调查和修正事件期间，你还使用高级搜寻。 |
 
 
@@ -116,7 +118,7 @@ ms.locfileid: "61938188"
 
 :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="批准或拒绝操作。":::
 
-尽快 (批准或拒绝) 待处理操作，以便自动调查可以继续并及时完成。
+尽快 (批准或拒绝) 挂起的操作，以便自动调查可以继续并及时完成。
 
 有关详细信息，请参阅自动[调查和响应](m365d-autoir.md)[以及操作中心](m365d-action-center.md)。
 
@@ -158,7 +160,7 @@ ms.locfileid: "61938188"
 
 ### <a name="run-the-simulation"></a>运行模拟
 
-1. 从外部电子邮件帐户，将电子邮件发送到在搜寻环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型包括.pdf、.exe(（如果) ）或 Office 文档类型（如 Word 文件）。 <i> </i> <i></i>
+1. 从外部电子邮件帐户，将电子邮件发送到在搜寻环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型包括.pdf、.exe(（) ）或 Office 文档类型（如 Word 文件）。 <i> </i> <i></i>
 
 2. 打开从设备发送的电子邮件，如搜寻环境要求部分的步骤 3 中的定义。 打开附件或将文件保存到设备。
 
@@ -210,7 +212,7 @@ ms.locfileid: "61938188"
    | where AttachmentCount > 0 and EmailDirection == "Inbound"
    ```
 
-5. 接下来，包含有关附件 (，例如：文件名、) 哈希结果集。 为此，请加入 **EmailAttachmentInfo** 表。 用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId**。
+5. 接下来，包括有关附件 (，例如：文件名、) 哈希结果集。 为此，请加入 **EmailAttachmentInfo** 表。 用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId**。
 
    以下查询还包括一个附加行"| **项目重命名 EmailTimestamp=Timestamp**"，有助于确定与电子邮件相关的时间戳与下一步将添加的文件操作相关的时间戳。
 
@@ -223,7 +225,7 @@ ms.locfileid: "61938188"
 
 6. 接下来，使用 **EmailAttachmentInfo** 表中的 **SHA256** 值查找针对该哈希 (终结点上发生的 **DeviceFileEvents**) 文件操作。 此处的常用字段是附件的 SHA256 哈希。
 
-   生成的表现在包含终结点 (Microsoft Defender for Endpoint) 的详细信息，例如设备名称、在此例中 (已执行哪些操作、已筛选为仅包括 FileCreated 事件) 以及文件存储位置。 还将包含与进程关联的帐户名称。
+   生成的表现在包含终结点 (Microsoft Defender for Endpoint) 的详细信息，例如设备名称、 (在这种情况下已执行哪些操作、已筛选为仅包括 FileCreated) 事件以及文件存储位置。 还将包含与进程关联的帐户名称。
 
    ```console
    EmailEvents

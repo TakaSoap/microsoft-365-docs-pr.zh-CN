@@ -16,7 +16,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 - m365solution-overview
 ms.topic: conceptual
@@ -24,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5c88d6530fe8316f0297f716d51a28a64ede72f9
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 6bfec4b38d3451d25d65c63ce46fb8df74cd6d0e
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121419"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171991"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>将Microsoft 365 Defender集成到安全操作
 
@@ -47,7 +46,7 @@ ms.locfileid: "61121419"
 - [Microsoft 365 Defender 入门](get-started.md)
 - [打开 Microsoft 365 Defender](m365d-enable.md)
 
-如果你的组织已经实施了某些方面的Microsoft 365 Defender，这些文章可以确认或帮助你改进现有体系结构和流程。
+如果你的组织已经实施了某些方面的Microsoft 365 Defender，这些文章可以确认或帮助改进现有体系结构和流程。
 
 >[!Note]
 >作为 Microsoft 合作伙伴，Protiviti 参与了本文的撰写并提供了实质性反馈。
@@ -57,7 +56,7 @@ ms.locfileid: "61121419"
 
 此内容旨在满足以下要求：
 
-- DevOps SecOps 团队 (安全) 操作
+- DevOps安全运营 (SecOps) 团队
 - 安全工程团队
 - IT 团队
 - COS 和 C CT

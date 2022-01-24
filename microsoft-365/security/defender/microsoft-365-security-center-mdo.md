@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Office 365 in Microsoft 365 Defender
 description: 了解从安全与合规&到安全Microsoft 365 Defender。
-keywords: Microsoft 365安全入门， Microsoft 365 Defender， Microsoft Defender for Office 365， Microsoft Defender for Endpoint， MDO， MDE， 单窗格的门户， 新安全门户， 新 Defender 安全门户
+keywords: Microsoft 365安全入门， Microsoft 365 Defender， Microsoft Defender for Office 365， Microsoft Defender for Endpoint， MDO， MDE， 单窗格的门户， 新的安全门户， 新的 Defender 安全门户
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 91f80cb79efe7a301bfcefaf7663e13f391b4b1e
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: c38054e55442a01d8e659ab4281e4790f57c7755
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724328"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171810"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender for Office 365 in Microsoft 365 Defender
 
@@ -58,23 +58,23 @@ ms.locfileid: "60724328"
 |电子数据展示||请参阅[Microsoft 365 合规中心](https://compliance.microsoft.com/homepage)||
 |||||
 
-[Microsoft 365 Defender](./microsoft-365-defender.md)集现有 Microsoft 安全门户（包括安全与合规中心）中的& <https://security.microsoft.com> 功能于一起。 此改进的中心有助于安全团队更高效地保护组织免遭威胁侵害。
+[Microsoft 365 Defender](./microsoft-365-defender.md)包含现有 Microsoft 安全门户（包括安全与合规中心）中的& <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> 功能。 此改进的中心有助于安全团队更高效地保护组织免遭威胁侵害。
 
-如果您熟悉安全与合规&中心 (protection.office.com) ，本文将介绍 Microsoft 365 Defender 中的一些更改和改进。
+如果您熟悉安全与&中心 (protection.office.com) ，本文将介绍 Microsoft 365 Defender 中的一些更改和改进。
 
-详细了解优势：概述[Microsoft 365 Defender](microsoft-365-defender.md)
+详细了解优势[：概述Microsoft 365 Defender](microsoft-365-defender.md)
 
-如果你正在寻找与合规性相关的项目，请访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/homepage)。
+如果你正在寻找与合规性相关的项目，请访问 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>。
 
 ## <a name="new-and-improved-capabilities"></a>新增和改进的功能
 
-左侧导航栏或快速启动栏将看起来熟悉。 但是，这个安全中心中有些新增和更新的元素。
+左侧导航栏或快速启动栏将看起来熟悉。 但是，此 Defender for Cloud 中具有一些新的和更新的元素。
 
-通过统一Microsoft 365 Defender解决方案，你可以将威胁信号汇集在一起，确定威胁的完整范围和影响，以及威胁当前对组织的影响。
+使用统一Microsoft 365 Defender解决方案，你可以将威胁信号整合在一起，确定威胁的完整范围和影响，以及威胁当前对组织的影响。
 
 :::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="聚合Microsoft 365 Defender的图像。":::
 
-Defender for Office 365保护你的组织免受电子邮件、链接 (URL) 和协作工具造成的恶意威胁。
+Defender for Office 365保护你的组织免受电子邮件、链接和 URL (和协作) 造成的恶意威胁。
 
 :::image type="content" source="../../media/Defender-for-O365.png" alt-text="Defender for Office 365 的图像。":::
 
@@ -117,7 +117,7 @@ Defender for Office 365保护你的组织免受电子邮件、链接 (URL) 和�
 
 跟踪和调查对用户电子邮件的威胁，跟踪活动等。 如果你已使用安全与&中心，这将很熟悉。
 
-:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="电子邮件&quot;排序规则&&quot; (&quot;或&quot;MSDO) &quot;菜单，位于 Microsoft 365 Defender。":::
+:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="电子邮件&quot;排序规则&quot;&&quot; (&quot;或&quot;MSDO) &quot;菜单位于页面Microsoft 365 Defender。":::
 
 #### <a name="email-entity-page"></a>电子邮件实体页面
 
@@ -127,17 +127,17 @@ Defender for Office 365保护你的组织免受电子邮件、链接 (URL) 和�
 
 查看报表、更改设置和修改用户角色。
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="安全中心左侧Microsoft 365 Defender权限和报告的快速启动菜单。":::
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="Microsoft 365 Defender门户左侧Microsoft 365 Defender权限和报告的快速Microsoft 365 Defender菜单。":::
 
 > [!NOTE]
-> DomainKeys Identified Mail (DKIM) 可确保目标电子邮件系统信任从自定义域出站发送的邮件。
+> DomainKeys 标识的邮件 (DKIM) 可确保目标电子邮件系统信任从自定义域出站发送的邮件。
 > For Defender for Office 365 users， you can now *manage and rotate* DKIM keys through Microsoft 365 Defender： ， or navigate to Policy & <https://security.microsoft.com/threatpolicy> **rules** \> **Threat policies** \> \> **Rules** section \> **DKIM**.
 >
 > 有关详细信息，请参阅使用 [DKIM 验证从自定义域发送的出站电子邮件](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)。
 
 ## <a name="whats-changed"></a>更改内容
 
-此表是威胁管理的快速参考，其中安全与合规中心与安全&**门户** 之间 **Microsoft 365 Defender** 变化。 单击链接，详细了解这些区域。
+此表是威胁管理的快速参考，其中安全与合规中心与安全&门户之间Microsoft 365 Defender变化。 单击链接，详细了解这些区域。
 
 <br>
 
@@ -146,7 +146,7 @@ Defender for Office 365保护你的组织免受电子邮件、链接 (URL) 和�
 |领域|更改说明|
 |---|---|
 |[调查](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|将 [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) 和 [Defender for Endpoint](../defender-endpoint/automated-investigations.md)。 通过这些更新和改进，安全操作团队将能够在一处查看电子邮件、协作内容、用户帐户和设备中的自动调查和修正操作的详细信息。|
-|[警报队列](../../compliance/alert-policies.md)|安全 **与合规中心的**"查看警报"&现在包含指向"警报Microsoft 365 Defender。 单击"打开 **通知页**"链接，Microsoft 365 Defender打开。 可以通过单击警报 **中** Office 365 警报来访问通知页面。|
+|[警报队列](../../compliance/alert-policies.md)|安全 **与合规** 中心中的"查看警报"&现在包含指向警报Microsoft 365 Defender。 单击"打开 **通知页**"链接，Microsoft 365 Defender打开。 可以通过单击警报 **中** Office 365 警报来访问通知页面。|
 |[攻击模拟培训](../office-365-security/attack-simulation-training-insights.md)|使用"攻击攻击"培训在组织中运行实际攻击方案。 这些模拟攻击可帮助在真正攻击对组织造成攻击之前对员工进行培训。 攻击攻击培训包括更多选项、增强的报告以及改进的培训课程，有助于更轻松地提供和管理攻击攻击方案和培训方案。|
 |
 
@@ -162,10 +162,10 @@ Defender for Office 365保护你的组织免受电子邮件、链接 (URL) 和�
 此外，请查看 **底部的** "相关信息"部分。
 
 > [!IMPORTANT]
-> Microsoft 365 Defender门户 () 和 <https://security.microsoft.com> 中组合 <https://securitycenter.windows.com> 了安全功能 <https://protection.office.com> 。 但是，所看到的内容取决于你的订阅。 例如，如果只有适用于 Office 365 计划 1 或 2 的 Microsoft Defender，作为独立订阅，你将看不到终结点安全与适用于 Office 计划 1 的 Defender 客户不会看到威胁分析等项目。
+> The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> combines security features in ， and <https://securitycenter.windows.com> <https://protection.office.com> . 但是，所看到的内容取决于你的订阅。 例如，如果只有适用于 Office 365 计划 1 或 2 的 Microsoft Defender，作为独立订阅，你将看不到终结点安全与适用于 Office 计划 1 的 Defender 客户不会看到威胁分析等项目。
 
 > [!TIP]
-> 所有 Exchange Online Protection (EOP) 函数都将包含在Microsoft 365 Defender，因为 EOP 是 Defender for Office 365 的核心元素。
+> 所有Exchange Online Protection (EOP) 函数都将包含在Microsoft 365 Defender中，因为 EOP 是 Defender for Office 365 的核心元素。
 
 ## <a name="microsoft-365-defender-home-page"></a>Microsoft 365 Defender主页
 
@@ -173,7 +173,7 @@ Defender for Office 365保护你的组织免受电子邮件、链接 (URL) 和�
 
 使用 **指导** ，可快速浏览终结点或电子邮件和协作页面。 请注意，此处显示的任何信息取决于拥有适用于 Office 365 的 Defender 和/或 Defender for Endpoint 的许可证。
 
-此外，还包括指向安全与合规& **中心的链接** 进行比较。 最后一个链接是 **更新的"新增功能** 页面。
+此外，还包括指向安全与合规&中心的链接进行比较。 最后一个链接是 **更新的"新增功能** 页面。
 
 ## <a name="related-information"></a>相关信息
 

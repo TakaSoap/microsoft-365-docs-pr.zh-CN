@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2ce2e6e1efc87f0bcbfdbe6d650f35ea91da8422
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: ec4a497fd0ee428fbc664ae064ec95f74fcdce85
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213561"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172411"
 ---
 # <a name="overview-of-microsoft-365-defender-apis"></a>Microsoft 365 Defender API 概述
 
@@ -61,8 +62,8 @@ Microsoft 365 Defender构建于集成就绪平台的顶部。
 | [访问Microsoft 365 Defender API](api-access.md) |
 | **构建应用程序** |
 | [创建"Hello world"应用](api-hello-world.md) |
-| [创建应用以Microsoft 365 Defender访问 API](api-create-app-user-context.md) |
-| [创建应用以在没有Microsoft 365 Defender的情况下访问用户](api-create-app-web.md) |
+| [创建应用以Microsoft 365 Defender用户访问 API](api-create-app-user-context.md) |
+| [创建应用以在没有用户Microsoft 365 Defender访问用户](api-create-app-web.md) |
 | [创建具有对应用程序 API 的多租户Microsoft 365 Defender应用程序](api-partner-access.md) |
 | **对应用进行故障排除和维护** |
 | [了解 API 错误代码](api-error-codes.md) |

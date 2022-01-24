@@ -1,6 +1,6 @@
 ---
 title: 常见Microsoft 365 Defender REST API 错误代码
-description: 了解 REST API Microsoft 365 Defender代码
+description: 了解 REST API Microsoft 365 Defender常见错误代码
 keywords: api， 错误， 代码， 常见错误， Microsoft 365 Defender， api 错误代码
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b43f9548419d3bab10501aa133637b8e2c5583fd
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.custom: api
+ms.openlocfilehash: 499ab1722b2754e893361784f7ff1ce257ceb58b
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374750"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171943"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常见Microsoft 365 Defender REST API 错误代码
 
@@ -38,7 +39,7 @@ ms.locfileid: "61374750"
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-任何一个 API 上的操作可能会返回错误Microsoft 365 Defender代码。 每个错误响应都将包含一条错误消息，有助于解决问题。 表部分中的错误消息列提供了一些示例消息。 实际消息的内容因触发响应的因素而异。 表中用尖括号指示变量内容。
+任何一个 API 上的操作可能会返回Microsoft 365 Defender代码。 每个错误响应都将包含一条错误消息，有助于解决问题。 表部分中的错误消息列提供了一些示例消息。 实际消息的内容因触发响应的因素而异。 表中用尖括号指示变量内容。
 
 ## <a name="error-codes"></a>错误代码
 
@@ -56,12 +57,12 @@ MaximumBatchSizeExceeded | BadRequest (400)  | 已超出最大批次大小。 Re
 MissingRequiredParameter | BadRequest (400)  | 参数 \<the missing parameter\> 缺失。
 OsPlatformNotSupported | BadRequest (400)  | 此操作 \<the client OS Platform\> 不支持操作系统平台。
 ClientVersionNotSupported | BadRequest (400)  | \<The requested action\> 在客户端版本及 \<supported client version\> 以上版本上受支持。
-未经授权 (Unauthorized) | 未经授权 (401)  | 未经授权 (Unauthorized) <br /><br />*注意：通常是由无效或过期的授权标头导致的。*
+未经授权 (Unauthorized) | 未授权 (401)  | 未经授权 (Unauthorized) <br /><br />*注意：通常是由无效或过期的授权标头导致的。*
 禁止访问 (Forbidden) | 禁止 (403)  | 禁止访问 (Forbidden) <br /><br />*注意：有效令牌，但操作权限不足*。
 DisabledFeature | 禁止 (403)  | 未启用租户功能。
 DisallowedOperation | 禁止 (403)  | \<the disallowed operation and the reason\>.
-NotFound | 在 404 (未找到)  | "常规未找到"错误消息。
-ResourceNotFound | 在 404 (未找到)  | 未找到 \<the requested resource\> 资源。
+NotFound | 404 (未找到)  | "常规未找到"错误消息。
+ResourceNotFound | 404 (未找到)  | 未找到 \<the requested resource\> 资源。
 InternalServerError | 内部服务器错误 (500)  | *注意：无错误消息，请重试该操作或联系 [Microsoft（](../../admin/get-help-support.md) 如果未解决）*
 
 ## <a name="examples"></a>示例

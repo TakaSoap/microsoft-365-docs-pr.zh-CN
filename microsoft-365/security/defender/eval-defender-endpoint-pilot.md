@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7008b78ae5b01925e97143841b453a2c5c573fcc
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: adaf1a7798c9e2e7b016a85577c1f62995a7a78e
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941066"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172051"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>试用 Microsoft Defender for Endpoint
 
@@ -64,7 +66,7 @@ Microsoft Defender for Endpoint 附带了 [可在](https://securitycenter.window
 
 若要运行任何提供的模拟，你至少需要一 [个已载入的设备](../defender-endpoint/onboard-configure.md)。
 
-1. 在  >  **帮助模拟&** 教程中，选择要模拟的可用攻击方案：
+1. 在 **帮助**  >  **模拟&** 教程中，选择要模拟的可用攻击方案：
 
    - **方案 1：文档丢弃后门** - 模拟传递社交工程的诱使文档。 文档启动一个专门设计的后门，该后门为攻击者提供控制。
 
@@ -74,7 +76,7 @@ Microsoft Defender for Endpoint 附带了 [可在](https://securitycenter.window
 
 2. 下载并阅读所选方案提供的相应演练文档。
 
-3. 下载模拟文件或通过导航到帮助模拟和教程复制  >  **&脚本**。 你可以选择在测试设备上下载文件或脚本，但这不是强制性的。
+3. 下载模拟文件或复制模拟脚本，方法为导航到帮助模拟  >  **&教程**。 你可以选择在测试设备上下载文件或脚本，但这不是强制性的。
 
 4. 根据演练文档中的指示，在测试设备上运行模拟文件或脚本。
 

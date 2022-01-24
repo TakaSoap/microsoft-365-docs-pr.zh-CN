@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cc9c90effd91c2fddc390e7338beca8ae87ea312
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: a8406c0ec27c238615b25f60b988efbb50a8d7d7
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212229"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172231"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>访问Microsoft 365 Defender API
 
@@ -49,7 +50,7 @@ Microsoft 365 Defender通过一组编程 API 公开其大部分数据和操作�
 > [!NOTE]
 > API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
-完成这些步骤后，就可以使用特定上下文访问 Microsoft 365 Defender API 了。
+完成这些步骤后，就可以使用特定上下文Microsoft 365 Defender API 了。
 
 ## <a name="application-context-recommended"></a>应用上下文 (推荐) 
 
@@ -76,7 +77,7 @@ Microsoft 365 Defender通过一组编程 API 公开其大部分数据和操作�
 
 ## <a name="partner-context"></a>合作伙伴上下文
 
-当你需要向多个租户中的许多用户提供应用时， [请使用此上下文](/azure/active-directory/develop/single-and-multi-tenant-apps)。
+当你需要向多个租户中的许多用户提供应用时，请使用 [此上下文](/azure/active-directory/develop/single-and-multi-tenant-apps)。
 
 1. 创建Azure Active Directory租户应用程序。
 2. 向应用程序分配所需的权限。
@@ -84,11 +85,11 @@ Microsoft 365 Defender通过一组编程 API 公开其大部分数据和操作�
 4. 使用基于客户的租户 ID 的用户凭据获取安全令牌。
 5. 使用令牌访问 Microsoft 365 Defender API。
 
-有关详细信息，请参阅 **[创建具有合作伙伴对](api-partner-access.md)** api Microsoft 365 Defender访问权限的应用。
+有关详细信息，请参阅 **[创建具有合作伙伴访问应用 API Microsoft 365 Defender应用](api-partner-access.md)**。
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365 DefenderAPI 概述](api-overview.md)
+- [Microsoft 365 Defender API 概述](api-overview.md)
 - [用户登录和 API 访问的 OAuth 2.0 授权](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 - [使用 Azure Key Vault 管理服务器应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/)
-- [创建访问应用程序 API 的"Hello world"Microsoft 365应用程序](api-hello-world.md)
+- [创建访问应用程序 API 的"hello world"Microsoft 365应用程序](api-hello-world.md)

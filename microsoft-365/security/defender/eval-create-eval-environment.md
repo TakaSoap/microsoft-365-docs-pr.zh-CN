@@ -1,6 +1,6 @@
 ---
 title: 创建Microsoft 365 Defender评估环境
-description: 通过激活试用Microsoft 365 Defender设置你的试用实验室或试验环境。 然后设置 Microsoft Defender for Identity (MDI) 所有其他 M365D 评估。
+description: 通过激活Microsoft 365 Defender许可证设置你的试用实验室或试验环境。 然后设置 Microsoft Defender for Identity (MDI) 所有其他 M365D 评估。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,26 +17,28 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 8f8ef31b037709f7b5b87c888f40b1a5a3a5b438
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f294884fcae64e91d88305bccf777cee8663a0d3
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940158"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171834"
 ---
 # <a name="create-the-microsoft-365-defender-evaluation-environment"></a>创建Microsoft 365 Defender评估环境
 
 在评估中，有两种常见方法可以执行下一步。 本文档假定你已拥有生产Microsoft 365租户，并且将激活 E5 试用许可证Microsoft 365 Defender当前 *环境中评估许可证*。 就地评估将让你保留任何安全方法，在评估期后购买许可证。
 
-第二个[操作是Microsoft 365 Defender测试](setup-m365deval.md)实验室环境以进行评估。 请注意，它可能没有来自业务的真实信号。
+第二个[操作是Microsoft 365 Defender测试实验室](setup-m365deval.md)环境以进行评估。 请注意，它可能没有来自业务的真实信号。
 
 ## <a name="to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender"></a>激活 E5 试用许可证以评估Microsoft 365 Defender 
 
 1. 登录到现有租户Microsoft 365管理门户。
 2. 从 **导航菜单中选择** "购买服务"。
-3. 向下滚动到"Office 365"**部分，然后选择**"许可证"Office 365 E5"详细信息"按钮。
+3. 向下滚动到"Office 365"**部分，然后选择**"许可证"下Office 365 E5"按钮。
 
    :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="The Office 365 section has a Details button to click.":::
 
@@ -46,7 +48,7 @@ ms.locfileid: "61940158"
 
 5. 确认你的请求，然后单击立即 **尝试** 按钮。
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="&quot;签出，确认订单&quot;面板上有一个&quot;立即试用&quot;按钮， (25 个用户试用一Office 365 E5 25) 。":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="在&quot;签出，确认订单&quot;面板上有一个&quot;立即试用&quot;按钮， (25 个用户试用一Office 365 E5 25) 。":::
 
 ## <a name="next-steps"></a>后续步骤
 

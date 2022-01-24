@@ -17,18 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 ms.custom:
 - admindeeplinkDEFENDER
 - admindeeplinkEXCHANGE
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0253d0ac64443562053765c9f0cdaaee69aeaad6
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: fc49494d924129ed2771bc399467f3e9101e7620
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421854"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172351"
 ---
 # <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-defender"></a>将帐户从Office 365合规中心重定向到Microsoft 365 Defender
 
@@ -39,7 +38,7 @@ ms.locfileid: "61421854"
 - Microsoft 365 Defender
 - Defender for Office 365
 
-本文介绍如何通过启用自动重定向Microsoft 365 Defender从以前的 Office 365 安全与合规中心网站将帐户 (protection.office.com) 到 Microsoft 365 Defender (security.microsoft.com) 。
+本文介绍如何通过启用从以前的 Office 365 安全与合规中心 Microsoft 365 Defender 自动重定向到 (protection.office.com) ，将帐户Microsoft 365 Defender (security.microsoft.com) 。
 
 ## <a name="what-to-expect"></a>预期结果
 
@@ -47,11 +46,11 @@ ms.locfileid: "61421854"
 
 详细了解更改了哪些功能[：Microsoft Defender for Office 365 Microsoft 365 Defender](microsoft-365-security-center-mdo.md)。
 
-启用自动重定向后，当用户使用安全与合规Microsoft 365 Defender安全与合规中心中的Office 365将用户路由到用户。
+启用自动重定向后，当用户使用 Microsoft 365 Defender 安全与合规中心中的Office 365功能时，用户将被路由到用户。
 
-其中包括威胁管理部分、警报 (查看警报和警报策略) 以及威胁管理仪表板和报告中的功能。 安全Office 365安全与合规中心内与安全不相关的项目不会重定向到Microsoft 365 Defender。
+这些功能包括威胁管理部分、警报 (查看警报和警报策略) 以及威胁管理仪表板和报告。 安全Office 365安全与合规中心内与安全不相关的项目不会重定向到Microsoft 365 Defender。
 
-合规性相关项目可在管理中心Microsoft 365 合规中心，并且邮件流相关项目位于管理Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">中心中</a>。
+合规性相关项目可以在管理中心Microsoft 365 合规中心，并且可以在管理中心内找到与Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">项</a>。
 
 重定向不会影响所有其他功能，无论合规性相关还是同时提供这两项功能。
 
