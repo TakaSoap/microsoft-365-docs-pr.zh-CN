@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 本地扫描仪数据丢失防护
-ms.openlocfilehash: 1154a565f286cfafb5f1f03fdefbf3740b6e9907
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1586489389931b3df19a1c84f0ae49ac7ff9c099
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942964"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159478"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>本地扫描程序数据丢失防护入门
 
@@ -43,6 +43,9 @@ ms.locfileid: "61942964"
 
 
 有关许可的详细信息，请参阅[适用于安全与合规性的 Microsoft 365 许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+
+> [!IMPORTANT]
+> 通过添加文件或使用文件为扫描位置作出贡献的所有用户都需要具有许可证，而不只是扫描仪用户。
 
 ### <a name="permissions"></a>权限
 
