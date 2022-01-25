@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 650b2a91d5ba85e2c614a40941e01d7cdd7daf51
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+ms.openlocfilehash: 8fc3bf1ae2d133e6d91d9ecb205930276f1d00a8
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62041122"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202171"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -33,10 +33,23 @@ ms.locfileid: "62041122"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
+> [!NOTE]
+> 从 2022 年 1 月底开始，适用于终结点 (的 Microsoft Defender) 在 macOS 上面向最终用户的 MDE 体验将被引用为"Microsoft Defender"。 
+> 
+> This change is currently available in the Beta (previously called Insider Fast) and Preview (previously called Insider Slow) update channels. 包含此更改的最低产品版本为 101.54.24。
+> 
+> 最终用户将观察到以下更改： 
+> - 应用程序安装路径已更改为 `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app` 。
+> - 在用户体验中，"Microsoft Defender ATP"的出现次数已替换为"Microsoft Defender"
+> 
+> 此更改不会影响 `mdatp` 命令行工具。
+>
+> **需要操作**：如果您的企业具有依赖产品名称或应用程序安装路径的自定义配置，则必须使用上面列出的新值更新这些配置。
+
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0) 
 
-- 不再支持 mojave (macOS 10.14) mojave 10.14
-- 在管理员通过 MDM 停止管理产品设置后，它现在将恢复为它管理之前的值 (最终用户在本地配置的值，或者，如果未显式提供此类本地值，则恢复为产品) 使用的默认值。 在此更改之前，在停止管理设置后，其托管值将保留，并且仍由产品使用。
+- 不再支持 mojave () macOS 10.14
+- 在管理员通过 MDM 停止管理产品设置后，它现在恢复为它管理之前的值 (最终用户在本地配置的值，或者如果未显式提供此类本地值，则恢复为产品) 使用的默认值。 在此更改之前，在停止管理设置后，其托管值将保留，并且仍由产品使用。
 - Bug 修复&性能改进
 
 ## <a name="1014925-20121092149250"></a>101.49.25 (20.121092.14925.0) 
@@ -81,7 +94,7 @@ ms.locfileid: "62041122"
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0) 
 
 - [macOS 的设备](mac-device-control-overview.md) 控件现已一般可用
-- 解决了无法从 macOS 11 上的"大 Sur"菜单 (快速扫描) 
+- 解决了无法从 macOS 11 和 Big Sur (状态菜单启动快速) 
 - 其他 Bug 修复
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0) 
@@ -103,7 +116,7 @@ ms.locfileid: "62041122"
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0) 
 
 - macOS 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。
-- 性能改进 (XCode 模拟器应用用于修复错误) &的情况。
+- 性能改进 (专为使用 XCode 模拟器应用修复错误) &的情况。
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
 
@@ -138,7 +151,7 @@ ms.locfileid: "62041122"
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0) 
 
-- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大) 清单到内核内核错误时的条件
+- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 清单到内核内核错误时的条件
 - 修复了在 Mac 11 和 Big Sur (运行时 Endpoint Security 系统扩展) 
 - 错误修补程序
 
@@ -161,7 +174,7 @@ ms.locfileid: "62041122"
   > [!NOTE]
   > **2021** 年 1 月 1 日将从产品中删除旧的命令行工具语法。
 
-- 使用新的参数扩展 () ，该参数允许将诊断日志 `mdatp diagnostic create` `--path [directory]` 保存到其他目录
+- 使用 `mdatp diagnostic create` 新的参数扩展 () ，该参数允许将诊断日志 `--path [directory]` 保存到其他目录
 - Bug 修复&性能改进
 
 ## <a name="1010949"></a>101.09.49
@@ -286,7 +299,7 @@ ms.locfileid: "62041122"
 - 增加了对 macOS 加泰罗尼亚语的支持
 
   > [!CAUTION]
-  > macOS 10.15 (Catalina) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序在未经明确同意的情况下 (访问磁盘上的某些位置，如文档、下载、桌面) 等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+  > macOS 10.15 (Catalina) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序在未经明确同意的情况下 (访问磁盘上的某些位置，如) 下载、桌面等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
   >
   > 授予此同意的机制取决于你部署适用于终结点的 Microsoft Defender 的方式：
   >

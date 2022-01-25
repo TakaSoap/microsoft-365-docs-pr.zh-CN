@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender for Endpoint Flow连接器
+title: 如何使用 Power Automate 连接器为事件Flow连接器
 ms.reviewer: ''
-description: 使用 Microsoft Defender for Endpoint Flow 连接器自动实现安全性，并创建在租户上出现新警报时触发的流。
-keywords: 流， 受支持的 api， api， Microsoft 流， 查询， 自动化
+description: 使用 Microsoft Defender for Endpoint Flow 连接器创建一个流，该流将在租户上发生新事件时触发。
+keywords: 流， 受支持的 api， api， Microsoft 流， 查询， 自动化， 电源自动化
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
-ms.topic: article
+ms.topic: how-to
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8c3ed9023df1cb7256265a116303fd6988677de4
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: fdb3876de6f74c95858dee01aba9615198282b16
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300474"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202193"
 ---
-# <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (以前Microsoft Flow) 和 Azure Functions
+# <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>如何使用 Power Automate 连接器为事件Flow连接器
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,9 +35,12 @@ ms.locfileid: "61300474"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-自动执行安全过程是每个新式安全操作中心的标准要求。 缺少专业网络防御者会强制 SOC 以最有效的方式工作，自动化是一项必须完成的工作。 Microsoft Power Automate支持专为这一点构建的不同连接器。 您可以几分钟内生成端到端过程自动化。
 
-Microsoft Defender API 具有官方 Power Automate 连接器，具有许多功能。
+自动执行安全过程是每个现代安全运营中心 (SOC) 。 若要使 SOC 团队以最有效的方式运行，必须实现自动化。 使用 Microsoft Power Automate可帮助您创建自动化工作流，并几分钟内构建端到端过程自动化。 Microsoft Power Automate支持专为这一点构建的不同连接器。  
+
+使用本文指导你创建由事件触发的自动化，例如，在租户中创建新警报时。 Microsoft Defender API 具有官方 Power Automate 连接器，具有许多功能。 
+
+
 
 :::image type="content" alt-text="编辑凭据的图像1。" source="images/api-flow-0.png":::
 
@@ -47,7 +50,7 @@ Microsoft Defender API 具有官方 Power Automate 连接器，具有许多功�
 
 ## <a name="usage-example"></a>用法示例
 
-以下示例演示如何创建一个Flow在租户上出现新警报时触发的警报。
+以下示例演示如何创建一个Flow在租户上出现新警报时触发的警报。 将指导你定义启动流的事件，以及该触发器发生时将采取的下一步操作。  
 
 1. 登录到[Microsoft Power Automate。](https://flow.microsoft.com)
 
@@ -87,7 +90,7 @@ Microsoft Defender API 具有官方 Power Automate 连接器，具有许多功�
 
     :::image type="content" alt-text="编辑凭据的图像6。" source="images/api-flow-5.png" lightbox="images/api-flow-5.png":::
 
-3. 添加有关警报和隔离的电子邮件的新步骤。 有多个电子邮件连接器非常易于使用，例如Outlook Gmail。
+3. 添加有关警报和隔离的电子邮件的新步骤。 有多个电子邮件连接器非常易于使用，如 Outlook 或 Gmail。
 
 4. 保存流。
 

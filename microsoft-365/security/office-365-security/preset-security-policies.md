@@ -16,12 +16,12 @@ ms.custom: ''
 description: 管理员可以了解如何跨 EOP Exchange Online Protection (和 Microsoft Defender for) 保护功能应用标准策略和严格Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a557afd562c2b4d0127f69afec40c1909944968e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 98a32a9a65106be0336837117daaec1867f90693
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943156"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202157"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>在 EOP 和 Microsoft Defender for Office 365
 
@@ -51,7 +51,7 @@ ms.locfileid: "61943156"
 配置文件确定保护级别。 以下配置文件可用：
 
 - **标准保护**: 适用于大多数用户的基线保护配置文件。
-- **严格保护**：针对所选用户的更积极保护配置文件 (高价值目标或优先) 。
+- **严格保护**：针对所选用户的更主动 (高值目标或优先用户) 。
 
   对于 **"标准** 保护"和"严格保护"，使用具有条件和例外的规则，这些规则可确定配置文件的适用或不应用于哪些用户。
 
@@ -63,7 +63,7 @@ ms.locfileid: "61943156"
 
   只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
-- **内置的保护 (** Defender Office 365：) 启用链接保险箱附件保险箱保护的配置文件。 此设置有效地为链接和保险箱附件保险箱默认策略，这些附件从未具有默认策略。
+- **内置的保护 (** Defender Office 365：) 启用保险箱和保险箱保护的配置文件。 此设置有效地为链接和保险箱附件保险箱默认策略，这些附件从未具有默认策略。
 
   > [!NOTE]
   > **内置保护** 预设安全策略目前处于预览状态，并非在所有组织中都可用，并且可能会更改。
@@ -80,21 +80,21 @@ ms.locfileid: "61943156"
 
   - [名为"标准预设安全策略](configure-your-spam-filter-policies.md)"**和"****严格预设安全策略"的反垃圾邮件策略**。
   - [名为"标准预设安全策略](configure-anti-malware-policies.md)"**和"****严格预设安全策略"的反恶意软件策略**。
-  - [名为"标准预设安全策略"](set-up-anti-phishing-policies.md#spoof-settings)和"严格预设安全策略 **"的** EOP 防钓鱼策略 (欺骗) 。
+  - [名为"标准预设安全策略"](set-up-anti-phishing-policies.md#spoof-settings)和"严格预设安全策略"的EOP 防钓鱼策略 (欺骗) 。
 
 - **Microsoft Defender for Office 365** 策略：这包括具有 Microsoft 365 E5 或 Defender for Office 365 加载项订阅的组织：
-  - Microsoft Defender 中名为"标准预设安全策略 **Office 365"** 严格预设安全策略"的反网络钓鱼策略，其中包括：
+  - Microsoft Defender 中的反网络钓鱼策略Office 365 **标准** 预设安全策略和 **严格预设** 安全策略，其中包括：
     - EOP [防钓鱼](set-up-anti-phishing-policies.md#spoof-settings) 策略中可用的相同欺骗设置。
     - [模拟设置](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高级网络钓鱼阈值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-  - [保险箱链接策略](set-up-safe-links-policies.md)，名为 **标准预设安全策略**、**严格预设** 安全策略和 **内置保护策略**。
+  - [保险箱链接策略](set-up-safe-links-policies.md)，名为标准预设 **安全策略**、**严格** 预设安全策略和 **内置保护策略**。
   - [保险箱"标准](set-up-safe-attachments-policies.md)预设安全策略 **"、"严格预设** 安全策略"和 **"内置保护策略"的附件策略**。 
 
 你可以将 EOP 保护应用于与 Microsoft Defender 不同的用户，Office 365保护。
 
 ### <a name="policy-settings-in-preset-security-policies"></a>预设安全策略中的策略设置
 
-你无法修改保护配置文件中的策略设置。 标准 **、****严格** 和 **内置** 保护策略设置值在 EOP 和 Microsoft Defender 的推荐设置中进行了介绍 [，Office 365安全](recommended-settings-for-eop-and-office365.md)。
+你无法修改保护配置文件中的策略设置。 标准 **、****严格** 和 **内置** 保护策略设置值在 EOP 和 [Microsoft Defender](recommended-settings-for-eop-and-office365.md)的推荐设置中进行了介绍，Office 365安全。
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>预设安全策略和其他策略的优先级顺序
 
@@ -105,7 +105,7 @@ ms.locfileid: "61943156"
 3. 自定义安全策略
 4. **内置保护** 预设安全策略和默认安全策略
 
-换句话说，严格保护策略的设置会覆盖标准保护策略的设置，该策略会覆盖自定义策略中的设置，这将覆盖内置保护预设安全策略 (保险箱 链接和 保险箱 附件) 以及默认策略 (反垃圾邮件、反恶意软件和防钓鱼) 中的设置。 
+换句话说，严格保护策略的设置会覆盖标准保护策略的设置，该策略会覆盖自定义策略中的设置，该策略会覆盖内置保护预设安全策略 (保险箱 链接和 保险箱附件) 以及默认策略 (反垃圾邮件、反恶意软件和防钓鱼) 中的设置。 
 
 例如，如果标准保护中存在一个安全性设置，并且管理员为用户启用了标准保护，那么将应用标准保护设置，而不是在自定义策略或默认策略 (中为同一用户) 配置的标准保护设置。  请注意，在将自定义策略应用于组织中其他用户以满足特定需求时，你可能希望仅对部分组织应用标准或严格保护策略。
 
@@ -125,15 +125,15 @@ ms.locfileid: "61943156"
 
   有关详细信息，请参阅 [Exchange Online 中权限](/exchange/permissions-exo/permissions-exo)。
 
-  **注意**：将用户添加到 Azure Active Directory 中的相应角色Microsoft 365 管理中心为用户提供了对 Microsoft 365 中其他功能所需的权限。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  **注意**：将用户添加到 Azure Active Directory 角色Microsoft 365 管理中心为用户提供了对 Microsoft 365 中其他功能所需的权限。  有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>使用 Microsoft 365 Defender门户向用户分配"标准"和"严格"预设安全策略
 
-1. In the Microsoft 365 Defender portal at <https://security.microsofot.com> ， go to Email & **Collaboration** Policies \> **& Rules** Threat \> **policies** Preset \> **Security Policies** in the **Templated policies** section. 若要直接转到 **预设安全策略页面** ，请使用 <https://security.microsoft.com/presetSecurityPolicies> 。
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> ， go to Email & **Collaboration** Policies \> **& Rules** Threat \> **policies** Preset \> **Security Policies** in the **Templated policies** section. 若要直接转到 **预设安全策略页面** ，请使用 <https://security.microsoft.com/presetSecurityPolicies> 。
 
 2. 在"**预设安全策略"** 页上 **，单击"****标准** 保护"或"严格保护"**部分中的"管理**"。
 
-3. " **应用标准保护"** 或" **应用** 严格保护"向导在飞出控件中启动。 在 **"适用于 EOP** 保护"页上，标识 [EOP](#policies-in-preset-security-policies) 保护应用于以下收件人 (内部) ：
+3. " **应用标准保护"** 或" **应用** 严格保护"向导在飞出控件中启动。 在 **"适用于 EOP** 保护"页上，标识 [EOP](#policies-in-preset-security-policies) 保护应用于以下收件人条件 (内部) ：
    - **用户**
    - **组**
    - **域**
@@ -146,7 +146,7 @@ ms.locfileid: "61943156"
 
    完成后，单击“**下一步**”。
 
-4. 在适用于 Office 365 组织的 Microsoft Defender 中，你将访问适用于 Office 365 保护的 **Defender** 页面，以标识 [Microsoft Defender](#policies-in-preset-security-policies)针对 Office 365 保护应用于 (收件人条件) 。
+4. 在适用于 Office 365 组织的 Microsoft Defender 中，你将访问适用于 Office 365 保护的 **Defender** 页面，以标识 Microsoft Defender 的 [Office 365](#policies-in-preset-security-policies)保护应用于 (收件人条件) 。
 
    设置和行为与上一步中适用于页面的 **EOP** 保护完全相同。
 
@@ -166,7 +166,7 @@ ms.locfileid: "61943156"
 
 因此，我们通常不建议使用内置保护预设安全策略的例外。 
 
-1. In the Microsoft 365 Defender portal at <https://security.microsofot.com> ， go to Email & **Collaboration** Policies \> **& Rules** Threat \> **policies** Preset \> **Security Policies** in the **Templated policies** section. 若要直接转到 **预设安全策略页面** ，请使用 <https://security.microsoft.com/presetSecurityPolicies> 。
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> ， go to Email & **Collaboration** Policies \> **& Rules** Threat \> **policies** Preset \> **Security Policies** in the **Templated policies** section. 若要直接转到 **预设安全策略页面** ，请使用 <https://security.microsoft.com/presetSecurityPolicies> 。
 
 2. On the **Preset security policies** page， select Add **exclusions (not recommended)** in the **Built-in protection** section.
 

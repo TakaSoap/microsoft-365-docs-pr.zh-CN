@@ -21,12 +21,12 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: 通过与信息保护和管理团队合作，为组织创建 DLP 策略，实现终结点 DLP。
-ms.openlocfilehash: 747a8ca3cd8301b83bfb98401989e21946248981
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: c38171d790ffd376c7886da0547345cf7e74e36c
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049283"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202073"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>步骤 7. 使用信息保护功能实现数据丢失防护（DLP）
 
@@ -35,7 +35,7 @@ ms.locfileid: "62049283"
 
 Microsoft Endpoint 数据丢失防护（终结点 DLP）当前适用于：
 - Windows 10、Windows 11
-- MacOS
+- macOS
 
 DLP 策略由信息保护和管理团队创建。 每个 DLP 策略定义要查找的数据集中的元素，例如敏感信息类型或标签，以及如何保护此数据。 
 
