@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: 实施 Microsoft 信息保护 (MIP) 功能，无论在何处生活或旅居在外，均可助你保护敏感信息。
-ms.openlocfilehash: bba0c41fd9018a6952d69a20fcc046a8b65c1e5b
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 2fccdafa662bfdf8390a53ac535c571f52f673de
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/24/2022
-ms.locfileid: "62170983"
+ms.locfileid: "62187325"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息保护
 
@@ -83,4 +83,4 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
 
 ## <a name="licensing-requirements"></a>许可要求
 
-MIP 的许可证要求取决于所使用的方案和功能，而不是为本页中列出的每个功能设置许可要求。 若要了解 MIP 的许可要求和选项，请参阅[信息保护：敏感度标签](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-sensitivity-labeling)部分和相关的[PDF 下载](https://go.microsoft.com/fwlink/?linkid=2139145)，以了解 Microsoft 365 许可文档中的功能级别许可要求。
+MIP 的许可证要求取决于所使用的方案和功能，而不是为本页中列出的每个功能设置许可要求。 要了解 MIP 的许可要求和选项，请参阅 [Microsoft 365 安全性和符合性指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) 中的 **信息保护** 部分，以及相关 [PDF 下载](https://go.microsoft.com/fwlink/?linkid=2139145)，以了解功能级别许可要求。

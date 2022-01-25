@@ -15,16 +15,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 8e402bf2b2135e180094187bcabac905a70e2bde
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: f1911dcfa697d620e8d5d2109cc0d21e9638e5b5
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074374"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187241"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>了解Microsoft 365中的内部风险管理
 
-内部风险管理是 Microsoft 365 中的合规性解决方案，通过让你能够检测、调查和处理组织中恶意和无意的活动，帮助最大程度地降低内部风险。 内部风险策略允许你定义要识别和检测在组织中的风险类型，包括处理案例以及根据需要将Advanced eDiscovery上报给 Microsoft。 您组织的风险分析师可以快速采取适当的措施，以确保用户符合组织的合规性标准。
+内部风险管理是 Microsoft 365 中的合规性解决方案，通过让你能够检测、调查和处理组织中恶意和无意的活动，帮助最大程度地降低内部风险。 通过内部风险策略，你可以定义在组织中识别和检测的风险类型，包括处理案例以及根据需要将Advanced eDiscovery上报给 Microsoft。 您组织的风险分析师可以快速采取适当的措施，以确保用户符合组织的合规性标准。
 
 观看下面的视频，了解内部风险管理如何有助于组织在确定组织价值、文化及用户体验优先级时预防、检测和包含风险：
 <br>
@@ -36,6 +36,9 @@ ms.locfileid: "62074374"
 
 **内部风险管理工作流**：
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+> [!IMPORTANT]
+> 内部风险管理目前适用于托管在受 Azure 服务依赖项支持的地理区域和国家/地区的租户中。 若要验证组织是否支持内部风险管理，请参阅[Azure 依赖项可用性（按国家/地区）。](/troubleshoot/azure/general/dependency-availability-by-country)
 
 ## <a name="modern-risk-pain-points"></a>新式风险难处
 
@@ -50,7 +53,7 @@ ms.locfileid: "62074374"
 
 现代工作场所中的用户可以跨各种平台和服务创建、管理和共享数据。 在大多数情况下，组织具有有限的资源和工具来识别和缓解组织范围内的风险，同时还符合用户隐私标准。
 
-内部风险管理使用全面的服务和第三方指标来帮助你快速识别、会审和操作风险活动。 通过使用 microsoft Microsoft 365 和 Microsoft Graph中的日志，内部风险管理允许你定义特定策略以确定风险指标。 这些策略允许你识别有风险的活动并采取措施缓解这些风险。
+内部风险管理使用全面的服务和第三方指标来帮助你快速识别、会审和操作风险活动。 通过使用 Microsoft Microsoft 365 和 Microsoft Graph中的日志，内部风险管理允许你定义特定策略以确定风险指标。 这些策略允许你识别有风险的活动并采取措施缓解这些风险。
 
 内部风险管理以以下原则为中心：
 
@@ -71,7 +74,7 @@ ms.locfileid: "62074374"
 
 ## <a name="workflow"></a>工作流
 
-内部风险管理工作流可帮助你识别、调查和采取措施来解决组织内部风险。 借助集中的策略模板、Microsoft 365 服务的全面活动信号以及警报和案例管理工具，您可以使用可操作见解来快速识别和处理风险行为。
+内部风险管理工作流可帮助你识别、调查和采取措施来解决组织内部风险。 借助集中的策略模板、Microsoft 365 服务的全面活动信号以及警报和案例管理工具，您可以使用可操作见解快速识别和处理风险行为。
 
 通过 Microsoft 365 中的内部风险管理，按照以下工作流程识别和解决内部风险活动和合规性问题：
 
@@ -88,7 +91,7 @@ ms.locfileid: "62074374"
 - [优先用户的数据泄露活动(预览)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [心怀不满用户的数据泄露活动(预览)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [安全策略常规违规活动(预览)](insider-risk-management-policies.md#general-security-policy-violations-preview)
-- [一般患者数据滥用 (预览) ](insider-risk-management-policies.md#general-patient-data-misuse-preview)
+- [常规患者数据滥用 (预览) ](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 - [离职用户的安全策略违规活动(预览)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [优先用户的安全策略违规活动(预览)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [心怀不满员工的安全策略违规活动(预览)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
@@ -129,16 +132,16 @@ ms.locfileid: "62074374"
 
 ![内部风险管理调查。](../media/insider-risk-investigate.png)
 
-此外，新的审核 [ (预览 ](insider-risk-management-audit-log.md) 版) 使你可以随时了解对内部风险管理功能采取的操作。 此资源允许独立审阅分配给一个或多个内部风险管理角色组的用户所采取的操作。
+此外，新的审核 [ (预览 ](insider-risk-management-audit-log.md)) 使你可以随时了解对内部风险管理功能采取的操作。 此资源允许独立审阅分配给一个或多个内部风险管理角色组的用户所采取的操作。
 
 ### <a name="action"></a>操作
 
 调查案例后，审阅者可以快速采取行动来解决该案例，或与组织的其他风险利益干系人协作。 如果用户意外或无意违反策略条件，可以从您可以为组织自定义的通知模板向用户发送简单的提醒通知。 这些通知可以充当简单的提醒，也可以指示用户刷新培训或指南以帮助防止将来存在风险的行为。 有关详细信息，请参阅 [内部风险管理通知模版](insider-risk-management-notices.md)。
 
-在更严重的情况下，可能需要与组织的其他审阅者或服务共享内部风险管理案例信息。 内部风险管理与其他合规性Microsoft 365紧密集成，以帮助你解决端到端风险。
+在更严重的情况下，可能需要与组织的其他审阅者或服务共享内部风险管理案例信息。 内部风险管理与其他合规性Microsoft 365紧密集成，以帮助您解决端到端风险。
 
 - **Advanced eDiscovery：** 通过上报案件进行调查，你可以将案件的数据和管理转移到Advanced eDiscovery中Microsoft 365。 高级电子数据展示提供了端到端的工作流程，可用于保存、收集、审查、分析和导出响应组织的内部和外部调查的内容。 它帮助法律团队管理整个法定保留通知工作流。 若要了解有关高级电子数据展示案例的详细信息，请参阅 [Microsoft 365 中的高级电子数据展示概述](overview-ediscovery-20.md)。
-- **Office 365 管理 API 集成 (预览版) ：** 内部风险管理支持通过 Office 365 管理 API 将警报信息导出到安全信息和事件管理 (SIEM) 服务。 通过访问平台中最适合组织风险流程的警报信息，可以更灵活地操作风险活动。 若要了解有关使用管理 API 导出Office 365信息的信息，请参阅导出[警报](insider-risk-management-settings.md#export-alerts)。
+- **Office 365管理 API 集成 (预览版) ：** 内部风险管理支持通过 Office 365 管理 API 将警报信息导出到安全信息和事件管理 (SIEM) 服务。 通过访问平台中最适合组织风险流程的警报信息，可以更灵活地操作风险活动。 若要了解有关使用管理 API 导出警报Office 365，请参阅导出[警报](insider-risk-management-settings.md#export-alerts)。
 
 > [!NOTE]
 > 感谢你在预览 ServiceNow 连接器期间提供的反馈和支持。 我们决定在 2020 年 11 月 30 日停止预览 ServiceNow 连接器并停止支持内部风险管理。 我们正在积极评估替代方法，以为客户提供内部风险管理中的 ServiceNow 集成。
@@ -177,11 +180,11 @@ ms.locfileid: "62074374"
 
 ## <a name="healthcare-preview"></a>医疗保健 (预览) 
 
-对于医疗保健行业的组织，最近的研究已发现与内部人员相关的数据泄露率非常高。 检测滥用患者数据和健康记录信息是保护患者隐私并遵守合规性法规（如健康保险可移植性和责任法案 (HIPAA) 和运行状况信息技术 for Economic and Health Health (HITECH) 法案）的一个关键部分。滥用患者数据的范围可以从访问特权患者记录到访问来自家庭或恶意患者的记录。 为了帮助标识这些类型的风险活动，以下内部风险管理策略模板使用 Microsoft 365 HR 连接器和医疗保健特定数据连接器开始对与电子健康记录 (EHR) 系统中可能会发生的行为相关的风险指示器进行评分：
+对于医疗保健行业的组织，最近的研究已发现与内部人员相关的数据泄露率非常高。 检测滥用患者数据和健康记录信息是保护患者隐私并遵守合规性法规（如健康保险可移植性和责任法案 (HIPAA) 和运行状况信息技术 for Economic and Health Health (HITECH) 法案）的一个关键部分。滥用患者数据的范围可以从访问特权患者记录到访问来自家庭或恶意患者的记录。 为了帮助识别这些类型的风险活动，以下内部风险管理策略模板使用 Microsoft 365 HR 连接器和特定于医疗保健的数据连接器，开始对与电子健康记录 (EHR) 系统中可能会发生的行为相关的风险指示器进行评分：
 
-- [一般患者数据滥用 (预览) ](insider-risk-management-policies.md#general-patient-data-misuse-preview)
+- [常规患者数据滥用 (预览) ](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 
-## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>解除体验的用户通过预览模式 (和行为) 
+## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>解除体验的用户对预览体验 (和行为) 
 
 雇佣者事件可能会以多种与内部风险相关的方式影响用户行为。 这些压力因素可能是性能考核不佳、职位降级或被放在绩效考核计划中的用户。 虽然大多数用户不会恶意响应这些事件，但是这些操作的压力可能会导致某些用户采取在正常情况下通常不会考虑的操作。 为了帮助标识这些类型的风险活动，以下内部风险管理策略模板使用 Microsoft 365 HR 连接器，并开始记分风险指示器，这些风险指标与可能在接近雇佣压力事件时发生的行为相关：
 

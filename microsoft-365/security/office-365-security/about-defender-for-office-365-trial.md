@@ -19,17 +19,17 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以了解 Microsoft Defender for Office 365
-ms.openlocfilehash: c70a3dfa873f42b110642dfc77cc877e52c6b8ca
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 3d8d873a3e89b0ae3302eca0ab7d7c471fd94449
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937696"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187313"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>关于 Microsoft Defender for Office 365试用版
 
 > [!IMPORTANT]
-> 快速入门，轻松使用 Microsoft [Defender](trial-playbook-defender-for-office-365.md)for Office 365 试用版。 本手册将帮助你充分利用免费试用版，通过展示如何使用 Microsoft Defender for Office 365。
+> 快速入门，轻松使用 Microsoft [Defender](trial-playbook-defender-for-office-365.md)for Office 365 试用版。 此手册将帮助你充分利用免费试用版，通过展示如何使用 Microsoft Defender for Office 365。
 
 Microsoft Defender for Office 365保护你的组织免受电子邮件、链接和 URL) 和协作工具 (恶意威胁。 Defender for Office 365 包括：
 
@@ -62,7 +62,7 @@ Microsoft Defender for Office 365 试用版是一种在单击几次后免费试�
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>设置 Defender for Office 365 试用版
 
-试用允许组织轻松设置和配置 Defender Office 365功能。 在设置期间，专用于 Office 365 (的 Defender 的策略、电子邮件的[保险箱](safe-attachments.md)附件、电子邮件的 保险箱 链接和 Microsoft Teams[以及反垃圾邮件](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)策略[) ](safe-links.md)中的模拟保护使用预设安全策略的标准模板[应用。](preset-security-policies.md)
+试用使组织可以轻松设置和配置 Defender Office 365功能。 在设置期间，专用于 Office 365 (的 Defender 的策略、电子邮件的[保险箱](safe-attachments.md)附件、电子邮件的[保险箱](safe-links.md)链接和 Microsoft Teams[以及防钓鱼](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)策略) 中的模拟保护使用预设安全策略的标准模板应用。 [](preset-security-policies.md)
 
 默认情况下，这些策略的范围为组织中所有用户，但在设置试用版期间或之后，您可以将策略分配更改为特定用户。
 
@@ -79,7 +79,7 @@ Microsoft Defender for Office 365 试用版是一种在单击几次后免费试�
 
 试用版的许可卡显示以下信息：
 
-![Microsoft Defender for Office 365试用版中的许可卡。](../../media/mdo-trial-licensing-card.png)
+![Microsoft Defender for Office 365许可卡。](../../media/mdo-trial-licensing-card.png)
 
 - **"使用类型"** 部分：
   - **试用版**：可供你Office 365试用版 Defender 许可证的数量。
@@ -90,7 +90,7 @@ Microsoft Defender for Office 365 试用版是一种在单击几次后免费试�
   - **付费**：付费 Defender Office 365许可证 (（如果有) ）。
 
 - **使用情况** 部分：Defender for Office 365策略涵盖的用户数量。
-  - **检测&** 响应：以下方案中包含的用户总数：
+  - **检测&** 仅响应：以下方案中包含的用户总数：
     - 在试用期间，将策略的范围确定为特定用户。
     - 您具有范围为特定用户的自定义策略。
   - **完全保护**：受 Office 365 计划 2 功能的 Defender 保护的用户总数 (AIR、威胁资源管理器、攻击模拟培训等) 。
@@ -119,17 +119,17 @@ Defender for Office 365 试用版将逐步向满足特定条件且没有现有 D
 
 ### <a name="q-what-happens-to-my-data-after-the-trial-expires"></a>问：试用版过期后，我的数据会发生什么情况？
 
-答：试用过期后，你将有权访问你的试用数据 (30 天内从 Defender for Office 365 功能访问) 数据。 这 30 天期限后，将删除与 Defender for Office 365试用版关联的所有策略和数据。
+答：试用过期后，你将有权访问试用数据 (30 天内从 Defender for Office 365 功能访问) 数据。 在此 30 天期限后，将删除与 Defender for Office 365试用版关联的所有策略和数据。
 
-### <a name="q-how-many-times-can-i-use-the-defender-for-office-365-trial-in-my-organization"></a>问：可以在组织中使用 Defender Office 365试用版多少次？
+### <a name="q-how-many-times-can-i-use-the-defender-for-office-365-trial-in-my-organization"></a>问：可以在我的组织中使用 Defender Office 365试用版多少次？
 
-答：最多 2 次。 如果你的第一个试用版过期，则需要在到期日期后至少等待 30 天，然后才能重新注册 Defender Office 365试用版。 第二次试用后，你无法注册另一个试用版。
+答：最多 2 次。 如果你的第一个试用版过期，则需要在到期日期后至少等待 30 天，然后才能再次注册 Defender Office 365试用版。 第二次试用后，你无法注册另一个试用版。
 
 ## <a name="learn-more-about-defender-for-office-365"></a>了解有关 Defender for Office 365
 
 Defender for Office 365通过提供全面的功能，帮助组织保护企业。
 
-还可以在此交互式指南中了解有关 defender for Office 365[功能了解更多信息](https://aka.ms/MS365D.InteractiveGuide)。
+还可以在此交互式指南 中了解有关适用于Office 365 Defender for [Office 365。](https://aka.ms/MS365D.InteractiveGuide)
 
 ![Microsoft Defender for Office 365概念图。](../../media/microsoft-defender-for-office-365.png)
 
@@ -145,7 +145,7 @@ Defender for Office 365通过提供全面的功能，帮助组织保护企业。
 
 业界领先的 AI 可检测恶意和可疑内容，并关联攻击模式，以识别旨在规避保护的活动。
 
-- [Microsoft Defender for Office 365 中的市场活动视图](campaigns.md)
+- [Microsoft Defender for Office 365 中的市场活动Office 365](campaigns.md)
 
 ### <a name="investigation-and-hunting"></a>调查和搜寻
 

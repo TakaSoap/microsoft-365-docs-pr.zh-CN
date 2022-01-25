@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解如何将非Microsoft 365数据导入审阅集，以在Advanced eDiscovery分析。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9de9c4044b9c8ba4af5112475e51e517d0c73946
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 39f91846e42bb2403c2b1faf7fd98ff3e7759182
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175139"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187421"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>将非 Microsoft 365 数据加载到审阅集
 
@@ -29,7 +29,7 @@ ms.locfileid: "60175139"
 
 ## <a name="requirements-to-upload-non-office-365-content"></a>上载非内容Office 365要求
 
-使用本文Microsoft 365上传非网站功能需要具备以下各项：
+使用本文Microsoft 365上载非网站功能需要具备以下各项：
 
 - 必须为要关联非托管Microsoft 365的所有保管人分配适当的许可证。 有关详细信息，请参阅开始[Advanced eDiscovery。](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)
 
@@ -53,7 +53,7 @@ ms.locfileid: "60175139"
 
 - 分配给电子数据展示管理员角色组的帐户 (添加为电子数据展示管理员) 。
 
-- AzCopy v8.1 工具安装在有权访问非内容文件夹Microsoft 365的计算机上。 若要安装 AzCopy，请参阅使用[AzCopy v8.1](/previous-versions/azure/storage/storage-use-azcopy)传输数据Windows。 请务必在默认位置安装 AzCopy，即 **%ProgramFiles (x86) %\Microsoft SDKs\Azure\AzCopy**。 必须使用 AzCopy v8.1。 AzCopy 的其他版本在加载非 Microsoft 365 数据时可能Advanced eDiscovery。
+- AzCopy v8.1 工具安装在有权访问非内容文件夹Microsoft 365的计算机上。 若要安装 AzCopy，请参阅 Windows 上的[使用 AzCopy v8.1 传输Windows。](/previous-versions/azure/storage/storage-use-azcopy) 请务必在默认位置安装 AzCopy，即 **%ProgramFiles (x86) %\Microsoft SDKs\Azure\AzCopy**。 必须使用 AzCopy v8.1。 AzCopy 的其他版本在加载非 Microsoft 365 数据时可能Advanced eDiscovery。
 
 
 ## <a name="upload-non-microsoft-365-content-into-advanced-ediscovery"></a>Upload非Microsoft 365内容放入Advanced eDiscovery
@@ -62,9 +62,11 @@ ms.locfileid: "60175139"
 
 2. 单击 **"审阅** 集"，然后选择要将数据上载到的非Microsoft 365审阅集。  如果没有审阅集，可以创建一个审阅集。 
  
-3. 在审阅设置中，单击“**管理审阅集**”，然后在“**非 Microsoft 365 数据**”磁铁上单击“**查看内容**”。
+3. 打开审阅集，方法是单击该审阅集或选择该审阅集，然后单击"**打开审阅集"。**
 
-4. 单击“**上传文件**”以启动数据导入向导。
+4. 在审阅集内，单击"操作"选项 (后向下箭头中的"管理审阅集) ，然后单击"非Office 365 **数据"** 选项。
+
+5. 单击“**上传文件**”以启动数据导入向导。
 
    ![Upload文件。](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
@@ -89,7 +91,7 @@ ms.locfileid: "60175139"
    > [!NOTE]
    > 如前所述，必须使用 AzCopy v8.1 成功使用"文件"页上Upload **命令**。 如果提供的 AzCopy 命令失败，请参阅疑难解答[AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md)。
 
-8. 返回到"文件Microsoft 365 合规中心，然后单击向导中的"下一步 **：** 处理文件"。  此操作将启动对已上传到 Azure 存储位置的非 Microsoft 365 文件的处理、文本提取和编制索引。  
+8. 返回到"文件Microsoft 365 合规中心，然后单击向导中的"下一步 **： 处理** 文件"。  此操作将启动对已上传到 Azure 存储位置的非 Microsoft 365 文件的处理、文本提取和编制索引。  
 
 9. 通过查看名为将非文件数据添加到审阅集的作业，跟踪"进程文件"页或"作业"**选项卡Microsoft 365处理文件的进度**。  作业完成后，新文件将在审阅集内可用。
 

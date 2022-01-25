@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 文档中的内容程序集创建SharePoint Syntex
+title: 使用 Microsoft 网站中的内容程序集创建SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何使用 Microsoft SharePoint Syntex 中的内容程序集自动创建文档和其他SharePoint Syntex。
-ms.openlocfilehash: 3613b65a7505d736897e51fcc37714d3203a2b03
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: 9f8a02a845afa93282158051eb746e0cb9a0171d
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083435"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187277"
 ---
-# <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>使用 Microsoft 文档中的内容程序集创建SharePoint Syntex
+# <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>使用 Microsoft 网站中的内容程序集创建SharePoint Syntex
 
 您可以使用 SharePoint Syntex自动生成标准重复业务文档，例如合同、工作声明、服务协议、同意书、销售说明和通信。 通过使用内容程序集，您可以更快速、更一致地执行所有这些操作，并且更不容易SharePoint Syntex。
 
-使用内容程序集，可以使用现有文档创建新式模板，然后使用该模板自动生成新内容，SharePoint列表或用户输入作为数据源。
+使用内容程序集，可以使用现有文档创建新式模板，然后使用该模板将 SharePoint 列表或用户输入作为数据源自动生成新内容。
 
 > [!NOTE]
 > 您必须是许可用户SharePoint Syntex访问和使用内容程序集功能。 您还必须具有管理列表SharePoint权限。
@@ -42,7 +42,7 @@ ms.locfileid: "62083435"
    ![选择文档的上载页面的屏幕截图。](../media/content-understanding/content-assembly-create-template-2.png)
 
    > [!NOTE]
-   > 目前，只能上载 Word 文档 (.docx 扩展) 创建模板。 Upload本地存储或桌面访问 Word 文档。
+   > 目前，只能上载 Word 文档（.docx 扩展名) 创建模板。 Upload存储或桌面访问 Word 文档。
 
 3. 上载文档后，该文档将显示在 template studio 中，您可以在其中将文档转换为模板。
  
@@ -95,7 +95,7 @@ ms.locfileid: "62083435"
 
    ![Screenshot of the Select a source column from the existing list page showing column names.](../media/content-understanding/content-assembly-create-template-8.png)
 
-    如果要再次查看列表的原始页面，请选择"转到 (列表名称) 列表底部的链接。
+    如果要再次查看列表的原始页面，请选择"转到 (列表名称) 列表底部的"链接"。
 
 5. 完成后，将看到列表字段已与占位符关联。
 
@@ -152,6 +152,7 @@ ms.locfileid: "62083435"
 > [!NOTE]
 > - 目前，Microsoft Word模板仅支持) 文档 (.docx 扩展名。 在上载文档之前，请确保 Word 文档未启用 **跟踪更改** 或注释。 如果文档包含图像的文本占位符，请确保它们不是文本换行的。
 >- 模板和文档与一个文档库相关联。 若要在另一个文档库中使用该模板，您需要在该文档库中再次创建模板。
+>- 用于创建新式模板的上载文档将另存为单独的副本，并放置在文档库的 /forms 目录中。 磁盘上的原始文件不会受到影响。
 >- 只能为文本创建占位符。 目前，不支持图像、智能图片、表格和项目符号列表。
 >- 从模板创建文档后，文档不会与该模板关联。
 
