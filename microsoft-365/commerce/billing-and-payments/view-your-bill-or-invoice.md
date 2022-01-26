@@ -24,13 +24,13 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
-ms.date: 07/31/2020
-ms.openlocfilehash: 0bbcb8ac5a1b12ae781636753c734a1009dbc9ef
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.date: 01/25/2022
+ms.openlocfilehash: 755c5c90fb99204f2bef932961a235a7756a4dff
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941368"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218965"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 
@@ -86,10 +86,9 @@ ms.locfileid: "61941368"
 ::: moniker-end
 
 > [!NOTE]
-> 
+>
 > Microsoft 365服务不提供付款回执。
 > 对于信用卡付款，请使用发票和信用卡帐单来匹配你的付款。
-
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>以电子邮件方式接收帐单副本
 
@@ -109,12 +108,24 @@ ms.locfileid: "61941368"
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">账单通知</a>”页面。
-    
+
 ::: moniker-end
 
 2. 在“**以电子邮件附件形式接收帐单？**”下将开关切换到“**开**”。
 
     将开关切换到" **关**"可随时停止接收帐单电子邮件。
+
+## <a name="run-the-unknown-charge-diagnostic"></a>运行未知费用诊断
+
+成为全局 Microsoft 365 管理员，可以使用 Microsoft 365 管理中心内运行的诊断工具，研究银行或信用卡对账单上的 Microsoft 意外费用。
+
+> [!NOTE]
+> 未知费用诊断仅适用于从 Microsoft.com 购买其产品和服务的客户，包括 Microsoft 365 企业版、教育版以及非营利组织。
+
+选择下面的“**运行测试**”链接，在Microsoft 365 管理中心打开诊断工具。
+
+>[!div class="nextstepaction"]
+>[运行测试：未知费用](https://aka.ms/PillarUnknownCharge)
 
 ## <a name="next-steps"></a>后续步骤
 

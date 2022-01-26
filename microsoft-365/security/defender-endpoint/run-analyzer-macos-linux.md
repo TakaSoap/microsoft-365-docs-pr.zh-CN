@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d91bae340db5e52d04bd0263068892065dd3eebd
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: e79ccf29695f0bc74c75cf12d617e273d974b24b
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166658"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213681"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>在 macOS 或 Linux 上运行客户端分析器
 
@@ -35,7 +35,7 @@ ms.locfileid: "61166658"
 1. 将 [XMDE 客户端分析器](https://aka.ms/XMDEClientAnalyzer) 工具下载到需要调查的 macOS 或 Linux 计算机。
 
    > [!NOTE]
-   > 从上述链接下载的"XMDEClientAnalyzer.zip"的当前 SHA256 哈希为："34C7F043211575544BB2C9CE30AB0998172066E44CD51E1CA018EDE9C96AB834"。
+   > 从上述链接下载的"XMDEClientAnalyzer.zip"的当前 SHA256 哈希为："34C0DA20A6B38A16951394958991CD74EF7E07EB1DE06923547B351665A32DF6"。
 
 2. 提取计算机上XMDEClientAnalyzer.zip内容。
 
@@ -104,7 +104,7 @@ ms.locfileid: "61166658"
 
   说明：在任一 macOS 上运行 *mdatp* 诊断创建时生成的相同 [诊断输出](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
-  或者
+  或
 
   [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 
