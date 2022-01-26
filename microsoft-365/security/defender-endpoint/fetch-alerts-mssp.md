@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: dce95b2053d95ebb03502d38cf35619c596253e1
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: e2ac36689f9f41badb2f4216198d8818e568778b
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300414"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214173"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>从 MSSP 客户租户提取警报
 
@@ -59,10 +59,10 @@ ms.locfileid: "61300414"
 
 4. 指定以下值：
 
-    - 名称 \<Tenant_name\> ：SIEM MSSP 连接器 (将Tenant_name替换为租户显示名称) 
+    - 名称 \<Tenant_name\> ：SIEM MSSP 连接器 (租户Tenant_name替换为租户显示名称) 
 
     - 支持的帐户类型：仅此组织目录中的帐户
-    - 重定向 URI：选择 `https://<domain_name>/SiemMsspConnector` "Web"， ("<domain_name>租户名称") 
+    - 重定向 URI：选择"Web"，然后 `https://<domain_name>/SiemMsspConnector` ("<domain_name>租户名称") 
 
 5. 单击“**注册**”。 应用程序显示在你拥有的应用程序列表中。
 
@@ -156,11 +156,11 @@ ms.locfileid: "61300414"
 
 ### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>步骤 3：允许应用程序Microsoft 365 Defender
 
-你需要允许在应用程序中创建的应用程序Microsoft 365 Defender。
+你需要允许你在应用程序中创建的应用程序Microsoft 365 Defender。
 
 你需要具有管理门户 **系统设置权限** 才能允许应用程序。 否则，你将需要请求客户允许应用。
 
-1. 转到 `https://security.microsoft.com?tid=<customer_tenant_id>` (\<customer_tenant_id\> 客户的租户 ID 替换。
+1. 转到 `https://security.microsoft.com?tid=<customer_tenant_id>` (客户的租户 ID \<customer_tenant_id\> 替换。
 
 2. 单击 **设置** \>  \> **终结点 API** \> **SIEM"**。
 
@@ -177,7 +177,7 @@ ms.locfileid: "61300414"
 
 ## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>使用 API 从 MSSP 客户的租户提取警报
 
-有关如何使用 REST API 获取警报的信息，请参阅 [使用 REST API 拉取警报](pull-alerts-using-rest-api.md)。
+有关如何使用 REST API 获取警报的信息，请参阅 [从 MSSP 客户租户获取警报](fetch-alerts-mssp.md)。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d29da74833bfd9b99f811bcc14de602b8e01d2c6
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 61eae362d9f4e5e2777b5f917ac95d7c838e350c
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300426"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214125"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint 预览功能
 
@@ -41,7 +41,7 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 了解 Defender for Endpoint 预览版中的新功能，并首先通过打开预览体验来试用即将推出的功能。
 
 > [!TIP]
-> 在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中： `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
+> 在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中： `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 有关已普遍提供的新功能详细信息，请参阅 Defender for [Endpoint 中的新增功能](whats-new-in-microsoft-defender-endpoint.md)。
 
@@ -62,7 +62,7 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 
 启用预览体验设置，以率先体验即将推出的功能。
 
-1. 在导航窗格中，选择 **"设置** \>  \> **终结点高级功能** \> **预览功能"。**
+1. 在导航窗格中，**选择"设置** \> **终结点** \> **高级功能** \> **预览功能"。**
 
 2. 切换 **开和关** 之间的 **设置，** 然后选择 **保存首选项**。
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eea9aca5e1c6ac791581e6fab93c768a06b0dc98
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 28ab23e46c951cd0b8bcf357f2420c0ea0804abb
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156516"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213961"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -37,7 +37,7 @@ ms.locfileid: "62156516"
 本主题介绍如何在 Linux 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Linux 上运行其他第三方终结点保护产品以及 Microsoft Defender for Endpoint 可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Linux EDR 上的 Defender for Endpoint[功能](linux-preferences.md#enable--disable-passive-mode)。
+> 在 Linux 上运行其他第三方终结点保护产品以及 Microsoft Defender for Endpoint 可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Linux EDR 上的 Defender for Endpoint[功能](linux-preferences.md#enforcement-level-for-antivirus-engine)。
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安装 Microsoft Defender for Endpoint
 
@@ -89,53 +89,37 @@ ms.locfileid: "62156516"
   - Fedora 33 或更高版本
 
     > [!NOTE]
-    > 未明确列出的分发和版本不受支持 (即使它们派生自正式支持的分发) 。
+    > 未明确列出的分发和版本不受支持 (即使它们派生自官方支持的分发) 。
 
+- 支持的内核版本列表
+  - Red Hat Enterprise Linux 6 和 CentOS 6：
+    - 对于 6.7：2.6.32-573。*
+    - 对于 6.8：2.6.32-642.*
+    - 对于 6.9：2.6.32-696.*
+    - 对于 6.10：2.6.32.754.2.1.el6.x86_64 2.6.32-754.41.2：
+    
+        |||||
+        |--|--|--|--|
+        |2.6.32-754.2.1.el6.x86_64|2.6.32-754.17.1.el6.x86_64|2.6.32-754.29.1.el6.x86_64|2.6.32-754.3.5.el6.x86_64|
+        |2.6.32-754.18.2.el6.x86_64|2.6.32-754.29.2.el6.x86_64|2.6.32-754.6.3.el6.x86_64|2.6.32-754.22.1.el6.x86_64|
+        |2.6.32-754.30.2.el6.x86_64|2.6.32-754.9.1.el6.x86_64|2.6.32-754.23.1.el6.x86_64|2.6.32-754.33.1.el6.x86_64|
+        |2.6.32-754.10.1.el6.x86_64|2.6.32-754.24.2.el6.x86_64|2.6.32-754.35.1.el6.x86_64|2.6.32-754.11.1.el6.x86_64|
+        |2.6.32-754.24.3.el6.x86_64|2.6.32-754.39.1.el6.x86_64|2.6.32-754.12.1.el6.x86_64|2.6.32-754.25.1.el6.x86_64|
+        |2.6.32-754.41.2.el6.x86_64|2.6.32-754.14.2.el6.x86_64|2.6.32-754.27.1.el6.x86_64|2.6.32-754.15.3.el6.x86_64|
+        |2.6.32-754.28.1.el6.x86_64|
 
-    对于 Red Hat Enterprise Linux 6 和 CentOS 6，受支持的内核版本列表为：
-       - 对于 6.7：2.6.32-573。* 
-       - 对于 6.8：2.6.32-642.* 
-       - 对于 6.9：2.6.32-696.* 
-       - 对于 6.10：2.6.32.754.2.1.el6.x86_64 2.6.32-754.41.2：
+    > [!NOTE]
+    > 发布新程序包版本后，仅对前两个版本的支持减少到技术支持。 提供的版本低于本节中列出的版本仅提供技术升级支持。
 
- > [!NOTE]
- > 发布新程序包版本后，仅对前两个版本的支持减少到技术支持。 提供的版本低于本节中列出的版本仅提供技术升级支持。
+  - 对于其余受支持的分发，所需的最低内核版本为 3.10.0-327
 
-    版本列表：
+- 事件提供程序机制
+  - Red Hat Enterprise Linux 6 和 CentOS `Talpa` 6：基于内核模块的解决方案
+  - 对于其余受支持的分发： `Fanotify`
+    - `fanotify`必须启用内核选项
 
-    - 2.6.32-754.2.1.el6.x86_64 
-    - 2.6.32-754.17.1.el6.x86_64
-    - 2.6.32-754.29.1.el6.x86_64
-    - 2.6.32-754.3.5.el6.x86_64 
-    - 2.6.32-754.18.2.el6.x86_64
-    - 2.6.32-754.29.2.el6.x86_64
-    - 2.6.32-754.6.3.el6.x86_64 
-    - 2.6.32-754.22.1.el6.x86_64
-    - 2.6.32-754.30.2.el6.x86_64
-    - 2.6.32-754.9.1.el6.x86_64 
-    - 2.6.32-754.23.1.el6.x86_64
-    - 2.6.32-754.33.1.el6.x86_64
-    - 2.6.32-754.10.1.el6.x86_64
-    - 2.6.32-754.24.2.el6.x86_64
-    - 2.6.32-754.35.1.el6.x86_64
-    - 2.6.32-754.11.1.el6.x86_64
-    - 2.6.32-754.24.3.el6.x86_64
-    - 2.6.32-754.39.1.el6.x86_64
-    - 2.6.32-754.12.1.el6.x86_64
-    - 2.6.32-754.25.1.el6.x86_64
-    - 2.6.32-754.41.2.el6.x86_64
-    - 2.6.32-754.14.2.el6.x86_64
-    - 2.6.32-754.27.1.el6.x86_64
-    - 2.6.32-754.15.3.el6.x86_64
-    - 2.6.32-754.28.1.el6.x86_64       
-
-
-- 最低内核版本 3.10.0-327
-
-- `fanotify`必须启用内核选项
-
-  > [!CAUTION]
-  > 不支持在 Linux 上并行运行 Defender for Endpoint 和基于 `fanotify` 其他的安全解决方案。 它可能会导致不可预知的结果，包括挂起操作系统。
+      > [!CAUTION]
+      > 不支持在 Linux 上并行运行 Defender for Endpoint 和基于 `fanotify` 其他的安全解决方案。 它可能会导致不可预知的结果，包括挂起操作系统。
 
 - 磁盘空间：1 GB
 
@@ -172,7 +156,7 @@ ms.locfileid: "62156516"
 - 必须 `auditd` () 审核框架。
 
   > [!NOTE]
-  > 通过添加到 的规则捕获的系统事件将添加到 (，) 并可能影响主机审核和上游 `/etc/audit/rules.d/` `audit.log` 集合。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
+  > 通过添加到 的规则捕获的系统事件将添加到 (，) 并可能影响主机 `/etc/audit/rules.d/` `audit.log` 审核和上游集合。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
 
 ### <a name="configuring-exclusions"></a>配置排除项
 

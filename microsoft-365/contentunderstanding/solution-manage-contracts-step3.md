@@ -12,16 +12,16 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: 了解如何使用Power Automate解决方案来创建流程以处理Microsoft 365合同。
-ms.openlocfilehash: 205a61638f4dcca235e301111fe2028c3a74ed1c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d83fb6e5ca911cbafc6f064c615ab15ae0f570c7
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159588"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62219001"
 ---
 # <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>步骤 3. 使用 Power Automate 创建处理合同的流程
 
-已创建合同管理通道，并附加了SharePoint文档库。 下一步是创建一个Power Automate流，以处理您的SharePoint Syntex标识和分类的合同。 可以通过在文档库中创建Power Automate流[SharePoint此步骤](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)。
+已创建合同管理通道，并附加了SharePoint文档库。 下一步是创建一个Power Automate流，以处理您的SharePoint Syntex标识和分类的合同。 可以通过在文档库中创建Power Automate[流来SharePoint此步骤](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)。
 
 对于合同管理解决方案，您需要创建一个Power Automate流以执行以下操作：
 
@@ -30,13 +30,13 @@ ms.locfileid: "60159588"
 - 对于已批准合同，合同信息将张贴到一个选项卡上，用于付款处理。
 - 对于被拒绝的合同，将通知团队进行进一步分析。 
 
-下图显示了Power Automate管理解决方案的工作流程。
+下图显示了Power Automate管理解决方案的流。
 
 ![Flow显示整个解决方案的图表。](../media/content-understanding/flow-entire-process.png)
 
 ## <a name="prepare-your-contract-for-review"></a>准备合同进行审阅
 
-当合同由文档理解SharePoint Syntex和分类时，Power Automate流将首先将状态更改为"正在审阅 **"。**
+当合同由文档理解SharePoint Syntex和分类时，Power Automate流将首先将状态更改为 **"正在审阅"。**
 
 ![更新状态。](../media/content-understanding/flow-overview.png)
 
@@ -145,13 +145,13 @@ ms.locfileid: "60159588"
 
    ![Flow状态为已批准。](../media/content-understanding/status-approved.png)
 
-- 在此解决方案中，合同数据将添加到" **付款** "选项卡，以便可以管理付款。 可以扩展此过程，以允许流程提交合同，供第三方财务应用程序 (例如 Dynamics CRM) 。
+- 在此解决方案中，合同数据将添加到" **付款** "选项卡，以便可以管理付款。 可以扩展此过程，以允许流程提交合同，供第三方财务应用程序（例如，Dynamics CRM (）) 。
 
    ![合同已移至"付款"。](../media/content-understanding/for-payout.png)
 
 - 在流中，创建以下项以将已批准合同移动到" **付款"** 选项卡。
 
-   ![Flow项目移动到"支付"。](../media/content-understanding/ready-for-payout.png)
+   ![Flow"支付"的项。](../media/content-understanding/ready-for-payout.png)
 
     若要从卡片获取所需信息的表达式Teams，请使用下表中显示的值。
  
@@ -160,9 +160,9 @@ ms.locfileid: "60159588"
     | 审批状态  | body ('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response') ？['submitActionId']         |
     | 批准者     | body ('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response') ？['responder']['displayName']        |
     | 审批日期     | body ('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response') ？['responseTime']         |
-    | 评论     | body ('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response') ？['data']['acComments']         |
+    | 备注     | body ('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response') ？['data']？['acComments']         |
     
-    以下示例演示如何使用公式框中的 Power Automate编写表达式。
+    下面的示例演示如何使用公式框中的 Power Automate编写表达式。
 
    ![显示表达式Power Automate的屏幕截图。](../media/content-understanding/expression-formula-power-automate.png)    
 
@@ -232,7 +232,7 @@ ms.locfileid: "60159588"
                         },
                         {
                             "title": "Approval comment",
-                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']}"
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['acComments']}"
                         },
                         {
                             "title": " ",
@@ -263,7 +263,7 @@ ms.locfileid: "60159588"
 
 - 在流中，签出合同文件，将状态更改为"已拒绝"，然后重新签入该文件。 
 
-   ![Flow在合同文件中拒绝状态。](../media/content-understanding/reject-flow.png)
+   ![Flow在合同文件中被拒绝。](../media/content-understanding/reject-flow.png)
 
 - 在你的流中，创建一个自适应卡片，指出合约已被拒绝。
 
@@ -328,7 +328,7 @@ ms.locfileid: "60159588"
                         },
                         {
                             "title": "Comment",
-                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']}"
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['acComments']}"
                         },
                         {
                             "title": " ",

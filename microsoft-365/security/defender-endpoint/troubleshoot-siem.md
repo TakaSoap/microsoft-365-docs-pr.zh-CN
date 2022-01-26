@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 5c0f02834fe70c086ca5db7def6d9f2fed2c7543
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: b6ed0342183734d9b4feb1c20a6c4059b77e64d6
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301734"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213949"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>SIEM 工具集成问题疑难解答
 
@@ -50,9 +50,9 @@ ms.locfileid: "61301734"
 
 4. 单击 **"应用注册"。** 然后在"应用程序"列表中，选择应用程序。
 
-5. 选择 **"&密码"** 部分，单击"新建客户端密码"，然后提供说明并指定有效期。
+5. 选择 **"&** 密码"部分，单击"新建客户端密码"，然后提供说明并指定有效期。
 
-6. 单击 **“保存”**。 将显示键值。
+6. 单击“**保存**”。 将显示键值。
 
 7. 复制值并将其保存在安全的位置。
 
@@ -73,7 +73,7 @@ ms.locfileid: "61301734"
    - 对于英国： `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
    - 对于美国  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` ：。
 
-6. 单击 **“保存”**。
+6. 单击“**保存**”。
 
 ## <a name="error-while-enabling-the-siem-connector-application"></a>启用 SIEM 连接器应用程序时出错
 
@@ -83,8 +83,5 @@ ms.locfileid: "61301734"
 
 ## <a name="related-topics"></a>相关主题
 
-- [在 Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)
-- [配置 ArcSight 以拉取适用于终结点检测的 Microsoft Defender](configure-arcsight.md)
 - [将检测拉取到 SIEM 工具](configure-siem.md)
-- [适用于终结点检测字段的 Microsoft Defender](api-portal-mapping.md)
-- [使用 REST API 拉取 Microsoft Defender 的终结点检测](pull-alerts-using-rest-api.md)
+

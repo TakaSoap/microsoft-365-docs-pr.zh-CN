@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: 了解邮箱中的多地理位置Exchange Online，如功能限制和邮箱放置。
-ms.openlocfilehash: 8938808a857a70a865678589e9a70e4ee0eb083c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c45c5c8e8856206fc2afc3e08005821f24dcd028
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177287"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214089"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online 中的多地理位置功能
 
@@ -43,7 +43,7 @@ Exchange Online 将 **PreferredDataLocation** 属性从 Azure AD 同步到 Excha
 
 - 如果用户上未指定 **PreferredDataLocation**，则在配置邮箱时，它将被配置在中心地理位置。
 
-- 如果 **PreferredDataLocation** 代码不正确， (例如，不输入 NAM) ，将在中央地理位置设置邮箱。
+- 如果 **PreferredDataLocation** 代码不正确， (，例如，不输入 NAM) ，将在中央地理位置设置邮箱。
 
 **注意**：多地理位置功能和 Skype for Business Online 区域性托管会议都使用用户对象上的 **PreferredDataLocation** 属性来定位服务。 如果在区域托管会议的用户对象上配置 **PreferredDataLocation** 值，则在 Microsoft 365 租户上启用多地理位置后，这些用户的邮箱将自动移动到指定的地理位置。
 
@@ -59,4 +59,4 @@ Exchange Online 将 **PreferredDataLocation** 属性从 Azure AD 同步到 Excha
 
 - 多地理位置组织支持公用文件夹。 但是，公用文件夹必须保留在中心地理位置。 无法将公用文件夹移动到卫星地理位置。
 
-- 在多地理位置环境中，不支持跨地理位置邮箱审核。 例如，如果为某用户分配了访问其他地理位置的共享邮箱的权限，此用户执行的邮箱操作不会记录在共享邮箱的邮箱审核日志中。 有关详细信息，请参阅[管理邮箱审核](../compliance/enable-mailbox-auditing.md)。
+- 在多地理位置环境中，不支持跨地理位置邮箱审核。 例如，如果为某用户分配了访问其他地理位置的共享邮箱的权限，此用户执行的邮箱操作不会记录在共享邮箱的邮箱审核日志中。 Exchange管理员审核事件也仅适用于默认位置。 有关详细信息，请参阅[管理邮箱审核](../compliance/enable-mailbox-auditing.md)。

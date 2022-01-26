@@ -19,14 +19,14 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 search.appverid: MET150
-description: 了解如何更新帐单邮寄地址或用于接收适用于Microsoft 365帐单通知的电子邮件地址。
-ms.date: 04/07/2021
-ms.openlocfilehash: 839dab1c63394f76c41abb7dd784253bb636ba38
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: 了解如何更新帐单邮寄地址或用于接收商业Microsoft 365通知的电子邮件地址。
+ms.date: 01/24/2022
+ms.openlocfilehash: 888e371cb81475b385ecd9d5cd3a3898039a5e94
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371276"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214101"
 ---
 # <a name="change-your-billing-addresses"></a>更改帐单邮寄地址
 
@@ -102,39 +102,6 @@ ms.locfileid: "61371276"
 
 4. 在"**编辑服务使用地址"窗格中**，更新地址，然后选择"保存 **"。**
 
-## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>更改用于接收帐单通知的备选电子邮件地址
-
-默认情况下，组织的帐单通知将发送到 Microsoft 电子邮件地址以及组织中每个全局管理员和帐单管理员的备用电子邮件地址。 每个管理员可以通过更新其个人资料信息来更改其备选电子邮件地址。
-  
-1. 使用你的 Microsoft 365 工作或学校帐户作为全局管理员登录。[了解如何登录](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
-
-2. 选择"**用户"图标**，然后选择"**我的帐户"。**
-  
-3. 选择 **个人信息**。
-  
-4. 在"**联系人详细信息"** 框中，选择"编辑 **"。**
-
-5. 在 **"备用电子邮件**"框中，键入想要使用的备用电子邮件地址，然后选择"保存 **"。**
-  
-## <a name="change-the-alternate-email-address-for-another-admin"></a>更改其他管理员的备用电子邮件地址
-
-还可以更改组织中其他全局管理员和帐单管理员的备用电子邮件地址。
-  
-::: moniker range="o365-worldwide"
-
-1. 在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">账单通知</a>”页面。
-
-::: moniker-end
-
-2. 在 **"帐单通知"** 页上，选择要更改的管理员。
-
-3. 在"**编辑用户角色**"窗格中，键入想要使用的备用电子邮件地址，然后选择"保存 **"。**
 
 ## <a name="related-content"></a>相关内容
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 8fc3bf1ae2d133e6d91d9ecb205930276f1d00a8
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: 157b3166a957fb0e4ddcadcbb23121ce10dfce1c
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202171"
+ms.locfileid: "62214209"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -151,7 +151,7 @@ ms.locfileid: "62202171"
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0) 
 
-- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 清单到内核内核错误时的条件
+- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 错误（清单为内核内核错误）的条件
 - 修复了在 Mac 11 和 Big Sur (运行时 Endpoint Security 系统扩展) 
 - 错误修补程序
 
@@ -174,7 +174,7 @@ ms.locfileid: "62202171"
   > [!NOTE]
   > **2021** 年 1 月 1 日将从产品中删除旧的命令行工具语法。
 
-- 使用 `mdatp diagnostic create` 新的参数扩展 () ，该参数允许将诊断日志 `--path [directory]` 保存到其他目录
+- 使用新的参数扩展 () ，该参数允许将诊断日志 `mdatp diagnostic create` `--path [directory]` 保存到其他目录
 - Bug 修复&性能改进
 
 ## <a name="1010949"></a>101.09.49
@@ -291,7 +291,7 @@ ms.locfileid: "62202171"
 
 ## <a name="1006899"></a>100.68.99
 
-- 添加了将防病毒功能配置为在被动模式下 [运行的功能](mac-preferences.md#enable--disable-passive-mode)
+- 添加了将防病毒功能配置为在被动模式下 [运行的功能](mac-preferences.md#enforcement-level-for-antivirus-engine)
 - Bug 修复&性能改进
 
 ## <a name="1006528"></a>100.65.28

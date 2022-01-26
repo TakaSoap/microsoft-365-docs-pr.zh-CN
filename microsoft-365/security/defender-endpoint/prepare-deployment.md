@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 015375b1405d878019e87afbc11de4cd67d241f0
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: f171bd8ce62e8e3d3b35c8dbab6740ad62b172fd
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202170"
+ms.locfileid: "62214185"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>准备 Microsoft Defender for Endpoint 部署
 
@@ -60,7 +60,7 @@ ms.locfileid: "62202170"
 
 |名称|Role|操作|
 |---|---|---|
-|输入名称和电子邮件|**首席信息安全 (CISO)** 作为新技术部署的发起人的组织 *内部执行代表。*|SO|
+|输入名称和电子邮件|**首席信息安全 (CISO)** 一名执行代表，他作为新技术部署 *的组织内部发起人。*|SO|
 |输入名称和电子邮件|**网络防御操作中心 (CDOC)** CDOC 团队的代表，负责定义此更改如何与客户安全运营团队中的流程 *保持一致。*|SO|
 |输入名称和电子邮件|**安全** 架构师 来自安全团队的代表，负责定义此更改如何与组织中 *的核心安全体系结构保持一致。*|R|
 |输入名称和电子邮件|**工作区** 架构师 来自 IT 团队的代表，负责定义此变更如何与组织中的核心 *工作场所体系结构保持一致。*|R|
@@ -80,7 +80,7 @@ ms.locfileid: "62202170"
 |终结点计数|按操作系统表示的终结点总数。|
 |服务器计数|按操作系统版本表示的服务器总数。|
 |管理引擎|管理引擎名称和版本 (例如，System Center Configuration Manager Current Branch 1803) 。|
-|CDOC 分发|高级 CDOC 结构 (例如，第 1 层外包到 Contoso，第 2 层和 3 层内部分布于欧洲和亚洲) 。|
+|CDOC 分发|高级 CDOC 结构 (，例如，第 1 层外包到 Contoso，第 2 层和 3 层内部分布于欧洲和亚洲) 。|
 |SIEM 安全 (事件) |使用的 SIEM 技术。|
 |||
 
@@ -92,7 +92,7 @@ Microsoft 建议使用最小特权的概念。 Defender for Endpoint 利用内�
 
 ****
 
-|Personas|角色|Azure AD如果需要 (角色角色) |分配到|
+|Personas|角色|Azure AD需要 (角色角色) |分配到|
 |---|---|---|---|
 |安全管理员||||
 |安全分析师||||
@@ -105,7 +105,7 @@ Microsoft[建议使用Privileged Identity Management](/azure/active-directory/ac
 
 Defender for Endpoint 支持两种权限管理方法：
 
-- **基本权限管理**：将权限设置为完全访问或只读。 对于基本权限管理，具有全局管理员或安全管理员角色的用户Azure Active Directory具有完全访问权限，而安全读者角色具有只读访问权限。
+- **基本权限管理**：将权限设置为完全访问或只读。 具有全局管理员或安全管理员角色的用户Azure Active Directory完全访问权限。 安全读取者角色具有只读访问权限，不授予查看计算机/设备清单的访问权限。
 
 - 基于角色的访问控制 **(RBAC) ：** 通过定义角色、将 Azure AD 用户组分配给角色并授予用户组对设备组的访问权限来设置粒度权限。 有关详细信息。 请参阅 [使用基于角色的访问控制管理门户访问](rbac.md)。
 

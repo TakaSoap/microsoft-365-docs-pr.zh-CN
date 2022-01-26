@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ad66a651406706d0e2730f9913839540418bb02b
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 951e49ddb7cb9ed0154fa70f66d54944a8aae066
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170641"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214129"
 ---
 # <a name="create-and-manage-device-groups"></a>创建和管理设备组
 
@@ -65,7 +65,7 @@ ms.locfileid: "61170641"
 3. 输入组名称和自动化设置，并指定用于确定哪些设备属于该组的匹配规则。 请参阅 [自动调查如何启动](automated-investigations.md#how-the-automated-investigation-starts)。
 
     > [!TIP]
-    > 如果要按组织单位对设备进行分组，可以配置组附属项的注册表项。 有关设备标记详细信息，请参阅创建 [和管理设备标记](machine-tags.md)。
+    > 如果要将标记用于分组设备，请参阅创建 [和管理设备标记](machine-tags.md)。
 
 4. 预览将匹配此规则的几个设备。 如果您对规则感到满意，请单击"用户访问 **"** 选项卡。
 
@@ -108,4 +108,4 @@ ms.locfileid: "61170641"
 
 - [使用基于角色的访问控制管理门户访问](rbac.md)
 - [创建和管理设备标签](machine-tags.md)
-- [使用租户 API 获取租户设备Graph列表](/graph/api/device-list-memberof)
+- [使用 api 获取租户设备Graph列表](/graph/api/device-list-memberof)

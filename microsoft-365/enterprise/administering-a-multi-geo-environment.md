@@ -14,13 +14,13 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
-description: 管理员可以了解如何在多地理位置SharePoint OneDrive和管理服务。
-ms.openlocfilehash: 347968820e297d9d88e9338af07a5eea1e72d676
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 管理员可以了解如何在多地理位置SharePoint OneDrive管理和管理服务。
+ms.openlocfilehash: 31d361b2936c3d7bceca7137499c659030717eba
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205841"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214188"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
@@ -33,6 +33,9 @@ ms.locfileid: "60205841"
 ## <a name="audit-log-search"></a>审核日志搜索
 
 可以从 Microsoft 365 审核日志搜索页中找到所有附属位置的统一[审核日志](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)。 你可以查看跨地理位置的所有审核日志条目，例如，NAM 和 EUR 用户的活动将显示在一个组织视图中，然后你可以应用现有筛选器，查看特定用户的活动。
+
+> [!NOTE]
+> Exchange管理员审核事件仅适用于默认位置。
 
 ## <a name="bcs-secure-store-apps"></a>BCS、安全存储、应用
 
@@ -50,7 +53,7 @@ BCS、安全存储和应用在每个附属位置都具有单独的实例，因�
 
 如果更改了用户的 PDL，则会自动转移用户的 Exchange 邮箱。 创建新邮箱时，如果没有为用户的 PDL 设置值，则会将新邮箱预配到用户的 PDL 或中心位置。
 
-## <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>DLP (策略) IP 保护 (数据丢失) 策略
+## <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>信息保护 (DLP) 策略 (IP) 数据丢失防护
 
 可以在“安全性和合规性”中心内为 OneDrive for Business、SharePoint 和 Exchange 设置 IP DLP 策略，并根据需要将策略的适用范围设置为整个租户或适用的用户。 例如：如果你希望为附属位置中的某个用户选择策略，请选择将策略应用于特定 OneDrive，并输入用户的 OneDrive url。 有关创建 DLP 的一般指南，请参阅[数据丢失防护策略概述](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。
 
@@ -72,7 +75,7 @@ Power Apps位置创建的位置将使用位于租户中心位置的终点。 Mic
 
 ## <a name="sharing"></a>共享
 
-管理员可以为他们的每个位置设置和管理共享策略。 每个OneDrive中的SharePoint网站和网站将仅遵守相应的特定于地理位置的共享设置。 （例如，你可以为中心位置允许[外部共享](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)，但不能为附属位置允许外部共享，反之亦然。）请注意，共享设置不允许配置地理位置之间的共享限制。
+管理员可以为他们的每个位置设置和管理共享策略。 每个OneDrive地理位置SharePoint网站和网站将仅遵守相应的特定于地理位置的共享设置。 （例如，你可以为中心位置允许[外部共享](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)，但不能为附属位置允许外部共享，反之亦然。）请注意，共享设置不允许配置地理位置之间的共享限制。
 
 ## <a name="stream"></a>Stream
 
@@ -94,4 +97,4 @@ Power Apps位置创建的位置将使用位于租户中心位置的终点。 Mic
 
 ## <a name="yammer"></a>Yammer
 
-Yammer不是多地理位置工作负载。 Yammer中存储Yammer线程将放置在租户的中心位置。 Yammer推出文件存储更改，将在Yammer存储SharePoint。 Yammer中存储SharePoint文件将SharePoint组关联的Yammer网站。 SharePoint组网站基于 PDL 逻辑，如SharePoint[和组所述](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)。
+Yammer不是多地理位置工作负载。 Yammer中存储Yammer线程将放置在租户的中心位置。 Yammer推出文件存储更改，将在Yammer中存储SharePoint。 Yammer存储在SharePoint的文件将SharePoint组关联的Yammer网站。 SharePoint组网站基于 PDL 逻辑，如SharePoint[和组所述](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)。

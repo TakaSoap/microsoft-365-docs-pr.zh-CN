@@ -18,18 +18,17 @@ ms.custom:
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 07159aa287de4194956d37399c73a73d5d3882e7
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 68bcc25d336fc7fc9c3ea76d4e150e2483f01323
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943396"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213837"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则来避免感染恶意软件
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -49,7 +48,7 @@ ms.locfileid: "61943396"
 
 ## <a name="assess-rule-impact-before-deployment"></a>在部署之前评估规则影响
 
-你可以评估攻击面减少规则可能会如何影响你的网络，在 危险和漏洞管理 中打开该规则[的安全危险和漏洞管理。](/windows/security/threat-protection/#tvm)
+你可以评估攻击面减少规则可能会如何影响你的网络，在 危险和漏洞管理 中打开该规则[的安全建议](/windows/security/threat-protection/#tvm)。
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="攻击面减少规则的安全重新成本。":::
 
@@ -63,7 +62,7 @@ ms.locfileid: "61943396"
 
 ## <a name="warn-mode-for-users"></a>用户警告模式
 
- (**新**！) 在警告模式功能之前，已启用的攻击面减少规则可以设置为审核模式或阻止模式。 使用新的警告模式，只要内容被攻击面减少规则阻止，用户就会看到一个指示内容被阻止的对话框。 该对话框还允许用户选择取消阻止内容。 然后，用户可以重试其操作，操作完成。 当用户取消阻止内容时，该内容将保持取消阻止状态 24 小时，然后阻止恢复。
+**(！)** 警告模式功能之前，已启用的攻击面减少规则可以设置为审核模式或阻止模式。 使用新的警告模式，只要内容被攻击面减少规则阻止，用户就会看到一个指示内容被阻止的对话框。 该对话框还允许用户选择取消阻止内容。 然后，用户可以重试其操作，操作完成。 当用户取消阻止内容时，该内容将保持取消阻止状态 24 小时，然后阻止恢复。
 
 警告模式可帮助组织制定攻击面减少规则，而不会阻止用户访问执行其任务所需的内容。
 
@@ -75,7 +74,7 @@ ms.locfileid: "61943396"
 - Windows 11
 - [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)或更高版本
 
-Microsoft Defender 防病毒在活动模式下使用实时[保护运行](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
+Microsoft Defender 防病毒必须在活动模式下使用实时[保护运行](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
 
 此外，请确保[Microsoft Defender 防病毒反恶意软件更新](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)。
 
@@ -86,13 +85,13 @@ Microsoft Defender 防病毒在活动模式下使用实时[保护运行](/window
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>不支持警告模式的情况
 
-当你在三个攻击面减少规则中配置警告模式时，它们不受Microsoft Endpoint Manager。  (如果使用组策略配置攻击面减少规则，则支持警告模式。) 在配置警告模式时不支持警告模式的三个规则Microsoft Endpoint Manager如下所示：
+当你在三个攻击面减少规则中配置警告模式时，它们不受Microsoft Endpoint Manager。  (如果使用组策略配置攻击面减少规则，则支持警告模式。) 在 Microsoft Endpoint Manager 中配置警告模式时不支持警告模式的三个规则如下所示：
 
 - [阻止 JavaScript 或 VBScript 使用](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) GUID (下载的可执行 `d3e037e1-3eb8-44c8-a917-57927947596d`) 
 - [通过 WMI 事件订阅和 GUID](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) (阻止 `e6db77e5-3df2-4cf1-b95a-636979351e5b` 持久性) 
 - [使用高级防护抵御勒索软件](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware) (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35`) 
 
-此外，在运行较早版本的 Windows 设备上不支持警告Windows。 在这种情况下，配置为在警告模式下运行的攻击面减少规则将在阻止模式下运行。
+此外，运行早期版本的 windows 2013 的设备上不支持警告Windows。 在这种情况下，配置为在警告模式下运行的攻击面减少规则将在阻止模式下运行。
 
 ## <a name="notifications-and-alerts"></a>通知和警报
 
@@ -110,19 +109,19 @@ Microsoft Defender 防病毒在活动模式下使用实时[保护运行](/window
 
 有关高级搜寻详细信息，请参阅使用高级搜寻主动 [搜寻威胁](advanced-hunting-overview.md)。
 
-## <a name="attack-surface-reduction-features-across-windows-versions"></a>跨版本的攻击面Windows功能
+## <a name="attack-surface-reduction-features-across-windows-versions"></a>跨多个版本的攻击Windows功能
 
-你可以为运行以下任一版本的设备设置攻击面减少规则Windows：
+你可以为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
 
 - Windows 10 专业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - Windows 10 企业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
-- Windows Server[版本 1803 (半年](/windows-server/get-started/whats-new-in-windows-server-1803)频道) 或更高版本
+- Windows Server 版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
   >[!NOTE]
-  >Windows Server 2016和 Windows Server 2012 R2 将需要按照载入 Windows[服务器中的](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)说明载入，此功能将正常工作。 
+  >Windows Server 2016和 Windows Server 2012 R2 将需要按照[载入 Windows 服务器](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)中的说明载入，此功能将正常工作。 
 
 
 尽管攻击面减少规则不需要使用 Windows [E5](/windows/deployment/deploy-enterprise-licenses)许可证，但如果已使用 Windows E5，则获得高级管理功能。 仅在 E5 中提供的高级Windows包括：
@@ -132,11 +131,11 @@ Microsoft Defender 防病毒在活动模式下使用实时[保护运行](/window
 
 这些高级功能不适用于 Windows Professional 或 Windows E3 许可证。 但是，如果你有这些许可证，可以使用事件查看器和Microsoft Defender 防病毒日志查看攻击面减少规则事件。
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>查看攻击门户中的攻击面Microsoft 365 Defender事件
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>查看攻击门户中的攻击Microsoft 365 Defender事件
 
 Defender for Endpoint 提供事件和阻止的详细报告，作为警报调查方案的一部分。
 
-可以使用高级搜寻查询 defender 的终结点[Microsoft 365 Defender](microsoft-defender-security-center.md)[中的终结点数据](advanced-hunting-query-language.md)。 如果你运行的是审核 [模式](audit-windows-defender.md)，可以使用高级搜寻了解攻击面减少规则可能会如何影响你的环境。
+可以使用高级搜寻 在 Microsoft 365 Defender[中查询](microsoft-defender-security-center.md)Defender 中的[终结点数据](advanced-hunting-query-language.md)。 如果你运行的是审核 [模式](audit-windows-defender.md)，可以使用高级搜寻了解攻击面减少规则可能会如何影响你的环境。
 
 示例查询如下所示:
 
@@ -145,7 +144,7 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>查看事件查看器中的攻击Windows事件
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>查看事件查看器中的攻击Windows减少事件
 
 你可以查看攻击Windows日志以查看攻击面减少规则生成的事件：
 

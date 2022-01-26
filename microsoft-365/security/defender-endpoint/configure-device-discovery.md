@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: dc8d03140d19c773e01f6571d69f7593e6e406e8
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 7b98ebf38d0e2e5ab5ec086e75002d0d660cff4c
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311838"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214077"
 ---
 # <a name="configure-device-discovery"></a>配置设备发现
 
@@ -38,7 +38,7 @@ ms.locfileid: "61311838"
 
 发现可以配置为标准模式或基本模式。 使用标准选项主动查找网络中设备，这将更好地保证终结点的发现并提供更丰富的设备分类。
 
-你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (当前 - Windows 10 和 Windows 2019 设备仅) 或者通过指定设备的设备标记来选择设备的子集。
+你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (当前 - Windows 10 或更高版本以及 Windows Server 2019 或更高版本的设备仅) ，或者通过指定设备标记选择设备的子集。
 
 ## <a name="set-up-device-discovery"></a>设置设备发现
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 52d564f631c0129dea20608aac20e77141fb0be0
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f6e1bd4653318897ec82d49cd1dccfc0ab4105de
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943372"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218929"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>配置和管理 Microsoft 威胁专家功能
 
@@ -35,10 +35,10 @@ ms.locfileid: "61943372"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 > [!NOTE]
-> 在应用目标攻击通知托管威胁搜寻服务之前，与 Microsoft 技术服务提供商和帐户团队Microsoft 威胁专家资格要求。
+> 在适用于目标攻击通知托管威胁搜寻服务之前，Microsoft 威胁专家 Microsoft 技术服务提供商和帐户团队讨论资格要求。
 
 确保在你的环境中部署了 Defender for Endpoint 并注册了设备，而不只是在实验室设置上。
 
@@ -46,13 +46,13 @@ ms.locfileid: "61943372"
 
 ## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>适用于 Microsoft 威胁专家 - 目标攻击通知服务
 
-如果你已经是适用于 Endpoint 的 Defender 客户，可以通过该门户Microsoft 365 Defender应用。
+如果你已经是适用于 Endpoint 的 Defender 客户，可以通过应用中心门户Microsoft 365 Defender应用。
 
-1. 在导航窗格中，转到"常规设置 >高级> - > Microsoft 威胁专家 **攻击通知"。**
+1. 从导航窗格中，转到"常规设置 >高级> - > Microsoft 威胁专家 **攻击通知"。**
 
 2. 单击“**应用**”。
 
-    ![设置Microsoft 威胁专家图像。](images/mte-collaboratewithmte.png)
+    ![设置Microsoft 威胁专家的图像。](images/mte-collaboratewithmte.png)
 
 3. 输入你的姓名和电子邮件地址，以便 Microsoft 可以在你的应用程序上返回给你。
 
@@ -88,13 +88,13 @@ ms.locfileid: "61943372"
 
 2. 从仪表板中，选择与从电子邮件获得相同的警报主题，以查看详细信息。
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>订阅Microsoft 威胁专家 - 专家按需
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>订阅 Microsoft 威胁专家 - 专家按需
 
-这作为订阅服务提供。 如果你已经是适用于 Endpoint 的 Defender 客户，你可以联系你的 Microsoft 代表来订阅 Microsoft 威胁专家 - 专家按需。
+这作为订阅服务提供。 如果你已经是适用于 Endpoint 的 Defender 客户，你可以联系 Microsoft 代表，以订阅 Microsoft 威胁专家 - 专家按需。
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>咨询 Microsoft 威胁专家，了解组织中可疑的网络安全活动
 
-你可以与可以直接在 Microsoft 威胁专家 Microsoft 365 Defender 门户中参与的管理员合作，以及时准确地做出响应。 专家提供见解，以更好地了解复杂的威胁、你收到的定向攻击通知，或者如果你需要有关警报、可能受到威胁的设备或你在门户仪表板上看到的威胁智能上下文的更多信息。
+你可以与可以直接在 Microsoft 威胁专家 门户中参与的管理员合作Microsoft 365 Defender及时准确的响应。 专家提供见解，以更好地了解复杂的威胁、你收到的定向攻击通知，或者如果你需要有关警报、可能受到威胁的设备或你在门户仪表板上看到的威胁智能上下文的更多信息。
 
 > [!NOTE]
 >
@@ -111,7 +111,7 @@ ms.locfileid: "61943372"
 
     ![按需Microsoft 威胁专家专家屏幕的图像。](images/mte-eod.png)
 
-    以下屏幕显示你何时使用完整的 Microsoft 威胁专家 - 专家按需订阅。
+    以下屏幕显示你何时使用完整Microsoft 威胁专家专家按需订阅。
 
     !["Microsoft 威胁专家专家"完整订阅屏幕的图像。](images/mte-eod-fullsubscription.png)
 
@@ -122,7 +122,7 @@ ms.locfileid: "61943372"
 4. 输入要用于与电子邮件地址对应的电子邮件地址Microsoft 威胁专家。
 
 > [!NOTE]
-> 如果要通过 Microsoft 服务中心跟踪专家按需案例的状态，请联系你的技术客户经理。
+> 如果要通过 Microsoft 服务中心跟踪专家按需案例的状态，请联系客户成功客户经理。
 
 观看此视频，快速概览 Microsoft 服务中心。
 
@@ -150,13 +150,13 @@ ms.locfileid: "61943372"
 ### <a name="microsoft-threat-experts-alert-communications"></a>Microsoft 威胁专家警报通信
 
 - 事件响应团队能否帮助我们处理我们得到的目标攻击通知？
-- 我收到了来自该邮件的此目标Microsoft 威胁专家。 我们还没有自己的事件响应团队。 现在，我们可以做什么，如何包含事件？
+- 我收到了来自该邮件的此目标攻击Microsoft 威胁专家。 我们还没有自己的事件响应团队。 现在，我们可以做什么，如何包含事件？
 - 我收到了来自该邮件的定向Microsoft 威胁专家。 您可以向我们提供哪些数据，我们可以将这些数据传递给事件响应团队？
 
   > [!NOTE]
   > Microsoft 威胁专家托管网络安全搜寻服务，而不是事件响应服务。 但是，您可以与自己的事件响应团队合作，以解决需要事件响应的问题。 如果你没有自己的事件响应团队，并且希望获得 Microsoft 的帮助，你可以与 CIRT (CSS 网络安全事件响应) 。 他们可以打开票证来帮助解决你的查询问题。
 
-## <a name="scenario"></a>方案
+## <a name="scenario"></a>应用场景
 
 ### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>接收有关托管搜寻查询的进度报告
 

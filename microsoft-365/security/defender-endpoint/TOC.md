@@ -645,8 +645,6 @@
 
 #### [SIEM 集成]()
 ##### [使用 Microsoft Defender for Endpoint 创建 SIEM 工具](configure-siem.md)
-##### [在 Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)
-##### [使用 SIEM REST API 提取检测](pull-alerts-using-rest-api.md)
 ##### [SIEM 工具集成问题疑难解答](troubleshoot-siem.md)
 
 #### [合作伙伴和 API]()

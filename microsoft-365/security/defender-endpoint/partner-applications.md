@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b98ffd747861d6aab757e3941d1a2ef4d6aeac2
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 430b087fc682eced9c20ef013b77ccc1d690187a
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301230"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213951"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的合作伙伴应用程序
 
@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint 与现有安全解决方案无缝集成。 集�
 - MSSP (托管安全) 
 - IoC 指示器的提供和匹配
 - 基于外部警报自动进行设备调查和修正
-- 与 SOAR 安全业务流程和自动化响应 (集成) SOAR
+- 与 SOAR 安全业务流程 (自动化响应) 集成
 
 ## <a name="supported-applications"></a>支持的应用程序
 
@@ -59,7 +59,7 @@ Microsoft Defender for Endpoint 与现有安全解决方案无缝集成。 集�
 ![Micro Focus ArcSight 徽标的图像。](images/arcsight-logo.png)|[Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548)|使用 Micro Focus ArcSight 拉取 Defender 进行终结点检测
 ![RSA NetWitness 徽标的图像。](images/rsa-netwitness-logo.png)|[RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566)|Stream Defender for Endpoint Alerts to RSA NetWitness using Microsoft Graph Security API
 ![SafeBreach 徽标的图像。](images/safebreach-logo.png)|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)|了解与 SafeBreach 模拟自动关联的 Defender for Endpoint 安全事件
-![Skybox 漏洞控制徽标的图像。](images/skybox-logo.png)|[Skybox 漏洞控制](https://go.microsoft.com/fwlink/?linkid=2127467)|Skybox 漏洞控制可切断网络漏洞管理关联业务、网络和威胁上下文的干扰，以发现风险最大的漏洞
+![Skybox 漏洞控制徽标的图像。](images/skybox-logo.png)|[Skybox 漏洞控制](https://go.microsoft.com/fwlink/?linkid=2127467)|Skybox 漏洞控制可切断网络漏洞管理，关联业务、网络和威胁上下文，以发现风险最大的漏洞
 ![Splunk 徽标的图像。](images/splunk-logo.png)|[Splunk](https://go.microsoft.com/fwlink/?linkid=2129805)|Defender for Endpoint 加载项允许 Splunk 用户将所有警报和支持信息都加入其 Splunk
 ![XM 网络徽标的图像。](images/xmcyber-logo.png)|[XM 网络](https://go.microsoft.com/fwlink/?linkid=2136700)|根据风险因素和高价值资产确定对警报的响应优先级
 
@@ -70,7 +70,7 @@ Microsoft Defender for Endpoint 与现有安全解决方案无缝集成。 集�
 ![CyberSponse CyOps 徽标的图像。](images/cybersponse-logo.png)|[CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943)|CyOps 与 Defender for Endpoint 集成，以自动执行客户的高速事件响应操作手册
 ![Delta Risk ActiveEye 徽标的图像。](images/delta-risk-activeeye-logo.png)|[Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468)|Delta Risk 是 SOC 即服务和安全服务的领先提供商，将 Defender for Endpoint 与云本机 SOAR 平台 ActiveEye 集成。
 ![一个 Palo Alto Networks 公司徽标，即一个一位 Palo Alto Networks 公司徽标的图像。](images/demisto-logo.png)|[Isto，Palo Alto Networks 公司](https://go.microsoft.com/fwlink/?linkid=2108414)|Isto 与 Defender for Endpoint 集成，使安全团队可以安排和自动化终结点安全监视、扩充和响应
-![Azure Microsoft Flow &徽标的图像。](images/ms-flow-logo.png)|[Microsoft Flow & Azure 函数](https://go.microsoft.com/fwlink/?linkid=2114300)|使用 Defender for Endpoint 连接器实现Azure 逻辑应用 & Microsoft Flow自动化安全过程
+![Azure Microsoft Flow &徽标的图像。](images/ms-flow-logo.png)|[Microsoft Flow & Azure 函数](https://go.microsoft.com/fwlink/?linkid=2114300)|使用 Defender for Endpoint 连接器进行Azure 逻辑应用 & Microsoft Flow自动化安全过程
 ![Rapid7 InsightConnect 徽标的图像。](images/rapid7-logo.png)|[Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040)|InsightConnect 与 Defender for Endpoint 集成，以加速、简化和集成时间密集型安全流程
 ![ServiceNow 徽标的图像。](images/servicenow-logo.png)|[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621)|将警报纳入基于 Microsoft Graph API 集成的 ServiceNow 安全操作解决方案
 ![Image of一个为一个"子项目"的徽标。](images/swimlane-logo.png)|[卡里拉尼](https://go.microsoft.com/fwlink/?linkid=2113902)|最大限度地利用与 Endpoint 一起利用"一号球"和"Defender for Endpoint"的事件响应功能
@@ -91,7 +91,7 @@ Microsoft Defender for Endpoint 与现有安全解决方案无缝集成。 集�
 ![网络徽标的蓝色六边形图像。](images/bluehexagon-logo.png)|[用于网络的蓝色六边形](https://go.microsoft.com/fwlink/?linkid=2104613)|蓝色六边形为网络威胁防护构建了业界第一个实时深度学习平台
 ![CyberMDX 徽标的图像。](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|网络 MDX 将全面的医疗保健资产可见性、威胁防护和响应集成到 Defender for Endpoint 环境中
 ![HYAS 保护徽标的图像。](images/hyas-logo.png)|[HYAS 保护](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS 保护利用攻击者基础结构的权威知识主动保护 Microsoft Defender 终结点免受网络攻击
-![Vectra 网络检测和响应 (NDR) 图像。](images/vectra-logo.png)|[Vectra 网络检测和响应 (NDR) ](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra 将 AI &安全研究，以实时检测和响应网络攻击
+![Vectra 网络检测和响应 (NDR) 图像。](images/vectra-logo.png)|[Vectra NDR 网络检测和 (响应) ](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra 将 AI &安全研究，以实时检测和响应网络攻击
 
 ### <a name="cross-platform"></a>跨平台
 
@@ -114,13 +114,13 @@ Microsoft Defender for Endpoint 与现有安全解决方案无缝集成。 集�
 
 ## <a name="siem-integration"></a>SIEM 集成
 
-Defender for Endpoint 通过多种方法支持 SIEM 集成。 这包括具有开箱即用连接器的专用 SIEM 系统接口、支持自定义实现的通用警报 API 和启用警报状态管理的操作 API。 有关详细信息，请参阅启用 [SIEM 集成](enable-siem-integration.md)。
+Defender for Endpoint 通过多种方法支持 SIEM 集成。 这包括具有开箱即用连接器的专用 SIEM 系统接口、支持自定义实现的通用警报 API 和启用警报状态管理的操作 API。
 
 ## <a name="ticketing-and-it-service-management"></a>票证和 IT 服务管理
 
 票证解决方案集成有助于实现手动和自动响应过程。 Defender for Endpoint 可帮助在生成警报时自动创建票证，以及使用警报 API 解决关闭票证时产生的警报。
 
-## <a name="security-orchestration-and-automation-response-soar-integration"></a>SOAR (集成的安全业务流程) 响应
+## <a name="security-orchestration-and-automation-response-soar-integration"></a>SOAR (集成的安全业务流程和) 响应
 
 业务流程解决方案可帮助构建操作手册，并集成 Defender for Endpoint API 公开用于协调响应的丰富数据模型和操作，例如查询设备数据、触发设备隔离、阻止/允许、解决警报和其他操作。
 
@@ -142,4 +142,4 @@ Defender for Endpoint 当前支持文件和网络指示器的 IOC 匹配和修�
 
 ## <a name="support-for-non-windows-platforms"></a>支持非Windows平台
 
-Defender for Endpoint 为 Windows 和非 Windows平台（包括移动设备）提供集中式安全操作体验。 你将能够在门户中查看来自各种受支持操作系统 (操作系统) 警报，并更好地保护组织的网络。
+Defender for Endpoint 为非 Windows平台（包括移动设备）Windows集中式安全操作体验。 你将能够在门户中查看来自各种受支持操作系统 (操作系统) 警报，并更好地保护组织的网络。

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3dd46502fc4e54e298e1f3be4f776e1e325259a8
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: 3b38fd7f2395533c318a8d61a499624712de41e2
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083074"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213669"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -102,7 +102,7 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |[允许用户分配权限： <br /> - 不转发](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[允许用户分配权限： <br /> - 仅加密](encryption-sensitivity-labels.md#let-users-assign-permissions)  | 当前频道：2011+ <br /><br> 每月企业频道：2011+ <br /><br> 半年企业频道：2108+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | 是 |
 |[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 当前频道：2101+ <br /><br> 每月企业频道：2101+ <br /><br> 半年企业频道：2108+ | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | 是                |
-|[审核标签相关的用户活动](data-classification-activity-explorer.md) | 当前频道：2011+ <br /><br> 每月企业频道：2011+ <br /><br> 半年企业频道：正在审阅 | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | 是 |
+|[审核标签相关的用户活动](data-classification-activity-explorer.md) | 当前频道：2011+ <br /><br> 每月企业频道：2011+ <br /><br> 半年企业频道：2202+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | 是 |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用敏感信息类型                    | 当前频道：2009+ <br /><br> 每月企业频道：2009+ <br /><br> 半年企业频道：2102+ | 16.44+ <sup>\*</sup>                    | 审阅中           | 审阅中               | 是 |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用可训练分类器                    | 当前频道：2105+ <br /><br> 每月企业频道：2105+ <br /><br> 半年企业频道：2108+ | 审阅中                    | 审阅中           | 审阅中               | 是 |
 |[默认标签和强制标签的不同设置](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 当前频道：2105+ <br /><br> 每月企业频道：2105+ <br /><br> 半年企业频道：2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | 是 |

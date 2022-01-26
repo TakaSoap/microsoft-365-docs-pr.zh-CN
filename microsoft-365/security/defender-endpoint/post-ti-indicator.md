@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0adf9b74398cafb7bd326dbc9183588feb30ee13
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: a3fc1a0ce2f7d02ad8ed6804b99621f78fb859d3
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283661"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214221"
 ---
 # <a name="submit-or-update-indicator-api"></a>提交或更新指示器 API
 
@@ -69,8 +69,8 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 必需。
-Content-Type|string|application/json. 必需。
+Authorization|字符串|Bearer {token}。 **必需**。
+Content-Type|string|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
 
@@ -78,17 +78,17 @@ Content-Type|string|application/json. 必需。
 
 参数|类型|说明
 :---|:---|:---
-indicatorValue|String|Indicator [实体的](ti-indicator.md) 标识。 **Required**
+indicatorValue|字符串|Indicator [实体的](ti-indicator.md) 标识。 **Required**
 indicatorType|枚举|指示器的类型。 可能的值是："FileSha1"、"FileMd5"、"CertificateThumbprint"、"FileSha256"、"IpAddress"、"DomainName"和"Url"。 **Required**
-action|枚举|如果在组织中发现指示器，将采取的操作。 可能的值包括："Alert"、"Warn"、"Block"、"Audit"、"BlockAndRemediate"、"AlertAndBlock"和"Allowed"。 必需。 在创建包含"Audit"的操作时，必须将"GenerateAlert"参数设置为"TRUE"。
-应用程序|String|与指示器关联的应用程序。 此字段仅适用于新指示器。 它将不会更新现有指示器上的值。 **可选**
+action|枚举|如果在组织中发现指示器，将采取的操作。 可能的值包括："Alert"、"Warn"、"Block"、"Audit"、"BlockAndRemediate"、"AlertAndBlock"和"Allowed"。 **必需**。 在创建包含"Audit"的操作时，必须将"GenerateAlert"参数设置为"TRUE"。
+应用程序|字符串|与指示器关联的应用程序。 此字段仅适用于新指示器。 它将不会更新现有指示器上的值。 **可选**
 title|String|指示器警报标题。 **Required**
-说明|String|指示器的说明。 **Required**
+说明|字符串|指示器的说明。 **Required**
 expirationTime|DateTimeOffset|指示器的过期时间。 **可选**
 severity|枚举|指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。 **可选**
-recommendedActions|String|TI 指示器警报建议操作。 **可选**
-rbacGroupNames|String|将应用指示器的 RBAC 组名称的逗号分隔列表。 **可选**
-
+recommendedActions|字符串|TI 指示器警报建议操作。 **可选**
+rbacGroupNames|字符串|将应用指示器的 RBAC 组名称的逗号分隔列表。 **可选**
+generateAlert|枚举|**如果** 警报生成是必需的，则其为 **True;** 如果此指示器不应生成警报，则其为 False。
 ## <a name="response"></a>响应
 
 - 如果成功，此方法在响应正文中返回 200 - OK 响应代码和已创建/已更新 [的 Indicator](ti-indicator.md) 实体。

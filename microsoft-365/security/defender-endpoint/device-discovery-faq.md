@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d0094042faeb1b8c9eaabe500e298f99d234c109
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: f871d612acbc8c9fadf3a4f2e92e999ddebe9044
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62073720"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213954"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>设备发现常见问题
 
@@ -53,7 +53,7 @@ ms.locfileid: "62073720"
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>我能否控制哪些设备执行标准发现？
 
-你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (当前 Windows 10 设备仅) 或者通过指定设备的设备标记来选择设备的子集。 在这种情况下，所有其他设备将配置为仅运行基本发现。 配置在设备发现设置页中提供。
+你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (当前 Windows 10 设备仅) 或者通过指定设备的设备标记选择一部分或部分设备。 在这种情况下，所有其他设备将配置为仅运行基本发现。 配置在设备发现设置页中提供。
 
 ## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>能否从设备清单列表中排除非托管设备？
 
@@ -72,8 +72,8 @@ ms.locfileid: "62073720"
 默认情况下，所有在版本 1809 或Windows 10上运行的已载入设备， 或 Windows 11 正在捕获和分析以下协议：ARP、CDP、DHCP、DHCPv6、IP (标头) 、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (SYN 标头) 、UDP (标头) 、WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>在标准发现中，使用哪些协议进行主动探测？
+当设备配置为运行标准发现时， 使用下列协议对公开的服务进行探测：ARP、FTP、HTTP、HTTPS、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SNMP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL、RPC、mDNS、DHCP、AFP、CrestonCIP、IphoneSync、WinRM、VNC、SLP、LDAP
 
-当设备配置为运行标准发现时， 使用下列协议对公开的服务进行探测：ARP、FTP、HTTP、HTTPS、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SNMP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL、RPC、mDNS、DHCP、AFP、CrestonCIP、IphoneSync、WinRM、VNC、SLP
 
 ## <a name="how-can-i-exclude-targets-from-being-probed-with-standard-discovery"></a>如何排除使用标准发现对目标进行探测？
 
@@ -88,9 +88,9 @@ ms.locfileid: "62073720"
 
 ## <a name="how-frequent-is-the-active-probing"></a>活动探测频率如何？
 
-当观察到设备特征的变化时，将主动探测设备，以确保现有信息是最新的 (通常，设备在三周内探测到的设备不会超过一次) 
+当观察到设备特征的变化时，将主动探测设备，以确保现有信息是最新的 (通常，设备在三周内探测器探测) 
 
-## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>我的安全工具引发了UnicastScanner.ps1启动的扫描活动或端口扫描活动的警报，我应该做什么？
+## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>我的安全工具在由UnicastScanner.ps1启动的扫描活动或端口扫描活动上发出警报，我应该做什么？
 
 活动的探测脚本由 Microsoft 签名，并且是安全的。 你可以将以下路径添加到排除列表： `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps1`
 
@@ -118,7 +118,7 @@ ms.locfileid: "62073720"
 
 ### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>探测分布于Windows设备上的所有设备
 
-与恶意活动（通常从少量损坏的设备扫描整个网络）相反，Microsoft Defender 终结点的标准发现探测从所有已载入的 Windows 设备启动，使活动变好且非异常。 从云中集中管理探测，以平衡网络中所有受支持的已载入设备之间的探测尝试。  
+与恶意活动（通常从少量受损设备扫描整个网络）相反，Microsoft Defender for Endpoint 的标准发现探测从所有已载入的 Windows 设备启动，使活动成为恶意和非异常活动。 从云中集中管理探测，以平衡网络中所有受支持的已载入设备之间的探测尝试。  
 
 ### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>活动探测产生的额外流量可以忽略不计
 
@@ -138,4 +138,4 @@ active discovery capabilities have always been embedded in the Windows operating
 
 ### <a name="you-can-exclude-network-lures-from-active-probing"></a>你可以从活动探测中排除网络诱使
 
-标准发现支持将子网中的设备或 (排除) 活动探测中。 如果已部署网络工具，可以使用设备发现设置根据 IP 地址或子网定义排除项 (一系列 IP 地址) 。 定义这些排除项将确保这些设备不会主动探测，也不会发出警报。 这些设备将仅与基本发现模式 (被动方法发现) 。
+标准发现支持将子网中的设备或 (排除) 活动探测中。 如果已部署网络部署，可以使用设备发现设置根据 IP 地址或子网定义排除项 (一系列 IP 地址) 。 定义这些排除项将确保这些设备不会主动探测，也不会发出警报。 这些设备将仅使用被动方法发现 (基本发现模式) 。

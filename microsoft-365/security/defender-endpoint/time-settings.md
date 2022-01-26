@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8a3f98af5251a5666a42c1f39539d557322e71e9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4353bbfc0ce11c4a767ca599ecb23a1ab4f77a56
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165632"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213964"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender时区设置
 
@@ -42,15 +42,13 @@ ms.locfileid: "61165632"
 
 Microsoft Defender for Endpoint 可以显示协调世界时 (UTC) 本地时间。
 
-你的当前时区设置显示在 Microsoft Defender for Endpoint 菜单中。 可以在"时区"菜单中更改显示的 **时区** 。
-
-![时区设置 icon2。](images/atp-time-zone-menu.png).
+你的当前时区设置显示在 Microsoft Defender 设置中。 You can change the displayed time zone in the **Time zone** menu Under 设置 > **Security center**.
 
 ### <a name="utc-time-zone"></a>UTC 时区
 
 默认情况下，Microsoft Defender for Endpoint 使用 UTC 时间。
 
-将 Microsoft Defender for Endpoint 时区设置为 UTC 将显示所有用户的所有 (、事件和其他) UTC 格式的时间戳。 这可以帮助在全球不同位置工作的安全分析师在调查事件时使用相同的时间戳。
+将 Microsoft Defender for Endpoint 时区设置为 UTC 将显示所有用户的所有 (、事件和其他) UTC 格式。 这可以帮助在全球不同位置工作的安全分析师在调查事件时使用相同的时间戳。
 
 ### <a name="local-time-zone"></a>本地时区
 
@@ -66,9 +64,9 @@ Microsoft Defender for Endpoint 可以显示协调世界时 (UTC) 本地时间�
 
 设置时区：
 
-1. 单击时区 **菜单时区** ![ 设置图标 3。 ](images/atp-time-zone.png)
-2. 选择 **时区 UTC** 指示器。
-3. 选择 **时区 UTC** 或本地时区，例如 -7：00。
+1. 单击 **"设置** 门户 [时区Microsoft 365 Defender](https://security.microsoft.com/) ![ 图标3 中的"设置"菜单 ](images/atp-time-zone.png) 。
+2. 选择 **"安全中心"。**
+3. 选择 **时区，** 将时区设置为 UTC 或本地时区。
 
 ### <a name="regional-settings"></a>区域设置
 
@@ -76,7 +74,7 @@ Microsoft Defender for Endpoint 可以显示协调世界时 (UTC) 本地时间�
 
 #### <a name="internet-explorer-ie-and-microsoft-edge"></a>Internet Explorer (IE) 和 Microsoft Edge
 
-IE 和 Microsoft Edge使用"控制面板"中"时钟、**语言** 和地区"选项中配置的"区域"设置。 
+IE 和 Microsoft Edge使用"控制面板"中"时钟、语言和地区"选项中配置的"区域"设置。 
 
 #### <a name="known-issues-with-regional-formats"></a>区域格式的已知问题
 

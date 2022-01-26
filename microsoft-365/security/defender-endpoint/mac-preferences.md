@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8506534f1645659d051b240b77dcf96b4f9e4078
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: adcf044de78b1cecb6b7b9160a196ec102e8606c
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171697"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214149"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -43,7 +43,7 @@ ms.locfileid: "61171697"
 
 ## <a name="configuration-profile-structure"></a>配置文件结构
 
-配置文件是一个 *.plist* 文件，它包含由键 (它表示首选项) 的名称，后跟一个值，具体取决于首选项的性质的条目。 值可以是简单的 (，如数值) 或复杂，如嵌套的首选项列表。
+配置文件是一个 *.plist* 文件，它由键 (标识的条目表示首选项) 的名称，后跟一个值，具体取决于首选项的性质。 值可以是简单的 (，如数值) 或复杂，如嵌套的首选项列表。
 
 > [!CAUTION]
 >配置文件的布局取决于你使用的管理控制台。 以下各节包含 JAMF 和 Intune 的配置文件示例。
@@ -66,31 +66,19 @@ ms.locfileid: "61171697"
 |**Comments**|有关字典内容的说明，请参阅以下部分。|
 |||
 
-#### <a name="enable--disable-real-time-protection"></a>启用/禁用实时保护
+#### <a name="enforcement-level-for-antivirus-engine"></a>防病毒引擎的强制级别
 
-指定是否启用实时保护，以在访问文件时对文件进行扫描。
+指定防病毒引擎的强制首选项。 设置强制级别有三个值：
 
-<br>
-
-****
-
-|节|值|
-|---|---|
-|**域**|`com.microsoft.wdav`|
-|**键**|enableRealTimeProtection|
-|**数据类型**|Boolean|
-|**可能的值**|true (默认)  <p> false|
-|||
-
-#### <a name="enable--disable-passive-mode"></a>启用/禁用被动模式
-
-指定防病毒引擎是否在被动模式下运行。 被动模式具有以下含义：
-
-- 实时保护已关闭
-- 按需扫描已打开
-- 自动威胁修正已关闭
-- 启用安全智能更新
-- 状态菜单图标处于隐藏状态
+- 实时 () ：启用 (时实时保护) `real_time` 扫描文件。
+- 按需 `on_demand` () ：仅按需扫描文件。 在此：
+  - 实时保护已关闭。
+- 被动 `passive` () ：在被动模式下运行防病毒引擎。 在此：
+  - 实时保护已关闭。
+  - 按需扫描已打开。
+  - 自动威胁修正已关闭。
+  - 安全智能更新已打开。
+  - 状态菜单图标处于隐藏状态。
 
 <br>
 
@@ -99,10 +87,10 @@ ms.locfileid: "61171697"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|passiveMode|
-|**数据类型**|Boolean|
-|**可能的值**|false（默认值） <p> true|
-|**Comments**|适用于终结点版本 100.67.60 或更高版本的 Microsoft Defender 中可用。|
+|**键**|enforcementLevel|
+|**数据类型**|String|
+|**可能的值**|real_time (默认)  <p> on_demand <p> 被动|
+|**Comments**|适用于终结点版本 101.10.72 或更高版本的 Microsoft Defender 中可用。|
 |||
 
 #### <a name="run-a-scan-after-definitions-are-updated"></a>更新定义后运行扫描
@@ -117,7 +105,7 @@ ms.locfileid: "61171697"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**键**|scanAfterDefinitionUpdate|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|true (默认)  <p> false|
 |**Comments**|适用于终结点版本 101.41.10 或更高版本的 Microsoft Defender 中可用。|
 |||
@@ -134,7 +122,7 @@ ms.locfileid: "61171697"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**键**|scanArchives|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|true (默认)  <p> false|
 |**Comments**|适用于终结点版本 101.41.10 或更高版本的 Microsoft Defender 中可用。|
 |||
@@ -176,7 +164,7 @@ ms.locfileid: "61171697"
 #### <a name="scan-exclusions"></a>扫描排除项
 
 指定被扫描排除的实体。 排除项可以通过完整路径、扩展名或文件名指定。
- (排除项指定为项目数组，管理员可以按任意顺序指定所需数量的元素。) 
+ (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量的元素。) 
 
 <br>
 
@@ -236,7 +224,7 @@ ms.locfileid: "61171697"
 |文件扩展名|扩展名位于设备上任意位置的所有文件|`.test`|
 |文件|由完整路径标识的特定文件|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
 |Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`|
-|流程|由 (的完整路径或文件名指定的特定) 及其打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`|
+|流程|由 (的完整路径或文件名指定的特定进程) 及其打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`|
 ||||
 
 > [!IMPORTANT]
@@ -254,7 +242,7 @@ ms.locfileid: "61171697"
 |?|匹配任何单个字符|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`|
 ||||||
 
-### <a name="path-type-file--directory"></a>路径类型 (文件/目录) 
+### <a name="path-type-file--directory"></a>文件 (目录的路径) 
 
 指示 *path 属性* 是否引用文件或目录。
 
@@ -290,7 +278,7 @@ ms.locfileid: "61171697"
 
 ### <a name="process-excluded-from-the-scan"></a>从扫描中排除的进程
 
-指定一个进程，所有文件活动都从扫描中排除。 可以通过进程的名称或名称来指定 (例如，) 或完整 `cat` (，例如 `/bin/cat`) 。
+指定一个进程，所有文件活动都从扫描中排除。 可以通过进程的名称或名称来指定 (例如，) 或完整 (`cat` 例如 `/bin/cat` ，) 。
 
 <br>
 
@@ -391,7 +379,7 @@ ms.locfileid: "61171697"
 
 #### <a name="threat-type-settings-merge-policy"></a>威胁类型设置合并策略
 
-指定威胁类型设置的合并策略。 它可以是管理员定义的设置和用户定义的设置的组合， () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
+指定威胁类型设置的合并策略。 它可以是管理员定义的设置和用户定义的设置 () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
 
 <br>
 
@@ -468,8 +456,8 @@ ms.locfileid: "61171697"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**键**|enabled|
-|**数据类型**|Boolean|
-|**可能的值**|true (默认值)  <p> false|
+|**数据类型**|布尔值|
+|**可能的值**|true (默认)  <p> false|
 |||
 
 #### <a name="diagnostic-collection-level"></a>诊断集合级别
@@ -500,8 +488,8 @@ ms.locfileid: "61171697"
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**键**|automaticSampleSubmission|
-|**数据类型**|Boolean|
-|**可能的值**|true (默认值)  <p> false|
+|**数据类型**|布尔值|
+|**可能的值**|true (默认)  <p> false|
 |||
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>启用/禁用自动安全智能更新
@@ -515,8 +503,8 @@ ms.locfileid: "61171697"
 |节|值|
 |---|---|
 |**键**|automaticDefinitionUpdateEnabled|
-|**数据类型**|Boolean|
-|**可能的值**|true (默认值)  <p> false|
+|**数据类型**|布尔值|
+|**可能的值**|true (默认)  <p> false|
 |||
 
 ### <a name="user-interface-preferences"></a>用户界面首选项
@@ -597,7 +585,7 @@ ms.locfileid: "61171697"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|tags|
+|**键**|标记|
 |**数据类型**|字典 (嵌套首选项) |
 |**Comments**|有关字典内容的说明，请参阅以下部分。|
 |||
@@ -648,7 +636,7 @@ ms.locfileid: "61171697"
 - 启用实时保护 (RTP) 
 - 指定如何处理以下威胁类型：
   - **阻止 PUA (可能不需要)** 的应用程序
-  - **存档 (** 高压缩率的文件) Microsoft Defender 终结点日志进行审核
+  - **存档 (** 高压缩率的文件) 审核到 Microsoft Defender 终结点日志
 - 启用自动安全智能更新
 - 启用云保护
 - 启用自动提交示例
@@ -662,8 +650,8 @@ ms.locfileid: "61171697"
 <dict>
     <key>antivirusEngine</key>
     <dict>
-        <key>enableRealTimeProtection</key>
-        <true/>
+        <key>enforcementLevel</key>
+        <string>real_time</string>
         <key>threatTypeSettings</key>
         <array>
             <dict>
@@ -741,10 +729,8 @@ ms.locfileid: "61171697"
                 <true/>
                 <key>antivirusEngine</key>
                 <dict>
-                    <key>enableRealTimeProtection</key>
-                    <true/>
-                    <key>passiveMode</key>
-                    <false/>
+                    <key>enforcementLevel</key>
+                    <string>real_time</string>
                     <key>threatTypeSettings</key>
                     <array>
                         <dict>
@@ -789,10 +775,8 @@ ms.locfileid: "61171697"
 <dict>
     <key>antivirusEngine</key>
     <dict>
-        <key>enableRealTimeProtection</key>
-        <true/>
-        <key>passiveMode</key>
-        <false/>
+        <key>enforcementLevel</key>
+        <string>real_time</string>
         <key>scanAfterDefinitionUpdate</key>
         <true/>
         <key>scanArchives</key>
@@ -904,6 +888,10 @@ ms.locfileid: "61171697"
 ### <a name="intune-full-profile"></a>Intune 完整配置文件
 
 ```XML
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
         <key>PayloadUUID</key>
         <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
         <key>PayloadType</key>
@@ -945,10 +933,8 @@ ms.locfileid: "61171697"
                 <true/>
                 <key>antivirusEngine</key>
                 <dict>
-                    <key>enableRealTimeProtection</key>
-                    <true/>
-                    <key>passiveMode</key>
-                    <false/>
+                    <key>enforcementLevel</key>
+                    <string>real_time</string>
                     <key>scanAfterDefinitionUpdate</key>
                     <true/>
                     <key>scanArchives</key>
@@ -1055,6 +1041,8 @@ ms.locfileid: "61171697"
                 </dict>
             </dict>
         </array>
+    </dict>
+</plist>
 ```
 
 ## <a name="property-list-validation"></a>属性列表验证
@@ -1077,7 +1065,7 @@ com.microsoft.wdav.plist: OK
 
 ### <a name="jamf-deployment"></a>JAMF 部署
 
-从 JAMF 控制台中，打开 **计算机** 配置文件，导航到你要使用的配置文件，然后选择自定义 \> 设置。  使用 创建用作 `com.microsoft.wdav` 首选项域的条目并上载之前生成的 *.plist。*
+从 JAMF 控制台中，打开 **计算机** 配置文件，导航到你要使用的配置文件， \> 然后选择自定义设置。  使用 创建用作 `com.microsoft.wdav` 首选项域的条目并上载之前生成的 *.plist。*
 
 > [!CAUTION]
 > 必须输入正确的首选项域 `com.microsoft.wdav` () ;否则，Microsoft Defender for Endpoint 无法识别首选项。
@@ -1086,7 +1074,7 @@ com.microsoft.wdav.plist: OK
 
 1. 打开 **"管理** \> **设备配置"。** 选择 **"管理** \> **配置文件** \> **""创建配置文件"。**
 
-2. 选择配置文件的名称。 将 **Platform=macOS** 更改为 **配置文件类型=自定义**。 选择"配置"。
+2. 选择配置文件的名称。 将 **Platform=macOS** 更改为 **配置文件类型=自定义**。 选择“配置”。
 
 3. 将之前生成的 .plist 另存为 `com.microsoft.wdav.xml` 。
 
@@ -1096,7 +1084,7 @@ com.microsoft.wdav.plist: OK
 
 6. 选择“**确定**”。
 
-7. 选择 **"管理** \> **工作分配"。** 在"**包含"** 选项卡中，**选择"分配给&所有设备"。**
+7. 选择 **"管理** \> **工作分配"。** 在"**包含"** 选项卡中，**选择"分配给所有用户&所有设备"。**
 
 > [!CAUTION]
 > 必须输入正确的自定义配置文件名称;否则，Microsoft Defender for Endpoint 无法识别这些首选项。

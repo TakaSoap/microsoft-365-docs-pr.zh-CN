@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 48628ce70c64e37306a346459c65fef855975778
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 36975b55d8f26ae7788495543ae42922ea404c66
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937336"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213952"
 ---
 # <a name="overview-of-management-and-apis"></a>管理和 API 概述
 
@@ -43,7 +43,7 @@ Defender for Endpoint 支持多种选项，以确保客户可以轻松采用平�
 
 设备载入完全集成到客户端设备的 Microsoft Endpoint Manager 和 Microsoft Intune 以及适用于服务器设备的 Microsoft Defender 中，从而提供配置、部署和监视的完整端到端体验。 此外，Microsoft Defender for Endpoint 还支持用于设备管理的组策略和其他第三方工具。
 
-Defender for Endpoint 提供对有权访问门户的用户的精细控制，可通过基于角色的访问控制和 RBAC (查看和) 。 RBAC 模型支持所有安全团队结构：
+Defender for Endpoint (通过基于角色的访问控制和 RBAC) ，提供对有权访问门户的用户的精细控制。 RBAC 模型支持所有安全团队结构：
 
 - 全局分布的组织和安全团队
 - 分层模型安全运营团队
@@ -71,7 +71,7 @@ Defender for Endpoint 提供分层 API 模型，在结构化、清晰且易于�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
-调查 **API** 公开了适用于终结点的 Defender 的丰富功能 - 公开计算实体或"配置文件"实体 (例如，设备、用户和文件) 和离散事件 (例如，进程创建和文件创建) 这通常描述与实体相关的行为，从而允许通过调查界面访问数据，从而允许基于查询的数据访问。 有关详细信息，请参阅受支持的[API。](exposed-apis-list.md)
+调查 **API** 公开了适用于终结点的 Defender 的丰富功能 - 公开计算实体或"配置文件"实体 (例如设备、用户和文件) 和离散事件 (例如，进程创建和文件创建) 这通常描述与实体相关的行为，允许通过调查界面访问数据，从而允许基于查询的数据访问。 有关详细信息，请参阅受支持的[API。](exposed-apis-list.md)
 
 响应 **API** 公开了在服务和设备上采取操作的功能，使客户能够接收指示器、管理设置、警报状态，以及以编程方式对设备执行响应操作，如将设备与网络隔离、隔离文件和其他操作。
 
@@ -88,7 +88,7 @@ Defender for Endpoint 事件信息直接推送到 Azure 存储以用于长期数
 
 ## <a name="siem-api"></a>SIEM API
 
-当你通过 SIEM (集成启用安全信息和事件管理) ，它允许你使用 SIEM 解决方案或直接连接到检测 REST API 从 Microsoft 365 Defender 拉取检测。 这将使用预填充的值激活 SIEM 连接器访问详细信息部分，并且应用程序在租户租户Azure Active Directory (Azure AD) 创建。 有关详细信息，请参阅 [SIEM 集成](enable-siem-integration.md)。
+当你使用 SIEM) 集成启用安全信息和事件 (时，它允许你使用 SIEM 解决方案或直接连接到检测 REST API 从 Microsoft 365 Defender 拉取检测。 这会使用预填充的值激活 SIEM 连接器访问详细信息部分，并且应用程序是在你的 Azure Active Directory (Azure AD) 租户下创建的。 
 
 ## <a name="related-topics"></a>相关主题
 

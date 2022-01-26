@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1fcc8a036e646c978e18fbdbc5465c5c2da3a02d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 572794880015f53f6db0a3d449dd3d19987cae21
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167738"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213965"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中打开预览体验
 
@@ -48,5 +48,5 @@ ms.locfileid: "61167738"
 - [更新 Microsoft Defender for Endpoint 中的常规设置](data-retention-settings.md)
 - [在 Microsoft Defender for Endpoint 中打开高级功能](advanced-features.md)
 - [在 Microsoft Defender for Endpoint 中配置电子邮件通知](configure-email-notifications.md)
-- [在 Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)
+
 
