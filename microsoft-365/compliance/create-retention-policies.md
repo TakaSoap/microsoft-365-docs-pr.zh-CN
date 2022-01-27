@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: d3b8ab3fac4156b638a0508bbac0bebfc2dfdee6
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: dcc3cb8379dd095a110e1307819e9256d9fa84bb
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327530"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241535"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -40,7 +40,7 @@ ms.locfileid: "61327530"
 
 ## <a name="before-you-begin"></a>准备工作
 
-组织的全局管理员具有创建和编辑保留策略的完全权限。 如果你未以全局管理员的身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。
+组织的全局管理员具有创建和编辑保留策略的完全权限。 如果您不是以全局管理员身份登录，请参阅[信息治理的权限信息](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels)。
 
 在创建保留策略之前，请决定是否 **自适应** 或 **静态**。 有关详细信息，请参阅 [保留](retention.md#adaptive-or-static-policy-scopes-for-retention)的自适应或静态策略范围。 如果决定使用自适应策略，则必须在创建保留策略之前创建一个或多个自适应作用域，然后在创建保留策略过程中选择它们。 有关说明，请参阅[自适应作用域的配置信息](retention-settings.md#configuration-information-for-adaptive-scopes)。
 
@@ -90,8 +90,8 @@ ms.locfileid: "61327530"
         
        默认情况下，[所有团队和所有用户](retention-settings.md#a-policy-that-applies-to-entire-locations)会被选择，但你但是你可以通过选择 [“**选择**”和“**排除**” 选项](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)”来进行优化。 但是，在更改默认设置之前，请注意保留策略在配置为包含或排除邮件时删除邮件的下列影响：
         
-        - 对于群组聊天信息和私人频道信息，由于信息的副本保存在每个参加聊天的用户的邮箱中，所以在 eDiscovery 结果中会继续返回未分配策略用户的信息副本。
-        - 对于未分配策略的用户，已删除的邮件将返回其 Teams 搜索结果中，但不会显示邮件内容，因为从分配给用户的策略被永久删除。
+        - 对于群组聊天消息和专用频道消息，由于邮件副本保存在对话中包含的每个用户的邮箱中，因此邮件副本将继续在未分配策略的用户的电子数据展示结果中返回。
+        - 对于未分配策略的用户，由于策略而删除的邮件将在其 Teams 搜索结果中返回，但不会显示邮件的内容。
 
 5. 对于 **决定是要保留内容、删除内容还是同时执行这两个操作** 页面，请指定用于保留和删除内容的配置选项。
 
@@ -232,3 +232,9 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 如果保留策略中的设置已应用于内容，则策略配置的更改将自动应用于此内容以及新识别的内容。
 
 某些设置在创建并保存策略后无法进行更改，包括保留策略的名称、作用域类型（自适应或静态）和保留设置（保持期除外）。
+
+## <a name="next-steps"></a>后续步骤
+
+如果 Exchange、SharePoint、OneDrive 或 Microsoft 365 组的某些项目需要与你配置的保留策略设置不同的保留设置，[创建这些异常的保留标签](create-retention-labels-information-governance.md)。
+
+但是，如果要针对业务、法律或法规记录保留要求对高价值项目进行生命周期管理， [使用文件计划创建和管理](file-plan-manager.md)的保留标签。

@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 了解如何将网站SharePoint多地理位置环境中的不同地理位置，并告知用户更改的预期。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: adfa96822e31dce43b95a6eebc54b5f4698bdcca
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 6ccbe708c0fcfb51c1a28b354d8438e526815cec
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560740"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242031"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>将 SharePoint 站点移到其他地理位置
 
@@ -62,6 +62,7 @@ ms.locfileid: "61560740"
 
 - 一次最多可以安排 4,000 次移动。
 - 移动开始后，可以安排更多移动操作，在在队列及任何给定时间内最多有 4,000 个待处理移动。
+- 可移动的SharePoint最大大小为 1 TB (1 TB) 。
 
 若要将 SharePoint 站点移动安排在稍后进行，请在开始移动时包括以下参数之一：
 
@@ -74,13 +75,13 @@ ms.locfileid: "61560740"
 
 SharePoint 站点地理位置移动要求你通过站点所在的地理位置中的 SharePoint 管理 URL 连接并执行移动。
 
-例如，如果网站 URL 为 <https://contosohealthcare.sharepoint.com/sites/Turbines> ，请连接到以下SharePoint管理员 <https://contosohealthcare-admin.sharepoint.com> URL：
+例如，如果网站 URL 为 <https://contosohealthcare.sharepoint.com/sites/Turbines> ，请SharePoint管理员 <https://contosohealthcare-admin.sharepoint.com> URL：
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePoint"联机命令行管理程序"窗口，Connect-SPOService命令。](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint联机命令行管理程序窗口，其中Connect-SPOService命令。](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>验证环境
 
@@ -102,7 +103,7 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 如果站点可移动，这将返回 *Success*，如果存在任何造成阻碍的情况，则返回 *Fail*。
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>针对没有SharePoint组的网站开始站点地理位置Microsoft 365移动
+### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>为SharePoint组关联的站点开始站点地理位置Microsoft 365移动
 
 默认情况下，站点的初始 URL 将更改为目标地理位置的 URL。 例如：
 
@@ -120,11 +121,11 @@ Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <Dest
 
 ![显示 cmdlet 的 PowerShell Start-SPOSiteContentMove屏幕截图。](../media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>开始SharePoint组连接的站点进行Microsoft 365移动
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>为SharePoint组连接的站点开始Microsoft 365站点地理位置移动
 
-若要Microsoft 365组连接的站点，全局管理员或 SharePoint 管理员必须先更改 Microsoft 365 组的首选数据位置 (PDL) 属性。
+若要移动Microsoft 365连接的站点，全局管理员或 SharePoint 管理员必须先更改组的首选数据位置 (PDL) 属性Microsoft 365属性。
 
-若要为组设置 PDL Microsoft 365：
+若要为组设置 PDL，Microsoft 365组：
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
@@ -199,9 +200,9 @@ SharePoint 站点地理位置移动完成后，被移动文件的现有共享链
 - OneNote UWP – 版本16.0.8431.1006（及更高版本）
 - OneNote 移动应用 – 版本 16.0.8431.1011（及更高版本）
 
-### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (组连接Microsoft 365站点或网站) 
+### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (组Microsoft 365连接的网站的) 
 
-完成SharePoint移动后，用户将有权访问其Microsoft 365应用上的组Teams文件。 此外，在地理位置移动之前通过 Teams 聊天从其站点中共享的文件在移动完成后将继续工作。
+当SharePoint地理位置移动完成后，用户将有权访问其Microsoft 365应用上的组Teams文件。 此外，在地理位置移动之前通过 Teams 聊天从其站点中共享的文件在移动完成后将继续工作。
 
 SharePoint地理位置移动不支持将专用通道从一个地理位置移动到另一个地理位置。 私人频道保留在原始地理位置。
   

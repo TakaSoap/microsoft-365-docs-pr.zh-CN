@@ -2,8 +2,8 @@
 title: 更改非活动邮箱的保留期
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/29/2017
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: 在Office 365邮箱变为非活动邮箱后，更改保留期或Office 365分配给非活动邮箱的保留策略。
-ms.openlocfilehash: 1698a252cad4cebcb09b7c3695b2cecf3184ba1f
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: bf1131aa0d14222bec7ab1c94983925cfe39e673
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61144970"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241607"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>更改非活动邮箱的保留期
 
@@ -40,11 +40,11 @@ ms.locfileid: "61144970"
 - 现有In-Place保留。
 
 > [!IMPORTANT]
-> 尽管上述任何保留将强制邮箱在 Microsoft 365 用户帐户删除后变为非活动状态，但强烈建议在主动计划利用非活动邮箱时使用 Microsoft 365 保留。
+> 尽管上述任何保留将强制邮箱在删除用户帐户Microsoft 365变为非活动状态，但强烈建议在主动计划利用非活动邮箱时使用 Microsoft 365 保留。
 >
-> - 电子数据展示保留适用于与法律问题相关的特定、有时间限制的情况。 在某些时候，法律案件可能会结束，并且与该案件关联的保留将被删除，电子数据展示案例将关闭 (或删除) 。 如果非活动邮箱上置于的保留与电子数据展示案例关联，并且该保留已释放或者电子数据展示案例已关闭或删除，则非活动邮箱将被永久删除。
+> - 电子数据展示保留适用于与法律问题相关的特定、有时间限制的情况。 有时，法律案件可能会结束，并且与该案件关联的保留将被删除，电子数据展示案例将在最终 (或删除) 。 如果非活动邮箱上置于的保留与电子数据展示案例关联，并且该保留已释放或者电子数据展示案例已关闭或删除，则非活动邮箱将被永久删除。
 >
-> - In-Place管理Exchange中的保留现已停用。 截至 2020 年 7 月 1 In-Place，无法在 Exchange Online 中创建新的保留。 从 2020 年 10 月 1 日起，就地保留的保留期无法再更改。 任何应用了保留In-Place非活动邮箱都只能删除保留In-Place保留。 在删除保留之前，In-Place处于保留状态的现有非活动邮箱将继续保留。 有关保留停用In-Place，请参阅 [停用旧版电子数据展示工具](legacy-ediscovery-retirement.md)。
+> - In-Place管理Exchange中的保留现已停用。 自 2020 年 7 月 1 日起，无法在 In-Place 中创建新的保留Exchange Online。 从 2020 年 10 月 1 日起，就地保留的保留期无法再更改。 任何应用了"In-Place"的非活动邮箱都只能通过删除"保留"In-Place删除。 在删除保留之前，In-Place处于保留状态的现有非活动邮箱将继续保留。 有关保留停用In-Place，请参阅 [停用旧版电子数据展示工具](legacy-ediscovery-retirement.md)。
 >
 > - [诉讼保留](create-a-litigation-hold.md) 仍受支持，作为在删除用户帐户后保留邮箱内容并使其处于非活动状态的替代方法。 但是，作为较旧的技术，我们建议你改为Microsoft 365保留。
 
@@ -52,7 +52,7 @@ ms.locfileid: "61144970"
 
 如果适用的保留不是基于时间，例如与仅无限期保留 Microsoft 365 保留策略或标签相关联的保留、未配置) 电子数据展示案例或诉讼保留 (，邮箱内容将无限期保留，直到删除保留。 ```LitigationHoldDuration```  
 
-但是，如果保留基于时间，则邮箱内容将一直保留到保留期到期，此时"可恢复的项目"文件夹中的任何项目都将从非活动邮箱中 (永久删除) 。
+但是，如果保留基于时间，则邮箱内容将一直保留到保留期过期，此时"可恢复的项目"文件夹中的任何项目都将从非活动邮箱中 (永久删除) 。
 
 > [!NOTE]
 > 对于非活动邮箱，我们建议对邮箱保留策略或标签Microsoft 365保留和删除设置。  如果选择"仅保留"设置，"可恢复的项目"文件夹将在保留期结束时清除，但是任何其他未删除的项目将无限期地保留在非活动邮箱中。
@@ -73,7 +73,7 @@ ms.locfileid: "61144970"
 
 由于不同类型的保留或一Microsoft 365保留策略可能会置于非活动邮箱上，因此第一步是标识非活动邮箱上的保留。
   
-在 PowerShell Exchange Online运行以下命令，以显示组织中特定非活动邮箱的保留信息。
+在 PowerShell Exchange Online以下命令，以显示组织中特定非活动邮箱的保留信息。
   
 ```powershell
 Get-Mailbox -Identity <identity of inactive mailbox> -InactiveMailboxOnly | FL DisplayName,Name,DistinguishedName,ExchangeGuid,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,LitigationHoldDate,LitigationHoldOwner,InPlaceHolds,ComplianceTagHoldApplied
@@ -182,8 +182,8 @@ ComplianceTagHoldApplied : False
 |:-----|:-----|:-----|
 |Ann Beebe  <br/> |诉讼保留  <br/> | `LitigationHoldEnabled`属性设置为 `True` 指示邮箱已置于诉讼保留状态。 <br/><br/> 此外，设置为 指示邮箱项目在创建日期 365 天后将不再受诉讼保留 (`LitigationHoldDuration` `365.00:00:00` 发送/接收) 。  <br/><br/> `LitigationHoldDate`指示 LitigationHold 的启用日期， `LitigationHoldOwner` 并标识发起诉讼保留的人。 <br/> |
 |表示 Olson  <br/> |Microsoft 365应用于特定邮箱Microsoft 365 合规中心保留策略  <br/> |`InPlaceHolds`属性包含应用于非活动Microsoft 365保留策略的 GUID。 你可以判断这是应用于特定邮箱的保留策略，因为 GUID 以 前缀开头，以 `mbx` `:2` 或 结尾 `:3` 。 <br/><br/> 有关详细信息，请参阅了解保留策略 [的 InPlaceHolds 值的格式](identify-a-hold-on-an-exchange-online-mailbox.md#understanding-the-format-of-the-inplaceholds-value-for-retention-policies)。  <br/> |
-|Megan Bowen <br/> | Microsoft 365保留或保留和删除操作保留标签应用于邮箱中的至少一个项目  <br/> |`ComplianceTagHoldApplied`属性表示 `True` 项目已标记有保留或保留和删除标签。  <br/><br/> 此外，该属性包含应用于非Microsoft 365邮箱的保留标签策略的 `InPlaceHolds` GUID。  <br/><br/> 有关详细信息，请参阅标识保留邮箱，因为保留标签 [已应用于文件夹或项目](identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) <br/>  |
-|为百分卡  <br/> |组织范围内的Microsoft 365保留策略Microsoft 365 合规中心  <br/> |属性  `InPlaceHolds`  为空、是 `LitigationHoldEnabled` `False` 和 `ComplianceTagHoldApplied` `False` 。 这表示一个或多个整个 (Exchange) 保留Microsoft 365应用于非活动邮箱所继承的组织。 <br/><br/> 有关详细信息，请参阅 [如何确认组织范围的保留策略已应用于邮箱](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox) <br/> |
+|Megan Bowen <br/> | Microsoft 365保留和删除操作保留标签应用于邮箱中的至少一个项目  <br/> |`ComplianceTagHoldApplied`属性表示 `True` 项目已标记有保留或保留和删除标签。  <br/><br/> 此外，该属性包含应用于非Microsoft 365邮箱的保留标签策略的 `InPlaceHolds` GUID。  <br/><br/> 有关详细信息，请参阅标识保留邮箱，因为保留标签 [已应用于文件夹或项目](identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) <br/>  |
+|为百分卡  <br/> |组织范围内的Microsoft 365保留策略来自Microsoft 365 合规中心  <br/> |属性  `InPlaceHolds`  为空、是 `LitigationHoldEnabled` `False` 和 `ComplianceTagHoldApplied` `False` 。 这表示一个或多个整个 (Exchange) 保留Microsoft 365应用于非活动邮箱所继承的组织。 <br/><br/> 有关详细信息，请参阅 [如何确认组织范围的保留策略已应用于邮箱](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox) <br/> |
 |为 McMahon  <br/> |电子数据展示服务中的Microsoft 365 合规中心  <br/> |属性包含非活动邮箱上电子数据展示案例保留  `InPlaceHolds`  的 GUID。 你可以判断这是电子数据展示案例保留，因为 GUID 以前缀  `UniH` 开头。  <br/><br/> 有关详细信息，请参阅电子 [数据展示保留](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds)。 <br/> |
 |Pilar Pinilla  <br/> |就地保留  <br/> |`InPlaceHolds`属性包含非活动邮箱In-Place保留的 GUID。 你可以判断这是一个In-Place保留，因为 GUID 不以前缀开头。  <br/><br/> **注意**：自 2020 年 10 月 1 日起，就地保留的保留期将无法再更改。 只能删除In-Place保留，这可能会导致删除非活动邮箱。 <br/><br/> 有关详细信息，请参阅 [停用旧版电子数据展示工具](legacy-ediscovery-retirement.md)。 <br/> |
 
@@ -203,7 +203,7 @@ ComplianceTagHoldApplied : False
 
 ### <a name="change-the-duration-for-a-microsoft-365-retention-policy"></a>更改保留策略Microsoft 365持续时间
 
-为了修改 Microsoft 365 保留策略的保留期，首先必须通过在安全与合规中心 PowerShell 中通过邮箱属性的关联 GUID 运行来标识影响非活动邮箱 `Get-RetentionCompliancePolicy` `InPlaceHolds` 的策略。
+为了修改 Microsoft 365 保留策略的保留期，您必须先在安全与合规中心 PowerShell 中通过邮箱属性的关联 GUID 运行来识别影响非活动邮箱 `Get-RetentionCompliancePolicy` `InPlaceHolds` 的策略。
 
 运行此命令时，请务必从 GUID 中删除前缀和后缀。  例如，使用上述示例信息，您将获取 的值 `InPlaceHolds` `mbxcdbbb86ce60342489bff371876e7f224:3` ，然后删除 ，并生成 策略 `mbx` `:3` `cdbbb86ce60342489bff371876e7f224` GUID。  在此例中，你想要运行：
 
@@ -216,11 +216,11 @@ Get-RetentionCompliancePolicy cdbbb86ce60342489bff371876e7f224 | FL Name
 > [!IMPORTANT]
 > 启用了保留 [锁定的保留](retention-preservation-lock.md) 策略可以延长保留期，但不能减少或删除保留期。
 
-如果打算仅修改非活动邮箱或特定非活动邮箱的保留期，可以考虑部署自适应策略作用域，这些作用域可用于使用[](retention.md#adaptive-or-static-policy-scopes-for-retention)Azure AD 和 Exchange 属性单独面向特定邮箱或邮箱类型（如非活动邮箱）。
+如果打算仅修改非活动邮箱或仅特定非活动邮箱的保留期，可以考虑部署自适应策略作用域，这些作用域可用于使用[](retention.md#adaptive-or-static-policy-scopes-for-retention)Azure AD 和 Exchange 属性单独面向特定邮箱或邮箱类型（如非活动邮箱）。
 
 ### <a name="change-the-duration-for-a-microsoft-365-retention-label"></a>更改保留标签Microsoft 365持续时间
 
-与保留策略一样，修改 Microsoft 365 保留标签的保留期时，必须先在安全与合规中心 PowerShell 中通过邮箱属性中的关联 GUID 运行来标识发布影响非活动邮箱中内容的标签的策略。 `Get-RetentionCompliancePolicy` `InPlaceHolds`
+与保留策略一样，在修改 Microsoft 365 保留标签的保留期时，必须先在安全与合规中心 PowerShell 中通过邮箱属性运行关联的 GUID 来运行发布影响非活动邮箱中内容的标签的策略。 `Get-RetentionCompliancePolicy` `InPlaceHolds`
 
 运行此命令时，请务必从 GUID 中删除前缀和后缀。  例如，使用上述示例信息，您将获取 的值 `InPlaceHolds` `mbx6fe063689d404a5bb9940eed0f0bf5d2:1` ，然后删除 ，并生成 策略 `mbx` `:1` `6fe063689d404a5bb9940eed0f0bf5d2` GUID。  在此例中，你想要运行：
 
@@ -230,7 +230,7 @@ Get-RetentionCompliancePolicy 6fe063689d404a5bb9940eed0f0bf5d2 | FL Name
 
 确定策略后，你将知道已发布哪些标签及其设置。  由于标签适用于单个项目，具体取决于随策略发布的标签数量及其设置，因此可能无法直接标识哪个标签正在影响内容。  
 
-可用于标识每个标签所应用的内容的一个方法是使用 [内容搜索](content-search.md)。  例如，使用上述示例信息，假定策略发布了多个标签，其中一个标签名为"HR-Content"。  使用正确的 [权限](microsoft-365-compliance-center-permissions.md)，可以使用 [New-ComplianceSearch PowerShell](/powershell/module/exchange/new-compliancesearch)命令运行内容搜索，以指定非活动邮箱的主 SMTP 地址、预先使用 () 的时间段和参数跳过 `.` `-AllowNotFoundExchangeLocationsEnabled $true` 验证：
+可用于标识每个标签所应用的内容的一个方法是使用 [内容搜索](content-search.md)。  例如，使用上述示例信息，假定策略发布了多个标签，其中一个标签名为"HR-Content"。  使用正确的 [权限](microsoft-365-compliance-center-permissions.md)，可以使用 [New-ComplianceSearch PowerShell](/powershell/module/exchange/new-compliancesearch)命令运行内容搜索，以指定非活动邮箱的主 SMTP 地址、预先使用时间段 () 以及参数跳过 `.` `-AllowNotFoundExchangeLocationsEnabled $true` 验证：
 
 ```powershell
 New-ComplianceSearch -Name "MeganB Inactive Mailbox HR-Content Label Search" -ExchangeLocation .meganb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true -ContentMatchQuery "compliancetag=HR-Content"
@@ -242,7 +242,7 @@ New-ComplianceSearch -Name "MeganB Inactive Mailbox HR-Content Label Search" -Ex
 Start-ComplianceSearch "MeganB Inactive Mailbox HR-Content Label Search"
 ```
 
-使用此方法，您可以标识标识的标签策略中的哪些标签适用于非活动邮箱中的内容，以便可以修改其保留期。 请注意，保留标签通常应用于多个位置，因此修改标签将影响所有应用的位置和标记的内容，其中可能还包括位置和 Exchange。 有关详细信息，请参阅创建 [保留标签，并应用在应用中](create-apply-retention-labels.md)。
+使用此方法，您可以标识标识的标签策略中的哪些标签适用于非活动邮箱中的内容，以便可以修改其保留期。 请注意，保留标签通常应用于多个位置，因此修改标签将影响所有应用的位置和标记的内容，其中可能还包括位置和Exchange。 有关详细信息，请参阅创建 [保留标签，并应用在应用中](create-apply-retention-labels.md)。
 
 > [!NOTE]
 > 并非所有类型的保留标签都可以修改。  对于一些标签，可能只能增加保留时间，而对于其他标签，你完全不能修改保留期。
@@ -272,15 +272,15 @@ In-Place保留已停用且无法再修改。 如果非活动邮箱应用了In-Pl
 
 - **如何计算非活动邮箱中项目的保留期？** 保留期从邮箱项目的接收或创建原始日期开始计算。
     
-- **当保留期过期时，会怎么样？** 当"可恢复的项目"文件夹中的邮箱项目的保留期过期时，该项目 (从非活动) 中清除。 如果没有为非活动邮箱上的保留指定持续时间，则永远不会清除"可恢复的项目"文件夹中的项目 (除非非活动邮箱的保留期) 。 
+- **当保留期过期时，会怎么样？** 当"可恢复的项目"文件夹中的邮箱项目的保留期过期时，会从非活动邮箱中 (项目) 永久删除。 如果没有为非活动邮箱上的保留指定持续时间，则永远不会清除"可恢复的项目"文件夹中的项目 (除非非活动邮箱的保留期) 。 
     
-- **是否仍Exchange非活动邮箱上处理 MRM 策略？**  如果 MRM 保留策略在邮箱处于非活动状态之前应用于邮箱，则任何删除策略 (配置有删除操作) 的MRM 保留标记将继续在非活动邮箱上进行处理。 这意味着，在保留期到期时，用 MRM 删除策略标记的项目将移动到"可恢复的项目"文件夹。 在保留期过期时，这些项目会从非活动邮箱中清除。 如果没有为非活动邮箱指定保留期，则"恢复项目"文件夹中的项目将无限期保留。
+- **是否仍在Exchange非活动邮箱上处理 MRM 策略？**  如果 MRM 保留策略在邮箱处于非活动状态之前应用于邮箱 (则使用删除操作) 配置的 MRM 保留标记将继续在非活动邮箱上进行处理。 这意味着，在保留期到期时，用 MRM 删除策略标记的项目将移动到"可恢复的项目"文件夹。 在保留期过期时，这些项目会从非活动邮箱中清除。 如果没有为非活动邮箱指定保留期，则"恢复项目"文件夹中的项目将无限期保留。
 
     相反，任何存档策略 (分配给非活动邮箱的 MRM 保留策略中包含的使用 **MoveToArchive** 操作) 配置的 MRM 保留标记。 也就是说，在保留期过期时，非活动邮箱中标记有存档策略的项目会保留在主邮箱中。 这些项目不会移到存档邮箱或其中的“可恢复的项目”文件夹内。 它们将被无限期保留。
     > [!NOTE]
-    > 在 Exchange Online) 中Exchange邮件记录 (或 MRM 功能应用保留策略不会在用户帐户被删除时创建非活动邮箱。
+    > 如果对 Exchange Online) 中的Exchange保留策略 (邮件记录管理或 MRM 功能，则删除用户帐户时不会创建非活动邮箱。
 
-- **与常规邮箱一样，托管文件夹助理 (MFA) 处理非活动邮箱。** 在Exchange Online，MFA 大约每七天处理一次邮箱。 更改非活动邮箱的保留期后，您可以使用 **Start-ManagedFolderAssistant** cmdlet 立即开始处理非活动邮箱的新保留期。 运行以下命令。 
+- **与常规邮箱一样，托管文件夹助理 (MFA) 处理非活动邮箱。** 在Exchange Online中，MFA 大约每七天处理一次邮箱。 更改非活动邮箱的保留期后，您可以使用 **Start-ManagedFolderAssistant** cmdlet 立即开始处理非活动邮箱的新保留期。 运行以下命令。 
 
     ```powershell
     Start-ManagedFolderAssistant -InactiveMailbox <identity of inactive mailbox>

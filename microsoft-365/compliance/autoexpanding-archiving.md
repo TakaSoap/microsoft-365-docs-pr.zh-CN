@@ -1,9 +1,9 @@
 ---
-title: 自动扩展存档概述
+title: 了解自动扩展存档
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解为 Exchange Online 邮箱提供额外存档存储的自动扩展存档。
-ms.openlocfilehash: d1833416ad4ff1d2dbb3241fde466e31bb6d8a74
-ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
+ms.openlocfilehash: 527eea4f0fe97ba689cb70bddb78091112e1f353
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2021
-ms.locfileid: "60400043"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241331"
 ---
-# <a name="overview-of-auto-expanding-archiving"></a>自动扩展存档概述
+# <a name="learn-about-auto-expanding-archiving"></a>了解自动扩展存档
 
 在 Office 365 中，存档邮箱为用户提供额外的邮箱存储空间。 在启用了用户的存档邮箱后，最多可获得 100 GB 的额外存储空间。 过去，当达到 100 GB 存储配额时，组织必须联系 Microsoft 为存档邮箱请求额外存储空间。 但现在不再如此。
 
@@ -112,6 +112,8 @@ Microsoft 365 中的存档功能（称为 *自动扩展存档*）在存档邮箱
 
 - **导入服务：** 可以使用 Office 365 导入服务将 PST 文件导入到用户的自动扩展存档。 最多可以将 100 GB 的数据从 PST 文件导入到用户的存档邮箱。
 
-## <a name="more-information"></a>详细信息
+## <a name="next-steps"></a>后续步骤
 
 有关自动扩展存档的更多技术详细信息，请参阅 [Microsoft 365：自动扩展存档常见问题解答](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784)。
+
+如果已准备好启用自动扩展存档，请参阅 [启用自动扩展存档](enable-autoexpanding-archiving.md)。

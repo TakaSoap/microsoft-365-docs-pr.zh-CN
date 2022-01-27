@@ -12,6 +12,8 @@
   items:
     - name: 配置门户安全性
       href: m365-lighthouse-configure-portal-security.md
+    - name: 查看审核日志
+      href: m365-lighthouse-review-audit-logs.md
 - name: 使用基线保护客户
   items:
     - name: 使用基线部署标准租户配置的概述

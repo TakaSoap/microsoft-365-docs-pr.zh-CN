@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0912e496fdca1f716fa7476a4a74e46bbb26023f
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 7092b4ed30400fb559751d4d939801c1982407f8
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221336"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241971"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
@@ -36,11 +36,17 @@ ms.locfileid: "61221336"
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-高级搜寻基于 [Kusto 查询语言](/azure/kusto/query/)。 您可以使用 Kusto 运算符和语句构造在专用架构 中查找信息的 [查询](advanced-hunting-schema-tables.md)。 若要更好地了解这些概念，请运行你的第一个查询。
+高级搜寻基于 [Kusto 查询语言](/azure/kusto/query/)。 您可以使用 Kusto 运算符和语句构造在专用架构 中查找信息的 [查询](advanced-hunting-schema-tables.md)。 
+
+观看此简短视频，了解一些方便易用的 Kusto 查询语言基础知识。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfJ]
+ 
+若要更好地了解这些概念，请运行你的第一个查询。
 
 ## <a name="try-your-first-query"></a>尝试你的第一个查询
 
-在Microsoft 365 Defender门户中，转到 **"搜寻**"以运行你的第一个查询。 使用以下示例：
+在Microsoft 365 Defender门户中，转到 **"搜寻**"以运行你的第一个查询。 使用以下示例： 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -165,7 +171,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 - 使用空行分隔每个查询。
 - 将光标放在查询的任何部分，以在运行该查询之前选择该查询。 这将仅运行选定的查询。 若要运行另一个查询，请相应地移动游标并选择"**运行查询"。**
 
-:::image type="content" source="../../media/learn-work-with-multiple.png" alt-text="示例：在应用程序门户的 **New query** 页中执行Microsoft 365 Defender示例" lightbox="../../media/learn-work-with-multiple.png":::
+:::image type="content" source="../../media/learn-work-with-multiple.png" alt-text="示例：在应用程序门户的 **New query** 页中执行Microsoft 365 Defender查询" lightbox="../../media/learn-work-with-multiple.png":::
 
 ## <a name="use-sample-queries"></a>使用示例查询
 
@@ -174,7 +180,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 :::image type="content" source="../../media/get-started-section.png" alt-text="应用门户中 **高级搜寻** 页面中的**入门**Microsoft 365 Defender部分" lightbox="../../media/get-started-section.png":::
 
 >[!NOTE]
->除了基本查询示例之外，你还可以访问特定威胁搜寻方案的[共享查询](advanced-hunting-shared-queries.md)。 浏览页面左侧或查询库的GitHub[查询](https://aka.ms/hunting-queries)。
+>除了基本查询示例之外，你还可以访问特定威胁搜寻方案的[共享查询](advanced-hunting-shared-queries.md)。 浏览页面左侧或页面查询库的GitHub[查询](https://aka.ms/hunting-queries)。
 
 ## <a name="access-query-language-documentation"></a>访问查询语言文档
 

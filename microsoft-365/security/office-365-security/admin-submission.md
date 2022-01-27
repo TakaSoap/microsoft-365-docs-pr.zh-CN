@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d16839881f48b494d6d061d2a59c205b5e8d667c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 57dedee4f2502f5fd9db293fb4ea947cf50bee1d
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935521"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241935"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用提交门户将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft
 
@@ -33,7 +33,7 @@ ms.locfileid: "61935521"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
 
-在Microsoft 365邮箱Exchange Online，管理员可以使用 Microsoft 365 Defender 门户中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
+在Microsoft 365组织中Exchange Online，管理员可以使用 Microsoft 365 Defender 门户中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
 
 当你提交电子邮件进行分析时，你将获得：
 
@@ -52,7 +52,7 @@ ms.locfileid: "61935521"
 - 访问 <https://security.microsoft.com/> 打开 Microsoft 365 Defender 门户。 若要直接转到 **提交页面，** 请使用 <https://security.microsoft.com/reportsubmission> 。
 
 - 若要向 Microsoft 提交邮件和文件，你需要是以下角色组之一的成员：
-  - **组织管理** 或 **安全读者** 在 [Microsoft 365 Defender读者](permissions-microsoft-365-security-center.md)。
+  - **安全管理员** 或 **安全读者** Microsoft 365 Defender [门户](permissions-microsoft-365-security-center.md)。
   
     请注意，查看自定义邮箱的用户提交需要此角色组的 [成员身份，如](#view-user-submissions-to-microsoft) 本文稍后所述。
 
@@ -118,7 +118,7 @@ ms.locfileid: "61935521"
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
    - **不应阻止误报 (误报)**
-   - **应已被阻止 (假负) ：** 在"此 **URL 应** 已分类为出现的部分"中，选择"**网络钓鱼**"或"恶意软件 **"。**
+   - **应已被阻止 (假负) ：** 在"此 **URL 应** 已分类为出现的部分"中，选择"网络钓鱼"或 **"恶意软件****"。**
 
 4. 完成后，请单击“**提交**”。
 
@@ -133,7 +133,7 @@ ms.locfileid: "61935521"
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
    - **不应阻止误报 (误报)**
-   - **应已被** 阻止 (假负) ：在此文件 **应** 已分类为出现的部分， **恶意软件是唯一** 的选择，并自动选择。
+   - **应已被** 阻止 (假负) ：在此文件应已分类为出现的部分，**恶意软件是唯一** 的选择，并自动选择。
 
 4. 完成后，请单击“**提交**”。
 
@@ -163,7 +163,7 @@ ms.locfileid: "61935521"
      - **网络消息 ID/对象 ID**
      - **方向**
      - **发件人 IP**
-     - **BCL (批量兼容)**
+     - **BCL (批量)**
      - **目标**
      - **策略操作**
      - **提交者**
@@ -213,7 +213,7 @@ ms.locfileid: "61935521"
 
 ## <a name="view-user-submissions-to-microsoft"></a>查看向 Microsoft 提交用户
 
-如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上查看报告哪些用户。 [](enable-the-report-phish-add-in.md) 
+如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上查看报告的用户。 [](enable-the-report-phish-add-in.md) 
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> ， go to the **Submissions** page at **Email & collaboration** \> **Submissions**. 若要直接转到 **提交页面，** 请使用 <https://security.microsoft.com/reportsubmission> 。
 

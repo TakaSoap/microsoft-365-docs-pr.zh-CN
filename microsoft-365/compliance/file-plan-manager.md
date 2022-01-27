@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划为保留标签提供了高级管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 5154a5347fa22e5315abd148327d8eab5508f0d3
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 464cbe5af7ea08755ec3d49949d4707448566b27
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372754"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241403"
 ---
-# <a name="use-file-plan-to-manage-retention-labels"></a>使用文件计划管理保留标签
+# <a name="use-file-plan-to-create-and-manage-retention-labels"></a>使用文件计划创建和管理保留标签
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
@@ -113,6 +113,36 @@ ms.locfileid: "61372754"
 
 ![创建用于预配/引文的新文件计划描述符。](../media/file-plan-descriptors-create.png)
 
+## <a name="create-retention-labels"></a>创建保留标签
+
+1. 在 **文件计划** 页中，选择"**+ 创建标签** > **保留标签**
+
+2. 按照配置过程的提示进行操作。
+    
+    
+    
+    若要使用保留标签来声明记录，请选择 **“将项目标记为记录”**，或者 **“将项目标记为合规性记录”**。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
+
+3. 创建标签后，你会看到发布标签、自动应用标签或仅保存标签的选项，请选择“**现在仅保存标签**”，然后选择“**完成**”。
+
+4. 重复这些步骤以创建更多标签。
+
+## <a name="edit-retention-labels"></a>编辑保留标签
+
+若要编辑现有保留标签，请从 **文件计划** 页中选择它，然后选择 **编辑标签** 选项以启动编辑保留过程，以便更改标签说明和任何符合条件的设置。
+
+创建和保存标签后，某些设置无法更改，其中包括：
+- 保留标签名称和保留期除外。 但是，如果保留期基于项目的标记时间，则不能更改保留期。
+- 用于将项目标记为记录的选项。
+
+## <a name="delete-retention-labels"></a>删除保留标签
+
+可以删除当前未包含在任何 [发布的](create-apply-retention-labels.md) 或 [自动应用](apply-retention-labels-automatically.md) 保留标签策略（未针对基于事件的保留进行配置）的保留标签，或将项目标记为法规记录。
+
+对于可以删除的保留标签，如果已应用到项目，则删除操作将失败，并且你将看到指向内容资源管理器的链接，以标识已标记的项目。
+
+但是，内容资源管理器可能需要多达两天时间才能显示标记的项目。 在这种情况下，可能会删除保留标签，而不显示指向内容资源管理器的链接。
+
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>导出所有保留标签以分析或启用脱机评审
 
 在文件计划中，可以将所有保留标签的详细信息都导出到 .csv 文件中，有助于推动定期与组织中数据管理利益干系人一起执行合规性评审。
@@ -186,6 +216,6 @@ ms.locfileid: "61372754"
 
 ## <a name="next-steps"></a>后续步骤
 
-有关创建、编辑和应用保留标签的信息，请参阅以下两种方案：
-- [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
+现在，你已创建保留标签，可以通过发布标签或自动应用这些标签将其添加到项目中：
+- [发布保留标签并将其应用到应用](create-apply-retention-labels.md)
 - [自动向内容应用保留标签](apply-retention-labels-automatically.md)

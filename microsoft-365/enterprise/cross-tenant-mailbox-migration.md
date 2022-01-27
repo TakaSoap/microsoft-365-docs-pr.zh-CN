@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: b11eef14b36bd7e7ece14cf2b55424b52a0422da
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: bff8af115f23db7fe152ed6ee06e62d128f2b9e4
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218917"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241995"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨租户邮箱迁移 (预览) 
 
@@ -145,6 +145,11 @@ ms.locfileid: "62218917"
    > 将需要刚创建的邮箱迁移应用程序的应用程序 ID，以及 (过程中) 的密码。 此外，根据Microsoft 365的云实例可能有所不同。 请参阅"Microsoft 365[终结点](/microsoft-365/enterprise/microsoft-365-endpoints)"页面，为租户选择正确的实例，并查看"Exchange Online"所需地址并根据需要替换。
 
    ```powershell
+   
+   # Enable customization if tenant is dehydrated
+     $dehydrated=Get-OrganizationConfig | fl isdehydrated
+     if ($dehy -eq $true) {Enable-OrganizationCustomization}
+     
    $AppId = "[guid copied from the migrations app]"
 
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
@@ -536,11 +541,11 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 ## <a name="known-issues"></a>已知问题
 
-- **问题：Teams租户中的迁移后功能将受到限制。** 将邮箱迁移到目标租户Teams，源租户中的邮箱将无法再访问用户的邮箱。 因此，如果用户使用源租户凭据登录到 Teams，将会丢失功能，例如无法更新个人资料图片、没有日历应用程序，以及无法搜索和加入公共团队。
+- **问题：Teams租户中的迁移后迁移功能将受到限制。** 将邮箱迁移到目标租户Teams，源租户中的邮箱将无法再访问用户的邮箱。 因此，如果用户使用源租户凭据登录到 Teams，将会丢失功能，例如无法更新个人资料图片、没有日历应用程序，以及无法搜索和加入公共团队。
 
 - **问题：无法迁移自动展开的存档。** 跨租户迁移功能支持迁移特定用户的主邮箱和存档邮箱。 但是，如果源中的用户具有自动展开的存档（这意味着多个存档邮箱）无法迁移其他存档，并且应该会失败。
 
-- **问题：具有非拥有 smtp 代理的云邮件用户地址块 MRS 移动后台。** 创建目标租户 MailUser 对象时，必须确保所有 SMTP 代理地址都属于目标租户组织。 如果不属于本地租户的目标邮件用户上存在 SMTP proxyAddress，则阻止 MailUser 到 Mailbox 的转换。 这是因为，我们保证邮箱对象只能从租户对租户具有权威性的域 (由租户声明的域) ：
+- **问题：具有非拥有 smtp 代理的云邮件用户地址块 MRS 移动后台。** 创建目标租户 MailUser 对象时，必须确保所有 SMTP 代理地址都属于目标租户组织。 如果不属于本地租户的目标邮件用户上存在 SMTP proxyAddress，则阻止 MailUser 到 Mailbox 的转换。 这是因为我们保证邮箱对象只能从租户对租户声明的域具有权威性 (域发送邮件) ：
 
   - 使用 Azure AD 连接 从本地同步用户时，使用指向邮箱所在的源租户的 ExternalEmailAddress 预配本地 MailUser 对象 (LaraN@contoso.onmicrosoft.com) 并且将 PrimarySMTPAddress 标记为驻留在目标租户 (Lara.Newton@northwind.com) 中的域。 这些值向下同步到租户，并设置相应的邮件用户并准备迁移。 此处显示了一个示例对象。
 
@@ -557,10 +562,10 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 - **问题：具有"外部"主 SMTP 地址的 MailUser 对象被修改/重置为"内部"公司声明的域**
 
-  MailUser 对象是指向非本地邮箱的指针。 对于跨租户邮箱迁移，从目标组织的角度看，我们使用 MailUser 对象表示源邮箱 () 或目标邮箱 (（从源组织的角度来看) ）。 MailUsers 将具有一个 ExternalEmailAddress (targetAddress) ，该地址指向实际邮箱 (ProxyTest@fabrikam.onmicrosoft.com) 的 smtp 地址和表示目录中邮箱用户的显示 SMTP 地址的 primarySMTP 地址。 一些组织选择将主 SMTP 地址显示为外部 SMTP 地址，而不是本地租户拥有/验证的地址 (如 fabrikam.com 而不是 contoso.com) 。  但是，一旦Exchange许可操作将服务计划对象应用于 MailUser，主 SMTP 地址将修改为本地组织验证的域 (contoso.com) 。 有两个可能的原因：
+  MailUser 对象是指向非本地邮箱的指针。 对于跨租户邮箱迁移，从目标组织的角度来看，我们使用 MailUser 对象表示源邮箱 () 或目标邮箱 (（从源组织的角度来看) ）。 MailUsers 将具有一个 ExternalEmailAddress (targetAddress) ，该地址指向实际邮箱 (ProxyTest@fabrikam.onmicrosoft.com) 的 smtp 地址和表示目录中邮箱用户的显示 SMTP 地址的 primarySMTP 地址。 一些组织选择将主 SMTP 地址显示为外部 SMTP 地址，而不是本地租户拥有/验证的地址 (如 fabrikam.com 而不是 contoso.com) 。  但是，一旦 Exchange 服务计划对象通过许可操作应用于 MailUser，主 SMTP 地址将修改为本地组织验证的域 (contoso.com) 。 有两个可能的原因：
 
-  - 当任何 Exchange 服务计划应用于 MailUser 时，Azure AD 进程将开始强制执行代理清理，以确保本地组织无法从另一个租户发送邮件、欺骗或邮件。 如果本地组织未验证该地址，将删除具有这些服务计划的收件人对象上的任何 SMTP 地址。 与示例中的情况一样，Fabikam.com 租户未验证 contoso.onmicrosoft.com 域，因此清理会删除该 fabrikam.com 域。 如果希望在迁移之前或迁移后，在 MailUser 上保留这些外部域，则需要更改迁移过程，以在移动完成后或移动之前去除许可证，以确保用户应用了预期的外部品牌。 您需要确保邮箱对象已正确许可，不会影响邮件服务。
-  - 删除租户中 MailUser 上的服务计划的示例 contoso.onmicrosoft.com 如下所示。
+  - 当任何 Exchange 服务计划应用于 MailUser 时，Azure AD 进程开始强制执行代理清理，以确保本地组织无法从另一个租户发送邮件、欺骗或邮件。 如果本地组织未验证该地址，将删除具有这些服务计划的收件人对象上的任何 SMTP 地址。 与示例中的情况一样，Fabikam.com 租户未验证 contoso.onmicrosoft.com 域，因此清理会删除该 fabrikam.com 域。 如果希望在迁移之前或迁移后，在 MailUser 上保留这些外部域，则需要更改迁移过程，以在移动完成后或移动之前去除许可证，以确保用户应用了预期的外部品牌。 您需要确保邮箱对象已正确许可，不会影响邮件服务。
+  - 删除邮件租户中 MailUser 上的服务 contoso.onmicrosoft.com 脚本如下所示。
 
     ```powershell
     $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans "LOCKBOX_ENTERPRISE","EXCHANGE_S_ENTERPRISE","INFORMATION_BARRIERS","MIP_S_CLP2","MIP_S_CLP1","MYANALYTICS_P2","EXCHANGE_ANALYTICS","EQUIVIO_ANALYTICS","THREAT_INTELLIGENCE","PAM_ENTERPRISE","PREMIUM_ENCRYPTION"

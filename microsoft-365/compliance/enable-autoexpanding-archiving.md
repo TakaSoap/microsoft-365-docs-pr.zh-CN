@@ -1,9 +1,9 @@
 ---
-title: 启用自动扩展存档 - 管理员帮助
+title: 启用自动扩展存档
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,16 +19,16 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 对于管理员：了解如何启用自动扩展存档，这为用户提供了用于其邮箱Exchange Online存储空间。 您可以为整个组织或只为特定用户启用自动扩展存档。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 865a21e27034490b7b9da476d359ce135962d604
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: c6f1514ed4bb9c12ac666b366cab91358216357a
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110879"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241619"
 ---
-# <a name="enable-auto-expanding-archiving---admin-help"></a>启用自动扩展存档 - 管理员帮助
+# <a name="enable-auto-expanding-archiving"></a>启用自动扩展存档
 
-可以使用自动扩展Exchange Online功能为存档邮箱启用额外的存储空间。 启用自动扩展存档后，会自动向用户的存档邮箱添加额外的存储空间，直到达到 1.5 TB 的存储限制。 您可以为组织中的每个人或只为特定用户启用自动扩展存档。 有关自动扩展存档的信息，请参阅 [自动扩展存档概述](autoexpanding-archiving.md)。
+可以使用自动扩展Exchange Online功能为存档邮箱启用额外的存储空间。 启用自动扩展存档后，会自动向用户的存档邮箱添加额外的存储空间，直到达到 1.5 TB 的存储限制。 您可以为组织中的每个人或只为特定用户启用自动扩展存档。 有关自动扩展存档的信息，请参阅 [了解自动扩展存档](autoexpanding-archiving.md)。
 
 ## <a name="before-you-enable-auto-expanding-archiving"></a>启用自动扩展存档之前
 
@@ -46,7 +46,7 @@ ms.locfileid: "61110879"
 
 - 自动扩展存档可防止恢复或还原非 [活动邮箱](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes)。 这意味着，如果为邮箱启用自动扩展存档，并且邮箱在以后变为非活动状态，将无法通过将非活动邮箱 [ (](recover-an-inactive-mailbox.md) 转换为活动邮箱) 或通过将内容合并到现有邮箱) 将其 [还原到](restore-an-inactive-mailbox.md) (。 如果在非活动邮箱上启用了自动扩展存档，则恢复数据的唯一方法就是使用 Microsoft 365 合规中心 中的内容搜索工具将数据从邮箱导出并导入另一个邮箱。 有关详细信息，请参阅了解非活动邮箱中的"非活动邮箱和自动 [扩展存档"部分](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives)。
 
-- You can't use the Exchange admin center or the Microsoft 365 合规中心 to enable auto-expanding archiving. 您必须使用 Exchange Online PowerShell。 若要使用远程 PowerShell Exchange Online组织，请参阅 连接[Exchange Online PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
+- You can't use the Exchange admin center or the Microsoft 365 合规中心 to enable auto-expanding archiving. 您必须使用 Exchange Online PowerShell。 若要使用远程 PowerShell Exchange Online组织，请参阅连接 Exchange Online [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
 
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>为整个组织启用自动扩展存档
 
@@ -54,7 +54,7 @@ ms.locfileid: "61110879"
   
 1. [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. 在 PowerShell Exchange Online以下命令，为整个组织启用自动扩展存档。
+2. 在 PowerShell 中Exchange Online以下命令，为整个组织启用自动扩展存档。
 
     ```powershell
     Set-OrganizationConfig -AutoExpandingArchive
@@ -66,7 +66,7 @@ ms.locfileid: "61110879"
   
 当您为特定用户启用自动扩展存档，并将该用户的邮箱置于保留状态或分配到保留策略时，将进行以下两种配置更改：
   
-- 用户的主存档邮箱的存储配额增加了 10 GB， (从 100 GB 增加到 110 GB) 。 存档警告配额也增加了 10 GB， (90 GB 增加到 100 GB) 。
+- 用户的主存档邮箱的存储配额增加了 10 GB， (100 GB 增加到 110 GB) 。 存档警告配额也增加了 10 GB (从 90 GB 增加到 100 GB) 。
 
 - 用户主邮箱中"可恢复的项目"文件夹的存储配额增加了 10 GB (从 100 GB 增加到 110 GB) 。 "可恢复的项目"警告配额也增加了 10 GB， (从 90 GB 增加到 100 GB) 。 这些更改仅在邮箱置于保留状态或分配到保留策略时适用。
 
@@ -74,7 +74,7 @@ ms.locfileid: "61110879"
   
 1. [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. 在 PowerShell Exchange Online运行以下命令，为特定用户启用自动扩展存档。 如前所述，必须先启用用户的存档邮箱 (主存档) 才能为该用户启用自动扩展存档。
+2. 在 PowerShell Exchange Online以下命令，为特定用户启用自动扩展存档。 如前所述，必须先启用用户的存档邮箱 (主存档) ，然后才能为该用户启用自动扩展存档。
 
     ```powershell
     Enable-Mailbox <user mailbox> -AutoExpandingArchive
@@ -85,7 +85,7 @@ ms.locfileid: "61110879"
   
 ## <a name="verify-that-auto-expanding-archiving-is-enabled"></a>验证是否已启用自动扩展存档
 
-若要验证是否为组织启用了自动扩展存档，请运行 PowerShell 中的以下Exchange Online命令。
+若要验证是否为组织启用了自动扩展存档，请运行 PowerShell Exchange Online命令。
 
 ```powershell
 Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
@@ -93,7 +93,7 @@ Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
 
 值  `True` 表示为组织启用了自动扩展存档。 
   
-若要验证是否为特定用户启用了自动扩展存档，请运行 PowerShell 中的以下Exchange Online命令。
+若要验证是否为特定用户启用了自动扩展存档，请运行 PowerShell Exchange Online命令。
   
 ```powershell
 Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
@@ -101,7 +101,7 @@ Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 
 值  `True` 表示为用户启用了自动扩展存档。
   
-若要确定是否为非活动邮箱启用自动扩展存档，请运行 PowerShell 中的以下Exchange Online命令。
+若要确定是否为非活动邮箱启用自动扩展存档，请运行 PowerShell 中的Exchange Online命令。
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL UserPrincipalName,AutoExpandingArchiveEnabled
@@ -117,19 +117,19 @@ Get-Mailbox -InactiveMailboxOnly | FL UserPrincipalName,AutoExpandingArchiveEnab
 
     ![启用自动扩展存档后，ArchiveQuota 和 ArchiveWarningQuota 属性将被忽略。](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
-- 您还可以使用 PowerShell 启用存档邮箱。 例如，可以在 PowerShell Exchange Online运行以下命令，为尚未启用存档邮箱的所有用户启用存档邮箱。
+- 您还可以使用 PowerShell 启用存档邮箱。 例如，可以在 PowerShell 中Exchange Online以下命令，为尚未启用存档邮箱的所有用户启用存档邮箱。
 
     ```powershell
     Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
     ```
 
-- 对于具有本地主邮箱的用户，Exchange混合部署中基于云的存档邮箱支持自动扩展存档。 但是，为基于云的存档邮箱启用自动扩展存档后，无法将存档邮箱从内部部署组织Exchange。 在任何版本的邮箱中，内部部署邮箱都不支持自动扩展Exchange Server。
+- 对于具有本地主邮箱的用户，Exchange混合部署中基于云的存档邮箱支持自动扩展存档。 但是，为基于云的存档邮箱启用自动扩展存档后，无法将存档邮箱从内部部署组织Exchange组织。 在任何版本的邮箱中，内部部署邮箱都不支持自动扩展Exchange Server。
 
-- 有关用户可用于访问存档邮箱中附加存储区域中的项目的 Outlook 客户端的列表，请参阅自动扩展存档概述中的"访问自动扩展存档中的项目的 Outlook 要求"[部分。](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)
+- 有关用户可用于访问存档邮箱中附加存储区域中的项目的 Outlook 客户端的列表，请参阅了解自动扩展存档中的"访问自动扩展存档中的项目的 Outlook 要求"部分。 [](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)
 
-- 如前所述，当您运行 **Enable-Mailbox -AutoExpandingArchive** 命令时，如果邮箱位于保留状态) 则 10 GB 将添加到用户主存档邮箱 (的存储配额和"可恢复的项目"文件夹。 这将提供额外的存储空间，直到自动扩展的存储空间预配 (最多可能需要 30 天) 。 运行 **Set-OrganizationConfig -AutoExpandingArchive** 以启用组织中所有邮箱的自动扩展存档时，不会添加此额外存储空间。 如果为整个组织启用自动扩展存档，但需要为特定用户添加额外的 10 GB 存储空间，可以针对该邮箱运行 **Enable-Mailbox -AutoExpandingArchive** 命令。 您将收到一条错误消息，指出已启用自动扩展存档，但会向邮箱添加额外的存储空间。
+- 如前所述，当您运行 **Enable-Mailbox -AutoExpandingArchive** 命令时，如果邮箱位于保留状态) 则 10 GB 将添加到用户主存档邮箱 (的存储配额和"可恢复的项目"文件夹。 这将提供额外的存储空间，直到自动扩展的存储空间预配 (可能需要 30 天) 。 运行 **Set-OrganizationConfig -AutoExpandingArchive** 以启用组织中所有邮箱的自动扩展存档时，不会添加此额外存储空间。 如果为整个组织启用自动扩展存档，但需要为特定用户添加额外的 10 GB 存储空间，可以针对该邮箱运行 **Enable-Mailbox -AutoExpandingArchive** 命令。 您将收到一条错误消息，指出已启用自动扩展存档，但会向邮箱添加额外的存储空间。
 
 > [!IMPORTANT]
 > 只有单个用户使用的邮箱或每天增长不超过 1 GB 的共享邮箱才支持自动扩展存档。 不允许使用日记、传输规则或自动转发规则将邮件复制到存档邮箱进行存档。 用户的存档邮箱只供该用户使用。 Microsoft 保留拒绝在用户的存档邮箱用于存储其他用户的存档数据或其他不当使用情况下的其他存档的权利。

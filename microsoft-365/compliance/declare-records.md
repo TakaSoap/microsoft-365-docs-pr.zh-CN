@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签声明记录。
-ms.openlocfilehash: 212c3ac6228efdaacd5bc84883c0059ca954c674
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7c1599bd40059559b9e0d19383a08fe2382e6442
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177551"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241695"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>使用保留标签声明记录
 
@@ -95,4 +95,4 @@ ms.locfileid: "60177551"
 
 ## <a name="next-steps"></a>后续步骤
 
-有关记录管理支持的方案的列表，请参阅[记录管理常见方案](get-started-with-records-management.md#common-scenarios-for-records-management)。
+有关记录管理支持的方案的列表，请参阅[记录管理常见方案](get-started-with-records-management.md#common-scenarios)。

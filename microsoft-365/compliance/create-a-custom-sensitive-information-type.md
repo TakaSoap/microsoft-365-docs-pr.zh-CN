@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在安全与合规中心内为 DLP 创建、修改、删除和测试&类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e97edc10b92b1061a8122a1b9cd9ab5ef44b01f
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 5a25293740dd856d93726e5eaf27e3a92c18af56
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213933"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241923"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自定义敏感信息类型入门
 
@@ -141,7 +141,7 @@ ms.locfileid: "62213933"
 |关键字列表中给定术语的最大长度| 50 个字符|
 |关键字列表中的最大术语数| 2048|
 |每个敏感信息类型的最大不同正则表达式数| 20|
-|关键字词典的最大大小 (压缩) | 1MB (大约 1，000，000 个字符) |
+|关键字词典的最大大小 (后压缩) | 1MB (大约 1，000，000 个字符) |
 |租户中基于关键字字典的 SIT 的最大数量|50 |
 
 > [!NOTE] 
@@ -161,7 +161,7 @@ ms.locfileid: "62213933"
 
 若要使扫描的项目满足规则条件，任何单个项中 SIT 的唯一实例数都必须介于最小值和最大值之间。 这称为实例 **计数**。
 
-- **Min** 字段：在 (项) 一项中必须找到的 SIT 的唯一实例的最小数目的下限。 min 字段支持以下值：
+- **Min** 字段：在 (项) 一项中必须找到的 SIT 的唯一实例的最小数量下限。 min 字段支持以下值：
     - 1 到 500
 - **最大** 字段：在项中可找到并仍触发匹配的 SIT 唯一实例数的上限。 max 字段支持以下值：
     - 1 到 500 - 当您要针对项中的 SIT 实例数设置一个小于或 500 的特定上限时，请使用此限制。
@@ -251,7 +251,7 @@ If Mod value != digit 8
 
 ### <a name="functional-processors-as-validators"></a>作为验证程序的功能处理器
 
-你可以对一些最常用的 SIT 使用函数处理器作为验证程序。 这允许你定义自己的正则表达式，同时确保它们通过 SIT 所需的其他检查。 例如，Func_India_Aadhar将确保您定义的自定义正则表达式传递了"印度 Aadhar"卡所需的验证逻辑。 有关可以用作验证符的 DLP 函数详细信息，请参阅 [DLP 函数查找什么](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for)。 
+你可以对一些最常用的 SIT 使用函数处理器作为验证程序。 这允许你定义自己的正则表达式，同时确保它们通过 SIT 所需的其他检查。 例如，Func_India_Aadhar定义自定义正则表达式传递了"印度 Aadhar"卡所需的验证逻辑。 有关可以用作验证符的 DLP 函数详细信息，请参阅 [DLP 函数查找什么](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for)。 
 
 ### <a name="luhn-check-validator"></a>Luhn 检查验证程序
 
@@ -293,6 +293,6 @@ If Mod value != digit 8
 >     2. “機密性が高い”、“机密的document”和“机密的 document”
 >
 > 当使用双字节连字符或双字节句号创建 regex 时，请确保像在 regex 中转义连字符或句号一样转义这两个字符。以下是供参考的示例 regex：
->    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>    -  (？<！\d)  ([4][0-9] {3} [ \- ？\-\t]*[0-9] {4}) 
 >
 > 建议在关键词列表中使用字符串匹配而不是单词匹配。

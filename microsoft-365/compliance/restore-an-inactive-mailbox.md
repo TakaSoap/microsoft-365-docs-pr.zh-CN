@@ -2,8 +2,8 @@
 title: 还原非活动邮箱
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
-description: 了解如何将 (邮箱) 邮箱的内容还原到现有邮箱或将其合并。
+description: 了解如何将 (邮箱的内容) 或合并到现有邮箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7aeea08b692dc1bfb77a225a27f3dfc1f1df899e
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: aaf0ce7f67ae0146beceeeb667263908d7cff75d
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320811"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241547"
 ---
 # <a name="restore-an-inactive-mailbox"></a>还原非活动邮箱
 
-非活动 (邮箱邮箱是一种软删除) ，用于在前员工离开组织后保留其电子邮件。 如果另一名员工接替离职员工的工作职责，或者该员工回到您的组织，有两种方法可以将非活动邮箱的内容提供给用户：
+非活动 (邮箱邮箱是一种软删除) 邮箱类型，用于在前员工离开组织后保留其电子邮件。 如果另一名员工接替离职员工的工作职责，或者该员工回到您的组织，有两种方法可以将非活动邮箱的内容提供给用户：
 
 - **还原非活动邮箱** 如果另一名员工接替离职员工的工作职责，或者如果另一个用户需要访问非活动邮箱的内容，您可以将非活动邮箱的内容还原（或 合并）到某个现有邮箱。您还可以从非活动邮箱还原存档。还原后，非活动邮箱将保留，并仍保留为非活动状态。本主题介绍还原非活动邮箱的过程。
 
@@ -44,7 +44,7 @@ ms.locfileid: "61320811"
 
 - 您必须使用 PowerShell Exchange Online还原非活动邮箱。 不能使用 Exchange 管理中心 (EAC)。 有关分步说明，请参阅[连接 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 在 PowerShell Exchange Online以下命令，获取组织中非活动邮箱的标识信息。
+- 在 PowerShell 中Exchange Online以下命令，获取组织中非活动邮箱的标识信息。
 
   ```powershell
   Get-Mailbox -InactiveMailboxOnly | Format-List Name,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
@@ -52,7 +52,7 @@ ms.locfileid: "61320811"
 
   使用此命令返回的信息来标识和还原特定的非活动邮箱。
 
-- 有关非活动邮箱详细信息，[请参阅非活动](inactive-mailboxes-in-office-365.md)Office 365。
+- 有关非活动邮箱的信息，[请参阅非活动](inactive-mailboxes-in-office-365.md)Office 365。
 
 ## <a name="restore-inactive-mailboxes"></a>还原非活动邮箱
 
