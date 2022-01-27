@@ -17,17 +17,18 @@ ms.collection:
 - m365solution-overview
 - m365solution-mcafeemigrate
 - m365solution-symantecmigrate
-ms.topic: conceptual
+- m365initiative-defender-endpoint
+ms.topic: overview
 ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 5e40d1b7d8470d6d5e76202aa85324b690b8eeaa
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: eb0971c6f5b8fd8bf37f3d33cb65cff8d331e0d0
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221445"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245299"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>将非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
 
@@ -52,7 +53,7 @@ ms.locfileid: "61221445"
 |--|--|
 |[准备迁移](switch-to-mde-phase-1.md)|在 [" **准备"** 阶段](switch-to-mde-phase-1.md)： <br/>1。更新组织的设备。<br/>2. 获取适用于终结点的 Defender。<br/>3. 规划角色和权限，并授予对 Microsoft 365 Defender 的访问权限。<br/>4. 配置设备代理和 Internet 设置，以启用组织设备与适用于终结点的 Defender 之间的通信。 |
 |[设置适用于终结点的 Defender](switch-to-mde-phase-2.md)|在 [设置 **阶段**：](switch-to-mde-phase-2.md) <br/>1. 启用/重新安装Microsoft Defender 防病毒，并设置为被动模式。<br/>2. 为终结点配置 Defender。<br/>3. 将 Defender for Endpoint 添加到现有解决方案的排除列表中。<br/>4. 将现有解决方案添加到列表的排除Microsoft Defender 防病毒。<br/>5. 设置设备组、集合和组织单位。<br/>6. 配置反恶意软件策略和实时保护设置。|
-|[载入到适用于终结点的 Defender](switch-to-mde-phase-3.md)|在 [载入 **阶段**](switch-to-mde-phase-3.md)： <br/>1. 将设备载入到 Defender for Endpoint。<br/>2. 运行检测测试。<br/>3. 确认Microsoft Defender 防病毒被动模式下运行。<br/>4. 获取更新Microsoft Defender 防病毒。<br/>5. 卸载现有的终结点保护解决方案。<br/>6. 确保 Defender for Endpoint 正常工作。|
+|[载入到适用于终结点的 Defender](switch-to-mde-phase-3.md)|在 [载入 **阶段**](switch-to-mde-phase-3.md)： <br/>1. 将设备载入到 Defender for Endpoint。<br/>2. 运行检测测试。<br/>3. 确认Microsoft Defender 防病毒被动模式运行。<br/>4. 获取更新Microsoft Defender 防病毒。<br/>5. 卸载现有的终结点保护解决方案。<br/>6. 确保 Defender for Endpoint 正常工作。|
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中包含哪些内容？
 
@@ -62,7 +63,7 @@ ms.locfileid: "61221445"
 
 |功能|说明|
 |---|---|
-|[威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)|威胁& 漏洞管理功能有助于识别、评估和修正跨终结点（如 (设备）中的) 。|
+|[威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)|威胁& 漏洞管理功能有助于识别、评估和修正终结点中的 (，如) 。|
 |[减少攻击面](overview-attack-surface-reduction.md)|攻击面减少规则有助于保护组织的设备和应用程序免受网络威胁和攻击。|
 |[下一代保护](microsoft-defender-antivirus-in-windows-10.md)|下一代保护包括Microsoft Defender 防病毒帮助阻止威胁和恶意软件。|
 |[终结点检测和响应](overview-endpoint-detection-response.md)|终结点检测和响应功能可检测、调查和响应入侵尝试和主动泄露。|

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3b38fd7f2395533c318a8d61a499624712de41e2
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: e14eec3cd24604a1aedc12683b37d12c2fb6f377
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213669"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241767"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -81,7 +81,7 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 
 **脚注:**
 
-<sup>\*</sup> 目前，不包括用于删除标签或降低分类级别的两端对齐文本
+<sup>\*</sup> 当前推出两端对齐文本以删除标签或降低分类级别
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook 中的敏感度标签功能
 

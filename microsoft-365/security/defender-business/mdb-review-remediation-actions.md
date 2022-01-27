@@ -1,5 +1,5 @@
 ---
-title: '查看 Microsoft Defender for Business 预览版 (修正) '
+title: '查看 Microsoft Defender for Business 预览版中的 (操作) '
 description: 查看自动采取的修正或在操作中心等待审批的修正
 search.appverid: MET150
 author: denisebmsft
@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: c67746803c9b094b6a87d9b0ab6273b883ce4cd1
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- m365initiative-defender-business
+ms.openlocfilehash: 6f59adc4c7d65748a9b1c0bfa0c33c3604b60bc2
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936338"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245347"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>查看操作中心中的修正操作
 
@@ -68,6 +69,6 @@ Microsoft Defender for Business (预览) 包括一些修正操作。 这些操�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [响应和缓解 Microsoft Defender for Business 预览版 (中) ](mdb-respond-mitigate-threats.md)
+- [响应和缓解 Microsoft Defender for Business 预览版 (中的威胁) ](mdb-respond-mitigate-threats.md)
 
 - [在 Microsoft Defender for Business 预览版中 (设备) ](mdb-manage-devices.md)

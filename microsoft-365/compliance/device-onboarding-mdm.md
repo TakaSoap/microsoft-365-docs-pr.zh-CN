@@ -1,5 +1,5 @@
 ---
-title: 使用Windows 10管理工具Windows 11移动设备和移动设备
+title: 使用移动设备管理工具载入 Windows 10 和 Windows 11 设备
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -15,24 +15,24 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: 使用移动设备管理工具在设备上部署配置包，以便它们可以载入到服务。
-ms.openlocfilehash: 1454afceb8537cdb88b75f99924a5d6475e117cc
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 1db4441f6411d6e3c623dbf5daa31c4028729e7e
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950809"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244891"
 ---
-# <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>使用Windows 10管理工具Windows 11移动设备和移动设备
+# <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具载入 Windows 10 和 Windows 11 设备
 
 **适用于：**
 
-- [Microsoft 365 DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
+- [Microsoft 365终结点数据丢失防护 （DLP）](./endpoint-dlp-learn-about.md)
 - [内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 可以使用移动设备管理 (MDM) 配置设备。 Microsoft 365信息保护通过提供创建OMA-URIs来管理设备的策略，从而支持 MDM。
 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 如果你使用的是 Microsoft Intune，则必须已注册设备 MDM。 否则，设置将不会成功应用。 
 
 有关使用移动设备启用 MDM Microsoft Intune，请参阅设备[注册 (Microsoft Intune) 。 ](/mem/intune/enrollment/device-enrollment)
@@ -57,9 +57,11 @@ ms.locfileid: "60950809"
 
 3. 在"**部署方法"** 字段中，选择 **"移动设备管理/Microsoft Intune"。**
 
-4. 单击 **"下载** 程序包"，然后保存.zip文件。
+4. 单击 **下载程序包**，然后保存.zip文件。
 
-5. 将文件.zip文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding 的文件*。
+5. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding 的文件*。
+
+
 
 6. 使用Microsoft Intune配置策略部署以下受支持的 OMA-URI 设置。
 
@@ -68,8 +70,8 @@ ms.locfileid: "60950809"
     Date type: String
     Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
     ```
-
-有关策略设置Microsoft Intune，请参阅 Windows 10[中的策略Microsoft Intune。](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+> [!NOTE]
+> 如果已配置 Microsoft Defender for Endpoint，你可以 **启用设备** 载入，并且不再需要步骤 6。
 
 > [!NOTE]
 > " **载出设备的运行状况状态"策略** 使用只读属性，并且无法修正。
@@ -79,7 +81,7 @@ ms.locfileid: "60950809"
 
 ## <a name="related-topics"></a>相关主题
 - [使用Windows 10载入设备](device-onboarding-gp.md)
-- [使用Windows 10设备载入Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
+- [使用Windows 10载入设备Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
 - [使用本地脚本载入 Windows 10 设备](device-onboarding-script.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](device-onboarding-vdi.md)
 - [Microsoft Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

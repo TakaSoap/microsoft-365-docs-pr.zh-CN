@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 368266545b78cf86ab6f76f35239671bb28db2be
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- m365initiative-defender-business
+ms.openlocfilehash: 1bba8ee25e172cf893bd337e3f15198110873e1d
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61944828"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245287"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business-preview"></a>在 Microsoft Defender for Business 预览版中查看 (编辑) 
 
@@ -32,7 +33,7 @@ ms.locfileid: "61944828"
 
 在 Microsoft Defender for Business (预览) 中，安全设置通过策略进行配置。 在 Defender for Business 预览版中，有两种主要 (策略) ：
 
-- **下一代保护策略**，用于确定Microsoft Defender 防病毒和其他威胁防护功能的配置方式
+- **下一代保护** 策略 ，用于确定Microsoft Defender 防病毒和其他威胁防护功能的配置方式
 - **防火墙** 策略 ，用于确定允许哪些网络流量流入和流出公司设备
 
 **本文介绍如何：**
@@ -72,7 +73,7 @@ ms.locfileid: "61944828"
 
    - 若要使所选设备组保持为选中状态，请选择"下一 **步"。**
    - 若要从策略中删除设备组，请选择"删除 **"。**
-   - 若要设置新设备组，请选择" **创建新组**"，然后设置设备组。  (若要获取有关此任务的帮助，请参阅 Microsoft Defender [for Business ](mdb-create-edit-device-groups.md)中的设备组 (预览版) .) 
+   - 若要设置新设备组，请选择" **创建新组**"，然后设置设备组。  (若要获取有关此任务的帮助，请参阅 Microsoft Defender for Business 中的设备组 ([预览版) ](mdb-create-edit-device-groups.md).) 
    - 若要将策略应用于其他设备组，请选择"**使用现有组"。**
 
    指定应接收策略的设备组后，选择"下一步 **"。**
@@ -95,7 +96,7 @@ ms.locfileid: "61944828"
 
 2. 在导航窗格中，选择"**设备配置"。** 策略按操作系统策略 (，Windows **客户端**) 策略类型 (如下一代保护和 **防火墙) 。**  
 
-3. 选择操作系统选项卡 (例如，Windows客户端) ，然后查看下一代 **保护策略** 的列表。 
+3. 选择操作系统选项卡 (例如，Windows客户端) ，然后查看下一代保护 **策略** 的列表。 
 
 4. 在 **"下一代保护"或****"防火墙"下**，选择 **"+ 添加"。**
 
@@ -132,6 +133,6 @@ ms.locfileid: "61944828"
 
 - [在 Microsoft Defender for Business 预览版中查看 (事件) ](mdb-view-manage-incidents.md)
 
-- [响应和缓解 Microsoft Defender for Business 预览版 (中) ](mdb-respond-mitigate-threats.md)
+- [响应和缓解 Microsoft Defender for Business 预览版 (威胁) ](mdb-respond-mitigate-threats.md)
 
 - [查看操作中心中的修正操作](mdb-review-remediation-actions.md)

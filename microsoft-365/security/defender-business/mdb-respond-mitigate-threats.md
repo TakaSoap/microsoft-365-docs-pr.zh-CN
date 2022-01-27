@@ -1,5 +1,5 @@
 ---
-title: '在 Microsoft Defender for Business 预览版中响应 (缓解) '
+title: '响应和缓解 Microsoft Defender for Business 预览版 (威胁) '
 description: 检测到威胁时，你可以采取措施来响应和缓解这些威胁。
 search.appverid: MET150
 author: denisebmsft
@@ -16,14 +16,15 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 6ed538eac8d60acbd8ff2947207c79dfb7d9e482
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- m365initiative-defender-business
+ms.openlocfilehash: 16321f7941f44f599f3b1940bdbe56471a6d6311
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937036"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244759"
 ---
-# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business-preview"></a>在 Microsoft Defender for Business 预览版中响应 (缓解) 
+# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business-preview"></a>响应和缓解 Microsoft Defender for Business 预览版 (威胁) 
 
 > [!IMPORTANT]
 > Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
@@ -43,7 +44,7 @@ ms.locfileid: "61937036"
 
 2. 请注意主页上的卡片。 卡片一目了然地显示检测到的威胁数，以及受影响的用户帐户、 (终结点) 和其他资产。 下图是你可能会看到的卡片示例：
 
-   :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="客户门户中的Microsoft 365 Defender屏幕截图":::
+   :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Microsoft 365 Defender 门户中的Microsoft 365 Defender屏幕截图":::
 
 3. 选择卡片上的按钮或链接以查看详细信息并采取措施。 例如，我们的 **"处于** 风险中的设备"卡片包含" **查看详细信息"** 按钮。 选择该按钮将我们导航到 **"设备清单** "页，如下图所示：
 
@@ -59,7 +60,7 @@ ms.locfileid: "61937036"
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="所选设备的可用操作屏幕截图":::
 
-6. 选择可用操作。 例如，你可以选择运行 **防病毒扫描**，这Microsoft Defender 防病毒在设备上启动快速扫描。 或者，可以选择启动 **自动调查** 以在设备上触发自动调查。
+6. 选择可用操作。 例如，你可以选择"运行 **防病毒扫描**"，这Microsoft Defender 防病毒在设备上启动快速扫描。 或者，可以选择启动 **自动调查** 以在设备上触发自动调查。
 
 ## <a name="next-steps"></a>后续步骤
 

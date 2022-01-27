@@ -14,13 +14,15 @@ ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
-ms.openlocfilehash: e05655aa088a1ad87b9452f255c5b44a31647315
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: b0d2edb53df4b12c66ad010e536ede033996810f
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941188"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244603"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-and-plan-2"></a>Microsoft Defender for Endpoint Plan 1 和 Plan 2
 
@@ -41,7 +43,7 @@ Microsoft Defender for Endpoint 是企业终结点安全平台，旨在帮助企
 | [Defender for Endpoint 计划 1](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) |
 |:---|:---|
 | [下一代保护](defender-endpoint-plan-1.md#next-generation-protection) <br/> (包括反恶意软件和防病毒)  <p> [减少攻击面](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [手动响应操作](defender-endpoint-plan-1.md#manual-response-actions) <p> [集中管理](defender-endpoint-plan-1.md#centralized-management) <p>[安全报告](defender-endpoint-plan-1.md#reporting) <p>[API](defender-endpoint-plan-1.md#apis)  | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)， plus： <p> [设备发现](device-discovery.md) <p> [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md) <p> [自动调查和响应](automated-investigations.md) <p> [高级搜寻](advanced-hunting-overview.md) <p> [终结点检测和响应](overview-endpoint-detection-response.md) <p> [Microsoft 威胁专家](microsoft-threat-experts.md)  |
-| [支持 Windows 10、iOS、Android OS 和 macOS 设备](defender-endpoint-plan-1.md#cross-platform-support) | 支持Windows (客户端和服务器) 和非Windows平台<br/>  (macOS、iOS、Android 和 Linux)  |
+| [支持 Windows 10、iOS、Android OS 和 macOS 设备](defender-endpoint-plan-1.md#cross-platform-support) | 支持Windows (客户端和服务器) 非Windows平台<br/>  (macOS、iOS、Android 和 Linux)  |
 | 若要尝试 Defender for Endpoint Plan 1，请访问 [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 。 | 若要尝试 Defender for Endpoint Plan 2，请访问 [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial) 。 |
 
 ## <a name="next-steps"></a>后续步骤

@@ -1,6 +1,6 @@
 ---
-title: 管理Microsoft Defender 防病毒更新和应用基线
-description: 管理Microsoft Defender 防病毒保护和产品更新。
+title: 管理Microsoft Defender 防病毒更新并应用基线
+description: 管理 Microsoft Defender 防病毒如何接收保护和产品更新。
 keywords: 更新， 安全基线， 保护， 计划更新， 强制更新， 移动更新， wsus
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,22 +16,24 @@ ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
 ms.date: 01/06/2022
-ms.collection: M365-security-compliance
-ms.openlocfilehash: a97c221b9b03d1b454997cb8474fad4b4630cd87
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: 752a36abfd3c142cfa40a31715bd36fec059350e
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62073684"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245335"
 ---
-# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新和应用基线
+# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
 **适用于：**
 
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender 防病毒
 
-使Microsoft Defender 防病毒保持最新状态至关重要，可确保你的设备具有抵御新的恶意软件和攻击技术所需的最新技术和功能。 确保更新防病毒保护，即使Microsoft Defender 防病毒处于被动[模式。](microsoft-defender-antivirus-compatibility.md) 有两种类型的更新与使Microsoft Defender 防病毒保持最新有关：
+确保Microsoft Defender 防病毒保持最新状态至关重要，以确保你的设备具有抵御新的恶意软件和攻击技术所需的最新技术和功能。 确保更新防病毒保护，即使Microsoft Defender 防病毒处于被动[模式。](microsoft-defender-antivirus-compatibility.md) 有两种类型的更新与使Microsoft Defender 防病毒保持最新有关：
 
 - 安全智能更新
 - 产品更新
@@ -48,7 +50,7 @@ Microsoft Defender 防病毒云[提供的](cloud-protection-microsoft-defender-a
 > - Microsoft Defender 防病毒：KB2267602
 > - System Center Endpoint Protection：KB2461484
 
-云提供的保护始终打开，并且需要与 Internet 的活动连接以正常运行。 安全智能更新按计划节奏进行， (策略策略配置) 。 有关详细信息，请参阅在 Microsoft[云中Microsoft Defender 防病毒。](cloud-protection-microsoft-defender-antivirus.md)
+云提供的保护始终打开，并且需要与 Internet 的活动连接以正常运行。 安全智能更新按计划节奏进行， (策略策略配置) 。 有关详细信息，请参阅使用[Microsoft 云提供的保护](cloud-protection-microsoft-defender-antivirus.md)Microsoft Defender 防病毒。
 
 有关最近安全智能更新的列表，请参阅安全智能更新[Microsoft Defender 防病毒和其他 Microsoft 反恶意软件](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
 
@@ -64,7 +66,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 - [Microsoft Endpoint Configuration Manager](/configmgr/sum/understand/software-updates-introduction)
 - 你用于部署 Microsoft 和Windows终结点更新的常用方法。
 
-有关详细信息，请参阅管理保护[更新Microsoft Defender 防病毒源](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
+有关详细信息，请参阅管理保护Microsoft Defender 防病毒[源](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
 
 > [!NOTE]
 > - 每月更新会分期发布，从而在 Window Server Update Services 中显示 [多个程序包](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)。
@@ -97,7 +99,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 ### <a name="whats-new"></a>最近更新
 
 - 提高了服务器上某些密集方案的 CPU 使用率Exchange效率
-- 在 Defender PowerShell 模块的 Get-MpComputerStatus添加了新设备控制状态字段。 有关详细信息，请参阅[Microsoft Defender for Endpoint Device Control Removable 存储 Access Control](device-control-removable-storage-access-control.md)。
+- 在 Defender PowerShell 模块的 Get-MpComputerStatus下添加了新设备控制状态字段。 有关详细信息，请参阅[Microsoft Defender for Endpoint Device Control Removable 存储 Access Control](device-control-removable-storage-access-control.md)。
 - 修复了在使用 `SharedSignatureRoot` PowerShell 设置时无法删除值的问题
 - 修复 [了即使](prevent-changes-to-security-settings-with-tamper-protection.md) Microsoft Defender for Endpoint 指示已启用防篡改保护，但无法启用篡改保护的 Bug
 - 向 Microsoft Defender 防病毒 工具的性能分析器添加了可支持性和Microsoft Defender 防病毒修复。 有关详细信息，请参阅[Performance analyzer for Microsoft Defender 防病毒](tune-performance-defender-antivirus.md)。   
@@ -167,8 +169,8 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 
 ### <a name="whats-new"></a>最近更新
 - 对行为监视引擎的改进
-- 发布了适用于[Microsoft Defender 防病毒 的新性能分析器](tune-performance-defender-antivirus.md)
-- Microsoft Defender 防病毒加载恶意 DLL
+- 发布了新的[性能分析器Microsoft Defender 防病毒](tune-performance-defender-antivirus.md)
+- Microsoft Defender 防病毒加载恶意 DLL 进行了强化
 - Microsoft Defender 防病毒 TrustedInstaller 旁路进行强化
 - 扩展文件更改通知以包含有关使用 Human-Operated 勒索软件 (HumOR) 
 
@@ -186,7 +188,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 
 ### <a name="whats-new"></a>最近更新
 - 为可移植设备Windows设备控制支持
-- 默认情况下， (PUA) 保护中可能不需要的应用程序为使用者打开 (看到默认情况下，可能不需要的应用将被阻止[](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)) 
+- 默认情况下， (PUA) 保护中可能不需要的应用程序为使用者打开 (看到默认情况下，可能会不需要的应用被阻止[](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)) 
 - 组策略对象托管系统的计划扫描将遵循用户配置的扫描时间
 - 对行为监视引擎的改进
 
@@ -296,7 +298,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 - 提高了凭据窃取尝试的可见性
 - 改进服务中的反Microsoft Defender 防病毒功能
 - 改进了对 x64 ARM的支持
-- 修复：EDR执行初始检测后阻止通知仍保留在威胁历史记录中
+- 修复：EDR执行初始检测后，阻止通知仍保留在威胁历史记录中
 
 ### <a name="known-issues"></a>已知问题
 无已知问题
@@ -493,14 +495,14 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 - 改进进程阻止通知
 
 ### <a name="known-issues"></a>已知问题
-[**Fixed**]Microsoft Defender 防病毒运行扫描时跳过文件。
+[**Fixed**]Microsoft Defender 防病毒扫描时跳过文件。
 
 <br/>
 </details>
 
 <details>
 
-<summary> 2020 年 2 月 (平台：- |引擎：1.1.16800.2) </summary>
+<summary> 2020 年 2 月 (平台： - |引擎：1.1.16800.2) </summary>
 
 
 &ensp;安全智能更新版本 **：1.311.4.0**<br/>
@@ -529,7 +531,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 
 ### <a name="whats-new"></a>最近更新
 
-- 修复了 WS2016 上的 BSOD 与Exchange
+- 修复了 WS2016 上的 BSOD 与 Exchange
 - 当 TMP 重定向到网络路径时支持平台更新
 - 平台和引擎版本已添加到 [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
 - 将紧急签名更新扩展到 [被动模式](./microsoft-defender-antivirus-compatibility.md)
@@ -545,7 +547,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 > - 对于有挂起问题的系统，具有重新启动标志;
 > - 在 2020 年 4 月重新发布，并且不会被更新的更新所取代，以保持将来的可用性;
 > - 因重启要求而分类为更新;和
-> - 仅通过更新[Windows提供](https://support.microsoft.com/help/4027667/windows-10-update)。
+> - 仅提供更新[Windows提供](https://support.microsoft.com/help/4027667/windows-10-update)。
 <br/>
 </details>
 
@@ -581,16 +583,16 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 
 \*将继续为从 Windows 10 版本升级提供技术支持 (请参阅 Windows 10 版本) [到](#platform-version-included-with-windows-10-releases)最新平台版本的平台版本。
 
-在技术支持 (仅在) 阶段，商业上合理的支持事件将通过 Microsoft 客户服务 & 支持和 Microsoft 的托管支持产品/服务 (如 Premier Support) 提供。 如果支持事件需要上报开发以进一步提供指导、需要非安全更新或需要安全更新，将要求客户升级到最新平台版本或中间更新 (*) 。
+在技术支持 (仅在) 阶段，商业上合理的支持事件将通过 Microsoft 客户服务 & 支持和 Microsoft 的托管支持产品/服务 (如 Premier Support) 提供。 如果支持事件需要上报开发以进一步提供指导、需要非安全更新或需要安全更新，将要求客户升级到最新平台版本或中间 (*) 。
 
 > [!NOTE]
 > 如果要手动部署 Microsoft Defender 防病毒 平台更新，或者如果你使用脚本或非 Microsoft 管理产品来部署 Microsoft Defender 防病毒 平台更新，请确保在安装最新版本的平台更新 `4.18.2001.10` (N-2) 之前从[Microsoft](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10)更新目录中安装版本。
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>版本中包含的平台Windows 10版本
 
-下表提供了最新 Microsoft Defender 防病毒 发行版附带的 Windows 10 平台和引擎版本：<br/><br/>
+下表提供了最新 Microsoft Defender 防病毒 版本附带的新平台和Windows 10版本：<br/><br/>
 
-|Windows 10版本  |平台版本  |引擎版本 |支持阶段 |
+|Windows 10发布  |平台版本  |引擎版本 |支持阶段 |
 |:---|:---|:---|:---|
 |2004 (20H1/20H2)  |4.18.1909.6 |1.1.17000.2 | 仅支持技术 (升级)  |
 |1909 (19H2)  |4.18.1902.5 |1.1.16700.3 | 仅支持技术 (升级)  |
@@ -607,7 +609,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 
 我们建议使用最新的防病毒和反恶意软件更新更新 Windows 10 (Enterprise、Pro 和家庭版) 、Windows Server 2019、Windows Server 2022 和 Windows Server 2016 操作系统安装映像。 使操作系统安装映像保持最新有助于避免保护差距。
 
-有关详细信息，请参阅适用于操作系统[安装Windows的](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)Microsoft Defender 更新。
+有关详细信息，请参阅适用于操作系统[安装映像Windows Microsoft Defender 更新](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
 
 <details>
 <summary>20220105.1</summary>
@@ -853,10 +855,10 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 
 | 文章 | 说明  |
 |:---|:---|
-|[适用于操作系统安装映像Windows Microsoft Defender 更新](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | 查看适用于操作系统安装映像的反恶意软件更新程序包 (WIM 和 VHD 文件) 。 获取 Microsoft Defender 防病毒、Windows 10 (Enterprise、Pro 以及家庭版) 、Windows Server 2019、Windows Server 2022 和 Windows Server 2016 安装映像的更新。  |
+|[适用于操作系统安装映像Windows Microsoft Defender 更新](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | 查看适用于操作系统安装映像的反恶意软件更新程序包 (WIM 和 VHD 文件) 。 获取 Microsoft Defender 防病毒 Windows 10 (Enterprise、Pro 和家庭版) 、Windows Server 2019、Windows Server 2022 Windows Server 2016安装映像的更新。  |
 |[管理保护更新的下载和应用方式](manage-protection-updates-microsoft-defender-antivirus.md) | 保护更新可以通过多个源提供。 |
 |[管理何时应下载和应用保护更新](manage-protection-update-schedule-microsoft-defender-antivirus.md) | 你可以计划应下载保护更新的时间。 |
 |[管理过期终结点的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md) | 如果终结点错过更新或计划扫描，可以在用户下次登录时强制进行更新或扫描。 |
 |[管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md) | 你可以将保护更新设置为在启动时或在某些云提供的保护事件之后下载。 |
 |[管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| 你可以指定对移动设备和虚拟机特别有用的设置（如是否应该使用电池电源进行更新）。 |
-| [适用于传感器的 Microsoft Defender EDR更新](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | 你可以更新 EDR 传感器 (MsSense.exe) 包含在 2021 年发布的新 Microsoft Defender for Endpoint 统一解决方案包中。   |
+| [适用于传感器的 Microsoft Defender EDR更新](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | 你可以更新 2021 EDR Microsoft Defender for Endpoint 统一解决方案包中包含的 EDR 传感器 (MsSense.exe) 。   |

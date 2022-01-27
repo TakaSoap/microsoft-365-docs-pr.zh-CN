@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 3453645f9c28149bedf617e21f28c89d828028d6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- m365initiative-defender-business
+ms.openlocfilehash: 57d27a616917c19f24bab35a08d3b067888c0b23
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937372"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245407"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business-preview"></a>设置和配置 Microsoft Defender for Business (预览) 
 
@@ -39,7 +40,7 @@ Microsoft Defender for Business (预览) 提供了简化的安装和配置体验
 
 ## <a name="the-setup-and-configuration-process"></a>安装和配置过程
 
-:::image type="content" source="media/mdb-setup-process-2.png" alt-text="Microsoft Defender for Business 预览版 (的安装和) 。":::
+:::image type="content" source="media/mdb-setup-process-2.png" alt-text="Microsoft Defender for Business 预览版 (和配置) 。":::
 
 | 步骤  | 文章 | 说明  |
 |---------|---------|--------|
@@ -53,5 +54,5 @@ Microsoft Defender for Business (预览) 提供了简化的安装和配置体验
 
 继续：
 
-- [步骤 1：查看 Microsoft Defender for Business (预览版) ](mdb-requirements.md)
+- [步骤 1：查看 Microsoft Defender for Business 预览版 (的要求) ](mdb-requirements.md)
 

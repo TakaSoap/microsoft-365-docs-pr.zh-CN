@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7cb9a37cd97a34d6e63082ad0c9f45a374bf98ae
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: e3f4efb5c52acb40ecb30ac17a8b144de9eaa106
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165998"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245383"
 ---
 # <a name="take-response-actions-on-a-file"></a>对文件执行响应操作
 
@@ -154,7 +154,7 @@ ms.locfileid: "61165998"
 
 ### <a name="download-quarantined-files"></a>下载隔离文件
 
-已由安全Microsoft Defender 防病毒安全团队隔离的文件将按照你的提交配置示例以合规[方式保存](enable-cloud-protection-microsoft-defender-antivirus.md)。 安全团队可以通过"下载文件"按钮直接从文件的详细信息页面下载文件。 **默认情况下，此预览功能为"开"。**
+你的安全团队或Microsoft Defender 防病毒隔离的文件将按照你的提交配置示例以合规[方式保存](enable-cloud-protection-microsoft-defender-antivirus.md)。 安全团队可以通过"下载文件"按钮直接从文件的详细信息页面下载文件。 **默认情况下，此预览功能为"开"。**
 
 位置取决于组织的地理位置设置 (欧盟、英国或美国) 。 每个组织仅收集一次隔离文件。 若要详细了解 Microsoft 数据保护，请通过 服务信任门户了解 https://aka.ms/STP 。
 
@@ -187,10 +187,10 @@ ms.locfileid: "61165998"
 
 > [!IMPORTANT]
 >
-> - 如果你的组织使用云保护并启用云保护Microsoft Defender 防病毒此功能可用。 有关详细信息，请参阅管理 [云提供的保护](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+> - 如果你的组织使用云保护Microsoft Defender 防病毒且云保护已启用，此功能可用。 有关详细信息，请参阅管理 [云提供的保护](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 >
 > - 反恶意软件客户端版本必须为 4.18.1901.x 或更高版本。
-> - 此功能旨在防止从 (下载可疑的恶意软件或) 恶意文件。 它当前支持可移植的可执行 (PE) _文件，包括__.exe和.dll_ 文件。 覆盖范围将随着时间的推移而延长。
+> - 此功能旨在防止从 web (可疑的恶意软件) 恶意文件。 它目前支持可移植的可执行 (PE) _文件，包括__.exe和.dll_ 文件。 覆盖范围将随着时间的推移而延长。
 > - 此响应操作适用于 Windows 10 版本 1703 或更高版本以及 Windows 11。
 > - 如果在允许或阻止操作之前文件分类存在于设备的缓存中，则不能对文件执行允许或阻止功能。
 
@@ -201,7 +201,7 @@ ms.locfileid: "61165998"
 
 ### <a name="enable-the-block-file-feature"></a>启用阻止文件功能
 
-若要开始阻止文件，首先需要打开"[](advanced-features.md)阻止或允许"设置。
+若要开始阻止文件，首先需要打开"阻止或允许"[功能设置。  ](advanced-features.md)
 
 ### <a name="allow-or-block-file"></a>允许或阻止文件
 
@@ -239,7 +239,7 @@ ms.locfileid: "61165998"
 网络安全调查通常由警报触发。 警报与一个或多个观察到的文件相关，这些文件通常是新的或未知的。 选择文件后，你将看到文件视图，可在其中查看文件的元数据。 若要丰富与文件相关的数据，可以提交文件进行深入分析。
 
 深度分析功能在安全的、完全检测的云环境中执行文件。 深度分析结果显示文件的活动、观察到的行为以及关联的项目，例如丢弃的文件、注册表修改以及与 IP 的通信。
-深度分析当前支持对可移植可执行文件 (PE) 文件 _(包括.exe_ 和 _.dll文件_) 。
+深度分析目前支持对可移植可执行文件 (PE) 文件 _(包括.exe_ 和 _.dll文件_) 。
 
 文件的深入分析需要几分钟。 文件分析完成后，"深入分析"选项卡将更新以显示摘要以及最新可用结果的日期和时间。
 
@@ -251,7 +251,7 @@ ms.locfileid: "61165998"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
-**当文件在** Defender for Endpoint 后端示例集合中可用时或在支持提交到深入分析的 Windows 10 设备上观测到该文件时，将启用提交进行深度分析。
+**当文件在** Defender for Endpoint 后端示例集合中可用时，或在支持提交到深入分析的 Windows 10 设备上观察到该文件时，将启用提交进行深度分析。
 
 > [!NOTE]
 > 只能自动收集Windows 10和Windows 11文件。
@@ -274,7 +274,7 @@ ms.locfileid: "61165998"
    ![只能在文件详细信息部分提交 PE 文件。](images/submit-file.png)
 
    > [!NOTE]
-   > 仅支持 PE _文件，包括_.exe和 _.dll_ 文件。
+   > 仅支持 PE _文件，包括__.exe和.dll_ 文件。
 
    将显示一个进度栏，并提供有关分析的不同阶段的信息。 然后，您可以在分析完成时查看报告。
 
@@ -301,7 +301,7 @@ ms.locfileid: "61165998"
 
 如果在尝试提交文件时遇到问题，请尝试以下每个疑难解答步骤。
 
-1. 确保该文件是 PE 文件。 PE 文件 _通常.exe或__.dll可执行_ (或应用程序的扩展) 。
+1. 确保该文件是 PE 文件。 PE 文件 _通常具有.exe_ 或.dll可执行 _(_ 应用程序的扩展) 。
 
 2. 确保服务具有对文件的访问权限，它仍然存在，并且尚未损坏或修改。
 
@@ -320,10 +320,10 @@ ms.locfileid: "61165998"
 
 5. 通过组策略更改组织单位。 有关详细信息，请参阅使用 [组策略配置](configure-endpoints-gp.md)。
 
-6. 如果这些步骤无法解决问题，请与[winatp@microsoft.com。](mailto:winatp@microsoft.com)
+6. 如果这些步骤无法解决问题，请与联系[winatp@microsoft.com。](mailto:winatp@microsoft.com)
 
 ## <a name="related-topics"></a>相关主题
 
 - [在设备上执行响应操作](respond-machine-alerts.md)
 - [调查文件](investigate-files.md)
-- [Microsoft Defender for Endpoint Plan 1 中的手动响应操作 (预览) ](defender-endpoint-plan-1.md#manual-response-actions)
+- [Microsoft Defender 终结点计划 1 中的手动响应操作](defender-endpoint-plan-1.md#manual-response-actions)

@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 53bdc9a2da917a16a27b48f1420ffbbb89cdbd47
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- m365initiative-defender-business
+ms.openlocfilehash: 91478d467fa0f7e3a0b5f6b67aeaf2fe5b34f497
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933319"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244555"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>在 Microsoft Defender for Business 预览版中 (设备) 
 
@@ -52,13 +53,13 @@ ms.locfileid: "61933319"
 
 3. 选择设备以打开其飞出面板，可在其中了解有关其状态和采取措施的更多信息。 
 
-   如果你尚未列出任何设备，将设备载入 Microsoft [Defender for Business (预览) ](mdb-onboard-devices.md)
+   如果你尚未列出任何设备，将设备载入 Microsoft [Defender for Business (预览版) ](mdb-onboard-devices.md)
 
 ## <a name="take-action-on-a-device-that-has-threat-detections"></a>在具有威胁检测的设备上采取措施
 
 :::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="包含详细信息和可用操作选定设备的屏幕截图":::
 
-1. 在Microsoft 365 Defender门户 () 导航窗格中，选择"设备清单 [https://security.microsoft.com](https://security.microsoft.com) **"。** 
+1. 在Microsoft 365 Defender门户 () "导航窗格中，选择"设备 [https://security.microsoft.com](https://security.microsoft.com) **清单"。** 
 
 2. 选择设备以打开其飞出面板，并查看显示的信息。
 
@@ -78,7 +79,7 @@ ms.locfileid: "61933319"
 
 - [在 Microsoft Defender for Business 预览版中查看 (事件) ](mdb-view-manage-incidents.md)
 
-- [响应和缓解 Microsoft Defender for Business 预览版 (中) ](mdb-respond-mitigate-threats.md)
+- [响应和缓解 Microsoft Defender for Business 预览版 (中的威胁) ](mdb-respond-mitigate-threats.md)
 
 - [查看操作中心中的修正操作](mdb-review-remediation-actions.md)
 

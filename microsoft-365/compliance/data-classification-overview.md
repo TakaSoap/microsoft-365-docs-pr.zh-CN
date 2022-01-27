@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: 3236c0edc40cf585b5e6c9e207746e066e95cb9c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ac51e20b786b2e21d3bb83bd7900e56fb8fac513
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942976"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241559"
 ---
 # <a name="learn-about-data-classification"></a>了解数据分类。
 
@@ -79,7 +79,7 @@ ms.locfileid: "61942976"
 - 信息保护调查员
 - 信息保护读者
 
-下面是处于预览状态的 MIP 角色组的列表。 若要了解有关 的详细信息，请参阅[安全与合规中心](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)中的角色组
+下面是处于预览状态的 MIP 角色组的列表。 要详细了解它们，请参阅 [安全与合规中心内的角色组](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - 信息保护
 - 信息保护管理员
@@ -102,7 +102,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 > [!NOTE]
 > 如果卡片显示消息“找不到包含敏感信息的数据”，则表示你的组织中没有任何项目归类为敏感信息类型，也没有对任何项目进行爬网。要开始使用标签，请参阅：
 >- [开始使用敏感度标签](get-started-with-sensitivity-labels.md)
->- [开始使用保留策略和保留标签](get-started-with-retention.md)
+>- [记录管理入门](get-started-with-records-management.md)
 >- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 
 ## <a name="top-sensitivity-labels-applied-to-content"></a>应用于内容的最常用敏感度标签
@@ -134,7 +134,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 > [!NOTE]
 > 如果此卡片显示消息“未检测到任何保留标签”，则表示尚未创建或发布任何保留标签，或者任何内容均未应用保留标签。要开始使用保留标签，请参阅：
->- [开始使用保留策略和保留标签](get-started-with-retention.md)
+>- [信息治理入门](get-started-with-information-governance.md)
 
 ## <a name="top-activities-detected"></a>检测到的热门活动
 

@@ -15,13 +15,15 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 10/22/2021
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 83c1165cee576898b3f32242aebcbb3436691b8e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.collection:
+- m365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: 0dc1279f59ac272031067c415354f1f615ead205
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167198"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244987"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>为什么应为云保护启用Microsoft Defender 防病毒
 
@@ -31,25 +33,25 @@ ms.locfileid: "61167198"
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender 防病毒
 
-Microsoft Defender 防病毒云保护有助于抵御终结点和整个网络的恶意软件。 我们建议启用云保护，因为 Microsoft Defender for Endpoint 中的某些安全功能仅在启用云保护时可用。 
+Microsoft Defender 防病毒云保护有助于在终结点和整个网络中抵御恶意软件。 我们建议启用云保护，因为 Microsoft Defender for Endpoint 中的某些安全功能仅在启用云保护时可用。 
 
 [:::image type="content" source="images/mde-cloud-protection.png" alt-text="显示依赖于云保护的图示":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 下表总结了依赖于云保护的特性和功能： <br/><br/>
 
-| 功能  | 订阅要求 |  Description  |
+| 功能  | 订阅要求 |  说明  |
 |---------|---------|--------|
-| 检查云中的元数据  | Microsoft Defender for Endpoint Plan 1 或 Plan 2 (Standalone 或包含在计划（如 Microsoft 365 E3 或 E5)  | 云服务Microsoft Defender 防病毒机器学习模型作为额外防护层。 这些机器学习模型包括元数据，因此当检测到可疑或恶意文件时，将检查其元数据。 <br/><br/>若要了解更多信息，请参阅博客：了解 Microsoft Defender for Endpoint 下一代保护 [的核心高级技术](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)  |
+| 检查云中的元数据  | Microsoft Defender for Endpoint Plan 1 或 Plan 2 (Standalone 或包含在计划（如 Microsoft 365 E3 或 E5)  | 云服务Microsoft Defender 防病毒使用机器学习模型作为额外防御层。 这些机器学习模型包括元数据，因此当检测到可疑或恶意文件时，将检查其元数据。 <br/><br/>若要了解更多信息，请参阅博客：了解 Microsoft Defender for Endpoint 下一代保护 [的核心高级技术](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)  |
 | 云保护和示例提交 | Microsoft Defender for Endpoint Plan 1 或 Plan 2 (Standalone 或包含在计划（如 Microsoft 365 E3 或 E5)  | 文件和可执行文件可以发送到 Microsoft Defender 防病毒 云服务进行触发和分析。 <br/><br/>若要了解更多信息，请参阅云[保护和](cloud-protection-microsoft-antivirus-sample-submission.md)Microsoft Defender 防病毒。<br/><br/>**注意**：自动提交示例依赖于云保护，但也可以配置为独立设置。         |
 | 防篡改保护 | Microsoft Defender for Endpoint Plan 2 (独立版或包含在计划（如 Microsoft 365 E5) ） | 篡改保护可帮助防止对组织的安全设置进行不必要的更改。 若要在门户中强制执行Microsoft 365 Defender保护，必须启用云保护。 <br/><br/>若要了解更多信息，请参阅使用防篡改 [保护保护安全设置](prevent-changes-to-security-settings-with-tamper-protection.md)。        |
 | 首次看到时阻止 | Microsoft Defender for Endpoint Plan 1 或 Plan 2 (Standalone 或包含在计划（如 Microsoft 365 E3 或 E5)  | "首次看到时阻止"检测到新的恶意软件，并会在数秒钟内阻止它。 当检测到可疑或恶意文件时，"首次看到时阻止"功能会查询云保护后端，并应用启发式、机器学习和自动分析文件，以确定它是否是威胁。<br/><br/>若要了解更多信息， [请参阅什么是"首次看到时阻止"？](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)   |
 | 紧急签名更新 | Microsoft Defender for Endpoint Plan 2 (独立版或包含在计划（如 Microsoft 365 E5) ） | 检测到恶意内容时，将部署紧急签名更新和修复。 你可以几分钟内收到这些修补程序和更新，而不是等待下一次定期更新。   |
 | 阻止模式下的终结点检测和响应 (EDR)。 | Microsoft Defender for Endpoint Plan 2 (独立版或包含在计划（如 Microsoft 365 E5) ） | EDR阻止模式时，当 Microsoft Defender 防病毒不是设备上的主要防病毒产品时，会提供额外的保护。 EDR模式扫描会修正在EDR生成的扫描过程中发现的非 Microsoft 主防病毒解决方案可能错过的项目。 当为以 Microsoft Defender 防病毒 作为主要防病毒解决方案的设备启用时，EDR模式提供自动修正在EDR扫描期间标识的项目的附加优势。 <br/><br/>若要了解更多信息，请参阅EDR[阻止模式。](edr-in-block-mode.md)|
 | 攻击面减少规则 | Microsoft Defender for Endpoint Plan 1 或 Plan 2 (Standalone 或包含在计划（如 Microsoft 365 E3 或 E5)  | 减少攻击面与减少组织的终结点易受网络攻击的位置和方式有关。 攻击面减少规则是可配置以帮助阻止恶意软件的智能规则。 某些规则要求启用云保护才能完全运行。 这些规则包括： <br/>- 阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件 <br/>- 使用高级防护抵御勒索软件 <br/>- 阻止不受信任的程序从可移动驱动器运行 <br/><br/>若要了解更多信息，请参阅使用 [攻击面减少规则来防止恶意软件感染](attack-surface-reduction.md)。  |
-| ICS (泄露)  | Microsoft Defender for Endpoint Plan 2 (独立版或包含在计划（如 Microsoft 365 E5) ） | Defender for Endpoint 中的 IoCs 可以配置为定义实体的检测、防护和排除。 例如，"允许"指示器可用于在 Defender for Endpoint 中定义Microsoft Defender 防病毒扫描和修正操作。 另一个示例是，"警报和阻止"指示器可用于阻止文件或进程执行，并跟踪这些活动以及可在 Microsoft 365 Defender门户中查看的警报。 <br/><br/>若要了解更多信息，请参阅 [创建指示器](manage-indicators.md)。    |
+| ICS (泄露)  | Microsoft Defender for Endpoint Plan 2 (独立版或包含在计划（如 Microsoft 365 E5) ） | Defender for Endpoint 中的 IoCs 可以配置为定义实体的检测、防护和排除。 例如，"允许"指示器可用于在 Defender for Endpoint 中定义Microsoft Defender 防病毒扫描和修正操作。 另一个示例是，"警报和阻止"指示器可用于阻止文件或进程执行，以及跟踪这些活动以及可在 Microsoft 365 Defender 门户中查看的警报。 <br/><br/>若要了解更多信息，请参阅 [创建指示器](manage-indicators.md)。    |
 
 > [!TIP]
-> 若要了解有关 Defender for Endpoint 计划的详细信息，请参阅[Microsoft Defender for Endpoint Plan 1 (preview) 和 Plan 2。](defender-endpoint-plan-1-2.md)
+> 若要了解有关适用于终结点的 Defender 计划，请参阅适用于终结点计划的 Microsoft Defender 计划[1 和计划 2。](defender-endpoint-plan-1-2.md)
 
 ## <a name="next-steps"></a>后续步骤
 

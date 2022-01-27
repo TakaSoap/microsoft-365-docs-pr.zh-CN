@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: aeccd145f8bc7e5dd65ea98696fd10a63fc86def
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+- m365initiative-defender-business
+ms.openlocfilehash: 780173c292fd218564a203377cb18cd274e26de2
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508355"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244831"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business 预览版中的 (组) 
 
@@ -30,7 +31,7 @@ ms.locfileid: "61508355"
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
-在 Microsoft Defender for Business (预览) 中，策略通过称为设备组的某些集合应用于设备。 
+在 Microsoft Defender for Business (预览) ，策略通过称为设备组的某些集合应用于设备。 
 
 **本文介绍**：  
 
@@ -85,6 +86,6 @@ Defender for Business (预览) 包括可以使用的默认设备组。 默认设
 
 - [在 Microsoft Defender for Business 预览版中查看 (事件) ](mdb-view-manage-incidents.md)
 
-- [在 Microsoft Defender for Business 预览版中响应 (缓解) ](mdb-respond-mitigate-threats.md)
+- [响应和缓解 Microsoft Defender for Business 预览版 (中的威胁) ](mdb-respond-mitigate-threats.md)
 
 - [查看操作中心中的修正操作](mdb-review-remediation-actions.md)

@@ -14,13 +14,15 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 6ea89e3e062cfa0ab5a4bd684fed309a041db769
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: 5a26951535b6e2197d8ada45b2108e62f15fda03
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168278"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245143"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>配置并验证扫描的Microsoft Defender 防病毒项
 
@@ -35,7 +37,7 @@ ms.locfileid: "61168278"
 
 若要配置和验证排除项，请参阅以下内容：
 
-- [根据文件名、扩展名和文件夹位置配置并验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。 你可以根据文件扩展Microsoft Defender 防病毒文件名或位置，从扫描中排除文件。
+- [根据文件名、扩展名和文件夹位置配置并验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。 你可以根据文件扩展Microsoft Defender 防病毒文件名或位置从扫描中排除文件。
 
 - [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)。 你可以从特定进程打开的扫描中排除文件。
 
@@ -48,7 +50,7 @@ ms.locfileid: "61168278"
 
 定义排除项时，请记住以下几点：
 
-- 从技术上说，排除项是一个保护缺陷。 定义排除项时，请考虑所有选项。 其他选项可以非常简单，只需确保排除的位置具有相应的访问控制列表 (ACL) 或最初将策略设置为审核模式。
+- 从技术上说，排除项是一个保护缺陷。 定义排除项时，请考虑所有选项。 其他选项可以非常简单，只需确保排除的位置具有适当的访问控制列表 (ACL) 或最初将策略设置为审核模式。
 
 - 定期查看排除项。 在查看过程中重新检查和重新强制执行缓解。
 
