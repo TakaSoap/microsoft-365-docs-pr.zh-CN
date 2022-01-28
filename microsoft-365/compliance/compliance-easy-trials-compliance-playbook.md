@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 合规中心解决方案试用版 playbook。
-ms.openlocfilehash: 83e78759bb98ddf623d5a39866e2c812964225d5
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 0da966fa23b12d4428a42eabbd102ba560c96b5f
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320787"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265699"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>试用版 playbook: Microsoft 365 合规中心解决方案
 
-欢迎使用 Microsoft 365 合规中心解决方案试用版 playbook。 此 playbook 将有助于发现 Microsoft 365 合规中心和安全产品的强大且全面的功能，从而帮助充分利用 90 天的免费试用版。 
+欢迎使用 Microsoft 365 合规中心解决方案试用版 playbook。 此 playbook 将有助于发现 Microsoft 365 合规中心和安全产品的强大且全面的功能，从而帮助充分利用 90 天的免费试用版。
 
 尝试每个解决方案将有助于做出明智的决策，从而满足组织的合规性需求。
 
@@ -42,11 +42,11 @@ ms.locfileid: "61320787"
 可选的加载项:
 
 - [合规性管理器高级评估](#compliance-manager-premium-assessments)
-- [隐私管理](#privacy-management)
+- [Microsoft Priva 隐私风险管理和 Microsoft Priva 主体权利请求](#microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests)
 
 ## <a name="compliance-actions-with-microsoft-365"></a>使用 Microsoft 365 的合规性操作
 
-轻松、快速地开始试用 Microsoft 的合规性解决方案，无需更改组织元数据。根据优先级，可以从这些解决方案区域中的任意一个开始，以立即看到价值。 以下是客户传达的五大组织问题和推荐开始时使用的解决方案。
+轻松、快速地开始试用 Microsoft 的合规性解决方案，无需更改组织元数据。 根据优先级，可以从这些解决方案区域中的任意一个开始，以立即看到价值。 以下是客户传达的五大组织问题和推荐开始时使用的解决方案。
 
 :::image type="content" source="../media/compliance-trial/workflow.png" alt-text="使用 Microsoft 365 的合规性操作":::
 
@@ -66,8 +66,8 @@ ms.locfileid: "61320787"
 为用户设置高级审核 - 验证已将高级审核应用分配给用户，[为每个用户执行以下步骤](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users)。
 
 1. 启用高级审核事件 - [启用要为 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) 中的每个用户审核的 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-advanced-audit-events)。
-1. 设置审核保留策略 - [创建其他审核日志保留策略](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) ，从而满足组织的安全操作、IT 和合规性团队的要求。 
-1. 搜索高级审核事件 - [在进行取证调查时搜索关键的高级审核事件](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) 和其他活动
+1. 设置审核保留策略 - [创建其他审核日志保留策略](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) ，从而满足组织的安全操作、IT 和合规性团队的要求。
+1. 搜索高级审核事件 - 在进行取证调查时 [搜索关键的高级审核事件](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) 和其他活动。
 
 ### <a name="step-2-create-new-audit-log-policies-to-specify-how-long-to-retain-audit-logs-in-your-org-for-activities-performed-by-users-and-define-priority-levels-for-your-policies"></a>步骤 2: [新建审核日志策略，从而指定在组织中为用户执行的活动保留审核日志的时间，并为策略定义优先级](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)
 
@@ -78,7 +78,7 @@ ms.locfileid: "61320787"
 
 1. 在创建审核日志保留策略之前 – 创建策略前 [要了解的关键事项](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)。
 1. [创建审核日志保留策略](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [管理 Microsoft 365 合规中心内的审核日志保留策略](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - “审核保留策略”选项卡(也称为仪表板)上列出了审核日志保留策略。 可使用仪表板查看、编辑和删除审核保留策略。 
+1. [管理 Microsoft 365 合规中心内的审核日志保留策略](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - “审核保留策略”选项卡(也称为仪表板)上列出了审核日志保留策略。 可使用仪表板查看、编辑和删除审核保留策略。
 1. 在 PowerShell 上创建并管理审核日志保留策略 - 还可以使用安全与合规中心 PowerShell 以 [创建并管理审核日志保留策略](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell)。 使用 PowerShell 的一个原因是为 UI 中不可用的记录类型或活动创建策略。
 
 ## <a name="communication-compliance"></a>通信合规性
@@ -193,10 +193,10 @@ ms.locfileid: "61320787"
 1. 准备终结点 - 确保计划部署终结点 DLP 的 Windows 10 和 macOS 设备 [满足这些要求](endpoint-dlp-getting-started.md)
 1. [将设备载入设备管理](endpoint-dlp-getting-started.md)  - 必须启用设备监视并载入终结点，然后才能监视并保护设备上的敏感项。 这两项操作都在 Microsoft 365 合规门户中完成。
    - 方案 1 –[载入尚未载入的设备](endpoint-dlp-getting-started.md)。
-   - 方案 2 - [已部署 Microsoft Defender for Endpoint，且](endpoint-dlp-getting-started.md)中有终结点报告。 所有这些终结点都将显示在托管设备列表中。 
-1. [为设备配置默认的 DLP 策略](mip-easy-trials.md#dlp-for-devices) 或 [为设备定义新的 DLP 策略](endpoint-dlp-learn-about.md)
-1. [在 DLP 警报管理仪表板中查看终结点 DLP 警报](dlp-configure-view-alerts-policies.md)
-1. [在活动资源管理器中查看终结点 DLP 数据](data-classification-activity-explorer.md)
+   - 方案 2 - [已部署 Microsoft Defender for Endpoint，且](endpoint-dlp-getting-started.md)中有终结点报告。 所有这些终结点都将显示在托管设备列表中。
+1. [为设备配置默认的 DLP 策略](mip-easy-trials.md#dlp-for-devices) 或 [为设备定义新的 DLP 策略](endpoint-dlp-learn-about.md)。
+1. 在 DLP 警报管理仪表板中 [查看终结点 DLP 警报](dlp-configure-view-alerts-policies.md)。
+1. 在活动资源管理器中 [查看终结点 DLP 数据](data-classification-activity-explorer.md)。
 
 ### <a name="step-3-expand-policies-in-scope-or-protection"></a>步骤 3: [展开范围或保护中的策略](dlp-learn-about-dlp.md#dlp-policy-configuration-overview)
 
@@ -205,7 +205,7 @@ ms.locfileid: "61320787"
 1. 添加位置
 1. 添加要保护的敏感信息类型或标签
 1. 添加操作
-   - Teams: 
+   - Teams:
       - [阻止对敏感文档的外部访问](dlp-microsoft-teams.md#prevent-external-access-to-sensitive-documents)
       - [获取可帮助指导用户的策略提示以及自定义策略提示的说明](dlp-microsoft-teams.md#policy-tips-help-educate-users)
    - 设备: 从仅审核切换到阻止
@@ -252,7 +252,7 @@ ms.locfileid: "61320787"
 
 ![合规性边界由搜索权限筛选器组成，这些筛选器控制对代理和管理员角色组(控制对电子数据展示案例的访问权限)的访问权限。](../media/M365_ComplianceBoundary_OrgChart_v2.png)
 
-为电子数据展示调查设置合规性边界: 
+为电子数据展示调查设置合规性边界:
 
 1. [识别用于定义代理的用户属性](set-up-compliance-boundaries.md#step-1-identify-a-user-attribute-to-define-your-agencies)
 1. [为每个代理创建角色组](set-up-compliance-boundaries.md#step-2-create-a-role-group-for-each-agency)
@@ -278,7 +278,7 @@ ms.locfileid: "61320787"
 
 符合条件的客户可以为 Microsoft 信息保护激活默认的标签和策略。 当在试用版中启用默认配置时，为租户配置所有策略大约需要 2 分钟，最多需要 24 小时才可查看这些默认策略的结果。
 
-选择默认配置(点击 1 下)会自动配置以下内容: 
+选择默认配置(点击 1 下)会自动配置以下内容:
 
 - 敏感度标签和敏感度标签策略
 - 客户端自动标记
@@ -306,7 +306,7 @@ ms.locfileid: "61320787"
 
 ### <a name="step-3-review-and-turn-on-auto-labeling-policy"></a>步骤 3: [查看并启用自动标记策略](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 
-现在，在 **信息保护** > **自动标记** 页面上，你会在 **模拟** 节中看到自动标记策略。 
+现在，在 **信息保护** > **自动标记** 页面上，你会在 **模拟** 节中看到自动标记策略。
 
 选择策略以查看配置和状态的详细信息。 模拟完成后，选择“要查看的项”选项卡以查看哪些电子邮件或文档与指定的规则匹配。
 
@@ -323,7 +323,7 @@ ms.locfileid: "61320787"
 > [!TIP]
 > 试用版最佳做法: 第 1 天
 
-有四个角色组可用于配置管理内部风险管理功能的权限。 
+有四个角色组可用于配置管理内部风险管理功能的权限。
 
 [将用户添加到内部风险管理角色组。](insider-risk-management-configure.md#add-users-to-an-insider-risk-management-role-group)
 
@@ -333,7 +333,7 @@ ms.locfileid: "61320787"
 
 遵循推荐操作以快速入门并充分利用内部风险管理功能。 推荐操作包含在“概述”页面上，有助于完成配置并部署策略、针对从策略匹配项生成警报的用户操作执行调查操作的步骤。
 
-[从列表中选择建议](insider-risk-management-configure.md#recommended-actions-preview)，以开始配置内部风险管理。 
+[从列表中选择建议](insider-risk-management-configure.md#recommended-actions-preview)，以开始配置内部风险管理。
 
 ![内部风险管理推荐操作。](../media/insider-risk-recommended-actions.png)
 
@@ -362,7 +362,7 @@ ms.locfileid: "61320787"
 > [!TIP]
 > 试用版最佳做法: 第 1 天
 
-自适应策略范围允许根据某些用户、组或网站的 AD 属性向它们动态定向策略。 
+自适应策略范围允许根据某些用户、组或网站的 AD 属性向它们动态定向策略。
 
 可以从列表中选择范围的属性，或使用高级查询生成器自定义属性。
 
@@ -381,12 +381,12 @@ ms.locfileid: "61320787"
 
 可以在“记录管理概述”屏幕上查看标签应用程序活动和处置评审活动。
 
-1. [自动将保留标签应用于包含敏感信息的内容](retention.md#retention-labels) 
+1. [自动将保留标签应用于包含敏感信息的内容](retention.md#retention-labels)
 1. 在保持期结束时创建并应用带有 [处置评审](disposition.md#disposition-reviews) 的保留标签
 
 ### <a name="step-3-label-content-as-records-automatically-using-trainable-classifiers"></a>步骤 3: 使用可训练的分类器以自动将内容标记为记录
 
-当内容声明为记录时，会根据允许或阻止的操作对项目施加限制并记录有关项目的其他活动。如果项目在保持期结束时被删除，则你将获得处置证明。 
+当内容声明为记录时，会根据允许或阻止的操作对项目施加限制并记录有关项目的其他活动。如果项目在保持期结束时被删除，则你将获得处置证明。
 
 可训练的分类器是根据提供的示例识别各种类型的内容的工具。 从各种内置选项中进行选择，或设置自定义分类器以满足特定需求。
 
@@ -404,7 +404,7 @@ ms.locfileid: "61320787"
 
 **...然后，结束时进行安全处置。**
 
-在保留期结束时触发处置评审时，你选择的审阅者将收到一封电子邮件通知，告知他们需要审阅的内容。 
+在保留期结束时触发处置评审时，你选择的审阅者将收到一封电子邮件通知，告知他们需要审阅的内容。
 
 只有在处置最后阶段的审阅者选择永久删除内容后，才可永久删除待处置评审的内容。
 
@@ -418,15 +418,15 @@ ms.locfileid: "61320787"
 
 [有关合规性管理器高级评估试用版的详细信息](compliance-easy-trials-compliance-manager-assessments.md)。
 
-### <a name="privacy-management"></a>隐私管理
+### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Microsoft Priva 隐私风险管理和 Microsoft Priva 主体权限请求
 
 **识别并预防隐私风险**
 
 主动识别并防范隐私风险，例如数据囤积、数据传输和数据过度共享，并帮助组织大规模自动执行并管理主体请求。
 
-[了解有关 Microsoft 365 隐私管理的详细信息](/privacy/solutions/privacymanagement/privacy-management)。
+[了解有关 Microsoft Priva 的详细信息](/privacy/solutions/privacymanagement/privacy-management)。
 
-[试用版 playbook：Microsoft 365 隐私管理](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
+[试用版 playbook：Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## <a name="additional-resources"></a>其他资源
 

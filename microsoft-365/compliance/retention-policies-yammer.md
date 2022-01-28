@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Yammer 的保留策略。
-ms.openlocfilehash: d5efabef17f70067aa054ea995dba85eff711502
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 3759f39a9ef2067d9719d4cf83d73ee7b67ef125
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934533"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241427"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解用于 Yammer 的保留
 
@@ -191,6 +191,6 @@ Yammer 保留策略目前处于预览阶段，我们正在不断努力优化保�
 
 ## <a name="configuration-guidance"></a>配置指南
 
-如果你刚开始在 Microsoft 365 中配置保留，请参阅[开始使用保留策略和保留标签](get-started-with-retention.md)。
+如果你不熟悉如何在 Microsoft 365 中配置保留期，请参阅[开始使用信息治理](get-started-with-information-governance.md)。
 
 如果已准备好配置 Teams 的保留策略，请参阅[创建和配置保留策略](create-retention-policies.md)。
