@@ -1,5 +1,5 @@
 ---
-title: 有关导入组织的 PST 文件的概述
+title: 了解如何导入组织的 PST 文件
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,14 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: 了解如何使用 Microsoft 365 合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
-ms.openlocfilehash: 67488566b65648f20cf48b7ab767e95a8732da57
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b88cd9f6b12f382f8fdeb696af32c1fd95ad805d
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873311"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241523"
 ---
-# <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
+# <a name="learn-about-importing-your-organizations-pst-files"></a>了解如何导入组织的 PST 文件
 
 > [!NOTE]
 > 这篇文章的使用对象为管理员。你是否正在尝试将 PST 文件导入到自己的邮箱？请参阅 [从 Outlook.pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)。

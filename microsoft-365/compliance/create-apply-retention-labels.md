@@ -1,5 +1,5 @@
 ---
-title: 创建保留标签并在应用中应用它们来保留或删除内容
+title: 发布保留标签并在应用中应用它们来保留或删除内容
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,22 +17,22 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: 介绍了如何创建和发布保留标签，以便能够在应用中应用它们，从而保留所需内容，并删除不需要内容。
-ms.openlocfilehash: 039a7cd1a67893c2daea5f329015c3d77e26f0b8
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+description: 介绍了如何发布保留标签，以便能够在应用中应用它们，从而保留所需内容，并删除不需要内容。
+ms.openlocfilehash: 229d70816bff753ebacf7857cbcb773a7e958609
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327636"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242007"
 ---
-# <a name="create-retention-labels-and-apply-them-in-apps"></a>创建保留标签并将其应用到应用中
+# <a name="publish-retention-labels-and-apply-them-in-apps"></a> 发布保留标签并将其应用到应用 
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > 此方案受所有保留标签配置（包括 [规章记录](records-management.md#records)）的支持。
 
-请参阅以下信息来帮助你创建和发布[保留标签](retention.md)，然后向文档和电子邮件应用它们。
+使用以下信息来帮助发布[保留标签](retention.md)，然后将其应用于文档和电子邮件中。
 
 保留标签有助于在项（文档或电子邮件）级别保留所需内容，并删除不需要内容。 它们还用于将项声明为记录，作为 Microsoft 365 数据的[记录管理](records-management.md)解决方案的一部分。
 
@@ -48,63 +48,31 @@ ms.locfileid: "61327636"
 
 ## <a name="before-you-begin"></a>准备工作
 
-组织的全局管理员拥有创建和编辑保留标签及其策略的完全权限。 如果你未以全局管理员的身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。
+组织的全局管理员拥有创建和编辑保留标签及其策略的完全权限。 如果不以全局管理员登录，则请参阅 [记录管理](get-started-with-records-management.md#permissions) 或 [信息管理](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels) 的权限信息，具体取决于你使用的解决方案。
 
-在创建保留标签策略之前，请先确定其将为 **自适应** 还是 **静态** 策略。 有关详细信息，请参阅 [保留](retention.md#adaptive-or-static-policy-scopes-for-retention)的自适应或静态策略范围。 如果决定使用自适应策略，则必须在创建保留标签策略之前创建一个或多个自适应作用域，然后在创建保留标签策略期间进行选择。 有关说明，请参阅[自适应作用域的配置信息](retention-settings.md#configuration-information-for-adaptive-scopes)。
+确保已[创建要应用于项目的保留标签](file-plan-manager.md#create-retention-labels)。
 
-## <a name="how-to-create-and-publish-retention-labels"></a>如何创建和发布保留标签
+## <a name="how-to-publish-retention-labels"></a>如何发布保留标签
 
-首先，创建保留标签。然后，创建标签策略，让标签可以在应用中应用。
-
-创建和配置保留标签的位置取决于你是否使用记录管理。针对这两种情况提供了说明。
-
-### <a name="step-1-create-retention-labels"></a>第 1 步：创建保留标签
-
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>中，转到以下位置之一：
-    
-    - 如果你正在使用记录管理：
-        - “**解决方案**” > “**记录管理**” > “**文件计划**”选项卡 > + “**创建标签**” > “**保留标签**”
-        
-    - 如果你没有使用记录管理：
-       - “**解决方案**” > “**信息治理**” > “**标签**”选项卡 > +“**创建标签**”
-    
-    无法立即在导航窗格中看到解决方案？ 首先选择“**全部显示**”。 
-
-2. 按照向导中的提示进行操作。
-    
-    有关保留设置的详细信息，请参阅[设置以保留和删除内容](retention-settings.md#settings-for-retaining-and-deleting-content)。
-    
-    如果你正在使用记录管理：
-    
-    - 有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)。
-    
-    - 若要使用保留标签来声明记录，请选择 “**将项目标记为记录**”，或者 “**将项目标记为合规性记录**”。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
-
-3. 创建标签后，你会看到发布标签、自动应用标签或仅保存标签的选项，请选择“**现在仅保存标签**”，然后选择“**完成**”。
-
-4. 重复这些步骤以创建更多标签。
-
-若要编辑现有标签，请将其选中，然后选择“**编辑标签**”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
-
-### <a name="step-2-publish-retention-labels"></a>第 2 步：发布保留标签
-
-发布保留标签，以便用户可以在 SharePoint 和 Outlook 等应用中应用它们。
+在创建保留标签策略之前，请先确定其将为 **自适应** 还是 **静态** 策略。 有关详细信息，请参阅 [保留](retention.md#adaptive-or-static-policy-scopes-for-retention)的自适应或静态策略范围。 如果决定使用自适应策略，则必须在创建保留标签策略之前创建一个或多个自适应作用域，然后在创建保留标签策略期间进行选择。 有关说明，请参阅 [自适应作用域的配置信息](retention-settings.md#configuration-information-for-adaptive-scopes)。
 
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>中，转到以下位置之一：
     
     - 如果你正在使用记录管理：
         - “**解决方案**” > “**记录管理**”> >“**标签策略**”选项卡 >“**发布标签**”
     
-    - 如果你没有使用记录管理：
+    - 如果使用的是信息治理，则导航到：
         - “**解决方案**” > “**信息治理**” > “**标签策略**”选项卡 >“**发布标签**”
     
     无法立即在导航窗格中看到解决方案？ 首先选择“**全部显示**”。 
 
-2. 使用链接选择要发布的保留标签，然后选择 **"下一步"**。
+2. 按照提示创建保留标签策略。 请注意为策略选择名称，因为在保存策略后无法更改此名称。
 
-3. 对于 **选择要创建页的保留策略的类型**，请选择 **自适应** 或 **静态**，具体取决于在开始说明之前从 [所做的选择](#before-you-begin)。 如果尚未创建自适应作用域，则可以选择 **自适应**，但由于没有自适应作用域可供选择，因此将无法使用此选项完成向导。
+3. 使用链接选择要发布的保留标签，然后选择 **"下一步"**。
 
-4. 具体取决于所选范围：
+4. 对于 **选择要创建页的保留策略的类型**，请选择 **自适应** 或 **静态**，具体取决于在开始说明之前从 [所做的选择](#before-you-begin)。 如果尚未创建自适应作用域，则可以选择 **自适应**，但由于没有自适应作用域可供选择，因此将无法使用此选项完成向导。
+
+5. 具体取决于所选范围：
     
     - 如果选择 **自适应**: 在 **选择自适应策略作用域和位置** 页面上，选择 **添加作用域**，然后选择一个或多个已创建的自适应作用域。 然后，选择一个或多个位置。 可以选择的位置取决于添加的[范围类型](retention-settings.md#configuration-information-for-adaptive-scopes)。 例如，如果仅添加了 **用户** 的作用域类型，则可以选择 **Exchange 电子邮件** ，但不能 **sharePoint 网站**。 
     
@@ -112,17 +80,13 @@ ms.locfileid: "61327636"
     
     有关位置选择的信息，请参阅 [位置](retention-settings.md#locations)。
 
-5.  按照向导中的提示为策略命名、查看和提交配置选择。
-    
-    有关位置选择的信息，请参阅 [位置](retention-settings.md#locations)。 
-
-若要编辑现有保留标签策略（策略类型 **发布**），请选择它，然后选择 **编辑** 选项以启动"编辑保留策略"。此向导允许你更改策略说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
+若要编辑现有的保留标签策略（策略类型是“**发布**”），请选择它，然后选择“**编辑**”选项，以启动“**编辑保留策略**”配置。
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>当保留标签可应用时
 
-对于 OneDrive 和 SharePoint 位置，通常会显示在一两天内发布的标签供用户选择。 不过，最长可能需要 7 天才能显示。
+如果你将保留标签发布到 SharePoint 或 OneDrive，这些标签通常会在 1 天内出现，以供最终用户选择。 不过，最长可能需要 7 天才能显示。 
 
-对于 Exchange 和 Microsoft 365 组位置，最多可能需要 8 天才能向 Outlook 中的用户显示已发布的保留标签，并且邮箱必须包含至少 10 MB 的数据。
+如果你将保留标签发布到 Exchange，这些保留标签最长可能需要 7 天才能向最终用户显示，并且邮箱至少必须包含 10MB 数据。
 
 ![已发布标签何时生效的关系图。](../media/retention-labels-published-timings.png)
 
@@ -293,7 +257,7 @@ Although the UI refers to retention policies, it's your retention labels that di
 
 ## Updating retention labels and their policies
 
-When you edit a retention label or retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
+If you [edit a retention label](file-plan-manager.md#edit-retention-labels) or a retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
 - Names for retention labels and their policies, the scope type (adaptive or static), and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.

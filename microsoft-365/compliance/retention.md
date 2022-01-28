@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 319e8414d9d78eaa4735864f7e47ff146d2b9734
-ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
+ms.openlocfilehash: 45bd61d9eed192977485792d72eb9783c71420b8
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61612628"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242055"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -59,7 +59,7 @@ ms.locfileid: "61612628"
 
 这些保留设置应用于在适当位置上的内容，如果你出于合规性原因需要保留内容，它们可以为你节省创建和配置附加存储的额外开销。 另外，无需实现自定义流程来复制和同步此数据。
 
-使用以下各节了解有关保留策略和保留标签如何工作、何时使用以及它们如何相互补充的更多信息。 但是，如果你已准备好开始为某些常见情况部署保留设置，请参阅[开始使用保留策略和保留标签](get-started-with-retention.md)。
+使用以下各节了解有关保留策略和保留标签如何工作、何时使用以及它们如何相互补充的更多信息。 但是，如果你已准备好开始为一些常见情况部署保留设置，请参阅[信息管理入门](get-started-with-information-governance.md)。
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>保留设置如何应用于在适当位置上的内容
 
@@ -153,7 +153,7 @@ ms.locfileid: "61612628"
 
 - **将默认保留标签应用于 SharePoint 中的文档库、文件夹或文档集**，以让存储在该位置的所有文档都继承默认保留标签。
 
-此外，保留标签支持跨 Microsoft 365 应用和服务对电子邮件和文档实施[记录管理](records-management.md)。 可使用保留标签将项目标记为记录。 如果发生这种情况，而内容仍保留在 Microsoft 365 中，则标签会对内容进行进一步的限制，这可能是监管原因所致。 有关详细信息，请参阅[比较对允许或阻止的操作的限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。
+- **将项目标记为记录** 作为 [记录管理](records-management.md) 策略的一部分。 当这些标签内容仍保留在 Microsoft 365 中时，则标签会对内容进行进一步的限制，这可能是监管原因所致。 有关详细信息，请参阅[比较对允许或阻止的操作的限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。
 
 如果内容被移动到 Microsoft 365 之外，则保留标签将不会继续存在，这一点与[敏感度标签](sensitivity-labels.md)是不同的。
 
@@ -244,7 +244,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 |功能|保留策略 |保留标签|
 |:-----|:-----|:-----|:-----|
 |保留设置可以是“保留后删除”、“仅保留”或“仅删除” |是 |是 |
-|支持的工作负载： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 组 <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 可访问 <br /> 可访问 <br /> 是 | <br /> 是，但公用文件夹除外 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否 <br /> 否 |
+|支持的工作负载： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 组 <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 | <br /> 是，但公用文件夹除外 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否 <br /> 否 |
 |自动应用保留 | 是 | 是 |
 |基于条件应用保留 <br /> - 敏感信息类型、KQL 查询和关键字、可训练的分类器、云附件| 否 | 是 |
 |手动应用保留 | 否 | 是 |
@@ -256,7 +256,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 |最长 7 年的处置证明 | 否 |是，使用处置评审或项目被标记为记录时|
 |审核管理员活动| 是 | 是|
 |审核保留操作| 不支持 | 是的 <sup>\*</sup> |
-|识别遵循保留设置的项： <br /> - 内容搜索 <br /> - 数据分类页、内容资源管理器、活动资源管理器 | <br /> 否 <br /> 否 | <br /> 可访问 <br /> 是|
+|识别遵循保留设置的项： <br /> - 内容搜索 <br /> - 数据分类页、内容资源管理器、活动资源管理器 | <br /> 否 <br /> 否 | <br /> 是 <br /> 是|
 
 **脚注：**
 
@@ -620,4 +620,4 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 
 ## <a name="configuration-guidance"></a>配置指南
 
-请参阅[保留策略和保留标签入门](get-started-with-retention.md)。本文提供了有关订阅、权限的信息，以及保留方案的端到端配置指南的链接。
+请参阅[信息治理入门](get-started-with-information-governance.md)。 本文提供了有关订阅、权限的信息，以及保留方案的端到端配置指南链接。

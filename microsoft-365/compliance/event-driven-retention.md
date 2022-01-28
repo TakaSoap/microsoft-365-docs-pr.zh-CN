@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常，它是记录管理解决方案的一部分，你可以配置保留标签以根据所识别的事件开始保留期。
-ms.openlocfilehash: a16daf7e360260ecbdc4e0a16e291cd3cd411838
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7e8d70d6ac535ee80e3ddb6ab719fe253836031
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158210"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241439"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>从事件发生时开始计算保留期
 
@@ -89,7 +89,7 @@ ms.locfileid: "60158210"
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>第 1 步：创建保留期以事件为依据的标签
 
-若要创建和配置保留标签，请参阅 [创建保留标签](./create-apply-retention-labels.md#step-1-create-retention-labels)的说明。但是特定于基于事件的保留，在“创建保留标签向导”的“**定义保留设置**”页面上，在“**启动保留期，基于：**”后，从下拉列表中选择一个默认事件类型，或选择“**创建新事件类型**”来自行创建：
+若要创建和配置保留标签，请参阅[创建记录管理的保留标签](file-plan-manager.md#create-retention-labels)说明，或[如何为信息管理创建保留标签](create-retention-labels-information-governance.md)。 但特定于基于事件的保留，在创建保留标签时 **定义保留设置** 页上，在 **基于开始保留期** 后，从下拉列表中选择一个默认事件类型，或者通过选择 **创建新事件类型**，创建自己的事件类型：
 
 ![为保留标签创建新事件类型。](../media/SPRetention6.png)
 

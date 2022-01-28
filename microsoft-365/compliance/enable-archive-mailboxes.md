@@ -2,8 +2,8 @@
 title: 在 Microsoft 365 合规性中心中启用存档邮箱
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,24 +22,25 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
-description: 了解如何使用合规性中心来启用存档邮箱，以支持组织的邮件保留、电子数据展示和法定保留要求。
-ms.openlocfilehash: 33bbb0987779f7810d797d7cb5a6255c32c34c75
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: 了解如何启用或禁用存档邮箱以支持组织的邮件保留、电子数据展示和保留要求。
+ms.openlocfilehash: be7939f11c6aea0161f76c3796ca2ff8bd515ba0
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422335"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241391"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>在合规性中心中启用存档邮箱
 
-Microsoft 365 中的存档（又称为 *就地存档*）为用户提供额外的邮箱存储空间。 打开存档邮箱后, 用户可使用 Microsoft Outlook 和 Outlook 网页版 (以前称为 Outlook Web App) 在其存档邮箱中访问并存储邮件。 用户可以在其主邮箱和存档邮箱之间移动或复制邮件。 他们还可以使用“恢复已删除邮件”工具恢复存档邮箱中“可恢复的项目”文件夹下的已删除邮件。
+Microsoft 365 中的存档（又称为 *就地存档*）为用户提供额外的邮箱存储空间。 有关详细信息，请参阅 [了解存档邮箱](archive-mailboxes.md)。
 
-> [!NOTE]
-> Microsoft 365 中的自动扩展存档功能在存档邮箱中提供额外的存储空间。 当启用自动扩展存档，并达到用户存档邮箱中的初始存储配额时，Microsoft 365 将自动增加额外的存储空间。 这意味着用户不会耗尽邮箱存储空间, 并且在最初启用存档邮箱为贵公司打开自动扩展存档后, 你将不必管理任何内容。 有关详细信息，请参阅 [自动扩展存档概述](autoexpanding-archiving.md)。
+使用本文中的信息在 Microsoft 365 合规中心内或使用 PowerShell 启用或禁用存档邮箱。 另请了解如何对用户的存档邮箱运行自动诊断检查，以识别任何问题和建议的解决方法。
 
 ## <a name="get-the-necessary-permissions"></a>获取必要的权限
 
-必须在 Exchange Online 中分配 "邮件收件人" 角色, 才能启用或禁用存档邮箱。 默认情况下, 此角色将分配给 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>的 **权限** 页上的“收件人管理”和“组织管理”角色组。 如果在 Microsoft 365 合规中心中看不到 **存档** 页，则请管理员为你分配必要的权限。
+必须在 Exchange Online 中分配“邮件收件人”角色, 才能启用或禁用存档邮箱。 默认情况下, 此角色将分配给 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>的 **权限** 页上的“收件人管理”和“组织管理”角色组。 
+
+如果在 Microsoft 365 合规中心中看不到 **存档** 页，则请管理员为你分配必要的权限。
 
 ## <a name="enable-an-archive-mailbox"></a>启用存档邮箱
 
@@ -149,24 +150,6 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 > [!NOTE]
 > 必须是 Microsoft 365 全局管理员才能使用存档邮箱诊断检查。 此外，此功能不适用于 Microsoft 365 政府云、由世纪互联运营的 Microsoft 365 或 Microsoft 365 德国。
 
-## <a name="more-information"></a>更多信息
+## <a name="next-steps"></a>后续步骤
 
-- 启用存档邮箱后，用户可以将邮件存储在其存档邮箱中。用户可以使用 Microsoft Outlook 和 Outlook 网页版访问存档邮箱。通过使用其中任意一个客户端应用程序，用户可以查看存档邮箱中的邮件，并在其主邮箱和存档邮箱之间移动或复制邮件。用户还可以使用"恢复已删除邮件"工具恢复存档邮箱中的"可恢复的项目"文件夹中的已删除邮件。
-
-  有关支持就地存档的 Outlook 许可证列表, 请参阅 [Exchange 功能的 Outlook 许可证要求](https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99)。
-
-- 存档邮箱可帮助你和你的用户满足贵公司保留率、eDiscovery 和保存的要求。 例如，可以使用贵公司的 Exchange 保留策略将邮箱内容移动到用户的存档邮箱。 在使用 Microsoft 365 合规中心中的内容搜索工具搜索用户邮箱中的特定内容时，还将搜索用户的存档邮箱。 并且，将诉讼保留或保留策略应用于用户邮箱时，也会保留存档邮箱中的邮件。
-
-- 启用存档邮箱后，你的组织可利用自动分配到每个邮箱的默认 Exchange 保留策略（也称为邮件传递记录管理或 MRM 策略）。启用存档邮箱后，默认的 Exchange 保留策略自动执行以下操作：
-
-  - 将两年或以上的邮件从用户主邮箱移动到存档邮箱。
-
-  - 将 14 天或以上的邮件从用户主邮箱的“可恢复的项目”文件夹移动到存档邮箱中的“可恢复的项目”文件夹。
-
-- 有关存档邮箱和 Exchange 保留策略的详细信息, 请参阅:
-
-  - [ Exchange Online中的保留标记和保留策略 ](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
-
-  - [Exchange Online 中的默认保留策略](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
-
-  - [为组织中的邮箱设置存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+请考虑为其他存储空间启用 [自动扩展存档](autoexpanding-archiving.md)。 有关说明，请参阅 [启用自动扩展存档](enable-autoexpanding-archiving.md)。
