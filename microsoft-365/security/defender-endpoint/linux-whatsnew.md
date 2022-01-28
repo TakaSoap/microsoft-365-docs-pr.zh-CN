@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 91fcc60c667ef656999ead1505227dfb39bd71a3
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4091a5945bbd754fb78bb957c46bd2ea5636e64d
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936206"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265471"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -29,6 +29,10 @@ ms.locfileid: "61936206"
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0) 
+
+- 修复了 101.53.02 中引入并影响多个客户的产品崩溃
 
 ## <a name="1015302-30121112153020"></a>101.53.02 (30.121112.15302.0) 
 
@@ -40,7 +44,7 @@ ms.locfileid: "61936206"
 
 ## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0) 
 
-- 向命令行工具添加了一个新开关，以控制在按需扫描过程中是否扫描存档。 这可以通过 进行配置 `mdatp config scan-archives --value [enabled/disabled]` 。 默认情况下，这设置为 `enabled` 。
+- 向命令行工具添加了一个新开关，以控制在按需扫描过程中是否扫描存档。 这可以通过 进行配置 `mdatp config scan-archives --value [enabled/disabled]`。 默认情况下，这设置为 `enabled`。
 - 错误修补程序
 
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0) 
@@ -55,8 +59,8 @@ ms.locfileid: "61936206"
 ## <a name="1014500-30121072145000"></a>101.45.00 (30.121072.14500.0) 
 
 - 向命令行工具添加了新开关：
-  - 控制按需扫描的并行度。 这可以通过 进行配置 `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` 。 默认情况下，使用 的并行 `2` 度。
-  - 控制启用还是禁用安全智能更新后的扫描。 这可以通过 进行配置 `mdatp config scan-after-definition-update --value [enabled/disabled]` 。 默认情况下，这设置为 `enabled` 。
+  - 控制按需扫描的并行度。 这可以通过 进行配置 `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`。 默认情况下，使用 的并行 `2` 度。
+  - 控制启用还是禁用安全智能更新后的扫描。 这可以通过 进行配置 `mdatp config scan-after-definition-update --value [enabled/disabled]`。 默认情况下，这设置为 `enabled`。
 - 更改产品日志级别现在需要提升
 - 错误修补程序
 
@@ -73,12 +77,12 @@ ms.locfileid: "61936206"
 - 从此版本开始，在通过命令行客户端触发的按需防病毒扫描期间检测到的威胁将自动修正。 扫描期间通过用户界面触发的威胁仍然需要手动操作。
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
-  - `--top N`：显示前 N 个 (仅在还指定了 `--sort` 值时) 
+  - `--top N`：显示前 N 个 (仅在指定了 `--sort` 值时) 
 - Bug 修复&性能改进
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0) 
 
-- Linux 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。
+- Linux 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [适用于美国政府终结点客户的 Microsoft Defender](gov.md)。
 - 修复了在 LINUX 上使用 Microsoft Defender for Endpoint（在带一个使用有一个使用有一个更新的系统）的系统上导致操作系统挂起的问题
 - 性能改进& Bug 修复
 
@@ -95,8 +99,8 @@ ms.locfileid: "61936206"
 ## <a name="1011853"></a>101.18.53
 
 - EDR Linux 版本现已[普遍可用](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-- 添加了一个新的命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV 排除 `mdatp scan custom` () 
-- 使用 `mdatp diagnostic create` 新的参数扩展 () ，该参数允许将诊断日志 `--path [directory]` 保存到其他目录
+- 添加了一个新的命令行开关 (`--ignore-exclusions`) 自定义扫描过程中忽略 AV 排除 `mdatp scan custom` () 
+- 使用 `mdatp diagnostic create` 新的参数扩展 `--path [directory]` () ，该参数允许将诊断日志保存到其他目录
 - Bug 修复&性能改进
 
 ## <a name="1011299"></a>101.12.99
@@ -118,7 +122,7 @@ ms.locfileid: "61936206"
 
 ## <a name="1010075"></a>101.00.75
 
-- 添加了对以下文件系统类型的支持 `ecryptfs` `fuse` `fuseblk` `jfs` `nfs` `overlay` `ramfs` `reiserfs` ：、、、、 `udf` 和 `vfat`
+- 添加了对以下文件系统类型的支持：`ecryptfs``nfs``fuseblk``fuse``overlay``ramfs``jfs`、、`reiserfs`、`udf`、 和`vfat`
 - 命令行工具 [的新语法](linux-resources.md#configure-from-the-command-line)。
 - Bug 修复&性能改进
 
@@ -128,6 +132,6 @@ ms.locfileid: "61936206"
 > 从低于 100.90.70 的产品版本升级已安装的程序包时，基于 Red Hat 和 SLES 分发的更新可能会失败。 这是因为文件路径有重大更改。 临时解决方案是删除较旧的程序包，然后安装较新的程序包。 此问题在较新版本中不存在。
 
 - 防病毒 [排除项现在支持通配符](linux-exclusions.md#supported-exclusion-types)
-- 添加了通过 [命令行工具](linux-support-perf.md) `mdatp` 解决性能问题的能力
+- 添加了通过[命令行工具](linux-support-perf.md)`mdatp`解决性能问题的能力
 - 使程序包安装更可靠的改进
 - Bug 修复&性能改进

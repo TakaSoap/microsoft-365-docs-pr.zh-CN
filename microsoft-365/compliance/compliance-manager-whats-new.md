@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解合规性管理程序中的新增功能以及将提供哪些功能。 阅读更新后的评估、新的评估模板、新操作等。
-ms.openlocfilehash: c8e17caca15386199725627042c9d382641bfca2
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: f9583b69459d292b3fb485d09ce5ee5a8ca46620
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072256"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265500"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft 合规性管理器中的新增功能
 
@@ -53,7 +53,7 @@ ms.locfileid: "61072256"
 - FedRAMP Moderate for Azure (Preview) 
 - FedRAMP High for Azure (Preview) 
 - FedRAMP High for Dynamics 365 (Preview) 
-- 适用于 Azure 预览版 (SOC 2) 
+- 适用于 Azure (Preview) 的 SOC 2
 - Dynamics 365 (Preview) 
 - 适用于 Azure (Preview 的 ISO 27018：2019) 
 - 适用于 Dynamics 365 预览版 (ISO 27018：2019) 
@@ -71,13 +71,13 @@ ms.locfileid: "61072256"
 - 澳大利亚 - ASD Essential 8 Maturity Level 2
 - 澳大利亚 - ASD Essential 8 Maturity Level 3
 
-### <a name="integration-with-privacy-management"></a>与隐私管理集成
+### <a name="integration-with-microsoft-priva"></a>与 Microsoft 一起集成
 
-合规性管理器现在可以与隐私管理一起工作，这是一种可帮助您保护组织存储在 Microsoft 365 中的个人数据的解决方案。 隐私管理提供了一些工具，可帮助你可视化和了解数据、实施策略来管理关键风险方案以及处理主体权限请求。 当你采取隐私管理步骤来保护你存储的个人数据时，这可以帮助你在合规性管理器中进行隐私评估，并且可以帮助你提高合规性分数。 若要了解隐私管理和其他解决方案如何为分数做出贡献，并了解进一步改进的潜在机会，请参阅合规性管理器中的"解决方案"选项卡。 您还可以在了解隐私管理中查找有关 [隐私管理的更多详细信息](/privacy/solutions/privacymanagement/privacy-management)。
+合规性管理器现在可以与 Microsoft 管理中心合作，这是一种可帮助您保护组织存储在 Microsoft 365 中的个人数据的解决方案。 用户提供了一些工具，可帮助你可视化和了解数据、实施策略来管理关键风险方案以及处理主体权限请求。 当你在管理区中执行保护你存储的个人数据的步骤时，这可以帮助你在合规性管理器中进行隐私评估，并且可以帮助你提高合规性分数。 若要了解一下一些功能和其他解决方案如何为分数做出贡献，并了解进一步改进的潜在机会，请参阅合规性管理器中的"解决方案"选项卡。 您还可以在了解 Microsoft 用户信息中查找有关一位用户 [的详细信息](/privacy/priva)。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
-我们添加了根据模板的新通用版本为除 Microsoft 365 产品创建评估的功能。 若要了解更多信息，请 [从使用评估模板开始](compliance-manager-templates.md)。
+我们添加了根据模板的新通用版本为Microsoft 365产品创建评估的功能。 若要了解更多信息，请 [从使用评估模板开始](compliance-manager-templates.md)。
 
 ## <a name="may-2021"></a>2021 年 5 月
 
@@ -86,7 +86,7 @@ ms.locfileid: "61072256"
 我们发布了 75 个新的评估模板，其中包括：
 - 澳大利亚隐私法案
 - CIS Microsoft 365 Foundation 级别 1 和 2
-- 德国 - 金融机构 IT 部门监管要求 (使用（) 
+- 德国 - 金融机构 IT 部门监管要求 (使用，) 
 - Sarbanes-Oxley法案
 - 南非 - 促进信息访问法案
 
@@ -96,7 +96,7 @@ ms.locfileid: "61072256"
 
 ### <a name="support-for-us-government-dod-customers"></a>支持美国政府 DoD 客户
 
-除了美国政府 DoD 客户之外，美国政府 DoD 客户现在Community (GCC) 和GCC合规性管理器。
+除了美国政府 DoD 客户之外，美国政府 DoD 客户现在Community (GCC) 中等和GCC合规性管理器。
 
 ## <a name="march-2021"></a>2021 年 3 月
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 157b3166a957fb0e4ddcadcbb23121ce10dfce1c
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 054a684829217676df4bb3bf7d8469dbfc53a2a3
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214209"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265687"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -36,25 +36,32 @@ ms.locfileid: "62214209"
 > [!NOTE]
 > 从 2022 年 1 月底开始，适用于终结点 (的 Microsoft Defender) 在 macOS 上面向最终用户的 MDE 体验将被引用为"Microsoft Defender"。 
 > 
-> This change is currently available in the Beta (previously called Insider Fast) and Preview (previously called Insider Slow) update channels. 包含此更改的最低产品版本为 101.54.24。
-> 
-> 最终用户将观察到以下更改： 
-> - 应用程序安装路径已更改为 `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app` 。
-> - 在用户体验中，"Microsoft Defender ATP"的出现次数已替换为"Microsoft Defender"
+> This change is currently available in the Beta (previously called Insider Fast) and Preview (previously called Insider Slow) update channels. 包含此更改的最低产品版本为 101.56.35。 有关详细信息，请参阅与此版本对应的以下发行说明。
 > 
 > 此更改不会影响 `mdatp` 命令行工具。
 >
-> **需要操作**：如果您的企业具有依赖产品名称或应用程序安装路径的自定义配置，则必须使用上面列出的新值更新这些配置。
+> **需要的操作**：如果您的企业具有依赖产品名称或应用程序安装路径的自定义配置，则必须使用上面列出的新值更新这些配置。
+
+## <a name="1015635-20121121156350"></a>101.56.35 (20.121121.15635.0) 
+
+- 应用程序已从"Microsoft Defender ATP"重命名为"Microsoft Defender"。 最终用户将观察到以下更改：
+  - 应用程序安装路径已更改为 `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app`。
+  - 在用户体验中，"Microsoft Defender ATP"的出现次数已替换为"Microsoft Defender"
+- 解决了由于 Microsoft Defender for Endpoint for Mac 分发的网络内容筛选器导致某些 VPN 应用程序无法连接的问题
+- 解决了在 macOS 12.2 beta 2 中发现的问题，即安装程序包因操作系统 (OS) 中的更改而无法打开，导致无法安装具有某些特征的程序包。 虽然此操作系统更改似乎未包括在 macOS 12.2 的最终版本中，但可能会在将来的 macOS 版本中重新引入它。 因此，我们鼓励所有企业管理员将管理控制台中的 Microsoft Defender for Endpoint 程序包刷新到该产品版本 (或更高版本) 。
+- 解决了在一些 M1 设备上看到的问题，即产品遇到无效的反恶意软件定义，无法成功更新到一组有效定义。
+- `mdatp health` 输出已使用名为 的附加 `full_disk_access_enabled` 属性进行了扩展，可用于确定是否向 Microsoft Defender for Endpoint for Mac 的所有组件授予了完全磁盘访问。
+- Bug 修复&性能改进
 
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0) 
 
-- 不再支持 mojave () macOS 10.14
-- 在管理员通过 MDM 停止管理产品设置后，它现在恢复为它管理之前的值 (最终用户在本地配置的值，或者如果未显式提供此类本地值，则恢复为产品) 使用的默认值。 在此更改之前，在停止管理设置后，其托管值将保留，并且仍由产品使用。
+- 不再支持 (mojave) macOS 10.14
+- 在管理员通过 MDM 停止管理产品设置后，它现在恢复为它管理之前的值 (最终用户在本地配置的值，或者，如果未显式提供此类本地值，则恢复为产品) 使用的默认值。 在此更改之前，在停止管理设置后，其托管值将保留，并且仍由产品使用。
 - Bug 修复&性能改进
 
 ## <a name="1014925-20121092149250"></a>101.49.25 (20.121092.14925.0) 
 
-- 向命令行工具添加了一个新开关，以控制在按需扫描过程中是否扫描存档。 这可以通过 进行配置 `mdatp config scan-archives --value [enabled/disabled]` 。 默认情况下，这设置为 `enabled` 。
+- 向命令行工具添加了一个新开关，以控制在按需扫描过程中是否扫描存档。 这可以通过 进行配置 `mdatp config scan-archives --value [enabled/disabled]`。 默认情况下，这设置为 `enabled`。
 - 错误修补程序
 
 ## <a name="1014727-20121082147270"></a>101.47.27 (20.121082.14727.0) 
@@ -69,8 +76,8 @@ ms.locfileid: "62214209"
 ## <a name="1014110-20121072141100"></a>101.41.10 (20.121072.14110.0) 
 
 - 向命令行工具添加了新开关：
-  - 控制按需扫描的并行度。 这可以通过 进行配置 `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` 。 默认情况下，使用 的并行 `2` 度。
-  - 控制启用还是禁用安全智能更新后的扫描。 这可以通过 进行配置 `mdatp config scan-after-definition-update --value [enabled/disabled]` 。 默认情况下，这设置为 `enabled` 。
+  - 控制按需扫描的并行度。 这可以通过 进行配置 `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`。 默认情况下，使用 的并行 `2` 度。
+  - 控制启用还是禁用安全智能更新后的扫描。 这可以通过 进行配置 `mdatp config scan-after-definition-update --value [enabled/disabled]`。 默认情况下，这设置为 `enabled`。
 - 更改产品日志级别现在需要提升
 - Bug 修复&性能改进
 
@@ -106,7 +113,7 @@ ms.locfileid: "62214209"
 - 从此版本开始，在通过命令行客户端触发的按需防病毒扫描期间检测到的威胁将自动修正。 扫描期间通过用户界面触发的威胁仍然需要手动操作。
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
-  - `--top N`：显示前 N 个 (仅在还指定了 `--sort` 值时) 
+  - `--top N`：显示前 N 个 (仅在指定了 `--sort` 值时) 
 - 性能改进 (在将一些 BUG 修复) &使用时的性能改进
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0) 
@@ -115,7 +122,7 @@ ms.locfileid: "62214209"
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0) 
 
-- macOS 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。
+- macOS 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [适用于美国政府终结点客户的 Microsoft Defender](gov.md)。
 - 性能改进 (专为使用 XCode 模拟器应用修复错误) &的情况。
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
@@ -136,7 +143,7 @@ ms.locfileid: "62214209"
 > [!NOTE]
 > 此版本已弃用旧的命令行工具语法。 有关新语法的信息，请参阅 [Resources](mac-resources.md#configuring-from-the-command-line)。
 
-- 添加了一个新的命令行开关以禁用网络扩展 `mdatp system-extension network-filter disable` ：。 此命令可用于解决与 Mac 上的 Microsoft Defender for Endpoint 相关的网络问题
+- 添加了一个新的命令行开关以禁用网络扩展： `mdatp system-extension network-filter disable`。 此命令可用于解决与 Mac 上的 Microsoft Defender for Endpoint 相关的网络问题
 - Bug 修复&性能改进
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0) 
@@ -146,12 +153,12 @@ ms.locfileid: "62214209"
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0) 
 
 - 改进了在 macOS 11 Big Sur 上运行的代理的可靠性
-- 添加了一个新的命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV 排除 `mdatp scan custom` () 
+- 添加了新的命令行开关 (`--ignore-exclusions`) 自定义扫描过程中忽略 AV 排除 `mdatp scan custom` () 
 - Bug 修复&性能改进
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0) 
 
-- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 错误（清单为内核内核错误）的条件
+- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 清单到内核内核错误时的条件
 - 修复了在 Mac 11 和 Big Sur (运行时 Endpoint Security 系统扩展) 
 - 错误修补程序
 
@@ -169,12 +176,12 @@ ms.locfileid: "62214209"
 
 - 该产品版本已在 macOS Big Sur 11 beta 9 上经过验证
 
-- 命令行工具的新 `mdatp` 语法现在是默认语法。 有关新语法详细信息，请参阅[macOS](mac-resources.md#configuring-from-the-command-line)上的 Microsoft Defender for Endpoint 的资源
+- 命令行工具的新 `mdatp` 语法现在是默认语法。 有关新语法详细信息，请参阅 [macOS 上的 Microsoft Defender for Endpoint 的资源](mac-resources.md#configuring-from-the-command-line)
 
   > [!NOTE]
-  > **2021** 年 1 月 1 日将从产品中删除旧的命令行工具语法。
+  > 将在 **2021 年 1 月 1** 日从产品中删除旧的命令行工具语法。
 
-- 使用新的参数扩展 () ，该参数允许将诊断日志 `mdatp diagnostic create` `--path [directory]` 保存到其他目录
+- 使用 `mdatp diagnostic create` 新的参数扩展 `--path [directory]` () ，该参数允许将诊断日志保存到其他目录
 - Bug 修复&性能改进
 
 ## <a name="1010949"></a>101.09.49
@@ -185,10 +192,10 @@ ms.locfileid: "62214209"
 
 ## <a name="1010723"></a>101.07.23
 
-- 向 输出添加了新字段，用于检查被动模式的状态和EDR `mdatp --health` ID
+- 向 输出添加了新`mdatp --health`字段，用于检查被动模式的状态和EDR ID
 
   > [!NOTE]
-  > `mdatp --health` 将在将来的 `mdatp health` 产品更新中替换为 。
+  > `mdatp --health` 将在将来的产品 `mdatp health` 更新中替换为 。
 
 - 修复了在用户界面中自动提交示例未标记为托管的错误
 - 添加了用于控制防病毒扫描历史记录中项目的保留的新设置。 现在可以指定 [在扫描](mac-preferences.md#antivirus-scan-history-retention-in-days) 历史记录中保留项目的天数，并指定扫描历史记录中 [的最大项目数](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
@@ -196,7 +203,7 @@ ms.locfileid: "62214209"
 
 ## <a name="1010663"></a>101.06.63
 
-- 解决了版本 中引入的性能回归 `101.05.17` 问题。 该回归与修复一起引入，以消除一些客户在访问 SMB 共享时观察到的内核错误。 我们已还原此代码更改，并正在调查消除内核内核错误的替代方法。
+- 解决了版本 中引入的性能回归问题 `101.05.17`。 该回归与修复一起引入，以消除一些客户在访问 SMB 共享时观察到的内核错误。 我们已还原此代码更改，并正在调查消除内核内核错误的替代方法。
 
 ## <a name="1010517"></a>101.05.17
 
@@ -242,7 +249,7 @@ ms.locfileid: "62214209"
 ## <a name="1008692"></a>100.86.92
 
 - 有关与时间机兼容性的改进
-- 解决了产品有时在卸载期间未清理所有 `/Library/Application Support/Microsoft/Defender` 文件的问题
+- 解决了产品有时在卸载期间未清理 `/Library/Application Support/Microsoft/Defender` 所有文件的问题
 - 通过 Microsoft AutoUpdate 更新 Microsoft 产品时降低了产品的 CPU 使用率
 - Bug 修复&性能改进
 
@@ -257,7 +264,7 @@ ms.locfileid: "62214209"
 
 ## <a name="1008373"></a>100.83.73
 
-- 为 IT 管理员添加了更多有关排除[管理](mac-preferences.md#exclusion-merge-policy)、威胁类型[](mac-preferences.md#threat-type-settings-merge-policy)设置管理和禁止[威胁操作的控制](mac-preferences.md#disallowed-threat-actions)
+- 为 IT 管理员添加了更多有关排除[项管理](mac-preferences.md#exclusion-merge-policy)、威胁类型设置[](mac-preferences.md#threat-type-settings-merge-policy)管理和禁止[威胁操作的控制](mac-preferences.md#disallowed-threat-actions)
 - 当设备上未启用"完全磁盘访问"时，现在状态菜单中将显示一条警告
 - Bug 修复&性能改进
 
@@ -299,11 +306,11 @@ ms.locfileid: "62214209"
 - 增加了对 macOS 加泰罗尼亚语的支持
 
   > [!CAUTION]
-  > macOS 10.15 (Catalina) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序在未经明确同意的情况下 (访问磁盘上的某些位置，如) 下载、桌面等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，未经明确同意 (应用程序无法访问磁盘上的某些位置，如文档、下载、桌面) 等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
   >
   > 授予此同意的机制取决于你部署适用于终结点的 Microsoft Defender 的方式：
   >
   > - 有关手动部署，请参阅手动部署主题 [中的更新](mac-install-manually.md#how-to-allow-full-disk-access) 说明。
-  > - 有关托管部署，请参阅基于[JAMF](mac-install-with-jamf.md)的部署和基于Microsoft Intune[部署主题中的更新](mac-install-with-intune.md#create-system-configuration-profiles)说明。
+  > - 有关托管部署，请参阅基于 [JAMF](mac-install-with-jamf.md) 的部署和基于Microsoft Intune[部署主题中的更新](mac-install-with-intune.md#create-system-configuration-profiles)说明。
 
 - Bug 修复&性能改进

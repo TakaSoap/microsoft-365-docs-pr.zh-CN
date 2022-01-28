@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在安全与合规中心内为 DLP 创建、修改、删除和测试&类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a25293740dd856d93726e5eaf27e3a92c18af56
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 049d6b4045e19f5f9d4de7f52e5e8b99bd81a2b9
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241923"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265531"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自定义敏感信息类型入门
 
@@ -57,7 +57,7 @@ ms.locfileid: "62241923"
 
 使用以下步骤可以创建完全定义的新敏感信息类型。 
 
-1. 在合规性中心中，转到"**数据分类** \> **""敏感信息类型"，** 然后选择"**创建敏感信息类型"。**
+1. 在合规性中心中，转到"**数据分类**\>""敏感信息 **类型"**，然后选择"**创建敏感信息类型"**。
 
 2. 填写“**名称**”和“**说明**” 的值，然后选择“**下一步**”。
 
@@ -65,7 +65,7 @@ ms.locfileid: "62241923"
 
 4. 选择模式的默认可信度。 这些值是“**低可信度**”、“**中可信度**”和“**高可信度**”。
 
-5. 选择并定义 **主要元素**。 主要元素可以是带有可选验证程序的 **正则表达式**、**关键字列表**、**关键字字典** 或预先配置的 **函数** 之一。 有关 DLP 函数的详细信息，请参阅 [DLP 函数查找的内容](what-the-dlp-functions-look-for.md)。 有关日期和校验和验证程序的信息，请参阅有关 [正则表达式验证程序详细信息](#more-information-on-regular-expression-validators)。
+5. 选择并定义 **主要元素**。 主要元素可以是带有可选验证程序的 **正则表达式**、**关键字列表**、**关键字字典** 或预先配置的 **函数** 之一。 有关 DLP 函数的详细信息，请参阅 [DLP 函数查找的内容](what-the-dlp-functions-look-for.md)。 有关日期和校验和验证程序的信息，请参阅 [有关正则表达式验证程序详细信息](#more-information-on-regular-expression-validators)。
 
 6. 填写 **字符领近度** 的值。
 
@@ -157,17 +157,17 @@ ms.locfileid: "62241923"
 - 通信合规性
 - 记录管理
 - Microsoft Defender for Cloud Apps
-- 隐私管理
+- Microsoft 管理
 
-若要使扫描的项目满足规则条件，任何单个项中 SIT 的唯一实例数都必须介于最小值和最大值之间。 这称为实例 **计数**。
+若要使扫描的项目满足规则条件，任何单个项中 SIT 的唯一实例数都必须介于最小值和最大值之间。 这称为 **实例计数**。
 
 - **Min** 字段：在 (项) 一项中必须找到的 SIT 的唯一实例的最小数量下限。 min 字段支持以下值：
     - 1 到 500
 - **最大** 字段：在项中可找到并仍触发匹配的 SIT 唯一实例数的上限。 max 字段支持以下值：
     - 1 到 500 - 当您要针对项中的 SIT 实例数设置一个小于或 500 的特定上限时，请使用此限制。
-    - Any - 当在扫描的项中发现 SIT 的唯一实例数量未定义且唯一实例数达到或超过唯一实例值的最小数目时，使用 。 `Any` 换句话说，只要达到最小值，就符合唯一实例计数条件。
+    - Any - `Any` 当在扫描的项中发现 SIT 的唯一实例数量未定义且唯一实例数达到或超过唯一实例值的最小数目时，使用 。 换句话说，只要达到最小值，就符合唯一实例计数条件。
 
-例如，如果希望规则在单个项中至少找到 500 个 SIT 唯一实例时触发匹配，将最小值设置为 ，将最大值 `500` 设置为 `Any` 。
+例如，如果希望规则在单个项中至少找到 500 个 SIT  `500` 唯一实例时触发匹配，将最小值设置为 ，将最大值设置为 。 `Any`
 
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>在合规中心内修改自定义敏感信息类型
 
@@ -245,17 +245,17 @@ If Mod value != digit 8
 
 2. 然后添加日期验证程序。
 
-3. 选择日期格式和开始偏移。 由于日期字符串是前六个数字，因此偏移量是 `0` 。
+3. 选择日期格式和开始偏移。 由于日期字符串是前六个数字，因此偏移量是 `0`。
 
    :::image type="content" alt-text="已配置日期验证器的屏幕截图。" source="../media/date-validator.png" lightbox="../media/date-validator.png":::
 
 ### <a name="functional-processors-as-validators"></a>作为验证程序的功能处理器
 
-你可以对一些最常用的 SIT 使用函数处理器作为验证程序。 这允许你定义自己的正则表达式，同时确保它们通过 SIT 所需的其他检查。 例如，Func_India_Aadhar定义自定义正则表达式传递了"印度 Aadhar"卡所需的验证逻辑。 有关可以用作验证符的 DLP 函数详细信息，请参阅 [DLP 函数查找什么](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for)。 
+你可以对一些最常用的 SIT 使用函数处理器作为验证程序。 这允许你定义自己的正则表达式，同时确保它们通过 SIT 所需的其他检查。 例如，Func_India_Aadhar定义自定义正则表达式传递"印度 Aadhar"卡所需的验证逻辑。 有关可以用作验证符的 DLP 函数详细信息，请参阅 [DLP 函数查找什么](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for)。 
 
 ### <a name="luhn-check-validator"></a>Luhn 检查验证程序
 
-如果您有一个自定义敏感信息类型，其中包括应传递 Luhn 算法的正则表达式，您可以使用 [Luhn 检查验证程序](https://en.wikipedia.org/wiki/Luhn_algorithm)。
+如果您具有包含应传递 Luhn 算法的正则表达式的自定义敏感信息类型，您可以使用 [Luhn 检查验证程序](https://en.wikipedia.org/wiki/Luhn_algorithm)。
 
 ## <a name="more-information-on-additional-checks"></a>关于其他检查的详细信息
 
@@ -293,6 +293,6 @@ If Mod value != digit 8
 >     2. “機密性が高い”、“机密的document”和“机密的 document”
 >
 > 当使用双字节连字符或双字节句号创建 regex 时，请确保像在 regex 中转义连字符或句号一样转义这两个字符。以下是供参考的示例 regex：
->    -  (？<！\d)  ([4][0-9] {3} [ \- ？\-\t]*[0-9] {4}) 
+>    -  (？<！\d)  ([4][0-9]{3}[\-？\-\t]*[0-9]{4}) 
 >
 > 建议在关键词列表中使用字符串匹配而不是单词匹配。

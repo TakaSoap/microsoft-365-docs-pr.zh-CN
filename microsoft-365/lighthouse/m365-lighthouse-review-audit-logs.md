@@ -16,17 +16,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，了解如何查看审核日志。
-ms.openlocfilehash: b07f308e5098ab5b7c9b091d3fe55b882cbb8649
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: bbc0aadff1f77e2720f87ca3b5d23a0aa920b3e9
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242137"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265579"
 ---
 # <a name="review-audit-logs"></a>查看审核日志
 
 > [!NOTE]
 > 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+
 Microsoft 365 Lighthouse审核日志记录在 Lighthouse 或其他服务中生成更改Microsoft 365操作。 创建、编辑、删除、分配和远程操作都将创建审核事件，你可以查看这些事件。 默认为所有客户启用审核功能。 该功能无法禁用。
 
 ## <a name="before-you-begin"></a>准备工作
