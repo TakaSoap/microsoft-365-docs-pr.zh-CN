@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 本文将了解如何根据组织需求创建、测试和调整 DLP 策略。
-ms.openlocfilehash: f6997a6f97aa103e6d8af2ff85fe5a39ef062050
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: cc31d067eaf2684c17a09d7b2731a5cc3500af76
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938933"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271942"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
@@ -44,7 +44,7 @@ DLP 检查电子邮件和文件中敏感信息，如信用卡号。 使用 DLP �
     
 2. 在安全 &amp; 合规中心的“**权限**”页面上创建一个角色组。 
 
-3. 创建角色组时，请使用" **选择** 角色"部分将以下角色添加到角色组 **：DLP Compliance Management**。
+3. 创建角色组时，请使用" **选择** 角色"部分将以下角色添加到角色组： **DLP 合规性管理**。
     
 4. 使用“**选择成员**”部分，将先前创建的 Microsoft 365 组添加到角色组中。
 
@@ -56,21 +56,21 @@ DLP 检查电子邮件和文件中敏感信息，如信用卡号。 使用 DLP �
 
 ### <a name="roles-and-role-groups-in-preview"></a>预览版中的角色和角色组
 
-预览版中的角色和角色组可以进行测试以微调访问控制。
+预览版中有角色和角色组，你可以测试这些角色和角色组以微调访问控制。
 
-以下是预览中Microsoft 信息保护 (MIP) 角色的列表。 若要详细了解它们，请参阅安全 [与合规&中的角色](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+下面是预览版中Microsoft 信息保护 （MIP） 角色的列表。 若要了解有关它们的详细信息，请参阅[安全与合规中心](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)中的角色
 
 - 信息保护管理员
 - 信息保护分析师
-- 信息保护调查人员
+- 信息保护调查员
 - 信息保护读者
 
-下面是预览中的 MIP 角色组列表。 若要详细了解 ，请参阅安全 [与合规中心&组](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+下面是处于预览状态的 MIP 角色组的列表。 若要了解更多信息，请参阅安全 [与合规中心&组](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - 信息保护
 - 信息保护管理员
 - 信息保护分析师
-- 信息保护调查人员
+- 信息保护调查员
 - 信息保护读者
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>DLP 如何检测敏感信息
@@ -92,9 +92,9 @@ DLP 通过正则表达式 (RegEx) 模式匹配，以及其他指示器（如某�
 
 当数据泄露的风险并不明显时，很难确定应从何处开始实施 DLP。 幸运的是，DLP 策略可以在"测试模式"中运行，从而允许您在启用它们之前评估其有效性和准确性。
 
-dlp policies for Exchange Online can be managed through the Exchange admin center. 但是，可以通过安全与合规中心配置所有& DLP 策略，以便本文中将使用此策略进行演示。 在安全&合规中心，您可以在数据丢失防护策略下 **找到** DLP  >  **策略**。 选择 **"创建策略** "开始。
+dlp policies for Exchange Online can be managed through the Exchange admin center. 但是，可以通过安全与合规中心配置所有& DLP 策略，以便本文中将使用此策略进行演示。 在安全&合规中心，您可以在"数据丢失防护""策略"**下** > 找到 DLP **策略**。 选择 **"创建策略** "开始。
 
-Microsoft 365提供了一系列可用于创建策略的[DLP](what-the-dlp-policy-templates-include.md)策略模板。 假设你是澳大利亚企业。 可以筛选澳大利亚上的模板，然后选择"财务、医疗与健康"和"隐私"。
+Microsoft 365提供了一系列可用于创建策略的 [DLP](what-the-dlp-policy-templates-include.md) 策略模板。 假设你是澳大利亚企业。 可以筛选澳大利亚上的模板，然后选择"财务、医疗与健康"和"隐私"。
 
 ![用于选择国家/地区的选项。](../media/DLP-create-test-tune-choose-country.png)
 
@@ -110,11 +110,11 @@ Microsoft 365提供了一系列可用于创建策略的[DLP](what-the-dlp-policy
 
 ![用于选择所有位置的选项。](../media/DLP-create-test-tune-choose-locations.png)
 
-在 **"策略设置** 步骤中，现在只需接受默认值。 您可以自定义 DLP 策略，但默认设置是很好的开始。
+第一步 **设置**，现在只需接受默认值。 您可以自定义 DLP 策略，但默认设置是很好的开始。
 
 ![用于自定义要保护的内容类型的选项。](../media/DLP-create-test-tune-default-customization-settings.png)
 
-单击下一步后，**你将看到一个包含更多自定义 **选项设置** 策略策略页面。 对于你刚刚测试的策略，你可以在这里开始进行一些调整。
+单击下一步后，**你将看到一个包含更多自定义选项 **设置** 策略策略页面。 对于你刚刚测试的策略，你可以在这里开始进行一些调整。
 
 - 我目前已关闭策略提示，如果你只是测试了一些内容，并且还不想向用户显示任何内容，这是一个合理的步骤。 策略提示向用户显示即将违反 DLP 策略的警告。 例如，Outlook用户会看到一条警告，提示他们附加的文件包含信用卡号，并会导致其电子邮件被拒绝。 策略提示的目标是在不符合行为发生之前停止该行为。
 - 我还将实例数从 10 减少为 1，以便此策略将检测澳大利亚 PII 数据的任何共享，而不只是批量共享数据。
@@ -130,7 +130,7 @@ Microsoft 365提供了一系列可用于创建策略的[DLP](what-the-dlp-policy
 
 ## <a name="test-a-dlp-policy"></a>测试 DLP 策略
 
-你可以坐在一起等待正常用户活动触发策略，也可以尝试自己触发它。 之前我链接到 ["敏感信息类型"实体](sensitive-information-type-entity-definitions.md)定义，其中提供了有关如何触发 DLP 匹配的信息。
+你可以坐在一起等待正常用户活动触发策略，也可以尝试自己触发它。 我之前链接到 ["敏感信息类型"实体](sensitive-information-type-entity-definitions.md)定义，其中提供了有关如何触发 DLP 匹配的信息。
 
 例如，我为本文创建的 DLP 策略将检测澳大利亚税号 (TFN) 。 根据文档，匹配基于以下条件。
 
@@ -140,7 +140,7 @@ Microsoft 365提供了一系列可用于创建策略的[DLP](what-the-dlp-policy
 
 ![不通过校验和的澳大利亚税号。](../media/DLP-create-test-tune-email-test1.png)
 
-相比之下，包含单词"Tax file number"和通过校验和的有效 TFN 的电子邮件将触发策略。 对于此处的记录，我使用的 TFN 来自生成有效（但不是正版）TFN 的网站。 此类网站非常有用，因为在测试 DLP 策略时最常见的错误之一是使用 无效 的假数，并且不会传递校验和 (因此不会触发策略) 。
+相比之下，包含单词"Tax file number"和通过校验和的有效 TFN 的电子邮件将触发策略。 对于此处的记录，我使用的 TFN 来自生成有效（但不是正版）TFN 的网站。 此类网站非常有用，因为测试 DLP 策略时最常见的错误之一是使用 无效 且不会传递校验和 (因此不会触发策略) 。
 
 ![通过校验和的澳大利亚税号。](../media/DLP-create-test-tune-email-test2.png)
 
@@ -176,7 +176,7 @@ Microsoft 365提供了一系列可用于创建策略的[DLP](what-the-dlp-policy
 
 ![用于编辑规则部分的选项。](../media/DLP-create-test-tune-editing-options.png)
 
-对于本演示，我向策略添加了用户通知 (在没有足够用户意识培训) 的情况下执行此操作，并且允许用户使用业务理由或将策略标记为误报来替代策略。 如果要包含有关组织策略的其他任何信息，也可以自定义电子邮件和策略提示文本，或者提示用户联系支持人员（如果他们有疑问）。
+对于本演示，我向策略添加了用户通知 (在没有足够用户意识培训) 的情况下执行此操作，并允许用户使用业务理由或将策略标记为误报来替代策略。 如果要包含有关组织策略的其他任何信息，也可以自定义电子邮件和策略提示文本，或者提示用户联系支持人员（如果他们有疑问）。
 
 ![用户通知和替代的选项。](../media/DLP-create-test-tune-user-notifications.png)
 
@@ -192,9 +192,9 @@ Microsoft 365提供了一系列可用于创建策略的[DLP](what-the-dlp-policy
 
 ![在测试模式下显示策略提示的选项。](../media/DLP-create-test-tune-show-policy-tips.png)
 
-在服务器端 (或云端（如果) ，由于处理间隔不同，更改可能不会立即生效。 如果要进行向用户显示新策略提示的 DLP 策略更改，用户可能不会看到更改立即在 Outlook 客户端中生效，这将每 24 小时检查一次策略更改。 如果你想要加快测试速度，可以使用此注册表修补程序从 [PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451)项中清除上次下载时间戳。 Outlook下一次重启并开始撰写电子邮件时，系统将会下载最新策略信息。
+在服务器端 (或云端（如果) ，由于处理间隔不同，更改可能不会立即生效。 如果要进行向用户显示新策略提示的 DLP 策略更改，则用户可能不会看到更改立即在 Outlook 客户端中生效，从而每 24 小时检查一次策略更改。 如果你想要加快测试速度，可以使用此注册表修补程序从 [PolicyNudges 项中清除上次下载时间戳](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451)。 Outlook下一次重启并开始撰写电子邮件时，系统将会下载最新策略信息。
 
-如果已启用策略提示，用户将开始看到 Outlook 提示，并且可以在出现误报时向用户报告误报。
+如果已启用策略提示，用户将开始在策略提示Outlook，并且可以在出现误报时向用户报告误报。
 
 ![策略提示，提供报告误报的选项。](../media/DLP-create-test-tune-policy-tip-in-outlook.png)
 
@@ -214,7 +214,7 @@ DLP 策略模板并非开箱即用。 您可能发现环境中出现一些误报
 
 ![显示误报的事件报告。](../media/DLP-create-test-tune-false-positive-incident-report.png)
 
-此驱动程序的许可证案例是一个很好的示例来深入了解。 出现此误报的原因是，"澳大利亚驾驶证"类型由任何 9 位字符串 (（即使是 10 位字符串) 的一部分）触发，该字符串类型与关键字"Driver nsw" (不区分大小写) 接近 300 个字符。 因此，它由电话号码和电子邮件签名触发，仅仅是因为用户恰好位于北京。
+此驱动程序的许可证案例是一个很好的示例来深入了解。 出现此误报的原因是，"澳大利亚驾驶证"类型由任何 9 位字符串 (（即使是 10 位字符串) 的一部分）触发，该字符串类型与关键字"）"） (不区分大小写的) 接近 300 个字符。 因此，它由电话号码和电子邮件签名触发，仅仅是因为用户恰好位于北京。
 
 
 一个选项是从策略中删除澳大利亚驾驶证信息类型。 它就在那里，因为它是 DLP 策略模板的一部分，但我们不强制使用它。 如果你只对税务文件编号（而不是驱动程序许可证）感兴趣，则只需将其删除。 例如，你可以将其从策略中的低容量规则中删除，但将其保留为高容量规则，以便仍检测到多个驱动程序许可证的列表。
@@ -225,7 +225,7 @@ DLP 策略模板并非开箱即用。 您可能发现环境中出现一些误报
 
 除了更改实例计数之外，还可以调整匹配准确度 (可信度) 。 如果您的敏感信息类型具有多个模式，您可以调整规则中的匹配准确度，以便规则仅匹配特定模式。 例如，为了帮助减少误报，你可以设置规则的匹配准确度，以便它仅匹配可信度最高的模式。 有关置信水平详细信息，请参阅 [如何使用可信度调整规则](data-loss-prevention-policies.md#match-accuracy)。
 
-最后，如果你希望更高级一点，可以自定义任何敏感信息类型，例如，可以从澳大利亚驾驶证号码的关键字列表中删除"澳大利亚 NSW"，以消除上面触发的误报。 [](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) 若要了解如何使用 XML 和 PowerShell 执行此操作，请参阅自定义内置 [敏感信息类型](customize-a-built-in-sensitive-information-type.md)。
+最后，如果你希望更高级一点，可以自定义任何敏感信息类型，例如，可以从澳大利亚驾驶证号码的关键字列表中删除"澳大利亚 NSW"，以消除上面触发的误报。[](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) 若要了解如何使用 XML 和 PowerShell 执行此操作，请参阅自定义 [内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)。
 
 ## <a name="turn-on-a-dlp-policy"></a>启用 DLP 策略
 
@@ -233,10 +233,11 @@ DLP 策略模板并非开箱即用。 您可能发现环境中出现一些误报
 
 ![用于打开策略的选项。](../media/DLP-create-test-tune-turn-on-policy.png)
  
-如果你正在等待查看策略何时生效，连接安全 & 合规中心[PowerShell](/powershell/exchange/connect-to-scc-powershell)并运行[Get-DlpCompliancePolicy cmdlet](/powershell/module/exchange/get-dlpcompliancepolicy)以查看 DistributionStatus。
+如果你正在等待查看策略何时生效，连接安全&[合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 并运行 [Get-DlpCompliancePolicy cmdlet](/powershell/module/exchange/get-dlpcompliancepolicy) 以查看 DistributionStatus。
 
-![在 PowerShell 中运行 cmdlet。](../media/DLP-create-test-tune-PowerShell.png)
-
+ ```powershell
+ Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus
+ ```
 启用 DLP 策略后，您应该运行您自己的一些最终测试，以确保发生预期的策略操作。 如果你尝试测试信用卡数据等内容，则有一些在线网站包含如何生成示例信用卡或其他个人信息的信息，这些信息将传递校验和并触发策略。
 
 允许用户替代的策略将在策略提示中向用户显示该选项。

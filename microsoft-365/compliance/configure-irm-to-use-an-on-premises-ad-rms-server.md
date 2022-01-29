@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何在 Exchange Online 中配置信息权限 (IRM) ，以使用 AD RMS (Active Directory 权限管理服务) 服务器。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89ef25adf41c80abfd04ffdc51a32ba2cbef0c5d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f87992fc9be676b9485d6ec7a7b7ff1f3a4d39d9
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153182"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271546"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>将 IRM 配置为使用本地 AD RMS 服务器
 
 为了与本地部署一同使用，Exchange Online 中的信息权限管理 (IRM) 使用 Active Directory Rights Management Services (AD RMS) ，这是 Windows Server 2008 及更高版本中的一种信息保护技术。 通过将 AD RMS 权限策略模板应用于电子邮件，可将 IRM 保护应用于电子邮件。 权限附加到邮件本身，以便联机和脱机以及组织防火墙内外进行保护。
 
-本主题显示了如何将 IRM 配置为使用 AD RMS 服务器。 有关将新功能用于 Office 365 邮件加密 和 Azure Azure Active Directory 的信息，请参阅 Office 365 邮件加密[FAQ](./ome-faq.yml)。
+本主题显示了如何将 IRM 配置为使用 AD RMS 服务器。 有关将新功能用于 Office 365 邮件加密 和 Azure Azure Active Directory的信息，请参阅 Office 365 邮件加密 [FAQ](./ome-faq.yml)。
 
 有关 Exchange Online 中 IRM 的详细信息，请参阅[Exchange Online 中的信息权限管理](information-rights-management-in-exchange-online.md)。
 
@@ -42,7 +42,7 @@ ms.locfileid: "60153182"
 
 - 有关如何安装和配置 Windows PowerShell 以及连接到服务的详细信息，请参阅[使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 Exchange Online 中适用于 Exchange 管理中心的键盘[快捷方式](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 Exchange 管理中心的键盘[Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。
@@ -70,7 +70,7 @@ ms.locfileid: "60153182"
 
 4. 在“操作”窗格中，单击“导出受信任的发布域”。
 
-5. 在“发布域文件”框中，单击“另存为”将文件保存到本地计算机上的特定位置。 键入文件名，确保指定文件 `.xml` 扩展名，然后单击"保存 **"。**
+5. 在“发布域文件”框中，单击“另存为”将文件保存到本地计算机上的特定位置。 键入文件名，确保指定 `.xml` 文件扩展名，然后单击"保存 **"**。
 
 6. 在“密码”和“确认密码”框中，键入将用于对受信任的发布域文件加密的强密码。在将 TPD 导入到基于云的电子邮件组织时，必须指定此密码。
 
@@ -81,24 +81,24 @@ ms.locfileid: "60153182"
 若要导入 TPD，请在 Windows PowerShell 中运行以下命令：
 
 ```powershell
-Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byte -Path <path to exported TPD file> -ReadCount 0)) -Name "<name of TPD>" -ExtranetLicensingUrl <URL> -IntranetLicensingUrl <URL>
+Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('<path to exported TPD file>')) -Name "<name of TPD>" -ExtranetLicensingUrl <URL> -IntranetLicensingUrl <URL>
 ```
 
-您可在 Active Directory Rights Management Services 控制台中获取  _ExtranetLicensingUrl_ 和  _IntranetLicensingUrl_ 参数的值。在控制台树中选择 AD RMS 群集。许可 URL 显示在结果窗格中。当必须对内容进行解密时以及 Exchange Online 需要确定要使用的 TPD 时，电子邮件客户端会使用这些 URL。
+可以在控制台中获取 _ExtranetLicensingUrl_ 和 _IntranetLicensingUrl_ Active Directory Rights Management Services值。 在控制台树中选择 AD RMS 群集。 许可 URL 显示在结果窗格中。 当必须对内容进行解密时以及 Exchange Online 需要确定要使用的 TPD 时，电子邮件客户端会使用这些 URL。
 
 当运行此命令时，系统会提示您输入密码。输入您在从 AD RMS 服务器导出 TPD 时指定的密码。
 
 例如，以下命令使用您从 AD RMS 服务器导出并保存到管理员帐户桌面的 XML 文件来导入名为 Exported TPD 的 TPD。Name 参数用于为 TPD 指定名称。
 
 ```powershell
-Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byte -Path C:\Users\Administrator\Desktop\ExportTPD.xml -ReadCount 0)) -Name "Exported TPD" -ExtranetLicensingUrl https://corp.contoso.com/_wmcs/licensing -IntranetLicensingUrl https://rmsserver/_wmcs/licensing
+Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('C:\Users\Administrator\Desktop\ExportTPD.xml')) -Name "Exported TPD" -ExtranetLicensingUrl https://corp.contoso.com/_wmcs/licensing -IntranetLicensingUrl https://rmsserver/_wmcs/licensing
 ```
 
 有关语法和参数的详细信息，请参阅 [Import-RMSTrustedPublishingDomain](/powershell/module/exchange/import-rmstrustedpublishingdomain)。
 
-#### <a name="how-do-you-know-this-step-worked"></a>如何判断这一步生效？
+#### <a name="how-do-you-know-that-you-successfully-imported-the-tpd"></a>您如何知道已成功导入 TPD？
 
-若要验证是否成功导入了 TPD，请运行 **Get-RMSTrustedPublishingDomain** cmdlet 检索组织中 Exchange Online TPD。 有关详细信息，请参阅 [Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain) 中的示例。
+若要验证是否成功导入了 TPD，请运行 **Get-RMSTrustedPublishingDomain** cmdlet 检索 Exchange Online 中的 TPD。 有关详细信息，请参阅 [Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain) 中的示例。
 
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>步骤 3：使用 Exchange 命令行管理程序 来分发 AD RMS 权限策略模板
 
@@ -110,7 +110,7 @@ Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byt
 Get-RMSTemplate -Type All | fl
 ```
 
-如果  _Type_ 参数的值为  `Archived`，则模板对用户不可见。 只有默认 TPD 中的分布式模板在 Outlook 网页版。
+如果 _Type_ 参数的值为 ， `Archived`则模板对用户不可见。 只有默认 TPD 中的分布式模板在 Outlook 网页版。
 
 若要分发模板，请运行以下命令：
 
@@ -126,16 +126,14 @@ Set-RMSTemplate -Identity "Company Confidential" -Type Distributed
 
 有关语法和参数的详细信息，请参阅 [Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate) 和 [Set-RMSTemplate](/powershell/module/exchange/set-rmstemplate)。
 
-**“不要转发”模板**
+#### <a name="the-do-not-forward-template"></a>"不要转发"模板
 
 将默认 TPD 从内部部署组织导入到 Exchange Online 时，会导入一个名为“不要转发”的 AD RMS 权限策略模板。 默认情况下，导入默认 TPD 时将分发此模板。 使用 **Set-RMSTemplate** cmdlet 不能修改" **不要转发"** 模板。
 
 将“不要转发”模板应用于邮件时，只有邮件的收件人可读取该邮件。另外，收件人不能执行以下操作：
 
 - 将邮件转发给其他人。
-
 - 复制邮件的内容。
-
 - 打印邮件。
 
 > [!IMPORTANT]
@@ -143,7 +141,7 @@ Set-RMSTemplate -Identity "Company Confidential" -Type Distributed
 
 您可在内部部署组织中的 AD RMS 服务器上创建其他 AD RMS 权限策略模板，以满足 IRM 保护要求。如果创建其他 AD RMS 权限策略模板，则必须再次从内部部署 AD RMS 服务器导出 TPD，并刷新基于云的电子邮件组织中的 TPD。
 
-#### <a name="how-do-you-know-this-step-worked"></a>如何判断这一步生效？
+#### <a name="how-do-you-know-that-you-successfully-distributed-the-ad-rms-rights-policy-template"></a>您如何知道已成功分发 AD RMS 权限策略模板？
 
 若要验证是否成功分发了 AD RMS 权限策略模板，请运行 **Get-RMSTemplate** cmdlet 检查模板的属性。 有关详细信息，请参阅 [Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate) 中的示例。
 
@@ -157,7 +155,7 @@ Set-IRMConfiguration -InternalLicensingEnabled $true
 
 有关语法和参数的详细信息，请参阅 [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)。
 
-#### <a name="how-do-you-know-this-step-worked"></a>如何判断这一步生效？
+#### <a name="how-do-you-know-that-you-successfully-enabled-irm"></a>您如何知道已成功启用 IRM？
 
 若要验证是否已成功启用 IRM，请运行 [Get-IRMConfiguration](/powershell/module/exchange/get-irmconfiguration) cmdlet 来检查 Exchange Online 组织中的 IRM 配置。
 
@@ -168,4 +166,4 @@ Set-IRMConfiguration -InternalLicensingEnabled $true
 
 - 使用 **Test-IRMConfiguration** cmdlet 测试 IRM 功能。 有关详细信息，请参阅 [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration) 中的"示例 1"。
 
-- 在"更多选项"图标Outlook 网页版扩展菜单中选择"设置权限"选项，在Outlook 网页版) 中撰写新邮件并受 I (RM ![ ](../media/ITPro-EAC-MoreOptionsIcon.gif) 保护。
+- 在"更多选项"图标Outlook 网页版扩展菜单中选择"设置权限"选项，在  Outlook 网页版 中撰写新邮件，然后使用 I (![](../media/ITPro-EAC-MoreOptionsIcon.gif) RM 进行) 。
