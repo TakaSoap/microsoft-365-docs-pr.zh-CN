@@ -360,6 +360,8 @@
               href: sit-use-exact-data-refresh-data.md
             - name: 在数据丢失防护策略中使用命名实体（预览版）
               href: named-entities-use.md
+            - name: 敏感信息类型的常见使用方案
+              href: sit-common-scenarios.md
         - name: 敏感信息类型参考
           items:
             - name: 敏感信息类型属性定义
@@ -575,8 +577,8 @@
               href: retention-policies-yammer.md
             - name: Exchange
               href: retention-policies-exchange.md
-            - name: 保留的常见设置
-              href: retention-settings.md
+        - name: 保留和删除的常见设置
+          href: retention-settings.md
         - name: 保留和删除限制
           href: retention-limits.md
     - name: 信息管理政策
@@ -1046,10 +1048,6 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: 能源服务安全性和合规性
           href: ../solutions/energy-secure-collaboration.md
-- name: 隐私管理
-  items:
-    - name: 了解隐私管理
-      href: /privacy/solutions/privacymanagement/privacy-management
 - name: 混合合规性功能
   items:
     - name: 带 AD RMS 的 Exchange Online 邮件加密
@@ -1063,5 +1061,7 @@
   href: ../security/index.yml
 - name: Microsoft 365 商业应用版
   href: /office365/admin/admin-home
+- name: Microsoft Priva
+  href: /privacy/priva/
 - name: 疑难解答
   href: /office365/troubleshoot/microsoft-365-compliance-welcome
