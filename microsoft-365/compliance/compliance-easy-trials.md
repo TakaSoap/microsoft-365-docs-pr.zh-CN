@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 关于合规性解决方案试用版。
-ms.openlocfilehash: 6a6c07ef6a0353cfe6c97381f8858e86c34121a1
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1d18cb21e3dfd0a5c318ec41a50c2926c1f692ab
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665128"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265675"
 ---
 # <a name="about-the-compliance-solutions-trial"></a>关于合规性解决方案试用版
 
@@ -33,7 +33,7 @@ Microsoft 365 合规性解决方案试用版是尝试 Microsoft 合规性解决�
 
 ## <a name="set-up-a-compliance-trial"></a>设置合规中心试用版
 
-可以使用左侧导航窗格中的 **试用版** 链接在 Microsoft 365 合规中心中注册试用版。
+可以使用左侧导航窗格中的 **试用版** 链接，从而在 [Microsoft 365 合规中心](https://go.microsoft.com/fwlink/p/?linkid=2077149) 内注册试用版。
 
 ## <a name="licensing"></a>许可
 
@@ -79,6 +79,11 @@ Microsoft 365 合规性解决方案试用版将逐步向满足特定条件（包
 
     利用端到端工作流来保留、收集、分析和导出响应组织内部和外部调查的内容。 法律团队还可以通过与案例中涉及的保管人沟通来管理整个法定保留通知过程。 [详细了解电子数据展示](ediscovery.md)
 
+- **信息治理**
+
+    使用自适应策略作用域自动执行保留策略覆盖范围。 此功能允许将保留策略动态定向到特定用户、组或网站。 当组织中发生更改时，这些策略会自动更新。 此外，使用自适应作用域的保留策略不受位置限制。 [了解自适应策略作用域的详细信息](create-retention-policies.md)。
+
+
 - **信息保护**
 
     通过 [敏感度标签](sensitivity-labels.md) 和 [数据丢失防护策略](dlp-learn-about-dlp.md) 实施 Microsoft 信息保护，以帮助发现、分类和保护敏感内容，无论其位于或转移到何处。
@@ -111,4 +116,4 @@ Microsoft 365 合规性解决方案试用版将逐步向满足特定条件（包
 
 - **记录管理**
 
-    使用集成的记录管理功能自动执行组织法规、法律和业务关键记录的保留计划。 获取从创建到协作、记录声明、保留和处置在内的完整内容生命周期支持。 [了解有关记录管理的详细信息](records-management.md)
+    使用集成记录管理功能:       - 将内容分类为记录，从而防止用户根据法规、法律或组织策略的要求编辑内容       - 当内容与你指定的条件匹配时，使用自动应用标签策略可自动将保留标签应用于内容       - 使用自适应作用域策略以将保留标签策略动态定向到位置，且不限制包含的位置数       - 获取完整的内容生命周期支持，包括在最终永久删除内容之前对其执行处置评审的功能。有关 Microsoft 记录管理的全部功能的详细信息，请参阅 [了解有关记录管理的详细信息](records-management.md)

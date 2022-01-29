@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 将Windows 10和 Windows 11 设备载入Microsoft 365
-ms.openlocfilehash: a83db434b488ce28c71df0fb7e3185be88b87b01
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: ec95fcbfca3ab41bb3a249534e5ff62721aac794
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950820"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272074"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>将Windows 10和 Windows 11 设备载入Microsoft 365概述
 
@@ -78,7 +78,7 @@ Microsoft 365终结点 DLP 允许监视Windows 10或 Windows 11 设备，并检�
 
 1. 必须运行Windows 10 x64 内部版本 1809 或更高版本或 Windows 11。
 
-2. 反恶意软件客户端的版本为 4.18.2009.7 或更高版本。 若要查看当前版本，请打开“Windows 安全中心”应用，选择“设置”图标，然后选择“关于”。 “反恶意软件客户端版本”下列出了版本号。 通过安装 Windows 更新 KB4052623，更新到最新的反恶意软件客户端版本。
+2. 反恶意软件客户端的版本为 4.18.2110 或更高版本。 若要查看当前版本，请打开“Windows 安全中心”应用，选择“设置”图标，然后选择“关于”。 “反恶意软件客户端版本”下列出了版本号。 通过安装 Windows 更新 KB4052623，更新到最新的反恶意软件客户端版本。
 
    > [!NOTE]
    > 无需任何 Windows 安全组件处于活动状态，但必须启用 [实时保护和行为监视器](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)）。
@@ -98,11 +98,11 @@ Microsoft 365终结点 DLP 允许监视Windows 10或 Windows 11 设备，并检�
    - [已建立混合 Azure AD 联接](/azure/active-directory/devices/concept-azure-ad-join-hybrid)。
    - [已完成 AAD 注册](/azure/active-directory/user-help/user-help-register-device-on-network)
 
-5. 对于运行 Office 2016（而未运行任何其他 Office 版本）的设备 - KB4577063
+5. 已安装受支持的 Microsoft Office 版本和最新版本。 为了获得最可靠的保护和用户体验，请确保已安装 Microsoft 365 应用版本 16.0.14701.0 或更高版本。
+> [!NOTE]
+   >如果你必须要运行 Office 265 - KB 4577063，且在 Microsoft 365 Apps 版本 2004-2008 的月度企业频道上，则需要更新到版本 2009 或更高版本。 参见 [Microsoft 365 应用版的更新历史记录（按日期列出）](/officeupdates/update-history-microsoft365-apps-by-date)。 要了解有关此问题的更多信息，请参阅[有关 2020 年当前频道发行的发行说明](/officeupdates/current-channel#version-2010-october-27)。
 
-6. 如果你在 Microsoft 365 Apps 版本 2004-2008 的月度企业频道上，则对 Office 内容进行分类时存在已知问题，需要更新到版本 2009 或更高版本。 参见 [Microsoft 365 应用版的更新历史记录（按日期列出）](/officeupdates/update-history-microsoft365-apps-by-date)。 要了解有关此问题的更多信息，请参阅[有关 2020 年当前频道发行的发行说明](/officeupdates/current-channel#version-2010-october-27)。
-
-7. 如果终结点使用设备代理连接到 Internet，请按照 [配置信息保护](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)的设备代理和 Internet 连接设置中的过程进行操作。
+6. 如果终结点使用设备代理连接到 Internet，请按照 [配置信息保护](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)的设备代理和 Internet 连接设置中的过程进行操作。
 
 ## <a name="onboarding-windows-10-or-windows-11-devices"></a>载入Windows 10或 Windows 11 设备
 
@@ -137,9 +137,9 @@ Microsoft 365终结点 DLP 允许监视Windows 10或 Windows 11 设备，并检�
 
 主题 | 说明
 :---|:---
-[使用组策略载入 Windows 10 或 11 设备](device-onboarding-gp.md) | 使用组策略在设备上部署配置包。
-[使用 Microsoft Endpoint Configuration Manager载入Windows 10 或 11 设备](device-onboarding-sccm.md) | 可以使用Microsoft Endpoint Configuration Manager（当前分支）版本 1606 或Microsoft Endpoint Configuration Manager（当前分支）版本 1602 或更早版本在设备上部署配置包。
-[使用移动设备管理工具载入Windows 10或 11设备](device-onboarding-mdm.md) | 使用移动设备管理工具或Microsoft Intune在设备上部署配置包。
+[使用组策略载入 Windows 10 或 Windows 11 设备](device-onboarding-gp.md) | 使用组策略在设备上部署配置包。
+[使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 或 Windows 11 设备](device-onboarding-sccm.md) | 可以使用 Microsoft Endpoint Configuration Manager（当前分支）版本 1606 或 Microsoft Endpoint Configuration Manager（当前分支）版本 1602 或更早版本在设备上部署配置包。
+[使用移动设备管理工具载入 Windows 10 或 11 设备](device-onboarding-mdm.md) | 使用移动设备管理工具或 Microsoft Intune 在设备上部署配置包。
 [使用本地脚本载入 Windows 10 或 11 设备](device-onboarding-script.md) | 了解如何使用本地脚本在终结点上部署配置包。
 [载入非永久虚拟桌面基础结构 （VDI） 设备](device-onboarding-vdi.md) | 了解如何使用配置包配置 VDI 设备。
 

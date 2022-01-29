@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何创建自定义敏感信息类型，以允许使用满足组织需求的规则。
-ms.openlocfilehash: b535d24bc295a28f2aebf5152c3771cc3e999202
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8393da8e2b2607692983010783d9ae110f268f4c
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153146"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271738"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自定义内置敏感信息类型
 
-在内容中查找敏感信息时，需要在 *规则* 中描述相应信息。数据丢失防护 (DLP) 包含最常见敏感信息类型对应的规则，可供立即使用。若要使用这些规则，必须将它们添加到策略中。你可能会发现，需要调整这些内置规则，才能满足组织的特定需求。为此，请创建自定义敏感信息类型。本主题介绍了如何将包含现有规则集合的 XML 文件自定义为，检测更广泛的潜在信用卡信息。
+在内容中查找敏感信息时，需要在规则中描述相应信息。数据丢失防护 (DLP) 包含最常见敏感信息类型对应的 *规则*，可供立即使用。若要使用这些规则，必须将它们添加到策略中。你可能会发现，需要调整这些内置规则，才能满足组织的特定需求。为此，请创建自定义敏感信息类型。本主题介绍了如何自定义包含现有规则集合的 XML 文件，以检测更广泛的潜在信用卡信息。
 
 可以参考本示例，自定义其他内置敏感信息类型。有关默认敏感信息类型和 XML 定义的列表，请参阅[敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)。
 
@@ -47,10 +47,10 @@ ms.locfileid: "60153146"
    $ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
    ```
 
-3. 通过键入以下代码，创建一个包含所有这些数据的格式化 XML 文件。（`Set-content` 是 cmdlet 中将 XML 写入文件的部分。）
+3. 键入以下内容，创建包含所有这些数据的格式化 XML 文件。
 
    ```powershell
-   Set-Content -path C:\custompath\exportedRules.xml -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
+   [System.IO.File]::WriteAllBytes('C:\custompath\exportedRules.xml', $ruleCollections.SerializedClassificationRuleCollection)
    ```
 
    > [!IMPORTANT]
@@ -157,7 +157,7 @@ ms.locfileid: "60153146"
 
 ## <a name="remove-the-corroborative-evidence-requirement-from-a-sensitive-information-type"></a>从敏感信息类型中删除确证性证据要求
 
-现在你具有可上传到安全&amp;与合规中心的新敏感信息类型，下一步是将规则设置得更加具体。对规则进行修改，使其仅查找通过校验但不需要额外的（佐证）证据（例如关键字）的 16 位数字。为此，你需要删除查找佐证证据的 XML 部分。佐证证据有助于减少误报。在此情况下，信用卡号旁边通常有一些关键字或有过期日期。如果删除佐证证据，还应降低 `confidenceLevel`（在本示例中为 85），以调整所找到信用卡号的可信度。
+现在你具有可上传到安全&amp;合规中心的新敏感信息类型，下一步是将规则设置得更加具体。对规则进行修改，使其仅查找通过校验但不需要额外的（佐证）证据（例如关键字）的 16 位数字。为此，你需要删除查找佐证证据的 XML 部分。佐证证据有助于减少误报。在此情况下，信用卡号旁边通常有一些关键字或有过期日期。如果删除佐证证据，还应降低 `confidenceLevel`（在本示例中为 85），以调整所找到信用卡号的可信度。
 
 ```xml
 <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
@@ -169,7 +169,7 @@ ms.locfileid: "60153146"
 
 ## <a name="look-for-keywords-that-are-specific-to-your-organization"></a>查找组织专用关键字
 
-你可能还是需要规定确证性证据，只不过需要其他关键字罢了，或许也想要更改在何处查找确证性证据。可调整 `patternsProximity`，以扩展或收缩 16 位数条件两边的确证性证据窗口。若要添加你自己的关键字，需要定义关键字列表，并在规则中引用此列表。下面的 XML 添加关键字“公司卡”和“Contoso 卡”，这样任何在距离信用卡号 150 个字符内包含这些短语的邮件都会被标识为包含信用卡号。
+您可能需要确定证据，但需要不同或额外的关键字，您可能想要更改在何处查找该证据。您可以调整 `patternsProximity`，以扩展或收缩围绕 16 位数字的确定证据的窗口。要添加您自己的关键字，您需要定义关键字列表并在您的规则中进行引用。以下 XML 添加关键字“company card”和“Contoso card”，以便在信用卡号的 150 个字符内包含这些短语的任何邮件均将识别为信用卡号。
 
 ```xml
 <Rules>
@@ -206,11 +206,11 @@ ms.locfileid: "60153146"
 3. 在 PowerShell 中，键入下面的代码。
 
    ```powershell
-   New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte)
+   New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('C:\custompath\MyNewRulePack.xml'))
    ```
 
    > [!IMPORTANT]
-   > 请务必使用规则包实际存储到的文件位置。`C:\custompath\` 是占位符。
+   > 确保使用规则包实际存储的文件位置。`C:\custompath\` 是占位符。
 
 4. 若要确认，请先键入“Y”，再按 Enter。
 
@@ -226,16 +226,21 @@ ms.locfileid: "60153146"
 
 下面您在此过程中遇到的术语的定义。
 
-|**术语**|**定义**|
-|:-----|:-----|
+<br>
+
+****
+
+|Term|定义|
+|---|---|
 |实体|实体是我们称为敏感信息类型的项目，例如信用卡号。每个实体都有一个唯一的 GUID 作为其 ID。如果您复制 GUID 并在 XML 中搜索它，您将找到 XML 规则定义以及该 XML 规则的所有本地化翻译。您也可以通过查找翻译的 GUID 并搜索该 GUID 来查找此定义。|
 |函数|XML 文件引用 `Func_credit_card`，这是用代码编译而成的函数。函数用于运行复杂的正则表达式，并验证校验和是否符合内置规则。由于这是发生在代码中，因此一些变量不会显示在 XML 文件中。|
 |IdMatch|这是尝试匹配的模式的标识符，例如信用卡号。|
-|关键字列表|XML 文件还引用 `keyword_cc_verification` 和 `keyword_cc_name`，这是要在实体的 `patternsProximity` 范围内匹配的关键字列表。这些关键字暂不显示在 XML 中。|
+|关键字列表|XML 文件还会引用 `keyword_cc_verification` 和 `keyword_cc_name` ，这是关键字列表，我们可从中为实体查找 `patternsProximity` 中的匹配。这些匹配当前不会显示在 XML 中。  |
 |模式|这种模式包含查找内容列表的敏感类型。这包括关键字、regex 和内部函数（执行验证校验和之类的任务）。敏感信息类型可能具有多个模式，每个模式均具有唯一的可信度。这在创建敏感信息类型时非常有用：当它找到确定证据时，返回高可信度；当未找到确定证据时，则返回较低的可信度。|
 |模式可信度|这是指 DLP 引擎找到匹配的可信度。如果满足模式的要求，则可信度与模式匹配有关。这是当您使用 Exchange 邮件流规则（也称为传输规则）时应考虑的可信度衡量标准。|
-|patternsProximity|`patternsProximity` 是指在查找信用卡号模式时，在与信用卡号多近的范围内查找确证性证据。|
+|patternsProximity|`patternsProximity` 是指当我们找到疑似信用卡号的模式时，我们要查找确定证据的数字周围区域。|
 |recommendedConfidence|这是建议用于此规则的可信度。建议可信度适用于实体和关联。对于实体，永远不会根据模式的 `confidenceLevel` 评估此数值。它只是帮助你在需要时选择可信度的建议。对于关联，模式的 `confidenceLevel` 必须高于 `recommendedConfidence` 数值，才能调用邮件流规则操作。`recommendedConfidence` 是调用操作的邮件流规则使用的默认可信度。如果需要，可根据模式的可信度来手动更改要调用的邮件流规则。|
+|
 
 ## <a name="for-more-information"></a>详细信息
 

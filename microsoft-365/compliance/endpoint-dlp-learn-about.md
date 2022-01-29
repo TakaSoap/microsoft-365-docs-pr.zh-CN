@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 文件在合规性解决方案中可见 '
-ms.openlocfilehash: bdcc690232678b5673950bf75d844a7e658a0c30
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7d8bc4dcb9d2852894ca838d88ae8ff2f5226298
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943576"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271558"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -108,7 +108,7 @@ Microsoft 终结点 DLP 使你能够审核和管理以下类型的活动，这�
 
  使用 [Microsoft 365 终结点 DLP入门](endpoint-dlp-getting-started.md)中的程序载入设备。
 
-如果你已通过 [Microsoft Defender for Endpoint](/windows/security/threat-protection/) 加入设备，则这些设备将自动显示在设备列表中。
+如果你已通过 [Microsoft Defender for Endpoint](/windows/security/threat-protection/) 加入设备，则这些设备将自动显示在设备列表中。 你可以 **打开设备监控** 以使用终结点 DLP。
 
 > [!div class="mx-imgBorder"]
 > ![托管设备列表](../media/endpoint-dlp-learn-about-2-device-list.png)。

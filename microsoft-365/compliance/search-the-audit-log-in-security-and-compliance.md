@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 2b42e33bf57e2cfbc855c06ff4dfeefc9a8e9eb0
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: eb50ed71bad3307036621e8367c697331ffa3024
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62054976"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272086"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -1167,7 +1167,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 **审核数据是否跨地域流动？**
 
-不正确。 我们目前在 NA（北美）、EMEA（欧洲、中东和非洲）和 APAC（亚太地区）进行了审核管道部署。 但是，我们可能会使数据跨这些区域流动以实现负载平衡，并且仅在现场出现问题时才会这样做。 当我们执行这些活动时，传输中的数据会被加密。
+一般情况下，否。 我们目前在 NA（北美）、EMEA（欧洲、中东和非洲）和 APAC（亚太地区）进行了审核管道部署。 但是，我们可能需要跨这些区域传输数据，以便在实时站点问题期间实现负载平衡。 当我们执行这些活动时，传输中的数据会被加密。 对于多地理位置组织，从组织的所有区域收集的审核数据将仅存储在组织主区域。
 
 **审核数据是否已加密？**
 
