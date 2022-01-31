@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8ba3fc2f4728162bcdf22f40db8500757139a286
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: 092a89e41efebafae36e81f5faa7cd3b52fde8d9
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083086"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281527"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>在 Windows 上运行客户端分析器
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-1. 将[MDE 客户端分析器工具](https://aka.ms/mdatpanalyzer)下载到Windows调查的客户端计算机。
+1. 将 [MDE 客户端分析器工具](https://aka.ms/mdatpanalyzer)下载到Windows调查的客户端计算机。
 
 2. 提取计算机上MDEClientAnalyzer.zip的内容。
 
@@ -53,9 +53,9 @@ ms.locfileid: "62083086"
 除上述内容外，还有一个选项使用 [实时响应收集分析器支持日志](troubleshoot-collect-support-log.md)。
 
 > [!NOTE]
-> 在 Windows 10/11、Windows Server 2019/2022 或安装了新式统一解决方案的 Windows Server 2012R2/2016 上，客户端分析器脚本将调用可执行文件，以对云服务 URL 运行连接测试。 [](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) `MDEClientAnalyzer.exe`
+> 在 Windows 10/11、Windows Server 2019/2022 或安装了新式统一解决方案的 Windows Server 2012R2/2016 [](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) `MDEClientAnalyzer.exe` 上，客户端分析器脚本将调用可执行文件，以运行对云服务 URL 的连接测试。
 >
-> 在 Windows 8.1、Windows Server 2016 或任何使用 Microsoft Monitoring Agent (MMA) 载入的操作系统版本上，客户端分析器脚本将调用可执行文件，以运行命令和控制 `MDEClientAnalyzerPreviousVersion.exe` (CnC) URL 的连接测试，同时调用Microsoft Monitoring Agent网络 `TestCloudConnection.exe` 数据通道 URL 的连接工具。
+> 在 Windows 8.1、Windows Server 2016 或任何之前的操作系统版本（其中 Microsoft Monitoring Agent (MMA) `MDEClientAnalyzerPreviousVersion.exe` 用于载入）上，客户端分析器脚本会调用可执行文件，以运行命令和控制 (CnC) URL 的连接测试，同时调用Microsoft Monitoring Agent网络`TestCloudConnection.exe`数据通道 URL 的连接工具。
 
 
 分析工具中包含的所有 PowerShell 脚本和模块都由 Microsoft 签名。
@@ -91,7 +91,7 @@ ms.locfileid: "62083086"
 
   这是主要的 HTML 输出文件，其中包含计算机上运行的分析器脚本可以生成的结果和指导。
 
-- SystemInfoLogs \[ 文件夹\]
+- SystemInfoLogs \[文件夹\]
   - AddRemovePrograms.csv
 
     说明：从注册表收集的 x64 操作系统软件上安装的 x86 软件列表。
@@ -102,11 +102,11 @@ ms.locfileid: "62083086"
 
     - CertValidate.log
 
-      说明：通过调用 [CertUtil](/windows-server/administration/windows-commands/certutil)执行证书吊销的详细结果。
+      说明：通过调用 [CertUtil](/windows-server/administration/windows-commands/certutil) 执行的证书吊销的详细结果。
 
     - dsregcmd.txt
 
-      说明：输出运行 [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd)。 这将提供有关计算机Azure AD状态的详细信息。
+      说明：运行 [dsregcmd 的输出](/azure/active-directory/devices/troubleshoot-device-dsregcmd)。 这将提供有关计算机Azure AD状态的详细信息。
 
     - IFEO.txt
 

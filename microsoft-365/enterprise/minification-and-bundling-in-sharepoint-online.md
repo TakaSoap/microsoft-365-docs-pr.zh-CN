@@ -2,8 +2,8 @@
 title: SharePoint Online 中的缩小和捆绑
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 3/1/2017
+manager: scotv
+ms.date: 1/18/2022
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: 了解如何将缩小和捆绑技术与 Web Essentials 一同使用，以减少 HTTP 请求和在 SharePoint Online 中加载页面所花的时间。
-ms.openlocfilehash: 7214d396dc39147f6864144420f8fa3fd61195b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bf9c997fc5245fbe58e1ffd8c306f9818783bd3f
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166954"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281467"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>SharePoint Online 中的缩小和捆绑
 
-本文介绍如何将缩小和捆绑技术与 Web Essentials 一同使用，以减少 HTTP 请求数并减少在 SharePoint Online 中加载页面所花的时间。
+本文介绍如何将缩小和捆绑技术与 Web Essentials 一同使用，以减少 HTTP 请求数并缩短在 SharePoint Online 中加载页面所花的时间。
   
 当您自定义网站时，您最终可以向服务器添加大量额外的文件以支持自定义。 添加额外的 JavaScript、CSS 和图像会增加对服务器的 HTTP 请求数，进而增加显示网页的时间。 如果有多个相同类型的文件，可以捆绑这些文件，以加快下载这些文件的速度。
   
@@ -41,29 +41,27 @@ ms.locfileid: "60166954"
 可以使用第三方软件（如 Web Essentials）捆绑 CSS 和 JavaScript 文件。
   
 > [!IMPORTANT]
-> Web Essentials 是一个基于社区的第三方开放源代码项目。 该软件是 Visual Studio 2012 和 Visual Studio 2013的扩展，不受 Microsoft 支持。 若要下载 Web Essentials，请访问 位于 的网站 [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) 。 
+> Web Essentials 是一个基于社区的第三方开放源代码项目。 该软件是 2012 Visual Studio 2012 和 Visual Studio 2013的扩展，不受 Microsoft 支持。 若要下载 Web Essentials，请访问 位于 的网站 [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)。
   
 Web Essentials 提供两种形式的捆绑：
   
 - .bundle：用于 CSS 和 JavaScript 文件
-    
 - .sprite：适用于 (仅在 Visual Studio 2013) 
-    
+
 如果您的现有功能具有自定义母版页中引用的一些品牌元素，您可以使用 Web Essentials，例如：
   
 ![自定义母版页中的品牌元素屏幕截图。](../media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
   
- **在 Web Essentials 中创建 TE000127218 和 CSS 捆绑包**
+### <a name="to-create-a-te000127218-and-css-bundle-in-web-essentials"></a>在 Web Essentials 中创建 TE000127218 和 CSS 捆绑包
   
 1. 在Visual Studio"解决方案资源管理器"中，选择要包括在捆绑包中的文件。
-    
-2. 右键单击所选文件，然后从上下文菜单中选择 **"Web Essentials** \> **创建 JavaScript** 捆绑文件"。 例如： 
-    
+2. 右键单击所选文件，然后从上下文菜单中选择 **"Web Essentials** \> **创建 JavaScript** 捆绑文件"。 例如：
+
     ![显示 Web Essentials 菜单选项的屏幕截图。](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
 ## <a name="viewing-the-results-of-bundling-javascript-and-css-files"></a>查看绑定 JavaScript 和 CSS 文件的结果
 
-创建 JavaScript 和 CSS 捆绑包时，Web Essentials 会创建一个 XML 文件，该文件称为食谱文件，用于标识 JavaScript 和 CSS 文件以及其他一些配置信息： 
+创建 JavaScript 和 CSS 捆绑包时，Web Essentials 会创建一个 XML 文件，该文件称为食谱文件，用于标识 JavaScript 和 CSS 文件以及其他一些配置信息：
   
 ![JavaScript 和 CSS 方法文件的屏幕截图。](../media/7ba891f8-52d8-467b-a0f6-b062dd1137a4.png)
   
@@ -89,18 +87,15 @@ Web Essentials 提供两种形式的捆绑：
 
 与将 JavaScript 和 CSS 文件捆绑在一起的方式类似，可以将许多小图标和其他常见图像组合到一个较大的子画面工作表中，然后使用 CSS 显示各个图像。 用户的 Web 浏览器会下载子画面工作表一次，然后将它缓存在本地计算机上，而不是下载每个单独的图像。 这将减少下载次数和到 Web 服务器的往返次数，从而提高页面加载性能。
   
- **在 Web Essentials 中创建图像子画面**
+### <a name="to-create-an-image-sprite-in-web-essentials"></a>在 Web Essentials 中创建图像子画面**
   
 1. 在Visual Studio"解决方案资源管理器"中，选择要包括在捆绑包中的文件。
-    
-2. 右键单击所选文件，然后从上下文菜单中选择 **"Web Essentials** \> **创建** 图像子画面"。 例如： 
-    
+2. 右键单击所选文件，然后从上下文菜单中选择 **"Web Essentials** \> **创建** 图像子画面"。 例如：
+
     ![显示如何创建图像子画面的屏幕截图。](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   
 3. 选择保存子画面文件的位置。 .sprite 文件是描述子画面中的设置和文件的 XML 文件。 下图显示了子画面 PNG 文件及其相应的 .sprite XML 文件的示例。
-    
+
     ![子画面文件的屏幕截图。](../media/0876bb2a-d1b9-4169-8e95-9c290d628d90.png)
   
     ![子画面 XML 文件的屏幕截图。](../media/d1f94776-280d-4d56-abb5-384f145d9989.png)
-  
-
