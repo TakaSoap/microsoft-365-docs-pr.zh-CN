@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2427e2e9e162beb551d37da4280fa27bdf068069
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a0f0b7a47a88fe5a94cdc37dc586ee23020723ae
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166742"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244471"
 ---
 # <a name="next-generation-protection-overview"></a>下一代保护概述
 
@@ -35,7 +35,7 @@ Microsoft Defender for Endpoint 包括加强网络安全外围的下一代保护
 - [专用保护和产品更新](manage-updates-baselines-microsoft-defender-antivirus.md)，包括与保持 Microsoft Defender 防病毒最新相关的更新。
 
 > [!TIP]
-> 下一代保护包括在 Microsoft Defender for Endpoint 计划 1（预览版）和计划 2 中。 [详细了解 Defender for Endpoint Plan 1（预览版）和计划 2](defender-endpoint-plan-1-2.md)
+> 下一代保护包含在 Microsoft Defender for Endpoint 计划 1 和计划 2 中。 [了解有关 Defender for Endpoint 计划 1 和计划 2 的详细信息](defender-endpoint-plan-1-2.md)
 
 ## <a name="try-a-demo"></a>尝试演示！
 

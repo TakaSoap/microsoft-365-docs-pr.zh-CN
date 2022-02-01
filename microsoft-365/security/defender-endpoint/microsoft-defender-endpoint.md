@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b633753af17fea1fbf35a1559ceb4f537b467601
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: d744681351bd8a0a8d9aa15f1ee5f26554aace8d
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645560"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244915"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "61645560"
 Microsoft Defender for Endpoint 是企业终结点安全平台，旨在帮助企业网络阻止、检测、调查和响应高级威胁。
 
 > [!TIP]
-> 很快，Microsoft Defender for Endpoint 将在两个计划中提供。 本文介绍 Microsoft Defender for Endpoint 计划 2 中包含的特性和功能。 [详细了解 Microsoft Defender for Endpoint Plan 1（预览版）和计划 2](defender-endpoint-plan-1-2.md)。
+> 很快，Microsoft Defender for Endpoint 将在两个计划中提供。 本文介绍 Microsoft Defender for Endpoint 计划 2 中包含的特性和功能。 [了解有关 Microsoft Defender for Endpoint 计划 1 和计划 2 的详细信息](defender-endpoint-plan-1-2.md)。
 > 
 
 <p><p>
