@@ -10,7 +10,7 @@
       href: difference-between-document-understanding-and-form-processing-model.md
 - name: 模型入门
   items:
-    - name: 通过示例模型了解模型
+    - name: 导入示例文档理解模型
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: 创建内容中心
       href: create-a-content-center.md
