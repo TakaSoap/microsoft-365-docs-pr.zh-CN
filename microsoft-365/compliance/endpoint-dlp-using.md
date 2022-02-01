@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 85bcf25300b51e0e9f6fb4b770c748ba86d5b2ea
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 0f663ac949419c3a726a0af23eba4a0f14928515
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159729"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281443"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -143,8 +143,7 @@ ms.locfileid: "62159729"
 
 2. 选择“**打开文件和端口**”选项卡。
   
-3. 应用名称位于完整路径的末尾。
-
+3. 对于 macOS 应用，需要完整的路径名称，包括应用的名称。
 
 #### <a name="protect-sensitive-data-from-cloud-synchronization-apps"></a>保护敏感数据免受云同步应用的保护
 
@@ -177,7 +176,7 @@ ms.locfileid: "62159729"
 
 2. 选择“**打开文件和端口**”选项卡。
   
-3. 应用名称位于完整路径的末尾。
+3. 对于 macOS 应用，需要完整的路径名称，包括应用的名称。
 
 #### <a name="service-domains"></a>服务域
 
