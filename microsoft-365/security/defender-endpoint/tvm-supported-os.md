@@ -1,7 +1,7 @@
 ---
 title: 支持的操作系统平台和功能
 description: 确保你满足操作系统或平台的必备条件危险和漏洞管理，以便正确考虑所有设备中的活动。
-keywords: 威胁& 漏洞管理， 危险和漏洞管理， 操作系统， 平台要求， 先决条件， Microsoft Defender for Endpoint-tvm 支持的操作系统， 适用于 Endpoint-tvm 的 Microsoft Defender， 受支持的操作系统， 受支持的平台， linux 支持， mac 支持
+keywords: 威胁& 漏洞管理， 危险和漏洞管理， 操作系统， 平台要求， 先决条件， Microsoft Defender for Endpoint-tvm 支持的操作系统， 适用于 Endpoint-tvm 的 Microsoft Defender， 支持的操作系统， 支持的平台， linux 支持， mac 支持
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e3633468ac6d730ff380efcd59c0e4e70065c4c5
-ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
+ms.openlocfilehash: 2e9322a5fc04824482fdd764eb113d9904b3c224
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993295"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295374"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>支持的操作系统、平台和功能 - 适用于危险和漏洞管理
 
@@ -38,7 +38,7 @@ ms.locfileid: "61993295"
 开始之前，请确保满足以下操作系统或平台要求危险和漏洞管理以便正确考虑设备中的活动。
 
 > [!NOTE]
-> 支持用于终结点的危险和漏洞管理和平台可能不同于["Microsoft Defender for Endpoint](minimum-requirements.md)的最低要求"列表。
+> 支持用于终结点的危险和漏洞管理和平台可能不同于 [Microsoft Defender for Endpoint](minimum-requirements.md) 列表的最低要求。
 
 ## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>支持的操作系统和平台 (操作系统) 功能
 
@@ -55,9 +55,9 @@ Windows Server 2008 R2|是|是|是|是|是
 Windows Server 2012 R2|是|是|是|是|是
 Windows Server 2016|是|是|是|是|是
 Windows Server 2019|是|是|是|是|是
-Windows Server 2022|是|是|是|是|是
+Windows Server 2022|是|是|是|不支持|是
 macOS 10.14 "Mojave"及以上|是|是|是|是|是 
-Red Hat Enterprise Linux 7.2 或更高版本，包括匹配的 EUS (请参阅下面的"重要 \* ") |是|是|是|是|是
+Red Hat Enterprise Linux 7.2 或更高版本，包括匹配的 EUS (\*请参阅下面的"重要") |是|是|是|是|是
 CentOS 7.2 或更高版本|是|是|是|是|是
 Ubuntu 16.04 LTS 或更高版本 LTS|是|是|是|是|是
 Oracle Linux 7.2 或更高版本|是|是|是|是|是
@@ -70,9 +70,9 @@ iOS 12.0 或更高版本|是|不支持|不支持|不支持|不支持
 > 某些功能不适用于低级别操作系统，请查看 Microsoft 365 Defender 门户，了解有关受支持的操作系统的更多详细信息。
 
 > [!IMPORTANT]
-> \*Red Hat Enterprise Linux："作为 Microsoft Defender for Endpoint 服务的一部分提供和显示的漏洞数据可从 Red Hat， Inc. 以原始形式"AS IS"提供，并且可能不是最新的。 Red Hat 安全数据 API 中可访问的数据由 Creative Commons Attribution 4.0 国际许可证授权。 使用此数据的风险由你承担。 Microsoft 及其第三方供应商不承担任何责任以及其他间接损害和默示担保，包括针对特定目的的不侵权、适用性和适用性的默示担保。 © 2020 Red Hat。 保留所有权利。 © 2020 Microsoft。 保留所有权利。"
+> \*Red Hat Enterprise Linux："作为 Microsoft Defender for Endpoint 服务的一部分提供和显示的漏洞数据可从 Red Hat， Inc. 以原始形式"AS IS"提供给你，并且可能不是最新的。 Red Hat 安全数据 API 中可访问的数据由 Creative Commons Attribution 4.0 国际许可证授权。 使用此数据的风险由你承担。 Microsoft 及其第三方供应商不承担任何责任以及其他间接损害和默示担保，包括针对特定目的的不侵权、适用性和适用性的默示担保。 © 2020 Red Hat. 保留所有权利。 © 2020 Microsoft。 保留所有权利。"
 
 ## <a name="related-articles"></a>相关文章
 
-- [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威胁漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [权限&的先决条件](tvm-prerequisites.md)

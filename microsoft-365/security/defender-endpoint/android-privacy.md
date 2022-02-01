@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 44b1cc75f5922d25d54cc32c7b48b13a36a9ac8a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6772539f4ca4ea819a0f8cd2a92a817fcea650f3
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164594"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295130"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 上的 Microsoft Defender for Endpoint - 隐私信息
 
@@ -32,11 +32,11 @@ ms.locfileid: "61164594"
 
 Android 上的 Defender for Endpoint 从已配置的 Android 设备收集信息，并存储到具有 Defender for Endpoint 的同一租户中。 该信息的收集有助于使适用于 Android 的 Endpoint 的 Defender 保持安全、最新、如预期运行并支持服务。
 
-有关数据存储详细信息，请参阅适用于终结点数据存储[和隐私的 Microsoft Defender。](data-storage-privacy.md)
+有关数据存储详细信息，请参阅 [Microsoft Defender for Endpoint 数据存储和隐私](data-storage-privacy.md)。
 
 收集的信息有助于使适用于 Android 的 Defender for Endpoint 保持安全、最新、如预期运行并支持服务。
 
-有关 Android 和 iOS 移动设备上的 Microsoft Defender for Endpoint 的最常见隐私问题详细信息，请参阅适用于终结点的 Microsoft Defender 和 Android 和 [iOS 移动设备上的隐私](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)。
+有关 Android 和 iOS 移动设备上的 Microsoft Defender for Endpoint 的最常见隐私问题详细信息，请参阅适用于终结点的 [Microsoft Defender 和 Android 和 iOS 移动设备上的隐私](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)。
 
 ## <a name="required-data"></a>所需数据
 
@@ -44,15 +44,30 @@ Android 上的 Defender for Endpoint 从已配置的 Android 设备收集信息�
 
 ### <a name="app-information"></a>应用信息
 
-有关设备上 **恶意** Android 应用程序包 (API) 的信息，包括
+有关设备上 **恶意** Android (程序包) API 的信息，包括
 
 - 安装源
 - 存储 APK (文件路径) 位置
 - 安装时间、APK 大小和权限
 
+For Android Enterprise Fully managed devices - 有关设备上安装的 Android (程序包) API 的信息，包括
+
+- 应用的名称和程序包名称
+- 应用的版本号
+- 提供商名称
+
+For Android Enterprise with a work profile - 有关 Android 应用程序包的信息 (安装在) 工作配置文件上的 APKs，包括
+
+- 应用的名称和程序包名称
+- 应用的版本号
+- 提供商名称
+
+*你的组织还可以选择为终结点配置 Defender，以发送有关设备上安装的所有应用的信息。默认情况下，不会将此信息发送到您的组织。*
+
+
 ### <a name="web-page--network-information"></a>网页/网络信息
 
-- 仅在检测到恶意连接或网页时，网站的完整 URL。
+- 仅在检测到并阻止恶意连接或网页时，网站的完整 URL。
 - 连接信息
 - 协议类型 (如 HTTP、HTTPS 等) 
 
@@ -61,7 +76,7 @@ Android 上的 Defender for Endpoint 从已配置的 Android 设备收集信息�
 - 设备信息，如&时间、Android 版本、OEM 型号、CPU 信息和设备标识符。
 - 设备标识符是以下项之一：
   - Wi-Fi适配器 MAC 地址
-  - [Android ID](https://developer.android.com/reference/android/provider/Settings.Secure#ANDROID_ID) (在首次启动设备时由 Android 生成) 。
+  - [Android ID](https://developer.android.com/reference/android/provider/Settings.Secure#ANDROID_ID) (由 Android 在首次启动设备时) 。
   - 随机生成的全局唯一标识符 (GUID) 。
 
 - 租户、设备和用户信息

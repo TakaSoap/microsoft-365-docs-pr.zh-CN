@@ -1,5 +1,5 @@
 ---
-title: 配置 Microsoft 365 支持与 AAD OAuth 令牌集成
+title: 配置Microsoft 365身份验证令牌Azure AD集成
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,20 +17,20 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow 的作用域认证应用程序安装和配置指南。
-ms.openlocfilehash: da241452f989ba5f682fd3219e3f3baabf623138
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: f8bc7ee4647bf14521b9d29f616539acb95e7495
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071446"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295165"
 ---
-# <a name="configure-microsoft-365-support-integration-with-aad-oauth-token"></a>配置 Microsoft 365 支持与 AAD OAuth 令牌集成
+# <a name="configure-microsoft-365-support-integration-with-azure-ad-auth-token"></a>配置Microsoft 365身份验证令牌Azure AD集成
 
-## <a name="prerequisites-aad-oauth-token"></a>OAuth (AAD的先决条件) 
+## <a name="prerequisites-azure-ad-auth-token"></a>身份验证 (Azure AD的先决条件) 
 
 这些必备组件是设置支持集成Microsoft 365所必需的。
 
-1. \[AAD管理员 \]在AAD租户下创建出站Microsoft 365应用程序。
+1. \[AAD管理员\]在Azure AD租户下创建出站Microsoft 365应用程序。
 
     1. 使用你的租户凭据Microsoft 365 Azure 门户，然后转到应用注册[页面](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)以创建新应用程序。
 
@@ -38,45 +38,45 @@ ms.locfileid: "61071446"
 
         :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image3.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image3.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
-1. 转到"**身份验证"，** 然后选择 **"添加平台"。** 选择 **"Web"** 选项并输入重定向 URL： `https://{your-servicenow-instance``}.service-now.com/auth_redirect.do`
+1. 转到" **身份验证"** ，然后选择 **"添加平台"**。 选择 **"Web** "选项并输入重定向 URL： `https://{your-servicenow-instance``}.service-now.com/auth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image4.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image4.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
 1. 获取应用程序客户端 ID 并创建客户端密码并获取该值。
 
-1. \[AAD管理员 \]在 AAD 租户下创建 Rest API Microsoft 365应用程序。
+1. \[AAD管理员\]在 Azure AD 租户下创建一个 rest Microsoft 365 API。
 
     1. 使用你的[租户凭据Microsoft 365](https://portal.azure.com/) Azure 门户，然后转到应用注册页面以创建新应用程序。
 
-    1. 仅 **选择此组织目录中的帐户 { (Microsoft-365-tenant-name} – 单租户) 。**
+    1. 仅 **选择此组织目录中的帐户 { (Microsoft-365-tenant-name} – 单租户)**。
 
         :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image22.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image22.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
 1. 获取应用程序客户端 ID 并创建客户端密码并获取该值。
 
-1. \[AAD管理员 \]在 AAD 租户下创建一个 Rest Microsoft 365 应用程序。
+1. \[AAD管理员\]在 Azure AD 租户下创建一个 rest Microsoft 365 应用程序。
 
     1. 使用你的[租户凭据Microsoft 365](https://portal.azure.com/) Azure 门户，然后转到应用注册页面以创建新应用程序。
 
-    1. 仅 **选择此组织目录中的帐户 { (Microsoft-365-tenant-name} – 单租户) 。**
+    1. 仅 **选择此组织目录中的帐户 { (Microsoft-365-tenant-name} – 单租户)**。
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image23.png" lightbox="../../media/ServiceNow-guide/ServiceNow-guide-image23.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
 1. 获取应用程序客户端 ID 并创建客户端密码并获取该值。
 
-1. \[ServiceNow 管理员 在 ServiceNow 中设置出站 \] OAuth 提供程序。
+1. \[ServiceNow 管理员\] 在 ServiceNow 中设置出站 OAuth 提供程序。
 
-    如果范围未设置为 **"** 全局"，则通过导航到"开发人员设置 **&gt; &gt; 并** 切换到"全局"来 **完成。**
+    如果范围未设置为 **"****&gt;&gt;** 全局"，请导航到"开发人员设置并切换到"全局"。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="自动生成的图形用户界面、文本、应用程序、聊天或短信说明":::
 
-1. 转到 **"系统""OAuth &gt; 应用程序注册表"。**
+1. 转到 **"系统""OAuth &gt; 应用程序注册表"**。
 
 1. 使用"向第三连接 **OAuth 提供程序创建** 一个新应用程序"选项并输入以下值：
 
-    - 客户端 ID：这是在步骤 1 中的先决条件 (AAD OAuth 令牌) \# ID。
+    - 客户端 ID：这是在步骤 1 的先决条件 (Azure AD中创建\#的应用程序) ID。
 
-    - 客户端密码：这是在步骤 1 的先决条件 (AAD OAuth 令牌) \# 客户端密码值。
+    - 客户端密码：这是在\#步骤 1 的先决条件 (Azure AD创建的应用程序) 密码值。
 
     - 默认授予类型：客户端凭据
 
@@ -86,35 +86,35 @@ ms.locfileid: "61071446"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image6.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image6.png" alt-text="图形用户界面，自动生成应用程序说明":::
 
-1. \[ServiceNow 管理员 \] 若要在 ServiceNow 中配置 OIDC 提供程序，请参阅 [联机文档](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html)。
+1. \[ServiceNow 管理员\] 若要在 ServiceNow 中配置 OIDC 提供程序，请参阅 [联机文档](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html)。
 
-    如果作用域未设置为"全局"，请转到 **"设置 &gt; &gt; 应用程序"并** 切换到"**全局"。** 
+    如果范围未设置为 **"****&gt;全局"，请转到"设置应用程序&gt;"并** 切换到"**全局"**。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="自动生成的图形用户界面、文本、应用程序、聊天或短信说明":::
 
-1. 转到 **"系统""OAuth &gt; 应用程序注册表"。**
+1. 转到 **"系统""OAuth &gt; 应用程序注册表"**。
 
-1. 选择 **"新建**"，然后选择"新建开放 **ID 连接提供程序"。**
+1. 选择 **"新建**"，然后选择"**新建开放 ID 连接提供程序"**。
 
-1. 在 **"OAuth OIDC 提供程序配置**"中，选择"搜索"，然后使用这些值在 **oidc \_ 提供程序 \_ configuration.list** 下创建新的 OIDC 提供程序配置： 
+1. 在 **"OAuth OIDC 提供程序** 配置"中，选择"搜索"，然后使用这些值在 **oidcproviderconfiguration.list\_\_ 下创建新的 OIDC** 提供程序配置：
 
-    - OIDC 提供程序 **：{租户 \_ 名称} Azure** (示例：Contoso Azure) 
+    - OIDC 提供程序： **{TenantName\_} Azure** (示例：Contoso Azure) 
 
     - OIDC 元数据 URL： `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
 
-    - UserClaim：appId 
+    - UserClaim： **appId**
 
     - UserField： **用户 ID**
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image24.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image24.png" alt-text="自动生成的图形用户界面、文本、应用程序说明":::
 
-1. 通过选择"配置 **OIDC** 提供程序以使用这些值验证 ID 令牌"来创建新应用程序：
+1. 通过选择"配置 **OIDC 提供程序以使用这些值验证 ID** 令牌"来创建新应用程序：
 
-    - 名称 **：{Tenant \_ Name} \_ \_ 应用程序入站 \_ api** (示例：contoso \_ 应用程序 \_ 入站 api \_) 
+    - 名称：**{TenantName\_}\_applicationinboundapi\_\_** (示例：contosoapplicationinboundapi\_\_\_) 
 
-    - 客户端 ID：在步骤 2 的"先决条件" (AAD创建的应用程序) \# ID。
+    - 客户端 ID：在步骤 2 的先决条件 (Azure AD中创建\#的应用程序) ID。
 
-    - 客户端密码：在步骤 2 中基于 OAuth 令牌的先决条件 (AAD应用程序) \# 密码。
+    - 客户端密码：在步骤 2 中的先决条件 (Azure AD创建的应用程序) \#密码。
 
     - OAuth OIDC 提供程序配置：在上一步中创建的 OIDC 提供程序
 
@@ -122,15 +122,15 @@ ms.locfileid: "61071446"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image25.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image25.png" alt-text="图形用户界面，自动生成应用程序说明":::
 
-1. \[ServiceNow 管理员 \] 创建集成用户。
+1. \[ServiceNow 管理员\] 创建集成用户。
 
-    必须指定集成用户。 如果没有现有集成用户，或者希望专门为此集成创建一个集成用户，请转到"组织用户"以创建新用户 **。 &gt;** 用户 ID **的值是在步骤** 3 的先决条件 (AAD OAuth 令牌) 客户端 [ \# ID。](#prerequisites-aad-oauth-token)
+    必须指定集成用户。 如果没有现有集成用户 **&gt;**，或者希望专门为此集成创建一个集成用户，请转到"组织用户"以创建新用户。 用户 ID 的 **值为** 在系统必备组件和身份验证令牌 (Azure AD [中创建](#prerequisites-azure-ad-auth-token)的应用程序) 。
 
-    如果要创建新的集成用户，请检查"仅 Web **服务访问"** 选项。 还必须向此用户授予 **事件管理员 \_** 角色。
+    如果要创建新的集成用户，请检查" **仅 Web 服务访问"** 选项。 还必须向此用户授予 **incidentmanager\_** 角色。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image26.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image26.png" alt-text="图形用户界面，自动生成应用程序说明":::
 
-## <a name="optional-allow-the-services-ip-addresses-to-microsoft-365-support-integration"></a>\[OPTIONAL \] 允许服务的 IP 地址支持Microsoft 365集成
+## <a name="optional-allow-the-services-ip-addresses-to-microsoft-365-support-integration"></a>\[OPTIONAL\] 允许服务的 IP 地址支持Microsoft 365集成
 
 如果贵公司使用自己的策略限制 Internet 访问，请通过允许下面的 IP 地址同时用于入站和出站 API 访问，为 Microsoft 365 服务启用网络访问以支持集成。
 
@@ -155,111 +155,101 @@ ms.locfileid: "61071446"
 
 若要设置 ServiceNow 实例与服务支持之间的集成，需要Microsoft 365这些步骤。
 
-1. \[ServiceNow 管理员 \] 将作用域切换 **为Microsoft 365集成。**
+1. \[ServiceNow 管理员\] 将作用域切换 **为Microsoft 365集成。**
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="图形用户界面，自动生成表说明":::
 
-1. \[ServiceNow 管理员 \] 转到 **Microsoft 365 &gt; 支持安装程序以** 打开集成工作流。
+1. \[ServiceNow 管理员\] 转到 **Microsoft 365支持&gt;安装程序以** 打开集成工作流。
 
     > [!NOTE]
-    > 如果看到错误"由于表的跨作用域访问策略，作用域 \_ 'x \_ mioms \_ m365 \_ assis'中的'oauth 实体的读取操作'被拒绝"，则由表访问策略导致。 必须确保已检查 **table &gt;** oauth 实体的所有应用程序作用域"可读取 \_ "。
+    > 如果看到错误"由于表的跨作用域访问策略而被拒绝从作用域'xmiomsm365assis\_\_\_'对'oauthentity\_'执行读取操作"，则由表访问策略导致。 必须确保 **已检查 &gt; 表** oauthentity 的所有应用程序作用域"可\_读取"。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image27.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image27.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
-1. \[ServiceNow 管理员 \] **选择同意** 同意提示以继续。
+1. \[ServiceNow 管理员\] **选择同意** 同意提示以继续。
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image11.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image11.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-1.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-1.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
-1. \[ServiceNow 管理员 \] 设置出站 OAuth 提供程序。
+1. \[ServiceNow 管理员\] 配置环境和设置类型。
+    如果此安装位于测试环境中，请选择选项"这是测试环境"。 在设置完成后，你将能够快速禁用此选项，并且稍后完成所有测试。
+    如果实例允许对入站连接使用基本身份验证，请选择"是"，并参考 [基本身份验证设置过程](servicenow-basic-authentication.md)。 否则，请选择 **"否"** ，然后单击" **启动设置"**。 
+      :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-2.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-2.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
-    Select the OAuth profile for Outbound OAuth Provider created in [Prerequisites (AAD OAuth Token) step \# 4](#prerequisites-aad-oauth-token)， and then select **Next**.
+1. \[ServiceNow 管理员\] 输入你的Microsoft 365租户域。
+     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-3.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-3.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image12.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image12.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
+1. \[ServiceNow 管理员\] 配置出站 OAuth 提供程序。
+    1. 配置出站 OAuth 提供程序。
+    1. 完成先决条件部分中的说明后，单击"完成"。 否则，请按照向导中的说明操作，在 AAD。
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-4.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-4.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
+    1. 注册 ServiceNow OAuth 应用。
+    1. 完成先决条件部分中的说明后，选择新创建的 OAuth 应用程序注册并单击"下一步"。 否则，请按照说明在 ServiceNow 中创建实体，然后选择新的应用程序注册。
+     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-5.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-5.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
-1. \[ServiceNow 管理员 \] 设置入站 OAuth 提供程序。
+1. \[ServiceNow 管理员\] 配置入站设置。
+    1. 配置入站AAD应用。
+    1. 完成先决条件部分中的说明后，单击"完成"转到下一步。 否则，请按照说明为入站连接AAD应用注册。
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-6.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-6.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
+    1. 配置 ServiceNow 外部 OpenID 连接提供程序 (OIDC 提供程序) 。
+    1. 完成先决条件部分中的说明后，选择新创建的实体并单击"完成"。 否则，请按照说明在 ServiceNow 中创建实体，然后选择新的外部 OIDC 提供程序应用注册。
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-7.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-7.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
+    1. 为入站AAD配置应用注册。
+    1. 完成先决条件部分中的说明后，单击"完成"转到下一步。 否则，请按照说明为入站 REST 用户AAD应用注册 (集成) 。
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-8.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-8.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
+    1. 配置集成用户。
+    1. 完成先决条件部分中的说明后，选择新创建的实体并单击"下一步"。 否则按照说明在 ServiceNow 中创建集成用户，然后选择实体。
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-9.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-9.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
-    1. 取消 **选中"跳过当前步骤"。**
-
-    1. 检查 **外部 OIDC 身份验证令牌**。
-
-    1. Select the OAuth Client created in [Prerequisites (AAD OAuth Token) step \# 5](#prerequisites-aad-oauth-token)， and then select **Next**.
-
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image28.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image28.png" alt-text="自动生成的图形用户界面、文本、应用程序说明":::
-
-1. \[ServiceNow 管理员 \] 设置入站呼叫集成用户。
-
-    1. 取消 **选中"跳过当前步骤"。**
-
-    1. 在步骤 [ \# 3](#prerequisites-aad-oauth-token)中输入在先决条件 (AAD OAuth 令牌) 创建的应用程序的客户端 ID，然后选择"下一 **步"。**
-
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image39.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image39.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
-
-1. \[ServiceNow \] 管理员 设置存储库 ID。
-
-    指定存储库 ID，然后选择"下一 **步"。**
-
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image15.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image15.png" alt-text="自动生成的图形用户界面、文本、应用程序说明":::
-
-1. \[ServiceNow 管理员 \] 设置应用程序设置。
-
-    选择以下设置，然后选择"下一 **步"。**
-
-    - 具有 Microsoft 365 的 SSO：检查 ServiceNow 实例是否设置为具有租户Microsoft 365 SSO，否则取消选中它。
-
-    - Microsoft 365管理员电子邮件：创建Microsoft 365案例时联系的管理员Microsoft 365电子邮件。
-
-    - 测试环境：选中此框可指示测试阶段，以避免 Microsoft 支持代理联系你以解决问题。 如果你已准备好使用支持集成Microsoft 365，请取消选中此框。
-
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="自动生成的图形用户界面、文本、应用程序说明":::
-
-1. \[Microsoft 365租户管理员 \]完成集成。
+1. \[Microsoft 365租户管理员\]完成集成。
 
     验证以下信息是否正确。 此时不要 **选择"下** 一步"。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image40.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image40.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
-1. 转到 **"Microsoft 365 管理门户 &gt; 设置 &gt; 组织设置 &gt; ""组织配置文件"。**
+    1. 转到"**Microsoft 365 管理门户&gt;设置&gt;组织设置&gt;""组织配置文件"**。
 
-1. 配置支持集成设置：
+    1. 配置支持集成设置：
 
-    Select the **Basic information** tab > Internal **support tool**  >  **ServiceNow**， and enter the **Outbound App ID** value in the Application ID to issue **OAuth token** field. 此出站应用 ID 位于步骤 6 – 完成集成中，该集成是在步骤 1 中的先决条件[ (AAD OAuth 令牌) \# 中创建的](#prerequisites-aad-oauth-token)。
+    Select the **Basic information** tab > **Internal support** **toolServiceNow** > ， and enter the **Outbound App ID** value in the **Application ID to issue Auth Token** field. 此出站应用 ID 位于"步骤 6 – 完成集成"中，该集成是在"身份验证令牌 (Azure AD[中创建) ](#prerequisites-azure-ad-auth-token)。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
-1. 在" **存储库"** 选项卡上，选择" **新建** 存储库"，然后使用下列设置更新它：
+    1. 在" **存储库"** 选项卡上，选择" **新建** 存储库"，然后使用下列设置更新它：
 
     - 存储库："步骤 6 – 完成集成"中的存储库 **ID** 值。
 
-    - 终结点 **："步骤** 6 – 完成集成"中的 Endpoint 值。
+    - 终结点： **"步骤** 6 – 完成集成"中的 Endpoint 值。
 
-    - 身份验证类型：选择 **"AAD身份验证"。**
+    - 身份验证类型：选择 **"AAD身份验证"**。
 
-    - 客户端 ID： **步骤** 6 – 完成集成中的客户端 ID 值。
+    - 客户端 ID：步骤 6 – 完成集成中的客户端 **ID** 值。
 
-    - 客户端密码：在步骤 2 中的先决条件 (AAD OAuth 令牌) \# 密码。
+    - 客户端密码：在步骤 2 中的先决条件 (Azure AD创建的\#入站 OAuth) 密码。
 
-    - Rest username： **The User Name** value from Step 6 – Complete the Integration， which is the Client **ID** of the application created in Prerequisites (AAD OAuth Token) step \# 3.
+    - Rest username： **The User Name** value from Step 6 – Complete the Integration， which is the **Client ID** of the application created in Prerequisites (Azure AD Auth Token) step \#3.
 
-    - Rest user password： The App Secret of the application that was created in Prerequisites (AAD OAuth Token) step \# 3.
+    - Rest user password： The App Secret of the application that was created in Prerequisites (Azure AD Auth Token) step \#3.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image31.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image31.png" alt-text="图形用户界面，自动生成应用程序说明":::
 
-1. 返回到 ServiceNow。
+    1. 返回到 ServiceNow。
 
-1. 选择 **"下** 一步"完成集成。
+    1. 选择 **"下** 一步"完成集成。
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image32.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image32.png" alt-text="图形用户界面，自动生成应用程序说明":::
+   :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-10.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-10.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
+    支持Microsoft 365应用将执行测试，以确保集成正常工作。 如果配置有问题，则会显示一条错误消息，说明需要修复的问题。 否则，应用程序已准备就绪。
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-11.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-11.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
-1. \[ServiceNow 管理员 \] 为现有用户启用 Microsoft 支持集成。
+1. \[ServiceNow 管理员\] 为现有用户启用 Microsoft 支持集成。
 
     Microsoft 365角色之一的用户启用支持集成：
 
-    - x \_ mioms \_ m365 \_ assis.insights \_ 用户
+    - xmiomsm365assis.insightsuser\_\_\_\_
 
-    - x \_ mioms \_ m365 \_ assis.administrator
+    - xmiomsm365assis.administrator\_\_\_
 
-1. \[OPTIONAL \] \[ 角色为 x \_ mioms \_ m365 \_ assis.administrator link \] Microsoft 365管理员帐户的用户。
+1. \[OPTIONAL\] \[角色为 xmiomsm365assis.administrator\_\_\_ link link Microsoft 365\]管理员帐户的用户。
 
-    如果任何用户具有角色 x \_ mioms \_ m365 \_ assis.administrator，并且使用不同的 Microsoft 365 帐户来管理 Microsoft 365 支持案例，则必须转到 Microsoft 365 支持 &gt; 链接帐户以设置其 Microsoft 365 管理员电子邮件。
+    如果任何用户具有 xmiomsm365assis.administrator\_\_\_ 角色，并且使用不同的 Microsoft 365 帐户来管理 Microsoft 365 支持案例，则必须转到 Microsoft 365 支持&gt;链接帐户以设置其 Microsoft 365 管理员电子邮件。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image21.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image21.png" alt-text="自动生成的图形用户界面、文本、应用程序说明":::
