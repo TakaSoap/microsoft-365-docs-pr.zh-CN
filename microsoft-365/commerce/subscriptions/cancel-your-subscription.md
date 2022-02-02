@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何在 Microsoft 365 管理中心中取消 Dynamics 365、Intune、Power Platform 和 Microsoft 365 商业试用版或付费订阅。
 ms.date: 01/20/2022
-ms.openlocfilehash: f1c64090117a93d33ccf69222cbe0b7f7d06a88e
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 2d800fbba8ce2290de395179589b1d4110cd1345
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156168"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322574"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -101,7 +101,7 @@ ms.locfileid: "62156168"
   
 - **管理员访问权限** 管理员仍可登录和访问管理中心，并根据需要购买其他订阅。 作为全局管理员或账单管理员，你有 90 天时间可以 [重新激活订阅](reactivate-your-subscription.md) 且保留所有数据。
 
-- **用户访问权限** 你的用户将不能使用 OneDrive for Business 等服务，也不能访问客户数据，例如团队网站上的电子邮件或文档。 Office 应用程序（如 Word 和 Excel）最终将进入只读且缩减功能模式，并显示 [未经授权的产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
+- **用户访问权限** 你的用户将不能使用 OneDrive for Business 等服务，也不能访问客户数据，例如团队网站上的电子邮件或文档。 Office 应用程序（如 Word 和 Excel）最终将进入只读且缩减功能模式，并显示 [未经授权的产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)。
 
 要了解详细信息，请参阅 [我的订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
 
@@ -138,13 +138,13 @@ ms.locfileid: "62156168"
 
 取消生效后，你的用户将失去对其数据的访问权限。取消订阅前，请让他们将其 OneDrive for Business 或 SharePoint Online 文件保存到其他位置。将会在取消订阅的 30 天之后、180 天之前删除遗留的任何客户数据。
 
-- 若要将电子邮件、联系人、任务和日历信息移动到另一个帐户，请参阅[将电子邮件、联系人和日历导出或备份到 Outlook .pst 文件](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)。
+- 若要将电子邮件、联系人、任务和日历信息移动到另一个帐户，请参阅[将电子邮件、联系人和日历导出或备份到 Outlook .pst 文件](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)。
 
 - 要将 SharePoint Online 环境（OneDrive for Business 或团队网站）中的文档库或列表内容（如联系人）保存到文件共享或本地计算机，请参阅[手动迁移 SharePoint Online 内容](/sharepoint/troubleshoot/migration-tool/content-manual-migration)。
 
 ### <a name="uninstall-office-optional"></a>卸载 Office（可选）
 
-如果已取消订阅且未 [将用户移动到不同订阅](move-users-different-subscription.md)（包括 Microsoft 365），则 Microsoft 365 会以缩减功能模式运行。 此情况发生时，用户只能阅读和打印文档，并且 Microsoft 365 应用程序显示 [未经授权产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 要避免任何混淆，请让你的用户从其计算机上 [卸载 Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)。
+如果已取消订阅且未 [将用户移动到不同订阅](move-users-different-subscription.md)（包括 Microsoft 365），则 Microsoft 365 会以缩减功能模式运行。 此情况发生时，用户只能阅读和打印文档，并且 Microsoft 365 应用程序显示 [未经授权产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)。 要避免任何混淆，请让你的用户从其计算机上 [卸载 Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8)。
 
 ## <a name="next-steps"></a>后续步骤
 

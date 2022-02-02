@@ -22,12 +22,12 @@ ms.custom:
 description: 零时差自动清除 (ZAP) 反向将 Exchange Online 邮箱中的已送达邮件移动到垃圾邮件文件夹或隔离邮箱，这些邮件在传递后被识别为垃圾邮件、网络钓鱼或包含恶意软件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d511ab13bd6be4a1e526726f8011f457dfd6c765
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: a48f5eb1d45af16ab275c16d2965dc9a578d9312
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295358"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320939"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>零时差自动清除 (ZAP) 中Exchange Online
 
@@ -40,9 +40,9 @@ ms.locfileid: "62295358"
 
 ## <a name="zero-hour-auto-purge-zap-basics"></a>零时差自动清除 (ZAP) 基础知识
 
-在 Microsoft 365 组织中，Exchange Online 中的邮箱为零时差自动清除 (ZAP) 是一种电子邮件保护功能，可主动检测并消除已传递到 Exchange Online 邮箱的恶意网络钓鱼、垃圾邮件或恶意软件邮件。
+在 Microsoft 365 组织中，邮箱在 Exchange Online 中，零时差自动清除 (ZAP) 是一种电子邮件保护功能，可主动检测并消除已传递到 Exchange Online 邮箱的恶意网络钓鱼、垃圾邮件或恶意软件邮件。
 
-ZAP 在保护内部部署Exchange Online Protection (的 EOP) 环境中不起作用Exchange。
+ZAP 在保护内部部署Exchange Online Protection (的 EOP) 环境中不起作用Exchange运行。
 
 ## <a name="how-zap-works"></a>ZAP 的工作原理
 
@@ -52,7 +52,7 @@ ZAP 操作对于用户是无缝的;如果检测到并移动了邮件，系统不
 
 [保险箱列表、](create-safe-sender-lists-in-office-365.md)邮件流规则 (传输规则) 收件箱规则或其他筛选器优先于 ZAP。 与邮件流中发生的情况类似，这意味着即使服务确定已传递的邮件需要 ZAP，由于安全发件人配置，邮件不会运行。 这是在配置邮件以绕过筛选时要谨慎的另一个原因。
 
-### <a name="zero-hour-auto-purge-zap-for-malware"></a>恶意软件的零时差自动 (ZAP) 清除
+### <a name="zero-hour-auto-purge-zap-for-malware"></a>恶意软件的零时差自动清除 (ZAP) 
 
 对于 **在传递后** 发现包含恶意软件的已读邮件或未读邮件，ZAP 隔离包含恶意软件附件的邮件。 默认情况下，只有管理员可以查看和管理隔离的恶意软件邮件。 但是，管理员可以创建并使用 _隔离_ 策略来定义允许用户对被隔离为恶意软件的邮件执行哪些操作。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
 
@@ -70,7 +70,7 @@ ZAP 操作对于用户是无缝的;如果检测到并移动了邮件，系统不
 
 默认情况下，在反垃圾邮件策略中启用网络钓鱼的 ZAP，网络钓鱼电子邮件筛选裁定的默认操作是隔离邮件，这意味着默认情况下，网络钓鱼的 ZAP 隔离邮件。
 
-有关配置垃圾邮件筛选裁定的信息，[请参阅在垃圾邮件](configure-your-spam-filter-policies.md)Microsoft 365。
+有关配置垃圾邮件筛选裁定的信息，请参阅在邮件中配置[反垃圾邮件Microsoft 365](configure-your-spam-filter-policies.md)。
 
 ### <a name="zero-hour-auto-purge-zap-for-high-confidence-phishing"></a>零时差自动清除 (ZAP) 高可信度网络钓鱼
 
@@ -90,17 +90,22 @@ ZAP 操作对于用户是无缝的;如果检测到并移动了邮件，系统不
 
 默认情况下，反垃圾邮件策略中已启用垃圾邮件 ZAP，垃圾邮件筛选裁定的默认操作是"将邮件移动到垃圾邮件文件夹"，这意味着垃圾邮件 ZAP 默认将未读邮件移动到"垃圾邮件"文件夹。
 
-有关配置垃圾邮件筛选裁定的信息，[请参阅在垃圾邮件](configure-your-spam-filter-policies.md)Microsoft 365。
+有关配置垃圾邮件筛选裁定的信息，请参阅在邮件中配置[反垃圾邮件Microsoft 365](configure-your-spam-filter-policies.md)。
 
 ### <a name="zero-hour-auto-purge-zap-considerations-for-microsoft-defender-for-office-365"></a>零时差自动清除 (ZAP) Microsoft Defender for Office 365
 
-ZAP 不会隔离正在 保险箱 附件策略扫描中动态传递的任何邮件 [](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)，或者 EOP 恶意软件筛选已使用恶意软件警报 Text.txt文件替换附件。**** 如果收到这些类型的邮件的网络钓鱼或垃圾邮件信号，并且反垃圾邮件策略中的筛选裁定设置为对邮件 (移动到垃圾邮件、重定向、删除或隔离) 则 ZAP 将默认为"移动到垃圾邮件"操作。
+ZAP 不会隔离正在 保险箱 附件策略扫描中动态传递，或者 [](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) EOP 恶意软件筛选已使用恶意软件警报 Text.txt文件替换附件 **的任何** 邮件。 如果收到这些类型的邮件的网络钓鱼或垃圾邮件信号，并且反垃圾邮件策略中的筛选裁定设置为对邮件 (Move to Junk， Redirect， Delete， or Quarantine) 则 ZAP 将默认为"移动到垃圾邮件"操作。
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>如何查看 ZAP 是否移动了邮件
 
-若要确定 ZAP 是否移动了邮件，可以使用邮件流状态[](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report)报告的邮件流视图或威胁资源管理器 (和实时检测[) 。 ](threat-explorer.md) 请注意，作为系统操作，ZAP 不会记录在Exchange审核日志中。
+若要确定 ZAP 是否移动了邮件，可以使用以下选项：
 
-## <a name="zero-hour-auto-purge-zap-faq"></a>零时差自动清除 (ZAP) FAQ
+- **邮件数**：使用" [邮件流](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) 状态"报告中的"邮件流"视图可查看指定日期范围内受 ZAP 影响的邮件数。
+- **邮件详细信息**[：使用威胁](threat-explorer.md)资源管理器 (实时检测功能) "其他操作"列的值 **ZAP** 筛选所有 **电子邮件** 事件。
+
+**注意**：ZAP 不会作为系统操作Exchange记录在邮箱审核日志中。
+
+## <a name="zero-hour-auto-purge-zap-faq"></a>ZAP (常见问题解答) 零时差自动清除
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>如果将合法邮件移动到"垃圾邮件"文件夹，会发生什么情况？
 
@@ -114,9 +119,9 @@ ZAP 将基于反垃圾邮件策略的配置对邮件采取措施，如本文前�
 
 保险箱发件人、邮件流规则或阻止和允许组织设置优先。 这些消息从 ZAP 中排除，因为服务正在执行你配置它所执行的工作。 这是在配置邮件以绕过筛选时要谨慎的另一个原因。
 
-### <a name="what-are-the-licensing-requirements-for-zero-hour-auto-purge-zap-to-work"></a>ZAP (零时差自动清除) 要求是什么？
+### <a name="what-are-the-licensing-requirements-for-zero-hour-auto-purge-zap-to-work"></a>适用于 ZAP 的零时差自动清除 (要求) 是什么？
 
-对许可证没有限制。 ZAP 适用于联机托管的所有Exchange邮箱。 ZAP 在保护内部部署Exchange Online Protection (的 EOP) 环境中不起作用Exchange。
+对许可证没有限制。 ZAP 适用于联机托管的所有Exchange邮箱。 ZAP 在保护内部部署Exchange Online Protection (的 EOP) 环境中不起作用Exchange运行。
 
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>如果将邮件移动到其他文件夹（例如收件箱规则 (，) ？
 
@@ -126,4 +131,4 @@ ZAP 将基于反垃圾邮件策略的配置对邮件采取措施，如本文前�
 
 零时差自动清除将隔离来自保留邮箱的邮件。 ZAP 可以基于为反垃圾邮件策略中的垃圾邮件或网络钓鱼裁定配置的操作，将邮件移动到"垃圾邮件"文件夹。
 
-有关用户保留Exchange Online，请参阅 [In-Place Hold and Litigation Hold in Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds)。
+有关用户中的保留Exchange Online，请参阅 [In-Place Hold and Litigation Hold in Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds)。

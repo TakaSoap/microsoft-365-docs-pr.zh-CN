@@ -12,17 +12,17 @@ ms.author: v-jweston
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/14/2021
-ms.openlocfilehash: 05650ab36833f8ea633c9f314fd438cfd0275919
-ms.sourcegitcommit: db62fce58867c7e5c8029b66966e792da3103b89
+ms.collection: m365initiative-m365-defender
+ms.date: 1/18/2022
+ms.openlocfilehash: 5878b29b5d40076cd515dde6737a4e7c7d70ab56
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61598445"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320975"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>了解并使用攻击面减少功能
 
@@ -45,13 +45,13 @@ ms.locfileid: "61598445"
 
 若要在你的环境中配置攻击面减少，请按照以下步骤操作：
 
-1. [为 Microsoft Edge 启用基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard)。
+1. [为用户启用基于硬件的Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard)。
 
 2. 启用应用程序控制。
 
    1. 查看 Windows 中的基本策略。 请参阅 [示例基本策略](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)。
    2. 请参阅Windows Defender[控件设计指南](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide)。
-   3. 请参阅部署[WDAC Windows Defender应用程序 (策略) 应用程序控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)。
+   3. 请参阅使用 [WDAC Windows Defender部署 (控制) 策略](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)。
 
 3. [启用受控文件夹访问权限](enable-controlled-folders.md)。
 
@@ -63,14 +63,14 @@ ms.locfileid: "61598445"
 
 7. 设置网络防火墙。
 
-   1. 获取高级安全[Windows Defender防火墙的概述](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。
+   1. 获取高级安全[Windows Defender防火墙概述](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。
    2. 使用[Windows Defender防火墙](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide)设计指南决定您希望如何设计防火墙策略。
-   3. 使用[Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)防火墙部署指南设置组织的高级安全防火墙。
+   3. 使用 [Windows Defender 防火墙](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)部署指南设置组织的高级安全防火墙。
 
 > [!TIP]
 > 在大多数情况下，配置攻击面减少功能时，可以从以下几种方法中选择：
 >
-> - Microsoft Endpoint Manager (包括Microsoft Intune和Microsoft Endpoint Configuration Manager) 
+> - Microsoft Endpoint Manager (现在包括Microsoft Intune和Microsoft Endpoint Configuration Manager) 
 > - 组策略
 > - PowerShell cmdlet
 
@@ -89,14 +89,14 @@ ms.locfileid: "61598445"
 
 这些功能不会阻止或阻止应用、脚本或文件被修改。 但是，Windows事件日志将记录事件，就像功能完全启用一样。 使用审核模式，你可以查看事件日志，以查看如果启用该功能，将有什么影响。
 
-若要查找审核的条目，请转到应用程序和服务Microsoft Windows \>  \> **Windows Defender** \>  \> **操作**。
+若要查找审核的条目，  \>  \>请转到"Microsoft 应用程序和服务"Windows **Windows Defender** \> \> **操作"**。
 
 使用 Defender for Endpoint 获取每个事件的更多详细信息。 这些详细信息对于调查攻击面减少规则尤其有用。 使用 Defender for Endpoint 控制台，你可以调查作为警报时间线和调查方案的 [一部分的问题](investigate-alerts.md)。
 
 可以使用组策略、PowerShell 和配置服务提供程序和 CSP (启用审核) 。
 
 > [!TIP]
-> 您还可以访问 Testground Windows Defender[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认这些功能是否正常工作并查看它们如何工作。
+> 还可以访问 Testground Windows Defender，demo.wd.microsoft.com 以确认这些功能是否正常工作并[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)查看它们如何工作。
 
 | 审核选项 | 如何启用审核模式 | 如何查看事件 |
 |---|---|---|
@@ -113,7 +113,7 @@ ms.locfileid: "61598445"
 
 本节列出了所有事件及其关联的功能或设置，并介绍如何创建自定义视图以筛选到特定事件。
 
-获取事件、阻止和警告的详细报告，Windows 安全中心 E5 订阅并使用[Microsoft Defender for Endpoint。](microsoft-defender-endpoint.md)
+获取事件、阻止和警告的详细报告，Windows 安全中心 E5 订阅并使用 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)。
 
 ### <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>使用自定义视图查看攻击面减少功能
 
@@ -124,12 +124,12 @@ ms.locfileid: "61598445"
 #### <a name="import-an-existing-xml-custom-view"></a>导入现有 XML 自定义视图
 
 1. 创建一个.txt文件，将想要使用的自定义视图的 XML 复制到.txt文件中。 为想要使用的每个自定义视图执行这一操作。 按如下所示重命名文件 (确保将类型从 .txt 更改为 .xml) ：
-    - 受控文件夹访问事件自定义视图 *：cfa-events.xml*
-    - Exploit Protection 事件自定义视图 *：ep-events.xml*
-    - 攻击面减少事件自定义视图 *：asr-events.xml*
-    - 网络/保护事件自定义视图 *：np-events.xml*
+    - 受控文件夹访问事件自定义视图： *cfa-events.xml*
+    - Exploit Protection 事件自定义视图： *ep-events.xml*
+    - 攻击面减少事件自定义视图： *asr-events.xml*
+    - 网络/保护事件自定义视图： *np-events.xml*
 
-2. 在 **事件查看器** 中键入"开始"菜单，然后打开 **事件查看器**。
+2. 在 **事件查看器** 中键入"开始"菜单并打开 **事件查看器**。
 
 3. 选择 **操作** \> **导入自定义视图...**
 
@@ -144,18 +144,18 @@ ms.locfileid: "61598445"
 
 #### <a name="copy-the-xml-directly"></a>直接复制 XML
 
-1. 在 **事件查看器** 中键入"开始"菜单，然后打开Windows **事件查看器。**
+1. 在 **事件查看器** 中键入"开始"菜单并打开Windows **事件查看器**。
 
 2. 在左侧面板的"操作 **"下**，选择 **"创建自定义视图..."。**
 
    > [!div class="mx-imgBorder"]
    > ![突出显示"事件查看器"窗口上的"创建自定义视图"选项的动画。](images/events-create.gif)
 
-3. 转到"XML"选项卡，然后选择"**手动编辑查询"。** 如果使用的是 XML 选项，则会看到一条警告，提示你无法使用"筛选器"选项卡编辑查询。 选择“**是**”。
+3. 转到"XML"选项卡，然后选择" **手动编辑查询"**。 如果使用的是 XML 选项，则会看到一条警告，提示你无法使用"筛选器"选项卡编辑查询。 选择“**是**”。
 
 4. 将您希望从中筛选事件的功能的 XML 代码粘贴到 XML 部分。
 
-5. 选择“**确定**”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
+5. 选择“确定”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
 
 #### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻击面减少规则事件的 XML
 
@@ -212,12 +212,12 @@ ms.locfileid: "61598445"
 
 ### <a name="list-of-attack-surface-reduction-events"></a>攻击面减少事件列表
 
-所有攻击面减少事件都位于 Microsoft > Windows 应用程序和服务日志>**下，** 然后位于下表中列出的文件夹或提供程序下。
+所有攻击面减少事件都位于 **Microsoft** >应用程序和服务日志> Windows下，然后位于下表中列出的文件夹或提供程序下。
 
 可以在事件查看器中Windows这些事件：
 
 1. 打开" **开始"** 菜单并 **键入事件查看器**，然后选择 **事件查看器** 结果。
-2. 展开 **Microsoft >** 服务日志> Windows然后转到下表中的提供程序 **/源** 下列出的文件夹。
+2. Expand **Applications and Services Logs > Microsoft > Windows** and then go to the folder listed under **Provider/source** in the table.
 3. 双击子项以查看事件。 滚动浏览事件以查找你正在查找的事件。
 
    ![使用事件查看器显示动画。](images/event-viewer.gif)
@@ -253,7 +253,7 @@ ms.locfileid: "61598445"
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |23|ROP SimExec 审核|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |24|ROP SimExec 强制|
 |漏洞保护|WER-诊断|5|CFG 阻止|
-|漏洞保护|Win32K (操作) |260|不受信任的字体|
+|漏洞保护|Win32K (Operational) |260|不受信任的字体|
 |网络保护|Windows Defender (操作) |5007|更改设置时的事件|
 |网络保护|Windows Defender (操作) |1125|在审核模式下触发网络保护时的事件|
 |网络保护|Windows Defender (操作) |1126|在阻止模式下触发网络保护时的事件|
@@ -267,7 +267,7 @@ ms.locfileid: "61598445"
 |攻击面减少|Windows Defender (操作) |1121|在阻止模式下触发规则时的事件|
 
 >[!NOTE]
-> 从用户的角度来看，ASR 警告模式通知是作为攻击面减少Windows Toast 通知的一种通知。
+> 从用户的角度来看，ASR 警告模式通知是作为攻击面减少Windows一个 Toast 通知。
 >
 > 在 ASR 中，网络保护仅提供审核和阻止模式。
 
@@ -277,9 +277,9 @@ ms.locfileid: "61598445"
 
 | 文章 | 说明 |
 |:---|:---|
-| [基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 使用容器隔离Microsoft Edge帮助防范恶意网站。 |
+| [基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 使用容器隔离Microsoft Edge保护恶意网站。 |
 | [应用程序控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | 使用应用程序控制，以便应用程序必须获得信任才能运行。 |
-| [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑应用 (包括文件加密勒索软件恶意软件) 更改关键系统文件夹中的文件 (需要Microsoft Defender 防病毒)  |
+| [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑 (包括文件加密勒索软件恶意软件) 更改关键系统文件夹中的文件 (要求Microsoft Defender 防病毒)  |
 | [网络保护功能](network-protection.md) | 将保护扩展到组织设备上网络流量和连接。  (需要Microsoft Defender 防病毒)  |
 | [漏洞保护](exploit-protection.md) | 帮助保护组织使用的操作系统和应用免遭攻击。 Exploit Protection 还适用于第三方防病毒解决方案。 |
 | [攻击面减少规则](attack-surface-reduction.md) | 使用有助于停止恶意软件的智能规则，减少应用程序中的漏洞（攻击面）。  (需要Microsoft Defender 防病毒) 。 |
