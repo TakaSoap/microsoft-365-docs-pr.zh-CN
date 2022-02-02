@@ -326,7 +326,7 @@
               href: manage/servicenow-overview.md
             - name: 配置基本身份验证
               href: manage/servicenow-basic-authentication.md
-            - name: 使用 AAD OAuth 令牌进行配置
+            - name: 使用 Azure AD 身份验证令牌进行配置
               href: manage/servicenow-aad-oauth-token.md
             - name: 仅支持服务运行状况事件和建议解决方案的集成
               href: manage/servicenow-service-health-incidents-solutions-only.md
