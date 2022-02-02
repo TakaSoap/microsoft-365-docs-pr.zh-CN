@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: c2300061dbe075be31e0a70d7b1356e3606230e5
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: cf45ea747740743f33c47906ac257c3061db7bf5
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271690"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295046"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -55,7 +55,7 @@ ms.locfileid: "62271690"
     
     你可能还听过该方法的另外一种称呼方式，即自动标记静态数据（SharePoint 和 OneDrive 中的文档）和传输中的数据（由 Exchange 发送或接收的电子邮件）。对于 Exchange，它不包含静态电子邮件（邮箱）。
     
-    由于此标记是由服务而不是应用程序应用的，因此无需担心用户拥有的应用和版本。 因此，可立即在整个组织中使用此功能，并且适合大规模标记。 自动标记策略不支持推荐的标记，因为用户不与标记过程交互。 相反，管理员将在模拟模式下运行策略，以便在实际应用标签前，帮助确保正确标记内容。
+    由于此标记是由服务而不是应用程序应用的，因此无需担心用户拥有的应用和版本。 因此，可立即在整个组织中使用此功能，并且适合大规模标记。 自动标记策略不支持推荐的标记，因为用户不与标记过程交互。 相反，管理员将在模拟下运行策略，以便在实际应用标签前，帮助确保正确标记内容。
 
     有关配置说明，请参阅此页面上的[如何为 SharePoint、OneDrive 和 Exchange 配置自动标记策略](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)。
     
@@ -253,6 +253,17 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 最后，可以使用模拟模式来提供运行自动标记策略所需时间的近似值，以帮助计划和安排在没有模拟模式的情况下运行自动标记策略的时间。
 
+#### <a name="deleted-onedrive-accounts-and-simulation-results"></a>已删除 OneDrive 帐户和模拟结果
+
+当删除的 OneDrive 帐户仍处于 [删除过程的保留阶段时](/onedrive/retention-and-deletion#the-onedrive-deletion-process)，预计模拟结果中可能存在显示差异。 例如，员工已离开组织，其经理有权临时访问该用户的 OneDrive 文件。
+
+在此方案中，如果 OneDrive 帐户是由自动标记策略中的 URL 指定的，则模拟结果中将包含已删除 OneDrive 帐户中的匹配文件。
+
+但是，如果 OneDrive 帐户不是由 URL 指定的，而是包含在 **所有** 默认设置中:
+- 在策略中包含 SharePoint 位置时，已删除的 OneDrive 帐户中的匹配文件在模拟结果中显示为 SharePoint 项。
+- 如果策略中不包括 SharePoint 位置，则模拟结果中不包含已删除 OneDrive 帐户中的匹配文件。
+
+在所有情况下，会标记所有匹配的文件，直到永久删除 OneDrive 帐户。 列出的显示差异仅适用于模拟结果。
 
 ### <a name="creating-an-auto-labeling-policy"></a>创建自动标记策略
 
@@ -334,13 +345,13 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
     如果你已准备好运行策略而不进行模拟，请选择“**启用策略**”选项。
 
-自动策略持续运行，直至删除。 例如，新建和已修改的文件将包含在当前的策略设置中。
+自动标记策略会持续运行，直至删除。 例如，新建和已修改的文件将包含在当前的策略设置中。
 
 ### <a name="monitoring-your-auto-labeling-policy"></a>监视自动标记策略
 
 启用自动标记策略后，可以查看所选位置中文件的 SharePoint OneDrive 进度。 电子邮件不包含在标记进度中，因为它们会在发送时自动标记。
 
-标记进度包括要由策略标记的文件、过去 7 天内标记的文件和标记的总文件数。 由于每天最多标记 25，000 个文件，此信息可让你查看策略的当前标记进度以及仍要标记的文件数。
+标记进度包括要由策略标记的文件、过去七天内标记的文件和标记的总文件数。 由于每天最多标记 25，000 个文件，此信息可让你查看策略的当前标记进度以及仍要标记的文件数。
 
 首次打开策略时，最初会看到要标记的文件值 0，直到检索到最新数据。 此进度信息每 48 小时更新一次，因此你可以每隔一天查看一次最新数据。 选择自动标记策略时，可以在一个飞出窗格中查看有关该策略的更多详细信息，其中包括前 10 个网站的标签进度。 此浮出控件窗格上的信息可能比 **自动标记** 主页上显示的聚合策略信息更新。
 
