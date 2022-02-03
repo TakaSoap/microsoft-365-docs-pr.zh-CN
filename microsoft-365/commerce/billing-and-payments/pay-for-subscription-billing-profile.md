@@ -20,18 +20,18 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 ms.date: 10/29/2021
-ms.openlocfilehash: afbdbc333a5242a1a4639bf52162faeee44e52fd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 8e7e53ae188a8b91dbe6ceb1d6db79997348e134
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665309"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354644"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>如何使用计费配置文件支付订阅费用
 
 购买订阅时，使用计费配置文件支付订阅费用。 计费配置文件链接到特定的付款方式，可以是信用卡或借记卡，或者是发票，但不能是银行帐户。
 
-如果不确定账户是否具有计费配置文件，请参阅 [了解计费配置文件](manage-billing-profiles.md)。 如果你没有计费配置文件，请参阅 [如何支付订阅费用](pay-for-your-subscription.md)。
+如果不确定账户是否具有计费配置文件，请参阅 [了解计费配置文件](manage-billing-profiles.md)。 如果你没有帐单配置文件，请参阅 [如何支付订阅费用](pay-for-your-subscription.md)。
 
 ## <a name="paying-with-recurring-billing-turned-on-or-off"></a>打开或关闭定期计费进行支付
 
@@ -41,7 +41,7 @@ ms.locfileid: "60665309"
 
 ## <a name="paying-by-invoice"></a>按发票付款
 
-如果你有设置为通过发票支付的计费配置文件，可以使用支票或 EFT 支付订阅费用。 您还可以使用信用卡通过发票上的"现在支付"按钮进行在线付款。 
+如果你有设置为通过发票支付的计费配置文件，可以使用支票或 EFT 支付订阅费用。 您还可以使用信用卡通过发票上的"现在支付"按钮进行在线付款。
 
 若要获得按发票付款的资格，必须：
 
@@ -51,15 +51,14 @@ ms.locfileid: "60665309"
 
 如果需要进行信用检查，在购买订阅时就会收到通知。如果同意取得联系，则会收到一封电子邮件，其中包括更多关于申请信贷审批的信息。通常会在两个工作日内完成信用检查。
 
-如果你的计费配置文件由发票支持，则当帐单可供查看时，你收到一封电子邮件。 这封邮件不包含账单副本。 不过，可以选择[通过电子邮件接收账单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。 账单中包含了关于付款选择以及付款地点的详细信息。 如果在计费配置文件中 (PO) PO 编号，该编号将显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
+如果你的计费配置文件由发票支持，则当帐单可供查看时，你收到一封电子邮件。 这封邮件不包含账单副本。 但是，你可以选择以 [电子邮件附件](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)接收组织的发票。 账单中包含了关于付款选择以及付款地点的详细信息。 如果在计费配置文件中 (PO) PO 编号，该编号将显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>支票或 EFT 付款应发送到何处？
 
-[检查发票](view-your-bill-or-invoice.md) ，了解你的国家/地区或地区的付款说明。 如果不确定还款金额，可在“<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单和付款</a>”页面的“**发票**” 选项卡上在线查看帐单和计费历史记录。
+[检查发票](view-your-bill-or-invoice.md) 以了解你所在国家或地区的付款说明。 如果不确定还款金额，可在“<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单和付款</a>”页面的“**发票**” 选项卡上在线查看帐单和计费历史记录。
 
 > [!NOTE]
 > 通过支票付款仅可用于几个国家或地区。
-
 
 ## <a name="can-i-pay-my-invoice-online"></a>能否在线按发票支付？
 

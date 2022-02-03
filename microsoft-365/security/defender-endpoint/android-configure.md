@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 92a927bf0cb3a5e568ca2b02d60d641907bc0407
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 22e0eed3becebdcb3dee4c31ddc7659651bac71f
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295373"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354608"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>在 Android 功能上配置适用于终结点的 Defender
 
@@ -68,6 +68,9 @@ Android 上的 Defender for Endpoint 允许 IT 管理员配置 Web 保护功能�
 
 从 Android 版 Microsoft Defender for Endpoint 版本 1.0.3425.0303 开始，你可以对已安装在载入的移动设备上的操作系统和应用运行漏洞评估。
 
+> [!NOTE]
+> 漏洞评估是 Microsoft Defender for [](next-gen-threat-and-vuln-mgt.md) Endpoint 中的威胁和漏洞管理的一部分。 
+
 **有关与来自个人设备的应用相关的隐私注意事项 (BYOD) ：**
 
 - 对于 android Enterprise工作配置文件，仅支持在工作配置文件上安装的应用。
@@ -103,7 +106,7 @@ Defender for Endpoint 支持对工作配置文件中的应用进行漏洞评估�
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **AppsApp** >  **configuration** **policiesAddManaged** >  >  **devices**.
 2. 为策略命名;**Android >平台Enterprise**;选择配置文件类型。
 3. 选择 **Microsoft Defender for Endpoint** 作为目标应用。
-4. 在设置页面中，选择"使用 **配置** 设计器"，将 **DefenderTVMPrivacyMode** 作为键和值类型添加为 **Integer**
+4. 在设置页面中，选择使用 **配置** 设计器，将 **DefenderTVMPrivacyMode** 作为键和值类型添加为 **Integer**
    - 若要在工作配置文件中禁用应用漏洞，请输入值作为 `1` ，并将此策略分配给用户。 默认情况下，此值设置为 `0`。
    - 对于密钥设置为 的用户 `0`，Defender for Endpoint 将应用列表从工作配置文件发送到后端服务进行漏洞评估。
 5. 单击 **"** 下一步"，并将此配置文件分配给目标设备/用户。
@@ -143,7 +146,7 @@ Defender for Endpoint 支持对工作配置文件中的应用进行漏洞评估�
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **AppsApp** >  **configuration** **policiesAddManaged** >  >  **devices**.
 2. 为策略命名"Android >**平台Enterprise**，选择配置文件类型。
 3. 选择 **Microsoft Defender for Endpoint** 作为目标应用。
-4. 在设置"页面中，选择"**使用** 配置设计器"，将 **DefenderExcludeURLInReport** 添加为键和值类型 **"整数"**。
+4. 在设置页面中，选择"**使用配置** 设计器"，将 **DefenderExcludeURLInReport** 添加为键和值类型 **"整数"**。
    - 输入 **1 以启用隐私**。 默认值为 0。
 5. 单击 **"** 下一步"，并将此配置文件分配给目标设备/用户。
 
@@ -180,9 +183,9 @@ Defender for Endpoint 支持对工作配置文件中的应用进行漏洞评估�
 使用以下步骤为工作配置文件中的目标用户启用隐私：
 
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **AppsApp** >  **configuration** **policiesAddManaged** >  >  **devices**.
-2. 为策略命名"> **Android Enterprise**，选择配置文件类型。
+2. 为策略命名"Android >**平台Enterprise**，选择配置文件类型。
 3. 选择 **Microsoft Defender for Endpoint** 作为目标应用。
-4. 在设置页面中，选择"**使用配置** 设计器"，将 **DefenderExcludeAppInReport** 添加为键和值类型"**整数"**
+4. 在设置页面中，选择"使用 **配置** 设计器"，将 **DefenderExcludeAppInReport** 添加为键和值类型"**整数"**
    - 输入 **1 以启用隐私**。 默认值为 0。
 5. 单击 **"** 下一步"，并将此配置文件分配给目标设备/用户。
 

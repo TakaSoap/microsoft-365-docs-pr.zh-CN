@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 265ebbe27507ee18cd547883b38f0671d19c3964
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 2a2bcf7af5247dab804c3251b359cf82946d855c
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321623"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62355052"
 ---
 # <a name="microsoft-365-solutions-for-the-healthcare-industry"></a>Microsoft 365医疗保健行业的解决方案
 
@@ -30,14 +30,13 @@ Microsoft 提供了许多功能，可帮助医疗保健组织为患者提供服�
 
 <br>
 
-了解如何使用 Microsoft 365、Dynamics 365 和 Azure 实现数字化、现代化和增强医疗保健解决方案。
+了解如何使用 Microsoft 365、Dynamics 365 和 Azure 对医疗保健解决方案进行数字化、现代化和增强。
 
 ## <a name="resources-for-healthcare"></a>医疗保健资源
 
 |资源 |说明  |
 |---------|---------|
-|  [使用 Microsoft Teams 和 Bookings 应用进行虚拟访问](/microsoftteams/expand-teams-across-your-org/bookings-virtual-visits)  |      Microsoft Teams 中的 Bookings 应用为组织提供了一种简单的方式来安排和管理员工和与会者的虚拟约会。 使用它来安排虚拟约会，如医疗保健访问、财务咨询、面试、客户支持、虚拟购物体验、教育办公时间等。   |
-|[MicrosoftMicrosoft 管理](/dynamics365/industry/vaccination-management/overview)| 此解决方案通过在线注册和约会日程安排将符合条件的人员与设施连接在一起。 它还提供库存管理、包括用于签入居民和记录商店的应用，并通过集中式仪表板提供有关该规划的见解。|
+|[使用 Microsoft Teams 和 Bookings 应用进行虚拟访问](/microsoftteams/expand-teams-across-your-org/bookings-virtual-visits)  |      Microsoft Teams 中的 Bookings 应用为组织提供了一种简单的方式来安排和管理员工和与会者的虚拟约会。 使用它来安排虚拟约会，如医疗保健访问、财务咨询、面试、客户支持、虚拟购物体验、教育办公时间等。   |
 |[Teams医疗保健服务](/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc)    |  Microsoft Teams提供许多对医疗保健组织和其他医疗保健组织有用的远程医疗功能。 <br>- 虚拟访问和电子医疗保健记录 (EHR) 集成<br>- Teams策略包<br>- 安全消息传递<br>- Teams模板<br>- 注意协调与协作      |
 |[Microsoft Cloud for Healthcare](/industry/healthcare/overview)  | 了解适用于医疗保健的 Microsoft 云，以及它如何将受信任的功能汇集在一起，以增强患者参与度、增强健康团队协作以及改进诊断和运营数据见解以提高决策制定和运营效率。     |
 | [适用于医疗保健的 Azure 体系结构和解决方案](/azure/architecture/industries/healthcare)| 了解如何使用服务Microsoft Azure Azure 医疗保健解决方案进行数字化、现代化和增强|
