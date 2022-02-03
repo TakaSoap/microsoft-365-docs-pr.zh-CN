@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: overview
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: af7ad58002adcccc51df0e69890a5134e57d4dfe
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: dfa84cf167dfdb366ad4a7c636a85a30b6de24a4
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320763"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326928"
 ---
 # <a name="protect-your-network"></a>保护你的网络
 
@@ -69,7 +69,7 @@ ms.locfileid: "62320763"
 
 网络保护最适合 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)，它为你提供有关 Exploit Protection 事件的详细报告，并作为警报调查方案的一部分 [进行阻止](investigate-alerts.md)。
 
-当网络保护阻止连接时，将显示来自操作中心的通知。 安全运营团队 [可以使用](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) 组织的详细信息和联系信息自定义通知。 此外，可以启用和自定义各个攻击面减少规则，以适合要监视的某些技术。
+当网络保护阻止连接时，将显示来自操作中心的通知。 安全运营团队 [可以使用](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) 组织的详细信息和联系信息自定义通知。 此外，可以启用和自定义各个攻击面减少规则，以适合要监视的某些技术。
 
 您还可以使用 [审核模式评估](audit-windows-defender.md) 网络保护在启用后将对组织产生怎样的影响。
 
@@ -117,9 +117,9 @@ DeviceNetworkEvents
 
 3. 在Microsoft 365 Defender门户中，警报队列中[会列出警报](alerts-queue.md)。 该警报的详细信息包括 和 `NetworkConnectionEvents` `AlertEvents`。 可以看到网站被阻止 `NetworkConnectionEvents` ，即使你还有 ActionType 为 的项目 `ConnectionSuccess`。
 
-## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>在多Windows运行时Windows 10 企业版虚拟桌面的注意事项
+## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>在多Windows中运行Windows 10 企业版桌面的注意事项
 
-由于用户的多用户特性Windows 10 企业版，请记住以下几点：
+由于应用程序具有多用户Windows 10 企业版，请记住以下几点：
 
 1. 网络保护是设备范围内的一项功能，不能面向特定的用户会话。
 
@@ -133,7 +133,7 @@ DeviceNetworkEvents
 
 ### <a name="alternative-option-for-network-protection"></a>网络保护的备用选项
 
-对于Windows 10 企业版会话 1909 及之后（在 Azure 上的 Windows 虚拟桌面中使用）中，可以使用以下方法启用 Microsoft Edge 的网络保护：
+对于Windows 10 企业版会话 1909 及以下时间（在 Azure 上的 Windows 虚拟桌面中使用）中，可以使用以下方法启用 Microsoft Edge 的网络保护：
 
 1. 使用 ["打开网络保护](enable-network-protection.md) "并按照说明应用策略。
 

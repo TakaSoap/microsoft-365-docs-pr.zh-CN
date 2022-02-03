@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f78d12b323b779e0ba22c92f71f5d5fd53e7c1c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: b218ab83e5d348ef458d791bb573389ab4bf6096
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320699"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326965"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -122,7 +122,7 @@ Microsoft Defender 防病毒[云保护](cloud-protection-microsoft-defender-anti
 >
 > Microsoft Defender 防病毒不会使用静态代理连接到 Windows Update 或 Microsoft Update 以下载更新。 相反，如果配置为使用 Windows Update，它将使用系统范围的代理，或根据配置的回退顺序配置的内部更新[源](manage-protection-updates-microsoft-defender-antivirus.md)。 
 >
-> 如果需要，可以使用管理 **模板> Windows组件> Microsoft Defender 防病毒 >定义代理自动配置 (.pac)** 以连接到网络。 如果需要设置具有多个代理的高级配置，请使用管理模板 **> Windows 组件 > Microsoft Defender 防病毒 >** 定义地址来绕过代理服务器并防止 Microsoft Defender 防病毒 对目标使用代理服务器。 
+> 如果需要，可以使用管理模板 **> Windows组件> Microsoft Defender 防病毒 >定义代理自动配置 (.pac**) 以连接到网络。 如果需要设置具有多个代理的高级配置，请使用管理模板 **> Windows 组件 > Microsoft Defender 防病毒 > 定义** 地址以绕过代理服务器并防止 Microsoft Defender 防病毒 对目标使用代理服务器。 
 >
 > 可以将 PowerShell 与 `Set-MpPreference` cmdlet 一起用于配置这些选项： 
 >
@@ -279,7 +279,7 @@ netsh winhttp reset proxy
 但是，如果连接检查结果显示失败，则会显示 HTTP 错误（请参阅 HTTP 状态代码）。 然后，可以使用在代理服务器中启用对 [Defender for Endpoint 服务 URL 的访问中显示的表中的 URL](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。 可以使用的 URL 取决于载入过程中所选的区域。
 
 > [!NOTE]
-> 连接分析器工具的云连接检查与攻击面减少规则不兼容，阻止源自 [PSExec 和 WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands) 命令的进程创建。 需要暂时禁用此规则，以运行连接工具。 或者，可以在运行分析器时 [临时添加 ASR](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) 排除项。
+> 连接分析器工具的云连接检查与攻击面减少规则不兼容，阻止源自 [PSExec 和 WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands) 命令的进程创建。 需要暂时禁用此规则，以运行连接工具。 或者，可以在运行分析器时 [临时添加 ASR](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) 排除项。
 >
 > 当在注册表中或通过组策略设置 TelemetryProxyServer 时，Defender for Endpoint 将回退，它无法访问定义的代理。
 

@@ -1,5 +1,5 @@
 ---
-title: '使用预览版将 macOS Microsoft 365载入和Microsoft Intune (合规性) '
+title: '使用 Microsoft 365 预览版将 macOS 设备载入和Microsoft Intune (合规性) '
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,20 +13,20 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: '了解如何使用 Microsoft 365 预览版将 macOS Microsoft Intune (载入和) '
-ms.openlocfilehash: 82aa3909ac7829f07a797673300cc0061bb4feef
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+description: '了解如何使用 Microsoft 365 预览版将 macOS 设备载入和Microsoft Intune (合规性) '
+ms.openlocfilehash: bab39cf101cb4fcae15f93ecc74bc52d81cadd91
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962707"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327385"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>使用 Intune 将 macOS 设备载入和卸载到 Microsoft 365 合规性解决方案（预览版）
 
 可以使用 Intune 将 macOS 设备载入到Microsoft 365解决方案中。
 
 > [!IMPORTANT]
-> 如果你未将 Microsoft  Defender for Endpoint (MDE) 部署到 macOS 设备，请使用此过程
+> 如果你未将 Microsoft Defender  for Endpoint (MDE) 部署到 macOS 设备，请使用此过程
 
 **适用于：**
 
@@ -35,8 +35,8 @@ ms.locfileid: "60962707"
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 请确保你的[macOS 设备已载入 Intune，](/mem/intune/fundamentals/deployment-guide-platform-macos)并且已注册公司门户[应用](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
-- 确保你有权访问Microsoft Endpoint Manager[中心](https://endpoint.microsoft.com/#home)。
+- 确保你的 [macOS 设备已载入 Intune](/mem/intune/fundamentals/deployment-guide-platform-macos)，并且已注册公司门户[应用](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
+- 请确保你有权访问Microsoft Endpoint Manager[中心](https://endpoint.microsoft.com/#home)。
 - 这支持 macOS 版本 Catalina 10.15 及更高版本。
 - 创建要为其分配配置更新的用户组。
 - 在 macOS 设备上安装 v95+ Edge 浏览器 
@@ -63,10 +63,10 @@ ms.locfileid: "60962707"
 |辅助功能 |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 完全磁盘访问     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |网络文件器| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)]
-|系统扩展 |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/systext.mobileconfig)
+|系统扩展 |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
 |MDE 首选项     |[com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)|
 |MAU 首选项|[com.microsoft.autoupdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.mobileconfig)|
-|安装包     |从合规性门户安装程序包 **下载，** 文件名 *\* wdav.pkg*\* |
+|安装包     |从合规性门户 **安装程序包下载，** 文件名 *\*wdav.pkg*\* |
 
 > [!TIP]
 > 您可以单独下载 *.mobileconfig* 文件，也可以将这些文件下载到包含以下项的 [单个](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) 组合文件中：
@@ -140,7 +140,7 @@ ms.locfileid: "60962707"
 ```
 -->
 
-2. 打开Microsoft Endpoint Manager  >  **中心"设备**  >  **配置文件"。**
+2. 打开Microsoft Endpoint Manager **centerDevicesConfiguration** >  >  **配置文件**。
 
 1. 选择： **创建配置文件** 
 
@@ -151,13 +151,13 @@ ms.locfileid: "60962707"
 
 1. 选择 **"创建"**
 
-1. 为配置文件选择一个名称，如 *本示例中的 AccessibilityformacOS。* 选择 **下一步**。
+1. 为配置文件选择一个名称，如 *本示例中的 AccessibilityformacOS* 。 选择 **下一步**。
 
 1. 选择在步骤 1 中下载的 **accessibility.mobileconfig** 文件作为配置文件。
 
-1. 选择 **"下一步"**
+1. 选择 **“下一步”**
 
-1. 在"**分配**"选项卡上，将想要部署这些配置的组添加到 ，然后选择"下一 **步"。**
+1. 在" **分配** "选项卡上，添加要部署这些配置的组，然后选择"下一步 **"**。
 
 1. 查看设置并选择" **创建"** 以部署配置。
 
@@ -165,28 +165,28 @@ ms.locfileid: "60962707"
     1. **fulldisk.mobileconfig** 文件
     1. **com.microsoft.autoupdate2.xml** 文件
     1. MDE 首选项 **com.microsoft.wdav.xml** 文件
-        1. 设置防病毒引擎 `passive mode`  =  `true` 或 `false` 。 如果 `true` 仅部署 DLP，请使用 。 如果在 `false` MDE 中部署 DLP 和 Microsoft Defender for Endpoint (，) 。
+        1. 设置防病毒引擎 `passive mode` = `true` 或 。`false` 如果 `true`仅部署 DLP，请使用 。 如果在 `false` MDE 中部署 DLP 和 Microsoft Defender for Endpoint (，) 。
     1. **netfilter.mobileconfig**
  
-1. 打开 **设备**  >  **配置文件，** 你应该会看到你创建的配置文件。
+1. 打开 **DevicesConfiguration** >  配置文件，你应该会看到已创建的配置文件。
 
-1. 在 **"配置文件"** 页中，选择刚创建的配置文件（此示例中为 *AccessibilityformacOS）* 并选择"设备状态"以查看设备列表和配置文件的部署状态。
+1. 在 **"配置文件"** 页中，选择刚创建的配置文件（此示例中为 *AccessibilityformacOS*）并选择"设备状态"以查看设备列表和配置文件的部署状态。
 
 ### <a name="get-the-device-onboarding-package"></a>获取设备载入包
 
-1. 在 **"合规性中心**"**中**  >  **设置"设备载入"，** 然后选择 **"载入"。**
+1. 在 **"合规性中心**"**中设置** > "**设备载入"，** 然后选择 **"载入"**。
  
-1. 对于 **选择操作系统以开始载入过程，请选择** **macOS**。
+1. 对于 **"选择操作系统以开始载入过程"，选择****"macOS"**。
  
-1. 对于 **"部署"方法**，**选择"移动设备管理/Microsoft Intune"。**
+1. 对于 **"部署"方法**，**选择"移动设备管理/Microsoft Intune"**。
  
-1. 选择 **"下载载入程序包"。** 这包括文件包中的载入 *DeviceComplianceOnboarding.xml* 代码。
+1. 选择 **下载载入程序包**。 这包含文件包中的 *DeviceComplianceOnboarding.xml* 代码。
 
 ### <a name="deploy-the-onboarding-package"></a>部署载入包
 
-1. 打开Microsoft Endpoint Manager  >  **中心"设备**  >  **配置文件"。**
+1. 打开Microsoft Endpoint Manager **centerDevicesConfiguration** >  >  **配置文件**。
 
-1. 选择： **创建配置文件**。 
+1. 选择：" **创建配置文件"**。 
 
 1. 选择：
     1. **Platform = macOS**
@@ -195,19 +195,19 @@ ms.locfileid: "60962707"
 
 1. 选择 **"创建"**
 
-1. 为配置文件选择一个名称，如 *此示例中的 OnboardingPackage。* 选择 **下一步**。
+1. 为配置文件选择一个名称，如 *此示例中的 OnboardingPackage* 。 选择 **下一步**。
 
-1. 选择DeviceComplianceOnboarding.xml *文件* 作为配置文件文件。
+1. 选择 *DeviceComplianceOnboarding.xml文件* 作为配置文件文件。
 
-1. 选择 **"下一步"**
+1. 选择 **“下一步”**
 
-1. 在"**分配**"选项卡上，将想要部署这些配置的组添加到 ，然后选择"下一 **步"。**
+1. 在" **分配** "选项卡上，添加要部署这些配置的组，然后选择"下一步 **"**。
 
 1. 查看设置并选择" **创建"** 以部署配置。
 
 ### <a name="enable-system-extension"></a>启用系统扩展
 
-1. In the **Microsoft Endpoint Manager center** select **Create Profile** under Configuration **Profiles**
+1. In the **Microsoft Endpoint Manager center** select **Create Profile** under **Configuration Profiles**
 
 1. 选择：
     1. **Platform = macOS**
@@ -218,7 +218,7 @@ ms.locfileid: "60962707"
 
 1. 在 **"基本"** 选项卡中，为此新配置文件命名。
 
-1. 在"**配置设置"** 选项卡中，展开 **"系统扩展"。**
+1. 在" **配置设置"** 选项卡中，展开 **"系统扩展"**。
 
 1. 在 **"捆绑包标识符** 和 **团队标识符"下**，设置这些值
 
@@ -228,34 +228,34 @@ ms.locfileid: "60962707"
 |**com.microsoft.wdav.netext**|**UBF8T346G9**|
 
 
-1. 在"**分配**"选项卡上，将想要部署这些配置的组添加到 ，然后选择"下一 **步"。**
+1. 在" **分配** "选项卡上，添加要部署这些配置的组，然后选择"下一步 **"**。
 
 1. 选择 **"下一** 步"部署配置。
 
 ### <a name="get-the-installation-package"></a>获取安装包
 
-1. 在 **合规性中心** 中 **，设置"**  >  **设备载入"，** 然后选择 **"载入"。**
+1. 在 **"合规性中心**"**中设置** > "**设备载入"，** 然后选择 **"载入"**。
  
 1. 对于 **"选择操作系统以开始载入过程"选择** **macOS**
  
 1. 对于 **"部署"方法**，**选择"移动设备管理/Microsoft Intune**
  
-1. 选择 **"下载安装程序包"。** 这将提供 *wdav.pkg* 文件。
+1. 选择 **"下载安装程序包"**。 这将提供 *wdav.pkg* 文件。
 
 > [!IMPORTANT]
-> 部署 *wdav.pkg 之前。* 通过 Intune 打包，必须使用适用于 Mac 的 *Intune 应用* 包装工具重新格式化为 *wdav.pkg.intunemac* 格式。
+> 部署 *wdav.pkg 之前。* 通过 Intune 打包，必须使用 *适用于 Mac 的 Intune 应用* 包装工具重新格式化为 *wdav.pkg.intunemac* 格式。
  
 
 ### <a name="deploy-the-microsoft-dlp-installation-package"></a>部署 Microsoft DLP 安装包
 
-1. 按照如何将 [macOS](/mem/intune/apps/lob-apps-macos)业务线 (LOB) 应用添加到 Microsoft Intune 中的过程将 *wdav.pkg* 文件转换为正确的格式，并通过 Intune 进行部署。
+1. 按照如何将 [macOS 业务线 (LOB)](/mem/intune/apps/lob-apps-macos) 应用添加到 Microsoft Intune 中的过程将 *wdav.pkg* 文件转换为正确的格式，并通过 Intune 进行部署。
 
 ## <a name="offboard-macos-devices-using-intune"></a>使用 Intune 的载出 macOS 设备
 
 > [!NOTE]
 > "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留六个月。
 
-2. 在 **Microsoft Endpoint Manager中心**，打开 **设备**  >  **配置文件**，你应该会看到你已创建的配置文件。
+2. 在 **Microsoft Endpoint Manager中，** 打开 **DevicesConfiguration** >  配置文件，你应该会看到已创建的配置文件。
 
 1. 在配置文件 **页面中** ，选择 *wdav.pkg.intunemac* 配置文件。
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15055274b8b2fd69c5751201184955eb9915e038
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 37348d04002034b15c7b2d1d31b44dcedb795893
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322345"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327247"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新增功能
 
@@ -60,7 +60,10 @@ ms.locfileid: "62322345"
 - [iOS 上的 Defender for Endpoint 的新增功能](ios-whatsnew.md)
 - [Linux 上的 Defender for Endpoint 的新增功能](linux-whatsnew.md)
 
+
 ## <a name="january-2022"></a>2022 年 1 月
+
+- 评估实验室增强功能：现在可以将 Windows 11 和 Linux 设备添加到实验室。 
 
 - Android 漏洞管理 iOS 的威胁和威胁功能现已普遍可用。 [了解详细信息](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663)。
 
@@ -80,7 +83,7 @@ ms.locfileid: "62322345"
 
 ## <a name="october-2021"></a>2021 年 10 月
 
-- [更新了 R2 和 Windows Server 2012 R2 的载入Windows Server 2016 (功能) ](configure-server-endpoints.md)<br/> 新的统一解决方案包通过删除依赖项和安装步骤更轻松地载入服务器。 此外，此统一解决方案包还进行了许多新功能改进。
+- [更新了 r2 和 Windows Server 2012 预览Windows Server 2016 (的载入) ](configure-server-endpoints.md)<br/> 新的统一解决方案包通过删除依赖项和安装步骤更轻松地载入服务器。 此外，此统一解决方案包还进行了许多新功能改进。
 
 - Windows 11添加到 Microsoft Defender 终结点和 Microsoft 365 Defender。
 
@@ -119,7 +122,7 @@ ms.locfileid: "62322345"
 
 - [Microsoft Tunnel VPN 集成](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN 功能现已与适用于 Android 的 Microsoft Defender for Endpoint 应用集成。 这种统一使组织能够通过一个安全应用提供简化的最终用户体验 ，同时提供移动威胁防护和从移动设备访问地资源的能力，同时安全和 IT 团队能够保持他们熟悉的相同管理体验。
 
-- [iOS 上的越狱检测](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide#conditional-access-with-defender-for-endpoint-on-ios) <br> 适用于 iOS 上的终结点的 Microsoft Defender 中的越狱检测功能现已普遍可用。 这将添加到已存在的网络钓鱼防护中。  有关详细信息，请参阅基于 [设备风险信号设置条件访问策略](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide)。
+- [iOS 上的越狱检测](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> 适用于 iOS 上的终结点的 Microsoft Defender 中的越狱检测功能现已普遍可用。 这将添加到已存在的网络钓鱼防护中。  有关详细信息，请参阅基于 [设备风险信号设置条件访问策略](/microsoft-365/security/defender-endpoint/ios-configure-features)。
 
 
 ## <a name="march-2021"></a>2021 年 3 月

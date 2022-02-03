@@ -15,12 +15,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: 使用移动设备管理工具在设备上部署配置包，以便它们可以载入到服务。
-ms.openlocfilehash: 1db4441f6411d6e3c623dbf5daa31c4028729e7e
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 578a1e06bf5f83f700c5db69ddc32a480d68b729
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244891"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327189"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具载入 Windows 10 和 Windows 11 设备
 
@@ -35,7 +35,7 @@ ms.locfileid: "62244891"
 ## <a name="before-you-begin"></a>准备工作
 如果你使用的是 Microsoft Intune，则必须已注册设备 MDM。 否则，设置将不会成功应用。 
 
-有关使用移动设备启用 MDM Microsoft Intune，请参阅设备[注册 (Microsoft Intune) 。 ](/mem/intune/enrollment/device-enrollment)
+有关使用移动设备启用 MDM Microsoft Intune，请参阅设备[注册 (Microsoft Intune) ](/mem/intune/enrollment/device-enrollment)。
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>使用移动设备载入Microsoft Intune
 
@@ -53,15 +53,13 @@ ms.locfileid: "62244891"
 
 1. 从应用程序获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心。</a>
 
-2. 在导航窗格中，选择 **"设置**  >  **载入**  >  **""载出"。**
+2. 在导航窗格中，选择 **"设置** > **"设备载入** > **""板载"**。
 
-3. 在"**部署方法"** 字段中，选择 **"移动设备管理/Microsoft Intune"。**
+3. 在"**部署方法"** 字段中，选择 **"移动设备管理/Microsoft Intune"**。
 
 4. 单击 **下载程序包**，然后保存.zip文件。
 
 5. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding 的文件*。
-
-
 
 6. 使用Microsoft Intune配置策略部署以下受支持的 OMA-URI 设置。
 

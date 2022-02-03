@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6efb9c53bbbcd0412ab55f35e02faf4d3595694e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f03fa0ac8f44acb3ce73076be4d43d913e32f969
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61884163"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326707"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻击面减少规则疑难解答
 
@@ -45,7 +45,7 @@ ms.locfileid: "61884163"
 
 1. [确认先决条件](#confirm-prerequisites)
 2. [使用审核模式测试规则](#use-audit-mode-to-test-the-rule)
-3. [为指定的误报规则 (](#add-exclusions-for-a-false-positive) 排除项) 
+3. [为指定规则添加排除 (](#add-exclusions-for-a-false-positive) 用于误报) 
 4. [提交支持日志](#collect-diagnostic-data-for-file-submissions)
 
 ## <a name="confirm-prerequisites"></a>确认先决条件
@@ -58,21 +58,21 @@ ms.locfileid: "61884163"
 
 - [实时保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 已启用。
 
-- 审核模式未启用。 使用组策略将规则设置为已禁用 (值 **：0**) 启用 [攻击面减少规则中所述](enable-attack-surface-reduction.md)。
+- 审核模式未启用。 使用组策略将规则设置为已禁用 (值：**0**) 启用 [攻击面减少规则中所述](enable-attack-surface-reduction.md)。
 
 如果满足所有先决条件，请继续执行下一步以在审核模式下测试规则。
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>使用审核模式测试规则
 
-你可以访问 demo.wd.microsoft.com 上的[Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)测试场网站，以确认攻击面减少规则通常适用于设备上预配置的方案和进程，或者可以使用审核模式，该模式仅启用报告规则。
+你可以访问 [demo.wd.microsoft.com 上的 Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 测试场网站，以确认攻击面减少规则通常适用于设备上预配置的方案和进程，或者可以使用审核模式，该模式仅启用报告规则。
 
 按照使用演示 [工具中的以下说明查看攻击面](evaluate-attack-surface-reduction.md) 减少规则如何工作，以测试遇到问题的特定规则。
 
-1. 为要测试的特定规则启用审核模式。 使用组策略将规则设置为审核模式 (值 **：2**) 启用 [攻击面减少规则中所述](enable-attack-surface-reduction.md)。 审核模式允许规则报告文件或进程，但仍允许它运行。
+1. 为要测试的特定规则启用审核模式。 使用组策略将规则设置为审核模式 (值：**2**) 启用 [攻击面减少规则中所述](enable-attack-surface-reduction.md)。 审核模式允许规则报告文件或进程，但仍允许它运行。
 
-2. 执行导致问题的活动 (例如，打开或执行应阻止但允许阻止的文件或) 。
+2. 执行导致问题的活动 (例如，打开或执行应阻止但允许其访问) 。
 
-3. [查看攻击面减少规则事件](attack-surface-reduction.md) 日志，以查看如果规则已设置为"已启用"，该规则是否阻止文件或 **进程**。
+3. [查看攻击面减少规则事件](attack-surface-reduction.md)日志，以查看如果规则已设置为"已启用"，该规则是否阻止了文件或 **进程。**
 
 如果某个规则未阻止预期应阻止的文件或进程，则首先检查审核模式是否已启用。
 
@@ -80,15 +80,15 @@ ms.locfileid: "61884163"
 
 如果你已使用演示工具和审核模式测试了规则，并且攻击面减少规则正在预配置的方案中运行，但规则未按预期工作，请根据你的情况继续执行以下任一部分：
 
-1. 如果攻击面减少规则阻止了不应阻止的攻击 (也称为误报) ，你可以首先添加攻击面减少[规则排除 。](#add-exclusions-for-a-false-positive)
+1. 如果攻击面减少规则阻止了不应阻止的攻击 (也称为误报) ，你可以首先添加攻击面减少 [规则排除](#add-exclusions-for-a-false-positive)。
 
-2. 如果攻击面减少规则未阻止应阻止 (也称为漏报) ，你可以立即继续执行最后一步，收集诊断数据，将问题提交给 [我们](#collect-diagnostic-data-for-file-submissions)。
+2. 如果攻击面减少规则未阻止它应阻止 (也称为漏报) ，你可以立即继续执行最后一步，收集诊断数据，将问题提交给 [我们](#collect-diagnostic-data-for-file-submissions)。
 
 ## <a name="add-exclusions-for-a-false-positive"></a>添加误报的排除项
 
 如果攻击面减少规则阻止不应阻止的内容 (也称为误报) ，你可以添加排除项以防止攻击面减少规则评估排除的文件或文件夹。
 
-若要添加排除项，请参阅 [自定义攻击面减少](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules)。
+若要添加排除项，请参阅 [自定义攻击面减少](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules)。
 
 > [!IMPORTANT]
 > 可以指定要排除的单个文件和文件夹，但不能指定单个规则。
@@ -96,7 +96,7 @@ ms.locfileid: "61884163"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>报告误报或漏报
 
-使用Windows Defender[基于](https://www.microsoft.com/wdsi/filesubmission)Web 的安全智能提交表单报告网络保护的漏报或误报。 使用 Windows E5 订阅，还可以提供[指向任何关联警报的链接](alerts-queue.md)。
+使用Windows Defender[基于 Web](https://www.microsoft.com/wdsi/filesubmission) 的安全智能提交表单报告网络保护的漏报或误报。 使用 Windows E5 订阅，还可以[提供指向任何关联警报的链接](alerts-queue.md)。
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>收集文件提交的诊断数据
 
@@ -114,7 +114,7 @@ ms.locfileid: "61884163"
    mpcmdrun -getfiles
    ```
 
-3. 默认情况下，它们保存到 `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 。 将文件附加到提交表单。
+3. 默认情况下，它们保存到 `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`。 将文件附加到提交表单。
 
 ## <a name="related-articles"></a>相关文章
 

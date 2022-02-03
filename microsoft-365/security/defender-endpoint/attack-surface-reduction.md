@@ -19,14 +19,14 @@ ms.technology: mde
 ms.topic: article
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
-ms.openlocfilehash: cba76d867b71fa941983e10b0dbe10f323ea70ef
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: e56ffd44976d11986b6ccb6b3e8bc5cbf71e530c
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321047"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326941"
 ---
-# <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则来避免感染恶意软件
+# <a name="attack-surface-reduction-rules-overview"></a>攻击面减少规则概述
 
 **适用于：**
 
@@ -49,7 +49,7 @@ ms.locfileid: "62321047"
 
 ## <a name="assess-rule-impact-before-deployment"></a>在部署之前评估规则影响
 
-你可以评估攻击面减少规则可能会如何影响你的网络，在安全报告中打开该规则的安全[危险和漏洞管理](/windows/security/threat-protection/#tvm)。
+你可以评估攻击面减少规则可能如何影响你的网络，在安全报告中打开该规则的安全[危险和漏洞管理](/windows/security/threat-protection/#tvm)。
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="攻击面减少规则的安全重新成本。":::
 
@@ -96,7 +96,7 @@ Microsoft Defender 防病毒在活动模式下必须通过实时[保护运行](/
 
 ## <a name="notifications-and-alerts"></a>通知和警报
 
-每当触发攻击面减少规则时，都会在设备上显示一条通知。 你可以使用公司的详细信息和联系人信息[自定义通知](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules)。
+每当触发攻击面减少规则时，都会在设备上显示一条通知。 你可以使用公司的详细信息和联系人信息[自定义通知](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules)。
 
 此外，当触发某些攻击面减少规则时，将生成警报。
 
@@ -110,33 +110,33 @@ Microsoft Defender 防病毒在活动模式下必须通过实时[保护运行](/
 
 有关高级搜寻详细信息，请参阅 [使用高级搜寻主动搜寻威胁](advanced-hunting-overview.md)。
 
-## <a name="attack-surface-reduction-features-across-windows-versions"></a>跨版本的攻击面Windows功能
+## <a name="attack-surface-reduction-features-across-windows-versions"></a>跨多个版本的攻击Windows功能
 
-你可以为运行以下任一版本和版本的设备设置攻击面减少Windows：
+你可以为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
 
 - Windows 10 专业版版本 [1709](/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
 - Windows 10 企业版版本 [1709](/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
-- Windows Server 版本 [1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
+- Windows Server [版本 1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
   >[!NOTE]
-  >Windows Server 2016和 Windows Server 2012 R2 将需要按照载入 [Windows 服务器中的](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)说明载入，此功能将正常工作。 
+  >Windows Server 2016和 Windows Server 2012 R2 将需要按照[载入 Windows 服务器](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)中的说明载入，此功能将正常工作。 
 
 
-尽管攻击面减少规则不需要使用 Windows [E5](/windows/deployment/deploy-enterprise-licenses) 许可证，但如果已使用 Windows E5，则获得高级管理功能。 仅在 E5 中提供的高级Windows包括：
+尽管攻击面减少规则不需要使用 Windows [E5](/windows/deployment/deploy-enterprise-licenses) 许可证，但如果已Windows E5，则获得高级管理功能。 仅在 E5 中提供的高级Windows包括：
 
 - Defender for Endpoint 中提供的监视、 [分析和工作流](microsoft-defender-endpoint.md)
 - 报告功能和[配置Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
 
 这些高级功能不适用于 Windows Professional 或 Windows E3 许可证。 但是，如果你有这些许可证，可以使用事件查看器和Microsoft Defender 防病毒日志查看攻击面减少规则事件。
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>查看攻击门户中的攻击面Microsoft 365 Defender事件
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>查看攻击门户中的攻击Microsoft 365 Defender事件
 
 Defender for Endpoint 提供事件和阻止的详细报告，作为警报调查方案的一部分。
 
-可以使用高级搜寻在 [Microsoft 365 Defender Defender 中](microsoft-defender-security-center.md)查询[终结点数据](advanced-hunting-query-language.md)。 如果你运行的是审核 [模式，](audit-windows-defender.md)可以使用高级搜寻了解攻击面减少规则可能会如何影响你的环境。
+可以通过使用高级搜寻在 [Microsoft 365 Defender Defender 中](microsoft-defender-security-center.md)[查询终结点数据](advanced-hunting-query-language.md)。 如果你运行的是审核 [模式，](audit-windows-defender.md)可以使用高级搜寻了解攻击面减少规则可能会如何影响你的环境。
 
 示例查询如下所示:
 

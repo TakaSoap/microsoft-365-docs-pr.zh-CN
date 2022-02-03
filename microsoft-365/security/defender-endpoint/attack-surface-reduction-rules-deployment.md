@@ -18,18 +18,18 @@ ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: fa6558ef03aed98426cf615df6a80359ef7424bc
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: c6fe1f185567efdc5054cf490579d93eebd5069f
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320651"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326977"
 ---
 # <a name="asr-rules-deployment-overview"></a>ASR 规则部署概述
 
 ## <a name="before-you-begin"></a>准备工作
 
-攻击面是组织易受网络威胁和攻击的所有位置。 组织的攻击面包括攻击者可能破坏组织设备或网络的所有位置。 减少攻击面意味着保护组织的设备和网络，从而让攻击者减少攻击方法。 使用 ASR (配置攻击面) 规则（Microsoft Defender for Endpoint 中的众多安全功能之一）可以提供帮助。
+攻击面是组织易受网络威胁和攻击的所有位置。 组织的攻击面包括攻击者可能破坏组织设备或网络的所有位置。 减少攻击面意味着保护组织的设备和网络，从而让攻击者减少攻击方法。 配置攻击面减少 (ASR) 规则（Microsoft Defender for Endpoint 中的众多安全功能之一）可以提供帮助。
 
 ASR 规则针对某些软件行为，例如：
 
@@ -56,8 +56,8 @@ ASR 规则只是 Microsoft Defender for Endpoint 中攻击面减少功能的一�
 
 | 多态威胁 | 横向移动&凭据盗窃 | 生产力应用规则 |  电子邮件规则 | 脚本规则 | 杂项规则 |
 |:---|:---|:---|:---|:---|:---|
-| 除非可执行文件符合 1000 台计算机 (、年龄) 、年龄 (24 小时) 或受信任的列表条件，否则阻止可执行文件运行 | 阻止源自 PSExec 和 WMI 命令的进程创建 | 阻止Office创建可执行内容 | 阻止来自电子邮件客户端和 Webmail 的可执行内容 | 阻止混淆的 JS/VBS/PS/宏代码 | 阻止滥用被攻击的易受攻击的已签名驱动程序 <sup>[[1](#fn1)]<sup></sup>  |
-| 阻止从 USB 运行的不受信任的和未签名的进程 | 阻止从本地安全Windows (lsass.exe <sup>) [[2](#fn1)]<sup></sup>   | 阻止Office创建子进程 |  仅Office通信应用程序创建子进程 | 阻止 JS/VBS 启动下载的可执行内容 | |
+| 阻止可执行文件运行，除非它们符合 (1000 台计算机) 、年龄 (24 小时) 或受信任的列表条件 | 阻止源自 PSExec 和 WMI 命令的进程创建 | 阻止Office创建可执行内容 | 阻止来自电子邮件客户端和 Webmail 的可执行内容 | 阻止混淆的 JS/VBS/PS/宏代码 | 阻止滥用被攻击的易受攻击的已签名驱动程序 <sup>[[1](#fn1)]<sup></sup>  |
+| 阻止从 USB 运行的不受信任的和未签名的进程 | 阻止从本地安全Windows (lsass.exe <sup>) [[2](#fn1)]<sup></sup>   | 阻止Office创建子进程 |  仅阻止Office应用程序创建子进程 | 阻止 JS/VBS 启动下载的可执行内容 | |
 | 使用高级防护抵御勒索软件 | 通过 WMI 事件订阅阻止持久性 | 阻止Office将代码注入其他进程 | 阻止Office应用创建子进程 | | |
 | | | 阻止 Adobe Reader 创建子进程 | | | |
 
@@ -123,13 +123,13 @@ Microsoft Defender 防病毒 Microsoft 云服务无缝工作。 这些云保护�
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题
 
-[第 1 阶段：规划](attack-surface-reduction-rules-deployment-phase-1.md)
+[第 1 阶段：规划](attack-surface-reduction-rules-deployment-plan.md)
 
-[第 2 截断：测试](attack-surface-reduction-rules-deployment-phase-2.md)
+[第 2 截断：测试](attack-surface-reduction-rules-deployment-test.md)
 
-[第 3 阶段：实施](attack-surface-reduction-rules-deployment-phase-3.md)
+[第 3 阶段：实施](attack-surface-reduction-rules-deployment-implement.md)
 
-[第 4 阶段：投入生产](attack-surface-reduction-rules-deployment-phase-4.md)
+[第 4 阶段：投入生产](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## <a name="reference"></a>参考
 
