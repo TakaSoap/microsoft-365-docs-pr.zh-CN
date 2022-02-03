@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何查找 Microsoft SharePoint Syntex 资源。
-ms.openlocfilehash: 1e0959a5772d88afae43e09028d3d65ffe82b3de
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 665a28c07e5405299cb88ffdce3fbafa1210415a
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645120"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322079"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 简介
 
@@ -41,7 +41,7 @@ SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 
 ## <a name="get-started"></a>入门
 
-本节中的资源有助于详细了解 SharePoint Syntex 所使用的两种数据分类和提取方法：表单处理和文档理解。
+本节中的资源可帮助您了解有关以下三种数据分类和提取方法SharePoint Syntex：文档理解、表单处理和预安装。
 
 > [!NOTE]
 > [可从 SharePoint 管理中心创建内容中心](create-a-content-center.md)，无需购买许可证即可开始使用 SharePoint Syntex。 未经许可的用户可以创建文档理解模型，但无法将其应用于文档库。
@@ -58,7 +58,7 @@ SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 
 ## <a name="adoption"></a>采用
 
-详细了解如何在组织中使用和实施SharePoint Syntex解决方案，以帮助解决业务问题。
+详细了解如何在组织中使用和实施SharePoint Syntex解决方案来帮助解决业务问题。
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
@@ -86,6 +86,7 @@ SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 |了解如何使用模型|[创建内容中心](./create-a-content-center.md)<br><br>[创建分类器](./create-a-classifier.md)<br><br>[复制模型](./duplicate-a-model.md)<br><br>[重命名模型](./rename-a-model.md)<br><br>[创建提取程序](./create-an-extractor.md)<br><br>[重命名提取程序](./rename-an-extractor.md)<br><br>[创建表单处理模型](./create-a-form-processing-model.md)<br><br>[说明类型](./explanation-types-overview.md)<br><br>[使用说明模板](./explanation-templates.md)<br><br>[应用文档理解模型](./apply-a-model.md)<br><br>[通过示例模型了解文档理解模型](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |将保留标签应用于模型|[将保留标签应用于文档理解模型](./apply-a-retention-label-to-a-model.md)|
 |将敏感度标签应用于模型|[将敏感度标签应用于文档理解模型](./apply-a-sensitivity-label-to-a-model.md)|
+|使用预内置模型从文档中提取信息 |[使用预想的模型从发票或收据中提取信息](./prebuilt-models.md)|
 |在其他内容中心使用经过训练的模型 |[发布和发现文档理解模型](./model-discovery.md)|
 |对文档库执行基于元数据的查询|[搜索文档库中的元数据](./metadata-search.md)|
 |创建提取程序时使用托管元数据服务术语库分类|[创建提取程序时利用术语库分类](./leverage-term-store-taxonomy.md)|

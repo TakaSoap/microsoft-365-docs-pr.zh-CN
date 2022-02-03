@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: cb4bbc8d8fff5d73ac8b56aa73528f6704804da5
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 1fca5a6762642968310b7165db09d827c06c0cbd
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401446"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321863"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Android 版 Microsoft Defender for Endpoint 的新增功能
 
@@ -35,11 +35,11 @@ ms.locfileid: "61401446"
 
 ## <a name="threat-and-vulnerability-management"></a>威胁和漏洞管理
 
-2021 年 11 月 2 日，我们宣布在 Android 和 iOS 上公开预览威胁和漏洞管理。 有关详细信息，请参阅此处 [的 techcommunity 文章](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691)。
+2022 年 1 月 25 日，我们宣布在 Android 和 iOS 上正式发布威胁和漏洞管理。 有关详细信息，请参阅此处 [的 techcommunity 文章](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663)。
 
-## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>2021 年 11 月 11 日即将对运行 Android 11 或更高版本的终结点 (Microsoft Defender) 
+## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>2021 年 11 月 (运行 Android 11 或更高版本的 Microsoft Defender for Endpoint 即将) 
 
-发布版本：1.0.3501.0301 发布月：2021 年 11 月 Microsoft Defender for Endpoint 已发布 [Google](https://developer.android.com/distribute/play-policies#APILevel30) 升级到 Android API 30 所需的此更新。 此更改将提示用户寻找对运行[](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play)Android 11 或更高版本的设备的新存储权限的访问权限。 用户使用版本 1.0.3501.0301 或更高版本更新 Defender 应用后，需要接受此新的存储权限。 这将确保 Defender for Endpoint 的应用安全功能在没有任何中断的情况下正常运行。 有关详细信息，请查看以下部分。
+发布版本：1.0.3501.0301 发布月：2021 年 11 月 Microsoft Defender for Endpoint 已发布 [Google](https://developer.android.com/distribute/play-policies#APILevel30) 升级到 Android API 30 所需的此更新。 对于运行 Android 11 或更高版本的设备[](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play)，此更改将提示用户寻找新存储权限的访问权限。 用户使用版本 1.0.3501.0301 或更高版本更新 Defender 应用后，需要接受此新的存储权限。 这将确保 Defender for Endpoint 的应用安全功能在没有任何中断的情况下正常运行。 有关详细信息，请查看以下部分。
 
 **这将对组织产生怎样的影响：** 如果你正在运行 Android 11 或更高版本的设备上使用 Microsoft Defender for Endpoint 并更新了适用于 Endpoint 的 Defender 以发布版本 1.0.3501.0301 或更高版本，这些更改将生效。
 
@@ -53,11 +53,11 @@ ms.locfileid: "61401446"
 
 **准备工作**：
 
-通知用户 (支持人员) 在将 Endpoint 的 Defender 更新为生成 1.0.3501.0301 或更高版本后，当系统提示用户需要接受新权限。 若要接受权限，用户应：
+通知你的用户 (支持人员) 当用户将 Defender for Endpoint 更新为内部版本 1.0.3501.0301 或更高版本后，当系统提示他们时，将需要接受新权限。 若要接受权限，用户应：
 
 1. 点击 Defender for Endpoint 应用内通知或打开 Defender for Endpoint 应用。 用户将看到一个屏幕，其中列出了所需的权限。 该权限旁边将缺少绿色存储标记。
 
-2. 点击 **开始**。
+2. 点击 **"开始"**。
 
 3. 点击"允许访问 **"的切换以管理所有文件。**
 

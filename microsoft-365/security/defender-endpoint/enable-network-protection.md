@@ -13,13 +13,14 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 465a510ef25b0be0ba406c1265096476959d8c19
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.collection: m365initiative-m365-defender
+ms.date: ''
+ms.openlocfilehash: 77c27d268a8f25c047f562a3cfc125092e64d2c7
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218015"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321791"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -45,7 +46,7 @@ ms.locfileid: "61218015"
 
 2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"选项"。
 
-3. 导航到软件策略Microsoft Windows Defender Windows Defender \>  \>  \>  \> **攻击防护** \> **网络保护**。
+3. 在嵌套菜单中导航到 **软件** \>  \>策略 **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **网络保护**。
 
 如果密钥缺失，请导航到 **软件** \> **Microsoft** \> **Windows Defender Windows Defender** \> **Exploit Guard** \> **网络保护**。
 
@@ -69,7 +70,7 @@ ms.locfileid: "61218015"
 
 ### <a name="powershell"></a>PowerShell
 
-1. 在"管理"中"开始"菜单 **powershell，** 右键 **单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
+1. 在 **"管理"中"开始"菜单 powershell**，右键单击"Windows PowerShell并选择"**以****管理员角色运行"**。
 
 2. 输入以下 cmdlet：
 
@@ -91,43 +92,43 @@ ms.locfileid: "61218015"
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
-1. 登录到管理Microsoft Endpoint Manager中心 https://endpoint.microsoft.com) (。
+1. 登录到管理Microsoft Endpoint Manager中心 (https://endpoint.microsoft.com)。
 
-2. 转到 **设备**  >  **配置文件 配置文件**  >  **创建配置文件**。
+2. 转到 **DevicesConfiguration** >  **配置文件** > **创建配置文件**。
 
-3. 在"**创建配置文件"飞** 出控件中，选择"**平台"，** 然后选择"**配置文件类型** 为 **模板"。**
+3. 在" **创建配置文件"飞** 出控件中，选择" **平台** "，然后选择" **配置文件类型** 为 **模板"**。
 
-4. 在"**模板名称"** 中 **，** 从模板列表中选择"终结点保护"，然后选择"创建 **"。**
+4. 在"**模板名称"****中，** 从模板列表中选择"终结点保护"，然后选择"创建 **"**。
 
-4. 转到 **"终结点保护**  >  **基础知识"，** 为配置文件提供名称，然后选择"下一 **步"。**
+4. 转到 **Endpoint** **protectionBasics** > ，为配置文件提供名称，然后选择"下一步 **"**。
 
-5. 在"**配置设置"** 部分，转到 **"Microsoft Defender 攻击防护**  >  **网络筛选**  >  **""网络保护**  >  **启用"** 或"**审核"。** 选择 **下一步**。
+5. 在"**配置设置"** 部分，**转到"** > Microsoft Defender 攻击防护 **网络筛选** > **""网络保护** > **""可以"或**"审核 **"**。 选择“**下一步**”。
 
 6. 根据组织 **需要****，选择** 适当的 **范围** 标记、分配和适用性规则。 管理员可以设置更多要求。
 
-7. 查看所有信息，然后选择"创建 **"。**
+7. 查看所有信息，然后选择"创建 **"**。
 
 ### <a name="group-policy"></a>组策略
 
 使用以下过程在加入域的计算机或独立计算机上启用网络保护。
 
-1. 在独立计算机上，**转到"开始**"，然后键入并选择"**编辑组策略"。**
+1. 在独立计算机上，转到"开始 **"** ，然后键入并选择" **编辑组策略"**。
 
     *-Or-*
 
-    在加入域的组策略管理计算机上，打开组策略 [](https://technet.microsoft.com/library/cc731212.aspx)管理控制台，右键单击要配置的组策略对象，**然后选择编辑**。
+    在加入域的组策略管理计算机上，打开组策略 [](https://technet.microsoft.com/library/cc731212.aspx)管理控制台，右键单击要配置的组策略对象，然后选择"编辑 **"**。
 
 2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-3. 展开树以 **Windows Exploit** Guard \> **网络Microsoft Defender 防病毒Windows Defender** \>  \> **组件**。
+3. 展开树以 **Windows Exploit** \> **Guard** \> **网络Microsoft Defender 防病毒Windows Defender** \> **的组件**。
 
    > [!NOTE]
-   > 在旧版 Windows中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
+   > 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
 
-4. 双击阻止用户和应用 **访问** 危险网站设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
+4. 双击阻止用户和应用 **访问** 危险网站设置，并设置该选项为 **已启用**。 在选项部分中，必须指定以下选项之一：
     - **阻止** - 用户无法访问恶意 IP 地址和域。
     - **禁用 (默认)** - 网络保护功能不起作用。 不会阻止用户访问恶意域。
-    - **审核模式**- 如果用户访问恶意 IP 地址或域，事件将记录在Windows日志中。 但是，不会阻止用户访问地址。
+    - **审核模式** - 如果用户访问恶意 IP 地址或域，事件将记录在Windows日志中。 但是，不会阻止用户访问地址。
 
    > [!IMPORTANT]
    > 若要完全启用网络保护，必须将组策略选项设置为 **已启用**，还要在选项下拉菜单中选择阻止。
@@ -147,7 +148,7 @@ ms.locfileid: "61218015"
 
 1. 打开 Configuration Manager 控制台。
 
-2. 转到 **资产和合规性**  >    >  **Endpoint Protection Windows Defender攻击防护。** 
+2. 转到"**资产和合规性** > **Endpoint Protection** >  **Windows Defender攻击防护"**。 
 
 3. 从 **功能区选择** "创建攻击防护策略"以创建新策略。
    - 若要编辑现有策略，请选择该策略，然后从功能区或右键单击菜单中选择"属性"。 编辑" **网络保护"选项卡** 中的"配置 **网络保护"** 选项。  

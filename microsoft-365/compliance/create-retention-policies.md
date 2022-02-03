@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: dcc3cb8379dd095a110e1307819e9256d9fa84bb
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 3732e254d5b9dad450fd16338acf7a28e07bd8d1
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241535"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321011"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -88,10 +88,7 @@ ms.locfileid: "62241535"
         - **Teams 聊天**: 来自私人 1:1 聊天、群组聊天和会议聊天的消息。
         - **Teams 专用频道消息**: 来自私人频道聊天和私人频道会议的消息。
         
-       默认情况下，[所有团队和所有用户](retention-settings.md#a-policy-that-applies-to-entire-locations)会被选择，但你但是你可以通过选择 [“**选择**”和“**排除**” 选项](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)”来进行优化。 但是，在更改默认设置之前，请注意保留策略在配置为包含或排除邮件时删除邮件的下列影响：
-        
-        - 对于群组聊天消息和专用频道消息，由于邮件副本保存在对话中包含的每个用户的邮箱中，因此邮件副本将继续在未分配策略的用户的电子数据展示结果中返回。
-        - 对于未分配策略的用户，由于策略而删除的邮件将在其 Teams 搜索结果中返回，但不会显示邮件的内容。
+       默认情况下，[所有团队和所有用户](retention-settings.md#a-policy-that-applies-to-entire-locations)会被选择，但你但是你可以通过选择 [“**选择**”和“**排除**” 选项](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)”来进行优化。
 
 5. 对于 **决定是要保留内容、删除内容还是同时执行这两个操作** 页面，请指定用于保留和删除内容的配置选项。
 

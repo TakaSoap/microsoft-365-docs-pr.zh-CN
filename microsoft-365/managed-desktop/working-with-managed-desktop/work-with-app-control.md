@@ -10,16 +10,16 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 89ab1bf675c3668e01b31ff380f54ee993205374
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: b87da099ace71b13b03bb9d9247bc4cbfe420dc4
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281407"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322382"
 ---
 # <a name="work-with-app-control"></a>使用应用程序控制
 
-在环境中部署应用控制后，你和Microsoft 托管桌面操作都承担持续的责任。 例如，你可能想要在环境中添加新应用，或者添加 (或删除) 签名者。 为了提高安全性，所有应用都应先进行代码签名，然后再将其发布给用户。 应用的发布者详细信息包括有关签名者的信息。
+在环境中部署应用控制后，你和Microsoft 托管桌面操作将持续承担责任。 例如，你可能想要在环境中添加新应用，或者添加 (或删除) 签名者。 为了提高安全性，所有应用都应先进行代码签名，然后再将其发布给用户。 应用的发布者详细信息包括有关签名者的信息。
 
 ## <a name="add-a-new-app"></a>添加新应用
 
@@ -28,8 +28,8 @@ ms.locfileid: "62281407"
 1. 将应用添加到[Microsoft Intune](/mem/intune/apps/apps-win32-app-management)。
 1. 将应用部署到测试圈中的任意设备。
 1. 根据标准业务流程测试应用。
-1. 检查应用程序和服务日志 **\Microsoft\Windows\AppLocker 下的事件查看器**。 查找任何 **8003** **或 8006** 事件。 这些事件指示应用将被阻止。 有关所有应用保险箱事件及其含义的信息，请参阅将事件查看器与 [AppLocker 一同使用](/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker)。
-1. 如果找到这些事件中的任意一个，请通过"操作"打开Microsoft 托管桌面请求。
+1. 检查 Application **and Services Logs\Microsoft\Windows\AppLocker 下的事件查看器**。 查找任何 **8003** **或 8006** 事件。 这些事件指示应用将被阻止。 有关所有应用保险箱事件及其含义的信息，请参阅将事件查看器与 [AppLocker 一同使用](/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker)。
+1. 如果发现其中任何事件，请通过"操作"打开Microsoft 托管桌面请求。
 
 ## <a name="add-or-remove-a-trusted-signer"></a>添加 (或) 签名者
 
@@ -39,7 +39,6 @@ ms.locfileid: "62281407"
 
 1. [收集发布者详细信息](#gather-publisher-details)。
 1. 使用 Microsoft 托管桌面 操作打开票证以请求签署人规则，并包括以下详细信息：  
-
     - 应用程序名称
     - 应用程序版本
     - 说明
@@ -72,7 +71,6 @@ ms.locfileid: "62281407"
 1. 打开该设备上的事件查看器。
 1. 在事件查看器中，导航到"应用程序和服务日志 **\Microsoft\Windows**"，然后选择 **AppLocker**。
 1. 查找任何 **8003** 或 **8006** 事件，然后从事件复制信息：
-
     - 应用程序名称
     - 应用程序版本
     - 说明

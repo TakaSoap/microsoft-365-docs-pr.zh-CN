@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d744681351bd8a0a8d9aa15f1ee5f26554aace8d
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: d4bdd474f126eaf6d3cda21b2fcb4a1ffc383abe
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244915"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322103"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -146,7 +146,7 @@ Defender for Endpoint 直接集成了各种 Microsoft 解决方案，包括：
 - Microsoft Defender for Office
 - Skype for Business
 
-**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**
+**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-365-defende)**
 
 借助 Microsoft 365 Defender，Defender for Endpoint 和各种 Microsoft 安全解决方案构成了统一的违反前/违反后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。
 

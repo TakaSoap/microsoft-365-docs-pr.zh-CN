@@ -13,21 +13,21 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: 管理员可以设置数据连接器，将 EHR 中的电子 () 数据导入到Microsoft 365。 这样，你可以将 EHR 数据用于内部风险管理策略，以帮助你检测员工对患者数据的未经授权的访问活动。
-ms.openlocfilehash: d814a68e49db4e8a51ad7b9abd14911b5abedf84
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+description: 管理员可以设置数据连接器，将 EHR 中的电子 (记录) 其医疗保健系统中的数据导入Microsoft 365。 这样，你可以将 EHR 数据用于内部风险管理策略，以帮助你检测员工对患者数据的未经授权的访问活动。
+ms.openlocfilehash: 1be80dea0bd5692f07edbe34df1bf61cd85f3337
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271702"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320687"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>设置连接器以导入医疗保健 EHR 审核数据 (预览) 
 
-您可以在组织中设置数据连接器Microsoft 365 合规中心在组织的电子医疗保健记录服务 EHR) 系统中导入用户活动的 (数据。 您的医疗保健 EHR 系统审核数据包括与访问患者健康记录相关的事件的数据。 医疗保健 EHR 审核数据可用于Microsoft 365风险管理[解决方案](insider-risk-management.md)，以帮助保护组织免受对患者信息的未经授权的访问。
+您可以在 EHR Microsoft 365 合规中心中设置数据连接器，以在组织的电子医疗保健记录 (EHR) 中导入用户活动的审核数据。 您的医疗保健 EHR 系统审核数据包括与访问患者健康记录相关的事件的数据。 医疗保健 EHR 审核数据可用于Microsoft 365[风险管理解决方案](insider-risk-management.md)，以帮助保护组织免受对患者信息的未经授权的访问。
 
 设置医疗保健连接器包括以下任务：
 
-- 在应用程序中Azure Active Directory (Azure AD) 以访问 API 终结点，该终结点接受以制表符分隔的文本文件，其中包含医疗保健 EHR 审核数据。
+- 在应用程序中创建Azure Active Directory (Azure AD) ，以访问 API 终结点，该终结点接受以制表符分隔的文本文件，其中包含医疗保健 EHR 审核数据。
 
 - 创建包含连接器架构中定义的所有必填字段的文本文件。
 
@@ -39,7 +39,7 @@ ms.locfileid: "62271702"
 
 ## <a name="before-you-set-up-the-connector"></a>设置连接器之前
 
-- 必须在步骤 3 中为在步骤 3 中创建医疗保健连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到组织管理角色组Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](\Exchange\permissions-exo\role-groups#create-role-groups)"[](\Exchange\permissions-exo\role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 3 中为在步骤 3 中创建医疗保健连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色组"Exchange Online。
 
 - 您需要确定如何每天从组织的医疗保健 EHR 系统 (检索或导出数据) 并创建步骤 2 中所述的文本文件。 在步骤 4 中运行的脚本将文本文件中的数据推送到 API 终结点。
 
@@ -49,7 +49,7 @@ ms.locfileid: "62271702"
 
 第一步是在应用程序创建和注册Azure Active Directory (Azure AD) 。 该应用将对应于你在步骤 3 创建的医疗保健连接器。 创建此应用程序允许Azure AD对包含医疗保健 EHR 审核数据的文本文件的推送请求进行身份验证。 创建此应用程序Azure AD，请务必保存以下信息。 这些值将在稍后的步骤中使用。
 
-- Azure AD ID (也称为 *应用 ID* 或 *客户端 ID)*
+- Azure AD ID (也称为 *应用 ID* 或 *客户端 ID*) 
 
 - Azure AD应用程序密码 (也称为 *客户端密码*) 
 
@@ -59,7 +59,7 @@ ms.locfileid: "62271702"
 
 ## <a name="step-2-prepare-a-text-file-with-healthcare-ehr-auditing-data"></a>步骤 2：准备包含医疗保健 EHR 审核数据的文本文件
 
-下一步是创建一个文本文件，其中包含有关员工在组织的医疗保健 EHR 系统中访问患者健康记录的信息。 如前所述，您需要确定如何从医疗保健 EHR 系统生成此文本文件。 医疗保健连接器工作流需要具有制表符分隔值的文本文件，以使用所需连接器架构映射文本文件中的该数据。 支持的文件格式是逗号 (.csv) 、管道 (.psv) 或选项卡 (.tsv) 分隔的文本文件。
+下一步是创建一个文本文件，其中包含有关员工在组织的医疗保健 EHR 系统中访问患者健康记录的信息。 如前所述，您需要确定如何从医疗保健 EHR 系统生成此文本文件。 医疗保健连接器工作流需要具有制表符分隔值的文本文件，以使用所需连接器架构映射文本文件中的该数据。 支持的文件格式是逗号 (.csv) 、管道 (.psv) 或制表符 (.tsv) 分隔的文本文件。
 
 > [!NOTE]
 > 包含审核数据的文本文件的最大大小为 3 GB。 最大行数为 500 万。 此外，请务必仅包含来自医疗保健 EHR 系统的相关审核数据。
@@ -131,7 +131,7 @@ ms.locfileid: "62271702"
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-healthcare-ehr-auditing-data"></a>步骤 4：运行示例脚本以上载医疗保健 EHR 审核数据
 
-设置医疗保健连接器的最后一步是运行示例脚本，该脚本将在你在步骤 1) 中创建的文本文件 (中将医疗保健 EHR 审核数据上载到 Microsoft 云。 具体而言，脚本将数据上载到医疗保健连接器。 运行脚本后，在步骤 3 中创建的医疗保健连接器将医疗保健 EHR 审核数据导入 Microsoft 365 组织，其他合规性工具（如预览体验成员风险管理解决方案）可以访问该数据。 运行脚本后，请考虑安排每天自动运行该脚本的任务，以便将最新的员工离职数据上传到 Microsoft 云。 请参阅 [ (可选) 步骤 6：计划脚本自动运行](#optional-step-6-schedule-the-script-to-run-automatically)。
+设置医疗保健连接器的最后一步是运行示例脚本，该脚本将在你在步骤 1) 中创建的文本文件 (中上载医疗保健 EHR 审核数据到 Microsoft 云。 具体而言，脚本将数据上载到医疗保健连接器。 运行脚本后，在步骤 3 中创建的医疗保健连接器将医疗保健 EHR 审核数据导入 Microsoft 365 组织，其他合规性工具（如预览体验成员风险管理解决方案）可以访问该数据。 运行脚本后，请考虑安排每天自动运行该脚本的任务，以便将最新的员工离职数据上传到 Microsoft 云。 请参阅 [ (可选) 步骤 6：计划脚本自动运行](#optional-step-6-schedule-the-script-to-run-automatically)。
 
 > [!NOTE]
 > 如前所述，包含审核数据的文本文件的最大大小为 3 GB。 最大行数为 500 万。 在此步骤中运行的脚本将大约需要 30 至 40 分钟从大型文本文件导入审核数据。 此外，该脚本还将大型文本文件划分为包含 10 万行的较小块，然后按顺序导入这些块。
@@ -159,7 +159,7 @@ ms.locfileid: "62271702"
 |参数  |说明|
 |:----------|:----------|
 |tenantId|这是在步骤 1 Microsoft 365获得的组织 ID。 还可以在管理中心的"概述"边栏选项卡上获取Azure AD ID。 这用于标识您的组织。|
-|appId|这是Azure AD步骤 1 中创建的应用的应用程序Azure AD ID。 当脚本尝试Azure AD组织时，此参数Microsoft 365进行身份验证。|
+|appId|这是Azure AD步骤 1 中创建的应用的应用程序Azure AD ID。 当脚本尝试Azure AD组织时，此参数用于Microsoft 365身份验证。|
 |appSecret|这是Azure AD步骤 1 中创建的应用的Azure AD密码。 这还用于身份验证。|
 |jobId|这是在步骤 3 中创建的医疗保健连接器的作业 ID。 这用于将上载到 Microsoft 云的医疗保健 EHR 审核数据与医疗保健连接器关联。|
 |filePath|这是文本文件的文件路径， (步骤 2 中创建的脚本) 存储在同一系统中。 尝试避免文件路径中的空格;否则请使用单引号。|
@@ -174,7 +174,7 @@ ms.locfileid: "62271702"
 如果上传成功，脚本将显示Upload **成功** 消息。
 
 > [!NOTE]
-> 如果由于执行策略而运行上一个命令时遇到问题，[](\powershell\module\microsoft.powershell.core\about\about_execution_policies)请参阅关于执行策略和 [Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy)，了解设置执行策略的指南。
+> 如果由于执行策略而运行上一个命令时遇到问题，[](/powershell/module/microsoft.powershell.core/about/about_execution_policies)请参阅关于执行策略和 [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)，了解设置执行策略的指南。
 
 ## <a name="step-5-monitor-the-healthcare-connector"></a>步骤 5：监视医疗保健连接器
 
@@ -184,7 +184,7 @@ ms.locfileid: "62271702"
 
 2. 单击 **"连接器"** 选项卡，然后选择"医疗保健"连接器以显示飞出页面。 此页面包含有关连接器的属性和信息。
 
-3. 在 **"上次导入"** 下，单击"下载日志"链接 (或) 连接器的状态日志。 此日志包含有关脚本每次运行以及将数据从文本文件上载到 Microsoft 云时的信息。
+3. 在 **"上次导入"** 下， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含有关脚本每次运行以及将数据从文本文件上载到 Microsoft 云时的信息。
 
     该字段 `RecordsSaved` 指示已上载的文本文件中的行数。 例如，如果文本文件包含四 `RecordsSaved` 行，则字段的值为 4（如果脚本已成功上载文本文件中所有行）。
 
@@ -192,7 +192,7 @@ ms.locfileid: "62271702"
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a> (可选) 步骤 6：计划脚本自动运行
 
-若要确保医疗保健 EHR 系统中的最新审核数据可供内部风险管理解决方案等工具使用，建议安排脚本每天自动运行。 这还要求你在类似的 (（如果不是同一) 计划）上更新同一文本文件中的 EHR 审核数据，以便其中包含员工有关患者记录访问活动的最新信息。 目标是上载最新的审核数据，以便医疗保健连接器能够将其提供给内部风险管理解决方案。
+若要确保医疗保健 EHR 系统中的最新审核数据可供内部风险管理解决方案等工具使用，建议安排脚本每天自动运行。 这还要求你在类似的 (（如果不是同一个) 计划）上更新同一文本文件中的 EHR 审核数据，以便其中包含员工有关患者记录访问活动的最新信息。 目标是上载最新的审核数据，以便医疗保健连接器能够将其提供给内部风险管理解决方案。
 
 可以使用任务计划程序应用Windows每天自动运行脚本。
 
@@ -212,7 +212,7 @@ ms.locfileid: "62271702"
 
 6. 选择 **"触发器"** 选项卡，单击 **"新建**"，然后执行以下操作：
 
-    1. 在 **设置**"下，选择"每天"选项，然后选择首次运行脚本的日期和时间。 脚本将每天在指定的同一时间运行。
+    1. 在 **设置**"下，选择"**每天**"选项，然后选择首次运行脚本的日期和时间。 脚本将每天在指定的同一时间运行。
 
     2. 在 **"高级设置**"下，确保 **选中"已启用** "复选框。
 

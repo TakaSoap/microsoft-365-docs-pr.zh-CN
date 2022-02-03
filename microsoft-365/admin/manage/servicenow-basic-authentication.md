@@ -17,16 +17,16 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow 的作用域认证应用程序安装和配置指南。
-ms.openlocfilehash: f23ea7e941bd8c56815791fe3ed86e38efcf9a79
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: cf9b5149847b51d9d701a49e32624ada3f708a17
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62294908"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321479"
 ---
 # <a name="configure-support-integration-with-servicenow---basic-authentication"></a>配置支持与 ServiceNow 集成 - 基本身份验证
 
-## <a name="prerequisites-basic-authentication"></a>基本 (的先决条件) 
+## <a name="prerequisites-basic-authentication"></a>基本 (身份验证的先决条件) 
 
 这些必备组件是设置支持集成Microsoft 365 **所必需的**。
 
@@ -68,7 +68,7 @@ ms.locfileid: "62294908"
 
 1. \[ServiceNow 管理员\] 设置入站 OAuth 提供程序。
 
-    如果范围未设置为 **"****&gt;&gt;** 全局"，则通过访问"开发人员应用程序"设置"全局 **"来这样做**。
+    如果作用域未设置为 **"****&gt;&gt;** 全局"，则通过访问"开发人员应用程序设置切换到"全局"来 **这样做**。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="自动生成的图形用户界面、文本、应用程序、聊天或短信说明":::
 
@@ -115,7 +115,6 @@ ms.locfileid: "62294908"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="图形用户界面，自动生成表说明":::
 
-
 1. \[ServiceNow 管理员\]转到 **Microsoft 365支持&gt;安装程序以** 打开集成工作流。
 
     > [!NOTE]
@@ -130,10 +129,7 @@ ms.locfileid: "62294908"
 1. \[ServiceNow 管理员\] 配置环境和设置类型。
 
     如果此安装位于测试环境中，请选择选项"这是测试环境"。 在设置完成后，你将能够快速禁用此选项，并且稍后完成所有测试。
-    如果实例允许对入站连接进行基本身份验证，请选择"[是"](servicenow-aad-oauth-token.md)，否则请参阅高级安装程序AAD。
-
- :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
-
+    如果实例允许对入站连接进行基本身份验证，请选择"[是"](servicenow-aad-oauth-token.md)，否则请参阅高级安装程序AAD。 :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
 1. \[ServiceNow 管理员\] 输入你的Microsoft 365租户域。
 
@@ -143,6 +139,7 @@ ms.locfileid: "62294908"
     1. 注册 Azure Active Directory (AAD) 应用。
     1. 完成先决条件部分中的说明后，单击"完成 **"**。 否则，请按照向导中的说明操作，在 AAD。
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-4.png" lightbox="../../media/ServiceNow-guide/snowbasic-4.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
+
     1. 注册 ServiceNow OAuth 应用。
     1. 完成先决条件部分中的说明后，选择新创建的 OAuth 应用程序注册并单击"下一步"。 否则，请按照说明在 ServiceNow 中创建实体，然后选择新的应用程序注册。
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-5.png" lightbox="../../media/ServiceNow-guide/snowbasic-5.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
@@ -150,10 +147,14 @@ ms.locfileid: "62294908"
 1. \[ServiceNow 管理员\] 配置入站设置。
     1. 配置入站 OAuth API 终结点。
     1. 完成先决条件部分中的说明后，选择新创建的 OAuth 应用程序注册，然后单击"完成"。 否则，请按照说明在 中创建实体，然后选择新的 REST 终结点注册。
+     
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-6.png" lightbox="../../media/ServiceNow-guide/snowbasic-6.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
+
     1. 配置集成用户。
     1. 完成先决条件部分中的说明后，选择新创建的集成用户，然后单击下一步。 否则，请按照说明在 ServiceNow 中创建实体，然后选择新的集成用户。
+    
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-7.png" lightbox="../../media/ServiceNow-guide/snowbasic-7.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
+
 
 1. \[Microsoft 365租户管理员\]完成 Microsoft 365 管理 门户中的集成。
 
@@ -161,11 +162,11 @@ ms.locfileid: "62294908"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image17.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image17.png" alt-text="自动生成的图形用户界面、文本、应用程序说明":::
 
-1. 转到"**Microsoft 365 管理门户&gt;设置&gt;组织设置&gt;""组织配置文件"**。
+1. 转到"**Microsoft 365 管理门户&gt;设置&gt;组织设置"&gt;"组织配置文件"**。
 
 1. 配置支持集成设置：
 
-    Select the **Basic information** tab > **Internal support** **toolServiceNow** > ， and enter the **Outbound App ID** value in the **Application ID to issue Auth Token** field. 此出站应用 ID 位于步骤 6 – 完成集成中，该集成是在步骤 1 中的先决条件 [ (基本 \#) 中创建的](#prerequisites-basic-authentication)。
+    Select the **Basic information** tab > **Internal support** **toolServiceNow** > ， and enter the **Outbound App ID** value in the **Application ID to issue Auth Token** field. 此出站应用 ID 位于步骤 6 – 完成集成中，该集成是在步骤 1 ([基本 \#身份验证) 中创建的](#prerequisites-basic-authentication)。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
@@ -179,13 +180,13 @@ ms.locfileid: "62294908"
 
     - 客户端 ID：步骤 6 – 完成集成中的客户端 **ID** 值。
 
-    - 客户端密码：在步骤 3 中的先决条件 (中创建 \#的入站 OAuth) 密码。
+    - 客户端密码：在先决条件和基本身份验证步骤 3 (创建的入站 OAuth) \#密码。
 
     - 刷新令牌过期：864000
 
     - Rest username： The **User Name** value from Step 6 – Complete the Integration.
 
-    - Rest 用户密码：步骤 4 中在先决条件 ([基本\#](#prerequisites-basic-authentication)身份验证) 密码。
+    - Rest 用户密码：步骤 4 中在先决条件 (中创建的集成 [) \#密码](#prerequisites-basic-authentication)。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image19.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image19.png" alt-text="图形用户界面，应用程序说明自动生成":::
 

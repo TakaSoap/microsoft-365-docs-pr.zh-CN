@@ -13,25 +13,25 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: 管理员可以设置一个数据连接器，以将 EHR (EHR) 的一系列数据导入到 Microsoft 365。 这样，你可以将管理 EHR 数据用于内部风险管理策略，以帮助你检测员工对患者数据的未经授权的访问活动。
-ms.openlocfilehash: b3382f47bb9ec91623c86e16394bb3452fb1619e
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+description: 管理员可以设置一个数据连接器，以将 EHR (电子) 数据从组织的一个显示系统导入Microsoft 365。 这样，你可以将管理 EHR 数据用于内部风险管理策略，以帮助你检测员工对患者数据的未经授权的访问活动。
+ms.openlocfilehash: 0da7386aa2b230492fedd5fdac5477d204aa63a8
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272014"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321119"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>设置连接器以在预览版中导入 (EHR) 
 
-可以在 EHR Microsoft 365 合规中心中设置数据连接器，以在组织的"电子医疗保健记录" (EHR) 中导入用户活动的审核记录。 来自你的处理 EHR 系统的审核记录包括有关访问患者健康记录的事件的记录。 内部风险管理解决方案可以使用安全 eHR 审核Microsoft 365，以帮助保护组织免受[](insider-risk-management.md)对患者信息的未经授权的访问。
+可以在 EHR Microsoft 365 合规中心中设置数据连接器，以在组织的"管理电子医疗保健记录" (EHR) 审核记录。 来自你的处理 EHR 系统的审核记录包括有关访问患者健康记录的事件的记录。 内部风险管理解决方案可以使用安全 eHR 审核Microsoft 365帮助保护组织免受[](insider-risk-management.md)对患者信息的未经授权的访问。
 
 设置一个 Connector 连接器包含以下任务：
 
-- 在应用程序中创建Azure Active Directory (Azure AD) ，以访问 API 终结点，该终结点接受包含一个以制表符分隔的文本文件，其中包含一个"一般 EHR"审核记录。
+- 在应用程序中创建Azure Active Directory (Azure AD) ，以访问 API 终结点，该终结点接受包含一个以制表符分隔的文本文件，其中包含一条管理 EHR 审核记录。
 
 - 创建包含连接器架构中定义的所有必填字段的文本文件。
 
-- 在 Microsoft 365 合规中心 中创建一个 Connector Microsoft 365 合规中心。
+- 在连接器中创建一个Microsoft 365 合规中心。
 
 - 运行脚本将处理 EHR 审核记录推送到 API 终结点。
 
@@ -39,17 +39,17 @@ ms.locfileid: "62272014"
 
 ## <a name="before-you-set-up-the-connector"></a>设置连接器之前
 
-- 必须在步骤 3 中为在步骤 3 中创建连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到组织管理角色组Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](\Exchange\permissions-exo\role-groups#create-role-groups)"[](\Exchange\permissions-exo\role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 3 中为在步骤 3 中创建连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色组"Exchange Online。
 
-- 您需要确定如何每天从组织的"A0"EHR (检索或导出数据) 并创建步骤 2 中介绍的文本文件。 在步骤 4 中运行的脚本将文本文件中的数据推送到 API 终结点。
+- 您需要确定如何每天从组织的 (EHR 系统检索或导出数据) 并创建步骤 2 中所述的文本文件。 在步骤 4 中运行的脚本将文本文件中的数据推送到 API 终结点。
 
 - 在步骤 4 中运行的示例脚本将"一般 EHR 审核记录"从文本文件推送到连接器 API，以便内部风险管理解决方案可以使用它。 本示例脚本在任何 Microsoft 标准支持计划或服务下都不受支持。 示例脚本“原样”提供，不提供任何形式的保证。 Microsoft 进一步拒绝所有默示保证，包括但不限于针对特定用途的适销性或适用性的任何默示保证。 由于示例脚本及文档的使用或性能所引起的全部风险均由你承担。 在任何情况下，对于由于使用或者无法使用示例脚本或文档所引起的任何损失（包括但不限于商业利润损失、业务中断、商业信息丢失或者其他经济损失），Microsoft、其作者或者参与创建、制作或交付脚本的任何人概不负责，即使 Microsoft 已被告知可能会出现此类损失。
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤 1：在 Azure Active Directory
 
-第一步是在应用程序创建和注册Azure Active Directory (Azure AD) 。 该应用将对应于你在步骤 3 创建的"放大"连接器。 创建此应用Azure AD验证包含为包含一组用户 EHR 审核记录的文本文件的推送请求。 创建此应用程序Azure AD，请务必保存以下信息。 这些值将在稍后的步骤中使用。
+第一步是在应用程序创建和注册Azure Active Directory (Azure AD) 。 该应用将对应于你在步骤 3 创建的"放大"连接器。 创建此应用Azure AD验证包含一些用户 EHR 审核记录的文本文件的推送请求。 创建此应用程序Azure AD，请务必保存以下信息。 这些值将在稍后的步骤中使用。
 
-- Azure AD ID (也称为 *应用 ID* 或 *客户端 ID)*
+- Azure AD ID (也称为 *应用 ID* 或 *客户端 ID*) 
 
 - Azure AD应用程序密码 (也称为 *客户端密码*) 
 
@@ -80,7 +80,7 @@ ms.locfileid: "62272014"
 
 ## <a name="step-3-create-the-epic-connector"></a>步骤 3：创建连接器
 
-下一步是在应用程序创建一个 Microsoft 365 合规中心。 在步骤 4 中运行脚本后，将处理在步骤 2 中创建的文本文件，并推送到在步骤 1 中设置的 API 终结点。 在此步骤中，请确保复制创建连接器时生成的 JobId。 运行脚本时，将使用 JobId。
+下一步是在应用程序内创建一个Microsoft 365 合规中心。 在步骤 4 中运行脚本后，将处理在步骤 2 中创建的文本文件，并推送到在步骤 1 中设置的 API 终结点。 在此步骤中，请确保复制创建连接器时生成的 JobId。 运行脚本时，将使用 JobId。
 
 1. 转到 ， <https://compliance.microsoft.com> 然后单击左侧 **导航中的** "数据连接器"。
 
@@ -104,7 +104,7 @@ ms.locfileid: "62272014"
 
     2. **参考架构。** 请参阅架构，了解连接器接受来自您的为时系统哪些字段。 这将帮助你创建一个包含所有必需的"完成时间"数据库字段的文件。
 
-    3. **指向示例脚本的链接。** 单击 **"此处**"链接可转到GitHub网站以访问示例脚本 (该链接将打开一个新窗口) 。 保持此窗口为打开状态，以便你可以复制步骤 4 中的脚本。 或者，您可以为目标添加书签或复制 URL，以便可以在运行脚本时再次访问它。 连接器飞出页面上也提供此链接。
+    3. **指向示例脚本的链接。** 单击 **"此处**"链接可转到 GitHub 网站以访问示例脚本 (该链接将打开一个新窗口) 。 保持此窗口为打开状态，以便你可以复制步骤 4 中的脚本。 或者，您可以为目标添加书签或复制 URL，以便可以在运行脚本时再次访问它。 连接器飞出页面上也提供此链接。
 
 6. 单击“**完成**”。
 
@@ -118,7 +118,7 @@ ms.locfileid: "62272014"
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-epic-ehr-audit-records"></a>步骤 4：运行示例脚本以上载您的处理 EHR 审核记录
 
-设置云解决方案连接器的最后一步是运行示例脚本，该脚本将在你在步骤 1) 中创建的文本文件 (中上载"完成 EHR"审核记录数据到 Microsoft 云。 具体而言，脚本将数据上载到 Connector 连接器。 运行脚本后，在步骤 3 中创建的部署连接器将导入到 Microsoft 365 组织，由其他合规性工具（如预览体验成员风险管理解决方案）访问该脚本。 运行脚本后，请考虑安排每天自动运行该脚本的任务，以便将最新的员工离职数据上传到 Microsoft 云。 请参阅 [ (可选) 步骤 6：计划脚本自动运行](#optional-step-6-schedule-the-script-to-run-automatically)。
+设置开发工具连接器的最后一步是运行示例脚本，该脚本将在你在步骤 1) 中创建的文本文件 (中上载"完成 EHR"审核记录数据到 Microsoft 云。 具体而言，脚本将数据上载到 Connector 连接器。 运行脚本后，在步骤 3 中创建的部署连接器将导入到 Microsoft 365 组织，由其他合规性工具（如预览体验成员风险管理解决方案）访问该脚本。 运行脚本后，请考虑安排每天自动运行该脚本的任务，以便将最新的员工离职数据上传到 Microsoft 云。 请参阅 [ (可选) 步骤 6：计划脚本自动运行](#optional-step-6-schedule-the-script-to-run-automatically)。
 
 > [!NOTE]
 > 如前所述，包含审核数据的文本文件的最大大小为 3 GB。 最大行数为 500 万。 在此步骤中运行的脚本将大约需要 30 至 40 分钟从大型文本文件导入审核数据。 此外，该脚本还将大型文本文件划分为包含 10 万行的较小块，然后按顺序导入这些块。
@@ -131,7 +131,7 @@ ms.locfileid: "62272014"
 
 4. 如有必要，修改组织的示例脚本。
 
-5. 使用 文件名后缀 将文本文件另存为`.ps1`Windows PowerShell脚本文件;例如， `EpicConnector.ps1`。
+5. 使用 文件名后缀 将文本文件另存`.ps1`为Windows PowerShell脚本文件;例如， `EpicConnector.ps1`。
 
 6. 在本地计算机上打开命令提示符，然后转到保存脚本的目录。
 
@@ -146,7 +146,7 @@ ms.locfileid: "62272014"
 |参数  |说明|
 |:----------|:----------|
 |tenantId|这是在步骤 1 Microsoft 365获得的组织 ID。 还可以在管理中心的"概述"边栏选项卡上获取Azure AD ID。 这用于标识您的组织。|
-|appId|这是Azure AD步骤 1 中创建的应用的应用程序Azure AD ID。 当脚本尝试Azure AD组织时，此参数Microsoft 365进行身份验证。|
+|appId|这是Azure AD步骤 1 中创建的应用的应用程序Azure AD ID。 当脚本尝试Azure AD组织时，此参数用于Microsoft 365身份验证。|
 |appSecret|这是Azure AD步骤 1 中创建的应用的Azure AD密码。 这还用于身份验证。|
 |jobId|这是在步骤 3 中创建的"放大"连接器的作业 ID。 这用于将上载到 Microsoft 云的"完成"EHR 审核记录与"云解决方案提供商"连接器关联。|
 |filePath|这是文本文件的文件路径， (步骤 2 中创建的脚本) 存储在同一系统中。 尝试避免文件路径中的空格;否则请使用单引号。|
@@ -161,7 +161,7 @@ ms.locfileid: "62272014"
 如果上传成功，脚本将显示Upload **成功** 消息。
 
 > [!NOTE]
-> 如果由于执行策略而运行上一个命令时遇到问题，[](\powershell\module\microsoft.powershell.core\about\about_execution_policies)请参阅关于执行策略和 [Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy)，了解设置执行策略的指南。
+> 如果由于执行策略而运行上一个命令时遇到问题，[](/powershell/module/microsoft.powershell.core/about/about_execution_policies)请参阅关于执行策略和 [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)，了解设置执行策略的指南。
 
 ## <a name="step-5-monitor-the-epic-connector"></a>步骤 5：监视连接器
 
@@ -171,7 +171,7 @@ ms.locfileid: "62272014"
 
 2. 单击" **连接器"** 选项卡，然后选择"连接器"以显示飞出页面。 此页面包含有关连接器的属性和信息。
 
-3. 在 **"上次导入"** 下，单击"下载日志"链接 (或) 连接器的状态日志。 此日志包含有关脚本每次运行以及将数据从文本文件上载到 Microsoft 云时的信息。
+3. 在 **"上次导入"** 下， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含有关脚本每次运行以及将数据从文本文件上载到 Microsoft 云时的信息。
 
     连接器日志文件显示已上载的文本文件中的行数
 
@@ -181,7 +181,7 @@ ms.locfileid: "62272014"
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a> (可选) 步骤 6：计划脚本自动运行
 
-若要确保来自 Your Insider EHR 系统的最新审核记录可供内部风险管理解决方案等工具使用，建议安排脚本每天自动运行。 这还要求你在类似的 (（如果不是同一) 计划）上更新同一文本文件中的"Patient"审核记录数据，以便其中包含员工访问患者记录活动的最新信息。 目标是上载最新的审核记录，以便"确定"连接器可用于内部风险管理解决方案。 
+若要确保来自 Your Insider EHR 系统的最新审核记录可供内部风险管理解决方案等工具使用，建议安排脚本每天自动运行。 这还要求你在类似的 (（如果不是同一) 计划）上更新同一文本文件中的"Patient"审核记录数据，以便其中包含员工有关患者记录访问活动的最新信息。 目标是上载最新的审核记录，以便"确定"连接器可用于内部风险管理解决方案。 
 
 可以使用任务计划程序应用Windows每天自动运行脚本。
 
@@ -201,7 +201,7 @@ ms.locfileid: "62272014"
 
 6. 选择 **"触发器"** 选项卡，单击 **"新建**"，然后执行以下操作：
 
-    1. 在 **设置**"下，选择"每天"选项，然后选择首次运行脚本的日期和时间。 脚本将每天在指定的同一时间运行。
+    1. 在 **设置**"下，选择"**每天**"选项，然后选择首次运行脚本的日期和时间。 脚本将每天在指定的同一时间运行。
 
     2. 在 **"高级设置**"下，确保 **选中"已启用** "复选框。
 

@@ -11,24 +11,25 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: ''
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 92bc38c919a31a742ea5562f40d5d9ab2686290d
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.collection: m365solution-scenario
+ms.date: 1/18/2022
+ms.openlocfilehash: fa6558ef03aed98426cf615df6a80359ef7424bc
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074734"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320651"
 ---
 # <a name="asr-rules-deployment-overview"></a>ASR 规则部署概述
 
 ## <a name="before-you-begin"></a>准备工作
 
-攻击面是组织易受网络威胁和攻击的所有位置。 组织的攻击面包括攻击者可能破坏组织设备或网络的所有位置。 减少攻击面意味着保护组织的设备和网络，从而让攻击者减少攻击方法。 配置攻击面减少 (ASR) 规则（Microsoft Defender for Endpoint 中的众多安全功能之一）可以提供帮助。
+攻击面是组织易受网络威胁和攻击的所有位置。 组织的攻击面包括攻击者可能破坏组织设备或网络的所有位置。 减少攻击面意味着保护组织的设备和网络，从而让攻击者减少攻击方法。 使用 ASR (配置攻击面) 规则（Microsoft Defender for Endpoint 中的众多安全功能之一）可以提供帮助。
 
 ASR 规则针对某些软件行为，例如：
 
@@ -43,24 +44,24 @@ ASR 规则针对某些软件行为，例如：
 >[!IMPORTANT]
 >本指南提供了图像和示例，可帮助你确定如何配置 ASR 规则;这些图像和示例可能无法反映适用于您的环境的最佳配置选项。
 
-在启动之前，请查看 [攻击面](overview-attack-surface-reduction.md)减少概述和攻击面减少规则 - 第 [1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) 部分，了解基础信息。 若要了解覆盖范围和潜在影响，请熟悉当前的 ASR 规则集;请参阅 [攻击面减少规则参考](attack-surface-reduction-rules-reference.md)。
+在启动之前，请查看 [攻击面](overview-attack-surface-reduction.md)减少概述和攻击面减少规则 [- 第 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) 部分，了解基础信息。 若要了解覆盖范围和潜在影响，请熟悉当前的 ASR 规则集;请参阅 [攻击面减少规则参考](attack-surface-reduction-rules-reference.md)。
 
 ASR 规则只是 Microsoft Defender for Endpoint 中攻击面减少功能的一项功能。 本文档将详细介绍如何有效地部署 ASR 规则，以阻止高级威胁，如人为操作的勒索软件和其他威胁。  
 
 ### <a name="rules-by-category"></a>按类别分类的规则
 
-如使用攻击面 [减少规则](attack-surface-reduction.md)防止恶意软件感染所述，MDE 中有多个攻击面减少规则，你可以启用这些规则来保护你的组织。 以下是按类别细分的规则：
+如使用攻击面减少 [规则](attack-surface-reduction.md)防止恶意软件感染所述，MDE 中有多个攻击面减少规则，你可以启用这些规则来保护你的组织。 以下是按类别细分的规则：
 
 <br/>
 
 | 多态威胁 | 横向移动&凭据盗窃 | 生产力应用规则 |  电子邮件规则 | 脚本规则 | 杂项规则 |
 |:---|:---|:---|:---|:---|:---|
-| 阻止可执行文件运行，除非它们符合 (1000 台计算机) 、年龄 (24 小时) 或受信任的列表条件 | 阻止源自 PSExec 和 WMI 命令的进程创建 | 阻止Office创建可执行内容 | 阻止来自电子邮件客户端和 Webmail 的可执行内容 | 阻止混淆的 JS/VBS/PS/宏代码 | 阻止滥用被攻击的易受攻击的已签名驱动程序 <sup> [[1](#fn1)]<sup></sup>  |
-| 阻止从 USB 运行的不受信任的和未签名的进程 | 阻止从本地安全Windows (lsass.exe) <sup> [[2](#fn1)] 中窃取凭据<sup></sup>   | 阻止Office创建子进程 |  仅Office通信应用程序创建子进程 | 阻止 JS/VBS 启动下载的可执行内容 | |
-| 使用高级防护抵御勒索软件 | 通过 WMI 事件订阅阻止持久性 | 阻止Office将代码注入其他进程 | 阻止Office通信应用创建子进程 | | |
+| 除非可执行文件符合 1000 台计算机 (、年龄) 、年龄 (24 小时) 或受信任的列表条件，否则阻止可执行文件运行 | 阻止源自 PSExec 和 WMI 命令的进程创建 | 阻止Office创建可执行内容 | 阻止来自电子邮件客户端和 Webmail 的可执行内容 | 阻止混淆的 JS/VBS/PS/宏代码 | 阻止滥用被攻击的易受攻击的已签名驱动程序 <sup>[[1](#fn1)]<sup></sup>  |
+| 阻止从 USB 运行的不受信任的和未签名的进程 | 阻止从本地安全Windows (lsass.exe <sup>) [[2](#fn1)]<sup></sup>   | 阻止Office创建子进程 |  仅Office通信应用程序创建子进程 | 阻止 JS/VBS 启动下载的可执行内容 | |
+| 使用高级防护抵御勒索软件 | 通过 WMI 事件订阅阻止持久性 | 阻止Office将代码注入其他进程 | 阻止Office应用创建子进程 | | |
 | | | 阻止 Adobe Reader 创建子进程 | | | |
 
- (<a id="fn1">1</a>) MEM终结点安全中目前未提供阻止滥用被攻击的易受攻击的已签名驱动程序。 可以使用 [MEM OMA-URI](enable-attack-surface-reduction.md#mem)配置此规则。
+ (<a id="fn1">1</a>) MEM 终结点安全性中目前未提供阻止滥用受攻击的已签名驱动程序。 可以使用 [MEM OMA-URI 配置此规则](enable-attack-surface-reduction.md#mem)。
 
  (<a id="fn1">2</a>) 某些 ASR 规则会生成大量干扰，但不会阻止功能。 例如，如果你要更新 Chrome;Chrome 将访问lsass.exe;密码存储在设备的 lsass 中。 但是，Chrome 不应访问本地设备lsass.exe。 如果启用规则以阻止对 lsass 的访问，它将生成大量事件。 这些事件是很好的事件，因为软件更新过程不应访问lsass.exe。 启用此规则将阻止 Chrome 更新访问 lsas，但不会阻止 Chrome 更新;对于对应用程序进行不必要的调用的其他应用程序也是如此lsass.exe。 阻止 _访问 lsass_ 规则将阻止对 lsass 的不必要调用，但不阻止应用程序运行。
 
@@ -77,11 +78,11 @@ ASR 规则只是 Microsoft Defender for Endpoint 中攻击面减少功能的一�
 
 >[!Note]
 >有多种方法可配置 ASR 规则。 可以使用以下方法配置 ASR 规则：Microsoft Endpoint Manager (MEM) 、PowerShell、组策略、Microsoft System Center Configuration Manager (SCCM) 、MEM OMA-URI。
->如果你使用的基础结构配置与上面 _)_ 上针对基础结构要求 (列出的基础结构配置不同，你可以在此处了解有关使用其他配置部署攻击面减少规则的信息： [启用攻击](enable-attack-surface-reduction.md)面减少规则。  
+>如果你使用的基础结构配置与上面 (基础结构要求列出的基础结构配置不同，你可以在此处了解有关使用其他配置部署攻击面减少规则 () ：启用[攻击](enable-attack-surface-reduction.md)面减少规则。  
 
 ### <a name="asr-rules-dependencies"></a>ASR 规则依赖项
 
-Microsoft Defender 防病毒必须启用并配置为主要的防病毒解决方案，并且必须位于以下模式下：
+Microsoft Defender 防病毒必须启用并配置为主要的防病毒解决方案，并且必须具有以下模式：
 
 - 主防病毒/反恶意软件解决方案  
 - 状态：活动模式
@@ -93,20 +94,20 @@ Microsoft Defender 防病毒不得在下列任一模式下：
 - 有限定期扫描 (LPS) 
 - 关闭
 
-请参阅：[云提供的保护和Microsoft Defender 防病毒。](cloud-protection-microsoft-defender-antivirus.md)
+请参阅：[云提供的保护和Microsoft Defender 防病毒](cloud-protection-microsoft-defender-antivirus.md)。
 
-### <a name="cloud-protection-maps-must-be-enabled"></a>必须启用 (MAPS) 云保护
+### <a name="cloud-protection-maps-must-be-enabled"></a>必须启用云 (MAPS) 
 
 Microsoft Defender 防病毒 Microsoft 云服务无缝工作。 这些云保护服务（也称为 Microsoft 高级保护服务 (MAPS) ）增强了标准实时保护，从而可以提供最佳防病毒防护。 云保护对于防止恶意软件的攻击和 ASR 规则的关键组件至关重要。
-[打开云中提供的Microsoft Defender 防病毒。](enable-cloud-protection-microsoft-defender-antivirus.md)
+[在云中打开云保护Microsoft Defender 防病毒](enable-cloud-protection-microsoft-defender-antivirus.md)。
 
 ### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>Microsoft Defender 防病毒组件必须是当前版本
 
 以下Microsoft Defender 防病毒组件版本必须不超过两个比当前可用版本大的版本：
 
-- **Microsoft Defender 防病毒平台更新版本**- Microsoft Defender 防病毒平台每月更新一次。
-- **Microsoft Defender 防病毒引擎版本**- Microsoft Defender 防病毒引擎每月更新一次。
-- **Microsoft Defender 防病毒安全** 智能 - Microsoft 会不断更新 Microsoft Defender 安全 (，也称为定义和签名) ，以解决最新威胁，并优化检测逻辑。
+- **Microsoft Defender 防病毒平台更新版本** - Microsoft Defender 防病毒每月更新一次。
+- **Microsoft Defender 防病毒引擎版本** - Microsoft Defender 防病毒引擎每月更新一次。
+- **Microsoft Defender 防病毒安全** 智能 - Microsoft 持续更新 Microsoft Defender 安全 (，也称为定义和签名) ，以解决最新威胁，并优化检测逻辑。
 
 保持Microsoft Defender 防病毒版本有助于减少 ASR 规则误报结果，并改进Microsoft Defender 防病毒检测功能。 有关当前版本以及如何更新不同组件的详细信息Microsoft Defender 防病毒请访问Microsoft Defender 防病毒[支持](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
@@ -122,13 +123,13 @@ Microsoft Defender 防病毒 Microsoft 云服务无缝工作。 这些云保护�
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题
 
-[阶段 1：计划](attack-surface-reduction-rules-deployment-phase-1.md)
+[第 1 阶段：规划](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[阶段 2：测试](attack-surface-reduction-rules-deployment-phase-2.md)
+[第 2 截断：测试](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[阶段 3：实现](attack-surface-reduction-rules-deployment-phase-3.md)
+[第 3 阶段：实施](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[阶段 4：操作](attack-surface-reduction-rules-deployment-phase-4.md)
+[第 4 阶段：投入生产](attack-surface-reduction-rules-deployment-phase-4.md)
 
 ## <a name="reference"></a>参考
 
@@ -170,7 +171,7 @@ Microsoft Defender 防病毒 Microsoft 云服务无缝工作。 这些云保护�
 
 [为部署环境创建Windows](/windows/deployment/update/create-deployment-plan)
 
-[在 Intune 中为分布式 IT (RBAC) 和范围标记使用基于角色的访问控制](/mem/intune/fundamentals/scope-tags)
+[在 Intune 中为分布式 IT (基于角色) RBAC 和范围标记](/mem/intune/fundamentals/scope-tags)
 
 [在 Microsoft Intune 中分配设备配置文件](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 

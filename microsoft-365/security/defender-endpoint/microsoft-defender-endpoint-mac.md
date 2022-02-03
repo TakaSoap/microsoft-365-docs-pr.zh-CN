@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea88381a82036af34f228725d1f8149895ad5c3f
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 4310248b3d85dd42c77692906380609b819089f5
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214113"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321383"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
@@ -38,7 +38,7 @@ ms.locfileid: "62214113"
 本主题介绍如何在 Mac 上安装、配置、更新和使用 Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Mac 上的 Microsoft Defender for Endpoint 旁边运行其他第三方终结点保护产品可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Mac 上的 Defender for Endpoint EDR[功能](mac-preferences.md#enforcement-level-for-antivirus-engine)。
+> 在 Mac 上的 Microsoft Defender for Endpoint 旁边运行其他第三方终结点保护产品可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Mac EDR 上的 Defender for [Endpoint 功能](mac-preferences.md#enforcement-level-for-antivirus-engine)。
 
 ## <a name="whats-new-in-the-latest-release"></a>最新版本的新增功能
 
@@ -47,9 +47,9 @@ ms.locfileid: "62214113"
 [Mac 上的 Microsoft Defender for Endpoint 的新增功能](mac-whatsnew.md)
 
 > [!TIP]
-> 如果你有任何要共享的反馈，请通过在你的设备上打开 Mac 上的 Microsoft Defender for Endpoint 并导航到"帮助发送反馈"来 \> **提交它**。
+> 如果你有任何要共享的反馈，请通过在你的设备上打开 Mac 上的 Microsoft Defender for Endpoint  \> 并导航到"帮助发送反馈"来 **提交它**。
 
-若要获取最新功能，包括预览功能 (如适用于 Mac 设备) 的终结点检测和响应，请配置运行 Microsoft Defender for Endpoint 的 macOS 设备为"预览体验成员"设备。
+若要获取最新功能，包括预览功能 (如适用于 Mac 设备) 的终结点检测和响应，请配置运行 Microsoft Defender for Endpoint 的 macOS 设备作为"预览体验成员"设备。
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>如何在 Mac 上安装 Microsoft Defender for Endpoint
 
@@ -57,7 +57,7 @@ ms.locfileid: "62214113"
 
 - Defender for Endpoint 订阅和访问 Microsoft 365 Defender 门户
 - macOS 和 BASH 脚本的初学者级体验
-- 手动部署时，设备上 (管理权限) 
+- 手动部署时， (管理权限) 
 
 ### <a name="installation-instructions"></a>安装说明
 
@@ -76,9 +76,9 @@ ms.locfileid: "62214113"
 支持 macOS 的三个最新主要版本。
 
 > [!IMPORTANT]
-> 在 macOS 11 (及) ，Microsoft Defender for Endpoint 需要额外的配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署 [macOS Catalina](mac-sysext-policies.md)的新配置文件和较新版本的 macOS 中列出的其他配置文件。
+> 在 macOS 11 (及) ，Microsoft Defender for Endpoint 需要其他配置文件。 如果您是从 macOS 早期版本升级的现有客户，请确保部署 [macOS Catalina 和较新版本的 macOS](mac-sysext-policies.md) 的新配置文件中列出的其他配置文件。
 
-- 12 (Rey) ，11 (Big Sur) ，10.15 (加泰罗尼亚语) 
+- 12 (12) ，11 (Big Sur) ， 10.15 (加泰罗尼亚语) 
 - 磁盘空间：1GB
 
 不支持 macOS 的 Beta 版本。
@@ -105,15 +105,21 @@ Mac 上的 Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可�
 
 ### <a name="configuring-exclusions"></a>配置排除项
 
-添加排除项时，请注意适用于 Microsoft Defender 防病毒[的常见排除错误](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)。
+添加排除项时，请注意用于添加[Microsoft Defender 防病毒](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)。
 
 ### <a name="network-connections"></a>网络连接
 
-以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 应确保没有拒绝访问这些 URL 的防火墙或网络筛选规则，或者您可能需要专门为它们创建允许规则。 
+以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 应确保没有拒绝访问这些 URL 的防火墙或网络筛选规则，或者您可能需要专门为它们创建允许规则。
 
-|域列表的电子表格|说明|
+
+|域列表的电子表格| 说明|
 |---|---|
-|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图。](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> 在此处下载电子表格[：mdatp-urls.xlsx。 ](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+|适用于商业客户的 Microsoft Defender 终结点 URL 列表 | 服务位置、地理位置和商业客户操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Gov/GCC/DoD 客户的 Microsoft Defender 终结点 URL 列表| Gov/GCC/DoD 客户的服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|
+
+
+
 
 Microsoft Defender for Endpoint 可以通过以下发现方法发现代理服务器：
 
@@ -128,7 +134,7 @@ Microsoft Defender for Endpoint 可以通过以下发现方法发现代理服务
 >
 > 出于安全考虑，也不支持 SSL 检查和截获代理。 为 SSL 检查和代理服务器配置例外，以将数据从 macOS 上的 Microsoft Defender for Endpoint 直接传递到相关 URL，而不会拦截。 将拦截证书添加到全局存储将不允许拦截。
 
-若要测试连接是否未阻止，请打开 <https://x.cp.wd.microsoft.com/api/report> <https://cdn.x.cp.wd.microsoft.com/ping> ，在浏览器中打开。
+若要测试连接是否未阻止，请打开 <https://x.cp.wd.microsoft.com/api/report> ，在 <https://cdn.x.cp.wd.microsoft.com/ping> 浏览器中打开。
 
 如果您更喜欢命令行，还可以在终端中运行以下命令来检查连接：
 
@@ -143,7 +149,7 @@ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https:
  `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
-> 建议在客户端设备上使系统 [完整性](https://support.apple.com/HT204899) (SIP) 启用。 SIP 是内置的 macOS 安全功能，可防止对操作系统进行低级篡改，并且默认启用。
+> 建议在客户端设备上使系统 [完整性 (](https://support.apple.com/HT204899) SIP) 启用。 SIP 是内置的 macOS 安全功能，可防止对操作系统进行低级篡改，并且默认启用。
 
 安装 Microsoft Defender for Endpoint 后，可通过在终端中运行以下命令来验证连接性：
 
@@ -153,17 +159,17 @@ mdatp connectivity test
 
 ## <a name="how-to-update-microsoft-defender-for-endpoint-on-mac"></a>如何在 Mac 上更新 Microsoft Defender for Endpoint
 
-Microsoft 会定期发布软件更新，以提高性能、安全性和提供新功能。 若要更新 Mac 上的 Microsoft Defender for Endpoint，使用名为 Microsoft AutoUpdate (MAU) 程序。 若要了解更多信息，请参阅 [在 Mac](mac-updates.md)上部署 Microsoft Defender for Endpoint 的更新。
+Microsoft 会定期发布软件更新，以提高性能、安全性和提供新功能。 若要更新 Mac 上的 Microsoft Defender for Endpoint，使用名为 Microsoft AutoUpdate (MAU) 程序。 若要了解更多信息，请参阅 [在 Mac 上部署 Microsoft Defender for Endpoint 更新](mac-updates.md)。
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-mac"></a>如何在 Mac 上配置 Microsoft Defender for Endpoint
 
-有关如何在企业环境中配置产品的指南可在在 Mac 上设置 [Microsoft Defender for Endpoint 的首选项中提供](mac-preferences.md)。
+有关如何在企业环境中配置产品的指南，可在在 Mac 上设置 [Microsoft Defender for Endpoint 的首选项中提供](mac-preferences.md)。
 
 ## <a name="macos-kernel-and-system-extensions"></a>macOS 内核和系统扩展
 
-为了与 macOS 演变保持一致，我们正在准备利用系统扩展而非内核扩展的 Mac 上的 Microsoft Defender for Endpoint 更新。 有关相关详细信息，请参阅 Mac 上的 [Microsoft Defender for Endpoint 中的新增功能](mac-whatsnew.md)。
+为了与 macOS 演变保持一致，我们正在准备利用系统扩展而非内核扩展的 Mac 上的 Microsoft Defender for Endpoint 更新。 有关相关详细信息，请参阅 [Mac 上的 Microsoft Defender for Endpoint 中的新增功能](mac-whatsnew.md)。
 
 ## <a name="resources"></a>资源
 
-- 有关日志记录、卸载或其他主题的信息，请参阅 Mac 上的 [Microsoft Defender for Endpoint 的资源](mac-resources.md)。
+- 有关日志记录、卸载或其他主题的信息，请参阅 [Mac 上的 Microsoft Defender for Endpoint 的资源](mac-resources.md)。
 - [Mac 上的 Microsoft Defender for Endpoint 的隐私](mac-privacy.md)。

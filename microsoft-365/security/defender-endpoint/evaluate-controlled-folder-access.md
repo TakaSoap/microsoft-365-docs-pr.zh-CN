@@ -10,16 +10,17 @@ audience: ITPro
 ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
-ms.reviewer: ''
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: ac371ed04cdbc42a34aded4cbbd394e6f522ba06
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.collection: m365initiative-m365-defender
+ms.date: ''
+ms.openlocfilehash: a4e3d03a8293dbfeef53687d6a91fdfcd165a44a
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163970"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322043"
 ---
 # <a name="evaluate-controlled-folder-access"></a>受控文件夹访问评估
 
@@ -32,14 +33,14 @@ ms.locfileid: "61163970"
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
 
-[受控文件夹](controlled-folders.md) 访问权限是一项有助于保护文档和文件免受可疑或恶意应用修改的功能。 受控文件夹访问权限在 Windows Server 2019、Windows Server 2022、Windows 10 和 windows 11 客户端上受支持。
+[受控文件夹](controlled-folders.md) 访问权限是一项有助于保护文档和文件免受可疑或恶意应用修改的功能。 受控文件夹访问权限在 Windows Server 2019、Windows Server 2022、Windows 10 和 Windows 11 客户端上受支持。
 
 它尤其有助于防范尝试加密文件并[](https://www.microsoft.com/wdsi/threats/ransomware)阻止其成为勒索软件。
 
 本文帮助你评估受控文件夹访问权限。 它介绍了如何启用审核模式，以便可以直接在组织中测试该功能。
 
 > [!TIP]
-> 还可以访问 Microsoft Defender for Endpoint 演示方案[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)网站，demo.wd.microsoft.com 以确认功能是否正常工作并查看其工作方式。
+> 还可以访问 Microsoft Defender for Endpoint 演示方案网站，demo.wd.microsoft.com 确认功能[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)是否正常工作并查看其工作方式。
 
 ## <a name="use-audit-mode-to-measure-impact"></a>使用审核模式衡量影响
 
@@ -52,12 +53,12 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 ```
 
 > [!TIP]
-> 如果你想要完全审核受控文件夹访问权限在组织中如何工作，则需要使用管理工具将此设置部署到网络中设备 () 。
+> 如果你想要完全审核受控文件夹访问权限在组织中如何工作，则需要使用管理工具将此设置部署到网络中 (设备) 。
 您还可以使用组策略、Intune、移动设备管理 (MDM) 或 Microsoft Endpoint Manager 配置和部署设置，如主要的受控文件夹[访问权限主题中所述](controlled-folders.md)。
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在事件查看器中查看受控文件夹Windows事件
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在事件查看器中查看受控Windows访问事件
 
-以下受控文件夹访问权限事件显示在 Microsoft/Windows/Windows/Windows Defender/Operational 文件夹下的事件查看器中。
+以下受控文件夹访问权限事件显示在 microsoft/Windows/Windows/Windows Defender/Operational 文件夹下的事件查看器中。
 
 事件 ID | 描述
 -|-
@@ -66,7 +67,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
  1123 | 阻止的受控文件夹访问事件
 
 > [!TIP]
-> 你可以配置Windows[转发订阅](/windows/win32/wec/setting-up-a-source-initiated-subscription)以集中收集日志。 
+> 你可以配置一Windows[事件转发订阅](/windows/win32/wec/setting-up-a-source-initiated-subscription)以集中收集日志。 
 
 ## <a name="customize-protected-folders-and-apps"></a>自定义受保护的文件夹和应用
 

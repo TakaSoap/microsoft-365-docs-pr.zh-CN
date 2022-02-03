@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f5f737709591c266515909eeca35bad30a52c21
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 24158e4a9da9ce48382f08b6dbe701c5640972d4
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281479"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321311"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>面向美国政府客户的Microsoft Defender for Endpoint
 
@@ -48,7 +48,7 @@ Microsoft Defender for Endpoint for US Government 客户需要以下 Microsoft �
 
 |GCC|GCC 高|DoD|
 |---|---|---|
-|Microsoft 365 GCC G5|Microsoft 365 E5高GCC|Microsoft 365 DOD 的 G5|
+|Microsoft 365 GCC G5|Microsoft 365 E5高GCC|Microsoft 365 G5 for DOD|
 |Microsoft 365 G5 安全GCC|Microsoft 365高GCC G5 安全性|Microsoft 365 DOD 的 G5 安全性|
 |Microsoft Defender for Endpoint - GCC|Microsoft Defender for Endpoint for GCC High|Microsoft Defender for Endpoint for DOD|
 |Windows 10 企业版 E5 GCC|Windows 10 企业版 E5 for GCC High|Windows 10 企业版 E5 for DOD|
@@ -97,10 +97,10 @@ OS 版本|GCC|GCC 高|DoD
 :---|:---:|:---:|:---:
 Windows 11|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10版本 21H1 及以上版本|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10 20H2 版本 20H2 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10，版本 20H2 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10 2004 版本 2004 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10版本 1909 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10 1903 版本 1903 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10版本 1903 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10 版本 1809 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10版本 1803 ([KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10，版本 1709|![不正确。](images/svg/check-no.svg) <br /> 注意：将不受支持|![是](images/svg/check-yes.svg) ，包含 [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> 注意： [已弃用](/lifecycle/announcements/revised-end-of-service-windows-10-1709)，请升级|![否](images/svg/check-no.svg) <br /> 注意：将不受支持
@@ -109,9 +109,9 @@ Windows Server 2022|![是。](images/svg/check-yes.svg)|![是](images/svg/check-
 Windows Server 2019 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows Server 2016 (新式) <sup>2</sup>|![是。](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版
 Windows Server 2012 R2 (新式) <sup>2</sup>|![是。](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版
-Windows Server 2016 (旧版) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows Server 2016 (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows Server 2012 R2 (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows Server 2008 R2 SP1 (<sup>3) 3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 (旧版 <sup>) 3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 8.1 企业版 (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 8 专业版 (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
@@ -127,7 +127,7 @@ iOS|![不正确。](images/svg/check-no.svg) 开发中|![否](images/svg/check-n
 >
 > <sup>2</sup> 了解适用于 [Windows 2016 和 2012 R2 的统](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview)一新式解决方案。 如果之前已使用 MMA 载入服务器，请按照服务器迁移中提供的指南迁移到新[](server-migration.md)解决方案。
 >
-> <sup>3</sup> 使用 [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)如果使用安装向导，或者使用命令行或脚本，则需要在"Azure 云"下选择"Azure 美国政府版"- [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)将"OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE"参数设置为 1[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)。[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) <br /> 支持的最低 MMA 版本是 2020 年 3 月 20 (10.20.18029) 。
+> <sup>3</sup> 使用 [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)如果使用安装向导，或者使用命令行或脚本，则需要在"Azure 云"下选择"Azure 美国政府版"- [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)将"OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE"参数设置为 1[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)。[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) <br /> 最低 MMA 支持版本是 2020 年 3 月 20 (10.20.18029) 。
 
 ### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>将 Microsoft Defender 用于服务器时的操作系统版本
 
@@ -152,9 +152,9 @@ Windows Server 2008 R2 SP1|![是。](images/svg/check-yes.svg)|![是](images/svg
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 验证没有拒绝访问这些 URL 的防火墙或网络筛选规则，或专门为它们创建允许规则。
 
-域列表的电子表格|说明
-:-----|:-----
-![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图。](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+|域列表的电子表格| 说明|
+|---|---|
+| Gov/GCC/DoD 客户的 Microsoft Defender 终结点 URL 列表 | Gov/GCC/DoD 客户的服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 有关详细信息，请参阅配置 [设备代理和 Internet 连接设置](configure-proxy-internet.md)。
 
@@ -171,7 +171,7 @@ Windows Server 2008 R2 SP1|![是。](images/svg/check-yes.svg)|![是](images/svg
 
 ****
 
-|终结点类型|GCC|GCC High & DoD|
+|终结点类型|GCC|GCC高& DoD|
 |---|---|---|
 |登录|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
 |Defender for Endpoint API|`https://api-gcc.securitycenter.microsoft.us`|`https://api-gov.securitycenter.microsoft.us`|

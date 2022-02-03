@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 48788a50fc9794265103d838b4c8bbfb50d264ab
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 13ec18a89080793637db2ee3dabbb992778ad4dc
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302454"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320759"
 ---
 # <a name="run-antivirus-scan-api"></a>运行防病毒扫描 API
 
@@ -49,7 +49,7 @@ ms.locfileid: "61302454"
 > [!IMPORTANT]
 >
 > - 此操作适用于 Windows 10 版本 1709 或更高版本以及 Windows 11。
-> - Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，Microsoft Defender 防病毒是活动的防病毒解决方案。 Microsoft Defender 防病毒处于被动模式。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
+> - Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，Microsoft Defender 防病毒是活动的防病毒解决方案。 Microsoft Defender 防病毒处于被动模式。 有关详细信息，请参阅Microsoft Defender 防病毒[兼容性](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide)。
 
 ## <a name="permissions"></a>权限
 
@@ -76,7 +76,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 必需。
+Authorization|String|Bearer {token}。 **必需**。
 Content-Type|string|application/json
 
 ## <a name="request-body"></a>请求正文
@@ -85,8 +85,8 @@ Content-Type|string|application/json
 
 参数|类型|说明
 :---|:---|:---
-评论|字符串|要与操作关联的注释。 必需。
-ScanType|String|定义扫描的类型。 必需。
+评论|字符串|要与操作关联的注释。 **必需**。
+ScanType|String|定义扫描的类型。 **必需**。
 
 **ScanType** 控制要执行扫描的类型，可以是下列类型之一：
 

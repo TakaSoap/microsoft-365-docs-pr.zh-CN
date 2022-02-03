@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 28ab23e46c951cd0b8bcf357f2420c0ea0804abb
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 8b7b4ca9f93811f3a1e3e036b4cee620ae639e95
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213961"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322127"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -37,7 +37,7 @@ ms.locfileid: "62213961"
 本主题介绍如何在 Linux 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Linux 上运行其他第三方终结点保护产品以及 Microsoft Defender for Endpoint 可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Linux EDR 上的 Defender for Endpoint[功能](linux-preferences.md#enforcement-level-for-antivirus-engine)。
+> 在 Linux 上运行其他第三方终结点保护产品以及 Microsoft Defender for Endpoint 可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Linux EDR 上的 Defender for Endpoint [功能](linux-preferences.md#enforcement-level-for-antivirus-engine)。
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安装 Microsoft Defender for Endpoint
 
@@ -46,7 +46,7 @@ ms.locfileid: "62213961"
 - 访问 Microsoft 365 Defender 门户
 - 使用系统系统 [管理器的](https://systemd.io/) Linux 分发
 - Linux 和 BASH 脚本的初学者级体验
-- 手动部署时，设备上 (管理权限) 
+- 手动部署时， (管理权限) 
 
 > [!NOTE]
 > Linux 代理上的 Microsoft Defender for Endpoint 独立于 [OMS 代理](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint 依赖于自己的独立遥测管道。
@@ -58,7 +58,7 @@ ms.locfileid: "62213961"
 
 通常，您需要执行以下步骤：
 
-- 确保你拥有适用于终结点的 Microsoft Defender 订阅，并且你有权访问 [适用于终结点](microsoft-defender-security-center.md)的 Microsoft Defender 门户。
+- 确保你拥有适用于终结点的 Microsoft Defender 订阅，并且有权访问 [Microsoft Defender for Endpoint 门户](microsoft-defender-security-center.md)。
 - 使用下列部署方法之一在 Linux 上部署 Microsoft Defender for Endpoint：
   - 命令行工具：
     - [手动部署](linux-install-manually.md)
@@ -67,7 +67,7 @@ ms.locfileid: "62213961"
     - [使用可配置管理工具进行部署](linux-install-with-ansible.md)
     - [使用部署配置管理工具进行部署](linux-deploy-defender-for-endpoint-with-chef.md)
 
-如果遇到任何安装失败，请参阅 Linux 上的 Microsoft Defender for Endpoint 中的安装 [失败疑难解答](linux-support-install.md)。
+如果遇到任何安装失败，请参阅 Linux 上的 [Microsoft Defender for Endpoint 中的安装失败疑难解答](linux-support-install.md)。
 
 > [!NOTE]
 > 不支持在默认安装路径外的其他任何其他位置安装 Microsoft Defender for Endpoint。 
@@ -89,7 +89,7 @@ ms.locfileid: "62213961"
   - Fedora 33 或更高版本
 
     > [!NOTE]
-    > 未明确列出的分发和版本不受支持 (即使它们派生自官方支持的分发) 。
+    > 未明确列出的分发和版本不受支持 (即使它们派生自正式支持的分发) 。
 
 - 支持的内核版本列表
   - Red Hat Enterprise Linux 6 和 CentOS 6：
@@ -114,16 +114,16 @@ ms.locfileid: "62213961"
   - 对于其余受支持的分发，所需的最低内核版本为 3.10.0-327
 
 - 事件提供程序机制
-  - Red Hat Enterprise Linux 6 和 CentOS `Talpa` 6：基于内核模块的解决方案
+  - Red Hat Enterprise Linux 6 和 CentOS 6：`Talpa`基于内核模块的解决方案
   - 对于其余受支持的分发： `Fanotify`
-    - `fanotify`必须启用内核选项
+    - 必须 `fanotify` 启用内核选项
 
       > [!CAUTION]
-      > 不支持在 Linux 上并行运行 Defender for Endpoint 和基于 `fanotify` 其他的安全解决方案。 它可能会导致不可预知的结果，包括挂起操作系统。
+      > 不支持在 Linux 上并行运行 Defender for Endpoint 和基于 `fanotify`其他的安全解决方案。 它可能会导致不可预知的结果，包括挂起操作系统。
 
 - 磁盘空间：1 GB
 
-- /opt/microsoft/mdatp/sbin/wdavdaemon 需要可执行权限。 有关详细信息，请参阅在 Linux 上解决 Microsoft Defender for Endpoint 的安装问题中的"确保守护程序具有[可执行权限"。](/microsoft-365/security/defender-endpoint/linux-support-install)
+- /opt/microsoft/mdatp/sbin/wdavdaemon 需要可执行权限。 有关详细信息，请参阅在 Linux 上解决 [Microsoft Defender for Endpoint 的](/microsoft-365/security/defender-endpoint/linux-support-install)安装问题中的"确保守护程序具有可执行权限"。
 
 - 核心：最少 2 个，首选 4 个
 
@@ -153,10 +153,10 @@ ms.locfileid: "62213961"
 
 启用该服务后，可能需要配置网络或防火墙以允许其与终结点之间的出站连接。
 
-- 必须 `auditd` () 审核框架。
+- 必须 (`auditd`) 审核框架。
 
   > [!NOTE]
-  > 通过添加到 的规则捕获的系统事件将添加到 (，) 并可能影响主机 `/etc/audit/rules.d/` `audit.log` 审核和上游集合。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
+  > 通过添加到 的规则捕获 `/etc/audit/rules.d/` `audit.log` 的系统事件将添加到 (，) 并可能影响主机审核和上游收集。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
 
 ### <a name="configuring-exclusions"></a>配置排除项
 
@@ -170,10 +170,13 @@ ms.locfileid: "62213961"
 
 ****
 
-|域列表的电子表格|说明|
+
+|域列表的电子表格| 说明|
 |---|---|
-|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图。](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> 在此处下载 [电子表格](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)。|
-|||
+|适用于商业客户的 Microsoft Defender 终结点 URL 列表 | 服务位置、地理位置和商业客户操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Gov/GCC/DoD 客户的 Microsoft Defender 终结点 URL 列表| Gov/GCC/DoD 客户的服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|
+
 
 > [!NOTE]
 > 有关更具体的 URL 列表，请参阅 [配置代理和 Internet 连接设置](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
@@ -183,18 +186,18 @@ Defender for Endpoint 可以使用以下发现方法发现代理服务器：
 - 透明代理
 - 手动静态代理配置
 
-如果代理或防火墙阻止匿名流量，请确保前面列出的 URL 中允许匿名流量。 对于透明代理，不需要对 Defender for Endpoint 进行其他配置。 对于静态代理，请按照手动静态代理 [配置 中的步骤操作](linux-static-proxy-configuration.md)。
+如果代理或防火墙阻止匿名流量，请确保前面列出的 URL 中允许匿名流量。 对于透明代理，不需要对 Defender for Endpoint 进行其他配置。 对于静态代理，请按照手动静态代理 [配置中的步骤操作](linux-static-proxy-configuration.md)。
 
 > [!WARNING]
 > 不支持 PAC、WPAD 和经过身份验证的代理。 确保仅使用静态代理或透明代理。
 >
 > 出于安全考虑，也不支持 SSL 检查和截获代理。 为 SSL 检查和代理服务器配置例外，以直接将数据从 Linux 上的 Defender for Endpoint 传递到相关 URL，而不会拦截。 将拦截证书添加到全局存储将不允许拦截。
 
-有关疑难解答步骤，请参阅在 Linux 上解决 [Microsoft Defender for Endpoint 的云连接问题](linux-support-connectivity.md)。
+有关疑难解答步骤，请参阅 [在 Linux 上解决 Microsoft Defender for Endpoint 的云连接问题](linux-support-connectivity.md)。
 
 ## <a name="how-to-update-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上更新 Microsoft Defender for Endpoint
 
-Microsoft 会定期发布软件更新，以提高性能、安全性和提供新功能。 若要在 Linux 上更新 Microsoft Defender for Endpoint，请参阅在 Linux 上部署 [Microsoft Defender for Endpoint 的更新](linux-updates.md)。
+Microsoft 会定期发布软件更新，以提高性能、安全性和提供新功能。 若要在 Linux 上更新 Microsoft Defender for Endpoint，请参阅 [在 Linux 上部署 Microsoft Defender for Endpoint 的更新](linux-updates.md)。
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>如何配置 Linux 版 Microsoft Defender for Endpoint
 

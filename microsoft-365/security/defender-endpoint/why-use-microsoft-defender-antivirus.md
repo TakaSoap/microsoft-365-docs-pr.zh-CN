@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0e2103bbb26d84ef941efbd9aaf119c64d74c6d3
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f5bfbc8f2b4b5e6a7794424f248de46c501bbfb5
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164678"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322151"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-microsoft-defender-for-endpoint"></a>更好地结合：Microsoft Defender 防病毒软件和 Microsoft Defender for Endpoint
 
@@ -32,25 +32,25 @@ ms.locfileid: "61164678"
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender 防病毒是[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)的下一代保护组件 (Microsoft Defender for Endpoint) 。
+Microsoft Defender 防病毒是 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) 的下一代保护组件 (Microsoft Defender for Endpoint) 。
 
-尽管你可以将非 Microsoft 防病毒解决方案与 Microsoft Defender for Endpoint 一同使用，但将 Microsoft Defender 防病毒与 Defender for Endpoint 一同使用具有优势。 不仅Microsoft Defender 防病毒下一代防病毒解决方案，而且与其他 Defender for Endpoint 功能（如终结点检测和响应以及自动调查和修正[](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)）相结合，可以更好地[](/microsoft-365/security/defender-endpoint/automated-investigations)跨产品和服务进行保护。
+尽管你可以将非 Microsoft 防病毒解决方案与 Microsoft Defender for Endpoint 一同使用，但将 Microsoft Defender 防病毒与 Defender for Endpoint 一起使用具有优势。 不仅Microsoft Defender 防病毒下一代防病毒解决方案，而且与其他 Defender for Endpoint 功能（如终结点检测和响应以及自动调查和修正）相结合，您可以获得[](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)跨产品和服务协调的更佳[](/microsoft-365/security/defender-endpoint/automated-investigations)保护。
 
-## <a name="11-reasons-to-use-microsoft-defender-antivirus-together-with-microsoft-defender-for-endpoint"></a>使用 Microsoft Defender for Endpoint Microsoft Defender 防病毒 11 个原因
+## <a name="11-reasons-to-use-microsoft-defender-antivirus-together-with-microsoft-defender-for-endpoint"></a>将 Microsoft Defender 防病毒与 Microsoft Defender for Endpoint 一同使用的 11 个原因
 
 |#|优点|重要原因|
 |--|--|--|
-|1|防病毒信号共享|Microsoft 应用程序和服务在整个企业组织中共享信号，从而提供更强大的单个平台。 请参阅[Insights MICROSOFT Defender for Endpoint 的基于 CK&的 MITRE ATT 评估。](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)|
-|2|威胁分析和你的设备分数|Microsoft Defender 防病毒威胁分析和 Microsoft 设备安全分数使用的基础[](/microsoft-365/security/defender-endpoint/threat-analytics)[系统数据](/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices)。 这将为组织的安全团队提供更有意义的信息，例如建议和改进组织安全状况的机会。|
-|3|性能|Microsoft Defender for Endpoint 旨在与 Microsoft Defender 防病毒 一起使用，因此在一同使用这些产品/服务时可提高性能。 [评估Microsoft Defender 防病毒](evaluate-microsoft-defender-antivirus.md)和 Microsoft [Defender for Endpoint](/microsoft-365/security/defender-endpoint/evaluate-mde)。|
+|1|防病毒信号共享|Microsoft 应用程序和服务在整个企业组织中共享信号，从而提供更强大的单个平台。 请参阅[Insights MICROSOFT Defender for Endpoint 的基于 CK&MITRE ATT 评估。](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)|
+|2|威胁分析和你的设备分数|Microsoft Defender 防病毒威胁分析和 Microsoft 设备安全分数使用的基础[系统数据](/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices)。[](/microsoft-365/security/defender-endpoint/threat-analytics) 这将为组织的安全团队提供更有意义的信息，例如建议和改进组织安全状况的机会。|
+|3|性能|Microsoft Defender for Endpoint 旨在与 Microsoft Defender 防病毒，因此在一起使用这些产品/服务时可提高性能。 [评估Microsoft Defender 防病毒](evaluate-microsoft-defender-antivirus.md)[和 Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/evaluate-mde)。|
 |4|有关阻止的恶意软件的详细信息|有关阻止恶意软件的更多详细信息和操作，请参阅 Microsoft Defender 防病毒 和 Microsoft Defender for Endpoint。 [了解恶意软件&其他威胁](/windows/security/threat-protection/intelligence/understanding-malware)。|
-|5|网络保护|组织的安全团队可以通过阻止特定 URL 和 IP 地址来保护网络。 [保护你的网络](/microsoft-365/security/defender-endpoint/network-protection)。|
-|6 |文件阻止|组织的安全团队可以阻止特定文件。 [在网络中停止和隔离文件](/microsoft-365/security/defender-endpoint/respond-file-alerts#stop-and-quarantine-files-in-your-network)。|
-|7 |攻击面减少|组织的安全团队可以减少攻击面 (漏洞，) 攻击的方法更少。 攻击面减少针对许多规则使用云保护。 [获取攻击面减少的概述](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)。|
-|8 |审核事件|终结点检测和响应功能 中提供 [审核事件信号](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)。  (这些信号不适用于非 Microsoft 防病毒解决方案。) |
+|5|网络保护|组织的安全团队可以通过阻止特定 URL 和 IP 地址来保护网络。 [保护网络](/microsoft-365/security/defender-endpoint/network-protection)。|
+|6 |文件阻止|组织的安全团队可以阻止特定文件。 [停止和隔离网络中文件](/microsoft-365/security/defender-endpoint/respond-file-alerts#stop-and-quarantine-files-in-your-network)。|
+|7 |攻击面减少|组织的安全团队可以减少攻击面 (漏洞，) 攻击的方法更少。 攻击面减少针对许多规则使用云保护。 [大致了解攻击面减少](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)。|
+|8 |审核事件|终结点检测和响应功能中 [提供审核事件信号](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)。  (这些信号不适用于非 Microsoft 防病毒解决方案。) |
 |9 |地理数据|符合 ISO 270001和数据保留，地理数据根据组织的所选地理地区提供。 请参阅 [合规性产品/服务：ISO/IEC 27001：2013 信息安全管理标准](/microsoft-365/compliance/offering-iso-27001)。|
-|10 |通过文件恢复OneDrive|如果你将 Microsoft Defender 防病毒与 Office 365[一起](/Office365/Enterprise)使用，并且你的设备受到勒索软件的攻击，你的文件将受到保护且可恢复。 [OneDrive文件还原和Windows Defender进一步采取勒索软件保护](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001)。|
-|11|技术支持|通过一起使用 Microsoft Defender for Endpoint Microsoft Defender 防病毒，你可以让一家公司联系技术支持人员。 [解决服务问题](/microsoft-365/security/defender-endpoint/troubleshoot-mde)[，并检查事件日志和错误代码Microsoft Defender 防病毒。](troubleshoot-microsoft-defender-antivirus.md)|
+|10 |通过文件恢复OneDrive|如果你将 Microsoft Defender 防病毒与 Office 365 一起使用，[](/Office365/Enterprise)并且你的设备受到勒索软件的攻击，你的文件将受到保护且可恢复。 [OneDrive文件还原和Windows Defender进一步执行勒索软件保护](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001)。|
+|11|技术支持|通过一起使用 Microsoft Defender for Endpoint Microsoft Defender 防病毒，你可以让一家公司联系技术支持人员。 [解决服务问题](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-mdatp)[，并查看事件日志和错误代码Microsoft Defender 防病毒](troubleshoot-microsoft-defender-antivirus.md)。|
 
 ## <a name="learn-more"></a>了解详细信息
 

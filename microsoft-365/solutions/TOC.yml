@@ -374,6 +374,12 @@
           href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
         - name: 使用 Teams 支持远程政府工作者
           href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
+    - name: 零售版
+      items:
+        - name: 概述
+          href: retail-overview.md
+        - name: 适用于零售业的 Teams
+          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page
 - name: 企业体系结构设计原则
   items:
     - name: 概述
