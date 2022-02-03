@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: 81a5219826fc1f8e4bc43a54d0687306738a57da
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 6709f56778865e8474a580c91d01d67512631e1d
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520928"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321923"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -53,9 +53,6 @@ ms.locfileid: "61520928"
 
 ### <a name="configuration-information-for-adaptive-scopes"></a>自适应作用域的配置信息
 
-> [!NOTE]
-> 作为新功能的自适应作用域目前处于预览状态，可能会发生更改。 可选选项为静态作用域，其在引入自适应作用域之前提供相同行为，如果自适应作用域不符合商业需求，则可以使用该选项。
-
 当选择使用自适应作用域时，会提示选择想要的自适应作用域类型。 有三种不同类型的自适应作用域，且每个作用域都支持不同的特性或属性:
 
 | 自适应作用域类型 | 支持的属性包括 |
@@ -72,7 +69,9 @@ ms.locfileid: "61520928"
 配置自适应作用域时，可以通过使用简单查询生成器轻松指定表中列出的属性。 高级查询生成器将支持其他属性，如下一节所述。
 
 > [!TIP]
-> 有关使用高级查询生成器的其他信息，请参阅以下网络研讨会：[使用自适应策略作用域为用户和组生成高级查询](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
+> 有关使用高级查询生成器的其他信息，请参阅以下网络研讨会： 
+> - [使用自适应策略范围为用户和组生成高级查询](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
+> - [使用自适应策略为 SharePoint 网站生成高级查询](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
 
 保留的单个策略可以具有一个或多个自适应作用域。
 
@@ -82,10 +81,10 @@ ms.locfileid: "61520928"
 
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
     
-    - 如果你正在使用记录管理：
+    - 如果使用的是记录管理解决方案：
         - **解决方案** > **记录管理** > **自适应作用域** 选项卡 > + **创建作用域**
         
-    - 如果你没有使用记录管理：
+    - 如果使用的是信息治理解决方案：
        - **解决方案** > **信息治理** > **自适应作用域** 选项卡 > + **创建作用域**
     
     没有立即在导航窗格中看到解决方案? 首先选择“**全部显示**”。 

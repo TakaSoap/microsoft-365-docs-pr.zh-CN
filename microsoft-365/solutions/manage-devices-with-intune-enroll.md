@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: b1f14944e89f94ab48e61103cdd7b9d78a3bdfea
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: 5810513cd3aa4fccd8ce0100f22c708c53527c42
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049223"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321635"
 ---
 # <a name="step-2-enroll-devices-into-management-with-intune"></a>步骤 2. 使用 Intune 将设备注册到管理
 
@@ -33,7 +33,7 @@ ms.locfileid: "62049223"
 
 设备注册流程会在用户、设备和 Microsoft Intune 服务之间建立关系。 将 Microsoft Intune 用作独立服务便于使用单个基于 Web 的管理控制台以管理 Windows 电脑、macOS 和最热门的移动设备平台。
 
-本文推荐了使用 Intune 将设备注册到管理的方法。 有关这些方法以及如何部署每个方法的详细信息，请参阅 [部署指南: 在 Microsoft Intune 中注册设备](/microsoft-365/security/defender/eval-overview)。
+本文推荐了使用 Intune 将设备注册到管理的方法。 有关这些方法以及如何部署每个方法的详细信息，请参阅 [部署指南: 在 Microsoft Intune 中注册设备](/mem/intune/fundamentals/deployment-guide-enrollment)。
 
 ![管理设备的步骤](../media/devices/intune-mdm-steps-1.png#lightbox)
 
@@ -45,7 +45,7 @@ ms.locfileid: "62049223"
 
 有关其他选项（包括注册 BYOD Windows 设备），请参阅 [在 Microsoft Intune 中注册 Windows 设备](/mem/intune/fundamentals/deployment-guide-enrollment-windows)。
 
-## <a name="iosipados-and-ipados-enrollment"></a>iOS/iPadOS 和 iPadOS 注册
+## <a name="ios-and-ipados-enrollment"></a>iOS 和 iPadOS 注册
 
 对于用户所有的(BYOD)设备，可以允许用户使用以下其中一种方法注册其个人设备以进行 Intune 管理。
 - 设备注册是你可能认为的典型 BYOD 注册。 它为管理员提供各种管理选项。
