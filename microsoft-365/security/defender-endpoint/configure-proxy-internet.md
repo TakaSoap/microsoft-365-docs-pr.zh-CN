@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b218ab83e5d348ef458d791bb573389ab4bf6096
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: db6d7f17231fd8c2355f36310609af1e8d88160c
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326965"
+ms.locfileid: "62345983"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -39,7 +39,7 @@ Defender for Endpoint 传感器需要 Microsoft Windows HTTP (WinHTTP) 报告传
 > [!TIP]
 > 对于将转发代理用作 Internet 网关的组织，可以使用网络保护来调查在转发代理之后 [发生的连接事件](investigate-behind-proxy.md)。
 
-WinHTTP 配置设置独立于 Windows Internet (WinINet) 浏览代理 (请参阅 [WinINet 与 WinHTTP](/windows/win32/wininet/wininet-vs-winhttp)) 。 它只能使用下列发现方法发现代理服务器：
+WinHTTP 配置设置独立于 Windows Internet (WinINet) 浏览代理 (，请参阅 [WinINet 与 WinHTTP](/windows/win32/wininet/wininet-vs-winhttp)) 。 它只能使用下列发现方法发现代理服务器：
 
 - 自动发现方法：
 
@@ -64,7 +64,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) 浏览代理 (请参阅
 为 Defender 的 Endpoint Detection and Response (EDR) 配置基于注册表的静态代理，以报告诊断数据。 此外，如果不允许计算机连接到 Internet，则与 Defender for Endpoint 服务通信。
 
 > [!NOTE]
-> 在 Windows 10、Windows 11、Windows Server 2019 或 Windows Server 2022 上使用此选项时，建议具有以下 (或更高版本的) 内部版本和累积更新汇总：
+> 在 Windows 10、Windows 11、Windows Server 2019 或 Windows Server 2022 上使用此选项时，建议将以下 (或更高版本的) 内部版本和累积更新汇总：
 >
 > - Windows 11
 > - Windows 10 版本 1809或 Windows Server 2019 或 Windows Server 2022 -<https://support.microsoft.com/kb/5001384>
@@ -72,17 +72,17 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) 浏览代理 (请参阅
 > - Windows 10，版本 2004 -<https://support.microsoft.com/kb/4601382>
 > - Windows 10，版本 20H2 -<https://support.microsoft.com/kb/4601382>
 >
-> 这些更新改进了 CnC 命令与控制 (通道的连接) 可靠性。
+> 这些更新改进了 CnC (Command and Control) 通道的连接和可靠性。
 
-静态代理可以通过组策略 (GP) ，组策略值下的两个设置都应配置为代理服务器以使用 EDR。 组策略在管理模板中可用。
+静态代理可以通过组策略 (GP) 配置，组策略值下的两个设置都应配置为代理服务器以使用 EDR。 组策略在管理模板中可用。
 
-- **管理模板> Windows数据收集**>预览版中的组件>连接用户体验和遥测服务配置经过身份验证的代理用法。
+- **管理模板> Windows数据收集**>预览版中的组件>配置连接的用户体验和遥测服务的已验证代理使用情况。
 
   将其设置为" **已启用"，** 然后选择 **"禁用经过身份验证的代理用法"**。
 
   ![组策略设置 1 的图像。](images/atp-gpo-proxy1.png)
 
-- **配置连接> Windows遥测>数据收集** 和预览>管理模板：
+- **配置连接> Windows遥测>数据收集** 和预览>中的管理模板：
 
   配置代理。
 
@@ -92,11 +92,11 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) 浏览代理 (请参阅
 | 组策略 | 注册表项 | 注册表项 | 值 |
 |:---|:---|:---|:---|
 | 为连接的用户体验和遥测服务配置经过身份验证的代理使用情况 | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD)  |
-| 配置连接用户体验和遥测 | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> 例如： ```10.0.0.6:8080``` (REG_SZ)  |
+| 配置连接用户体验和遥测 | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> 例如： (REG_SZ) ```10.0.0.6:8080``` |
 
 ## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>为用户配置静态Microsoft Defender 防病毒
 
-Microsoft Defender 防病毒[云保护](cloud-protection-microsoft-defender-antivirus.md)功能可提供近乎即时的自动化保护，以抵御新的和新出现的威胁。 请注意，当 Defender 防病毒 [是活动的反](manage-indicators.md) 恶意软件解决方案时，自定义指示器需要连接。 例如[EDR非](edr-in-block-mode.md) Microsoft 解决方案时，阻止模式下的垃圾邮件具有主要的反恶意软件解决方案。
+Microsoft Defender 防病毒[云保护功能](cloud-protection-microsoft-defender-antivirus.md)可提供近乎即时的自动化保护，以抵御新的和新出现的威胁。 请注意，当 Defender 防病毒 [是活动的反](manage-indicators.md) 恶意软件解决方案时，自定义指示器需要连接。 例如[EDR非](edr-in-block-mode.md) Microsoft 解决方案时，阻止模式下的垃圾邮件具有主要的反恶意软件解决方案。
 
 使用管理模板中提供的组策略配置静态代理：
 
@@ -122,7 +122,7 @@ Microsoft Defender 防病毒[云保护](cloud-protection-microsoft-defender-anti
 >
 > Microsoft Defender 防病毒不会使用静态代理连接到 Windows Update 或 Microsoft Update 以下载更新。 相反，如果配置为使用 Windows Update，它将使用系统范围的代理，或根据配置的回退顺序配置的内部更新[源](manage-protection-updates-microsoft-defender-antivirus.md)。 
 >
-> 如果需要，可以使用管理模板 **> Windows组件> Microsoft Defender 防病毒 >定义代理自动配置 (.pac**) 以连接到网络。 如果需要设置具有多个代理的高级配置，请使用管理模板 **> Windows 组件 > Microsoft Defender 防病毒 > 定义** 地址以绕过代理服务器并防止 Microsoft Defender 防病毒 对目标使用代理服务器。 
+> 如果需要，可以使用管理 **模板> Windows组件> Microsoft Defender 防病毒 >定义代理自动配置 (.pac)** 以连接到网络。 如果需要设置具有多个代理的高级配置，请使用管理模板 **> Windows 组件 > Microsoft Defender 防病毒 >** 定义地址来绕过代理服务器并防止 Microsoft Defender 防病毒 对目标使用代理服务器。 
 >
 > 可以将 PowerShell 与 `Set-MpPreference` cmdlet 一起用于配置这些选项： 
 >
@@ -177,7 +177,7 @@ netsh winhttp reset proxy
 |域列表的电子表格| 说明|
 |---|---|
 |适用于商业客户的 Microsoft Defender 终结点 URL 列表| 服务位置、地理位置和商业客户操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Gov/GCC/DoD 的 Microsoft Defender for Endpoint URL 列表 | Gov/GCC/DoD 客户的服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+| Gov/GCC/DoD 客户的 Microsoft Defender 终结点 URL 列表 | Gov/GCC/DoD 客户的服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 如果代理或防火墙启用了 HTTPS 扫描（SSL 检查），则从 HTTPS 扫描中排除上表中列出的域。
 在防火墙中，打开地理位置列为 WW 的所有 URL。 对于地理位置列不是 WW 的行，打开特定数据位置的 URL。 若要验证数据位置设置，请参阅验证数据存储位置和更新 [Microsoft Defender for Endpoint 的数据保留设置](/microsoft-365/security/defender-endpoint/data-retention-settings)。
@@ -228,7 +228,7 @@ netsh winhttp reset proxy
 
     ![管理员在Windows PowerShell。](images/admin-powershell.png)
 
-. () .ods.opinsights.azure.com \* \*、 \*.oms.opinsights.azure.com 和 .agentsvc.azure-automation.net \*URL 终结点中使用的通配符可以替换为特定的工作区 ID。 工作区 ID 特定于您的环境和工作区。 可以在租户门户内的"载入"部分找到Microsoft 365 Defender部分。
+. () .ods.opinsights.azure.com \* \*\*、.oms.opinsights.azure.com 和 .agentsvc.azure-automation.net \*URL 终结点中使用的通配符可以替换为特定的工作区 ID。 工作区 ID 特定于您的环境和工作区。 可以在租户门户内的"载入"部分找到Microsoft 365 Defender部分。
 
 . \*blob.core.windows.net URL 终结点可以替换为测试结果的"防火墙规则： \*.blob.core.windows.net"部分中显示的 URL。
 

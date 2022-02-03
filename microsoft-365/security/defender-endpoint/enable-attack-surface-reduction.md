@@ -17,12 +17,12 @@ ms.topic: how-to
 ms.collection: m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 31b0b1c3d648a66c24b847a96a3f26b884ae4686
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 7607d5650c9a578b2c945d602d0ef3d0af0f7e88
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321443"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346527"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -38,13 +38,13 @@ ms.locfileid: "62321443"
 
 ## <a name="requirements"></a>要求
 
-跨版本的攻击面Windows功能
+跨多个版本的攻击Windows功能
 
-你可以为运行以下任一版本和版本的设备设置攻击面减少Windows：
+你可以为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
 
 - Windows 10 专业版版本 [1709](/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
 - Windows 10 企业版版本 [1709](/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
-- Windows Server 版本 [1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
+- Windows Server [版本 1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
@@ -56,7 +56,7 @@ ms.locfileid: "62321443"
 - [某些规则](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 要求 (云传递保护) 
 - Windows 10 企业版 E5 或 E3 许可证
 
-尽管攻击面减少规则不需要 [Windows E5](/windows/deployment/deploy-enterprise-licenses) 许可证，但使用 Windows E5 许可证，你可以获得高级管理功能，包括适用于终结点的 Defender 中提供的监视、分析和工作流，以及 Microsoft 365 Defender 门户中的报告和<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">配置</a>功能。 这些高级功能不适用于 E3 许可证，但你仍可以使用事件查看器查看攻击面减少规则事件。
+尽管攻击面减少规则不需要 [Windows E5](/windows/deployment/deploy-enterprise-licenses) 许可证，但使用 Windows E5 许可证，你可以获得高级管理功能，包括适用于终结点的 Defender 中提供的监视、分析和工作流，<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">以及 Microsoft 365 Defender</a> 门户中的报告和配置功能。 这些高级功能不适用于 E3 许可证，但你仍可以使用事件查看器查看攻击面减少规则事件。
 
 每个 ASR 规则包含四个设置之一：
 
@@ -158,21 +158,21 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
    - 在 **"** 名称"中，键入规则的名称。
    - 在 **"说明**"中，键入简要说明。
-   - 在 **OMA-URI** 中，键入或粘贴要添加的规则的特定 OMA-URI 链接。 有关要用于此示例规则的 OMA-URI，请参阅本文前面介绍的 MEM 部分。 有关攻击面减少规则 GUID [，请参阅主题](attack-surface-reduction-rules-reference.md#per-rule-descriptions) ：攻击面减少规则中的每个规则说明。
+   - 在 **OMA-URI** 中，键入或粘贴要添加的规则的特定 OMA-URI 链接。 有关要用于此示例规则的 OMA-URI，请参阅本文中的 MDM 部分。 有关攻击面减少规则 GUID [，请参阅主题](attack-surface-reduction-rules-reference.md#per-rule-descriptions) ：攻击面减少规则中的每个规则说明。
    - 在 **"数据类型"中**，选择" **字符串"**。
    - 在 **"值**"中，键入或粘贴 GUID 值 \= 、无空格的符号和 State (_GUID=StateValue_) 。 其中：
      
      - 0 ：禁用 (禁用 ASR 规则) 
      - 1：阻止 (启用 ASR 规则) 
-     - 2： 审核 (评估 ASR 规则在启用后对组织) 
-     - 6：警告 (启用 ASR 规则，但允许最终用户绕过阻止) 
+     - 2：审核 (评估 ASR 规则在启用后对组织) 
+     - 6： (启用 ASR 规则，但允许最终用户绕过阻止) 
 
    > [!div class="mx-imgBorder"]
    > ![MEM OMA URI 配置。](images/mem05-add-row-oma-uri.png)
 
 6. 选择 **“保存”**。 **添加行** 关闭。 在 **"自定义"** 中，选择"下一 **步"**。 在步骤 **3 范围标记中**，范围标记是可选的。 执行下列操作之一：
 
-   - 选择 **"选择范围标记**"，选择范围标记 (可选) ，然后选择"下一步 **"**。
+   - 选择 **"选择范围标记**"，选择范围 (可选) ，然后选择"下一步 **"**。
    - 或选择"下 **一步"**
 
 7. 在步骤 **4"** 分配"中的"包含的组"中，对于希望应用此规则的组，从以下选项中进行选择：
@@ -224,7 +224,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 - 0 ：禁用 (禁用 ASR 规则) 
 - 1：阻止 (启用 ASR 规则) 
-- 2： 审核 (评估 ASR 规则在启用后对组织) 
+- 2：审核 (评估 ASR 规则在启用后对组织) 
 - 6：警告 (启用 ASR 规则，但允许最终用户绕过阻止) 。 大多数 ASR 规则都提供警告模式。
 
 使用 [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) 配置服务提供程序 (CSP) 添加排除项。
@@ -261,13 +261,13 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-3. 展开树以 **Windows攻击Microsoft Defender 防病毒** \> **Microsoft Defender 攻击防护** \>  \> **的组件**。
+3. 展开树以 **Windows攻击Microsoft Defender 防病毒** \> **Microsoft Defender 攻击防护** \>  \> **攻击面的组件**。
 
 4. 选择 **配置攻击面减少规则，****然后选择已启用。** 然后，您可以为选项部分的每个规则设置单个状态。 选择 **"显示...**"，在"值名称"列中输入规则 ID，在"值"列中输入 **所选** 状态，如下所示：
 
    - 0 ：禁用 (禁用 ASR 规则) 
    - 1：阻止 (启用 ASR 规则) 
-   - 2： 审核 (评估 ASR 规则在启用后对组织) 
+   - 2：审核 (评估 ASR 规则在启用后对组织) 
    - 6：警告 (启用 ASR 规则，但允许最终用户绕过阻止) 
 
    :::image type="content" source="images/asr-rules-gp.png" alt-text="组策略中的 ASR 规则。":::

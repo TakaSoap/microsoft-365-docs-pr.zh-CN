@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint 门户概述
-description: Microsoft 365 Defender可以监视企业网络，并有助于响应潜在高级永久性威胁 (APT) 数据泄露。
+description: Microsoft 365 Defender可以监视企业网络，并协助响应潜在高级永久性威胁 (APT) 数据泄露。
 keywords: Microsoft 365 Defender， 门户， 网络安全威胁智能， 仪表板， 警报队列， 设备列表， 设置， 设备管理， 高级攻击
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 774d7df5a42fb84b4bb6a29bd2c1945059e33ea8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 40d6f8a2882f2d5b420f21000794cac129fb0984
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168135"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345605"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Microsoft 365 Defender 门户概述
 
@@ -46,21 +46,18 @@ Enterprise安全团队可以使用Microsoft 365 Defender监视和协助响应潜
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
-打开门户时，你将看到：
-
--  (1) 导航窗格 (选择导航窗格顶部的水平线以显示或隐藏它) 
--  (2) 搜索、Community 中心、本地化、帮助和支持、反馈
+打开门户时，你将看到导航窗格 (选择导航窗格顶部的水平线以显示或隐藏它) 。
 
  ![Microsoft Defender 终结点门户。](images/mdatp-portal-overview.png)
 
 > [!NOTE]
-> 仅在你的设备将恶意软件相关的检测Microsoft Defender 防病毒作为默认的反恶意软件实时保护产品。
+> 仅在你的设备将恶意软件相关的检测Microsoft Defender 防病毒作为默认的实时保护反恶意软件产品。
 
 可以使用所有部分中可用的菜单选项在门户中导航。 请参阅下表，了解每个部分的说明。
 
 领域|说明
 :---|:---
-**(1) 导航窗格** | 使用导航窗格在仪表板、事件、**设备** 列表、**警报** 队列、**自动** 调查、高级搜寻、**报告**、合作伙伴 &  **API、** 威胁 &**漏洞** 管理、评估和教程、**服务** 运行状况、配置管理和 设置之间 **移动**。 选择导航窗格顶部的水平线以显示或隐藏它。
+**(1) 导航窗格** | 使用导航窗格在仪表板、事件、设备列表、**警报** 队列、自动调查、高级搜寻、报告、合作伙伴 **& API**、**威胁 & 漏洞** 管理、评估和教程、**服务** 运行状况、配置管理和 **设置 之间移动**。  选择导航窗格顶部的水平线以显示或隐藏它。
 **仪表板** | 访问活动的自动调查、活动警报、自动调查统计信息、处于风险中的设备、处于风险中的用户、具有传感器问题的设备、服务运行状况、检测源和每日设备报告仪表板。
 **事件** | 查看已聚合为事件的警报。
 **设备列表** | 显示已载入 Defender for Endpoint 的设备列表、有关它们的一些信息及其曝光和风险级别。
@@ -74,11 +71,11 @@ Enterprise安全团队可以使用Microsoft 365 Defender监视和协助响应潜
 **服务运行状况** | 提供有关 Defender for Endpoint 服务的当前状态的信息。 你将能够验证服务运行状况是否正常或当前是否有问题。
 **配置管理** | 显示已上线设备、组织的安全基线、预测分析、Web 保护范围，并允许你在设备上执行攻击面管理。
 **设置** | 显示你在载入期间选择的设置，并允许你更新你的行业首选项和保留策略期。 还可以设置其他配置设置，如权限、API、规则、设备管理、IT 服务管理和网络评估。
-**(2) 搜索、Community 中心、本地化、帮助和支持、反馈** |  按设备、文件、用户、URL、IP、漏洞、软件和建议进行搜索。 搜索支持使用 SHA1 和 SHA256 加密哈希格式。 <p> **Community** 中心 - 访问Community中心，了解、协作和共享产品体验。 <p> **本地化** - 设置时区。 <p> **帮助和支持** - 访问适用于终结点的 Defender 指南、Microsoft 和 Microsoft Premier 支持、许可证信息、模拟 & 教程、适用于终结点的 Defender 评估实验室，请咨询威胁专家。 <p> **反馈** - 提供有关您喜欢或我们可以更好地执行哪些工作的评论。
+**(2) 搜索、Community中心、本地化、帮助和支持、反馈** |  按设备、文件、用户、URL、IP、漏洞、软件和建议进行搜索。 搜索支持使用 SHA1 和 SHA256 加密哈希格式。 <p> **Community中心** - 访问Community中心，了解、协作和共享产品体验。 <p> **本地化** - 设置时区。 <p> **帮助和支持** - 访问适用于终结点的 Defender 指南、Microsoft 和 Microsoft Premier 支持、许可证信息、模拟 & 教程、适用于终结点的 Defender 评估实验室、咨询威胁专家。 <p> **反馈** - 提供有关您喜欢或我们可以更好地执行哪些工作的评论。
 
 > [!NOTE]
 >
-> 对于具有高分辨率 DPI 缩放问题的设备，请参阅Windows DPI[设备的](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices)缩放问题，了解可能的解决方案。
+> 对于具有高分辨率 DPI 缩放问题的设备，请参阅Windows DPI [设备的](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices)缩放问题，了解可能的解决方案。
 
 ## <a name="microsoft-defender-for-endpoint-icons"></a>Microsoft Defender for Endpoint 图标
 

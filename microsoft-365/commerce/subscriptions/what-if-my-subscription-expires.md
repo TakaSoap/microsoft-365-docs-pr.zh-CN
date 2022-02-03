@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解 Microsoft 365 for Business 订阅到期、禁用或取消后对我的数据的影响。
 ms.date: 09/16/2021
-ms.openlocfilehash: 1b53b62d62a385ca8cad7367da342aa0b4184281
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0f31665c64ca3c8ffee50069b607d27ffbf48d20
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372656"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322562"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for Business 订阅结束后对我的数据和访问有何影响？
 
@@ -65,7 +65,7 @@ ms.locfileid: "61372656"
   
 - **管理员访问** 管理员仍然可以登录并访问管理中心，并根据需要购买其他订阅。 作为全局管理员或账务管理员，你有 90 天时间可以 [重新激活订阅](reactivate-your-subscription.md) 且保留所有数据完好无损。
 
-- **用户访问权限** 你的用户将无法使用 OneDrive for Business 等服务，也无法访问客户数据，例如，团队网站上的电子邮件或文档。 Office 应用程序，如 Word 和 Excel，最终将进入只读的减少功能模式，并显示 [未授权产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
+- **用户访问权限** 你的用户将无法使用 OneDrive for Business 等服务，也无法访问客户数据，例如，团队网站上的电子邮件或文档。 Office 应用程序，如 Word 和 Excel，最终将进入只读的减少功能模式，并显示 [未授权产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)。
 
 要了解如何取消，请参阅 [取消订阅](cancel-your-subscription.md)。
   
@@ -111,7 +111,7 @@ ms.locfileid: "61372656"
 
 **预期结果：** 如果在订阅过期时不重新激活，订阅将进入禁用阶段，在大多数国家和地区中，此阶段将持续 90 天。对于批量许可产品，禁用阶段将持续 30 天。
 
-在此状态下，访问量会大大降低。 用户无法登录，也无法访问电子邮件或 SharePoint Online 等服务。 Office 应用程序最终会进入只读的缩减功能模式，并显示 [未授权产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 你仍然可以登录并进入管理中心，但不能为用户分配许可证。 你的客户数据 (包括团队网站上的所有用户数据、电子邮件和文件) 都仅向你和其他管理员开放。
+在此状态下，访问量会大大降低。 用户无法登录，也无法访问电子邮件或 SharePoint Online 等服务。 Office 应用程序最终会进入只读的缩减功能模式，并显示 [未授权产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)。 你仍然可以登录并进入管理中心，但不能为用户分配许可证。 你的客户数据 (包括团队网站上的所有用户数据、电子邮件和文件) 都仅向你和其他管理员开放。
 
 作为全局管理员或帐务管理员，你可以 [重新激活订阅](reactivate-your-subscription.md) 并继续使用 Microsoft 365，而且在此期间你的所有客户数据保持不变。如果选择不重新激活，请务必 [备份数据](back-up-data-before-switching-plans.md)。
 

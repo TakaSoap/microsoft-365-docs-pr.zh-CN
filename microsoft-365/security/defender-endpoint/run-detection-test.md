@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec9aa659decd6815b00c9d80b2281fd8386bd082
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1cbef40696c7d2973a22ad9606c5fd99726329ae
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163190"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345959"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>在新载入的 Microsoft Defender 终结点设备上运行检测测试
 
@@ -54,7 +54,7 @@ ms.locfileid: "61163190"
 
    1. 转到“**开始**”并键入“**cmd**”。
 
-   1. 右键单击命令 **提示符** ，然后选择 **以管理员角色运行**。
+   1. 右键单击" **命令提示符"** ，然后选择 **"以管理员角色运行"**。
 
       ![指向"开始"菜单以管理员角色运行"的窗口。](images/run-as-admin.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "61163190"
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-命令提示符窗口将自动关闭。 如果成功，检测测试将标记为已完成，在大约 10 分钟内，新警报将显示在已载入设备的门户中。
+命令提示符窗口将自动关闭。 如果成功，新警报将在大约 10 分钟后显示在已载入设备的门户中。
 
 ## <a name="related-topics"></a>相关主题
 

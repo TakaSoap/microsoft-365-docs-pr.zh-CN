@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 6eb9dbcd0bd7b9724c2278f0006a0e6e1db61112
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ba2625f94411dbb00a7e56cde991957242fc2486
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196233"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345971"
 ---
 # <a name="step-1-create-a-test-base-account"></a>步骤 1：创建测试基础帐户
 
@@ -31,11 +31,11 @@ ms.locfileid: "60196233"
 
 ![创建测试基本帐户搜索图像。](Media/CreateTestAccount1.png)
 
-2. 单击 **"添加"** 以创建测试基础帐户。
+2. 单击 **"创建"** 以创建测试基础帐户。
 
 ![单击"添加"创建帐户。](Media/CreateTestAccount2.png)
 
-3.  阅读 ， ```Terms of Use``` 然后选中复选框以确认你对 的满意度 ```Terms of Use``` 。
+3.  阅读 ， ```Terms of Use``` 然后选中复选框以确认你对 的满意度 ```Terms of Use```。
 
 ![查看使用条款。](Media/CreateTestAccount3.png)
 
@@ -47,13 +47,13 @@ ms.locfileid: "60196233"
 
 ![选择订阅、资源组并键入详细信息。](Media/CreateTestAccount4.png)
 
-5.  最后，单击 ```Review + Create``` 以验证并启用新创建的帐户。
+5.  最后，单击以 ```Review + Create``` 验证并启用新创建的帐户。
 
 ## <a name="next-steps"></a>后续步骤
 
 前进到下一篇文章，开始使用步骤 2： **了解如何上传程序包。**
 > [!div class="nextstepaction"]
-> [下一步](uploadApplication.md)
+> [后续步骤](uploadApplication.md)
 
 <!---
 Add button for next page

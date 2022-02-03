@@ -10,20 +10,20 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 3ea75323b56941b47e8bf9826c0bfeeb7d8983f9
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 21d69770fb16ac40b25cd9ff4fefd5ccf5b2f0fb
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034793"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345935"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
-[Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software)是[组织的](https://support.microsoft.com/office/microsoft-teams-basics-6d5f52e6-5306-4096-ac24-c3082b79eaf0)消息传递应用，它还提供用于实时协作和通信、会议以及文件和应用共享的工作区。
+[Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software)是[一个](https://support.microsoft.com/office/microsoft-teams-basics-6d5f52e6-5306-4096-ac24-c3082b79eaf0)消息传递应用，它还提供用于实时协作和通信、会议以及文件和应用共享的工作区。
 
 ## <a name="initial-deployment"></a>初始部署
 
-大多数硬件供应商尚未将 Teams作为映像的一Microsoft 托管桌面，因此Teams使用 Microsoft Intune。 所有托管设备都Teams .msi程序包[](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works)，确保登录到设备的所有用户都Microsoft Teams可供使用。 程序包首次安装完成后，Teams自动启动，并将快捷方式添加到桌面。
+大多数硬件供应商尚未将 Teams作为映像的一部分。 Microsoft 托管桌面使用Teams将设备部署到Microsoft Intune。 所有托管设备都安装了[Teams .msi程序包](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works)。 此.msi包可确保登录到设备的所有用户都Microsoft Teams使用。 程序包首次安装完成后，Teams自动启动，并将快捷方式添加到桌面。
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune更改
 
@@ -34,14 +34,14 @@ Microsoft 托管桌面向组织添加两个Azure AD应用程序，Microsoft Team
 
 ## <a name="updates"></a>更新
 
-Teams一个单独的更新路径，Microsoft 365 企业应用版桌面客户端自身自动更新。 Teams每隔几小时检查一次更新，下载更新，然后等待计算机处于空闲状态，然后再以无提示方式安装更新。  
+Teams从一个单独的更新路径Microsoft 365 企业应用版。 桌面客户端会自动更新自身。 Teams每隔几个小时检查一次更新，下载更新，然后等待计算机处于空闲状态，然后再以无提示方式安装更新。  
 
-the Teams product group doesn't allow admins to control updates， so Microsoft 托管桌面 uses the [standard automatic update channel](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating).
+由于Teams组不允许管理员控制更新，Microsoft 托管桌面使用[标准自动更新通道](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating)。
 
 ### <a name="manually-updating-teams"></a>手动更新Teams
 
-单个用户还可以下载更新，具体操作是选择应用右上方的"配置文件"下拉菜单上的"检查    ****   更新"。 如果更新可用，它将在计算机空闲时下载并静默安装。
+单个用户还可以下载更新。 在应用右上方的"配置文件"下拉列表中，选择" **检查更新"**。 如果更新可用，它将在计算机空闲时下载并静默安装。
 
 ## <a name="delivery-optimization-of-updates"></a>更新的传递优化
 
-默认情况下，Teams更新的传递优化已打开，不需要管理员或用户的操作。
+默认情况下，Teams更新的传递优化是打开的，不需要管理员或用户的操作。

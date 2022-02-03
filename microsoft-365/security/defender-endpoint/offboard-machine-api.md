@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d1170b03d510bb0c79376d55c771311e10251c8
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 1279f7271abbd4086c946492e95daa52962dbae5
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302382"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345627"
 ---
 # <a name="offboard-machine-api"></a>载出计算机 API
 
@@ -73,12 +73,14 @@ ms.locfileid: "61302382"
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 ```
 
+当你选择设备时，可以在 URL 中找到计算机 ID。 通常，它是一个 40 个数字的字母数字，可以在 URL 中找到。
+
 ## <a name="request-headers"></a>请求标头
 
 名称|类型|说明
 ---|---|---
-Authorization|String|Bearer {token}。 必需。
-Content-Type|string|application/json. 必需。
+Authorization|String|Bearer {token}。 **必需**。
+Content-Type|string|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
 
@@ -86,7 +88,7 @@ Content-Type|string|application/json. 必需。
 
 参数|类型|说明
 ---|---|---
-评论|字符串|要与操作关联的注释。 必需。
+评论|字符串|要与操作关联的注释。 **必需**。
 
 ## <a name="response"></a>响应
 

@@ -1,53 +1,101 @@
-- name: 了解 Microsoft SharePoint Syntex
+- name: Microsoft SharePoint Syntex
+  href: index.md
+- name: 自定义模型
   items:
-    - name: SharePoint Syntex 简介
-      href: index.md
-    - name: 文档理解概述
-      href: document-understanding-overview.md
-    - name: 表单处理概述
-      href: form-processing-overview.md
-    - name: 文档理解与表单处理模型之间的差异
-      href: difference-between-document-understanding-and-form-processing-model.md
-- name: 模型入门
+    - name: 文档理解
+      items:
+        - name: 概述
+          href: document-understanding-overview.md
+        - name: 模型之间的差异
+          href: difference-between-document-understanding-and-form-processing-model.md
+        - name: 导入示例模型
+          href: learn-about-document-understanding-models-through-the-sample-model.md
+        - name: 创建内容中心
+          href: create-a-content-center.md
+        - name: 创建分类器
+          href: create-a-classifier.md
+        - name: 复制模型
+          href: duplicate-a-model.md
+        - name: 重命名模型
+          href: rename-a-model.md
+        - name: 创建提取程序
+          href: create-an-extractor.md
+        - name: 重命名提取器
+          href: rename-an-extractor.md
+        - name: 说明类型
+          href: explanation-types-overview.md
+        - name: 使用说明模板
+          href: explanation-templates.md
+        - name: 应用文档理解模型
+          href: apply-a-model.md
+        - name: 发布和发现模型
+          href: model-discovery.md
+        - name: 应用保留标签
+          href: apply-a-retention-label-to-a-model.md
+        - name: 应用敏感度标签
+          href: apply-a-sensitivity-label-to-a-model.md
+        - name: 模型使用情况分析
+          href: model-usage-analytics.md
+        - name: 创建提取器时利用术语库分类
+          href: leverage-term-store-taxonomy.md
+        - name: SharePoint 整合辅助功能模式
+          href: accessibility-mode.md
+    - name: 表单处理
+      items:
+        - name: 概述
+          href: form-processing-overview.md
+        - name: 模型之间的差异
+          href: difference-between-document-understanding-and-form-processing-model.md
+        - name: 创建表单处理模型
+          href: create-a-form-processing-model.md
+        - name: 应用保留标签
+          href: apply-a-retention-label-to-a-model.md
+        - name: 模型使用情况分析
+          href: model-usage-analytics.md
+- name: 预生成模型
   items:
-    - name: 导入示例文档理解模型
-      href: learn-about-document-understanding-models-through-the-sample-model.md
-    - name: 创建内容中心
-      href: create-a-content-center.md
-    - name: 创建分类器
-      href: create-a-classifier.md
-    - name: 复制模型
-      href: duplicate-a-model.md
-    - name: 重命名模型
-      href: rename-a-model.md
-    - name: 创建提取程序
-      href: create-an-extractor.md
-    - name: 重命名提取器
-      href: rename-an-extractor.md
-    - name: 说明类型
-      href: explanation-types-overview.md
-    - name: 使用说明模板
-      href: explanation-templates.md
-    - name: 应用文档理解模型
-      href: apply-a-model.md
-    - name: 创建表单处理模型
-      href: create-a-form-processing-model.md
-    - name: 使用内容程序集创建文档
-      href: content-assembly.md
-    - name: 发布和发现模型
-      href: model-discovery.md
+    - name: 发票和收据预生成模型
+      href: prebuilt-models.md
     - name: 应用保留标签
       href: apply-a-retention-label-to-a-model.md
-    - name: 应用敏感度标签
-      href: apply-a-sensitivity-label-to-a-model.md
-    - name: 在库中搜索元数据
+- name: 内容组装
+  items:
+    - name: 使用内容程序集创建文档
+      href: content-assembly.md
+- name: 元数据搜索
+  items:
+    - name: 在文档库中搜索元数据
       href: metadata-search.md
-    - name: 模型使用情况分析
-      href: model-usage-analytics.md
-    - name: 创建提取器时利用术语库分类
-      href: leverage-term-store-taxonomy.md
-    - name: SharePoint 整合辅助功能模式
-      href: accessibility-mode.md
+- name: 分类
+  items:
+    - name: 使用 SKOS 导入
+      href: import-term-set-skos.md
+    - name: SKOS 格式参考
+      href: skos-format-reference.md
+    - name: 将内容类型推送到中心
+      href: push-content-type-to-hub.md
+    - name: 术语库报告
+      href: term-store-analytics.md
+- name: 设置和管理
+  items:
+    - name: SharePoint Syntex 的许可
+      href: syntex-licensing.md
+    - name: 设置 SharePoint Syntex
+      href: set-up-content-understanding.md
+    - name: 创建内容中心
+      href: create-a-content-center.md
+    - name: 使用 PowerShell 管理 SharePoint Syntex
+      items:
+        - name: 概述
+          href: powershell-syntex-intro.md
+        - name: 导出和导入模型
+          href: powershell-syntex-import-export.md
+        - name: 发布模型
+          href: powershell-syntex-publishing.md
+        - name: 模型处理请求
+          href: powershell-syntex-processing.md
+        - name: 使用模型说明
+          href: powershell-syntex-explanations.md
 - name: 采用
   items:
     - name: 采用入门
@@ -66,33 +114,5 @@
           href: solution-manage-contracts-step2.md
         - name: 步骤 3. 使用 Power Automate
           href: solution-manage-contracts-step3.md
-- name: 设置和管理
-  items:
-    - name: SharePoint Syntex 的许可
-      href: syntex-licensing.md
-    - name: 设置 SharePoint Syntex
-      href: set-up-content-understanding.md
-    - name: 使用 PowerShell 管理 SharePoint Syntex
-      items:
-        - name: 概述
-          href: powershell-syntex-intro.md
-        - name: 导出和导入模型
-          href: powershell-syntex-import-export.md
-        - name: 发布模型
-          href: powershell-syntex-publishing.md
-        - name: 模型处理请求
-          href: powershell-syntex-processing.md
-        - name: 使用模型说明
-          href: powershell-syntex-explanations.md
-- name: 内容服务
-  items:
-    - name: 使用 SKOS 导入
-      href: import-term-set-skos.md
-    - name: SKOS 格式参考
-      href: skos-format-reference.md
-    - name: 将内容类型推送到中心
-      href: push-content-type-to-hub.md
-    - name: 术语库报告
-      href: term-store-analytics.md
 - name: 可扩展性
   href: /sharepoint/dev/apis/syntex/syntex-model-rest-api

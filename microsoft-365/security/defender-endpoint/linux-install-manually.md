@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8354693f7f748771c9b6543455cf96177afacd05
-ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
+ms.openlocfilehash: da05d702a2cb074ece2fec74371e7b5f560cb1ed
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993283"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346089"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -48,23 +48,23 @@ ms.locfileid: "61993283"
 
 ## <a name="prerequisites-and-system-requirements"></a>先决条件和系统要求
 
-在开始使用之前，请参阅 Linux 上的 [Microsoft Defender for Endpoint，](microsoft-defender-endpoint-linux.md) 了解当前软件版本的先决条件和系统要求。
+在开始使用之前，请参阅 [Linux 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md) ，了解当前软件版本的先决条件和系统要求。
 
 > [!WARNING]
-> 在产品安装后将操作系统升级到新的主要版本需要重新安装该产品。 你需要卸载[](linux-resources.md#uninstall)Linux 上的现有 Defender for Endpoint，升级操作系统，然后按照以下步骤在 Linux 上重新配置 Defender for Endpoint。
+> 在产品安装后将操作系统升级到新的主要版本需要重新安装该产品。 你需要卸载 Linux [](linux-resources.md#uninstall) 上的现有 Defender for Endpoint，升级操作系统，然后按照以下步骤在 Linux 上重新配置 Defender for Endpoint。
 
 ## <a name="configure-the-linux-software-repository"></a>配置 Linux 软件存储库
 
-可以从以下频道之一部署 Linux 上的 Defender for Endpoint (如下表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。 下面提供了配置设备以使用这些存储库之一的说明。
+Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下面表示为 *[channel]*) ： *insiders-fast*、 *insiders-slow* 或 *prod*。每个通道对应于 Linux 软件存储库。 下面提供了配置设备以使用这些存储库之一的说明。
 
-通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员 -快* 中的设备是首先接收更新和新功能的设备，随后是预览体验成员- 慢，最后是 *受支持*。
+通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员 -快* 中的设备是接收更新和新功能的第一批设备，随后是预览体验成员- *慢* ，最后是 *受支持设备*。
 
-为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员- *快* 或预览体验成员- *慢*。
+为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员 *-快* 或预览体验成员 *-慢*。
 
 > [!WARNING]
 > 在初始安装后切换通道需要重新安装产品。 若要切换产品渠道：卸载现有程序包，将设备重新配置为使用新通道，然后按照本文档中的步骤从新位置安装程序包。
 
-### <a name="rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2"></a>CentOS、Fedora、Oracle Linux 和 Amazon Linux 2 (的 RHEL 和) 
+### <a name="rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2"></a>CentOS、Fedora、Oracle Linux 和 Amazon Linux 2 (RHEL 和) 
 
 - 如果 `yum-utils` 尚未安装，请安装：
 
@@ -73,7 +73,7 @@ ms.locfileid: "61993283"
     ```
 
   > [!NOTE]
-  > 分发和版本，并确定最近的条目 (按主要，然后按) 次要条目 `https://packages.microsoft.com/config/rhel/` 。
+  > 分发和版本，并确定最近的条目 (按主要，然后按) 次要条目 `https://packages.microsoft.com/config/rhel/`。
 
     使用下表可帮助指导你找到程序包：
 
@@ -120,7 +120,7 @@ ms.locfileid: "61993283"
 ### <a name="sles-and-variants"></a>SLES 和变量
 
 > [!NOTE]
-> 分发和版本，并确定最近的条目 (按主要，然后按) 次要条目 `https://packages.microsoft.com/config/sles/` 。
+> 分发和版本，并确定最近的条目 (按主要，然后按) 次要条目 `https://packages.microsoft.com/config/sles/`。
 
    在下列命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
@@ -158,7 +158,7 @@ ms.locfileid: "61993283"
     ```
 
 > [!NOTE]
-> 分发和版本，并确定最近的条目 (按主要，然后按) 次要条目 `https://packages.microsoft.com/config/[distro]/` 。
+> 分发和版本，并确定最近的条目 (按主要，然后按) 次要条目 `https://packages.microsoft.com/config/[distro]/`。
 
    在下面的命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
@@ -187,13 +187,13 @@ ms.locfileid: "61993283"
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
     ```
 
-- 安装 `gpg` 程序包（如果尚未安装）：
+- 安装程序包 `gpg` （如果尚未安装）：
 
     ```bash
     sudo apt-get install gpg
     ```
 
-  如果 `gpg` 不可用，则安装 `gnupg` 。
+  如果 `gpg` 不可用，则安装 `gnupg`。
 
     ```bash
     sudo apt-get install gnupg
@@ -226,7 +226,7 @@ ms.locfileid: "61993283"
     ```
 
     > [!NOTE]
-    > 如果你在设备上配置了多个 Microsoft 存储库，你可以明确关于从哪个存储库安装程序包。 以下示例演示了如果在此设备上还配置了存储库通道，如何从该通道 `production` `insiders-fast` 安装程序包。 如果你正在设备上使用多个 Microsoft 产品，则可能会发生此情况。 根据服务器的分发和版本，存储库别名可能不同于以下示例中的别名。
+    > 如果你在设备上配置了多个 Microsoft 存储库，你可以明确关于从哪个存储库安装程序包。 以下示例演示了如果`production``insiders-fast`在此设备上还配置了存储库通道，如何从该通道安装程序包。 如果你正在设备上使用多个 Microsoft 产品，则可能会发生此情况。 根据服务器的分发和版本，存储库别名可能不同于以下示例中的别名。
 
     ```bash
     # list all repositories
@@ -252,7 +252,7 @@ ms.locfileid: "61993283"
     ```
 
     > [!NOTE]
-    > 如果你在设备上配置了多个 Microsoft 存储库，你可以明确关于从哪个存储库安装程序包。 以下示例演示了如果在此设备上还配置了存储库通道，如何从该通道 `production` `insiders-fast` 安装程序包。 如果你正在设备上使用多个 Microsoft 产品，则可能会发生此情况。
+    > 如果你在设备上配置了多个 Microsoft 存储库，你可以明确关于从哪个存储库安装程序包。 以下示例演示了如果`production``insiders-fast`在此设备上还配置了存储库通道，如何从该通道安装程序包。 如果你正在设备上使用多个 Microsoft 产品，则可能会发生此情况。
 
     ```bash
     zypper repos
@@ -278,7 +278,7 @@ ms.locfileid: "61993283"
     ```
 
     > [!NOTE]
-    > 如果你在设备上配置了多个 Microsoft 存储库，你可以明确关于从哪个存储库安装程序包。 以下示例演示了如果在此设备上还配置了存储库通道，如何从该通道 `production` `insiders-fast` 安装程序包。 如果你正在设备上使用多个 Microsoft 产品，则可能会发生此情况。
+    > 如果你在设备上配置了多个 Microsoft 存储库，你可以明确关于从哪个存储库安装程序包。 以下示例演示了如果`production``insiders-fast`在此设备上还配置了存储库通道，如何从该通道安装程序包。 如果你正在设备上使用多个 Microsoft 产品，则可能会发生此情况。
 
     ```bash
     cat /etc/apt/sources.list.d/*
@@ -298,10 +298,10 @@ ms.locfileid: "61993283"
 从应用门户下载Microsoft 365 Defender包。
 
 > [!IMPORTANT]
-> 如果错过此步骤，执行的任何命令将显示一条警告消息，指示产品未授权。 此外 `mdatp health` ，该命令返回 的值 `false` 。
+> 如果错过此步骤，执行的任何命令将显示一条警告消息，指示产品未授权。 此外， `mdatp health` 该命令返回 的值 `false`。
 
-1. 在Microsoft 365 Defender门户中，转到"设置 >终结点 **>">载入"。**
-2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 第二个下拉菜单中，选择" **本地脚本** "作为部署方法。
+1. 在 Microsoft 365 Defender 门户中，转到"设置 >终结点>**">载入"**。
+2. 在"第一个"下拉菜单中，选择 **"Linux Server** "作为操作系统。 第二个下拉菜单中，选择" **本地脚本** "作为部署方法。
 3. 选择 **下载载入程序包**。 将文件另存为WindowsDefenderATPOnboardingPackage.zip。
 
     ![Microsoft 365 Defender门户屏幕截图。](images/portal-onboarding-linux.png)
@@ -340,15 +340,15 @@ ms.locfileid: "61993283"
 2. 运行 MicrosoftDefenderATPOnboardingLinuxServer.py。
 
     > [!NOTE]
-    > 若要运行此命令，必须已安装或已安装在设备上 `python` `python3` ，具体取决于 disto 和 version。 如果需要，请参阅 [在 Linux 上安装 Python 的分步说明](https://opensource.com/article/20/4/install-python-linux)。
+    > 若要运行此命令，必须已安装`python``python3`或已安装在设备上，具体取决于 disto 和 version。 如果需要，请参阅 [在 Linux 上安装 Python 的分步说明](https://opensource.com/article/20/4/install-python-linux)。
     
-    如果运行的是 RHEL 8.x 或 Ubuntu 20.04 或更高版本，则需要使用 `python3` 。
+    如果运行的是 RHEL 8.x 或 Ubuntu 20.04 或更高版本，则需要使用 `python3`。
 
     ```bash
     sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
-    对于其余部分和版本，将需要使用 `python` 。
+    对于其余部分和版本，将需要使用 `python`。
     
     ```bash
     sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -367,7 +367,7 @@ ms.locfileid: "61993283"
     ```
 
     > [!IMPORTANT]
-    > 当产品首次启动时，它将下载最新的反恶意软件定义。 这可能需要几分钟，具体取决于网络连接。 在此期间，上述命令将返回 的值 `false` 。 可以使用以下命令检查定义更新的状态：
+    > 当产品首次启动时，它将下载最新的反恶意软件定义。 这可能需要几分钟，具体取决于网络连接。 在此期间，上述命令将返回 的值 `false`。 可以使用以下命令检查定义更新的状态：
     >
     > ```bash
     > mdatp health --field definitions_status
@@ -377,10 +377,16 @@ ms.locfileid: "61993283"
 
 5. 运行 AV 检测测试，验证设备是否正确载入并报告给服务。 对新载入的设备执行以下步骤：
 
-    - 确保启用实时保护 (运行以下命令或命令的结果 `1`) ：
+    - 确保实时保护 (`1` 由运行以下命令或命令的结果) ：
 
         ```bash
         mdatp health --field real_time_protection_enabled
+        ```
+        
+      如果未启用，请执行以下命令：
+      
+       ```bash
+        mdatp config real-time-protection --value enabled
         ```
 
     - 打开终端窗口并执行以下命令：
@@ -397,17 +403,17 @@ ms.locfileid: "61993283"
 
 6. 运行EDR检测测试并模拟检测，以验证设备是否正确载入并报告给服务。 对新载入的设备执行以下步骤：
 
-    - 验证已载入的 Linux 服务器是否Microsoft 365 Defender。 如果这是计算机首次载入，可能需要最多 20 分钟才会显示。
+    - 验证载入的 Linux 服务器是否显示在Microsoft 365 Defender。 如果这是计算机首次载入，可能需要最多 20 分钟才会显示。
 
     - 将脚本文件 [下载并](https://aka.ms/LinuxDIY) 解压缩到载入的 Linux 服务器并运行以下命令： `./mde_linux_edr_diy.sh`
 
-    - 几分钟后，应在测试中引发Microsoft 365 Defender。
+    - 几分钟后，应在活动记录中引发Microsoft 365 Defender。
 
     - 查看警报详细信息、计算机时间线，并执行典型的调查步骤。
 
 ## <a name="installer-script"></a>安装程序脚本
 
-或者，您可以使用公共数据库存储库中提供的自动安装程序[bash](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) [GitHub脚本](https://github.com/microsoft/mdatp-xplat/)。
+或者，您可以使用公共数据库存储库中提供的自动安装程序 [bash](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) [GitHub脚本](https://github.com/microsoft/mdatp-xplat/)。
 该脚本标识分发和版本，简化正确存储库的选择，设置设备以拉取最新的程序包，并组合产品安装和载入步骤。
 
 ```bash
@@ -427,13 +433,13 @@ Options:
 -h|--help         display help
 ```
 
-在此处阅读[更多。](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation)
+在此处阅读 [更多信息](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation)。
 
 ## <a name="log-installation-issues"></a>记录安装问题
 
 请参阅 [日志](linux-resources.md#log-installation-issues) 安装问题，详细了解如何在发生错误时查找安装程序创建的自动生成的日志。
 
-## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>如何从生产Insiders-Fast到生产渠道
+## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>如何从生产Insiders-Fast迁移到生产渠道
 
 1. 在 Linux 上卸载 Defender for Endpoint 的"Insiders-Fast channel"版本。
 
@@ -441,7 +447,7 @@ Options:
     sudo yum remove mdatp
     ```
 
-1. 在 Linux 客户端存储库上禁用 defender Insiders-Fast终结点
+1. 在 Linux 客户端上禁用 Defender for Endpoint Insiders-Fast存储库
 
     ```bash
     sudo yum repolist
