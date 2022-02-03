@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 SharePoint 和 OneDrive 的保留的工作原理。
-ms.openlocfilehash: d9b8a0b66eb32171a0f72fbe0f380a6a98316e33
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 18ada99844e7d342244d578d9cca76f68a28501c
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295334"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322153"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>了解用于 SharePoint 和 OneDrive 的保留
 
@@ -134,9 +134,9 @@ ms.locfileid: "62295334"
 
 ## <a name="how-retention-works-with-onenote-content"></a>OneNote 内容的保留工作原理
 
-当你在后台将保留策略应用于包含 OneNote 内容的位置，或将保留标签应用于 OneNote 文件夹时，不同的 OneNote 部分是继承保留设置的单个文件。 这意味着将根据指定的保留设置分别保留和删除每个分区。
+当你在后台将保留策略应用于包含 OneNote 内容的位置，或将保留标签应用于 OneNote 文件夹时，不同的 OneNote 页面和部分是继承保留设置的单个文件。 这意味着在页面内将根据指定的保留设置分别保留和删除每个分区。
 
-OneNote 页面本身的修改日期在创建后不会更改。
+指定的保留设置仅影响页面和分区。 例如，尽管看到每个单独笔记本的 **修改** 日期，但 Microsoft 365 保留并不使用此日期。
 
 ## <a name="how-retention-works-with-document-versions"></a>如何保留文件版本
 
