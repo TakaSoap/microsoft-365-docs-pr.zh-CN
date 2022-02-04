@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 为信息保护配置设备代理和 Internet 连接设置
-ms.openlocfilehash: 645bb3eca60e37db817f810992fd5022399e1249
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 2d0bc6484636cffb479ccb96b3458fddf0697cd7
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950812"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327409"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-information-protection"></a>为信息保护配置设备代理和 Internet 连接设置
 
@@ -137,7 +137,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 
 > [!NOTE]
 >
-> Connectivity Analyzer 工具与 ASR 规则不兼容[阻止源自 PSExec 和 WMI 命令的进程创建](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暂时禁用此规则才能运行连接工具。
+> 连接分析器工具与攻击面减少规则不兼容，[阻止源自 PSExec 和 WMI 命令的进程创建](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-process-creations-originating-from-psexec-and-wmi-commands)。 需要暂时禁用此规则才能运行连接工具。
 >
 > 在注册表中或通过组策略设置 TelemetryProxyServer 时，如果 Defender for Endpoint 无法访问定义的代理，它将回退到 direct。相关主题：
 >

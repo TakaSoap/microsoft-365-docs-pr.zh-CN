@@ -25,12 +25,12 @@ ms.custom:
 - adminvideo
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
 ms.date: 01/25/2022
-ms.openlocfilehash: 755c5c90fb99204f2bef932961a235a7756a4dff
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: b7a8c6a1ec58fdeb74349f06a3a9ef25c390482d
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218965"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62355004"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 
@@ -70,6 +70,8 @@ ms.locfileid: "62218965"
 3. 在摘要页面上，可以查看发票中项目，数量，价格，折扣和所有项的总计。
 4. 若要打印或保存发票的 PDF 副本，请选择“**下载 PDF**”。
 
+要在电子邮件中收到帐单副本，请参阅 [管理计费通知和发票附件](manage-billing-notifications.md)。
+
 ::: moniker range="o365-21vianet"
 
 ## <a name="request-a-fapiao"></a>请求发票
@@ -89,31 +91,6 @@ ms.locfileid: "62218965"
 >
 > Microsoft 365服务不提供付款回执。
 > 对于信用卡付款，请使用发票和信用卡帐单来匹配你的付款。
-
-## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>以电子邮件方式接收帐单副本
-
-可以选择以电子邮件附件的形式接收帐单副本。如果执行此操作，请注意：
-
-- 电子邮件会发送到列为通知收件人的每个人的主要和备用电子邮件地址。
-- 你会收到两封单独的电子邮件：第一封告知你的帐单已生成，其中包含如何登录管理中心查看帐单的说明，第二封电子邮件的附件中包含帐单。
-
-### <a name="to-receive-your-billing-statement-in-email"></a>以电子邮件的方式接收帐单
-
-::: moniker range="o365-worldwide"
-
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">账单通知</a>”页面。
-
-::: moniker-end
-
-2. 在“**以电子邮件附件形式接收帐单？**”下将开关切换到“**开**”。
-
-    将开关切换到" **关**"可随时停止接收帐单电子邮件。
 
 ## <a name="run-the-unknown-charge-diagnostic"></a>运行未知费用诊断
 

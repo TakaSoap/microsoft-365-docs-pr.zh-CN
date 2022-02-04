@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 将Windows 10和 Windows 11 设备载入Microsoft 365
-ms.openlocfilehash: ec95fcbfca3ab41bb3a249534e5ff62721aac794
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 4e2e94dcb8b366a5ffda651b910a611ce9e921a1
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272074"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327201"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>将Windows 10和 Windows 11 设备载入Microsoft 365概述
 
@@ -100,7 +100,8 @@ Microsoft 365终结点 DLP 允许监视Windows 10或 Windows 11 设备，并检�
 
 5. 已安装受支持的 Microsoft Office 版本和最新版本。 为了获得最可靠的保护和用户体验，请确保已安装 Microsoft 365 应用版本 16.0.14701.0 或更高版本。
 > [!NOTE]
-   >如果你必须要运行 Office 265 - KB 4577063，且在 Microsoft 365 Apps 版本 2004-2008 的月度企业频道上，则需要更新到版本 2009 或更高版本。 参见 [Microsoft 365 应用版的更新历史记录（按日期列出）](/officeupdates/update-history-microsoft365-apps-by-date)。 要了解有关此问题的更多信息，请参阅[有关 2020 年当前频道发行的发行说明](/officeupdates/current-channel#version-2010-october-27)。
+   > - 如果运行的是 Office 365 - 需要 KB 4577063。
+   > - 如果你使用 Microsoft 365 应用版 2004-2008 的月度企业频道，则需要更新到版本 2009 或更高版本。 参见 [Microsoft 365 应用版的更新历史记录（按日期列出）](/officeupdates/update-history-microsoft365-apps-by-date)。 要了解有关此问题的更多信息，请参阅[有关 2020 年当前频道发行的发行说明](/officeupdates/current-channel#version-2010-october-27)。
 
 6. 如果终结点使用设备代理连接到 Internet，请按照 [配置信息保护](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)的设备代理和 Internet 连接设置中的过程进行操作。
 
