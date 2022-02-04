@@ -12,16 +12,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+  - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12ca6e57fdbb8e2e197d3f57d07ec70694748a48
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170970"
 ---
+
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上适用于终结点的 Microsoft Defender 的隐私
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -51,7 +46,7 @@ Microsoft Defender for Endpoint 客户端软件有两个级别的诊断数据可
 
 - **必需**：帮助确保 Microsoft Defender for Endpoint 安全、最新以及按预期在安装它的设备上按预期运行所需的最低数据。
 
-- **可选**：帮助 Microsoft 改进产品并提供增强信息以帮助检测、诊断和修正问题的其他数据。
+- **可选**：可帮助 Microsoft 改进产品并提供增强信息以帮助检测、诊断和修正问题的其他数据。
 
 默认情况下，仅向 Microsoft 发送必需的诊断数据。
 
@@ -85,17 +80,17 @@ The privacy controls for the various types of data described in the preceding se
 
 以下字段被视为通用于所有事件：
 
-|字段|说明|
+|Field|说明|
 |---|---|
 |平台|应用运行平台的广泛分类。 允许 Microsoft 确定在哪些平台上可能会发生问题，以便可以正确地确定问题的优先级。|
 |machine_guid|与设备关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定安装以及有多少用户受到影响。|
 |sense_guid|与设备关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定安装以及有多少用户受到影响。|
 |org_id|与设备所属的企业关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定企业以及有多少企业受到影响。|
-|hostname|本地设备名称 (DNS 后缀) 。 允许 Microsoft 确定问题是否影响一组选定安装以及有多少用户受到影响。|
+|hostname|不带 DNS 后缀 (本地设备) 。 允许 Microsoft 确定问题是否影响一组选定安装以及有多少用户受到影响。|
 |product_guid|产品的唯一标识符。 允许 Microsoft 区分影响不同产品风格的问题。|
 |app_version|macOS 应用程序上的 Microsoft Defender for Endpoint 的版本。 允许 Microsoft 确定哪些版本的产品显示问题，以便可以正确地确定问题的优先级。|
 |sig_version|安全智能数据库的版本。 允许 Microsoft 标识显示问题的安全智能版本，以便可以正确地确定问题的优先级。|
-|supported_compressions|应用程序支持的压缩算法列表，例如 `['gzip']` 。 允许 Microsoft 了解在与应用程序通信时可以使用的压缩类型。|
+|supported_compressions|应用程序支持的压缩算法列表，例如 `['gzip']`。 允许 Microsoft 了解在与应用程序通信时可以使用的压缩类型。|
 |release_ring|设备与设备关联的圈， (Insider Fast、Insider Slow、Production) 。 允许 Microsoft 识别可能在哪个发布环上发生问题，以便可以正确地确定问题的优先级。|
 
 ### <a name="required-diagnostic-data"></a>必需诊断数据
@@ -110,7 +105,7 @@ The privacy controls for the various types of data described in the preceding se
 
 收集以下字段：
 
-|字段|说明|
+|Field|说明|
 |---|---|
 |correlation_id|与安装关联的唯一标识符。|
 |version|程序包的版本。|
@@ -120,7 +115,7 @@ The privacy controls for the various types of data described in the preceding se
 
 **Microsoft Defender for Endpoint 配置**：
 
-将会收集以下字段：
+收集以下字段：
 
 |字段|说明|
 |---|---|
@@ -136,7 +131,7 @@ The privacy controls for the various types of data described in the preceding se
 |edr.early_preview|设备是否应该运行EDR早期预览功能。|
 |edr.group_id|检测和响应组件使用的组标识符。|
 |edr.tags|用户定义的标记。|
-|功能。 \[可选功能名称\]|预览功能列表，以及是否已启用。|
+|功能。\[可选功能名称\]|预览功能列表，以及是否已启用。|
 
 #### <a name="product-and-service-usage-data-events"></a>产品和服务使用情况数据事件
 
@@ -144,24 +139,24 @@ The privacy controls for the various types of data described in the preceding se
 
 收集以下字段：
 
-|字段|说明|
+|Field|说明|
 |---|---|
 |from_version|原始安全智能版本。|
 |to_version|新的安全智能版本。|
-|status|指示成功或失败的更新的状态。|
+|状态|指示成功或失败的更新的状态。|
 |using_proxy|更新是否通过代理完成。|
 |error|更新失败时的错误代码。|
 |reason|如果更新的存档，则显示错误消息。|
 
 #### <a name="product-and-service-performance-data-events-for-required-diagnostic-data"></a>必需诊断数据的产品或服务性能数据事件
 
-**应用程序意外退出 (崩溃) ：**
+**应用程序意外退出 (崩溃)**：
 
 在应用程序意外退出时收集系统信息和应用程序的状态。
 
 收集以下字段：
 
-|字段|说明|
+|Field|说明|
 |---|---|
 |v1_crash_count|每小时 V1 引擎进程在客户端计算机上崩溃次数|
 |v2_crash_count|每小时 V2 引擎进程在客户端计算机上崩溃次数|
@@ -171,7 +166,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|说明|
+|Field|说明|
 |---|---|
 |version|macOS 上适用于终结点的 Microsoft Defender 版本。|
 |instance_id|内核扩展启动时生成的唯一标识符。|
@@ -187,7 +182,7 @@ The privacy controls for the various types of data described in the preceding se
 
 仅在用户同意的情况下收集诊断日志作为反馈提交功能一部分。 将收集以下文件作为支持日志的一部分：
 
-- */Library/Logs/Microsoft/mdatp/ 下的所有文件*
+- / *Library/Logs/Microsoft/mdatp/ 下的所有文件*
 - macOS 上的 Microsoft Defender for Endpoint 创建和使用的 */Library/Application Support/Microsoft/Defender/* 下的文件子集
 - macOS 上的 Microsoft Defender for Endpoint 使用的 */Library/Managed Preferences* 下的文件子集
 - /Library/Logs/Microsoft/autoupdate.log
@@ -199,7 +194,7 @@ The privacy controls for the various types of data described in the preceding se
 
 如果你选择向我们发送可选诊断数据，则还需要包括必需的诊断数据。
 
-可选诊断数据的示例包括 Microsoft 收集有关产品配置的数据 (例如设备) 上设置的排除项数 (以及有关产品) 组件性能的聚合度量。
+可选诊断数据的示例包括 Microsoft 收集有关产品配置 (例如设备) 上设置的排除数的数据，以及产品性能 (聚合了有关产品) 组件性能的度量。
 
 #### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>可选诊断数据的软件安装和清单数据事件
 
@@ -207,7 +202,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|说明|
+|Field|说明|
 |---|---|
 |connection_retry_timeout|与云通信时，连接重试次数将退出。|
 |file_hash_cache_maximum|产品缓存的大小。|
@@ -227,9 +222,9 @@ The privacy controls for the various types of data described in the preceding se
 
 **Microsoft 自动更新配置**：
 
-将会收集以下字段：
+收集以下字段：
 
-|字段|说明|
+|Field|说明|
 |---|---|
 |how_to_check|确定如何检查产品更新 (例如自动或手动) 。|
 |channel_name|更新与设备关联的通道。|
@@ -242,18 +237,19 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|说明|
+|Field|说明|
 |---|---|
 |sha256|支持日志的 SHA256 标识符。|
-|size|支持日志的大小。|
-|original_path|支持日志路径始终 (*/Library/Application Support/Microsoft/Defender/wdavdiag/) 。*|
+|大小|支持日志的大小。|
+|original_path|始终在 */library/ (/Microsoft/Defender/wdavdiag/ 下* 的支持日志) 。|
 |format|支持日志的格式。|
+|metadata|有关支持日志内容的信息。|
 
 #### <a name="diagnostic-log-upload-completed-report"></a>诊断日志上载已完成报告
 
-收集以下字段：
+将会收集以下字段：
 
-|字段|说明|
+|Field|说明|
 |---|---|
 |request_id|支持日志上载请求的相关 ID。|
 |sha256|支持日志的 SHA256 标识符。|
@@ -261,7 +257,7 @@ The privacy controls for the various types of data described in the preceding se
 
 #### <a name="product-and-service-performance-data-events-for-product-and-service-usage"></a>用于产品或服务使用情况的产品或服务性能数据事件
 
-**应用程序意外退出 (崩溃) ：**
+**应用程序意外退出 (崩溃)**：
 
 应用程序意外退出以及发生这种情况时的应用程序状态。
 

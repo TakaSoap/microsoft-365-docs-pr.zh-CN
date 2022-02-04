@@ -4,37 +4,29 @@ description: 自己注册设备，以便由设备Microsoft 托管桌面
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 566472128cef48a14aa18de6d9e82a4bc0f2b91c
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035698"
 ---
+
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
-Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已拥有的设备 (这将要求你将它们重新映像) 。 可以在应用门户Microsoft 托管桌面注册Microsoft Endpoint Manager设备。
+Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已经拥有的设备 (这将要求你重新映像它们) 。 可以在应用门户Microsoft 托管桌面注册Microsoft Endpoint Manager设备。
 
 > [!NOTE]
-> 与合作伙伴合作获取设备 如果是这样，你无需担心获取硬件哈希;他们会负责你。 请确保你的合作伙伴与你在合作伙伴中心 [建立了关系](https://partner.microsoft.com/dashboard)。 你的合作伙伴可以在合作伙伴中心 [帮助 中了解更多信息](/partner-center/request-a-relationship-with-a-customer)。 建立此关系后，你的合作伙伴将仅代表你注册设备，无需你执行任何进一步的操作。 如果你希望查看详细信息，或者你的合作伙伴有疑问，请参阅合作伙伴 [注册设备的步骤](register-devices-partner.md)。 注册设备后，你可以继续 [检查](#check-the-image) 映像，将设备 [传送](#deliver-the-device) 给用户。
-
-
+> 与合作伙伴合作获取设备 如果是这样，你无需担心获取硬件哈希;他们会负责你。 请确保你的合作伙伴在合作伙伴中心与你 [建立关系](https://partner.microsoft.com/dashboard)。 你的合作伙伴可以在合作伙伴中心 [帮助中了解更多信息](/partner-center/request-a-relationship-with-a-customer)。 建立此关系后，你的合作伙伴将仅代表你注册设备，无需你执行任何进一步的操作。 如果你希望查看详细信息，或者你的合作伙伴有疑问，请参阅合作伙伴 [注册设备的步骤](register-devices-partner.md)。 注册设备后，你可以继续 [检查](#check-the-image) 映像，将设备 [传送](#deliver-the-device) 给用户。
 
 ## <a name="prepare-to-register-brand-new-devices"></a>准备注册全新的设备
-
 
 拥有新设备后，你将按照以下步骤操作：
 
 1. [获取每台设备的硬件哈希。](#obtain-the-hardware-hash)
 2. [合并哈希数据](#merge-hash-data)
-3. [在 中注册Microsoft 托管桌面。](#register-devices-by-using-the-admin-portal)
+3. [在设备上注册Microsoft 托管桌面](#register-devices-by-using-the-admin-portal)。
 4. [仔细检查图像是否正确。](#check-the-image)
 5. [交付设备](#deliver-the-device)
 
@@ -43,12 +35,12 @@ Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已�
 Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 有三个选项可获取此信息：
 
 - 请你的 OEM 供应商提供 AutoPilot 注册文件，该文件将包含硬件哈希。
-- 在每个[Windows PowerShell](#powershell-script-method)运行一个脚本，并收集文件中的结果。
+- 在每个[Windows PowerShell运行](#powershell-script-method)一个脚本，并收集文件中的结果。
 - 启动每台设备（但不完成Windows安装体验）并收集可移动闪存[驱动器上的哈希](#flash-drive-method)。
 
 #### <a name="powershell-script-method"></a>PowerShell 脚本方法
 
-可以在 PowerShell [ 库Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell 脚本。 有关设备标识和硬件哈希的信息，请参阅向[Autopilot](/mem/autopilot/add-devices#device-identification)Windows设备。
+可以使用 PowerShell [ 库Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) 上的 PowerShell 脚本。 有关设备标识和硬件哈希的信息，请参阅[向 Autopilot Windows设备](/mem/autopilot/add-devices#device-identification)。
 
 1. 使用管理权限打开 PowerShell 提示符。
 2. 运行 `Install-Script -Name Get-WindowsAutoPilotInfo`
@@ -60,15 +52,15 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 1. 在注册设备外的其他设备上，插入 USB 驱动器。
 2. 使用管理权限打开 PowerShell 提示符。
 3. 运行 `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
-4. 打开你要注册的设备， *但不启动设置体验*。 如果意外启动设置体验，必须重置或重置设备映像。
+4. 打开要注册的设备， *但不启动设置体验*。 如果意外启动设置体验，必须重置或重置设备映像。
 5. 插入 USB 驱动器，然后按 Shift + F10。
-6. 使用管理权限打开 PowerShell 提示符，然后运行 `cd <pathToUsb>` 。
+6. 使用管理权限打开 PowerShell 提示符，然后运行 `cd <pathToUsb>`。
 7. 运行 `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 8. 运行 `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 9. 删除 USB 驱动器，然后通过运行来关闭设备 `shutdown -s -t 0`
 
 > [!IMPORTANT]
-> 完成注册之前，请勿再次打开要注册的设备。 
+> 完成注册之前，请勿再次打开要注册的设备。
 
 ### <a name="merge-hash-data"></a>合并哈希数据
 
@@ -77,11 +69,11 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 > [!NOTE]
-> 不支持其他列。 不支持引号。 只有 ANSI 格式的文本文件才能用于 unicode (Unicode) 。 标头区分大小写。 由于这些要求，Excel文件并另存为 CSV 文件不会生成可用文件。 请确保在设备序列号中保留任何前导零。
+> 不支持其他列。 不支持引号。 只有 ANSI 格式的文本文件才能 (Unicode) 。 标头区分大小写。 由于这些要求，Excel文件并另存为 CSV 文件不会生成可用文件。 请确保在设备序列号中保留任何前导零。
 
 ### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
-在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)**中，选择** 左侧导航窗格中的"设备"。 查找菜单Microsoft 托管桌面部分，**然后选择设备。** 在Microsoft 托管桌面设备"工作区中，选择 **" +** 注册设备"，这将打开一个飞入以注册新设备。
+In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)， select **Devices** in the left navigation pane. 查找菜单Microsoft 托管桌面部分，**然后选择设备。** 在Microsoft 托管桌面设备"工作区中，选择 **" +** 注册设备"，这将打开一个飞入以注册新设备。
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age.](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -91,7 +83,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 
 1. 在 **"文件** 上载"中，提供之前创建的 CSV 文件的路径。
 2. 在 [下拉菜单中选择](../service-description/profiles.md) 设备配置文件。
-3. 选择 **注册设备**。 系统将设备添加到设备上设备列表，标记为注册 **挂起。**  注册通常少于 10 分钟，并且成功后，设备将显示为"为用户准备就绪"，这意味着它已准备好并等待用户开始使用。
+3. 选择 **注册设备**。 系统将设备添加到设备上标记为"正在 **注册"****的设备列表**。 注册通常少于 10 分钟，并且成功后，设备将显示为"为用户准备就绪"，这意味着它已准备好并等待用户开始使用。
 
 > [!NOTE]
 > 如果手动更改设备Azure Active Directory (AAD) 组成员身份，系统会自动将其重新分配给设备配置文件的组，并删除任何冲突组。
@@ -104,7 +96,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 | 注册失败 | 无法完成注册。 有关详细信息 [，请参阅设备](#troubleshooting-device-registration) 注册疑难解答。 |
 | 为用户准备就绪 | 注册成功，设备现在已准备好传递给用户。 Microsoft 托管桌面指导用户完成首次设置，因此无需执行任何进一步准备。 |
 | 活动 | 设备已传递给用户，并且他们已在租户中注册。 此状态还指示他们定期使用设备。 |
-| 非活动 | 设备已传递给用户，并且他们已在租户中注册。 但是，他们在最近 7 天内 (使用过该设备) 。  | 
+| 非活动 | 设备已传递给用户，并且他们已在租户中注册。 但是，他们在最近 7 天内 (使用过该设备) 。  |
 
 #### <a name="troubleshooting-device-registration"></a>设备注册疑难解答
 
@@ -125,7 +117,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 ### <a name="autopilot-group-tag"></a>Autopilot 组标记
 
 当你使用管理门户注册设备时，我们会自动分配与使用合作伙伴中心注册设备中列出的设备配置文件相关联的 Autopilot [组标记](register-devices-partner.md#register-devices-by-using-partner-center)。
-该服务每天Microsoft 托管桌面所有设备，并将组标记分配给任何尚未安装组标记的设备。
+该服务每天监视Microsoft 托管桌面设备，并将组标记分配给任何尚未安装组标记的设备。
 
 ### <a name="deliver-the-device"></a>交付设备
 

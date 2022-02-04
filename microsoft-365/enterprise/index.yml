@@ -32,7 +32,7 @@ conceptualContent:
   items:
     - title: 部署关键路线图
       links:
-        - url: identity-roadmap-microsoft-365.md
+        - url: deploy-identity-solution-overview.md
           itemType: how-to-guide
           text: 标识基础结构
         - url: /windows/deployment/

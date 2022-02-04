@@ -54,10 +54,14 @@
           href: model-usage-analytics.md
 - name: 预生成模型
   items:
+    - name: 概述
+      href: prebuilt-overview.md
     - name: 发票和收据预生成模型
       href: prebuilt-models.md
     - name: 应用保留标签
       href: apply-a-retention-label-to-a-model.md
+    - name: 模型使用情况分析
+      href: model-usage-analytics.md
 - name: 内容组装
   items:
     - name: 使用内容程序集创建文档

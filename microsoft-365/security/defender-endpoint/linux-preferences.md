@@ -1,6 +1,6 @@
 ---
 title: 在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
-ms.reviewer: ''
+ms.reviewer: null
 description: 介绍如何在企业版 Linux 上为终结点配置 Microsoft Defender。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
 ms.prod: m365-security
@@ -13,16 +13,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+  - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 210bfdec98ef4e603b5dc4e844688c9495d01a79
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214161"
 ---
+
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -43,9 +38,9 @@ ms.locfileid: "62214161"
 
 ## <a name="configuration-profile-structure"></a>配置文件结构
 
-配置文件是一个 .json 文件，由键 (它表示首选项) 的名称，后跟一个值，具体取决于首选项的性质。 值可以是简单的（如数字值）或复杂值（如嵌套的首选项列表）。
+配置文件是一个 .json 文件，它由键 (标识的条目表示首选项) 的名称，后跟一个值，具体取决于首选项的性质。 值可以是简单的（如数字值）或复杂值（如嵌套的首选项列表）。
 
-通常，你将使用配置管理工具在 位置推送名称 ```mdatp_managed.json``` 为 的文件 ```/etc/opt/microsoft/mdatp/managed/``` 。
+通常，你将使用配置 ```mdatp_managed.json``` 管理工具在 位置推送名称为 的文件 ```/etc/opt/microsoft/mdatp/managed/```。
 
 配置文件的顶层包括产品范围的首选项和产品子区域条目，下一节将对此进行详细介绍。
 
@@ -68,10 +63,10 @@ ms.locfileid: "62214161"
 
 指定防病毒引擎的强制首选项。 设置强制级别有三个值：
 
-- 实时 () ：启用 (时实时保护) `real_time` 扫描文件。
-- 按需 `on_demand` () ：仅按需扫描文件。 在此：
+- 实时 (`real_time`) ：启用 (时实时保护) 扫描文件。
+- 按需 (`on_demand`) ：仅按需扫描文件。 在此：
   - 实时保护已关闭。
-- 被动 `passive` () ：在被动模式下运行防病毒引擎。 在此：
+- 被动 (`passive`) ：在被动模式下运行防病毒引擎。 在此：
   - 实时保护已关闭。
   - 按需扫描已打开。
   - 自动威胁修正已关闭。
@@ -116,7 +111,7 @@ ms.locfileid: "62214161"
 |说明|值|
 |---|---|
 |**键**|scanAfterDefinitionUpdate|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认)  <p> false|
 |**Comments**|适用于终结点版本 101.45.00 或更高版本的 Defender 中可用。|
 |
@@ -132,7 +127,7 @@ ms.locfileid: "62214161"
 |说明|值|
 |---|---|
 |**键**|scanArchives|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认)  <p> false|
 |**Comments**|适用于终结点版本 101.45.00 或更高版本的 Microsoft Defender 中可用。|
 |||
@@ -156,7 +151,7 @@ ms.locfileid: "62214161"
 
 #### <a name="exclusion-merge-policy"></a>排除合并策略
 
-指定排除项的合并策略。 它可以是管理员定义的排除项和用户定义的排除项 () 管理员定义的排除项 `merge` `admin_only` () 。 此设置可用于限制本地用户定义自己的排除项。
+指定排除项的合并策略。 它可以是管理员定义的排除项 `merge` `admin_only` 和用户定义的排除项 () 管理员定义的排除项 () 。 此设置可用于限制本地用户定义自己的排除项。
 
 <br>
 
@@ -173,7 +168,7 @@ ms.locfileid: "62214161"
 #### <a name="scan-exclusions"></a>扫描排除项
 
 从扫描中排除的实体。 排除项可以通过完整路径、扩展名或文件名指定。
- (排除项指定为项目数组，管理员可以按任意顺序指定所需数量的元素) 
+ (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量的元素。) 
 
 <br>
 
@@ -217,9 +212,9 @@ ms.locfileid: "62214161"
 |**Comments**|仅在 *排除$type**时适用*|
 |
 
-##### <a name="path-type-file--directory"></a>文件 (目录的路径) 
+##### <a name="path-type-file--directory"></a>路径类型 (文件/目录) 
 
-指示 path *属性* 是否引用文件或目录。
+指示 *path 属性* 是否引用文件或目录。
 
 <br>
 
@@ -228,7 +223,7 @@ ms.locfileid: "62214161"
 |说明|值|
 |---|---|
 |**键**|isDirectory|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|仅在 *排除$type**时适用*|
 |
@@ -246,12 +241,12 @@ ms.locfileid: "62214161"
 |**键**|extension|
 |**数据类型**|String|
 |**可能的值**|有效的文件扩展名|
-|**Comments**|仅在 *排除**$type FileExtension 时适用*|
+|**Comments**|仅在 *排除$type* *FileExtension 时适用*|
 |
 
 ##### <a name="process-excluded-from-the-scan"></a>从扫描中排除的进程*
 
-指定从扫描中排除所有文件活动的进程。 可以通过进程的名称或名称来指定 (例如，) 或完整 (`cat` 例如 `/bin/cat` ，) 。
+指定从扫描中排除所有文件活动的进程。 可以通过进程的名称或名称指定 (例如 `cat` ，) 或完整路径 (例如， `/bin/cat`) 。
 
 <br>
 
@@ -262,7 +257,7 @@ ms.locfileid: "62214161"
 |**键**|name|
 |**数据类型**|String|
 |**可能的值**|任何字符串|
-|**Comments**|仅在 *排除**$type FileName 时适用*|
+|**Comments**|仅在排除 *$type* *FileName 时适用*|
 |
 
 #### <a name="allowed-threats"></a>允许的威胁
@@ -331,7 +326,7 @@ ms.locfileid: "62214161"
 
 - **审核**：设备不受此类型威胁的保护，但会记录关于威胁的条目。
 - **阻止**：设备受到此类型威胁的保护，并且你将在安全控制台中收到通知。
-- **关闭**：设备不受此类型威胁的保护，并且不会记录任何内容。
+- **关闭**：设备不受此类威胁的保护，并且不会记录任何内容。
 
 <br>
 
@@ -346,7 +341,7 @@ ms.locfileid: "62214161"
 
 #### <a name="threat-type-settings-merge-policy"></a>威胁类型设置合并策略
 
-指定威胁类型设置的合并策略。 它可以是管理员定义的设置和用户定义的设置 () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
+指定威胁类型设置的合并策略。 它可以是管理员定义的 `merge` 设置和用户定义的设置的组合， () 管理员定义的设置 (`admin_only`) 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
 
 <br>
 
@@ -388,7 +383,7 @@ ms.locfileid: "62214161"
 |---|---|
 |**键**|scanHistoryMaximumItems|
 |**数据类型**|String|
-|**可能的值**|10000 (默认值) 。 允许的值从 5000 个项目到 15000 个项目。|
+|**可能的值**|默认值为 10000 (10000) 。 允许的值从 5000 个项目到 15000 个项目。|
 |**Comments**|适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。|
 |
 
@@ -418,7 +413,7 @@ ms.locfileid: "62214161"
 |说明|值|
 |---|---|
 |**键**|enabled|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认)  <p> false|
 |
 
@@ -441,8 +436,8 @@ ms.locfileid: "62214161"
 
 确定是否将 (可能包含威胁的可疑) 发送给 Microsoft。 有三个级别用于控制示例提交：
 
-- **无**：不会向 Microsoft 提交任何可疑样本。
-- **保险箱：** 仅自动提交不包含个人身份信息 (个人身份) 的可疑样本。 这是此设置的默认值。
+- **无**：不会向 Microsoft 提交任何可疑示例。
+- **保险箱**：只有不包含个人身份信息或个人身份信息的可疑 (将自动) 提交。 这是此设置的默认值。
 - **全部**：所有可疑示例都提交到 Microsoft。
 
 <br>
@@ -467,7 +462,7 @@ ms.locfileid: "62214161"
 |说明|值|
 |---|---|
 |**键**|automaticDefinitionUpdateEnabled|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认)  <p> false|
 |
 
@@ -508,7 +503,7 @@ ms.locfileid: "62214161"
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true,
-      "proxy":"http://proxy.server:port/"
+      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
    }
 }
 ```
@@ -577,37 +572,42 @@ ms.locfileid: "62214161"
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true,
-      "proxy": "http://proxy.server:port/"
+      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
    }
 }
 ```
 
 ## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>将标记或组 ID 添加到配置文件
 
-首次运行 `mdatp health` 命令时，标记和组 ID 的值将为空。 若要将标记或组 ID 添加到 `mdatp_managed.json` 文件，请按照以下步骤操作：
+首次运行 `mdatp health` 命令时，标记和组 ID 的值将为空。 若要将标记或组 ID 添加到文件 `mdatp_managed.json` ，请按照以下步骤操作：
   
-  1. 从路径 中打开配置文件 `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json` 。
+  1. 从路径 中打开配置文件 `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`。
   2. 转到阻止所在的文件 `cloudService` 底部。
-  3. 添加所需的标记或组 ID，如以下示例所示，位于 右大括号的 末尾 `cloudService` 。
+  3. 添加所需的标记或组 ID，如以下示例所示，位于 右大括号的 末尾 `cloudService`。
 
   ```JSON
     },
-     "cloudService":{
-        "enabled":true,
-        "diagnosticLevel":"optional",
-        "automaticSampleSubmissionConsent":"safe",
-        "automaticDefinitionUpdateEnabled":true,
-        "proxy": "http://proxy.server:port/"
-     },
-     "edr":{
-          "groupIds":"GroupIdExample",
-          "tags":"MDETagExample"
-          }
+    "cloudService": {
+      "enabled": true,
+      "diagnosticLevel": "optional",
+      "automaticSampleSubmissionConsent": "safe",
+      "automaticDefinitionUpdateEnabled": true,
+      "proxy": "http://proxy.server:port/"
+  },
+  "edr": {
+    "groupIds":"GroupIdExample",
+    "tags": [
+              {
+              "key": "GROUP",
+              "value": "Tag"
+              }
+            ]
+        }
   }
   ```
 
   > [!NOTE]
-  > 不要忘记在块末尾的右大括号后面添加 `cloudService` 逗号。 此外，请确保添加 Tag 或组 ID 块后有两个右大括号 (请参阅上面的示例) 。
+  > 不要忘记在块末尾的右大括号后面 `cloudService` 添加逗号。 此外，请确保添加 Tag 或组 ID 块后有两个右大括号 (请参阅上面的示例) 。 目前，标记唯一支持的键名称是 `GROUP`。 
   
 ## <a name="configuration-profile-validation"></a>配置文件验证
 
@@ -617,7 +617,7 @@ ms.locfileid: "62214161"
 python -m json.tool mdatp_managed.json
 ```
 
-如果 JSON 格式良好，则上述命令会输出回终端，并返回 的退出代码 `0` 。 否则，将显示描述该问题的错误，并且该命令将返回 的退出代码 `1` 。
+如果 JSON 格式良好，则上述命令会输出回终端，并返回 的退出代码 `0`。 否则，将显示描述该问题的错误，并且该命令将返回 的退出代码 `1`。
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>验证 mdatp_managed.json 文件是否正常工作
 
@@ -630,8 +630,8 @@ python -m json.tool mdatp_managed.json
 - automatic_definition_update_enabled
 
 > [!NOTE]
-> 若要使 mdatp_managed.json 生效，无需重新启动 `mdatp` deamon。
+> 若要使 mdatp_managed.json 生效，无需 `mdatp` 重新启动 deamon。
 
 ## <a name="configuration-profile-deployment"></a>配置文件部署
 
-为企业生成配置文件后，可以通过企业使用的管理工具进行部署。 Linux 上的终结点的 Defender 从 */etc/opt/microsoft/mdatp/managed/mdatp_managed.json 文件读取托管* 配置。
+为企业生成配置文件后，可以通过企业使用的管理工具进行部署。 Linux 上的终结点的 Defender 从 */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* 文件读取托管配置。

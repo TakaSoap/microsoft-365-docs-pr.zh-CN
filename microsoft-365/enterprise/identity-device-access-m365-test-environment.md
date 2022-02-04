@@ -2,7 +2,7 @@
 title: 针对 Microsoft 365 的标识和设备访问测试环境
 author: kelleyvice-msft
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 manager: laurawi
 audience: ITPro
@@ -10,22 +10,17 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Strat_O365_Enterprise
-ms.custom: ''
+  - M365-subscription-management
+  - Strat_O365_Enterprise
+ms.custom: null
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况。
-ms.openlocfilehash: 6556332d9753df0fc59ca6ebee0ae9c1ba2b33da
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200169"
 ---
+
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>针对 Microsoft 365 的标识和设备访问测试环境
 
 *本测试实验室指南只能用于Microsoft 365测试环境。*
 
-[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)是一组建议配置和条件访问策略，用于保护对与 Azure AD Azure Active Directory (集成的所有服务) 。
+[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)是一组建议配置和条件访问策略，用于保护对与设备集成的所有服务Azure Active Directory (Azure AD) 。
 
 若要创建具有通用标识和设备访问配置的测试环境，请执行以下操作：
 
@@ -41,7 +36,7 @@ ms.locfileid: "60200169"
 
 [其他标识测试实验室指南](m365-enterprise-test-lab-guides.md#identity)
 
-[标识路线图](identity-roadmap-microsoft-365.md)
+[部署标识](deploy-identity-solution-overview.md)
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 

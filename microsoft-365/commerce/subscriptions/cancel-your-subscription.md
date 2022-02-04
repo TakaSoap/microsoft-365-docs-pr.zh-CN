@@ -1,36 +1,31 @@
 ---
 title: 取消订阅
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: 'jkinma, jmueller'
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- M365-subscription-management
-- Adm_O365
+  - M365-subscription-management
+  - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
-- commerce_subscriptions
-- AdminTemplateSet
-- admindeeplinkMAC
+  - AdminSurgePortfolio
+  - commerce_subscriptions
+  - AdminTemplateSet
+  - admindeeplinkMAC
 search.appverid: MET150
 description: 了解如何在 Microsoft 365 管理中心中取消 Dynamics 365、Intune、Power Platform 和 Microsoft 365 商业试用版或付费订阅。
 ms.date: 01/20/2022
-ms.openlocfilehash: 2d800fbba8ce2290de395179589b1d4110cd1345
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322574"
 ---
+
 # <a name="cancel-your-subscription"></a>取消订阅
 
-你可以随时在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 356 管理中心</a> 中取消订阅。 但是，如果要获得退款，则必须满足某些退款资格要求。 有关详细信息，请参阅 [了解退款资格](#understand-refund-eligibility)。
+你可以随时在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 中取消订阅。 但是，如果要获得退款，则必须满足某些退款资格要求。 有关详细信息，请参阅 [了解退款资格](#understand-refund-eligibility)。
 
 如果对同一产品（例如 Microsoft 365 商业高级版）有多个订阅，则取消一个订阅不会影响其他订阅内已购买的许可证或服务。
 

@@ -2,7 +2,7 @@
 title: Microsoft 365 测试环境中密码哈希同步的标识和设备访问先决条件
 author: kelleyvice-msft
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 manager: laurawi
 audience: ITPro
@@ -10,24 +10,19 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Strat_O365_Enterprise
-ms.custom: ''
+  - M365-subscription-management
+  - Strat_O365_Enterprise
+ms.custom: null
 description: 创建 Microsoft 365 环境以测试标识和设备访问，含密码哈希同步身份验证的先决条件。
-ms.openlocfilehash: befdcecf2df21afdf48edff0b5b7dcbc532a6278
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208777"
 ---
+
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中密码哈希同步的标识和设备访问先决条件
 
 *本测试实验室指南只能用于Microsoft 365测试环境。*
 
-[标识和设备访问](../security/office-365-security/microsoft-365-policies-configurations.md)配置是一组配置和条件访问策略，用于保护对 Microsoft 365 中与 Azure AD Azure Active Directory (集成的所有服务) 。
+[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)是一组配置和条件访问策略，用于保护对 Microsoft 365 中与设备集成的所有服务Azure Active Directory (Azure AD) 。
 
-本文介绍如何配置满足Microsoft 365和密码哈希同步身份验证先决条件配置的标识和设备访问要求的测试环境。 [](../security/office-365-security/identity-access-prerequisites.md#prerequisites)
+本文介绍如何配置满足混合Microsoft 365密码哈希[同步身份验证先决条件](../security/office-365-security/identity-access-prerequisites.md#prerequisites)配置（用于标识和设备访问）的要求的测试环境。
 
 设置此测试环境有 10 个阶段：
 
@@ -37,8 +32,8 @@ ms.locfileid: "60208777"
 4. 配置密码写回服务
 5. 为所有用户帐户配置自助密码重置
 6. 为所有用户帐户配置多重身份验证
-7. 启用已加入域的计算机的自动Windows注册
-8. 配置 Azure AD 密码保护 
+7. 启用已加入域的计算机的Windows注册
+8. 配置Azure AD密码保护 
 9. 启用 Azure AD Identity Protection
 10. 启用 Exchange Online 和 Skype for Business Online 的新式身份验证
 
@@ -91,11 +86,11 @@ ms.locfileid: "60208777"
 
 按照[以下说明](/azure/active-directory/devices/hybrid-azuread-join-plan)启用已加入域的计算机的自动Windows注册。
 
-## <a name="phase-8-configure-azure-ad-password-protection"></a>第 8 阶段：配置 Azure AD 密码保护 
+## <a name="phase-8-configure-azure-ad-password-protection"></a>阶段 8：配置Azure AD密码保护 
 
 按照 [以下说明](/azure/active-directory/authentication/concept-password-ban-bad) 阻止已知的弱密码及其变体。
 
-## <a name="phase-9-enable-azure-ad-identity-protection"></a>第 9 阶段：启用 Azure AD Identity Protection
+## <a name="phase-9-enable-azure-ad-identity-protection"></a>第 9 阶段：Azure AD Identity Protection
 
 按照[“Azure AD Identity Protection”测试实验室指南的阶段 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) 中的说明操作。 
 
@@ -129,7 +124,7 @@ ms.locfileid: "60208777"
 
 [其他标识测试实验室指南](m365-enterprise-test-lab-guides.md#identity)
 
-[标识路线图](identity-roadmap-microsoft-365.md)
+[部署标识](deploy-identity-solution-overview.md)
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 

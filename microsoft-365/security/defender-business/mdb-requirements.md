@@ -7,27 +7,22 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 01/27/2022
+ms.date: 02/03/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: 'inbadian, shlomiakirav'
 f1.keywords: NOCSH
 ms.collection:
-- SMB
-- M365-security-compliance
-- m365initiative-defender-business
-ms.openlocfilehash: 0ee163d0b64aa0e0b3d077ee99f19102df3e2c20
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265447"
+  - SMB
+  - M365-security-compliance
+  - m365initiative-defender-business
 ---
+
 # <a name="microsoft-defender-for-business-preview-requirements"></a>Microsoft Defender for Business (预览) 要求
 
 > [!IMPORTANT]
-> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
@@ -45,19 +40,19 @@ ms.locfileid: "62265447"
 
 | 要求 | 说明 |
 |:---|:---|
-| 订阅 | Microsoft Defender for Business (预览版！) 。 请参阅[如何获取 Microsoft Defender for Business (预览) 。 ](get-defender-business.md)<br/><br/>**无需拥有另一个 Microsoft 365 订阅来试用 Microsoft Defender for Business** (预览) 。 |
+| 订阅 | Microsoft Defender for Business (预览版！) 。 请参阅 [如何获取 Microsoft Defender for Business (预览) ](get-defender-business.md)。<br/><br/>**无需拥有另一个 Microsoft 365 订阅来试用 Microsoft Defender for Business** (预览) 。<br/><br/>如果你有多个订阅，则优先使用最高订阅。 例如，如果你有 Microsoft Defender for Endpoint Plan 2 (或试用订阅) ，并且你获得 Microsoft Defender for Business (preview) ，则 Defender for Endpoint Plan 2 优先。 在这种情况下，你将看不到 Defender for Business (预览) 体验。  |
 | 数据中心版 | 以下数据中心位置之一： <br/>- 欧盟 <br/>- 英国 <br/>- 美国 |
-| 用户帐户 | 创建用户帐户<br/><br/>Microsoft Defender for Business (预览) 许可证已分配 <br/><br/>若要获取有关此内容的帮助，请参阅 [添加用户和分配许可证](../../admin/add-users/add-users.md)。 |
-| 权限  | 若要注册 Microsoft Defender for Business (预览) ，你必须是全局管理员。<br/><br/>若要访问Microsoft 365 Defender门户，用户必须分配有以下角色[Azure AD](mdb-roles-permissions.md)之一： <br/>- 安全读者<br/>- 安全管理员<br/>- 全局管理员<br/><br/>若要了解更多信息，请参阅 Microsoft Defender for Business 中的角色和权限[ (预览) 。 ](mdb-roles-permissions.md) |
+| 用户帐户 | 创建用户帐户<br/><br/>Microsoft Defender for Business (预览) 许可证已分配 <br/><br/>若要获取有关此任务的帮助，请参阅 [添加用户和分配许可证](../../admin/add-users/add-users.md)。 |
+| 权限  | 若要注册 Microsoft Defender for Business (预览) ，你必须是全局管理员。<br/><br/>若要访问Microsoft 365 Defender门户，用户必须分配有以下角色[Azure AD](mdb-roles-permissions.md)之一： <br/>- 安全读者<br/>- 安全管理员<br/>- 全局管理员<br/><br/>若要了解更多信息，请参阅 [Microsoft Defender for Business 中的角色和权限 (预览) ](mdb-roles-permissions.md)。 |
 | 浏览器要求 | Microsoft Edge 或 Google Chrome |
-| 操作系统 | 若要在 Microsoft Defender for Business (预览) 中管理设备，你的设备必须运行以下操作系统之一： <br/>- Windows 10 商业版或更高版本 <br/>- Windows 10 Professional或更高版本 <br/>- Windows 10 企业版或更高版本 <br/><br/>确保已安装[KB5006738。](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) <br/><br/>如果你已在 Microsoft Intune (或 Microsoft Endpoint Manager) 中管理设备，或者如果你使用的是非 Microsoft 设备管理解决方案，你的设备必须运行[Microsoft Defender for Endpoint](../defender-endpoint/minimum-requirements.md)中支持的操作系统之一。 |
-| 与 Microsoft Endpoint Manager  |  **在预览版中，可以使用** 本地脚本载入设备，这不需要与 Microsoft Endpoint Manager 集成。 但是，如果你计划使用 Microsoft Endpoint Manager、组策略、System Center Configuration Manager 或移动设备管理的可下载程序包手动将设备载入 Defender for Business (预览版) ，则必须满足以下要求： <br/><br/>设备必须在应用[KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) Windows 10 11 Professional/Enterprise (运行) 。 <br/><br/>Microsoft Defender for [Endpoint](/mem/intune/protect/mde-security-integration)的安全管理必须满足先决条件。<br/>- Azure AD配置此配置，以在公司的设备和设备之间创建Azure AD。 <br/>- Defender for Business (预览) 必须已启用安全Microsoft Endpoint Manager。<br/><br/>设备必须能够连接到以下 URL：<br/>- `enterpriseregistration.windows.net` (注册Azure AD) <br/>- `login.microsoftonline.com` (注册Azure AD) <br/>- `*.dm.microsoft.com` (通配符 (*) 支持用于注册、签入和报告以及随着服务扩展而更改的云服务终结点)  |
+| 操作系统 | 若要在 Microsoft Defender for Business (预览) 中管理设备，你的设备必须运行以下操作系统之一： <br/>- Windows 10 商业版或更高版本 <br/>- Windows 10 Professional或更高版本 <br/>- Windows 10 企业版或更高版本 <br/><br/>确保已安装 [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) 。 <br/><br/>如果你已在 Microsoft Intune (或 Microsoft Endpoint Manager) 中管理设备，或者如果你使用的是非 Microsoft 设备管理解决方案，你的设备必须运行 [Microsoft Defender for Endpoint](../defender-endpoint/minimum-requirements.md) 中支持的操作系统之一。 |
+| 与 Microsoft Endpoint Manager  |  **在预览版中，可以使用** 本地脚本载入设备，这不需要与Microsoft Endpoint Manager。 但是，如果你计划使用 Microsoft Endpoint Manager、组策略、System Center Configuration Manager 或移动设备管理的可下载程序包手动将设备载入 Defender for Business (预览版) ，则必须满足以下要求： <br/><br/>设备必须运行 11 Windows 10或 11 Professional/Enterprise (，并应用 [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541)) 。 <br/><br/>Microsoft [Defender for Endpoint 的安全管理必须满足先决条件](/mem/intune/protect/mde-security-integration)。<br/>- Azure AD配置此配置，以在公司的设备和设备之间创建Azure AD。 <br/>- Defender for Business (预览) 必须在 Microsoft Endpoint Manager 中启用安全管理。<br/><br/>设备必须能够连接到以下 URL：<br/>- `enterpriseregistration.windows.net` (注册Azure AD) <br/>- `login.microsoftonline.com` (注册Azure AD) <br/>- `*.dm.microsoft.com` (通配符 (*) 支持用于注册、签入和报告以及随着服务扩展而更改的云服务)  |
 
 > [!NOTE]
-> [Azure Active Directory (Azure AD) ](/azure/active-directory/fundamentals/active-directory-whatis)用于管理用户权限和设备组。 Azure AD包含在 Defender for Business (预览版) 订阅中。 
+> [Azure Active Directory (Azure AD) ](/azure/active-directory/fundamentals/active-directory-whatis)用于管理用户权限和设备组。 Azure AD包含在 Defender for Business 预览版 (订阅) 中。 
 > - 如果你在开始试用之前Microsoft 365订阅，Azure AD激活过程中预配你的订阅。 
-> - 如果你在启动 Defender for Business Microsoft 365预览版时， (其他) 订阅，可以使用现有的 Azure AD 服务。 
-> - 如果你在启动 Defender for [Business Microsoft 365 商业高级版](../../business/index.yml)预览版 () 试用版时使用的是 Microsoft Intune。 
+> - 如果你在启动 Defender for Business Microsoft 365预览版 (订阅时，) 另一个) 订阅，可以使用现有的 Azure AD 服务。 
+> - 如果你在启动 [Defender for Business Microsoft 365 商业高级版](../../business/index.yml)预览版 (试用版) 使用) ，可以选择在 Microsoft Intune 中管理设备。 
 
 ## <a name="next-steps"></a>后续步骤
 

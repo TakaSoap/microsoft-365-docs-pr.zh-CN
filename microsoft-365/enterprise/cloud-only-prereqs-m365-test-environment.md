@@ -2,7 +2,7 @@
 title: Microsoft 365 测试环境中仅限云的标识和设备访问先决条件
 author: kelleyvice-msft
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 manager: laurawi
 audience: ITPro
@@ -10,22 +10,17 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Strat_O365_Enterprise
-ms.custom: ''
+  - M365-subscription-management
+  - Strat_O365_Enterprise
+ms.custom: null
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附仅限云的身份验证的先决条件。
-ms.openlocfilehash: c684e8598f7dd23218143f9f7707c815d834fda5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172007"
 ---
+
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中仅限云的标识和设备访问先决条件
 
 *本测试实验室指南只能用于Microsoft 365测试环境。*
 
-[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)是一组建议配置和条件访问策略，用于保护对与 Azure AD Azure Active Directory (集成的所有服务) 。
+[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)是一组建议配置和条件访问策略，用于保护对与设备集成的所有服务Azure Active Directory (Azure AD) 。
 
 本文介绍了如何配置 Microsoft 365 测试环境，使其满足标识和设备访问[仅限云的先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites)的要求。
 
@@ -35,8 +30,8 @@ ms.locfileid: "60172007"
 2. 配置命名位置
 3. 配置自助密码重置
 4. 配置多重身份验证
-5. 启用已加入域的计算机的自动Windows注册
-6. 配置 Azure AD 密码保护 
+5. 启用已加入域的计算机的Windows注册
+6. 配置Azure AD密码保护 
 7. 启用 Azure AD Identity Protection
 8. 为 Exchange Online 和 Skype for Business Online 启用新式身份验证
 
@@ -81,7 +76,7 @@ ms.locfileid: "60172007"
 
 按照[以下说明](/azure/active-directory/devices/hybrid-azuread-join-plan)启用已加入域的计算机的自动Windows注册。
 
-## <a name="phase-6-configure-azure-ad-password-protection"></a>阶段 6：配置 Azure AD 密码保护 
+## <a name="phase-6-configure-azure-ad-password-protection"></a>第 6 阶段：Azure AD密码保护 
 
 按照 [以下说明](/azure/active-directory/authentication/concept-password-ban-bad) 阻止已知的弱密码及其变体。
 
@@ -119,7 +114,7 @@ ms.locfileid: "60172007"
 
 [其他标识测试实验室指南](m365-enterprise-test-lab-guides.md#identity)
 
-[标识路线图](identity-roadmap-microsoft-365.md)
+[部署标识](deploy-identity-solution-overview.md)
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 

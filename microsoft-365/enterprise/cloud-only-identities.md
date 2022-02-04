@@ -9,35 +9,32 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- Adm_O365
-- O365p_AddUsersWithDirSync
-- O365M_AddUsersWithDirSync
-- O365E_HRCSetupAADConnectAboutLM617031
-- O365E_AddUsersWithDirSync
+  - Adm_O365
+  - O365p_AddUsersWithDirSync
+  - O365M_AddUsersWithDirSync
+  - O365E_HRCSetupAADConnectAboutLM617031
+  - O365E_AddUsersWithDirSync
 ms.collection:
-- Ent_O365
-- M365-identity-device-management
+  - Ent_O365
+  - M365-identity-device-management
 search.appverid:
-- MET150
-- MOP150
-- MOE150
-- MBS150
+  - MET150
+  - MOP150
+  - MOE150
+  - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何在订阅使用仅云标识Microsoft 365创建用户和组。
-ms.openlocfilehash: 55c836b4508399a86144c677e2fe28fc529a935a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190577"
 ---
+
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365仅云标识
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-借助仅云标识，所有用户、组和联系人都存储在 Microsoft 365 订阅的 Azure Active Directory (Azure AD) 租户中。 以下是仅云标识的基本组件。
+如果你已选择仅云标识模型，则对于 Microsoft 365 订阅，你已经拥有一个 Azure Active Directory (Azure AD) 租户来存储所有用户、组和联系人。 在解决方案步骤 [2](protect-your-global-administrator-accounts.md) 和此解决方案的步骤 [3](microsoft-365-secure-sign-in.md) 中为管理员帐户设置保护后，现在可以开始创建组织所需的新帐户和组。
+
+以下是仅云标识的基本组件。
  
 ![仅云标识的基本组件。](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
@@ -51,12 +48,12 @@ ms.locfileid: "60190577"
 
 此外，可以将某些云服务与组织外部没有任何用户帐户的用户共享，而且你还需要标识这些用户组。
 
-可以将 Azure AD 中的组用于多个目的，以简化云环境的管理。 例如，对于 Azure AD 组，你可以：
+可以将 Azure AD 中的组用于多个目的，以简化云环境的管理。 例如，使用Azure AD组，您可以：
 
 - 使用基于组的许可，一旦添加为Microsoft 365，就会将用户的许可证自动分配给用户帐户。
 - 根据用户帐户属性（如部门名称）将用户帐户动态添加到特定组。
 - 自动为用户预配软件即服务 (SaaS) 应用程序，并保护使用多重身份验证 (MFA) 和其他条件访问策略访问这些应用程序。
-- 为联机团队网站设置SharePoint级别。
+- 为团队和联机团队网站SharePoint权限和访问权限级别。
 
 ## <a name="next-steps-for-cloud-only-identity"></a>仅云标识的以下步骤
 

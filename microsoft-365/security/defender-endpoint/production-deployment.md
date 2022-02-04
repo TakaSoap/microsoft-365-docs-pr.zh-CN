@@ -12,19 +12,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-scenario
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4e58cf272688a238a428fb6b15aed568b7fa51a4
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322055"
 ---
+
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置适用于终结点的 Microsoft Defender 部署
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -83,6 +78,9 @@ ms.locfileid: "62322055"
 
 从 Web 浏览器中，导航到Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>。
 
+## <a name="data-center-location"></a>数据中心位置
+Microsoft Defender for Endpoint 将在用户所使用的相同位置存储和处理[Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)。 如果Microsoft 365 Defender尚未打开，则载入 Microsoft Defender for Endpoint 也将打开 Microsoft 365 Defender 并且根据活动 Microsoft 365 安全服务的位置自动选择新的数据中心位置。 所选的数据中心位置会显示在屏幕上。
+
 ## <a name="network-configuration"></a>网络配置
 
 如果组织不要求终结点使用代理访问 Internet，请跳过此部分。
@@ -110,7 +108,7 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 1. 打开组策略管理控制台。
 2. 根据组织实践创建策略或编辑现有策略。
-3. 编辑组策略并导航 **\>到"管理模板"Windows组件\>"\>**"数据收集和预览版本"为连接的用户体验和遥测服务配置经过身份验证的代理用法。
+3. 编辑组策略并导航 **\>到"管理模板"Windows组件\>数据收集\>** 和预览版配置连接的用户体验和遥测服务的已验证代理用法。
 
    ![组策略配置的图像。](images/atp-gpo-proxy1.png)
 
@@ -158,7 +156,7 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>低级别设备的代理配置
 
-Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 以及 Windows Server 2016 之前的版本Windows 服务器 CB 1803。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
+Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 以及 Windows Server 2016 之前的 Windows Server 2016 Windows 服务器 CB 1803。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
 
 ### <a name="proxy-service-urls"></a>代理服务 URL
 

@@ -7,24 +7,17 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: null
 ms.collection:
-- enabler-strategic
-- m365initiative-syntex
+  - enabler-strategic
+  - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何在 SharePoint Syntex 中创建和配置预SharePoint Syntex。
-ms.openlocfilehash: bb557c9b98a265516da93e6e661caabf91994486
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322598"
 ---
+
 # <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-sharepoint-syntex"></a>使用预想的模型从 Microsoft 发票或收据中提取SharePoint Syntex
 
 预构建的模型经过预约束，可识别文档中的文档和结构化信息。 无需从头开始创建新的自定义模型，您可以对现有预约束模型进行访问，以添加满足组织需求的特定字段。 
-
-预内置模型使用光学字符识别 (OCR) 结合深度学习模型来标识和提取特定文档类型通用的预定义文本和数据字段。 首先，根据预内置模型分析其中一个文件。 然后，选择适合您用途的检测到的字段。 如果模型未检测到所需的字段，可以使用其他文件再次分析。
 
 目前，有两种预预的模型可用：发票和收据。
 

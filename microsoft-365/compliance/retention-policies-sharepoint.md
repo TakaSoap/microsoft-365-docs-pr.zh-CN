@@ -1,29 +1,24 @@
 ---
 title: 了解用于 SharePoint 和 OneDrive 的保留
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+  - M365-security-compliance
+  - SPO_Content
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: 了解用于 SharePoint 和 OneDrive 的保留的工作原理。
-ms.openlocfilehash: 18ada99844e7d342244d578d9cca76f68a28501c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322153"
 ---
+
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>了解用于 SharePoint 和 OneDrive 的保留
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
@@ -78,7 +73,9 @@ ms.locfileid: "62322153"
 
 - 允许用户删除标记项目的记录管理设置已关闭。
     
-    若要检查或更改此设置，请转到Microsoft 365 合规中心中的 **记录管理** 节点 > **记录管理** > **记录管理设置** > **保留标签** > **删除项目**。 有分别针对 SharePoint 和 OneDrive 的设置。
+    若要检查或更改此设置，请转到Microsoft 365 合规中心中的 **记录管理** 解决方案 > **记录管理** > **记录管理设置** > **保留标签** > **删除项目**。 有分别针对 SharePoint 和 OneDrive 的设置。
+    
+    或者，如果你无权访问 **记录管理** 解决方案，则可以在 [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant)和 [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant) 使用 *AllowFilesWithKeepLabelToBeDeletedSPO* 和 *AllowFilesWithKeepLabelToBeDeletedODB*。
 
 - 保留标签将项目标记为记录且为[锁定](record-versioning.md)状态。
     

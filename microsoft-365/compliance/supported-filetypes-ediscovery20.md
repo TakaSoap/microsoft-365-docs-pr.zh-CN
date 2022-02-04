@@ -1,31 +1,26 @@
 ---
 title: 支持的文件类型Advanced eDiscovery
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: 应用程序支持的文件类型Microsoft 365 Advanced eDiscovery，包括 OCR 功能支持的图像文件类型Advanced eDiscovery。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7462048816f8c5962453422506116e6e88d8a54c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938596"
 ---
+
 # <a name="supported-file-types-in-advanced-ediscovery"></a>支持的文件类型Advanced eDiscovery
 
-Advanced eDiscovery支持许多不同级别的许多文件类型。 支持文件类型在本文的下表中进行了介绍。 此列表尚未最终确定，我们将在继续验证测试时添加新的文件类型。 这些表指示文本提取 (以及图像文件) 的光学字符识别或 OCR 文本提取是否支持文件类型，在本机查看器中可查看，Advanced eDiscovery 中的注释查看器也支持此类型。
+Advanced eDiscovery许多不同级别支持许多文件类型。 支持文件类型在本文的下表中进行了介绍。 此列表尚未最终确定，我们将在继续验证测试时添加新的文件类型。 这些表指示文本提取 (以及图像文件) 的光学字符识别或 OCR 文本提取是否支持文件类型，该类型在本机查看器中可查看，Advanced eDiscovery 中的注释查看器也支持。
 
 ## <a name="archive--container"></a>存档/容器
 
@@ -248,6 +243,7 @@ Advanced eDiscovery支持许多不同级别的许多文件类型。 支持文件
 |Mime 类型|文件标识|元数据提取|文本提取|本机查看器|为查看器添加注释|可能的扩展|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/json|是|是|是|是|是|不适用|
+|application/octet-stream|是|否|否|否|否|.fluid|
 |application/vnd.ms-graph|是|是|否|否|否||
 |application/winhlp|是|是|否|否|否|.hlp|
 |application/x-tnef|是|是|否|否|否||

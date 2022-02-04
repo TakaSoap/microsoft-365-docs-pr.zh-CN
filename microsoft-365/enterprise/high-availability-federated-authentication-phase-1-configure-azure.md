@@ -10,20 +10,15 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
-- CSH
+  - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 摘要：配置 Microsoft Azure 基础结构，以承载 Microsoft 365。
-ms.openlocfilehash: b8a1bd473a84c382f8e609508298aaba44d0c85e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198441"
 ---
+
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
-在此阶段，你将在 Azure 中创建资源组、虚拟网络 (VNet) 和可用性集，这些组将在第 2、3 和 4 阶段托管虚拟机。 必须先完成此阶段，然后才能进入阶段 [2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
+在此阶段，你将在 Azure 中创建资源组、虚拟网络 (VNet) 和可用性集，这些组将在第 2、3 和 4 阶段托管虚拟机。 必须先完成此阶段，然后才能进入阶段 [2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 请参阅[在 Azure 中为 Microsoft 365部署高可用性](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)联合身份验证了解所有阶段。
   
 必须使用以下基本组件预配 Azure：
   
@@ -41,7 +36,7 @@ ms.locfileid: "60198441"
   
 |**项目**|**配置设置**|**说明**|**值**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |VNet 名称  <br/> |要分配给 VNet 名称的名称 (FedAuthNet) 。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |VNet 名称  <br/> |要分配给 VNet 实例的名称 (FedAuthNet) 。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |VPN 设备 IP 地址  <br/> |Internet 上 VPN 设备接口的公共 IPv4 地址。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |VNet 地址空间  <br/> |虚拟网络的地址空间。与 IT 部门协作，以确定该地址空间。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
@@ -57,13 +52,13 @@ ms.locfileid: "60198441"
     
 2. 将生成位转换为十进制并表示为一个地址空间，其中将前缀长度设置为网关子网的大小。
     
-有关 [执行此计算的](address-space-calculator-for-azure-gateway-subnets.md) PowerShell 命令块和 C# Python 控制台应用程序，请参阅 Azure 网关子网的地址空间计算器。
+有关 [执行此计算的](address-space-calculator-for-azure-gateway-subnets.md) PowerShell 命令块和 C# 或 Python 控制台应用程序，请参阅 Azure 网关子网的地址空间计算器。
   
 与 IT 部门协作以确定这些虚拟网络地址空间中的地址空间。
   
 |**项**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务使用的子网 (AD DS) 域控制器和目录同步服务器虚拟机 (VM) 。  <br/> |
+|1.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务 (AD DS) 域控制器和目录同步服务器虚拟机 (虚拟机) 。  <br/> |
 |2.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |AD FS VM 使用的子网。  <br/> |
 |3.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理 VM 使用的子网。  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |Azure 网关 VM 使用的子网。  <br/> |
@@ -85,7 +80,7 @@ ms.locfileid: "60198441"
    
  **表 I：虚拟网络中的静态 IP 地址**
   
-对于本地网络中最初设置域控制器时想要使用的两个域名系统 (DNS) 服务器，请填写表 D。与 IT 部门合作以确定此列表。
+对于本地网络中最初在虚拟网络中设置域控制器时想要使用的两个域名系统 (DNS) 服务器，请填写表 D。与 IT 部门合作以确定此列表。
   
 |**项**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
 |:-----|:-----|:-----|
@@ -94,7 +89,7 @@ ms.locfileid: "60198441"
    
  **表 D：本地 DNS 服务器**
   
-若要通过站点到站点 VPN 连接将数据包从跨界网络路由到组织网络，必须使用本地网络配置虚拟网络，该本地网络具有 CIDR 表示法 () 中所有可到达位置的地址空间) 列表。 定义本地网络的地址空间列表必须是唯一的，并且不能与其他虚拟网络或其他本地网络所使用的地址空间重叠。
+若要通过站点到站点 VPN 连接将数据包从跨界网络路由到组织网络，必须使用本地网络配置虚拟网络，该本地网络在 CIDR 表示法) 中具有地址空间 (的列表，这些地址空间位于组织本地网络的所有可到达位置。 定义本地网络的地址空间列表必须是唯一的，并且不能与其他虚拟网络或其他本地网络所使用的地址空间重叠。
   
 对于本地网络地址空间集，请填写表 L。请注意已列出三个空白条目，但通常需要更多。与 IT 部门协作，以确定该地址空间列表。
   
@@ -109,7 +104,7 @@ ms.locfileid: "60198441"
 现在，让我们开始构建 Azure 基础结构，以托管用于Microsoft 365。
   
 > [!NOTE]
-> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅[开始Azure PowerShell。](/powershell/azure/get-started-azureps) 
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅[开始Azure PowerShell](/powershell/azure/get-started-azureps)。 
   
 首先，启动 Azure PowerShell 提示符并登录到你的帐户。
   
@@ -159,25 +154,25 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 使用这些命令创建新的资源组。
   
 ```powershell
-$locName="<an Azure location, such as West US>&quot;
-$rgName=&quot;<Table R - Item 1 - Name column>&quot;
+$locName="<an Azure location, such as West US>"
+$rgName="<Table R - Item 1 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName=&quot;<Table R - Item 2 - Name column>&quot;
+$rgName="<Table R - Item 2 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName=&quot;<Table R - Item 3 - Name column>&quot;
+$rgName="<Table R - Item 3 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName=&quot;<Table R - Item 4 - Name column>&quot;
+$rgName="<Table R - Item 4 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
 接下来，创建 Azure 虚拟网络及其子网。
   
 ```powershell
-$rgName=&quot;<Table R - Item 4 - Resource group name column>&quot;
-$locName=&quot;<your Azure location>&quot;
-$vnetName=&quot;<Table V - Item 1 - Value column>&quot;
-$vnetAddrPrefix=&quot;<Table V - Item 4 - Value column>&quot;
-$dnsServers=@( &quot;<Table D - Item 1 - DNS server IP address column>&quot;, &quot;<Table D - Item 2 - DNS server IP address column>" )
+$rgName="<Table R - Item 4 - Resource group name column>"
+$locName="<your Azure location>"
+$vnetName="<Table V - Item 1 - Value column>"
+$vnetAddrPrefix="<Table V - Item 4 - Value column>"
+$dnsServers=@( "<Table D - Item 1 - DNS server IP address column>", "<Table D - Item 2 - DNS server IP address column>" )
 # Get the shortened version of the location
 $locShortName=(Get-AzResourceGroup -Name $rgName).Location
 
@@ -312,8 +307,8 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[用于开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365 解决方案和体系结构中心](../solutions/index.yml)
 
-[了解Microsoft 365标识Azure Active Directory](about-microsoft-365-identity.md)
+[了解Microsoft 365标识模型](deploy-identity-solution-identity-model.md)

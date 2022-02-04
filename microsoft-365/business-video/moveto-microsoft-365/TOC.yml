@@ -17,6 +17,6 @@
     - name: 将你的域连接到 Microsoft 365
       href: connect-domain-tom365.md
     - name: 使用迁移管理器移动每个人的数据
-      href: 'https://docs.microsoft.com/sharepointmigration/mm-google-overview'
+      href: migrate-files-migration-manager.md
     - name: 取消 Google Workspace
       href: cancel-google.md

@@ -9,16 +9,11 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: e2d1a6d2817d4e117bb80c737e71958c7a80ce75
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346286"
 ---
+
 # <a name="microsoft-onedrive"></a>Microsoft OneDrive
 
-Microsoft 托管桌面将[OneDrive for Business](/onedrive/plan-onedrive-enterprise)用作所有云存储设备的Microsoft 托管桌面服务。 它确保设备尽可能无状态。 无论用户登录哪个设备，用户都将能够找到其文件。 例如，如果你将Microsoft 托管桌面设备替换为新设备，文件将自动同步到新设备。
+Microsoft 托管桌面将 [OneDrive for Business](/onedrive/plan-onedrive-enterprise) 用作所有云设备的云Microsoft 托管桌面服务。 它确保设备尽可能无状态。 无论用户登录哪个设备，用户都将能够找到其文件。 例如，如果你将 Microsoft 托管桌面设备替换为新设备，文件将自动同步到新设备。
 
 默认情况下，我们在 Microsoft 托管设备上自动配置这些设置：
 
@@ -30,16 +25,19 @@ Microsoft 托管桌面将[OneDrive for Business](/onedrive/plan-onedrive-enterpr
 
 ## <a name="user-experience"></a>用户体验
 
-当用户Microsoft 托管桌面新设备时，他们通过输入其 Azure 凭据在设置设备时经历首次运行体验。 此过程完成后，他们可以访问其桌面并拥有OneDrive体验。
+当用户Microsoft 托管桌面设备时，他们通过输入 Azure 凭据在设置设备时经历首次运行体验。 此过程完成后，他们可以访问其桌面并拥有OneDrive体验。
 
-1. 系统告知用户OneDrive已配置，并且已自动登录到OneDrive。
+1. 系统告知用户OneDrive已配置用户，并且已自动登录到OneDrive。
+
 :::image type="content" source="media/onedrive-sync.png" alt-text="通知阅读您现在正在同步OneDrive您可以在 OneDrive 中编辑文件。单击此处查看文件。":::
 
-2. 系统告知用户，OneDrive已配置已知文件夹移动。
+2. 系统告知用户OneDrive已配置已知文件夹移动。
+
 :::image type="content" source="media/onedrive-folders.png" alt-text="阅读你的 IT 部门备份重要文件夹的通知。现在，这些文件夹已备份OneDrive设备提供。":::
 
 3. 为了防止在重置或重新映像设备时在桌面上复制图标，系统会自动从Microsoft Edge中删除Microsoft Teams图标OneDrive 同步。此信息显示在文件资源管理器中。
-:::image type="content" source="media/onedrive-teams.png" alt-text="文件资源管理器显示Teams复选框和鼠标悬停文本从同步中排除的边缘列表。":::
+
+:::image type="content" source="media/onedrive-teams.png" alt-text="文件资源管理器显示Teams复选框和鼠标悬停文本从同步中排除的边缘列表和边缘列表。":::
 
 ## <a name="onedrive-sync-restrictions"></a>OneDrive 同步限制
 
