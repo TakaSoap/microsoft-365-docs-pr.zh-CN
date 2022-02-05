@@ -1,34 +1,29 @@
 ---
 title: 支付订阅费用
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: 'jkinma, jmueller'
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- M365-subscription-management
-- Adm_O365
+  - M365-subscription-management
+  - Adm_O365
 search.appverid: MET150
 description: 使用信用卡、借记卡或银行账户支付 Microsoft 365 商业版订阅费用，或在某些情况下，使用发票支付。
 ms.custom:
-- okr_SMB
-- fwlink 808700 for SEPA UI glink 906 for older uI
-- AdminSurgePortfolio
-- commerce_billing
-- AdminTemplateSet
+  - okr_SMB
+  - fwlink 808700 for SEPA UI glink 906 for older uI
+  - AdminSurgePortfolio
+  - commerce_billing
+  - AdminTemplateSet
 ms.date: 10/28/2021
-ms.openlocfilehash: cff5ad543b2f3b007d8ed328cae552f07faaa49b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704811"
 ---
+
 # <a name="how-to-pay-for-your-subscription"></a>如何支付订阅费用
 
 > [!IMPORTANT]
@@ -48,7 +43,7 @@ ms.locfileid: "60704811"
 > [!IMPORTANT]
 > 某些国家或地区不支持银行帐户支付。
 
-可使用信用卡、借记卡或银行账户支付订阅费用。 当使用这些付款方式之一付款时，我们将继续向该付款方式收取费用，直到订阅到期或取消。 你可以随时[管理付款方式](manage-payment-methods.md)。 也可选择[以电子邮件方式接收账单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。
+可使用信用卡、借记卡或银行账户支付订阅费用。 当使用这些付款方式之一付款时，我们将继续向该付款方式收取费用，直到订阅到期或取消。 你可以随时[管理付款方式](manage-payment-methods.md)。 还可以选择[将组织发票作为电子邮件附件接收](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)。
 
 ## <a name="paying-by-invoice"></a>按发票付款
 
@@ -65,7 +60,7 @@ ms.locfileid: "60704811"
 >
 > 如果想要的话，可通过账户间电子转账来付款。 代理和账户编号位于发表的底部。 必须在“转账标识”字段中输入账单编号。
 
-如果按发票支付订阅费用，你将在计费账单可供查看时收到电子邮件。此电子邮件不包含帐单的副本。但是你可以选择[以电子邮件方式接收帐单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。计费帐单包括支付选项和支付路径的详细信息。如果购买订阅时输入了采购订单 (PO) 编号，则该编号会显示在帐单中。若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
+如果通过发票支付订阅，当账单可以查看时，则会收到一封电子邮件。 这封邮件不包含账单副本。 但是，你可以选择[将组织发票作为电子邮件附件接收](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)。 账单中包含了关于付款选择以及付款地点的详细信息。 如果购买订阅时输入了采购订单 (PO) 编号，则该编号会显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>如果我有未结余额，该怎么办？
 

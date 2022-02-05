@@ -1,7 +1,7 @@
 ---
 title: 适用于由世纪互联运营的 Office 365 的 Azure 信息保护支持
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: sharik
 author: skjerland
 manager: scotv
@@ -10,23 +10,18 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Adm_O365
-- Adm_NonTOC
+  - M365-subscription-management
+  - Adm_O365
+  - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- MET150
-- GEU150
-- GEA150
+  - MET150
+  - GEU150
+  - GEA150
 description: 深入了解适用于由世纪互联运营的 Office 365 的 Azure 信息保护 （AIP） 以及如何为中国客户进行配置。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 44681286bce5e16a08f7400a2dbb083288a6f3b7
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321215"
 ---
+
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>适用于由世纪互联运营的 Office 365 的 Azure 信息保护支持
 
 本文介绍了 Azure 信息保护 （AIP） 对由世纪互联运营的 Office 365 和商业产品/服务之间的差异，以及为中国&mdash;客户配置 AIP 的详细说明，包括如何安装 AIP 本地扫描仪和管理内容扫描作业。
@@ -53,9 +48,9 @@ ms.locfileid: "62321215"
 
 - Azure 门户的 AIP 区域不可用于中国客户。 使用 [PowerShell 命令](#step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs)而不是在门户中执行操作，例如管理和运行内容扫描作业。
 
-- 由世纪Office 365的云中的 AIP 终结点不同于其他云服务所需的终结点。 需要从客户端到以下终结点的网络连接：
+- 由世纪互联运营的 Office 365 中的 AIP 终结点不同于其他云服务所需的终结点。 需要从客户端到以下终结点的网络连接：
     - 下载标签和标签策略： `*.protection.partner.outlook.cn`
-    - Azure 权限管理服务： `*.aadrm.cn`
+    - Azure Rights Management 服务： `*.aadrm.cn`
 
 ## <a name="configure-aip-for-customers-in-china"></a>为中国的客户配置 AIP
 
