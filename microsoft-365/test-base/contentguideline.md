@@ -7,19 +7,13 @@ ms.author: mapatel
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
-ms.date: 07/06/2021
+ms.date: 02/04/2022
 ms.service: virtual-desktop
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
-ms.custom: ''
+ms.custom: null
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 156122ad2b5d92a4a093e92c64b55219238c8ee0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211773"
 ---
 # <a name="test-package-guidelines"></a>测试包指南
 
@@ -75,7 +69,7 @@ ms.locfileid: "60211773"
 
 **功能测试：** 应用程序包至少需要包含一个 PowerShell 脚本。 如果提供了多个脚本，脚本将按上载顺序运行，并且特定脚本中的失败将阻止后续脚本的执行。
 
-### <a name="script-requirements"></a>脚本要求
+### <a name="script-requirements"></a> 脚本要求
 
 - PowerShell 版本 5.1 及以上
 - 无人参与执行
@@ -97,23 +91,27 @@ ms.locfileid: "60211773"
 
 ## <a name="3-log-collection"></a>3. 日志集合
 
-每个脚本都应将生成的任何日志输出到名为 的文件夹中 `logs` 。 将复制目录中名为 的所有文件夹， `logs` 并呈现在页面上进行 `Test Results` 下载。
+每个脚本都应将生成的任何日志输出到名为 的文件夹中 `logs`。 将复制目录中名为 `logs` 的所有文件夹，并呈现在页面上进行 `Test Results` 下载。
 
-例如，可能位于 **App/scripts/install** 目录中的安装脚本)  (可以将其日志输出到 **：logs/install.log，** 这样最终日志将位于 **：Apps/scripts/install/logs/install.log**
+例如，可能位于 **App/scripts/install** 目录中的安装脚本)  (可以将其日志输出到： **logs/install.log**，这样最终日志将位于： **Apps/scripts/install/logs/install.log**
 
-系统将选取文件以及其他文件夹中的其他文件， `install.log` `logs` 并整理该文件进行下载。
+系统将选取文件以及其他`install.log``logs`文件夹中的其他文件，并整理该文件进行下载。
 
 ## <a name="4-application-binaries"></a>4. 应用程序二进制文件
 
 任何二进制文件和依赖项都应包含在单个 zip 文件中。
 
-这些二进制文件应包括安装应用程序组件所需的一 (，例如应用程序安装程序) 。 如果应用程序依赖于任何框架，如 .NET Core/Standard 或 .NET Framework，则这些框架应包含在文件中，并正确引用提供的脚本。
+这些二进制文件应包括安装应用程序应用程序所需的一 (例如，应用程序安装程序) 。 如果应用程序依赖于任何框架，如 .NET Core/Standard 或 .NET Framework，则这些框架应包含在文件中，并正确引用提供的脚本。
 
 > [!NOTE]
 > 上载的 zip 文件的名称中不能包含任何空格或特殊字符
+
+## <a name="5-applicationtest-rules"></a>5. 应用程序/测试规则
+
+为了使应用程序/测试在测试基础基础结构下正常运行，它们必须遵守应用程序/测试规则 [中所述的规则 ](rules.md)。 
 
 ## <a name="next-steps"></a>后续步骤
 
 前进到下一篇文章以查看一些常见问题 (**常见问题)**
 > [!div class="nextstepaction"]
-> [下一步](faq.md)
+> [后续步骤](faq.md)

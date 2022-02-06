@@ -1,7 +1,7 @@
 ---
 title: Windows 和 Office 365 部署实验室工具包
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: greglin
 author: greg-lindsay
 manager: dougeby
@@ -11,27 +11,20 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- Ent_O365
-- Strat_O365_Enterprise
-ms.custom: ''
+  - Ent_O365
+  - Strat_O365_Enterprise
+ms.custom: null
 description: 了解从何处访问 Windows Office 部署实验室工具包。
-ms.openlocfilehash: b122129cc27795fbbbe1c46c48f2e4c44cc5a848
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578131"
 ---
+
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows 和 Office 365 部署实验室工具包
 
-Windows 和 Office 365 部署实验室工具包旨在帮助你规划、测试和验证运行 Windows 10 企业版 或 Windows 11 Enterprise 和 Microsoft 365 企业应用版 的桌面的部署Microsoft 365 企业应用版。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、桌面分析、Office自定义工具、OneDrive、Windows Autopilot 等。
-
-强烈建议准备升级到 Windows 8.1 的组织Windows 10。 如果当前使用的是 2019 Windows 10、Microsoft 365 企业应用版 (或 Office 365 专业增强版) ，Office适用。 作为隔离环境，生成的实验室非常适合探索部署工具更新和测试与部署相关的自动化。
+Windows和 Office 365 部署实验室工具包旨在帮助你规划、测试和验证运行 Windows 10 企业版 或 Windows 11 Enterprise 和 Microsoft 365 企业应用版 的桌面的部署Microsoft 365 企业应用版。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、Office 自定义工具、OneDrive、Windows Autopilot 等。 强烈建议准备桌面升级的组织使用本工具包。 作为独立环境，实验室还非常适合探索部署工具更新和测试与部署相关的自动化。
 
 **Windows 10 Microsoft Windows 11中心中可免费下载实验室工具包的最新版本和最新版本。**
 
-[下载 Windows 10 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
-[下载 Windows 11 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
+[下载 Windows 10 和 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
+[下载 Windows 11 和 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 ## <a name="a-complete-lab-environment"></a>完整的实验室环境
 
@@ -41,7 +34,7 @@ Windows 和 Office 365 部署实验室工具包旨在帮助你规划、测试和
 |Windows 10 Lab  |Windows 11 Lab  |
 |---------|---------|
 |Windows 10 企业版，版本 21H1      | Windows 11 企业版        |
-|Microsoft Endpoint Configuration Manager，版本 2103     |  Microsoft Endpoint Configuration Manager，版本 2107      | 
+|Microsoft Endpoint Configuration Manager，版本 2103     |  Microsoft Endpoint Configuration Manager，版本 2111      | 
 |适用于 Windows 10 的 Windows 评估和部署工具包     |  Windows评估和部署工具包Windows 11      | 
 |Windows Server 2019     |  Windows Server 2022      | 
 
@@ -53,39 +46,25 @@ Windows 和 Office 365 部署实验室工具包旨在帮助你规划、测试和
 
 ## <a name="step-by-step-labs"></a>分步实验室
 
-详细的实验室指南会带你了解多个部署和管理方案。 实验室已针对 Intune 和 Configuration Manager 的最新版本进行了更新。
-
-注意：Windows 11版本包括Windows 10指南。 即将Windows 11实验室指南的最新版本。 
+详细的实验室指南会带你了解多个部署和管理方案。 实验室已针对 Intune 和 Configuration Manager 的最新版本进行了更新。 注意：现在Windows 11新版实验室。 实验室指南包括以下方案： 
 
 ### <a name="plan-and-prepare-infrastructure"></a>计划和准备基础结构
 
-- 桌面分析
-- 云管理网关&云分发点
-- 新增内容！ 租户附加和共同管理
-- 新增内容！ 终结点分析
-- 远程访问 (VPN)
+- 云管理网关 
+- 租户附加和共同管理
+- 终结点分析
+- 优化更新传递
 
-### <a name="prepare-configuration"></a>准备配置
+### <a name="deploy-windows"></a>部署Windows 
 
-- 优化 Windows 10 更新交付
-- 使用Windows 10策略的服务策略
-- 使用Windows 10服务Microsoft Intune
-- 使用Windows 10管理器维护服务
-- 使用Microsoft 365 企业应用版管理器维护服务
-- 使用 intune Microsoft 365 企业应用版服务服务
-- 安全性和合规性
-
-### <a name="prepare-applications"></a>准备应用程序
-
-- Toolkit准备情况Office
-- WIN32 应用程序的 MSIX 打包和转换
-
-### <a name="deploy-windows-10"></a>部署 Windows 10
-
-- Configuration Manager 中的 OS 部署任务序列
-- Microsoft Deployment Toolkit (MDT) 中的 OS 部署任务序列
+- Configuration Manager 中的操作系统部署任务序列
 - Windows Autopilot
-- 部署和管理新Microsoft Edge
+
+### <a name="service-windows"></a>服务Windows 
+
+- 使用Windows维护服务
+- 使用Windows服务Microsoft Intune
+- 使用Windows管理器维护服务
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>部署 Microsoft 365 企业应用版
 
@@ -94,20 +73,30 @@ Windows 和 Office 365 部署实验室工具包旨在帮助你规划、测试和
 - Microsoft 365 企业应用版未加入 AD 的设备上部署
 - Enterprise Configuration Manager 管理部署
 - Enterprise托管部署Microsoft Intune
+- 使用Microsoft 365 企业应用版管理器的服务服务
+- 使用 Intune Microsoft 365 企业应用版服务服务
 - LOB 部署和管理与Microsoft Intune
 - 部署Microsoft Teams
-- 新增内容！ 工作分配筛选器
+- 工作分配筛选器
 
-### <a name="deploy-windows-virtual-desktop"></a>部署Windows虚拟桌面
+### <a name="managing-microsoft-edge"></a>管理Microsoft Edge 
 
-- 准备、部署、优化
+- 部署和更新边缘    
+- IE 模式
+- 设置Enterprise新选项卡页 
+
+### <a name="security-and-compliance"></a>安全性和合规性 
+
+- BitLocker 
+- Microsoft Defender 防病毒  
+- Windows Hello 企业版    
 
 ## <a name="download-the-lab"></a>下载实验室
-[下载 Windows 10 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
-[下载 Windows 11 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
+[下载 Windows 10 和 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
+[下载 Windows 11 和 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]
-> 请使用宽带 Internet 连接下载此内容，并允许自动预配 30-45 分钟。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 实验室Windows 10 2022 年 2 月 15 日过期。 实验室Windows 11 2022 年 3 月 10 日到期。 新版本将在过期前发布。
+> 请使用宽带 Internet 连接下载此内容，并允许大约 30 分钟进行自动预配。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 实验室Windows 10 2022 年 2 月 15 日过期。 实验室Windows 11 2022 年 4 月 11 日到期。 新版本将在过期前发布。
 
 ## <a name="additional-guidance"></a>其他指南
 

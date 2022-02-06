@@ -10,20 +10,16 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar, jcedola
+ms.reviewer: 'oogunrinde, sugamar, jcedola'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.date: 1/18/2022
-ms.openlocfilehash: ce8bfd2d9b2fc7b45c1fecef69588ba1b834b91b
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320711"
+ms.date: 02/04/2022
 ---
+
+
 # <a name="attack-surface-reduction-rules-reference"></a>攻击面减少规则参考
 
 **适用于：**
@@ -208,10 +204,13 @@ GUID：`d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 此规则通过锁定 LSASS 应用程序的本地安全机构子系统服务 (凭据) 。
 
-LSASS 对登录 Windows进行身份验证。 Microsoft Defender Credential Guard Windows通常会阻止尝试从 LSASS 中提取凭据。 但是，某些组织无法在所有计算机上启用 Credential Guard，因为自定义智能卡驱动程序或其他加载到本地安全机构 (LSA) 的程序的兼容性问题。 在这些情况下，攻击者可以使用 Mimikatz 等黑客工具从 LSASS 中清除明文密码和 NTLM 哈希。
+LSASS 对登录 Windows进行身份验证。 Microsoft Defender Credential Guard Windows通常会阻止尝试从 LSASS 提取凭据。 但是，某些组织无法在所有计算机上启用 Credential Guard，因为自定义智能卡驱动程序或其他加载到本地安全机构 (LSA) 。 在这些情况下，攻击者可以使用 Mimikatz 等黑客工具从 LSASS 中清除明文密码和 NTLM 哈希。
 
 > [!NOTE]
 > 在某些应用中，该代码枚举所有正在运行的进程，并尝试以详尽的权限打开它们。 此规则拒绝应用的进程打开操作，将详细信息记录到安全事件日志中。 此规则会产生大量噪音。 如果你的应用仅枚举 LSASS，但在功能方面没有实际影响，则无需将其添加到排除列表。 此事件日志条目本身不一定表示恶意威胁。
+  
+> [!IMPORTANT]
+> 攻击面减少 (ASR) 规则"阻止从 Windows 本地安全机构子系统 (lsass.exe) 窃取凭据"的默认状态将从"未配置"更改为"已配置"，默认模式将设置为"阻止 **"**。 所有其他 ASR 规则将保持其默认状态： **未配置**。 规则中已包含其他筛选逻辑，以减少最终用户通知。 客户可以将规则配置为 **审核****、警告** 或 **禁用** 模式，这将覆盖默认模式。 无论规则是在默认状态下配置的，还是手动启用阻止模式，此规则的功能都是相同的。  
 
 Intune 名称： `Flag credential stealing from the Windows local security authority subsystem`
 
@@ -231,7 +230,7 @@ GUID：`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 此规则阻止从 Microsoft Outlook 应用程序、Outlook.com 和其他热门 Web 邮件提供程序内打开的电子邮件启动以下文件类型：
 
 - 可执行文件 (，如 .exe、.dll 或 .scr) 
-- 脚本文件 (如 PowerShell .ps、Visual Basic .vbs 或 JavaScript .js文件) 
+- 脚本文件 (如 PowerShell .ps、Visual Basic .vbs 或 JavaScript .js 文件) 
 
 Intune 名称： `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
@@ -249,7 +248,7 @@ GUID：`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 > [!NOTE]
 > 规则 **"阻止来自电子邮件客户端和 Webmail** 的可执行内容"具有以下替代说明，具体取决于你使用的应用程序：
 >
-> - Intune (Configuration Profiles) ：执行从电子邮件 (webmail/mail 客户端删除的可执行内容 (exe、dll、ps、js、v ) bs 等)  () 。
+> - Intune (Configuration Profiles) ：执行从电子邮件 (webmail/mail 客户端)  (删除的可执行内容 (exe、dll、ps、js、vbs 等 ) ) 。
 > - Endpoint Manager：阻止从电子邮件和 Webmail 客户端下载可执行内容。
 > - 组策略：阻止来自电子邮件客户端和 Webmail 的可执行内容。
 
@@ -359,7 +358,7 @@ GUID：`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>阻止Office应用程序创建子进程
 
-此规则阻止Outlook创建子进程，同时仍允许合法Outlook功能。
+此规则阻止Outlook子进程，同时仍允许合法Outlook进程。
 
 此规则可防止社会工程攻击，并防止利用代码滥用Outlook。 它还[可Outlook用户](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)凭据泄露时攻击者可能使用的规则和表单攻击。
 
@@ -406,7 +405,7 @@ GUID：`e6db77e5-3df2-4cf1-b95a-636979351e5b`
 此规则阻止通过 [PsExec](/sysinternals/downloads/psexec) 和 [WMI 创建](/windows/win32/wmisdk/about-wmi) 的进程运行。 PsExec 和 WMI 都可以远程执行代码，因此存在恶意软件滥用此功能以用于命令和控制目的，或在整个组织的网络中传播感染的风险。
 
 > [!WARNING]
-> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置[管理器Microsoft Endpoint Configuration Manager管理](/configmgr)不兼容，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
+> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置[管理器Microsoft Endpoint Configuration Manager，](/configmgr)因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
 
 Intune 名称： `Process creation from PSExec and WMI commands`
 

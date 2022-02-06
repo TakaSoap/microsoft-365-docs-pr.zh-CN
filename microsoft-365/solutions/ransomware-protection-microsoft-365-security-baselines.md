@@ -2,7 +2,7 @@
 title: 步骤 1. 配置安全基线
 author: JoeDavies-MSFT
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: josephd
 manager: dansimp
 audience: ITPro
@@ -10,20 +10,15 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- Strat_O365_Enterprise
-- ransomware
-- m365solution-ransomware
+  - M365-security-compliance
+  - Strat_O365_Enterprise
+  - ransomware
+  - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
 description: 使用安全基线来保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: bd988f70dacc1ad2a7645b09c9d9994315b5a4df
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667790"
 ---
+
 # <a name="step-1-configure-security-baselines"></a>步骤 1. 配置安全基线
 
 作为应对勒索软件攻击者的第一步，必须配置以下 Microsoft 定义的安全基线：
@@ -38,7 +33,7 @@ ms.locfileid: "60667790"
 
 首先，使用 [Microsoft 安全功能分数](/microsoft-365/security/defender/microsoft-secure-score)评估和衡量安全状况，并根据需要按照说明进行改进。
 
-接下来，使用 [攻击面减少规则](/microsoft-365/security/defender-endpoint/attack-surface-reduction) 帮助阻止可疑活动和易受攻击的内容。这些规则包括阻止：
+接下来，使用 [攻击面减少规则](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) 帮助阻止可疑活动和易受攻击的内容。这些规则包括阻止：
 
 - 所有 Office 应用程序创建子进程
 - 来自电子邮件客户端和 Web 邮件的可执行内容

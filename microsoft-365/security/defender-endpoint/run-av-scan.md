@@ -15,13 +15,8 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 13ec18a89080793637db2ee3dabbb992778ad4dc
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320759"
 ---
+
 # <a name="run-antivirus-scan-api"></a>运行防病毒扫描 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "62320759"
 > [!IMPORTANT]
 >
 > - 此操作适用于 Windows 10 版本 1709 或更高版本以及 Windows 11。
-> - Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，Microsoft Defender 防病毒是活动的防病毒解决方案。 Microsoft Defender 防病毒处于被动模式。 有关详细信息，请参阅Microsoft Defender 防病毒[兼容性](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide)。
+> - Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，Microsoft Defender 防病毒是活动的防病毒解决方案。 Microsoft Defender 防病毒处于被动模式。 有关详细信息，请参阅Microsoft Defender 防病毒[兼容性](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)。
 
 ## <a name="permissions"></a>权限
 

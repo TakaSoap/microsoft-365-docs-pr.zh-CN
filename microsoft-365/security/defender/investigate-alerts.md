@@ -7,26 +7,20 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-- MOE150
+  - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 2dcc7e57182df3fe0a06bb1713b3a0786f35e144
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156132"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>调查警报Microsoft 365 Defender
 
@@ -39,24 +33,28 @@ ms.locfileid: "62156132"
 
 在Microsoft 365 Defender中，相关警报聚合在一起以形成[事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。 
 
-警报 **队列** 显示当前警报集。 在快速启动 Microsoft 365 Defender 门户时，你可以从事件&警报>警报"<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">进入Microsoft 365 Defender队列</a>。
+警报 **队列** 显示当前警报集。 在快速启动 & 门户时，你可以从&警报>警报"进入<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">警报Microsoft 365 Defender队列</a>。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="报告门户中的警报队列Microsoft 365 Defender示例。":::
 
 来自不同 Microsoft 安全解决方案（如 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft 365 Defender）的警报将在此处显示。
 
-默认情况下，Microsoft 365 Defender门户中的警报队列显示过去 30 天内的新警报和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
+默认情况下，通知门户中的警报Microsoft 365 Defender显示过去 30 天内新的和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
 
 从默认警报队列中，可以选择"筛选器"以查看"筛选器"窗格，可以从中指定警报的子集。 下面是一个示例。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="通知门户中警报队列的筛选器窗格Microsoft 365 Defender示例。":::
+
+<!--
+UPDATE SCREENSHOT
+--> 
 
 你可以根据以下条件筛选警报：
 
 - Severity
 - 状态
 - 服务源
-- 影响的资产
+- 实体 (影响的资产) 
 - 自动调查状态
 
 ## <a name="required-roles-for-defender-for-office-365-alerts"></a>Defender for Office 365 警报所需的角色
@@ -96,7 +94,7 @@ ms.locfileid: "62156132"
 - 警报情景，它是与此警报相关的事件和警报链（按时间顺序）
 - 摘要详细信息
 
-在整个警报页面中，可以选择任意实体旁边的省略号 (**...)** 以查看可用操作，例如打开警报页面或将警报链接到其他事件。
+在整个警报页面中，可以选择任意实体旁边的省略号 (**...**) 以查看可用操作，例如打开警报页面或将警报链接到其他事件。
 
 ### <a name="alert-sources"></a>警报源
 
@@ -117,7 +115,7 @@ Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Micro
 
 " **已采取** 操作"部分包含受影响资产的列表，如受此警报影响的邮箱、设备和用户。 
 
-还可以选择"**在** 操作中心中查看"以查看操作中心的"历史记录"**选项卡，Microsoft 365 Defender** 门户。 
+还可以选择"**在操作中心中** 查看"以查看操作中心的"历史记录"选项卡，Microsoft 365 Defender门户。 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>跟踪警报情景中的警报角色
 
@@ -142,7 +140,7 @@ Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Micro
 
 - 警报状态 (新建、已解决、正在进行) 。
 - 已分配警报的用户帐户。
-- 警报的分类 (未设置，为真警报，假警报) 。
+- 警报的分类 (未设置、真警报、假警报) 。
 - 对于分类为真正的警报，为"确定"字段中警报 **的威胁** 类型。
 - 对警报的注释。
 
@@ -167,7 +165,7 @@ Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Micro
 
 ## <a name="resolve-an-alert"></a>解决警报
 
-分析完警报并可以解决后，请转到警报的"管理警报"窗格，将其状态标记为"已解决"，并分类为 **"False** 警报"或"**真警报"。**  对于真正的警报，在"确定"字段中指定警报 **的威胁** 类型。
+分析完警报并可以解决后，请转到警报的"管理警报"窗格，将状态标记为"已解决"，并分类为 **"False** 警报"或"**真警报"**。 对于真正的警报，在"确定"字段中指定警报 **的威胁** 类型。
 
 对警报进行分类并指定它们的决定有助于调整Microsoft 365 Defender，以便提供更多真实警报和更少的假警报。
 
@@ -187,9 +185,9 @@ SecOps (新式安全) 团队需要自动化才能高效工作。 为了专注于
 
 若要创建自动化，你将需要一个 API 令牌，然后才能Power Automate Microsoft Defender for Cloud Apps。
 
-1. 单击 **设置"，** 选择"**安全扩展"，** 然后单击"API令牌"选项卡中的"**添加令牌**"。
+1. 单击 **设置**"，选择"**安全扩展"**，然后单击"API 令牌"选项卡中的"**添加令牌**"。
 
-2. 为令牌提供名称，然后单击"生成 **"。** 保存令牌，因为稍后将需要它。
+2. 为令牌提供名称，然后单击"生成 **"**。 保存令牌，因为稍后将需要它。
 
 ### <a name="create-an-automated-flow"></a>创建自动化流
 
@@ -199,7 +197,7 @@ SecOps (新式安全) 团队需要自动化才能高效工作。 为了专注于
 
 ## <a name="next-steps"></a>后续步骤
 
-如果需要处理内事件，请继续执行 [调查](investigate-incidents.md)。
+如果需要处理内事件，请[继续调查。](investigate-incidents.md)
 
 ## <a name="see-also"></a>另请参阅
 

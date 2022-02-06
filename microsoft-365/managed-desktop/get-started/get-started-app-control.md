@@ -1,6 +1,6 @@
 ---
 title: 开始使用应用程序控制
-description: null
+description: 本文介绍如何启用应用控件
 keywords: 'Microsoft 托管桌面, Microsoft 365, 服务, 文档'
 ms.service: m365-md
 author: tiaraquan
@@ -26,7 +26,7 @@ IT 管理员必须在测试圈中测试你的应用，并查看日志中是否�
 
 ### <a name="devices-not-yet-in-use"></a>尚未使用的设备
 
-如果尚未使用任何设备，请通过 Microsoft 托管桌面 Operations 打开支持票证，以请求打开应用控制。 按照此计划，操作将逐步将策略部署到部署组：
+如果尚未使用任何设备，请通过 Microsoft 托管桌面 操作打开支持票证，以请求打开应用控制。 按照此计划，操作将逐步将策略部署到部署组：
 
 | 部署组 | 策略类型 | Timing |
 | ------ | ------ | ------ |

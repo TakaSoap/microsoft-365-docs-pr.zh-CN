@@ -16,7 +16,7 @@ audience: Admin
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 
 >[!NOTE]
->本文介绍了重复使用已拥有的设备的步骤，并在 Microsoft 托管桌面。 如果你使用全新的设备，请改为按照在设备上注册新Microsoft 托管桌面[中的步骤](register-devices-self.md)操作。 <br> <br> 合作伙伴流程记录在合作伙伴 [注册设备的步骤中](register-devices-partner.md)。
+>本文介绍了重新使用已有设备的步骤，并在 Microsoft 托管桌面。 如果你使用全新的设备，请改为按照在设备上注册新Microsoft 托管桌面[中的步骤](register-devices-self.md)操作。 <br> <br> 合作伙伴流程记录在合作伙伴 [注册设备的步骤中](register-devices-partner.md)。
 
 Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已有的设备。 如果你重复使用设备，则必须重新映像处理它们。 可以在应用门户中向Microsoft 托管桌面注册Microsoft Endpoint Manager设备。
 
@@ -32,13 +32,13 @@ Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已�
 
 ### <a name="obtain-the-hardware-hash"></a>获取硬件哈希
 
+Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 有四个选项用于从你已在使用的设备获取此信息。
+
 **若要获取硬件哈希：：**
 
-Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 有四个选项用于从你已在使用的设备获取此信息：
-
 - 请你的 OEM 供应商提供 AutoPilot 注册文件，该文件将包含硬件哈希。
-- 在"管理"[Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)。
-- 使用 active [Directory](#active-directory-powershell-script-method) 或手动在每个设备上运行 Windows PowerShell 脚本，并收集[](#manual-powershell-script-method)文件中的结果。
+- 收集[Microsoft Endpoint Configuration Manager。](#microsoft-endpoint-configuration-manager)
+- 使用 active [Directory](#active-directory-powershell-script-method) Windows PowerShell或手动在每台设备上运行一个脚本，[](#manual-powershell-script-method)并收集文件中的结果。
 - 启动每台设备，但不完成Windows安装体验，并收集可移动闪存[驱动器上的哈希](#flash-drive-method)。
 
 #### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
@@ -53,8 +53,8 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 1. 在 Configuration Manager 控制台中，选择"监控 **"**。
 2. 在"监控"工作区中，展开" **报告"** 节点，展开" **报告**"，然后选择" **硬件 - 常规"** 节点。
 3. 运行报告，**Windows Autopilot 设备信息**，并查看结果。
-4. 在报告查看器中， **选择"导出** "图标，然后选择 **"CSV (逗号** 分隔) 选项。
-5. 保存文件后，你需要仅筛选结果，以仅筛选计划向 Microsoft 托管桌面 注册的设备。 然后，将数据上载到Microsoft 托管桌面。
+4. 在报告查看器中，选择"导出"图标，然后选择 **"CSV (逗号** 分隔) 选项。
+5. 保存文件后，你需要仅筛选结果，以仅筛选计划注册到Microsoft 托管桌面。 然后，将数据上载到Microsoft 托管桌面。
     - 打开Microsoft Endpoint Manager并导航到 **"设备"** 菜单。
     - 在"Microsoft 托管桌面部分中，选择 **"设备"**。
     - 选择 **+ 注册设备**，这将打开一个飞入以注册新设备。
@@ -155,7 +155,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 | 注册失败 | 无法完成注册。 有关详细信息，请参阅 [设备注册疑难解答](#troubleshooting-device-registration)。 |
 | 为用户准备就绪 | 注册成功。 设备现在已准备好传递给用户。 Microsoft 托管桌面指导用户完成首次设置，因此无需执行任何进一步准备。 |
 | 活动 | 设备已传递给用户，并且已在租户中注册。 此状态还指示他们定期使用设备。 |
-| 非活动 | 设备已传递给用户，并且已在租户中注册。 但是，用户在最近七天内 (使用过该设备) 。 |
+| 非活动 | 设备已传递给用户，并且已在租户中注册。 但是，用户最近七天内 (使用过该设备) 。 |
 
 ### <a name="troubleshooting-device-registration"></a>设备注册疑难解答
 

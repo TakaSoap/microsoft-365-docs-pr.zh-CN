@@ -14,13 +14,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ce7eab7648285cb671ed5657e16516f5c1ed235c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321971"
 ---
+
 # <a name="take-response-actions-on-a-device"></a>在设备上执行响应操作
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -111,12 +106,12 @@ ms.locfileid: "62321971"
 
 |Folder|说明|
 |---|---|
-|自动运行|包含一组文件，每个文件分别表示已知自动启动入口点 (ASEP) 的注册表内容，以帮助识别攻击者在设备上是否具有持久性。 <p> <div class="alert"><b>注意：</b> 如果找不到注册表项，则文件将包含以下消息："错误：系统无法找到指定的注册表项或值。"<div>|
-|已安装的程序|此.CSV文件包含已安装的程序的列表，这些程序可帮助确定设备上当前安装的内容。 有关详细信息，请参阅Win32_Product [类](https://go.microsoft.com/fwlink/?linkid=841509)。|
-|网络连接|此文件夹包含一组与连接信息相关的数据点，可帮助识别与可疑 URL 的连接、攻击者的命令和控制 (C&C) 基础结构、任何横向移动或远程连接。 <ul><li>ActiveNetConnections.txt：显示协议统计信息和当前的 TCP/IP 网络连接。 提供查找进程建立可疑连接的能力。</li><li>Arp.txt：在所有接口的缓存表中 (ARP) 当前地址解析协议。 ARP 缓存可以显示网络上已受到威胁的其他主机或网络上可能用于运行内部攻击的可疑系统。</il><li>DnsCache.txt：显示 DNS 客户端解析程序缓存的内容，该缓存包括从本地 Hosts 文件预加载的条目和最近为计算机解析的名称查询获取的任何资源记录。 这有助于识别可疑连接。</li><li>IpConfig.txt：显示所有适配器的完整 TCP/IP 配置。 适配器可以表示物理接口（如已安装的网络适配器）或逻辑接口（如拨号连接）。</li><li>FirewallExecutionLog.txt和 pfirewall.log</li></ul><p><div class="alert"><b>注意：</b> pfirewall.日志文件必须存在于 %windir%\system32\logfiles\firewall\pfirewall.log 中，因此它将包含在调查包中。 有关创建防火墙日志日志文件，请参阅 Configure [the Windows Defender Firewall with Advanced Security Log](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
+|自动运行|包含一组文件，每个文件分别表示已知自动启动入口点 (ASEP) 的注册表内容，以帮助识别攻击者在设备上持续存在。 <p> <div class="alert"><b>注意：</b> 如果找不到注册表项，则文件将包含以下消息："错误：系统无法找到指定的注册表项或值。"<div>|
+|已安装的程序|此.CSV文件包含已安装的程序的列表，这些程序可帮助确定设备上当前安装的内容。 有关详细信息，请参阅 Win32_Product [类](https://go.microsoft.com/fwlink/?linkid=841509)。|
+|网络连接|此文件夹包含一组与连接信息相关的数据点，可帮助识别与可疑 URL 的连接、攻击者的命令和控制 (C&C) 基础结构、任何横向移动或远程连接。 <ul><li>ActiveNetConnections.txt：显示协议统计信息和当前的 TCP/IP 网络连接。 提供查找进程建立可疑连接的能力。</li><li>Arp.txt：在所有接口的缓存表中 (ARP) 当前的地址解析协议。 ARP 缓存可以显示网络上已受到威胁的其他主机或网络上可能用于运行内部攻击的可疑系统。</il><li>DnsCache.txt：显示 DNS 客户端解析程序缓存的内容，该缓存包括从本地 Hosts 文件预加载的条目和最近为计算机解析的名称查询获取的任何资源记录。 这有助于识别可疑连接。</li><li>IpConfig.txt：显示所有适配器的完整 TCP/IP 配置。 适配器可以表示物理接口（如已安装的网络适配器）或逻辑接口（如拨号连接）。</li><li>FirewallExecutionLog.txt和 pfirewall.log</li></ul><p><div class="alert"><b>注意：</b> pfirewall.日志文件必须存在于 %windir%\system32\logfiles\firewall\pfirewall.log 中，因此它将包含在调查包中。 有关创建防火墙日志日志文件，请参阅 Configure [the Windows Defender Firewall with Advanced Security Log](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
 |预取文件|Windows预取文件旨在加快应用程序启动过程。 它可用于跟踪系统中最近使用的所有文件，并查找可能已删除但仍可在预取文件列表中找到的应用程序的跟踪。 <ul><li>预取文件夹：包含 中的预取文件的副本 `%SystemRoot%\Prefetch`。 注意：建议下载预取文件查看器以查看预取文件。</li><li>PrefetchFilesList.txt：包含可用于跟踪预取文件夹是否有复制失败的所有复制文件的列表。</li></ul>|
-|进程|包含一.CSV一个列出正在运行的进程并提供了标识设备上正在运行的当前进程的能力。 在标识可疑进程及其状态时，这非常有用。|
-|计划任务|包含一.CSV列出计划任务的文件，该文件可用于标识在所选设备上自动执行的例程，以查找已设置为自动运行的可疑代码。|
+|进程|包含.CSV一个列出正在运行的进程并提供标识设备上运行的当前进程的能力。 在标识可疑进程及其状态时，这非常有用。|
+|计划任务|包含一.CSV列出计划任务的文件，可用于标识在所选设备上自动执行的例程，以查找已设置为自动运行的可疑代码。|
 |安全事件日志|包含安全事件日志，其中包含登录或注销活动的记录，或者由系统的审核策略指定的其他与安全相关的事件。 <p><div class="alert"><b>注意：</b> 使用事件查看器日志文件事件视图。</div>|
 |服务|包含一.CSV服务及其状态的列表文件。|
 |Windows SMB 会话 (服务器) 块|列出对文件、打印机和串行端口的共享访问，以及网络上节点之间的其他通信。 这可以帮助识别数据外排或横向移动。 <p> 包含 SMBInboundSessions 和 SMBOutboundSession 的文件。 <p> <div class="alert"><b>注意：</b> 如果入站或出站 (会话) ，您将获得一个文本文件，告知您未找到 SMB 会话。</div>|
@@ -133,7 +128,7 @@ ms.locfileid: "62321971"
 
 >[!IMPORTANT]
 >- macOS 和 Linux 当前不支持此操作。 使用实时响应运行操作。 有关实时响应详细信息，请参阅使用实时响应 [调查设备上的实体](live-response.md)
->- Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，无论 Microsoft Defender AV 是否是活动的防病毒解决方案。 Microsoft Defender AV 可以处于被动模式。 有关详细信息，请参阅Microsoft Defender 防病毒[兼容性](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide)。
+>- Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，无论 Microsoft Defender AV 是否是活动的防病毒解决方案。 Microsoft Defender AV 可以处于被动模式。 有关详细信息，请参阅Microsoft Defender 防病毒[兼容性](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)。
 
 选择"运行 **防病毒** 扫描"之一，选择要快速或完整 (运行的扫描类型，) 确认扫描之前添加注释。
 
@@ -187,7 +182,7 @@ ms.locfileid: "62321971"
 
 此设备隔离功能断开受损设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接，该服务将继续监视设备。
 
-在Windows 10版本 1709 或更高版本上，您将可以更加控制网络隔离级别。 还可以选择启用 Outlook、Microsoft Teams 和 Skype for Business 连接 (，例如"选择性隔离") 。
+在Windows 10版本 1709 或更高版本上，您将可以更加控制网络隔离级别。 还可以选择启用Outlook、Microsoft Teams和Skype for Business连接 ("选择性隔离") 。
 
 > [!NOTE]
 > 你将能够随时将设备重新连接到网络。 设备页面上的按钮将更改为"解除隔离"，然后执行与隔离设备相同的步骤。

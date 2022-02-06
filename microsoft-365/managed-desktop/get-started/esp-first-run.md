@@ -25,8 +25,6 @@ Microsoft 托管桌面使用 [Windows Autopilot](/windows/deployment/windows-aut
 
 Microsoft 托管桌面在用于用户设备的 Autopilot 配置文件中使用这些设置：
 
-****
-
 | 设置 | 值 |
 | ----- | ----- |
 | 部署模式 | 用户驱动 |
@@ -45,10 +43,8 @@ Microsoft 托管桌面在用于用户设备的 Autopilot 配置文件中使用�
 
 Microsoft 托管桌面这些设置用于"注册状态页面"体验：
 
-****
-
 | 设置 | 值 |
-| ----- | ----- |
+| ------ | ------ |
 | 显示应用和配置文件配置进度 | 是 |
 | 安装时间超出指定的分钟数时显示错误 | 60 |
 | 发生时间限制错误时显示自定义消息 | 否 |
@@ -57,14 +53,14 @@ Microsoft 托管桌面这些设置用于"注册状态页面"体验：
 | 在安装所有应用和配置文件之前阻止设备使用 | 是 |
 | 出现安装错误时允许用户重置设备 | 是 |
 | 出现安装错误时允许用户使用设备 | 是 |
-| 阻止设备使用，直到安装这些必需的应用（如果它们已分配给用户/设备）|现代工作场所 - 时间更正 | 现代工作区 - 客户端库 |
+| 阻止设备使用，直到安装这些必需的应用（如果它们已分配给用户/设备） <ul><li> 现代工作场所 - 时间更正</li><li>现代工作区 - 客户端库</li></ul> | 是 |
 
 注册状态页面体验分三个阶段进行。 有关详细信息，请参阅注册 [状态页面跟踪信息](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)。
 
 体验将按如下方式进行：
 
 1. Autopilot 体验将启动，并且用户输入其凭据。
-2. 设备打开注册状态页，然后继续执行设备准备和设备设置阶段。 帐户 (配置) 跳过第三步Microsoft 托管桌面用户 ESP 已禁用。 设备重新启动。
+2. 设备打开注册状态页，然后继续执行设备准备和设备设置阶段。 帐户设置 (第) 步骤当前在 Microsoft 托管桌面 配置中已跳过，因为用户 ESP 已禁用。 设备重新启动。
 3. 重新启动后，设备将打开Windows其他用户的登录 **页面**。
 4. 用户再次输入其凭据，桌面将打开。
 
@@ -78,7 +74,7 @@ Microsoft 托管桌面这些设置用于"注册状态页面"体验：
 - 设备必须具有有线网络连接。
 - 如果你有在 2020 年 8 月之前使用 Microsoft 托管桌面 门户注册的设备，请取消注册和重新注册设备。
 - 设备必须具有包含 2020 年 11 月累积更新 [19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) 或 [20H1 2020.11C](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) 的出厂映像，或者必须重新映像最新的 Microsoft 托管桌面 映像。
-- 物理设备必须支持 TPM 2.0 和设备证明。 不支持虚拟机。 预配过程使用 autopilot Windows部署功能，因此需要 TPM 2.0。 TPM 证明过程还要求访问每个 TPM 提供程序唯一的一组 HTTPS URL。 有关详细信息，请参阅 Autopilot 网络要求中的 Autopilot 自部署模式和 Autopilot 预Windows[条目](/mem/autopilot/networking-requirements#tpm)。
+- 物理设备必须支持 TPM 2.0 和设备证明。 不支持虚拟机。 预配过程使用 autopilot Windows部署功能，因此需要 TPM 2.0。 TPM 证明过程还要求访问每个 TPM 提供程序唯一的一组 HTTPS URL。 有关详细信息，请参阅 Autopilot 自部署模式条目和 Autopilot 网络要求中的 Autopilot Windows[预配部署。](/mem/autopilot/networking-requirements#tpm)
 
 ## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>用于预预配部署的 Autopilot 中的事件序列
 

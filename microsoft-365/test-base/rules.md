@@ -7,19 +7,13 @@ ms.author: ancsibi
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
-ms.date: 07/06/2021
+ms.date: 02/04/2022
 ms.service: virtual-desktop
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
-ms.custom: ''
+ms.custom: null
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 66f5557f6183cb3691982079c4afd97b1b5dfe85
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156569"
 ---
 # <a name="applicationtest-rules"></a>应用程序/测试规则
 
@@ -29,6 +23,7 @@ ms.locfileid: "62156569"
 
 测试基基础结构使用下列文件夹：
 * %SYSTEMDRIVE%\USL
+* %SYSTEMDRIVE%\EtlExport
 * %SYSTEMDRIVE%\Ffmpeg
 * %SYSTEMDRIVE%\Monitoring
 * %SYSTEMDRIVE%\powershell-yaml

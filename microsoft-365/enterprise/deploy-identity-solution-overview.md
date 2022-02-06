@@ -23,15 +23,21 @@ description: 为用户部署标识Microsoft 365。
 
 # <a name="deploy-your-identity-infrastructure-for-microsoft-365"></a>为用户部署标识Microsoft 365
 
-在 Microsoft 365 企业版中，精心规划和执行的标识基础结构为增强安全性提供途径，包括将工作效率工作负载及其数据的访问权限限制为仅经过身份验证的用户和设备。 标识安全性是零信任部署的关键元素，在零信任部署中，所有尝试访问本地和云中的资源都经过身份验证和授权。
+在 Microsoft 365 企业版中，精心规划和执行的身份基础结构为增强安全性提供途径，包括将工作效率工作负载及其数据的访问权限限制为仅经过身份验证的用户和设备。 标识安全性是零信任部署的关键元素，在零信任部署中，所有尝试访问本地和云中的资源都经过身份验证和授权。
 
-有关每个企业Microsoft 365标识功能、Azure Active Directory (Azure AD) 角色、本地和基于云的组件以及最常见的身份验证配置的信息，请参阅标识[基础结构海报](../downloads/m365e-identity-infra.pdf)。
+有关适用于企业的Microsoft 365标识功能、Azure Active Directory (Azure AD) 的角色、本地和基于云的组件以及最常见的身份验证配置的信息，请参阅标识[基础结构海报](../downloads/m365e-identity-infra.pdf)。
 
 [![标识基础结构海报。](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
 查看此两页海报，以快速提升企业版标识概念Microsoft 365配置。
 
-您可以下载 [此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) ，并可以 11 x 17 (以信函、法律或文) 打印。
+您可以下载 [此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) ，并可以 11 x 17 (格式以信函、法律或) 打印。
+
+此解决方案是构建"零信任Microsoft 365堆栈的第一步。
+
+![零Microsoft 365信任部署堆栈](../media/deploy-identity-solution-overview/zero-trust-deployment-stack.png)
+
+有关详细信息，请参阅零Microsoft 365[部署计划](/microsoft-365/security/microsoft-365-zero-trust)。
 
 ## <a name="whats-in-this-solution"></a>此解决方案中的内容
 
@@ -60,7 +66,7 @@ Azure AD为租户提供一整套标识管理和Microsoft 365功能。
 
 |功能或特性|说明|许可|
 |---|---|---|
-|[多重身份验证 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA 要求用户提供两种形式的验证，如用户密码以及来自 Microsoft Authenticator 或电话呼叫的通知。 MFA 大大减少了凭据被盗可用于访问环境的风险。 Microsoft 365使用 Azure AD 多重身份验证服务进行基于 MFA 的登录。|Microsoft 365 E3 或 E5|
+|[多重身份验证 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA 要求用户提供两种形式的验证，例如用户密码以及来自 Microsoft Authenticator 或电话呼叫的通知。 MFA 大大减少了凭据被盗可用于访问环境的风险。 Microsoft 365使用 Azure AD 多重身份验证服务进行基于 MFA 的登录。|Microsoft 365 E3 或 E5|
 |[条件访问](/azure/active-directory/conditional-access/overview)|Azure AD评估用户登录的条件，并使用条件访问策略来确定允许的访问。 例如，在本指南中，我们将向您展示如何创建条件访问策略，以要求设备合规性以访问敏感数据。 这大大降低了具有自己的设备和凭据被盗的黑客访问敏感数据的风险。 它还保护设备的敏感数据，因为设备必须满足运行状况和安全性的特定要求。|Microsoft 365 E3 或 E5|
 |[Azure AD组](/azure/active-directory/fundamentals/active-directory-manage-groups)|条件访问策略、使用 Intune 的设备管理，甚至组织中文件和网站的权限都依赖于对用户帐户或组Azure AD分配。 我们建议你创建Azure AD保护级别对应的组。 例如，你的管理人员可能是黑客的更高价值目标。 因此，有必要将这些员工的用户帐户添加到 Azure AD 组，并将该组分配给条件访问策略和其他强制实施更高级别的访问保护的策略。|Microsoft 365 E3 或 E5|
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|使您可以检测影响组织标识的潜在漏洞，将自动修正策略配置为低、中、高登录风险和用户风险。 本指南依赖于此风险评估，对多重身份验证应用条件访问策略。 本指南还包括条件访问策略，要求用户在检测到其帐户的高风险活动时更改其密码。|Microsoft 365 E5，Microsoft 365 E3 E5 安全加载项、EMS E5 或 Azure AD Premium P2 许可证|
@@ -70,7 +76,7 @@ Azure AD为租户提供一整套标识管理和Microsoft 365功能。
 
 ## <a name="next-steps"></a>后续步骤
 
-使用以下步骤为租户部署标识模型和Microsoft 365基础结构：
+使用以下步骤为租户部署标识模型Microsoft 365基础结构：
 
 1. [确定云标识模型。](deploy-identity-solution-identity-model.md)
 2. [保护你的Microsoft 365特权帐户。](protect-your-global-administrator-accounts.md)

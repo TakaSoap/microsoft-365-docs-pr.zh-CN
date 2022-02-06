@@ -20,6 +20,8 @@
       href: review.md
     - name: 程序包指南
       href: contentguideline.md
+    - name: 应用程序/测试规则
+      href: rules.md
 - name: 操作指南
   items:
     - name: 服务器应用程序测试

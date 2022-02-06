@@ -7,26 +7,20 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-- MOE150
+  - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 83e8061d2c9473c274d615c8905b2918e1b72d17
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355082"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>可疑电子邮件转发活动的警报评分
 
@@ -39,7 +33,7 @@ ms.locfileid: "62355082"
 
 可以使用转发规则手动或自动转发电子邮件。 自动转发可以通过多种方式实现，如收件箱规则、Exchange传输规则 (ETR) 和 SMTP 转发。 虽然手动转发需要用户直接操作，但他们可能不知道所有自动转发的电子邮件。 在Microsoft 365，当用户自动将电子邮件转发到潜在恶意电子邮件地址时，将引发警报。
 
-本操作手册可帮助你调查可疑电子邮件转发的警报，并快速将其评级为真正 (TP) 或误报 (FP) 。 然后，你可以对 TP 警报采取建议操作来修正攻击。
+本操作手册可帮助你调查可疑电子邮件转发活动警报，并快速将其评级为真正 (TP) 或误报 (FP) 。 然后，你可以对 TP 警报采取建议操作来修正攻击。
 
 有关 Microsoft Defender for Office 365 和 Microsoft Defender for Cloud Apps 警报评分的概述，请参阅[简介文章](alert-grading-playbooks.md)。
 
@@ -53,9 +47,9 @@ ms.locfileid: "62355082"
 
 ## <a name="email-forwarding-rules"></a>电子邮件转发规则
 
-电子邮件转发规则允许用户设置规则，将发送到用户邮箱的电子邮件转发到组织内部或外部其他用户的邮箱。 一些电子邮件用户（尤其是具有多个邮箱的电子邮件用户）配置转发规则，将雇主电子邮件移动到其私人电子邮件帐户。 电子邮件转发是一项有用的功能，但也可能由于信息泄露而带来安全风险。 攻击者可能会使用此信息来攻击您的组织或合作伙伴。
+电子邮件转发规则允许用户创建规则，将发送到用户邮箱的电子邮件转发到组织内部或外部其他用户的邮箱。 一些电子邮件用户（尤其是具有多个邮箱的电子邮件用户）配置转发规则，将雇主电子邮件移动到其私人电子邮件帐户。 电子邮件转发是一项有用的功能，但也可能由于信息泄露而带来安全风险。 攻击者可能会使用此信息来攻击您的组织或合作伙伴。
 
-### <a name="suspicious-email-forwarding-rules"></a>可疑电子邮件转发规则
+### <a name="suspicious-email-forwarding-activity"></a>可疑电子邮件转发活动
 
 攻击者可能会设置电子邮件规则来隐藏受损用户邮箱中的传入电子邮件，以向用户隐藏其恶意活动。 他们还可能在受损的用户邮箱中设置规则，以删除电子邮件、将电子邮件移动到另一个不太明显的文件夹（如 RSS 文件夹）或将电子邮件转发到外部帐户。  
 
@@ -71,7 +65,7 @@ Microsoft Defender for Office 365可以检测可疑电子邮件转发规则并�
 
 ## <a name="alert-details"></a>警报详细信息
 
-To review the specific alert， open the **Alerts** page to see the **Activity list** section. 下面是一个示例。
+To review the Suspicious Email Forwarding Activity alert， open the **Alerts** page to see the **Activity list** section. 下面是一个示例。
  
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png" alt-text="与警报相关的活动列表" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png":::
 
@@ -113,7 +107,7 @@ To review the specific alert， open the **Alerts** page to see the **Activity l
 
     - 观察发送的电子邮件中有多少包含敏感信息。 
 
-- 评估客户门户中的有Microsoft Azure行为。
+- 在安全门户中评估有Microsoft Azure行为。
 - 检查用户设备上是否有恶意活动。
 
 ### <a name="are-the-activities-malicious"></a>活动是否恶意？
@@ -131,7 +125,7 @@ To review the specific alert， open the **Alerts** page to see the **Activity l
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png" alt-text="电子邮件转发的警报调查工作流" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png":::
 
-可以使用威胁资源管理器或高级搜寻查询调查电子邮件转发警报，这基于 Microsoft 365 Defender 门户中的可用性。 你可以选择根据需要遵循整个过程或过程的一部分。
+可以使用威胁资源管理器或高级搜寻查询调查电子邮件转发警报，基于 Microsoft 365 Defender 门户中的可用性。 你可以选择根据需要遵循整个过程或过程的一部分。
 
 ## <a name="using-threat-explorer"></a>使用威胁资源管理器
 
@@ -177,12 +171,6 @@ To review the specific alert， open the **Alerts** page to see the **Activity l
 - CloudAppEvents -包含审核日志活动列表。
 
 - IdentityLogonEvents - 包含所有用户的登录信息。
-
-下面是一个示例。
-
-:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png" alt-text="高级搜寻页面示例" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png":::
-
-使用查询收集以下问题的信息。
 
 >[!Note]
 >某些参数对于您的组织或网络是唯一的。 根据每个查询中的说明填写这些特定参数。
@@ -291,6 +279,6 @@ let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder Identity
 ## <a name="see-also"></a>另请参阅
 
 - [警报评分概述](alert-grading-playbooks.md)
-- [可疑收件箱转发规则](alert-grading-playbook-inbox-forwarding-rules.md)
+- [可疑的收件箱转发规则](alert-grading-playbook-inbox-forwarding-rules.md)
 - [可疑的收件箱操作规则](alert-grading-playbook-inbox-manipulation-rules.md)
 - [调查警报](investigate-alerts.md)

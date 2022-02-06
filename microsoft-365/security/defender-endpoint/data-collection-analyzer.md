@@ -7,24 +7,19 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ab670be80c34ced9318c51e2de29a9c9226ea17a
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320819"
 ---
+
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>用于在 Windows 上进行高级故障排除的数据收集
 
 **适用于：**
@@ -38,7 +33,7 @@ ms.locfileid: "62320819"
 ![命令行中的客户端分析器参数的图像。](images/d89a1c04cf8441e4df72005879871bd0.png)
 
 > [!NOTE]
-> 使用任何高级疑难解答参数时，分析器还会调用 [MpCmdRun.exe] [https://docs.microsoft.com/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus?view=o365-worldwide) 以收集Microsoft Defender 防病毒支持日志。
+> 使用任何高级疑难解答参数时，分析器还会调用MpCmdRun.exe[ ](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus)以收集Microsoft Defender 防病毒支持日志。
 
 **-h** - [调用Windows记录](/windows-hardware/test/wpt/wpr-command-line-options)器以收集详细的常规性能跟踪以及标准日志集。
 

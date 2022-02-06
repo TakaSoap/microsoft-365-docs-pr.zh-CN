@@ -166,6 +166,16 @@
                   href: investigate-incidents.md
                 - name: 警报
                   href: investigate-alerts.md
+                - name: 警报评分 playbook
+                  items:
+                    - name: 概述
+                      href: alert-grading-playbooks.md
+                    - name: 可疑电子邮件转发活动
+                      href: alert-grading-playbook-email-forwarding.md
+                    - name: 可疑的收件箱转发规则
+                      href: alert-grading-playbook-inbox-forwarding-rules.md
+                    - name: 可疑的收件箱操作规则
+                      href: alert-grading-playbook-inbox-manipulation-rules.md
                 - name: 用户
                   href: investigate-users.md
             - name: 事件响应手册
