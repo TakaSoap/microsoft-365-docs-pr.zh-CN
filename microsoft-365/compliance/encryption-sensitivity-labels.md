@@ -1,7 +1,7 @@
 ---
 title: 通过敏感度标签应用加密，从而限制对内容的访问
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,19 +10,14 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+  - M365-security-compliance
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 024759362cd2e329655935c784a77a1789603f37
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426335"
 ---
+
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
@@ -440,7 +435,7 @@ ms.locfileid: "61426335"
 
 - 如果[在 SharePoint 中签出](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)文档时使用 Office 应用添加应用了加密的标签，并且用户随后放弃签出，则文档将保持含标签和加密状态。
 
-- Office 应用（Windows、Mac、Android 和 iOS）不支持对加密文件进行以下操作，并且用户将看到一则错误消息指出出现了错误。但是，可将 SharePoint 功能用作替代项：
+- 除非你 [启用了使用敏感度标签](sensitivity-labels-coauthoring.md)加密的文件的共同创作，否则 Office 应用（Windows、Mac、Android 和 iOS）不支持以下加密文件操作，用户会看到错误消息。 但是，可将 SharePoint 功能用作替代项：
 
   - 查看、还原和保存以前版本的副本。或者，在你 [为列表或库启用和配置版本控制](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37) 后，用户可使用 Office 网页版执行这些操作。
   - 更改文件的名称或位置。或者，用户可在 SharePoint 中 [对文档库中的文件、文件夹或链接重命名](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)。

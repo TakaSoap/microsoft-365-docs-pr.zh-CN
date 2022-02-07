@@ -1,30 +1,25 @@
 ---
 title: 配置垃圾邮件筛选策略
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: null
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: high
 search.appverid:
-- MET150
+  - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
-- M365-security-compliance
-ms.custom: ''
+  - M365-security-compliance
+ms.custom: null
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 29e21c53ef7fa7456b8e38433006b1eab210f610
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873557"
 ---
+
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -79,6 +74,10 @@ ms.locfileid: "61873557"
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 - 有关建议的反垃圾软件策略设置，请参阅 [EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)。
+
+- 无法完全关闭垃圾邮件筛选，但可以使用邮件流规则（也称为传输规则）绕过对传入邮件的大多数垃圾邮件筛选（例如，如果在传递到Microsoft 365之前通过第三方保护服务或设备路由电子邮件）。 有关详细信息，请参阅[使用邮件流规则设置邮件中的垃圾邮件可信度 （SCL）](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
+  - 仍会筛选高可信度钓鱼邮件。 EOP 中的其他功能不受影响（例如，始终扫描邮件以查找恶意软件）。
+  - 如果需要绕过 SecOps 邮箱或网络钓鱼模拟的垃圾邮件筛选，请不要使用邮件流规则。 有关详细信息，请参阅 [配置将第三方网络钓鱼模拟传递给用户和未筛选邮件到 SecOps 邮箱](configure-advanced-delivery.md)。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-anti-spam-policies"></a>使用 Microsoft 365 Defender 门户创建反垃圾邮件策略
 
