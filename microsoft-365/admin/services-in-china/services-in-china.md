@@ -24,18 +24,18 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 了解更多关于由世纪互联运营的，旨在满足中国对安全、可靠和可扩展的云服务的需求的 Office 365 的信息。
 monikerRange: o365-21vianet
-ms.openlocfilehash: c8be22550ee4ff6b1281cd2cfabe94df2c0c56e0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
+ms.openlocfilehash: 4821f6a307858a7688b6ff9b6b8b274dd4bb275b
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195145"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444577"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365
 
 由世纪互联运营的 Office 365 旨在满足中国用户对安全可靠的可扩展云服务的需求。此服务由 Microsoft 授权给世纪互联使用的技术提供支持。
   
-Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该服务的交付。世纪互联是中国最大的电信运营商中立 Internet 数据中心服务提供商，提供托管网络服务以及云计算基础结构服务。通过授权 Microsoft 技术，世纪互联运营本地 Office 365 数据中心，以便您能够在中国保留数据并同时使用 Office 365 服务。世纪互联还提供您的订阅和帐单服务以及支持。
+Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管理此服务的交付。 世纪互联是中国最大的运营商中立 Internet 数据中心服务提供商，提供托管、托管网络服务及云计算基础结构服务。 通过授权的 Microsoft 技术，世纪互联运营本地 Office 365 数据中心，为用户提供使用Office 365服务的能力，同时将用户数据保存在中国境内。 世纪互联还提供订阅、计费服务和支持。
   
 > [!NOTE]
 > 这些服务受到中国法律的制约。 
@@ -78,7 +78,7 @@ Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该�
 |:-----|:-----|
 |通过电子邮件与组织外部的某人共享文档、库或网站  <br/> |该功能是可用的，但默认情况下是关闭的，因为使用该功能可能会使共享的文件在国家/地区之外受到访问。 管理员确实能够将其打开，但会收到一条警告消息，表明它可以使共享文件在你所在的国家/地区之外获得访问。 试图与组织以外的人共享的用户也将收到警告。 有关详细信息，请参阅[在 Office 365 中共享 SharePoint 文件或文件夹](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)。  <br/> |
 |Access Services  <br/> |支持 Access 2013，但可能不支持添加新 Access 应用，因为将在 Office 365 和 SharePoint Online 中停用此功能。 从 2017 年 6 月起，将停止在 Office 365 和 SharePoint Online 中创建新的基于 Access 的 Web 应用和 Access Web 数据库，并于 2018 年 4月停止任何仍存在的 Web 应用和 Web 数据库。 此外，不支持 Access 2010 功能，并且尝试使用 Access 2010 数据库将导致错误并可能造成数据丢失。  <br/> |
-|Microsoft Power Apps  <br/> |即将推出。  <br/> |
+|Microsoft Power Apps  <br/> |Microsoft Power Apps 和 Microsoft Power Automate 现在可供受监管行业和商业组织（它们在中国与表有业务关系且需要本地数据驻留）的客户使用。 <br/> |
 |信息权限管理 (IRM)  <br/> |为您的组织将 IRM 功能设置为 SharePoint 的功能即将推出。  <br/> |
 |翻译文本或页面的功能  <br/> |可用，但默认关闭。 租户管理员可以开启此功能，但翻译云服务可能位于你所在的国家/地区之外。 如果不希望用户将内容发送到翻译云服务，则可以保持禁用这些功能。  <br/> |
 |公共网站 ICP 注册  <br/> |中国 Internet 合规政策要求公众号必须获得 Internet 内容提供商（ICP）编号。  |

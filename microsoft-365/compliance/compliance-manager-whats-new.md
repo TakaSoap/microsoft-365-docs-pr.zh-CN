@@ -17,16 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解合规性管理程序中的新增功能以及将提供哪些功能。 阅读更新后的评估、新的评估模板、新操作等。
-ms.openlocfilehash: f9583b69459d292b3fb485d09ce5ee5a8ca46620
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: a5489241b223b076e3ef44432fd934afb732b38f
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265500"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444409"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft 合规性管理器中的新增功能
 
 **本文内容：** 了解合规性管理器中的最近更新。
+
+## <a name="february-2022"></a>2022 年 2 月
+
+### <a name="try-recommended-assessment-templates-for-your-organization"></a>尝试为组织推荐评估模板
+
+贵组织现在可以从合规性管理器获取有关哪些评估可能最相关的建议，并快速设置流程以启动并运行。 若要详细了解建议以及如何在购买许可证之前试用高级评估模板，请参阅启动 [高级评估试用版](compliance-manager-setup.md#start-a-premium-assessments-trial)。
 
 ## <a name="november-2021"></a>2021 年 11 月
 
@@ -47,13 +53,13 @@ ms.locfileid: "62265500"
 
 现在预览版中提供了以下评估模板：
 
-- 适用于 Azure (Preview 的 ISO 27001：2013) 
+- 适用于 Azure (Preview) 的 ISO 27001：2013
 - 适用于 Dynamics 365 预览版 (ISO 27001：2013) 
 - FedRAMP Moderate for Dynamics 365 (Preview) 
 - FedRAMP Moderate for Azure (Preview) 
 - FedRAMP High for Azure (Preview) 
 - FedRAMP High for Dynamics 365 (Preview) 
-- 适用于 Azure (Preview) 的 SOC 2
+- 适用于 Azure 预览版 (SOC 2) 
 - Dynamics 365 (Preview) 
 - 适用于 Azure (Preview 的 ISO 27018：2019) 
 - 适用于 Dynamics 365 预览版 (ISO 27018：2019) 
@@ -77,7 +83,7 @@ ms.locfileid: "62265500"
 
 ## <a name="july-2021"></a>2021 年 7 月
 
-我们添加了根据模板的新通用版本为Microsoft 365产品创建评估的功能。 若要了解更多信息，请 [从使用评估模板开始](compliance-manager-templates.md)。
+我们添加了根据模板的新通用版本为除 Microsoft 365 产品创建评估的功能。 若要了解更多信息，请 [从使用评估模板开始](compliance-manager-templates.md)。
 
 ## <a name="may-2021"></a>2021 年 5 月
 
@@ -86,7 +92,7 @@ ms.locfileid: "62265500"
 我们发布了 75 个新的评估模板，其中包括：
 - 澳大利亚隐私法案
 - CIS Microsoft 365 Foundation 级别 1 和 2
-- 德国 - 金融机构 IT 部门监管要求 (使用，) 
+- 德国 - 金融机构和 FINANCIALT (IT 的监管) 
 - Sarbanes-Oxley法案
 - 南非 - 促进信息访问法案
 
@@ -96,7 +102,7 @@ ms.locfileid: "62265500"
 
 ### <a name="support-for-us-government-dod-customers"></a>支持美国政府 DoD 客户
 
-除了美国政府 DoD 客户之外，美国政府 DoD 客户现在Community (GCC) 中等和GCC合规性管理器。
+除了美国政府 DoD 客户之外，美国政府 DoD 客户现在Community (GCC) 中等GCC合规性管理器。
 
 ## <a name="march-2021"></a>2021 年 3 月
 

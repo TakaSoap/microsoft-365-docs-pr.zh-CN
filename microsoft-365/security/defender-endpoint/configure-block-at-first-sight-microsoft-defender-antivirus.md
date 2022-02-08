@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f5b1d0f79f9d85ab433aa91c043104362fb8f766
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1ec2694fa974cde3f8316f4ad0937fc686d16c63
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167858"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444649"
 ---
 # <a name="turn-on-block-at-first-sight"></a>打开“首次看到时阻止”
 
@@ -65,7 +65,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 
 - 在许多情况下，此过程可将对新恶意软件的响应时间从几小时减少到几秒。
 
-- 你可以[指定当基于云的保护服务在分析文件时，过多久后阻止文件运行](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)。 另外，当文件被阻止时，你可以[自定义用户桌面上显示的消息](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md)。 可更改公司名称、联系信息、消息 URL。
+- 你可以[指定当基于云的保护服务在分析文件时，过多久后阻止文件运行](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)。 另外，当文件被阻止时，你可以[自定义用户桌面上显示的消息](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information)。 可更改公司名称、联系信息、消息 URL。
 
 ## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>用 Microsoft Intune 打开“首次看到时阻止”
 

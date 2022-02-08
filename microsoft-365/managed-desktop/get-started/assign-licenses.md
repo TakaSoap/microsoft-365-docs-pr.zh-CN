@@ -3,27 +3,26 @@ title: 分配许可证
 description: 作为注册的一部分，你需要将已获得的许可证分配给你的用户
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 28a29f0e1b8160995b8bbccdae868a86135a0577
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 454bc457603b64916bfdaf947d867404bd6569db
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211533"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444457"
 ---
 # <a name="assign-licenses"></a>分配许可证
 
-作为准备在 Microsoft 托管桌面 注册的一部分，你需要确保你已获取必要的许可证。 如果尚未获取许可证，请参阅有关许可证的详细信息，详细了解需要[](../get-ready/prerequisites.md#more-about-licenses)哪些许可证。
+在准备注册Microsoft 托管桌面，必须确保你已获取必要的许可证。 有关许可证详细信息，请参阅 [有关](../get-ready/prerequisites.md#more-about-licenses) 需要许可证的许可证详细信息。
 
+当你拥有相应的许可证时，将其分配给你的用户。 若要分配许可证，我们建议你利用基于组的许可功能Azure Active Directory[](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
 
-如果你的许可证全部排队，现在可以将它们分配给你的用户了。 若要分配许可证，我们建议你利用基于组的许可功能Azure Active Directory。 [](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
-
-如果你对许可证分配有任何困难，请联系管理员 [支持](../working-with-managed-desktop/admin-support.md)人员。
+如果在分配许可证时遇到任何困难，请联系管理员 [支持](../working-with-managed-desktop/admin-support.md)人员。
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
 
