@@ -14,18 +14,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
-ROBOTS: noindex,nofollow
+ROBOTS: 'noindex,nofollow'
 ms.technology: mde
-ms.openlocfilehash: 374bd7b6f31cfb555e8f6189a01b4946980c0fc6
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171517"
 ---
+
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS 加泰罗尼亚语和较新版本的 macOS 的新配置文件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "61171517"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-为了与 macOS 发展保持一致，我们正在准备利用系统扩展而非内核扩展的 macOS 更新上的 Microsoft Defender for Endpoint。 此更新仅适用于 macOS 10.15.4 (macOS) macOS 版本。
+为了与 macOS 发展保持一致，我们正在准备利用系统扩展而非内核扩展的 macOS 更新上的 Microsoft Defender for Endpoint。 此更新仅适用于 macOS Catalina (10.15.4) 和较新版本的 macOS。
 
 如果你通过 JAMF、Intune 或其他 MDM 解决方案 (托管环境中在 macOS 上部署了 Microsoft Defender for Endpoint) ，则必须部署新的配置文件。 如果不执行这些步骤，则会导致用户收到运行这些新组件的审批提示。
 
@@ -47,8 +42,8 @@ ms.locfileid: "61171517"
 
 若要批准系统扩展，请创建以下有效负载：
 
-1. In **Computers > Configuration Profiles** select Options > System **Extensions**.
-2. 从 **"系统扩展类型"** 下拉列表 **中选择** "允许的系统扩展"。
+1. In **Computers > Configuration Profiles** select **Options > System Extensions**.
+2. 从 **"系统扩展类型"****下拉列表中选择**"允许的系统扩展"。
 3. 将 **UBF8T346G9 用于** 团队 ID。
 4. 将以下捆绑包标识符添加到允许 **的系统扩展** 列表中：
 
@@ -61,10 +56,10 @@ ms.locfileid: "61171517"
 
 添加以下 JAMF 有效负载以授予对 Microsoft Defender 终结点安全扩展的完全磁盘访问权限。 此策略是在设备上运行扩展的先决条件。
 
-1. 选择 **选项** \> **隐私首选项策略控制**。
-2. 用作 `com.microsoft.wdav.epsext` 标识符 **和** `Bundle ID` 捆绑 **包类型**。
+1. 选择 **"选项** \> **""隐私首选项策略控制"**。
+2. 用作 `com.microsoft.wdav.epsext` 标识符 **和** `Bundle ID` **捆绑包类型**。
 3. 将代码要求设置为 `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
-4. 将 **应用或服务设置为** **SystemPolicyAllFiles，** 并访问 **允许**。
+4. 将 **应用或服务设置为** **SystemPolicyAllFiles** ，并访问 **"允许"**。
 
     ![隐私首选项策略控制。](images/mac-system-extension-privacy.png)
 
@@ -91,7 +86,7 @@ ms.locfileid: "61171517"
             <key>PayloadIdentifier</key>
             <string>DA2CC794-488B-4AFF-89F7-6686A7E7B8AB</string>
             <key>PayloadDisplayName</key>
-            <string>Microsoft Defender ATP Network Extension</string>
+            <string>Microsoft Defender Network Extension</string>
             <key>PayloadDescription</key>
             <string/>
             <key>PayloadVersion</key>
@@ -124,7 +119,7 @@ ms.locfileid: "61171517"
                     <key>FilterType</key>
                     <string>Plugin</string>
                     <key>UserDefinedName</key>
-                    <string>Microsoft Defender ATP Network Extension</string>
+                    <string>Microsoft Defender Network Extension</string>
                     <key>PluginBundleID</key>
                     <string>com.microsoft.wdav</string>
                     <key>FilterSockets</key>
@@ -139,7 +134,7 @@ ms.locfileid: "61171517"
     </plist>
     ```
 
-2. 在终端中运行实用工具，确认上述 `plutil` 文件已正确复制：
+2. 在终端中运行 `plutil` 实用工具，确认上述文件已正确复制：
 
     ```bash
     $ plutil -lint <PathToFile>/com.microsoft.network-extension.mobileconfig
@@ -151,7 +146,7 @@ ms.locfileid: "61171517"
     $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
     ```
 
-    验证命令是否输出 `OK` 。
+    验证命令是否输出 `OK`。
 
     ```bash
     <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
@@ -165,7 +160,7 @@ ms.locfileid: "61171517"
     $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.microsoft.network-extension.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
     ```
 
-    例如，如果证书名称为 **SigningCertificate，** 并且签名文件将存储在 Documents 中：
+    例如，如果证书名称为 **SigningCertificate** ，并且签名文件将存储在 Documents 中：
 
     ```bash
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
@@ -179,10 +174,10 @@ ms.locfileid: "61171517"
 
 批准系统扩展：
 
-1. 在 Intune 中，打开 **"管理** \> **设备配置"。** 选择 **"管理** \> **配置文件** \> **""创建配置文件"。**
-2. 选择配置文件的名称。 将 **Platform=macOS** 更改为 **Profile type=Extensions**。 选择“**创建**”。
-3. 在 `Basics` 选项卡中，为此新配置文件命名。
-4. 在 `Configuration settings` 选项卡中，在 部分中添加以下 `Allowed system extensions` 条目：
+1. 在 Intune 中，打开 **"管理** \> **设备配置"**。 选择 **"管理** \> **配置文件** \> **""创建配置文件"**。
+2. 选择配置文件的名称。 将 **Platform=macOS** 更改为 **配置文件类型=扩展**。 选择“**创建**”。
+3. 在选项卡 `Basics` 中，为此新配置文件命名。
+4. `Configuration settings`在选项卡中，在 部分中添加以下`Allowed system extensions`条目：
 
    <br>
 
@@ -196,14 +191,14 @@ ms.locfileid: "61171517"
 
    ![系统配置文件屏幕截图。](images/mac-system-extension-intune2.png)
 
-5. 在 `Assignments` 选项卡中，将此配置文件分配给"所有用户 **&所有设备"。**
+5. 在选项卡 `Assignments` 中，将此配置文件分配给"所有用户 **&所有设备"**。
 6. 查看并创建此配置文件。
 
 ### <a name="create-and-deploy-the-custom-configuration-profile"></a>创建和部署自定义配置文件
 
 以下配置文件启用网络扩展，并授予对终结点安全系统扩展的完全磁盘访问权限。
 
-将以下内容保存到名为sysext.xml **的文件：**
+将以下内容保存到名为 **sysext.xml：**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -218,7 +213,7 @@ ms.locfileid: "61171517"
         <key>PayloadIdentifier</key>
         <string>7E53AC50-B88D-4132-99B6-29F7974EAA3C</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP System Extensions</string>
+        <string>Microsoft Defender System Extensions</string>
         <key>PayloadDescription</key>
         <string/>
         <key>PayloadVersion</key>
@@ -251,7 +246,7 @@ ms.locfileid: "61171517"
                 <key>FilterType</key>
                 <string>Plugin</string>
                 <key>UserDefinedName</key>
-                <string>Microsoft Defender ATP Network Extension</string>
+                <string>Microsoft Defender Network Extension</string>
                 <key>PluginBundleID</key>
                 <string>com.microsoft.wdav</string>
                 <key>FilterSockets</key>
@@ -302,7 +297,7 @@ ms.locfileid: "61171517"
 </plist>
 ```
 
-验证上述文件是否复制正确。 从终端运行以下命令并验证它是否输出 `OK` ：
+验证上述文件是否复制正确。 从终端运行以下命令并验证它是否输出 `OK`：
 
 ```bash
 $ plutil -lint sysext.xml
@@ -311,12 +306,12 @@ sysext.xml: OK
 
 部署此自定义配置文件：
 
-1. 在 Intune 中，打开 **"管理** \> **设备配置"。** 选择 **"管理** \> **配置文件** \> **""创建配置文件"。**
-2. 选择配置文件的名称。 Change **Platform=macOS** and **Profile type=Custom**. 选择"**配置"。**
-3. 打开配置文件， **然后上传** sysext.xml。 此文件是在上一步骤中创建的。
-4. 选择“**确定**”。
+1. 在 Intune 中，打开 **"管理** \> **设备配置"**。 选择 **"管理** \> **配置文件** \> **""创建配置文件"**。
+2. 选择配置文件的名称。 Change **Platform=macOS** and **Profile type=Custom**. 选择“**配置**”。
+3. 打开配置文件并 **上传sysext.xml。** 此文件是在上一步骤中创建的。
+4. 选择“确定”。
 
     ![Intune 中的系统扩展屏幕截图。](images/mac-system-extension-intune.png)
 
-5. 在 `Assignments` 选项卡中，将此配置文件分配给"所有用户 **&所有设备"。**
+5. 在选项卡 `Assignments` 中，将此配置文件分配给"所有用户 **&所有设备"**。
 6. 查看并创建此配置文件。

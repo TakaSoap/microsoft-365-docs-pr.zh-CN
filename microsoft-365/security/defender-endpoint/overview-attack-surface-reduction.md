@@ -1,6 +1,6 @@
 ---
-title: 了解并使用攻击面减少
-ms.reviewer: ''
+title: '了解并使用 ASR (攻击面) '
+ms.reviewer: null
 description: 了解 Microsoft Defender for Endpoint 的攻击面减少功能。
 keywords: asr， 攻击面减少， Microsoft Defender for Endpoint， microsoft defender， 防病毒， av， windows defender
 ms.prod: m365-security
@@ -17,13 +17,8 @@ ms.topic: conceptual
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
-ms.openlocfilehash: 22c90142de3b669bb4e7ba13266f04102af56fe0
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327689"
 ---
+
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>了解并使用攻击面减少功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -96,7 +91,7 @@ ms.locfileid: "62327689"
 可以使用组策略、PowerShell 和配置服务提供程序和 CSP (启用审核) 。
 
 > [!TIP]
-> 还可以访问 Testground Windows Defender，demo.wd.microsoft.com 以确认这些功能是否正常工作并[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)查看它们如何工作。
+> 您还可以访问 Testground Windows Defender[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 确认这些功能是否正常工作并查看它们如何工作。
 
 | 审核选项 | 如何启用审核模式 | 如何查看事件 |
 |---|---|---|
@@ -123,7 +118,7 @@ ms.locfileid: "62327689"
 
 #### <a name="import-an-existing-xml-custom-view"></a>导入现有 XML 自定义视图
 
-1. 创建一个.txt文件，将想要使用的自定义视图的 XML 复制到.txt文件中。 为想要使用的每个自定义视图执行这一操作。 按如下所示重命名文件 (确保将类型从 .txt 更改为 .xml) ：
+1. 创建一个.txt文件，将想要使用的自定义视图的 XML 复制到.txt文件中。 为想要使用的每个自定义视图执行这一操作。 按如下所示重命名文件 (请确保将类型从 .txt 更改为 .xml) ：
     - 受控文件夹访问事件自定义视图： *cfa-events.xml*
     - Exploit Protection 事件自定义视图： *ep-events.xml*
     - 攻击面减少事件自定义视图： *asr-events.xml*
@@ -144,7 +139,7 @@ ms.locfileid: "62327689"
 
 #### <a name="copy-the-xml-directly"></a>直接复制 XML
 
-1. 在 **事件查看器** 中键入"开始"菜单并打开Windows **事件查看器**。
+1. 在 **事件** 查看器中键入"开始"菜单并打开Windows **事件查看器**。
 
 2. 在左侧面板的"操作 **"下**，选择 **"创建自定义视图..."。**
 
@@ -212,12 +207,12 @@ ms.locfileid: "62327689"
 
 ### <a name="list-of-attack-surface-reduction-events"></a>攻击面减少事件列表
 
-所有攻击面减少事件都位于 **Microsoft** >应用程序和服务日志> Windows下，然后位于下表中列出的文件夹或提供程序下。
+所有攻击面减少事件都位于 **Microsoft** > 应用程序和服务日志> Windows下，然后位于下表中列出的文件夹或提供程序下。
 
 可以在事件查看器中Windows这些事件：
 
 1. 打开" **开始"** 菜单并 **键入事件查看器**，然后选择 **事件查看器** 结果。
-2. Expand **Applications and Services Logs > Microsoft > Windows** and then go to the folder listed under **Provider/source** in the table.
+2. 展开 **Microsoft >服务日志> Windows** 然后转到下表 **中的提供程序/源** 下列出的文件夹。
 3. 双击子项以查看事件。 滚动浏览事件以查找你正在查找的事件。
 
    ![使用事件查看器显示动画。](images/event-viewer.gif)
@@ -277,10 +272,10 @@ ms.locfileid: "62327689"
 
 | 文章 | 说明 |
 |:---|:---|
-| [基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 使用容器隔离Microsoft Edge帮助防范恶意网站。 |
+| [基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 使用容器隔离Microsoft Edge保护恶意网站。 |
 | [应用程序控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | 使用应用程序控制，以便应用程序必须获得信任才能运行。 |
 | [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑 (包括文件加密勒索软件恶意软件) 更改关键系统文件夹中的文件 (要求Microsoft Defender 防病毒)  |
-| [网络保护](network-protection.md) | 将保护扩展到组织设备上网络流量和连接。  (需要Microsoft Defender 防病毒)  |
+| [网络保护功能](network-protection.md) | 将保护扩展到组织设备上网络流量和连接。  (需要Microsoft Defender 防病毒)  |
 | [漏洞保护](exploit-protection.md) | 帮助保护组织使用的操作系统和应用免遭攻击。 Exploit Protection 还适用于第三方防病毒解决方案。 |
 | [攻击面减少规则](attack-surface-reduction.md) | 使用有助于停止恶意软件的智能规则，减少应用程序中的漏洞（攻击面）。  (需要Microsoft Defender 防病毒) 。 |
 | [设备控制](device-control-report.md) | 通过监视和控制组织中设备上使用的媒体（如可移动存储和 USB 驱动器）防止数据丢失。 |

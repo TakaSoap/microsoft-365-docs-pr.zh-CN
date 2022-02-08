@@ -1,6 +1,6 @@
 ---
-title: 攻击面减少规则部署第 1 阶段 - 计划
-description: 提供规划攻击面减少规则部署的指南。
+title: 规划 ASR 规则攻击面减少部署规则部署
+description: 提供在 ASR 规则部署中 (攻击) 指南。
 keywords: 攻击面减少规则部署， ASR 部署， 启用 asr 规则， 配置 ASR， 主机入侵防护系统， 保护规则， 反攻击规则， 反攻击， 攻击规则， 感染防护规则， Microsoft Defender for Endpoint， 配置 ASR 规则
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -11,23 +11,18 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: 'oogunrinde, sugamar'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: b3022409360bbd8f8aa677f9481b5763a2429808
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327588"
 ---
-# <a name="phase-1-plan"></a>阶段 1：计划
 
-开始测试 ASR 规则涉及从正确的业务部门开始。 您需要从特定业务部门中的一小组人员开始。 你可以确定特定业务部门中的一些 ASR 冠军，这些冠军可以为 ASR 规则提供实际影响，并帮助你调整实现。
+# <a name="step-1-plan-asr-rules-deployment"></a>步骤 1：规划 ASR 规则部署
+
+当测试攻击面 (ASR) 规则时，从正确的业务部门开始非常重要。 您需要从特定业务部门中的一小组人员开始。 你可以确定特定业务部门中的一些 ASR 冠军，这些冠军可以提供有关 ASR 规则的实际影响，并帮助你调整实现。
 
 > [!div class="mx-imgBorder"]
 > ![ASR 规则规划步骤](images/asr-rules-planning-steps.png)
@@ -56,9 +51,9 @@ ASR 规则冠军是贵组织的成员，有助于在初步测试和实施阶段�
 ## <a name="get-inventory-of-line-of-business-apps-and-understand-the-business-unit-processes"></a>获取业务线应用的清单并了解业务部门流程
 
 全面了解整个组织中使用的应用程序和每个业务部门的过程对于成功部署 ASR 规则至关重要。 此外，必须了解在组织的各个业务部门中如何使用这些应用。
-首先，你应该获得经批准在整个组织范围使用的应用的清单。 可以使用管理中心等工具Microsoft 365 应用版清单软件应用程序。 请参阅：[管理中心中的Microsoft 365 应用版概述](/deployoffice/admincenter/inventory)。
+首先，你应该获得经批准在整个组织范围使用的应用的清单。 可以使用管理中心等工具Microsoft 365 应用版软件应用程序清单。 请参阅：[管理中心中的Microsoft 365 应用版概述](/deployoffice/admincenter/inventory)。
 
-## <a name="define-reporting-and-response-team--roles-and-responsibilities"></a>定义报告和响应团队角色和责任
+## <a name="define-reporting-and-response-team-roles-and-responsibilities"></a>定义报告和响应团队角色和责任
 
 明确分配负责监视和传达 ASR 规则状态和活动的人员的角色和职责是 ASR 维护的核心活动。 因此，确定：
 
@@ -70,7 +65,7 @@ ASR 规则冠军是贵组织的成员，有助于在初步测试和实施阶段�
 
 - IT 管理员：实施 ASR 规则，管理排除项。 在应用和流程上使用不同的业务部门。 组合报告并共享给利益干系人
 - CSOC (安全运营) ：负责投资高优先级的阻止流程，以确定威胁是否有效
-- CISO (首席) ：负责组织的整体安全状况和运行状况
+- CISO (首席信息安全) ：负责组织的整体安全状况和运行状况
 
 ## <a name="ring-deployment"></a>环形部署
 
@@ -80,10 +75,10 @@ ASR 规则冠军是贵组织的成员，有助于在初步测试和实施阶段�
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题
 
-[ASR 规则部署概述](attack-surface-reduction-rules-deployment.md)
+[ASR 规则部署先决条件](attack-surface-reduction-rules-deployment.md)
 
-[第 2 截断：测试](attack-surface-reduction-rules-deployment-test.md)
+[步骤 2：测试 ASR 规则](attack-surface-reduction-rules-deployment-test.md)
 
-[第 3 阶段：实施](attack-surface-reduction-rules-deployment-implement.md)
+[步骤 3：实现 ASR 规则](attack-surface-reduction-rules-deployment-implement.md)
 
-[第 4 阶段：投入生产](attack-surface-reduction-rules-deployment-operationalize.md)
+[步骤 4：操作 ASR 规则](attack-surface-reduction-rules-deployment-operationalize.md)

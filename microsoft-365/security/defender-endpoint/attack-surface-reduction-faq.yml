@@ -63,7 +63,7 @@ sections:
 
           ASR 规则排除项支持通配符、路径和环境变量。 若要详细了解如何在 ASR 规则中使用通配符，请参阅配置和验证基于文件扩展名和文件夹位置 [的排除项](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)。
 
-          请注意以下有关 ASR 规则排除项 (通配符和 env。 变量) ：
+          请注意以下有关 ASR 规则排除项 (包括通配符和 env。 变量) ：
 
           - ASR 规则排除项独立于Microsoft Defender 防病毒排除项
           - 通配符不能用于定义驱动器号
@@ -92,7 +92,7 @@ sections:
           我们建议启用每个可能的规则。 但是，在某些情况下不应启用规则。 例如，如果您使用的是 Microsoft Endpoint Configuration Manager (或 System Center Configuration Manager - SCCM) 来管理终结点，则不建议启用源自 PSExec 和 WMI 命令规则的阻止进程创建。
 
           我们强烈建议您阅读我们的公共文档中提供的每个特定于规则的信息和/或 [警告](/microsoft-365/security/defender-endpoint/attack-surface-reduction)。
-          跨多个保护支柱，Office、凭据、脚本、电子邮件等。所有 ASR 规则（通过 WMI 事件订阅阻止持久性除外）在 Windows 1709 及更高版本上受支持：
+          跨多个保护支柱，Office、凭据、脚本、电子邮件等。1709 及更高版本支持所有 ASR 规则（通过 WMI 事件订阅阻止持久性Windows除外）：
 
           * [阻止滥用被攻击的易受攻击的已签名驱动程序](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
           * [阻止来自电子邮件客户端和 Webmail 的可执行内容](attack-surface-reduction-rules-reference.md#block-executable-content-from-email-client-and-webmail)
@@ -177,6 +177,6 @@ sections:
         answer: |
           * [攻击面减少概述](attack-surface-reduction.md)
           * [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
-          * [攻击面减少规则部署阶段 3：实施](attack-surface-reduction-rules-deployment-implement.md)
+          * [攻击面减少规则部署步骤 3：实施 ASR 规则](attack-surface-reduction-rules-deployment-implement.md)
           * [启用攻击面减少规则](enable-attack-surface-reduction.md)
           * [防病毒Microsoft Defender 防病毒防病毒/反恶意软件的兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

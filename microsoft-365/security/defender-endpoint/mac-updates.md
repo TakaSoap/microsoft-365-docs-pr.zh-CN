@@ -12,17 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ee8ea26c53bf5ae56c558f7aaa956974474dd101
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171433"
 ---
+
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -47,7 +42,7 @@ Microsoft 会定期发布软件更新，以提高性能、安全性和提供新�
 
 ## <a name="use-msupdate"></a>使用 msupdate
 
-MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理员设计，以便他们可以更精确地控制何时应用更新。 有关如何使用此工具的说明，请参阅 Update Office for Mac [by using msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate)。
+MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理员设计，以便他们可以更精确地控制何时应用更新。 有关如何使用此工具的说明，请参阅 Update [Office for Mac by using msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate)。
 
 在 MAU 中，macOS 上的 Microsoft Defender for Endpoint 的应用程序标识符是 *WDAV00*。 若要在 macOS 上下载并安装 Microsoft Defender for Endpoint 的最新更新，请从"终端"窗口执行以下命令：
 
@@ -61,19 +56,19 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 
 ### <a name="set-the-channel-name"></a>设置频道名称
 
-通道确定通过 MAU 提供的更新的类型和频率。 中的设备可以在 和 中的设备 `Beta` 之前试用 `Preview` 新功能 `Current` 。
+通道确定通过 MAU 提供的更新的类型和频率。 中的设备 `Beta` 可以在 和 中的设备之前试用 `Preview` 新功能 `Current`。
 
-`Current`渠道包含最稳定的产品版本。
+渠道 `Current` 包含最稳定的产品版本。
 
 > [!IMPORTANT]
 > 在 Microsoft AutoUpdate 版本 4.29 之前，频道具有不同的名称：
 >
-> - `Beta` 已 (`InsiderFast` Insider Fast) 
-> - `Preview` 被命名为 `External` (Insider Slow) 
+> - `Beta` 已 (`InsiderFast` 预览体验成员 Fast) 
+> - `Preview` 被命名为 (`External` Insider Slow) 
 > - `Current` 已命名 `Production`
 
 > [!TIP]
-> 为了预览新功能并提供早期反馈，建议将企业中某些设备配置为 `Beta` 或 `Preview` 。
+> 为了预览新功能并提供早期反馈， `Beta` 建议将企业中某些设备配置为 或 `Preview`。
 
 <br>
 
@@ -84,14 +79,14 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |**域**|`com.microsoft.autoupdate2`|
 |**键**|ChannelName|
 |**数据类型**|String|
-|**可能的值**|Beta <p> 预览 <p> Current|
+|**可能的值**|Beta <p> Preview <p> Current|
 |||
 
 > [!WARNING]
-> 此设置更改通过 Microsoft AutoUpdate 更新的所有应用程序的通道。 若要仅为 macOS 上的 Microsoft Defender for Endpoint 更改通道，在将 替换为所需通道后执行 `[channel-name]` 以下命令：
+> 此设置更改通过 Microsoft AutoUpdate 更新的所有应用程序的通道。 若要仅为 macOS `[channel-name]` 上的 Microsoft Defender for Endpoint 更改通道，在将 替换为所需通道后执行以下命令：
 >
 > ```bash
-> defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
+> defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
 
 ### <a name="set-update-check-frequency"></a>设置更新检查频率
@@ -172,7 +167,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
 |**键**|SendAllTelemetryEnabled|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|为 (默认值)  <p> False|
 |||
 
@@ -189,7 +184,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 > 以下配置是一个示例配置，如果不适当审阅设置和定制配置，则不应在生产中使用。
 
 > [!TIP]
-> 为了预览新功能并提供早期反馈，建议将企业中某些设备配置为 `Beta` 或 `Preview` 。
+> 为了预览新功能并提供早期反馈， `Beta` 建议将企业中某些设备配置为 或 `Preview`。
 
 ### <a name="jamf"></a>JAMF
 
@@ -276,7 +271,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 
 若要配置 MAU，可以从企业使用的管理工具部署此配置文件：
 
-- 从 JAMF 中，上传此配置文件，将首选项域设置为 *com.microsoft.autoupdate2*。
+- 从 JAMF 上传此配置文件，将首选项域设置为 *com.microsoft.autoupdate2*。
 - 从 Intune 中，上载此配置文件，将自定义配置文件名称设置为 *com.microsoft.autoupdate2*。
 
 ## <a name="resources"></a>资源

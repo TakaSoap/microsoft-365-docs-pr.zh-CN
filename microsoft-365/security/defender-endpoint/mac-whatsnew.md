@@ -12,17 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 054a684829217676df4bb3bf7d8469dbfc53a2a3
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265687"
 ---
+
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -33,14 +28,9 @@ ms.locfileid: "62265687"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-> [!NOTE]
-> 从 2022 年 1 月底开始，适用于终结点 (的 Microsoft Defender) 在 macOS 上面向最终用户的 MDE 体验将被引用为"Microsoft Defender"。 
-> 
-> This change is currently available in the Beta (previously called Insider Fast) and Preview (previously called Insider Slow) update channels. 包含此更改的最低产品版本为 101.56.35。 有关详细信息，请参阅与此版本对应的以下发行说明。
-> 
-> 此更改不会影响 `mdatp` 命令行工具。
->
-> **需要的操作**：如果您的企业具有依赖产品名称或应用程序安装路径的自定义配置，则必须使用上面列出的新值更新这些配置。
+## <a name="1015662-20121122156620"></a>101.56.62 (20.121122.15662.0) 
+
+- 错误修补程序
 
 ## <a name="1015635-20121121156350"></a>101.56.35 (20.121121.15635.0) 
 
@@ -55,8 +45,8 @@ ms.locfileid: "62265687"
 
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0) 
 
-- 不再支持 (mojave) macOS 10.14
-- 在管理员通过 MDM 停止管理产品设置后，它现在恢复为它管理之前的值 (最终用户在本地配置的值，或者，如果未显式提供此类本地值，则恢复为产品) 使用的默认值。 在此更改之前，在停止管理设置后，其托管值将保留，并且仍由产品使用。
+- 不再支持 mojave () macOS 10.14
+- 在管理员通过 MDM 停止管理产品设置后，它现在将恢复为它管理之前的值 (最终用户在本地配置的值，或者，如果未显式提供此类本地值，则恢复为产品) 使用的默认值。 在此更改之前，在停止管理设置后，其托管值将保留，并且仍由产品使用。
 - Bug 修复&性能改进
 
 ## <a name="1014925-20121092149250"></a>101.49.25 (20.121092.14925.0) 
@@ -101,7 +91,7 @@ ms.locfileid: "62265687"
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0) 
 
 - [macOS 的设备](mac-device-control-overview.md) 控件现已一般可用
-- 解决了无法从 macOS 11 和 Big Sur (状态菜单启动快速) 
+- 解决了无法从 macOS 11 ("大 Sur"菜单上启动快速) 
 - 其他 Bug 修复
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0) 
@@ -113,8 +103,8 @@ ms.locfileid: "62265687"
 - 从此版本开始，在通过命令行客户端触发的按需防病毒扫描期间检测到的威胁将自动修正。 扫描期间通过用户界面触发的威胁仍然需要手动操作。
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
-  - `--top N`：显示前 N 个 (仅在指定了 `--sort` 值时) 
-- 性能改进 (在将一些 BUG 修复) &使用时的性能改进
+  - `--top N`：显示前 N 个 (仅在还指定了 `--sort` 值时) 
+- 性能改进 (在 BUG 修复中) &使用时的性能改进
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0) 
 
@@ -123,7 +113,7 @@ ms.locfileid: "62265687"
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0) 
 
 - macOS 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [适用于美国政府终结点客户的 Microsoft Defender](gov.md)。
-- 性能改进 (专为使用 XCode 模拟器应用修复错误) &的情况。
+- 性能改进 (XCode 模拟器应用用于修复错误) &的情况。
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
 
@@ -153,7 +143,7 @@ ms.locfileid: "62265687"
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0) 
 
 - 改进了在 macOS 11 Big Sur 上运行的代理的可靠性
-- 添加了新的命令行开关 (`--ignore-exclusions`) 自定义扫描过程中忽略 AV 排除 `mdatp scan custom` () 
+- 添加了一个新的命令行开关 () `--ignore-exclusions` 自定义扫描过程中忽略 AV 排除 () `mdatp scan custom`
 - Bug 修复&性能改进
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0) 
@@ -306,7 +296,7 @@ ms.locfileid: "62265687"
 - 增加了对 macOS 加泰罗尼亚语的支持
 
   > [!CAUTION]
-  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，未经明确同意 (应用程序无法访问磁盘上的某些位置，如文档、下载、桌面) 等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序无法访问磁盘上的某些位置 (如文档、下载、桌面等) 未经明确同意。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
   >
   > 授予此同意的机制取决于你部署适用于终结点的 Microsoft Defender 的方式：
   >

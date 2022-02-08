@@ -1,6 +1,6 @@
 ---
 title: 通过Windows将设备载入 Microsoft Defender for Endpoint
-description: 使用组策略在 Windows部署配置包，以便它们可以载入服务。
+description: 使用组策略在 Windows部署配置包，以便它们可以载入到服务。
 keywords: 使用组策略配置设备， 设备管理， 为终结点设备配置 Microsoft Defender， 载入适用于终结点设备的 Microsoft Defender， 组策略
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,13 +16,8 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.technology: mde
-ms.openlocfilehash: 7881a09c0530da09880c0fa1c8c2d73ed0c83000
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327565"
 ---
+
 # <a name="onboard-windows-devices-using-group-policy"></a>使用组策略载入 Windows 设备 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -43,11 +38,11 @@ ms.locfileid: "62327565"
 > 对于 Windows Server 2019 和 Windows Server 2022，可能需要将 NT AUTHORITY\Well-Known-System-Account 替换为组策略首选项创建的 XML 文件的 NT AUTHORITY\SYSTEM。
 
 > [!NOTE]
-> 如果你对 Windows Server 2012 R2 和 2016 使用新的统一 Microsoft Defender for Endpoint 解决方案，请确保你正在使用中央存储中的最新 ADMX 文件，以访问正确的 Microsoft Defender for Endpoint 策略选项。 请参阅 [如何创建](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)和管理集中存储的组策略管理模板Windows下载最新文件 **以用于Windows 10**。
+> 如果你对 Windows Server 2012 R2 和 2016 使用新的统一 Microsoft Defender for Endpoint 解决方案，请确保你正在使用中央存储中的最新 ADMX 文件，以访问正确的 Microsoft Defender for Endpoint 策略选项。 请参阅 [如何为](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) Windows 中的组策略管理模板创建和管理中央存储，并下载与 Windows 10 **一Windows 10**。
 
-请查看 [PDF 或](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各个路径。
+请查看 [PDF 或](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 的各种路径。
 
-1. 打开 GP 配置包文件 (`WindowsDefenderATPOnboardingPackage.zip`) 从服务载入向导下载的文件。 还可以从应用门户获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender包</a>：
+1. 打开 GP 配置文件 () `WindowsDefenderATPOnboardingPackage.zip` 从服务载入向导下载的文件。 还可以从应用门户获取Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">包</a>：
 
     1. 在导航窗格中，**选择"设置** > **EndpointsDevice** >  **managementOnboarding**  > "。
 
@@ -59,13 +54,13 @@ ms.locfileid: "62327565"
 
 2. 将文件内容.zip到设备可以访问的共享只读位置。 你应该有一个名为 *OptionalParamsPolicy* 的文件夹和 *文件 WindowsDefenderATPOnboardingScript.cmd*。
 
-3. 若要创建新的 GPO，请打开 GPMC [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (组策略管理) ，右键单击要配置的组策略对象，**然后单击新建。** 在显示的对话框中输入新 GPO 的名称，然后单击"确定 **"**。
+3. 若要创建新的 GPO，请打开 GPMC [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (组策略管理) ，右键单击要配置的组策略对象，然后单击 **新建。** 在显示的对话框中输入新 GPO 的名称，然后单击"确定 **"**。
 
 4. 打开 GPMC (组策略管理) ，右键单击要配置的组策略对象 (GPO) 然后单击"编辑 **"**。[](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)
 
 5. 在组 **策略管理编辑器中**，转到" **计算机配置**"，然后转到" **首选项**"，然后转到" **控制面板设置"**。
 
-6. 右键单击 **计划任务**，指向新建，然后单击即时任务 (**任务Windows 7)**。
+6. 右键单击 **计划任务**，指向新建，然后单击即时任务 (**至少Windows 7)**。
 
 7. 在打开 **的任务** 窗口中，转到常规 **选项卡** 。在 **"安全选项"** 下，单击 **"更改用户或组** "并键入"系统"，然后单击" **检查名称"** ，然后单击"确定 **"**。 NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。
 
@@ -86,7 +81,7 @@ ms.locfileid: "62327565"
 
 对于每个设备，你可以说明当通过请求提交文件进行深入分析Microsoft 365 Defender是否可以从设备收集示例。
 
-可以使用组策略 (GP) 配置设置，如深入分析功能中使用的示例共享的设置。
+可以使用组策略 (GP) 配置设置，例如深入分析功能中使用的示例共享的设置。
 
 ### <a name="configure-sample-collection-settings"></a>配置示例集合设置
 
@@ -119,13 +114,13 @@ ms.locfileid: "62327565"
 
 ### <a name="update-endpoint-protection-configuration"></a>更新终结点保护配置
 
-配置载入脚本后，继续编辑相同的组策略以添加终结点保护配置。 从运行 Windows 10 Server 2019、Windows 11 或 Windows Server 2022 的系统执行组策略编辑，以确保您具有所有必需的 Microsoft Defender 防病毒 功能。 你可能需要关闭并重新打开组策略对象以注册 Defender ATP 配置设置。
+配置载入脚本后，继续编辑相同的组策略以添加终结点保护配置。 从运行 Windows 10 或 Server 2019、Windows 11 或 Windows Server 2022 的系统执行组策略编辑，以确保具有所有必需的 Microsoft Defender 防病毒 功能。 你可能需要关闭并重新打开组策略对象以注册 Defender ATP 配置设置。
 
 所有策略都位于 下 `Computer Configuration\Policies\Administrative Templates`。
 
 **策略位置：\** Windows Components\Windows Defender ATP
 
-Policy|Setting
+Policy|设置
 ---|---
 Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集合"
 
@@ -133,7 +128,7 @@ Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集�
 
 **策略位置：\** Windows Components\Microsoft Defender 防病毒
 
-Policy|Setting
+Policy|设置
 ---|---
 配置对可能不需要的应用程序的检测|已启用、阻止
 
@@ -141,7 +136,7 @@ Policy|Setting
 
 **策略位置：\** Windows Components\Microsoft Defender 防病毒\MAPS
 
-Policy|Setting
+Policy|设置
 ---|---
 加入 Microsoft MAPS|已启用、高级 MAPS
 需要进一步分析时发送文件示例 | 已启用，发送安全示例
@@ -150,7 +145,7 @@ Policy|Setting
 
 **策略位置：\** Windows Components\Microsoft Defender 防病毒\Real-time Protection
 
-Policy|Setting
+Policy|设置
 ---|---
 关闭实时保护|禁用
 打开行为监视|已启用
@@ -163,7 +158,7 @@ Policy|Setting
 
 这些设置配置终结点的定期扫描。 建议在性能允许的情况下执行每周快速扫描。
 
-Policy|Setting
+Policy|设置
 ---|---
 在运行计划扫描之前检查最新的病毒和间谍软件安全智能 |已启用
 
@@ -171,7 +166,7 @@ Policy|Setting
 
 **策略位置：\** Windows组件\Microsoft Defender 防病毒\Microsoft Defender 攻击防护\攻击面减少
 
-从攻击面减少规则部署阶段 3：实施获取攻击 [面减少规则](attack-surface-reduction-rules-deployment-implement.md) GUID 的当前列表。 有关其他规则的详细信息，请参阅 [攻击面减少规则参考](attack-surface-reduction-rules-reference.md)
+从攻击面减少规则部署步骤 [3：实现 ASR](attack-surface-reduction-rules-deployment-implement.md) 规则获取攻击面减少规则 GUID 的当前列表。 有关其他规则的详细信息，请参阅 [攻击面减少规则参考](attack-surface-reduction-rules-reference.md)
 
 1. 打开配置 **攻击面减少** 策略。
 
@@ -185,7 +180,7 @@ Policy|Setting
 
    ![攻击面减少配置的图像。](images/asr-guid.png)
 
-Policy|位置|Setting
+Policy|位置|设置
 ---|---|---
 配置受控文件夹访问权限| \Windows Components\Microsoft Defender 防病毒\Microsoft Defender 攻击防护\Controlled Folder Access| 已启用，审核模式
 

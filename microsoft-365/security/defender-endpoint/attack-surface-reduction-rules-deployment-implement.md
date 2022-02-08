@@ -1,5 +1,5 @@
 ---
-title: 攻击面减少规则部署第 3 阶段 - 实施
+title: 在 ASR (规则部署) 攻击面减少
 description: 提供实现攻击面减少规则部署的指南。
 keywords: 攻击面减少规则部署， ASR 部署， 启用 asr 规则， 配置 ASR， 主机入侵防护系统， 保护规则， 反攻击规则， 反攻击， 攻击规则， 感染防护规则， Microsoft Defender for Endpoint， 配置 ASR 规则
 search.product: eADQiWindows 10XVcnh
@@ -11,23 +11,18 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: 'oogunrinde, sugamar'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: 74eb07481358de99cd6f78563e1fb37266ebd1e3
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62329008"
 ---
-# <a name="phase-3---implement"></a>第 3 阶段 - 实施
 
-实现阶段将环从测试移动到功能状态。
+# <a name="step-3-implement-asr-rules"></a>步骤 3：实现 ASR 规则
+
+实施攻击面减少 (ASR) 规则将第一个测试圈移动到启用的功能状态。
 
 > [!div class="mx-imgBorder"]
 > ![ASR 规则实现步骤](images/asr-rules-implementation-steps.png)
@@ -51,7 +46,7 @@ ms.locfileid: "62329008"
 
 ### <a name="step-2-expand-deployment-to-ring-n--1"></a>步骤 2：展开部署以圈 n + 1
 
-当你确信已正确配置圈 1 的 ASR 规则时，可以将部署范围扩大到下一个圈 (n + 1) 。
+当你确信已正确配置圈 1 的 ASR 规则时，你可以将部署范围扩大到下一个圈 (n + 1) 。
 
 每个后续圈的部署过程步骤 1 – 3 基本相同：
 
@@ -105,7 +100,7 @@ ms.locfileid: "62329008"
 
 ##### <a name="use-powershell-to-exclude-files-and-folders"></a>使用 PowerShell 排除文件和文件夹
 
-1. 在 **"管理"中"开始"菜单 powershell**，右 **键单击"** Windows PowerShell并选择"以 **管理员角色运行"**。
+1. 在 **"管理"中"开始"菜单 powershell**，右键单击"Windows PowerShell并选择"**以****管理员角色运行"**。
 
 2. 输入以下 cmdlet：
 
@@ -128,10 +123,10 @@ ms.locfileid: "62329008"
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题
 
-[ASR 规则部署概述](attack-surface-reduction-rules-deployment.md)
+[ASR 规则部署先决条件](attack-surface-reduction-rules-deployment.md)
 
-[第 1 阶段：规划](attack-surface-reduction-rules-deployment-plan.md)
+[步骤 1：规划 ASR 规则部署](attack-surface-reduction-rules-deployment-plan.md)
 
-[第 2 截断：测试](attack-surface-reduction-rules-deployment-test.md)
+[步骤 2：测试 ASR 规则](attack-surface-reduction-rules-deployment-test.md)
 
-[第 4 阶段：投入生产](attack-surface-reduction-rules-deployment-operationalize.md)
+[步骤 4：操作 ASR 规则](attack-surface-reduction-rules-deployment-operationalize.md)

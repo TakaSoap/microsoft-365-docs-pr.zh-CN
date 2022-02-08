@@ -14,15 +14,10 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
-ms.openlocfilehash: 61f5e5ab9b47aae190b0eefa74a04805ceace326
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327013"
+  - M365-security-compliance
+  - m365initiative-defender-endpoint
 ---
+
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>为终结点计划 1 设置和配置 Microsoft Defender
 
 **适用于：**
@@ -111,7 +106,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 
 > [!TIP]
-> 若要了解有关用户角色Azure Active Directory，请参阅将管理员和非[管理员](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)角色分配给具有 Azure Active Directory。 有关 Defender for Endpoint 的角色详细信息，请参阅基于 [角色的访问控制](prepare-deployment.md#role-based-access-control)。
+> 若要了解有关用户角色Azure Active Directory，请参阅将管理员和非管理员角色分配给具有 [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。 有关 Defender for Endpoint 的角色详细信息，请参阅基于 [角色的访问控制](prepare-deployment.md#role-based-access-control)。
 
 ## <a name="onboard-to-defender-for-endpoint"></a>载入到适用于终结点的 Defender
 
@@ -157,7 +152,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 | [网络保护](#network-protection) | 设置网络保护以防止组织成员使用访问 Internet 上危险域或恶意内容的应用程序。 |
 | [Web 保护功能](#web-protection) | 设置 Web 威胁防护来保护组织设备免受网络钓鱼网站、攻击站点和其他不受信任的或低信誉网站的威胁。 设置 Web 内容筛选，以根据网站的内容类别（如 (、高带宽、成人内容或法律责任等）跟踪和) 。 |
 | [网络防火墙](#network-firewall) | 使用规则配置网络防火墙，这些规则确定允许哪些网络流量进入或来自组织的设备。 |
-| [应用程序控制](#application-control)  | 如果要仅允许受信任的应用程序和进程在受信任的设备上运行，请配置Windows规则。    |
+| [应用程序控制](#application-control)  | 如果希望仅允许受信任的应用程序和进程在受信任的设备上运行，请配置Windows规则。    |
 
 ### <a name="attack-surface-reduction-rules"></a>攻击面减少规则
 
@@ -191,13 +186,13 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 > 若要详细了解攻击面减少规则，请参阅以下资源：
 > - [使用攻击面减少规则来避免感染恶意软件](attack-surface-reduction.md)
 > - [查看攻击面减少规则列表](attack-surface-reduction-rules-reference.md)
-> - [攻击面减少规则部署阶段 3：实施](attack-surface-reduction-rules-deployment-implement.md)
+> - [攻击面减少规则部署步骤 3：实施 ASR 规则](attack-surface-reduction-rules-deployment-implement.md)
 
 ### <a name="ransomware-mitigation"></a>勒索软件缓解
 
 通过受控文件夹访问权限 [，](controlled-folders.md#what-is-controlled-folder-access)你可以获取勒索软件缓解，这仅允许受信任的应用访问终结点上的受保护文件夹。 
 
-我们建议使用 Microsoft Endpoint Manager配置受控文件夹访问权限。
+我们建议使用Microsoft Endpoint Manager配置受控文件夹访问权限。
 
 :::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Microsoft Endpoint Manager 中的 ASR 策略":::
 
@@ -207,9 +202,9 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 3. 选择 **" + 创建策略"**。 
 
-4. 对于 **"** 平台"，**Windows 10** 和更高版本，对于 **配置文件**，选择 **攻击面减少规则**。 然后选择" **创建**"。 
+4. 对于 **"** 平台"，**Windows 10** 和更高版本 **，对于配置文件**，选择攻击 **面减少规则**。 然后选择" **创建**"。 
 
-5. 在 **"基本信息"** 选项卡上，为策略命名并添加说明。 选择“**下一步**”。 
+5. 在 **"基本信息"** 选项卡上，为策略命名并添加说明。 选择 **下一步**。 
 
 6. 在" **配置设置"** 选项卡上的" **攻击面** 减少规则"部分，向下滚动到底部。 在" **启用文件夹保护"** 下拉列表中，选择"启用 **"**。 可以选择指定以下其他设置：
 
@@ -227,9 +222,9 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 9. 在" **查看 + 创建** "选项卡上，查看策略的设置，然后选择"创建 **"**。 该策略将应用于不久后载入到 Defender for Endpoint 的任何终结点。
 
-### <a name="device-control"></a>设备控件
+### <a name="device-control"></a>设备控制
 
-你可以将 Defender for Endpoint 配置为阻止或允许可移动设备上可移动设备和文件。 我们建议使用Microsoft Endpoint Manager配置设备控件设置。
+你可以将 Defender for Endpoint 配置为阻止或允许可移动设备上可移动设备和文件。 我们建议使用Microsoft Endpoint Manager配置设备控制设置。
 
 :::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="Microsoft Endpoint Manager管理模板":::
 
@@ -237,13 +232,13 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 2. 选择“**设备**” > “**配置文件**” > “**创建配置文件**”。
 
-3. 对于 **"平台**"，**Windows 10** 和更高版本，对于 **配置文件类型**，选择"**模板"**。 
+3. 对于 **"** 平台"，**Windows 10** 和更高版本，对于 **配置文件类型**，选择"**模板"**。 
 
    在 **"模板名称**"下， **选择"管理模板**"，然后选择"创建 **"**。 
 
-4. 在 **"基本信息"** 选项卡上，为策略命名并添加说明。 选择“**下一步**”。 
+4. 在 **"基本信息"** 选项卡上，为策略命名并添加说明。 选择 **下一步**。 
 
-5. 在"**配置设置"** 选项卡上，选择"**所有设置**"。 然后在搜索框中，键入 `Removable` 以查看与可移动设备相关的所有设置。
+5. 在"**配置设置"** 选项卡上，选择"**所有设置"**。 然后在搜索框中，键入 `Removable` 以查看与可移动设备相关的所有设置。
 
 6. 选择列表中的某个项（如"所有可移动存储 **类：拒绝** 所有访问）以打开其飞出窗格。 每个设置的飞出图说明了启用、禁用或不配置此设置时会发生什么情况。 选择设置，然后选择"确定 **"**。 
 
@@ -270,15 +265,15 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 2. 选择“**设备**” > “**配置文件**” > “**创建配置文件**”。
 
-3. 对于 **"平台**"，**Windows 10** 和更高版本，对于 **配置文件类型**，选择"**模板"**。 
+3. 对于 **"** 平台"，**Windows 10** 和更高版本，对于 **配置文件类型**，选择"**模板"**。 
 
    在 **"模板名称"** 下， **选择"终结点保护**"，然后选择"创建 **"**。 
 
-4. 在 **"基本信息"** 选项卡上，为策略命名并添加说明。 选择“**下一步**”。 
+4. 在 **"基本信息"** 选项卡上，为策略命名并添加说明。 选择 **下一步**。 
 
 5. 在"**配置设置"** 选项卡上，展开"**Microsoft Defender 攻击防护**"，然后展开"网络 **筛选"**。
 
-   将 **"网络保护"****设置为"启用"**。  (可以选择"审核"，以查看网络保护最初在环境中) 
+   将 **"网络保护"****设置为"启用"**。  (可以选择"审核"，以首先查看网络保护在环境中) 
 
    然后选择“**下一步**”。
 
@@ -293,7 +288,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 8. 在" **查看 + 创建** "选项卡上，查看策略的设置，然后选择"创建 **"**。 该策略将应用于不久后载入到 Defender for Endpoint 的任何终结点。
 
 > [!TIP]
-> 可以使用其他方法（如Windows PowerShell组策略）启用网络保护。 若要了解更多信息，请参阅 [启用网络保护](enable-network-protection.md)。
+> 可以使用其他方法（如 Windows PowerShell 或组策略）启用网络保护。 若要了解更多信息，请参阅 [启用网络保护](enable-network-protection.md)。
 
 ### <a name="web-protection"></a>Web 保护
 
@@ -305,13 +300,13 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
  
 2. Choose **Endpoint securityAttack** >  **surface reduction**， and then choose **+ Create policy**.
 
-3. 选择一个平台（Windows 10 **及** 更高版本）选择 **Web 保护** 配置文件，然后选择"创建 **"**。 
+3. 选择一个平台（Windows 10及更高版本）选择 **Web 保护** 配置文件，然后选择"创建 **"**。 
 
 4. 在" **基本信息"** 选项卡上，指定名称和说明，然后选择"下一步 **"**。
 
 5. 在" **配置设置"** 选项卡上，展开 **"Web 保护"**，指定下表中的设置，然后选择"下一步 **"**。 <br/><br/>
 
-   | Setting | 建议 |
+   | 设置 | 建议 |
    |:---|:---|
    | **启用网络保护** | 设置为 **已启用**。 阻止用户访问恶意网站或域。 <br/><br/>或者，你可以将网络保护设置为 **审核模式** 以查看它在环境中如何工作。 在审核模式下，网络保护不会阻止用户访问网站或域，但会作为事件跟踪检测。 |
    | **需要 SmartScreen Microsoft Edge 旧版** | 设置为 **"是"**。 帮助保护用户免受潜在网络钓鱼欺诈和恶意软件的攻击。 |
@@ -333,7 +328,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 1. 转到"Microsoft 365 Defender门户 () [https://security.microsoft.com/](https://security.microsoft.com/) 并登录。
 
-2. 选择 **"设置** > **Endpoints"**。
+2. 选择 **设置** > **Endpoints"**。
 
 3. 在 **"规则**"下， **选择"Web 内容筛选**"，然后选择" **+ 添加策略"**。
 
@@ -356,11 +351,11 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 若要配置基本防火墙设置，请按照以下步骤操作：
 
-1. 转到管理Microsoft Endpoint Manager中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) ，然后登录。
+1. 转到管理Microsoft Endpoint Manager中心 () [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ，然后登录。
 
 2. 选择 **"终结点安全** > **防火墙**"，然后选择" **+ 创建策略"**。
 
-3. 选择平台（如 Windows 10 **及更高版本**）选择 **Microsoft Defender 防火墙** 配置文件，然后选择"创建 **"**。 
+3. 选择平台（如Windows 10 **和** 更高版本）选择 **Microsoft Defender 防火墙** 配置文件，然后选择"创建 **"**。 
 
 4. 在" **基本信息"** 选项卡上，指定名称和说明，然后选择"下一步 **"**。
 
@@ -385,11 +380,11 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 9. 在" **查看 + 创建"** 选项卡上，查看策略设置，然后选择"创建 **"**。
 
 > [!TIP]
-> 防火墙设置很详细，可能看起来很复杂。 请参阅[配置防火墙的最佳实践Windows Defender。](/windows/security/threat-protection/windows-firewall/best-practices-configuring)
+> 防火墙设置很详细，可能看起来很复杂。 请参阅 [Best practices for configuring Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring)。
 
 ### <a name="application-control"></a>应用程序控制
 
-Windows Defender应用程序控制 (WDAC) 仅允许运行受信任的应用程序和进程，帮助保护 Windows 终结点。 大多数组织都使用 WDAC 的分阶段部署。 也就是说，大多数组织最初不会在所有 Windows推出 WDAC。 实际上，根据组织的 Windows 终结点是完全托管、轻型托管还是"自带设备"终结点，你可以在所有或某些终结点上部署 WDAC。
+Windows Defender应用程序控制 (WDAC) 仅允许受信任的应用程序和进程运行，帮助保护 Windows 终结点。 大多数组织都使用 WDAC 的分阶段部署。 也就是说，大多数组织最初不会在所有Windows推出 WDAC。 实际上，根据组织的 Windows 终结点是完全托管、轻型托管还是"自带设备"终结点，你可以在所有或某些终结点上部署 WDAC。
 
 若要帮助规划 WDAC 部署，请参阅以下资源：
 

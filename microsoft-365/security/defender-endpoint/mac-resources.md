@@ -12,17 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ab1cf8a93876c5669d561161874a1c34914b7fa3
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156348"
 ---
+
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的资源
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -51,10 +46,10 @@ ms.locfileid: "62156348"
 
 2. 重现问题
 
-3. 运行 `sudo mdatp diagnostic create` 以备份适用于终结点的 Microsoft Defender 日志。 这些文件将存储在存档.zip中。 此命令还会在操作成功后输出备份的文件路径。
+3. 运行 `sudo mdatp diagnostic create` 以备份适用于终结点的 Microsoft Defender 日志。 这些文件将存储在一个.zip中。 此命令还会在操作成功后输出备份的文件路径。
 
    > [!TIP]
-   > 默认情况下，诊断日志将保存到 `/Library/Application Support/Microsoft/Defender/wdavdiag/` 。 若要更改保存诊断日志的目录，请传递给以下命令， `--path [directory]` `[directory]` 将 替换为所需的目录。
+   > 默认情况下，诊断日志将保存到 `/Library/Application Support/Microsoft/Defender/wdavdiag/`。 若要更改保存诊断日志的目录，请传递给 `--path [directory]` 以下命令，将 `[directory]` 替换为所需的目录。
 
    ```bash
    sudo mdatp diagnostic create
@@ -78,7 +73,7 @@ ms.locfileid: "62156348"
 
 如果在安装过程中发生错误，安装程序将只报告常规故障。
 
-详细日志将保存到 `/Library/Logs/Microsoft/mdatp/install.log` 。 如果在安装过程中遇到问题，请将此文件发送给我们，以便我们可以帮助诊断原因。
+详细日志将保存到 `/Library/Logs/Microsoft/mdatp/install.log`。 如果在安装过程中遇到问题，请将此文件发送给我们，以便我们可以帮助诊断原因。
 
 ## <a name="uninstalling"></a>卸载
 
@@ -86,7 +81,7 @@ ms.locfileid: "62156348"
 
 ### <a name="interactive-uninstallation"></a>交互式卸载
 
-- 打开 **Finder > Applications**。 右键单击 **"适用于终结点的 Microsoft Defender >移动到回收站"。**
+- 打开 **Finder > 应用程序**。 右键单击 **Microsoft Defender for Endpoint >移动到回收站**。
 
 ### <a name="supported-output-types"></a>支持的输出类型
 
@@ -138,7 +133,7 @@ ms.locfileid: "62156348"
 若要在 Bash 中启用自动完成，请运行以下命令并重新启动终端会话：
 
 ```bash
-echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
+echo "source /Applications/Microsoft\ Defender.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
 ```
 
 在 zsh 中启用自动完成：
@@ -160,13 +155,13 @@ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
 
-   sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
+   sudo ln -svf "/Applications/Microsoft Defender.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
 ## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>客户端 Microsoft Defender for Endpoint 隔离目录
 
-`/Library/Application Support/Microsoft/Defender/quarantine/` 包含由 隔离的文件 `mdatp` 。 这些文件以威胁跟踪 Id 命名。 当前 trackingIds 显示为 `mdatp threat list` 。
+`/Library/Application Support/Microsoft/Defender/quarantine/` 包含由 隔离的文件 `mdatp`。 这些文件以威胁跟踪 Id 命名。 当前 trackingIds 显示为 `mdatp threat list`。
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>适用于终结点的 Microsoft Defender 门户信息
 
-[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的新功能现已在 Microsoft Defender for Endpoint 博客上提供在适用于终结点安全中心的 Microsoft Defender 中预期内容的详细指导。
+[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801) 的新功能现已在 Microsoft Defender for Endpoint 博客上提供在适用于终结点安全中心的 Microsoft Defender 中预期内容的详细指导。
