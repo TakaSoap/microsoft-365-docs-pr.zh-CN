@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常，它是记录管理解决方案的一部分，你可以配置保留标签以根据所识别的事件开始保留期。
-ms.openlocfilehash: c7e8d70d6ac535ee80e3ddb6ab719fe253836031
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: c4195f7e5a859cf5a1078566728be5b8567cf5b9
+ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241439"
+ms.lasthandoff: 02/06/2022
+ms.locfileid: "62428921"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>从事件发生时开始计算保留期
 
@@ -171,7 +171,7 @@ ms.locfileid: "62241439"
 
 创建事件后，保留设置将对已标记和索引的内容生效。 如果创建事件后将保留标签添加到新内容，则必须创建具有相同详细信息的新事件。
 
-删除事件不会取消现在对内容生效的保留设置。 若要执行此操作，请创建具有相同详细信息的新事件，但将日期保留为空。 
+删除事件不会取消现在对内容生效的保留设置。 目前，无法在触发事件后取消事件。
 
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>使用内容搜索来查找所有包含特定标签或资产 ID 的内容
 
