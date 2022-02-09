@@ -1,5 +1,5 @@
 ---
-title: 安全地让用户登录到 Microsoft 365 租户
+title: 步骤 3：保护 Microsoft 365 用户帐户
 f1.keywords:
 - NOCSH
 author: kelleyvice-msft
@@ -16,14 +16,14 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: 要求用户通过多重身份验证（MFA）和其他功能安全地登录。
-ms.openlocfilehash: 9c29bddee33ee7e06fcaf24bfff8649a12320e9c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c144b374ecc49128e11635c034f3b4b76020eafd
+ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200097"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "62366206"
 ---
-# <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>安全地让用户登录到 Microsoft 365 租户
+# <a name="step-3-protect-your-microsoft-365-user-accounts"></a>步骤 3：保护 Microsoft 365 用户帐户
 
 若要增强用户登录的安全性，请执行以下操作：
 
@@ -52,17 +52,15 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 ![正确的密码加上额外验证就可以成功登录。](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-使用 MFA 的第一步是 ***对所有管理员帐户要求使用 MFA***，这些帐户也被称为特权帐户。
+使用 MFA 的第一步是[对所有管理员帐户要求使用 MFA](protect-your-global-administrator-accounts.md)，这些帐户也被称为特权帐户。 比第一步更好的是，Microsoft 建议对所有用户要求使用 MFA。
 
-比第一步更好的是，Microsoft 建议对所有用户要求使用 MFA。
+根据 Microsoft 365 套餐，可通过三种方式要求你的用户使用 MFA。
 
-根据 Microsoft 365 套餐，可通过三种方式要求你的管理员或用户使用 MFA。
-
-| 计划 | 建议 |
+| 套餐 | 建议 |
 |---------|---------|
 |所有 Microsoft 365 套餐（无 Azure AD Premium P1 或 P2 许可证）     |[在 Azure AD 中启用安全性默认值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值于用户和管理员的 MFA。   |
-|Microsoft 365 E3 （包括 Azure AD Premium P1 许可证）     | 使用[常用条件访问策略](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)配置以下策略： <br>- [要求对管理员执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求对所有用户执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [阻止传统身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 （包括 Azure AD Premium P2 许可证）     | 利用 Azure AD 标识保护，通过创建以下两个策略开始实施 Microsoft [推荐的一组条件访问和相关策略](../security/office-365-security/identity-access-policies.md)：<br> - [要求在登录风险为“中等”或“高”时执行 MFA](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [高风险用户必须更改密码](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E3 （包括 Azure AD Premium P1 许可证）     | 使用 [常见的条件访问策略](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) 配置以下策略： <br>- [要求对管理员执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求对所有用户执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [阻止传统身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 （包括 Azure AD Premium P2 许可证）     | 利用 Azure AD 标识保护，通过创建以下两个策略开始实施 Microsoft 推荐的一组条件访问和相关策略：<br> - [要求在登录风险为“中等”或“高”时执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) <br>- [高风险用户必须更改密码](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)       |
 | | |
 
 ### <a name="security-defaults"></a>安全性默认值
@@ -106,9 +104,9 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 | **条件访问策略** | 如果已启用任何条件访问策略，则无法启用安全性默认值 | 如果已禁用所有条件访问策略，则可以启用安全性默认值  | 由用户在 MFA 注册期间指定  |
 ||||
 
-## <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
+## <a name="zero-trust-identity-and-device-access-configurations"></a>零信任标识和设备访问配置
 
-标识和设备访问设置和策略是推荐的必备功能，而且它们的设置与用于确定是否应授予给定的访问请求，以及在何种情况下授予请求的“条件访问”、Intune 和 Azure AD 标识保护策略结合在了一起。 这种决定是基于登录的用户帐户、正在使用的设备、用户为获得访问权限而正在使用的应用程序、创建访问请求的位置，以及对请求风险的评估。 这个功能有助于确保只有经过批准的用户和设备才能访问关键的公司资源。
+零信任标识和设备访问设置和策略是建议的先决条件功能及其设置，它们与条件访问、Intune 和 Azure AD Identity Protection 策略结合使用，可确定是否应授予给定访问请求以及应在哪些条件下授予给定访问请求。 这种决定是基于登录的用户帐户、正在使用的设备、用户为获得访问权限而正在使用的应用程序、创建访问请求的位置，以及对请求风险的评估。 这个功能有助于确保只有经过批准的用户和设备才能访问关键的公司资源。
 
 >[!Note]
 >Azure AD 标识保护需要 Microsoft 365 E5 随附的 Azure AD Premium P2 许可证。
@@ -122,7 +120,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 这些层及其相应的配置会跨数据、标识和设备，提供一致级别的保护。
 
-Microsoft 强烈建议在组织中配置和推出标识和设备访问策略，包括 Microsoft Teams、Exchange Online 和 SharePoint 的特定设置。有关详细信息，请参阅[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)。
+Microsoft 强烈建议在组织中配置和推出标识和设备访问策略，包括 Microsoft Teams、Exchange Online 和 SharePoint 的特定设置。 有关详细信息，请参阅[零信任标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)。
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD 标识保护
 
@@ -137,18 +135,23 @@ Microsoft 强烈建议在组织中配置和推出标识和设备访问策略，�
 | 调查可疑事件并使用管理操作加以解决 | 可以使用有关安全事件的信息来调查风险事件。提供的基本工作流可用于跟踪调查和启动修正操作（如密码重置）。 |
 |||
 
-请参阅[有关 Azure AD Identity Protection 的详细信息](/azure/active-directory/active-directory-identityprotection)。
+请参阅[有关 Azure AD Identity Protection 的详细信息](/azure/active-directory/identity-protection/overview-identity-protection)。
 
-请参阅[启用 Azure AD Identity Protection 的步骤](/azure/active-directory/active-directory-identityprotection-enable)。
+请参阅[启用 Azure AD Identity Protection 的步骤](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)。
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>用于 MFA 和身份验证的管理员技术资源
 
 - [适用于 Microsoft 365 的 MFA](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
-- [Microsoft 365 的识别指南](identity-roadmap-microsoft-365.md)
+- [部署 Microsoft 365 标识](deploy-identity-solution-overview.md)
 - [Azure Academy Azure AD 培训视频](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [配置  Azure AD 多重身份验证注册策略](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>后续步骤
 
-[管理用户帐户](manage-microsoft-365-accounts.md)
+![部署标识模型](../media/deploy-identity-solution-overview/deploy-identity-solution-identity-infrastructure.png)
+
+继续执行步骤 4，根据所选的标识模型部署标识基础结构：
+
+- [仅限云标识](cloud-only-identities.md)
+- [混合标识](prepare-for-directory-synchronization.md)

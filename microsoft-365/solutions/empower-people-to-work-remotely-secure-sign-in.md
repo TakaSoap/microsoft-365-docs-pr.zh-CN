@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 要求混合工作者使用多重身份验证 (MFA) 登录。
-ms.openlocfilehash: dfcda3eb0f79003a3e09bbda9d3c53dff6ae2f8f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c5c63716ecbd29ba393ee7601e99a1f52b4c3768
+ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934821"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "62365773"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>步骤 1 为使用 MFA 的混合工作者提高登录安全性
 
@@ -106,7 +106,7 @@ Azure AD 标识保护需要 Microsoft 365 E5 随附的 Azure AD Premium P2 许�
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>用于 MFA 和身份验证的管理员技术资源
 
 - [Azure AD 帮助你实现远程工作的 5 大方法](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/top-5-ways-your-azure-ad-can-help-you-enable-remote-work/ba-p/1144691)
-- [Microsoft 365 的识别指南](../enterprise/identity-roadmap-microsoft-365.md)
+- [Microsoft 365 的标识基础结构](../enterprise/deploy-identity-solution-overview.md)
 - [Azure Academy Azure AD 培训视频](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 
 ## <a name="results-of-step-1"></a>步骤 1 的结果

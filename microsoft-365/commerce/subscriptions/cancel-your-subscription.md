@@ -1,28 +1,33 @@
 ---
 title: 取消订阅
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: 'jkinma, jmueller'
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-  - M365-subscription-management
-  - Adm_O365
+- M365-subscription-management
+- Adm_O365
 ms.custom:
-  - AdminSurgePortfolio
-  - commerce_subscriptions
-  - AdminTemplateSet
-  - admindeeplinkMAC
+- AdminSurgePortfolio
+- commerce_subscriptions
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
 description: 了解如何在 Microsoft 365 管理中心中取消 Dynamics 365、Intune、Power Platform 和 Microsoft 365 商业试用版或付费订阅。
 ms.date: 01/20/2022
+ms.openlocfilehash: 61287d790e79b5837fd4be4458fc892db9cc9b54
+ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "62365737"
 ---
-
 # <a name="cancel-your-subscription"></a>取消订阅
 
 你可以随时在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 中取消订阅。 但是，如果要获得退款，则必须满足某些退款资格要求。 有关详细信息，请参阅 [了解退款资格](#understand-refund-eligibility)。
@@ -52,7 +57,7 @@ ms.date: 01/20/2022
 
 |如果你的订阅有  |则可以  |
 |--------------|--------------|
-|25 个或更少的许可证  | 随时在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 356 管理中心</a> 中在线取消试用版或付费订阅。        |
+|25 个或更少的许可证  | 随时在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 中在线取消试用版或付费订阅。        |
 |超过 25 个许可证   | 请将许可证数量减少到 25 个或更少，然后重试，或 [呼叫支持人员以取消订阅](../../admin/get-help-support.md)。        |
 
 如果订阅没有计费对象信息，则只能在购买或续订订阅后的有限时间段内取消。 如果取消时段已过，请在订阅期限结束时 [禁用定期计费](renew-your-subscription.md) 以取消订阅。

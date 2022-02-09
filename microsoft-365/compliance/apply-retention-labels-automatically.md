@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建自动标记保留策略，以便可以自动应用标签以保留所需的内容并删除不需要的内容
-ms.openlocfilehash: 4af5d1a8dc3cb0c7f1ffc38b59556e3bd5220ac5
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: d1060bb4330c2dbb23c241cb3095f3b30869b58a
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244903"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354920"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -374,5 +374,11 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 如果需要确保任何人都无法关闭策略、删除策略或降低其限制性，请参阅[使用保留锁定来限制对保留策略和保留标签策略的更改](retention-preservation-lock.md)。
 
 ## <a name="next-steps"></a>后续步骤
+
+若要帮助跟踪从自动标记策略应用的标签，请执行以下操作：
+
+- [监视保留标签](retention.md#monitoring-retention-labels)
+- [使用“内容搜索”来查找所有带有特定保留标签的内容](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
+- [审核保留操作](retention.md#auditing-retention-actions)
 
 有关使用事件驱动的保留和 SharePoint 中带有托管属性的自动应用保留标签策略来开启保留期的示例方案，请参阅[使用保留标签管理 SharePoint 中存储的文档的生命周期](auto-apply-retention-labels-scenario.md)。
