@@ -8,7 +8,7 @@ metadata:
   manager: dansimp
   audience: Admin
   ms.topic: overview
-  ms.date: 12/13/2021
+  ms.date: 02/07/2022
   ms.prod: m365-security
   ms.technology: mdb
   localization_priority: Normal
@@ -17,40 +17,40 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: c732382adf1db8add348f7e4922edd3506bbd45b
-  ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+  ms.openlocfilehash: 19c05e8218d7c05412b43902b6d0318cb75c0dbd
+  ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/14/2021
-  ms.locfileid: "61507442"
+  ms.lasthandoff: 02/09/2022
+  ms.locfileid: "62465374"
 title: Microsoft Defender for Business (预览) - 常见问题和解答
-summary: "Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。 \n\n本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。\n\n使用本文获取你可能对 Defender for Business (预览版) 。\n"
+summary: "Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 我们将在几周内载入一组初始客户和合作伙伴，并扩大预览，从而在常规发布之前发布。 请注意，预览将启动一 [组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。 \n\n本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。\n\n使用本文获取你可能对 Defender for Business (预览版) 。\n"
 sections:
-- name: 常规
+- name: 一般信息
   questions:
   - question: 我拥有 Microsoft Defender 终结点计划 2。 为什么我在我的门户中看不到 Microsoft Defender for Business？
     answer: >
       目前，如果客户具有多个订阅，则优先使用最高订阅。 如果你有 Microsoft Defender for Endpoint Plan 2 (或试用订阅) ，并且你获得 Microsoft Defender for Business (preview) ，则 Defender for Endpoint Plan 2 优先。 在这种情况下，你将看不到 Defender for Business (预览) 体验。
   - question: Defender for Business 和 Defender for Endpoint Plans 1 和 Endpoint Plans 2 之间有什么区别？
-    answer: "Defender for Business (预览) 专为中小型企业设计， (员工多达 300) 。 借助简化[](mdb-simplified-configuration.md)的配置过程和设备载入选项[](mdb-onboard-devices.md)，Defender for Business (预览版) 使不一定具有安全背景的客户可以设置、配置和使用 Defender for Business (预览版) 。  \n\nDefender for Business (预览版) 和 Defender for Endpoint 都为公司的终结点提供强大的威胁防护功能。 若要了解有关差异的详细信息，请参阅比较[Microsoft Defender for Business (预览版) 与Microsoft 365 商业高级版。](compare-mdb-m365-plans.md)\n"
+    answer: "Defender for Business (预览) 专为中小型企业设计， (最多 300 名员工) 。 借助简化[](mdb-simplified-configuration.md)的配置过程和设备载入选项[](mdb-onboard-devices.md)，Defender for Business (预览版) 使不一定具有安全背景的客户可以设置、配置和使用 Defender for Business (预览版) 。  \n\nDefender for Business (预览) 和 Defender for Endpoint 都为组织的终结点提供强大的威胁防护功能。 若要了解有关差异的详细信息，请参阅比较 [Microsoft Defender for Business (预览版) 与Microsoft 365 商业高级版](compare-mdb-m365-plans.md)。\n"
   - question: 如何注册 Defender for Business 预览版？
     answer: >
-      访问 [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) 以申请预览计划。 若要了解更多信息，请参阅[如何获取 Microsoft Defender for Business (预览) 。 ](get-defender-business.md)
+      访问 [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) 以申请预览计划。 若要了解更多信息，请参阅 [如何获取 Microsoft Defender for Business (预览) ](get-defender-business.md)。
   - question: Defender for Business 预览版是否有先决条件？
     answer: >
-      你的公司应该是以下公司之一：
+      你的组织应该是以下人员之一：
 
       - 向中小型企业提供 IT 服务的合作伙伴
 
       - 拥有最多 300 名员工的中小型企业
 
 
-      你已不需要拥有另一个Microsoft 365订阅。
+      不必已经拥有另一个 Microsoft 365 订阅。
 
 
       请参阅 [Microsoft Defender for Business (预览) 要求](mdb-requirements.md)。
   - question: 许可模型在 GA 中将是什么？
-    answer: "当 Microsoft Defender for Business 在通用 (通用) ，它将包含在通用Microsoft 365 商业高级版。\n\n对于没有安装Microsoft 365 商业高级版，Defender for Business 将作为独立计划提供。 \n"
+    answer: "当 Microsoft Defender for Business 在 GA (达到) ，它将包含在通用Microsoft 365 商业高级版。\n\n对于没有安装Microsoft 365 商业高级版，Defender for Business 将作为独立计划提供。 \n"
   - question: 如果我已在使用 Microsoft 365 商业高级版，为什么需要 Defender for Business？
     answer: >
       Microsoft 365 商业高级版目前包括Microsoft Defender 防病毒设备的新一代Windows保护。 Defender for Business (预览版) 威胁解决方案、攻击面& 漏洞管理、终结点检测和响应以及自动调查和响应来扩展这些功能。 若要了解更多信息，请参阅以下文章：

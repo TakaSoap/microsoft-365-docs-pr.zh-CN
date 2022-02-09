@@ -8,7 +8,6 @@
 ### [预览功能](preview.md)
 ### [数据存储和隐私](data-storage-privacy.md)
 ### [Microsoft Defender 安全中心概述](use.md)
-### [门户概述](portal-overview.md)
 ### [Defender for Endpoint 计划 1]()
 #### [概述](defender-endpoint-plan-1.md)
 #### [安装和配置](mde-p1-setup-configuration.md)
@@ -707,7 +706,6 @@
 
 ### [Microsoft Defender for Endpoint 服务疑难解答]()
 #### [服务疑难解答](troubleshoot-mdatp.md)
-#### [检查服务运行状况](service-status.md)
 #### [联系 Microsoft Defender for Endpoint 客户服务](contact-support.md)
 
 ### [实时响应问题疑难解答](troubleshoot-live-response.md)

@@ -7,23 +7,23 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: 5ccad3a8765c18e1768f8245d90b255d50ee5182
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 5a6d896b3b18b4eea0721197c0a4766add4a20b6
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507364"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464574"
 ---
 # <a name="set-up-email-notifications"></a>设置电子邮件通知
 
 > [!IMPORTANT]
-> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
@@ -51,17 +51,17 @@ ms.locfileid: "61507364"
 > [!TIP]
 > **电子邮件通知不是安全团队了解** 新警报或漏洞的唯一方式。
 > 
-> 电子邮件通知是一种有助于实时通知安全团队的便捷方式。 但还有其他功能！ 例如，每当安全团队登录 Microsoft 365 Defender 门户 () 时，他们将看到突出显示新威胁、警报和漏洞的 [https://security.microsoft.com](https://security.microsoft.com) 卡片。 Defender for Business (预览) 旨在突出显示安全团队在登录后关注的重要信息。
+> 电子邮件通知是一种有助于实时通知安全团队的便捷方式。 但还有其他功能！ 例如，每当[https://security.microsoft.com](https://security.microsoft.com)安全团队登录 Microsoft 365 Defender 门户 () ，他们将看到突出显示新威胁、警报和漏洞的卡片。 Defender for Business (预览) 旨在突出显示安全团队在登录后关注的重要信息。
 > 
-> 安全团队 **还可以在导航** 窗格中选择"事件"以查看信息。 若要了解更多信息，请参阅在 Microsoft Defender for Business 中查看和管理事件[ (预览) 。 ](mdb-view-manage-incidents.md)
+> 安全团队 **还可以在导航** 窗格中选择"事件"以查看信息。 若要了解更多信息，请参阅在 [Microsoft Defender for Business ](mdb-view-manage-incidents.md)中查看和管理事件 (预览) 。
 
 ## <a name="view-and-edit-email-notifications"></a>查看和编辑电子邮件通知
 
-若要查看或编辑贵公司的电子邮件通知设置，请按照以下步骤操作：
+若要查看或编辑组织的电子邮件通知设置，请按照以下步骤操作：
 
-1. 转到"Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
+1. 转到"Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) 并登录。
 
-2. 在导航窗格中，**选择**"设置"，然后选择"**终结点"。** 然后，在常规 **下**，选择 **电子邮件通知**。 
+2. 在导航窗格中 **，选择"** 设置"，然后选择"**终结点"**。 然后，在" **常规"** 下，选择 **"电子邮件通知"**。 
 
 3. 查看"警报和 **漏洞****"选项卡上** 的信息。
 

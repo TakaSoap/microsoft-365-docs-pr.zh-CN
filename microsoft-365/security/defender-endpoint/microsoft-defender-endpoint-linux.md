@@ -1,6 +1,6 @@
 ---
 title: Linux 版 Microsoft Defender for Endpoint
-ms.reviewer: null
+ms.reviewer: ''
 description: 介绍如何在 Linux 上安装和使用 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
 ms.prod: m365-security
@@ -13,12 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
+- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: a0c013b6b99ad9b8da6a3cedeb93df036de4e257
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464065"
 ---
-
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -32,16 +37,16 @@ ms.technology: mde
 本主题介绍如何在 Linux 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Linux 上运行其他第三方终结点保护产品以及 Microsoft Defender for Endpoint 可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Linux EDR 上的 Defender for Endpoint [功能](linux-preferences.md#enforcement-level-for-antivirus-engine)。
+> 在 Linux 上运行其他第三方终结点保护产品以及 Microsoft Defender for Endpoint 可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Linux EDR 上的 Defender for Endpoint 功能。[](linux-preferences.md#enforcement-level-for-antivirus-engine)
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安装 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>必备条件
 
 - 访问 Microsoft 365 Defender 门户
 - 使用系统系统 [管理器的](https://systemd.io/) Linux 分发
 - Linux 和 BASH 脚本的初学者级体验
-- 手动部署时， (管理权限) 
+- 手动部署时，设备上 (管理权限) 
 
 > [!NOTE]
 > Linux 代理上的 Microsoft Defender for Endpoint 独立于 [OMS 代理](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint 依赖于自己的独立遥测管道。
@@ -53,7 +58,7 @@ ms.technology: mde
 
 通常，您需要执行以下步骤：
 
-- 确保你拥有适用于终结点的 Microsoft Defender 订阅，并且有权访问 [Microsoft Defender for Endpoint 门户](microsoft-defender-security-center.md)。
+- 确保你拥有适用于终结点的 Microsoft Defender 订阅。
 - 使用下列部署方法之一在 Linux 上部署 Microsoft Defender for Endpoint：
   - 命令行工具：
     - [手动部署](linux-install-manually.md)
@@ -165,14 +170,14 @@ ms.technology: mde
 
 启用该服务后，可能需要配置网络或防火墙以允许其与终结点之间的出站连接。
 
-- 必须 (`auditd`) 审核框架。
+- 必须 () `auditd` 审核框架。
 
   > [!NOTE]
-  > 通过添加到 的规则捕获 `/etc/audit/rules.d/` `audit.log` 的系统事件将添加到 (，) 并可能影响主机审核和上游收集。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
+  > 通过添加到 的规则捕获 `/etc/audit/rules.d/` `audit.log` 的系统事件将添加到 (，) 并可能影响主机审核和上游集合。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
 
 ### <a name="configuring-exclusions"></a>配置排除项
 
-在向用户Microsoft Defender 防病毒排除项时，应注意这些项的常见[排除Microsoft Defender 防病毒](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+在向Microsoft Defender 防病毒添加排除项时，应注意用于Microsoft Defender 防病毒[](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>网络连接
 

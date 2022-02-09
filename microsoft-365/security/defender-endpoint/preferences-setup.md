@@ -1,5 +1,5 @@
 ---
-title: 配置Microsoft Defender 安全中心设置
+title: 配置终结点的常规设置
 description: 使用设置页配置常规设置、权限、api 和规则。
 keywords: 设置， 常规设置， 权限， api， 规则
 ms.prod: m365-security
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b1f30947fc86ce94054f2bc0fc6de6a8309b9109
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a9e7c8b2f810cf94c796f2b2d73520a821db1c01
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168458"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464810"
 ---
-# <a name="configure-microsoft-defender-security-center-settings"></a>配置Microsoft Defender 安全中心设置
+# <a name="configure-general-settings-for-endpoints"></a>配置终结点的常规设置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,14 +32,14 @@ ms.locfileid: "61168458"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-prefsettings-abovefoldlink)。
 
-使用 **设置** 菜单修改常规设置、高级功能、启用预览体验、电子邮件通知和自定义威胁情报功能。
+使用 **"设置 >** 终结点"菜单修改常规设置、高级功能、启用预览体验、电子邮件通知和自定义威胁情报功能。
 
 ## <a name="in-this-section"></a>本节内容
 
 主题 | 说明
 :---|:---
 常规设置 | 修改之前在载入过程中定义的常规设置。
-Permissions | 使用 RBAC 和设备组管理门户访问。
+权限 | 使用 RBAC 和设备组管理门户访问。
 API | 启用威胁情报和 SIEM 集成。
 Rules | 配置抑制规则和自动化设置。
 设备管理 | 载入和载出设备。

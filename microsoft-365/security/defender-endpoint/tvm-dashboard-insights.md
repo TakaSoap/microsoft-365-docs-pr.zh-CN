@@ -1,7 +1,7 @@
 ---
 title: 仪表板见解 - 危险和漏洞管理
 description: 仪表板危险和漏洞管理 SecOps 和安全管理员解决网络安全威胁，并构建其组织的安全恢复能力。
-keywords: Microsoft Defender for Endpoint-tvm， Microsoft Defender for Endpoint-tvm dashboard， 威胁 & 漏洞管理， 危险和漏洞管理， 基于风险的威胁 & 漏洞管理， 安全配置， Microsoft 设备安全分数， 曝光分数
+keywords: Microsoft Defender for Endpoint-tvm， Microsoft Defender for Endpoint-tvm dashboard， 威胁 & 漏洞管理， 危险和漏洞管理， 基于风险的威胁 & 漏洞管理， 安全配置， 适用于设备的 Microsoft 安全分数， 曝光分数
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 129537fe810148f49628790e347479b8d376888d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: fb93b179b9d342a4a0d098ddb889a94371fbabc4
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61160485"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464299"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>仪表板见解 - 危险和漏洞管理
 
@@ -40,9 +40,9 @@ ms.locfileid: "61160485"
 
 - 与终结点漏洞相关的实时终结点检测和响应（EDR）见解
 - 事件调查期间有价值的设备漏洞上下文
-- 内置修正过程通过Microsoft Intune Microsoft Endpoint Configuration Manager
+- 内置修正过程通过Microsoft Intune和Microsoft Endpoint Configuration Manager
 
-可以使用 危险和漏洞管理 门户中的 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">功能</a>：
+可以使用 危险和漏洞管理 门户中的 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">功能</a>：
 
 - 查看设备的曝光分数和 Microsoft 安全分数，以及顶级安全建议、软件漏洞、修正活动和公开的设备
 - 将EDR见解与终结点漏洞关联并处理它们
@@ -76,7 +76,7 @@ ms.locfileid: "61160485"
 |**最公开的设备**|查看公开的设备名称及其曝光级别。 从列表中选择设备名称以转到设备页面，可在其中查看警报、风险、事件、安全建议、已安装的软件以及发现的与公开的设备关联的漏洞。 选择 **"显示** 更多"以查看公开设备列表的其余部分。 从设备列表中，你可以管理标记、启动自动调查、启动实时响应会话、收集调查包、运行防病毒扫描、限制应用执行和隔离设备。|
 |
 
-有关整个门户中使用的图标详细信息，请参阅 [适用于终结点的 Microsoft Defender 图标](portal-overview.md#microsoft-defender-for-endpoint-icons)。
+有关整个门户中使用的图标详细信息，请参阅 [Microsoft Defender 终结点图标](portal-overview.md#microsoft-defender-for-endpoint-icons)。
 
 ## <a name="related-topics"></a>相关主题
 

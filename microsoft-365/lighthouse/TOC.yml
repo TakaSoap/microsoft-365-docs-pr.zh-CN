@@ -26,6 +26,8 @@
       href: m365-lighthouse-tenants-page-overview.md
     - name: 管理租户列表
       href: m365-lighthouse-manage-tenant-list.md
+    - name: 查看租户服务运行状况
+      href: m365-lighthouse-view-service-health.md
 - name: 在租户内管理用户
   items:
     - name: 用户页面概述

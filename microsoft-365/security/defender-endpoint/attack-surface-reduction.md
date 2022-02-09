@@ -19,12 +19,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
-ms.openlocfilehash: e56ffd44976d11986b6ccb6b3e8bc5cbf71e530c
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 149abcc1677dc3b7664d8c94170342c4679f9e4d
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326941"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465405"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>攻击面减少规则概述
 
@@ -49,7 +49,7 @@ ms.locfileid: "62326941"
 
 ## <a name="assess-rule-impact-before-deployment"></a>在部署之前评估规则影响
 
-你可以评估攻击面减少规则可能如何影响你的网络，在安全报告中打开该规则的安全[危险和漏洞管理](/windows/security/threat-protection/#tvm)。
+你可以评估攻击面减少规则可能会如何影响你的网络，在安全报告中打开该规则的安全[危险和漏洞管理](/windows/security/threat-protection/#tvm)。
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="攻击面减少规则的安全重新成本。":::
 
@@ -75,7 +75,7 @@ ms.locfileid: "62326941"
 - Windows 11
 - [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809) 或更高版本
 
-Microsoft Defender 防病毒在活动模式下必须通过实时[保护运行](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
+Microsoft Defender 防病毒在活动模式下使用实时[保护运行](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
 
 此外，请确保[Microsoft Defender 防病毒反恶意软件更新](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)。
 
@@ -86,13 +86,13 @@ Microsoft Defender 防病毒在活动模式下必须通过实时[保护运行](/
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>不支持警告模式的情况
 
-当你在三个攻击面减少规则中配置警告模式时，它们不受Microsoft Endpoint Manager。  (如果使用组策略配置攻击面减少规则，则支持警告模式。) 在配置警告模式时不支持警告模式的三个规则Microsoft Endpoint Manager如下所示：
+当你在三个攻击面减少规则中配置警告模式时，它们不受Microsoft Endpoint Manager。  (如果使用组策略配置攻击面减少规则，则支持警告模式。) 在 Microsoft Endpoint Manager 中配置时不支持警告模式的三个规则如下所示：
 
 - [阻止 JavaScript 或 VBScript 使用](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) GUID `d3e037e1-3eb8-44c8-a917-57927947596d` (下载的可执行) 
 - [通过 WMI 事件订阅和 GUID](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) (阻止 `e6db77e5-3df2-4cf1-b95a-636979351e5b` 持久性) 
 - [使用高级防护抵御勒索软件](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware) (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35`) 
 
-此外，运行早期版本的 Windows 的设备不支持警告Windows。 在这种情况下，配置为在警告模式下运行的攻击面减少规则将在阻止模式下运行。
+此外，运行早期版本的 Windows 的设备上不支持警告Windows。 在这种情况下，配置为在警告模式下运行的攻击面减少规则将在阻止模式下运行。
 
 ## <a name="notifications-and-alerts"></a>通知和警报
 
@@ -110,7 +110,7 @@ Microsoft Defender 防病毒在活动模式下必须通过实时[保护运行](/
 
 有关高级搜寻详细信息，请参阅 [使用高级搜寻主动搜寻威胁](advanced-hunting-overview.md)。
 
-## <a name="attack-surface-reduction-features-across-windows-versions"></a>跨多个版本的攻击Windows功能
+## <a name="attack-surface-reduction-features-across-windows-versions"></a>跨版本的攻击面Windows功能
 
 你可以为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
 
@@ -125,7 +125,7 @@ Microsoft Defender 防病毒在活动模式下必须通过实时[保护运行](/
   >Windows Server 2016和 Windows Server 2012 R2 将需要按照[载入 Windows 服务器](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)中的说明载入，此功能将正常工作。 
 
 
-尽管攻击面减少规则不需要使用 Windows [E5](/windows/deployment/deploy-enterprise-licenses) 许可证，但如果已Windows E5，则获得高级管理功能。 仅在 E5 中提供的高级Windows包括：
+尽管攻击面减少规则不需要使用 Windows [E5](/windows/deployment/deploy-enterprise-licenses) 许可证，但如果已使用 Windows E5，则获得高级管理功能。 仅在 E5 中提供的高级Windows包括：
 
 - Defender for Endpoint 中提供的监视、 [分析和工作流](microsoft-defender-endpoint.md)
 - 报告功能和[配置Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
@@ -136,7 +136,7 @@ Microsoft Defender 防病毒在活动模式下必须通过实时[保护运行](/
 
 Defender for Endpoint 提供事件和阻止的详细报告，作为警报调查方案的一部分。
 
-可以通过使用高级搜寻在 [Microsoft 365 Defender Defender 中](microsoft-defender-security-center.md)[查询终结点数据](advanced-hunting-query-language.md)。 如果你运行的是审核 [模式，](audit-windows-defender.md)可以使用高级搜寻了解攻击面减少规则可能会如何影响你的环境。
+可以使用高级搜寻在 [Microsoft 365 Defender Defender 中](microsoft-defender-endpoint.md)查询[终结点数据](/microsoft-365/security/defender/advanced-hunting-query-language)。 
 
 示例查询如下所示:
 
@@ -151,7 +151,7 @@ DeviceEvents
 
 1. 下载 [评估包](https://aka.ms/mp7z2w) ，将文件 *cfa-events.xml* 到设备上易于访问的位置。
 
-2. 在事件查看器 *中* 输入"开始"菜单事件查看器Windows事件查看器。
+2. 在事件查看器 *中输入*"开始"菜单事件查看器Windows事件查看器。
 
 3. 在 **"操作"** 下， **选择"导入自定义视图..."**。
 

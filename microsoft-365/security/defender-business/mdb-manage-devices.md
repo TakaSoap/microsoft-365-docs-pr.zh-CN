@@ -16,18 +16,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365initiative-defender-business
-ms.openlocfilehash: 91478d467fa0f7e3a0b5f6b67aeaf2fe5b34f497
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+- m365-initiative-defender-business
+ms.openlocfilehash: 5982934fa03c5898a2bd1908fd2f9a8487db2bba
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244555"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465490"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>在 Microsoft Defender for Business 预览版中 (设备) 
 
 > [!IMPORTANT]
-> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
@@ -47,19 +47,19 @@ ms.locfileid: "62244555"
 
 :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="设备清单的屏幕截图":::
 
-1. 转到"Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
+1. 转到"Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) 并登录。
 
-2. 在导航窗格中，选择"**设备清单"。**
+2. 在导航窗格中，选择" **设备清单"**。
 
 3. 选择设备以打开其飞出面板，可在其中了解有关其状态和采取措施的更多信息。 
 
-   如果你尚未列出任何设备，将设备载入 Microsoft [Defender for Business (预览版) ](mdb-onboard-devices.md)
+   如果你尚未列出任何设备，将设备载入 [Microsoft Defender for Business (预览) ](mdb-onboard-devices.md)
 
 ## <a name="take-action-on-a-device-that-has-threat-detections"></a>在具有威胁检测的设备上采取措施
 
 :::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="包含详细信息和可用操作选定设备的屏幕截图":::
 
-1. 在Microsoft 365 Defender门户 () "导航窗格中，选择"设备 [https://security.microsoft.com](https://security.microsoft.com) **清单"。** 
+1. 在Microsoft 365 Defender门户 ([https://security.microsoft.com](https://security.microsoft.com)) "导航窗格中，选择"设备 **清单"**。 
 
 2. 选择设备以打开其飞出面板，并查看显示的信息。
 
@@ -69,7 +69,7 @@ ms.locfileid: "62244555"
 
 ## <a name="onboard-a-device"></a>载入设备
 
-请参阅[将设备载入到 Microsoft Defender for Business (预览) 。 ](mdb-onboard-devices.md)
+请参阅 [将设备载入到 Microsoft Defender for Business (预览) ](mdb-onboard-devices.md)。
 
 ## <a name="offboard-a-device"></a>载出设备
 

@@ -1,5 +1,5 @@
 ---
-title: '响应和缓解 Microsoft Defender for Business 预览版 (威胁) '
+title: '在 Microsoft Defender for Business 预览版中响应 (缓解) '
 description: 检测到威胁时，你可以采取措施来响应和缓解这些威胁。
 search.appverid: MET150
 author: denisebmsft
@@ -16,18 +16,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365initiative-defender-business
-ms.openlocfilehash: 16321f7941f44f599f3b1940bdbe56471a6d6311
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+- m365-initiative-defender-business
+ms.openlocfilehash: e8ff5387d1297743b1cc0c058306a6852f013cb9
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244759"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464933"
 ---
-# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business-preview"></a>响应和缓解 Microsoft Defender for Business 预览版 (威胁) 
+# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business-preview"></a>在 Microsoft Defender for Business 预览版中响应 (缓解) 
 
 > [!IMPORTANT]
-> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
@@ -40,17 +40,17 @@ ms.locfileid: "62244759"
 
 ## <a name="view-detected-threats"></a>查看检测到的威胁
 
-1. 转到"Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
+1. 转到"Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) 并登录。
 
-2. 请注意主页上的卡片。 卡片一目了然地显示检测到的威胁数，以及受影响的用户帐户、 (终结点) 和其他资产。 下图是你可能会看到的卡片示例：
+2. 请注意主页上的卡片。 卡片一目了然地显示检测到的威胁，以及受影响的用户帐户、 (终结点) 和其他资产。 下图是你可能会看到的卡片示例：
 
-   :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Microsoft 365 Defender 门户中的Microsoft 365 Defender屏幕截图":::
+   :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="客户门户中的Microsoft 365 Defender屏幕截图":::
 
 3. 选择卡片上的按钮或链接以查看详细信息并采取措施。 例如，我们的 **"处于** 风险中的设备"卡片包含" **查看详细信息"** 按钮。 选择该按钮将我们导航到 **"设备清单** "页，如下图所示：
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="设备清单的屏幕截图":::
 
-   " **设备清单** "页列出了公司设备及其风险级别和曝光级别。
+   " **设备清单** "页列出了组织设备及其风险级别和曝光级别。
 
 4. 选择一个项目，例如设备。 将打开一个飞出窗格，并显示有关为该项目生成的警报和事件的详细信息，如下图所示：  
 
@@ -60,7 +60,7 @@ ms.locfileid: "62244759"
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="所选设备的可用操作屏幕截图":::
 
-6. 选择可用操作。 例如，你可以选择"运行 **防病毒扫描**"，这Microsoft Defender 防病毒在设备上启动快速扫描。 或者，可以选择启动 **自动调查** 以在设备上触发自动调查。
+6. 选择可用操作。 例如，你可以选择运行 **防病毒扫描**，这Microsoft Defender 防病毒在设备上启动快速扫描。 或者，可以选择启动 **自动调查** 以在设备上触发自动调查。
 
 ## <a name="next-steps"></a>后续步骤
 

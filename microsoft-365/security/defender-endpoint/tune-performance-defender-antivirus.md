@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6350b91a700000a5d8fecec90462d53721d2f1ca
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 91dd3dc8563e7bd443362c47190139101a5ede61
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936013"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464318"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>性能分析器Microsoft Defender 防病毒
 
@@ -45,7 +45,7 @@ ms.locfileid: "61936013"
 1. 运行性能分析器以收集终结点上Microsoft Defender 防病毒事件的性能记录。
 
    > [!NOTE]
-   > Microsoft **Microsoft Defender 防病毒-Antimalware-Engine** 类型的事件的性能通过性能分析器进行记录。
+   > **Microsoft-antimalware-Engine** 类型的 Microsoft Defender 防病毒 事件的性能通过性能分析器进行记录。
 
 2. 使用不同的录制报告分析扫描结果。
 
@@ -57,22 +57,22 @@ ms.locfileid: "61936013"
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    其中 `-RecordTo` 参数指定保存跟踪文件的完整路径位置。 有关 cmdlet 的更多信息，请参阅[Microsoft Defender 防病毒 cmdlet。](/powershell/module/defender)
+    其中 `-RecordTo` 参数指定保存跟踪文件的完整路径位置。 有关 cmdlet 的更多信息，请参阅 Microsoft Defender 防病毒 [cmdlet](/powershell/module/defender)。
 
 2. 如果认为进程或服务会影响性能，请通过执行相关任务重现这种情况。
 
 3. 按 **Enter** 停止并保存录制，或 **按 Ctrl+C** 取消录制。
 
-4. 使用性能分析器的参数分析结果 `Get-MpPerformanceReport` 。 例如，在执行命令时，会向用户提供影响性能的前 3 个文件前 10 次 `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10` 扫描的列表。 
+4. 使用性能分析器的参数分析结果 `Get-MpPerformanceReport`。 例如，在执行命令 `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`时，会向用户提供影响性能的前 3 个文件前 10 次扫描的列表。 
 
 有关命令行参数和选项的详细信息，请参阅 [New-MpPerformanceRecording](#new-mpperformancerecording) 和 [Get-MpPerformanceReport](#get-mpperformancereport)。
 
 > [!NOTE]
-> 运行录制时，如果收到错误"由于 Windows Performance Recorder 已在录制，无法启动性能录制"，请运行以下命令以使用新命令停止现有跟踪 **：wpr -cancel -instancename** MSFT_MpPerformanceRecording
+> 运行录制时，如果收到错误"由于 Windows Performance Recorder 已在录制，无法启动性能录制"，请运行以下命令以使用新命令停止现有跟踪：**wpr -cancel -instancename** MSFT_MpPerformanceRecording
 
 ### <a name="performance-tuning-data-and-information"></a>性能优化数据和信息
 
-根据查询，用户将能够查看扫描计数、持续时间 (总/分钟/平均/最大值/中值) 、路径、进程和扫描原因的数据。 下图显示了扫描影响前 10 个文件的简单查询的示例输出。 
+根据查询，用户将能够查看扫描计数、持续时间 (总/最小值/平均/最大值/中值) 、路径、进程和扫描原因的数据。 下图显示了扫描影响前 10 个文件的简单查询的示例输出。 
 
 :::image type="content" source="images/example-output.png" alt-text="基本 TopFiles 查询的示例输出":::
 
@@ -83,20 +83,20 @@ ms.locfileid: "61936013"
 
 #### <a name="for-csv"></a>对于 CSV
 
-- **要导出**： `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
+- **导出：**`(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
 
-- **若要转换**： `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
+- **转换：**`(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
 
 #### <a name="for-json"></a>对于 JSON
 
-- **若要转换**： `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
+- **转换：**`(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要求
 Microsoft Defender 防病毒性能分析器具有以下先决条件：
 
 - 支持Windows版本：Windows 10、Windows 11 和 Windows Server 2016 及以上版本
 - 平台版本：4.18.2108.7+
-- PowerShell 版本：PowerShell 版本 5.1、PowerShell ISE
+- PowerShell 版本：PowerShell 版本 5.1、PowerShell ISE、远程 PowerShell (4.18.2201.10+) 、PowerShell 7.x (4.18.2201.10+) 
 
 ## <a name="powershell-reference"></a>PowerShell 参考
 有两个新的 PowerShell cmdlet 用于优化Microsoft Defender 防病毒： 
@@ -116,9 +116,9 @@ New-MpPerformanceRecording -RecordTo <String >
 ```
 
 #### <a name="description-new-mpperformancerecording"></a>说明：New-MpPerformanceRecording
-`New-MpPerformanceRecording`此 cmdlet 可收集扫描Microsoft Defender 防病毒记录。 这些性能记录包含 Microsoft-Antimalware-Engine 和 NT 内核进程事件，可在收集后使用 [Get-MpPerformanceReport](#get-mpperformancereport) cmdlet 进行分析。
+此 `New-MpPerformanceRecording` cmdlet 可收集扫描Microsoft Defender 防病毒记录。 这些性能记录包含 Microsoft-Antimalware-Engine 和 NT 内核进程事件，可在收集后使用 [Get-MpPerformanceReport](#get-mpperformancereport) cmdlet 进行分析。
 
-此 cmdlet 可深入了解可能导致文件性能下降的问题 `New-MpPerformanceRecording` Microsoft Defender 防病毒。 此工具是"AS IS"提供的，并不用于提供有关排除项的建议。 排除项会降低终结点上的保护级别。 应谨慎定义排除项（如果有）。
+此 `New-MpPerformanceRecording` cmdlet 可深入了解可能导致文件性能下降的问题Microsoft Defender 防病毒。 此工具是"AS IS"提供的，并不用于提供有关排除项的建议。 排除项会降低终结点上的保护级别。 应谨慎定义排除项（如果有）。
 
 有关性能分析器详细信息，请参阅 [Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) 文档。
 
@@ -140,7 +140,16 @@ Windows版本 10 及更高版本。
 New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
 ```
 
-上述命令收集性能记录，并保存到指定路径 **：.\Defender-scans.etl**。
+上述命令收集性能记录，并保存到指定路径： **.\Defender-scans.etl**。
+
+##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>示例 2：收集远程 PowerShell 会话的性能记录
+
+```powershell
+$s = New-PSSession -ComputerName Server02 -Credential Domain01\User01
+New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $s
+```
+
+上述命令根据参数 Session) 的参数 $s 指定在 Server02 (上收集性能记录，并保存到指定路径： **C：\LocalPathOnServer02\trace.etl** on Server02。
 
 #### <a name="parameters-new-mpperformancerecording"></a>参数：New-MpPerformanceRecording
 
@@ -150,6 +159,17 @@ New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
 ```yaml
 Type: String
 Position: Named
+Default value: None
+Accept pipeline input: False 
+Accept wildcard characters: False
+```
+
+##### <a name="-session"></a>-Session 
+指定要创建和保存性能记录Microsoft Defender 防病毒 PSSession 对象。 使用此参数时，RecordTo 参数引用远程计算机上本地路径。 适用于 Defender 平台版本 4.18.2201.10。
+
+```yaml
+Type: PSSession[]
+Position: 0
 Default value: None
 Accept pipeline input: False 
 Accept wildcard characters: False
@@ -193,9 +213,9 @@ Get-MpPerformanceReport    [-Path] <String>
 ```
 
 #### <a name="description-get-mpperformancereport"></a>说明：Get-MpPerformanceReport
-此 cmdlet 分析以前收集的 Microsoft Defender 防病毒 性能记录 `Get-MpPerformanceReport` ([New-MpPerformanceRecording](#new-mpperformancerecording)) 并报告对 Microsoft Defender 防病毒 扫描产生最大影响的文件路径、文件扩展名和进程。
+`Get-MpPerformanceReport`此 cmdlet 分析以前收集的 Microsoft Defender 防病毒 性能记录 ([New-MpPerformanceRecording](#new-mpperformancerecording)) 并报告对扫描产生最大影响的文件路径、文件扩展名和Microsoft Defender 防病毒。
 
-性能分析器提供对可能导致性能下降的有问题的文件的Microsoft Defender 防病毒。 此工具是"AS IS"提供的，并不用于提供有关排除项的建议。 排除项会降低终结点上的保护级别。 应谨慎定义排除项（如果有）。
+性能分析器可深入了解可能导致性能降低的有问题的Microsoft Defender 防病毒。 此工具是"AS IS"提供的，并不用于提供有关排除项的建议。 排除项会降低终结点上的保护级别。 应谨慎定义排除项（如果有）。
 
 有关性能分析器详细信息，请参阅 [Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) 文档。
 
@@ -235,7 +255,7 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:10
 #### <a name="parameters-get-mpperformancereport"></a>参数：Get-MpPerformanceReport
 
 ##### <a name="-minduration"></a>-MinDuration
-指定报告中包含的文件、扩展名和进程的任何扫描或总扫描持续时间的最短持续时间;接受 0.1234567sec、0.1234ms、0.1us 或有效 TimeSpan 等值。   
+指定报告中包含的文件、扩展名和进程的任何扫描或总扫描持续时间的最短持续时间;接受  **0.1234567sec**、 **0.1234ms**、 **0.1us** 或有效 TimeSpan 等值。
 
 ```yaml
 Type: String

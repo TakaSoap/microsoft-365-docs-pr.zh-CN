@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: c2ccbb0ae11703b8da25569a34655cabee940c5b
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 01d6b5cc77068bc8f86d4a32777663ae251acd8d
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507729"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465295"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business-preview"></a>了解 Microsoft Defender for Business 预览版中的 (顺序) 
 
 > [!IMPORTANT]
-> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求[](https://aka.ms/mdb-preview)它的客户和 IT 合作伙伴推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
@@ -36,7 +36,7 @@ Microsoft Defender for Business (预览) 包括预定义策略，可帮助确保
 
 添加策略时，你会注意到已分配优先级顺序。 您可以编辑定义的策略的优先级顺序，但无法更改默认策略的优先级顺序。 例如，假设对于 Windows设备，你有三个下一代保护策略。 在这种情况下，默认策略的优先级为 3。 您可以更改编号为 1 和 2 的策略的顺序，但默认策略将保留列表中的数字 3。 
 
-**对于多个策略，需要记住的重要一点就是设备将仅接收第一个应用的策略。** 引用我们之前关于三个下一代策略的示例，假设你有三个策略都面向的设备。 在这种情况下，这些设备将收到策略号 1，但不会接收编号为 2 和 3 的策略。 
+**对于多个策略，需要记住的重要一点就是设备将仅接收第一个应用的策略。** 引用我们之前关于三个下一代策略的示例，假设你有三个策略都面向的设备。 在这种情况下，这些设备将收到策略号 1，但是不会接收编号为 2 和 3 的策略。 
 
 ## <a name="key-points-to-remember-about-policy-order"></a>要记住的关于策略顺序的要点
 
@@ -56,6 +56,6 @@ Microsoft Defender for Business (预览) 包括预定义策略，可帮助确保
 
 - [在 Microsoft Defender for Business 预览版中查看 (事件) ](mdb-view-manage-incidents.md)
 
-- [在 Microsoft Defender for Business 预览版中响应 (缓解) ](mdb-respond-mitigate-threats.md)
+- [响应和缓解 Microsoft Defender for Business 预览版 (中的威胁) ](mdb-respond-mitigate-threats.md)
 
 - [查看操作中心中的修正操作](mdb-review-remediation-actions.md)
