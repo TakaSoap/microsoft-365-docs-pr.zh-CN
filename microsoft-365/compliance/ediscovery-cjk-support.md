@@ -15,21 +15,21 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 了解Advanced eDiscovery的语言Microsoft 365中文、日语和朝鲜语 (CJK) ，这些语言使用双字节字符集。
-ms.openlocfilehash: 8a2ed33c75fabfa92f8ddd8f6fc8a704a2e8a15f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: 了解Advanced eDiscovery语言Microsoft 365支持使用双字节字符集的 CJK (朝鲜语) 、日语和朝鲜语。
+ms.openlocfilehash: 4c1871eb49754ba93d762989e3cff9c53950d2c6
+ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942172"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62487319"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>CJK 语言支持Advanced eDiscovery
 
 Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体中文、日语和朝鲜语，在审阅集的以下高级方案中统称为 *CJK* 语言) ：
 
-- 查询 [审阅集 内的数据时](review-set-search.md)。
+- 查询 [审阅集内的数据时](review-set-search.md)。
 
-- 在审阅 [集 内标记文档时](tagging-documents.md)。
+- 在审阅 [集内标记文档时](tagging-documents.md)。
 
 - 当你 [使用近重复检测、](analyzing-data-in-review-set.md) 电子邮件线程和主题分析来分析审阅集内的情况数据时。
 
@@ -39,7 +39,7 @@ Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体�
 
 在搜索关键字搜索中的内容时，[](building-search-queries.md#keyword-searches)可以将 CJK 字符用于关键字搜索、关键字查询和Advanced eDiscovery。 [](keyword-queries-and-search-conditions.md) 在核心电子数据展示和内容搜索中搜索内容时，也支持搜索 CJK 字符。
 
-我们针对所有搜索运算符和搜索条件 [](keyword-queries-and-search-conditions.md#search-operators)（包括布尔 [](keyword-queries-and-search-conditions.md#search-conditions)运算符 **AND** **、OR、NOT** 和 **NEAR）** 提供 CJK 支持。 
+我们针对所有搜索运算符和搜索条件 [](keyword-queries-and-search-conditions.md#search-operators)（包括布尔 [](keyword-queries-and-search-conditions.md#search-conditions)运算符 **AND**、**OR**、**NOT** 和 NEAR）提供 CJK **支持**。
 
 如果您确定内容位置或项目包含 CJK 字符，但搜索不会返回任何结果，请单击查询语言-国家/地区图标 ![内容搜索中的查询语言国家/地区图标。](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) 并选择相应的语言国家/地区区域性代码值进行搜索。 默认语言/区域是中性的。
 
@@ -47,9 +47,9 @@ Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体�
 
 这取决于你的搜索方案。
 
-- 在[查询评价集内的数据时](review-set-search.md)Advanced eDiscovery，可以搜索多种语言。
+- 在[查询评价集](review-set-search.md)内的数据时Advanced eDiscovery，可以搜索多种语言。
 
-- 创建 [搜索以收集数据时](create-search-to-collect-data.md)，请为所面向的每种语言创建单独的搜索。 例如，如果要搜索同时包含中文和朝鲜语的文档，请选择"中文"作为第一个查询，并选择"朝鲜语"作为第二个查询。
+- 创建 [搜索以收集数据时](create-draft-collection.md)，请为所面向的每种语言创建单独的集合。 例如，如果要搜索同时包含中文和朝鲜语的文档，请为第一个集合选择"中文"，然后为第二个集合选择"朝鲜语"。
 
 **我看不到查询语言-国家/地区图标来选择审阅集内查询的语言。如何在审阅集搜索中指定查询语言？**
 
@@ -69,13 +69,13 @@ Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体�
 
 **如何将显示语言更改为中文、日语或朝鲜语？**
 
-若要了解如何更改显示语言和时区，请参阅如何为用户设置语言和[Office 365。](/office365/troubleshoot/access-management/set-language-and-region)
+若要了解如何更改显示语言和时区，请参阅如何为用户设置语言和[Office 365](/office365/troubleshoot/access-management/set-language-and-region)。
 
 ## <a name="known-issues"></a>已知问题
 
 - OCR 不支持图像文件的 CJK 字符
 
-- CJK (不支持批注视图中) *.eml 和 *.msg 等电子邮件文件。 [](view-documents-in-review-set.md#annotate-view)
+- CJK (批注视图中的电子邮件文件) *.eml 和 *.msg 文件。[](view-documents-in-review-set.md#annotate-view)
 
 - CJK 语言不支持 [在](view-documents-in-review-set.md#text-view) 文本视图中突出显示搜索词。
 

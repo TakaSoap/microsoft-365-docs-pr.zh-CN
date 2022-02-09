@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 高级 eDiscovery 作业帮助跟踪与执行各种高级 eDiscovery 任务相关的长期运行进程状态。
-ms.openlocfilehash: 6f246202ac371500b7fe16204b34bc00ba8ee9a7
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 484f492ea56f6e75d3f5144dd41128c2cedfc914
+ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871461"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62487259"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>管理高级 eDiscovery 中的作业
 
@@ -28,13 +28,13 @@ ms.locfileid: "61871461"
 
 | 作业类型            | 说明     |
 | :----------------- | :----------     |
-|正在添加数据到审阅集。 | 用户向审阅集添加集合。 此作业包括 2 个子作业： </br>• **Export** - 生成集合中的项列表。 </br>• **Ingestion & Indexing** - 在名为) 的进程中，与搜索查询匹配的集合中的项复制到 Azure 存储 位置 *(，* 然后对 Azure 存储 位置中的那些项重新编制索引。 新索引将用于在数据集中查询和分析项目。 </br></br>有关详细信息，请参阅 [添加搜索结果到审阅集](add-data-to-review-set.md)。 |
+|正在添加数据到审阅集。 | 用户向审阅集添加集合。 此作业包括 2 个子作业： </br>• **Export** - 生成集合中的项列表。 </br>• **Ingestion & Indexing** - 在名为) 的进程中，与搜索查询匹配的集合中的项复制到 Azure 存储 *位置 (，* 然后对 Azure 存储 位置中的这些项目重新编制索引。 新索引将用于在数据集中查询和分析项目。 </br></br>有关详细信息，请参阅 [添加搜索结果到审阅集](add-data-to-review-set.md)。 |
 |正在将数据添加到另一审阅集 | 用户将一个审阅集中的文档添加到同一案例中的另一个不同的审阅集。 有关详细信息，请参阅 [将其它审阅集中数据添加到审阅集](add-data-to-review-set-from-another-review-set.md)。|
 |正在将非 Microsoft 365 数据添加到审阅集。 | 用户将非 Microsoft 365 数据上传到审阅集。 在此进程中还会编制数据的索引。 例如，将本地文件服务器或客户端计算机的文件上传到审阅集。 有关详细信息，请参阅 [加载非 Microsoft 365 数据到审阅集](load-non-office-365-data-into-a-review-set.md)。| 
 |正在将已修正数据添加到审阅集 | 已修正出现处理错误的数据，并且已将其加载回审阅集。 有关详细信息，请参阅：</br>• [处理数据时修正错误](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [单个项目错误修正](single-item-error-remediation.md)| 
 |正在比较加载集 | 用户观察审阅集中不同加载集的差别。 加载集是像审阅集添加数据的一个实例。 例如，如果将 2 次不同搜索的结果添加到同一审阅集，每一个都代表一个加载集。 |
 |对话重建|用户将搜索结果添加到对话审阅集时，服务（如 Microsoft Teams）中的即时消息对话（也称为 *线程对话*）将重建为 PDF 文件。 如果用户在审阅集中单击 **“操作”>“创建对话 PDF”** 也可触发此作业。 有关详细信息，请参阅 [审阅高级 eDiscovery 中的对话](conversation-review-sets.md)。
-|正在将编修文档转换为 PDF|用户为审阅集中的文档添加批注并编修部分内容后，可选择将已编修文档转换为 PDF 文件。 此操作可确保如果导出文档进行演示，已编修部分将不可见。 有关详细信息，请参阅 [查看审阅集中的文档](annotating-and-redacting-documents.md)。 |
+|正在将编修文档转换为 PDF|用户为审阅集中的文档添加批注并编修部分内容后，可选择将已编修文档转换为 PDF 文件。 此操作可确保如果导出文档进行演示，已编修部分将不可见。 有关详细信息，请参阅 [查看审阅集中的文档](view-documents-in-review-set.md)。 |
 |预估搜索结果 | 用户创建并运行或重新运行草稿集合后，搜索工具会搜索索引中与搜索查询匹配的项目，并准备一个估计值，其中包括搜索时所有项目的数量和总大小以及搜索的数据源的数量。  有关详细信息，请参阅 [收集案例数据](collecting-data-for-ediscovery.md)。 | 
 |准备导出数据 | 用户从审阅集导出文档。 导出过程完成时，可将导出数据下载到本地计算机。 有关详细信息，请参阅 [导出案例数据](exporting-data-ediscover20.md)。 | 
 |准备错误解决方案 |用户在案例的 **正在处理** 选项卡上“错误”视图中选择文件并创建新的错误修正方法时，此过程第一步需要将含有处理错误的文件上传到 Microsoft 云中的 Azure Storage 位置。 此作业跟踪上传进程的进度。 有关错误修正流程的详细信息，请参阅 [处理数据时错误修正](error-remediation-when-processing-data-in-advanced-ediscovery.md)。 | 
