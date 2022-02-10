@@ -2,8 +2,8 @@
 title: 关于 Microsoft 合规性管理器高级评估试用版
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 关于 Microsoft 合规性管理器高级评估试用版。
-ms.openlocfilehash: ec7dec74e8f90b13bd68eb8a6e13917d9fe18b0d
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: b7eaa963a3978a38db8511f30aa663670e7168c7
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063293"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465167"
 ---
 # <a name="about-the-free-trial-for-microsoft-compliance-manager-premium-assessments"></a>关于 Microsoft 合规性管理器高级评估的免费试用版
 
 合规性管理器可帮助你管理组织的合规性要求，并评估和改进合规性分数。 你构建的评估基于符合全球政府法规和行业标准的模板。  
 
-使用合规性管理器的许可协议可能包含一个或多个内置模板。 还可以从一个高级评估模板广泛库进行选择，以便你可以构建特定于组织需求的评估。 若要在购买许可证之前试用这些模板，请注册免费高级评估试用版。
+使用合规性管理器的许可协议可能包含一个或多个用于生成评估的内置模板。 还可以使用一个广泛的高级评估模板库，以生成特定于组织需求的评估。 要在购买许可证之前试用这些模板，请注册免费的合规性管理器高级评估试用版。
 
 ## <a name="terms-and-conditions"></a>条款和条件
 
@@ -44,15 +44,15 @@ ms.locfileid: "61063293"
 
 ## <a name="template-licensing"></a>模板许可
 
-启动一次高级评估试用版后，你有权在 90 天内免费使用你选择的 25 个高级模板。 还可以使用这 25 个模板创建任意数量的评估。
+启动一次高级评估试用版后，你有权在 90 天内免费使用你选择的 25 个高级模板。 可以按需要根据 25 个模板创建任意数量的评估。
 
 开始试用后，转到合规性管理器中的" **评估** "选项卡，查看 **"已激活/已授权"模板** 计数器，查看可用和正在使用的模板数。 此计数器将显示你的 25 个许可模板。 使用这些模板创建评估时，激活的号码将更新。 模板使用基于基础认证进行计数，这意味着基于同一模板的多个评估或支持不同产品的相同模板的不同版本将计为一个模板使用。
 
-有关如何使用和管理合规性管理器模板的更多详细信息，请参阅[使用评估模板](compliance-manager-templates.md)。
+有关如何使用和管理合规性管理器模板的详细信息，请参阅 [使用评估模板](compliance-manager-templates.md)。
 
 ## <a name="permissions"></a>权限
 
-组织中有权访问合规性管理器的任何人都可以注册评估模板试用版。
+组织中有权访问合规性管理器的任何用户都可以注册高级评估试用版。 详细了解 [合规性管理器所需的权限和角色](compliance-manager-setup.md#set-user-permissions-and-assign-roles)。
 
 ## <a name="during-your-trial"></a>试用版期间
 
@@ -60,7 +60,7 @@ ms.locfileid: "61063293"
 
 ## <a name="after-the-trial"></a>试用后
 
-试用版结束后，所选评估模板将停止接收自动更新，并且可能会由于任何法规变更而过期。 建议删除基于不想购买的模板构建的评估。
+试用结束后，你使用的模板将不会收到自动更新，并且可能会由于任何法规更改而过期。 建议删除根据不想购买的模板构建的评估。
 
 ## <a name="learn-more-about-compliance"></a>详细了解合规性
 
