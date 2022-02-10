@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定 Microsoft 365 客户数据在全球范围内的存储位置
-ms.openlocfilehash: c346cd561306781e25c883c5c71a312b30ae3f23
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 4240521579331c0d4aed329b952d0a560291df45
+ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300690"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62487247"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客户数据的存储位置
 
@@ -34,7 +34,7 @@ ms.locfileid: "61300690"
 
 新 Microsoft 365 租户默认位于与该租户的首次订阅关联的交易所在国家/地区内的地理位置。
 
-在 [联机服务隐私与安全条款](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) 中查找有关静态客户数据的存储位置之合同承诺。
+在 [Microsoft 产品和服务数据保护附录 （DPA）](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)中查找有关客户静态数据存储位置的合同承诺的信息。
 
 对于 Azure Active Directory 数据位置，请访问 [AAD 数据地图](https://go.microsoft.com/fwlink/p/?linkid=2092972)。
 
