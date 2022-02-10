@@ -1,5 +1,5 @@
 ---
-title: '在 Microsoft Defender for Business 预览版中响应 (缓解) '
+title: '响应和缓解 Microsoft Defender for Business 预览版 (中的威胁) '
 description: 检测到威胁时，你可以采取措施来响应和缓解这些威胁。
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,14 +17,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: e8ff5387d1297743b1cc0c058306a6852f013cb9
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 85c6262a03541b2aa0f79c69e60d9ebaec71bbe8
+ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464933"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62520519"
 ---
-# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business-preview"></a>在 Microsoft Defender for Business 预览版中响应 (缓解) 
+# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business-preview"></a>响应和缓解 Microsoft Defender for Business 预览版 (中的威胁) 
 
 > [!IMPORTANT]
 > Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
@@ -42,7 +42,7 @@ ms.locfileid: "62464933"
 
 1. 转到"Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) 并登录。
 
-2. 请注意主页上的卡片。 卡片一目了然地显示检测到的威胁，以及受影响的用户帐户、 (终结点) 和其他资产。 下图是你可能会看到的卡片示例：
+2. 请注意主页上的卡片。 卡片一目了然地显示检测到的威胁数，以及受影响的用户帐户、 (终结点) 和其他资产。 下图是你可能会看到的卡片示例：
 
    :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="客户门户中的Microsoft 365 Defender屏幕截图":::
 
@@ -60,7 +60,7 @@ ms.locfileid: "62464933"
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="所选设备的可用操作屏幕截图":::
 
-6. 选择可用操作。 例如，你可以选择运行 **防病毒扫描**，这Microsoft Defender 防病毒在设备上启动快速扫描。 或者，可以选择启动 **自动调查** 以在设备上触发自动调查。
+6. 选择可用操作。 例如，你可以选择"运行 **防病毒** 扫描"，这Microsoft Defender 防病毒在设备上启动快速扫描。 或者，可以选择启动 **自动调查** 以在设备上触发自动调查。
 
 ## <a name="next-steps"></a>后续步骤
 
