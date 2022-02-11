@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 3732e254d5b9dad450fd16338acf7a28e07bd8d1
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 115dcce1e99583ab0c3345da683be0b826b24ff7
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321011"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524065"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -73,7 +73,7 @@ ms.locfileid: "62321011"
 
 ### <a name="retention-policy-for-teams-locations"></a>Teams 位置的保留策略
 
-1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **策略** > **保留**。
+1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/) 选择“**信息治理**” > “**保留策略**”。
 
 2. 选择 **新的保留策略** 以启动 **创建保留策略** 配置，并命名新的保留策略。
 
@@ -131,7 +131,7 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 >
 > 若要使用此功能，Yammer 网络必须为[“本机模式”](/yammer/configure-your-yammer-network/overview-native-mode)，而不是“混合模式”。
 
-1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **策略** > **保留**。
+1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/) 选择“**信息治理**” > “**保留策略**”。
 
 2. 选择 **新保留策略** 创建新的保留策略。
 
@@ -184,7 +184,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 - Microsoft 365 组
 - Skype for Business
 
-1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **策略** > **保留**。
+1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/) 选择“**信息治理**” > “**保留策略**”。
 
 2. 选择 **新的保留策略** 以启动 **创建保留策略** 配置，并命名新的保留策略。
 
