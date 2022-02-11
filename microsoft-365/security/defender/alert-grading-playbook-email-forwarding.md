@@ -7,20 +7,26 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-  - MOE150
+- MOE150
 ms.technology: m365d
+ms.openlocfilehash: fe4a5e97704cbf1d4851484397e7c4424c099d3c
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524185"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>可疑电子邮件转发活动的警报评分
 
@@ -31,7 +37,7 @@ ms.technology: m365d
 
 威胁参与者可以将遭到入侵的用户帐户用于多种恶意目的，包括阅读用户收件箱中的电子邮件、将电子邮件转发给外部收件人以及发送网络钓鱼邮件等。 目标用户可能不知道他们的电子邮件正在转发。 这是攻击者在用户帐户遭到入侵时使用的一种非常常见的策略。
 
-可以使用转发规则手动或自动转发电子邮件。 自动转发可以通过多种方式实现，如收件箱规则、Exchange传输规则 (ETR) 和 SMTP 转发。 虽然手动转发需要用户直接操作，但他们可能不知道所有自动转发的电子邮件。 在Microsoft 365，当用户自动将电子邮件转发到潜在恶意电子邮件地址时，将引发警报。
+可以使用转发规则手动或自动转发电子邮件。 可以通过多种方式实现自动转发，如收件箱规则、Exchange传输规则 (ETR) 和 SMTP 转发。 虽然手动转发需要用户直接操作，但他们可能不知道所有自动转发的电子邮件。 在Microsoft 365，当用户自动将电子邮件转发到潜在恶意电子邮件地址时，将引发警报。
 
 本操作手册可帮助你调查可疑电子邮件转发活动警报，并快速将其评级为真正 (TP) 或误报 (FP) 。 然后，你可以对 TP 警报采取建议操作来修正攻击。
 
@@ -39,7 +45,7 @@ ms.technology: m365d
 
 使用此 Playbook 的结果为：
 
-- 你已识别与自动转发的电子邮件相关的警报为恶意 (TP) 或恶意 (FP) 活动。
+- 你已识别与自动转发的电子邮件关联的警报为恶意 (TP) 或恶意 (FP) 活动。
 
   如果恶意， [则已停止为](../office-365-security/external-email-forwarding.md) 受影响的邮箱自动转发电子邮件。
 
@@ -75,7 +81,7 @@ To review the Suspicious Email Forwarding Activity alert， open the **Alerts** 
 
 " **原因** "字段包含与此警报相关的以下信息。
 
-- FT () 转发类型为以下类型之一：
+- FT (转发) 类型为以下类型之一：
 
     -  Exchange传输规则 (ETR) ：使用和Exchange传输规则转发 
 
@@ -107,7 +113,7 @@ To review the Suspicious Email Forwarding Activity alert， open the **Alerts** 
 
     - 观察发送的电子邮件中有多少包含敏感信息。 
 
-- 在安全门户中评估有Microsoft Azure行为。
+- 评估客户门户中的有Microsoft Azure行为。
 - 检查用户设备上是否有恶意活动。
 
 ### <a name="are-the-activities-malicious"></a>活动是否恶意？
@@ -125,13 +131,13 @@ To review the Suspicious Email Forwarding Activity alert， open the **Alerts** 
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png" alt-text="电子邮件转发的警报调查工作流" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png":::
 
-可以使用威胁资源管理器或高级搜寻查询调查电子邮件转发警报，基于 Microsoft 365 Defender 门户中的可用性。 你可以选择根据需要遵循整个过程或过程的一部分。
+你可以调查使用威胁资源管理器或高级搜寻查询的电子邮件转发警报，基于 Microsoft 365 Defender 门户中的可用性。 你可以选择根据需要遵循整个过程或过程的一部分。
 
 ## <a name="using-threat-explorer"></a>使用威胁资源管理器
 
 威胁资源管理器为电子邮件相关威胁提供交互式调查体验，以确定此活动是否可疑。 可以使用警报信息中的以下指示器：
 
-- SRL/RL：使用 SRL (") " (") ""可疑收件人列表"来查找以下详细信息：
+- SRL/RL：使用 SRL (") " ("SRL) 查找以下详细信息：
  
     :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png" alt-text="收件人列表示例" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png":::
 
@@ -168,7 +174,7 @@ To review the Suspicious Email Forwarding Activity alert， open the **Alerts** 
 
 - EmailUrlInfo - 包含与电子邮件中的 URL 有关的信息。
 
-- CloudAppEvents -包含审核日志活动列表。
+- CloudAppEvents -包含审核日志活动数。
 
 - IdentityLogonEvents - 包含所有用户的登录信息。
 
@@ -238,7 +244,8 @@ CloudAppEvents
 运行此查询，了解此用户是否有异常登录事件。 例如：未知 IP、新应用程序、不常见的国家/地区、多个 LogonFailed 事件。
 
 ```kusto
-let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder IdentityLogonEvents
+let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder 
+IdentityLogonEvents
 | where AccountUpn == sender
 ```
 

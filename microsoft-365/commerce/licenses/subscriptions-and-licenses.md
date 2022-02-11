@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 您收到的应用程序和服务取决于您Microsoft 365购买的产品，例如Microsoft 365 商业应用版。
 ms.date: 07/01/2020
-ms.openlocfilehash: 29a56ecfc1cb2f3cbe3afebec552fff29905675b
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: e380ac61033435a86118f7178da9e014d13ad436
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756560"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524041"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>了解企业版Microsoft 365订阅和许可证
 
@@ -35,15 +35,15 @@ ms.locfileid: "60756560"
 
 购买订阅时，根据组织中的人数指定所需的许可证数。 购买订阅后，为组织成员创建帐户，然后为每个人分配许可证。 随着组织需求的变化，你可以购买更多许可证来容纳新人，或在某人离开组织时将许可证重新分配给其他用户。
 
-如果有一个以上的订阅，则可以针对每个订阅将许可证分配给不同人员。 例如，您可以将所有用户作为订阅的一Microsoft 365分配给所有 Microsoft 365 商业标准版 应用程序和服务。 您还可以通过单独的订阅分配一部分Visio Online Visio订阅。
+如果有一个以上的订阅，则可以针对每个订阅将许可证分配给不同人员。 例如，您可以将所有用户分配给作为 Microsoft 365 订阅的一部分的所有 Microsoft 365 商业标准版应用程序和服务。 您还可以通过单独的订阅将一部分Visio分配给 Visio Online。
 
 ## <a name="how-many-devices-can-people-install-office-on"></a>可以在多少台设备上安装 Office？
 
-如果你的订阅包括以下任一产品，每个人Office五台电脑或 Mac、五台平板电脑和五部手机上安装。
+如果你的订阅包括以下任一产品，则每个人Office安装在五台电脑或 Mac、五台平板电脑和五部手机上。
 
 :::row:::
    :::column span="":::
-        - Microsoft 365 商业应用版 - Microsoft 365 企业应用版 - Microsoft 365 商业标准版 - Microsoft 365 商业高级版 - Microsoft 365 A3 - Microsoft 365 A5
+        - Microsoft 365 商业应用版 - Microsoft 365 企业应用版 - Microsoft 365 商业标准版 - Microsoft 365 商业高级版 - Microsoft 365 A3 -Microsoft 365 A5
    :::column-end:::
    :::column span="":::
         - Microsoft 365 E3 - Microsoft 365 E5 - Office 365 A1 Plus - Office 365 A3 - Office 365 A5 - Office 365 E3 - Office 365 E5
@@ -56,10 +56,10 @@ ms.locfileid: "60756560"
   
 |**如果订阅中有此服务**|**将会自动发生该情况**|
 |:-----|:-----|
-|Exchange Online  <br/> |将为该人员创建一个邮箱。 <br/> 若要了解要完成此任务的 SLA，请参阅["设置..."。邮件中的Microsoft 365 管理中心。](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
+|Exchange Online  <br/> |将为该人员创建一个邮箱。 <br/> 若要了解要完成此任务的 SLA，请参阅["设置..."。邮件Microsoft 365 管理中心](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
 |SharePoint Online  <br/> |将为该人员分配默认 SharePoint Online 团队网站的编辑权限。  <br/> |
 |Skype for Business Online  <br/> |用户有权访问与许可证关联的功能。  <br/> |
-|适用于企业的 Microsoft 365 应用  <br/> |用户可以在最多Office台 Mac 或 PC、五台平板电脑和五台智能手机上下载这些应用。  <br/> |
+|Microsoft 365 企业应用版 和 Microsoft 365 商业应用版  <br/> |用户可以在最多Office台 Mac 或 PC、五台平板电脑和五台智能手机上下载这些应用。  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>了解非用户邮箱的许可证
 

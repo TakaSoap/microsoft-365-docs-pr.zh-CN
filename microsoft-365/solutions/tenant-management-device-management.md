@@ -1,8 +1,8 @@
 ---
 title: 步骤 5. 适用于企业租户的设备Microsoft 365应用管理
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,25 +16,25 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 为租户部署正确的设备和应用管理Microsoft 365选项。
-ms.openlocfilehash: 03126b373efcd3badb37590548c77889cb98391f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 09fd96977fbde0f546049d24b1705d27b4c92080
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174155"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524161"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>步骤 5. 适用于企业租户的设备Microsoft 365应用管理
 
-Microsoft 365企业版包括以下功能：使用移动设备管理 (MDM) 和移动应用程序管理) 帮助管理设备以及在这些设备上 (应用。 你可以管理 iOS、Android、macOS Windows设备来保护对组织资源（包括数据）的访问。 例如，可以阻止向组织外部人员发送电子邮件，或将组织数据与工作者的个人设备中的个人数据隔离。
+Microsoft 365 企业版包括以下功能：使用移动设备管理 (MDM) 和移动应用程序管理 (MAM) 帮助管理设备以及在这些设备上使用应用。 你可以管理 iOS、Android、macOS Windows设备来保护对组织资源（包括数据）的访问。 例如，可以阻止向组织外部人员发送电子邮件，或将组织数据与工作者的个人设备中的个人数据隔离。
 
-下面是验证和管理用户及其设备，以及用户对本地和云生产力应用（如 Microsoft Teams）的使用示例。
+下面是验证和管理用户及其设备，以及他们使用本地和云生产力应用（如 Microsoft Teams） 的示例。
 
 ![用户、设备和应用的验证和管理。](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
 
 为了帮助你保护组织的资源，Microsoft 365企业版包括可帮助管理设备及其对应用的访问权限的功能。 设备管理有两个选项：
 
 - Microsoft Intune，它是一款全面的企业设备和应用管理解决方案。
-- 基本移动性和安全性，它是所有用于管理组织中设备的 Microsoft 365 产品中包含的 Intune 服务的子集。 有关详细信息，请参阅[Capabilities of Basic Mobility and Security。](../admin/basic-mobility-security/capabilities.md)
+- 基本移动性和安全性，它是所有用于管理组织中设备的 Microsoft 365 产品中包含的 Intune 服务的子集。 有关详细信息，请参阅 [Capabilities of Basic Mobility and Security](../admin/basic-mobility-security/capabilities.md)。
 
 如果已Microsoft 365 E3 E5，则应该使用 Intune。
 
@@ -55,7 +55,7 @@ Microsoft 提供了一组用于标识 [和设备访问的配置](../security/off
 - Azure AD Identity Protection 用户风险策略
 - 云应用的其他策略
 
-下面是应用这些设置和策略以验证和限制用户、其设备，以及用户对本地和云生产力应用（如 Microsoft Teams）的使用的示例。
+下面是应用这些设置和策略以验证和限制用户及其设备，以及用户对本地和云生产力应用（如 Microsoft Teams）的使用的示例。
 
 ![针对用户、设备及其应用使用的要求和限制的标识和设备访问配置。](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
 

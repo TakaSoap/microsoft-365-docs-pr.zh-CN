@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 9680c9c45441bc654103c11ea28c13f85859ee43
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: dee9c4a51175f9fbeac8b6d21f29490081258ba0
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355118"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524233"
 ---
 # <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>可疑收件箱转发规则的警报评分
 
@@ -35,15 +35,15 @@ ms.locfileid: "62355118"
 **适用于：**
 - Microsoft 365 Defender
 
-威胁参与者可以将遭到入侵的用户帐户用于多种恶意目的，包括阅读用户收件箱中的电子邮件、创建收件箱规则以将电子邮件转发到外部帐户、发送网络钓鱼邮件等。 恶意收件箱规则在 BEC 和网络钓鱼 (中) 很常见，并且必须持续监视这些规则。
+威胁参与者可以将遭到入侵的用户帐户用于多种恶意目的，包括阅读用户收件箱中的电子邮件、创建收件箱规则以将电子邮件转发到外部帐户、发送网络钓鱼邮件等。 恶意收件箱规则在 BEC (和网络钓鱼) 中非常常见，并且必须持续监视这些规则。
 
-本操作手册可帮助你调查可疑收件箱转发规则的警报，并快速将其评级为真正 (TP) 或误报 (TP) 。 然后，你可以对 TP 警报采取建议操作来修正攻击。 
+本操作手册可帮助你调查可疑收件箱转发规则的警报，并快速将其评级为真正的误报 (TP) 或误报 (TP) 。 然后，你可以对 TP 警报采取建议操作来修正攻击。 
 
 有关 Microsoft Defender for Office 365 和 Microsoft Defender for Cloud Apps 警报评分的概述，请参阅[简介文章](alert-grading-playbooks.md)。
 
 使用此 Playbook 的结果为：
 
-- 你已将与收件箱转发规则关联的警报标识为恶意 TP (TP) 或恶意 (FP) 活动。
+- 你已将与收件箱转发规则关联的警报标识为恶意 (TP) 或恶意 (FP) 活动。
 
   如果恶意，则你已删除恶意收件箱转发规则。
 
@@ -53,7 +53,7 @@ ms.locfileid: "62355118"
 
 配置收件箱规则以根据预定义条件自动管理电子邮件。 例如，可以创建收件箱规则，将经理的所有邮件移动到另一个文件夹中，或将接收的邮件转发到另一个电子邮件地址。
 
-### <a name="suspicious-inbox-forwarding-rules"></a>可疑收件箱转发规则
+### <a name="suspicious-inbox-forwarding-rules"></a>可疑的收件箱转发规则
 
 获取用户邮箱的访问权限后，攻击者通常会创建收件箱规则，允许其将敏感数据排除在外部电子邮件地址中，并用于恶意目的。 
 
@@ -87,7 +87,7 @@ ms.locfileid: "62355118"
 
 转发规则的收件人：
 
-- 验证目标电子邮件地址不是同一用户拥有的其他邮箱 (避免用户在个人邮箱之间自转发电子邮件) 。 
+- 验证目标电子邮件地址不是同一用户拥有的其他邮箱 (可以避免用户在个人邮箱之间自转发电子邮件) 。 
 - 验证目标电子邮件地址不是属于公司的内部地址或子域。
 
 筛选器：
@@ -130,6 +130,7 @@ let user_id = ""; // enter here the user id
 CloudAppEvents
 | where Timestamp between (start_date .. end_date)
 | where AccountObjectId == user_id
+| where Application == @"Microsoft Exchange Online"
 | where ActionType in ("Set-Mailbox", "New-InboxRule", "Set-InboxRule") //set new inbox rule related operations
 | project Timestamp, ActionType, CountryCode, City, ISP, IPAddress, RuleConfig = RawEventData.Parameters, RawEventData
 ```
@@ -188,9 +189,9 @@ CloudAppEvents
 ## <a name="recommended-actions"></a>建议的操作
 
 1. 禁用恶意收件箱规则。 
-2. 重置用户帐户凭据。 还可以验证用户帐户是否已被 Microsoft Defender for Cloud Apps 泄露，这将从 Identity Protection 获取Azure Active Directory (Azure AD) 信号。
+2. 重置用户帐户凭据。 还可以验证用户帐户是否已被 Microsoft Defender for Cloud Apps 泄露，这将从 Identity Protection Azure Active Directory (Azure AD) 安全信号。
 3. 搜索受影响用户执行的其他恶意活动。
-4. 如果 ISP 不常 (，则检查租户中来自同一 IP 或同一 ISP) 活动，以查找其他遭到入侵的用户。
+4. 如果 ISP 不常 (，请检查租户中源自同一 IP 或同一 ISP) 活动，以查找其他遭到入侵的用户。
 
 ## <a name="see-also"></a>另请参阅
 

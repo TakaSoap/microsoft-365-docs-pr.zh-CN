@@ -374,10 +374,6 @@
           href: virus-detection-in-spo.md
         - name: 垃圾邮件和群发电子邮件有何区别？
           href: what-s-the-difference-between-junk-email-and-bulk-email.md
-        - name: 为政治宣传活动开发/测试环境配置组和用户
-          href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-        - name: 在政治宣传活动开发/测试环境中创建团队网站
-          href: create-team-sites-in-a-political-campaign-dev-test-environment.md
     - name: Microsoft 365 Defender 文档
       items:
         - name: Microsoft 365 Defender

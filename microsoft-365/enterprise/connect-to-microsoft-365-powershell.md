@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 使用 PowerShell for Microsoft 365 连接到 Microsoft 365 租户，从命令行执行管理中心任务。
-ms.openlocfilehash: 96544e023ba9e5ff3e362911e82c86acc72d0970
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 67c3a596d1b0d7acec2925f39c2f6bd8025d7d4a
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755719"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354908"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>使用 PowerShell 连接 Microsoft 365
 
@@ -59,7 +59,7 @@ PowerShell for Microsoft 365 可让你从命令行管理您的 Microsoft 365 设
 
 **PowerShell**
 
-- 对于 Azure Active Directory PowerShell for Graph 模块，必须使用 PowerShell 版本 5.1 或以上版本。
+- 对于 Azure Active Directory PowerShell for Graph 模块，必须使用 PowerShell 版本 5.1。
 
 - 对于用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块，必须使用 PowerShell 版本 5.1 或以上版本（最高版本 6）。不能使用 PowerShell 版本 7。
        
@@ -124,7 +124,7 @@ Are you sure you want to install the modules from 'PSGallery'?
 >[!Note]
 >用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块中的 cmdlet 名称中具有 *Msol*。
 
-PowerShell 版本 7 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包含 *Msol* 的 Microsoft Azure Active Directory 模块。 对于 PowerShell 版本 7 和更高版本，必须使用 Azure Active Directory PowerShell for Graph 模块或 Azure PowerShell。
+PowerShell 版本 7 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包含 *Msol* 的 Microsoft Azure Active Directory 模块。 对于 PowerShell 版本 7 及更高版本，必须使用 Microsoft Graph PowerShell SDK。
 
 PowerShell Core 不支持用于名称中包含 *Msol* 的 Windows PowerShell 模块和 cmdlet 的 Microsoft Azure Active Directory 模块。
     

@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: c04ce53ba29d693f79b45c7d81fe04f0801aa50a
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: 9b37e353af74b7a01c0647f99b149f5fac0ae8a3
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520555"
+ms.locfileid: "62524173"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 零信任部署计划
 
@@ -53,11 +53,11 @@ ms.locfileid: "62520555"
 For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype). 
 -->
 
-有关零信任详细信息，请参阅 Microsoft 的 [**零信任指南中心**](/security/zero-trust)。
+有关零信任详细信息，请参阅 Microsoft 的 [_**零信任指南中心**_](/security/zero-trust)。
 
 ## <a name="deploying-zero-trust-for-microsoft-365"></a>为部署零信任Microsoft 365
 
-Microsoft 365是特意构建的，它具有许多安全和信息保护功能，可帮助你在环境中构建零信任。 可以扩展许多功能，以保护对组织使用的其他 SaaS 应用以及这些应用内的数据的访问。
+Microsoft 365是有意构建的，它具有许多安全和信息保护功能，可帮助你将零信任构建到环境中。 可以扩展许多功能，以保护对组织使用的其他 SaaS 应用以及这些应用内的数据的访问。
 
 此图表示部署零信任功能的工作。 此工作分为多个工作单元，可以一起配置工作，从底部开始并工作到顶部以确保先决条件工作已完成。
 
@@ -78,7 +78,7 @@ Microsoft 365是特意构建的，它具有许多安全和信息保护功能，�
 
 
 
-转到 [**"零信任标识和设备访问保护**](office-365-security/microsoft-365-policies-configurations.md) "，获取完成此操作的指导说明。 本系列文章介绍了一组标识和设备访问先决条件配置以及一组 Azure Active Directory (Azure AD) 条件访问、Microsoft Intune 和其他策略，用于保护对 Microsoft 365 用于企业云应用和服务、其他 SaaS 服务以及使用应用程序代理发布的Azure AD应用程序。
+转到 [**_"零信任标识和设备访问保护_**](office-365-security/microsoft-365-policies-configurations.md) "，获取完成此操作的指导说明。 本系列文章介绍了一组标识和设备访问先决条件配置以及一组 Azure Active Directory (Azure AD) 条件访问、Microsoft Intune 和其他策略，用于保护对 Microsoft 365 用于企业云应用和服务、其他 SaaS 服务以及使用应用程序代理发布的Azure AD应用程序。
 
 
 
@@ -100,7 +100,7 @@ Microsoft 365是特意构建的，它具有许多安全和信息保护功能，�
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-2.png" alt-text="使用 Intune 管理终结点" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-2.png":::
 
 
-转到 [**使用 Intune 管理**](../solutions/manage-devices-with-intune-overview.md) 设备，获得完成此操作的指导性指导。 
+转到 [**_使用 Intune 管理_**](../solutions/manage-devices-with-intune-overview.md) 设备，获得完成此操作的指导性指导。 
 
 
 |Includes  |先决条件  |不包括  |
@@ -114,7 +114,7 @@ Microsoft 365是特意构建的，它具有许多安全和信息保护功能，�
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="零信任标识和访问策略与设备管理" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 
-返回到 [**通用标识和设备访问策略**](office-365-security/identity-access-policies.md)，并添加Enterprise层。  
+返回到 [**_通用标识和设备访问策略_**](office-365-security/identity-access-policies.md)，并添加Enterprise策略。  
 
 :::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="零信任标识和访问策略 — Enterprise (推荐) 层" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
 
@@ -124,7 +124,7 @@ Microsoft 365 Defender是一种扩展检测和响应 (XDR) 解决方案，可自
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="将Microsoft 365 Defender添加到零信任体系结构" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
-转到 [**评估和试用Microsoft 365 Defender**](defender/eval-overview.md)，获得有关试点和部署组件Microsoft 365 Defender指南。 
+转到 [**_评估和试用Microsoft 365 Defender_**](defender/eval-overview.md)，获得有关试点和部署组件Microsoft 365 Defender指南。 
 
 |Includes  |先决条件  |不包括  |
 |---------|---------|---------|
@@ -146,6 +146,6 @@ Microsoft 信息保护提供了可用于实现特定业务目标的框架、过�
 
 ![Microsoft 信息保护 (MIP) 框架](../media/zero-trust/mip-solution-overview.png)
 
-若要详细了解如何计划和部署信息保护，请参阅部署Microsoft 信息保护 [**解决方案**](../compliance/information-protection-solution.md)。 
+若要详细了解如何计划和部署信息保护，请参阅部署Microsoft 信息保护 [**_解决方案_**](../compliance/information-protection-solution.md)。 
 
-如果你要针对数据隐私法规部署信息保护，本解决方案指南为整个过程提供了一个建议框架：使用 Microsoft 365 部署数据隐私 [**法规的信息保护**](../solutions/information-protection-deploy.md)。
+如果你要针对数据隐私法规部署信息保护，本解决方案指南为整个过程提供了一个建议框架：使用 Microsoft 365 部署数据隐私 [**_法规的信息保护_**](../solutions/information-protection-deploy.md)。
