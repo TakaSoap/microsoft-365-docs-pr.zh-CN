@@ -19,28 +19,24 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - adminvideo
-- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 例如服务管理员等管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。
-ms.openlocfilehash: 5bea496ca24f3aef97a780d48c74b84aaa46176b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: cc0f40dffee4523de3a28cfe15b803b9596b8117
+ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765452"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62520375"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
 Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 将这些角色分配给组织中的用户。每个管理员角色都映射到常用的业务功能，并授予组织中的用户在管理中心执行特定任务的权限。
 
 通过 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>，可以管理 Azure AD 角色和 Microsoft Intune 角色。 然而，这些角色是 Azure 门户和 Intune 管理中心中可用角色的子集。
-
-> [!TIP]
-> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以在从加入到日常使用的各个方面全天候访问小型企业专家。
 
 ## <a name="watch-what-is-an-admin"></a>观看：什么是管理员？
 

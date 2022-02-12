@@ -19,18 +19,19 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: 19e27510b9ffd28aaae739c6d4da4299bca1a4fb
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: f8a7f725e029021626bf408a3797ac6bfbb16215
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422299"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765632"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
@@ -44,6 +45,9 @@ ms.locfileid: "61422299"
 共享邮箱包含共享日历。许多小型企业喜欢使用共享日历，方便每个人在其中输入约会。例如，如果有 3 个人进行客户访问工作，那么他们都可以使用共享日历来输入约会。这是一种让每个人了解他人行踪的简便方法。
 
 创建共享邮箱之前，请务必阅读[关于共享邮箱](about-shared-mailboxes.md)了解详细信息。
+
+> [!TIP]
+> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以针对从加入到日常使用的各个方面随时访问小型企业专家。
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>创建共享邮箱并添加成员
   
