@@ -1,29 +1,35 @@
 ---
 title: 支付订阅费用
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: 'jkinma, jmueller'
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-  - M365-subscription-management
-  - Adm_O365
+- M365-subscription-management
+- Adm_O365
 search.appverid: MET150
 description: 使用信用卡、借记卡或银行账户支付 Microsoft 365 商业版订阅费用，或在某些情况下，使用发票支付。
 ms.custom:
-  - okr_SMB
-  - fwlink 808700 for SEPA UI glink 906 for older uI
-  - AdminSurgePortfolio
-  - commerce_billing
-  - AdminTemplateSet
+- okr_SMB
+- fwlink 808700 for SEPA UI glink 906 for older uI
+- AdminSurgePortfolio
+- commerce_billing
+- business_assist
+- AdminTemplateSet
 ms.date: 10/28/2021
+ms.openlocfilehash: 839c7e94a2a89b20eef0779f44d864d69ed3a746
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766784"
 ---
-
 # <a name="how-to-pay-for-your-subscription"></a>如何支付订阅费用
 
 > [!IMPORTANT]
@@ -32,6 +38,9 @@ ms.date: 10/28/2021
 可使用信用卡、借记卡或银行账户支付订阅费用。 某些情况下，可以使用支票或电子资金转账 (EFT) 按发票付款。 如果有计费配置文件，则选项会略有不同。 有关详细信息，请参阅 [如何支付具有计费配置文件的订阅费用](pay-for-subscription-billing-profile.md)。 如果不确定账户是否具有计费配置文件，请参阅 [了解计费配置文件](manage-billing-profiles.md)。
 
 **只想查看发票付款发送到何处？** 如果你通过支票或电子资金转帐 (EFT) 支付发票，请参阅 [支票或 EFT 付款发送到何处？](#where-do-i-send-my-check-or-eft-payment)
+
+> [!TIP]
+> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以针对从加入到日常使用的各个方面随时访问小型企业专家。
 
 ## <a name="before-you-begin"></a>准备工作
 

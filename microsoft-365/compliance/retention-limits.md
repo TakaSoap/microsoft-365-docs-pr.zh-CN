@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: 了解策略、每个保留策略和保留标签策略项目的最大数量
-ms.openlocfilehash: d8746f99961d209fb76f1fbe146162d9b6e2ed59
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f7b445ab8fd0afe5fb893933c3475385e09bc84e
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370064"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767432"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的限制
 
@@ -37,13 +37,20 @@ ms.locfileid: "61370064"
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>每个租户策略的最大数
 
-单个租户最多可有 10,000 个策略（任何配置）。 此最大数量包括不同的保留策略，以及用于合规性的其他策略，例如 DLP、信息屏障、电子数据展示保留和敏感度标签。
+单个租户最多可有 10,000 个策略（任何配置）。 此最大数量包含不同的保留策略，以及用于合规性的其他策略，例如适用于 DLP、信息屏障、电子数据展示保留、诉讼保留、就地保留和敏感度标签的策略。 但是，此最大值不包括：
+
+- 仅删除，而不是仅保留或保留后删除的 SharePoint 和 OneDrive 标签策略。 例外情况是始终包含在 10,000 最大值中的适用于云附件的自动应用标签策略。
+- 来自 [邮件记录管理 (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) 的 Exchange 保留策略。
 
 在此 10,000 个策略限制内，每个工作负载的最大保留策略数也有一些限制:
 
 - Exchange Online（任何配置）：1800
+    - 每个邮箱：在性能可能受到影响之前，建议的最大值为 25；支持的限制为 50。
 - SharePoint 或 OneDrive：（自动包含所有网站）：13
 - SharePoint 或 OneDrive（包含或排除的特定位置）：2,600
+
+> [!NOTE]
+> Exchange 和 SharePoint 的这些最大数量不仅限于保留，而是与其他类型的保留策略共享，这些策略包括电子数据展示保留、诉讼保留和就地保留。
 
 尽管 Microsoft Teams 和 Yammer 的保留策略使用邮箱来存储数据以用于保留，但 Exchange Online 的最大策略数排除 Teams 和 Yammer 的保留策略。
 

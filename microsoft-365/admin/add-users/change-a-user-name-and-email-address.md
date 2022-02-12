@@ -19,22 +19,26 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解 Microsoft 365 全局管理员可以如何更改用户的电子邮件地址以及在名称更改时更改显示名称。 '
-ms.openlocfilehash: d5c5190dd5141ff4ee5d43ebdf537cff9617d0a2
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 3c3b83028ba2086cc167895075b9099795d988dc
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370628"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765500"
 ---
 # <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
 例如，若用户结婚和更改姓氏，则可能需要更改该用户的电子邮件地址和显示名称。
+
+> [!TIP]
+> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以针对从加入到日常使用的各个方面随时访问小型企业专家。
 
 ## <a name="watch-change-a-users-name-or-email-address"></a>观看：更改用户的姓名或电子邮件地址
 

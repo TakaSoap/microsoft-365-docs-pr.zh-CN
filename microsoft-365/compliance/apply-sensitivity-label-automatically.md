@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 3d28f5bfea3f532abf51d65452dcb9354ce7242d
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 6802947e786f13a577a6f3bf58ea3001599ee4d8
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "62428909"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766076"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -86,7 +86,6 @@ ms.locfileid: "62428909"
 |:-----|:-----|:-----|
 |应用相关性|是（[最低版本](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)） |否 \* |
 |按位置限制|否 |是 |
-|条件：自定义敏感信息类型的精确数据匹配|是 |否 |
 |条件：可训练分类器|是 |否 |
 |条件：电子邮件的共享选项和其他选项|否 |是 |
 |条件：异常|否 |是（仅限电子邮件） |
@@ -132,8 +131,8 @@ ms.locfileid: "62428909"
 |现有标签 |使用标签设置覆盖: 文件和电子邮件的自动标签化  |使用策略替代: 自动标记|
 |:-----|:-----|:-----|
 |手动应用，任何优先级|Word、Excel、PowerPoint: 否 <br /><br> Outlook: 否  |SharePoint 和 OneDrive: 否 <br /><br> Exchange: 默认情况下为“否”，但可配置 |
-|自动应用，优先级较低 |Word、Excel、PowerPoint: 是 <br /><br> Outlook: 是 | SharePoint 和 OneDrive: 是 <br /><br> Exchange: 是 |
-|自动应用，优先级更高 |Word、Excel、PowerPoint: 否 <br /><br> Outlook: 否 |SharePoint 和 OneDrive: 否 <br /><br> Exchange: 默认情况下为“否”，但可配置 |
+|根据策略自动应用或默认的标签，优先级较低 |Word、Excel、PowerPoint: 是 <br /><br> Outlook: 是 | SharePoint 和 OneDrive: 是 <br /><br> Exchange: 是 |
+|根据策略自动应用或默认的标签，优先级较高 |Word、Excel、PowerPoint: 否 <br /><br> Outlook: 否 |SharePoint 和 OneDrive: 否 <br /><br> Exchange: 默认情况下为“否”，但可配置 |
 
 电子邮件自动标记策略的可配置设置位于 **电子邮件的附加设置** 页面上。 选择包含 Exchange 位置的自动标记策略的敏感度标签后，将显示此页面。
 
@@ -141,7 +140,7 @@ ms.locfileid: "62428909"
 
 对于 Office 应用中的内置标记，请检查在 Office 应用中自动标记[所需的最低版本](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
 
-Azure 信息保护统一标记客户端支持自动标记内置和自定义敏感信息类型，但不支持使用精确数据匹配 (EDM) 的可训练分类器或敏感信息类型。
+Azure 信息保护统一标记客户端仅支持自动标记内置和自定义敏感信息类型，但不支持可训练分类器或使用精确数据匹配 (EDM) 或命名实体的敏感信息类型。
 
 [创建或编辑敏感度标签](create-sensitivity-labels.md)时，可使用 Office 应用的自动标签设置。 请确保为标签的范围选择了 **“文件和电子邮件”**：
 
@@ -183,7 +182,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>为标签配置可训练分类器
 
-如果使用此选项，请确保你已在租户中发布至少一个其他针对自动标记和 [敏感信息类型选项](#configuring-sensitive-info-types-for-a-label) 配置的敏感度标签。
+如果将此选项和适用于 Windows 版本 2106 或更低版本的 Microsoft 365 应用版，或适用于 Mac 版本 16.50 或更低版本的 Microsoft 365 应用版配合使用，请确保已在租户中至少发布了一个配置为自动标记的其他敏感度标签和 [敏感信息类型选项](#configuring-sensitive-info-types-for-a-label)。 当你在这些平台上使用更高版本时，则无需满足此要求。
 
 选择“**可训练分类器**”选项时，请选择一个或多个预训练或自定义的可训练分类器：
 

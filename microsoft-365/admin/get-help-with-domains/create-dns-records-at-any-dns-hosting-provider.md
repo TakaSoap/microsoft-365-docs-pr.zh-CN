@@ -21,13 +21,14 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: ae8dc1c1d2f603e81d2affd723df2be460a873de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db2f41d485999928a69d299ccdb1295a7e3dc289
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164808"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766808"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>添加 DNS 记录以连接你的域
 
@@ -38,6 +39,9 @@ ms.locfileid: "60164808"
 如果你不添加域，组织中的人员将在电子邮件地址中使用 onmicrosoft.com 域，直至你添加为止。 请务必在添加用户前先添加域，以免需要进行两次设置。
 
 如果在下文中找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.yml)。
+
+> [!TIP]
+> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以针对从加入到日常使用的各个方面随时访问小型企业专家。
 
 ## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>步骤 1：添加 TXT 或 MX 记录以验证你是否拥有相应的域
 

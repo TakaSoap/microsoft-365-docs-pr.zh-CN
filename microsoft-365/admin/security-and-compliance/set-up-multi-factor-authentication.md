@@ -18,6 +18,7 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - adminvideo
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 48145df8fbaf5b29774b493f8c408e3bf48cb1b6
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 1279220ceb8de5c5fdb4361a258e2c2bfc1f7061
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322386"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767420"
 ---
 # <a name="set-up-multifactor-authentication"></a>设置多重身份验证
 
@@ -40,6 +41,9 @@ ms.locfileid: "62322386"
 
 > [!IMPORTANT]
 > 如果你在 2019 年 10 月 21 日之后购买了订阅或试用版，并且你在登录时收到 MFA 的提示，则已经自动为你的订阅启用[安全性默认值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
+
+> [!TIP]
+> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以针对从加入到日常使用的各个方面随时访问小型企业专家。
 
 ## <a name="watch-turn-on-multifactor-authentication"></a>观看：打开多重身份验证
 

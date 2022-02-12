@@ -20,15 +20,16 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid: MET150
 description: 使用现有付款方式，或在 Microsoft 365 管理中心添加新的付款方式，购买 Microsoft 的业务产品或服务。
 ms.date: 04/02/2021
-ms.openlocfilehash: 82a3133e4d22514608348b060b3466a74e184278
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7fde1149d97bb05863f4fd013f501b49203c33f6
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374288"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765524"
 ---
 # <a name="manage-payment-methods"></a>管理支付方式
 
@@ -45,6 +46,9 @@ ms.locfileid: "61374288"
 > 某些国家和地区未提供使用银行帐户付款的选项。
 >
 > 必须使用与租户相同的国家/地区发布的付款方式。
+
+> [!TIP]
+> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以针对从加入到日常使用的各个方面随时访问小型企业专家。
 
 ## <a name="watch-update-your-payment-method"></a>观看：更新付款方式
 

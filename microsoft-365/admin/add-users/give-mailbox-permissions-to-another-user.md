@@ -18,24 +18,28 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 授予用户访问其他用户邮箱的权限，此操作允许用户从其他用户的邮箱读取和发送电子邮件。
-ms.openlocfilehash: 0b3871b57f9c486ca5eea6a5d121821c203f7a20
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 82a254081eba2e9b6f4ef83f952b07c743dee2c1
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421554"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765644"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>向其他用户授予邮箱权限 - 管理员帮助
 
 作为管理员，你可能需要按照公司要求允许某些用户访问其他用户的邮箱。例如，你可能希望使助理可以从其经理的邮箱发送或阅读电子邮件，或者希望其中某一位用户可以代表另一用户发送电子邮件。本主题介绍如何实现这一目的。
   
 如果需要查找有关创建和管理共享邮箱的信息，请查看[创建共享邮箱](../email/create-a-shared-mailbox.md)。
+
+> [!TIP]
+> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以针对从加入到日常使用的各个方面随时访问小型企业专家。
     
 ## <a name="looking-to-set-up-mailbox-permissions"></a>需要设置邮箱权限？
 

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: 57e86f1e41d3b4974a0f148c27be35adcb637714
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 8be6fc228a623f3a1f76efdf56354ba30beb9650
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401410"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767684"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
@@ -124,7 +124,9 @@ ms.locfileid: "61401410"
     
     对于采用以上任何加密配置的标签，标签会显示在 Office 应用中。 但是，当用户选择这些标签，而其他人正在编辑文档时，你会警告他们共同创作且自动保存将不可用。 如果其他人正在编辑文档，用户会看到一条消息，指出标签无法应用。
 
-- 如果使用 Azure 信息保护统一标签客户端：查看此标签客户端的文档， [要求或限制](/azure/information-protection/known-issues#known-issues-for-co-authoring)。
+- 如果使用 Azure 信息保护统一标签客户端：查看此标签客户端的文档， [要求或限制](/azure/information-protection/known-issues#known-issues-for-co-authoring)。 
+    > [!NOTE]
+    > 统一标记客户端的这些限制包括 [对话框更改](/azure/information-protection/known-issues#user-interface-changes-when-applying-labels)，适用于选择提示其选择权限的标签的用户。
 
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>如何为具有敏感度标签的文件启用共同创作
 

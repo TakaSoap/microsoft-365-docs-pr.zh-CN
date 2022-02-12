@@ -18,20 +18,24 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid:
 - MET150
 description: 每个团队成员都需要用户帐户，然后才能登录和访问 Microsoft 365 商业版。了解如何添加用户和分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: 161b1cec937197dc3cc81b34027b6574676f7d95
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 90ef6506d10c0f4c106dd18816ccd2f11803a079
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520772"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765416"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同时添加用户和分配许可证
 
 团队中的每个人都需要一个用户账户，然后才能登录和访问 [Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business)。添加用户账户的最简单方法是在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 中逐一添加。完成该步骤后，用户就拥有了 Microsoft 365 许可证、登录凭据和 Microsoft 365 邮箱。
+
+> [!TIP]
+> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以针对从加入到日常使用的各个方面随时访问小型企业专家。
 
 ## <a name="before-you-begin"></a>开始之前
 

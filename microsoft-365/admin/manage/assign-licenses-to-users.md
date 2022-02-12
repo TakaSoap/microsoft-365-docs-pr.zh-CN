@@ -18,6 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - TopSMBIssues
 - SaRA
+- business_assist
 - okr_SMB
 - manage_licenses
 - commerce_licensing
@@ -25,12 +26,12 @@ ms.custom:
 search.appverid: MET150
 description: 许可证分配取决于是向特定用户分配产品许可证，还是向特定产品分配用户许可证。
 ms.date: 09/16/2021
-ms.openlocfilehash: 90c567e27abf67bdb5a6cf74da4d64d9156e1432
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 4c9cf07ba93c19607e7d6d005439368ab0111229
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520856"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765932"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 
@@ -42,6 +43,9 @@ ms.locfileid: "61520856"
 > - 对于某些订阅，只能在购买或续订订阅后的有限时间段内取消。 如果取消时段已过，请在订阅期限结束时关闭定期计费以取消订阅。
 
 [了解如何同时添加用户帐户和分配许可证](../add-users/add-users.md)。
+
+> [!TIP]
+> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以针对从加入到日常使用的各个方面随时访问小型企业专家。
 
 ## <a name="before-you-begin"></a>准备工作
 
