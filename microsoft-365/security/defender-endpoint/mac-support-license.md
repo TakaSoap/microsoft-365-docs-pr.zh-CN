@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b7a12d2eb88998496c4998396a5d7bf5084656e8
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: b0a328ffeee6ee5796cb92f00b8491b257e88a65
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520964"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765728"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的许可证问题
 
@@ -30,14 +29,14 @@ ms.locfileid: "61520964"
 
 **适用于：**
 
-- macOS 上的[Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md) 
-[Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- macOS 
+ [上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)[Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-当你在 [macOS](microsoft-defender-endpoint-mac.md) 上完成 Microsoft Defender for Endpoint 和 [手动](mac-install-manually.md) 部署测试或概念证明 (PoC) 时，你可能会收到以下错误：
+当你在 [macOS 上通过 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md) 和 [手动](mac-install-manually.md) 部署测试或概念证明 (PoC) 时，你可能会收到以下错误：
 
 ![许可证错误的图像。](images/no-license-found.png)
 

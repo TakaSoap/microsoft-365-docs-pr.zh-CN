@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid:
 - MET150
 - MOE150
@@ -30,20 +31,23 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 了解如何从 Gmail 或其他电子邮件提供商导入联系人、日历和电子邮件，并迁移到 Microsoft 365。
-ms.openlocfilehash: 91e079d24595c7c7f7d9e37eaddb49d34df886d1
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 7905dd767b29b50466729510ac0e4cff70eb242e
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530426"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767516"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>将电子邮件和联系人迁移到 Microsoft 365
 
 将电子邮件从 Gmail 或其他电子邮件提供商导入或迁移到Microsoft 365。
   
- **需要有关此的帮助？**  [联系 Microsoft 365 for business support](../../business-video/get-help-support.md)。 
+ **需要有关此的帮助？**  [请联系Microsoft 365商业支持人员](../../business-video/get-help-support.md)。 
+
+> [!TIP]
+> 如果需要有关本主题中的步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助 Business Assist，你和员工在业务增长（从载入到日常使用）时，可以全天候访问小型企业专家。
   
-对于此任务，你需要Outlook安装在桌面上的客户端版本。 Outlook大多数计划中都包含Microsoft 365[计划](https://go.microsoft.com/fwlink/p/?LinkId=723731)。
+对于此任务，你需要Outlook安装在桌面上的客户端版本。 Outlook大多数计划都包含Microsoft 365[计划](https://go.microsoft.com/fwlink/p/?LinkId=723731)。
   
 ## <a name="watch-import-and-redirect-email"></a>观看：导入和重定向电子邮件
 
@@ -79,19 +83,19 @@ ms.locfileid: "61530426"
     
 2. [将联系人导入到 Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
-若要启动此过程，请打开Outlook **并选择"文件** \> **""打开 &amp; 导出** \> **导入/导出"。**
+若要启动此过程，请打开"**Outlook"文件****""打开导出&amp;** \> **导入/导出"**。\>
   
 ![文件菜单中Outlook 2016。](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Open &amp; Export command in Outlook 2016](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![导入/导出按钮Outlook 2016](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
-## <a name="see-other-email-accounts-in-outlook"></a>请参阅电子邮件中的其他Outlook
+## <a name="see-other-email-accounts-in-outlook"></a>在电子邮件中查看Outlook
 
-只想查看来自其他提供商的电子邮件， (Gmail、Yahoo 或 Live.com) Outlook？ 无需导入或迁移。 您可以设置 Outlook 或 Outlook Web App，以便可以从与 Microsoft 365 邮箱相同的位置访问其他帐户，并发送、接收和阅读发送到这些帐户的电子邮件。
+只想查看来自其他提供商的电子邮件， (Gmail、Yahoo 或 Live.com) Outlook？ 无需导入或迁移。 你可以设置Outlook或Outlook Web App，以便你可以从 Microsoft 365 邮箱相同的位置访问其他帐户，并发送、接收和阅读发送到这些帐户的电子邮件。
   
 ### <a name="outlook-desktop"></a>Outlook (桌面) 
 
 将帐户（如专用 Gmail 帐户）添加到Outlook。
   
-- 打开Outlook"，然后转到"**文件** \> **""添加帐户"。**
+- 打开Outlook"，然后转到"**文件"** \> **"添加帐户"**。
     
 是否需要更详细的步骤？ 请参阅 [添加帐户](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)。
   
@@ -99,10 +103,10 @@ ms.locfileid: "61530426"
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>多个邮箱：管理员可以将电子邮件、联系人和日历批量导入Microsoft 365
 
-根据您的源电子邮件系统，您可以从多种批量迁移方法中选择。 阅读[将多个电子邮件帐户迁移到](/Exchange/mailbox-migration/mailbox-migration)Microsoft 365，以决定哪种方法适合你。
+根据您的源电子邮件系统，您可以从多种批量迁移方法中选择。 阅读[将多个电子邮件帐户迁移到](/Exchange/mailbox-migration/mailbox-migration) Microsoft 365，以决定哪种方法适合你。
 
 ## <a name="related-content"></a>相关内容
 
-[Plan your setup of Microsoft 365 for business (](plan-your-setup.md) article) \
+[Plan your setup of Microsoft 365 for business](plan-your-setup.md) (article) \
 [Install Office applications](install-applications.md) (link page) \
-[概述Microsoft 365 管理中心] (概述Microsoft 365 管理中心] (。/admin-overview/admin-center-overview.md)  (视频) 
+[Microsoft 365 管理中心概述]（Microsoft 365 管理中心概述）（../admin-overview/admin-center-overview.md）（视频）

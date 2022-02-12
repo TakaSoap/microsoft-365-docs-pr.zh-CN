@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 23eb3d53635334292b762941d39b9683f2a4dd9e
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 0506c5213fe6c4a9c5bb5556b987f64b22bda517
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218138"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765044"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的用户帐户
 
@@ -59,7 +59,7 @@ ms.locfileid: "61218138"
 
 ### <a name="user-details"></a>用户详细信息
 
-左侧的用户详细信息窗格提供有关用户的信息，例如相关的打开事件、活动警报、SAM 名称、SID、Microsoft Defender for Identity 警报、用户登录的设备数量、首次看到和最后一次看到用户时、角色和登录类型。 根据你已启用的集成功能，你将看到其他详细信息。 例如，如果启用 Skype 企业集成，您将能够从门户联系用户。 Azure **ATP** 警报部分包含一个链接，如果你已启用 Microsoft Defender for Identity 功能，并且存在与用户相关的警报，该链接将你指向 Microsoft Defender for Identity 页面。 Microsoft Defender for Identity 页面将提供有关警报详细信息。
+左侧的用户详细信息窗格提供有关用户的信息，例如相关的打开事件、活动警报、SAM 名称、SID、Microsoft Defender for Identity 警报、用户登录的设备数量、首次看到和最后一次看到用户时、角色和登录类型。 根据你已启用的集成功能，你将看到其他详细信息。 例如，如果启用Skype集成，您将能够从门户联系用户。 Azure **ATP** 警报部分包含一个链接，如果你已启用 Microsoft Defender for Identity 功能，并且存在与用户相关的警报，该链接将你指向 Microsoft Defender for Identity 页面。 Microsoft Defender for Identity 页面将提供有关警报详细信息。
 
 > [!NOTE]
 > 你需要在 Microsoft Defender for Identity 和 Defender for Endpoint 上启用集成才能使用此功能。 在 Defender for Endpoint 中，可以在高级功能中启用此功能。 若要详细了解如何启用高级功能，请参阅 [启用高级功能](advanced-features.md)。
@@ -73,7 +73,7 @@ ms.locfileid: "61218138"
 
 ### <a name="overview"></a>概述
 
-" **概述** "选项卡显示事件详细信息以及用户已登录的设备列表。 你可以展开它们以查看每个设备的登录事件的详细信息。
+**"概述**"选项卡显示事件详细信息以及用户已登录的设备列表。 你可以展开它们以查看每个设备的登录事件的详细信息。
 
 ### <a name="alerts"></a>警报
 
@@ -89,7 +89,7 @@ ms.locfileid: "61218138"
 
 1. 从 **搜索** 栏 **下拉菜单中选择** 用户。
 2. 在"搜索"字段中 **输入** 用户帐户。
-3. 单击搜索图标或按 **Enter。**
+3. 单击搜索图标或按 **Enter**。
 
 将显示与查询文本匹配的用户列表。 你将看到用户帐户的域和名称、上次看到用户帐户的时间以及过去 30 天内观测到它登录到的设备总数。
 

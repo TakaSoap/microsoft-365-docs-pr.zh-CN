@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 61eae362d9f4e5e2777b5f917ac95d7c838e350c
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 8cd930fcc74994abe91f4c13255f97bc21159202
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214125"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765656"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint 预览功能
 
@@ -43,7 +42,7 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 > [!TIP]
 > 在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中： `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
-有关已普遍提供的新功能详细信息，请参阅 Defender for [Endpoint 中的新增功能](whats-new-in-microsoft-defender-endpoint.md)。
+有关已普遍提供的新功能详细信息，请参阅 [Defender for Endpoint 中的新增功能](whats-new-in-microsoft-defender-endpoint.md)。
 
 ## <a name="what-you-need-to-know"></a>须知内容
 
@@ -62,9 +61,9 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 
 启用预览体验设置，以率先体验即将推出的功能。
 
-1. 在导航窗格中，**选择"设置** \> **终结点** \> **高级功能** \> **预览功能"。**
+1. 在导航窗格中，选择"**设置** \> **终结点高级** \> **功能** \> **预览功能"**。
 
-2. 切换 **开和关** 之间的 **设置，** 然后选择 **保存首选项**。
+2. 在" **开"和** "关 **"之间切换设置** ，然后选择 **"保存首选项"**。
 
 > [!TIP]
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)。

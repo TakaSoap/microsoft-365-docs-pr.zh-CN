@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7f9f51e9ce31881d66ca8a8e72fa128c458229aa
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5cb41b0bd3f185237055daa2d282f0a1d6975a49
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166166"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765536"
 ---
 # <a name="device-control-for-macos"></a>macOS 的设备控件
 
@@ -34,7 +33,7 @@ ms.locfileid: "61166166"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 macOS 的设备控件具有以下先决条件：
 
@@ -71,7 +70,7 @@ macOS 的设备控件具有以下先决条件：
 
 ### <a name="customize-url-target-for-notifications-raised-by-device-control"></a>自定义由设备控件引发通知的 URL 目标
 
-在设备上强制执行你已放置的设备控制策略时 (例如，对可移动媒体设备的访问权限受限) ，则向用户显示一条通知。
+例如，如果已实施的设备控制策略在设备上强制执行 (例如，对可移动媒体设备的访问权限受限) ，则向用户显示一条通知。
 
 ![设备控制通知。](images/mac-device-control-notification.png)
 
@@ -85,7 +84,7 @@ macOS 的设备控件具有以下先决条件：
 |---|---|
 |**域**|`com.microsoft.wdav`|
 |**键**|navigationTarget|
-|**数据类型**|String|
+|**数据类型**|字符串|
 |**Comments**|如果未定义，产品将使用指向说明产品所采取操作的通用页面的默认 URL。|
 |
 
@@ -135,7 +134,7 @@ macOS 的设备控件具有以下先决条件：
 - `block` - 在此强制级别下，用户可以在设备上执行的操作仅限于策略中定义的操作。 此外，会向用户引发通知。
 
 > [!NOTE]
-> 默认情况下，强制级别设置为 `audit` 。
+> 默认情况下，强制级别设置为 `audit`。
 
 <br>
 
@@ -162,7 +161,7 @@ macOS 的设备控件具有以下先决条件：
   - `execute` - 允许对设备执行操作
 
 > [!NOTE]
-> 如果 `none` 权限级别存在 ，则忽略 (、 或 `read` `write`) `execute` 权限。
+> 如果 `none` 权限级别存在 ，则 `read`忽略其他 (、 `write`或) `execute` 权限。
 >
 > 权限 `execute` 仅指执行 Mach-O 二进制文件。 它不包括脚本或其他类型的有效负载的执行。
 
@@ -180,7 +179,7 @@ macOS 的设备控件具有以下先决条件：
 
 #### <a name="restrict-removable-media-by-vendor-product-and-serial-number"></a>按供应商、产品和序列号限制可移动媒体
 
-如允许 [或阻止可移动](#allow-or-block-removable-devices)设备中所述，USB 设备等可移动媒体可以通过供应商 ID、产品 ID 和序列号进行标识。
+如允许 [或阻止](#allow-or-block-removable-devices)可移动设备中所述，USB 设备等可移动媒体可以通过供应商 ID、产品 ID 和序列号进行标识。
 
 在可移动媒体策略的顶层，可以选择在供应商级别定义更精细的限制。
 
@@ -339,11 +338,11 @@ macOS 的设备控件具有以下先决条件：
 
 1. 登录到 Mac 设备。
 1. 插入要查找其标识符的 USB 设备。
-1. 在 macOS 的顶级菜单中，选择"**关于此 Mac"。**
+1. 在 macOS 的顶级菜单中，选择" **关于此 Mac"**。
 
     ![关于此 Mac。](images/mac-device-control-lookup-1.png)
 
-1. 选择 **"系统报告"。**
+1. 选择 **"系统报告"**。
 
     ![系统报告。](images/mac-device-control-lookup-2.png)
 
@@ -355,7 +354,7 @@ macOS 的设备控件具有以下先决条件：
 
     ![USB 设备的详细信息。](images/mac-device-control-lookup-4.png)
 
-1. 将显示供应商 ID、产品 ID 和序列号。 将供应商 ID 和产品 ID 添加到可移动媒体策略时，必须仅在 之后添加部件 `0x` 。 例如，在下图中，供应商 ID 为 ， `1000` 产品 ID 为 `090c` 。
+1. 将显示供应商 ID、产品 ID 和序列号。 将供应商 ID 和产品 ID 添加到可移动媒体策略时，必须仅在 之后添加部件 `0x`。 例如，在下图中，供应商 ID 为 ， `1000` 产品 ID 为 `090c`。
 
 #### <a name="discover-usb-devices-in-your-organization"></a>发现你的组织的 USB 设备
 
@@ -369,9 +368,9 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>设备控制策略部署
 
-设备控制策略必须包含在其他产品设置旁边，如在 macOS 上设置 [Microsoft Defender for Endpoint 的首选项中所述](mac-preferences.md)。
+设备控制策略必须包含在其他产品设置旁边，如在 [macOS 上设置 Microsoft Defender for Endpoint 的首选项中所述](mac-preferences.md)。
 
-可以使用配置文件部署 中列出的说明部署 [此配置文件](mac-preferences.md#configuration-profile-deployment)。
+可以使用配置文件部署中列出的说明部署 [此配置文件](mac-preferences.md#configuration-profile-deployment)。
 
 ## <a name="troubleshooting-tips"></a>疑难解答提示
 
@@ -381,7 +380,7 @@ DeviceEvents
 mdatp device-control removable-media policy list
 ```
 
-此命令将输出到产品使用的设备控制策略的标准输出。 如果打印，请确保 (配置文件) 配置文件确实已从管理控制台推送到设备， (b) 它是一个有效的设备控制策略，如本文档中所述。 `Policy is empty`
+此命令将输出到产品使用的设备控制策略的标准输出。 `Policy is empty`如果打印，请确保 (配置文件) 配置文件确实已从管理控制台推送到设备， (b) 它是一个有效的设备控制策略，如本文档中所述。
 
 在策略已成功传递且插入了一个或多个设备的设备上，可以运行以下命令列出所有设备以及应用于它们的有效权限。
 
@@ -400,7 +399,7 @@ mdatp device-control removable-media devices list
 | |-o Mount point: "/Volumes/TESTUSB"
 ```
 
-在以上示例中，只有一个已插入的可移动媒体设备，并且根据已传递到该设备的设备控制策略具有 `read` `execute` 和权限。
+在以上示例中，只有一`read``execute`个已插入的可移动媒体设备，并且根据已传递到该设备的设备控制策略具有和权限。
 
 ## <a name="related-topics"></a>相关主题
 

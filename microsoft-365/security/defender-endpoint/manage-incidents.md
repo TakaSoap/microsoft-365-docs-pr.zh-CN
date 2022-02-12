@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71d453bbc5b94b4685a65c1074244ae98b16448c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 45c08c5a3c304a23b5761d96a4d9aceb1b4f1562
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166802"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766820"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>管理 Microsoft Defender 终结点事件
 
@@ -37,7 +37,7 @@ ms.locfileid: "61166802"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-管理事件是每个网络安全操作的重要组成部分。 可以通过从"事件"队列或"事件管理"窗格中选择事件 **来管理事件**。 
+管理事件是每个网络安全操作的重要组成部分。 可以通过从"事件队列"或"事件管理"窗格中选择事件 **来管理事件**。 
 
 
 从事件队列中 **选择事件将** 打开"事件管理"窗格，您可以在其中打开事件页面了解详细信息。

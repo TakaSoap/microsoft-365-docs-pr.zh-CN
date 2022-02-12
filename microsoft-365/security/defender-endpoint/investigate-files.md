@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 704510b6b31e47b1a68ab90ffbf5e6e7353d0969
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: b990c73f9cdb81d164bd57d1aff5b7ec61df714f
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217934"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767108"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>调查与 Microsoft Defender for Endpoint 警报关联的文件
 
@@ -40,7 +40,7 @@ ms.locfileid: "61217934"
 
 有许多方法可以访问特定文件的详细配置文件页。 例如，可以使用搜索功能、单击警报进程树中的链接、事件 **图**、项目时间线，或选择设备时间线中列出的 **事件**。
 
-进入详细的配置文件页面后，可以通过切换新的文件页面在新的和旧的页面布局 **之间切换**。 本文的其余部分介绍了较新的页面布局。
+进入详细配置文件页面后，可以通过切换新的"文件"页面在新的和旧的页面布局 **之间切换**。 本文的其余部分介绍了较新的页面布局。
 
 可以从文件视图中的以下部分获取信息：
 

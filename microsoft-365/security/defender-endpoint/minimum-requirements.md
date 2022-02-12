@@ -11,15 +11,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3df27d3a09b5a19b4e2c4c2ecea1ab0eb8c1e157
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 6d4d76a45d69994c82c2027f57d5c3b045e82397
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245167"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765056"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的最低要求
 
@@ -36,7 +38,7 @@ ms.locfileid: "62245167"
 > [!TIP]
 >
 > - 本文介绍了 Microsoft Defender 终结点计划 2 的最低要求。 如果你要查找有关 Defender for Endpoint Plan 1 的信息，请参阅 [Defender for Endpoint Plan 1 的要求](mde-p1-setup-configuration.md#review-the-requirements)。
-> - 了解 Defender for Endpoint：Defender for Endpoint Tech Community 中[的最新增强功能](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)。
+> - 了解 Defender for Endpoint：[Defender for Endpoint Tech Community 中的最新增强功能](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)。
 > - Defender for Endpoint 在最新的 MITRE 评估中展示了行业领先的光学镜头和检测功能。 阅读：[来自基于 MITRE ATT&CK 的评估的见解](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
 
 ## <a name="licensing-requirements"></a>许可要求
@@ -61,8 +63,8 @@ ms.locfileid: "62245167"
 
 ### <a name="supported-windows-versions"></a>支持的 Windows 版本
 
-- Windows 7 SP1 Enterprise (需要[ESU 以支持](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
-- Windows 7 SP1 Pro (需要[ESU 以支持](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
+- Windows 7 SP1 Enterprise ([需要 ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq) 提供支持。) 
+- Windows 7 SP1 Pro ([需要 ESU](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq) 提供支持。) 
 - Windows 8.1 企业版
 - Windows 8.1 专业版
 - Windows 11 企业版
@@ -100,7 +102,7 @@ ms.locfileid: "62245167"
 
 当 Microsoft 和 Windows 上的组件是最新的时，Microsoft Defender for Endpoint 支持将遵循各自操作系统的生命周期。 有关详细信息，请参阅生命周期 [常见问题](/lifecycle/faq/general-lifecycle)解答。 新特性或功能通常仅在尚未结束生命周期的操作系统上提供。 安全智能 (定义和引擎) 和检测逻辑将继续提供，直到至少：
 
-- 对于 [没有扩展安全更新](/lifecycle/products/) (ESU (计划的操作系统，) 结束日期) 。
+- 对于 [没有扩展](/lifecycle/products/) 安全更新 (ESU (计划的操作系统，) 结束日期) 。
 - 对于 [具有 ESU](/lifecycle/faq/extended-security-updates) (操作系统，ESU 结束日期) 。
 
 
@@ -138,7 +140,7 @@ ms.locfileid: "62245167"
    1. 转到“**开始**”并键入“**cmd**”。
    2. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
-2. 输入以下命令，然后按 **Enter：**
+2. 输入以下命令，然后按 **Enter**：
 
    ```console
    sc qc diagtrack
@@ -148,7 +150,7 @@ ms.locfileid: "62245167"
 
    ![diagtrack 的 sc 查询命令的结果。](images/windefatp-sc-qc-diagtrack.png)
 
-如果服务未设置为 START_TYPE，则需要将服务设置为自动 **AUTO_START。** 
+如果服务未设置为"START_TYPE，则需要将该服务 **设置为** 自动AUTO_START。
 
 #### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>使用命令行将 Windows数据服务设置为自动启动
 
@@ -156,13 +158,13 @@ ms.locfileid: "62245167"
     1. 转到“**开始**”并键入“**cmd**”。
     2. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
-2. 输入以下命令，然后按 **Enter：**
+2. 输入以下命令，然后按 **Enter**：
 
     ```console
     sc config diagtrack start=auto
     ```
 
-3. 将显示成功消息。 通过输入以下命令验证更改，然后按 **Enter：**
+3. 将显示成功消息。 通过输入以下命令验证更改，然后按 **Enter**：
 
     ```console
     sc qc diagtrack
@@ -174,13 +176,13 @@ ms.locfileid: "62245167"
 
 Defender for Endpoint 传感器可以使用每日平均带宽 5 MB 与 Defender for Endpoint 云服务进行通信并报告网络数据。 此每日平均带宽中不包含文件上载和调查包收集等一次活动。
 
-有关其他代理配置设置的信息，请参阅配置 [设备代理和 Internet 连接设置](configure-proxy-internet.md)。
+有关其他代理配置设置详细信息，请参阅 [配置设备代理和 Internet 连接设置](configure-proxy-internet.md)。
 
-在载入设备之前，必须启用诊断数据服务。 默认情况下，该服务在 Windows 10 和 Windows 11 中启用。
+在载入设备之前，必须启用诊断数据服务。 默认情况下，该服务在 Windows 10 和 Windows 11。
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Microsoft Defender 防病毒配置要求
 
-Defender for Endpoint 代理依赖于Microsoft Defender 防病毒扫描文件并提供有关文件的信息的能力。
+Defender for Endpoint 代理依赖于用户Microsoft Defender 防病毒扫描文件并提供有关文件的信息的能力。
 
 在 Defender for Endpoint 设备上配置安全智能更新Microsoft Defender 防病毒反恶意软件是否有效。 有关详细信息，请参阅管理更新[Microsoft Defender 防病毒应用基线](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)。
 
@@ -188,16 +190,16 @@ Defender for Endpoint 代理依赖于Microsoft Defender 防病毒扫描文件并
 
 如果组织已通过组策略Microsoft Defender 防病毒关闭已载入的设备，则必须从该组策略中排除已载入的设备。
 
-如果你正在载入服务器，Microsoft Defender 防病毒服务器上不是主动反恶意软件，Microsoft Defender 防病毒需要配置为进入被动模式或卸载。 配置取决于服务器版本。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](microsoft-defender-antivirus-compatibility.md)。
+如果你正在载入服务器，Microsoft Defender 防病毒服务器上不是主动反恶意软件，Microsoft Defender 防病毒需要配置为进入被动模式或卸载。 配置取决于服务器版本。 有关详细信息，请参阅Microsoft Defender 防病毒[兼容性](microsoft-defender-antivirus-compatibility.md)。
 
 > [!NOTE]
-> 常规组策略不适用于防篡改保护，当防篡改保护打开Microsoft Defender 防病毒更改将被忽略。
+> 常规组策略不适用于防篡改保护，当防篡改保护打开Microsoft Defender 防病毒将忽略对组设置所做的更改。
 
 ## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Microsoft Defender 防病毒启用早期启动反恶意软件 (ELAM) 启用
 
 如果你正在设备上Microsoft Defender 防病毒作为主要的反恶意软件产品，则 Defender for Endpoint 代理将成功载入。
 
-如果正在运行第三方反恶意软件客户端并使用移动设备管理解决方案或 Microsoft Endpoint Manager (current branch) ，则需要确保 Microsoft Defender 防病毒 ELAM 驱动程序已启用。 有关详细信息，请参阅[确保策略Microsoft Defender 防病毒禁用策略](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
+如果正在运行第三方反恶意软件客户端并使用移动设备管理解决方案或 Microsoft Endpoint Manager (current branch) ，则需要确保已启用 Microsoft Defender 防病毒 ELAM 驱动程序。 有关详细信息，请参阅[确保策略Microsoft Defender 防病毒禁用策略。](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
 ## <a name="related-topics"></a>相关主题
 

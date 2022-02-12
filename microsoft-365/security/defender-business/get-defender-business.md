@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 01/26/2022
+ms.date: 02/11/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: e4d418dcd7ab33fd8f01dfc64e31210fb358d95c
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 7bdce06b14610718e642d06d1f5a99ac09707a5d
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464598"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767336"
 ---
 # <a name="get-microsoft-defender-for-business-preview"></a>获取 Microsoft Defender for Business (预览) 
 
@@ -59,8 +59,32 @@ Microsoft Defender for Business (预览) 预览版提供！ 通过参与预览�
 > [!IMPORTANT]
 > 如果你是合作伙伴，在接受加入预览计划后，你必须使每个客户完成注册预览计划部分 [中所述的过程](#sign-up-for-the-preview-program)。 请确保客户在"其他"框中指定你的 Microsoft **合作伙伴** 名称。
 
+## <a name="two-portals-for-setup"></a>两个安装门户
+
+当你准备好开始试用时，你将使用两个主要门户来设置内容。 下表总结了您将使用的两个主要门户： <br/><br/>
+
+|门户  |说明  |
+|---------|---------|
+| [https://admin.microsoft.com/](https://admin.microsoft.com/) Microsoft 365 管理中心 ()       | 使用 Microsoft 365 管理中心可添加或删除用户、分配用户许可证、查看产品和服务以及完成 Microsoft 365 任务。 <br/><br/> 若要了解更多信息，请参阅[概述Microsoft 365 管理中心](../../admin/admin-overview/admin-center-overview.md)。      |
+| Microsoft 365 Defender门户 ([https://security.microsoft.com](https://security.microsoft.com))      | 使用 Microsoft 365 Defender门户管理电子邮件保护和组织设备的安全设置。 <br/><br/>若要了解更多信息，请参阅开始使用 [Microsoft 365 Defender 门户](mdb-get-started.md)。        |
+
+如果你的组织使用 Microsoft Intune (部分Microsoft Endpoint Manager) 管理设备，则还可以使用 Microsoft Endpoint Manager 管理[https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)中心 () 。 若要了解更多信息，[Microsoft Intune你的设备的 MDM 和 MAM 提供程序](/mem/intune/fundamentals/what-is-intune)。
+
+## <a name="view-and-manage-users"></a>查看和管理用户
+
+1. 转到"Microsoft 365 管理中心 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) ，然后使用用于请求试用订阅的同一帐户登录。
+
+2. 在导航窗格中，选择" **用户""活动** > **用户"**。 查看用户列表。 
+
+3. 若要添加用户，请同时按照[添加用户和分配许可证中的指导。](../../admin/add-users/add-users.md)
+
+现在，你已准备好继续设置和配置 [Microsoft Defender for Business (预览) ](mdb-setup-configuration.md)。
+
+
 ## <a name="next-steps"></a>后续步骤
 
 - [请参阅 Microsoft Defender for Business 预览版 (和配置) ](mdb-setup-configuration.md)
+
+- [使用向导设置 Microsoft Defender for Business (预览) ](mdb-use-wizard.md)
 
 - [了解如何获取 Microsoft Defender for Business 预览版 (和支持) ](mdb-get-help.md)

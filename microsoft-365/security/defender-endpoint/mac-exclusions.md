@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcc4faa8289ad1a51345407442d866ddb0f8000b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a069e3dd3ef99f094f96318277e077c56b7cb974
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167210"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766664"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上配置和验证适用于终结点的 Microsoft Defender 的排除项
 
@@ -56,7 +55,7 @@ ms.locfileid: "61167210"
 文件扩展名|计算机上任意位置具有扩展名的所有文件|`.test`
 文件|由完整路径标识的特定文件|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
 Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
-流程|由 (的完整路径或文件名指定的特定) 及其打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`
+流程|特定进程 (的完整路径或文件名指定，) 它打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`
 
 文件、文件夹和进程排除项支持以下通配符：
 
@@ -66,7 +65,7 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
 ?|匹配任何单个字符|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
 > [!NOTE]
-> 产品在评估排除项时尝试解析固定链接。 当排除项包含通配符或目标文件 (卷上不存在时，) `Data` 解析不起作用。
+> 产品在评估排除项时尝试解析固定链接。 当排除项包含 `Data` 通配符或目标文件 (卷上不存在时，) 解析不起作用。
 
 ## <a name="how-to-configure-the-list-of-exclusions"></a>如何配置排除项列表
 
@@ -76,7 +75,7 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
 
 ### <a name="from-the-user-interface"></a>从用户界面
 
-打开 Defender for Endpoint 应用程序并导航到"管理 **设置** \> **""** 添加或删除排除..."，如以下屏幕截图所示：
+打开 Defender for Endpoint 应用程序并导航到"管理 **设置**\>""添加或删除排除 **..."**，如以下屏幕截图所示：
 
 ![管理排除项屏幕截图。](images/mdatp-37-exclusions.png)
 
@@ -84,9 +83,9 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>使用 EICAR 测试文件验证排除列表
 
-可以使用 下载测试文件来验证排除列表 `curl` 是否正常工作。
+可以使用 下载测试文件来验证排除 `curl` 列表是否正常工作。
 
-在下面的 Bash 代码段中， `test.txt` 将 替换为符合排除规则的文件。 例如，如果已排除扩展 `.testing` ，请将 替换为 `test.txt` `test.testing` 。 如果要测试路径，请确保在此路径内运行命令。
+在下面的 Bash 代码段中， `test.txt` 将 替换为符合排除规则的文件。 例如，如果已排除扩展， `.testing` 请将 替换为 `test.txt` `test.testing`。 如果要测试路径，请确保在此路径内运行命令。
 
 ```bash
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
@@ -118,7 +117,7 @@ mdatp threat allowed add --name [threat-name]
 mdatp threat list
 ```
 
-例如，若要 (与 EICAR 检测关联的威胁) 添加到允许列表中，请执行 `EICAR-Test-File (not a virus)` 以下命令：
+例如，若要 (`EICAR-Test-File (not a virus)` 与 EICAR 检测关联的威胁) 添加到允许列表中，请执行以下命令：
 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"

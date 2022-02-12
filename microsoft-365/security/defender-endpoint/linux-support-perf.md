@@ -13,15 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f7a3404ec0ae64e3dcdc4d6a3072e7fc2936646
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 14424f0cdff908fc641d6de1c22d25546473cc13
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172447"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766040"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的性能问题
 
@@ -34,7 +34,7 @@ ms.locfileid: "62172447"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-本文档提供有关如何使用可用诊断工具缩小与 Linux 上的 Defender for Endpoint 相关的性能问题的说明，以便了解并减少现有资源不足以及使系统进入此类情况的过程。 性能问题主要由一个或多个硬件子系统中的瓶颈引起，具体取决于系统资源利用率的配置文件。 有时，应用程序对磁盘 I/O 资源很敏感，并且可能需要更多的 CPU 容量，有时某些配置是非持久的，并且可能会触发太多新进程，并打开过多文件描述符。
+本文档提供有关如何使用可用诊断工具缩小与 Linux 上的 Defender for Endpoint 相关的性能问题的说明，以便了解并减少现有资源不足以及使系统进入此类情况的过程。 性能问题主要由一个或多个硬件子系统中的瓶颈引起，具体取决于系统资源利用率的配置文件。 有时，应用程序对磁盘 I/O 资源很敏感，并且可能需要更多的 CPU 容量，有时某些配置是不能持续配置的，并且可能会触发太多新进程，并打开过多文件描述符。
 
 根据你正在运行的应用程序和设备特征，在 Linux 上运行 Defender for Endpoint 时可能会遇到性能不优化的问题。 特别是，在短时间内访问许多资源（如 CPU、磁盘和内存）的应用程序或系统进程可能会导致 Linux 上的 Defender for Endpoint 中的性能问题。
 
@@ -46,7 +46,7 @@ ms.locfileid: "62172447"
 **适用于：**
 - 仅与 AV 相关的性能问题
 
-RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视你的设备并保护设备免受威胁。 它包含文件和进程监视以及其他启发。
+RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视和保护设备免受威胁。 它包含文件和进程监视以及其他启发。
 
 以下步骤可用于排查并缓解这些问题：
 
@@ -62,7 +62,7 @@ RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视�
     Configuration property updated
     ```
 
-    如果你的设备由你的组织管理，则管理员可以使用在 Linux 上设置 Defender for Endpoint 的首选项中的说明禁用 [实时保护](linux-preferences.md)。
+    如果你的设备由你的组织管理，则管理员可以使用在 Linux 上设置 [Defender for Endpoint 的](linux-preferences.md)首选项中的说明禁用实时保护。
 
     > [!NOTE]
     > 如果实时保护关闭时性能问题仍然存在，则问题根源可能是终结点检测和响应 (EDR) 组件。 在这种情况下，请按照本文使用 **Microsoft Defender for Endpoint Client Analyzer** 解决性能问题部分中的步骤操作。
@@ -72,7 +72,7 @@ RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视�
     > [!NOTE]
     > 此功能在版本 100.90.70 或更高版本中可用。
 
-    默认情况下，在 和 频道上 `Dogfood` 启用 `InsiderFast` 此功能。 如果使用的是其他更新通道，可以通过命令行启用此功能：
+    默认情况下，在 和 频道上启用`Dogfood``InsiderFast`此功能。 如果使用的是其他更新通道，可以通过命令行启用此功能：
 
     ```bash
     mdatp config real-time-protection-statistics --value enabled
@@ -84,7 +84,7 @@ RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视�
     mdatp health --field real_time_protection_enabled
     ```
 
-    验证条目 `real_time_protection_enabled` 是 `true` 。 否则，请运行以下命令以启用它：
+    验证条目 `real_time_protection_enabled` 是 `true`。 否则，请运行以下命令以启用它：
 
     ```bash
     mdatp config real-time-protection --value enabled
@@ -151,7 +151,7 @@ RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视�
     125  CrashPlanService 164
     ```
 
-    若要提高 Linux 上 Defender for Endpoint 的性能，请在行下找到编号最高的一个， `Total files scanned` 并添加排除项。 有关详细信息，请参阅在 Linux 上配置并验证 [Defender for Endpoint 的排除项](linux-exclusions.md)。
+    若要提高 Linux `Total files scanned` 上 Defender for Endpoint 的性能，请在行下找到编号最高的一个，并添加排除项。 有关详细信息，请参阅在 Linux 上配置并验证 [Defender for Endpoint 的排除项](linux-exclusions.md)。
 
     > [!NOTE]
     > 应用程序将统计信息存储在内存中，并仅跟踪自文件启动和启用实时保护以来的文件活动。 在实时保护关闭之前或期间启动的进程不计入在内。 此外，仅计算触发扫描的事件。
@@ -165,10 +165,10 @@ RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视�
 **适用于：**
 - 所有适用于终结点组件的可用 Defender（如 AV 和 EDR  
 
-Microsoft Defender for Endpoint Client Analyzer (MDECA) 可以收集跟踪、日志和诊断信息，以便解决 Linux 上[](/microsoft-365/security/defender-endpoint/onboard-configure)载入的设备的性能问题。
+Microsoft Defender for Endpoint Client Analyzer (MDECA) 可以收集跟踪、日志和诊断信息，以便解决 Linux 上载入的设备的性能问题。[](/microsoft-365/security/defender-endpoint/onboard-configure)
 
 > [!NOTE]
-> Microsoft 客户支持服务 (CSS) 会定期使用 Microsoft Defender for Endpoint 客户端分析器工具收集 (但不限于) IP 地址、可帮助解决 Microsoft Defender for Endpoint 可能遇到的问题的电脑名称。 有关我们的隐私声明详细信息，请参阅 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
+> Microsoft 客户支持服务 (CSS) 会定期使用 Microsoft Defender for Endpoint 客户端分析工具收集信息，例如 (但不限于) IP 地址、电脑名称，可帮助解决你在使用 Microsoft Defender for Endpoint 时可能遇到的问题。 有关我们的隐私声明详细信息，请参阅 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。
 
 ### <a name="requirements"></a>要求
 
@@ -194,7 +194,7 @@ Microsoft Defender for Endpoint Client Analyzer (MDECA) 可以收集跟踪、日
 > 
 > - 此外，该工具当前需要安装 Python 版本 3 或更高版本。
 >
-> - 如果在无法使用 Python 3 或提取 lxml 组件计算机上运行，可以下载没有任何要求的基于二进制版本的分析器 [：XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)
+> - 如果在无法使用 Python 3 或提取 lxml 组件计算机上运行，可以下载没有任何要求的基于二进制版本的分析器： [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)
 
 ### <a name="additional-syntax-help"></a>其他语法帮助：
 

@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bec8c6a2a329bff8e80c6822480ea03dd5db4898
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: ab3db2e2b64261ae00008aef448a214cd235bda9
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171073"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765548"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>在 macOS 设备上注册 Microsoft Defender for Endpoint 到 Jamf Pro
 
@@ -48,11 +47,11 @@ ms.locfileid: "61171073"
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>注册方法 1：注册邀请
 
-1. 在 Jamf Pro仪表板中，导航到注册 **邀请**。
+1. 在 Jamf Pro仪表板中，导航到"**注册邀请"**。
 
     ![配置设置 1 的图像。](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
-2. 选择 **+ 新建**。
+2. 选择 **" + 新建"**。
 
     ![自动生成的徽标描述的关闭。](images/b6c7ad56d50f497c38fc14c1e315456c.png)
 
@@ -82,7 +81,7 @@ ms.locfileid: "61171073"
 
     ![配置设置9 的图像。](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
-2. 按照 Computer [PreStage Enrollments 中的说明操作](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html)。
+2. 按照 Computer [PreStage Enrollments中的说明操作](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html)。
 
 ## <a name="enroll-macos-device"></a>注册 macOS 设备
 
@@ -96,7 +95,7 @@ ms.locfileid: "61171073"
 
 3. 选择 **允许** 从 JAMF 下载。
 
-    ![Jamf Pro注册3 的图像。](images/jamfpro-download.png)
+    ![Jamf Pro enrollment3 的图像。](images/jamfpro-download.png)
 
 4. 选择 **"** 继续"继续安装 MDM 配置文件。
 
@@ -104,7 +103,7 @@ ms.locfileid: "61171073"
 
 5. 选择 **"继续** "以安装 MDM 配置文件。
 
-    ![Jamf Pro注册5 的图像。](images/jamfpro-mdm-unverified.png)
+    ![Jamf Pro 5 的图像。](images/jamfpro-mdm-unverified.png)
 
 6. 选择 **"继续**  "完成配置。
 

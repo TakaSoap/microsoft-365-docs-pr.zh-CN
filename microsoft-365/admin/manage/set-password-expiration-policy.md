@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解管理员如何在 Microsoft 365 管理中心中针对你的企业、学校或非营利组织设置密码过期策略。
-ms.openlocfilehash: f7730e4dcadf8bb8743cd288ba5d38d45ad739b0
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 9ba871a166169a0125b68808c124b10802424dfd
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62523969"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765584"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 
@@ -46,11 +47,14 @@ ms.locfileid: "62523969"
 
 如果你是用户，则你不具有将密码设置为永不过期的权限。让你的工作单位或学校的技术支持人员为你执行本文中的步骤。
 
+> [!TIP]
+> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以在从加入到日常使用的各个方面全天候访问小型企业专家。
+
 ## <a name="set-password-expiration-policy"></a>设置密码过期策略
 
 如果希望用户密码在特定时段后过期，请按照以下步骤操作。
 
-1. 在 Microsoft 365 管理中心中，转到“**设置**” > “**组织设置**”，然后选择 <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">“**安全与隐私**”选项卡</a>。
+1. 在 Microsoft 365 管理中心中，转到“**组织设置**”下面的 <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">“**安全性和隐私**”选项卡</a>。
 
     只有全局管理员能看到“安全和隐私”选项。
   
@@ -63,7 +67,7 @@ ms.locfileid: "62523969"
 1. 在第二个框中键入通知用户其密码将过期的时间，然后选择“**保存**”。 选择从 1 到 30 的天数。
 
 > [!IMPORTANT]
-> Microsoft 365 管理中心或任何 Office 应用不再支持密码过期通知。
+> Office Web 应用或 [管理中心](https://portal.office.com) 已不再支持密码过期通知。
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>密码到期功能重要事项须知
   

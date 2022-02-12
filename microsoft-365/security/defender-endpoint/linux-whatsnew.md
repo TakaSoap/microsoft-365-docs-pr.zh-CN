@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 4091a5945bbd754fb78bb957c46bd2ea5636e64d
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 090c43ea1d2d9f2d158f94d1e509490c3faf4799
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265471"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767084"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -77,14 +76,14 @@ ms.locfileid: "62265471"
 - 从此版本开始，在通过命令行客户端触发的按需防病毒扫描期间检测到的威胁将自动修正。 扫描期间通过用户界面触发的威胁仍然需要手动操作。
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
-  - `--top N`：显示前 N 个 (仅在指定了 `--sort` 值时) 
+  - `--top N`：显示前 N 个 (仅在还指定了 `--sort` 值时) 
 - Bug 修复&性能改进
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0) 
 
 - Linux 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [适用于美国政府终结点客户的 Microsoft Defender](gov.md)。
 - 修复了在 LINUX 上使用 Microsoft Defender for Endpoint（在带一个使用有一个使用有一个更新的系统）的系统上导致操作系统挂起的问题
-- 性能改进& Bug 修复
+- 性能改进&修复的其他 Bug
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0) 
 
@@ -98,7 +97,7 @@ ms.locfileid: "62265471"
 
 ## <a name="1011853"></a>101.18.53
 
-- EDR Linux 版本现已[普遍可用](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
+- EDR Linux 版本现已[发布](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
 - 添加了一个新的命令行开关 (`--ignore-exclusions`) 自定义扫描过程中忽略 AV 排除 `mdatp scan custom` () 
 - 使用 `mdatp diagnostic create` 新的参数扩展 `--path [directory]` () ，该参数允许将诊断日志保存到其他目录
 - Bug 修复&性能改进

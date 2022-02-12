@@ -20,17 +20,17 @@ search.appverid:
 - MET150
 description: 了解如何使用 AllowSelfServicePurchase PowerShell cmdlet 打开或关闭自助服务购买。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 07/16/2021
-ms.openlocfilehash: 4c4272b532fd40f1062404716614f8a7ee4a5230
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.date: 12/15/2021
+ms.openlocfilehash: ebe01b9ed55b13d1d61ae1a59dca3bdb6373f285
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531893"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765776"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块
 
-**MSCommerce** PowerShell 模块现已在 [PowerShell 库上提供](https://aka.ms/allowselfservicepurchase-powershell-gallery)。 该模块包含 **AllowSelfServicePurchase** 的 **PolicyID** 参数值，可用于控制贵组织的用户是否可以进行自助购买。
+**MSCommerce** PowerShell 模块现已在 [PowerShell 库中可用](https://aka.ms/allowselfservicepurchase-powershell-gallery)。 该模块包含 **AllowSelfServicePurchase** 的 **PolicyID** 参数值，可用于控制贵组织的用户是否可以进行自助购买。
 
 您可以使用 **MSCommerce** PowerShell 模块：
 
@@ -49,7 +49,7 @@ ms.locfileid: "61531893"
 
 ## <a name="install-the-mscommerce-powershell-module"></a>安装 MSCommerce PowerShell 模块
 
-在设备上安装 **MSCommerce** PowerShell 模块一Windows 10，然后导入到您启动的每个 PowerShell 会话中。 从 [PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery)库下载 **MSCommerce** PowerShell 模块。
+在设备上安装 **MSCommerce** PowerShell 模块一Windows 10，然后导入到您启动的每个 PowerShell 会话中。 从 PowerShell 库下载 **MSCommerce** [PowerShell 模块](https://aka.ms/allowselfservicepurchase-powershell-gallery)。
 
 若要使用 **PowerShellGet** 安装 **MSCommerce** PowerShell 模块，请运行以下命令：
 
@@ -91,7 +91,7 @@ Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-下表列出了可用产品及其 **ProductId。**
+下表列出了可用产品及其 **ProductId**。
 
 | 产品 | ProductId |
 |-----------------------------|--------------|
@@ -108,10 +108,9 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | Windows 365 商业版 | CFQ7TTC0J203 |
 | Windows混合权益的 Windows 365 商业版 | CFQ7TTC0HX99 |
 
-## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>查看或设置 AllowSelfServicePurchase 的状态
+*这些 ID 已更改。 如果您之前使用旧 ID 阻止了产品，则会自动使用新 ID 阻止它们。 无需执行其他工作。
 
->[!NOTE] 
-> 这些 ID 已更改。 如果您之前使用旧 ID 阻止了产品，则会自动使用新 ID 阻止它们。 无需执行其他工作。
+## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>查看或设置 AllowSelfServicePurchase 的状态
 
 查看可供自助购买的产品列表后，可以查看或修改特定产品的设置。
 
@@ -135,7 +134,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>禁用 AllowSelfServicePurchase 的示例脚本
 
-以下示例将引导您完成如何导入 **MSCommerce** 模块、使用帐户登录、获取 Power Automate 的 **ProductId，** 然后禁用该产品的 **AllowSelfServicePurchase。**
+以下示例将引导您完成如何导入 **MSCommerce** 模块、使用帐户登录、获取 Power Automate 的 **ProductId**，然后禁用 **该产品的 AllowSelfServicePurchase**。
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -170,7 +169,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
  [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 ```
 
-若要了解更多信息，请参阅[如何启用 TLS 1.2。](/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+若要了解更多信息，请参阅 [如何启用 TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)。
 
 <!--
 ## Uninstall the MSCommerce module

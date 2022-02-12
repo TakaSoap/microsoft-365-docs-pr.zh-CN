@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 84009fbe386d19828cfa1393fb08bf8bef4c3444
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 1e235329fa57a703ab678049dd0da2d4f135de99
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464774"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767349"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Android 版 Microsoft Defender for Endpoint 的新增功能
 
@@ -41,7 +40,7 @@ Microsoft Defender for Endpoint 现已在游戏应用商店 **中作为 Microsof
 
 2022 年 1 月 25 日，我们宣布在 Android 和 iOS 上正式发布威胁和漏洞管理。 有关详细信息，请参阅此处 [的 techcommunity 文章](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663)。
 
-## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>2021 年 11 月 11 日即将对运行 Android 11 或更高版本的终结点 (Microsoft Defender) 
+## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>2021 年 11 月 2021 年 11 月 (适用于运行 Android 11 或更高版本的终结点的 Microsoft Defender) 
 
 发布版本：1.0.3501.0301 发布月：2021 年 11 月 Microsoft Defender for Endpoint 已发布 [Google](https://developer.android.com/distribute/play-policies#APILevel30) 升级到 Android API 30 所需的此更新。 对于运行 Android 11 或更高版本的设备[](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play)，此更改将提示用户寻找新存储权限的访问权限。 用户使用版本 1.0.3501.0301 或更高版本更新 Defender 应用后，需要接受此新的存储权限。 这将确保 Defender for Endpoint 的应用安全功能在没有任何中断的情况下正常运行。 有关详细信息，请查看以下部分。
 
@@ -57,7 +56,7 @@ Microsoft Defender for Endpoint 现已在游戏应用商店 **中作为 Microsof
 
 **准备工作**：
 
-通知用户 (支持人员 (如果适用) 当用户将 Defender for Endpoint 更新为内部版本 1.0.3501.0301 或更高版本后，系统提示用户需要接受新权限。 若要接受权限，用户应：
+通知用户和技术支持 (如适用) 当用户将 Defender for Endpoint 更新为生成 1.0.3501.0301 或更高版本后，系统提示用户需要接受新权限。 若要接受权限，用户应：
 
 1. 点击 Defender for Endpoint 应用内通知或打开 Defender for Endpoint 应用。 用户将看到一个屏幕，其中列出了所需的权限。 该权限旁边将缺少绿色存储标记。
 

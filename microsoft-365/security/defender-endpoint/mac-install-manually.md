@@ -12,13 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: 1fce7aa103de9fb90cafa88a286cbf33bc753456
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765116"
 ---
-
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上手动部署 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -33,7 +37,7 @@ ms.technology: mde
 本主题介绍如何手动在 macOS 上部署 Microsoft Defender for Endpoint。 要成功部署，需要完成以下所有步骤：
 
 - [下载安装和载入程序包](#download-installation-and-onboarding-packages)
-- [macOS (10.15 及早期版本的应用程序安装) ](#application-installation-macos-1015-and-older-versions)
+- [macOS (10.15 应用程序安装) ](#application-installation-macos-1015)
 - [macOS 11 (更高版本的应用程序安装) ](#application-installation-macos-11-and-newer-versions)
 - [客户端配置](#client-configuration)
 
@@ -43,7 +47,7 @@ ms.technology: mde
 
 ## <a name="download-installation-and-onboarding-packages"></a>下载安装和载入程序包
 
-从门户下载安装和载入Microsoft 365 Defender包：
+从以下门户下载安装和载入Microsoft 365 Defender包：
 
 1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>， go to **设置 > Endpoints > Device management > Onboarding**.
 2. 在页面的第 1 节中，将操作系统设置为 **macOS** ，将 Deployment 方法设置为 **本地脚本**。
@@ -54,7 +58,7 @@ ms.technology: mde
 
 5. 在命令提示符下，验证您是否具有这两个文件。
 
-## <a name="application-installation-macos-1015-and-older-versions"></a>macOS (10.15 及早期版本的应用程序安装) 
+## <a name="application-installation-macos-1015"></a>macOS 10.15 (应用程序安装) 
 
 若要完成此过程，你必须在设备上拥有管理员权限。
 
@@ -67,7 +71,7 @@ ms.technology: mde
     ![应用安装屏幕截图2。](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
-   > 系统将提示你允许从 Microsoft 安装驱动程序， ("系统扩展被阻止"或"安装已保留"或两者同时安装。 必须允许安装驱动程序。
+   > 系统将提示你允许安装来自 Microsoft 的驱动程序， ("系统扩展被阻止"或"安装已保留"或两者同时安装。 必须允许安装驱动程序。
 
    ![应用安装屏幕截图3。](images/mdatp-30-systemextension.png)
 
@@ -141,9 +145,9 @@ ms.technology: mde
 ## <a name="how-to-allow-full-disk-access"></a>如何：允许完全磁盘访问
 
 > [!CAUTION]
-> macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序在未经明确同意的情况下 (访问磁盘上的某些位置，如文档、下载、桌面) 等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+> macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序无法访问磁盘上的某些位置 (如文档、下载、桌面等) 未经明确同意。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
 
-1. 若要授予同意，请打开 **"系统首选项安全性** \> **&隐私****""** \> \> **完全磁盘访问"**。 单击锁定图标以在 (对话框底部进行更改) 。 选择"适用于终结点的 Microsoft Defender"。
+1. 若要授予同意，请打开 **"系统首选项**\>安全性 **&隐私""** \> **完全** \> **磁盘访问"**。 单击锁定图标以在 (对话框底部进行更改) 。 选择"适用于终结点的 Microsoft Defender"。
 
 2. 运行 AV 检测测试，验证设备是否正确载入并报告给服务。 对新载入的设备执行以下步骤：
 
@@ -173,7 +177,7 @@ ms.technology: mde
 
       系统可能会提示你：
 
-      > 是否要允许下载"mdatpclientanalyzer.blob.core.windows.net"？<br/>
+      > 是否允许从"mdatpclientanalyzer.blob.core.windows.net"下载？<br/>
       > 你可以更改哪些网站可以下载网站首选项中的文件。
 
 4. 单击" **允许"**。
@@ -213,7 +217,7 @@ ms.technology: mde
 
 12. 转到警报队列。
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="macOS 示例EDR显示严重性、类别、检测源和折叠操作菜单的测试警报。":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="macOS 示例EDR显示严重性、类别、检测源和折叠的操作菜单的测试警报。":::
 
     查看警报详细信息和设备时间线，并执行常规调查步骤。
 

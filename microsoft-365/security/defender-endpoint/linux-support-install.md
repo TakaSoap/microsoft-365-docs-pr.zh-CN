@@ -14,15 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d9b764425807f45f41f0be5c57ad872223e0c3f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a0b2a571be5f78818279a343d253709e05814908
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166298"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766005"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的安装问题
 
@@ -125,10 +124,10 @@ service mdatp status
 
     其中 `<systemd_path>` 适用于 `/lib/systemd/system` Ubuntu 和 Debian 分发，/usr/lib/systemd/system' 用于 Rhel、CentOS、Oracle 和 SLES。 然后重新运行步骤 2。
 
-4. 如果上述步骤不起作用，请检查是否安装了 SE 提供了实施模式。 如果是这样，请尝试将它设置为允许 (模式) 禁用模式。 可以通过在文件中将 参数设置为"许可"或"禁用"，然后 `SELINUX` `/etc/selinux/config` 重新启动来完成。 有关更多详细信息，请查看 se分页的"人名"页面。
+4. 如果上述步骤不起作用，请检查是否安装了 SE 提供了实施模式。 如果是，请尝试将此设置设置为 (模式) 禁用模式。 可以通过在文件中将 参数 `SELINUX` 设置为"许可"或"禁用 `/etc/selinux/config` "，然后重新启动来完成。 有关更多详细信息，请查看 se分页的"人名"页面。
 现在，请尝试使用步骤 2 重新启动 mdatp 服务。 在尝试配置更改并重新启动后，出于安全考虑，立即还原配置更改。
 
-5. 如果 `/opt` 目录是符号链接，请为 创建绑定装载 `/opt/microsoft` 。
+5. 如果 `/opt` 目录是符号链接，请为 创建绑定装载 `/opt/microsoft`。
 
 6. 确保守护程序具有可执行权限。
 
@@ -162,7 +161,7 @@ service mdatp status
 
 ## <a name="command-line-tool-mdatp-isnt-working"></a>命令行工具"mdatp"无法工作
 
-1. 如果运行命令行工具出错 `mdatp` ， `command not found` 请运行以下命令：
+1. 如果运行命令行工具 `mdatp` 出错， `command not found`请运行以下命令：
 
     ```bash
     sudo ln -sf /opt/microsoft/mdatp/sbin/wdavdaemonclient /usr/bin/mdatp

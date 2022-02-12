@@ -15,13 +15,13 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (MSP) ，Microsoft 365 Lighthouse查看审核日志。
-ms.openlocfilehash: a2c9efe88930ad0aae197a5cac26cf06b1386a53
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，了解如何查看审核日志。
+ms.openlocfilehash: 2044e61430ef26cf671340c02363658d54414f3b
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354932"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767480"
 ---
 # <a name="review-audit-logs"></a>查看审核日志
 
@@ -50,7 +50,7 @@ Microsoft 365 Lighthouse审核日志记录在 Lighthouse 或其他服务中生�
     - **日期范围** - 上一个月、周或日。
     - **租户** - 租户标记或客户租户名称。
     - **Activity** - Microsoft 365所采取操作对应的活动类型。 有关详细信息，请参阅活动类型表。
-    - **由** - Who启动操作。
+    - **启动者** - Who启动操作。
 
 3. 从列表中选择日志以查看包括请求正文在内的 **完整** 详细信息。
 
@@ -78,7 +78,7 @@ Microsoft 365 Lighthouse审核日志记录在 Lighthouse 或其他服务中生�
 |**restartDevice**                            | 设备                          | Restart                                                          | Microsoft Endpoint Manager |
 | **syncDevice**                               | 设备                          | 同步                                                             | Microsoft Endpoint Manager |
 | **rebootNow**                                | 威胁管理                | 重新启动                                                           | Microsoft Endpoint Manager |
-| **reprovision**                              | 租户                          | 重试预配                                               | Windows 365                |
+| **reprovision**                              | Windows 365     | 重试预配                                               | Windows 365                |
 | **windowsDefenderScanFull**                  | 威胁管理                | 完全扫描                                                       | Microsoft Endpoint Manager |
 | **windowsDefenderScan**                      | 威胁管理                | 快速扫描                                                       | Microsoft Endpoint Manager |
 | **windowsDefenderUpdateSignatures**          | 威胁管理                | 更新防病毒                                                | Microsoft Endpoint Manager |

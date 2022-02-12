@@ -14,13 +14,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: conceptual
-ROBOTS: 'noindex,nofollow'
+ROBOTS: noindex,nofollow
 ms.technology: mde
+ms.openlocfilehash: 0cdf60708e84b0972099330d48f19b22d26766ba
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766829"
 ---
-
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS 加泰罗尼亚语和较新版本的 macOS 的新配置文件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -32,7 +36,7 @@ ms.technology: mde
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-为了与 macOS 发展保持一致，我们正在准备利用系统扩展而非内核扩展的 macOS 更新上的 Microsoft Defender for Endpoint。 此更新仅适用于 macOS Catalina (10.15.4) 和较新版本的 macOS。
+为了与 macOS 发展保持一致，我们正在准备利用系统扩展而非内核扩展的 macOS 更新上的 Microsoft Defender for Endpoint。 此更新仅适用于 macOS 10.15.4 (macOS) macOS 版本。
 
 如果你通过 JAMF、Intune 或其他 MDM 解决方案 (托管环境中在 macOS 上部署了 Microsoft Defender for Endpoint) ，则必须部署新的配置文件。 如果不执行这些步骤，则会导致用户收到运行这些新组件的审批提示。
 
@@ -42,7 +46,7 @@ ms.technology: mde
 
 若要批准系统扩展，请创建以下有效负载：
 
-1. In **Computers > Configuration Profiles** select **Options > System Extensions**.
+1. 在 **"计算机>配置文件"中** ，选择"系统 **>选项"**。
 2. 从 **"系统扩展类型"****下拉列表中选择**"允许的系统扩展"。
 3. 将 **UBF8T346G9 用于** 团队 ID。
 4. 将以下捆绑包标识符添加到允许 **的系统扩展** 列表中：
@@ -308,8 +312,8 @@ sysext.xml: OK
 
 1. 在 Intune 中，打开 **"管理** \> **设备配置"**。 选择 **"管理** \> **配置文件** \> **""创建配置文件"**。
 2. 选择配置文件的名称。 Change **Platform=macOS** and **Profile type=Custom**. 选择“**配置**”。
-3. 打开配置文件并 **上传sysext.xml。** 此文件是在上一步骤中创建的。
-4. 选择“确定”。
+3. 打开配置文件， **然后上传sysext.xml**。 此文件是在上一步骤中创建的。
+4. 选择“**确定**”。
 
     ![Intune 中的系统扩展屏幕截图。](images/mac-system-extension-intune.png)
 

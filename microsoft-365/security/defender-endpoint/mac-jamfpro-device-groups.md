@@ -13,17 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d35cd0ecba75be5f6546840e5c80177f950b7193
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 3b9d6255320b5d702768614059bb9edff28be3b3
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171049"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767636"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>在 Jamf 设备组中为 macOS 设备组设置 Microsoft Defender Pro
+# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>在 Jamf 设备组中设置 macOS 设备组的 Microsoft Defender for Endpoint Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,19 +33,19 @@ ms.locfileid: "61171049"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-将设备组设置为类似于组策略组织 (OUS) Microsoft Endpoint Configuration Manager设备集合和 Intune 的设备组。
+将设备组设置为类似于组策略组织 (OUS) 、Microsoft Endpoint Configuration Manager 的设备集合和 Intune 的设备组。
 
-1. 导航到 **静态计算机组**。
+1. 导航到 **"静态计算机组"**。
 
-2. 选择"**新建"。** 
+2. 选择 **"新建"**。 
 
     ![Jamf Pro1 的图像。](images/jamf-pro-static-group.png)
 
-3. 提供显示名称 **并选择保存。**
+3. 提供显示名称并选择"保存 **"**。
 
     ![Jamf Pro2 的图像。](images/jamfpro-machine-group.png)
 
-4. 现在，你将在静态 **计算机组下看到 Contoso** **的计算机组**。
+4. 现在，你将在静态计算机 **组下看到 Contoso** **的计算机组**。
 
     ![Jamf Pro3 的图像。](images/contoso-machine-group.png)
 

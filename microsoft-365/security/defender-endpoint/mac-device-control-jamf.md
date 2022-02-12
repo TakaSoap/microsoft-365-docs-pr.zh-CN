@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 20579b54e0ce9e58c1466afbbda348730ffad839
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 74925625f6d004c1901756cde75310b345dd5747
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168518"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766025"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>JAMF 的设备控制策略示例
 
@@ -38,7 +37,7 @@ ms.locfileid: "61168518"
 
 ## <a name="restrict-access-to-all-removable-media"></a>限制访问所有可移动媒体
 
-以下示例限制访问所有可移动媒体。 请注意 `none` 在策略的顶层应用的权限，这意味着将禁止所有文件操作。
+以下示例限制访问所有可移动媒体。 `none`请注意在策略的顶层应用的权限，这意味着将禁止所有文件操作。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -63,7 +62,7 @@ ms.locfileid: "61168518"
 
 ## <a name="set-all-removable-media-to-be-read-only"></a>将所有可移动媒体设置为只读
 
-以下示例将所有可移动媒体配置为只读。 请注意在策略的顶层应用的权限，这意味着将不允许执行所有 `read` 写入和执行操作。
+以下示例将所有可移动媒体配置为只读。 `read`请注意在策略的顶层应用的权限，这意味着将不允许执行所有写入和执行操作。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -88,7 +87,7 @@ ms.locfileid: "61168518"
 
 ## <a name="disallow-program-execution-from-removable-media"></a>禁止从可移动媒体执行程序
 
-以下示例演示如何禁止从可移动媒体执行程序。 记下 `read` `write` 在策略的顶级应用的 和 权限。
+以下示例演示如何禁止从可移动媒体执行程序。 `read`记下在`write`策略的顶级应用的 和 权限。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -114,7 +113,7 @@ ms.locfileid: "61168518"
 
 ## <a name="restrict-all-devices-from-specific-vendors"></a>限制来自特定供应商的所有设备
 
-以下示例将限制来自特定供应商的所有设备， (由 和 `fff0` `4525`) 。 所有其他设备将不受限制，因为策略顶级定义的权限列出了所有可能的权限 (读取、写入和执行) 。
+以下示例限制来自特定供应商的所有设备， (标识 `fff0` `4525` 和) 。 所有其他设备将不受限制，因为策略的顶级定义的权限列出了所有可能的权限 (读取、写入和执行) 。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -158,7 +157,7 @@ ms.locfileid: "61168518"
 
 ## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>限制由供应商 ID、产品 ID 和序列号标识的特定设备
 
-以下示例限制由供应商 ID、产品 ID 和序列号标识的两个 `fff0` `1000` 特定 `04ZSSMHI2O7WBVOA` 设备 `04ZSSMHI2O7WBVOB` 。 在策略的所有其他级别，权限包括所有可能 (读取、写入和执行) ，这意味着所有其他设备将不受限制。
+以下示例限制由供应商 ID、产品 ID `fff0``1000`和序列号标识的两个特定设备`04ZSSMHI2O7WBVOA``04ZSSMHI2O7WBVOB`。 在策略的所有其他级别，权限包括所有可能的值 (读取、写入和执行) ，这意味着所有其他设备将不受限制。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

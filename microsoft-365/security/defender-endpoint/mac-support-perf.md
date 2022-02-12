@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ad99fe597a9c445d1c7d0dcd07b1dcd19a5ac7d5
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 1d39bd46afae270fc7ac2a9fab8b5f4a2b4aaeb2
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170561"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765980"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的性能问题
 
@@ -39,7 +38,7 @@ ms.locfileid: "61170561"
 
 本主题提供了一些常规步骤，可用于缩小与 macOS 上的 Microsoft Defender for Endpoint 相关的性能问题。
 
-RTP (RTP) 是 macOS 上 Microsoft Defender for Endpoint 的一项功能，可持续监视和保护设备免受威胁。 它包含文件和进程监视以及其他启发。
+RTP 实时 (RTP) 是 macOS 上的 Microsoft Defender for Endpoint 的一项功能，可持续监视你的设备并保护设备免受威胁。 它包含文件和进程监视以及其他启发。
 
 根据正在运行的应用程序和设备特征，在 macOS 上运行 Microsoft Defender for Endpoint 时可能会遇到性能不优化的问题。 特别是，在短时间内访问许多资源的应用程序或系统进程可能会导致 macOS 上的 Microsoft Defender for Endpoint 中的性能问题。
 
@@ -49,7 +48,7 @@ RTP (RTP) 是 macOS 上 Microsoft Defender for Endpoint 的一项功能，可持
 
       如果你的设备不是由你的组织管理的，可以使用以下选项之一禁用实时保护：
 
-    - 从用户界面。 在 macOS 上打开 Microsoft Defender for Endpoint 并导航到"**管理设置"。**
+    - 从用户界面。 在 macOS 上打开 Microsoft Defender for Endpoint 并导航到" **管理设置"**。
 
       ![管理实时保护屏幕截图。](images/mdatp-36-rtp.png)
 
@@ -59,11 +58,11 @@ RTP (RTP) 是 macOS 上 Microsoft Defender for Endpoint 的一项功能，可持
       mdatp config real-time-protection --value disabled
       ```
 
-      如果你的设备由你的组织管理，则管理员可以使用在 macOS 上设置 Microsoft Defender for Endpoint 的首选项中的说明禁用 [实时保护](mac-preferences.md)。
+      如果你的设备由你的组织管理，则管理员可以使用在 [macOS 上设置 Microsoft Defender for Endpoint 的](mac-preferences.md)首选项中的说明禁用实时保护。
 
       如果实时保护关闭时性能问题仍然存在，则问题的原因可能是终结点检测和响应组件。 在这种情况下，请联系客户支持部门，了解进一步说明和缓解措施。
 
-2. 打开 Finder 并导航到 **应用程序** \> **实用程序**。 打开 **活动监视器** 并分析哪些应用程序正在使用您系统上的资源。 典型示例包括软件更新和编译器。
+2. 打开 Finder 并导航到 **"应用程序实用程序** \> **"**。 打开 **活动监视器** 并分析哪些应用程序正在使用您系统上的资源。 典型示例包括软件更新和编译器。
 
 3. 若要查找触发最多扫描的应用程序，可以使用 Defender for Endpoint 在 Mac 上收集实时统计信息。
 
@@ -98,7 +97,7 @@ RTP (RTP) 是 macOS 上 Microsoft Defender for Endpoint 的一项功能，可持
       ```
 
       > [!NOTE]
-      > 使用 **--output json** (请注意双) 短划线可确保输出格式已准备好进行分析。
+      > Using **--output json** (note the double dash) ensures that the output format is ready for parsing.
       此命令的输出将显示所有进程及其关联的扫描活动。
 
 4. 在 Mac 系统上，使用 命令下载 python high_cpu_parser.py 示例：
@@ -156,4 +155,4 @@ RTP (RTP) 是 macOS 上 Microsoft Defender for Endpoint 的一项功能，可持
       >
 6. 在 macOS 上为终结点配置 Microsoft Defender，排除导致性能问题的进程或磁盘位置，并重新启用实时保护。
 
-     有关详细信息 [，请参阅在 macOS](mac-exclusions.md) 上配置和验证 Microsoft Defender for Endpoint 的排除项。
+     有关详细信息 [，请参阅在 macOS 上配置和验证 Microsoft Defender for Endpoint](mac-exclusions.md) 的排除项。

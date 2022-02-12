@@ -14,15 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fe979da9c3f1144e595f31048689cbb6f6f4e959
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 71c689143feca3d8c87d219a55c4ea42b4f9d950
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166850"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767591"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>部署 Linux 版 Microsoft Defender for Endpoint
 
@@ -44,7 +43,7 @@ Microsoft 会定期发布软件更新，以提高性能、安全性和提供新�
 > ```
 
 
-适用于终结点的 Microsoft Defender 的公开发布功能是等效的，无论用于部署 (Beta (预览体验成员) 、预览版 (External) 、Current (Production) ) 的更新频道。
+无论用于部署 (Beta (预览体验成员) 、预览版 (External) 、Current (Production) ) 的部署更新频道，Microsoft Defender for Endpoint 功能都等效。
 
 
 若要手动更新 Linux 上的 Defender for Endpoint，请执行以下命令之一：
@@ -66,3 +65,6 @@ sudo zypper update mdatp
 ```bash
 sudo apt-get install --only-upgrade mdatp
 ```
+
+> [!IMPORTANT]
+> 集成 Microsoft Defender for Endpoint 和 Defender for Cloud 时，mdatp 代理将默认自动接收更新。

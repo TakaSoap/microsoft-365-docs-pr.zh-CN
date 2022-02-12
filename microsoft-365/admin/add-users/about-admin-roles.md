@@ -19,24 +19,28 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - adminvideo
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 例如服务管理员等管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。
-ms.openlocfilehash: ff4c4053760ad8f4810ea1c92a0d7ba4ecbaa61d
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 5bea496ca24f3aef97a780d48c74b84aaa46176b
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128120"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765452"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
 Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 将这些角色分配给组织中的用户。每个管理员角色都映射到常用的业务功能，并授予组织中的用户在管理中心执行特定任务的权限。
 
 通过 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>，可以管理 Azure AD 角色和 Microsoft Intune 角色。 然而，这些角色是 Azure 门户和 Intune 管理中心中可用角色的子集。
+
+> [!TIP]
+> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以在从加入到日常使用的各个方面全天候访问小型企业专家。
 
 ## <a name="watch-what-is-an-admin"></a>观看：什么是管理员？
 
@@ -77,7 +81,7 @@ Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 <a
 |---------|---------|
 |帐务管理员     |   向购买用户分配帐单管理员角色，管理订阅和服务请求，并监视服务运行状况。 <br><br> 帐单管理员可以：<br> - 管理帐单的各个方面 <br> - 在 Azure 门户创建和管理支持票证 <br>  |
 |Exchange 管理员     |   将 Exchange 管理员角色分配给需要查看和管理用户电子邮件邮箱、Microsoft 365 组和 Exchange Online 的用户。 <br><br> Exchange 管理员还可以：<br> - 恢复用户邮箱中的已删除项目 <br> - 设置“代理发送”和“代表发送”代理 <br>  |
-|全局管理员     |   向需要全局访问 Microsoft Online Services 中的大多数管理功能和数据的用户分配全局管理员角色。 <br><br> 为太多的用户提供全局访问权限会带来安全风险，我们建议你设置 2 至 4 名全局管理员。 <br><br> 只有全局管理员才能执行以下操作：<br> - 为所有用户重置密码 <br> - 添加和管理域 <br> <br> **注意：** 已注册 Microsoft Online Services 的人员将自动成为全局管理员。 |
+|全局管理员     |   向需要全局访问 Microsoft Online Services 中的大多数管理功能和数据的用户分配全局管理员角色。 <br><br> 为太多的用户提供全局访问权限会带来安全风险，我们建议你设置 2 至 4 名全局管理员。 <br><br> 只有全局管理员才能执行以下操作：<br> - 为所有用户重置密码 <br> - 添加和管理域 <br> - 取消阻止另一个全局管理员 <br> <br> **注意：** 已注册 Microsoft Online Services 的人员将自动成为全局管理员。 |
 |全局读取者    |   向需要在可供全局管理员查看的管理中心中查看管理员功能和设置的用户分配全局读取者角色。全局读取者管理员无法编辑任何设置。   |
 |组管理员     |   向需要跨管理中心（包括 Microsoft 365 管理中心和 Azure Active Directory 门户）管理所有组设置的用户分配组管理员角色。 <br><br> 组管理员可以：<br> - 创建、编辑、删除和还原 Microsoft 365 组 <br> - 创建和更新组的创建、过期和命名策略 <br> - 创建、编辑、删除和还原 Azure Active Directory 安全组| 
 |支持管理员     |   为需要执行以下操作的用户分配支持管理员角色：<br> - 重置密码 <br> - 强制用户注销 <br> - 管理服务请求 <br> - 监视服务运行状况 <br> <br> **注意**：支持管理员只能帮助非管理员用户和分配有以下角色的用户：目录读取者、来宾邀请者、支持管理员、消息中心读取者和报表阅读人员。      |

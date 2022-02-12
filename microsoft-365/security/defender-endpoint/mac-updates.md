@@ -12,12 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: ceff362daeb2054b6037ea0eecbeafbb9dbed4f3
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767624"
 ---
-
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -63,7 +67,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 > [!IMPORTANT]
 > 在 Microsoft AutoUpdate 版本 4.29 之前，频道具有不同的名称：
 >
-> - `Beta` 已 (`InsiderFast` 预览体验成员 Fast) 
+> - `Beta` 被命名为 `InsiderFast` (Insider Fast) 
 > - `Preview` 被命名为 (`External` Insider Slow) 
 > - `Current` 已命名 `Production`
 
@@ -79,7 +83,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |**域**|`com.microsoft.autoupdate2`|
 |**键**|ChannelName|
 |**数据类型**|String|
-|**可能的值**|Beta <p> Preview <p> Current|
+|**可能的值**|Beta <p> 预览 <p> Current|
 |||
 
 > [!WARNING]

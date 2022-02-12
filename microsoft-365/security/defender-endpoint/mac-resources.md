@@ -12,12 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: 5c8580e1bc0869f28da1b23a813bba9d2f3c612e
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767216"
 ---
-
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的资源
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -114,7 +118,7 @@ ms.technology: mde
 |配置|打开/关闭防病毒被动模式|`mdatp config passive-mode --value [enabled/disabled]`|
 |配置|配置按需扫描的并行度|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |配置|在安全智能更新后打开/关闭扫描|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
-|配置|仅按需扫描 (/关闭存档) |`mdatp config scan-archives --value [enabled/disabled]`|
+|配置|仅按需扫描 (/关闭存档扫描) |`mdatp config scan-archives --value [enabled/disabled]`|
 |诊断|更改日志级别|`mdatp log level set --level [error/warning/info/verbose]`|
 |诊断|生成诊断日志|`mdatp diagnostic create --path [directory]`|
 |运行状况|检查产品的运行状况|`mdatp health`|
@@ -164,4 +168,4 @@ echo "source /Applications/Microsoft\ Defender.app/Contents/Resources/Tools/mdat
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>适用于终结点的 Microsoft Defender 门户信息
 
-[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801) 的新功能现已在 Microsoft Defender for Endpoint 博客上提供在适用于终结点安全中心的 Microsoft Defender 中预期内容的详细指导。
+[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801) 的新功能现已到达 Microsoft Defender for Endpoint 博客，提供有关 Microsoft Defender for Endpoint 安全中心中预期内容的详细指南。

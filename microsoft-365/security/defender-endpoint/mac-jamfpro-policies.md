@@ -1,6 +1,6 @@
 ---
 title: 在 Jamf 中设置 macOS 上的 Microsoft Defender for Endpoint Pro
-description: 了解如何在 Jamf 中设置 macOS 上的 Microsoft Defender for Endpoint Pro
+description: 了解如何在 Jamf Pro macOS 上设置 Microsoft Defender for Endpoint 策略
 keywords: 策略， microsoft， defender， Microsoft Defender for Endpoint， mac， 安装， 部署， 卸载， intune， jamfpro， macos， catalina， mojave， high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -12,12 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: 981e2afc2bfe3ff27bf5be492c98f96229a6deab
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766880"
 ---
-
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>在 Jamf 中设置 macOS 上的 Microsoft Defender for Endpoint Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -28,7 +32,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-此页面将指导你完成在 Jamf 中设置 macOS 策略所需的Pro。
+此页面将指导你完成在 Jamf Pro 中设置 macOS 策略所需的Pro。
 
 需要执行以下步骤：
 
@@ -78,11 +82,11 @@ ms.technology: mde
    - 分发方法：自动安装
    - 级别：计算机级别
 
-4.  导航到"**自定义&应用程序设置**，然后选择"**Upload** > **添加"**。
+4.  导航到"**应用程序&自定义设置**"页，然后选择"**Upload** > **添加"**。
 
     ![配置应用和自定义设置的图像。](images/jamfpro-mac-profile.png)
 
-5. 选择 **Upload文件 (PLIST 文件**) ，然后在首选项 **域中** 输入：`com.microsoft.wdav.atp`。
+5. Select **Upload File (PLIST file)** then in **Preference Domain** enter： `com.microsoft.wdav.atp`.
 
     ![jamfpro plist 上载文件的图像。](images/jamfpro-plist-upload.png)
 
@@ -106,7 +110,7 @@ ms.technology: mde
 
     ![目标的图像。](images/jamfpro-targets.png)
 
-10. 选择“**保存**”。
+10. 选择“保存”。
 
     ![部署目标计算机的图像。](images/jamfpro-deployment-target.png)
 
@@ -124,7 +128,7 @@ ms.technology: mde
 
 请注意，你必须使用精确作为`com.microsoft.wdav`**首选项域**，Microsoft Defender for Endpoint 仅使用此名称并`com.microsoft.wdav.ext`加载其托管设置！
 
-`com.microsoft.wdav.ext` (您喜欢使用 GUI 方法，但也需要配置尚未添加到架构的设置时，版本可能在极少数情况下使用。) 
+`com.microsoft.wdav.ext` (当您更喜欢使用 GUI 方法，但还需要配置尚未添加到架构的设置时，版本可能在极少数情况下使用。) 
 
 ### <a name="gui-method"></a>GUI 方法
 
@@ -134,7 +138,7 @@ ms.technology: mde
     curl -o ~/Documents/schema.json https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/schema/schema.json
     ```
 
-2. 在"计算机 ->配置文件"下创建新的配置文件，在"常规"选项卡上输入 **以下** 详细信息：
+2. 在"计算机 -> 配置文件"下创建新的配置文件，在"常规"选项卡上输入 **以下** 详细信息：
 
     ![新配置文件。](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
@@ -144,7 +148,7 @@ ms.technology: mde
     - 级别：计算机级别 (默认) 
     - 分发方法：使用默认 (自动) 
 
-3. 向下滚动到"应用程序&自定义设置"选项卡，选择 **"外部** 应用程序"，单击"添加"，并使用"自定义架构作为源"以用于首选项域。
+3. 向下滚动到"&自定义设置"选项卡，选择 **"外部** 应用程序"，单击"添加"，并使用"自定义架构作为源"以用于首选项域。
 
     ![添加自定义架构。](images/4137189bc3204bb09eed3aabc41afd78.png)
 
@@ -152,11 +156,11 @@ ms.technology: mde
 
     ![Upload架构。](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 
-5. 可以在下面的首选项域属性下看到所有受支持的 Microsoft Defender for Endpoint **配置设置**。 单击 **"添加/删除** 属性"以选择要管理的设置，然后单击 **"确定"** 保存更改。  (设置未选择将不包含在托管配置中，最终用户将能够配置其计算机中的这些设置) 
+5. 可以在下面的首选项域属性下看到所有受支持的 Microsoft Defender for Endpoint **配置设置**。 单击 **"添加/删除** 属性"以选择要管理的设置，然后单击 **"确定"** 保存更改。  (设置未选择的用户不会包含在托管配置中，最终用户将能够配置其计算机中的这些设置。) 
 
     ![选择托管设置。](images/817b3b760d11467abe9bdd519513f54f.png)
 
-6. 将设置的值更改为所需值。 可以单击 **"详细信息"** 获取特定设置的文档。  (可以单击 **Plist 预览** 来检查 plist 的配置外观。 单击 **"表单编辑器** "返回到可视编辑器。) 
+6. 将设置的值更改为所需值。 可以单击 **"详细信息"** 获取特定设置的文档。  (可以单击 **"Plist 预览** "检查 plist 的配置外观。 单击 **"表单编辑器** "返回到可视编辑器。) 
 
     ![更改设置值。](images/a14a79efd5c041bb8974cb5b12b3a9b6.png)
 
@@ -177,7 +181,7 @@ ms.technology: mde
     ![配置设置 - 已完成。](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
 Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这些新设置将添加到架构中，并且新版本将发布到 Github。
-只需下载更新的架构、编辑现有配置文件和编辑"自定义"选项卡上的"应用程序&**编辑** 设置架构。
+你只需下载更新的架构、编辑现有配置文件和编辑"自定义"选项卡上的"应用程序&**编辑** 设置架构。
 
 ### <a name="legacy-method"></a>旧方法
 
@@ -359,7 +363,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
     >
     >![配置设置 intune 文件上载的图像。](images/8e69f867664668796a3b2904896f0436.png)
 
-11. 选择“**保存**”。
+11. 选择“保存”。
 
     ![配置设置的图像 保存映像。](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
@@ -406,14 +410,14 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
         - **捆绑包 ID**： `com.microsoft.wdav.tray`
         - **严重警报：** 单击" **禁用"**
         - **通知**：单击 **"启用"**
-        - **横幅警报类型**：选择 **"包含**" *和"临时 (默认)*
+        - **横幅警报类型**：选择 **"包含"**  *和"临时 (默认)*
         - **锁屏界面上的通知：** 单击" **隐藏"**
         - **通知中心中的通知**： **单击显示**
         - **锁屏提醒应用图标**：单击 **显示**
 
         ![配置设置 mdatpmdav 通知托盘的图像。](images/7f9138053dbcbf928e5182ee7b295ebe.png)
 
-    - 按 **Tab 通知**，**再** 单击一次，向下滚动到"新建通知"**设置**
+    - 选项卡 **通知**，单击 **"再** 添加一次"，向下滚动到"新建通知 **设置**
         - **捆绑包 ID**： `com.microsoft.autoupdate2`
         - 将其余设置配置为与上述值相同的值
 
@@ -501,7 +505,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
 
     ![配置设置设置的图像。](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-11. 选择“**保存**”。
+11. 选择“保存”。
 
     ![配置设置 saveimg 的图像。](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
@@ -560,7 +564,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
 
     - 在"访问"下：设置为 **"允许"**
 
-7. 选择 **"** (保存"，而不是右下角) 。
+7. 选择 **"** (不是右下角的) 。
 
     ![配置设置的图像保存图像。](images/6de50b4a897408ddc6ded56a09c09fe2.png)
 
@@ -582,7 +586,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
 
     - 在"访问"下：设置为 **"允许"**
 
-11. 选择 **"** (保存"，而不是右下角) 。
+11. 选择 **"** (不是右下角的) 。
 
     ![配置设置 tcc epsext image2 的图像。](images/tcc-epsext-entry2.png)
 
@@ -600,7 +604,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
 
 15. 选择“**添加**”。
 
-16. 选择“**保存**”。
+16. 选择“保存”。
 
 17. 选择“完成”。
 
@@ -608,7 +612,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
 
     ![配置设置 donimg2 的图像。](images/6c8b406ee224335a8c65d06953dc756e.png)
 
-或者，你可以下载 [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) 并将其上载到 JAMF 配置文件，如使用 Jamf 配置文件部署自定义[配置文件Pro|方法 2：Upload配置文件为 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
+或者，你可以下载 [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) 并将其上载到 JAMF 配置文件，如使用 Jamf 配置部署自定义[配置文件Pro|方法 2：Upload配置文件为 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ## <a name="step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint"></a>步骤 7：批准适用于终结点的 Microsoft Defender 内核扩展
 
@@ -654,7 +658,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
 
     ![配置设置的图像添加映像。](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 选择“**保存**”。
+9. 选择“保存”。
 
     ![配置设置保存映像的图像。](images/0add8019b85a453b47fa5c402c72761b.png)
 
@@ -709,7 +713,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
 
    ![配置设置 addima 的图像。](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 选择“**保存**”。
+9. 选择“保存”。
 
    ![配置设置 sysext 作用域的图像。](images/sysext-scope.png)
 
@@ -721,7 +725,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
 
 作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft 365 Defender 门户。 以下策略允许网络扩展执行此功能。
 
-这些步骤适用于 macOS 10.15 或 (卡) 或更高版本。
+这些步骤适用于加泰罗尼亚语或 (macOS 10.15) macOS 10.15。
 
 1. 在 Jamf Pro仪表板中，选择"**计算机**"，然后选择"**配置文件"**。
 
@@ -737,7 +741,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
     - 选项卡 **内容筛选器**：
         - **筛选器名称**：Microsoft Defender 内容筛选器
         - **标识符**： `com.microsoft.wdav`
-        - 将 **"服务地址**、组织 **、****用户名**、**密码****、证书** (**包括***"保留为空)*
+        - 将 **"服务地址**、**组织、****用户名**、**密码****、证书** (**包括***"保留为空)*
         - **筛选顺序**：检查器
         - **套接字筛选器**： `com.microsoft.wdav.netext`
         - **套接字筛选器指定要求**： `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
@@ -762,7 +766,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
 
     ![配置设置 adim 的图像。](images/0dde8a4c41110dbc398c485433a81359.png)
 
-7. 选择“**保存**”。
+7. 选择“保存”。
 
     ![配置设置 savimg netextscop 的图像。](images/netext-scope.png)
 
@@ -770,7 +774,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
 
     ![配置设置图像 netextfinal。](images/netext-final.png)
 
-或者，你可以下载 [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) 并将其上载到 JAMF 配置文件，如使用 Jamf 配置部署自定义[配置文件Pro|方法 2：Upload配置文件为 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
+或者，你可以下载 [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) 并将其上载到 JAMF 配置文件，如使用 Jamf 部署自定义[配置文件Pro|方法 2：Upload配置文件为 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>步骤 10：在 macOS 上使用 Microsoft Defender for Endpoint 计划扫描
 
@@ -820,7 +824,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
 
      ![配置设置限制选项卡的图像。](images/56dac54634d13b2d3948ab50e8d3ef21.png)
 
-8. 选择“**保存**”。 程序包将上载到 Jamf Pro。
+8. 选择“保存”。 程序包将上载到 Jamf Pro。
 
    ![配置设置包 upl jamf pro 的图像。](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -847,9 +851,9 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
 
     ![配置设置重复签入的图像。](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
-13. 选择“**保存**”。
+13. 选择“保存”。
 
-14. 选择 **"配置>程序包"**。
+14. 选择 **">配置"**。
 
     ![配置设置包配置的图像。](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
 
@@ -857,7 +861,7 @@ Microsoft Defender for Endpoint 会随着时间的推移添加新设置。 这�
 
     ![配置设置 MDATP 和 MDA 添加的图像。](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-16. 选择“**保存**”。
+16. 选择“保存”。
 
     ![配置设置的图像avimg。](images/9d6e5386e652e00715ff348af72671c6.png)
 

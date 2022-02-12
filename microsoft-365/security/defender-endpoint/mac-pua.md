@@ -1,6 +1,6 @@
 ---
 title: 使用 Mac 上的 Microsoft Defender for Endpoint 检测并阻止可能不需要的应用程序
-description: 检测并阻止使用 macOS (Microsoft Defender for Endpoint) PUA 中可能不需要的应用程序。
+description: 检测并阻止使用 macOS (Microsoft Defender for Endpoint) PUA 应用程序。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， pua， pus
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 23838ce85603abfb213e2ae0afdcb65ee6ba2ae3
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: a0fb8e19dd573da67936892c81cd515b463a7cba
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170965"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765740"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>使用 macOS 上的 Microsoft Defender for Endpoint 检测并阻止可能不需要的应用程序
 
@@ -34,13 +33,13 @@ ms.locfileid: "61170965"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-macOS 上的 Microsoft Defender for Endpoint (PUA) 保护功能可能不需要的应用程序可以检测和阻止网络中终结点上的 PUA 文件。
+macOS 上的 Microsoft Defender (PUA) 保护功能中可能不需要的应用程序可以检测和阻止网络中终结点上的 PUA 文件。
 
 这些应用程序不被视为病毒、恶意软件或其他类型的威胁，但可能会对终结点执行对性能或使用产生不利影响的操作。 PUA 还可以指信誉不佳的应用程序。
 
 这些应用程序会增加网络受到恶意软件感染的风险，导致恶意软件感染更难识别，并且可能会浪费 IT 资源来清理应用程序。
 
-## <a name="how-it-works"></a>如何工作
+## <a name="how-it-works"></a>运作方式
 
 macOS 上的 Microsoft Defender for Endpoint 可以检测和报告 PUA 文件。 在阻止模式下配置时，PUA 文件将移动到隔离区。
 
@@ -52,7 +51,7 @@ macOS 上的 Microsoft Defender for Endpoint 可以检测和报告 PUA 文件。
 
 - **关闭**：PUA 保护已禁用。
 - **审核**：PUA 文件在产品日志中报告，但不在Microsoft 365 Defender中。 不会向用户显示任何通知，产品不会采取任何操作。
-- **阻止**：PUA 文件在产品日志和发布门户Microsoft 365 Defender报告。 用户会收到通知，产品会采取操作。
+- **阻止**：PUA 文件在产品日志和发布门户中Microsoft 365 Defender报告。 用户会收到通知，产品会采取操作。
 
 > [!WARNING]
 > 默认情况下，PUA 保护在 **审核模式下配置** 。
@@ -69,7 +68,7 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>使用管理控制台配置 PUA 保护：
 
-在企业中，你可以从管理控制台（如 JAMF 或 Intune）配置 PUA 保护，这类似于配置其他产品设置的方式。 有关详细信息，请参阅在 macOS 上设置 Microsoft Defender for Endpoint 的首选项主题[中的威胁类型](mac-preferences.md)设置部分。 [](mac-preferences.md#threat-type-settings)
+在企业中，你可以从管理控制台（如 JAMF 或 Intune）配置 PUA 保护，这类似于配置其他产品设置的方式。 有关详细信息，请参阅在 macOS [](mac-preferences.md#threat-type-settings) 上设置 [Microsoft Defender for Endpoint 的首选项主题中的威胁类型](mac-preferences.md)设置部分。
 
 ## <a name="related-topics"></a>相关主题
 

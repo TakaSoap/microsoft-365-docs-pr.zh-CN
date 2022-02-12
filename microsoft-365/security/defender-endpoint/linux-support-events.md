@@ -13,16 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 82c1418d58679fef1b59e51b41052e4dfe584635
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5a17f94e3d26c08c0f6e0ca358778a65189cf6a5
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168531"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766006"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警报问题
 
@@ -33,9 +32,9 @@ ms.locfileid: "61168531"
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-本文提供了一些常规步骤，以减少事件门户中缺少Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">警报</a>。
+本文提供了一些常规步骤，以减少事件门户中缺失Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">警报</a>。
 
-在 **设备上** 正确安装 Microsoft Defender for Endpoint 后 _，将在门户_ 中生成设备页面。 可以在设备页面的时间线选项卡或高级搜寻页面中查看所有记录的事件。 本节解决缺失某些或所有预期事件的情况。
+在设备上正确安装 **Microsoft Defender for Endpoint** 后 _，将在门户_ 中生成设备页面。 可以在设备页面的时间线选项卡或高级搜寻页面中查看所有记录的事件。 本节解决缺失某些或所有预期事件的情况。
 例如，如果缺少 _所有 CreatedFile_ 事件。
 
 ## <a name="missing-network-and-login-events"></a>缺少网络和登录事件
@@ -73,7 +72,7 @@ Microsoft Defender for Endpoint 利用 `audit` linux 中的框架跟踪网络和
     service auditd start
     ```
 
-**在 SLES** 系统上，SYSCALL 审核默认情况下可能处于禁用状态，并可以说明 `auditd` 缺少事件。
+**在 SLES** 系统上，SYSCALL `auditd` 审核默认情况下可能处于禁用状态，并可以说明缺少事件。
 
 1. 若要验证 SYSCALL 审核是否未禁用，请列出当前的审核规则：
 
@@ -87,11 +86,11 @@ Microsoft Defender for Endpoint 利用 `audit` linux 中的框架跟踪网络和
     -a task, never
     ```
 
-    审核规则位于 `/etc/audit/rules.d/audit.rules` 。
+    审核规则位于 。`/etc/audit/rules.d/audit.rules`
 
 ## <a name="missing-file-events"></a>缺少文件事件
 
-文件事件通过框架 `fanotify` 收集。 如果缺少某些或所有文件事件，请确保在设备上启用并且 `fanotify` 文件系统受 [支持](microsoft-defender-endpoint-linux.md#system-requirements)。
+文件事件通过框架 `fanotify` 收集。 如果缺少某些或所有 `fanotify` 文件事件，请确保在设备上启用并且文件系统受 [支持](microsoft-defender-endpoint-linux.md#system-requirements)。
 
 列出计算机上具有以下项的文件系统：
 

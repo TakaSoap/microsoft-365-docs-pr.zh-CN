@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 84fee7a24c23fb9b7e0b7ba7151538ea79409ce2
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: ff963c9bad09657899e9b163dacce46e6a246c6a
+ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464876"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62520242"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -42,8 +42,7 @@ ms.locfileid: "62464876"
 | Azure 信息保护|AipDiscover、AipSensitivityLabelAction、AipProtectionAction、AipFileDeleted、AipHeartBeat |
 | 通信合规性|ComplianceSuperVisionExchange|
 | 内容资源管理器|LabelContentExplorer|
-| 数据丢失防护 (DLP)|ComplianceDLPSharePoint、ComplianceDLPExchange|
-| Defender for Endpoint|DLPEndpoint、MSDEResponseActions、MSDEGeneralSettings、MSDEIndicatorsSettings、MSDERolesSettings|
+| 数据丢失防护 (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
 | Dynamics 365|CRM|
 | 电子数据展示|发现、AeD|
 | 精确数据匹配|MipExactDataMatch|

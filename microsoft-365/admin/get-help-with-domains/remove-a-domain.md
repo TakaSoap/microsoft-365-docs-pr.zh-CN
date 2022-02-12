@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -24,18 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 了解如何从域中删除旧域Microsoft 365将用户和组移动到另一个域或取消订阅。
-ms.openlocfilehash: 3b6bd67c8678d4be2b483865ee76574fd727cda5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 875858804912ab75d0a5a0bab45c9bb1614c82ca
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370004"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765152"
 ---
 # <a name="remove-a-domain"></a>删除域
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。
 
-是否要删除域，因为你想要将其添加到不同的订阅Microsoft 365计划中？ 或者只是想取消订阅？ 可[更改计划或订阅](../../commerce/subscriptions/switch-to-a-different-plan.md)，也可[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。
+是否要删除域，因为你想要将其添加到不同的订阅Microsoft 365？ 或者只是想取消订阅？ 可[更改计划或订阅](../../commerce/subscriptions/switch-to-a-different-plan.md)，也可[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。
+
+> [!TIP]
+> 如果需要有关本主题中的步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助 Business Assist，你和员工在业务增长（从载入到日常使用）时，可以全天候访问小型企业专家。
 
 ### <a name="step-1-move-users-to-another-domain"></a>步骤 1：将用户移动到另一个域
 
@@ -53,11 +57,11 @@ ms.locfileid: "61370004"
 
 ::: moniker-end
 
-2. 选择 **"用户**  >  **""活动用户"。**
+2. 选择 **"用户** > **""活动用户"**。
 
 3. 选中要移动的所有用户的名称旁边的框。
 
-4. 在页面顶部，然后选择"更改 **域"。**
+4. 在页面顶部，然后选择"更改 **域"**。
 
 5. 在" **更改域** "窗格中，选择其他域。
 
@@ -77,9 +81,9 @@ ms.locfileid: "61370004"
 
 ::: moniker-end
 
-2. 转到 **"用户** \> **""** 活动用户"，然后从列表中选择你的帐户。
+2. 转到 **"用户** \> **"**"活动用户"，然后从列表中选择你的帐户。
 
-3. 在" **帐户"** 选项卡上， **选择"管理用户名**"，然后选择其他域。
+3. 在" **帐户"** 选项卡上，选择 **"管理用户名**"，然后选择其他域。
 
 4. At the top， select your account name， then select **Sign Out**.
 
@@ -91,17 +95,17 @@ ms.locfileid: "61370004"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到组 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>页面。
+1. 在管理中心，转到组 **组**\>页面。<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">中心</a>中，转到组 > **组** 页面。
+1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">中心</a>，转到组 **组**>页面。
 
 ::: moniker-end
 
-2. 选择组名称，然后在"电子邮件地址"下的"常规 **"** 选项卡上 **，选择"主**"，选择"编辑 **"。**
+2. 选择组名称，然后在"电子邮件地址"下的"常规 **"** 选项卡上， **选择**"主要"，选择"编辑 **"**。
 
 3. 使用下拉列表选择另一个域。
 
@@ -117,19 +121,19 @@ ms.locfileid: "61370004"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到"设置 **域** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">"</a> 页面。
+1. 在管理中心，转到"设置 **域"**\>页面。<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a>
 
 ::: moniker-end
 
 2. 在 **"域** "页面上，选择要删除的域。
 
-3. 在右侧窗格中，选择"删除 **"。**
+3. 在右侧窗格中，选择"删除 **"**。
 
-4. 按照任何其他提示，然后选择关闭 **。**
+4. 按照任何其他提示，然后选择"关闭 **"**。
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>删除域需要多长时间？
 
-如果域未在很多位置（如安全组、通讯组列表、用户和组）中引用，Microsoft 365删除域可能需要 Microsoft 365 5 分钟。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
+如果域未在很多位置（如安全组、通讯组列表、用户和通讯组）引用，Microsoft 365删除域可能需要 5 分钟Microsoft 365。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
 
 如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain)。
 

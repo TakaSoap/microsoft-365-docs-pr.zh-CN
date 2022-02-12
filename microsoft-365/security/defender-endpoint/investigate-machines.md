@@ -13,15 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 185e0009fda70f78ca93f4bc72b2fb844508c111
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: dee6cec53ef6a3412d110837037f1de48fc6e92f
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217898"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765572"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>调查 Microsoft Defender 终结点设备列表中的设备
 
@@ -58,7 +58,7 @@ ms.locfileid: "61217898"
 ![设备视图的图像。](images/specific-device.png)
 
 > [!NOTE]
-> 由于产品限制，设备配置文件在确定"上次查看"时间范围时不会考虑所有网络证据 (如设备页面上所见，) 。
+> 由于产品限制，设备配置文件在确定"上一次查看"时间范围时不会考虑所有网络证据 (如设备页面上所见，) 。
 > 例如，"设备"页中的"上次查看时间"值可能会显示较旧的时间范围，即使计算机时间线中提供了最新的警报或数据。
 
 ## <a name="device-details"></a>设备详细信息
@@ -81,7 +81,7 @@ ms.locfileid: "61217898"
 
 可以在操作中心、特定设备页或特定文件页中执行响应操作。
 
-若要详细了解如何在设备上采取操作，请参阅 [在设备上执行响应操作](respond-machine-alerts.md)。
+若要详细了解如何在设备上采取措施，请参阅 [在设备上执行响应操作](respond-machine-alerts.md)。
 
 有关详细信息，请参阅调查 [用户实体](investigate-user.md)。
 
@@ -97,7 +97,7 @@ ms.locfileid: "61217898"
 
 ### <a name="alerts"></a>警报
 
-警报 **选项卡** 提供与设备关联的警报列表。 此列表是警报队列的筛选版本，显示[](alerts-queue.md)警报、严重性 (高、中、低、信息) 、队列 (中的状态、新、正在进行、已解决) 、分类 (未设置、false 警报、真警报) 、调查状态、警报类别、解决警报的人和上次活动。 您还可以筛选警报。
+**警报选项卡** 提供与设备关联的警报列表。 此列表是警报队列的筛选版本，显示[](alerts-queue.md)警报、严重性 (高、中、低、信息) 、队列 (中的状态、新、正在进行、已解决) 、分类 (未设置、false 警报、真正的警报) 、调查状态、警报类别、解决警报的人和上次活动。 您还可以筛选警报。
 
 ![与设备相关的警报的图像。](images/alerts-device.png)
 
@@ -112,7 +112,7 @@ ms.locfileid: "61217898"
 时间线还使您能够有选择地深入到给定时段内发生的事件。 你可以查看所选时段内在设备上发生的事件的时间序列。 若要进一步控制视图，可以按事件组进行筛选或自定义列。
 
 > [!NOTE]
-> 若要显示防火墙事件，你需要启用审核策略，请参阅审核 [筛选平台连接](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)。
+> 若要显示防火墙事件，需要启用审核策略，请参阅审核 [筛选平台连接](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)。
 >
 > 防火墙涵盖以下事件：
 >
@@ -138,7 +138,7 @@ ms.locfileid: "61217898"
 - 检测到的活动威胁 - 威胁检测在威胁运行时发生
 - 修正失败 - 尝试修正检测到的威胁已调用，但失败
 - 修正成功 - 已停止并清理检测到的威胁
-- 用户绕过的警告 - Windows Defender SmartScreen 警告已消除，并已被用户覆盖
+- 用户绕过的警告 - Windows Defender SmartScreen 警告已取消，并已被用户覆盖
 - 检测到可疑脚本 - 发现有潜在恶意脚本正在运行
 - 警报类别 - 如果事件导致生成警报，则警报类别 ("横向移动"，例如) 警报
 
@@ -152,7 +152,7 @@ ms.locfileid: "61217898"
 
 ### <a name="security-recommendations"></a>安全性建议
 
-**安全建议** 从 Microsoft Defender 针对终结点的威胁和& [漏洞管理功能生成](tvm-dashboard-insights.md) 。 选择建议将显示一个面板，您可以在其中查看相关详细信息，如建议说明和与不实施建议相关的潜在风险。 有关详细信息 [，请参阅安全](tvm-security-recommendation.md) 建议。
+**安全建议** 从 Microsoft Defender 针对终结点的威胁和漏洞& [生成](tvm-dashboard-insights.md) 。 选择建议将显示一个面板，您可以在其中查看相关详细信息，如建议说明和与不实施建议相关的潜在风险。 有关详细信息 [，请参阅安全](tvm-security-recommendation.md) 建议。
 
 ![安全建议选项卡的图像。](images/security-recommendations-device.png)
 
@@ -169,7 +169,7 @@ ms.locfileid: "61217898"
 ![已发现漏洞选项卡的图像。](images/discovered-vulnerabilities-device.png)
 
 ### <a name="missing-kbs"></a>缺少 KB
-" **缺少的 KB"** 选项卡列出了设备缺少的安全更新。
+" **缺少的 KB** "选项卡列出了设备缺少的安全更新。
 
 ![缺少 kbs 选项卡的图像。](images/missing-kbs-device.png)
 

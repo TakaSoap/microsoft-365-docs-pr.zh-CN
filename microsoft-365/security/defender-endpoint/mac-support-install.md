@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 52fdf612ac86c1a0cc99220793461507f86a6fe3
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 5f56e28d472cb3fdf8dd089effcd4beac6e42374
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170505"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766652"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的安装问题
 
@@ -41,7 +40,7 @@ ms.locfileid: "61170505"
 
 对于手动安装，安装向导的"摘要"页显示"安装过程中出错。 安装程序遇到导致安装失败的错误。 请与软件发布者联系寻求帮助。" 对于 MDM 部署，它显示为常规安装失败。
 
-虽然我们不会向最终用户显示确切的错误，但我们在 中日志文件安装进度。 `/Library/Logs/Microsoft/mdatp/install.log` 每个安装会话都附加到此日志文件。 只能用于 `sed` 输出上次安装会话：
+尽管我们不会向最终用户显示确切的错误，但我们在 中日志文件安装进度。`/Library/Logs/Microsoft/mdatp/install.log` 每个安装会话都附加到此日志文件。 只能用于 `sed` 输出上次安装会话：
 
 ```bash
 sed -n 'H; /^preinstall com.microsoft.wdav begin/h; ${g;p;}' /Library/Logs/Microsoft/mdatp/install.log
@@ -54,7 +53,7 @@ correlation id=CB509765-70FC-4679-866D-8A14AD3F13CC
 preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 ```
 
-本示例中，实际原因的前缀为 `[ERROR]` 。
+本示例中，实际原因的前缀为 `[ERROR]`。
 安装失败，因为不支持这些版本之间的降级。
 
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP 安装日志缺失或未更新

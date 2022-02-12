@@ -1,0 +1,70 @@
+- name: Microsoft 365 商业高级版
+  items:
+    - name: 概述
+      href: index.md
+    - name: 获取 Microsoft 365 商业版
+      href: get-microsoft-365-business-premium.md
+    - name: 获取 Microsoft 365 for Campaigns
+      href: get-microsoft-365-campaigns.md
+    - name: Microsoft 365 如何保护你的数据
+      href: m365-campaigns-users.md
+- name: 设置和登录
+  items:
+    - name: 概述
+      href: microsoft-365-campaigns-setup-overview.md
+    - name: 注册
+      href: m365-campaigns-sign-up.md
+    - name: 设置
+      href: ../business/set-up.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: 登录
+      href: m365-campaigns-sign-in.md
+    - name: 自定义登录页
+      href: m365-customize-sign-in.md
+    - name: 添加用户
+      href: ../admin/add-users/add-users.md?bc=%2fmicrosoft-365%2fcampaigns%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json
+- name: 加强安全保护
+  items:
+    - name: 概述
+      href: m365-campaigns-security-overview.md
+    - name: 保护管理员帐户
+      href: m365-campaigns-protect-admin-accounts.md
+    - name: 保护对数据的访问
+      href: m365-campaigns-conditional-access.md
+    - name: 抵御恶意软件和其他威胁
+      href: m365-campaigns-increase-protection.md
+- name: 所有员工的设备设置
+  items:
+    - name: 设置多重身份验证
+      href: m365-campaigns-multifactor-authentication.md
+    - name: 设置移动设备
+      href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: 保护 PC 和 Mac
+      href: m365-campaigns-protect-pcs-macs.md
+    - name: 设置托管 Windows 设备
+      href: ../business/set-up-windows-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: 保护所有员工的电子邮件
+  items:
+    - name: 抵御网络钓鱼和其他攻击
+      href: m365-campaigns-phishing-and-attacks.md
+    - name: 发送加密电子邮件
+      href: send-encrypted-email.md
+- name: 安全地协作和共享
+  items:
+    - name: 创建协作团队
+      href: create-teams-for-collaboration.md
+    - name: 设置会议
+      href: set-up-meetings.md
+    - name: 共享文件和视频
+      href: share-files-and-videos.md
+    - name: 为你的组织创建通信网站
+      href: create-communications-site.md
+- name: 重置或删除设备中的市场活动数据
+  items:
+    - name: 删除市场活动或业务数据
+      href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: 将设备重置为出厂设置
+      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: 安全事件管理
+  items:
+    - name: 响应遭到入侵的电子邮件帐户
+      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json

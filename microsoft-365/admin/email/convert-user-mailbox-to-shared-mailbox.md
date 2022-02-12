@@ -17,22 +17,26 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '了解如何将专用邮箱转换为多个人员（而不是一个人）可以访问的共享邮箱。 '
-ms.openlocfilehash: 45ed21e1638bfee2d13ee59193a542bd4f70e05b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: a1b82d744cc43f8119e9819537467133f2bae17c
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422263"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766604"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 
 将用户的邮箱转换为共享邮箱时，将保留所有现有电子邮件和日历。 现在，它才在一个共享邮箱中，多个人员将能够访问它，而不是一个人。 稍后，可以将共享邮箱转换回专用 (用户) 邮箱。
+
+> [!TIP]
+> 如果需要有关本主题中的步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助 Business Assist，你和员工在业务增长（从载入到日常使用）时，可以全天候访问小型企业专家。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -40,7 +44,7 @@ ms.locfileid: "61422263"
 
 - 要转换的用户邮箱需要分配有许可证，然后才能将其转换为共享邮箱。 否则，将看不到用于转换邮箱的选项。 如果已删除许可证，请重新添加它，以便转换邮箱。 将邮箱转换为共享邮箱后，可以从用户帐户中删除许可证。
 
-- 共享邮箱可以具有多达 50 GB 的数据，而无需为其分配许可证。 要保留的数据超过此限制，需要为其分配许可证。 你可能需要删除一大 (电子邮件，例如，从共享邮箱) 包含附件的电子邮件，以便缩小邮箱大小，以便可以删除许可证。
+- 共享邮箱可以具有多达 50 GB 的数据，而无需为其分配许可证。 要保留的数据超过此限制，需要为其分配许可证。 你可能需要从共享邮箱中删除一 (大的电子邮件，例如) 附件的电子邮件，以便你可以删除许可证。
 
 - 不要删除旧用户帐户。 这是定位共享邮箱所需的。 如果已删除用户帐户，请参阅转换已删除 [用户的邮箱](#convert-the-mailbox-of-a-deleted-user)。
 
@@ -50,11 +54,11 @@ ms.locfileid: "61422263"
  
 1. 转到经典<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理中心</a>。
 
-2. 选择 **"收件人** \> **""邮箱"。**
+2. 选择 **"收件人"** \> **"邮箱"**。
 
-3. 选择用户邮箱。 在 **"转换为共享邮箱"下，** 选择"**转换"。**
+3. 选择用户邮箱。 在 **"转换为共享邮箱"下，** 选择"转换 **"**。
 
-4. 如果邮箱小于 50 GB，可以从用户中删除许可证，[](../manage/remove-licenses-from-users.md)并停止付费。 不要删除用户帐户。 共享邮箱需要它作为定位标记。 如果要转换离开组织的员工的邮箱，应执行其他步骤以确保他们不再登录。 有关详细信息，请参阅从公司[中删除以前的Microsoft 365。](../add-users/remove-former-employee.md)
+4. 如果邮箱小于 50 GB，可以从用户中删除许可证，并停止付费[](../manage/remove-licenses-from-users.md)。 不要删除用户帐户。 共享邮箱需要它作为定位标记。 如果要转换离开组织的员工的邮箱，应执行其他步骤以确保他们不再登录。 有关详细信息，请参阅从[公司中删除以前的Microsoft 365](../add-users/remove-former-employee.md)。
     
 > [!NOTE]
 > 无需在邮箱转换期间重置用户密码。 但是，如果未重置密码，则 **完成** 邮箱转换后，原始用户名和密码将继续工作。
@@ -68,11 +72,11 @@ ms.locfileid: "61422263"
 
 1. 转到管理<a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank">Exchange中心</a>。
 
-2. 选择 **"收件人** \> **""邮箱"。**
+2. 选择 **"收件人"** \> **"邮箱"**。
 
-3. 选择用户邮箱。 在"**邮箱"** 选项卡的"更多 **操作"下**，选择 **"转换为共享邮箱"。**
+3. 选择用户邮箱。 在" **邮箱"** 选项卡的"更多 **操作"下**，选择 **"转换为共享邮箱"**。
 
-4. 如果邮箱小于 50 GB，可以从用户中删除许可证，[](../manage/remove-licenses-from-users.md)并停止付费。 不要删除用户帐户。 共享邮箱需要它作为定位标记。 如果要转换离开组织的员工的邮箱，应执行其他步骤以确保他们不再登录。 请参阅从[公司中删除以前的Microsoft 365。](../add-users/remove-former-employee.md)
+4. 如果邮箱小于 50 GB，可以从用户中删除许可证，并停止付费[](../manage/remove-licenses-from-users.md)。 不要删除用户帐户。 共享邮箱需要它作为定位标记。 如果要转换离开组织的员工的邮箱，应执行其他步骤以确保他们不再登录。 请参阅[从公司中删除以前的Microsoft 365](../add-users/remove-former-employee.md)。
     
 > [!NOTE]
 > 无需在邮箱转换期间重置用户密码。 但是，如果未重置密码，则 **完成** 邮箱转换后，原始用户名和密码将继续工作。
@@ -88,7 +92,7 @@ ms.locfileid: "61422263"
 
 1. [还原用户帐户](../add-users/restore-user.md)。
 
-2. 请确保已Microsoft 365许可证。
+2. 请确保分配Microsoft 365许可证。
 
 3. 重置用户密码。
     
@@ -98,15 +102,15 @@ ms.locfileid: "61422263"
     
 7. 将成员添加到共享邮箱。
 
-## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>将共享邮箱转换回用户的专用 () 邮箱
+## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>将共享邮箱转换回用户的专用 (邮箱) 邮箱
 
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
    
-2. 选择 **"收件人** \> **""共享"。**
+2. 选择 **"收件人"**\>"**共享"**。
 
-3. 选择共享邮箱。 在 **"转换为常规邮箱"下，** 选择"**转换"。**
+3. 选择共享邮箱。 在 **"转换为常规邮箱"下，** 选择" **转换"**。
 
-4. 返回到管理中心。 在 **"用户**"下，选择与旧共享邮箱关联的用户帐户。 将许可证分配给帐户，然后重置密码。
+4. 返回到管理中心。 在 **"** 用户"下，选择与旧共享邮箱关联的用户帐户。 将许可证分配给帐户，然后重置密码。
 
    设置邮箱需要几分钟时间，但之后，打算使用该帐户的人就可以了。 登录后，他们会看到共享邮箱中过去的电子邮件和日历项目。
 

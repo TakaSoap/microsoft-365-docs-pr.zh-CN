@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 235a0a79a4d388cd90668697677fe09934ae176c
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 2a297813fbde94499f2d239627be6c33c153e8b0
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217754"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765104"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的事件
 
@@ -47,7 +47,7 @@ ms.locfileid: "61217754"
 
 ## <a name="analyze-incident-details"></a>分析事件详细信息
 
-单击事件以查看"事件 **"窗格**。 选择 **"打开事件页面** "以查看事件详细信息和相关信息， (警报、设备、调查、证据、图形) 。
+单击事件以查看"事件 **"窗格**。 选择 **"打开事件页面** "，查看事件详细信息和相关信息 (警报、设备、调查、证据、图形) 。
 
 ![事件详细信息的图像1。](images/atp-incident-details.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "61217754"
 
 ![警报选项卡的图像，包含事件详细信息页面，显示警报在事件中链接在一起的原因。](images/atp-incidents-alerts-reason.png)
 
-还可以管理警报并查看警报元数据以及其他信息。 有关详细信息，请参阅调查 [警报](investigate-alerts.md)。
+还可以管理警报并查看警报元数据以及其他信息。 有关详细信息，请参阅 [调查警报](investigate-alerts.md)。
 
 ### <a name="devices"></a>设备
 

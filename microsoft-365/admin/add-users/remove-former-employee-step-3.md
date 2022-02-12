@@ -1,5 +1,5 @@
 ---
-title: 步骤 3 - 将前员工的电子邮件转发给其他员工或转换为共享邮箱
+title: 步骤 3 - 擦除和阻止前员工的移动设备
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,50 +20,32 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - m365solution-removeemployee
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 按照以下步骤将前员工的电子邮件转发给其他员工或转换为共享邮箱。
-ms.openlocfilehash: 5f52bb9d3c77d492d5a80a19cef99282b78e8b79
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 按照以下步骤阻止以前员工的移动设备访问。
+ms.openlocfilehash: 8d6423611b1bf228fbfd5bf13037ade4033013a0
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161650"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765968"
 ---
-# <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>步骤 3 - 将前员工的电子邮件转发给其他员工或转换为共享邮箱
+# <a name="step-3---wipe-and-block-a-former-employees-mobile-device"></a>步骤 3 - 擦除和阻止前员工的移动设备
 
-在此步骤中，将前员工的电子邮件地址分配给另一名员工，或将用户的邮箱转换为共享邮箱。
+如果以前的员工拥有组织电话，可以使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> 管理中心擦除和阻止该设备，以便从设备中删除所有组织数据，并且它无法再连接到 Office 365。 如果您的组织使用基本移动性和安全性来管理移动设备，您可以使用基本移动性和安全性擦除和阻止这些设备。
 
-## <a name="convert-former-employees-mailbox-to-a-shared-mailbox"></a>将以前员工的邮箱转换为共享邮箱
+## <a name="wipe-mobile-device-using-the-exchange-admin-center"></a>使用管理中心擦除Exchange移动设备
 
-将用户的邮箱转换为共享邮箱时，将保留所有现有电子邮件和日历。 现在，它才在一个共享邮箱中，多个人员将能够访问它，而不是一个人。 如果需要，可以在以后将共享 (转换为) 邮箱中的用户。
-
-- 创建共享邮箱是一种较为便宜的方法，因为 **只要邮箱小于 50 GB** ，就不必支付许可证费用。如果超过 50 GB 就需向其分配许可证。
-- 如果将邮箱转换为共享邮箱，则所有的旧电子邮件也仍然可用。这会占用大量空间。
-- 如果设置了电子邮件转发，则 *只会向当前* 员工发送发送给前员工的新电子邮件。
-
-按照以下步骤操作，了解如何 [将用户的邮箱转换为共享邮箱](../email/convert-user-mailbox-to-shared-mailbox.md)。
-
-## <a name="forward-a-former-employees-email-to-another-employee"></a>将前员工的电子邮件转发给另一名员工
-
- > [!IMPORTANT]
- > 如果要设置电子邮件转发或共享邮箱，则最后不要删除以前员工的帐户。 需要保留该帐户以定位电子邮件转发或共享邮箱。
-
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-2. 选择要阻止的员工的姓名，然后选择"邮件 **"** 选项卡。
-3. 在 **"电子邮件转发"下**，选择 **"管理电子邮件转发"。**
-4. 启用" **转发发至此邮箱的所有电子邮件** "。 在 **"转发地址** "框中，键入要获取电子邮件的当前员工的电子邮件地址。
-5. 选择“**保存**”。
-6. 注意，切勿删除以前员工的帐户。
+1. 转到"Exchange管理中心">**"收件人** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">"" 邮箱"</a>。
+1. 选择用户，在" **移动设备"下**，选择" **查看详细信息"**。
+1. 在"**移动设备详细信息"** 页上的"移动设备"下，选择移动设备，选择 **"擦除数据**![""设备"](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)，然后选择"阻止 **"**。
+1. 选择“保存”。
+   > [!TIP]
+   > 请确保从本地 Blackberry Enterprise服务中删除或禁用用户。 还应禁用该用户的所有 BlackBerry 设备。 有关如何禁用用户的具体步骤，可参阅 BlackBerry(R) 商务云服务管理指南。
 
 ## <a name="related-content"></a>相关内容
 
-[在 Outlook 中打开和使用共享邮箱](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd)
-
-[访问其他人的邮箱](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081)
-
-[Exchange管理中心Exchange Online](/exchange/exchange-admin-center)
-
-[经理其他人的邮件和日历项目](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)
+[Exchange Online 中的 Exchange 管理中心](/exchange/exchange-admin-center)

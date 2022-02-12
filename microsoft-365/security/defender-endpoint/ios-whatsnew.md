@@ -13,15 +13,14 @@ manager: sunasing
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: d413bea8dc59bbfaa5b424bbbf421d7e12558fcb
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 098ea7ee2934ac811035414b295a71012edc88e2
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295375"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766904"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -50,7 +49,7 @@ iOS 上的 Microsoft Defender for Endpoint 现在具有监督 iOS/iPadOS 设备�
 ## <a name="1123250104"></a>1.1.23250104
 
 - 性能优化 - 使用此版本测试电池性能，并告诉我们您的反馈。
-- **适用于已注册的 iOS** 设备的零接触载入 - 借助此版本，已添加通过 Intune Microsoft Endpoint Manager (注册的设备的零接触) 预览。 有关详细信息，请参阅本文档 [，](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) 详细了解安装和配置。
+- **适用于已注册的 iOS** 设备的零接触载入 - 借助此版本，已添加通过 Microsoft Endpoint Manager (Intune) 的零接触板载预览。 有关详细信息，请参阅本文档 [，](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) 详细了解安装和配置。
 - **隐私控制** - 配置网络钓鱼警报报告的隐私控制。 有关详细信息，请参阅配置 [iOS 功能](ios-configure-features.md)。
 
 ## <a name="1123010101"></a>1.1.23010101
@@ -76,7 +75,7 @@ iOS 上的 Microsoft Defender for Endpoint 现在具有监督 iOS/iPadOS 设备�
 ## <a name="1115140101"></a>1.1.15140101
 
 - **越狱检测** 为预览版。 有关详细信息，请参阅基于 [设备风险信号设置条件访问策略](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)。
-- **对于通过 Intune** 应用程序注册的设备，VPN 配置文件的自动设置Microsoft Endpoint Manager (预览) 。 有关详细信息，请参阅为已注册的 [iOS 设备自动设置 VPN 配置文件](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
+- **对于已注册的设备，VPN** 配置文件的自动设置通过 Intune Microsoft Endpoint Manager (预览) 。 有关详细信息，请参阅为已注册的 [iOS 设备自动设置 VPN 配置文件](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
 - Microsoft Defender ATP 产品名称现已更新到应用商店中的 Microsoft Defender for Endpoint。
 - 改进了登录体验。
 - Bug 修复。

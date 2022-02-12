@@ -9,23 +9,23 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: fd0eae34c5ca48168587a3e495d34ab329cb05a3
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 959c557501fe1232dd92f9c501f95b2f3faa37bc
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034529"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765956"
 ---
 # <a name="shared-devices"></a>共享设备
 
-Microsoft 托管桌面允许你在"共享设备模式"中注册设备，类似于用户提供的共享设备[Microsoft Intune。](/mem/intune/configuration/shared-user-device-settings) 此模式下的设备已针对用户不绑定到单个服务台且经常更改设备的情况进行了优化，通常是一线工作人员（如银行服务台或员工）。 你可以在此模式下将Microsoft 托管桌面[配置文件](profiles.md)应用到设备。 在此模式下注册的设备有一些重要区别：
+Microsoft 托管桌面允许你在"共享设备模式"中注册设备，类似于由用户提供的[Microsoft Intune。](/mem/intune/configuration/shared-user-device-settings) 此模式下的设备已针对用户不绑定到单个服务台且经常更改设备的情况进行了优化，通常是一线工作人员（如银行服务台或员工）。 你可以在此模式下将Microsoft 托管桌面[配置文件](profiles.md)应用到设备。 在此模式下注册的设备有一些重要区别：
 
 - [设备存储](#device-storage) 已针对共享用户进行了优化。
 - [将删除](#deletion-of-inactive-accounts) 非活动帐户。
 - [默认情况下](#guest-accounts) 不支持来宾帐户。
-- [Microsoft 365](#microsoft-365-apps-for-enterprise)企业许可的应用程序已针对共享设备进行了优化。
+- [Microsoft 365](#microsoft-365-apps-for-enterprise)企业版许可的应用程序已针对共享设备进行了优化。
 
-由于你在注册到 Microsoft 托管桌面 时选择使用共享设备模式，因此如果你稍后要更改此模式，必须取消注册并再次注册它。
+由于你在注册到 Microsoft 托管桌面 时选择使用共享设备模式，因此，如果你稍后要更改此模式，必须取消注册并再次注册它。
 
 ## <a name="when-to-use-shared-device-mode"></a>何时使用共享设备模式
 
@@ -47,12 +47,12 @@ Microsoft 托管桌面允许你在"共享设备模式"中注册设备，类似�
 
 无论你或合作伙伴是否正在处理注册，都可以选择使用共享设备模式。
 
-如果你要自己注册设备，请按照"自己注册新设备"中的 [](../get-started/register-devices-self.md)步骤操作，然后将它们添加到"现代工作区设备-共享 **设备** 模式"组中。
+如果你要自己注册设备，请按照"自己注册新设备"中的 [](../get-started/register-devices-self.md)步骤操作，然后将其添加到"现代 **工作区设备 - 共享设备** 模式"组中。
 
 > [!WARNING]
 > 不要尝试将任何现有Microsoft 托管桌面设备转换为共享设备模式，只需将它们添加到此组。 应用的策略可能会导致OneDrive文件永久丢失。
 
-如果你有合作伙伴注册设备，请按照合作伙伴注册设备的步骤中的步骤操作，但 [](../get-started/register-devices-partner.md)向组标记追加 **-Shared，** 如下表所示：
+如果你有合作伙伴注册设备，请按照合作伙伴注册设备的步骤中的步骤操作，但 [](../get-started/register-devices-partner.md)向组标记追加 **-Shared**，如下表所示：
 
 |设备配置文件  |标准模式 (组标记)   |组标记 (共享设备模式)   |
 |---------|---------|---------|
@@ -64,7 +64,7 @@ Microsoft 托管桌面允许你在"共享设备模式"中注册设备，类似�
 
 ### <a name="device-storage"></a>设备存储
 
-共享设备的用户必须将其数据备份到云，以便可以跟踪到其他设备。 在共享设备模式下注册设备后，请确保OneDrive文件按需和已知文件夹[重定向功能](/onedrive/redirect-known-folders)。 [](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) 此方法将每个用户配置文件对设备存储的影响降至最低。 如果可用磁盘空间低于 25%，则共享设备模式下的设备将自动删除用户配置文件。 此活动安排在设备的本地时间午夜，除非存储变得严重受限。
+共享设备的用户必须将其数据备份到云，以便可以跟踪到其他设备。 在共享设备模式下注册设备后，请确保OneDrive文件按需和已知文件夹[重定向功能](/onedrive/redirect-known-folders)。[](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) 此方法将每个用户配置文件对设备存储的影响降至最低。 如果可用磁盘空间低于 25%，则共享设备模式下的设备将自动删除用户配置文件。 此活动安排在设备的本地时间午夜，除非存储变得严重受限。
 
 Microsoft 托管桌面[使用 SharedPC](/mem/intune/configuration/shared-user-device-settings-windows) CSP 执行这些操作，因此请确保不要自己使用这些 CSP。
 
@@ -89,13 +89,13 @@ Microsoft 托管桌面[使用 SharedPC](/mem/intune/configuration/shared-user-de
 
 ### <a name="apps-and-policies-assigned-to-users"></a>分配给用户的应用和策略
 
-在共享设备上，你应该将自己管理的任何应用或策略分配给设备组，而不是用户组。  这样做可确保每个用户的体验更加一致。 例外为[公司门户](#deploying-apps-with-company-portal)。
+在共享设备上，你应该将自己管理的任何应用或策略分配给设备组，而不是用户组。 这样做可确保每个用户的体验更加一致。 例外情况[是公司门户](#deploying-apps-with-company-portal)。
 
 ## <a name="limitations-of-shared-device-mode"></a>共享设备模式的限制
 
 ### <a name="windows-hello"></a>Windows Hello
 
-Windows Hello智能卡仿真来安全缓存[用户 PIN，](/windows/security/identity-protection/hello-for-business/hello-faq)从而最大程度地减少用户必须进行身份验证次数。 但是，Windows设备上一次只允许 10 个智能卡。 当第 11 个用户首次登录时，其中一个现有帐户将丢失其智能卡。 他们可以登录，但无法缓存其 PIN。
+Windows Hello智能卡仿真来安全缓存[用户 PIN](/windows/security/identity-protection/hello-for-business/hello-faq)，从而最大限度地减少用户必须进行身份验证次数。 但是，Windows设备上一次只允许 10 个智能卡。 当第 11 个用户首次登录时，其中一个现有帐户将丢失其智能卡。 他们可以登录，但无法缓存其 PIN。
 
 ### <a name="universal-print"></a>通用打印
 
@@ -105,17 +105,17 @@ When Universal print installs a printer for a single user on a shared device tha
 
 ### <a name="primary-user"></a>主要用户
 
-每台Microsoft Intune都有一个主用户，在 Autopilot 设置设备时分配该用户。 但在共享设备时，Intune 要求删除主要用户。
+每台Microsoft Intune设备都有一个主用户，在 Autopilot 设置设备时分配该用户。 但在共享设备时，Intune 要求删除主要用户。
 
 > [!IMPORTANT]
-> 共享设备模式在公共预览版中时，请务必按照以下步骤删除主要用户：登录到 Microsoft Endpoint Manager 管理中心，选择"设备""所有设备"，选择设备，然后选择"属性""删除主要用户"，然后删除其中列出的用户。 >   > 
+> 共享设备模式在公共预览版中时，请务必按照以下步骤删除主要用户：登录到 Microsoft Endpoint Manager 管理中心，选择 **"设备**>**"**"所有设备"，选择设备，然后选择"**属性**>**"**"删除主要用户"，然后删除其中列出的用户。
 
 ### <a name="deploying-apps-with-company-portal"></a>使用应用程序部署公司门户
 
-某些应用可能不需要存在于所有设备上，因此你可能希望用户仅在需要这些应用时从设备[公司门户。](/mem/intune/user-help/install-apps-cpapp-windows) Microsoft 托管桌面共享公司门户设备模式的设备默认禁用此功能。 如果希望启用公司门户，可以提交更改请求，但在此公共预览[](../working-with-managed-desktop/admin-support.md)版中，应注意此功能的一些限制：
+某些应用可能不需要存在于所有设备上，因此你可能希望用户仅在需要这些应用时，才从设备上[公司门户。](/mem/intune/user-help/install-apps-cpapp-windows) Microsoft 托管桌面共享公司门户设备模式的设备默认禁用此功能。 如果希望启用公司门户，可以提出更改请求，但在此公共预览[](../working-with-managed-desktop/admin-support.md)版中，应注意此功能的一些限制：
 
-- 若要使应用可供用户公司门户，在 Intune[](/mem/intune/apps/apps-deploy)中向该应用分配用户组，然后将每个用户添加到该用户组。
-- 设备不能有主 [用户](#primary-user)。
+- 若要使应用可供用户[公司门户，可在](/mem/intune/apps/apps-deploy) Intune 中向该应用分配用户组，然后将每个用户添加到该用户组。
+- 设备不能有 [主用户](#primary-user)。
 - 若要卸载用户通过 公司门户安装的应用，必须从该设备的所有用户卸载该应用。
 
 > [!CAUTION]
@@ -123,7 +123,7 @@ When Universal print installs a printer for a single user on a shared device tha
 
 ### <a name="redeployment-of-microsoft-365-apps-for-enterprise"></a>重新部署Microsoft 365 企业应用版
 
-在公共预览版期间，Microsoft 365 应用版重新部署，用户必须联系其本地支持人员，以请求代理提升并重新安装Microsoft 365 企业应用版设备上。
+在公共预览版期间，Microsoft 365 应用版重新部署，用户必须联系其本地支持人员，以请求代理提升并重新安装Microsoft 365 企业应用版设备。
 
 ### <a name="microsoft-teams"></a>Microsoft Teams
 

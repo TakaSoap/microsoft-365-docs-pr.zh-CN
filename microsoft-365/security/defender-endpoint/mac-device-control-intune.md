@@ -12,12 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: e9edec2b4e0b08cf6506f6234fbfb1f2c3c03914
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767096"
 ---
-
 # <a name="examples-of-device-control-policies-for-intune"></a>Intune 的设备控制策略示例
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -232,7 +236,7 @@ ms.technology: mde
 
 ## <a name="restrict-all-devices-from-specific-vendors"></a>限制来自特定供应商的所有设备
 
-以下示例限制来自特定供应商的所有设备， (标识 `fff0` `4525` 和) 。 所有其他设备将不受限制，因为策略的顶级定义的权限列出了所有可能的权限 (读取、写入和执行) 。
+以下示例限制来自特定供应商的所有设备， (标识 `fff0` `4525` 和) 。 所有其他设备将不受限制，因为策略顶级定义的权限列出了所有可能的权限 (读取、写入和执行) 。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

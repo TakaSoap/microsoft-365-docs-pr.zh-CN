@@ -20,6 +20,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 - adminvideo
 search.appverid:
 - BCS160
@@ -28,13 +29,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 使用你的 Microsoft 365 管理员帐户登录，以重置 Microsoft 365 商业版订阅中的用户的密码。
-ms.openlocfilehash: 2d79a1e7ea24782102c821100493b3b2eb8349ed
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+description: 使用 Microsoft 365 管理员帐户登录，重置 Microsoft 365 商业版订阅中的用户密码。
+ms.openlocfilehash: 476418d97d3ad0fcfce1684282f2f69b3d56e8fb
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530401"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765848"
 ---
 # <a name="reset-passwords"></a>重置密码
 
@@ -43,9 +44,12 @@ ms.locfileid: "61530401"
 > [!NOTE]
 > 您还可以为用户设置自助服务密码重置，以便他们可以重置自己的密码。 若要了解更多信息，请参阅 [允许用户重置自己的密码](let-users-reset-passwords.md)。
 
+> [!TIP]
+> 如果需要有关本主题中的步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助 Business Assist，你和员工在业务增长（从载入到日常使用）时，可以全天候访问小型企业专家。
+
 ## <a name="before-you-begin"></a>准备工作
 
-本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？] (概述Microsoft 365 管理中心] (。/admin-overview/admin-center-overview.md) 。
+本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？]（Microsoft 365 管理中心概述](../admin-overview/admin-center-overview.md)。
 
 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 
@@ -55,10 +59,10 @@ ms.locfileid: "61530401"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-1. 当用户请求新密码时，你将收到电子邮件中的密码重置请求。 若要重置密码，请打开应用启动器并选择"管理员 **"。**
+1. 当用户请求新密码时，你将收到电子邮件中的密码重置请求。 若要重置密码，请打开应用启动器并选择"管理员 **"**。
 1. In the Microsoft 365 管理中心， select **Users**， <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>， and then select the key icon next to the user who requested the reset.
 1. 选择 **"自动生成密码** "以自动创建随机密码。
-1. 选择"**重置"。**
+1. 选择 **"重置"**。
 
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
   
@@ -66,9 +70,9 @@ ms.locfileid: "61530401"
 
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
-2. 在"**活动用户"** 页上，选择用户，然后选择"**重置密码"。**
+2. 在" **活动用户"** 页上，选择用户，然后选择" **重置密码"**。
 
-3. 按照"重置密码"页上的说明操作，为用户自动生成新密码或为用户创建一个新密码，然后选择"重置 **"。**  
+3. 按照"重置密码"页上的说明操作，为用户自动生成新密码或为用户创建一个新密码，然后选择"重置 **"**。  
 
 4. 输入用户可以获取的电子邮件地址，以便他们收到新密码，然后跟进以确保他们获得密码。
 
@@ -78,15 +82,15 @@ ms.locfileid: "61530401"
 
 ## <a name="reset-my-admin-password"></a>重置我的管理员密码
 
-如果你忘记了密码，但能够登录密码，Microsoft 365，例如，密码保存在浏览器中：
+如果你忘记了密码，但可以登录密码，Microsoft 365，例如，密码保存在浏览器中：
 
-1. Select your name (icon) in upper right corner > **My Account**  >  **Personal Info**.
+1. Select your name (icon) in upper right corner > **My** **AccountPersonal** >  Info.
 
 2. 在 **"联系人** 详细信息"下，仔细检查备用电子邮件是否准确，以及是否提供了移动电话号码。 如果没有，则现在更改它们。
 
-3. 注销：选择右上角的"注销 \> **"中的名称**。
+3. 注销：选择右上角的"注销"\>**中的名称**。
 
-4. 现在重新登录：键入你的用户名 \> **下** \> 一步，然后选择 **忘记密码**。
+4. 现在再次登录：键入你的用户名 \> **Next**\>，然后选择忘记 **密码**。
 
 5. 按照向导中的步骤重置密码。 它使用备用联系人信息验证你是重置密码的合适人员。
 
@@ -101,7 +105,7 @@ ms.locfileid: "61530401"
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同时重置组织中每个人的所有业务密码
 <a name="bkmk_forgot"> </a>
 
-这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分有关批量重置密码 (一次最多可重置 40) 。
+这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分"批量重置密码" (一次最多重置 40) 。
   
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
@@ -109,7 +113,7 @@ ms.locfileid: "61530401"
 
 3. 选择 **重置密码**。
 
-4. 按照"重置密码"**页面上的说明操作**，然后选择"重置 **"。**  如果选择自动生成密码，将显示新的临时密码。
+4. 按照"重置密码" **页上的说明操作** ，然后选择"重置 **"**。  如果选择自动生成密码，将显示新的临时密码。
 
 5. 输入可以接收临时密码的电子邮件地址。 你需要通知用户他们的临时密码是什么。
   
@@ -120,7 +124,7 @@ ms.locfileid: "61530401"
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-有关概述信息，请参阅[使用 PowerShell Microsoft 365管理部署](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
+有关概述信息，请参阅[使用 PowerShell Microsoft 365管理服务](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>为企业中的所有用户强制更改密码
 
@@ -135,5 +139,5 @@ ms.locfileid: "61530401"
 [允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
 [重置密码](../add-users/reset-passwords.md)（文章）\
 [将个人用户密码设置为永不过期](set-password-to-never-expire.md)（文章）\
-[为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) \
+[为组织设置密码过期策略，](../manage/set-password-expiration-policy.md) (文章) \
 [Microsoft 365 商业版培训视频](../../business-video/index.yml)(链接页面)
