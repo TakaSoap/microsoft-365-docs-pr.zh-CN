@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 3a9ca21c6cc59e2516220dd04e659d22df0a74e6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 496d9bf729eaaff6cf12e9734ae80eedacf98a63
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164858"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806116"
 ---
 # <a name="device-control-printer-protection"></a>设备控制打印机保护
 
@@ -30,9 +30,9 @@ ms.locfileid: "61164858"
 
 Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过非公司打印机或未批准的 USB 打印机进行打印。
 
-## <a name="licensing"></a>授权
+## <a name="licensing"></a>许可
 
-在开始使用打印机保护之前，你应该[先确认你的Microsoft 365订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 若要访问和使用打印机保护，您必须具有以下各项：
+在开始使用打印机保护之前，应[确认Microsoft 365订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 若要访问和使用打印机保护，您必须具有以下各项：
 
 - Microsoft 365 E3/策略部署
 - Microsoft 365 E5报告功能
@@ -49,7 +49,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 - 全局安全管理员
 - 安全管理员
-- 安全信息读取者
+- 安全读取者
 
 ## <a name="prepare-your-endpoints"></a>准备终结点
 
@@ -70,13 +70,13 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 ****
 
-|Title|Description|云解决方案提供商支持 | GPO 支持 | 基于用户的支持 | 基于计算机的支持 |
+|Title|说明|云解决方案提供商支持 | GPO 支持 | 基于用户的支持 | 基于计算机的支持 |
 |---|---|:---:|:---:|:---:|:---:|
 |**启用设备控制打印限制**|阻止用户通过非公司打印机打印|是|是|是|是|
 |**已批准的 USB 连接打印设备列表**\*|允许特定 USB 打印机|是|是|是|是|
 |
 
-\* 此策略必须与启用设备控制 **打印限制一同使用**。
+\* 此策略必须与启用设备 **控制打印限制一同使用**。
 
 ## <a name="deploy-policy-via-intune"></a>通过 Intune 部署策略
 
@@ -92,7 +92,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
   `./Vendor/MSFT/Policy/Config/Printers/EnableDeviceControlUser`
 
-CSP 支持字符串，包含 `<enabled/>` ：
+CSP 支持字符串，包含 `<enabled/>`：
 
 :::image type="content" source="../../media/customeditrow.png" alt-text="自定义编辑行。":::
 
@@ -106,7 +106,7 @@ CSP 支持字符串，包含 `<enabled/>` ：
 
   `./Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
 
-通过"ApprovedUsbPrintDevices"属性批准的 USB 打印机的云解决方案提供商支持字符串，示例 `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">` ：
+通过"ApprovedUsbPrintDevices"属性批准的 USB 打印机的云解决方案提供商支持字符串，示例 `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`：
 
 :::image type="content" source="../../media/editrow.png" alt-text="编辑行。":::
 

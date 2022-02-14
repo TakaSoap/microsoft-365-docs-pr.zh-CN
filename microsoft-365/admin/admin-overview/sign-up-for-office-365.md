@@ -27,27 +27,27 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: 了解在完成注册过程以使用 Office 365 之前您需要了解Office 365。
+description: 了解你需要了解哪些信息，然后再完成注册Office 365。
 ms.date: 03/17/2021
-ms.openlocfilehash: 0c372f52f1da5fef680a9eaeb499fcede7278489
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: bb74ab42bb16cc2d8b3a97850ae9be17600bfc9a
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643708"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805900"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何注册 - 管理员帮助
 
-注册Microsoft 365商业版，以便团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
+注册 Microsoft 365 for business，以便团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
 
 ::: moniker range="o365-21vianet"
 
-如果你在中国，由世纪Office 365运营的云服务旨在满足中国对安全、可靠且可扩展的云服务的需求。 此服务由 Microsoft 授权给世纪互联使用的技术提供支持。 Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管理此服务的交付。 世纪互联是中国最大的运营商中立 Internet 数据中心服务提供商，提供托管、托管网络服务及云计算基础结构服务。 通过授权 Microsoft 技术，世纪银行运营本地 Microsoft 数据中心，让你能够使用 Microsoft 服务，同时将数据保留在中国。 世纪互联还提供订阅、计费服务和支持。
+如果你在中国，由世纪Office 365运营的云服务旨在满足中国对安全、可靠且可扩展的云服务的需求。 此服务由 Microsoft 授权给世纪互联使用的技术提供支持。 Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管理此服务的交付。 世纪互联是中国最大的运营商中立 Internet 数据中心服务提供商，提供托管、托管网络服务及云计算基础结构服务。 通过许可 Microsoft 技术，世纪银行运营本地 Microsoft 数据中心，让你能够使用 Microsoft 服务，同时将数据保留在中国。 世纪互联还提供订阅、计费服务和支持。
   
 > [!NOTE]
 > 这些服务受到中国法律的制约。
   
-注册由世纪Office 365运营的 Excel，以便你的团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
+注册由世纪Office 365运营的 Office 365，以便你的团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
   
 准备好注册了吗？ [选择计划](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)。
   
@@ -69,6 +69,7 @@ ms.locfileid: "61643708"
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>准备好注册免费试用版或购买订阅了吗？
 
 转到 [比较所有产品](https://products.office.com/compare-all-microsoft-office-products?tab=2) 以选择要购买的计划并启动注册向导。 
@@ -77,9 +78,9 @@ ms.locfileid: "61643708"
   
 无需取消试用版。 如果你不购买试用版订阅，它将自动在试用期结束时过期，并且所有信息将永久删除。
 
-## <a name="watch-set-up-microsoft-365-business-premium"></a>观看：设置Microsoft 365 商业高级版
+## <a name="watch-sign-up-for-microsoft-365-business-premium"></a>观看：注册Microsoft 365 商业高级版
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
 
 ::: moniker-end
 
@@ -92,7 +93,7 @@ ms.locfileid: "61643708"
   - **电子邮件** 和 **电话号码** ，以便我们在需要时就您的订阅联系您。例如，如果您忘记了密码，我们将使用此信息向您发送一个临时密码。我们还会向您指定的电子邮件地址发送您的计帐信息。
 
     > [!NOTE]
-    > 您在此处输入的电子邮件地址不同于Microsoft 365电子邮件地址 (登录名下方) 。 因为我们也会向此地址发送您的帐单信息，因此建议您使用适用于接收业务电子邮件的电子邮件地址。
+    > 此处输入的电子邮件地址不同于Microsoft 365电子邮件地址 (登录名下方) 。 因为我们也会向此地址发送您的帐单信息，因此建议您使用适用于接收业务电子邮件的电子邮件地址。
   
 - **登录名 (用户 ID) ：** 此用户 ID 将成为你Microsoft 365，只是为了快速入门。
 
@@ -106,6 +107,10 @@ ms.locfileid: "61643708"
 
     > [!IMPORTANT]
     >  注册时，请确保为组织选择最佳支付选项。 更改付款方式涉及致电帐单支持。
+
+## <a name="watch-set-up-microsoft-365-business-premium"></a>观看：设置Microsoft 365 商业高级版
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 ## <a name="related-content"></a>相关内容
 

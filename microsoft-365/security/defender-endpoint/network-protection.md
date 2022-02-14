@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: overview
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: dfa84cf167dfdb366ad4a7c636a85a30b6de24a4
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: b94e7f959c44e44e5b61dfd0536b3c1077d0edc5
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326928"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807196"
 ---
 # <a name="protect-your-network"></a>保护你的网络
 
@@ -36,12 +36,15 @@ ms.locfileid: "62326928"
 
 ## <a name="overview-of-network-protection"></a>网络保护概述
 
-网络保护有助于保护设备免受基于 Internet 的事件的影响。 网络保护是攻击面减少功能。 它有助于防止员工通过应用程序访问危险域。 在 Internet 上托管欺诈邮件、攻击和其他恶意内容的域被视为危险。 网络保护扩展[了 Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 的范围，以阻止尝试基于域或主机名 (低信誉源 (的所有出站 HTTP) ) 。
+网络保护有助于保护设备免受基于 Internet 的事件的影响。 网络保护是攻击面减少功能。 它有助于防止员工通过应用程序访问危险域。 在 Internet 上托管欺诈邮件、攻击和其他恶意内容的域被视为危险。 网络保护扩展 [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 以阻止尝试基于域或主机名 (连接到低信誉源的所有出站 HTTP () ) 。
 
-网络保护将 [Web 保护中的保护扩展到](web-protection-overview.md) 操作系统级别。 它为其他受支持的浏览器和非浏览器应用程序提供 Edge 中的 Web 保护功能。 此外，网络保护在终结点检测和响应 (ICS) 可见性和阻止泄露 [指示器](overview-endpoint-detection-response.md)。 例如，网络保护 [适用于可用于阻止](manage-indicators.md) 特定域或主机名的自定义指示器。
+网络保护将 [Web 保护中的保护扩展到](web-protection-overview.md) 操作系统级别。 它为其他受支持的浏览器和非浏览器应用程序提供 Edge 中的 Web 保护功能。 此外，网络保护在用于终结点检测和响应时 (ICS) 和威胁 [指示器的可见性和阻止](overview-endpoint-detection-response.md)。 例如，网络保护 [适用于可用于阻止](manage-indicators.md) 特定域或主机名的自定义指示器。
 
 > [!TIP]
 > 有关网络保护的工作原理，demo.wd.microsoft.com Microsoft Defender for Endpoint [](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 测试站点。
+
+> [!NOTE]
+> 位于 Demo.wd.microsoft.com 的 Defender for Endpoint 演示网站已弃用，并且将在未来删除。
 
 ## <a name="requirements-for-network-protection"></a>网络保护要求
 
@@ -53,10 +56,10 @@ ms.locfileid: "62326928"
 
 |Windows 版本|Microsoft Defender 防病毒|
 |---|---|
-|Windows 10版本 1709 或更高版本 <p> Windows 11 <p> Windows Server 1803 或更高版本|[Microsoft Defender 防病毒必须启用](configure-real-time-protection-microsoft-defender-antivirus.md)实时保护和[云提供的保护](enable-cloud-protection-microsoft-defender-antivirus.md)|
+|Windows 10版本 1709 或更高版本 <p> Windows 11 <p> Windows Server 1803 或更高版本|[Microsoft Defender 防病毒必须启用](configure-real-time-protection-microsoft-defender-antivirus.md)实时[保护和云提供的](enable-cloud-protection-microsoft-defender-antivirus.md)保护|
 |
 
-启用服务后，可能需要配置网络或防火墙，以允许服务和设备（也称为 (设备）) 。
+启用服务后，可能需要配置网络或防火墙，以允许服务和设备之间的连接 (也称为终结点) 。
 
 - `.smartscreen.microsoft.com`
 - `.smartscreen-prod.microsoft.com`
@@ -90,7 +93,7 @@ DeviceNetworkEvents
 
 1. [直接复制 XML](event-views.md)。
 
-2. 选择“确定”。
+2. 选择“**确定**”。
 
 此过程将创建一个自定义视图，该视图筛选为只显示与网络保护相关的以下事件：
 
@@ -133,7 +136,7 @@ DeviceNetworkEvents
 
 ### <a name="alternative-option-for-network-protection"></a>网络保护的备用选项
 
-对于Windows 10 企业版会话 1909 及以下时间（在 Azure 上的 Windows 虚拟桌面中使用）中，可以使用以下方法启用 Microsoft Edge 的网络保护：
+对于Windows 10 企业版会话 1909 及之后（在 Azure 上的 Windows 虚拟桌面中使用）中，可以使用以下方法启用 Microsoft Edge 的网络保护：
 
 1. 使用 ["打开网络保护](enable-network-protection.md) "并按照说明应用策略。
 
@@ -153,4 +156,4 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 
 - [评估网络保护](evaluate-network-protection.md) |执行一个快速方案，演示功能的工作方式以及通常会创建哪些事件。
 - [启用网络保护](enable-network-protection.md) |使用组策略、PowerShell 或 MDM CSP 在网络中启用和管理网络保护。
-- [在攻击中配置攻击面减少Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
+- [在攻击区中配置攻击面Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)

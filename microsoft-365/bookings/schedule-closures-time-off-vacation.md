@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: 从 Bookings 日历安排办公室关闭和员工请假，以便员工在指定的时间标记为不进行预订。
-ms.openlocfilehash: 30f43af083da6a41ab8458e377bdc9fc99690678
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ea0b9b9870d5331d58b8f0e9f7671853d0e3433b
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164064"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807040"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>安排公司关闭、休假和休假时间
 
@@ -26,19 +26,19 @@ ms.locfileid: "60164064"
 
 ## <a name="schedule-ad-hoc-business-closures"></a>安排临时业务关闭
 
-1. In Microsoft 365， select the app launcher， and then select Bookings.
+1. 在Microsoft 365中，选择应用启动器，然后选择 Bookings。
 
-1. 在导航窗格中，选择"**日历** \> **时间""关闭"。**
+1. 在导航窗格中，选择" **日历** \> **时间""关闭"**。
 
    ![Bookings 日历视图和"请假"按钮的图像。](../media/bookings-calendar-timeoff.png)
 
-1. 填写详细信息，包括标题、开始和结束日期和时间、位置和其他注释。
+1. 填写详细信息，包括标题、开始和结束日期和时间、位置以及额外注释。
 
 1. 选择 **全天事件**。
 
 1. 选择所有员工。
 
-1. 选择“**保存**”。
+1. 选择“保存”。
 
 当客户尝试在办公室关闭的一天安排服务时，他们将在预订页面上看到一条消息。
 
@@ -46,15 +46,15 @@ ms.locfileid: "60164064"
 
 ## <a name="schedule-employee-time-off"></a>安排员工请假
 
-1. In Microsoft 365， select the app launcher， and then select **Bookings**.
+1. 在Microsoft 365中，选择应用启动器，然后选择 **Bookings**。
 
    ![应用启动器的图像。](../media/bookings-applauncher.png)
 
-1. 在导航窗格中，选择"**日历** \> **时间""关闭"。**
+1. 在导航窗格中，选择" **日历** \> **时间""关闭"**。
 
    ![Bookings 日历视图和"请假"按钮的图像。](../media/bookings-calendar-timeoff.png)
 
-1. 填写详细信息，包括标题、开始和结束日期和时间、位置和其他注释。 如果员工将离开一整天或几天，请选择"**全天事件"。**
+1. 填写详细信息，包括标题、开始、结束日期和时间、位置等备注。 如果员工将离开一整天或几天，请选择" **全天事件"**。
 
 1. 选择要请假的员工或成员。
 

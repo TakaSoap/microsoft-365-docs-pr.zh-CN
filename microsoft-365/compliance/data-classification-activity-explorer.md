@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 通过活动资源管理器，你可以查看和筛选用户对已标记内容采取的操作。
-ms.openlocfilehash: 73e0d135112d109370aa4f3cdc75d30a8ab087a3
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 93cd3910a79b136d95ba46fa79940d379340cf75
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61874036"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806560"
 ---
 # <a name="get-started-with-activity-explorer"></a>活动资源管理器入门
 
@@ -36,7 +36,7 @@ ms.locfileid: "61874036"
 - 日期范围
 - 活动类型
 - 位置
-- 用户
+- User
 - 敏感度标签
 - 保留标签
 - 文件路径
@@ -63,19 +63,19 @@ ms.locfileid: "61874036"
 
 预览版中的角色和角色组可以进行测试以微调访问控制。
 
-下面是预览中Microsoft 信息保护 (MIP) 角色的列表。 若要详细了解它们，请参阅安全 [与合规&中的角色](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+下面是预览版中Microsoft 信息保护 （MIP） 角色的列表。 若要了解有关它们的详细信息，请参阅[安全与合规中心](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)中的角色
 
 - 信息保护管理员
 - 信息保护分析师
-- 信息保护调查人员
+- 信息保护调查员
 - 信息保护读者
 
-下面是预览中的 MIP 角色组列表。 若要详细了解 ，请参阅安全与合规中心 [&组](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+下面是处于预览状态的 MIP 角色组的列表。 若要了解有关 的详细信息，请参阅[安全与合规中心](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)中的角色组
 
 - 信息保护
 - 信息保护管理员
 - 信息保护分析师
-- 信息保护调查人员
+- 信息保护调查员
 - 信息保护读者
 
 <!--
@@ -93,39 +93,39 @@ ms.locfileid: "61874036"
 
 - 合规性管理员
 - 安全管理员
-- 安全信息读取者
+- 安全读取者
 
 ## <a name="activity-types"></a>活动类型
 
-活动资源管理器从多个活动源的审核日志中收集活动信息。 有关哪些标签活动可用于活动资源管理器的更多详细信息，请参阅活动资源管理器中可用的标签 [事件](data-classification-activity-explorer-available-events.md)。
+活动资源管理器从多个活动源的审核日志中收集活动信息。 有关哪些标签活动可用于活动资源管理器的更多详细信息，请参阅活动 [资源管理器中](data-classification-activity-explorer-available-events.md)可用的标签事件。
 
- Office 本机应用程序、Azure 信息保护外接程序、SharePoint Online、Exchange Online (仅) 和 OneDrive 中的敏感度标签活动和保留标签活动。  示例如下：
+ Office 本机应用程序、Azure  信息保护外接程序、SharePoint Online、Exchange Online (仅) 和 OneDrive 中的敏感度标签活动和保留标签OneDrive。 示例如下：
 
 - 已应用的标签
 - 已更改（已升级、已降级或已删除）的标签
 - 自动标记模拟
-- 文件读取 
+- 已读文件
 
-**Azure 信息保护 (AIP) 扫描程序和 AIP 客户端**
+**Azure 信息保护 (AIP) 和 AIP 客户端**
 
 - 已应用保护
 - 保护已更改
 - 已删除保护
-- 发现的文件 
+- 发现的文件
 
-活动资源管理器还通过收集 **来自** Exchange Online、SharePoint Online、OneDrive、Teams 聊天和频道 (预览) 、本地 SharePoint 文件夹和库、本地文件共享和 Windows 10 设备的 DLP 策略匹配事件 **终结点数据丢失防护 (DLP)**。 设备中的一Windows 10事件包括文件：
+活动资源管理器还通过收集 **来自** Exchange Online、SharePoint Online、OneDrive、Teams 聊天和频道 (预览) 、本地 SharePoint 文件夹和库、本地文件共享以及 Windows 10 设备的 DLP 策略匹配事件 **DLP (终结点数据丢失)**。 设备中的一Windows 10事件包括文件：
 
-- deletions
-- creations
+- 删除
+- 创建
 - 复制到剪贴板
-- 修改内容
-- 阅读
-- 已打印
-- 已重命名
+- Modified
+- Read
+- 打印
+- 重命名
 - 复制到网络共享
 - 由不允许的应用访问 
 
-了解对敏感标记内容采取的操作可帮助您查看已就位的控件（如数据丢失防护策略）是否有效。 [](dlp-learn-about-dlp.md) 如果无效，或者发现某项意外内容（如大量项目被标记为`highly confidential`并降级为`general`），则可管理各种策略并采取新操作来限制意外行为。
+了解对敏感标记内容采取的操作可帮助您查看已就位的控件（如数据丢失防护策略）是否有效。[](dlp-learn-about-dlp.md) 如果无效，或者发现某项意外内容（如大量项目被标记为`highly confidential`并降级为`general`），则可管理各种策略并采取新操作来限制意外行为。
 
 > [!NOTE]
 > 活动资源管理器当前不监视 Exchange Online 的保留活动。

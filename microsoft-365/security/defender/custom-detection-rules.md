@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bd964782303b05e97fe69996bcf3ce2c1a1e9eb8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 473d58cde13f1f776c31184b2b50e74e23810b22
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766928"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807028"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 
@@ -114,9 +114,9 @@ DeviceEvents
 
 使用查询编辑器中的查询，选择 **"创建检测规则** "并指定以下警报详细信息：
 
-- **检测名称** 检测规则的名称;此名称必须是唯一的。
+- **检测名称** 检测规则的名称;应是唯一的
 - **Frequency** — 运行查询和采取措施的间隔。 [请参阅下面的其他指南](#rule-frequency)
-- **警报标题** - 显示与规则触发的警报一起显示的标题;此标题需要是唯一的。
+- **警报标题** - 显示与规则触发的警报一起显示的标题;应是唯一的
 - **严重性** - 规则标识的组件或活动的潜在风险
 - **类别** - 规则标识的威胁组件或活动
 - **MITRE ATT&CK** 技术 -一种或多种攻击技术，由 [MITRE ATT 和 CK 框架中记录的规则&攻击技术](https://attack.mitre.org/)。 本部分对某些警报类别（包括恶意软件、勒索软件、可疑活动和不需要的软件）隐藏
@@ -141,7 +141,7 @@ DeviceEvents
 选择与要监视检测的频率相匹配的频率。 考虑组织响应警报的能力。
 
 ### <a name="3-choose-the-impacted-entities"></a>3. 选择影响的实体。
-确定查询结果中预期要查找主要受影响或受影响的实体的列。 例如，查询可能会返回 `SenderFromAddress` 发件人 (或) `SenderMailFromAddress` 收件人 () `RecipientEmailAddress` 地址。 识别这些列中哪些代表主要受影响的实体，有助于该服务汇总相关警报、关联事件，并有针对性地执行响应操作。
+确定查询结果中预期要查找主要受影响或受影响的实体的列。 例如，查询可能会返回发件人 `SenderFromAddress` (或) `SenderMailFromAddress` 收件人 () `RecipientEmailAddress` 地址。 识别这些列中哪些代表主要受影响的实体，有助于该服务汇总相关警报、关联事件，并有针对性地执行响应操作。
 
 可以为每个实体类型 (邮箱、用户或设备) 选择仅一列。 无法选择查询未返回的列。
 
@@ -229,7 +229,7 @@ DeviceEvents
 >若要快速查看信息并针对表中的项目采取操作，请使用表格左侧的选择列 [&#10003;] 。
 
 >[!NOTE]
->本文中的某些列在 Microsoft Defender for Endpoint 中可能不可用。 [打开Microsoft 365 Defender](m365d-enable.md)，以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻Microsoft 365 Defender中的步骤将高级搜寻工作流从 [Microsoft Defender for Endpoint 移动到其他位置](advanced-hunting-migrate-from-mde.md)。
+>本文中的某些列在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender](m365d-enable.md)"以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 [Microsoft Defender for Endpoint 移动到 Microsoft 365 Defender](advanced-hunting-migrate-from-mde.md)。
 
 ## <a name="see-also"></a>另请参阅
 - [自定义检测概述](custom-detections-overview.md)

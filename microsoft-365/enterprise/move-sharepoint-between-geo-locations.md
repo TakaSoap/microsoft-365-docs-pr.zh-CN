@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 了解如何将网站SharePoint多地理位置环境中的不同地理位置，并告知用户更改的预期。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ccbe708c0fcfb51c1a28b354d8438e526815cec
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 9e4132b8399cc69067d24af6c3c9ec8e3baf52bd
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242031"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806860"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>将 SharePoint 站点移到其他地理位置
 
@@ -35,7 +35,7 @@ ms.locfileid: "62242031"
 
 你必须是全局管理员或 SharePoint 管理员才能在地理位置之间移动站点。
 
-在 SharePoint 的移动过程中会有大约 4-6 小时的只读阶段，具体取决于站点内容。
+在移动站点地理位置期间，SharePoint一个只读窗口，时间约为 4-6 小时，具体取决于站点内容。
 
 ## <a name="best-practices"></a>最佳做法
 
@@ -75,7 +75,7 @@ ms.locfileid: "62242031"
 
 SharePoint 站点地理位置移动要求你通过站点所在的地理位置中的 SharePoint 管理 URL 连接并执行移动。
 
-例如，如果网站 URL 为 <https://contosohealthcare.sharepoint.com/sites/Turbines> ，请SharePoint管理员 <https://contosohealthcare-admin.sharepoint.com> URL：
+例如，如果网站 URL 为 <https://contosohealthcare.sharepoint.com/sites/Turbines>，请连接到 SharePoint 管理员 URL，网址为 <https://contosohealthcare-admin.sharepoint.com>：
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
@@ -103,13 +103,13 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 如果站点可移动，这将返回 *Success*，如果存在任何造成阻碍的情况，则返回 *Fail*。
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>为SharePoint组关联的站点开始站点地理位置Microsoft 365移动
+### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>为没有SharePoint组的网站开始站点地理位置Microsoft 365移动
 
 默认情况下，站点的初始 URL 将更改为目标地理位置的 URL。 例如：
 
 <https://Contoso.sharepoint.com/sites/projectx> 重命名为 <https://ContosoEUR.sharepoint.com/sites/projectx>
 
-对于没有Microsoft 365组关联的网站，您还可以使用 参数重命名 `-DestinationUrl` 网站。 例如：
+对于没有Microsoft 365组关联的网站，您还可以使用 参数重命名`-DestinationUrl`网站。 例如：
 
 <https://Contoso.sharepoint.com/sites/projectx> 重命名为 <https://ContosoEUR.sharepoint.com/sites/projecty>
 
@@ -121,11 +121,11 @@ Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <Dest
 
 ![显示 cmdlet 的 PowerShell Start-SPOSiteContentMove屏幕截图。](../media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>为SharePoint组连接的站点开始Microsoft 365站点地理位置移动
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>开始SharePoint组连接的站点进行Microsoft 365移动
 
 若要移动Microsoft 365连接的站点，全局管理员或 SharePoint 管理员必须先更改组的首选数据位置 (PDL) 属性Microsoft 365属性。
 
-若要为组设置 PDL，Microsoft 365组：
+若要为组设置 PDL Microsoft 365：
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
@@ -159,7 +159,7 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 |---|---|
 |Ready to Trigger|移动尚未开始。|
 |Scheduled|移动在队列中，但尚未开始。|
-|InProgress (n/4)|移动正在进行中，状态为以下之一：验证 (1/4)、备份 (2/4)、还原 (3/4)、清除 (4/4)。|
+|InProgress (n/4)|移动正在进行，状态为以下之一：Validation (1/4) 、Back up (2/4) 、Restore (3/4) 、Cleanup (4/4) 。|
 |Success|移动已成功完成。|
 |Failed|移动失败。|
 |
@@ -172,7 +172,7 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 
 ### <a name="site"></a>站点
 
-移动进行时站点会设为只读状态。 移动完成后，当用户单击书签或其他站点链接时，系统会将用户定向到新地理位置中的新站点。
+在移动进行时，网站设置为只读。 移动完成后，当用户单击书签或其他站点链接时，系统会将用户定向到新地理位置中的新站点。
 
 ### <a name="permissions"></a>权限
 
@@ -200,9 +200,9 @@ SharePoint 站点地理位置移动完成后，被移动文件的现有共享链
 - OneNote UWP – 版本16.0.8431.1006（及更高版本）
 - OneNote 移动应用 – 版本 16.0.8431.1011（及更高版本）
 
-### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (组Microsoft 365连接的网站的) 
+### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (组Microsoft 365连接的网站) 
 
-当SharePoint地理位置移动完成后，用户将有权访问其Microsoft 365应用上的组Teams文件。 此外，在地理位置移动之前通过 Teams 聊天从其站点中共享的文件在移动完成后将继续工作。
+当SharePoint地理位置移动完成后，用户将有权访问Microsoft 365应用上的组Teams文件。 此外，在地理位置移动之前通过 Teams 聊天从其站点中共享的文件在移动完成后将继续工作。
 
 SharePoint地理位置移动不支持将专用通道从一个地理位置移动到另一个地理位置。 私人频道保留在原始地理位置。
   
@@ -213,15 +213,15 @@ SharePoint 移动应用跨地理位置兼容，并能够检测站点的新地理
 
 ### <a name="sharepoint-workflows"></a>SharePoint 工作流
 
-需要在站点移动之后重新发布 SharePoint 2013 工作流。 SharePoint 2010 工作流应会继续正常工作。
+SharePoint移动后，必须重新发布 2013 工作流。 SharePoint 2010 工作流应会继续正常工作。
 
 ### <a name="apps"></a>应用
 
-如果移动具有应用的站点，你必须在站点的新地理位置重新实例化应用，因为应用及其连接在目标地理位置中可能不可用。
+如果要使用应用移动站点，则必须在站点的新地理位置中重新建立应用，因为应用及其连接在目标地理位置中可能不可用。
 
-### <a name="flow"></a>流程
+### <a name="flow"></a>Flow
 
-在大多数情况，流程在 SharePoint 站点地理位置移动后将继续工作。 我们建议你在移动完成后测试流程。
+在大多数情况下，流在站点地理位置移动SharePoint继续工作。 我们建议你在移动完成后测试流程。
 
 ### <a name="power-apps"></a>Power Apps
 

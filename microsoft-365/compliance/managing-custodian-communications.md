@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Advanced eDiscovery轻松管理法律调查中通知保管人的法律保留通知工作流。
-ms.openlocfilehash: 69e13523423c45a3cdcf5b81bbf2ec443a4a2b6e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: abe501624e4bc5d0b62ce49f38aa028cd112a7f8
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871473"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806644"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>使用 Advanced eDiscovery
 
@@ -29,7 +29,7 @@ Advanced eDiscovery允许法律部门简化其跟踪和分发合法保留通知�
 
 ## <a name="what-is-a-legal-hold-notification"></a>什么是法定保留通知？
 
-法定 (也称为诉讼 *保留) 通知* 是组织的法律部门向员工、临时员工或与法律调查相关的数据保管人发送的通知。 这些通知指示保管人保留电子存储的信息以及可能与活动或即将发生的法律事务相关的任何内容。 法律团队必须知道每个保管人已收到、阅读、理解并同意遵守给定的说明。
+合法 (也称为诉讼 *保留) 通知* 是一种从组织的法律部门发送给员工、临时员工或与法律调查相关的数据的保管人的通知。 这些通知指示保管人保留电子存储的信息以及可能与活动或即将发生的法律事务相关的任何内容。 法律团队必须知道每个保管人已收到、阅读、理解并同意遵守给定的说明。
 
 ## <a name="the-legal-hold-notification-process"></a>法定保留通知流程
 
@@ -37,9 +37,9 @@ Advanced eDiscovery允许法律部门简化其跟踪和分发合法保留通知�
 
 借助Advanced eDiscovery，法律团队可以创建和自定义合法保留通知工作流。 保管人通信工具使法律团队可以配置以下通知和工作流：
 
-1. **发布通知：** 法律部门通知 (法律部门) 保管人发送或启动法定保留通知，这些保管人可能拥有与案例相关的信息。 此通知指示保管人保留发现可能需要的任何信息。
+1. **发布通知：** 法律部门通知 (或) 法律部门向可能具有与案例相关的信息的保管人发送法定保留通知。 此通知指示保管人保留发现可能需要的任何信息。
 
-2. **重新发布通知：** 在一种情况下，可能需要保管人保留其他内容 (或保存) 请求的内容。 对于这种情况，你可以更新现有保留通知，重新向保管人重新发布。
+2. **重新发布通知：** 在一种情况下，保管人可能需要保留多于 (或) 请求的内容。 对于这种情况，你可以更新现有保留通知，重新向保管人重新发布。
 
 3. **发布通知：** 一旦解决了问题，并且保管人不再受保留要求所规定，就可以从案例释放保管人。 此外，你可以通知保管人他们不再需要保留内容，并提供有关如何恢复正常工作活动及其数据的说明。
 

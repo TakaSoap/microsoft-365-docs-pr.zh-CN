@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: a4e3d03a8293dbfeef53687d6a91fdfcd165a44a
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 996a96f957d7446b0b951d4f1b3a34c822f64f49
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322043"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806656"
 ---
 # <a name="evaluate-controlled-folder-access"></a>受控文件夹访问评估
 
@@ -42,6 +42,9 @@ ms.locfileid: "62322043"
 > [!TIP]
 > 还可以访问 Microsoft Defender for Endpoint 演示方案网站，demo.wd.microsoft.com 确认功能[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)是否正常工作并查看其工作方式。
 
+> [!NOTE]
+> 位于 Demo.wd.microsoft.com 的 Defender for Endpoint 演示网站已弃用，并且将在未来删除。
+
 ## <a name="use-audit-mode-to-measure-impact"></a>使用审核模式衡量影响
 
 在审核模式下启用受控文件夹访问权限，查看完全启用后将发生的情况记录。 测试此功能在组织中如何工作，以确保它不会影响你的业务线应用。 您还可以了解在特定时段内通常发生多少可疑文件修改尝试。
@@ -53,12 +56,12 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 ```
 
 > [!TIP]
-> 如果你想要完全审核受控文件夹访问权限在组织中如何工作，则需要使用管理工具将此设置部署到网络中 (设备) 。
+> 如果你想要完全审核受控文件夹访问权限在组织中如何工作，则需要使用管理工具将此设置部署到网络中设备 () 。
 您还可以使用组策略、Intune、移动设备管理 (MDM) 或 Microsoft Endpoint Manager 配置和部署设置，如主要的受控文件夹[访问权限主题中所述](controlled-folders.md)。
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在事件查看器中查看受控Windows访问事件
 
-以下受控文件夹访问权限事件显示在 microsoft/Windows/Windows/Windows Defender/Operational 文件夹下的事件查看器中。
+以下受控文件夹访问事件显示在 Microsoft/Windows/Windows/Windows Defender/Operational 文件夹下的事件查看器中。
 
 事件 ID | 描述
 -|-
@@ -67,7 +70,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
  1123 | 阻止的受控文件夹访问事件
 
 > [!TIP]
-> 你可以配置一Windows[事件转发订阅](/windows/win32/wec/setting-up-a-source-initiated-subscription)以集中收集日志。 
+> 你可以配置事件[Windows订阅](/windows/win32/wec/setting-up-a-source-initiated-subscription)以集中收集日志。 
 
 ## <a name="customize-protected-folders-and-apps"></a>自定义受保护的文件夹和应用
 

@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定租户和用户是否满足要求，以便可以使用集中部署来部署Office外接程序。
-ms.openlocfilehash: 409a19f9e3579978eb3e3cf03d087820e494e181
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4a64a9dd9a15c9bc877288aa9ac8fc62c40cee51
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933763"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805876"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定外接程序的集中部署是否适用于您的组织
 
-对于大多数客户来说，集中部署是推荐且功能最丰富的方法Office向组织内部的用户和组部署外接程序。 如果你是管理员，请使用本指南确定组织和用户是否满足要求，以便可以使用集中部署。
+对于大多数客户来说，集中部署是推荐且功能最丰富的方法Office向组织内的用户和组部署外接程序。 如果你是管理员，请使用本指南确定组织和用户是否满足要求，以便可以使用集中部署。
 
 集中部署有以下优点：
 
@@ -41,24 +41,24 @@ ms.locfileid: "61933763"
 
 - 如果管理员关闭或删除外接程序，或者如果用户从 Azure Active Directory 或外接程序分配到的组中删除，则用户将不再显示外接程序。
 
-集中部署支持三个桌面Windows、Mac 和 Online Office应用。 集中部署还支持 iOS 和 Android (Outlook移动外接程序仅) 。
+集中部署支持三个桌面Windows、Mac 和 Online Office应用。 集中部署还支持 iOS 和 Android (Outlook仅移动外接程序) 。
 
 外接程序最多可能需要 24 小时才能显示给所有用户的客户端。
 
 ## <a name="before-you-begin"></a>开始之前
 
-外接程序的集中部署要求用户使用 Microsoft 365 商业版许可证 (Business Basic、Business Standard、Business 高级版) 、Office 365 企业版 许可证 (E1/E3/E5/F3) 或 Microsoft 365 企业版 许可证 (E3/E5/F3)  (并登录到 Office 使用其组织 ID) 、Office 365 教育版 许可证 (A1/A3/A5) 或 Microsoft 365 教育版 许可证 (A3/A5) ，并且具有 Exchange Online 和活动的 Exchange Online 邮箱。 订阅目录必须位于或联合到Azure Active Directory。
-可以查看以下版本和Office Exchange，或使用集中部署[兼容性检查器](#centralized-deployment-compatibility-checker)。
+外接程序的集中部署要求用户使用 Microsoft 365 商业版许可证 (Business Basic、商业标准版、商业版 高级版) 、Office 365 企业版 许可证 (E1/E3/E5/F3) 或 Microsoft 365 企业版 许可证 (E3/E5/F3)  (并登录到 Office 使用其组织 ID) 、Office 365 教育版 许可证 (A1/A3/A5) 或 Microsoft 365 教育版 许可证 (A3/A5) ，并且具有 Exchange Online 和活动的 Exchange Online 邮箱。 订阅目录必须位于或联合到Azure Active Directory。
+可以查看以下版本Office Exchange，或使用集中部署[兼容性检查器](#centralized-deployment-compatibility-checker)。
 
 集中部署不支持以下内容：
 
-- 面向 MSI 版本Office的 (除Outlook 2016) 
+- 面向 MSI Office版本的 (加载项Outlook 2016) 
 - 本地目录服务
 - 部署到内部部署Exchange的外接程序部署
 - 部署到 SharePoint 的加载项
 - Teams应用
 - 部署组件对象模型 (COM) 或Visual Studio Tools for Office (VSTO) 加载项。
-- 不包含Microsoft 365的 Exchange Online，例如 SK：Microsoft 365 应用版 for Business 和 Microsoft 365 应用版 for Enterprise。
+- 不包含Microsoft 365 SK：Exchange Online For Business 和 Microsoft 365 应用版 for Business 等Microsoft 365 应用版部署Enterprise。
 
 ### <a name="office-requirements"></a>Office要求
 
@@ -68,9 +68,9 @@ ms.locfileid: "61933763"
 
 - 对于Outlook，用户必须使用下列方法之一：
   - Microsoft 365 商业版许可证版本 1701 或更高版本 (Business Basic、Business Standard、Business 高级版) 、Office 365 企业版 许可证 (E1/E3/E5/F3) 或 Microsoft 365 企业版 许可证 (E3/E5/F3) 。
-  - 2019 年 Office 专业增强版 2019 Office Standard 版本 1808 或更高版本。
-  - MSI 版本 16.0.4494.1000 或更高版本Office 专业增强版 2016 (MSI) 或 Office 标准版 2016 (MSI) \*
-  - MSI 2013 或 Office Professional Plus 2013 版本 15.0.4937.1000 (MSI) Office Standard 2013 () \*
+  - 2019 年 Office 专业增强版 2019 或 Office Standard 版本 1808 或更高版本。
+  - MSI 版本 16.0.4494.1000 或更高版本OFFICE 专业增强版 2016 (MSI) Office 标准版 2016 (MSI) \*
+  - MSI 2013 Office Professional Plus 2013 版本 15.0.4937.1000 (MSI) 或 Office Standard 2013 () \*
   - 版本 16.0.9318.1000 或更高版本Office 2016 for Mac
 - 适用于 iOS 的 Outlook 2.75.0 版或更高版本
 - Android 移动版 2.2.145 Outlook更高版本
@@ -88,14 +88,14 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 若要通过集中部署部署加载项，你需要是组织的全局管理员Exchange管理员。
 
 > [!NOTE]
-> 只有在Exchange中心中将 **App Registrations** 属性设置为 true 时，Azure Active Directory管理员才能部署外接程序，如下图所示：
+> 如果Exchange应用程序管理员角色或在 Azure Active Directory 管理中心中 **将 App Registrations** 属性设置为 true，则管理员可部署外接程序，如下图所示：
 >
 > ![image](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>集中部署兼容性检查器
 
-使用集中部署兼容性检查器，可以验证租户上的用户是否设置为使用 Word、Excel 和 PowerPoint 的集中部署。 Outlook 支持不需要兼容性检查器。 下载 [兼容性检查器](https://aka.ms/officeaddindeploymentorgcompatibilitychecker)。
+使用集中部署兼容性检查器，可以验证租户上的用户是否设置为使用 Word、Excel 和 PowerPoint。 Outlook 支持不需要兼容性检查器。 下载 [兼容性检查器](https://aka.ms/officeaddindeploymentorgcompatibilitychecker)。
 
 #### <a name="run-the-compatibility-checker"></a>运行兼容性检查器
 
@@ -112,7 +112,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   此命令会提示您输入  *_TenantDomain_* (例如 *TailspinToysIncorporated.onmicrosoft。 </span>com*)  *_和 TenantAdmin_* (使用全局管理员凭据) ，然后请求同意。
+   此命令会提示您输入  *_TenantDomain_* (例如 *TailspinToysIncorporated.onmicrosoft。</span>com*)  *_和 TenantAdmin_* (使用全局管理员凭据) ，然后请求同意。
 
    > [!NOTE]
    > 检查器可能需要数分钟或数小时时间来完成检查，具体取决于租户中的用户数。 
@@ -136,7 +136,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 
 ## <a name="user-and-group-assignments"></a>用户和组分配
 
-集中部署功能当前支持大多数受 Azure Active Directory 支持组，Microsoft 365组、通讯组列表和安全组。
+集中部署功能当前支持大多数受 Azure Active Directory组，Microsoft 365组、通讯组列表和安全组。
 
 > [!NOTE]
 > 当前不支持未启用邮件的安全组。
@@ -152,7 +152,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 
 若要找出一个组是否包含嵌套组，最简单的方法是查看 Outlook 内的组联系人卡片。 如果在电子邮件的"到"字段中输入组名称，然后在解析时选择组名称，它将显示该组是否包含用户或嵌套组。 在以下示例中，测试组 Outlook 联系人卡片的" **成员**"选项卡显示没有用户且只有两个子组。
 
-![联系人卡片Outlook"选项卡。](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![联系人卡片Outlook"成员"选项卡。](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
 可以解析某个组，查看该组是否是任何组的成员，从而进行反向查询。在以下示例中，可以在 Outlook 联系人卡片的" **成员身份**"选项卡下看到子组 1 是测试组的成员。
 
@@ -162,7 +162,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 
 ### <a name="contacting-microsoft-for-support"></a>联系 Microsoft 以获取支持
 
-如果你或你的用户在使用已集中部署的 Office Web (Word、Excel 等 ) 应用时遇到加载加载项的问题，你可能需要联系 Microsoft 支持 (了解操作[方法。](../../business-video/get-help-support.md) 在支持票证中提供有关Microsoft 365环境的信息。
+如果你或你的用户在使用已集中部署的 Office Web (Word、Excel 等 ) 应用时遇到加载加载项的问题，你可能需要联系 Microsoft 支持人员 (了解操作方法。[](../../business-video/get-help-support.md) 在支持票证中提供有关Microsoft 365环境的信息。
 
 | 平台 | 调式信息 |
 |:-----|:-----|
@@ -174,5 +174,5 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 [在管理中心部署外接程序 (](../manage/manage-deployment-of-add-ins.md) 文章) \
 [管理中心中的外接程序 (](manage-addins-in-the-admin-center.md) 文章) \
 [集中部署常见问题](../manage/centralized-deployment-faq.yml) (文章) \
-[将Microsoft 365用户升级至](../setup/upgrade-users-to-latest-office-client.md)最新 Office 客户端 (文章) 
+[将业务Microsoft 365升级到](../setup/upgrade-users-to-latest-office-client.md)最新 Office 客户端 (文章) 
  

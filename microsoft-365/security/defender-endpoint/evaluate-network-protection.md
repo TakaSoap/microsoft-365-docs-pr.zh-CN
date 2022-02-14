@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365solution-scenario
 ms.date: ''
-ms.openlocfilehash: 98c97afb34518f32e4d8a5da03ad35d99e5494cd
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: fb46d0c03aaaaad016ca13be5bfa26a19887794c
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320795"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807448"
 ---
 # <a name="evaluate-network-protection"></a>网络保护功能评估
 
@@ -38,18 +38,21 @@ ms.locfileid: "62320795"
 > [!TIP]
 > 还可以访问 Microsoft Defender 演示方案网站，demo.wd.microsoft.com 其他保护功能[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)如何工作。
 
+> [!NOTE]
+> 位于 Demo.wd.microsoft.com 的 Defender for Endpoint 演示网站已弃用，并且将在未来删除。
+
 ## <a name="enable-network-protection-in-audit-mode"></a>在审核模式下启用网络保护
 
 在审核模式下启用网络保护，以查看哪些 IP 地址和域已被阻止。 你可以确保它不会影响业务线应用，或了解阻止出现频繁发生的情况。
 
-1. 在 **"管理"中"开始"菜单 powershell**，右 **键单击"** Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **脚本中键入 powershell**"开始"菜单右 **键单击"** Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
     Set-MpPreference -EnableNetworkProtection AuditMode
     ```
 
-### <a name="visit-a-fake-malicious-domain"></a>访问 (恶意) 的假密码
+### <a name="visit-a-fake-malicious-domain"></a>访问恶意 (假) 的站点
 
 1. 打开Internet Explorer浏览器、Google Chrome 或你选择的其他浏览器。
 
@@ -74,7 +77,7 @@ ms.locfileid: "62320795"
 
 ## <a name="see-also"></a>另请参阅
 
-- [网络保护功能](network-protection.md)
+- [网络保护](network-protection.md)
 
 - [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 

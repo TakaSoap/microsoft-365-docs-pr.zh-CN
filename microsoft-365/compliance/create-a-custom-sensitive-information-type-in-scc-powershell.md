@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: 4e9a6eb7c4766fa598b0a28f7632c7c3ed530f9e
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: ffca0717bbefdad90854f118131fe45ae3ce4dfd
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272062"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806236"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "62272062"
 创建格式良好的 XML 文件后，可以使用 PowerShell 将其Microsoft 365文件。 然后，即可在策略中使用您的自定义敏感信息类型。 您可以测试其检测敏感信息的有效性（如预期）。
 
 > [!NOTE]
-> 如果不需要 PowerShell 提供的精细控件，可以在该控件中创建自定义Microsoft 365 合规中心。 有关详细信息，请参阅[创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)。
+> 如果不需要 PowerShell 提供的精细控件，可以在自定义控件中创建自定义Microsoft 365 合规中心。 有关详细信息，请参阅[创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)。
 
 ## <a name="important-disclaimer"></a>重要免责声明
 
@@ -163,8 +163,8 @@ MCS 可以提供用于测试的正则表达式。 他们还可以协助排查使
 对于多个模式匹配，需要考虑一些要点：
 
 - 需要更多证据的模式具有更高的可信度级别。 根据可信度，可以执行以下操作：
-  - 使用更严格的操作 (，例如) 高可信度匹配项阻止内容。
-  - 使用限制性较低的 (，例如发送) 可信度较低的邮件。
+  - 使用更严格的操作 (，例如) 高可信度匹配的内容。
+  - 使用限制性较低的 (，例如发送) 置信度较低的邮件。
 
 - 支持和元素`IdMatch``Match`引用 RegExes 和关键字，它们实际上是 `Rule` 元素的子元素，而不是 `Pattern`。 这些支持元素由 引用， `Pattern`但包含在 中 `Rule`。 此行为意味着支持元素（如正则表达式或关键字列表）的单个定义可以通过多个实体和模式引用。
 
@@ -450,7 +450,7 @@ Microsoft 365提供了两个通用验证程序
 
 ## <a name="changes-for-exchange-online"></a>针对 Exchange Online 的变化
 
-以前，你可能已使用过 Exchange Online PowerShell 为 DLP 导入自定义敏感信息类型。 现在，自定义敏感信息类型可用于管理Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">和</a>合规中心。 此次改进后，应使用合规中心 PowerShell 导入自定义敏感信息类型，不再可从 Exchange PowerShell 导入它们。 自定义敏感信息类型将像往常一样正常工作，但是，在合规中心进行的更改可能需要至多一小时才会出现在 Exchange 管理中心。
+以前，你可能已使用过 Exchange Online PowerShell 为 DLP 导入自定义敏感信息类型。 现在，自定义敏感信息类型可在管理中心和合规Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">使用</a>。 此次改进后，应使用合规中心 PowerShell 导入自定义敏感信息类型，不再可从 Exchange PowerShell 导入它们。 自定义敏感信息类型将像往常一样正常工作，但是，在合规中心进行的更改可能需要至多一小时才会出现在 Exchange 管理中心。
 
 请注意，在合规中心中，可以使用 **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** cmdlet 上载规则包。 （以前，在 Exchange 管理中心中，使用的是 **ClassificationRuleCollection**`cmdlet。）
 
@@ -529,7 +529,7 @@ Microsoft 365提供了两个通用验证程序
 
   例如， `.{1,m}asdf` 无法通过验证。 请改为使用 `.asdf`。
 
-- 组中不能有无限 (重复 `*` `+`) 或重复。
+- 组中不能有无限 (重复 `*` `+` 器，) 或无限制。
 
   例如， `(xx)\*` 和 `(xx)+` 无法通过验证。
 
@@ -537,13 +537,13 @@ Microsoft 365提供了两个通用验证程序
 
 - 每个自定义敏感信息类型最多可以包含 2048 个关键字。
 
-- 为了符合 AD 架构限制，单个租户中关键字词典的最大大小为 480KB。 创建自定义敏感信息类型时，请尽情地根据需要多次引用同一词典。 请先在敏感信息类型中创建自定义关键字列表，然后如果关键字列表中有超过 2048 个关键字或某个关键字长度超过 50 个字符时，请使用关键字词典。
+- 为了符合 AD 架构限制，单个租户中关键字词典的最大大小为 480 KB。 创建自定义敏感信息类型时，请尽情地根据需要多次引用同一词典。 请先在敏感信息类型中创建自定义关键字列表，然后如果关键字列表中有超过 2048 个关键字或某个关键字长度超过 50 个字符时，请使用关键字词典。
 
 - 租户中最多允许 50 种基于关键字字典的敏感信息类型。
 
 - 确保每个 Entity 元素都包含一个 recommendedConfidence 属性。
 
-- 使用 PowerShell Cmdlet 时，最多可返回约 1 MB 的反序列化数据。   这会影响规则包 XML 文件的大小。 将所上传文件的建议上限设置为 770 KB，以确保结果一致，处理时不会出错。
+- 使用 PowerShell Cmdlet 时，反反初始化数据的最大返回大小约为 1 MB。   这会影响规则包 XML 文件的大小。 将所上传文件的建议上限设置为 770 KB，以确保结果一致，处理时不会出错。
 
 - XML 结构不需要格式字符，如空格、制表符或回车/换行条目。  在针对上传空间进行优化时，请注意这一点。 诸如 Microsoft Visual Code 等工具提供连接线功能来压缩 XML 文件。
 

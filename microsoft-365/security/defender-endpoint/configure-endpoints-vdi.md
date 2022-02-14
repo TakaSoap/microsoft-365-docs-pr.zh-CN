@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 09/22/2021
+ms.date: 02/14/2022
 ms.technology: mde
-ms.openlocfilehash: c27fe45dd00ca5f0241869195daa697a268af92e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3e430d44789a1f3c43ec55a20ee7e06521f2dcaf
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167522"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807628"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>将非永久性虚拟桌面基础结构 (VDI) 设备载入Microsoft 365 Defender
 
@@ -38,9 +38,9 @@ ms.locfileid: "61167522"
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)。
 
  > [!NOTE]
-  > **永久性 VDI**  - [将永久性 VDI 计算机](configure-endpoints.md)载入 Microsoft Defender for Endpoint 的处理方式与载入物理计算机（如台式机或笔记本电脑）的方式相同。 组策略Microsoft Endpoint Manager和其他方法可用于载入永久计算机。 在 Microsoft 365 Defender门户中， (下选择你的首选载入方法，然后按照该 https://security.microsoft.com) 类型的说明进行操作。 
+  > **永久性 VDI** - [将永久性 VDI 计算机](configure-endpoints.md) 载入 Microsoft Defender for Endpoint 的处理方式与载入物理计算机（如台式机或笔记本电脑）的方式相同。 组策略Microsoft Endpoint Manager和其他方法可用于载入永久计算机。 在 Microsoft 365 Defender门户中， (https://security.microsoft.com)下选择你的首选载入方法，然后按照该类型的说明进行操作。 
 
-## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>在 VDI 设备上载入 (虚拟) 基础结构
+## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>在 VDI 设备上载入非永久性 () 基础结构
 
 Defender for Endpoint 支持非永久性 VDI 会话载入。
 
@@ -65,26 +65,24 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 ### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>对于 Windows 10、Windows 11、Windows Server 2019 或 Windows Server 2022
 
-1.  打开 VDI 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender包</a>：
+1.  打开 VDI 配置包.zip文件 (*WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">包</a>：
 
-    1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
+    1. 在导航窗格中，**选择"设置** > **EndpointsDevice** >  **managementOnboarding** > "。
 
     1. 选择操作系统。
 
-    1.  在 **"部署方法"** 字段中，选择 **"非永久性终结点的 VDI 载入脚本"。**
+    1.  在 **"部署方法"** 字段中，选择"非永久性终结点的 **VDI 载入脚本"**。
 
     1. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将文件从从 .zip 文件提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。 
-
-2. 将文件从从 .zip 文件提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。
+2. 将文件从从 .zip 文件中提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`。
     1. 如果要为每台设备实现多个条目（每个会话一个条目），请复制 WindowsDefenderATPOnboardingScript.cmd。
-    2. 如果你要针对每台设备实现单个条目，请复制 Onboard-NonPersistentMachine.ps1 和 WindowsDefenderATPOnboardingScript.cmd。
+    2. 如果你要针对每台设备实现单个条目，请同时复制 Onboard-NonPersistentMachine.ps1 和 WindowsDefenderATPOnboardingScript.cmd。
 
     > [!NOTE]
     > 如果看不到该文件夹 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` ，它可能处于隐藏状态。 你需要从文件资源管理器中选择显示隐藏 **文件和** 文件夹选项。
 
-3. 打开本地组策略编辑器窗口并 **导航到计算机** 配置 \> **Windows 设置** \> **脚本** \> **启动**。
+3. 打开本地组策略编辑器窗口并导航 **到计算机**\>配置 **Windows 设置** \> **脚本** \> **启动**。
 
    > [!NOTE]
    > 域组策略还可用于载入非永久性 VDI 设备。
@@ -92,11 +90,11 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 4. 根据你要实现的方法，请按照相应步骤操作：
     - 对于每台设备的单个条目：
 
-         选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1` 。 无需指定其他文件，因为它将自动触发。
+         选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1`。 无需指定其他文件，因为它将自动触发。
 
     - 对于每台设备的多个条目：
 
-         选择"**脚本**"选项卡，然后单击 **"添加** (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `WindowsDefenderATPOnboardingScript.cmd` 。
+         选择"**脚本**"选项卡，**然后单击"添加** (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `WindowsDefenderATPOnboardingScript.cmd`。
 
 5. 测试解决方案：
    1. 创建具有一台设备的池。
@@ -111,7 +109,7 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 7. 通过输入设备名称并选择设备作为搜索类型 **来** 使用搜索函数。
 
-## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>对于下层 SKUS (Windows Server 2008 R2/2012 R2/2016) 
+## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>对于下层 SKUs (Windows Server 2008 R2/2012 R2/2016) 
 
 > [!NOTE]
 > 以下注册表仅在目标是实现"每个设备的单个条目"时相关。
@@ -161,7 +159,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 3. 根据需要为映像提供服务。
 
-4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能累积 https://download.sysinternals.com/files/PSTools.zip) 的网络文件夹内容：
+4. 使用可下载的 https://download.sysinternals.com/files/PSTools.zip) PsExec.exe (运行以下命令，以清理传感器自启动后可能累积的网络文件夹内容：
 
     ```console
     PsExec.exe -s cmd.exe

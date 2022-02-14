@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: 了解如何将缩小和捆绑技术与 Web Essentials 一同使用，以减少 HTTP 请求和在 SharePoint Online 中加载页面所花的时间。
-ms.openlocfilehash: bf9c997fc5245fbe58e1ffd8c306f9818783bd3f
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: fabf690f523cabf67fe775bbd1a10251a477f633
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281467"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807112"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>SharePoint Online 中的缩小和捆绑
 
 本文介绍如何将缩小和捆绑技术与 Web Essentials 一同使用，以减少 HTTP 请求数并缩短在 SharePoint Online 中加载页面所花的时间。
   
-当您自定义网站时，您最终可以向服务器添加大量额外的文件以支持自定义。 添加额外的 JavaScript、CSS 和图像会增加对服务器的 HTTP 请求数，进而增加显示网页的时间。 如果有多个相同类型的文件，可以捆绑这些文件，以加快下载这些文件的速度。
+当您自定义网站时，您最终可以向服务器添加大量额外文件以支持自定义。 添加额外的 JavaScript、CSS 和图像会增加对服务器的 HTTP 请求数，进而增加显示网页所花的时间。 如果有多个相同类型的文件，可以捆绑这些文件，以加快下载这些文件的速度。
   
 对于 JavaScript 和 CSS 文件，您还可以使用一种称为缩小的方法，通过删除不需要的空格和其他字符来减小文件的总大小。
   
@@ -41,12 +41,12 @@ ms.locfileid: "62281467"
 可以使用第三方软件（如 Web Essentials）捆绑 CSS 和 JavaScript 文件。
   
 > [!IMPORTANT]
-> Web Essentials 是一个基于社区的第三方开放源代码项目。 该软件是 2012 Visual Studio 2012 和 Visual Studio 2013的扩展，不受 Microsoft 支持。 若要下载 Web Essentials，请访问 位于 的网站 [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)。
+> Web Essentials 是一个基于社区的第三方开放源代码项目。 该软件是 Visual Studio 2012 和 Visual Studio 2013的扩展，不受 Microsoft 支持。 若要下载 Web Essentials，请访问 位于 的网站 [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)。
   
 Web Essentials 提供两种形式的捆绑：
   
 - .bundle：用于 CSS 和 JavaScript 文件
-- .sprite：适用于 (仅在 Visual Studio 2013) 
+- .sprite：对于 (仅在 Visual Studio 2013) 
 
 如果您的现有功能具有自定义母版页中引用的一些品牌元素，您可以使用 Web Essentials，例如：
   
@@ -65,7 +65,7 @@ Web Essentials 提供两种形式的捆绑：
   
 ![JavaScript 和 CSS 方法文件的屏幕截图。](../media/7ba891f8-52d8-467b-a0f6-b062dd1137a4.png)
   
-此外，如果在捆绑方法中将缩小标志设置为 true，则文件会减小大小并捆绑在一起。 这意味着已创建可在母版页中引用的 JavaScript 文件的新缩小版本。
+此外，如果在捆绑方法中将缩小标志设置为 true，文件的大小将减小并捆绑在一起。 这意味着已创建可在母版页中引用的 JavaScript 文件的新缩小版本。
   
 ![缩小标志设置为 true 的屏幕截图。](../media/50523af2-6412-4117-ac3d-5bd26f6d562e.png)
   
@@ -79,7 +79,7 @@ Web Essentials 提供两种形式的捆绑：
   
 ![显示正在下载的 74 个项目的屏幕截图。](../media/686c4387-70e8-4a74-9d45-059f33a91184.png)
   
-捆绑后，JavaScript 捆绑文件将显著从 815KB 减少为 365KB：
+捆绑后，JavaScript 捆绑文件将显著从 815 KB 减少为 365 KB：
   
 ![显示下载大小减小的屏幕截图。](../media/5e7dbd98-faff-4f68-b320-108fb252e395.png)
   

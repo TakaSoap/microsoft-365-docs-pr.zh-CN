@@ -1,6 +1,6 @@
 ---
-title: '了解并使用 ASR (攻击面) '
-ms.reviewer: null
+title: '了解并使用攻击面减少 (ASR) '
+ms.reviewer: ''
 description: 了解 Microsoft Defender for Endpoint 的攻击面减少功能。
 keywords: asr， 攻击面减少， Microsoft Defender for Endpoint， microsoft defender， 防病毒， av， windows defender
 ms.prod: m365-security
@@ -17,8 +17,13 @@ ms.topic: conceptual
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
+ms.openlocfilehash: 78fdd5c6c02990943874807c285f8e5eb60ad6ad
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807580"
 ---
-
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>了解并使用攻击面减少功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -46,7 +51,7 @@ ms.date: 1/18/2022
 
    1. 查看 Windows 中的基本策略。 请参阅 [示例基本策略](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)。
    2. 请参阅Windows Defender[控件设计指南](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide)。
-   3. 请参阅使用 [WDAC Windows Defender部署 (控制) 策略](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)。
+   3. 请参阅使用 [WDAC Windows Defender部署 (应用程序) 策略](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)。
 
 3. [启用受控文件夹访问权限](enable-controlled-folders.md)。
 
@@ -84,7 +89,7 @@ ms.date: 1/18/2022
 
 这些功能不会阻止或阻止应用、脚本或文件被修改。 但是，Windows事件日志将记录事件，就像功能完全启用一样。 使用审核模式，你可以查看事件日志，以查看如果启用该功能，将有什么影响。
 
-若要查找审核的条目，  \>  \>请转到"Microsoft 应用程序和服务"Windows **Windows Defender** \> \> **操作"**。
+若要查找审核的条目，  \>请转到"Microsoft 应用程序和服务 **"** \> Windows **Windows Defender** \> \> **操作"**。
 
 使用 Defender for Endpoint 获取每个事件的更多详细信息。 这些详细信息对于调查攻击面减少规则尤其有用。 使用 Defender for Endpoint 控制台，你可以调查作为警报时间线和调查方案的 [一部分的问题](investigate-alerts.md)。
 
@@ -92,6 +97,9 @@ ms.date: 1/18/2022
 
 > [!TIP]
 > 您还可以访问 Testground Windows Defender[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 确认这些功能是否正常工作并查看它们如何工作。
+
+> [!NOTE]
+> 位于 Demo.wd.microsoft.com 的 Defender for Endpoint 演示网站已弃用，并且将在未来删除。
 
 | 审核选项 | 如何启用审核模式 | 如何查看事件 |
 |---|---|---|
@@ -139,7 +147,7 @@ ms.date: 1/18/2022
 
 #### <a name="copy-the-xml-directly"></a>直接复制 XML
 
-1. 在 **事件** 查看器中键入"开始"菜单并打开Windows **事件查看器**。
+1. 在 **事件查看器** 中键入"开始"菜单，然后打开Windows **事件查看器**。
 
 2. 在左侧面板的"操作 **"下**，选择 **"创建自定义视图..."。**
 
@@ -150,7 +158,7 @@ ms.date: 1/18/2022
 
 4. 将您希望从中筛选事件的功能的 XML 代码粘贴到 XML 部分。
 
-5. 选择“确定”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
+5. 选择“**确定**”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
 
 #### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻击面减少规则事件的 XML
 
@@ -212,7 +220,7 @@ ms.date: 1/18/2022
 可以在事件查看器中Windows这些事件：
 
 1. 打开" **开始"** 菜单并 **键入事件查看器**，然后选择 **事件查看器** 结果。
-2. 展开 **Microsoft >服务日志> Windows** 然后转到下表 **中的提供程序/源** 下列出的文件夹。
+2. 展开 **Microsoft >** 应用程序和服务日志> Windows然后转到下表中的提供程序 **/源** 下列出的文件夹。
 3. 双击子项以查看事件。 滚动浏览事件以查找你正在查找的事件。
 
    ![使用事件查看器显示动画。](images/event-viewer.gif)
@@ -262,7 +270,7 @@ ms.date: 1/18/2022
 |攻击面减少|Windows Defender (操作) |1121|在阻止模式下触发规则时的事件|
 
 >[!NOTE]
-> 从用户的角度来看，ASR 警告模式通知是作为攻击面减少Windows一个 Toast 通知。
+> 从用户的角度来看，ASR 警告模式通知作为攻击面减少Windows Toast 通知。
 >
 > 在 ASR 中，网络保护仅提供审核和阻止模式。
 
@@ -272,9 +280,9 @@ ms.date: 1/18/2022
 
 | 文章 | 说明 |
 |:---|:---|
-| [基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 使用容器隔离Microsoft Edge保护恶意网站。 |
+| [基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 使用容器隔离Microsoft Edge帮助防范恶意网站。 |
 | [应用程序控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | 使用应用程序控制，以便应用程序必须获得信任才能运行。 |
-| [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑 (包括文件加密勒索软件恶意软件) 更改关键系统文件夹中的文件 (要求Microsoft Defender 防病毒)  |
+| [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑应用 (包括文件加密勒索软件恶意软件) 更改关键系统文件夹中的文件 (需要Microsoft Defender 防病毒)  |
 | [网络保护功能](network-protection.md) | 将保护扩展到组织设备上网络流量和连接。  (需要Microsoft Defender 防病毒)  |
 | [漏洞保护](exploit-protection.md) | 帮助保护组织使用的操作系统和应用免遭攻击。 Exploit Protection 还适用于第三方防病毒解决方案。 |
 | [攻击面减少规则](attack-surface-reduction.md) | 使用有助于停止恶意软件的智能规则，减少应用程序中的漏洞（攻击面）。  (需要Microsoft Defender 防病毒) 。 |
