@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1ec2694fa974cde3f8316f4ad0937fc686d16c63
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: c955ab15640a8c3154e14ba0201946e109f832a9
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444649"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807376"
 ---
 # <a name="turn-on-block-at-first-sight"></a>打开“首次看到时阻止”
 
@@ -152,6 +152,9 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 若要验证该功能是否正常工作，请下载[“首次看到时阻止”示例文件](https://demo.wd.microsoft.com/Page/BAFS)。 若要下载该文件，你需要在 Azure AD 中拥有分配有安全管理员或全局管理员角色的帐户。
 
 若要验证该功能是否正常工作，请按照[验证网络和云之间的连接](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)中的指导进行操作。
+
+> [!NOTE]
+> 位于 demo.wd.microsoft.com 处的 Defender for Endpoint 演示网站已弃用，并将在未来删除。
 
 ## <a name="turn-off-block-at-first-sight"></a>关闭“首次看到时阻止”
 

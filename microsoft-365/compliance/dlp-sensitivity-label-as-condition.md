@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解可在 DLP 策略中使用敏感度标签作为条件的服务和项目类型
-ms.openlocfilehash: b74911765d9249834553c09bbd4efdd02e5f97ce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1117471e38b430f1d7289c6aae76994ac5acd494
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163392"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806884"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>在 DLP 策略中使用敏感度标签作为条件
 
-在以下位置的 DLP 策略中，可使用[敏感度标签](sensitivity-labels.md)作为条件：
+在以下位置的 DLP 策略中，可将 [敏感度标签](sensitivity-labels.md) 用作条件：
 
 - Exchange Online 电子邮件
 - SharePoint Online
@@ -79,7 +79,7 @@ ms.locfileid: "60163392"
 
 - 如果与包含敏感度标签的 DLP 策略匹配，则敏感度标签也将显示为事件报告电子邮件的一部分。
 
-- 敏感度标签的详细信息也将显示在 DLP 规则匹配审核日志中，该策略包含敏感度标签作为条件。
+- 对于包含敏感度标签作为条件的 DLP 策略匹配，敏感度标签详细信息也将显示在 DLP 规则匹配审核日志中。
 
 
 ### <a name="support-policy-tips"></a>支持策略提示

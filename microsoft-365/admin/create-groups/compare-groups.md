@@ -23,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
-description: Microsoft 365 组成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
-ms.openlocfilehash: f990f2c605ce72668f28831b903ebdf8ee50c5f9
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Microsoft 365 组成员将收到组电子邮件，并获取用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
+ms.openlocfilehash: cc70fdf534b7240fd914c42f01b2c89843d1372f
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934617"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805828"
 ---
 # <a name="compare-groups"></a>比较组
 
@@ -53,7 +53,7 @@ ms.locfileid: "61934617"
 
 ## <a name="microsoft-365-groups"></a>Microsoft 365 组
 
-Microsoft 365 组用于公司内外用户之间的协作。 对于每个 Microsoft 365 组，成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区、流和规划器。
+Microsoft 365 组用于公司内外用户之间的协作。 对于每个 Microsoft 365 组，成员将收到组电子邮件并获取用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
 
 只要[管理员启用](manage-guest-access-in-groups.md)了此功能，你就可以将组织外部的人员添加到组中。 还可以允许外部发件人向组电子邮件地址发送电子邮件。
 
@@ -111,9 +111,9 @@ Microsoft 365 组不能是安全组成员。
 
 共享邮箱包括可用于协作的日历。
 
-如果管理员已授予用户执行该操作的权限，具有组邮箱权限的用户可以作为或代表邮箱电子邮件地址发送。 这对帮助和支持邮箱尤其有用，因为用户可从 "Contoso 支持" 或 "构建 A 接待台" 发送电子邮件。
+如果管理员已授予用户执行该操作的权限，则具有组邮箱权限的用户可以使用或代表邮箱电子邮件地址发送。 这对帮助和支持邮箱尤其有用，因为用户可从“Contoso 支持”或“构建 A 前台”发送电子邮件。
 
-无法将共享邮箱迁移到Microsoft 365组。 
+无法将共享邮箱迁移到Microsoft 365组。
 
 ## <a name="related-content"></a>相关内容
 

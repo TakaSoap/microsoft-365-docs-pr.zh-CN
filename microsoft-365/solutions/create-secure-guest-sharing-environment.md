@@ -18,12 +18,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: 了解可用于在 Microsoft 365 中创建安全来宾共享环境的选项，提供来宾访问以改进协作。
-ms.openlocfilehash: 775a5f1376df1bca553bc1b3b9cd92072736ac60
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ae616bcaa78aa759ca5b1f1be4b1beaf8d709a00
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203731"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807604"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 
@@ -142,7 +142,7 @@ ms.locfileid: "60203731"
 13. 键入“**评审姓名**”然后查看设置。
 14. 单击“**创建**”。
 
-请务必注意，可以向来宾授予对团队或组的访问权限，也可以授予对各个文件和文件夹的访问权限。 授予对文件和文件夹的访问权限时，可能不会将来宾添加到任何特定组。 如果想要对不属于团队或组的来宾执行访问评审，可在 Azure AD 中创建一个动态组，以包含所有来宾并为该组创建访问评审。 网站所有者还可以管理[网站来宾的到期时间](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
+请务必注意，对于 SharePoint 和 OneDrive 位置，在检测到敏感信息后，无论是否为共享文档，都将为所有外部用户立即主动阻止文档，而内部用户将继续有权访问文档。
 
 ### <a name="more-information"></a>更多信息
 

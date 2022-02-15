@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: 了解金融服务机构如何通过使用 Microsoft 365 和 Teams 来维持财务安全合规性并高效协作。
 f1.keywords: NOCSH
-ms.openlocfilehash: 8f974340423156c46e907d7ed6b8793a255ad189
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e94ad0e1f7b6f0c8b76f40b6492f69b23655855c
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111527"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807544"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -175,7 +175,7 @@ Microsoft 365 允许所有组织通过一组强大的功能来识别组织内的
 
 **[Microsoft 信息保护 (MIP)](../compliance/information-protection.md)** 使组织可以使用敏感度标签智能地对文档和电子邮件进行分类。 敏感度标签可由用户手动应用到 Microsoft Office 应用程序中的文档和 Outlook 中的电子邮件。 标签可自动应用文档标记、加密保护和权限管理实施。 还可以通过配置使用关键字和敏感数据类型（例如信用卡号、社会保险号码和标识号码）的策略来自动应用灵敏度标签，以便自动查找敏感数据并对其进行分类。
 
-此外，Microsoft 还提供了“可训练的分类器”，它们使用机器学习模型根据内容识别敏感数据，而不是简单地通过模式匹配或内容中的元素进行识别。 分类器通过查看大量要分类的内容的示例，了解如何标识内容类型。 要训练分类器，首先为其提供特定类别中内容示例。 从这些示例中学习后，通过提供匹配和不匹配示例组合对该模型进行测试。 分类器预测给定示例是否属于该类别。 然后，用户可通过确认结果，对正、负、假正和假负进行分类，来帮助提高分类器预测的准确性。 发布训练后的分类器时，它将处理 Microsoft SharePoint Online、Exchange Online 和 OneDrive for Business 中的内容，并自动对内容进行分类。
+此外，Microsoft 还提供了“可训练分类器”，它们使用机器学习模型根据内容识别敏感数据，而不是简单地通过模式匹配或内容中的元素进行识别。 分类器通过查看大量要分类的内容的示例，了解如何标识内容类型。 要训练分类器，首先为其提供特定类别中内容示例。 从这些示例中学习后，通过提供匹配和不匹配示例组合对该模型进行测试。 分类器预测给定示例是否属于该类别。 然后，用户可通过确认结果，对正、负、假正和假负进行分类，来帮助提高分类器预测的准确性。 发布训练后的分类器时，它将处理 Microsoft SharePoint Online、Exchange Online 和 OneDrive for Business 中的内容，并自动对内容进行分类。
 
 将灵敏度标签应用于文档和电子邮件将嵌入标识对象内所选灵敏度的元数据。 然后，灵敏度与数据一起移动。 因此，即使标记的文档存储在用户桌面或本地系统中，它仍会受到保护。 此功能可使其他 Microsoft 365 解决方案 (如 Microsoft Defender for Cloud Apps) 或网络边缘设备识别敏感数据并自动实施安全控制。 灵敏度标签具有额外的优势，那就是让员工了解组织内哪些数据被视为敏感数据，以及如何在接收数据时对其进行处理。
 
@@ -194,7 +194,7 @@ Identity Protection 通过利用 Microsoft 生态系统中基于启发、用户�
 Microsoft 最近推出了 Microsoft 365 Defender 解决方案，该解决方案旨在不断变化的威胁形势下保护新式组织。 通过利用 Intelligent Security Graph，威胁防护解决方案针对多个攻击途径提供了全面的集成安全性。
 
 ### <a name="the-intelligent-security-graph"></a>[Intelligent Security Graph](https://www.microsoft.com/security/business/intelligence) 
-Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 为了对抗网络威胁，Intelligent Security Graph 使用高级分析链接来自 Microsoft 及其合作伙伴的威胁情报和安全信号。 Microsoft 大规模地运营全局服务，收集数万亿在栈中提供强大保护层的安全信号。 机器学习模型对此情报进行评估，信号和威胁见解在我们的产品和服务中广泛共享。 这使我们能够快速检测和响应威胁，并为客户提供可操作的警报和信息，以便进行补救。 我们的机器学习模型使用新的见解进行持续训练和更新，帮助我们构建更安全的产品并提供更主动的安全性。
+Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 为了对抗网络威胁，Intelligent Security Graph 使用高级分析链接来自 Microsoft 及其合作伙伴的威胁情报和安全信号。 Microsoft 大规模地运营全局服务，收集数万亿在栈中提供强大保护层的安全信号。 机器学习模型对此情报进行评估，并在我们的产品和服务中广泛共享信号和威胁见解。 这使我们能够快速检测和响应威胁，并为客户提供可操作的警报和信息，以便进行补救。 我们的机器学习模型使用新的见解进行持续训练和更新，帮助我们构建更安全的产品并提供更主动的安全性。
 
 [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) 提供了一项集成的 Microsoft 365 服务，保护组织免受通过电子邮件和 Office 文档传递的恶意链接和恶意软件的攻击。 影响当前用户的最常见的攻击途径之一是电子邮件钓鱼攻击。 这些攻击可以针对特定用户，并且可能非常有说服力，其中一些命令会提示用户单击恶意链接或打开包含恶意软件的附件。 计算机受到感染后，攻击者可以窃取用户的凭据并在组织中横向移动，或窃取电子邮件和数据来查找敏感信息。 Defender for Office 365 通过在单击时评估文档和链接是否存在潜在的恶意意图来支持安全附件和安全链接，并阻止访问。 将在受保护的沙箱中打开电子邮件附件，然后将其发送到用户邮箱。 此外，它还会评估 Office 文档中的恶意 URL 链接。 Defender for Office 365 还保护 SharePoint Online、OneDrive for Business 和 Teams 中的链接和文件。 如果检测到恶意文件，Defender for Office 365 会自动锁定该文件以减少潜在的损害。
 
@@ -315,7 +315,7 @@ Microsoft 365 中的通信合规性使组织可以预配置策略，以捕获员
 
 让员工使用可在任意位置访问的联机协作工具本身就会给组织带来风险。 员工可能会无意间或恶意向攻击者或竞争对手泄露数据。  或者，他们可能泄露数据以供个人使用，或将数据提供给未来的雇主。 从安全性和合规性的角度来看，这些场景给金融服务机构带来了严重的风险。 当这些风险发生时识别它们，而快速缓解风险需要数据收集和跨部门（如法律、人力资源和信息安全）协作的智能工具。
 
-Microsoft 365 最近启动了一个内部风险管理解决方案，它将 Microsoft 365 服务中的信号关联起来，并使用机器学习模型分析用户行为，以发现内部风险的隐藏模式和迹象。 此工具可实现安全操作、内部调查人员和 HR 之间的协作，以便他们能够根据预定工作流轻松修正案例。  
+最近，Microsoft 365 启动了一个内部风险管理解决方案，它将 Microsoft 365 服务中的信号关联起来，并使用机器学习模型分析用户行为，以发现内部风险的隐藏模式和迹象。 此工具可实现安全操作、内部调查人员和 HR 之间的协作，以便他们能够根据预定工作流轻松修正案例。  
 
 例如，Microsoft 365 中的内部风险管理可将来自用户 Windows 10 桌面版的信号关联起来（例如，将文件复制到 USB 驱动器，或通过电子邮件发送个人电子邮件帐户，其中包括 Office 365 电子邮件、SharePoint Online、Microsoft Teams 或 OneDrive for Business 等联机服务中的活动），以识别数据泄漏模式。 它还可以将这些活动与离开组织的员工关联起来，这是一种常见的数据泄漏模式。 它可监控一段时间内的多个活动和行为。 当常见模式出现时，它会发出警报，帮助调查人员专注于主要活动，以高可信度验证是否违反了策略。 内部风险管理可以对调查人员的数据进行伪匿名化处理，以帮助满足数据隐私规定，同时还可以提供帮助他们有效开展调查的关键活动。 它允许调查人员将关键活动数据打包并安全地发送给 HR 和法律部门，遵循常见的升级工作流程，以对出现的案例实施补救行动。
 

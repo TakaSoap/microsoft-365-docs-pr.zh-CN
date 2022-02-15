@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何使用高级元数据搜索在 SharePoint 文档库中使用 SharePoint Syntex 查找项目。
-ms.openlocfilehash: 99cf65c5baf57255ff880a859b8fd0b24bab733f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b5dffe0cd0bf481c1243d87450110d545578a06b
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717445"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806897"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>在 Microsoft 文档库中搜索元数据SharePoint Syntex
 
@@ -39,14 +39,15 @@ ms.locfileid: "60717445"
 
     ![显示元数据搜索窗格的文档库页面的屏幕截图。](../media/content-understanding/metadata-search-pane.png)
 
-   目前，有五个元数据搜索字段可用。 以后将添加更多字段。
+   目前，有六个元数据搜索字段可用。 以后将添加更多字段。
 
    |字段    |使用此字段可  |
    |---------|---------|
    |关键字 |在元数据或文档的全文中搜索字符串匹配项。 |
-   |名称     |在库的 **名称** 列中搜索。          |
+   |文件名     |在库的 **名称** 列中搜索。          |
    |人员   |搜索库中任何列中人员匹配项。   |
-   |Modified |按库中 **已修改** 列中的选定日期范围进行搜索。         |
-   |类型     |按所选文件类型搜索。        |
+   |修改日期 |按库中 **已修改** 列中的选定日期范围进行搜索。         |
+   |文件类型     |按所选文件类型（例如 Word 文档或 PDF）搜索。        |
+   |内容类型  |按所选内容类型搜索。 仅当库中应用了非默认内容类型时，才会显示此选项。 默认内容类型为 *文档* 和 *文件夹*。        |
 
 3. 选择“**搜索**”。 与元数据搜索匹配的文档显示在结果页面上。 

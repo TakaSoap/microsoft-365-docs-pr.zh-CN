@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5b0be9c044b48788e5abb04f469b9f6ab0038cd5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b193279f9891badc78e639776a57a366a0fa8109
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374528"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807076"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>检测并阻止可能不需要的应用程序
 
@@ -87,6 +87,9 @@ Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下�
 
 > [!TIP]
 > 请访问 microsoft Defender for Endpoint 演示网站 [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) 确认该功能是否正常工作，并查看其操作结果。
+
+> [!NOTE]
+> 位于 demo.wd.microsoft.com 处的 Defender for Endpoint 演示网站已弃用，并将在未来删除。
 
 如果你的公司正在进行内部软件安全合规性检查，并且希望避免出现任何误报，则审核模式下的 PUA 保护十分有用。
 

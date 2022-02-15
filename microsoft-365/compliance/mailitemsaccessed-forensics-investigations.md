@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 MailItemsAccessed 邮箱审核操作对被盗用的用户账户进行司法鉴定调查。
-ms.openlocfilehash: 8446c933f71717e57850bbbf2cce49391e26782c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8bfba164bf3bfb0f4fa4bea687d0fe040cff4836
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872617"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806020"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>使用“高级审核”来调查被盗用的帐户
 
@@ -149,7 +149,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*MailAccessType:Bind*"} | FL
    ```
 
-   所访问的电子邮件由其 Internet 邮件 ID 标识。你还可以检查是否有任何审核记录具有与其他攻击者活动的相同上下文。有关详细信息，请参阅 [识别不同审核记录的访问上下文](#identifying-the-access-contexts-of-different-audit-records) 部分。
+   所访问的电子邮件由其 Internet 邮件 ID 标识。你还可以检查是否有任何审核记录具有与其他攻击者活动相同的上下文。有关详细信息，请参阅[识别不同审核记录的访问上下文](#identifying-the-access-contexts-of-different-audit-records)部分。
 
    可以使用审核数据采用两种方式进行绑定操作：
 
@@ -173,12 +173,12 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 |MailAccessType|指定访问是绑定还是同步操作。|
 |MailboxUPN|被读取邮件所在邮箱的 UPN。|
 |User|阅读邮件用户的 UPN。|
-|SessionId|会话 id 有助于同一邮箱中的攻击者行为和日常用户行为（如果是账户被盗用）。有关会话的详细信息，参见“[在 Exchange Online 中的会话内根据上下文考虑攻击者的行为](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801)”。|
+|SessionId|会话 ID 有助于区分同一邮箱中的攻击者行为和日常用户行为（如果是帐户被盗用）。有关会话的详细信息，请参阅[在 Exchange Online 的会话中将攻击者活动情境化](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801)。|
 |
 
 ## <a name="identifying-the-access-contexts-of-different-audit-records"></a>识别不同审核记录的存取上下文
 
-通常攻击者在邮箱所有者访问邮箱的同时访问邮箱。 为区分攻击者和邮箱所有者的访问，提供了设定访问上下文的审核日志属性。 如前所述，如果这些属性的值不同时，即使活动在聚合间隔内发生，将生成单独的审核记录。 在下面示例中，有三个不同的审核记录。 每一个通过会话 ID 和 ClientIPAddress 属性进行区分。 另外还识别被存取的邮件。
+通常攻击者在邮箱所有者访问邮箱的同时访问邮箱。 为区分攻击者和邮箱所有者的访问，提供了设定访问上下文的审核日志属性。 如前所述，如果这些属性的值不同时，即使活动在聚合间隔内发生，将生成单独的审核记录。 在下面示例中，有三个不同的审核记录。 每条记录都可通过会话 ID 和 ClientIPAddress 属性进行区分。 另外还识别被存取的邮件。
 
 <br>
 

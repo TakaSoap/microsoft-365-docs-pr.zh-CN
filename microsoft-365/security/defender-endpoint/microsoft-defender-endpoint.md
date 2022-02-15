@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 47773d3fb7f94811a03c78f181b2552245f89f97
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: c4308c203093d2170cc1a6316db824ee9935363f
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767576"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806224"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -48,7 +48,7 @@ Defender for Endpoint 使用内置于 Windows 10 和 Microsoft 的可靠云服�
 
 - **终结点行为传感器**：嵌入在 Windows 10 中，这些传感器从操作系统收集和处理行为信号，并将此传感器数据发送到 Microsoft Defender for Endpoint 专用的独立云实例。
 
-- **云安全分析**：在 Windows 生态系统、企业云产品（如 Office 365）和在线资产中利用大型数据、设备学习和独特的 Microsoft 光学系统，行为信号会转换为对高级威胁的见解、检测和建议响应。
+- **云安全分析**：在 Windows 生态系统、企业云产品（如 Office 365）和在线资产中利用大数据、设备学习和独特的 Microsoft 光学系统，将行为信号转换为对高级威胁的见解、检测和建议响应。
 
 - **威胁情报**：威胁情报由 Microsoft 猎手、安全团队生成并由合作伙伴所提供的威胁情报进行扩充，从而使 Defender for Endpoint 能够标识攻击者的工具、技术和过程，并在收集的传感器数据中观察到上述内容时生成警报。
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: 了解如何使用 Office 365 IP 地址和 URL Web 服务来帮助你更好地标识并区分 Office 365 网络流量。
-ms.openlocfilehash: c9d888a175b5e070acfd3a9be7b428ee2404ec0d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5af1ca60a6e7b7f28ad1d5c3268c85fb399fb926
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197289"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806548"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务
 
@@ -63,8 +63,8 @@ Office 365 IP 地址和 URL web 服务可以帮助你更好地识别和区分 Of
 
 下面两个参数是所有 Web 服务方法的通用参数：
 
-- **format=\<JSON \| CSV\>** — 默认情况下，返回的数据格式为 JSON。 使用此可选参数返回采用逗号分隔值 (CSV) 格式的数据。
-- **ClientRequestId=\<guid\>** — 为客户端关联生成的所需 GUID。 为调用 Web 服务的每台计算机生成唯一的 GUID（此页面上包含的脚本将为你生成 GUID）。 请勿使用以下示例中所示的 GUID，因为它们将来可能会被 Web 服务阻止。 GUID 格式为 _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_，其中 x 表示一个十六进制数字。
+- **format=\<JSON \| CSV\>** - 默认情况下，返回的数据格式为 JSON。 使用此可选参数返回采用逗号分隔值 (CSV) 格式的数据。
+- **ClientRequestId=\<guid\>** - 为客户端关联生成的所需 GUID。 为调用 Web 服务的每台计算机生成唯一的 GUID（此页面上包含的脚本将为你生成 GUID）。 请勿使用以下示例中所示的 GUID，因为它们将来可能会被 Web 服务阻止。 GUID 格式为 _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_，其中 x 表示一个十六进制数字。
 
   若要生成 GUID，你可以使用 [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid) PowerShell 命令，或使用[在线 GUID 生成器](https://www.guidgenerator.com/)等在线服务。
 
@@ -76,15 +76,15 @@ Microsoft 会在每个月初更新 Office 365 IP 地址和 FQDN 条目。 出于
 
 版本 Web 服务的参数如下：
 
-- **AllVersions=\<true \| false\>** — 默认情况下，返回的版本是最新的。 包括此可选参数，以请求首次发布 Web 服务之后的所有已发布版本。
-- **Format=\<JSON \| CSV \| RSS\>** — 除了 JSON 和 CSV 格式之外，版本 Web 方法还支持 RSS。 可以结合使用此可选参数及 _AllVersions=true_ 参数，以请求可用于 Outlook 或其他 RSS 读取器的 RSS 源。
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — 此可选参数用于指定返回其版本的实例。 如果圣罗，则会返回所有实例。 有效实例包括：Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
+- **AllVersions=\<true \| false\>** - 默认情况下，返回的版本是最新的。 包括此可选参数，以请求首次发布 Web 服务之后的所有已发布版本。
+- **Format=\<JSON \| CSV \| RSS\>** - 除了 JSON 和 CSV 格式之外，版本 Web 方法还支持 RSS。 可以结合使用此可选参数及 _AllVersions=true_ 参数，以请求可用于 Outlook 或其他 RSS 读取器的 RSS 源。
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** - 此可选参数指定要返回其版本的实例。 如果圣罗，则会返回所有实例。 有效实例包括：Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
 
 版本 web 方法不受速率限制，且永远不会返回 429 HTTP 响应代码。对版本 web 方法的响应包含缓存控制标头，建议缓存数据 1 小时。版本 web 方法的结果可以是单一记录或记录数组。每项记录的元素为:
 
-- instance — Office 365 服务实例的短名称。
-- latest — 指定实例的终结点的最新版本。
-- 版本 - 指定实例的所有之前版本的列表。仅当 _AllVersions_ 参数为 true 时，才包含此元素。
+- instance - Office 365 服务实例的短名称。
+- latest - 指定实例的终结点的最新版本。
+- versions - 指定实例的所有以前版本的列表。 仅当 _AllVersions_ 参数为 true 时才包含此元素。
 
 ### <a name="version-web-method-examples"></a>版本 Web 方法示例
 
@@ -180,25 +180,25 @@ Worldwide,2018063000
 
 终结点 Web 方法的参数如下：
 
-- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** — 以逗号分隔的服务区列表。 有效项为 _Common_、_Exchange_、_SharePoint_ 和 _Skype_。 由于 _Common_ 服务区域项为所有其他服务区域的先决条件，因此 Web 服务始终包括它们。 如果不包括此参数，则会返回所有服务区域。
-- **TenantName=\<tenant_name\>** — 你的 Office 365 租户名称。 Web 服务采用所提供的名称，并将其插入到包含租户名称的 URL 中。 如果未提供租户名称，则这些 URL 的部分具有通配符字符 (\*)。
-- **NoIPv6=\<true \| false\>** — 将此值设置为 _true_ 可从输出中排除 IPv6 地址（如果你未在网络中使用 IPv6）。
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — 此必填参数用于指定从中返回终结点的实例。 有效实例包括：_Worldwide_、_China_、_Germany_、_USGovDoD_ 和 _USGovGCCHigh_。
+- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** - 以逗号分隔的服务区域列表。 有效项为 _Common_、_Exchange_、_SharePoint_ 和 _Skype_。 由于 _Common_ 服务区域项为所有其他服务区域的先决条件，因此 Web 服务始终包括它们。 如果不包括此参数，则会返回所有服务区域。
+- **TenantName=\<tenant_name\>** - 你的 Office 365 租户名称。 Web 服务采用所提供的名称，并将其插入到包含租户名称的 URL 中。 如果未提供租户名称，则这些 URL 的部分具有通配符字符 (\*)。
+- **NoIPv6=\<true \| false\>** - 将此值设置为 _true_ 可从输出中排除 IPv6 地址（如果你未在网络中使用 IPv6）。
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** - 此必填参数指定从其返回终结点的实例。 有效实例包括：_Worldwide_、_China_、_Germany_、_USGovDoD_ 和 _USGovGCCHigh_。
 
 如果从相同客户端 IP 地址调用终结点 Web 方法的次数过多，则可能会收到 HTTP 响应代码 _429（请求过多）_。 如果收到此响应代码，请先等待 1 小时，然后再重复你的请求，或者为该请求生成新的 GUID。 作为一般的最佳实践，仅在版本 Web 方法表示存在新的可用版本时才调用终结点 Web 方法。
 
 终结点 web 方法的结果为记录数组，其中每项记录都代表一个特定的终结点集。每项记录的元素为:
 
-- id — 终结点集的不可变 ID 号。
-- serviceArea — 所属的服务区域：_Common_、_Exchange_、_SharePoint_ 或 _Skype_。
-- url - 终结点集的 URL。DNS 记录的 JSON 数组。如果为空，则省略。
-- tcpPort - 终结点集的 TCP 端口。所有端口元素都格式化为以逗号分隔的端口列表或用短划线字符(-)分隔的端口范围。端口适用于给定类别的终结点集中的所有 IP 地址和所有 URL。如果为空，则省略。
-- udpPort - 此终结点集中 IP 地址范围的 UDP 端口。如果为空，则省略。
-- ip - 与此终结点关联的 IP 地址范围，设置为与列出的 TCP 或 UDP 端口关联。IP 地址范围的 JSON 数组。如果为空，则省略。
-- 类别 - 终结点集的连接类别。有效值为 _优化_、_允许_ 和 _默认_。如果搜索特定 IP 地址或 URL 类别的终结点 Web 方法输出，则查询可能会返回多个类别。此时，你应该遵循针对最高优先级类别的建议。例如，如果终结点同时在 _优化_ 和 _允许_ 中出现，则应遵循 _优化_ 的要求。必须提供。
+- id - 终结点集的不可变 ID 号。
+- serviceArea - 所属的服务区域：_Common_、_Exchange_、_SharePoint_ 或 _Skype_。
+- urls - 终结点集的 URL。 此为包含 DNS 记录的 JSON 数组。 若为空白，将省略此元素。
+- tcpPorts - 终结点集的 TCP 端口。 所有端口元素都格式化为端口的逗号分隔列表，或用短划线字符 (-) 分隔的端口范围。 端口适用于相应类别的特定终结点集中的所有 IP 地址和所有 URL。 若为空白，将省略此元素。
+- udpPorts - 此终结点集中 IP 地址范围的 UDP 端口。 若为空白，将省略此元素。
+- ips - 与此终结点关联的 IP 地址范围，设置为与列出的 TCP 或 UDP 端口关联。 IP 地址范围的 JSON 数组。 若为空白，将省略此元素。
+- category - 终结点集的连接类别。 有效值为 _Optimize_、_Allow_ 和 _Default_。 如果搜索特定 IP 地址或 URL 类别的终结点 Web 方法输出，则查询可能会返回多个类别。 在这种情况下，请按照最高优先级类别的建议操作。 例如，如果终结点同时显示在 _Optimize_ 和 _Allow_ 中，则应该遵循 _Optimize_ 的要求。 必需项。
 - expressRoute — 如果此终结点集通过 ExpressRoute 进行路由，则为 _True_，否则为 _False_。
 - 必需 - 如果此终结点集为必需项以具有支持 Office 365 的连接性，则为 _True_。如果此终结点集为可选，则为 _False_。
-- 备注 - 对于可选终结点，此文本说明了当无法在网络层访问此终结点集中的 IP 地址或 URL 时不可用的 Office 365 功能。如果为空，则省略。
+- notes - 对于可选终结点，此文本描述了如果无法在网络层访问此终结点集中的 IP 地址或 URL 则将不可用的 Office 365 功能。 若为空白，将省略此元素。
 
 ### <a name="endpoints-web-method-examples"></a>终结点 Web 方法示例
 
@@ -234,13 +234,13 @@ Worldwide,2018063000
    ],
 ```
 
-请注意，此示例中的请求的完整输出将包含其他终结点集。
+此示例中请求的完整输出将包含其他终结点集。
 
 示例 2 请求 URI：[https://endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 此示例仅对 Exchange Online 和依赖项获取 Office 365 全球实例的终结点。
 
-示例 2 的输出类似于示例 1，不同之处在于结果不包括 SharePoint Online 或 Skype for Business Online 终结点。
+示例 2 的输出类似于示例 1，不同之处在于结果不包括 SharePoint Online 或 Skype for Business Online 的终结点。
 
 ## <a name="changes-web-method"></a>变更 Web 方法
 
@@ -250,32 +250,32 @@ Worldwide,2018063000
 
 变更 Web 方法需要使用以下必填参数：
 
-- **Version=\<YYYYMMDDNN>**  — 所需的 URL 路由参数。 此值为当前实施的版本。 Web 服务应返回自该版本之后发生的变更。 格式为 _YYYYMMDDNN_；如果需要在一天内发布多个版本，则 _NN_ 是一个递增的自然数，而 _00_ 表示给定日期的第一个更新。 Web 服务要求 _version_ 参数恰好包含 10 位数。
+- **Version=\<YYYYMMDDNN>** - 所需的 URL 路由参数。 此值为当前实施的版本。 Web 服务应返回自该版本之后发生的变更。 格式为 _YYYYMMDDNN_；如果需要在一天内发布多个版本，则 _NN_ 是一个递增的自然数，而 _00_ 表示给定日期的第一个更新。 Web 服务要求 _version_ 参数恰好包含 10 位数。
 
 变更 Web 方法受速率限制，与终结点 Web 方法受限于速率一样。 如果收到 429 HTTP 响应代码，请先等待 1 小时，然后再重复你的请求，或者为该请求生成新的 GUID。
 
 更改 web 方法的结果为记录数组，其中每项记录都代表一次终结点特定版本中的更改。每项记录的元素为:
 
-- id — 变更记录的不可变 ID。
-- endpointSetId — 变更的终结点集记录的 ID。
-- disposition — 描述了终结点集记录有何变更。 值包括 _change_、_add_ 或 _remove_。
-- impact — 并非所有变更都对每个环境同样重要。 此元素说明了相应变更对企业网络外围环境的预期影响。 此属性仅包含在版本 **2018112800** 及更高版本的变更记录中。 impact 选项包括：— AddedIp – IP 地址已添加到 Office 365，且很快就会对服务生效。 这表示需要更改防火墙或其他第 3 层网络外围设备。 如果你并没有在我们开始使用此元素之前添加它，可能会遇到故障。
+- id - 更改记录的不可变 ID。
+- endpointSetId - 更改的终结点集记录的 ID。
+- disposition - 描述了对终结点集记录所做的更改。 值包括 _change_、_add_ 或 _remove_。
+- impact - 并非所有更改对每个环境都同样重要。 此元素说明了相应变更对企业网络外围环境的预期影响。 此属性仅包含在版本 **2018112800** 及更高版本的变更记录中。 impact 选项包括：— AddedIp – IP 地址已添加到 Office 365，且很快就会对服务生效。 这表示需要更改防火墙或其他第 3 层网络外围设备。 如果你并没有在我们开始使用此元素之前添加它，可能会遇到故障。
   — AddedUrl – URL 已添加到 Office 365，且很快就会对服务生效。 这表示需要更改代理服务器或 URL 分析网络外围设备。 如果你并没有在我们开始使用之前添加此 URL，可能会遇到故障。
-  — AddedIpAndUrl — IP 地址和 URL 均已添加。 这表示需要更改防火墙第 3 层设备、代理服务器或 URL 分析设备。 如果你并没有在我们开始使用之前添加此 IP/URL，可能会遇到故障。
+  - AddedIpAndUrl - IP 地址和 URL 均已添加。 这表示需要更改防火墙第 3 层设备、代理服务器或 URL 分析设备。 如果你并没有在我们开始使用之前添加此 IP/URL，可能会遇到故障。
   — RemovedIpOrUrl – 从 Office 365 中至少删除了一个 IP 地址或 URL。 从外围设备中删除网络终结点，但此操作并无截止时间。
   — ChangedIsExpressRoute – ExpressRoute 支持属性已更改。 如果使用 ExpressRoute，可能需要采取措施，具体视配置而定。
   — MovedIpOrUrl – 在此终结点集和另一个终结点集之间迁移了 IP 地址或 URL。 通常无需采取任何措施。
   — RemovedDuplicateIpOrUrl – 删除了重复的 IP 地址或 URL，但它仍是对 Office 365 发布的。 通常无需采取任何措施。
   — OtherNonPriorityChanges – 更改了一些不如其他所有选项重要的内容，例如注释字段的内容。
-- 版本 - 在其中引入更改的已发布终结点集的版本。版本号的格式为 _YYYYMMDDNN_，其中，如果需要在一天内发布多个版本，则 _NN_ 为递增自然数。
-- previous - 详细说明终结点集上的已变更元素旧值的子结构。对于新添加的终结点集，不包含此元素。此元素包括 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_ 和 _notes_。
-- current — 详细说明终结点集上的更新变更元素值的子结构。 包括 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_ 和 _notes_。
-- add — 详细说明要添加到终结点集集合的项的子结构。 如果没有要添加的项，将省略此元素。
-  — effectiveDate — 定义添加项在服务中的生效日期。
-  — ips — 要添加到 _ips_ 数组的项。
+- version - 引入更改的已发布终结点集的版本。 版本号格式为 _YYYYMMDDNN_，其中 _NN_ 是必须在一天内发布多个版本时递增的自然数。
+- previous - 详细说明终结点集上已更改元素的旧值的子结构。 对于新添加的终结点集，它们未包含在内。 包括 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_ 和 _notes_。
+- current - 详细说明终结点集上更改元素的更新值的子结构。 包括 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_ 和 _notes_。
+- add - 详细说明要添加到终结点集集合的项的子结构。 如果没有要添加的项，将省略此元素。
+  - effectiveDate - 定义添加项何时将在服务中生效的数据。
+  - ips - 要添加到 _ips_ 数组的项。
   — urls — 要添加到 _urls_ 数组的项。
-- remove — 详细说明要从终结点集中删除的项的子结构。 如果没有删除项，则省略。
-  — ips — 要从 _ips_ 数组中删除的项。
+- remove - 详细说明要从终结点集中删除的项的子结构。 如果没有删除项，则省略。
+  - ips - 要从 _ips_ 数组中删除的项。
   — urls — 要从 _urls_ 数组中删除的项。
 
 ### <a name="changes-web-method-examples"></a>更改 Web 方法示例
@@ -528,7 +528,7 @@ else {
 
 ## <a name="example-python-script"></a>示例 Python 脚本
 
-运行下面的 Python 脚本（已使用 Windows 10 上的 Python 3.6.3 进行测试），可确定是否需要对已更新数据执行操作。此脚本检查 Office 365 全球实例终结点的版本号。若有变更，它就会下载终结点，并筛选出 _Allow_ 和 _Optimize_ 类别终结点。它还会跨多个调用使用唯一 ClientRequestId，并将找到的最新版本保存到临时文件中。应每小时调用一次此脚本，以检查是否有版本更新。
+下面是一个在 Windows 10 上使用 Python 3.6.3 测试的 Python 脚本，你可以运行该脚本来查看是否存在需要对更新的数据执行的操作。 此脚本将检查 Office 365 全球实例终结点的版本号。 存在更改时，它将会下载终结点并筛选出“_允许_”和“_优化_”类别终结点。 它还在多个调用中使用唯一的 ClientRequestId，并保存临时文件中出现的最新版本。 每小时调用一次此脚本，以检查是否存在版本更新。
 
 ```python
 import json
