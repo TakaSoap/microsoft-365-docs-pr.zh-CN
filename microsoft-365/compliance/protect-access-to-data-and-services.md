@@ -16,16 +16,16 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 了解如何保护用户和设备访问数据Microsoft 365服务，并防御数据丢失。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9659d9117359fdb7a3264c244e128a1c20d0ec14
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 121c5b8f1168e9986693fea128aa66626b3e31fe
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326683"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818536"
 ---
 # <a name="protect-user-and-device-access"></a>保护用户和设备的访问权限
 
-保护对Microsoft 365和服务的访问对于防御网络攻击和防止数据丢失至关重要。 相同的保护可应用于环境中的其他 SaaS 应用程序，甚至应用于使用应用程序代理发布的Azure Active Directory应用程序。
+保护对Microsoft 365和服务的访问对于防御网络攻击和防止数据丢失至关重要。 相同的保护可以应用于环境中的其他 SaaS 应用程序，甚至应用于使用应用程序代理发布的Azure Active Directory应用程序。
   
 ## <a name="step-1-review-recommendations"></a>步骤 1：查看建议
 
@@ -45,9 +45,9 @@ ms.locfileid: "62326683"
 - [特权访问管理概述](privileged-access-management-overview.md)
 - [配置特权访问管理](privileged-access-management-configuration.md)
 
-另一个首要建议是使用专为管理工作配置的工作站。 这些是仅用于管理任务的专用设备。 请参阅 [保护特权访问](/windows-server/identity/securing-privileged-access/securing-privileged-access)。
+另一个首要建议是使用为管理工作特别配置的工作站。 这些是仅用于管理任务的专用设备。 请参阅 [保护特权访问](/windows-server/identity/securing-privileged-access/securing-privileged-access)。
 
-最后，可以通过在租户中创建两个或多个紧急访问帐户来缓解意外缺少管理访问的影响。 请参阅[管理 Azure AD 中的紧急Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access)。 
+最后，可以通过在租户中创建两个或多个紧急访问帐户来缓解意外缺少管理访问的影响。 请参阅[管理 Azure AD 中的紧急访问帐户](/azure/active-directory/users-groups-roles/directory-emergency-access)。 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>步骤 3：配置推荐的标识和设备访问策略
 MFA (和) 访问策略的多重身份验证是抵御帐户损坏和未授权访问的强大工具。 我们建议实现一组已一起测试的策略。 有关详细信息（包括部署步骤，请参阅 [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)）。
@@ -57,13 +57,13 @@ MFA (和) 访问策略的多重身份验证是抵御帐户损坏和未授权访�
 - 条件访问
 - Intune 应用保护 (应用和数据保护的设备) 
 - Intune 设备合规性
-- Azure AD Identity Protection
+- Azure AD 标识保护
 
 实现 Intune 设备合规性需要设备注册。 通过管理设备，可以确保设备正常运行且合规，然后再允许它们访问环境中的资源。 请参阅 [在 Intune 中注册设备以管理](/mem/intune/user-help/enroll-windows-10-device)
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>步骤 4：配置SharePoint访问策略
 
-Microsoft 建议通过设备访问控制SharePoint敏感和高度管控内容保护网站中的内容。 有关详细信息，请参阅[用于保护网站和SharePoint策略建议](../security/office-365-security/sharepoint-file-access-policies.md)。
+Microsoft 建议通过设备访问控制SharePoint敏感和高度管控内容保护网站中的内容。 有关详细信息，请参阅[用于保护网站和文件SharePoint策略建议](../security/office-365-security/sharepoint-file-access-policies.md)。
 
 
 

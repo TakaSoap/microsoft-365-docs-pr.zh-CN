@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 6d617024f2a09b73b7b944fb34bd2f34d024d3c1
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d4e4f9baaf67b921358f17dae16908bcf9fed401
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661053"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818260"
 ---
 # <a name="top-scoring-in-industry-tests"></a>在行业测试中得分最高
 
@@ -35,7 +35,7 @@ ms.locfileid: "60661053"
 
 [Microsoft 365 Defender](microsoft-365-defender.md) 是一款统一的漏洞前和漏洞后企业防御套件，结合检测、预防、调查和应急为一体，可针对终结点、标识、电子邮件和应用程序提供集成的保护，抵御复杂的攻击。
 
-Microsoft 365 Defender 将 [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)、 [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection)、 [Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/)、[Azure Active Directory 标识保护](/azure/active-directory/identity-protection/overview-identity-protection)和 [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) 的功能结合到单个解决方案中。
+Microsoft 365 Defender 将 [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)、 [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection)、 [Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/)、[Azure Active Directory 标识保护](/azure/active-directory/identity-protection/overview-identity-protection)和 [Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) 的功能结合到单个解决方案中。
 
 ### <a name="mitre-demonstrated-real-world-detection-response-and-protection-from-advanced-attacks"></a>MITRE：演示了实际检测、响应和对高级攻击的保护
 
@@ -87,15 +87,23 @@ AV-TEST 产品审查和认证报告测试以下三个类别：防护、性能和
 
 SE 实验室测试产品和服务使用的一系列解决方案，以检测和/或保护免遭攻击。 它包括终结点软件、网络设备和云服务。
 
-- 企业终结点保护（2020 年 10 月 - 12 月）：[AAA 奖](https://selabs.uk/reports/enterprise-endpoint-protection-2020-q4/) <sup>**最新**</sup>
+- 年度报告 2020 - 2021: [AAA 奖](https://selabs.uk/wp-content/uploads/2021/11/annual-report-2021.pdf)<sup>**最新**</sup>
 
-    Microsoft 的下一代保护产品已阻止所有公共和目标攻击。Microsoft Defender 防病毒能够阻止恶意 URL、处理攻击以及正确分类合法的应用程序和网站，已取得良好效果。
+- 企业终结点保护: (2021 年 10 月 - 12 月): [AAA 奖](https://selabs.uk/wp-content/uploads/2021/12/oct-dec-2021-enterprise.pdf)
 
-- 企业终结点保护（2020 年 7 月 - 9 月）：[AAA 奖](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
+- 企业高级安全 (EDR): Kaspersky: 2021 年 8 月到 9 月: [AAA 奖](https://selabs.uk/wp-content/uploads/2021/12/AS-EDR-Kaspersky-EDR-2021-1.pdf)
 
-- 企业终结点保护（2020 年 4 月 - 6 月）：[AAA 奖](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
+- 企业高级安全 (EDR): 拥护者: 2021 年 8 月到 9 月: [AAA 奖](https://selabs.uk/wp-content/uploads/2021/12/AS-EDR-Crowdstrike-Falcon-2021-1.pdf)
 
-- 企业终结点保护（2020 年 1 月 - 3 月）：[AAA 奖](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup> | [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
+- 违规响应 (NDR 检测): VMware NSX 网络检测和响应: 2021 年 8 月: [AAA 奖励](https://selabs.uk/wp-content/uploads/2021/10/NDR-VMware-NSX-detection-2021-1.pdf)
+
+- 企业终结点保护: 2021 年 7 月 - 9 月: [AAA 奖](https://selabs.uk/wp-content/uploads/2021/11/july-sept-2021-enterprise.pdf)
+
+- 违规响应 (保护): BlackBerry 保护和光学: 2021 年 7 月: [AAA 奖](https://selabs.uk/wp-content/uploads/2021/07/BRT-BlackBerry-Protect-protection-2021-1.pdf)
+
+- 企业终结点保护: 2021 年 4 月 - 6 月: [AAA 奖](https://selabs.uk/wp-content/uploads/2021/07/apr-jun-2021-enterprise-1.pdf)
+
+- 企业终结点保护: 2021 年 1 月 - 3 月: [AAA 奖](https://selabs.uk/wp-content/uploads/2021/04/jan-mar-2021-enterprise.pdf) <sup>**pdf**</sup>
 
 ## <a name="endpoint-detection--response"></a>终结点检测和响应
 

@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 07dcc4c5d6d9758828fe2b48344a3c6ccc3b8a2e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b6756ba1c0315bb2b89c272d8153715cffe8f976
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873533"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818560"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -79,20 +79,22 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 ****
 
-|Microsoft Defender for Office 365 计划 1|Microsoft Defender for Office 365 计划 2|
+|Defender for Office 365 计划 1|Defender for Office 365 计划 2|
 |---|---|
-|配置、保护和检测功能： <ul><li>[安全附件](safe-attachments.md)</li><li>[安全链接](safe-links.md)</li><li>[用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 保护中的防钓鱼](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[实时检测](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 计划 1 功能 <br>--- + ---<br> 自动化、调查、补救措施和教育功能：<ul><li>[威胁跟踪器](threat-trackers.md)</li><li>[威胁资源管理器](threat-explorer.md)</li><li>[自动调查和响应](office-365-air.md)</li><li>[攻击模拟培训](attack-simulation-training.md)</li><li>[市场活动视图](campaigns.md)</li></ul>|
-|
+|配置、保护和检测功能： <ul><li>[安全附件](safe-attachments.md)</li><li>[安全链接](safe-links.md)</li><li>[用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 中的防钓鱼保护](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[实时检测](threat-explorer.md)</li></ul>|Defender for Office 365 计划 1 功能 <p> --- + --- <p> 自动化、调查、补救措施和教育功能： <ul><li>[威胁跟踪器](threat-trackers.md)</li><li>[威胁资源管理器](threat-explorer.md)</li><li>[自动调查和响应](office-365-air.md)</li><li>[攻击模拟培训](attack-simulation-training.md)</li><li>[Microsoft 365 Defender 高级搜寻](advanced-hunting-overview.md)</li><li>[Microsoft 365 Defender 事件](investigate-incidents.md)</li><li>[Microsoft 365 Defender 警报](investigate-alerts.md)</li></ul>|
 
-- Office 365 E5、Office 365 A5、Microsoft 365 E5 安全性和 Microsoft 365 E5 中包含 Microsoft Defender for Office 365 计划 2。
+
+- Office 365 E5、Office 365 A5 和 Microsoft 365 E5 中包含 Microsoft Defender for Office 365 计划 2。
 
 - Microsoft Defender for Office 365 计划 1 包含在 Microsoft 365 商业高级版中。
 
-- Microsoft Defender for Office 365 计划 1 和 Microsoft Defender for Office 365 计划 2 均可用作特定订阅的加载项。 若要了解详细信息，请参阅[Microsoft Defender for Office 365 计划的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- Microsoft Defender for Office 365 计划 1 和 Defender for Office 365 计划 2 均可用作特定订阅的加载项。 若要了解详细信息，请参阅另一个链接[Microsoft Defender for Office 365 计划的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 - 只有拥有 Microsoft 365 E5 或 Microsoft 365 E5 安全性许可证（未包括在 Microsoft Defender for Office 365 计划内）的用户才能使用[安全文档](safe-docs.md)功能。
 
-- 如果你当前的订阅不包括 Microsoft Defender for Office 365，请[与销售人员联系以开始试用](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)，并查看 Defender for Office 365 如何为你的组织所用。
+- 如果你当前的订阅不包括 Microsoft Defender for Office 365 并希望订阅，请[与销售人员联系以开始试用](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)，并了解 Defender for Office 365 如在你的组织使用。
+
+- Microsoft Defender for Office 365 P2 客户有权访问 **Microsoft 365 Defender 集成** 以有效检测、查看和响应事件和警报。
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>配置 Microsoft Defender for Office 365 策略
 

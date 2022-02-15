@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文提供可以编码为自定义敏感信息类型的筛选器列表。
-ms.openlocfilehash: 3c91ff4a31f8e80b4798743169d5c30195dcdcde
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e5f3fb99ec4454410c3719dc3d76356e02f03573
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174995"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818224"
 ---
 # <a name="custom-sensitive-information-type-filters-reference"></a>自定义敏感信息类型筛选器参考
 
@@ -70,7 +70,7 @@ ms.locfileid: "60174995"
 - 1000-3265-9874
 - 0100-7892-3012
 
-可以使用此 xml
+可以使用以下 xml
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -96,7 +96,7 @@ ms.locfileid: "60174995"
 - 1000-3265-9874
 - 0100-7892-3012
 
-可以使用此 xml
+可以使用以下 xml
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -115,7 +115,7 @@ ms.locfileid: "60174995"
 - 1234.4567.7091
 - 1234-8091-4564
 
-可以使用此 xml
+可以使用以下 xml
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -139,7 +139,7 @@ ms.locfileid: "60174995"
 - 1234.4567.7091
 - 1234-8091-4564
 
-可以使用此 xml
+可以使用以下 xml
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -151,13 +151,13 @@ ms.locfileid: "60174995"
 
 说明：允许您禁止某些匹配以防止它们触发规则。 例如，将4111111111111111信用卡匹配列表中排除。
 
-例如，要排除信用卡号（如 4111111111111111 和 3241891031113111列表，如下所示：
+例如，要排除信用卡号（如 4111111111111111）3241891031113111列表，如下所示：
 
 - 4485 3647 3952 7352
 - 4111111111111111
 - 3241891031113111
 
-可以使用此 xml
+可以使用以下 xml
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -178,7 +178,7 @@ ms.locfileid: "60174995"
 - 4111111111111111
 - 3241891031113111
 
-可以使用此 xml
+可以使用以下 xml
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -190,13 +190,13 @@ ms.locfileid: "60174995"
 
 说明：允许你定义应始终包含或排除的前面字符。 例如，如果信用卡号前面有"订单 ID："，则从有效匹配项中删除匹配项。
 
-例如，要排除具有电话号码电话电话号码，并按电话号码前的字符串呼叫我，在如下所示的列表中：
+例如，要排除包含电话号码电话电话号码，并按电话号码前的字符串呼叫我，在如下所示的列表中：
 
 - 电话号码 091-8974-653278
 - 电话 45-124576532-123
 - 45-124576532-123
 
-可以使用此 xml
+可以使用以下 xml
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -215,7 +215,7 @@ ms.locfileid: "60174995"
 - 信用卡 45-124576532-123 
 - 45-124576532-123 (可以是电话号码) 
 
-可以使用此 xml
+可以使用以下 xml
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -234,12 +234,12 @@ ms.locfileid: "60174995"
 
 说明：允许你定义应始终包含或排除的以下字符。 例如，如果信用卡号后跟"/xuid"，则从有效匹配项中删除匹配项。
 
-例如，如果列表中还有 5 个包含四个数字的实例作为后缀，则顶部排除，如下所示：
+例如，如果列表中还有五个包含四个数字的实例作为后缀，则顶部排除，如下所示：
 
 - 1234-5678-9321 4500 9870 6321 48925566
 - 1234-5678-9321
 
-可以使用此 xml
+可以使用以下 xml
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -255,22 +255,25 @@ ms.locfileid: "60174995"
 
 可以使用此 xml
 
-''xml <Filters id="cc_number_filters_exc">
+```xml
+<Filters id="cc_number_filters_exc">
     <Filter type="TextMatchFilter" direction="Prefix" logic="Exclude" textProcessorId="Keyword_false_positives_suffix">
 </Filter>
 
-  <Keyword id="Keyword_false_positives_suffix"> <Group matchStyle="string">
+  <Keyword id="Keyword_false_positives_suffix">
+    <Group matchStyle="string">
       <Term>/xuid</Term>
-    </Group> </Keyword>
+    </Group>
+  </Keyword>
 ```
 
-For example, to include an occurrence only if it is followed by **cvv** or **expires**, like two in this list:
+例如，仅在后跟 **cvv** 或过期时包含事件，如此列表中的两个：
 
 - 45-124576532-123 
-- 45-124576532-123  cvv 966
-- 45-124576532-123  expires 03/23
+- 45-124576532-123 cvv 966
+- 45-124576532-123 过期时间 03/23
 
-you can use this xml
+可以使用此 xml
 
 ```xml
 <Filters id="cc_filters_inc">

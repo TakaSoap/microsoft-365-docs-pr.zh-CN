@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解文档理解模型和表单处理模型之间的主要区别。
-ms.openlocfilehash: 7f79bc12c21162d294aaf15df0ef7d1434889faf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8a97c4a2c03d95a5ba9724423a405cb49d4a90fe
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201729"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818512"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文档理解与表单处理模型之间的差异 
 
@@ -84,7 +84,7 @@ ms.locfileid: "60201729"
 | 支持的区域| 表单处理依赖于 Power Platform。 有关 Power Platform 和 AI Builder 的全球可用性信息，请参阅 [Power Platform 可用性](https://dynamics.microsoft.com/geographic-availability/)。 | 在所有地区可用。|
 | 交易性成本 | AI 生成器点数。<br>可分批购买 1M 的积分。<br>购买 300 个以上的 SharePoint Syntex 许可证，即可获得 1M 积分。<br>1M 积分可以处理 2000 个文件页。<br>| 不适用 |
 | 容量 | 使用默认的 Power Platform 环境（支持 Dataverse 数据库的自定义环境）。 | 没有容量限制。|
-| 支持的语言| 英语 <br>2021 年的晚些时候推出：拉丁文字母语言 | 模型适用于所有拉丁字母语言。 除英语外，还包括： 德语、瑞典语、法语、西班牙语、意大利语和葡萄牙语。|
+| 支持的语言| 英语 <br>2022 年晚些时候将：拉丁语字母语言 | 模型适用于所有拉丁字母语言。 除英语外，还包括： 德语、瑞典语、法语、西班牙语、意大利语和葡萄牙语。|
 
 ## <a name="see-also"></a>另请参阅
 

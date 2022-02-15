@@ -2,7 +2,7 @@
   items:
     - name: 概述
       href: index.md
-    - name: 获取 Microsoft 365 商业版
+    - name: 获取 Microsoft 365 商业高级版
       href: get-microsoft-365-business-premium.md
     - name: 获取 Microsoft 365 for Campaigns
       href: get-microsoft-365-campaigns.md
