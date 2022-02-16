@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: 管理员培训视频库
-summary: 了解如何使用简短视频Microsoft 365企业设置和管理业务解决方案。
+summary: 了解如何使用简短的视频Microsoft 365和管理业务部署。
 metadata:
   title: 管理员培训视频库
-  description: 了解如何使用简短视频Microsoft 365企业设置和管理业务解决方案。
+  description: 了解如何使用简短的视频Microsoft 365和管理业务部署。
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: landing-page
@@ -11,146 +11,160 @@ metadata:
   ms.author: pebaum
   ms.date: 02/04/2022
   ms.localizationpriority: high
+  ms.openlocfilehash: 6625b8f8b8afd32488069a65147362c83728a327
+  ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/15/2022
+  ms.locfileid: "62825213"
 landingContent:
-  - title: 入门
-    linkLists:
-      - linkListType: video
-        links:
-          - text: 什么是 Microsoft 365
-            url: admin-overview/what-is-microsoft-365.md
-          - text: 设置概述
-            url: setup/plan-your-setup.md
-          - text: 选择订阅
-            url: admin-overview/sign-up-for-office-365.md
-  - title: 云设置
-    linkLists:
-      - linkListType: video
-        links:
-          - text: 注册订阅
-            url: admin-overview/sign-up-for-office-365.md
-          - text: 设置服务
-            url: setup/business-set-up.md
-          - text: 保护 Windows 10 电脑
-            url: setup/secure-win-10-pcs.md
-  - title: 设备设置
-    linkLists:
-      - linkListType: video
-        links:
-          - text: 将电脑连接到 Microsoft 365
-            url: setup/set-up-windows-devices.md
-          - text: 安装 Microsoft Office 应用
-            url: setup/install-applications.md
-          - text: 设置 Outlook，使用电子邮件功能
-            url: setup/setup-outlook.md
-          - text: 导入并重定向邮件
-            url: setup/migrate-email-and-contacts-admin.md
-          - text: 将文件移动到 OneDrive
-            url: setup/files-to-onedrive.md
-          - text: 将公司文件移动到 SharePoint
-            url: setup/files-to-sharepoint.md
-  - title: 移动版
-    linkLists:
-      - linkListType: video
-        links:
-          - text: 获取管理移动应用
-            url: admin-overview/admin-mobile-app.md
-  - title: 商务语音
-    linkLists:
-      - linkListType: video
-        links:
-          - text: 什么是商务语音？
-            url: /microsoftteams/business-voice/whats-business-voice
-          - text: 设置商务语音
-            url: /microsoftteams/business-voice/set-up-overview
-  - title: 管理服务
-    linkLists:
-      - linkListType: video
-        links:
-          - text: 什么是管理员
-            url: add-users/about-admin-roles.md
-          - text: 管理中心概述
-            url: admin-overview/admin-center-overview.md
-          - text: 创建公司范围的签名
-            url: setup/create-signatures-and-disclaimers.md
-          - text: 操作使用情况报告
-            url: activity-reports/activity-reports.md
-          - text: 添加其他域
-            url: setup/add-domain.md
-          - text: 设置新的企业电子邮件地址
-            url: email/change-email-address.md
-  - title: 管理用户
-    linkLists:
-      - linkListType: video
-        links:
-          - text: 重置用户密码
-            url: add-users/reset-passwords.md
-          - text: 设置自助式密码重置
-            url: add-users/let-users-reset-passwords.md
-          - text: 添加用户
-            url: add-users/add-users.md
-          - text: 删除用户
-            url: add-users/remove-former-employee.md
-          - text: 添加其他管理员
-            url: add-users/assign-admin-roles.md
-          - text: 更改用户名和电子邮件地址
-            url: add-users/change-a-user-name-and-email-address.md
-          - text: 将用户移动到其他订阅
-            url: ../commerce/try-or-buy-microsoft-365.md
-  - title: 管理许可证和计费
-    linkLists:
-      - linkListType: video
-        links:
-          - text: 查看、下载或打印账单
-            url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
-          - text: 购买新许可证
-            url: ../commerce/licenses/buy-licenses.md
-          - text: 删除现有许可证
-            url: ../commerce/licenses/buy-licenses.md
-          - text: 更新付款方式
-            url: ../commerce/billing-and-payments/manage-payment-methods.md
-  - title: 管理设备
-    linkLists:
-      - linkListType: video
-        links:
-          - text: 保护 Windows 10 专业版设备
-            url: devices/protection-settings-for-windows-10-pcs.md
-          - text: 保护 iOS 上的 Office 应用
-            url: devices/app-protection-settings-for-android-and-ios.md
-  - title: 安全性与合规性
-    linkLists:
-      - linkListType: video
-        links:
-          - text: Microsoft 365 商业高级版安全概述
-            url: security-and-compliance/secure-your-business-data.md
-          - text: ' (NEW！) Microsoft Defender for Business (预览版) '
-            url: /microsoft-365/security/defender-business/index.yml
-          - text: 使用 MFA 保护员工帐户
-            url: security-and-compliance/set-up-multi-factor-authentication.md
-          - text: 启用恶意软件检测
-            url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#raise-the-level-of-protection-against-malware-in-mail
-          - text: 创建针对勒索软件的电子邮件规则
-            url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-ransomware
-          - text: 设置防网络钓鱼
-            url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-your-email-from-phishing-attacks
-          - text: 管理安全附件
-            url: security-and-compliance/increase-threat-protection.md
-          - text: 管理安全链接
-            url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
-          - text: 防止数据丢失
-            url: security-and-compliance/set-up-compliance.md
-          - text: 创建敏感度标签
-            url: security-and-compliance/set-up-compliance.md
-  - title: 支持
-    linkLists:
-      - linkListType: video
-        links:
-          - text: 获取帮助或支持
-            url: get-help-support.md
-          - text: 员工快速设置
-            url: ../business-video/employee-quick-setup.md
-  - title: 从 Google Workspace 切换
-    linkLists:
-      - linkListType: video
-        links:
-          - text: 从 Google Workspace 切换
-            url: ../business-video/moveto-microsoft-365/move-from-google-workspace-overview.md
+- title: 入门
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 什么是 Microsoft 365
+      url: admin-overview/what-is-microsoft-365.md
+    - text: 设置概述
+      url: setup/plan-your-setup.md
+    - text: 选择订阅
+      url: admin-overview/sign-up-for-office-365.md
+- title: 云设置
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 注册订阅
+      url: admin-overview/sign-up-for-office-365.md
+    - text: 设置服务
+      url: setup/business-set-up.md
+    - text: 保护 Windows 10 电脑
+      url: setup/secure-win-10-pcs.md
+- title: 设备设置
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 将电脑连接到 Microsoft 365
+      url: setup/set-up-windows-devices.md
+    - text: 安装 Microsoft Office 应用
+      url: setup/install-applications.md
+    - text: 设置 Outlook，使用电子邮件功能
+      url: setup/setup-outlook.md
+    - text: 导入并重定向邮件
+      url: setup/migrate-email-and-contacts-admin.md
+    - text: 将文件移动到 OneDrive
+      url: setup/files-to-onedrive.md
+    - text: 将公司文件移动到 SharePoint
+      url: setup/files-to-sharepoint.md
+- title: 移动版
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 获取管理移动应用
+      url: admin-overview/admin-mobile-app.md
+- title: 商务语音
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 什么是商务语音？
+      url: /microsoftteams/business-voice/whats-business-voice
+    - text: 设置商务语音
+      url: /microsoftteams/business-voice/set-up-overview
+- title: 管理服务
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 什么是管理员
+      url: add-users/about-admin-roles.md
+    - text: 管理中心概述
+      url: admin-overview/admin-center-overview.md
+    - text: 创建公司范围的签名
+      url: setup/create-signatures-and-disclaimers.md
+    - text: 操作使用情况报告
+      url: activity-reports/activity-reports.md
+    - text: 添加其他域
+      url: setup/add-domain.md
+    - text: 设置新的企业电子邮件地址
+      url: email/change-email-address.md
+- title: 管理用户
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 重置用户密码
+      url: add-users/reset-passwords.md
+    - text: 设置自助式密码重置
+      url: add-users/let-users-reset-passwords.md
+    - text: 添加用户
+      url: add-users/add-users.md
+    - text: 删除用户
+      url: add-users/remove-former-employee.md
+    - text: 添加其他管理员
+      url: add-users/assign-admin-roles.md
+    - text: 更改用户名和电子邮件地址
+      url: add-users/change-a-user-name-and-email-address.md
+    - text: 将用户移动到其他订阅
+      url: ../commerce/try-or-buy-microsoft-365.md
+- title: 管理许可证和计费
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 查看、下载或打印账单
+      url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
+    - text: 购买新许可证
+      url: ../commerce/licenses/buy-licenses.md
+    - text: 删除现有许可证
+      url: ../commerce/licenses/buy-licenses.md
+    - text: 更新付款方式
+      url: ../commerce/billing-and-payments/manage-payment-methods.md
+- title: 管理设备
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 保护 Windows 10 专业版设备
+      url: devices/protection-settings-for-windows-10-pcs.md
+    - text: 保护 iOS 上的 Office 应用
+      url: devices/app-protection-settings-for-android-and-ios.md
+- title: 安全性与合规性
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Microsoft 365 商业高级版安全概述
+      url: security-and-compliance/secure-your-business-data.md
+    - text: " (NEW！) Microsoft Defender for Business (预览版) "
+      url: /microsoft-365/security/defender-business/index.yml
+    - text: 使用 MFA 保护员工帐户
+      url: security-and-compliance/set-up-multi-factor-authentication.md
+    - text: 启用恶意软件检测
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#raise-the-level-of-protection-against-malware-in-mail
+    - text: 创建针对勒索软件的电子邮件规则
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-ransomware
+    - text: 设置防网络钓鱼
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-your-email-from-phishing-attacks
+    - text: 管理安全附件
+      url: security-and-compliance/increase-threat-protection.md
+    - text: 管理安全链接
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
+    - text: 防止数据丢失
+      url: security-and-compliance/set-up-compliance.md
+    - text: 创建敏感度标签
+      url: security-and-compliance/set-up-compliance.md
+- title: 支持
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 获取帮助或支持
+      url: get-help-support.md
+    - text: 员工快速设置
+      url: ../business-video/employee-quick-setup.md
+- title: 从 Google Workspace 切换到 M365
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 设置Microsoft 365 Google Workspace 迁移
+      url: /moveto-microsoft-365/set-up-microsoft-365-forgoogle
+    - text: 将 Google Workspace 域添加到Microsoft 365
+      url: /moveto-microsoft-365/add-google-domain
+    - text: 从 Google Workspace 迁移业务电子邮件和日历
+      url: /moveto-microsoft-365/migrate-email
+    - text: 连接域Microsoft 365企业
+      url: /moveto-microsoft-365/connect-domain-tom365
+    - text: 使用迁移管理器Microsoft 365 Google 文件迁移到适用于企业
+      url: /moveto-microsoft-365/migrate-files-migration-manager

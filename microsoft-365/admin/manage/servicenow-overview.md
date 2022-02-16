@@ -17,14 +17,16 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow 的作用域认证应用程序安装和配置指南。
-ms.openlocfilehash: 0629b322a52702ef293ff1f73661359b410f2d69
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 99024eabd4009dcdd14b3d999afe5ee1875fe23e
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806008"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825320"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Microsoft 365 支持与 ServiceNow 配置概述集成
+
+以下内容适用于最低版本为 **1.0.7** Microsoft 365支持集成应用。
 
 **Microsoft 365支持集成** 使您可以将Microsoft 365、支持和服务运行状况与 ServiceNow 实例集成。 你可以研究 Microsoft 已知和已报告的问题、解决事件、使用 Microsoft 建议的解决方案完成任务，并在必要时上报给 Microsoft 人员协助支持。
 
@@ -82,8 +84,10 @@ ms.locfileid: "62806008"
 
 ## <a name="what-configuration-is-right-for-your-organization"></a>哪些配置适合你的组织？
 
-在设置支持集成的 Microsoft 365配置之前，请了解如何设置 ServiceNow 环境。
+下载应用后，导航到MICROSOFT 365安装向导以完成安装过程。
+:::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="安装向导":::
 
+您可以通过访问以下页面了解有关步骤的信息：
 - 如果 ServiceNow 环境允许基本身份验证 (通过 ServiceNow 用户凭据) 访问入站 Web 服务调用，请按照设置 [Microsoft 365 支持与 ServiceNow](servicenow-basic-authentication.md) 基本身份验证集成中的说明进行操作。
 - 如果 ServiceNow 环境不允许使用 (用户凭据) 访问入站 Web 服务调用的基本身份验证，请按照设置 [Microsoft 365 支持与 Azure AD 身份验证令牌集成中的说明](servicenow-aad-oauth-token.md)进行操作。
   - 此配置将需要一个 SSO 租户，以便AAD身份验证令牌正常工作。
