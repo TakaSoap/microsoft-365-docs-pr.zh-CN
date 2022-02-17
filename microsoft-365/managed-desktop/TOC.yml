@@ -159,6 +159,8 @@
               href: working-with-managed-desktop/security-updates-report.md
             - name: 应用使用情况报告
               href: working-with-managed-desktop/app-usage-report.md
+            - name: 服务指标报告
+              href: working-with-managed-desktop/service-metrics-report.md
         - name: 管理支持
           href: working-with-managed-desktop/admin-support.md
         - name: 用户支持

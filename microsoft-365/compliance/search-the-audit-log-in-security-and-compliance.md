@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: ff963c9bad09657899e9b163dacce46e6a246c6a
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: 5d5c7820a28977bb894c30915dc26f12016bb58c
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520242"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825489"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -191,13 +191,13 @@ ms.locfileid: "62520242"
 
    3. “**用户**”：单击此框，然后选择要为其显示搜索结果的一名或多名用户。 由你在此框中所选用户执行的所选活动的审核日志项目将显示在结果列表中。 将此框留空以返回组织中所有用户（和服务帐户）的条目。
 
-   4. “**文件、文件夹或网站**”：键入部分或完整的文件或文件夹名称，搜索与包含指定关键字的文件夹文件相关的活动。 你还可以指定文件或文件夹的 URL。 如果使用 URL，请确保输入完整的 URL 路径，或者如果输入部分 URL，则请勿包含任何特殊字符或空格。<br/><br/>将此框留空以返回组织中所有文件和文件夹的条目。
+   4. “**文件、文件夹或网站**”：键入部分或完整的文件或文件夹名称，搜索与包含指定关键字的文件夹文件相关的活动。 你还可以指定文件或文件夹的 URL。 如果使用 URL，请确保键入完整 URL 路径或键入 URL 的一部分，请不要包含任何特殊字符或空格 (但是，使用通配符 (\*) 受) 支持。<br/><br/>将此框留空以返回组织中所有文件和文件夹的条目。
 
     > [!TIP]
     >
-    > - 如果要查找与 **网站** 相关的所有活动，请在 URL 后面添加通配符 (\*) 以返回该网站的所有条目，例如，`"https://contoso-my.sharepoint.com/personal*"`。
+    > - 如果要查找与 **网站** 相关的所有活动，请在 URL 后面添加通配符(\*)，以返回该网站的所有条目；例如，`"https://contoso-my.sharepoint.com/personal*"`。
     >
-    > - 如果要查找与 **文件** 相关的所有活动，请在文件名后面添加通配符 (\*) 以返回该文件的所有条目，例如，`"*Customer_Profitability_Sample.csv"`。
+    > - 如果要查找与 **文件** 相关的所有活动，请在文件名前添加通配符 (\*) ，以返回该文件的所有条目；例如，`"*Customer_Profitability_Sample.csv"`。
 
 4. 单击“**搜索**”以使用搜索条件运行搜索。
 

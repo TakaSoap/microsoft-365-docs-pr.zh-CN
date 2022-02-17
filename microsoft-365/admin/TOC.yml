@@ -434,6 +434,28 @@
               href: basic-mobility-security/turn-off.md
             - name: 排除故障
               href: basic-mobility-security/troubleshoot.md
+    - name: 从 Google Workspace 切换到 Microsoft 365
+      items:
+        - name: 概述
+          href: moveto-microsoft-365/move-from-google-workspace-overview.md
+        - name: 注册 Microsoft 365
+          href: admin-overview/sign-up-for-office-365.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+        - name: 为 Google 迁移设置 Microsoft 365
+          href: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
+        - name: 为 Windows 设备设置安全策略
+          href: setup/secure-win-10-pcs.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+        - name: 添加 Google 工作区域
+          href: moveto-microsoft-365/add-google-domain.md
+        - name: 安装 Office 应用和 Microsoft Teams
+          href: setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+        - name: 将电子邮件、日历和联系人迁移到 Microsoft 365
+          href: moveto-microsoft-365/migrate-email.md
+        - name: 将你的域连接到 Microsoft 365
+          href: moveto-microsoft-365/connect-domain-tom365.md
+        - name: 使用迁移管理器移动每个人的数据
+          href: moveto-microsoft-365/migrate-files-migration-manager.md
+        - name: 取消 Google Workspace
+          href: moveto-microsoft-365/cancel-google.md
     - name: 与客户合作
       items:
         - name: 与来宾用户共享网站和文件
