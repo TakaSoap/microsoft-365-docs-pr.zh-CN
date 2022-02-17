@@ -15,41 +15,41 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，了解如何部署Microsoft 365 Lighthouse基线。
-ms.openlocfilehash: e60e364579abdc414ec9f7f3d16863f0139c9e6d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，了解如何部署Microsoft 365 Lighthouse基线。
+ms.openlocfilehash: c4cef0b966e1c35d5b8d4f282e5eeee4cb76a998
+ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372644"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62859297"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>部署Microsoft 365 Lighthouse基线 
 
 > [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+> 本文中所述的功能为预览版，可能会更改，并且仅对满足要求的合作伙伴 [可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md)。
 
 Microsoft 365 Lighthouse基线，您可以部署标准托管租户配置，以确保客户租户中的用户、设备和数据的安全。 Lighthouse 有六种标准的默认基线配置：
 
 - 要求管理员使用 MFA
 - 要求最终用户使用 MFA
 - 阻止旧式身份验证
-- 设置设备注册Microsoft Endpoint Manager – Azure AD加入
+- 在 Microsoft Endpoint Manager - Azure AD 中设置设备注册
 - 为设备配置 defender 防病毒Windows策略
 - 为设备配置Windows策略
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-确保你和客户租户满足要求[中](m365-lighthouse-requirements.md)所列的Microsoft 365 Lighthouse。
+确保你和客户租户满足 Requirements [for Microsoft 365 Lighthouse中列出的要求](m365-lighthouse-requirements.md)。
 
 ## <a name="learn-more-about-the-default-baseline"></a>详细了解默认基线
 
 从 **左侧导航** 窗格中选择"比较基准"以打开"比较基准"页。 你将看到默认基线已添加到默认租户组， (租户) 。 若要查看默认基线配置，请选择" **查看比较基准** "以打开"默认比较基准"页。 配置作为部署步骤列出。 选择任意部署步骤以查看部署详细信息和用户影响。
 
-:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Default baseline page.>。":::
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="&quot;默认基线&quot;页的屏幕截图>。":::
 
 ## <a name="deploy-a-baseline-configuration"></a>部署基线配置  
 
-1. 在左侧导航页中，选择"租户"以查看已载入租户的列表。
+1. In the left navigation pane in Lighthouse， select **Tenants** to view a list of your onboarded tenants.
 
 2. 选择要将基线配置部署到的租户。
 

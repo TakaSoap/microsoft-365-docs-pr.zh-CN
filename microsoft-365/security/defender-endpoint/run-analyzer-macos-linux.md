@@ -18,14 +18,15 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e79ccf29695f0bc74c75cf12d617e273d974b24b
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 087e7ff666ddcad02b5ead5ab62b483e60541a90
+ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213681"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62859273"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>在 macOS 或 Linux 上运行客户端分析器
+
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -35,9 +36,9 @@ ms.locfileid: "62213681"
 1. 将 [XMDE 客户端分析器](https://aka.ms/XMDEClientAnalyzer) 工具下载到需要调查的 macOS 或 Linux 计算机。
 
    > [!NOTE]
-   > 从上述链接下载的"XMDEClientAnalyzer.zip"的当前 SHA256 哈希为："34C0DA20A6B38A16951394958991CD74EF7E07EB1DE06923547B351665A32DF6"。
+   > 从上述链接下载的"XMDEClientAnalyzer.zip"的当前 SHA256 哈希为："AA6E73A5F451C3B78B066C9D55EE6499CE3C2F1A6E05CCE691A6055F36F93A3B"。
 
-2. 提取计算机上XMDEClientAnalyzer.zip内容。
+2. 提取计算机上XMDEClientAnalyzer.zip的内容。
 
 3. 打开终端会话，将目录更改为提取的位置并运行：
 
@@ -69,9 +70,9 @@ ms.locfileid: "62213681"
 > 
 > - 此外，该工具当前需要安装 Python 版本 3 或更高版本。
 >
-> - 如果在无法使用 Python 3 或提取 lxml 组件计算机上运行，可以下载没有任何要求的基于二进制版本的分析器 [：XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)
+> - 如果在无法使用 Python 3 或提取 lxml 组件计算机上运行，可以下载没有任何要求的基于二进制版本的分析器： [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)
 >
-> - 如果你的设备位于代理后面，则只需将代理服务器作为环境变量传递到 mde_support_tool.sh 脚本。 例如：`https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
+> - 如果设备位于代理后面，则只需将代理服务器作为环境变量传递到 mde_support_tool.sh 脚本。 例如：`https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 示例：
 

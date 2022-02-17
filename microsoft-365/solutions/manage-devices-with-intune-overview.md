@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 70824645edbf7c56a77aed76ec8fd07784bc43da
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: 9b1f3fbf48b58c477c1ae4c49870af6d58341bc4
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049308"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825189"
 ---
 # <a name="manage-devices-with-intune-overview"></a>使用 Intune Overview 管理设备
 
@@ -60,8 +60,8 @@ ms.locfileid: "62049308"
 |&nbsp;|步骤 |说明  |许可要求  |
 |---------|---------|---------|---------|
 |1     | 配置起始点零信任标识和设备访问策略       | 请与标识管理员合作[实现级别 2 应用保护策略 (APP) 数据保护](manage-devices-with-intune-app-protection.md)。 这些策略不需要管理设备。 在 Intune 中配置 APP 策略。 标识管理员将条件访问策略配置为需要批准的应用。          |E3、E5、F1、F3、F5    |
-|2     | 将设备注册到管理中       | 此任务需要更多规划和时间来实现。 虽然可以选择工具和方法来完成此操作，但[第 3 步–将设备注册到管理](manage-devices-with-intune-enroll.md)指导你使用具有 Autopilot 和自动注册的 Intune 完成此过程。      | E3、E5、F1、F3、F5        |
-|3     | 配置符合性策略        |  你希望确保访问应用和数据的设备满足最低要求，例如它们受密码或固定保护，并且操作系统是最新的。 合规性策略是定义设备必须满足的要求的方法。 [3. 设置合规性策略](manage-devices-with-intune-compliance-policies.md)可帮助你配置这些策略。        |   E3、E5、F3、F5      |
+|2     | 将设备注册到管理中       | 此任务需要更多规划和时间来实现。 Microsoft 建议使用 Intune 注册设备，因为此工具提供最佳集成。 可通过多个选项注册设备，具体取决于平台。 例如，可以使用 Azure AD Join 或 Autopilot 注册 Windows 设备。 你需要查看每个平台的选项，并确定哪个注册选项最适合你的环境。 请参阅[步骤 3–将设备注册到管理](manage-devices-with-intune-enroll.md)以了解详细信息。      | E3、E5、F1、F3、F5        |
+|3     | 配置符合性策略        |  你希望确保访问应用和数据的设备满足最低要求，例如设备受密码或固定保护，并且操作系统是最新的。 合规性策略是定义设备必须满足的要求的方法。 [3. 设置合规性策略](manage-devices-with-intune-compliance-policies.md)可帮助你配置这些策略。        |   E3、E5、F3、F5      |
 |4     | 配置企业（推荐）零信任标识和设备访问策略        |现在，你的设备已注册，你可以与标识管理员合作，[优化条件访问策略来要求正常和合规的设备](manage-devices-with-intune-require-compliance.md)。          | E3、E5、F3、F5        |
 |5     |部署配置文件      | 与仅根据你配置的条件将设备标记为合规或不符合的设备符合性策略相反，配置文件实际上会更改设备上的设置配置。 可以使用配置策略来强化设备免受网络威胁。 请参阅[第 5 步. 部署配置文件](manage-devices-with-intune-configuration-profiles.md)。        | E3、E5、F3、F5        |
 |6      |监视设备风险和对安全基线的符合性         | 在此步骤中，将 Intune 连接到 Microsoft Defender for Endpoint。 通过此集成，可以监视设备风险作为访问条件。 被发现处于风险状态的设备将被阻止。 还可以监视对安全基线的符合性。 转到[第 6 步. 监视设备风险和对安全基线的符合性](manage-devices-with-intune-monitor-risk.md)。       | E5、F5        |
@@ -84,6 +84,35 @@ ms.locfileid: "62049308"
 <!---
 ## Managing change with users
 --->
+
+## <a name="enrolling-devices-vs-onboarding-devices"></a>注册设备与载入设备
+如果遵循本指南，则将使用 Intune（或其他工具）将设备注册到管理中，你将载入设备以获取两项服务：
+- Defender for Endpoint
+- 终结点 DLP
+
+
+下图详细说明了如何使用 Intune。
+<br>
+
+![注册和载入设备的过程](../media/devices/devices-enroll-onboard-process.png#lightbox)
+
+在此图中：
+1. 使用 Intune 将设备注册到管理。
+2. 使用 Intune 将设备载入 Defender for Endpoint。
+3. 载入到 Defender for Endpoint 的设备也已加入，以获取 Microsoft 365 符合性功能，包括终结点 DLP。
+ 
+请注意，只有 Intune 正在管理设备。 载入是指设备能够与特定服务共享信息。 下表汇总了将设备注册到管理和载入特定服务的设备之间的差异。
+
+
+|         |注册     |载入  |
+|---------|---------|---------|
+|Description     |  注册适用于管理设备。 注册设备后，可以使用 Intune 或配置服务器进行管理。        | 载入会将设备配置为使用 Microsoft 365 中的一组特定功能。 目前，载入适用于 Microsoft Defender for Endpoint 和 Microsoft 合规性功能。 <br><br>在 Windows 设备上，载入涉及在 Windows Defender 中切换设置，该设置允许 Defender 连接到联机服务并接受应用于设备的策略。        |
+|范围     | 这些设备管理工具管理整个设备，包括将设备配置为满足特定目标，例如安全性。        |载入仅影响应用的服务。     |
+|推荐的方法     | Azure Active Directory 联接会自动将设备注册到 Intune。        | Intune 是将设备载入到 Windows Defender for Endpoint 的首选方法，也是获取 Microsoft 365 合规性功能的首选。<br><br>请注意，使用其他方法载入到 Microsoft 365 合规性功能的设备不会自动注册 Defender for Endpoint。        |
+|其他方法     |   其他注册方法取决于设备的平台，以及设备是 BYOD 还是由组织管理。      | 其他用于载入设备的方法包括（按顺序建议）：<br><li>配置管理器<li>其他移动设备管理工具（如果设备由某个工具管理）<li>本地脚本<li>用于载入非持久性虚拟桌面基础结构 (VDI) 设备的 VDI 配置包<li>组策略|
+| | |     |
+
+
 
 ## <a name="learning-for-administrators"></a>面向管理员的学习
 以下资源可帮助管理员了解有关使用 MEM 和 Intune 的概念。
