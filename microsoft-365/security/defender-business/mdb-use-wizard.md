@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 02/08/2022
+ms.date: 02/16/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 1659925081a96b4122910319b5c0a294d007f0b9
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 26bf8e46ba79094f74fe542f932921d4f1c2a50d
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62465322"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879128"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business-preview"></a>使用向导设置 Microsoft Defender for Business (预览) 
 
@@ -42,18 +42,21 @@ Microsoft Defender for Business (预览) 旨在通过类似向导的体验为中
 
 1. **分配用户权限**。 在此步骤中，将授予安全团队对 Microsoft 365 Defender 门户 () [https://security.microsoft.com](https://security.microsoft.com) 。 门户访问权限通过表示特定权限的角色授予。 [详细了解角色和权限](mdb-roles-permissions.md)。
 
-   - 全局管理员可以查看和编辑你的整个租户Microsoft 365设置。 
+   - 全局管理员可以查看和编辑整个租户Microsoft 365设置。 
    - 安全管理员可以查看和编辑安全设置。 
    - 安全读者只能查看报告中的信息。 
 
 2. **设置电子邮件通知**。 在此步骤中，确定在检测到漏洞或新警报时应接收电子邮件通知的人。 电子邮件通知可帮助你的安全团队随时了解情况，即使他们离开办公室。 [详细了解电子邮件通知](mdb-email-notifications.md)。 
 
-3. **载入和配置Windows设备**。 在此步骤中，你可以将组织的 Windows快速载入 Defender for Business。 从第一天起，载入设备有助于保护这些设备。 [详细了解设备载入](mdb-onboard-devices.md)。
+3. **载入和配置Windows设备**。 在此步骤中，你可以将组织的 Windows快速载入 Defender for Business。 从第一天起，载入设备有助于保护这些设备。 
 
-   - 如果你已在使用包括 Microsoft Intune) 的 Microsoft Endpoint Manager (，则系统将会询问你是否要使用自动载入，这将设置 Endpoint Manager 和 Defender for Business 之间的连接，然后载入注册的所有 Windows 设备Endpoint Manager。 
-   - 如果你尚未使用 Endpoint Manager，可以使用逐步设备载入并选择一组要载入 Defender for Business 的设备。 
+   - 如果你已在 Microsoft Endpoint Manager) 的 Microsoft Intune (部分使用，并且你的组织已在 Endpoint Manager 中注册了设备，则系统将会询问你是否希望对部分或所有注册的 Windows 设备使用自动载入。 自动载入可设置 Endpoint Manager 和 Defender for Business 之间的连接，然后Windows设备无缝载入到 Defender for Business。
+
+   - 如果你尚未使用 Endpoint Manager，或者如果你在 Endpoint Manager 中注册了非 Windows 设备，你可以手动将设备载入 Defender for Business (预览版) 。 
+
+   - 请参阅 [将设备载入到 Microsoft Defender for Business (预览) ](mdb-onboard-devices.md)。
    
-4. **配置安全策略**。 Defender for Business 包括可应用于组织设备的默认安全策略。 这些默认策略使用推荐设置，旨在为设备提供强大的保护。 但是，如果需要，还可以创建自己的安全策略。 而且，如果你已在使用Endpoint Manager，可以继续使用它来管理安全策略。 
+4. **配置安全策略**。 Defender for Business 包括可应用于组织设备的默认安全策略。 这些默认策略使用推荐设置，旨在为设备提供强大的保护。 但是，如果需要，还可以创建自己的安全策略。 此外，如果你已在使用Endpoint Manager，可以继续使用它来管理安全策略。 
 
    - [详细了解简化的配置](mdb-simplified-configuration.md)。
    - [选择在何处管理安全策略和设备](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices)。

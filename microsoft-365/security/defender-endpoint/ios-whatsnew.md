@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 098ea7ee2934ac811035414b295a71012edc88e2
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 723dc6a70d9a8d37ef05cb301c41f0fea3911da9
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766904"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879140"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -37,6 +37,10 @@ ms.locfileid: "62766904"
 
 iOS 上的 Microsoft Defender for Endpoint 现在具有监督 iOS/iPadOS 设备的专门功能，因为平台在这些类型的设备上提供了增强的管理功能。 它还可以提供 Web 保护 **，而无需在设备上设置本地 VPN**。 这为最终用户提供了无缝体验，同时仍受到网络钓鱼和其他基于 Web 的攻击的保护。 有关详细信息，请访问 [本文档](ios-install.md#complete-deployment-for-supervised-devices)
 
+## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>Microsoft Defender for Endpoint 现在是应用商店中的 Microsoft Defender
+
+Microsoft Defender for Endpoint 现已在应用商店 **中作为 Microsoft Defender** 提供。 通过此更新，该应用将在美国地区作为 **消费者的预览版提供**。 根据你使用工作或个人帐户登录应用后，你将有权访问适用于终结点的 Microsoft Defender 功能或适用于个人 Microsoft Defender 的功能。 有关详细信息，请参阅 [此博客](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals)。
+
 ## <a name="threat-and-vulnerability-management"></a>威胁和漏洞管理
 
 2022 年 1 月 25 日，我们宣布在 Android 和 iOS 上正式发布威胁和漏洞管理。 有关详细信息，请参阅此处 [的 techcommunity 文章](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663)。
@@ -49,7 +53,7 @@ iOS 上的 Microsoft Defender for Endpoint 现在具有监督 iOS/iPadOS 设备�
 ## <a name="1123250104"></a>1.1.23250104
 
 - 性能优化 - 使用此版本测试电池性能，并告诉我们您的反馈。
-- **适用于已注册的 iOS** 设备的零接触载入 - 借助此版本，已添加通过 Microsoft Endpoint Manager (Intune) 的零接触板载预览。 有关详细信息，请参阅本文档 [，](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) 详细了解安装和配置。
+- **已注册的 iOS** 设备的零接触载入 - 借助此版本，已添加通过 Microsoft Endpoint Manager (Intune) 注册的零接触板载预览。 有关详细信息，请参阅本文档 [，](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) 详细了解安装和配置。
 - **隐私控制** - 配置网络钓鱼警报报告的隐私控制。 有关详细信息，请参阅配置 [iOS 功能](ios-configure-features.md)。
 
 ## <a name="1123010101"></a>1.1.23010101
@@ -59,7 +63,7 @@ iOS 上的 Microsoft Defender for Endpoint 现在具有监督 iOS/iPadOS 设备�
 
 ## <a name="1120240103"></a>1.1.20240103
 - 设备运行状况卡 - 设备运行状况卡向最终用户通知任何挂起的软件更新。
-- 可用性增强功能 - 最终用户现在可以从 MSDefender 应用本身禁用 Defender for Endpoint VPN。 在此更新之前，最终用户只能从应用或应用设置 VPN。
+- 可用性增强功能 - 最终用户现在可以从 MSDefender 应用本身禁用 Defender for Endpoint VPN。 在此更新之前，最终用户仅必须禁用来自 设置 VPN。
 - Bug 修复。
 
 ## <a name="1120020101"></a>1.1.20020101
@@ -75,7 +79,7 @@ iOS 上的 Microsoft Defender for Endpoint 现在具有监督 iOS/iPadOS 设备�
 ## <a name="1115140101"></a>1.1.15140101
 
 - **越狱检测** 为预览版。 有关详细信息，请参阅基于 [设备风险信号设置条件访问策略](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)。
-- **对于已注册的设备，VPN** 配置文件的自动设置通过 Intune Microsoft Endpoint Manager (预览) 。 有关详细信息，请参阅为已注册的 [iOS 设备自动设置 VPN 配置文件](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
+- **对于已注册的设备，VPN** 配置文件的自动设置是预览版，Microsoft Endpoint Manager (Intune) 。 有关详细信息，请参阅为已注册的 [iOS 设备自动设置 VPN 配置文件](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
 - Microsoft Defender ATP 产品名称现已更新到应用商店中的 Microsoft Defender for Endpoint。
 - 改进了登录体验。
 - Bug 修复。

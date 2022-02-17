@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 02/09/2022
+ms.date: 02/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 143617fc3669b4a531bafe7fbbb9f2919a9ab295
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: 498fa3824ec1e022cbf0abcb0c7789e5e236262e
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520507"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879188"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>在 Microsoft Defender for Business 预览版中 (设备) 
 
@@ -59,7 +59,7 @@ ms.locfileid: "62520507"
 
 :::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="包含详细信息和可用操作选定设备的屏幕截图":::
 
-1. 在Microsoft 365 Defender门户 ([https://security.microsoft.com](https://security.microsoft.com)) 导航窗格中，选择"设备 **清单"**。 
+1. 在Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) 导航窗格中，选择"设备 **清单"**。 
 
 2. 选择设备以打开其飞出面板，并查看显示的信息。
 
@@ -73,7 +73,7 @@ ms.locfileid: "62520507"
 
 ## <a name="offboard-a-device"></a>载出设备
 
-请参阅 [载出设备](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device)。
+请参阅 [将设备载出](mdb-onboard-devices.md#offboarding-a-device)。
 
 ## <a name="next-steps"></a>后续步骤
 
