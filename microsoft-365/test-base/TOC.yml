@@ -8,6 +8,8 @@
   items:
     - name: 创建测试基本帐户
       href: createAccount.md
+    - name: 生成程序包
+      href: buildpackage.md
     - name: 上传程序包
       href: uploadApplication.md
     - name: Upload二进制文件&依赖项

@@ -1,6 +1,6 @@
 ---
 title: 我的组织中漏洞 - 危险和漏洞管理
-description: 列出 CVE 中常见的漏洞 () 在组织中运行的软件中发现漏洞的 ID。 由 Microsoft Defender for Endpoint 危险和漏洞管理发现。
+description: 列出 CVE 的常见 () 在组织中运行的软件中发现漏洞的 ID。 由 Microsoft Defender for Endpoint 危险和漏洞管理发现。
 keywords: Microsoft Defender for Endpoint threat & 漏洞管理， 危险和漏洞管理， Microsoft Defender for Endpoint tvm vulnerabilites page， finding vulnerabilites through tvm， tvm vulnerability list， vulnerability details in tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12ee0e4464383bb634605ab6553485e1a946c003
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 23b0235382e748071f0d8e060e15624b5332326d
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936988"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887302"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>我的组织中漏洞 - 危险和漏洞管理
 
@@ -37,21 +37,21 @@ ms.locfileid: "61936988"
 > [!IMPORTANT]
 > 威胁和漏洞管理可以帮助识别应用程序和组件中的 Log4j 漏洞。 [了解详细信息](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM)。
 
-威胁和漏洞管理使用 Defender for Endpoint 终结点保护中的相同信号扫描和检测漏洞。
+威胁漏洞管理使用 Defender 终结点保护中的相同信号扫描和检测漏洞。
 
-" **漏洞** "页列出了你的设备通过 CVE 帐户 ID 列出的常见漏洞 (暴露) 漏洞。 还可以查看严重性、常见漏洞评分系统 (CVSS) 分级、组织中的普遍程度、相应的漏洞、威胁见解等。
+" **漏洞"** 页列出了你的设备通过列出 CVE 中的常见漏洞和 (公开的) 漏洞。 还可以查看严重性、常见漏洞评分系统 (CVSS) 分级、组织中的普遍程度、相应的漏洞、威胁见解等。
 
 > [!NOTE]
 > 如果没有为漏洞分配正式的 CVE-ID，则此漏洞名称由 危险和漏洞管理。
 
 > [!TIP]
-> 若要获取有关新漏洞事件的电子邮件，请参阅在 Microsoft [Defender for Endpoint](configure-vulnerability-email-notifications.md)中配置漏洞电子邮件通知
+> 若要获取有关新漏洞事件的电子邮件，请参阅在 [Microsoft Defender for Endpoint 中配置漏洞电子邮件通知](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-weaknesses-page"></a>导航到"漏洞"页面
 
 以几种不同方式访问"漏洞"页面：
 
-- 从 **[Microsoft 365 Defender** 门户 **]** 菜单中的"漏洞管理"导航菜单中选择 (portal-overview.md) 
+- 从 **门户中的****漏洞管理** 导航菜单中选择Microsoft 365 Defender [漏洞](portal-overview.md)
 - 全局搜索
 
 ### <a name="navigation-menu"></a>导航菜单
@@ -61,7 +61,7 @@ ms.locfileid: "61936988"
 ### <a name="vulnerabilities-in-global-search"></a>全局搜索中的漏洞
 
 1. 转到全局搜索下拉菜单。
-2. 选择 **要查找** 的 CVE (常见漏洞和) ID 中的漏洞和密钥，然后选择搜索图标。 " **漏洞"** 页面将打开，并包含要查找的 CVE 信息。
+2. 选择 **要查找** 的常见漏洞和 (CVE) ID 中的漏洞和密钥，然后选择搜索图标。 " **漏洞"** 页面将打开，并包含要查找的 CVE 信息。
 ![已选择下拉列表选项"漏洞"的全局搜索框和示例 CVE。](images/tvm-vuln-globalsearch.png)
 3. 选择 CVE 打开包含详细信息的飞出面板，包括漏洞描述、详细信息、威胁见解和公开的设备。
 
@@ -78,7 +78,7 @@ ms.locfileid: "61936988"
 当图标为红色时，在"威胁"列中查看任何相关的泄露和威胁见解。
 
  > [!NOTE]
- > 始终对与持续威胁相关的建议设置优先级。 这些建议使用威胁见解图标"简单 ![ 绘制红色 Bug"进行标记。](images/tvm_bug_icon.png) 和泄露见解图标 ![ 简单绘制一个指向目标的箭头 ](images/tvm_alert_icon.png) 。
+ > 始终对与持续威胁相关的建议设置优先级。 这些建议使用威胁见解图标" ![简单绘制红色 Bug"进行标记。](images/tvm_bug_icon.png) 和泄露见解图标 ![简单绘制指向目标的箭头](images/tvm_alert_icon.png)。
 
 如果在组织中发现漏洞，则突出显示"泄露见解"图标。
 ![将鼠标悬停在图标上时可能会显示泄露见解文本的示例。 其中显示"可能的活动警报与此建议关联。"](images/tvm-breach-insights.png)
@@ -108,7 +108,7 @@ ms.locfileid: "61936988"
 
 ### <a name="top-vulnerable-software-in-the-dashboard"></a>仪表板中最易受攻击的软件
 
-1. Go to the [危险和漏洞管理 dashboard](tvm-dashboard-insights.md) and scroll down to the Top **vulnerable software** widget. 你将看到每个软件中发现漏洞的数量，以及威胁信息和设备曝光的一段时间的高级别视图。
+1. Go to the [危险和漏洞管理 dashboard](tvm-dashboard-insights.md) and scroll down to the **Top vulnerable software** widget. 你将看到每个软件中发现漏洞的数量，以及威胁信息和设备曝光的一段时间的高级别视图。
 
     ![具有四列的主要易受攻击的软件卡：软件、漏洞、威胁、公开的设备。](images/tvm-top-vulnerable-software500.png)
 
@@ -132,7 +132,7 @@ ms.locfileid: "61936988"
 
 3. 设备页面将打开，并包含要调查的设备的详细信息和响应选项。
 
-4. 选择 **"发现的漏洞"。**
+4. 选择 **"发现的漏洞"**。
 
    :::image type="content" alt-text="包含详细信息和响应选项的设备页面。" source="images/tvm-discovered-vulnerabilities.png" lightbox="images/tvm-discovered-vulnerabilities.png":::
 
@@ -140,9 +140,9 @@ ms.locfileid: "61936988"
 
 #### <a name="cve-detection-logic"></a>CVE 检测逻辑
 
-与软件证据类似，我们现在显示了在设备上应用的检测逻辑，以表明该设备易受攻击。 新部分称为"检测逻辑" (设备页面发现的任何漏洞中的"检测逻辑) 显示检测逻辑和来源。
+与软件证据类似，我们现在显示了在设备上应用的检测逻辑，以表明该设备易受攻击。 新部分称为"检测逻辑" (发现的设备页中发现的任何漏洞) 显示检测逻辑和来源。
 
-相关方案中也显示了"OS 功能"类别。 只有在启用了特定操作系统组件时，CVE 才会影响运行易受攻击的操作系统的设备。 假设 Windows Server 2019 或 Windows Server 2022 在其 DNS 组件中具有漏洞。 借助这一新功能，我们将仅将此 CVE 附加到操作系统中启用了 DNS 功能的 Windows Server 2019 和 Windows Server 2022 设备。
+相关方案中也显示了"OS 功能"类别。 只有在启用了特定操作系统组件时，CVE 才会影响运行易受攻击的操作系统的设备。 假设 Windows Server 2019 或 Windows Server 2022 在其 DNS 组件中具有漏洞。 借助此新功能，我们将仅将此 CVE 附加到操作系统中启用了 DNS 功能的 Windows Server 2019 和 Windows Server 2022 设备。
 
 :::image type="content" alt-text="检测逻辑示例，列出在设备和 KB 上检测到的软件。" source="images/tvm-cve-detection-logic.png":::
 
