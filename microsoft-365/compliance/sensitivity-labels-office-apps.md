@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4e8484f10f70d00b7db7422306ec625925d059d
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: efd28dbe00960c2644c476f6cd689c79385eed9d
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825453"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879212"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -408,26 +408,26 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 Outlook 应用支持的默认标签设置与文档的默认标签设置不同时：
 
-- 在标签策略向导的 **将默认标签应用于电子邮件** 页面，可指定将应用于所有未标记电子邮件的敏感度标签选项，或指定无默认标签。 此设置独立于向导中之前 **文档策略设置** 页面上的 **默认将此标签应用于文档** 设置。
+- 在 Microsoft 365 合规中心的标签策略配置中，在 **将默认标签应用于电子邮件** 页面上：可指定将应用于所有未标记电子邮件的敏感度标签选项，或指定为无默认标签。 此设置独立于配置的之前 **文档策略设置** 页面上的 **默认将此标签应用于文档** 设置。
 
-如果 Outlook 应用不支持与文档的默认标签设置不同的默认标签设置：Outlook 将始终使用你为标签策略向导的 **文档策略设置** 页面上 **默认将此标签应用于文档** 指定的值。
+如果 Outlook 应用不支持与文档的默认标签设置不同的默认标签设置：Outlook 将始终使用你为标签策略配置的 **文档策略设置** 页面上 **默认将此标签应用于文档** 所指定的值。
 
 当 Outlook 应用支持关闭强制标签时：
 
-- 在标签策略向导的 **策略设置** 页面上，选择 **要求用户向其电子邮件或文档应用标签**。 然后选择“**下一步**” > “**下一步**”，并清除复选框“**要求用户向电子邮件应用标签**”。 如果要对电子邮件和文档应用强制标签，请保持选中复选框。
+- 在 Microsoft 365 合规中心的标签策略配置中，在 **策略设置** 页面上：选择“**要求用户向其电子邮件或文档应用标签**”。 然后选择“**下一步**” > “**下一步**”，并清除复选框“**要求用户向电子邮件应用标签**”。 如果要对电子邮件和文档应用强制标签，请保持选中复选框。
 
 当 Outlook 应用不支持关闭强制标签时：如果选择“**要求用户向其电子邮件或文档应用标签**”作为策略设置，Outlook 将始终提示用户为未标记的电子邮件选择标签。
 
 > [!NOTE]
 > 如果已通过使用 [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) 或 [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) cmdlet 配置 PowerShell 高级设置 **OutlookDefaultLabel** 和 **DisableMandatoryInOutlook**：
 > 
-> 为这些 PowerShell 设置选择的值将反映在标签策略向导中，并自动适用于支持这些设置的 Outlook 应用。 其他 PowerShell 高级设置仍然仅支持 Azure 信息保护统一标签客户端。
+> 你为这些 PowerShell 设置选择的值反映在合规中心的标签策略配置中，并且它们自动适用于支持这些设置的 Outlook 应用。 其他 PowerShell 高级设置仍然仅支持 Azure 信息保护统一标签客户端。
 
 ## <a name="auditing-labeling-activities"></a>审核标签活动
 
 有关敏感度标签活动生成的审核事件的信息，请参阅 [在合规中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) 中的 [敏感度标签活动](search-the-audit-log-in-security-and-compliance.md) 部分。
 
-此审核信息在 [内容浏览器](data-classification-content-explorer.md) 和 [活动资源管理器](data-classification-activity-explorer.md) 中直观地表示，以帮助你了解敏感度标签的使用方式以及此标签内容的位置。
+此审核信息在 [内容浏览器](data-classification-content-explorer.md) 和 [活动资源管理器](data-classification-activity-explorer.md) 中直观地表示，以帮助你了解敏感度标签的使用方式以及此标签内容的位置。 在 [导出并配置审核日志记录](export-view-audit-log-records.md) 时，还可以使用所选的安全信息和事件管理 (SIEM) 软件创建自定义报表。
 
 ## <a name="end-user-documentation"></a>最终用户文档
 

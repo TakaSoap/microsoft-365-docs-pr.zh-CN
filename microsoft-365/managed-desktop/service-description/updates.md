@@ -11,12 +11,12 @@ manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e696f1b89cf03bbd4123252ea967e2aca10ef49
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: bf6ead692a82d485f6a8e3b3148bc05484c887a8
+ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62879248"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62896011"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何处理更新Microsoft 托管桌面
 
@@ -24,11 +24,11 @@ ms.locfileid: "62879248"
 
 <!--Update management -->
 
-Microsoft 托管桌面设备连接到基于云的现代基础结构。
+Microsoft 托管桌面所有设备连接到基于云的现代基础结构。
 
 保持Windows、Office、驱动程序、固件适用于企业的 Microsoft Store应用程序是速度和稳定性的平衡。 我们使用更新组来确保以安全方式推出操作系统更新和策略。 有关详细信息，请参阅更改和Microsoft 托管桌面[过程的视频](https://www.microsoft.com/videoplayer/embed/RE4mWqP)。
 
-Microsoft 发布的更新是累积更新，并归类为质量更新或功能更新。 有关详细信息，请参阅 Windows [更新企业：更新类型](/windows/deployment/update/waas-manage-updates-wufb#update-types)。
+Microsoft 发布的更新是累积更新，并归类为质量更新或功能更新。 有关详细信息，请参阅 Windows [Update for Business： Update types](/windows/deployment/update/waas-manage-updates-wufb#update-types)。
 
 ## <a name="update-groups"></a>更新组
 
@@ -36,9 +36,9 @@ Microsoft 托管桌面四个Azure AD组来管理更新：
 
 | Group | 说明 |
 | ------ | ------ |
-| 测试 | 用于验证Microsoft 托管桌面策略更改、操作系统更新、功能更新以及推送到 Azure AD 组织的其他更改 ("租户") 。 测试组为： <ul><li>最适合测试或可以提供早期反馈的用户。</li><li>从任何已建立的服务级别协议和用户支持中排除。</li><li>可用于验证应用程序与新策略或操作系统更改的兼容性。</li></ul> |
+| 测试 | 用于验证Microsoft 托管桌面更改、操作系统更新、功能更新以及推送到 Azure AD 组织的其他更改 ("租户") 。 测试组为： <br><ul><li>最适合测试或可以提供早期反馈的用户。</li><li>从任何已建立的服务级别协议和用户支持中排除。</li><li>可用于验证应用程序与新策略或操作系统更改的兼容性。</li></ul> |
 | First | 包含早期软件采用者以及可能受预发布更新限制的设备。 <br><br> 如果测试圈中的测试期间未涵盖的方案，则此组的设备可能会遇到中断。 |
-| 快速 | 将速度优先于稳定性。 Fast 组为： <ul><li>用于检测质量问题，然后再提供给广泛组。</li> <li>下一层验证，通常比 Test 和 First 组更加稳定。</li></ul> |
+| 快速 | 将速度优先于稳定性。 Fast 组为： <br><ul><li>用于检测质量问题，然后再提供给广泛组。</li> <li>下一层验证，通常比 Test 和 First 组更加稳定。</li></ul> |
 | 宽泛 | 此组是最后一个提供功能和质量更新的组。 <br><br> Broad 组包含组织中大多数Azure AD，因此支持部署速度的稳定性。 应对此组执行应用测试，因为环境是最稳定的。 |
 
 ### <a name="moving-devices-between-update-groups"></a>在更新组之间移动设备
@@ -75,7 +75,7 @@ Microsoft 托管桌面四个Azure AD组来管理更新：
 | 操作系统的功能更新 | 零天 | 30 天 | 60 天 | 90 天 |
 | 驱动程序/固件 | 遵循质量更新计划。 | 遵循质量更新计划。 | 遵循质量更新计划。 | 遵循质量更新计划。 |
 | 防病毒定义 | 通过每次扫描进行更新。 | 通过每次扫描进行更新。 | 通过每次扫描进行更新。 | 通过每次扫描进行更新。 |
-| Microsoft 365 企业应用版 | [了解更多](../get-started/m365-apps.md#updates-to-microsoft-365-apps) | [了解详细信息](../get-started/m365-apps.md#updates-to-microsoft-365-apps) | [了解详细信息](../get-started/m365-apps.md#updates-to-microsoft-365-apps) | [了解详细信息](../get-started/m365-apps.md#updates-to-microsoft-365-apps) |
+| Microsoft 365 企业应用版 | [了解详细信息](../get-started/m365-apps.md#updates-to-microsoft-365-apps) | [了解详细信息](../get-started/m365-apps.md#updates-to-microsoft-365-apps) | [了解详细信息](../get-started/m365-apps.md#updates-to-microsoft-365-apps) | [了解详细信息](../get-started/m365-apps.md#updates-to-microsoft-365-apps) |
 | Microsoft Edge | [了解详细信息](../get-started/edge-browser-app.md#updates-to-microsoft-edge) | [了解详细信息](../get-started/edge-browser-app.md#updates-to-microsoft-edge) | [了解详细信息](../get-started/edge-browser-app.md#updates-to-microsoft-edge) | [了解详细信息](../get-started/edge-browser-app.md#updates-to-microsoft-edge) |
 | Microsoft Teams | [了解详细信息](../get-started/teams.md#updates) | [了解详细信息](../get-started/teams.md#updates) | [了解详细信息](../get-started/teams.md#updates) | [了解详细信息](../get-started/teams.md#updates) |
 
@@ -90,7 +90,7 @@ Microsoft 托管桌面不支持属于预览体验成员计划Windows的设备。
 
 预览Windows计划用于验证预发布Windows软件。 它适用于不是任务关键型的设备。 虽然这是一个重要的 Microsoft 计划，但它不适合在生产环境中广泛部署。
 
-使用预览体验成员Windows发现的任何设备都可能会放入"测试"组中。 这些设备将免于更新服务级别协议和用户支持，Microsoft 托管桌面。
+使用预览体验成员Windows发现的任何设备都可能会放入"测试"组中。 这些设备将免受更新服务级别协议和用户支持Microsoft 托管桌面。
 
 ## <a name="bandwidth-management"></a>带宽管理
 

@@ -15,14 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b4ae8490fadecf60d4414218f42cac83b9035270
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: d687273a3029f3de080f06f328d4d40853142353
+ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354980"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62896095"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -34,12 +35,12 @@ ms.locfileid: "62354980"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)。
 
-Defender for Endpoint 传感器需要 Microsoft Windows HTTP (WinHTTP) 报告传感器数据并与 Defender for Endpoint 服务通信。 嵌入的 Defender for Endpoint 传感器使用 LocalSystem 帐户在系统上下文中运行。 该传感器使用 Microsoft Windows Http Services (WinHTTP) 启用与 Defender for Endpoint 云服务的通信。
+Defender for Endpoint 传感器要求 Microsoft Windows HTTP (WinHTTP) 报告传感器数据并与 Defender for Endpoint 服务通信。 嵌入的 Defender for Endpoint 传感器使用 LocalSystem 帐户在系统上下文中运行。 该传感器使用 Microsoft Windows HTTP Services (WinHTTP) 启用与 Defender for Endpoint 云服务的通信。
 
 > [!TIP]
 > 对于将转发代理用作 Internet 网关的组织，可以使用网络保护来调查在转发代理之后 [发生的连接事件](investigate-behind-proxy.md)。
 
-WinHTTP 配置设置独立于 Windows Internet (WinINet) 浏览代理 (，请参阅 [WinINet 与 WinHTTP](/windows/win32/wininet/wininet-vs-winhttp)) 。 它只能使用下列发现方法发现代理服务器：
+WinHTTP 配置设置独立于 Windows Internet (WinINet) 浏览代理 (请参阅 [WinINet 与 WinHTTP](/windows/win32/wininet/wininet-vs-winhttp)) 。 它只能使用下列发现方法发现代理服务器：
 
 - 自动发现方法：
 
@@ -61,7 +62,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) 浏览代理 (，请参
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>使用基于注册表的静态代理手动配置代理服务器
 
-为 Defender 的终结点检测和响应 (EDR) 传感器配置基于注册表的静态代理，以报告诊断数据并与 Defender for Endpoint 服务进行通信（如果不允许计算机连接到 Internet）。
+为 Defender 的终结点检测和响应 (EDR) 传感器配置基于注册表的静态代理，以报告诊断数据，并与终结点服务的 Defender 通信（如果不允许计算机连接到 Internet）。
 
 > [!NOTE]
 > 在 Windows 10、Windows 11、Windows Server 2019 或 Windows Server 2022 上使用此选项时，建议具有以下 (或更高版本的) 内部版本和累积更新汇总：
@@ -74,15 +75,15 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) 浏览代理 (，请参
 >
 > 这些更新改进了 CnC (Command and Control) 连接和可靠性。
 
-静态代理可以通过组策略 (GP) ，组策略值下的两个设置都应配置为代理服务器以使用 EDR。 组策略在管理模板中可用。
+静态代理可以通过组策略 (GP) 配置，组策略值下的两个设置都应配置为代理服务器以使用 EDR。 组策略在管理模板中可用。
 
-- **管理模板> Windows数据收集**>预览版中的组件>连接用户体验和遥测服务配置经过身份验证的代理用法。
+- **管理模板> Windows数据收集>预览>配置** 连接的用户体验和遥测服务的已验证代理使用情况。
 
   将其设置为" **已启用"，** 然后选择 **"禁用经过身份验证的代理用法"**。
 
   ![组策略设置 1 的图像。](images/atp-gpo-proxy1.png)
 
-- **配置> Windows用户体验>预览** 版中的管理模板>组件：
+- **配置连接> Windows遥测>数据收集** 和预览>管理模板和组件：
 
   配置代理。
 
@@ -92,7 +93,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) 浏览代理 (，请参
 | 组策略 | 注册表项 | 注册表项 | 值 |
 |:---|:---|:---|:---|
 | 为连接的用户体验和遥测服务配置经过身份验证的代理使用情况 | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD)  |
-| 配置连接用户体验和遥测 | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> 例如： (REG_SZ) ```10.0.0.6:8080``` |
+| 配置连接用户体验和遥测 | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> 例如： ```10.0.0.6:8080``` (REG_SZ)  |
 
 ## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>为用户配置静态Microsoft Defender 防病毒
 
@@ -120,9 +121,9 @@ Microsoft Defender 防病毒[云提供的保护](cloud-protection-microsoft-defe
 >
 > 出于复原目的和云保护实时特性，Microsoft Defender 防病毒缓存上一个已知的工作代理。 确保您的代理解决方案不执行 SSL 检查。 这将中断安全云连接。 
 >
-> Microsoft Defender 防病毒不会使用静态代理连接到 Windows Update 或 Microsoft Update 来下载更新。 相反，如果配置为使用 Windows Update，它将使用系统范围的代理，或根据配置的回退顺序配置的内部更新[源](manage-protection-updates-microsoft-defender-antivirus.md)。 
+> Microsoft Defender 防病毒不会使用静态代理连接到 Windows Update 或 Microsoft Update 来下载更新。 相反，如果配置为使用 Windows Update，它将使用系统范围的代理，或根据配置的回退顺序配置[的内部更新源](manage-protection-updates-microsoft-defender-antivirus.md)。 
 >
-> 如果需要，可以使用管理 **模板> Windows组件> Microsoft Defender 防病毒 >定义代理自动配置 (.pac)** 以连接到网络。 如果需要设置具有多个代理的高级配置，请使用管理模板 **> Windows 组件 > Microsoft Defender 防病毒 > 定义** 地址来绕过代理服务器并防止 Microsoft Defender 防病毒 对目标使用代理服务器。 
+> 如果需要，可以使用管理模板 **> Windows组件> Microsoft Defender 防病毒 >定义代理自动配置 (.pac**) 以连接到网络。 如果需要设置具有多个代理的高级配置，请使用管理模板 **> Windows 组件 > Microsoft Defender 防病毒 >** 定义地址来绕过代理服务器，并防止 Microsoft Defender 防病毒 对目标使用代理服务器。 
 >
 > 可以将 PowerShell 与 `Set-MpPreference` cmdlet 一起用于配置这些选项： 
 >
@@ -143,7 +144,7 @@ Microsoft Defender 防病毒[云提供的保护](cloud-protection-microsoft-defe
 > [!NOTE]
 >
 > - 这将影响所有应用程序，包括使用带默认代理的 WinHTTP 的 Windows 服务。</br>
-> - 更改拓扑结构（例如 (：从办公室到家庭) netsh 命令将发生故障。 使用基于注册表的静态代理配置。
+> - 要更改拓扑的笔记本电脑 (例如：从办公室到家庭) netsh 命令将发生故障。 使用基于注册表的静态代理配置。
 
 1. 打开提升的命令行:
    1. 转到“**开始**”并键入“**cmd**”。
@@ -185,7 +186,7 @@ netsh winhttp reset proxy
 > [!NOTE]
 > Windows版本 1803 或更早版本运行的设备需要 `settings-win.data.microsoft.com`。  <br>
 >
-> 仅在运行版本 1803 或更高版本的设备Windows包含 v20 的 URL 才需要。 例如，运行`us-v20.events.data.microsoft.com`版本 1803 或Windows并载入到美国数据安全中心区域的设备存储。
+> 仅在运行版本 1803 或Windows时，才需要包含 v20 的 URL。 例如，对于`us-v20.events.data.microsoft.com`运行版本 1803 或Windows并载入到美国数据安全中心区域的设备，存储。
 >
 
 如果代理或防火墙阻止作为 Defender for Endpoint 传感器的匿名流量，并且它从系统上下文进行连接以确保允许匿名流量位于前面列出的 URL 中。
@@ -193,9 +194,9 @@ netsh winhttp reset proxy
 > [!NOTE]
 > Microsoft 不提供代理服务器。 这些 URL 可通过您配置的代理服务器访问。
 
-### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) - 旧版客户端或 Windows Server 的代理和Windows要求
+### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) Windows - 旧版客户端或 Windows Server 的代理和防火墙要求
 
-与早期版本的 (Windows（如 Windows 7 SP1、Windows 8.1 和 Windows Server 2008 R2*）通常称为 Microsoft Monitoring Agent) 的 Log Analytics 代理通信时，需要代理和防火墙配置信息列表中的信息。
+与日志分析代理 (（对于早期版本的 Windows Microsoft Monitoring Agent) ，例如 Windows 7 SP1、Windows 8.1 和 Windows Server 2008 R2*）通信，需要代理和防火墙配置信息列表中的信息。
 
 <br>
 
@@ -216,7 +217,7 @@ netsh winhttp reset proxy
 
 ## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>确认Microsoft Monitoring Agent (MMA) 服务 URL 要求 
 
- 请参阅以下指南，在将 Microsoft Monitoring Agent (MMA) 用于早期版本的 Windows 时，消除特定环境的通配符 (*) 要求。
+ 请参阅以下指南，在将 Microsoft Monitoring Agent (MMA) 用于早期版本的 Windows 时，为特定环境消除通配符 (*) 要求。
 
 1. 有关使用 Microsoft Monitoring Agent (MMA) 的以前操作系统载入到 Defender for Endpoint (中有关详细信息，请参阅在 [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) 上载入以前版本的 Windows 和载入 [Windows 服务器](configure-server-endpoints.md)) 。
 
@@ -224,22 +225,22 @@ netsh winhttp reset proxy
 
 3. 从"C：\Program Files\Microsoft Monitoring Agent\Agent"运行 TestCloudConnection.exe 工具以验证连接性，并获取特定工作区所需的 URL。
 
-4. 请查看 Microsoft Defender 终结点 URL 列表，了解你的区域要求的完整 (请参阅服务 URL [电子表格) 。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+4. 请查看 Microsoft Defender 终结点 URL 列表，查看区域要求的完整列表 (请参阅服务 URL [电子表格](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)) 。
 
-    ![管理员在Windows PowerShell。](images/admin-powershell.png)
+    ![网站中的管理员Windows PowerShell。](images/admin-powershell.png)
 
-. () .ods.opinsights.azure.com \* \*\*、.oms.opinsights.azure.com 和 .agentsvc.azure-automation.net \*URL 终结点中使用的通配符可以替换为特定的工作区 ID。 工作区 ID 特定于您的环境和工作区。 可以在租户门户内的租户载入部分找到Microsoft 365 Defender部分。
+.ods.opinsights.azure.com (\*) \* \*、.oms.opinsights.azure.com 和 .agentsvc.azure-automation.net \*URL 终结点中使用的通配符可以替换为特定的工作区 ID。 工作区 ID 特定于您的环境和工作区。 可以在租户门户内的"载入"部分找到Microsoft 365 Defender部分。
 
 . \*blob.core.windows.net URL 终结点可以替换为测试结果的"防火墙规则： \*.blob.core.windows.net"部分中显示的 URL。
 
 > [!NOTE]
-> 如果通过 Microsoft Defender for Cloud 载入，可以使用多个工作区。 您需要在每个工作区 (的已载入计算机上执行 TestCloudConnection.exe 过程，以确定工作区和工作区之间的 *.blob.core.windows.net URL) 。
+> 如果通过 Microsoft Defender for Cloud 载入，可以使用多个工作区。 您需要从每个工作区 (在载入的计算机上执行 TestCloudConnection.exe 过程，以确定工作区和工作区之间的 *.blob.core.windows.net URL) 。
 
 ## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>验证与 Microsoft Defender for Endpoint 服务 URL 的客户端连接
 
 验证代理配置是否成功完成。 然后，WinHTTP 可以通过你的环境中代理服务器发现和进行通信，然后代理服务器将允许流量到 Defender for Endpoint 服务 URL。
 
-1. 将 [Microsoft Defender for Endpoint Client Analyzer 工具](https://aka.ms/mdeanalyzer) 下载到运行 Defender for Endpoint 传感器的电脑。
+1. 将 [Microsoft Defender for Endpoint Client Analyzer 工具](https://aka.ms/mdeanalyzer) 下载到运行 Defender for Endpoint 传感器的电脑。 对于下层服务器，请使用最新的预览版，可下载 [Microsoft Defender for Endpoint Client Analyzer 工具 Beta](https://aka.ms/BetaMDEAnalyzer)。
 
 2. 提取设备上MDEClientAnalyzer.zip内容。
 
@@ -274,7 +275,7 @@ netsh winhttp reset proxy
    5 - Command line proxy: Doesn't exist
    ```
 
-如果任一连接选项返回 (200) 状态，则 Defender for Endpoint 客户端可以使用此连接方法与测试的 URL 正确通信。
+如果任一连接选项返回 (200) 状态，则 Defender for Endpoint 客户端可以使用此连接方法正确与测试的 URL 通信。
 
 但是，如果连接检查结果显示失败，则会显示 HTTP 错误（请参阅 HTTP 状态代码）。 然后，可以使用在代理服务器中启用对 [Defender for Endpoint 服务 URL 的访问中显示的表中的 URL](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。 可以使用的 URL 取决于载入过程中所选的区域。
 
