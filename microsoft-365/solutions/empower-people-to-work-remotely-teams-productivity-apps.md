@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用户可通过使用 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
-ms.openlocfilehash: 36aa96b1355eec41060881da26f7e709a5058898
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 97a0342347d848a27a8402b5b8506536c95c55c9
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190145"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886226"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>步骤 5：部署混合工作者生产力应用和服务
 
@@ -40,7 +40,7 @@ ms.locfileid: "60190145"
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>通过 Microsoft Teams 让人们保持联系
 
-Teams 让你可以在一个位置聊天、开会、呼叫和协作。 数百万人每天在 Teams 中完成自己的工作，因为它能将远程工作所需的所有内容整合到一个中心，以进行团队合作。 
+使用 Microsoft Teams 的 Teams，你的组织可以在一个位置聊天、开会、通话和协作。 每天，数百万人使用 Teams 完成自己的工作，因为它能将现场或远程工作所需的所有内容整合到一个中心，以进行团队合作。 
 
 有关详细指南，请参阅[使用 Microsoft Teams 支持远程工作者](/microsoftteams/support-remote-work-with-teams)。 
 
@@ -48,7 +48,7 @@ Teams 让你可以在一个位置聊天、开会、呼叫和协作。 数百万�
 
 ### <a name="chat-and-conversations"></a>聊天和对话
 
-聊天和按线索组织的对话是 Teams 的中心，支持单个一对一聊天以及群组聊天和对话。 远程工作者可以通过在群组聊天或一对一邮件中使用 gif、贴纸和表情符号来共享信息、意见和个性。
+聊天和按线索组织的对话是 Teams 的中心，支持单个一对一聊天以及群组聊天和对话。 远程工作者可以通过在群组聊天或一对一邮件中使用图片、贴纸和表情符号来共享信息、意见和个性。
 
 ### <a name="meetings-and-conferencing"></a>会议和电话会议 
 
@@ -56,7 +56,7 @@ Teams 无疑有助于维护与远程工作者之间的通信和信息共享，�
 
 ### <a name="calling"></a>通话
 
-Teams 支持在用户，甚至是使用联合身份验证的其他组织之间直接进行 VoIP 呼叫。 它使用与会议相同的编解码器，在全球范围内提供出色的音频，无需额外的 PSTN 费用。 但是，某些用户可能需要在远程工作时使用专用的电话号码进行外部呼叫。 Teams 可以为这些用户快速提供云电话服务，以便其拨打和接听电话。
+Teams 支持在用户，甚至是使用联合身份验证的其他组织之间直接进行 VoIP 呼叫。 它使用与会议相同的编解码器，在全球范围内提供出色的音频，而无需额外的 PSTN 费用。 但是，某些用户可能需要在远程工作时使用专用的电话号码进行外部呼叫。 Teams 可以为这些用户快速提供云电话服务，以便其拨打和接听电话。
 
 ### <a name="apps-and-workflows"></a>应用和工作流
 

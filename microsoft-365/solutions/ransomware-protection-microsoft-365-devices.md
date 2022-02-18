@@ -17,34 +17,34 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
 description: 使用 Windows Intune 作为 MDA 和 MAM 服务提供商，Windows 10 安全功能将保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: adbefb7ac8ec574a69bc59a67cab61cc69d00568
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 918dc75d11157bf6358e68a13d04c9a84c0a3837
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702207"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887588"
 ---
 # <a name="step-4-protect-devices"></a>步骤 4. 保护设备
 
-为了帮助保护设备免受勒索软件攻击的初始访问部分：
+为了帮助保护设备（终结点）免受勒索软件攻击初始访问部件的影响：
 
 - 将 [Intune](/mem/intune/fundamentals/what-is-intune) 部署为移动设备管理 (MDM) 和移动应用管理 (MAM) 服务提供商，并注册组织拥有的设备。
-- 执行[通用标识和设备访问策略](/microsoft-365/security/office-365-security/identity-access-policies) ，验证用户帐户凭据以及设备运行状况和合规性要求。
+- 执行 [通用标识和设备访问策略](/microsoft-365/security/office-365-security/identity-access-policies)，以验证用户帐户凭据并强制实施设备运行状况和合规性要求。
 - 在 Microsoft Defender for Endpoint 和 Microsoft 365 Defender 中启用[网络保护](/microsoft-365/security/defender-endpoint/network-protection)。
 - 在 Microsoft Defender SmartScreen 中配置[站点和下载检查](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings)以及[应用和文件检查](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings)以阻止或发出警告。
 - 启用 [Microsoft Defender 防病毒扫描已下载文件和附件](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus)。
 - 在 Microsoft Defender for Endpoint 和 Microsoft 365 Defender 中将 **远程桌面安全级别** 设置为 **TLS**。
 
-## <a name="windows-10-devices"></a>Windows 10 设备
+## <a name="windows-11-or-10-devices"></a>Windows 11 或 10 设备
 
-若要帮助抵御来自 Windows 10 设备的横向移动攻击，请执行以下操作：
+如果要帮助抵御来自 Windows 11 或 10 设备的攻击的横向移动部件，请执行以下操作：
 
 - [打开 Microsoft Defender 防火墙](https://support.microsoft.com/windows/turn-microsoft-defender-firewall-on-or-off-ec0844f7-aebd-0583-67fe-601ecf5d774f)。
-- [更新 Microsoft Defender 防病毒定义](/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus)。
+- [更新 Microsoft Defender 防病毒定义](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus)。
 
 若要降低攻击的影响，请：
 
-- 对勒索软件使用[高级保护](/Microsoft-365/security/defender-endpoint/attack-surface-reduction#use-advanced-protection-against-ransomware)。
+- 使用 [攻击面减少规则和针对勒索软件的高级保护](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#use-advanced-protection-against-ransomware)。
 
 若要帮助防止攻击者规避安全防御措施，请执行以下操作：
 
@@ -65,7 +65,7 @@ ms.locfileid: "60702207"
 
 在实施这些保护时，请对以下内容执行更改管理：
 
-- [通用标识和设备访问策略](/microsoft-365/security/office-365-security/identity-access-policies)可以拒绝具不符合要求的设备的用户访问。
+- [通用零信任标识和设备访问策略](/microsoft-365/security/office-365-security/identity-access-policies) 可以拒绝对具有不符合要求设备的用户进行的访问。
 - 下载文件可能会在下载前警告用户，否则可能会被阻止。
 - 某些 Office、Excel 4.0、XLM 或 VBA 宏可能不再运行。
 
