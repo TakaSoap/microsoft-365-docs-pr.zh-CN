@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 7e516d78c781782e24c26ddedfa7b8996bb44fe0
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: d3562126a678e486fd97f3c760841f9ba4de7193
+ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322429"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62859285"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -65,7 +65,9 @@ ms.locfileid: "62322429"
 
 Teams 使用 Azure 支持的聊天服务作为其所有消息 (聊天和频道消息) 的主要存储。 如果因合规性原因需要删除 Teams 消息，Teams 的保留策略可以根据消息的创建时间，在指定期限后删除消息。 然后，消息会从存储合规性操作的 Exchange 邮箱以及由基础 Azure 驱动的聊天服务所使用的主存储中永久删除。 有关基础体系结构的详细信息，请参阅 [Microsoft Teams 中的安全性和合规性](/MicrosoftTeams/security-compliance-overview)，特别是[信息保护体系结构](/MicrosoftTeams/security-compliance-overview#information-protection-architecture)部分。
 
-即使这些来自 Teams 聊天和频道消息的数据存储在邮箱中，但必须为 **Teams 频道消息** 和 **Teams 聊天** 位置配置保留策略。 Teams 聊天和频道消息不包括在为 Exchange 用户或组邮箱配置的保留策略中。 如果将用户添加到聊天中，则会将与其共享的所有邮件的副本引入到其邮箱中。 邮件的创建日期不会为新用户而更改，并对所有用户保持不变。
+即使这些来自 Teams 聊天和频道消息的数据存储在邮箱中，但必须为 **Teams 频道消息** 和 **Teams 聊天** 位置配置保留策略。 Teams 聊天和频道消息不包括在为 Exchange 用户或组邮箱配置的保留策略中。 同样，Teams 的保留策略不会影响存储邮箱的其他电子邮件项目。
+
+如果将用户添加到聊天中，则会将与其共享的所有邮件的副本引入到其邮箱中。 邮件的创建日期不会为新用户而更改，并对所有用户保持不变。
 
 > [!NOTE]
 > 如果用户包含在保留 Teams 消息的活动保留策略中，并且删除了包含在此策略中的用户邮箱，为了保留 Teams 数据，邮箱会转换为[非活动邮箱](inactive-mailboxes-in-office-365.md)。 如果不需要为用户保留此 Teams 数据，请在删除用户邮箱之前，将用户帐户从保留策略中排除，并 [等待此更改生效](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)。
