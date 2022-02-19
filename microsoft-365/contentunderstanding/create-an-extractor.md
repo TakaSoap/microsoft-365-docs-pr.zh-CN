@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何在 Microsoft SharePoint Syntex 中创建提取程序。
-ms.openlocfilehash: e6598704375aad88efcdbaef700ee0187c4f7e07
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1d0aebf610897d07d051ba9e5f3e218dd582bbad
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665074"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909660"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建提取程序
 
@@ -42,8 +42,12 @@ ms.locfileid: "60665074"
 
 2. 在“**新实体提取程序**”屏幕上，在“**新提取程序名称**”字段中键入提取程序的名称。 例如，如果想要从每个”合同续订文档”中提取服务开始日期，请将其命名为“**服务开始日期**”。 也可以选择重复使用以前创建的列（例如，托管元数据列）。
 
+    默认情况下，列类型为 **单行文本**。 如果要更改列类型， > 请选择"高级设置""列类型"，然后选择想要使用的类型。
+
+    ![显示"列类型"选项的"新建实体提取程序"面板的"高级设置"部分的屏幕截图。](../media/content-understanding/advanced-settings-column-type.png) 
+
     > [!NOTE]
-    > 对于列类型为单 **行** 文本的提取程序，最大字符数限制为 255。 您键入的任何超出限制的字符都会被截断。
+    > 对于列类型为单行文本 **的** 提取程序，最大字符数限制为 255。 您键入的任何超出限制的字符都会被截断。
 
 3. 完成时单击“**创建**”。
 

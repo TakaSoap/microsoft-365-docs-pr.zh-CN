@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 合规性扩展可扩展对 Google Chrome 浏览器文件活动和保护操作的监视和控制
-ms.openlocfilehash: e41343f14e799f354906361fe88f6a99dba12908
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 15c62369bb8b4fc02926fa0e2b0bfc4834c371ac
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950661"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909703"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>了解 Microsoft 合规性扩展
 
@@ -38,7 +38,7 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 
 活动 |说明  | 受支持的策略操作|
 |---------|---------|---------|
-|文件复制到云  | 用户尝试通过 Chrome 浏览器将敏感项目上传到受限服务域时进行检测 |审核、阻止|
+|文件复制到云  | 用户尝试通过 Chrome 浏览器将敏感项目上传到受限服务域时进行检测 |审核、通过覆盖阻止、阻止|
 |文件打印  |用户尝试将 Chrome 浏览器中打开的敏感项目打印到本地或网络打印机时进行检测 |审核、通过覆盖阻止、阻止|
 |文件复制到剪贴板 |用户尝试从在 Chrome 浏览器中查看的敏感项目中复制信息，然后将其粘贴到另一应用、进程或项目时进行检测。 |审核、通过覆盖阻止、阻止|
 |文件复制到可移动存储器    | 用户尝试将敏感项目或信息从在 Chrome 浏览器中打开的敏感项目复制到可移动媒体或 USB 设备时进行检测 |审核、通过覆盖阻止、阻止|
