@@ -1,25 +1,30 @@
 ---
 title: 配置垃圾邮件筛选策略
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: null
+ms.date: ''
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: high
 search.appverid:
-  - MET150
+- MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
-  - M365-security-compliance
-ms.custom: null
+- M365-security-compliance
+ms.custom: ''
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: 1ac240f402d230362cb33ea818e62c1e0629eb39
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909743"
 ---
-
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -110,11 +115,11 @@ ms.prod: m365-security
 
 5. 在出现的“**群发电子邮件阈值和垃圾邮件属性**”页面上，配置以下设置：
 
-   - **群发电子邮件阈值**：针对触发你在下一页上配置“**群发电子邮件**”垃圾邮件筛选裁定指定操作的邮件指定批量投诉级别 (BCL)（大于指定值、不大于或等于）。 值越高，邮件就越不理想（是垃圾邮件的可能性就越大）。 默认值为 7。 有关详细信息，请参阅 [EOP 中的批量投诉级别 (BCL)](bulk-complaint-level-values.md)，以及[垃圾邮件与群发电子邮件有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
+   - **批量电子邮件阈值**：指定邮件的批量投诉级别 (BCL)，由其触发你在下一页上配置的 **批量** 垃圾邮件筛选裁定的指定操作。 值越高，邮件就越不理想（是垃圾邮件的可能性就越大）。 默认值为 7。 有关详细信息，请参阅 [EOP 中的批量投诉级别 (BCL)](bulk-complaint-level-values.md)，以及[垃圾邮件与群发电子邮件有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
      默认情况下，在反垃圾邮件策略中，仅在 PowerShell 中可配置的设置 _MarkAsSpamBulkMail_ 的值为 `On`。 此设置极大地影响“**群发电子邮件**”筛选裁定结果：
 
-     - **_MarkAsSpamBulkMail_ 的值为“打开”**：大于阈值的 BCL 将转换为对应于“**垃圾邮件**”筛选裁定的 SCL 6，并会对邮件执行“**群发电子邮件**”筛选裁定对应的操作。
+     - **_MarkAsSpamBulkMail_ 的值为“开”**：大于或等于阈值的 BCL 将转换为对应于“**垃圾邮件**”筛选裁定的 SCL 6，并对邮件执行适用于“**批量**”筛选裁定的操作。
      - **_MarkAsSpamBulkMail_ 的值为“关闭”**：虽然邮件已有 BCL 标记，但 _不会_ 根据“**群发电子邮件**”筛选裁定执行任何操作。 实际上，BCL 阈值和“**群发电子邮件**”筛选裁定操作不相关。
 
    - “**增加垃圾邮件分数**”、“**标记为垃圾邮件**”<sup>\*</sup>和“**测试模式**”：默认情况下关闭的高级垃圾邮件过滤器 (ASF) 设置。
