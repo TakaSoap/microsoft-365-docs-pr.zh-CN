@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft Endpoint Manager 管理管理设备、电脑和其他终结点。
-ms.openlocfilehash: 3d4a46a3513078b904afbe2b4f09642f338c8a81
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 03d212071db686079a76115d7cb94d2abb4cde88
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939415"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886410"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步骤 4。为设备、电脑和其他终结点部署终结点管理
 
@@ -30,7 +30,7 @@ ms.locfileid: "61939415"
 
 [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 将你可能已了解和正在使用的下列服务结合在一起，提供相关服务和工具用来管理移动设备、台式计算机、虚拟机、嵌入式设备和服务器。
 
-![Microsoft 365 的终结点管理组件。](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+:::image type="content" source="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png" alt-text="Microsoft 365 的终结点管理组件" lightbox="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png":::
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -40,7 +40,7 @@ Microsoft Intune 是一种基于云的服务，侧重于 Microsoft 365 所包含
 
 - **MAM：** 远程工作者可能不希望你对他们的个人设备（也称为自带 (BYOD) 设备）拥有完全控制权。 可给混合工作者提供选项，同时仍要保护组织。 例如，混合工作者如果希望完全访问你的组织资源，可以注册其设备。 或者，如果这些用户仅希望访问电子邮件或 Microsoft Teams，则可使用需要多重身份验证 (MFA) 的应用保护策略来使用这些应用。
 
-有关详细信息，请参阅[使用 Intune 管理终结点和Microsoft 365](manage-devices-with-intune-overview.md) 基础解决方案。
+有关详细信息，请参阅 [使用 Intune 管理设备](manage-devices-with-intune-overview.md) 基础解决方案。
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
@@ -58,17 +58,9 @@ Configuration Manager 是一种本地管理解决方案，可用于管理网络�
 
 ## <a name="endpoint-analytics"></a>终结点分析
 
-端点分析是一种基于云的服务，可与 Configuration Manager 集成并为你提供洞察和情报，以便就 Windows 客户端作出明智决策。 它将组织中的数据与连接到 Microsoft 云服务的其他数百万台设备的数据合并。 
+终结点分析旨在提高用户工作效率，并通过提供用户体验见解来降低 IT 支持成本。 通过这些见解，IT 可以使用主动支持来优化最终用户体验，并通过评估配置更改对用户的影响来检测用户体验回归。
 
-使用 Endpoint Analytics，可以：
-
-- 创建组织中运行的应用的清单。
-- 评估应用程序与最新 Windows 10 功能更新的兼容性。
-- 确定兼容性问题，并根据云支持的数据见解获取缓解建议。
-- 创建可在最小的一组设备内代表全部应用程序和驱动程序的试点组。
-- 将 Windows 10 部署到试点设备和生产管理设备。
-
-有关详细信息，请参阅此[端点分析概述](/mem/configmgr/desktop-analytics/overview)。
+有关详细信息，请参阅此[端点分析概述](/mem/analytics/overview)。
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 

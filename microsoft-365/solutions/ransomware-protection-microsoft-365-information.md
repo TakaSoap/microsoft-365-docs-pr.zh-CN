@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
 description: 使用受控文件夹访问权限、MIP、DLP 和 Microsoft Defender for Cloud Apps 来保护你的 Microsoft 365 敏感数据。
-ms.openlocfilehash: 4d6218ef32b10f99fcd1836444add49a7c4cb40c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e5973373b9a831a8abaf8356866524c6c0639224
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110039"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886986"
 ---
 # <a name="step-5-protect-information"></a>步骤 5. 保护信息
 
@@ -31,7 +31,7 @@ ms.locfileid: "61110039"
 要在 Microsoft 365 租户中提供敏感信息的其他保护，请执行以下操作：
 
 - 定位敏感信息。
-- 实施严格的权限并消除广泛的访问权限（例如，具有写入、编辑和删除功能的用户过多）。
+- 实施严格的权限并消除广泛的访问权限（例如，防止过多用户具有写入、编辑和删除能力）。
 - 保护敏感信息。
 
 >[!Note]
@@ -54,13 +54,13 @@ ms.locfileid: "61110039"
 - 其当前位置，例如 OneDrive 或 SharePoint 文件夹或协作地点（如 Microsoft Teams 团队）
 - 当前权限，包括：
 
-   - 有权访问它的用户帐户
+   - 具有访问权限的用户帐户
 
-   - 允许对每个有权访问它的帐户执行的操作
+   - 允许对具有访问权限的每个账户执行的操作 
 
 ## <a name="implement-strict-permissions-for-locations-with-sensitive-information"></a>对具有敏感信息的位置实施严格权限
 
-在 Microsoft 365 租户中使用严格权限是位置和通信场所的最小特权原则，在 Microsoft 365 中通常是 OneDrive 文件夹、SharePoint 网站和文件夹以及团队。 
+在 Microsoft 365 租户中实施严格权限采用位置和通信场所的最小特权原则，在 Microsoft 365 中通常是 OneDrive 文件夹、SharePoint 网站和文件夹以及团队。 
 
 虽然可以更轻松地创建具有广泛访问权限的文件存储位置或团队（例如组织中每个人的默认设置），但对于敏感信息，允许的用户帐户和允许的操作必须限制为满足协作和业务要求所需的最低设置。
 
@@ -80,11 +80,11 @@ ms.locfileid: "61110039"
 3. 为用户执行更改管理，以便使用严格的权限创建和维护敏感信息的未来位置。
 4. 审核和监视敏感信息的位置，以确保未授予广泛权限。
 
-请参阅 [设置与 Microsoft 365 和 Microsoft Teams 的安全协作](setup-secure-collaboration-with-teams.md)，以获取详细的指南。 具有敏感信息严格权限的通信和协作场所的一个示例是 [具有安全隔离的团队](/microsoft-365/solutions/secure-teams-security-isolation)。
+请参阅 [设置与 Microsoft Teams 的安全文件共享和协作](setup-secure-collaboration-with-teams.md)，以获取详细的指南。 具有敏感信息严格权限的通信和协作场所的一个示例是 [具有安全隔离的团队](/microsoft-365/solutions/secure-teams-security-isolation)。
 
 ## <a name="protect-your-sensitive-information"></a>保护敏感信息
 
-要保护敏感信息，以防勒索软件攻击者有权访问，请执行以下操作：
+要保护敏感信息，以防勒索软件攻击者获得访问权限，请执行以下操作：
 
 - 使用 [受控文件夹访问权限](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) 提高未经授权的应用程序修改受控文件夹中数据的难度。
 
@@ -100,7 +100,7 @@ ms.locfileid: "61110039"
 
 此外，为了保护 Microsoft 365 租户中的敏感信息，请训练用户：
 
-- 创建具有严格权限的通信和协作场所（访问权限的最小用户帐户集以及每个用户账户的最小允许操作集）。 
+- 创建具有严格权限的通信和协作场所（可进行访问的最小用户帐户集以及每个用户账户的最小数量允许操作）。 
 - 将适当的敏感度标签应用于敏感信息。
 - 使用受控文件夹访问。
 
@@ -119,6 +119,7 @@ ms.locfileid: "61110039"
 - [快速防范勒索软件和勒索](/security/compass/protect-against-ransomware)
 - [2021 Microsoft 数字防御报告](https://www.microsoft.com/security/business/microsoft-digital-defense-report)（请参阅第 10-19 页）
 - [勒索软件：Microsoft 365 Defender](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview)门户中的一份持续威胁分析报告
+- Microsoft 检测和响应团队 (DART) 勒索软件 [方法和最佳做法](/security/compass/incident-response-playbook-dart-ransomware-approach) 及 [案例研究](/security/compass/dart-ransomware-case-study)
 
 Microsoft 365：
 
@@ -128,7 +129,6 @@ Microsoft 365：
 - [保护你的 Windows 10 电脑免受勒索软件攻击](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [在 SharePoint Online 中处理勒索软件](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - Microsoft 365 Defender门户中[勒索软件的威胁分析报告](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag)
-
 
 Microsoft 365 Defender：
 

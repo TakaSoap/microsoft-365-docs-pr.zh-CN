@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 确保远程工作者可以访问本地资源，同时优化对 Microsoft 365 云服务的访问权限。
-ms.openlocfilehash: de2d8e5e58471ad994c611013e77909ed0ab0542
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 11fb3e37efe67103780fc4d234837da3bc15d97f
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871922"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886296"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步骤 2：提供对本地应用和服务的远程访问权限
 
@@ -57,7 +57,7 @@ Microsoft 365 通信必须通过你的组织获取间接路由，该路由可以
 
 要优化 Microsoft 365 云资源的访问权限，请将拆分隧道 VPN 客户端配置为排除通过 VPN 连接的流向 **优化** 类别 Microsoft 365 终结点的流量。 有关详细信息，请参阅 [Office 365 终结点类别](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories)。 请查看[此列表](../enterprise/urls-and-ip-address-ranges.md)，了解如何优化类别终结点。
 
-下面是生成的流量流，其中流入 Microsoft 365 云应用的大多数流量都绕过 VPN 连接。
+下面是生成的流量流，其中流入 Microsoft 365 云应用的大多数流量都会绕过 VPN 连接。
 
 :::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png" alt-text="来自有隧道的 VPN 客户端的网络流量。" lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png":::
 

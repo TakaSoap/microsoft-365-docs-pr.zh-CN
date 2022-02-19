@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
 description: 使用安全登录和条件访问来保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: 23a9833952aca745e869c13139823b4b0a9400bf
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 57fad156a4e7b97d3029c224059041d692224ed2
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666682"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887394"
 ---
 # <a name="step-3-protect-identities"></a>第 3 步。 保护身份
 
@@ -42,7 +42,7 @@ ms.locfileid: "60666682"
 
 针对用户登录，这些策略包括：
 
-- 要求优先级帐户使用 MFA (立即)，并最终推广到所有用户帐户。
+- 要求 [优先级帐户](/microsoft-365/admin/setup/priority-accounts)（立即）使用多重身份验证，并最终推广到所有用户帐户。
 - 要求高风险登录使用 MFA。
 - 要求具有高风险登录的高风险用户更改其密码。
 
@@ -50,7 +50,7 @@ ms.locfileid: "60666682"
 
 请使用这些最佳做法：
 
-- 实施[最小特权](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)原则，并按[提高登录安全性](#increase-sign-in-security)中所述，对仍使用密码登录的用户帐户使用密码保护。 
+- 实施 [最小特权](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) 原则，并按 [提高登录安全性](#increase-sign-in-security) 中所述对仍使用密码登录的用户帐户使用密码保护。 
 - 避免使用域范围的管理员级别服务帐户。 
 - 限制本地管理权限，以限制远程访问特洛伊木马程序 (RAT) 和其他不需要的应用程序。
 - 在允许访问管理门户之前，使用 Azure AD 条件访问显式验证用户和工作站的信任。 请参阅 Microsoft Azure 门户的[此示例](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)。
@@ -69,7 +69,7 @@ ms.locfileid: "60666682"
 
 ## <a name="resulting-configuration"></a>生成的配置
 
-步骤 1-3 是对你的租户的勒索软件保护。
+步骤 1-3 是对你的租户提供的勒索软件保护。
 
 ![步骤 3 以后是你的 Microsoft 365 租户的勒索软件保护](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step3.png)
 

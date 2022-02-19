@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 安全和合规性服务保护混合工作者的应用、数据和设备。
-ms.openlocfilehash: e1a5c277f9b5f06313fc924756dc72dbf47fad78
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7c898a1ef588ce8eee553490eaa8f5dd452df9e0
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934703"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886386"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>步骤 3：为混合工作者部署安全性和合规性
 
@@ -41,7 +41,7 @@ ms.locfileid: "61934703"
 
 下面是为混合工作者提供安全和合规性服务的 Microsoft 365 功能。
 
-![使用这些 Microsoft 365 服务保持安全和合规。](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+:::image type="content" source="../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png" alt-text="使用这些 Microsoft 365 服务保持安全和合规" lightbox="../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png":::
 
 ## <a name="security"></a>安全性
 

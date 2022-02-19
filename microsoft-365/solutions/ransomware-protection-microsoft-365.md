@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件, 人为操作的勒索软件, 人为操作的勒索软件, HumOR, 勒索攻击, 勒索软件攻击, 加密, 加密病毒, 零信任
 description: 逐步保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: 81f97ba6327f5f1803d972ad9e62f2333e65bc2b
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 634888ac603be17265733c4443a69495015296d7
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110267"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886032"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>为 Microsoft 365 租户部署勒索软件保护
 
@@ -43,7 +43,7 @@ ms.locfileid: "61110267"
 
 Microsoft 云服务的安全性是你与 Microsoft 之间的合作关系：
 
-- Microsoft 云服务以信任和安全为基础。 Microsoft 提供有助于保护数据和应用程序的安全控件和功能。
+- Microsoft 云服务以信任和安全为基础。 Microsoft 提供安全空间和功能，有助于保护数据和应用程序。
 - 你的数据和身份为个人所有，并且你负责对这些数据和身份、本地资源安全性和所控制的云组件安全性进行保护。
 
 通过结合这些功能和责任，我们可以提供针对勒索软件攻击的最佳保护。
@@ -76,13 +76,13 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 
    如果勒索软件创建文件的新加密副本并删除旧文件，则客户有 93 天的时间从回收站还原该文件。 93 天后，Microsoft 仍可在 14 天内恢复数据。 
   
-   若要最大程度地减轻安全和支持人员的负担，请培训用户如何[从回收站还原文件](https://support.microsoft.com/en-us/office/restore-deleted-items-from-the-site-collection-recycle-bin-5fa924ee-16d7-487b-9a0a-021b9062d14b)。
+   若要最大程度地减轻安全和支持人员的负担，请培训用户如何[从回收站还原文件](https://support.microsoft.com/office/restore-deleted-items-from-the-site-collection-recycle-bin-5fa924ee-16d7-487b-9a0a-021b9062d14b)。
 
-- [文件还原](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436)
+- [文件还原](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
    适用于 SharePoint 和 OneDrive 的完整自助式恢复解决方案，允许管理员和最终用户从过去 30 天内的任何时间点还原文件。
 
-   要最大程度地减轻安全和 IT 支持人员的负担，请对用户进行有关[文件还原](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436) 的培训。
+   要最大程度地减轻安全和 IT 支持人员的负担，请对用户进行有关[文件还原](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15) 的培训。
 
 
 对于 OneDrive 和 SharePoint 文件，如果你受到大规模攻击，Microsoft 可以回退到最多 14 天内的上一时间点。
@@ -119,11 +119,11 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 
     阻止下载敏感信息，如文件。 
 
-    你还可以将会话策略用于 [Microsoft Defender for Cloud Apps 条件访问应用控制](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization)，以实时监视用户和应用程序之间的信息流。
+    你还可以将会话策略用于 [Defender for Cloud Apps 条件访问应用控制](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization)，以实时监视用户和应用程序之间的信息流。
 
 ## <a name="whats-in-this-solution"></a>此解决方案中的内容
 
-此解决方案将逐步部署 Microsoft 365 保护和缓解功能、配置和持续运营，以最大限度地降低勒索软件攻击者使用 Microsoft 365 租户中的关键数据来对组织进行勒索的能力。
+此解决方案将分步部署 Microsoft 365 保护和缓解功能、配置和持续运行，以最大限度地降低勒索软件攻击者使用 Microsoft 365 租户中的关键数据和对组织进行勒索的能力。
 
 ![使用 Microsoft 365 防止勒索软件的步骤](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-step-grid.png)
 
@@ -155,31 +155,31 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 
 | 功能或特性 | 说明 | 帮助... | 颁发许可 |
 |:-------|:-----|:-------|:-------|
-| Microsoft 安全功能分数 |  衡量 Microsoft 365 租户的安全状态 | 评估安全配置并建议改进。 | Microsoft 365 E3 或 Microsoft 365 E5 |
-| 攻击面减少规则 | 使用各种配置设置减少组织受到网络攻击的漏洞 | 阻止可疑活动和易受攻击的内容。 | Microsoft 365 E3 或 Microsoft 365 E5 |
-| Exchange 电子邮件设置 |  启用减少组织面对基于电子邮件攻击漏洞的服务 | 阻止通过网络钓鱼和其他基于电子邮件的攻击对租户的初始访问。  | Microsoft 365 E3 或 Microsoft 365 E5 |
-| Microsoft Windows、Microsoft Edge 和 Microsoft 365 企业应用版设置 | 提供广为人知且经过充分测试的行业标准安全配置 | 阻止通过 Windows、Edge 和 Microsoft 365 企业应用版进行的攻击。 | Microsoft 365 E3 或 Microsoft 365 E5 |
+| Microsoft 安全功能分数 |  度量 Microsoft 365 租户的安全状况。 | 评估安全配置并建议改进。 | Microsoft 365 E3 或 Microsoft 365 E5 |
+| 攻击面减少规则 | 使用各种配置设置减少组织面对网络攻击的漏洞。 | 阻止可疑活动和易受攻击的内容。 | Microsoft 365 E3 或 Microsoft 365 E5 |
+| Exchange 电子邮件设置 |  启用减少组织面对基于电子邮件攻击漏洞的服务。 | 阻止通过网络钓鱼和其他基于电子邮件的攻击对租户的初始访问。  | Microsoft 365 E3 或 Microsoft 365 E5 |
+| Microsoft Windows、Microsoft Edge 和 Microsoft 365 企业应用版设置 | 提供广为人知且经过充分测试的行业标准安全配置。 | 阻止通过 Windows、Edge 和 Microsoft 365 企业应用版进行的攻击。 | Microsoft 365 E3 或 Microsoft 365 E5 |
 |
 
 ### <a name="2-detection-and-response"></a>2. 检测和响应
 
 | 功能或特性 | 说明 | 帮助检测和响应... | 颁发许可 |
 |:-------|:-----|:-------|:-------|
-| Microsoft 365 Defender | 合并信号并将功能整合到一个解决方案中 <br><br> 支持安全专业人员汇集威胁信号，并确定威胁的完整范围和影响 <br><br> 自动执行操作，以防止或停止攻击并自我修复受影响的邮箱、终结点和用户身份 | 事件是组合起来的构成的攻击的警报和数据。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
-| Microsoft Defender for Identity |  通过基于云的安全接口使用你的本地 Active Directory 域服务 (AD DS)信号来识别、检测和调查针对组织的高级威胁、被盗用的身份和恶意内部行为 | AD DS 帐户的凭据泄露。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
-| Microsoft Defender for Office 365 | 保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 <br><br> 防范恶意软件、网络钓鱼、欺骗和其他攻击类型 | 网络钓鱼攻击。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
-| Microsoft Defender for Endpoint | 启用跨终结点(设备)对高级威胁的检测和响应  | 恶意软件安装和设备入侵。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
-| Azure Active Directory (Azure AD) 身份保护 | 自动检测和修正基于身份的风险并调查这些风险 | Azure AD 帐户的凭据泄露和特权提升。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
-| Microsoft Defender for Cloud Apps | 跨所有 Microsoft 和第三方云服务进行发现、调查和治理的云访问安全代理 | 横向移动和数据外泄。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
+| Microsoft 365 Defender | 合并信号并将功能整合到单个解决方案中。 <br><br> 支持安全专业人员汇集威胁信号，并确定威胁的完整范围和影响。 <br><br> 自动执行操作，以防止或停止攻击并自我修复受影响的邮箱、终结点和用户标识。 | 事件是组合起来的构成的攻击的警报和数据。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
+| Microsoft Defender for Identity |  使用你的本地 Active Directory 域服务 (AD DS) 信号通过基于云的安全接口来识别、检测和调查针对组织的高级威胁、身份盗用和恶意内部行为。 | AD DS 帐户的凭据泄露。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
+| Microsoft Defender for Office 365 | 保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 <br><br> 防范恶意软件、网络钓鱼、欺骗和其他攻击类型。 | 网络钓鱼攻击。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
+| Microsoft Defender for Endpoint | 支持跨终结点（设备）检测和响应高级威胁。 | 恶意软件安装和设备入侵。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
+| Azure Active Directory (Azure AD) 身份保护 | 自动检测和修正基于标识的风险并调查这些风险。 | Azure AD 帐户的凭据泄露和特权提升。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
+| Defender for Cloud Apps | 用于发现、调查和治理跨所有 Microsoft 和第三方云服务的云访问安全代理。 | 横向移动和数据外泄。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
 |
 
 ### <a name="3-identities"></a>3. 身份
 
 | 功能或特性 | 说明 | 有助于防止... | 颁发许可 |
 |:-------|:-----|:-------|:-------|
-|Azure AD 密码保护|阻止来自常用列表和自定义条目的密码。|云或本地用户帐户密码确定。|Microsoft 365 E3 或 Microsoft 365 E5|
-|通过条件访问强制执行 MFA|通过条件访问策略基于用户的登录属性要求使用 MFA。|凭据泄露和访问。|Microsoft 365 E3 或 Microsoft 365 E5|
-|通过基于风险的条件访问强制执行 MFA|通过 Azure AD 身份保护基于用户登录的风险要求使用 MFA。 |凭据泄露和访问。|Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3|
+|Azure AD 密码保护 | 阻止来自常用列表和自定义条目的密码。 | 云或本地用户帐户密码确定。 |Microsoft 365 E3 或 Microsoft 365 E5|
+|通过条件访问强制执行 MFA | 通过条件访问策略基于用户的登录属性要求使用 MFA。 | 凭据泄露和访问。 | Microsoft 365 E3 或 Microsoft 365 E5|
+|通过基于风险的条件访问强制执行 MFA | 通过 Azure AD 身份保护基于用户登录的风险要求使用 MFA。 |凭据泄露和访问。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3|
 |
 
 ### <a name="4-devices"></a>4. 设备
@@ -188,10 +188,10 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 
 | 功能或特性 | 说明 | 有助于防止... | 颁发许可 |
 |:-------|:-----|:-------|:-------|
-| Microsoft Intune | 管理设备和在设备上运行的应用程序  | 设备或应用泄露和访问。 | Microsoft 365 E3 或 E5 |
+| Microsoft Intune | 管理设备和在设备上运行的应用程序。  | 设备或应用泄露和访问。 | Microsoft 365 E3 或 E5 |
 |  |  |  |  |
 
-对于 Windows 10 设备：
+对于 Windows 11 或 10 设备：
 
 | 功能或特性 | 说明 | 帮助... | 颁发许可 |
 |:-------|:-----|:-------|:-------|
@@ -205,10 +205,10 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 
 | 功能或特性 | 说明 | 帮助... | 颁发许可 |
 |:-------|:-----|:-------|:-------|
-| 文件夹限制访问 | 通过对照已知的受信任应用列表检查应用来保护你的数据 | 防止勒索软件更改或加密文件。 | Microsoft 365 E3 或 Microsoft 365 E5 |
+| 文件夹限制访问 | 通过对照已知受信任应用列表检查应用来保护你的数据。 | 防止勒索软件更改或加密文件。 | Microsoft 365 E3 或 Microsoft 365 E5 |
 | Microsoft 信息保护 | 允许将敏感度标签应用于可勒索的信息 | 阻止使用已外泄的信息。 | Microsoft 365 E3 或 Microsoft 365 E5 |
-| 数据丢失防护 (DLP) | 防止用户以不当方式共享敏感数据，从而保护敏感数据并降低风险 | 防止数据外泄。 | Microsoft 365 E3 或 Microsoft 365 E5 |
-| Microsoft Defender for Cloud Apps | 用于发现、调查和治理的云访问安全代理 | 检测横向移动并防止数据外泄。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
+| 数据丢失防护 (DLP) | 通过防止用户以不当方式共享敏感数据来保护敏感数据并降低风险。 | 防止数据外泄。 | Microsoft 365 E3 或 Microsoft 365 E5 |
+| Defender for Cloud Apps | 用于发现、调查和治理的云访问安全代理。 | 检测横向移动并防止数据外泄。 | Microsoft 365 E5 或使用 Microsoft 365 E5 安全性加载项的 Microsoft 365 E3 |
 |
 
 ## <a name="impact-on-users-and-change-management"></a>对用户和变更管理的影响
@@ -240,6 +240,7 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 - [快速防范勒索软件和勒索](/security/compass/protect-against-ransomware)
 - [2021 Microsoft 数字防御报告](https://www.microsoft.com/security/business/microsoft-digital-defense-report)（请参阅第 10-19 页）
 - [勒索软件：Microsoft 365 Defender](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview)门户中的一份持续威胁分析报告
+- Microsoft 检测和响应团队 (DART) 勒索软件 [方法和最佳做法](/security/compass/incident-response-playbook-dart-ransomware-approach) 及 [案例研究](/security/compass/dart-ransomware-case-study)
 
 Microsoft 365：
 

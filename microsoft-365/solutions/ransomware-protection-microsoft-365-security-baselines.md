@@ -2,7 +2,7 @@
 title: 步骤 1. 配置安全基线
 author: JoeDavies-MSFT
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: josephd
 manager: dansimp
 audience: ITPro
@@ -10,15 +10,20 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - Strat_O365_Enterprise
-  - ransomware
-  - m365solution-ransomware
+- M365-security-compliance
+- Strat_O365_Enterprise
+- ransomware
+- m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
 description: 使用安全基线来保护你的 Microsoft 365 资源免受勒索软件攻击。
+ms.openlocfilehash: 66218d15a36faa510bd246b46dbc0dcd0f9948fb
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887516"
 ---
-
 # <a name="step-1-configure-security-baselines"></a>步骤 1. 配置安全基线
 
 作为应对勒索软件攻击者的第一步，必须配置以下 Microsoft 定义的安全基线：
@@ -52,7 +57,7 @@ description: 使用安全基线来保护你的 Microsoft 365 资源免受勒索�
 
 通过以下 Exchange 电子邮件基线设置，帮助阻止对租户始于电子邮件攻击的初始访问：
 
-- 启用 Microsoft Defender 防病毒电子邮件扫描。
+- 启用 [Microsoft Defender 防病毒电子邮件扫描](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus)。
 - 使用 Microsoft Defender for Office 365 [增强网络钓鱼防护](/microsoft-365/security/office-365-security/anti-phishing-protection)，并涵盖新威胁和多态变体。
 - 检查你的 Office 365 电子邮件筛选设置，以确保阻止欺骗性电子邮件、垃圾邮件和带恶意软件的电子邮件。 使用 Defender for Office 365 增强网络钓鱼防护，并涵盖新威胁和多态变体。 将 Defender for Office 365 配置为[单击时重新检查链接](/microsoft-365/security/office-365-security/atp-safe-links)并[删除送达的邮件](/microsoft-365/security/office-365-security/zero-hour-auto-purge)，以响应新获取的威胁情报。
 - 查看并更新为最新的 [用于 EOP 和 Defender for Office 365 安全性的建议设置](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)。
@@ -62,7 +67,7 @@ description: 使用安全基线来保护你的 Microsoft 365 资源免受勒索�
 
 为以下项目应用 [安全基线](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)：
 
-- Microsoft Windows 10
+- Microsoft Windows 11 或 10
 - Microsoft 365 企业应用版
 - Microsoft Edge
 

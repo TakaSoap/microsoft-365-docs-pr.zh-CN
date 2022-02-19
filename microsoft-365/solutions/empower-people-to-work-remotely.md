@@ -19,16 +19,16 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在家办公，在家办公，混合，远程工作者，混合办公，远程员工，混合连接，远程访问，远程办公，远程办公，远程办公，移动办公，远程工作，随时随地开展工作，灵活的工作场所
 description: 逐步设置基础结构层，以便远程工作者能够安全访问本地和 Microsoft 365 资源。
-ms.openlocfilehash: 3eb70d99e44f296144ea9fa9c79ffd41475888ef
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 0370d30584021ab8560a24c7e54e3a7c7aadeb1f
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871907"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886250"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>设置使用 Microsoft 365 实现混合工作的基础结构
 
-要保护并优化远程工作者的生产力和协作，你需要允许现场和远程工作者轻松、安全地访问组织内本地和基于云的信息、工具以及资源。 此解决方案会逐步完成基础设施关键层的部署，让工作者无论在哪里都能够高效工作。
+要保护并优化工作人员的生产力和协作，你需要允许现场和远程工作者轻松、安全地访问组织内本地和基于云的信息、工具以及资源。 此解决方案会逐步完成基础设施关键层的部署，让工作者无论在哪里都能够高效工作。
 
 混合工作者可在以多个位置中进行现场或远程工作。 对于许多组织而言，允许工作者在传统办公室外工作非常重要，这有助于:
 
