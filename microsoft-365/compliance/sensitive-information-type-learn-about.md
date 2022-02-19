@@ -16,22 +16,24 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: 本文概述了敏感信息类型及其检测敏感信息（如社会保险、信用卡或银行帐号）以识别敏感项目
-ms.openlocfilehash: 920934e8961110aae3333a30979878483cac51b3
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 6bc15ae90d591e2f2c4e432dce025201c9f13c18
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265489"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903783"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感信息类型
 
-标识组织控制下的敏感项目并进行分类是信息保护规范 [的第一步](./information-protection.md)。  Microsoft 365提供了三种标识项目的方法，以便可以将其分类：
+标识组织控制下的敏感项目并进行分类是信息保护规范 [的第一步](./information-protection.md)。  Microsoft 365提供了三种标识项目的方法，以便对这些项目进行分类：
 
 - 用户手动执行
 - 自动模式识别，如敏感信息类型
 - [机器学习](classifier-learn-about.md)
 
-敏感信息类型是基于模式的分类器。 它们检测敏感信息（如社会保险、信用卡或银行帐号）以标识敏感项目，请参阅敏感信息 [类型实体定义](sensitive-information-type-entity-definitions.md)
+SIT 分类 (类型) 基于模式的分类器。 它们检测敏感信息（如社会保险、信用卡或银行帐号）以标识敏感项目，请参阅敏感信息类型 [实体定义](sensitive-information-type-entity-definitions.md) ，了解所有 SIT 的完整列表。
+
+Microsoft 提供大量预配置的 SI，或者你可以创建自己的 SI。
 
 ## <a name="sensitive-information-types-are-used-in"></a>敏感信息类型用于
 
@@ -42,7 +44,33 @@ ms.locfileid: "62265489"
 - [通信合规性](communication-compliance.md)
 - [内部风险管理](insider-risk-management-solution-overview.md)
 - [自动标记策略](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
-- [Microsoft 管理](/privacy/priva)
+- [Microsoft Priva](/privacy/priva)
+
+## <a name="categories-of-sensitive-information-types"></a>敏感信息类型的类别
+
+### <a name="built-in-sensitive-information-types"></a>内置敏感信息类型
+
+默认情况下，Microsoft 创建的这些 SI 显示在合规性控制台中。 这些 SIT 无法编辑，但它们可以用作模板并复制以创建自定义敏感信息类型。
+
+### <a name="named-entity-sensitive-information-types"></a>命名实体敏感信息类型
+
+默认情况下，命名实体 SIT 还会显示在合规性控制台中。 检测人员姓名、物理地址以及医疗条款和条件。 无法编辑或复制它们。 有关详细信息， [请参阅了解 (实体) ](named-entities-learn.md#learn-about-named-entities-preview) 预览版。 命名实体 SIT 有两种类型：
+
+**un-bundled**
+
+这些命名实体 SIT 具有较窄的焦点，如单个国家/地区或单个类别术语。 当你需要检测范围更窄的 DLP 策略时，请使用它们。 请参阅命名 [实体 SIT 的示例](named-entities-learn.md#examples-of-named-entity-sits)。
+
+**bundled**
+
+捆绑命名实体 SIT 检测类中所有可能的匹配项，如所有物理地址。 将它们用作 DLP 策略中用于检测敏感项目的广泛标准。 请参阅命名 [实体 SIT 的示例](named-entities-learn.md#examples-of-named-entity-sits)。
+
+### <a name="custom-sensitive-information-types"></a>自定义敏感信息类型
+
+如果预配置的敏感信息类型不符合你的需求，你可以创建自己的完全定义的自定义敏感信息类型，也可以复制其中一个内置类型并进行修改。 有关详细信息 [，请参阅](create-a-custom-sensitive-information-type.md) 在合规中心创建自定义敏感信息类型。
+
+### <a name="exact-data-match-sensitive-information-types"></a>准确数据匹配敏感信息类型
+
+所有基于 EDM 的 SI 都是从头开始创建的。 您可以使用它们检测具有在敏感信息数据库中定义的准确值的项目。 有关详细信息 [，请参阅了解基于准确数据匹配的敏感信息](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) 类型。
 
 ## <a name="fundamental-parts-of-a-sensitive-information-type"></a>敏感信息类型的基本部分
 
@@ -62,6 +90,8 @@ ms.locfileid: "62265489"
 
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
+
+
 
 ### <a name="example-sensitive-information-type"></a>敏感信息类型示例
 
@@ -101,7 +131,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>关键字
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
@@ -128,7 +158,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 你应该将高可信度模式与较低的计数（如 5 到 10）和低可信度模式（如 20 个或多个）一起用于较高的计数。
 
 > [!NOTE]
-> 如果你已有策略或自定义敏感信息类型 (SIT) 使用基于数字的可信度 (也知道是准确性) ，它们将自动映射到三个离散可信度;整个安全 @ 合规中心 UI 中的低可信度、中等可信度和高可信度。
+> 如果你拥有现有的策略或自定义敏感信息类型 (SIT) 使用基于数字的可信度 (也知道其准确性) ，它们将自动映射到三个离散可信度;整个安全 @ 合规中心 UI 中的低可信度、中等可信度和高可信度。
 > - 置信度在 76 和 100 之间的最低准确度或自定义 SIT 模式的所有策略都将映射到高可信度。 
 > - 置信度在 66 和 75 之间的最低准确度或自定义 SIT 模式的所有策略都将映射到中等可信度。
 > - 置信度低于或等于 65 的所有策略或自定义 SIT 模式都将映射到低可信度。 
@@ -139,13 +169,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - **使用 UI** - 可以使用合规性中心 UI 设置自定义敏感信息类型。 通过此方法，你可以使用正则表达式、关键字和关键字字典。 若要了解详细信息，请参阅[创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)。
 
-- **使用 EDM** - 您可以使用精确数据匹配和基于 EDM (EDM) 自定义敏感信息类型。 通过此方法，你可以使用可定期刷新的安全数据库创建动态敏感信息类型。 请参阅 [了解基于精确数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)。
+- **使用 EDM** - 您可以使用精确数据匹配和基于 EDM 分类 (EDM) 敏感信息类型。 通过此方法，你可以使用可定期刷新的安全数据库创建动态敏感信息类型。 请参阅 [了解基于精确数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)。
 
 - **使用 PowerShell** - 可以使用 PowerShell 设置自定义敏感信息类型。 尽管此方法比使用 UI 更复杂，但你可以拥有更多的配置选项。 请参阅[使用安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。
 
 > [!NOTE]
 > 改进的可信度可在 Microsoft 365 服务的数据丢失防护、Microsoft 信息保护 Microsoft 365 服务、通信合规性、信息管理和记录管理中立即使用。
-> Microsoft 365信息保护现在支持双字节字符集语言，
+> Microsoft 365信息保护现在支持双字节字符集语言：
 > - 简体中文
 > - 繁体中文
 > - 韩语
@@ -157,8 +187,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 > 若要检测含有中文/日文字符和单字节字符的模式，或检测含有中文/日文和英文的模式，则需要定义两个变体的关键词或词组。
 > - 例如，若要检测像“机密的文件”这样的关键词，则要使用该关键词的两个变体; 一个是在日语和英语文本之间有空格，另一个是在日语和英语文本之间没有空格。 因此，在 SIT 中要添加的关键词应该是“机密的 文档”和“机密的文档”。 同样，若要检测短语 "東京オリンピック2020"，则应该使用两个变体;“東京オリンピック 2020”和“東京オリンピック2020”。
 > 
-> 除了中文/日语/双字节字符外，如果关键字/短语列表还包含非中文/日语单词 (如仅英语) ，您应该创建两个词典/关键字列表。 一个针对包含中文/日语/双字节字符的关键字，另一个针对仅含英语的关键字。 
-> - 例如，如果要创建包含三个短语"Highly confidential"、"がが高い"和"机密"的关键字词典/列表，应创建两个关键字列表。 
+> 除了中文/日语/双字节字符外，如果关键字/短语列表还包含非中文/日语单词 (如仅英语) ，则应该创建两个词典/关键字列表。 一个针对包含中文/日语/双字节字符的关键字，另一个针对仅含英语的关键字。 
+> - 例如，如果要创建包含三个短语"Highly confidential"、"が高い"和"机密"的关键字词典/列表，应创建两个关键字列表。 
 >     1. Highly confidential
 >     2. “機密性が高い”、“机密的document”和“机密的 document”
 > 

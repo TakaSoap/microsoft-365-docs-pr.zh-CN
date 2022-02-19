@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: be0d0070f094a238114dd5d483e2a8ed29e043a0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ced4fd4fc56a4aa6d189e9c7761ce661bd477796
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198021"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904091"
 ---
 # <a name="responding-to-your-first-incident"></a>响应第一个事件
 
@@ -38,7 +38,7 @@ ms.locfileid: "60198021"
 
 组织的事件响应策略决定了其处理破坏性不断增加的安全事件和混乱的能力。 采取预防性措施很重要，但快速采取行动以控制、抑制和从检测到的事件中恢复的能力可以最大限度地减少损失和业务损失。
 
-此事件响应演练演示了作为安全运营团队的一部分，您如何在安全运营团队内执行大部分关键Microsoft 365 Defender。 步骤如下：
+此事件响应演练演示作为 SecOps) 团队的安全操作 (，如何在 Microsoft 365 Defender 内执行大部分关键事件响应步骤。 步骤如下：
 
 - 准备安全状态
 - 对于每个事件：
@@ -46,19 +46,19 @@ ms.locfileid: "60198021"
   - 步骤 2： (控制、抑制和恢复) 
   - 步骤 3：事后评审
 
-美国国家标准和技术协会 NIST () 将安全事件定义为"实际或可能危及信息系统的机密性、完整性或可用性的事件;或系统处理、存储或传输的信息;或构成违反安全策略、安全程序或可接受使用策略的违反或即将发生的威胁。"
+美国国家标准和技术协会 NIST () 安全事件定义为"实际或可能危及信息系统的机密性、完整性或可用性的事件;或系统处理、存储或传输的信息;或构成违反安全策略、安全程序或可接受使用策略的违反或即将发生的威胁。"
 
-事件Microsoft 365 Defender是分析和事件响应的逻辑起点。 分析和修正事件通常包括安全运营团队大部分任务。
+事件Microsoft 365 Defender是分析和事件响应的逻辑起点。 分析和修正事件通常 (SecOps) 团队的任务和时间。
 
 ## <a name="next-step"></a>后续步骤
 
 [![准备你的组织和Microsoft 365租户。](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
 
-确保你的组织和租户Microsoft 365[事件处理做好准备](first-incident-prepare.md)。
+确保你的组织和Microsoft 365已[做好处理事件的准备](first-incident-prepare.md)。
 
 ## <a name="see-also"></a>另请参阅
 
-事件的事件响应Microsoft 365 Defender：
+事件的事件响应指南Microsoft 365 Defender：
 
 - [事件概述](incidents-overview.md)
 - [调查事件](investigate-incidents.md)

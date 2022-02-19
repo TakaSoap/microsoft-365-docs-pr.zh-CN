@@ -1,5 +1,5 @@
 ---
-title: 刷新敏感信息源表文件
+title: 刷新精确的数据匹配信息源表文件
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,21 +17,21 @@ search.appverid:
 - MET150
 description: 刷新敏感信息源表文件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fd083b798785f0dbfca8603f8b7bc28fece6004e
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 79442356066263485c70bf455af5a6a44a0355d4
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914737"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903706"
 ---
-# <a name="refresh-your-sensitive-information-source-table-file"></a>刷新敏感信息源表文件 
+# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>刷新准确数据匹配敏感信息源表文件 
 
 您可以每隔 24 小时刷新一次敏感信息数据库。 您必须重新Hash and upload your sensitive information source table。
 
-1. 将敏感数据重新导出到应用程序（如 Microsoft Excel）以 .csv.tsv 格式或管道 (|) 分隔的格式。 保持之前对文件进行哈希处理和上载时所使用的文件名和位置相同。 有关导出 [敏感数据和获取正确](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) 格式的详细信息，请参阅导出源数据，了解基于准确数据匹配的敏感信息类型。
+1. 将敏感数据重新导出到应用程序（如 Microsoft Excel）以 .csv、.tsv 格式或管道分隔 (|) 文件。 保持之前对文件进行哈希处理和上载时所使用的文件名和位置相同。 有关导出 [敏感数据和获取正确](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) 格式的详细信息，请参阅导出源数据，了解基于准确数据匹配的敏感信息类型。
 
       > [!NOTE]
-      > 如果敏感信息源表文件 (字段名) 没有变化，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。 请参阅 [管理确切的数据匹配架构](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) ，了解编辑或删除架构的步骤。 请参阅创建 [精确数据匹配敏感信息类型/规则](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) 包，了解编辑或删除 EDM SIT/规则包的步骤。
+      > 如果对敏感信息 (文件 (字段名称) 没有变化，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。 请参阅 [管理确切的数据匹配架构](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) ，了解编辑或删除架构的步骤。 请参阅创建 [精确数据匹配敏感信息类型/规则](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) 包，了解编辑或删除 EDM SIT/规则包的步骤。
 
 2. 使用哈希 [中的过程并上载敏感信息源表，](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) 以精确匹配敏感信息类型，以上传敏感信息表源文件。
 

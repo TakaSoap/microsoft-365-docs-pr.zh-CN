@@ -6,7 +6,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.article: article
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: ffca0717bbefdad90854f118131fe45ae3ce4dfd
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 89c215ca52b255a6e3aed72ff032cdd2475c0d87
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806236"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903857"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -46,7 +46,7 @@ MCS 可以提供用于测试的正则表达式。 他们还可以协助排查使
 有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 
 > [!NOTE]
-> 如果使用与号 (&) 作为自定义敏感信息类型中关键字的一部分，则需要添加一个附加字词，该字符周围有空格。 例如 _，不使用_ `L&P``L & P` 。
+> 如果使用与号字符 (&) 作为自定义敏感信息类型中关键字的一部分，则需要添加一个附加字词，该字符周围有空格。 例如 _，不使用_ `L&P``L & P` 。
 
 ## <a name="sample-xml-of-a-rule-package"></a>规则包 XML 示例
 
@@ -164,7 +164,7 @@ MCS 可以提供用于测试的正则表达式。 他们还可以协助排查使
 
 - 需要更多证据的模式具有更高的可信度级别。 根据可信度，可以执行以下操作：
   - 使用更严格的操作 (，例如) 高可信度匹配的内容。
-  - 使用限制性较低的 (，例如发送) 置信度较低的邮件。
+  - 使用限制性较低的 (，例如) 较低的匹配发送通知。
 
 - 支持和元素`IdMatch``Match`引用 RegExes 和关键字，它们实际上是 `Rule` 元素的子元素，而不是 `Pattern`。 这些支持元素由 引用， `Pattern`但包含在 中 `Rule`。 此行为意味着支持元素（如正则表达式或关键字列表）的单个定义可以通过多个实体和模式引用。
 
@@ -235,7 +235,7 @@ MCS 可以提供用于测试的正则表达式。 他们还可以协助排查使
 
 例如，员工 ID `Func_us_date` 徽章具有雇用日期，因此此自定义实体可以使用内置函数来标识美国常用的格式的日期。
 
-有关详细信息，请参阅 [DLP 函数查找什么](what-the-dlp-functions-look-for.md)。
+有关详细信息，请参阅 [敏感信息类型函数](sit-functions.md)。
 
 ![显示引用内置函数的 Match 元素的 XML 标记。](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
 
@@ -245,7 +245,7 @@ MCS 可以提供用于测试的正则表达式。 他们还可以协助排查使
 
 通过使用 元素对元素进行分组，可以创建更灵活 `Any` 的匹配 `Match` 逻辑。 例如，可以使用 元素 `Any` 来匹配其子元素的所有、无或确切的子集 `Match` 。
 
-元素 `Any` 具有可选的 `minMatches` 和 `maxMatches` 属性 `Match` ，可用于定义在匹配模式之前必须满足多少子元素。 这些属性定义 *元素数*`Match`，而不是为匹配找到的证据实例数。 若要为特定匹配定义`minCount``Match`最少数量的实例（如列表中的两个关键字），请使用元素的 (属性，) 。
+元素 `Any` 具有可选的 `minMatches` 和 `maxMatches` 属性 `Match` ，可用于定义在匹配模式之前必须满足多少子元素。 这些属性定义 *元素数*`Match`，而不是为匹配找到的证据实例数。 若要为特定匹配`minCount``Match`定义最少数量的实例（如列表中的两个关键字），请使用元素的 (属性，) 。
 
 ### <a name="match-at-least-one-child-match-element"></a>至少匹配一个 Match 子元素
 
@@ -325,7 +325,7 @@ Pattern 元素有必需的 confidenceLevel 属性。可将 confidenceLevel 值�
 
 ## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>是否要在合规中心的 UI 中支持其他语言？[LocalizedStrings 元素]
 
-如果合规性团队使用 Microsoft 365 合规中心创建不同区域设置和不同语言的策略，你可以提供自定义敏感信息类型的名称和说明的本地化版本。这样，如果合规性团队在使用 Microsoft 365 时采用你所支持的语言，就会在 UI 中看到本地化名称。
+如果合规性团队使用 Microsoft 365 合规性中心创建不同区域设置和不同语言的策略，你可以提供自定义敏感信息类型的名称和说明的本地化版本。 若符合性团队使用支持语言的 Microsoft 365，则 UI 中会出现本地化的名称。
 
 ![实例计数和匹配准确度配置。](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
@@ -416,7 +416,7 @@ Microsoft 365公开常用 SIT 的函数处理器作为验证程序。 以下是�
 </Entity>
 ```
 
-Microsoft 365提供了两个通用验证程序
+Microsoft 365两个泛型验证程序
 
 ### <a name="checksum-validator"></a>校验和验证程序
 
@@ -450,7 +450,7 @@ Microsoft 365提供了两个通用验证程序
 
 ## <a name="changes-for-exchange-online"></a>针对 Exchange Online 的变化
 
-以前，你可能已使用过 Exchange Online PowerShell 为 DLP 导入自定义敏感信息类型。 现在，自定义敏感信息类型可在管理中心和合规Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">使用</a>。 此次改进后，应使用合规中心 PowerShell 导入自定义敏感信息类型，不再可从 Exchange PowerShell 导入它们。 自定义敏感信息类型将像往常一样正常工作，但是，在合规中心进行的更改可能需要至多一小时才会出现在 Exchange 管理中心。
+以前，你可能已使用过 Exchange Online PowerShell 为 DLP 导入自定义敏感信息类型。 现在，自定义敏感信息类型可用于管理Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">和</a>合规中心。 此次改进后，应使用合规中心 PowerShell 导入自定义敏感信息类型，不再可从 Exchange PowerShell 导入它们。 自定义敏感信息类型将像往常一样正常工作，但是，在合规中心进行的更改可能需要至多一小时才会出现在 Exchange 管理中心。
 
 请注意，在合规中心中，可以使用 **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** cmdlet 上载规则包。 （以前，在 Exchange 管理中心中，使用的是 **ClassificationRuleCollection**`cmdlet。）
 
@@ -507,7 +507,7 @@ Microsoft 365提供了两个通用验证程序
 
 - 正则表达式中的查找断言应仅具有固定长度。 可变长度断言将导致错误。
 
-  例如， `"(?<=^|\s|_)"` 无法通过验证。 第一个 `^` () 是零长度 `\s` `_` ，而接下来的两种模式 () 一个长度。 编写此正则表达式的替代方法是 `"(?:^|(?<=\s|_))"`。
+  例如， `"(?<=^|\s|_)"` 无法通过验证。 第一个 `^` () 为零长度 `\s` ，而后两种模式 () `_` 一个长度。 编写此正则表达式的替代方法是 `"(?:^|(?<=\s|_))"`。
 
 - 不得以交替符开头或结尾， `|`它匹配所有内容，因为它被视为空匹配。
 
@@ -529,7 +529,7 @@ Microsoft 365提供了两个通用验证程序
 
   例如， `.{1,m}asdf` 无法通过验证。 请改为使用 `.asdf`。
 
-- 组中不能有无限 (重复 `*` `+` 器，) 或无限制。
+- 组中不能有无限 (重复 `*` `+`) 或无限制。
 
   例如， `(xx)\*` 和 `(xx)+` 无法通过验证。
 
@@ -559,7 +559,7 @@ Microsoft 365提供了两个通用验证程序
 
 Microsoft 365 使用搜索爬网程序对网站内容中的敏感信息进行标识和分类。SharePoint Online 和 OneDrive for Business 网站中的内容会在更新后自动重新爬网。但若要标识所有现有内容中新的自定义类型敏感信息，必须对相应内容重新爬网。
 
-在Microsoft 365中，无法手动请求对整个组织进行重新进行，但可以手动请求对网站集、列表或库进行重新进行。 有关详细信息，请参阅手动请求对网站、库或列表进行爬网和 [重新索引](/sharepoint/crawl-site-content)。
+在Microsoft 365中，无法手动请求对整个组织进行重新进行，但可以手动请求对网站集、列表或库进行重新CRAWL。 有关详细信息，请参阅手动请求对网站、库或列表进行爬网和 [重新索引](/sharepoint/crawl-site-content)。
 
 ## <a name="reference-rule-package-xml-schema-definition"></a>参考：规则包 XML 架构定义
 
@@ -912,4 +912,4 @@ Microsoft 365 使用搜索爬网程序对网站内容中的敏感信息进行标
 
 - [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
-- [DLP 函数查找什么](what-the-dlp-functions-look-for.md)
+- [敏感信息类型函数](sit-functions.md)

@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用 PowerShell 删除自定义敏感信息类型
-ms.openlocfilehash: bb3bf67a1493ec232a66b2bdc0c784ea52de32f5
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 852f9987b072f05dcf4f322f600bed23bcce7ef2
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914400"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900966"
 ---
 # <a name="remove-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 删除自定义敏感信息类型
 
 在合规中心 PowerShell 中，有两种方法可以删除自定义敏感信息类型：
 
-- **删除单个自定义敏感信息类型**：使用 PowerShell 修改自定义敏感信息类型 [中介绍的方法](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell)。 导出包含自定义敏感信息类型的自定义规则包，从 XML 文件中删除敏感信息类型，将更新后的 XML 文件导入回现有的自定义规则包。
+- **删除单个自定义敏感信息类型**：使用 PowerShell 修改自定义敏感信息类型中 [介绍的方法](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell)。 导出包含自定义敏感信息类型的自定义规则包，从 XML 文件中删除敏感信息类型，将更新后的 XML 文件导入回现有的自定义规则包。
 
 - 删除自定义规则包及其包含的所有自定义敏感信息类型：本部分介绍了此方法。
 
@@ -79,4 +79,4 @@ ms.locfileid: "60914400"
 
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 
-- [DLP 函数查找什么](what-the-dlp-functions-look-for.md)
+- [敏感信息类型函数](sit-functions.md)

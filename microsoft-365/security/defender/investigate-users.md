@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 165f1ccb1e0a059d61802e9a8e026b9dbef3efc2
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: bfb8e1fb42dcde1a3140e0990221536c1b76b4f8
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914376"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904003"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>调查用户Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "60914376"
 
 - Microsoft 365 Defender
 
-事件调查的一部分可能包括用户帐户。 从事件 **和** 警报事件 _ _ 用户 **&事件的用户** 选项卡 \> ***\>* 开始**。
+事件调查的一部分可能包括用户帐户。 可以从事件和警报事件_  ***_Users 查看事件门户中事件警报Microsoft 365 Defender标识的用户帐户&详细信息\>***。\> 下面是一个示例。
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例。" lightbox="../../media/investigate-incidents/incident-users.png":::
 
@@ -43,11 +43,11 @@ ms.locfileid: "60914376"
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="事件的用户帐户摘要窗格示例。" lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
 
 > [!NOTE]
-> "用户"Azure Active Directory (Azure AD) 显示组织以及组，帮助您了解与用户关联的组和权限。
+> 用户页面显示Azure Active Directory (Azure AD) 以及组，帮助您了解与用户关联的组和权限。
 
-在此飞出页面中，你可以查看用户威胁信息，包括任何当前事件、活动警报和风险级别以及用户曝光、帐户、设备等。
+在此窗格中，你可以查看用户威胁信息，包括任何当前事件、活动警报和风险级别以及用户曝光、帐户、设备等。
 
-此外，你可以直接在 Microsoft 365 Defender 门户中采取措施来解决受损用户的问题，确认用户受到威胁或要求他们重新登录。
+此外，你可以直接在 Microsoft 365 Defender 门户中采取措施来解决受损用户的问题，例如确认用户帐户受到威胁或需要新的登录。
 
 从此处，可以选择" **转到用户页面** "以查看用户帐户的详细信息。 下面是一个示例。
 
@@ -59,31 +59,24 @@ ms.locfileid: "60914376"
 
 :::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="用户的组成员身份示例。" lightbox="../../media/investigate-users/user-group-membership.png":::
 
-通过选择"经理 **"** 下的图标，可以看到用户位于组织树中。
+通过选择"经理 **"** 下的图标，可以看到用户在组织树中位于何处。
 
-"Microsoft 365 Defender门户用户"页面将 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security (信息组合在一起，具体取决于你拥有哪些) 。
+"Microsoft 365 Defender门户用户页面将 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Defender for Cloud Apps (信息合并在一起，具体取决于你拥有哪些) 。
 
-此页面显示特定于用户帐户安全风险的信息。 这包括一个分数，可帮助评估风险以及导致用户的整体风险的最新事件和警报。
+此页面显示特定于用户帐户的安全风险的信息，其中包括一个分数，可帮助评估风险以及导致总体风险的最新事件和警报。
 
 在此页中，你可以执行以下附加操作：
 
 - 将用户帐户标记为已泄露
 - 要求用户重新登录
 - 暂停用户帐户
-- 请参阅Azure Active Directory (Azure AD) 用户帐户设置
+- 请参阅Azure AD用户帐户设置
 - 查看用户帐户拥有的文件
 - 查看与该用户共享的文件。
 
 下面是一个示例。
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="事件对用户帐户的操作示例。" lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
-
-<!--
-You can access this page from multiple areas in the Microsoft 365 Defender portal. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
-
-Learn more about how to investigate users and potential risk [in this Cloud App Security tutorial](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
-
--->
 
 ## <a name="view-lateral-movement-paths"></a>查看横向移动路径
 
@@ -99,7 +92,7 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 ## <a name="next-steps"></a>后续步骤
 
-如果需要处理内事件，请继续执行 [调查](investigate-incidents.md)。
+如果需要处理内事件，请[继续调查。](investigate-incidents.md)
 
 ## <a name="see-also"></a>另请参阅
 

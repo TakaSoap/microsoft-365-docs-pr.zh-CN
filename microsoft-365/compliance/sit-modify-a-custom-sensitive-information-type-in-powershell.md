@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用 PowerShell 修改自定义敏感信息。
-ms.openlocfilehash: d402586463da1bed13d15dbaa32aece6badc9c72
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 2f1bc44dca9ec4a938c8cd3d4158163f9d5e2e2f
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271486"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900730"
 ---
 # <a name="modify-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 修改自定义敏感信息类型
 
@@ -66,7 +66,7 @@ ms.locfileid: "62271486"
    [System.IO.File]::WriteAllBytes('XMLFileAndPath', $rulepak.SerializedClassificationRuleCollection)
    ```
 
-   本示例将规则包导出到 C:\My Documents 文件夹中名为 ExportedRulePackage.xml 的文件。
+   本示例将规则包导出到 C：\My Documents ExportedRulePackage.xml中名为 ExportedRulePackage.xml 的文件。
 
    ```powershell
    [System.IO.File]::WriteAllBytes('C:\My Documents\ExportedRulePackage.xml', $rulepak.SerializedClassificationRuleCollection)
@@ -90,4 +90,4 @@ Set-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllB
 
 - [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
-- [DLP 函数查找什么](what-the-dlp-functions-look-for.md)
+- [敏感信息类型函数](sit-functions.md)

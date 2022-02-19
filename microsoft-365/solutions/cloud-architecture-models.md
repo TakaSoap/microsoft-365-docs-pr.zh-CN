@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: f7c2d35cbc8343779f9ccfb2cc369da9b4d7db4a
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: b0a89bc8a79f3ea2c5c0b3c1f01039944565a75c
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401494"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900754"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>适用于 IT 架构师的 Microsoft 云插图
 
@@ -33,7 +33,7 @@ IT 决策者和架构师可以使用这些资源来确定其工作负载的理�
 
 | Item | 说明 |
 |:-----|:-----|
-|[![常见攻击海报示意图。 ](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> 2021 年 9 月更新 | 该海报展示了常见攻击的路径，并说明了哪些功能有助于在攻击的每个阶段阻止攻击者。 <br/><br/>**相关解决方案指南** <br/> <ul><li>[评估和试点 Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[推荐的标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[为数据隐私法规部署信息保护Microsoft 365](information-protection-deploy.md)</li><li>[为 Microsoft 365 租户部署勒索软件保护](ransomware-protection-microsoft-365.md)</li><li>[Microsoft 365 内部风险解决方案](../compliance/insider-risk-solution-overview.md)</li></ul>
+|[![常见攻击海报示意图。](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> 2021 年 9 月更新 | 该海报展示了常见攻击的路径，并说明了哪些功能有助于在攻击的每个阶段阻止攻击者。 <br/><br/>**相关解决方案指南** <br/> <ul><li>[评估和试点 Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[推荐的标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[为数据隐私法规部署信息保护与Microsoft 365](information-protection-deploy.md)</li><li>[为 Microsoft 365 租户部署勒索软件保护](ransomware-protection-microsoft-365.md)</li><li>[Microsoft 365 内部风险解决方案](../compliance/insider-risk-solution-overview.md)</li></ul>
 
 <a name="identity"></a>
 ### <a name="microsoft-cloud-identity-for-it-architects"></a>适用于 IT 架构师的 Microsoft 云标识
@@ -42,7 +42,7 @@ IT 决策者和架构师可以使用这些资源来确定其工作负载的理�
   
 | 项目 | 说明 |
 |:-----|:-----|
-|[![Microsoft 云标识模型的缩略图。](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf ) <br/> [PDF](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf )  <br/> 2021 年 11 月更新 | 此模型包含：  <ul> <li> Microsoft 云标识简介 </li><li> Azure AD IDaaS 功能 </li><li>零信任标识和设备访问策略</li><li> 将本地 Active Directory 域服务与 (AD DS) 集成Azure AD </li><li> 将目录组件放入 Azure IaaS 中 </li><li> Azure IaaS 中工作负载的 AD DS 选项 </li></ul><br/>  <br/>|
+|[![Microsoft 云标识模型的缩略图。](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf ) <br/> [PDF](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf )  <br/> 2021 年 11 月更新 | 此模型包含：  <ul> <li> Microsoft 云标识简介 </li><li> Azure AD IDaaS 功能 </li><li>零信任标识和设备访问策略</li><li> 将本地 Active Directory 域服务 (AD DS) 帐户与 Azure AD </li><li> 将目录组件放入 Azure IaaS 中 </li><li> Azure IaaS 中工作负载的 AD DS 选项 </li></ul><br/>  <br/>|
 
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-it-architects"></a>适用于 IT 架构师的 Microsoft 云安全性
@@ -51,7 +51,7 @@ IT 决策者和架构师可以使用这些资源来确定其工作负载的理�
   
 | 项目 | 说明 |
 |:-----|:-----|
-|[![适用于企业架构师的 Microsoft 云安全性模型缩略图。](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> 2021 年 12 月更新 | 此模型包含： <ul><li>Microsoft 和客户安全职责</li><li>标识和设备访问</li><li>威胁防护</li><li>信息保护 </li><li>云应用保护 </li></ul><br/>|
+|[![适用于企业架构师的 Microsoft 云安全性模型缩略图。](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> 2022 年 2 月更新 | 此模型包含： <ul><li>Microsoft 和客户安全职责</li><li>标识和设备访问</li><li>威胁防护</li><li>信息保护 </li><li>云应用保护 </li></ul><br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-it-architects"></a>适用于 IT 架构师的 Microsoft 云网络
@@ -60,7 +60,7 @@ IT 决策者和架构师可以使用这些资源来确定其工作负载的理�
   
 | 项目 | 说明 |
 |:-----|:-----|
-|[![Microsoft 云网络模型的缩略图。](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](../downloads/MSFT_cloud_architecture_networking.pdf) <br/>  [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_networking.pdf) \|[以 PDF 格式下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) \|[下载为Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.vsdx)   <br/>2020 年 8 月更新 | 此模型包含： <ul><li> 发展你的云连接网络 </li><li> Microsoft 云连接的常见元素 </li><li> 面向 Microsoft 云连接的 ExpressRoute </li><li> 为 Microsoft SaaS、Azure PaaS 和 Azure IaaS 设计网络 </li></ul><br/>  <br/>|
+|[![Microsoft 云网络模型的缩略图。](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](../downloads/MSFT_cloud_architecture_networking.pdf) <br/>  [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_networking.pdf) \|[以 PDF 格式下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf)\|[下载为Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.vsdx)   <br/>2020 年 8 月更新 | 此模型包含： <ul><li> 发展你的云连接网络 </li><li> Microsoft 云连接的常见元素 </li><li> 面向 Microsoft 云连接的 ExpressRoute </li><li> 为 Microsoft SaaS、Azure PaaS 和 Azure IaaS 设计网络 </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-it-architects"></a>适用于 IT 架构师的 Microsoft 混合云
@@ -69,12 +69,12 @@ IT 决策者和架构师可以使用这些资源来确定其工作负载的理�
   
 | Item | 说明 |
 |:-----|:-----|
-|[![Microsoft 混合云模型的缩略图。](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](../downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_hybrid.pdf) \|[以 PDF 格式下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf) \|[下载为Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.vsdx)     <br>2020 年 8 月更新 | 此模型包含： <ul><li> Microsoft 的云产品（SaaS、Azure PaaS 和 Azure IaaS）及它们的常用元素 </li><li> Microsoft 云产品的混合云体系结构 </li><li> Microsoft SaaS (Office 365)、Azure PaaS 和 Azure IaaS 的混合云方案 </li></ul><br/>|
+|[![Microsoft 混合云模型的缩略图。](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](../downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_hybrid.pdf)\|[以 PDF 格式下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf)\|[下载为Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.vsdx)     <br>2020 年 8 月更新 | 此模型包含： <ul><li> Microsoft 的云产品（SaaS、Azure PaaS 和 Azure IaaS）及它们的常用元素 </li><li> Microsoft 云产品的混合云体系结构 </li><li> Microsoft SaaS (Office 365)、Azure PaaS 和 Azure IaaS 的混合云方案 </li></ul><br/>|
 
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Microsoft 云租户到租户迁移的体系结构方法 
 本系列主题阐述了合并、收购、剥离和其他可能会导致你迁移到新云租户的方案的几种体系结构方法。 这些主题提供有关企业资源规划的起始指导。 
 
-| Item | 说明 |
+| 项目 | 说明 |
 |:-----|:-----|
 |[![Microsoft 云租户到租户迁移的缩略图。](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> 2021 年 2 月更新    |此模型包含： <ul><li>商业方案到体系结构方法的映射</li><li>设计注意事项</li><li>单个事件迁移流示例</li><li>分阶段迁移流示例</li><li>租户移动或拆分流示例</li></ul>|
 

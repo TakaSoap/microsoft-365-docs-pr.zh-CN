@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文提供可以编码为自定义敏感信息类型的筛选器列表。
-ms.openlocfilehash: e5f3fb99ec4454410c3719dc3d76356e02f03573
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: bcecc13776b20f8b4c61eaf499a99397931fe498
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818224"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903749"
 ---
 # <a name="custom-sensitive-information-type-filters-reference"></a>自定义敏感信息类型筛选器参考
 
@@ -151,7 +151,7 @@ ms.locfileid: "62818224"
 
 说明：允许您禁止某些匹配以防止它们触发规则。 例如，将4111111111111111信用卡匹配列表中排除。
 
-例如，要排除信用卡号（如 4111111111111111）3241891031113111列表，如下所示：
+例如，要排除信用卡号4111111111111111和3241891031113111列表，如下所示：
 
 - 4485 3647 3952 7352
 - 4111111111111111
@@ -190,7 +190,7 @@ ms.locfileid: "62818224"
 
 说明：允许你定义应始终包含或排除的前面字符。 例如，如果信用卡号前面有"订单 ID："，则从有效匹配项中删除匹配项。
 
-例如，要排除包含电话号码电话电话号码，并按电话号码前的字符串呼叫我，在如下所示的列表中：
+例如，要排除包含电话号码的电话号码电话，并按电话号码前的字符串呼叫我，在如下所示的列表中：
 
 - 电话号码 091-8974-653278
 - 电话 45-124576532-123
@@ -343,4 +343,4 @@ Entity 中的筛选器 - 将涵盖所有子模式
 
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 
-- [DLP 函数查找什么](what-the-dlp-functions-look-for.md)
+- [敏感信息类型函数](sit-functions.md)

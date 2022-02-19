@@ -7,20 +7,26 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-  - MOE150
+- MOE150
 ms.technology: m365d
+ms.openlocfilehash: cfa39ca38046c131de2531b4ad6446626895090f
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903947"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>调查警报Microsoft 365 Defender
 
@@ -33,21 +39,17 @@ ms.technology: m365d
 
 在Microsoft 365 Defender中，相关警报聚合在一起以形成[事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。 
 
-警报 **队列** 显示当前警报集。 在快速启动 & 门户时，你可以从&警报>警报"进入<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">警报Microsoft 365 Defender队列</a>。
+警报 **队列** 显示当前警报集。 在快速启动 > 门户时，你可以从事件和&警报>警报Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">队列</a>。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="报告门户中的警报队列Microsoft 365 Defender示例。":::
 
 来自不同 Microsoft 安全解决方案（如 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft 365 Defender）的警报将在此处显示。
 
-默认情况下，通知门户中的警报Microsoft 365 Defender显示过去 30 天内新的和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
+默认情况下，通知门户中的警报队列Microsoft 365 Defender最近 30 天的新警报和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
 
 从默认警报队列中，可以选择"筛选器"以查看"筛选器"窗格，可以从中指定警报的子集。 下面是一个示例。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="通知门户中警报队列的筛选器窗格Microsoft 365 Defender示例。":::
-
-<!--
-UPDATE SCREENSHOT
---> 
 
 你可以根据以下条件筛选警报：
 
@@ -94,11 +96,11 @@ UPDATE SCREENSHOT
 - 警报情景，它是与此警报相关的事件和警报链（按时间顺序）
 - 摘要详细信息
 
-在整个警报页面中，可以选择任意实体旁边的省略号 (**...**) 以查看可用操作，例如打开警报页面或将警报链接到其他事件。
+在整个警报页面中，可以选择任意实体 (**...** "旁边的省略号) 查看可用操作，例如打开警报页面或将警报链接到其他事件。
 
 ### <a name="alert-sources"></a>警报源
 
-Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps 和 Microsoft Defender for Cloud Apps 的应用管理加载项等解决方案。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
+Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps 以及适用于云应用的 Microsoft Defender 的应用管理加载项等解决方案。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
 
 > [!NOTE]
 > - 预置的 GUID 仅特定于统一体验，如统一警报队列、统一警报页面、统一调查和统一事件。
@@ -115,7 +117,7 @@ Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Micro
 
 " **已采取** 操作"部分包含受影响资产的列表，如受此警报影响的邮箱、设备和用户。 
 
-还可以选择"**在操作中心中** 查看"以查看操作中心的"历史记录"选项卡，Microsoft 365 Defender门户。 
+还可以选择"在操作中心 **中** 查看"以查看操作中心的"历史记录"选项卡，Microsoft 365 Defender门户。 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>跟踪警报情景中的警报角色
 
@@ -171,7 +173,7 @@ Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Micro
 
 ## <a name="use-power-automate-to-triage-alerts"></a>使用Power Automate对警报分类
 
-SecOps (新式安全) 团队需要自动化才能高效工作。 为了专注于搜寻和调查真实威胁，SecOps 团队Power Automate警报列表进行会审并消除不是威胁的警报。  
+SecOps (新式安全) 团队需要自动化才能高效工作。 为了专注于搜寻和调查真实威胁，SecOps 团队Power Automate警报列表进行会审，并消除不是威胁的警报。  
 
 ### <a name="criteria-for-resolving-alerts"></a>解决警报的条件
 

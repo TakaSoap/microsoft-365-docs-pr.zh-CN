@@ -25,12 +25,12 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: 数据丢失防护参考资料
-ms.openlocfilehash: 85fa08419b964555ce036b96a78f8c3fe6bab3a1
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 0c7fe1d3ccf1b74641be1d05506f1cc53b743218
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422863"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903524"
 ---
 # <a name="data-loss-prevention-reference"></a>数据丢失防护参考
 
@@ -73,7 +73,7 @@ With a DLP policy, you can:
 
 你可在 Microsoft 365 安全合规中心的“数据丢失防护”页上创建和管理 DLP 策略。
 
-![安全与合规中心Office 365 &amp; 数据丢失防护页面。](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![安全与合规中心Office 365数据丢失&amp;防护页面。](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -529,7 +529,7 @@ DLP 评估可编制索引的任何内容。 有关默认的爬网文件类型的
 
 当创建一个将 Exchange Online 包含为位置的 DLP 策略时，系统会将策略从 Office 365 安全 &amp; 合规中心同步到 Exchange Online，然后从 Exchange Online 同步到 Outlook 网页版和 Outlook。
 
-在 Outlook 中撰写消息时，会显示策略提示，因为会根据 DLP 策略对创建的内容进行评估。 邮件发送后，会根据 DLP 策略评估邮件流的正常部分，以及 Exchange 邮件流规则 (也称为传输规则) 和在<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>管理中心中创建的 DLP 策略。 DLP 策略会扫描邮件及其所有附件。
+在 Outlook 中撰写消息时，会显示策略提示，因为会根据 DLP 策略对创建的内容进行评估。 邮件发送后，会针对 DLP 策略评估邮件流的正常部分，以及 Exchange 邮件流规则 (也称为传输规则) 和<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">在 Exchange</a> 管理中心创建的 DLP 策略。 DLP 策略会扫描邮件及其所有附件。
 
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Office 桌面程序中的策略评估
 
@@ -545,7 +545,7 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
 
 ## <a name="permissions"></a>权限
 
-默认情况下，全局管理员、安全管理员和合规性管理员将有权访问创建和应用 DLP 策略。 创建 DLP 策略的合规性团队的其他成员需要安全与合规中心 &amp; 的权限。 默认情况下，租户管理员有权访问此位置，并可以授予合规部官员和其他人员对安全与合规中心的访问权限，而不授予租户管理员 &amp; 的所有权限。为此，我们建议您：
+默认情况下，全局管理员、安全管理员和合规性管理员将有权访问创建和应用 DLP 策略。 创建 DLP 策略的合规性团队的其他成员需要安全与合规中心 &amp; 的权限。 默认情况下，租户 &amp; 管理员有权访问此位置，并可以授予合规部官员和其他人员对安全与合规中心的访问权限，而不授予租户管理员的所有权限。为此，我们建议您：
 
 1. 在 Microsoft 365 中创建组并向其添加合规部主管。
 
@@ -591,6 +591,6 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
 
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 
-- [DLP 函数查找什么](what-the-dlp-functions-look-for.md)
+- [敏感信息类型函数](sit-functions.md)
 
 - [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 创建基于精确数据匹配的敏感信息类型/规则包
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b28669a2791685d172889bf6486b89b9d971e36
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: eb15f54a8a944e1c764a2540f36926dd433fb2d3
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271918"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900742"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>创建基于精确数据匹配的敏感信息类型/规则包
 
@@ -38,7 +38,7 @@ ms.locfileid: "62271918"
 
 可以使用此向导在 SIT 文件 (敏感信息类型) 以帮助简化此过程。
 
-EDM 敏感信息类型由一个或多个模式组成。 每个模式都描述一组证据 (架构中的字段) ，这些字段将用于标识文档或电子邮件中的敏感内容。
+EDM 敏感信息类型由一个或多个模式组成。 每个模式都描述一组证据 (架构中的字段) 用于标识文档或电子邮件中的敏感内容。
 
 ## <a name="pre-requisites"></a>先决条件
 
@@ -54,7 +54,7 @@ EDM 敏感信息类型由一个或多个模式组成。 每个模式都描述一
   - 如果你为架构中的主元素列选择了"忽略的分隔符"选项，请确保你创建的自定义 SIT 将匹配带和不带选定分隔符的数据。
   - 如果使用内置的 SIT，请确保它将准确检测要选择的字符串，并且不包括任何周围字符或排除存储在敏感信息表中的字符串的任何有效部分。
 
-请参阅 [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) 和 [自定义敏感信息类型入门](create-a-custom-sensitive-information-type.md#get-started-with-custom-sensitive-information-types)。
+请参阅 [敏感信息类型实体定义和](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) 在合规性 [中心创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)。
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>使用精确数据匹配架构和敏感信息类型模式向导
 
@@ -97,7 +97,7 @@ EDM 敏感信息类型由一个或多个模式组成。 每个模式都描述一
 
 ## <a name="create-a-rule-package-manually"></a>手动创建规则包
 
-此过程演示如何使用 Unicode 编码)  (创建名为规则包 (的 XML 格式的文件，然后使用合规性中心 PowerShell cmdlet 将其上载到 Microsoft 365 中。
+此过程演示如何使用 Unicode 编码)  (创建 XML 格式的文件，然后使用合规性中心 PowerShell cmdlet 将其上载到 Microsoft 365 中。
 
 > [!NOTE]
 > 如果你映射到的 SIT 可以检测多词确证性证据，则你在手动创建的规则包中定义的辅助元素可以映射到 SIT。 `John Smith` `John Smith` `Smith` `John`例如，如果确定证据字段未映射到可检测到该模式的 SIT，那么该名称将不会作为辅助元素匹配，因为我们会将内容中的内容与其中一个字段上载的术语分开比较和发现。

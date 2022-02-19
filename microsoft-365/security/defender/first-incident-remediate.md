@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b58e2ddd2b4282bd3abcd36147db89970e21fb19
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 81fdf04686f62acf3a2acce7e1bb400fe1d51aaa
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943288"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904069"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>步骤 2. 修正第一个事件
 
@@ -36,19 +36,19 @@ ms.locfileid: "61943288"
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender不仅提供检测和分析功能，还提供恶意软件的抑制和攻击。 抑制包括减少攻击影响的步骤，同时确保从网络中删除攻击者活动的所有跟踪。  Microsoft 365 Defender提供几个修正操作，可配置为根据操作系统和攻击类型进行[](m365d-autoir.md)自动修正。
+Microsoft 365 Defender不仅提供检测和分析功能，而且还提供恶意软件的控制和攻击。 抑制包括减少攻击影响的步骤，同时确保从网络中删除攻击者活动的所有跟踪。 Microsoft 365 Defender提供几个修正操作，可配置为根据受影响设备的操作系统和攻击[](m365d-autoir.md)类型进行自动修正。
 
 Microsoft 365 Defender分析员可以手动启动的几个修正操作。 操作分为两类：设备上操作和文件操作。 某些操作可用于立即停止威胁，而其他操作有助于进一步取证分析。
 
 ## <a name="actions-on-devices"></a>对设备执行的操作
 
-- **隔离设备** - 此活动会立即阻止所有网络流量 (Internet 和内部) 以最大限度地减少恶意软件的分布，并允许分析员继续分析，而无需恶意参与者继续攻击。 唯一允许的连接是 Microsoft Defender for Identity 服务云，因此 Microsoft Defender for Identity 可以继续监视设备。 
+- 隔离 **设备 - 此** 活动将立即阻止所有网络流量 (Internet 和内部) 以最大限度地减少恶意软件的分布，并允许分析员继续分析，而无需恶意参与者继续攻击。 唯一允许的连接是 Microsoft Defender for Identity 服务云，因此 Microsoft Defender for Identity 可以继续监视设备。 
 - **限制应用执行** - 若要限制应用程序运行，应用代码完整性策略，该策略只允许文件在由 Microsoft 颁发的证书签名时运行。 这种限制方法有助于防止攻击者控制受到威胁的设备，并执行进一步恶意活动。
-- **运行防病毒扫描**- Microsoft Defender 防病毒扫描可以与其他防病毒解决方案一起运行，无论 Defender 防病毒是否是活动的防病毒解决方案。 如果另一个防病毒供应商产品是主要终结点保护解决方案，可以在被动模式下运行 Defender 防病毒。
+- **运行防病毒扫描** - Microsoft Defender 防病毒扫描可以与其他防病毒解决方案一起运行，无论 Defender 防病毒是否是活动的防病毒解决方案。 如果另一个防病毒供应商产品是主要终结点保护解决方案，可以在被动模式下运行 Defender 防病毒。
 - **启动自动调查** - 可以在设备上启动新的通用自动调查。 当调查正在运行时，从设备生成的其他任何警报都将添加到正在进行的自动调查，直到完成该调查。 此外，如果在其他设备上看到相同的威胁，则这些设备将添加到调查。
 - **启动实时响应** - 实时响应是一项功能，可让你使用远程 shell 连接即时访问设备。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。 实时响应旨在通过让你能够收集取证数据、运行脚本、发送可疑实体进行分析、修正威胁和主动搜寻新出现的威胁来增强调查。
 - **收集调查** 包 - 作为调查或响应过程的一部分，你可以从设备收集调查包。 通过收集调查包，你可以确定设备的当前状态，并进一步理解攻击者使用的工具和技术。 
-- 咨询 **威胁** 专家 (和文件) 的操作中提供 - 你可以咨询 Microsoft 威胁专家，了解有关可能受到威胁的设备或已受到威胁的设备的更多见解。 Microsoft 威胁专家可以直接在内部参与Microsoft 365 Defender及时准确的响应。 
+- 咨询 **威胁** 专家 (设备和文件) - 你可以咨询 Microsoft 威胁专家，了解有关可能受到威胁的设备或已受到威胁的设备的更多见解。 Microsoft 威胁专家可以直接在内部参与Microsoft 365 Defender及时准确的响应。 
 
 ## <a name="actions-on-files"></a>对文件执行的操作
 
@@ -60,7 +60,7 @@ Microsoft 365 Defender分析员可以手动启动的几个修正操作。 操作
 继续检测、 [会审](first-incident-analyze.md#analyze-your-first-incident)和分析事件中的示例，分析员可以使用以下操作修正此事件：
 
 1. 立即重置用户帐户密码
-2. 在深入分析Microsoft 365 Defender隔离设备
+2. 在深度分析Microsoft 365 Defender隔离设备
 3. 确保恶意文件被隔离SharePoint
 4. 检查哪些终结点受恶意软件影响
 5. 重新生成系统
@@ -74,20 +74,20 @@ Microsoft 365 Defender分析员可以手动启动的几个修正操作。 操作
 
 ## <a name="using-playbooks"></a>使用 Playbook
 
-此外，可以使用 Playbook 创建自动修正。 目前，Microsoft 在[GitHub](https://github.com/microsoft/Microsoft-Cloud-App-Security/tree/master/Playbooks)提供适用于以下方案的 Playbook 模板：
+此外，可以使用 Playbook 创建自动修正。 目前，Microsoft 在 [GitHub](https://github.com/microsoft/Microsoft-Cloud-App-Security/tree/master/Playbooks)提供适用于以下方案的 Playbook 模板：
 
 - 请求用户验证后删除敏感文件共享
 - 不经常使用的国家/地区警报自动分类
 - 禁用帐户之前请求管理员操作
 - 禁用恶意收件箱规则
 
-Playbook 使用Power Automate自定义自动化流程自动化流，以在触发特定条件后自动执行某些活动。 组织可以从现有模板或从头开始创建游戏手册。 
+Playbook 使用Power Automate创建自定义机器人流程自动化流，以在触发特定条件后自动执行某些活动。 组织可以从现有模板或从头开始创建游戏手册。 
 
 下面是一个示例。
  
 :::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="自定义自定义Power Automate自动化流的示例。"::: 
  
-还可以在事后评审期间创建操作手册[](first-incident-post.md)，以从事件创建修正操作，以加快补救操作速度。 
+还可以在事后评审 [期间创建操作](first-incident-post.md) 手册，以从已解决的事件中创建修正操作。 
 
 ## <a name="next-step"></a>后续步骤
 

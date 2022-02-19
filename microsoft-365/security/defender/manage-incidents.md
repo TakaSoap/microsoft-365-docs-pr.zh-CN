@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 9ef59cc47addce2a8f2171038f5894071549a40b
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: b9cc3e0ab911515d010b1a6e7feaac5cff8aed51
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156480"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903935"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>管理事件Microsoft 365 Defender
 
@@ -36,9 +36,9 @@ ms.locfileid: "62156480"
 **适用于：**
 - Microsoft 365 Defender
 
-事件管理对于确保包含和解决威胁至关重要。
+事件管理对于确保命名、分配和标记事件以优化事件工作流中的时间并更快包含和解决威胁至关重要。
 
-可以在快速启动 Microsoft 365 Defender门户&事件>事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
+可以在快速启动 Microsoft 365 Defender 门户&事件>**事件** (security.microsoft.com [)](https://security.microsoft.com)。 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -75,16 +75,16 @@ Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影�
 
 可以向事件添加自定义标记，例如，标记一组具有共同特征的事件。 以后可以对包含特定标记的所有事件的事件队列进行筛选。
 
-开始键入时，您可以选择从所选标记列表进行选择。
+开始键入时，可以选择从以前使用的标记和所选标记的列表中选择。
 
 ## <a name="assign-an-incident"></a>分配事件
 
-如果尚未分配事件，可以选择"分配到"框并指定用户帐户。  若要重新分配事件，请删除当前分配帐户，选择帐户名称旁边的"x"，然后选择" **分配到"** 框。 分配事件的所有权会为与其关联的所有警报分配相同的所有权。
+如果尚未分配事件，可以选择"分配到"框并指定用户帐户。 若要重新分配事件，请删除当前分配帐户，选择帐户名称旁边的"x"，然后选择" **分配到"** 框。 分配事件的所有权会为与其关联的所有警报分配相同的所有权。
 
 通过筛选事件队列，您可以获取分配给您的事件列表。 
 
-1. 从事件队列中，选择"筛选器 **"。**
-2. 在"**事件分配"** 部分，清除 **"全选**"，然后选择 **"分配给我"。**
+1. 从事件队列中，选择"筛选器 **"**。
+2. 在" **事件分配"** 部分，清除 **"全选** "，然后选择 **"分配给我"**。
 3. 选择 **"应用**"，然后关闭" **筛选器"** 窗格。
 
 然后，您可以将生成的 URL 保存为书签，以快速查看分配给您的事件列表。
@@ -93,7 +93,7 @@ Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影�
 
 如果事件已修复，请选择"解决 **事件** "以将切换开关向右移动。 请注意，解决事件还会解决与事件相关的所有链接和活动警报。
 
-未解决的事件显示为"活动 **"。**
+未解决的事件显示为"活动 **"**。
 
 ## <a name="set-the-classification-and-determination"></a>设置分类和确定
 
@@ -111,7 +111,7 @@ Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影�
 
 对于进程内事件， [请继续调查](investigate-incidents.md)。
 
-对于已解决的事件，执行事后 [评审](first-incident-post.md)。
+对于已解决的事件，执行 [事后评审](first-incident-post.md)。
 
 ## <a name="see-also"></a>另请参阅
 
