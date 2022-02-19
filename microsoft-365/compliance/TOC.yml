@@ -322,7 +322,7 @@
               href: named-entities-learn.md
         - name: 敏感信息类型入门
           items:
-            - name: 自定义敏感信息类型入门 - 合规中心
+            - name: 创建自定义敏感信息类型 - 合规中心
               href: create-a-custom-sensitive-information-type.md
             - name: 基于精确数据匹配的敏感信息类型入门
               href: sit-get-started-exact-data-match-based-sits-overview.md
@@ -344,6 +344,10 @@
               href: sit-modify-edm-schema-configurable-match.md
             - name: 为精确数据匹配活动创建通知（预览）
               href: sit-edm-notifications-activities.md
+            - name: 在合规中心管理自定义敏感信息类型
+              href: sit-manage-custom-sits-compliance-center.md
+            - name: 敏感信息类型 REGEX 验证程序和其他检查
+              href: sit-regex-validators-additional-checks.md
             - name: 创建自定义敏感信息类型 - PowerShell
               href: create-a-custom-sensitive-information-type-in-scc-powershell.md
             - name: 删除自定义敏感信息类型 - PowerShell
@@ -366,8 +370,8 @@
           items:
             - name: 敏感信息类型属性定义
               href: sensitive-information-type-entity-definitions.md
-            - name: DLP 函数查找的内容
-              href: what-the-dlp-functions-look-for.md
+            - name: 敏感信息类型函数
+              href: sit-functions.md
             - name: 自定义敏感信息类型筛选器参考
               href: sit-custom-sit-filters.md
     - name: 可训练的分类器
