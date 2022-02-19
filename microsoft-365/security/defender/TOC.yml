@@ -114,6 +114,8 @@
               href: microsoft-secure-score-whats-coming.md
             - name: 最近更新
               href: microsoft-secure-score-whats-new.md
+        - name: 保护你的终结点
+          href: ../defender-endpoint/index.yml
         - name: 保护你的标识
           items:
             - name: 传感器设置和运行状况
@@ -130,6 +132,8 @@
               href: ../defender-identity/exclusions.md
             - name: 电子邮件和 syslog 通知
               href: ../defender-identity/notifications.md
+        - name: 保护你的 Office 365 工作负载
+          href: ../office-365-security/index.yml
     - name: 调查并响应威胁
       items:
         - name: 概述
