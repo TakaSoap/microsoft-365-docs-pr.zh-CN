@@ -1,6 +1,6 @@
 ---
 title: 步骤 2. 使用零信任框架执行 SOC 集成准备情况评估
-description: 将 SOC 集成准备情况评估集成到安全操作时，使用零信任框架Microsoft 365 Defender的基础知识。
+description: 将服务集成到安全操作时，使用零信任框架执行 SOC Microsoft 365 Defender准备情况评估的基础知识。
 keywords: 事件， 警报， 调查， 关联， 攻击， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365， 事件响应， 网络攻击， secops， 安全操作， soc
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ca58d56e9caf6aa8a359a0776fc160cca04fec8a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 1197edf14977c0232936531399d726f62ab70889
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171786"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314303"
 ---
 # <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>步骤 2. 使用零信任框架执行 SOC 集成准备情况评估
 
@@ -36,7 +36,7 @@ ms.locfileid: "62171786"
 **适用于：**
 - Microsoft 365 Defender
 
-定义安全操作中心 (SOC) 团队的核心功能后，组织的下一步是准备通过零信任方法采用[Microsoft 365 Defender。](/security/zero-trust/) 采用可以帮助您确定使用现代行业领先的Microsoft 365 Defender部署解决方案所需的要求，同时根据Microsoft 365 Defender评估组织的功能。
+定义安全运营中心 (SOC) 团队的核心功能后，组织的下一步是准备通过零信任方法采用 [Microsoft 365 Defender。](/security/zero-trust/) 采用可以帮助您确定使用现代行业领先的Microsoft 365 Defender部署解决方案所需的要求，同时根据Microsoft 365 Defender评估企业的功能。
 
 此方法基于强大的保护基础，包括标识、终结点、 (设备) 、数据、应用、基础结构和网络等关键方面。 准备情况评估团队将确定尚未满足启用Microsoft 365 Defender的基本要求并需要修正的领域。
 

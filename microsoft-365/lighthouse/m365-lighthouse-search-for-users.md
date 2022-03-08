@@ -15,18 +15,15 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，了解如何搜索用户。
-ms.openlocfilehash: 05ac38ef684adbefd0d08756b8ce5006c5c65aa2
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，了解如何搜索用户。
+ms.openlocfilehash: 26f259295eaa3cc89309de78b6aea3700a492961
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242086"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315087"
 ---
 # <a name="search-for-users"></a>搜索用户
-
-> [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
 Microsoft 365 Lighthouse允许你在所有活动租户中搜索特定用户。 这允许你快速查找用户，而无需导航不同的租户。
 
@@ -44,6 +41,6 @@ Microsoft 365 Lighthouse允许你在所有活动租户中搜索特定用户。 �
 
 ## <a name="related-content"></a>相关内容
 
-[管理Microsoft 365用户帐户 (](../enterprise/manage-microsoft-365-accounts.md)文章) \
+[管理Microsoft 365用户帐户 (](../enterprise/manage-microsoft-365-accounts.md) 文章) \
 [重置用户密码](m365-lighthouse-reset-user-password.md) (文章) \
 [阻止用户登录 (](m365-lighthouse-block-user-signin.md) 文章) 

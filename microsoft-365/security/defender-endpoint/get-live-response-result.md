@@ -14,18 +14,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ce0fd83e95be6fd1f26b40a5992303162a265c3e
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: bd8b3c997a8efceb2791eca4de0b0e42d47513f8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300450"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314401"
 ---
 # <a name="get-live-response-results"></a>获取实时响应结果
 
@@ -54,22 +52,22 @@ ms.locfileid: "61300450"
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的 Windows** 版本。
+- **验证是否正在运行受支持的** Windows。
 
-  设备必须运行以下版本之一Windows
+  设备必须运行以下版本的设备之一Windows
 
   - **Windows 11**
   
   - **Windows 10**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
     - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [版本 1809 (RS 5 ](/windows/whats-new/whats-new-windows-10-version-1809)) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [版本 1809 (RS 5) ](/windows/whats-new/whats-new-windows-10-version-1809) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **Windows Server 2019 - 仅适用于公共预览版**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
-    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
+    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     
   - **Windows Server 2022**  
 
@@ -94,7 +92,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 |名称|类型|说明|
 |---|---|---|
-|Authorization|String|Bearer {token}。必需。|
+|Authorization|字符串|Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
 

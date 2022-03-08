@@ -27,16 +27,19 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 了解如何使用 Windows AutoPilot 为Windows 10设置新设备，以便员工可以使用这些设备。
-ms.openlocfilehash: 4b187d5e8f9acc8fb76e77770ec88790394dfbe3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12e86102633ddfc19960fb561b2a626da29f0560
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165636"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314009"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用分步指南添加 Autopilot 设备和配置文件
 
-可以使用 Windows AutoPilot 为Windows 10设置新的设备，以便当你将这些设备授予员工时，这些设备可供使用。
+> [!NOTE]
+> 从 2022 年 3 月 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 此产品/服务为设备提供其他安全功能。 [详细了解 Defender for Business](../../security/defender-business/mdb-overview.md)。
+
+可以使用 Windows AutoPilot 为Windows 10设置新的 Windows 10 设备，以便当你将这些设备供员工使用时，这些设备可供使用。
   
 ## <a name="device-requirements"></a>设备要求
 
@@ -44,7 +47,7 @@ ms.locfileid: "60165636"
   
 - Windows 10版本 1703 或更高版本
     
-- 尚未体验全新Windows全新体验的新设备
+- 尚未体验全新体验Windows全新体验的新设备
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>使用设置指南创建设备和配置文件
 
@@ -56,7 +59,7 @@ ms.locfileid: "60165636"
 
     ![在管理中心，选择"设备"，然后选择"AutoPilot"。](../../media/AutoPilot.png)
   
-2. 在 **AutoPilot** 页面上，单击或点击"开始 **指南"。**
+2. 在 **AutoPilot** 页面上，单击或点击"开始 **指南"**。
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
@@ -73,7 +76,7 @@ ms.locfileid: "60165636"
     有关详细信息，请参阅 [设备列表 CSV 文件](../misc/device-list.md)。还可在" **上传设备列表 .csv 文件**"页面下载示例文件。 
     
 > [!NOTE]
-> 此脚本使用 WMI 检索客户在 Autopilot 中注册设备Windows属性。 请注意，生成的 CSV 文件不收集 Windows 产品 ID (PKID) 值是正常的，因为注册设备不需要这样做，并且输出 CSV 中的 PKID 为 NULL 完全正常。 将仅填充序列号和硬件哈希。
+> 此脚本使用 WMI 检索客户在 Autopilot 中注册设备Windows所需的属性。 请注意，生成的 CSV 文件不收集 Windows 产品 ID (PKID) 值是正常的，因为注册设备不需要这样做，并且输出 CSV 中的 PKID 为 NULL 完全正常。 将仅填充序列号和硬件哈希。
     
 4. 在 **"分配配置文件"** 页上，您可以选择现有配置文件或创建新配置文件。 如果还没有，系统将提示你创建一个。 
     
@@ -98,4 +101,4 @@ ms.locfileid: "60165636"
 ## <a name="related-content"></a>相关内容
 
 [有关 AutoPilot 配置文件设置 (](autopilot-profile-settings.md) 文章) \
-[用于保护设备和应用数据的选项 (](../devices/choose-device-security.md) 本文) 
+[用于保护设备和](../devices/choose-device-security.md)应用数据的选项 (文章) 保护业务计划的 Microsoft 365 [方法](../security-and-compliance/secure-your-business-data.md)

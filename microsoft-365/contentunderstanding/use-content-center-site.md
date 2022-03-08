@@ -12,20 +12,19 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何在 Microsoft SharePoint Syntex 中设置和使用内容中心网站SharePoint Syntex。
-ms.openlocfilehash: 342a8b42b8aa8a9bb60867f57379ce00db068c17
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 2650b98decc7977c4343f75b27ed46e2381abdef
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62902585"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314541"
 ---
 # <a name="use-the-content-center-site-template-for-microsoft-sharepoint-syntex"></a>使用适用于 Microsoft 网站的内容中心网站SharePoint Syntex
 
-内容SharePoint Syntex网站是一个随时可供SharePoint网站模板，旨在帮助您更好地了解SharePoint Syntex功能。
+内容SharePoint Syntex网站是一个随时可供SharePoint说明性网站模板，旨在帮助您更好地了解SharePoint Syntex功能。
 
-你将了解创建和训练自己的模型所需的工具和信息。 然后，你将能够使用此网站作为中央内容存储库或用作管理您自己的模型SharePoint Syntex中心。
+你将了解创建和训练自己的模型所需的工具和信息。 然后，你将能够使用此网站作为中央内容库或用作管理您自己的模型SharePoint Syntex中心。
 
 ![内容中心网站模板主页的屏幕截图。](../media/content-understanding/content-center-site-home-page.png)
 
@@ -33,14 +32,14 @@ ms.locfileid: "62902585"
 
 ## <a name="provision-the-site"></a>设置网站
 
-可以从内容中心目录服务预配SharePoint[内容中心网站](https://lookbook.microsoft.com/)。
+可以从内容中心目录服务SharePoint[内容中心网站](https://lookbook.microsoft.com/)。
 
 ![内容中心网站模板设置页面的屏幕截图。](../media/content-understanding/content-center-site-provisioning-page.png)
 
 > [!NOTE]
-> 您必须是全局管理员或 SharePoint管理员Microsoft 365才能设置网站。
+> 您必须是全局管理员或SharePoint管理员Microsoft 365网站。
 
-1. 从"查看设计"SharePoint [](https://lookbook.microsoft.com/) > 主页上的"查看设计"菜单上，选择"SharePoint Syntex **SharePoint Syntex内容中心"**。
+1. 从"查看设计 > "SharePoint [](https://lookbook.microsoft.com/)主页上的"查看设计"菜单上，选择"SharePoint Syntex **SharePoint Syntex内容中心"**。
 
 2. 在" **内容中心"** 页上，选择 **"添加到租户"**。
 

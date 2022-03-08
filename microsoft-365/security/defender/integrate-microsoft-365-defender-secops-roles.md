@@ -1,7 +1,7 @@
 ---
 title: 步骤 4. 定义Microsoft 365 Defender角色、职责和监管
-description: 将角色、职责和监管集成到安全操作时Microsoft 365 Defender的基础知识。
-keywords: 事件， 警报， 调查， 相关， 攻击， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， Microsoft 365， 事件响应， 网络攻击， secops， 安全操作， soc
+description: 将安全管理集成到安全操作时定义角色Microsoft 365 Defender监督的基础知识。
+keywords: 事件， 警报， 调查， 关联， 攻击， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， Microsoft 365， 事件响应， 网络攻击， secops， 安全操作， soc
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6ea0294604d77c812661dbe410772c91df9d66c8
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 7562eca50b905bf70f17844cf8fe3079fbf3fc14
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171919"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314275"
 ---
 # <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>步骤 4. 定义Microsoft 365 Defender角色、职责和监管
 
@@ -36,7 +36,7 @@ ms.locfileid: "62171919"
 **适用于：**
 - Microsoft 365 Defender
 
-在定义任何操作角色之前，组织必须Microsoft 365 Defender许可证、配置和管理作为初始任务的所有权和责任。 通常，Microsoft 365 和 Enterprise 安全 + 移动性 (EMS) 服务 (（可能包含 Microsoft 365 Defender) ）的许可证所有权、订阅成本和管理位于安全运营中心 (SOC) 团队之外。 SOC 团队应该与这些人合作，以确保正确监督Microsoft 365 Defender。 
+在定义任何操作角色之前，组织必须Microsoft 365 Defender许可证、配置和管理作为初始任务的所有权和责任。 通常，Microsoft 365 和 Enterprise 安全 + 移动性 (EMS) 服务 (（可能包括 Microsoft 365 Defender) ）的许可证的所有权、订阅成本和管理位于安全运营中心 (SOC) 团队之外。 SOC 团队应该与这些人合作，以确保正确监控Microsoft 365 Defender。 
 
 许多现代 SOC 都基于其技能集和功能将其团队成员分配到类别。 例如：
 
@@ -44,7 +44,7 @@ ms.locfileid: "62171919"
 - 由负责维护日志、警报、事件和监视功能的 SOC 分析师组成的监视团队。
 - 一个&运营团队，负责设计并优化安全设备。
 
-SOC 团队的角色和职责Microsoft 365 Defender自然地集成到这些团队中。
+SOC 团队角色和团队Microsoft 365 Defender自然地集成到这些团队中。
 
 下表列出了每个 SOC 团队的角色和职责，以及他们的角色如何与Microsoft 365 Defender。
 

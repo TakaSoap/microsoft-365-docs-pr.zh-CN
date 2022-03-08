@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender 中的自动调查和响应
-description: 大致了解自动调查和响应功能（也称为自我修复Microsoft 365 Defender
+description: 大致了解自动调查和响应功能（也称为"自我修复Microsoft 365 Defender
 keywords: 自动化， 调查， 警报， 触发器， 操作， 修正， 自我修复
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 5ca23f61b2843f582ed704b69f702559afdeeffa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 180599007a47fe9cfa9ae68d6647f7494dd2f410
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199473"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314261"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的自动调查和响应
 
@@ -35,7 +35,7 @@ ms.locfileid: "60199473"
 **适用于：**
 - Microsoft 365 Defender
 
-如果组织正在使用[Microsoft 365 Defender，](microsoft-365-defender.md)则每当检测到恶意或可疑活动Microsoft 365 Defender，安全运营团队都会在安全门户中收到警报。 鉴于可能进入的威胁流看起来从未结束，安全团队经常面临解决大量警报的挑战。 幸运的是，Microsoft 365 Defender包括自动调查和响应 (AIR) 功能，可帮助安全运营团队更有效地应对威胁。
+如果组织[正在使用Microsoft 365 Defender，](microsoft-365-defender.md)则每当检测到恶意或可疑活动或Microsoft 365 Defender时，安全运营团队都会在安全门户中收到警报。 鉴于可能进入的威胁流看起来从未结束，安全团队经常面临解决大量警报的挑战。 幸运的是，Microsoft 365 Defender包括自动调查和响应 (AIR) 功能，这些功能可帮助安全运营团队更有效地应对威胁。
 
 本文概述了 AIR，并包含指向下一步步骤和其他资源的链接。
 
@@ -53,7 +53,7 @@ ms.locfileid: "60199473"
 在Microsoft 365 Defender中，具有自我修复功能的自动调查和响应适用于你的设备、电子邮件&内容和标识。
  
 > [!TIP]
-> 本文介绍了自动调查和响应的工作原理。 若要配置这些功能，请参阅在 Microsoft 365 Defender[中配置自动调查和响应Microsoft 365 Defender。](m365d-configure-auto-investigation-response.md)
+> 本文介绍了自动调查和响应的工作原理。 若要配置这些功能，请参阅在 Microsoft 365 Defender [中配置自动调查和响应Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)。
 
 ## <a name="your-own-virtual-analyst"></a>你自己的虚拟分析师
 
@@ -81,13 +81,13 @@ Imagine级别 1 或第 2 层安全运营团队中具有虚拟分析师。 虚拟
 - 阻止 URL 
 - 其他操作
 
-有关详细信息，请参阅修正[操作Microsoft 365 Defender。](m365d-remediation-actions.md)
+有关详细信息，请参阅修正[操作Microsoft 365 Defender](m365d-remediation-actions.md)。
 
 根据 [组织的自动](m365d-configure-auto-investigation-response.md) 调查和响应功能配置方式，自动执行修正操作，或仅在安全运营团队批准后执行修正操作。 所有操作（无论是挂起操作还是已完成操作）都列在操作 [中心中](m365d-action-center.md)。
 
 运行调查时，出现的所有其他相关警报将被添加到调查中，直到调查完成。 如果在其他位置看到受影响的实体，则自动调查会扩展其范围以包含该实体，并且重复调查流程。 
 
-在 Microsoft 365 Defender 中，每个自动调查将 Microsoft Defender for Identity、Microsoft Defender for Endpoint 和 Microsoft Defender for Office 365 之间的信号关联起来，如下表所示： 
+在 Microsoft 365 Defender 中，每个自动调查将 Microsoft Defender for Identity、Microsoft Defender for Endpoint 和 Microsoft Defender for Office 365 信号关联起来，如下表所示： 
 
 |实体 |威胁防护服务  |
 |:---------|:---------|
@@ -100,7 +100,7 @@ Imagine级别 1 或第 2 层安全运营团队中具有虚拟分析师。 虚拟
 
 ## <a name="viewing-a-list-of-investigations"></a>查看调查列表
 
-若要查看调查，请转到" **事件"** 页面。 选择事件，然后选择" **调查"** 选项卡。若要了解详细信息， [请参阅详细信息和自动调查的结果](m365d-autoir-results.md)。
+若要查看调查，请转到" **事件"** 页面。 选择事件，然后选择" **调查"** 选项卡。若要了解详细信息， [请参阅自动调查的详细信息和结果](m365d-autoir-results.md)。
 
 ## <a name="training-for-security-analysts"></a>针对安全分析师的培训
 
@@ -108,7 +108,7 @@ Imagine级别 1 或第 2 层安全运营团队中具有虚拟分析师。 虚拟
 
 |培训：|使用 Microsoft 365 Defender 自动 self-healing|
 |---|---|
-|![使用培训图标自动Microsoft 365 Defender自我修复。](../../media/m365d-autoir/m365-defender-auto-self-healing.svg)| Microsoft 365 Defender AI 自动修复事件，帮助安全运营团队更有效地应对威胁。 <p> 11 分钟 - 5 个单位 |
+|![使用培训图标自动Microsoft 365 Defender自我修复。](../../media/m365d-autoir/m365-defender-auto-self-healing.svg)| Microsoft 365 Defender AI 自动修复事件，帮助你的安全运营团队更有效地应对威胁。 <p> 11 分钟 - 5 个单位 |
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/defender-self-healing/)

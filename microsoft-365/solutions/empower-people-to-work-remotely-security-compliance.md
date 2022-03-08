@@ -2,8 +2,8 @@
 title: 步骤 3：为混合工作者部署安全性和合规性
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 安全和合规性服务保护混合工作者的应用、数据和设备。
-ms.openlocfilehash: 7c898a1ef588ce8eee553490eaa8f5dd452df9e0
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 5ae369ffa41444e0cd2d3c6d28be470ede170b01
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886386"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314051"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>步骤 3：为混合工作者部署安全性和合规性
 

@@ -1,6 +1,6 @@
 ---
 title: 通过 Microsoft 安全分数评估安全状况
-description: 介绍如何采取措施来提高 Microsoft 安全分数在 Microsoft 365 Defender 门户中。
+description: 介绍如何在 Microsoft 安全中心门户中采取措施Microsoft 365 Defender分数。
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， microsoft 安全分数， Microsoft 365 Defender门户， 改进操作
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,23 +22,23 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: ee2aadd844eebf6da436c1d6d02b6244f093bfd6
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: d9f1b4619670c1998dbac584bf7ef4e1d1f940b6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171979"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314209"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状态
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高表示采取的改进措施越多。 可以在网站门户 的 Microsoft 365 Defender https://security.microsoft.com/securescore [找到它](microsoft-365-defender.md)。
+Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高表示采取的改进措施越多。 可以在网站门户的 https://security.microsoft.com/securescore Microsoft 365 Defender [找到它](microsoft-365-defender.md)。
 
 为了帮助您更快找到所需的信息，Microsoft 改进操作分为多个组：
 
 - 标识 (Azure Active Directory角色&帐户) 
-- Device (Microsoft Defender for Endpoint，称为 ["适用于](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) 设备的 Microsoft 安全分数) 
+- Device (Microsoft Defender for Endpoint，称为 ["适用于设备的 Microsoft](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) 安全分数) 
 - 应用 (和云应用，包括 Office 365 和 Microsoft Defender for Cloud Apps) 
 
 >[!NOTE]
@@ -50,14 +50,14 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 ## <a name="check-your-current-score"></a>检查当前分数
 
-若要检查当前分数，请转到 Microsoft 安全分数概述页面，并查找显示你的安全 **分数的磁贴**。 你的分数将显示为百分比，以及你从可能的总分数中实现的点数。
+若要检查当前分数，请转到 Microsoft 安全分数概述页面并查找显示安全分数 **的磁贴**。 你的分数将显示为百分比，以及你从可能的总分数中实现的点数。
 
 此外，如果你选择分数旁边的 **"包含** "按钮，你可以选择分数的不同视图。 这些不同的分数视图将在分数磁贴和点细分图表的图形中显示。
 
 下面是可添加到总体分数视图的分数，以便更全面了解总体分数：
 
-- **计划分数**：在计划操作完成时显示计划分数
-- **当前许可证得分**：显示可以使用当前 Microsoft 许可证实现的分数
+- **计划分数**：完成计划操作后显示计划分数
+- **当前许可证得分**：显示可以使用当前 Microsoft 许可证获取的分数
 - **可得分**：显示可通过 Microsoft 许可证和当前风险接受实现的分数
 
 如果已包含所有可能的得分视图，此视图的外观将如下所示：
@@ -97,7 +97,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>威胁& 漏洞管理改进操作
 
-对于"设备"类别中的改进操作，你无法选择状态。 相反，你将被定向到危险和漏洞管理[安全建议](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)[Microsoft Defender 安全中心采取操作](/windows/security/threat-protection/microsoft-defender-atp/use)。 你选择的例外以及你编写的理由将特定于该门户。 它不会在 Microsoft 安全分数门户中显示。
+对于"设备"类别中的改进操作，你无法选择状态。 相反，你将被定向到危险和漏洞管理[安全建议](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)Microsoft 365 Defender采取操作。 你选择的例外以及你编写的理由将特定于该门户。 它不会在 Microsoft 安全分数门户中显示。
 
 #### <a name="completed-improvement-actions"></a>已完成的改进操作
 
@@ -117,7 +117,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 
-如果有任何问题，请通过发布在安全、隐私和合规性社区中& [告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
+如果有任何问题，请通过发布到安全、隐私和合规性社区 [&告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
 
 ## <a name="related-resources"></a>相关资源
 
