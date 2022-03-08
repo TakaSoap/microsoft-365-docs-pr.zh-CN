@@ -11,14 +11,15 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: 使用 Microsoft SharePoint Syntex 在文档理解模型中创建提取器时，请使用术语库分类。
-ms.openlocfilehash: dd064a1e93692f79b5cfc5417b0b5b09df09c9fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 909f26026ddf26163a12e1d14c1790f4af93a160
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197481"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328801"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建提取程序时利用术语库分类
 
@@ -36,7 +37,7 @@ ms.locfileid: "60197481"
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>在提取器使用托管元数据列
 
-在 SharePoint 管理中心的托管元数据服务术语库中配置术语集。 在下面的示例中，“*合同服务*”[术语集](/sharepoint/managed-metadata#term-set)被配置为包含多个术语，包括“*创意*”。  它的详细信息显示该术语有三个同义词（*Design*、*Graphics* 和 *Topography*），并且同义词应翻译为 *创意*。 
+术语集在 Managed Metadata Services (MMS) 管理中心的术语SharePoint<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">配置</a>。 在下面的示例中，“*合同服务*”[术语集](/sharepoint/managed-metadata#term-set)被配置为包含多个术语，包括“*创意*”。  它的详细信息显示该术语有三个同义词（*Design*、*Graphics* 和 *Topography*），并且同义词应翻译为 *创意*。 
 
    ![术语集。](../media/content-understanding/term-store.png)</br>
 

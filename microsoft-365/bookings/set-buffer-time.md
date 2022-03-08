@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: 在 Microsoft Bookings 中的约会之前或之后设置缓冲区时间，以留出时间清理或重置设备。
-ms.openlocfilehash: c3d07be3c858eca5f6e9a672581b386625f5dd80
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a33159b0b5f168bbb61c88bc9b4181e05c8abbb1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164040"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329315"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>在 Microsoft Bookings 中设置缓冲区时间
 
@@ -26,17 +26,18 @@ ms.locfileid: "60164040"
 
 缓冲区时间默认值在 Bookings 的 **"服务详细信息"** 页面上设置。 与此页面上设置的所有服务默认值一样，你可以编辑这些默认值，以用于特定预订以满足特定的客户需求。
 
-可以在"服务详细信息"页面上的"默认持续时间 **选取器** "正下方找到缓冲区 **时间** 设置。 必须先通过选择缓冲区时间切换来启用缓冲区时间设置，然后才能为给定服务设置它。 这将导致 **显示"之前"** 和"之后"下拉列表，它们用于选取每个预订之前和之后的默认保留时间，如下所示： 
+可以在"服务详细信息"页面上的"默认 **持续时间选取器** "正下方找到缓冲区 **时间** 设置。 必须先通过选择缓冲区时间切换来启用缓冲区时间设置，然后才能为给定服务设置它。 这将导致 **显示"之前"** 和"之后"下拉列表，它们用于选取每个预订之前和之后的默认保留时间，如下所示：
 
    ![启用缓冲区时间后 Bookings 的图像。](../media/bookings-buffertime.png)
 
-## <a name="buffer-time-and-appointment-timing"></a>缓冲区时间和约会计时
+<!--## Buffer time and appointment timing
 
-为了避免客户期望何时与你们会面，Bookings 在日历上以及向相关员工发送电子邮件确认和提醒中显示缓冲区时间和实际约会时间 (客户期望与) 会面的时间。 例如，下面是你在 Bookings 中看到的客户约会包含 15 分钟预约会缓冲区时间的内容。
+To avoid confusion about when customers expect to meet with you, Bookings shows buffer time and actual appointment time (the time your customers expect to meet with you) on your calendar, and in email confirmations and reminders to relevant staff. For example, below is what you’d see in Bookings for an appointment with a customer that includes 15 minutes of pre-appointment buffer time.
 
-请注意，事件本身 (位于图像左侧，) 显示缓冲区时间较浅的底纹，而实际客户约会的底纹较深。 在选择事件) 时将打开的约会调用 (具体指出约会与 Katie Jordan 的上午 9：00 到上午 10：00 之间，包括约会前的 15 分钟缓冲区时间以及约会后 0 分钟。 员工确认和提醒同样引用特定缓冲区和约会时间，而客户只会收到引用上午 9：00 到上午 10：00 约会时间的确认和提醒。
+Note that the event itself (on the left in the image below) shows lighter shading for the buffer time and darker shading for the actual customer appointment. The appointment call-out (which is opened when you select the event) specifically states that the appointment is from 9:00AM to 10:00AM with Katie Jordan and includes 15 minutes of buffer time before the appointment and 0 minutes after the appointment. Confirmations and reminders to staff similarly reference specific buffer and appointment time while the customer would only get confirmations and reminders that reference a 9:00AM to 10:00AM appointment time.
 
-   ![显示缓冲区时间后 Bookings 约会调用的图像。](../media/bookings-buffertime-callout.png)
+   ![Image of Bookings appointment call-out with buffer time showing.](../media/bookings-buffertime-callout.png)
+-->
 
 ## <a name="buffer-time-and-availability"></a>缓冲区时间和可用性
 

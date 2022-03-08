@@ -13,17 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 087e7ff666ddcad02b5ead5ab62b483e60541a90
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+ms.openlocfilehash: 5ff454904678bc589328c6a9b454b7823ff36090
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62859273"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318769"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>在 macOS 或 Linux 上运行客户端分析器
 
@@ -72,7 +70,7 @@ ms.locfileid: "62859273"
 >
 > - 如果在无法使用 Python 3 或提取 lxml 组件计算机上运行，可以下载没有任何要求的基于二进制版本的分析器： [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)
 >
-> - 如果设备位于代理后面，则只需将代理服务器作为环境变量传递到 mde_support_tool.sh 脚本。 例如：`https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
+> - 如果你的设备位于代理后面，则只需将代理服务器作为环境变量传递到 mde_support_tool.sh 脚本。 例如：`https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 示例：
 

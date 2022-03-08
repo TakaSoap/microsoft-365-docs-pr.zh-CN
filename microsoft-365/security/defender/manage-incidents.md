@@ -8,25 +8,25 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365-initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: b9cc3e0ab911515d010b1a6e7feaac5cff8aed51
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 3418eac69930819fdb0e3fd8d1bae80312f89a9f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903935"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326407"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>管理事件Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "62903935"
 
 事件管理对于确保命名、分配和标记事件以优化事件工作流中的时间并更快包含和解决威胁至关重要。
 
-可以在快速启动 Microsoft 365 Defender 门户&事件>**事件** (security.microsoft.com [)](https://security.microsoft.com)。 下面是一个示例。
+可以在快速启动 Microsoft 365 Defender 门户&事件>事件 (security.microsoft.com[) ](https://security.microsoft.com)。 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -48,7 +48,7 @@ ms.locfileid: "62903935"
 - [添加事件标记](#add-incident-tags)
 - [将事件分配给用户帐户](#assign-an-incident)
 - [解决这些事件](#resolve-an-incident)
-- [设置其分类并确定](#set-the-classification-and-determination)
+- [指定其分类](#specify-the-classification)
 - [添加注释](#add-comments)
 
 可以从事件的“**管理事件**”窗格管理事件。 下面是一个示例。
@@ -95,11 +95,16 @@ Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影�
 
 未解决的事件显示为"活动 **"**。
 
-## <a name="set-the-classification-and-determination"></a>设置分类和确定
+## <a name="specify-the-classification"></a>指定分类
 
-事件分类是真正的警报还是假警报，从"分类"字段 **进行** 配置。 
+在 **"分类** "字段中，指定事件是否：
 
-如果这是真正的警报，则还应使用"确定"字段指定 **威胁的类型。** 指定威胁类型可帮助安全团队查看威胁模式，并采取措施以保护组织免受威胁。 
+- **未 (** 默认值) 。
+- **真正的正** ，具有一种威胁类型。 对准确指示真实威胁的事件使用此分类。 指定威胁类型可帮助安全团队查看威胁模式，并采取措施以保护组织免受威胁。
+- **具有一类活动的信息** 性预期活动。 使用此类别中的选项对安全测试事件、红色团队活动以及来自受信任应用和用户的预期异常行为进行分类。
+- **对于您** 确定的事件类型，误报可以忽略，因为它们在技术上不准确或令人误解。
+
+对事件进行分类并指定其状态和类型有助于调整Microsoft 365 Defender，以便随着时间的推移更好地确定检测。
 
 ## <a name="add-comments"></a>添加备注
 

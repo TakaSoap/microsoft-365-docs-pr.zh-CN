@@ -2,8 +2,8 @@
 title: Microsoft 合规性管理器入门
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 设置 Microsoft 合规性管理器用户权限和角色，并配置操作自动化测试。 管理用户历史记录并筛选仪表板视图。
-ms.openlocfilehash: fc7e82880cec01f7d3fd0051f75600948e51cdcc
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 070c8fea309ea7c01b82be068acc40a7dcb830ff
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444445"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330477"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 
@@ -50,7 +50,7 @@ ms.locfileid: "62444445"
 
 ### <a name="where-to-set-permissions"></a>在何处设置权限
 
-拥有组织的全局管理员角色的人可以设置合规性管理器的用户权限。 权限可以在用户和Microsoft 365 合规中心中Azure Active Directory (Azure AD) 。
+拥有组织的全局管理员角色的人可以设置合规性管理器的用户权限。 权限可以在用户和Microsoft 365 合规中心中设置Azure Active Directory (Azure AD) 。
 
 > [!NOTE]
 > 美国政府高级Community (GCC) 和国防部 (DoD) 环境的客户只能在 Azure AD 中为合规性管理器设置用户权限和Azure AD。 请参阅下文Azure AD说明和角色类型定义。
@@ -81,11 +81,11 @@ ms.locfileid: "62444445"
 
 ### <a name="role-types"></a>角色类型
 
-下表显示了合规性管理器中每个角色允许的功能。 该表还显示每个角色[Azure AD](/azure/active-directory/roles/permissions-reference)映射到合规性管理器角色。 用户至少需要合规性管理器读者角色或全局Azure AD角色，以访问合规性管理器。
+下表显示了合规性管理器中每个角色允许的功能。 该表还显示每个角色[Azure AD](/azure/active-directory/roles/permissions-reference)映射到合规性管理器角色。 用户至少需要合规性管理器读者角色Azure AD全局读者角色，以访问合规性管理器。
 
 | 用户可以： | 合规性管理器角色 | Azure AD角色 | 
 | :------------- | :-------------: | :------------: |
-| **读取但不编辑数据**| 合规性管理器读者  | Azure AD全局读取者、安全读者 |
+| **读取但不编辑数据**| 合规性管理器读者  | Azure AD全局读者、安全读者 |
 | **编辑数据**| 合规性管理器贡献 | 合规管理员 |
 | **编辑测试结果**| 合规性管理器评估方 | 合规管理员 |
 | **管理评估、模板和租户数据**| 合规性管理器管理 | 合规性管理员、合规性数据管理员、安全管理员  |
@@ -112,7 +112,7 @@ ms.locfileid: "62444445"
 
 通过访问下面的"评估"页面 [部分了解有关评估入门](#assessments-page) 的详细信息。
 
-## <a name="settings-for-automated-testing-and-user-history"></a>设置自动化测试和用户历史记录
+## <a name="settings-for-automated-testing-and-user-history"></a>设置自动测试和用户历史记录
 
 合规性管理器设置Microsoft 365 合规中心启用和禁用改进操作自动测试。 这些设置还允许您管理与改进操作关联的用户数据，包括将改进操作重新分配给其他用户的能力。  只有具有全局管理员或合规性管理器管理员角色的人才能访问合规性管理器设置。
 
@@ -121,13 +121,17 @@ ms.locfileid: "62444445"
 
 ### <a name="set-up-automated-testing"></a>设置自动测试
 
-合规性管理器中的一些改进操作也受 [Microsoft 安全分数监视](../security/defender/microsoft-secure-score.md)。 可以设置对共同监视的操作的自动测试，这意味着在安全分数中对操作进行测试和更新时，这些结果会与合规性管理器中的相同操作同步，并计入合规性分数。
+合规性管理器检测到来自Microsoft 365订阅的其他合规性解决方案的信号，包括信息管理、信息保护、数据丢失防护、通信合规性和内部风险管理。 在每个改进操作的详细信息页面中，"测试"选项卡上的"测试逻辑"字段将显示其他解决方案中所需的内容，以便操作通过合规性分数并获得分数。
 
-默认情况下，对使用合规性管理器的组织启用自动测试。 首次部署Microsoft 365或Office 365时，安全分数需要大约 7 天的时间，以完全收集数据，并纳入合规性分数中。  启用自动测试后，不会更新该操作的测试日期，但其测试状态将更新。 创建新评估后，分数将自动包含 Microsoft 控制分数和安全分数集成。
+合规性管理器还可以检测来自补充改进操作的信号，这些改进操作也受 [Microsoft 安全分数监视](../security/defender/microsoft-secure-score.md)。 借助这些信号，合规性管理器可自动测试某些改进操作，从而最大限度地提高合规性活动的效率。 成功测试和实现改进操作后，你将收到完整分数，这可得到总合规性分数的积分。
+
+在每个改进操作的详细信息页中
+
+默认情况下，对使用合规性管理器的组织启用自动测试。 首次部署Microsoft 365或Office 365时，需要大约 7 天来完全收集数据，并纳入合规性分数中。 启用自动测试后，不会更新该操作的测试日期，但其测试状态将更新。 创建新评估后，分数将自动包含 Microsoft 控制分数和安全分数集成。
+
+#### <a name="manage-automated-testing-settings"></a>管理自动测试设置
 
 组织的全局管理员可以随时更改自动测试的设置。 您可以关闭常见改进操作自动化测试，或为单个操作启用它。 按照下面的说明更改自动测试设置。
-
-#### <a name="to-manage-your-automated-testing-settings"></a>若要管理自动测试设置：
 
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**设置**</a>中选择"Microsoft 365 合规中心"。
 
@@ -142,6 +146,10 @@ ms.locfileid: "62444445"
 6. 选择 **"保存** "以保存设置。 You'll receive a confirmation message at the top of your screen that your selection was saved. 如果收到失败通知，请重试。
 
 **注意：** 只有全局管理员可以打开或关闭所有操作自动更新。 合规性管理器管理员可以为单个操作（而不是全局性的所有操作）启用自动更新。
+
+**了解详细信息**
+- [详细了解持续监视如何增加合规性分数](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls)。
+- [详细了解如何为改进操作指定测试源](compliance-manager-improvement-actions.md#update-testing-source)。
 
 ### <a name="manage-user-history"></a>管理用户历史记录
 
@@ -163,7 +171,7 @@ ms.locfileid: "62444445"
 
 #### <a name="export-a-report-of-user-history-data"></a>导出用户历史记录数据报告
 
-您可以导出一Excel文件，其中包含当前分配给用户的改进操作列表。  该报告还列出了该用户上载的任何证据文件。 此信息可帮助您重新分配开放改进操作。
+您可以导出一Excel一个包含当前分配给用户的改进操作列表的文件。  该报告还列出了该用户上载的任何证据文件。 此信息可帮助您重新分配开放改进操作。
 
 该报告反映自创建日期起改进操作的状态。 这不是以前对状态或工作分配的所有更改的历史报告， (从改进操作页面[导出) 。](compliance-manager-improvement-actions.md#export-a-report)
 
@@ -238,7 +246,7 @@ ms.locfileid: "62444445"
 
 合规性分数特别推荐在最上面。 它根据完成解决关键数据保护标准和法规的改进操作可达到的分数来显示百分比。 Microsoft 操作 [中的分数](compliance-manager-assessments.md#microsoft-actions-tab)（管理我的 Microsoft）也计入合规性分数中。
 
-第一次访问合规性管理器时，初始分数基于Microsoft 365[基线](compliance-manager-assessments.md#data-protection-baseline-default-assessment)。 此基线评估可供所有组织使用，是一组包含常见行业法规和标准的控制措施。 合规性管理器可扫描Microsoft 365解决方案，并基于当前隐私和安全设置进行初始评估。 添加与组织相关的评估时，分数将变得更加有意义。
+首次访问合规性管理器时，初始分数基于Microsoft 365[基线](compliance-manager-assessments.md#data-protection-baseline-default-assessment)。 此基线评估可供所有组织使用，是一组包含常见行业法规和标准的控制措施。 合规性管理器可扫描Microsoft 365解决方案，并基于当前隐私和安全设置进行初始评估。 添加与组织相关的评估时，分数将变得更加有意义。
 
 **了解更多信息**[：了解如何计算合规性分数](compliance-score-calculation.md)。
 
@@ -279,16 +287,17 @@ ms.locfileid: "62444445"
 
 ### <a name="view-your-improvement-actions"></a>查看改进操作
 
-合规性管理器仪表板显示关键 **改进操作。** 若要查看所有改进操作，请选择仪表板上的"改进操作"选项卡，将您带到您的改进操作页面。 还可以在仪表板上的关键改进操作列表下方选择"查看所有改进操作"，以进入改进操作页面。
+合规性管理器仪表板显示关键改进操作。 若要查看所有改进操作，请选择仪表板上的"改进操作"选项卡，将您带到您的改进操作页面。 还可以在仪表板上的关键 **改进** 操作列表下方选择"查看所有改进操作"，以进入改进操作页面。
 
 "改进操作"页显示组织管理的所有改进操作。 可在每项评估中查看由 Microsoft 管理的操作， ([Microsoft 行动](compliance-manager-assessments.md#microsoft-actions-tab)) 。
 
-如果您的改进操作页上有一个很长的操作列表，则筛选视图可能会很有帮助。 选择 **操作** 列表右上角的"筛选"。 当出现 **"筛选器** "飞出窗格时，根据法规和标准、解决方案和组选择条件。 您还可以通过在右上角选择"组"来自定义视图。 从下拉菜单中，选择以按组、解决方案、类别、操作类型或状态进行查看。
+如果您的改进操作页上有一个很长的操作列表，则筛选视图可能会很有帮助。 选择 **操作** 列表右上角的"筛选"。 当" **筛选器** "飞出窗格出现时，从可用选项中选择条件。 您还可以通过在右上角选择"组"来自定义视图。 从下拉菜单中，选择以按组、解决方案、类别、操作类型或状态进行查看。
 
 此页面的默认视图不会显示测试状态为"已通过"的改进 **操作**。 若要查看已通过测试的操作，请选中"筛选器 **"** 飞出窗格中的"通过"框。 仅测试状态为 **"已通过"的操作** 计入分数。 某些操作可能会显示挂起 **的更新标签。** 详细了解改进 [操作更新](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)。
 
 "改进操作"页显示每个改进操作的以下数据点：
 
+- **产品**：正在评估的产品。
 - **已实现** 点数：完成操作在可用总数中实现的点数
 - **法规**：与操作相关的法规或标准
 - **组**：将操作分配到的组
@@ -296,16 +305,19 @@ ms.locfileid: "62444445"
 - **评估**：包含行动的评估
 - **类别**：相关的数据保护类别 (，例如，保护信息、管理设备等) 
 - **测试状态**：
-    - **无** - 未记录状态更新
-    - **未评估** - 测试尚未开始
-    - **已通过** - 实现已成功测试
-    - **风险较低失败** - 测试失败，风险低
-    - **中风险失败** - 测试失败，中等风险
-    - **高风险失败** - 测试失败，高风险
-    - **超出范围** - 操作不在评估范围内，不会影响分数
-    - **要检测** - 对于手动测试，指示已实现但未测试操作;对于自动测试，指示操作正在等待自动化结果
-    - **无法检测到** - 无法确定自动状态
-    - **部分测试** – 自动评分，表示部分分数
+  - **无** - 未记录状态更新
+  - **未评估** - 测试尚未开始
+  - **已通过** - 实现已成功测试
+  - **风险较低失败** - 测试失败，风险低
+  - **中风险失败** - 测试失败，中等风险
+  - **高风险失败** - 测试失败，高风险
+  - **超出范围** - 操作不在评估范围内，不会影响分数
+  - **要检测** - 对于手动测试，指示已实现但未测试操作;对于自动测试，指示操作正在等待自动化结果
+  - **无法检测到** - 无法确定自动状态
+  - **部分测试** – 自动评分，表示部分分数
+- **操作类型**：指示改进操作是技术操作，即它可以在解决方案或产品内实施，还是非技术操作，这将在技术解决方案之外实现
+- **分配到：** 已分配此操作的人（如果适用）
+- **测试** 源：指示操作的测试源是手动、自动还是从父项继承
 
 **了解更多信息**[：了解如何分配和执行改进操作](compliance-manager-improvement-actions.md)。
 
@@ -320,7 +332,7 @@ ms.locfileid: "62444445"
 筛选解决方案视图：
 
 1. 选择 **评估** 列表左上角的"筛选"。
-2. 在" **筛选器** "飞出窗格中，在所需条件旁边放置 (标准与法规、解决方案、操作类型、合规性管理器组、类别) 。
+2. 在 **"筛选器** "飞出窗格中，在所需条件旁边放置一个检查 (法规、解决方案、操作类型、组、类别) 。
 3. 选择" **应用"** 按钮。 筛选器窗格将关闭，并且你将看到已筛选视图。
 
 您还可以通过从评估列表上方的"组"下拉菜单中选择分组类型，来修改视图以查看按组、产品或法规的评估。
@@ -333,7 +345,7 @@ ms.locfileid: "62444445"
 
 1. 在预期解决方案行的"剩余操作" **列下，** 选择超链接编号。 你将看到改进操作屏幕的筛选视图，其中显示了该解决方案的未经测试的改进操作。
 
-2. 在预期解决方案行的"打开解决方案" **列下，** 选择"打开 **"**。 你将在安全与合规中心的 Microsoft 365 和Office 365查看解决方案或位置，你可以在这里采取建议的操作。
+2. 在预期解决方案行的"打开解决方案" **列下，** 选择"打开 **"**。 你将在安全与合规中心Microsoft 365解决方案Office 365位置，你可以在这里采取建议的操作。
 
 ## <a name="assessments-page"></a>评估页面
 
@@ -370,7 +382,7 @@ ms.locfileid: "62444445"
 
 默认情况下，你将在评估页面上看到数据保护[](compliance-manager-assessments.md#data-protection-baseline-default-assessment)基线评估。 合规性管理器还提供了多个用于生成 [评估](compliance-manager-templates-list.md) 的预建模板。
 
-## <a name="assessment-templates-page"></a>评估模板页面
+## <a name="assessment-templates-page"></a>评估模板页
 
 模板是用于在合规性管理器中创建评估的框架， 评估模板页面将显示模板和关键详细信息的列表。 该列表包括合规性管理器提供的模板，以及组织已修改或创建的任何模板。 你可以应用筛选器以根据认证、产品范围、国家/地区、行业和创建者来查找模板。
 

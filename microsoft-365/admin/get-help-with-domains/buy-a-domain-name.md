@@ -2,8 +2,8 @@
 title: 购买域名
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 了解如何在 Microsoft 365 中购买域名。
-ms.openlocfilehash: 77270f7ba045d58ae29092437d3356371a40dc38
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 8b9c4cea91caf91b5797515314342a7967af96d1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805852"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316977"
 ---
 # <a name="buy-a-domain-name"></a>购买域名
 
@@ -99,10 +99,10 @@ ms.locfileid: "62805852"
 > [!CAUTION]
 > 某些域注册机构或 DNS 托管提供商不允许创建所有 DNS 记录Microsoft 365。 下面列出的托管提供商支持所有所需的记录。 如果您正在考虑使用其他托管提供商，[Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 
   
-在域注册机构 (注册域) ，以管理员Microsoft 365登录。然后，设置你的域，以便你可以将域与电子邮件地址和其他服务一同使用。
+在域注册 (注册机构注册) ，以管理员Microsoft 365登录。然后，设置你的域，以便你可以将域与电子邮件地址和其他服务一同使用。
   
 > [!NOTE]
-> 本文SharePoint在线公共网站的信息仅适用于您的组织在 2015 年 3 Microsoft 365 9 之前购买的网站。 
+> 本文SharePoint联机公共网站的信息仅适用于您的组织在 2015 年 3 Microsoft 365 9 之前购买的网站。 
 
 ### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>支持所有 DNS 记录的域注册机构Microsoft 365
 
@@ -118,6 +118,6 @@ ms.locfileid: "62805852"
 
 ## <a name="related-content"></a>相关内容
 
-[在文章 Microsoft 365](../setup/add-domain.md) (添加) \
+[在本文Microsoft 365 (](../setup/add-domain.md)添加) \
 [域常见问题解答](../setup/domains-faq.yml)（文章）\
-[更新 DNS 记录，使您的网站](../dns/update-dns-records-to-retain-current-hosting-provider.md) 与当前托管提供商 (文章) 
+[更新 DNS 记录，以使用当前](../dns/update-dns-records-to-retain-current-hosting-provider.md) 托管提供商 (网站) 

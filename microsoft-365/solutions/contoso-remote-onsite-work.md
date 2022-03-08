@@ -1,9 +1,9 @@
 ---
 title: Contoso 的 COVID-19 响应和支持混合工作
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso Corporation 如何响应 COVID-19 病毒，并针对混合工作设计其软件安装和更新基础结构。
-ms.openlocfilehash: 9ed3857c97bd82bd03a6a192bec5666f22e0589a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8b3829b7d3361c3a29ee495dd5a335a28a08c0b4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207483"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325721"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Contoso 的 COVID-19 响应和支持混合工作
 
@@ -31,13 +31,13 @@ Contoso 始终支持远程工作者，这些工作者通过巴黎总部的中央
 
 Contoso 在巴黎总部办公室拥有远程访问 VPN 服务器，以支持 25% 的已远程工作人员，但迅速移动以扩展其远程访问容量以支持 90% 的员工。 Contoso 在每个附属办事处部署了远程访问 VPN 服务器，以便远程工作人员使用区域关闭入口点来访问 Contoso Intranet。
 
-Contoso 还更新了安装在笔记本电脑、平板电脑和智能手机上用于拆分隧道的 VPN 客户端的配置，以便 Office 365 优化终结点集的流量绕过 VPN 连接并直接通过 Internet 发送。 有关详细信息，请参阅S [optimize Office 365 connectivity for remote users using VPN split tunneling](../enterprise/microsoft-365-vpn-split-tunnel.md)。
+Contoso 还更新了安装在笔记本电脑、平板电脑和智能手机上的 VPN 客户端的配置，以便拆分隧道，以便 Office 365 优化终结点集的流量绕过 VPN 连接并直接通过 Internet 发送。 有关详细信息，请参阅使用 [VPN 拆分Office 365为远程用户优化连接](../enterprise/microsoft-365-vpn-split-tunnel.md)。
 
 下面是在巴黎总部和每个附属办事处安装了 VPN 设备的配置结果。 
 
 ![Contoso 的 VPN 基础结构。](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
 
-安装了 VPN 客户端的远程工作者使用 DNS 查找区域最近的办公室并连接到安装在那里的 VPN 设备。 通过拆分隧道，Microsoft 365 Optimize 终结点的流量将直接发送到区域最近的Microsoft 365位置。 所有其他流量通过 VPN 连接发送到 VPN 设备。
+安装了 VPN 客户端的远程工作者使用 DNS 查找区域最近的办公室并连接到安装在那里的 VPN 设备。 使用拆分隧道，Microsoft 365 Optimize 终结点的流量将直接发送到区域最近的Microsoft 365网络位置。 所有其他流量通过 VPN 连接发送到 VPN 设备。
 
 ## <a name="contosos-support-for-hybrid-work"></a>Contoso 对混合工作的支持
 
@@ -59,7 +59,7 @@ Microsoft 365标识、安全性和合规性功能专为零信任设计，无论�
 
 ### <a name="roaming"></a>漫游
 
-漫游设备可以离开 Contoso Intranet，并包括颁发给许多办公室工作人员以及所有远程工作者以及其他组织拥有的设备（如安装了 Contoso VPN 客户端的智能手机和平板电脑）的笔记本电脑。 
+漫游设备可以离开 Contoso Intranet，并包括颁发给许多办公室工作人员、所有远程工作人员以及其他组织拥有的设备（如安装了 Contoso VPN 客户端的智能手机和平板电脑）的笔记本电脑。 
 
 由于这些设备可以在任何给定时间连接到 Internet，因此它们使用 Intune 或其他基于云的服务来安装和更新 Windows 10、Microsoft 365 企业应用版 和 Edge。 它们不使用现有的本地 Configuration Manager 分发点。
 
@@ -81,9 +81,9 @@ Microsoft 365标识、安全性和合规性功能专为零信任设计，无论�
 
 ## <a name="new-onboarding-process"></a>新的载入过程
 
-对于颁发给新工作者或数据中心中新服务器的专用本地设备，当工作者登录时，基于 OnPremDevices 组中设备成员身份的 Configuration Manager 客户端从本地 Configuration Manager 分发点下载并安装 Windows 10、Microsoft 365 企业应用版 和 Edge 的最新更新。 完成后，专用本地设备即可供使用，并使用这些分发点进行持续更新。
+对于颁发给新工作者或数据中心中新服务器的新的专用本地设备，当工作者登录时，基于设备在 OnPremDevices 组的成员身份的 Configuration Manager 客户端从本地 Configuration Manager 分发点下载并安装 Windows 10、Microsoft 365 企业应用版 和 Edge 的最新更新。 完成后，专用本地设备即可供使用，并使用这些分发点进行持续更新。
 
-对于颁发给新工作者的新远程设备，当工作者登录时，该设备会基于其 RoamingDevices 组的成员身份联系 Intune 云服务和其他服务，并下载并安装 Windows 10、Microsoft 365 企业应用版 和 Edge 的最新更新。 完成后，远程设备即可使用，并使用已安装的 VPN 客户端访问本地资源，并使用 Microsoft 365 网络进行持续更新。
+对于颁发给新工作者的新远程设备，当工作者登录时，该设备会基于其 RoamingDevices 组的成员身份联系 Intune 云服务和其他服务，并下载并安装 Windows 10、Microsoft 365 企业应用版 和 Edge 的最新更新。 完成后，远程设备即可使用，并使用已安装的 VPN 客户端访问本地资源，并使用 Microsoft 365网络进行持续更新。
 
 ## <a name="next-step"></a>后续步骤
 

@@ -3,8 +3,8 @@ metadata:
   title: Microsoft 合规性管理器常见问题解答
   f1.keywords:
   - NOCSH
-  ms.author: v-jgriffee
-  author: jmgriffee
+  ms.author: chvukosw
+  author: chvukosw
   manager: laurawi
   audience: Admin
   ms.topic: article
@@ -15,12 +15,12 @@ metadata:
   - MOE150
   - MET150
   description: 查找有关 Microsoft 合规性管理器的常见问题解答，帮助组织简化和自动进行风险评估。
-  ms.openlocfilehash: d1abfc3cb951197927b13cf1e15a3481a302cf68
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: 20200c1ea4c8a23045b86ba5f54c1269e0256898
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60167434"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63327009"
 title: 合规性管理器常见问题
 summary: ''
 sections:
@@ -32,10 +32,10 @@ sections:
       现在只有一个解决方案：合规性管理器。 本部分将指导你完成过渡，从下面的基本概述开始。 您可能还发现直接跳转到以下部分之一会很有帮助：
 
 
-      - [你的组织主要使用合规性管理器 (Microsoft 服务信任门户中的经典) 公共预览版。](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
+      - [你的组织主要使用合规性管理器 (Microsoft 服务信任门户中的经典) 或公共预览版本。](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
 
 
-      - [你的组织主要使用合规性分数 (公共) ，位于Microsoft 365 合规中心](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
+      - [贵组织主要使用合规性分数 (公共) 预览版，位于Microsoft 365 合规中心](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
 
 
       - [你的组织是合规性管理器的新用户](#youre-new-to-compliance-manager
@@ -48,7 +48,7 @@ sections:
       Microsoft 合规性管理器作为 Microsoft 服务信任门户内的合规性管理解决方案开始。  随着合规性解决方案的进入Microsoft 365 合规中心，我们针对此位置开发了一种更用户友好设计的新体验。 合规性分数公共预览版于 2019 年 11 Microsoft 365 合规中心发布。 合规性分数与合规性管理器共享相同的后端，允许客户在这两处工作。 自 2019 年 11 以来，我们在生成新功能并回复客户反馈时发布了多个更新。
 
 
-      2020 年 9 月，合规性管理器在 Microsoft 365 合规中心正式可用，这完成了这一演变过程。 合规性管理器是统一的端到端合规性解决方案。 合规性分数仍然是合规性管理器的关键组成部分。
+      合规性管理器在 2020 年 9 月Microsoft 365 合规中心正式可用，完成了这一演变过程。 合规性管理器是统一的端到端合规性解决方案。 合规性分数仍然是合规性管理器的关键组成部分。
 
 
       阅读 [此博客](https://aka.ms/compliancemanager/GAblog) 文章，详细了解通用版本合规性管理器的新增功能。
@@ -57,13 +57,13 @@ sections:
       ### <a name="your-organization-regularly-used-compliance-manager-in-the-service-trust-portal"></a>组织定期在服务信任门户中使用合规性管理器
 
 
-      如果在服务信任门户中使用了合规性管理器，则组织的所有数据现在都位于 位于 的合规性Microsoft 365 合规中心 https://compliance.microsoft.com/compliancemanager 中。 除了更新必须更新之前位置的任何书签外，无需执行任何操作来恢复其新位置的合规性管理器工作。 你已提供所有评估和其他数据。
+      如果在服务信任门户中使用了合规性管理器，则组织的所有数据现在都存在于位于 的合规性Microsoft 365 合规中心中https://compliance.microsoft.com/compliancemanager。 除了更新必须更新之前位置的任何书签外，无需执行任何操作来恢复其新位置的合规性管理器工作。 你已提供所有评估和其他数据。
 
 
-      请注意， (信任门户) 访问合规性管理器预览版，并且它的所有链接都会将你重定向到 Microsoft 365 合规中心。
+      请注意，合规性管理器 (预览) 服务信任门户中不再可访问，并且它的所有链接都会将你重定向到 Microsoft 365 合规中心 中的新位置。
 
 
-      在以前版本的合规性管理器中执行的所有操作（例如 (现在称为"改进操作") 和创建评估）都可以在新的合规性管理器中完成。 我们添加了 150 多个新的评估模板并改进了模板创建过程。 我们将在未来版本中添加更多增强功能。
+      在以前版本的合规性管理器中执行的所有操作（例如 (现在称为"改进操作") 以及创建评估）都可以在新的合规性管理器中完成。 我们添加了 150 多个新的评估模板并改进了模板创建过程。 我们将在未来版本中添加更多增强功能。
 
 
       下面是一些有用的资源：
@@ -102,11 +102,11 @@ sections:
   - question: >
       使用合规性管理器是否有许可要求？
     answer: >
-      是。 合规性管理器的 GA 版本包含新的许可条款。 拥有 Office 365 和 Microsoft 365 许可证、美国政府 Community (GCC) 中等、GCC 高和国防部 (DoD) 的所有组织均有权访问合规性管理器。 但是，组织可用的评估以及管理评估模板的方式取决于您的许可协议。 有关详细信息[，Microsoft 365安全与合规性许可](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)指南。
+      是。 合规性管理器的 GA 版本包含新的许可条款。 所有拥有 Office 365 和 Microsoft 365 许可证、美国政府 Community (GCC) 中等、GCC 高和国防部 (DoD) 客户的组织都有权访问合规性管理器。 但是，组织可用的评估以及管理评估模板的方式取决于您的许可协议。 有关详细信息[Microsoft 365安全与合规性许可](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)指南。
   - question: >
       如果我有高分，这是否意味着我完全兼容？
     answer: >
-      不需要。 合规性分数用于衡量完成建议操作的进度，帮助降低数据保护和监管标准的风险。 它不表示组织遵守特定标准或法规的绝对度量。 不得以任何方式将合规性管理器和合规性分数解释为保证。
+      否。 合规性分数用于衡量完成建议操作的进度，帮助降低数据保护和监管标准相关风险。 它不表示组织遵守特定标准或法规的绝对度量。 不得以任何方式将合规性管理器和合规性分数解释为保证。
   - question: >
       能否将合规性管理器用于非 Microsoft 产品？
     answer: 合规性管理器仅为 Microsoft 云服务提供持续监视和推荐操作，但可以在合规性管理器中为第三方服务添加自定义评估。 这样，你可以将 Microsoft 合规性管理器用作 SaaS 合规性管理工具，以帮助你管理数字资产的所有控制措施。

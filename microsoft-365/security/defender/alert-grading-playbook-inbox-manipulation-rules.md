@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: e1bfb37ebf88ffd67a7fcfaddde46141583fb717
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 89d068feb5051a72e7592b7ea365b2e253e35115
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524089"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325973"
 ---
 # <a name="alert-grading-for-suspicious-inbox-manipulation-rules"></a>可疑收件箱操作规则的警报评分
 
@@ -41,7 +41,7 @@ ms.locfileid: "62524089"
 
 使用此 Playbook 的结果为：
 
-- 你已将与收件箱操作规则关联的警报标识为恶意 (TP) 活动 (恶意) 警报。
+- 你已将与收件箱操作规则关联的警报标识为恶意 (TP) 活动或恶意 (FP) 活动。
 
   如果恶意，则你已删除恶意收件箱操作规则。
 
@@ -83,11 +83,11 @@ ms.locfileid: "62524089"
 
 根据以下规则参数或条件确定规则是否看起来可疑：
 
-- Keywords
+- 关键字
 
    攻击者可能仅将操作规则应用于包含特定词语的电子邮件。 可以在某些属性下找到这些关键字，例如："BodyContainsWords"、"SubjectContainsWords"或"SubjectOrBodyContainsWords"。 
 
-   如果存在按关键字筛选的关键字，请检查关键字是否看起来可疑 (常见方案是筛选与攻击者活动相关的电子邮件，例如"网络钓鱼"、"垃圾邮件"、"不答复"等) 。
+   如果存在按关键字筛选的关键字，请检查关键字是否看起来可疑 (常见方案是筛选与攻击者活动相关的电子邮件，例如"网络钓鱼"、"垃圾邮件"、"不回复"等) 。
 
    如果没有任何筛选器，也可能可疑。
 
@@ -99,7 +99,7 @@ ms.locfileid: "62524089"
 
    某些攻击者将仅删除传入的所有电子邮件以隐藏其活动。 大多数情况下，"删除所有传入电子邮件"而不使用关键字筛选它们的规则是恶意活动的指示器。 
  
-下面是"删除所有传入电子邮件"规则配置示例 (，如 RawEventData.Parameters) 相关事件日志所示。 
+下面是"删除所有传入电子邮件"规则配置示例 (，如相关事件日志的 RawEventData.Parameters) 所示。 
 
 :::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-delete-log.png" alt-text="删除所有传入电子邮件规则配置的示例" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-delete-log.png":::
 
@@ -124,7 +124,7 @@ ms.locfileid: "62524089"
 
 - 警报
 
-   在创建规则之前，检查用户是否收到警报。 这可能表示用户帐户可能受到威胁。 例如，不可能的旅行警报、不频繁的国家/地区、多个登录失败等) 
+   在创建规则之前，检查用户是否收到警报。 这可能表示用户帐户可能受到威胁。 例如，不可能的旅行警报、不频繁的国家/地区、多次登录失败等) 
 
 - 事件
 

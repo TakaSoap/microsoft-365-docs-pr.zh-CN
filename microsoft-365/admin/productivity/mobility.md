@@ -2,8 +2,8 @@
 title: Microsoft Productivity Score - 移动性
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 移动性的详细信息 - 人员体验生产力分数。
-ms.openlocfilehash: 6eaf50b73af0d6c15e270ca00a5c89f477ed9a4f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 13d3fb9be30def2d8308037890a501d624d09b49
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196257"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319779"
 ---
 # <a name="mobility--people-experiences"></a>移动性 – 人员体验
 
-生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。 你的组织的分数反映了人员和技术体验指标，可以与类似你组织的基准进行比较。 移动类别是人员体验度量的一部分。 若要了解更多信息，请查看生产力 [分数概述并](productivity-score.md) 阅读 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
+生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。 你的组织的分数反映了人员和技术体验指标，可以与类似你组织的基准进行比较。 移动类别是人员体验度量的一部分。 若要了解更多信息，请查看生产力 [分数概述并](productivity-score.md) 阅读 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -59,13 +59,13 @@ Microsoft 365可让用户跨应用灵活工作，包括 Microsoft Outlook、Word
 
 :::image type="content" source="../../media/primary-mobility.png" alt-text="显示移动性的主要见解的图表 - 人员体验生产力分数。":::
 
-1. **标头：** 显示您组织中的有权访问任何应用程序Microsoft 365 应用版，并且至少在这些应用程序中的一个平台上处于活动状态的人的百分比。
+1. **标头：** 显示组织中的有权访问任何应用程序Microsoft 365 应用版，并且至少在这些应用程序中的一个平台上处于活动状态的人的百分比。
 2. **正文：** 提供有关在多个平台上使用这些应用程序如何提高效率和满意度的信息。
 3. **可视化 (当前状态) ：** 显示有多少人在桌面、移动和 Web 上跨桌面、移动和 Web 使用至少一个Microsoft 365 (列表，) 如下所示：
-    - **蓝色线条** 部分 (颜色) 表示标题中表示的百分比的水平栏。
+    - **蓝色背景** 色 (部分) 表示标题中表示的百分比的水平栏。
     - **条形** 上的分数突出显示 (数字/分母) 计算页眉中的百分比。
         - 数字：过去 28 天内，在桌面、Web 和移动多个平台上使用 Microsoft Outlook、Word、Excel、PowerPoint、OneNote 和 Microsoft Teams、Yammer 和 Skype 中任意应用程序的人数。
-        - Denominator：至少过去 28 天内Microsoft 365 应用版、Exchange、Yammer、Microsoft Teams 或 Skype 许可的用户数量。
+        - 分母：至少过去 28 天内Microsoft 365 应用版、Exchange、Yammer、Microsoft Teams 或 Skype 许可的人数。
     - 关键 **指标** 的对等基准值也显示为百分比。
 4. **查看移动资源：** 选择此链接可查看帮助内容。
 
@@ -77,7 +77,7 @@ Microsoft 365可让用户跨应用灵活工作，包括 Microsoft Outlook、Word
 
 ### <a name="scoring-framework"></a>记分框架
 
-组织的移动分数在组织 (聚合) 级别衡量，无论用户使用的是 Microsoft 365 应用版 -Outlook、Teams、Word、Excel、PowerPoint、OneNote、Yammer 和 Skype-不同的平台 - 桌面、Web 和移动。
+无论用户使用的是 Microsoft 365 应用版 -Outlook、Teams、Word、Excel、PowerPoint、OneNote) 、Yammer 和 Skype，组织的移动分数在组织 (聚合分数Skype - 跨不同平台 - 桌面、Web 和移动。
 
 各个用户级别未提供分数。
 
@@ -90,19 +90,19 @@ Microsoft 365可让用户跨应用灵活工作，包括 Microsoft Outlook、Word
 :::image type="content" source="../../media/outlook-across-platforms.png" alt-text="显示多少人在多个平台上Outlook的图表。":::
 
 1. **标头：** 显示在多个平台上使用Outlook活动Outlook的百分比。
-2. **正文：** 提供有关在移动设备上使用 Outlook，以帮助从任何位置通过电子邮件保持连接的价值的信息。
+2. **正文：** 提供有关在移动设备上使用 Outlook以帮助从任何位置通过电子邮件保持连接的价值的信息。
 3. **可视化：** 显示活跃在一个或多个Outlook平台的百分比：
       - **多个平台：**
-        - 数字：过去 28 天内Outlook桌面、移动或 Web 上至少两个平台上使用数据的人数。
+        - Numerator：过去 28 天内Outlook桌面、移动或 Web 上至少两个平台上使用数据的人数。
         - 分母：过去 28 天内Outlook至少使用过一次。
       - **仅桌面：**
-        - Numerator：过去 28 天内Outlook桌面平台上使用用户的数量。
+        - Numerator：过去 28 天内仅在桌面Outlook用户数量。
         - 分母：过去 28 天内Outlook至少使用过一次
       - **仅 Web：**
-        - Numerator：过去 28 天内Outlook仅访问 Web 平台。
+        - 数字：过去 28 天内Outlook仅访问 Web 平台。
         - 分母：过去 28 天内Outlook至少使用过一次。
       - **仅移动：**
-        - Numerator：过去 28 天内Outlook仅在移动平台上使用云解决方案。
+        - Numerator：过去 28 天内Outlook仅在移动平台上使用用户数。
         - *Denominator：过去 28 天内Outlook至少使用过一次。
 
 ### <a name="use-of-teams-across-platforms"></a>跨平台Teams库
@@ -110,28 +110,28 @@ Microsoft 365可让用户跨应用灵活工作，包括 Microsoft Outlook、Word
 :::image type="content" source="../../media/teams-across-platforms.png" alt-text="显示有多少人在一个或多个平台上Teams的图表。":::
 
 1. **标头：** 显示活跃在Microsoft Teams在多个平台上使用它的百分比。
-2. **正文：** 提供有关在移动设备上使用 Teams，以帮助用户从任何位置工作时了解邮件最新值的信息。
+2. **正文：** 提供有关在移动设备上使用 Teams，以帮助用户从任何位置工作时了解邮件最新价值的信息。
 3. **可视化：** 显示在单个平台Microsoft Teams或多个平台上使用它的活跃用户百分比： 
     - **多个平台：**
         - 数字：过去 28 天Teams以下两个或多个平台（桌面、移动或 Web）上使用过数字。
         - 分母：过去 28 天内Microsoft Teams至少使用过一次。
     - **仅桌面：**
-        - Numerator：过去 28 天内仅在桌面Microsoft Teams用户数量
-        - 分母：过去 28 天Teams至少使用过一次
+        - 数字：过去 28 天内仅在Microsoft Teams桌面平台上使用过数字
+        - 分母：过去 28 天内Teams至少使用过一次
     - **仅 Web：**
-        - Numerator：过去 28 天内仅在 web Microsoft Teams使用过数字
+        - 分子：过去 28 天内Microsoft Teams仅在 Web 平台上使用数据
         - 分母：过去 28 天内Microsoft Teams至少使用过一次
     - **仅移动：**
-        - 数字：过去 28 天内仅在Microsoft Teams在移动平台上使用用户的数量
-        - 分母：过去 28 天Teams至少使用过一次
+        - 数字：过去 28 天内Microsoft Teams仅在移动平台上使用云解决方案的数量
+        - 分母：过去 28 天内Teams至少使用过一次
 
 ### <a name="use-of-microsoft-365-apps-across-platforms"></a>跨平台Microsoft 365 应用版库
 
 :::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="显示在多个或单个平台上Microsoft 365应用数量的图表。":::
 
-1. **标头：** 显示 Word、Microsoft 365 应用版 (、Excel、PowerPoint 和 OneNote) 活动用户百分比。
+1. **标头：** 显示 Word、Microsoft 365 应用版 (、Excel、PowerPoint 和 OneNote) 上的活动用户百分比。
 2. **正文：** 提供有关为组织人员提供从任何位置访问其文件的灵活性的价值的信息。
-3. **可视化：** 分组的垂直表示跨一个或多个平台使用 Word、Excel、PowerPoint 和 OneNote 视为的每个应用的数量。 对于其中每个应用程序，条形表示以下内容：
+3. **可视化：** 分组的垂直表示跨单个平台或多个平台使用 Word、Excel、PowerPoint 和 OneNote 考虑的每个应用的数量。 对于其中每个应用程序，条形表示以下内容：
       - **多个平台：** 最近 28 天内至少跨两个平台在应用上处于活动状态的用户数。
       - **仅桌面：** 过去 28 天内仅在桌面平台上使用应用的用户数。
       - **仅 Web：** 最近 28 天内仅在 Web 平台上的应用中处于活动状态的用户数量。
@@ -147,7 +147,7 @@ Microsoft 365可让用户跨应用灵活工作，包括 Microsoft Outlook、Word
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365应用运行状况 – 技术 (](apps-health.md)文章) \
+[Microsoft 365应用运行状况 – 技术体验 (](apps-health.md)文章) \
 [通信 – 人员体验](communication.md) (文章) \
 [内容协作 – 人员体验](content-collaboration.md) (文章) \
 [会议 – 人员体验](meetings.md) (文章) \

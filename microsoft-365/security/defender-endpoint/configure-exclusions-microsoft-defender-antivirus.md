@@ -1,6 +1,6 @@
 ---
 title: 设置扫描的Microsoft Defender 防病毒项
-description: 你可以排除 (文件，包括由指定进程修改) 的文件以及文件夹被Microsoft Defender 防病毒。 使用 PowerShell 验证排除项。
+description: 你可以排除文件 (文件，包括由指定进程) 的文件以及文件夹被Microsoft Defender 防病毒。 使用 PowerShell 验证排除项。
 keywords: ''
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -14,30 +14,28 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
-ms.openlocfilehash: 5a26951535b6e2197d8ada45b2108e62f15fda03
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 6ef9cfcec1c54cf9754d7152c098d7ef5b67b456
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245143"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330547"
 ---
-# <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>配置并验证扫描的Microsoft Defender 防病毒项
+# <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>配置并验证扫描Microsoft Defender 防病毒排除项
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-你可以从扫描中排除某些文件、文件夹、进程和进程打开Microsoft Defender 防病毒文件。 此类排除项适用于 [计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)、按需 [扫描](run-scan-microsoft-defender-antivirus.md)和 [始终实时保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md)。 进程打开的文件的排除项仅适用于实时保护。
+你可以从扫描中排除某些文件、文件夹、进程和进程打开Microsoft Defender 防病毒文件。 此类排除项适用于 [计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)、按需 [扫描](run-scan-microsoft-defender-antivirus.md)和始终 [实时保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md)。 进程打开的文件的排除项仅适用于实时保护。
 
 ## <a name="configure-and-validate-exclusions"></a>配置和验证排除
 
 若要配置和验证排除项，请参阅以下内容：
 
-- [根据文件名、扩展名和文件夹位置配置并验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。 你可以根据文件扩展Microsoft Defender 防病毒文件名或位置从扫描中排除文件。
+- [根据文件名、扩展](configure-extension-file-exclusions-microsoft-defender-antivirus.md)名和文件夹位置配置并验证排除项。 你可以根据文件扩展Microsoft Defender 防病毒文件名或位置，从扫描中排除文件。
 
 - [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)。 你可以从特定进程打开的扫描中排除文件。
 
@@ -50,7 +48,7 @@ ms.locfileid: "62245143"
 
 定义排除项时，请记住以下几点：
 
-- 从技术上说，排除项是一个保护缺陷。 定义排除项时，请考虑所有选项。 其他选项可以非常简单，只需确保排除的位置具有适当的访问控制列表 (ACL) 或最初将策略设置为审核模式。
+- 从技术上说，排除项是一个保护缺陷。 定义排除项时，请考虑所有选项。 其他选项可以非常简单，只需确保排除的位置具有相应的访问控制列表 (ACL) 或最初将策略设置为审核模式。
 
 - 定期查看排除项。 在查看过程中重新检查和重新强制执行缓解。
 

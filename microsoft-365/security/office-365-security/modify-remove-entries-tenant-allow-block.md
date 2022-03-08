@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何修改和删除安全门户中租户允许/阻止列表中的条目。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f2662ac41e5df5cf2eb36413d8a58568ff336841
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f1ab3f815cc64af6d1383df228ef7961c3afdcec
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212001"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330183"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>修改和删除租户允许/阻止列表中的条目
 
@@ -38,50 +38,52 @@ ms.locfileid: "60212001"
 
 ### <a name="modify-entries-in-the-tenant-allowblock-list"></a>修改租户允许/阻止列表中的条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. 在Microsoft 365 Defender门户中，转到"策略"&**规则** \> **"**\>"威胁策略规则 **"部分"** \> **租户允许/阻止列表"**。
 
 2. 选择包含要修改的条目类型的选项卡：
-   - **发件人) 
+   - **发件人**
+   - **网络钓鱼**
    - **URL**
    - **Files**
-   - **网络钓鱼**
 
-3. 选择要修改的条目，然后单击"编辑 ![ "图标。](../../media/m365-cc-sc-edit-icon.png) **编辑**。 可以在出现的飞出控件中修改的值取决于您在上一步中所选的选项卡：
+
+3. 选择要修改的条目，然后单击"编辑 !["图标。](../../media/m365-cc-sc-edit-icon.png) **编辑**。 可以在出现的飞出控件中修改的值取决于您在上一步中所选的选项卡：
    - **发件人**
      - **永不过期** 和/或到期日期。
      - **可选注释**
+   - **网络钓鱼**
+     - **操作**：可以将值更改为"允许 **"或** "阻止 **"**。
    - **URL**
      - **永不过期** 和/或到期日期。
      - **可选注释**
    - **Files**
      - **永不过期** 和/或到期日期。
      - **可选注释**
-   - **网络钓鱼**
-     - **操作**：可以将值更改为"允许 **"或**"阻止 **"。**
-4. 完成时，请单击“保存”。
+
+4. 完成后，单击“**保存**”。
 
 > [!NOTE]
 > 创建日期后最多只能延长 30 天。 阻止可延长最多 90 天，但与允许不同，也可以设置为永不过期。
 
 ### <a name="remove-entries-from-the-tenant-allowblock-list"></a>从租户允许/阻止列表中删除条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. 在Microsoft 365 Defender门户中，转到"策略"&**规则** \> **"**\>"威胁策略规则 **"部分"** \> **租户允许/阻止列表"**。
 
 2. 选择包含要删除的条目类型的选项卡：
    - **发件人**
+   - **网络钓鱼**
    - **URL**
    - **Files**
-   - **网络钓鱼**
+ 
+3. 选择要删除的条目，然后单击"删除 ![图标"。](../../media/m365-cc-sc-delete-icon.png) **删除**。
 
-3. 选择要删除的条目，然后单击"删除 ![ 图标"。](../../media/m365-cc-sc-delete-icon.png) **删除**。
-
-4. 在出现的警告对话框中，单击"删除 **"。**
+4. 在出现的警告对话框中，单击"删除 **"**。
 
 ## <a name="use-powershell"></a>使用 PowerShell
 
-### <a name="modify-block-file-and-url-entries-in-the-tenant-allowblock-list"></a>修改租户允许/阻止列表中的阻止文件和 URL 条目
+### <a name="modify-allow-or-block-sender-file-and-url-entries-in-the-tenant-allowblock-list"></a>修改租户允许/阻止列表中的允许或阻止发件人、文件和 URL 条目
 
-若要修改租户允许/阻止列表中的阻止发件人、文件和 URL 条目，请使用以下语法：
+若要修改租户允许/阻止列表中的允许或阻止发件人、文件和 URL 条目，请使用以下语法：
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
@@ -95,9 +97,9 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 有关语法和参数的详细信息，请参阅 [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems)。
 
-### <a name="remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>从租户允许/阻止列表中删除 URL 或文件条目
+### <a name="remove-allow-or-block-sender-url-or-file-entries-from-the-tenant-allowblock-list"></a>从租户允许/阻止列表中删除允许或阻止发件人、URL 或文件条目
 
-若要从租户允许/阻止列表中删除发件人、文件和 URL 条目，请使用以下语法：
+若要从租户允许/阻止列表中删除允许或阻止发件人、文件和 URL 条目，请使用以下语法：
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
@@ -111,7 +113,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 有关语法和参数的详细信息，请参阅 [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems)。
 
-### <a name="modify-allow-or-block-spoofed-sender-entries"></a>修改允许或阻止欺骗发件人条目
+### <a name="modify-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>修改租户允许/阻止列表中的允许或阻止欺骗发件人条目
 
 若要修改租户允许/阻止列表中的允许或阻止欺骗发件人条目，请使用以下语法：
 
@@ -127,8 +129,8 @@ Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdl
 
 有关语法和参数的详细信息，请参阅 [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems)。
 
-### <a name="remove-allow-or-block-spoofed-sender-entries"></a>删除允许或阻止欺骗发件人条目
-
+### <a name="remove-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>从租户允许/阻止列表中删除允许或阻止欺骗发件人条目
+ 
 若要从租户允许/阻止列表中删除允许或阻止欺骗发件人条目，请使用以下语法：
 
 ```powershell

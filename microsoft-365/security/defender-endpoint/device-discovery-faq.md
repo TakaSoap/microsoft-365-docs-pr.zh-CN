@@ -13,17 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e364a2cffcd1c18c3d220e0747010a855fafed2a
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 530846d4a7c18900f0697806bb656aa653b71947
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345947"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326155"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>设备发现常见问题
 
@@ -49,7 +47,7 @@ ms.locfileid: "62345947"
 
 在此模式下，载入到 Microsoft Defender for Endpoint 的终结点可以主动探测网络中观测到的设备，以丰富收集的数据 (网络流量可以忽略不计) 。 只有基本发现模式观察到的设备才能在标准模式下进行主动探测。 强烈建议使用此模式生成可靠且一致的设备清单。 如果选择禁用此模式，并选择"基本发现模式"，可能只会获得网络中非托管终结点的有限可见性。
 
- 除了使用被动方法提供的设备之外，标准模式还利用网络中使用多播查询的常见发现协议来查找更多设备。
+ 除了使用被动方法观察到的设备之外，标准模式还利用网络中使用多播查询的常见发现协议来查找更多设备。
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>我能否控制哪些设备执行标准发现？
 
@@ -88,9 +86,9 @@ ms.locfileid: "62345947"
 
 ## <a name="how-frequent-is-the-active-probing"></a>活动探测频率如何？
 
-当观察到设备特征的变化时，将主动探测设备，以确保现有信息是最新的 (通常，设备在三周内探测到的设备不会超过一次) 
+当观察到设备特征的变化时，将主动探测设备，以确保现有信息是最新的 (通常，设备在三周内探测器探测) 
 
-## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>我的安全工具引发了UnicastScanner.ps1启动的扫描活动或端口扫描活动的警报，我应该做什么？
+## <a name="my-security-tool-raised-alert-on-unicastscannerps1--psscript_guidps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>我的安全工具在UnicastScanner.ps1/PSScript_{GUID}.ps1启动的端口扫描活动上发出警报，我该怎么办？
 
 活动的探测脚本由 Microsoft 签名，并且是安全的。 你可以将以下路径添加到排除列表： `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps1`
 
@@ -118,7 +116,7 @@ ms.locfileid: "62345947"
 
 ### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>探测分布于Windows设备上的所有设备
 
-与恶意活动（通常从少量受损设备扫描整个网络）相反，Microsoft Defender for Endpoint 的标准发现探测从所有已载入的 Windows 设备启动，使活动成为恶意和非异常活动。 从云中集中管理探测，以平衡网络中所有受支持的已载入设备之间的探测尝试。  
+与恶意活动（通常从少量受损设备扫描整个网络）相反，Microsoft Defender 终结点的标准发现探测从所有已载入的 Windows 设备启动，使活动变好且非异常。 从云中集中管理探测，以平衡网络中所有受支持的已载入设备之间的探测尝试。  
 
 ### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>活动探测产生的额外流量可以忽略不计
 
@@ -138,4 +136,4 @@ active discovery capabilities have always been embedded in the Windows operating
 
 ### <a name="you-can-exclude-network-lures-from-active-probing"></a>你可以从活动探测中排除网络诱使
 
-标准发现支持将子网中的设备或 (排除) 活动探测中。 如果已部署网络部署，可以使用设备发现设置根据 IP 地址或子网定义排除 (一系列 IP 地址) 。 定义这些排除项将确保这些设备不会主动探测，也不会发出警报。 这些设备将仅与基本发现模式 (被动方法) 。
+标准发现支持将子网中的设备或 (排除) 活动探测中。 如果已部署网络部署，可以使用设备发现设置根据 IP 地址或子网定义排除 (一系列 IP 地址) 。 定义这些排除项将确保这些设备不会主动探测，也不会发出警报。 这些设备将仅使用被动方法发现 (基本发现模式) 。

@@ -11,18 +11,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 54cf42f18c6e31a11649dccc2181e88ffb21dd51
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1749404942b42778ecde99417a8e3501c7c4f4cf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283685"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327219"
 ---
 # <a name="investigation-resource-type"></a>调查资源类型
 
@@ -59,7 +57,7 @@ ID|String|调查实体的标识。
 startTime|DateTime Nullable|创建调查的日期和时间。
 endTime|DateTime Nullable|调查完成的日期和时间。
 cancelledBy|String|取消调查的用户/应用程序的 ID。
-状态|枚举|调查的当前状态。 可能的值包括："Unknown"、"Terminated"、 "SuccessfullyRemediated"、"Benign"、"Failed"、"PartiallyRemediated"、"Running"、"PendingApproval"、"PendingResource"、"PartiallyInvestigated"、"TerminatedByUser"、"TerminatedBySystem"、"Queued"、"InnerFailure"、"PreexistingAlert"、"UnsupportedOs"、"UnsupportedAlertType"和"SuppressedAlert"。
+State|枚举|调查的当前状态。 可能的值包括："Unknown"、"Terminated"、 "SuccessfullyRemediated"、"Benign"、"Failed"、"PartiallyRemediated"、"Running"、"PendingApproval"、"PendingResource"、"PartiallyInvestigated"、"TerminatedByUser"、"TerminatedBySystem"、"Queued"、"InnerFailure"、"PreexistingAlert"、"UnsupportedOs"、"UnsupportedAlertType"和"SuppressedAlert"。
 statusDetails|String|有关调查状态的其他信息。
 machineId|String|执行调查的设备 ID。
 computerDnsName|String|执行调查的设备的名称。

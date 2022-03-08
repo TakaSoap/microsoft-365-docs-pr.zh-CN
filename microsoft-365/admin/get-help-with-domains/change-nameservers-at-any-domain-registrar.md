@@ -2,8 +2,8 @@
 title: 更改名称服务器以设置Microsoft 365注册机构的域名
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,22 +26,22 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 了解如何在 Microsoft 365 中添加和设置域，以便电子邮件和 Skype for Business Online 等服务使用你自己的域名。
-ms.openlocfilehash: 9158d7b22533ffde9a378b5f680ff5552854bae9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2d591429d74e03eec883b524b8fa36d082cfab93
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164820"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316963"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以设置Microsoft 365注册机构的域名
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。
 
-请按照以下说明在 Microsoft 365中添加和设置你的域，以便电子邮件Teams服务将使用你自己的域名。 为此，您需要验证您的域，然后将您的域的名称服务器更改为 Microsoft 365以便您可以设置正确的 DNS 记录。 如果以下语句描述了您的情况，请按照以下步骤操作：
+请按照以下说明在 Microsoft 365中添加和设置你的域，以便电子邮件和 Teams 等服务将使用你自己的域名。 为此，您需要验证您的域，然后将您的域的名称服务器更改为 Microsoft 365以便您可以设置正确的 DNS 记录。 如果以下语句描述了您的情况，请按照以下步骤操作：
 
 - 你有你自己的域，并且想要设置它以使用Microsoft 365。
 
-- 您希望Microsoft 365管理 DNS 记录。  (如果愿意，可以 [管理自己的 DNS](../setup/add-domain.md)记录 .) 
+- 您希望Microsoft 365管理 DNS 记录。  (如果愿意，可以 [管理自己的 DNS](../setup/add-domain.md) 记录。) 
 
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>添加 TXT 记录或 MX 记录进行验证
 
@@ -117,17 +117,17 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 2. 创建名称机记录，或编辑现有名称机记录以匹配以下值：
 
     - 第一个名称 ns1.bdm.microsoftonline.com
-    - 第二个名称 ns2.bdm.microsoftonline.com
+    - 第二个名称器：ns2.bdm.microsoftonline.com
     - 第三个名称 ns3.bdm.microsoftonline.com
     - 第四个名称 ns4.bdm.microsoftonline.com
 
    > [!TIP]
-   > 最好添加所有四条记录，但如果注册机构仅支持两条，ns1.bdm.microsoftonline.com **和****ns2.bdm.microsoftonline.com。**
+   > 最好添加所有四条记录，但如果注册机构仅支持两条，请添加 **ns1.bdm.microsoftonline.com 和** **ns2.bdm.microsoftonline.com**。
 
 3. 保存所做的更改。
 
 > [!CAUTION]
-> 将域的 NS 记录更改为指向Microsoft 365服务器时，当前与域关联的所有服务都受到影响。 如果您跳过了向导中的任何步骤，或是将域用于博客、购物车或其他服务，则需要执行一些附加步骤。 否则此更改可能会导致服务停机时间，例如导致电子邮件访问丢失或您的当前网站不可访问。
+> 当您将域的 NS 记录更改为指向Microsoft 365服务器时，当前与域关联的所有服务都受到影响。 如果您跳过了向导中的任何步骤，或是将域用于博客、购物车或其他服务，则需要执行一些附加步骤。 否则此更改可能会导致服务停机时间，例如导致电子邮件访问丢失或您的当前网站不可访问。
 
 ::: moniker-end
 
@@ -141,7 +141,7 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
    - 第二个名称 ns2.dns.partner.microsoftonline.cn
 
    > [!TIP]
-   > 应至少使用两个名称机记录。 如果列出了任何其他名称服务器，您可以删除它们，或者将它们更改为 ns3.dns.partner.microsoftonline.cn **ns4.dns.partner.microsoftonline.cn** **。**
+   > 应至少使用两个名称机记录。 如果列出了任何其他名称服务器，您可以删除它们，或将其更改为 **ns3.dns.partner.microsoftonline.cn ns4.dns.partner.microsoftonline.cn。** 
 
 3. 保存所做的更改。
 
@@ -154,7 +154,7 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 
 - 在更改 NS 记录之前，Microsoft 365域的所有电子邮件地址进行移动。
 
-- 想要添加当前与网站地址一同使用的域，如 `https://www.fourthcoffee.com` ？ 在添加域以保持其网站现在托管位置的托管位置时，您可以采取以下步骤，以便当您将域的 NS 记录更改为指向网站记录后，用户仍可访问Microsoft 365。
+- 想要添加当前与网站地址一同使用的域，如 `https://www.fourthcoffee.com`？ 在添加域以保持其网站现在托管位置的托管位置时，您可以采取以下步骤，以便当您将域的 NS 记录更改为指向 Microsoft 365 后，用户仍可访问网站。
 
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
@@ -162,11 +162,11 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 
 3. 在"域详细信息"页上，选择 **"DNS 记录"** 选项卡。
 
-4. 选择 **"添加记录"。**
+4. 选择 **"添加记录"**。
 
-5. 在"**添加自定义 DNS** 记录"窗格中的"类型"下拉列表中，选择" (**地址) "。**
+5. 在"**添加自定义 DNS** 记录"窗格中，从"类型"下拉列表中选择" (**地址) "**。
 
-6. 在" **主机名"或"别名"** 框中，键入 **@** 。
+6. 在" **主机名"或"别名"** 框中，键入 **@**。
 
 7. 在 **"IP 地址** "框中，键入其当前托管的网站的静态 IP 地址。 例如，172.16.140.1。
 
@@ -179,10 +179,10 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 
 此外，您可以创建 CNAME 记录以帮助客户找到您的网站。
 
-1. 选择 **"添加记录"。**
-2. 在"**添加自定义 DNS** 记录"窗格中，从"类型"下拉列表中选择 **"CNAME (别名) "。**
+1. 选择 **"添加记录"**。
+2. 在"**添加自定义 DNS 记录"** 窗格中，从"类型"下拉列表中选择"**CNAME (别名) "**。
 3. 在" **主机名"或"别名"** 框中，键入 **www**。
-4. 在" **指向地址"** 框中，键入 (FQDN) 的完全限定域名。 例如 **，contoso.5om**。
+4. 在" **指向地址"** 框中，键入网站的 (FQDN) 完全限定的域名。 例如， **contoso.5om**。
 5. 如果要更改记录的 TTL 设置，请从 **TTL** 下拉列表中选择一个新的时间长度。 否则，继续执行步骤 6。
 6. 选择“**保存**”。
 

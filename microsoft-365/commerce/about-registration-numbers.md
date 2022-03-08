@@ -2,8 +2,8 @@
 title: 关于注册号码和审核通知
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -15,25 +15,25 @@ ms.collection:
 - Adm_O365
 search.appverid: MET150
 ms.custom:
+- commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
 description: 了解购买 Microsoft 产品或服务时注册号码和审查不足的通知。
 ms.date: 02/02/2022
-ms.openlocfilehash: 87f4b51492a5269dab0fd20ee28608e5dc419863
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 1f8efbbacfcccf6e6a654d150fa77ecef6dc7234
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354944"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320196"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>关于注册号码和审核通知
 
-本文仅适用于直接从 Microsoft 购买或激活产品或服务的商业客户。 本文不适用于直接与合作伙伴合作 (云解决方案提供商) 批量许可或云解决方案提供商。
+本文仅适用于直接从 Microsoft 购买或激活产品或服务的商业客户。 本文不适用于直接与合作伙伴合作的客户 (云解决方案提供商) 云解决方案提供商。
 
 ## <a name="what-is-a-registration-number"></a>什么是注册号码？  
 
-我们使用注册号码 (，也称为 tax Identification Number (TIN) ) 来查看你的帐户的详细信息。 这使我们可以确定 Microsoft 能否提供产品和服务。 有关国家/地区需要哪些注册号码的信息，请参阅税务 [标识号](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/)。
+我们使用注册号码 (，也称为税务标识号 (TIN) ) 来查看你的帐户的详细信息。 这使我们可以确定 Microsoft 能否提供产品和服务。 有关国家/地区需要哪些注册号码的信息，请参阅税务 [标识号](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/)。
 
 对于必须注册号码的国家/地区，文本框上方的标签指示需要哪种类型的号码。
 

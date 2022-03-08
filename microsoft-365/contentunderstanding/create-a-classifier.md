@@ -11,14 +11,15 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: 了解如何在 Microsoft SharePoint Syntex 中创建分类器。
-ms.openlocfilehash: 1fe4200c68d6458d20a71b834bd2a0b08319ecb2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5e9be6065e0328a412e73680a0200ea7929c8011
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203011"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324867"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建分类器
 
@@ -61,7 +62,7 @@ ms.locfileid: "60203011"
 
 创建模型时，也将创建新的网站内容类型。 内容类型表示具有共同特征的文档类别，并共享该特定内容的列或元数据属性的集合。 可通过“[内容类型库](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f)”管理 SharePoint 内容类型。 在此示例中，创建模型时，将创建新的“*合同续订*”内容类型。
 
-如果想要将此模型映射到 SharePoint 内容类型库中的现有企业内容类型以使用其架构，请选择“**高级设置**”。 企业内容类型存储在 SharePoint 管理中心中的内容类型中心中，并与租户中的所有网站联合。 请注意，虽然可使用现有内容类型，利用其架构来帮助标识和分类，但仍需训练模型从识别的文件中提取信息。</br>
+如果要 **将** 该模型映射到 <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">SharePoint 内容</a> 类型库中的现有企业内容类型以使用其架构，请选择"高级设置"。 企业内容类型存储在 SharePoint 管理中心中的内容类型中心中，并与租户中的所有网站联合。 请注意，虽然可使用现有内容类型，利用其架构来帮助标识和分类，但仍需训练模型从识别的文件中提取信息。</br>
 
 ![高级设置。](../media/content-understanding/advanced-settings.png)
 

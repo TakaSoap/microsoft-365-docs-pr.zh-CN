@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07e91e5b2cb93a6ba876510b558761f95489f496
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: cb3f38b861f85849165be330e03fe1d96a9c708c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765747"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326701"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -69,7 +69,7 @@ ms.locfileid: "62765747"
 
 指定防病毒引擎的强制首选项。 设置强制级别有三个值：
 
-- 实时 (`real_time`) ：启用 (时实时保护) 扫描文件。
+- 实时 (`real_time`) ：实时保护 (启用时扫描) 文件。
 - 按需 (`on_demand`) ：仅按需扫描文件。 在此：
   - 实时保护已关闭。
 - 被动 (`passive`) ：在被动模式下运行防病毒引擎。 在此：
@@ -105,7 +105,7 @@ ms.locfileid: "62765747"
 |**域**|`com.microsoft.wdav`|
 |**键**|scanAfterDefinitionUpdate|
 |**数据类型**|Boolean|
-|**可能的值**|true (默认)  <p> false|
+|**可能的值**|true (默认值)  <p> false|
 |**Comments**|适用于终结点版本 101.41.10 或更高版本的 Microsoft Defender 中可用。|
 |||
 
@@ -122,7 +122,7 @@ ms.locfileid: "62765747"
 |**域**|`com.microsoft.wdav`|
 |**键**|scanArchives|
 |**数据类型**|Boolean|
-|**可能的值**|true (默认)  <p> false|
+|**可能的值**|true (默认值)  <p> false|
 |**Comments**|适用于终结点版本 101.41.10 或更高版本的 Microsoft Defender 中可用。|
 |||
 
@@ -145,7 +145,7 @@ ms.locfileid: "62765747"
 
 #### <a name="exclusion-merge-policy"></a>排除合并策略
 
-指定排除项的合并策略。 它可以是管理员定义 `merge` `admin_only` 和用户定义的排除项 () 或仅管理员定义的排除项 () 。 此设置可用于限制本地用户定义自己的排除项。
+指定排除项的合并策略。 它可以是管理员定义的 `merge` `admin_only` 排除项和用户定义的排除项 () 或仅管理员定义的排除项 () 。 此设置可用于限制本地用户定义自己的排除项。
 
 <br>
 
@@ -163,7 +163,7 @@ ms.locfileid: "62765747"
 #### <a name="scan-exclusions"></a>扫描排除项
 
 指定被扫描排除的实体。 排除项可以通过完整路径、扩展名或文件名指定。
- (排除项指定为项目数组，管理员可以按任意顺序指定所需数量的元素。) 
+ (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量的元素。) 
 
 <br>
 
@@ -223,7 +223,7 @@ ms.locfileid: "62765747"
 |文件扩展名|扩展名位于设备上任意位置的所有文件|`.test`|
 |文件|由完整路径标识的特定文件|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
 |Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`|
-|流程|特定进程 (的完整路径或文件名指定，) 它打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`|
+|流程|由 (的完整路径或文件名指定的特定) 及其打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`|
 ||||
 
 > [!IMPORTANT]
@@ -237,7 +237,7 @@ ms.locfileid: "62765747"
 
 |通配符|说明|示例|匹配|不匹配|
 |---|---|---|---|---|
-|\*|匹配任意数目的任何字符，包括无 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`|
+|\*|匹配任意数目的任何字符，包括无字符 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`|
 |?|匹配任何单个字符|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`|
 ||||||
 
@@ -277,7 +277,7 @@ ms.locfileid: "62765747"
 
 ### <a name="process-excluded-from-the-scan"></a>从扫描中排除的进程
 
-指定一个进程，所有文件活动都从扫描中排除。 可以通过进程的名称或名称来指定 (例如 `cat` ，) 或完整 (例如， `/bin/cat`) 。
+指定一个进程，所有文件活动都从扫描中排除。 可以通过进程的名称或名称指定 (例如 `cat` ，) 或完整 (例如， `/bin/cat`) 。
 
 <br>
 
@@ -378,7 +378,7 @@ ms.locfileid: "62765747"
 
 #### <a name="threat-type-settings-merge-policy"></a>威胁类型设置合并策略
 
-指定威胁类型设置的合并策略。 它可以是管理员定义的 `merge` 设置和用户定义的设置 () 管理员定义的 `admin_only` 设置 () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
+指定威胁类型设置的合并策略。 它可以是管理员定义的 `merge` `admin_only` 设置和用户定义的设置 () 管理员定义的设置 () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
 
 <br>
 
@@ -456,7 +456,7 @@ ms.locfileid: "62765747"
 |**域**|`com.microsoft.wdav`|
 |**键**|enabled|
 |**数据类型**|Boolean|
-|**可能的值**|true (默认)  <p> false|
+|**可能的值**|true (默认值)  <p> false|
 |||
 
 #### <a name="diagnostic-collection-level"></a>诊断集合级别
@@ -488,7 +488,7 @@ ms.locfileid: "62765747"
 |**域**|`com.microsoft.wdav`|
 |**键**|automaticSampleSubmission|
 |**数据类型**|Boolean|
-|**可能的值**|true (默认)  <p> false|
+|**可能的值**|true (默认值)  <p> false|
 |||
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>启用/禁用自动安全智能更新
@@ -503,7 +503,7 @@ ms.locfileid: "62765747"
 |---|---|
 |**键**|automaticDefinitionUpdateEnabled|
 |**数据类型**|Boolean|
-|**可能的值**|true (默认)  <p> false|
+|**可能的值**|true (默认值)  <p> false|
 |||
 
 ### <a name="user-interface-preferences"></a>用户界面首选项
@@ -555,9 +555,29 @@ ms.locfileid: "62765747"
 |**Comments**|适用于终结点版本 101.19.61 或更高版本的 Microsoft Defender 中可用。|
 |||
 
+
+
+#### <a name="control-sign-in-to-consumer-version-of-microsoft-defender"></a>控制登录 Microsoft Defender 的消费者版本
+
+指定用户是否可以登录到 Microsoft Defender 的消费者版本。
+
+<br>
+
+****
+
+|节|值|
+|---|---|
+|**域**|`com.microsoft.wdav`|
+|**键**|consumerExperience|
+|**数据类型**|String|
+|**可能的值**|已启用 (默认)  <p> disabled|
+|**Comments**|适用于终结点版本 101.60.18 或更高版本的 Microsoft Defender 中可用。|
+|||
+
+
 ### <a name="endpoint-detection-and-response-preferences"></a>终结点检测和响应首选项
 
-管理 macOS 上 Microsoft Defender for Endpoint (EDR) 终结点检测和响应的首选项。
+管理 macOS 上 Microsoft Defender for Endpoint (EDR) 组件的终结点检测和响应首选项。
 
 <br>
 
@@ -584,7 +604,7 @@ ms.locfileid: "62765747"
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|标记|
+|**键**|tags|
 |**数据类型**|字典 (嵌套首选项) |
 |**Comments**|有关字典内容的说明，请参阅以下部分。|
 |||
@@ -635,7 +655,7 @@ ms.locfileid: "62765747"
 - 启用实时保护 (RTP) 
 - 指定如何处理以下威胁类型：
   - **阻止 PUA (可能不需要)** 的应用程序
-  - **存档 (** 高压缩率的文件) 审核到 Microsoft Defender 终结点日志
+  - **存档 (** 高压缩率的文件) Microsoft Defender 终结点日志进行审核
 - 启用自动安全智能更新
 - 启用云保护
 - 启用自动提交示例
@@ -1064,7 +1084,7 @@ com.microsoft.wdav.plist: OK
 
 ### <a name="jamf-deployment"></a>JAMF 部署
 
-从 JAMF 控制台中，打开 **计算机** \> **配置文件**，导航到你要使用的配置文件，然后选择自定义 **设置。** 使用 创建用作首选项 `com.microsoft.wdav` 域的条目并上载之前生成的 *.plist* 。
+从 JAMF 控制台中，打开 **计算机** \> **配置文件**，导航到你要使用的配置文件，然后选择自定义 **设置**。 使用 创建用作首选项 `com.microsoft.wdav` 域的条目并上载之前生成的 *.plist* 。
 
 > [!CAUTION]
 > 必须输入正确的首选项域 (`com.microsoft.wdav`) ;否则，Microsoft Defender for Endpoint 无法识别首选项。
@@ -1083,7 +1103,7 @@ com.microsoft.wdav.plist: OK
 
 6. 选择“**确定**”。
 
-7. 选择 **"管理** \> **工作分配"**。 在" **包含"** 选项卡中， **选择"分配给&所有用户"**。
+7. 选择 **"管理** \> **工作分配"**。 在" **包含"** 选项卡中， **选择"分配给所有用户&所有设备**"。
 
 > [!CAUTION]
 > 必须输入正确的自定义配置文件名称;否则，Microsoft Defender for Endpoint 无法识别这些首选项。

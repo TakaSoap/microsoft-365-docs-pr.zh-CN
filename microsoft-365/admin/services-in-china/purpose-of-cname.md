@@ -2,8 +2,8 @@
 title: MSOID 的 Office 365 CNAME 记录有何用途？
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 深入了解 Office 365 中的"MSOID"CNAME 记录，该记录将你引导至针对身份验证过程的最佳服务器，以便你获得更快的响应。
 monikerRange: o365-21vianet
-ms.openlocfilehash: e51847065ac3f91f44b8be35932869e9418e8a70
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
+ms.openlocfilehash: 1b053ac0df7cd770b5627b688e90641688f94141
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188789"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325119"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>MSOID 的 Office 365 CNAME 记录有什么用途？
 

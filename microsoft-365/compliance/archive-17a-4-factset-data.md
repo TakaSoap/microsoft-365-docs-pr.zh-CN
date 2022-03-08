@@ -1,5 +1,5 @@
 ---
-title: 设置连接器以将 FactSet 数据存档到Microsoft 365
+title: 设置连接器以将 FactSet 数据存档在Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,23 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 了解如何设置和使用 17a-4 FactSet DataParser 连接器，以在 Microsoft 365 中导入和存档 FactSet 数据。
-ms.openlocfilehash: 974bf2ab0111d1417d46553482244502a6758a26
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+description: 了解如何设置和使用 17a-4 FactSet DataParser 连接器以在 Microsoft 365 中导入和存档 FactSet 数据。
+ms.openlocfilehash: 8c3728e1866d67b2ec7972b2a8857a2ba045022f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643792"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326211"
 ---
 # <a name="set-up-a-connector-to-archive-factset-data"></a>设置连接器以存档 FactSet 数据
 
-使用 17a-4 LLC 中的[FactSet DataParser](https://www.17a-4.com/factset-dataparser/)将数据从 FactSet 平台导入并存档到 Microsoft 365 组织的用户邮箱。 DataParser 包括一个 FactSet 连接器，该连接器配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 FactSet DataParser 连接器将 FactSet 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
+使用 17a-4 LLC 中的 [FactSet DataParser](https://www.17a-4.com/factset-dataparser/) 将数据从 FactSet 平台导入并存档到 Microsoft 365 组织中。 DataParser 包括一个 FactSet 连接器，该连接器配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 FactSet DataParser 连接器将 FactSet 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
 
 在 FactSet 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 FactSet 连接器导入数据并存档数据Microsoft 365可帮助组织遵守政府法规策略。
 
 ## <a name="overview-of-archiving-factset-data"></a>存档 FactSet 数据概述
 
-以下概述介绍使用数据连接器在数据连接器中存档 FactSet Microsoft 365。
+以下概述介绍使用数据连接器在数据连接器中存档 FactSet 数据Microsoft 365。
 
 ![用于 17a-4 的 FactSet 数据的存档工作流。](../media/FactSetDataParserConnectorWorkflow.png)
 
@@ -43,21 +43,21 @@ ms.locfileid: "61643792"
 
 - 为 Microsoft 连接器创建 DataParser 帐户。 为此，请联系 [17a-4 LLC](https://www.17a-4.com/contact/)。 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 必须在步骤 1 中创建 FactSet DataParser 连接器 (并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页的"数据连接器"页上添加 **连接器，需要** 此Microsoft 365 合规中心。 默认情况下，此角色不会分配给 Exchange Online 中的角色组。 可以将"邮箱导入导出"角色添加到"管理"角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须为在步骤 1 中创建 FactSet DataParser 连接器 (在步骤 3) 中完成该连接器的用户分配有"数据连接器管理员"角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，此角色添加到多个角色组。 有关这些角色组的列表，请参阅安全与合规中心内的权限中的"安全与合规& ["部分](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。 或者，您组织的管理员可以创建自定义角色组，分配数据连接器管理员角色，然后将相应的用户添加为成员。 有关说明，请参阅"权限"部分中的"创建自定义[角色Microsoft 365 合规中心](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)。
 
-- 此 17a-4 数据连接器在美国政府云GCC环境中Microsoft 365可用。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
+- 此 17a-4 数据连接器可用于美国政府GCC中Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此未涵盖在 Microsoft 365 合规性和数据保护承诺中。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="step-1-set-up-a-factset-dataparser-connector"></a>步骤 1：设置 FactSet DataParser 连接器
 
 第一步是访问数据连接器页面中的数据Microsoft 365 合规中心为 FactSet 数据创建一个 17a-4 连接器。
 
-1. 转到 ， <https://compliance.microsoft.com> 然后单击数据 **连接器**  >  **FactSet DataParser**。
+1. 转到 ， <https://compliance.microsoft.com> 然后单击数据 **连接器** > **FactSet DataParser**。
 
-2. 在 **FactSet DataParser** 产品说明页上，单击"**添加连接器"。**
+2. 在 **"FactSet DataParser** 产品说明"页上，单击" **添加连接器"**。
 
-3. 在"**服务条款"页上**，单击"接受 **"。**
+3. 在" **服务条款"页上** ，单击"接受 **"**。
 
-4. 输入标识连接器的唯一名称，然后单击下一 **步**。
+4. 输入标识连接器的唯一名称，然后单击"下一步 **"**。
 
 5. 登录到 17a-4 帐户并完成 FactSet DataParser 连接向导中的步骤。
 
@@ -77,7 +77,7 @@ FactSet DataParser 连接器会自动将用户映射到Microsoft 365电子邮件
 
 2. 单击 **"连接器"** 选项卡，然后选择您创建的 FactSet DataParser 连接器以显示该飞出页，其中包含有关连接器的属性和信息。
 
-3. 在 **"源的连接器状态"下**， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
+3. 在 **"源的** 连接器状态"下， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
 
 ## <a name="known-issues"></a>已知问题
 

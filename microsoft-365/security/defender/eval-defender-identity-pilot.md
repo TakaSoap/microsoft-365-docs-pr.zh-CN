@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c30e6d318801dbfb63f4bfb7b5bbaf64dad24ac0
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 3801fdb4a7aeda5e75c4e36f622f7e76604d96a6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172111"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318727"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>试用 Microsoft Defender for Identity
 
@@ -47,9 +47,9 @@ ms.locfileid: "62172111"
 
 ## <a name="step-1-configure-benchmark-recommendations-for-your-identity-environment"></a>步骤 1. 为标识环境配置基准建议
 
-Microsoft 为使用 Microsoft 云服务的客户提供安全基准建议。 [Azure 安全](/security/benchmark/azure/overview) (ASB) 提供了说明性最佳做法和建议，以帮助提高 Azure 上的工作负载、数据和服务的安全性。
+Microsoft 为使用 Microsoft 云服务的客户提供安全基准建议。 [Azure 安全](/security/benchmark/azure/overview)基准 (ASB) 提供了说明性最佳做法和建议，以帮助提高 Azure 上的工作负载、数据和服务的安全性。
 
-这些基准建议包括 Microsoft Defender 标识 的 [Azure 安全基线](/security/benchmark/azure/baselines/defender-for-identity-security-baseline)。 实施这些建议可能需要一些时间来计划和实现。 虽然这将大大提高标识环境的安全性，但不应阻止你继续评估和实现 Microsoft Defender for Identity。 此处提供了这些信息，以用于你的了解。
+这些基准建议包括 [Microsoft Defender for Identity 的 Azure 安全基线](/security/benchmark/azure/baselines/defender-for-identity-security-baseline)。 实施这些建议可能需要一些时间来计划和实现。 虽然这将大大提高标识环境的安全性，但不应阻止你继续评估和实现 Microsoft Defender for Identity。 此处提供了这些信息，以用于你的了解。
 
 ## <a name="step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types"></a>步骤 2. 试用功能 - 演练用于识别和修正不同攻击类型的教程
 
@@ -70,6 +70,6 @@ Microsoft Defender for Identity 文档包括一系列教程，这些教程演示
 
 [评估 Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
-返回到评估 Microsoft [Defender](eval-defender-office-365-overview.md) for Office 365
+返回到评估 [Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
 返回到评估和试点[计划概述Microsoft 365 Defender](eval-overview.md)

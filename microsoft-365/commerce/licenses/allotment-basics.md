@@ -2,8 +2,8 @@
 title: 分配基础知识
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
 audience: Admin
@@ -16,14 +16,15 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_licensing
+search.appverid: MET150
 description: 了解新的分配功能。
 ms.date: 03/17/2021
-ms.openlocfilehash: 4a908441dbdaa5ecafcd140233b75adca0c22e4a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b41b3e27b7a3b05a9b80c3ac9590139adcee6fc6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167722"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325440"
 ---
 # <a name="allotment-basics"></a>分配基础知识
 
@@ -53,4 +54,4 @@ ms.locfileid: "60167722"
 
 ## <a name="getting-started"></a>入门
 
-分配功能在专用预览版中仅对少数客户可用。 如果你对加入感兴趣，请填写此表单 [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) ：。
+分配功能在专用预览版中仅对少数客户可用。 如果你对加入感兴趣，请填写此表单： [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)。

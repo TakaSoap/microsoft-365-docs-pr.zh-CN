@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6bfec4b38d3451d25d65c63ce46fb8df74cd6d0e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 6ae973f6483035c450aea78664bf804ea0c67cb3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171991"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330197"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>将Microsoft 365 Defender集成到安全操作
 
@@ -37,7 +37,7 @@ ms.locfileid: "62171991"
 **适用于：**
 - Microsoft 365 Defender
 
-现代安全操作中心 (SOC) 是智能驱动的自适应组织，它支持威胁防御策略，在部署过程中提前移动安全流程，以便内置安全性。 这意味着，向单个安全分析师分配独立技术和流程的传统方式不再支持来自多个源的数据的不断增加。 要求安全分析师和工程师采取更全面的方法，并使用跨不同平台和学科的共享见解来采取有效措施。
+现代安全操作中心 (SOC) 是智能驱动的自适应组织，它采用威胁防护策略，在部署过程中提前移动安全流程，以便内置安全性。 这意味着，向单个安全分析师分配独立技术和流程的传统方式不再支持来自多个源的数据的不断增加。 要求安全分析师和工程师采取更全面的方法，并使用跨不同平台和学科的共享见解来采取有效措施。
 
 因此，Microsoft 365 Defender 平台的部署和实现将需要与 SOC 团队一起仔细规划，以优化 Microsoft 365 Defender 服务本身日常操作和生命周期管理。 此内容探究了一些概念，了解如何操作 Microsoft 365 Defender集成构成新式安全操作基础的新的或现有的人员、流程和技术。
 
@@ -56,7 +56,7 @@ ms.locfileid: "62171991"
 
 此内容旨在满足以下要求：
 
-- DevOps安全运营 (SecOps) 团队
+- DevOps SecOps 团队 (安全) 操作
 - 安全工程团队
 - IT 团队
 - COS 和 C CT

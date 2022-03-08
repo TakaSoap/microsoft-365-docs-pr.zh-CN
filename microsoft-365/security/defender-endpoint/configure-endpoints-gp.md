@@ -16,8 +16,13 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.technology: mde
+ms.openlocfilehash: 3b20242247e33f8550ce4d153c2f2618c64d7007
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324335"
 ---
-
 # <a name="onboard-windows-devices-using-group-policy"></a>使用组策略载入 Windows 设备 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -38,11 +43,11 @@ ms.technology: mde
 > 对于 Windows Server 2019 和 Windows Server 2022，可能需要将 NT AUTHORITY\Well-Known-System-Account 替换为组策略首选项创建的 XML 文件的 NT AUTHORITY\SYSTEM。
 
 > [!NOTE]
-> 如果你对 Windows Server 2012 R2 和 2016 使用新的统一 Microsoft Defender for Endpoint 解决方案，请确保你正在使用中央存储中的最新 ADMX 文件，以访问正确的 Microsoft Defender for Endpoint 策略选项。 请参阅 [如何为](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) Windows 中的组策略管理模板创建和管理中央存储，并下载与 Windows 10 **一Windows 10**。
+> 如果你对 Windows Server 2012 R2 和 2016 使用新的统一 Microsoft Defender for Endpoint 解决方案，请确保你正在使用中央存储中的最新 ADMX 文件，以访问正确的 Microsoft Defender for Endpoint 策略选项。 请参阅 [如何创建](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)和管理 Windows 中的组策略管理模板的中央存储，并下载与 Windows 10 **一Windows 10**。
 
-请查看 [PDF 或](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 的各种路径。
+请查看 [PDF 或](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。
 
-1. 打开 GP 配置文件 () `WindowsDefenderATPOnboardingPackage.zip` 从服务载入向导下载的文件。 还可以从应用门户获取Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">包</a>：
+1. 打开 GP 配置包文件 (`WindowsDefenderATPOnboardingPackage.zip`) 从服务载入向导下载的文件。 还可以从应用门户获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender包</a>：
 
     1. 在导航窗格中，**选择"设置** > **EndpointsDevice** >  **managementOnboarding**  > "。
 
@@ -52,7 +57,7 @@ ms.technology: mde
 
     1. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将文件内容.zip到设备可以访问的共享只读位置。 你应该有一个名为 *OptionalParamsPolicy* 的文件夹和 *文件 WindowsDefenderATPOnboardingScript.cmd*。
+2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 *OptionalParamsPolicy* 的文件夹和 *文件 WindowsDefenderATPOnboardingScript.cmd*。
 
 3. 若要创建新的 GPO，请打开 GPMC [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (组策略管理) ，右键单击要配置的组策略对象，然后单击 **新建。** 在显示的对话框中输入新 GPO 的名称，然后单击"确定 **"**。
 
@@ -60,7 +65,7 @@ ms.technology: mde
 
 5. 在组 **策略管理编辑器中**，转到" **计算机配置**"，然后转到" **首选项**"，然后转到" **控制面板设置"**。
 
-6. 右键单击 **计划任务**，指向新建，然后单击即时任务 (**至少Windows 7)**。
+6. 右键单击 **计划任务**，指向新建，然后单击立即任务 (**任务Windows 7)**。
 
 7. 在打开 **的任务** 窗口中，转到常规 **选项卡** 。在 **"安全选项"** 下，单击 **"更改用户或组** "并键入"系统"，然后单击" **检查名称"** ，然后单击"确定 **"**。 NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。
 
@@ -72,7 +77,7 @@ ms.technology: mde
 
 11. 选择 **"确定** "并关闭任何打开的 GPMC 窗口。
 
-12. 若要将 GPO 链接到组织单位 (OU) ，请右键单击并选择" **链接现有 GPO"**。 在显示的对话框中，选择要链接的组策略对象。 单击“**确定**”。
+12. 若要将 GPO 链接到组织单位 (OU) ，请右键单击并选择" **链接现有 GPO"**。 在显示的对话框中，选择要链接的组策略对象。 单击“确定”。
 
 > [!TIP]
 > 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 Defender for Endpoint 设备运行检测 [测试](run-detection-test.md)。
@@ -81,7 +86,7 @@ ms.technology: mde
 
 对于每个设备，你可以说明当通过请求提交文件进行深入分析Microsoft 365 Defender是否可以从设备收集示例。
 
-可以使用组策略 (GP) 配置设置，例如深入分析功能中使用的示例共享的设置。
+可以使用组策略 (GP) 配置设置，如深入分析功能中使用的示例共享的设置。
 
 ### <a name="configure-sample-collection-settings"></a>配置示例集合设置
 
@@ -120,7 +125,7 @@ ms.technology: mde
 
 **策略位置：\** Windows Components\Windows Defender ATP
 
-Policy|设置
+策略|Setting
 ---|---
 Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集合"
 
@@ -128,7 +133,7 @@ Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集�
 
 **策略位置：\** Windows Components\Microsoft Defender 防病毒
 
-Policy|设置
+策略|Setting
 ---|---
 配置对可能不需要的应用程序的检测|已启用、阻止
 
@@ -136,7 +141,7 @@ Policy|设置
 
 **策略位置：\** Windows Components\Microsoft Defender 防病毒\MAPS
 
-Policy|设置
+策略|Setting
 ---|---
 加入 Microsoft MAPS|已启用、高级 MAPS
 需要进一步分析时发送文件示例 | 已启用，发送安全示例
@@ -145,9 +150,9 @@ Policy|设置
 
 **策略位置：\** Windows Components\Microsoft Defender 防病毒\Real-time Protection
 
-Policy|设置
+策略|Setting
 ---|---
-关闭实时保护|禁用
+关闭实时保护|Disabled
 打开行为监视|已启用
 扫描所有下载的文件和附件|已启用
 监视您的计算机上的文件和程序活动|已启用
@@ -158,13 +163,13 @@ Policy|设置
 
 这些设置配置终结点的定期扫描。 建议在性能允许的情况下执行每周快速扫描。
 
-Policy|设置
+策略|Setting
 ---|---
 在运行计划扫描之前检查最新的病毒和间谍软件安全智能 |已启用
 
 <br>
 
-**策略位置：\** Windows组件\Microsoft Defender 防病毒\Microsoft Defender 攻击防护\攻击面减少
+**策略位置：\** Windows Components\Microsoft Defender 防病毒\Microsoft Defender 攻击防护\Attack Surface Reduction
 
 从攻击面减少规则部署步骤 [3：实现 ASR](attack-surface-reduction-rules-deployment-implement.md) 规则获取攻击面减少规则 GUID 的当前列表。 有关其他规则的详细信息，请参阅 [攻击面减少规则参考](attack-surface-reduction-rules-reference.md)
 
@@ -180,7 +185,7 @@ Policy|设置
 
    ![攻击面减少配置的图像。](images/asr-guid.png)
 
-Policy|位置|设置
+策略|位置|Setting
 ---|---|---
 配置受控文件夹访问权限| \Windows Components\Microsoft Defender 防病毒\Microsoft Defender 攻击防护\Controlled Folder Access| 已启用，审核模式
 
@@ -205,7 +210,7 @@ Policy|位置|设置
 
     1. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将文件内容.zip到设备可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
+2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
 3. 打开 GPMC (组策略管理) ，右键单击要配置的组策略对象 (GPO) 然后单击"编辑 **"**。[](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)
 
@@ -213,7 +218,7 @@ Policy|位置|设置
 
 5. 右键单击 **"计划任务"，** 指向 **"新建**"，然后单击" **立即任务"**。
 
-6. 在打开 **的任务** 窗口中，转到常规 **选项卡** 。在"安全选项"下 ("BUILTIN\SYSTEM) **本地系统用户帐户**。
+6. 在打开 **的任务** 窗口中，转到常规 **选项卡** 。在"安全选项"下 (BUILTIN\SYSTEM) 本地 **系统用户帐户**。
 
 7. Select **Run whether user is logged on or not and** check the **Run with highest privileges** check-box.
 
@@ -263,7 +268,7 @@ Policy|位置|设置
 
 浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows组件** \>  \> Microsoft Defender 防病毒 **实时保护**。
 
- 由于"扫描传入和传出文件"的默认值 (默认) 为 0，因此"双向 (完全访问) "设置的"配置对传入和传出文件和程序活动的监视"的组策略将更改为已禁用。
+ 由于"扫描传入和传出文件"的值 (默认) 为 0，因此"为传入和传出文件和程序活动配置监视"的组策略"双向 (完全访问) "设置将更改为已禁用。
 
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="配置对传入传出文件活动的监视。":::
 
@@ -273,7 +278,7 @@ Policy|位置|设置
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="配置 Windows Defender 智能屏幕资源管理器。":::
  
-2. 浏览到 **计算机配置** > **策略** > **管理** > 模板 **Windows组件** > **Windows Defender SmartScreen** >  **Microsoft Edge**。
+2. 浏览到 **计算机配置** > **策略** > **管理** > 模板 **Windows组件** > Windows Defender **SmartScreen** >  **Microsoft Edge**。
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="配置 Windows Defender 智能屏幕边缘。":::
 
@@ -296,6 +301,12 @@ Policy|位置|设置
 :::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="加入 Microsoft 地图。":::
 
 :::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="需要进一步分析时发送文件示例。":::
+
+> [!NOTE]
+> " **发送所有示例** "选项将提供对二进制文件/脚本/文档的最多分析，这会增加安全状况。
+" **发送安全示例** "选项限制正在分析的二进制文件/脚本/文档的类型，并减少安全状况。 
+
+有关详细信息，[请参阅在 Microsoft Defender 防病毒](enable-cloud-protection-microsoft-defender-antivirus.md) 中启用云保护和云保护和Microsoft Defender 防病毒[。](cloud-protection-microsoft-antivirus-sample-submission.md)
 
 ### <a name="check-for-signature-update"></a>检查签名更新
 

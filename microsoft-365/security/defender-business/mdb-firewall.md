@@ -1,13 +1,13 @@
 ---
-title: 'Microsoft Defender for Business 预览版 (中的防火墙) '
-description: 了解 Microsoft Defender Windows Defender 商业版中的 (防火墙) ，包括配置设置
+title: Microsoft Defender for Business 中的防火墙
+description: 了解 Microsoft Defender Windows Defender中的防火墙，包括配置设置
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,44 +16,50 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: d3fbaa66dd29c0c5ff3dcc2a420d1d05e789bd33
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 0181f0c74bc7a00247b5b0fd49c56b4713d188e8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464952"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317075"
 ---
-# <a name="firewall-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business 预览版 (中的防火墙) 
+# <a name="firewall-in-microsoft-defender-for-business"></a>Microsoft Defender for Business 中的防火墙
 
 > [!IMPORTANT]
-> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 从 2022 年 3 月 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
-Microsoft Defender for Business (预览版) 防火墙的防火墙[Windows Defender功能](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。 防火墙保护通过确定允许哪些网络流量从设备进入或流动的规则来帮助保护设备。 
+Microsoft Defender for Business 包括具有防火墙Windows Defender[功能](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。 防火墙保护通过确定允许哪些网络流量从设备进入或流动的规则来帮助保护设备。 
 
 可以使用防火墙保护指定是允许还是阻止不同位置的设备上的连接。 例如，防火墙设置可以允许连接到组织内部网络的设备的入站连接，但在设备位于不受信任的设备网络上时阻止这些连接。
 
 **本文介绍**：
 
-- [Defender for Business 预览版中的 (防火墙) ](#default-firewall-settings-in-defender-for-business)
-- [可以在 Defender for Business 预览版中配置的 (设置) ](#firewall-settings-you-can-configure-in-defender-for-business)
+- [Defender for Business 中的默认防火墙设置](#default-firewall-settings-in-defender-for-business)
+
+- [可以在 Defender for Business 中配置的防火墙设置](#firewall-settings-you-can-configure-in-defender-for-business)
+
+>
+> **有空吗？**
+> 请参加有关 <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business 的简短调查</a>。 我们非常乐意听取你的宝贵意见！
+>
 
 ## <a name="default-firewall-settings-in-defender-for-business"></a>Defender for Business 中的默认防火墙设置
 
-Microsoft Defender for Business (预览版) 包括默认防火墙策略和设置，可帮助保护组织设备自第一天开始。 一旦组织的设备载入 Microsoft Defender for Business (预览版) ，默认防火墙策略将按如下方式工作：
+Microsoft Defender for Business 包括默认防火墙策略和设置，可帮助保护组织设备自第一天起。 一旦组织的设备载入 Microsoft Defender for Business，你的默认防火墙策略将按如下方式工作：
 
 - 默认情况下，允许从设备进行出站连接，而不考虑位置。
 - 当设备连接到组织的网络时，默认情况下会阻止所有入站连接。
 - 当设备连接到公用网络或专用网络时，默认情况下会阻止所有入站连接。
 
-在 Microsoft Defender for Business (预览) ，你可以定义异常以阻止或允许传入连接。 通过创建自定义规则来定义这些例外。 请参阅 [管理防火墙策略的自定义规则](mdb-custom-rules-firewall.md)。
+在 Microsoft Defender for Business 中，你可以定义例外以阻止或允许传入连接。 通过创建自定义规则来定义这些例外。 请参阅 [管理防火墙策略的自定义规则](mdb-custom-rules-firewall.md)。
 
 ## <a name="firewall-settings-you-can-configure-in-defender-for-business"></a>可以在 Defender for Business 中配置的防火墙设置
 
-Microsoft Defender for Business (预览版) 防火墙通过防火墙Windows Defender保护。 下表列出了可以在 Microsoft Defender for Business 预览版中为防火墙保护 (设置) 。 <br/><br/>
+Microsoft Defender for Business 包括通过防火墙Windows Defender保护。 下表列出了可在 Microsoft Defender for Business 中为防火墙保护配置的设置。 <br/><br/>
 
-| 设置 | 说明 |
+| Setting | 说明 |
 |--|--|
 | **域网络** | 域网络配置文件适用于组织的网络。 域网络的防火墙设置适用于在同一网络上其他设备上启动的入站连接。 默认情况下，传入连接设置为" **全部阻止"**。  |
 | **公共网络** | 公共网络配置文件适用于可在公共场所（如咖啡店或机场）使用的网络。 公用网络的防火墙设置适用于在同一网络上其他设备上启动的入站连接。 由于公共网络可以包含你不知道或不信任的设备，传入连接默认设置为" **全部** 阻止"。  |
@@ -62,12 +68,12 @@ Microsoft Defender for Business (预览版) 防火墙通过防火墙Windows Defe
 
 ## <a name="next-steps"></a>后续步骤
 
-- [在 Microsoft Defender for Business 预览版中 (防火墙) ](mdb-custom-rules-firewall.md)
+- [在 Microsoft Defender for Business 中管理防火墙设置](mdb-custom-rules-firewall.md)
 
 - [了解有关防火墙Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 
-- [在 Microsoft Defender for Business 预览版中查看 (事件) ](mdb-view-manage-incidents.md)
+- [在 Microsoft Defender for Business 中查看和管理事件](mdb-view-manage-incidents.md)
 
-- [响应和缓解 Microsoft Defender for Business 预览版 (中的威胁) ](mdb-respond-mitigate-threats.md)
+- [响应和缓解 Microsoft Defender for Business 中的威胁](mdb-respond-mitigate-threats.md)
 
 - [查看操作中心中的修正操作](mdb-review-remediation-actions.md)

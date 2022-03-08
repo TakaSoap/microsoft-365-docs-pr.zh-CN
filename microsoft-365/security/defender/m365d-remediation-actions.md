@@ -1,6 +1,6 @@
 ---
-title: 方法中的Microsoft 365 Defender
-description: 大致了解在 Microsoft 365 Defender 中执行自动调查后采取的修正Microsoft 365 Defender
+title: 方法中的修正Microsoft 365 Defender
+description: 大致了解在 Microsoft 365 Defender 中执行自动调查后采取的Microsoft 365 Defender
 keywords: 自动化, 调查, 警报, 触发器, 操作, 修正
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,14 +21,14 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: da12be831aa93032b5d087d36e551df0f6370560
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c922213a262fdc9c61d6f79d0205e6ead96fd44a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191511"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326421"
 ---
-# <a name="remediation-actions-in-microsoft-365-defender"></a>方法中的Microsoft 365 Defender
+# <a name="remediation-actions-in-microsoft-365-defender"></a>方法中的修正Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "60191511"
 **适用于：**
 - Microsoft 365 Defender
 
-在系统自动调查期间Microsoft 365 Defender，会针对恶意或可疑项目标识修正操作。 某些类型的修正操作在设备上执行，也称为终结点。 对电子邮件内容执行其他修正操作。 自动调查在采取、批准或拒绝修正操作后完成。
+在系统自动调查期间Microsoft 365 Defender，将识别恶意或可疑项目的修正操作。 某些类型的修正操作在设备上执行，也称为终结点。 对电子邮件内容执行其他修正操作。 自动调查在采取、批准或拒绝修正操作后完成。
 
 > [!IMPORTANT]
 > 修正操作是自动执行还是仅在审批后执行取决于某些设置，例如自动化级别的方式。 若要了解更多信息，请参阅以下文章：
@@ -48,9 +48,9 @@ ms.locfileid: "60191511"
 
 |设备 (终结点) 修正操作  |电子邮件修正操作  |
 |:---------|:---------|
-|- 收集调查包 <br/>- 隔离设备 (此操作可以撤消) <br/>- 载出计算机 <br/>- 释放代码执行 <br/>- 解除隔离 <br/>- 请求示例 <br/>- 限制代码 (此操作可以撤消)  <br/>- 运行防病毒扫描 <br/>- 停止和隔离      |- 单击 (阻止 URL) <br/>- 软删除电子邮件或群集<br/>- 隔离电子邮件<br/>- 隔离电子邮件附件<br/>- 关闭外部邮件转发          |
+|- 收集调查包 <br/>- 隔离 (可以撤消此操作) <br/>- 载出计算机 <br/>- 释放代码执行 <br/>- 解除隔离 <br/>- 请求示例 <br/>- 限制代码 (此操作可以撤消)  <br/>- 运行防病毒扫描 <br/>- 停止和隔离      |- 单击 (阻止 URL) <br/>- 软删除电子邮件或群集<br/>- 隔离电子邮件<br/>- 隔离电子邮件附件<br/>- 关闭外部邮件转发          |
 
-可在操作中心中查看修正操作（无论是等待审批还是 [已完成](m365d-action-center.md)）。
+可在操作中心查看修正操作（无论是等待审批还是 [已完成](m365d-action-center.md)）。
 
 ## <a name="remediation-actions-that-follow-automated-investigations"></a>执行自动调查的修正操作
 
@@ -60,7 +60,7 @@ ms.locfileid: "60191511"
 
 | Verdict    | 受影响的实体    | 结果|
 |------|------|------|
-| 恶意    | 设备 (终结点)     | 如果组织的设备组 ("完全 "，将自动执行修正操作 [](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) **-** 自动) |
+| 恶意    | 设备 (终结点)     | 如果组织的设备组 ("完全"，则自动执行修正 [](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)操作 **-** 自动) |
 | 恶意    | 电子邮件内容 (URL 或附件)  | 建议的修正操作正在等待审批|
 | 可疑    | 设备或电子邮件内容 | 建议的修正操作正在等待审批|
 | 未发现威胁    | 设备或电子邮件内容    | 无需修正操作|
@@ -75,7 +75,7 @@ ms.locfileid: "60191511"
 - [设备或](../defender-endpoint/advanced-hunting-overview.md) 电子邮件上的高级搜寻操作
 - [对](../office-365-security/threat-explorer.md) 电子邮件内容的资源管理器操作，例如将电子邮件移动到垃圾邮件、软删除电子邮件或硬删除电子邮件
 - 手动 [实时响应](/windows/security/threat-protection/microsoft-defender-atp/live-response) 操作，例如删除文件、停止进程和删除计划任务
-- 使用 Microsoft [Defender for Endpoint API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)执行实时响应操作，例如隔离设备、运行防病毒扫描和获取有关文件的信息
+- 使用 [Microsoft Defender for Endpoint API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis) 执行实时响应操作，例如隔离设备、运行防病毒扫描和获取有关文件的信息
 
 ## <a name="next-steps"></a>后续步骤
 

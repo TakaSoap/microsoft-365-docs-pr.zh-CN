@@ -11,8 +11,8 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
@@ -23,19 +23,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 362e8360900f53d7bfc9eccf12d1107091860cb9
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: cc57c2b39466e84d5652ef60c56d6951fbe86714
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903618"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324083"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>尝试Microsoft 365 Defender环境中使用事件响应功能
 
 **适用于：**
 - Microsoft 365 Defender
 
-本文是使用试验环境对事件进行调查和响应的过程中第 2 步Microsoft 365 Defender [2](eval-defender-investigate-respond.md) 步。 有关此过程详细信息，请参阅 [概述](eval-defender-investigate-respond.md) 文章。
+本文是使用试验环境对 Microsoft 365 Defender 事件进行调查和响应过程中的第 2 步（第 [2](eval-defender-investigate-respond.md) 步）。 有关此过程详细信息，请参阅 [概述](eval-defender-investigate-respond.md) 文章。
 
 对模拟攻击[执行事件](eval-defender-investigate-respond-simulate-attack.md)响应后，下面是一些Microsoft 365 Defender功能：
 
@@ -144,7 +144,7 @@ ms.locfileid: "62903618"
 1. 验证租户是否已启用[Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on)。
 2. 确定用于接收电子邮件的目标邮箱。
 
-   - Microsoft Defender 必须监视此邮箱Office 365
+   - 此邮箱必须受 Microsoft Defender 监视，Office 365
 
    - 要求 3 中的设备需要访问此邮箱
 
@@ -160,7 +160,7 @@ ms.locfileid: "62903618"
 
 ### <a name="run-the-simulation"></a>运行模拟
 
-1. 从外部电子邮件帐户，将电子邮件发送到在搜寻环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型<i>包括.pdf、</i>.exe(（如果 <i> </i>) ）或Office文档类型（如 Word 文件）。
+1. 从外部电子邮件帐户，将电子邮件发送到在搜寻环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型<i>包括.pdf、</i>.exe(（) ） <i> </i> 或 Office 文档类型（如 Word 文件）。
 
 2. 打开从设备发送的电子邮件，如搜寻环境要求部分的步骤 3 中的定义。 打开附件或将文件保存到设备。
 
@@ -212,7 +212,7 @@ ms.locfileid: "62903618"
    | where AttachmentCount > 0 and EmailDirection == "Inbound"
    ```
 
-5. 接下来，包括有关附件 (，例如：文件名、) 哈希结果集。 为此，请加入 **EmailAttachmentInfo** 表。 用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId**。
+5. 接下来，包含有关附件 (，例如：文件名、) 哈希结果集。 为此，请加入 **EmailAttachmentInfo** 表。 用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId**。
 
    以下查询还包括一个附加行"| **项目重命名 EmailTimestamp=Timestamp**"，有助于确定与电子邮件相关的时间戳与下一步将添加的文件操作相关的时间戳。
 
@@ -223,9 +223,9 @@ ms.locfileid: "62903618"
    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
    ```
 
-6. 接下来，使用 **EmailAttachmentInfo** 表中的 **SHA256** 值查找在终结点上发生的 **DeviceFileEvents** (文件操作，) 哈希。 此处的常用字段是附件的 SHA256 哈希。
+6. 接下来，使用 **EmailAttachmentInfo** 表中的 **SHA256** 值查找在终结点上发生的 **DeviceFileEvents** (文件操作) 哈希。 此处的常用字段是附件的 SHA256 哈希。
 
-   生成的表现在包含终结点 (Microsoft Defender for Endpoint) 的详细信息，例如设备名称、 (在这种情况下已执行哪些操作、已筛选为仅包括 FileCreated 事件) 以及文件存储位置。 还将包含与进程关联的帐户名称。
+   生成的表现在包含终结点 (Microsoft Defender for Endpoint) 的详细信息，例如设备名称、在这种情况下 (已执行哪些操作、已筛选为仅包括 FileCreated) 事件和存储文件的位置。 还将包含与进程关联的帐户名称。
 
    ```console
    EmailEvents

@@ -1,5 +1,5 @@
 ---
-title: 配置终结点的常规设置
+title: 为终结点配置常规 Defender 设置
 description: 使用设置页配置常规设置、权限、api 和规则。
 keywords: 设置， 常规设置， 权限， api， 规则
 ms.prod: m365-security
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9e7c8b2f810cf94c796f2b2d73520a821db1c01
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: a2d6dd2e7ed6bb353fd4aeb9aaef97854e5f025e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464810"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329581"
 ---
-# <a name="configure-general-settings-for-endpoints"></a>配置终结点的常规设置
+# <a name="configure-general-defender-for-endpoint-settings"></a>为终结点配置常规 Defender 设置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "62464810"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-prefsettings-abovefoldlink)。
 
-使用 **"设置 >** 终结点"菜单修改常规设置、高级功能、启用预览体验、电子邮件通知和自定义威胁情报功能。
+使用"**设置 >** 终结点"菜单修改常规设置、高级功能、启用预览体验、电子邮件通知和自定义威胁情报功能。
 
 ## <a name="in-this-section"></a>本节内容
 

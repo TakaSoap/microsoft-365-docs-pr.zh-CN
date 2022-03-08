@@ -1,6 +1,6 @@
 ---
 title: 在试点环境中Microsoft 365 Defender攻击模拟
-description: 运行攻击模拟Microsoft 365 Defender查看警报和事件的呈现方式、获得见解以及快速修正威胁。
+description: 运行攻击模拟Microsoft 365 Defender查看警报和事件的呈现方式、获得见解并快速修正威胁。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a3e1543ed56580983fec5b7eee6366e817d82079
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 3712875579c7d157fe52a5e115d059fc88b4b6d7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904155"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326491"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>在试点环境中Microsoft 365 Defender攻击模拟
 
@@ -36,7 +36,7 @@ ms.locfileid: "62904155"
 
 准备试点环境后[](eval-defender-investigate-respond.md)，可以测试 Microsoft 365 Defender 的事件响应以及自动调查和修正功能，方法为创建具有模拟攻击的事件，以及使用 Microsoft 365 Defender 门户进行调查和响应。
 
-Microsoft 365 Defender事件是关联警报和关联数据的集合，这些警报和关联数据是攻击事件的一部分。
+事件Microsoft 365 Defender是关联警报和关联数据的集合，这些警报和关联数据是攻击案例的一部分。
 
 Microsoft 365 服务和应用将在检测到可疑或恶意事件或活动时创建警报。 单个警报可提供有关已完成或持续攻击的有价值的线索。 但是，攻击通常对不同类型的实体（如设备、用户和邮箱）使用多种技术。 结果是租户中的多个实体将收到多个警报。
 
@@ -48,13 +48,13 @@ Microsoft 365 服务和应用将在检测到可疑或恶意事件或活动时创
 
 Microsoft 365 Defender门户具有内置功能，可创建对试点环境的模拟攻击：
 
-- 攻击模拟培训，Microsoft 365 Defender for Office 365。[https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator)
+- 攻击模拟培训，Microsoft 365 Defender Office 365。[https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator)
   
   在"Microsoft 365 Defender门户中，选择"电子邮件 **&协作>攻击模拟培训"**。
 
 - 攻击教程& 终结点的 Microsoft 365 Defender 模拟。[https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations)
 
-  在Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，选择终结点 **>教程&模拟**。
+  在Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，选择终结点 **>教程&模拟。**
 
 ### <a name="defender-for-office-365-attack-simulation-training"></a>防御者Office 365攻击模拟培训
 
@@ -95,7 +95,7 @@ Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 3
 
  有关详细信息，请参阅通过 [模拟攻击体验 Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/attack-simulations)。
 
-## <a name="simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional"></a>使用独立的域控制器和客户端设备（可选） (攻击) 
+## <a name="simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional"></a>使用独立的域控制器和客户端设备（可选）模拟 (攻击) 
 
 在此可选事件响应练习中，你将使用 PowerShell 脚本模拟对独立的 Active Directory 域服务 (AD DS) 域控制器和 Windows 设备的攻击，然后调查、修正和解决事件。
 
@@ -109,7 +109,7 @@ Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 3
 
 2. 验证您的域控制器：
 
-   - 运行Windows Server 2008 R2 或更高版本。
+   - 运行 Windows Server 2008 R2 或更高版本。
    - 向 [Microsoft Defender 报告身份并](/azure/security-center/security-center-wdatp) 已启用 [远程管理](/windows-server/administration/server-manager/configure-remote-management-in-server-manager)。
    - 已启用 [Microsoft Defender for Identity 和 Microsoft Defender for Cloud Apps](/cloud-app-security/mdi-integration) 集成。
    - 在测试域中创建了测试用户。 不需要管理员级别的权限。
@@ -123,19 +123,19 @@ Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 3
 
 如果使用租户和设备组，请为测试设备创建专用设备组，并推送到顶层。
 
-一种替代方法是在基础结构服务中托管 AD DS 域控制器，并测试Microsoft Azure虚拟机。 可以使用模拟企业测试实验室指南阶段 [1](/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise#phase-1-create-a-simulated-intranet) 中的说明，但跳过 APP1 虚拟机的创建。
+一种替代方法是在基础结构服务中托管 AD DS 域控制器并测试Microsoft Azure虚拟机。 可以使用模拟企业测试实验室指南阶段 [1](/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise#phase-1-create-a-simulated-intranet) 中的说明，但跳过 APP1 虚拟机的创建。
 
 下面是结果。
 
 ![使用模拟企业测试实验室指南的 Defender 评估环境的终结点。](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png)
 
-你将模拟复杂的攻击，该攻击利用高级技术来隐藏检测。 该攻击枚举域控制器上 (SMB) 服务器消息块，并检索用户设备的最新 IP 地址。 此类攻击通常不包括在受攻击人设备上丢弃的文件，它们仅出现在内存中。 他们通过使用现有系统和管理工具"离开陆地"，将其代码注入系统进程以隐藏其执行。 此类行为允许他们规避检测并保留在设备上。
+你将模拟复杂的攻击，该攻击利用高级技术来隐藏检测。 该攻击枚举域控制器上 (SMB) 打开的服务器消息块，并检索用户设备的最新 IP 地址。 此类攻击通常不包括在受攻击人设备上丢弃的文件，它们仅出现在内存中。 他们通过使用现有系统和管理工具"离开陆地"，将其代码注入系统进程以隐藏其执行。 此类行为允许他们规避检测并保留在设备上。
 
 在此模拟中，我们的示例方案从 PowerShell 脚本开始。 在现实世界中，可能会欺骗用户运行脚本，或者脚本可能从远程连接从先前受感染的设备运行到另一台计算机，这表明攻击者试图在网络中进行后向移动。 检测这些脚本可能很困难，因为管理员通常还远程运行脚本以执行各种管理活动。
 
 ![使用进程注入和 SMB 重新连接攻击图表的无文件 PowerShell 攻击。](../../media/mtp/mtpdiydiagram.png)
 
-在模拟过程中，该攻击将 shellcode 注入一个看起来不一样的过程。 此方案需要使用notepad.exe。 我们选择了此过程进行模拟，但攻击者更有可能针对长时间运行的系统进程，例如svchost.exe。 然后，shellcode 继续联系攻击者的命令和控制 (C2) ，以接收有关如何继续的说明。 该脚本尝试对 DC 服务器中的域控制器 (重新) 。 重新集成允许攻击者获取有关最近用户登录信息的信息。 一旦攻击者获得此信息，他们就可以在网络中进行稍后移动，以到达特定的敏感帐户
+在模拟过程中，该攻击将 shellcode 注入一个看起来不一样的过程。 此方案需要使用notepad.exe。 我们选择了此过程进行模拟，但攻击者更有可能以长时间运行的系统进程为目标，例如svchost.exe。 然后，shellcode 继续联系攻击者的命令和控制 (C2) ，以接收有关如何继续的说明。 该脚本尝试对 DC 服务器中的域控制器 (重新) 。 重新集成允许攻击者获取有关最近用户登录信息的信息。 一旦攻击者获得此信息，他们就可以在网络中进行稍后移动，以到达特定的敏感帐户
 
 > [!IMPORTANT]
 > 为了获得最佳结果，请尽可能遵循攻击模拟说明。
@@ -148,7 +148,7 @@ Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 3
 
 2. 使用测试用户帐户登录到测试设备。
 
-3. 在测试Windows PowerShell打开一个安全窗口。
+3. 在Windows PowerShell打开一个打开窗口。
 
 4. 复制以下模拟脚本：
 
@@ -170,7 +170,7 @@ Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 3
 
 几秒钟后，应用记事本打开。 模拟攻击代码将注入到记事本。 将自动生成的记事本实例保持打开状态，以体验完整方案。
 
-模拟的攻击代码将尝试与外部 IP 地址通信 (模拟 C2 服务器) 然后尝试通过 SMB 重新与域控制器通信。
+模拟攻击代码将尝试与外部 IP 地址通信 (模拟 C2 服务器) 然后尝试通过 SMB 重新对域控制器进行重新连接。
 
 此脚本完成后，你将在 PowerShell 控制台上看到此消息：
 
@@ -187,7 +187,7 @@ To see the Automated Incident and Response feature in action， keep the notepad
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-切换到 SOC 分析员的角度，现在可以开始在 Microsoft 365 Defender 门户中调查攻击。
+切换到 SOC 分析员的角度，现在可以开始在企业门户中调查Microsoft 365 Defender攻击。
 
 1. 打开 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a>。
 
@@ -224,7 +224,7 @@ Microsoft 365 Defender分析关联，并将不同产品的相关警报和调查�
 让我们看一下模拟攻击期间生成的一些警报。
 
 > [!NOTE]
-> 我们将仅演练模拟攻击期间生成的一些警报。 根据测试设备上Windows和Microsoft 365 Defender产品的版本，你可能会看到按略有不同的顺序显示更多警报。
+> 我们将仅演练模拟攻击期间生成的一些警报。 根据测试设备上Windows的 Microsoft 365 Defender 版本，你可能会看到按略有不同的顺序显示更多警报。
 
 ![生成的警报示例。](../../media/mtp/fig6.png)
 
@@ -259,7 +259,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 ##### <a name="alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity"></a>警报：SMB 用户和 IP 地址重新 (源)  (：Microsoft Defender for Identity) 
 
-使用服务器消息块 (SMB) 协议的枚举使攻击者能够获取最近的用户登录信息，这些信息可帮助他们稍后通过网络移动来访问特定的敏感帐户。
+使用服务器消息块 (SMB) 协议的枚举使攻击者能够获取最近的用户登录信息，该信息可帮助他们稍后通过网络移动以访问特定的敏感帐户。
 
 在此检测中，当 SMB 会话枚举针对域控制器运行时，将触发警报。
 
@@ -277,7 +277,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 展开一些更有趣的行为可提供有用的详细信息，例如进程树。
 
-例如，向下滚动，直到找到观察到的警报事件 **"可疑进程注入"**。 选择 **powershell.exe插入** notepad.exe进程事件，以在侧窗格的"事件实体"图下显示此行为的完整进程树。 如有必要，使用搜索栏进行筛选。
+例如，向下滚动，直到找到观察到的警报事件 **"可疑进程注入"**。 选择 **powershell.exe以** notepad.exe进程事件，以在侧窗格的"事件实体"图下显示此行为的完整进程树。 如有必要，使用搜索栏进行筛选。
 
 ![选定 PowerShell 文件创建行为的进程树示例。](../../media/mtp/fig12.png)
 
@@ -314,7 +314,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 在自动调查期间，Microsoft Defender for Endpoint 确定了notepad.exe，该流程作为需要修正的项目之一注入。 作为自动修正的一部分，Defender for Endpoint 会自动停止可疑进程注入。
 
-你可以看到 <i>notepad.exe正在 </i> 测试设备上运行的进程列表中消失。
+你可以看到 <i>notepad.exe从 </i> 测试设备上正在运行的进程列表中消失。
 
 #### <a name="resolve-the-incident"></a>解决事件
 
@@ -324,7 +324,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 ![事件页面示例，其中打开"管理事件"面板，可在其中解决事件。](../../media/mtp/fig16.png)
 
-当事件解决时，它将在事件门户和相关门户中Microsoft 365 Defender关联警报。
+当事件解决时，它将在安全门户和相关门户中Microsoft 365 Defender警报。
 
 这将封装攻击模拟，用于事件分析、自动调查和事件解决。
 

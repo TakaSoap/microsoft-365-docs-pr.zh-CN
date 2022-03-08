@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何使用数据丢失防护策略和工具Microsoft 365敏感信息，并浏览 DLP 生命周期。
-ms.openlocfilehash: 4d6cd204a6aafc261e6648d6f81ea359a5fcdfb8
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: f64fa30ed0f2eddae03a14451c55f95c9e4249a3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354968"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317677"
 ---
 # <a name="learn-about-data-loss-prevention"></a>了解终结点数据丢失防护
 
@@ -38,7 +38,7 @@ Microsoft 365内容分析检测敏感项目，而不只是通过简单的文本�
 
 ## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>DLP 是大型合规性Microsoft 365的一部分
 
-Microsoft 365 DLP 只是一Microsoft 365合规性工具，可用于帮助保护您的敏感项目，无论它们身在何处或出差。 你应了解 Microsoft 365 工具集内的其他工具、它们如何相互关联以及如何更好地协同工作。  请参阅[Microsoft 365合规性工具](protect-information.md)，详细了解信息保护过程。
+Microsoft 365 DLP 只是一Microsoft 365合规性工具，可用于帮助保护您的敏感项目，而不管它们身在何处或出差。 您应该了解 Microsoft 365 合规性工具集内的其他工具，它们如何相互关联，以及如何更好地协同工作。  请参阅[Microsoft 365合规性工具](protect-information.md)，详细了解信息保护过程。
 
 ## <a name="protective-actions-of-dlp-policies"></a>DLP 策略的保护操作
 
@@ -69,11 +69,11 @@ Microsoft 365 DLP 监视和保护对于用户每天使用的应用程序是本�
 
 **DLP 技术规划**
 
-请记住，作为一种技术，DLP 可以监视和保护处于非状态的数据、使用的数据以及 Microsoft 365 服务、Windows 10、Windows 11 和 macOS (Catalina 10.15 及更高版本的) 设备、本地文件共享和本地 SharePoint 中的动态数据。 对不同位置、要监视和保护的数据类型以及发生策略匹配时要采取的操作有规划影响。
+请记住，作为一种技术，DLP 可以监视和保护处于非活动状态的数据、使用的数据以及 Microsoft 365 服务、Windows 10、Windows 11 和 macOS (Catalina 10.15 及更高版本的) 设备、本地文件共享和本地 SharePoint。 对不同位置、要监视和保护的数据类型以及发生策略匹配时要采取的操作有规划影响。
 
 **规划 DLP 的业务流程**
 
-DLP 策略可以阻止禁止的活动，例如通过电子邮件不当共享敏感信息。 在规划 DLP 策略时，必须确定涉及敏感项目的业务流程。 用户业务流程有助于确定应允许的适当用户行为以及应防止的不当用户行为。 应先规划策略，在测试模式下部署策略，并首先通过活动资源管理器评估[](data-classification-activity-explorer.md)其影响，然后再在更严格的模式下应用策略。
+DLP 策略可以阻止禁止的活动，例如通过电子邮件不当共享敏感信息。 在规划 DLP 策略时，必须确定涉及敏感项目的业务流程。 这些业务流程可帮助你识别应允许的适当用户行为以及应防止的不当用户行为。 应先规划策略，在测试模式下部署策略，并首先通过活动资源管理器评估[](data-classification-activity-explorer.md)其影响，然后再在更严格的模式下应用策略。
 
 **DLP 的组织文化规划**
 
@@ -87,14 +87,14 @@ DLP 策略可以阻止禁止的活动，例如通过电子邮件不当共享敏�
 
 - Exchange Online电子邮件
 - SharePoint Online 站点
-- OneDrive 账户
+- OneDrive 帐户
 - Teams 聊天和通道消息
 - Microsoft Cloud App Security
 - Windows 10、Windows 11 和 macOS (加泰罗尼亚 10.15 及更高版本的设备) 设备
 - 本地存储库
 - PowerBI 站点
 
-每个先决条件各不相同。 某些位置（如Exchange）中的敏感项目只需配置适用于它们的策略，就可以将敏感项目放在 DLP 保护之下。 其他项（如本地文件存储库）需要部署 Azure 信息保护 (AIP) 扫描程序。 在激活任何阻止操作之前，你需要准备环境、代码草稿策略并全面测试它们。
+每个先决条件各不相同。 某些位置（如 Exchange）中的敏感项目只需配置适用于它们的策略，就可以将其放在 DLP 保护之下。 其他项目（如本地文件存储库）需要部署 Azure 信息保护 (AIP) 扫描程序。 在激活任何阻止操作之前，你需要准备环境、代码草稿策略并全面测试它们。
 
 ### <a name="deploy-your-policies-in-production"></a>在生产中部署策略
 
@@ -143,8 +143,8 @@ DLP 策略可以阻止禁止的活动，例如通过电子邮件不当共享敏�
 |Exchange 电子邮件| 通讯组|
 |SharePoint 网站 |网站 |
 |OneDrive 账户 |帐户或通讯组 |
-|Teams 聊天和通道消息 |账户 |
-|Windows 10、Windows 11 和 macOS (加泰罗尼亚 10.15 及更高版本的设备) 设备 |用户或组 |
+|Teams 聊天和通道消息 |帐户或通讯组 |
+|Windows 10、Windows 11 和 macOS (加泰罗尼亚 10.15 及更高版本) 设备 |用户或组 |
 |Microsoft Cloud App Security |实例 |
 |本地存储库| 存储库文件路径|
 
@@ -156,10 +156,10 @@ DLP 策略可以阻止禁止的活动，例如通过电子邮件不当共享敏�
 
 4. **选择在满足策略** 条件时要采取的操作 - 操作取决于活动发生的位置。  示例如下：
 
-- SharePoint/Exchange/OneDrive：阻止组织外部人员表单访问内容。 向用户显示提示，并发送电子邮件通知，告知他们正在采取 DLP 策略禁止的操作。
-- Teams聊天和频道：阻止在聊天或频道中共享敏感信息
-- Windows 10、Windows 11 和 macOS (Catalina 10.15 及更高版本) 设备：审核或限制将敏感项目复制到可删除的 USB 设备
-- Office应用：显示一个弹出窗口，通知用户他们正在从事有风险的行为并阻止或阻止但允许替代。
+- SharePoint/Exchange/OneDrive：阻止组织外部人员访问内容。 向用户显示提示，并发送电子邮件通知，告知他们正在采取 DLP 策略禁止的操作。
+- Teams 聊天和频道：阻止在聊天或频道中共享敏感信息
+- Windows 10、Windows 11 和 macOS (加泰罗尼亚 10.15 及更高版本) 设备：审核或限制将敏感项复制到可删除的 USB 设备
+- Office 应用：显示弹出窗口，通知用户他们正在参与有风险的行为，并阻止或阻止但允许替代。
 - 本地文件共享：将文件从存储位置移动到隔离文件夹
 
 > [!NOTE]
@@ -181,11 +181,11 @@ All DLP policies are created and maintained in the Microsoft 365 Compliance cent
 
 ## <a name="viewing-policy-application-results"></a>查看策略应用程序结果
 
-DLP 将大量信息报告Microsoft 365监视、策略匹配和操作以及用户活动。 你将需要使用和操作该信息，以调整策略和对敏感项目采取的会审操作。 遥测首先会进入Microsoft 365中心[](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center)审核日志，然后进行处理，然后转到不同的报告工具。 每个报告工具都有不同的用途。
+DLP 从监视、策略匹配和操作以及用户活动向 Microsoft 365 报告大量信息。 你将需要使用和操作该信息，以调整策略和对敏感项目采取的会审操作。 遥测首先会进入 [Microsoft 365](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) 合规中心审核日志，然后进行处理，然后转到不同的报告工具。 每个报告工具都有不同的用途。
 
 ### <a name="dlp-alerts-dashboard"></a>DLP 警报仪表板
 
-当 DLP 对敏感项目采取操作时，可以通过可配置的警报通知您该操作。 合规性中心在 DLP 警报管理仪表板中提供它们，而不是让这些警报在邮箱中可供你 [查看](dlp-configure-view-alerts-policies.md)。 使用 DLP 警报仪表板配置警报、查看警报、对警报分类并跟踪 DLP 警报的解析。 下面是策略匹配和来自设备的活动生成的警报Windows 10示例。
+当 DLP 对敏感项目采取操作时，可以通过可配置的警报通知您该操作。 合规性中心在 DLP 警报管理仪表板中提供它们，而不是让这些警报在邮箱中可供你 [查看](dlp-configure-view-alerts-policies.md)。 使用 DLP 警报仪表板配置警报、查看警报、对警报分类并跟踪 DLP 警报的解析。 下面是 Windows 10 设备中的策略匹配和活动生成的警报示例。
 
 > [!div class="mx-imgBorder"]
 > ![警报信息](../media/Alert-info-1.png)。
@@ -211,7 +211,7 @@ DLP 页面上的"活动资源管理器"选项卡将" *活动* "筛选器预设�
 
 有关详细信息，请参阅活动 [资源管理器入门](data-classification-activity-explorer.md)
 
-若要了解有关 DLP Microsoft 365，请参阅：
+若要详细了解 Microsoft 365 DLP，请参阅：
 
 - [了解 Microsoft 365 终结点数据丢失防护](endpoint-dlp-learn-about.md)
 - [了解 Microsoft Teams（预览版）中的默认数据丢失防护策略](dlp-teams-default-policy.md)
@@ -219,7 +219,7 @@ DLP 页面上的"活动资源管理器"选项卡将" *活动* "筛选器预设�
 - [了解 Microsoft 合规性扩展（预览版）](dlp-chrome-learn-about.md)
 - [了解数据丢失防护警报仪表板](dlp-alerts-dashboard-learn.md)
 
-若要了解如何使用数据丢失防护来遵守数据隐私法规，请参阅使用 Microsoft 365 (aka.ms/m365dataprivacy) 部署数据隐私[法规](../solutions/information-protection-deploy.md)的信息保护。
+若要了解如何使用数据丢失防护来遵守数据隐私法规，请参阅使用 [Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy) 部署数据隐私法规的信息保护。
 
 ## <a name="licensing-and-subscriptions"></a>许可和订阅
 

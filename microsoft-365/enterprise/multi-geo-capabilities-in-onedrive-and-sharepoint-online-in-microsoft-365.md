@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: admindeeplinkSPO
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
@@ -18,12 +18,12 @@ ms.collection:
 ms.localizationpriority: medium
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: 利用 OneDrive Online 中的多地理位置功能将 Microsoft 365 的触及范围扩展到多个地理区域。
-ms.openlocfilehash: 52bdbeddec29879e5f985dd1dff64db0d04b8072
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 778efca6035dad05ec9bc77298b888e50f381ca1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189029"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330029"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>OneDrive 和 SharePoint Online 中的多地理位置功能
 
@@ -39,15 +39,15 @@ OneDrive 和 SharePoint Online 中的多地理位置功能支持控制共享资�
 
 ## <a name="sharepoint-sites-and-groups"></a>SharePoint 网站和组
 
-可通过 SharePoint 管理中心管理多地理位置功能。 可在[相应的博客文章](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)中找到详细信息。
+多地理位置功能的管理通过管理中心<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint管理中心。</a> 可在[相应的博客文章](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)中找到详细信息。
 
 当用户在多地理环境中创建与 SharePoint 组连接的网站时，他们的 PDL 将用于确定网站及其关联的组邮箱的创建地理位置。 （如果尚未设置用户的 PDL 值，或已将其设置为未配置为附属位置的地理位置，则会在中心位置创建站点和邮箱。）
 
-Microsoft 365、Exchange、OneDrive、SharePoint 和 Teams 服务不是多地理位置服务。 但是Microsoft 365创建的所有组都将使用创建者的 PDL 及其 Exchange 组邮箱进行配置，SharePoint 站点将在相应的地理位置中设置。 
+Microsoft 365、Exchange、OneDrive、SharePoint 和 Teams 服务不是多地理位置服务。 但是Microsoft 365创建的所有组都将使用创建者的 PDL 及其 Exchange 组邮箱进行配置，SharePoint 网站将在相应的地理位置中预配。 
 
 ## <a name="managing-the-multi-geo-environment"></a>管理多地理位置环境
 
-多地理位置环境的设置和管理是通过 SharePoint 管理中心完成的。 
+通过管理中心设置和管理多地理位置SharePoint<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">管理。</a> 
 
 ![管理中心中地理位置页面SharePoint屏幕截图。](../media/sharepoint-multi-geo-admin-center.png)
 

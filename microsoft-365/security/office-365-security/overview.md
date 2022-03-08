@@ -1,5 +1,5 @@
 ---
-title: Office 365安全，包括 Microsoft Defender for Office 365 和 Exchange Online Protection
+title: Office 365安全，包括适用于 Office 365 和 Exchange Online Protection
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性, 从 EOP 到 Defender for Office 365 计划 1 和 2, 标准与严格安全配置等。 了解自己拥有的财产以及如何保护财产。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2866fd9c0da06d9c4f8288f63666842460e85e27
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: 20bb1dcf9c34f0f7507d8fec7c9025de03461533
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818500"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317019"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Microsoft Defender for Office 365安全概述
 
@@ -85,7 +85,7 @@ Office 365 安全性的核心是 EOP 保护。 Microsoft Defender for Office 365
 
 |阻止/检测|调查|响应|
 |---|---|---|
-|技术包括：<ul><li>垃圾邮件</li><li>网络钓鱼</li><li>恶意软件</li><li>批量邮件</li><li>欺骗智能</li><li>模拟检测</li><li>管理员隔离</li><li>管理员和用户的"误报"和"漏报"提交</li><li>允许/阻止 URL 和文件</li><li>报告</li></ul>|<li>审核日志搜索</li><li>邮件跟踪</li>|<li>使用 ZAP (零时差自动清除) </li><li>允许列表和阻止列表精简和测试</li>|
+|技术包括：<ul><li>垃圾邮件</li><li>网络钓鱼</li><li>恶意软件</li><li>批量邮件</li><li>欺骗智能</li><li>模拟检测</li><li>管理员隔离</li><li>管理员和用户的"误报"和"漏报"提交</li><li>允许/阻止 URL 和文件</li><li>报告</li></ul>|<li>审核日志搜索</li><li>邮件跟踪</li>|<li>零时差自动清除 (ZAP) </li><li>允许列表和阻止列表精简和测试</li>|
 |
 
 如果您想深入了解EOP，请 **[跳至本文](exchange-online-protection-overview.md)**。
@@ -112,7 +112,7 @@ Microsoft Defender for Office 365 计划 1 还添加了 **实时检测** 以进�
 
 因此，Microsoft Defender for Office 365 计划 2 在 ***调查和响应*** 方面进行了扩展，并增加了新的搜寻功能。 自动化。
 
-在 Microsoft Defender for Office 365 计划 2 中，主要的搜索工具称为 **威胁浏览器** 而不是实时检测。 如果你在导航到安全中心门户时看到威胁Microsoft 365 Defender，则你已使用 Microsoft Defender for Office 365 P2。
+在 Microsoft Defender for Office 365 计划 2 中，主要的搜索工具称为 **威胁浏览器** 而不是实时检测。 如果你在导航到安全中心门户时看到威胁资源管理器Microsoft 365 Defender，则你已使用 Microsoft Defender for Office 365 P2。
 
 如果深入了解 Microsoft Defender for Office 365 计划 1 和 2，请 **[跳至本文](defender-for-office-365.md)**。
 
@@ -125,7 +125,7 @@ Microsoft Defender for Office 365 计划 1 还添加了 **实时检测** 以进�
 
 |Defender for Office 365 计划 1|Defender for Office 365 计划 2|
 |---|---|
-|配置、保护和检测功能： <ul><li>[安全附件](safe-attachments.md)</li><li>[安全链接](safe-links.md)</li><li>[用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 中的防钓鱼保护](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[实时检测](threat-explorer.md)</li></ul>|Defender for Office 365 计划 1 功能 <p> --- + --- <p> 自动化、调查、补救措施和教育功能： <ul><li>[威胁跟踪器](threat-trackers.md)</li><li>[威胁资源管理器](threat-explorer.md)</li><li>[自动调查和响应](office-365-air.md)</li><li>[攻击模拟培训](attack-simulation-training.md)</li><li>[Microsoft 365 Defender高级搜寻](advanced-hunting-overview.md)</li><li>[Microsoft 365 Defender事件](investigate-incidents.md)</li><li>[Microsoft 365 Defender警报](investigate-alerts.md)</li></ul>|
+|配置、保护和检测功能： <ul><li>[安全附件](safe-attachments.md)</li><li>[安全链接](safe-links.md)</li><li>[用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 中的防钓鱼保护](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[实时检测](threat-explorer.md)</li></ul>|Defender for Office 365 计划 1 功能 <p> --- + --- <p> 自动化、调查、补救措施和教育功能： <ul><li>[威胁跟踪器](threat-trackers.md)</li><li>[威胁资源管理器](threat-explorer.md)</li><li>[自动调查和响应](office-365-air.md)</li><li>[攻击模拟培训](attack-simulation-training.md)</li><li>[通过高级搜寻主动搜寻Microsoft 365 Defender](../defender/advanced-hunting-overview.md)</li><li>[调查事件Microsoft 365 Defender](../defender/investigate-incidents.md)</li><li>[调查警报Microsoft 365 Defender](../defender/investigate-alerts.md)</li></ul>|
 
 - Office 365 E5、Office 365 A5 和 Microsoft 365 E5 中包含 Microsoft Defender for Office 365 计划 2。
 
@@ -137,7 +137,7 @@ Microsoft Defender for Office 365 计划 1 还添加了 **实时检测** 以进�
 
 - 如果你当前的订阅不包括 Microsoft Defender for Office 365 并希望订阅，请[与销售人员联系以开始试用](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)，并了解 Defender for Office 365 如在你的组织使用。
 
-- Microsoft Defender Office 365 P2 客户有权访问 Microsoft 365 Defender **集成**，以高效地检测、审阅和响应事件和警报。
+- Microsoft Defender for Office 365 P2 客户有权访问 **Microsoft 365 Defender 集成** 以有效检测、查看和响应事件和警报。
 
 > [!TIP]
 > ***预览体验成员提示** _。 可以使用 docs.microsoft.com 目录，以了解 EOP和 Microsoft Defender for Office 365。 浏览回到此页面，[Office 365 安全性概览](index.yml)，会在侧栏中注意到目录组织。 它从部署（包括迁移）开始，然后继续进行预防、检测、调查和响应。 <p> 此结构进行了划分，因此_ *安全管理** 主题后面是 **安全操作** 主题。 如果你是任一工作角色的新成员，请使用此提示中的链接以及你对目录的知识来帮助了解工作空间。 记住随时随地使用 *反馈链接* 和 *评价文章*。 反馈有助于我们改进所提供的服务。

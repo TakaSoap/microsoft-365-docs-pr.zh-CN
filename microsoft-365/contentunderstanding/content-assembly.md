@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 网站中的内容程序集创建SharePoint Syntex
+title: 使用 Microsoft 网站中的内容程序集SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何使用 Microsoft SharePoint Syntex 中的内容程序集自动创建文档和其他SharePoint Syntex。
-ms.openlocfilehash: 9f8a02a845afa93282158051eb746e0cb9a0171d
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: f2e8c601e8a7242524cb323d099975f6600cce05
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187277"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318881"
 ---
-# <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>使用 Microsoft 网站中的内容程序集创建SharePoint Syntex
+# <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>使用 Microsoft 网站中的内容程序集SharePoint Syntex
 
-您可以使用 SharePoint Syntex自动生成标准重复业务文档，例如合同、工作声明、服务协议、同意书、销售说明和通信。 通过使用内容程序集，您可以更快速、更一致地执行所有这些操作，并且更不容易SharePoint Syntex。
+您可以使用 SharePoint Syntex自动生成标准重复业务文档，例如合同、工作声明、服务协议、同意书、销售说明和通信。 通过使用内容程序集，您可以更快速、更一致地执行所有这些操作，并且不易SharePoint Syntex。
 
-使用内容程序集，可以使用现有文档创建新式模板，然后使用该模板将 SharePoint 列表或用户输入作为数据源自动生成新内容。
+使用内容程序集，您可以使用现有文档创建新式模板，然后使用该模板使用 SharePoint 列表或用户输入作为数据源自动生成新内容。
 
 > [!NOTE]
 > 您必须是许可用户SharePoint Syntex访问和使用内容程序集功能。 您还必须具有管理列表SharePoint权限。
@@ -33,16 +33,16 @@ ms.locfileid: "62187277"
 
 按照以下步骤创建新式模板。
 
-1. 在 Sharepoint 文档库中，选择"**新建**  >  **创建新式模板"。** 
+1. 从 Sharepoint 文档库中，选择 **"新建"** > **"创建新式模板"**。 
  
    ![突出显示"创建新式模板"选项的文档库屏幕截图。](../media/content-understanding/content-assembly-create-template-1.png)
 
-2. 选择要用作创建新式模板的基础的现有 Word 文档，然后选择"打开 **"。** 
+2. 选择要用作创建新式模板基础的现有 Word 文档，然后选择"打开 **"**。 
  
    ![选择文档的上载页面的屏幕截图。](../media/content-understanding/content-assembly-create-template-2.png)
 
    > [!NOTE]
-   > 目前，只能上载 Word 文档（.docx 扩展名) 创建模板。 Upload存储或桌面访问 Word 文档。
+   > 目前，只能上载 Word 文档（.docx 扩展名) 创建模板。 Upload本地存储或桌面访问 Word 文档。
 
 3. 上载文档后，该文档将显示在 template studio 中，您可以在其中将文档转换为模板。
  
@@ -85,34 +85,34 @@ ms.locfileid: "62187277"
 
    ![显示"所有占位符"面板的模板查看器的屏幕截图，该面板用于从SharePoint输入。](../media/content-understanding/content-assembly-create-template-6.png)
 
-2. 在"**作者如何填写此** 占位符"部分，选择"从列表或库的列中的选项中选择"，然后选择"选择 **"。**
+2. 在" **作者如何填充此占位符"部分** ，选择列表或库列中的"从选项中选择 **"**，然后选择"选择 **"**。
 
-3. 在"**选择用于添加源列的列表**"页上，选择要使用的列表，然后选择"下一步 **"。**
+3. 在 **"选择要添加源列的列表** "页上，选择要使用的列表，然后选择"下一步 **"**。
 
    ![Screenshot of the Select a list for adding a source column page showing lists.](../media/content-understanding/content-assembly-create-template-7.png)
 
-4. 在"**从现有列表选择** 源列"页上，选择要与占位符关联的列名称，然后选择"保存 **"。** 
+4. 在" **从现有列表选择** 源列"页上，选择要与占位符关联的列名称，然后选择"保存 **"**。 
 
    ![Screenshot of the Select a source column from the existing list page showing column names.](../media/content-understanding/content-assembly-create-template-8.png)
 
-    如果要再次查看列表的原始页面，请选择"转到 (列表名称) 列表底部的"链接"。
+    如果要再次查看列表的原始页面，请选择"转到 (列表名称) 列表底部的链接。
 
 5. 完成后，将看到列表字段已与占位符关联。
 
    ![Screenshot of the All placeholders panel showing the list field associated with the placeholder.](../media/content-understanding/content-assembly-create-template-9.png)
 
-6. 如果希望用户能够手动添加输入，除了从列表中选择之外，请选择"允许作者 **添加新选项"。** 在这种情况下，手动输入的默认值数据类型 *文本单行 。* 此外，作者输入的值将仅用于生成文档。 它们不会添加到列表SharePoint列表。
+6. 如果希望用户能够手动添加输入，除了从列表中选择之外，请选择"允许作者 **添加新选择"**。 在这种情况下，手动输入文本的默认值数据类型 *单行文本*。 此外，作者输入的值将仅用于生成文档。 它们不会添加到列表SharePoint列表。
  
 你可以创建所需多的占位符。 完成后，可以选择将模板另存为草稿或发布模板。
 
-   - **保存草稿** – 将模板另存为草稿，你稍后可以访问它。 通过从文档库中选择"新建编辑"菜单，可以从"新式模板"部分查看、编辑或  >  发布保存的草稿。 
-   - **发布** – 发布组织中其他用户用于创建文档的模板。 通过从文档库中选择"新建编辑"菜单，可以从"新式模板"部分查看、编辑或  >  取消发布已发布的模板。 
+   - **保存草稿** – 将模板另存为草稿，你稍后可以访问它。 通过从文档库中选择 > "新建""编辑""新建"菜单，可以从"新式模板"部分 **查看**、编辑或发布保存的草稿。 
+   - **发布** – 发布组织中其他用户用于创建文档的模板。 通过从文档库中选择 > "新建""编辑""新建"菜单，可以从"新式模板"部分查看、编辑或取消发布已发布的模板。 
 
 ## <a name="edit-a-modern-template"></a>编辑新式模板
 
 如果需要编辑现有模板或者删除或取消发布模板，请按照以下步骤操作。
 
-1. 从 Sharepoint 文档库中，选择"**新建**  >  **编辑""新建"菜单**。 
+1. 从 Sharepoint 文档库中，选择 **"新建** > **""新建"菜单**。 
  
    ![突出显示"编辑新建"菜单选项的文档库屏幕截图。](../media/content-understanding/content-assembly-edit-template-1.png)
 
@@ -122,11 +122,11 @@ ms.locfileid: "62187277"
 
 3. 编辑已发布的模板或草稿模板：
 
-   - 对于 **"已发布的模板"，** **选择**   "编辑"以打开可在其中编辑已发布模板的模板 Studio。 还可以选择删除或取消发布模板。 
+   - 对于 **"已发布的模板"**，选择  **"编辑** "以打开可在其中编辑已发布模板的模板 Studio。 还可以选择删除或取消发布模板。 
  
       ![显示已发布模板的"新式模板"部分屏幕截图。](../media/content-understanding/content-assembly-edit-published.png)
 
-   - 对于 **"草稿模板"，** **选择**   "编辑"以打开可在其中编辑草稿模板的 template studio。 您还可以选择删除或发布模板。
+   - 对于 **草稿模板**， **selectEditto**  open the template studio where you can edit the draft template. 您还可以选择删除或发布模板。
  
       ![显示草稿模板的"新式模板"部分屏幕截图。](../media/content-understanding/content-assembly-edit-draft.png)
 
@@ -140,7 +140,7 @@ ms.locfileid: "62187277"
 
 2. 模板将在 template studio 中打开。
 
-3. 在"**从模板创建文档"面板** 上，输入信息，然后选择"**创建文档"。**
+3. 在" **从模板创建文档"面板** 上，输入信息，然后选择" **创建文档"**。
 
    ![显示"从模板创建文档"面板的文档库屏幕截图。](../media/content-understanding/content-assembly-create-document-2.png)
 
@@ -150,7 +150,7 @@ ms.locfileid: "62187277"
       - 如果能够唯一标识与同一列表关联的占位符的记录，自动填充占位符值。
 
 > [!NOTE]
-> - 目前，Microsoft Word模板仅支持) 文档 (.docx 扩展名。 在上载文档之前，请确保 Word 文档未启用 **跟踪更改** 或注释。 如果文档包含图像的文本占位符，请确保它们不是文本换行的。
+> - 目前，Microsoft Word模板仅支持) 文档 (.docx 扩展名。 在上载文档之前，请确保 Word 文档未启用 **跟踪更改** 或注释。 如果文档包含图像的文本占位符，请确保它们不是文本换行的。 目前，我们 **不支持** Word 中的内容控件。 如果要从包含内容控件的 Word 文档创建模板，请在创建新式模板之前将其删除。
 >- 模板和文档与一个文档库相关联。 若要在另一个文档库中使用该模板，您需要在该文档库中再次创建模板。
 >- 用于创建新式模板的上载文档将另存为单独的副本，并放置在文档库的 /forms 目录中。 磁盘上的原始文件不会受到影响。
 >- 只能为文本创建占位符。 目前，不支持图像、智能图片、表格和项目符号列表。

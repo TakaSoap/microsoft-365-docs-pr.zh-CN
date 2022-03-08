@@ -2,8 +2,8 @@
 title: 如果你的组织中的其他人已注册你的域，则你的域可能已被占用
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
 description: '了解如何使用工作或学校电子邮件注册 Microsoft 联机服务，无需 IT 部门参与。 '
-ms.openlocfilehash: eaae0c10f818e6fdd1cd702b84b2826bf2f5b7ea
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: adcbad88e098a06d5220e10a0c6d365b47bd2303
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192675"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319807"
 ---
 # <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>如果其他人已注册你的域，则你的域可能会使用
 

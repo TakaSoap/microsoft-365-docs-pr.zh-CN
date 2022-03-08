@@ -1,9 +1,9 @@
 ---
 title: 步骤 1. 配置安全基线
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
 description: 使用安全基线来保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: 66218d15a36faa510bd246b46dbc0dcd0f9948fb
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 22092994765e9015421c21f2ee057c63463d594d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887516"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320181"
 ---
 # <a name="step-1-configure-security-baselines"></a>步骤 1. 配置安全基线
 

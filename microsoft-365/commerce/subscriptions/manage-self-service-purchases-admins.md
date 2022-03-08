@@ -2,8 +2,8 @@
 title: '管理管理员管理员 (自助服务) '
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_ssp
 - AdminSurgePortfolio
 - okr_smb
-- commerce_ssp
 search.appverid:
 - MET150
 description: 管理员可以了解如何管理其组织中用户购买的自助服务。
 ms.date: 03/26/2021
-ms.openlocfilehash: 854a013779f9d1b3d141b1770860740f633e8130
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 19f276107de7b1dd1053e500d249950a8700ac41
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371912"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319723"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助购买（管理员）
 
@@ -47,7 +47,7 @@ ms.locfileid: "61371912"
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
 ::: moniker-end
 
-2. 在"**产品**"选项卡上，选择筛选器图标，然后选择"**自助服务"。**
+2. 在" **产品** "选项卡上，选择筛选器图标，然后选择" **自助服务"**。
 3. 若要查看有关订阅的更多详细信息，请从列表中选择一个。
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>查看谁拥有自助服务购买订阅的许可证
@@ -67,12 +67,12 @@ ms.locfileid: "61371912"
 
 ::: moniker-end
 
-2. 选择筛选器图标，然后选择 **"自助服务"。**
+2. 选择筛选器图标，然后选择 **"自助服务"**。
 3. 选择一个产品以查看分配给人员的许可。
     > [!NOTE]
     > 如果产品有多个购买，则该产品仅列出一次，"可用数量"列显示为该产品购买的所有订阅总数。
 4. " **用户** "列表按进行自助购买的用户的姓名进行分组。
-5. 若要导出具有这些订阅许可证的用户列表，请选择要导出的订阅，然后选择"导出 **用户"。**
+5. 若要导出具有这些订阅许可证的用户列表，请选择要导出的订阅，然后选择"导出 **用户"**。
 
 ## <a name="disable-or-enable-self-service-purchases"></a>禁用或启用自助服务购买
 
@@ -102,7 +102,7 @@ ms.locfileid: "61371912"
 
 ::: moniker-end
 
-2. 找到并选择要购买的产品，然后选择"购买 **"。**
+2. 找到并选择要购买的产品，然后选择"购买 **"**。
 3. 完成其余步骤以完成购买。
 4. 按照查看 [谁拥有](#view-who-has-licenses-for-a-self-service-purchase-subscription) 自助购买订阅的许可证中的步骤导出要下一步引用的用户列表。
 5. 将许可证分配给在其他订阅中拥有许可证的每个人。 有关完整步骤，请参阅 [向用户分配许可证](../../admin/manage/assign-licenses-to-users.md)。
@@ -130,16 +130,16 @@ ms.locfileid: "61371912"
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到" **帐单** > **""你的产品"** 页面。
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>， go to the **Billing** > **Your products** page.
 
 ::: moniker-end
 
-2. 在"**产品**"选项卡上，选择筛选器图标，然后选择"**自助服务"。**
+2. 在" **产品** "选项卡上，选择筛选器图标，然后选择" **自助服务"**。
 3. 选择要接管的订阅。
-4. 在订阅详细信息页面上的订阅 **和** 设置部分中，选择 **控制此订阅**。
-5. 在右侧窗格中，选择"**移动用户"。**
-6. 选择要将用户移动到的产品，然后选择"**移动用户"。**
-7. 在"**将用户移动到"** 框中，选择"**移动用户"。** 移动过程可能需要几分钟。 不要在进程运行时关闭浏览器。
+4. 在订阅详细信息页面上的"订阅 **和** 设置"部分，选择 **"控制此订阅"**。
+5. 在右侧窗格中，选择" **移动用户"**。
+6. 选择要将用户移动到的产品，然后选择" **移动用户"**。
+7. 在" **将用户移动到"** 框中，选择" **移动用户"**。 移动过程可能需要几分钟。 不要在进程运行时关闭浏览器。
 8. 移动过程完成后，关闭" **移动已完成"窗格**。
 9. 在订阅详细信息页面上，自助 **购买的** 订阅的订阅状态将显示为 **已删除**。
 
@@ -155,16 +155,16 @@ ms.locfileid: "61371912"
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到" **帐单** > **""你的产品"** 页面。
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>， go to the **Billing** > **Your products** page.
 
 ::: moniker-end
 
-2. 在"**产品**"选项卡上，选择筛选器图标，然后选择"**自助服务"。**
+2. 在" **产品** "选项卡上，选择筛选器图标，然后选择" **自助服务"**。
 3. 选择想要取消的订阅。
-4. 在订阅详细信息页面上的订阅 **和** 设置部分中，选择 **控制此订阅**。
-5. 在右侧窗格中，选择"取消 **订阅"。**
+4. 在订阅详细信息页面上的"订阅 **和** 设置"部分，选择 **"控制此订阅"**。
+5. 在右侧窗格中，选择"取消 **订阅"**。
 6. 从下拉列表中选择取消原因，然后选择取消 **订阅**。
-7. 在 **"确定要取消？"框中，** 选择"取消 **订阅"。**
+7. 在 **"确定要取消吗？"框中** ，选择"取消 **订阅"**。
 8. 关闭右窗格。
 9. 在订阅详细信息页面上， **订阅状态** 将显示为 **已删除**。
 
@@ -172,4 +172,4 @@ ms.locfileid: "61371912"
 
 有关自助服务购买的常见问题，请参阅 [自助服务购买常见问题](self-service-purchase-faq.yml)解答。
 
-如果你有问题或需要自助服务购买帮助， [请联系支持](../../admin/get-help-support.md)人员。
+如果你有问题或需要帮助进行自助服务购买，请联系 [支持人员](../../admin/get-help-support.md)。

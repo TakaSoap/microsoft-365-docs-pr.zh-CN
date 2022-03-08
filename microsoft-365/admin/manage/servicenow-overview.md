@@ -2,8 +2,8 @@
 title: Microsoft 365 支持与 ServiceNow 配置概述集成
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,24 +17,24 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow 的作用域认证应用程序安装和配置指南。
-ms.openlocfilehash: 99024eabd4009dcdd14b3d999afe5ee1875fe23e
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: dc69f6210eda4ba04dfd0aecf9795bfcba2efe22
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825320"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324321"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Microsoft 365 支持与 ServiceNow 配置概述集成
 
 以下内容适用于最低版本为 **1.0.7** Microsoft 365支持集成应用。
 
-**Microsoft 365支持集成** 使您可以将Microsoft 365、支持和服务运行状况与 ServiceNow 实例集成。 你可以研究 Microsoft 已知和已报告的问题、解决事件、使用 Microsoft 建议的解决方案完成任务，并在必要时上报给 Microsoft 人员协助支持。
+**Microsoft 365集成** 使您可以将Microsoft 365、支持和服务运行状况与 ServiceNow 实例集成。 你可以研究 Microsoft 已知和已报告的问题、解决事件、使用 Microsoft 建议的解决方案完成任务，并在必要时上报给 Microsoft 人员协助支持。
 
 有关 **Microsoft 365** ServiceNow 存储支持集成应用的信息，请转到 [ServiceNow 应用商店](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)。
 
 ## <a name="key-features"></a>关键功能
 
-这些是你将使用 ServiceNow 实例中的 Microsoft 365 集成应用获得的关键功能：
+这些是你将使用 ServiceNow 实例中的Microsoft 365集成应用获得的关键功能：
 
 - 服务运行状况事件：有关已知 Microsoft 服务运行状况事件的信息，包括用户影响、范围、当前状态和下一次预期更新。 使用机器学习，ServiceNow 事件根据简短说明字段与 Microsoft 服务运行状况事件匹配。
 
@@ -82,14 +82,17 @@ ms.locfileid: "62825320"
 
 安装Microsoft 365集成应用程序后，将创建两个应用程序跨作用域访问。 如果未成功创建，请手动创建它们。
 
-## <a name="what-configuration-is-right-for-your-organization"></a>哪些配置适合你的组织？
+## <a name="setup-the-integration"></a>设置集成
 
 下载应用后，导航到MICROSOFT 365安装向导以完成安装过程。
 :::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="安装向导":::
 
 您可以通过访问以下页面了解有关步骤的信息：
-- 如果 ServiceNow 环境允许基本身份验证 (通过 ServiceNow 用户凭据) 访问入站 Web 服务调用，请按照设置 [Microsoft 365 支持与 ServiceNow](servicenow-basic-authentication.md) 基本身份验证集成中的说明进行操作。
-- 如果 ServiceNow 环境不允许使用 (用户凭据) 访问入站 Web 服务调用的基本身份验证，请按照设置 [Microsoft 365 支持与 Azure AD 身份验证令牌集成中的说明](servicenow-aad-oauth-token.md)进行操作。
-  - 此配置将需要一个 SSO 租户，以便AAD身份验证令牌正常工作。
+- 如果 ServiceNow 环境允许基本身份验证 (通过 ServiceNow 用户凭据) 访问入站 Web 服务调用，请按照设置 Microsoft 365 [支持与 ServiceNow](servicenow-basic-authentication.md) 基本身份验证集成中的说明进行操作。
+- 如果 ServiceNow 环境不允许基本身份验证 (对入站 Web 服务调用使用 ServiceNow 用户凭据) 访问，请按照设置 [Microsoft 365 支持与 Azure AD 身份验证](servicenow-aad-oauth-token.md)令牌集成中的说明进行操作。
+  - 此配置需要 SSO 租户，以便AAD身份验证令牌正常工作。
 
 若要了解每个功能，请参阅Microsoft 365[集成。](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)
+
+> [!NOTE]
+> 此应用在受管制或受限环境中不受支持。

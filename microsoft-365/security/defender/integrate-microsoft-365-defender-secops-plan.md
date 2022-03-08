@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bb3759b673475690a49e0909e2da67644990950e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 45abe5dfa77e9ed224f2d55e15986eba732f2aff
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172291"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326430"
 ---
 # <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>步骤 1. 规划Microsoft 365 Defender准备情况
 
@@ -36,7 +36,7 @@ ms.locfileid: "62172291"
 **适用于：**
 - Microsoft 365 Defender
 
-无论安全操作的当前成熟度如何，与安全运营中心和 SOC (一) 。 尽管没有适合每个组织的单一模型，但有些方面比其他方面更常见。 
+无论安全操作的当前成熟度如何，与 SOC 安全运营中心 (一) 。 尽管没有适合每个组织的单一模型，但有些方面比其他方面更常见。 
 
 以下各节介绍 SOC 的核心功能。
 
@@ -50,11 +50,11 @@ SOC 是安全事件和事件的防护线。 当事件、威胁、攻击、策略
 
 ## <a name="centralize-monitoring-and-logging-of-your-organizations-security-sources"></a>集中监视和记录组织的安全源 
 
-通常，SOC 团队的核心功能是确保所有安全设备（如防火墙、入侵防护系统、数据丢失防护系统、危险和漏洞管理 系统和标识系统）都正常运行并受到监视。 SOC 团队将处理更广泛的网络操作，如标识、DevOps、云、应用程序、数据科学和其他业务团队，以确保集中和安全的安全信息分析。 此外，SOC 团队还负责维护可用和可读格式的数据日志，其中可能包括解析和规范化不同的格式。
+通常，SOC 团队的核心功能是确保所有安全设备（如防火墙、入侵防护系统、数据丢失防护系统、危险和漏洞管理 系统和标识系统）正常运行并受到监视。 SOC 团队将处理更广泛的网络操作，如标识、DevOps、云、应用程序、数据科学和其他业务团队，以确保集中和安全的安全信息分析。 此外，SOC 团队还负责维护可用和可读格式的数据日志，其中可能包括解析和规范化不同的格式。
 
 ## <a name="establish-red-blue-and-purple-team-operational-readiness"></a>建立红色、蓝色和紫色团队操作准备情况
 
-每个 SOC 团队都应在响应网络事件时测试其准备情况。 可通过培训练习完成测试，例如与 IT、安全性和业务级别的不同人员一起运行的表格和做法。 个人培训练习团队基于代表性角色创建，并扮演防御者 (蓝队) 、攻击者 (红队) 的角色，或者作为寻求通过练习 (紫色团队) 中发现的优势和弱点改进蓝队和红队的方法和技术的探索者。
+每个 SOC 团队都应在响应网络事件时测试其准备情况。 可通过培训练习完成测试，例如与 IT、安全性和业务级别的不同人员一起运行的表格和做法。 个人培训练习团队基于代表性角色创建，并扮演防御者 (蓝队) 、攻击者 (红队) 的角色，或者作为寻求改进蓝队和红队的方法和技术（通过练习 (紫色团队) 中发现的优势和弱点）的探索者。
 
 ## <a name="next-step"></a>后续步骤
 

@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,23 +22,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ff9f6159bcfb85bd5c423b9775e70edd0ece2209
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 3139cab64a967ed65a16867b53ad57a6913afd2c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903923"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325889"
 ---
-# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>步骤 3. 对第一个事件执行事后评审
+# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>第 3 步。 对第一个事件执行事后评审
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **适用于：**
 - Microsoft 365 Defender
 
-国家标准和技术协会 (NIST) 建议，一旦采取所有步骤从攻击中恢复，组织必须检查事件以从事件中学习，并改进安全状况或流程。 在准备下一个事件时，评估事件处理的各个方面变得非常重要。
+美国国家标准和技术协会 (NIST) 建议，一旦采取所有步骤从攻击中恢复，组织必须检查事件以从事件中学习，并改进安全状况或流程。 在准备下一个事件时，评估事件处理的各个方面变得非常重要。
 
-Microsoft 365 Defender组织提供符合 [MITRE ATT 和 CK](https://attack.mitre.org/) Framework 的警报，帮助&活动。 所有 Microsoft Defender 解决方案都根据 ATT 和 CK 策略&标记攻击。
+Microsoft 365 Defender组织提供符合 [MITRE ATT 和 CK](https://attack.mitre.org/) Framework 的警报，帮助&活动。 所有 Microsoft Defender 解决方案根据 ATT 和 CK 策略&标记攻击。
 
 通过向此行业框架映射警报，你可以：
 

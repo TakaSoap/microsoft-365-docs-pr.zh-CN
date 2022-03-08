@@ -1,6 +1,6 @@
 ---
 title: 在Windows Azure 虚拟桌面中载入多会话设备
-description: 阅读本文中有关在 Azure 虚拟Windows加入多会话设备
+description: 阅读本文中有关在 Azure 虚拟Windows中加入多会话设备
 keywords: Azure 虚拟桌面， WVD， microsoft defender， 终结点， 载入
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d09898b29b9efda6b6911e9542d75d36a8e38f7e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d97326987af49b9bac44b3578884c72d756d5595
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61867633"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324055"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>在Windows Azure 虚拟桌面中载入多会话设备
 
@@ -32,9 +32,9 @@ ms.locfileid: "61867633"
 
 Microsoft Defender for Endpoint 支持监视 VDI 和 Azure 虚拟桌面会话。 根据组织的需求，可能需要实现 VDI 或 Azure 虚拟桌面会话，以帮助员工从非托管设备、远程位置或类似方案访问公司数据和应用。 通过 Microsoft Defender for Endpoint，你可以监视这些虚拟机的异常活动。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-熟悉非永久性 [VDI 的注意事项](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 虽然[Azure 虚拟](/azure/virtual-desktop/overview)桌面不提供非持久性选项，但它确实提供了使用黄金 Windows 映像的方法，可用于预配新主机和重新部署计算机。 这会增加环境中的变化，从而影响在 Microsoft Defender 终结点门户中创建和维护的条目，从而可能降低安全分析师的可见性。
+熟悉非 [永久性 VDI 的注意事项](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 虽然 [Azure 虚拟](/azure/virtual-desktop/overview)桌面不提供非持久性选项，但它确实提供了使用黄金 Windows 映像的方法，可用于预配新主机和重新部署计算机。 这会增加环境中的变化，从而影响在 Microsoft Defender 终结点门户中创建和维护的条目，从而可能降低安全分析师的可见性。
 
 > [!NOTE]
 > 根据你选择的载入方法，设备可以在 Microsoft Defender for Endpoint 门户中显示为：
@@ -53,7 +53,7 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 有几种方法可以载入 WVD 主机：
 
-- 在黄金映像中运行脚本 (启动期间从共享位置) 脚本。
+- 在黄金映像中运行脚本 (在启动期间从) 位置运行。
 - 使用管理工具运行脚本。
 - 通过与 [Microsoft Defender for Cloud 集成](azure-server-integration.md)
 
@@ -73,26 +73,26 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 1. 打开 VDI 配置包.zip文件 (WindowsDefenderATPOnboardingPackage.zip) 
 
-    1. 在"Microsoft 365 Defender门户"导航窗格中，选择"设置管理"下 (终结点载入 \>  \> ) 。 
+    1. 在"Microsoft 365 Defender门户"导航窗格中 \>  \>，选择"设置管理"下 (终结点 **载入) 。** 
     1. 选择Windows 10或Windows 11操作系统。
     1. 在 **"部署方法"** 字段中，选择"非永久性终结点的 VDI 载入脚本"。
     1. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将文件内容.zip到设备可以访问的共享只读位置。 你应该有一个名为 **OptionalParamsPolicy** 的文件夹以及 **WindowsDefenderATPOnboardingScript.cmd** 和 **Onboard-NonPersistentMachine.ps1**。
+2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 **OptionalParamsPolicy** 的文件夹以及 **WindowsDefenderATPOnboardingScript.cmd** 和 **Onboard-NonPersistentMachine.ps1**。
 
 ##### <a name="use-group-policy-management-console-to-run-the-script-when-the-virtual-machine-starts"></a>当虚拟机启动时，使用组策略管理控制台运行脚本
 
-1. 打开组策略管理控制台 (GPMC) ，右键单击要配置的组策略对象 (GPO) 然后单击 **编辑。**
+1. 打开 GPMC (组策略管理) ，右键单击要配置的组策略对象 (GPO) 然后单击"编辑 **"**。
 
 2. 在组策略管理编辑器中，转到计算机 **配置** \> **首选项** \> **控制面板设置**。
 
-3. 右键单击 **"计划任务**"，**单击"** 新建"，**然后单击"立即** 任务 (至少Windows 7) 。
+3. 右键单击 **"计划任务**"**，单击"** 新建"，**然后单击"立即** 任务 (7 Windows任务) 。
 
-4. 在打开的任务窗口中，转到常规 **选项卡** 。在" **安全选项"** 下 **，单击"更改用户或组"，** 然后键入"系统"。 单击 **"检查名称"，** 然后单击"确定"。 NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。
+4. 在打开的任务窗口中，转到常规 **选项卡** 。在" **安全选项"** 下 **，单击"更改用户或组"** ，然后键入"系统"。 单击 **"检查名称"** ，然后单击"确定"。 NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。
 
-5. Select **Run whether user is logged on or not and** check the Run with highest **privileges** check box.
+5. Select **Run whether user is logged on or not and** check the **Run with highest privileges** check box.
 
-6. 转到"操作 **"** 选项卡，然后单击"新建 **"。** 确保在 **"操作"** 字段中选择了"启动程序"。 输入以下信息：
+6. 转到"操作 **"选项卡** ，然后单击"新建 **"**。 确保在 **"操作"** 字段中选择了"启动程序"。 输入以下信息：
 
    `Action = "Start a program"`
 
@@ -109,10 +109,10 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 有关详细信息，请参阅使用配置[Windows载入设备](configure-endpoints-sccm.md)。
 
 > [!WARNING]
-> 如果计划使用攻击面[](attack-surface-reduction-rules-reference.md)减少规则参考，请注意，不应使用规则"阻止源自[PSExec](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)和 WMI 命令的进程创建"，因为该规则与通过 Microsoft Endpoint Configuration Manager 管理不兼容。 该规则阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
+> 如果计划使用攻击面[](attack-surface-reduction-rules-reference.md)减少规则参考，请注意，不应使用规则"阻止源自 [PSExec 和 WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands) 命令的进程创建"，因为该规则与通过 Microsoft Endpoint Configuration Manager 管理不兼容。 该规则阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
 
 > [!TIP]
-> 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md)设备运行检测测试。
+> 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md) 设备运行检测测试。
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>生成黄金映像时标记计算机
 
@@ -154,8 +154,12 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 #### <a name="licensing-requirements"></a>许可要求
 
-许可注意事项：使用 Windows Enterprise 多会话时，根据你的要求，你可以选择让所有用户通过 Microsoft Defender for Endpoint (许可，每用户) 、Windows Enterprise E5、Microsoft 365 安全或 Microsoft 365 E5，或者通过 Microsoft Defender for Cloud 获得 VM 许可。
+许可注意事项：使用 Windows Enterprise 多会话时，根据你的要求，你可以选择让所有用户通过 Microsoft Defender for Endpoint (许可，每个用户) 、Windows Enterprise E5、Microsoft 365 安全或Microsoft 365 E5，或者通过 Microsoft Defender for Cloud 获得 VM 许可。
 可在许可要求中找到适用于终结点的 Microsoft Defender [的许可要求](minimum-requirements.md#licensing-requirements)。
+
+### <a name="known-issues-and-limitations"></a>已知问题和限制
+
+在Microsoft Edge会话中，仅支持 web Windows 10筛选。
 
 #### <a name="related-links"></a>相关链接
 

@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: dee9c4a51175f9fbeac8b6d21f29490081258ba0
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 08178a1672e3bdd5b124138f698b42be8181373a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524233"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325497"
 ---
 # <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>可疑收件箱转发规则的警报评分
 
@@ -35,7 +35,7 @@ ms.locfileid: "62524233"
 **适用于：**
 - Microsoft 365 Defender
 
-威胁参与者可以将遭到入侵的用户帐户用于多种恶意目的，包括阅读用户收件箱中的电子邮件、创建收件箱规则以将电子邮件转发到外部帐户、发送网络钓鱼邮件等。 恶意收件箱规则在 BEC (和网络钓鱼) 中非常常见，并且必须持续监视这些规则。
+威胁参与者可以将遭到入侵的用户帐户用于多种恶意目的，包括阅读用户收件箱中的电子邮件、创建收件箱规则以将电子邮件转发到外部帐户、发送网络钓鱼邮件等。 恶意收件箱规则在 BEC (和网络钓鱼) 中广泛使用，并且必须持续监视这些规则。
 
 本操作手册可帮助你调查可疑收件箱转发规则的警报，并快速将其评级为真正的误报 (TP) 或误报 (TP) 。 然后，你可以对 TP 警报采取建议操作来修正攻击。 
 
@@ -43,7 +43,7 @@ ms.locfileid: "62524233"
 
 使用此 Playbook 的结果为：
 
-- 你已将与收件箱转发规则关联的警报标识为恶意 (TP) 或恶意 (FP) 活动。
+- 你已将与收件箱转发规则关联的警报标识为恶意 (TP) 活动 (恶意) 警报。
 
   如果恶意，则你已删除恶意收件箱转发规则。
 
@@ -191,7 +191,7 @@ CloudAppEvents
 1. 禁用恶意收件箱规则。 
 2. 重置用户帐户凭据。 还可以验证用户帐户是否已被 Microsoft Defender for Cloud Apps 泄露，这将从 Identity Protection Azure Active Directory (Azure AD) 安全信号。
 3. 搜索受影响用户执行的其他恶意活动。
-4. 如果 ISP 不常 (，请检查租户中源自同一 IP 或同一 ISP) 活动，以查找其他遭到入侵的用户。
+4. 如果 ISP 不常 (，请检查租户中来自同一 IP 或同一 ISP) 活动，以查找其他遭到入侵的用户。
 
 ## <a name="see-also"></a>另请参阅
 

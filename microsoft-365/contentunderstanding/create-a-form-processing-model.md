@@ -7,14 +7,20 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: 了解如何在 SharePoint Syntex 中创建表单处理模型。
+ms.openlocfilehash: 6048eabe8bb57da40d940923e313bd496ec1ecec
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330491"
 ---
-
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建表单处理模型
 
 </br>
@@ -69,13 +75,13 @@ description: 了解如何在 SharePoint Syntex 中创建表单处理模型。
 
         - 如果选择“**现有列表**”，请在“**所选列表**”框中，选择要使用的列表。
 
-4. 创建表单处理模型时，将创建新的 SharePoint 内容类型。 SharePoint 内容类型表示具有共同特征的文档类别，并共享该特定内容的列或元数据属性的集合。 SharePoint 内容类型通过 SharePoint 管理中心进行管理。
+4. 创建表单处理模型时，将创建新的 SharePoint 内容类型。 SharePoint 内容类型表示具有共同特征的文档类别，并共享该特定内容的列或元数据属性的集合。 SharePoint管理中心管理SharePoint<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">内容类型</a>。
 
    要将此模型映射到 SharePoint 内容类型库中的现有内容类型，请选择“**高级设置**”。
 
     ![显示创建表单处理模型面板中高级设置的屏幕截图。](../media/content-understanding/new-form-model-advanced-settings.png) 
 
-   1. 在 **内容类型** 部分中，选择是创建新内容类型还是使用现有内容类型。 
+   1. 在 <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">内容类型库中，</a>选择是创建新内容类型还是使用现有内容类型。 
 
    2. 要使用现有内容类型，请选择“**选择一个**”，然后从列表中选择内容类型。
 
@@ -143,22 +149,22 @@ description: 了解如何在 SharePoint Syntex 中创建表单处理模型。
 
 - **使用表单处理模型** 从文件中提取信息 — 与表单处理模型一起使用，从一批文件中读取和提取信息。 一次最多处理 5，000 SharePoint文件。 运行此流时，可以设置某些参数。 可以执行下列操作：
 
-    - 选择是否包含之前处理的文件 (默认设置是不包括之前处理过的文件) 。
+    - 选择是否包括以前处理过 (，默认设置是不包括之前处理过) 。
     - 选择要处理的文件数 (默认值为 100 个文件) 。
-    - 指定按文件 ID、文件名、文件创建时间 (上次修改时间等选项处理文件) 。
+    - 指定处理文件的顺序 (文件 ID、文件名、文件创建时间或上次修改时间) 。
     - 指定按升序或降序 (排序的顺序) 。
 
     ![显示突出显示参数选项的"运行流"面板的屏幕截图。](../media/content-understanding/run-flow-panel.png)  
 
 ### <a name="classification-date-field"></a>分类日期字段
 
-将SharePoint Syntex表单处理模型 (文档理解模型) 文档库时，分类日期字段将包含在库架构中。 默认情况下，此字段为空。 但是，当文档由模型处理和分类时，此字段会使用完成日期时间戳进行更新。 
+将SharePoint Syntex表单处理模型 (或文档理解) 模型应用到文档库时，分类日期字段将包含在库架构中。 默认情况下，此字段为空。 但是，当文档由模型处理和分类时，此字段会使用完成日期时间戳进行更新。 
 
-使用分类日期标记模型时，可以使用 **SharePoint Syntex** 处理文件流后发送电子邮件，以通知用户新文件已由 SharePoint 文档库中的模型处理和分类。
+当模型标记有分类日期时，可以使用 SharePoint Syntex 处理文件流后发送电子邮件，以通知用户新文件已由 SharePoint 文档库中的模型进行处理和分类。
 
 运行流：
 
-1. 选择文件，**然后选择"集成****Power Automate** >  > **创建流"**。
+1. 选择文件，**然后选择"集成** Power Automate >  > **创建流"**。
 
 2. 在"**创建流"面板** 上，选择"**处理文件SharePoint Syntex发送电子邮件。**
 

@@ -1,9 +1,9 @@
 ---
 title: 步骤 5. 保护信息
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
 description: 使用受控文件夹访问权限、MIP、DLP 和 Microsoft Defender for Cloud Apps 来保护你的 Microsoft 365 敏感数据。
-ms.openlocfilehash: e5973373b9a831a8abaf8356866524c6c0639224
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 0011a3c9fc0d24815818b67906b8f404a191563e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886986"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325091"
 ---
 # <a name="step-5-protect-information"></a>步骤 5. 保护信息
 

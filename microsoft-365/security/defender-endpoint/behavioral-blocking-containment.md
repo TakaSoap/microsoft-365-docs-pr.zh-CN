@@ -15,16 +15,14 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 90d6cef5ef34e2249b5da561559a5e9505f1db84
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: bab766fd69b9227f10ba897040faff79e65b1722
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464710"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325777"
 ---
 # <a name="behavioral-blocking-and-containment"></a>行为阻止和控制
 
@@ -36,19 +34,19 @@ ms.locfileid: "62464710"
 
 ## <a name="overview"></a>概述
 
-如今的威胁形势被无文件恶意软件所溢出[](/windows/security/threat-protection/intelligence/fileless-threats)，并位于陆地外，其变化速度比传统解决方案快的高度多态威胁，以及适应攻击者在遭到入侵的设备上发现的攻击。 传统安全解决方案不足以阻止此类攻击;你需要人工智能 (AI) 设备学习 (ML) Defender [for Endpoint](/windows/security) 中包含的支持功能，如行为阻止和抑制。
+如今的威胁形势被无文件恶意软件所溢出[](/windows/security/threat-protection/intelligence/fileless-threats)，并位于陆地外，其变化速度比传统解决方案快的高度多态威胁，以及适应攻击者在遭到入侵的设备上发现的攻击。 传统安全解决方案不足以阻止此类攻击;你需要人工智能 (AI) 设备学习 (ML) Defender [for Endpoint](/windows/security) 中包含的支持的功能（如行为阻止和抑制）。
 
-行为阻止和抑制功能可帮助根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 下一代保护、EDR和适用于终结点的 Defender 组件和功能在行为阻止和抑制功能中协同工作。
+行为阻止和抑制功能可帮助根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 下一代保护、EDR和 Defender for Endpoint 组件和功能在行为阻止和抑制功能中协同工作。
 
 :::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="行为阻止和抑制。":::
 
 行为阻止和抑制功能与 Defender for Endpoint 的多个组件和功能一起协作，可立即停止攻击并阻止攻击的进行。
 
-- [下一代 (](microsoft-defender-antivirus-in-windows-10.md)防护功能Microsoft Defender 防病毒) 分析行为来检测威胁，并停止已开始运行的威胁。
+- [下一代 (](microsoft-defender-antivirus-in-windows-10.md)防护功能Microsoft Defender 防病毒) 分析行为来检测威胁，并停止开始运行的威胁。
 
 - [终结点检测和响应 (EDR) ](overview-endpoint-detection-response.md)网络、设备和内核行为接收安全信号。 检测到威胁时，将创建警报。 同一类型的多个警报聚合到事件中，这便于安全运营团队调查和响应。
 
-- [Defender for Endpoint](overview-endpoint-detection-response.md) 具有各种跨标识、电子邮件、数据和应用的光学系统，以及通过 EDR 接收的网络、终结点和内核行为信号。 终结点的 [Microsoft 365 Defender](../defender/microsoft-365-defender.md) Defender 组件处理和关联这些信号，引发检测警报，并连接事件中的相关警报。
+- [Defender for Endpoint](overview-endpoint-detection-response.md) 具有各种跨标识、电子邮件、数据和应用的光学系统，以及网络、终结点和内核行为信号通过 EDR。 终结点的 [Microsoft 365 Defender](../defender/microsoft-365-defender.md) Defender 组件处理和关联这些信号，引发检测警报，并连接事件中的相关警报。
 
 借助这些功能，可以阻止或阻止更多威胁，即使它们开始运行。 只要检测到可疑行为，就会包含威胁，创建警报，并停止威胁。
 
@@ -62,11 +60,11 @@ ms.locfileid: "62464710"
 
 - **[客户端行为阻止](client-behavioral-blocking.md)** 终结点上的威胁通过机器学习进行检测，然后自动阻止和修正。  (启用客户端行为阻止。) 
 
-- **[反馈循环 (](feedback-loop-blocking.md)** 也称为快速保护，) 行为智能观察到威胁检测。 威胁将停止并阻止在其他终结点上运行。  (启用反馈循环阻止。) 
+- **[反馈循环阻止 (](feedback-loop-blocking.md)** 也称为快速保护，) 行为智能观察到威胁检测。 威胁将停止并阻止在其他终结点上运行。  (启用反馈循环阻止。) 
 
-- **[终结点检测和响应 (EDR)](edr-in-block-mode.md)** 阻止模式中通过泄露后保护观察到的恶意项目或行为将被阻止和包含。 EDR阻止模式运行，即使Microsoft Defender 防病毒不是主要的防病毒解决方案。  (EDR在阻止模式下运行，默认情况下不会启用;在 Microsoft 365 Defender.) 
+- **[终结点检测和响应 (EDR)](edr-in-block-mode.md)** 阻止模式中通过泄露后保护观察到的恶意项目或行为将被阻止和包含。 EDR阻止模式运行，即使Microsoft Defender 防病毒不是主要的防病毒解决方案。  (EDR在阻止模式下启用，您可以在 Microsoft 365 Defender.) 
 
-随着 Microsoft 继续改进威胁防护特性和功能，预期行为阻止和抑制领域会有更多的变化。 若要了解现在计划并推出哪些功能，请访问Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)。
+随着 Microsoft 继续改进威胁防护特性和功能，预期行为阻止和抑制领域会有更多的变化。 若要了解现在的计划和推出，请访问Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
 ## <a name="examples-of-behavioral-blocking-and-containment-in-action"></a>操作中的行为阻止和包含的示例
 

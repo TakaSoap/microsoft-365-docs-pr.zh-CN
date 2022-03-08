@@ -2,8 +2,8 @@
 title: 为组织管理软件型服务应用
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jamitche, jmueller
 audience: Admin
@@ -14,22 +14,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid: MET150
-description: 了解如何在应用中激活和管理第三方Microsoft 365 管理中心。
+description: 了解如何在应用中激活和管理第三Microsoft 365 管理中心。
 ms.date: 04/15/2021
-ms.openlocfilehash: 4df8dd65656bf70329c0ea09911bc7ca4cd40f57
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1a8593e967f899f748f4124567028177777851e4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171263"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319709"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>管理组织的第三方应用订阅
 
-可以在新应用中管理第三方应用的许可证和<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心。</a> 更新的功能包括增强订阅管理、改进了对计费信息的访问，以及提高了管理帐单的灵活性。 订阅管理基于 Microsoft 更新的商务平台。 这适用于客户直接从第三方提供商购买的软件即服务应用。
+可以在新应用中管理第三方应用的许可证和<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>。 更新的功能包括增强订阅管理、改进了对计费信息的访问，以及提高了管理帐单的灵活性。 订阅管理基于 Microsoft 更新的商务平台。 这适用于客户直接从第三方提供商购买的软件即服务应用。
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>如何获取软件型服务应用
 
@@ -67,15 +67,15 @@ ms.locfileid: "60171263"
 
 管理员必须先激活第三方应用，然后才能将其分配给用户。 这些应用将在第三方发布者的门户中激活。
 
-1. In the admin center， go to the **Billing**  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
+1. In the admin center， go to the **BillingYour** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productsApps</a> >  page.
 2. 查找并选择要管理的应用。
-3. 在 **设置 &操作"下**，选择 **发布者门户中的"管理"。**
+3. 在 **设置 &操作"下**，选择 **"在发布者门户中管理"**。
 
 你将定向到应用发布者的网站，可在其中激活应用。
 
 ## <a name="manage-third-party-apps"></a>管理第三方应用
 
-管理员在两个位置管理第三方应用：Microsoft 365 管理中心和第三方应用提供商的门户。
+管理员在两个位置管理第三方应用：Microsoft 365 管理中心第三方应用提供商的门户。
 
 以下是您可以在每个门户中执行哪些操作。
 
@@ -89,7 +89,7 @@ ms.locfileid: "60171263"
 
 管理员需要在将第三方应用分配给用户之前激活它们。 它们将在第三方发布者的门户中激活。 在应用页面上的"设置 &**操作"** 下，选择用于分配许可证的链接。
 
-1. In the admin center， go to the **Billing**  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
+1. In the admin center， go to the **BillingYour** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productsApps</a> >  page.
 2. 查找并选择要管理的应用。
 3. 在 **设置 &操作**"下，选择在 **发布者门户中管理的链接**。
 
@@ -97,9 +97,9 @@ ms.locfileid: "60171263"
 
 管理员可以更改其组织拥有的许可证数量。 这仅适用于使用基于席位的定价购买的应用。
 
-1. In the admin center， go to the **Billing**  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
+1. In the admin center， go to the **BillingYour** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productsApps</a> >  page.
 2. 查找并选择要管理的应用。
-3. 选择 **"更改许可证数量"。**
+3. 选择 **"更改许可证数量"**。
 
 ## <a name="manage-payment-methods"></a>管理支付方式
 
@@ -109,13 +109,13 @@ ms.locfileid: "60171263"
 - **联系人信息** – 帐单邮寄地址和联系人姓名
 - **角色** – 允许你更改计费配置文件、支付帐单或使用计费配置文件上的付款方式进行购买的角色。
 
-有关计费配置文件详细信息，请参阅 [了解计费配置文件](/microsoft-store/billing-profile)。
+有关计费配置文件详细信息，请参阅了解 [计费配置文件](/microsoft-store/billing-profile)。
 
 ### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>更改软件型服务应用订阅的计费配置文件
 
-1. In the admin center， go to the **Billing**  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
+1. In the admin center， go to the **BillingYour** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productsApps</a> >  page.
 2. 查找并选择要管理的应用。
-3. 在"计费 **配置文件"旁边，** 选择"编辑 **"。**
+3. 在"计费 **配置文件"旁边，** 选择"编辑 **"**。
 
 有关发票详细信息，请参阅 [了解帐单或发票](billing-and-payments/understand-your-invoice.md)。
 
@@ -123,6 +123,6 @@ ms.locfileid: "60171263"
 
 你可以从应用页面取消软件即服务应用。
 
-1. In the admin center， go to the **Billing**  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
+1. In the admin center， go to the **BillingYour** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productsApps</a> >  page.
 2. 查找并选择要管理的应用。
-3. 在 **"设置 &操作"** 下，选择"**取消订阅"。**
+3. 在 **"设置 &操作"** 下，选择"**取消订阅"**。

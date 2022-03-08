@@ -11,17 +11,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dee6cec53ef6a3412d110837037f1de48fc6e92f
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: b707a6f684df6b9888fb8f2d50c4bba9a6dd3195
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765572"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324167"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>调查 Microsoft Defender 终结点设备列表中的设备
 
@@ -58,7 +56,7 @@ ms.locfileid: "62765572"
 ![设备视图的图像。](images/specific-device.png)
 
 > [!NOTE]
-> 由于产品限制，设备配置文件在确定"上一次查看"时间范围时不会考虑所有网络证据 (如设备页面上所见，) 。
+> 由于产品限制，设备配置文件在确定"上次查看"时间范围时不会考虑所有网络证据 (如设备页面上所见，) 。
 > 例如，"设备"页中的"上次查看时间"值可能会显示较旧的时间范围，即使计算机时间线中提供了最新的警报或数据。
 
 ## <a name="device-details"></a>设备详细信息
@@ -97,7 +95,7 @@ ms.locfileid: "62765572"
 
 ### <a name="alerts"></a>警报
 
-**警报选项卡** 提供与设备关联的警报列表。 此列表是警报队列的筛选版本，显示[](alerts-queue.md)警报、严重性 (高、中、低、信息) 、队列 (中的状态、新、正在进行、已解决) 、分类 (未设置、false 警报、真正的警报) 、调查状态、警报类别、解决警报的人和上次活动。 您还可以筛选警报。
+**警报选项卡** 提供与设备关联的警报列表。 此列表是警报队列的筛选版本，显示[](alerts-queue.md)警报、严重性 (高、中、低、信息) 、队列 (中的状态、新、正在进行、已解决) 、分类 (未设置、false 警报、真警报) 、调查状态、警报类别、解决警报的人和上次活动。 您还可以筛选警报。
 
 ![与设备相关的警报的图像。](images/alerts-device.png)
 

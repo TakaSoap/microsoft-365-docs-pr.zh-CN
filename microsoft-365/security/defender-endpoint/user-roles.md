@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a959edf1eaefcb25fd3fb8279e7e03d317c4f12e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6f853df2d37cc41b2effb55ff10418af67df2bd6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168350"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324069"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>为基于角色的访问控制创建和管理角色
 
@@ -41,13 +41,13 @@ ms.locfileid: "61168350"
 
 1. 使用分配<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>全局管理员角色的帐户登录登录。
 
-2. 在导航窗格中，在"权限设置" ("下选择 \>  \> **") "。**
+2. 在导航窗格中，选择"\>设置 **权限**\>" (**"** 终结点) 。
 
-3. 选择 **"添加项目"。**
+3. 选择 **"添加项"**。
 
 4. 输入要分配给角色的角色名称、说明和权限。
 
-5. 选择 **"** 下一步"将角色分配给Azure AD安全组。
+5. 选择 **"下** 一步"，将角色分配给Azure AD安全组。
 
 6. 使用筛选器选择Azure AD要添加到此角色的组。
 
@@ -62,21 +62,21 @@ ms.locfileid: "61168350"
 
 - **查看数据**
   - **安全操作** - 在门户中查看所有安全操作数据
-  - **威胁漏洞管理**- 危险和漏洞管理门户中查看数据
+  - **威胁漏洞管理** - 危险和漏洞管理门户中查看数据
 
 - **可用修正操作**
   - **安全操作** - 执行响应操作、批准或消除挂起的修正操作、管理自动化和指示器的允许/阻止列表
-  - **威胁和漏洞管理 - 异常处理**- 创建新的异常和管理活动异常
-  - **威胁和漏洞管理 - 修正处理**- 提交新的修正请求、创建票证和管理现有修正活动
+  - **威胁和漏洞管理 - 异常处理** - 创建新的异常和管理活动异常
+  - **威胁和漏洞管理 - 修正处理** - 提交新的修正请求、创建票证和管理现有修正活动
 
-- **警报调查** - 管理警报、启动自动调查、运行扫描、收集调查包、管理设备标记以及仅下载可移植的可执行 (PE) 文件
+- **警报调查** - 管理警报、启动自动调查、运行扫描、收集调查包、管理设备标记，以及仅下载可移植的可执行 (PE) 文件
 
-- **管理门户系统设置** - 配置存储设置、SIEM 和威胁情报 API 设置 (应用全局) 、高级设置、自动文件上传、角色和设备组
+- **管理门户系统设置** - 配置存储设置、SIEM 和威胁情报 API 设置 (适用于全局) 、高级设置、自动文件上载、角色和设备组
 
     > [!NOTE]
     > 此设置仅适用于 Microsoft Defender 终结点管理员 (默认) 角色。
 
-- **在 Defender for Cloud** 中管理安全设置 - 配置警报抑制设置、管理自动化的文件夹排除项、载入和载出设备、管理电子邮件通知、管理评估实验室
+- **在安全中心管理** 安全设置 - 配置警报抑制设置、管理自动文件夹排除项、载入和载出设备、管理电子邮件通知和管理评估实验室
 
 - **实时响应功能**
   - **基本** 命令：
@@ -89,13 +89,13 @@ ms.locfileid: "61168350"
     - 从文件库查看脚本
     - 从文件库在远程设备上执行脚本
 
-有关可用命令详细信息，请参阅 [使用实时响应调查设备](live-response.md)。
+有关可用命令详细信息，请参阅使用实时响应 [调查设备](live-response.md)。
 
 ## <a name="edit-roles"></a>编辑角色
 
 1. 使用分配<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>全局管理员角色的帐户登录登录。
 
-2. 在导航窗格中，在"权限设置" ("下选择 \>  \> **") "。**
+2. 在导航窗格中，选择"\>设置 **权限**\>" (**"** 终结点) 。
 
 3. 选择要编辑的角色。
 
@@ -103,17 +103,17 @@ ms.locfileid: "61168350"
 
 5. 修改分配给角色的详细信息或组。
 
-6. 单击 **保存并关闭**。
+6. 单击 **"保存并关闭"**。
 
 ## <a name="delete-roles"></a>删除角色
 
 1. 使用分配<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>全局管理员角色的帐户登录登录。
 
-2. 在导航窗格中，在"权限设置" ("下选择 \>  \> **") "。**
+2. 在导航窗格中，选择"\>设置 **权限**\>" (**"** 终结点) 。
 
 3. 选择要删除的角色。
 
-4. 单击下拉按钮，然后选择删除 **角色**。
+4. 单击下拉按钮，然后选择"删除 **角色"**。
 
 ## <a name="related-topic"></a>相关主题
 

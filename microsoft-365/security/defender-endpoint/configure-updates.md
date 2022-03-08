@@ -14,16 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: af522fcd479b2fbcf8d3327f4cb382987cb7ad46
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 4261e32721da86233a0a929a435c318904d6ac12
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218570"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324139"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>为 Microsoft Defender 更新创建自定义逐步推出过程
 
@@ -35,7 +35,7 @@ ms.locfileid: "61218570"
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> 此功能需要 Microsoft Defender 防病毒 4.18.2106.X 或更高版本。
+> 此功能需要Microsoft Defender 防病毒 4.18.2106.X 或更高版本。
 
 若要为 Defender 更新创建自己的自定义逐步推出过程，可以使用组策略、Microsoft Endpoint Manager和 PowerShell。
 
@@ -47,44 +47,44 @@ ms.locfileid: "61218570"
 
 |设置标题|说明|Location|
 |---|---|---|
-|选择逐步 Microsoft Defender 每月平台更新推出通道|启用此策略可指定设备在每月逐步推出期间何时接收 Microsoft Defender 平台更新。 <p> Beta 渠道：设置为此频道的设备将是第一个接收新更新的设备。 选择 Beta 渠道以参与识别问题并报告给 Microsoft。 默认情况下，Windows预览体验计划中的设备订阅到此频道。 用于 (手动) 测试环境以及有限数量的设备。 <p> Current Channel (Preview) ： 设置为此频道的设备将在每月逐步发布周期内最早提供更新。 建议用于预生产/验证环境。 <p> Current Channel (Staged) ： Devices will be offered updates after the monthly gradual release cycle. 建议应用于生产总体中具有代表性的较小部分 (大约 10%) 。 <p> Current Channel (Broad) ： Devices will be offered updates only after the gradual release cycle completes. 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。 <p> Critical- Time Delay：将为设备提供延迟为 48 小时的更新。 仅针对关键环境建议。 <p>如果禁用或不配置此策略，设备将在逐步发布周期中自动保持最新。 适用于大多数设备。|Windows Components\Microsoft Defender 防病毒|
-|选择逐步 Microsoft Defender 每月引擎更新推出频道|启用此策略可指定设备在每月逐步推出期间何时接收 Microsoft Defender 引擎更新。 <p> Beta 渠道：设置为此频道的设备将是第一个接收新更新的设备。 选择 Beta 渠道以参与识别问题并报告给 Microsoft。 默认情况下，Windows预览体验计划中的设备订阅到此频道。 用于 (手动) 测试环境以及有限数量的设备。 <p> Current Channel (Preview) ： 设置为此频道的设备将在每月逐步发布周期内最早提供更新。 建议用于预生产/验证环境。 <p> Current Channel (Staged) ： Devices will be offered updates after the monthly gradual release cycle. 建议应用于生产总体中具有代表性的较小部分 (大约 10%) 。 <p> Current Channel (Broad) ： Devices will be offered updates only after the gradual release cycle completes. 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。 <p> Critical- Time Delay：将为设备提供延迟为 48 小时的更新。 仅针对关键环境建议。<p> 如果禁用或不配置此策略，设备将在逐步发布周期中自动保持最新。 适用于大多数设备。|Windows Components\Microsoft Defender 防病毒|
-|选择逐步 Microsoft Defender 每日安全智能更新推出通道|启用此策略可指定设备在每日逐步推出期间何时接收 Microsoft Defender 安全智能更新。 <p> Current Channel (Staged) ： Devices will be offered updates after the release cycle. 建议应用于生产总体中具有代表性的较小部分 (约 10%) 。 <p> Current Channel (Broad) ： Devices will be offered updates only after the gradual release cycle completes. 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。 <p>  如果禁用或不配置此策略，设备将在每日发布周期内自动保持最新状态。 适用于大多数设备。|Windows Components\Microsoft Defender 防病毒|
+|选择逐步 Microsoft Defender 每月平台更新推出通道|启用此策略可指定设备在每月逐步推出期间何时接收 Microsoft Defender 平台更新。 <p> Beta 渠道：设置为此频道的设备将是第一个接收新更新的设备。 选择 Beta 渠道以参与识别问题并报告给 Microsoft。 默认情况下，Windows预览体验计划中的设备订阅到此频道。 仅在手动 (测试) 和有限数量的设备中使用。 <p> Current Channel (Preview) ：设置为此频道的设备将在每月逐步发布周期内最早提供更新。 建议用于预生产/验证环境。 <p> Current Channel (Staged) ： Devices will be offered updates after the monthly gradual release cycle. 建议应用于生产总体中具有代表性的较小部分 (大约 10%) 。 <p> Current Channel (Broad) ：仅在逐步发布周期完成后，才向设备提供更新。 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。 <p> Critical- Time Delay：将为设备提供延迟为 48 小时的更新。 仅针对关键环境建议。 <p>如果禁用或不配置此策略，设备将在逐步发布周期中自动保持最新。 适用于大多数设备。|Windows Components\Microsoft Defender 防病毒|
+|选择逐步 Microsoft Defender 每月引擎更新推出频道|启用此策略可指定设备在每月逐步推出期间何时接收 Microsoft Defender 引擎更新。 <p> Beta 渠道：设置为此频道的设备将是第一个接收新更新的设备。 选择 Beta 渠道以参与识别问题并报告给 Microsoft。 默认情况下，Windows预览体验计划中的设备订阅到此频道。 仅在手动 (测试) 和有限数量的设备中使用。 <p> Current Channel (Preview) ：设置为此频道的设备将在每月逐步发布周期内最早提供更新。 建议用于预生产/验证环境。 <p> Current Channel (Staged) ： Devices will be offered updates after the monthly gradual release cycle. 建议应用于生产总体中具有代表性的较小部分 (大约 10%) 。 <p> Current Channel (Broad) ：仅在逐步发布周期完成后，才向设备提供更新。 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。 <p> Critical- Time Delay：将为设备提供延迟为 48 小时的更新。 仅针对关键环境建议。<p> 如果禁用或不配置此策略，设备将在逐步发布周期中自动保持最新。 适用于大多数设备。|Windows Components\Microsoft Defender 防病毒|
+|选择逐步 Microsoft Defender 每日安全智能更新推出通道|启用此策略可指定设备在每日逐步推出期间何时接收 Microsoft Defender 安全智能更新。 <p> Current Channel (Staged) ： Devices will be offered updates after the release cycle. 建议应用于生产总体中具有代表性的较小部分 (约 10%) 。 <p> Current Channel (Broad) ：仅在逐步发布周期完成后，才向设备提供更新。 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。 <p>  如果禁用或不配置此策略，设备将在每日发布周期内自动保持最新状态。 适用于大多数设备。|Windows Components\Microsoft Defender 防病毒|
 |禁用 Microsoft Defender 更新的逐步推出|启用此策略可禁用 Defender 更新的逐步推出。 <p> Current Channel (Broad) ： Devices set to this channel will be offered updates last during the gradual release cycle. 最适合仅接收有限更新的数据中心计算机。 <p> 注意：此设置适用于每月和每日 Defender 更新，将覆盖之前为平台和引擎更新配置的任何频道选择。 <p> 如果禁用或不配置此策略，设备将保留在当前频道 (默认) 除非在平台和引擎更新的特定通道中另行指定。 在逐步发布周期中自动保持最新。 适用于大多数设备。|Windows Components\Microsoft Defender 防病毒|
 |
 
 ## <a name="group-policy"></a>组策略
 
 > [!NOTE]
-> 更新后的 Defender ADMX 模板将随 21H2 版本发布Windows 10。 可在 下载非本地化版本 https://github.com/microsoft/defender-updatecontrols 。
+> 更新后的 Defender ADMX 模板将随 21H2 版本发布Windows 10。 可在 下载非本地化版本 https://github.com/microsoft/defender-updatecontrols。
 
 可以使用组[策略](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)在终结点上配置Microsoft Defender 防病毒管理策略。
 
 通常，可以使用以下过程配置或更改Microsoft Defender 防病毒策略设置：
 
-1. 在组策略管理计算机上，打开组策略管理控制台，右键单击要配置的组策略 (GPO) ，然后单击 **编辑。**
+1. 在组策略管理计算机上，打开组策略管理控制台，右键单击要配置的组策略 **对象 (** GPO) 然后单击 **编辑。**
 
 2. 使用组策略管理编辑器转到计算机 **配置**。
 
-3. 单击 **"管理模板"。**
+3. 单击 **"管理模板"**。
 
-4. 展开树以Windows **组件> Microsoft Defender 防病毒。**
+4. 展开树以 **Windows组件> Microsoft Defender 防病毒**。
 
-5. 展开 (本主题) 包含要配置的设置的表中的"位置"部分，双击该设置将其打开，然后进行配置更改。
+5. 展开本主题 (中称为"位置"的部分) 其中包含要配置的设置，双击该设置将其打开，然后进行配置更改。
 
-6. [像平常一样部署更新的 GPO。](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx)
+6. [像平常一样部署更新的 GPO](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx)。
 
 ## <a name="intune"></a>Intune
 
 按照以下链接中的说明在 Intune 中创建自定义策略：
 
-[在 Windows 10 中为 Microsoft Intune 设备添加自定义设置 - Azure \| Microsoft Docs](/mem/intune/configuration/custom-settings-windows-10)
+[在 Windows 10 中为 Microsoft Intune 设备添加自定义设置 - Azure \|Microsoft Docs](/mem/intune/configuration/custom-settings-windows-10)
 
 有关用于逐步推出过程的 Defender CSP 详细信息，请参阅 [Defender CSP](/windows/client-management/mdm/defender-csp)。
 
 ## <a name="powershell"></a>PowerShell
 
-使用 `Set-MpPreference` cmdlet 配置逐步更新的推出。
+`Set-MpPreference`使用 cmdlet 配置逐步更新的推出。
 
 使用以下参数：
 
@@ -100,4 +100,4 @@ Set-MpPreference
 
 用于 `Set-MpPreference -PlatformUpdatesChannel Beta` 配置平台更新以从 Beta 渠道到达。
 
-有关参数以及如何配置参数的信息，请参阅[Set-MpPreference (Microsoft Defender 防病毒) |Microsoft Docs](/powershell/module/defender/set-mppreference)。
+有关参数以及如何配置参数的信息，请参阅 [Set-MpPreference (Microsoft Defender 防病毒) |Microsoft Docs](/powershell/module/defender/set-mppreference)。

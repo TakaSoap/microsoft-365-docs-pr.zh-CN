@@ -13,14 +13,14 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 996a96f957d7446b0b951d4f1b3a34c822f64f49
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 85e2da73fd54bd4d24e5ab8c4d104e33b5b4d877
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806656"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326113"
 ---
 # <a name="evaluate-controlled-folder-access"></a>受控文件夹访问评估
 
@@ -43,7 +43,7 @@ ms.locfileid: "62806656"
 > 还可以访问 Microsoft Defender for Endpoint 演示方案网站，demo.wd.microsoft.com 确认功能[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)是否正常工作并查看其工作方式。
 
 > [!NOTE]
-> 位于 Demo.wd.microsoft.com 的 Defender for Endpoint 演示网站已弃用，并且将在未来删除。
+> 位于 demo.wd.microsoft.com 处的 Defender for Endpoint 演示网站已弃用，并将在未来删除。
 
 ## <a name="use-audit-mode-to-measure-impact"></a>使用审核模式衡量影响
 
@@ -56,12 +56,12 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 ```
 
 > [!TIP]
-> 如果你想要完全审核受控文件夹访问权限在组织中如何工作，则需要使用管理工具将此设置部署到网络中设备 () 。
+> 如果你想要完全审核受控文件夹访问权限在组织中如何工作，你将需要使用管理工具将此设置部署到网络中设备 () 。
 您还可以使用组策略、Intune、移动设备管理 (MDM) 或 Microsoft Endpoint Manager 配置和部署设置，如主要的受控文件夹[访问权限主题中所述](controlled-folders.md)。
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在事件查看器中查看受控Windows访问事件
 
-以下受控文件夹访问事件显示在 Microsoft/Windows/Windows/Windows Defender/Operational 文件夹下的事件查看器中。
+以下受控文件夹访问权限事件显示在 microsoft/Windows/Windows Windows Defender/Operational 文件夹下的 Windows 事件查看器中。
 
 事件 ID | 描述
 -|-
@@ -70,13 +70,13 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
  1123 | 阻止的受控文件夹访问事件
 
 > [!TIP]
-> 你可以配置事件[Windows订阅](/windows/win32/wec/setting-up-a-source-initiated-subscription)以集中收集日志。 
+> 你可以配置Windows[转发订阅](/windows/win32/wec/setting-up-a-source-initiated-subscription)以集中收集日志。 
 
 ## <a name="customize-protected-folders-and-apps"></a>自定义受保护的文件夹和应用
 
 在评估期间，你可能希望添加到受保护的文件夹列表，或允许某些应用修改文件。
 
-请参阅 [使用](controlled-folders.md) 受控文件夹访问权限保护重要文件夹，以使用管理工具配置功能，包括组策略、PowerShell 和 MDM 配置服务提供程序 (CSP) 。
+请参阅 [使用受控文件夹访问权限](controlled-folders.md) 保护重要文件夹，以使用管理工具配置功能，包括组策略、PowerShell 和 MDM 配置服务提供程序 (CSP) 。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -2,8 +2,8 @@
 title: 向通过批量许可服务中心购买的订阅添加许可证
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: shegu, nicholak
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX
-description: 了解如何向通过第三Microsoft 365购买、由 Microsoft 识别的订阅添加许可证。
+description: 了解如何向通过第三方Microsoft 365购买、由 Microsoft 识别的订阅添加许可证。
 ms.date: 08/27/2021
-ms.openlocfilehash: 5ebba7e0a27efdd0a49ba9719c93e04f5c2760b4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 9d2b8881be15cdbed1354c5f70e1dc4f4cacc8c3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369740"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320167"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>向通过批量许可服务中心购买的订阅添加许可证
 
@@ -41,6 +41,6 @@ ms.locfileid: "61369740"
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
 ::: moniker-end
 
-2. 选择要添加许可证的订阅，然后选择"批量许可服务中心" (**VLSC)** 链接。
+2. 选择要添加许可证的订阅，然后选择批量许可服务中心 (**VLSC)** 链接。
 
 3. 请按照 VLSC 中的步骤完成购买。

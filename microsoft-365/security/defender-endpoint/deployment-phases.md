@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8463d4b9c330d65ad36d60f20e93fbf00d95959e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5715a796e0c7b78ae369f074b5edcb6ccfc8ae90
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164534"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330561"
 ---
 # <a name="deployment-phases"></a>部署阶段
 
@@ -68,7 +68,7 @@ ms.locfileid: "61164534"
 
 ****
 
-|功能|Description|
+|功能|说明|
 |---|---|
 |终结点检测和响应|终结点检测和响应功能已到位，以检测、调查和响应入侵尝试和主动泄露。|
 |下一代保护|为了进一步巩固你的网络的安全外围，Microsoft Defender for Endpoint 使用下一代保护来捕获所有类型的新兴威胁。|
@@ -81,7 +81,7 @@ ms.locfileid: "61164534"
 
 ### <a name="in-scope"></a>在作用域内
 
-- 使用 Microsoft Endpoint Manager Microsoft Endpoint Manager将终结点载入服务并配置功能
+- 使用 Microsoft Endpoint Manager 和 Microsoft Endpoint Configuration Manager 将终结点载入服务并配置功能
 - 启用 Defender 终结点检测和响应 (EDR) 功能
 - 启用适用于终结点保护平台的 Defender (EPP) 功能
   - 下一代保护

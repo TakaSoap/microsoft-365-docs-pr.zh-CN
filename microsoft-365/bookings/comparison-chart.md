@@ -9,18 +9,18 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
 description: 显示 Bookings Web 应用和 Bookings Teams差异的比较图表。
-ms.openlocfilehash: 594674584c189dc03d60ec49c5b3a0fbb4ce34eb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cd253c41eafe3a478e6a2f12bf94977f81688347
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189797"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319737"
 ---
 # <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>比较图表：Bookings Web 应用与 Bookings Teams应用
 
 其中 Bookings 应用Teams计划程序可以处理其主要任务并更改某些设置。 但是，Bookings Web 包含尚未在 Teams 应用中提供的高级功能和设置。
 
-Teams添加所有应用功能，我们将继续更新此列表。 有关详细信息，请参阅常见问题中的原始 **Bookings Web** 应用的所有功能 [Microsoft Teams？](bookings-faq.yml)部分。
+Teams添加应用功能，我们将继续更新此列表。 有关更多详细信息，请参阅常见问题中的原始 **Bookings Web** 应用的所有功能Microsoft Teams [？](bookings-faq.yml)部分。
 
 | 功能 | Bookings Web 应用 | 预订Teams应用 |
 |:---|:---|:---|
@@ -37,3 +37,4 @@ Teams添加所有应用功能，我们将继续更新此列表。 有关详细�
 | 发布自助服务计划页面 | 是 | 否 |
 | 管理客户联系人 | 是 | 否 |
 | 为员工设置请假 | 是 | 否 |
+| 计划队列视图 | 否 | 是 |

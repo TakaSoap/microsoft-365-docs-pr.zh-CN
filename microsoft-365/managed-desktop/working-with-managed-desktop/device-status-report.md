@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 14c83d007d2506e0e85c156f4d738f78f91fad75
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: be685d39bbda3b96f689c13a3bc3485c011f1ec8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321023"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319875"
 ---
 # <a name="device-status-report"></a>设备状态报告
 
@@ -39,7 +39,7 @@ ms.locfileid: "62321023"
 | 设备状态标签 | 说明 |
 | ------ | ------ |
 | 为用户准备就绪 | 已在服务中成功注册并准备向用户提供的设备。|
-| 活动 | 使用的设备。 <ul><li>他们满足最新的安全更新 (六小时两) 活动条件。</li> <li>在过去五天内，他们Microsoft Intune至少签入了一次。</li></ul> |
+| 活动 | 使用的设备。 <ul><li>他们满足最新的安全更新 (六小时两) 活动条件。</li> <li>在过去五天内，他们Microsoft Intune签入至少一次。</li></ul> |
 | 已同步 | 过去 28 天内使用且已使用 Intune 签入的设备。
 | 不同步 | 使用的设备，但过去 28 天内未使用 Intune 签入。 |
-| 其他 | 标签聚合了通常发生在设备注册期间发生的多个错误状态。 有关详细信息，请参阅 [设备注册疑难解答](../get-started/register-devices-self.md#troubleshooting-device-registration)。 |
+| 其他 | 标签聚合了通常发生在设备注册期间发生的多个错误状态。 有关详细信息，请参阅 [设备注册疑难解答](../get-started/manual-registration.md#troubleshooting-device-registration)。 |

@@ -15,20 +15,17 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (MSP) ，Microsoft 365 Lighthouse"用户"页面。
-ms.openlocfilehash: d7b20d37aa9669ac6726efab19268018f5d10973
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，请了解"用户"页面。
+ms.openlocfilehash: fad5ff4b41b43efb68c7e230401b80e50cea95a4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937456"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329921"
 ---
 # <a name="microsoft-365-lighthouse-users-page-overview"></a>Microsoft 365 Lighthouse用户页面概述 
 
-> [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
-
-Microsoft 365 Lighthouse通过选择左侧导航窗格中的"用户"打开"用户"页面，跨客户租户帐户管理用户。 在此页中，可以搜索用户，并评估用户帐户的安全状态并采取行动。 您还可以查看风险用户的见解，以及多重身份验证和自助服务密码重置的状态。  
+Microsoft 365 Lighthouse，通过选择左侧导航窗格中的"用户"打开"用户"页面，可以跨客户租户帐户管理用户。 在此页中，可以搜索用户，并评估用户帐户的安全状态并采取行动。 您还可以查看风险用户的见解，以及多重身份验证和自助服务密码重置的状态。  
   
 ## <a name="search-users-tab"></a>"搜索用户"选项卡  
   
@@ -38,7 +35,15 @@ Microsoft 365 Lighthouse通过选择左侧导航窗格中的"用户"打开"用�
 
 ## <a name="risky-users-tab"></a>"有风险的用户"选项卡
 
-"风险用户"选项卡显示租户中已标记为存在风险行为的用户帐户。 选择任意用户以查看检测到的风险详细信息，或者通过重置用户密码或阻止登录来缓解风险。
+"风险用户"选项卡显示租户中已标记为存在风险行为的用户帐户。 选择任意用户以查看检测到的风险详细信息，或者通过重置用户密码或阻止登录来缓解风险。 有关风险类型和检测功能的信息，请参阅 [什么是风险？](/azure/active-directory/identity-protection/concept-identity-protection-risks)。
+
+"风险用户"选项卡还包括以下选项：
+- **导出：** 选择将设备合规性数据导出到Excel逗号分隔值 (.csv) 文件中。
+- **刷新：** 选择以检索最新的设备合规性数据。
+- **确认 (已) 泄露：** 选择以确认用户受到威胁。
+- **消除 (用户) 风险：** 选择可消除用户风险。  
+- **重置密码：** 选择更改或重置用户密码。
+- **阻止登录：** 选择可阻止任何人以该用户登录。
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-risky-users-tab.png" alt-text="&quot;有风险的用户&quot;选项卡的屏幕截图。":::
 

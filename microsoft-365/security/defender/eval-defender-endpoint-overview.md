@@ -1,6 +1,6 @@
 ---
-title: 评估 Microsoft Defender for Endpoint 概述，包括查看体系结构
-description: 为测试实验室或试验Microsoft 365 Defender设置的步骤。 测试并体验安全解决方案如何设计用于保护组织中设备、标识、数据和应用。
+title: 步骤 4. 评估 Microsoft Defender for Endpoint 概述，包括查看体系结构
+description: 针对测试实验室或试验Microsoft 365 Defender设置的步骤。 测试并体验安全解决方案如何设计用于保护组织中设备、标识、数据和应用。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,21 +22,21 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1eaca5f9902b9617e47cc70d270f569d3a9dc60a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 24600644e08bdc2b0a208d68d6da1078543bd2bd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172123"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325945"
 ---
-# <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>评估 Microsoft Defender for Endpoint 概述
+# <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>步骤 4. 评估 Microsoft Defender for Endpoint 概述
 
 **适用于：**
 
 - Microsoft 365 Defender
 
 
-本文概述了启用和试用 Microsoft Defender for Endpoint 的过程。 在开始此过程之前，请确保你已查看评估项目Microsoft 365 Defender并且你已创建了Microsoft 365 Defender[](eval-overview.md)[环境](eval-create-eval-environment.md)。 
+本文概述了启用和试用 Microsoft Defender for Endpoint 的过程。 在开始此过程之前，请确保你已查看评估项目Microsoft 365 Defender并且已[创建Microsoft 365 Defender评估环境](eval-create-eval-environment.md)。[](eval-overview.md) 
 <br>
 
 使用以下步骤启用和试用 Microsoft Defender for Endpoint。

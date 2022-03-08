@@ -2,8 +2,8 @@
 title: 执行内部管理员接管
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: 了解如何验证电子邮件和域所有权以接管由自助用户登录帐户创建的非托管Microsoft 365。
-ms.openlocfilehash: 1201ea967fb829e43433cb5ed49f073b1d862728
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+description: 了解如何验证电子邮件和域所有权以接管由自助服务用户注册帐户创建的非托管Microsoft 365。
+ms.openlocfilehash: 06197bb5326cbd19fcd9174554007577e7086dc6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805996"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320153"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>执行内部管理员接管
 
@@ -38,18 +38,18 @@ ms.locfileid: "62805996"
 > [!NOTE]
 > 自助注册任何使用 Azure AD 将用户添加到非托管或"影子"Azure AD目录并创建非托管帐户。 非托管帐户是一个没有全局管理员的目录。 若要确定帐户是托管帐户还是非托管帐户，请参阅确定 [租户类型](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type)。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-当用户使用电子邮件地址Microsoft 365服务时，系统会自动为用户创建一个帐户。 如果管理员想要管理帐户上的用户或购买其他 Microsoft 365 服务，他们必须通过执行以下步骤来接管管理员，成为帐户的管理员。
+当用户使用电子邮件地址Microsoft 365服务时，将自动创建一个帐户。 如果管理员想要管理帐户上的用户或购买其他 Microsoft 365 服务，他们必须通过执行以下步骤来接管管理员，成为帐户的管理员。
 
 ## <a name="step-1-verify-your-email-address"></a>步骤 1：验证电子邮件地址
 
 > [!NOTE]
-> 如果在你的帐户中启用了自助服务，用户可以自行订阅免费服务，Power BI服务。 这些服务专门用于自助服务用户订阅创建了你想要以管理员角色接管的非托管帐户的情况。在步骤 1 中，使用 Power BI 启动管理员接管向导，为要删除的域创建用户帐户，以便你可以成为非托管域帐户的管理员。
+> 如果在你的帐户中启用了自助服务，用户可以自行订阅免费服务Power BI服务。 这些服务专门用于自助服务用户订阅创建了你想要以管理员角色接管的非托管帐户的情况。在步骤 1 中，使用 Power BI 启动管理员接管向导，为要删除的域创建用户帐户，以便你可以成为非托管域帐户的管理员。
 
-1. 若要注册Power BI，请转到"Power BI ["](https://powerbi.com)网站，然后选择"开始 **免费** > 启动免费试用" ("与用户共享Power BI Pro") 。 
+1. 若要注册Power BI，请转到"Power BI ["](https://powerbi.com)网站，然后选择"开始 **免费** > 启动 **免费试用" (**"与Power BI Pro共享") 。 
 
-2. 使用使用组织的域名的用户帐户进行注册， (如) `powerbiadmin@contoso.com` 。 如果你的帐户已在使用中，请使用当前密码登录。
+2. 使用使用组织的域名的用户帐户进行注册 (如) `powerbiadmin@contoso.com` 。 如果你的帐户已在使用中，请使用当前密码登录。
 
 3. 检查电子邮件的 **验证代码并** 输入代码以验证您的电子邮件地址。
 

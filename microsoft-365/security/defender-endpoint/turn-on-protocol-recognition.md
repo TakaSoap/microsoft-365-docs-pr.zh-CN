@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/07/2021
+ms.date: 02/21/2022
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: cbb9b50714d252d86fcbaed9b43684351f903251
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 221eff4af6bf8e77f29db84694bf3a683107fc8c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167618"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325161"
 ---
 # <a name="turn-on-protocol-recognition"></a>打开协议识别
 
@@ -34,22 +34,25 @@ ms.locfileid: "61167618"
 
 此策略设置允许你配置协议识别，以抵御已知漏洞攻击的网络保护。 如果启用或不配置此设置，将启用协议识别。 如果禁用此设置，将禁用协议识别。
 
+[!IMPORTANT]
+此设置现已弃用。 
+
 ## <a name="use-group-policy-to-configure-protocol-recognition"></a>使用组策略配置协议识别
 
-1. 在组策略管理终结点上，打开组 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。
+1. 在组策略管理终结点上，打开 [组策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。
 
-2. 转到计算机 **配置** \> **网络检查Windows** \> **管理Microsoft Defender 防病毒** \>  \> **组件**。
+2. 转到计算机 **配置** \> **网络检查Windows** \> **管理** \> \> Microsoft Defender 防病毒 **组件**。
 
-3. 选择 **协议识别**。 默认情况下，启用此策略。 如果设置为 **"未配置"，** 则启用定义停用。
+3. 选择 **协议识别**。 默认情况下，启用此策略。 如果设置 **未配置，** 则启用定义停用。
 
 4. 若要编辑策略，请选择 **"编辑策略设置"** 链接。
 
-5. 选择 **"已启用**"，然后选择"确定 **"。**
+5. 选择 **"已启用**"，然后选择" **确定"**。
 
 6. 部署更新的组策略对象。 请参阅 [组策略管理控制台](/windows/win32/srvnodes/group-policy)。
 
 > [!TIP]
-> 是否在本地使用组策略对象？ 查看它们在云中如何转换。 [在预览版中，使用](/mem/intune/configuration/group-policy-analytics)组策略分析分析Microsoft Endpoint Manager组策略对象。
+> 是否在本地使用组策略对象？ 查看它们在云中如何转换。 [使用 Microsoft Endpoint Manager 预览版中的](/mem/intune/configuration/group-policy-analytics)组策略分析分析本地组策略对象。
 
 ## <a name="related-articles"></a>相关文章
 

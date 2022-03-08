@@ -1,14 +1,14 @@
 ---
-title: 连接 IONOS 的 DNS 记录，从 1&1 到 Microsoft 365
+title: 将 IONOS 的 DNS 记录按 1&1 连接到 Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -21,15 +21,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
-description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录，&1 IONOS for Microsoft。
-ms.openlocfilehash: 8dc3a509a05e55e984d1c06e59319661a19019e7
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录，地址为 1&IONOS for Microsoft。
+ms.openlocfilehash: 54e18972fe2d5e2ccd8c3ab266b20241e67f68a9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648715"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313603"
 ---
-# <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>连接 IONOS 的 DNS 记录，从 1&1 到 Microsoft 365
+# <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>将 IONOS 的 DNS 记录按 1&1 连接到 Microsoft 365
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
 
@@ -39,7 +39,7 @@ ms.locfileid: "60648715"
 
 有两个选项可以设置域的 DNS 记录：
 
-- [**使用域连接**](#use-domain-connect-to-verify-and-set-up-your-domain)如果您尚未设置其他电子邮件服务提供商的域，请使用 Domain 连接 步骤自动验证和设置要与 Microsoft 365 一Microsoft 365。 
+- [**使用域连接**](#use-domain-connect-to-verify-and-set-up-your-domain) 如果你尚未使用另一个电子邮件服务提供商设置域，请使用域连接步骤自动验证和设置要用于 Microsoft 365 的新域。 
 
     或
 
@@ -47,33 +47,33 @@ ms.locfileid: "60648715"
 
 ## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>使用域连接验证和设置域
 
-按照以下步骤自动验证并设置 IONOS 1&1 域，并Microsoft 365：
+按照以下步骤使用 Microsoft 365 自动验证和设置 IONOS 1&1 域：
 
-1. 在"Microsoft 365 管理中心"中 **，设置"** 域  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>"，然后选择要设置的域。
+1. 在 Microsoft 365 管理中心中，选择"**设置** > ""域 <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**"**</a>，然后选择要设置的域。
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-1.png" alt-text="Select your domain in Microsoft 365.":::
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-1.png" alt-text="在 Microsoft 365 中选择你的域。":::
 
-1. 选择三个点 (更多) >选择"开始 **设置"。**
+1. 选择三个点 (更多操作) >"开始 **设置"**。
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="选择&quot;开始设置&quot;。":::
 
-1. On the How do you want to connect your domain？页面，选择"**继续"。**   
+1. On the How do you want to connect your domain？页面，选择" **继续"**。   
 
-1. 在"添加 DNS 记录"页上，选择"**添加 DNS 记录"。**
+1. 在"添加 DNS 记录"页上，选择" **添加 DNS 记录"**。
 
-1. On the IONOS by 1&1 login page， sign in to your account， and select **连接**， and **Allow**.
+1. On the IONOS by 1&1 login page， sign in to your account， and select **Connect**， and **Allow**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-3.png" alt-text="选择连接&quot;，然后选择&quot;允许&quot;。":::
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-3.png" alt-text="选择&quot;连接&quot;，然后选择&quot;允许&quot;。":::
 
-    这将完成域的域Microsoft 365。 
+    这将完成 Microsoft 365 的域设置。 
 
 ## <a name="create-dns-records-with-manual-setup"></a>使用手动设置创建 DNS 记录
 
 在 IONOS 上按 1&1 添加这些记录后，域将设置为使用 Microsoft 服务。
   
 > [!CAUTION]
-> 请注意，IONOS x 1&1 不允许域同时具有 MX 记录和顶级自动发现 CNAME 记录。 这将限制为 Microsoft 配置 Exchange Online 的方式。 有一种解决方法，但我们建议仅在你已拥有在 IONOS 上按 1 或 1 创建子域的经验&它。
-> 如果你选择在[](../setup/domains-faq.yml)IONOS 1 到 1&1 之前管理自己的 Microsoft DNS 记录，请按照本文中的步骤验证域并设置电子邮件、Skype for Business Online 等的 DNS 记录。
+> 请注意，IONOS x 1&1 不允许域同时具有 MX 记录和顶级自动发现 CNAME 记录。 这将限制为 Microsoft 配置 Exchange Online 的方式。 有一个解决方法，但我们建议仅在你已拥有在 IONOS 上按 1 到 1 创建子域的经验&它。
+> 如果你选择在 [](../setup/domains-faq.yml) IONOS 1&1 之前管理自己的 Microsoft DNS 记录，请按照本文中的步骤验证域并设置电子邮件、Skype for Business Online 等的 DNS 记录。
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。
@@ -87,15 +87,15 @@ ms.locfileid: "60648715"
   
 1. To get started， go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
-1. 选择 **"菜单**"，然后选择"**域和 SSL"。**
+1. 选择 **"菜单**"，然后选择" **域和 SSL"**。
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="选择&quot;域和 SSL&quot;。":::
   
-1. 在 **要** 更新的域的操作下，选择齿轮控件，然后选择 **DNS**。
+1. 在 **"** 要更新的域的操作"下，选择齿轮控件，然后选择 **"DNS"**。
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="从下拉列表中选择&quot;DNS&quot;。":::
 
-1. 选择 **"添加记录"。**
+1. 选择 **"添加记录"**。
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="选择&quot;添加记录&quot;。":::
 
@@ -117,11 +117,11 @@ ms.locfileid: "60648715"
 
 在域注册机构网站添加了记录后，你将返回到 Microsoft 365 并请求 Microsoft 365 查找记录。 当 Microsof 找到正确的 TXT 记录时，表明域已通过验证。
 
-若要验证记录是否Microsoft 365：
+验证 Microsoft 365 中的记录：
   
-1. 在管理中心中，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"。**</a>
+1. 在管理中心，转到"设置 **""域** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**"**</a>。
 
-1. On the Domains page， select the domain that you're verifying， and select **Start setup**.
+1. 在"域"页面上，选择要验证的域，然后选择"开始 **设置"**。
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="选择&quot;开始设置&quot;。":::
 
@@ -139,15 +139,15 @@ ms.locfileid: "60648715"
 
 1. To get started， go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
-1. 选择 **"菜单**"，然后选择"**域和 SSL"。**
+1. 选择 **"菜单**"，然后选择" **域和 SSL"**。
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="选择&quot;域和 SSL&quot;。":::
   
-1. 在 **要** 更新的域的操作下，选择齿轮控件，然后选择 **DNS**。
+1. 在 **"** 要更新的域的操作"下，选择齿轮控件，然后选择 **"DNS"**。
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="从下拉列表中选择&quot;DNS&quot;。":::
 
-1. 选择 **"添加记录"。**
+1. 选择 **"添加记录"**。
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="选择&quot;添加记录&quot;。":::
 
@@ -176,21 +176,21 @@ ms.locfileid: "60648715"
   
 1. To get started， go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
-1. 选择 **"菜单**"，然后选择"**域和 SSL"。**
+1. 选择 **"菜单**"，然后选择" **域和 SSL"**。
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="选择&quot;域和 SSL&quot;。":::
   
-1. 在 **要** 更新的域的操作下，选择齿轮控件，然后选择 **DNS**。
+1. 在 **"** 要更新的域的操作"下，选择齿轮控件，然后选择 **"DNS"**。
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="从下拉列表中选择&quot;DNS&quot;。":::
 
-    现在您将创建两个子域，并为每个子域设置 **一** 个 Alias 值。<br/> (这是必填项，因为 IONOS&IONOS 仅支持一个顶级 CNAME 记录，但 Microsoft 需要多个 CNAME 记录) <br/>首先，将创建自动发现子域。
+    现在您将创建两个子域，并为每个子域设置 **一个 Alias** 值。<br/> (这是必填项，因为 1&IONOS 仅支持一个顶级 CNAME 记录，但 Microsoft 需要多个 CNAME 记录。) <br/>首先，将创建自动发现子域。
 
-1. 选择 **"子域"。**
+1. 选择 **"子域"**。
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Subdomains.png" alt-text="选择&quot;子域&quot;。":::
   
-1. 选择 **"添加子域"。**
+1. 选择 **"添加子域"**。
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="选择&quot;添加子域&quot;。":::
   
@@ -200,7 +200,7 @@ ms.locfileid: "60648715"
     |:-----|:-----|
     |自动发现  <br/> | autodiscover.outlook.com |
 
-1. 在 **刚** 创建的 **自动发现** 子域的操作下，选择齿轮控件，然后从下拉列表中选择 **DNS。** <br/>
+1. 在 **刚** 创建的 **自动发现** 子域的操作下，选择齿轮控件，然后从下拉列表中选择 **DNS** 。 <br/>
 
 1. 选择 **"添加记录**"，然后选择 **"CNAME"** 部分。
 
@@ -215,28 +215,28 @@ ms.locfileid: "60648715"
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](../../enterprise/external-domain-name-system-records.md)。 若要验证 SPF 记录，可以使用以下[SPF 验证工具之一](../setup/domains-faq.yml)。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一  *个包含这*  两组值的 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](../../enterprise/external-domain-name-system-records.md)。 若要验证 SPF 记录，可以使用其中一[个 SPF 验证工具](../setup/domains-faq.yml)。 
   
 > [!NOTE]
 > 如果你已注册 1und1.de， [请在此处登录](https://go.microsoft.com/fwlink/?linkid=859152)。 
   
 1. To get started， go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
-1. 选择 **"菜单**"，然后选择"**域和 SSL"。**
+1. 选择 **"菜单**"，然后选择" **域和 SSL"**。
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="选择&quot;域和 SSL&quot;。":::
   
-1. 在 **要** 更新的域的操作下，选择齿轮控件，然后选择 **DNS**。
+1. 在 **"** 要更新的域的操作"下，选择齿轮控件，然后选择 **"DNS"**。
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="从下拉列表中选择&quot;DNS&quot;。":::
 
-1. 选择 **"添加记录"。**
+1. 选择 **"添加记录"**。
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="选择&quot;添加记录&quot;。":::
 
-1. 选择 **"SPF (TXT) "** 部分。
+1. 选择 **"TXT (SPF)** 部分。
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SPFTXT.png" alt-text="选择&quot;SPF (TXT) &quot;部分。":::
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SPFTXT.png" alt-text="选择&quot;SPF (TXT) 部分。":::
 
 1. 在新记录的框中，键入或复制并粘贴下表中的值。 <br/>
 
@@ -250,27 +250,27 @@ ms.locfileid: "60648715"
 
 ## <a name="advanced-option-skype-for-business"></a>高级选项：Skype for Business
 
-只有当您的组织将 Skype for Business用于聊天、电话会议和视频呼叫等联机通信服务时，以及使用 Microsoft Teams。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
+只有组织对联机通信服务（Skype for Business、电话会议和视频呼叫）使用 Microsoft Teams。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
 
 ### <a name="add-two-additional-cname-records"></a>添加两条额外的 CNAME 记录
   
 1. To get started， go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
-1. 选择 **"菜单**"，然后选择"**域和 SSL"。**
+1. 选择 **"菜单**"，然后选择" **域和 SSL"**。
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="选择&quot;域和 SSL&quot;。":::
   
-1. 在 **要** 更新的域的操作下，选择齿轮控件，然后选择 **DNS**。
+1. 在 **"** 要更新的域的操作"下，选择齿轮控件，然后选择 **"DNS"**。
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="从下拉列表中选择&quot;DNS&quot;。":::
 
-    现在您将创建两个子域，并为每个子域设置 **一** 个 Alias 值。<br/> (这是必填项，因为 1&IONOS 仅支持一个顶级 CNAME 记录，但 Microsoft 需要多个 CNAME 记录。) <br/>首先，创建 lyncdiscover 子域。
+    现在您将创建两个子域，并为每个子域设置 **一个 Alias** 值。<br/> (这是必填项，因为 1&IONOS 仅支持一个顶级 CNAME 记录，但 Microsoft 需要多个 CNAME 记录。) <br/>首先，创建 lyncdiscover 子域。
 
-1. 选择 **"子域"。**
+1. 选择 **"子域"**。
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Subdomains.png" alt-text="选择&quot;子域&quot;。":::
   
-1. 选择 **"添加子域"。**
+1. 选择 **"添加子域"**。
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="选择&quot;添加子域&quot;。":::
 
@@ -280,7 +280,7 @@ ms.locfileid: "60648715"
     |:-----|:-----|
     |lyncdiscover   |webdir.online.lync.com  |
 
-1. 在 **刚** 创建的 **lyncdiscover** 子域的操作下，选择齿轮控件，然后从下拉列表中选择 **DNS。** <br/>
+1. 在 **刚** 创建的 **lyncdiscover** 子域的操作下，选择齿轮控件，然后从下拉列表中选择 **DNS** 。 <br/>
 
 1. 选择 **"添加记录**"，然后选择 **"CNAME"** 部分。
 
@@ -290,7 +290,7 @@ ms.locfileid: "60648715"
     |:-----|:-----|
     |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |
 
-1. 创建 SIP 服务 (子) ： <br/>选择 **"添加子域"。**
+1. 创建 SIP 服务 (子) ： <br/>选择 **"添加子域"**。
 
 1. 在" **添加新子域** "框中，键入或复制并粘贴下表中的 **"** 添加子域"值。  (您将在稍后的步骤中添加 **Alias** 值。)  <br/>
 
@@ -298,15 +298,15 @@ ms.locfileid: "60648715"
     |:-----|:-----|
     |sip  <br/> |sipdir.online.lync.com  <br/> |
 
-1. 在 **"** 您刚刚创建的子域的操作"下，选择齿轮控件，然后从下拉列表中选择 **"DNS"。** <br/>
+1. 在 **"** 您刚刚创建的子域的操作"下，选择齿轮控件，然后从下拉列表中选择 **"DNS** "。 <br/>
 
-1. 选择 **"添加记录"。**
+1. 选择 **"添加记录"**。
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="选择&quot;添加记录&quot;。":::
 
 1. 选择 **"CNAME"** 部分。
 
-1. 在 **"别名："** 框中，键入或复制并粘贴下表中的 **Alias** 值。 
+1. 在 **"别名：** "框中，键入或复制并粘贴下表中的 **Alias** 值。 
 
     |**创建子域**|**Alias**|
     |:-----|:-----|
@@ -321,15 +321,15 @@ ms.locfileid: "60648715"
   
 1. To get started， go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
-1. 选择 **"菜单**"，然后选择"**域和 SSL"。**
+1. 选择 **"菜单**"，然后选择" **域和 SSL"**。
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="选择&quot;域和 SSL&quot;。":::
   
-1. 在 **要** 更新的域的操作下，选择齿轮控件，然后选择 **DNS**。
+1. 在 **"** 要更新的域的操作"下，选择齿轮控件，然后选择 **"DNS"**。
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="从下拉列表中选择&quot;DNS&quot;。":::
 
-1. 选择 **"添加记录"。**
+1. 选择 **"添加记录"**。
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="选择&quot;添加记录&quot;。":::
 
@@ -364,21 +364,21 @@ ms.locfileid: "60648715"
   
 1. To get started， go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
-1. 选择 **"菜单**"，然后选择"**域和 SSL"。**
+1. 选择 **"菜单**"，然后选择" **域和 SSL"**。
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="选择&quot;域和 SSL&quot;。":::
   
-1. 在 **要** 更新的域的操作下，选择齿轮控件，然后选择 **DNS**。
+1. 在 **"** 要更新的域的操作"下，选择齿轮控件，然后选择 **"DNS"**。
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="从下拉列表中选择&quot;DNS&quot;。":::
 
-    现在您将创建两个子域，并为每个子域设置 **一** 个 Alias 值。<br/> (这是必填项，因为 1&IONOS 仅支持一个顶级 CNAME 记录，但 Microsoft 需要多个 CNAME 记录。) <br/>首先，创建 lyncdiscover 子域。
+    现在您将创建两个子域，并为每个子域设置 **一个 Alias** 值。<br/> (这是必填项，因为 1&IONOS 仅支持一个顶级 CNAME 记录，但 Microsoft 需要多个 CNAME 记录。) <br/>首先，创建 lyncdiscover 子域。
 
-1. 选择 **"子域"。**
+1. 选择 **"子域"**。
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Subdomains.png" alt-text="选择&quot;子域&quot;。":::
   
-1. 选择 **"添加子域"。**
+1. 选择 **"添加子域"**。
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="选择&quot;添加子域&quot;。":::
 
@@ -388,7 +388,7 @@ ms.locfileid: "60648715"
     |:-----|:-----|
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
 
-1. 在 **刚** 创建的 **enterpriseregistration** 子域的操作下，选择齿轮控件，然后从下拉列表中选择 **DNS。** <br/>
+1. 在 **刚** 创建的 **enterpriseregistration** 子域的操作下，选择齿轮控件，然后从下拉列表中选择 **DNS** 。 <br/>
 
 1. 选择 **"添加记录**"，然后选择 **"CNAME"** 部分。
 
@@ -398,7 +398,7 @@ ms.locfileid: "60648715"
     |:-----|:-----|
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
 
-1. 创建另一个子域： <br/>选择 **"添加子域"。**
+1. 创建另一个子域： <br/>选择 **"添加子域"**。
 
 1. 在" **添加新子域** "框中，键入或复制并粘贴下表中的 **"** 添加子域"值。  (您将在稍后的步骤中添加 **Alias** 值。)  <br/>
 
@@ -406,15 +406,15 @@ ms.locfileid: "60648715"
     |:-----|:-----|
     |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
 
-1. 在 **刚** 创建的 **enterpriseenrollment** 子域的操作下，选择齿轮控件，然后从下拉列表中选择 **DNS。** <br/>
+1. 在 **刚** 创建的 **enterpriseenrollment** 子域的操作下，选择齿轮控件，然后从下拉列表中选择 **DNS** 。 <br/>
 
-1. 选择 **"添加记录"。**
+1. 选择 **"添加记录"**。
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="选择&quot;添加记录&quot;。":::
 
 1. 选择 **"CNAME"** 部分。
 
-1. 在 **"别名："** 框中，键入或复制并粘贴下表中的 **Alias** 值。 
+1. 在 **"别名：** "框中，键入或复制并粘贴下表中的 **Alias** 值。 
 
     |**创建子域**|**Alias**|
     |:-----|:-----|

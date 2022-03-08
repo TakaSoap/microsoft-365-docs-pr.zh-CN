@@ -11,26 +11,26 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: 管理员可以了解如何使用 Microsoft Defender for Office 365计划 2 中的攻击模拟培训用户进行网络钓鱼防护。
+description: 管理员可以了解如何使用 Microsoft Defender for Office 365 计划 2 中的攻击模拟培训其用户进行网络钓鱼防护。
 ms.technology: mdo
-ms.openlocfilehash: 065b456d5a53a4d803c67ac0ac6ddc270391851a
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 31c8fd7b0369e5af522cd79b9bee7c5ee8460cc5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295432"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329637"
 ---
-# <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>在 Defender for Office 365 中通过攻击模拟培训模拟网络钓鱼Office 365
+# <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>使用 Defender for Office 365 中的攻击模拟培训模拟网络钓鱼Office 365
 
 **适用于 Microsoft** [Defender for Office 365计划 2](defender-for-office-365.md)
 
-Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培训允许你在组织中运行恶意网络攻击模拟。 这些模拟将测试你的安全策略和做法，并培训你的员工提高认知度并减少他们对攻击的敏感性。 本文将指导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
+通过 Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培训，你可以在你的组织中运行良好的网络攻击模拟。 这些模拟将测试你的安全策略和做法，并培训你的员工提高认知度并减少他们对攻击的敏感性。 本文将指导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
 
 有关攻击模拟培训的入门信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
 若要启动模拟网络钓鱼攻击，请执行以下步骤：
 
-1. 在 Microsoft 365 Defender门户中<https://security.microsoft.com>，转到"电子邮件&**协作** \> **攻击模拟培训** \> **模拟"** 选项卡。
+1. 在 Microsoft 365 Defender <https://security.microsoft.com>门户中，转到"电子邮件&**协作** \> **攻击模拟培训** \> **模拟"** 选项卡。
 
    若要直接转到模拟 **选项卡** ，请使用 <https://security.microsoft.com/attacksimulator?viewid=simulations>。
 
@@ -77,7 +77,7 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
 - **名称**
 - **语言**：有效负载内容的语言。 Microsoft 的有效负载目录 (全局) 提供 10 多种语言（也可以筛选）的有效负载。
 - **单击率**：单击此有效负载的人。
-- **预测的泄露率**：整个 Microsoft 365负载的历史数据，用于预测受此负载危害的百分比。
+- **预测的泄露率**：整个Microsoft 365的历史数据，用于预测受此负载危害的百分比。
 - **模拟启动** 计算此有效负载在其他模拟中使用的次数。
 
 在"搜索 !["图标中。](../../media/m365-cc-sc-search-icon.png) **搜索** 框，可以键入部分有效负载名称，然后按 Enter 筛选结果。
@@ -88,11 +88,11 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
   - **低**
   - **中**
   - **高**
-- **源**：指示有效负载是在组织中创建的，还是 Microsoft 预先存在的有效负载目录的一部分。 有效值包含:
+- **源**：指示有效负载是在组织中创建的，还是 Microsoft 预先存在的有效负载目录的一部分。 有效值为：
   - **全局** (内置) 
   - **租户** (自定义) 
   - **全部**
-- 语言：可用值为：中文 **(简体)**、中文 **(繁体) 、****英语**、**法语**、**德语**、**意大利语**、**日语**、**朝鲜** 语、**葡萄牙语**、**俄语**、**西班牙语** 和 **荷兰语**。
+- 语言：可用值为：中文 **(简** 体) 、中文 **(繁体) 、****英语**、**法语**、**德语**、**意大利语**、**日语**、**朝鲜** 语、**葡萄牙语**、**俄语**、**西班牙语** 和 **荷兰语**。
 - **添加 (标记)**
 - **按主题** 筛选：可用值为：帐户激活、帐户验证、计费、**清理邮件**、已接收 **文档**、**费用**、**传真**、财务报告、传入邮件、**发票**、已接收项目、**登录通知**、**已接收** 邮件、**密码**、**付款**、**工资** 单、个性化 **优惠**、**隔离****远程工作**、**查看邮件**、**安全更新**、**服务已** 挂起、**需要签名**、**升级邮箱存储 验证邮箱**、**语音邮件****和其他**。
 - 按品牌筛选：可用值为：**American Express**、**Capital One**、**DHL**、**DocuSign**、**Dropbox**、**Facebook**、**First American**、**Microsoft**、**Netflix**、**Scotiabank**、**SendGrid**、**Stewart Title**、**Tesco**、**Wells Fargo**、**Syrinx Cloud** **和其他**。
@@ -109,9 +109,9 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
 - " **概述** "选项卡包含有关有效负载的示例和其他详细信息。
 - 模拟 **启动选项卡** 包含 **模拟名称**、单击 **率**、**泄露率****以及操作**。
 
-![Microsoft 365 Defender门户中攻击模拟培训中的有效负载Microsoft 365 Defender出。](../../media/attack-sim-training-simulations-select-payload-details.png)
+![Microsoft 365 Defender门户中攻击模拟培训中的有效负载详细信息。](../../media/attack-sim-training-simulations-select-payload-details.png)
 
-如果通过单击名称从列表中选择有效负载， ![则会显示"发送测试有效负载"图标。](../../media/m365-cc-sc-create-icon.png) **"发送测试** "按钮显示在主页上，你可以向自己发送有效负载电子邮件的副本 (当前登录的用户) 进行检查。
+如果通过单击名称从列表中选择有效负载， ![则会显示"发送测试有效负载"图标。](../../media/m365-cc-sc-create-icon.png) **"发送测试** "按钮显示在主页上，你可以向自己发送有效负载电子邮件的副本 (当前登录的用户) 检查。
 
 若要创建自己的有效负载，请单击" ![创建有效负载图标"。](../../media/m365-cc-sc-create-icon.png) **创建有效负载**。 有关详细信息，请参阅为攻击 [模拟培训创建自定义负载](attack-simulation-training-payloads.md)。
 
@@ -156,11 +156,11 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
         - 选择 **所有标题**
         - 选择现有的"标题"值。
 
-      ![用户门户中攻击模拟培训中的目标用户Microsoft 365 Defender筛选。](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      ![客户门户中攻击模拟培训中的"目标用户"页面上Microsoft 365 Defender筛选。](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
 
       确定条件后，受影响的用户将显示在出现的"用户列表"部分，您可以在其中选择部分或所有发现的收件人。
 
-      完成后，单击"应用 x **(x) "，** 然后单击" **添加 x 用户"**。
+      完成后，单击"应用 x (**x) "，** 然后单击" **添加 x 用户"**。
 
   返回到主 **"目标用户"** 页面，您可以使用"搜索 !["图标。](../../media/m365-cc-sc-search-icon.png) **搜索** 框以查找受影响的用户。 还可以单击"删除 ![用户"图标。](../../media/m365-cc-sc-search-icon.png) **删除** 以删除特定用户。
 
@@ -194,7 +194,7 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
       - **模拟结束后 7 天**
   - **无培训**：如果你选择此值，页面上的唯一选项是"下一步"按钮，将你导航到 [**登陆页面**](#landing-page)页面。
 
-![在企业门户中攻击模拟培训中的"培训作业"页面上添加Microsoft 365 Defender培训。](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+![在安全门户中攻击模拟培训中的"培训作业"页面上添加Microsoft 365 Defender培训。](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
 
 ### <a name="training-assignment"></a>培训作业
 
@@ -244,7 +244,7 @@ Microsoft Defender for Office 365 计划 2 或 Microsoft 365 E5攻击模拟培�
 
 在 **登录页面** 页面上，配置用户在模拟中打开有效负载时将访问的网页。
 
-Microsoft 特意提供的登陆页面有 12 种语言版本：中文 (简体) 、中文 (繁体) 、英语、法语、德语、意大利语、日语、朝鲜语、葡萄牙语、俄语、西班牙语和荷兰语。
+Microsoft 提供的登陆页面有 12 种语言版本：中文 (简体) 、中文 (繁体) 、英语、法语、德语、意大利语、日语、朝鲜语、葡萄牙语、俄语、西班牙语和荷兰语。
 
 - **选择登陆页面首选项**：可用值为：
   - **使用 Microsoft 默认登陆** 页面：这是具有要配置的以下关联选项的默认值：
@@ -290,7 +290,7 @@ Microsoft 特意提供的登陆页面有 12 种语言版本：中文 (简体) �
 - **不传递通知：****在出现的** 警报对话框中单击"继续"。 如果选择此选项，将在单击"下一步"时访问 [](#launch-details)"启动详细信息 **"页**。
 
 - **Microsoft 默认通知 (推荐)**：页面上提供了以下附加设置：
-  - 选择默认语言：可用值为：中文 **(简体)**、中文 **(繁体) 、****英语**、**法语**、**德语**、**意大利语**、**日语**、**朝鲜** 语、葡萄牙语、**俄语**、**西班牙语** 和 **荷兰语**。 
+  - 选择默认语言：可用值为：中文 **(简** 体) 、中文 **(繁体) 、****英语**、**法语**、**德语**、**意大利语**、**日语**、**朝鲜** 语、**葡萄牙语**、**俄语**、**西班牙语** 和 **荷兰语**。
   - 默认情况下，唯一可用的通知是 **Microsoft 积极通知**。 通知中提供了以下信息：
     - **通知** (名称) ：值为 **Microsoft 默认正误报通知**。
     - **语言**：如果通知包含多个翻译，则直接显示前两种语言。 To see the remaining languages， hover over the numeric icon (for example， **+10**) .
@@ -361,6 +361,7 @@ Microsoft 特意提供的登陆页面有 12 种语言版本：中文 (简体) �
     - **选择启动时间**
 - **配置在之后结束模拟的天数**：默认值为 2。
 - **启用区域感知时区传递**：根据员工的区域，在工作时间向员工传递模拟攻击邮件。
+- **显示收集的** 驱动器间技术数据页：你可以显示驱动器 URL 技术攻击的覆盖层。 若要隐藏覆盖层并直接转到登陆页面，请取消选中此选项。
 
 完成后，单击“**下一步**”。
 

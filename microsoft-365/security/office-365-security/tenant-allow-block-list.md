@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中管理允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d7e3e56ccdaa59b39a6f65a63684b5b715db352e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: e27da44a38162955df252e29c1754c93a2dc8967
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942556"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318559"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -37,16 +37,16 @@ ms.locfileid: "61942556"
 >
 > 本文中介绍的一些功能在预览版中，可能会更改，并且并不是在所有组织中都可用。
 >
-> 如果你的组织没有本文中所述的欺骗功能，请参阅使用欺骗智能策略和 EOP 中的欺骗智能见解管理欺骗发件人中的旧版欺骗 [管理体验](walkthrough-spoof-intelligence-insight.md)。
+> 如果你的组织没有本文中所述的欺骗功能，请参阅使用 EOP 中的欺骗智能策略和欺骗智能见解管理欺骗发件人中的旧版欺骗 [管理体验](walkthrough-spoof-intelligence-insight.md)。
 
-在Microsoft 365没有邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，您可能会对 EOP 筛选裁定有意见不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能允许错误消息 (漏报) 。
+在Microsoft 365没有邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，您可能会与 EOP 筛选裁定不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能通过错误负数 (错误) 。
 
-租户门户中的租户允许/阻止Microsoft 365 Defender提供了一种手动覆盖Microsoft 365裁定的方法。 租户允许/阻止列表在传入邮件的邮件流 (不适用于组织内部邮件) 用户单击时。 可以指定以下类型的替代：
+租户门户中的租户允许/阻止Microsoft 365 Defender提供了一种方法，可以手动替代Microsoft 365裁定。 租户允许/阻止列表在传入邮件的邮件流期间 (不适用于组织内部邮件) 用户单击时。 可以指定以下类型的替代：
 
 - 要阻止的 URL。
 - 要阻止的文件。
 - 要阻止的发件人电子邮件或域。
-- 允许或阻止欺骗发件人。 如果替代欺骗智能见解中的允许或阻止裁定[](learn-about-spoof-intelligence.md)，欺骗发件人将成为仅出现在租户允许/阻止列表中的"欺骗"选项卡上的手动允许或阻止条目。 在欺骗智能检测到欺骗性发件人之前，还可以在此处手动创建允许或阻止欺骗发件人的允许或阻止条目。
+- 允许或阻止欺骗发件人。 如果你替代欺骗智能见解中的允许或阻止裁定[](learn-about-spoof-intelligence.md)，欺骗发件人将成为仅出现在租户允许/阻止列表中的"欺骗"选项卡上的手动允许或阻止条目。 在欺骗智能检测到欺骗性发件人之前，还可以在此处手动创建允许或阻止欺骗发件人的允许或阻止条目。
 - 允许的 URL。
 - 要允许的文件。
 - 要允许的发件人电子邮件或域。
@@ -55,7 +55,7 @@ ms.locfileid: "61942556"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到租户 **允许/阻止列表页面** ，请使用 <https://security.microsoft.com/tenantAllowBlockList> 。
+- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到租户 **允许/阻止列表页面** ，请使用 <https://security.microsoft.com/tenantAllowBlockList>。
 
 - 使用文件的 SHA256 哈希值指定文件。 若要在命令提示符中查找文件的 SHA256 哈希Windows，在命令提示符中运行以下命令：
 
@@ -63,7 +63,7 @@ ms.locfileid: "61942556"
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
-  示例值为 `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` 。 不支持感知哈希 (pHash) 值。
+  示例值为 `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`。 不支持感知哈希 (pHash) 值。
 
 - 本文稍后的租户允许/阻止列表一节的 [URL](#url-syntax-for-the-tenant-allowblock-list) 语法中介绍了可用的 URL 值。
 
@@ -81,7 +81,7 @@ ms.locfileid: "61942556"
 
 - 您需在 Microsoft 365 Defender 门户中分配权限，然后才能执行本文中的过程：
   - **发件人、URL 和文件**：
-    - 若要在租户允许/阻止列表中添加和删除值，你需要是组织管理、安全管理员或安全操作员角色组的成员，或者你分配有 Tenant **AllowBlockList Manager** 角色。
+    - 若要在租户允许/阻止列表中添加和删除值，你需要是组织管理、安全管理员或安全操作员角色组的成员，或者你分配有 **Tenant AllowBlockList Manager** 角色。
     - 若要对租户允许/阻止列表进行只读访问，你需要是全局读取 **者** 或安全读者 **角色组的成员** 。
   - **欺骗**：以下组合之一：
     - **组织管理**
@@ -99,42 +99,45 @@ ms.locfileid: "61942556"
 
 ### <a name="use-the-microsoft-365-defender-portal"></a>使用 Microsoft 365 Defender 门户
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com> ， go to Policies & **rules** \> **Threat Policies** Tenant \> **Allow/Block Lists** in the **Rules** section. 若要直接转到租户 **允许/阻止列表页面** ，请使用 <https://security.microsoft.com/tenantAllowBlockList> 。
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>， go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. 若要直接转到租户 **允许/阻止列表页面** ，请使用 <https://security.microsoft.com/tenantAllowBlockList>。
 
 若要添加所有块，请参阅 [在租户允许/阻止列表中添加块](manage-tenant-blocks.md)。
 
 若要添加所有允许，请参阅租户 [允许/阻止列表中的添加允许](manage-tenant-allows.md)。
 
-若要修改和删除所有块并允许，请参阅修改和删除租户允许/阻止列表中的 [条目](modify-remove-entries-tenant-allow-block.md)。
+若要修改和删除所有块并允许，请参阅修改和删除租户允许 [/阻止列表中的条目](modify-remove-entries-tenant-allow-block.md)。
 
 ### <a name="use-exchange-online-powershell-or-standalone-eop-powershell"></a>使用 Exchange Online PowerShell 或独立 EOP PowerShell
 
-若要管理所有允许和阻止，请参阅在租户允许 [/](manage-tenant-blocks.md)阻止列表中添加阻止、在租户允许 [/](manage-tenant-allows.md)阻止列表中添加允许和修改和删除租户允许 [/阻止列表中的条目](modify-remove-entries-tenant-allow-block.md)。
+若要管理所有允许和阻止，请参阅在租户允许 [/](manage-tenant-blocks.md)阻止列表中添加阻止、在租户允许 [/](manage-tenant-allows.md)阻止列表中添加允许以及修改和删除租户允许/阻止列表中的 [条目](modify-remove-entries-tenant-allow-block.md)。
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>查看租户允许/阻止列表中的条目
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> ， go to Policies & **rules** \> **Threat Policies** Tenant \> **Allow/Block Lists** in the **Rules** section. 若要直接转到租户 **允许/阻止列表页面** ，请使用 <https://security.microsoft.com/tenantAllowBlockList> 。
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>， go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. 若要直接转到租户 **允许/阻止列表页面** ，请使用 <https://security.microsoft.com/tenantAllowBlockList>。
 
 2. 选择您想要的选项卡。 可用的列取决于所选的选项卡：
 
    - **发件人**：
      - **值**：发件人域或电子邮件地址。
      - **操作**：值 **Allow** 或 **Block**。
+     - **修改者**
      - **上次更新**
      - **删除 on**
-     - **备注**
-   - **URL：**
+     - **注释**
+   - **URL**：
      - **值**：URL。
      - **操作**：值 **Allow** 或 **Block**。
+     - **修改者**
      - **上次更新**
      - **删除 on**
-     - **备注**
+     - **注释**
    - **Files**
      - **值**：文件哈希。
      - **操作**：值 **Allow** 或 **Block**。
+     - **修改者**
      - **上次更新**
      - **删除 on**
-     - **备注**
+     - **注释**
    - **网络钓鱼**
      - **欺骗用户**
      - **发送基础结构**
@@ -145,12 +148,12 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com> ， go 
 
    可以单击 **"分组** "对结果进行分组。 可用的值取决于所选的选项卡：
 
-   - **发件人**：可以按操作 对结果 **进行分组**。
-   - **URL：** 可以按操作 对结果 **进行分组**。
-   - **文件**：可以按操作 对结果 **进行分组**。
-   - **欺骗：** 你可以按操作或欺骗 **类型****对结果进行分组**。
+   - **发件人**：可以按操作对结果 **进行分组**。
+   - **URL**：可以按操作对结果 **进行分组**。
+   - **文件**：可以按操作对结果 **进行分组**。
+   - **欺骗**：你可以按操作或欺骗 **类型****对结果进行分组**。
 
-   单击 **"搜索**"，输入值的全部或一部分，然后按 Enter 查找特定值。 完成后，单击"清除 ![ 搜索图标"。](../../media/m365-cc-sc-close-icon.png) **清除搜索**。
+   单击 **"** 搜索"，输入所有或部分值，然后按 Enter 查找特定值。 完成后，单击"清除 ![搜索图标"。](../../media/m365-cc-sc-close-icon.png) **清除搜索**。
 
    单击 **"筛选** "筛选结果。 显示在"筛选器 **"飞出** 控件中的可用值取决于所选的选项卡：
 
@@ -173,7 +176,7 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com> ， go 
      - **操作**
      - **欺骗类型**
 
-   完成后，单击“**应用**”。 若要清除现有筛选器，请单击 **"筛选器"，** 在出现的"**筛选器**"飞出中，单击"清除 **筛选器"。**
+   完成后，单击“**应用**”。 若要清除现有筛选器，请单击 **"筛选器**"，在出现的"筛选器"飞出区中，单击"清除 **筛选器"**。
 
 4. 完成后，单击“**添加**”。
 
@@ -229,9 +232,9 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 ## <a name="url-syntax-for-the-tenant-allowblock-list"></a>租户允许/阻止列表的 URL 语法
 
-- 允许 IP4v 和 IPv6 地址，但不允许 TCP/UDP 端口。
+- 允许使用 IPv4 和 IPv6 地址，但不允许 TCP/UDP 端口。
 
-- 不允许使用文件名扩展名 (例如，test.pdf) 。
+- 例如，不允许使用文件名 (，例如test.pdf) 。
 
 - 不支持 Unicode，但 Punycode 支持。
 
@@ -244,15 +247,15 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 - 不允许隐含子路径。
 
-  例如， `contoso.com` 不包括 `contoso.com/a` 。
+  例如， `contoso.com` 不包括 `contoso.com/a`。
 
-- 在 () 允许使用通配符或*通配符：
+- 在下列 () 允许使用通配符或*通配符：
 
   - 左通配符后面必须后跟一个时间段，以指定子域。
 
     例如， `*.contoso.com` 允许 ; `*contoso.com` 不允许。
 
-  - 右通配符必须按照 / (/) 左斜线来指定路径。
+  - 右通配符必须按照正斜杠 (/) 指定路径。
 
     例如， `contoso.com/*` 允许; `contoso.com*` 或 `contoso.com/ab*` 不允许。
 
@@ -264,9 +267,9 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
   - 左波浪符表示域和所有子域。
 
-    例如， `~contoso.com` 包括 `contoso.com` `*.contoso.com` 和 。
+    例如， `~contoso.com` 包括 `contoso.com` 和 `*.contoso.com`。
 
-- 包含协议（如 、 (）的 URL) 将失败，因为 URL 条目 `http://` `https://` `ftp://` 适用于所有协议。
+- 包含协议（ `http://``https://``ftp://` 如 、 (）的 URL) 将失败，因为 URL 条目适用于所有协议。
 
 - 不支持或不需要用户名或密码。
 
@@ -282,9 +285,9 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 **条目**： `contoso.com`
 
-- **允许匹配**： contoso.com
+- **允许匹配**：contoso.com
 
-- **允许不匹配**：
+- **不允许不匹配**：
 
   - abc-contoso.com
   - contoso.com/a
@@ -304,7 +307,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
 
-- **阻止不匹配**： abc-contoso.com
+- **不匹配的阻止**：abc-contoso.com
 
 #### <a name="scenario-left-wildcard-subdomain"></a>方案：将通配符 (子域) 
 
@@ -383,7 +386,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **允许不匹配和****阻止不匹配：contoso.com/b**
+- **允许不匹配和****阻止不匹配**：contoso.com/b
 
 #### <a name="scenario-left-and-right-tilde"></a>应用场景：左右波浪符
 
@@ -454,7 +457,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 - **中间通配符**：
 
-  - conto \* so.com
+  - conto\* so.com
   - conto~so.com
 
 - **双通配符**
@@ -464,16 +467,16 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 ## <a name="domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>租户允许/阻止列表中欺骗发件人条目的域对语法
 
-租户允许/阻止列表中欺骗发件人的域对使用以下语法： `<Spoofed user>, <Sending infrastructure>` 。
+租户允许/阻止列表中欺骗发件人的域对使用以下语法： `<Spoofed user>, <Sending infrastructure>`。
 
-- **欺骗用户**：此值涉及在电子邮件客户端的"来源"框中显示的欺骗用户的电子邮件地址。  此地址也称为 `5322.From` 地址。 有效值包括：
+- **欺骗用户**：此值涉及在电子邮件客户端的"来源"框中显示的欺骗用户的电子邮件地址。 此地址也称为地址 `5322.From` 。 有效值包括：
   - 个人电子邮件地址 (例如，chris@contoso.com) 。
   - 电子邮件域 (例如，contoso.com) 。
-  - 通配符 (例如 \* ，) 。
+  - 通配符 (例如， \*) 。
 
-- **发送基础结构**：此值指示来自欺骗用户的邮件来源。 有效值包括：
-  - 反向 DNS 查找中的域 (PTR 记录) 源电子邮件服务器的 IP 地址 (例如，fabrikam.com) 。
-  - 如果源 IP 地址没有 PTR 记录，则发送基础结构标识为 \<source IP\> /24 (例如，192.168.100.100/24) 。
+- **发送** 基础结构：此值指示来自欺骗用户的邮件来源。 有效值包括：
+  - 反向 DNS 查找中的域 (PTR) 源电子邮件服务器的 IP 地址的 IP 地址 (例如，fabrikam.com) 。
+  - 如果源 IP 地址没有 PTR 记录 \<source IP\>，则发送基础结构标识为 /24 (例如，192.168.100.100/24) 。
 
 下面是用于标识欺骗性发件人的有效域对的一些示例：
 
@@ -483,11 +486,11 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 欺骗性发件人条目的最大数量为 1000。
 
-添加域对仅允许或阻止欺骗用户 *和发送* 基础结构的组合。 它不允许来自任何来源的欺骗用户的电子邮件，也不允许来自任何欺骗用户的发送基础结构源的电子邮件。 
+添加域对仅允许或阻止欺骗 *用户和发送* 基础结构的组合。 它不允许来自任何来源的欺骗用户的电子邮件，也不允许来自任何欺骗用户的发送基础结构源的电子邮件。 
 
 例如，为以下域对添加允许条目：
 
-- **域**： gmail.com
-- **基础结构**： tms.mx.com
+- **域**：gmail.com
+- **基础结构**：tms.mx.com
 
-仅允许 *来自该域* 的邮件和发送基础结构对进行欺骗。 不允许其他发件人 gmail.com 欺骗邮件。 来自来自其他域的其他域中发件人的邮件 tms.mx.com 反欺骗智能进行检查。
+仅允许 *来自该域* 的邮件和发送基础结构对进行欺骗。 不允许其他发件人 gmail.com 欺骗邮件。 来自来自其他域的其他域中发件人的邮件 tms.mx.com 欺骗智能进行检查。

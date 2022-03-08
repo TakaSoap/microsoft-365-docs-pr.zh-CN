@@ -1,5 +1,5 @@
 ---
-title: 将你的Microsoft 365 Defender环境推广到生产环境
+title: 步骤 7. 将你的Microsoft 365 Defender环境推广到生产环境
 description: 使用本文将 MDI、MDO、MDE 和 Defender for Cloud Apps 的系列推广到 Microsoft 365 Defender 或 M365D 中的实时环境。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,19 +20,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e4b852ef7f252033a67e6aa3f1f8183400c18bdb
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 47f36d965c9b2b6ef5f106c590e47fe0251163d8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943300"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323971"
 ---
-# <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>将Microsoft 365 Defender环境推广到生产环境
+# <a name="step-7-promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>步骤 7. 将Microsoft 365 Defender环境推广到生产环境
 
 **适用于：**
 - Microsoft 365 Defender
 
-若要将Microsoft 365 Defender环境推广到生产环境，请首先购买必要的许可证。 按照创建电子验证[环境并](eval-create-eval-environment.md)购买 Office 365 E5 许可证 (而不是选择"开始免费试用") 。
+若要将Microsoft 365 Defender环境推广到生产环境，请首先购买必要的许可证。 按照创建 [eval 环境并](eval-create-eval-environment.md)购买 Office 365 E5许可证中的步骤 (而不是选择"开始免费试用") 。
 
 接下来，完成任何其他配置并展开试点组，直到这些试点组进入完全生产阶段。
 
@@ -52,7 +52,7 @@ Defender for Identity 不需要任何其他配置。 只需确保你已购买必
 
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
-若要将 Microsoft Defender for Endpoint 评估环境从试点推广到生产环境，只需使用任何受支持的工具和方法将更多终结点 [载入服务](../defender-endpoint/onboard-configure.md)。
+若要将 Microsoft Defender for Endpoint 评估环境从试点推广到生产环境，只需使用任何受支持的工具和方法将更多终结点[载入服务。](../defender-endpoint/onboard-configure.md)
 
 使用以下一般准则将更多设备载入到 Microsoft Defender for Endpoint。
 

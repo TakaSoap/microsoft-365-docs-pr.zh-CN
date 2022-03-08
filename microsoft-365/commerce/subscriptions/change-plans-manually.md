@@ -1,9 +1,9 @@
 ---
-title: 手动Microsoft 365更改商业计划计划
+title: 手动Microsoft 365更改适用于业务计划的计划
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 search.appverid: MET150
 description: 通过购买新订阅并确保两个订阅都列出且处于活动状态，手动更改订阅。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 12ff6bdec77e6407d1b854dc7a5fd78f0401c253
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: adc76ff3fbfa5fd81893f0b260e76018288350f1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374588"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328423"
 ---
 # <a name="change-plans-manually"></a>手动更改计划
 
@@ -52,14 +52,14 @@ ms.locfileid: "61374588"
 
 **购买新订阅和许可证：** 按照购买另 [一Microsoft 365商业版订阅中的步骤](../try-or-buy-microsoft-365.md)购买新订阅。
 
-请确保为用户当前在同一组织购买订阅。 例如，检查要移动的用户的电子邮件地址。 如果他们的电子邮件地址包含 \@ contoso.com，则必须购买新订阅 contoso.com。
+请确保为用户当前在同一组织购买订阅。 例如，检查要移动的用户的电子邮件地址。 如果他们的电子邮件地址包含 contoso.com \@，则必须购买新订阅 contoso.com。
 包括要移动的每个用户的许可证。
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步骤 3：检查新订阅和许可证
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
-2. **验证这两个订阅是否列出且处于活动状态** 用户迁移自的订阅和要移动用户的订阅必须一起列出。 如果首次检查时新订阅不存在，请稍后重试。 检查这两个订阅是否处于活动状态。 [新订阅未列出，或不是活动订阅](#the-new-subscription-isnt-listed-or-isnt-active)。
+2. **验证这两个订阅是否列出且处于活动状态** 用户迁移自的订阅和要移动用户的订阅必须一起列出。 如果首次检查时新订阅不存在，请稍后重试。 检查这两个订阅是否处于活动状态。 [新订阅未列出或处于活动状态](#the-new-subscription-isnt-listed-or-isnt-active)。
 
 3. **检查是否有足够的许可证供每个用户使用** 每个用户都需要一个匹配其订阅的许可证。 因此，如果你想要将 10 个用户Microsoft 365 商业高级版，则需要确保十个许可证可用。
 
@@ -72,7 +72,7 @@ ms.locfileid: "61374588"
 
 - **如果购买了两个** 订阅，但此处未列出这两个订阅，则它们可能是为不同组织购买， (用于不同域) 。 订阅不能跨越组织边界。
 
-- **如果您知道您具有其他订阅**，并且此处未列出，或者它未处于活动状态， [请致电 Microsoft 支持](../../admin/get-help-support.md)人员。
+- **如果您知道您具有其他订阅**，但此处未列出该订阅，或者该订阅未处于活动状态，请致电 [Microsoft 支持人员](../../admin/get-help-support.md)。
 
 ### <a name="what-about-the-old-licenses"></a>旧许可证呢？
 
@@ -88,7 +88,7 @@ ms.locfileid: "61374588"
 
 2. 在 **"活动用户** "页上，选择要为其分配许可证的用户。
 
-3. 在"**许可证和应用"** 选项卡上，展开"许可证 **"，** 选择要分配的许可证的框，然后选择"保存 **更改"。**
+3. 在" **许可证和应用"** 选项卡上 **，展开"** 许可证"，选择要分配的许可证的框，然后选择"保存 **更改"**。
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>一次为多个用户重新分配许可证
 

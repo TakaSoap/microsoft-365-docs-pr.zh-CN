@@ -2,8 +2,8 @@
 title: 配置支持与 ServiceNow 集成 - 基本身份验证
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,16 +17,16 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow 的作用域认证应用程序安装和配置指南。
-ms.openlocfilehash: cf9b5149847b51d9d701a49e32624ada3f708a17
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 23fab410b17cea9635c63b0ed0e4225d158dfdc8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321479"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323845"
 ---
 # <a name="configure-support-integration-with-servicenow---basic-authentication"></a>配置支持与 ServiceNow 集成 - 基本身份验证
 
-## <a name="prerequisites-basic-authentication"></a>基本 (身份验证的先决条件) 
+## <a name="prerequisites-basic-authentication"></a>基本 (的先决条件) 
 
 这些必备组件是设置支持集成Microsoft 365 **所必需的**。
 
@@ -46,7 +46,7 @@ ms.locfileid: "62321479"
 
 1. \[ServiceNow 管理员\] 在 ServiceNow 中设置出站 OAuth 提供程序。
 
-    如果范围未设置为 **"****&gt;全局"，请转到"设置应用程序&gt;"并** 切换到"**全局"**。
+    如果作用域未设置为 **"****&gt;全局"，请转到"设置应用程序&gt;"并** 切换到"**全局"**。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="自动生成的图形用户界面、文本、应用程序、聊天或短信说明":::
 
@@ -68,7 +68,7 @@ ms.locfileid: "62321479"
 
 1. \[ServiceNow 管理员\] 设置入站 OAuth 提供程序。
 
-    如果作用域未设置为 **"****&gt;&gt;** 全局"，则通过访问"开发人员应用程序设置切换到"全局"来 **这样做**。
+    如果范围未设置为 **"****&gt;&gt;** 全局"，则通过访问"开发人员应用程序"设置"全局 **"来这样做**。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="自动生成的图形用户界面、文本、应用程序、聊天或短信说明":::
 
@@ -88,7 +88,7 @@ ms.locfileid: "62321479"
 
 ## <a name="optional-allow-the-services-ip-addresses-to-microsoft-365-support-integration"></a>\[OPTIONAL\] 允许服务的 IP 地址支持Microsoft 365集成
 
-如果贵公司使用自己的策略限制 Internet 访问，请通过允许以下 IP 地址同时用于入站和出站 API 访问，为 Microsoft 365 服务启用网络访问以支持集成：
+如果贵公司使用自己的策略限制 Internet 访问，请通过允许下面的 IP 地址同时用于入站和出站 API 访问，为 Microsoft 365 服务启用网络访问以支持集成：
 
 - 52.149.152.32
 
@@ -105,13 +105,13 @@ ms.locfileid: "62321479"
 > [!NOTE]
 > 此终端命令列出服务的所有活动 IP，Microsoft 365集成：`nslookup`` connector.rave.microsoft.com`
 
-## <a name="configure-the-microsoft-365-support-integration-application"></a>配置Microsoft 365集成应用程序
+## <a name="configure-the-microsoft-365-support-integration-application"></a>配置 Microsoft 365 支持集成应用程序
 
 可以在Microsoft 365下设置支持集成Microsoft 365应用程序。
 
 若要设置 ServiceNow 实例与服务支持之间的集成，需要Microsoft 365这些步骤。
 
-1. \[ServiceNow 管理员\] 将作用域切换 **为Microsoft 365集成**。
+1. \[ServiceNow 管理员\] 将作用域切换 **为Microsoft 365集成。**
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="图形用户界面，自动生成表说明":::
 
@@ -166,7 +166,7 @@ ms.locfileid: "62321479"
 
 1. 配置支持集成设置：
 
-    Select the **Basic information** tab > **Internal support** **toolServiceNow** > ， and enter the **Outbound App ID** value in the **Application ID to issue Auth Token** field. 此出站应用 ID 位于步骤 6 – 完成集成中，该集成是在步骤 1 ([基本 \#身份验证) 中创建的](#prerequisites-basic-authentication)。
+    Select the **Basic information** tab > **Internal support** **toolServiceNow** > ， and enter the **Outbound App ID** value in the **Application ID to issue Auth Token** field. 此出站应用 ID 位于步骤 6 – 完成集成中，该集成是在步骤 1 中的先决条件 [ (基本 \#) 中创建的](#prerequisites-basic-authentication)。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
@@ -180,13 +180,13 @@ ms.locfileid: "62321479"
 
     - 客户端 ID：步骤 6 – 完成集成中的客户端 **ID** 值。
 
-    - 客户端密码：在先决条件和基本身份验证步骤 3 (创建的入站 OAuth) \#密码。
+    - 客户端密码：在步骤 3 中的先决条件 (中创建 \#的入站 OAuth) 密码。
 
     - 刷新令牌过期：864000
 
     - Rest username： The **User Name** value from Step 6 – Complete the Integration.
 
-    - Rest 用户密码：步骤 4 中在先决条件 (中创建的集成 [) \#密码](#prerequisites-basic-authentication)。
+    - Rest 用户密码：步骤 4 中"先决条件" ([基本\#](#prerequisites-basic-authentication)身份验证) 的密码。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image19.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image19.png" alt-text="图形用户界面，应用程序说明自动生成":::
 
@@ -198,9 +198,19 @@ ms.locfileid: "62321479"
 
 1. \[ServiceNow 管理员\] 测试连接 完成上一步后，单击"测试 **连接"**。
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-8.png" lightbox="../../media/ServiceNow-guide/snowbasic-8.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
-    支持Microsoft 365应用将执行测试，以确保集成正常工作。 如果配置有问题，则会显示一条错误消息，说明需要修复的问题。 否则，应用程序已准备就绪。
+    支持Microsoft 365应用将执行测试以确保集成正常工作。 如果配置有问题，则会显示一条错误消息，说明需要修复的问题。 否则，应用程序已准备就绪。
      :::image type="content" source="../../media/ServiceNow-guide/snowbasic-9.png" lightbox="../../media/ServiceNow-guide/snowbasic-9.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
+1. \[ServiceNow 管理员\] 为现有用户启用 Microsoft 支持集成。
+
+    Microsoft 365角色之一的用户启用支持集成：
+
+    - xmiomsm365assis.insightsuser\_\_\_\_
+
+    - xmiomsm365assis.administrator\_\_\_
+
 1. \[可选\] [角色为 x_mioms_m365_assis.administrator 链接的用户] 链接Microsoft 365 管理帐户。
+
     如果任何用户具有 x_mioms_m365_assis.administrator 角色，并且使用不同的 Microsoft 365 帐户来管理 Microsoft 365 支持案例，则必须转到 Microsoft 365 支持 > 链接帐户以设置其 Microsoft 365 管理员电子邮件。
+    
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="自动生成的图形用户界面、文本、应用程序说明":::

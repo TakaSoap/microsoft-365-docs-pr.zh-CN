@@ -1,14 +1,14 @@
 ### YamlMime:FAQ
 metadata:
-  title: Microsoft Defender for Business (预览) 疑难解答
-  description: '解决 Microsoft Defender for Business 预览版中 (的问题) '
+  title: Microsoft Defender for Business 疑难解答
+  description: 解决 Microsoft Defender for Business 中可能发生的问题
   search.appverid: MET150
   author: denisebmsft
   ms.author: deniseb
   manager: dansimp
   audience: Admin
   ms.topic: overview
-  ms.date: 12/13/2021
+  ms.date: 02/24/2022
   ms.prod: m365-security
   ms.technology: mdb
   localization_priority: Normal
@@ -17,27 +17,27 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 5406b1593c25b32b27cfbcb908702481148492a1
-  ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+  ms.openlocfilehash: ac8690f70ae681ed07fd3e85c0e86ac49cbc0038
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/09/2022
-  ms.locfileid: "62465128"
-title: Microsoft Defender for Business (预览) 疑难解答
-summary: "Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。\n\n本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。\n\n使用本文作为指南来解决你可能在 Microsoft Defender for Business 预览版中 (遇到的问题) 。 \n"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63328143"
+title: Microsoft Defender for Business 疑难解答
+summary: "从 2022 年 3 月 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT [](https://aka.ms/mdb-preview) 合作伙伴推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。\n\n本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 \n\n使用本文作为指南来解决你在 Microsoft Defender for Business 中可能遇到的问题。 \n"
 sections:
-- name: 一般信息
+- name: 常规
   questions:
   - question: 我的安装和配置过程失败
-    answer: "\n如果你使用的是 Defender for Business (预览版中的简化配置) 出错，你仍然可以手动配置安全设置和策略。\n\n请参阅 [设置和配置 Microsoft Defender for Business (预览) ](mdb-setup-configuration.md)。\n"
+    answer: "\n如果你使用的是 Defender for Business 中的简化配置过程，但出错了，你仍然可以手动配置安全设置和策略。\n\n请参阅 [设置和配置 Microsoft Defender for Business](mdb-setup-configuration.md)。\n"
   - question: 我需要解决策略冲突
-    answer: "\n使用多个工具或方法定义安全策略时，可能会出现策略冲突。 下面是一个示例：\n\n假设 Lee 一直Microsoft Endpoint Manager管理设备和安全设置。 Lee 最近开始使用 Microsoft Defender for Business (预览) 。 在 Defender for Business 预览版中，Lee 已选择使用 (配置) 。 现在，Lee 在 Microsoft Endpoint Manager 和 Microsoft 365 Defender 门户中发现策略冲突。 \n\n幸运的是，可以通过执行以下操作之一来解决策略冲突：\n\n- 在策略中删除现有Microsoft Endpoint Manager\n- 请参阅[疑难解答策略Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)\n\n请参阅以下文章，了解有关 Defender for Business 预览版中 (安全策略) ：\n\n- [了解 Microsoft Defender for Business 预览版中的下一代 (配置) ](mdb-next-gen-configuration-settings.md)\n- [Microsoft Defender for Business 预览版中的 (设置) ](mdb-firewall.md)\n"
+    answer: "\n使用多个工具或方法定义安全策略时，可能会出现策略冲突。 下面是一个示例：\n\n假设他一直Microsoft Endpoint Manager管理设备和安全设置。 Lee 最近开始使用 Microsoft Defender for Business。 在 Defender for Business 中，Lee 已选择使用简化的配置过程。 现在，Lee 在 Microsoft Endpoint Manager 和 Microsoft 365 Defender 门户中发现策略冲突。 \n\n幸运的是，可以通过执行以下操作之一来解决策略冲突：\n\n- 在策略中删除现有Microsoft Endpoint Manager\n- 请参阅[疑难解答策略Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)\n\n请参阅以下文章，详细了解 Defender for Business 中的安全策略：\n\n- [了解 Microsoft Defender for Business 中的下一代配置设置](mdb-next-gen-configuration-settings.md)\n- [Microsoft Defender for Business 中的防火墙设置](mdb-firewall.md)\n"
   - question: Defender for Business 和 Microsoft Endpoint Manager
-    answer: "\n在设置和配置过程中，您可能会看到一条错误消息，指出：\n\n*出现问题，我们无法完成设置过程。Defender for Business 预览版和 (预览版) 集成Microsoft Endpoint Manager。*\n\n错误消息意味着必须在 Defender for Business 预览版和预览版 (建立) Microsoft Endpoint Manager。 集成出现问题。 若要解决此问题，请使用以下三个过程：\n\n**过程 1：打开 Microsoft Intune 门户中的 Microsoft 365 Defender 连接** \n\n1. 转到\"Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) 并登录。\n\n2. 选择 **\"设置** > **Endpoints\"**。 然后在\"常规 **\"下**，选择 **\"高级功能\"**。\n\n3. 向下滚动到 **Microsoft Intune** 连接，并确保它已打开。\n\n**过程 2：设置 Defender for Business 预览版 (强制执行)**\n\n1. 转到 Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) ，然后登录。\n\n2. 选择 **\"设置** > **Endpoints\"**。 在 **\"配置管理\"** 下，选择 **\"强制范围\"**。\n\n3. 在 **\"操作系统** 平台\"下，**Windows客户端设备\"**。\n\n4. 选择“保存”。\n\n**过程 3：打开\"终结点安全配置文件\"Microsoft Endpoint Manager**\n\n1. 转到管理Microsoft Endpoint Manager中心 () [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 并登录。\n\n2. 选择 **\"终结点安全**\"，然后在\"设置 **\"下**，选择 **\"适用于终结点的 Microsoft Defender\"**。\n\n3. 在 **\"终结点安全配置文件设置 (预览**) \"下，将\"**允许 Microsoft Defender for Endpoint**\"强制将\"终结点安全配置 (预览版) 设置为 **\"打开\"**。\n"
+    answer: "\n在设置和配置过程中，您可能会看到一条错误消息，指出：\n\n*出现问题，我们无法完成设置过程。Defender for Business 和 Microsoft Endpoint Manager 之间存在集成Microsoft Endpoint Manager。*\n\n错误消息意味着必须在 Defender for Business 和 Microsoft Endpoint Manager。 集成出现问题。 若要解决此问题，请使用以下三个过程：\n\n**过程 1：打开 Microsoft Intune 门户中的 Microsoft 365 Defender 连接** \n\n1. 转到\"Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) 并登录。\n\n2. 选择 **\"设置** > **Endpoints\"**。 然后在\"常规 **\"下**，选择 **\"高级功能\"**。\n\n3. 向下滚动到 **Microsoft Intune** 连接，并确保它已打开。\n\n**过程 2：设置 Defender for Business 的强制执行范围**\n\n1. 转到 Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) ，然后登录。\n\n2. 选择 **\"设置** > **Endpoints\"**。 在 **\"配置管理\"** 下，选择 **\"强制范围\"**。\n\n3. 在 **\"操作系统** 平台\"下，**Windows客户端设备\"**。\n\n4. 选择“**保存**”。\n\n**过程 3：打开\"终结点安全配置文件\"Microsoft Endpoint Manager**\n\n1. 转到管理Microsoft Endpoint Manager中心 () [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 并登录。\n\n2. 选择 **\"终结点安全**\"，然后在\"设置 **\"下**，选择 **\"适用于终结点的 Microsoft Defender\"**。\n\n3. 在 **\"终结点安全配置文件设置 (预览**) 下，将\"**允许 Microsoft Defender for Endpoint**\"强制将\"终结点安全配置 (预览版) **设置为\"打开\"**。\n"
   - question: 在门户中载入设备时Microsoft 365 Defender出现问题
-    answer: "\n在 Microsoft 365 Defender 门户[https://security.microsoft.com](https://security.microsoft.com)中 () 设备时，可能出现错误，并显示错误消息。 特别是，如果你使用适用于 Microsoft Endpoint Manager、组策略、System Center Configuration Manager 或 Defender for (Business 预览版) 中的移动设备管理的可下载载入程序包载入设备，可能会出现此问题。 \n\nMicrosoft Defender for Business (预览) 使用 *名为 Microsoft Defender for Endpoint 的安全管理的功能*。 如果在 Defender for Business (预览) 载入失败，则最可能的原因与 Defender for Endpoint 的安全管理有关。 若要解决此问题，请参阅以下文章：\n\n- [解决与 Microsoft Defender for Endpoint 的安全管理相关的载入问题](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt)\n\n- [在运行 Microsoft Defender for Endpoint Client Analyzer Windows](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#run-microsoft-defender-for-endpoint-client-analyzer-on-windows)\n"
+    answer: "\n在 Microsoft 365 Defender 门户[https://security.microsoft.com](https://security.microsoft.com)中 () 时，可能出现错误，并显示错误消息。 特别是，如果你使用适用于 Microsoft Endpoint Manager 的可下载载入程序包、组策略、System Center Configuration Manager 或 Defender for Business 中的移动设备管理载入设备，则可能会发生此问题。 \n\nMicrosoft Defender for Business 使用适用于终结点的 *Microsoft Defender 安全管理功能*。 如果 Defender for Business 中的载入失败，最可能的原因与 Defender for Endpoint 的安全管理有关。 若要解决此问题，请参阅以下文章：\n\n- [解决与 Microsoft Defender for Endpoint 的安全管理相关的载入问题](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt)\n\n- [在终结点客户端分析器上运行 Microsoft Defender Windows](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#run-microsoft-defender-for-endpoint-client-analyzer-on-windows)\n"
 additionalContent: >-
   ## <a name="see-also"></a>另请参阅
 
 
-  - [Microsoft Defender for Business (预览) - 常见问题和解答](mdb-faq.yml)
+  - [Microsoft Defender for Business - 常见问题和解答](mdb-faq.yml)

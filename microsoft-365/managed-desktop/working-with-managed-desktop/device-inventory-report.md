@@ -1,6 +1,6 @@
 ---
 title: 设备清点报告
-description: ''
+description: 本文介绍了设备清单报告
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: tiaraquan
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 531410fb840675dc8930078570aab84e9a1f1425
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: d5710fafd57c0c43419eb1a8ed31d2cba5c62084
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035674"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319916"
 ---
 # <a name="device-inventory-report"></a>设备清点报告
 
@@ -36,9 +36,9 @@ ms.locfileid: "62035674"
 - 存储 - 总计（以 GB 为单位）
 - 由用户 UPN 注册
 - 已分配用户
-- Status
+- 状态
 - 年龄 (月) 
-- 配置文件
+- 个人资料
 - 已登录用户
 - TPM 版本
 - 启用安全启动

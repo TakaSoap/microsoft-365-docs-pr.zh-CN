@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 090c43ea1d2d9f2d158f94d1e509490c3faf4799
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 58ba49a49b41d80bacb31efa780530e44a146fc1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767084"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326757"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -28,6 +28,11 @@ ms.locfileid: "62767084"
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0) 
+
+- 命令行工具现在支持将隔离的文件还原到最初检测到该文件的位置。 这可以通过 完成 `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`。
+- 错误修补程序
 
 ## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0) 
 
@@ -83,7 +88,7 @@ ms.locfileid: "62767084"
 
 - Linux 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [适用于美国政府终结点客户的 Microsoft Defender](gov.md)。
 - 修复了在 LINUX 上使用 Microsoft Defender for Endpoint（在带一个使用有一个使用有一个更新的系统）的系统上导致操作系统挂起的问题
-- 性能改进&修复的其他 Bug
+- 性能改进& Bug 修复
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0) 
 
@@ -97,8 +102,8 @@ ms.locfileid: "62767084"
 
 ## <a name="1011853"></a>101.18.53
 
-- EDR Linux 版本现已[发布](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-- 添加了一个新的命令行开关 (`--ignore-exclusions`) 自定义扫描过程中忽略 AV 排除 `mdatp scan custom` () 
+- EDR Linux 版本现已[普遍可用](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
+- 添加了新的命令行开关 (`--ignore-exclusions`) 自定义扫描过程中忽略 AV 排除 `mdatp scan custom` () 
 - 使用 `mdatp diagnostic create` 新的参数扩展 `--path [directory]` () ，该参数允许将诊断日志保存到其他目录
 - Bug 修复&性能改进
 

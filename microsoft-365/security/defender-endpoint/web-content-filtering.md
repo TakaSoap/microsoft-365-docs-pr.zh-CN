@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2bf43507b624cc1dae78534d579d01c1f2cef096
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 14d45f4ac22a9707b380d817cb89da1bbee562e2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167942"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326505"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -38,13 +38,13 @@ Web 内容筛选是 Microsoft Defender for Endpoint 中的 [Web](web-protection-
 
 配置跨设备组的策略以阻止某些类别。 阻止类别会阻止指定设备组内的用户访问与该类别关联的 URL。 对于未阻止的任何类别，将自动审核 URL。 用户无需中断即可访问 URL，并且你将收集访问统计信息以帮助创建更自定义的策略决策。 如果用户正在查看的页面上的元素正在调用阻止的资源，则会看到阻止通知。
 
-Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defender SmartScreen (Microsoft Edge) 和网络保护 (Chrome、Firefox、Filtering 和 Opera) 。 有关浏览器支持的信息，请参阅先决条件部分。
+Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defender SmartScreen (Microsoft Edge) 和网络保护 (Chrome、Firefox、Filtering 和 Opera) 执行) 。 有关浏览器支持的信息，请参阅先决条件部分。
 
 ## <a name="benefits-of-web-content-filtering"></a>Web 内容筛选的好处
 
 - 阻止用户访问被阻止类别的网站，无论他们是在内部浏览还是离开。
 
-- 安全团队可以使用 Microsoft Defender for Endpoint 基于角色的访问控制设置中定义的设备组，便捷地将策略 [部署到用户组](/microsoft-365/security/defender-endpoint/rbac)。
+- 安全团队可以使用 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/rbac) 基于角色的访问控制设置中定义的设备组，便捷地将策略部署到用户组。
 
 - 安全团队可以访问位于相同中心位置的 Web 报告，并查看实际块和 Web 使用情况。
 
@@ -52,42 +52,42 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 在尝试此功能之前，请确保满足以下要求：
 
-- 你的订阅包括以下各项之一：Windows 10 企业版 E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或 Microsoft Defender for Endpoint独立许可证。 
+- 订阅包括以下各项之一：Windows 10 企业版 E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或 Microsoft Defender for Endpoint独立许可证。 
 
-- 你有权访问 Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>。
+- 你有权访问 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>。
 
-- 组织的设备正在运行 Windows 10 周年更新 (版本 1607) 或更高版本，或 Windows 11 具有最新的防病毒[/反恶意软件更新](manage-updates-baselines-microsoft-defender-antivirus.md)。
+- 你的组织设备正在运行 Windows 10 周年更新 (版本 1607) 或更高版本Windows 11最新的防病毒[/反恶意软件更新](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 - Windows Defender在组织的设备上启用 SmartScreen 和网络保护。
 
 ## <a name="data-handling"></a>数据处理
 
-数据存储在已选择作为 Microsoft Defender 终结点数据处理设置的[一部分的区域。](data-storage-privacy.md) 您的数据不会离开该区域中的数据中心。 此外，你的数据不会与任何第三方共享，包括我们的数据提供程序。
+数据存储在已选择作为 [Microsoft Defender for Endpoint 数据处理设置的一部分的区域。](data-storage-privacy.md) 您的数据不会离开该区域中的数据中心。 此外，你的数据不会与任何第三方共享，包括我们的数据提供程序。
 
 ## <a name="turn-on-web-content-filtering"></a>打开 Web 内容筛选
 
-从左侧导航门户中 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">，Microsoft 365 Defender"</a>**终结点设置** \>  \> **高级** \> **功能"。** 向下滚动，直到您看到用于 Web 内容 **筛选的条目**。 将开关切换到 **开** 和 **保存首选项**。
+在门户的左侧导航\>栏中，<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>Microsoft 365 Defender **终结点设置高级** \> **功能** \> **"**。 向下滚动，直到您看到用于 Web 内容 **筛选的条目**。 将切换开关切换为 **"开"** 和 **"保存首选项"**。
 
 ### <a name="configure-web-content-filtering-policies"></a>配置 Web 内容筛选策略
 
-Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若要管理策略，请转到"设置"下 (终结点 \>  \> **Web** 内容) 。 
+Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若要管理策略，请转到 \>  \>"设置"下 (终结点 **Web** **内容)**。
 
 可以部署策略来阻止以下任何父类别或子类别：
 
 <details>
 <summary>成人内容</summary>
 
-**网站：** 与组或运动相关的网站，这些团队或活动的成员对不同于社交接受的社交系统具有信心。 
+**网站：** 与组或运动相关的网站，这些团队或活动的成员对不同于被社会接受的这种创新系统充满信心。 
 
 **培训：** 在线培训以及促进培训技能和实践的网站。
 
-**Nudity：** 通常以艺术形式提供全面和半录制图像或视频的网站，并且可能允许下载或出售此类材料。
+**Nudity**：通常以艺术形式提供全面和半录制图像或视频的网站，并且可能允许下载或出售此类材料。
 
-**黄色/广告：** 基于图像或文本形式包含明确内容的网站。 此处还列出了任何形式的面向材质的材料。
+**黄色/明确：** 基于图像或文本形式包含明确内容的网站。 此处还列出了任何形式的面向材质的材料。
 
 性教育：以信息和非 voyeuristic 方式讨论性与性的网站，包括提供有关人类感染和性取向的教育的网站、提供防止性感染建议的网站，以及提供有关性健康问题建议的网站。
 
-**无理**：面向不适合学校儿童查看的内容的网站，或者雇主会随员工访问而感到不满意，但不一定令人信念或色情。
+**无理**：面向不适合学校儿童查看的内容的网站，或者雇主会因为员工访问而感到不满意，但不一定令人信念或色情。
 
 **暴力**：显示或宣传与针对人类或动物的暴力相关的内容的网站。
 
@@ -98,11 +98,11 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 **下载网站**：主要功能是允许用户下载媒体内容或程序（如计算机程序）的网站。
 
-**图像共享**：主要用于搜索或共享照片的网站，包括具有社交方面的内容。
+**图像** 共享：主要用于搜索或共享照片的网站，包括具有社交方面的网站。
 
 **对等：** 承载对等 (P2P) 或促进使用 P2P 软件共享文件的网站。
 
-**流&** 下载：主要功能是流式媒体分发的网站，或允许用户搜索、观看或收听流式媒体的网站。
+**流&下载**：主要功能是流式媒体分发的网站，或允许用户搜索、观看或收听流式媒体的网站。
   
 </details>
 
@@ -111,15 +111,15 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 **儿童滥用图像**：包括儿童滥用图像或滥用的网站。 
 
-**犯罪活动**：对非法活动进行说明、建议或宣传的网站。
+**犯罪活动**：就这些活动提供说明、建议或宣传的网站。
 
-**黑客** 攻击：提供资源以非法或有问题地使用计算机软件或硬件的网站，包括分发已被盗的受版权保护材料的网站。
+**黑客攻击**：提供资源以非法或有问题地使用计算机软件或硬件的网站，包括分发已被盗的受版权保护材料的网站。
 
-恶意 **&：** 网站宣传有关可能由种族、性别、性别、年龄、年龄、身体残障、经济情况、性取向或其他任何生活方式选择识别的任何群体具有攻击性、降级或滥用性的想法。
+**恶意&**：网站宣传有关可能由种族、性别、性别、年龄、年龄、身体残障、经济情况、性取向或其他任何生活方式选择识别的群体的任何部分具有攻击性、降级或滥用性观点。
 
-**非法武器**：销售非法/受控非法非法者、宣传滥用或销售相关参数的站点。
+**非法滥用**：销售非法/受控非法者、宣传滥用或销售相关参数的站点。
 
-**非法软件**：包含或宣传使用恶意软件、间谍软件、botnet、网络钓鱼欺诈或盗用版权&的网站。
+**非法软件**：包含或宣传使用恶意软件、间谍软件、botnet、欺诈邮件或盗用版权&的网站。
 
 **学校欺诈**：与欺骗或学校欺骗相关的网站。 
 
@@ -151,7 +151,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 **新注册的** 域：过去 30 天内新注册但尚未移至其他类别的网站。
 
-**已停域**：没有内容或已等待以后使用的网站。
+**已停域**：没有内容或已停供以后使用的网站。
   
 **注意**：未分类仅包含新注册的域和已注册的域，不包括这些类别之外的所有其他网站。
   
@@ -161,7 +161,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 若要添加新策略，请按照以下步骤操作：
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal，</a>choose **设置**  >  **Web content filtering**+ Add  >  **policy**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>， choose **设置** > **Web content filtering** > **+ Add policy**.
 
 2. 指定名称。
 
@@ -187,29 +187,29 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 若要定义自定义指示器，请按照以下步骤操作：
 
-1. 在Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，**转到"设置** 终结点指示器 \>  \>  \> **URL/域** \> **添加项"。**
+1. 在Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户中</a>，**转到设置** \>  \>终结点 **指示器** \> **URL/域** \> **添加项"**。
 
 2. 输入网站的域。
 
-3. 将策略操作设置为 **"允许"。**
+3. 将策略操作设置为 **"允许"**。
 
 ### <a name="dispute-categories"></a>争议类别
 
 如果遇到未正确分类的域，可以直接在门户中对类别进行争议。
 
-要争议域的类别，请导航 **到"报告** Web 保护 Web 内容 \>  \> **筛选详细信息域** \> **"。** 在"Web 内容筛选"报表的"域"选项卡上，你将在每个域旁边看到省略号。 将鼠标悬停在此省略号上，然后选择"**争议类别"。**
+要争议域的类别，请导航到 **"报告** \> **Web 保护** \> **Web 内容筛选详细信息** \> **域"**。 在"Web 内容筛选"报表的"域"选项卡上，你将在每个域旁边看到省略号。 将鼠标悬停在此省略号上，然后选择" **争议类别"**。
 
-将打开一个面板，可在其中选择优先级并添加更多详细信息，如建议重新分类的类别。 完成表单后，选择"提交 **"。** Our team will review the request within one business day. 若要立即取消阻止，请创建自定义 [允许指示器](indicator-ip-domain.md)。
+将打开一个面板，可在其中选择优先级并添加更多详细信息，如建议重新分类的类别。 完成表单后，选择"提交 **"**。 Our team will review the request within one business day. 若要立即取消阻止，请创建自定义 [允许指示器](indicator-ip-domain.md)。
 
 ### <a name="url-category-lookup"></a>URL 类别查找
 
-若要确定网站的类别，可以使用终结点搜索 下Microsoft 365 Defender门户 () <https://security.microsoft.com> **URL** \> **搜索功能**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
+若要确定网站的类别<https://security.microsoft.com>，可以使用终结点搜索下 Microsoft 365 Defender 门户 () **URL** \> **搜索功能**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
 
 ![Web 内容筛选类别查找结果的图像。](../../media/web-content-filtering-category-lookup.png)
 
 ## <a name="web-content-filtering-cards-and-details"></a>Web 内容筛选卡和详细信息
 
-选择 **"** \> **报告 Web 保护** "以查看包含有关 Web 内容筛选和 Web 威胁防护信息的卡片。 以下卡片提供有关 Web 内容筛选的摘要信息。
+选择 **"报告** \> **Web 保护** "以查看包含有关 Web 内容筛选和 Web 威胁防护信息的卡片。 以下卡片提供有关 Web 内容筛选的摘要信息。
 
 ### <a name="web-activity-by-category"></a>按类别分类的 Web 活动
 
@@ -241,13 +241,15 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 - **域**：列出组织中已访问或阻止的 Web 域。 选择特定域以查看有关该域的详细信息。
 
-- **设备组**：列出在组织中生成 Web 活动的所有设备组
+- **设备** 组：列出在组织中生成 Web 活动的所有设备组
 
 使用页面左上方的时区筛选器选择时间段。 还可以筛选信息或自定义列。 选择一行以打开一个包含有关所选项目的详细信息的飞出窗格。
 
 ### <a name="known-issues-and-limitations"></a>已知问题和限制
 
 如果你Microsoft Edge操作系统配置是 Server (**cmd** \> **Systeminfo** \> **OS Configuration**) 。 网络保护仅在服务器设备的检查模式下受支持，它负责保护跨受支持的第三方浏览器的流量。
+
+只有Microsoft Edge受支持，并且 Azure 虚拟桌面多会话Windows 10不支持网络保护。
 
 网络保护当前不支持 SSL 检查，这可能会导致 Web 内容筛选允许某些网站，这些网站通常会被阻止。 由于 TLS 握手发生后无法查看加密流量，并且无法分析某些重定向，因此将允许网站。  这包括从一些基于 Web 的邮件登录页重定向到邮箱页面。 作为一种接受的解决方法，您可以为登录页创建自定义阻止指示器，以确保任何用户都无法访问该网站。 请记住，这可能会阻止他们访问与同一网站关联的其他服务。 
 

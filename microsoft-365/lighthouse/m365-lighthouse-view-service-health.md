@@ -15,26 +15,23 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，了解如何查看租户服务运行状况。
-ms.openlocfilehash: b7361865e0ad3f070e128207a92669f3515e9969
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，了解如何查看租户服务运行状况。
+ms.openlocfilehash: 21315d0ea616fcd2865879d9d8aec66b17830208
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62466143"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324601"
 ---
 # <a name="view-tenant-service-health"></a>查看租户服务运行状况
 
-> [!NOTE]
-> 本文中所述的功能为预览版，可能会更改，并且仅对满足要求的合作伙伴 [可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md)。
-
-可以查看在租户中管理的租户的服务Microsoft 365 Lighthouse。 服务运行状况包括针对多种服务的事件和公告，包括 Microsoft Intune、Azure Active Directory (Azure AD) 标识服务和移动设备管理 (MDM) 云服务。 还可以查看受事件影响的托管租户数。 例如，如果其中一个租户遇到问题，可以检查"服务运行状况"页，以确定该问题是否是正在解决的已知问题，或者最近的更改是否可能会影响它们。 这可以节省故障排除时间并减少支持呼叫。
+可以查看在租户中管理的租户的服务Microsoft 365 Lighthouse。 服务运行状况包括多个服务的事件和公告，包括 Microsoft Intune、Azure Active Directory (Azure AD) 标识服务和移动设备管理 (MDM) 云服务。 还可以查看受事件影响的托管租户数。 例如，如果其中一个租户遇到问题，可以检查"服务运行状况"页，以确定该问题是否是正在解决的已知问题，或者最近的更改是否可能会影响它们。 这可以节省故障排除时间并减少支持呼叫。
 
 如果无法登录 Lighthouse，可以使用 Microsoft 365 [服务](https://status.office365.com/)运行状况页来检查阻止你登录到合作伙伴租户的已知问题。 此外，在 Twitter [上@MSFT365status](https://twitter.com/MSFT365Status) 关注事件，以查看有关特定服务事件的信息。
 
 ## <a name="before-you-begin"></a>准备工作
 
-若要查看服务运行状况，您需要具有以下属性集的合作伙伴租户中的 Azure AD 角色：**microsoft.office365.serviceHealth/allEntities/allTasks**。 有关角色Azure AD，请参阅Azure AD[内置角色](/azure/active-directory/roles/permissions-reference)。
+若要查看服务运行状况，您需要具有以下属性集的合作伙伴租户中的 Azure AD 角色：**microsoft.office365.serviceHealth/allEntities/allTasks**。 有关角色Azure AD，请参阅Azure AD[角色。](/azure/active-directory/roles/permissions-reference)
 
 ## <a name="view-service-health-status-for-all-tenants"></a>查看所有租户的服务运行状况
 
@@ -60,7 +57,8 @@ ms.locfileid: "62466143"
 
 4. 在问题详细信息窗格中，查看详细信息，包括问题类型、受影响的租户、用户影响和问题历史记录。
 
-在 **"受影响的** 租户"选项卡上，可以将受影响的租户列表导出到通用分隔值 (.cvs) 文件，以便你可以与支持团队共享它。
+在 **"受影响的** 租户"选项卡上，可以将受影响的租户列表导出到逗号分隔值 (.csv) 文件，以便你可以与支持团队共享它。
 
 ## <a name="related-content"></a>相关内容
-[How to check Microsoft 365 service health (](/microsoft-365/enterprise/view-service-health) article) 
+[How to check Microsoft 365 service health (](/microsoft-365/enterprise/view-service-health) article) \
+[本文Microsoft 365 Lighthouse (](m365-lighthouse-known-issues.md)已知问题) 

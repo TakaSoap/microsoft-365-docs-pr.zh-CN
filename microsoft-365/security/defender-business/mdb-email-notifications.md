@@ -7,26 +7,25 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: 5a6d896b3b18b4eea0721197c0a4766add4a20b6
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 86588289a4a94a46ddca6022b12a70ac6965a904
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464574"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329679"
 ---
 # <a name="set-up-email-notifications"></a>设置电子邮件通知
 
 > [!IMPORTANT]
-> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 从 2022 年 3 月 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
-
 
 你可以为安全团队设置电子邮件通知。 然后，当生成警报或发现新漏洞时，安全团队中人员将自动收到通知。 
 
@@ -38,6 +37,11 @@ ms.locfileid: "62464574"
 
 3. [继续执行下一步](#next-steps)。
 
+
+>
+> **有空吗？**
+> 请参加有关 <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business 的简短调查</a>。 我们非常乐意听取你的宝贵意见！
+>
 
 ## <a name="types-of-email-notifications"></a>电子邮件通知类型
 
@@ -51,9 +55,9 @@ ms.locfileid: "62464574"
 > [!TIP]
 > **电子邮件通知不是安全团队了解** 新警报或漏洞的唯一方式。
 > 
-> 电子邮件通知是一种有助于实时通知安全团队的便捷方式。 但还有其他功能！ 例如，每当[https://security.microsoft.com](https://security.microsoft.com)安全团队登录 Microsoft 365 Defender 门户 () ，他们将看到突出显示新威胁、警报和漏洞的卡片。 Defender for Business (预览) 旨在突出显示安全团队在登录后关注的重要信息。
+> 电子邮件通知是一种有助于实时通知安全团队的便捷方式。 但还有其他功能！ 例如，每当[https://security.microsoft.com](https://security.microsoft.com)安全团队登录 Microsoft 365 Defender 门户 () ，他们将看到突出显示新威胁、警报和漏洞的卡片。 Defender for Business 旨在突出显示安全团队在登录后关注的重要信息。
 > 
-> 安全团队 **还可以在导航** 窗格中选择"事件"以查看信息。 若要了解更多信息，请参阅在 [Microsoft Defender for Business ](mdb-view-manage-incidents.md)中查看和管理事件 (预览) 。
+> 安全团队 **还可以在导航** 窗格中选择"事件"以查看信息。 若要了解更多信息，请参阅 [在 Microsoft Defender for Business 中查看和管理事件](mdb-view-manage-incidents.md)。
 
 ## <a name="view-and-edit-email-notifications"></a>查看和编辑电子邮件通知
 
@@ -61,7 +65,7 @@ ms.locfileid: "62464574"
 
 1. 转到"Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) 并登录。
 
-2. 在导航窗格中 **，选择"** 设置"，然后选择"**终结点"**。 然后，在" **常规"** 下，选择 **"电子邮件通知"**。 
+2. 在导航窗格中，**选择"设置**"，然后选择"**终结点"**。 然后，在" **常规"** 下，选择 **"电子邮件通知"**。 
 
 3. 查看"警报和 **漏洞****"选项卡上** 的信息。
 
@@ -75,5 +79,4 @@ ms.locfileid: "62464574"
 
 继续：
 
-- [步骤 4：将设备载入 Microsoft Defender for Business (预览) ](mdb-onboard-devices.md)
-
+- [步骤 4：将设备载入 Microsoft Defender for Business](mdb-onboard-devices.md)
