@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 为Windows用户设置运行Windows 10 专业版的设备Microsoft 365 商业高级版，从而实现集中式管理和安全控制。
-ms.openlocfilehash: 40577f2130c185f8a98a3c8f873da80233e56cf0
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0a6fa4178e3aeb2e77d744283bfcf671d0df1f3d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373052"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322613"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>为Windows用户设置Microsoft 365 商业高级版设备
 
@@ -47,7 +47,7 @@ ms.locfileid: "61373052"
   
 有关如何将 Windows 设备升级到 Windows 10 专业版创意者更新的详细信息，请按照本主题中的步骤操作：[将 Windows 设备升级到 Windows 专业版创意者更新](../../business-video/upgrade.md)。
   
-请参阅[验证设备是否连接到Azure AD](#verify-the-device-is-connected-to-azure-ad)验证是否具有升级，或确保升级有效。
+请参阅[验证设备](#verify-the-device-is-connected-to-azure-ad)是否连接到Azure AD验证是否具有升级，或确保升级有效。
 
 ## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>观看：连接电脑Microsoft 365企业
 
@@ -67,7 +67,7 @@ ms.locfileid: "61373052"
     
     ![在"如何设置"页上，选择"为组织设置"。](../../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
-2. 在这里，**选择"为组织设置"，** 然后输入你的用户名和密码进行Microsoft 365 商业高级版。 
+2. 在此处，**选择"为组织设置"**，然后输入用户的用户名和密码Microsoft 365 商业高级版。 
     
 3. 完成 Windows 10 设备设置。
     
@@ -77,9 +77,9 @@ ms.locfileid: "61373052"
 
  **将用户连接到 Azure AD：**
   
-1. 在运行 Windows 10 专业版 版本 1703 (创意者更新)  (的用户 Windows 电脑中，单击 Windows 徽标，然后单击[](../security-and-compliance/pre-requisites-for-data-protection.md)设置 图标。
+1. 在用户运行 Windows 10 专业版 版本 1703 (创意者更新)  (的 Windows 电脑中，查看先决条件，单击 Windows 徽标，然后单击 设置 图标。[](../security-and-compliance/pre-requisites-for-data-protection.md)
   
-   ![在""开始"菜单"中，单击"Windows 设置图标"。](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
+   ![在""开始"菜单"中，单击Windows 设置图标。](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   
 2. 2.在" **设置**"中，转到" **帐户**"。
   
@@ -91,7 +91,7 @@ ms.locfileid: "61373052"
   
 4. 4.在" **设置工作或学校帐户**"对话框的" **备用操作**"下，选择" **将此设备加入 Azure Active Directory**"。
   
-   ![单击"加入此设备"以Azure Active Directory。](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
+   ![单击"加入此设备"Azure Active Directory。](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
 5. On the **Let's get you signed in** page, enter your work or school account \> **Next**.
   
@@ -99,9 +99,9 @@ ms.locfileid: "61373052"
   
    ![在让我们登录页面上输入你的工作或学校电子邮件。](../../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. 在 **"确保这是您的组织"页上**，验证信息是否正确，然后选择"加入 **"。**
+6. 在 **"确保这是您的组织"页上** ，验证信息是否正确，然后选择"加入 **"**。
   
-   在 **"你已全部设置"上！** 页面，选择"**完成"。**
+   在 **"你已全部设置"上！** 页面，选择" **完成"**。
   
    ![在"确保这是您的组织"屏幕上，选择"加入"。](../../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
@@ -109,17 +109,17 @@ ms.locfileid: "61373052"
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>验证设备是否连接到 Azure AD
 
-若要验证同步状态，请在"访问工作或学校"设置，选择"连接到 _ **_"** 区域以公开按钮"信息"和"断开连接 \<organization name\> **"。**  选择 **"** 信息"获取同步状态。 
+若要验证同步状态，请在"访问工作或学校"页面上设置"**连接到** **_** \<organization name\> "区域以公开"信息"和"断开连接"**按钮**。 选择 **"** 信息"获取同步状态。 
   
 在" **同步状态"** 页面上，选择 **"同步** "，获取电脑上的最新移动设备管理策略。
   
-To start using the Microsoft 365 商业高级版 account， go to the Windows **Start** button， right-click your current account picture， and then **Switch account**. 使用组织电子邮件和密码进行登录。
+若要开始使用 Microsoft 365 商业高级版 帐户，请转到"Windows **"** 按钮，右键单击当前帐户图片，然后单击"**切换帐户"**。 使用组织电子邮件和密码进行登录。
   
 ![单击"信息"按钮以查看同步状态。](../../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
 ## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>验证电脑是否升级到Windows 10 商业版
 
-验证已加入Azure AD Windows 10设备是否Windows 10 商业版作为你的 Microsoft 365 商业高级版 订阅的一部分。
+确认已Azure AD Windows 10设备已升级到Windows 10 商业版订阅的一Microsoft 365 商业高级版部分。
   
 1. 转到" **设置**"\>" **系统**"\>" **关于**"。
     
@@ -129,8 +129,7 @@ To start using the Microsoft 365 商业高级版 account， go to the Windows **
   
 ## <a name="next-steps"></a>后续步骤
 
-若要设置移动设备，请参阅为 Microsoft 365 商业高级版 用户设置移动设备。[若要](set-up-mobile-devices.md)设置设备保护或应用保护策略，请参阅管理 Microsoft 365 [for business。](/admin/index.yml)
-  
-## <a name="related-content"></a>相关内容
+若要设置移动设备，请参阅为用户Microsoft 365 商业高级版[移动设备。](set-up-mobile-devices.md) 
 
-[Microsoft 365 商业版培训视频](../../business-video/index.yml)(链接页面)
+若要增强保护，请参阅保护企业计划的 Microsoft 365 [10 种方法](../security-and-compliance/secure-your-business-data.md)。
+  

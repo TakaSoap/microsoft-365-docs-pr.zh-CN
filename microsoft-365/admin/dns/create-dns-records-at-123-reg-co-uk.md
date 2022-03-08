@@ -1,14 +1,14 @@
 ---
-title: 连接 DNS 记录，123-reg.co.uk Microsoft 365
+title: 连接 DNS 记录 123-reg.co.uk Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: 了解如何验证域，并设置 Microsoft Skype for Business Online 和其他服务的 DNS 123-reg.co.uk 记录。
-ms.openlocfilehash: 64fdb9df70598aed5113620ea11caf8f70b5926a
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 050aad4ca3e0e768b160a7ba210a93e163d72fe7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648703"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314933"
 ---
-# <a name="connect-your-dns-records-at-123-regcouk-to-microsoft-365"></a>连接 DNS 记录，123-reg.co.uk Microsoft 365
+# <a name="connect-your-dns-records-at-123-regcouk-to-microsoft-365"></a>连接 DNS 记录 123-reg.co.uk Microsoft 365
 
  **如果找不到要查找的内容，请 [查看域常见问题解答](../setup/domains-faq.yml)** 。 
   
@@ -53,7 +53,7 @@ ms.locfileid: "60648703"
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="选择要验证的域。":::
 
-3. 在"管理域"页面上的"高级 **域设置"下**，选择"**管理 DNS"。**
+3. 在"管理域"页面上的"高级 **域设置"下**，选择" **管理 DNS"**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="从下拉列表中选择&quot;管理 DNS&quot;。":::
   
@@ -80,9 +80,9 @@ ms.locfileid: "60648703"
   
 若要验证记录是否Microsoft 365：
   
-1. 在管理中心中，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"。**</a>
+1. 在管理中心，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"**</a>。
 
-1. On the Domains page， select the domain that you're verifying， and select **Start setup**. 
+1. 在"域"页面上，选择要验证的域，然后选择"开始 **设置"**。 
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="选择&quot;开始设置&quot;。":::
 
@@ -101,7 +101,7 @@ ms.locfileid: "60648703"
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="选择要编辑的域的名称。":::
 
-3. 在"管理域"页面上的"高级 **域设置"下**，选择"**管理 DNS"。**
+3. 在"管理域"页面上的"高级 **域设置"下**，选择" **管理 DNS"**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="从下拉列表中选择&quot;管理 DNS&quot;。":::
   
@@ -121,7 +121,7 @@ ms.locfileid: "60648703"
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-MX-Add.png" alt-text="选择&quot;添加&quot;。":::
 
-7. 如果存在任何其他 MX 记录，请通过选择"删除" (**删除** 每个记录) 该记录的图标。
+7. 如果存在任何其他 MX 记录，请通过选择"删除" (回收站) **删除该** 记录图标。
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-MX-delete.png" alt-text="选择删除 (回收站) 。":::
   
@@ -133,7 +133,7 @@ ms.locfileid: "60648703"
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="选择要编辑的域的名称。":::
 
-3. 在"管理域"页面上的"高级 **域设置"下**，选择"**管理 DNS"。**
+3. 在"管理域"页面上的"高级 **域设置"下**，选择" **管理 DNS"**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="从下拉列表中选择&quot;管理 DNS&quot;。":::
   
@@ -158,7 +158,7 @@ ms.locfileid: "60648703"
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsfot 创建新的 SPF 记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](../../enterprise/external-domain-name-system-records.md)。 若要验证 SPF 记录，可使用以下任一 [SPF 验证工具](../setup/domains-faq.yml)。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsfot 创建新的 SPF 记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一  *个包含这*  两组值的 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](../../enterprise/external-domain-name-system-records.md)。 若要验证 SPF 记录，可使用以下任一 [SPF 验证工具](../setup/domains-faq.yml)。 
   
 1. 要开始，请使用[此链接](https://www.123-reg.co.uk/secure/cpanel/domain/overview)转到您在 123-reg.co.uk 上的域页面。 系统将会提示您先登录。
 
@@ -166,7 +166,7 @@ ms.locfileid: "60648703"
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="选择要编辑的域的名称。":::
 
-3. 在"管理域"页面上的"高级 **域设置"下**，选择"**管理 DNS"。**
+3. 在"管理域"页面上的"高级 **域设置"下**，选择" **管理 DNS"**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="从下拉列表中选择&quot;管理 DNS&quot;。":::
   
@@ -186,7 +186,7 @@ ms.locfileid: "60648703"
 
 ## <a name="advanced-option-skype-for-business"></a>高级选项：Skype for Business
 
-只有组织将 Skype for Business 用于聊天、电话会议和视频呼叫等联机通信服务时，以及使用 Microsoft Teams。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
+只有组织对联机通信服务（Skype for Business、电话会议和视频呼叫）使用 Microsoft Teams。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
 
 ### <a name="add-the-two-required-srv-records"></a>添加两条必需的 SRV 记录
 
@@ -196,7 +196,7 @@ ms.locfileid: "60648703"
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="选择要编辑的域的名称。":::
 
-3. 在"管理域"页面上的"高级 **域设置"下**，选择"**管理 DNS"。**
+3. 在"管理域"页面上的"高级 **域设置"下**，选择" **管理 DNS"**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="从下拉列表中选择&quot;管理 DNS&quot;。":::
   
@@ -233,7 +233,7 @@ ms.locfileid: "60648703"
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="选择要编辑的域的名称。":::
 
-1. 在"管理域"页面上的"高级 **域设置"下**，选择"**管理 DNS"。**
+1. 在"管理域"页面上的"高级 **域设置"下**，选择" **管理 DNS"**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="从下拉列表中选择&quot;管理 DNS&quot;。":::
   
@@ -273,7 +273,7 @@ ms.locfileid: "60648703"
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="选择要编辑的域的名称。":::
 
-1. 在"管理域"页面上的"高级 **域设置"下**，选择"**管理 DNS"。**
+1. 在"管理域"页面上的"高级 **域设置"下**，选择" **管理 DNS"**。
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="从下拉列表中选择&quot;管理 DNS&quot;。":::
   

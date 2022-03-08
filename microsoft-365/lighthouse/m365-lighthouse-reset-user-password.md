@@ -15,18 +15,15 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (MSP) ，Microsoft 365 Lighthouse重置用户密码。
-ms.openlocfilehash: 0840725ffb74072d6f5973aa7175066a31fe32bb
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+description: 对于托管服务提供商 (MSP) 使用 Microsoft 365 Lighthouse，了解如何为单个用户或跨不同租户的多个风险用户重置密码。
+ms.openlocfilehash: 5217db990816b8a1ec6ed927f8f9e05827cc215b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62859261"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311545"
 ---
-# <a name="reset-user-password"></a>重置用户密码
-
-> [!NOTE]
-> 本文中所述的功能为预览版，可能会更改，并且仅对满足要求的合作伙伴 [可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md)。
+# <a name="reset-a-user-password"></a>重置用户密码
 
 Microsoft 365 Lighthouse更改或重置用户密码。 可以重置单个用户或不同租户中多个风险用户的密码。
 

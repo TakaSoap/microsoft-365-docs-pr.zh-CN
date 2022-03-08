@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: d34807d20f0b203efb3d45b6fe45eddce632e275
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 2606b6c241b364464b4c6f205a3beb13af50a814
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035072"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320377"
 ---
 # <a name="compliance"></a>合规性
 
@@ -37,12 +37,11 @@ Microsoft 托管桌面已获得以下认证：
 - [信息安全注册评估员计划 (IRAP) ](/compliance/regulatory/offering-ccsl-irap-australia)
 - [支付卡行业 (PCI) 数据安全标准 (DSS)](/compliance/regulatory/offering-PCI-DSS)
 - [《健康保险可移植性和责任法》 (HIPAA) ](/compliance/regulatory/offering-hipaa-hitech)
-- [健康信息信任联盟 (HITRUST) CSF (COMMON Security Framework) ](/compliance/regulatory/offering-hitrust)
-
+- [健康信息信任联盟 (HITRUST) CSF (Common Security Framework) ](/compliance/regulatory/offering-hitrust)
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>审核员报告和合规性证书
 
-您可以在服务信任门户[ (STP ](https://servicetrust.microsoft.com/)) （有关产品/服务的此类信息的中央存储库）中查找相关信息，包括Microsoft Cloud Service要求。 可以从 STP 的审核报告部分下载审核员报告[](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)、合规性证书等。
+您可以在 STP 服务信任门户中查找相关信息，包括 ([要求) ](https://servicetrust.microsoft.com/)。 此门户是有关产品/服务Microsoft Cloud Service存储库。 可以从 STP 的审核报告部分下载审核员报告、合规性[](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)证书等。
 
 > [!NOTE]
 > 由于Microsoft 托管桌面 Azure 上运行，因此相关文档通常具有"Microsoft Azure、Dynamics 365 和其他联机服务"等文件名。 在这些文档中，通常可以找到Microsoft 托管桌面"Microsoft Online Services"或"监控 + 管理"下的文档。

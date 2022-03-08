@@ -12,14 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: 了解如何在 Microsoft SharePoint Syntex 中设置、使用和自定义合同管理SharePoint Syntex。
-ms.openlocfilehash: 649596392cf2d7a8fc90ffc479d8875c69f26ffe
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+description: 了解如何在 Microsoft SharePoint Syntex 中设置、使用和自定义合同管理网站SharePoint Syntex。
+ms.openlocfilehash: e5629dd370899d504e9b64ef577a06ebf1bd3777
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904434"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320461"
 ---
 # <a name="use-the-contracts-management-site-template-for-microsoft-sharepoint-syntex"></a>使用 Microsoft 合同管理网站模板SharePoint Syntex
 
@@ -31,7 +30,7 @@ ms.locfileid: "62904434"
 
 合同管理网站包括预填充的页面、Web 部件和网站导航。 可以自定义网站以合并组织自己的品牌、员工信息、策略和规划信息、工作流、联系人和资源。
 
-该网站使用在文档库上运行SharePoint Syntex模型来分类文档和提取元数据。 该网站提供预生成的文档库，可快速入门，但您也可以根据需要创建自己的文档库。 该网站包括以下特色库：
+该网站使用在文档库上运行SharePoint Syntex模型SharePoint文档和提取元数据。 该网站提供预生成的文档库，可快速入门，但您也可以根据需要创建自己的文档库。 该网站包括以下特色库：
 
 - **区域** – 按地理区域、国家/地区或区域对合同文档进行分类。
 
@@ -41,7 +40,7 @@ ms.locfileid: "62904434"
 
 - **客户端** – 在一个方便的位置查找客户端信息。
 
-- **模型** – 使用此模型库对文档进行分类并提取元数据。 用户可以创建自己的模型以满足其需求，并将其添加到此库。
+- **模型** – 使用此库中的模型对文档进行分类并提取元数据。 用户可以创建自己的模型以满足其需求，并将其添加到此库。
 
 - **示例合同库** – 查找已分类且已使用模型提取元数据SharePoint Syntex文件。 
 
@@ -54,9 +53,9 @@ ms.locfileid: "62904434"
 !["合同管理"网站模板设置页面的屏幕截图。](../media/content-understanding/contracts-management-site-provisioning-page.png)
 
 > [!NOTE]
-> 您必须是全局管理员或 SharePoint管理员Microsoft 365才能设置网站。 还必须拥有一个SharePoint Syntex许可证才能将此网站模板添加到您的组织。
+> 您必须是全局管理员或SharePoint管理员Microsoft 365网站。 还必须拥有一个SharePoint Syntex许可证才能将此网站模板添加到您的组织。
 
-1. 从"查看设计"[SharePoint](https://lookbook.microsoft.com/)主页上的"查看设计"菜单上，**选择"** > SharePoint Syntex **SharePoint Syntex合同管理"**。
+1. 从"查看设计"[SharePoint](https://lookbook.microsoft.com/) > 主页上的"查看设计"菜单上，选择"SharePoint Syntex **SharePoint Syntex合同管理"**。
 
 2. 在" **合同管理"** 页上，选择 **"添加到租户"**。
 
@@ -99,6 +98,16 @@ ms.locfileid: "62904434"
 - 使用[受众目标](https://support.microsoft.com/office/target-navigation-news-and-files-to-specific-audiences-33d84cb6-14ed-4e53-a426-74c38ea32293)将特定导航链接指向特定用户。 
 - 如果需要，[可删除不需要的页面](https://support.microsoft.com/office/delete-a-page-from-a-sharepoint-site-1d4197b8-31b6-460d-906b-3fb492a51db1)。
 
+
+### <a name="add-other-workflows"></a>添加其他工作流
+
+合同管理网站包含您需要开始的组件，但您也可以包括其他组件，例如：
+
+- 当 [Power Automate](/power-automate/getting-started)合同请求库时，使用工作流流 **触发工作流。**
+- 生成其他[SharePoint Syntex模型](/microsoft-365/contentunderstanding/#models)。
+- 使用 [模板库](content-assembly.md) 上 **的内容程序集** 功能。
+- 将[合同管理解决方案与](solution-manage-contracts-in-microsoft-365.md)项目SharePoint Syntex组件一Microsoft 365。
+
 ## <a name="share-the-site-with-others"></a>与他人共享网站
 
 [与他人共享网站](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658)。 与组织中的其他人合作，以确保合同管理网站已广为人知并且已被采用。
@@ -111,6 +120,3 @@ ms.locfileid: "62904434"
 - 为了清楚起见， [使用](https://support.microsoft.com/office/view-usage-data-for-your-sharepoint-site-2fa8ddc2-c4b3-4268-8d26-a772dc55779e) 网站分析中的见解来推广主页上的内容、更新导航或重写内容。
 - 根据需要查看合同管理网站，以确保内容是新鲜且仍然相关的。
 
-## <a name="see-also"></a>另请参阅
-
-[使用 Microsoft 365 解决方案管理合同](solution-manage-contracts-in-microsoft-365.md)

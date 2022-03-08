@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: bfb8e1fb42dcde1a3140e0990221536c1b76b4f8
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: d49ef6b31e6446f3452d0efdce2e918813eabcc6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904003"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327527"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>调查用户Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "62904003"
 
 - Microsoft 365 Defender
 
-事件调查的一部分可能包括用户帐户。 可以从事件和警报事件_  ***_Users 查看事件门户中事件警报Microsoft 365 Defender标识的用户帐户&详细信息\>***。\> 下面是一个示例。
+事件调查的一部分可能包括用户帐户。 可以从事件和警报事件_ _ \> Users 查看事件门户中事件警报Microsoft 365 Defender标识的用户帐户&**_详细信息_*\>***。 下面是一个示例。
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例。" lightbox="../../media/investigate-incidents/incident-users.png":::
 
@@ -47,7 +47,7 @@ ms.locfileid: "62904003"
 
 在此窗格中，你可以查看用户威胁信息，包括任何当前事件、活动警报和风险级别以及用户曝光、帐户、设备等。
 
-此外，你可以直接在 Microsoft 365 Defender 门户中采取措施来解决受损用户的问题，例如确认用户帐户受到威胁或需要新的登录。
+此外，你可以直接在 Microsoft 365 Defender 门户中采取措施来解决受到威胁的用户，例如确认用户帐户受到威胁或需要新的登录。
 
 从此处，可以选择" **转到用户页面** "以查看用户帐户的详细信息。 下面是一个示例。
 
@@ -61,7 +61,7 @@ ms.locfileid: "62904003"
 
 通过选择"经理 **"** 下的图标，可以看到用户在组织树中位于何处。
 
-"Microsoft 365 Defender门户用户页面将 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Defender for Cloud Apps (信息合并在一起，具体取决于你拥有哪些) 。
+"Microsoft 365 Defender门户用户"页面将 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Defender for Cloud Apps (的信息合并在一起，具体取决于你拥有哪些) 。
 
 此页面显示特定于用户帐户的安全风险的信息，其中包括一个分数，可帮助评估风险以及导致总体风险的最新事件和警报。
 

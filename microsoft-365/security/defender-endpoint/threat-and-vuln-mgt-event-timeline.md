@@ -11,17 +11,15 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3f59b381e74dee32a438722b09044570bf8d870e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3fe3139f12b863b54d336e52939ffbb3057df6b4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165818"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315997"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>事件时间线 - 危险和漏洞管理
 
@@ -36,27 +34,27 @@ ms.locfileid: "61165818"
 
 事件时间线是一个风险新闻源，可帮助您解释通过新漏洞或漏洞向组织引入风险的方式。 您可以查看可能会影响组织风险的事件。 例如，你可以找到引入的新漏洞、被利用的漏洞、添加到攻击工具包的漏洞等。
 
-事件时间线还告知你的 [曝光分数和](tvm-exposure-score.md) 适用于设备的 [Microsoft 安全](tvm-microsoft-secure-score-devices.md) 分数，以便你可以确定重大更改的原因。 事件可能会影响你的设备或你的设备分数。 通过根据优先安全建议解决需要修正的问题，减少 [曝光](tvm-security-recommendation.md)。
+事件时间线还告知你的[曝光分数和](tvm-exposure-score.md)[适用于设备的 Microsoft 安全](tvm-microsoft-secure-score-devices.md)分数，以便你可以确定重大更改的原因。 事件可能会影响你的设备或你的设备分数。 通过根据优先安全建议解决需要修正的问题，减少 [曝光](tvm-security-recommendation.md)。
 
 > [!TIP]
-> 若要获取有关新漏洞事件的电子邮件，请参阅在 Microsoft [Defender for Endpoint](configure-vulnerability-email-notifications.md)中配置漏洞电子邮件通知
+> 若要获取有关新漏洞事件的电子邮件，请参阅在 [Microsoft Defender for Endpoint 中配置漏洞电子邮件通知](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-event-timeline-page"></a>导航到"事件时间线"页
 
-还有三个入口点来自 危险和漏洞管理[仪表板](tvm-dashboard-insights.md)：
+还有三个入口点来自危险和漏洞管理[仪表板](tvm-dashboard-insights.md)：
 
 - **组织曝光分数卡**：将鼠标悬停在"时间曝光分数"图中的事件点上，然后选择"查看这一天的所有事件"。 这些事件表示软件漏洞。
-- **Microsoft 设备安全分数**：将鼠标悬停在"你的设备时间分数"图中的事件点上，然后选择"查看当天的所有事件"。 这些事件表示新的配置评估。
+- **Microsoft 设备安全** 分数：将鼠标悬停在"设备一段时间的分数"图中的事件点上，然后选择"查看当天的所有事件"。 这些事件表示新的配置评估。
 - **Top events card**： Select "Show more" at the bottom of the top events table. 卡片显示最近 7 天内影响最大的三个事件。 如果事件影响大量设备，或者它是一个关键漏洞，则可包括有影响的事件。
 
 ### <a name="exposure-score-and-microsoft-secure-score-for-devices-graphs"></a>设备曝光分数和 Microsoft 安全分数图
 
-在危险和漏洞管理仪表板中，将鼠标悬停在曝光分数图上，查看当天影响设备的顶部软件漏洞事件。 将鼠标悬停在 Microsoft 设备安全分数图上可查看影响分数的新安全配置评估。
+在危险和漏洞管理仪表板中，将鼠标悬停在"曝光分数"图上，查看当天影响设备的顶部软件漏洞事件。 将鼠标悬停在 Microsoft 设备安全分数图上可查看影响分数的新安全配置评估。
 
 如果没有影响你的设备或你的设备分数的事件，则不会显示任何事件。
 
-![曝光分数悬停。 ](images/tvm-event-timeline-exposure-score350.png) 
- ![Microsoft 设备安全分数悬停。](images/tvm-event-timeline-device-hover360.png)
+![曝光分数悬停。](images/tvm-event-timeline-exposure-score350.png) 
+![Microsoft 设备安全分数悬停。](images/tvm-event-timeline-device-hover360.png)
 
 ### <a name="drill-down-to-events-from-that-day"></a>向下钻取到当天的事件
 
@@ -86,9 +84,9 @@ ms.locfileid: "61165818"
 
 - **日期**：月、日、年
 - **事件**：影响的事件，包括组件、类型和受影响设备的数量
-- **相关组件**： 软件
+- **相关组件**：软件
 - **最初影响的设备**：最初发生此事件时受影响设备的数量和百分比。 还可以按最初影响设备的百分比筛选出设备总数。
-- **当前影响的设备**：此事件当前影响的设备的当前数量和百分比。 可以通过选择"自定义列 **"来查找此字段**。
+- **当前影响的设备**：此事件当前影响的设备数和百分比。 可以通过选择"自定义列 **"来查找此字段**。
 - **类型**：反映影响分数的时间戳事件。 可以筛选它们。
   - 添加到攻击工具包的 Exploit
   - 已验证攻击
@@ -114,11 +112,11 @@ ms.locfileid: "61165818"
 
 ![事件时间线飞出。](images/tvm-event-timeline-flyout500.png)
 
-从中选择" **转到相关安全建议** "，查看解决安全建议页中的新软件 [漏洞的建议](tvm-security-recommendation.md)。 阅读安全建议中的说明和漏洞详细信息后，可以提交修正请求，并跟踪修正 [页面中的请求](tvm-remediation.md)。
+从该页面 **选择"转到相关安全建议** "，查看解决安全建议页中的新 [软件漏洞的建议](tvm-security-recommendation.md)。 阅读安全建议中的说明和漏洞详细信息后，可以提交修正请求，并跟踪修正 [页面中的请求](tvm-remediation.md)。
 
 ## <a name="view-event-timelines-in-software-pages"></a>在软件页面中查看事件时间线
 
-若要打开软件页面，请选择事件>在 (称为"相关组件"的部分中选择超链接软件名称 (如 Visual Studio 2017) 。 [详细了解软件页面](tvm-software-inventory.md#software-pages)
+若要打开软件页面，请选择事件>在 ("相关组件"部分选择超链接软件名称 Visual Studio 2017) 。 [详细了解软件页面](tvm-software-inventory.md#software-pages)
 
 将显示一个完整的页面，其中包含特定软件的所有详细信息。 将鼠标悬停在图形上以查看该特定软件的事件时间线。
 

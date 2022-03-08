@@ -8,20 +8,20 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 7b5f99a6927fd87b1d75bde0dcc5e4fde1ff3a62
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 4a6eb73a172ecfb680cbc48367851e40b1a54401
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909695"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315409"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>安全技术Microsoft 托管桌面
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft 托管桌面使用多种 Microsoft 技术来帮助保护托管设备和数据的安全。 此外，Microsoft 托管桌面安全运营中心使用[这些技术的各种流程](security-operations.md)。 具体来说：
+Microsoft 托管桌面使用多种 Microsoft 技术来帮助保护托管设备和数据的安全。 此外，安全Microsoft 托管桌面中心使用[这些技术的各种流程](security-operations.md)。 具体来说：
 
-| 流程 | 描述 |
+| 流程 | 说明 |
 | ------ | ------ |
 | [设备安全性](#device-security)| 安全和保护Microsoft 托管桌面设备上。 |
 | [标识和访问管理](#identity-and-access-management) | 通过标识服务管理Azure Active Directory使用。 |
@@ -44,7 +44,7 @@ Microsoft 托管桌面确保所有托管设备都受到保护，并尽早使用�
 
 ## <a name="identity-and-access-management"></a>标识和访问管理
 
-标识和访问管理可保护公司资产和业务关键型数据。 Microsoft 托管桌面配置设备以确保安全使用Azure Active Directory (Azure AD) 标识。 客户有责任在租户中维护Azure AD信息。
+标识和访问管理可保护公司资产和业务关键型数据。 Microsoft 托管桌面配置设备以确保与托管标识Azure Active Directory (Azure AD) 安全使用。 客户有责任在租户中维护Azure AD信息。
 
 | 服务 | 说明 |
 | ----- | ----- |
@@ -57,8 +57,7 @@ Microsoft 托管桌面确保所有托管设备都受到保护，并尽早使用�
 
 | 服务 | 说明 |
 | ----- | ----- |
-| VPN | 客户拥有其 VPN 基础结构，以确保有限的公司资源可在 Intranet 外部公开。<br><br>最低要求：Microsoft 托管桌面需要Windows 10受支持的 VPN 解决方案。 如果你的组织需要 VPN 解决方案，它需要支持Windows 10并通过 Intune 进行打包和部署。 有关详细信息，请与软件发布者联系。<br><br>建议：<br><ul><li> Microsoft 推荐了一个通过 Intune 轻松部署以推送 VPN 配置文件的现代 VPN 解决方案。 此方法提供了一种访问企业网络的始终打开、无缝、可靠和安全的方法。 有关详细信息，请参阅 [Intune 中的 VPN 设置](/intune/vpn-settings-configure)。</li><li>使用胖 VPN 客户端或较旧的 VPN 客户端时，Microsoft 不建议Microsoft 托管桌面，因为它会影响用户环境。</li><li>Microsoft 建议传出 Web 流量直接转到 Internet，无需通过 VPN，以避免任何性能问题。</li><li>理想情况下，Microsoft 建议使用Azure Active Directory代理而不是 VPN。</li></ul>
-
+| VPN | 客户拥有其 VPN 基础结构，以确保有限的公司资源可在 Intranet 外部公开。<br><br>最低要求：Microsoft 托管桌面需要Windows 10且受支持的 VPN 解决方案。 如果你的组织需要 VPN 解决方案，它需要支持Windows 10并通过 Intune 打包和部署。 有关详细信息，请与软件发布者联系。<br><br>建议：<br><ul><li> Microsoft 推荐了一个通过 Intune 轻松部署以推送 VPN 配置文件的现代 VPN 解决方案。 此方法提供了一种访问企业网络的始终打开、无缝、可靠和安全的方法。 有关详细信息，请参阅 [Intune 中的 VPN 设置](/intune/vpn-settings-configure)。</li><li>使用胖 VPN 客户端或较旧的 VPN 客户端时，Microsoft 不建议Microsoft 托管桌面，因为它会影响用户环境。</li><li>Microsoft 建议传出 Web 流量直接转到 Internet，无需通过 VPN，以避免任何性能问题。</li><li>理想情况下，Microsoft 建议使用Azure Active Directory代理而不是 VPN。</li></ul>
 
 ## <a name="information-security"></a>信息安全
 
@@ -66,5 +65,5 @@ Microsoft 托管桌面确保所有托管设备都受到保护，并尽早使用�
 
 | 服务 | 说明 |
 | ----- | ----- |
-| 数据恢复 | 存储在设备上的关键文件夹中的信息将备份到OneDrive for Business。 Microsoft 托管桌面对未与数据同步的数据OneDrive for Business。
-| Windows 信息保护 | 对于需要高级信息安全的公司，我们建议Windows[信息和](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) [Azure 信息保护。](https://www.microsoft.com/cloud-platform/azure-information-protection)
+| 数据恢复 | 存储在设备上密钥文件夹中的信息将备份到OneDrive for Business。 Microsoft 托管桌面对未与数据同步的数据OneDrive for Business。
+| Windows 信息保护 | 对于需要高级别信息安全的公司，我们建议Windows[信息和](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) [Azure 信息保护。](https://www.microsoft.com/cloud-platform/azure-information-protection)

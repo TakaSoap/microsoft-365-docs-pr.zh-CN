@@ -7,19 +7,22 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
+ms.openlocfilehash: 513432dfb24af89451c4d8290ce5fde0951819b9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322697"
 ---
-
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>用于在 Windows 上进行高级故障排除的数据收集
 
 **适用于：**
@@ -37,26 +40,26 @@ ms.technology: m365d
 
 **-h** - [调用Windows记录](/windows-hardware/test/wpt/wpr-command-line-options)器以收集详细的常规性能跟踪以及标准日志集。
 
-**-l** - 调用内置性能 [Windows以](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters)收集轻型 perfmon 跟踪。 在诊断随着时间的推移而难以按需重现的缓慢性能降低问题时，这可能很有用。
+**-l** - 调用内置性能 [Windows](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters)以收集轻型 perfmon 跟踪。 在诊断随着时间的推移而难以按需重现的缓慢性能降低问题时，这可能很有用。
 
 **-c** - 调用 [进程监视器](/sysinternals/downloads/procmon) 以对实时文件系统、注册表和进程/线程活动进行高级监视。 当对各种应用程序兼容性方案进行疑难解答时，这尤其有用。
 
-**-i** - 调用内置netsh.exe命令以 [](/windows/win32/winsock/netsh-exe)启动网络和 Windows 防火墙跟踪，这些跟踪在解决各种网络相关问题时很有用。
+**-i** - 调用内置netsh.exe命令以 [](/windows/win32/winsock/netsh-exe)启动网络和 Windows 防火墙跟踪，这些跟踪在排查各种网络相关问题时很有用。
 
 **-b** - 与"-c"相同，但进程监视器跟踪将在下次启动期间启动，并且仅在再次使用 -b 时停止。
 
 **-a** - [调用Windows](/windows-hardware/test/wpt/wpr-command-line-options)记录器以收集特定于与防病毒进程 (MsMpEng.exe) 相关的高 CPU 问题分析的具体性能跟踪。
 
-**-v** - 使用MpCmdRun.exe [ 最](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) 详细 -trace 标志的命令行参数。
+**-v** - 使用MpCmdRun.exe [ 最详细 -](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) trace 标志的命令行参数。
 
 **-t** - 启动与 Endpoint DLP 相关的所有客户端组件详细跟踪。 这适用于 [DLP](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) 操作未如预期发生的文件方案。
 
 **-q** - 从验证 Endpoint DLP DLPDiagnose.ps1配置和要求的分析器"工具"目录中调用脚本。
 
-**-d** - 收集 MsSenseS 的内存转储，.exe (或较旧的操作系统Windows Server 2016及相关) 传感器进程。
+**-d** - 收集 MsSenseS 的内存转储，.exe (或较旧的操作系统Windows Server 2016及相关) 进程上的传感器进程。
 
 - \* 此标志可与上述标志结合使用。
-- \*\* 目前，分析器不支持捕获 [受 PPL](/windows-hardware/drivers/install/early-launch-antimalware) 保护的进程（MsSense.exe或MsMpEng.exe进程）的内存转储。
+- \*\* 目前，分析器不支持捕获 [受 PPL](/windows-hardware/drivers/install/early-launch-antimalware) MsSense.exe或 MsMpEng.exe 进程的内存转储。
 
 **-z** - 配置计算机上注册表项，以通过 [CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard) 准备用于完整的计算机内存转储集合。 这对分析计算机冻结问题非常有用。
 
@@ -76,6 +79,6 @@ ms.technology: m365d
 >
 >    **MDEClientAnalyzer.cmd -r -i -m 5**
 >
->   - **-r** - 指示工具从远程环境或非交互 (运行) 
+>   - **-r** - 指示工具正在从远程环境或非交互 (运行) 
 >   - **-i** - 用于收集网络跟踪以及其他相关日志的方案标志
 >   - **-m** \# - 上述示例中运行 (5 分钟的分钟数) 

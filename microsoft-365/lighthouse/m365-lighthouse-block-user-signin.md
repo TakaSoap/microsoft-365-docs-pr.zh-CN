@@ -15,20 +15,17 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (MSP) 使用 Microsoft 365 Lighthouse，了解如何阻止用户登录。
-ms.openlocfilehash: 6fbdad9849b27e60243ace59651b9e5211829a68
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+description: 对于托管服务提供商 (MSP) 使用 Microsoft 365 Lighthouse，请了解如何阻止用户帐户（如果您认为它受到威胁，因此用户无法登录）。
+ms.openlocfilehash: be9089ef8c3a86b68ce5370d28a6e9be4472cce0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242089"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320839"
 ---
 # <a name="block-user-sign-in"></a>阻止用户登录
 
-> [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
-
-如果认为用户帐户受到威胁，可以阻止它。 当你阻止某人时，它会立即阻止任何人登录该帐户。 如果用户已登录，将在 60 分钟内从所有Microsoft 服务自动退出。 这不会阻止帐户接收邮件，也不会删除任何数据。
+如果认为用户帐户受到威胁，可以阻止它。 当你阻止用户帐户时，它会立即阻止任何人登录该帐户。 如果用户尝试登录，将在 60 分钟内自动Microsoft 365所有服务。 阻止用户帐户不会删除任何数据，也不会阻止该帐户接收邮件。
 
 ## <a name="block-sign-in-for-a-user"></a>阻止用户登录
 
@@ -40,13 +37,13 @@ ms.locfileid: "61242089"
 
 4. 从搜索结果列表中选择用户。
 
-5. 在用户详细信息窗格中，选择阻止 **登录**。
+5. 在用户详细信息窗格中，选择 **"阻止登录"**。
 
-6. 在"管理登录状态"窗格中，选择"**阻止用户登录"。**
+6. 在"管理登录状态"窗格中，选择" **阻止用户登录"**。
 
-7. 选择“**保存**”。
+7. 选择“保存”。
 
-## <a name="block-risky-users"></a>阻止有风险的用户
+## <a name="block-sign-in-for-risky-users"></a>阻止有风险用户登录
 
 1. In the left navigation pane in Lighthouse， select **Users**.
 
@@ -54,9 +51,9 @@ ms.locfileid: "61242089"
 
 3. 从列表中选择有风险的用户。
 
-4. 在用户详细信息窗格中，选择阻止 **登录**。
+4. 在用户详细信息窗格中，选择 **"阻止登录"**。
 
-5. 在"管理登录状态"窗格中，选择"**阻止用户登录"。**
+5. 在"管理登录状态"窗格中，选择" **阻止用户登录"**。
 
 6. 选择“**保存**”。
 

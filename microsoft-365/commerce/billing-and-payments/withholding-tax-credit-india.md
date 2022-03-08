@@ -2,8 +2,8 @@
 title: '向印度客户申请预扣税 (预扣) '
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
@@ -16,17 +16,17 @@ ms.collection:
 search.appverid: MET150
 description: 了解如何在你的帐户上申请已支付的预扣税的信用。 本文仅适用于印度客户。
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: cf4e742dfae6866a20690b900604042a1c411503
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bd1f9af95d28ab8204c53afbe47c7def3230dbda
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189629"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327877"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>向印度客户申请预扣税 (预扣) 
 
@@ -34,7 +34,7 @@ ms.locfileid: "60189629"
 >
 > 如果你的组织不位于印度，请参阅申请帐户预扣税的信用 ([全球 ](withholding-tax-credit-global.md)客户) 。
 
-印度客户会收到由 Microsoft Regional Sales Pte Ltd. 新加坡 (MRS) 计费的 Web Direct (Azure 和 Microsoft 365) 发票，然后向新加坡进行跨边界付款以结算发票。 如果你在汇寄付款时预扣了税款，本文将介绍使用 MRS 在帐户中申请预扣税 (WHT) 的信用的过程。
+印度客户会收到由 Microsoft Regional Sales Pte Ltd. (MRS) 计费的 Web Direct (Azure 和 Microsoft 365) 发票，然后向新加坡进行跨边界付款以结算发票。 如果你在汇寄该付款时预扣了税款，本文将解释使用 MRS 在帐户中申请预扣税 (WHT) 的信用的过程。
 
 ## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>对于通过支票或线路支付发票的客户
 
@@ -43,7 +43,7 @@ ms.locfileid: "60189629"
 您的 WHT 请求必须包含以下项：
 
 - 客户客户填写的预扣 [税 (表单](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) 的已完成) 
-- 经数字签名的 TDS (16A) 由由客户税务部门 (颁发的 16A) 
+- 经数字签名的 TDS (16A) 由客户税务部门 (颁发，) 
 
 通过通过 Microsoft 支持打开票证来提交 WHT 请求。
 
@@ -54,7 +54,7 @@ ms.locfileid: "60189629"
 您的 WHT 请求必须包含以下项：
 
 - 客户客户填写的预扣 [税 (表单](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) 的已完成) 
-- 经数字签名的 TDS (16A) 由由客户税务部门 (颁发的 16A) 
+- 经数字签名的 TDS (16A) 由客户税务部门 (颁发，) 
 
 通过通过 Microsoft 支持打开票证提交 WHT 请求
 
@@ -62,12 +62,12 @@ ms.locfileid: "60189629"
 
 下表显示了在每个季度提交经过数字签名的 TDS 证书的截止日期 (16A) 表单。
 
-| 季度 | Period | TDS 证书颁发截止日期 (16A)  | 提交表单 16A 与预扣税信用表的延长日程表 |
+| 季度 | Period | TDS 证书发布截止日期 (16A)  | 提交表单 16A 与预扣税信用表的延长日程表 |
 |-|-|-|-|
 | 1 | 4 月 - 6 月 | 8 月 15 日 | 8 月 31 日 |
 | 2 | 7 月 - 9 月 | 15-Nov | 30-Nov |
 | 3 | 10 月 - 12 月 | 2 月 15 日 | 2 月 28 日 |
-| 4  | 1 月 - 3 月 | 15-六月 | 30-Jun |
+| 4 | 1 月 - 3 月 | 15-六月 | 30-Jun |
 
 > [!IMPORTANT]
 >

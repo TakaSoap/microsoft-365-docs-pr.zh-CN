@@ -2,8 +2,8 @@
 title: Microsoft Productivity Score - 隐私
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,16 +18,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何使用工作效率分数保护隐私。
-ms.openlocfilehash: 1bbc9c7459d29e9aef8dea102d1d98eed9c30550
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 94e0e1fb3190bc45fb0ad580cd823cb121fb60cf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178223"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320727"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>工作效率分数的隐私控件
 
-生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。  你的组织的分数反映了人员和技术体验指标，可以与类似你组织的基准进行比较。 有关详细信息，请参阅生产力 [分数概述](productivity-score.md)。
+生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。  你的组织的分数反映了人员和技术体验指标，可以与类似你组织的基准进行比较。 有关详细信息，请参阅工作效率 [分数概述](productivity-score.md)。
 
 你的隐私对 Microsoft 非常重要。 若要了解如何保护你的隐私，请参阅 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。 工作效率分数使作为组织的 IT 管理员可以访问隐私设置，以帮助确保你查看的任何工作效率分数信息都是可操作的信息，同时不会损害组织在 Microsoft 中的信任。
 
@@ -50,9 +50,9 @@ ms.locfileid: "60178223"
 - 报告读取者
 - 使用情况摘要报告阅读器
 
-将"报告读取者"或"使用率摘要报告读取者"角色分配给负责变更管理和采用的任何人员，但不必是 IT 管理员。 通过此角色，他们可以访问管理中心中Microsoft 365分数体验。
+将"报告读取者"或"使用率摘要报告读取者"角色分配给负责变更管理和采用的任何人员，但不一定是 IT 管理员。 通过此角色，他们可以访问管理中心内Microsoft 365分数体验。
 
-"使用率摘要报告读取者"角色必须经过 PowerShell cmdlet 分配，直到它在 2020 年Microsoft 365 管理中心分配。
+"使用率摘要报告读取者"角色必须通过 PowerShell cmdlet 分配，直到它在 2020 年Microsoft 365 管理中心分配。
 
 若要使用 PowerShell 分配使用情况摘要报告读取者角色：
 
@@ -76,8 +76,8 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 若要选择退出：
 
-1. 在管理中心，**转到"组织**   >   **设置设置**  >  **工作效率分数"。**
-2. 取消选中显示"允许使用Microsoft 365 **数据以用于用户体验见解"的框**。 若要了解如何在 Intune 配置管理器中修改 Endpoint Analytics 的数据共享设置，请选择"**了解更多"。**
-3. 选择"**保存"。**
+1. 在管理中心，转到  >  设置 **Org** >  设置 **生产分数**。
+2. 取消选中显示"允许Microsoft 365 **数据以用于用户体验见解"的框**。 若要了解如何在 Intune 配置管理器中修改 Endpoint Analytics 的数据共享设置，请选择" **了解更多信息"**。
+3. 选择  **"保存"**。
 
 :::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="组织设置页面，可在其中选择退出人员体验。":::

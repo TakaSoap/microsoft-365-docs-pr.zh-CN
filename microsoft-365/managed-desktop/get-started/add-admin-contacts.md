@@ -9,19 +9,19 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: b5f52c1aee2586d325149c6656674fef16200773
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 5668dcb0dd2b7f48a52fd2377dec3d666d17a013
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444625"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315451"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在管理门户中添加和验证管理员联系人
 
-有多种方式可以Microsoft 托管桌面与客户通信。 为了简化通信并确保我们正在与合适的人员联系，你必须提供一组管理员联系人。 Microsoft 托管桌面 IT 运营部门将联系这些人员，以寻求解决问题的帮助。
+有多种方式可以Microsoft 托管桌面与客户进行通信。 为了简化通信并确保我们正在与合适的人员联系，你必须提供一组管理员联系人。 Microsoft 托管桌面 IT 运营部门将联系这些人员，以寻求解决问题的帮助。
 
 > [!IMPORTANT]
-> 你可能已经在管理门户中添加了这些联系人。 如果是这样，请立即仔细检查联系人列表是否准确，因为Microsoft 托管桌面发生严重事件时必须能够联系他们。 
+> 你可能已经在管理门户中添加了这些联系人。 如果是这样，请立即仔细检查联系人列表是否准确，Microsoft 托管桌面发生严重事件时必须能够联系他们。 
 
 ## <a name="admin-contact-areas-of-focus"></a>管理员重点关注的联系人区域
 
@@ -31,12 +31,12 @@ ms.locfileid: "62444625"
 | ----- | ----- |
 | 应用打包 | 应用打包疑难解答。 |
 | 设备 | 设备运行状况，使用Microsoft 托管桌面疑难解答。 |
-| 安全性 | 解决设备Microsoft 托管桌面问题。 |
+| 安全性 | 解决设备Microsoft 托管桌面安全问题。 |
 | IT 技术支持 | 如果支持人员在支持区域外Microsoft 托管桌面票证。 |
 | 其他 | 对于其他方面未涵盖的问题。 |
 
 > [!IMPORTANT]
-> **无论为这些联系人选择谁，都必须有知识和权威来为Microsoft 托管桌面决策。**
+> **无论为这些联系人选择谁，都必须具有针对您的环境做出决策的知识Microsoft 托管桌面权威。**
 
 当你载入你的Microsoft 托管桌面环境时，系统将提示你为本地支持人员和安全添加联系人。
 
@@ -45,7 +45,7 @@ ms.locfileid: "62444625"
 **添加管理员联系人：**
 
 1. 登录到 [Microsoft Endpoint Manager。](https://endpoint.microsoft.com)
-1. 在 **"租户管理**"**下的"Microsoft 托管桌面** 部分，选择 **"管理员联系人"**。
+1. 在 **"租户管理****"下的"** Microsoft 托管桌面部分，选择 **"管理员联系人"**。
 1. 选择“**添加**”。
 1. 选择 **一个焦点区域** ，然后输入联系人的信息。
 
@@ -61,7 +61,7 @@ ms.locfileid: "62444625"
 1. 部署并分配 [Intune 公司门户](company-portal.md)。
 1. [分配许可证](assign-licenses.md)。
 1. [部署应用](deploy-apps.md)。
-1. [设置设备](set-up-devices.md)。
+1. [准备设备](Prepare-devices.md)。
 1. 设置 [使用 Autopilot 和注册状态页的首次运行体验](esp-first-run.md)。
 1. [启用用户支持功能](enable-support.md)。
 1. [让用户做好使用设备的准备](get-started-devices.md)。

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0d0faebdf3b815bdca968cdd790767c5d36179b6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 56a836e14051e3f621fb42fd518fb2cf5efe8bed
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165206"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327695"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -36,9 +36,9 @@ ms.locfileid: "61165206"
 
 ## <a name="enable-advanced-features"></a>启用高级功能
 
-1. 在导航窗格中，选择 **"设置** \> **终结点** \> **高级功能"。**
-2. 选择要配置的高级功能，并切换 **开和****关之间的设置**。
-3. 单击 **保存首选项**。
+1. 在导航窗格中，选择"**设置** \> **终结点** \> **高级功能"**。
+2. 选择要配置的高级功能，并切换开和 **关****之间的设置**。
+3. 单击 **"保存首选项"**。
 
 使用以下高级功能可以更好地防范潜在恶意文件，并获取安全调查期间更好的见解。
 
@@ -48,15 +48,18 @@ ms.locfileid: "61165206"
 
 ## <a name="live-response"></a>实时响应
 
+> [!NOTE]
+> 实时响应 **需要启用** 自动调查，然后才能在 Microsoft Defender for Endpoint 门户的高级设置部分中启用它。
+
 启用此功能，以便具有相应权限的用户可以在设备上启动实时响应会话。
 
-有关角色分配详细信息，请参阅创建 [和管理角色](user-roles.md)。
+有关角色分配详细信息，请参阅 [创建和管理角色](user-roles.md)。
 
 ## <a name="live-response-for-servers"></a>服务器实时响应
 
 启用此功能，以便具有适当权限的用户可以启动服务器上实时响应会话。
 
-有关角色分配详细信息，请参阅创建 [和管理角色](user-roles.md)。
+有关角色分配详细信息，请参阅 [创建和管理角色](user-roles.md)。
 
 ## <a name="live-response-unsigned-script-execution"></a>实时响应未签名脚本执行
 
@@ -64,9 +67,9 @@ ms.locfileid: "61165206"
 
 ## <a name="always-remediate-pua"></a>始终修正 PUA
 
-PUA (可能不需要) 应用程序是一类软件，可能会导致计算机运行缓慢、显示意外广告或最差时安装其他软件（可能是意外的或不需要的）。
+PUA (可能不需要) 是一类软件，可能会导致你的计算机运行缓慢、显示意外广告或在最差时安装其他软件（可能是意外的或不需要的）。
 
-启用此功能，以便 (PUA) 在租户的所有设备上修正可能不需要的应用程序，即使未在设备上配置 PUA 保护。 这有助于防止用户无意中在设备上安装不需要的应用程序。 关闭后，修正取决于设备配置。
+启用此功能，以便 (PUA) ，即使未在设备上配置 PUA 保护，在租户的所有设备上也进行修正。 这有助于防止用户无意中在设备上安装不需要的应用程序。 关闭后，修正取决于设备配置。
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>限制与作用域内设备组之间的关联
 
@@ -77,7 +80,7 @@ PUA (可能不需要) 应用程序是一类软件，可能会导致计算机运�
 
 ## <a name="enable-edr-in-block-mode"></a>启用EDR阻止模式
 
-在阻止模式下 (EDR) 终结点检测和响应功能可提供对恶意项目的保护，即使 Microsoft Defender 防病毒处于被动模式时。 打开后，EDR模式阻止在设备上检测到的恶意项目或行为。 EDR阻止模式在后台工作，以修正在泄露后检测到的恶意项目。
+终结点检测和响应 (EDR) 在阻止模式下提供对恶意项目的保护，即使 Microsoft Defender 防病毒处于被动模式时。 打开后，EDR模式阻止在设备上检测到的恶意项目或行为。 EDR阻止模式在后台工作，以修正在泄露后检测到的恶意项目。
 
 ## <a name="autoresolve-remediated-alerts"></a>Autoresolve 修正警报
 
@@ -102,9 +105,9 @@ PUA (可能不需要) 应用程序是一类软件，可能会导致计算机运�
 
 若要打开 **"允许"或"阻止** 文件"：：
 
-1. 在导航窗格中，**选择"设置** \>  \> **终结点常规** \> **高级功能** \> **允许或阻止文件"。**
+1. 在导航窗格中，**选择"**\>设置 **终结点""** \>  \>常规 **高级功能** \> **""允许或阻止文件"**。
 
-1. 切换开和 **关****之间的设置**。
+1. 在"开"和" **关"** 之间 **切换设置**。
  
     :::image type="content" source="../../media/alloworblockfile.png" alt-text="阻止文件功能的高级设置的图像。":::
 
@@ -116,7 +119,7 @@ PUA (可能不需要) 应用程序是一类软件，可能会导致计算机运�
 
 启用此功能后，您可以创建 IP 地址、域或 URL 的指示器，这些指示器根据自定义指示器列表确定是否允许或阻止它们。
 
-若要使用此功能，设备必须运行Windows 10版本 1709 或更高版本，或Windows 11。 它们还应具有阻止模式和反恶意软件平台版本 4.18.1906.3 或更高版本的网络保护，请参阅 [KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834)。
+若要使用此功能，设备必须运行Windows 10版本 1709 或更高版本，Windows 11。 它们还应具有阻止模式和反恶意软件平台版本 4.18.1906.3 或更高版本的网络保护 [，请参阅 KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834)。
 
 有关详细信息，请参阅管理 [指示器](manage-indicators.md)。
 
@@ -126,9 +129,9 @@ PUA (可能不需要) 应用程序是一类软件，可能会导致计算机运�
 ## <a name="tamper-protection"></a>防篡改保护
 在某些类型的网络攻击期间，不良参与者会尝试在你的计算机上禁用安全功能，如防病毒保护。 不良操作者希望禁用安全功能，以便更轻松地访问数据、安装恶意软件或以其他方式利用你的数据、标识和设备。
 
-防篡改保护实质上Microsoft Defender 防病毒和防止通过应用和方法更改安全设置。
+防篡改保护实质上Microsoft Defender 防病毒并阻止通过应用和方法更改安全设置。
 
-如果你的组织使用基于云的保护，Microsoft Defender 防病毒启用基于云的保护时，此功能可用。 有关详细信息，请参阅通过云保护在 Microsoft Defender 防病毒[中使用下一代技术](cloud-protection-microsoft-defender-antivirus.md)。
+如果你的组织使用基于云的保护Microsoft Defender 防病毒则此功能可用。 有关详细信息，请参阅通过云保护[在 Microsoft Defender 防病毒中使用下一代技术](cloud-protection-microsoft-defender-antivirus.md)。
 
 保持防篡改功能打开，以防止对安全解决方案及其基本功能进行不必要的更改。
 
@@ -144,10 +147,10 @@ PUA (可能不需要) 应用程序是一类软件，可能会导致计算机运�
 
 ## <a name="skype-for-business-integration"></a>Skype for Business 集成
 
-通过Skype for Business集成，可以使用电子邮件、电子邮件或Skype for Business与用户进行通信。 当你需要与用户通信并降低风险时，这很方便。
+通过启用Skype for Business集成，可以使用电子邮件、电子邮件或Skype for Business与用户进行通信。 当你需要与用户通信并降低风险时，这很方便。
 
 > [!NOTE]
-> 当设备与网络隔离时，有一个弹出窗口，你可以选择启用 Outlook 和 Skype 通信，这将允许在用户与网络断开连接时与用户通信。 此设置适用于设备在Skype Outlook时的通信和通信。
+> 当设备与网络隔离时，有一个弹出窗口，你可以选择启用 Outlook 和 Skype 通信，这将允许用户在断开与网络的连接时与其通信。 此设置适用于设备在Skype Outlook时的通信和通信。
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender for Identity 集成
 
@@ -165,25 +168,21 @@ PUA (可能不需要) 应用程序是一类软件，可能会导致计算机运�
 > [!NOTE]
 > 你需要具有相应的许可证才能启用此功能。
 
-若要在威胁情报中接收Office 365集成，你需要在安全与合规中心仪表板中启用 Defender for Endpoint &设置。 有关详细信息，请参阅威胁 [调查和响应](/microsoft-365/security/office-365-security/office-365-ti)。
+若要在威胁情报中Office 365上下文设备集成，你需要在安全与合规中心仪表板中启用 Defender for Endpoint &设置。 有关详细信息，请参阅威胁 [调查和响应](/microsoft-365/security/office-365-security/office-365-ti)。
 
 ## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft 威胁专家 - 目标攻击通知
 
-在两个 Microsoft 威胁专家组件中，目标攻击通知一般可用。 专家按需功能仍处于预览阶段。 如果你已申请预览，并且你的应用程序已获得批准，你只能使用专家按需功能。 可以通过 Defender for Endpoint 门户的警报仪表板Microsoft 威胁专家接收来自你的终结点门户的定向攻击通知（如果已配置的话）。
+在两个 Microsoft 威胁专家组件中，目标攻击通知一般可用。 专家按需功能仍处于预览阶段。 如果你已申请预览，并且你的应用程序已获得批准，你只能使用专家按需功能。 可以通过 Defender for Endpoint 门户的警报仪表板接收来自 Microsoft 威胁专家 的定向攻击通知，如果已配置，可以通过电子邮件接收。
 
 > [!NOTE]
-> Defender Microsoft 威胁专家 终结点中的 Microsoft 威胁专家 功能随适用于 企业移动性 + 安全性 的 E5[许可证一企业移动性 + 安全性。](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+> Defender Microsoft 威胁专家 终结点中的 Microsoft 威胁专家 功能随适用于 企业移动性 + 安全性 的 E5 [许可证一企业移动性 + 安全性](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)。
 
 ## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
 启用此设置将 Defender for Endpoint 信号转发到 Microsoft Defender for Cloud Apps，以便更深入地了解云应用程序使用情况。 转发的数据存储和处理位置与 Defender for Cloud Apps 数据位于同一位置。
 
 > [!NOTE]
-> 此功能将随 E5 许可证一起提供[，企业移动性 + 安全性](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)运行 Windows 10， 版本 1709 (OS 内部版本 16299.1085（带[KB4493441](https://support.microsoft.com/help/4493441)) 、Windows 10、版本 1803 (OS 内部版本 17134.704，具有[KB4493464](https://support.microsoft.com/help/4493464)) ，Windows 10 版本 1809 (OS 内部版本 17763.379）[KB4489899](https://support.microsoft.com/help/4489899)) 、Windows 10版本或 Windows 11。
-
-## <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
-
-在安全中心门户中将 Microsoft Defender for Endpoint 信号转发Microsoft 365 Defender Microsoft 安全分数。 启用此功能后，Microsoft 安全功能分数可了解设备的安全状态。 转发数据的存储和处理位置与 Microsoft 安全分数数据位于同一位置。
+> 此功能将随 E5 许可证一起提供，[企业移动性 + 安全性](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)设备上运行Windows 10。 版本 1709 (OS 内部版本 16299.1085（带 [KB4493441](https://support.microsoft.com/help/4493441)) ，Windows 10，版本 1803 (OS 内部版本 17134.704，具有 [KB4493464](https://support.microsoft.com/help/4493464)) ，Windows 10 版本 1809 (OS 内部版本 17763.379[KB4489899](https://support.microsoft.com/help/4489899)) 、Windows 10版本或 Windows 11。
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>从 Microsoft Defender 标识门户启用适用于终结点的 Microsoft Defender 集成
 
@@ -191,40 +190,40 @@ PUA (可能不需要) 应用程序是一类软件，可能会导致计算机运�
 
 1. 使用全局管理员或安全管理员角色登录到 [Microsoft Defender for Identity](https://portal.atp.azure.com/) 门户。
 
-2. 单击 **"创建实例"。**
+2. 单击 **"创建实例"**。
 
-3. 将"集成"设置切换 **为"打开"，** 然后单击"保存 **"。**
+3. 将"集成"设置切换 **为"打开"** ，然后单击"保存 **"**。
 
 在两个门户上完成集成步骤后，你将能够查看设备详细信息或用户详细信息页面中的相关警报。
 
 ## <a name="web-content-filtering"></a>Web 内容筛选
 
-阻止访问包含不需要的内容的网站，并跟踪所有域中的 Web 活动。 若要指定要阻止的 Web 内容类别，请创建 [Web 内容筛选策略](https://security.microsoft.com/preferences2/web_content_filtering_policy)。 确保你在部署 Microsoft Defender for Endpoint 安全基线时具有阻止 [模式下的网络保护](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)。
+阻止访问包含不需要的内容的网站，并跟踪所有域中的 Web 活动。 若要指定要阻止的 Web 内容类别，请创建 [Web 内容筛选策略](https://security.microsoft.com/preferences2/web_content_filtering_policy)。 部署 Microsoft Defender for Endpoint 安全基线时，请确保网络保护在 [阻止模式下](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)。
 
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>与 Microsoft 合规中心共享终结点警报
 
-将终结点安全警报及其会审状态转发到 Microsoft 合规中心，从而通过警报增强内部风险管理策略，并修正内部风险，然后再造成危害。 转发的数据将处理并存储在与转发数据相同的Office 365位置。
+将终结点安全警报及其会审状态转发到 Microsoft 合规中心，从而通过警报增强内部风险管理策略，并修正内部风险，然后再造成危害。 转发的数据将处理并存储在与传输数据相同的Office 365位置。
 
 在内部风险管理 [设置中](/microsoft-365/compliance/insider-risk-management-settings#indicators) 配置安全策略违反指示器后，适用于终结点的 Defender 警报将共享与适用用户的内部风险管理。
 
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune连接
 
-Defender for Endpoint 可以[](/intune/what-is-intune)与 Microsoft Intune[集成，以启用基于设备风险的条件访问](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。 启用 [此功能后](configure-conditional-access.md)，你将能够与 Intune 共享 Defender for Endpoint 设备信息，从而增强策略实施。
+Defender for Endpoint 可以与 Microsoft Intune[集成，以启用基于设备风险的条件访问](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。[](/intune/what-is-intune) 启用 [此功能后](configure-conditional-access.md)，你将能够与 Intune 共享 Defender for Endpoint 设备信息，从而增强策略实施。
 
 > [!IMPORTANT]
 > 你需要在 Intune 和 Defender for Endpoint 上启用集成才能使用此功能。 有关特定步骤详细信息，请参阅在 [Defender for Endpoint 中配置条件访问](configure-conditional-access.md)。
 
 此功能仅在具有以下功能时可用：
 
-- 适用于 E5 企业移动性 + 安全性 E3或 Windows E5 (或 Microsoft 365 企业版 的许可) 
-- Active Microsoft Intune环境，Intune 托管Windows设备已[Azure AD加入](/azure/active-directory/devices/concept-azure-ad-join/)。
+- 适用于 E5 企业移动性 + 安全性 E3或 Windows E5 (或 Microsoft 365 企业版 的许可租户) 
+- Active Microsoft Intune环境，已加入 Intune Windows设备[Azure AD设备](/azure/active-directory/devices/concept-azure-ad-join/)。
 
 ### <a name="conditional-access-policy"></a>条件访问策略
 
 启用 Intune 集成后，Intune 将自动创建经典条件访问 (CA) 策略。 此经典 CA 策略是设置到 Intune 的状态报告的先决条件。 不应将其删除。
 
 > [!NOTE]
-> Intune 创建的经典 CA 策略与用于配置[](/azure/active-directory/conditional-access/overview/)终结点的新式条件访问策略不同。
+> Intune 创建的经典 CA 策略与用于配置终结点的新式[](/azure/active-directory/conditional-access/overview/)条件访问策略不同。
 
 ## <a name="device-discovery"></a>设备发现
 

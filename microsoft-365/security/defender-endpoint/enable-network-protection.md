@@ -13,14 +13,14 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 77c27d268a8f25c047f562a3cfc125092e64d2c7
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: acf474f472450456014a581366c8860d87607a79
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321791"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322641"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -46,9 +46,9 @@ ms.locfileid: "62321791"
 
 2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"选项"。
 
-3. 在嵌套菜单中导航到 **软件** \>  \>策略 **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **网络保护**。
+3. 在嵌套菜单中导航到 **软件** \>  \>策略 **Microsoft** \> **Windows Defender Windows Defender** \> **Exploit Guard** \> **网络保护**。
 
-如果密钥缺失，请导航到 **软件** \> **Microsoft** \> **Windows Defender Windows Defender** \> **Exploit Guard** \> **网络保护**。
+如果密钥缺失，请导航到 **软件** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **网络保护**。
 
 4. 选择 **EnableNetworkProtection** 以查看设备上网络保护的当前状态：
 
@@ -70,7 +70,7 @@ ms.locfileid: "62321791"
 
 ### <a name="powershell"></a>PowerShell
 
-1. 在 **"管理"中"开始"菜单 powershell**，右键单击"Windows PowerShell并选择"**以****管理员角色运行"**。
+1. 在 **"管理"中"开始"菜单 powershell**，右 **键单击"** Windows PowerShell并选择"以 **管理员角色运行"**。
 
 2. 输入以下 cmdlet：
 
@@ -102,7 +102,7 @@ ms.locfileid: "62321791"
 
 4. 转到 **Endpoint** **protectionBasics** > ，为配置文件提供名称，然后选择"下一步 **"**。
 
-5. 在"**配置设置"** 部分，**转到"** > Microsoft Defender 攻击防护 **网络筛选** > **""网络保护** > **""可以"或**"审核 **"**。 选择“**下一步**”。
+5. 在"**配置设置"** 部分，**转到"** > Microsoft Defender 攻击防护 **网络筛选** > **""网络保护** > **""可更新"或**"**审核"**。 选择“**下一步**”。
 
 6. 根据组织 **需要****，选择** 适当的 **范围** 标记、分配和适用性规则。 管理员可以设置更多要求。
 
@@ -120,7 +120,7 @@ ms.locfileid: "62321791"
 
 2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-3. 展开树以 **Windows Exploit** \> **Guard** \> **网络Microsoft Defender 防病毒Windows Defender** \> **的组件**。
+3. 展开树以 **Windows Exploit** \> **Guard** \> **网络Microsoft Defender 防病毒Windows Defender** \> **组件**。
 
    > [!NOTE]
    > 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
@@ -148,7 +148,7 @@ ms.locfileid: "62321791"
 
 1. 打开 Configuration Manager 控制台。
 
-2. 转到"**资产和合规性** > **Endpoint Protection** >  **Windows Defender攻击防护"**。 
+2. 转到"**资产和合规性** >  > **Endpoint Protection** **Windows Defender攻击防护"**。 
 
 3. 从 **功能区选择** "创建攻击防护策略"以创建新策略。
    - 若要编辑现有策略，请选择该策略，然后从功能区或右键单击菜单中选择"属性"。 编辑" **网络保护"选项卡** 中的"配置 **网络保护"** 选项。  
@@ -185,7 +185,7 @@ ms.locfileid: "62321791"
 
 ## <a name="see-also"></a>另请参阅
 
-- [网络保护](network-protection.md)
+- [网络保护功能](network-protection.md)
 
 - [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 

@@ -1,7 +1,7 @@
 ---
 title: 易受攻击的设备报告 - 危险和漏洞管理
 description: 显示易受攻击的设备趋势和当前统计信息的报告。 目标是了解设备曝光的目的和范围。
-keywords: 适用于 Endpoint-tvm 易受攻击的设备的 Microsoft Defender， 适用于终结点的 Microsoft Defender， tvm， &漏洞暴露， 减少威胁和漏洞， 监视安全配置
+keywords: Microsoft Defender for Endpoint-tvm 易受攻击的设备， Microsoft Defender for Endpoint， tvm， reduce threat & vulnerability exposure， reduce threat and vulnerability， monitor security configuration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f096433534abb91b9cb14b8db2737dacf566624
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 50b30d38a42aab37c295a9f65bd070dd9613927c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167978"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312630"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>易受攻击的设备报告 - 危险和漏洞管理
 
@@ -37,7 +37,7 @@ ms.locfileid: "61167978"
 
 该报告显示包含易受攻击的设备趋势和当前统计信息的图形和条形图。 目标是了解设备曝光的目的和范围。
 
-通过访问易受攻击Microsoft 365 Defender报告门户中的>**报告**
+通过访问报告门户中的Microsoft 365 Defender报告">**易受攻击的设备"**
 
 有两列：
 
@@ -46,7 +46,7 @@ ms.locfileid: "61167978"
 
 **筛选器**：你可以按漏洞严重性级别、攻击可用性、漏洞年数、操作系统平台、Windows 10或 Windows 11 版本或设备组筛选数据。
 
-**向下钻** 取：如果你希望进一步浏览某个见解，请选择相关条形图，以查看"设备清单"页中的已筛选设备列表。 可以从中导出列表。
+**向下钻** 取：如果要进一步探索见解，请选择相关条形图以查看"设备清单"页中的已筛选设备列表。 可以从中导出列表。
 
 ## <a name="severity-level-graphs"></a>严重性级别图形
 
@@ -76,7 +76,7 @@ ms.locfileid: "61167978"
 
 因易受攻击的应用程序或操作系统Windows 10或Windows 11版本上的设备数量。
 
-![按版本显示当前易受攻击Windows 10的一个图，以及一个按版本Windows 10易受攻击的设备的图形。](images/tvm-report-version.png)lightbox="images/tvm-report-version.png"：：：
+:::image type="content" alt-text="按版本显示当前易受攻击Windows 10的一个图，以及一个按版本Windows 10易受攻击的设备的图形。" source="images/tvm-report-version.png" lightbox="images/tvm-report-version.png":::
 
 ## <a name="related-topics"></a>相关主题
 

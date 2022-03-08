@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a359938dbee85ea64b5f46804761410cae1f48e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b1c133048e6600d553f0530e135ebfc2c441dd84
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166622"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323663"
 ---
 # <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>访问 MSSP Microsoft 365 Defender门户
 
@@ -36,11 +36,11 @@ ms.locfileid: "61166622"
 > [!NOTE]
 > 这些步骤集面向 MSSP。
 
-默认情况下，MSSP 客户通过Microsoft 365 Defender访问其租户 `https://securitycenter.windows.com/` ：。
+默认情况下，MSSP 客户通过以下MICROSOFT 365 DEFENDER访问其租户：`https://security.microsoft.com/`。
 
-但是，MSSP 将需要使用以下格式的特定于租户的 URL：  `https://securitycenter.windows.com?tid=customer_tenant_id` 访问 MSSP 客户门户。
+但是，MSSP 将需要使用以下格式的特定于租户的 URL：  `https://security.microsoft.com?tid=customer_tenant_id` 访问 MSSP 客户门户。
 
-通常，需要将 MSSP 添加到其打算管理的每个 MSSP Azure AD中。
+通常，需要将 MSSP 添加到其计划管理的每个 MSSP Azure AD中。
 
 使用以下步骤获取 MSSP 客户租户 ID，然后使用该 ID 访问租户特定的 URL：
 
@@ -48,9 +48,9 @@ ms.locfileid: "61166622"
 
 2. 将目录切换到 MSSP 客户的租户。
 
-3. 选择 **Azure Active Directory >属性 "。** 你将在"目录 ID"字段中找到租户 ID。
+3. 选择 **Azure Active Directory >属性"**。 你将在"目录 ID"字段中找到租户 ID。
 
-4. 通过替换以下 URL 中的值访问 MSSP `customer_tenant_id` 客户门户 `https://securitycenter.windows.com/?tid=customer_tenant_id` ：。
+4. 通过替换以下 URL 中的值访问 `customer_tenant_id` MSSP 客户门户： `https://security.microsoft.com/?tid=customer_tenant_id`。
 
 ## <a name="related-topics"></a>相关主题
 

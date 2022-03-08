@@ -2,8 +2,8 @@
 title: 步骤 1 为使用 MFA 的混合工作者提高登录安全性
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 要求混合工作者使用多重身份验证 (MFA) 登录。
-ms.openlocfilehash: c5c63716ecbd29ba393ee7601e99a1f52b4c3768
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 3bccf8b3ab6bc57417c6b9beafa35c8c7230f20f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "62365773"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323481"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>步骤 1 为使用 MFA 的混合工作者提高登录安全性
 

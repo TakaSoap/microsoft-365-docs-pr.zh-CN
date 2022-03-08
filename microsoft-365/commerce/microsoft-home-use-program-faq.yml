@@ -1,8 +1,8 @@
 ### YamlMime:FAQ
 metadata:
   title: 'Microsoft 家用许可计划常见问题解答 (常见问题) '
-  ms.author: cmcatee
   author: cmcatee-MSFT
+  ms.author: cmcatee
   manager: scotv
   ms.reviewer: tugu, jmueller
   audience: Admin
@@ -13,18 +13,18 @@ metadata:
   - M365-subscription-management
   - Adm_O365
   ms.custom:
+  - commerce_subscriptions
   - okr_SMB
   - AdminSurgePortfolio
-  - commerce_subscriptions
   search.appverid: MET150
   description: 常见问题解答 (常见问题) 有关Microsoft 家用许可计划。
   ms.date: 05/01/2021
-  ms.openlocfilehash: 7fae34efdc9989f7a5e7807040c9e9457b8b4688
-  ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+  ms.openlocfilehash: 5fbc27e82c61fd1cc7ca3fc75f4369afca532f9d
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/26/2021
-  ms.locfileid: "60586857"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63315745"
 title: 'Microsoft 家用许可计划常见问题解答 (常见问题) '
 summary: >
   批量许可客户在 Microsoft 家用许可计划 (网站上) HUP 适用于企业的 Microsoft Store [HUP。](https://go.microsoft.com/fwlink/?linkid=2139192)
@@ -33,7 +33,7 @@ summary: >
   所有其他客户通过此步骤访问 HUP：
 
 
-  - In the Microsoft admin center， go to the **Billing**  >  [**Your products** page](https://go.microsoft.com/fwlink/p/?linkid=842054)， select the **Benefits** tab， and then select the **HUP** tab.
+  - 在 Microsoft 管理中心中，转到 > "计费 [**""你的**](https://go.microsoft.com/fwlink/p/?linkid=842054)产品"页面，选择"**权益**"选项卡，然后选择 **"HUP"** 选项卡。
 sections:
 - name: 已忽略
   questions:
@@ -43,48 +43,48 @@ sections:
       HUP Microsoft 家用许可计划 (HUP) 允许符合条件的公司的员工以折扣购买 Microsoft 消费者产品。 可以通过访问家庭使用计划产品页来查看每个产品/产品的 [当前折扣](https://www.microsoft.com/home-use-program)。
   - question: >
       在哪些市场中提供家庭使用计划？
-    answer: "系统Microsoft 365 家庭版个人订阅的折扣将提供给全球符合条件的公司，但以下例外：\n\n- 黎巴嫩、澳门、俄罗斯和委内瑞拉：优惠在这些市场中不可用。\n- 中国和香港特别行政区：在这些市场中提供一年订阅。 对于中国，请访问[Microsoft 365中国。](https://www.microsoftstore.com.cn/home-use-program/invite) 对于香港，请访问[购买Microsoft 365折扣价格购买产品](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK)。\n- 日本：Microsoft 365 家庭版不可用。\n- 选择 Surface 设备和附件的折扣将提供给选定市场中符合条件的公司。 \n"
+    answer: "向全球Microsoft 365 家庭版公司提供订阅和个人订阅折扣，但以下例外：\n\n- 黎巴嫩、澳门、俄罗斯和委内瑞拉：优惠在这些市场中不可用。\n- 中国和香港特别行政区：在这些市场中提供一年订阅。 对于中国，请访问[Microsoft 365中国。](https://www.microsoftstore.com.cn/home-use-program/invite) 对于香港，请访问购买[Microsoft 365折扣价格购买产品](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK)。\n- 日本：Microsoft 365 家庭版不可用。\n- 选择 Surface 设备和附件的折扣将提供给选定市场中符合条件的公司。 \n"
   - question: >
       组织如何有资格享受 HUP 折扣？
-    answer: "若要使员工充分利用Microsoft 家用许可计划折扣，他们需要有效的公司电子邮件地址和活动的 Microsoft 帐户，并且你的组织必须满足以下条件之一：\n\n- 具有有效软件保障的符合资格Office客户\n- 从软件保障Microsoft 365/Microsoft 365 E3/E5 的客户\n- 已购买 2，000 ≥或混合许可证的商业和政府客户Microsoft 365 E3/E5\n- 教育客户和非营利组织客户\n- 商业和政府客户在前 12 个月内在符合条件的 Power BI、Office、Surface & 附件、Windows 和 Enterprise Mobility 上花费 250，000 美元或更多美元 \n"
+    answer: "若要使员工充分利用Microsoft 家用许可计划折扣，他们需要有效的公司电子邮件地址和活动的 Microsoft 帐户，并且你的组织必须满足以下条件之一：\n\n- 具有有效软件保障的符合资格Office客户\n- 从软件保障Microsoft 365/Microsoft 365 E3/E5 的客户\n- 已购买 2，000 ≥或混合许可证的商业和政府客户Microsoft 365 E3/E5\n- 教育客户和非营利组织客户\n- 过去 12 个月内在符合条件的 Power BI、Office、Surface 设备 & 附件、Windows 和 Enterprise 移动方面花费 250，000 美元或更多的商业和政府客户 \n"
   - question: >
-      为什么我必须创建一个Azure Active Directory (AAD) 帐户以使用家庭使用计划/适用于企业的 Microsoft Store？
+      为什么必须创建一个Azure Active Directory (AAD) 帐户，以使用家庭使用计划/适用于企业的 Microsoft Store？
     answer: >
-      为了将家庭使用计划更新和现代化为更广泛的许可证和产品权益，我们需要更改实现 HUP 的方式。 适用于企业的 Microsoft Store用于资格验证和分配 HUP 权益，因此它依赖于 AAD 连接来自 VLSC 的信息并验证组织的员工所使用的电子邮件域。 有关详细信息，请参阅通过 Azure AD [for Business 注册Office 365帐户](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome)。
+      为了将家庭使用计划更新和现代化为更广泛的许可证和产品权益，我们需要更改实现 HUP 的方式。 适用于企业的 Microsoft Store用于资格验证和分配 HUP 权益，因此它依赖于 AAD 连接来自 VLSC 的信息并验证组织的员工所使用的电子邮件域。 有关详细信息，请参阅通过 [Azure AD for Business 注册Office 365帐户](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome)。
   - question: >
       如何成为托管租户的已分配 IT 管理员？
     answer: >
       您必须在 DNS 中创建一条特殊记录，以证明您拥有公司域 ex：contoso.com。
 
 
-      有关成为托管租户的分步过程，请参阅以 [Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover)中的管理员角色接管非托管目录。
+      有关成为托管租户的分步过程，请参阅以 [Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover) 中的管理员角色接管非托管目录。
   - question: >
       哪些资源可用于帮助向员工推广家庭使用计划权益？
     answer: >
       使用家庭使用计划主页上的资源[](https://www.microsoft.com/home-use-program/resources)来帮助你向员工推广该计划。 你将找到数字和可打印的飞鸟、电子邮件和新闻稿中用于详细内容，以及如何以最佳方式推广家庭使用计划的指南。
   - question: >
-      符合条件的员工进行购买的步骤是什么Microsoft 家用许可计划购买？
+      符合条件的员工进行购买需要执行哪些Microsoft 家用许可计划步骤？
     answer: >
-      1. **注册** 转到 ["Microsoft 家用许可计划"页](https://www.microsoft.com/home-use-program)，然后选择"入门"按钮。 员工输入公司电子邮件地址。
+      1. **登记** 转到"Microsoft 家用许可计划 ["页](https://www.microsoft.com/home-use-program)，然后选择"入门"按钮。 员工输入公司电子邮件地址。
 
       2. **确认**  电子邮件会发送到公司电子邮件地址收件箱，并包含验证其计划资格的链接。
 
       3. **登录** 在经过身份验证后，他们通过提供与其个人电子邮件地址相关联的 Microsoft 帐户开始购买过程，通过该帐户，他们可以查看基于组织"家庭使用计划"权益的产品折扣。 有关详细信息，请参阅 [如何登录你的 Microsoft 帐户](https://support.microsoft.com/help/4028195/microsoft-account-sign-in)。
 
-      4. **购买** 购买将在请求中进行处理Microsoft Store。
+      4. **购买** 将在任务中处理并完成Microsoft Store。
   - question: >
-      如果员工通过 Microsoft 365订阅Microsoft 家用许可计划，这将如何影响Microsoft 365商业版订阅和设备限制？
+      如果员工通过 Microsoft 365 订阅Microsoft 家用许可计划，这将如何影响我们组织的 Microsoft 365 商业版订阅和设备限制？
     answer: >
-      通过家庭使用计划进行安装不会影响组织的Microsoft 365订阅。 当员工在Microsoft 365设备上激活密码时，他们使用个人 Microsoft 帐户，而不是工作帐户。 组织的 IT 管理员不管理或支持通过家庭使用计划进行的任何购买。
+      通过家庭使用计划进行安装不会影响组织的商业Microsoft 365订阅。 当员工Microsoft 365设备上激活密码时，他们使用个人 Microsoft 帐户，而不是工作帐户。 组织的 IT 管理员不管理或支持通过家庭使用计划进行的任何购买。
   - question: >
       我在管理组织服务权益时遇到Microsoft 家用许可计划问题。 在哪里可以获取支持？
     answer: >
-      有关从批量许可服务中心迁移问题或访问 适用于企业的 Microsoft Store的支持，请参阅[VLSC Support。](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0)
+      有关从批量许可服务中心迁移问题或访问 适用于企业的 Microsoft Store的支持，请参阅 [VLSC Support](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0)。
 
 
       有关在访问应用商店后查看权益适用于企业的 Microsoft Store，请参阅[适用于企业管理员的应用商店支持](/microsoft-store/)
   - question: >
-      为什么我看不到购买 2021 Visio Professional/或 2021 Project Professional的选项？
+      为什么我看不到购买 2021 和/Visio Professional 2021 Project Professional的选项？
     answer: >
       如果其中一名员工利用以前的计划，并且正在查找 Visio Professional 2021 和/或 Project Professional 2021 的折扣，请完成资格验证过程，使用你的个人 Microsoft 帐户登录后，请转到其他 **Office** 产品购买这些产品。 如果你看不到预期的折扣，请联系你的雇主家庭使用计划管理员，询问这些附加权益。
   - question: >
@@ -113,8 +113,8 @@ sections:
   - question: >
       员工Microsoft 家用许可计划受益？
     answer: >
-      当员工Microsoft 365购买产品时，他们可以使用在家办公时在办公室使用的软件。 这有助于提高他们的工作效率、提高技能并提高工作满意度。
+      当员工Microsoft 365购买产品时，他们可以在家使用他们在办公室使用的软件。 这有助于提高他们的工作效率、提高技能并提高工作满意度。
   - question: >
       当员工离开公司时会发生什么情况？
-    answer: "对于符合 Microsoft 365 订阅优惠条件并通过计划购买的员工，只要员工的订阅保持活动状态，则折扣价格适用，而不管他们在组织的雇佣状态如何。 但是，一旦雇佣关系终止，其商业使用权利将终止。 对于有资格使用 Office 2019 软件的员工，他们必须在员工Office公司后卸载通过家庭使用计划购买的软件。 \n"
-additionalContent: "\n## <a name=\"related-content\"></a>相关内容\n  [主页使用计划常见问题解答](https://www.microsoft.com/home-use-program/frequently-asked-questions)。 （文章）\\\n  [Microsoft 批量许可服务中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (链接页) \\\n  [适用于企业的 Microsoft Store管理员支持 (](/microsoft-store/)链接页面) \\\n  [适用于企业的 Microsoft Store (\"](https://go.microsoft.com/fwlink/?linkid=2139192)链接) \\\n  [主页 使用计划员工存储](https://www.microsoft.com/home-use-program) (链接页) \\\n  [Microsoft 许可：主页使用计划概述 (](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) 链接页)"
+    answer: "对于符合 Microsoft 365 订阅优惠条件并且已通过该计划购买的员工，只要员工的订阅保持活动状态，则折扣价格适用，无论其在贵组织的雇佣状态如何。 但是，一旦雇佣关系终止，其商业使用权利将终止。 对于有资格使用 Office 2019 软件的员工，他们必须在员工Office公司后卸载通过家庭使用计划购买的软件。 \n"
+additionalContent: "\n## <a name=\"related-content\"></a>相关内容\n  [主页使用计划常见问题解答](https://www.microsoft.com/home-use-program/frequently-asked-questions)。 （文章）\\\n  [Microsoft 批量许可服务中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (链接页) \\\n  [适用于企业的 Microsoft Store管理员支持](/microsoft-store/) (链接页面) \\\n  [适用于企业的 Microsoft Store (](https://go.microsoft.com/fwlink/?linkid=2139192)页面) \\\n  [主页 Use Program employee store (](https://www.microsoft.com/home-use-program) link page) \\\n  [Microsoft 许可：主页使用计划概述 (](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) 链接页)"

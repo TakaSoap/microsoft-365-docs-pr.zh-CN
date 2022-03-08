@@ -2,8 +2,8 @@
 title: 在 Microsoft 合规性管理器中扩展评估模板
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何扩展 Microsoft 合规性管理器中的评估模板，以添加和修改控制措施。
-ms.openlocfilehash: d47488f578436b1ea8bd865855d681d8778d07bd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 4c9e4543a046e09733711500ae6162a547e3602b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703065"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316206"
 ---
 # <a name="extend-assessment-templates-in-microsoft-compliance-manager"></a>在 Microsoft 合规性管理器中扩展评估模板
 
@@ -33,41 +33,41 @@ ms.locfileid: "60703065"
 
 ## <a name="extend-microsoft-assessment-templates"></a>扩展 Microsoft 评估模板
 
-扩展 Microsoft 模板（例如创建用于 Microsoft 365 模板）时，它仍然可以接收 Microsoft 发布的更新。 当相关法规或产品变更发生更改时，可能会发生 (请参阅接受评估 [更新](compliance-manager-assessments.md#accept-updates-to-assessments)) 。
+扩展 Microsoft 模板（例如创建用于 Microsoft 365 模板）时，它仍然可以接收 Microsoft 发布的更新。 当相关法规或产品发生更改时，可能会发生更新 (请参阅接受评估 [更新](compliance-manager-assessments.md#accept-updates-to-assessments)) 。
 
 ### <a name="prepare-template-data-and-create-extension"></a>准备模板数据和创建扩展
 
-若要进行准备，您需要组合一个特殊格式的 Excel 电子表格，以导入必要的模板数据。 这些Excel文件遵循使用 Excel 设置评估模板数据格式[](compliance-manager-templates-format-excel.md)中列出的相同格式，但扩展有特殊要求。 请参阅以下其他要点以帮助防止错误：
+若要进行准备，您需要组合一个特殊格式的 Excel 电子表格，以导入必要的模板数据。 这些Excel文件遵循 Format [assessment template data with Excel](compliance-manager-templates-format-excel.md)中概述的相同格式，但扩展有特殊要求。 请参阅以下其他要点以帮助防止错误：
 
 - 电子表格应仅包含要添加到评估的操作和控制。
 - 电子表格不能包含要修改的评估中已存在的任何控件或操作。
-- 请考虑在模板标题中包括"扩展名"，例如，"GDPR – [你的公司名称]扩展名"。 这样，与 Microsoft 提供的标准模板或名称相似的自定义模板不同，更易于在评估模板页上的列表中进行标识。
+- 请考虑在模板标题中包括"扩展名"，例如，"GDPR – [你的公司名称]扩展名"。 这样，与 Microsoft 提供的标准模板或名称相似的自定义模板不同，更易于在评估模板页面上的列表中进行标识。
 
 设置电子表格格式后，请按照以下步骤操作。
 
 1. 转到评估 **模板页面，** 然后选择 **创建新模板**。 将打开模板创建向导。
 
-2. 选择要创建的模板类型。 在这种情况下，请选择"**扩展 Microsoft 模板"，** 然后选择"**选择 Microsoft 模板"。**
+2. 选择要创建的模板类型。 在这种情况下，请选择" **扩展 Microsoft 模板"，** 然后选择" **选择 Microsoft 模板"**。
 
 3. 模板选择飞出窗格显示在屏幕的右侧，其中显示所有模板的列表及其活动状态或非活动状态。 激活 **的模板** 计数器显示当前使用的模板数，该数量与可供使用的模板总数之比。 如果超过限制，消息栏将发出通知。
 
 4. 模板选择飞出窗格显示在屏幕的右侧。 使用 **搜索** 应用筛选器以查找您想要的模板
 
-5. 找到模板后，选择其名称左侧的单选按钮，然后选择"保存 **"。**
+5. 找到模板后，选择其名称左侧的单选按钮，然后选择"保存 **"**。
 
-6. 下一个屏幕将显示所选的模板。 如果正确，请选择"下一 **步"。**  (如果不正确，请选择" **选择其他模板** "以再次选择。) 
+6. 下一个屏幕将显示所选的模板。 如果正确，请选择"下一 **步"**。  (如果不正确，请选择" **选择其他模板** "以再次选择。) 
 
-7. 在 **"Upload文件**"屏幕上，选择"浏览"查找并上载包含所有所需Excel模板数据的格式化文件。
+7. 在"**Upload文件**"屏幕上，选择"浏览"查找并上载包含所有所需Excel模板数据的格式化文件。
 
-8. 如果文件没有问题，下一个屏幕将显示已上传文件的名称。 如果需要 **更改** (，请选择"下一步"以继续Upload **文件) 。**
+8. 如果文件没有问题，下一个屏幕将显示已上传文件的名称。 如果需要 **更改** (，请选择"下一步"以继续Upload **文件)**。
 
     - 如果文件有问题，顶部会显示一条错误消息，说明错误所在。 你需要修复并重新上传文件。 如果电子表格的格式不正确，或者某些字段中的信息无效，则会导致错误。
 
-9. " **审阅和完成"** 屏幕显示改进操作和控件的数量以及模板的最大分数。 准备好批准后，选择"下一 **步"。**  (如果需要进行更改，请选择Upload **文件 .)**
+9. " **审阅和完成"** 屏幕显示改进操作和控件的数量以及模板的最大分数。 准备好批准后，选择"下一 **步"**。  (如果需要进行更改，请选择"Upload **文件**"。) 
 
 10. 最后一个屏幕确认已创建一个新模板。 选择 **"完成** "退出向导。
 
-11. 你将到达新模板的详细信息页面。 从此处，可以通过选择创建评估 **来创建评估**。 有关指导，请参阅 [生成和管理评估](compliance-manager-assessments.md#create-assessments)。
+11. 你将到达新模板的详细信息页面。 从此处，可以通过选择"创建评估 **"来创建评估**。 有关指导，请参阅 [生成和管理评估](compliance-manager-assessments.md#create-assessments)。
 
 ## <a name="extend-universal-assessment-templates"></a>扩展通用评估模板
 

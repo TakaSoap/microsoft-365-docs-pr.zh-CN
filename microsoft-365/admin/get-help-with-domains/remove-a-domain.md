@@ -2,8 +2,8 @@
 title: 删除域
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,21 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 了解如何从域中删除旧域Microsoft 365将用户和组移动到另一个域或取消订阅。
-ms.openlocfilehash: 875858804912ab75d0a5a0bab45c9bb1614c82ca
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 3da47275e090296c9b192b4bd60ad19dd8cf4149
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765152"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316823"
 ---
 # <a name="remove-a-domain"></a>删除域
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。
 
-是否要删除域，因为你想要将其添加到不同的订阅Microsoft 365？ 或者只是想取消订阅？ 可[更改计划或订阅](../../commerce/subscriptions/switch-to-a-different-plan.md)，也可[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。
+是否要删除域，因为你想要将其添加到不同的订阅Microsoft 365计划中？ 或者只是想取消订阅？ 可[更改计划或订阅](../../commerce/subscriptions/switch-to-a-different-plan.md)，也可[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。
 
 > [!TIP]
-> 如果需要有关本主题中的步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助 Business Assist，你和员工在业务增长（从载入到日常使用）时，可以全天候访问小型企业专家。
+> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以针对从加入到日常使用的各个方面随时访问小型企业专家。
 
 ### <a name="step-1-move-users-to-another-domain"></a>步骤 1：将用户移动到另一个域
 
@@ -115,6 +115,9 @@ ms.locfileid: "62765152"
 
 ::: moniker range="o365-worldwide"
 
+> [!NOTE]
+> 如果要删除自定义域，请参阅 [删除自定义域，然后再](#remove-a-custom-domain) 继续。
+
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
 ::: moniker-end
@@ -131,9 +134,38 @@ ms.locfileid: "62765152"
 
 4. 按照任何其他提示，然后选择"关闭 **"**。
 
+
+
+
+### <a name="remove-a-custom-domain"></a>删除自定义域
+
+如果要取消订阅并使用自定义域，则必须执行一些额外步骤，然后才能取消订阅。 
+
+#### <a name="change-your-domain-nameserver-records-if-needed"></a>更改域名服务器记录（若需要）
+
+如果设置了自定义域，则添加 DNS 记录以便此域使用 Microsoft 365 服务。在删除域之前，请确保在 DNS 主机上更新 DNS 记录，如域的 MX 记录。
+
+例如，在 DNS 主机上更改 MX 记录。发送到你的域的电子邮件不再发到你的 Microsoft 地址，转而发到新的电子邮件提供商。（MX 记录确定针对你的域的电子邮件发送到何处。）
+
+- 如果名称服务器 (NS) 记录 [当前指向 Office 365 名称服务器](../../admin/setup/add-domain.md)，则仅在更改 NS 记录以指向新的 DNS 主机（参见步骤 2）后，对 MX 记录的更改才会生效。
+
+- 在更新 MX 记录之前，请告知用户你要切换其电子邮件的日期，以及计划使用的新电子邮件提供商。 此外，如果用户想要将其现有 Microsoft 电子邮件移动到新的提供商，他们必须执行额外的步骤。
+
+- 在更改 MX 记录时，请确保保存[数据](/microsoft-365/commerce/subscriptions/cancel-your-subscription#save-your-data)并根据需要Office[文件](/microsoft-365/commerce/subscriptions/cancel-your-subscription#uninstall-office-optional)。
+
+#### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>更新域的 MX 或其他 DNS 记录（如果正在使用自定义域）
+
+如果你在设置域时将名称服务器 (NS) 记录切换为 Microsoft 365，则必须在计划使用的 DNS 主机处设置或更新 MX 记录和其他 DNS 记录，然后将 NS 记录更改到该 DNS 主机。
+
+如果在设置域时未切换 NS 记录，则更改 MX 记录后，邮件将立即开始转到新的地址。
+
+若要更改 NS 记录，请参阅更改[名称服务器以设置Microsoft 365注册机构的名称](../../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md)。
+
+
+
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>删除域需要多长时间？
 
-如果域未在很多位置（如安全组、通讯组列表、用户和通讯组）引用，Microsoft 365删除域可能需要 5 分钟Microsoft 365。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
+如果域未在很多位置（如安全组、通讯组列表、用户和 Microsoft 365 组）被引用，Microsoft 365删除域。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
 
 如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain)。
 

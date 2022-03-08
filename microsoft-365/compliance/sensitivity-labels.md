@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 9c1eb0e7ba8f1c9388dd61f5e3433e47f9cd0cf4
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1c7ec0f9411d767e588e391eb7eb94ec95a219fb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940634"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312203"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -59,7 +59,7 @@ ms.locfileid: "61940634"
 
 - **跨不同平台和设备保护 Office 应用中的内容。** 受 Office 桌面应用和 Office 网页版中的 Word、Excel、PowerPoint 和 Outlook 支持。 在 Windows、macOS、iOS 和 Android 上受支持。
 
-- 利用 Microsoft Defender for Cloud Apps **保护第三方应用和服务中的内容**。 借助 Defender for Cloud Apps，可检测、分类、标记和保护第三方服务和应用 (如 SalesForce、Box 或 Dropbox) 中的内容，即使第三方应用或服务无法读取或不支持敏感度标签也不例外。
+- 使用 Microsoft Defender for Cloud Apps **保护第三方应用程序和服务中的内容**。通过 Defender for Cloud Apps，即使第三方应用程序或服务无法读取或不支持敏感性标签，也可以检测、分类、标记和保护第三方应用程序和服务（如 SalesForce、Box 或 DropBox）中的内容。
 
 - **保护容器**，包括 Teams、Microsoft 365 组和 SharePoint 网站。 例如，设置隐私设置、外部用户访问权限和外部共享，以及来自非托管设备的访问。
 
@@ -104,11 +104,13 @@ ms.locfileid: "61940634"
     
     ![应用于文档的水印和页眉。](../media/Sensitivity-label-watermark-header.png)
     
+    使用变量也支持动态标记。 例如，在页眉、页脚或水印中插入标签名称或文档名称。 有关详细信息，请参阅[带变量的动态标记](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)。
+    
     需要检查何时应用内容标记？ 请参阅 [Office 应用何时应用内容标记和加密](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption)。
     
-    某些应用程序（而非所有应用）通过使用变量来支持动态标记。 例如，在页眉、页脚或水印中插入标签名称或文档名称。 有关详细信息，请参阅[带变量的动态标记](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)。
+    如果你有基于特定文档的模板或工作流，请用所选内容标记测试这些文档，然后再将标签提供给用户。 需要注意的一些字符串长度限制：
     
-    字符串长度：水印的长度限制为 255 个字符。 页眉和页脚限制为 1024 个字符，但 Excel 中除外。 对于页眉和页脚，Excel 总限制为 255 个字符，但此限制包括不可见的字符，例如格式代码。 如果超出该限制，则你输入的字符串将不会在 Excel 中显示。
+    水印的长度限制为 255 个字符。 页眉和页脚限制为 1024 个字符，但 Excel 中除外。 对于页眉和页脚，Excel 总限制为 255 个字符，但此限制包括不可见的字符，例如格式代码。 如果超出该限制，则你输入的字符串将不会在 Excel 中显示。
 
 - 启用相应功能以 [将敏感度标签用于 Microsoft Teams、Microsoft 365 组和 SharePoint 网站](sensitivity-labels-teams-groups-sites.md)时，**可保护网站和组等容器中的内容**。
     
@@ -119,6 +121,8 @@ ms.locfileid: "61940634"
     ![提示分配所需的标签。](../media/Sensitivity-label-Prompt-for-required-label.png)
     
     有关创建或编辑敏感度标签时文件和电子邮件设置的 **自动标记** 的详细信息，请参阅 [将敏感度标签应用于 Office 应用自动](apply-sensitivity-label-automatically.md)的内容，并在Azure Purview中 [标签](/azure/purview/create-sensitivity-label)。
+
+- 为 SharePoint 网站和单个文档 **设置默认共享链接类型**。 若要帮助防止用户过度共享，请设置用户从 SharePoint 和 OneDrive 共享文档时的[默认范围和权限](sensitivity-labels-default-sharing-link.md)。
 
 ### <a name="label-scopes"></a>标记范围
 
@@ -237,30 +241,16 @@ ms.locfileid: "61940634"
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>敏感度标签和 Azure 信息保护
 
-在 Windows 计算机上的 Microsoft 365 应用版中使用敏感度标签时，可以选择使用 Office 应用中内置的标签或 [Azure 信息保护](/azure/information-protection/rms-client/aip-clientv2)客户端。
+内置于 Microsoft 365 应用版、Windows macOS、iOS 和 Android 上的敏感度标签在这些设备中的外观和行为非常类似，为用户提供一致的标签体验。 但是，在 Windows 计算机上，还可以使用 [Azure 信息保护 (AIP) 客户端](/azure/information-protection/rms-client/aip-clientv2)。 此客户端现在处于[维护模式](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613)。
 
-由于内置标签不使用 Office 加载项（而 Azure 信息保护客户端会使用该加载项），因此这些标签具有更强的稳定性和更佳的性能优势。 它们还支持最新功能，如高级分类器。
-
-默认情况下，安装 Azure 信息保护客户端时，将关闭这些应用中的内置标记功能。 若要更改此默认行为，并对 Office 应用使用内置标签，请参阅 [Office 内置标签客户端和 Azure 信息保护客户端](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)。
-
-如果在 Office 应用中安装 Azure 信息保护客户端但将其禁用，则在将 Azure 信息保护客户端与敏感标签结合使用时，你可以获得以下方面的好处：
-
-- 扫描仪发现本地存储的敏感信息，然后（可选）为该内容添加标签
-
-- 文件资源管理器中的右键单击选项让用户可将标签应用于所有文件类型
-
-- 查看器显示文本、图像或 PDF 文档的加密文件
-
-- PowerShell 模块发现本地文件中的敏感信息，然后应用或删除这些文件中的标签和加密
-
-如果你不熟悉 Azure 信息保护，请参阅 Azure 信息保护文档中的[选择 Windows 标签解决方案](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)。
+如果使用的是 AIP 客户端，请参阅[为何在 Office 应用的 AIP 外接程序上选择 MIP 内置标签](sensitivity-labels-aip.md)，了解和管理 Windows 计算机的标签选项。
 
 ### <a name="azure-information-protection-labels"></a>Azure 信息保护标签
 
 > [!NOTE]
 > Azure 门户中的 Azure 信息保护标签的标签管理将于 **2021 年 3 月 31 日** 弃用。有关详细信息，请参阅官方 [弃用通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)。
 
-如果租户尚未位于统一 [标识平台](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)，必须先激活统一标签，才能使用敏感度标签。 有关说明，请参阅 [Azure 信息保护标签迁移到统一敏感度标签](/azure/information-protection/configure-policy-migrate-labels)。 
+如果租户尚未位于统一 [标识平台](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)，必须先激活统一标签，才能使用敏感度标签。 有关说明，请参阅 [Azure 信息保护标签迁移到统一敏感度标签](/azure/information-protection/configure-policy-migrate-labels)。
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>敏感度标签和 Microsoft 信息保护 SDK
 

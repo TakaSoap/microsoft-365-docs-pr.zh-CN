@@ -1,7 +1,7 @@
 ---
 title: 开始使用应用程序控制
 description: 本文介绍如何启用应用控件
-keywords: 'Microsoft 托管桌面, Microsoft 365, 服务, 文档'
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: tiaraquan
 ms.author: tiaraquan
@@ -10,11 +10,16 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.openlocfilehash: a671bf36e957ffc416f51ec531aaeed6ddfa41b3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315395"
 ---
-
 # <a name="get-started-with-app-control"></a>开始使用应用程序控制
 
-在环境中启用应用控制之前，请务必查看并了解你Microsoft 托管桌面[实现](../service-description/app-control.md)它以及你的角色和责任。
+在环境中启用应用控制之前，请务必查看并了解Microsoft 托管桌面[实现它](../service-description/app-control.md)以及你的角色和责任。
 
 Microsoft 托管桌面关注获取安全基本策略的更具挑战性方面，从而简化了应用控制。
 
@@ -62,7 +67,7 @@ IT 管理员必须在测试圈中测试你的应用，并查看日志中是否�
 1. 部署并分配 [Intune 公司门户](company-portal.md)。
 1. [分配许可证](assign-licenses.md)。
 1. [部署应用](deploy-apps.md)。
-1. [设置设备](set-up-devices.md)。
+1. [准备设备](prepare-devices.md)。
 1. 设置 [使用 Autopilot 和注册状态页的首次运行体验](esp-first-run.md)。
 1. [启用用户支持功能](enable-support.md)。
 1. [让用户做好使用设备的准备](get-started-devices.md)。

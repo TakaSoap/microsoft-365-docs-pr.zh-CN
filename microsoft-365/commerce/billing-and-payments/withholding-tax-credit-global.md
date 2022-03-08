@@ -1,9 +1,9 @@
 ---
-title: '向全球客户申请预扣税 (帐户) '
+title: '向全球客户申请预扣税 (申请) '
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
@@ -16,24 +16,24 @@ ms.collection:
 search.appverid: MET150
 description: 了解如何在你的帐户上申请已支付的预扣税的信用。 本文适用于除印度以外的全球客户。
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 monikerRange: o365-worldwide
 ms.date: 05/27/2021
-ms.openlocfilehash: c2f12293593d39e5e7a738c914ba7bab79316a4a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a38cff7648666db7b6817882355ff756d1070c17
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158606"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322291"
 ---
-# <a name="request-a-credit-for-withholding-tax-on-your-account-global-customers"></a>向全球客户申请预扣税 (帐户) 
+# <a name="request-a-credit-for-withholding-tax-on-your-account-global-customers"></a>向全球客户申请预扣税 (申请) 
 
 > [!NOTE]
 >
-> 如果你的组织位于印度，请参阅向你的帐户申请预扣税的信用[ (印度客户) 。 ](withholding-tax-credit-india.md)
+> 如果你的组织位于印度，请参阅向你的帐户申请预扣税的信用 [ (印度客户) ](withholding-tax-credit-india.md)。
 
-一些客户在 Azure (Web Direct Microsoft 365) 收到由位于该国家/地区中的 Microsoft 实体计费的发票。 如果你的组织向该实体进行跨边界付款，则你国家/地区的税务机构可能会要求你预扣部分跨边界付款作为预扣税 (WHT) 。 如果在向 Microsoft 汇寄付款时预扣了税务机构所需的税款，本文将说明申请预扣税款的信用的过程。
+一些客户 (Azure Microsoft 365) Microsoft 实体计费的 Web Direct 发票。 如果你的组织向该实体进行跨边界付款，你国家/地区税务机构可能会要求你预扣部分跨边界付款作为预扣税 (WHT) 。 如果在向 Microsoft 汇寄付款时预扣了税务机构所需的税款，本文将说明申请预扣税款的信用的过程。
 
 ## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>对于通过支票或线路支付发票的客户
 

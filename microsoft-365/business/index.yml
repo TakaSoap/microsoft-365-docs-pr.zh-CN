@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365 商业高级版资源
-summary: Microsoft 365 商业高级版（旧称为“Microsoft 365 商业版”）是为员工数少于 300 人的企业提供的综合订阅服务。 它将你常用的 Office 效率类应用和服务和 Microsoft Teams 等协作工具与高级安全和设备管理功能相集成。
+summary: 对于拥有最多 300 名员工的企业，Microsoft 365 商业高级版应用和联机会议Office随时随地提高工作效率。 使用高级安全功能保护业务，使用单个解决方案简化 IT 设置和管理。
 brand: m365
 metadata:
   title: Microsoft 365 商业高级版资源
-  description: 有关设置和运行文档Microsoft 365 商业高级版。
+  description: 有关设置和运行Microsoft 365 商业高级版。
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
@@ -13,22 +13,22 @@ metadata:
     - intro-hub-or-landing
   author: efrene
   ms.author: efrene
-  ms.date: 8/25/2021
+  ms.date: 03/01/2022
 productDirectory:
-  title: 使用 Microsoft 365 商业高级版确保远程工作安全
+  title: 工作效率和安全性与Microsoft 365 商业高级版
   items:
     - title: Watch
       imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
       summary: Microsoft 365 商业高级版的五大优势。
       url: 'https://aka.ms/M365BPvideo'
-    - title: 获取免费的合作伙伴工具包
-      imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: 为需要确保远程工作安全的合作伙伴提供的实用指南和产品上市资源。
-      url: 'https://aka.ms/SMBSecurityKit'
     - title: 新变化？
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: 立即加入 Microsoft Defender for Business 预览版-一款适用于员工少于 300 名的企业的企业级终结点解决方案。
-      url: 'https://aka.ms/MDB-previewblog'
+      summary: 了解 Business 高级版 和 Microsoft 365 Lighthouse 中的新 Defender for Business 功能。
+      url: 'https://aka.ms/SMBsecurityFebBlog'
+    - title: 获取免费的合作伙伴工具包
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
+      summary: 实践指导，并转到用于保护混合工作的合作伙伴的市场资源。
+      url: 'https://aka.ms/SMBSecurityKit'
     - title: 加入合作伙伴网络研讨会系列
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
       summary: 了解如何通过 microsoft Defender for Business 和 Microsoft 365 商业高级版 提高销售Microsoft 365 Lighthouse。
@@ -37,152 +37,88 @@ conceptualContent:
   items:
     - title: 什么是 Microsoft 365 商业高级版？
       links:
-        - url: microsoft-365-business-overview.md
+        - url: ../business-premium/index.md
           itemType: overview
-          text: 概述
+          text: Microsoft 365 商业高级版概述
         - url: ../business-video/index.yml
           itemType: video
-          text: Microsoft 365 商业高级版培训
-        - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
-          itemType: overview
-          text: 比较各计划
+          text: Microsoft 365培训
         - url: 'https://go.microsoft.com/fwlink/?linkid=2164213'
-          itemType: reference
-          text: 服务说明
+          itemType: overview
+          text: 比较Microsoft 365计划方案
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
-          text: 常见问题
+          text: Microsoft 365业务常见问题解答
     - title: 设置 Microsoft 365 商业高级版
       links:
-        - url: ../admin/setup/business-set-up.md
+        - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
-          text: 1. 运行设置向导
-        - url: ../admin/setup/secure-win-10-pcs.md
+          text: 1. 获取 Microsoft 365 商业高级版
+        - url: ../admin/setup/plan-your-setup.md
           itemType: how-to-guide
-          text: 2. 保护计算机安全
-        - url: /MicrosoftTeams/get-started-with-teams-quick-start
-          itemType: video
-          text: 3. 设置 Teams
-        - url: ../admin/setup/install-applications.md
-          itemType: get-started
-          text: 4. 安装 Office
+          text: 2. 规划设置过程
+        - url: ../business-premium/m365bp-setup.md
+          itemType: how-to-guide
+          text: 3. 设置 Microsoft 365 商业高级版
+        - url: ../admin/security-and-compliance/secure-your-business-data.md
+          itemType: how-to-guide
+          text: 4. 保护企业安全Microsoft 365的十大方法
+    - title: 什么是Microsoft 365 Lighthouse？
+      links:
+        - url: ../lighthouse/m365-lighthouse-overview.md
+          itemType: overview
+          text: '合作伙伴Microsoft 365 Lighthouse (概述) '
+        - url: ../lighthouse/m365-lighthouse-sign-up.md
+          itemType: how-to-guide
+          text: 如何注册并成为 Microsoft 云解决方案提供商
+        - url: ../lighthouse/m365-lighthouse-configure-portal-security.md
+          itemType: how-to-guide
+          text: 设置并保护 Lighthouse 门户
+        - url: ../lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview.md
+          itemType: overview
+          text: 使用客户租户的基线
+        - url: ../lighthouse/m365-lighthouse-faq.yml
+          itemType: reference
+          text: Microsoft 365 Lighthouse常见问题解答
     - title: 合作伙伴资源（仅限英语）
       links:
-        - url: 'https://www.microsoft.com/microsoft-365/partners/business'
-          itemType: overview
-          text: 合作伙伴页面
         - url: 'https://aka.ms/M365BPPartnerPlaybook'
-          itemType: download
-          text: 商业高级版合作伙伴手册
-        - url: 'https://aka.ms/bpbdmpitchdeck'
-          itemType: download
-          text: 业务高级版业务决策制定者 (BDM) 平台
-        - url: 'https://aka.ms/bpitdmpitchdeck'
-          itemType: download
-          text: IT 高级版 IT 决策制定者 (IT) 平台
-        - url: 'https://aka.ms/bppartneropportunitydeck'
-          itemType: download
-          text: 业务高级版合作伙伴机会演示
-        - url: 'https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery'
-          itemType: download
-          text: 技术基础知识
-        - url: 'https://aka.ms/SMBSecurityKit'
-          itemType: download
-          text: 安全远程工作工具包
-        - url: 'https://cct.transform.microsoft.com/'
-          itemType: deploy
-          text: 客户咨询工具
-        - url: 'https://vc.transform.microsoft.com/'
-          itemType: learn
-          text: 价值计算器
-    - title: 管理用户
+          itemType: how-to-guide
+          text: 请参阅Microsoft 365 商业高级版手册和准备情况系列
+        - url: 'https://aka.ms/M365MDBseries'
+          itemType: video
+          text: 加入合作伙伴网络研讨会系列！
+        - url: 'https://partner.microsoft.com'
+          itemType: overview
+          text: Microsoft 合作伙伴网络
+        - url: 'https://docs.microsoft.com/partner-center/overview'
+          itemType: overview
+          text: 合作伙伴中心入门
+    - title: 保护公司设备
       links:
-        - url: ../admin/add-users/add-users.md
-          itemType: how-to-guide
-          text: 添加用户
-        - url: /office365/admin/add-users/remove-former-employee
-          itemType: how-to-guide
-          text: 删除用户
-        - url: /office365/admin/add-users/reset-passwords
-          itemType: how-to-guide
-          text: 重置某人的密码
-      footerLink:
-        url: /microsoft-365/admin/
-        text: 查看更多信息
-    - title: 管理威胁
+        - url: ../security/defender-business/mdb-overview.md
+          itemType: overview
+          text: Microsoft Defender for Business 概述
+        - url: ../security/defender-business/mdb-setup-configuration.md
+          itemType: overview
+          text: 设置和配置 Defender for Business
+        - url: ../security/defender-business/compare-mdb-m365-plans.md
+          itemType: overview
+          text: 比较计划中的安全性Microsoft 365
+        - url: ../security/defender-business/mdb-faq.yml
+          itemType: reference
+          text: Defender for Business 常见问题解答
+    - title: 保护电子邮件内容和Office文件
       links:
         - url: ../security/office-365-security/defender-for-office-365.md
           itemType: overview
-          text: 高级威胁防护
-        - url: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
+          text: Microsoft Defender for Office 365
+        - url: ../security/office-365-security/protect-against-threats.md
           itemType: how-to-guide
-          text: 设置 MFA
-        - url: ./increase-threat-protection.md#protect-against-ransomware
-          itemType: how-to-guide
-          text: 防范勒索软件
-        - url: /azure/active-directory/conditional-access/overview
-          itemType: overview
-          text: 条件访问
-      footerLink:
-        url: /microsoft-365/admin/
-        text: 查看更多信息
-    - title: 管理数据
-      links:
-        - url: ../compliance/data-loss-prevention-policies.md
-          itemType: overview
-          text: 数据丢失防护
-        - url: 'https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980'
-          itemType: how-to-guide
-          text: 发送加密电子邮件
-        - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
-          itemType: how-to-guide
-          text: 设置电子邮件保留
-        - url: ../admin/security-and-compliance/set-up-compliance.md
-          itemType: video
-          text: 创建和使用敏感度标签
-      footerLink:
-        url: ../compliance/index.yml
-        text: 查看更多信息
-    - title: 管理设备
-      links:
-        - url: ../admin/devices/view-policies-and-devices.md
-          itemType: how-to-guide
-          text: 计算机和移动设备
-        - url: ../admin/devices/remove-company-data.md
-          itemType: how-to-guide
-          text: 删除公司数据
-        - url: ../admin/devices/reset-devices-to-factory-settings.md
-          itemType: how-to-guide
-          text: 擦除并重置
-        - url: /intune/index
-          itemType: overview
-          text: Intune
-        - url: ../admin/setup/manage-windows-devices.md
-          itemType: how-to-guide
-          text: 设置混合 Azure AD 加入
-        - url: ../admin/setup/access-resources.md
-          itemType: how-to-guide
-          text: 设置 Azure AD 加入
-        - url: /windows/deployment/windows-autopilot/windows-autopilot
-          text: Windows Autopilot
-          itemType: overview
-      footerLink:
-        url: ../admin/setup/manage-windows-devices.md
-        text: 查看更多信息
-    - title: 监视安全
-      links:
-        - url: ../security/defender/microsoft-secure-score.md
-          itemType: how-to-guide
-          text: 安全评分
-        - url: /intune/apps/app-protection-policies-monitor
-          itemType: overview
-          text: Intune 应用保护策略报告
-        - url: ../enterprise/view-service-health.md
-          itemType: how-to-guide
-          text: 运行状况监视警报
-      footerLink:
-        url: ../security/index.yml
-        text: 查看更多信息
+          text: 设置和配置 Defender for Office 365
+        - url: ../security/office-365-security/anti-malware-protection-faq-eop.yml
+          itemType: reference
+          text: Defender for Office 365 FAQ
     - title: 支持和社区
       links:
         - url: 'https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog'
@@ -196,21 +132,18 @@ conceptualContent:
           text: 发送反馈
         - url: 'https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB'
           itemType: overview
-          text: 中小型企业技术社区
+          text: 中小型企业Community技术中心
     - title: 我如何...
       links:
-        - url: ../admin/admin-overview/sign-up-for-office-365.md
-          itemType: get-started
-          text: 注册 Microsoft 365 商业高级版
+        - url: ../admin/manage/find-your-partner-or-reseller.md
+          itemType: how-to-guide
+          text: 查找 Microsoft 合作伙伴来帮助我的业务
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
-          text: 从 Microsoft 365 商业标准版迁移
-        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
+          text: 更改为另一Microsoft 365计划
+        - url: ../admin/setup/migrate-email-and-contacts-admin.md
           itemType: how-to-guide
-          text: 从 Office 365 E3 迁移
-        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
+          text: 将电子邮件和联系人迁移到 Microsoft 365
+        - url: ../admin/get-help-support.md
           itemType: how-to-guide
-          text: 迁移到 Microsoft 365 企业版 E3
-      footerLink:
-        url: ../admin/admin-overview/what-is-microsoft-365.md
-        text: 查看更多信息
+          text: 请联系支持人员Microsoft 365

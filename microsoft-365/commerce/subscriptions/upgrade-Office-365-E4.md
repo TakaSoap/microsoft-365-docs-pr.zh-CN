@@ -2,8 +2,8 @@
 title: 从 E4 Office 365升级
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,30 +14,30 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- customer-email
 - commerce_subscriptions
+- customer-email
 - admindeeplinkMAC
 search.appverid: MET150
 description: 了解如何从 E4 Office 365升级。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c028106e13c12c3d9c702262911a251080cefb6a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 60e7cb7c97255f3588c99a0eb66bc7c8379de8b9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372392"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316333"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>从 E4 Office 365升级
 
-本文将分步介绍从 Office 365 E4 升级到新订阅的过程。 有关从 E4 升级时可用的Office 365的信息，请参阅[E4](important-information-e4.md)客户Office 365重要信息。
+本文将分步说明从 E4 Office 365升级到新订阅的过程。 有关从 E4 升级时可用的Office 365的信息，请参阅 [E4](important-information-e4.md) 客户Office 365重要信息。
 
 > [!IMPORTANT]
 > 本文仅适用于Office 365通过信用卡或发票直接从 Microsoft 购买的所有 E4 订阅。 如果你的订阅是通过其他方式（例如通过合作伙伴或批量许可服务中心）购买的，请联系你的 Microsoft 帐户代表或合作伙伴，以帮助你升级计划。
 
 ## <a name="what-are-my-options-for-how-to-upgrade"></a>我提供了哪些升级选项？
 
-升级计划的最简单方法是使用"升级"选项卡<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心。</a>  但是，并非所有 **情况** 都支持使用"升级"选项卡。 如果您的方案不受支持，您可以手动升级计划。
+升级计划的最简单方法是使用"升级"选项卡<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心。</a> 但是，并非所有 **情况** 都支持使用"升级"选项卡。 如果您的方案不受支持，您可以手动升级计划。
 
 ## <a name="what-is-the-upgrade-tab"></a>什么是"升级"选项卡？
 
@@ -75,7 +75,7 @@ ms.locfileid: "61372392"
 
 在开始之前有必要了解以下些许事项。
 
-- **规划管理停机时间。** 在计划升级期间，Microsoft 365 管理中心管理员无法使用此帐户。 根据您拥有的用户数，升级可能需要几分钟到几小时。 建议在无需使用 Microsoft 365 管理中心 进行更新时进行升级。
+- **规划管理停机时间。** 在计划升级期间Microsoft 365 管理中心管理员无法使用此帐户。 根据您拥有的用户数，升级可能需要几分钟到几小时。 建议在无需使用 Microsoft 365 管理中心 进行更新时进行升级。
 
     升级计划期间，用户不会遇到任何服务中断，他们继续在升级过程中具有对 E4 订阅的完全访问权限。 升级完成后，用户有权访问新计划。
 - **用户、许可证、帐单和自定义域。** 若要了解升级过程中如何处理用户和许可证、升级计划如何影响计费以及如何处理自定义域，请参阅升级计划和计费有何 [影响？](upgrade-to-different-plan.md#what-does-upgrading-a-plan-do-to-my-service-and-billing)
@@ -86,12 +86,12 @@ ms.locfileid: "61372392"
 1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 2. 选择你的 Office 365 E4 订阅。
 3. 在订阅详细信息页面上，选择"升级 **"** 选项卡。
-4. 找到你想要购买的订阅， **然后选择升级**。
-5. 在" **购物车** "页上，验证一切是否正确。 选择是按月还是按年支付，并验证数量下的 **许可证数量**。
+4. 找到要购买的订阅，然后选择"升级 **"**。
+5. 在" **购物车** "页上，验证一切是否正确。 选择是按月还是按年支付，并验证数量下的许可证 **数量**。
     > [!NOTE]
-    > 还会列出与 E4 Office 365关联的任何附加Office 365 额外文件存储空间订阅，例如 Office 365 额外文件存储空间订阅。 但是，如果你有要升级到的订阅中包含的任何附加订阅，我们将删除它们。
-6. 查看订单后，选择" **转到"以签出**。
-7. 在"**签出"** 页上，按此顺序查看 **"已销售到**"、**计费到****和"项目"。** 选择 **其中** 任何一项旁边的"更改"以编辑信息。
+    > 还会列出与你的 Office 365 E4 订阅关联的任何Office 365 额外文件存储空间订阅。 但是，如果你有要升级到的订阅中包含的任何附加订阅，我们将删除它们。
+6. 查看订单后，选择" **转到结帐"**。
+7. 在"**签出**"页上，按此顺序查看 **"** 销售对象"、计费对象 **和项目**。 选择 **其中** 任何一项旁边的"更改"以编辑信息。
     > [!NOTE]
     > 使用发票作为付款方式的选项仅适用于超过特定成本金额的订单。 如果需要核实信用，选择发票付款选项可以将升级过程延迟最多两个工作日。
 8. 完成后，选择下 **订单**。
@@ -122,9 +122,9 @@ ms.locfileid: "61372392"
 > 如果选择通过发票支付新订阅，可能需要核实信用。 最多可能需要两个工作日，订阅才可用。
 
 1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 从"**订阅状态"** 下拉列表中，选择"活动 **"。**
-3. 确保显示新订阅，并且许可证数量与在 E4 中Office 365相同。
-4. 如果你需要购买更多许可证，请按照购买或删除订阅许可证 [中的步骤操作](../licenses/buy-licenses.md)。
+2. 从" **订阅状态"** 下拉列表中，选择"活动 **"**。
+3. 请确保显示新订阅，并且许可证数量与在 E4 中Office 365相同。
+4. 如果你需要购买更多许可证，请按照购买 [或删除订阅许可证中的步骤操作](../licenses/buy-licenses.md)。
 
 ### <a name="step-3-reassign-licenses-to-users"></a>步骤 3：向用户重新分配许可证
 

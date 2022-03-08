@@ -10,19 +10,19 @@ audience: ITPro
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
-ms.openlocfilehash: 89170c4479af29e9a4b3f46fa3b44ae2fcfa5500
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: aee590f7479119ee7e8679b1048a691f156ccc77
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444613"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315073"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
-您的网关连接到 Microsoft 托管桌面 [服务Microsoft Endpoint Manager。](https://endpoint.microsoft.com/) 如果你不熟悉此门户的设备管理功能，请参阅Microsoft Endpoint Manager[文档](/mem/)。
+您的网关将Microsoft 托管桌面服务[Microsoft Endpoint Manager](https://endpoint.microsoft.com/)。 如果你不熟悉此门户的设备管理功能，请参阅Microsoft Endpoint Manager[文档](/mem/)。
 
 > [!NOTE]
-> 在[Microsoft Endpoint Manager](https://endpoint.microsoft.com/)支持以下浏览器：
+> 此外[Microsoft Endpoint Manager](https://endpoint.microsoft.com/)支持以下浏览器：
 > - Microsoft Edge（最新版本）
 > - Safari（最新版本，仅限 Mac）
 > - Chrome（最新版本）
@@ -30,9 +30,9 @@ ms.locfileid: "62444613"
 
 管理帐户将需要特定权限才能访问Microsoft 托管桌面管理Microsoft Endpoint Manager。
 
-可以使用基于角色的访问控制在组织中管理对这些功能的管理员访问权限。 多个Azure Active Directory (Azure AD) 管理员角色和内置Microsoft 托管桌面角色可用于更精细地控制管理门户中Microsoft 托管桌面功能。 有关角色Azure Active Directory，请参阅Azure AD[角色](/azure/active-directory/roles/permissions-reference)。
+可以使用基于角色的访问控制在组织中管理对这些功能的管理员访问权限。 多个Azure Active Directory (Azure AD) 管理员角色和内置 Microsoft 托管桌面 角色可用于更精细地控制 Microsoft 托管桌面 管理门户中的不同功能。 有关角色Azure Active Directory，请参阅Azure AD[角色。](/azure/active-directory/roles/permissions-reference)
 
-与Azure AD各种 Microsoft 产品和服务的管理员角色不同，内置角色特定于 Microsoft 托管桌面 并且仅保证访问此服务的管理员功能。 管理员可以将内置角色单独分配给用户，也可以结合使用Azure AD管理员角色向现有管理员Microsoft 托管桌面管理员权限。
+与Azure AD各种 Microsoft 产品和服务的管理员角色不同，内置角色特定于 Microsoft 托管桌面 并且仅保证访问此服务的管理员功能。 管理员可以将内置角色单独分配给用户，或结合使用Azure AD管理员角色向Microsoft 托管桌面管理员帐户添加管理员权限。
 
 ## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Azure Active Directory具有访问权限Microsoft 托管桌面角色
 
@@ -41,7 +41,7 @@ ms.locfileid: "62444613"
 | 全局管理员 | 具有此角色的 **管理员将拥有** 对管理门户中所有功能的Microsoft 托管桌面权限。 |
 | 全局读取者 | 具有此角色的管理员将拥有对管理 **门户** 中所有功能的只读Microsoft 托管桌面权限。 |
 | Intune 服务管理员 | 具有此角色的 **管理员将在管理** 门户中对与安全不相关的功能Microsoft 托管桌面权限。 |
-| 服务支持管理员 | 具有此角色的管理员将具有对与安全不相关的功能的只读权限，以及管理支持请求（包括 Microsoft 托管桌面 管理门户中的升级请求）的写入权限。 |
+| 服务支持管理员 | 具有此角色的管理员将具有对与安全不相关的功能的只读权限，并且具有写入权限来管理支持请求（包括 Microsoft 托管桌面 管理门户中的升级请求）。 |
 | 安全管理员 | 具有此角色的管理员将拥有针对所有功能的只读权限，并且对管理门户中安全相关Microsoft 托管桌面写入权限。 |
 | 安全读取者 |具有此角色的管理员将拥有对管理 **门户** 中所有功能的只读Microsoft 托管桌面权限。 |
 
@@ -57,7 +57,7 @@ ms.locfileid: "62444613"
 | 内置角色 | Microsoft 托管桌面权限 |
 | ----- | ----- |
 | Microsoft 托管桌面服务管理员 | 分配给用户时，此角色授予管理员对Microsoft 托管桌面管理门户中与安全不相关的Microsoft 托管桌面权限。 |
-| Microsoft 托管桌面 Service Reader | 在分配给用户时，此角色为管理员提供只读权限，Microsoft 托管桌面管理门户中与安全Microsoft 托管桌面功能。 |
+| Microsoft 托管桌面 Service Reader | 分配给用户时，此角色授予管理员只读权限，Microsoft 托管桌面管理门户中与安全Microsoft 托管桌面功能。 |
 | Microsoft 托管桌面安全管理器 | 分配给用户时，此角色仅向管理员授予对管理门户中与安全相关的功能的Microsoft 托管桌面权限。 |
 | Microsoft 托管桌面支持合作伙伴 |分配给用户时，此角色仅向管理员授予创建和管理提升请求的读取和写入权限，并支持合作伙伴在 Microsoft 托管桌面 管理门户中参与的提升请求。 |
 
@@ -101,7 +101,7 @@ ms.locfileid: "62444613"
 1. 部署并分配 [Intune 公司门户](company-portal.md)。
 1. [分配许可证](assign-licenses.md)。
 1. [部署应用](deploy-apps.md)。
-1. [设置设备](set-up-devices.md)。
+1. [准备设备](prepare-devices.md)。
 1. 设置 [使用 Autopilot 和注册状态页的首次运行体验](esp-first-run.md)。
 1. [启用用户支持功能](enable-support.md)。
 1. [让用户做好使用设备的准备](get-started-devices.md)。

@@ -22,16 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 加强组织对密码攻击的防护，禁用常见密码并启用基于风险的多重身份验证。
-ms.openlocfilehash: a77d6a157c3691739ee7f5a024796f1f203241e8
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 46e6c4ba163df0693630896b8db17b4eefe9828a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805888"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312572"
 ---
 # <a name="password-policy-recommendations"></a>密码策略建议
 
 作为组织的管理员，你负责为组织中的用户设置密码策略。 设置密码策略可能很复杂且令人困惑，因而本文提供了帮助组织更安全地抵御密码攻击的建议。
+
+Microsoft 仅限云的帐户具有无法更改的预定义密码策略。 唯一可以更改的项目是密码过期的天数，以及密码是否过期。 
   
 要决定 Microsoft 365 密码在你组织中过期的频率，请参阅[设置 Microsoft 365 的密码过期策略](../manage/set-password-expiration-policy.md)。
 

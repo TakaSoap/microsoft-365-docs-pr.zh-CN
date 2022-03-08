@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 10a184e6ce36129a84197cc02caae3b96625e39a
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: a9a17c6e336704cfe09e1c864e9700a4492e8c87
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530906"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328017"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -38,10 +38,10 @@ ms.locfileid: "61530906"
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
 
-高级 `DeviceTvmSoftwareInventory` 搜寻架构中的表包含&设备上当前[](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)安装的软件的威胁和漏洞管理清单，包括停止提供支持信息。 例如，可以搜寻涉及使用当前易受攻击的软件版本安装的设备的事件。 使用此参考来构建从该表返回信息的查询。
+高级`DeviceTvmSoftwareInventory`搜寻架构中的表包含&设备上当前[](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)安装的软件的威胁和漏洞管理清单，包括停止提供支持信息。 例如，可以搜寻涉及使用当前易受攻击的软件版本安装的设备的事件。 使用此参考来构建从该表返回信息的查询。
 
 >[!NOTE]
-> 和 `DeviceTvmSoftwareInventory` `DeviceTvmSoftwareVulnerabilities` 表已替换 `DeviceTvmSoftwareInventoryVulnerabilities` 表。 前两个表一起包含更多列，可用于帮助通知 vulnerablity 管理活动或搜寻易受攻击的设备。
+> `DeviceTvmSoftwareVulnerabilities`和 `DeviceTvmSoftwareInventory` 表已替换表`DeviceTvmSoftwareInventoryVulnerabilities`。 前两个表一起包含更多列，可用于帮助通知 vulnerablity 管理活动或搜寻易受攻击的设备。
 
 有关高级搜寻架构中其他表的信息，请参阅[高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -55,9 +55,9 @@ ms.locfileid: "61530906"
 | `SoftwareVendor` | `string` | 软件供应商的名称 |
 | `SoftwareName` | `string` | 软件产品的名称 |
 | `SoftwareVersion` | `string` | 软件产品版本号 |
-| `EndOfSupportStatus` | `string` | 指示软件产品的生命周期阶段（相对于其指定的 EOS (停止) 或生命周期结束 (EOL) 日期 |
-| `EndOfSupportDate` | `string` | 在软件产品 (EOS) 或生命周期 () 停止支持 |
-
+| `EndOfSupportStatus` | `string` | 指示软件产品的生命周期阶段（相对于其指定的停止支持终止 (EOS) 或生命周期 (EOL) 日期 |
+| `EndOfSupportDate` | `string` | 软件产品 (EOS) 或生命周期结束 (EOL) 结束日期 |
+| `ProductCodeCpe` | `string` | 软件产品的 CPE 或没有 CPE 的"不可用" |
 
 
 ## <a name="related-topics"></a>相关主题

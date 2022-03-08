@@ -2,8 +2,8 @@
 title: 使用产品密钥向订阅添加许可证或延长付费订阅
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_licensing
 - TopSMBIssues
 - AdminSurgePortfolio
-- commerce_licensing
 search.appverid: MET150
 description: 了解如何使用产品密钥向订阅添加许可证或扩展订阅。
 ROBOTS: NOINDEX
 ms.date: 04/07/2021
-ms.openlocfilehash: e9fed54eb7006906e7d54888709c14cdbff8a903
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 4d14f00115059cf28cff71ac126b1f0fdfbb3890
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370952"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311854"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>使用产品密钥向订阅添加许可证或延长付费订阅
 
@@ -48,8 +48,8 @@ ms.locfileid: "61370952"
 ::: moniker-end
 
 2. 在 **"产品** "选项卡上，选择要添加许可证的订阅。
-3. On the subscription details page， in the **Licenses** section， select **Add more licenses**.
-4. 在"**添加更多许可证"窗格中**，**选择"使用新的和未使用的** 产品密钥"，然后选择"下一 **步"。**
+3. 在订阅详细信息页面上的"许可证 **"部分，** 选择" **添加更多许可证"**。
+4. 在" **添加更多许可证"窗格中**， **选择"使用新的和未使用的** 产品密钥"，然后选择"下一步 **"**。
 5. 输入产品密钥，然后选择下一 **步**。
     > [!NOTE]
     > 如果有多个产品密钥，可以选择" **添加其他产品密钥**"以输入产品密钥。
@@ -68,8 +68,8 @@ ms.locfileid: "61370952"
 ::: moniker-end
 
 2. 在 **"产品** "选项卡上，选择要扩展的订阅。
-3. On the subscription details page， in the **Subscription and payment settings** section， select Extend end **date**.
-4. 在"**续订或添加用户许可证"页上**，选择 **"使用新的和未使用的** 产品密钥"，然后选择"下一步 **"。**
+3. 在订阅详细信息页面上的"订阅 **和** 付款设置"部分，选择" **延长结束日期"**。
+4. 在" **续订或添加用户许可证"页上** ，选择 **"使用新的和未使用的** 产品密钥"，然后选择"下一步 **"**。
 5. 输入产品密钥，然后选择下一 **步**。
     > [!NOTE]
     > 如果有多个产品密钥，可以选择" **添加其他产品密钥**"以输入产品密钥。

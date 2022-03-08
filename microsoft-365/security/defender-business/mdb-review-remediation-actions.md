@@ -1,5 +1,5 @@
 ---
-title: '查看 Microsoft Defender for Business 预览版 (修正) '
+title: 查看 Microsoft Defender for Business 中的修正操作
 description: 查看自动采取的修正或在操作中心等待审批的修正
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,17 +17,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: f1128b5fd9c27845bebbd4b6a0b45f93c5f3e0c6
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 5a0fed3ebdb3c7b7275425c24288efab293d6a6d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464543"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322949"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>查看操作中心中的修正操作
 
 > [!IMPORTANT]
-> Microsoft Defender for Business 现在为预览版，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 我们将于未来几周内载入一组初始客户和合作伙伴，并扩大预览版本，从而一般可用。 请注意，预览将启动 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 从 2022 年 3 月 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
@@ -38,6 +38,7 @@ ms.locfileid: "62464543"
 **本文介绍**：
 
 - [如何使用操作中心](#how-to-use-the-action-center)
+
 - [修正操作](#remediation-actions)
 
 >
@@ -57,7 +58,7 @@ ms.locfileid: "62464543"
 
 ## <a name="remediation-actions"></a>修正操作
 
-Microsoft Defender for Business (预览) 包括一些修正操作。 这些操作包括手动响应操作、自动调查后的操作和实时响应操作。
+Microsoft Defender for Business 包括若干修正操作。 这些操作包括手动响应操作、自动调查后的操作和实时响应操作。
 
 下表列出了可用的修正操作：
 
@@ -69,6 +70,6 @@ Microsoft Defender for Business (预览) 包括一些修正操作。 这些操�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [响应和缓解 Microsoft Defender for Business 预览版 (中的威胁) ](mdb-respond-mitigate-threats.md)
+- [响应和缓解 Microsoft Defender for Business 中的威胁](mdb-respond-mitigate-threats.md)
 
-- [在 Microsoft Defender for Business 预览版中 (设备) ](mdb-manage-devices.md)
+- [在 Microsoft Defender for Business 中管理设备](mdb-manage-devices.md)

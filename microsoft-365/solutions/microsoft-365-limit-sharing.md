@@ -19,15 +19,16 @@ f1.keywords: NOCSH
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 recommendations: false
 description: 了解在 Microsoft 365 中用于限制或禁用共享的选项。
-ms.openlocfilehash: a34a1a457ed9c53f6393d65617f8ac0d9e611209
-ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
+ms.openlocfilehash: b2e327d5a5c670ada389a3dfceb2775e516ac2aa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "61660162"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323467"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>限制 Microsoft 365 中的共享
 
@@ -110,12 +111,13 @@ ms.locfileid: "61660162"
 可通过为相应网站允许或阻止域，将网站共享限制为指定域。
 
 按域限制网站共享
-1. 在 SharePoint 管理中心中的“**网站**”下，单击“**活动站点**”。
-2. 单击要配置的网站。
-3. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
+
+1. 在 SharePoint 管理中心的"**网站"** 下，选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**活动网站**</a>。
+2. 选择要配置的网站。
+3. 在"**策略**"选项卡上的"**外部共享"下** 选择"**编辑**"。
 4. 在“**外部共享的高级设置**”下，选中“**按域限制共享**”。
-5. 添加你想要允许或阻止的域，然后单击“**保存**”。
-6. 单击“**保存**”。
+5. 添加要允许或阻止的域，然后选择 **保存**。
+6. 选择“保存”。
 
     ![允许的域网站级别设置的屏幕截图。](../media/limit-site-sharing-by-domain.png)
 
@@ -144,18 +146,19 @@ ms.locfileid: "61660162"
 如果想要阻止与组织外部的人员共享 SharePoint 或 OneDrive 文件和文件夹，可针对整个组织或单个网站关闭来宾共享。
 
 针对组织关闭 SharePoint 来宾共享
-1. 在 SharePoint 管理中心中的“**策略**”下，单击“**共享**”。
+
+1. 在 SharePoint 管理中心的"**策略"** 下，选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共享**</a>。
 2. 在“**外部共享**”下，将 SharePoint 滑块向下拖动到“**仅限组织中的人员**”。
-3. 单击“**保存**”。
+3. 选择“保存”。
 
     ![将 SharePoint 组织级别共享设置设为面向所有人的屏幕截图。](../media/sharepoint-tenant-sharing-off.png)
 
 
 针对网站关闭来宾共享
-1. 在 SharePoint 管理中心中的“**网站**”下，单击“**活动站点**”。
-2. 单击要配置的网站。
-3. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
-4. 在“**外部共享**”下，选择“**仅限组织中的人员**”，然后单击“**保存**”。
+1. 在 SharePoint 管理中心的"**网站"** 下，选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**活动网站**</a>。
+2. 选择要配置的网站。
+3. 在"**策略**"选项卡上的"**外部共享"下** 选择"**编辑**"。
+4. 在 **外部共享** 下，选择"仅 **组织中的人员**"，然后选择"**保存**"。
 
     ![将 SharePoint 网站级别共享设置设为仅面向组织中的人员的屏幕截图。](../media/sharepoint-site-external-sharing-settings-off.png)
 
@@ -164,17 +167,19 @@ ms.locfileid: "61660162"
 如果想要允许与组织外部的人员共享，但要确保每个人都进行身份验证，可以针对整个组织或单个网站禁用 *任何人*（匿名共享）链接。
 
 在组织级别关闭 *任何人* 链接
-1. 在 SharePoint 管理中心中的“**策略**”下，单击“**共享**”。
+
+1. 在 SharePoint 管理中心的"**策略"** 下，选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共享**</a>。
 2. 在“**外部共享**”下，将 SharePoint 滑块向下拖动到“**新来宾和现有来宾**”。
-3. 单击“**保存**”。
+3. 选择“保存”。
 
     ![将 SharePoint 组织级别共享设置设为面向新来宾和现有来宾的屏幕截图。](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
 关闭站点的 *“任何人”* 链接
-1. 在 SharePoint 管理中心中的“**网站**”下，单击“**活动站点**”。
-2. 单击要配置的网站。
-3. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
-4. 在“**外部共享**”下，选择“**新来宾和现有来宾**”，然后单击“**保存**”。
+
+1. 在 SharePoint 管理中心的"**网站"** 下，选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**活动网站**</a>。
+2. 选择要配置的网站。
+3. 在"**策略**"选项卡上的"**外部共享"下** 选择"**编辑**"。
+4. 在 **外部共享** 下，选择"**新建和现有来宾**"，然后选择"**保存**"。
 
     ![将 SharePoint 网站级别共享设置设为面向新设置和现有设置的屏幕截图。](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
 

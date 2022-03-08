@@ -1,5 +1,5 @@
 ---
-title: 测试准确数据匹配敏感信息类型
+title: 测试基于精确数据匹配的敏感信息类型
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: 配置服务
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3030a97e3ed80524d2170e74b3d35f897b6ed74c
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 9b3171a0bcd30ec448d23a4b94a227aff9a9fb34
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914745"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320909"
 ---
-# <a name="test-an-exact-data-match-sensitive-information-type"></a>测试准确数据匹配敏感信息类型
+# <a name="test-an-exact-data-match-sensitive-information-type"></a>测试基于精确数据匹配的敏感信息类型
 
 在创建了准确数据匹配 (EDM) 敏感信息类型 (SIT) 后，在验证敏感信息表已完成上载和编制索引后一小时，您可以通过使用合规性中心的敏感信息类型部分中的测试函数测试它是否检测到要检测的信息。
  
@@ -32,15 +32,15 @@ ms.locfileid: "60914745"
 
 ## <a name="test-your-edm-sit-in-the-compliance-center"></a>在合规中心测试 EDM SIT
 
-1. 打开 **合规中心**  >  **数据分类**  >  **敏感信息类型**。
+1. Open **Compliance centerData** >  **classificationSensitive** >  Information Types.
 
-2. 从列表中选择 EDM SIT，然后在飞 **出窗格中** 选择"测试"。 此选项仅存在于 敏感信息类型下的 SIT 中。
+2. 从列表中选择 EDM SIT，然后在飞 **出窗格中** 选择"测试"。 此选项仅在敏感信息类型下存在。
  
-3. Upload包含要检测的数据的项。 例如，创建包含敏感信息表中行子集的项。 如果在架构中使用了可配置的匹配功能来定义忽略的分隔符，请确保该项包含包含和不带这些分隔符的示例。
+3. Upload包含要检测的数据的项。 例如，创建一个包含敏感信息表中行子集的项。 如果在架构中使用了可配置的匹配功能来定义忽略的分隔符，请确保该项包含包含和不带这些分隔符的示例。
 
 4. 上传并扫描文件后，检查 EDM SIT 的匹配项。
 
-5. 如果 **SIT** 中的 Test 函数检测到匹配项，请验证它未进行剪裁或提取不正确。 例如，通过仅提取它应检测的完整字符串的子字符串，或仅选取多词字符串中的第一个单词，或在提取中添加额外的符号或字符。 有关 [正则表达式语言参考，](/dotnet/standard/base-types/regular-expression-language-quick-reference) 请参阅正则表达式语言 - 快速参考。 
+5. 如果 **SIT 中的 Test** 函数检测到匹配项，请验证它未进行剪裁或提取不正确。 例如，通过仅提取应检测的完整字符串的子字符串，或仅选取多词字符串中的第一个单词，或在提取中添加额外的符号或字符。 有关 [正则表达式语言参考，](/dotnet/standard/base-types/regular-expression-language-quick-reference) 请参阅正则表达式语言 - 快速参考。 
 
 5. 或者，您可以使用以下 PowerShell cmdlet：
 
@@ -51,7 +51,7 @@ Test-DataClassification  -ClassificationNames “[Your EDM sensitive info type]�
 > [!NOTE]
  创建或编辑 EDM 敏感信息类型或 EDM 类型所基于的主 SIT 时，将针对与新定义匹配的文本对在更改后修改的所有新内容和内容进行爬网，但在修改或重新建立索引之前，不会对预先不存在的内容进行爬网。 
 
-若要强制对 SharePoint 网站或库或 OneDrive 中的现有内容进行重新爬网，请按照手动请求对网站、库或列表进行爬网和重新编制索引中的说明[操作](/sharepoint/crawl-site-content)。
+若要强制对 SharePoint 网站或库或 OneDrive 中的现有内容进行重新爬网，请按照手动请求对网站、库或列表进行爬网和重新[](/sharepoint/crawl-site-content)索引中的说明操作。
 
 ## <a name="test-your-edm-sit-in-mip-policies"></a>在 MIP 策略中测试 EDM SIT
 
@@ -73,27 +73,17 @@ Test-DataClassification  -ClassificationNames “[Your EDM sensitive info type]�
 
 ## <a name="troubleshooting-tips"></a>疑难解答提示
 
-如果找不到任何匹配项，请尝试执行以下操作：
+如果找不到任何匹配项，以下是一些疑难解答提示。
 
-- 使用使用 EDM 工具上载敏感数据的指南中介绍的命令确认敏感数据已正确上载。
 
-- 检查在项中输入的示例是否存在于敏感信息表中，以及忽略的分隔符是否正确。
-
-- 测试在每个模式中配置主元素时所使用的 SIT。 这将确认 SIT 能够匹配项中的示例。 将错误定义的 SIT 用作 EDM 敏感信息类型的分类元素是 EDM 中检测失败的最常见原因。 
-
-- 如果为 EDM 类型中的主元素选择的 SIT 在项中找不到匹配项或找到的匹配项数低于预期，请检查它是否支持内容中的分隔符和分隔符。 请务必在架构中包括定义的忽略分隔符。
-
-- 如果 Test 函数完全检测不到任何内容，请检查所选的 SIT 是否包含其他关键字或其他验证的要求。 对于内置 SIT，请参阅敏感信息类型 [实体](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) 定义，以验证匹配每种类型的最低要求。
-
-- 如果"测试"功能有效，但您的 SharePoint 或 OneDrive 项未在 DLP 或自动标记规则中检测到，请检查内容资源管理器中是否显示您预期匹配的文档。 如果不存在，请记住，仅在敏感信息类型更改后创建的内容将显示为匹配项。 您必须对网站和库进行重新爬网，以显示预先存在的项。 有关[对网站、](/sharepoint/crawl-site-content)库或列表进行重新爬网的详细信息，请参阅手动请求对网站、库或SharePoint OneDrive。 
-
-- 如果未触发需要多个匹配的 DLP 或自动标记规则，请检查是否满足 EDM 类型和基本敏感信息类型的邻近度要求。 例如，如果主元素和支持关键字之间的最大距离为 300 个字符，但关键字仅存在于长表的第一行中，则只有前几行匹配值符合邻近度要求。 修改 SIT 定义以支持更宽松的邻近规则，或者将文档选项中的任意位置用于其他证据条件。 
-
-- 如果 EDM 类型的检测不一致或错误，请检查用作 EDM 类型中主元素基础的敏感信息类型是否未检测不必要的内容。 使用与太多不相关的内容（如任何单词、数字）匹配的 SIT，所有电子邮件地址都可能导致服务饱和并忽略相关匹配。 在内容资源管理器中检查与用于主要元素的敏感类型匹配的内容片段数。 若要估计 SIT 是否匹配太多内容：
-    1. 将内容资源管理器中的内容项数除以创建敏感类型以来的天数。
-    2. 如果每天的匹配数在数十万或数百万之间，则主 SIT 可能过于广泛。 有关 [为](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) EDM 类型选择正确的敏感信息类型的建议和最佳做法，请参阅了解基于准确数据匹配的敏感信息类型。 
-
-- 使用哈希中介绍的命令确认你的敏感数据已正确上载，并上传敏感信息源 [表，了解准确数据匹配敏感信息类型](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)。
-
-- 如果为 EDM 类型中的主元素选择的 SIT 在项中找不到匹配项或找到的匹配项数低于预期，请检查它是否支持内容中的分隔符和分隔符。 请务必在架构中包括定义的忽略分隔符。 
-
+|问题  |疑难解答提示  |
+|---------|---------|
+|未找到匹配项     |  使用哈希中介绍的命令确认敏感数据已正确上载，并上传敏感信息源表，了解 [准确数据匹配敏感信息类型](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|
+|未找到匹配项   | 测试在每个模式中配置主元素时所使用的 SIT。 这将确认 SIT 能够匹配项中的示例。 将错误定义的 SIT 用作 EDM 敏感信息类型的分类元素是 EDM 中检测失败的最常见原因。         |
+|为 EDM 类型中的主元素选择的 SIT 在项中找不到匹配项或找到的匹配项数低于预期    |  检查是否支持内容中的分隔符和分隔符。 请务必在架构中包括定义的忽略分隔符。       |
+|主元素 SIT 在项中查找匹配项，但 EDM SIT 找不到匹配项。     | - 检查 REGEX 语句以开始或结束捕获空格分隔符，如 /s。 空格与数据表中的哈希值不匹配。 请改为使用类似 /b 的单词分隔符。 </br> - 检查 REGEX 语句以确保它们捕获你想要捕获的整个字符串，而不只是一个子字符串。 例如，电子邮件地址的此模式 [a-zA-Z]{30}@[a-zA-Z]{20}[[a-zA-Z]{2,3} 将匹配 *user@contoso.com* 和 *user@contoso.co.jp*。  |
+|具有主要元素且未定义辅助元素的 EDM SIT 在需要主元素和辅助元素时检测项目，但不检测或检测不到预期数。  | 确保辅助证据的值由一个不包含空格的字词或字符串组成，或使用检测多词字符串的 REGEX 语句。 例如，\b[A-Z][a-z]{1,25} ([ -][A-Z][a-z]{1,25}) {0,4}\b，它将匹配以大写字符开头的一到五个连续单词的任何序列。 使用此 SIT 作为 EDM 敏感信息类型 XML 中其他证据条件的分类元素。 请参阅 [手动创建规则包](sit-get-started-exact-data-match-create-rule-package.md#create-a-rule-package-manually)|
+|SIT 测试函数不会检测任何匹配项。   | 检查所选的 SIT 是否包含其他关键字或其他验证的要求。 对于内置 SIT，请参阅 [敏感信息类型实体](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) 定义，以验证匹配每种类型的最低要求。        |
+|测试功能有效，但SharePoint或OneDrive DLP 或自动标记规则中检测项目     | 检查内容资源管理器中是否显示预期匹配的文档。 如果不存在，请记住，仅在敏感信息类型更改后创建的内容将显示为匹配项。 您必须对网站和库重新进行crawl，以显示预先存在的项。 请参阅[手动请求对网站](/sharepoint/crawl-site-content)、库或列表进行爬网和重新索引，了解有关重新爬网SharePoint和OneDrive。        |
+|不触发需要多个匹配的 DLP 或自动标记规则     |检查是否满足 EDM 类型和基本敏感信息类型的邻近度要求。 例如，如果主元素和支持关键字之间的最大距离为 300 个字符，但关键字仅存在于长表的第一行中，则只有前几行匹配值符合邻近度要求。 修改 SIT 定义以支持更宽松的邻近规则，或者将文档选项中的任意位置用于其他证据条件。         |
+|检测 EDM 类型不一致或错误     |检查用作 EDM 类型中主元素基础的敏感信息类型是否未检测不必要的内容。 使用与太多不相关的内容（如任何单词、数字或所有电子邮件地址）匹配的 SIT 可能会导致服务饱和并忽略相关匹配。 在内容资源管理器中检查与用于主要元素的敏感类型匹配的内容片段数。 </br> 若要估计 SIT 是否匹配太多内容： </br> - 将内容资源管理器中的内容项数除以创建敏感类型以来的天数。 </br> - 如果每天的匹配数在数十万或数百万之间，则主 SIT 可能过于广泛。 有关 [为](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) EDM 类型选择正确的敏感信息类型的建议和最佳做法，请参阅了解基于准确数据匹配的敏感信息类型。         |

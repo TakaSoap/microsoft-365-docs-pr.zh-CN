@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 81fdf04686f62acf3a2acce7e1bb400fe1d51aaa
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 2837b6009c143ea724d8c13d2548eeeca80e431d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904069"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321315"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>步骤 2. 修正第一个事件
 
@@ -36,9 +36,9 @@ ms.locfileid: "62904069"
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender不仅提供检测和分析功能，而且还提供恶意软件的控制和攻击。 抑制包括减少攻击影响的步骤，同时确保从网络中删除攻击者活动的所有跟踪。 Microsoft 365 Defender提供几个修正操作，可配置为根据受影响设备的操作系统和攻击[](m365d-autoir.md)类型进行自动修正。
+Microsoft 365 Defender不仅提供检测和分析功能，还提供恶意软件的抑制和攻击。 抑制包括减少攻击影响的步骤，同时确保从网络中删除攻击者活动的所有跟踪。 Microsoft 365 Defender提供几个修正操作，可配置为根据受影响设备的操作系统和攻击[](m365d-autoir.md)类型进行自动修正。
 
-Microsoft 365 Defender分析员可以手动启动的几个修正操作。 操作分为两类：设备上操作和文件操作。 某些操作可用于立即停止威胁，而其他操作有助于进一步取证分析。
+Microsoft 365 Defender分析人员可以手动启动的几个修正操作。 操作分为两类：设备上操作和文件操作。 某些操作可用于立即停止威胁，而其他操作有助于进一步取证分析。
 
 ## <a name="actions-on-devices"></a>对设备执行的操作
 
@@ -48,7 +48,7 @@ Microsoft 365 Defender分析员可以手动启动的几个修正操作。 操作
 - **启动自动调查** - 可以在设备上启动新的通用自动调查。 当调查正在运行时，从设备生成的其他任何警报都将添加到正在进行的自动调查，直到完成该调查。 此外，如果在其他设备上看到相同的威胁，则这些设备将添加到调查。
 - **启动实时响应** - 实时响应是一项功能，可让你使用远程 shell 连接即时访问设备。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。 实时响应旨在通过让你能够收集取证数据、运行脚本、发送可疑实体进行分析、修正威胁和主动搜寻新出现的威胁来增强调查。
 - **收集调查** 包 - 作为调查或响应过程的一部分，你可以从设备收集调查包。 通过收集调查包，你可以确定设备的当前状态，并进一步理解攻击者使用的工具和技术。 
-- 咨询 **威胁** 专家 (设备和文件) - 你可以咨询 Microsoft 威胁专家，了解有关可能受到威胁的设备或已受到威胁的设备的更多见解。 Microsoft 威胁专家可以直接在内部参与Microsoft 365 Defender及时准确的响应。 
+- 咨询 **威胁** 专家 (和文件) 的操作中提供 - 你可以咨询 Microsoft 威胁专家，了解有关可能受到威胁的设备或已受到威胁的设备的更多见解。 Microsoft 威胁专家可以直接在内部参与Microsoft 365 Defender及时准确的响应。 
 
 ## <a name="actions-on-files"></a>对文件执行的操作
 
@@ -60,7 +60,7 @@ Microsoft 365 Defender分析员可以手动启动的几个修正操作。 操作
 继续检测、 [会审](first-incident-analyze.md#analyze-your-first-incident)和分析事件中的示例，分析员可以使用以下操作修正此事件：
 
 1. 立即重置用户帐户密码
-2. 在深度分析Microsoft 365 Defender隔离设备
+2. 在深入分析Microsoft 365 Defender隔离设备
 3. 确保恶意文件被隔离SharePoint
 4. 检查哪些终结点受恶意软件影响
 5. 重新生成系统
@@ -81,7 +81,7 @@ Microsoft 365 Defender分析员可以手动启动的几个修正操作。 操作
 - 禁用帐户之前请求管理员操作
 - 禁用恶意收件箱规则
 
-Playbook 使用Power Automate创建自定义机器人流程自动化流，以在触发特定条件后自动执行某些活动。 组织可以从现有模板或从头开始创建游戏手册。 
+Playbook 使用Power Automate创建自定义自动化流程自动化流，以在触发特定条件后自动执行某些活动。 组织可以从现有模板或从头开始创建游戏手册。 
 
 下面是一个示例。
  

@@ -2,8 +2,8 @@
 title: 使用计费配置文件支付订阅费用
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,16 +16,16 @@ ms.collection:
 search.appverid: MET150
 description: 了解哪些付款选项可用于通过计费配置文件为订阅付费。
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 ms.date: 10/29/2021
-ms.openlocfilehash: 8e7e53ae188a8b91dbe6ceb1d6db79997348e134
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 42b0852e61e81228d1094bad575e6439c3c77745
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354644"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321525"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>如何使用计费配置文件支付订阅费用
 
@@ -51,7 +51,7 @@ ms.locfileid: "62354644"
 
 如果需要进行信用检查，在购买订阅时就会收到通知。如果同意取得联系，则会收到一封电子邮件，其中包括更多关于申请信贷审批的信息。通常会在两个工作日内完成信用检查。
 
-如果你的计费配置文件由发票支持，则当帐单可供查看时，你收到一封电子邮件。 这封邮件不包含账单副本。 但是，你可以选择以 [电子邮件附件](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)接收组织的发票。 账单中包含了关于付款选择以及付款地点的详细信息。 如果在计费配置文件中 (PO) PO 编号，该编号将显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
+如果你的计费配置文件由发票支持，则当帐单可供查看时，你收到一封电子邮件。 这封邮件不包含账单副本。 但是，你可以选择[将组织发票作为电子邮件附件接收](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)。 账单中包含了关于付款选择以及付款地点的详细信息。 如果在计费配置文件中 (PO) 订单，该编号将显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>支票或 EFT 付款应发送到何处？
 

@@ -9,18 +9,20 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkSPO
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
-description: 管理员可以了解如何在多地理位置SharePoint OneDrive管理和管理服务。
-ms.openlocfilehash: 31d361b2936c3d7bceca7137499c659030717eba
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+description: 管理员可以了解如何在多地理位置SharePoint OneDrive和启用服务。
+ms.openlocfilehash: 126b5de915fba7168b3895bbb05ccef6dcad749b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214188"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312049"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
@@ -28,7 +30,7 @@ ms.locfileid: "62214188"
 
 ## <a name="administrator-experience"></a>管理员体验
 
-管理[SharePoint中心](https://admin.microsoft.com/sharepoint)左侧导航中具有"地理位置"选项卡，其中具有地理位置地图，可在其中查看和管理地理位置。 使用此页面添加或删除租户的地理位置。
+管理SharePoint中心左侧导航中具有"地理位置<a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank"></a>"选项卡，其中显示地理位置地图，可在其中查看和管理地理位置。 使用此页面添加或删除租户的地理位置。
 
 ## <a name="audit-log-search"></a>审核日志搜索
 
@@ -43,7 +45,7 @@ BCS、安全存储和应用在每个附属位置都具有单独的实例，因�
 
 ## <a name="compliance-admin-center"></a>合规性管理中心
 
-多地理位置租户有一个中央合规中心：Microsoft 365[合规性管理中心。](https://compliance.microsoft.com/)
+多地理位置租户有一个中央合规中心：Microsoft 365[合规性管理中心](https://compliance.microsoft.com/)。
 
 ## <a name="ediscovery"></a>电子数据展示
 
@@ -75,7 +77,7 @@ Power Apps位置创建的位置将使用位于租户中心位置的终点。 Mic
 
 ## <a name="sharing"></a>共享
 
-管理员可以为他们的每个位置设置和管理共享策略。 每个OneDrive地理位置SharePoint网站和网站将仅遵守相应的特定于地理位置的共享设置。 （例如，你可以为中心位置允许[外部共享](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)，但不能为附属位置允许外部共享，反之亦然。）请注意，共享设置不允许配置地理位置之间的共享限制。
+管理员可以为他们的每个位置设置和管理共享策略。 每个OneDrive中的SharePoint网站和网站将仅遵守相应的特定于地理位置的共享设置。 （例如，你可以为中心位置允许[外部共享](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)，但不能为附属位置允许外部共享，反之亦然。）请注意，共享设置不允许配置地理位置之间的共享限制。
 
 ## <a name="stream"></a>Stream
 
@@ -97,4 +99,4 @@ Power Apps位置创建的位置将使用位于租户中心位置的终点。 Mic
 
 ## <a name="yammer"></a>Yammer
 
-Yammer不是多地理位置工作负载。 Yammer中存储Yammer线程将放置在租户的中心位置。 Yammer推出文件存储更改，将在Yammer中存储SharePoint。 Yammer存储在SharePoint的文件将SharePoint组关联的Yammer网站。 SharePoint组网站基于 PDL 逻辑，如SharePoint[和组所述](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)。
+Yammer不是多地理位置工作负载。 Yammer中存储Yammer线程将放置在租户的中心位置。 Yammer推出文件存储更改，将在Yammer中存储SharePoint。 Yammer中存储SharePoint文件将SharePoint组关联的Yammer网站。 SharePoint组网站基于 PDL 逻辑，如SharePoint[和组所述](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)。

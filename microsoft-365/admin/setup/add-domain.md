@@ -2,8 +2,8 @@
 title: 将域添加到 Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 使用设置向导，通过添加 DNS Microsoft 365 DNS Microsoft 365 管理中心将域添加到域中。
-ms.openlocfilehash: eb58c8fc69a26157aa7dfb323be03efb81ef76bf
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fa809486b968c4bc0f8c74e466285ee2ce9ac895
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766532"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321707"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>将域添加到 Microsoft 365
 
@@ -44,7 +44,7 @@ ms.locfileid: "62766532"
 若要添加、修改或删除域 **，您必须是企业** 或企业计划的域名管理员或 [全局管理员](https://products.office.com/business/office)。 这些更改会影响整个租户;*自定义的管理员**或常规* 用户将无法进行这些更改。
 
 > [!TIP]
-> 如果需要有关本主题中的步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助 Business Assist，你和员工在业务增长（从载入到日常使用）时，可以全天候访问小型企业专家。
+> 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以针对从加入到日常使用的各个方面随时访问小型企业专家。
 
 ## <a name="watch-add-a-domain"></a>观看：添加域
 
@@ -89,7 +89,7 @@ ms.locfileid: "62766532"
     
 6. 选择希望 Microsoft 使用域所需的 DNS 更改。
     
-    1. 如果你 **的** 注册机构支持域 [连接](#domain-connect-registrars-integrating-with-microsoft-365)，请选择"为我添加 DNS 记录"[，Microsoft 会](../get-help-with-domains/domain-connect.md)通过登录你的注册机构并确认与 Microsoft 365 的连接来自动设置你的Microsoft 365。
+    1. 如果你 **的注册** 机构支持域 [连接](#domain-connect-registrars-integrating-with-microsoft-365)，请选择"为我添加 DNS 记录"[，Microsoft 会](../get-help-with-domains/domain-connect.md)通过登录你的注册机构并确认与 Microsoft 365 的连接来自动设置你的Microsoft 365。
     2. Choose **I'll add the DNS records自己** if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later. **如果确切了解执行内容，请选择此选项。**
 
 7. 如果选择自己 *添加 DNS* 记录，请选择"下一步"，你将看到一个页面，包含需要添加到注册机构网站以设置域的所有记录。 
@@ -122,7 +122,7 @@ ms.locfileid: "62766532"
 
 [通过连接](https://www.domainconnect.org/)域注册机构，你可以将域添加到Microsoft 365只需几分钟即可完成一个三步过程。 
   
-在向导中，我们将仅确认您拥有该域，然后自动设置您的域记录，因此电子邮件会发送到 Microsoft 365 和其他 Microsoft 365 服务（如 Teams）处理您的域。
+在向导中，我们将仅确认你拥有该域，然后自动设置域记录，因此电子邮件会发送到 Microsoft 365 和其他 Microsoft 365 服务（如 Teams）处理你的域。
   
 > [!NOTE]
 > 在开始此设置向导前，请确保你已禁用浏览器中的任何弹出窗口阻止程序。
@@ -143,18 +143,18 @@ ms.locfileid: "62766532"
 
 ### <a name="what-happens-to-my-email-and-website"></a>我的电子邮件和网站会发生什么情况？
 
-完成设置后，你的域的 MX 记录将更新为指向Microsoft 365并且你的域的所有电子邮件都将开始Microsoft 365。 确保你已添加用户，并针对域中收到电子邮件的Microsoft 365邮箱！
+完成设置后，你的域的 MX 记录将更新为指向Microsoft 365并且你的域的所有电子邮件都将开始Microsoft 365。 确保你已添加用户，并针对域中收到电子邮件的Microsoft 365用户设置邮箱！
   
 如果你有一个用于你的企业的网站，它将在其所在的位置保持工作。 域连接设置步骤不会影响您的网站。
 
 ### <a name="add-an-onmicrosoftcom-domain"></a>添加 onmicrosoft.com 域
 
-每个Microsoft 365组织最多具有三个 onmicrosoft.com 域。
+每个Microsoft 365组织最多只能有三个 onmicrosoft.com 域。
 
 > [!NOTE]
 > 必须是全局管理员或域名管理员才能添加域。
-> 创建其他 .onmicrosoft 域并将其用作默认域不会为 SharePoint Online。 若要对 .onmicrosoft SharePoint 域进行更改，您需要使用 [SharePoint 域](/sharepoint/change-your-sharepoint-domain-name)重命名预览 (当前可用于网站数少于 1，000) 的任何租户。
-> 如果您使用其他邮件Microsoft 365，则不支持删除初始 .onmicrosoft 域。
+> 创建其他 .onmicrosoft 域并将其用作默认域不会为 SharePoint Online 执行重命名。 若要对 .onmicrosoft SharePoint 域进行更改，您需要使用 [SharePoint 域](/sharepoint/change-your-sharepoint-domain-name)重命名预览 (当前可用于网站数少于 1，000) 的任何租户。
+> 如果您使用的是邮件Microsoft 365，则不支持删除初始 .onmicrosoft 域。
 
 
 若要添加 onmicrosoft.com 域：

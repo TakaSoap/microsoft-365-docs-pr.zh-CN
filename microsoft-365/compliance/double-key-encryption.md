@@ -4,7 +4,7 @@ description: DKE 使你能够保护高度敏感的数据，同时保持对密钥
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 01/29/2021
+ms.date: 02/28/2022
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -13,23 +13,23 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: dd445fae8f344be68726fd9dda6457badc18f5c5
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: b16733a1d42ca245f096038f567be6fbd0c3fb2a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767444"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320601"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>双密钥加密Microsoft 365
 
-> *适用于：双密钥加密（Microsoft 365、Microsoft 365 [合规性](https://www.microsoft.com/microsoft-365/business/compliance-management)、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)）*
+> *适用于：双密钥加密Microsoft 365、Microsoft 365 [合规性](https://www.microsoft.com/microsoft-365/business/compliance-management)、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 >
 > *说明：[Azure 信息保护统一标签客户端Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 
 > *服务说明：Microsoft 365 [合规性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-双密钥加密 (DKE) 使用两个密钥来访问受保护的内容。 Microsoft 将一个密钥存储在Microsoft Azure中，并且你持有另一个密钥。 使用双密钥加密服务维护对其中一个密钥的完全控制。 使用 Azure 信息保护统一标记客户端对高度敏感的内容应用保护。
+双密钥加密 (DKE) 使用两个密钥来访问受保护的内容。 Microsoft 将一个密钥存储在Microsoft Azure中，你持有另一个密钥。 使用双密钥加密服务维护对其中一个密钥的完全控制。 使用 Azure 信息保护统一标记客户端对高度敏感的内容应用保护。
 
 双密钥加密支持云和本地部署。 这些部署有助于确保加密数据在存储受保护数据的位置都保持不透明。
 
@@ -37,7 +37,7 @@ ms.locfileid: "62767444"
 
 ## <a name="when-your-organization-should-adopt-dke"></a>组织何时应采用 DKE
 
-双密钥加密适用于符合最严格的保护要求的最敏感数据。 DKE 并非适用于所有数据。 通常，你将使用双密钥加密来保护整个数据的一小部分。 在部署之前，应谨慎确定要在此解决方案中涵盖的合适数据。 在某些情况下，你可能需要缩小范围，并针对大部分数据使用其他解决方案，例如Microsoft 信息保护 Microsoft 托管密钥或 BYOK。 这些解决方案足以用于不受增强的保护和法规要求的文档。 此外，这些解决方案还使您能够使用最强大的 Office 365 服务;不能与 DKE 加密内容一同使用的服务。 例如：
+双密钥加密适用于符合最严格的保护要求的最敏感数据。 DKE 并非适用于所有数据。 通常，你将使用双密钥加密来保护整个数据的一小部分。 在部署之前，应谨慎确定要在此解决方案中涵盖的合适数据。 在某些情况下，你可能需要缩小范围，并针对大部分数据使用其他解决方案，Microsoft 信息保护 Microsoft 托管密钥或 BYOK。 这些解决方案足以用于不受增强的保护和法规要求的文档。 此外，这些解决方案还使您能够使用最强大的 Office 365 服务;不能与 DKE 加密内容一同使用的服务。 例如：
 
 - 需要查看附件的传输规则，包括反恶意软件和垃圾邮件
 - Microsoft Delve
@@ -45,7 +45,7 @@ ms.locfileid: "62767444"
 - 内容搜索和索引
 - Office Web 应用，包括共同授权功能
 
-任何未通过 MIP SDK Microsoft 信息保护 (DKE) 外部应用程序或服务将无法对加密数据执行操作。
+任何未通过 MIP MICROSOFT 信息保护 (SDK 与 DKE 集成的外部应用程序或服务) 对加密数据执行的操作。
 
 SDK Microsoft 信息保护 1.7+ 支持双密钥加密。 与 SDK 集成的应用程序可以借助足够的权限和集成来了解此数据。
 
@@ -63,9 +63,9 @@ SDK Microsoft 信息保护 1.7+ 支持双密钥加密。 与 SDK 集成的应用
 
 **Azure 信息保护**。 DKE 使用敏感度标签，并且需要 Azure 信息保护。
 
-DKE 敏感度标签通过桌面应用中 AIP 统一标签客户端的敏感度按钮Office最终用户。 在要保护和使用受保护文档的每台客户端计算机上安装这些必备组件。
+DKE 敏感度标签通过桌面应用中 AIP 统一标签客户端中的敏感度按钮Office最终用户。 在要保护和使用受保护文档的每台客户端计算机上安装这些必备组件。
 
-**Microsoft Office** 2009 企业应用版或更高版本 (桌面版的 Word、PowerPoint 和 Excel) Windows。
+**Microsoft Office应用企业** 版 2009 或更高版本 (桌面版 Word、PowerPoint 和 Excel) Windows。
 
 **Azure 信息保护统一标签客户端** 版本 2.7.93.0 或更高版本。 从 Microsoft 下载中心下载并安装统一 [标签客户端](https://www.microsoft.com/download/details.aspx?id=53018)。
 
@@ -125,7 +125,7 @@ DKE 敏感度标签通过桌面应用中 AIP 统一标签客户端的敏感度�
 
 - [Git](https://git-scm.com/downloads)
 
-- [GitHub桌面](https://desktop.github.com/)
+- [GitHub 桌面](https://desktop.github.com/)
 
 - [GitHub Enterprise](https://github.com/enterprise)
 
@@ -133,9 +133,9 @@ DKE 敏感度标签通过桌面应用中 AIP 统一标签客户端的敏感度�
 
 ### <a name="clone-the-dke-github-repository"></a>克隆 DKE GitHub存储库
 
-Microsoft 在一个 DKE 存储库中提供 dKE GitHub文件。 克隆存储库以在本地生成项目供组织使用。 DKE GitHub存储库位于 [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService)。
+Microsoft 在数据库存储库中提供 DKE GitHub文件。 克隆存储库以在本地生成项目供组织使用。 DKE GitHub存储库位于 [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService)。
 
-以下说明适用于没有经验的 git 或 Visual Studio Code用户：
+以下说明适用于没有经验的 git 或 Visual Studio Code 用户：
 
 1. 在浏览器中，转到： [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService)。
 
@@ -146,16 +146,16 @@ Microsoft 在一个 DKE 存储库中提供 dKE GitHub文件。 克隆存储库�
    > [!div class="mx-imgBorder"]
    > ![从数据库克隆双密钥加密服务GitHub。](../media/dke-clone.png)
 
-3. In Visual Studio Code， select **View** \> **Command Palette** and select **Git： Clone**. 若要跳转到列表中的选项， `git: clone` 请开始键入以筛选条目，然后从下拉列表中选择它。 例如：
+3. 在Visual Studio Code中，选择"**查看** \> **命令调色板**"，然后选择 **"Git： 克隆"**。 若要跳转到列表中的选项， `git: clone` 请开始键入以筛选条目，然后从下拉列表中选择它。 例如：
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Code GIT：Clone 选项。](../media/dke-vscode-clone.png)
 
-4. 在文本框中，粘贴从 Git 复制的 URL，然后选择"从 GitHub **"**。
+4. 在文本框中，粘贴从 Git 复制的 URL，然后选择"从 **GitHub"。**
 
 5. 在出现的 **"选择** 文件夹"对话框中，浏览到并选择要存储存储库的位置。 在提示符下，选择"打开 **"**。
 
-    存储库在 Visual Studio Code中打开，在左下角显示当前 Git 分支。 例如，分支应为 **main**。 例如：
+    存储库在 Visual Studio Code 中打开，并显示左下角的当前 Git 分支。 例如，分支应为 **main**。 例如：
 
    ![显示主分支Visual Studio Code DKE 存储库的屏幕截图。](../media/dke-vscode-main-branch.jpg)
 
@@ -362,7 +362,7 @@ DKE 租户和密钥设置位于 **appsettings.json** 文件中。
 
 4. 选择 **"运行** \> **开始调试** "以调试过程。 如果系统提示你选择环境，请选择 **".NET core"**。
 
-   .NET 核心调试程序通常启动到 `https://localhost:5001`。 若要查看测试密钥，请转到 `https://localhost:5001` 并追加一个正斜杠 (/) 和密钥的名称。 例如：
+   .NET 核心调试程序通常启动到 `https://localhost:5001`。 若要查看测试密钥，请转到 `https://localhost:5001` 并追加正斜杠 (/) 和密钥的名称。 例如：
 
    ```https
    https://localhost:5001/TestKey1
@@ -449,7 +449,7 @@ DKE 已部署，你可以浏览到已创建的测试密钥。 继续验证 [以�
 
 6. 将发布目录中的所有文件都发送到 zip 文件。 创建.zip文件时，请确保目录中的所有文件都位于文件.zip级别。
 
-7. 从 FTP 客户端，使用复制的连接信息连接到应用服务。 Upload.zip步骤中创建的 web 应用的根目录。
+7. 从 FTP 客户端，使用复制的连接信息连接到应用服务。 Upload.zip步骤中创建的 Web 应用的根目录。
 
 DKE 已部署，你可以浏览到已创建的测试密钥。 接下来， [验证部署](#validate-your-deployment)。
 
@@ -485,7 +485,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 3. 从显示的选项中选择帐户类型。
 
-   如果对非自定义Microsoft Azure（如 **onmicrosoft.com**）使用帐户，请选择"仅 microsoft (- 单租户) "**。**
+   如果对非自定义Microsoft Azure（如 **onmicrosoft.com**）使用帐户，请选择"仅 microsoft (- 单租户) **"。**
 
    例如：
 
@@ -505,7 +505,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
    例如：`https://mydkeservicetest.com`
 
    - 输入的 URL 必须与部署 DKE 服务的主机名匹配。
-   - 域必须是已 [注册的域](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains)。
+   - 该域必须是 [已验证的域](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains)。
    - 如果要在本地使用 Visual Studio 测试，请使用 `https://localhost:5001`。
    - 在所有情况下，方案必须为 **https**。
 
@@ -513,7 +513,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 9. 在 **"隐式授予**"下 **，选中"ID 令牌"** 复选框。
 
-10. 选择 **保存** 以保存所做的更改。
+10. 选择“**保存**”以保存所做的更改。
 
 11. 在左窗格中，选择"公开 **API**"，在"应用程序 ID URI"旁边，输入应用服务 URL，包括主机名和域，然后选择"设置 **"**。
 
@@ -579,9 +579,9 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 ## <a name="other-deployment-options"></a>其他部署选项
 
-我们意识到，对于高度管控行业中的一些客户，这种使用基于软件密钥的标准参考实现可能不足以满足其增强的合规性义务和需求。 我们已与 HSM (供应商与 HSM) 第三方硬件安全模块合作，以支持 DKE 服务中的增强型密钥管理选项，包括：
+我们意识到，对于高度管控行业中的一些客户，这种使用基于软件密钥的标准参考实现可能不足以满足其增强的合规性义务和需求。 我们已与 HSM (第三方硬件安全模块) ，以支持 DKE 服务中的增强型密钥管理选项，包括：
 
- - [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.)
+- [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.)
 
 - [塔姆雷群岛](https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption)
 

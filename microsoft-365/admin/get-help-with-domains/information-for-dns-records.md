@@ -2,8 +2,8 @@
 title: 收集创建 DNS 记录所需的信息
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 收集创建 DNS 记录所需的值/信息，以将域连接到 Microsoft 365 订阅。
-ms.openlocfilehash: 81a1bd650e507e7f2c15a16cd5a048181ca6c816
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 672d57babb1b26e42b3fd24da8c9dc841223e41f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371120"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316795"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>收集创建 DNS 记录所需的信息
 
@@ -49,15 +49,15 @@ ms.locfileid: "61371120"
 
 ::: moniker-end
     
-2. 在"**域**"页面上，选择你的域，然后选择"**开始设置"。** 你将返回域设置向导，查看需要添加的特定值。
+2. 在" **域"** 页面上，选择您的域，然后选择" **开始设置"**。 你将返回域设置向导，查看需要添加的特定值。
     
-3. 在"**域验证"** 页上，**选择"将 TXT** 记录添加到域的 DNS 记录"，然后选择"继续 **"。**
+3. 在" **域验证"** 页上， **选择"将 TXT** 记录添加到域的 DNS 记录"，然后选择"继续 **"**。
     
-4. 复制显示的 **TXT** 值。 它如下所示 **：MS=msXXXXXXXX**。 
+4. 复制显示的 **TXT** 值。 它如下所示： **MS=msXXXXXXXX**。 
     
-5. 转到 ["添加 DNS 记录"以连接域](create-dns-records-at-any-dns-hosting-provider.md)，然后按照步骤在 DNS 主机的网站上添加记录。
+5. 转到 ["添加 DNS 记录"以连接您的域](create-dns-records-at-any-dns-hosting-provider.md)，然后按照步骤在 DNS 主机的网站上添加记录。
     
-6. 按照在 DNS 主机上 (TXT 记录或 MX 记录) 的步骤操作，然后将域验证回Microsoft 365。
+6. 按照在 DNS 主机上 (TXT 记录或 MX 记录) 的步骤操作，然后在域中重新Microsoft 365。
 
 7. 在 DNS 主机 (域) 后，从 DNS 主机中删除 TXT 记录或 MX Microsoft 365。
     
@@ -77,13 +77,13 @@ ms.locfileid: "61371120"
     
 2. 在" **域**"页面上，选择你的域。
     
-3. 选择 **"管理 DNS"，** 选择 **"更多选项**  >  **""添加你自己的 DNS"，** 然后选择"继续"以查看要添加的 DNS 记录。 
+3. 选择 **"管理 DNS**"，选择 **"更多选项** > **""添加您自己的 DNS**"，然后选择"继续"以查看要添加的 DNS 记录。
     
     更改 DNS 主机时，需要保持此信息可用，以便复制粘贴这些值。
     
     页面上列出的 DNS 记录组取决于" **域用途**"下列出的选项。
     
-4. 转到 ["添加 DNS 记录"以连接域](create-dns-records-at-any-dns-hosting-provider.md)，然后按照步骤在 DNS 主机的网站上添加记录。
+4. 转到 ["添加 DNS 记录"以连接您的域](create-dns-records-at-any-dns-hosting-provider.md)，然后按照步骤在 DNS 主机的网站上添加记录。
 
 5. 按照在您的 DNS 主机上创建记录的步骤执行操作。
 

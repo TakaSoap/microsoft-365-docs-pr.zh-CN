@@ -15,18 +15,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: 71149412285d7d9540c80ef3ad89dc3b0a6a6208
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 034e577b4040e72f32a8e30b3f902c0d0bc2b8f8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963055"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315381"
 ---
 # <a name="configure-your-event-hub"></a>配置事件中心
 
@@ -40,24 +38,24 @@ ms.locfileid: "60963055"
 ## <a name="set-up-the-required-resource-provider-in-the-event-hub-subscription"></a>在事件中心订阅中设置必需的资源提供程序
 
 1. 登录 [Azure 门户](https://portal.azure.com)。
-1. 选择 **订阅**  >  **{ 选择事件中心将部署到 }**  >  **资源提供程序的订阅**。
+1. 选择 **订阅** > **{ 选择事件中心将部署到 }** > **资源提供程序的订阅**。
 1. 验证 **Microsoft.Insights** 已注册提供程序。 否则，请注册它。
 
-![资源提供程序的图像Microsoft Azure。](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
+![资源提供程序在Microsoft Azure。](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
 
 ## <a name="set-up-azure-active-directory-app-registration"></a>设置Azure Active Directory应用注册
 
-> ![注意]你必须具有管理员角色Azure Active Directory (AAD) 必须设置为允许非管理员注册应用。 还必须具有所有者或用户访问管理员角色才能为服务主体分配角色。 有关详细信息，请参阅 Microsoft [ \| Docs](/azure/active-directory/develop/howto-create-service-principal-portal)门户Azure AD创建&服务主体Microsoft 标识平台应用。
+> ![注意]你必须具有管理员角色Azure Active Directory (AAD) 必须设置为允许非管理员注册应用。 还必须具有所有者或用户访问管理员角色才能为服务主体分配角色。 有关详细信息，请参阅 Microsoft Docs Azure AD门户&[服务主体创建 \| Microsoft 标识平台应用](/azure/active-directory/develop/howto-create-service-principal-portal)。
 
-1. 创建新的注册 (在应用注册新注册) 服务Azure Active Directory \> **创建服务** \> **主体。**
+1. 创建新的注册 ( \>在应用注册新注册) 服务Azure Active Directory **创建** \> **服务主体。**
 
-1. 只需使用"名称" (填写表单，无需重定向 URI) 。
+1. 只需使用 Name (填写表单，无需重定向 URI) 。
 
     ![注册应用程序的图像。](../../media/336bc84e6be23900c43232b4ef0c253c.png)
 
     ![概述信息的图像。](../../media/06ac04c4ff713c2065cec2ef2f99a294.png)
 
-1. 通过单击"证书""密码"**创建&** \> **密码 新建客户端密码：**
+1. 通过单击"证书""密码" **创建&密码 新建** \> **客户端密码**：
 
     ![证书和密码的图像。](../../media/d2ef88d3d2310d2c60c294b569cdf02e.png)
 
@@ -68,20 +66,20 @@ ms.locfileid: "60963055"
 
 1. 创建事件中心命名空间：
 
-    转到 **事件 \>** 中心 添加并选择定价层、吞吐量单位和自动 (要求标准定价，在功能下) 适合您预期负载的功能下。 有关详细信息，请参阅定价[- 事件 \| 中心Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
+    转到 **"事件\>** 中心"添加并选择定价层、吞吐量单位和自动 (要求标准定价，在功能下) 适合您预期负载的功能。 有关详细信息，请参阅定价 [- 事件\|中心Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
 
     > [!NOTE]
     > 可以使用现有的事件中心，但吞吐量和缩放是在命名空间级别设置的，因此建议将事件中心放在其现有命名空间中。
 
    ![事件中心名称空间的图像。](../../media/ebc4ca37c342ad1da75c4aee4018e51a.png)
 
-1. 你还需要此事件中心命名空间的资源 ID。 转到 Azure 事件中心命名空间页面 \> "属性"。 复制"资源 ID"下的文本，并记录该文本Microsoft 365配置部分使用。
+1. 你还需要此事件中心命名空间的资源 ID。 转到 Azure 事件中心命名空间页面"属性 \> "。 复制"资源 ID"下的文本，并记录该文本Microsoft 365配置部分使用。
 
     ![属性的图像。](../../media/759498162a4e93cbf17c4130d704d164.png)
 
-1. 创建事件中心命名空间后，你将需要将应用注册服务主体添加为读者、Azure 事件中心数据接收器，以及将登录到 Microsoft 365 Defender 的用户作为参与者 (还可以在资源组或订阅级别) 进行此操作。
+1. 创建事件中心命名空间后，你需要将应用注册服务主体添加为读者、Azure 事件中心数据接收器，以及将登录到 Microsoft 365 Defender 的用户作为参与者 (还可以在资源组或订阅级别) 进行此操作。
 
-    在 IAM 事件中心 **命名空间** 访问控制 \> **(添加**) \> **验证** 角色分配下执行 **此步骤**：
+    您可以在 IAM 事件中心 **命名空间**\>访问控制 **(IAM** \>) **添加** 和验证角色 **分配下执行此步骤**：
 
     ![访问控制的图像。](../../media/9c9c29137b90d5858920202d87680d16.png)
 
@@ -89,11 +87,11 @@ ms.locfileid: "60963055"
 
 **选项 1：**
 
-可以在命名空间内创建事件中心，选择要导出的所有 (表) 事件类型将写入此 **事件** 中心。
+可以在命名空间内创建事件中心，选择要导出 (表) 事件类型将写入此 **事件** 中心。
 
 **选项 2：**
 
-可以将每个表的所有事件类型导出到一个事件中心，而不是将 () 表的所有事件类型导出到一个事件中心中 (每个事件类型一个事件中心) 。
+你可以将每个表导出到事件中心内的不同事件中心，而不是将 () 表的所有事件类型导出到一个事件中心 (每个事件类型一个事件中心) 。
 
 在此选项中，Microsoft 365 Defender将创建事件中心。
 
@@ -106,13 +104,13 @@ ms.locfileid: "60963055"
 
 如果选择此选项，可以跳到"配置Microsoft 365 Defender[发送电子邮件表"](#configure-microsoft-365-defender-to-send-email-tables)部分。
 
-通过选择事件中心 + 事件中心 **在命名空间** \> **内创建事件中心**。
+通过选择事件中心 + 事件 **中心在命名空间** \> **内创建事件中心**。
 
 分区计数允许通过并行率增加吞吐量，因此建议根据你期望的负载增加此数字。 建议使用默认邮件保留值和捕获值 1 和 Off。
 
 ![创建事件中心的图像。](../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png)
 
-对于此事件中心 (命名空间) 您需要使用发送、侦听声明配置共享访问策略。 单击 **事件中心** 共享访问策略 + 添加，然后为它指定策略名称 (其他位置) 并检查发送和 \>  \> **侦听**。 
+对于此事件中心 (命名空间) 您需要使用发送、侦听声明配置共享访问策略。 单击事件 **中心** \> **共享访问策略** \> **+** 添加，然后为它指定策略名称 (其他位置) 并检查 **发送** 和 **侦听**。
 
 ![共享访问策略的图像。](../../media/1867d13f46dc6a0f4cdae6cf00df24db.png)
 
@@ -128,29 +126,29 @@ ms.locfileid: "60963055"
 
     ![安全门户的图像。](../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png)
 
-1. 单击"**原始数据导出 \> +添加"。**
+1. 单击" **原始数据导出 + \> 添加"**。
 
     现在，你将使用上面记录的数据。
 
-    **名称**：此值是本地值，并且应该是适合你的环境的任何值。
+    **名称**：此值是本地值，并且应该是适合您的环境的任何值。
 
     **将事件转发到事件中心**：选中此复选框。
 
-    **Event-Hub 资源 ID**：此值是在设置事件中心时记录的事件中心命名空间资源 ID。
+    **事件中心资源 ID**：此值是在设置事件中心时记录的事件中心命名空间资源 ID。
 
     **事件中心名称**：如果在事件中心命名空间内创建了事件中心，请粘贴上面记录的事件中心名称。
 
-    如果您选择允许Microsoft 365 Defender创建每个事件类型的事件 (表) ，则此字段留空。
+    如果您选择允许Microsoft 365 Defender创建每个事件类型的事件 (表) ，则此字段保留为空。
 
     **事件类型**：选择要转发到事件中心，然后转发到自定义应用的高级搜寻表。 警报表来自Microsoft 365 Defender，设备表来自 Microsoft Defender for Endpoint (EDR) ，电子邮件表来自 Microsoft Defender for Office 365。 电子邮件事件记录所有电子邮件事务。 URL (保险箱 Links) ， Attachment (保险箱 Attachments) ， and Post Delivery Events (ZAP) are also recorded and can be joined to the Email Events on the NetworkMessageId field.
 
     ![流式 API 设置的图像。](../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png)
 
-1. 确保单击"提交 **"。**
+1. 确保单击"提交 **"**。
 
 ### <a name="verify-that-the-events-are-being-exported-to-the-event-hub"></a>验证事件是否导出到事件中心
 
-可以通过运行基本高级搜寻查询来验证事件是否正在发送到事件中心。 选择 **搜寻** \> **高级** \> **搜寻查询** 并输入以下查询：
+可以通过运行基本高级搜寻查询来验证事件是否正在发送到事件中心。 选择 **搜寻** \> **高级搜寻** \> **查询** 并输入以下查询：
 
 ```console
 EmailEvents
@@ -167,7 +165,7 @@ EmailEvents
 
 验证有要导出的数据后，可以查看事件中心以验证邮件是否传入。 这最多可能需要一个小时。
 
-1. 在 Azure 中，转到 **事件中心** \> 单击命名空间 \> **事件中心** \> 单击事件 **中心**。
-1. 在 **"概述**"下，向下滚动，在"消息"图中，应看到"传入邮件"。 如果你未看到任何结果，则你的自定义应用将没有任何消息要接收。
+1. 在 Azure 中，转到 **事件中心** \> 单击命名空间 \> **事件中心 单击**\>事件 **中心**。
+1. Under **Overview**， scroll down and in the Messages graph you should see Incoming Messages. 如果你未看到任何结果，则你的自定义应用将没有任何消息要接收。
 
     ![包含消息的"概述"选项卡的图像。](../../media/e88060e315d76e74269a3fc866df047f.png)

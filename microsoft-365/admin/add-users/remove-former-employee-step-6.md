@@ -24,21 +24,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 按照以下步骤删除Microsoft 365员工授予的许可证。
-ms.openlocfilehash: 52ab851c88d05c33de58d28d566a46b5e8b1710b
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+description: 按照以下步骤删除以前Microsoft 365的许可证。
+ms.openlocfilehash: b724e8d65c990396ad376544de86d4ffd0cb5fdc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805840"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315157"
 ---
-# <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>步骤 6 - 删除Microsoft 365员工的许可证
+# <a name="step-6---remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>步骤 6 - 删除Microsoft 365员工的许可证
 
-如果某人离开组织后不想支付许可证费用，则需要删除其Microsoft 365许可证，然后从订阅中删除。 如果不删除许可证，可以将许可证分配给其他用户。
+如果某人离开组织后不想支付许可证费用，则需要删除其Microsoft 365许可证，然后从订阅中删除它。 如果不删除许可证，可以将许可证分配给其他用户。
 
-如果出于合规性或法律原因，已被授予电子数据展示权限的授权人员需要访问邮箱，则必须向邮箱分配 Exchange Online 计划 2 许可证 (或具有 Exchange Online Archiving 的 Exchange Online 计划 1 Exchange Online Archiving 加载项许可证) ，以便保留可以在删除邮箱之前应用于邮箱。 删除用户帐户后，Exchange Online用户帐户的任何许可证将可用于分配给新用户。
+如果出于合规性或法律原因获得电子数据展示权限的授权人员需要访问邮箱，则必须向邮箱分配 Exchange Online 计划 2 许可证 (或具有 Exchange Online Archiving 的 Exchange Online 计划 1 Exchange Online Archiving 加载项许可证) ，以便保留可以在删除邮箱之前应用于邮箱。 删除用户帐户后，Exchange Online用户帐户的任何许可证将可用于分配给新用户。
   
-删除许可证后，该用户的所有数据将保留 30 天。 可[访问](get-access-to-and-back-up-a-former-user-s-data.md)该数据，或在用户返回时[还原](restore-user.md)该帐户。 30 天后，用户的所有数据 (存储在 SharePoint Online) 上的文档将从 Microsoft 365 中永久删除且无法恢复。
+删除许可证后，该用户的所有数据将保留 30 天。 可[访问](get-access-to-and-back-up-a-former-user-s-data.md)该数据，或在用户返回时[还原](restore-user.md)该帐户。 30 天后，用户的所有数据 (存储在 SharePoint Online) 上的文档除外）将从 Microsoft 365 中永久删除，且无法恢复。
 
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 2. 选择要阻止的员工的姓名，然后选择"许可证 **和应用"** 选项卡。
@@ -54,7 +54,7 @@ ms.locfileid: "62805840"
 
 向 [企业添加其他人](add-users.md) 时，系统会提示你同时购买许可证，只需一个步骤！
 
-有关管理 Microsoft 365 for business 的用户许可证的信息，请参阅为 [Microsoft 365 for business](../manage/assign-licenses-to-users.md) 中的用户分配许可证和取消分配 Microsoft 365 [for business 中的用户的许可证](../manage/remove-licenses-from-users.md)。
+有关管理 Microsoft 365 for business 的用户许可证的信息，请参阅为 [Microsoft 365 for business](../manage/assign-licenses-to-users.md) 中的用户分配许可证和取消分配 Microsoft 365 [for business](../manage/remove-licenses-from-users.md) 中的用户的许可证。
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>已删除的员工帐户如何影响 Skype for Business
 

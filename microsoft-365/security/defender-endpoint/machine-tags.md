@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d4e429ca851a21c3ad4863d11dd90d7223d9c6b3
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 65df8553f5ee3b7dd7876557398e0d4aa22c7bd5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170513"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323517"
 ---
 # <a name="create-and-manage-device-tags"></a>创建和管理设备标签
 
@@ -31,7 +31,7 @@ ms.locfileid: "61170513"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-在设备上添加标记，创建逻辑组等同。 设备标记支持网络适当映射，可附加不同的标记以捕获上下文，并启用在事件过程中创建动态列表。 标记可在"设备" **列表视图中用作** 筛选器，或用于对设备进行分组。 有关设备分组详细信息，请参阅创建 [和管理设备组](machine-groups.md)。
+在设备上添加标记，创建逻辑组等同。 设备标记支持网络适当映射，可附加不同的标记以捕获上下文，并启用在事件过程中创建动态列表。 标记可在设备清单视图中 **用作筛选器，** 或用于对设备进行分组。 有关设备分组详细信息，请参阅 [创建和管理设备组](machine-groups.md)。
 
 可以使用以下方法在设备上添加标记：
 
@@ -49,12 +49,12 @@ ms.locfileid: "61170513"
 
    - **安全操作仪表板** - 从具有活动警报的热门设备部分选择设备名称。
    - **警报队列** - 从警报队列中选择设备图标旁边的设备名称。
-   - **设备列表** - 从设备列表中选择设备名称。
+   - **设备清单** - 从设备列表中选择设备名称。
    - **搜索框** - 从下拉菜单中选择设备，然后输入设备名称。
 
      还可通过文件和 IP 视图访问警报页面。
 
-2. 从响应操作行中选择 **管理标签**。
+2. 从 **"响应操作** "行中选择"管理标记"。
 
     :::image type="content" alt-text="管理标记按钮的图像。" source="images/manage-tags-option.png":::
 
@@ -62,7 +62,7 @@ ms.locfileid: "61170513"
 
     :::image type="content" alt-text="在设备上添加标记的图像1。" source="images/create-new-tag.png":::
 
-标记将添加到设备视图，并且也会反映在 **"设备"列表** 视图中。 然后，可以使用 **标记** 筛选器查看相关设备列表。
+标记将添加到设备视图，并且也会反映在 **设备清单** 视图中。 然后，可以使用 **标记** 筛选器查看相关设备列表。
 
 > [!NOTE]
 > 筛选可能对包含括号的标记名称不起作用。

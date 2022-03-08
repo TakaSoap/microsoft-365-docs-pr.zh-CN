@@ -1,14 +1,12 @@
 ---
 title: 了解你的帐单或发票
-f1.keywords:
-- CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - MACBillingBillsPaymentsInvoices
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -16,19 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: 了解如何阅读和了解 Microsoft 商业产品的账单或发票。
-keywords: 帐单帐户，组织信息，发票
 ms.date: 05/04/2021
-ms.openlocfilehash: 3f6eaef9e26578f759a64fdf55dfeb6882be2458
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: ce057a9a3fc72ab1ba818047112451f984894d99
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371264"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315801"
 ---
 # <a name="understand-your-bill-or-invoice"></a>了解你的帐单或发票
 
@@ -153,7 +150,7 @@ Azure 预付款仅作为付款方式提供给符合条件的 Azure 产品和服�
 
 ## <a name="related-content"></a>相关内容
 
-[了解适用于企业Microsoft 365的](understand-your-invoice2.md)帐单 (发票) \
-[跟踪 Microsoft 客户协议 Azure 信用 (](/azure/billing/billing-mca-check-azure-credits-balance) 文章) \
+[了解适用于企业Microsoft 365](understand-your-invoice2.md)的帐单 (发票) \
+[跟踪 Microsoft 客户协议 Azure 信用平衡](/azure/billing/billing-mca-check-azure-credits-balance) (文章) \
 [查看 Microsoft 客户协议发票](/azure/cost-management-billing/understand/review-customer-agreement-bill) (文章) \
 [Microsoft 客户协议计费帐户入门 (](/azure/billing/billing-mca-overview) 文章) 

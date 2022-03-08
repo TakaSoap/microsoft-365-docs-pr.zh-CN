@@ -8,14 +8,19 @@ audience: admin
 ms.topic: article
 ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解 Microsoft SharePoint Syntex 中的文档理解。
+ms.openlocfilehash: 4c4910ac2cec9688af60c6999e67e1be41701ef3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322585"
 ---
-
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的文档理解概述
 
 
@@ -47,9 +52,9 @@ description: 了解 Microsoft SharePoint Syntex 中的文档理解。
 
 ## <a name="file-limitations"></a>文件限制
 
-文档理解模型使用光学字符识别 (OCR) 技术扫描 PDF、图像和 TIFF 文件。 在使用示例文件训练模型时，以及针对文档库中的文件运行模型时，将扫描文件。
+文档了解模型使用光学字符识别 (OCR) 技术扫描 PDF、图像和 TIFF 文件。 在使用示例文件训练模型时，以及针对文档库中的文件运行模型时，将扫描文件。
 
-请注意基于文本Microsoft Office文件和 OCR 扫描的文件 (PDF、图像或 TIFF) ：
+请注意基于文本的文件Microsoft Office OCR 扫描的文件 (PDF、图像或 TIFF 文件) ：
 
 - Office 文件：截断为 64,000 个字符（在培训中以及针对文档库中的文件运行时）。
 
@@ -108,6 +113,7 @@ OCR 处理最适用于满足下列要求的文档：
 ### <a name="supported-languages"></a>支持的语言
 
 文档理解模型支持以下语言：
+- 英语
 - 法语
 - 德语
 - 意大利语

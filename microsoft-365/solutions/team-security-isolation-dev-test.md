@@ -14,14 +14,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 description: 配置安全性和基础结构，使你的员工能够随时随地远程工作。
-ms.openlocfilehash: 602bec66eec26551ae6d98bafdb99466747d8fa9
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 8ea359f2c0de98ac35b90a379e5a60c4578e66cf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524077"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323411"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>在开发/测试环境中配置具有安全隔离的团队
 
@@ -173,15 +175,14 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 接下来，将新标签应用到“**公司战略**”团队并更新默认共享链接类型，以减少将文件和文件夹意外共享给比预期更多受众的风险。
 
-1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-1. 在“**站点**”下，单击“**活动站点**”。
-1. 单击“**公司战略**”站点。
-1. 在“**策略**”选项卡的“**敏感度**”下，单击“**编辑**”。
-1. 选择“**公司战略**”标签，然后单击“**保存**”。
-1. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
+1. 打开 SharePoint 管理中心，在 **网站** 下，选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**活动网站**</a>。
+1. 选择 **公司战略** 站点。
+1. 在"**策略**"选项卡上的"**敏感度**"下，选择"**编辑**"。
+1. 选择"**公司战略"** 标签，然后选择"**保存**"。
+1. 在"**策略**"选项卡上的"**外部共享**"下，选择"**编辑**"。
 1. 选择“**仅限组织中的人员**”。
 1. 在“**默认共享链接类型**”下，清除“**与组织级别设置相同**”复选框，然后选择“**现有访问权限者**”。
-1. 单击“**保存**”。
+1. 选择“保存”。
 
 接下来，为“**公司战略**”团队配置“仅所有者”站点共享。
 

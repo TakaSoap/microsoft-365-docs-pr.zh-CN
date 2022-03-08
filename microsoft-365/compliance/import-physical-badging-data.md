@@ -15,16 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: 管理员可以设置数据连接器，以将数据从组织的物理密码系统导入Microsoft 365。 这允许你在内部风险管理策略中使用此数据，以帮助你检测特定用户对可能向组织指示可能的内部威胁的物理建筑物的访问。
-ms.openlocfilehash: 7eddede8b98d1b676e51a95e4fed3787f56d0bf0
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: e70217fa98e283883ab70bbe924d6f01f27613b4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272050"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312217"
 ---
-# <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>设置连接器以在预览版中 (物理) 
+# <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>设置连接器以在预览版中导入 () 
 
-可以在 Microsoft 365 合规中心 中设置数据连接器，以导入物理保护数据，例如员工的原始物理访问事件或由组织的密码系统生成的任何物理访问警报。 物理访问点的示例包括建筑物的入口或服务器会议室或数据中心的入口。 内部风险管理解决方案可以使用物理Microsoft 365，以帮助保护组织免受组织内部恶意[](insider-risk-management.md)活动或数据盗窃的攻击。
+可以在 Microsoft 365 合规中心 中设置数据连接器，以导入物理保护数据，例如员工的原始物理访问事件或由组织的密码系统生成的任何物理访问警报。 物理访问点的示例包括建筑物的入口或服务器会议室或数据中心的入口。 内部风险管理解决方案可以使用物理Microsoft 365，以帮助保护组织免受组织内部[](insider-risk-management.md)恶意活动或数据盗窃的攻击。
 
 设置物理保护连接器包括以下任务：
 
@@ -40,19 +40,22 @@ ms.locfileid: "62272050"
 
 ## <a name="before-you-set-up-the-connector"></a>设置连接器之前
 
-- 必须在步骤 3 中为创建物理密码连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须为在步骤 3 中创建物理密码连接器的用户分配数据连接器管理员角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，此角色添加到多个角色组。 有关这些角色组的列表，请参阅安全与合规中心内的权限中的"安全与合规& ["部分](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。 或者，您组织的管理员可以创建自定义角色组，分配数据连接器管理员角色，然后将相应的用户添加为成员。 有关说明，请参阅"权限"部分中的"创建自定义[角色Microsoft 365 合规中心](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)。
+
+   > [!NOTE]
+   > 数据连接器管理员角色当前在美国政府高级和 doD GCC不受支持。 因此，必须在高级和 DoD 环境中GCC HR 连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
 
 - 您需要确定如何每天从组织的物理密码系统 (中检索或导出数据) 并创建步骤 2 中所述的 JSON 文件。 在步骤 4 中运行的脚本将 JSON 文件的数据推送到 API 终结点。
 
 - 在步骤 4 中运行的示例脚本将 JSON 文件的物理保护数据推送到连接器 API，以便内部风险管理解决方案可以使用该数据。 本示例脚本在任何 Microsoft 标准支持计划或服务下都不受支持。 示例脚本“原样”提供，不提供任何形式的保证。 Microsoft 进一步拒绝所有默示保证，包括但不限于针对特定用途的适销性或适用性的任何默示保证。 由于示例脚本及文档的使用或性能所引起的全部风险均由你承担。 在任何情况下，对于由于使用或者无法使用示例脚本或文档所引起的任何损失（包括但不限于商业利润损失、业务中断、商业信息丢失或者其他经济损失），Microsoft、其作者或者参与创建、制作或交付脚本的任何人概不负责，即使 Microsoft 已被告知可能会出现此类损失。
 
-- 此连接器可用于美国政府GCC中Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此 Microsoft 365 合规性和数据保护承诺未涵盖这些数据。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
+- 此连接器可用于美国政府GCC云Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此未涵盖在 Microsoft 365 合规性和数据保护承诺中。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤 1：在 Azure Active Directory
 
 第一步是在应用程序创建和注册Azure Active Directory (Azure AD) 。 该应用将对应于在步骤 3 中创建的物理保护连接器。 创建此应用将Azure AD验证包含物理保护数据的 JSON 有效负载的推送请求。 创建此应用程序Azure AD，请务必保存以下信息。 这些值将在稍后的步骤中使用。
 
-- Azure AD ID (也称为 *应用 ID* 或 *客户端 ID)*
+- Azure AD ID (也称为 *应用 ID* 或 *客户端 ID*) 
 
 - Azure AD应用程序密码 (也称为 *客户端密码*) 
 
@@ -68,7 +71,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 |属性|说明|数据类型|
 |---|---|---|
-|UserId|员工可以在系统中具有多个数字标识。 输入需要已由Azure AD解析 ID。|UPN 或电子邮件地址|
+|UserID|员工可以在系统中具有多个数字标识。 输入需要使源Azure AD ID 已解析。|UPN 或电子邮件地址|
 |AssetId|物理资产或物理访问点的参考 ID。|字母数字字符串|
 |AssetName|物理资产或物理访问点的友好名称。|字母数字字符串|
 |EventTime|访问时间戳。|日期和时间（UTC 格式）|
@@ -216,7 +219,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 ## <a name="step-5-monitor-the-physical-badging-connector"></a>步骤 5：监视物理保护连接器
 
-创建物理保护连接器并推送物理保护数据后，可以查看连接器并上传Microsoft 365 合规中心。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
+创建物理保护连接器并推送物理保护数据后，可以查看该连接器，并上传Microsoft 365 合规中心。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
 
 1. 转到"Microsoft 365 合规中心"，然后选择"<a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**数据连接器"**</a>。
 
@@ -224,7 +227,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
    ![物理保护连接器的状态飞出页。](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. 在 **"上次导入"** 下，单击"下载日志"链接 (或) 连接器的状态日志。 此日志包含有关脚本每次运行以及将数据从 JSON 文件上载到 Microsoft 云时的信息。
+3. 在 **"上次导入"** 下，单击"下载日志"链接 (或保存) 连接器的状态日志。 此日志包含有关脚本每次运行以及将数据从 JSON 文件上载到 Microsoft 云时的信息。
 
    ![物理保护连接器日志文件 JSON 文件中上载的对象数。](..\media\PhysicalBadgingConnectorLogFile.png)
 
@@ -232,9 +235,9 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 如果尚未在步骤 4 中运行脚本，则"上次导入"下将显示用于下载脚本 **的链接**。 可以下载脚本，然后按照步骤 4 中的步骤运行它。
 
-## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a> (可选) 步骤 6：计划脚本自动运行
+## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a> (可选) 步骤 6：将脚本安排为自动运行
 
-若要确保组织的最新物理保护数据可用于内部风险管理解决方案等工具，建议安排脚本定期自动运行，如每天运行一次。 这还要求你在类似的 (（如果不是同一) 计划）上将物理保护数据更新为 JSON 文件，以便其中包含有关离开组织的员工的最新信息。 目标是上载最新的物理保护数据，以便物理保护连接器能够将其提供给内部风险管理解决方案。
+若要确保组织的最新物理保护数据可用于内部风险管理解决方案等工具，建议安排脚本定期自动运行，如每天运行一次。 这还要求你将物理保护数据更新为类似 (（如果不是同一) 计划）上的 JSON 文件，以便其中包含有关离开组织的员工的最新信息。 目标是上载最新的物理保护数据，以便物理保护连接器能够将其提供给内部风险管理解决方案。
 
 可以使用任务计划程序应用Windows每天自动运行脚本。
 
@@ -254,7 +257,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 6. 选择 **"触发器"** 选项卡，单击 **"新建**"，然后执行以下操作：
 
-   1. 在 **设置**"下，选择"每天"选项，然后选择首次运行脚本的日期和时间。 脚本将每天在指定的同一时间运行。
+   1. 在 **设置**"下，选择"**每天**"选项，然后选择首次运行脚本的日期和时间。 脚本将每天在指定的同一时间运行。
 
    2. 在 **"高级设置**"下，确保 **选中"已启用** "复选框。
 

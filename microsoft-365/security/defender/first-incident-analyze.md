@@ -1,6 +1,6 @@
 ---
 title: 步骤 1. 会审和分析第一个事件
-description: 如何对事件进行会审并开始分析第一Microsoft 365 Defender。
+description: 如何对事件中的第一个事件进行会审并开始Microsoft 365 Defender。
 keywords: 事件， 警报， 调查， 关联， 攻击， 计算机， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365， 事件响应， 网络攻击
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3854c8891f1cc5175c87b9842d9c30b3164a6f46
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: dd39ace81a6128b9edcc33581c8386c06adf0d5f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903630"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323243"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>步骤 1. 会审和分析第一个事件
 
@@ -36,7 +36,7 @@ ms.locfileid: "62903630"
 **适用于：**
 - Microsoft 365 Defender
 
-当您花时间根据组织标准建立、实施和维护安全措施时，您可以设置安全解决方案来帮助快速识别安全风险和威胁。 Microsoft 365 Defender通过单窗格体验检测、会审和调查事件，您可以在其中找到及时做出决策时需要的信息。
+当您花时间根据组织标准建立、实施和维护安全措施时，您可以设置安全解决方案来帮助快速识别安全风险和威胁。 Microsoft 365 Defender通过单窗格体验检测、会审和调查事件，可在其中找到及时做出决策时需要的信息。
 
 检测到安全事件后，Microsoft 365 Defender详细信息，您需要对事件或事件进行会审，或将事件安排在其他人的优先级。 确定优先顺序后，分析员可以专注于调查分配给他们的情况。
 
@@ -44,23 +44,23 @@ ms.locfileid: "62903630"
 
 Microsoft 365 Defender多个 Microsoft 安全平台接收警报和事件作为检测源，以创建恶意活动的整体图片和上下文。 这些是可能的检测源：
 
-- [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) 是终结点检测和响应解决方案 (EDR) ，它使用 Microsoft Security Graph Microsoft Defender 防病毒和启用云的高级威胁Graph。 Defender for Endpoint 是一个统一的平台，用于预防性保护、攻破后检测、自动调查和响应。 它可保护终结点免受网络威胁的攻击，检测高级攻击和数据泄露，自动执行安全事件，并改进安全状况。
-- [Microsoft Defender for Identity](/defender-for-identity/what-is) 是一种基于云的安全解决方案，它使用本地 Active Directory 域服务 (AD DS) 信号来识别、检测和调查针对你的组织的高级威胁、泄露的身份和恶意内部操作。
+- [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) 是一种终结点检测和响应 (EDR) ，它使用 Microsoft Security Graph Microsoft Defender 防病毒和启用云的高级威胁Graph。 Defender for Endpoint 是一个统一的平台，用于预防性保护、攻破后检测、自动调查和响应。 它可保护终结点免受网络威胁的攻击，检测高级攻击和数据泄露，自动执行安全事件，并改进安全状况。
+- [Microsoft Defender for Identity](/defender-for-identity/what-is) 是一种基于云的安全解决方案，它使用本地 Active Directory 域服务 (AD DS) 信号识别、检测和调查针对你的组织的高级威胁、泄露的身份和恶意内部操作。
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/) 充当网关守卫，在企业用户和用户使用的云资源之间实时代理访问，无论用户位于何处，无论他们使用何种设备。
 - [Microsoft Defender for Office 365](../office-365-security/overview.md)保护你的组织免受电子邮件、链接 (URL) 和协作工具中的恶意威胁。
 - [Azure 安全](/azure/security-center/security-center-introduction) 中心是一个统一的基础结构安全管理系统，可增强数据中心的安全状态，并跨云和本地混合工作负载提供高级威胁防护。
 
 
-在Microsoft 365 Defender[中](incidents-overview.md)，通过关联来自这些不同检测源的警报来标识事件。 无需花费资源字符串或将多个警报区分为各自的事件，你可以立即开始在事件Microsoft 365 Defender队列。 这使你可以有效地跨终结点、标识、电子邮件和应用程序对事件进行会审，并减少攻击造成的损失。
+在Microsoft 365 Defender[中](incidents-overview.md)，通过关联来自这些不同检测源的警报来标识事件。 无需花费资源字符串或将多个警报区分为各自的事件，你可以立即开始在警报中Microsoft 365 Defender队列。 这使你可以有效地跨终结点、标识、电子邮件和应用程序对事件进行会审，并减少攻击造成的损失。
 
 ## <a name="triage-your-incidents"></a>对事件进行会审
 
-使用组织Microsoft 365 Defender优先顺序对事件列表进行分类后，事件响应中事件响应即开始。 会审是指为事件分配重要性或紧急程度，然后确定调查事件的顺序。
+使用组织Microsoft 365 Defender优先顺序对事件列表分类后，事件响应中事件响应即开始。 会审是指为事件分配重要性或紧急程度，然后确定调查事件的顺序。
 
-一个有用的示例指南，用于确定要确定事件优先级Microsoft 365 Defender公式可以汇总：*严重性 + 影响 = 优先级*。
+一个有用的示例指南，可用于确定要优先处理Microsoft 365 Defender事件，公式如下：*严重性 + 影响 = 优先级*。
 
-- **严重性** 是由安全组件及其Microsoft 365 Defender安全组件指定的级别。
-- 影响由组织确定，通常包括但不限于受影响的用户、设备、受影响服务的阈值 (或受影响的用户) ，甚至警报类型。
+- **严重性** 是由安全组及其Microsoft 365 Defender组件指定的级别。
+- 影响由组织确定，通常包括但不限于受影响的用户、设备、受影响服务的阈值数量 (或其) ，甚至警报类型。
 
 然后，分析员根据组织设置的 **优先级** 条件启动调查。
 
@@ -98,7 +98,7 @@ Microsoft 365 Defender多个 Microsoft 安全平台接收警报和事件作为�
 
 了解警报周围的上下文同样重要。 通常，警报不是单个独立事件。 存在一系列可能未同时发生的进程、命令和操作。 因此，你必须在设备时间线中查找可疑实体的第一个和最后一个活动，以了解警报的上下文。
 
-有多种方法可以读取和分析数据，Microsoft 365 Defender但分析人员的最终目标是尽快响应事件。 尽管Microsoft 365 Defender通过行业领先的自动调查和响应功能 ([修正 MTTR ](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)) 平均时间，但始终存在需要手动分析的情况。[](m365d-autoir.md)
+有多种方法可以读取和分析数据，Microsoft 365 Defender但分析人员的最终目标是尽快响应事件。 尽管Microsoft 365 Defender自动调查和响应功能 ([MTTR ](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)) 修正平均时间，但始终存在需要手动分析的情况。[](m365d-autoir.md)
 
 下面是一个示例：
 
@@ -118,7 +118,7 @@ Microsoft 365 Defender多个 Microsoft 安全平台接收警报和事件作为�
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="用户页面示例。":::
 
-4. 在用户页面上，从 *TOR 网络 IP* 地址警报的"有风险登录"开始的事件按时间顺序排列。 虽然活动的可疑程度取决于组织如何开展业务的性质，但在大多数情况下，使用 Onion 路由器 (TOR) （允许用户在企业环境中匿名浏览 Web 的网络）对于常规联机操作来说，可能性很小，也是不必要的。
+4. 在用户页面上，从 *TOR 网络 IP* 地址警报的"有风险登录"开始的事件按时间顺序排列。 虽然活动的可疑程度取决于组织如何开展其业务的性质，但在大多数情况下，使用 Onion 路由器 (TOR) （允许用户在企业环境中匿名浏览 Web 的网络）对于常规联机操作可能被视为不可能和不必要的。
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="用户的事件按时间顺序列表的示例。":::
 

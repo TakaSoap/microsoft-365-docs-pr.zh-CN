@@ -16,21 +16,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，了解如何比较设备合规性策略设置。
-ms.openlocfilehash: 5e4fc396e2ea1e1cce576f6064f4239179db33cc
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+ms.openlocfilehash: 30645ef4d59fcdee0d994ae709ff9bb45fc21b09
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62859249"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320363"
 ---
 # <a name="compare-device-compliance-policy-settings"></a>比较设备合规性策略设置
 
-> [!NOTE]
-> 本文中所述的功能为预览版，可能会更改，并且仅对满足要求的合作伙伴 [可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md)。
+Microsoft 365 Lighthouse，可以在单个视图中查看租户中的合规性策略。 通过比较策略，可以推动租户的安全性和标准化。 可以筛选视图以查看已 (配置的设置与未) 的设置、配置中不同的设置或匹配的设置。 还可以搜索特定设置，以查看它们如何跨策略进行比较。
 
-Microsoft 365 Lighthouse，可以在单个视图中查看租户中的合规性策略。 通过比较策略，可以推动租户的安全性和标准化。 你可以筛选视图以查看已配置的设置 (配置与未在) 配置的设置、不同配置中的设置或匹配的设置。 还可以搜索特定设置，以查看它们如何跨策略进行比较。
-
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 确保设备具有Microsoft Intune许可证，并且已注册MICROSOFT ENDPOINT MANAGER (MEM) 。
 
@@ -49,7 +46,7 @@ Microsoft 365 Lighthouse，可以在单个视图中查看租户中的合规性�
 
 5. 选择 **"比较"**。
 
-你可以筛选结果以查看不同的 **设置、匹配** 设置 **或** 配置 **设置。**
+你可以筛选结果以查看不同 **设置、匹配** 设置 **或** 配置 **设置。**
 
 ## <a name="configure-a-policy-setting"></a>配置策略设置
 
@@ -71,4 +68,4 @@ Microsoft 365 Lighthouse，可以在单个视图中查看租户中的合规性�
 
 [什么是 Intune 中的设备注册?](/mem/intune/enrollment/device-enrollment)  (文章)   
 [使用合规性策略为使用 Intune](/mem/intune/protect/device-compliance-get-started) 管理的设备设置规则， (文章)   
-[使用基线部署标准租户配置](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) 概述 (文章) 
+[使用基线部署标准租户配置的](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) 概述 (文章) 

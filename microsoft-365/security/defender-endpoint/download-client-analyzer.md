@@ -13,17 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6dd14da2955cf9ee701f7b2bf6031bf27c78beda
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a2763cdd670ee3916dfe4e9d3cbd42df21709f41
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166406"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316011"
 ---
 # <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>下载 Microsoft Defender for Endpoint 客户端分析器
 
@@ -39,6 +37,6 @@ ms.locfileid: "61166406"
 
 ## <a name="download-client-analyzer-for-macos-or-linux"></a>下载适用于 macOS 或 Linux 的客户端分析器
 
-1. 最新稳定版本将集成到终结点代理的 MDE 中。 确保运行的是最新版本的[macOS](mac-whatsnew.md)或[Linux。](linux-whatsnew.md)
+1. 最新稳定版本将集成到终结点代理的 MDE 中。 确保运行的是 [macOS](mac-whatsnew.md) 或 [Linux 的最新版本](linux-whatsnew.md)。
 
 2. 可从以下 URL 直接下载最新预览版： <https://aka.ms/XMDEClientAnalyzer>

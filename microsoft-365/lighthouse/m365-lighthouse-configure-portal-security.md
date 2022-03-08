@@ -15,81 +15,64 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，了解如何配置门户安全性。
-ms.openlocfilehash: c40805267320488e79c774954fd8f6bd696449fa
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，了解如何配置门户安全性。
+ms.openlocfilehash: 8f8ec851d2ce6795565530e120f3704128336ea2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374252"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323117"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>配置Microsoft 365 Lighthouse门户安全性
 
-> [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
-
-当 Managed Service Provider (MSP) 其租户具有委派访问权限时，保护客户数据的访问是网络安全的优先级。 Microsoft 365 Lighthouse具有必需和可选功能，可帮助你配置 Lighthouse 门户安全性。
+当 Managed Service Provider (MSP) 其租户具有委派访问权限时，保护客户数据的访问是网络安全的优先级。 Microsoft 365 Lighthouse具有必需和可选功能，可帮助你配置 Lighthouse 门户安全性。 你必须使用启用了 MFA 的多重 (设置) 角色，然后才能访问 Lighthouse。 可以选择设置 PIM Azure AD Privileged Identity Management (和) 访问。
 
 ## <a name="set-up-multifactor-authentication-mfa"></a>设置 MFA (多重) 
 
-如博客文章 [Pa$$word并不重要](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984)：
+如博客文章 Pa [$$word并不重要](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984)：
 
 > "你的密码无关紧要，但 MFA 会这样做。 根据我们的研究，如果使用 MFA，你的帐户泄露的可能性将超过 99.9%。"
 
 当用户首次访问 Lighthouse 时，如果用户的 Microsoft 365 帐户尚未配置 MFA，系统将提示他们设置 MFA。 在所需的 MFA 设置步骤完成之前，用户无法访问 Lighthouse。 若要了解有关身份验证方法的更多信息，请参阅[设置Microsoft 365登录进行多重身份验证](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)。
 
-## <a name="set-up-roles-to-manage-customer-tenants"></a>设置角色以管理客户租户
+## <a name="set-up-role-based-access-control"></a>设置基于角色的访问控制
 
-对 Lighthouse 中的客户租户数据和设置的访问权限仅限于云解决方案提供商云解决方案提供商计划云解决方案提供商计划 (支持) 角色。
+基于角色的访问控制 (RBAC) 基于用户角色授予对资源或信息的访问权限。 对 Lighthouse 中的客户租户数据和设置的访问权限仅限于云解决方案提供商计划云解决方案提供商 (特定) 角色。 若要在 Lighthouse 中设置 RBAC 角色，我们建议使用 GDAP (委派管理员) 为用户实现精细分配。
 
-可以通过查看"所有组"页上的安全组成员身份来检查合作伙伴租户中哪些用户具有管理员代理和支持代理角色Azure AD[组](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups)成员身份。 若要了解如何向用户分配云解决方案提供商计划角色和其他权限，请参阅向用户分配 [角色和权限](/partner-center/permissions-overview)。 作为 MSP，如果尚未将访问权限委派给客户租户，请通过获取客户服务或订阅的权限一文了解如何 [获取权限](/partner-center/customers-revoke-admin-privileges)。
+若要开始使用 GDAP，请参阅 [设置角色以管理客户租户](m365-lighthouse-set-up-roles.md)。
 
-下表列出了不同的 Lighthouse 页面以及查看和操作客户租户数据和管理员代理和技术支持代理角色设置所需的权限。<br><br>
+MSP 技术人员还可通过使用管理员代理或支持人员代理角色通过 DAP (访问) 。
 
-| Lighthouse 页面 | 管理员代理权限 | 支持人员代理权限 |
-|--|--|--|
-| 家庭版 | <ul><li>查看全部</li></ul> | <ul><li>查看全部</li></ul> |
-| 租户 | <ul><li>查看全部</li><li>更新客户联系人和网站</li><li>查看和应用部署计划</li></ul> | <ul><li>查看全部</li><li>更新客户联系人和网站</li><li>查看部署计划</li></ul> |
-| 用户 | <ul><li>查看全部</li><li>重置密码</li><li>阻止登录</li><li>启用 MFA</li></ul> | <ul><li>查看全部</li><li>重置密码</li><li>阻止登录</li></ul> |
-| 设备 | <ul><li>查看全部</li></ul> | <ul><li>查看全部</li></ul> |
-| 威胁 | <ul><li>查看全部</li><li>运行快速扫描</li><li>运行完全扫描</li><li>重新启动设备</li><li>更新防病毒</li></ul> | <ul><li>查看全部</li></ul> |
-| 基线 | <ul><li>查看全部</li></ul> | <ul><li>查看全部</li></ul> |
-| 服务运行状况 | <ul><li>查看全部*</li></ul> | <ul><li>查看全部*</li></ul> |
-
-> [!NOTE]
-> 目前，若要执行表中标记为 * 的操作，用户还需要在合作伙伴租户中具有以下属性集的 Azure AD 角色 **：microsoft.office365.serviceHealth/allEntities/allTasks**。 有关角色Azure AD，请参阅Azure AD[角色。](/azure/active-directory/roles/permissions-reference)
-
-鉴于与管理员代理角色相关的广泛权限，我们建议在将合作伙伴租户用户指定为管理员代理而非支持代理[](/azure/active-directory/develop/secure-least-privileged-access)时遵循最小特权访问原则。 为此，一个方法就是将支持代理角色分配给所需的合作伙伴租户用户。 这样，他们可以查看客户数据和设置，但不能进行广泛更改。 然后，根据需要，使用 PIM Azure AD Privileged Identity Management (的实时访问审批) 为用户提供时间范围的管理员代理角色。
+对于 Lighthouse (中的非客户租户相关操作，例如载入、客户停用/重新激活、管理标记、查看日志) ，MSP 技术人员必须在合作伙伴租户中分配有角色。 上一篇文章链接详细介绍了在 Lighthouse 中的角色及其权限。
 
 ## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>设置Azure AD Privileged Identity Management (PIM) 
 
-通过使用 PIM 管理程序，MSP 可以最大程度地减少有权访问Azure AD Privileged Identity Management (资源) 。 PIM 降低了恶意用户访问资源或授权用户无意中影响敏感资源的机会。 MSP 还可以授予用户实时特权访问资源，并监视指定用户使用其特权访问执行哪些操作。
+MSP 可以最大程度地减少使用 PIM 对保护信息或资源具有高特权角色访问权限的用户数量。 PIM 降低了恶意用户访问资源或授权用户无意中影响敏感资源的机会。 MSP 还可以授予用户实时高特权角色以访问资源、进行广泛更改以及监视指定用户使用其特权访问执行哪些操作。 
 
 > [!NOTE]
-> 使用 Azure AD PIM 需要Azure AD Premium P2租户中的许可证。
+> 使用Azure AD PIM 需要Azure AD Premium P2租户中的许可证。
 
-以下步骤使用 PIM 将合作伙伴租户用户提升为时间范围的管理员Azure AD角色：
+以下步骤使用 PIM 将合作伙伴租户用户提升为时间范围的更高特权角色：
 
-1. 创建角色可分配组，如文章创建组[以](/azure/active-directory/roles/groups-create-eligible)在角色分配Azure Active Directory。
+1. 创建角色可分配组，如创建组[以](/azure/active-directory/roles/groups-create-eligible)在角色分配Azure Active Directory。
 
-2. 转到["Azure AD –](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups)所有组"，将新组添加为"管理员代理"组的成员。
+2. 转到["Azure AD –](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) 所有组"，将新组添加为高特权角色的安全组的成员 (例如，DAP 的管理员代理安全组或 GDAP 角色安全组的类似) 。
 
 3. 设置新组的特权访问，如分配特权访问组的合格所有者和成员 [一文中所述](/azure/active-directory/privileged-identity-management/groups-assign-member-owner)。
 
-若要了解更多信息，请参阅[什么是Privileged Identity Management？](/azure/active-directory/privileged-identity-management/pim-configure)
+若要了解有关 PIM 的更多信息，请参阅[什么是Privileged Identity Management？](/azure/active-directory/privileged-identity-management/pim-configure)
 
-## <a name="other-roles-and-permissions"></a>其他角色和权限
+## <a name="set-up-risk-based-azure-ad-conditional-access"></a>设置基于风险Azure AD条件访问
 
-下表列出了合作伙伴租户角色及其关联权限。<br><br>
+MSP 可以使用基于风险的条件访问，以确保其员工成员通过使用 MFA 和更改密码来证明其身份，当被检测为凭据泄露的风险用户 (或按 Azure AD 威胁情报) 。 当检测到存在风险登录时，用户还必须从熟悉的位置或注册的设备登录。 其他有风险的行为包括从恶意或匿名 IP 地址或者非典型或不可能的旅行位置登录、使用异常令牌、使用密码来自密码的密码，或者呈现其他异常登录行为。 根据用户的风险级别，MSP 还可以选择在登录时阻止访问。 若要详细了解风险，请参阅 [什么是风险？](/azure/active-directory/identity-protection/concept-identity-protection-risks) 
 
-| 合作伙伴租户角色 | 合作伙伴租户内的权限 |
-|--|--|
-| 合作伙伴租户的全局管理员 | <ul><li>在"公司"中注册Microsoft 365 管理中心。</li><li>在首次运行体验期间接受合作伙伴合同修正。</li><li>在"租户"页上查看客户租户。</li><li>激活和停用租户。</li><li>更新客户联系人和网站。</li><li>创建、更新和删除标记。</li><li>分配和删除客户租户中的标记。</li></ul> |
-| 至少具有一个合作伙伴租户的合作伙伴租户管理员<br> Azure AD属性集分配的角色：<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br>  (有关角色Azure AD，请参阅Azure AD[角色](/azure/active-directory/roles/permissions-reference).)  | <ul><li>创建 Lighthouse 服务请求。</li></ul> |
-
+> [!NOTE]
+> 条件访问需要Azure AD Premium P2租户中的许可证。 若要设置条件访问，请参阅 [Configuring Azure Active Directory Conditional Access](/appcenter/general/configuring-aad-conditional-access)。
 
 ## <a name="related-content"></a>相关内容
 
+[密码重置权限](/azure/active-directory/roles/permissions-reference#password-reset-permissions) (文章) \
+[本文Microsoft 365 Lighthouse (](m365-lighthouse-requirements.md)的要求) \
 [Microsoft 365 Lighthouse (](m365-lighthouse-overview.md)概述) \
-[注册Microsoft 365 Lighthouse (](m365-lighthouse-sign-up.md)文章) \
+[注册Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (文章) \
 [Microsoft 365 Lighthouse常见问题](m365-lighthouse-faq.yml) (文章) 

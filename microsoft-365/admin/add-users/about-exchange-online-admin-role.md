@@ -2,8 +2,8 @@
 title: 关于Exchange Online管理员角色
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -22,20 +22,20 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: Exchange管理员管理组织的电子邮件和邮箱。 例如，他们恢复用户邮箱中的已删除项目。
-ms.openlocfilehash: f889b2c482734518d1a73802c3422c13bc5c4a59
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: f046d9d85c677d0793d2b991736185b49f4174e9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421386"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315325"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>关于Exchange Online管理员角色
 
-为了帮助你管理Microsoft 365，可以从管理中心向用户[](assign-admin-roles.md)分配管理组织的电子邮件<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">和Exchange权限</a>。 为此，可将其分配到Exchange管理员角色。
+为了帮助你管理Microsoft 365，可以从管理中心向用户分配[](assign-admin-roles.md)管理组织的电子邮件<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">和Exchange权限</a>。 为此，可将其分配到Exchange管理员角色。
   
- **提示**：将某人分配给 Exchange管理员角色时，还要将其分配到服务管理员角色。 这样，他们就可以在 Microsoft 365 管理中心中查看重要信息，如 Exchange Online 服务的运行状况，以及更改和发布通知。
+ **提示**：将某人分配到 Exchange 管理员角色时，还要将其分配到服务管理员角色。 这样，他们就可以在 Microsoft 365 管理中心中查看重要信息，如 Exchange Online 服务的运行状况，以及更改和发布通知。
 
-下面是用户在被分配到管理员角色时可以执行Exchange任务：
+下面是在将用户分配到管理员角色后，可以执行Exchange任务：
   
 - [恢复用户邮箱中已删除的项目 - 管理员帮助](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -43,7 +43,7 @@ ms.locfileid: "61421386"
 
 - 设置邮箱功能，如邮箱共享策略：用户如何与组织外部的其他人共享日历和联系人信息。
 
-- 为某人[的邮箱](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)设置"代理发送[](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)"和"代表发送"代理。 例如，主管可能希望其助手可以代表发送邮件。
+- 为某人[的邮箱](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)设置"代理发送"[和"代表](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)发送"代理。 例如，主管可能希望其助手可以代表发送邮件。
 
 - [创建共享邮箱](../email/create-a-shared-mailbox.md) ，以便一组人员可以从公用电子邮件地址监视和发送电子邮件。
 
@@ -63,6 +63,6 @@ ms.locfileid: "61421386"
 
 - [关于 SharePoint Online 管理员角色](/sharepoint/sharepoint-admin-role)
 
-- [关于 Skype for Business 管理员角色](/skypeforbusiness/skype-for-business-online)
+- [关于Skype for Business管理员角色](/skypeforbusiness/skype-for-business-online)
 
 - [使用Microsoft Teams管理员角色](/MicrosoftTeams/using-admin-roles)

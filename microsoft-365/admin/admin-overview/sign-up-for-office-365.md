@@ -2,8 +2,8 @@
 title: 如何注册 - 管理员帮助
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: seemg, pablom
 audience: Admin
@@ -16,11 +16,11 @@ ms.collection:
 - TRN_SMB
 - Adm_TOC
 ms.custom:
+- commerce_signup
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_signup
 - AdminTemplateSet
 - adminvideo
 - intro-get-started
@@ -29,12 +29,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 了解你需要了解哪些信息，然后再完成注册Office 365。
 ms.date: 03/17/2021
-ms.openlocfilehash: bb74ab42bb16cc2d8b3a97850ae9be17600bfc9a
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 045540074b42b528c07d638d643f0d1b74e1f724
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805900"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315885"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何注册 - 管理员帮助
 
@@ -42,12 +42,12 @@ ms.locfileid: "62805900"
 
 ::: moniker range="o365-21vianet"
 
-如果你在中国，由世纪Office 365运营的云服务旨在满足中国对安全、可靠且可扩展的云服务的需求。 此服务由 Microsoft 授权给世纪互联使用的技术提供支持。 Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管理此服务的交付。 世纪互联是中国最大的运营商中立 Internet 数据中心服务提供商，提供托管、托管网络服务及云计算基础结构服务。 通过许可 Microsoft 技术，世纪银行运营本地 Microsoft 数据中心，让你能够使用 Microsoft 服务，同时将数据保留在中国。 世纪互联还提供订阅、计费服务和支持。
+如果你在中国，由世纪Office 365运营的云服务旨在满足中国对安全、可靠且可扩展的云服务的需求。 此服务由 Microsoft 授权给世纪互联使用的技术提供支持。 Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管理此服务的交付。 世纪互联是中国最大的运营商中立 Internet 数据中心服务提供商，提供托管、托管网络服务及云计算基础结构服务。 通过授权 Microsoft 技术，世纪银行运营本地 Microsoft 数据中心，让你能够使用 Microsoft 服务，同时将数据保留在中国。 世纪互联还提供订阅、计费服务和支持。
   
 > [!NOTE]
 > 这些服务受到中国法律的制约。
   
-注册由世纪Office 365运营的 Office 365，以便你的团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
+注册由世纪Office 365运营的 Excel，以便你的团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
   
 准备好注册了吗？ [选择计划](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)。
   
@@ -95,7 +95,7 @@ ms.locfileid: "62805900"
     > [!NOTE]
     > 此处输入的电子邮件地址不同于Microsoft 365电子邮件地址 (登录名下方) 。 因为我们也会向此地址发送您的帐单信息，因此建议您使用适用于接收业务电子邮件的电子邮件地址。
   
-- **登录名 (用户 ID) ：** 此用户 ID 将成为你Microsoft 365，只是为了快速入门。
+- **登录名 (用户 ID) ：** 此用户 ID 将成为你Microsoft 365电子邮件地址，只是为了快速入门。
 
     此用户 ID 是用于登录的电子邮件地址。 例如，如果您的企业名称是 Fourth Coffee，则您可能会选择使用 rob@fourthcoffee.onmicrosoft.com 作为用户 ID。
 

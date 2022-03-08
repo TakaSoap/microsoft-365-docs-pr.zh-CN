@@ -18,14 +18,15 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 recommendations: false
 description: 了解如何部署具有基线保护级别的团队。
-ms.openlocfilehash: ac16f3a1fd70cca22d0cc44e326d173b30cff77f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 21fe46a9df9b67c41ff2c0a21fbbe175295e1fdf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208357"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312735"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>配置具有基线保护的团队
 
@@ -68,10 +69,10 @@ ms.locfileid: "60208357"
 为了降低意外与组织外部人员共享文件或文件夹的风险，建议将 SharePoint 的默认共享链接更改为“*仅限组织中的人员*”。 （如果用户需要在外部共享，并且启用了来宾共享，他们在共享时仍可以更改链接类型。）
 
 更改默认共享链接
-1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在“**策略**”下，单击“**共享**”。
-3. 在“**文件和文件夹链接**”下，选中“**仅限组织中的人员**”。
-4. 单击“**保存**”。
+
+1. 打开 SharePoint 管理中心，在 **策略** 下，选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共享**</a>。
+1. 在“**文件和文件夹链接**”下，选中“**仅限组织中的人员**”。
+1. 选择“保存”。
 
 为了获得最佳的来宾共享体验，我们还建议你启用 [SharePoint 和 OneDrive与 Azure AD B2B 集成](/sharepoint/sharepoint-azureb2b-integration-preview)。
 

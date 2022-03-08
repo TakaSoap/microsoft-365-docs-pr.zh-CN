@@ -1,9 +1,9 @@
-- name: 'Microsoft Defender for Business (预览) '
+- name: Microsoft Defender 商业版
   href: index.yml
   items:
     - name: 概述
       items:
-        - name: 什么是 Microsoft Defender for Business (预览版) ？
+        - name: 什么是 Microsoft Defender for Business？
           href: mdb-overview.md
         - name: 简化的配置过程
           href: mdb-simplified-configuration.md
@@ -11,9 +11,9 @@
           href: compare-mdb-m365-plans.md
         - name: 与 Microsoft 365 Lighthouse
           href: mdb-lighthouse-integration.md
-    - name: 入门
+    - name: 开始行动
       items:
-        - name: '获取 Defender for Business (预览) '
+        - name: 获取 Defender for Business
           href: get-defender-business.md
         - name: 使用安装向导
           href: mdb-use-wizard.md
@@ -35,7 +35,7 @@
           href: mdb-email-notifications.md
         - name: 步骤 4 - 载入设备
           href: mdb-onboard-devices.md
-        - name: 步骤 5 - 配置安全设置
+        - name: 步骤 5 - 配置安全策略
           href: mdb-configure-security-settings.md
     - name: 查看和响应检测到的威胁
       items:
@@ -73,5 +73,7 @@
           href: mdb-faq.yml
         - name: 疑难解答
           href: mdb-troubleshooting.yml
+        - name: Microsoft 365 商业高级版
+          href: /microsoft-365/business-premium
         - name: Microsoft 365 Lighthouse
           href: /microsoft-365/lighthouse/m365-lighthouse-overview

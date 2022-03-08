@@ -2,13 +2,13 @@
 title: 连接 Namecheap 将 DNS 记录Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: 了解在 Namecheap for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: 31938656e17104d1388b53c05b6ccf3af9afc30f
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 146b76ef95a725faa3457eaf1795b153133cef92
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587025"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314989"
 ---
 # <a name="connect-your-dns-records-at-namecheap-to-microsoft-365"></a>连接 Namecheap 将 DNS 记录Microsoft 365
 
@@ -51,23 +51,23 @@ ms.locfileid: "60587025"
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="登录到 Namecheap。":::
 
-1. 在登录页面上的"帐户 **"下**， **从** 下拉列表中选择"域列表"。 
+1. 在登录页面上的"帐户 **"下****，从** 下拉列表中选择"域列表"。 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="从下拉列表中选择&quot;域列表&quot;。":::
 
-1. 在"域列表"页上，选择要编辑的域，然后选择"管理 **"。**
+1. 在"域列表"页上，选择要编辑的域，然后选择"管理 **"**。
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="选择&quot;管理&quot;。":::
 
-1. 选择 **"高级 DNS"。**
+1. 选择 **"高级 DNS"**。
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="选择&quot;高级 DNS&quot;。":::
 
-1. 在"**主机记录"** 部分，选择"**添加新记录"。**
+1. 在" **主机记录"** 部分，选择" **添加新记录"**。
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="选择&quot;添加新记录&quot;。":::
 
-1. 在"**类型"** 下拉列表中，选择 **"TXT 记录"。**
+1. 在" **类型"** 下拉列表中，选择 **"TXT 记录"**。
     
     > [!NOTE]
     > 选择 **"添加新** 记录"时，将自动显示"类型 **"下拉列表**。 
@@ -94,9 +94,9 @@ ms.locfileid: "60587025"
 
 若要验证记录是否Microsoft 365：
   
-1. 在管理中心中，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"。**</a>
+1. 在管理中心，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**域"**</a>。
     
-1. On the Domains page， select the domain that you're verifying， and select **Start setup**. 
+1. 在"域"页面上，选择要验证的域，然后选择"开始 **设置"**。 
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="选择&quot;开始设置&quot;。":::
 
@@ -113,35 +113,35 @@ ms.locfileid: "60587025"
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="登录到 Namecheap。":::
 
-1. 在登录页面上的"帐户 **"下**， **从** 下拉列表中选择"域列表"。 
+1. 在登录页面上的"帐户 **"下****，从** 下拉列表中选择"域列表"。 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="从下拉列表中选择&quot;域列表&quot;。":::
 
-1. 在"**域列表"** 页上，选择要编辑的域，然后选择"管理 **"。**
+1. 在" **域列表** "页上，选择要编辑的域，然后选择"管理 **"**。
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="选择&quot;管理&quot;。":::
 
-1. 选择 **"高级 DNS"。**
+1. 选择 **"高级 DNS"**。
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="选择&quot;高级 DNS&quot;。":::
 
-1. 在"**邮件设置"** 部分，从"电子邮件转发"下拉列表 **中选择**"自定义 **MX"。** 
+1. 在"**邮件设置"** 部分，从"电子邮件转发"下拉列表 **中选择**"自定义 **MX**"。 
     
     （您可能需要向下滚动。）
 
      :::image type="content" source="../../media/40199e2c-42cf-4c3f-9936-3cbe5d4e81a4.png" alt-text="选择&quot;自定义 MX&quot;。"::: 
 
-1. 选择 **"添加新记录"。**
+1. 选择 **"添加新记录"**。
 
      :::image type="content" source="../../media/8d169b81-ba48-4d51-84ea-a08fa1616457.png" alt-text="添加新记录。":::
 
 1. 在新记录的框中，键入或复制并粘贴下表中的值。
     
-    **("优先级"** 框是"值"框右边 **的未命名** 框。 从 **下拉列表中选择 TTL** 值。)  
+     (**"优先级"** 框是"值"框右边 **的未命名** 框。 从 **下拉列表中选择 TTL** 值。)  
     
     |**类型**|**主机**|**值**|**优先级**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX 记录  <br/> |@  <br/> |\<*domain-key*\>.mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的帐户。  如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/> |30 分钟  <br/> |
+    |MX 记录  <br/> |@  <br/> |\<*domain-key*\>.mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从 Microsoft  *\<domain-key\>*  帐户获取你的帐户。  如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/> |30 分钟  <br/> |
 
      :::image type="content" source="../../media/f3b76d62-5022-48c1-901b-8615a8571309.png" alt-text="复制并粘贴表中的值。":::
 
@@ -167,23 +167,23 @@ ms.locfileid: "60587025"
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="登录到 Namecheap。":::
 
-1. 在登录页面上的"帐户 **"下**， **从** 下拉列表中选择"域列表"。 
+1. 在登录页面上的"帐户 **"下****，从** 下拉列表中选择"域列表"。 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="选择&quot;域列表&quot;。":::
 
-1. 在"**域列表"** 页上，选择要编辑的域，然后选择"管理 **"。**
+1. 在" **域列表** "页上，选择要编辑的域，然后选择"管理 **"**。
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="选择&quot;管理&quot;。":::
 
-1. 选择 **"高级 DNS"。**
+1. 选择 **"高级 DNS"**。
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="选择&quot;高级 DNS&quot;。":::
 
-1. 在"**主机记录"** 部分，选择"**添加新记录"。**
+1. 在" **主机记录"** 部分，选择" **添加新记录"**。
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="选择&quot;添加新记录&quot;。":::
 
-1. 在"**类型"** 下拉列表中，选择 **"CNAME 记录"。**
+1. 在" **类型"** 下拉列表中，选择 **"CNAME 记录"**。
     
     > [!NOTE]
     > 选择 **"添加新** 记录"时，将自动显示"类型 **"下拉列表**。 
@@ -205,27 +205,27 @@ ms.locfileid: "60587025"
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个 *包含这*  两组值的 SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一 *个包含这*  两组值的 SPF 记录。 
 
 1. To get started， go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). 系统将提示你登录并继续。
     
-1. 在登录页面上的"帐户 **"下**， **从** 下拉列表中选择"域列表"。 
+1. 在登录页面上的"帐户 **"下****，从** 下拉列表中选择"域列表"。 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="选择&quot;域列表&quot;。":::
 
-1. 在"**域列表"** 页上，选择要编辑的域，然后选择"管理 **"。**
+1. 在" **域列表** "页上，选择要编辑的域，然后选择"管理 **"**。
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="选择&quot;管理&quot;。":::
 
-1. 选择 **"高级 DNS"。**
+1. 选择 **"高级 DNS"**。
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="选择&quot;高级 DNS&quot;。":::
 
-1. 在"**主机记录"** 部分，选择"**添加新记录"。**
+1. 在" **主机记录"** 部分，选择" **添加新记录"**。
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="选择&quot;添加新记录&quot;。":::
 
-1. 在"**类型"** 下拉列表中，选择 **"TXT 记录"。**
+1. 在" **类型"** 下拉列表中，选择 **"TXT 记录"**。
     
     > [!NOTE]
     > 选择 **"添加新** 记录"时，将自动显示"类型 **"下拉列表**。 
@@ -248,7 +248,7 @@ ms.locfileid: "60587025"
 
 ## <a name="advanced-option-skype-for-business"></a>高级选项：Skype for Business
 
-只有组织将 Skype for Business 用于聊天、电话会议和视频呼叫等联机通信服务时，以及使用 Microsoft Teams。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
+只有组织对联机通信服务（Skype for Business、电话会议和视频呼叫）使用 Microsoft Teams。 Skype 4 条记录：2 条 SRV 记录用于用户到用户的通信，2 条 CNAME 记录用于登录和将用户连接到服务。
 
 ### <a name="add-the-two-required-srv-records"></a>添加两条必需的 SRV 记录
 
@@ -256,23 +256,23 @@ ms.locfileid: "60587025"
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="登录到 Namecheap。":::
 
-1. 在登录页面上的"帐户 **"下**， **从** 下拉列表中选择"域列表"。 
+1. 在登录页面上的"帐户 **"下****，从** 下拉列表中选择"域列表"。 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="选择&quot;域列表&quot;。":::
 
-1. 在"**域列表"** 页上，选择要编辑的域，然后选择"管理 **"。**
+1. 在" **域列表** "页上，选择要编辑的域，然后选择"管理 **"**。
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="选择&quot;管理&quot;。":::
 
-1. 选择 **"高级 DNS"。**
+1. 选择 **"高级 DNS"**。
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="选择&quot;高级 DNS&quot;。":::
 
-1. 在"**主机记录"** 部分，选择"**添加新记录"。**
+1. 在" **主机记录"** 部分，选择" **添加新记录"**。
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="选择&quot;添加新记录&quot;。":::
 
-1. 在"**类型"** 下拉列表中，选择 **"SRV 记录"。**
+1. 在" **类型"** 下拉列表中，选择 **"SRV 记录"**。
     
     > [!NOTE]
     > 选择 **"添加新** 记录"时，将自动显示"类型 **"下拉列表**。 
@@ -299,11 +299,11 @@ ms.locfileid: "60587025"
 
 ### <a name="add-the-two-required-cname-records"></a>添加两个必需的 CNAME 记录 
   
-1. 在"**主机记录"** 部分，选择"**添加新记录"。**
+1. 在" **主机记录"** 部分，选择" **添加新记录"**。
     
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="选择&quot;添加新名称&quot;。":::
 
-1. 在"**类型"** 下拉列表中，选择 **"CNAME"。**
+1. 在" **类型"** 下拉列表中，选择 **"CNAME"**。
     
     > [!NOTE]
     > 选择 **"添加新** 记录"时，将自动显示"类型 **"下拉列表**。 
@@ -338,23 +338,23 @@ ms.locfileid: "60587025"
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="登录到 Namecheap。":::
 
-1. 在登录页面上的"帐户 **"下**， **从** 下拉列表中选择"域列表"。 
+1. 在登录页面上的"帐户 **"下****，从** 下拉列表中选择"域列表"。 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="选择&quot;域列表&quot;。":::
 
-1. 在"**域列表"** 页上，选择要编辑的域，然后选择"管理 **"。**
+1. 在" **域列表** "页上，选择要编辑的域，然后选择"管理 **"**。
     
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="选择&quot;管理&quot;。":::
 
-1. 选择 **"高级 DNS"。**
+1. 选择 **"高级 DNS"**。
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="从下拉列表中选择&quot;管理 DNS 记录&quot;。":::
 
-1. 在"**主机记录"** 部分，选择"**添加新记录"。**
+1. 在" **主机记录"** 部分，选择" **添加新记录"**。
     
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="选择&quot;添加新记录&quot;。":::
 
-1. 在"**类型"** 下拉列表中，选择 **"CNAME 记录"。**
+1. 在" **类型"** 下拉列表中，选择 **"CNAME 记录"**。
     
     > [!NOTE]
     > 选择 **"添加新** 记录"时，将自动显示"类型 **"下拉列表**。 

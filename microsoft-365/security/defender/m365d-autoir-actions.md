@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,15 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: how-to
-ms.custom: autoir
+ms.custom:
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 7f43c41570e8b097e0652b3909d603600de9f96a
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 775781a5df9149ae99f1a051303f5d55c23f1bab
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914213"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323229"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>在操作中心查看和管理操作
 
@@ -40,7 +42,7 @@ ms.locfileid: "60914213"
 
 - [自动调查](m365d-autoir.md) 可能会导致自动执行修正操作或等待您的批准。
 - 防病毒、反恶意软件和其他威胁防护功能可能会导致修正操作，例如阻止文件、URL 或进程，或将项目发送到隔离区。
-- 安全运营团队可以手动采取修正操作，例如，在高级搜寻[期间](advanced-hunting-overview.md)或在调查[警报或](investigate-alerts.md)[事件时](investigate-incidents.md)。
+- 安全运营团队可以手动执行修正操作，例如，在高级搜寻[期间](advanced-hunting-overview.md)或在调查[警报或](investigate-alerts.md)[事件时](investigate-incidents.md)。
 
 > [!NOTE]
 > 必须具有[相应的权限](m365d-action-center.md#required-permissions-for-action-center-tasks)才能批准或拒绝修正操作。 有关详细信息，请参阅 [先决条件](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)。
@@ -49,7 +51,7 @@ ms.locfileid: "60914213"
 
 应尽快批准（或拒绝）挂起的操作，以便自动调查可以继续并及时完成。 
 
-1. 转到 [https://security.microsoft.com](https://security.microsoft.com) 并登录。 
+1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender并</a>登录。 
 
 2. 在“导航”窗格中，选择“操作中心”。 
 
@@ -61,7 +63,7 @@ ms.locfileid: "60914213"
    - 选择 **"打开调查"** 页以查看有关调查的更多详细信息。
    - 选择 **"批准** "以启动挂起的操作。
    - 选择 **"** 拒绝"以防止执行挂起的操作。
-   - 选择 **"开始搜寻**"转到"[高级搜寻"。](advanced-hunting-overview.md) 
+   - 选择 **"开始搜寻** "转到" [高级搜寻"](advanced-hunting-overview.md)。 
 
 ## <a name="undo-completed-actions"></a>撤消已完成的操作
 
@@ -73,11 +75,11 @@ ms.locfileid: "60914213"
 
 ### <a name="undo-one-remediation-action"></a>撤消一个修正操作
 
-1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
+1. 转到操作中心 () [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 登录。
 
 2. 在 **"历史记录** "选项卡上，选择要撤消的操作。
 
-3. 在屏幕右侧窗格中，选择"撤消 **"。**
+3. 在屏幕右侧窗格中，选择"撤消 **"**。
 
 ### <a name="undo-multiple-remediation-actions"></a>撤消多个修正操作
 
@@ -85,15 +87,15 @@ ms.locfileid: "60914213"
 
 2. 在 **"历史记录** "选项卡上，选择要撤消的操作。 确保选择操作类型相同的项目。 将打开一个飞出窗格。
 
-3. 在飞出窗格中， **选择撤消**。
+3. 在飞出窗格中，选择"撤消 **"**。
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>跨多个设备从隔离中删除文件 
 
-1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
+1. 转到操作中心 () [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 登录。
 
 2. 在" **历史记录** "选项卡上，选择具有隔离文件操作 **类型的** 文件。
 
-3. 在屏幕右侧窗格中，选择"应用到此文件的 **X** 更多实例"，然后选择"撤消 **"。**
+3. 在屏幕右侧窗格中，选择"应用到 **此文件的 X** 更多实例"，然后选择"撤消 **"**。
 
 ## <a name="next-steps"></a>后续步骤
 

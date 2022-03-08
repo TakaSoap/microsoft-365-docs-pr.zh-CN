@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照此解决方案中的步骤从员工Microsoft 365并保护组织的数据。
-ms.openlocfilehash: dcbaa1282ee462fd991f04df74008d823a7b621d
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 799a946c85da94fcc3d9e53a4015697d124192ce
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805923"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315171"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概述：删除以前的员工和安全数据
 
@@ -41,11 +41,11 @@ ms.locfileid: "62805923"
 > [!TIP]
 > 如果需要有关本主题中步骤的帮助，请考虑 [与 Microsoft 小型企业专家合作](https://go.microsoft.com/fwlink/?linkid=2186871)。 借助业务助手，你和你的员工在发展业务时，可以针对从加入到日常使用的各个方面随时访问小型企业专家。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 您需要是全局管理员才能完成此解决方案中的步骤。
 
-若要完成本系列中的步骤，请使用Microsoft 365功能和特性。
+若要完成本系列中的步骤，请使用这些功能Microsoft 365功能。
 
 |产品或组件|功能或特性|
 |---|---|
@@ -55,22 +55,6 @@ ms.locfileid: "62805923"
 |Outlook|导入 pst 文件，添加邮箱 |
 |Active Directory|在混合环境中删除用户 |
 
-## <a name="watch-delete-a-user"></a>监视：删除用户
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
-
-当员工离开公司时，你需要将其从企业Microsoft 365中删除。 在执行此操作之前，应阻止他们访问公司文件、保留他们创建的文档，并执行与删除用户相关的其他一些管理任务。
-
-1. 从管理中心，选择" **用户"**，然后选择" **活动用户"**。
-1. 选择要删除的用户，然后选择"删除 **用户"**。
-1. 选中此框可删除其许可证，并选中此框可删除其电子邮件别名。
-1. 选中此框以向另一个用户授予对前员工电子邮件的访问权限，然后选择" **选择用户并设置电子邮件选项"**。
-1. 若要删除关联的电子邮件别名，请选择 **其别名旁边的"X** "。
-1. 查看共享邮箱信息，然后选择"完成 **"**。
-1. 确认选项设置正确，然后选择" **分配并转换"**。
-1. 查看结果，然后选择"关闭 **"**。
-
-删除用户后，您最多有 30 天的时间可以还原其帐户。
 
 ## <a name="solution-remove-a-former-employee"></a>解决方案：删除以前的员工
 
@@ -93,6 +77,22 @@ ms.locfileid: "62805923"
 |[步骤 6 - 删除Microsoft 365员工的许可证](remove-former-employee-step-6.md)|移除许可证后，可将许可证分配给其他人。也可删除许可证，以便在聘用其他人员之前，无需为其付费。  <p> 移除或删除许可证时，用户的旧电子邮件、联系人和日历将保留 **30 days** ，然后永久删除。如果删除许可证但不删除其帐户，则在 30 天后仍可以访问该用户的 OneDrive 中的内容。  |
 |[步骤 7 - 删除以前员工的用户帐户](remove-former-employee-step-7.md)|这会从管理中心中删除帐户。 进行清除，保持干净。|
 
+ ## <a name="watch-delete-a-user"></a>监视：删除用户
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
+
+当员工离开公司时，你需要将其从企业Microsoft 365中删除。 在执行此操作之前，应阻止他们访问公司文件、保留他们创建的文档，并执行与删除用户相关的其他一些管理任务。
+
+1. 从管理中心，选择" **用户"**，然后选择" **活动用户"**。
+1. 选择要删除的用户，然后选择"删除 **用户"**。
+1. 选中此框可删除其许可证，并选中此框可删除其电子邮件别名。
+1. 选中此框以向另一个用户授予对前员工电子邮件的访问权限，然后选择" **选择用户并设置电子邮件选项"**。
+1. 若要删除关联的电子邮件别名，请选择 **其别名旁边的"X** "。
+1. 查看共享邮箱信息，然后选择"完成 **"**。
+1. 确认选项设置正确，然后选择" **分配并转换"**。
+1. 查看结果，然后选择"关闭 **"**。
+
+删除用户后，您最多有 30 天的时间可以还原其帐户。
 ## <a name="related-content"></a>相关内容
 
 [Restore a user (](restore-user.md) article) \

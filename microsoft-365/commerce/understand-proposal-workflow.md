@@ -2,8 +2,8 @@
 title: 了解建议工作流
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: presharm, jmueller
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_purchase
+- AdminSurgePortfolio
 search.appverid: MET150
 description: 了解帮助你购买 Microsoft 产品和服务的建议。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: c358022648bb81c5ca90d348a9d3c3b812c36ff2
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 75674b03a1954c65fbb506baa2de3e37ee20ea5a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372884"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321077"
 ---
 # <a name="understand-the-proposal-workflow"></a>了解建议工作流
 
@@ -97,11 +97,11 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 " **你的组织** "部分显示与之关联的计费帐户。 计费帐户信息从现有计费帐户提取，或由 Microsoft 代表创建。 如果您的组织是另一个组织的关联，则还会看到包含该组织的名称和地址的潜在客户组织部分。
 
-如果这是你的组织第一次与 Microsoft 建立商业关系，并且你尚未签署 MCA，如果贵组织或潜在客户组织下的信息不正确，请联系代表来进行更改。 接受 MCA 后，可以在"帐单"页面上查看和更改组织的地址和联系人Microsoft 365 管理中心。 [](https://go.microsoft.com/fwlink/p/?linkid=2084771) 如果组织名称发生更改，请打开服务请求以进行更新。 [了解如何打开服务请求](../admin/get-help-support.md)。
+如果这是你的组织第一次与 Microsoft 建立商业关系，并且你尚未签署 MCA，如果贵组织或潜在客户组织下的信息不正确，请联系代表来进行更改。 接受 MCA 后，可以在"计费帐户"页面上查看和更改组织的地址和联系人Microsoft 365 管理中心。[](https://go.microsoft.com/fwlink/p/?linkid=2084771) 如果组织名称发生更改，请打开服务请求以进行更新。 [了解如何打开服务请求](../admin/get-help-support.md)。
 
 ### <a name="your-information"></a>你的信息
 
-如果你是新客户，请在"你的信息"下输入你的姓名、电子邮件地址和电话号码，然后选择"保存 **"。** 如果你是现有客户，请验证你的信息是否正确。 若要进行任何更正，请选择"**编辑"，** 进行必要的更改，然后选择"保存 **"。**
+如果你是新客户，请在"你的信息"下输入你的姓名、电子邮件地址和电话号码，然后选择"保存 **"**。 如果你是现有客户，请验证你的信息是否正确。 若要进行任何更正 **，请选择"** 编辑"，进行必要的更改，然后选择"保存 **"**。
 
 准备就绪后，选择" **继续"** 以移动到下一步。
 
@@ -128,7 +128,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 若要对 MCA 进行签名，请选择"下一步 **"下的按钮**。 如果必须签署补充条款，一个链接将你指向 DocuSign 站点，你将在这里按照步骤对文档进行签名。
 
-在签署任何必要的协议或补充条款后，选择 **"转到"以签出**。
+在签署任何必要的协议或补充条款后，选择" **转到结帐"**。
 
 ## <a name="step-3-checkout"></a>步骤 3：签出
 
@@ -138,7 +138,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 此部分显示用于建议的计费帐户。 如果需要更改任何信息，请选择"编辑 **"** 链接。 您还可以使用"编辑 **"** 链接添加组织的税务 ID。 税务 ID 必须与"售达"部分中列出的 **国家/地区** 相关。 如果你有免税，则必须打开支持票证以请求免税状态。
 
-若要了解有关税单以及如何申请免税身份的信息，请参阅税务 [信息](billing-and-payments/tax-information.md)。
+若要了解有关税单以及如何申请免税状态的信息，请参阅税务 [信息](billing-and-payments/tax-information.md)。
 
 ### <a name="billed-to"></a>计费到
 
@@ -159,15 +159,15 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 此部分显示要支付的项数、小计、估计税款和订单总额。
 
-若要下订单，请选择下 **订单** 或 **接受协议 &amp; 下订单**。
+若要下订单，请选择" **下订单"** 或" **接受协议 &amp; 下订单"**。
 
 下订单后，您将收到一条确认消息，确认将采取下一步操作。 如果你购买了 Azure 计划，下一步是在 Azure 门户中设置计费帐户。
 
-## <a name="step-4-set-up-your-new-billing-account-azure-customers-only"></a>步骤 4：仅向 Azure (设置新的) 
+## <a name="step-4-set-up-your-new-billing-account-azure-customers-only"></a>步骤 4：仅向 Azure (设置新的计费) 
 
 如果你是一名新客户，并且已购买 Azure 产品作为建议的一部分，下一步是设置新的计费帐户。 若要了解如何，请参阅 [为 Microsoft 客户协议设置计费帐户](/azure/cost-management-billing/manage/mca-setup-account)。
 
-如果你是具有 企业协议 的现有 Azure 客户，并且你是第一次签署 MCA，下一步是了解协议之间的更改，以及如何使用新的计费帐户完成任务。 若要了解更多信息，请参阅[企业协议客户协议的计费帐户中完成所有任务](/azure/cost-management-billing/manage/mca-enterprise-operations)。
+如果你是具有 企业协议 的现有 Azure 客户，并且你是第一次签署 MCA，下一步是了解协议之间的更改，以及如何使用新的计费帐户完成任务。 若要了解更多信息，请参阅[完成企业协议客户协议的计费帐户中的任务](/azure/cost-management-billing/manage/mca-enterprise-operations)。
 
 ## <a name="understand-invoicing"></a>了解发票
 

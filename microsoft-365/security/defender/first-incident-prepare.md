@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 89f69d0c3bdc1515a83ccf8379435102e78d833c
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: c3b86a133b5126029378018fdac821d5423b2761
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62901034"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321859"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>为第一个事件准备安全状态
 
@@ -36,7 +36,7 @@ ms.locfileid: "62901034"
 **适用于：**
 - Microsoft 365 Defender
 
-准备事件处理涉及为组织网络设置来自不同类型的安全事件的充分保护。 为降低安全事件的风险，美国国家标准和技术协会 (NIST) 推荐了一些安全做法，包括风险评估、强化主机安全、安全配置网络以及预防恶意软件。 
+准备事件处理涉及为组织网络设置来自不同类型的安全事件的充分保护。 为降低安全事件的风险，美国国家标准和技术协会 (NIST) 建议了一些安全做法，包括风险评估、强化主机安全、安全配置网络以及预防恶意软件。 
 
 Microsoft 365 Defender有助于解决事件防护的几个方面： 
 
@@ -49,11 +49,11 @@ Microsoft 365 Defender有助于解决事件防护的几个方面：
 
 [零](/security/zero-trust/) 信任是一种集成的安全理念和端到端策略，它考虑任何现代环境的复杂性质，包括移动工作人员以及用户、设备、应用程序和数据，无论他们位于何处。 通过提供单一窗格以一致的方式管理所有检测，Microsoft 365 Defender使安全运营团队更轻松地实施零信任指导原则。[](/security/zero-trust/#guiding-principles-of-zero-trust) 
 
-Microsoft 365 Defender组件可以显示违反为建立零信任条件访问策略而实现的规则，通过将来自 Microsoft Defender for Endpoint 或其他移动安全供应商的数据集成为设备合规性策略和基于设备的条件访问策略实现的信息源。 
+Microsoft 365 Defender 组件可以显示违反为建立零信任条件访问策略而实现的规则，通过将来自 Microsoft Defender for Endpoint 或其他移动安全供应商的数据集成为设备合规性策略和基于设备的条件访问策略实现的信息源。 
 
-设备风险直接影响该设备的用户可访问的资源。 基于特定条件拒绝访问资源是零信任的主要主题，Microsoft 365 Defender确定信任级别条件所需的信息。 例如，Microsoft 365 Defender通过"威胁和漏洞管理"页提供设备的软件版本级别，而条件访问策略限制具有过时或易受攻击的版本的设备。
+设备风险直接影响该设备的用户可访问的资源。 基于特定条件拒绝访问资源是零信任的主要主题，Microsoft 365 Defender确定信任级别条件所需的信息。 例如，Microsoft 365 Defender通过"威胁和漏洞管理"页提供设备的软件版本级别，而条件访问策略限制具有过时或易受攻击版本的设备。
 
-自动化是实施和维护零信任环境的重要部分，同时减少可能导致发生 IR 事件或 IR 事件 (警报) 数量。 Microsoft 365 Defender组件可以自动化，例如修正[操作 (称为](m365d-autoir.md) Microsoft 365 Defender 门户) 中事件的调查、通知操作，甚至是创建支持票证（如[在 ServiceNow](https://microsoft.service-now.com/sp/) 中）。
+自动化是实施和维护零信任环境的重要部分，同时还减少了可能导致发生 IR 事件或 IR 事件 (警报) 数量。 Microsoft 365 Defender组件可以自动化，例如修正操作 (称为 [](m365d-autoir.md) Microsoft 365 Defender 门户) 中事件的调查、通知操作，甚至是创建支持票证（如[在 ServiceNow](https://microsoft.service-now.com/sp/) 中）。
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>步骤 2. 确定组织的安全状态
 
@@ -61,11 +61,11 @@ Microsoft 365 Defender组件可以显示违反为建立零信任条件访问策�
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Microsoft 安全中心中的 Microsoft 安全分数示例。":::
  
-## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>步骤 3. 评估组织的漏洞暴露
+## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>第 3 步。 评估组织的漏洞暴露
 
 预防事件有助于简化安全操作工作，以重点关注进行中的关键和重要的安全事件。 软件漏洞通常是攻击的可阻止入口点，可能导致数据盗窃、数据丢失或业务运营中断。 如果没有攻击在进行中，则安全操作必须努力在组织中实现并保持可接受的漏洞暴露级别。[](../defender-endpoint/tvm-exposure-score.md)
 
-若要检查软件修补进度，请访问 Defender for Endpoint [](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) 中的"威胁和漏洞管理"页，通过"更多资源"选项卡Microsoft 365 Defender **访问此页面。**
+若要检查软件修补进度，请访问 Defender for Endpoint [](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) 中的"威胁和漏洞管理"页，通过"更多资源"选项卡Microsoft 365 Defender访问此页面。
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Microsoft 安全中心中&quot;威胁和漏洞&quot;页的示例。"::: 
  
@@ -83,7 +83,7 @@ Microsoft 365 Defender组件可以显示违反为建立零信任条件访问策�
 
 你可以实施新兴威胁的建议，以强化安全状况并最大限度地减少攻击面区域。
 
-在日程安排中安排时间来定期查看应用门户中[](threat-analytics.md)的威胁Microsoft 365 Defender部分。 有关详细信息[，请参阅 Microsoft 365 Defender](incidents-overview.md#example-security-operations-for-microsoft-365-defender)安全操作示例。
+安排时间，定期查看应用门户中的威胁Microsoft 365 Defender[](threat-analytics.md)部分。 有关详细信息[，请参阅 Microsoft 365 Defender](incidents-overview.md#example-security-operations-for-microsoft-365-defender) 安全操作示例。
 
 ## <a name="next-step"></a>后续步骤
 

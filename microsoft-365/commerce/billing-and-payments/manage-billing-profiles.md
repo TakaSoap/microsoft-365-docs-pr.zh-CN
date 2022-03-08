@@ -1,14 +1,12 @@
 ---
 title: 了解计费配置文件
-f1.keywords:
-- NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - MACBillingBillsPaymentsBillingProfiles
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -16,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: 了解计费配置文件如何支持发票。
 ms.date: 04/02/2021
-ms.openlocfilehash: 8407e3855a8e497c730925a424b999ed07da6228
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 472b5c4754d686877077133467e33592b5c0b85e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188549"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311855"
 ---
 # <a name="understand-billing-profiles"></a>了解计费配置文件
 
@@ -35,7 +33,7 @@ ms.locfileid: "60188549"
 
 > [!NOTE]
 >
-> 计费配置文件不适用于从 Microsoft.com 或"购买服务"页上购买产品和服务Microsoft 365 管理中心。 
+> 计费配置文件不适用于从 Microsoft.com 购买产品和服务的客户或客户的"购买服务"Microsoft 365 管理中心。
 
 ## <a name="what-are-billing-profile-roles"></a>什么是计费配置文件角色？
 
@@ -72,12 +70,12 @@ ms.locfileid: "60188549"
 
 ## <a name="need-help-contact-support"></a>需要帮助？ 联系支持人员
 
-如果对 Azure 费用有疑问或需要帮助，请通过 Azure 支持 创建 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">支持请求</a>。
+如果对 Azure 费用有疑问或需要帮助，请 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">通过 Azure 支持创建支持请求</a>。
 
-如果你有问题或需要帮助，请联系支持人员Microsoft 365 管理中心[配置文件](../../business-video/get-help-support.md)。
+如果对帐单配置文件有疑问或需要帮助，Microsoft 365 管理中心[联系支持人员](../../admin/get-help-support.md)。
 
 ## <a name="related-content"></a>相关内容
 
 [How to pay for your subscription with a billing profile (](pay-for-subscription-billing-profile.md) article) \
-[了解帐单 (](../manage-billing-accounts.md) 文章) \
+[了解帐单帐户](../manage-billing-accounts.md) (文章) \
 [管理付款方式 (](manage-payment-methods.md) 文章) 

@@ -4,28 +4,29 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekua
-manager: svidican
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
-- Adm_O365
+- Adm_O365W
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkSPO
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 管理员角色映射到业务功能，并提供在管理中心执行特定任务的权限。 例如，服务管理员可打开 Microsoft 的支持票证。
-ms.openlocfilehash: 8232e95649ac894e8a024a2d2ac4e7b4261cb1f2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 813cc178b572be5a6b1abc28d355ede020918c55
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161914"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315241"
 ---
 # <a name="get-started-with-the-roles-page"></a>角色页面入门
 
@@ -34,7 +35,7 @@ ms.locfileid: "60161914"
 ![显示管理员角色的图。](../../media/roles-main-page.png)
 
 > [!TIP]
-> 是否在查找详细的角色说明？ 请查看[Azure AD 内置角色和](/azure/active-directory/roles/permissions-reference)[关于管理员角色](/microsoft-365/admin/add-users/about-admin-roles)。
+> 是否在查找详细的角色说明？ 请查看[Azure AD角色和](/azure/active-directory/roles/permissions-reference)关于[管理员角色](/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="about-the-admin-roles-page"></a>关于管理员角色页面
 
@@ -70,23 +71,23 @@ ms.locfileid: "60161914"
 
 ### <a name="helpdesk-admin"></a>支持管理员
 
-将支持管理员角色分配给想要重置密码的用户，强制用户注销任何安全问题。 他们还可以打开和管理向 Microsoft 支持人员提出的支持请求。 支持人员管理员只能帮助非管理员用户和分配了这些角色的用户：目录读取者、来宾邀请者、支持人员管理员、消息中心读者和报告阅读器。 [了解更多](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+将支持管理员角色分配给想要重置密码的用户，强制用户注销任何安全问题。 他们还可以打开和管理向 Microsoft 支持人员提出的支持请求。 支持人员管理员只能帮助非管理员用户和分配了这些角色的用户：目录读取者、来宾邀请者、支持人员管理员、消息中心读者和报告阅读器。 [了解详细信息](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="service-admin"></a>服务管理员
 
-将服务管理员角色分配给需要为 Azure、Microsoft 365 和 Office 365 服务创建支持请求的用户。 [了解更多](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+将服务管理员角色分配给需要为 Azure、Microsoft 365 和 Office 365 服务创建支持请求的用户。 [了解详细信息](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="sharepoint-admin"></a>SharePoint 管理员
 
-购买订阅Microsoft 365，将自动创建团队网站，全局管理员设置为网站集主管理员。 将SharePoint管理员角色分配给要访问管理中心SharePoint用户。 具有管理SharePoint用户可以创建和管理网站集、指定网站集管理员和管理用户配置文件。 具有 SharePoint 管理员角色的用户还可以管理Microsoft 365组，并通过 Microsoft 支持打开支持请求。 [了解详细信息](/sharepoint/sharepoint-admin-role)
+购买订阅Microsoft 365，将自动创建团队网站，全局管理员设置为网站集主管理员。 将SharePoint管理员角色分配给要访问管理中心SharePoint<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">用户</a>。 具有管理SharePoint用户可以创建和管理网站集、指定网站集管理员和管理用户配置文件。 具有管理员SharePoint用户还可以管理Microsoft 365组，并通过 Microsoft 支持打开支持请求。 [了解详细信息](/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Teams 服务管理员
 
-向Teams管理中心的用户分配 Teams & Skype 管理员角色。 具有 Teams 管理员角色的用户还可以管理Microsoft 365组，并通过 Microsoft 支持打开支持请求。 [了解更多](/MicrosoftTeams/using-admin-roles)
+向Teams管理中心的用户分配 Teams & Skype 管理员角色。 具有 Teams 管理员角色的用户还可以管理Microsoft 365组，并通过 Microsoft 支持打开支持请求。 [了解详细信息](/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>用户管理员
 
-向要访问和管理用户密码重置和管理用户和组的用户分配用户管理员角色。 他们还可以打开和管理向 Microsoft 支持人员提出的支持请求。 [了解更多](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+向要访问和管理用户密码重置和管理用户和组的用户分配用户管理员角色。 他们还可以打开和管理向 Microsoft 支持人员提出的支持请求。 [了解详细信息](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ## <a name="compare-roles"></a>比较角色
 

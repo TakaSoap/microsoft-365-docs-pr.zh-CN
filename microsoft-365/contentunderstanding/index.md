@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何查找 Microsoft SharePoint Syntex 资源。
-ms.openlocfilehash: 665a28c07e5405299cb88ffdce3fbafa1210415a
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: db8526cbf85be1b9db5b95ed0739d0ec948c2faa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322079"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323159"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 简介
 
@@ -58,7 +58,7 @@ SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 
 ## <a name="adoption"></a>采用
 
-详细了解如何在组织中使用和实施SharePoint Syntex解决方案来帮助解决业务问题。
+详细了解如何在组织中使用和实施SharePoint Syntex解决方案，以帮助解决业务问题。
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
@@ -87,8 +87,9 @@ SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 |将保留标签应用于模型|[将保留标签应用于文档理解模型](./apply-a-retention-label-to-a-model.md)|
 |将敏感度标签应用于模型|[将敏感度标签应用于文档理解模型](./apply-a-sensitivity-label-to-a-model.md)|
 |使用预内置模型从文档中提取信息 |[使用预想的模型从发票或收据中提取信息](./prebuilt-models.md)|
+|在本地创建和训练模型SharePoint模型 |[在本地网站创建SharePoint模型](./create-local-model.md)|
 |在其他内容中心使用经过训练的模型 |[发布和发现文档理解模型](./model-discovery.md)|
-|对文档库执行基于元数据的查询|[搜索文档库中的元数据](./metadata-search.md)|
+|对文档库执行基于元数据的查询|[在文档库中搜索元数据](./metadata-search.md)|
 |创建提取程序时使用托管元数据服务术语库分类|[创建提取程序时利用术语库分类](./leverage-term-store-taxonomy.md)|
 |了解如何查看有关模型的数据|[模型使用情况分析](./model-usage-analytics.md)|
 |了解如何在培训模型时使用辅助功能模式|[SharePoint 整合辅助功能模式](./accessibility-mode.md)|

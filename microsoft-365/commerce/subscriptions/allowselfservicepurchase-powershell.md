@@ -2,8 +2,8 @@
 title: 将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_ssp
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 了解如何使用 AllowSelfServicePurchase PowerShell cmdlet 打开或关闭自助服务购买。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 12/15/2021
-ms.openlocfilehash: ebe01b9ed55b13d1d61ae1a59dca3bdb6373f285
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a3800f82386fafe509d9bdabb25cd91422cf058d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765776"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315717"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块
 
@@ -42,14 +42,14 @@ ms.locfileid: "62765776"
 
 若要使用 **MSCommerce** PowerShell 模块，您需要：
 
-- Windows 10设备
+- Windows 10 设备
 - PowerShell 5 或以下产品。 当前，此模块不支持 PowerShell 6.x/7.x。
 - 设备的管理员权限
 - 租户的全局或帐单管理员角色
 
 ## <a name="install-the-mscommerce-powershell-module"></a>安装 MSCommerce PowerShell 模块
 
-在设备上安装 **MSCommerce** PowerShell 模块一Windows 10，然后导入到您启动的每个 PowerShell 会话中。 从 PowerShell 库下载 **MSCommerce** [PowerShell 模块](https://aka.ms/allowselfservicepurchase-powershell-gallery)。
+在 Windows 10 设备上安装 **MSCommerce** PowerShell 模块一次，然后导入到启动的每个 PowerShell 会话中。 从 PowerShell 库下载 **MSCommerce** [PowerShell 模块](https://aka.ms/allowselfservicepurchase-powershell-gallery)。
 
 若要使用 **PowerShellGet** 安装 **MSCommerce** PowerShell 模块，请运行以下命令：
 
@@ -59,13 +59,13 @@ Install-Module -Name MSCommerce
 
 ## <a name="import-mscommerce-into-the-powershell-session"></a>将 MSCommerce 导入 PowerShell 会话
 
-在设备上安装模块Windows 10，然后将其导入到您启动的每个 PowerShell 会话中。 若要将其导入 PowerShell 会话，请运行以下命令：
+在 Windows 10 设备上安装模块后，将其导入到启动的每个 PowerShell 会话中。 若要将其导入 PowerShell 会话，请运行以下命令：
 
 ```powershell
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>连接凭据访问 MSCommerce
+## <a name="connect-to-mscommerce-with-your-credentials"></a>使用凭据连接到 MSCommerce
 
 若要使用凭据连接到 PowerShell 模块，请运行以下命令。
 
@@ -95,18 +95,18 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 
 | 产品 | ProductId |
 |-----------------------------|--------------|
-| Power Apps每个用户 | CFQ7TTC0KP0P |
-| Power Automate每个用户 | CFQ7TTC0KP0N |
+| 每个用户的 Power Apps | CFQ7TTC0KP0P |
+| 每个用户的 Power Automate | CFQ7TTC0KP0N |
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (独立)  | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| Project 计划 1* | CFQ7TTC0HDB1 |
-| Project 计划 3* | CFQ7TTC0HDB0 |
+| 项目计划 1* | CFQ7TTC0HDB1 |
+| 项目计划 3* | CFQ7TTC0HDB0 |
 | Visio 计划 1* | CFQ7TTC0HD33 |
 | Visio 计划 2* | CFQ7TTC0HD32 |
 | Windows 365 企业版 | CFQ7TTC0HTC9 |
 | Windows 365 商业版 | CFQ7TTC0J203 |
-| Windows混合权益的 Windows 365 商业版 | CFQ7TTC0HX99 |
+| 具有 Windows 混合权益的 Windows 365 商业版 | CFQ7TTC0HX99 |
 
 *这些 ID 已更改。 如果您之前使用旧 ID 阻止了产品，则会自动使用新 ID 阻止它们。 无需执行其他工作。
 
@@ -134,7 +134,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>禁用 AllowSelfServicePurchase 的示例脚本
 
-以下示例将引导您完成如何导入 **MSCommerce** 模块、使用帐户登录、获取 Power Automate 的 **ProductId**，然后禁用 **该产品的 AllowSelfServicePurchase**。
+以下示例将指导您完成如何导入 **MSCommerce** 模块、使用帐户登录、获取 Power Automate 的 **ProductId** ，然后禁用 **该产品的 AllowSelfServicePurchase** 。
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -184,6 +184,6 @@ Uninstall-Module -Name MSCommerce
 
 ## <a name="related-content"></a>相关内容
 
-[管理管理员 (自助服务)  (](manage-self-service-purchases-admins.md) 文章) 
+[管理自助服务购买 (管理)  (](manage-self-service-purchases-admins.md) 文章) 
 
 [自助服务购买常见问题 (](self-service-purchase-faq.yml) 文章) 

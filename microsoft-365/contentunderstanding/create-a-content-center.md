@@ -8,17 +8,18 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.custom: admindeeplinkSPO
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何在 Microsoft SharePoint Syntex 中创建内容中心。
-ms.openlocfilehash: e44ed9433562bdfe8da471bd08c4711bc405b92d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0bab102ae440b8cf2c797458e7602c61794d0d06
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205949"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311587"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建内容中心
 
@@ -46,7 +47,7 @@ SharePoint 管理员可以创建内容中心网站，就像通过管理中心网
 
 创建新的内容中心：
 
-1. 在 Microsoft 365 管理中心，转到 [SharePoint 管理中心 **激活网站** 页面](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true)。
+1. 在Microsoft 365 管理中心上，转到活动SharePoint <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">管理>**中心**</a>。
 
 2. 在“**活动网站**”页面上，单击“**创建**”，然后选择“**其他选项**”。
 
@@ -59,7 +60,7 @@ SharePoint 管理员可以创建内容中心网站，就像通过管理中心网
 
 5. 选择“**已完成**”。
  
-创建内容中心网站后，将看到它在 SharePoint 管理中心的“**活动网站**”页面上列出。 
+创建内容中心网站后，你将看到它在管理中心的活动SharePoint列出<a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank"></a>。 
 
 ### <a name="give-access-to-additional-users"></a>授予其他用户访问权限
  

@@ -4,18 +4,23 @@ description: 在订购设备之前，请获取每个型号之一并进行测试
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
+ms.openlocfilehash: aed391128d0a7bfdd3b6a97c9cc661267b867820
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322277"
 ---
-
 # <a name="validate-new-devices"></a>验证新设备
 
-无论你是新用户Microsoft 托管桌面长期订阅者，都建议测试首次在服务中注册的任何设备型号的示例。 无论你是订购全新的设备，还是重新使用现有设备（包括建议用于新设备的设备）Microsoft 托管桌面。
+无论你是新用户Microsoft 托管桌面长期订阅者，都建议测试首次在服务中注册的任何设备型号的示例。 无论你是订购全新的设备还是重新使用现有设备（包括建议用于新设备的设备）Microsoft 托管桌面。
 
 ## <a name="view-devices"></a>查看设备
 
@@ -32,7 +37,7 @@ audience: Admin
 **验证设备：**
 
 1. 通过以下文章中的步骤，以一个或多个新模型示例为例：
-    - [设置 Microsoft 托管桌面设备](set-up-devices.md)
+    - [准备设备](prepare-devices.md)
     - [本地化用户体验](localization.md)
     - [使用 Autopilot 和注册状态页的首次运行体验](esp-first-run.md)
     - [Windows 10 位置服务](device-location.md)

@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e20b993d577f144e80c99479bac7bf70e484f785
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a32c8c91350218da619de18e0b1b398a93bf7fda
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168878"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312628"
 ---
 # <a name="resources"></a>资源
 
@@ -51,7 +51,7 @@ ms.locfileid: "61168878"
 
 2. 重现问题。
 
-3. 运行以下命令以备份适用于终结点日志的 Defender。 这些文件将存储在存档.zip中。
+3. 运行以下命令以备份适用于终结点日志的 Defender。 这些文件将存储在存档.zip内部。
 
    ```bash
    sudo mdatp diagnostic create
@@ -77,7 +77,7 @@ ms.locfileid: "61168878"
 
 如果在安装过程中发生错误，安装程序将只报告常规故障。
 
-详细日志将保存到 `/var/log/microsoft/mdatp/install.log` 。
+详细日志将保存到 `/var/log/microsoft/mdatp/install.log`。
 如果在安装过程中遇到问题，请将此文件发送给我们，以便我们可以帮助诊断原因。
 
 ## <a name="uninstall"></a>卸载
@@ -86,7 +86,7 @@ ms.locfileid: "61168878"
 
 ### <a name="manual-uninstallation"></a>手动卸载
 
-- `sudo yum remove mdatp` 用于 CentOS 和 Oracle Linux (RHEL 和) 。
+- `sudo yum remove mdatp` For RHEL and variants (CentOS and Oracle Linux) .
 - `sudo zypper remove mdatp` 用于 SLES 和变量。
 - `sudo apt-get purge mdatp` 用于 Ubuntu 和 Debian 系统。
 
@@ -96,7 +96,7 @@ ms.locfileid: "61168878"
 
 ### <a name="global-options"></a>全局选项
 
-默认情况下，命令行工具以可读格式输出结果。 此外，该工具还支持将结果输出为 JSON，这适用于自动化方案。 若要将输出更改为 JSON，请 `--output json` 传递给以下任一命令。
+默认情况下，命令行工具以可读格式输出结果。 此外，该工具还支持将结果输出为 JSON，这适用于自动化方案。 若要将输出更改为 JSON，请传递给 `--output json` 以下任一命令。
 
 ### <a name="supported-commands"></a>支持的命令
 
@@ -142,7 +142,7 @@ ms.locfileid: "61168878"
 |隔离管理|从隔离区中删除所有文件|`mdatp threat quarantine remove-all`|
 |隔离管理|将检测为威胁的文件添加到隔离区|`mdatp threat quarantine add --id [threat-id]`|
 |隔离管理|从隔离区中删除检测为威胁的文件|`mdatp threat quarantine remove --id [threat-id]`|
-|隔离管理|从隔离区还原文件|`mdatp threat quarantine restore --id [threat-id]`|
+|隔离管理|从隔离区还原文件|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
 |终结点检测和响应|设置未使用的 (预览) |`mdatp edr early-preview [enable|disable]`|
 |终结点检测和响应|设置 group-id|`mdatp edr group-ids --group-id [group-id]`|
 |终结点检测和响应|设置/删除标记，仅 `GROUP` 受支持|`mdatp edr tag set --name GROUP --value [tag]`|

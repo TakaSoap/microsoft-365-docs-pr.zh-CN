@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 了解如何安全地在小型企业或活动中与Microsoft 365 商业高级版。
-ms.openlocfilehash: 7f53ee3df70e2310e7bb83d676fa18b544e3fb31
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 77ca1cb7171097a0cae6063db20b1868dcd1b448
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886273"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321623"
 ---
 # <a name="microsoft-365-business-premium-overview"></a>Microsoft 365 商业高级版概述
 
@@ -42,18 +42,20 @@ ms.locfileid: "62886273"
 
 | 保护 | 说明 | 链接 |
 | ----- | ----- | ----- | ----- |
-|电子邮件 | 使用多重身份验证、ATP 高级钓鱼保护、ATP 安全链接和安全附件，并使用加密电子邮件获取敏感信息。| [设置多重身份验证](m365-campaigns-multifactor-authentication.md)、[防止网络钓鱼攻击](m365-campaigns-phishing-and-attacks.md)、[加密或标记敏感电子邮件](send-encrypted-email.md) |
-|iPhone 和 Android 设备 |使用多重身份验证，设置 Microsoft 移动应用，并需要 PIN 码 | [设置多重身份验证](m365-campaigns-multifactor-authentication.md)、[设置移动设备](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)|
-|自带设备（BYOD）的 Mac 和 Windows 10 的电脑 |保持 Office 处于最新版本、保持操作系统处于最新版本，并启用安全功能。 | [保护非托管的 Windows 10 电脑和 Mac](m365-campaigns-protect-pcs-macs.md) |
+|电子邮件 | 对敏感信息使用多重身份验证、高级防钓鱼保险箱链接保险箱附件和加密电子邮件。| [设置多重身份验证](m365bp-multifactor-authentication.md) <br/><br/>[抵御网络钓鱼攻击](m365-campaigns-phishing-and-attacks.md)<br/><br/>[加密或标记敏感电子邮件](send-encrypted-email.md) |
+|iPhone 和 Android 设备 |使用多重身份验证、设置 Microsoft 移动应用并需要 PIN | [设置多重身份验证](m365bp-multifactor-authentication.md)<br/><br/>[设置移动设备](../business/set-up-mobile-devices.md)|
+|自带设备办公 (BYOD) Mac 和 Windows 电脑 |保持 Office 处于最新版本、保持操作系统处于最新版本，并启用安全功能。 | [保护非托管Windows和 Mac 设备](m365bp-protect-pcs-macs.md) |
 |安全地存储和共享文件 | 共享来自 Microsoft Teams、OneDrive、SharePoint 和 Microsoft Stream 的文件和视频，并保护敏感数据。| [共享文件和视频](share-files-and-videos.md) |
-|托管的 Windows 10 设备 |为关键员工使用管理设备，并确保设备的安全。 | [设置托管设备](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
+|托管Windows设备 |为关键员工使用管理设备，并确保设备的安全。 | [设置托管设备](../business/set-up-windows-devices.md) |
 
 ## <a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Microsoft 365 商业高级版推荐的安全配置
 
 此 Microsoft 365 商业高级版推荐的安全配置允许：
 
 - 依靠可靠的业务生产力和协作工具，如 Outlook、Word、Excel 和其他 Office 产品。
-- 通过易于管理的企业级安全性保护所有 iOS、Android 和 Windows 10 设备上的工作文件。
+
+- 使用易于管理的企业级安全保护所有 iOS、Android 和 Windows 设备上的工作文件。
+
 - 对用户帐户和标识应用额外保护。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
@@ -63,7 +65,9 @@ ms.locfileid: "62886273"
 此库包括以下内容：
 
 - 关于增加增强的安全性的说明性设置指南。
-- 有关设置设备以实现安全访问的用户帮助。
+
+- 帮助用户设置设备以确保安全访问。
+
 - 有关如何安全协作和共享的指南。
 
 有关所含内容的详细信息，请参阅 [Microsoft 365 商业高级版](https://www.microsoft.com/microsoft-365/business)。
@@ -72,9 +76,9 @@ ms.locfileid: "62886273"
 
 请按照以下步骤开始操作：
 
+- 对于中小型企业[：获取Microsoft 365 商业高级版](get-microsoft-365-business-premium.md)
+
 - 对于活动： [获取 Microsoft 365 活动](get-microsoft-365-campaigns.md)
-- 任何企业： [用户如何使用 Microsoft 365](m365-campaigns-users.md)
-- 任何企业： [设置 Microsoft 365](microsoft-365-campaigns-setup-overview.md)
 
 ## <a name="solutions-for-your-business"></a>适合你的业务的解决方案
 

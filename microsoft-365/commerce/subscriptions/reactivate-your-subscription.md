@@ -2,8 +2,8 @@
 title: 重新激活订阅
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,20 +14,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - TopSMBIssues
 - fwlink 874703
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150
 description: 如果订阅过期、被禁用或取消，或者如果你在订阅期中间取消，管理员可以重新激活订阅。
 ms.date: 04/07/2021
-ms.openlocfilehash: 913069e83654e77948650fc85efbdc1daed4985c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 05c472cad513f96f39c4f9cfeb90182ed02a4fe5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370088"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316501"
 ---
 # <a name="reactivate-your-subscription"></a>重新激活订阅
 
@@ -35,7 +35,7 @@ ms.locfileid: "61370088"
   
 ## <a name="before-you-begin"></a>准备工作
 
-你必须是全局管理员或帐单管理员才能重新激活订阅。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+你必须是全局管理员或帐单管理员才能重新激活订阅。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 **不是管理员？** 请与你的管理部门联系以重新激活你的订阅。
 
@@ -54,7 +54,7 @@ ms.locfileid: "61370088"
 ::: moniker-end
 
 2. 在“**产品**”选项卡上，找到要重新激活的订阅。 Select the three dots (more actions) ， then select **Reactivate this subscription**.\
-    如果看不到重新激活 **此订阅，请联系**[支持人员](../../admin/get-help-support.md)。
+    如果看不到重新激活 **此订阅，** 请联系 [支持人员](../../admin/get-help-support.md)。
 3. 在“**重新激活此订阅**”窗格中，从下拉列表中选择支付方式，或选择“**添加付款方式**”。
 4. 选择“**保存**”。
 

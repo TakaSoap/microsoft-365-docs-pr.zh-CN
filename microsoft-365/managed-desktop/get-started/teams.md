@@ -10,16 +10,16 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 21d69770fb16ac40b25cd9ff4fefd5ccf5b2f0fb
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 3dfdd9f5187fba9a1e19e56a4df24cf1f7eff44b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345935"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322431"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
-[Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software)是[一个](https://support.microsoft.com/office/microsoft-teams-basics-6d5f52e6-5306-4096-ac24-c3082b79eaf0)消息传递应用，它还提供用于实时协作和通信、会议以及文件和应用共享的工作区。
+[Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software)是[一个消息传递](https://support.microsoft.com/office/microsoft-teams-basics-6d5f52e6-5306-4096-ac24-c3082b79eaf0)应用，它还提供用于实时协作和通信、会议以及文件和应用共享的工作区。
 
 ## <a name="initial-deployment"></a>初始部署
 
@@ -29,14 +29,14 @@ ms.locfileid: "62345935"
 
 Microsoft 托管桌面向组织添加两个Azure AD应用程序，Microsoft Teams。 它们部署到适用于设备的 64 位或 32 位客户端：  
 
-- 现代工作区 – Teams Machine Wide Installer x64  
-- 现代工作区 – Teams Machine Wide Installer x32
+- 现代工作区 - Teams Machine Wide Installer x64  
+- 现代工作区 - Teams Machine Wide Installer x32
 
 ## <a name="updates"></a>更新
 
-Teams从一个单独的更新路径Microsoft 365 企业应用版。 桌面客户端会自动更新自身。 Teams每隔几个小时检查一次更新，下载更新，然后等待计算机处于空闲状态，然后再以无提示方式安装更新。  
+Teams从一个单独的更新路径Microsoft 365 企业应用版。 桌面客户端会自动更新自身。 Teams每隔几小时检查一次更新，下载这些更新，然后等待计算机处于空闲状态，然后再以静默方式安装更新。  
 
-由于Teams组不允许管理员控制更新，Microsoft 托管桌面使用[标准自动更新通道](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating)。
+由于Teams组不允许管理员控制更新，因此Microsoft 托管桌面使用[标准的自动更新通道](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating)。
 
 ### <a name="manually-updating-teams"></a>手动更新Teams
 
@@ -44,4 +44,4 @@ Teams从一个单独的更新路径Microsoft 365 企业应用版。 桌面客户
 
 ## <a name="delivery-optimization-of-updates"></a>更新的传递优化
 
-默认情况下，Teams更新的传递优化是打开的，不需要管理员或用户的操作。
+默认情况下，Teams更新的传递优化已打开，无需管理员或用户的任何操作。

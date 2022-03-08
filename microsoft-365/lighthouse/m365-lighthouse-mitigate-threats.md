@@ -15,26 +15,23 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，请了解使用托管服务提供商Microsoft Defender 防病毒。
-ms.openlocfilehash: 3d7eeb54c6f11e73bca71271faa7c09b30627ec2
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，了解使用托管服务提供商缓解Microsoft Defender 防病毒。
+ms.openlocfilehash: 297c35104ae58efb1b7c58d3d1968158d42c0fce
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424025"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315507"
 ---
 # <a name="mitigate-threats-with-microsoft-defender-antivirus"></a>使用威胁缓解Microsoft Defender 防病毒
 
-> [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
-
-Microsoft 365 Lighthouse合作伙伴可以跨所有租户调查和缓解威胁。 还可以在设备上启动防病毒扫描，确保设备正在获取最新 Microsoft Defender 防病毒，并查看防病毒扫描后挂起的操作。 Lighthouse 仅支持运行 Windows 10或更高版本的设备。
+Microsoft 365 Lighthouse合作伙伴可以跨所有租户调查和缓解威胁。 还可以在设备上启动防病毒扫描，确保设备正在获取适用于 Microsoft Defender 防病毒 的最新更新，并查看防病毒扫描后挂起的操作。 Lighthouse 仅支持运行 Windows 10或更高版本的设备。
 
 ## <a name="before-you-begin"></a>准备工作
 
-- Microsoft 365 Lighthouse仅在合作伙伴租户中部署，而不是在客户租户中，但请确保你和客户租户满足 Microsoft 365 Lighthouse[要求中列出的要求](m365-lighthouse-requirements.md)。
+- Microsoft 365 Lighthouse仅在合作伙伴租户中部署，而不是在客户租户中，但请确保你和客户租户满足 Microsoft 365 Lighthouse [要求](m365-lighthouse-requirements.md)。
 
-- 用户必须运行 Microsoft Defender 防病毒 (中包含的Windows) 。 Lighthouse 不支持非 Microsoft 防病毒软件。 有关详细信息，请参阅打开[Microsoft Defender 防病毒。](/mem/intune/user-help/turn-on-defender-windows)
+- 用户必须运行 Microsoft Defender 防病毒 (中包含的Windows) 。 Lighthouse 不支持非 Microsoft 防病毒软件。 有关详细信息，请参阅打开[Microsoft Defender 防病毒](/mem/intune/user-help/turn-on-defender-windows)。
 
 - 你必须是要登录的合作伙伴租户中的全局管理员。
 
@@ -98,11 +95,11 @@ Lighthouse 显示设备上发现的所有威胁。 若要查看详细信息，�
 
 3. 从设备列表中，选择设备。
 
-4. 在设备详细信息窗格中，选择 **更新防病毒**。
+4. 在设备详细信息窗格中，选择 **"更新防病毒"**。
 
-可以通过选中列表中每个设备名称旁边的复选框获取多个设备的更新，然后选择"**更新防病毒"。**
+可以通过选中列表中每个设备名称旁边的复选框获取多个设备的更新，然后选择" **更新防病毒"**。
 
-如果需要创建新策略，请从设备详细信息 **窗格中** 选择"更新策略"。 Lighthouse 会将你重定向到Microsoft Endpoint Manager (MEM) 。 有关创建策略的信息，[请参阅在策略](/mem/intune/protect/create-compliance-policy)Microsoft Intune。
+如果需要创建新策略，请从设备详细信息 **窗格中** 选择"更新策略"。 Lighthouse 会将你重定向到Microsoft Endpoint Manager (MEM) 。 有关创建策略的信息，[请参阅在 Microsoft Intune](/mem/intune/protect/create-compliance-policy)。
 
 ## <a name="check-pending-antivirus-actions-on-a-device"></a>检查设备上挂起的防病毒操作
 
@@ -128,12 +125,12 @@ Lighthouse 显示设备上发现的所有威胁。 若要查看详细信息，�
 
 4. 在设备详细信息窗格中，选择重启 **设备**。
 
-还可以重新启动多个设备，只需选中列表中每个设备名称旁边的复选框，然后选择"**重新启动设备"。**
+还可以重新启动多个设备，只需选中列表中每个设备名称旁边的复选框，然后选择" **重新启动设备"**。
 
 ## <a name="related-content"></a>相关内容
 
-[本文Microsoft 365 Lighthouse (](m365-lighthouse-requirements.md)要求) \
-[威胁管理页面概述 (](m365-lighthouse-threat-management-page-overview.md) 文章) \
-[在本文Microsoft Intune (](/mem/intune/protect/create-compliance-policy)创建合规性) \
-[打开Microsoft Defender 防病毒 (](/mem/intune/user-help/turn-on-defender-windows)文章) \
-[Microsoft 安全智能](https://www.microsoft.com/wdsi/threats)
+[本文Microsoft 365 Lighthouse (](m365-lighthouse-requirements.md)的要求) \
+[威胁管理页面概述 ](m365-lighthouse-threat-management-page-overview.md) (文章) \
+[Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy) (article) \
+[打开Microsoft Defender 防病毒](/mem/intune/user-help/turn-on-defender-windows) (文章) \
+[Microsoft 安全智能](https://www.microsoft.com/wdsi/threats) (网页) 

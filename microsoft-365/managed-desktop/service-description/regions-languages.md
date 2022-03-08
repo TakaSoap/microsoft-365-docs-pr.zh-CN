@@ -12,24 +12,24 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 83ba5e60d77cd4b68834efeceb4572639348d122
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 65517399425fa71b2d4123da6103f9f15784db38
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035060"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327233"
 ---
 # <a name="microsoft-managed-desktop-supported-regions"></a>Microsoft 托管桌面支持的区域
 
-本文详细介绍了可在何处使用Microsoft 托管桌面支持的区域。 有关用户体验支持的语言Microsoft 托管桌面，请参阅本地化[用户设备](../get-started/localization.md)。
+本文详细介绍了哪些区域支持Microsoft 托管桌面。
 
-你仍然可以在这些区域之外使用托管设备，而不会中断 Microsoft 托管桌面 服务。 例如，位于英国的员工在出差到亚洲、欧洲或南非时，可以安全地工作并接收其托管设备的更新。
+你仍然可以在这些区域之外使用托管设备，而不会中断 Microsoft 托管桌面 服务。 例如，英国员工在出差到亚洲、欧洲或南非时，可以安全地工作并接收其托管设备的更新。
 
-有关用户和管理体验Microsoft 托管桌面支持的语言，请参阅本地化[用户体验](../get-started/localization.md)。
+有关用户支持的语言Microsoft 托管桌面，请参阅[为用户本地化设备](../get-started/localization.md)。
 
 有关用户对 Microsoft 托管桌面 支持[Microsoft 托管桌面。](support.md)
 
-## <a name="availability-of-the-service"></a>服务的可用性
+## <a name="service-availability"></a>服务可用性
 
 以下国家/地区中的组织可以订阅Microsoft 托管桌面：
 
@@ -47,4 +47,3 @@ ms.locfileid: "62035060"
 - 冰岛
 - 澳大利亚
 - 新西兰
-

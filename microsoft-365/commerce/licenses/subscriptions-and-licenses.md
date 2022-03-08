@@ -2,11 +2,11 @@
 title: 了解企业版Microsoft 365订阅和许可证
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -14,20 +14,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_licensing
 - okr_smb
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
-description: 您收到的应用程序和服务取决于您Microsoft 365购买的产品，例如Microsoft 365 商业应用版。
+description: 您收到的应用程序和服务取决于您Microsoft 365的产品，例如Microsoft 365 商业应用版。
 ms.date: 07/01/2020
-ms.openlocfilehash: e380ac61033435a86118f7178da9e014d13ad436
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: fefdca1b1321e19d76a227ecd313708e700b9c01
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524041"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313309"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>了解企业版Microsoft 365订阅和许可证
 
@@ -35,11 +35,11 @@ ms.locfileid: "62524041"
 
 购买订阅时，根据组织中的人数指定所需的许可证数。 购买订阅后，为组织成员创建帐户，然后为每个人分配许可证。 随着组织需求的变化，你可以购买更多许可证来容纳新人，或在某人离开组织时将许可证重新分配给其他用户。
 
-如果有一个以上的订阅，则可以针对每个订阅将许可证分配给不同人员。 例如，您可以将所有用户分配给作为 Microsoft 365 订阅的一部分的所有 Microsoft 365 商业标准版应用程序和服务。 您还可以通过单独的订阅将一部分Visio分配给 Visio Online。
+如果有一个以上的订阅，则可以针对每个订阅将许可证分配给不同人员。 例如，您可以将所有用户作为订阅的一Microsoft 365分配给所有 Microsoft 365 商业标准版 应用程序和服务。 此外，还可通过单独的 Visio 订阅将部分Visio Online。
 
 ## <a name="how-many-devices-can-people-install-office-on"></a>可以在多少台设备上安装 Office？
 
-如果你的订阅包括以下任一产品，则每个人Office安装在五台电脑或 Mac、五台平板电脑和五部手机上。
+如果你的订阅包括以下任一产品，则每个人Office五台电脑或 Mac、五台平板电脑和五部手机上进行安装。
 
 :::row:::
    :::column span="":::
@@ -83,7 +83,7 @@ ms.locfileid: "62524041"
 
 ## <a name="related-content"></a>相关内容
 
-[购买或删除商业版订阅的许可证 (](buy-licenses.md) 文章) \
+[购买或删除商业版订阅的许可证](buy-licenses.md) (文章) \
 [向用户分配许可证](../../admin/manage/assign-licenses-to-users.md)
 [取消向用户分配许可证](../../admin/manage/remove-licenses-from-users.md)（文章）\
 [从共享邮箱删除许可证](../../admin/email/remove-license-from-shared-mailbox.md)（文章）

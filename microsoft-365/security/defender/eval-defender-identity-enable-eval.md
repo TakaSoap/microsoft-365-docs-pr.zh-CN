@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6910336dea0559ad241c240cde09d3929fe2e422
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: ac5c1a1bb541dee61155a55f23a78533c2b5360c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62170971"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311601"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>启用 Microsoft Defender 标识评估环境
 
@@ -66,7 +66,7 @@ ms.locfileid: "62170971"
 |4     | 配置传感器       |  [配置 Microsoft Defender for Identity 传感器设置 ](/defender-for-identity/install-step5)   |
 |   |         |         |
 
-## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>步骤 3. 使用传感器在计算机中配置事件日志和代理设置
+## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>第 3 步。 使用传感器在计算机中配置事件日志和代理设置
 
 在安装了传感器的计算机上安装，Windows事件日志集合和 Internet 代理设置以启用和增强检测功能。
 
@@ -80,14 +80,14 @@ ms.locfileid: "62170971"
 
 Microsoft Defender for Identity 横向移动路径检测依赖于标识特定计算机上本地管理员的查询。 这些查询通过 SAM-R 协议使用 Defender for Identity Service 帐户执行。 
 
-若要Windows客户端和服务器允许 Defender for Identity 帐户执行 SAM-R，除了网络访问策略中列出的配置帐户之外，还必须修改组策略以添加 Defender for Identity 服务帐户。 请确保将组策略应用于除 **域控制器 之外的所有计算机**。
+为了确保 Windows 客户端和服务器允许 Defender for Identity 帐户执行 SAM-R，除了网络访问策略中列出的配置帐户之外，还必须修改组策略以添加 Defender for Identity 服务帐户。 确保将组策略应用于除 **域控制器之外的所有计算机**。
 
-有关如何执行此操作的说明，请参阅配置 [Microsoft Defender for Identity 以对 SAM 进行远程调用](/defender-for-identity/install-step8-samr)。 
+有关如何执行此操作的说明，请参阅配置 [Microsoft Defender for Identity 以远程调用 SAM](/defender-for-identity/install-step8-samr)。 
 
 ## <a name="next-steps"></a>后续步骤
 
 第 3 步（第 3 步/第 3 步 [：试用 Microsoft Defender 标识）](eval-defender-identity-pilot.md)
 
-返回到评估 Microsoft [Defender 标识概述](eval-defender-identity-overview.md)
+返回到评估 [Microsoft Defender 标识概述](eval-defender-identity-overview.md)
 
 返回到评估和试点[计划概述Microsoft 365 Defender](eval-overview.md)

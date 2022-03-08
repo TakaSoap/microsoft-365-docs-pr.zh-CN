@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常，它是记录管理解决方案的一部分，你可以配置保留标签以根据所识别的事件开始保留期。
-ms.openlocfilehash: c4195f7e5a859cf5a1078566728be5b8567cf5b9
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: ad5fb2ef567525fa021acb0388ebc5cc98b1148c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "62428921"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313295"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>从事件发生时开始计算保留期
 
@@ -112,7 +112,7 @@ ms.locfileid: "62428921"
 
 ### <a name="step-2-create-a-new-event-type-for-your-label"></a>第 2 步：为标签创建新事件类型
 
-对于保留设置，如果已选择“**创建新事件类型**”，那就输入事件类型的名称和说明。 然后选择 “**下一步**”、“**提交**”和“**完成**”。
+对于保留设置，如果选择“**创建新事件类型**”，请输入事件类型的名称和说明。然后选择“**下一个**”、“**提交**”和“**完成**”。
 
 返回到“**定义保留设置**”页面， 针对“**启动保留期，基于：**”一项，请使用下拉列表选择所创建的事件类型。
 
@@ -120,7 +120,7 @@ ms.locfileid: "62428921"
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>第 3 步：发布或自动应用基于事件的保留标签
 
 与任何保留标签一样，需要发布或自动应用基于事件的标签，以便将它手动或自动应用于内容：
-- [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
+- [发布保留标签并将其应用到应用](create-apply-retention-labels.md)
 - [自动向内容应用保留标签](apply-retention-labels-automatically.md)
 
 ### <a name="step-4-enter-an-asset-id"></a>第 4 步：输入资产 ID
@@ -171,7 +171,7 @@ ms.locfileid: "62428921"
 
 创建事件后，保留设置将对已标记和索引的内容生效。 如果创建事件后将保留标签添加到新内容，则必须创建具有相同详细信息的新事件。
 
-删除事件不会取消现在对内容生效的保留设置。 目前，无法在触发事件后取消事件。
+删除事件不会取消现在对内容生效的保留设置。目前，无法在触发事件后取消事件。
 
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>使用内容搜索来查找所有包含特定标签或资产 ID 的内容
 

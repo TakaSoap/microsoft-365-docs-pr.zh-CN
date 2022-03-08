@@ -12,6 +12,8 @@
   items:
     - name: 配置门户安全性
       href: m365-lighthouse-configure-portal-security.md
+    - name: 设置角色
+      href: m365-lighthouse-set-up-roles.md
     - name: 查看审核日志
       href: m365-lighthouse-review-audit-logs.md
 - name: 使用基线保护客户
@@ -42,6 +44,8 @@
       href: m365-lighthouse-reset-user-password.md
     - name: 搜索用户
       href: m365-lighthouse-search-for-users.md
+    - name: 查看和管理有风险的用户
+      href: m365-lighthouse-view-manage-risky-users.md
 - name: 管理设备
   items:
     - name: 设备合规性页面概述
@@ -60,5 +64,9 @@
   items:
     - name: 获取帮助和支持
       href: m365-lighthouse-get-help-and-support.md
+    - name: 已知问题
+      href: m365-lighthouse-known-issues.md
+    - name: 排查并解决问题和错误消息
+      href: m365-lighthouse-troubleshoot.md
     - name: '常见问题解答 (常见问题) '
       href: m365-lighthouse-faq.yml

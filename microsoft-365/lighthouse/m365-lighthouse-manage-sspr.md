@@ -15,18 +15,15 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于 Managed Service Providers (MSP) using Microsoft 365 Lighthouse，了解如何管理自助服务密码重置。
-ms.openlocfilehash: b8367d2ed2c088d56425b08c6da5dfd55fcd84b8
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+description: 对于托管服务提供商 (MSP) 使用 Microsoft 365 Lighthouse，了解如何管理自助服务密码重置。
+ms.openlocfilehash: f9f8ef9a3c81281629c378fb4b55cd4c9a839c1d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128600"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311559"
 ---
 # <a name="manage-self-service-password-reset"></a>管理自助服务密码重置
-
-> [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
 Microsoft 365 Lighthouse使合作伙伴Azure Active Directory (Azure AD) SSPR (自助服务密码重置) 。 SSPR 使用户能够更改或重置其密码，无需管理员或技术支持参与。 如果用户的帐户被锁定或忘记密码，他们可以按照提示自行取消阻止并恢复工作。 当用户无法登录到其设备或应用程序时，此功能可减少技术支持呼叫并降低工作效率。
 
@@ -34,13 +31,13 @@ Microsoft 365 Lighthouse使合作伙伴Azure Active Directory (Azure AD) SSPR (�
 
 必须先满足以下条件，租户才能显示在列表中：
 
-- 客户租户必须拥有Azure AD Premium许可证。 有关哪些许可证支持 SSPR 的信息，请参阅许可要求[Azure Active Directory自助服务密码重置。](/azure/active-directory/authentication/concept-sspr-licensing)
+- 客户租户必须具有每个用户Azure AD Premium许可证。 有关哪些许可证支持 SSPR 的信息，请参阅许可要求[Azure Active Directory自助服务密码重置](/azure/active-directory/authentication/concept-sspr-licensing)。
 
-- 客户租户必须在 Lighthouse 内处于活动状态。 若要了解如何确定租户是否处于活动状态，请参阅租户Microsoft 365 Lighthouse[概述](m365-lighthouse-tenants-page-overview.md)。
+- 客户租户必须在 Lighthouse 内处于活动状态。 若要了解如何确定租户是否处于活动状态，请参阅Microsoft 365 Lighthouse[租户页面概述](m365-lighthouse-tenants-page-overview.md)。
 
 ## <a name="view-sspr-tenant-status"></a>查看 SSPR 租户状态
 
-1. In the left navigation pane of Lighthouse， select **Users**.
+1. 在"灯楼"的左侧导航窗格中，选择" **用户"**。
 
 2. 选择" **密码重置"** 选项卡。
 
@@ -56,7 +53,7 @@ Microsoft 365 Lighthouse使合作伙伴Azure Active Directory (Azure AD) SSPR (�
 
 4. 选择 **"编辑 SSPR 设置Azure Active Directory** 转到"Azure Active Directory (Azure AD) "。
 
-5. 在Azure AD中，为所有用户或所选用户启用 SSPR。 若要了解更多信息，请参阅[教程：允许用户](/azure/active-directory/authentication/tutorial-enable-sspr)使用自助密码重置解锁Azure Active Directory重置密码。
+5. 在Azure AD中，为所有用户或所选用户启用 SSPR。 若要了解更多信息，请参阅教程：允许用户使用自助密码重置解锁Azure Active Directory[重置密码](/azure/active-directory/authentication/tutorial-enable-sspr)。
 
 ## <a name="notify-users-to-register-for-sspr"></a>通知用户注册 SSPR
 
@@ -68,7 +65,7 @@ Microsoft 365 Lighthouse使合作伙伴Azure Active Directory (Azure AD) SSPR (�
 
 4. 选择要通知的用户。
 
-5. 选择 **"创建电子邮件"。**
+5. 选择 **"创建电子邮件"**。
 
 Lighthouse 打开默认电子邮件客户端，并预填充电子邮件，并包含注册 SSPR 的说明。 所有选定用户都将包含在"BCC"行中。 如果你希望单独向用户发送电子邮件，可以选择用户名旁边的电子邮件图标。
 
@@ -76,7 +73,7 @@ Lighthouse 打开默认电子邮件客户端，并预填充电子邮件，并包
 
 ## <a name="related-content"></a>相关内容
 
-[Plan an Azure Active Directory self-service password reset deployment deployment (](/azure/active-directory/authentication/howto-sspr-deployment) article) \
-[教程：允许用户使用自助服务](/azure/active-directory/authentication/tutorial-enable-sspr)密码重置Azure Active Directory解锁其帐户或重置密码 (文章) \
+[Plan an Azure Active Directory self-service password reset deployment deployment](/azure/active-directory/authentication/howto-sspr-deployment) (article) \
+[教程：允许用户使用自助服务](/azure/active-directory/authentication/tutorial-enable-sspr)密码重置来解锁其帐户或Azure Active Directory自助服务密码重置 (文章) \
 [如何启用和配置 SSPR Azure AD (](https://www.youtube.com/watch?v=rA8TvhNcCvQ)视频) \
 [管理多重身份验证 (](m365-lighthouse-manage-mfa.md) 文章) 

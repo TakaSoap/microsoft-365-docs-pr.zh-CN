@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: cfa39ca38046c131de2531b4ad6446626895090f
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: ce75fff753acfa9d5e183154e09805b04d7523da
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903947"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321382"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>调查警报Microsoft 365 Defender
 
@@ -39,17 +39,17 @@ ms.locfileid: "62903947"
 
 在Microsoft 365 Defender中，相关警报聚合在一起以形成[事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。 
 
-警报 **队列** 显示当前警报集。 在快速启动 > 门户时，你可以从事件和&警报>警报Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">队列</a>。
+警报 **队列** 显示当前警报集。 在快速启动 > 门户时，你可以从事件&警报>警报"进入<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">警报Microsoft 365 Defender队列</a>。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="报告门户中的警报队列Microsoft 365 Defender示例。":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="报告门户中的警报队列Microsoft 365 Defender示例":::
 
 来自不同 Microsoft 安全解决方案（如 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft 365 Defender）的警报将在此处显示。
 
-默认情况下，通知门户中的警报队列Microsoft 365 Defender最近 30 天的新警报和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
+默认情况下，Microsoft 365 Defender门户中的警报队列会显示过去 30 天内的新警报和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
 
 从默认警报队列中，可以选择"筛选器"以查看"筛选器"窗格，可以从中指定警报的子集。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="通知门户中警报队列的筛选器窗格Microsoft 365 Defender示例。":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="通知门户中警报队列的筛选器窗格Microsoft 365 Defender示例":::
 
 你可以根据以下条件筛选警报：
 
@@ -87,20 +87,18 @@ ms.locfileid: "62903947"
 
 若要查看主警报页面，请选择警报的名称。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="通知门户中警报的详细信息Microsoft 365 Defender示例。":::
-
-您还可以从"管理 **警报"窗格中** 选择"打开主警报 **页面"** 操作。
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="通知门户中警报的详细信息Microsoft 365 Defender示例":::
 
 警报页面由以下部分组成： 
 
 - 警报情景，它是与此警报相关的事件和警报链（按时间顺序）
 - 摘要详细信息
 
-在整个警报页面中，可以选择任意实体 (**...** "旁边的省略号) 查看可用操作，例如打开警报页面或将警报链接到其他事件。
+在整个警报页面中，可以选择任意实体 (**...**) 查看可用操作，例如将警报链接到其他事件。 可用操作列表取决于警报的类型。
 
 ### <a name="alert-sources"></a>警报源
 
-Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps 以及适用于云应用的 Microsoft Defender 的应用管理加载项等解决方案。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
+Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps 和 Microsoft Defender for Cloud Apps 的应用管理加载项等解决方案。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
 
 > [!NOTE]
 > - 预置的 GUID 仅特定于统一体验，如统一警报队列、统一警报页面、统一调查和统一事件。
@@ -117,7 +115,7 @@ Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Micro
 
 " **已采取** 操作"部分包含受影响资产的列表，如受此警报影响的邮箱、设备和用户。 
 
-还可以选择"在操作中心 **中** 查看"以查看操作中心的"历史记录"选项卡，Microsoft 365 Defender门户。 
+还可以选择"在操作中心 **中** 查看"以查看操作中心的"历史记录"**选项卡，Microsoft 365 Defender** 门户。 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>跟踪警报情景中的警报角色
 
@@ -134,46 +132,55 @@ Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Micro
 
 ## <a name="manage-alerts"></a>管理警报
 
-若要管理警报，请在警报队列中的行中选择警报，以查看"管理 **警报"** 窗格。 下面是一个示例。
+若要管理警报 **，请选择警报** 页面的摘要详细信息部分中的"管理警报"。 对于单个警报，下面是"管理警报" **窗格** 的示例。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="通知门户中警报的摘要窗格Microsoft 365 Defender示例。":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="管理门户中的&quot;管理警报&quot;窗格Microsoft 365 Defender示例":::
 
 " **管理警报** "窗格允许您查看或指定：
 
 - 警报状态 (新建、已解决、正在进行) 。
 - 已分配警报的用户帐户。
-- 警报的分类 (未设置、真警报、假警报) 。
-- 对于分类为真正的警报，为"确定"字段中警报 **的威胁** 类型。
+- 警报的分类：
+
+   - **未 (** 默认值) 。
+
+   - **真正的正** ，具有一种威胁类型。 对准确指示真实威胁的警报使用此分类。 指定威胁类型可帮助安全团队查看威胁模式，并采取措施以保护组织免受威胁。
+
+   - **具有一类活动的信息** 性预期活动。 使用此类别中的选项对安全测试、红色团队活动以及来自受信任应用和用户的预期异常行为的警报进行分类。
+
+   - **即使在没有** 恶意活动时创建的警报类型，误报。 将警报分类为误报有助于Microsoft 365 Defender检测质量。
+
 - 对警报的注释。
 
 > [!NOTE]
 > 通过标记管理警报的一种方法。 Microsoft Defender for Office 365 的标记功能正在逐步推出，目前处于预览阶段。 <br>
 > 目前，修改的标记名称仅适用于更新后 *创建的* 警报。 修改之前生成的通知不会反映更新的标记名称。 
 
-在此窗格中，您还可以执行以下附加操作： 
+若要管理 *一组类似于* 特定警报的警报，请在警报页面的摘要详细信息部分中的 **"INSIGHT**"框中选择"查看类似的警报"。
 
-- 打开主警报页面
-- 咨询 Microsoft 威胁专家
-- 查看提交
-- 链接到其他事件
-- 在时间线中查看警报
-- 创建抑制规则
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="在管理门户中Microsoft 365 Defender警报":::
 
-下面是一个示例。
+然后 **，从** "管理警报"窗格中，可以同时对所有相关警报进行分类。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="事件门户中警报Microsoft 365 Defender示例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="在管理门户中Microsoft 365 Defender警报":::
 
-其他操作的列表取决于警报的类型。
+如果过去已对类似的警报进行分类，则可以通过使用Microsoft 365 Defender来了解其他警报的解析方式，以节省时间。 从"摘要详细信息"部分，选择"推荐 **"**。
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="为警报选择建议的示例":::
+
+The **推荐** tab provides next-step actions and advice for investigation， remediation， and prevention. 下面是一个示例。
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="警报建议示例":::
 
 ## <a name="resolve-an-alert"></a>解决警报
 
-分析完警报并可以解决后，请转到警报的"管理警报"窗格，将状态标记为"已解决"，并分类为 **"False** 警报"或"**真警报"**。 对于真正的警报，在"确定"字段中指定警报 **的威胁** 类型。
+分析完警报并可以解决警报后，请转到警报或类似警报的"管理警报"窗格，将状态标记为"已解决"，然后将该状态分类为具有威胁类型、信息性、预期活动类型或 **误报** 的 **真** 正。
 
-对警报进行分类并指定它们的决定有助于调整Microsoft 365 Defender，以便提供更多真实警报和更少的假警报。
+对警报进行分类有助于Microsoft 365 Defender检测质量。
 
 ## <a name="use-power-automate-to-triage-alerts"></a>使用Power Automate对警报分类
 
-SecOps (新式安全) 团队需要自动化才能高效工作。 为了专注于搜寻和调查真实威胁，SecOps 团队Power Automate警报列表进行会审，并消除不是威胁的警报。  
+SecOps (新式安全) 团队需要自动化才能高效工作。 为了专注于搜寻和调查真实威胁，SecOps 团队Power Automate警报列表进行会审并消除不是威胁的警报。  
 
 ### <a name="criteria-for-resolving-alerts"></a>解决警报的条件
 

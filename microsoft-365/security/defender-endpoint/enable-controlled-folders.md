@@ -14,14 +14,14 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: fab57a3cb63823dcd4538f2b4bb381972d310c64
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: d8ff1b5946ccdcbc35a219bc0e656c2e23d6f3ea
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322067"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327639"
 ---
 # <a name="enable-controlled-folder-access"></a>启用受控文件夹访问
 
@@ -56,9 +56,9 @@ ms.locfileid: "62322067"
 
 ## <a name="windows-security-app"></a>Windows 安全中心应用
 
-1. 在任务栏Windows 安全中心防护图标，打开应用。 You can also search the start menu for **Windows 安全中心**.
+1. 通过在任务栏Windows 安全中心防护图标打开应用。 You can also search the start menu for **Windows 安全中心**.
 
-2. 选择病毒& **威胁** 防护磁贴 (左侧菜单栏上的防护图标) 然后选择勒索 **软件保护**。
+2. 选择病毒& **威胁** 防护磁贴 (或左侧菜单栏上的防护图标) 选择勒索 **软件保护**。
 
 3. 将受控文件夹 **访问权限的开关设置为****开**。
 
@@ -66,12 +66,12 @@ ms.locfileid: "62322067"
 > *此方法在 Windows Server 2012R2 或 2016 上不可用。
 > 
 > 如果使用组策略、PowerShell 或 MDM CSP 配置受控文件夹访问权限，则设备重启后，Windows 安全中心应用中的状态将发生变化。
-> 如果使用这些工具中的任一工具将该功能设置为审核模式，Windows 安全中心应用的状态将显示为 **"关闭"**。
+> If the feature is set to **Audit mode** with any of those tools， the Windows 安全中心 app will show the state as **Off**.
 > 如果要保护用户配置文件数据，建议用户配置文件应位于默认安装Windows驱动器上。
 
 ## <a name="endpoint-manager"></a>Endpoint Manager
 
-1. 登录到 [安全Endpoint Manager并](https://endpoint.microsoft.com)打开 **终结点安全**。
+1. 登录到 [安全Endpoint Manager并](https://endpoint.microsoft.com)打开 **Endpoint Security**。
 
 2. 转到攻击 **面减少** \> **策略**。
 
@@ -87,7 +87,7 @@ ms.locfileid: "62322067"
 
 8. 选择 **"从攻击面减少规则中** 排除文件和路径"，并添加需要从攻击面减少规则中排除的文件和路径。
 
-9. 选择配置文件 **分配**、分配给"所有用户 **&所有设备"，** 然后选择"保存 **"**。
+9. 选择配置文件 **"分配**"，分配给"所有 **&所有用户"，然后选择**"保存 **"**。
 
 10. 选择 **"下一** 步"保存每个打开的边栏选项卡，然后选择" **创建"**。
 
@@ -127,7 +127,7 @@ ms.locfileid: "62322067"
    - **启用** - 不允许恶意和可疑应用对受保护文件夹中的文件进行更改。 将在事件日志中提供Windows通知。
    - **禁用 (默认)** - 受控文件夹访问权限功能将不起作用。 所有应用都可以对受保护的文件夹中的文件进行更改。
    - **审核模式** - 如果恶意或可疑应用尝试更改受保护文件夹中的文件，将允许更改。 但是，它将记录在Windows事件日志中，您可以在其中评估对组织的影响。
-   - **仅阻止磁盘修改** - 不受信任的应用尝试写入磁盘扇区将记录在Windows日志中。 这些日志位于 Microsoft Windows  \> \> \> Windows Defender ID \> 1123 的应用程序和服务\>日志中。
+   - **仅阻止磁盘修改** - 不受信任的应用尝试写入磁盘扇区将记录在Windows日志中。 可以在 Microsoft 应用程序和服务 \> \> 日志中找到这些日志Windows \> Windows Defender \> ID \> 1123。
    - **仅** 审核磁盘修改 - 仅在应用程序和服务日志 **Microsoft** \>  \> Windows Windows Defender Operational **ID 1124**) 下的 Windows ( \> 事件日志中记录写入受保护磁盘 **扇区** \> \>的尝试。 不会记录修改或删除受保护文件夹中的文件的尝试。
 
       ![在下拉列表中选择的组策略选项启用和审核模式的屏幕截图。](../../media/cfa-gp-enable.png)
@@ -137,7 +137,7 @@ ms.locfileid: "62322067"
 
 ## <a name="powershell"></a>PowerShell
 
-1. 在 **"管理"中"开始"菜单 powershell**，右键单击"Windows PowerShell并选择"**以****管理员角色运行"**。
+1. 在 **"管理"中"开始"菜单 powershell**，右 **键单击"** Windows PowerShell并选择"以 **管理员角色运行"**。
 
 2. 输入以下 cmdlet：
 

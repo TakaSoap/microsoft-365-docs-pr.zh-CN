@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 19f4b517682fa58bde7253c074dc4402f6f95bf9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c2ec837ebc9fef0aabd2810dbd22db24597c52da
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163418"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322599"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>从 Microsoft Defender for Endpoint 服务载出设备
 
@@ -41,15 +41,15 @@ ms.locfileid: "61163418"
 按照相应说明进行操作，具体取决于你的首选部署方法。
 
 > [!NOTE]
-> 在载出 7 天后，设备[](fix-unhealthy-sensors.md#inactive-devices)的状态将切换到非活动状态。
+> 在载出 7 天后，设备的状态将切换到[](fix-unhealthy-sensors.md#inactive-devices)非活动状态。
 >
 > 已载出设备的数据 (时间线、警报、漏洞等) 将保留在门户中，直到配置的保留[期过期。](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy)
 >
 > 不带数据 (设备配置文件) 将在设备 [列表中](machines-view-overview.md) 保留不超过 180 天。
 >
-> 此外，不会将过去 30 天内未处于活动状态的设备考虑在反映组织的 危险和漏洞管理 曝光分数和 Microsoft 设备安全分数的数据中。 [](tvm-exposure-score.md)
+> 此外，反映组织的 危险和漏洞管理 曝光分数和 Microsoft 设备安全分数的数据不会考虑过去 30 天内未处于活动状态的设备。 [](tvm-exposure-score.md)
 >
-> 若要仅查看活动设备，可以按运行状况 [状态](machines-view-overview.md#health-state)、 [设备标记](machine-tags.md) 或计算机 [组进行筛选](machine-groups.md)。
+> 若要仅查看活动设备，可以按[传感器运行状况、](machines-view-overview.md#use-filters-to-customize-the-device-inventory-views)设备标记或计算机 [](machine-tags.md) [组进行筛选](machine-groups.md)。
 
 ## <a name="offboard-windows-devices"></a>载出Windows设备
 

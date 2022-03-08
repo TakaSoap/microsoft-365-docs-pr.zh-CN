@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 5382118753f3c865f6fceb7cd16a7a7953e7bfad
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 10ecf1f3906e7968328729257feea9c272562ffb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767592"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322627"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -31,6 +31,19 @@ ms.locfileid: "62767592"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+
+## <a name="1015950-20122021159500"></a>101.59.50 (20.122021.15950.0) 
+
+- 此版本增加了对 macOS 12.3 的支持。 从 macOS 12.3 开始 [，Apple 正在删除 Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes)。 默认情况下，macOS 上没有预安装 Python 版本。 **需要的操作**： 
+  - 用户必须先将适用于 Mac 的 Microsoft Defender for Endpoint 更新到版本 101.59.50 (或更高版本) ，用户必须将他们的设备更新到 macOSRey 12.3 (或更高版本) 。 此最低版本 101.59.50 是消除 macOS 中 Mac 上的适用于 Mac 的 Microsoft Defender for Endpoint 与 Python 相关的问题的先决条件。
+  - 对于远程部署，必须将现有 MDM 设置更新为 Microsoft Defender for Endpoint for Mac 版本 101.59.50 (或) 。 通过 MDM 将较旧的 Microsoft Defender for Endpoint for Mac 版本推送到 macOSRey 12.3 (或) 版本将导致安装失败。
+
+## <a name="1015910-20122012159100"></a>101.59.10 (20.122012.15910.0) 
+
+- 命令行工具现在支持将隔离的文件还原到最初检测到该文件的位置。 这可以通过 完成 `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`。
+- 用于处理通过 Thunderbolt 3 连接的设备的扩展设备控制
+- 改进了包含无效供应商 ID 和产品 ID 的设备控制策略的处理。 在此版本之前，如果策略包含一个或多个无效的 ID，则忽略整个策略。 从此版本开始，仅忽略策略的无效部分。 策略问题通过 来表示 `mdatp device-control removable-media policy list`。
+- 错误修补程序
 
 ## <a name="1015662-20121122156620"></a>101.56.62 (20.121122.15662.0) 
 
@@ -50,7 +63,7 @@ ms.locfileid: "62767592"
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0) 
 
 - 不再支持 mojave (macOS 10.14) mojave 10.14
-- 在管理员通过 MDM 停止管理产品设置后，它现在恢复为它管理之前的值 (最终用户在本地配置的值，或者如果未显式提供此类本地值，则恢复为产品) 使用的默认值。 在此更改之前，在停止管理设置后，其托管值将保留，并且仍由产品使用。
+- 在管理员通过 MDM 停止管理产品设置后，它现在恢复为它管理之前的值 (最终用户在本地配置的值，或者，如果未显式提供此类本地值，则恢复为产品) 使用的默认值。 在此更改之前，在停止管理设置后，其托管值将保留，并且仍由产品使用。
 - Bug 修复&性能改进
 
 ## <a name="1014925-20121092149250"></a>101.49.25 (20.121092.14925.0) 
@@ -108,7 +121,7 @@ ms.locfileid: "62767592"
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
   - `--top N`：显示前 N 个 (仅在还指定了 `--sort` 值时) 
-- 性能改进 (用于 BUG 修复时) &功能
+- 性能改进 (在 BUG 修复中) &使用时的性能改进
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0) 
 
@@ -147,7 +160,7 @@ ms.locfileid: "62767592"
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0) 
 
 - 改进了在 macOS 11 Big Sur 上运行的代理的可靠性
-- 添加了一个新的命令行开关 () `--ignore-exclusions` 自定义扫描过程中忽略 AV 排除 `mdatp scan custom` () 
+- 添加了新的命令行开关 (`--ignore-exclusions`) 自定义扫描过程中忽略 AV 排除 `mdatp scan custom` () 
 - Bug 修复&性能改进
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0) 
@@ -186,7 +199,7 @@ ms.locfileid: "62767592"
 
 ## <a name="1010723"></a>101.07.23
 
-- 向 的输出添加了新`mdatp --health`字段，用于检查被动模式的状态和EDR ID
+- 向 输出添加了新`mdatp --health`字段，用于检查被动模式的状态和EDR ID
 
   > [!NOTE]
   > `mdatp --health` 将在将来的产品 `mdatp health` 更新中替换为 。

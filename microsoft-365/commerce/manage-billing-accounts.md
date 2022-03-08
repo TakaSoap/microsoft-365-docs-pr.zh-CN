@@ -2,8 +2,8 @@
 title: 了解计费帐户
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
 description: 了解计费帐户及其如何用于管理帐户设置、发票、付款方式和购买。
 ms.date: 03/17/2021
-ms.openlocfilehash: 5107ca7bd545eb202999d96266e6ab7688db767c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 8d80e94cbb415f93015673065e47d2fe36194bc0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370928"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315773"
 ---
 # <a name="understand-billing-accounts"></a>了解计费帐户
 
@@ -52,7 +52,7 @@ ms.locfileid: "61370928"
 | 用户群 | 一个只读字段，用于标识组织的业务 (商业、教育、政府或非营利组织) 。 |
 | 帐户状态 | 一个只读字段，用于指定 Microsoft 商业帐户的状态。 |
 | 税务 ID | 如果你在美国以外，则必须提供 VAT 或本地等效项。 有关详细信息，请参阅[税务信息](billing-and-payments/tax-information.md)。 |
-| 协议 | 当通过直接购买或批量许可安排创建计费帐户时，组织会接受或签署一份概述了帐户&条款的协议。 如果适用，此视图将列出协议历史记录。 如果需要接受更新后的条款，将显示"批准 **协议"** 链接。 |
+| 协议 | 当通过直接购买或批量许可安排创建计费帐户时，组织会接受或签署一份概述帐户&条款的协议。 如果适用，此视图将列出协议历史记录。 如果需要接受更新后的条款，将显示"批准 **协议"** 链接。 |
 | 计费配置文件 | 帐单配置文件定义发票的属性，如谁收到帐单、帐单的交付方式、付款期限和 PO 编号。 若要在整个组织中分配计费，可以创建多个计费配置文件，在购买时标识相应的计费配置文件。 有关计费配置文件以及如何使用它们为组织生成更灵活的计费选项的详细信息，请参阅 [了解计费配置文件](billing-and-payments/manage-billing-profiles.md)。 |
 
 > [!NOTE]
@@ -69,7 +69,7 @@ ms.locfileid: "61370928"
 
 ## <a name="understand-access-to-billing-accounts"></a>了解对计费帐户的访问权限
 
-可以通过角色和权限为其他人提供对<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心帐户的访问权限</a>。 只有计费帐户所有者才能授予对计费帐户的访问权限。 可以将以下角色之一分配给用户：
+可以通过角色和权限为其他人提供对 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心帐户的访问权限</a>。 只有计费帐户所有者才能授予对计费帐户的访问权限。 可以将以下角色之一分配给用户：
 
 - **计费帐户所有者** &mdash; 可以分配权限、编辑帐户、签署协议和查看帐户。
 - **计费帐户参与者** &mdash; 可以编辑帐户、签署协议和查看帐户。

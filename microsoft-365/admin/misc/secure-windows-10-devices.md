@@ -1,13 +1,11 @@
 ---
 title: 保护 Windows 10 设备
-f1.keywords:
-- CSH
 ms.author: sharik
 author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
-f1_keywords:
+f1.keywords:
 - O365E_BCSSetup4WindowsConfig
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -27,13 +25,13 @@ search.appverid:
 - MOE150
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: 了解如何配置设备登录工作或学校帐户Windows 10接收的默认设备策略的设置。
-ms.openlocfilehash: 1a39fdad31de5e4aef2fa5bbc4995d9c4c8bbb90
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解如何配置任何设备在登录工作或学校帐户Windows 10接收的默认设备策略的设置。
+ms.openlocfilehash: 88453ee07c21038a6d4ca190471f22f200658c1a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191237"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327485"
 ---
 # <a name="secure-windows-10-devices"></a>保护 Windows 10 设备
 
@@ -47,10 +45,10 @@ ms.locfileid: "60191237"
   
 
 
-|设置  <br/> |说明  <br/> |
+|Setting  <br/> |说明  <br/> |
 |:-----|:-----|
 |使用 Windows Defender 防病毒软件帮助保护电脑免遭病毒和其他威胁  <br/> |需要启用 Windows Defender 防病毒软件，保护电脑免遭连接 Internet 产生的危险。  <br/> |
 |帮助保护电脑免遭 Microsoft Edge 中基于 Web 的威胁  <br/> |在 Microsoft Edge 中启用有助于保护用户免遭恶意网站和下载威胁的设置。  <br/> |
-|使用 BitLocker 帮助保护 PC 上的文件和文件夹免遭未经授权的访问  <br/> |Bitlocker 通过加密计算机硬盘来保护数据，在计算机丢失或被盗时防止数据泄露。 有关详细信息，请参阅 [Bitlocker FAQ](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)。  <br/> |
+|使用 BitLocker 帮助保护 PC 上的文件和文件夹免遭未经授权的访问  <br/> |Bitlocker 通过加密计算机硬盘来保护数据，在计算机丢失或被盗时防止数据泄露。 有关详细信息，请参阅 [Bitlocker 常见问题](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)解答。  <br/> |
 |在空闲此时长后关闭设备屏幕  <br/> |确保用户处于空闲时，公司数据受到保护。用户可能会在咖啡店等公共场所工作，短暂离开或心不在焉，其设备有被随意瞥视的风险。借助此设置，可以控制用户处于空闲状态多长时间后关闭屏幕。  <br/> |
 |

@@ -15,20 +15,20 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: '从共享邮箱中删除许可证，以将其分配给其他用户或返回许可证，以便不支付许可证费用。 '
 ms.date: 05/11/2021
-ms.openlocfilehash: 89e5e3023121bb4633d7c8c1e2f92fbecc5f3e18
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 6de6f213cc0df7a216122d55ef07e270586aea12
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370556"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314793"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>从共享邮箱中删除许可证
 
@@ -69,7 +69,7 @@ ms.locfileid: "61370556"
 
 4. 选择“**保存更改**”。
 
-5. 返回到"**活动用户"** 页面时，共享邮箱的状态将为 **"未授权"。**
+5. 返回到" **活动用户"** 页时，共享邮箱的状态将为 **"未授权"**。
 
 6. 你仍然支付许可证费用。 若要停止付费， [请从订阅中删除许可证](../../commerce/licenses/buy-licenses.md)。
 

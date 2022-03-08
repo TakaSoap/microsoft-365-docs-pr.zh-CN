@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: 在本文中，了解如何添加适用于 Microsoft 365 多地理位置租户的卫星位置和配置。
-ms.openlocfilehash: 232791705dacfa9442304434559b67a4b01ca7dd
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: 9842ff2295a64f544940f579d732c688735ae341
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818248"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312077"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 多地理位置租户配置
 
@@ -44,17 +44,15 @@ ms.locfileid: "62818248"
 
 添加附属位置的具体步骤
 
-1. 打开 SharePoint 管理中心。
+1. 打开 SharePoint 管理中心。 并转到 <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**"地理位置"**</a>。
 
-2. 导航到“地理位置”选项卡。
+1. 选择 **"添加位置"**。
 
-3. 单击“添加位置”。
+1. 选择要添加的位置，然后选择"下一步 **"**。
 
-4. 选择要添加的位置，然后单击“下一步”。
+1. 键入要用于地理位置的域，然后选择"添加 **"**。
 
-5. 键入想要与地理位置一同使用的域，然后单击“添加”。
-
-6. 单击“关闭”。
+1. 选择“**关闭**”。
 
 预配可能需要几小时到 72 小时，具体要取决于租户的大小。附属位置设置完成后，你将收到电子邮件确认。当新地理位置在 OneDrive 管理中心的“地理位置”选项卡的地图上以蓝色显示时，你可以继续将用户的首选数据位置设置为该地理位置。 
 
@@ -83,7 +81,7 @@ ms.locfileid: "62818248"
 建议在标准用户创建工作流中设置用户的首选数据位置。
 
 > [!IMPORTANT]
-> 对于未预配OneDrive用户，请许可帐户，并等待至少 48 小时，直到用户的 PDL 同步到 Azure AD，更改才能传播，然后用户登录到 OneDrive for Business。 （在用户登录预配 OneDrive for Business 前设置首选数据位置，可确保在正确的位置中预配用户的新 OneDrive。）
+> 对于未预配 OneDrive的新用户，请许可帐户，并等待至少 48 小时，直到用户的 PDL 同步到 Azure AD，更改才能传播，然后用户登录到 OneDrive for Business。 （在用户登录预配 OneDrive for Business 前设置首选数据位置，可确保在正确的位置中预配用户的新 OneDrive。）
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>设置仅限云用户的首选数据位置 
 
@@ -113,7 +111,7 @@ ms.locfileid: "62818248"
 如果用户已有在租户中创建的 OneDrive 网站，设置用户 PDL 不会自动移动他们的现有 OneDrive。 若要移动用户的地理位置OneDrive，请参阅OneDrive for Business[地理位置移动](move-onedrive-between-geo-locations.md)。
 
 > [!NOTE]
-> Exchange Online PLD 更改且 MailboxRegion 不再匹配邮箱数据库地理位置代码，则自动重定位用户的邮箱。 有关详细信息，请参阅[在多Exchange Online管理](./administering-exchange-online-multi-geo.md)邮箱。
+> Exchange Online PLD 更改且 MailboxRegion 不再与邮箱数据库地理位置代码匹配，则自动重定位用户的邮箱。 有关详细信息，请参阅[在多Exchange Online](./administering-exchange-online-multi-geo.md)管理邮箱。
 
 如果用户在租户内没有 OneDrive 网站，将会根据用户的 PDL 值为他们预配 OneDrive，假定用户的 PDL 与公司的附属位置之一匹配。
 

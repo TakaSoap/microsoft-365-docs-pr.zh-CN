@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bc7b18088d25e47cd214da2df94ff5eb524f2e78
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: e0e2490fb9026ff23e55990930ddedeb48144b92
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171906"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315969"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -32,7 +32,7 @@ ms.locfileid: "62171906"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-实时响应使安全运营团队可以即时访问设备 (也称为计算机) 使用远程 shell 连接。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。
+实时响应使安全运营团队能够即时访问 (也称为计算机) 使用远程 shell 连接。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。
 
 实时响应旨在增强调查，使安全运营团队能够收集取证数据、运行脚本、发送可疑实体进行分析、修正威胁并主动搜寻新出现的威胁。
 
@@ -42,7 +42,7 @@ ms.locfileid: "62171906"
 
 - 运行基本和高级命令以在设备上执行调查工作。
 - 下载恶意软件示例和 PowerShell 脚本结果等文件。
-- 在后台下载新 (！) 。
+- 在后台下载文件 (新建！) 。
 - Upload PowerShell 脚本或可执行文件到库，然后从租户级别在设备上运行它。
 - 执行或撤消修正操作。
 
@@ -50,14 +50,14 @@ ms.locfileid: "62171906"
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的版本Windows。**
+- **验证是否正在运行受支持的** Windows。
 
-  设备必须运行以下版本之一的 Windows
+  设备必须运行以下版本的设备之一Windows
 
   - **Windows 10 & 11**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
     - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [版本 1809 (RS 5 ](/windows/whats-new/whats-new-windows-10-version-1809)) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [版本 1809 (RS 5) ](/windows/whats-new/whats-new-windows-10-version-1809) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
@@ -74,7 +74,7 @@ ms.locfileid: "62171906"
   - **Windows Server 2016** - 使用 [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
 
   - **Windows Server 2019**
-    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
     - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     
   - **Windows Server 2022**
@@ -101,7 +101,7 @@ ms.locfileid: "62171906"
 
   ![错误消息的图像。](images/live-response-error.png)
 
-- **启用实时响应未签名脚本执行 (** 可选) 。
+- **启用实时响应未签名脚本执行** (可选) 。
 
   >[!IMPORTANT]
   >签名验证仅适用于 PowerShell 脚本。 
@@ -116,7 +116,7 @@ ms.locfileid: "62171906"
   只有已预配了相应权限的用户才能启动会话。 有关角色分配详细信息，请参阅 [创建和管理角色](user-roles.md)。
 
   > [!IMPORTANT]
-  > 将文件上载到库的选项仅适用于具有"管理安全设置"权限的用户。
+  > 将文件上载到库的选项仅适用于具有"管理安全性设置"权限的用户。
   > 对于仅具有委派权限的用户，按钮显示为灰色。
 
   根据已授予的角色，可以运行基本或高级实时响应命令。 用户权限由 RBAC 自定义角色控制。
@@ -125,7 +125,7 @@ ms.locfileid: "62171906"
 
 在设备上启动实时响应会话时，将打开仪表板。 仪表板提供有关会话的信息，如下所示：
 
-- Who会话
+- Who创建了会话
 - 会话开始时间
 - 会话的持续时间
 
@@ -146,7 +146,7 @@ ms.locfileid: "62171906"
 
 4. 使用内置命令执行调查工作。 有关详细信息，请参阅实时 [响应命令](#live-response-commands)。
 
-5. 完成调查后，选择断开连接 **会话**，**然后选择确认。**
+5. 完成调查后，选择"断开连接 **会话"**，然后选择"确认 **"**。
 
 ## <a name="live-response-commands"></a>实时响应命令
 
@@ -215,22 +215,22 @@ ms.locfileid: "62171906"
 
 ### <a name="get-a-file-from-the-device"></a>从设备获取文件
 
-对于希望从正在调查的设备获取文件的情况，可以使用 `getfile` 命令。 这允许你从设备保存文件以进一步调查。
+对于希望从正在调查的设备获取文件的情况，可以使用 命令 `getfile` 。 这允许你从设备保存文件以进一步调查。
 
 > [!NOTE]
 > 以下文件大小限制适用：
 >
 > - `getfile` 限制：3 GB
-> - `fileinfo` 限制：10 GB
+> - `fileinfo` 限制：30 GB
 > - `library` 限制：250 MB
 
 ### <a name="download-a-file-in-the-background"></a>在后台下载文件
 
 若要使安全运营团队继续调查受影响的设备，现在可以在后台下载文件。
 
-- 若要在后台下载文件，在实时响应命令控制台中，键入 `download <file_path> &` 。
+- 若要在后台下载文件，在实时响应命令控制台中，键入 `download <file_path> &`。
 - 如果你正在等待下载文件，可以使用 Ctrl + Z 将其移动到后台。
-- 若要将文件下载引入前台，在实时响应命令控制台中，键入 `fg <command_id>` 。
+- 若要将文件下载引入前台，在实时响应命令控制台中，键入 `fg <command_id>`。
 
 下面是一些示例：
 
@@ -240,7 +240,7 @@ ms.locfileid: "62171906"
 
 |命令|功能|
 |---|---|
-|`getfile "C:\windows\some_file.exe" &`|开始在后台下载名为 *some_file.exe* 的文件。|
+|`getfile "C:\windows\some_file.exe" &`|开始在后台 *下载some_file.exe文件* 。|
 |`fg 1234`|将命令 ID 为 *1234* 的下载返回到前台。|
 |
 
@@ -254,7 +254,7 @@ ms.locfileid: "62171906"
 
 #### <a name="to-upload-a-file-in-the-library"></a>上载库中的文件
 
-1. 单击 **Upload文件到库"**。
+1. 单击 **Upload文件到库**"。
 
 2. 单击 **"** 浏览"，然后选择文件。
 
@@ -264,7 +264,7 @@ ms.locfileid: "62171906"
 
 5. 如果需要，请了解脚本需要哪些参数，请选中"脚本参数"复选框。 在文本字段中，输入示例和说明。
 
-6. 单击"**确认"。**
+6. 单击 **"确认"**。
 
 7.  (可选) 若要验证文件已上载到库，请运行 `library` 命令。
 
@@ -351,6 +351,7 @@ processes > output.txt
 
 - 实时响应会话一次限制为 25 个实时响应会话。
 - 实时响应会话非活动超时值为 30 分钟。
+- 单个实时响应命令的时间限制为 10 分钟`getfile``findfile``run`，、 和 除外，其限制为 30 分钟。
 - 用户可以启动最多 10 个并发会话。
 - 设备一次只能在一个会话中。
 - 以下文件大小限制适用：

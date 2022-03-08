@@ -4,12 +4,12 @@ description: 包含文件
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 126454f65f8f0e92161f1d51321390ffb60c1308
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: 2d48c4066cc1cde102fc395d7c532d26ea2a4db0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202772"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331520"
 ---
 ## <a name="prerequisites"></a>先决条件
 
@@ -21,47 +21,48 @@ ms.locfileid: "62202772"
 
 
 - 设备会为现有设备状态Endpoint Manager，这是移动设备管理 (MDM) 注册到 Intune
-- 没有安全Endpoint Manager将启用安全管理功能
+- 没有安全状态Endpoint Manager将启用安全管理功能
 - 如果不存在信任Azure Active Directory，则创建信任
 - Azure Active Directory信任用于与 Intune Endpoint Manager (通信) 检索策略
-- Microsoft Defender Endpoint Manager在设备上强制执行从设备检索策略
+- Microsoft Defender for Endpoint Endpoint Manager在设备上强制执行从策略检索的策略
 
 ### <a name="active-directory-requirements"></a>Active Directory 要求
 
 当加入域的设备创建与 Azure Active Directory 的信任时，此方案称为混合Azure Active Directory *加入* 方案。 Microsoft Defender for Endpoint 的安全管理完全支持此方案，并满足以下要求：
 
 - Azure Active Directory 连接 (AAD 连接) 必须同步到从 Microsoft Defender for Endpoint 使用的租户
-- 必须在Azure Active Directory环境中通过联盟或同步 (配置混合AAD 连接加入) 
+- 必须在Azure Active Directory环境中通过联合身份验证或同步 (配置混合AAD 连接加入) 
 - AAD 连接 Sync 必须包含作用域中的设备对象，以在需要加入 Azure Active Directory (时与) 
-- AAD 连接需要支持 Server 2012 R2 时，必须修改 Server 2012 R2 (同步规则) 
+- AAD 连接需要支持 Server 2012 R2 时，必须针对 Server 2012 R2 (修改同步规则) 
 - 所有设备都必须在托管 Microsoft Defender for Endpoint Azure Active Directory的租户的租户中注册。 不支持跨租户方案。 
 
 ### <a name="connectivity-requirements"></a>连接要求
 
 设备必须有权访问以下终结点：
 
-- `enterpriseregistration.windows.net`- Azure AD注册。
-- `login.microsoftonline.com`- Azure AD注册。
+- `enterpriseregistration.windows.net`- 对于Azure AD注册。
+- `login.microsoftonline.com`- 对于Azure AD注册。
 - `*.dm.microsoft.com` - 使用通配符支持用于注册、签入和报告以及随着服务扩展而更改的云服务终结点。
 
 ### <a name="supported-platforms"></a>支持的平台
 
 以下设备平台支持 Microsoft Defender 终结点安全管理策略：
 
-- Windows 10 Professional/Enterprise ([KB5006738) ](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541)
-- Windows Server 2012适用于移动设备的 Microsoft [Defender Down-Level R2](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
+- Windows 10 专业版/Enterprise ([KB5006738) ](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541)
+- Windows 11 专业版/Enterprise
+- Windows Server 2012适用于移动设备[的 Microsoft Defender Down-Level R2](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2016 [Microsoft Defender for Down-Level 设备](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
-- Windows Server 2019 ([KB5006744](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0)) 
+- Windows Server 2019 ([KB5006744) ](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0)
 - Windows Server 2022 ([KB5006745](https://support.microsoft.com/topic/october-26-2021-kb5006745-os-build-20348-320-preview-8ff9319a-19e7-40c7-bbd1-cd70fcca066c)) 
 
 ### <a name="licensing-and-subscriptions"></a>许可和订阅
 
 若要对 Microsoft Defender for Endpoint 使用安全管理，你需要：
 
-- 为 Microsoft Defender for Endpoint（如 Microsoft 365）或仅针对 Microsoft Defender for Endpoint 授予独立许可证的订阅。 授予适用于终结点的 Microsoft Defender 许可证的订阅还授予租户对 Microsoft Endpoint Manager 安全节点的访问权限。
+- 为 Microsoft Defender for Endpoint（如 Microsoft 365）或仅针对 Microsoft Defender for Endpoint 授予独立许可证的订阅。 授予 Microsoft Defender for Endpoint 许可证的订阅还授予租户对管理中心终结点Microsoft Endpoint Manager的访问权限。
 
   > [!NOTE]  
-  > 异常 ：如果你有权访问 Microsoft Defender for Endpoint 作为 Microsoft Defender 仅云许可证的一部分 (以前是 Azure 安全中心) ，则适用于终结点的 Microsoft Defender 的安全管理功能不可用。
+  > 异常：如果你有权访问 Microsoft Defender for Endpoint 作为 Microsoft Defender 仅云许可证的一部分 (以前是 Azure 安全中心) ，则 Microsoft Defender 终结点的安全管理功能不可用。
 
 终结点安全节点是配置和部署策略以管理设备的 Microsoft Defender for Endpoint 并监视设备状态的地方。
 
@@ -85,28 +86,28 @@ ms.locfileid: "62202772"
 
 ## <a name="which-solution-should-i-use"></a>我应该使用哪种解决方案？
 
-Microsoft Endpoint Manager包括多种方法和策略类型，用于管理设备上 Defender for Endpoint 的配置。
+Microsoft Endpoint Manager包括几种用于管理设备上 Defender for Endpoint 的配置的方法和策略类型。
 
-当你的设备保护需要扩展到管理 Defender for Endpoint [](/mem/intune/protect/device-protect)时，请参阅设备保护概述，了解 Microsoft Endpoint Manager 提供的其他功能，以帮助保护设备，包括设备合规性、托管的应用、*应用保护* 策略，以及第三方合规性和移动 *威胁* 防护合作伙伴的集成。
+当你的设备保护需要扩展到管理 Defender for Endpoint 之外时，请参阅 [](/mem/intune/protect/device-protect)设备保护概述，了解 Microsoft Endpoint Manager 提供的其他功能，以帮助保护设备，包括设备合规性、托管的应用、应用保护策略，以及第三方合规性和移动 *威胁* 防护合作伙伴的集成。
 
-下表可帮助你了解由不同方案管理的设备支持哪些可以配置 MDE 设置的策略。 当你部署同时受 *MDE* 安全配置和 *Microsoft Endpoint Manager* 支持的策略时，该策略的单个实例可以通过仅运行 MDE 的设备以及由 Intune 或 Configuration Manager 管理的设备进行处理。
+下表可帮助你了解由不同方案管理的设备支持哪些可以配置 MDE 设置的策略。 当你部署 *同时受 MDE* 安全配置和 *Microsoft Endpoint Manager* 支持的策略时，该策略的单个实例可以通过仅运行 MDE 的设备以及由 Intune 或 Configuration Manager 管理的设备进行处理。
 
-| Microsoft Endpoint Manager  | Workload | MDE 安全配置  |  Microsoft Endpoint Manager |
+| Microsoft Endpoint Manager  | 工作负载 | MDE 安全配置  |  Microsoft Endpoint Manager |
 |----------------|----------------|-------------------|------------|
 | 终结点安全    | 防病毒                   | ![支持](../media/green-check.png)  | ![支持](../media/green-check.png)  |
-|                      | 磁盘加密   |           | ![受支持](../media/green-check.png)  |
+|                      | 磁盘加密   |           | ![支持](../media/green-check.png)  |
 |                      | 防火墙 (配置文件和规则)                 | ![支持](../media/green-check.png) | ![支持](../media/green-check.png)  |
 |                      | 终结点检测和响应        | ![支持](../media/green-check.png) | ![支持](../media/green-check.png)  |
-|                      | 攻击面减少    |           | ![受支持](../media/green-check.png)  |
-|                      | 帐户保护       |       | ![受支持](../media/green-check.png)  |
-|                      | 设备合规性     |   | ![受支持](../media/green-check.png)  |
-|                      | 条件访问    |   | ![受支持](../media/green-check.png)  |
-|                      | 安全基线      |   | ![受支持](../media/green-check.png)  |
+|                      | 攻击面减少    |           | ![支持](../media/green-check.png)  |
+|                      | 帐户保护       |       | ![支持](../media/green-check.png)  |
+|                      | 设备合规性     |   | ![支持](../media/green-check.png)  |
+|                      | 条件访问    |   | ![支持](../media/green-check.png)  |
+|                      | 安全基线      |   | ![支持](../media/green-check.png)  |
 
 **终结点安全策略** 是一组分散的设置，旨在供侧重于保护组织中设备的安全管理员使用。
 
 - **防病毒策略** 管理在 Microsoft Defender for Endpoint 中发现的安全配置。 请参阅  [终结点](/mem/intune/protect/endpoint-security-antivirus-policy) 安全性的防病毒策略。
-- **攻击面** 减少策略侧重于最大程度地减少组织易受网络威胁和攻击的位置。 有关详细信息，[请参阅威胁防护](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)文档中的攻击面Windows概述和终结点安全的攻击面减少策略。 [](/mem/intune/protect/endpoint-security-asr-policy)
+- **攻击面** 减少策略侧重于最大程度地减少组织易受网络威胁和攻击的位置。 有关详细信息，[请参阅威胁防护](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)文档中的攻击面Windows概述和终结点安全的攻击面减少策略。[](/mem/intune/protect/endpoint-security-asr-policy)
 - **终结点检测和响应** (EDR) 策略管理 Defender for Endpoint 功能，这些功能提供接近实时且可操作的高级攻击检测。 根据EDR配置，安全分析师可以有效地确定警报的优先级，了解泄露的完整范围，并采取响应操作来修正威胁。 有关 [终结点安全，请参阅](/mem/intune/protect/endpoint-security-edr-policy) 终结点检测和响应策略。
 - **防火墙** 策略侧重于你的设备的 Defender 防火墙。 有关 [终结点](/mem/intune/protect/endpoint-security-firewall-policy) 安全，请参阅防火墙策略。
 - **防火墙规则** 配置防火墙的细化规则，包括特定端口、协议、应用程序和网络。 有关 [终结点](/mem/intune/protect/endpoint-security-firewall-policy) 安全，请参阅防火墙策略。
@@ -116,28 +117,28 @@ Microsoft Endpoint Manager包括多种方法和策略类型，用于管理设备
 
 若要通过管理中心支持 Microsoft Defender 终结点安全Microsoft Endpoint Manager管理，你必须在每个控制台中启用它们之间的通信。
 
-1. 登录到 Microsoft 365 Defender[门户](https://security.microsoft.com/)，然后转到设置终结点配置管理强制范围，并启用  >    >    >  用于安全设置管理的平台：
+1. 登录到 Microsoft 365 Defender [并](https://security.microsoft.com/)转到 **设置** > **EndpointsConfiguration** >  **ManagementEnforcement** >  作用域，并启用用于安全设置管理的平台：
 
    :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="在 Defender 控制台中启用 Microsoft Defender 终结点设置管理。":::
 
-2. 确保相关用户有权管理终结点安全设置Microsoft Endpoint Manager或在 Defender 门户中配置角色来授予这些权限。 转到设置  >  **角色**  >  **添加项**：
+2. 确保相关用户有权管理 Microsoft Endpoint Manager 中的终结点安全设置，或通过配置 Defender 门户中的角色授予这些权限。 转到 **设置** > **RolesAdd** > **项**：
 
    :::image type="content" source="../media/add-role-in-mde.png" alt-text="在 Defender 门户中创建新角色。":::
 
    > [!TIP]
    > 你可以修改现有角色并添加必要的权限，而不是在 Microsoft Defender for Endpoint 中创建其他角色
 
-3. 配置角色时，请添加用户，并确保在"管理终结点安全设置"Microsoft Endpoint Manager：
+3. 配置角色时，请添加用户并确保选择以下策略中的"管理 **终结点安全设置Microsoft Endpoint Manager**：
 
    :::image type="content" source="../media/add-role.png" alt-text="授予用户管理设置的权限。":::
 
 4. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-5. 选择 **终结点安全**  >  **Microsoft Defender for Endpoint，** 将允许 Microsoft Defender for Endpoint 强制实施终结点安全配置 **(预览**) **设置为"打开"。**
+5. 选择 **终结点安全** > **Microsoft Defender for Endpoint**，将允许 **Microsoft Defender for Endpoint** 强制实施终结点安全配置 (预览版) 设置为 **"打开"**。
 
    :::image type="content" source="../media/enable-mde-settings-management-mem.png" alt-text="在管理中心中为终结点设置Microsoft Endpoint Manager Microsoft Defender。":::
 
-   将此选项设置为 *"* 打开"时，Microsoft Defender for Endpoint 中平台范围内所有未由 Microsoft Endpoint Manager 的设备都将有资格载入到 Microsoft Defender for Endpoint。
+   将此选项设置为 *"* 打开"时，Microsoft Defender for Endpoint 中平台范围中未由 Microsoft Endpoint Manager 管理的所有设备都将有资格载入到 Microsoft Defender for Endpoint。
 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>将设备载入到 Microsoft Defender for Endpoint
 
@@ -160,16 +161,16 @@ Microsoft Defender for Endpoint 支持多种载入设备的选项。 有关当�
 
 1. 登录到[ Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 转到 **"设备**""所有设备"，然后选择"托管者"列  >  以对设备视图进行排序。 
+2. 转到 **"DevicesAll** >  **设备**"，然后选择"托管 **者**"列以对设备视图进行排序。
 
-   已载入 Microsoft Defender for Endpoint 且已注册但 Intune 不管理的设备在"托管者"列中显示 **Microsoft Defender for Endpoint。** 这些设备可以接收 Microsoft Defender for Endpoint 的安全管理策略。
+   已载入 Microsoft Defender for Endpoint 且已注册但 Intune 不管理的设备在"托管者"列中显示 **Microsoft Defender for Endpoint**。 这些设备可以接收 Microsoft Defender for Endpoint 的安全管理策略。
 
    对于使用 Microsoft Defender for Endpoint 安全管理的设备，你还将找到两个标签：
 
    - **MDEJoined** - 已添加到作为此方案的一部分加入目录的设备。
    - **MDEManaged** - 已添加到主动使用安全管理方案的设备。 如果 Defender for Endpoint 停止管理安全配置，则此标记将从设备中删除。
 
-可以在管理中心 内或[Azure AD为这些设备](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)Microsoft Endpoint Manager[组](/mem/intune/fundamentals/groups-add)。
+可以在管理中心内或[Azure AD为这些设备](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)Microsoft Endpoint Manager[组](/mem/intune/fundamentals/groups-add)。
 
 ## <a name="deploy-policy"></a>部署策略
 
@@ -187,24 +188,24 @@ Microsoft Defender for Endpoint 支持多种载入设备的选项。 有关当�
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 转到 **"终结点安全性**"，然后选择要配置的策略类型，即"防病毒"或"防火墙"，然后选择"创建 **策略"。**
+2. 转到 **"终结点安全性** "，然后选择要配置的策略类型（防病毒或防火墙），然后选择"创建 **策略"**。
 
 3. 输入以下属性或所选的策略类型：
 
    - 对于防病毒策略，选择：
-     - 平台 **：Windows 10、Windows 11 和 Windows Server (Preview)**
-     - 配置文件 **：Microsoft Defender 防病毒 (预览)**
+     - 平台：**Windows 10、Windows 11 和 Windows Server (Preview)**
+     - 配置文件：**Microsoft Defender 防病毒 (预览)**
 
    - 对于防火墙策略，选择：
-     - 平台 **：Windows 10、Windows 11 和 Windows Server (Preview)**
-     - 配置文件 **：Microsoft Defender 防火墙 (预览版)**
+     - 平台：**Windows 10、Windows 11 和 Windows Server (Preview)**
+     - 配置文件： **Microsoft Defender 防火墙 (预览版)**
 
    - 对于防火墙规则策略，选择：
-     - 平台 **：Windows 10、Windows 11 和 Windows Server (Preview)**
-     - 配置文件 **：Microsoft Defender 防火墙规则 (预览)**
+     - 平台：**Windows 10、Windows 11 和 Windows Server (Preview)**
+     - 配置文件： **Microsoft Defender 防火墙规则 (预览)**
 
    - 对于"终结点检测和响应"策略，选择：
-     - 平台 **：Windows 10、Windows 11 和 Windows Server (Preview)**
+     - 平台：**Windows 10、Windows 11 和 Windows Server (Preview)**
      - 配置文件： **终结点检测和响应 (预览)**
 
    >[!Note]
@@ -230,7 +231,7 @@ Microsoft Defender for Endpoint 支持多种载入设备的选项。 有关当�
    > - 只有 *设备对象* 适用于 Microsoft Defender 终结点管理。 不支持面向用户。
    > - 配置的策略将同时应用于 Microsoft Intune 和适用于终结点客户端的 Microsoft Defender
 
-8. 完成策略创建过程，然后在"审阅 **+** 创建"页上，选择"创建 **"。** 为创建的配置文件选择策略类型时，新配置文件将显示在列表中。
+8. 完成策略创建过程，然后在"审阅 **+** 创建"页上，选择" **创建"**。 为创建的配置文件选择策略类型时，新配置文件将显示在列表中。
 
 9. 等待分配策略，并查看策略已应用的成功指示。
 

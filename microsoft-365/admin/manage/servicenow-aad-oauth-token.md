@@ -2,8 +2,8 @@
 title: 配置Microsoft 365身份验证令牌Azure AD集成
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow 的作用域认证应用程序安装和配置指南。
-ms.openlocfilehash: f8bc7ee4647bf14521b9d29f616539acb95e7495
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 9f9985e07989f168f9b27dde1c1d574813c3f349
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295165"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320895"
 ---
 # <a name="configure-microsoft-365-support-integration-with-azure-ad-auth-token"></a>配置Microsoft 365身份验证令牌Azure AD集成
 
@@ -30,7 +30,7 @@ ms.locfileid: "62295165"
 
 这些必备组件是设置支持集成Microsoft 365所必需的。
 
-1. \[AAD管理员\]在Azure AD租户下创建出站Microsoft 365应用程序。
+1. \[AAD管理员\]在Azure AD租户下为出站Microsoft 365应用程序。
 
     1. 使用你的租户凭据Microsoft 365 Azure 门户，然后转到应用注册[页面](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)以创建新应用程序。
 
@@ -66,17 +66,17 @@ ms.locfileid: "62295165"
 
 1. \[ServiceNow 管理员\] 在 ServiceNow 中设置出站 OAuth 提供程序。
 
-    如果范围未设置为 **"****&gt;&gt;** 全局"，请导航到"开发人员设置并切换到"全局"。
+    如果范围未设置为 **"** 全局"，则通过导航到"开发人员设置并切换到"**全局" &gt; &gt;** 来 **这样做**。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="自动生成的图形用户界面、文本、应用程序、聊天或短信说明":::
 
 1. 转到 **"系统""OAuth &gt; 应用程序注册表"**。
 
-1. 使用"向第三连接 **OAuth 提供程序创建** 一个新应用程序"选项并输入以下值：
+1. 使用"向第三连接 **OAuth 提供程序"选项创建新的** 应用程序并输入以下值：
 
-    - 客户端 ID：这是在步骤 1 的先决条件 (Azure AD中创建\#的应用程序) ID。
+    - 客户端 ID：这是在步骤 1 的先决条件 (Azure AD中创建的应用程序) \#ID。
 
-    - 客户端密码：这是在\#步骤 1 的先决条件 (Azure AD创建的应用程序) 密码值。
+    - 客户端密码：这是在步骤 1 中的先决条件 (Azure AD创建\#的应用程序) 密码值。
 
     - 默认授予类型：客户端凭据
 
@@ -88,7 +88,7 @@ ms.locfileid: "62295165"
 
 1. \[ServiceNow 管理员\] 若要在 ServiceNow 中配置 OIDC 提供程序，请参阅 [联机文档](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html)。
 
-    如果范围未设置为 **"****&gt;全局"，请转到"设置应用程序&gt;"并** 切换到"**全局"**。
+    如果作用域未设置为 **"****&gt;全局"，请转到"设置应用程序&gt;"并** 切换到"**全局"**。
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="自动生成的图形用户界面、文本、应用程序、聊天或短信说明":::
 
@@ -102,7 +102,7 @@ ms.locfileid: "62295165"
 
     - OIDC 元数据 URL： `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
 
-    - UserClaim： **appId**
+    - UserClaim： **appid**
 
     - UserField： **用户 ID**
 
@@ -112,7 +112,7 @@ ms.locfileid: "62295165"
 
     - 名称：**{TenantName\_}\_applicationinboundapi\_\_** (示例：contosoapplicationinboundapi\_\_\_) 
 
-    - 客户端 ID：在步骤 2 的先决条件 (Azure AD中创建\#的应用程序) ID。
+    - 客户端 ID：在步骤 2 中的先决条件 (Azure AD创建\#的应用程序) ID。
 
     - 客户端密码：在步骤 2 中的先决条件 (Azure AD创建的应用程序) \#密码。
 
@@ -124,7 +124,7 @@ ms.locfileid: "62295165"
 
 1. \[ServiceNow 管理员\] 创建集成用户。
 
-    必须指定集成用户。 如果没有现有集成用户 **&gt;**，或者希望专门为此集成创建一个集成用户，请转到"组织用户"以创建新用户。 用户 ID 的 **值为** 在系统必备组件和身份验证令牌 (Azure AD [中创建](#prerequisites-azure-ad-auth-token)的应用程序) 。
+    必须指定集成用户。 如果没有现有集成用户 **&gt;**，或者希望专门为此集成创建一个集成用户，请转到"组织用户"以创建新用户。 用户 ID 的 **值为** 在系统必备组件和身份验证令牌 (Azure AD [中创建的应用程序)](#prerequisites-azure-ad-auth-token)。
 
     如果要创建新的集成用户，请检查" **仅 Web 服务访问"** 选项。 还必须向此用户授予 **incidentmanager\_** 角色。
 
@@ -159,7 +159,7 @@ ms.locfileid: "62295165"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="图形用户界面，自动生成表说明":::
 
-1. \[ServiceNow 管理员\] 转到 **Microsoft 365支持&gt;安装程序以** 打开集成工作流。
+1. \[ServiceNow 管理员\]转到 **Microsoft 365支持&gt;安装程序以** 打开集成工作流。
 
     > [!NOTE]
     > 如果看到错误"由于表的跨作用域访问策略而被拒绝从作用域'xmiomsm365assis\_\_\_'对'oauthentity\_'执行读取操作"，则由表访问策略导致。 必须确保 **已检查 &gt; 表** oauthentity 的所有应用程序作用域"可\_读取"。
@@ -193,7 +193,7 @@ ms.locfileid: "62295165"
     1. 配置 ServiceNow 外部 OpenID 连接提供程序 (OIDC 提供程序) 。
     1. 完成先决条件部分中的说明后，选择新创建的实体并单击"完成"。 否则，请按照说明在 ServiceNow 中创建实体，然后选择新的外部 OIDC 提供程序应用注册。
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-7.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-7.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
-    1. 为入站AAD配置应用注册。
+    1. 为入站AAD用户配置应用注册。
     1. 完成先决条件部分中的说明后，单击"完成"转到下一步。 否则，请按照说明为入站 REST 用户AAD应用注册 (集成) 。
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-8.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-8.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
     1. 配置集成用户。
@@ -206,7 +206,7 @@ ms.locfileid: "62295165"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image40.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image40.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
-    1. 转到"**Microsoft 365 管理门户&gt;设置&gt;组织设置&gt;""组织配置文件"**。
+    1. 转到"**Microsoft 365 管理门户&gt;设置&gt;组织设置"&gt;"组织配置文件"**。
 
     1. 配置支持集成设置：
 
@@ -237,7 +237,7 @@ ms.locfileid: "62295165"
     1. 选择 **"下** 一步"完成集成。
 
    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-10.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-10.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
-    支持Microsoft 365应用将执行测试，以确保集成正常工作。 如果配置有问题，则会显示一条错误消息，说明需要修复的问题。 否则，应用程序已准备就绪。
+    支持Microsoft 365应用将执行测试以确保集成正常工作。 如果配置有问题，则会显示一条错误消息，说明需要修复的问题。 否则，应用程序已准备就绪。
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-11.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-11.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
 1. \[ServiceNow 管理员\] 为现有用户启用 Microsoft 支持集成。
@@ -248,7 +248,7 @@ ms.locfileid: "62295165"
 
     - xmiomsm365assis.administrator\_\_\_
 
-1. \[OPTIONAL\] \[角色为 xmiomsm365assis.administrator\_\_\_ link link Microsoft 365\]管理员帐户的用户。
+1. \[OPTIONAL\] \[角色为 xmiomsm365assis.administrator\_\_\_ 链接\]Microsoft 365管理员帐户的用户。
 
     如果任何用户具有 xmiomsm365assis.administrator\_\_\_ 角色，并且使用不同的 Microsoft 365 帐户来管理 Microsoft 365 支持案例，则必须转到 Microsoft 365 支持&gt;链接帐户以设置其 Microsoft 365 管理员电子邮件。
 

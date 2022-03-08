@@ -7,8 +7,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 547356fadc05c2359b4c6cd639bc22110bf8be93
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 31b2a7b41c26bdba22e6f364e517471e31e9115c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346274"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313015"
 ---
 # <a name="overview-of-automated-investigations"></a>自动调查概述
 
@@ -80,11 +80,14 @@ ms.locfileid: "62346274"
 所有修正操作（无论是挂起还是已完成）都跟踪在操作 [中心中](auto-investigation-action-center.md)。 如有必要，安全运营团队可以撤消修正操作。 若要了解更多信息，请参阅 [在自动调查后审阅并批准修正操作](/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
 
 > [!TIP]
-> 查看企业门户中新的统一调查Microsoft 365 Defender页面。 若要了解更多信息，请参阅 ([ "新建！) 统一调查"页](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
+> 查看企业门户中新的统一调查Microsoft 365 Defender页面。 有关详细信息，请参阅" [ 新建 (统一) 页](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
 
 ## <a name="requirements-for-air"></a>AIR 的要求
 
-你的组织必须具有适用于终结点的 Defender (请参阅 [Microsoft Defender for Endpoint 的最低要求](minimum-requirements.md)。
+你的组织必须拥有适用于终结点的 Defender (请参阅 [Microsoft Defender for Endpoint) ](minimum-requirements.md) 。
+
+> [!NOTE]
+> 自动调查和响应要求Microsoft Defender 防病毒被动模式或主动模式运行。 如果Microsoft Defender 防病毒或卸载，自动调查和响应将无法正常工作。
 
 目前，AIR 仅支持以下操作系统版本：
 
@@ -92,8 +95,8 @@ ms.locfileid: "62346274"
 - Windows Server 2016 (预览) 
 - Windows Server 2019
 - Windows Server 2022
-- Windows 10版本 1709 (版本 16299.1085[（包含 KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
-- Windows 10版本 1803 (OS 内部版本 17134.704[，包含 KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本
+- Windows 10版本 1709 (OS 内部版本 16299.1085[（包含 KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
+- Windows 10版本 1803 (操作系统版本 17134.704[（包含 KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
 - Windows 10版本 [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) 或更高版本
 - Windows 11
 

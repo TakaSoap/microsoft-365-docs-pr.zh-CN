@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何管理审阅集，以便分析、查询、查看、标记和导出Advanced eDiscovery案例。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 16c6e8aa5f3cf278b90ab7fd338bcac203b7489a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a3aa836782dd464be2e62ca729efd85484c8aebf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206093"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315605"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>管理审阅Advanced eDiscovery
 
@@ -40,15 +40,15 @@ ms.locfileid: "60206093"
 
 ## <a name="create-a-review-set"></a>创建审阅集
 
-可以在"审阅集"选项卡上单击 **"+ 添加审阅集"创建审阅集**。
+可以通过单击+ 添加审阅集在"审阅集 **"选项卡****上创建审阅集**。
 
 ![添加审阅集。](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-在"**添加审阅集**"飞出页上，键入评价集的名称，然后单击"保存 **"。** 新审阅集显示在"审阅集"选项卡 **上的** 列表中。
+在" **添加审阅集** "飞出页上，键入审阅集的名称，然后单击"保存 **"**。 新审阅集显示在"审阅集"选项卡 **上的** 列表中。
 
 !["审阅集"选项卡上列出的新审阅集。](../media/AeDnewreviewset.png)
 
-有三种不同的方法可以将数据添加到案例的审阅Advanced eDiscovery集。
+有三种不同的方法可以将数据添加到审阅集的Advanced eDiscovery案例。
 
 ![三种添加到审阅集的方法。](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
@@ -57,3 +57,6 @@ ms.locfileid: "60206093"
 2. [将非 Microsoft 365 数据加载到审阅集](load-non-Office-365-data-into-a-review-set.md)
 
 3. [从另一审阅集将数据添加到审阅集](add-data-to-review-set-from-another-review-set.md)
+
+> [!NOTE]
+> 无法从审阅集中删除项目，并且无法从案例中删除审阅集。 若要删除审阅 (并删除审阅集) ，必须删除Advanced eDiscovery审阅集所在的案例。 有关详细信息，请参阅[关闭或删除高级电子数据展示案例](close-or-delete-case.md)。

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 115dcce1e99583ab0c3345da683be0b826b24ff7
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 37e94d43f2cfeab0e1135c42de34726ee5895714
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524065"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320587"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -92,7 +92,7 @@ ms.locfileid: "62524065"
 
 5. 对于 **决定是要保留内容、删除内容还是同时执行这两个操作** 页面，请指定用于保留和删除内容的配置选项。
 
-   你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅 [保留和删除内容](retention-settings.md#settings-for-retaining-and-deleting-content)的设置。
+   你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。有关详细信息，请参阅[保留和删除内容的设置](retention-settings.md#settings-for-retaining-and-deleting-content)。
 
 6. 完成配置并保存设置。
 
@@ -156,7 +156,7 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 
 5. 对于 **决定是要保留内容、删除内容还是同时执行这两个操作** 页面，请指定用于保留和删除内容的配置选项。 
     
-    你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅 [保留和删除内容](retention-settings.md#settings-for-retaining-and-deleting-content)的设置。
+    你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。有关详细信息，请参阅[保留和删除内容的设置](retention-settings.md#settings-for-retaining-and-deleting-content)。
 
 6. 完成配置并保存设置。
 
@@ -164,7 +164,7 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>支持 Yammer 所需的其他保留策略
 
-Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer 网络的电子邮件，请使用 **Microsoft 365 组** 位置来配置额外的保留策略，该策略包括任何用于 Yammer 的 Microsoft 365 组。 
+Yammer 不仅仅是社区消息和私人消息。若要保留和删除 Yammer 网络的电子邮件，请使用 **Microsoft 365 组** 位置来配置额外的保留策略，该策略包括任何用于 Yammer 的 Microsoft 365 组。 
 
 若要保留和删除存储在 Yammer 中的文件，则需要包含 **Microsoft 365 组** 位置或 **OneDrive 帐户** 位置的保留策略：
 
@@ -204,7 +204,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 5. 对于 **决定是要保留内容、删除内容还是同时执行这两个操作** 页面，请指定用于保留和删除内容的配置选项。
     
-    你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](retention-settings.md#settings-for-retaining-and-deleting-content)。
+    你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。有关详细信息，请参阅本页上的[保留和删除内容的设置](retention-settings.md#settings-for-retaining-and-deleting-content)。
 
 6. 完成配置并保存设置。
 
@@ -214,15 +214,23 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
   
 ![保留策略生效时间图。](../media/retention-policy-timings.png)
 
-首先，需要将保留策略分发到所选位置，然后将其应用于内容。 始终可以通过从合规中心的“**保留策略**”页面选择保留策略来检查保留策略的分发状态。 在浮出控件窗格中，如果你看到“**关闭(错误)**”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重新尝试策略分发：
+首先，需要将保留策略分发到所选位置，然后将其应用于内容。 始终可以通过从合规中心的“**保留策略**”页面选择保留策略来检查保留策略的分发状态。 在浮出控件窗格中，如果看到状态中包含 **（错误）**，并且在位置的详细信息中看到一条消息，指出部署策略或尝试重新部署策略所需的时间比预期长，请尝试运行 [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) 或 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重新尝试策略分发：
 
 1. [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
-2. 运行以下命令：
+2. 运行下列命令之一：
     
-    ```PowerShell
-    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-    ```
+    - 对于策略位置 **Teams 专用频道消息**、**Yammer 用户消息** 和 **Yammer 社区消息**：
+    
+        ```PowerShell
+        Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
+    
+    - 对于所有其他策略位置，例如 **Exchange 电子邮件**、**SharePoint 网站**、**Teams 频道消息** 等：
+    
+        ```PowerShell
+        Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
 
 ## <a name="updating-retention-policies"></a>更新保留策略
 

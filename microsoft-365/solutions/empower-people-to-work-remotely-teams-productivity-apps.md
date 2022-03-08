@@ -2,8 +2,8 @@
 title: 步骤 5：部署混合工作者生产力应用和服务
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用户可通过使用 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
-ms.openlocfilehash: 97a0342347d848a27a8402b5b8506536c95c55c9
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 31f3c25aa536dce42dfd3ee8677271f1523eb75a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886226"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312903"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>步骤 5：部署混合工作者生产力应用和服务
 
