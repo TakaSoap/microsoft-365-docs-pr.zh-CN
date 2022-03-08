@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 5d5c7820a28977bb894c30915dc26f12016bb58c
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: 71b7bb5d5588f19ff4134c133377b3e9ca83c780
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825489"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319345"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -104,7 +104,7 @@ ms.locfileid: "62825489"
   - 对于分配有任何其他（非E5）Office 365 或 Microsoft 365 许可证的用户，审核记录将保留90天。 有关支持统一审核日志记录的 Office 365 和 Microsoft 365 订阅的列表，请参阅[安全与合规中心服务说明](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
 
     > [!NOTE]
-    > 即使启用了默认启用邮箱审核，也可能会发现无法在 Microsoft 365 合规中心的审核日志搜索中找到某些用户的邮箱审核事件，也无法通过 Office 365 管理活动 API 找到这些事件。 有关详细信息，请参阅[有关邮箱审核日志记录的详细信息](enable-mailbox-auditing.md#more-information)。
+    > 即使默认情况下启用了邮箱审核，也可能会注意到某些用户的邮箱审核事件在Microsoft 365 合规中心或通过 Office 365 管理活动 API 的审核日志搜索中找不到。有关详细信息，请参阅 [有关邮箱审核日志记录](enable-mailbox-auditing.md#more-information)的详细信息。
 
 - 如果希望为组织关闭审核日志搜索，可以在连接到 Exchange Online 组织的远程 PowerShell 中运行以下命令：
 
@@ -128,7 +128,7 @@ ms.locfileid: "62825489"
 
 - Azure Active Directory (Azure AD) 是 Microsoft 365 的目录服务。 统一审核日志包含用户、组、应用程序、域以及在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 或 Azure 管理门户中执行的目录活动。 有关 Azure AD 事件的完整列表，请参阅 [Azure Active Directory 审核报告事件](/azure/active-directory/reports-monitoring/concept-audit-logs)。
 
-- 发生事件后，最多需要 30 分钟到 24 小时即可在审核日志搜索的结果中返回相应的审核日志记录。 下表显示了 Microsoft 365 中不同服务所花费的时间。
+- 发生事件后，最多需要 30 分钟到 24 小时即可在审核日志搜索的结果中返回相应的审核日志记录。下表显示了 Office 365 中不同服务所花费的时间。
 
   |Microsoft 365 服务或功能|30 分钟|24 小时|
   |---|:---:|:---:|
@@ -201,7 +201,7 @@ ms.locfileid: "62825489"
 
 4. 单击“**搜索**”以使用搜索条件运行搜索。
 
-   此时将加载搜索结果，片刻后将显示在新页面上。 完成搜索后会显示找到的结果数。 最多可显示 5,000 个事件（每次加载 150 个）。 如果超过 5,000 个事件满足搜索条件，则将显示最近的 5,000 个事件。
+   此时将加载搜索结果，片刻后将显示在新页面上。 完成搜索后会显示找到的结果数。 最多可显示 5,000 个事件（每次加载 150 个）。
 
    ![完成搜索后会显示结果数。](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -221,7 +221,7 @@ ms.locfileid: "62825489"
 
 ### <a name="step-2-view-the-search-results"></a>步骤 2：查看搜索结果
 
-审核日志搜索结果会显示在“**审核日志搜索**”页中的“**结果**”下。 如上文所述，最多显示 5,000 个最新事件（每次加载 150 个）。 若要显示更多事件，可以使用“**结果**”窗格中的滚动条，或按 **Shift+End** 显示随后的 150 个事件。
+审核日志搜索结果会显示在“**审核日志搜索**”页中的“**结果**”下。 如上文所述，最多显示 5,000 个最新事件（每次加载 150 个）。 使用滚动条或按 **Shift + End** 显示接下来的 150 个事件。
 
 结果包含有关搜索返回的每个事件的以下信息：
 
@@ -241,7 +241,7 @@ ms.locfileid: "62825489"
 - “**详细信息**”：有关活动的其他详细信息。 同样，并非所有活动均具有值。
 
 > [!TIP]
-> 单击“**结果**”下的列标题对结果进行排序。 你可以将结果按从 A 到 Z 或从 Z 到 A 的顺序排序。单击“**日期**”标题以将结果按从旧到新或从新到旧的顺序排序。
+> 单击“**结果**”下的列标题对结果进行排序。你可以将结果按从 A 到 Z 或从 Z 到 A 的顺序排序。单击“**日期**”标题以将结果按从旧到新或从新到旧的顺序排序。
 
 #### <a name="view-the-details-for-a-specific-event"></a>查看特定事件的详细信息
 
@@ -430,8 +430,8 @@ ms.locfileid: "62825489"
 
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
-|已访问文件|FileAccessed|用户或系统帐户访问文件。|
-|(无)|FileAccessedExtended|这与“已访问文件”(FileAccessed) 活动有关。 如果一个用户长时间（至 3 小时）持续访问某一文件，则会记录下 FileAccessedExtended 事件。 <br/><br/> 记录 FileAccessedExtended 事件是为了减少持续访问文件时所记录的 FileAccessed 事件数。 这有助于减小（实际上是）同一用户活动的多个 FileAccessed 记录的干扰，从而专注于初始（和更重要的）FileAccessed 事件。|
+|已访问文件|FileAccessed|用户或系统帐户访问文件。 用户访问文件后，在接下来的五分钟内，同一用户不会再次记录同一个文件的 FileAccessed 事件。|
+|(无)|FileAccessedExtended|这与“已访问文件”(FileAccessed) 活动有关。如果一个用户长时间（至 3 小时）持续访问某一文件，则会记录下 FileAccessedExtended 事件。 <br/><br/> 记录 FileAccessedExtended 事件是为了减少持续访问文件时所记录的 FileAccessed 事件数。 这有助于减小（实际上是）同一用户活动的多个 FileAccessed 记录的干扰，从而专注于初始（和更重要的）FileAccessed 事件。|
 |已更改文件的保留标签|ComplianceSettingChanged|保留标签已应用于文档或已从文档中删除。 手动或自动将保留标签应用于消息时触发此事件。|
 |已将记录状态更改为“已锁定”|LockRecord|将文档分类为记录的保留标签的记录状态为“已锁定”。 这意味着无法修改或删除文档。 仅至少分配有网站参与者权限的用户才能更改文档的记录状态。|
 |已将记录状态更改为“未锁定”|UnlockRecord|将文档分类为记录的保留标签的记录状态为“未锁定”。 这意味着可以修改或删除文档。 仅至少分配有网站参与者权限的用户才能更改文档的记录状态。|
@@ -446,8 +446,8 @@ ms.locfileid: "62825489"
 |在文件中检测到恶意软件|FileMalwareDetected|SharePoint 防病毒引擎在文件中检测到恶意软件。|
 |已放弃文件签出|FileCheckOutDiscarded|用户放弃（或撤消）签出的文件。这意味着将放弃签出文件时对其所做的所有更改，而不将其保存到文档库中的文档版本。|
 |已下载的文件|FileDownloaded|用户从网站下载文档。|
-|已修改文件|FileModified|用户或系统帐户修改网站上文档的内容或属性。|
-|(无)|FileModifiedExtended|这与“已修改文件”(FileModified) 活动相关。 如果一个用户长时间（至 3 小时）持续修改某一文件，则会记录下 FileModifiedExtended 事件。 <br/><br/> 记录 FileModifiedExtended 事件是为了减少持续修改文件时所记录的 FileModified 事件数。 这有助于减小（实际上是）同一用户活动的多个 FileModified 记录的干扰，从而专注于初始（和更重要的）FileModified 事件。|
+|已修改文件|FileModified|用户或系统帐户修改网站上文档的内容或属性。 当同一用户修改同一文档的内容或属性时，系统将等待 5 分钟，然后再记录另一个 FileModified 事件。|
+|(无)|FileModifiedExtended|这与“已修改文件”(FileModified) 活动相关。如果一个用户长时间（至 3 小时）持续修改某一文件，则会记录下 FileModifiedExtended 事件。 <br/><br/> 记录 FileModifiedExtended 事件是为了减少持续修改文件时所记录的 FileModified 事件数。 这有助于减小（实际上是）同一用户活动的多个 FileModified 记录的干扰，从而专注于初始（和更重要的）FileModified 事件。|
 |已移动文件|FileMoved|用户将文档从网站上的当前位置移动到新位置。|
 |(无)|FilePreviewed|用户在 SharePoint 或 OneDrive for Business 网站上预览文件。 这些事件通常发生在基于单个活动的高容量情形中，例如查看图库。|
 |已执行的搜索查询|SearchQueryPerformed|用户或系统帐户在 SharePoint 或 OneDrive for Business 中执行搜索。 部分服务帐户执行搜索查询的常见情形包括将电子数据展示挂起和保留策略应用到网站或 OneDrive 帐户，以及将保留或敏感度标签自动应用到网站内容。|
@@ -459,9 +459,9 @@ ms.locfileid: "62825489"
 |已重命名文件|FileRenamed|用户重命名网站上的文档。|
 |已还原文件|FileRestored|用户从网站回收站还原文档。 |
 |已上传文件|FileUploaded|用户将文档上传到网站上的文件夹。 |
-|已查看页面|PageViewed|用户在网站上查看页面。 这不包括使用 Web 浏览器查看位于文档库中的文件。|
-|(无)|PageViewedExtended|这与“已查看页面”(PageViewed) 活动相关。 如果一个用户长时间（至 3 小时）持续查看某一网页，则会记录下 PageViewedExtended 事件。 <br/><br/> 记录 PageViewedExtended 事件是为了减少持续查看页面时所记录的 PageViewed 事件数。 这有助于减小（实际上是）同一用户活动的多个 PageViewed 记录的干扰，从而专注于初始（和更重要的）PageViewed 事件。|
-|按客户端查看信号|ClientViewSignaled|用户的客户端（例如网站或移动应用）已发出信号，表明用户已查看指示的页面。 此活动通常在页面的 PagePrefetched 事件后记录。 <br/><br/>**注意**：由于 ClientViewSignaled 事件由客户端而非服务器发出信号，因此服务器可能不会记录该事件，从而导致该事件可能未显示在审核日志中。 审核记录中的信息也可能不可信。 但是，由于用户身份由用于创建信号的令牌验证，因此相应审核记录中列出的用户身份是准确的。 |
+|已查看页面|PageViewed|用户在网站上查看页面。 这不包括使用 Web 浏览器查看位于文档库中的文件。 用户查看页面后，在接下来的五分钟内不会为同一用户再次记录同一页的 PageViewed 事件。|
+|(无)|PageViewedExtended|这与“已查看页面”(PageViewed) 活动相关。如果一个用户长时间（至 3 小时）持续查看某一网页，则会记录下 PageViewedExtended 事件。 <br/><br/> 记录 PageViewedExtended 事件是为了减少持续查看页面时所记录的 PageViewed 事件数。 这有助于减小（实际上是）同一用户活动的多个 PageViewed 记录的干扰，从而专注于初始（和更重要的）PageViewed 事件。|
+|按客户端查看信号|ClientViewSignaled|用户的客户端（例如网站或移动应用）已发出信号，表明用户已查看指示的页面。 此活动通常在页面的 PagePrefetched 事件后记录。 <br/><br/>**注意**：由于 ClientViewSignaled 事件由客户端而非服务器发出信号，因此服务器可能不会记录该事件，从而导致该事件可能未显示在审核日志中。 审核记录中的信息也可能不可信。 但是，由于用户身份由用于创建信号的令牌验证，因此相应审核记录中列出的用户身份是准确的。 当同一用户的客户端发出用户再次查看页面的信号时，系统将等待 5 分钟，然后再记录同一事件。|
 |(无)|PagePrefetched|用户的客户端（例如网站或移动应用）已请求指示的页面，以帮助提高用户浏览时的性能。 记录此事件以指示页面内容已服务于用户的客户端。 此事件未明确指示用户导航到页面。 <br/><br/> 当客户端（根据用户请求）呈现页面内容时，应生成 ClientViewSignaled 事件。 并非所有客户端都支持指示预提取，因此一些预提取的活动可能会被记录为 PageViewed 事件。|
 ||||
 
@@ -469,15 +469,15 @@ ms.locfileid: "62825489"
 
 **任何非用户活动都可以触发包含 "OneDriveMpc-Transform_Thumbnail" 等之类用户代理的 FilePreviewed 审核记录吗？**
 
-我们不了解非用户操作生成类似事件的情况。 比如打开用户配置文件卡片（通过在 Outlook 网页版中的邮件中单击其名称或电子邮件地址）生成类似事件的用户操作。
+我们不了解非用户操作生成类似事件的情况。比如打开用户配置文件卡片（通过在 Outlook 网页版中的邮件中单击其名称或电子邮件地址）生成类似事件的用户操作。
 
 **对 OneDriveMpc Transform_Thumbnail 的调用是否始终由用户有意触发？**
 
-否。 但是类似的事件可以作为浏览器预取的结果被记录下来。
+否。但是类似的事件可以作为浏览器预取的结果被记录下来。
 
 **如果看到来自 Microsoft 注册的 IP 地址的 FilePreviewed 事件，是否表示预览显示在用户设备的屏幕上？**
 
-否。 该事件可能已经作为浏览器预取的结果被记录下来。
+否。该事件可能已经作为浏览器预取的结果被记录下来。
 
 **是否存在用户预览文档时生成文件访问事件的场景？**
 
@@ -495,7 +495,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 - Microsoft Teams。与 Microsoft 365 组类似，也会生成审核记录，用于创建网站集、更新列表以及在创建团队时将成员添加到 SharePoint 组。
 
-- 合规性功能。 管理员实现合规性功能（如保留策略、电子数据展示保留和自动应用敏感度标签）时。
+- 合规性功能。理员实现合规性功能（如保留策略、电子数据展示保留和自动应用敏感度标签）时。
 
 在这些和其他情形下，你还会注意到，以 app@sharepoint 作为指定用户的多个审核记录是在较短的时间范围内创建的，通常每条记录只需几秒钟。 这也表明它们可能由同一个用户启动的任务触发。 而且，审核记录中的 ApplicationDisplayName 和 EventData 字段可以帮助你识别触发此事件的应用场景或应用程序。
 
@@ -524,7 +524,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |:-----|:-----|:-----|
 |已创建列表|ListCreated|用户已创建 SharePoint 列表。|
 |已创建列表列|ListColumnCreated|用户已创建 SharePoint 列表列。 列表列是指附加到一个或多个 SharePoint 列表的列。|
-|已创建列表内容类型|ListContentTypeCreated|用户已创建列表内容类型。 列表内容类型是指附加到一个或多个 SharePoint 列表的内容类型。|
+|已创建列表内容类型|ListContentTypeCreated|用户已创建列表内容类型。列表内容类型是指附加到一个或多个 SharePoint 列表的内容类型。|
 |已创建列表项|ListItemCreated|用户已在现有的 SharePoint 列表中创建项目。|
 |已创建网站列|SiteColumnCreated|用户已创建 SharePoint 网站列。 网站列是指未附加到列表的列。 网站列还是一种可供给定 Web 中的任何列表使用的元数据结构。|
 |已创建网站内容类型|Site ContentType Created|用户已创建网站内容类型。 网站内容类型是指附加到父网站的内容类型。|
@@ -543,7 +543,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已更新列表项|ListItemUpdated|用户通过修改一个或多个属性更新了 SharePoint 列表项。|
 |已更新网站列|SiteColumnUpdated|用户通过修改一个或多个属性更新了 SharePoint 网站列。|
 |已更新网站内容类型|SiteContentTypeUpdated|用户通过修改一个或多个属性更新了网站内容类型。|
-|已查看列表项|ListItemViewed|用户已删除 SharePoint 列表项。|
+|已查看列表项|ListItemViewed|用户已删除 SharePoint 列表项。 用户查看列表项后，在接下来的五分钟内，不会为同一用户对同一列表项再次记录 ListItemViewed 事件。|
 ||||
 
 ### <a name="sharing-and-access-request-activities"></a>共享和访问请求活动
@@ -558,7 +558,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已向网站集添加权限级别|PermissionLevelAdded|已向网站集添加权限级别。|
 |已接受访问请求|AccessRequestAccepted|已接受对网站、文件夹或文档的访问请求，并已授予请求用户访问权限。|
 |已接受共享邀请|SharingInvitationAccepted|用户（成员或来宾）接受共享邀请并被授予对资源的访问权限。 此事件包含受邀用户的信息以及用于接受邀请的电子邮件地址（可能有所不同）。 此活动通常伴有第二事件，描述向用户授予资源访问权限的方式，例如将用户添加到可以访问资源的组。|
-|已阻止共享邀请|SharingInvitationBlocked|由于基于目标用户的域允许或拒绝外部共享的外部共享策略，已阻止组织中的用户发送的共享邀请。 在这种情况下，阻止共享邀请的原因如下： <br/> 允许的域列表中不包含目标用户的域。 <br/> 或 <br/> 目标用户的域包含在阻止的域列表中。 <br/> 有关基于域允许或阻止外部共享的详细信息，请参阅 [SharePoint Online 和 OneDrive for Business 中的受限域共享](/sharepoint/restricted-domains-sharing)。|
+|已阻止共享邀请|SharingInvitationBlocked|由于基于目标用户的域允许或拒绝外部共享的外部共享策略，由你组织中的用户发送的共享邀请已被阻止。在这种情况下，共享邀请被阻止的原因如下： <br/> 允许的域列表中不包含目标用户的域。 <br/> 或 <br/> 目标用户的域包含在阻止的域列表中。 <br/> 有关基于域允许或阻止外部共享的详细信息，请参阅 [SharePoint Online 和 OneDrive for Business 中的受限域共享](/sharepoint/restricted-domains-sharing)。|
 |已创建访问请求|AccessRequestCreated|用户请求访问其无权访问的网站、文件夹或文档。|
 |已创建公司可共享链接 |CompanyLinkCreated|用户已创建指向某资源的公司范围链接。 公司范围链接仅供组织内的成员使用。 来宾无法使用。|
 |已创建匿名链接|AnonymousLinkCreated|用户创建了指向某资源的匿名链接。 拥有此链接的任何人均可访问资源，无需通过身份验证。|
@@ -610,7 +610,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已修改访问请求设置|WebRequestAccessModified|已修改网站上的访问请求设置。|
 |已修改“成员可共享”设置|WebMembersCanShareModified|已修改网站上的“**成员可共享**”设置。|
 |已修改网站集的权限级别|PermissionLevelModified|已更改网站集的权限级别。|
-|已修改网站权限|SitePermissionsModified|站点管理员或所有者（或系统帐户）更改分配给站点上组的权限级别。如果从组中删除所有权限，也会记录此活动。 <br/><br/> **注意**：SharePoint Online 中已弃用此操作。 若要查找相关事件，可搜索其他权限相关的活动，例如 **已添加网站集管理员**、**已向 SharePoint 组添加用户或组**、**已允许用户创建组**、**已创建组** 和 **已删除组**。|
+|已修改网站权限|SitePermissionsModified|站点管理员或所有者（或系统帐户）更改分配给站点上组的权限级别。如果从组中删除所有权限，也会记录此活动。 <br/><br/> **注意**：SharePoint Online 中已弃用此操作。若要查找相关事件，可搜索其他权限相关的活动，例如 **已添加网站集管理员**、**已向 SharePoint 组添加用户或组**、**已允许用户创建组**、**已创建组** 和 **已删除组**。|
 |已删除网站集的权限级别|PermissionLevelRemoved|已删除网站集的权限级别。|
 |已删除网站集管理员|SiteCollectionAdminRemoved|网站集管理员或所有者为网站删除了作为网站集管理员的人员。 当管理员（通过在 SharePoint 管理中心编辑用户配置文件）从用户 OneDrive 帐户的网站集管理员列表中删除自己时，也会记录此活动。  若要在审核日志搜索结果中返回此活动，必须搜索所有活动。|
 |已从 SharePoint 组中删除用户或组|RemovedFromGroup|用户已从 SharePoint 组中删除成员或来宾。 这可能是一项目的性操作，也可能是其他活动（例如取消共享事件）的结果。|
@@ -669,19 +669,19 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |访问的邮箱项目|MailItemsAccessed|已在邮箱中读取或访问邮件。 此活动的审核记录通过下面两种方式之一触发：当邮箱客户端（如 Outlook）对邮件执行绑定操作时，或者当邮箱客户端（如 Exchange ActiveSync 或 IMAP）同步邮箱文件夹中的项目时。 仅对具有 Office 365 或 Microsoft 365 E5 许可证的用户记录此活动。 调查被盗用的电子邮件帐户时，分析此活动的审核记录非常有用。 有关详细信息，请参阅 [高级审核](advanced-audit.md#advanced-audit-events)中的"高级审核事件"部分。 |
 |已添加代理邮箱权限|Add-MailboxPermission|管理员已将一位用户（称为“代理”）的 FullAccess 邮箱权限分配给另一用户邮箱。 FullAccess 权限允许代理打开他人的邮箱，查看和管理邮箱内容。 当 Microsoft 365 服务中的系统帐户定期代表组织执行维护任务时，也会生成此活动的审核记录。 系统帐户执行的常见任务是更新系统邮箱的权限。 有关详细信息，请参阅 [Exchange 邮箱审核记录中的系统帐户](#system-accounts-in-exchange-mailbox-audit-records)。|
 |已添加或删除具有日历文件夹代理访问权限的用户|UpdateCalendarDelegation|已在其他用户邮箱的日历中添加或删除具有代理身份的用户。 日历代理为同一组织内的其他人授予管理邮箱所有者日历的权限。|
-|已向文件夹添加权限|AddFolderPermissions|已添加文件夹权限。 文件夹权限用于控制组织中的哪些用户可以访问邮箱中的文件夹以及位于这些文件夹中的邮件。|
+|已向文件夹添加权限|AddFolderPermissions|文件夹权限已添加。文件夹权限用于控制组织中的哪些用户可以访问邮箱中的文件夹以及位于这些文件夹中的邮件。|
 |已将邮件复制到其他文件夹|复制|已将邮件复制到其他文件夹。|
 |已创建邮箱项目|创建|在邮箱的日历、联系人、备注或任务文件夹中创建项目。 例如，创建新的会议请求。 不会审核邮件的创建、发送或接收。 也不会审核邮箱文件夹的创建。|
 |已在 Outlook Web App 中创建新的收件箱规则|New-InboxRule|有权访问邮箱的邮箱所有者或其他用户在 Outlook Web App 中创建了收件箱规则。|
 |已从“已删除邮件”文件夹中删除邮件|SoftDelete|已永久删除或已从“已删除邮件”文件夹中删除邮件。 系统会将这些项目移动到“可恢复邮件”文件夹。 用户选择邮件并按 **Shift+Delete** 时，会将该邮件移动到“可恢复邮件”文件夹。|
-|已将邮件标记为记录|ApplyRecordLabel|已将邮件分类为记录。 为邮件手动或自动应用将内容分类为记录的保留标签时，会发生此事件。|
+|已将邮件标记为记录|ApplyRecordLabel|已将邮件分类为记录。为邮件手动或自动应用将内容分类为记录的保留标签时，会发生此事件。|
 |已将邮件移动到其他文件夹|移动|已将邮件移动到其他文件夹。|
 |已将邮件移动到“已删除邮件”文件夹|MoveToDeletedItems|已删除邮件，并已将其移动到“已删除邮件”文件夹。|
-|已修改文件夹权限|UpdateFolderPermissions|文件夹权限已更改。 文件夹权限用于控制组织中哪些用户可以访问邮箱文件夹以及文件夹中的邮件。|
+|已修改文件夹权限|UpdateFolderPermissions|文件夹权限已更改。文件夹权限用于控制组织中哪些用户可以访问邮箱文件夹以及文件夹中的邮件。|
 |已在 Outlook Web App 中修改收件箱规则|Set-InboxRule|有权访问邮箱的邮箱所有者或其他用户在 Outlook Web App 中修改了收件箱规则。|
 |已从邮箱清除邮件|HardDelete|已从“可恢复邮件”文件夹中清除邮件（已从邮箱中永久删除）。|
 |已删除代理邮箱权限|Remove-MailboxPermission|管理员已从用户邮箱删除分配给代理的 FullAccess 权限。 删除 FullAccess 权限后，代理无法打开他人邮箱，也无法访问该邮箱中的任何内容。|
-|已从文件夹中删除权限|RemoveFolderPermissions|已删除文件夹权限。 文件夹权限用于控制组织中的哪些用户可以访问邮箱中的文件夹以及位于这些文件夹中的邮件。|
+|已从文件夹中删除权限|RemoveFolderPermissions|文件夹权限已删除。文件夹权限用于控制组织中的哪些用户可以访问邮箱中的文件夹以及位于这些文件夹中的邮件。|
 |已发送邮件|发送|邮件已发送、答复或转发。 仅对具有 Office 365 或 Microsoft 365 E5 许可证的用户记录此活动。 有关详细信息，请参阅 [高级审核](advanced-audit.md#advanced-audit-events)中的"高级审核事件"部分。|
 |已使用“发送方式”权限发送邮件|SendAs|已使用 SendAs 权限发送某个邮件。这表示另一个用户发送了邮件，而该邮件就好像来自于邮箱所有者。|
 |已使用“代表发送”权限发送邮件|SendOnBehalf|已使用 SendOnBehalf 权限发送消息。这意味着另一个用户代表邮箱所有者发送邮件。该邮件指示代表其发送邮件的收件人以及实际发送邮件的收件人。|
@@ -713,7 +713,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |重置用户密码|重置用户密码。|管理员重置了用户的密码。|
 |已设置强制用户更改密码的属性|设置强制更改用户密码。|管理员设置了强制用户在下次登录到 Microsoft 365 时更改密码的属性。|
 |设置许可证属性|设置许可证属性。|管理员修改分配给用户的许可证属性。|
-|已更新用户|更新用户。|管理员更改用户帐户的一个或多个属性。 有关可更新用户属性的列表，请参阅 [Azure Active Directory 审核报告事件](/azure/active-directory/reports-monitoring/concept-audit-logs)中的“更新用户属性”部分。|
+|已更新用户|更新用户。|管理员更改了用户帐户的一个或多个属性。有关可更新的用户属性列表，请参阅 [Azure Active Directory Audit Report Events](/azure/active-directory/reports-monitoring/concept-audit-logs)（Azure Active Directory 审核报表事件）中的“‘Update user’ attributes”（“更新用户”属性）部分。|
 ||||
 
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD 组管理活动
@@ -777,7 +777,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已向目录添加合作伙伴|向公司添加合作伙伴。|已向你的组织添加合作伙伴（委派管理员）。|
 |已从公司删除域|从公司删除域。|已从你的组织删除域。|
 |已从目录删除合作伙伴|从公司删除合作伙伴。|已从你的组织删除合作伙伴（委派管理员）。|
-|设置公司信息|设置公司信息。|已更新你的组织的公司信息。 这包括由 Microsoft 365 发送的订阅相关电子邮件的电子邮件地址，以及有关 Microsoft 365 服务的技术通知。|
+|设置公司信息|设置公司信息。|已更新你的组织的公司信息。这包括由 Microsoft 365 发送的订阅相关电子邮件的电子邮件地址，以及有关 Microsoft 365 服务的技术通知。|
 |设置域身份验证|设置域身份验证。|已更改你的组织的域身份验证设置。|
 |已更新域的联盟设置|设置域的联盟设置。|已更改你的组织的联盟（外部共享）设置。|
 |设置密码策略|设置密码策略。|已更改你的组织中用户密码的长度和字符约束。|
@@ -789,7 +789,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 ### <a name="ediscovery-activities"></a>电子数据展示活动
 
-在安全与合规中心中执行或通过运行相应 PowerShell cmdlet 执行的内容搜索和电子数据展示相关活动将记录在审核日志中。 这包括下列活动：
+在安全与合规中心中执行或通过运行相应 PowerShell cmdlet 执行的内容搜索和电子数据展示相关活动将记录在审核日志中。这包括下列活动：
 
 - 创建和管理电子数据展示事例
 
@@ -866,7 +866,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
-|已更改数据保留策略|SoftDeleteSettingsUpdated|验证管理员将网络数据保留策略的设置更新为了硬删除或软删除。 仅验证管理员可以执行此操作。|
+|已更改数据保留策略|SoftDeleteSettingsUpdated|验证管理员将网络数据保留策略的设置更新为了硬删除或软删除。仅验证管理员可以执行此操作。|
 |已更改网络配置|NetworkConfigurationUpdated|网络管理员或验证管理员更改了 Yammer 网络的配置。 其中包括设置了导出数据和启用聊天室的时间间隔。|
 |已更改网络配置文件设置|ProcessProfileFields|网络或验证管理员更改了网络用户网络的成员配置文件上显示的信息。|
 |已更改私密内容模式|SupervisorAdminToggled|验证管理员启用或禁用了“*私密内容模式*”。 此模式使管理员能够在专用组中查看公告并可在个人用户（或用户组）之间查看私人消息。 只有验证管理员可执行此操作。|
@@ -940,7 +940,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已创建表单|CreateForm|表单所有者创建一个新表单。 <br><br>Property DataMode:string 指示如果属性值等于 DataSync，则当前表单设置为与新的或现有 Excel 工作簿同步。 属性 ExcelWorkbookLink:string 指示当前表单的关联 Excel 工作簿 ID。|
 |已编辑表单|EditForm|表单所有者编辑表单，如创建、删除或编辑问题。 *EditOperation:string* 属性表示编辑操作名称。 可能的操作如下：<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>- UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>- ChangeTheme <br><br>FormImage 包含表单中用户可上传图像的任何位置，例如在查询中或作为背景主题。|
 |已移动表单|MoveForm|表单所有者移动表单。 <br><br>属性 DestinationUserId:string 表示移动表单的人员的用户 ID。 属性 NewFormId:string 是新复制的表单的新 ID。 属性 IsDelegateAccess:boolean 指示当前表单移动操作是通过管理员代理页面执行的。|
-|已删除表单|DeleteForm|表单所有者删除表单。 这包括 SoftDelete（使用删除选项并将表单移动到回收站）和 HardDelete（清空回收站）。|
+|已删除表单|DeleteForm|表单所有者删除表单。这包括 SoftDelete（使用删除选项并将表单移动到回收站）和 HardDelete（清空回收站）。|
 |已查看表单（设计时）|ViewForm|表单所有者打开现有表单进行编辑。 <br><br>属性 AccessDenied:boolean 指示由于权限检查，拒绝了当前表单的访问。 属性 FromSummaryLink:boolean 指示当前请求来自摘要链接页。|
 |已预览表单|PreviewForm|表单所有者使用“预览”功能预览表单。|
 |已导出表单|ExportForm|表单所有者将结果导出到 Excel。 <br><br>属性 ExportFormat:string 表示 Excel 文件是下载还是在线文件。|
@@ -1008,7 +1008,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 |:-----|:-----|:-----|
 |已向网站应用敏感度标签|SensitivityLabelApplied|已向 SharePoint 或 Teams 网站应用敏感度标签。|
 |已从网站中删除敏感度标签|SensitivityLabelRemoved|已从 SharePoint 或 Teams 网站中删除敏感度标签。|
-|已向文件应用敏感度标签|FileSensitivityLabelApplied|已使用 Microsoft 365 应用版、Office 网页版 或自动标记策略向文档应用敏感度标签。|
+|已向文件应用敏感度标签|FileSensitivityLabelApplied|敏感度标签通过使用 Microsoft 365 应用 Office 网页版应用于文档。或自动标记策略。|
 |已更改应用于文件的敏感度标签|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|已对文档应用不同的敏感度标签。 <br /><br>此活动的操作因标签的更改方式而异：<br /> - Office 网页版或自动标记策略 (FileSensitivityLabelChanged) <br /> - Microsoft 365应用版 (SensitivityLabelUpdated)|
 |已在网站上更改敏感度标签|SensitivityLabelChanged|已对 SharePoint 或 Teams 网站应用不同的敏感度标签。|
 |已从文件除敏感度标签|FileSensitivityLabelRemoved|已使用 Microsoft 365 应用版、Office 网页版、自动标记策略或 [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet 从文档中删除敏感度标签。|
@@ -1033,7 +1033,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 | 更新了自适应作用域 | SetAdaptiveScope | 管理员更改了现有自适应作用域的说明或查询。 |
 | 已更新保留策略的设置 | SetRetentionComplianceRule | 管理员已更改现有保留策略的保留设置。 保留设置包括项目保留时长和保留期到期时对项目执行的操作（例如，删除项目、保留项目，或保留然后将其删除）。 此活动还对应于运行 [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule) cmdlet。 |
 | 已更新保留标签 |SetComplianceTag  | 管理员已更新现有保留标签。|
-| 已更新保留策略 |SetRetentionCompliancePolicy |管理员已更新现有保留策略。 触发此事件的更新包括添加或排除应用该保留策略的内容位置。|
+| 已更新保留策略 |SetRetentionCompliancePolicy |管理员已更新现有保留策略。触发此事件的更新包括添加或排除应用该保留策略的内容位置。|
 ||||
 
 ### <a name="briefing-email-activities"></a>简介电子邮件活动
@@ -1116,7 +1116,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 - 要显示 Exchange 管理员审核日志中的事件，请单击“**活动**”列，以按字母顺序对 cmdlet 名称进行排序。
 
-- 若要获取有关已运行的 cmdlet、已使用的参数和参数值以及受影响对象的信息，可以导出搜索结果并选择“**下载所有结果**”选项。 有关详细信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md)。
+- 若要获取有关已运行的 cmdlet、已使用的参数和参数值以及受影响对象的信息，可以导出搜索结果并选择“**下载所有结果**”选项。有关详细信息，请参阅 [导出、配置和查看审核日志记录](export-view-audit-log-records.md)。
 
 - 你还可以使用 Exchange Online PowerShell 中的 `Search-UnifiedAuditLog -RecordType ExchangeAdmin` 命令仅从 Exchange 管理员审核日志中返回审核记录。 运行 Exchange cmdlet 后，可能需要长达 30 分钟的时间在搜索结果中返回相应的审核日志条目。 有关详细信息，请参阅 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)。 有关将 **Search-UnifiedAuditLog** cmdlet 所返回的搜索结果导出到 CSV 文件的信息，请参阅 [导出、配置和查看审核日志记录](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)中的“有关导出和查看审核日志的提示”部分。
 
@@ -1152,7 +1152,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 **除了使用安全与合规中心或 Office 365 管理活动 API 之外，是否还有其他方法可以获取审核日志？**
 
-不正确。 以下是从审核服务获取数据的两种方法。
+否。以下是从审核服务获取数据的两种方法。
 
 **是否需要在每个要捕获审核日志的服务中单独启用审核？**
 
