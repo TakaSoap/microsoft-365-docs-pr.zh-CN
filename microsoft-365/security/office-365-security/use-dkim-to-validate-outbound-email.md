@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1740d910f95a0076da34b7a08e66853fb7cca598
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 25333a1616bb1f4e4e529c17813bdd58f4c768b4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939629"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312945"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -91,13 +91,11 @@ DKIM 允许你在邮件头中为出站电子邮件添加数字签名。配置 DK
 
 ![已选择域的 Microsoft 365 Defender 门户中的 DKIM 页面。](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
-步骤 2：单击“创建 DKIM 密钥”。
+步骤 2：将开关滑动到“**启用**”。 你将看到一个弹出窗口，指出需要添加 CNAME 记录。
 
-![带有“创建 DKIM 密钥”按钮的域详细信息浮出控件。](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
+![将开关滑动到“已启用”以启用 DKIM。](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
 
 步骤 3：复制弹出窗口中显示的 CNAMES
-
-![“发布 CNAME”弹出窗口，其中包含要复制的两条 CNAME 记录。](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
 步骤 4：将复制的 CNAME 记录发布到 DNS 服务提供程序。
 
@@ -199,7 +197,7 @@ TTL:                3600
 其中：
 
 - 对于 Microsoft 365，选择器始终为“selector1”或“selector2”。
-- _customDomainIdentifier_ 与显示在 mail.protection.outlook.com 前面的自定义域的自定义 MX 记录中的 _customDomainIdentifier_ 相同。 例如，在域 contoso.com 的以下 MX 记录中，_customDomainIdentifier_ 为 contoso com：
+- _customDomainIdentifier_ 与自定义域（显示在 mail.protection.outlook.com 之前）的自定义 MX 记录中 _customDomainIdentifier_ 相同。例如，在域 contoso.com 的以下 MX 记录中，_customDomainIdentifier_ 为 contoso-com：
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
@@ -333,7 +331,7 @@ TTL:                3600
 ## <a name="default-behavior-for-dkim-and-microsoft-365"></a>DKIM 和 Microsoft 365 的默认行为
 <a name="DefaultDKIMbehavior"> </a>
 
-如果不启用 DKIM，Microsoft 365 会自动为 Microsoft Online 电子邮件路由地址 (MOERA)/初始域创建 2048 位 DKIM 公钥，以及我们存储在内部（我们的数据中心中）的关联私钥。 默认情况下，Microsoft 365 对没有适当策略的域使用默认签名配置。 也就是说，如果你自己没有设置 DKIM，Microsoft 365 会使用它的默认策略和它创建的密钥来为你的域启用 DKIM。
+如果不启用 DKIM，Microsoft 365 将自动为你的 Microsoft 联机电子邮件路由地址 (MOERA)/初始域创建 2048 位 DKIM 公钥，以及我们在数据中心内部存储的关联私钥。默认情况下，Microsoft 365 为没有合适策略的域使用默认签名配置。这意味着，如果你没有自行设置 DKIM，Microsoft 365 将使用默认策略和所创建的密钥来为你的域启用 DKIM。
 
 此外，如果启用后在自定义域上禁用 DKIM 签名，则在一段时间后，Microsoft 365 将自动为自定义域应用 MOERA/初始域策略。
 
@@ -395,9 +393,12 @@ Return-Path: <communication@bulkemailprovider.com>
 
 设置了 DKIM 后，如果你尚未设置 SPF，则应执行此操作。有关 SPF 的简要介绍以及快速配置 SPF 的信息，请参阅 [**在 Microsoft 365 中设置 SPF 以帮助防止欺骗**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。有关 Microsoft 365 如何使用 SPF 的更深入了解，或者有关故障排除或非标准部署（如混合部署）的信息，请首先阅读 [Microsoft 365 如何使用发件人策略框架 (SPF) 来防止欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)。
 
-接下来，请参阅 [**使用 DMARC 验证电子邮件**](use-dmarc-to-validate-email.md)。 [反垃圾邮件邮件头](anti-spam-message-headers.md)包括 Microsoft 365 用来执行 DKIM 检查的语法和头字段。
+接下来，请参阅 [**使用 DMARC 验证电子邮件**](use-dmarc-to-validate-email.md)。[反垃圾邮件邮件头](anti-spam-message-headers.md) 包括 Microsoft 365 用于 DKIM 检查的语法和标头字段。
 
 **此测试将验证** DKIM 签名配置是否正确配置，以及是否发布了正确的 DNS 条目。
+
+> [!NOTE]
+> 此功能需要 Microsoft 365 管理员帐户。 此功能不适用于由世纪互联运营的 Microsoft 365 政府版、Microsoft 365 或 Microsoft 365 德国版。
 
 <div class="nextstepaction">
 <p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">运行测试：DKIM</a></p>
