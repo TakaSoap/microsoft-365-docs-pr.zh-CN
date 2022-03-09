@@ -112,16 +112,23 @@
           href: get-started/localization.md
         - name: 验证新设备
           href: get-started/validate-device.md
-        - name: 设置设备
-          href: get-started/set-up-devices.md
+        - name: 准备设备
+          href: null
           items:
-            - name: 自行注册新设备
-              href: get-started/register-devices-self.md
+            - name: 开始行动
+              href: get-started/prepare-devices.md
+            - name: 设备注册
+              href: null
               items:
-                - name: 合作伙伴注册设备的步骤
-                  href: get-started/register-devices-partner.md
-            - name: 自行注册现有设备
-              href: get-started/register-reused-devices-self.md
+                - name: 设备注册方法
+                  href: get-started/device-registration-methods.md
+                  items:
+                    - name: 手动注册
+                      href: get-started/manual-registration.md
+                    - name: 合作伙伴注册
+                      href: get-started/partner-registration.md
+                    - name: 现有设备的手动注册
+                      href: get-started/manual-registration-existing-devices.md
         - name: 启用用户支持功能
           href: get-started/enable-support.md
         - name: 让用户做好使用设备的准备
@@ -184,5 +191,5 @@
               href: working-with-managed-desktop/config-setting-deploy.md
         - name: 使用 Microsoft 托管桌面预览和测试 Windows 11
           href: working-with-managed-desktop/test-win11-mmd.md
-    - name: Microsoft 托管桌面文档更改历史记录
+    - name: 修订记录
       href: change-history-managed-desktop.md

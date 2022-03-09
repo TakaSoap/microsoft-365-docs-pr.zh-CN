@@ -34,6 +34,8 @@
           href: apply-a-retention-label-to-a-model.md
         - name: 应用敏感度标签
           href: apply-a-sensitivity-label-to-a-model.md
+        - name: 创建本地模型
+          href: create-local-model.md
         - name: 模型使用情况分析
           href: model-usage-analytics.md
         - name: 创建提取器时利用术语库分类
@@ -60,6 +62,8 @@
       href: prebuilt-models.md
     - name: 应用保留标签
       href: apply-a-retention-label-to-a-model.md
+    - name: 创建本地模型
+      href: create-local-model.md
     - name: 模型使用情况分析
       href: model-usage-analytics.md
 - name: 内容组装
@@ -118,5 +122,9 @@
           href: solution-manage-contracts-step2.md
         - name: 步骤 3. 使用 Power Automate
           href: solution-manage-contracts-step3.md
+    - name: 合同管理网站模板
+      href: use-contracts-management-site.md
+    - name: 内容中心网站模板
+      href: use-content-center-site.md
 - name: 可扩展性
   href: /sharepoint/dev/apis/syntex/syntex-model-rest-api

@@ -196,7 +196,7 @@
 
 
 ### [配置门户设置]()
-#### [设置首选项](preferences-setup.md)
+#### [配置常规 Defender for Endpoint 设置](preferences-setup.md)
 #### [常规]()
 ##### [验证数据存储位置并更新数据保留设置](data-retention-settings.md)
 ##### [配置警报通知](configure-email-notifications.md)
@@ -259,6 +259,12 @@
 #### [启用 Corelight 数据集成](corelight-integration.md)
 #### [设备发现常见问题](device-discovery-faq.md)
 
+### [设备清单]()
+#### [设备清单](machines-view-overview.md)
+#### [排除设备](exclude-devices.md)
+#### [设备日程表事件标记](device-timeline-event-flag.md)
+#### [管理设备组和标签](machine-tags.md)
+
 ### [网络设备](network-devices.md)
 
 ### [在 Microsoft Defender for Endpoint 中托管防火墙报告](host-firewall-reporting.md)
@@ -320,6 +326,7 @@
 #### [在 Microsoft Defender 防病毒程序内使用有限的定期扫描](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [tune 性能Microsoft Defender 防病毒](tune-performance-defender-antivirus.md)
 #### [与其他安全产品的兼容性](microsoft-defender-antivirus-compatibility.md)
+#### [查找 Microsoft Defender for Endpoint 的恶意软件检测名称](find-defender-malware-name.md)
 
 #### [获取防病毒和反恶意软件更新](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [管理 Microsoft Defender 防病毒软件保护更新源](manage-protection-updates-microsoft-defender-antivirus.md)
@@ -413,11 +420,6 @@
 ##### [调查域](investigate-domain.md)
 ###### [调查正向代理背后发生的连接事件](investigate-behind-proxy.md)
 ##### [调查用户帐户](investigate-user.md)
-
-#### [设备列表]()
-##### [查看和组织设备列表](machines-view-overview.md)
-##### [设备日程表事件标记](device-timeline-event-flag.md)
-##### [管理设备组和标签](machine-tags.md)
 
 #### [执行响应操作]()
 ##### [在设备上执行响应操作]()
@@ -548,6 +550,12 @@
 ###### [IP]()
 ####### [获取 IP 相关警报](get-ip-related-alerts.md)
 ####### [获取 IP 统计信息](get-ip-statistics.md)
+
+###### [实时响应库]()
+####### [实时响应库方法和属性](live-response-library-methods.md)
+####### [列表库文件](list-library-files.md)
+####### [上传到实时响应库](upload-library.md)
+####### [从库中删除](delete-library.md)
 
 
 ###### [计算机]()

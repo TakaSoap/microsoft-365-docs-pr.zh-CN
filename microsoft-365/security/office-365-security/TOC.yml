@@ -58,8 +58,6 @@
           href: office-365-ti.md
         - name: Office 365 安全事件响应
           href: office365-security-incident-response-overview.md
-        - name: Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南
-          href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
     - name: 部署
       items:
         - name: 抵御威胁
@@ -312,6 +310,8 @@
           href: manage-quarantined-messages-and-files.md
         - name: 隔离策略
           href: quarantine-policies.md
+        - name: 释放来自共享邮箱的隔离邮件
+          href: view-and-release-quarantined-messages-from-shared-mailboxes.md
         - name: 从“受限的用户”门户中删除被阻止的用户
           href: removing-user-from-restricted-users-portal-after-spam.md
         - name: 使用除名门户将自己从阻止的发件人名单中删除

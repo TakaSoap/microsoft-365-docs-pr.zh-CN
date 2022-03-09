@@ -396,6 +396,8 @@
       items:
         - name: 了解敏感度标签
           href: sensitivity-labels.md
+        - name: 为什么选择 Office 应用的 MIP 内置标签
+          href: sensitivity-labels-aip.md
         - name: 开始使用敏感度标签
           href: get-started-with-sensitivity-labels.md
         - name: 创建和发布敏感度标签
@@ -410,6 +412,8 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: 针对由敏感度标签加密的文档启用共同创作
           href: sensitivity-labels-coauthoring.md
+        - name: 使用敏感度标签设置默认共享链接类型
+          href: sensitivity-labels-default-sharing-link.md
         - name: 管理 Office 应用中的敏感度标签
           href: sensitivity-labels-office-apps.md
     - name: 加密
@@ -774,7 +778,7 @@
               href: export-a-content-search-report.md
             - name: 使用脚本将用户添加到电子数据展示保留中
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-            - name: 创建有关电子数据展示保留的报告
+            - name: 使用脚本创建保留报表
               href: create-a-report-on-holds-in-ediscovery-cases.md
             - name: 查看搜索结果的统计信息
               href: view-keyword-statistics-for-content-search.md
@@ -830,8 +834,15 @@
               href: manage-hold-notification.md
             - name: 确认保留通知
               href: acknowledge-hold-notification.md
+            - name: 管理颁发主管
+              href: advanced-ediscovery-issuing-officers.md
+            - name: 管理保管人通信模板
+              href: advanced-ediscovery-communications-library.md
         - name: 管理保留
           href: managing-holds.md
+          items:
+            - name: 使用脚本创建保留报表
+              href: create-a-report-on-holds-in-ediscovery-cases.md
         - name: 管理处理错误
           href: processing-data-for-case.md
           items:
@@ -1036,8 +1047,10 @@
           href: compliance-manager-templates-format-excel.md
         - name: 合规性管理器模板列表
           href: compliance-manager-templates-list.md
-        - name: 分配和完成改进操作
+        - name: 使用改进操作
           href: compliance-manager-improvement-actions.md
+        - name: 创建和管理警报策略
+          href: compliance-manager-alert-policies.md
         - name: 如何计算合规性分数
           href: compliance-score-calculation.md
         - name: 合规性配置分析器工具

@@ -11,17 +11,18 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 80dc8d3750f112c1c90f3c6bf24f65e8b794ec58
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6daffa44356136615dc002b01bd7da5c575fe1fd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178955"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329135"
 ---
 # <a name="term-store-reports"></a>术语库报告
 
-可在 SharePoint 管理中心中访问术语库的报告。 此功能需要 [SharePoint Syntex](index.md) 许可证。
+可在 SharePoint 管理中心中访问<a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">术语库</a>的报告。 此功能需要 [SharePoint Syntex](index.md) 许可证。
 
 展开“**报告**”，然后单击“**内容服务**”。
 
