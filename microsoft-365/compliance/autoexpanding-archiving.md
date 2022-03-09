@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解为 Exchange Online 邮箱提供额外存档存储的自动扩展存档。
-ms.openlocfilehash: 527eea4f0fe97ba689cb70bddb78091112e1f353
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 1b4b8d81868cc97fc8e8faf5b0dc449e4c07a868
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241331"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328857"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>了解自动扩展存档
 
@@ -43,12 +43,12 @@ Microsoft 365 中的存档功能（称为 *自动扩展存档*）在存档邮箱
 
 ![自动扩展存档过程概述。](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
 
-1. 为用户邮箱或共享邮箱启用存档。 创建存储空间为 100 GB 的存档邮箱，并将存档邮箱的警告配额设置为 90 GB。
+1. 为用户邮箱或共享邮箱启用存档。创建存储空间为 100 GB 的存档邮箱，并将存档邮箱的警告配额设置为 90 GB。
 
 2. 管理员为邮箱启用自动扩展存档。 当存档邮箱（包括可恢复项目文件夹）达到 90 GB 时，将转换为自动扩展存档，并且 Microsoft 365 将向该存档添加存储空间，直到其达到最大大小 1.5 TB。 设置额外的存储空间最多可能需要 30 天。
 
    > [!NOTE]
-   > 如果邮箱处于保留状态或以分配给保留策略，则在启用自动扩展存档时，存档邮箱的存储配额将增加到 110 GB。 存档警告配额将以类似方式增加到 100 GB。
+   > 如果邮箱处于保留状态或以分配给保留策略，则在启用自动扩展存档时，存档邮箱的存储配额将增加到 110 GB。同样，存档警告配额将增加到 100 GB。
 
 3. 必要时，Microsoft 365 将自动添加更多存储空间。
 
@@ -92,11 +92,11 @@ Microsoft 365 中的存档功能（称为 *自动扩展存档*）在存档邮箱
 
 - 如果存档邮箱具有至少一个自动扩展存储区域，则无法从存档邮箱或辅助存档中删除文件夹。 换言之，在设置自动扩展存储区域后，将无法删除存档中的任何文件夹。
 
-- 可以删除自动扩展存储区域中的项。 但在为邮箱启用自动扩展存档后，无法使用“恢复已删除项目”功能来恢复项目。
+- 可以删除自动扩展存储区域中的项。但在为邮箱启用自动扩展存档后，无法使用“恢复已删除项目”功能来恢复项目。
 
-- Outlook 网页版 (OWA) 中提供了搜索自动扩展存档。 与联机存档类似，可以搜索已移动到额外存储区域的项目。 在 OWA 中选择存档作为搜索范围时，将搜索所有存档（包括自动扩展存档）及其相应的子文件夹。
+- Outlook 网页版 (OWA) 中提供了搜索自动扩展存档。 与联机存档类似，可以搜索已移动到额外存储区域的项目。 在 OWA 中选择存档作为搜索范围时，将搜索所有存档（包括自动扩展存档）及其相应的子文件夹。 请注意，在仅限云存档情况下（主邮箱仍在本地），自动扩展存档功能不支持搜索。
 
-- 在当前频道（预览）的 Outlook 桌面版中提供自动扩展存档搜索。 在此预览版中，当前邮箱范围可用，因此可以搜索自动扩展存档。 有关此功能和其他 Microsoft 搜索支持功能的详细信息，请参阅 [连接到 Exchange Online 的 Outlook for Windows 如何利用 Microsoft 搜索](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)。 
+- Outlook for Windows 中的每月企业频道提供自动扩展存档搜索。 通过此更新，当前邮箱范围可用，因此可以搜索自动扩展存档。 请注意，在仅限云存档情况下（主邮箱仍在本地），自动扩展存档功能不支持搜索。 有关此功能和其他 Microsoft 搜索支持功能的详细信息，请参阅 [连接到 Exchange Online 的 Outlook for Windows 如何利用 Microsoft 搜索](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)。 
 
 - 在自动扩展存档中，Outlook 中的项目计数和已读/未读计数（在 Outlook 和 Outlook 网页版中）可能并不准确。
 
