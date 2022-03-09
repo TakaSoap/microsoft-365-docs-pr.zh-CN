@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: 尝试以下步骤以跟踪基本移动性和安全性问题
-ms.openlocfilehash: f625fbc642392ee575b35f225f5e65b942362c4a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2ac25e36fced24e5b50e7e89d36dae3e842fda04
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165936"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400359"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>基本移动性和安全性疑难解答
 
@@ -39,11 +39,11 @@ ms.locfileid: "60165936"
 
 ## <a name="ios-phone-or-tablet"></a>iOS 手机或平板电脑
 
-- 请确保你已设置 APNs 证书。 有关详细信息，请参阅为 [iOS 设备创建 APNs 证书](create-an-apns-certificate-for-ios-devices.md)。
+- 请确保你已设置 APNs 证书。 有关详细信息，请参阅 [为 iOS 设备创建 APNs 证书](create-an-apns-certificate-for-ios-devices.md)。
 
-- In **设置**   >  **General**   >  **Profile (or Device Management)**， make sure that a Management Profile is not already installed. 如果是，请将其删除。
+- In **设置** > **GeneralProfile** >  ** (或 Device Management)**，请确保尚未安装管理配置文件。 如果是，请将其删除。
 
-- 如果看到错误消息"设备注册失败"，请登录 Microsoft 365并确保已将包含 Exchange Online 的许可证分配给登录设备的用户。
+- 如果看到错误消息"设备注册失败"，请登录到 Microsoft 365并确保已将包含 Exchange Online 的许可证分配给登录设备的用户。
 
 - 如果看到错误消息"配置文件安装失败"，请尝试以下操作之一：
 
@@ -53,22 +53,22 @@ ms.locfileid: "60165936"
 
 ## <a name="windows-rt"></a>Windows RT
 
-- 请确保你的域已Microsoft 365基本移动性和安全性。 有关详细信息，请参阅设置 [基本移动性和安全性](set-up.md)。
+- 请确保你的域已Microsoft 365基本移动性和安全性。 有关详细信息，请参阅 [设置基本移动性和安全性](set-up.md)。
     
-- 确保用户选择"打开 **"，**   而不是选择"加入 **"。**
+- 确保用户选择" **打开"** ，而不是选择 **"加入"**。
 
 ## <a name="windows-10-pc"></a>Windows 10电脑
 
-- 请确保你的域已Microsoft 365基本移动性和安全性。 有关详细信息，请参阅设置 [基本移动性和安全性](set-up.md)。
+- 请确保你的域已Microsoft 365基本移动性和安全性。 有关详细信息，请参阅 [设置基本移动性和安全性](set-up.md)。
     
-- 除非你已Azure Active Directory Premium，否则请确保用户选择仅在设备管理中注册 ****   ，而不是选择连接。 ****
+- 除非你已Azure Active Directory Premium **** ，否则请确保用户仅在设备管理中选择了"注册 **"，而不是选择连接**。
 
 ## <a name="android-phone-or-tablet"></a>Android 手机或平板电脑
 
-- 确保设备运行的是 Android 4.4 或更高版本。
+- 确保设备运行的是 Android。
 
 - 确保 Chrome 是最新的，并设置为默认浏览器。
 
-- 如果看到错误消息"我们无法注册此设备"，请登录 Microsoft 365并确保已向登录设备的用户分配了包含 Exchange Online 的许可证。
+- 如果看到错误消息"我们无法注册此设备"，请登录 Microsoft 365并确保已将包含 Exchange Online 的许可证分配给登录设备的用户。
 
 - 检查设备上的通知区域，以查看任何所需的最终用户操作是否挂起，如果是，则完成这些操作。

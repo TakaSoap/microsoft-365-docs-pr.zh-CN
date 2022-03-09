@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365中心中的报告 - Microsoft 365组
+title: Microsoft 365 管理中心组报告
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: 获取Microsoft 365组报告，了解组及其活动。
-ms.openlocfilehash: 4e6963f5026e62b03d95a4f499277259a6773cdb
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: ff3a5fa428bb993dac9a518229744754d106e589
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520844"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400805"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365中心中的报告 - Microsoft 365组
 
@@ -36,7 +36,7 @@ ms.locfileid: "61520844"
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
 
-2. 在仪表板主页上，单击活动用户- Microsoft 365 应用版 或活动用户 - Microsoft 365 服务卡上的查看更多按钮，以Office 365报告页面。
+2. 在仪表板主页上，单击活动用户  - Microsoft 365 应用版 或活动用户 - Microsoft 365 服务卡上的查看更多按钮，以访问 Office 365 报告页面。
   
 ## <a name="interpret-the-groups-report"></a>解释组报告
 
@@ -48,7 +48,7 @@ You can view the activations in the Office 365 by choosing the **Groups activity
 
 :::image type="content" alt-text="Office 365组活动报表 - 选择列。" source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
-您还可以通过选择"导出"链接将报告数据导出到Excel .csv **文件**。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
+您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
 
 可查看 **组** 报告，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的某一天，则该表将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
 
@@ -57,18 +57,18 @@ You can view the activations in the Office 365 by choosing the **Groups activity
 |组名称 |组的名称。 |
 |Deleted |已删除的组数。 如果该组被删除，但在报告时间段中有活动，它将显示在网格中，并显示设置为 true 的标记。 |
 |组所有者 |组所有者的名称。 |
-|上次活动日期 (UTC)  |组收到邮件的最近日期。 - 这是电子邮件对话、活动或网站中Yammer日期。 |
+|上次活动日期 (UTC)  |组收到邮件的最近日期。 - 这是电子邮件对话、邮箱或网站中Yammer发生的最新日期。 |
 |类型 |组的类型。 可以是私有组，也可以是公用组。 |
 |收到的电子邮件Exchange |组接收的邮件数。|
 |电子邮件总数Exchange ()  |组邮箱中的项目总数。 |
-|用于存储 EXCHANGE (MB)  |组邮箱使用的存储。 |
+|邮箱存储，Exchange (MB)  |组邮箱使用的存储。 |
 |SharePoint文件 (总数)  |组网站中存储SharePoint数量。 |
-|SharePoint活动 (文件)  |报告期间在 SharePoint 组网站中查看或修改 (、同步、在内部或外部共享) 文件数。 |
-|总网站存储量SharePoint (MB)  |报告期间使用的存储量（以 MB 为单位）。 |
+|SharePoint活动 (文件)  |报告期间在 SharePoint 组网站中对 (进行查看或修改、同步、在内部或) 共享的文件数。 |
+|总网站存储量（SharePoint (MB)  |报告期间使用的存储量（以 MB 为单位）。 |
 |邮件Yammer (中)  |报告期间在报告组中Yammer的邮件数。 |
-|邮件Yammer (阅读)  |报告期间在报告Yammer读取的对话数。 |
-|用户Yammer (中)  |报告期间"组"Yammer的消息数。 |
-|Members |组中成员的数量。 |
+|邮件Yammer (读取)  |报告期间在报告Yammer组中读取的对话数。 |
+|邮件Yammer (喜欢)  |报告期间"组"Yammer的消息数。 |
+|成员 |组中成员的数量。 |
 |外部成员 |组中外部用户的数量。|
 
 
@@ -76,5 +76,5 @@ You can view the activations in the Office 365 by choosing the **Groups activity
 
 [Microsoft 365管理中心中的报表 (](activity-reports.md)文章) \
 [安全与合规中心](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance) 中的智能&见解 (文章) \
-[Microsoft 365中心中的报表 - 活动](../../admin/activity-reports/active-users-ww.md)用户 (文章) 
+[Microsoft 365中心中的报告 - 活动用户](../../admin/activity-reports/active-users-ww.md) (文章) 
 

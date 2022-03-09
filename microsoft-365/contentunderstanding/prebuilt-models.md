@@ -7,14 +7,19 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何在 SharePoint Syntex 中创建和配置预SharePoint Syntex。
+ms.openlocfilehash: 7867fe197fd53e6095f51869fc5aaad18af9157b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401044"
 ---
-
 # <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-sharepoint-syntex"></a>使用预想的模型从 Microsoft 发票或收据中提取SharePoint Syntex
 
 预构建的模型经过预约束，可识别文档中的文档和结构化信息。 无需从头开始创建新的自定义模型，您可以对现有预约束模型进行访问，以添加满足组织需求的特定字段。 
@@ -95,7 +100,7 @@ description: 了解如何在 SharePoint Syntex 中创建和配置预SharePoint S
 
    ![提取程序详细信息页面上"选择提取程序"框的屏幕截图。](../media/content-understanding/prebuilt-select-distractor-box.png) 
 
-原始值是文档中的实际值。 提取的值是将写入列的SharePoint。 将模型应用于库时，可以使用列格式指定您希望它在文档中的外观。
+原始值是文档中的实际值。 提取的值是将写入列的 SharePoint。 将模型应用于库时，可以使用列格式指定您希望它在文档中的外观。
 
 继续选择想要使用的其他提取程序。 还可以添加其他文件来分析此模型配置。
 
@@ -124,6 +129,9 @@ description: 了解如何在 SharePoint Syntex 中创建和配置预SharePoint S
 - 若要保存更改并返回到模型主页，请在"提取 **程序** "面板上，选择" **保存并退出"**。
 
 - 如果已准备好将模型应用到库，请在文档区域中选择"下一步 **"**。 在" **添加到库"** 面板上，选择要将模型添加到的库，然后选择"添加 **"**。
+
+> [!TIP]
+> 您可以更改文档库中的视图以满足您的需求或首选项。 有关详细信息，请参阅 [更改文档库中的视图](apply-a-model.md#change-the-view-in-a-document-library)。
 
 ## <a name="see-also"></a>另请参阅
 

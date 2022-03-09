@@ -13,20 +13,20 @@ ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 ms.collection: Strat_SP_gtc
 description: 了解如何使用 Region 参数配置电子数据展示，以在多地理位置的附属Microsoft 365使用。
-ms.openlocfilehash: 1bdf03a7c639e659d1b4ec12c691c65863318ad7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b0366470984abbdc0ed0b3e407ca8ef6b5a5743f
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177263"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400932"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 多地理位置电子数据展示配置
 
-[Advanced eDiscovery功能](../compliance/overview-ediscovery-20.md)允许多地理位置电子数据展示管理员搜索所有地理位置，而无需使用"区域"安全筛选器。 数据将导出到多地理位置租户的中心位置的 Azure 实例。 
+[Advanced eDiscovery功能](../compliance/overview-ediscovery-20.md)允许多地理位置电子数据展示管理员搜索所有地理位置，而无需使用"区域"安全筛选器。 数据将导出到多地理位置租户的中心位置的 Azure 实例。 对保管人应用保留时也会出现此情况，但是，如果没有"区域"安全筛选器，不会显示保留内的保留统计信息。 显示 0 的保留统计信息并不意味着，只要保留状态显示"打开"状态， (成功) 。
 
 如果没有高级电子数据展示功能，多地理位置租户的电子数据展示管理员或管理员将只能在该租户的中心位置执行电子数据展示。 为了支持对附属位置执行电子数据展示，可通过 PowerShell 获取名为"Region"的新合规性安全筛选器参数。 其中心位置位于北美、欧洲或亚太地区的租户可以使用此参数。 Advanced eDiscovery中心位置不在北美、欧洲或亚太地区，并且需要跨附属地理位置执行电子数据展示的租户，建议使用此配置。 
 
-Microsoft 365 全局管理员必须分配电子数据展示管理者权限，以允许其他人员执行电子数据展示，并在其适用的合规性安全筛选器中分配“Region”参数，以便将要进行电子数据展示的区域指定为附属位置，否则，不会对该附属位置执行任何电子数据展示。
+Microsoft 365 全局管理员必须分配电子数据展示管理员权限，以允许其他人执行电子数据展示，并为其适用的合规性安全筛选器分配"Region"参数，以将执行电子数据展示的区域指定为附属位置，否则，不会为附属位置执行任何电子数据展示。 每个用户仅支持一个"区域"安全筛选器，因此所有区域都需要在同一安全筛选器内。
 
 当为特定附属位置设置电子数据展示管理者或管理员角色时，电子数据展示管理者或管理员将只能对位于该附属位置的 SharePoint 网站和 OneDrive 网站执行电子数据展示搜索操作。如果电子数据展示管理者或管理员尝试搜索指定附属位置以外的 SharePoint 或 OneDrive 网站，将不返回任何结果。此外，当某个附属位置的电子数据展示管理者或管理员触发导出时，数据将导出到该地区的 Azure 实例。通过禁止跨受控界限导出内容，将有助于组织保持合规性。
 

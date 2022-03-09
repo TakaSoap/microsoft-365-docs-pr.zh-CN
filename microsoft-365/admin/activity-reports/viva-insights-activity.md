@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365中心中的报表 - Viva Insights活动
+title: Microsoft 365 管理中心 Viva Insights活动报告
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 了解如何在 Microsoft 365 应用版 Microsoft 365 管理中心 的 Microsoft 365 报告仪表板中获取 Viva Insights 活动使用情况Microsoft 365 管理中心。
-ms.openlocfilehash: 1e9fd70b0fa50efba2984ca7aa75a5c8670100ad
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bb7f36c1db632fc1745c9dbe8f63f9e6f20909b4
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318978"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400667"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>Microsoft 365中心中的报表 - Viva Insights活动
 

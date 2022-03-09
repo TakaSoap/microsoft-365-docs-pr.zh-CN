@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何从演示文稿或外部Advanced eDiscovery审阅集选择和导出内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dba9708bfda6d1b98a2861615e56518067822100
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6384d45121fc39d120d6906e46594b8b04124471
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175163"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401058"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>从审阅集导出文档Advanced eDiscovery
 
@@ -32,13 +32,13 @@ ms.locfileid: "60175163"
 
 1. In the Microsoft 365 合规中心， open the Advanced eDiscovery case， select the **Review sets** tab， and then select the review set that you want to export.
 
-2. 在审阅集内，单击"**操作导出**  >  **"。**
+2. 在审阅集内，单击 **"****ActionExport** > "。
 
    导出工具显示浮出控件页，其中包含用于配置导出的设置。 默认情况下会选择某些选项，但可以更改这些选项。 有关可以配置的导出选项的说明，请参阅以下部分。
 
    ![用于从审阅集导出项目的配置选项。](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-3. 配置导出后，单击" **导出** "开始导出过程。 根据在"输出选项"部分选择的选项，可以通过直接下载或组织的 Azure 存储 帐户访问导出文件。
+3. 配置导出后，单击" **导出** "开始导出过程。 根据在"输出选项"部分选择的选项，可以通过直接下载或组织的"导出Azure 存储文件。
 
 > [!NOTE]
 > 导出作业在案例的生存期内保留。 但是，必须在导出作业完成后的 30 天内从导出作业下载内容。
@@ -63,11 +63,11 @@ ms.locfileid: "60175163"
   
   - 仅报告：仅创建摘要和加载文件。
   
-  - 如果可能 (，将松散文件和 PTS 添加到 PST) ：文件以类似于用户本机应用程序中看到的原始目录结构的格式导出。  有关详细信息，请参阅 Loose [files and PST export structure部分](#loose-files-and-pst-export-structure) 。
+  - 如果可能 (，会向 PST 添加松散文件和 PTS) ：以类似于用户本机应用程序中看到的原始目录结构的格式导出文件。  有关详细信息，请参阅 Loose [files and PST export structure部分](#loose-files-and-pst-export-structure) 。
   
   - 压缩目录结构：导出文件并包含在下载中。
   
-  - 导出到您的 Azure 存储 帐户的压缩目录结构：文件将导出到组织的 Azure 存储 帐户。 对于此选项，你必须提供要将文件导出到的 Azure 存储 帐户中的容器的 URL。 此外，还必须为帐户的 SAS () 共享Azure 存储签名。 有关详细信息，请参阅将审阅集[内的文档导出到Azure 存储帐户。](download-export-jobs.md)
+  - 导出到帐户的压缩目录Azure 存储：文件将导出到组织的Azure 存储帐户。 对于此选项，你必须提供要导出文件的 Azure 存储 帐户中容器的 URL。 您还必须为帐户的 SAS () 共享Azure 存储签名。 有关详细信息，请参阅将审阅集[内的文档导出到Azure 存储帐户](download-export-jobs.md)。
 
 - **Include**
   
@@ -87,15 +87,19 @@ ms.locfileid: "60175163"
 
 - Summary.csv：包含从审阅集导出的内容摘要
 
-- 根文件夹：此文件夹的名称为 [Export Name] x，z.zip每个 ZIP 文件分区重复此文件夹。
+- 根文件夹：此文件夹的名称为 [Export Name] x，z.zip每个 ZIP 文件分区重复此文件夹。 根文件夹包含以下内容：
   
-  - Export_load_file_xz.csv：元数据文件。
+  - Export_load_file_xz.csv元数据文件。
   
   - 警告和错误 x z.csv：此文件包含有关尝试从审阅集导出时遇到的错误的信息。
   
-  - Exchange：此文件夹包含 PST Exchange中存储的所有内容。 此选项不能包含修订的 PDF 文件。 如果在审阅集内选择了附件，将导出附加附件的父电子邮件。
+  - Exchange：此文件夹包含 PST Exchange中存储的所有内容。 此选项不能包含修订的 PDF 文件。 如果在审阅集内选择了附件，将导出附加附件的父电子邮件。 此文件夹可能还包含以下项目： 
+
+    - 信息权限 (IRM) 已解码的受保护邮件。 
+    - 错误修正消息。 
+    - 邮件中引用的新式附件或链接。 
   
-  - SharePoint：此文件夹包含本地SharePoint格式的所有本机内容。 此选项不能包含修订的 PDF 文件。
+  - SharePoint：此文件夹包含来自本地SharePoint以本机文件格式提供的所有本机内容。 此选项不能包含修订的 PDF 文件。
 
 ### <a name="condensed-directory-structure"></a>压缩目录结构
 
@@ -107,7 +111,7 @@ ms.locfileid: "60175163"
   
   - 警告和错误 x z.csv：此文件包含有关尝试从审阅集导出时遇到的错误的信息。
 
-  - NativeFiles：此文件夹包含已导出的所有本机文件。 如果选择了"将已修订的本机替换为转换后的 PDF"选项，本机文件将 *替换为修订的 PDF。*
+  - NativeFiles：此文件夹包含已导出的所有本机文件。 如果选择了"将已修订的本机替换为转换后的 PDF"选项，本机文件将 *替换为修订的 PDF* 。
   
   - Error_files：此文件夹包含具有提取错误或其他处理错误的文件。 这些文件将放置在单独的文件夹中，包括 ExtractionError 或 ProcessingError。 这些文件在加载文件中列出。
 
@@ -115,4 +119,4 @@ ms.locfileid: "60175163"
 
 ### <a name="condensed-directory-structure-exported-to-your-azure-storage-account"></a>导出到帐户的压缩Azure 存储结构
 
-此选项使用与 *压缩* 目录结构相同的常规结构，但是不会压缩内容，并且数据将保存到Azure 存储帐户。 此选项通常在使用第三方电子数据展示提供程序时使用。 有关如何使用此选项的详细信息，请参阅将审阅集内的文档[导出到Azure 存储帐户。](download-export-jobs.md)
+此选项使用与 *压缩* 目录结构相同的常规结构，但是不会压缩内容，并且数据将保存到Azure 存储帐户。 此选项通常在使用第三方电子数据展示提供程序时使用。 有关如何使用此选项的详细信息，请参阅将审阅集内的文档[导出到Azure 存储帐户](download-export-jobs.md)。

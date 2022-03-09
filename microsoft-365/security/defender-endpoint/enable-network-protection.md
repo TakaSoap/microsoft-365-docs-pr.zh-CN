@@ -10,17 +10,17 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: ''
+ms.reviewer: mkaminska
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: acf474f472450456014a581366c8860d87607a79
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b21b2f2a69ab9a85f1f5003104969364ae9c6e78
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322641"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401142"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -57,7 +57,8 @@ ms.locfileid: "63322641"
    - 2 或 **审核** 模式
 
     :::image type="content" alt-text="网络保护注册表项。" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
-
+    
+    
 ## <a name="enable-network-protection"></a>启用网络保护
 
 使用以下任一方法启用网络保护：
@@ -89,6 +90,9 @@ ms.locfileid: "63322641"
 ### <a name="mobile-device-management-mdm"></a>移动设备管理(MDM)
 
 使用 [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) 配置服务提供程序 (CSP) 启用或禁用网络保护或启用审核模式。
+
+[在启用或禁用](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) 网络保护或启用审核模式之前，将 Microsoft Defender 反恶意软件平台更新到最新版本。
+
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
@@ -164,6 +168,7 @@ ms.locfileid: "63322641"
 
 7. 从功能区中， **选择"部署** "以将策略部署到集合。
 
+
 > [!IMPORTANT]
 > 从 Configuration Manager 部署攻击防护策略后，如果你删除部署，将不会从客户端中删除攻击防护设置。 `Delete not supported` 如果你删除客户端的 Exploit Guard 部署，则记录在 Configuration Manager 客户端的 ExploitGuardHandler.log 中。 <!--CMADO8538577-->
 > 以下 PowerShell 脚本可以在系统上下文下运行，以删除这些设置：<!--CMADO9907132-->
@@ -185,7 +190,7 @@ ms.locfileid: "63322641"
 
 ## <a name="see-also"></a>另请参阅
 
-- [网络保护功能](network-protection.md)
+- [网络保护](network-protection.md)
 
 - [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 

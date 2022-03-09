@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b6d4b6f78cc677f9be5f664d86d8734ebd8df2f7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a0d0f470a2af18dab298ba3a1af642362590da4c
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168398"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401156"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>使用实时响应收集 Microsoft Defender for Endpoint 中的支持日志
 
@@ -35,11 +35,9 @@ ms.locfileid: "61168398"
 
 本主题提供有关如何通过实时响应运行该工具的说明。
 
-1. 下载相应的脚本
-   - 仅适用于 Endpoint 客户端传感器日志的 Microsoft [ Defender：LiveAnalyzer.ps1脚本](https://aka.ms/MDELiveAnalyzer)。
-      - 结果包近似大小：~100Kb
-   - Microsoft Defender for Endpoint 客户端传感器和防病毒日志 [：LiveAnalyzer+MDAV.ps1脚本](https://aka.ms/MDELiveAnalyzerAV)。
-       - 结果包近似大小：~10Mb
+1. 从 [Microsoft Defender for Endpoint Client Analyzer](https://aka.ms/BetaMDEAnalyzer) 的"工具"子目录中下载和提取所需的脚本。 <br>
+例如，若要获取基本传感器和设备运行状况日志，请获取"."。\Tools\MDELiveAnalyzer.ps1"。<br>
+如果你还需要 Defender 防病毒支持日志 (MpSupportFiles.cab) ，则提取"."。\Tools\MDELiveAnalyzerAV.ps1" 
 
 2. 在 [需要调查的](live-response.md#initiate-a-live-response-session-on-a-device) 计算机上启动实时响应会话。
 
@@ -47,7 +45,7 @@ ms.locfileid: "61168398"
 
     ![上载文件的图像。](images/upload-file.png)
 
-4. 选择 **"选择文件"。**
+4. 选择 **"选择文件"**。
 
     ![选择文件 button1 的图像。](images/choose-file.png)
 
@@ -66,11 +64,11 @@ ms.locfileid: "61168398"
 
 > [!NOTE]
 >
-> - 可在此处下载 MDEClientAnalyzer 的最新预览版本 [https://aka.ms/Betamdeanalyzer](https://aka.ms/Betamdeanalyzer) ：。
+> - 可在此处下载 MDEClientAnalyzer 的最新预览版本： [https://aka.ms/Betamdeanalyzer](https://aka.ms/Betamdeanalyzer)。
 >
-> - LiveAnalyzer 脚本从 目标计算机上下载疑难解答包 https://mdatpclientanalyzer.blob.core.windows.net ：。
+> - LiveAnalyzer 脚本从 目标计算机上下载疑难解答包： https://mdatpclientanalyzer.blob.core.windows.net。
 >
->   如果不允许计算机访问上述 URL，则MDEClientAnalyzerPreview.zip LiveAnalyzer 脚本之前将文件上载到库：
+>   如果不允许计算机访问上述 URL，则MDEClientAnalyzerPreview.zip LiveAnalyzer 脚本之前将文件上载到库中：
 >
 >   ```console
 >   PutFile MDEClientAnalyzerPreview.zip -overwrite
@@ -78,9 +76,9 @@ ms.locfileid: "61168398"
 >   GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
 >   ```
 >
-> - 有关在计算机本地收集数据（如果计算机未与适用于 Endpoint 云服务的 Microsoft Defender 通信，或未按预期显示在适用于终结点的 Microsoft Defender 门户中）上的数据详细信息，请参阅验证与 [Microsoft Defender for Endpoint](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)服务 URL 的客户端连接。
+> - 有关在计算机中本地收集数据（如果计算机未与适用于 Endpoint 云服务的 Microsoft Defender 通信，或未按预期显示在 Microsoft Defender for Endpoint 门户中）上的数据详细信息，请参阅验证与适用于终结点服务的 [Microsoft Defender](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls) 服务 URL 的客户端连接。
 > 
-> - 如实时 [响应命令示例中](live-response-command-examples.md)所述，你可能想要在命令末尾使用"&"符号来收集日志作为后台操作：
+> - 如 [实时响应命令示例中](live-response-command-examples.md)所述，你可能想要在命令末尾使用"&"符号来收集日志作为后台操作：
 >   ```console
 >   Run MDELiveAnalyzer.ps1&
 >   ```

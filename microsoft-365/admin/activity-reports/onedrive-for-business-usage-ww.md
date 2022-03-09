@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365中心中的报表 - OneDrive for Business使用情况
+title: Microsoft 365 OneDrive for Business使用情况报告
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: '获取OneDrive for Business使用情况报告，了解整个组织使用的文件和存储的总数。 '
-ms.openlocfilehash: 3a7cf36be7d0ae12acf1a1ad6d9ace8a83afc2bd
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d3b884f374cf3dde572bd67ad905fc308a1701d1
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61918211"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400777"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365中心中的报表 - OneDrive for Business使用情况
+# <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365中心中的报告 - OneDrive for Business使用情况
 
 "Microsoft 365报表"仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
   
@@ -42,13 +42,13 @@ ms.locfileid: "61918211"
   
 ## <a name="interpret-the-onedrive-usage-report"></a>OneDrive 使用情况报表说明
 
-You can view the usage in the OneDrive by choosing the **Usage** tab.<br/>![Microsoft 365报表 - Microsoft OneDrive使用情况报告。](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
+You can view the usage in the OneDrive by choosing the **Usage** tab.<br/>![Microsoft 365报告 - Microsoft OneDrive使用情况报告。](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
 
 选择 **"选择要在** 报表中添加或删除列的列"。  <br/> ![OneDrive使用情况报表 - 选择列。](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
 
-您还可以通过选择"导出"链接将报告数据导出到Excel .csv **文件**。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
+您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
 
-可查看 **OneDrive for Business** 使用情况报表，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的某一天，则该表将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
+可查看 **OneDrive for Business** 使用情况报告，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的某一天，则该表将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
   
 |Item|说明|
 |:-----|:-----|
@@ -60,8 +60,8 @@ You can view the usage in the OneDrive by choosing the **Usage** tab.<br/>![Micr
 |上次活动日期 (UTC)   <br/> | 文件活动在文件中执行的最新OneDrive。 如果 OneDrive 不曾有文件活动，其值将为空。  <br/> |
 |文件  <br/> |文件中文件OneDrive。 <br/>|
 |活动文件  <br/> | 该时段内的活动文件数。<br/> 注意：如果在报告的指定时段内删除了文件，则报告中显示的活动文件数可能大于当前报告OneDrive。 >  删除的用户会继续显示在报表中，为期 180 天。  <br/> |
-|存储 MB (的)   <br/> |应用程序使用OneDrive MB 的数量。 |
+|存储已 (MB)   <br/> |应用程序使用OneDrive MB 的数量。 |
 |||
    
 > [!NOTE]
-> 该报告仅包括拥有有效许可证OneDrive for Business用户。
+> 该报告仅包括具有有效许可证OneDrive for Business用户。
