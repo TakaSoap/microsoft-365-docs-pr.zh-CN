@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 可以创建与核心电子数据展示案例相关联的保留，Microsoft 365调查或法律案件相关的内容。
-ms.openlocfilehash: 0d80197becdeb07c917602ff27a1ad9b2c882029
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 976c0e47195c520620cfa57e996cee42df509593
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322109"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406031"
 ---
 # <a name="create-an-ediscovery-hold"></a>创建电子数据展示保留
 
@@ -81,6 +81,9 @@ ms.locfileid: "63322109"
 10. 配置基于查询的保留后，单击"下一步 **"**。
 
 11. 查看你的设置 (并在必要时编辑) ，然后单击 **提交。**
+
+> [!NOTE]
+> 创建基于查询的保留时，所选位置中所有的内容最初都处于保留状态。 随后，任何与指定查询不匹配的内容每 7 到 14 天从保留中清除一次。 但是，如果对内容位置应用了超过五个任何类型的保留，或者任何项目具有索引问题，则基于查询的保留不会清除内容。
 
 ## <a name="query-based-holds-placed-on-sites"></a>对网站进行基于查询的保留
 

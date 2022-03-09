@@ -2,8 +2,8 @@
 title: 测试基础常见问题解答
 description: 查看常见问题
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 668631563b35a848df5bfbdfd930be17efce8c04
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e21774ada245a3b9d5c131998b7c60b4a4778210
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203659"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406003"
 ---
 # <a name="test-base-faq"></a>测试基础常见问题解答
 
@@ -31,7 +31,7 @@ ms.locfileid: "60203659"
 
 有关详细信息，请参阅载入用户指南，或联系我们的团队 <testbasepreview@microsoft.com> 获取帮助和详细信息。
 
-**问：OOB 测试 (开箱) 是什么？**
+**问：OOB 测试什么是 (开箱) 测试？**
 
 **答：** 开箱即用 OOB (测试) 标准化的默认测试运行，安装、启动和关闭应用程序包 30 (30 次) 卸载。 
 
@@ -51,7 +51,7 @@ ms.locfileid: "60203659"
 
 **答：** 是，测试库支持功能测试。 功能测试是使我们的客户能够执行其脚本以在应用程序上运行自定义功能的测试。 
 
-若要提交应用程序包进行功能测试，只需通过自助服务门户仪表板上载包含应用程序二进制文件、依赖项和测试脚本的压缩文件夹。 
+若要提交应用程序包进行功能测试，请通过自助服务门户仪表板上传包含应用程序二进制文件、依赖项和测试脚本的压缩文件夹。 
 
 有关详细信息，请参阅载入用户指南，或联系我们的团队 <testbasepreview@microsoft.com> 获取帮助和详细信息。
 
@@ -73,11 +73,11 @@ ms.locfileid: "60203659"
 
 **答：** 对于针对预发布版本运行的每个测试，我们将在 48 小时内在 Azure 门户仪表板 [上提供](https://www.aka.ms/testbaseportal "测试基本主页") 结果。
 
-**问：能否在安装后重新启动？**
+**问：可以在安装后重新启动吗？**
 
 **答：** 是的，我们的过程支持在安装后重新启动。 在载入门户上设置任务时，请务必从"可选设置"下拉列表中选择此选项。
 
-对于开箱即 (OOB) 测试，您可以指定安装脚本是否需要 _重新启动。_
+对于 Out-of- (OOB) 测试，可以指定安装脚本是否需要 _重新启动。_
 
 ![重新启动图片。](Media/reboot.png)
 
@@ -87,11 +87,11 @@ ms.locfileid: "60203659"
 
 **问：Windows支持哪些版本？**
 
-**答：** 我们目前Windows 10支持 Windows 10、Windows Server 2016、Windows Server 2016 Core 版本、Windows Server 2019 和 Windows Server 2019 Core 版本。
+**答：** 我们目前Windows 10支持 Windows Server 2016、Windows Server 2016 Core 版本、Windows Server 2019 和 Windows Server 2019 Core 版本。
 
 **问：安全更新测试与功能更新测试之间有什么区别？**
 
-**答：** 对于安全更新测试，我们针对每月预发布 **<ins></ins>** 安全更新进行测试Windows这些更新侧重于确保我们的用户始终安全和受保护。 对于功能更新测试，我们将针对两年一 **<ins></ins>** 次预发布功能更新进行测试，这些更新在功能更新中引入了新的Windows。
+**答：** 对于安全更新测试，我们针对 Windows 上的每月 **<ins></ins>** 预发布安全更新进行测试，侧重于使我们的用户始终保持安全和受保护。 对于功能更新测试，我们针对两年一次预发布 **<ins>功能</ins>** 更新进行测试，这些更新引入了新特性Windows。
 
 ## <a name="debugging-options"></a>调试选项
 
@@ -133,10 +133,10 @@ ms.locfileid: "60203659"
 
 **问：服务是否有相关成本？**
 
-**答：** 测试基础服务将一直由用户免费使用，直到通用 (GA) 。 此时，我们将宣布一个成本结构，该结构将作用于所有客户。 
+**答：** 从 2022 年 3 月 1 日开始，根据你的订阅验证需求，你将获得 100 个免费时段 (价值为 800) 6 个月后到期。 使用免费时段后 (或过期) ，系统将自动根据使用情况按每小时 8 美元计费。   
 
 **问：如何提供有关测试基础的反馈？**
 
 **答：** 若要共享有关测试基础的反馈，请选择门户左下角的反馈图标。 在提交内容中包括屏幕截图，以帮助 Microsoft 更好地了解你的反馈。 
 
-还可以提交产品建议，并可在 上对其他想法进行选择 <testbasepreview@microsoft.com> 。
+还可以提交产品建议，并可在 上对其他想法进行选择 <testbasepreview@microsoft.com>。
