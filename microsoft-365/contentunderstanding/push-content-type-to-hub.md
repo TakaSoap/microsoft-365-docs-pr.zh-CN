@@ -11,13 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 7e5acdde2d60db88b68273d0f1158ae1694a523e
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 4a7a84023f3155c2b6f1405a3da5d8c5776d0047
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559948"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322053"
 ---
 # <a name="push-content-types-to-a-hub"></a>将内容类型推送到中心
 
@@ -34,7 +35,7 @@ ms.locfileid: "61559948"
 
 将内容类型推送到中心
 
-1. 在 SharePoint 管理中心中，展开“**内容服务**”，然后选择“**内容类型库**”。
+1. 在 SharePoint 管理中心中，展开“**内容服务**”，然后选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">“**内容类型库**”</a>。
 2. 选择要推送到中心的内容类型。
 3. 单击命令栏中的“**编辑**”。
 4. 单击“**选择中心网站**”。

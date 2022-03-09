@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: efd28dbe00960c2644c476f6cd689c79385eed9d
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: b251789795cbb55cd5d79dc686449e4c87aa6f9f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62879212"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316123"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -33,9 +33,9 @@ ms.locfileid: "62879212"
 
 ## <a name="labeling-client-for-desktop-apps"></a>桌面应用的标签客户端
 
-若要使用 Windows 和 Mac 版 Office 桌面应用中内置的敏感度标签，必须使用 Office 订阅版本。 此标签客户端不支持 Office 独立版本，例如 Office 2016 或 Office 2019。
+若要使用 Windows 和 Mac 版 Office 桌面应用中内置的敏感度标签，必须使用 Office 订阅版本。 此标记客户端不支持 Office 的独立版本（有时称为“Office 永久”版本）。
 
-若要在 Windows 计算机上使用这些独立版本的 Office，请安装 [Azure 信息保护统一标签客户端](/azure/information-protection/rms-client/aip-clientv2)。
+如果无法升级到适用于 Office 订阅版本的 Microsoft 365 企业应用版，则对于 Windows 计算机可以使用 [Azure 信息保护统一标记客户端](/azure/information-protection/rms-client/aip-clientv2)。
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>支持应用中的敏感度标签功能
 
@@ -72,16 +72,12 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |[带变量的动态标记](#dynamic-markings-with-variables)                                              | 当前频道：2010+ <br /><br> 每月企业频道：2010+ <br /><br> 半年企业频道：2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[现在分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[允许用户分配权限：权限 <br /> - 提示用户](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |当前频道：2004+ <br /><br> 每月企业频道：2004+ <br /><br> 半年企业频道：2008+ | 16.35+   | 审阅中   | 审阅中         | 审阅中                                                        |
-|[审核标签相关的用户活动](#auditing-labeling-activities)                      | 当前频道：2011+ <br /><br> 每月企业频道：2011+ <br /><br> 半年企业频道：2108+ | 16.43+ | 2.46+ | 16.0.13628+ | 是的 <sup>\*</sup>                                                        |
+|[审核标签相关的用户活动](#auditing-labeling-activities)                      | 当前频道：2011+ <br /><br> 每月企业频道：2011+ <br /><br> 半年企业频道：2108+ | 16.43+ | 2.46+ | 16.0.13628+ | 是 |
 |[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 当前频道：2101+ <br /><br> 每月企业频道：2101+ <br /><br> 半年企业频道：2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用敏感信息类型                    | 当前频道：2009+ <br /><br> 每月企业频道：2009+ <br /><br> 半年企业频道：2102+ | 16.44+  | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用可训练分类器                    | 当前频道：2105+ <br /><br> 每月企业频道：2105+ <br /><br> 半年企业频道：2018+ | 16.49+ | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[支持对标记文档和加密](sensitivity-labels-coauthoring.md) 创作和自动保存 | 当前频道：2107+ <br /><br> 每月企业频道：2107+ <br /><br> 半年企业频道：2202+ |  16.51+ | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|
+|[支持对标记文档和加密](sensitivity-labels-coauthoring.md) 创作和自动保存 | 当前频道：2107+ <br /><br> 每月企业频道：2107+ <br /><br> 半年企业频道：2202+ |  16.51+ | 预览：在 [选择加入](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) 时为 2.58+ | 预览：在 [选择加入](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) 时为 16.0.14931+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 
-**脚注:**
-
-<sup>\*</sup> 当前推出两端对齐文本以删除标签或降低分类级别
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook 中的敏感度标签功能
 
@@ -131,32 +127,9 @@ Office 内置标签客户端从 Microsoft 365 合规中心下载敏感度标签�
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 内置标签客户端和 Azure 信息保护客户端
 
-如果用户在其 Windows 计算机上安装了 [Azure 信息保护客户端](/azure/information-protection/rms-client/aip-clientv2)，则默认情况下，内置标签在[支持这些标签的 Windows Office 应用](#labeling-client-for-desktop-apps)中处于关闭状态。 由于内置标签不使用由 Azure 信息保护客户端使用的 Office 加载项，因此这些内置标签具有更高的稳定性和更好的性能。 这些内置标签还支持最新功能，例如高级分类器。
+如果用户在其 Windows 计算机上安装了 [Azure 信息保护 (AIP) 客户端](/azure/information-protection/rms-client/aip-clientv2)，则默认情况下将在在 [支持这些标签的 Windows Office 应用](#labeling-client-for-desktop-apps) 中禁用内置标签。 由于内置标签不使用由 AIP 客户端使用的 Office 加载项，因此这些标签具有更高的稳定性和更好的性能。 这些内置标签还支持最新功能，例如高级分类器。
 
-我们建议不要卸载 Azure 信息保护客户端，而是防止在 Office 应用中加载 Azure 信息保护加载项。 然后，你可以获取 Office 应用中内置标签的好处，以及 Office 应用之外的 Azure 信息保护客户端标签文件的好处。 例如，Azure 信息保护客户端可以使用文件资源管理器和 PowerShell 标记所有文件类型。 有关 Office 应用外部支持的标签功能的详细信息，请参阅[敏感度标签和 Azure 信息保护](sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)。
-
-若要防止在 Windows Office 应用中加载 Azure 信息保护客户端加载项，请使用组策略设置 **托管加载项列表**，如在 [由于 Office 2013 和 Office 2016 程序的组策略设置而未加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中所述。
-
-对于支持内置标签的 Windows Office 应用，请使用 Microsoft Word 2016、Excel 2016、PowerPoint 2016 和 Outlook 2016 的配置，为 Azure 信息保护客户端指定以下编程标识符 (ProgID)，并将选项设置为 **0 ：始终禁用加载项（阻止）**
-
-|应用程序  |编程标识符  |
-|---------|---------|
-|Word     |     `MSIP.WordAddin`    |
-|Excel     |  `MSIP.ExcelAddin`       |
-|PowerPoint     |   `MSIP.PowerPointAddin`      |
-|Outlook | `MSIP.OutlookAddin` |
-| | | 
-
-通过使用组策略或 [Office 云策略服务](/DeployOffice/overview-office-cloud-policy-service)部署此设置。
-
-> [!IMPORTANT]
-> 若要使用组策略设置“**使用 Office 中的敏感度功能来应用和查看敏感度标签**”，并将其设置为“**1**”，则在某些情况下，Azure 信息保护客户端可能仍会在 Office 应用中加载。在每个应用中阻止加载项加载可阻止这种情况发生。
-
-或者，可以通过交互方式从 Word、Excel、PowerPoint 和 Outlook 禁用或删除“**Microsoft Azure 信息保护**”Office 加载项。 此方法适用于单台计算机和临时测试。 有关说明，请参阅 [Office 程序中查看、管理和安装加载项](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)。 
-
-无论选择哪种方法，更改都将在 Office 应用重新启动时生效。
-
-有关 Azure 信息保护客户端和 Office 内置标签客户端支持哪些功能的详细信息，请参阅从 Azure 信息保护文档中[选择 Windows 标签解决方案](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)。
+要了解有关使用 AIP 客户端标记选项的详细信息，请参阅 [为什么选择 MIP 内置标记，而不是 Office 应用的 AIP 加载项](sensitivity-labels-aip.md)。
 
 ## <a name="office-file-types-supported"></a>支持的 Office 文件类型
 
@@ -427,7 +400,14 @@ Outlook 应用支持的默认标签设置与文档的默认标签设置不同时
 
 有关敏感度标签活动生成的审核事件的信息，请参阅 [在合规中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) 中的 [敏感度标签活动](search-the-audit-log-in-security-and-compliance.md) 部分。
 
-此审核信息在 [内容浏览器](data-classification-content-explorer.md) 和 [活动资源管理器](data-classification-activity-explorer.md) 中直观地表示，以帮助你了解敏感度标签的使用方式以及此标签内容的位置。 在 [导出并配置审核日志记录](export-view-audit-log-records.md) 时，还可以使用所选的安全信息和事件管理 (SIEM) 软件创建自定义报表。
+此审核信息在 [内容浏览器](data-classification-content-explorer.md) 和 [活动资源管理器](data-classification-activity-explorer.md) 中直观地表示，以帮助你了解敏感度标签的使用方式以及此标签内容的位置。 
+
+在 [导出并配置审核日志记录](export-view-audit-log-records.md) 时，还可以使用所选安全信息和事件管理 (SIEM) 软件创建自定义报表。有关更大规模的报表解决方案，请参阅 [Office 365 管理活动 API 参考](/office/office-365-management-api/office-365-management-activity-api-reference)。
+
+> [!TIP]
+> 要帮助创建自定义报表，请参阅以下博客文章：
+> - [通过 O365 管理 API 管理 Microsoft 365 合规性审核日志活动 - 第 1 部分](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
+> - [通过 O365 管理 API 管理 Microsoft 365 合规性审核日志活动 - 第 2 部分](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
 
 ## <a name="end-user-documentation"></a>最终用户文档
 

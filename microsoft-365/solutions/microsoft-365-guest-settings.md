@@ -16,15 +16,16 @@ f1.keywords: NOCSH
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 recommendations: false
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: bf0a85f43733ac90d55dde9ded38efd273a9c485
-ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
+ms.openlocfilehash: 2b6aac7a02c6c7c5feda041a2b06147c67dfa285
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "61660106"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316529"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -68,7 +69,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
-|允许用户将新的来宾添加到组织|打开|设置为“**是**”时，Azure AD 成员可以通过 Azure AD 来邀请来宾；设置为“**否**”时，则不能邀请。 设置为“是”时，Microsoft 365 组成员可以在所有者批准的情况下邀请来宾；设置为“否”时，Microsoft 365 组成员也可以在所有者批准的情况下邀请来宾，但这些所有者必须是全局管理员才能批准。 <p> 请注意，“**成员可以邀请**”是指 Azure AD 中的成员（与来宾相对），而不是 Microsoft 365 中的网站或组成员。 <p> 这与 Azure Active Directory 组织关系设置中的“**成员可以邀请**”设置相同。|
+|允许用户将新的来宾添加到组织|打开|设置为“**是**”时，Azure AD 成员可以通过 Azure AD 来邀请来宾；设置为“**否**”时，则不能邀请。 设置为“**是**”时，Microsoft 365 组成员可以在所有者批准的情况下邀请来宾；设置为“**否**”时，Microsoft 365 组成员也可以在所有者批准的情况下邀请来宾，但所有者必须是全局管理员才能批准。 <p> 请注意，“**成员可以邀请**”是指 Azure AD 中的成员（与来宾相对），而不是 Microsoft 365 中的网站或组成员。 <p> 这与 Azure Active Directory 组织关系设置中的“**成员可以邀请**”设置相同。|
 
 ### <a name="microsoft-365-groups"></a>Microsoft 365 组
 
@@ -133,7 +134,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 |删除已发送的消息|打开|设置为“**打开**”时，来宾可以删除他们之前发送的消息；设置为“**关闭**”时，则无法执行此操作。|
 |聊天|打开|设置为“**打开**”时，来宾可以使用 Teams 中的聊天功能；设置为“**关闭**”时，则不能使用该功能。|
 |在对话中使用 Giphy|打开|设置为“**打开**”时，来宾可以在对话中使用 Giphy；设置为“**关闭**”时，则不能使用它。|
-|Giphy 内容评级|适度|设置为“**允许所有内容**”时，无论内容评级如何，来宾都可以在聊天中插入所有 Giphys。 设置为“**适度**”时，来宾可以在聊天中插入 Giphys，但会适度限制成人内容。 设置为“**严格**”时，来宾可以在聊天中插入 Giphys，但会限制插入成人内容。|
+|Giphy 内容评级|适度|设置为“**允许所有内容**”时，无论内容评级如何，来宾都可以在聊天中插入所有 Giphy。 设置为“**适度**”时，来宾可以在聊天中插入 Giphys，但会适度限制成人内容。 设置为“**严格**”时，来宾可以在聊天中插入 Giphys，但会限制插入成人内容。|
 |在对话中使用 Meme|打开|设置为“**打开**”时，来宾可以在对话中使用 Meme；设置为“**关闭**”时，则不能使用它。|
 |对话中的用户贴纸|打开|设置为“**打开**”时，来宾可以在对话中使用贴纸；设置为“**关闭**”时，则不能使用它。|
 |允许沉浸式阅读器以查看消息|打开|设置为“**打开**”时，来宾可以在沉浸式阅读器中查看消息；设置为“**关闭**”时，则无法执行此操作。|
@@ -148,7 +149,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 由于 OneDrive 是 SharePoint 中的网站层次结构，因此组织级别共享设置将直接影响 OneDrive，如同影响其他 SharePoint 网站一样。
 
-**导航：** SharePoint 管理中心 > 共享
+**导航：**“SharePoint 管理中心”><a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">“**共享**”</a>
 
 ![SharePoint 组织级别共享设置的屏幕截图。](../media/external-sharing.png)
 
@@ -159,7 +160,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 ### <a name="sharepoint-and-onedrive-advanced-sharing-settings"></a>SharePoint 和 OneDrive 高级共享设置
 
-**导航：** SharePoint 管理中心 > 共享
+**导航：**“SharePoint 管理中心”><a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">“**共享**”</a>
 
 ![SharePoint 组织级别的其他共享设置的屏幕截图。](../media/external-sharing.png)
 
@@ -176,7 +177,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 在 SharePoint 和 OneDrive 中共享文件和文件夹时，系统会向共享收件人发送一个具有该文件或文件夹权限的链接，而不是授予对文件或文件夹本身的直接访问权限。 提供了多种类型的链接，你可以选择在共享文件或文件夹时向用户显示的默认链接类型。 你还可以为“*任何人*”链接设置权限和到期选项。
 
-**导航：** SharePoint 管理中心 > 共享
+**导航：**“SharePoint 管理中心”><a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">“**共享**”</a>
 
 ![SharePoint 组织级别文件和文件夹共享设置的屏幕截图。](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
@@ -199,7 +200,10 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 如果网站应用了敏感度标签，则该标签可能会控制外部共享设置。 有关详细信息，请参阅[使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
-**导航：** SharePoint 管理中心 > 活动站点 > 选择站点 >“策略”选项卡 > 编辑外部共享
+> [!NOTE]
+> 只能使用 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) PowerShell cmdlet 更改频道网站的共享设置。
+
+**导航：**“SharePoint 管理中心”><a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">“**活动站点**”</a>> 选择站点 >“**策略**”选项卡 >“**编辑外部共享**”
 
 ![SharePoint 网站外部共享设置的屏幕截图。](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -211,7 +215,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 你可以为每个网站设置链接类型和权限的默认值，以及“*任何人*”链接的到期设置。 在网站级别进行设置时，这些设置会覆盖组织级别的设置。 请注意，如果在组织级别禁用“*任何人*”链接，则“*任何人*”将不会是网站级别的可用链接类型。
 
-**导航：** SharePoint 管理中心 > 活动站点 > 选择站点 >“策略”选项卡 > 编辑外部共享
+**导航：**“SharePoint 管理中心”><a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">“**活动站点**”</a>> 选择站点 >“**策略**”选项卡 >“**编辑外部共享**”
 
 ![SharePoint 网站级别链接共享设置的屏幕截图。](../media/sharepoint-site-link-sharing-settings.png)
 

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: 36176ceee1ace993a95e661ab5d71ee062956692
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 9f54d3b582b08ba38cc6f9f815224f01fcad3dcb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074398"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315339"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -111,6 +111,7 @@ ms.locfileid: "62074398"
 |[Skype for Business Online 会议参与者活动](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|是|是|否[^1]|否[^1]|是|
 |[Skype for Business Online 点对点活动](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|是|是|否[^1]|否[^1]|是|
 |[Vava Learning 活动](viva-learning-activity.md)|是|不适用|不适用|不适用|不适用|
+|[Viva Insights 活动](viva-insights-activity.md)|是|是|不适用|不适用|不适用|
 
 [^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 [^2]: The service is not available in the environment so no plan to release the report.
