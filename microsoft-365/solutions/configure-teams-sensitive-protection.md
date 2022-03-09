@@ -17,14 +17,15 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkSPO
 recommendations: false
 description: 了解如何部署具有敏感数据保护的团队。
-ms.openlocfilehash: edeeb0fc0f93ae962b85e113734dea1844b11d04
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 42124881ac795c54288dee46e70dc1d5eccef3e3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213417"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314065"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>配置具有敏感数据保护的团队
 
@@ -119,12 +120,11 @@ ms.locfileid: "60213417"
 
 更新网站默认共享链接类型
 
-1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在“**站点**”下，单击“**活动站点**”。
-3. 单击与团队关联的网站。
-4. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
-5. 在“默认共享链接类型”下，清除“**与组织级别设置相同**”复选框，然后选择“**特定人员(仅用户指定的人员)**”。
-6. 单击“**保存**”。
+1. 打开 SharePoint 管理中心，在“**网站**”下，选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**活动网站**</a>。
+1. 选择与团队关联的网站。
+1. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
+1. 在“默认共享链接类型”下，清除“**与组织级别设置相同**”复选框，然后选择“**特定人员(仅用户指定的人员)**”。
+1. 选择“**保存**”。
 
 若要将脚本作为团队创建过程的一部分进行编写，可使用 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 和 `-DefaultSharingLinkType Direct` 参数，将默认共享链接更改为 *特定人员*。
 

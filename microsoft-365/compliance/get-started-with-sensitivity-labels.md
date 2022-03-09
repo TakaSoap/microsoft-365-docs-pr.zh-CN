@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好部署敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: b5d7a6c18f112b7f35aa2599ff2639894a735f9b
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: adc939d44715bcfaeb97cdbfa530f55a5aeecd4e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171870"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322081"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -73,7 +73,7 @@ ms.locfileid: "62171870"
 > - **信息保护调查员**
 > - **信息保护读取器**
 >
-> 有关每个角色及其包含的新角色的说明，请在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> > **权限和角色** > **合规中心** > **角色** 选择一个角色组， 然后在浮出控件窗格中查看说明。 或者，请参阅[安全与合规中心中的角色组](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)。
+> 有关每个角色及其包含的新角色的说明，请在“<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>” > “**权限和角色**” > “**合规中心**” > “**角色**”中选择一个角色组，然后在浮出控件窗格中查看说明。或参阅 [安全与合规中心中的角色组](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)。
 
 有关将用户添加到默认角色组、角色，或创建自己的角色组的说明，请参阅 [Microsoft 365 合规中心中的权限](microsoft-365-compliance-center-permissions.md)。
 
@@ -99,6 +99,7 @@ ms.locfileid: "62171870"
 |文档加密后，在 Office 桌面应用中使用共同创作和自动保存 | [为使用敏感度标签加密的文件启用共同创作](sensitivity-labels-coauthoring.md)
 |自动将敏感度标签应用于文档和电子邮件 | [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)|
 |使用敏感度标签来保护 Teams和 SharePoint 中的内容 |[将敏感度标签与 Microsoft Teams、Microsoft 365 组和 SharePoint 网站配合使用](sensitivity-labels-teams-groups-sites.md)|
+|使用敏感度标签为 SharePoint 和 OneDrive 中的网站和单个文档配置默认共享链接类型 |[使用敏感度标签设置 SharePoint 和 OneDrive 中网站和文档的默认共享链接](sensitivity-labels-default-sharing-link.md)|
 |将敏感度标签应用于文档理解模型，以便自动对 SharePoint 库中标识的文档进行分类和保护 |[在 Microsoft SharePoint Syntex 中向模型应用保留标签](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
 |阻止或警告用户与特定的灵敏度标签共享文件或电子邮件 |[在 DLP 策略中使用敏感度标签作为条件](dlp-sensitivity-label-as-condition.md) |
 |应用保留标签以保留或删除具有特定敏感度标签的文件或电子邮件|[自动应用保留标签来保留或删除内容](apply-retention-labels-automatically.md) |

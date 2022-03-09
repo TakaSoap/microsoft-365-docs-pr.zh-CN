@@ -2,8 +2,8 @@
 title: Microsoft 合规性管理器高级评估试用版 playbook
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器高级评估试用版 playbook。
-ms.openlocfilehash: e03fca9adfad720a4203885e98f2a9474243bbc4
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 7beff27d5d2eb7693f165d479bbc8df6e190d028
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561074"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321021"
 ---
 # <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>试用版 playbook: Microsoft 合规性管理器高级评估
 
@@ -70,7 +70,7 @@ ms.locfileid: "61561074"
 
 ### <a name="enable-trial-via-the-compliance-trial"></a>通过合规性试用版启用试用版
 
-1. 在合规中心内，选择左侧导航窗格中的 **试用版**。 将显示可用的试用版。
+1. 在合规中心内，在左侧导航窗格中选择“**试用版**”。将显示可用的试用版。
 1. 为合规性管理器高级评估选择 **立即试用**。
 1. 在设置试用版之前，你将看到信息页面并能够了解详细信息。
 1. 选择 **设置** 时，更改最长可能需要两个小时才可生效。 需要重新登录才可查看可用模板。
@@ -87,7 +87,7 @@ ms.locfileid: "61561074"
 
 ## <a name="additional-resources"></a>其他资源
 
-**Microsoft Docs**: 获取有关合规性管理器高级评估的工作原理以及如何为组织实施最佳评估的详细信息。 请访问 [文档](compliance-manager-templates.md)。
+**Microsoft Docs**：获取有关合规性管理器高级评估的工作原理以及如何为组织实施最佳评估的详细信息。请访问 [Docs](compliance-manager-templates.md)。
 
 **操作视频**: 观看以下视频以了解详细信息:
 

@@ -44,8 +44,14 @@
           items:
             - name: VPN 拆分隧道概述
               href: microsoft-365-vpn-split-tunnel.md
+            - name: 常见 VPN 拆分隧道方案
+              href: microsoft-365-vpn-common-scenarios.md
             - name: 实现 VPN 拆分隧道
               href: microsoft-365-vpn-implement-split-tunnel.md
+            - name: 保护用于 VPN 拆分隧道的 Teams 媒体流量
+              href: microsoft-365-vpn-securing-teams.md
+            - name: VPN 环境中的 Stream 和实时事件
+              href: microsoft-365-vpn-stream-and-live-events.md
             - name: 面向中国用户的 Microsoft 365 优化
               href: microsoft-365-networking-china.md
             - name: 使用本机 Windows 10 VPN 客户端为远程工作者优化 Microsoft 365 流量
@@ -182,6 +188,8 @@
               href: microsoft-365-mailbox-utilization-service-alerts.md
             - name: MRS 源延迟的服务警报
               href: microsoft-365-mrs-source-delays-service-alerts.md
+            - name: 外部收件人排队消息的服务警报
+              href: microsoft-365-external-recipient-service-alerts.md
         - name: 安装指南
           href: setup-guides-for-microsoft-365.md
     - name: 多个租户
@@ -263,7 +271,7 @@
       href: deploy-identity-solution-identity-model.md
     - name: 步骤 2. 保护特权帐户
       href: protect-your-global-administrator-accounts.md
-    - name: 步骤 3. 保护用户帐户
+    - name: 步骤 3.保护用户帐户
       href: microsoft-365-secure-sign-in.md
     - name: 步骤 4. 部署标识模型
       items:

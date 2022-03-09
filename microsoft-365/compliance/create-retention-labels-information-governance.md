@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 为信息管理的保留策略创建例外的保留标签的说明，以便你可以保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 40899f517c39b926cb65730956ccb310ba5a5159
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 699df2a62204115c60271a5d5aa70613db48c7d5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321035"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327261"
 ---
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>为保留策略的例外创建保留标签
 
@@ -32,9 +32,11 @@ ms.locfileid: "62321035"
 
 保留策略会自动应用于容器级别的所有项目（如 SharePoint 网站、用户邮箱等），而保留标签则应用于单个项目，例如 SharePoint 文档或电子邮件。
 
-请务必先了解[保留原则](retention.md#the-principles-of-retention-or-what-takes-precedence)，然后再使用保留标签来为特定 SharePoint、OneDrive，或 Exchange 项目补充保留策略。 通常，使用保留标签保留特定项目的时间比应用保留策略的时间长，但它们还可用于应用不同的删除期限。
+请务必先了解[保留原则](retention.md#the-principles-of-retention-or-what-takes-precedence)，然后再使用保留标签来为特定 SharePoint、OneDrive，或 Exchange 项目补充保留策略。 通常，你将使用保留标签将特定项目保留的时间长于应用的保留策略，但也可以使用这些标签来替代保留期结束时的自动删除策略，或应用不同的删除期。
 
-例如：SharePoint 网站上的大部分内容需要保留 3 年，保留策略对此进行了介绍。 但有些合同文档必须保留七年。 可以使用保留标签来解决这些例外。 将保留策略分配到所有 SharePoint 网站后，可将保留标签应用于合同文档。 所有 SharePoint 项目将保留三年，仅合同文档保留七年。
+以下是典型示例：SharePoint 网站上的大部分内容需要保留 3 年事件，这一点已包含在保留策略中。 但有些合同文档必须保留七年。 可以使用保留标签来解决这些例外。 将保留策略分配到所有 SharePoint 网站后，可将保留标签应用于合同文档。 所有 SharePoint 项目将保留三年，仅合同文档保留七年。
+
+有关如何将保留标签用作保留策略例外的更多示例，请参阅 [组合使用保留策略和保留标签](retention.md#combining-retention-policies-and-retention-labels)。
 
 与保留策略相比，保留标签还支持更多功能。 有关详细信息，请参阅[比较保留策略和保留标签的功能](retention.md#compare-capabilities-for-retention-policies-and-retention-labels)。
 

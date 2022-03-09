@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 6802947e786f13a577a6f3bf58ea3001599ee4d8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: f617338448b71541d5ab0d914ab1a3198d4f486c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766076"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319641"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -69,7 +69,7 @@ ms.locfileid: "62766076"
 
     特定于 Exchange 的自动标记：
     
-    - 与 Office 应用的手动标记或自动标记不同，系统还会根据你在自动标记策略中指定的条件来扫描 PDF 附件以及 Office 附件。 如果存在匹配项，则会标记电子邮件，但不标记附件。
+    - 与 Office 应用的手动标记或自动标记不同，系统还会根据你在自动标记策略中指定的条件来扫描 PDF 附件和 Office 附件。如果存在匹配项，则标记电子邮件，但不标记附件。
         - 对于 PDF 文件，如果标签应用了加密，则当租户[启用 PDF 附件](ome-faq.yml#are-pdf-file-attachments-supported-) 时，将通过使用 [Office 365 邮件加密 (OME)](ome.md) 对这些文件进行加密。
         - 对于这些 Office 文件，支持 Word、PowerPoint 和 Excel。 如果标签应用了加密，则通过使用 [Office 365 邮件加密 (OME)](ome.md) 进行加密。
     - 如果你拥有已应用 IRM 加密的 Exchange 邮件流规则或数据丢失防护 (DLP) 策略：当内容由这些规则或策略和自动标记策略标识时，将应用该标签。 如果该标签已应用加密，则将忽略 Exchange 邮件流规则或 DLP 策略中的 IRM 设置。 但是，如果该标签未应用加密，则除了标签之外，还会应用邮件流规则或 DLP 策略中的 IRM 设置。
@@ -124,7 +124,7 @@ ms.locfileid: "62766076"
 - 自动标记将替换自动应用的 [低优先级敏感度标签](sensitivity-labels.md#label-priority-order-matters)，但不会替换高级优先级标签。
     
     > [!TIP]
-    > 例如，合规中心列表顶部的敏感度标签命名为订单编号 (优先级) 为 0 的 **公共**，列表底部的敏感度标签命名为订单编号(优先级) 为 4 的 **高度机密**。 **高度机密** 标签可以替代 **公共** 标签，但反过来则不行。
+    > 例如，合规中心列表顶部的敏感度标签命名为“**公共**”以及订单号（优先级为 0），列表底部的敏感度标签命名为“**高度机密**”以及订单号（优先级为 4）。“**高度机密**”标签可以覆盖“**公共**”标签，但反之则不行。
 
 仅对于电子邮件自动标记策略，可以选择一个设置来始终覆盖现有敏感度标签，而不考虑其应用方式。
 
@@ -182,7 +182,7 @@ Azure 信息保护统一标记客户端仅支持自动标记内置和自定义�
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>为标签配置可训练分类器
 
-如果将此选项和适用于 Windows 版本 2106 或更低版本的 Microsoft 365 应用版，或适用于 Mac 版本 16.50 或更低版本的 Microsoft 365 应用版配合使用，请确保已在租户中至少发布了一个配置为自动标记的其他敏感度标签和 [敏感信息类型选项](#configuring-sensitive-info-types-for-a-label)。 当你在这些平台上使用更高版本时，则无需满足此要求。
+如果将此选项和适用于 Windows 版本 2106 或更低版本的 Microsoft 365 应用版，或适用于 Mac 版本 16.50 或更低版本的 Microsoft 365 应用版配合使用，请确保已在租户中至少发布了一个配置为自动标记的其他敏感度标签和[敏感信息类型选项](#configuring-sensitive-info-types-for-a-label)。当在这些平台上使用更高版本时，则无需满足此要求。
 
 选择“**可训练分类器**”选项时，请选择一个或多个预训练或自定义的可训练分类器：
 
@@ -311,7 +311,7 @@ Azure 信息保护统一标记客户端仅支持自动标记内置和自定义�
 
 5. 对于“**为自动标记策略命名**”页面：提供唯一的名称，并选择性地提供描述，以帮助识别自动应用的标签、位置和条件（用于标识要标记的内容）。
 
-6. 对于“**选择要应用标签的位置**”页面：选择并指定 Exchange、SharePoint 和 OneDrive 的位置。 如果不想保留所选位置的默认“**全部**”，请选择特定实例的链接。 然后选择“**下一步**”。
+6. 对于“**选择要应用标签的位置**”页面：选择并指定 Exchange、SharePoint 和 OneDrive 的位置。 如果不希望为所选位置保留默认值“**全部**”，请选择要包含的特定实例的链接，或选择链接以选择要排除的特定实例。 然后选择“**下一步**”。
 
     ![为自动标记配置选择位置页面。](../media/locations-auto-labeling-wizard.png)
     
@@ -354,7 +354,7 @@ Azure 信息保护统一标记客户端仅支持自动标记内置和自定义�
     
     - **自动替换具有相同或较低优先级的现有标签**: 适用于传入和传出电子邮件，选择此设置时，它将确保始终应用匹配的敏感度标签。 如果未选择此设置，则匹配的敏感度标签不会应用于已有 [更高优先级](sensitivity-labels.md#label-priority-order-matters) 的敏感度标签或手动标记的电子邮件上。
     
-    - **对从组织外部收到的电子邮件应用加密**: 选择此选项时，必须分配 [权利管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)，以确保组织中的授权人员对从组织外部发送的电子邮件以及具有加密的策略标签具有完全控制权限 [使用](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) 权限。 稍后可能需要此角色来删除加密，或为组织中的用户分配不同的使用权限。
+    - **对从组织外部收到的电子邮件应用加密**：选择此选项时，必须分配 [权利管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)，以确保组织中的授权人员对从组织外部发送的电子邮件以及具有加密的策略标签具有完全控制权限 [使用权限](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。稍后可能需要此角色来删除加密，或为组织中的用户分配不同的使用权限。
         
         对于 **分配权利管理所有者**，请通过组织拥有的电子邮件地址指定单个用户。 不要指定邮件联系人、共享邮箱或任何组类型，因为此角色不支持这些类型。
 

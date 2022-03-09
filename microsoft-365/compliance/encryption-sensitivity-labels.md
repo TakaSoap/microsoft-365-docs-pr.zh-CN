@@ -1,7 +1,7 @@
 ---
 title: 通过敏感度标签应用加密，从而限制对内容的访问
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,14 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 2e337ef74975bd761de89b4aaae03379344efeed
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311895"
 ---
-
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
@@ -188,6 +193,8 @@ ms.custom: seo-marvel-apr2020
 - 任何经过身份验证的用户。选择前，请确保你了解此设置的相关 [要求和限制](#requirements-and-limitations-for-add-any-authenticated-users)。
 
 - Azure AD 中的任何特定用户或启用了电子邮件的安全组、通讯组、或 Microsoft 365 组（[旧称为“Office 365 组”](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。 Microsoft 365 组可以有静态或[动态成员资格](/azure/active-directory/users-groups-roles/groups-create-rule)。 请注意，不能使用[来自 Exchange 的动态通讯组](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups)，因为此组类型不会同步到 Azure AD，并且不能使用未启用电子邮件的安全组。
+    
+    在此选项支持的指定组中，在用户可以打开加密内容之前，Azure 信息保护服务将对每个 [用户单独进行身份验证](/azure/information-protection/prepare#azure-information-protection-requirements-for-user-accounts)。
 
 - 任何电子邮件地址或域。 借助此选项，通过输入 Azure AD 使用的另一组织中的任何域名，指定该组织中的所有用户。 你可使用此选项处理社交提供商，方式是输入其域名，例如 **gmail.com**、**hotmail.com** 或 **outlook.com**。
 
@@ -424,7 +431,7 @@ ms.custom: seo-marvel-apr2020
 
 - 当授权用户在其 Office 应用中打开加密文档时，将在其应用顶部的黄色消息栏中看到标签名称和说明。 当加密权限扩展到组织外部的人员时，请仔细查看打开文档时将在此消息栏中显示的标签名称和说明。
 
-- 对于多个用户同时编辑一个加密文件，这些用户必须都在使用 Office 网页版。  或者，对于 Windows 和 Mac，你已 [为使用敏感度标签加密的文件启用共同创作](sensitivity-labels-coauthoring.md)，并且用户具有 [所需最低版本](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) 的 Word、Excel 和 PowerPoint。 如果不是这种情况且文件已打开：
+- 对于要同时编辑加密文件的多个用户，他们必须全部使用 Office 网页版，或者你已 [为使用敏感度标签加密的文件启用共同创作](sensitivity-labels-coauthoring.md)，并且所有用户都具有 [支持此功能的 Office 应用](sensitivity-labels-coauthoring.md#prerequisites)。 如果不是这种情况且文件已打开：
 
   - 在 Office 应用（Windows、Mac、Android 和 iOS）中，用户会看到一条“**文件正在使用中**”消息，其中包含签出该文件的用户的姓名。 然后，他们可查看只读副本或保存和编辑文件副本，并可在文件可用时收到通知。
   - 在 Office 网页版中，用户会看到一则错误消息，其中指出他们不能与其他人一起编辑文档。然后，他们可以选择“**在阅读视图中打开**”。
@@ -435,7 +442,7 @@ ms.custom: seo-marvel-apr2020
 
 - 如果[在 SharePoint 中签出](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)文档时使用 Office 应用添加应用了加密的标签，并且用户随后放弃签出，则文档将保持含标签和加密状态。
 
-- 除非你 [启用了使用敏感度标签](sensitivity-labels-coauthoring.md)加密的文件的共同创作，否则 Office 应用（Windows、Mac、Android 和 iOS）不支持以下加密文件操作，用户会看到错误消息。 但是，可将 SharePoint 功能用作替代项：
+- 除非你已 [为使用敏感度标签加密的文件启用了共同创作](sensitivity-labels-coauthoring.md)，否则 Office 应用（Windows、Mac、Android 和 iOS）不支持以下用于加密文件的操作，并且用户将看到出错的错误消息。但可以使用 SharePoint 功能作为替代方法：
 
   - 查看、还原和保存以前版本的副本。或者，在你 [为列表或库启用和配置版本控制](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37) 后，用户可使用 Office 网页版执行这些操作。
   - 更改文件的名称或位置。或者，用户可在 SharePoint 中 [对文档库中的文件、文件夹或链接重命名](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)。

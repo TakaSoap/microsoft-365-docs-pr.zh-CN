@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 0f663ac949419c3a726a0af23eba4a0f14928515
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 5fc271028e4c20d431c4535fcdbf902bf17cdbb4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281443"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311839"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -107,7 +107,7 @@ ms.locfileid: "62281443"
 
 - 文件路径定义不区分大小写，因此 `User` 与 `user` 相同。
 
-- 支持通配符值。 因此，路径定义可以在路径中间或路径末尾包含 `*`。 例如：`/Users/*/Library/Application Support/Microsoft/Teams/*`
+- 支持通配符值。因此，路径定义可以在路径中间或路径末尾包含 `*`。例如：`/Users/*/Library/Application Support/Microsoft/Teams/*`
 
 #####  <a name="recommended-file-path-exclusions-preview"></a>建议的文件路径排除（预览）
 
@@ -125,7 +125,7 @@ ms.locfileid: "62281443"
 
 不允许的应用是你创建的不允许访问 DLP 保护文件的应用程序列表。 它适用于 Windows 10 和 macOS 设备（预览）。
 
-启用策略的“**通过不允许的应用访问**”设置，并且不允许列表中的应用尝试访问受保护的文件时，活动将被允许、阻止或者阻止，但用户可以覆盖该限制。 所有活动均经过审核，可在活动资源管理器中查看。
+如果已启用策略的“**由不允许的应用访问**”设置，并且某个不允许列表上的应用尝试访问受保护的文件，则可以允许或阻止活动，或者虽然阻止，但用户可以替代此限制。所有活动都经过审核，并且可以在活动资源管理器中进行审查。
 
 > [!IMPORTANT]
 > 不包括可执行文件的路径，而仅包括可执行文件的名称（如 browser.exe）。
@@ -271,23 +271,23 @@ ms.locfileid: "62281443"
 
 3. 在此方案中，依次选择“**隐私**”和“**美国个人身份信息 (PII) 数据**”，然后选择“**下一步**”。
 
-4. 将“**设备**”以外所有位置的“**状态**”字段切换为“关”。 选择“**下一步**”。
+4. 将除 **设备** 外的所有位置的 **状态** 字段切换为关闭。选择 **下一步**。
 
 5. 接受默认的“**从模板中查看和自定义设置**”选择，然后选择“**下一步**”。
 
 6. 接受默认的“**保护操作**”值，然后选择“**下一步**”。
 
-7. 选择“**审核或限制 Windows 设备上的活动**”，然后将“操作”设置为“**仅审核**”。 选择“**下一步**”。
+7. 选择 **审核或限制 Windows 设备上的活动**，然后将操作设置为 **仅审核**。选择 **下一步**。
 
-8. 接受默认的“**我想要先测试**”值，然后选择“**在测试模式下显示策略提示**”。 选择“**下一步**”。
+8. 接受默认的 **我想首先测试** 值，然后选择 **在测试模式下显示策略提示**。选择 **下一步**。
 
 9. 查看设置，然后选择“**提交**”。
 
 10. 新的 DLP 策略将显示在策略列表中。
 
-11. 检查活动资源管理器中是否有来自受监视终结点的数据。 设置设备的位置筛选器并添加策略，然后按策略名称筛选以查看此策略的影响; 如果需要，请参阅 [活动资源管理器入门](data-classification-activity-explorer.md)。
+11. 检查活动资源管理器中是否存在来自受监视终结点的数据。设置设备的位置筛选器并添加策略，然后按策略名称筛选以查看此策略的影响。如果需要，请参阅 [活动资源管理器入门](data-classification-activity-explorer.md)。
 
-12. 尝试与组织外的人员共享包含将触发美国个人身份信息 (PII) 数据条件的内容的测试。 这应该会触发策略。
+12. 尝试与组织外的人员共享包含将触发美国个人身份信息 (PII) 数据条件内容的测试。这应该会触发该策略。
 
 13. 检查活动资源管理器中的事件。
 
@@ -312,7 +312,7 @@ ms.locfileid: "62281443"
 
 8. 通过选择“**下一步**”，然后“**提交**”策略更改来保留所有先前的设置。
 
-9. 尝试与组织外的人员共享包含将触发美国个人身份信息 (PII) 数据条件的内容的测试。 这应该会触发策略。
+9. 尝试与组织外的人员共享包含将触发美国个人身份信息（PII）数据条件的内容的测试。这应该会触发该政策。
 
 10. 检查活动资源管理器中的事件。
 
@@ -337,7 +337,7 @@ ms.locfileid: "62281443"
 
 8. 通过选择“**下一步**”，然后“**提交**”策略更改来保留所有先前的设置。
 
-9. 尝试与组织外的人员共享包含将触发美国个人身份信息 (PII) 数据条件的内容的测试。 这应该会触发策略。
+9. 尝试与组织外的人员共享包含将触发美国个人身份信息（PII）数据条件的内容的测试。这应该会触发该政策。
 
    客户端设备上将显示如下所示的弹出窗口：
 
@@ -453,7 +453,7 @@ ms.locfileid: "62281443"
 
 7. 打开隔离文件夹并确认原始文件存在。
  
-8. 检查活动资源管理器中是否有来自受监视终结点的数据。 设置设备的位置筛选器并添加策略，然后按策略名称筛选以查看此策略的影响; 如果需要，请参阅 [活动资源管理器入门](data-classification-activity-explorer.md)。
+8. 检查活动资源管理器中是否存在来自受监视终结点的数据。设置设备的位置筛选器并添加策略，然后按策略名称筛选以查看此策略的影响。如果需要，请参阅 [活动资源管理器入门](data-classification-activity-explorer.md)。
 
 9. 检查活动资源管理器中的事件。
 
@@ -465,7 +465,7 @@ ms.locfileid: "62281443"
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Windows 10 设备的装载工具和方法](/microsoft-365/compliance/dlp-configure-endpoints)
+- [将 Windows 10 和 Windows 11 设备载入到 Microsoft 365 概述](/microsoft-365/compliance/device-onboarding-overview)
 - [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [已加入 Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join)
 - [下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
