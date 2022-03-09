@@ -8,12 +8,12 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: b33ee0f59ca02d305ec703ab47aa1d0f2f95b8da
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 4e8969e51673676ecf13dc579ae304622e23e75d
+ms.sourcegitcommit: 1de72e5fd8af0ebc4a0dc91f47d2243498cfe5b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963331"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63384601"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Defender for Identity notifications in Microsoft 365 Defender
 
@@ -22,7 +22,7 @@ ms.locfileid: "60963331"
 - Microsoft 365 Defender
 - Defender for Identity
 
-本文介绍了如何使用 Microsoft [Defender for Identity](/defender-for-identity)通知在[Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
+本文介绍了如何使用 Microsoft [Defender for Identity 通知在](/defender-for-identity) [Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
 
 > [!IMPORTANT]
 > 作为与用户Microsoft 365 Defender的一部分，一些选项和详细信息从他们在 Defender for Identity 门户中的位置发生了更改。 请阅读下面的详细信息，了解在哪里可以找到熟悉的新功能和新功能。
@@ -31,11 +31,11 @@ ms.locfileid: "60963331"
 
 在Microsoft 365 Defender中，可以在 Defender for Identity 中添加运行状况问题的电子邮件通知的收件人。
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender，</a>go to **设置** and then **Identities**.
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>中，转到"**设置**"和"**标识"**。
 
     ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
 
-1. 选择 **"运行状况问题通知"。**
+1. 选择 **"运行状况问题通知"**。
 
 1. 输入收件人的电子邮件地址。 选择“**添加**”。
 
@@ -46,13 +46,13 @@ ms.locfileid: "60963331"
     ![运行状况问题电子邮件示例。](../../media/defender-identity/health-email.png)
 
     > [!NOTE]
-    > 电子邮件提供了两个链接，用于进一步了解有关该问题的详细信息。 你可以转到 **MDI** 健康中心或 **M365D 中的新健康中心**。
+    > 电子邮件提供了两个链接，用于进一步了解有关该问题的详细信息。 你可以转到 **MDI 运行状况中心或** **M365D 中的新运行状况中心**。
 
 ## <a name="alert-notifications"></a>警报通知
 
-在Microsoft 365 Defender中，您可以为检测到的通知的电子邮件通知添加收件人。
+在Microsoft 365 Defender中，您可以为检测到的警报的电子邮件通知添加收件人。
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender，</a>go to **设置** and then **Identities**.
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>中，转到"**设置**"和"**标识"**。
 
     ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
 
@@ -66,17 +66,20 @@ ms.locfileid: "60963331"
 
 Defender for Identity 可通过指定传感器向 Syslog 服务器发送安全和运行状况警报，以在检测到可疑活动时通知你。
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender，</a>go to **设置** and then **Identities**.
+> [!NOTE]
+> 若要了解如何将 Defender for Identity 与 Microsoft Sentinel 集成，请参阅Microsoft 365 Defender [Microsoft Sentinel 集成](/azure/sentinel/microsoft-365-defender-sentinel-integration)。
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>中，转到"**设置**"和"**标识"**。
 
     ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
 
-1. 选择 **"Syslog 通知"。**
+1. 选择 **"Syslog 通知"**。
 
 1. 若要启用 syslog 通知，将 **Syslog 服务** 开关设置为 **打开** 位置。
 
     ![打开 syslog 服务。](../../media/defender-identity/syslog-service.png)
 
-1. 选择 **"配置服务"。** 将打开一个窗格，您可以在其中输入 syslog 服务的详细信息。
+1. 选择 **"配置服务"**。 将打开一个窗格，您可以在其中输入 syslog 服务的详细信息。
 
     ![输入 syslog 服务详细信息。](../../media/defender-identity/syslog-sensor.png)
 
@@ -91,7 +94,7 @@ Defender for Identity 可通过指定传感器向 Syslog 服务器发送安全�
 
 1. 选择“**保存**”。
 
-1. 配置 Syslog 服务后，可以选择要发送到 **Syslog** (警报或) 运行状况问题的类型。
+1. 配置 Syslog 服务后，可以选择向 **Syslog** 服务器发送 (警报或) 运行状况问题。
 
     ![已配置 Syslog 服务。](../../media/defender-identity/syslog-configured.png)
 
