@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Microsoft 365 合规中心中的搜索和清除功能搜索和删除组织中所有邮箱的电子邮件。
-ms.openlocfilehash: 33c65cb61be14d72631fd3a272b68f2dad2ffea6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9361f7dea0e1b12d50733b9b1d1e91ac15577ab9
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204223"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400988"
 ---
 # <a name="search-for-and-delete-email-messages"></a>搜索和删除电子邮件
 
@@ -36,14 +36,14 @@ ms.locfileid: "60204223"
 
 - 包含敏感数据的邮件
 
-> [!CAUTION]
-> 搜索和清除是一项强大的功能，允许分配有必要权限的任意用户从组织的邮箱中删除电子邮件。
+> [!TIP]
+> 如果你的组织有 Defender for Office 365 计划 2 订阅，建议使用[修正 Office 365 中传递的恶意电子邮件](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365)中详细介绍的过程，而不是按照本文中介绍的过程进行操作。
 
 ## <a name="before-you-begin"></a>准备工作
 
 - 本文中所述的搜索和清除工作流不会从 Microsoft Teams 中删除聊天消息或其他内容。 如果在步骤 2 中创建的内容搜索返回 Microsoft Teams 中的项目，则在清除步骤 3 中的项目时不会删除这些项目。
 
-- 若要创建并运行内容搜索，你必须是 **电子数据展示管理员** 角色组的成员，或者在 Microsoft 365 合规中心被分配有“**合规性搜索**”角色。若要删除邮件，你必须是 **组织管理** 角色组的成员，或在合规中心被分配有“**搜索并清除**”角色。有关将用户添加到角色组的详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
+- 若要创建并运行内容搜索，你必须是 **电子数据展示管理员** 角色组的成员，或者在 Microsoft 365 合规中心被分配有“**合规性搜索**”角色。若要删除邮件，你必须是 **组织管理** 角色组的成员，或在合规中心被分配有“**搜索并清除**”角色。有关将用户添加到角色组的详细信息，请参阅 [分配电子数据展示权限](assign-ediscovery-permissions.md)。
 
   > [!NOTE]
   > Exchange Online 和 Microsoft 365 安全与合规中心中都存在 **组织管理** 角色组。 这些角色组都是独立的角色组，授予不同的权限。 作为 Exchange Online 中 **组织管理** 的成员，并没有授予删除邮件的必要权限。 如果未向你分配安全与合规中心的 **搜索并清除** 角色（直接分配或通过 **组织管理** 等角色组分配），则当你运行 **New-ComplianceSearchAction** cmdlet 时，将在步骤 3 中收到错误消息“找不到与参数名称‘清除’相匹配的参数”。
