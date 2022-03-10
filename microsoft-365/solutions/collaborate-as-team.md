@@ -16,16 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: 了解在 Teams 中设置团队与来宾进行任务、对话及文档协作所必需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: 4128f6cd5293972dd7383eed0802f7969f488d8a
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: bb6ccf4f3e17192d86675d99072eca8b836973e2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899638"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324545"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -110,10 +111,10 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 
 设置 SharePoint 组织级共享设置
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 内左侧导航窗格中的 **管理中心** 下，单击“**SharePoint**”。
-2. 在 SharePoint 管理中心的左侧导航窗格中，展开 **"策略"**，然后单击 **“共享”**。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 内左侧导航窗格中的 **管理中心** 下，选择“**SharePoint**”。
+2. 在 SharePoint 管理中心的左侧导航窗格中，展开“**策略**”，然后选择“<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共享**</a>”。
 3. 确保 SharePoint 的外部共享设置为 **“任何人”** 或 **“新来宾和现有来宾”**。
-4. 如果进行了任何更改，请单击 **“保存”**。
+4. 如果进行了任何更改，请选择“**保存**”。
 
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 组织级别的默认链接设置
@@ -133,9 +134,9 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 
 设置 SharePoint 组织级别的默认链接设置
 
-1. 导航到 SharePoint 管理中心的"共享"页面。
+1. 转到 SharePoint 管理中心中的 <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共享**</a>。
 2. 在 **“文件夹链接”** 下，选择要使用的默认共享链接。
-3. 如果进行了任何更改，请单击 **“保存”**。
+3. 如果进行了任何更改，请选择“**保存**”。
 
 ## <a name="create-a-team"></a>创建团队
 
@@ -158,11 +159,11 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 ![SharePoint 网站外部共享设置的屏幕截图。](../media/sharepoint-site-external-sharing-settings.png)
 
 设置网站级别共享设置
-1. 在 SharePoint 管理中心的左侧导航栏中，展开 **“网站”**，然后单击 **“活动网站”**。
+1. 在 SharePoint 管理中心的左侧导航栏中，展开 **“网站”**，然后选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**“活动网站”**</a>。
 2. 选择刚才创建的团队站点。
-3. 单击 ... 然后选择 **“共享”**。
+3. 选择 ... 然后选择 **“共享”**。
 4. 确保将共享设置为 **“任何人”** 或 **“新来宾和现有来宾”**。
-5. 如果进行了任何更改，请单击 **“保存”**。
+5. 如果进行了任何更改，请选择“**保存**”。
 
 ## <a name="invite-users"></a>邀请用户
 

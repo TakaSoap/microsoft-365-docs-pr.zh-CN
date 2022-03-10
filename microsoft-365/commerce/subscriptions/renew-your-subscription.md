@@ -2,8 +2,8 @@
 title: 续订 Microsoft 365 商业版
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150
 description: 了解如何通过关闭或打开定期计费来续订大多数 Microsoft 365 商业版订阅。
 ms.date: 05/04/2021
-ms.openlocfilehash: 2fe78acab6423bbedefe2cad9dc7ae7ae3efe449
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b50e92bf71d4c172b55aa69db33fc3572d660684
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370076"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330155"
 ---
 # <a name="renew-microsoft-365-for-business"></a>续订 Microsoft 365 商业版
 
@@ -60,7 +60,7 @@ ms.locfileid: "61370076"
 
 2. 选择想要为其管理定期计费的订阅。
 3. 在“订阅详细信息”页面的“**订阅和付款设置**”下，选择“**编辑定期计费**”。
-4. 在“**编辑定期计费设置**”窗格中，选择“**开**”，“**开，但续订一次**”或“**关**”。
+4. 在“**编辑定期计费**”窗格中，选择“**开**”，“**开，但续订一次**”或“**关**”。
 5. 选择“**保存**”。
 
     > [!NOTE]

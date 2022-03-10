@@ -9,14 +9,15 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.service: ''
 ms.collection: enabler-strategic
+ms.custom: admindeeplinkSPO
 search.appverid: ''
 ms.localizationpriority: high
-ms.openlocfilehash: 6f472754484d7bb41485b94d65689009d2c615fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7a23b8da32f5ae9132a41661a1141f34df48a6b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189209"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318195"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>使用基于 SKOS 的格式导入术语集
 
@@ -24,7 +25,7 @@ ms.locfileid: "60189209"
 
 建议将导入文件保持在 20,000 个术语以下。 较大的文件可能会增加验证和导入所需的时间。
 
-1. 在 SharePoint 管理中心中，展开“**内容服务**”，然后单击“**术语库**”。
+1. 在 SharePoint 管理中心中，展开“**内容服务**”，然后选择“<a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">**术语库**</a>”。
 
 2. 选择要导入术语集的术语组。
 

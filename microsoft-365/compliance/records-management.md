@@ -17,15 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom:
+- admindeeplinkCOMPLIANCE
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: d5d4752e76a2a39b1c5fafab964d13ce11873e9b
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: c7546216a935960e5c4b66b37bb3308d0a69e89e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083059"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324811"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
@@ -51,7 +52,7 @@ ms.locfileid: "62083059"
 
 借助这些功能，你可以将组织的保留计划和要求合并到用以管理保留、记录声明和处置的记录管理解决方案中，从而支持完整的内容生命周期。
 
-除了联机文档之外，你可能会发现从记录管理网络研讨会下载[常见问题幻灯片组](https://aka.ms/MIPC/Blog-RecordsManagementWebinar)非常有用。 不再提供实际网络研讨会的录制内容。
+除了联机文档之外，你可能会发现从记录管理网络研讨会下载[常见问题幻灯片组](https://aka.ms/MIPC/Blog-RecordsManagementWebinar)非常有用。不再提供实际网络研讨会的录制内容。
 
 ## <a name="records"></a>记录
 
@@ -79,21 +80,21 @@ ms.locfileid: "62083059"
 
 |操作| 保留标签 |记录 - 已锁定| 记录 - 已解锁| 合规性记录 |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|编辑内容|允许 | **阻止** | 允许 | **阻止**|
+|编辑内容|允许 | **阻止** | Allowed | **阻止**|
 |编辑属性（包括重命名）|Allowed |允许 <sup>1</sup> | Allowed | **阻止**|
 |删除|允许 <sup>2</sup> |**阻止** |**阻止**| **阻止**|
-|复制|允许 |允许 | Allowed| Allowed|
+|复制|Allowed |Allowed | 允许| Allowed|
 |在容器 <sup>3</sup> 中移动|Allowed |允许 | Allowed| Allowed|
 |跨容器 <sup>3</sup> 移动|允许 |如果从未解锁，则允许 | **阻止** | **阻止**|
-|打开/读取|Allowed |Allowed | Allowed| Allowed|
+|打开/读取|允许 |允许 | Allowed| Allowed|
 |更改标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
 |删除标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
 
 页脚：
 
-<sup>1</sup> 默认为允许，但可以由大于 0 字节的文件的租户设置阻止：转到 Microsoft 365 合规中心中的 **记录管理** 节点 >“**记录管理设置**” > “**保留标签**” > “**允许编辑记录属性**”，然后禁用设置“**允许用户编辑记录属性**”。
+<sup>1</sup> 默认情况下允许编辑锁定记录的属性，但可通过 [Microsoft 365 合规中心](https://compliance.microsoft.com/) > **记录管理** > **记录管理设置** > **保留标签** >  **允许编辑记录属性** 中的一项租户设置阻止编辑。
 
-<sup>2</sup> 对于 SharePoint 和 OneDrive，可在 Microsoft 365 合规中心 >“**记录管理**” > “**记录管理设置**” > “**保留标签**” > “**删除项**”中作为租户设置被阻止。
+<sup>2</sup>在 SharePoint 和 OneDrive 中删除已标记的项目可以作为 [Microsoft 365 合规中心](https://compliance.microsoft.com/) > **记录管理** > **记录管理设置** > **保留标签** > **删除项** 中的租户设置阻止。
 
 当你将保留标签应用于具有文档附件的列表项时，该文档不会继承保留设置，因此可以从列表项中删除。 相比之下，如果该列表项被声明为带有保留标签的记录，则文档附件将继承保留设置，并且无法删除。
 

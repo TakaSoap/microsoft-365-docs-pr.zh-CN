@@ -12,17 +12,17 @@ ms.collection:
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
-ms.custom: ''
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何在与组织外人员共享文件时限制意外公开信息。
-ms.openlocfilehash: 4c60f77f7f7807395a503ce083795e76398d99b4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c1bf6424e2be70118dd2d85671a857a8a33ef2f9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196245"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329053"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>在与组织外人员共享文件时限制意外公开信息
 
@@ -43,7 +43,8 @@ ms.locfileid: "60196245"
 根据你的需要，可以针对特定网站或整个组织禁用“*任何人*”链接。
 
 关闭组织的 *“任何人”* 链接
-1. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
+
+1. 在 SharePoint 管理中心的左侧导航栏中，选择“<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共享**</a>”。
 2. 将 SharePoint 外部共享设置设为 **“新来宾和现有来宾”**。
 
    ![组织级 SharePoint 网站外部共享设置的屏幕截图。](../media/sharepoint-organization-external-sharing-controls-new-users.png)
@@ -51,14 +52,15 @@ ms.locfileid: "60196245"
 3. 单击 **“保存”**。
 
 关闭站点的 *“任何人”* 链接
-1. 在 SharePoint 管理中心的左侧导航栏中，展开 **“站点”**，然后单击 **“活动站点”**。
+
+1. 在 SharePoint 管理中心的左侧导航栏中，展开“**网站**”，然后选择“<a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**活动网站**</a>”。
 2. 选择要配置的网站。
-3. 在功能区中，单击 **“共享”**。
+3. 在功能区中，选择“**共享**”。
 4. 确保将共享设置为 **“新来宾和现有来宾”**。
 
    ![网站级 SharePoint 网站外部共享设置的屏幕截图。](../media/sharepoint-site-external-sharing-settings.png)
 
-5. 如果进行了任何更改，请单击 **“保存”**。
+5. 如果进行了任何更改，请选择“**保存**”。
 
 ## <a name="domain-filtering"></a>域筛选
 
@@ -71,7 +73,8 @@ ms.locfileid: "60196245"
 允许列表和拒绝列表仅影响与来宾的共享。 如果尚未禁用用户，用户仍可使用“*任何人*”链接与被禁止域中的人员共享。 若要使用域允许和拒绝列表获得最佳结果，请考虑按上面所述禁用“*任何人*”链接。
 
 设置域允许或拒绝列表
-1. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
+
+1. 在 SharePoint 管理中心的左侧导航栏中，选择“<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共享**</a>”
 2. 在 **“用于外部共享的高级设置”** 下，选中 **“限制外部共享(按域)”** 复选框。
 3. 单击 **“添加域”**。
 4. 选择是否要阻止域，键入域，然后单击 **“确定”**。
@@ -87,7 +90,8 @@ ms.locfileid: "60196245"
 可以将于组织外人员共享的文件、文件见和站点限定至指定安全组的成员。 如果希望启用外部共享，但有批准工作流或请求流程，则此功能非常有用。 或者，可能需要用户先完成培训课程，然后再将其添加到安全组，并允许外部共享。
 
 限制与安全组成员进行外部共享
-1. 在 “[SharePoint 管理中心](https://admin.microsoft.com/sharepoint)”左侧导航栏的“**策略**”下，单击 “**共享**”。
+
+1. 在 SharePoint 管理中心的左侧导航栏的“**策略**”下，单击 “<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共享**</a>”。
 2. 在“**外部共享**”下，展开“**更多外部共享设置**”。
 
 3. 选择“**仅允许特定安全组中的用户外部共享**”，然后选择“**管理安全组**”。

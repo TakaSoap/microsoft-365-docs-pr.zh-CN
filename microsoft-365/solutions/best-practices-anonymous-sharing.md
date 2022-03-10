@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: 在本文中，你将了解与身份未经验证的用户共享文件和文件夹的最佳做法。
-ms.openlocfilehash: 40bf61820f28656e6f038e76f066e9b122b30177
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ffe1219c468deef8c78e51e410e862ec52532483
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149630"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323831"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>有关与身份未经验证用户共享文件和文件夹的最佳做法
 
@@ -42,21 +43,19 @@ ms.locfileid: "60149630"
 
 设置组织中“任何人”链接到期日期
 
-1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在左侧导航中，展开“**策略**”，然后单击“**共享**”。
-3. 在 **“任何人链接的选择到期和权限”** 下，选中 **“这些链接必须在这些天数内过期”** 复选框。</br>
+1. 在 SharePoint 管理中心中，展开“**策略**”，然后选择“<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共享**</a>”。
+1. 在 **“任何人链接的选择到期和权限”** 下，选中 **“这些链接必须在这些天数内过期”** 复选框。</br>
    ![SharePoint 组织级别的“任何人”链接到期设置的屏幕截图。](../media/sharepoint-organization-anyone-link-expiration.png)
-4. 在输入框中键入天数，然后单击“**保存**”。
+1. 在输入框中键入天数，然后单击“**保存**”。
 
 设置特定站点“任何人”链接的到期日期
 
-1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在左侧导航中，展开“**站点**”，然后单击“**活动站点**”。
-3. 选择要更改的站点，然后单击“**共享**”。
-4. 在“**“任何人”链接的高级设置**” 的“**”任何人“链接到期**”下，取消选中“**与组织级设置相同**”复选框。</br>
+1. 在 SharePoint 管理中心中，展开“**网站**”，然后选择“<a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**活动网站**</a>”。
+1. 选择要更改的站点，然后选择“**共享**”。
+1. 在“**“任何人”链接的高级设置**” 的“**”任何人“链接到期**”下，取消选中“**与组织级设置相同**”复选框。</br>
    ![SharePoint 网站级别的“任何人”链接到期设置的屏幕截图。](../media/sharepoint-organization-anyone-link-expiration-site.png)
-5. 选择“**这些链接必须在该天数内过期**”选项，然后再框中输入天数。
-6. 单击“**保存**”。
+1. 选择“**这些链接必须在该天数内过期**”选项，然后再框中输入天数。
+1. 选择“**保存**”。
 
 请注意，*任何人* 链接到期后，可以使用新的“*任何人*”链接重新共享该文件或文件夹。
 
@@ -70,9 +69,8 @@ ms.locfileid: "60149630"
 
 设置组织中“任何人”链接权限
 
-1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在左侧导航中，单击“**共享**”。
-3. 在“**‘任何人’链接的高级设置**”下，选择要使用的文件和文件夹权限。</br>
+1. 打开 SharePoint 管理中心，然后选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共享**</a>。
+1. 在“**‘任何人’链接的高级设置**”下，选择要使用的文件和文件夹权限。</br>
    ![SharePoint 组织级别的“任何人”链接权限设置的屏幕截图。](../media/sharepoint-organization-anyone-link-permissions.png)
 
 “*任何人*”链接设置为“**查看**”后，用户仍可与来宾共享文件和文件夹，并可使用 *特定人员* 链接为其提供编辑权限。 这些链接要求组织外人员作为来宾进行身份验证，并且你可以跟踪和审核使用这些链接共享的文件和文件夹上的来宾活动。
@@ -84,23 +82,22 @@ ms.locfileid: "60149630"
 你可以通过将默认链接设置更改为仅适用于组织内部人员的链接来降低此风险。 确实需要未经身份验证共享的用户，则必须明确选择该选项。
 
 为组织设置默认文件和文件夹共享链接
-1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在左侧导航中，单击“**共享**”。
-3. 在“**文件和文件夹链接**”下，选中“**仅限组织中的人员**”。
+1. 打开 SharePoint 管理中心，然后选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共享**</a>。
+1. 在“**文件和文件夹链接**”下，选中“**仅限组织中的人员**”。
 
    ![SharePoint 默认链接类型设置的屏幕截图。](../media/sharepoint-default-sharing-link-company-link.png)
 
-4. 单击“**保存**”
+1. 选择“**保存**”
 
 为特定站点设置默认文件和文件夹共享链接
-1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在左侧导航中，展开“**站点**”，然后单击“**活动站点**”。
-3. 选择要更改的站点，然后单击“**共享**”。
-4. 在“**默认共享链接类型**”下，清除“**与组织级别设置相同**”复选框。
+
+1. 在 SharePoint 管理中心中，展开“**网站**”，然后选择“<a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**活动网站**</a>”。
+1. 选择要更改的站点，然后选择“**共享**”。
+1. 在“**默认共享链接类型**”下，清除“**与组织级别设置相同**”复选框。
 
    ![SharePoint 网站级默认链接类型设置的屏幕快照。](../media/sharepoint-organization-anyone-link-permissions-site.png)
 
-5. 选择“**仅限组织中的人员**”选项，然后单击“**保存**”。
+1. 选择“**仅限组织中的人员**”选项，然后选择“**保存**”。
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>阻止未经身份验证共享敏感内容
 

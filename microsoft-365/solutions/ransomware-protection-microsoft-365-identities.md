@@ -1,9 +1,9 @@
 ---
 title: 第 3 步。 保护身份
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
 description: 使用安全登录和条件访问来保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: 57fad156a4e7b97d3029c224059041d692224ed2
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 548e0649d7180ef39f693049210a91c1e0dce312
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887394"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320223"
 ---
 # <a name="step-3-protect-identities"></a>第 3 步。 保护身份
 
@@ -53,7 +53,7 @@ ms.locfileid: "62887394"
 - 实施 [最小特权](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) 原则，并按 [提高登录安全性](#increase-sign-in-security) 中所述对仍使用密码登录的用户帐户使用密码保护。 
 - 避免使用域范围的管理员级别服务帐户。 
 - 限制本地管理权限，以限制远程访问特洛伊木马程序 (RAT) 和其他不需要的应用程序。
-- 在允许访问管理门户之前，使用 Azure AD 条件访问显式验证用户和工作站的信任。 请参阅 Microsoft Azure 门户的[此示例](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)。
+- 在允许访问管理门户之前，使用 Azure AD 条件访问显式验证用户和工作站的信任。有关 Azure 门户，请参阅 [此示例](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)。
 - 启用本地管理员密码管理。
 - 确定高特权帐户登录和公开凭据的地方。 工作站上不应存在高特权帐户。
 - 禁用密码和凭据的本地存储。

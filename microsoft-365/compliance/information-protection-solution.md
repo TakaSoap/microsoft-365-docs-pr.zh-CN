@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 为组织部署 Microsoft 信息保护 (MIP) 的规定性指南。
-ms.openlocfilehash: 92167530771992ee04713d69d1da75af7e468f24
-ms.sourcegitcommit: 1627bbbdf2762845274edb6fbfad0b4a5d2f1deb
+ms.openlocfilehash: d70f7356909b0aa0ec663a641e1bc76926db72f0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61581149"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328173"
 ---
 # <a name="deploy-a-microsoft-information-protection-solution"></a>部署 Microsoft 信息保护解决方案
 
@@ -69,7 +69,7 @@ MIP 功能包含在 Microsoft 365 合规中心中。 授权要求甚至可能在
 |步骤|说明|更多信息|
 |:---|-----------|:---------------|
 | 1|定义将保护组织数据的[敏感度标签](sensitivity-labels.md)和策略。 <br /><br />除了标识内容的敏感度外，这些标签还可以应用保护操作，如页眉、页脚、水印和加密。 | [开始使用敏感度标签](get-started-with-sensitivity-labels.md) <br /><br /> [创建和配置敏感度标签及其策略](create-sensitivity-labels.md) <br /><br /> [通过敏感度标签应用加密，从而限制对内容的访问](encryption-sensitivity-labels.md) |
-| 2|为 Microsoft 365 应用和服务标记和保护项目。 <br /><br />Microsoft 365 Word、Excel、PowerPoint、Outlook 以及包括 SharePoint、OneDrive 网站和 Microsoft 365 组的容器支持敏感度标签。 结合使用标记方法，如手动标记、自动标记、默认标签和强制标记。| [管理 Office 应用中的敏感度标签](sensitivity-labels-office-apps.md) <br /><br /> [启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md) <br /><br /> [为使用敏感度标签加密的文件启用共同创作](sensitivity-labels-coauthoring.md) <br /><br /> [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /><br /> [将敏感度标签与 Microsoft Teams、Microsoft 365 组和 SharePoint 网站配合使用](sensitivity-labels-teams-groups-sites.md) <br /><br /> [在 Microsoft SharePoint Syntex 中向模型应用保留标签](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) <br /><br /> [如何在 Power BI 中应用敏感度标签](/power-bi/admin/service-security-sensitivity-label-overview) |
+| 2|为 Microsoft 365 应用和服务标记和保护项目。 <br /><br />Microsoft 365 Word、Excel、PowerPoint、Outlook 以及包括 SharePoint、OneDrive 网站和 Microsoft 365 组的容器支持敏感度标签。 结合使用标记方法，如手动标记、自动标记、默认标签和强制标记。| [管理 Office 应用中的敏感度标签](sensitivity-labels-office-apps.md) <br /><br /> [启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md) <br /><br /> [为使用敏感度标签加密的文件启用共同创作](sensitivity-labels-coauthoring.md) <br /><br /> [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /><br /> [将敏感度标签与 Microsoft Teams、Microsoft 365 组和 SharePoint 网站配合使用](sensitivity-labels-teams-groups-sites.md) <br /><br /> [使用敏感度标签设置 SharePoint 和 OneDrive 中网站和文档的默认共享链接](sensitivity-labels-default-sharing-link.md) <br /><br /> [在 Microsoft SharePoint Syntex 中向模型应用保留标签](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) <br /><br /> [如何在 Power BI 中应用敏感度标签](/power-bi/admin/service-security-sensitivity-label-overview) |
 |3|使用 [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) 和敏感度标签，发现、标记和保护驻留在云中数据存储中的敏感项目。| [发现、分类、标记和保护存储在云中的管控和敏感数据](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |4|通过使用敏感度标签部署 [Azure 信息保护统一标签扫描程序](/azure/information-protection/deploy-aip-scanner) ，发现、标记和保护驻留在本地数据存储中的敏感项目。| [配置和安装 Azure 信息保护统一标记扫描器](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |5|使用 [Azure Purview](/azure/purview/overview)将敏感度标签扩展到 Azure，来为 Azure Blob 存储、Azure 文件、Azure Data Lake Storage Gen1 和 Azure Data Lake Storage Gen12 发现和标记项目。 | [在 Azure Purview 中贴标签](/azure/purview/create-sensitivity-label)|

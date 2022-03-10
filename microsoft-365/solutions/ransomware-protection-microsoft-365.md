@@ -1,9 +1,9 @@
 ---
 title: 为 Microsoft 365 租户部署勒索软件保护
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件, 人为操作的勒索软件, 人为操作的勒索软件, HumOR, 勒索攻击, 勒索软件攻击, 加密, 加密病毒, 零信任
 description: 逐步保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: 634888ac603be17265733c4443a69495015296d7
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: c356a0e3fac83c77a7e1eb1eda6e169405f43863
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886032"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324405"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>为 Microsoft 365 租户部署勒索软件保护
 
@@ -145,7 +145,7 @@ SharePoint 和 OneDrive for Business 中的文件受到以下保护：
 - **使用最小特权访问**：使用即时和恰好足够的访问 (JIT/JEA)、基于风险的自适应策略和数据保护来限制用户访问权限。
 - **假设安全漏洞**：尽量减少波及范围半径和线段访问。 验证端到端加密，并使用分析获取可见性、促进威胁检测和加强防范。
 
-与信任受组织防火墙保护的所有内容的传统 Intranet 访问不同，零信任将每次登录和访问都视为源自不受控制的网络，无论网络受组织防火墙保护还是来自 Internet。 零信任需要保护网络、基础结构、标识、终结点、应用和数据。
+与信任组织防火墙内的所有内容的传统 Intranet 访问不同，零信任将每次登录和访问都视为源自不受控制的网络，无论其来自组织防火墙内还是来自 Internet。零信任需要保护网络、基础结构、标识、终结点、应用和数据。
 
 ## <a name="microsoft-365-capabilities-and-features"></a>Microsoft 365 特性和功能
 

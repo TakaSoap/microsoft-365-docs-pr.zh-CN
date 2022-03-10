@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: 了解可用于在 Microsoft 365 中创建安全来宾共享环境的选项，提供来宾访问以改进协作。
-ms.openlocfilehash: ae616bcaa78aa759ca5b1f1be4b1beaf8d709a00
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 97b9c3c26fce137ad4471bbf080d4b7340c8b622
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807604"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323789"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 
@@ -180,9 +181,9 @@ ms.locfileid: "62807604"
 
 限制来宾对 SharePoint 进行仅 Web 访问
 
-1. 在“[SharePoint 管理中心](https://admin.microsoft.com/sharepoint)”中，展开“**策略**”，然后单击“**访问控制**”。
-2. 单击“**未托管的设备**”。
-3. 选择“**允许仅限 web 的受限访问**”，然后单击“**保存**”。
+1. 在 SharePoint 管理中心中，展开“**策略**”，然后选择“<a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**访问控制**</a>”。
+2. 选择“**未托管的设备**”。
+3. 选择“**允许仅限 web 的受限访问**”，然后选择“**保存**”。
 
 注意，SharePoint 管理中心中的此设置在 Azure AD 中创建了支持条件访问策略。
 
