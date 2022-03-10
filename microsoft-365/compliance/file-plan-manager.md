@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划为保留标签提供了高级管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 464cbe5af7ea08755ec3d49949d4707448566b27
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 2e028bae676b949c662a86178bac5e8ccdc557bf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241403"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317705"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>使用文件计划创建和管理保留标签
 
@@ -117,9 +117,9 @@ ms.locfileid: "62241403"
 
 1. 在 **文件计划** 页中，选择"**+ 创建标签** > **保留标签**
 
-2. 按照配置过程的提示进行操作。
+2. 按照配置过程的提示进行操作。请注意你选择的名称，因为在保存标签后无法更改此名称。
     
-    
+    有关保留设置的详细信息，请参阅 [用于保留和删除内容的设置](retention-settings.md#settings-for-retaining-and-deleting-content)。
     
     若要使用保留标签来声明记录，请选择 **“将项目标记为记录”**，或者 **“将项目标记为合规性记录”**。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
 

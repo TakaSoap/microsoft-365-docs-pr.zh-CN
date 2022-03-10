@@ -2,8 +2,8 @@
 title: 管理支付方式
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jamitche, jmueller
 audience: Admin
@@ -14,22 +14,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 - adminvideo
 - business_assist
 search.appverid: MET150
 description: 使用现有付款方式，或在 Microsoft 365 管理中心添加新的付款方式，购买 Microsoft 的业务产品或服务。
 ms.date: 04/02/2021
-ms.openlocfilehash: 7fde1149d97bb05863f4fd013f501b49203c33f6
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 1b36a11c2bdb34880f8f02b84788062dfb88c4b1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765524"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319751"
 ---
 # <a name="manage-payment-methods"></a>管理支付方式
 
@@ -91,7 +91,7 @@ ms.locfileid: "62765524"
     > 如果你有与计费对象信息相关联的订阅，则只能使用信用卡或借记卡支付。 如果“**付款方式**”页面上列出了银行帐户，则不能在下拉列表中选择它们。
 5. 若要添加新的付款方式，请选择“**添加付款方式**”。
 6. 在“**添加付款方式**”窗格中，输入帐户信息，然后选择“**保存**”。 你必须使用租户所在国家/地区的付款方式。
-7. 已在下拉列表中选择新的付款方式。 选择“**替换**”。
+7. 已在下拉列表中选择新的付款方式。选择“**替换**”。
 
 ## <a name="change-a-payment-method-for-a-single-subscription"></a>更改单个订阅的付款方式
 
@@ -128,7 +128,7 @@ ms.locfileid: "62765524"
     > 如果你有与计费对象信息相关联的订阅，则只能使用信用卡或借记卡支付。 如果“**付款方式**”页面上列出了银行帐户，则不能在下拉列表中选择它们。
 5. 若要添加新的付款方式，请选择“**添加付款方式**”。
 6. 选择要添加的付款方式类型，输入帐户信息，然后选择 **另**。
-7. 已在下拉列表中选择新的付款方式。 选择“**下一步**”。
+7. 已在下拉列表中选择新的付款方式。选择“**下一步**”。
 8. 选择“**删除**”。
 
 ## <a name="troubleshoot-payment-methods"></a>付款方式疑难解答
@@ -136,8 +136,8 @@ ms.locfileid: "62765524"
 | 问题 | 故障排除步骤 |
 |:----------|:-----|
 |**我收到错误消息，显示"浏览器当前设置为阻止 Cookie"。** |将浏览器设置为允许第三方 Cookie，然后重试。 |
-|**我的信用卡或借记卡被拒绝。** |如果通过信用卡或借记卡付款，并且信用卡被拒绝，则将收到一封电子邮件，指出 Microsoft 无法处理该付款。 仔细检查卡详细信息&mdash;卡号、到期日期、卡上的姓名以及地址，包括省/市/县和邮政编码&mdash;在卡上和语句中是否完全相同。 您可以使用订阅详细信息页面 **“结算”** 部分中的 **“结算余额”** 链接来更新您的卡信息并立即提交付款。 如需了解更多信息，请参阅[如果我有未清偿的余额，我应该怎么做？](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  如果仍然看到“拒绝”消息，请联系你的银行。 有可能你的卡片未处于活动状态。 如果你最近在邮件中收到该卡，到期日期已更新，请确保其已激活。 你的银行还可告知你卡片是否未获得批准进行联机、国际或定期交易。 |
-|**我想更新卡号或银行帐户帐号。** |不能更改现有付款方式的卡号或帐号。 如果你的卡号或帐号已更改， [请将其替换为不同的付款方式](#replace-a-payment-method)，该付款方式会将所有活动订阅从付款方式移动到新付款方式， [删除旧的付款方式](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached)。 |
+|**我的信用卡或借记卡被拒绝。** |如果通过信用卡或借记卡付款，并且信用卡被拒绝，则将收到一封电子邮件，指出 Microsoft 无法处理该付款。 仔细检查卡详细信息&mdash;卡号、到期日期、卡上的姓名以及地址，包括省/市/县和邮政编码&mdash;在卡上和语句中是否完全相同。 您可以使用订阅详细信息页面 **“结算”** 部分中的 **“结算余额”** 链接来更新您的卡信息并立即提交付款。 如需了解更多信息，请参阅[如果我有未清偿的余额，我应该怎么做？](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  如果仍然看到"拒绝"消息，请与银行联系。这可能是因为你的卡尚未激活。如果最近在邮件中收到的卡片过期日期已更新，请确保该卡已激活。银行还可以告诉你你的卡是否未获得在线、国际或定期交易批准。 |
+|**我想更新卡号或银行帐户帐号。** |不能更改现有付款方式上的卡或帐号。如果你的卡或帐号已更改， [将其替换为其他付款方式](#replace-a-payment-method)，这会将所有活动订阅从该付款方式移动到新的付款方式，然后 [删除旧的付款方式](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached)。 |
 |**我的帐户中仅有一张信用卡或一个银行帐户，我想删除它。** |如果只有一种付款方式，则必须 [，将其替换为新的付款方式](#replace-a-payment-method) 才能将其删除。 |
 |**无法添加信用卡或银行帐户。**  |必须使用与租户相同的国家/地区发布的付款方式。 如果在输入信用卡或银行帐户信息时遇到问题。请[联系支持人员](../../admin/get-help-support.md)。 |
 

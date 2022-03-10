@@ -15,14 +15,15 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 recommendations: false
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
-ms.openlocfilehash: 293ac9a1a28757dacba39d30e619ac41be786e04
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 2ca2e6320ddd119c4dcb20db2f816c9e9a4453ae
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785878"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324391"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 
@@ -160,11 +161,11 @@ ms.locfileid: "60785878"
 标签发布后，必须将其应用于团队，以使来宾共享和托管设备设置生效。 此操作在 SharePoint 管理中心中进行。 注意，标签在发布后可能需要一些时间才可用。
 
 应用敏感度标签
-1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在“**站点**”下，单击“**活动站点**”。
-3. 单击与团队关联的网站。
-4. 在“**策略**”选项卡的“**敏感度**”下，单击“**编辑**”。
-5. 选择创建的标签，然后单击“**保存**”。
+
+1. 打开 SharePoint 管理中心，在“**网站**”下，选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">“**活动网站**”</a>。
+1. 选择与团队关联的网站。
+1. 在"**策略**"选项卡上的"**敏感度**"下，选择"**编辑**"。
+1. 选择创建的标签，然后单击“**保存**”。
 
 ## <a name="sharepoint-settings"></a>SharePoint 设置
 
@@ -186,13 +187,13 @@ ms.locfileid: "60785878"
 我们还将更新默认共享链接类型，以减少将文件和文件夹意外共享给比预期更多受众的风险。
 
 更新网站设置
-1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在“**站点**”下，单击“**活动站点**”。
-3. 单击与团队关联的网站。
-4. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
-5. 如果在创建敏感标签时允许来宾共享，请确保选定“**新来宾和现有来宾**”。 如果创建标签时不允许共享，选择“**仅限组织中的人员**”。
-6. 在“默认共享链接类型”下，清除“**与组织级别设置相同**”复选框，然后选择“**具有现有访问权限的人员**”。
-7. 单击“**保存**”。
+
+1. 打开 SharePoint 管理中心，在 **网站** 下，选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**活动网站**</a>
+1. 选择与团队关联的网站。
+1. 在"**策略**"选项卡上的"**外部共享**"下，选择"**编辑**"。
+1. 如果在创建敏感标签时允许来宾共享，请确保选定“**新来宾和现有来宾**”。 如果创建标签时不允许共享，选择“**仅限组织中的人员**”。
+1. 在“默认共享链接类型”下，清除“**与组织级别设置相同**”复选框，然后选择“**具有现有访问权限的人员**”。
+1. 选择“**保存**”。
 
 #### <a name="private-channels"></a>专用频道
 

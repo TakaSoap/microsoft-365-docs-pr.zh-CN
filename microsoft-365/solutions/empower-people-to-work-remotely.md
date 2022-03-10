@@ -1,9 +1,9 @@
 ---
 title: 设置使用 Microsoft 365 实现混合工作的基础结构
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在家办公，在家办公，混合，远程工作者，混合办公，远程员工，混合连接，远程访问，远程办公，远程办公，远程办公，移动办公，远程工作，随时随地开展工作，灵活的工作场所
 description: 逐步设置基础结构层，以便远程工作者能够安全访问本地和 Microsoft 365 资源。
-ms.openlocfilehash: 0370d30584021ab8560a24c7e54e3a7c7aadeb1f
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 87d72307f3e6a2b254bdbde21d07fc146806b89d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886250"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318573"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>设置使用 Microsoft 365 实现混合工作的基础结构
 
@@ -112,7 +112,7 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 
 - 新式设备（例如 Surface laptop 和 Windows 11 或 10），具备通过网页直接访问 Microsoft 365 云应用和服务的功能、安全性和性能。
 
-- 包括旧式家用笔记本电脑或台式机在内的任何设备，这些设备可通过 [Windows 365 云电脑](empower-people-to-work-remotely-remote-access.md#deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices) 间接访问 Microsoft 365 云应用和服务。 该选项能提高性能、增强安全性并简化 IT 管理。
+- 包括旧的家用笔记本电脑或台式机在内的任何设备，可通过 [Windows 365 云电脑](empower-people-to-work-remotely-remote-access.md#deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices)间接访问 Microsoft 365 云应用和服务。此选项提供高性能、强安全性和简化的 IT 管理。
 
 ## <a name="next-steps"></a>后续步骤
 

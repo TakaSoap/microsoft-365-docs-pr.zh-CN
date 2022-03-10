@@ -2,8 +2,8 @@
 title: 支付订阅费用
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,19 +16,19 @@ ms.collection:
 search.appverid: MET150
 description: 使用信用卡、借记卡或银行账户支付 Microsoft 365 商业版订阅费用，或在某些情况下，使用发票支付。
 ms.custom:
+- commerce_billing
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-- commerce_billing
 - business_assist
 - AdminTemplateSet
 ms.date: 10/28/2021
-ms.openlocfilehash: 839c7e94a2a89b20eef0779f44d864d69ed3a746
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fb6948c59505eaa3316dab73708658f7b31c43e7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766784"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326295"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>如何支付订阅费用
 
@@ -69,7 +69,7 @@ ms.locfileid: "62766784"
 >
 > 如果想要的话，可通过账户间电子转账来付款。 代理和账户编号位于发表的底部。 必须在“转账标识”字段中输入账单编号。
 
-如果通过发票支付订阅，当账单可以查看时，则会收到一封电子邮件。 这封邮件不包含账单副本。 但是，你可以选择[将组织发票作为电子邮件附件接收](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)。 账单中包含了关于付款选择以及付款地点的详细信息。 如果购买订阅时输入了采购订单 (PO) 编号，则该编号会显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
+如果按发票支付订阅费用，你将在计费账单可供查看时收到一封电子邮件。此电子邮件不包含帐单副本。但是你可以选择 [以电子邮件附件的形式接收组织的发票](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)。计费帐单包括支付选项以及支付途径的详细信息。如果在购买订阅时输入采购订单 （PO） 编号，则帐单上会显示该编号。若要了解有关访问帐单的信息，请参阅 [查看帐单或发票](view-your-bill-or-invoice.md)。
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>如果我有未结余额，该怎么办？
 
@@ -86,7 +86,7 @@ ms.locfileid: "62766784"
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>支票或 EFT 付款应发送到何处？
 
-[检查发票](view-your-bill-or-invoice.md) 以了解你所在国家或地区的付款说明。 如果不确定还款金额，可在“<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单和付款</a>”页面的“**发票**” 选项卡上在线查看帐单和计费历史记录。
+[检查发票](view-your-bill-or-invoice.md)以了解你所在国家或地区的付款说明。如果不确定所欠金额，可在“<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单和付款</a>”页的“**发票**”选项卡上联机查看帐单和帐单历史记录。
 
 > [!NOTE]
 > - 通过支票付款仅可用于几个国家或地区。

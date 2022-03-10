@@ -1,9 +1,9 @@
 ---
 title: 步骤 4. 保护设备
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 勒索软件、人为操作的勒索软件、人为操作的勒索软件、HumOR、勒索攻击、勒索软件攻击、加密、加密病毒、零信任
 description: 使用 Windows Intune 作为 MDA 和 MAM 服务提供商，Windows 10 安全功能将保护你的 Microsoft 365 资源免受勒索软件攻击。
-ms.openlocfilehash: 918dc75d11157bf6358e68a13d04c9a84c0a3837
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 0d7b9a5e125c3f0478948340dce5677a3ae65395
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887588"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318069"
 ---
 # <a name="step-4-protect-devices"></a>步骤 4. 保护设备
 
@@ -58,7 +58,7 @@ ms.locfileid: "62887588"
 - 启用 [Microsoft Defender 防病毒](/mem/intune/user-help/turn-on-defender-windows)。
 - [阻止从 Office 宏进行的 Win32 API 调用](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules#block-win32-api-calls-from-office-macros)。
 - 使用[此过程](https://www.microsoft.com/microsoft-365/blog/2010/02/16/migrating-excel-4-macros-to-vba/)将所有需要 Excel 4.0 宏的旧工作簿迁移到更新的 VBA 宏格式。
-- [禁用未签名的宏](https://support.microsoft.com/topic/enable-or-disable-macros-in-office-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6)。 确保对具有业务需求的所有内部宏都进行签名，并利用[受信任的位置](/deployoffice/security/designate-trusted-locations-for-files-in-office)来确保未知宏不会在你的环境中运行。
+- [禁用未签名宏](https://support.microsoft.com/topic/enable-or-disable-macros-in-office-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6)。确保所有具有业务需求的内部宏都已签名，并利用 [受信任的位置](/deployoffice/security/designate-trusted-locations-for-files-in-office) 以确保未知宏不会在你的环境中运行。
 - 通过确保运行时宏扫描已启用[反恶意软件扫描接口](https://www.microsoft.com/security/blog/2021/03/03/xlm-amsi-new-runtime-defense-against-excel-4-0-macro-malware/) (AMSI) 来停止恶意 XLM 或 VBA 宏。 如果 **宏运行时扫描作用域** 的组策略设置设为 **为所有文件启用** 或 **为低信任文件启用**，则此功能（默认启用）处于启用状态。 获取最新的组策略模板文件。
 
 ## <a name="impact-on-users-and-change-management"></a>对用户和更改管理的影响

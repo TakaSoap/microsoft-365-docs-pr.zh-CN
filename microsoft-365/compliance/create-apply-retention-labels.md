@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍了如何发布保留标签，以便能够在应用中应用它们，从而保留所需内容，并删除不需要内容。
-ms.openlocfilehash: 8a190020ce79431471b446c53b584c033c44e13a
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 17a49e2cdeffde5ed3dff91c3dac64e1ddf333ed
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354680"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319429"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a> 发布保留标签并将其应用到应用 
 
@@ -64,7 +64,7 @@ ms.locfileid: "62354680"
     - 如果使用的是信息治理，则导航到：
         - “**解决方案**” > “**信息治理**” > “**标签策略**”选项卡 >“**发布标签**”
     
-    无法立即在导航窗格中看到解决方案？ 首先选择“**全部显示**”。 
+    没有立即在导航窗格中看到解决方案？首先选择 **显示所有**。 
 
 2. 按照提示创建保留标签策略。 请注意为策略选择名称，因为在保存策略后无法更改此名称。
 
@@ -84,21 +84,29 @@ ms.locfileid: "62354680"
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>当保留标签可应用时
 
-如果你将保留标签发布到 SharePoint 或 OneDrive，这些标签通常会在 1 天内出现，以供最终用户选择。 不过，最长可能需要 7 天才能显示。 
+如果你将保留标签发布到 SharePoint 或 OneDrive，这些标签通常会在 1 天内出现，以供最终用户选择。不过，最长可能需要 7 天才能显示。 
 
 如果你将保留标签发布到 Exchange，这些保留标签最长可能需要 7 天才能向最终用户显示，并且邮箱至少必须包含 10MB 数据。
 
 ![已发布标签何时生效的关系图。](../media/retention-labels-published-timings.png)
 
-如果 7 天后未显示标签，请从合规中心的“**标签策略**”页面中检查标签策略的“**状态**”。 如果看到“**关闭(错误)**”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行PowerShell 命令 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) ，重新尝试策略分发：
+如果 7 天后未显示标签，请从合规中心的“**标签策略**”页面中检查标签策略的“**状态**”。 如果看到状态中包含 **（错误）**，并且在位置的详细信息中看到一条消息，指出部署策略所需的时间比预期长或请求尝试重新部署策略，请尝试运行 [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) 或 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，以重新尝试策略分发：
 
-1. [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
-2. 运行以下命令：
+2. 运行下列命令之一：
     
-    ``` PowerShell
-    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-   ```
+    - 对于策略位置 **Teams 专用频道消息**、**Yammer 用户消息** 和 **Yammer 社区消息**：
+    
+        ```PowerShell
+        Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
+    
+    - 对于所有其他策略位置，例如 **Exchange 电子邮件**、**SharePoint 网站**、**Teams 频道消息** 等：
+    
+        ```PowerShell
+        Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>如何检查发布到 Exchange 的保留标签的状态
 

@@ -12,17 +12,19 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 search.appverid:
 - MOE150
 - MET150
 description: 如何通过以下方法使用保留标签来管理 SharePoint 中的文档的生命周期：使用元数据对内容进行分类、自动应用标签，以及使用基于事件的保留来开始保留期。
-ms.openlocfilehash: 586f9074628ed3c4c272715378b1ba413ebdd3ec
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 35c43a96e07fe52d9e5e0cc0a72195353b6f5da6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753663"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327163"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>使用保留标签管理存储在 SharePoint 中的文档的生命周期
 
@@ -148,7 +150,7 @@ ms.locfileid: "60753663"
 
 当 SharePoint 为内容创建索引时，它将自动为每个网站栏生成已爬网属性。 对于此方案，我们对 **文档类型** 和 **状态** 属性感兴趣。 我们需要库中的文档属于正确的内容类型，并填写网站栏，以便搜索并创建已爬网属性。
 
-在 SharePoint 管理中心，打开“搜索”配置，然后选择“**管理搜索架构**”以查看并配置已爬网属性。
+在 <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint 管理中心</a>中，打开“搜索配置”，然后选择“**管理搜索架构**”查看和配置已爬网属性。
 
 ![搜索架构中已爬网属性。](../media/SPRetention8.png)
 
@@ -179,7 +181,7 @@ ms.locfileid: "60753663"
 
 KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性。 在典型搜索方案中，我们将创建托管属性，并将其映射到所需的已爬网属性。 但是，对于自动应用保留标签，只能指定预定义的托管属性，而不能指定自定义托管属性。 已在系统中为字符串 *RefinableString00* 到 *RefinableString199* 创建一组预定义的托管属性。 有关完整列表，请参阅[默认未使用托管属性](/sharepoint/manage-search-schema#default-unused-managed-properties)。 这些默认托管属性通常用于定义搜索精简程序。
 
-为了使 KQL 查询自动将正确的保留标签应用于产品文档内容，我们将已爬网属性 **ows\_Doc\_x0020\_Type* 和 *ows\_\_Status** 映射到两个可精简的托管属性。 在此方案的测试环境中，未使用 **RefinableString00** 和 **RefinableString01**。 通过在 SharePoint 管理中心的“**管理搜索架构**”中查看“**托管属性**”，可以确定这一点。
+为了使 KQL 查询自动将正确的保留标签应用于产品文档内容，我们将已爬网属性 **ows\_Doc\_x0020\_Type* 和 *ows\_\_Status** 映射到两个可精简的托管属性。 在此方案的测试环境中，未使用 **RefinableString00** 和 **RefinableString01**。 通过查看 <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint 管理中心</a>中 **管理搜索架构** 中的 **托管属性**，可以确定这一点。
 
 [ ![搜索架构中托管属性。](../media/SPRetention12.png) ](../media/SPRetention12.png#lightbox)
 
@@ -191,7 +193,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 2. 在结果列表中，选择 **RefinableString00** 链接，然后向下滚动到“**到已爬网属性的映射**”部分。
 
-3. 选择“**添加映射**”，然后将 **_ows\_Doc\_x0020\_Type_*_ 键入至_“**已爬网属性选择**”窗口的“* 搜索已爬网属性名称**”框中。 选择“**查找**”。
+3. 选择“**添加映射**”，然后键入 **_ows\_Doc\_x0020\_Type_*至“* 搜索已爬网属性名称**”框，位于 **已爬网属性选择** 窗口。选择 **查找**。
 
 4. 在结果列表中，选择“**ows\_Doc\_x0020\_Type**”，然后选择“**确定**”。
 
@@ -317,7 +319,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 ### <a name="putting-it-all-together"></a>汇总
 
-现在，已创建并自动应用保留标签，并且已创建并配置流。 当产品列表中旋转小组件产品的“**投入生产**”栏中的值从“**_是_*”_更改为 _“*_否_*”_时，会触发该流程以创建事件。要在合规中心查看此事件，请转至_ “* 记录管理**” > “**事件**”。
+现在，将创建并自动应用保留标签，并将配置及创建流。当产品列表中旋转小组件"**投入生产**"列中的值从 **_"是"_*_ 更改为 _*_"否"_*_时，将触发流以创建事件。若要在合规中心查看此事件，请转到_* 记录管理** > **事件**。
 
 [![流程触发的事件显示在合规中心的“事件”页面上。](../media/SPRetention28.png)](../media/SPRetention28.png#lightbox)
 

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: 8be6fc228a623f3a1f76efdf56354ba30beb9650
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 252d32e0f301bf332bf8143082ec86be2f1072ea
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767684"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320041"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
@@ -41,11 +41,11 @@ ms.locfileid: "62767684"
 
 启用此设置以支持 Office 桌面应用共同创作之前，了解此操作对保存到 Office 文件并读取的标签元数据的更改非常重要。
 
-标签元数据包含标识租户和应用敏感度标签的信息。 此设置所做的更改是 Word、Excel 和 PowerPoint 文件的元数据格式和位置。 你无需对加密文件或电子邮件采取任何操作；加密文件的元数据更改向后兼容，并且电子邮件没有任何变化。 但是，你需要注意加密文件的元数据更改，它们可以自动升级，但不向后兼容。
+标签元数据包含标识租户和应用敏感度标签的信息。 此设置所做的更改是 Word、Excel 和 PowerPoint 文件的元数据格式和位置。 无需对加密文件或电子邮件执行任何操作，因为加密文件的元数据更改是向后兼容的，并且电子邮件没有更改。 但是，你需要注意加密文件的元数据更改，它们可以自动升级，但不向后兼容。
 
 此更改将影响新标签的文件和已标记的文件。 使用支持共同创作设置的应用和服务时：
 - 对于新标记的文件，仅将新格式和位置用于标签元数据。
-- 对于已标记的文件，如果文件具有旧格式和位置的元数据，则下次打开和保存该文件时，该格式将复制到新格式和位置。
+- 对于已标记的文件，如果文件具有旧格式和位置的元数据，则下次打开和保存文件时，该信息将复制到新格式和位置。
 
 可以从以下资源中阅读有关此元数据更改更多内容：
 
@@ -81,8 +81,8 @@ ms.locfileid: "62767684"
 - 适用于企业的 Microsoft 365 应用：
     - **Windows**：当前频道或每月企业频道中的最低版本 2107
     - **macOS：** 最低版本 16.51
-    - **iOS**：尚不支持
-    - **Android**：尚不支持
+    - **iOS**： [选择使用最低版本 2.58 加入](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) ，现在处于预览状态
+    - **Android**：[选择使用最低版本 16.0.14931 加入](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)，现在处于预览状态
 
 - 租户中所有应用、服务和操作工具必须支持用于标记元数据 [的新](#metadata-changes-for-sensitivity-labels)。 如果你使用以下任一方法，请检查所需的最低版本：
     
@@ -107,6 +107,12 @@ ms.locfileid: "62767684"
 - [使用敏感度标签作为条件的 DLP 策略](dlp-sensitivity-label-as-condition.md)
 - [配置为应用敏感度标签的 Microsoft Defender for Cloud Apps](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
+### <a name="opt-in-to-the-preview-of-co-authoring-for-ios-and-android"></a>选择加入 iOS 和 Android 共同创作预览版
+
+若要试用 iOS 和 Android 共同创作预览版，必须具有上一部分中所述的最低版本，并请求将租户添加到预览版：[同意为在移动设备上使用敏感度标签加密的文件启用共同创作](https://ncv.microsoft.com/5Oob3oDj1O)
+
+有关详细信息，请参阅以下博客文章公告： [Microsoft 信息保护加密文档的共同创作现已在移动设备上提供公共预览版](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/3081369)
+
 ## <a name="limitations"></a>限制
 
 为使用敏感度标签加密的文件启用租户设置进行共同创作之前，请确保了解此功能的下列限制。
@@ -115,14 +121,14 @@ ms.locfileid: "62767684"
     
     特定于 Excel：如果某人使用不支持敏感度标签的元数据更改的 Excel 版本编辑并保存该文件，则不应用加密的敏感度标签的元数据可删除。
 
-- 目前不支持适用于 iOS 和 Android 的 Office 应用。
+- 对适用于 iOS 和 Android 的 Office 应用的支持目前处于[预览状态](https://office.com/insider)。
 
 - 不支持共同创作和自动保存，并且不支持标签和加密的 Office 文档，这些文档使用下列任何 [配置加密](encryption-sensitivity-labels.md#configure-encryption-settings)：
     - **让用户在应用标签时分配权限** 并选中 **在 Word、PowerPoint 和 Excel 中提示用户指定权限** 的复选框。此配置有时称为“用户定义的权限”。
     - **将内容的访问权限设置为** 一个值，则对内容 **从不**。
     - **选择了双** 加密技术。
     
-    对于采用以上任何加密配置的标签，标签会显示在 Office 应用中。 但是，当用户选择这些标签，而其他人正在编辑文档时，你会警告他们共同创作且自动保存将不可用。 如果其他人正在编辑文档，用户会看到一条消息，指出标签无法应用。
+    对于采用以上任何加密配置的标签，标签会显示在 Office 应用中。 但是，当用户选择这些标签，而没有人在编辑文档时，会警告他们共同创作且自动保存将不可用。 如果其他人正在编辑文档，用户会看到一条消息，指出标签无法应用。
 
 - 如果使用 Azure 信息保护统一标签客户端：查看此标签客户端的文档， [要求或限制](/azure/information-protection/known-issues#known-issues-for-co-authoring)。 
     > [!NOTE]
