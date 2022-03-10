@@ -2,8 +2,8 @@
 title: 从我的自定义域试点 Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何仅使用两个测试帐户将电子邮件功能试点从我的自定义域到 Microsoft 365 邮箱的电子邮件功能。
-ms.openlocfilehash: bde6daacba3e7adad1a69748074638e651445d8f
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: cc977afd32c1b3b660ec01285c36132a8e1d27b2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421326"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323733"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>从我的自定义域试点 Microsoft 365
 
@@ -137,7 +137,7 @@ Microsoft 365 使用 Exchange Online Protection (EOP) 进行垃圾邮件防护�
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. 设置从 Microsoft 365 或 Office 365 指向你的电子邮件服务器的连接器
 
-若要在 Microsoft 365 或 Office 365 中创建连接器，请选择“**管理**” > “**Exchange**”以转到 Exchange 管理中心。 接下来，选择“**邮件流**” > <a href="https://go.microsoft.com/fwlink/?linkid=2183136" target="_blank">“**连接器**”</a>。
+若要在 Microsoft 365 或 Office 365 中创建连接器，请选择“**管理**” > “**Exchange**”以转到 Exchange 管理中心。然后，选择“**邮件流**” > <a href="https://go.microsoft.com/fwlink/?linkid=2183136" target="_blank">“**连接器**”</a>。
 
 使用向导设置连接器。
 

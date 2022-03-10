@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在合规性中心创建、修改、删除和测试自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2526ab9fdde4e5cedbbf3e831e6ec8ac9a6a5747
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: e21e77fdd113942618c021f69c2cf8be64ac742f
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62900810"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419109"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>在合规中心创建自定义敏感信息类型
 
@@ -124,7 +124,7 @@ ms.locfileid: "62900810"
 
 9. 填写 **字符领近度** 的值。
 
-10.  (可选) 如果有支持 **元素** 或添加其他 [**检查**](sit-regex-validators-additional-checks.md#sensitive-information-type-additional-checks) 。 如果需要，可以将你的 **支持元素** 分组。
+10.  (可选) 如果有 **支持元素** 或添加其他 [**检查**](sit-regex-validators-additional-checks.md#sensitive-information-type-additional-checks) 。 如果需要，可以将你的 **支持元素** 分组。
 
 11. 选择“**创建**”。
 
@@ -177,7 +177,7 @@ ms.locfileid: "62900810"
 
 若要使扫描的项目满足规则条件，任何单个项中 SIT 的唯一实例数都必须介于最小值和最大值之间。 这称为 **实例计数**。
 
-- **Min** 字段：在 (要) 项中必须找到的 SIT 的唯一实例的最小数量下限。 min 字段支持以下值：
+- **Min** 字段：在 (项) 一项中必须找到的 SIT 的唯一实例的最小数量下限。 min 字段支持以下值：
     - 1 到 500
 - **最大** 字段：在项中可找到并仍触发匹配的 SIT 唯一实例数的上限。 max 字段支持以下值：
     - 1 到 500 - 当您要针对项中的 SIT 实例数设置一个小于或 500 的特定上限时，请使用此限制。
@@ -206,4 +206,6 @@ ms.locfileid: "62900810"
 > 当使用双字节连字符或双字节句号创建 regex 时，请确保像在 regex 中转义连字符或句号一样转义这两个字符。以下是供参考的示例 regex：
 >    -  (？<！\d)  ([4][0-9]{3}[\-？\-\t]*[0-9]{4}) 
 >
+> 在关键字中不应使用双字节特殊字符。
+> 
 > 建议在关键词列表中使用字符串匹配而不是单词匹配。

@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: 学习如何以及为什么在 Microsoft SharePoint Syntex 中复制模型。
-ms.openlocfilehash: dc8668ccf407e881bb2114cb679b1ed2049c256e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解如何复制 Microsoft 文档中的文档理解模型以及SharePoint Syntex。
+ms.openlocfilehash: 979d5b2cddfa7c565abade7ac66c06e3053bbe4d
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156434"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419039"
 ---
 # <a name="duplicate-a-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中复制模型
 

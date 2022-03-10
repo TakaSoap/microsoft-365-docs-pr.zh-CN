@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/03/2022
+ms.date: 03/09/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: e4b28078c79b47ae48af590457d6721b0b470659
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a078b2a88fdde3af840cff64414fec0a712ae92e
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317397"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419300"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>将设备载入 Microsoft Defender for Business
 
@@ -71,8 +71,6 @@ Defender for Business 中的设备载入体验是在类似于 Microsoft Defender
 | **Microsoft Intune** 或 **Microsoft Endpoint Manager**<br/> (或Microsoft Intune *客户Endpoint Manager)* | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)[移动设备管理是](/mem/intune/enrollment/device-enrollment)移动设备管理的一Endpoint Manager。 Microsoft 365 商业高级版客户已拥有Microsoft Intune，可以使用此选项。<br/><br/>如果你在获得 Defender for Business Endpoint Manager已使用 Endpoint Manager，你可以选择继续使用 Endpoint Manager载入和管理设备<br/><br/>若要使用此方法[，请参阅Microsoft Endpoint Manager](#microsoft-endpoint-manager)。 | Windows <br/>macOS<br/>iOS<br/>Android OS | 
 | **Microsoft Defender for Business 安全配置** <br/> (*使用Microsoft 365 Defender门户*)  | 若要使用此选项，请配置某些设置以促进 Defender for Business 和 Endpoint Manager。 然后，使用在每台设备上下载并运行的Microsoft 365 Defender程序包 () [https://security.microsoft.com](https://security.microsoft.com) 门户中载入设备。 在设备和设备之间建立信任Azure Active Directory (Azure AD) ，Defender for Business 安全策略将推送到设备。<br/><br/>若要了解详细信息，请参阅 [Microsoft Defender for Business 安全配置](#microsoft-defender-for-business-security-configuration)。 | Windows <br/>macOS |
 
-
-
 > [!IMPORTANT]
 > 如果出现问题且载入过程失败，请参阅 [Microsoft Defender for Business 疑难解答](mdb-troubleshooting.yml)。
 
@@ -86,7 +84,7 @@ Defender for Business 中的设备载入体验是在类似于 Microsoft Defender
 
 ## <a name="local-script-in-defender-for-business"></a>Defender for Business 中的本地脚本
 
-可以使用本地脚本载入 Windows Mac 设备。 当你在设备上运行载入脚本时，它将创建与 Azure Active Directory 的信任、在 Microsoft Endpoint Manager 中注册设备，以及将设备载入 Defender for Business。 此方法对于在 Defender for Business 中载入设备非常有用。 一次可载入最多 10 台设备。
+可以使用本地脚本载入 Windows Mac 设备。 当你在设备上运行载入脚本时，它会创建与 Azure Active Directory (的信任（如果该信任不存在) ，在 Microsoft Endpoint Manager (中注册设备（如果尚未注册) ）然后将设备载入到 Defender for Business。 此方法对于在 Defender for Business 中载入设备非常有用。 一次可载入最多 10 台设备。
 
 1. 转到 Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) ，然后登录。
 
@@ -114,7 +112,7 @@ Defender for Business 中的设备载入体验是在类似于 Microsoft Defender
 
 Microsoft Defender for Business 安全配置基于称为 Microsoft [Defender for Endpoint ](/mem/intune/protect/mde-security-integration)安全管理功能 (预览版) 。 它使你能够在 Microsoft 365 Defender 门户 () 中将设备载入 Defender for Business [https://security.microsoft.com](https://security.microsoft.com) ，而无需事先要求这些设备Microsoft Endpoint Manager注册。 
 
-此方法使你能够在 Microsoft 365 Defender 门户中载入设备并 () [https://security.microsoft.com](https://security.microsoft.com) 。 以下是相应的工作方式：
+此方法使你能够在 Microsoft 365 Defender 门户中载入设备并 () [https://security.microsoft.com](https://security.microsoft.com) 。 以下是所有功能的工作原理：
 
 1. 从应用门户下载载入Microsoft 365 Defender，然后在设备上运行该程序包，将这些设备载入到 Defender for Business。
 

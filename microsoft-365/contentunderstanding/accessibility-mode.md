@@ -1,5 +1,5 @@
 ---
-title: SharePoint 整合辅助功能模式
+title: 辅助功能模式SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -8,26 +8,26 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
-description: 了解如何在 SharePoint Syntex 中培训模型时使用辅助功能SharePoint Syntex。
-ms.openlocfilehash: 6a27615e0b676fdcefb617d76a206d9f47c6f882
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解如何在培训和使用 SharePoint Syntex 中的模型时使用辅助功能SharePoint Syntex。
+ms.openlocfilehash: 09fd16259a44a2aa4d1b82dca49fffa76065690b
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178991"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419053"
 ---
-# <a name="sharepoint-syntex-accessibility-mode"></a>SharePoint 整合辅助功能模式
+# <a name="accessibility-mode-in-sharepoint-syntex"></a>辅助功能模式SharePoint Syntex
 
-在[SharePoint Syntex](index.md)中，用户可以在使用示例文档时在模型 (、标签、培训和测试) 启用辅助功能模式。 使用辅助功能模式可帮助低视力用户在文档查看器中导航和标记项目时更轻松地使用键盘辅助功能。
+在[SharePoint Syntex](index.md)中，用户可以在使用示例文档时在模型 (、标签、培训和测试) 所有阶段启用辅助功能模式。 使用辅助功能模式可帮助低视力用户在文档查看器中导航和标记项目时更轻松地使用键盘辅助功能。
 
-这可帮助用户使用键盘在文档查看器中浏览文本，并不仅听到所选值的旁白，还帮助用户听到操作 (例如标记或删除所选文本) 中的标签，或者使用其他示例文档训练模型时预测的标签值。 
+这有助于用户在文档查看器中使用键盘在文本中导航，并不仅听到所选值的旁白，还有助于听到操作 (例如标记或删除选定文本) 中的标签，或者使用其他示例文档训练模型时预测的标签值。 
 
 
 ![辅助功能模式。](../media/content-understanding/accessibility-mode.png)
 
 ## <a name="requirements"></a>要求
 
-若要听到旁白的音频，请确保在系统上的"讲述人"设置中[](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1)打开"讲述人Windows 10应用。
+若要听到旁白的音频，请确保在"讲述人"系统上的"讲述[](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1)人"设置中Windows 10应用。
 
 ![打开"讲述人"。](../media/content-understanding/narrator-settings.png)
 

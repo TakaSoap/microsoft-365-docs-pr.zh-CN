@@ -14,13 +14,13 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-description: 查找有关在组织中如何使用SharePoint Syntex的方案。
-ms.openlocfilehash: 16688f08183e55c8e2f52cdbcd50919dff680c1b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 查找有关如何在组织中使用SharePoint Syntex业务方案。
+ms.openlocfilehash: fe4f72dc56014e5bc990e5ea39bd019785bd8572
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192051"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419081"
 ---
 # <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 的应用场景和用例
 
@@ -79,7 +79,7 @@ ms.locfileid: "60192051"
 - 审核收据、合同等，以确保遵守公司策略。
 - 确保项目具有合规性所需的全部文档。
 
-设置一些流程以遵守SharePoint Syntex，以捕获和适当分类、审核和标记需要更好治理的文档和表单。 您可以依赖SharePoint Syntex对内容进行自动分类，而不是依赖最终用户手动标记，或者依赖合规性团队手动应用管理规则和存档。 您可以启用简化的搜索体验、管理数据卷、应用记录管理和保留策略、确保合规性以及最佳实践存档和清除实践。
+设置一些流程以遵守SharePoint Syntex，以捕获和适当分类、审核和标记需要更好治理的文档和表单。 您可以依赖SharePoint Syntex来自动对内容进行分类，而不是依赖最终用户手动标记，或者依赖合规性团队手动应用管理规则和存档。 您可以启用简化的搜索体验、管理数据卷、应用记录管理和保留策略、确保合规性以及最佳实践存档和清除实践。
 
 当您自动执行此方案时，您感觉安全：
 
@@ -118,7 +118,7 @@ ms.locfileid: "60192051"
 
 使用 SharePoint Syntex，您可以缩短手动处理客户订单的时间。 例如，您可以使用 OCR 处理将传真、电子邮件或纸张中的订单上载到 SharePoint，然后从这些订单中提取元数据，以便您可以使用自动化流程完成这些订单。
 
-例如，供应链经理希望减少由手动数据输入导致的错误。 他们希望避免手动检查入站客户订单和数据输入， (、传真或电子邮件) ，以减少进入业务系统的错误。 他们希望一个应用 AI 和机器学习技术的解决方案来验证传入订单信息、提取核心数据并自动推送到其 ERP 系统中，以便实现订单履行与对帐。
+例如，供应链经理希望减少由手动数据输入导致的错误。 他们希望避免手动检查入站客户订单以及 (、传真或电子邮件) ，以减少进入业务系统的错误。 他们希望一个应用 AI 和机器学习技术的解决方案来验证传入订单信息、提取核心数据并自动推送到其 ERP 系统中，以便实现订单履行与对帐。
 
 自动执行此方案时，可以确保：
 

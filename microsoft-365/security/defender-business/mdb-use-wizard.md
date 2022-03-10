@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 98660e437463a79ce263edd29f2cd01725d19762
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8c7100774057d399667a3176670a55d5b4479c73
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322921"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419025"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>使用向导设置 Microsoft Defender for Business
 
@@ -53,7 +53,7 @@ Microsoft Defender for Business 旨在通过类似向导的体验为中小型企
 
 2. **载入和配置Windows设备**。 在此步骤中，你可以将组织的 Windows快速载入 Defender for Business。 从第一天起，载入设备有助于保护这些设备。 有关详细信息 [，请参阅将设备载入 Microsoft Defender for Business](mdb-onboard-devices.md) 。
 
-   - 如果你已在使用 Microsoft Endpoint Manager) 的 Microsoft Intune (部分，并且你的组织已在 Endpoint Manager 中注册了设备，则系统将会询问你是否希望对部分或所有注册的 Windows 设备使用自动载入。 自动载入可设置 Endpoint Manager 和 Defender for Business 之间的连接，然后将Windows设备无缝载入到 Defender for Business。
+   - 如果你已在使用 Microsoft Endpoint Manager) 的 Microsoft Intune (部分，并且你的组织已在 Endpoint Manager 中注册了设备，则系统将会询问你是否希望对部分或所有注册的 Windows 设备使用自动载入。[](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) 自动载入可设置 Endpoint Manager 和 Defender for Business 之间的连接，然后将Windows设备无缝载入到 Defender for Business。
 
    - 如果你尚未使用 Endpoint Manager，或者如果你在 Endpoint Manager 中注册了非 Windows 设备，你可以手动将设备载入 Defender for Business。 
    

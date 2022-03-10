@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签声明记录。
-ms.openlocfilehash: 7c1599bd40059559b9e0d19383a08fe2382e6442
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 93e51698109819f4743dd4b5b45f5a5177739a2a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241695"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324839"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>使用保留标签声明记录
 
@@ -69,6 +69,11 @@ ms.locfileid: "62241695"
 
 - [将保留标签自动应用到内容](apply-retention-labels-automatically.md) （不支持合规性记录）
 
+## <a name="tenant-setting-for-editing-record-properties"></a>用于编辑记录属性的租户设置
+
+如果使用保留标签将项目声明为 SharePoint 和 OneDrive 中的记录（而不是监管记录），请考虑是否需要更改默认租户设置，该设置允许用户在文件大于 0 字节时编辑[锁定记录](record-versioning.md)的属性。
+
+若要更改此默认设置，请转到“[Microsoft 365 合规中心](https://compliance.microsoft.com/)” > “**记录管理**” > “**记录管理设置**” > “**保留标签**” > “**允许编辑记录属性**”，然后关闭“**允许用户编辑记录属性**”设置。
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>将已配置保留标签应用到内容
 
@@ -95,4 +100,4 @@ ms.locfileid: "62241695"
 
 ## <a name="next-steps"></a>后续步骤
 
-有关记录管理支持的方案的列表，请参阅[记录管理常见方案](get-started-with-records-management.md#common-scenarios)。
+了解如何使用[记录版本控制来更新存储在 SharePoint 或 OneDrive 中的记录](record-versioning.md)。

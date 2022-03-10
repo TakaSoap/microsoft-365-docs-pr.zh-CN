@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/08/2022
+ms.date: 03/09/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 4070cb273a64f34468f313f79c9c51c400bfe7db
-ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
+ms.openlocfilehash: 7f6e395c7ade55cfbc7f53db1f4e93e6af215238
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63406202"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419095"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Microsoft Defender for Business 概述
 
@@ -34,7 +34,7 @@ ms.locfileid: "63406202"
 
 Microsoft Defender for Business 是一种新的终结点安全解决方案，专为中小型企业设计 (多达 300 名员工) 。 借助此终结点安全解决方案，可以更好地保护组织设备免受勒索软件、恶意软件、网络钓鱼和其他威胁的侵害。 
 
-观看以下视频，详细了解 Defender for Business：
+观看以下视频，详细了解 Defender for Business： <br/><br/>
 
 > [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监控和管理当你使用处置评审时或者根据配置的设置自动删除标记为记录的项目时的内容处置。
-ms.openlocfilehash: 5ee5af04b399d7f7d0ba94dc3b943d259d57ff34
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2d078eb00ffa6d2dd8279c7e5eb65a8fcfb6fa53
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942340"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419179"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -49,7 +49,7 @@ ms.locfileid: "61942340"
 
 - 若要在处置过程中查看项目的内容，请将用户添加到 **内容资源管理器内容查看者** 角色组。如果用户没有此角色组的权限，他们仍可选择一个处置评审操作来完成处置评审，但是执行此操作时无法在合规中心的迷你预览窗格中查看项目的内容。
 
-- 默认情况下，访问“**处置**”页面的每个人只能看到分配给他们进行审阅的项目。 为使记录管理管理员能够查看分配给所有用户的所有项目以及配置用于处置评审的所有保留标签：导航到“**记录管理设置**” > “**处置**”，选择并启用包含管理员帐户的已启用邮件的安全组。
+- 默认情况下，访问“**处置**”页面的每个人只能看到分配给他们评审的项目。为使记录管理管理员能够查看分配给所有用户的所有项目以及配置用于处置评审的所有保留标签：导航到“**记录管理设置**” > “**处置**”，选择并启用包含管理员帐户的已启用邮件安全组。
     
     未启用邮件的 Microsoft 365 组和安全组不支持此功能，也不会显示在列表中供选择。 如果需要创建新的启用邮件的安全组，请使用指向 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 的链接创建新组。 
     
@@ -187,7 +187,7 @@ If you need additional information, visit the helpdesk website (https://support.
   
 - **批准处置**：
     - 当为处置评审的过渡阶段选择此操作（你已配置多个阶段）时：项目将移至下一处置阶段。
-    - 如果对处置评审的最后阶段选择此操作，或者只有一个处置阶段：项目被标记为有资格永久删除。 该删除的确切时间取决于工作量。 有关详细信息，请参阅[保留设置如何就地处理内容](retention.md#how-retention-settings-work-with-content-in-place)。
+    - 如果对处置评审的最后阶段选择此操作，或者只有一个处置阶段：项目被标记为符合永久删除条件，然后将在 7 天内被永久删除。
 - **重新标记**：
     - 选择此操作时，项目将退出原始标签的处置评审过程。 然后，该项目受新选择的保留标签的保留设置所影响。
 - **延期**：

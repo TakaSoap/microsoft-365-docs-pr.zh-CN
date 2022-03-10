@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: 管理员可以了解如何使用 Microsoft Defender for Office 365 计划 2 中的攻击模拟培训其用户进行网络钓鱼防护。
 ms.technology: mdo
-ms.openlocfilehash: 31c8fd7b0369e5af522cd79b9bee7c5ee8460cc5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 17e4bb55ee2c571c2e66b648d277f0a896551f39
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329637"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419356"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>使用 Defender for Office 365 中的攻击模拟培训模拟网络钓鱼Office 365
 
@@ -252,8 +252,6 @@ Microsoft 提供的登陆页面有 12 种语言版本：中文 (简体) 、中�
     - **添加徽标**：单击 **"浏览** "查找并选择.png、.jpeg 或 .gif 文件。 若要删除徽标，请单击"删除 **"**。
     - **将有效负载指示器添加到电子邮件**：如果你之前在"选择技术"页上选择了"恶意软件附件"或"链接到恶意软件"，[则此设置](#select-a-social-engineering-technique)不可用。
 
-      选择 **"将有效负载指示器添加到电子邮件** "可帮助用户了解如何识别网络钓鱼邮件。
-
     可以通过单击页面底部的"打开预览面板"按钮来预览结果。
 
   - **使用自定义 URL**：如果你之前在"选择技术"页上选择了"恶意软件附件"或"链接到恶意软件"，[则此设置](#select-a-social-engineering-technique)不可用。
@@ -261,18 +259,19 @@ Microsoft 提供的登陆页面有 12 种语言版本：中文 (简体) 、中�
     如果选择" **使用自定义 URL"**，则需要在出现的"输入自定义登陆 **页面 URL** "框中添加 URL。 页面上没有其他可用选项。
 
   - **创建你自己的登陆页面**：此值具有以下要配置的相关选项：
-    - **将有效负载指示器添加到电子邮件**：如果你之前在"选择技术"页上选择了"恶意软件附件"或"链接到恶意软件"，[则此设置](#select-a-social-engineering-technique)不可用。
-
-      选择 **"将有效负载指示器添加到电子邮件** "可帮助用户了解如何识别网络钓鱼邮件。
+    - **向电子邮件添加** 有效负载指示器：此设置仅在满足以下两个条件时可用：
+      - You previously selected **Credential harvest**， **Link in attachment**， or **Drive-by URL** on the [Select technique](#select-a-social-engineering-technique) page.
+      - 添加名为"将电子邮件 **内容** 插入 **页面** 内容"的动态标记后。
 
     - 页面内容：有两个选项卡可用：
       - **文本**：格式文本编辑器可用于创建登陆页面。 除了典型的字体和格式设置之外，以下设置也可用：
         - **动态标记**：从以下标记中选择：
-          - **Username**
-          - **电子邮件发件人名称**
-          - **发件人电子邮件地址**
-          - **电子邮件主题**
-          - **电子邮件内容**
+          - **插入名称**
+          - **插入发件人姓名**
+          - **插入发件人电子邮件**
+          - **插入电子邮件主题**
+          - **插入电子邮件内容**
+          - **插入日期**
         - **默认使用：** 选择可用模板开始。 可以在编辑区域中修改文本和布局。 若要将登陆页面重置回模板的默认文本和布局，请单击" **重置为默认值"**。
     - **代码**：可以直接查看和修改 HTML 代码。
 
