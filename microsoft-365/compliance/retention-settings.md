@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: 6709f56778865e8474a580c91d01d67512631e1d
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: decf8f53f30c7f29636e50900fe994aae25e6552
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321923"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326981"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -61,7 +61,9 @@ ms.locfileid: "62321923"
 |**SharePoint 网站** - 适用于:  <br/> - SharePoint 网站 <br/> - OneDrive 帐户 |网站 URL <br/>网站名称 <br/> SharePoint 自定义属性: RefinableString00 - RefinableString99 |
 |**Microsoft 365 组** - 适用于:  <br/> - Microsoft 365 组 <br/> - Teams 频道消息 <br/> - Yammer 社区消息 |名称 <br/> 显示名称 <br/> 说明 <br/> 电子邮件地址 <br/> 别名 <br/> Exchange 自定义特性: CustomAttribute1 - CustomAttribute15 |
 
-网站的属性名称基于 SharePoint 网站托管的属性，用户和组的特性名称基于映射到 Azure AD 特性的 [可筛选的收件人属性](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties)。 例如：
+网站的属性名称基于 SharePoint 网站托管属性。 有关自定义属性的信息，请参阅 [使用自定义 SharePoint 网站属性通过自适应策略作用域应用 Microsoft 365 保留](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970)。
+
+用户和组的属性名称基于映射到 Azure AD 属性的[可筛选的收件人属性](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties)。例如：
 
 - **别名** 映射到 LDAP 名称 **mailNickname**，在 Azure AD 管理中心内显示为 **电子邮件**。
 - **电子邮件地址** 映射到 LDAP 名称 **proxyAddresses**，在 Azure AD 管理中心内显示为 **代理地址**。
@@ -77,7 +79,9 @@ ms.locfileid: "62321923"
 
 #### <a name="to-configure-an-adaptive-scope"></a>要配置自适应作用域
 
-在配置自适应作用域之前，根据上节确定要创建的作用域类型以及将使用的特性和值。 可能需要与其他管理员共同合作以确认此信息，对于 SharePoint 网站，请确认属性已编制索引。
+在配置自适应作用域之前，根据上节确定要创建的作用域类型以及将使用的特性和值。 可能需要与其他管理员协作来确认此信息。 
+
+特别是对于 SharePoint 网站，如果计划使用 [自定义网站属性](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970)，则可能需要其他 SharePoint 配置。
 
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
     
@@ -87,7 +91,7 @@ ms.locfileid: "62321923"
     - 如果使用的是信息治理解决方案：
        - **解决方案** > **信息治理** > **自适应作用域** 选项卡 > + **创建作用域**
     
-    没有立即在导航窗格中看到解决方案? 首先选择“**全部显示**”。 
+    没有立即在导航窗格中看到解决方案？首先选择 **显示所有**。 
 
 2. 按照配置中的提示先选择作用域类型，然后选择要用于生成动态成员资格的特性或属性，并键入特性或属性值。
     
@@ -109,19 +113,31 @@ ms.locfileid: "62321923"
     - 对于 **用户** 和 **Microsoft 365 组** 作用域，请使用 [OPATH 筛选语法](/powershell/exchange/recipient-filters)。 例如，要创建按部门、国家/地区和州定义其成员资格的用户作用域:
     
         ![具有高级查询的自适应作用域示例。](../media/example-adaptive-scope-advanced-query.png)
+        
+        使用高级查询生成器的其中一个优势是查询运算符的选择范围更广:
+        - **和**
+        - **或**
+        - **非**
+        - **eq** (等于)
+        - **ne** (不等于)
+        - **lt** (小于)
+        - **gt** (大于)
+        - **like** (字符串比较)
+        - **notlike** (字符串比较)
     
     - 对于 **SharePoint 网站** 作用域，请使用关键字查询语言(KQL)。 你可能已经熟悉使用已编制索引的网站属性通过 KQL 通过搜索 SharePoint。 为了帮助你指定这些 KQL 查询，请参阅 [关键字查询语言(KQL)语法参考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
-    
-    使用高级查询生成器的其中一个优势是查询运算符的选择范围更广:
-    - **和**
-    - **或**
-    - **非**
-    - **eq** (等于)
-    - **ne** (不等于)
-    - **lt** (小于)
-    - **gt** (大于)
-    - **like** (字符串比较
-    - **notlike** (字符串比较
+        
+        例如，由于 SharePoint 网站作用域自动包括所有 SharePoint 网站类型（包括 Microsoft 365 组连接网站和 OneDrive 网站），因此可以使用索引网站属性 **SiteTemplate** 来包括或排除特定网站类型。 可以指定的模板：
+        - 适用于新式通信网站的 SITEPAGEPUBLISHING
+        - 适用于 Microsoft 365 组连接网站的 GROUP
+        - 适用于 Microsoft Teams 私人频道网站的 TEAMCHANNEL
+        - 适用于经典 SharePoint 团队网站的 STS
+        - 适用于网站 OneDrive 的 SPSPERS
+        
+        因此，若要创建仅包含新式通信网站的的自适应作用域，并排除 Microsoft 365 组连接和 OneDrive 的网站，请指定以下 KQL 查询：
+        ````console
+        SiteTemplate=SITEPAGEPUBLISHING
+        ````
     
     可以独立于作用域配置 [验证这些高级查询](#validating-advanced-queries)。
     
@@ -201,7 +217,7 @@ ms.locfileid: "62321923"
 
 除 Skype for Business 以外，默认情况下，所选位置的全部实例自动包含在策略中，无需将其指定为已包含。
 
-例如，**Exchange 电子邮件** 位置的 **所有收件人**。 通过此默认设置，所有现有的用户邮箱都将包含在策略中，任何在应用策略后创建的新邮箱都将自动继承策略。
+例如，**Exchange 电子邮件** 位置的 **所有收件人**。使用此默认设置时，所有现有用户邮箱都将包含在策略中，应用策略后创建的任何新邮箱都将自动继承策略。
 
 #### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>包含或排除特定位置、用户或组的策略
 
@@ -212,9 +228,9 @@ ms.locfileid: "62321923"
 > [!WARNING]
 > 如果将实例配置为包含然后删除最后一个实例，则位置的配置会还原为 **所有**。  保存策略之前，请确保这是你期望的配置。
 >
-> 例如，如果你指定了一个 要在根据配置删除数据的保留策略中包含的 SharePoint 网站，然后删除了这个网站，那么默认情况下，所有 SharePoint 网站都将受到永久删除数据的保留策略的约束。 这同样适用于 Exchange 收件人、OneDrive 帐户以及Teams 聊天用户等。
+> 例如，如果你指定了一个要在根据配置删除数据的保留策略中包含的 SharePoint 网站，然后删除这个网站，那么默认情况下，所有 SharePoint 网站都将受到永久删除数据的保留策略的约束。这同样适用于针对 Exchange 收件人、OneDrive 帐户和 Teams 聊天用户等进行包含设置。
 >
-> 在这种情况下，如果不希望“**所有**”这一位置设置受制于保留策略，请关闭位置。 或者，指定要从策略中豁免的排除实例。
+> 在这种情况下，如果不希望“**所有**”这一位置设置受制于保留策略，请关闭位置。或者，指定将不受该策略约束的排除项。
 
 ## <a name="locations"></a>位置
 
@@ -295,7 +311,7 @@ ms.locfileid: "62321923"
 
 当配置使用敏感信息类型的自动应用策略并选择 **Microsoft 365 组** 位置时:
 
-- 不包含 Microsoft 365 组邮箱。 要将这些邮箱包含在策略中，请改为选择 **Exchange 电子邮件** 位置。
+- 不包括 Microsoft 365 组邮箱。若要将这些邮箱包含在策略中，请改为选择 **Exchange 电子邮件** 位置。
 
 #### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>如果在应用策略后删除 Microsoft 365 组，会发生什么情况
 
@@ -326,7 +342,7 @@ ms.locfileid: "62321923"
 
 - 仅保留
 
-    对于此配置，请选择“**将项目保留至特定时间段**”和“**保留期结束：不执行任何操作**”。 或者，选择“**永久保留项目**”。
+    对于此配置，请选择“**将项目保留至特定时间段**”和“**保留期结束：不执行任何操作**”。或选择 **永久保留项目**。
 
 - 保留后删除
 
@@ -377,9 +393,9 @@ ms.locfileid: "62321923"
 > [!WARNING]
 > 如果你配置了包含项，然后删除了最后一项，则配置会将位置的设置还原为“**所有**”。  保存策略之前，请确保这是你期望的配置。
 >
-> 例如，如果你指定了一个 要在根据配置删除数据的保留策略中包含的 SharePoint 网站，然后删除了这个网站，那么默认情况下，所有 SharePoint 网站都将受到永久删除数据的保留策略的约束。 这同样适用于针对 Exchange 收件人、OneDrive 帐户和 Teams 聊天用户等进行包含设置。
+> 例如，如果你指定了一个 要在根据配置删除数据的保留策略中包含的 SharePoint 网站，然后删除了这个网站，那么默认情况下，所有 SharePoint 网站都将受到永久删除数据的保留策略的约束。这同样适用于针对 Exchange 收件人、OneDrive 帐户和 Teams 聊天用户等进行包含设置。
 >
-> 在这种情况下，如果不希望“**所有**”这一位置设置受制于保留策略，请关闭位置。 或者，指定将不受该策略约束的排除项。
+> 在这种情况下，如果不希望“**所有**”这一位置设置受制于保留策略，请关闭位置。或者，指定将不受该策略约束的排除项。
 
 ## <a name="updating-policies-for-retention"></a>正在更新保留策略
 
@@ -388,7 +404,7 @@ ms.locfileid: "62321923"
 
 如果你编辑保留策略，并且项目已遵循保留策略中的原始设置，则除了新识别的项目之外，更新后的设置将自动应用于此项目。
 
-此更新通常非常快，但可能需要数天。 完成跨 Microsoft 365 位置的策略复制后，你将看到 Microsoft 365 合规中心中的保留策略状态从“**打开（挂起）**”变为“**打开（成功）**”。
+此更新通常非常快，但可能需要数天。完成跨 Microsoft 365 位置的策略复制后，你将看到 Microsoft 365 合规中心中的保留策略状态从“**打开（挂起）**”变为“**打开（成功）**”。
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>锁定策略以防止更改
 
