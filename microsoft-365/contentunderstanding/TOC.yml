@@ -40,7 +40,7 @@
           href: model-usage-analytics.md
         - name: 创建提取器时利用术语库分类
           href: leverage-term-store-taxonomy.md
-        - name: SharePoint 整合辅助功能模式
+        - name: 辅助功能模式
           href: accessibility-mode.md
     - name: 表单处理
       items:

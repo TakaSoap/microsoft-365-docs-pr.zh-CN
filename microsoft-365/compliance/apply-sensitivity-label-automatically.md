@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: f617338448b71541d5ab0d914ab1a3198d4f486c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ab47315fe56124f54b1404ceebc015a715eb74ee
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319641"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419314"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -315,15 +315,19 @@ Azure 信息保护统一标记客户端仅支持自动标记内置和自定义�
 
     ![为自动标记配置选择位置页面。](../media/locations-auto-labeling-wizard.png)
     
-    要指定单个 OneDrive 帐户，请参阅 [获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
+    有关位置的详细信息：
+    
+    - 如果选择“**Exchange**”并希望标记来自组织外部的传入电子邮件，则必须包含 **所有** 默认值。 对于范围需限定于组织中特定用户的该配置，请在下一步中选择“**高级规则**”。 然后配置条件以包括组织中特定的收件人，实现部分用户范围要求。
+    
+    - 要指定单个 OneDrive 帐户，请参阅 [获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
 
-7. 对于“**设置常用或高级规则**”页面：保留“**常用规则**”的默认设置，以定义用于在所有选定位置标识要标记的内容的规则。如果每个位置需要不同的规则，请选择“**高级规则**”，然后选择“**下一步**”。
+7. 对于“**设置常用或高级规则**”页面：保留“**常用规则**”的默认设置，以定义用于在所有选定位置标识要标记的内容的规则。如果每个位置需要不同的规则，包含 Exchange 的更多选项。请选择“**高级规则**”，然后选择“**下一步**”。
 
     这些规则使用包含敏感信息类型和共享选项的条件：
     - 对于敏感信息类型，你可以选择内置和自定义敏感信息类型。
     - 对于共享选项，你可以选择“**仅与组织内部人员共享**”或“**与组织外部人员共享**”。
 
-    如果你的唯一位置是 **Exchange**，或者如果你选择“**高级规则**”，则还可以选择其他条件：
+    如果你的位置是 **Exchange**，并且假设你选择了“**高级规则**”，则还可以选择其他条件：
     - 发件人 IP 地址为
     - 收件人域为
     - 收件人为

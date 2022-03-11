@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 5fc271028e4c20d431c4535fcdbf902bf17cdbb4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cecd489aa5ceb5f0d5d233a4bf09caa24dee6f8b
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311839"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419151"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -168,7 +168,7 @@ ms.locfileid: "63311839"
 
 #### <a name="unallowed-browsers"></a>不允许的浏览器
 
-对于 Windows 设备，如果添加由可执行名称标识的浏览器，浏览器将受到阻止，无法访问与强制实施的 DLP 策略（其中上传到云服务限制设为“阻止”或“阻止替代”）条件匹配的文件。 当阻止这些浏览器访问文件时，最终用户将看到一则 toast 通知，要求他们通过 Microsoft Edge 打开文件。
+对于 Windows 设备，如果添加由可执行名称标识的浏览器，浏览器将受到阻止，无法访问与强制实施的 DLP 策略（其中上传到云服务限制设为“阻止”或“阻止替代”）条件匹配的文件。 当阻止这些浏览器访问文件时，最终用户将看到一则 toast 通知，如果已经配置了一个，则要求他们通过 Microsoft Edge 打开文件或显示自定义消息。
 
 对于 macOS 设备，必须添加完整的文件路径。 若要查找 Mac 应用程序的完整路径：
 
