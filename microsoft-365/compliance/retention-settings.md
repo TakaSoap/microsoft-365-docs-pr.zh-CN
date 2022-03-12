@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: decf8f53f30c7f29636e50900fe994aae25e6552
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2fd9f2655b13d8c9ac829108d3563a6a4322f3bc
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326981"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449241"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -127,7 +127,7 @@ ms.locfileid: "63326981"
     
     - 对于 **SharePoint 网站** 作用域，请使用关键字查询语言(KQL)。 你可能已经熟悉使用已编制索引的网站属性通过 KQL 通过搜索 SharePoint。 为了帮助你指定这些 KQL 查询，请参阅 [关键字查询语言(KQL)语法参考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
         
-        例如，由于 SharePoint 网站作用域自动包括所有 SharePoint 网站类型（包括 Microsoft 365 组连接网站和 OneDrive 网站），因此可以使用索引网站属性 **SiteTemplate** 来包括或排除特定网站类型。 可以指定的模板：
+        例如，由于 SharePoint 网站作用域自动包括所有 SharePoint 网站类型（包括 Microsoft 365 组连接网站和 OneDrive 网站），因此可以使用索引网站属性 **SiteTemplate** 来包括或排除特定网站类型。可以指定的模板：
         - 适用于新式通信网站的 SITEPAGEPUBLISHING
         - 适用于 Microsoft 365 组连接网站的 GROUP
         - 适用于 Microsoft Teams 私人频道网站的 TEAMCHANNEL
@@ -367,6 +367,14 @@ ms.locfileid: "63326981"
 保留期结束后，选择是否要永久删除内容：
 
 ![保留设置页面。](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+
+在配置保留之前，请先熟悉相应工作负载的容量和存储限制：
+
+- 对于 SharePoint 和 OneDrive，保留的项目存储在网站的保留库中，该库包含在网站的存储配额中。 有关详细信息，请参阅 SharePoint 文档中的[管理网站存储限制](/sharepoint/manage-site-collection-storage-limits)。
+
+- 对于将保留的消息存储在邮箱中的 Exchange、Teams 和 Yammer，请参阅 [Exchange Online 限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)并启用[自动扩展归档](autoexpanding-archiving.md)。
+    
+    在短时间内大量电子邮件被用户删除或从策略设置中自动删除的极端情况下，可能还需要将 Exchange 配置为更频繁地将项目从用户主邮箱中的“可恢复的项目”文件夹移动到存档邮箱中的“可恢复的项目”文件夹。 有关分步说明，请参阅[为置于保留状态的邮箱增加可恢复项目的配额](increase-the-recoverable-quota-for-mailboxes-on-hold.md)。
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>删除超过特定年限的内容
 
