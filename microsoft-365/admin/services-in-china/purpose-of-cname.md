@@ -22,7 +22,7 @@ description: 深入了解 Office 365 中的"MSOID"CNAME 记录，该记录将你
 monikerRange: o365-21vianet
 ms.openlocfilehash: 1b053ac0df7cd770b5627b688e90641688f94141
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63325119"
