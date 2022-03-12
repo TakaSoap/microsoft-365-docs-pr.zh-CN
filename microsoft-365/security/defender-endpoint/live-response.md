@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e0e2490fb9026ff23e55990930ddedeb48144b92
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 882454e00517624c3bc43e87308007b00ece9507
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315969"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449712"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -46,7 +46,7 @@ ms.locfileid: "63315969"
 - Upload PowerShell 脚本或可执行文件到库，然后从租户级别在设备上运行它。
 - 执行或撤消修正操作。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在设备上启动会话之前，请确保满足以下要求：
 
@@ -87,6 +87,8 @@ ms.locfileid: "63315969"
 
   > [!NOTE]
   > 只有具有管理安全性或全局管理员角色的用户才能编辑这些设置。
+  > 
+  > 在启用实时响应之前， [必须在高级功能](advanced-features.md) 设置中启用自动调查。
 
 - **从高级设置页面启用服务器** 实时响应 (推荐) 。
 

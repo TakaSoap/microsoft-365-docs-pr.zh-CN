@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解从何处访问 Windows Office 部署实验室工具包。
-ms.openlocfilehash: 7f91fdbd72a496d06377259387f53fbe923f1981
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f5b2bad3828ef30da822be102010124ccb26091e
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314443"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450712"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows 和 Office 365 部署实验室工具包
 
@@ -101,7 +101,7 @@ Windows和 Office 365 部署实验室工具包旨在帮助你规划、测试和�
 [下载 Windows 11 和 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]
-> 请使用宽带 Internet 连接下载此内容，并允许大约 30 分钟进行自动预配。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 实验室Windows 10 2022 年 5 月 16 日到期。 实验室Windows 11 2022 年 4 月 11 日到期。 新版本将在过期前发布。
+> 请使用宽带 Internet 连接下载此内容，并允许大约 30 分钟进行自动预配。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 实验室Windows 10 2022 年 5 月 16 日到期。 实验室Windows 11 2022 年 5 月 6 日到期。 新版本将在过期前发布。
 
 ## <a name="additional-guidance"></a>其他指南
 

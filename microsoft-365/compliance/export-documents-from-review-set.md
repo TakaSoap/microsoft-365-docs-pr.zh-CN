@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何从演示文稿或外部Advanced eDiscovery审阅集选择和导出内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6384d45121fc39d120d6906e46594b8b04124471
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 61de8fed9c5bcb00daf3a8273f3ebfc86fe75a35
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401058"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449452"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>从审阅集导出文档Advanced eDiscovery
 
@@ -93,11 +93,14 @@ ms.locfileid: "63401058"
   
   - 警告和错误 x z.csv：此文件包含有关尝试从审阅集导出时遇到的错误的信息。
   
-  - Exchange：此文件夹包含 PST Exchange中存储的所有内容。 此选项不能包含修订的 PDF 文件。 如果在审阅集内选择了附件，将导出附加附件的父电子邮件。 此文件夹可能还包含以下项目： 
+  - Exchange：此文件夹包含 PST Exchange中存储的所有内容。 此选项不能包含修订的 PDF 文件。 如果在审阅集内选择了附件，将导出附加附件的父电子邮件。
+  
+    the Exchange folder may also contain a subfolder named mailboxname_loosefiles.zip， which contains the following items：
 
-    - 信息权限 (IRM) 已解码的受保护邮件。 
-    - 错误修正消息。 
-    - 邮件中引用的新式附件或链接。 
+    - 信息权限 (IRM) 已解码的受保护邮件。
+    - 错误修正消息。
+    - 邮件中引用的新式附件或链接。
+    - 加密项目 (文件夹中的 PST 文件中不包含Exchange项目) 。
   
   - SharePoint：此文件夹包含来自本地SharePoint以本机文件格式提供的所有本机内容。 此选项不能包含修订的 PDF 文件。
 
@@ -119,4 +122,4 @@ ms.locfileid: "63401058"
 
 ### <a name="condensed-directory-structure-exported-to-your-azure-storage-account"></a>导出到帐户的压缩Azure 存储结构
 
-此选项使用与 *压缩* 目录结构相同的常规结构，但是不会压缩内容，并且数据将保存到Azure 存储帐户。 此选项通常在使用第三方电子数据展示提供程序时使用。 有关如何使用此选项的详细信息，请参阅将审阅集内的文档[导出到Azure 存储帐户](download-export-jobs.md)。
+此选项使用与 *压缩* 目录结构相同的常规结构，但是不会压缩内容，并且数据会保存到Azure 存储帐户。 此选项通常在使用第三方电子数据展示提供程序时使用。 有关如何使用此选项的详细信息，请参阅将审阅集内的文档[导出到Azure 存储帐户](download-export-jobs.md)。

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何以及为什么在 Microsoft SharePoint Syntex 中重命名提取程序。
-ms.openlocfilehash: 0b5c52e00b287b6f4b41e7c8c3070261bccfda96
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 850359f71e7ca08b16265f93741ab2498e87d032
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195445"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450278"
 ---
 # <a name="rename-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中重命名提取程序
 
@@ -37,15 +37,15 @@ ms.locfileid: "60195445"
 
 2. 在“**模型**”页面的“**名称**”列中，选择希望为其重命名提取程序的模型。
 
-3. 在“**实体提取程序**”下面，选择希望重命名的提取程序的名称，然后选择“**重命名**”。</br>
+3. 在“**实体提取程序**”下面，选择希望重命名的提取程序的名称，然后选择“**重命名**”。
 
-    ![实体提取程序部分的屏幕截图显示了所选的提取程序，其中突出显示“重命名”选项。](../media/content-understanding/entity-extractor-rename.png) </br>
+    ![实体提取程序部分的屏幕截图显示了所选的提取程序，其中突出显示“重命名”选项。](../media/content-understanding/entity-extractor-rename.png) 
 
 4. 在“**重命名提取程序**”面板中:
 
-   a. 在“**名称**”下面，输入提取程序的新名称。</br>
+   a. 在“**名称**”下面，输入提取程序的新名称。
 
-    ![屏幕截图显示了“实体”提取程序面板。](../media/content-understanding/rename-entity-extractor-panel.png) </br>
+    ![屏幕截图显示了“实体”提取程序面板。](../media/content-understanding/rename-entity-extractor-panel.png) 
 
    b. (可选)在“**高级设置**”下，选择是否希望关联现有站网站栏。
 

@@ -16,17 +16,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 7519e3b280b4415bb35237f922a2aa25d22b0c8f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4f92c50ad971de439541a7b8ea2e8f9fb5312c48
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323019"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449389"
 ---
 # <a name="get-microsoft-defender-for-business"></a>获取 Microsoft Defender for Business
 
 > [!IMPORTANT]
-> 从 2022 年 3 月 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 从 2022 年 3 [月](../../business-premium/index.md) 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
@@ -59,7 +59,7 @@ Microsoft 列出了有权销售产品的解决方案提供商，包括 Microsoft
 
 ## <a name="get-microsoft-365-business-premium"></a>获取 Microsoft 365 商业高级版
 
-*从 2022 年 3 月 1 开始，Defender for Business 将开始作为 Microsoft 365 商业高级版 的一Microsoft 365 商业高级版*。 
+*从 2022 年 3 月 1 开始，Defender for Business 作为 Microsoft 365 商业高级版 的一部分推出*。 
 
 请参阅[试用或购买Microsoft 365 商业高级版](../../business-premium/get-microsoft-365-business-premium.md)。
 

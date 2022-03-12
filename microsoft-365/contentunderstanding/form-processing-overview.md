@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: 了解 Microsoft SharePoint Syntex 中的表单处理。
-ms.openlocfilehash: 8079f12c3b05d62de95bcb08808d1acc931a37d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解如何使用 AI 生成在 Microsoft SharePoint Syntex 中创建表单处理SharePoint Syntex。
+ms.openlocfilehash: d04de2fc71b0b393e560e354253be42053725416
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189245"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450768"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的表单处理概述
 
@@ -37,11 +37,11 @@ Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI 生成器](/ai-builde
 
 ![文档库视图。](../media/content-understanding/doc-lib-done.png)</br>  
 
-你可以使用示例文件来训练模型，并定义将从表单提取的信息。 文档的布局通过培训你的模型获知。 只需 5 个表单文档即可开始操作。 AI 生成器将分析示例文件中的键 - 值对，你也可以手动识别可能没有检测到的键 - 值对。  可通过 AI 生成器测试示例文件的模型准确性。
+你可以使用示例文件来训练模型，并定义将从表单提取的信息。 文档的布局通过培训你的模型获知。 只需 5 个表单文档即可开始操作。 AI Builder 将分析键值对的示例文件，还可以手动识别可能尚未检测到的文件。  可通过 AI 生成器测试示例文件的模型准确性。
 
-训练并发布模型后，模型将创建 [Power Automate 流程](/power-automate/getting-started)。 将文件上传到 SharePoint 文档库时将运行该流程，并提取模型中标识的数据。 提取的数据将显示在模型的文档库视图的列中。
+在训练和发布模型后，你的模型将创建一个Power Automate[流](/power-automate/getting-started)。 将文件上传到 SharePoint 文档库时将运行该流程，并提取模型中标识的数据。 提取的数据将显示在模型的文档库视图的列中。
 
-Office 365 管理员需要为 SharePoint 文档库[启用表单处理](./set-up-content-understanding.md) ，以便用户能够从中 [创建表单处理模型](create-a-form-processing-model.md)。 设置过程中或设置完成后，可在管理设置中选择网站。
+管理员Office 365需要为文档库启用表单[](./set-up-content-understanding.md)SharePoint，以便用户能够创建[表单处理模型](create-a-form-processing-model.md)。 设置过程中或设置完成后，可在管理设置中选择网站。
 
 ### <a name="file-limitations"></a>文件限制
 

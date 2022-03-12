@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/02/2022
+ms.date: 03/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 8c7100774057d399667a3176670a55d5b4479c73
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 2cc157e363c42b94cac750b19a6122ed0a22c3de
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419025"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450754"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>使用向导设置 Microsoft Defender for Business
 
 > [!IMPORTANT]
-> 从 2022 年 3 月 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 从 2022 年 3 [月](../../business-premium/index.md) 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
@@ -55,7 +55,7 @@ Microsoft Defender for Business 旨在通过类似向导的体验为中小型企
 
    - 如果你已在使用 Microsoft Endpoint Manager) 的 Microsoft Intune (部分，并且你的组织已在 Endpoint Manager 中注册了设备，则系统将会询问你是否希望对部分或所有注册的 Windows 设备使用自动载入。[](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) 自动载入可设置 Endpoint Manager 和 Defender for Business 之间的连接，然后将Windows设备无缝载入到 Defender for Business。
 
-   - 如果你尚未使用 Endpoint Manager，或者如果你在 Endpoint Manager 中注册了非 Windows 设备，你可以手动将设备载入 Defender for Business。 
+   - 如果你尚未使用 Endpoint Manager，或者如果你在 Endpoint Manager 中注册了非 Windows 设备，你可以手动将设备载入 [Defender for Business](mdb-onboard-devices.md#local-script-in-defender-for-business)。 
    
 3. **配置安全策略**。 Defender for Business 包括适用于下一代保护和防火墙保护的默认安全策略，可应用于你的组织设备。 这些默认策略使用推荐设置，旨在为设备提供强大的保护。 
 

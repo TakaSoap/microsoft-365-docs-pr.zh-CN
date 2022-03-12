@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2979216cb87982210ac33dd8e273702f8bc18bf0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5f0b846fdbfaa76250ae64ae281afc9592a24eb4
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328087"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450306"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows载入 Microsoft Defender for Endpoint 服务
 
@@ -96,8 +96,8 @@ Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 �
 
 |服务器版本|AV|EDR|
 |----|----|----|
-|Windows Server 2012 R2 SP1|![能。](images/svg/check-yes.svg)|![是。](images/svg/check-yes.svg)|
-|Windows Server 2016|内置|![能。](images/svg/check-yes.svg)|
+|Windows Server 2012 R2 SP1|![是。](images/svg/check-yes.svg)|![是。](images/svg/check-yes.svg)|
+|Windows Server 2016|内置|![是。](images/svg/check-yes.svg)|
 |Windows Server 2019 或更高版本|内置|内置|
 
 如果之前已使用 MMA 载入服务器，请按照服务器迁移中提供的指南迁移到新[](server-migration.md)解决方案。
@@ -308,7 +308,7 @@ Msiexec /x md4ws.msi /quiet
 
 9. 选择 **"确定** "并关闭任何打开的 GPMC 窗口。
 
-10. 若要将 GPO 链接到组织单位 (OU) ，请右键单击并选择" **链接现有 GPO"**。 在显示的对话框中，选择要链接的组策略对象。 单击“确定”。
+10. 若要将 GPO 链接到组织单位 (OU) ，请右键单击并选择" **链接现有 GPO"**。 在显示的对话框中，选择要链接的组策略对象。 单击“**确定**”。
 
 有关其他配置设置，请参阅[配置示例集合设置和其他](configure-endpoints-gp.md#configure-sample-collection-settings)[建议的配置设置](configure-endpoints-gp.md#other-recommended-configuration-settings)。
 
@@ -411,7 +411,7 @@ Windows Server 2019 和 Windows Server 2022 到 Microsoft Endpoint Manager的载
 - 删除 Defender for Endpoint 工作区配置
 
 >[!NOTE]
->*如果你运行的是适用于需要 MMA 的 Windows Server 2016 和 Windows Server 2012 R2 的 Microsoft Defender for Endpoint，则适用于其他 Windows 服务器版本的这些载出说明也适用。 有关迁移到新的未关注解决方案的说明，请参阅 [Microsoft Defender for Endpoint 中的服务器迁移方案](/microsoft-365/security/defender-endpoint/server-migration)。
+> 如果你运行的是适用于需要 MMA 的 Windows Server 2016 Windows Server 2012 R2 的 Microsoft Defender for Endpoint，则适用于其他 Windows 服务器版本的这些载出说明也适用。 有关迁移到新的未关注解决方案的说明，请参阅 [Microsoft Defender for Endpoint 中的服务器迁移方案](/microsoft-365/security/defender-endpoint/server-migration)。
 
 ## <a name="related-topics"></a>相关主题
 

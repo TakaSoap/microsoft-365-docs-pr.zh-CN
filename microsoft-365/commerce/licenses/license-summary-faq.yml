@@ -1,0 +1,116 @@
+### YamlMime:FAQ
+metadata:
+  title: 合同常见问题
+  author: cmcatee-MSFT
+  ms.author: cmcatee
+  manager: scotv
+  ms.reviewer: racheg, armanv
+  ms.date: 03/10/2021
+  audience: Admin
+  ms.topic: article
+  ms.service: o365-administration
+  ms.custom: commerce_vl
+  ms.localizationpriority: medium
+  description: 有关许可证Microsoft 365 管理中心常见问题。
+  ms.openlocfilehash: a38bf6fb9a327ccda557986264d8b9a56454f6f2
+  ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 03/12/2022
+  ms.locfileid: "63450827"
+title: 合同常见问题
+summary: ''
+sections:
+- name: 常规
+  questions:
+  - question: >
+      为什么我可以看到合同列表？
+    answer: >
+      如果你是 VL 用户的有效批量许可 (，) 列表。 如果满足以下要求之一，则你是 VL 用户：
+
+
+      - 你将在合法批量许可计划表单中列为协议联系人。 联系人类型包括主要联系人、通知管理员、联机访问联系人、软件保障管理器、联机服务管理器或订阅管理器。
+
+      - 你是有权访问协议的管理员。
+  - question: >
+      什么是许可 ID？
+    answer: "许可 ID 标识组织可以下订单的程序级别。 它可以表示以下任一内容：\n\n- 注册 (Enterprise或选择计划) \n- 开放式 (协议) \n- 许可证 (开放式许可证计划) \n- PCN 公共客户 (选择)  (计划计划) \n\n授权和网站权限由组织可用的许可 ID 确定。\n"
+  - question: >
+      我的 MPSA 合同在哪里？
+    answer: >
+      Microsoft 产品和服务协议 (MPSA) 许可证信息在 [Microsoft 商业](https://businessaccount.microsoft.com/Customer)中心或 [适用于企业的 Microsoft Store。](https://businessstore.microsoft.com/store) 此合同列表中不显示 MPSA 信息。 [了解 MPSA](https://www.microsoft.com/Licensing/MPSA/default.aspx)。
+  - question: >
+      为什么我组织的一些许可 ID 未显示在列表中？
+    answer: >
+      只有在登录的用户有权查看许可 ID 详细信息时，才显示许可 ID。 将授予你代表组织查看特定许可 ID 的权限，你符合以下条件之一：
+
+
+      - 你将在合法批量许可计划表单中列为协议联系人。 联系人类型包括主要联系人、通知管理员、联机访问联系人、软件保障管理器、联机服务管理器或订阅管理器。
+
+      - 你是有权访问协议的管理员。
+
+
+      有关 VL 权限角色及其允许的操作详细信息，请参阅 [权限常见问题](https://docs.microsoft.com/licensing/permissions-faq)解答。
+  - question: >
+      新许可证订单在合同列表中显示需要多久？
+    answer: "最近购买的许可证通常在 Microsoft 从 Microsoft 合作伙伴收到订单后 10 小时内显示在列表中。 如果你的合作伙伴延迟将采购订单转发给 Microsoft，可能会出现几天到几周的延迟。 当除开放许可证之外的所有程序都满足订单的范围开始时段时，许可证会显示在摘要中。\n\n联系人列表中提供了以下数据：\n\n|**列的名称**|**说明**|\n|:-----|:-----|\n|许可 ID |按特定许可 ID 组织的关键联系人和相关许可证 |\n|父计划详细信息 |通过许可计划为组织的关键联系人和相关许可 ID |\n|MBSA 详细信息 |与 Microsoft Business and Services Agreement (MBSA 关联的组织的关键联系人和相关许可)  | \n|组织 | 许可证组织|\n|位置 |许可证组织的市/县组合 |\n|结束日期 |许可证的结束日期 |    \n|状态 |许可证的状态| \n"
+  - question: >
+      什么是许可证摘要？
+    answer: >
+      许可证摘要显示权限集内所有活动和非活动许可 ID 的 Microsoft 产品系列和版本的实时批量许可权利。
+
+
+      The License Summary displays purchase information related to traditional Microsoft Volume License programs beginning in 1994. 这些程序包括但不限于 Open、Open Value、Select、Select Plus 和 Enterprise。
+
+
+      在 MPSA 计划下购买的许可证不包含在 VLSC 关系摘要中，可在 Microsoft 业务中心单独 [查看](https://businessaccount.microsoft.com/customer)。
+
+
+      访问并创建许可证摘要
+
+      1.  登录到 Microsoft 365 管理中心。
+
+      2.  Go to **BillingYour** >  **productsVolume** >  **licensingContracts** > .
+
+
+      筛选许可 ID 以在许可证摘要中显示
+
+      1.  使用复选框选择要包括在此摘要中的许可证 ID。
+
+      2.  选择 **"创建许可证摘要"**。 仅针对选定的许可 ID 生成许可证摘要。
+- name: 了解许可证摘要
+  questions:
+  - question: >
+      什么是许可证权利？
+    answer: >
+      许可权利表示你安装和使用许可协议中详述的软件产品的权利。
+  - question: >
+      有效数量是什么？
+    answer: >
+      有效数量是升级后每个产品和版本的许可证权利数。 它用于确定你的组织是拥有许可证还是按产品和版本进行许可。
+  - question: >
+      什么是活动 SA (软件) 数量？
+    answer: "活动 SA 数量显示在许可证摘要中。 它表示所有 Microsoft 批量许可计划 (软件) 保护涵盖的许可证数量。 活动 SA 数量包括所有类型的软件保障，包括：\n- 许可和软件保障 (L&SA) \n- SA (软件) \n- SA Step-Up\n"
+  - question: >
+      为什么我看到有效数量和/或活动 SA 数量为"0"？
+    answer: "许可证摘要用于显示组织有权部署和使用的许可。 \n\n如果生成的许可证声明中的\"有效数量\"显示为零，则意味着你的组织无权根据针对该声明选择的许可 ID 集的条款使用许可证。 \n\n如果活动 SA 数量显示为零，则意味着用于生成声明的许可 ID 集下的许可证没有任何有效或活动的软件保障范围。 \n\n**注意** 对于联机服务许可证，活动 SA 数量始终为零，因为联机服务没有与其关联的 SA。 \n"
+  - question: >
+      许可证摘要是否包括原始设备制造商 (OEM) 或零售许可证信息？
+    answer: >
+      否。 许可证摘要仅显示你的组织通过批量许可计划获取的许可证。
+  - question: "许可证摘要是否显示在我的组织中部署了哪些软件？ \n"
+    answer: >
+      否。 Microsoft 无法提供许可证摘要中的产品部署详细信息列表。 许可证摘要显示你的组织有权安装和使用的软件，而不是当前部署的软件。
+  - question: >
+      什么是产品池？
+    answer: "许可证池按产品类型对许可证进行分组。 Microsoft 批量许可将产品分为三个池：\n\n- 应用程序 (，例如，Office) \n- 系统 (，例如，Windows操作系统) \n- 服务器 (，例如，Exchange Server、SQL Server 和 Windows Server) \n"
+  - question: >
+      什么是许可证授予？
+    answer: "有时，Microsoft 批量许可会提供促销，在购买特定产品时，客户有权使用另一个产品。 促销通常取决于所购买产品的活动软件保障或升级优势范围。 例如：\n\n- 客户购买 2016 年 1 Exchange Server许可证。\n- 交易在优惠期间具有有效的软件保障或升级优势范围。\n- Microsoft 通过购买 2016 Skype for Business Server 1 个许可证Exchange Server促销。\n\n许可证授予是客户有权或\"授予\"使用促销产品的权限。 在以上示例中，将授予客户使用Skype for Business Server。\n\n有关许可授予详细信息，请参阅 [Microsoft 产品条款](https://www.microsoft.com/licensing/terms/welcome/welcomepage)。 \n"
+  - question: >
+      如何查看我的许可证授予？
+    answer: >
+      许可授予将反映在合同列表和下载&项中。 在"产品"列表中，从"许可证授予"收到的产品会显示一个星号 (*) ，以指示它们不是原始购买的一部分。
+  - question: >
+      联系协助支持人员
+    answer: 客户还可以 [通过电话](https://docs.microsoft.com/licensing/contact-us) 或 Web 表单联系我们。 Microsoft 在 24 小时内响应 Web 表单提交。

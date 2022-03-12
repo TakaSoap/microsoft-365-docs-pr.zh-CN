@@ -1,5 +1,5 @@
 ---
-title: '如何计划 Microsoft Defender 终结点更新 (Linux) '
+title: '如何计划 Microsoft Defender 的 Endpoint (Linux) '
 description: 了解如何计划 Microsoft Defender 终结点 (Linux) 以更好地保护组织的资产。
 keywords: 'microsoft， defender， Microsoft Defender for Endpoint， linux， 扫描， 防病毒， microsoft defender for endpoint (linux) '
 ms.prod: m365-security
@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f78f5e78067b3d8273d0ca9a3c7474eef66ed4fb
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 6fb3141b33948c5c452096c83a2f02657c199575
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301086"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450544"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>计划更新 Microsoft Defender for Endpoint （Linux）
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-若要在 Linux 上的 Microsoft Defender for Endpoint 上运行更新，请参阅在 Linux 上部署 [Microsoft Defender for Endpoint 的更新](/microsoft-365/security/defender-endpoint/linux-updates)。
+若要在 Linux 上的 Microsoft Defender for Endpoint 上运行更新，请参阅 [在 Linux 上部署 Microsoft Defender for Endpoint 的更新](/microsoft-365/security/defender-endpoint/linux-updates)。
 
-Linux (和 Unix) 具有一个称为 **"crontab" (** 类似于任务计划程序) 运行计划任务的工具。
+Linux (和 Unix) 具有一个称为 **crontab** (类似于任务计划程序) 运行计划任务的工具。
 
 ## <a name="pre-requisite"></a>先决条件
 
@@ -92,7 +92,7 @@ CRON_TZ=America/Los_Angeles
 > #<a name="rhel-and-variants-centos-and-oracle-linux"></a>!CentOS 和 Oracle Linux (RHEL 和) 
 >
 > ```bash
-> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp >> ~/mdatp_cron_job.log
+> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp -y >> ~/mdatp_cron_job.log
 > ```
 
 > #<a name="sles-and-variants"></a>!SLES 和变量
@@ -108,11 +108,11 @@ CRON_TZ=America/Los_Angeles
 > ```
 
 > [!NOTE]
-> 在以上示例中，我们将它设置为 00 分钟、上午 6 点 (小时（格式为 24 小时) 、每月的任何一天、任意一天，在星期日）。[$ (date + \% d) -le 15] == 不运行，除非它等于或小于第 3 周的第 15 (天) 。 这意味着它将在每月的第 3 个星期 (7) 上午 6：00 运行一次。 太平洋 (UTC -8) 。
+> 在以上示例中，我们将该时间设置为 00 分钟、上午 6 点 (小时（格式为 24 小时) 、月中的任意一天、任何月份中的星期日）。[$ (date +\%d) -le 15] == 不运行，除非它等于或小于第 3 周的第 15 (天) 。 这意味着它将在每月的第 3 个星期 (7) 上午 6：00 运行一次。 太平洋 (UTC -8) 。
 
 按"Esc"
 
-在双 `:wq` 引号中键入" "。
+在双`:wq`引号中键入""。
 
 > [!NOTE]
 > w == 写入，q == quit

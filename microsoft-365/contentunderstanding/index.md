@@ -16,16 +16,16 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何查找 Microsoft SharePoint Syntex 资源。
-ms.openlocfilehash: db8526cbf85be1b9db5b95ed0739d0ec948c2faa
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3b8c85cfd405e68884df844c502473cdd95a4fa5
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323159"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449424"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 简介
 
-SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
+SharePoint Syntex是一Microsoft 365服务，可帮助组织：
 
 - 使用先进的 AI 和机器教学来丰富人类体验
 - 自动化内容处理
@@ -66,6 +66,8 @@ SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 |请参阅示例方案，了解如何在组织中使用 SharePoint Syntex |[SharePoint Syntex 的应用场景和用例](./adoption-scenarios.md)| 
 |设置并运行 SharePoint Syntex 的试用版试点计划 |[运行试用版](./trial-syntex.md)|
 |了解如何使用 SharePoint Syntex 来自动化文档流程 |[使用 Microsoft 365 解决方案管理合同](./solution-manage-contracts-in-microsoft-365.md)| 
+|尝试使用可自定义SharePoint模板来帮助管理合同 |[使用合同管理网站模板](./use-contracts-management-site.md)| 
+|试用说明性内容中心网站模板以了解有关模型的信息 |[使用内容中心网站模板](./use-content-center-site.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -76,6 +78,7 @@ SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 |设置和配置 SharePoint Syntex|[设置 SharePoint Syntex](./set-up-content-understanding.md)|
 |了解 SharePoint Syntex 的许可|[SharePoint Syntex 的许可](./syntex-licensing.md)|
 |了解图像标记和如何禁用|[SharePoint Syntex 中的图像标记](./image-tagging.md)|
+|使用 PowerShell 管理SharePoint Syntex|[使用 PowerShell 管理 SharePoint Syntex](./powershell-syntex-intro.md)|
 
 ## <a name="models"></a>模型
 
@@ -96,7 +99,7 @@ SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 
 ## <a name="premium-services"></a>高级服务
 
-SharePoint Syntex 许可证为用户提供了高级内容服务，这些服务在 Microsoft 365 环境中为你提供了附加功能。 本节中的资源提供了有关这些功能及其使用方式的详细信息。
+SharePoint Syntex 许可证为用户提供了高级内容服务，这些服务在 Microsoft 365 环境中为你提供了附加功能。 本节中的资源提供有关这些功能及其使用方法的更多详细信息。
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|

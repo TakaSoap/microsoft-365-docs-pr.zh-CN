@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 267e293cf2a1d7b7755a58cddc7fb04af138e4ae
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e6ad964e250b9ae3bc01de02a4d51675beaf9c80
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329371"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449508"
 ---
 # <a name="get-started-using-the-microsoft-365-defender-portal"></a>开始使用 Microsoft 365 Defender 门户
 
 > [!IMPORTANT]
-> 从 2022 年 3 月 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 从 2022 年 3 [月](../../business-premium/index.md) 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
@@ -57,7 +57,7 @@ Microsoft 365 Defender门户 ([https://security.microsoft.com](https://security.
 
 使用屏幕左侧的导航栏访问事件、查看报告和管理安全策略。 下表介绍了您将在导航栏中看到的项目。
 
-| 项目 | 说明 |
+| Item | 说明 |
 |:---|:---|
 | **主页** | 在主页上查看Microsoft 365 Defender。 主页包含突出显示检测到的任何活动威胁的卡片，以及可帮助保护组织的数据和设备安全的建议。 <br/><br/>推荐包含在 Defender for Business 中可以节省安全团队的时间和精力。 推荐基于行业最佳做法。 若要详细了解建议，请参阅安全[建议 - 危险和漏洞管理](../defender-endpoint/tvm-security-recommendation.md)。 |
 | **事件** | 将你带去最近的事件列表。 触发警报时，将创建事件。 一个事件可以包含多个警报。 请务必定期查看事件。 <br/><br/>若要详细了解事件，请参阅在 [Microsoft Defender for Business 中查看和管理事件](mdb-view-manage-incidents.md)。|

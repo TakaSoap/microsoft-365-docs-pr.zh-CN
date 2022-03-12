@@ -7,27 +7,27 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/03/2022
+ms.date: 03/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 11ab3f20b6e0b96b28dd285d05c2d57dd9455baa
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 01275143f7d52e4df0fa0aa1d904d60d13eda3b8
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327739"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449774"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>在 Microsoft Defender for Business 中查看或编辑策略
 
 > [!IMPORTANT]
-> 从 2022 年 3 月 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 从 2022 年 3 [月](../../business-premium/index.md) 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
@@ -114,7 +114,7 @@ ms.locfileid: "63327739"
 
    1. 指定名称和说明。 此信息将帮助你和团队稍后识别策略。
    2. 查看策略顺序，并在必要时编辑它。  (有关详细信息，请参阅 Policy [order](mdb-policy-order.md).) 
-   3. 选择“**下一步**”。 
+   3. 选择 **下一步**。 
 
 7. 在 **"设备组"** 选项卡上，创建新设备组或使用现有组。 策略通过设备组分配给设备。 以下是需要记住的一些内容：
 

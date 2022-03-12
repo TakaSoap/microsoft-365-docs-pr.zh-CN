@@ -1,6 +1,6 @@
 ---
 title: 载入非持久性虚拟桌面基础结构 (VDI) 设备。
-description: 在 VDI (虚拟桌面基础结构上) 包，以便它们可以载入到 Microsoft Defender for Endpoint 服务。
+description: 在 VDI (虚拟桌面基础结构) 包，以便它们可以载入到 Microsoft Defender for Endpoint 服务。
 keywords: configure virtual desktop infrastructure (VDI) device， vdi， device management， configure Microsoft Defender for Endpoint， endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 02/14/2022
 ms.technology: mde
-ms.openlocfilehash: 3e430d44789a1f3c43ec55a20ee7e06521f2dcaf
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 7342f368063c2c9024c4942c33a2e41f28eebd36
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807628"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449816"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>将非永久性虚拟桌面基础结构 (VDI) 设备载入Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ ms.locfileid: "62807628"
  > [!NOTE]
   > **永久性 VDI** - [将永久性 VDI 计算机](configure-endpoints.md) 载入 Microsoft Defender for Endpoint 的处理方式与载入物理计算机（如台式机或笔记本电脑）的方式相同。 组策略Microsoft Endpoint Manager和其他方法可用于载入永久计算机。 在 Microsoft 365 Defender门户中， (https://security.microsoft.com)下选择你的首选载入方法，然后按照该类型的说明进行操作。 
 
-## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>在 VDI 设备上载入非永久性 () 基础结构
+## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>在 VDI 设备上载入非永久性虚拟 () 基础结构
 
 Defender for Endpoint 支持非永久性 VDI 会话载入。
 
@@ -63,9 +63,12 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 > [!WARNING]
 > 对于资源配置较低的环境，VDI 启动过程可能会减慢 Defender for Endpoint 传感器载入的速度。
 
-### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>对于 Windows 10、Windows 11、Windows Server 2019 或 Windows Server 2022
+### <a name="for-windows-10-or-windows-11-or-windows-server-2012-r2-and-later"></a>For Windows 10， or Windows 11， or Windows Server 2012 R2 and later
 
-1.  打开 VDI 配置包.zip文件 (*WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">包</a>：
+> [!NOTE]
+> Windows Server 2016 Windows Server 2012 R2，需要先按照[载入 Windows 服务器](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016)中的说明应用安装程序包，使此功能正常工作。
+
+1.  打开 VDI 配置包.zip文件 (*WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender包</a>：
 
     1. 在导航窗格中，**选择"设置** > **EndpointsDevice** >  **managementOnboarding** > "。
 
@@ -75,14 +78,14 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
     1. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将文件从从 .zip 文件中提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`。
+2. 将文件从从 .zip 文件中提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`中。
     1. 如果要为每台设备实现多个条目（每个会话一个条目），请复制 WindowsDefenderATPOnboardingScript.cmd。
     2. 如果你要针对每台设备实现单个条目，请同时复制 Onboard-NonPersistentMachine.ps1 和 WindowsDefenderATPOnboardingScript.cmd。
 
     > [!NOTE]
     > 如果看不到该文件夹 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` ，它可能处于隐藏状态。 你需要从文件资源管理器中选择显示隐藏 **文件和** 文件夹选项。
 
-3. 打开本地组策略编辑器窗口并导航 **到计算机**\>配置 **Windows 设置** \> **脚本** \> **启动**。
+3. 打开"本地组策略编辑器"窗口并导航 **到"**\>计算机配置"**Windows 设置** \> **脚本** \> **启动"**。
 
    > [!NOTE]
    > 域组策略还可用于载入非永久性 VDI 设备。
@@ -103,13 +106,16 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
    4. 使用其他用户登录到设备。
    5. 根据你要实现的方法，请按照相应步骤操作：
       - For single entry for each device： Check only one entry in Microsoft 365 Defender portal.
-      - For multiple entries for each device： Check multiple entries in Microsoft 365 Defender portal.
+      - 对于每台设备的多个条目：在门户中检查Microsoft 365 Defender条目。
 
 6. 单击 **导航窗格上的** "设备列表"。
 
 7. 通过输入设备名称并选择设备作为搜索类型 **来** 使用搜索函数。
 
-## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>对于下层 SKUs (Windows Server 2008 R2/2012 R2/2016) 
+## <a name="for-downlevel-skus-windows-server-2008-r2"></a>对于下层 SKUS (Windows Server 2008 R2) 
+
+> [!NOTE]
+> 如果你运行的是要求 MMA 的 Windows Server 2016 和 Windows Server 2012 R2 的 Microsoft Defender for Endpoint，则适用于其他 Windows 服务器版本的这些说明也适用。 有关迁移到新的统一解决方案的说明，请参阅 [Microsoft Defender for Endpoint 中的服务器迁移方案](/microsoft-365/security/defender-endpoint/server-migration)。
 
 > [!NOTE]
 > 以下注册表仅在目标是实现"每个设备的单个条目"时相关。

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: b4606eb25f2cea9c18db8c13beba0e107d0e7950
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 63107c50c081eef65e0a56417845b470cc0a294a
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167018"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449706"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>查看并组织 Microsoft Defender for Endpoint 警报队列
 
@@ -31,123 +31,110 @@ ms.locfileid: "61167018"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-alertsq-abovefoldlink)。
 
-**警报队列** 显示从网络中设备标记的警报列表。 默认情况下，队列在分组视图中显示最近 30 天内看到的警报。 最新警报在列表顶部显示，有助于你先查看最新警报。
+**警报显示** 从网络中设备标记的警报列表。 最新警报在列表顶部显示，有助于你先查看最新警报。
 
 > [!NOTE]
-> 通过自动调查和修正显著减少警报队列，使安全运营专家可以专注于更复杂的威胁和其他高价值计划。 当警报包含用于自动调查的支持实体 (例如，文件) 支持的操作系统的设备中，可以启动自动调查和修正。 有关自动调查详细信息，请参阅 [自动调查概述](automated-investigations.md)。
+> 通过自动调查和修正显著减少警报，使安全运营专家可以专注于更复杂的威胁和其他高价值计划。 当警报包含用于自动调查的支持实体 (例如，文件) 支持的操作系统的设备中，可以启动自动调查和修正。 有关自动调查详细信息，请参阅 [自动调查概述](automated-investigations.md)。
 
-有几种选项可供选择以自定义警报队列视图。
+有几种选项可供选择以自定义通知视图。
 
 在顶部导航上，你可以：
 
-- 选择分组视图或列表视图
 - 自定义列以添加或删除列
-- 选择要按页显示的项目
-- 在页面之间导航
 - 应用筛选器
+- 显示特定持续时间（如 1 天、3 天、1 周、30 天和 6 个月）的警报
+- 将警报列表导出到 excel
+- 管理通知
 
-![警报队列的图像。](images/alerts-queue-list.png)
+:::image type="content" source="images/alerts-filters.png" alt-text="警报列表的图像" lightbox="images/alerts-filters.png":::
 
-## <a name="sort-filter-and-group-the-alerts-queue"></a>对警报队列进行排序、筛选和分组
+## <a name="sort-and-filter-alerts"></a>排序和筛选警报 
 
 可以应用以下筛选器来限制警报列表，并更集中地查看警报。
 
 ### <a name="severity"></a>Severity
 
-警报严重性|Description
----|---
-高 <br>  (红色) |通常看到的与 APT 高级永久性威胁 (警报) 。 这些警报表明存在高风险，因为它们可能会损坏设备的严重性。 例如：凭据盗窃工具活动、未与任何组关联的勒索软件活动、篡改安全传感器或任何恶意活动，这些活动会指示人类对手。
-Medium <br>  (橙色) |终结点检测和响应泄露后行为的警报，这些行为可能是 APT 高级永久性威胁 (的) 。 这包括观察到的攻击阶段的典型行为、异常注册表更改、执行可疑文件等。 尽管其中一些可能是内部安全测试的一部分，但它需要进行调查，因为它也可能属于高级攻击。
-低 <br>  (黄色) |与流行恶意软件相关的威胁警报。 例如，黑客工具、非恶意软件黑客工具（如运行探索命令、清除日志等）通常不会指示面向组织的高级威胁。 它还可能来自组织中用户隔离的安全工具测试。
-信息 <br>  (灰色) |可能被视为对网络有害的警报，但可以提升组织对潜在安全问题的安全意识。
+你可以根据警报的严重性筛选警报。  
+
+|警报严重性|说明|
+|---|---|
+|高 <br>  (红色) |通常看到的与 APT 高级永久性威胁 (警报) 。 这些警报表明存在高风险，因为它们可能会损坏设备的严重性。 例如：凭据盗窃工具活动、未与任何组关联的勒索软件活动、篡改安全传感器或任何恶意活动，这些活动会指示人类对手。|
+|Medium <br>  (橙色) |终结点检测和响应泄露后行为的警报，这些警报可能是 APT 高级永久性威胁 (的) 。 这包括观察到的攻击阶段的典型行为、异常注册表更改、执行可疑文件等。 尽管其中一些可能是内部安全测试的一部分，但它需要进行调查，因为它也可能属于高级攻击。|
+|低 <br>  (黄色) |与流行恶意软件相关的威胁警报。 例如，黑客工具、非恶意软件黑客工具（如运行探索命令、清除日志等）通常不会指示面向组织的高级威胁。 它还可能来自组织中用户隔离的安全工具测试。|
+|信息 <br>  (灰色) |可能被视为对网络有害的警报，但可以提升组织对潜在安全问题的安全意识。|
 
 #### <a name="understanding-alert-severity"></a>了解警报严重性
 
-Microsoft Defender 防病毒 (Microsoft Defender AV) 和 Defender for Endpoint 警报严重性不同，因为它们表示不同的范围。
+Microsoft Defender 防病毒 (Microsoft Defender AV) 和 Defender for Endpoint 警报严重性是不同的，因为它们表示不同的范围。
 
-威胁Microsoft Defender 防病毒威胁严重性表示检测到的威胁 (恶意软件) 的绝对严重性，如果受感染，则根据单个设备的潜在风险进行分配。
+威胁Microsoft Defender 防病毒表示检测到的威胁威胁的绝对严重性 (恶意软件) ，并基于单个设备的潜在风险（如果受感染）进行分配。
 
 Defender for Endpoint 警报严重性表示检测到的行为的严重性，即设备的实际风险，但更重要的是对组织带来潜在风险。
 
 例如：
 
-- 针对终结点的 Defender 警报严重性Microsoft Defender 防病毒检测到的、已完全阻止且未感染设备的威胁被归类为"信息"，因为没有实际损害。
+- 有关已完全阻止且未感染设备的 Microsoft Defender 防病毒 检测到的威胁的 Defender for Endpoint 警报的严重性归类为"信息"，因为没有实际损害。
 - 有关商业恶意软件的警报在执行时被检测到，但被 Microsoft Defender AV 阻止和修复，被分类为"低"，因为它可能给单个设备造成一些损坏，但不构成组织威胁。
 - 有关在执行时检测到的恶意软件的警报，不仅会对单个设备造成威胁，而且会对组织造成威胁，无论最终是否被阻止，都将被排名为"中"或"高"。
 - 根据相同的组织威胁注意事项，未阻止或修正的可疑行为警报将被排名为"低"、"中"或"高"。
 
-#### <a name="understanding-alert-categories"></a>了解警报类别
-
-我们重新定义了警报类别，以与 MITRE [](https://attack.mitre.org/tactics/enterprise/) ATT 和 CK 矩阵中的企业&[策略一致](https://attack.mitre.org/)。 新类别名称适用于所有新警报。 现有警报将保留以前的类别名称。
-
-下表列出了当前类别及其通常如何映射到以前的类别。
-
-|新类别|API 类别名称|检测到威胁活动或组件|
-|---|---|---|
-|集合|集合|定位和收集数据以用于筛选。|
-|命令和控件|CommandAndControl|连接到攻击者控制的网络基础结构以中继数据或接收命令。|
-|凭据访问|CredentialAccess|获取有效凭据以扩展对网络中设备和其他资源的控制。|
-|防御者|DefenseEvasion|例如，通过关闭安全应用、删除芯片和运行 rootkit 来避免安全控制。|
-|发现|发现|收集有关重要设备和资源（如管理员计算机、域控制器和文件服务器）的信息。|
-|执行|执行|启动攻击者工具和恶意代码，包括 RAT 和后门。|
-|外泄|外泄|将数据从网络提取到外部攻击者控制的位置。|
-|攻击|攻击|攻击代码和可能的利用活动。|
-|初始访问|InitialAccess|获取目标网络的初始条目，通常涉及密码猜测、攻击或钓鱼电子邮件。|
-|横向移动|LateralMovement|在目标网络中设备之间移动以到达关键资源或获得网络持久性。|
-|恶意软件|恶意软件|后门、特洛伊木马和其他类型的恶意代码。|
-|持久性|持久性|创建自动启动扩展点 (ASP) 保持活动状态并保存系统重新启动。|
-|特权提升|PrivilegeEscalation|在特权进程或帐户上下文中运行代码，以获取更高的代码权限级别。|
-|勒索软件|勒索软件|加密文件和扩展付款以还原访问权限的恶意软件。|
-|可疑活动|SuspiciousActivity|可能是恶意软件活动或攻击一部分的非典型活动。|
-|不需要的软件|UnwantedSoftware|影响工作效率和用户体验的低信誉应用和应用;检测为 PUA (可能不需要) 。|
-
 ### <a name="status"></a>状态
 
-可以选择根据警报的状态限制警报列表。
+可以选择根据警报的"状态"筛选警报列表。
 
-### <a name="investigation-state"></a>调查状态
+### <a name="categories"></a>类别
 
-对应于自动调查状态。
+我们重新定义了警报类别，以与 [MITRE ATT 和 CK](https://attack.mitre.org/) 矩阵中的企业&策略一致。[](https://attack.mitre.org/tactics/enterprise/) 新类别名称适用于所有新警报。 现有警报将保留以前的类别名称。
 
-### <a name="category"></a>类别
+### <a name="service-sources"></a>服务源
 
-你可以选择筛选队列以显示特定类型的恶意活动。
+Microsoft 威胁专家预览参与者现在可以筛选和查看来自新威胁专家托管的搜寻服务的检测。
 
-### <a name="assigned-to"></a>分配到
+根据以下服务源筛选警报：
 
-你可以选择显示分配给你的警报还是自动显示。
-
-### <a name="detection-source"></a>检测源
-
-选择触发警报检测的源。 Microsoft 威胁专家预览参与者现在可以筛选和查看来自新威胁专家托管的搜寻服务的检测。
+- Microsoft Defender for Identity
+- Microsoft Defender for Cloud Apps
+- Microsoft Defender for Endpoint
+- Microsoft 365 Defender
+- Microsoft Defender for Office 365
+- 应用治理
+- AAD Identity Protection
 
 > [!NOTE]
 > 防病毒筛选器仅在设备将 Microsoft Defender 防病毒用作默认的实时保护反恶意软件产品时显示。
 
-|检测源|API 值|
-|---|---|
-|第三方传感器|ThirdPartySensors|
-|防病毒|WindowsDefenderAv|
-|自动调查|AutomatedInvestigation|
-|自定义检测|CustomDetection|
-|自定义 TI|CustomerTI|
-|EDR|WindowsDefenderAtp|
-|Microsoft 365 Defender|MTP|
-|Microsoft Defender for Office 365|OfficeATP|
-|Microsoft 威胁专家|ThreatExperts|
-|SmartScreen|WindowsDefenderSmartScreen|
+### <a name="tags"></a>标记
 
-### <a name="os-platform"></a>OS 平台
+你可以根据分配给警报的标记筛选警报。
 
-通过选择你感兴趣的操作系统平台来限制警报队列视图。
+### <a name="policy"></a>策略 
 
-### <a name="device-group"></a>设备组
+可以基于以下策略筛选警报：
 
-如果你有对检查感兴趣的特定设备组，可以选择这些组来限制警报队列视图。
+- 来自不常见国家/地区的活动
+- 管理员提交结果已完成
+- 管理员触发的电子邮件手动调查
+- 管理员触发的用户泄露调查
+- 异常令牌 
+- 非典型旅行
+- 创建转发/重定向规则
+- 送达后删除的包含恶意 URL 的电子邮件
+- 送达后，删除包含恶意文件的电子邮件
+- 用户报告为恶意软件或网络钓鱼的电子邮件
+- 密码水
+- 管理员对电子邮件、URL 或发件人采取的修正操作
+- 可疑服务创建 
+- 不熟悉的登录属性
 
-### <a name="associated-threat"></a>关联威胁
+### <a name="entities"></a>实体
 
-使用此筛选器专注于与高配置文件威胁相关的警报。 你可以查看威胁分析中的高配置文件威胁 [的完整列表](threat-analytics.md)。
+可以基于实体名称或 ID 筛选警报。 
+
+### <a name="automated-investigation-state"></a>自动调查状态
+
+可以选择根据警报的自动调查状态筛选警报。
+
+
 
 ## <a name="related-topics"></a>相关主题
 

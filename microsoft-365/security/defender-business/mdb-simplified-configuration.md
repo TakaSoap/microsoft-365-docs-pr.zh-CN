@@ -17,17 +17,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: f7f6b7d7f4c6af004e019c8f45aab4ae3d9b9554
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5a2e38768ed1b2cf554aefde68ccb133aa13c6a4
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323677"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449118"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business"></a>Microsoft Defender for Business 中的简化配置过程
 
 > [!IMPORTANT]
-> 从 2022 年 3 月 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> 从 2022 年 3 [月](../../business-premium/index.md) 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
@@ -36,7 +36,7 @@ Microsoft Defender for Business 采用简化的配置过程，专为中小型企
 对于载入设备和为组织设备配置安全设置，你可以从以下几种体验中选择： 
 
 - Microsoft Defender for Business 中的简化配置过程 (*推荐)* 
-- Microsoft Endpoint Manager，包括Microsoft Intune
+- Microsoft Endpoint Manager，其中包括Microsoft Intune (包括在Microsoft 365 商业高级版[) ](../../business-premium/index.md)
 - 用于管理设备的非 Microsoft 解决方案 
 
 ## <a name="what-to-do"></a>需执行的操作
@@ -59,9 +59,9 @@ Microsoft Defender for Business 采用简化的配置过程，专为中小型企
 
 | 门户体验  | 说明  |
 |---------|---------|
-| Microsoft 365 Defender门户中的 () [https://security.microsoft.com](https://security.microsoft.com) <br/> (*这是对大多数客户推荐的选项)*  | 简化的配置体验包括类似向导的体验，可帮助你设置和配置 Defender for Business。 简化的配置还包括默认的安全设置和策略，可帮助你自第一天起保护组织的设备。 <br/><br/>借助此体验，安全团队使用Microsoft 365 Defender门户： <br/>- 设置和配置 Defender for Business <br/>- 查看和管理事件<br/>- 响应和缓解威胁<br/>- 查看报告<br/>- 查看挂起或已完成的操作 <br/><br/> 此门户是组织的安全设置和威胁防护功能的一站式商店。 你获得简化的体验，帮助你快速高效地入门。 若要了解更多信息，请参阅 [使用向导设置 Microsoft Defender for Business](mdb-use-wizard.md)。<br/><br/>此外，还可以编辑设置或定义新策略以满足组织的需求。<br/><br/>若要了解更多信息，请参阅 [在 Microsoft Defender for Business 中查看或编辑设备策略](mdb-view-edit-policies.md)。 |
-| 管理Microsoft Endpoint Manager中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))   | Microsoft Endpoint Manager包括 Microsoft Intune、基于云的移动设备管理 (MDM) 以及适用于应用和设备 (MAM) 的移动应用程序管理。 <br/><br/>许多组织使用 Intune 管理其设备，如移动电话、平板电脑和笔记本电脑。 若要了解更多信息，[Microsoft Intune你的设备的 MDM 和 MAM 提供程序](/mem/intune/fundamentals/what-is-intune)。 <br/><br/>如果已在使用 Microsoft Intune 或 Microsoft Endpoint Manager，可以继续使用该解决方案。 |
-| 非 Microsoft 设备管理解决方案  | 如果你使用的是非 Microsoft 生产力和设备管理解决方案，你可以继续将该解决方案与 Defender for Business 一同使用。 <br/><br/>当设备载入到 Defender for Business 时，你将在应用门户中查看Microsoft 365 Defender警报。 若要了解更多信息，请参阅 [Defender for Endpoint 的载入和配置工具选项](../defender-endpoint/onboard-configure.md)。<br/><br/>如果你已在使用非 Microsoft 设备管理解决方案，可以继续使用该解决方案。 |
+| Microsoft 365 Defender门户中的 () [https://security.microsoft.com](https://security.microsoft.com) <br/> (*这是对大多数客户推荐的选项)*  | 简化的配置体验包括类似向导的体验，可帮助你设置和配置 Defender for Business。 简化的配置还包括默认安全设置和策略，可帮助你在将组织设备载入 Defender for Business 后尽快保护这些设备。 <br/><br/>借助此体验，安全团队使用Microsoft 365 Defender门户： <br/>- 设置和配置 Defender for Business <br/>- 查看和管理事件<br/>- 响应和缓解威胁<br/>- 查看报告<br/>- 查看挂起或已完成的操作 <br/><br/> Microsoft 365 Defender门户是组织的安全设置和威胁防护功能的一站式商店。 你获得简化的体验，帮助你快速高效地入门。 若要了解更多信息，请参阅 [使用向导设置 Microsoft Defender for Business](mdb-use-wizard.md)。<br/><br/>此外，还可以编辑设置或定义新策略以满足组织的需求。<br/><br/>若要了解更多信息，请参阅 [在 Microsoft Defender for Business 中查看或编辑设备策略](mdb-view-edit-policies.md)。 |
+| 管理Microsoft Endpoint Manager中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))   | Microsoft Endpoint Manager包括 Microsoft Intune、基于云的移动设备管理 (MDM) 以及适用于应用和设备 (MAM) 的移动应用程序管理。 [Microsoft 365 商业高级版](../../business-premium/index.md)客户已拥有Endpoint Manager。 <br/><br/>许多组织使用 Intune 管理其设备，如移动电话、平板电脑和笔记本电脑。 若要了解更多信息，[Microsoft Intune你的设备的 MDM 和 MAM 提供程序](/mem/intune/fundamentals/what-is-intune)。 <br/><br/>如果已在使用 Microsoft Intune 或 Microsoft Endpoint Manager，可以继续使用该解决方案。 |
+| 非 Microsoft 设备管理解决方案  | 如果你使用的是非 Microsoft 生产力和设备管理解决方案，你可以继续将该解决方案与 Defender for Business 一同使用。 <br/><br/>当设备载入到 Defender for Business 时，你将在应用门户中查看Microsoft 365 Defender警报。 若要了解更多信息，请参阅 [Defender for Endpoint 的载入和配置工具选项](../defender-endpoint/onboard-configure.md)。 |
 
 
 ## <a name="why-we-recommend-using-the-simplified-configuration-process"></a>为何我们建议使用简化的配置过程

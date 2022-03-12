@@ -19,12 +19,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fc236ea646e9da487c5e2e1178ddf9ca460cb4ae
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c44d710b4067ec12b0234c88e02d2d89729819a6
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325133"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449676"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>调查和修正通信合规性警报
 
@@ -138,7 +138,7 @@ ms.locfileid: "63325133"
 现在，你已查看了警报消息的详细信息，您可以选择多个修正操作：
 
 - **Resolve**： Selecting the **Resolve** control immediately removes the message from the **Pending alerts** queue and no further action can be taken on the message. 通过选择 **"** 解析"，你基本上关闭了警报，无需进一步分类。 所有解析的邮件都显示在"已解析 **"选项卡** 中。
-- **报告为错误分类 (预览**) ：在邮件审阅工作流期间，您始终可以在任何时间点将邮件解析为错误分类。 错误分类表示警报不可操作，或者警报进程和任何可训练分类器错误生成警报。 将项目解析为错误分类会向 Microsoft 发送邮件内容、附件和邮件 (包括元数据) Microsoft，以帮助改进可训练分类器。 发送给 Microsoft 的数据不包含可能标识或用于标识组织中任何用户的信息。 无法对邮件执行进一步操作，所有错误分类的邮件都显示在"已解决 **"选项卡** 中。
+- **报告为错误分类**：在邮件审阅工作流过程中，您始终可以在任何时间点将邮件解析为错误分类。 错误分类表示警报不可操作，或者警报进程和任何可训练分类器错误生成警报。 将项目解析为错误分类会向 Microsoft 发送邮件内容、附件和邮件 (包括元数据) Microsoft，以帮助改进可训练分类器。 发送给 Microsoft 的数据不包含可能标识或用于标识组织中任何用户的信息。 无法对邮件执行进一步操作，所有错误分类的邮件都显示在"已解决 **"选项卡** 中。
 - **Power Automate (预览)**：使用Power Automate流自动处理警报消息的任务。 默认情况下，当用户具有通信合规性警报流模板时，通信合规性包括通知管理器，审阅者可以使用该模板为具有邮件警报的用户自动执行通知过程。 有关创建和管理通信合规性Power Automate流，请参阅本文中的步骤 **5：考虑** Power Automate流部分。
 - **标记为**：将邮件标记为 *合规*、不符合或与组织的策略和标准相关时为问题邮件。 添加标记和标记注释可帮助你针对升级或作为其他内部审阅过程的一部分进行微筛选策略警报。 标记完成后，还可以选择解析邮件以将其从挂起的审阅队列中移开。
 - **通知**：可以使用"通知 **"控件向** 通知分配自定义通知模板，并将警告通知发送给用户。 选择在"通信合规性设置"区域中配置的适当通知模板，然后选择"通过电子邮件发送给发送邮件的用户的提醒"并解决问题。
@@ -156,7 +156,7 @@ ms.locfileid: "63325133"
 
 [Microsoft Power Automate](/power-automate/getting-started) 是一种工作流服务，可跨应用程序和服务自动执行操作。 通过使用来自模板的流或手动创建的流，可以自动执行与这些应用程序和服务关联的常见任务。 启用通信Power Automate流时，可以自动执行警报和用户的重要任务。 您可以配置Power Automate流，以在用户具有通信合规性警报和其他应用程序时通知管理员。
 
-具有包含Microsoft 365合规性的订阅的客户无需额外的 Power Automate 许可证，就可使用建议的默认通信合规性Power Automate模板。 可以自定义默认模板以支持您的组织并涵盖核心通信合规性方案。 如果您选择在这些模板中Power Automate高级 Power Automate 功能，使用 Microsoft 365 合规性连接器创建自定义模板，或使用 Power Automate 模板作为 Microsoft 365 中其他合规性领域的模板，您可能需要Power Automatelicenses。
+具有Microsoft 365通信合规性的订阅的客户不需要额外的 Power Automate 许可证来使用建议的默认通信合规性Power Automate模板。 可以自定义默认模板以支持您的组织并涵盖核心通信合规性方案。 如果您选择在这些模板中Power Automate高级 Power Automate 功能，使用 Microsoft 365 合规性连接器创建自定义模板，或使用 Power Automate 模板作为 Microsoft 365 中其他合规性领域的模板，您可能需要Power Automatelicenses。
 
 > [!IMPORTANT]
 > 在测试流时是否收到有关其他许可证验证Power Automate提示？ 您的组织可能尚未收到此预览功能的服务更新。 更新正在部署中，具有 Microsoft 365 订阅（包括通信合规性）的所有组织都应具有对在 2020 年 10 月 30 日从推荐的 Power Automate 模板创建的流的许可证支持。
@@ -262,7 +262,7 @@ ms.locfileid: "63325133"
 
 ## <a name="unresolve-messages-preview"></a>未解析 (预览) 
 
-解析邮件后，将从"待定"选项卡视图中删除邮件，并显示在"已解决 **"** 选项卡视图中。 调查和修正操作不适用于"已解决 *"视图中的邮件* 。 但是，在某些情况下，可能需要对错误解决的邮件执行其他操作，或者需要在初始解决后进一步调查。 可以使用 unresolve 命令功能将一个或多个邮件从"已解决 *"* 视图移回 *"挂起"* 视图。
+解析邮件后，邮件将从"待定"选项卡视图中删除，并显示在"已解决 **"** 选项卡视图中。 调查和修正操作不适用于"已解决 *"视图中的邮件* 。 但是，在某些情况下，可能需要对错误解决的邮件执行其他操作，或者需要在初始解决后进一步调查。 可以使用 unresolve 命令功能将一个或多个邮件从"已解决 *"* 视图移回 *"挂起"* 视图。
 
 若要解析邮件，请完成以下步骤：
 

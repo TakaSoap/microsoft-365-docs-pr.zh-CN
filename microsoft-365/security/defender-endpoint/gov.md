@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 24158e4a9da9ce48382f08b6dbe701c5640972d4
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: b9a083404da3ad4edc3ccf2f88e1c459dc6f08e2
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321311"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450558"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>面向美国政府客户的Microsoft Defender for Endpoint
 
@@ -77,11 +77,11 @@ Microsoft Defender for Endpoint for US Government 客户需要以下 Microsoft �
 |客户类型|门户 URL|
 |---|---|
 |GCC|<https://security.microsoft.com>|
-|GCC 高|<https://securitycenter.microsoft.us>|
-|DoD|<https://securitycenter.microsoft.us>|
+|GCC 高|<https://security.microsoft.us>|
+|DoD|<https://security.microsoft.us>|
 |
 > [!NOTE]
-> 如果你是客户GCC从 Microsoft Defender for Endpoint 商业移动到 GCChttps://transition.security.microsoft.com，请使用 访问 Microsoft Defender for Endpoint 商业数据。
+> 如果你是客户GCC从 Microsoft Defender for Endpoint https://transition.security.microsoft.com 商业迁移到 GCC，请使用 访问 Microsoft Defender for Endpoint 商业数据。
 
 ## <a name="endpoint-versions"></a>终结点版本
 
@@ -99,27 +99,27 @@ Windows 11|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|
 Windows 10版本 21H1 及以上版本|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10，版本 20H2 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10 2004 版本 2004 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10版本 1909 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10版本 1903 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10 1909 版本 1909 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10 1903 版本 1903 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10 版本 1809 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10版本 1803 ([KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10，版本 1709|![不正确。](images/svg/check-no.svg) <br /> 注意：将不受支持|![是](images/svg/check-yes.svg) ，包含 [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> 注意： [已弃用](/lifecycle/announcements/revised-end-of-service-windows-10-1709)，请升级|![否](images/svg/check-no.svg) <br /> 注意：将不受支持
-Windows 10版本 1703 及更早版本|![不正确。](images/svg/check-no.svg) <br /> 注意：将不受支持|![否](images/svg/check-no.svg) <br /> 注意：将不受支持|![否](images/svg/check-no.svg) <br /> 注意：将不受支持
+Windows 10，版本 1709|![否。](images/svg/check-no.svg) <br /> 注意：将不受支持|![是](images/svg/check-yes.svg) ，包含 [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> 注意： [已弃用](/lifecycle/announcements/revised-end-of-service-windows-10-1709)，请升级|![否](images/svg/check-no.svg) <br /> 注意：将不受支持
+Windows 10版本 1703 及更早版本|![否。](images/svg/check-no.svg) <br /> 注意：将不受支持|![否](images/svg/check-no.svg) <br /> 注意：将不受支持|![否](images/svg/check-no.svg) <br /> 注意：将不受支持
 Windows Server 2022|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows Server 2019 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows Server 2016 (新式) <sup>2</sup>|![是。](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版
 Windows Server 2012 R2 (新式) <sup>2</sup>|![是。](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版
 Windows Server 2016 (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows Server 2012 R2 (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows Server 2008 R2 SP1 (旧版 <sup>) 3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 (<sup>3) 3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 8.1 企业版 (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 8 专业版 (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 7 SP1 Pro (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Linux|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 macOS|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Android|![不正确。](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中
-iOS|![不正确。](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中
+Android|![否。](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中
+iOS|![否。](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中
 |
 
 > [!NOTE]
@@ -127,7 +127,7 @@ iOS|![不正确。](images/svg/check-no.svg) 开发中|![否](images/svg/check-n
 >
 > <sup>2</sup> 了解适用于 [Windows 2016 和 2012 R2 的统](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview)一新式解决方案。 如果之前已使用 MMA 载入服务器，请按照服务器迁移中提供的指南迁移到新[](server-migration.md)解决方案。
 >
-> <sup>3</sup> 使用 [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)如果使用安装向导，或者使用命令行或脚本，则需要在"Azure 云"下选择"Azure 美国政府版"- [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)将"OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE"参数设置为 1[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)。[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) <br /> 最低 MMA 支持版本是 2020 年 3 月 20 (10.20.18029) 。
+> <sup>3</sup> 使用 [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)如果使用安装向导，或者使用命令行或脚本，则需要在"Azure 云"下选择"Azure 美国政府版"- [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)将"OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE"参数设置为 1[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)。[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) <br /> 最低 MMA 支持版本为 2020 年 3 月 20 (10.20.18029) 。
 
 ### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>将 Microsoft Defender 用于服务器时的操作系统版本
 
@@ -191,6 +191,6 @@ Windows Server 2008 R2 SP1|![是。](images/svg/check-yes.svg)|![是](images/svg
 |功能名称|GCC|GCC 高|DoD|
 |---|:---:|:---:|:---:|
 |网络评估|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|
-|网络发现|![是](images/svg/check-yes.svg)|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|
-|报告：攻击面减少、设备控制、设备运行状况、防火墙|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|
+|网络发现|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|
+|报告：设备控制、设备运行状况、防火墙|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|
 |Web 内容筛选|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|
