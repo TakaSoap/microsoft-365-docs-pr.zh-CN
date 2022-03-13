@@ -18,13 +18,13 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 文件在合规性解决方案中可见 '
-ms.openlocfilehash: 7d8bc4dcb9d2852894ca838d88ae8ff2f5226298
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。文件在合规性解决方案中可见 '
+ms.openlocfilehash: 83608f005b9024583142515094b2d958b8f5d915
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271558"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450340"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -81,8 +81,33 @@ Microsoft 终结点 DLP 使你能够审核和管理以下类型的活动，这�
 > [!TIP]
 > 若要确保审核所有受支持的文件类型的活动，请创建[自定义 DLP 策略](create-test-tune-dlp-policy.md)。
 
-
 终结点 DLP 会监视基于活动的 MIME 类型，因此即使文件扩展名已更改也会捕获活动。
+
+### <a name="file-types-preview"></a>文件类型（预览版）
+
+文件类型是一组文件格式，用于保护特定的工作流或业务区域。 可以在 DLP 策略中将一个或多个文件类型用作条件。
+
+|文件类型 |应用  |受监视的文件扩展名  |
+|---------|---------|---------|
+|文字处理 |Word、PDF | .doc、.docx、.docm、.dot、.dotx、.dotm、.docb、.pdf |
+|电子表格    |Excel、CSV、TSV |.xls、.xlsx、.xlt、.xlm、.xlsm、.xltx、.xltm、.xlsb、.xlw、.csv、.tsv         |
+|演示文稿 |PowerPoint|.ppt、.pptx、.pos、.pps、.pptm、.potx、.potm、.ppam、.ppsx|
+|archive  |文件存档和压缩工具 | .zip、.zipx、.rar、.7z、.tar、.gz        |
+|电子邮件    |Outlook |.pst、.ost、.msg         |
+
+### <a name="file-extensions-preview"></a>文件扩展名（预览版）
+
+如果文件类型不包括作为策略中的条件列出所需的文件扩展名，可以改为使用以逗号分隔的文件扩展名。
+
+> [!IMPORTANT]
+> 文件扩展名和文件类型选项不能用作同一规则中的条件。 如果要将它们用作同一策略中的条件，它们必须采用单独的规则。 
+
+> [!IMPORTANT]
+> 这些 Windows 版本支持文件类型和文件扩展功能：
+>- Windows 10 版本 20H1/20H2/21H1 (KB 5006738) 
+>- Windows 10 版本 19H1/19H2 (KB 5007189) 
+>- Windows 10 RS5 (KB 5006744) 
+
 
 ## <a name="whats-different-in-endpoint-dlp"></a>终结点 DLP 中的区别
 
