@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 02/07/2022
-ms.openlocfilehash: a0bca99258bd256797437cdc4756910fc713cf26
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.date: 03/09/2022
+ms.openlocfilehash: f696cd3631573bdb2206c665340f35601e4624ac
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401172"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468980"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 设备控件可移动存储访问控制
 
@@ -35,8 +35,6 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 - 审核，允许或阻止对可移动存储进行读取、写入或执行访问（带排除或不排除）
 
-<br/><br/>
-
 |Privilege|权限|
 |---|---|
 |Access|读取、写入、执行|
@@ -45,8 +43,6 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 |GPO 支持|是|
 |基于用户的支持|是|
 |基于计算机的支持|是|
-
-<br/><br/>
 
 |功能|说明|通过 Intune 部署|通过组策略部署|
 |---|---|---|---|
@@ -68,6 +64,8 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 - **4.18.2111 或** 更高版本：通过 PowerShell 添加"启用或禁用可移动 存储 访问控制"、"默认强制"、客户端计算机策略更新时间、文件信息
 
+- **4.18.2201 或** 更高版本：支持通过 OMA-URI 写入允许存储的文件副本
+
 :::image type="content" source="images/powershell.png" alt-text="PowerShell 接口。":::
 
 > [!NOTE]
@@ -82,17 +80,13 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 ### <a name="removable-storage-group"></a>可移动存储组
 
-<br/><br/>
-
 |属性名称|说明|Options|
 |---|---|---|
 |**GroupId**|GUID 是一个唯一 ID，表示组，将在策略中使用。||
-|**DescriptorIdList**|列出你想要在组中覆盖的设备属性。 有关每个设备属性的详细信息，请参阅 [设备](device-control-removable-storage-protection.md) 属性。 所有属性都区分大小写。 |**PrimaryId**：、 `RemovableMediaDevices`、 `CdRomDevices`、 `WpdDevices`<p>**BusId**：例如，USB、SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**：InstancePathId 是一个唯一标识系统中设备的字符串，例如， `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`。 最后一个号码的 (例如 0 &0) 表示可用插槽，并且可能会从设备更改为设备。 为获得最佳结果，请结尾使用通配符。 例如，`USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`。<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>0751_55E0：匹配此精确的 VID/PID 对<p>55E0：匹配 PID=55E0 的任何媒体 <p>0751：匹配任何具有 VID=0751 的媒体|
+|**DescriptorIdList**|列出你想要在组中覆盖的设备属性。 有关每个设备属性的详细信息，请参阅 [设备](device-control-removable-storage-protection.md) 属性。 所有属性都区分大小写。 |**PrimaryId**：、 `RemovableMediaDevices`、 `CdRomDevices`、 `WpdDevices`<p>**BusId**：例如，USB、SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**：InstancePathId 是一个唯一标识系统中设备的字符串，例如， `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`。 最后一个号码的 (例如 0 &0) 表示可用插槽，并且可能会从设备更改为设备。 为获得最佳结果，请结尾使用通配符。 例如，`USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`。<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`：匹配此精确的 VID/PID 对<p>`_55E0`：匹配任何具有 PID=55E0 的媒体 <p>`0751_`：将任何媒体与 VID=0751 匹配|
 |**MatchType**|当 在 中使用多个设备属性 `DescriptorIDList`时，MatchType 定义关系。|**MatchAll**：下`DescriptorIdList`的任何属性将为 **And** 关系`DeviceID``InstancePathID`;例如，如果管理员将 和 放在每个连接的 USB 上，系统将检查 USB 是否同时满足这两个值。 <p> **MatchAny**：DescriptorIdList 下的属性将为 **Or** 关系;例如，如果管理员`DeviceID``InstancePathID`将 和 放在 ，则对于每个连接的 USB，只要 USB 具有相同的 **DeviceID** 或 **InstanceID** 值，系统就会执行强制操作。 |
 
 ### <a name="access-control-policy"></a>访问控制策略
-
-<br/><br/>
 
 | 属性名称 | 说明 | Options |
 |---|---|---|
@@ -164,7 +158,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
     如果要限制特定用户，请使用 Entry 中的 SID 属性。 如果策略条目中没有任何 SID，则条目将应用于计算机的每一个登录实例。
     
-    如果要监视文件信息进行写入访问，请使用正确的 AccessMask 和正确的选项 (8 或 16) ;下面是捕获文件 [信息的示例](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml)。
+    如果要监视文件信息进行写入访问，请使用正确的 AccessMask 和正确的选项 (16) ;下面是捕获文件 [信息的示例](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml)。
 
     下图演示了 SID 属性的用法，以及方案 1：阻止对全部但允许特定批准的 USB 的写入和执行 [访问的示例](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)。
 
@@ -181,6 +175,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 4. 默认强制：允许你设置默认访问 (，如果) 策略，则允许访问可移动媒体。 例如，仅对 RemovableMediaDevices 具有策略 (Deny 或 Allow) ，但没有针对 CdRomDevices 或 WpdDevices 的任何策略，并且通过此策略设置默认拒绝，将阻止对 CdRomDevices 或 WpdDevices 的读/写/执行访问。
 
    - 部署此设置后，你将看到" **默认允许"** 或" **默认拒绝"**。
+   - 配置此设置时，请考虑磁盘级别和文件系统级别 AccessMask，例如，如果要默认拒绝但允许特定存储，必须同时允许磁盘级别和文件系统级别访问，您必须将 AccessMask 设置为 63。
 
     :::image type="content" source="images/148609579-a7df650b-7792-4085-b552-500b28a35885.png" alt-text="默认允许或默认拒绝 PowerShell 代码":::
 
@@ -188,13 +183,13 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
     :::image type="content" source="images/148608318-5cda043d-b996-4146-9642-14fccabcb017.png" alt-text="设备控制设置":::
 
-   - 部署此设置后，你将看到"已启用"或"已禁用"- "已禁用"表示此计算机没有运行"可存储"访问控制策略。
+   - 部署此设置后，你将 **看到已启用或****已禁用**。 已禁用意味着此计算机没有运行存储可移动控件策略。
 
     :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="在 PowerShell 代码中启用或禁用设备控件":::
 
 6. 设置文件副本的位置：如果要在发生写入访问时拥有文件副本，必须设置系统保存副本的位置。
     
-    必须将其与正确的 AccessMask 和 Option 一起部署 - 请参阅上面的步骤 2。
+    将其与正确的 AccessMask 和 Option 一起部署 - 请参阅上面的步骤 2。
 
     :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="组策略 - 设置文件证据的 locaiton":::
 
@@ -246,7 +241,7 @@ Microsoft Endpoint Manager管理中心 (<https://endpoint.microsoft.com/>) \> **
 
     - 数据类型：String (XML 文件) 
        
-    如果要监视文件信息进行写入访问，请使用正确的 AccessMask 和正确的选项 (8 或 16) ;下面是捕获文件 [信息的示例](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml)。
+    如果要监视文件信息进行写入访问，请使用正确的 AccessMask 和正确的选项 (16) ;下面是捕获文件 [信息的示例](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml)。
 
 3. 默认强制：允许你设置默认访问 (，如果) 策略，则允许访问可移动媒体。 例如，仅对 RemovableMediaDevices 具有策略 (Deny 或 Allow) ，但没有针对 CdRomDevices 或 WpdDevices 的任何策略，并且通过此策略设置默认拒绝，将阻止对 CdRomDevices 或 WpdDevices 的读/写/执行访问。
 
@@ -258,6 +253,7 @@ Microsoft Endpoint Manager管理中心 (<https://endpoint.microsoft.com/>) \> **
       `DefaultEnforcementDeny = 2`
 
     - 部署此设置后，你将看到" **默认允许"** 或" **默认拒绝"**
+    - 配置此设置时，请考虑磁盘级别和文件系统级别 AccessMask，例如，如果要默认拒绝但允许特定存储，必须同时允许磁盘级别和文件系统级别访问，您必须将 AccessMask 设置为 63。
 
     :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="默认强制允许 PowerShell 代码":::
 
@@ -276,7 +272,7 @@ Microsoft Endpoint Manager管理中心 (<https://endpoint.microsoft.com/>) \> **
 
 5. 设置文件副本的位置：如果要在发生写入访问时拥有文件副本，必须设置系统保存副本的位置。
     
-    - OMA-URI： `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
+    - OMA-URI： `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation;**username**;**password**`
 
     - 数据类型：String
     
@@ -295,7 +291,7 @@ Microsoft Endpoint Manager管理中心 (<https://endpoint.microsoft.com/>) \> **
 - Microsoft 365 E5 报告
 
 ```kusto
-//events triggered by RemovableStoragePolicyTriggered
+//RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
 DeviceEvents
 | where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
@@ -315,6 +311,29 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
+```kusto
+//RemovableStorageFileEvent: event triggered by File level enforcement, information of files written to removable storage 
+DeviceEvents
+| where ActionType contains "RemovableStorageFileEvent"
+| extend parsed=parse_json(AdditionalFields)
+| extend Policy = tostring(parsed.Policy) 
+| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
+| extend MediaClassName = tostring(parsed.ClassName)
+| extend MediaInstanceId = tostring(parsed.InstanceId)
+| extend MediaName = tostring(parsed.MediaName)
+| extend MediaProductId = tostring(parsed.ProductId) 
+| extend MediaVendorId = tostring(parsed.VendorId) 
+| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
+| extend DuplicatedOperation = tostring(parsed.DuplicatedOperation)
+| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
+| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, 
+    ActionType, Policy, PolicyRuleId, DuplicatedOperation, 
+    MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber,
+    FileName, FolderPath, FileSize, FileEvidenceLocation,
+    AdditionalFields
+| order by Timestamp desc
+```
+    
 :::image type="content" source="images/block-removable-storage.png" alt-text="描述可移动存储被阻止的屏幕。":::
 
 ## <a name="frequently-asked-questions"></a>常见问题解答

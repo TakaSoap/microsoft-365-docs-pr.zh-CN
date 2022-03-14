@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/10/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 545e0e3a12fda1c45bac27f9c71d4e465ca05b7e
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 6b475a1f56f66c6ec9e1ed09b5311515c5eb31c8
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450600"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468690"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>将设备载入 Microsoft Defender for Business
 
@@ -61,7 +61,7 @@ ms.locfileid: "63450600"
 |---------|---------|---------|
 | **自动载入**<br/> (*已使用 Microsoft Endpoint Manager)* | *Microsoft 365 商业高级版已拥有Microsoft Intune，可以使用此选项*。 自动载入在 Defender for Business 和 Microsoft Endpoint Manager 之间设置连接，然后将Windows载入到 Defender for Business。 若要使用此选项，你的设备必须已在 Endpoint Manager。<br/><br/>若要了解更多信息，请参阅 [自动载入](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)。 | Windows |
 | **本地脚本** <br/> | 此选项使你能够手动将个别设备载入到 Defender for Business。 可以使用本地脚本一次载入最多 10 台设备。<br/><br/>若要了解更多信息，请参阅 [Defender for Business 中的本地脚本](#local-script-in-defender-for-business)。 | Windows <br/>macOS |
-| **Microsoft Intune** 或 **Microsoft Endpoint Manager**<br/> (或Microsoft Intune *客户Endpoint Manager)* | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)[移动设备管理是](/mem/intune/enrollment/device-enrollment)移动设备管理的一Endpoint Manager。  (Microsoft 365 商业高级版客户已拥有 Microsoft Intune.) <br/><br/>如果你在获得 Defender for Business Endpoint Manager已使用 Endpoint Manager，你可以选择继续使用 Endpoint Manager载入和管理设备<br/><br/>若要使用此方法[，请参阅Microsoft Endpoint Manager](#microsoft-endpoint-manager)。 | Windows <br/>macOS<br/>iOS<br/>Android OS | 
+| **Microsoft Intune** 或 **Microsoft Endpoint Manager**<br/> (或Microsoft Intune *客户Endpoint Manager)* | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)[移动设备管理是](/mem/intune/enrollment/device-enrollment)移动设备管理的一Endpoint Manager。  (Microsoft 365 商业高级版客户已拥有 Microsoft Intune.) <br/><br/>如果你已在使用 Endpoint Manager Defender for Business 之前，你可以选择继续使用 Endpoint Manager载入和管理你的设备。<br/><br/>若要使用此方法[，请参阅Microsoft Endpoint Manager](#microsoft-endpoint-manager)。 | Windows <br/>macOS<br/>iOS<br/>Android OS | 
 | **Microsoft Defender for Business 安全配置** <br/> (*使用Microsoft 365 Defender门户*)  | 若要使用此选项，请配置某些设置以促进 Defender for Business 和 Endpoint Manager。 然后，使用在每台设备上下载并运行的Microsoft 365 Defender程序包 () [https://security.microsoft.com](https://security.microsoft.com) 门户中载入设备。 在设备和设备之间建立信任Azure Active Directory (Azure AD) ，Defender for Business 安全策略将推送到设备。<br/><br/>若要了解详细信息，请参阅 [Microsoft Defender for Business 安全配置](#microsoft-defender-for-business-security-configuration)。 | Windows <br/>macOS |
 
 > [!IMPORTANT]

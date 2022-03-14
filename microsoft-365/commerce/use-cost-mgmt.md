@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何使用组织中成本管理功能Microsoft 365 管理中心、分析和管理组织的成本。
 ms.date: 03/09/2022
-ms.openlocfilehash: 0308b5f13d514bcd1f489508e1b95ac36f77040e
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 64531e7b7422c3267f053e1ef098a92bfe6bed28
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450832"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468744"
 ---
 # <a name="use-cost-management-in-the-microsoft-365-admin-center"></a>在管理中心内使用成本Microsoft 365 管理中心
 
@@ -35,7 +35,7 @@ ms.locfileid: "63450832"
 
 ## <a name="what-is-cost-management"></a>什么是成本管理？
 
-通常，成本管理是一种用于计划和控制组织预算的方法。 在Microsoft 365 管理中心中，成本管理功能有助于减少管理组织资产所需的成本和开销。 作为此功能的一部分，Microsoft 将引入使用即付即用计费模型的新产品和服务，在此模型中，你只需支付你使用费用。 可以使用新的成本管理功能：
+成本管理是一种用于计划和控制组织预算的方法。 Microsoft 将引入使用即付即用计费模型的新产品和服务，你只需支付使用费用。 在Microsoft 365 管理中心中，成本管理功能有助于减少管理组织资产所需的成本和开销，并跟踪可变的即付即用费用。 还可以执行以下操作：
 
 - 用于生成每月发票的下载成本和使用情况数据
 - 主动将数据分析应用到成本

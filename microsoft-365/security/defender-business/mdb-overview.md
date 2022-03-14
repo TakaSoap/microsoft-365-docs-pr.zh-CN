@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/09/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 17f4ad39c89aa6990ec041e975a257fdab513d20
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 6db82c1dcc9afceebcb9fff891cb90ddafa95f21
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450028"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468718"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Microsoft Defender for Business 概述
 
@@ -53,7 +53,7 @@ Microsoft Defender for Business 是一种新的终结点安全解决方案，专
 
 - **易于使用的安全解决方案**。 Defender for Business 提供了简化体验，可指导你采取操作，并针对终结点的安全性提供建议和见解。 不需要任何专门知识，因为 Defender for Business 提供向导驱动的配置和默认安全策略，旨在帮助保护组织设备自第一天开始。
 
-- **环境的灵活性**。 无论是使用 Microsoft 云、本地技术还是非 Microsoft 生产力解决方案，Defender for Business 都可以与业务环境一起运行。 Defender for Business 适用于内置于 Windows 的组件，以及适用于 macOS、iOS 和 Android 设备的应用。
+- **环境的灵活性**。 Defender for Business 可以适用于你的业务环境，无论你使用的是Microsoft Intune还是全新使用 Microsoft 云。 Defender for Business 适用于内置于 Windows 的组件，以及适用于 macOS、iOS 和 Android 设备的应用。
 
 - **与 Microsoft 365 Lighthouse** 集成。 如果您是使用 MSP 服务的托管服务提供商 (MSP [) ，Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)更多功能可用。 如果你的客户将 Microsoft 365 商业高级版与 Defender for Business 一起使用，你可以查看已载入到 Microsoft 365 Lighthouse 的客户租户中的安全事件和Microsoft 365 Lighthouse。
 

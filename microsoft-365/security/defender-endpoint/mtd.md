@@ -17,18 +17,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ce5d8fcf693b6586c134b8fe2381d3881e68d9d3
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 07cd42d1ab1c6b945525b1e9ed4b463ee76376e1
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767590"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468930"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender for Endpoint - 移动威胁防护
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
+- [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -45,13 +46,13 @@ Android 和 iOS 上的 Microsoft Defender for Endpoint 提供以下关键功能�
 |功能|说明|
 |---|---|
 |Web 保护|防钓鱼、阻止不安全的网络连接以及支持自定义指示器。|
-|仅 Android (恶意软件防护) |扫描恶意应用。|
+|仅 android (恶意软件防护) |扫描恶意应用。|
 |越狱检测 (仅 iOS) |已越狱设备的检测。|
-|TVM (威胁和漏洞)  |已载入移动设备的漏洞评估。 访问此页面[了解有关](next-gen-threat-and-vuln-mgt.md) Microsoft Defender for Endpoint 危险和漏洞管理的更多信息。 *请注意，在此预览版中仅支持 iOS 上的操作系统漏洞。*|
+|TVM (威胁和漏洞)  |已载入移动设备的漏洞评估。 访问此页面[了解有关](next-gen-threat-and-vuln-mgt.md)在 Microsoft Defender for Endpoint 危险和漏洞管理的更多信息。 *请注意，在此预览版中仅支持 iOS 上的操作系统漏洞。*|
 |统一警报|来自统一 M365 安全控制台中所有平台的警报|
 |条件访问、条件启动|阻止有风险的设备访问公司资源。 此外，还可以将 Defender for Endpoint 风险信号添加到 MAM (应用) |
 |隐私控制。 在预览 (请参阅下面的) |通过控制 Microsoft Defender for Endpoint 发送的数据，在威胁报告中配置隐私。 *请注意，隐私控制当前仅适用于已注册的设备。稍后将添加未注册设备的控件*|
-|与 Microsoft Tunnel|可以与 MICROSOFT TUNNEL集成，这是一种 VPN 网关解决方案，可在单个应用中实现安全性和连接性。 当前仅在 Android 上可用|
+|与 Microsoft Tunnel|可以与 Microsoft Tunnel 集成，这是一种 VPN 网关解决方案，可在单个应用中实现安全性和连接性。 当前仅在 Android 上可用|
 
 所有这些功能都适用于适用于终结点许可证持有者的 Microsoft Defender。 有关详细信息，请参阅 [许可要求](minimum-requirements.md#licensing-requirements)。
 
@@ -75,7 +76,7 @@ Android 和 iOS 上的 Microsoft Defender for Endpoint 提供以下关键功能�
 |注册类型     |详细信息      |
 |--------------------|-------------|
 |Android Enterprise Intune Unified Endpoint Manager (Microsoft Endpoint Manager) |[在 Android Enterprise注册的设备上部署](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
-|使用 Intune Unified Endpoint Manager (Microsoft Endpoint Manager) 的设备管理员|[在设备管理员注册的设备上部署](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
+|使用 Intune Unified Endpoint Manager (Microsoft Endpoint Manager) |[在设备管理员注册的设备上部署](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
 |非托管 BYOD 或由 MAM 管理的其他统一终结点管理员/安装程序应用保护策略 (设备) |[在 MAM 应用中配置应用保护策略 (Defender) ](android-configure-mam.md)|
 
 **iOS**
@@ -83,8 +84,8 @@ Android 和 iOS 上的 Microsoft Defender for Endpoint 提供以下关键功能�
 |注册类型     |详细信息      |
 |--------------------|-------------|
 |使用 Intune Unified Endpoint Manager (Microsoft Endpoint Manager) |1. [部署为 iOS 应用商店应用](ios-install.md)<br/>2. [为监督的 iOS 设备设置没有 VPN 的 Web 保护](ios-install.md#complete-deployment-for-supervised-devices)|
-|未 (INtune UEM) 注册的 BYOD (Microsoft Endpoint Manager) |[部署为 iOS 应用商店应用](ios-install.md)|
-|非托管 BYOD 或由 MAM 管理的其他 UEM/安装程序应用保护策略 (设备) |[在 MAM 应用中配置应用保护策略 (Defender) ](ios-install-unmanaged.md)|
+|使用 Intune UEM (注册) 的未管理 BYOD (Microsoft Endpoint Manager) |[部署为 iOS 应用商店应用](ios-install.md)|
+|非托管 BYOD 或由其他 UEM/安装程序应用保护策略管理的设备 (MAM) |[在 MAM 应用中配置应用保护策略 (Defender) ](ios-install-unmanaged.md)|
 
 ### <a name="end-user-onboarding"></a>最终用户载入
 

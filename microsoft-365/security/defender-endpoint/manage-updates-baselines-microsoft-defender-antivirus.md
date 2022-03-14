@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/07/2022
+ms.date: 03/14/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e19b6400643b29005a6c92323f58f7dc996db49e
-ms.sourcegitcommit: ad6d9fd5ad050c72622a32a191997fe6d7b2deee
+ms.openlocfilehash: 2f6f2135e81bf99f6391b75067ad89d1af3a712c
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63353897"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468704"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
@@ -42,7 +42,7 @@ ms.locfileid: "63353897"
 
 ## <a name="security-intelligence-updates"></a>安全智能更新
 
-Microsoft Defender 防病毒云[提供的](cloud-protection-microsoft-defender-antivirus.md)保护 (也称为 Microsoft 高级保护服务或 MAPS) 并定期下载安全智能更新以提供保护。
+Microsoft Defender 防病毒云[提供的](cloud-protection-microsoft-defender-antivirus.md)保护 (也称为 Microsoft 高级保护服务或 MAPS) 并定期下载动态安全智能更新以提供额外保护。 这些动态更新不会通过安全智能更新 KB2267602 来更改常规安全智能更新。
 
 > [!NOTE]
 > 更新在下列 KB 下发布：
