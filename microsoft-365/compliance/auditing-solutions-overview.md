@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 了解如何审核 Microsoft 365 组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff7a456317827fc629d4e704037ad7586bad9f0d
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 92fb008e7fe03b4871b8838d78965c1508a20fdc
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221360"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494522"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 中的审核解决方案
 
@@ -65,7 +65,7 @@ Microsoft 365 提供两种审核解决方案：基本审核和高级审核。
 
 - **审核记录被延长的保留**。 默认情况下，Exchange、SharePoint 和 Azure Active Directory 审核记录将保留一年。 默认情况下，所有其他活动的审核记录将保留 90 天，或者可以使用审核日志保留策略来配置较长的保留期。
 
-- **高价值、重要的高级审核事件**。 关键事件的审计记录可以帮助组织进行法务调查和合规调查，方法是提供事件的可见性，如访问邮件时间、回复和转发邮件时间、用户在 Exchange Online 和 Sharepoint Online 中搜索的时间和内容。 这些关键事件可以帮助你调查可能的违规行为，并确定泄露的范围。
+- **高价值重要高级审核事件**。重要事件的审核记录可帮助组织通过提供重要事件的可见性（例如访问邮件项目的时间、或回复和转发邮件项目的时间，或用户在 Exchange Online 和 SharePoint Online 中的搜索时间和内容）来执行取证和合规性调查。这些关键事件可以帮助你调查可能的违规行为，并确定泄露的范围。
 
 - **Office 365管理活动API的更高带宽**。 高级审核为组织提供了更多的带宽来通过 Office 365 管理活动 API 访问审核日志。 虽然所有组织（具有基本审核或高级审核）最初都分配了每分钟 2000 个请求的基线，但根据组织的席位数及其许可订阅，此限制将动态增加。 这导致采用高级审核的组织获得的带宽是采用基本审核的组织的两倍。
 
@@ -98,6 +98,8 @@ Microsoft 365 提供两种审核解决方案：基本审核和高级审核。
 
 ### <a name="basic-audit"></a>基本审核
 
+- Microsoft 365 商业基础版订阅
+- Microsoft 365 商业应用版订阅
 - Microsoft 365 企业版 E3 订阅
 - Microsoft 365 商业高级版
 - Microsoft 365 教育版 A3 订阅

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: fb7448ffd4ed56deb41bbb1d128608b88e9617ea
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 61d262c04d4a304506bc521d155be71f81d219ca
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871823"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468756"
 ---
 # <a name="get-started-with-content-explorer"></a>内容资源管理器入门
 
@@ -70,7 +70,7 @@ ms.locfileid: "61871823"
 
 有两种角色可以授予对内容浏览器的访问权限，并且是使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Microsoft 安全与合规中心</a> 授予的：
 
-- **内容资源管理器列表查看员**：此角色组的成员资格允许你在列表视图中查看每个项目及其位置。 已为此角色组预分配 `data classification list viewer` 角色。
+- **内容资源浏览器列表查看器**：借助此角色组中的成员身份，可以在列表视图中查看每个项及其位置。`data classification list viewer` 角色已预先分配给此角色组。
 
 - **内容浏览器内容查看器**：通过此角色组中的成员身份，可以查看列表中每个项的内容。已将 `data classification content viewer` 角色预分配给此角色组。
 
@@ -91,7 +91,7 @@ ms.locfileid: "61871823"
 - 信息保护调查员
 - 信息保护读者
 
-下面是处于预览状态的 MIP 角色组的列表。 若要了解有关 的详细信息，请参阅[安全与合规中心](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)中的角色组
+下面是处于预览状态的 MIP 角色组的列表。 要了解详细信息，请参阅 [安全与合规中心中的角色组](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - 信息保护
 - 信息保护管理员
@@ -106,9 +106,6 @@ ms.locfileid: "61871823"
 ### <a name="sensitive-information-types"></a>敏感信息类型
 
 [DLP 策略](dlp-learn-about-dlp.md)可帮助保护定义为 **敏感信息类型** 的敏感信息。 Microsoft 365 在多个不同区域包含[适用于众多常用敏感信息类型的定义](sensitive-information-type-entity-definitions.md)，它们随时可供使用。 例如，信用卡号、银行帐号、国民身份证号码和 Windows Live ID 服务编号。
-
-> [!NOTE]
-> 内容资源管理器当前不会扫描 Exchange Online 中的敏感信息类型。
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 
@@ -134,29 +131,26 @@ ms.locfileid: "61871823"
 ![数据分类导出控件。](../media/data_classification_export_control.png)
 
 
+> [!NOTE]
+> 最多可能需要 *七天* 时间才能在内容资源浏览器中更新计数。
+
 ### <a name="search"></a>搜索
 
-向下钻取到某个位置（例如 Exchange 文件夹，或者 SharePoint 或 OneDrive 网站）时，将显示 **搜索** 工具。
+向下钻取到某个位置（例如 Exchange 或 Teams 文件夹，或 SharePoint 或 OneDrive 网站）时，将显示 **搜索** 工具。
 
 ![内容资源管理器搜索工具。](../media/data_classification_search_tool.png)
 
-
 搜索工具的范围是“**所有位置**”窗格中显示的内容和可搜索的内容，具体取决于所选位置。 
 
-如果所选位置为 **Exchange**，则可搜索邮箱的完整电子邮件地址，例如 `user@domainname.com`。
+如果所选位置为 **Exchange** 或 **Teams**，则可搜索邮箱的完整电子邮件地址，例如 `user@domainname.com`。
 
 如果所选位置为 **SharePoint** 或 **OneDrive**，当你向下钻取到网站名称、文件夹和文件时，将显示搜索工具。 
 
-> [!NOTE]
-> **OneDrive** 我们在预览计划中听取了有关 OneDrive 集成的宝贵反馈。 根据这些反馈，OneDrive 功能将保留在预览中，直到所有修补程序均已就位。 根据你的租户，某些客户可能无法将 OneDrive 视为位置。 非常感谢你在这方面的持续支持。
-
 可搜索：
-
 
 |值|示例  |
 |---------|---------|
 |完整网站名称    |`https://contoso.onmicrosoft.com/sites/sitename`    |
-|根文件夹名称 - 获取所有子文件夹    | `/sites`        |
 |文件名    |    `RES_Resume_1234.txt`     |
 |文件名开头的文本| `RES`|
 |文件名中下划线字符 ( _ ) 后面的文本|`Resume` 或 `1234`| 

@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 先查看 Microsoft 365 服务的运行状况，然后再致电支持人员，查看活动服务是否中断。
-ms.openlocfilehash: d5af62bd31bc5fe6c3a3f04657d6cf0ea6083eaa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4a72132872c890f755cb537e06c42412aa17fb9f
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166786"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468770"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>如何检查 Microsoft 365 服务运行状况
 
@@ -48,7 +48,7 @@ ms.locfileid: "60166786"
     > [!NOTE]
     > 分配为全局管理员或服务支持管理员角色的人员可以查看服务运行状况。要允许 Exchange、SharePoint 和 Skype for Business 管理员查看服务运行状况，其还必须分配为服务管理员角色。有关可以查看服务运行状况的角色的详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)。
 
-2. 要查看服务运行状况，请在管理中心中转到 **运行状况** > **服务运行状况**，或在 **主页仪表板** 上选择 **服务运行状况** 卡片。该仪表板卡片会指示是否存在活动的服务问题，并指向 **服务运行状况** 详细页面的链接。
+2. 要查看服务运行状况，请从管理中心的左侧导航转到 **运行状况** > **服务运行状况**，或在 **主页仪表板** 上选择 **服务运行状况** 卡片。该仪表板卡片会指示是否存在活动的服务问题，并指向 **服务运行状况** 详细页面的链接。
 
 3. 在 **服务运行状况** 页上，每个云服务的健康状态以表格格式显示。
 
