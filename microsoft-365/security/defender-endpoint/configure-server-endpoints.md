@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5f0b846fdbfaa76250ae64ae281afc9592a24eb4
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 6f6ada6604190ccba270b287201d94ba2acbf6d2
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450306"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504851"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows载入 Microsoft Defender for Endpoint 服务
 
@@ -298,6 +298,8 @@ Msiexec /x md4ws.msi /quiet
     ```  
 
      >[!NOTE]
+    >如果需要解决代理安装问题，将"-etl -log"添加到install.ps1脚本参数。
+    >
     >推荐的执行策略设置为 `Allsigned`。 如果脚本作为 SYSTEM 在终结点上运行，则需要将脚本的签名证书导入到本地计算机受信任发布者存储中。
 
     \\使用共享文件的文件服务器的完全限定域名 (FQDN) ，将 servername-or-dfs-space\share-name 替换为 UNC *install.ps1* 路径。 安装程序包md4ws.msi必须放在同一目录中。  还要确保 UNC 路径的权限允许对正在安装平台的计算机帐户进行读取访问。

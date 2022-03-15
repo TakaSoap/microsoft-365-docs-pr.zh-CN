@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365网络连接测试工具
-ms.openlocfilehash: 8704da93d8f7ec95460ae5a275289176bccb0c22
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: e464b4e651276f8b36f54e91ea0bfc7b7b52d69b
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494494"
+ms.locfileid: "63504558"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365网络连接测试工具
 
@@ -255,7 +255,7 @@ Web 浏览器测试完成后，系统将提示你从网站下载高级客户端�
 
 我们提供可供远程部署和执行工具使用的命令行可执行文件，并运行与 Microsoft 365 网络连接测试工具网站中提供的相同测试。
 
-可以在此处下载命令行测试工具： ![命令行工具](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
+可以在此处下载命令行测试工具： [命令行工具](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
 
 可以通过双击文件资源管理器中的可执行文件来运行Windows，或者可以从命令提示符启动它，或者可以使用任务计划程序安排它。
 

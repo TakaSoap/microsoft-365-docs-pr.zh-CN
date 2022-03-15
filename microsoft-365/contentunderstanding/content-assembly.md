@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何使用 Microsoft SharePoint Syntex 中的内容程序集自动创建文档和其他SharePoint Syntex。
-ms.openlocfilehash: 240b67ea2ca8c1119654096c365e958995e9c946
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 9da2aa91443ffe1dd3bbd632b5284ce8f7622069
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494550"
+ms.locfileid: "63504562"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>使用 Microsoft 网站中的内容程序集SharePoint Syntex
 
@@ -64,7 +64,7 @@ ms.locfileid: "63494550"
    - [从列表或库列中的选项中选择](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
 
    > [!NOTE]
-   > 目前，不能向表格单元格或表格内添加占位符。   
+   > 只能为文本创建占位符。 目前，不支持图像、智能图片、表格和项目符号列表。   
 
 ### <a name="associate-a-placeholder-by-entering-text-or-selecting-a-date"></a>通过输入文本或选择日期来关联占位符 
 

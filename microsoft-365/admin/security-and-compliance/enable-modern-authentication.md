@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: 了解如何设置注册表项，为已安装 2013 Microsoft Office新式验证。
-ms.openlocfilehash: 9ab3bb8e352a90cd4cef0c3c56496b3431e8b746
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 010dce00762e4e73d21a9da668a7ac9606d731f9
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494452"
+ms.locfileid: "63504746"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>在 Windows 设备上启用适用于 Office 2013 的新式验证
 
@@ -48,9 +48,8 @@ ms.locfileid: "63494452"
 |注册表项|类型|值|
 |:---|:---:|---:|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|1|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
-|
+|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
+|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
 
 创建或修改以下注册表项以强制Outlook Web 服务（如 EWS 和自动发现）使用较新的身份验证方法。 我们建议用户强制Outlook新式验证。
 
@@ -67,7 +66,7 @@ ms.locfileid: "63494452"
    HKEY_CURRENT_USER\Software\Microsoft\Exchange\
    ```
 
-4. 如果 *缺少 AlwaysUseMSOAuthForAutoDiscover* 键，请键入 *AlwaysUseMSOAuthForAutoDiscover*，然后按 **Enter。**
+4. 如果 *缺少 AlwaysUseMSOAuthForAutoDiscover* 项，请在"编辑"菜单上指向 **"新建** "，然后选择 **"DWORD 值"**。 键入 *AlwaysUseMSOAuthForAutoDiscover*，然后按 **Enter。**
 
 5. 右键单击 *AlwaysUseMSOAuthForAutoDiscover*，然后单击修改 **。**
 
@@ -76,10 +75,10 @@ ms.locfileid: "63494452"
 7. 在注册表编辑器中，找到并单击以下注册表子项：
 
    ```console
-   HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\
+   HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\
    ```
 
-8. 如果上述表中的值已存在，请根据需要修改这些值，然后退出注册表编辑器。 如果没有，请在"编辑"菜单上指向" **新建**"，然后单击缺少的键的 **DWORD** 值。 
+8. 如果上表中的键已存在，请根据需要修改值，然后退出注册表编辑器。 如果没有，请在"编辑"菜单上指向" **新建** "，然后选择 **"DWORD 值** "以创建缺少的键。 
 
 9. 例如，如果 *缺少 EnableADAL* 键，请键入 *EnableADAL*，然后按 **Enter。**
 
@@ -105,9 +104,8 @@ ms.locfileid: "63494452"
 
 |注册表项|类型|值|
 |:---|:---:|---:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
+|HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|0|
-|
    
 ## <a name="related-content"></a>相关内容
 

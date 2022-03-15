@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fdab6896edf704c4daa83ec993c0716c54d0f43
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 0703e1f23d9d54a907b39382438f85f544a5b6de
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494564"
+ms.locfileid: "63504862"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在电子邮件门户中查看Microsoft 365 Defender报告
 
@@ -485,6 +485,9 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 ![威胁防护状态报告中的网络钓鱼电子邮件的检测技术视图。](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
+> [!NOTE]
+> 从 2021 年 5 月开始，电子邮件中的网络钓鱼检测已更新 **为包括包含** 网络钓鱼 URL 的邮件附件。 此更改可能会将某些 **\>** 检测卷从"通过电子邮件恶意软件查看"视图转移到"通过电子邮件 **查看\>** 数据""钓鱼邮件"视图。 换句话说，带有钓鱼 URL 的邮件附件（传统上被标识为恶意软件）现在可能会被标识为网络钓鱼。
+
 In the **View data by Email \> Phish** and **Chart breakdown by Detection Technology** view， the following information is shown in the chart：
 
 - **URL 恶意信誉**<sup>\*</sup>：来自 Defender 的恶意 URL 信誉Office 365其他客户进行Microsoft 365触发。
@@ -599,6 +602,9 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
 ### <a name="view-data-by-email--malware-and-chart-breakdown-by-detection-technology"></a>按电子邮件恶意软件查看 \> 数据，按检测技术查看图表细目
 
 ![威胁防护状态报告中恶意软件的检测技术视图。](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+
+> [!NOTE]
+> 从 2021 年 5 月开始，电子邮件中的恶意软件检测已更新为在邮件附件 **中包括** 有害的 URL。 此更改可能会将一些 **\>** 检测卷从"通过电子邮件查看电子邮件"视图转移到"通过电子邮件 **恶意软件查看数据\>"** 视图。 换句话说，在传统上被标识为网络钓鱼的邮件附件中，有害的 URL 现在可能会标识为恶意软件。
 
 在" **通过电子邮件查看数据 \> "和** "按检测技术查看图表细分 **"** 视图中，图表中显示了以下信息：
 

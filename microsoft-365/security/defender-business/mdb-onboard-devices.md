@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 6b475a1f56f66c6ec9e1ed09b5311515c5eb31c8
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: c5de66418b242beb975cce0d6ece299753360c99
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468690"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504778"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>将设备载入 Microsoft Defender for Business
 
@@ -33,36 +33,44 @@ ms.locfileid: "63468690"
 
 借助 Microsoft Defender for Business，你可以从多个选项中进行选择，以载入你的组织设备。 本文将引导你完成你的选项，并包括载入工作原理的概述。
 
-## <a name="what-to-do"></a>需执行的操作
-
-1. 查看载入 [设备的选项，](#device-onboarding-methods)然后选择以下方法之一： 
-
-   - [自动载入Windows注册的设备Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
-   - [适用于 Windows 和 Mac 设备的本地脚本](#local-script-in-defender-for-business)
-   - [Microsoft Endpoint Manager (Microsoft Intune) ](#microsoft-endpoint-manager)
-   - [Microsoft Defender for Business 安全配置](#microsoft-defender-for-business-security-configuration)
-
-2. [对新载入的设备](#run-a-detection-test)运行检测Windows测试。
-
-3. [请参阅你的下一步](#next-steps)。 
-
-本文还包括有关为设备运行检测Windows[和](#run-a-detection-test)将设备载[出的信息](#offboarding-a-device)。
-
 >
 > **有空吗？**
 > 请参加有关 <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business 的简短调查</a>。 我们非常乐意听取你的宝贵意见！
 >
 
+## <a name="get-the-device-onboarding-guide"></a>获取设备载入指南
+
+使用以下指南和信息为组织选择最佳选项。
+
+[:::image type="content" source="media/mdb-device-onboarding.png" alt-text="设备载入图表的屏幕截图":::](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) <br/>
+[PDF](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) | [Visio](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.vsdx)
+
+## <a name="what-to-do"></a>需执行的操作
+
+1. [查看载入设备的选项，](#device-onboarding-methods)然后选择方法。 
+
+   - [对已注册Windows的设备使用自动载入Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
+   - [使用本地脚本载入Windows macOS 设备](#local-script-in-defender-for-business)
+   - [使用 Microsoft Endpoint Manager载入Windows macOS 或移动设备](#microsoft-endpoint-manager)
+   - [了解使用 Microsoft Defender for Business 安全配置进行设备载入](#microsoft-defender-for-business-security-configuration)
+
+2. [对新载入的设备](#run-a-detection-test)运行检测Windows测试。
+
+3. [请参阅你的下一步](#next-steps)。 
+
+本文还包括有关将设备 [载出的信息](#offboarding-a-device)。
+
 ## <a name="device-onboarding-methods"></a>设备载入方法
 
-下表介绍了将设备载入 Defender for Business 最常用的方法。 
+Defender for Business 为载入设备提供了几种不同的方法，无论你已在使用 Microsoft Endpoint Manager，还是只需要简化的载入体验。 将设备载入 Defender for Business 最常用的方法包括：
 
-| 载入方法  | 说明  | 操作系统 |
-|---------|---------|---------|
-| **自动载入**<br/> (*已使用 Microsoft Endpoint Manager)* | *Microsoft 365 商业高级版已拥有Microsoft Intune，可以使用此选项*。 自动载入在 Defender for Business 和 Microsoft Endpoint Manager 之间设置连接，然后将Windows载入到 Defender for Business。 若要使用此选项，你的设备必须已在 Endpoint Manager。<br/><br/>若要了解更多信息，请参阅 [自动载入](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)。 | Windows |
-| **本地脚本** <br/> | 此选项使你能够手动将个别设备载入到 Defender for Business。 可以使用本地脚本一次载入最多 10 台设备。<br/><br/>若要了解更多信息，请参阅 [Defender for Business 中的本地脚本](#local-script-in-defender-for-business)。 | Windows <br/>macOS |
-| **Microsoft Intune** 或 **Microsoft Endpoint Manager**<br/> (或Microsoft Intune *客户Endpoint Manager)* | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)[移动设备管理是](/mem/intune/enrollment/device-enrollment)移动设备管理的一Endpoint Manager。  (Microsoft 365 商业高级版客户已拥有 Microsoft Intune.) <br/><br/>如果你已在使用 Endpoint Manager Defender for Business 之前，你可以选择继续使用 Endpoint Manager载入和管理你的设备。<br/><br/>若要使用此方法[，请参阅Microsoft Endpoint Manager](#microsoft-endpoint-manager)。 | Windows <br/>macOS<br/>iOS<br/>Android OS | 
-| **Microsoft Defender for Business 安全配置** <br/> (*使用Microsoft 365 Defender门户*)  | 若要使用此选项，请配置某些设置以促进 Defender for Business 和 Endpoint Manager。 然后，使用在每台设备上下载并运行的Microsoft 365 Defender程序包 () [https://security.microsoft.com](https://security.microsoft.com) 门户中载入设备。 在设备和设备之间建立信任Azure Active Directory (Azure AD) ，Defender for Business 安全策略将推送到设备。<br/><br/>若要了解详细信息，请参阅 [Microsoft Defender for Business 安全配置](#microsoft-defender-for-business-security-configuration)。 | Windows <br/>macOS |
+- **已注册** Windows的设备自动载入Microsoft Endpoint Manager。 自动载入在 Defender for Business 和 Microsoft Endpoint Manager 之间设置连接，然后将Windows载入到 Defender for Business。 若要使用此选项，你的设备必须已在 Endpoint Manager。 若要了解更多信息，请参阅 [自动载入](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)。
+
+- **手动将** Windows macOS 设备载入 Defender for Business 的本地脚本。 可以使用本地脚本一次载入最多 10 台设备。 若要了解更多信息，请参阅 [Defender for Business 中的本地脚本](#local-script-in-defender-for-business)。
+
+- **Microsoft Intune** 或 **Microsoft Endpoint Manager** 移动设备Windows macOS 和移动设备。 你可以在你的设备上注册Endpoint Manager，然后将你的设备载入 Defender for Business。 [Microsoft 365 商业高级版](../../business-premium/index.md)客户已拥有[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)，Microsoft Intune[移动设备](/mem/intune/enrollment/device-enrollment)管理现在都属于 Endpoint Manager。 若要使用此方法[，请参阅Microsoft Endpoint Manager](#microsoft-endpoint-manager)。
+
+- **Microsoft Defender for Business 安全配置**，用于直接在 Microsoft 365 Defender 门户 () [https://security.microsoft.com](https://security.microsoft.com) 。 若要使用此选项，请配置某些设置以促进 Defender for Business 和 Endpoint Manager。 然后，使用在每台设备上Microsoft 365 Defender、 () [https://security.microsoft.com](https://security.microsoft.com) 程序包，在 Microsoft 365 Defender 门户中载入设备。 在设备和设备之间建立信任Azure Active Directory (Azure AD) ，Defender for Business 安全策略将推送到设备。 若要了解详细信息，请参阅 [Microsoft Defender for Business 安全配置](#microsoft-defender-for-business-security-configuration)。 
 
 > [!IMPORTANT]
 > 如果出现问题且载入过程失败，请参阅 [Microsoft Defender for Business 疑难解答](mdb-troubleshooting.yml)。
@@ -72,12 +80,13 @@ ms.locfileid: "63468690"
 自动载入选项仅适用于Windows设备。 如果满足以下条件，则自动载入可用：
 
 - 在获得 Defender for Business 之前，你的组织已在 Microsoft Endpoint Manager、Microsoft Intune MDM () mdm Microsoft Intune或移动设备管理
+
 - 你已经在Windows注册了Endpoint Manager
 
 如果Windows设备已在 Endpoint Manager 中注册，则 Defender for Business 将在你设置和配置 Defender for Business 的过程中检测这些设备。 系统将会询问你是否要将自动载入用于所有或部分 Windows设备。 你可以一次Windows所有设备，或选择开始使用的特定设备，然后以后添加更多设备。
 
 > [!TIP]
-> 我们建议选择"已注册所有设备"选项。 这样，Windows以后在 Endpoint Manager中注册设备时，它们将自动载入 Defender for Business。
+> 我们建议选择"已注册所有设备"选项。 这样，Windows以后在 Endpoint Manager中注册设备时，它们将自动载入 Defender for Business。 此外，如果你一直在管理 Endpoint Manager 中的安全策略和设置，我们建议切换到 Microsoft 365 Defender 门户来管理你的设备、策略和设置。 若要了解更多信息， [请参阅选择在何处管理安全策略和设备](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices)。
 
 若要详细了解自动载入，请参阅使用向导设置 [Microsoft Defender for Business 中的](mdb-use-wizard.md)步骤 2。
 
