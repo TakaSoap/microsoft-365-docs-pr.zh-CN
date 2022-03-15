@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Microsoft 365 管理 中心中的网络连接概述
-ms.openlocfilehash: 3a0f2b8d54c90884a79e79288d173aa5e17c0ef2
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: c2f44ba97cb3d70dbe065df4a5b631f569460bff
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450310"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494536"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 中心中的网络连接
 
@@ -39,13 +39,11 @@ ms.locfileid: "63450310"
 
 首次导航到网络性能页面时，必须配置位置，才能查看全局网络性能地图、范围为整个租户的网络评估、远程工作与现场工作的用户百分比，以及要针对和/或进一步调查的当前问题列表。 从概述窗格中，可以向下钻取以查看特定网络性能指标和按位置的问题。 有关详细信息，请参阅网络[中心中的网络Microsoft 365 管理概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
 
-系统可能会要求你代表你的组织加入此功能的公共预览版。 接受通常会立即发生，之后你将看到网络连接页面。
-
 若要访问"网络连接"页，您必须是组织内部Microsoft 365。 报告读取管理角色将具有此信息的读取权限。 若要配置网络连接的位置和其他元素，管理员必须具有服务支持管理员角色。
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>显示网络连接评估的先决条件
 
-To get started， turn on your location opt-in setting to automatically collect data from devices using Windows Location Services， go to your Locations list to add or upload location data， or run the Microsoft 365 network connectivity test from your office locations. 尽管可以跨组织评估网络连接，但需要针对特定办公地点进行网络设计改进。 确定每个办公室位置后，会提供这些位置的网络连接信息。 有三个选项用于从办公地点获取网络评估：
+To get started， turn on your location opt-in setting to automatically collect data from devices using Windows Location Services， go to your Locations list to add or upload location data， or run the Microsoft 365 network connectivity test from your office locations. 下面详细介绍了这三种办公地点信息选项。 尽管可以跨组织评估网络连接，但需要针对特定办公地点进行网络设计改进。 确定每个办公室位置后，会提供这些位置的网络连接信息。 有三个选项用于从办公地点获取网络评估：
 
 ### <a name="1-enable-windows-location-services"></a>1. 启用Windows定位服务
 
@@ -91,9 +89,6 @@ Windows必须征得计算机同意才能使用位置服务。 可以通过运行
 **网络评估** 将许多网络性能指标聚合到企业网络运行状况的快照中，以 0 到 100 的点值表示。 网络评估的范围既包括整个租户，也适用于用户连接到租户的每个地理位置，为 Microsoft 365 管理员提供了一种简单方法，以便立即掌握企业网络运行状况的全局信息，并快速深入到任何全局办事处位置的详细报告。
 
 具有多个办公地点和普通网络外围体系结构的复杂企业可以在初次载入 Microsoft 365 或修正使用增长时发现的网络性能问题时，从此信息中获益。 对于使用 Microsoft 365 的小型企业或已具有简单直接网络连接的企业，通常不需要这样做。 拥有 500 多个用户和多个办公地点的企业预期受益最大。
-
->[!IMPORTANT]
->Microsoft 365 管理 中心中的网络见解、性能建议和评估目前处于预览状态，仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Enterprise网络连接挑战
 
@@ -218,7 +213,7 @@ Microsoft 365服务前端是 Microsoft 全球网络的入口点，其中Office�
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>什么是最佳服务Microsoft 365前端？
 
-最佳的Microsoft 365入口是离网络出口最近的入口，通常位于城市或都市区域。 使用 [Microsoft 365 连接](office-365-network-mac-perf-onboarding-tool.md)测试 (预览) 确定使用中的 Microsoft 365 服务前端和最优服务前端的位置。 如果该工具确定使用中的前端是最佳的，则最好连接到 Microsoft 的全局网络。
+最佳的Microsoft 365入口是离网络出口最近的入口，通常位于城市或都市区域。 使用 [Microsoft 365连接](office-365-network-mac-perf-onboarding-tool.md)测试工具确定使用中的服务Microsoft 365和最佳服务前端的位置。 如果该工具确定使用中的前端是最佳的，则最好连接到 Microsoft 的全局网络。
 
 ### <a name="what-is-an-internet-egress-location"></a>什么是 Internet 出口位置？
 

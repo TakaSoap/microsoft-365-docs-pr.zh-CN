@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理员可以了解如何创建包含特定技术和有效负载的自动模拟，这些模拟在 Microsoft Defender for Office 365计划 2 中满足指定条件时启动。
 ms.technology: mdo
-ms.openlocfilehash: 47732960ad5fac9884f388836ea23a2b9283c93c
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 029dce5b7f0b5c6e62b064aa9155d7b07c6a80d7
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419342"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63495020"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>攻击模拟培训的模拟自动化
 
@@ -91,7 +91,7 @@ ms.locfileid: "63419342"
   - **低**
   - **中**
   - **高**
-- **源**：指示有效负载是在组织中创建的，还是 Microsoft 预先存在的有效负载目录的一部分。 有效值为：
+- **源**：指示有效负载是在组织中创建的，还是 Microsoft 预先存在的有效负载目录的一部分。 有效值包含:
   - **Global**
   - **租户**
   - **全部**
@@ -247,7 +247,7 @@ ms.locfileid: "63419342"
     你需要在登录页面页面上配置以下 **其他** 设置：
 
     - **选择登陆页面布局**：选择 5 个可用的登陆页面模板之一。
-    - **添加徽标**：单击"浏览"查找并选择.png、.jpeg 或 .gif 文件以添加到 Microsoft 选择的所有有效负载。 若要删除徽标，请单击"删除 **"**。
+    - **添加徽标**：单击"浏览"查找并选择.png、.jpeg 或 .gif 文件以添加到 Microsoft 选择的所有有效负载。 徽标大小应最大为 210 x 70，以避免失真。 若要删除徽标，请单击"删除 **"**。
     - **有效负载指示器**：如果你之前在"选择社交工程技术"页上选择了"恶意软件附件"或"链接到恶意软件"，[则此设置不可用](#select-one-or-more-social-engineering-techniques)。
 
       选择 **"将有效负载指示器添加到电子邮件** "可帮助用户了解如何识别网络钓鱼邮件。

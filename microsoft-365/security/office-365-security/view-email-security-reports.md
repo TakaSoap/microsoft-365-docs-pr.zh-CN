@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08ab4e4e0d85dec56de8285659cead3e1dfcb468
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3fdab6896edf704c4daa83ec993c0716c54d0f43
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321329"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494564"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在电子邮件门户中查看Microsoft 365 Defender报告
 
@@ -36,13 +36,35 @@ ms.locfileid: "63321329"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Defender <https://security.microsoft.com> 门户中提供了各种报告，可帮助你查看电子邮件安全功能（如 Microsoft 365 中的反垃圾邮件、反恶意软件和加密功能）如何保护你的组织。 如果您具有 [必要的权限](#what-permissions-are-needed-to-view-these-reports)，您可以查看和下载这些报告，如本文中所述。
+<https://security.microsoft.com> Microsoft 365 Defender 门户中提供了各种报告，可帮助你查看电子邮件安全功能（如电子邮件中的反垃圾邮件和反恶意软件Microsoft 365功能）如何保护你的组织。 如果您具有 [必要的权限](#what-permissions-are-needed-to-view-these-reports)，您可以查看和下载这些报告，如本文中所述。
 
 > [!NOTE]
 >
 > 电子邮件和协作报告页面上的 **一些&需要使用** Microsoft Defender 进行Office 365。 有关这些报告的信息，请参阅在 Office 365 [门户](view-reports-for-mdo.md)中查看 Microsoft 365 Defender 报告。
 >
 > 与邮件流相关的报告现在位于Exchange中心。 有关这些报告详细信息，请参阅新管理中心中的Exchange[报告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
+
+## <a name="email-security-report-changes-in-the-microsoft-365-defender-portal"></a>电子邮件安全报告在电子邮件Microsoft 365 Defender更改
+
+下表介绍了 Microsoft 365 Defender 门户中) EOP) 和 Microsoft Defender for Office 365 报告（已替换、移动或已弃用）。 Exchange Online Protection (
+
+<br>
+
+****
+
+|已弃用的报告和 cmdlet|新报表和 cmdlet|消息中心 ID|Date|
+|---|---|:---:|:---:|
+|**URL 跟踪** <p> Get-URLTrace|[URL 保护报告](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|2021 年 6 月|
+|**已发送和已接收电子邮件报告** <p> Get-MailTrafficReport <br> Get-MailDetailReport|[威胁防护状态报告](#threat-protection-status-report) <br> [邮件流状态报告](#mailflow-status-report) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|2021 年 6 月|
+|**转发报告** <p> 无 cmdlet|[EAC 中的自动转发邮件报告](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <p> 无 cmdlet|MC250533|2021 年 6 月|
+|**保险箱附件文件类型报告** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[威胁防护状态报告：通过电子邮件恶意软件查看 \> 数据](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|2021 年 6 月|
+|**保险箱附件邮件处置报告** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[威胁防护状态报告：通过电子邮件恶意软件查看 \> 数据](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|2021 年 6 月|
+|**电子邮件报告中检测到的恶意软件** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[威胁防护状态报告：通过电子邮件恶意软件查看 \> 数据](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|2021 年 6 月|
+|**垃圾邮件检测报告** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[威胁防护状态报告：通过电子邮件垃圾邮件查看 \> 数据](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|2021 年 10 月|
+|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|2022 年 5 月|
+|**Exchange传输规则报告** <p> Get-MailTrafficPolicyReport <br> Get-MailDetailTransportRuleReport|[Exchange EAC 中的传输规则报告](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> 无 cmdlet|MC316157|2022 年 4 月|
+|Get-MailTrafficTopReport|[威胁防护状态报告：通过电子邮件恶意软件查看 \> 数据](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **注意**：Get-MailTrafficTopReport 中的加密报告功能没有替代。|MC315742|2022 年 4 月|
+|
 
 ## <a name="compromised-users-report"></a>遭到入侵的用户报告
 
@@ -1030,8 +1052,8 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 - **组织管理**
 - **安全管理员**
-- **安全读者**
-- **全局读者**
+- **安全读取者**
+- **全局读取者**
 
 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 

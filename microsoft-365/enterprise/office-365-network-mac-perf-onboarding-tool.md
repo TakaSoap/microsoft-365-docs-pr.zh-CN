@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365网络连接测试工具
-ms.openlocfilehash: 602ab10c9741126360861586776863cb43ce162e
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 8704da93d8f7ec95460ae5a275289176bccb0c22
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806200"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494494"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365网络连接测试工具
 
-Microsoft 365网络连接测试工具位于 <https://connectivity.office.com>。 它是"运行状况"选项下网络评估和网络Microsoft 365 管理中心 **的|"连接"** 菜单。
+网络Microsoft 365测试工具位于 。<https://connectivity.office.com> 它是网络评估和网络见解的一个综合工具，可用于运行状况Microsoft 365 管理中心 **下的网络|"连接"** 菜单。
 
 > [!IMPORTANT]
 > 登录你的 Microsoft 365 租户非常重要，因为所有测试报告都与管理员共享，并上传到你登录的租户。
@@ -34,7 +34,7 @@ Microsoft 365网络连接测试工具位于 <https://connectivity.office.com>。
 >[!NOTE]
 >网络连接测试工具支持 WW 商业中的租户，GCC中等、GCC高、DoD 或中国。
 
-Microsoft 365 管理中心中的网络见解基于每天汇总的 Microsoft 365 租户的常规产品内度量。 相比之下，来自 Microsoft 365 网络连接测试的网络见解在工具中本地运行。
+Microsoft 365 管理 中心中的网络见解基于每天汇总的 Microsoft 365 租户的常规产品内度量。 相比之下，来自 Microsoft 365 网络连接测试的网络见解在工具中本地运行。
 
 产品内测试受到限制，并且在本地运行用户测试会收集更多数据，从而获得更深入的见解。 Microsoft 365 管理中心的网络见解将显示特定办公地点存在网络问题。 Microsoft 365连接性测试可帮助确定该问题的根本原因并提供有针对性的性能改进操作。
 
@@ -52,9 +52,9 @@ Microsoft 365 管理中心中的网络见解基于每天汇总的 Microsoft 365 
 
 ### <a name="download-the-advanced-tests-client-application"></a>下载高级测试客户端应用程序
 
-接下来，开始下载高级测试客户端应用程序。 我们依赖用户启动客户端应用程序，并且还必须安装 .NET Core。
+接下来，开始下载高级测试客户端应用程序。 我们依赖用户启动客户端应用程序，并且还必须安装 .NET 6.0 运行时。
 
-网络连接测试<https://connectivity.office.com>Microsoft 365两个部分：网站和可下载Windows高级网络连接测试的客户端应用程序。 大多数测试都需要运行应用程序。 运行时，它会将结果填充回网页。
+网络连接测试Microsoft 365<https://connectivity.office.com>两个部分：网站和运行高级网络连接Windows可下载的客户端应用程序。 大多数测试都需要运行应用程序。 运行时，它会将结果填充回网页。
 
 Web 浏览器测试完成后，系统将提示你从网站下载高级客户端测试应用程序。 在系统提示时打开并运行该文件。
 
@@ -123,7 +123,7 @@ Web 浏览器测试完成后，系统将提示你从网站下载高级客户端�
 
 #### <a name="your-distance-from-the-network-egress-location"></a>你与网络出口位置之间的距离
 
-我们确定从该位置到办公地点的距离。 如果距离大于 **500** 英里 (800 千米) ，这将显示为网络见解，因为这样做可能会增加 TCP 延迟 25 毫秒以上，并可能会影响用户体验。
+我们确定从该位置到办公地点的距离。 如果距离大于 **500** 英里 (800 千米) ，这将显示为网络见解，因为这可能会导致 TCP 延迟增加 25 毫秒以上，并可能会影响用户体验。
 
 该图显示相对于用户办公位置的网络出口位置，该位置指示企业 WAN 内的网络回程。
 
@@ -135,17 +135,17 @@ Web 浏览器测试完成后，系统将提示你从网站下载高级客户端�
 
 该距离首先由 ICMP ping 进行测试。 如果失败，我们使用 TCP ping 进行测试，最后在 IP 地址位置数据库中查找代理服务器 IP 地址。 如果代理服务器距离用户办公地点 **800** 千米 (800 千米) ，我们将显示网络见解。
 
-#### <a name="virtual-private-network-vpn-you-use-to-connect-to-your-organization"></a>虚拟专用 (VPN) 用于连接到组织的 VPN 网络
+#### <a name="virtual-private-network-vpn-you-use-to-connect-to-your-organization"></a>虚拟专用 (VPN) 用于连接到你的组织
 
 此测试将检测你是否使用 VPN 连接到Microsoft 365。 传递结果将显示你是否没有 VPN，或者你的 VPN 是否具有针对 Microsoft 365 的建议拆分隧道配置。
 
 #### <a name="vpn-split-tunnel"></a>VPN 拆分Tunnel
 
-将 **测试** Exchange Online、SharePoint Online 和 Microsoft Teams 的每个"优化"类别路由，以查看它在 VPN 上是否隧道。 拆分的工作负荷将完全避免 VPN。 通过 VPN 发送隧道工作负荷。 选择性隧道工作负荷具有通过 VPN 发送的一些路由，一些路由被拆分。传递结果将显示是否拆分所有工作负荷或选择性隧道。
+将 **测试** Exchange Online、SharePoint Online 和 Microsoft Teams 的"优化"类别路由，以查看它在 VPN 上是否隧道。 拆分的工作负荷将完全避免 VPN。 通过 VPN 发送隧道工作负荷。 选择性隧道工作负荷具有通过 VPN 发送的一些路由，一些路由被拆分。传递结果将显示是否拆分所有工作负荷或选择性隧道。
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>都市区域的客户具有更好的性能
 
-将用户办公地点与 Exchange Online 服务之间的网络延迟与同一Microsoft 365区域中的其他客户进行比较。 如果同一区 10% 或 10% 以上的客户具有更好的性能，将显示网络见解。 这意味着他们的用户将在用户界面中Microsoft 365性能。
+用户办公地点与 Exchange Online 服务之间的网络延迟与同一Microsoft 365区域中的其他客户比较。 如果同一区 10% 或 10% 以上的客户具有更好的性能，将显示网络见解。 这意味着他们的用户将在用户界面中Microsoft 365性能。
 
 生成此网络见解的基础是，城市中的所有用户都有权访问相同的电信基础结构和相同的 Internet 线路和 Microsoft 网络。
 
@@ -157,11 +157,11 @@ Web 浏览器测试完成后，系统将提示你从网站下载高级客户端�
 
 #### <a name="your-distance-from-andor-time-to-connect-to-a-dns-recursive-resolver"></a>连接到 DNS 递归解析程序的距离和/或时间
 
-通过提出特定的 DNS 请求，然后向 DNS 名称服务器询问接收相同请求的 IP 地址，可标识使用中的 DNS 递归解析程序。 此 IP 地址是 DNS 递归解析程序，它将在 IP 地址位置数据库中查找以查找位置。 然后计算从用户办公室位置到 DNS 递归解析程序服务器位置的距离。 如果距离大于 **500 千米 (800** 千米) 。
+通过提出特定的 DNS 请求，然后向 DNS 名称服务器询问接收相同请求的 IP 地址，可标识使用中的 DNS 递归解析程序。 此 IP 地址是 DNS 递归解析程序，它将在 IP 地址位置数据库中查找以查找位置。 然后计算从用户办公室位置到 DNS 递归解析程序服务器位置的距离。 如果距离大于 **500 英里 (800** 千米，) 。
 
 从网络出口 IP 地址查找的位置可能不准确，这可能会导致此测试产生错误结果。 若要验证特定 IP 地址是否发生此错误，可以使用可公开访问的网络 IP 地址位置网站。
 
-此网络见解将专门影响选择Exchange Online前端服务。 要解决此见解，本地和直接网络出口应作为先决条件，然后 DNS 递归解析程序应位于该网络出口附近。
+此网络见解将专门影响服务Exchange Online的选择。 要解决此见解，本地和直接网络出口应作为先决条件，然后 DNS 递归解析程序应位于该网络出口附近。
 
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -169,13 +169,13 @@ Web 浏览器测试完成后，系统将提示你从网站下载高级客户端�
 
 #### <a name="exchange-service-front-door-location"></a>Exchange服务前端位置
 
-使用Exchange服务前端的标识方式与确定Outlook相同，我们测量从用户位置到它的网络 TCP 延迟。 将显示 TCP 延迟，并使用Exchange服务前端与当前位置的最佳服务前端列表进行比较。 如果未使用其中一个Exchange服务 (，) 网络见解。
+使用中的Exchange服务前端的标识方式与确定Outlook相同，并度量从用户位置到它的网络 TCP 延迟。 将显示 TCP 延迟，并使用Exchange服务前端与当前位置的最佳服务前端列表进行比较。 如果未使用最佳服务Exchange服务 (，) 网络见解。
 
-未使用最佳 Exchange 服务前端 () 可能是由于企业网络出口之前的网络回程所致，在这种情况下，我们建议使用本地和直接网络出口。 它还可能是由于使用远程 DNS 递归解析程序服务器所致，在这种情况下，我们建议将 DNS 递归解析程序服务器与网络出口对齐。
+未使用最佳 Exchange 服务前端 () 可能是由于企业网络出口前面的网络回程所致，在这种情况下，我们建议使用本地和直接网络出口。 它还可能是由于使用远程 DNS 递归解析程序服务器所致，在这种情况下，我们建议将 DNS 递归解析程序服务器与网络出口对齐。
 
 我们计算 TCP 延迟在 (延迟) Exchange前端。 这是通过查看经过测试的用户办公室位置网络延迟，并从当前位置到服务前端的Exchange延迟实现。 差异表示潜在的改进机会。
 
-#### <a name="best-exchange-service-front-doors-for-your-location"></a>最佳Exchange服务前端 () 位置提供
+#### <a name="best-exchange-service-front-doors-for-your-location"></a>Exchange位置的最佳 () 服务前端
 
 这将按城市列出Exchange位置的最佳服务前端位置。
 
@@ -189,11 +189,11 @@ Web 浏览器测试完成后，系统将提示你从网站下载高级客户端�
 
 #### <a name="the-service-front-door-location"></a>服务前端位置
 
-使用SharePoint服务前端的标识方式与 OneDrive 客户端相同，并且我们测量从用户办公位置到它的网络 TCP 延迟。
+使用中的 SharePoint 服务前端的标识方式与 OneDrive 客户端相同，我们测量从用户办公位置到它的网络 TCP 延迟。
 
 #### <a name="download-speed"></a>下载速度
 
-我们测量 15 MB 文件从 SharePoint 前端的下载速度。 结果以 MB/秒为单位显示，以指示在一秒钟内可从 SharePoint 或 OneDrive 下载的大小文件（以 MB **为单位**）。 该数字应类似于最小电路带宽的十分之一（以兆位/秒表示）。 例如，如果您具有 100mbps 的 Internet 连接，则预期每秒 10 MB (10 MBps) 。
+我们测量 15 Mb 文件从 SharePoint前端的下载速度。 结果以 MB/秒为单位显示，以指示在一秒钟内可从 SharePoint 或 OneDrive 下载的大小文件（以 MB **为单位**）。 该数字应类似于最小电路带宽的十分之一（以兆位/秒表示）。 例如，如果您具有 100mbps 的 Internet 连接，则预期每秒 10 MB (10 MBps) 。
 
 #### <a name="buffer-bloat"></a>缓冲区过度
 
@@ -209,7 +209,7 @@ Web 浏览器测试完成后，系统将提示你从网站下载高级客户端�
 
 #### <a name="media-connectivity-audio-video-and-application-sharing"></a>媒体连接 (音频、视频和应用程序共享) 
 
-这将测试 UDP 与 Microsoft Teams 前端的连接。 如果阻止，则Microsoft Teams TCP 仍可以正常工作，但音频和视频将受损。 阅读有关这些 UDP 网络度量（也适用于 Microsoft Teams Online 中的媒体质量和网络连接性能）[Skype for Business内容](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)。
+这将测试 UDP 与 Microsoft Teams 前端的连接。 如果阻止此操作，Microsoft Teams TCP 仍可以正常工作，但音频和视频将受损。 有关这些 UDP 网络度量（同样适用于 Microsoft Teams Media [Quality and Network Connectivity Performance in Skype for Business Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)）的更多内容。
 
 #### <a name="packet-loss"></a>数据包丢失
 
@@ -227,7 +227,7 @@ Web 浏览器测试完成后，系统将提示你从网站下载高级客户端�
 
 我们测试从用户办公位置到所有所需网络终结点的 HTTP Microsoft 365连接。 这些发布于 [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md)。 将显示任何无法连接到的必需网络终结点的网络见解。
 
-企业网络外围上的代理服务器、防火墙或其他网络安全设备可能会阻止连接。 使用 HTTP 请求测试与 TCP 端口 80 的连接，使用 HTTPS 请求测试与 TCP 端口 443 的连接。 如果没有响应，FQDN 将标记为失败。 如果有 HTTP 响应代码 407，FQDN 将标记为失败。 如果有 HTTP 响应代码 403，我们将检查响应的 Server 属性，如果它显示为代理服务器，我们会将其标记为失败。 您可以使用命令行工具工具Windows我们执行的测试curl.exe。
+企业网络外围上的代理服务器、防火墙或其他网络安全设备可能会阻止连接。 使用 HTTP 请求测试与 TCP 端口 80 的连接，使用 HTTPS 请求测试与 TCP 端口 443 的连接。 如果没有响应，FQDN 将标记为失败。 如果有 HTTP 响应代码 407，FQDN 将标记为失败。 如果有 HTTP 响应代码 403，我们将检查响应的 Server 属性，如果它显示为代理服务器，我们会将其标记为失败。 您可以使用命令行工具Windows我们执行的测试curl.exe。
 
 我们在位于"优化"或"允许"类别的Microsoft 365每个必需的网络终结点测试 SSL 证书，如 上所定义[https://aka.ms/o365ip](./urls-and-ip-address-ranges.md)。 如果任何测试找不到 Microsoft SSL 证书，则所连接的加密网络必须已被中间网络设备截获。 任何截获的加密网络终结点上都显示了网络见解。
 
@@ -235,7 +235,7 @@ Web 浏览器测试完成后，系统将提示你从网站下载高级客户端�
 
 #### <a name="network-path"></a>网络路径
 
-本节显示 ICMP 跟踪到 Exchange Online 服务前端、SharePoint Online 服务前端和 Microsoft Teams 服务前端的结果。 它仅提供信息，没有关联的网络见解。 提供了三个 traceroutes。 跟踪路由 outlook.office365.com、客户SharePoint或 microsoft.sharepoint.com（如果未提供）的跟踪，以及 _world.tr.teams.microsoft.com。_
+本节显示 ICMP 跟踪路由到 Exchange Online 服务前端、SharePoint Online 服务前端和 Microsoft Teams 服务前端的结果。 它仅提供信息，没有关联的网络见解。 提供了三个 traceroutes。 跟踪路由 outlook.office365.com、客户SharePoint或 microsoft.sharepoint.com（_如果未_ 提供）的跟踪，以及 _world.tr.teams.microsoft.com。_
 
 ## <a name="connectivity-reports"></a>连接性报告
 
@@ -251,30 +251,59 @@ Web 浏览器测试完成后，系统将提示你从网站下载高级客户端�
 > [!div class="mx-imgBorder"]
 > ![网络运行状况状态。](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
+## <a name="testing-from-the-command-line"></a>从命令行进行测试
+
+我们提供可供远程部署和执行工具使用的命令行可执行文件，并运行与 Microsoft 365 网络连接测试工具网站中提供的相同测试。
+
+可以在此处下载命令行测试工具： ![命令行工具](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
+
+可以通过双击文件资源管理器中的可执行文件来运行Windows，或者可以从命令提示符启动它，或者可以使用任务计划程序安排它。
+
+首次启动可执行文件时，系统将提示你接受与 EULA (最终用户许可协议) 测试之前。 如果已阅读并接受 EULA，可以在启动可执行Microsoft-365-Network-Connectivity-Test-EULA-accepted.txt时，在当前工作目录中创建一个称为 Microsoft-365-Network-Connectivity-Test-EULA-accepted.txt 的空文件。 若要接受 EULA，可以键入"y"，当系统提示时，在命令行窗口中按 Enter。
+
+可执行文件接受 /h 的命令行参数，以显示指向此帮助文档的链接。
+
+### <a name="results"></a>结果
+结果输出将写入名为 TestResults 的文件夹中的 JSON 文件，该文件夹在进程的当前工作目录中创建，除非它已存在。 输出的文件名格式为 connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json。 结果位于与网络连接测试工具网站的网页Microsoft 365输出匹配的 JSON 节点中。 每次运行新结果文件时，将创建一个新的结果文件，独立可执行文件不会将结果上载到 Microsoft 租户，以便查看管理中心网络连接页。
+
+### <a name="launching-from-windows-file-explorer"></a>从文件Windows启动
+只需双击可执行文件即可开始测试，将显示命令提示符窗口。
+
+### <a name="launching-from-the-command-prompt"></a>从命令提示符启动
+在CMD.EXE提示符窗口中，可以键入可执行文件的路径和名称以运行它。 文件名为 Microsoft.Connectivity.Test.exe
+
+### <a name="launching-from-windows-task-scheduler"></a>从任务Windows启动
+在Windows任务计划程序中，你可以添加一个任务来启动独立的测试可执行文件。 您应该将任务的当前工作目录指定为创建 EULA 接受文件的位置，因为可执行文件将一直阻止，直到接受 EULA。 如果进程在无控制台的后台启动，则不能以交互方式接受 EULA。
+
+### <a name="more-details-on-the-standalone-executable"></a>有关独立可执行文件的更多详细信息
+命令行工具使用Windows定位服务查找用于确定某些距离的用户市/县国家/地区信息。 如果在Windows中禁用定位服务，则基于用户位置的评估将为空。 In Windows 设置 Location services" must be on and "Let desktop apps access your location" must also on.
+
+如果尚未安装命令行工具，.NET Framework安装命令行工具。 它还将下载来自网络连接测试工具Microsoft 365测试可执行文件，并启动该可执行文件。
+
 ## <a name="faq"></a>常见问题
 
 以下是一些常见问题的解答。
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>运行高级测试客户端需要什么？
 
-高级测试客户端需要 .NET Core 3.1 桌面运行时。 如果在未安装的情况下运行高级测试客户端，将定向到 [.NET Core 3.1 安装程序页面](https://dotnet.microsoft.com/download/dotnet-core/3.1)。 请务必安装桌面运行时（而不是 SDK）或 ASP.NET Core 运行时（位于页面的较高位置）。 安装 .NET Core 需要计算机上管理员权限。
+高级测试客户端需要 .NET 6.0 运行时。 如果在未安装的情况下运行高级测试客户端，将定向到 [.NET 6.0 安装程序页面](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime?utm_source=getdotnetcore)。 请务必从"运行桌面应用"列中安装Windows。 安装 .NET 6.0 运行时需要计算机上管理员权限。
 
 高级测试客户端使用 SignalR 与网页通信。 为此，必须确保 TCP 端口 443 与 **connectivity.service.signalr.net 已打开** 。 此 URL 不会在 中发布<https://aka.ms/o365ip>，因为客户端应用程序用户不需要Microsoft 365连接。
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>什么是Microsoft 365前端？
 
-Microsoft 365服务前端是 Microsoft 全局网络的入口点，其中Office服务终止其网络连接。 为了获得最佳网络连接Microsoft 365，建议将网络连接终止到城市或Microsoft 365最近的Microsoft 365。
+Microsoft 365服务前端是 Microsoft 全球网络的入口点，其中Office服务终止其网络连接。 为了获得最佳网络连接Microsoft 365，建议将网络连接终止到城市或Microsoft 365最近的前端。
 
 > [!NOTE]
 > Microsoft 365服务前端与 Azure 市场中提供的 **Azure Front Door Service** 产品没有直接关系。
 
 ### <a name="what-is-the-best-microsoft-365-service-front-door"></a>什么是最佳服务Microsoft 365前端？
 
-最佳的Microsoft 365服务前端 (以前称为最佳服务前端) 是离网络出口最近的入口，通常位于城市或都市区。 使用Microsoft 365网络性能工具确定使用中的 Microsoft 365 服务前端的位置，以及使用的最佳服务 () 。 如果该工具确定使用中的前端是最佳门之一，则应该可以与 Microsoft 的全局网络建立出色的连接。
+最佳的Microsoft 365服务 (以前称为最佳服务前端) 是离网络出口最近的入口，通常位于城市或都市区。 使用Microsoft 365网络性能工具确定使用中的 Microsoft 365 服务前端的位置，以及使用的最佳服务 () 。 如果该工具确定使用中的前端是最佳门之一，则应该可以与 Microsoft 的全局网络建立出色的连接。
 
 ### <a name="what-is-an-internet-egress-location"></a>什么是 Internet 出口位置？
 
-Internet 出口位置是网络流量退出企业网络并连接到 Internet 的位置。 这还标识为具有网络地址转换 (NAT) 设备的位置，并且通常与 INTERNET 服务提供商 (ISP) 。 如果您看到您的位置和 Internet 出口位置之间的距离很长，则这可能标识重要的 WAN 回程。
+Internet 出口位置是网络流量退出企业网络并连接到 Internet 的位置。 这还标识为具有网络地址转换 (NAT) 设备的位置，并且通常与 Internet 服务提供商 (ISP) 。 如果您看到您的位置和 Internet 出口位置之间的距离很长，则这可能标识重要的 WAN 回程。
 
 ## <a name="related-topics"></a>相关主题
 

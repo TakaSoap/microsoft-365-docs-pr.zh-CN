@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: 管理员可以了解如何使用 Microsoft Defender for Office 365 计划 2 中的攻击模拟培训其用户进行网络钓鱼防护。
 ms.technology: mdo
-ms.openlocfilehash: 17e4bb55ee2c571c2e66b648d277f0a896551f39
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 5ce7b58410ea53e4f11d746ebc4583b125f1ade6
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419356"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494424"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>使用 Defender for Office 365 中的攻击模拟培训模拟网络钓鱼Office 365
 
@@ -88,7 +88,7 @@ ms.locfileid: "63419356"
   - **低**
   - **中**
   - **高**
-- **源**：指示有效负载是在组织中创建的，还是 Microsoft 预先存在的有效负载目录的一部分。 有效值为：
+- **源**：指示有效负载是在组织中创建的，还是 Microsoft 预先存在的有效负载目录的一部分。 有效值包含:
   - **全局** (内置) 
   - **租户** (自定义) 
   - **全部**
@@ -249,7 +249,7 @@ Microsoft 提供的登陆页面有 12 种语言版本：中文 (简体) 、中�
 - **选择登陆页面首选项**：可用值为：
   - **使用 Microsoft 默认登陆** 页面：这是具有要配置的以下关联选项的默认值：
     - **选择登陆页面布局**：选择一个可用的模板。
-    - **添加徽标**：单击 **"浏览** "查找并选择.png、.jpeg 或 .gif 文件。 若要删除徽标，请单击"删除 **"**。
+    - **添加徽标**：单击 **"浏览** "查找并选择.png、.jpeg 或 .gif 文件。 徽标大小应最大为 210 x 70，以避免失真。 若要删除徽标，请单击"删除 **"**。
     - **将有效负载指示器添加到电子邮件**：如果你之前在"选择技术"页上选择了"恶意软件附件"或"链接到恶意软件"，[则此设置](#select-a-social-engineering-technique)不可用。
 
     可以通过单击页面底部的"打开预览面板"按钮来预览结果。
