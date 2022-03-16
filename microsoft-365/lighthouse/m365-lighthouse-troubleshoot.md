@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (使用) ，Microsoft 365 Lighthouse帮助排查并解决错误消息和问题。
-ms.openlocfilehash: da1a247c789754f75642caff78418a0b405ec5b0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e39eea66222852d8f331aa6bc68b386bea3da763
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330722"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513028"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>排查并解决邮件中的问题和Microsoft 365 Lighthouse
 
@@ -128,16 +128,10 @@ ms.locfileid: "63330722"
 
 **解决方法：** 添加租户设备后，允许设备数据在 4 小时后显示在 Lighthouse 中。
 
-如果在按照解决方案说明操作后，数据仍不显示在设备合规性和威胁管理页面上，请联系支持人员。 有关详细信息，请参阅获取 [Microsoft 365 Lighthouse 的帮助和支持](m365-lighthouse-get-help-and-support.md)。
-
-### <a name="there-are-no-windows-365-business-cloud-pcs-in-lighthouse"></a>Lighthouse 没有 Windows 365 商业版云电脑  
-
-**原因**：Lighthouse 当前不支持查看和管理 Windows 365 商业版云电脑。
-
-**解决方法：** 可以在 Microsoft 365 管理中心或 查看和管理 Windows [365](https://go.microsoft.com/fwlink/p/?linkid=2024339) 商业版云电脑 [https://windows365.microsoft.com](https://windows365.microsoft.com)。
+如果在按照解决方案说明操作后，数据仍不显示在设备合规性和威胁管理页面上，请联系支持人员。 有关详细信息，请参阅获取[有关 Microsoft 365 Lighthouse 的帮助和支持](m365-lighthouse-get-help-and-support.md)。
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365 Lighthouse 的](m365-lighthouse-known-issues.md) 已知 (文章) \
-[Microsoft 365 Lighthouse 常见问题](m365-lighthouse-faq.yml) (文章) \
-[获取 Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (文章) 
+[本文Microsoft 365 Lighthouse (](m365-lighthouse-known-issues.md)已知) \
+[Microsoft 365 Lighthouse常见问题](m365-lighthouse-faq.yml) (文章) \
+[获取本文中有关 Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (的帮助) 

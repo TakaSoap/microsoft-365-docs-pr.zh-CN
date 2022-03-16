@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365提供了三种电子数据展示工具，可用于搜索和导出在不同位置（如 Exchange 邮箱、SharePoint 和 OneDrive for Business 网站、Microsoft 365 组Microsoft 365内容。Microsoft Teams对话Skype for Business对话。 核心电子数据展示Advanced eDiscovery提供了许多其他功能，可帮助你管理调查。
-ms.openlocfilehash: e92619ff0ecbfcdbdf1a7f41eb4cd35282a6f2d9
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: cccc30dd649dc5abe74c551434e904236ecf9d35
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494508"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512484"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Microsoft 365中的电子数据展示解决方案
 
@@ -132,8 +132,8 @@ Microsoft 365提供三种电子数据展示解决方案：内容搜索、核心�
 - Microsoft 365 G1 订阅
 - Microsoft 365 F1 F3 订阅或 F5 安全加载项
 - Microsoft 365 商业高级版订阅
-- Microsoft 365 商业标准版
-- Microsoft 365 商业基础版
+- Microsoft 365 商业标准版订阅
+- Microsoft 365 商业基础版订阅
 - Office 365 教育版 A1 订阅
 - Office 365 E1订阅
 

@@ -1,13 +1,13 @@
 ---
 title: 比较中小型企业Microsoft 365中的安全功能
-description: 了解 Defender for Business 和 Defender for Endpoint 之间的差异。 了解每个计划中包括哪些内容可以帮助你为组织做出明智的决策。
+description: 了解 Defender for Business 和 Defender for Endpoint 之间的差异。 了解每个计划中包括哪些内容可以帮助你为公司做出明智的决策。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 02/27/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: c7b7848eb9bd02c75304ffea4347beb19b873b3a
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: edad91bde18b4bf9a86e0ab02ffc28df675f4c10
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449830"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512498"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>比较 Microsoft Defender for Business 与 Microsoft 365 商业高级版
 

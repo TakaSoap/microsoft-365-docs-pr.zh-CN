@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 3fd3f272fee91e8ca14d667d953b65b1122284db
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: d7336e06aa970ac9fc08cafcb50f8bbed040c8a8
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468676"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512302"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>Microsoft Defender for Business 要求
 
@@ -56,7 +56,7 @@ ms.locfileid: "63468676"
 | 权限  | 若要注册 Microsoft Defender for Business，你必须是全局管理员。<br/><br/>若要访问Microsoft 365 Defender门户，用户必须分配有以下角色[Azure AD](mdb-roles-permissions.md)之一： <br/>- 安全读者<br/>- 安全管理员<br/>- 全局管理员<br/><br/>若要了解更多信息，请参阅 [Microsoft Defender for Business 中的角色和权限](mdb-roles-permissions.md)。 |
 | 浏览器要求 | Microsoft Edge 或 Google Chrome |
 | 操作系统 | 若要在 Microsoft Defender for Business 中管理设备，你的设备必须运行以下操作系统之一： <br/>- Windows 10 商业版或更高版本 <br/>- Windows 10 Professional或更高版本 <br/>- Windows 10 企业版或更高版本 <br/><br/>确保已安装 [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) 。 <br/><br/>如果你已在管理设备或Microsoft Intune (Microsoft Endpoint Manager) ，你可以将这些设备载入 Defender for Business。 |
-| 与 Microsoft Endpoint Manager  | 如果你计划使用 [Microsoft Defender for Business](mdb-onboard-devices.md#microsoft-defender-for-business-security-configuration) 安全配置载入设备，则必须满足以下要求：<br/><br/>Microsoft [Defender for Endpoint 的安全管理必须满足先决条件](/mem/intune/protect/mde-security-integration)。<br/>- Azure AD配置此配置，以在组织的设备和设备之间创建Azure AD。 <br/>- Defender for Business 必须在 Microsoft Endpoint Manager 中启用安全管理。<br/><br/>设备必须能够连接到以下 URL：<br/>- `enterpriseregistration.windows.net` (注册Azure AD) <br/>- `login.microsoftonline.com` (注册Azure AD) <br/>- `*.dm.microsoft.com` (通配符 (*) 支持用于注册、签入和报告的云服务终结点，并且可在服务扩展时更改)  |
+| 与 Microsoft Endpoint Manager  | 如果你计划使用 [Microsoft Defender for Business](mdb-onboard-devices.md#microsoft-defender-for-business-security-configuration) 安全配置载入设备，则必须满足以下要求：<br/><br/>Microsoft [Defender for Endpoint 的安全管理必须满足先决条件](/mem/intune/protect/mde-security-integration)。<br/>- Azure AD配置此配置，以在公司的设备和设备之间创建Azure AD。 <br/>- Defender for Business 必须在 Microsoft Endpoint Manager 中启用安全管理。<br/><br/>设备必须能够连接到以下 URL：<br/>- `enterpriseregistration.windows.net` (注册Azure AD) <br/>- `login.microsoftonline.com` (注册Azure AD) <br/>- `*.dm.microsoft.com` (通配符 (*) 支持用于注册、签入和报告的云服务终结点，并且可在服务扩展时更改)  |
 
 > [!NOTE]
 > [Azure Active Directory (Azure AD) ](/azure/active-directory/fundamentals/active-directory-whatis)用于管理用户权限和设备组。 Azure AD包含在 Defender for Business 订阅中。 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: c5de66418b242beb975cce0d6ece299753360c99
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: 3db4d1b3cd4e4299c892a352b4f701abf05055ae
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504778"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512764"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>将设备载入 Microsoft Defender for Business
 
@@ -31,7 +31,7 @@ ms.locfileid: "63504778"
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
-借助 Microsoft Defender for Business，你可以从多个选项中进行选择，以载入你的组织设备。 本文将引导你完成你的选项，并包括载入工作原理的概述。
+借助 Microsoft Defender for Business，你可以从多个选项中进行选择，以载入你的公司设备。 本文将引导你完成你的选项，并包括载入工作原理的概述。
 
 >
 > **有空吗？**
@@ -40,7 +40,7 @@ ms.locfileid: "63504778"
 
 ## <a name="get-the-device-onboarding-guide"></a>获取设备载入指南
 
-使用以下指南和信息为组织选择最佳选项。
+使用以下指南和信息为公司选择最佳选项。
 
 [:::image type="content" source="media/mdb-device-onboarding.png" alt-text="设备载入图表的屏幕截图":::](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) <br/>
 [PDF](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) | [Visio](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.vsdx)
@@ -79,7 +79,7 @@ Defender for Business 为载入设备提供了几种不同的方法，无论你�
 
 自动载入选项仅适用于Windows设备。 如果满足以下条件，则自动载入可用：
 
-- 在获得 Defender for Business 之前，你的组织已在 Microsoft Endpoint Manager、Microsoft Intune MDM () mdm Microsoft Intune或移动设备管理
+- 在获得 Defender for Business 之前Microsoft Endpoint Manager公司已在 (MDM (mdm) Microsoft Intune、Microsoft Intune或移动设备管理
 
 - 你已经在Windows注册了Endpoint Manager
 
@@ -107,11 +107,11 @@ Defender for Business 为载入设备提供了几种不同的方法，无论你�
    | 操作系统 | Procedure |
    |---|---|
    | Windows | 1. Windows设备上，将配置包的内容提取到一个位置，如桌面文件夹。 你应该有一个名为 的文件 `WindowsDefenderATPLocalOnboardingScript.cmd`。 <br/><br/>2. 以管理员角色打开命令提示符。<br/><br/>3. 键入脚本文件的位置。 例如，如果你将文件复制到桌面文件夹，你需要键入： `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`，然后按 Enter 键 (**或选择确定**) 。<br/><br/>4. 脚本运行后，继续 [运行检测测试](#run-a-detection-test)。 |
-   | macOS | 1. 在 Mac 计算机上，将安装包另存 `wdav.pkg` 为本地目录。 <br/><br/>2. 将载入程序包另 `WindowsDefenderATPOnboardingPackage.zip` 存为用于安装程序包的同一目录。 <br/><br/>3. 使用 Finder 导航到 `wdav.pkg` 保存的位置，然后打开它。<br/><br/>4. **选择"继续**"，同意许可条款，然后在系统提示时输入您的密码。<br/><br/>5. 系统将提示你允许从 Microsoft 安装驱动程序 ("系统扩展阻止"或"安装已保留"，或同时安装两者。 必须允许安装驱动程序。 若要允许安装，请选择"打开 **安全** 首选项"或"**打开系统** > 首选项""安全 **&隐私**"，然后选择"允许 **"**。<br/><br/>6. 在 Bash 中使用以下 Python 命令运行载入包： `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`。 <br/><br/>7. 若要确认设备与您的组织关联，请使用 Bash 中的以下 Python 命令： `mdatp health --field org_id`。<br/><br/>8. 如果你使用的是 macOS 10.15 (加泰罗尼亚语) 更高版本，请授予 Defender for Business 同意来保护你的设备。 Go to **System PreferencesSecurity** >  **&** **PrivacyPrivacyFull** >  >  **Disk Access**.  选择锁定图标以 (对话框底部的) 进行更改，然后选择 Microsoft Defender for Business (或 Defender for Endpoint（如果你看到) ）。 <br/><br/>9. 若要验证设备已载入，请使用 Bash 中的以下命令： `mdatp health --field real_time_protection_enabled`。    |
+   | macOS | 1. 在 Mac 计算机上，将安装包另存 `wdav.pkg` 为本地目录。 <br/><br/>2. 将载入程序包另 `WindowsDefenderATPOnboardingPackage.zip` 存为用于安装程序包的同一目录。 <br/><br/>3. 使用 Finder 导航到 `wdav.pkg` 保存的位置，然后打开它。<br/><br/>4. **选择"继续**"，同意许可条款，然后在系统提示时输入您的密码。<br/><br/>5. 系统将提示你允许从 Microsoft 安装驱动程序 ("系统扩展阻止"或"安装已保留"，或同时安装两者。 必须允许安装驱动程序。 若要允许安装，请选择"打开 **安全** 首选项"或"**打开系统** > 首选项""安全 **&隐私**"，然后选择"允许 **"**。<br/><br/>6. 在 Bash 中使用以下 Python 命令运行载入包： `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`。 <br/><br/>7. 若要确认设备与贵公司关联，请使用 Bash 中的以下 Python 命令： `mdatp health --field org_id`。<br/><br/>8. 如果你使用的是 macOS 10.15 (加泰罗尼亚语) 更高版本，请授予 Defender for Business 同意来保护你的设备。 Go to **System PreferencesSecurity** >  **&** **PrivacyPrivacyFull** >  >  **Disk Access**.  选择锁定图标以 (对话框底部的) 进行更改，然后选择 Microsoft Defender for Business (或 Defender for Endpoint（如果你看到) ）。 <br/><br/>9. 若要验证设备已载入，请使用 Bash 中的以下命令： `mdatp health --field real_time_protection_enabled`。    |
 
 ## <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
-如果你已在使用 Endpoint Manager (包括 Microsoft Intune 和移动设备管理) ，那么在你获得 Defender for Business 之前，你可以继续使用 Endpoint Manager 载入你的组织设备。 借助Endpoint Manager，你可以载入计算机、平板电脑和手机，包括 iOS 和 Android 设备。
+如果你已在使用 Endpoint Manager (包括 Microsoft Intune 和移动设备管理) ，那么在你获得 Defender for Business 之前，你可以继续使用 Endpoint Manager 载入你的公司设备。 借助Endpoint Manager，你可以载入计算机、平板电脑和手机，包括 iOS 和 Android 设备。
 
 请参阅[设备注册Microsoft Intune](/mem/intune/enrollment/device-enrollment)。
 
@@ -152,7 +152,7 @@ Microsoft Defender for Business 安全配置基于称为 Microsoft [Defender for
 
 ## <a name="gradual-device-onboarding"></a>逐步设备载入
 
-你可以阶段性地载入组织的设备。 *我们将此称为逐步设备载入*。 
+你可以阶段性地载入你的公司设备。 *我们将此称为逐步设备载入*。 
 
 1. 标识要载入的一组设备。
 

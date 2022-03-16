@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 4e87b8b2bbf926e231e5d610e212f7b73005d1ce
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 02ecd2d84684e4b388c11ff71d79992330172091
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449117"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512639"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>在 Microsoft Defender for Business 中分配角色和权限
 
@@ -52,7 +52,7 @@ ms.locfileid: "63449117"
 
 | 权限级别 | 说明 |
 |:---|:---|
-| **全局管理员** (也称为全局管理员)  <br/><br/> *最佳做法是限制全局管理员的数量。* | 全局管理员可以执行所有类型的任务。 默认情况下，注册你的组织Microsoft 365 Microsoft Defender for Business 的人是全局管理员。 <br/><br/> 全局管理员能够跨所有门户访问/Microsoft 365设置，例如： <br/>- Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))  <br/>- Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) |
+| **全局管理员** (也称为全局管理员)  <br/><br/> *最佳做法是限制全局管理员的数量。* | 全局管理员可以执行所有类型的任务。 默认情况下，注册你的公司Microsoft 365 Microsoft Defender for Business 的人是全局管理员。 <br/><br/> 全局管理员能够跨所有门户访问/Microsoft 365设置，例如： <br/>- Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))  <br/>- Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) |
 | **安全管理员** (也称为安全管理员)  | 安全管理员可以执行以下任务： <br/>- 查看和管理安全策略 <br/>- 查看和管理这些活动中的 (威胁和警报，包括对活动终结点采取)  <br/>- 查看安全信息和报告 |
 | **安全信息读取者** | 安全读者可以执行以下任务： <br/>- 查看安全策略 <br/>- 查看安全威胁和警报 <br/>- 查看安全信息和报告  |
 

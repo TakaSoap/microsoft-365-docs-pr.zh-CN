@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 62616ed20513ee023986525b4f097c96ae3107ba
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f80ab9fcb0a3e057a20c22ff05c3a960cdf7eab4
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330603"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512930"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内部风险管理设置入门
 
@@ -37,6 +37,7 @@ ms.locfileid: "63330603"
 - Power Automate预览 (流) 
 - Microsoft Teams (预览) 
 - 分析
+- 管理员通知
 
 在开始使用和创建内部风险管理策略之前，了解这些设置并选择最适合组织的合规性需求的设置级别非常重要。
 
@@ -274,7 +275,7 @@ ms.locfileid: "63330603"
 - Id
 - RecordType
 - CreationTime
-- 操作
+- Operation
 - OrganizationId
 - UserType
 - UserKey
@@ -530,7 +531,7 @@ ms.locfileid: "63330603"
 - **Azure Active Directory**：所有扫描中都包含Azure Active Directory历史记录有助于识别与具有已删除用户帐户的用户关联的有风险活动。
 - **Microsoft 365 HR** 数据连接器：如果配置，HR 连接器事件有助于识别与具有提前或即将终止日期的用户相关的风险活动。
 
-来自扫描的分析见解基于内部风险管理策略使用的相同风险活动信号，并基于单一和顺序用户活动报告结果。 但是，分析的风险评分基于最多 30 天的活动，而内部风险策略使用每日活动进行见解。 首次在组织中启用和运行分析时，你将看到一天的扫描结果。 如果保持启用分析功能，你将看到每个每日扫描的结果添加到见解报告中，了解前 30 天活动的最大范围。
+来自扫描的分析见解基于内部风险管理策略使用的相同风险活动信号，并基于单一和顺序用户活动报告结果。 但是，分析的风险评分基于最多 10 天的活动，而内部风险策略使用每日活动进行见解。 首次在组织中启用和运行分析时，你将看到一天的扫描结果。 如果保持启用分析功能，你将看到每个每日扫描的结果添加到见解报告中，了解前 10 天活动的最大范围。
 
 ### <a name="enable-analytics-and-start-your-scan"></a>启用分析并启动扫描
 
@@ -545,7 +546,9 @@ ms.locfileid: "63330603"
 
 ### <a name="viewing-analytics-insights-and-creating-new-policies"></a>查看分析见解并创建新策略
 
-为组织完成第一次分析扫描后，您可以查看用户对可能存在风险的活动的见解和建议。 除非你为组织关闭分析，否则每日扫描将继续进行。 若要查看组织的潜在风险，请转到概述选项卡，然后选择预览体验成员风险分析卡上的 **查看** 结果。 如果组织的扫描未完成，你将看到一条消息，表明扫描仍处于活动状态。
+为组织完成第一次分析扫描后， *Insider Risk Management Admin* 角色组的成员将自动收到电子邮件通知，并可以查看用户对可能存在风险的活动的初始见解和建议。 除非为组织关闭分析，否则每日扫描将继续进行。 针对组织中第一次活动实例后 (分析、数据泄露、盗窃和泄露) 向管理员发送电子邮件通知。 不会向管理员发送电子邮件通知，以执行每日扫描所产生的后续活动检测。  > 如果在内部风险管理中禁用分析 **设置** > 然后在组织中重新启用 **Analytics**，则重置自动电子邮件通知，并发送电子邮件给预览体验成员风险管理 *管理员* 角色组的成员，获取新的扫描见解。
+
+若要查看组织的潜在风险，请转到概述选项卡，然后选择预览体验成员风险分析卡上的 **查看** 结果。 如果组织的扫描未完成，你将看到一条消息，表明扫描仍处于活动状态。
 
 ![内部风险管理分析报告就绪卡片。](../media/insider-risk-analytics-ready-card.png)
 
@@ -575,11 +578,17 @@ ms.locfileid: "63330603"
 
 当为新策略生成第一个警报时，管理员通知会自动将电子邮件通知发送给内部风险管理组、内部风险管理分析师和内部风险管理研究人员角色组中包含的用户。 默认情况下，会针对所有组织启用此功能，并且每 24 小时检查一次首次警报的策略。 对于第一个警报后的策略中发生的任何警报，不会发送通知。
 
+如果为组织启用了内部风险管理分析，则 *Insider Risk Management Admin* 角色组的成员会自动收到电子邮件通知，以对数据泄露、盗窃和泄漏活动进行初始分析见解。
+
 如果你想要禁用管理员通知，请完成以下步骤：
 
 1. In the [Microsoft 365 合规中心](https://compliance.microsoft.com)， go to **Insider risk** **managementInsider** >  risk settings.
 2. 选择" **管理员通知"** 页。
-3. 清除" **为新策略生成第** 一个警报时发送通知电子邮件"复选框。
+3. 清除以下选项的复选框（如果适用）：
+    - **为新策略生成第一个警报时发送通知电子邮件**
+    - **在分析中提供新见解时发送电子邮件通知**
+    - **关闭分析时发送电子邮件通知**
+
 4. 选择 **"保存** "以配置并退出。
 
 ![内部风险管理管理员通知设置。](../media/insider-risk-admin-notifications.png)

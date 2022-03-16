@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 6db82c1dcc9afceebcb9fff891cb90ddafa95f21
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 14b93f27c2d7bd0255fb08164072ba160af6be1b
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468718"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512442"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Microsoft Defender for Business 概述
 
@@ -32,7 +32,7 @@ ms.locfileid: "63468718"
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
-Microsoft Defender for Business 是一种新的终结点安全解决方案，专为中小型企业设计 (多达 300 名员工) 。 借助此终结点安全解决方案，可以更好地保护组织设备免受勒索软件、恶意软件、网络钓鱼和其他威胁的侵害。 
+Microsoft Defender for Business 是一种新的终结点安全解决方案，专为中小型企业设计 (多达 300 名员工) 。 借助此终结点安全解决方案，可以更好地保护公司设备免受勒索软件、恶意软件、网络钓鱼和其他威胁的侵害。 
 
 观看以下视频，详细了解 Defender for Business： <br/><br/>
 
@@ -51,7 +51,7 @@ Microsoft Defender for Business 是一种新的终结点安全解决方案，专
 
 - **Enterprise级安全性**。 Defender for Business 从我们行业领先的 [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) 解决方案中提供了强大的终结点安全性功能，并优化了这些功能，供 IT 管理员支持中小型企业。
 
-- **易于使用的安全解决方案**。 Defender for Business 提供了简化体验，可指导你采取操作，并针对终结点的安全性提供建议和见解。 不需要任何专门知识，因为 Defender for Business 提供向导驱动的配置和默认安全策略，旨在帮助保护组织设备自第一天开始。
+- **易于使用的安全解决方案**。 Defender for Business 提供了简化体验，可指导你采取操作，并针对终结点的安全性提供建议和见解。 不需要任何专门知识，因为 Defender for Business 提供向导驱动的配置和默认安全策略，旨在帮助你保护公司设备自第一天起。
 
 - **环境的灵活性**。 Defender for Business 可以适用于你的业务环境，无论你使用的是Microsoft Intune还是全新使用 Microsoft 云。 Defender for Business 适用于内置于 Windows 的组件，以及适用于 macOS、iOS 和 Android 设备的应用。
 

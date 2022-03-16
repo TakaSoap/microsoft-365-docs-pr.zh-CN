@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 5673ac38577dbd87019a954eb388d6ab8f050328
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: bccbc7cf33d8be285bac801512de974f0277cf06
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504759"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512456"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>在 Microsoft Defender for Business 中查看和编辑安全策略和设置
 
@@ -33,11 +33,11 @@ ms.locfileid: "63504759"
 
 ## <a name="overview"></a>概述
 
-将组织的设备载入 Microsoft Defender for Business 后，下一步是查看安全策略和设置，并在必要时编辑安全策略和设置。 安全策略包括：
+将公司设备载入 Microsoft Defender for Business 后，下一步是查看安全策略和设置，并在必要时编辑安全策略和设置。 安全策略包括：
 
-- **[下一代保护](#view-or-edit-your-next-generation-protection-policies)** 策略，可确定组织的设备的防病毒和反恶意软件保护
+- **[下一代保护](#view-or-edit-your-next-generation-protection-policies)** 策略，用于确定公司设备的防病毒和反恶意软件保护
 
-- **[防火墙保护和规则](#view-or-edit-your-firewall-policies-and-custom-rules)**，用于确定允许哪些网络流量流入或流出组织设备
+- **[防火墙保护和规则](#view-or-edit-your-firewall-policies-and-custom-rules)**，用于确定允许哪些网络流量流入或流出公司设备
 
 - **[Web 内容筛选](#set-up-web-content-filtering)**，可阻止用户访问某些网站 (基于) 的 URL，例如成人内容或法律责任。
 
@@ -74,8 +74,8 @@ Defender for Business 采用 [简化的配置过程，](mdb-simplified-configura
 
 | 选项 | 说明 |
 |:---|:---|
-| **使用Microsoft 365 Defender门户 (***建议)* | Microsoft 365 Defender门户 ([https://security.microsoft.com/](https://security.microsoft.com/)) 管理组织设备、安全策略和安全设置的一站式商店。 你可以访问安全策略和设置，使用威胁&[漏洞](mdb-view-tvm-dashboard.md)管理仪表板，在一个地方查看和管理所有事件。[](mdb-view-manage-incidents.md) <br/><br/>如果你使用的是安全Microsoft Endpoint Manager，则载入 Defender for Business 的设备和安全策略显示在 Endpoint Manager。 若要了解更多信息，请参阅以下文章：<br/><br/>- [Defender for Business 默认设置和Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [Microsoft Defender for Business 中的防火墙](mdb-firewall.md)   |
-| **使用Microsoft Endpoint Manager** | 如果你的组织已在使用 Endpoint Manager (，Microsoft Intune) 管理安全策略，你可以继续使用 Endpoint Manager 来管理设备和安全策略。 若要了解更多信息，请参阅使用 Microsoft Intune [中的终结点安全策略管理设备安全](/mem/intune/protect/endpoint-security-policy)。 <br/><br/>如果你决定在 [Defender for Business](mdb-simplified-configuration.md) 中切换到简化的配置过程，系统将提示你删除 Endpoint Manager 中现有的安全策略，以避免以后出现[策略冲突。](mdb-troubleshooting.yml) |
+| **使用Microsoft 365 Defender门户 (***建议)* | the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) can be your one-stop shop for managing your company's devices， security policies， and security settings. 你可以访问安全策略和设置，使用威胁&[漏洞](mdb-view-tvm-dashboard.md)管理仪表板，在一个地方查看和管理所有事件。[](mdb-view-manage-incidents.md) <br/><br/>如果你使用的是安全Microsoft Endpoint Manager，则载入 Defender for Business 的设备和安全策略显示在 Endpoint Manager。 若要了解更多信息，请参阅以下文章：<br/><br/>- [Defender for Business 默认设置和Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [Microsoft Defender for Business 中的防火墙](mdb-firewall.md)   |
+| **使用Microsoft Endpoint Manager** | 如果你的公司已在使用 Endpoint Manager (，Microsoft Intune) 管理安全策略，你可以继续使用 Endpoint Manager 来管理设备和安全策略。 若要了解更多信息，请参阅使用 Microsoft Intune [中的终结点安全策略管理设备安全](/mem/intune/protect/endpoint-security-policy)。 <br/><br/>如果你决定在 [Defender for Business](mdb-simplified-configuration.md) 中切换到简化的配置过程，系统将提示你删除 Endpoint Manager 中现有的安全策略，以避免以后出现[策略冲突。](mdb-troubleshooting.yml) |
 
 > [!IMPORTANT]
 > 如果要在安全门户中管理Microsoft 365 Defender策略，可以在 Endpoint Manager中查看这些策略，列为防病毒或防火墙策略。 当你在防火墙策略中查看Endpoint Manager，你将看到两个策略列出：一个策略用于防火墙保护，另一个策略用于自定义规则。
@@ -112,7 +112,7 @@ Web 内容筛选使安全团队能够根据网站的内容类别跟踪和监管�
 
 - 未分类：没有内容或新注册的网站
 
-并非所有这些类别中的网站都是恶意网站，但由于合规性法规、带宽使用情况或其他问题，它们对于组织可能存在问题。 此外，可以创建仅审核策略，以更好地了解安全团队是否应该阻止任何网站类别。
+并非所有这些类别中的网站都是恶意网站，但由于合规性法规、带宽使用情况或其他问题，它们可能会成为贵公司的问题。 此外，可以创建仅审核策略，以更好地了解安全团队是否应该阻止任何网站类别。
 
 Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defender SmartScreen (Microsoft Edge) 和网络保护 (Chrome、Firefox、Filtering 和 Opera) 执行) 。 有关详细信息，请参阅 [Web 内容筛选的先决条件](../defender-endpoint/web-content-filtering.md#prerequisites)。
 

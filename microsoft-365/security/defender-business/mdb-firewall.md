@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: fdac3d71ee69618b7e0dc6d878eed558cf323b65
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 9644df7d4681a3f425c82f2f47bdb2ad50c75483
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450656"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512750"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>Microsoft Defender for Business 中的防火墙
 
@@ -32,7 +32,7 @@ ms.locfileid: "63450656"
 
 Microsoft Defender for Business 包括具有防火墙Windows Defender[功能](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。 防火墙保护通过确定允许哪些网络流量从设备进入或流动的规则来帮助保护设备。 
 
-可以使用防火墙保护指定是允许还是阻止不同位置的设备上的连接。 例如，防火墙设置可以允许连接到组织内部网络的设备的入站连接，但在设备位于不受信任的设备网络上时阻止这些连接。
+可以使用防火墙保护指定是允许还是阻止不同位置的设备上的连接。 例如，防火墙设置可以允许连接到公司内部网络的设备的入站连接，但在设备位于不受信任的设备上时阻止这些连接。
 
 **本文介绍**：
 
@@ -47,10 +47,10 @@ Microsoft Defender for Business 包括具有防火墙Windows Defender[功能](/w
 
 ## <a name="default-firewall-settings-in-defender-for-business"></a>Defender for Business 中的默认防火墙设置
 
-Microsoft Defender for Business 包括默认防火墙策略和设置，可帮助保护组织设备自第一天起。 一旦组织的设备载入 Microsoft Defender for Business，你的默认防火墙策略将按如下方式工作：
+Microsoft Defender for Business 包括默认防火墙策略和设置，可帮助保护公司设备自第一天起。 公司设备载入 Microsoft Defender for Business 后，默认防火墙策略将按如下方式工作：
 
 - 默认情况下，允许从设备进行出站连接，而不考虑位置。
-- 当设备连接到组织的网络时，默认情况下会阻止所有入站连接。
+- 当设备连接到贵公司的网络时，默认情况下会阻止所有入站连接。
 - 当设备连接到公用网络或专用网络时，默认情况下会阻止所有入站连接。
 
 在 Microsoft Defender for Business 中，你可以定义例外以阻止或允许传入连接。 通过创建自定义规则来定义这些例外。 请参阅 [管理防火墙策略的自定义规则](mdb-custom-rules-firewall.md)。
@@ -61,7 +61,7 @@ Microsoft Defender for Business 包括通过防火墙Windows Defender保护。 �
 
 | Setting | 说明 |
 |--|--|
-| **域网络** | 域网络配置文件适用于组织的网络。 域网络的防火墙设置适用于在同一网络上其他设备上启动的入站连接。 默认情况下，传入连接设置为" **全部阻止"**。  |
+| **域网络** | 域网络配置文件适用于贵公司的网络。 域网络的防火墙设置适用于在同一网络上其他设备上启动的入站连接。 默认情况下，传入连接设置为" **全部阻止"**。  |
 | **公共网络** | 公共网络配置文件适用于可在公共场所（如咖啡店或机场）使用的网络。 公用网络的防火墙设置适用于在同一网络上其他设备上启动的入站连接。 由于公共网络可以包含你不知道或不信任的设备，传入连接默认设置为" **全部** 阻止"。  |
 | **专用网络** | 专用网络配置文件适用于专用位置（如家庭）的网络。 专用网络的防火墙设置适用于在同一网络上其他设备上启动的入站连接。 通常，在专用网络上，假定同一网络上所有其他设备都是受信任的设备。 但是，默认情况下，传入连接设置为" **全部阻止"**。 |
 | **自定义规则** | [自定义规则](mdb-custom-rules-firewall.md) 允许您阻止或允许特定连接。 例如，假设你想要阻止连接到专用网络的设备上的所有传入连接，但通过设备上特定应用进行的连接除外。 在这种情况下，应设置专用 **网络** 以阻止所有传入连接，然后添加自定义规则以定义异常。 <br/><br/>您可以使用自定义规则定义特定文件或应用的例外、Internet 协议 (IP) 地址或一系列 IP 地址。 <br/><br/>根据所创建的自定义规则的类型，以下是可以使用的一些示例值： <br/><br/>应用程序文件路径： `C:\Windows\System\Notepad.exe or %WINDIR%\Notepad.exe` <br/><br/>IP：有效的 IPv4/IPv6 地址，例如 `192.168.1.0` 或 `192.168.1.0/24` <br/><br/>IP：有效的 IPv4/IPv6 `192.168.1.0-192.168.1.9` 地址范围，格式 (不包含空格)  |

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ec001f0a1576b767f93d74b7ef865e3912d397f1
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 8a649e7b7e2fef43661e9267c51956aac2a7bb2e
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449788"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512582"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>设置和配置 Microsoft Defender for Business
 
@@ -47,7 +47,7 @@ Microsoft Defender for Business 提供了简化的安装和配置体验，专为
 | 1 | [查看要求](mdb-requirements.md) | 查看 Microsoft Defender for Business 的要求，包括支持的操作系统。 请参阅 [Microsoft Defender for Business 要求](mdb-requirements.md)。 |
 | 2 | [分配角色和权限](mdb-roles-permissions.md)     | 安全团队人员需要权限才能执行任务，例如查看检测到的威胁&修正操作、查看 & 编辑策略、载入设备和使用报告。 可以通过某些角色授予这些权限。 请参阅 [分配角色和权限](mdb-roles-permissions.md)。        |
 | 3 | [设置电子邮件通知](mdb-email-notifications.md) | 您可以指定在触发警报或发现新漏洞时应接收电子邮件通知的人。 请参阅 [设置电子邮件通知](mdb-email-notifications.md)。| 
-| 4 | [载入设备](mdb-onboard-devices.md)     | Microsoft Defender for Business 已设置，以便你可以从多个选项中进行选择以载入组织的设备。 请参阅 [将设备载入到 Microsoft Defender for Business](mdb-onboard-devices.md)。         |
+| 4 | [载入设备](mdb-onboard-devices.md)     | Microsoft Defender for Business 已设置，以便你可以从多个选项中进行选择以载入你的公司设备。 请参阅 [将设备载入到 Microsoft Defender for Business](mdb-onboard-devices.md)。         |
 | 5 | [配置安全设置和策略](mdb-configure-security-settings.md) | 您可以从多个选项中进行选择以配置安全设置和策略，包括简化的配置过程或Microsoft Endpoint Manager。 请参阅 [配置安全设置和策略](mdb-configure-security-settings.md)。 |
 
 ## <a name="next-steps"></a>后续步骤

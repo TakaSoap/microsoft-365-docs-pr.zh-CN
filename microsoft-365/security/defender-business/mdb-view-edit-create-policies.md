@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 01275143f7d52e4df0fa0aa1d904d60d13eda3b8
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 7b9c565a17d27aa57d1cb877a9a76e3ff0317f55
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449774"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512972"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>在 Microsoft Defender for Business 中查看或编辑策略
 
@@ -31,7 +31,7 @@ ms.locfileid: "63449774"
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
-在 Microsoft Defender for Business 中，安全设置通过应用于设备的策略进行配置。 为了帮助简化设置和配置体验，Defender for Business 包括预配置策略，以帮助在载入组织设备后尽快保护这些设备。 可以使用默认策略、编辑策略或创建自己的策略。
+在 Microsoft Defender for Business 中，安全设置通过应用于设备的策略进行配置。 为了帮助简化设置和配置体验，Defender for Business 包括预配置策略，以帮助在载入设备后尽快保护这些设备。 可以使用默认策略、编辑策略或创建自己的策略。
 
 **本文介绍如何**：
 
@@ -50,11 +50,11 @@ ms.locfileid: "63449774"
 
 ## <a name="default-policies-in-defender-for-business"></a>Defender for Business 中的默认策略
 
-在 Defender for Business 中，有两种主要类型的策略来保护你的组织设备：
+在 Defender for Business 中，有两种主要类型的策略来保护你的公司设备：
 
 - **下一代保护** 策略，用于确定Microsoft Defender 防病毒和其他威胁防护功能的配置方式
 
-- **防火墙** 策略，可确定允许哪些网络流量流入和流出组织设备
+- **防火墙** 策略，用于确定允许哪些网络流量流入和流出公司设备
 
 
 ## <a name="view-your-existing-policies"></a>查看现有策略
@@ -118,7 +118,7 @@ ms.locfileid: "63449774"
 
 7. 在 **"设备组"** 选项卡上，创建新设备组或使用现有组。 策略通过设备组分配给设备。 以下是需要记住的一些内容：
 
-   - 最初，你可能只有默认设备组，其中包括组织中人员用于访问组织数据和电子邮件的设备。 你可以保留和使用默认设备组。
+   - 最初，你可能只有默认设备组，其中包括公司中人员用于访问公司数据和电子邮件的设备。 你可以保留和使用默认设备组。
    - 创建新的设备组，以应用具有与默认策略不同的特定设置的策略。 
    - 设置设备组时，请指定某些条件，如操作系统版本。 符合条件的设备包含在该设备组中，除非你排除它们。 
    - 所有设备组（包括定义的默认和自定义设备组）都存储在Azure Active Directory (Azure AD) 。

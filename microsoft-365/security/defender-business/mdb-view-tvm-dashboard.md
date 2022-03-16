@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 807ed67a789364928b00431f9d7a5abb98eba137
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 7d529ffac45484f585cf654d30cb5522bbdffcd5
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449900"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512288"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>在 Microsoft Defender for Business &威胁和漏洞管理仪表板
 
@@ -33,7 +33,7 @@ ms.locfileid: "63449900"
 
 Microsoft Defender for Business 包括威胁&漏洞管理仪表板，旨在节省安全团队的时间和精力。 除了提供曝光分数之外，还可以查看有关公开的设备和安全建议的信息。 可以使用威胁和漏洞&仪表板：
 
-- 查看与组织中设备关联的曝光分数
+- 查看你的曝光分数，该分数与公司中的设备相关联
 
 - 查看顶级安全建议，例如解决与设备通信受损的问题、打开防火墙保护或更新Microsoft Defender 防病毒定义
 

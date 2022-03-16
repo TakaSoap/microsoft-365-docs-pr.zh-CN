@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) 使用 Microsoft 365 Lighthouse，了解如何设置角色以管理客户租户。
-ms.openlocfilehash: 82203c7faa361bf512c3184616b47760655083d4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 948e6909f0fc8d743c84662de6c8a2d9c0bc88e3
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330806"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512236"
 ---
 # <a name="set-up-roles-to-manage-customer-tenants"></a>设置角色以管理客户租户
 
@@ -30,6 +30,9 @@ ms.locfileid: "63330806"
 如果 MSP 技术人员仍使用通过委派管理员权限 (DAP) 授予的支持人员代理或管理员代理角色访问客户环境，请参阅本文的 [位于 Lighthouse 中的 DAP](#dap-in-lighthouse) 。 如果 GDAP 和 DAP 共存，则通过 GDAP 授予用户的角色优先于已建立 GDAP 关系的客户。
 
 ## <a name="set-up-gdap-in-lighthouse"></a>在 Lighthouse 中设置 GDAP
+
+> [!NOTE]
+> GDAP 目前处于公共[](/partner-center/announcements/2022-february#6) (预览版) ，以允许合作伙伴在 GDAP 公开发布之前分配具体权限。
 
 若要与客户建立 GDAP 关系，需要执行下面的高级步骤。 有关 GDAP 详细信息，请参阅 [GDAP](/partner-center/gdap-introduction) (委派管理员权限) 。
 
@@ -49,7 +52,7 @@ ms.locfileid: "63330806"
 
 ||技术支持人员 |系统管理员 |升级工程师|
 |--------------------|-------------|-------------|------------|
-|**建议的 GDAP 角色** |<ul><li>帮助台管理员</li><li>安全信息读取者</li></ul>   |<ul><li>用户管理员</li><li>身份验证管理员</li><li>全局读取者</li><li>Intune 管理员</li><li>安全管理员</li></ul>   |全局管理员  |
+|**建议的 GDAP 角色** |<ul><li>帮助台管理员</li><li>安全读取者</li></ul>   |<ul><li>用户管理员</li><li>身份验证管理员</li><li>全局读取者</li><li>Intune 管理员</li><li>安全管理员</li></ul>   |全局管理员  |
 |**Tasks** |在 Lighthouse 中读取客户信息， (，例如重置用户密码或更新联系人)    |通过采取纠正措施在 Lighthouse (维护客户安全，例如，重新启动) 。   |根据需要执行特权操作来保护客户租户 (例如，阻止遭到入侵的管理员登录) 。  |
 
 有关特定权限的说明，请参阅Azure AD[角色。](/azure/active-directory/roles/permissions-reference) 有关特定于合作伙伴的角色和任务，请参阅 [最小特权角色](/partner-center/gdap-least-privileged-roles-by-task)。

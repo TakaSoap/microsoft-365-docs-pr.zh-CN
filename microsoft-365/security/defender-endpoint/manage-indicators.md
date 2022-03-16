@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c241438e2cd9a0a5bd9bb018d671340c22ef7d0d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 00685ee4540949028b8bb438dd8a4965e2e9a5e7
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163538"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513054"
 ---
 # <a name="create-indicators"></a>创建指示器
 
@@ -39,7 +39,7 @@ ICS (泄露) 是每个终结点保护解决方案中的重要功能。 此功能
 
 创建定义实体的检测、防护和排除的指示器。 你可以定义要采取的操作以及何时应用该操作的持续时间，以及要应用该操作的设备组的范围。
 
-当前支持的源是 Defender for Endpoint 的云检测引擎、自动调查和修正引擎，以及终结点防护引擎 (Microsoft Defender 防病毒) 。
+当前支持的源是 Defender for Endpoint 的云检测引擎、自动调查和修正引擎以及终结点防护引擎 (Microsoft Defender 防病毒) 。
 
 ## <a name="cloud-detection-engine"></a>云检测引擎
 
@@ -59,7 +59,7 @@ EnableFileHashComputation 设置在文件扫描期间计算证书和文件 IoC �
 
 - 允许 – 允许 IoC 在你的设备上运行。
 - 审核 – IoC 运行时将触发警报。
-- 警告 - IoC 将提示一条警告，提示用户 (Defender for Cloud Apps only) 
+- 警告 - IoC 将提示用户可绕过的警告 
 - 阻止执行 - 不允许运行 IoC。
 - 阻止和修正 - 不允许运行 IoC，并且修正操作将应用于 IoC。
 
@@ -77,8 +77,8 @@ EnableFileHashComputation 设置在文件扫描期间计算证书和文件 IoC �
 | IoC 类型 | 可用操作 |
 |:---|:---|
 | [Files](indicator-file.md) | 允许 <br> Audit <br> 阻止和修正 |
-| [IP 地址](indicator-ip-domain.md) | 允许 <br> Audit <br> 阻止执行 |
-| [URL 和域](indicator-ip-domain.md) | 允许 <br> Audit <br> 阻止执行 |
+| [IP 地址](indicator-ip-domain.md) | 允许 <br> Audit <br> 阻止执行 <br> Warn |
+| [URL 和域](indicator-ip-domain.md) | 允许 <br> Audit <br> 阻止执行<br> Warn |
 | [证书](indicator-certificates.md) | 允许 <br> 阻止和修正 |
 
 预先存在的 IoC 的功能不会更改。 但是，已重命名指示器以匹配当前支持的响应操作：
@@ -89,9 +89,9 @@ EnableFileHashComputation 设置在文件扫描期间计算证书和文件 IoC �
 IoC API 架构和提前搜寻的威胁 ID 已更新，以与 IoC 响应操作重命名保持一致。 API 方案更改适用于所有 IoC 类型。
 
 > [!Note]
-> 每个租户限制为 15，000 个指示器。 文件和证书指示器不会阻止为 Microsoft Defender 防病毒 定义的[排除](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)项。 当指示器处于被动模式Microsoft Defender 防病毒不支持指示器。
+> 每个租户限制为 15，000 个指示器。 文件和证书指示器不会阻止[为](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)Microsoft Defender 防病毒。 当指示器处于被动模式Microsoft Defender 防病毒不支持指示器。
 >
-> 根据新的更新操作和警报设置 (ICS) 新指示器的格式已更改。 我们建议下载可在导入面板底部找到的新 CSV 格式。
+> 根据新的更新操作和警报设置， (ICS) 新指示器的格式已更改。 我们建议下载可在导入面板底部找到的新 CSV 格式。
 
 ## <a name="related-topics"></a>相关主题
 

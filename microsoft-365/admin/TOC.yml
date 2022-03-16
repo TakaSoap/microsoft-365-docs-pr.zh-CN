@@ -145,11 +145,11 @@
               href: add-users/remove-former-employee-step-1.md
             - name: 步骤 2. 保存前员工的邮箱的内容
               href: add-users/remove-former-employee-step-2.md
-            - name: 步骤 3. 擦除并阻止以前员工的移动设备
+            - name: 步骤 3. 擦除并阻止前员工的移动设备
               href: add-users/remove-former-employee-step-3.md
             - name: 步骤 4. 将前员工的电子邮件转发给其他员工或转换为共享邮箱
               href: add-users/remove-former-employee-step-4.md
-            - name: 步骤 5. 授予其他员工对 OneDrive 和 Outlook 数据的访问权限
+            - name: 步骤 5. 允许其他员工访问 OneDrive 和 Outlook 数据
               href: add-users/remove-former-employee-step-5.md
             - name: 步骤 6. 删除前员工的 Microsoft 365 许可
               href: add-users/remove-former-employee-step-6.md
@@ -344,12 +344,12 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: 管理和监视优先级帐户
           href: setup/priority-accounts.md
+        - name: 启用空闲会话超时
+          href: manage/idle-session-timeout-web-apps.md
         - name: 为 Office 2013 启用新式身份验证
           href: security-and-compliance/enable-modern-authentication.md
         - name: 数据保护的先决条件
           href: security-and-compliance/pre-requisites-for-data-protection.md
-        - name: 安全功能
-          href: security-and-compliance/secure-your-business-data.md
         - name: 增强威胁防护
           href: security-and-compliance/increase-threat-protection.md
         - name: Microsoft Defender 防病毒 检测到的威胁

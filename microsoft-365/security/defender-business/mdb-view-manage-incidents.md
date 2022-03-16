@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 15956fa92729ce3a4c295b3199c3806154de9d34
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 2e6edf09c781302c61e44a82e9f2d21c5ab2bc15
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449157"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513014"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>在 Microsoft Defender for Business 中查看和管理事件
 
@@ -31,7 +31,7 @@ ms.locfileid: "63449157"
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
-当检测到威胁并触发警报时，将创建事件。 组织的安全团队可以在安全门户中查看Microsoft 365 Defender事件。
+当检测到威胁并触发警报时，将创建事件。 公司的安全团队可以在安全门户中查看和管理Microsoft 365 Defender事件。
 
 **本文包括**：
 
@@ -59,19 +59,19 @@ ms.locfileid: "63449157"
 3. 在飞出窗格中，你可以看到警报标题、查看受影响的终结点或用户帐户 (（如终结点或用户帐户) ）列表、采取可用操作，以及使用链接查看详细信息，甚至打开所选警报的详细信息页面。 
 
 > [!TIP]
-> Microsoft Defender for Business 旨在通过提供建议操作来帮助你解决检测到的威胁。 查看警报时，请查找要采取的建议操作。 还要注意警报严重性，该严重性不仅根据威胁严重性确定，还根据组织面临的风险级别确定。 
+> Microsoft Defender for Business 旨在通过提供建议操作来帮助你解决检测到的威胁。 查看警报时，请查找要采取的建议操作。 还要注意警报严重性，该严重性不仅根据威胁严重性确定，还根据公司的风险级别确定。 
 
 ## <a name="alert-severity"></a>警报严重性
 
 当Microsoft Defender 防病毒根据检测到的威胁 (恶意软件的绝对严重性) 以及受到感染的单个终结点的潜在风险 (警报严重性) 。
-Microsoft Defender for Business 根据检测到的行为的严重性、终结点 (设备) 的实际风险以及更重要的是，为组织带来潜在风险来分配警报严重性。 下表列出了一些示例： <br/><br/>
+Microsoft Defender for Business 根据检测到的行为的严重性、终结点 (设备) 的实际风险以及更重要的是，为公司带来潜在风险来分配警报严重性。 下表列出了一些示例： <br/><br/>
 
 | 应用场景 | 警报严重性 | Reason |
 |:---|:---|:---|
 | Microsoft Defender 防病毒威胁之前检测并停止威胁。 | 信息 | 威胁在损坏完成之前已停止。 |
-| Microsoft Defender 防病毒检测组织中正在执行的恶意软件。 恶意软件已停止并修复。 | 低 | 尽管可能已经对单个终结点造成一些损坏，但恶意软件现在不会对组织带来任何威胁。 |
-| Microsoft Defender for Business 检测到正在执行的恶意软件。 恶意软件几乎会立即被阻止。 | 中或高 | 恶意软件会向各个终结点和您的组织带来威胁。 |
-| 检测到可疑行为，但尚未执行修正操作。 | 低、中或高 | 严重性取决于行为对组织的威胁程度。 |
+| Microsoft Defender 防病毒检测在公司内执行的恶意软件。 恶意软件已停止并修复。 | 低 | 尽管可能已经对单个终结点造成一些损坏，但恶意软件现在不会对你的公司带来任何威胁。 |
+| Microsoft Defender for Business 检测到正在执行的恶意软件。 恶意软件几乎会立即被阻止。 | 中或高 | 恶意软件会向各个终结点和公司带来威胁。 |
+| 检测到可疑行为，但尚未执行修正操作。 | 低、中或高 | 严重性取决于行为对公司的威胁程度。 |
 
 ## <a name="next-steps"></a>后续步骤
 

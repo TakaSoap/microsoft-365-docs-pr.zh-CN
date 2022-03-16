@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 了解如何访问和使用 Microsoft 服务信任门户来帮助实现安全性、隐私和合规性实践。
-ms.openlocfilehash: 2efa7389da9d53d14b833dc31bd84b446ee48f63
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 5894fb57d4633c0dbc3c9d925be72910bdfc3f56
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785914"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512904"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 
@@ -34,7 +34,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 ### <a name="existing-customers"></a>现有客户
 
-现有客户可以通过以下在线订阅之一访问服务信任门户， (<https://aka.ms/STP> 试用版或付费) ：
+现有客户可以通过以下 <https://aka.ms/STP> 在线订阅之一访问服务信任门户， (或付费) ：
 
 - Microsoft 365
 - Dynamics 365
@@ -47,13 +47,13 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 若要创建新帐户或创建试用帐户，请使用下列注册表单之一 (用于试用帐户) 访问 STP。
 
-- 注册新的 Microsoft 365 商业应用版[试用帐户或](https://go.microsoft.com/fwlink/p/?LinkID=507653)新的 Office 365 企业版[试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- 注册新的 Microsoft 365 商业应用版 [试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=507653)或新的 Office 365 企业版 [试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 - 注册新的 [Dynamics 365 试用帐户](https://go.microsoft.com/fwlink/?LinkId=252780)
 
-- 注册新的 Azure [试用帐户](https://go.microsoft.com/fwlink/?LinkId=722737)。
+- 注册新的 [Azure 试用帐户](https://go.microsoft.com/fwlink/?LinkId=722737)。
 
-注册免费试用版或订阅时，必须启用Azure Active Directory才能支持访问 STP。
+注册免费试用版或订阅时，必须启用Azure Active Directory以支持对 STP 的访问。
 
 ## <a name="using-the-service-trust-portal"></a>使用服务信任门户
 
@@ -70,7 +70,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 ### <a name="compliance-manager"></a>合规性管理器
 
 > [!IMPORTANT]
-> 合规性管理器已从服务信任门户移动到其新位置的 Microsoft 365 合规中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">。</a> 所有客户数据已移至新位置，因此你可以继续使用合规性管理器而不会中断。 有关设置 [信息，请参阅合规性](compliance-manager.md) 管理器文档，了解新功能。 尽管经典版本的合规性管理器仍保留在服务信任门户中，但鼓励所有用户在服务信任门户Microsoft 365 合规中心。
+> 合规性管理器已从服务信任门户<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">移动到Microsoft 365 合规中心。</a> 所有客户数据已移至新位置，因此你可以继续使用合规性管理器而不会中断。 有关设置 [信息，请参阅合规性](compliance-manager.md) 管理器文档，了解新功能。
 
 ### <a name="trust-documents"></a>信任文档
 
@@ -110,28 +110,22 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 - **设置：** 此页面允许你为合规性管理器分配用户角色 (经典) 。
 
-- **用户隐私设置：** 此页面允许您导出包含合规性管理器中的行动项分配的报告， (用户) 经典任务分配。 还可以将所有行动项重新分配给其他用户，并删除指定用户分配的任何行动项。
+- **用户隐私设置：** 此页面允许您导出包含特定用户的合规性管理器 () 操作项分配的报告。 还可以将所有行动项重新分配给其他用户，并删除指定用户分配的任何行动项。
 
 ### <a name="search"></a>搜索
 
-单击"服务信任门户"页面右上角的放大镜以展开该框，输入搜索词，然后按 **Enter。** 将显示 **"** 搜索"页，搜索词显示在搜索框中，搜索结果如下所示。
-
-![服务信任门户 - 搜索文档（应用了筛选器）。](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+单击"服务信任门户"页面右上角的放大镜以展开该框，输入搜索词，然后按 **Enter**。 **将显示"** 搜索"页，搜索词显示在搜索框中，搜索结果如下所示。
 
 默认情况下，搜索返回文档结果。 可以使用下拉列表来优化显示的文档列表，以筛选结果。 可以使用多个筛选器来缩小文档列表。 筛选器包括特定的云服务、合规性或安全实践类别、地区和行业。 单击"文档名称"链接以下载文档。
-
-若要在合规性管理器中列出与搜索 (相关的) 评估中的控制措施，请单击"合规性 **管理器"。** 搜索结果显示评估的创建日期、评估分组的名称、适用的 Microsoft 云服务，以及控制是 Microsoft 还是客户托管。 单击该控件的名称以查看合规性管理器评估中的控件 (经典) 。
-
-![服务信任门户 - 搜索合规性管理器控制措施。](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 
 > [!NOTE]
 > 服务信任门户报告和文档可在发布后至少 12 个月内下载，或直到有新版本的文档可用。
 
 ## <a name="my-library"></a>我的库
 
-使用"我的库"功能将服务信任门户上的文档和资源添加到我的库页面。 这样，您可以在一个地方访问与自己相关的文档。  若要将文档添加到"我的库"，请单击文档右边的"..."菜单，然后选择"**保存到库"。** 可以通过单击一个或多个文档旁边的复选框，然后单击页面顶部的"保存到库"，将多个文档添加到我的库。 
+使用"我的库"功能将服务信任门户上的文档和资源添加到我的库页面。 这样，您可以在一个地方访问与自己相关的文档。  若要将文档添加到"我的库"，请单击文档右边的"..."菜单，然后选择"保存到 **库"**。 可以通过单击一个或多个文档旁边的复选框，然后单击页面顶部的"保存到库"，将多个文档添加到我的库。
 
-此外，通知功能还允许您配置"我的库"，以便 Microsoft 更新已添加到"我的库"的文档时，会向用户发送电子邮件。 若要设置通知，请转到我的库，**然后单击通知** 设置。 可以选择通知频率，并指定组织中要向其中发送通知的电子邮件地址。 电子邮件通知包括指向已更新的文档的链接以及更新的简要说明。
+此外，通知功能还允许您配置"我的库"，以便 Microsoft 更新已添加到"我的库"的文档时，会向用户发送电子邮件。 若要设置通知，请转到我的库，然后单击通知 **设置**。 可以选择通知频率，并指定组织中要向其中发送通知的电子邮件地址。 电子邮件通知包括指向已更新的文档的链接以及更新的简要说明。
 
 另请注意，我们会识别"我的库"中最近 30 天内已更新的任何文档，无论你是否启用通知。 工具提示中还显示了更新的简要说明。
 
@@ -145,13 +139,11 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 - **审核初学者包：** 使用此初学者包，可指导你使用审核控件和其他工具，以帮助指导你实现 Microsoft 云服务，帮助降低组织的风险。
 
-若要访问这些初学者包，请转到服务信任门户 **> Industry & Regions > Industry Solutions > Financial Services**。 你可以打开或下载初学者包中的文档，或将它们保存到我的库。
+若要访问这些初学者包，请转到服务信任门户 **>行业**&区域>行业解决方案>金融服务。 你可以打开或下载初学者包中的文档，或将它们保存到我的库。
 
 ## <a name="localization-support"></a>本地化支持
 
 通过服务信任门户，可以查看不同语言的网页内容。 若要更改网页语言，只需单击网页左下角的地球图标并选择所需语言即可。
-
-![服务信任门户 - 本地化内容选项。](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## <a name="give-feedback"></a>提供反馈
 

@@ -18,12 +18,12 @@ ms.date: 03/14/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 3a0701880a5712de4ec930e49397bf2ef4b8e637
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 25d01c597da0f3a3e108eeee27d3a0dfe5b58eb7
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468852"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512526"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender 防病毒安全产品的兼容性
 
@@ -153,13 +153,13 @@ Defender for Endpoint 影响Microsoft Defender 防病毒在被动模式下运行
  | [网络保护功能](network-protection.md)  | 是 | 否 | 否 | 否 | 
  | [攻击面减少规则](attack-surface-reduction.md)  | 是 | 否 | 否  | 否 | 
  | [有限定期扫描可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | 否 | 否 | 是 | 否 | 
- | [文件扫描和检测信息](review-scan-results-microsoft-defender-antivirus.md) | 是 | 是 | 否 | 是 | 
- | [威胁修正](configure-remediation-microsoft-defender-antivirus.md) | 是 | 请参阅注释 <sup>[[5](#fn5)]</sup> | 否 | 是 | 
+ | [文件扫描和检测信息](review-scan-results-microsoft-defender-antivirus.md) | 是 | 是<sup>[[5](#fn5)]</sup> | 否 | 是 | 
+ | [威胁修正](configure-remediation-microsoft-defender-antivirus.md) | 是 | 是 | 否 | 是 | 
  | [安全智能更新](manage-updates-baselines-microsoft-defender-antivirus.md) | 是 | 是 | 否 | 是 | 
 
  (<a id="fn4">4</a>) 通常，当 Microsoft Defender 防病毒 处于被动模式时，实时保护不会提供任何阻止或强制，即使已启用且处于被动模式。
 
- (<a id="fn5">5</a>) 当Microsoft Defender 防病毒处于被动模式时，威胁修正功能仅在计划扫描或按需扫描期间处于活动状态。
+ (<a id="fn5">5</a>) 当Microsoft Defender 防病毒处于被动模式时，不会计划扫描。
 
 > [!NOTE]
 > [Microsoft 365处于](/microsoft-365/compliance/endpoint-dlp-learn-about)主动或被动模式时，Microsoft Defender 防病毒数据丢失防护继续正常运行。

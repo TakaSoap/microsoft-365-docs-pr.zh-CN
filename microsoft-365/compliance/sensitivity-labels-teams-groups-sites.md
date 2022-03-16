@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: 39caee37f8bf8b2f885824bbdd12ca7b5b372e69
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 46daf3ecd4c918196fa7a50f8e8869bdd54c945e
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320503"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504825"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -327,7 +327,7 @@ ms.locfileid: "63320503"
 
 ## <a name="support-for-sensitivity-labels"></a>对于敏感度标签的支持
 
-使用支持敏感度标签的管理中心时，可看到租户的所有敏感度标签。 相比之下，根据发布策略筛选敏感度标签的用户应用和服务可以导致你看到这些标签的子集。
+使用支持敏感度标签的管理中心时，除了 Azure Active Directory 门户外，你将看到租户的所有敏感度标签。 相比之下，根据发布策略筛选敏感度标签的用户应用和服务可以导致你看到这些标签的子集。 Azure Active Directory 门户还根据发布策略筛选标签。
 
 以下应用和服务支持为网站和组设置配置的敏感度标签：
 
@@ -335,9 +335,9 @@ ms.locfileid: "63320503"
 
   - SharePoint 管理中心
   - Teams 管理中心
-  - Azure Active Directory 高级版
   - Microsoft 365 管理中心
   - Microsoft 365 合规中心
+  - Azure Active Directory 高级版
 
 - 用户应用和服务：
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 2cc157e363c42b94cac750b19a6122ed0a22c3de
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: b55af496881489279a7a6f96ed386ab2a26c2fa5
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450754"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512596"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>使用向导设置 Microsoft Defender for Business
 
@@ -51,13 +51,13 @@ Microsoft Defender for Business 旨在通过类似向导的体验为中小型企
    - 安全管理员可以查看和编辑安全设置。 
    - 安全读者只能查看报告中的信息。 
 
-2. **载入和配置Windows设备**。 在此步骤中，你可以将组织的 Windows快速载入 Defender for Business。 从第一天起，载入设备有助于保护这些设备。 有关详细信息 [，请参阅将设备载入 Microsoft Defender for Business](mdb-onboard-devices.md) 。
+2. **载入和配置Windows设备**。 在此步骤中，你可以将公司的 Windows快速载入 Defender for Business。 从第一天起，载入设备有助于保护这些设备。 有关详细信息 [，请参阅将设备载入 Microsoft Defender for Business](mdb-onboard-devices.md) 。
 
-   - 如果你已在使用 Microsoft Endpoint Manager) 的 Microsoft Intune (部分，并且你的组织已在 Endpoint Manager 中注册了设备，则系统将会询问你是否希望对部分或所有注册的 Windows 设备使用自动载入。[](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) 自动载入可设置 Endpoint Manager 和 Defender for Business 之间的连接，然后将Windows设备无缝载入到 Defender for Business。
+   - 如果你已在 Microsoft Endpoint Manager) 的 Microsoft Intune (部分使用，并且你的公司已在 Endpoint Manager 中注册了设备，则系统将会询问你是否希望对部分或所有注册的 Windows 设备使用自动载入。[](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) 自动载入可设置 Endpoint Manager 和 Defender for Business 之间的连接，然后将Windows设备无缝载入到 Defender for Business。
 
    - 如果你尚未使用 Endpoint Manager，或者如果你在 Endpoint Manager 中注册了非 Windows 设备，你可以手动将设备载入 [Defender for Business](mdb-onboard-devices.md#local-script-in-defender-for-business)。 
    
-3. **配置安全策略**。 Defender for Business 包括适用于下一代保护和防火墙保护的默认安全策略，可应用于你的组织设备。 这些默认策略使用推荐设置，旨在为设备提供强大的保护。 
+3. **配置安全策略**。 Defender for Business 包括适用于下一代保护和防火墙保护的默认安全策略，可应用于你的公司设备。 这些默认策略使用推荐设置，旨在为设备提供强大的保护。 
 
    如果需要，还可以创建自己的安全策略。 而且，如果你已在使用Endpoint Manager，可以继续使用它来管理安全策略。 
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 4f92c50ad971de439541a7b8ea2e8f9fb5312c48
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: deae4e7449f142cbdbb9ef4d41953824499bedca
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449389"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512680"
 ---
 # <a name="get-microsoft-defender-for-business"></a>获取 Microsoft Defender for Business
 
@@ -80,7 +80,7 @@ Microsoft 列出了有权销售产品的解决方案提供商，包括 Microsoft
 
 4. 填写包含联系信息的表单。 
 
-   - 如果你是正在与 Microsoft 合作伙伴合作的客户，请在"其他"框中填写合作伙伴的组织名称。 然后选择" **提交**"。
+   - 如果你是正在与 Microsoft 合作伙伴合作的客户，请在"其他"框中填写合作伙伴的公司名称。 然后选择" **提交**"。
    - 如果你是 Microsoft 合作伙伴，请确保指示你的合作关系类型和有关你计划合作的客户的信息。
 
 5. 填写完表单后，选择"提交 **"**。
@@ -103,7 +103,7 @@ Microsoft 列出了有权销售产品的解决方案提供商，包括 Microsoft
 | [https://admin.microsoft.com/](https://admin.microsoft.com/) Microsoft 365 管理中心 ()       | 使用 Microsoft 365 管理中心激活试用版，并首次登录。<br/><br/> 你还将使用Microsoft 365 管理中心： <br/>- 添加或删除用户<br/>- 分配用户许可证<br/>- 查看产品和服务<br/>- 完成订阅的Microsoft 365任务 <br/><br/> 若要了解更多信息，请参阅[概述Microsoft 365 管理中心](../../admin/admin-overview/admin-center-overview.md)。      |
 | Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com)     | 使用 Microsoft 365 Defender门户设置和配置 Defender for Business。 <br/><br/>你将使用Microsoft 365 Defender门户： <br/>- 查看设备和设备保护策略<br/>- 查看检测到的威胁并采取措施<br/>- 查看安全建议并管理安全设置 <br/><br/>若要了解更多信息，请参阅开始使用 [Microsoft 365 Defender 门户](mdb-get-started.md)。        |
 
-如果你的组织正在使用Microsoft 365 商业高级版，那么你Microsoft Intune (部分Microsoft Endpoint Manager) ，并且你可能正在使用 Microsoft Endpoint Manager 管理[https://endpoint.microsoft.com/](https://endpoint.microsoft.com/) () 。 Endpoint Manager还支持管理设备和配置安全设置。 若要了解更多信息，[Microsoft Intune你的设备的 MDM 和 MAM 提供程序](/mem/intune/fundamentals/what-is-intune)。
+如果你的公司正在使用Microsoft 365 商业高级版，那么你Microsoft Intune (部分Microsoft Endpoint Manager) ，并且你可能正在使用 Microsoft Endpoint Manager 管理[https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)中心 () 。 Endpoint Manager还支持管理设备和配置安全设置。 若要了解更多信息，[Microsoft Intune你的设备的 MDM 和 MAM 提供程序](/mem/intune/fundamentals/what-is-intune)。
 
 ## <a name="activate-your-trial"></a>激活试用版
 

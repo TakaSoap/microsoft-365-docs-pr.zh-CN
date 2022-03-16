@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: c955b85001a141933227873a1f74e681f74b004b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e1ef67f3f3011a660793858900f41f50c0e503b0
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322935"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512986"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Microsoft Defender for Business 中的教程和模拟
 
@@ -30,7 +30,7 @@ ms.locfileid: "63322935"
 > 
 > 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
 
-如果你刚刚完成 Microsoft Defender for Business 的设置，你可能想知道从何处开始了解 Defender for Business 的工作原理。 本文介绍了要试用的预览方案，以及适用于 Defender for Business 的几个教程和模拟。 这些资源旨在帮助你了解 Defender for Business 如何适用于你的组织。
+如果你刚刚完成 Microsoft Defender for Business 的设置，你可能想知道从何处开始了解 Defender for Business 的工作原理。 本文介绍了要试用的预览方案，以及适用于 Defender for Business 的几个教程和模拟。 这些资源旨在帮助你了解 Defender for Business 如何为公司工作。
 
 >
 > **有空吗？**
@@ -48,7 +48,7 @@ ms.locfileid: "63322935"
 | 使用本地脚本载入设备 <br/> (*不用于生产部署*)      | 在 Defender for Business 中，可以使用在每个设备上下载Windows 10运行的脚本，载入最多 10 台 Windows 10 和 11 台设备。 该脚本适用于评估 Defender for Business 在环境中如何工作，可创建与 Azure Active Directory (Azure AD) 的信任，并注册设备Microsoft Intune。 若要了解更多信息，请参阅 [Defender for Business 中的本地脚本](mdb-onboard-devices.md#local-script-in-defender-for-business)。         |
 | 使用移动设备载入Microsoft Intune     | 如果你已在使用 Microsoft Intune Defender for Endpoint 之前，可以继续使用 Microsoft Intune载入设备。 请尝试将 macOS、iOS 和 Android 设备与 Microsoft Intune。 若要了解更多信息，请参阅设备[注册Microsoft Intune](/mem/intune/enrollment/device-enrollment)。        |
 | 编辑安全策略     | 如果你在 Defender for Business 中管理安全策略，请使用设备 **配置** 页面查看和编辑策略。 若要了解更多信息，请参阅 [在 Microsoft Defender for Business 中查看或编辑策略](mdb-view-edit-policies.md)。        |
-| 执行模拟攻击   | Defender for Business 中提供了多个教程和模拟。 这些教程和模拟旨在展示 Defender for Business 的威胁防护功能如何适用于你的组织。 若要试用一个或多个教程，请参阅 [适用于 Microsoft Defender for Business](#recommended-tutorials-for-defender-for-business) 的推荐教程。         |
+| 执行模拟攻击   | Defender for Business 中提供了多个教程和模拟。 这些教程和模拟旨在展示 Defender for Business 的威胁防护功能如何适用于你的公司。 若要试用一个或多个教程，请参阅 [适用于 Microsoft Defender for Business](#recommended-tutorials-for-defender-for-business) 的推荐教程。         |
 | 查看事件Microsoft 365 Lighthouse     | 如果你是使用[Microsoft 云解决方案提供商](/partner-center/enrolling-in-the-csp-program)租户Microsoft 365 Lighthouse，你将很快能够在客户门户中查看Microsoft 365 Lighthouse事件。 若要了解更多信息，请参阅 [Microsoft 365 Lighthouse 和 Microsoft Defender for Business](mdb-lighthouse-integration.md)。       |
 
 
@@ -62,7 +62,7 @@ ms.locfileid: "63322935"
 |---------|---------|
 | **文档删除后门**     | 模拟在测试设备上引入基于文件的恶意软件的攻击。 本教程介绍如何获取和使用模拟文件，以及要监视的模拟Microsoft 365 Defender的内容。 <br/><br/>本教程要求Microsoft Word安装在测试设备上。   |
 | **实时响应教程**     | 了解如何将基本和高级命令与实时响应一同使用。 了解如何查找可疑文件、修正该文件以及收集设备上的信息。   |
-| **威胁&漏洞管理 (核心方案)**     | 了解以下危险和漏洞管理种方案： <br/><br/>1. 减少组织的威胁和漏洞暴露。 <br/>2. 请求修正。 <br/>3. 创建安全建议例外。 <br/><br/> 威胁漏洞管理对终结点漏洞和错误配置的发现、优先顺序和修正使用基于风险的方法。      |
+| **威胁&漏洞管理 (核心方案)**     | 了解以下危险和漏洞管理种方案： <br/><br/>1. 减少公司的威胁和漏洞暴露。 <br/>2. 请求修正。 <br/>3. 创建安全建议例外。 <br/><br/> 威胁漏洞管理对终结点漏洞和错误配置的发现、优先顺序和修正使用基于风险的方法。      |
 
 每个教程都包括一个演练文档，该文档介绍了方案、工作方式和操作方法。
 
