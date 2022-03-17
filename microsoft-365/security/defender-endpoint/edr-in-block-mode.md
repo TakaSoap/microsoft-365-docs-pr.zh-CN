@@ -15,15 +15,15 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 11/29/2021
+ms.date: 03/16/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 6b6e9f9c379d4d0a659b49b9b9ce9b22b6e5ee04
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6c3df0efe5c565497803ecdd84716ec70e590afd
+ms.sourcegitcommit: b67385243fb56ad20f2a6f1c40be46f5691c1c2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322655"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527822"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>阻止模式下的终结点检测和响应 (EDR)。
 
@@ -63,15 +63,24 @@ EDR模式中的应用与威胁威胁[& 漏洞管理](next-gen-threat-and-vuln-mg
 
 ## <a name="enable-edr-in-block-mode"></a>启用EDR阻止模式
 
+> [!IMPORTANT]
+> 从平台版本 4.18.2202.X 开始，你现在可以在阻止模式下设置 EDR 以使用 Intune CSP 面向特定设备组。 你可以继续在 EDR 门户的阻止模式租户范围内设置<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender设置。</a> 请注意，EDR模式主要用于在被动模式下运行 MDAV 的设备， (第三方 AV 处于活动状态) 。 
+
 > [!TIP]
 > 在以[阻止模式](#requirements-for-edr-in-block-mode)打开应用前，EDR满足要求。
+
+### <a name="security-portal"></a>安全门户 
 
 1. 转到"Microsoft 365 Defender门户 () [https://security.microsoft.com/](https://security.microsoft.com/) 并登录。
 2. 选择 **设置** \> **终结点常规** \>  \> **高级功能"**。
 3. 向下滚动，然后在块模式下EDR **启用。**
 
-> [!IMPORTANT]
-> EDR阻止模式的应用仅在 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>中打开，并且适用于租户范围。 无法在阻止EDR设置目标设备组或用户。 不能使用注册表项、Microsoft Intune或组策略来启用或禁用EDR阻止模式。
+### <a name="intune"></a>Intune
+
+若要在 Intune 中创建自定义策略，请参阅部署 OMA-URIs 以通过 Intune 面向云解决方案提供商，以及与 [本地的比较](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune)。
+
+有关在阻止模式下EDR的 Defender CSP 详细信息，请参阅 Defender CSP 下的"Configuration/PassiveRemediation["](/windows/client-management/mdm/defender-csp)。
+
 
 ## <a name="requirements-for-edr-in-block-mode"></a>阻止模式下EDR要求
 

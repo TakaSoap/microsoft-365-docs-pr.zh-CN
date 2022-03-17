@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/15/2022
+ms.date: 03/16/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: be3dcfd23c0fb77604cec140a4b1d3606f6ee345
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: c6454704c6cabfd5136eeec565c3c57dca044250
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63513040"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526890"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
@@ -85,20 +85,28 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 - 云 (集成[改进](/microsoft-365/security/defender/microsoft-365-defender)Microsoft 365 Defender) 
 <br/><br/>
 <details>
-<summary>2022 年 2 月 (平台：4.18.xxxx.xx |引擎：1.1.19000.8) </summary>
+<summary>2022 年 2 月 (平台：4.18.2202.4 |引擎：1.1.19000.8) </summary>
 
-&ensp;安全智能更新版本： **1.357.x.x**<br/>
+&ensp;安全智能更新版本： **1.361.14.0**<br/>
 &ensp;已发布： **2022 年 3 月 14 日**<br/>
-&ensp;平台： **4.18.xxxx.xx**<br/>
+&ensp;平台： **4.18.2202.4**<br/>
 &ensp;引擎： **1.1.19000.8**<br/>
 &ensp;支持阶段： **安全和关键更新**<br/>
 
 引擎版本：1.1.19000.8 <br/>
-安全智能更新版本：1.357.x.x <br/>
+安全智能更新版本：1.361.14.0 <br/>
 
 ### <a name="whats-new"></a>最近更新
 
-- 即将推出
+- 对检测和行为监视逻辑的改进
+- 修复了误报触发攻击面减少检测
+- 添加了修复，从而可以更好地保真EDR高级搜寻检测警报
+- Defender 不再支持 Toast 弹出窗口上的自定义通知。 修改了 GPO/Intune/SCCM 和文档以反映此更改。
+- 改进了捕获写入可移动存储的文件的信息和副本。 若要了解更多信息，请参阅 [Microsoft Defender for Endpoint Device Control Removable 存储 Access Control， removable storage media](device-control-removable-storage-access-control.md)。
+- 当 SmartScreen 服务无法访问时改进的流量输出 
+- 针对使用具有身份验证要求的代理的客户的连接改进
+- 修复了网络 FileShares 的 VDI 设备更新 bug 
+- EDR模式配置现在支持使用新 CSP 的粒度设备定位。 请参阅[终结点检测和响应 (EDR) 阻止模式](edr-in-block-mode.md)。
 
 ### <a name="known-issues"></a>已知问题
 

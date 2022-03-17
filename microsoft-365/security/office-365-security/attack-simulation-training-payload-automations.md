@@ -6,18 +6,18 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理员可以了解如何使用负载自动化 (负载收集) 收集并启动 Microsoft Defender for Office 365 计划 2 中攻击模拟培训的自动模拟。
 ms.technology: mdo
-ms.openlocfilehash: 3a0245acbb6d27353b4d4bd27011652c0a902975
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 13215b76646c5358bc9a043b91d3dbd403818684
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512373"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526300"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>攻击模拟培训的有效负载自动化
 

@@ -8,25 +8,25 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: '了解如何使用 JAMF Microsoft 365（适用于适用于 Endpoint 客户的 Microsoft Defender Pro 预览版）将 macOS 设备载入和 (到) '
-ms.openlocfilehash: cfe008e7d1334be58e9aabf45d441b2553cb0fe2
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+description: '了解如何使用适用于 Endpoint 客户的 JAMF Pro 将 macOS 设备载入和载出到 Microsoft 365 合规性解决方案中， (预览版) '
+ms.openlocfilehash: 7e2109f52590cc4d9ad23700fa4b51a09ae4b5db
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963307"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526466"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>使用适用于 Microsoft Defender for Endpoint 客户的 JAMF Pro 将 macOS 设备载入和卸载到合规性解决方案（预览版）
 
-可以使用 JAMF Pro macOS 设备载入到Microsoft 365解决方案。
+可以使用 JAMF Pro macOS 设备载入Microsoft 365合规性解决方案。
 
 > [!IMPORTANT]
-> 如果你 ***将*** Microsoft Defender for Endpoint (MDE) macOS 设备，请使用此过程
+> 如果你 ***已经将*** Microsoft Defender for Endpoint (MDE) macOS 设备，请使用此过程
 
 **适用于：**
 
@@ -37,7 +37,7 @@ ms.locfileid: "60963307"
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 确保[macOS 设备已Azure AD连接](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
+- 确保 [macOS 设备已Azure AD连接](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
 - 确保通过 [JAMF 专业版管理 macOS 设备](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
 - 在 macOS 设备上安装 v95+ Edge 浏览器 
 
@@ -68,7 +68,7 @@ ms.locfileid: "60963307"
 
 1. 在 **"MDE 首选项域属性"下** ，选择这些设置
     - 功能 
-        - 使用系统扩展 `enabled` ：- 对于加泰罗尼亚语上的网络扩展是必需的
+        - 使用系统扩展： `enabled` - 对于加泰罗尼亚语上的网络扩展是必需的
         - 使用数据丢失防护： `enabled`
 
 1. 选择" **范围"** 选项卡。
@@ -81,19 +81,19 @@ ms.locfileid: "60963307"
 
 1. 使用 **fulldisk.mobileconfig** 文件更新现有完整磁盘访问配置文件。
 
-1. Upload **fulldisk.mobileconfig 文件** 更新为 JAMF。 请参阅[使用 JAMF 部署自定义配置文件Pro。](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)
+1. Upload **fulldisk.mobileconfig 文件** 更新为 JAMF。 请参阅[使用 JAMF 部署自定义配置文件Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)。
 
 ### <a name="grant-accessibility-access-to-dlp"></a>授予对 DLP 的辅助功能访问权限
 
 1. 使用之前下载的 accessibility.mobileconfig 文件。
 
-1. Upload Jamf 部署自定义配置文件中所述，将 更新为[JAMF Pro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
+1. Upload JAMF，如[使用 Jamf](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro) 部署自定义配置文件中所述Pro。
 
 ### <a name="check-the-macos-device"></a>检查 macOS 设备 
 
 1. 重新启动 macOS 设备。
 
-1. 打开 **系统首选项**  >  **配置文件**。
+1. 打开 **"系统首选项** > **""文件"**。
 
 1. 你应该会看到：
     - 辅助性

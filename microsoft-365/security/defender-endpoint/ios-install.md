@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7045ff8931def0f7aef2c1ac40ea76ec839c7ad0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 003c7cee09499fdec46f7d588e792878e0d3be66
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312629"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525356"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>在 iOS 上部署 Microsoft Defender for Endpoint
 
@@ -117,7 +117,7 @@ ms.locfileid: "63312629"
 
 1. 完成后，在“**查看 + 创建**”页上，选择“**创建**”。 新配置文件将显示在配置文件列表中。
 
-1. 接下来，为了增强防钓鱼功能，可以在受监督的 iOS 设备上部署自定义配置文件。 请按照以下步骤操作：
+1. 接下来，必须在受监督的 iOS 设备上部署自定义配置文件。 这是为了增强的防钓鱼功能。 请按照以下步骤操作：
 
     - 从下载配置配置文件 [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
     - 导航到 **DevicesiOS** -> **/iPadOSConfiguration** ->  **配置文件** -> **创建配置文件**
@@ -170,7 +170,7 @@ ms.locfileid: "63312629"
 管理员可以将 Microsoft Defender for Endpoint 配置为以静默方式部署和激活。 在此流中，管理员创建部署配置文件，并且只会向用户通知安装。 自动安装 Defender for Endpoint，无需用户打开应用。 按照以下步骤在已注册的 iOS 设备上设置 Defender for Endpoint 的零接触或无提示部署：
 
 1. 在 [Microsoft Endpoint Manager 管理中心，](https://go.microsoft.com/fwlink/?linkid=2109431)转到 **DevicesConfiguration** >  **ProfilesCreate** >  Profile。
-1. 选择 **"平台** 为 **iOS/iPadOS"和****"配置文件类型** 为 **VPN"**。 选择 **“创建”**。
+1. 选择 **"平台** 为 **iOS/iPadOS"和****"配置文件类型** 为 **VPN"**。 选择“**创建**”。
 1. 键入配置文件的名称，然后选择"下一步 **"**。
 1. 为 **"连接** 类型"选择"自定义 VPN"，在" **基本 VPN** "部分，输入以下内容：
     - 连接名称 = Microsoft Defender for Endpoint

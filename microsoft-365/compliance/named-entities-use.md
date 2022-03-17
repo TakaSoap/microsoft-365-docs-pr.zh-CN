@@ -12,21 +12,21 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: 使用这些过程可以利用数据丢失防护策略中的命名实体
-ms.openlocfilehash: f3dac4efa1b0cf84971ac4d07f78144b438d1161
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 5adb410689e597395f1b13152ed62af75fa111d6
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271510"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525217"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>在数据丢失防护策略中使用命名实体（预览版）
 
 > [!IMPORTANT]
-> 命名实体功能正在推出，并且将在可供你使用时显示在租户中。 在内容资源管理器和 DLP (策略创作流的数据丢失) 检查它们。 
+> 命名实体功能正在推出，并且将在可供你使用时显示在租户中。 在内容资源管理器和 DLP 策略创作流的数据丢失 (检查) 。 
 
 在开始使用 [之前， ](named-entities-learn.md) 请 (了解) 实体和预览模式。
 
@@ -45,7 +45,7 @@ ms.locfileid: "62271510"
 
 ### <a name="permissions"></a>权限
 
-您用于创建和编辑 DLP 策略的数据丢失防护 () 必须具有 **DLP 合规性管理** 角色权限。 有关详细信息，请参阅向[用户授予对 Office 365 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+在 DLP 策略中用于创建和编辑数据丢失防护 (的帐户) **DLP 合规性管理** 角色权限。 有关详细信息，请参阅向[用户授予对 Office 365 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
 
 ## <a name="supported-locations"></a>支持的位置
@@ -96,7 +96,7 @@ ms.locfileid: "62271510"
 
 |工作负载/服务 |对命名实体的公共预览支持  |
 |---------|---------|
-|Office Win32 客户端   |支持，用户必须选择标签并手动应用 |
+|Office Win32 客户端脱机   |支持，用户必须选择标签并手动应用 |
 |联机Office Win32 客户端联机|支持旧可信度方案 |
 |Outlook联机   |支持旧可信度方案  |
 |Office WAC 客户端     |支持 |
@@ -110,8 +110,8 @@ ms.locfileid: "62271510"
 
 |问题  |影响  |
 |---------|---------|
-|OWA、Outlook、Office Win32 客户端 (DLP 策略)      |   具有实体条件的策略提示将导致"不匹配"      |
-| 中文、日语、朝鲜语 (中文、日语和朝鲜语对人名的亚洲语言)     | 仅支持基于拉丁语的字符集的命名实体 (即，人名不支持) 日文汉字        |
+|DLP 策略提示 (OWA、Outlook、Office Win32 客户端)      |   具有实体条件的策略提示将导致"不匹配"      |
+| 中文、日语、朝鲜语 (中文、日语和朝鲜语对人名的亚洲语言)     | 仅支持基于拉丁语的字符集的 (实体，即，人名不支持) 日文汉字        |
 |本地存储库    | 不支持作为工作负荷|
 
 <!--|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |-->
@@ -120,4 +120,4 @@ ms.locfileid: "62271510"
 <!-- - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)-->
 - [了解预览版 (命名) ](named-entities-learn.md)。
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
-- [根据模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
+- [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)

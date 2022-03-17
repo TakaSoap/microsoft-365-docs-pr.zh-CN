@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 如何实现常见的敏感信息类型用例方案
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cd11c4843d91923f1ca5e171cc8bfc8e1c64c73d
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 39afa17fc7bf258848de9d5554b3dd56a1ce21b5
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272279"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525732"
 ---
 # <a name="common-usage-scenarios-for-sensitive-information-types"></a>敏感信息类型的常见使用方案
 
@@ -36,12 +36,12 @@ Contoso Bank 需要将其签发的信用卡号分类为敏感。 他们的信用
 
 1. 创建信用卡 SIT 的副本。 使用复制和 [修改敏感信息类型的步骤复制](create-a-custom-sensitive-information-type.md#copy-and-modify-a-sensitive-information-type) 信用卡 SIT。
 1. 编辑高可信度模式。 按照编辑 [或删除敏感信息类型模式中的步骤操作](sit-get-started-exact-data-match-create-rule-package.md#edit-or-delete-the-sensitive-information-type-pattern)。
-1. 添加"starts with"检查，并添加未格式化 (的&") 。 例如，若要确保仅将以 411111 & 433512 作为有效的信用卡，请向列表 4111 11、4111-11、411111、4335 12、4335-12、433512 添加以下内容。
+1. 添加"starts with"检查，并添加未格式化 (的&位) 。 例如，为了确保仅将以 411111 & 433512 作为有效的信用卡，将以下内容添加到列表 4111 11、4111-11、411111、4335 12、4335-12、433512。
 1. 对低可信度模式&步骤 2 & 3。
 
 ## <a name="test-numbers-similar-to-social-security-numbers"></a>与社会保险号类似的测试号码
 
-Contoso 已标识几个九位数的测试号码，这些测试号码在 DLP) 策略中的"社会保险号码" (SSN) 数据丢失 (误报) 匹配。 他们希望从 SSN 的有效匹配列表中排除这些数字。
+Contoso 在 DLP) 策略中的"社会保险号码" (SSN) 数据丢失防护策略中标识了几个九位数的测试号码 (误报) 匹配。 他们希望从 SSN 的有效匹配列表中排除这些数字。
 
 **建议的解决方案**
 
@@ -102,7 +102,7 @@ Contoso Bank 已注意到，他们的一些员工使用"/"作为分隔符共享�
 
 重要提示：此电子邮件只供有权接收可能包含机密信息 **的人员接收**。 发送给 Contoso 客户端的电子邮件可能包含机密和合法特权的信息。 请不要阅读、复制、转发或存储此邮件，除非您是邮件的目标收件人。 如果收到错误消息，请将其转发给发件人，然后从计算机系统中完全删除该邮件。
 
-我们有两个关键字"机密"实例，如果我们将 SIT 配置为忽略此关键字的实例，前面是前缀 (在示例) 中为 italicized，后跟示例) 中加粗的后缀 (，那么在大多数情况下，我们可以忽略免责声明。
+我们有两个关键字"机密"实例，如果我们将 SIT 配置为忽略此关键字的实例，前面是前缀 (在示例) 中用 italicized 表示，后跟示例) 中加粗的后缀 (，那么在大多数情况下，我们可以忽略免责声明。
 
 若要忽略使用前缀和后缀的免责声明，
 
@@ -113,13 +113,13 @@ Contoso Bank 已注意到，他们的一些员工使用"/"作为分隔符共享�
 
 ### <a name="ignore-disclaimer-by-excluding-secondary-elements"></a>通过排除辅助元素忽略免责声明
 
-在免责声明实例中添加支持元素 (需要排除) 另一种方式是排除辅助元素。
+在免责声明实例中添加支持元素 (需要) 另一种方式是排除辅助元素。
 
 请考虑以下免责声明：
 
 重要提示：此电子邮件只供有权接收可能包含机密信息的人员接收。 发送给 Contoso 客户端的电子邮件可能包含机密和合法特权的信息。 请不要阅读、复制、转发或存储此邮件，除非您是邮件的目标收件人。 如果收到错误消息，请将其转发给发件人，然后从计算机系统中完全删除该邮件。
 
-我们在此例中具有关键字"confidential"的两个实例。 如果我们将 SIT 配置为忽略免责声明中此关键字的实例 (带红色) ，则在大多数情况下，我们可以忽略免责声明。
+我们在此例中具有关键字"confidential"的两个实例。 如果我们将 SIT 配置为忽略免责声明中此关键字的实例 (为红色) ，则在大多数情况下，我们可以忽略免责声明。
 
 :::image type="content" source="../media/sit-scenario-edit-pattern.png" alt-text="你可以向模式添加更多条件以排除免责声明中的其他实例。":::
 

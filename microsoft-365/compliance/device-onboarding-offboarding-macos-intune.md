@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: '了解如何使用 Microsoft 365 预览版将 macOS 设备载入和Microsoft Intune (合规性) '
-ms.openlocfilehash: bab39cf101cb4fcae15f93ecc74bc52d81cadd91
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 5f8dd27490992e15d53dfc10311ce7b23b99683a
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327385"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526508"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>使用 Intune 将 macOS 设备载入和卸载到 Microsoft 365 合规性解决方案（预览版）
 
@@ -59,7 +59,7 @@ ms.locfileid: "62327385"
 
 |文件所需的 |source |
 |---------|---------|
-|载入包    |从合规性门户载入 **程序包下载，***文件名DeviceComplianceOnboarding.xml* |
+|载入包    |从合规性门户载入 **程序包下载，** 文件名 *DeviceComplianceOnboarding.xml* |
 |辅助功能 |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 完全磁盘访问     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |网络文件器| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)]
@@ -174,7 +174,7 @@ ms.locfileid: "62327385"
 
 ### <a name="get-the-device-onboarding-package"></a>获取设备载入包
 
-1. 在 **"合规性中心**"**中设置** > "**设备载入"，** 然后选择 **"载入"**。
+1. 在 **"合规性中心**"中 **设置** > **"设备载入"，然后选择****"载入"**。
  
 1. 对于 **"选择操作系统以开始载入过程"，选择****"macOS"**。
  
@@ -234,7 +234,7 @@ ms.locfileid: "62327385"
 
 ### <a name="get-the-installation-package"></a>获取安装包
 
-1. 在 **"合规性中心**"**中设置** > "**设备载入"，** 然后选择 **"载入"**。
+1. 在 **"合规性中心**"中 **设置** > **"设备载入"，然后选择****"载入"**。
  
 1. 对于 **"选择操作系统以开始载入过程"选择** **macOS**
  
@@ -248,7 +248,7 @@ ms.locfileid: "62327385"
 
 ### <a name="deploy-the-microsoft-dlp-installation-package"></a>部署 Microsoft DLP 安装包
 
-1. 按照如何将 [macOS 业务线 (LOB)](/mem/intune/apps/lob-apps-macos) 应用添加到 Microsoft Intune 中的过程将 *wdav.pkg* 文件转换为正确的格式，并通过 Intune 进行部署。
+1. 按照如何将 [macOS 业务线 (LOB)](/mem/intune/apps/lob-apps-macos) 应用添加到 Microsoft Intune 中的过程将 *wdav.pkg* 文件转换为正确的格式并通过 Intune 进行部署。
 
 ## <a name="offboard-macos-devices-using-intune"></a>使用 Intune 的载出 macOS 设备
 

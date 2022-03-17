@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 description: 了解基于准确数据匹配的敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6b8b2bb5387257bf016e751713b9cba61de9691
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 21e6f3c12d7c401562a1ee1915e1e1c266724b1b
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426467"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526916"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>了解基于确切数据匹配的敏感信息类型
 
-[](sensitive-information-type-learn-about.md)敏感信息类型用于帮助标识敏感项目，以便防止意外或不当共享它们，帮助在电子数据展示中查找敏感数据，以及将管理操作应用于某些类型的信息。 你可以根据以下信息定义一个 (SIT) 类型：
+[](sensitive-information-type-learn-about.md)敏感信息类型用于帮助标识敏感项目，以便防止意外或不当共享它们，帮助在电子数据展示中查找敏感数据，以及将管理操作应用于某些类型的信息。 您根据以下信息在 SIT (自定义) 类型：
 
 - 模式
-- 关键字证据，*如员工**、社会保险号* 或 *ID*
+- 关键字证据，*例如员工**、社会保险号码* 或 *ID*
 - 字符近似特定模式的证据
 - 可信度
 
-但是，如果需要使用使用精确或接近精确数据值的 (SIT) ，而不是基于通用模式找到匹配项的自定义敏感信息类型，应该如何呢？ 使用精确数据 (EDM) 分类，你可以创建自定义敏感信息类型，该类型旨在：
+但是，如果需要使用使用精确或接近精确数据值的 (SIT) ，而不是基于通用模式找到匹配项的自定义敏感信息类型，应该如何呢？ 使用精确数据 (EDM) 基于分类，你可以创建自定义敏感信息类型，该类型旨在：
 
 - 动态且轻松地刷新
 - 更具可伸缩性
@@ -89,16 +89,16 @@ ms.locfileid: "61426467"
 - Matches，它指定将在完全查找中使用的主元素的字段。 它可以是包含或不带校验和验证、关键字列表、关键字词典或函数的正则表达式。
 - Classification，用于指定触发 EDM 查找的敏感类型匹配。
 - 支持元素，这些元素在找到时可提供支持证据以帮助提高匹配可信度。 例如，与 SSN 号码接近的关键字"SSN"。 它可以是包含或不带校验和验证、关键字列表、关键字词典的正则表达式。
-- 高 (、中、低) 可信度反映与主要元素一起检测到的支持性证据量。 项目包含的支持性证据越充分，匹配项包含所查找敏感信息的置信度越高。 有关可信度 [详细信息，请参阅敏感信息类型](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type) 的基本部分。
+- 置信 (高、中、低) 反映与主要元素一起检测到的支持性证据量。 项目包含的支持性证据越充分，匹配项包含所查找敏感信息的置信度越高。 有关可信度详细信息，请参阅 [敏感信息类型](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type) 的基本部分。
 邻近度 – 主要元素和支持元素之间的字符数
 
 ### <a name="you-supply-your-own-schema-and-data"></a>提供你自己的架构和数据
 
-[Microsoft 365 200 多个具有](sensitive-information-type-entity-definitions.md)预定义架构、正则表达式模式、关键字和可信度的 SITS。 使用 EDM SI，你负责定义用于标识敏感项的架构以及主要和辅助字段。 由于架构和主要和辅助数据值高度敏感，因此你将通过包含随机生成的或自提供的 salt[](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes)值的哈希函数[加密它们。](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) 然后，这些哈希值将上载到服务，因此你的敏感数据永远不会打开。
+[Microsoft 365 200 多个具有](sensitive-information-type-entity-definitions.md)预定义架构、正则表达式模式、关键字和可信度的 SITS。 使用 EDM SI，你负责定义用于标识敏感项的架构以及主要和辅助字段。 由于架构和主要和辅助数据值高度敏感，因此你将通过包含随机生成的或自提供的 salt 值的哈希[](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes)函数[加密它们。](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) 然后，这些哈希值将上载到服务，因此你的敏感数据永远不会打开。
 
 ### <a name="primary-and-secondary-support-elements"></a>主要和辅助支持元素
 
-创建 EDM SIT 时，在规则 *包中* 定义主元素字段。 主要字段是搜索所有内容的元素，这些元素需要遵循定义的模式才能进行标识。 在扫描的项中发现主元素后，EDM 将查找不需要遵循模式且与主要元素接近的辅助或支持元素。 EDM 要求首先可以通过现有 SIT 发现主元素。 请参阅 [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md) ，了解可用 SIT 的完整列表。 你必须找到其中一个检测 EDM SIT 要检测的类的类。 例如，如果您的 EDM SIT 架构将美国社会保险号作为主要元素，则当您创建 EDM 架构时，会将 EDM 架构与美国社会保险号 [ (SSN) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT 关联。
+创建 EDM SIT 时，在规则 *包中* 定义主元素字段。 主要字段是搜索所有内容的元素，这些元素需要遵循定义的模式才能进行标识。 在扫描的项中发现主元素后，EDM 将查找不需要遵循模式且与主要元素接近的辅助或支持元素。 EDM 要求首先可以通过现有 SIT 发现主元素。 请参阅 [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md) ，了解可用 SIT 的完整列表。 你必须找到其中一个检测 EDM SIT 要检测的类的类。 例如，如果您的 EDM SIT 架构将美国社会保险号作为主元素，则当您创建 EDM 架构时，会将 ED (M 架构与 [SSN ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)) SIT 美国社会保险号相关联。
 
 
 ## <a name="how-matching-works"></a>匹配的工作原理

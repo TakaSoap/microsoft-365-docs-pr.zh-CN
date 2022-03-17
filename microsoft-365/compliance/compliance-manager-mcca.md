@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用 Microsoft 合规性配置分析器快速启动并运行 Microsoft 合规性管理器。
-ms.openlocfilehash: 3c5230a8a9998c4b924e5a9d4a9565ae1c97db89
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a679f0483431313672ac0dfa1101eb9909b6c060
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325105"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525149"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>适用于合规性管理器的 Microsoft 合规性配置分析器 (预览) 
 
@@ -77,9 +77,7 @@ MCCA 可帮助你快速查看合规性管理器中的哪些改进操作适用于
 
 3. MCCA 运行后，它将执行初始版本检查并请求凭据。 在"输入用户名"提示符下，使用 Microsoft 365 帐户电子邮件地址登录 (查看有资格创建[报告) 。](#role-based-reporting) 然后在密码提示符下输入密码。
 
-然后，报告将大约需要 2-5 分钟生成。 完成后，浏览器窗口将打开并显示 HTML 报告。 每次运行该工具时，该工具都会要求提供凭据并生成一个新报告。 此报告本地存储在以下目录中：
-
-C：\Users\<username>\AppData\Local\Microsoft\MCCA。 
+然后，报告将大约需要 2-5 分钟生成。 完成后，浏览器窗口将打开并显示 HTML 报告。 每次运行该工具时，该工具都会要求提供凭据并生成一个新报告。 此报告本地存储在目录 C： \ Users \ *username* \ AppData \ Local \ Microsoft \ MCCA 中。
 
 可以从此目录访问以前生成的报告。
 

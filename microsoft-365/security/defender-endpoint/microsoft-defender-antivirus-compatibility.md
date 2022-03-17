@@ -14,16 +14,16 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 03/14/2022
+ms.date: 03/16/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 25d01c597da0f3a3e108eeee27d3a0dfe5b58eb7
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: fd049930b7b5b922e30e49f5796a736d44038bf2
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512526"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526876"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender 防病毒安全产品的兼容性
 
@@ -154,12 +154,14 @@ Defender for Endpoint 影响Microsoft Defender 防病毒在被动模式下运行
  | [攻击面减少规则](attack-surface-reduction.md)  | 是 | 否 | 否  | 否 | 
  | [有限定期扫描可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | 否 | 否 | 是 | 否 | 
  | [文件扫描和检测信息](review-scan-results-microsoft-defender-antivirus.md) | 是 | 是<sup>[[5](#fn5)]</sup> | 否 | 是 | 
- | [威胁修正](configure-remediation-microsoft-defender-antivirus.md) | 是 | 是 | 否 | 是 | 
+ | [威胁修正](configure-remediation-microsoft-defender-antivirus.md) | 是 | 请参阅注释 <sup>[[6](#fn6)]</sup> | 否 | 是 | 
  | [安全智能更新](manage-updates-baselines-microsoft-defender-antivirus.md) | 是 | 是 | 否 | 是 | 
 
  (<a id="fn4">4</a>) 通常，当 Microsoft Defender 防病毒 处于被动模式时，实时保护不会提供任何阻止或强制，即使已启用且处于被动模式。
 
  (<a id="fn5">5</a>) 当Microsoft Defender 防病毒处于被动模式时，不会计划扫描。
+
+ (<a id="fn6">6</a>) 当Microsoft Defender 防病毒处于被动模式时，它不会修正威胁。 但是，可以通过终结点检测和响应功能在阻止模式下[ (EDR) 威胁。](edr-in-block-mode.md) 在这种情况下，你可能会看到警报，Microsoft Defender 防病毒源，即使Microsoft Defender 防病毒处于被动模式。
 
 > [!NOTE]
 > [Microsoft 365处于](/microsoft-365/compliance/endpoint-dlp-learn-about)主动或被动模式时，Microsoft Defender 防病毒数据丢失防护继续正常运行。

@@ -12,19 +12,19 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: reference
 ms.technology: m365d
-ms.openlocfilehash: 74f4fbe69135433597492854428b34449fbd0260
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c9eb1de08be8905a41b172a19a33db58dbdc19b9
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318987"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525844"
 ---
 #  <a name="live-response-library-methods-and-properties"></a>实时响应库方法和属性
 

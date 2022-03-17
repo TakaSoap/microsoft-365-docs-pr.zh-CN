@@ -11,19 +11,19 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: 了解如何在 PowerShell SharePoint Syntex文档了解模型说明。
-ms.openlocfilehash: 06f0eb7314b85f9463689fea32667666e5e167fd
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 12bdb4c7019b34ee7d2c1f4315673d78cbfb7ba1
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159705"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525690"
 ---
 # <a name="work-with-document-understanding-model-explanations-in-powershell"></a>在 PowerShell 中处理文档了解模型说明
 
 > [!IMPORTANT]
-> PowerShell cmdlet SharePoint Syntex所有其他 PnP 组件都是开源工具，由提供相关支持的活动社区提供支持。 没有来自 Microsoft 的官方支持渠道的开放源代码工具支持的 SLA。
+> PowerShell cmdlet SharePoint Syntex所有其他 PnP 组件都是开放源代码工具，由提供支持的活动社区提供支持。 没有来自 Microsoft 的官方支持渠道的开放源代码工具支持的 SLA。
 
 自定义说明模板存储在内容中心内的列表中。 由于这些说明存储为列表项，因此 PowerShell 可用于与它们进行交互。
 

@@ -11,25 +11,25 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: 了解如何使用 PowerShell 发布SharePoint Syntex文档了解模型。
-ms.openlocfilehash: 215a073ea5cabe7c701d24a9b8972268c4dd21ff
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 5169e5ea5839cd5c341baa2477fd82281f5e5d76
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159693"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526480"
 ---
 # <a name="publish-document-understanding-models-with-powershell"></a>使用 PowerShell 发布文档了解模型
 
 > [!IMPORTANT]
-> PowerShell cmdlet SharePoint Syntex所有其他 PnP 组件都是开源工具，由提供相关支持的活动社区提供支持。 没有来自 Microsoft 的官方支持渠道的开放源代码工具支持的 SLA。
+> PowerShell cmdlet SharePoint Syntex所有其他 PnP 组件都是开放源代码工具，由提供支持的活动社区提供支持。 没有来自 Microsoft 的官方支持渠道的开放源代码工具支持的 SLA。
 
 SharePoint Syntex模型通常部署到租户中的文档库。 这可以使用内容中心网站完成，但也可使用 [PnP PowerShell](https://pnp.github.io/powershell/) 完成此操作，如本文所述。
 
 ## <a name="listing-the-available-models-in-a-content-center"></a>列出内容中心中的可用模型
 
-若要概览添加到当前内容中心SharePoint Syntex模型，请使用[Get-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) cmdlet：
+若要概览添加到当前内容中心SharePoint Syntex模型，请使用 [Get-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) cmdlet：
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"

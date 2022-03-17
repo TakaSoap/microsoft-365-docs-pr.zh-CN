@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 description: 开始创建基于准确数据匹配的敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 469cc7262ff1eef92d9a03e04070dc353e12b445
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: a75650484368b6ccbaf6f6d39aeead133403f5b8
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110495"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526272"
 ---
 # <a name="get-started-with-exact-data-match-based-sensitive-information-types"></a>基于精确数据匹配的敏感信息类型入门
 
-创建和使基于 EDM (的敏感信息类型) 数据完全匹配 (SIT) 是一个多阶段过程。 它们可用于数据丢失防护策略、电子数据展示和某些内容管理任务 本文概述了工作流以及每个阶段的过程链接
+创建和使基于 EDM (的敏感信息类型) 完全匹配 (SIT) 是一个多阶段过程。 它们可用于数据丢失防护策略、电子数据展示和某些内容管理任务 本文概述了工作流以及每个阶段的过程链接
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 熟悉以下文章中的概念和术语：
 
@@ -57,8 +57,8 @@ ms.locfileid: "61110495"
 |阶段|所需项|
 |---|---|
 |[阶段 1：导出基于准确数据匹配的敏感信息类型的源数据](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)|- 敏感数据的读取权限|
-|[阶段 2：为基于准确数据匹配的敏感信息类型创建架构](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- 访问网站中的敏感信息类型Microsoft 365 管理中心 </br>- 通过安全[Microsoft 365 管理中心合规性 PowerShell 访问&访问](/powershell/exchange/connect-to-scc-powershell) |
-|[阶段 3：哈希并上载敏感信息源表，以精确匹配敏感信息类型](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|- 自定义安全组和用户帐户 </br>- **从一台计算机进行** 哈希和上载：本地管理员访问具有直接 Internet 访问权限的计算机和托管 EDM Upload代理 </br>- 从单独的计算机 **进行** 哈希和上载：本地管理员访问具有直接 Internet 访问权限的计算机，并托管 EDM Upload 代理，用于上载和本地管理员访问安全计算机以托管 EDM Upload 代理以哈希处理敏感信息源表 </br>- 对敏感信息源表文件的读取访问权限 </br> 架构文件 |
+|[阶段 2：为基于准确数据匹配的敏感信息类型创建架构](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- 访问网站中的敏感信息类型Microsoft 365 管理中心 </br>- 通过安全[Microsoft 365 管理中心合规性 PowerShell 访问 &](/powershell/exchange/connect-to-scc-powershell) |
+|[阶段 3：哈希并上载敏感信息源表，以精确匹配敏感信息类型](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|- 自定义安全组和用户帐户 </br>- **从一台计算机进行** 哈希和上载：本地管理员访问具有直接 Internet 访问权限的计算机和托管 EDM Upload代理 </br>- 从单独的计算机 **进行** 哈希和上载：本地管理员访问具有直接 Internet 访问权限的计算机，并托管 EDM Upload 代理以上载和本地管理员访问安全计算机以托管 EDM Upload 代理以哈希处理敏感信息源表 </br>- 对敏感信息源表文件的读取访问权限 </br> 架构文件 |
 |[阶段 4：创建准确数据匹配敏感信息类型/规则包](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) |- 访问 Microsoft 365 合规中心 |
 |[测试基于精确数据匹配的敏感信息类型](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| - 访问 Microsoft 365 合规中心
 

@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a8a57b14480c45ddbc154d71bc4f2ded315c83ae
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: e21346b48f65016465e669369aa14b3f4c85c23b
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262835"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527094"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 管理设备上的 Microsoft Defender for Endpoint 配置设置
 
@@ -44,7 +44,7 @@ ms.locfileid: "61262835"
 Microsoft Defender for Endpoint 的安全管理是一项功能，适用于不由 Microsoft Endpoint Manager（Microsoft Intune 或 Microsoft Endpoint Configuration Manager）管理的设备，用于接收 Microsoft Defender 的安全配置直接从Endpoint Manager。
 
 
-有关安全配置管理（包括先决条件、支持的平台等）详细信息，请参阅使用安全配置管理在设备上管理[Microsoft Defender for Endpoint Microsoft Endpoint Manager。](/mem/intune/protect/mde-security-integration)
+有关安全配置管理（包括先决条件、支持的平台等）详细信息，请参阅使用安全配置管理在设备上管理 [Microsoft Defender for Endpoint Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)。
 
 
 
@@ -53,7 +53,7 @@ Microsoft Defender for Endpoint 的安全管理是一项功能，适用于不由
 >[!NOTE]
 >此功能将逐步推出。 
 
-有关安全配置管理详细信息，请参阅使用安全配置管理在设备上管理[Microsoft Defender Microsoft Endpoint Manager。](/mem/intune/protect/mde-security-integration)
+有关安全配置管理详细信息，请参阅使用安全配置管理管理设备上适用于终结点[Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)。
 
 如果遇到注册问题，请参阅解决 [安全配置管理载入问题](troubleshoot-security-config-mgt.md)。
 
@@ -64,15 +64,15 @@ Microsoft Defender for Endpoint 的安全管理是一项功能，适用于不由
 
 使用以下步骤验证终结点是否成功完成了 Microsoft Defender 终结点载入过程的安全管理。
 
-1.  验证设备是否显示在设备的"设备清单"[部分Microsoft 365 Defender。](https://security.microsoft.com/)
+1.  验证设备是否显示在设备的"设备清单"[部分](https://security.microsoft.com/)Microsoft 365 Defender。
 
 2.  在[Azure Active Directory门户](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/)中，验证设备已成功注册。
 
-3.  在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview)管理中心 中，通过在所有设备中查找设备，验证>**注册** 成功。
+3.  在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview)管理中心中，通过在所有设备中查找设备，验证>**注册** 成功。
 
 
 ## <a name="offboard-devices"></a>载出设备
-若要通过适用于终结点的 Microsoft Defender 安全管理载入的载出设备，请参阅 [Microsoft Defender for Endpoint 服务中的载出设备](offboard-machines.md)。
+若要从已通过适用于终结点的 Microsoft Defender 安全管理载入的设备，请参阅 [从 Microsoft Defender for Endpoint 服务载出设备](offboard-machines.md)。
 
 >[!NOTE]
 >如果启用了防 [篡改保护，](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) 则将其禁用。

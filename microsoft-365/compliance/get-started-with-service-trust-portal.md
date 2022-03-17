@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 了解如何访问和使用 Microsoft 服务信任门户来帮助实现安全性、隐私和合规性实践。
-ms.openlocfilehash: 5894fb57d4633c0dbc3c9d925be72910bdfc3f56
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: f23cf5be7f05462e505c4d3a46407255e460420b
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512904"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526146"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 
@@ -30,7 +30,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 ## <a name="accessing-the-service-trust-portal"></a>访问服务信任门户
 
-服务信任门户包含 Microsoft 实施用于保护云服务和客户数据中心的控制和流程的详细信息。 若要访问服务信任门户上的某些资源，必须使用 Microsoft 云服务帐户 (（Azure Active Directory 组织帐户或 Microsoft 帐户) ）以经过身份验证的用户身份登录，并查看并接受 Microsoft 合规性材料保密协议。
+服务信任门户包含 Microsoft 实施用于保护云服务和客户数据中心的控制和流程的详细信息。 若要访问服务信任门户上的某些资源，必须使用 Microsoft 云服务帐户 (Azure Active Directory 组织帐户) 以经过身份验证的用户身份登录，并查看并接受 Microsoft 合规性材料保密协议。
 
 ### <a name="existing-customers"></a>现有客户
 
@@ -41,7 +41,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 - Azure
 
  > [!NOTE]
- > Azure Active Directory组织关联的帐户可以访问各种文档和功能，如合规性管理器。 为个人使用创建的 Microsoft 帐户对服务信任门户内容的访问权限有限。
+ > Azure Active Directory组织关联的帐户可以访问各种文档和功能，如合规性管理器。
 
 ### <a name="new-customers-and-customers-evaluating-microsoft-online-services"></a>正在评估 Microsoft 联机服务的新客户和客户
 

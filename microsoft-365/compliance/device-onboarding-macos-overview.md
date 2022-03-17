@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: 了解如何将 macOS 设备载入合规性解决方案
-ms.openlocfilehash: fbf29e0d66bf31d058cede69aba9fe0c7814a3a7
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 93a930f13a17c19c3ff7209295ddada648b9575a
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963247"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526564"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>将 macOS 设备载入 Microsoft 365 概述（预览版）
 
@@ -50,13 +50,13 @@ ms.locfileid: "60963247"
 
 macOS 设备必须已经通过 Intune 或 JAMF Pro。
  
-- 若要载入 Intune，请参阅[部署指南：](/mem/intune/fundamentals/deployment-guide-platform-macos)在 Microsoft Intune 中管理 macOS [Intune 公司门户。](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp) 
-- 若要载入 JAMF Pro请参阅[JAMF Pro 管理员](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)指南和 JAMF Pro [Mac 安装和配置指南](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
+- 若要载入 Intune，请参阅部署指南：在 Microsoft Intune 中管理 [macOS 设备](/mem/intune/fundamentals/deployment-guide-platform-macos)以及使用 Intune 公司门户 注册 [mac](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
+- 若要载入 JAMF Pro请参阅 [JAMF Pro管理员](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)指南和 [JAMF Pro Mac 安装和配置指南](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
 - 在 macOS 设备上安装 v95+ Edge 浏览器 
 
 ## <a name="licensing-guidance"></a>许可指南
 
-请参阅Microsoft 365[信息保护的许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)。
+请参阅[Microsoft 365信息保护的许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)。
 
 ## <a name="activities-that-can-be-restricted-on-macos"></a>macOS 上可以限制的活动 
 
@@ -70,9 +70,9 @@ macOS 设备必须已经通过 Intune 或 JAMF Pro。
 
 **复制到剪贴** 板 – 强制执行后，此操作会阻止、警告或审核正在复制到终结点设备上剪贴板的受保护文件的数据 
 
-**Upload** 云 – 当受保护文件被阻止或允许根据全局设置中的允许/不允许的域列表上载到云服务时，此操作将阻止、警告或审核。 当此操作设置为警告或阻止时， ("全局设置"下的"不允许的浏览器"列表中定义) 将阻止其访问该文件。 
+**Upload** 云 – 当受保护文件被阻止或允许根据全局设置中的允许/不允许的域列表上载到云服务时，此操作将阻止、警告或审核。 当此操作设置为警告或阻止时， ("全局设置"下的"不允许) 定义的其他浏览器将阻止其访问该文件。 
 
-由不允许 **的应用访问**– 如果强制执行，此操作将阻止位于未允许的应用列表 (（全局设置) 中定义的）上的应用程序访问终结点设备上受保护的文件。 方案示例 
+由不允许 **的应用** 访问 – 如果强制执行，此操作将阻止位于未允许的应用列表 (（全局设置) 中定义的）上的应用程序访问终结点设备上受保护的文件。 方案示例 
 
 ## <a name="onboarding-devices-into-device-management"></a>将设备载入设备管理
 
@@ -82,7 +82,7 @@ macOS 设备必须已经通过 Intune 或 JAMF Pro。
 
 <!--If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list.-->
 
-1. 打开 [Microsoft 合规中心](https://compliance.microsoft.com)**"设置"** 页面，然后选择"**启用设备监视"。**
+1. 打开 [Microsoft 合规中心](https://compliance.microsoft.com)**"设置**"页面，然后选择"**启用设备监控"**。
 
    > [!NOTE]
    > 设备载入通常需要大约 60 秒才能启用，请先等待 30 分钟，然后再与 Microsoft 支持人员接洽。
@@ -94,7 +94,7 @@ macOS 设备必须已经通过 Intune 或 JAMF Pro。
 
 ## <a name="next-steps"></a>后续步骤
 
-若要接收 DLP 传感器遥测并实施数据丢失防护策略，需要让设备载入Microsoft 365合规性解决方案。 
+若要接收 DLP 传感器遥测并实施数据丢失防护策略Microsoft 365要求将设备载入到合规性解决方案中。 
 
 主题 | 说明
 :---|:---

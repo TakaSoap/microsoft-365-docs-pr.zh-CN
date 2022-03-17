@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 创建基于精确数据匹配的敏感信息类型/规则包
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eb15f54a8a944e1c764a2540f36926dd433fb2d3
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: e44d18bc1a779ace95fb2f64171ff0bf91de57ed
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62900742"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526036"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>创建基于精确数据匹配的敏感信息类型/规则包
 
-可以使用合规性中心中的 [EDM](#use-the-edm-schema-and-sit-wizard) 架构和 SIT 向导创建精确数据匹配 (EDM) 敏感信息类型 (SIT) 或手动创建规则包 XML [文件](#create-a-rule-package-manually)。 您还可以使用一种方法创建架构，然后使用另一种方法编辑架构，以组合这两种方法。
+可以使用合规性中心中的 [EDM](#use-the-edm-schema-and-sit-wizard) 架构和 SIT 向导创建精确数据匹配 (EDM) 敏感信息类型 (SIT) ，也可以手动创建规则包 XML [文件](#create-a-rule-package-manually)。 您还可以使用一种方法创建架构，然后使用另一种方法编辑架构，以组合这两种方法。
 
 如果你不熟悉基于 EDM 的 SITS 或他们的实现，你应该熟悉：
 
@@ -38,7 +38,7 @@ ms.locfileid: "62900742"
 
 可以使用此向导在 SIT 文件 (敏感信息类型) 以帮助简化此过程。
 
-EDM 敏感信息类型由一个或多个模式组成。 每个模式都描述一组证据 (架构中的字段) 用于标识文档或电子邮件中的敏感内容。
+EDM 敏感信息类型由一个或多个模式组成。 每种模式都描述一组证据 (架构中的字段) 用于标识文档或电子邮件中的敏感内容。
 
 ## <a name="pre-requisites"></a>先决条件
 

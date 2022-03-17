@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在 Microsoft 合规性管理器中生成评估，帮助你满足对组织非常重要的法规和认证要求。
-ms.openlocfilehash: 59f2bd89a798567d51c3e28fda574e7b9f0ba326
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fb30fd8f55172890507b82910630e7202de0d996
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319526"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526604"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>在合规性管理器中生成和管理评估
 
@@ -73,7 +73,7 @@ ms.locfileid: "63319526"
 - 完成时，同一组内不同评估中的相关评估控制措施将自动更新。
 - 组可以包含针对相同认证或法规的评估，但每个组只能包含一个特定产品认证对的评估。 例如，一个组不能包含针对 Office 365 和 NIST CSF 的两个评估。 只有在针对同一产品的相应认证或法规不同时，组才能包含针对同一产品的多个评估。
 - 删除评估会破坏该评估与组之间的关系。
-- 无法手动删除组。
+- 无法删除组。
 
 ## <a name="understand-templates-before-creating-assessments"></a>在创建评估之前了解模板
 

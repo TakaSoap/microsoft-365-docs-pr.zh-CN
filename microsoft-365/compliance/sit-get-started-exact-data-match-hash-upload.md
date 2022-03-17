@@ -1,5 +1,5 @@
 ---
-title: 哈希并上传敏感信息源表，了解准确数据匹配敏感信息类型
+title: 为基于精确数据匹配的敏感信息类型哈希并上传敏感信息源表
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: 哈希并上载敏感信息源表，以准确匹配敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 85a65bc0d9d68a4a148fbc820985b6f40b6f6792
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 8d3effe3d46375ffcaec268e4b3fc6d53fc5044e
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914746"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526494"
 ---
-# <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>哈希并上传敏感信息源表，了解准确数据匹配敏感信息类型
+# <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>为基于精确数据匹配的敏感信息类型哈希并上传敏感信息源表
 
 本文演示如何对敏感信息源表进行哈希处理和上载。
 
@@ -43,12 +43,12 @@ ms.locfileid: "60914746"
 如果您不想在直接访问计算机上公开您的清除文本敏感信息源表文件，可以在位于安全位置的计算机上进行哈希操作，然后将哈希文件和 salt 文件复制到可以直接连接到 Microsoft 365 租户进行上载的计算机上。 在单独的哈希和上载方案中，需要两台计算机上的 EDMUploadAgent。
 
 > [!IMPORTANT]
-> 如果使用精确数据匹配架构和敏感信息类型向导创建架构文件，则必须下载此过程的架构（如果尚未下载）。 请参阅以 [XML 格式导出 EDM 架构文件](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format)。
+> 如果使用精确数据匹配架构和敏感信息类型向导创建架构文件，则必须下载此过程的架构（如果尚未下载）。 请参阅 [以 XML 格式导出 EDM 架构文件](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format)。
 
 > [!NOTE]
 > 如果你的组织为租户级别的Microsoft 365[](customer-key-overview.md)密钥，精确数据匹配将自动使用其加密功能。 这仅适用于商业云中 E5 许可的租户。
 
-### <a name="best-practices"></a>最佳实践
+### <a name="best-practices"></a>最佳做法
 
 分离哈希处理和上载敏感数据的过程，以便更轻松地隔离过程中的任何问题。
  
@@ -64,9 +64,9 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 
 如果工具指示列数不匹配，则可能是表中值中出现逗号或引号字符，而这些值与列分隔符混淆。 除非它们围绕整个值，否则单引号和双引号可能导致工具对单个列的起始或结束位置进行错误识别。 
 
-**如果发现完整值周围的单引号或** 双引号字符，可以保留它们。
+**如果在完整值周围找到单引号或双引号字符**：可以保留它们。
 
-如果在值内找到单引号字符或逗号：例如，用户名 Tom O'则，或以撇号字符开头的市/县的-一角，则需要修改用于生成敏感信息表的数据导出过程，以用双引号将此类列括起来。
+如果在值内找到单引号字符或逗号：例如，用户名 Tom O'则，或以撇号字符开头的市/县的-Citynhage，则需要修改用于生成敏感信息表的数据导出过程，以使用双引号将此类列括起来。
 
 **如果在值** 内找到双引号字符，则最好对表使用以 Tab 分隔的格式，这种格式对此类问题不太敏感。
 
@@ -76,7 +76,7 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 - Windows 10 .NET Windows Server 2016 4.6.2 的虚拟机或计算机 <!--4.7.2 un comment this around 9/29-->用于运行 EDMUploadAgent
 - 用于上传的计算机上应含有以下内容的目录：
   - [EDM Upload 代理](#links-to-edm-upload-agent-by-subscription-type)
-  - 您的敏感项目文件.csv.tsv 或管道 (|) 格式 **，PatientRecords.csv** 示例中的示例
+  - 您的敏感项目文件.csv.tsv 或管道传输 (|) 格式， **PatientRecords.csv** 示例中的示例
   - 此过程中创建的输出哈希和 salt 文件
   - 来自 **edm .xml** 文件的数据存储名称，在本示例中为 `PatientRecords`
 
@@ -140,7 +140,7 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
    > [!NOTE]
 > 敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项来指定管道分隔的文件。
 
-   示例 **：EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C：\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5**
+   示例： **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C：\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5**
 
 如果您的敏感信息表包含一些格式不正确的值，但您希望在忽略无效行的同时导入剩余数据，可以在命令中使用 */AllowedBadLinesPercentage* 参数。 上面的示例指定 5% 阈值。 这意味着，即使多达 5% 的行无效，该工具也将哈希并上载敏感信息表。 
 
@@ -161,7 +161,7 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 
 ### <a name="separate-hash-and-upload"></a>将哈希与上传分开操作
 
-在处于安全环境中的计算机上执行哈希。 必须在两台计算机上安装 **EDMUploadAgent。**
+在处于安全环境中的计算机上执行哈希。 必须在两台计算机上安装 **EDMUploadAgent** 。
 
 可选：如果使用精确数据匹配架构和敏感信息类型向导创建架构，并且尚未下载架构，在命令提示符窗口中运行以下命令以下载 XML 格式的文件：
 
@@ -229,5 +229,5 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
      
 ## <a name="next-step"></a>后续步骤
 
-- [创建精确数据匹配敏感信息类型/规则包](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
+- [创建基于精确数据匹配的敏感信息类型/规则包](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
 

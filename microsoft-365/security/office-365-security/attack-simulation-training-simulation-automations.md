@@ -6,18 +6,18 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理员可以了解如何创建包含特定技术和有效负载的自动模拟，这些模拟在 Microsoft Defender for Office 365计划 2 中满足指定条件时启动。
 ms.technology: mdo
-ms.openlocfilehash: 029dce5b7f0b5c6e62b064aa9155d7b07c6a80d7
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 327091706ed7c8c2a6f1f1180af7888ed67c1a57
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63495020"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526174"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>攻击模拟培训的模拟自动化
 

@@ -7,7 +7,7 @@ ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何使用组织中成本管理功能Microsoft 365 管理中心、分析和管理组织的成本。
 ms.date: 03/09/2022
-ms.openlocfilehash: 64531e7b7422c3267f053e1ef098a92bfe6bed28
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: c0cfcd47e20d34b12af1276995b0c0cfe1dc1ee7
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468744"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63524917"
 ---
 # <a name="use-cost-management-in-the-microsoft-365-admin-center"></a>在管理中心内使用成本Microsoft 365 管理中心
 

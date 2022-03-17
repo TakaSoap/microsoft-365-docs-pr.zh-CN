@@ -11,19 +11,19 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: 了解如何在 SharePoint Syntex 中通过 PowerShell 导出和导入文档理解SharePoint Syntex。
-ms.openlocfilehash: 6751a66d713ada8c06445d8bfd0efdb5c3ac2fad
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: dc35d298ebd79752684c91ce944333277fcef621
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159501"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527000"
 ---
 # <a name="export-and-import-document-understanding-models-with-powershell"></a>使用 PowerShell 导出和导入了解模型的文档
 
 > [!IMPORTANT]
-> PowerShell cmdlet SharePoint Syntex所有其他 PnP 组件都是开源工具，由提供相关支持的活动社区提供支持。 没有来自 Microsoft 的官方支持渠道的开放源代码工具支持的 SLA。
+> PowerShell cmdlet SharePoint Syntex所有其他 PnP 组件都是开放源代码工具，由提供支持的活动社区提供支持。 没有来自 Microsoft 的官方支持渠道的开放源代码工具支持的 SLA。
 
 SharePoint Syntex模型可以导出为 PnP 模板，从而实现跨内容中心或租户重用。
 

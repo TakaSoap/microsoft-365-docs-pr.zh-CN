@@ -1,22 +1,27 @@
 ---
 title: 本地化用户体验
 description: 如何为用户本地化设备
-keywords: 'Microsoft 托管桌面, Microsoft 365, 服务, 文档'
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
+ms.openlocfilehash: c429a072d6ceb2d5d1472533649e30d1fc1a0078
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63524997"
 ---
-
 # <a name="localize-the-user-experience"></a>本地化用户体验
 
-Microsoft 托管桌面设备的用户可以在设置过程中选择他们选择的语言 ("开箱即用体验"，) 之后。
+Microsoft 托管桌面设备的用户可以在设置过程中选择他们选择的语言， ("开箱即用体验"，) 之后。
 
 ## <a name="during-setup-the-out-of-box-experience"></a>在设置 ("开箱使用体验") 
 
@@ -39,7 +44,12 @@ Microsoft 托管桌面设备的用户可以在设置过程中选择他们选择�
 | Windows 10语言功能 | <ul><li>显示语言</li><li>键盘语言</li><ul> |
 | Microsoft 365 应用版语言Enterprise的语言功能 | <ul><li>显示语言</li><li>校对和创作工具</li></ul> |
 
-若要使 [Microsoft 365 应用版](#supported-languages) for Enterprise 支持的语言可供用户安装，可以将用户添加到新式 **Workplace-Office-Language_Packs** 组中。 这些语言将在 Intune 公司门户。
+## <a name="install-more-languages"></a>安装更多语言
+
+> [!NOTE]
+> 从 2022 年 3 月 16 日开始，我们将逐步淘汰"新式 Workplace-Office-Language_Packs"组，允许用户向 Microsoft Office 中添加语言。 到新方法的转换 (请参阅) 将于 2022 年 4 月完成。 如果在此转换期间有任何问题，请联系支持 [人员](../working-with-managed-desktop/admin-support.md)。
+
+默认情况下，Microsoft Office要求用户成为管理员。Microsoft 托管桌面部署 Office 策略，以允许标准用户直接从其 Office 应用安装语言附件包。 有关详细信息，请参阅 [允许不是管理员的用户安装其他语言](/deployoffice/overview-deploying-languages-microsoft-365-apps#allow-users-who-arent-admins-to-install-additional-languages)。
 
 ## <a name="supported-languages"></a>支持的语言
 
@@ -93,12 +103,6 @@ Microsoft 托管桌面设备的用户可以在设置过程中选择他们选择�
 如果用户需要此处列出的语言外的其他语言， [请通过使用管理](../working-with-managed-desktop/admin-support.md) 门户提出 [支持请求](access-admin-portal.md)。
 
 ## <a name="languages-for-support-and-operations"></a>支持和操作的语言
-
-### <a name="user-support"></a>用户支持
-
-Microsoft 托管桌面仅提供英文版支持。 如果用户在 microsoft 应用中选择获取帮助语言，他们将从常规 Microsoft 支持渠道获得支持，而不是直接从 microsoft Microsoft 托管桌面。 有关详细信息，请参阅 [获取用户帮助](../working-with-managed-desktop/end-user-support.md)。
-
-如果用户需要其他语言支持，您必须通过非 Microsoft 支持源或您自己的组织提供支持。
 
 ### <a name="admin-support-and-operations"></a>管理员支持和操作
 

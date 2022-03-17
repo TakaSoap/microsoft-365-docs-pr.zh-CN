@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: 在本文中，你将了解与身份未经验证的用户共享文件和文件夹的最佳做法。
-ms.openlocfilehash: ffe1219c468deef8c78e51e410e862ec52532483
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4541f1b6021c5d58f27366bb508ccdaa216010d9
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323831"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512330"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>有关与身份未经验证用户共享文件和文件夹的最佳做法
 
@@ -119,7 +119,7 @@ ms.locfileid: "63323831"
 10. 在“**操作**”下，单击“**添加操作**”，然后选择“**限制访问或对 Microsoft 365 位置中的内容进行加密**”。
 11. 选中“**限制访问或对 Microsoft 365 位置中的内容进行加密**”复选框，然后选择“**仅限通过“使用此链接的任何人”选项提供内容访问权限的人员**”选项。
 
-      ![DLP 规则操作选项屏幕截图。](../media/limit-accidental-exposure-dlp-anyone-links.png)
+      ![DLP 规则操作选项的屏幕截图。](../media/limit-accidental-exposure-dlp-anyone-links.png)
 
 12. 单击“**保存**”，然后单击“**下一步**”。
 13. 选择测试选项，然后单击“**下一步**”。
@@ -163,4 +163,4 @@ ms.locfileid: "63323831"
 
 [与来宾共享时限制文件意外曝光](share-limit-accidental-exposure.md)
 
-[Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)（创建安全的来宾共享环境）
+[创建安全的来宾共享环境](create-secure-guest-sharing-environment.md)

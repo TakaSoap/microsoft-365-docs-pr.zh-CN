@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: 了解如何设置注册表项，为已安装 2013 Microsoft Office新式验证。
-ms.openlocfilehash: 010dce00762e4e73d21a9da668a7ac9606d731f9
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: c390e3b9858a4d7d8fc37ea5c5e6f1901d5e20fb
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504746"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525107"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>在 Windows 设备上启用适用于 Office 2013 的新式验证
 
@@ -78,7 +78,7 @@ ms.locfileid: "63504746"
    HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\
    ```
 
-8. 如果上表中的键已存在，请根据需要修改值，然后退出注册表编辑器。 如果没有，请在"编辑"菜单上指向" **新建** "，然后选择 **"DWORD 值** "以创建缺少的键。 
+8. 如果 *EnableADAL 和* *Version* 项已存在，请根据需要修改值，然后退出注册表编辑器。 如果没有，请在"编辑"菜单上指向" **新建** "，然后选择 **"DWORD 值** "以创建缺少的键。 
 
 9. 例如，如果 *缺少 EnableADAL* 键，请键入 *EnableADAL*，然后按 **Enter。**
 

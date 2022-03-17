@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 设置 Microsoft 合规性管理器用户权限和角色，并配置操作自动化测试。 管理用户历史记录并筛选仪表板视图。
-ms.openlocfilehash: 070c8fea309ea7c01b82be068acc40a7dcb830ff
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a6a0d7c12b0f798b88d460517866c55862c56740
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330477"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525011"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 
@@ -124,8 +124,6 @@ ms.locfileid: "63330477"
 合规性管理器检测到来自Microsoft 365订阅的其他合规性解决方案的信号，包括信息管理、信息保护、数据丢失防护、通信合规性和内部风险管理。 在每个改进操作的详细信息页面中，"测试"选项卡上的"测试逻辑"字段将显示其他解决方案中所需的内容，以便操作通过合规性分数并获得分数。
 
 合规性管理器还可以检测来自补充改进操作的信号，这些改进操作也受 [Microsoft 安全分数监视](../security/defender/microsoft-secure-score.md)。 借助这些信号，合规性管理器可自动测试某些改进操作，从而最大限度地提高合规性活动的效率。 成功测试和实现改进操作后，你将收到完整分数，这可得到总合规性分数的积分。
-
-在每个改进操作的详细信息页中
 
 默认情况下，对使用合规性管理器的组织启用自动测试。 首次部署Microsoft 365或Office 365时，需要大约 7 天来完全收集数据，并纳入合规性分数中。 启用自动测试后，不会更新该操作的测试日期，但其测试状态将更新。 创建新评估后，分数将自动包含 Microsoft 控制分数和安全分数集成。
 

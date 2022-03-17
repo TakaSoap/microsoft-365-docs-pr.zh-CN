@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5302c078da3ded781007412a2807fc20fa77319e
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 8a1b8e11d16f0bf0d20739af8ff5699eb150c6f7
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61220892"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526686"
 ---
 # <a name="link-query-results-to-an-incident"></a>将查询结果链接到事件
 
@@ -44,7 +44,7 @@ ms.locfileid: "61220892"
 
     :::image type="content" source="../../media/link-to-incident-1.png" alt-text="应用程序门户中的 **Query** 页面Microsoft 365 Defender示例" lightbox="../../media/link-to-incident-1.png":::
 
-2. 在"结果"页中，选择与正在处理的新调查或当前调查相关的事件或记录，然后选择"链接到事件 **"。**
+2. 在"结果"页中，选择与正在处理的新调查或当前调查相关的事件或记录，然后选择"链接到事件 **"**。
 
     :::image type="content" source="../../media/link-to-incident-1b.png" alt-text="事件门户中**结果**选项卡的**事件Microsoft 365 Defender选项" lightbox="../../media/link-to-incident-1b.png":::
 
@@ -56,7 +56,7 @@ ms.locfileid: "61220892"
 
     :::image type="content" source="../../media/link-to-incident-3-link-to-existing.png" alt-text="事件门户中 **Link to incident** 窗格中的 **Alert details** 部分Microsoft 365 Defender示例":::
 
-4. 对于任一选择，请提供以下详细信息，然后选择"下一 **步"：**
+4. 对于任一选择，请提供以下详细信息，然后选择"下一 **步"**：
       - **警报标题** - 提供事件响应者可以理解的结果的描述性标题。 这将成为警报标题。
       - **严重性** - 选择适用于警报组的严重性。
       - **类别** - 为警报选择合适的威胁类别。
@@ -80,8 +80,8 @@ ms.locfileid: "61220892"
 
 在我们的示例中，表示四个选定事件的四个警报已成功链接到新事件。 
 
-在每个警报页面中，您可以在日程表视图或事件（如果可用）和查询结果 (查找) 事件的完整信息。
-     :::image type="content" source="../../media/link-to-incident-7-alert-story.png" alt-text="事件在门户的 **Timeline** 选项卡中的完整Microsoft 365 Defender示例" lightbox="../../media/link-to-incident-7-alert-story.png":::
+在每个警报页面中，可以在时间线视图或事件的完整信息 (（如果可用) 查询结果视图）。
+     :::image type="content" source="../../media/link-to-incident-7-alert-story.png" alt-text="事件的完整详细信息示例，该示例在 Microsoft 365 Defender 门户的 **Timeline** 选项卡中" lightbox="../../media/link-to-incident-7-alert-story.png":::
 
 您还可以选择该事件以打开"检查 **记录"** 窗格。
 :::image type="content" source="../../media/link-to-incident-7-inspect-record.png" alt-text="检查事件记录详细信息的示例，该示例在 Microsoft 365 Defender 门户的 **Timeline** 选项卡中" lightbox="../../media/link-to-incident-7-inspect-record.png":::

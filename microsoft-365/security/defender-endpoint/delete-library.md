@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: reference
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd5c77911c889bb52e04981c96be239ff17575f2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 23625c8b7160d604df5f3a8b1b1387fc31027acf
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330771"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526810"
 ---
 #  <a name="delete-a-file-from-the-live-response-library"></a>从实时响应库中删除文件  
 
@@ -56,7 +56,7 @@ ms.locfileid: "63330771"
 
 | 权限类型                    | 权限     | 权限显示名称        |
 |------------------------------------|----------------|--------------------------------|
-| 应用程序                        | Library.Manage | 管理实时响应库 |
+| Application                        | Library.Manage | 管理实时响应库 |
 | 委派（工作或学校帐户） | Library.Manage | 管理实时响应库 |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -67,7 +67,7 @@ ms.locfileid: "63330771"
 
 | 名称            | 类型   | 说明               |
 |-----------------|--------|---------------------------|
-| Authorization   | String | Bearer\<token>\. 必需。 |
+| Authorization   | 字符串 | Bearer\<token>\. 必需。 |
 
 ## <a name="request-body"></a>请求正文
 

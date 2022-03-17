@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8bf51b744e294e4bb2740b3e437305629eb23c2a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2ed9d25336cd7e8162849aa5d1d1a3e3382063fc
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934245"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526672"
 ---
 # <a name="integration-with-microsoft-defender-for-cloud"></a>与 Microsoft Defender for Cloud 集成
 
@@ -35,16 +35,16 @@ Microsoft Defender for Endpoint 可以与 Microsoft Defender for Cloud 集成，
 
 此集成中包含以下功能：
 
-- 自动载入 - 在已载入到 Microsoft Defender for Cloud 的 Windows 服务器上自动启用 Defender for Endpoint 传感器。 有关云载入的 Microsoft Defender 详细信息，请参阅使用集成的 [Microsoft Defender for Endpoint 许可证](/azure/security-center/security-center-wdatp)。
+- 自动载入 - 在已载入到 Microsoft Defender for Cloud 的 Windows 服务器上自动启用 Defender for Endpoint 传感器。 有关 Microsoft Defender 云载入详细信息，请参阅使用集成的 [Microsoft Defender for Endpoint 许可证](/azure/security-center/security-center-wdatp)。
 
     > [!NOTE]
-    > Microsoft Defender for servers 和 Microsoft Defender for Endpoint 之间的集成已扩展，以支持[Windows Server 2019 和 Windows Virtual Desktop (WVD) ](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)。
+    > Microsoft Defender for servers 和 Microsoft Defender for Endpoint 之间的集成已扩展，以支持 [Windows Server 2019 和 Windows Virtual Desktop (WVD) ](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)。
 
 - Windows Microsoft Defender for Cloud 监视的服务器也将在 Defender for Endpoint 中可用 - Microsoft Defender for Cloud 无缝连接到 Defender for Endpoint 租户，跨客户端和服务器提供单一视图。  此外，适用于终结点的 Defender 警报将在 Microsoft Defender 云控制台中提供。
-- 服务器调查 - Microsoft Defender 云客户可以访问 Microsoft 365 Defender 门户，以执行详细调查，以发现潜在泄露的范围。
+- 服务器调查 - Microsoft Defender 云客户可以访问 Microsoft 365 Defender门户，以执行详细调查，以发现潜在泄露的范围。
 
 > [!IMPORTANT]
-> - 当你使用 Microsoft Defender for Cloud 监视服务器时，会自动在美国为美国用户创建 (defender for Endpoint 租户，在欧盟为欧洲和英国用户自动创建) 。<br>
+> - 当你使用 Microsoft Defender for Cloud 监视服务器时，会自动在美国为美国用户创建 (Defender for Endpoint 租户，在欧盟为欧洲和英国用户自动创建) 。<br>
 Defender for Endpoint 收集的数据存储在预配期间标识的租户地理位置中。
 > - 如果在使用 Microsoft Defender for Cloud 之前使用 Defender for Endpoint，则数据将存储在创建租户时指定的位置，即使以后与 Microsoft Defender for Cloud 集成。
 > - 配置后，你无法更改数据存储的位置。 如果需要将数据移动到其他位置，需要联系 Microsoft 支持部门来重置租户。 <br>

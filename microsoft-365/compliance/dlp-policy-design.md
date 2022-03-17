@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: 了解如何使用 DLP 策略 (数据丢失) 防护
-ms.openlocfilehash: 5cfea5add3a1790e8a30359e48ca1c94ca83f671
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 14e9fbb5efd20ddcf3d0a47da41a0cce89c88cee
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521424"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526314"
 ---
 # <a name="design-a-data-loss-prevention-policy"></a>设计数据丢失防护策略
 
@@ -41,11 +41,11 @@ ms.locfileid: "61521424"
 
 ## <a name="policy-design-overview"></a>策略设计概述
 
-[设计策略主要](#policy-design-process)与明确定义业务需求有关，[](#define-intent-for-the-policy)将其记录在策略意图声明中，然后将这些需求映射到[策略配置](#map-business-needs-to-policy-configuration)。 你将使用在规划阶段做出的决策来通知一些策略设计决策。 
+[设计策略主要](#policy-design-process) 与明确 [定义](#define-intent-for-the-policy) 业务需求有关，将其记录在策略意图声明中，然后将 [这些需求映射到策略配置](#map-business-needs-to-policy-configuration)。 你将使用在规划阶段做出的决策来通知一些策略设计决策。 
 
 ### <a name="define-intent-for-the-policy"></a>定义策略的意图 
 
-您应该能够在单个语句中总结每个策略的业务意图。 开发此声明将推动您组织的对话，完全完成时，此声明将直接将策略链接到业务目的，并提供策略设计的路线图。 Plan for [data loss prevention (DLP) ](dlp-overview-plan-for-dlp.md#overview-of-planning-process) 一文的步骤将帮助您开始使用策略意图声明。  
+您应该能够在单个语句中总结每个策略的业务意图。 开发此声明将推动您组织的对话，完全完成时，此声明将直接将策略链接到业务目的，并提供策略设计的路线图。 Plan [for data loss prevention (DLP) ](dlp-overview-plan-for-dlp.md#overview-of-planning-process) 一文的步骤将帮助您开始使用策略意图声明。  
 
 从 [DLP 策略配置概述中请记住](dlp-learn-about-dlp.md#dlp-policy-configuration-overview) ，所有 DLP 策略都要求您：
 
@@ -66,14 +66,14 @@ ms.locfileid: "61521424"
 
 |语句  |已回答的配置问题与配置映射  |
 |---------|---------|
-| "We are a u-s-based organization， and we need to detect Office documents that contain sensitive health care information covered by HIPPA...  |- **要监视的内容**：Office文档，使用美国健康保险法案 ([HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa)模板 </br>- 匹配条件： (预配置但可编辑的) - 项目包含美国 SSN 和管制局 (DEA) 号码、国际感染分类 (ICD-9-CM) 、国际感染分类 (ICD-10-CM) 、内容与组织外部人员共享  </br> - 驱动对话以阐明检测的触发阈值（如[](sensitive-information-type-learn-about.md#more-on-confidence-levels)可信度）和实例[](dlp-policy-reference.md#content-contains)计数 (称为泄漏容错) 。|
-|...存储在聊天OneDrive/SharePoint中，并防范聊天和Teams消息中共享的信息... |- **监视位置**[：通过](dlp-policy-reference.md#locations)包括或排除聊天/频道帐户或通讯OneDrive SharePoint网站Teams范围。 |
-|...并限制所有人与未经授权的第三方共享这些项目。"  | - **要采取的操作**[：添加](dlp-policy-reference.md#actions)*限制访问或加密Microsoft 365位置* </br> - 推动对话，讨论触发策略时要采取的操作，包括保护性操作（如共享限制、通知和警报等感知操作）和用户授权操作（如允许用户替代阻止操作） |
+| "We are a u-s-based organization， and we need to detect Office documents that contain sensitive health care information covered by HIPPA...  |- **要监视的内容**：Office文档，使用美国健康保险法案 ([HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa)模板 </br>- 匹配条件： (预配置但可编辑的) - 项目包含美国 SSN 和管制局 (DEA) 号码、国际患者分类 (ICD-9-CM) 、国际感染分类 (ICD-10-CM) 、内容与组织外部人员共享  </br> - 驱动对话以阐明检测的触发阈值（如可信度[](sensitive-information-type-learn-about.md#more-on-confidence-levels)）和实例计数[](dlp-policy-reference.md#content-contains) (称为泄漏容错) 。|
+|...存储在聊天OneDrive/SharePoint，并防范聊天和Teams消息中共享的信息... |- **要监视的位置**[：通过](dlp-policy-reference.md#locations)包括或排除聊天/频道帐户或通讯OneDrive和SharePoint网站Teams范围。 |
+|...并限制所有人与未经授权的第三方共享这些项目。"  | - **要采取的操作**[：添加限制](dlp-policy-reference.md#actions)*访问或加密Microsoft 365位置* </br> - 推动对话，讨论触发策略时要采取的操作，包括保护性操作（如共享限制、通知和警报等感知操作）和用户授权操作（如允许用户替代阻止操作） |
 
 此示例未涵盖 DLP 策略的所有配置点，将需要扩展。 但是，在开发自己的 DLP 策略意图陈述时，应该会进行正确的思考。
 
 > [!IMPORTANT]
-> 请记住，选择 (的位置) 影响是否可以使用敏感信息类型、敏感度标签和保留标签以及可用的操作。 请参阅数据丢失 [防护策略参考](dlp-policy-reference.md#data-loss-prevention-policy-reference)。
+> 请记住，你 () 位置会影响你是否可以使用敏感信息类型、敏感度标签和保留标签以及可用的操作。 请参阅数据丢失 [防护策略参考](dlp-policy-reference.md#data-loss-prevention-policy-reference)。
 
 ## <a name="policy-design-process"></a>策略设计过程
 

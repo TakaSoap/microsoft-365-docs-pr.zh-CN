@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: reference
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1700fffa7014733b44c8ed03b8fdffae085644a9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9c9bf11856cf518a1cd387b88a3b70dc4a34cc91
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330789"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526904"
 ---
 #  <a name="list-library-files"></a>列表库文件 
 
@@ -55,7 +55,7 @@ ms.locfileid: "63330789"
 
 |权限类型                       |      权限          |  权限显示名称 | 
 |-----------------|--------|---------------------------|  
-| 应用程序                        | Library.Manage | 管理实时响应库 |
+| Application                        | Library.Manage | 管理实时响应库 |
 | 委派（工作或学校帐户） | Library.Manage | 管理实时响应库 |
 
 ## <a name="http-request"></a>HTTP 请求
