@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: 了解如何使用高级元数据搜索在 SharePoint 文档库中使用 SharePoint Syntex 查找项目。
-ms.openlocfilehash: b5dffe0cd0bf481c1243d87450110d545578a06b
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 87edac08dd057c0e9dea2ce36f4339f9c0bb5344
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806897"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526522"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>在 Microsoft 文档库中搜索元数据SharePoint Syntex
 
@@ -50,4 +50,4 @@ ms.locfileid: "62806897"
    |文件类型     |按所选文件类型（例如 Word 文档或 PDF）搜索。        |
    |内容类型  |按所选内容类型搜索。 仅当库中应用了非默认内容类型时，才会显示此选项。 默认内容类型为 *文档* 和 *文件夹*。        |
 
-3. 选择“**搜索**”。 与元数据搜索匹配的文档显示在结果页面上。 
+3. 选择“**搜索**”。与元数据搜索匹配的文档将显示在结果页面上。 

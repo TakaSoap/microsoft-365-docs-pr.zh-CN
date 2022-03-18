@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1040997e9a7989dfb0bb3abe7a3b89adf637938
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 47ee051ab30669241a3283f1fb3f8fe86cf67f65
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317411"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557822"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>安全与合规中心内的权限
 
@@ -101,18 +101,18 @@ ms.locfileid: "63317411"
 |**IRM 参与者**|此角色组可见，但仅由后台服务使用。|内部风险管理永久参与 <p> 内部风险管理临时参与|
 |**知识管理员**|配置知识、学习、分配培训和其他智能功能。|知识管理员|
 |**MailFlow 管理员**|成员可以在安全与合规中心监视和查看&见解和报告。 全局管理员可以向此组添加普通用户，但是，如果用户不是 Exchange Admin 组的成员，则用户不能Exchange管理员相关任务。|仅查看收件人|
-|**组织管理**<sup>1</sup>|成员可以控制访问安全与合规&功能的权限，还可以管理设备管理、数据丢失防护、报告和保留的设置。 <p> 不是全局管理员的用户必须是Exchange管理员才能查看由基本移动性和安全性管理的设备，Microsoft 365 (以前称为移动设备管理或 MDM) 。 <p> 全局管理员将自动添加为此角色组的成员。|审核日志 <p> 案例管理 <p> 通信合规性管理员 <p> 通信合规性案例管理 <p> 合规管理员 <p> 合规性搜索 <p> 数据连接器管理员 <p> 设备管理 <p> DLP 合规性管理 <p> Hold <p> IB 合规性管理 <p> 内部风险管理管理员 <p> 管理通知 <p> 组织配置 <p> Quarantine <p> RecordManagement <p> 保留管理 <p> 角色管理 <p> 搜索和清除 <p> 安全管理员 <p> 安全信息读取者 <p> 敏感度标签管理员 <p> 敏感度标签阅读器 <p> 服务保障视图 <p> 标记参与者 <p> 标记管理器 <p> 标记读取器 <p> 仅供查看审核日志 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only IBM 合规性管理 <p> View-Only Case <p> View-Only管理警报 <p> 仅查看收件人 <p> View-Only记录管理 <p> View-Only保留管理|
+|**组织管理**<sup>1</sup>|成员可以控制访问安全与合规&功能的权限，还可以管理设备管理、数据丢失防护、报告和保留的设置。 <p> 不是全局管理员的用户必须是Exchange管理员才能查看由基本移动性和安全性管理的设备，Microsoft 365 (以前称为移动设备管理或 MDM) 。 <p> 全局管理员将自动添加为此角色组的成员，但你不会在安全与合规中心 PowerShell 中的 [Get-RoleGroupMember](/powershell/module/exchange/get-rolegroupmember) cmdlet 输出 [&它们](/powershell/module/exchange/get-rolegroupmember)。|审核日志 <p> 案例管理 <p> 通信合规性管理员 <p> 通信合规性案例管理 <p> 合规管理员 <p> 合规性搜索 <p> 数据连接器管理员 <p> 设备管理 <p> DLP 合规性管理 <p> Hold <p> IB 合规性管理 <p> 内部风险管理管理员 <p> 管理通知 <p> 组织配置 <p> 隔离 <p> RecordManagement <p> 保留管理 <p> 角色管理 <p> 搜索和清除 <p> 安全管理员 <p> 安全信息读取者 <p> 敏感度标签管理员 <p> 敏感度标签阅读器 <p> 服务保障视图 <p> 标记参与者 <p> 标记管理器 <p> 标记读取器 <p> 仅供查看审核日志 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only IBM 合规性管理 <p> View-Only Case <p> View-Only管理警报 <p> 仅查看收件人 <p> View-Only记录管理 <p> View-Only保留管理|
 |**隐私管理**|管理 Microsoft 365 合规中心 中的 Access control。|案例管理 <p> 数据分类内容查看器 <p> 数据分类列表查看器 <p> 隐私管理管理员 <p> 隐私管理分析 <p> 隐私管理调查 <p> 隐私管理 永久贡献 <p> 隐私管理 临时贡献 <p> 隐私管理查看器 <p> 主体权限请求管理员 <p> View-Only Case|
 |**隐私管理管理员**|可创建/编辑策略和定义全局设置的隐私管理解决方案管理员。|案例管理 <p> 隐私管理管理员 <p> View-Only Case|
 |**隐私管理分析师**|隐私管理解决方案的分析员，可调查策略匹配项、查看邮件元数据以及执行修正操作。|案例管理 <p> 数据分类列表查看器 <p> 隐私管理分析 <p> View-Only Case|
 |**隐私管理参与者**|管理隐私管理事例的参与者访问权限。|隐私管理 永久贡献 <p> 隐私管理 临时贡献|
 |**隐私管理研究人员**|隐私管理解决方案的研究人员，可调查策略匹配项、查看邮件内容以及执行修正操作。|案例管理 <p> 数据分类内容查看器 <p> 数据分类列表查看器 <p> 隐私管理调查 <p> View-Only Case|
 |**隐私管理查看者**|可以访问可用仪表板和小组件的隐私管理解决方案查看器。|数据分类列表查看器 <p> 隐私管理查看器|
-|**隔离管理员**|成员可以访问所有隔离操作。 有关详细信息，请参阅在 EOP 中以管理员角色 [管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)|Quarantine|
+|**隔离管理员**|成员可以访问所有隔离操作。 有关详细信息，请参阅在 EOP 中以管理员角色 [管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)|隔离|
 |**记录管理**|成员可以配置记录管理的各个方面，包括保留标签和处置评审。|处置管理 <p> RecordManagement <p> 保留管理|
 |**Reviewer**|成员可以在一些情况下访问[Advanced eDiscovery](../../compliance/overview-ediscovery-20.md)集。 此角色组的成员可以在他们作为成员的 > **高级** Microsoft 365 合规中心查看和打开事例列表。 用户访问案例后Advanced eDiscovery，可以选择"审阅集"来访问案例数据。 此角色不允许用户预览与案例关联的集合搜索的结果，或执行其他搜索或案例管理任务。 此角色组的成员只能访问审阅集内的数据。|审阅|
-|**安全管理员**|成员可以访问 Identity Protection Center、Privileged Identity Management、Monitor Microsoft 365 Service Health 和 Security & 安全中心等多个安全功能。 <p> 默认情况下，此角色组可能看起来没有任何成员。 但是，安全管理员角色Azure Active Directory分配给此角色组。 因此，此角色组从角色组继承安全管理员角色Azure Active Directory。 <p> 若要集中管理权限，在管理中心中添加和Azure Active Directory组成员。 有关详细信息，请参阅 [Azure AD内置角色](/azure/active-directory/roles/permissions-reference)。 如果在安全与合规中心 & (成员身份或角色) 中编辑此角色组，则这些更改仅适用于安全 & 合规中心，不适用于任何其他服务。 <p> 此角色组包括安全读者角色的所有只读权限，以及用于相同服务的一些附加管理权限：Azure 信息保护、Identity Protection Center、Privileged Identity Management、Monitor Microsoft 365 Service Health 和安全 & 合规性中心。|审核日志 <p> 设备管理 <p> DLP 合规性管理 <p> IB 合规性管理 <p> 管理通知 <p> Quarantine <p> 安全管理员 <p> 敏感度标签管理员 <p> 标记参与者 <p> 标记管理器 <p> 标记读取器 <p> 仅供查看审核日志 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only IBM 合规性管理 <p> View-Only管理警报|
-|**安全运算符**|成员可以管理安全警报，还可以查看安全功能的报告和设置。|合规性搜索 <p> 管理通知 <p> 安全信息读取者 <p> 标记参与者 <p> 标记读取器 <p> Tenant AllowBlockList Manager <p> 仅供查看审核日志 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only IBM 合规性管理 <p> View-Only管理警报|
+|**安全管理员**|成员可以访问 Identity Protection Center、Privileged Identity Management、Monitor Microsoft 365 Service Health 和 Security & 安全中心等多个安全功能。 <p> 默认情况下，此角色组可能看起来没有任何成员。 但是，安全管理员角色Azure Active Directory分配给此角色组。 因此，此角色组从角色组继承安全管理员角色Azure Active Directory。 <p> 若要集中管理权限，在管理中心中添加和Azure Active Directory组成员。 有关详细信息，请参阅 [Azure AD内置角色](/azure/active-directory/roles/permissions-reference)。 如果在安全与合规中心 & (成员身份或角色) 中编辑此角色组，则这些更改仅适用于安全 & 合规中心，不适用于任何其他服务。 <p> 此角色组包括安全读者角色的所有只读权限，以及用于相同服务的一些附加管理权限：Azure 信息保护、Identity Protection Center、Privileged Identity Management、Monitor Microsoft 365 Service Health 和安全 & 合规性中心。|审核日志 <p> 设备管理 <p> DLP 合规性管理 <p> IB 合规性管理 <p> 管理通知 <p> 隔离 <p> 安全管理员 <p> 敏感度标签管理员 <p> 标记参与者 <p> 标记管理器 <p> 标记读取器 <p> 仅供查看审核日志 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only IBM 合规性管理 <p> View-Only管理警报|
+|**安全操作员**|成员可以管理安全警报，还可以查看安全功能的报告和设置。|合规性搜索 <p> 管理通知 <p> 安全信息读取者 <p> 标记参与者 <p> 标记读取器 <p> Tenant AllowBlockList Manager <p> 仅供查看审核日志 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only IBM 合规性管理 <p> View-Only管理警报|
 |**安全信息读取者**|成员具有对 Identity Protection Center、Privileged Identity Management、Monitor Microsoft 365 Service Health 和 Security & 合规性中心的多个安全功能的只读访问权限。 <p> 默认情况下，此角色组可能看起来没有任何成员。 但是，安全读者角色Azure Active Directory分配给此角色组。 因此，此角色组从角色组继承安全读者角色Azure Active Directory。 <p> 若要集中管理权限，在管理中心中添加和Azure Active Directory组成员。 有关详细信息，请参阅 [Azure AD内置角色](/azure/active-directory/roles/permissions-reference)。 如果在安全与合规中心 & (成员身份或角色) 中编辑此角色组，则这些更改仅适用于安全 & 合规中心，不适用于任何其他服务。|安全信息读取者 <p> 敏感度标签阅读器 <p> 标记读取器 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only IBM 合规性管理 <p> View-Only管理警报|
 |**服务保证用户**|成员可以访问安全与合规中心中的服务&部分。 服务保证提供报告和文档，介绍 Microsoft 针对存储在客户安全中心中的客户数据Microsoft 365。 它还提供有关报告的独立第三方审核Microsoft 365。 有关详细信息，请参阅安全与 [合规](../../compliance/service-assurance.md)中心&保证。|服务保障视图|
 |**主题权限请求管理员**|创建主题权限请求。|案例管理 <p> 主体权限请求管理员 <p> View-Only Case|

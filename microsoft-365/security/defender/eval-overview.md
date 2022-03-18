@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5c0ef6ce393f7c79ee6fca9b591d99c46d864a52
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: 2502a4781e9844fca8de3113d64ee1836efddabd
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504539"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557889"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>评估和试点 Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "63504539"
 
 - Microsoft 365 Defender
 
-# <a name="how-this-article-series-works"></a>本系列文章的工作原理
+## <a name="how-this-article-series-works"></a>本系列文章的工作原理
 
 本系列文章旨在逐步完成设置端到端试用 XDR 环境的整个过程，以便评估 Microsoft 365 Defender 甚至可以在准备就绪时直接将评估环境推广到生产环境。
 
@@ -42,10 +42,10 @@ ms.locfileid: "63504539"
 
 - [如何创建环境](eval-create-eval-environment.md)
 - 设置或了解此 Microsoft XDR 的每个技术
-    - [Microsoft Defender for Identity](eval-defender-identity-overview.md)
-    - [Microsoft Defender for Office](eval-defender-office-365-overview.md)
-    - [Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
-    - [Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
+  - [Microsoft Defender for Identity](eval-defender-identity-overview.md)
+  - [Microsoft Defender for Office](eval-defender-office-365-overview.md)
+  - [Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
+  - [Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 - [如何使用此 XDR 调查和响应](eval-defender-investigate-respond.md)
 - [将试用环境推广到生产环境](eval-defender-promote-to-production.md)
 
@@ -77,17 +77,17 @@ Microsoft 365 Defender是基于云的统一、入侵前和入侵后企业防御�
 
 ### <a name="microsoft-365-defender-components-secure-devices-identity-data-and-applications"></a>Microsoft 365 Defender组件保护设备、标识、数据和应用程序
 
-Microsoft 365 Defender由这些安全技术共同运行。 无需所有这些组件都受益于 XDR 和 Microsoft 365 Defender。 你还将通过使用一个或两个实现收益和效率。 
+Microsoft 365 Defender由这些安全技术共同运行。 无需所有这些组件都受益于 XDR 和 Microsoft 365 Defender。 你还将通过使用一个或两个实现收益和效率。
 
-|组件  |说明  |参考资料  |
-|---------|---------|---------|
-|Microsoft Defender for Identity     |      Microsoft Defender for Identity 使用 Active Directory 信号来识别、检测和调查针对你的组织的高级威胁、泄露的身份和恶意预览体验成员操作。     |     [什么是 Microsoft Defender for Identity?](/defender-for-identity/what-is)   |
-|Exchange Online Protection     |      Exchange Online Protection是基于云的本机 SMTP 中继和筛选服务，可帮助保护组织免受垃圾邮件和恶意软件的攻击。      |   [Exchange Online Protection (EOP) 概述 - Office 365](../office-365-security/overview.md)     |
-|Microsoft Defender for Office 365     |     Microsoft Defender for Office 365保护你的组织免受电子邮件、链接和 URL (和协作) 带来的威胁。      |    [Microsoft Defender for Office 365 - Office 365](../office-365-security/overview.md)    |
-|Microsoft Defender for Endpoint     |     Microsoft Defender for Endpoint 是设备保护、攻破后检测、自动调查和建议响应的统一平台。      |   [Microsoft Defender for Endpoint - Windows安全性](../defender-endpoint/microsoft-defender-endpoint.md)    |
-|Microsoft Defender for Cloud Apps     |      Microsoft Defender for Cloud Apps 是一个全面的跨 SaaS 解决方案，为云应用提供深入了解、强大的数据控制和增强的威胁防护。       |    [什么是 Defender for Cloud Apps 许可？](/cloud-app-security/what-is-cloud-app-security)    |
+|组件|说明|参考资料|
+|---|---|---|
+|Microsoft Defender for Identity|Microsoft Defender for Identity 使用 Active Directory 信号来识别、检测和调查针对你的组织的高级威胁、泄露的身份和恶意预览体验成员操作。|[什么是 Microsoft Defender for Identity?](/defender-for-identity/what-is)|
+|Exchange Online Protection|Exchange Online Protection是基于云的本机 SMTP 中继和筛选服务，可帮助保护组织免受垃圾邮件和恶意软件的攻击。|[Exchange Online Protection (EOP) 概述 - Office 365](../office-365-security/overview.md)|
+|Microsoft Defender for Office 365|Microsoft Defender for Office 365保护你的组织免受电子邮件、链接和 URL (和协作) 带来的威胁。|[Microsoft Defender for Office 365 - Office 365](../office-365-security/overview.md)|
+|Microsoft Defender for Endpoint|Microsoft Defender for Endpoint 是设备保护、攻破后检测、自动调查和建议响应的统一平台。|[Microsoft Defender for Endpoint - Windows安全性](../defender-endpoint/microsoft-defender-endpoint.md)|
+|Microsoft Defender for Cloud Apps|Microsoft Defender for Cloud Apps 是一个全面的跨 SaaS 解决方案，为云应用提供深入了解、强大的数据控制和增强的威胁防护。|[什么是 Defender for Cloud Apps 许可？](/cloud-app-security/what-is-cloud-app-security)|
 |Azure AD Identity Protection|Azure AD Identity Protection 评估来自数十亿次登录尝试的风险数据，并使用此数据来评估每次登录环境的风险。 此数据由 Azure AD用于允许或阻止帐户访问，具体取决于如何配置条件访问策略。 Azure AD身份保护与组织单独Microsoft 365 Defender。 它包含在Azure Active Directory Premium P2。|[什么是标识保护？](/azure/active-directory/identity-protection/overview-identity-protection)|
-| | | |
+||||
 
 ## <a name="microsoft-365-defender-architecture"></a>Microsoft 365 Defender体系结构
 
@@ -102,7 +102,7 @@ Microsoft 365 Defender由这些安全技术共同运行。 无需所有这些组
 - Microsoft Defender for Identity 收集来自运行 Active Directory 联合服务 (AD FS) 和本地 Active Directory 域服务 (AD DS) 的服务器的信号。 它使用这些信号来保护混合标识环境，包括防止黑客使用遭到入侵的帐户在内部部署环境中跨工作站进行稍后移动。
 - Microsoft Defender for Endpoint 收集来自组织使用的设备的信号并保护这些设备。
 - Microsoft Defender for Cloud Apps 收集组织使用云应用的信号，并保护你的环境与这些应用之间的数据流，包括批准的和未批准的云应用。
-- Azure AD Identity Protection 评估来自数十亿次登录尝试的风险数据，并使用此数据来评估每次登录环境的风险。 此数据由 Azure AD用于允许或阻止帐户访问，具体取决于如何配置条件访问策略。 Azure AD身份保护与组织单独Microsoft 365 Defender。 它包含在Azure Active Directory Premium P2。  
+- Azure AD Identity Protection 评估来自数十亿次登录尝试的风险数据，并使用此数据来评估每次登录环境的风险。 此数据由 Azure AD用于允许或阻止帐户访问，具体取决于如何配置条件访问策略。 Azure AD身份保护与组织单独Microsoft 365 Defender。 它包含在Azure Active Directory Premium P2。
 
 ## <a name="microsoft-siem-and-soar-can-use-data-from-microsoft-365-defender"></a>Microsoft SIEM 和 SOAR 可以使用来自 Microsoft 365 Defender
 
@@ -120,16 +120,16 @@ Microsoft 建议按说明Microsoft 365启用以下组件：
 
 下表描述了此图。
 
-|      |步骤  |说明  |
-|------|---------|---------|
-|1     | [创建评估环境](eval-create-eval-environment.md)       |此步骤可确保你拥有适用于你的Microsoft 365 Defender。         |
-|2     | [启用 Defender for Identity](eval-defender-identity-overview.md)        | 查看体系结构要求、启用评估，并演练用于识别和修正不同攻击类型的教程。   |
-|3     | [启用 Defender for Office 365 ](eval-defender-office-365-overview.md)       | 确保满足体系结构要求，启用评估，然后创建试点环境。 此组件包括Exchange Online Protection，因此你将在此处实际 *评估这两* 者。      |
-|4     | [为终结点启用 Defender ](eval-defender-endpoint-overview.md)       | 确保满足体系结构要求，启用评估，然后创建试点环境。         |
-|5     | [启用 Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)        |  确保满足体系结构要求，启用评估，然后创建试点环境。        |
-|6      | [调查并响应威胁](eval-defender-investigate-respond.md)        |   模拟攻击并开始使用事件响应功能。      |
-|7      | [将试用版提升到生产](eval-defender-promote-to-production.md)        | 将Microsoft 365组件一个一个地提升为生产。        |
-| | | |
+|步骤|链接|说明|
+|---|---|---|
+|1|[创建评估环境](eval-create-eval-environment.md)|此步骤可确保你拥有适用于你的Microsoft 365 Defender。|
+|2|[启用 Defender for Identity](eval-defender-identity-overview.md)|查看体系结构要求、启用评估，并演练用于识别和修正不同攻击类型的教程。|
+|3|[启用 Defender for Office 365](eval-defender-office-365-overview.md)|确保满足体系结构要求，启用评估，然后创建试点环境。 此组件包括Exchange Online Protection，因此你将在此处实际 *评估这两* 者。|
+|4|[为终结点启用 Defender](eval-defender-endpoint-overview.md)|确保满足体系结构要求，启用评估，然后创建试点环境。|
+|5|[启用 Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)|确保满足体系结构要求，启用评估，然后创建试点环境。|
+|6 |[调查并响应威胁](eval-defender-investigate-respond.md)|模拟攻击并开始使用事件响应功能。|
+|7 |[将试用版提升到生产](eval-defender-promote-to-production.md)|将Microsoft 365组件一个一个地提升为生产。|
+||||
 
 这是通常推荐的顺序，旨在根据部署和配置功能通常需要多少工作量来快速利用功能的价值。 例如，可以在Office 365 Defender for Endpoint 中注册设备所花费的更少时间配置 Defender for Endpoint。 当然，您应该确定组件优先级以满足业务需求，并可以按不同顺序启用这些组件。
 

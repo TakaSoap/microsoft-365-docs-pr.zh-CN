@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 37e94d43f2cfeab0e1135c42de34726ee5895714
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ddd0553405aa92a1eb7a7978398392b780a0a2ea
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320587"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557805"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -103,8 +103,6 @@ ms.locfileid: "63320587"
 #### <a name="known-configuration-issues"></a>已知的配置问题
 
 - 虽然可以选择从上次修改项目时开始保留期的选项，但始终使用 **从项目创建时** 的值。 对于已编辑的邮件，将保存一份带有原始时间戳的原始邮件副本，以标识创建此预编辑邮件的时间，并且该编辑后邮件具有较新的时间戳。
-
-- 为 **Teams 频道消息** 位置选择“**编辑**”时，你可能会看到不属于团队的 Microsoft 365 组。
 
 - 在为 Teams 聊天位置选择“**编辑**”时，可能看到来宾和非邮箱用户。 保留策略并非专为这些用户设计，因此请不要选择他们。
 

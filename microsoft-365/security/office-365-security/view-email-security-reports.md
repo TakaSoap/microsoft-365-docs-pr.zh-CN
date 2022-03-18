@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0703e1f23d9d54a907b39382438f85f544a5b6de
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: b1d7d3dab26d4f9034294b2780875d33cb2fbef3
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504862"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557933"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在电子邮件门户中查看Microsoft 365 Defender报告
 
@@ -52,7 +52,7 @@ ms.locfileid: "63504862"
 
 ****
 
-|已弃用的报告和 cmdlet|新报表和 cmdlet|消息中心 ID|Date|
+|已弃用的报告和 cmdlet|新报表和 cmdlet|消息中心 ID|日期|
 |---|---|:---:|:---:|
 |**URL 跟踪** <p> Get-URLTrace|[URL 保护报告](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|2021 年 6 月|
 |**已发送和已接收电子邮件报告** <p> Get-MailTrafficReport <br> Get-MailDetailReport|[威胁防护状态报告](#threat-protection-status-report) <br> [邮件流状态报告](#mailflow-status-report) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|2021 年 6 月|
@@ -89,11 +89,13 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 - **创建时间**
 - **用户 ID**
 - **操作**
+- **标记**：有关用户标记的信息，请参阅 [用户标记](user-tags.md)。
 
 通过单击"筛选器"，并选择出现的一个或多个以下值，可以筛选图表和详细信息表：
 
 - **DATE (UTC)**： **Start date** and **End date**.
 - **活动**：**受限或****可疑**
+- **Tag**： **All** or the specified user tag (including priority accounts) .
 
 配置完筛选器后，请单击"应用"**、"****取消**"或"清除 **筛选器"**。
 
@@ -520,7 +522,7 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
 - **检测技术**
 - **传递状态**
 - **发件人 IP**
-- **Tags**
+- **标记**：有关用户标记的信息，请参阅 [用户标记](user-tags.md)。
 
 如果单击 **"筛选器"**，则以下筛选器可用：
 
@@ -531,7 +533,7 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
   - **全部**
   - **入站**
   - **出站**
-- **Tag**： **All** or the specified user tag (including priority accounts) . 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
+- **Tag**： **All** or the specified user tag (including priority accounts) .
 - **域**： **全部** 或 [接受的域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 - **策略类型**：
   - **全部**
@@ -572,7 +574,7 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
 - **检测技术**
 - **传递状态**
 - **发件人 IP**
-- **Tags**
+- **标记**：有关用户标记的信息，请参阅 [用户标记](user-tags.md)。
 
 如果单击 **"筛选器"**，则以下筛选器可用：
 
@@ -582,7 +584,7 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
   - **全部**
   - **入站**
   - **出站**
-- **Tag**： **All** or the specified user tag (including priority accounts) . 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
+- **Tag**： **All** or the specified user tag (including priority accounts) .
 - **域**： **全部** 或 [接受的域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 - **策略类型**：
   - **全部**
@@ -627,7 +629,7 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
 - **检测技术**
 - **传递状态**
 - **发件人 IP**
-- **Tags**
+- **标记**：有关用户标记的信息，请参阅 [用户标记](user-tags.md)。
 
 如果单击 **"筛选器"**，则以下筛选器可用：
 
@@ -638,7 +640,7 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
   - **全部**
   - **入站**
   - **出站**
-- **Tag**： **All** or the specified user tag (including priority accounts) . 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
+- **Tag**： **All** or the specified user tag (including priority accounts) .
 - **域**： **全部** 或 [接受的域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 - **策略类型**：
   - **全部**
@@ -677,7 +679,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
 - **检测技术**
 - **传递状态**
 - **发件人 IP**
-- **Tags**
+- **标记**：有关用户标记的信息，请参阅 [用户标记](user-tags.md)。
 
 如果单击 **"筛选器"**，则以下筛选器可用：
 
@@ -706,7 +708,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
   - **全部**
   - **入站**
   - **出站**
-- **Tag**： **All** or the specified user tag (including priority accounts) . 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
+- **Tag**： **All** or the specified user tag (including priority accounts) .
 - **域**： **全部** 或 [接受的域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 - **策略类型**：
   - **全部**
@@ -750,7 +752,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
 - **检测技术**
 - **传递状态**
 - **发件人 IP**
-- **Tags**
+- **标记**：有关用户标记的信息，请参阅 [用户标记](user-tags.md)。
 
 如果单击 **"筛选器"**，则以下筛选器可用：
 
@@ -779,7 +781,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
   - **全部**
   - **入站**
   - **出站**
-- **Tag**： **All** or the specified user tag (including priority accounts) . 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
+- **Tag**： **All** or the specified user tag (including priority accounts) .
 - **域**： **全部** 或 [接受的域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 - **策略类型**：
   - **全部**
@@ -852,7 +854,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
 - **Recipients**
 - **系统替代**
 - **发件人 IP**
-- **Tags**
+- **标记**：有关用户标记的信息，请参阅 [用户标记](user-tags.md)。
 
 如果单击 **"筛选器"**，则以下筛选器可用：
 
@@ -863,7 +865,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
   - **全部**
   - **入站**
   - **出站**
-- **Tag**： **All** or the specified user tag (including priority accounts) . 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
+- **Tag**： **All** or the specified user tag (including priority accounts) .
 - **域**： **全部** 或 [接受的域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 - **策略类型**： **全部**
 - **策略名称 (详细信息表视图)**： **全部**
@@ -890,7 +892,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
 - **Recipients**
 - **系统替代**
 - **发件人 IP**
-- **Tags**
+- **标记**：有关用户标记的信息，请参阅 [用户标记](user-tags.md)。
 
 如果单击 **"筛选器"**，则以下筛选器可用：
 
@@ -1040,7 +1042,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **Sender**
 - **报告的原因**
 - **重新扫描结果**
-- **Tags**
+- **标记**：有关用户标记的信息，请参阅 [用户标记](user-tags.md)。
 
 若要将邮件提交给 Microsoft 进行分析，请从表中选择邮件条目，单击"提交给 **Microsoft** 进行分析"，然后从下拉列表中选择下列值之一：
 
@@ -1058,7 +1060,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 - **组织管理**
 - **安全管理员**
-- **安全读取者**
+- **安全信息读取者**
 - **全局读取者**
 
 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。

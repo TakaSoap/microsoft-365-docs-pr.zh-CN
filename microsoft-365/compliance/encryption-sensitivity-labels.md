@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e337ef74975bd761de89b4aaae03379344efeed
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ac50568f9ce995f658e6b06c3a2b13b666211810
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311895"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512344"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -252,7 +252,7 @@ ms.locfileid: "63311895"
 > [!NOTE]
 > 当前仅 Azure 信息保护统一标签客户端支持此功能。
 
-只有配置了双密钥加密服务，并且需要为应用了此标签的文件使用此双密钥加密后，才可选择此选项。
+仅在配置了“双密钥加密”服务后才选择此选项，并且需要对将应用此标签的文件使用此双密钥加密。配置并保存标签后，将无法对其进行编辑。
 
 了解更多信息、先决条件、以及配置说明，请参阅[双密钥加密 (DKE)](double-key-encryption.md)。
 
@@ -431,7 +431,7 @@ ms.locfileid: "63311895"
 
 - 当授权用户在其 Office 应用中打开加密文档时，将在其应用顶部的黄色消息栏中看到标签名称和说明。 当加密权限扩展到组织外部的人员时，请仔细查看打开文档时将在此消息栏中显示的标签名称和说明。
 
-- 对于要同时编辑加密文件的多个用户，他们必须全部使用 Office 网页版，或者你已 [为使用敏感度标签加密的文件启用共同创作](sensitivity-labels-coauthoring.md)，并且所有用户都具有 [支持此功能的 Office 应用](sensitivity-labels-coauthoring.md#prerequisites)。 如果不是这种情况且文件已打开：
+- 对于要同时编辑加密文件的多个用户，他们必须全部使用 Office 网页版，或者你已 [为使用敏感度标签加密的文件启用共同创作](sensitivity-labels-coauthoring.md)，并且所有用户都具有 [支持此功能的 Office 应用](sensitivity-labels-coauthoring.md#prerequisites)。如果不是这种情况且文件已打开：
 
   - 在 Office 应用（Windows、Mac、Android 和 iOS）中，用户会看到一条“**文件正在使用中**”消息，其中包含签出该文件的用户的姓名。 然后，他们可查看只读副本或保存和编辑文件副本，并可在文件可用时收到通知。
   - 在 Office 网页版中，用户会看到一则错误消息，其中指出他们不能与其他人一起编辑文档。然后，他们可以选择“**在阅读视图中打开**”。
