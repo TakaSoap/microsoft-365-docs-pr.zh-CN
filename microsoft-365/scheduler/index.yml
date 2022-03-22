@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365 专属计划员
-summary: 了解如何为会议设置Microsoft 365计划程序，以使用 Cortana。
+summary: 了解如何设置 Microsoft 365 专属计划程序，以便使用 Cortana 安排会议。
 brand: m365
 metadata:
   title: Microsoft 365 专属计划员
-  description: 了解如何为会议设置Microsoft 365计划程序，以使用 Cortana。
+  description: 了解如何设置 Microsoft 365 专属计划程序，以便使用 Cortana 安排会议。
   ms.service: exchange-online
   ms.topic: hub-page
   author: AshaIyengar21
@@ -15,21 +15,21 @@ metadata:
 additionalContent:
   sections:
     - items:
-        - title: 什么是计划程序Microsoft 365？
-          summary: 了解计划程序Microsoft 365及其功能、谁以及它如何受益。
+        - title: 什么是 Microsoft 365 专属计划程序？
+          summary: 了解 Microsoft 365 专属计划程序及其功能，以及谁可以从中获益和获益方式。
           url: scheduler-overview.md
         - title: 信任和隐私
-          summary: 了解计划程序如何Microsoft 365信任和隐私受到保护。
+          summary: 了解 Microsoft 365 专属计划程序如何确保信任和隐私受到保护。
           url: scheduler-trust-privacy.md
         - title: 设置 Microsoft 365 专属计划员
-          summary: 了解为计划程序设置计划程序所需的Microsoft 365。
+          summary: 了解设置 Microsoft 365 专属计划程序所需的内容。
           url: scheduler-setup.md
-        - title: 使用计划程序执行Microsoft 365
-          summary: 了解如何使用计划程序进行Microsoft 365。
+        - title: 使用 Microsoft 365 专属计划程序
+          summary: 如何使用 Microsoft 365 专属计划程序。
           url: scheduler-using.md
-        - title: 安排动态定期会议
+        - title: 计划动态定期会议
           summary: 详细了解如何安排动态定期会议。
           url: scheduler-recurring-meetings.md
         - title: 计划程序常见问题解答
-          summary: 计划程序 for Microsoft 365 中的常见问题和Microsoft 365。
+          summary: Microsoft 365 专属计划程序中的常见问题解答。
           url: scheduler-faqs.md

@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft 365 Defender
-summary: 了解解决方案中可靠的安全Microsoft 365 Defender，以便你可以跨攻击面更好地保护企业。
+summary: 了解 Microsoft 365 Defender 中的可靠安全解决方案，以便在攻击面上更好地保护企业。
 metadata:
-  title: Microsoft 365 Defender文档
-  description: 了解解决方案中可靠的安全Microsoft 365 Defender，以便你可以跨攻击面更好地保护企业。
+  title: Microsoft 365 Defender 文档
+  description: 了解 Microsoft 365 Defender 中的可靠安全解决方案，以便在攻击面上更好地保护企业。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -16,7 +16,7 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: 473a0b6ca9641c12c7ae9b8d9aeba1e0e9d477d8
   ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 12/30/2021
   ms.locfileid: "61645164"
@@ -41,7 +41,7 @@ landingContent:
     links:
     - text: 创建试用实验室
       url: eval-overview.md
-    - text: 在生产中运行试验项目
+    - text: 在生产环境中运行试点项目
       url: eval-overview.md
 - title: 入门
   linkLists:
@@ -71,9 +71,9 @@ landingContent:
       url: ../office-365-security/defender-for-office-365.md
     - text: Microsoft Defender for Office 365 服务说明
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-    - text: Microsoft Defender for Office 365 in Microsoft 365 Defender
+    - text: Microsoft 365 Defender 中的 Microsoft Defender for Office 365
       url: microsoft-365-security-center-mdo.md
-    - text: 重定向 Microsoft Defender for Office 365 Microsoft 365 Defender
+    - text: 在 Microsoft 365 Defender 中重定向 Microsoft Defender for Office 365
       url: microsoft-365-security-mdo-redirection.md
 - title: Microsoft Defender for Endpoint
   linkLists:
@@ -83,15 +83,15 @@ landingContent:
       url: ../defender-endpoint/microsoft-defender-endpoint.md
     - text: Microsoft 365 Defender 中的 Defender for Endpoint
       url: microsoft-365-security-center-mde.md
-    - text: 重定向 Defender for Endpoint in Microsoft 365 Defender
+    - text: 在 Microsoft 365 Defender 中重定向 Defender for Endpoint
       url: ../defender/microsoft-365-security-mde-redirection.md
 - title: Microsoft Defender for Cloud Apps
   linkLists:
   - linkListType: overview
     links:
-    - text: 什么是 Microsoft Defender 云应用？
+    - text: 什么是 Microsoft Defender for Cloud Apps？
       url: /cloud-app-security/what-is-cloud-app-security
-    - text: Microsoft Defender 云应用入门
+    - text: Microsoft Defender for Cloud Apps 入门
       url: /cloud-app-security/getting-started-with-cloud-app-security
 - title: 管理事件和警报
   linkLists:

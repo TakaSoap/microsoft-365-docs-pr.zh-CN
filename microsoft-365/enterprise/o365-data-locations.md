@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定 Microsoft 365 客户数据在全球范围内的存储位置
-ms.openlocfilehash: 4240521579331c0d4aed329b952d0a560291df45
-ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+ms.openlocfilehash: c88eceadf6c00d165b0ac032fab19596abec49e1
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62487247"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525468"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客户数据的存储位置
 
@@ -47,7 +47,7 @@ ms.locfileid: "62487247"
 
 ### <a name="how-does-microsoft-define-data"></a>Microsoft 如何定义数据？
 
-在 Microsoft 信任中心上查看我们对[不同数据类型的定义](https://go.microsoft.com/fwlink/p/?linkid=864390)。 在 [Microsoft 联机服务条款](https://go.microsoft.com/fwlink/p/?linkid=862403)中，Microsoft 对客户数据/你的数据作出了合同承诺。 我们将核心客户数据称为客户数据，根据 [Microsoft 联机服务条款](https://go.microsoft.com/fwlink/p/?linkid=862403)，我们承诺仅在你所在的区域内静态存储该客户数据。
+在 Microsoft 信任中心上查看我们对[不同数据类型的定义](https://go.microsoft.com/fwlink/p/?linkid=864390)。 在[隐私和安全条款](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all)中，Microsoft 对客户数据/你的数据作出了合同承诺。 我们将核心客户数据称为客户数据，根据 [隐私和安全条款](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all)，我们承诺仅在你所在的区域内静态存储该客户数据。
 
 ### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>数据中心的确切地址在哪里？
 

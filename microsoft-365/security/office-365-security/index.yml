@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft Defender for Office 365文档
-summary: 了解 Defender for Office 365中用于更好地保护电子邮件和协作工具的稳固安全解决方案。
+title: Microsoft Defender for Office 365 文档
+summary: 了解 Defender for Office 365 中可靠的安全解决方案，以更好地保护电子邮件和协作工具。
 metadata:
-  title: Microsoft Defender for Office 365安全文档
-  description: 了解 Defender for Office 365中用于更好地保护电子邮件和协作工具的稳固安全解决方案。
+  title: Microsoft Defender for Office 365 安全文档
+  description: 了解 Defender for Office 365 中可靠的安全解决方案，以更好地保护电子邮件和协作工具。
   services: office-365-security-compliance
   ms.prod: m365-security
   ms.technology: mdo
@@ -16,28 +16,28 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: c132c68ba56dedd7ae38ba4c922f815f316bb062
   ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 12/30/2021
   ms.locfileid: "61645188"
 landingContent:
-- title: Defender for Office 365 & Exchange Online Protection
+- title: Defender for Office 365 和 Exchange Online Protection
   linkLists:
   - linkListType: overview
     links:
     - text: Office 365 安全性概览
       url: overview.md
-    - text: 在 EOP 和 Defender for Office 365 中设置预设Office 365
+    - text: 在 EOP 和 Defender for Office 365 中使用预设安全策略进行设置
       url: preset-security-policies.md
-- title: Defender for Office 365
+- title: Defender for Office 365 入门
   linkLists:
   - linkListType: get-started
     links:
     - text: 抵御威胁
       url: protect-against-threats.md
-    - text: 在 EOP 和 Microsoft Defender for Office 365
+    - text: 在 EOP 和 Microsoft Defender for Office 365 中预设安全策略
       url: preset-security-policies.md
-    - text: Microsoft Defender for Office 365
+    - text: Microsoft Defender for Office 365 中的新增功能
       url: whats-new-in-defender-for-office-365.md
 - title: 评估 Defender for Office 365
   linkLists:
@@ -45,7 +45,7 @@ landingContent:
     links:
     - text: 评估 Defender for Office 365
       url: office-365-evaluation.md
-    - text: 切换到Exchange Online Protection
+    - text: 切换到 Exchange Online Protection
       url: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
 - title: 设置电子邮件身份验证保护
   linkLists:
@@ -63,7 +63,7 @@ landingContent:
     links:
     - text: Exchange Online Protection 概述
       url: exchange-online-protection-overview.md
-    - text: EOP 和 Microsoft Defender for Office 365安全设置的建议设置
+    - text: 用于设置 EOP 和 Microsoft Defender for Office 365 安全性的建议设置
       url: recommended-settings-for-eop-and-office365.md
 - title: 防御
   linkLists:
@@ -71,7 +71,7 @@ landingContent:
     links:
     - text: 配置 Microsoft 365 租户以提高安全性
       url: tenant-wide-setup-for-increased-security.md
-    - text: EOP 和 Defender for Office 365
+    - text: EOP 和 Defender for Office 365 中的配置分析器
       url: configuration-analyzer-for-security-policies.md
     - text: 通过攻击模拟培训获得见解
       url: attack-simulation-training-insights.md
@@ -89,11 +89,11 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 威胁资源管理器中的视图和实时检测
+    - text: 威胁资源管理器和实时检测中的视图
       url: threat-explorer-views.md
     - text: Microsoft Defender for Office 365 中的市场活动视图
       url: campaigns.md
-    - text: 调查在邮件中传递的恶意Office 365
+    - text: 调查在 Office 365 中投递的恶意电子邮件
       url: investigate-malicious-email-that-was-delivered.md
     - text: 查看 Defender for Office 365 报告
       url: view-reports-for-mdo.md
@@ -109,11 +109,11 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 修正邮件中传递的恶意Office 365
+    - text: 修正在 Office 365 中传递的恶意电子邮件
       url: remediate-malicious-email-delivered-office-365.md
-    - text: 响应遭到入侵的电子邮件帐户
+    - text: 响应遭到被盗用的电子邮件帐户
       url: responding-to-a-compromised-email-account.md
-    - text: 修正Outlook和自定义窗体注入攻击
+    - text: 修正 Outlook 规则和自定义窗体注入攻击
       url: detect-and-remediate-outlook-rules-forms-attack.md
     - text: 提交误报/漏报
       url: admin-submission.md
@@ -121,9 +121,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: AIR 自动调查和响应 (AIR) 在 Defender for Office 365
+    - text: 自动调查和响应 (AIR) 在 Defender for Office 365 中的工作原理
       url: automated-investigation-response-office.md
-    - text: 入门 Defender for Office 365 中的 AIR 进行Office 365
+    - text: Defender for Office 365 中的 AIR 入门
       url: office-365-air.md
-    - text: 使用 AIR 处理遭到入侵的用户帐户
+    - text: 通过 AIR 解决被盗用的用户帐户
       url: address-compromised-users-quickly.md

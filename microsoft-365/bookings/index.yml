@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft Bookings
-summary: 了解如何设置 Microsoft Bookings 以在约会的基础上为客户提供服务。
+summary: 了解如何设置 Microsoft Bookings 以根据约会向客户提供服务。
 brand: m365
 metadata:
   title: Microsoft Bookings
-  description: 了解如何设置 Microsoft Bookings 以在约会的基础上为客户提供服务。
+  description: 了解如何设置 Microsoft Bookings 以根据约会向客户提供服务。
   ms.service: bookings
   ms.topic: hub-page
   author: dmaguire
@@ -16,20 +16,20 @@ additionalContent:
   sections:
     - items:
         - title: 什么是 Microsoft Bookings？
-          summary: 使用基于 Web 的预订日历和应用安排和管理约会，包括Outlook集成和自动通知电子邮件。
+          summary: 使用基于 Web 的预订日历和应用计划和管理约会，包括员工的 Outlook 集成和自动通知电子邮件。
           url: bookings-overview.md
         - title: 输入商业信息
-          summary: 在 Microsoft Bookings 中输入创建"关于我们"页面，包括公司名称、地址、电话号码、网站 URL、徽标和营业时间。
+          summary: 输入创建“关于我们”页面，包括 Microsoft Bookings 中的企业名称、地址、电话号码、网站 URL、徽标和营业时间。
           url: enter-business-information.md
         - title: 应用 Bookings 应用
           summary: 更改颜色主题并设置面向外部客户的预订页面的外观。
           url: customize-booking-page.md
         - title: 向 Bookings 添加员工
-          summary: 创建员工列表并管理员工详细信息，例如姓名、电话号码和电子邮件地址。
+          summary: 创建员工列表并管理员工成员详细信息，例如姓名、电话号码和电子邮件地址。
           url: add-staff.md
-        - title: 安排公司关闭、休假和休假时间
-          summary: 从 Bookings 日历安排办公室关闭和员工请假，以便员工在指定的时间标记为不进行预订。
+        - title: 安排停业、休假以及假期时间
+          summary: 在 Bookings 日历中安排办公室关闭和员工休假，以便在指定时间内将员工标记为无法进行预订。
           url: schedule-closures-time-off-vacation.md
         - title: Microsoft Bookings 中的员工工作时间
-          summary: 在 Microsoft Bookings 中设置员工工作时间和可用性。
+          summary: 在 Microsoft Bookings 中设置员工的工作时间和状态。
           url: employee-hours.md

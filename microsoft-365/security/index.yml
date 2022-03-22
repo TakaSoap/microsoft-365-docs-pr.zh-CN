@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft 365 安全中心文档
-summary: Microsoft 365 Defender门户将多个安全技术联合在一个全面的管理控制台中，并增强保护企业。
+summary: Microsoft 365 安全中心将多种安全技术融合在一个全面的管理控制台中，并通过增强功能保护你的企业。
 metadata:
   title: Microsoft 365 安全中心文档
   description: 了解 Microsoft Defender for Endpoint - 它如何保护终结点免遭网络威胁，并提供修正威胁的安全操作团队的功能。
@@ -15,7 +15,7 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: 199f3005de41d8b97b6ae110740d687d5d4692e9
   ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 11/19/2021
   ms.locfileid: "61106415"
@@ -68,7 +68,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 什么是 Microsoft Defender 云？
+    - text: 什么是 Microsoft Defender for Cloud？
       url: /azure/security-center/security-center-intro
     - text: 支持的功能
       url: /azure/security-center/security-center-services
@@ -76,9 +76,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 什么是 Microsoft Defender 云应用？
+    - text: 什么是 Microsoft Defender for Cloud Apps？
       url: /cloud-app-security/what-is-cloud-app-security
-    - text: Microsoft Defender 云应用入门
+    - text: Microsoft Defender for Cloud Apps 入门
       url: /cloud-app-security/getting-started-with-cloud-app-security
 - title: 安全管理
   linkLists:

@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint 文档
 summary: Microsoft Defender for Endpoint 是一个统一的平台，可用于预防性保护、入侵后检测、自动调查和响应。
 metadata:
   title: Microsoft Defender for Endpoint 文档
-  description: 了解 Microsoft Defender for Endpoint，并最大限度增强内置安全性功能，保护设备、检测恶意活动并修正威胁#必需；显示在搜索结果中的文章说明。 < 160 个字符。
+  description: 了解 Microsoft Defender for Endpoint，并最大限度增强内置安全性功能，以保护设备、检测恶意活动和修正威胁#必需；显示在搜索结果中的文章说明。< 160 个字符。
   services: office-365-security-compliance
   ms.prod: m365-security
   ms.technology: mde
@@ -16,7 +16,7 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: d141c9f8b6109bd55bd64e5839db552fc13588de
   ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 12/30/2021
   ms.locfileid: "61643026"
@@ -27,7 +27,7 @@ landingContent:
     links:
     - text: 什么是 Microsoft Defender for Endpoint？
       url: microsoft-defender-endpoint.md
-    - text: 什么是终结点计划 1 的 Defender？
+    - text: 什么是 Defender for Endpoint 计划 1？
       url: defender-endpoint-plan-1.md
     - text: Compare Defender for Endpoint Plan 1 到计划 2
       url: defender-endpoint-plan-1-2.md
@@ -35,7 +35,7 @@ landingContent:
     links:
     - text: Microsoft Defender for Endpoint 中的新增功能
       url: whats-new-in-microsoft-defender-endpoint.md
-    - text: 宣布推出适用于终结点的 Microsoft Defender 计划 1
+    - text: Microsoft Defender for Endpoint 计划 1 公告
       url: defender-endpoint-plan-1.md
   - linkListType: video
     links:
@@ -55,7 +55,7 @@ landingContent:
       url: deployment-phases.md
     - text: 载入支持的设备
       url: onboard-configure.md
-    - text: 为终结点计划 1 设置和配置 Defender
+    - text: 设置和配置 Defender for Endpoint 计划 1
       url: mde-p1-setup-configuration.md
   - linkListType: how-to-guide
     links:

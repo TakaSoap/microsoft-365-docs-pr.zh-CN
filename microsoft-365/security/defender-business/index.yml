@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft Defender 商业版
-summary: 从 2022 年 3 月 1 开始，Microsoft Defender for Business 包含在 Microsoft 365 商业高级版。 作为独立订阅的 Defender for Business 目前处于预览阶段，将逐步向在 注册的客户和 IT 合作伙伴推出 https://aka.ms/mdb-preview。
+summary: 从 2022 年 3 月 1 日起，Microsoft Defender 商业版将随 Microsoft 365 商业高级版一起提供。 作为独立订阅的 Defender 商业版目前处于预览状态，并将逐步向注册 https://aka.ms/mdb-preview 的客户和 IT 合作伙伴推出。
 metadata:
-  title: Microsoft Defender for Business 文档
-  description: 获取 Microsoft Defender for Business 的概述和设置信息
+  title: Microsoft Defender 商业版文档
+  description: 获取 Microsoft Defender 商业版的概述和安装信息
   ms.prod: 365-security
   ms.technology: mdb
   ms.topic: landing-page
@@ -17,7 +17,7 @@ metadata:
   ms.date: 03/10/2022
   ms.openlocfilehash: eb00a4fc76315360c789afacad4b77da3d28c323
   ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 03/12/2022
   ms.locfileid: "63450740"
@@ -26,43 +26,43 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 什么是 Defender for Business？
+    - text: 什么是 Defender 商业版？
       url: mdb-overview.md
     - text: 简化的配置过程
       url: mdb-simplified-configuration.md
-    - text: 比较中小型企业计划
+    - text: 比较面向中小型企业的计划
       url: compare-mdb-m365-plans.md
-    - text: 与 Microsoft 365 Lighthouse
+    - text: 与 Microsoft 365 Lighthouse 集成
       url: mdb-lighthouse-integration.md
-- title: 开始行动
+- title: 入门
   linkLists:
   - linkListType: get-started
     links:
-    - text: 获取 Defender for Business
+    - text: 获取 Defender 商业版
       url: get-defender-business.md
     - text: 使用安装向导
       url: mdb-use-wizard.md
     - text: 导航门户
       url: mdb-get-started.md
-    - text: 查看威胁&漏洞管理仪表板
+    - text: 查看“威胁和漏洞管理”仪表板
       url: mdb-view-tvm-dashboard.md
-    - text: 尝试教程和模拟
+    - text: 试用教程和模拟
       url: mdb-tutorials.md
-- title: 设置和配置
+- title: 设置并配置
   linkLists:
   - linkListType: deploy
     links:
     - text: 设置概述
       url: mdb-setup-configuration.md
-    - text: 步骤 1 - 查看要求
+    - text: 第 1 步 - 查看要求
       url: mdb-requirements.md
-    - text: 步骤 2 - 分配角色和权限
+    - text: 第 2 步 - 分配角色和权限
       url: mdb-roles-permissions.md
-    - text: 步骤 3 - 设置电子邮件通知
+    - text: 第 3 步 - 设置电子邮件通知
       url: mdb-email-notifications.md
-    - text: 步骤 4 - 载入设备
+    - text: 第 4 步 - 载入设备
       url: mdb-onboard-devices.md
-    - text: 步骤 5 - 配置安全策略
+    - text: 第 5 步 - 配置安全策略
       url: mdb-view-edit-policies.md
 - title: 查看和响应威胁
   linkLists:
@@ -74,7 +74,7 @@ landingContent:
       url: mdb-respond-mitigate-threats.md
     - text: 查看修正操作
       url: mdb-review-remediation-actions.md
-    - text: 查看和使用报告
+    - text: 查看和使用报表
       url: mdb-reports.md
 - title: 管理安全策略
   linkLists:
@@ -106,7 +106,7 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: 如何获取帮助或联系支持人员
+    - text: 如何获取帮助或联系客户服务
       url: mdb-get-help.md
     - text: 常见问题解答
       url: mdb-faq.yml

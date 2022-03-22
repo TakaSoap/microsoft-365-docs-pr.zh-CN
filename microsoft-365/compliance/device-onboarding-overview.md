@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 将Windows 10和 Windows 11 设备载入Microsoft 365
-ms.openlocfilehash: 4e2e94dcb8b366a5ffda651b910a611ce9e921a1
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: dc2324f9ab8105d51730071f84397c8648c9a9de
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327201"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525053"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>将Windows 10和 Windows 11 设备载入Microsoft 365概述
 
@@ -109,7 +109,7 @@ Microsoft 365终结点 DLP 允许监视Windows 10或 Windows 11 设备，并检�
 
 必须先启用设备监视功能并载入终结点，然后才能监视和保护设备上的敏感项目。 这两项操作都在 Microsoft 365 合规门户中完成。
 
-当你想载入尚未载入的设备时，你需要下载适当的脚本并将其部署到那些设备上。 按照下面的设备载入过程进行操作。
+当你想载入尚未载入的设备时，你需要下载相应的脚本并将其部署到那些设备上。按照载入设备程序进行操作。
 
 已载入到 [Microsoft Defender for Endpoint](/windows/security/threat-protection/) 的设备将显示在“托管设备”列表中。
 
@@ -128,7 +128,7 @@ Microsoft 365终结点 DLP 允许监视Windows 10或 Windows 11 设备，并检�
 3. 选择“**设备管理**”，以打开“**设备**”列表。 
 
 > [!NOTE]
-> 如果以前部署了 Microsoft Defender for Endpoint，则在该过程中载入的所有设备都将列在 **设备** 列表中。 无需再次载入它们。
+> 如果以前部署了 Microsoft Defender for Endpoint，则在该过程中载入的所有设备都将列在 **设备** 列表中。无需再次载入它们。
 
 4. 选择“**载入**”以开始载入流程。
 
