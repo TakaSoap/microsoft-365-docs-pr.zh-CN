@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365 文档
-summary: 为你的企业或组织查找 Microsoft 365 入门所需的解决方案、方案和资源。
+summary: 为你的企业或组织查找 Microsoft 365 入门所需的解决方案、方案和资源。 Microsoft 365 包括 Teams 和 SharePoint 等服务，以及 Microsoft 365 应用，如 Outlook、Word、Excel 和 PowerPoint。
 brand: m365
 metadata:
   title: Microsoft 365 文档
-  description: 为你的企业或组织查找 Microsoft 365 入门所需的解决方案、方案和资源。
+  description: 为你的企业或组织查找 Microsoft 365 入门所需的解决方案、使用场景和资源。
   ms.service: o365-solutions
   ms.topic: hub-page
   ms.collection: m365-security-compliance
@@ -185,8 +185,8 @@ additionalContent:
               url: /DeployOffice/plan-microsoft-365-apps
             - text: Office for Mac
               url: /DeployOffice/mac
-            - text: Office 2019
-              url: /DeployOffice/office2019
+            - text: Office LTSC 2021
+              url: /DeployOffice/ltsc2021/overview
             - text: 更多 >
               url: /DeployOffice
         - title: SharePoint

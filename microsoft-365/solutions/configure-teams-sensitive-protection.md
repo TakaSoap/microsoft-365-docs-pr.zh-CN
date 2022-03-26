@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: 了解如何部署具有敏感数据保护的团队。
-ms.openlocfilehash: 42124881ac795c54288dee46e70dc1d5eccef3e3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 51e4c3b13d1a54e4edcfd9926ae246dde7d7e3e4
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314065"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712690"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>配置具有敏感数据保护的团队
 
@@ -57,7 +57,7 @@ ms.locfileid: "63314065"
 
 对于敏感级别的保护，我们将使用敏感度标签对团队进行分类。 此标签还可用于分类此团队或其他团队，或者其他文件位置（如 SharePoint 或 OneDrive）中的单个文件。 
 
-首先，必须为 Teams 启用敏感度标签。 有关详细信息，请参阅[使用敏感度标签保护 Microsoft Teams、Office 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)。
+首先，必须为 Teams 启用敏感度标签。 有关详细信息，请参阅 [使用敏感度标签保护 Microsoft Teams、Office 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 如果已在组织中部署了敏感度标签，请考虑此标签与总体标签策略的匹配情况。 可根据需要更改名称或设置以满足组织的需求。
 
@@ -109,6 +109,10 @@ ms.locfileid: "63314065"
 
 还可以使用“[团队策略](/MicrosoftTeams/teams-policies)”来控制谁可以创建专用频道。
 
+## <a name="shared-channel-settings"></a>共享频道设置
+
+[共享频道](/MicrosoftTeams/shared-channels) 没有团队级别的设置。 在 Teams 管理中心和 Azure AD 中配置的共享频道设置适用于所有团队，而无需考虑敏感度。
+
 ## <a name="sharepoint-settings"></a>SharePoint 设置
 
 每次使用敏感标签创建新团队时，都需要在 SharePoint 中执行两步操作：
@@ -120,7 +124,7 @@ ms.locfileid: "63314065"
 
 更新网站默认共享链接类型
 
-1. 打开 SharePoint 管理中心，在“**网站**”下，选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**活动网站**</a>。
+1. 打开 SharePoint 管理中心，在“**网站**”下，选择 <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">“**活动网站**”</a>。
 1. 选择与团队关联的网站。
 1. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
 1. 在“默认共享链接类型”下，清除“**与组织级别设置相同**”复选框，然后选择“**特定人员(仅用户指定的人员)**”。
@@ -128,13 +132,11 @@ ms.locfileid: "63314065"
 
 若要将脚本作为团队创建过程的一部分进行编写，可使用 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 和 `-DefaultSharingLinkType Direct` 参数，将默认共享链接更改为 *特定人员*。
 
-#### <a name="private-channels"></a>专用频道
-
-如果向团队添加私人频道，则每个私人频道都会使用默认共享设置创建新的 SharePoint 网站。 这些网站在 SharePoint 管理中心中不可见，因此必须使用 Set-SPOSite PowerShell cmdlet 来更新来宾共享设置。
+请注意，如果向团队添加专用或共享频道，则每个频道都会使用默认共享设置创建新的 SharePoint 网站。 可以通过选择与团队关联的网站，在 SharePoint 管理中心内更新它们。
 
 ### <a name="site-sharing-settings"></a>网站共享设置
 
-为了帮助确保不与非团队成员共享 SharePoint 网站，我们限制为仅允许所有者进行此类共享。
+为了确保不与非团队成员共享 SharePoint 网站，我们将此类共享限制为所有者。 这仅对与团队一起创建的 SharePoint 网站是必需的。 无法在团队或频道外部共享作为专用或共享频道一部分创建的其他网站。
 
 配置仅限所有者的网站共享
 1. 在 Teams 中，导航至要更新团队的“**常规**”标签。
@@ -145,6 +147,6 @@ ms.locfileid: "63314065"
 6. 在“**共享权限**”下，选择选择“**网站所有者和成员以及拥有编辑权限的人员可共享文件和文件夹，但只有网站所有者才可共享网站**”，然后单击“**保存**”。
 
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [创建和配置敏感度标签及其策略](../compliance/create-sensitivity-labels.md)

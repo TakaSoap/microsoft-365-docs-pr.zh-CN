@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可在保留策略或保留标签策略中配置的设置，以保留想要的内容并删除不想要的内容。
-ms.openlocfilehash: 2fd9f2655b13d8c9ac829108d3563a6a4322f3bc
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 3b2833b2b6293845379f9f5aeffd3bd46610e2a8
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449241"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63713066"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的通用设置
 
@@ -59,7 +59,7 @@ ms.locfileid: "63449241"
 |:-----|:-----|
 |**用户** - 适用于:  <br/> - Exchange 电子邮件 <br/> - OneDrive 帐户 <br/> - Teams 聊天 <br/> - Teams 专用频道消息 <br/> - Yammer 用户消息| 名字 <br/> 姓 <br/>显示名称 <br/> 职务 <br/> 部门 <br/> 办公室 <br/>街道地址 <br/> 市/县 <br/>省/市/自治区 <br/>邮政编码 <br/> 国家或地区 <br/> 电子邮件地址 <br/> 别名 <br/> Exchange 自定义特性: CustomAttribute1 - CustomAttribute15|
 |**SharePoint 网站** - 适用于:  <br/> - SharePoint 网站 <br/> - OneDrive 帐户 |网站 URL <br/>网站名称 <br/> SharePoint 自定义属性: RefinableString00 - RefinableString99 |
-|**Microsoft 365 组** - 适用于:  <br/> - Microsoft 365 组 <br/> - Teams 频道消息 <br/> - Yammer 社区消息 |名称 <br/> 显示名称 <br/> 说明 <br/> 电子邮件地址 <br/> 别名 <br/> Exchange 自定义特性: CustomAttribute1 - CustomAttribute15 |
+|**Microsoft 365 组** - 适用于:  <br/> - Microsoft 365 组 <br/> - Teams 频道消息（标准和共享） <br/> - Yammer 社区消息 |名称 <br/> 显示名称 <br/> 说明 <br/> 电子邮件地址 <br/> 别名 <br/> Exchange 自定义特性: CustomAttribute1 - CustomAttribute15 |
 
 网站的属性名称基于 SharePoint 网站托管属性。 有关自定义属性的信息，请参阅 [使用自定义 SharePoint 网站属性通过自适应策略作用域应用 Microsoft 365 保留](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970)。
 
@@ -374,7 +374,7 @@ ms.locfileid: "63449241"
 
 - 对于将保留的消息存储在邮箱中的 Exchange、Teams 和 Yammer，请参阅 [Exchange Online 限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)并启用[自动扩展归档](autoexpanding-archiving.md)。
     
-    在短时间内大量电子邮件被用户删除或从策略设置中自动删除的极端情况下，可能还需要将 Exchange 配置为更频繁地将项目从用户主邮箱中的“可恢复的项目”文件夹移动到存档邮箱中的“可恢复的项目”文件夹。 有关分步说明，请参阅[为置于保留状态的邮箱增加可恢复项目的配额](increase-the-recoverable-quota-for-mailboxes-on-hold.md)。
+    在短时间内大量电子邮件由用户删除或从策略设置中自动删除的极端情况下，可能还需要将 Exchange 配置为更频繁地将项目从用户主邮箱中的“可恢复项目”文件夹移动到存档邮箱中的“可恢复项目”文件夹。要获取分步说明，请参阅 [增加保留邮箱的可恢复项目配额](increase-the-recoverable-quota-for-mailboxes-on-hold.md)。
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>删除超过特定年限的内容
 

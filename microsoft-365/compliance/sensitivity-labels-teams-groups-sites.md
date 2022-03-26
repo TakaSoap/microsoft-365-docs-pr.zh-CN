@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: 46daf3ecd4c918196fa7a50f8e8869bdd54c945e
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: b5eb295e83e2a87a538201fe58c221f3f9400f97
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504825"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714908"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -57,6 +57,9 @@ ms.locfileid: "63504825"
 为容器启用并配置敏感度标签后，用户还可查看敏感度标签并将其应用于 Microsoft 团队网站、Microsoft 365 组和 SharePoint 网站。例如，当根据 SharePoint 创建新的团队网站时：
 
 ![从 SharePoint 中创建团队网站时使用的敏感度标签。](../media/sensitivity-labels-new-team-site.png)
+
+> [!NOTE]
+> 容器的敏感度标签支持 [Teams 共享通道](/MicrosoftTeams/shared-channels)，目前处于预览状态。 如果团队有任何共享频道，则会自动从其父团队继承敏感度标签设置，并且该标签不能删除或替换为其他标签。
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>如何为容器启用敏感度标签和同步标签
 

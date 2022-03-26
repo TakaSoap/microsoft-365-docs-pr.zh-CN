@@ -45,7 +45,7 @@
           href: manage-devices-with-intune-configuration-profiles.md
         - name: 步骤 6. 监视设备风险和对安全基线的符合性
           href: manage-devices-with-intune-monitor-risk.md
-        - name: 步骤 7. 使用信息保护功能实现数据丢失防护（DLP）
+        - name: 步骤 7. 使用信息保护功能实现数据丢失防护 (DLP)
           href: manage-devices-with-intune-dlp-mip.md
     - name: 与 Microsoft 365 建立安全协作
       items:
@@ -67,7 +67,9 @@
           items:
             - name: 外部共享概述
               href: collaborate-with-people-outside-your-organization.md
-            - name: 配置方案
+            - name: 计划外部协作
+              href: plan-external-collaboration.md
+            - name: 配置
               items:
                 - name: 协作处理文档
                   href: collaborate-on-documents.md
@@ -75,18 +77,32 @@
                   href: collaborate-in-site.md
                 - name: 团队协作
                   href: collaborate-as-team.md
+                - name: 在频道中协作
+                  href: collaborate-teams-direct-connect.md
+                - name: 启用与所有组织的共享频道
+                  href: allow-direct-connect-with-all-organizations.md
                 - name: 创建 B2B Extranet
                   href: b2b-extranet.md
-                - name: 限制共享
-                  href: microsoft-365-limit-sharing.md
-            - name: 安全方案
+                - name: 信任来自其他组织的条件访问
+                  href: trust-conditional-access-from-other-organizations.md
+            - name: 限制共享
               items:
-                - name: 未经身份验证的共享
-                  href: best-practices-anonymous-sharing.md
+                - name: 限制可邀请来宾的人员
+                  href: limit-who-can-invite-guests.md
+                - name: 限制组织可以邀请的人员
+                  href: limit-invitations-from-specific-organization.md
+                - name: 将来宾共享限制为特定组织
+                  href: limit-guest-sharing-to-specific-organization.md
+                - name: 限制用户可以成为来宾的组织
+                  href: limit-organizations-where-users-have-guest-accounts.md
                 - name: 限制意外公开
                   href: share-limit-accidental-exposure.md
-                - name: 保护来宾共享环境
-                  href: create-secure-guest-sharing-environment.md
+                - name: 限制共享
+                  href: microsoft-365-limit-sharing.md
+            - name: 保护来宾共享环境
+              href: create-secure-guest-sharing-environment.md
+            - name: 未经身份验证的共享
+              href: best-practices-anonymous-sharing.md
             - name: 来宾共享参考
               href: microsoft-365-guest-settings.md
     - name: 为 Microsoft 365 租户部署勒索软件保护
@@ -147,11 +163,11 @@
                   href: ../admin/add-users/remove-former-employee-step-1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: 步骤 2. 保存前员工的邮箱的内容
                   href: ../admin/add-users/remove-former-employee-step-2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: 步骤 3. 擦除并阻止以前员工的移动设备
+                - name: 步骤 3. 擦除并阻止前员工的移动设备
                   href: ../admin/add-users/remove-former-employee-step-3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: 步骤 4. 将前员工的电子邮件转发给其他员工或转换为共享邮箱
                   href: ../admin/add-users/remove-former-employee-step-4.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: 步骤 5. 授予其他员工对 OneDrive 和 Outlook 数据的访问权限
+                - name: 步骤 5. 允许其他员工访问 OneDrive 和 Outlook 数据
                   href: ../admin/add-users/remove-former-employee-step-5.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: 步骤 6. 删除前员工的 Microsoft 365 许可
                   href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e21d2904ec2afdcd57b69267f99af6a0726dca56
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cdd368e7e78458067b9f363d41f7931ac5a2c0cd
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314625"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754211"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -50,7 +50,7 @@ ms.locfileid: "63314625"
 
 ## <a name="recommended-actions-preview"></a>预览 (建议) 
 
-建议的操作可帮助组织快速入门，并能够最快速地使用内部风险管理功能。 建议操作 **包含在"** 概述"页上，有助于指导你完成配置和部署策略的步骤，并针对从策略匹配生成警报的用户操作执行调查操作。
+建议的操作可帮助组织快速获得内部风险管理。 建议操作 **包含在"概述** "页上，可指导您完成配置和部署策略的步骤。
 
 ![内部风险管理推荐操作。](../media/insider-risk-recommended-actions.png)
 
@@ -62,9 +62,6 @@ ms.locfileid: "63314625"
 - **扫描潜在内部风险**：运行分析扫描，发现组织中的潜在内部风险。评估结果后，查看要设置的建议策略。
 - **向其他人分配权限**：如果其他团队成员将负责管理内部风险功能，则需要将其分配给相应的角色组。
 - **创建第** 一个策略：若要接收有关可能存在风险的活动的警报，必须基于预定义模板设置策略，这些模板定义要检测和调查的用户活动。
-- **查看其活动评分** 的用户：用户仪表板允许您查看当前为其活动分配风险评分的用户，无论该活动是否达到阈值以生成警报。
-- **查看警报**：在用户触发事件发生后，策略开始为检测到的活动分配风险评分。 如果风险评分达到策略阈值，你将看到一个警报，其中包含为该用户评分的所有活动的详细细目。
-- **调查案例**：当需要进一步调查以识别潜在内部风险时，从警报手动创建案例。 每个案例的范围都为一个用户，并且可以将该用户的多个警报添加到现有案例或新案例。
 
 此体验中包含的每个建议操作都有四个属性：
 

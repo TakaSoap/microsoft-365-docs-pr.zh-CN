@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解在安全文件中设置安全文件协作和共享Teams以基于数据的敏感度来保护数据。
-ms.openlocfilehash: 4bf18635b0c345e18c1ed5db8c7072ca6225e33c
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: db1ad7d6d5c62775c696da89c3d771114d48e67e
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064279"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714944"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>设置安全文件共享和协作与Microsoft Teams
 
@@ -70,7 +70,7 @@ ms.locfileid: "61064279"
 |---|---|---|
 |Microsoft Defender for Office 365|保险箱 SPO、OneDrive 和 Teams 的附件;保险箱文档;保险箱链接Teams|Microsoft 365 E1、E3 和 E5|
 |SharePoint|网站和文件共享策略、网站共享权限、共享链接、访问请求、网站来宾共享设置|Microsoft 365 E1、E3 和 E5|
-|Microsoft Teams|来宾访问、私人团队、私人频道|Microsoft 365 E1、E3 和 E5|
+|Microsoft Teams|来宾访问、私人团队、私人频道、共享频道|Microsoft 365 E1、E3 和 E5|
 |Microsoft 365 合规中心|敏感度标签|Microsoft 365 E3 和 E5|
 
 ## <a name="collaboration-governance-framework-for-teams-and-microsoft-365"></a>Teams 和 Microsoft 365 的协作管理框架
@@ -83,13 +83,13 @@ Microsoft 365提供了许多用于管理协作解决方案的选项。 我们建
 
 ![三种保护级别的图形Teams。](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
-这些层 *（基线*、 *敏感* 和高度 *敏感* ）逐渐增加保护，以帮助防止过度共享和潜在的信息泄露，如下表所示。
+这些层（*基线*、敏感和高度 *敏感*）逐渐增加保护，以帮助防止过度共享和潜在的信息泄露，如下表所示。
 
 |-|基线层|敏感层|高度敏感的层|
 |---|---|---|---|
 |公共团队或私人团队|两者皆可|Private|Private|
 |未经身份验证的共享|Blocked|Blocked|Blocked|
-|文件共享|Allowed|允许|只有团队所有者才能共享。|
+|文件共享|允许|Allowed|只有团队所有者才能共享。|
 |团队成员资格|任何人都可以加入公共团队。<br>加入私人团队需要团队所有者批准。|需要团队所有者批准才能加入。|需要团队所有者批准才能加入。|
 |文档加密|||与敏感度标签一起提供|
 |来宾共享|允许|允许或阻止|允许或阻止|
@@ -102,7 +102,7 @@ Microsoft 365提供了许多用于管理协作解决方案的选项。 我们建
 - 对于 *敏感和**高度敏感的* 层，配置敏感度标签以对团队进行分类，并控制来宾共享和从非托管设备访问
 - 对于 *高度敏感的* 层，配置敏感度标签以加密应用它的文档
 
-从基线层开始，然后根据需要添加使用敏感和高度 *敏感* 层的团队，以帮助保护组织中的信息。  请参阅以下资源以开始：
+从基线层开始，然后根据需要添加使用敏感和高度 *敏感* 层的团队，以帮助保护组织中的信息。 请参阅以下资源以开始：
 
 - [配置具有基线保护的团队](configure-teams-baseline-protection.md)
 - [配置具有敏感数据保护的团队](configure-teams-sensitive-protection.md)
@@ -112,13 +112,14 @@ Microsoft 365提供了许多用于管理协作解决方案的选项。 我们建
 
 ### <a name="sharing-with-people-outside-your-organization"></a>与组织外部人员共享
 
-你可能需要 [与组织外部人员共享任何敏感度的信息](collaborate-with-people-outside-your-organization.md)。 这包括与单个人员共享单个文档，到与大型合作伙伴组织或世界各地的供应商就主要项目进行协作。 在Microsoft 365中，可以轻松完成此范围的外部共享，并提供适当的安全措施来帮助保护敏感信息。
+你可能需要 [与组织外部人员共享任何敏感度信息](collaborate-with-people-outside-your-organization.md)。 这包括与单个人员共享单个文档，到与大型合作伙伴组织或世界各地的供应商就主要项目进行协作。 在Microsoft 365中，可以轻松完成此范围的外部共享，并提供适当的安全措施来帮助保护敏感信息。
 
 这些资源将帮助您开始设置环境以与组织外部人员进行协作：
 
 - [协作处理文档](collaborate-on-documents.md) 以共享文件夹的单个文件。
 - [在网站中协作](collaborate-in-site.md)，与网站中的来宾SharePoint协作。
 - [作为团队协作](collaborate-as-team.md) ，与团队中的来宾协作。
+- [通过渠道与外部参与者协作](/microsoft-365/solutions/collaborate-teams-direct-connect) ，以在共享频道中与组织外部人员协作。
 
 根据所共享信息的敏感度，您可以添加安全措施以帮助防止过度共享。 这些资源将帮助您设置组织所需的保护：
 
@@ -126,11 +127,11 @@ Microsoft 365提供了许多用于管理协作解决方案的选项。 我们建
 - [在与组织外人员共享文件时限制意外公开信息](share-limit-accidental-exposure.md)
 - [创建安全的来宾共享环境](create-secure-guest-sharing-environment.md)
 
-如果你与合作伙伴组织有一个主要项目，可以使用 Azure 权利管理来管理为该项目设置的团队中的来自该组织的来宾。 有关详细信息[，请参阅使用托管来宾创建 B2B Extranet。](b2b-extranet.md)
+如果你与合作伙伴组织有一个主要项目，可以使用共享频道或 [Azure 权利](b2b-extranet.md)管理来管理组织外部需要协作的人。[](/microsoft-365/solutions/collaborate-teams-direct-connect)
 
 ## <a name="training-for-administrators"></a>管理员培训
 
-Microsoft Learn 中的这些培训模块可帮助你了解 Teams 和 SharePoint 中的协作、治理和标识SharePoint。
+Microsoft Learn 中的这些培训模块可帮助你了解 Teams 和 SharePoint 中的协作、管理和标识功能。
 
 ### <a name="teams"></a>Teams
 
@@ -154,7 +155,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Teams 和 SharePoint 
 
 |培训：|使用 Microsoft 365 保护企业信息|
 |---|---|
-|![Teams信息保护培训图标。](../media/protect-enterprise-information-microsoft-365.svg)|保护和保证组织的信息安全以往任何时候都更具挑战性。 使用 Microsoft 365 保护企业信息学习路径介绍如何防止敏感信息被意外过度分享或滥用，如何发现和分类数据，如何使用敏感度标签保护数据，以及如何同时监视和分析敏感信息以防信息丢失。 此学习路径可帮助你准备Microsoft 365认证：安全管理员关联Microsoft 365认证：Enterprise专家认证。<p>1 小时 - Learning 路径 - 5 个模块|
+|![Teams信息保护培训图标。](../media/protect-enterprise-information-microsoft-365.svg)|保护和保障组织的信息比以往任何时候都更具挑战性。使用 Microsoft 365 保护企业信息 的学习路径讨论如何保护敏感信息不会意外地过度共享或滥用，如何发现和分类数据，如何用敏感标签保护它，以及如何同时监测和分析敏感信息以防止其丢失。该学习路径可以帮助准备参加 Microsoft 365 认证: 安全管理员助理 和 Microsoft 365 认证: 企业管理专家 认证。<p>1 小时 - Learning 路径 - 5 个模块|
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/m365-security-info-overview/introduction/)
@@ -163,7 +164,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Teams 和 SharePoint 
 
 |培训：|使用 Azure Active Directory 提供标识和访问保护|
 |---|---|
-|![标识和访问培训图标。](../media/protect-identity-and-access-with-microsoft-365.svg)|标识和访问学习路径涵盖了最新的身份和访问技术、用于加强身份验证的工具以及组织内有关身份保护的指南。 Microsoft 访问和身份技术使你能够保护组织的身份（无论是本地身份还是在云中），并使用户能够从任何位置安全地工作。 此学习途径可帮助你准备 Microsoft 365 认证：安全管理员关联与Microsoft 365 认证：企业管理专家认证。<p>2 小时 52 分钟 - Learning 路径 - 6 个模块|
+|![标识和访问培训图标。](../media/protect-identity-and-access-with-microsoft-365.svg)|标识和访问学习路径涵盖了最新的身份和访问技术、用于加强身份验证的工具以及组织内有关身份保护的指南。 Microsoft 访问和身份技术使你能够保护组织的身份（无论是本地身份还是在云中），并使用户能够从任何位置安全地工作。 此学习途径可帮助你准备 Microsoft 365 认证：安全管理员关联与Microsoft 365 认证：企业管理专家认证。<p>2 小时 52 分钟 - Learning路径 - 6 个模块|
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/m365-identity-overview/introduction/)
@@ -175,12 +176,12 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Teams 和 SharePoint 
 |Teams|SharePoint|
 |---|---|
 |![设置和自定义团队培训图标。](../media/set-up-customize-team-training.png)<br>**[设置和自定义团队](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint共享和同步培训图标](../media/sharepoint-share-sync-training.png)<br>**[共享和同步](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
-|![Teams上传和查找文件培训图标。](../media/smc-teams-upload-find-files-training.png)<br>**[Upload并查找文件](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
+|![Teams上载和查找文件培训图标。](../media/smc-teams-upload-find-files-training.png)<br>**[Upload并查找文件](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
 |![在团队和频道中协作图标。](../media/teams-collaborate-channels-training.png)<br>**[在团队和频道中协作](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**||
 
 ## <a name="illustrations"></a>插图
 
-这些插图将帮助您了解组和团队与 Microsoft 365 中其他服务的交互方式，以及哪些治理和合规性功能可帮助您在组织中管理这些服务。
+这些插图将帮助您了解组和团队与组织中其他服务Microsoft 365以及哪些治理和合规性功能可帮助您在组织中管理这些服务。
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>面向 IT 架构师的 Microsoft 365 中的组
 
@@ -202,8 +203,8 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 准备好部署此解决方案后，请继续执行以下步骤：
 
-1. 配置[三种不同保护层以用于Teams。](configure-teams-three-tiers-protection.md)
-2. 配置用于 [与组织外部人员共享任何敏感度信息的设置](collaborate-with-people-outside-your-organization.md)。
+1. 配置[三种不同保护层以用于Teams](configure-teams-three-tiers-protection.md)。
+2. 配置设置 [，以与组织外部人员共享任何敏感度信息](collaborate-with-people-outside-your-organization.md)。
 
 ## <a name="see-also"></a>另请参阅
 

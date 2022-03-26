@@ -1,5 +1,5 @@
 ---
-title: 调查警报Microsoft 365 Defender
+title: 在 Microsoft 365 Defender 中调查警报
 description: 调查跨设备、用户和邮箱看到的警报。
 keywords: 事件， 警报， 调查， 分析， 响应， 关联， 攻击， 计算机， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365
 ms.prod: m365-security
@@ -21,25 +21,29 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: ce75fff753acfa9d5e183154e09805b04d7523da
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 41583a89abc3418799263dc46643fbe06a07e818
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321382"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712831"
 ---
-# <a name="investigate-alerts-in-microsoft-365-defender"></a>调查警报Microsoft 365 Defender
+# <a name="investigate-alerts-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中调查警报
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **适用于：**
+
 - Microsoft 365 Defender
+
+>[!Note]
+>本文介绍安全警报中的Microsoft 365 Defender。 但是，当用户在活动邮箱中执行特定活动时，可以使用活动提醒向自己或其他管理员Microsoft 365。 有关详细信息，请参阅创建[活动警报 - Microsoft 365合规性|Microsoft Docs](../../compliance/create-activity-alerts.md)。
 
 警报是所有事件的基础，指示环境中出现恶意或可疑事件。 警报通常是更广泛的攻击的一部分，并提供事件线索。
 
-在Microsoft 365 Defender中，相关警报聚合在一起以形成[事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。 
+在Microsoft 365 Defender中，相关警报聚合在一起以形成[事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。
 
-警报 **队列** 显示当前警报集。 在快速启动 > 门户时，你可以从事件&警报>警报"进入<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">警报Microsoft 365 Defender队列</a>。
+警报 **队列** 显示当前警报集。 在快速启动 > 门户时，你可以从事件&警报>警报"进入[警报Microsoft 365 Defender队列](https://go.microsoft.com/fwlink/p/?linkid=2077139)。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="报告门户中的警报队列Microsoft 365 Defender示例":::
 

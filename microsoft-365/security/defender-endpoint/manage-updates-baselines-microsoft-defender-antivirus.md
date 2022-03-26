@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/16/2022
+ms.date: 03/22/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: c6454704c6cabfd5136eeec565c3c57dca044250
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: c334a3829d28ad7b65f0f0db3bd9599570db8337
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526890"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716181"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
@@ -668,6 +668,21 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 有关详细信息，请参阅[适用于操作系统安装映像Windows Microsoft Defender 更新](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
 
 <details>
+<summary>20220321.1</summary>
+
+&ensp;程序包版本： **20220321.1**<br/>
+&ensp;平台版本： **4.18.2202.4**<br/>
+&ensp;引擎版本： **1.1.19000.8**<br/>
+&ensp;签名版本： **1.351.337.0**<br/>
+
+### <a name="fixes"></a>修补程序
+- 无
+
+### <a name="additional-information"></a>其他信息
+- 无
+
+<br/>
+</details><details>
 <summary>20220305.1</summary>
 
 &ensp;程序包版本： **20220305.1**<br/>

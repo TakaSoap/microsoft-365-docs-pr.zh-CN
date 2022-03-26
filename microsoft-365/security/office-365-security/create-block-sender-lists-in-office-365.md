@@ -8,18 +8,19 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 search.appverid:
 - MET150s
 description: 管理员可以了解在 EOP 服务中阻止入站邮件的可用Exchange Online Protection (首选) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71f6312f160a445c184a52f96493360af8b9a360
-ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
+ms.openlocfilehash: bf47fd7723bc1fe9cdef1b57cf16e1948112e749
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62896083"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675639"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>在 EOP 中创建阻止的发件人列表
 
@@ -34,7 +35,7 @@ ms.locfileid: "62896083"
 
 阻止发件人的最佳方法因影响范围而异。 对于单个用户，正确的解决方案可能是Outlook发件人。 对于许多用户，其他选项之一更为合适。 以下选项按影响范围和广度进行排名。 该列表从窄到宽，但请阅读具体 _内容_ ，了解完整建议。
 
-1. Outlook每个邮箱 (中存储的"阻止的发件人"列表中的"阻止的发件人") 
+1. Outlook每个邮箱 (中存储的"阻止的发件人"列表中的"阻止的发件人) 
 
 2. 阻止的发件人列表或阻止的域 (反垃圾邮件策略) 
 
@@ -51,7 +52,7 @@ ms.locfileid: "62896083"
 
 标准 SMTP 电子邮件由 _邮件信封_ 和邮件内容组成。 邮件信封包含在 SMTP 服务器之间传输和传递邮件所需的信息。 邮件内容包含邮件头字段（统称为 _邮件头_）和邮件正文。 RFC 5321 中介绍了邮件信封，RFC 5322 中介绍了邮件头。 收件人永远不会看到实际的邮件信封，因为它是由邮件传输过程生成的，实际上并不是邮件的一部分。
 
-- 地址 `5321.MailFrom` (**MAIL FROM** 地址、P1 发件人或信封发件人) 是在邮件的 SMTP 传输中使用的电子邮件地址。 虽然发件人可以指定不同的"返回路径"电子邮件地址，但此电子邮件地址通常记录在邮件头 (的"返回路径"头字段中) 。 如果邮件无法传递，则它是未送达报告的收件人 (NDR 或退回邮件) 。
+- 地址 `5321.MailFrom` (**MAIL FROM** 地址、P1 发件人或信封发件人) 是在邮件的 SMTP 传输中使用的电子邮件地址。 虽然发件人可以指定不同的"返回路径"电子邮件地址，但此电子邮件地址通常记录在邮件头 (的"返回路径"标头字段中) 。 如果邮件无法传递，则它是未送达报告的收件人 (NDR 或退回邮件) 。
 
 - The `5322.From` (also known as the **From** address or P2 sender) is the email address in the **From** header field， and is the sender's email address that's displayed in email clients.
 
@@ -70,7 +71,7 @@ EOP 中的反垃圾邮件策略中阻止的发件人列表和阻止的域列表�
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>使用阻止的发件人列表或阻止的域列表
 
-当多个用户受到影响时，范围会更大，因此反垃圾邮件策略中的下一个最佳选项是阻止发件人列表或阻止的域列表。 来自列表上发件人的邮件标记为"垃圾邮件" ( "高可信度 **垃圾邮件) "**，并且对邮件执行为"垃圾邮件"筛选器裁定配置的操作。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+当多个用户受到影响时，范围会更大，因此反垃圾邮件策略中的下一个最佳选项是阻止发件人列表或阻止的域列表。 来自列表上发件人的邮件标记为"垃圾邮件" ( "高可信度 **垃圾邮件) "**，并且对邮件执行为"垃圾邮件筛选器"裁定配置的操作。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 这些列表的最大限制为大约 1000 个条目。
 
@@ -87,4 +88,4 @@ EOP 中的反垃圾邮件策略中阻止的发件人列表和阻止的域列表�
 
 当无法使用其他选项之一阻止发件人时，只有在连接筛选器策略中才应该使用 IP 阻止列表。 有关详细信息，请参阅[配置连接筛选器策略](configure-the-connection-filter-policy.md)。 将阻止的 IP 数量保持在最少很重要，因此不建议阻止整个 IP _地址范围。_
 
-您尤其应避免添加属于消费者服务 (（例如 outlook.com) 或共享基础结构）的 IP 地址范围，并确保在常规维护中查看阻止的 IP 地址列表。
+您尤其应避免添加属于使用者服务 (（例如 outlook.com) 或共享基础结构）的 IP 地址范围，并确保在常规维护中查看阻止的 IP 地址列表。

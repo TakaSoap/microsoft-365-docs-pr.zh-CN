@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9cc2b77c9983fecc6e58be515fe316c6c5239fef
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 35bd11ac88859c3e587771552a02097a2f090a44
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317775"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712875"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>检测具有通信合规性的通道信号
 
@@ -33,7 +33,14 @@ ms.locfileid: "63317775"
 
 可以扫描公共和专用Microsoft Teams和单个聊天中的聊天通信。 如果用户分配到通信合规性策略，Microsoft Teams范围，则会自动监视用户作为成员的所有Microsoft Teams聊天通信。 Microsoft Teams预定义的策略模板自动包含此范围，并且默认情况下会在自定义策略模板中选中此范围。 Teams匹配通信合规性策略条件的聊天最多可能需要 48 小时才能处理。
 
-对于私人聊天和私人频道，通信合规性策略支持新式附件扫描。 新式附件是一些OneDrive或[](/onedrive/plan-onedrive-enterprise#modern-attachments)[SharePoint网站中的](/sharepoint/dev/solution-guidance/modern-experience-customizations)源Teams文件。 自动从这些附件中提取文本，以自动处理文本，并可能与活动通信合规性策略条件和分类器匹配。 新式附件检测和处理不需要任何其他配置。 仅为匹配策略条件的附件提取文本。 即使附件还具有策略匹配项，也不为包含策略匹配项的邮件的附件提取文本。
+对于私人聊天和专用频道，通信合规性策略支持 [共享频道和](/MicrosoftTeams/shared-channels) 新式附件扫描。 自动处理共享Teams中的共享频道支持，无需其他通信合规性配置更改。 下表总结了与组和用户共享Teams通信合规性行为：
+
+|**应用场景**|**通信合规性行为**|
+|:-----------|:------------------------------------|
+| **与内部团队共享频道** | 通信合规性策略适用于范围内用户和共享频道中的所有消息 |
+| **与外部团队共享频道** | 通信合规性策略适用于内部组织的共享通道中的内部范围内用户和邮件 |
+
+新式附件是一些OneDrive或[](/onedrive/plan-onedrive-enterprise#modern-attachments)[SharePoint网站中的](/sharepoint/dev/solution-guidance/modern-experience-customizations)源Teams文件。 自动从这些附件中提取文本，以自动处理文本，并可能与活动通信合规性策略条件和分类器匹配。 新式附件检测和处理不需要任何其他配置。 仅为匹配策略条件的附件提取文本。 即使附件还具有策略匹配项，也不为包含策略匹配项的邮件的附件提取文本。
 
 以下文件类型支持新式附件扫描：
 

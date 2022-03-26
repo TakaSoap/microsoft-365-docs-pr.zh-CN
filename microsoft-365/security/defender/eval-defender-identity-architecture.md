@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e534211008ea560642ba306844b9223170ac0140
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: de49205fe20cd5685279c0a5f9d138147f24bb8d
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323215"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754155"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>查看 Microsoft Defender for Identity 的体系结构要求和关键概念
 
@@ -46,13 +46,13 @@ Defender for Identity 可保护本地 Active Directory 用户和/或已同步到
 
 下图说明了 Defender for Identity 的基准体系结构。 
 
-![Microsoft Defender for Identity 的体系结构。](../../media/defender/m365-defender-identity-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-architecture.png" alt-text="Microsoft Defender 标识的标识体系结构" lightbox="../../media/defender/m365-defender-identity-architecture.png":::
 
 在此图中：
+
 - 安装在 AD 域控制器上的传感器分析日志和网络流量，并将其发送到 Microsoft Defender for Identity 进行分析和报告。
 -  当 Azure AD 配置为使用图示中的 (虚线)  (，传感器还可以分析 Active Directory 联合身份验证服务 (AD FS) 。 
 - Microsoft Defender for Identity 将信号共享到 Microsoft 365 Defender，以扩展 XDR (响应) 。
-
 
 可以在以下服务器上直接安装 Defender for Identity 传感器：
 
@@ -66,7 +66,6 @@ Defender for Identity 可保护本地 Active Directory 用户和/或已同步到
 
 下表确定了评估、配置和部署 Microsoft Defender for Identity 时必须了解的重要概念。
 
-
 |概念  |说明 |更多信息  |
 |---------|---------|---------|
 | 受监视的活动 | Defender for Identity 监视从组织内部生成的信号，以检测可疑或恶意活动，并帮助你确定每个潜在威胁的有效性，以便你可以有效地进行会审和响应。  |  [Microsoft Defender for Identity 受监视的活动](/defender-for-identity/monitored-activities)       |
@@ -78,8 +77,6 @@ Defender for Identity 可保护本地 Active Directory 用户和/或已同步到
 | 角色组    | Defender for Identity 提供基于角色的组和委派访问权限，以根据组织的特定安全性和合规性需求（包括管理员、用户和查看者）保护数据。        |  [Microsoft Defender for Identity 角色组](/defender-for-identity/role-groups)       |
 | 管理门户    |  除了安全Microsoft 365 Defender，Defender for Identity 门户还可用于监视和响应可疑活动。      | [使用Microsoft Defender for Identity 门户](/defender-for-identity/workspace-portal)        |
 | Microsoft Defender for Cloud Apps 集成   | Microsoft Defender for Cloud Apps 与 Microsoft Defender for Identity 集成，以跨混合环境（云应用和本地环境） (UEBA) 提供用户实体行为分析   | Microsoft Defender for Identity 集成  |
-| | | |
-
 
 ## <a name="review-prerequisites"></a>查看先决条件
 

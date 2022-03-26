@@ -3,7 +3,7 @@
     - name: 概述
       href: move-from-google-workspace-overview.md
     - name: 注册 Microsoft 365
-      href: /admin-overview/sign-up-for-office-365?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+      href: ../admin-overview/sign-up-for-office-365.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
     - name: 为 Google 迁移设置 Microsoft 365
       href: set-up-microsoft-365-forgoogle.md
     - name: 为 Windows 设备设置安全策略

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: ac57859d7f27b22060b88189e79d386791535c9e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a7498685709dfc24feae61453057d51025ee9168
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319387"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716290"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -117,6 +117,9 @@ ms.locfileid: "63319387"
 - Teams 专用频道消息
 - yammer 社区消息
 - Yammer 用户消息
+
+> [!NOTE]
+> Teams 频道消息现在包括 [共享频道](/MicrosoftTeams/shared-channels)（当前处于预览状态）以及标准频道。
 
 可以非常高效地将一个策略应用于多个位置，也可以应用于特定的位置或用户。
 

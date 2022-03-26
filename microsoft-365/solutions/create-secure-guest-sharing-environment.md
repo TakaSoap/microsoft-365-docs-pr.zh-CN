@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: 了解可用于在 Microsoft 365 中创建安全来宾共享环境的选项，提供来宾访问以改进协作。
-ms.openlocfilehash: 97b9c3c26fce137ad4471bbf080d4b7340c8b622
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 13190f2dba0f2cb1f4817a1a831b8d78359e1b81
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323789"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715132"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 
@@ -68,7 +68,7 @@ ms.locfileid: "63323789"
 
 ### <a name="more-information"></a>更多信息
 
-[规划 Azure Active Directory 多重身份验证部署](/azure/active-directory/authentication/howto-mfa-getstarted)
+[规划 Azure AD 多重身份验证部署](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>设置来宾的使用条款
 
@@ -143,7 +143,7 @@ ms.locfileid: "63323789"
 13. 键入“**评审姓名**”然后查看设置。
 14. 单击“**创建**”。
 
-请务必注意，对于 SharePoint 和 OneDrive 位置，在检测到敏感信息后，无论是否为共享文档，都将为所有外部用户立即主动阻止文档，而内部用户将继续有权访问文档。
+请务必注意，对于 SharePoint 和 OneDrive 位置，在检测到敏感信息后，无论文档是否为共享文档，都将为所有来宾立即主动阻止文档，而内部用户将继续有权访问文档。
 
 ### <a name="more-information"></a>更多信息
 
@@ -283,7 +283,10 @@ ms.locfileid: "63323789"
 13. 选择测试选项，然后单击“**下一步**”。
 14. 单击“**提交**”，然后单击“**完成**”。
 
-请务必注意，如果来宾是整个网站或团队的成员，则此策略不会删除访问权限。 如果计划将网站或团队中的高度机密文档与来宾成员进行共享，请考虑使用 [Teams 中的专用频道](https://support.microsoft.com/office/de3e20b0-7494-439c-b7e5-75899ebe6a0e)并仅允许组织成员在专用频道中共享。
+请务必注意，如果来宾是整个网站或团队的成员，则此策略不会删除访问权限。 如果计划在含有来宾成员的网站或团队中包含高度敏感的文档，请考虑以下选项：
+
+- 使用 [专用频道](/MicrosoftTeams/private-channels) 并且仅允许组织成员使用专用频道。
+- 使用 [共享频道](/MicrosoftTeams/shared-channels) 与组织外部的人员进行协作，同时仅允许你所在组织内部人员参与团队。
 
 ## <a name="additional-options"></a>其他选项
 

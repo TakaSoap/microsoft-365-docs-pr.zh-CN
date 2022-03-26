@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e14f2d5e35585cf5b0edfe433084fa7c8a1d5280
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 3d1ec22febe0c0072a4eed2a9b8fece3687762d7
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221060"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754279"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>使用 go hunt 快速搜寻实体或事件信息
 
@@ -38,25 +38,27 @@ ms.locfileid: "61221060"
 
 借助 *智能寻线* 操作，可以使用强大的基于查询的高级搜寻功能快速调查事件 [和各种实体](advanced-hunting-overview.md) 类型。 此操作将自动运行高级搜寻查询，以查找有关所选事件或实体的信息。
 
-每当 *显示事件* 或实体详细信息时，Defender for Cloud 的各个部分都提供搜寻操作。 例如，你可以从以下 *部分使用去* 寻线：
+The *go hunt* action is available in various sections of the Defender for Cloud. 显示事件或实体详细信息后，此操作可供查看。 例如，您可以使用以下 *部分中的"* 去寻线"选项：
 
-- 在 [事件页面中](investigate-incidents.md#summary)，你可以查看有关用户、设备和与事件关联的许多其他实体的详细信息。 选择实体时，您将获得其他信息以及可针对该实体执行的各种操作。 在下面的示例中，选择一个邮箱，其中显示有关邮箱的详细信息，以及用于搜寻有关邮箱的详细信息的选项。
+- 在 [事件页面中](investigate-incidents.md#summary)，你可以查看有关用户、设备和与事件关联的许多其他实体的详细信息。 选择实体时，您将获得其他信息以及可针对该实体执行的各种操作。 在下面的示例中，选择了一个邮箱，其中显示有关邮箱的详细信息以及用于搜寻邮箱的详细信息的选项。
 
-    :::image type="content" source="../../media/go-hunt-1-incident.png" alt-text="The **Mailboxes** page with the **Go hunt** option in the Microsoft 365 Defender portal" lightbox="../../media/go-hunt-1-incident.png":::
+    :::image type="content" source="../../media/go-hunt-1-incident.png" alt-text="The Mailboxes page with the Go hunt option in the Microsoft 365 Defender portal" lightbox="../../media/go-hunt-1-incident.png":::
 
 - 在事件页面中，您还可以访问"证据"选项卡下 **的实体列表。** 选择其中一个实体可提供快速搜寻有关该实体的信息的选项。
 
-    :::image type="content" source="../../media/go-hunt-2-entity.png" alt-text="Microsoft 365 Defender 门户的 **Incident** 页面中的一条证据的&quot;开始Microsoft 365 Defender选项" lightbox="../../media/go-hunt-2-entity.png":::
+    :::image type="content" source="../../media/go-hunt-2-entity.png" alt-text="Microsoft 365 Defender 门户中&quot;事件&quot;页中用于一条证据的&quot;Microsoft 365 Defender选项" lightbox="../../media/go-hunt-2-entity.png":::
 
 
 - 查看设备的时间线时，可以选择时间线中的事件以查看有关该事件的其他信息。 选择事件后，可选择在高级搜寻中搜寻其他相关事件。
 
-    :::image type="content" source="../../media/go-hunt-3-event.png" alt-text="事件页面上的 **日程表** 选项卡上的 **Hunt for related events** 选项Microsoft 365 Defender门户" lightbox="../../media/go-hunt-3-event.png":::
+    :::image type="content" source="../../media/go-hunt-3-event.png" alt-text="门户中&quot;日程表&quot;选项卡中事件页面上的&quot;搜寻相关Microsoft 365 Defender选项" lightbox="../../media/go-hunt-3-event.png":::
 
-选择 **"搜寻** " **或** "搜寻"进行相关事件将传递不同的查询，具体取决于你选择了实体还是事件。
+选择 **"搜寻****"或**"搜寻"进行相关事件将传递不同的查询，具体取决于你选择了实体还是事件。
 
 ## <a name="query-for-entity-information"></a>查询实体信息
-当 *使用寻线* 查询有关用户、设备或任何任何类型的实体的信息时，该查询会检查所有相关架构表，以检查涉及该实体的任何事件。 若要使结果易于管理，查询的范围为过去 30 天内与实体相关且与事件关联的最早活动的时间段。
+您可以使用 *go hunt* 查询有关用户、设备或任何任何类型的实体的信息;查询将检查所有相关架构表，以检查是否有涉及该实体的事件返回信息。 若要使结果易于管理，查询为：
+- 范围为与过去 30 天内涉及实体的最早活动相同的时间段
+- 与事件关联。
 
 下面是设备的去寻线查询示例：
 
@@ -72,7 +74,7 @@ and DeviceName == deviceName
 | take 100
 ```
 ### <a name="supported-entity-types"></a>支持的实体类型
-在选择 *以下实体类型* 之一后，可以使用 go hunt：
+选择以下实体 *类型* 之一后，可以使用"去寻线"选项：
 
 - 文件
 - 电子邮件
@@ -98,7 +100,7 @@ search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEv
 ```
 
 ## <a name="adjust-the-query"></a>调整查询
-在了解查询 [语言之后](advanced-hunting-query-language.md)，可以根据你的偏好调整查询。 例如，您可以调整此行，这确定时间窗口的大小：
+由于对查询语言 [有一定的](advanced-hunting-query-language.md)了解，因此可以根据你的偏好调整查询。 例如，您可以调整此行，这确定时间窗口的大小：
 
 ```kusto
 Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
@@ -109,7 +111,7 @@ Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 - [创建自定义检测规则](custom-detection-rules.md)
 
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender，](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender](m365d-enable.md)，以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤Microsoft 365 Defender Microsoft Defender for Endpoint 中的步骤将高级搜寻[工作流从 Microsoft Defender for Endpoint 移动到其他位置](advanced-hunting-migrate-from-mde.md)。
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

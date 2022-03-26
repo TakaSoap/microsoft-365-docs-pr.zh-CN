@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: 了解如何部署具有高度敏感数据保护的团队。
-ms.openlocfilehash: 053f92f0a3f7551d747c81b13b3832798c7e953c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 02b74d6f2a2e168f07a095207dcdc1bb6785aa8f
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312592"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715204"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>配置具有高度敏感数据保护的团队
 
@@ -62,7 +62,7 @@ ms.locfileid: "63312592"
 
 对于高度敏感级别的保护，我们将使用敏感度标签对团队进行分类。 此标签还可用于分类和解密此团队或其他团队，或者其他文件位置（如 SharePoint 或 OneDrive）中的单个文件。 
 
-首先，必须为 Teams 启用敏感度标签。 有关详细信息，请参阅[使用敏感度标签保护 Microsoft Teams、Office 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)。
+首先，必须为 Teams 启用敏感度标签。 有关详细信息，请参阅 [使用敏感度标签保护 Microsoft Teams、Office 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 如果已在组织中部署了敏感度标签，请考虑此标签与总体标签策略的匹配情况。 可根据需要更改名称或设置以满足组织的需求。
 
@@ -119,6 +119,10 @@ ms.locfileid: "63312592"
 
 还可以使用“[团队策略](/MicrosoftTeams/teams-policies)”来控制谁可以创建专用频道。
 
+## <a name="shared-channel-settings"></a>共享频道设置
+
+[共享频道](/MicrosoftTeams/shared-channels) 没有团队级别的设置。 无论敏感度如何，你在 Teams 管理中心和 Azure AD 中配置的共享频道设置将可供所有团队使用。
+
 ## <a name="sharepoint-settings"></a>SharePoint 设置
 
 每次使用高度敏感标签创建新团队时，都需要在 SharePoint 中执行两步操作：
@@ -134,11 +138,9 @@ ms.locfileid: "63312592"
 1. 选择与团队关联的网站。
 1. 在“**策略**”选项卡上的“**外部共享**”下，选择“**编辑**”。
 1. 在“默认共享链接类型”下，清除“**与组织级别设置相同**”复选框，然后选择“**具有现有访问权限的人员**”。
-1. 选择“保存”。
+1. 选择“**保存**”。
 
-#### <a name="private-channels"></a>专用频道
-
-如果向团队添加私人频道，则每个私人频道都会使用默认共享设置创建新的 SharePoint 网站。 这些网站在 SharePoint 管理中心中不可见，因此必须使用 Set-SPOSite PowerShell cmdlet 来更新来宾共享设置。
+请注意，如果向团队添加专用或共享频道，则每个频道都会使用默认共享设置创建新的 SharePoint 网站。 可以通过选择与团队关联的网站，在 SharePoint 管理中心内更新它们。
 
 ### <a name="site-sharing-settings"></a>网站共享设置
 

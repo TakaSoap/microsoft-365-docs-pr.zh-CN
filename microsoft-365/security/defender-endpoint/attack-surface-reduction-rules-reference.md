@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 5ffbe15fe9fa06e7c06546f9452d6c4f2bddfc39
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 77edaa3d71911bd0594e707996c320285dddabc5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329609"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754123"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻击面减少规则参考
 
@@ -112,7 +112,7 @@ _结束公共预览版：支持的操作系统_
 
 |规则名称 | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |组策略<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  Y |
+|[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  Y  |
 |[阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes) | Y |   | Y | Y  | Y  |
 |[阻止所有Office应用程序创建子进程](#block-all-office-applications-from-creating-child-processes) | Y |   |Y <br><br> CB 1710 | Y  | Y  |
 |[阻止从本地安全Windows (lsass.exe) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y  |   | Y <br><br>CB 1802 | Y  | Y  |
@@ -240,7 +240,7 @@ GUID：`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 此规则阻止Office创建子进程。 Office应用程序包括 Word、Excel、PowerPoint、OneNote 和 Access。
 
-创建恶意子进程是常见的恶意软件策略。 滥用作为Office的恶意软件通常会运行 VBA 宏，并利用代码下载并尝试运行更多有效负载。 但是，某些合法的业务线应用程序也可能出于恶意目的生成子进程;例如生成命令提示符或使用 PowerShell 配置注册表设置。
+创建恶意子进程是常见的恶意软件策略。 滥用作为Office的恶意软件通常会运行 VBA 宏并攻击代码以下载并尝试运行更多有效负载。 但是，某些合法的业务线应用程序也可能出于恶意目的生成子进程;例如生成命令提示符或使用 PowerShell 配置注册表设置。
 
 Intune 名称： `Office apps launching child processes`
 

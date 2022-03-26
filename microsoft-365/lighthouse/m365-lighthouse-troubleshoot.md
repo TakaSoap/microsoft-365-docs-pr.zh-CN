@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (使用) ，Microsoft 365 Lighthouse帮助排查并解决错误消息和问题。
-ms.openlocfilehash: e39eea66222852d8f331aa6bc68b386bea3da763
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 49e6657815ed71476a3dc79d778f7e1fbacfa1f4
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63513028"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775447"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>排查并解决邮件中的问题和Microsoft 365 Lighthouse
 
@@ -53,11 +53,14 @@ ms.locfileid: "63513028"
 
 **原因：** 你的客户租户不符合以下条件：
 
-  - 必须为 Managed Service Provider (MSP) 设置委派的 DAP (或) 委派的 DAP (管理员) 
-  - 必须至少有一个Microsoft 365 商业高级版或Microsoft 365 E3许可证
+  - 必须为 Managed Service Provider (MSP) 设置委派的 DAP () 才能管理客户安全*
+  - 必须至少有一个 Microsoft 365 商业高级版、Microsoft 365 E3 或 Windows 365 商业版许可证
   - 授权用户不能超过 1000 个 
 
-**解决方法：** 下表介绍了需要操作的不同租户状态，并说明了如何解决这些问题。<br><br>
+**解决方法：** 下表介绍了需要操作的不同租户状态，并说明了如何解决这些问题。
+
+*将客户 (到) 需要委派的 DAP 管理员权限。 我们还建议与客户建立粒度委派 (GDAP) ，以实现更安全的委派访问。 虽然 DAP 和 GDAP 共存，但 GDAP 将优先用于这两种模型都适合的客户。 很快，仅具有 GDAP (且没有 DAP) 客户将能够载入 Lighthouse。<br><br>
+
 
 | 状态 | 说明 | 解决方案 |
 |--|--|--|

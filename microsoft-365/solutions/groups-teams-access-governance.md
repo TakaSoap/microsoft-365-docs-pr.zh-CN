@@ -1,5 +1,5 @@
 ---
-title: 管理 Microsoft 365 组、Teams 和 SharePoint
+title: 管理Microsoft 365组、Teams和SharePoint
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -16,14 +16,14 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解管理组、Microsoft 365和Teams中的SharePoint。
-ms.openlocfilehash: e01326093476f341c6c4c75448efbdf8c745779f
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 3f4304a54cd1eae86c98d530e5a4ec4db5f6dc66
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064327"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716159"
 ---
-# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>管理 Microsoft 365 组、Teams 和 SharePoint
+# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>管理Microsoft 365组、Teams和SharePoint
 
 有许多控件使您能够控制用户如何访问组、团队和团队中的SharePoint。 查看这些选项，并考虑它们如何映射到业务需求、数据的敏感度以及用户需要协作的用户范围。
 
@@ -51,9 +51,8 @@ ms.locfileid: "61064327"
 ||根据信息敏感度控制对组、团队或网站的来宾访问。|[使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||关闭共享选项。|[限制 Microsoft 365 中的共享](./microsoft-365-limit-sharing.md)|
 |用户管理|||
-||定期查看团队和组成员身份。|[什么是Azure AD评审？](/azure/active-directory/governance/access-reviews-overview)|
-||自动管理对组和团队的访问。|[什么是Azure AD管理？](/azure/active-directory/governance/entitlement-management-overview)|
-||允许或阻止用户创建私人频道Teams。|[管理频道中私人频道的Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
+||定期查看团队和组成员身份。|[访问Azure AD是什么？](/azure/active-directory/governance/access-reviews-overview)|
+||自动管理对组和团队的访问。|[什么是Azure AD权限管理？](/azure/active-directory/governance/entitlement-management-overview)|
 
 ## <a name="membership"></a>成员身份
 
@@ -61,7 +60,7 @@ ms.locfileid: "61064327"
 
 - [管理专用团队在 Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)
 
-你可以根据某些条件（如部门）动态管理组或团队的成员身份。 在这种情况下，成员和所有者无法邀请人员加入团队。 动态组使用在 Azure Active Directory定义的元数据来控制组的成员。 请确保你使用的元数据已完成且是最新的，因为不正确的元数据可能会导致用户被排除在组外或添加不正确的用户。
+你可以根据某些条件（如部门）动态管理组或团队的成员身份。 在这种情况下，成员和所有者无法邀请人员加入团队。 动态组使用你在 Azure Active Directory 中定义的元数据来控制组的成员。 请确保你使用的元数据已完成且是最新的，因为不正确的元数据可能会导致用户被排除在组外或添加不正确的用户。
 
 - [在动态组中创建或更新Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
 
@@ -72,7 +71,7 @@ SharePoint网站提供除组或团队成员身份外添加所有者、成员和�
 
 ## <a name="conditional-access"></a>条件访问
 
-使用Microsoft 365，您可以要求对组织内外的用户进行多重身份验证。 当系统提示用户进行第二种身份验证时，有许多选项可供选择。 强烈建议您为组织部署多重身份验证：
+使用 Microsoft 365，您可以要求对组织内外的用户进行多重身份验证。 当系统提示用户进行第二种身份验证时，有许多选项可供选择。 强烈建议为组织部署多重身份验证：
 
 - [Azure AD多重身份验证](/azure/active-directory/authentication/concept-mfa-howitworks)
 
@@ -118,7 +117,7 @@ Microsoft 365任何人共享链接允许匿名 *共享文件和文件夹*。 *�
 
 - [将外部共享限制为指定安全组](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)
 
-组和Teams具有允许或拒绝来宾访问的组织级别设置。 虽然可以使用 [Microsoft PowerShell](per-group-guest-access.md)限制来宾访问特定团队或组，但我们建议通过敏感度标签执行此操作。 使用敏感度标签，你可以根据应用的标签自动允许或拒绝来宾访问：
+组和Teams具有允许或拒绝来宾访问的组织级别设置。 虽然可以使用 [Microsoft PowerShell](per-group-guest-access.md) 限制对特定团队或组的来宾访问，但我们建议通过敏感度标签执行此操作。 使用敏感度标签，你可以根据应用的标签自动允许或拒绝来宾访问：
 
 - [使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)
 
@@ -146,7 +145,7 @@ Microsoft 365提供了许多不同的信息共享方法。 如果你有敏感信
 
 随着你的组织中团队的发展，一个好的做法是定期查看团队和组成员身份。 这可能对成员身份发生变化的团队和组、包含敏感信息的团队和组或包含来宾的团队和组特别有用。 请考虑为这些团队和组设置访问评审：
 
-- [什么是Azure AD评审？](/azure/active-directory/governance/access-reviews-overview)
+- [访问Azure AD是什么？](/azure/active-directory/governance/access-reviews-overview)
 
 许多组织与其他组织或重要供应商建立了业务合作关系，他们与之深度协作。 在这些情况下，管理用户和访问资源可能会面临挑战。 请考虑自动执行一些用户管理任务，甚至将其中一些任务转换到合作伙伴组织：
 
@@ -156,7 +155,9 @@ Microsoft 365提供了许多不同的信息共享方法。 如果你有敏感信
 
 - [Microsoft Teams 中的专用频道](/MicrosoftTeams/private-channels)
 
-- [管理频道中私人频道的Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)
+共享频道允许你邀请团队外部或组织外部的人。 根据您的特定业务需求和外部共享策略，您可能需要允许或阻止此功能。
+
+- [共享频道](/MicrosoftTeams/shared-channels)
 
 其他资源：
 

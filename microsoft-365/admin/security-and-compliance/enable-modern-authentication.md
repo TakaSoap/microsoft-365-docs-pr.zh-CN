@@ -1,5 +1,5 @@
 ---
-title: 在 Windows 设备上启用适用于 Office 2013 的新式验证
+title: 在设备上为 Office 2013 Windows新式验证
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -23,91 +23,80 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: 了解如何设置注册表项，为已安装 2013 Microsoft Office新式验证。
-ms.openlocfilehash: c390e3b9858a4d7d8fc37ea5c5e6f1901d5e20fb
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 468658c3b346c7923937ff9595699a20306ed6a9
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525107"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754174"
 ---
-# <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>在 Windows 设备上启用适用于 Office 2013 的新式验证
+# <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>在设备上为 Office 2013 Windows新式验证
 
-若要为安装了 Office 2013 的任何 Windows 设备启用新式验证，需设置特定的注册表项。
-  
-## <a name="enable-modern-authentication-for-office-2013-clients"></a>为 Office 2013 客户端启用新式验证
-
-> [!NOTE]
-> 已为 Office 2016 客户端启用新式验证，无需设置 Office 2016 的注册表项。 
-  
-若要为运行 Windows 且安装了 Microsoft Office 2013 的任何设备（例如笔记本电脑和平板电脑）启用新式验证，需设置以下注册表项。 需要在要启用新式验证的每台设备上设置密钥：
-
-<br>
-
-****
+Microsoft Office Microsoft Windows 2013 支持新式验证。 但是，若要启用它，需要配置以下注册表项：
 
 |注册表项|类型|值|
-|:---|:---:|---:|
+|:---|:---:|:---:|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|1|
 |HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
 |HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
 
-创建或修改以下注册表项以强制Outlook Web 服务（如 EWS 和自动发现）使用较新的身份验证方法。 我们建议用户强制Outlook新式验证。
+> [!NOTE]
+> 2016 或更高版本Office新式验证。 无需为更高版本的注册表项设置这些注册表Office。
 
-1. 退出 Outlook。
+## <a name="enable-modern-authentication-for-office-2013-clients"></a>为 Office 2013 客户端启用新式验证
 
-2. 根据你的注册表版本，使用下列过程之一启动注册表Windows：
+1. 关闭 Outlook。
 
-   - **Windows 10、Windows 8.1 和 Windows 8：** 按 Windows 键 + R 打开 **"运行**"对话框。 键入 *regedit.exe*，然后按 **Enter。**
-   - **Windows 7：****单击"开始**"，*在regedit.exe* 键入"开始"，然后按 **Enter。**
+2. 将以下文本复制并粘贴到记事本：
 
-3. 在注册表编辑器中，找到并单击以下注册表子项：
+   ```text
+   Windows Registry Editor Version 5.00
 
-   ```console
-   HKEY_CURRENT_USER\Software\Microsoft\Exchange\
+   [HKEY_CURRENT_USER\Software\Microsoft\Exchange]
+   "AlwaysUseMSOAuthForAutoDiscover"=dword:00000001
+
+   [HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common]
+
+   [HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity]
+   "EnableADAL"=dword:00000001
+   "Version"=dword:00000001
    ```
 
-4. 如果 *缺少 AlwaysUseMSOAuthForAutoDiscover* 项，请在"编辑"菜单上指向 **"新建** "，然后选择 **"DWORD 值"**。 键入 *AlwaysUseMSOAuthForAutoDiscover*，然后按 **Enter。**
+3. 使用文件扩展名 .reg 保存文件，.txt文件保存在易于您查找的位置。 例如，`C:\Data\Office2013_Enable_ModernAuth.reg`。
 
-5. 右键单击 *AlwaysUseMSOAuthForAutoDiscover*，然后单击修改 **。**
+4. 打开文件资源管理器 (以前称为 Windows Explorer) ，浏览到刚保存的 .reg 文件的位置，然后双击它。
 
-6. 在" **值数据** "框中， **键入 1**，然后单击"确定 **"。**
+5. 在 **出现的用户帐户控制** 对话框中，单击" **是** "以允许应用对设备进行更改。
 
-7. 在注册表编辑器中，找到并单击以下注册表子项：
+6. 在出现的 **注册表编辑器** 警告对话框中，单击" **是** "接受更改。
 
-   ```console
-   HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\
-   ```
+设置注册表项后，可以将 Office 2013 应用设置为将多重身份验证 (MFA) MFA Microsoft 365。 有关详细信息，请参阅 [设置多重身份验证](set-up-multi-factor-authentication.md)。
 
-8. 如果 *EnableADAL 和* *Version* 项已存在，请根据需要修改值，然后退出注册表编辑器。 如果没有，请在"编辑"菜单上指向" **新建** "，然后选择 **"DWORD 值** "以创建缺少的键。 
+如果你当前已登录到任何 Office客户端应用，则需要注销并重新登录，更改生效。 否则，在建立标识之前，MRU 和漫游设置将不可用。
 
-9. 例如，如果 *缺少 EnableADAL* 键，请键入 *EnableADAL*，然后按 **Enter。**
-
-10. 右键单击 *"EnableADAL"*，然后单击"修改 **"。**
-
-11. 在" **值数据** "框中， **键入 1**，然后单击"确定 **"。**
-
-12. 如有必要，请对版本密钥执行相同的过程。 
-
-13. **退出注册表编辑器。**
-
-设置注册表项后，可以将 Office 2013 设备应用设置为将多重身份验证 ([MFA ](set-up-multi-factor-authentication.md)) 与 Microsoft 365。 
-  
-如果当前登录了任何客户端应用，需注销并重新登录以使更改生效。 否则，在建立标识之前，MRU 和漫游设置将不可用。
-  
 ## <a name="disable-modern-authentication-on-devices"></a>在设备上禁用新式验证
 
-若要在设备上禁用新式验证，请在设备上设置以下注册表项：
-
-<br>
-
-****
+在设备上禁用新式验证的过程非常相似，但所需的注册表项较少，需要将其值设置为 0。
 
 |注册表项|类型|值|
-|:---|:---:|---:|
-|HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
+|---|:---:|:---:|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|0|
-   
+|HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
+
+```text
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Exchange]
+"AlwaysUseMSOAuthForAutoDiscover"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity]
+"EnableADAL"=dword:00000000
+```
+
 ## <a name="related-content"></a>相关内容
 
-使用本文Office验证方法登录到 ([2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)) \
-[Outlook提示输入密码，](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)并且不使用新式验证连接到 Office 365 (文章) 
+[使用第二种验证方法登录 Office 2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+
+[Outlook提示输入密码，并且不使用新式验证连接到Office 365](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)

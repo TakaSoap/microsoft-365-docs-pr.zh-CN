@@ -17,12 +17,12 @@ ms.collection:
 description: '详细了解 EOP Exchange Online Protection (中的默认设置) '
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 240cfe9d73f1fb339d38cc0f9ca91e89890022f8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 59f29b0e923bdeb7481a64fb9ba1c3890e2b1369
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196425"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775491"
 ---
 # <a name="secure-by-default-in-office-365"></a>默认情况下，安全Office 365
 
@@ -44,7 +44,7 @@ ms.locfileid: "60196425"
 
 Microsoft 365邮箱的组织Exchange Online EOP Exchange Online Protection (保护) 。 此保护包括：
 
-- 包含可疑恶意软件的电子邮件将自动隔离，并通知收件人。 请参阅 [在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)。
+- 包含可疑恶意软件的电子邮件将自动隔离。 是否向收件人通知隔离的恶意软件邮件由隔离策略和反恶意软件策略中的设置控制。 有关详细信息，请参阅在 [EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)。
 - 标识为高可信度网络钓鱼的电子邮件将按照反垃圾邮件策略操作进行处理。 请参阅 [在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 有关 EOP 详细信息，请参阅Exchange Online Protection[概述](exchange-online-protection-overview.md)。
@@ -54,7 +54,7 @@ Microsoft 365邮箱的组织Exchange Online EOP Exchange Online Protection (保�
 - 允许的发件人列表或允许的域 (反垃圾邮件策略) 
 - Outlook 保险箱发件人
 - IP 允许列表 (连接筛选) 
-- Exchange邮件流规则 (也称为传输规则) 
+- Exchange邮件流规则 (传输规则) 
 
 有关这些替代项详细信息，请参阅创建 [安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
@@ -69,15 +69,15 @@ Microsoft 365邮箱的组织Exchange Online EOP Exchange Online Protection (保�
 
 我们的数据显示，与隔离相比，用户点击垃圾邮件文件夹中邮件中的恶意链接的可能性是 30 倍。 我们的数据还指示， (高可信度网络钓鱼邮件标记为错误) 的误报邮件的误报率非常低，管理员可以通过管理员提交来解决任何误报。
 
-我们还确定反垃圾邮件策略中允许的发件人和允许的域列表保险箱中发件人Outlook过广，导致危害大于好。
+我们还确定反垃圾邮件策略中的允许发件人和允许的域列表和 Outlook 中的保险箱发件人过于广泛，导致危害大于好。
 
 另一方面：作为一项安全服务，我们代表你采取行动，防止你的用户受到威胁。
 
-## <a name="exceptions"></a>例外
+## <a name="exceptions"></a>Exceptions
 
 只应考虑在下列情况下使用替代：
 
-- 网络钓鱼模拟：模拟攻击可以帮助你在真实攻击影响组织之前识别易受攻击的用户。
-- Security/SecOps 邮箱：安全团队用于获取未筛选邮件的专用邮箱 (好和坏) 。 Teams查看它们是否包含恶意内容。
-- 第三方筛选器：当域的 MX 记录不指向域的 MX 记录时，默认情况下Office 365。
-- 误报：你可能希望暂时允许 Microsoft 通过管理员提交分析某些 [邮件](admin-submission.md)。 与所有替代一样，建议它们是临时的。
+- 网络钓鱼模拟：模拟攻击可以帮助你在真实攻击影响组织之前识别易受攻击的用户。 若要阻止筛选网络钓鱼模拟邮件，请参阅在高级传递策略中配置第三 [方网络钓鱼模拟](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy)。
+- Security/SecOps 邮箱：安全团队用于获取未筛选邮件的专用邮箱 (好和坏) 。 Teams查看它们是否包含恶意内容。 有关详细信息，请参阅在高级传递策略中配置 [SecOps 邮箱](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)。
+- 第三方筛选器：默认情况下，安全仅适用于域的 MX 记录设置为 Exchange Online Protection (contoso.mail.protection.outlook.com) 。 如果设置为其他服务或设备，则默认情况下，可以通过传输规则替代 Secure 以绕过所有垃圾邮件筛选。[](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) 当 Microsoft 检测到邮件为高可信度钓鱼邮件时，如果此规则已就位，它们仍将发送到收件箱。 
+- 误报：你可能希望暂时允许 Microsoft 通过管理员提交分析某些 [邮件](admin-submission.md)。 与所有替代一样，建议它们为临时替代。

@@ -6,7 +6,7 @@ ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 合规中心解决方案试用版 playbook。
-ms.openlocfilehash: 0da966fa23b12d4428a42eabbd102ba560c96b5f
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 896e3fe81c74cc2a594ab88807e0b9505fed1a18
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265699"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754244"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>试用版 playbook: Microsoft 365 合规中心解决方案
 
-欢迎使用 Microsoft 365 合规中心解决方案试用版 playbook。 此 playbook 将有助于发现 Microsoft 365 合规中心和安全产品的强大且全面的功能，从而帮助充分利用 90 天的免费试用版。
+欢迎来到 Microsoft 365 合规解决方案使用版剧本。此 playbook 将有助于发现 Microsoft 365 合规中心和安全产品的强大且全面的功能，从而帮助充分利用 90 天的免费试用版。
 
 尝试每个解决方案将有助于做出明智的决策，从而满足组织的合规性需求。
 
@@ -78,7 +78,7 @@ ms.locfileid: "62265699"
 
 1. 在创建审核日志保留策略之前 – 创建策略前 [要了解的关键事项](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)。
 1. [创建审核日志保留策略](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [管理 Microsoft 365 合规中心内的审核日志保留策略](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - “审核保留策略”选项卡(也称为仪表板)上列出了审核日志保留策略。 可使用仪表板查看、编辑和删除审核保留策略。
+1. [管理 Microsoft 365 合规中心内的审核日志保留策略](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - “审核保留策略”选项卡(也称为仪表板)上列出了审核日志保留策略。你可以使用仪表板查看、编辑、删除审核保留策略。
 1. 在 PowerShell 上创建并管理审核日志保留策略 - 还可以使用安全与合规中心 PowerShell 以 [创建并管理审核日志保留策略](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell)。 使用 PowerShell 的一个原因是为 UI 中不可用的记录类型或活动创建策略。
 
 ## <a name="communication-compliance"></a>通信合规性
@@ -98,7 +98,7 @@ ms.locfileid: "62265699"
 > [!TIP]
 > 试用版最佳做法: 在前 30 天内设置
 
-要使用此功能，请启用审核，以便组织可以开始记录组织中的用户和管理员活动。启用此功能时，活动将记录到审核日志，并可在报告中查看。 有关详细信息，请参阅[打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
+要使用此功能，请启用审核，以便组织可以开始记录组织中的用户和管理员活动。启用此功能时，活动将记录到审核日志，并可在报告中查看。若要了解详细信息，请参阅[打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
 ### <a name="step-3-create-a-communication-compliance-policy"></a>步骤 3: [创建通信合规性策略](communication-compliance-policies.md)
 
@@ -236,7 +236,7 @@ ms.locfileid: "62265699"
 
 1. 管理高级电子数据展示 –[了解如何配置高级电子数据展示、使用安全与合规中心以管理案例、在高级电子数据展示中管理工作流以及分析高级电子数据展示搜索结果](/learn/modules/manage-advanced-ediscovery)。
 1. [使用高级电子数据展示的新案例格式创建电子数据展示案例](advanced-ediscovery-new-case-format.md)
-1. [关闭或删除案例](close-or-delete-case.md) - 完成法律案例或调查后，可以关闭或删除案例。 还可以重新打开已关闭的案例。
+1. [关闭或删除案例](close-or-delete-case.md) - 法律案例或调查完成后，可以关闭或删除。还可以重新打开已关闭的案例。
 
 ### <a name="step-3-optional-settings"></a>步骤 3 (可选): 设置
 
@@ -276,7 +276,7 @@ ms.locfileid: "62265699"
 > [!TIP]
 > 试用版最佳做法: 第 1 天
 
-符合条件的客户可以为 Microsoft 信息保护激活默认的标签和策略。 当在试用版中启用默认配置时，为租户配置所有策略大约需要 2 分钟，最多需要 24 小时才可查看这些默认策略的结果。
+符合条件的客户可以为 Microsoft 信息保护激活默认标签和策略。当在试用版中启用默认配置时，为租户配置所有策略大约需要 2 分钟，最多需要 24 小时才可查看这些默认策略的结果。
 
 选择默认配置(点击 1 下)会自动配置以下内容:
 
@@ -316,7 +316,7 @@ ms.locfileid: "62265699"
 
 **检测并修正内部风险**
 
-利用人工智能来帮助快速识别、会审和修正内部风险。 使用来自 Microsoft 365 和 Azure 服务的日志可以定义监视内部风险信号的策略，然后采取修正操作，例如促进用户指导或启动调查。
+利用人工智能来帮助你快速识别、会审、修正内部风险。使用来自 Microsoft 365 和 Azure 服务的日志，可以定义监视内部风险信号的策略，然后采取修正操作，例如提升用户教育或启动调查。
 
 ### <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>步骤 1 (必需): [为内部风险管理启用权限](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
 
@@ -418,6 +418,8 @@ ms.locfileid: "62265699"
 
 [有关合规性管理器高级评估试用版的详细信息](compliance-easy-trials-compliance-manager-assessments.md)。
 
+[试用版 playbook: Microsoft 合规性管理器高级评估](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+
 ### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Microsoft Priva 隐私风险管理和 Microsoft Priva 主体权限请求
 
 **识别并预防隐私风险**
@@ -432,6 +434,6 @@ ms.locfileid: "62265699"
 
 **包含的内容**: 有关产品层列出的 Microsoft 365 合规中心解决方案和功能的完整列表，请查看 [功能矩阵](https://go.microsoft.com/fwlink/?linkid=2139145)。
 
-**Microsoft 安全技术内容库**: 浏览此库以查找与你的需求相关的交互式指南和其他学习内容。 [访问库](/security/content-library)。
+**Microsoft 安全技术内容库**: 浏览此库以查找与你的需求相关的交互式指南和其他学习内容。[访问库](/security)。
 
-**Microsoft 安全资源**: 从反恶意软件到零信任，获取所有满足组织安全需求的相关资源。 [访问资源](/security/business/resources)。
+**Microsoft 安全资源**: 从反恶意软件到零信任，获取所有满足组织安全需求的相关资源。[访问资源](/security/business/resources)。

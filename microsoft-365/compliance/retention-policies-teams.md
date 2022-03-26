@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: d3562126a678e486fd97f3c760841f9ba4de7193
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+ms.openlocfilehash: fc870050b8ef69a908553617d755412d95efa288
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62859285"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714865"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -43,6 +43,9 @@ ms.locfileid: "62859285"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保留和删除包括哪些内容
 
+> [!NOTE]
+> 保留策略现在支持[共享频道](/MicrosoftTeams/shared-channels)，当前处于预览阶段。 任何共享频道都可以从父频道继承保留设置。
+
 可以通过使用 Teams 的保留策略删除 Teams 聊天消息、频道消息、专用频道消息，除了消息中的文本外，以下项目可以因合规性原因而保留。嵌入的图像、表格、超文本链接、到其他 Teams 消息和文件的链接，以及[卡内容](/microsoftteams/platform/task-modules-and-cards/what-are-cards)。 聊天消息和专用频道消息包括对话中所有人员的姓名；频道消息包含团队名称和消息标题（如有提供）。 
 
 当你对 Teams 使用保留策略时，来自 Teams 移动客户端的代码片段、来自 Teams 移动客户端的语音备忘录、缩略图、公告图像以及其他人的图释反应不会保留。
@@ -60,6 +63,7 @@ ms.locfileid: "62859285"
 - **UserMailbox**: 这些邮箱存储基于云的 Teams 用户的消息。
 - **MailUser**: 这些邮箱存储 [本地 Teams 用户](search-cloud-based-mailboxes-for-on-premises-users.md) 的消息。
 - **GroupMailbox**：这些邮箱存储 Teams 标准频道的邮件数据。
+- **SubstrateGroup**：这些邮箱存储 Teams 共享频道的邮件数据。
 
 其他邮箱类型，如用于Teams会议室的RoomMailbox，不支持Teams的保留策略。
 

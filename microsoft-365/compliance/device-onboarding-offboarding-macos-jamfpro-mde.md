@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: '了解如何使用适用于 Endpoint 客户的 JAMF Pro 将 macOS 设备载入和载出到 Microsoft 365 合规性解决方案中， (预览版) '
-ms.openlocfilehash: 7e2109f52590cc4d9ad23700fa4b51a09ae4b5db
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: f260d901f8f02c2c02007b2cc0d49ab9ee57dafd
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526466"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716312"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>使用适用于 Microsoft Defender for Endpoint 客户的 JAMF Pro 将 macOS 设备载入和卸载到合规性解决方案（预览版）
 
@@ -35,11 +35,10 @@ ms.locfileid: "63526466"
 - [内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-- 确保 [macOS 设备已Azure AD连接](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- 确保通过 [JAMF 专业版管理 macOS 设备](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
-- 在 macOS 设备上安装 v95+ Edge 浏览器 
+- 确保你的 [macOS 设备通过 JAMF 专业](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)版进行管理，并通过 JAMF 或 Intune (Azure AD UPN) 标识连接关联。
+- 在 macOS 设备上安装 v95+ Edge 浏览器
 
 ## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>使用 JAMF Microsoft 365将设备载入到合规性Pro
 

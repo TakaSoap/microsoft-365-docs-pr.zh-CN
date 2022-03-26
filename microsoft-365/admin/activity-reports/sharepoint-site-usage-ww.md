@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 获取SharePoint使用率报告，了解用户存储在SharePoint中的文件数、当前使用的文件数以及使用的总存储量。
-ms.openlocfilehash: da857d1814bf0aa27532d3f730d352c6edeb66e9
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: ae25562924f569431b3a6d7eda3099f69cd912b1
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400679"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754225"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365中心中的报告 - SharePoint网站使用情况
 
@@ -80,7 +80,7 @@ ms.locfileid: "63400679"
 |非托管设备策略  | 非托管设备的站点访问策略。  |
 |地理位置  | 网站的地理位置。  |
 |文件  |网站上文件的数量。 |
-|活动文件  | 网站上活动文件的数量。<br/> 注意：如果在报告的指定时段内删除了文件，则报告中显示的活动文件数可能大于网站上当前的文件数。  |
+|活动文件  | 网站上活动文件的数量。 如果文件在指定时间段内被保存、同步、修改或共享，则视为活跃文件。<br/> 注意：如果在报告的指定时段内删除了文件，则报告中显示的活动文件数可能大于网站上当前的文件数。  |
 |存储已 (MB)   |网站上当前使用的存储量。  |
 |存储分配 (MB)   |为网站分配的最大存储量。  |
 |页面视图  |在网站中查看页面次数。  |

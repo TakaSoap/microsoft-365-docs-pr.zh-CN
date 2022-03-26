@@ -21,18 +21,21 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: 了解在 Teams 中设置团队与来宾进行任务、对话及文档协作所必需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: bb6ccf4f3e17192d86675d99072eca8b836973e2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0fd723a86f79f97703eca96c0693882fbc05f13a
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324545"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712897"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
 如果需要在文档、任务和对话中与来宾进行协作，我们建议使用 Microsoft Teams。 Teams 在统一的用户体验中提供了 Office 和 SharePoint 中的所有协作功能，包括持续聊天和一套可定制和可扩展的协作工具。
 
 在本文中，我们将介绍建立一个团队与客人协作所需的 Microsoft 365 配置步骤。 一旦配置客人的访问权限，就可以按照 [Teams 中的“添加来宾到团队”](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f) 中的步骤邀请来宾到团队。
+
+> [!NOTE]
+> [共享频道](collaborate-teams-direct-connect.md) 在与其他 Microsoft 365 组织协作时可提供比来宾帐户更无缝的体验。 通过共享频道，可以使用 Teams 频道与组织外部的人员进行协作，而无需外部参与者登录到你的组织。 我们建议查看 [计划外部协作](plan-external-collaboration.md)，以了解对于任何给定方案，共享频道是否是比与来宾协作更好的选项。
 
 ## <a name="video-demonstration"></a>视频演示
 
@@ -44,7 +47,7 @@ ms.locfileid: "63324545"
 
 Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 外部协作设置](/azure/active-directory/external-identities/delegate-invitations) 管理。 如果在 Azure AD 中禁用或限制来宾共享，此设置将覆盖你在 Microsoft 365 中配置的任何共享设置。
 
-检查 B2B 外部协作设置设置以确保不会阻止与来宾共享。
+检查 B2B 外部协作设置，以确保未阻止与来宾共享。
 
 ![Azure Active Directory 组织关系设置页面的屏幕截图。](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -195,5 +198,3 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 [创建有托管来宾的 B2B 外网](b2b-extranet.md)
 
 [SharePoint 和 OneDrive 与 Azure AD B2B 的集成](/sharepoint/sharepoint-azureb2b-integration-preview)
-
-[从 SharePoint 或 OneDrive 共享时，共享选项呈灰色](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

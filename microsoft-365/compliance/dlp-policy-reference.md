@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP 策略组件和配置参考
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: d94277ac4ee3bd78feecf660e03d60a5720d1b43
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4888569318fd24d25368dc1c923a1efced9f4126
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319415"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675429"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>数据丢失防护策略参考
 
@@ -397,17 +397,54 @@ location 支持的例外条件与所有包含条件都相同，唯一的区别�
 
 - 审核或限制设备上Windows活动
 
-> [!NOTE]
-> 设备提供 **审核活动、****阻止** 活动或阻止 **替代活动** 的选项。
+若要使用这些设置，您必须在 **DLP** 设置和要使用这些选项的策略中配置选项。 有关详细信息 [，请参阅受限制的应用](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) 和应用组。
 
-设备位置提供了许多子 (条件和) 条件。 若要了解更多信息，请参阅 [可以监视并采取措施的终结点活动](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)。 
+设备位置提供了许多子 (条件和) 条件。 若要了解更多信息，请参阅 [可以监视并采取措施的终结点活动](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)。
 
-#### <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
+当您选择审核 **或限制** Windows时，您可以按服务域或浏览器限制用户活动，并按以下操作限定 DLP 采取的操作范围：
+
+- 所有应用
+- 通过定义的受限应用列表
+- Ay a restricted app group (preview) that you define.
+
+##### <a name="service-domain-and-browser-activities"></a>服务域和浏览器活动
+
+配置"允许 **/** 阻止云服务域"和"不允许的浏览器"列表 (请参阅对 [敏感数据) 的](dlp-configure-endpoint-settings.md#browser-and-domain-restrictions-to-sensitive-data)浏览器和域限制，`Audit only``Block with override``Block`以及用户尝试将受保护的文件上载到云服务域或从不允许的浏览器访问它时，可以将策略操作配置为 、 或 活动。
+
+##### <a name="file-activities-for-all-apps"></a>所有应用的文件活动
+
+使用 **"所有应用的文件活动"** 选项，选择" **不限制** 文件活动"或" **将限制应用于特定活动"**。 选择将限制应用于特定活动时，当用户访问 DLP 保护的项目时，将应用您在此处选择的操作。 您可以告诉 DLP、 `Audit only``Block with override`、 `Block` 、 (用户) 操作：
+
+- **复制到剪贴板**
+- **复制到 USB 可移动驱动器** 
+- **复制到网络共享**
+- **Print**
+- **使用不允许的应用复制蓝牙移动**
+- **远程桌面服务**
+
+
+##### <a name="restricted-app-activities"></a>受限制的应用活动  
+
+以前称为"不允许的应用程序"，在要限制的终结点 DLP 设置中定义应用程序列表。 当用户尝试使用列表上的应用访问 DLP 保护的文件时，您可以`Audit only``Block with override`、 或 `Block` 活动。 如果应用是 **受限应用** 组的成员，则重写在受限应用活动中定义的 DLP 操作。 然后应用在受限应用组中定义的操作。
+
+##### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>受限应用组中应用的文件活动 (预览) 
+
+在终结点 DLP 设置中定义受限制的应用组，然后向策略添加受限制的应用组。 向策略添加受限制的应用组时，必须选择以下选项之一：
+
+- 不限制文件活动
+- 将限制应用于所有活动
+- 将限制应用于特定活动
+
+当你选择其中任一个应用限制选项，并且用户尝试使用受限应用组中某个应用访问 DLP `Audit only``Block with override``Block` 保护的文件时，你可以、 或 按活动访问。 您在此处定义的 DLP 操作会覆盖在"受限"应用 **活动和** "文件"活动中为应用 **的所有应用** 定义的操作。
+
+有关详细信息 [，请参阅受限制的应用](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) 和应用组。 
+
+#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Microsoft Defender for Cloud Apps 操作
 
 - 限制对内容的访问或加密Microsoft 365位置
 - 限制第三方应用
 
-#### <a name="on-premises-repositories"></a>本地存储库
+#### <a name="on-premises-repositories-actions"></a>本地存储库操作
 
 - 限制访问或删除本地文件
 
@@ -566,7 +603,7 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 
 ### <a name="user-overrides"></a>用户替代
 
-用户替代的目的是让用户能够绕过 DLP 策略阻止 Exchange、SharePoint、OneDrive 或 Teams 中敏感项的操作，以便他们可以继续工作。 只有在启用了使用策略提示通知 **Office 365** 服务中的用户时，用户替代才启用，因此用户替代与通知和策略提示一起提供。 
+用户覆盖的目的是为用户提供一种以理由绕过 DLP 策略阻止 Exchange、SharePoint、OneDrive 或 Teams 中敏感项目的操作的方法，以便他们可以继续工作。 只有在启用了策略提示Office 365通知服务中的用户时，用户替代才启用，因此用户覆盖与通知和策略提示一起提供。 
 
 ![DLP 策略的用户替代选项](../media/dlp-user-overrides.png)
 
@@ -595,7 +632,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 当项目与规则相匹配时，可向合规负责人（或所选的任何人员）发送包含事件详情的事件报告。 该报告包含有关匹配的项目、匹配规则的实际内容以及上次修改内容的人的姓名的信息。 对于电子邮件，报告还将与 DLP 策略匹配的原始邮件包含为附件。
 
-DLP 将事件信息馈送到其他 Microsoft 365 信息保护服务，如 [Microsoft 365 中的内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)。 为了向内部风险管理获取事件信息，必须将事件报告严重性级别设置为"高 **"**。
+DLP 将事件信息Microsoft 365其他信息保护服务，如 Microsoft 365 中的内部[风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)。 为了向内部风险管理获取事件信息，必须将事件报告严重性级别设置为"高 **"**。
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 
@@ -603,7 +640,7 @@ DLP 将事件信息馈送到其他 Microsoft 365 信息保护服务，如 [Micro
 
 ![每当规则随着时间的推移匹配或聚合到较少的报告中时发送通知](../media/dlp-incident-reports-aggregation.png)
 
-DLP 扫描电子邮件的方式与扫描 SharePoint Online 或 OneDrive for Business 项目的方式不同。 在 SharePoint Online 和 OneDrive for business 中，DLP 可扫描现有项目以及新项目，并在找到匹配项时生成事件报告。 在 Exchange Online 中，DLP 仅扫描新电子邮件，并在存在策略匹配项时生成报告。 DLP ***不会*** 扫描或匹配邮箱或存档中存储的先前存在的电子邮件项目。
+DLP 扫描电子邮件的方式与联机或SharePoint扫描OneDrive for Business不同。 在 SharePoint Online 和 OneDrive for business 中，DLP 可扫描现有项目以及新项目，并在找到匹配项时生成事件报告。 在 Exchange Online 中，DLP 仅扫描新电子邮件，并在存在策略匹配项时生成报告。 DLP ***不会*** 扫描或匹配邮箱或存档中存储的先前存在的电子邮件项目。
 
 ### <a name="additional-options"></a>其他选项
 
