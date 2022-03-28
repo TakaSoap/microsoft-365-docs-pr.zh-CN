@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何将 macOS 设备载入合规性解决方案
-ms.openlocfilehash: 93a930f13a17c19c3ff7209295ddada648b9575a
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 783179ae749ac7cd6de671435927ba5bbdbdacad
+ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526564"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64387006"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>将 macOS 设备载入 Microsoft 365 概述（预览版）
 
@@ -27,14 +27,14 @@ ms.locfileid: "63526564"
 
 **适用于：**
 
-- [Microsoft 365终结点数据丢失防护 （DLP）](./endpoint-dlp-learn-about.md)
+- [DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
 - [内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>准备工作
 
 在加泰罗尼亚语 10.15 或更高版本 (macOS 设备上开始使用 Endpoint DLP) ，您应熟悉以下文章：
 
-- [了解 Microsoft 365 终结点数据丢失防护](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
+- [了解终结点数据丢失防护](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
 - [终结点数据丢失防护入门](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 
 如果您完全不熟悉 DLP，您也应熟悉以下文章：
@@ -87,10 +87,7 @@ macOS 设备必须已经通过 Intune 或 JAMF Pro。
    > [!NOTE]
    > 设备载入通常需要大约 60 秒才能启用，请先等待 30 分钟，然后再与 Microsoft 支持人员接洽。
 
-2. 打开合规中心设置页面，然后选择“**载入设备**”。
-
-   > [!div class="mx-imgBorder"]
-   > ![启用设备管理。](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. 打开"合规性中心设置"页，然后选择 **"打开 macOS 设备监控"**。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -106,5 +103,5 @@ macOS 设备必须已经通过 Intune 或 JAMF Pro。
 
 ## <a name="related-topics"></a>相关主题
 
-- [使用终结点数据丢失防护](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
+- [使用端点数据丢失防护](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 - [Microsoft 应用中 DLP 策略提示的支持矩阵](dlp-policy-tips-reference.md#support-matrix-for-dlp-policy-tips-across-microsoft-apps)

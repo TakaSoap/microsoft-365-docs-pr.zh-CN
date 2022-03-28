@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: abfd2603d4b374899ba3ff17d1be977043c5d5ab
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c8bf111acd41ede8a493672234de4e4a33ccd105
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313029"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775843"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>零信任标识和设备访问配置
 
@@ -39,7 +39,7 @@ ms.locfileid: "63313029"
 
 - 使用最小特权访问
 
-  使用 JIT/JEA (实时和 Just-Enough-Access) 、基于风险的自适应策略和数据保护来限制用户访问。  
+  使用 JIT/JEA (实时和 Just-Enough-Access) 、基于风险的自适应策略和数据保护来限制用户访问。
 
 - 假定泄露
 
@@ -157,7 +157,6 @@ Azure AD提供了一整套身份管理功能。 我们建议使用这些功能�
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|使您可以检测影响组织标识的潜在漏洞，将自动修正策略配置为低、中、高登录风险和用户风险。 本指南依赖于此风险评估，对多重身份验证应用条件访问策略。 本指南还包括条件访问策略，要求用户在检测到其帐户的高风险活动时更改其密码。|Microsoft 365 E5，Microsoft 365 E3 E5 安全加载项、EMS E5 或 Azure AD Premium P2 许可证|
 |[SSPR (自助服务密码) ](/azure/active-directory/authentication/concept-sspr-howitworks)|通过提供对管理员可以控制的多种身份验证方法的验证，允许用户安全地重置其密码，而无需支持人员干预。|Microsoft 365 E3 或 E5|
 |[Azure AD密码保护](/azure/active-directory/authentication/concept-password-ban-bad)|检测并阻止已知的弱密码及其变体以及特定于您的组织的其他弱术语。 默认全局禁止使用的密码列表将自动应用于 Azure AD 租户中的所有用户。 可在自定义禁止密码列表中定义额外条目。 用户更改或重置其密码时，将检查这些禁止的密码列表，强制使用强密码。|Microsoft 365 E3 或 E5|
-|
 
 下面是零信任标识和设备访问的组件，包括 Intune 和 Azure AD 对象、设置和子服务。
 
@@ -193,13 +192,12 @@ Windows 11 Windows 10或Microsoft 365 企业应用版是电脑的推荐客户端
 
 下表总结了我们对跨三层保护使用这些功能的建议。
 
-|保护机制|起点|企业版|专用安全|
+|保护机制|起点|企业|专用安全|
 |---|---|---|---|
 |强制执行 MFA|针对中级或以上登录风险|针对低级或以上登录风险|针对所有新会话|
 |**强制更改密码**|对于高风险用户|对于高风险用户|对于高风险用户|
 |**强制执行 Intune 应用程序保护**|是|是|是|
 |**强制对组织拥有的设备进行 Intune 注册**|需要兼容或已加入域的电脑，但允许自带设备 (BYOD) 手机和平板电脑|需要兼容或已加入域的设备|需要兼容或已加入域的设备|
-|
 
 ## <a name="device-ownership"></a>设备所有权
 

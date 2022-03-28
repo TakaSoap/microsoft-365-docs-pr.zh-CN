@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: f80ab9fcb0a3e057a20c22ff05c3a960cdf7eab4
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 4b14f2def771294bdfa05109d6060242736f26d5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512930"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754707"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内部风险管理设置入门
 
@@ -275,7 +275,7 @@ ms.locfileid: "63512930"
 - Id
 - RecordType
 - CreationTime
-- Operation
+- 操作
 - OrganizationId
 - UserType
 - UserKey
@@ -576,11 +576,15 @@ ms.locfileid: "63512930"
 
 ## <a name="admin-notifications"></a>管理员通知
 
-当为新策略生成第一个警报时，管理员通知会自动将电子邮件通知发送给内部风险管理组、内部风险管理分析师和内部风险管理研究人员角色组中包含的用户。 默认情况下，会针对所有组织启用此功能，并且每 24 小时检查一次首次警报的策略。 对于第一个警报后的策略中发生的任何警报，不会发送通知。
+管理员通知会自动向可选择的预览体验成员风险管理角色组发送电子邮件通知。 您可以启用通知并分配哪些角色组将接收以下方案的通知：
+
+- 为新策略生成第一个警报时发送通知电子邮件。 策略每 24 小时检查一次第一次警报，并且不会针对策略的后续警报发送通知。
+- 生成新的高严重性警报时发送每日电子邮件。 对于高严重性警报，每 24 小时检查一次策略。
+- 发送包含未解决警告的策略的每周电子邮件汇总
 
 如果为组织启用了内部风险管理分析，则 *Insider Risk Management Admin* 角色组的成员会自动收到电子邮件通知，以对数据泄露、盗窃和泄漏活动进行初始分析见解。
 
-如果你想要禁用管理员通知，请完成以下步骤：
+如果你想要禁用管理员和分析通知，请完成以下步骤：
 
 1. In the [Microsoft 365 合规中心](https://compliance.microsoft.com)， go to **Insider risk** **managementInsider** >  risk settings.
 2. 选择" **管理员通知"** 页。
@@ -590,5 +594,3 @@ ms.locfileid: "63512930"
     - **关闭分析时发送电子邮件通知**
 
 4. 选择 **"保存** "以配置并退出。
-
-![内部风险管理管理员通知设置。](../media/insider-risk-admin-notifications.png)

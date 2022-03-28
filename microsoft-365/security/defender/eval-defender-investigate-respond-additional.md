@@ -23,12 +23,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cc57c2b39466e84d5652ef60c56d6951fbe86714
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0ad2fc9a1566e7816b3ff806b7d07ac29347cc89
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324083"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754772"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>尝试Microsoft 365 Defender环境中使用事件响应功能
 
@@ -51,7 +51,8 @@ ms.locfileid: "63324083"
 
 在快速启动事件门户时&事件>**事件** 和事件Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">队列</a>。 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="&门户中的&quot;事件和警报Microsoft 365 Defender部分" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+
 
 " **最近的事件和警报** "部分显示过去 24 小时内收到的警报数和创建的事件数的图。
 
@@ -63,7 +64,7 @@ ms.locfileid: "63324083"
 
 从默认事件队列中，选择"**筛选器**"以查看"筛选器"窗格，可以从中指定一组特定的事件。 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="事件队列的筛选器窗格示例。":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="事件门户中&quot;事件&警报&quot;部分Microsoft 365 Defender窗格" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 有关详细信息，请参阅确定 [事件的优先级](incident-queue.md)。
 
@@ -71,7 +72,7 @@ ms.locfileid: "63324083"
 
 可以从事件的“**管理事件**”窗格管理事件。 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="事件&quot;管理事件&quot;窗格的示例。":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="事件门户中&quot;事件&警报&quot;部分Microsoft 365 Defender窗格" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 可以从以下位置的"管理 **事件"链接显示** 此窗格：
 
@@ -112,11 +113,12 @@ ms.locfileid: "63324083"
 
 下面是一个示例。
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="统一操作中心Microsoft 365 Defender。":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="企业门户中的统一Microsoft 365 Defender中心" lightbox="../../media/m3d-action-center-unified.png":::
 
 从操作中心，可以选择挂起的操作，然后在飞出窗格中批准或拒绝它们。 下面是一个示例。
 
-:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="批准或拒绝操作。":::
+:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="在应用程序门户中显示批准或拒绝操作Microsoft 365 Defender窗格" lightbox="../../media/air-actioncenter-itemselected.png":::
+
 
 尽快 (批准或拒绝) 挂起的操作，以便自动调查可以继续并及时完成。
 
@@ -187,7 +189,7 @@ ms.locfileid: "63324083"
       > [!NOTE]
       > 有关限制数据返回的筛选选项，请参阅下一步。
 
-      ![高级搜寻查询结果的示例。](../../media/advanced-hunting-incident-response-try-1.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-1.png" alt-text="高级搜寻门户中的Microsoft 365 Defender页" lightbox="../../media/advanced-hunting-incident-response-try-1.png":::
 
         > [!NOTE]
         > 高级搜寻将查询结果显示为表格数据。 还可以选择查看其他格式类型（如图表）的数据。
@@ -201,7 +203,7 @@ ms.locfileid: "63324083"
 
    1. 单击查询中的结果行，以便可以检查记录。
 
-      ![检查记录侧面板的示例，该面板在选择高级搜寻结果时打开。](../../media/advanced-hunting-incident-response-try-2.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-2.png" alt-text="搜索门户中高级搜寻页面的&quot;检查记录&quot;Microsoft 365 Defender部分" lightbox="../../media/advanced-hunting-incident-response-try-2.png":::
 
 4. 现在，你已验证是否可以看到电子邮件，请为附件添加筛选器。 重点关注环境中具有附件的所有电子邮件。 对于此模拟，重点关注入站电子邮件，而不是从你的环境发送的电子邮件。 删除已添加的任何筛选器以查找邮件并添加"|其中 **AttachmentCount > 0** 和 **EmailDirection** == **"Inbound""**
 
@@ -259,40 +261,41 @@ ms.locfileid: "63324083"
 
 1. 在查询页面上，删除在"开始"搜寻说明的步骤 7 中添加的第 7 行和第 8 行，然后单击" **创建检测规则"**。
 
-   ![可在高级搜寻页面中单击创建检测规则的示例。](../../media/advanced-hunting-incident-response-try-3.png)
+   :::image type="content" source="../../media/advanced-hunting-incident-response-try-3.png" alt-text="搜索门户中高级搜寻页面的&quot;查询Microsoft 365 Defender部分" lightbox="../../media/advanced-hunting-incident-response-try-3.png":::
 
    > [!NOTE]
    > 如果单击 **"创建检测规则** "，并且查询中出现语法错误，将不会保存检测规则。 仔细检查查询以确保没有错误。
 
 2. 使用允许安全团队了解警报的信息、生成警报的原因以及预期他们执行哪些操作，填写必填字段。
 
-   ![可在其中定义警报详细信息的创建检测规则页面示例。](../../media/mtp/fig23.png)
+   :::image type="content" source="../../media/mtp/fig23.png" alt-text="警报门户中的警报Microsoft 365 Defender页" lightbox="../../media/mtp/fig23.png":::
 
    确保清楚填写字段，以帮助向下一位用户告知有关此检测规则警报的明智决定
 
 3. 选择此警报中影响的实体。 在这种情况下，请选择"**设备和****邮箱"**。
 
-   ![创建检测规则页的示例，您可以在其中选择受影响实体的参数。](../../media/mtp/fig24.png)
+   :::image type="content" source="../../media/mtp/fig24.png" alt-text="网站门户中的&quot;影响的实体Microsoft 365 Defender页面" lightbox="../../media/mtp/fig24.png":::
 
 4. 确定触发警报时应执行哪些操作。 在这种情况下，请运行防病毒扫描，但可能会执行其他操作。
 
-   ![创建检测规则页的示例，可在触发警报以帮助解决威胁时运行防病毒扫描。](../../media/mtp/fig25.png)
+   :::image type="content" source="../../media/mtp/fig25.png" alt-text="Microsoft 365 Defender门户中的&quot;操作&quot;页" lightbox="../../media/mtp/fig25.png":::
 
 5. 选择警报规则的范围。 由于此查询涉及设备，因此设备组根据 Microsoft Defender for Endpoint 上下文在此自定义检测中相关。 创建不包含设备作为受影响实体的自定义检测时，范围不适用。
 
-   ![创建检测规则页的示例，您可以在其中设置警报规则的范围，管理对你将看到的结果的预期。](../../media/mtp/fig26.png)
+   :::image type="content" source="../../media/mtp/fig26.png" alt-text="Microsoft 365 Defender门户中的&quot;范围&quot;页" lightbox="../../media/mtp/fig26.png":::
+
 
    对于此试点，你可能希望将此规则限制为生产环境中的测试设备的子集。
 
-6. 选择 **“创建”**。 然后，从 **导航面板中选择** "自定义检测规则"。
+6. 选择“**创建**”。 然后，从 **导航面板中选择** "自定义检测规则"。
 
-   ![菜单中的"自定义检测规则"选项示例。](../../media/mtp/fig27a.png)
+   :::image type="content" source="../../media/mtp/fig27a.png" alt-text="自定义检测规则门户中的Microsoft 365 Defender选项" lightbox="../../media/mtp/fig27a.png":::
 
-   ![显示规则和执行详细信息的检测规则页面示例。](../../media/mtp/fig27b.png)
+   :::image type="content" source="../../media/mtp/fig27b.png" alt-text="在应用程序门户中显示检测规则和Microsoft 365 Defender详细信息的页面" lightbox="../../media/mtp/fig27b.png":::
 
    在此页中，可以选择将打开详细信息页面的检测规则。
 
-   ![电子邮件附件页的示例，您可以在其中查看规则执行的状态、触发的警报和操作、编辑检测等。](../../media/mtp/fig28.png)
+   :::image type="content" source="../../media/mtp/fig28.png" alt-text="显示触发的警报详细信息的页面在 Microsoft 365 Defender 门户" lightbox="../../media/mtp/fig28.png":::
 
 
 ### <a name="expert-training-on-advanced-hunting"></a>高级搜寻方面的专家培训

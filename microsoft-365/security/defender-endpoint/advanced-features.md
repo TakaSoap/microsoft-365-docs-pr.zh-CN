@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56a836e14051e3f621fb42fd518fb2cf5efe8bed
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 94e5b18ab1090f6fb76cb7734e90411b93b444e7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327695"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465434"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -69,11 +69,11 @@ ms.locfileid: "63327695"
 
 PUA (可能不需要) 是一类软件，可能会导致你的计算机运行缓慢、显示意外广告或在最差时安装其他软件（可能是意外的或不需要的）。
 
-启用此功能，以便 (PUA) ，即使未在设备上配置 PUA 保护，在租户的所有设备上也进行修正。 这有助于防止用户无意中在设备上安装不需要的应用程序。 关闭后，修正取决于设备配置。
+启用此功能，以便 (PUA) ，即使未在设备上配置 PUA 保护，在租户的所有设备上也进行修正。 此功能的此激活有助于防止用户无意中在设备上安装不需要的应用程序。 关闭后，修正取决于设备配置。
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>限制与作用域内设备组之间的关联
 
-此配置可用于本地 SOC 操作希望仅将警报关联限制为可以访问的设备组的方案。 打开此设置后，由跨设备组的警报组成的事件将不再被视为单个事件。 然后，本地 SOC 可以针对事件采取措施，因为他们可以访问涉及的设备组之一。 但是，全局 SOC 将按设备组而不是一个事件查看多个不同的事件。 建议不要启用此设置，除非这样做超出了整个组织中事件相关性的好处。
+此配置可用于本地 SOC 操作希望仅将警报关联限制为可以访问的设备组的方案。 通过打开此设置，事件由警报组成，跨设备组将不再被视为单个事件。 然后，本地 SOC 可以针对事件采取措施，因为他们可以访问涉及的设备组之一。 但是，全局 SOC 将按设备组而不是一个事件查看多个不同的事件。 建议不要启用此设置，除非这样做超出了整个组织中事件相关性的好处。
 
 > [!NOTE]
 > 更改此设置仅影响未来的警报关联。
@@ -109,7 +109,7 @@ PUA (可能不需要) 是一类软件，可能会导致你的计算机运行缓�
 
 1. 在"开"和" **关"** 之间 **切换设置**。
  
-    :::image type="content" source="../../media/alloworblockfile.png" alt-text="阻止文件功能的高级设置的图像。":::
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="终结点屏幕" lightbox="../../media/alloworblockfile.png":::
 
 1. 选择 **页面底部的** "保存首选项"。
 
@@ -147,7 +147,7 @@ PUA (可能不需要) 是一类软件，可能会导致你的计算机运行缓�
 
 ## <a name="skype-for-business-integration"></a>Skype for Business 集成
 
-通过启用Skype for Business集成，可以使用电子邮件、电子邮件或Skype for Business与用户进行通信。 当你需要与用户通信并降低风险时，这很方便。
+通过启用Skype for Business集成，可以使用电子邮件、电子邮件或Skype for Business与用户进行通信。 当您需要与用户通信并降低风险时，此激活可能很方便。
 
 > [!NOTE]
 > 当设备与网络隔离时，有一个弹出窗口，你可以选择启用 Outlook 和 Skype 通信，这将允许用户在断开与网络的连接时与其通信。 此设置适用于设备在Skype Outlook时的通信和通信。
@@ -213,7 +213,7 @@ Defender for Endpoint 可以与 Microsoft Intune[集成，以启用基于设备�
 > [!IMPORTANT]
 > 你需要在 Intune 和 Defender for Endpoint 上启用集成才能使用此功能。 有关特定步骤详细信息，请参阅在 [Defender for Endpoint 中配置条件访问](configure-conditional-access.md)。
 
-此功能仅在具有以下功能时可用：
+此功能仅在满足以下先决条件时可用：
 
 - 适用于 E5 企业移动性 + 安全性 E3或 Windows E5 (或 Microsoft 365 企业版 的许可租户) 
 - Active Microsoft Intune环境，已加入 Intune Windows设备[Azure AD设备](/azure/active-directory/devices/concept-azure-ad-join/)。

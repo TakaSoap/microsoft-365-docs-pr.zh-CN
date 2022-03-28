@@ -1,6 +1,6 @@
 ---
 title: 行为阻止和控制
-description: 了解 Microsoft Defender for Endpoint 中的行为阻止和包含功能
+description: 了解 Microsoft Defender for Endpoint 的行为阻止和抑制功能
 keywords: Microsoft Defender for Endpoint，EDR阻止模式，被动模式阻止
 ms.pagetype: security
 author: denisebmsft
@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: bab766fd69b9227f10ba897040faff79e65b1722
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f919a93768699c573c87b938cea37a05955ab9f2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325777"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465324"
 ---
 # <a name="behavioral-blocking-and-containment"></a>行为阻止和控制
 
@@ -38,7 +38,7 @@ ms.locfileid: "63325777"
 
 行为阻止和抑制功能可帮助根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 下一代保护、EDR和 Defender for Endpoint 组件和功能在行为阻止和抑制功能中协同工作。
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="行为阻止和抑制。":::
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Microsoft Defender ATP 门户中的行为阻止和抑制" lightbox="images/mdatp-next-gen-EDR-behavblockcontain.png":::
 
 行为阻止和抑制功能与 Defender for Endpoint 的多个组件和功能一起协作，可立即停止攻击并阻止攻击的进行。
 
@@ -52,7 +52,7 @@ ms.locfileid: "63325777"
 
 下图显示了由行为阻止和抑制功能触发的警报示例：
 
-:::image type="content" alt-text="通过行为阻止和封闭发出警报的示例。" source="images/blocked-behav-alert.png" lightbox="images/blocked-behav-alert.png":::
+:::image type="content" source="images/blocked-behav-alert.png" alt-text="&quot;警报&quot;页，通过行为阻止和包含来显示警报" lightbox="images/blocked-behav-alert.png":::
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>行为阻止和包含的组件
 
@@ -62,7 +62,7 @@ ms.locfileid: "63325777"
 
 - **[反馈循环阻止 (](feedback-loop-blocking.md)** 也称为快速保护，) 行为智能观察到威胁检测。 威胁将停止并阻止在其他终结点上运行。  (启用反馈循环阻止。) 
 
-- **[终结点检测和响应 (EDR)](edr-in-block-mode.md)** 阻止模式中通过泄露后保护观察到的恶意项目或行为将被阻止和包含。 EDR阻止模式运行，即使Microsoft Defender 防病毒不是主要的防病毒解决方案。  (EDR在阻止模式下启用，您可以在 Microsoft 365 Defender.) 
+- **[终结点检测和响应 (EDR)](edr-in-block-mode.md)** 阻止模式中通过泄露后保护观察到的恶意项目或行为将被阻止和包含。 EDR阻止模式运行，即使Microsoft Defender 防病毒不是主要的防病毒解决方案。  (EDR在阻止模式下运行，默认情况下未启用;在 Microsoft 365 Defender.) 
 
 随着 Microsoft 继续改进威胁防护特性和功能，预期行为阻止和抑制领域会有更多的变化。 若要了解现在的计划和推出，请访问Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
@@ -95,7 +95,7 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 
 在检测到并停止攻击时，警报（如"初始访问警报）"被触发并出现在 Microsoft 365 Defender [门户中](/microsoft-365/security/defender/microsoft-365-defender)。
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="网站门户中的初始Microsoft 365 Defender警报。":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Microsoft 365 Defender门户中的初始访问警报" lightbox="images/behavblockcontain-initialaccessalert.png":::
 
 此示例演示云中基于行为的设备学习模型如何添加抵御攻击的新保护层，即使它们开始运行。
 
@@ -103,13 +103,13 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 
 如最近的博客文章行为阻止和抑制： [将](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection)光学镜头转换为保护中所述，2020 年 1 月，Defender for Endpoint 检测到组织中设备上的权限提升活动。 触发了名为"使用 NTLM 中继的可能特权提升"的警报。
 
-:::image type="content" alt-text="Juicy Malware 恶意软件的 NTLM 警报。" source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
+:::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="Juicy Malware 恶意软件的 NTLM 警报" lightbox="images/NTLMalertjuicypotato.png":::
 
 威胁已变成恶意软件;它是名为 Juicy 为的黑客攻击工具的一个新、之前未见的变体，攻击者使用该工具在设备上获取特权提升。
 
 警报触发后的几分钟内，将分析文件并确认为恶意文件。 其进程已停止和阻止，如下图所示：
 
-:::image type="content" alt-text="项目被阻止。" source="images/Artifactblockedjuicypotato.png" lightbox="images/Artifactblockedjuicypotato.png":::
+:::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="项目被阻止"  lightbox="images/Artifactblockedjuicypotato.png":::
 
 项目被阻止几分钟后，同一设备的多个同一文件实例被阻止，从而阻止更多攻击者或其他恶意软件在设备上部署。
 

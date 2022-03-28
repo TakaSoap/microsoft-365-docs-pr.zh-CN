@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ab0eb6c9f7ecfbc51de4857d708f1fa34bd3f515
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 59933705bb113e4ad23b12fe8bf00e8d0ca2e701
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313185"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775799"
 ---
 # <a name="insider-risk-management-cases"></a>内部风险管理案例
 
@@ -150,7 +150,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 ### <a name="contributors"></a>参与者
 
-在案例的“**参与者**”选项卡中，风险分析员和调查员可以为该案例添加其他审阅者。 默认情况下，分配有 **内部** 风险管理分析师和 **内部** 风险管理研究人员角色的所有用户都列为每个活动案例和已关闭案例的参与者。 只有分配了 **"内部风险管理** 调查人员"角色的用户才有权在内容资源管理器中查看文件和邮件。
+在案例的“**参与者**”选项卡中，风险分析员和调查员可以为该案例添加其他审阅者。 默认情况下，分配有 **内部** 风险管理分析师和 **内部** 风险管理研究人员角色的所有用户都列为每个活动案例和结束案例的参与者。 只有分配了 **"内部风险管理** 调查人员"角色的用户才有权在内容资源管理器中查看文件和邮件。
 
 可通过将用户添加为参与者来授予对案例的临时访问权。 参与者对特定案例具有所有案例管理控制，以下情况除外：
 

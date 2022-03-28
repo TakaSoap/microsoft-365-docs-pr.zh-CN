@@ -2,8 +2,8 @@
 title: 为Windows用户设置Microsoft 365 商业高级版设备
 f1.keywords:
 - CSH
-ms.author: sharik
-author: skjerland
+ms.author: deniseb
+author: denisebmsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -30,102 +30,51 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 为Windows用户设置运行Windows 10 专业版的设备Microsoft 365 商业高级版，从而实现集中式管理和安全控制。
-ms.openlocfilehash: 0a6fa4178e3aeb2e77d744283bfcf671d0df1f3d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f64114ac6a117ac3eacc9b6aa9de31366e847f33
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322613"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64403580"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>为Windows用户设置Microsoft 365 商业高级版设备
 
 ## <a name="before-you-begin"></a>准备工作
 
-在你可以为 Microsoft 365 商业高级版 用户设置 Windows 设备之前，请确保所有 Windows 设备都运行 Windows 10 专业版 版本 1703 (创意者更新) 。 Windows 10 专业版部署 Windows 10 商业版 的先决条件，这是一组云服务和设备管理功能，可补充 Windows 10 专业版 并启用 Microsoft 365 商业高级版 的集中管理和安全控制。
-  
-如果你有Windows运行 Windows 7 Pro、Windows 8 专业版 或 Windows 8.1 专业版 的设备，Microsoft 365 商业高级版 订阅将授权你进行 Windows 10 升级。
-  
-有关如何将 Windows 设备升级到 Windows 10 专业版创意者更新的详细信息，请按照本主题中的步骤操作：[将 Windows 设备升级到 Windows 专业版创意者更新](../../business-video/upgrade.md)。
-  
-请参阅[验证设备](#verify-the-device-is-connected-to-azure-ad)是否连接到Azure AD验证是否具有升级，或确保升级有效。
+在你可以为 Microsoft 365 商业高级版 用户设置 Windows 设备之前，请确保所有 Windows 设备都运行 Windows 10 专业版 版本 1703 (创意者更新) 或 Windows 11 专业版。 
 
-## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>观看：连接电脑Microsoft 365企业
+Windows 10 专业版 (或Windows 11 专业版) 是部署 Windows 10 商业版 的先决条件，这是一组补充 Windows 10 专业版 和 Windows 11 专业版，并启用集中管理和安全Microsoft 365 商业高级版。
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
+[详细了解有关Microsoft 365 商业高级版](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:techspecstab)。
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
-  
-## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>将 Windows 10 设备加入到组织的 Azure AD
+## <a name="windows-10-pro-and-windows-11-pro"></a>Windows 10 专业版 和 Windows 11 专业版
 
-当Windows设备已升级到 Windows 10 专业版 创意者更新或已在运行 Windows 10 专业版 创意者更新时，你可以将这些设备加入到组织的 Azure Active Directory。 设备加入后，将自动升级到 Windows 10 商业版，这是你的 Microsoft 365 商业高级版 订阅的一部分。
+如果你有运行 Windows 早期版本的 Windows 设备（如 Windows 7 Pro、Windows 8 专业版 或 Windows 8.1 专业版）的 Microsoft 365 商业高级版 订阅，则你的 Microsoft 365 商业高级版 订阅授权你将这些设备升级到Windows 10 专业版 或 Windows 11 专业版。
   
-### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>全新或新升级的 Windows 10 专业版设备
+若要详细了解如何升级Windows，请参阅以下文章：
 
-对于运行 Windows 10 专业版创意者更新的全新设备，或升级到 Windows 10 专业版创意者更新但尚未完成 Windows 10 设备设置的设备，请按照以下步骤操作。
+- [将Windows家庭版升级到Windows Pro](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
+- [升级到 Windows 10 专业版](https://support.microsoft.com/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796)
   
-1. 完成 Windows 10 设备设置，直到显示" **设置方式**"页面。 
-    
-    ![在"如何设置"页上，选择"为组织设置"。](../../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
-  
-2. 在此处，**选择"为组织设置"**，然后输入用户的用户名和密码Microsoft 365 商业高级版。 
-    
-3. 完成 Windows 10 设备设置。
-    
-   完成后，用户将连接到组织的 Azure AD。请参阅[验证设备是否连接到 Azure AD](#verify-the-device-is-connected-to-azure-ad)确保完成操作。 
-  
-### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>已经设置并运行 Windows 10 专业版的设备
+升级后，请参阅验证[设备是否连接到](#verify-the-device-is-connected-to-azure-ad)Azure AD验证是否具有升级，或确保升级有效。
 
- **将用户连接到 Azure AD：**
+## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>将Windows设备加入到组织的 Azure AD
+
+当你的公司的所有 Windows 设备在 Windows 10 专业版 或 Windows 11 专业版 运行时，你可以将这些设备加入到组织的 Azure Active Directory (Azure AD) 。 
+
+1. 在Windows设备上，选择Windows徽标，然后选择"设置图标。
   
-1. 在用户运行 Windows 10 专业版 版本 1703 (创意者更新)  (的 Windows 电脑中，查看先决条件，单击 Windows 徽标，然后单击 设置 图标。[](../security-and-compliance/pre-requisites-for-data-protection.md)
+2. In **设置**， go to **AccountsAccess**  >  work or school \> **连接**.
   
-   ![在""开始"菜单"中，单击Windows 设置图标。](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
-  
-2. 2.在" **设置**"中，转到" **帐户**"。
-  
-   ![在Windows 设置中，转到"帐户"。](../../media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
-  
-3. 3.在" **你的信息**"页面上，单击" **访问工作或学校**"\>" **连接**"。
-  
-   ![选择连接工作或学校"下的"管理"。](../../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
-  
-4. 4.在" **设置工作或学校帐户**"对话框的" **备用操作**"下，选择" **将此设备加入 Azure Active Directory**"。
-  
-   ![单击"加入此设备"Azure Active Directory。](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
-  
-5. On the **Let's get you signed in** page, enter your work or school account \> **Next**.
-  
-   On the **Enter password** page, enter your password \> **Sign in**.
-  
-   ![在让我们登录页面上输入你的工作或学校电子邮件。](../../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
-  
-6. 在 **"确保这是您的组织"页上** ，验证信息是否正确，然后选择"加入 **"**。
-  
-   在 **"你已全部设置"上！** 页面，选择" **完成"**。
-  
-   ![在"确保这是您的组织"屏幕上，选择"加入"。](../../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
-  
-如果已将文件上传到 OneDrive for Business，请将其同步回电脑。 如果使用第三方工具迁移配置文件和文件，则还要将其同步到新配置文件。
-  
+3. 键入您的电子邮件地址，然后选择"下一 **步"**。
+
+4. 按照提示完成此过程。
+
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>验证设备是否连接到 Azure AD
 
 若要验证同步状态，请在"访问工作或学校"页面上设置"**连接到** **_** \<organization name\> "区域以公开"信息"和"断开连接"**按钮**。 选择 **"** 信息"获取同步状态。 
   
-在" **同步状态"** 页面上，选择 **"同步** "，获取电脑上的最新移动设备管理策略。
-  
-若要开始使用 Microsoft 365 商业高级版 帐户，请转到"Windows **"** 按钮，右键单击当前帐户图片，然后单击"**切换帐户"**。 使用组织电子邮件和密码进行登录。
-  
-![单击"信息"按钮以查看同步状态。](../../media/818f7043-adbf-402a-844a-59d50034911d.png)
-  
-## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>验证电脑是否升级到Windows 10 商业版
-
-确认已Azure AD Windows 10设备已升级到Windows 10 商业版订阅的一Microsoft 365 商业高级版部分。
-  
-1. 转到" **设置**"\>" **系统**"\>" **关于**"。
-    
-2. 确认" **版本**"显示的是" **Windows 10 商业版**"。
-    
-    ![Verify that Windows edition is Windows 10 Business.](../../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
+在" **同步状态"** 页面上，选择 **"同步** "，获取电脑上的最新移动设备管理策略。  
   
 ## <a name="next-steps"></a>后续步骤
 

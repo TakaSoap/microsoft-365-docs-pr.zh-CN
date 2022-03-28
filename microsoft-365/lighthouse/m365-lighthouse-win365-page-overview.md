@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 有关托管服务提供商 (使用) 的 MICROSOFT 365 LIGHTHOUSE，请了解 Windows 365 (云) 页面。
-ms.openlocfilehash: 60b96974e0070e4a151484a162c3eafc18d0bf4a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fa910e3de992aa3f3f76090f76a473a96aebc8fb
+ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315521"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64387045"
 ---
 # <a name="windows-365-cloud-pcs-page-overview"></a>Windows 365 (云电脑) 概述  
   
@@ -32,15 +32,15 @@ Windows 365 是一项基于云的服务，允许 Microsoft Endpoint Manager (MEM
 > [!IMPORTANT]
 > 必须先转到 [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) 以预配每个客户租户的云电脑，然后才能在 Lighthouse 中管理它们。 你无法从 Lighthouse 中预配。
 
-为客户租户预配云电脑后，Microsoft 365 主页上的 Windows 365 卡会提供有关需要采取措施的云电脑的简短警报，例如无法预配的云电脑数量和本地网络连接故障。 若要获取详细状态，请选择 Windows 365 卡上的按钮 (或在左侧导航窗格) 中选择 **Windows 365** 以打开 Windows 365 页面。 在此页面中，你可以获取分配给客户租户的云电脑的状态概述，查看你管理的所有云电脑及其分配到的租户的列表，以及查看客户租户和 Azure Active Directory (Azure AD) 之间的本地网络连接及其状态。
+为客户租户预配云电脑后，Microsoft 365 主页上的 Windows 365 卡会提供有关需要采取措施的云电脑（如无法预配的云电脑数量和 Azure 网络连接故障）的简短警报。 若要获取详细状态，请选择 Windows 365 卡上的按钮 (或在左侧导航窗格) 中选择 **Windows 365** 以打开 Windows 365 页面。 在此页面中，你可以获取分配给客户租户的云电脑的状态概述，查看你管理的所有云电脑及其分配到的租户的列表，并查看客户租户和 Azure Active Directory (Azure AD) 之间的 Azure 网络连接及其状态。
 
 ## <a name="overview-tab"></a>"概述"选项卡
 
-在"概述"选项卡上，彩色计数注释栏显示具有以下状态的所有客户租户中的云电脑或本地网络连接总数：网络连接失败、未设置、预配失败和即将取消设置。
+在"概述"选项卡上，彩色计数注释栏显示具有以下状态的所有客户租户中的云电脑或 Azure 网络连接总数：网络连接失败、未设置、预配失败和即将取消设置。
 
 可以在批注栏下方的列表中查看每个客户租户的云电脑状态细目。 若要了解哪些租户具有具有特定状态的云电脑，请从计数注释栏中选择该状态以筛选列表。 若要查看一个或多个特定客户租户的云电脑状态，请使用"租户"下拉菜单筛选列表。
 
-若要获取特定客户租户的详细状态信息，请选择该租户的任何状态列下的值。 根据值位于哪一列，"**本地** 网络连接"或"所有云电脑"选项卡将打开，并显示详细信息。
+若要获取特定客户租户的详细状态信息，请选择该租户的任何状态列下的值。 根据值位于哪一列，**Azure 网络连接** 或"所有云电脑"选项卡将打开，并显示详细信息。
 
 "概述"选项卡还包括以下选项：
 
@@ -48,7 +48,7 @@ Windows 365 是一项基于云的服务，允许 Microsoft Endpoint Manager (MEM
 - **导出：** 选择将云电脑数据导出到Excel逗号分隔值 (.csv) 文件。
 - **搜索：** 输入关键字以在列表中快速找到特定的云电脑。
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="&quot;Windows 365 概述&quot;选项卡的屏幕截图。":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="&quot;Windows 365 概述&quot;选项卡的屏幕截图。" lightbox="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png":::
 
 ## <a name="all-cloud-pcs-tab"></a>"所有云电脑"选项卡
 
@@ -76,25 +76,25 @@ Windows 365 是一项基于云的服务，允许 Microsoft Endpoint Manager (MEM
 
 若要查看云电脑预配状态及其含义的完整列表，请参阅 Windows 365 文档库中[](/windows-365/enterprise/device-management-overview#column-details)的云电脑的设备管理概述。
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="&quot;Windows 365 所有云电脑&quot;选项卡的屏幕截图。":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="&quot;Windows 365 所有云电脑&quot;选项卡的屏幕截图。" lightbox="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png":::
 
-## <a name="on-premises-network-connections-tab"></a>"本地网络连接"选项卡
+## <a name="azure-network-connections-tab"></a>"Azure 网络连接"选项卡
 
-在"本地网络连接"选项卡上，彩色计数注释栏显示具有以下状态的所有客户租户中的本地网络连接总数："成功连接"和"连接失败"。
+在"Azure 网络连接"选项卡上，彩色计数注释栏显示具有以下状态的所有客户租户中的 Azure 网络连接总数："成功连接"和"连接失败"。
 
-在计数注释栏下方的列表中，您可以查看所有本地网络连接及其连接状态。
+在计数注释栏下方的列表中，可以查看所有 Azure 网络连接及其连接状态。
 
 To see connections with a specific provisioning status， select that status from the count-annotation bar to filter the list. 若要查看一个或多个特定客户租户的连接状态，请使用"租户"下拉菜单筛选列表。
 
 如果需要对列表中的连接采取操作或排除故障，请选择"查看连接 **详细信息**"Microsoft Endpoint Manager。
 
-"本地网络连接"选项卡还包括以下选项：
+"Azure 网络连接"选项卡还包括以下选项：
 
 - **刷新：** 选择以检索最新的连接数据。
 - **导出：** 选择以将连接数据导出到Excel逗号分隔值 (.csv) 文件中。
 - **搜索：** 输入关键字以快速找到特定连接。
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/on-prem-network-connections-tab.png" alt-text="&quot;Windows 365 本地网络连接&quot;选项卡的屏幕截图。":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="&quot;Azure 网络连接&quot;选项卡的屏幕截图。" lightbox="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png":::
 
 ## <a name="related-content"></a>相关内容
 

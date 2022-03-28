@@ -1,5 +1,5 @@
 ---
-title: 在 ASR (规则部署中) 攻击面减少
+title: 通过 ASR 规则 (操作攻击) 面减少
 description: 提供操作攻击面减少规则部署的指导。
 keywords: 攻击面减少规则部署， ASR 部署， 启用 asr 规则， 配置 ASR， 主机入侵防护系统， 保护规则， 反攻击规则， 反攻击， 攻击规则， 感染防护规则， Microsoft Defender for Endpoint， 配置 ASR 规则
 search.product: eADQiWindows 10XVcnh
@@ -16,22 +16,24 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 3229cd0a98714819009e7d50baab0872f3a67c43
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 9a3e8ab38c807b8cf3ea54bb5a18a5405d0b3c49
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766580"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465346"
 ---
 # <a name="step-4-operationalize-asr-rules"></a>步骤 4：操作 ASR 规则
 
-在 ASR (部署攻击面减少) 规则后，必须制定流程来监视和响应与 ASR 相关的活动，这一点至关重要。
+在通过 ASR (规则 (攻击面减少) ，必须制定流程来监视和响应与 ASR 相关的活动，这一点至关重要。
 
 ## <a name="managing-false-positives"></a>管理误报
 
-任何威胁防护解决方案都可能发生误报/负面影响。 误报是检测到实体 (或进程) 被检测并标识为恶意实体的情况，尽管实体实际上不是威胁。 相比之下，漏报是未检测为威胁但恶意的实体。 有关误报和漏报信息，请参阅： [在 Microsoft Defender for Endpoint 中解决误报/负数](defender-endpoint-false-positives-negatives.md)
+任何威胁防护解决方案都可能发生误报/负面影响。 误报是检测到实体 (进程或进程) 被检测并标识为恶意实体的情况，尽管实体实际上不是威胁。 相比之下，漏报是未检测为威胁但恶意的实体。 有关误报和漏报信息，请参阅： [在 Microsoft Defender for Endpoint 中解决误报/负数](defender-endpoint-false-positives-negatives.md)
 
 ## <a name="keeping-up-with-reports"></a>保持与报告保持一起
 
@@ -42,9 +44,9 @@ ms.locfileid: "62766580"
 搜索功能最强大的功能[之一Microsoft 365 Defender](https://security.microsoft.com)高级搜寻。 如果你不熟悉高级搜寻，请参阅：使用高级搜寻主动 [搜寻威胁](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender高级搜寻](images/asr-defender365-advanced-hunting2.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="高级搜寻门户中的Microsoft 365 Defender页" lightbox="images/asr-defender365-advanced-hunting2.png":::
 
-高级搜寻是基于查询的 (Kusto 查询语言) 威胁搜寻工具，允许你浏览 Microsoft Defender ATP 终结点检测和响应 (EDR) 从所有计算机中收集的最多 30 天的已捕获 (原始) 数据。 通过高级搜寻，你可以主动检查事件，以便找到有趣的指示器和实体。 灵活访问数据有助于无约束搜寻已知威胁和潜在威胁。
+高级搜寻是基于查询的 (Kusto 查询语言) 威胁搜寻工具，允许你浏览 Microsoft Defender ATP 终结点检测和响应 (EDR) 从你的所有计算机中收集的最多 30 天的已捕获 (原始) 数据。 通过高级搜寻，你可以主动检查事件，以便找到有趣的指示器和实体。 灵活访问数据有助于无约束搜寻已知威胁和潜在威胁。
 
 通过高级搜寻，可以提取 ASR 规则信息、创建报告，并获取有关给定 ASR 规则审核或阻止事件的上下文的深入信息。
 
@@ -53,10 +55,10 @@ ms.locfileid: "62766580"
 前进搜寻门户中显示的 ASR 事件被限制到每小时看到的唯一进程。 ASR 事件的时间是该小时内首次看到该事件的时间。
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender高级搜寻查询命令行](images/asr-defender365-advanced-hunting3.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting3.png" alt-text="搜索门户中的高级搜寻Microsoft 365 Defender命令行" lightbox="images/asr-defender365-advanced-hunting3.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender高级搜寻查询结果](images/asr-defender365-advanced-hunting4.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting4.png" alt-text="高级搜寻查询结果在Microsoft 365 Defender门户" lightbox="images/asr-defender365-advanced-hunting4.png":::
 
 以上显示为 AsrLsassCredentialTheft 注册了 187 个事件：
 
@@ -65,13 +67,13 @@ ms.locfileid: "62766580"
 - AsrOfficeChildProcess 事件 2 个 (个事件，1 个事件用于审核，1 个事件用于阻止) 
 - AsrPsexecWmiChildProcessAudited 的 8 个事件
 
-如果您想重点关注 AsrOfficeChildProcess 规则并获取有关实际文件和过程的详细信息，请更改 ActionType 的筛选器，将汇总行替换为对需要字段 (的投影，在这种情况下，这些字段为 DeviceName、FileName、FolderPath 等 ) 。
+如果您想重点关注 AsrOfficeChildProcess 规则并获取有关实际文件和过程的详细信息，请更改 ActionType 的筛选器，将汇总行替换为对需要字段 (的投影，在这种情况下它们是 DeviceName、FileName、FolderPath 等 ) 。
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender高级搜寻查询](images/asr-defender365-advanced-hunting4b.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting4b.png" alt-text="搜索门户中的高级搜寻查询Microsoft 365 Defender示例" lightbox="images/asr-defender365-advanced-hunting4b.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender高级搜寻查询焦点结果](images/asr-defender365-advanced-hunting5b.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting5b.png" alt-text="高级搜寻查询在搜索门户中Microsoft 365 Defender结果" lightbox="images/asr-defender365-advanced-hunting5b.png":::
 
 高级搜寻的真正好处是，你可以将查询塑造成喜欢的形状。 通过确定查询的定形，你可以查看所发生事情的确切情景，无论你是想要在单台计算机中定位某些内容，还是想要从整个环境中提取见解。
 

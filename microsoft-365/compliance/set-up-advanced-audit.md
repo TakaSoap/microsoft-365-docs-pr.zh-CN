@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何设置高级审核，以便可以在用户帐户泄露时执行取证调查或调查其他与安全相关的事件。
-ms.openlocfilehash: 34ae98eaafcc3eeb3d6a25a457f017999b8c6078
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dafe53161e04f28f2f5e4ff8dcfa71bab6c1a1f1
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192063"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754570"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>在"管理"中设置Microsoft 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "60192063"
 
 “高级审核”功能，如记录重要事件（如 MailItemsAccessed 和 Send）功能，需要为用户分配适当的 E5 许可证。 此外，必须为这些用户启用“高级审核”应用程序/服务计划。 要验证“高级审核”应用程序是否已分配给用户，请对每个用户执行以下步骤：
 
-1. In the Microsoft 365 管理中心， go to **Users**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>， and select a user.
+1. 在Microsoft 365 管理中心中，转到 **"用户"** > "<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**活动用户**</a>"，然后选择一个用户。
 
 2. 在用户属性浮出页面上，单击“**许可证和应用**”。
 
@@ -49,13 +49,11 @@ ms.locfileid: "60192063"
 
    MailItemsAccessed 和 Send 的审核记录日志记录将在 24 小时内开始。 您必须执行步骤 3 才能开始记录其他两个高级审核事件：SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint。
 
-对于使用基于组的许可将许可证分配给用户组的组织，必须为组禁用 Microsoft 365 高级审核的许可分配。 保存所做的更改后，请验证是否已为组禁用 Microsoft 365 高级审核。 然后，重新为组启用许可分配。 有关基于组的许可的说明，请参阅[在 Azure Active Directory 中按组成员身份向用户分配许可证](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
-
-此外，如果已自定义登录用户邮箱或共享邮箱的邮箱操作，Microsoft 发布的任何新高级审核事件将不会在这些邮箱上自动审核。 有关更改为每个登录类型审核的邮箱操作的信息，请参阅[管理邮箱审核](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)中的“更改或还原默认记录的邮箱操作”部分。
+此外，如果已自定义登录用户邮箱或共享邮箱的邮箱操作，Microsoft 发布的任何新高级审核事件不会自动审核这些邮箱。 有关更改为每个登录类型审核的邮箱操作的信息，请参阅[管理邮箱审核](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)中的“更改或还原默认记录的邮箱操作”部分。
 
 ## <a name="step-2-enable-advanced-audit-events"></a>步骤 2：启用高级审核事件
 
-当用户在 Exchange Online 和 SharePoint Online 中执行搜索时，必须启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint) 两个高级审核事件。 ( 若要为用户审核这两个事件，请对 ([PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中每个用户) 运行Exchange Online命令：
+当用户在 Exchange Online 和 SharePoint Online 中执行搜索时，必须启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint) 两个高级审核事件。 ( 若要为用户审核这两个事件，请为 (PowerShell 中每个用户) 以下[Exchange Online命令](/powershell/exchange/connect-to-exchange-online-powershell)：
 
 ```powershell
 Set-Mailbox <user> -AuditOwner @{Add="SearchQueryInitiated"}
@@ -67,7 +65,7 @@ Set-Mailbox <user> -AuditOwner @{Add="SearchQueryInitiated"}
 Get-Mailbox <user identity> | FL MailboxLocations
 ```
 
-如果用于启用搜索查询审核的命令之前在不同于用户邮箱所在的林中运行的林中，则必须通过运行 来从用户邮箱中删除 SearchQueryInitiated 值，然后将其添加到用户邮箱所在的林中的用户邮箱中。 `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`
+如果用于启用搜索查询审核的命令之前在不同于用户邮箱所在的林中运行的林中，则必须通过运行 来从用户邮箱中删除 SearchQueryInitiated `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}` 值，然后将其添加到用户邮箱所在的林中的用户邮箱中。
 
 ## <a name="step-3-set-up-audit-retention-policies"></a>步骤 3：设置审核保留策略
 

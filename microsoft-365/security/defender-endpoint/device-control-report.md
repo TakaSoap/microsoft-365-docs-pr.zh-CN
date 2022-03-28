@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f066610fec75b9c8f32e021460ae2f4b3471503c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8a31ce05ed6986159d9f6e4c489e6f7707cfecc4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165422"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465280"
 ---
 # <a name="device-control-report"></a>设备控件报告
 
@@ -46,7 +46,7 @@ Microsoft Defender for Endpoint 设备控制通过监视和控制组织中设备
 
 ## <a name="monitor-device-control-security"></a>监视设备控制安全性
 
-Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用工具通过报告跟踪其组织的设备控制安全性。 你可以访问报告设备保护，在Microsoft 365 Defender中查找设备>**报告**。
+Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用工具通过报告跟踪其组织的设备控制安全性。 你可以访问报告设备保护，在 Microsoft 365 Defender门户>**报告**。
 
 "报告"仪表板上的设备保护卡片显示过去 180 天内媒体类型生成的审核事件数。
 
@@ -58,7 +58,7 @@ Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用
 该页面提供一个仪表板，其中包含每种类型的聚合事件数和一个事件列表。 管理员可以根据时间范围、媒体类名称和设备 ID 进行筛选。
 
 > [!div class="mx-imgBorder"]
-> ![DeviceControlReportDetails](images/Detaileddevicecontrolreport.png)
+> :::image type="content" source="images/Detaileddevicecontrolreport.png" alt-text="Microsoft 365 Defender门户中的&quot;设备控制报告详细信息&quot;页" lightbox="images/Detaileddevicecontrolreport.png":::
 
 选择事件时，将显示一个显示详细信息的飞出图：
 
@@ -67,17 +67,17 @@ Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用
 - **位置详细信息：** 设备名称、用户和 MDATP 设备 ID。
 
 > [!div class="mx-imgBorder"]
-> ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)
+> :::image type="content" source="images/devicecontrolreportfilter.png" alt-text="&quot;在设备控件上筛选报告&quot;页" lightbox="images/devicecontrolreportfilter.png":::
 
 若要查看组织中此媒体实时活动，请选择"打开高级搜寻 **"** 按钮。 这包括嵌入的预定义查询。
 
 > [!div class="mx-imgBorder"]
-> ![QueryOnDeviceControlReport](images/Devicecontrolreportquery.png)
+> :::image type="content" source="images/Devicecontrolreportquery.png" alt-text="&quot;在设备控件上查询报告&quot;页" lightbox="images/Devicecontrolreportquery.png":::
 
 To see the security of the device， select the **Open device page** button on the flyout. 此按钮将打开设备实体页面。
 
 > [!div class="mx-imgBorder"]
-> ![DeviceEntityPage](images/Devicesecuritypage.png)
+> :::image type="content" source="images/Devicesecuritypage.png" alt-text="&quot;设备实体&quot;页" lightbox="images/Devicesecuritypage.png":::
 
 ## <a name="reporting-delays"></a>报告延迟
 

@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 926e23da7e439aa6035574a13bab2752004dd189
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: bba5fde870b2916501f4154c6ff628a0d2e3ff1f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171661"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465442"
 ---
-# <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>检查 Microsoft Defender for Endpoint 中的传感器运行状况
+# <a name="check-sensor-health-state-at-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中检查传感器的运行状况
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,11 +40,11 @@ ms.locfileid: "61171661"
 - **配置错误** - 这些设备可能部分向 Defender for Endpoint 服务报告传感器数据，并且可能有需要更正的配置错误。
 - **非** 活动 - 在过去一个月内停止向 Defender for Endpoint 服务报告超过七天的设备。
 
-单击任何组将你引导到 **设备列表**，该列表根据你的选择进行筛选。
+单击任何组将你引导到 **"设备"列表**，该列表根据你的选择进行筛选。
 
-![具有传感器问题的设备的屏幕截图磁贴。](images/atp-devices-with-sensor-issues-tile.png)
+:::image type="content" source="images/atp-devices-with-sensor-issues-tile.png" alt-text="具有传感器问题的设备图块" lightbox="images/atp-devices-with-sensor-issues-tile.png":::
 
-在 **"设备"** 列表上，可以按以下状态筛选运行状况列表：
+在 **"设备"** 列表中，可以按以下状态筛选运行状况列表：
 
 - **Active** - 主动向 Defender for Endpoint 服务报告的设备。
 - **错误配置** - 这些设备可能部分向 Defender for Endpoint 服务报告传感器数据，但具有需要更正的配置错误。 配置错误的设备可能具有下列问题之一或多个问题组合：
@@ -52,12 +52,12 @@ ms.locfileid: "61171661"
   - **通信受损** - 与设备通信的能力受损。 发送文件进行深度分析、阻止文件、从网络隔离设备以及其他需要与设备通信的操作可能工作不正常。
 - **非** 活动 - 停止向 Defender for Endpoint 服务报告的设备。
 
-您还可以使用导出功能以 CSV 格式下载 **整个** 列表。 有关筛选器的信息，请参阅 [查看和组织设备列表](machines-view-overview.md)。
+您还可以使用导出功能以 CSV 格式下载 **整个** 列表。 有关筛选器详细信息，请参阅 [查看和组织设备列表](machines-view-overview.md)。
 
 > [!NOTE]
 > 导出 CSV 格式的列表以显示未筛选的数据。 CSV 文件将包含组织的所有设备，而不考虑视图本身应用的任何筛选，并且可能需要大量时间来下载，具体取决于组织的大小。
 
-!["设备"列表页面的屏幕截图。](images/atp-devices-list-page.png)
+:::image type="content" source="images/atp-devices-list-page.png" alt-text="&quot;设备&quot;列表页中的&quot;导出&quot;选项卡" lightbox="images/atp-devices-list-page.png":::
 
 单击错误配置或不活动的设备时，可以查看设备详细信息。
 

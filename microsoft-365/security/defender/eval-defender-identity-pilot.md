@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3801fdb4a7aeda5e75c4e36f622f7e76604d96a6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bba910b46c4b4769e67ae00af0381e129139dfe5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318727"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754559"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>试用 Microsoft Defender for Identity
 
@@ -38,7 +38,7 @@ ms.locfileid: "63318727"
 
 使用以下步骤为 Microsoft Defender 的标识设置和配置试点。 请注意，建议不包括设置试点组。 最佳做法是继续操作，在运行 Active Directory 域服务 (AD DS) 和 Active Directory 联合服务 (AD FS) 的所有服务器上安装传感器。
 
-![将 Microsoft Defender for Identity 添加到 Defender 评估环境的步骤。](../../media/defender/m365-defender-identity-pilot-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-pilot-steps.png" alt-text="在 Microsoft Defender 评估环境中试用 Microsoft Defender for Identity 的步骤" lightbox="../../media/defender/m365-defender-identity-pilot-steps.png":::
 
 下表介绍了图中的步骤。
 

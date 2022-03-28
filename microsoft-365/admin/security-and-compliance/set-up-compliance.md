@@ -1,9 +1,9 @@
 ---
-title: 增强威胁防护Microsoft 365 商业高级版
+title: 提高威胁防护Microsoft 365 商业高级版
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
+ms.author: deniseb
+author: denisebmsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,76 +23,71 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置合规性功能以防止数据丢失，并帮助保护你和客户敏感信息的安全。
-ms.openlocfilehash: 69960c4f158a30d9d47d749ed1e7eb2d2d74f430
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: baac8bc1ad9a425ad7219a1e76949286858f60e0
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521038"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64403698"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
-你的Microsoft 365 商业高级版附带用于保护你的数据和设备的功能，并且可帮助你保护你和客户敏感信息的安全。
+你的Microsoft 365 商业高级版订阅包括合规性和隐私功能。 这些功能有助于保护公司数据，并保护你和客户敏感信息的安全。 本文旨在帮助你开始使用合规性功能。
 
-## <a name="watch-set-up-dlp-features"></a>观看：设置 DLP 功能
+## <a name="before-you-begin"></a>准备工作
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3TGvL?autoplay=false]
+请确保在角色分配中分配了以下角色Azure Active Directory：
 
-数据丢失防护策略可帮助识别和保护企业敏感信息，如社会保险号或医疗记录。
+- 全局管理员
+- 合规管理员
 
-1. To get started， go to the [admin center](https://admin.microsoft.com)， and select **Setup**.
-1. 向下滚动到 **"设置数据丢失防护"，** 然后选择"**查看**"，然后选择"管理 **"。**
-1. 若要编辑策略，请选择它，选择" **编辑策略**"，然后选择要更改的项。 例如，选择 **"位置** "可更改扫描内容。
-1. 若要创建新策略，请选择"**创建策略"。**
-1. 你可以创建自定义策略或从模板开始。 例如，若要创建 HIPAA 策略，请选择"医疗健康"模板，然后选择"美国健康保险法案 **(HIPAA) "。** 选择 **下一步**。
-1. 查看你的设置， **然后选择创建**。 策略生效后，包含描述的敏感信息的电子邮件将被阻止，并且尝试发送该信息的发件人会看到一条警告消息。
+若要了解更多信息，请参阅 [角色入门页面](../add-users/admin-roles-page.md)。
 
-请参阅 [从模板创建 DLP](../../compliance/create-a-dlp-policy-from-a-template.md) 策略，了解如何设置策略以防范个人数据丢失的示例。 
-  
-DLP 附带许多适用于许多不同区域设置的现成策略模板。 例如，澳大利亚财务数据、加拿大个人信息法案、美国财务数据等。 有关 [完整列表，请参阅 DLP](../../compliance/what-the-dlp-policy-templates-include.md) 策略模板包含的内容。 所有这些模板都可以启用，类似于 PII 模板示例。
- 
-## <a name="set-up-email-retention-with-exchange-online-archiving"></a>设置电子邮件保留时间Exchange Online Archiving
+## <a name="use-compliance-manager-to-get-started"></a>使用合规性管理器开始
 
- **Exchange Online Archiving** 许可证功能通过保留电子数据展示的电子邮件内容来帮助维护合规性和法规标准。 它还有助于在有诉讼时降低风险，并提供一种在安全漏洞或需要恢复已删除项目时恢复数据的方法。 您可以使用诉讼保留保留用户的所有内容，或使用保留策略自定义要保留的内容。
-  
-**诉讼保留：** 通过将用户的整个邮箱置于诉讼保留状态，可以保留所有邮箱内容，包括已删除的项目。 
-    
-若要将邮箱置于诉讼保留状态，在管理中心：
-    
-1. 在左侧导航中，转到"用户 \> **""活动用户"。**
-    
-2. 选择要将其邮箱置于诉讼保留状态的用户。 在用户窗格中，展开"**邮件设置"，****在"更多** 设置"旁边，选择"编辑Exchange **属性"。**
-    
-3. On the mailbox page for the user， choose ** mailbox features ** on the left nav， and then choose the **Enable** link under **Litigation hold**.
-    
-4. 在 **"诉讼保留** "对话框中，您可以在"诉讼保留持续时间"字段中指定 **诉讼保留** 持续时间。 如果希望将字段留空，请保留无限期保留。 您还可以添加注释，将邮箱所有者引导到网站，您可能必须解释有关诉讼保留的更多内容。 \>**保存**。
-    
-**保留：** 例如，您可以启用自定义保留策略以保留特定时间，或在保留期结束时永久删除内容。 若要了解更多信息，请参阅 [保留策略概述](../../compliance/retention.md)。
+:::image type="content" source="../../business-premium/media/m365bp-compliancemanager.png" alt-text="合规性管理器在Microsoft 365 商业高级版。":::
 
-## <a name="watch-set-up-sensitivity-labels"></a>观看：设置敏感度标签
+Microsoft 365 商业高级版合规性管理器，可帮助你开始设置合规性功能。 这些功能包括数据丢失防护、信息管理和内部风险管理等。 合规性管理器可以通过突出显示建议、合规性分数以及提高分数的方法来节省时间。
 
-敏感度标签随 Azure 信息保护 (AIP) 计划 1 提供，可帮助你通过应用标签对文档和电子邮件进行分类和选择性保护。 标签可自动由定义规则和条件的管理员应用，由用户手动应用，也可结合使用为用户提供建议。
+下面是如何开始：
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3VRGT?autoplay=false]
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并登录。
 
-1. 在管理 [中心中](https://admin.microsoft.com)，选择 **合规性** 管理中心。
-1. 选择 **"分类**"，然后选择 **"敏感度标签"。**
-1. 选择 **"创建标签"，** 当出现警告时，选择"**是"。**
-1. 查看你的设置， **然后选择创建**。 已创建标签。 对任何其他需要的标签重复此过程。
-1. 默认情况下，标签按此Office显示在应用中：**机密**、**内部** 和 **公用**。 若要更改顺序，请针对每个标签选择三个点 (执行) 操作，然后向上或向下移动标签。 通常，权限按从低到高的权限级别列出。
-1. 查看设置，然后选择"发布 **"。**
+2. 在导航窗格中，选择" **合规性管理器"**。
 
-若要使标签正常工作，每个用户都需要下载 Azure 信息保护统一标签客户端。 在 Web 上 **AzinfoProtection_UL.exe，** 然后从 Microsoft 下载中心下载它，然后在用户计算机上运行它。
+3. 在" **概述"** 选项卡上，查看信息。 选择项目或链接以查看详细信息，或采取一些操作，例如配置 DLP (数据丢失) 策略。 例如，在" **影响分数** 的解决方案"部分，您可以选择"剩余 **操作"列中** 的链接。
 
-下次打开 Word Office 应用时，你将看到已创建的敏感度标签。 若要更改或应用标签，请选择"敏感度"，然后选择标签。
+   :::image type="content" source="../../business-premium/media/m365bp-compliancesolutions.png" alt-text="影响分数窗格的解决方案的屏幕截图。":::
 
-### <a name="install-the-azure-information-protection-client-manually"></a>手动安装 Azure 信息保护客户端
+   该操作将您带至" **改进操作** "选项卡，该选项卡针对所选的项目进行筛选。 本示例中，我们将了解要配置的 DLP 策略。
 
-若要手动安装 AIP 客户端，请执行以下操作：
+   :::image type="content" source="../../business-premium/media/m365bp-dlppoliciestoconfigure.png" alt-text="要配置的 DLP 策略的屏幕截图。":::
 
-1. 从 **microsoftAzinfoProtection_UL.exe**[下载中心 下载文件](https://www.microsoft.com/download/details.aspx?id=53018)。
- 
-2. 您可以通过查看 Word 文档并确保"开始"选项卡上提供"敏感度"选项来验证安装 **是否** 有效。
-<br/>![Word 文档中的"保护"选项卡下拉列表。](../../media/word-sensitivity.png)
+4. 在" **改进操作"** 选项卡上，选择一个项目。 在我们的示例中，我们选择了"创建自定义 **DLP 策略或个人身份信息"**。 页面加载提供有关要配置的策略详细信息。
 
-有关详细信息，请参阅安装 [客户端](/azure/information-protection/infoprotect-tutorial-step3)。
+   :::image type="content" source="../../business-premium/media/m365bp-dlppolicyinfo.png" alt-text="有关客户内容的 DLP 策略信息的屏幕截图。":::
+
+   按照屏幕上的信息设置 DLP 策略。
+
+有关适用于企业Microsoft 365合规性功能Microsoft 365[合规性文档](../../compliance/index.yml)。
+
+## <a name="use-sensitivity-labels"></a>使用敏感度标签
+
+敏感度标签可用于 Office 应用 (如 Outlook、Word、Excel 和 PowerPoint) 。 标签示例包括：
+
+- 一般
+- 个人
+- Private
+- 机密
+
+但是，也可以为公司定义其他标签。
+
+阅读以下文章，了解敏感度标签：
+
+1. [什么是敏感度标签？](../../compliance/sensitivity-labels.md)
+
+2. [开始创建敏感度标签](../../compliance/get-started-with-sensitivity-labels.md)
+
+3. [发布敏感度标签及其策略](../../compliance/create-sensitivity-labels.md)
+
+4. [向公司人员展示如何使用敏感度标签](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)

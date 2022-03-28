@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 89aba3f74925b4c591c523aae5aaeb1a2844b4b9
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: ec1c4942923edb824452c4438f79edff1abfd702
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320483"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775909"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
@@ -31,27 +31,25 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 |:-----|:-----|
 |[![Teams逻辑体系结构海报。](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2021 年 1 月更新   |Microsoft 提供了一系列生产力服务，这些服务协同工作，提供数据治理、安全性和符合性相关功能的协作体验。 <br/> <br/>此系列图示展示了企业架构师生产力服务的逻辑体系结构，以 Microsoft Teams 为主导。|
 
-## <a name="corporate-communications-with-microsoft-365--a-contoso-case-study"></a>公司与 Microsoft 365通信 — Contoso 案例研究
+## <a name="corporate-communications-with-microsoft-365--a-contoso-case-study"></a>公司与 Microsoft 365 通信 — Contoso 案例研究
 员工参与度是任何组织的工作场所满意度、保留率和工作效率的重要参与者。 跨Microsoft 365，有多种方法可以沟通和吸引受众。 
 
-了解 (使用的方法) 组合以及何时使用它们取决于受众和组织的通信文化。 
+了解 (使用的方法) 组合以及何时使用它们取决于你的受众和组织的通信文化。 
 
 | Item | 说明 |
 |:-----|:-----|
 |[![Contoso 公司通信方案海报。](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>2022 年 1 月更新   |此海报说明了 Contoso 如何跨热门通信方案使员工了解情况并让他们参与。 Contoso 使用各种 M365 应用，包括新产品/服务 Viva Connections。<br/><br/>**相关解决方案指南** <br/> <ul><li>[组织通信：指南、方法和产品](/sharepoint/corporate-communications-overview)|
-
-
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>面向 IT 架构师的 Microsoft 365 中的组
 此图包括 IT 架构师有关组Microsoft 365的信息。 若要了解如何在组织中配置Microsoft 365组和团队进行协作，请参阅使用 Microsoft 365 设置安全协作[和](/microsoft-365/solutions/setup-secure-collaboration-with-teams)[什么是协作治理？](/microsoft-365/solutions/collaboration-governance-overview)。
 
 | Item | 说明 |
 |:-----|:-----|
-|[![组信息图的缩略图。](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 2020 年 5 月更新|这些图示详细介绍了不同类型的组，如何创建和管理这些组，以及一些治理建议。|
+|[![组信息图的缩略图。](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 2020 年 5 月更新|这些图示详细介绍了不同类型的组，如何创建和管理这些组，以及一些治理建议。
 
 ## <a name="migrate-to-microsoft-365"></a>迁移到 Microsoft 365
 
-Microsoft 提供了用于将本地网络文件共享和 SharePoint Server 网站迁移到 Microsoft 365，强调在迁移过程中保护和确保内容的安全性。 这组插图演示了可用于将内容移动到 SharePoint、Teams 和 OneDrive 的各种方法，以及你的数据如何流过此过程。
+Microsoft 提供了用于将本地网络文件共享和 SharePoint Server 网站迁移到 Microsoft 365，强调在迁移过程中保护和确保内容的安全性。 这组插图演示了可用于将内容移动到 SharePoint、Teams 和 OneDrive 的各种方法，以及你的数据在过程中如何流动。
 
 | Item | 说明 |
 |:-----|:-----|
@@ -76,6 +74,15 @@ Microsoft 365包括一组广泛的信息保护和合规性功能。 这些功能
 |:-----|:-----|
 |[![多区域信息图。](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>2020 年 3 月更新 |出于多种原因，使用单一 Microsoft 365 租户，为全球组织提供最佳选择和体验。 但是，许多架构师都在为如何满足不同地区的安全性和信息保护目标而苦恼。 这组主题提供了建议。 |
 
+## <a name="security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>针对政治宣传活动、非营利组织和其他敏捷组织的安全指南
+
+如果你所在组织是敏捷型组织，而由你领导一个小的 IT 团队，且威胁配置文件高于平均值，那么本指南对你特别适用。 此解决方案演示如何从头开始快速构建包含安全控件的基本云服务环境。 本指南提供有关保护来自移动设备的数据、标识、电子邮件和访问的说明性安全建议。
+
+| Item | 说明 |
+|:---|:---|
+|**Microsoft 针对政治宣传活动的安全指南** <br> [:::image type="content" source="../media/d370ce28-ca40-4930-9a2c-907312aa06c8.png" alt-text="有关安全指南的迷你海报的缩略图。":::](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br> [PDF](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) \| [Visio](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx)|本指南以政治宣传活动的组织为例，可将本指南用作任何环境的起点。|
+|**Microsoft 针对非营利组织的安全指南** <br> [:::image type="content" source="../media/e4784889-1c69-4067-9a8f-31d31d1eceea.png" alt-text="安全指南下载缩略图。":::](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br> [PDF](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) \| [Visio](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx)|本指南经过略微修订，适用于非盈利组织。例如，引入了 Office 365 非盈利组织版计划。该技术指南与政治宣传活动解决方案指南相同。|
+
 ## <a name="microsoft-defender-for-endpoint-deployment-strategy"></a>Microsoft Defender for Endpoint 部署策略
 
 根据你的环境，某些工具更适合某些体系结构。
@@ -83,9 +90,7 @@ Microsoft 365包括一组广泛的信息保护和合规性功能。 这些功能
 
 | Item | 说明 |
 |:-----|:-----|
-|[![适用于终结点部署策略的 Microsoft Defender 缩略图。](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>2021 年 9 月更新| 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li>
-
-
+|[![适用于终结点部署策略的 Microsoft Defender 缩略图。](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>2021 年 9 月更新| 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li> |
 <!--
 
 <a name="BKMK_O365IDP"></a>
@@ -98,18 +103,15 @@ Recommended Zero Trust capabilities for protecting identities and devices that a
 |[![Model poster: Zero Trust identity and device protection for Microsoft 365.](../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-thumbnail.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> Updated November 2021|It's important to use consistent levels of protection across your data, identities, and devices. This model shows you which Zero Trust capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
 
 --> 
-
-
 <a name="BKMK_ediscovery"></a>
-##Advanced eDiscovery体系结构Microsoft 365
 
-Advanced eDiscovery端到端工作流和数据流，包括Microsoft 365多地理位置环境内。
+## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Advanced eDiscovery体系结构Microsoft 365
+
+Advanced eDiscovery端到端工作流和数据流，Microsoft 365多地理位置环境中。
 
 | Item | 说明 |
 |:-----|:-----|
 |[![模型海报：Advanced eDiscovery体系结构Microsoft 365。](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以图像视图](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \|[以 PDF 格式下载](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\|[下载为Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 更新时间：2020年 10 月|包括： <ul><li>  单个环境中端到端工作流</li><li>多地理位置环境中Microsoft 365端到端工作流 </li><li>支持 EDRM 工作流的端到端数据流</li> |
-
-
 
 ## <a name="microsoft-telephony-solutions"></a>Microsoft 电话解决方案
 
@@ -117,7 +119,7 @@ Advanced eDiscovery端到端工作流和数据流，包括Microsoft 365多地理
 
 | Item | 说明 |
 |:-----|:-----|
-|[![Microsoft 电话解决方案海报。](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021 年 3 月更新 | 有关详细信息，请参阅[规划语音Teams解决方案](/microsoftteams/cloud-voice-landing-page)。|
+|[![Microsoft 电话解决方案海报。](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021 年 3 月更新 | 有关详细信息，请参阅规划[语音Teams解决方案](/microsoftteams/cloud-voice-landing-page)。|
 
 
 ## <a name="set-up-your-infrastructure-for-hybrid-work"></a>设置混合作业的基础结构
@@ -125,7 +127,7 @@ Advanced eDiscovery端到端工作流和数据流，包括Microsoft 365多地理
 借助 Microsoft 365 和其他 Microsoft 云技术，你可以为工作人员提供安全访问组织本地和基于云的信息、工具和资源，从他们家访问。
 
 [![设置混合工作海报的基础结构。](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) <br/>
-[PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) | [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
+[PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)   <br>
 2021 年 6 月更新
 
 有关详细信息，请参阅此海报文章[：设置基础结构以](empower-people-to-work-remotely.md)使用 Microsoft 365。

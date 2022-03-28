@@ -20,12 +20,12 @@ ms.custom:
 description: 本文将了解如何使用除名门户将自己从阻止的Microsoft 365名单中删除。 这是解决 5.7.511 访问被拒绝错误的最佳响应。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 36187288b2a7acf1a852e6c203cbb84035ba5d7a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 58ddb2913ce7ecd047b1d5acb360c8f4c9ff5074
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320237"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775777"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>使用除名门户将自己从阻止的发件人名单中删除，地址 5.7.511 访问被拒绝错误
 
@@ -55,7 +55,6 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvD]
 
-
 ## <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list-after-errors-like-57511-access-denied"></a>若要使用除名门户将自己从阻止的发件人名单中删除 (5.7.511 拒绝访问等错误) 
 
 1. 在 Web 浏览器中，请转至 <https://sender.office.com>。
@@ -82,13 +81,13 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
 请参阅 [在 EOP 中创建](create-safe-sender-lists-in-office-365.md) 安全发件人列表和 [EOP](outbound-spam-controls.md) 中的出站垃圾邮件保护，以防止阻止 IP。
 
 ### <a name="how-do-fix-error-code-57511"></a>如何修复错误代码 5.7.511
- 
-如果在传递你所发送的电子邮件时出现问题，Microsoft 365 或 Office 365 将向你发送一封电子邮件进行通知。 所收到的此电子邮件是一封传递状态通知，也称为 DSN 或退回邮件。 最常见的类型被称为未送达报告 (NDR)，可告知你某封邮件未送达。 在某些情况下，Microsoft 必须对来自 IP 的流量进行其他调查，如果您收到 NDR 代码 5.7.511，您将不能使用除名门户。
- 
->   550 5.7.511 拒绝访问，禁止发件人[xxx.xxx.xxx.xxx]。 若要请求从此列表删除，请转发此消息 delist@messaging.microsoft.com。 有关详细信息，请转到 https://go.microsoft.com/fwlink/?LinkId=526653。 
- 
-在请求从此列表删除的电子邮件中，提供完整的 NDR 代码和 IP 地址。 Microsoft 将在 48 小时内通过以下步骤联系你。 
 
-## <a name="more-information"></a>更多信息
-  
-有关 **Outlook.com 的除名表单，可以在此处** 找到使用者 [服务](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75)。 请务必先阅读 [常见问题解答](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) ，了解 *提交* 方向。
+如果在传递你所发送的电子邮件时出现问题，Microsoft 365 或 Office 365 将向你发送一封电子邮件进行通知。 所收到的此电子邮件是一封传递状态通知，也称为 DSN 或退回邮件。 最常见的类型被称为未送达报告 (NDR)，可告知你某封邮件未送达。 在某些情况下，Microsoft 必须对来自 IP 的流量进行其他调查，如果您收到 NDR 代码 5.7.511，您将不能使用除名门户。
+
+> 550 5.7.511 拒绝访问，禁止发件人[xxx.xxx.xxx.xxx]。 若要请求从此列表删除，请转发此消息 delist@messaging.microsoft.com。 有关详细信息，请转到 <https://go.microsoft.com/fwlink/?LinkId=526653>。
+
+在请求从此列表删除的电子邮件中，提供完整的 NDR 代码和 IP 地址。 Microsoft 将在 48 小时内通过以下步骤联系你。
+
+## <a name="more-information"></a>详细信息
+
+有关 **Outlook.com 的除名表单，可以在此处** 找到使用者 [服务](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75)。 请务必先阅读 [常见问题解答](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) ，了解 _提交_ 方向。

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34e8b1f97319e4881175c7d79629dbed83730738
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 3a7a4b7ab842baaadb276e60037451e8eb919bf9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531698"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465445"
 ---
 # <a name="enable-corelight-data-integration"></a>启用 Corelight 数据集成
 
@@ -36,7 +36,7 @@ ms.locfileid: "61531698"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
-Microsoft 与 [Corelight 合作，Corelight](https://corelight.com/integrations/iot-security)是业界领先的开放网络检测和响应 (NDR) 平台提供商，可帮助你发现整个组织的 IoT/OT 设备。 通过使用从 Corelight 网络设备发送的数据，Microsoft 365 Defender可增强非托管设备的网络活动的可见性，包括与其他非托管设备或外部网络的通信。
+Microsoft 与 [Corelight 合作，Corelight](https://corelight.com/integrations/iot-security) 是业界领先的开放网络检测和响应 (NDR) 平台提供商，可帮助你发现整个组织的 IoT/OT 设备。 使用从 Corelight 网络设备发送的数据Microsoft 365 Defender可增强非托管设备的网络活动的可见性，包括与其他非托管设备或外部网络的通信。
 
 启用此数据源后，Corelight 网络设备的所有事件将发送到Microsoft 365 Defender。 可以在非托管设备时间线（Microsoft Defender for Endpoint 设备清单中提供）中查看这些活动。 有关详细信息，请参阅设备 [发现](device-discovery.md)。
 
@@ -50,11 +50,11 @@ Microsoft 与 [Corelight 合作，Corelight](https://corelight.com/integrations/
 
 ### <a name="step-1-turn-on-corelight-as-a-data-source"></a>步骤 1：打开 Corelight 作为数据源
 
-1. 在门户的导航窗格中 [https://security.microsoft.com](https://security.microsoft.com/) ，选择"设置 \> **设备发现** \> **数据源"。**
+1. 在门户的导航窗格中，[https://security.microsoft.com](https://security.microsoft.com/)选择"**设置** \> **设备发现** \> **数据源"**。
 
-    ![数据源的图像](images/enable-corelight.png)
+   :::image type="content" source="images/enable-corelight.png" alt-text="Microsoft 365 Defender门户中的&quot;数据源&quot;页" lightbox="images/enable-corelight.png":::
 
-2. 选择 **"将 Corelight 数据发送到 M365D"，** 然后选择"保存 **"。**
+2. 选择 **"将 Corelight 数据发送到 M365D"** ，然后选择"保存 **"**。
 
 ### <a name="step-2-provide-permission-for-corelight-to-send-events-to-microsoft-365-defender"></a>步骤 2：为 Corelight 提供向用户发送事件Microsoft 365 Defender
 
@@ -62,41 +62,41 @@ Microsoft 与 [Corelight 合作，Corelight](https://corelight.com/integrations/
 > 你必须是全局管理员才能授予 Corelight 访问组织中资源的权限。
 
 1. 作为租户全局管理员，转到此 [链接以](<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true>) 授予权限。
-2. 转到 [https://security.microsoft.com](https://security.microsoft.com/) 门户，选择 **"设置Microsoft 365 Defender"，** \> 然后记下租户 **ID。** 配置 Corelight 设备时将需要此信息。
+2. 转到门户 [https://security.microsoft.com](https://security.microsoft.com/)**，选择设置** \> **Microsoft 365 Defender**，然后记下租户 **ID**。 配置 Corelight 设备时将需要此信息。
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>步骤 3：配置 Corelight 设备以将数据发送到Microsoft 365 Defender
 
 > [!NOTE]
 >  集成将在 Corelight 传感器软件 v24 及更高版本中公开。 
 
-若要在 v23 或 v22.1 中预览，必须执行 才能在 GUI 中 `corelight-client configuration update --enable.adfiot 1` 启用配置部分。
+若要在 v23 或 v22.1 中预览，必须执行 才能 `corelight-client configuration update --enable.adfiot 1` 在 GUI 中启用配置部分。
 
-除此之外，GUI 验证还要求在所有 v23 发行版的配置部分中配置代理。  你提供的代理是必需的，但实际上不会使用。 在 `127.0.0.1:1234` _kafka 代理_ 字段中输入以确保验证成功，然后再执行以下步骤以将数据发送到 Microsoft 365 Defender。
+除此之外，GUI 验证还要求在所有 v23 发行版的配置部分中配置代理。  你提供的代理是必需的，但实际上不会使用。 在 `127.0.0.1:1234` _kafka 代理_ 字段中输入以确保验证成功，然后再执行以下步骤，以将数据发送到 Microsoft 365 Defender。
 
 > [!NOTE]
 > 你需要将你的传感器连接到 Internet，以同时访问 Defender 和 Corelight 云服务，解决方案可以正常工作。
 
 #### <a name="enabling-in-the-corelight-sensor-gui"></a>在 Corelight 传感器 GUI 中启用
 
-1. 在"Corelight 传感器 GUI 配置"部分，选择"**传感器导出** \> **"。**
-2. 从列表中，转到 **"导出到 KAFKA"，** 然后选择开关将其打开。
+1. 在"Corelight 传感器 GUI 配置"部分，选择" **传感器导出** \> **"**。
+2. 从列表中，转到 **"导出到 KAFKA** "，然后选择开关将其打开。
 
-   ![kafka 导出的图像](images/exporttokafka.png)
+   :::image type="content" source="images/exporttokafka.png" alt-text="kafka 导出" lightbox="images/exporttokafka.png":::
 
-3. 接下来，打开 **"导出到 AZURE DEFENDER FOR IOT"，** 在"租户 ID"字段中输入步骤 1 中说明的租户 ID。
+3. 接下来，打开 **"导出到 AZURE DEFENDER FOR IOT** "，在"租户 ID"字段中输入步骤 1 中说明的租户 ID。
 
-   ![iot 导出的图像](images/exporttodiot.png)
+   :::image type="content" source="images/exporttodiot.png" alt-text="iot 导出" lightbox="images/exporttodiot.png":::
 
 4. 选择“**应用更改**”。
 
-   ![应用图像 ](images/corelightapply.png)
+   :::image type="content" source="images/corelightapply.png" alt-text="&quot;应用更改&quot;图标" lightbox="images/corelightapply.png":::
 
 > [!NOTE]
 > Kafka 中的 (排除日志排除和筛选器) 不应更改。 将忽略做出的任何更改。
 
 #### <a name="enabling-in-the-corelight-client"></a>在 corelight-client 中启用
 
-可以使用 corelight-client 中的以下命令打开 **"导出到 KAFKA"** 和 **"导出到 AZURE DEFENDER FOR IOT"：**
+可以使用 corelight-client 中的以下命令打开 **"导出到 KAFKA** "和 **"导出到 AZURE DEFENDER FOR IOT** "：
 
 `corelight-client configuration update --bro.export.kafka.defender.enable true --bro.export.kafka.defender.tenant\_id <your tenant>`.
 

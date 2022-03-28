@@ -342,7 +342,7 @@
               href: customize-a-built-in-sensitive-information-type.md
             - name: 修改精确数据匹配架构，以使用可配置匹配
               href: sit-modify-edm-schema-configurable-match.md
-            - name: 为精确数据匹配活动创建通知（预览）
+            - name: 创建精确数据匹配活动通知
               href: sit-edm-notifications-activities.md
             - name: 在合规中心管理自定义敏感信息类型
               href: sit-manage-custom-sits-compliance-center.md
@@ -517,6 +517,8 @@
               href: dlp-policy-reference.md
         - name: 开始使用 DLP
           items:
+            - name: 配置终结点数据丢失防护设置
+              href: dlp-configure-endpoint-settings.md
             - name: 开始使用默认 DLP 策略
               href: get-started-with-the-default-dlp-policy.md
             - name: 通过模板创建 DLP 策略
@@ -533,6 +535,8 @@
               href: dlp-chrome-get-started.md
             - name: 数据丢失防护警报仪表板入门
               href: dlp-alerts-dashboard-get-started.md
+            - name: Power BI 数据丢失防护策略入门（预览版）
+              href: dlp-powerbi-get-started.md
         - name: 使用 DLP
           items:
             - name: DLP 和 Microsoft Teams

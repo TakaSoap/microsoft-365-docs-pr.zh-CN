@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65df8553f5ee3b7dd7876557398e0d4aa22c7bd5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b0b94e4905a780be9a608c8e91967b47a4db7160
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323517"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465742"
 ---
 # <a name="create-and-manage-device-tags"></a>创建和管理设备标签
 
@@ -56,11 +56,12 @@ ms.locfileid: "63323517"
 
 2. 从 **"响应操作** "行中选择"管理标记"。
 
-    :::image type="content" alt-text="管理标记按钮的图像。" source="images/manage-tags-option.png":::
+    :::image type="content" source="images/manage-tags-option.png" alt-text="管理标记按钮的图像" lightbox="images/manage-tags-option.png":::
+    
 
 3. 键入 以查找或创建标记
 
-    :::image type="content" alt-text="在设备上添加标记的图像1。" source="images/create-new-tag.png":::
+    :::image type="content" source="images/create-new-tag.png" alt-text="在 device1 上添加标记" lightbox="images/create-new-tag.png":::
 
 标记将添加到设备视图，并且也会反映在 **设备清单** 视图中。 然后，可以使用 **标记** 筛选器查看相关设备列表。
 
@@ -71,7 +72,7 @@ ms.locfileid: "63323517"
 
 您还可以从此视图中删除标记。
 
-:::image type="content" alt-text="在 device2 上添加标记的图像。" source="images/new-tag-label-display.png":::
+:::image type="content" source="images/new-tag-label-display.png" alt-text="在 device2 上添加标记" lightbox="images/new-tag-label-display.png":::
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>通过设置注册表项值添加设备标记
 

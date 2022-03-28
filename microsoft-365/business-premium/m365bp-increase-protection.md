@@ -2,9 +2,9 @@
 title: 提高威胁防护Microsoft 365 商业高级版
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: Skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,234 +25,266 @@ search.appverid:
 - BCS160
 - MET150
 description: 获取有关提高企业防护级别的Microsoft 365 商业高级版
-ms.openlocfilehash: e8d1b010f18e595e0ea7c17caf94ca8d89eb0f47
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c6533b966587235b8f29c1ce53bd9d5579b23b9c
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330784"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64403800"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>提高威胁防护Microsoft 365 商业高级版
 
-本文可帮助你增强对 Microsoft 365 订阅的保护，以抵御网络钓鱼、恶意软件和其他威胁。 这些建议适用于对安全性需求不断增加的组织，如政治宣传活动、法律办公室和医疗保健部门。
+在此目标中，使用安全机制增强Microsoft 365 商业高级版。 保护组织免受网络钓鱼、恶意软件和其他威胁至关重要。 这些建议尤其适用于政治宣传活动、法律办公室和医疗保健机构，它们增加了安全性需求。
 
-开始之前，请检查 Microsoft 安全分数。 Microsoft 安全分数根据常规活动和安全设置分析组织的安全性，并分配分数。 首先记下当前分数。 执行本文中推荐的操作会增加分数。 目标不是达到最高分，而是注意保护环境的机会，这些机会不会对用户的工作效率产生负面影响。
+## <a name="start-with-secure-score"></a>从安全分数开始
+
+Microsoft 安全分数根据常规活动和安全设置分析组织的安全性，并分配分数。 记下当前分数，然后执行本文中建议的操作以提高分数。 目标是始终注意并尝试提高分数。
 
 有关详细信息，请参阅 [Microsoft 安全分数](../security/defender/microsoft-secure-score.md)。
 
-## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>提高邮件中恶意软件防护级别
+## <a name="review-and-apply-preset-security-policies"></a>查看和应用预设安全策略
 
-您的Office 365或Microsoft 365环境包括恶意软件防护，但您可以通过阻止具有通常用于恶意软件的文件类型的附件来增强此保护。 在电子邮件中加强恶意软件保护：
+你的订阅 [包括预设安全策略](../security/office-365-security/preset-security-policies.md) ，这些策略使用建议的反垃圾邮件、反恶意软件和防钓鱼保护设置。 默认情况下，内置保护已启用;请考虑应用标准或严格保护来增强安全性。 
 
-1. 转到安全<a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365安全&中心</a>，然后使用管理员帐户凭据登录。
+预设安全策略包括：
 
-2. 在左侧导航窗格中的"威胁 **管理"** 下，选择" **策略** \> **""反恶意软件"**。
+- 配置文件，用于确定保护级别
+- 策略 (如反垃圾邮件、反恶意软件、防钓鱼、保险箱附件保险箱链接) 
+- 策略 (组、用户或域等，用于接收策略和任何) 
 
-3. 双击默认策略以编辑此公司范围内的策略。
+下表总结了保护级别和预设策略类型。
 
-4. 单击“**设置**”。
+| 保护级别 | 说明 |
+|:---|:---|
+| **标准保护** <br/> (*大多数企业推荐)* | 标准保护使用适合大多数用户的基线配置文件 <br/><br/>它包括反垃圾邮件、反恶意软件、反网络钓鱼、欺骗设置、模拟设置、保险箱链接保险箱附件策略。  |
+| **严格保护**  | 严格保护包含与标准保护相同类型的策略，但具有更严格的设置。 如果你的企业必须满足其他安全要求或法规，请考虑对优先用户或高价值目标应用严格保护。 |
+| **内置保护** | 防范电子邮件中的恶意链接和附件。 默认情况下启用并应用于所有用户。  |
 
-5. 在 **"常见附件类型筛选器"下，** 选择" **打开"**。 被阻止的文件类型将在此控件正下方的窗口中列出。 请确保添加以下文件类型：
+可以指定用户、组和域以接收预设策略，也可以定义某些例外，但无法自行更改预设策略。
+
+还可以为自定义设置创建自己的安全策略，以满足公司的需求。
+
+
+
+
+<!--https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide
+
+
+## Raise the level of protection against malware in mail
+
+Your Office 365 or Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email:
+
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account credentials.
+
+2. In the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
+
+3. Double-click the default policy to edit this company-wide policy.
+
+4. Click **Settings**.
+
+5. Under **Common Attachment Types Filter**, select **On**. The file types that are blocked are listed in the window directly below this control. Make sure you add these filetypes:
 
    `ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif`
 
-   如果需要，稍后可以添加或删除文件类型。
+   You can add or delete file types later, if needed.
 
-6. 单击“保存”。
+6. Click **Save.**
 
-有关详细信息，请参阅 [EOP 中的反恶意软件保护](../security/office-365-security/anti-malware-protection.md)。
+For more information, see [Anti-malware protection in EOP](../security/office-365-security/anti-malware-protection.md).
 
-## <a name="protect-against-ransomware"></a>防范勒索软件
+## Protect against ransomware
 
-勒索软件通过加密文件或锁定计算机屏幕来限制对数据的访问。 然后，它尝试通过请求"勒索"（通常采用加密货币（如"Itin"）来从犯罪中勒索资金，以交换对数据的访问。
+Ransomware restricts access to data by encrypting files or locking computer screens. It then attempts to extort money from victims by asking for "ransom," usually in the form of cryptocurrencies like Bitcoin, in exchange for access to data.
 
-您可以通过创建一个或多个邮件流规则来阻止通常用于勒索软件的文件扩展名 (这些扩展名已添加到邮件步骤) 中提高恶意软件防护级别，或警告接收电子邮件附件的用户[](#raise-the-level-of-protection-against-malware-in-mail)。
+You can protect against ransomware by creating one or more mail flow rules to block file extensions that are commonly used for ransomware (these were added in the [raise the level of protection against malware in mail](#raise-the-level-of-protection-against-malware-in-mail) step), or to warn users who receive these attachments in email.
 
-除了在上一步中阻止的文件之外，在打开包含宏的 Office 文件附件之前创建一个警告用户的规则也是一个不错的做法。 勒索软件可以隐藏在宏内，因此警告用户不要向他们不知道的人打开这些文件。
+In addition to the files that you blocked in the previous step, it's also good practice to create a rule to warn users before opening Office file attachments that include macros. Ransomware can be hidden inside macros, so warn users to not open these files from people they don't know.
 
-创建邮件传输规则：
+To create a mail transport rule:
 
-1. 转到 管理中心 ，<https://admin.microsoft.com>然后选择 管理 **中心** \> **Exchange**。
+1. Go to the admin center at <https://admin.microsoft.com> and choose **Admin centers** \> **Exchange**.
 
-2. 在" **邮件流"** 类别中，单击"规则 **"**。
+2. In the **mail flow** category, click **rules**.
 
-3. 单击 **+**，然后单击" **创建新规则"**。
+3. Click **+**, and then click **Create a new rule**.
 
-4. 单击 **对话框** 底部的"更多选项"以查看完整的选项集。
+4. Click **More options** at the bottom of the dialog box to see the full set of options.
 
-5. 为规则应用下表中的设置。 保留其余设置为默认设置，除非您要更改它们。
+5. Apply the settings in the following table for the rule. Leave the rest of the settings at the default, unless you want to change them.
 
-6. 单击“**保存**”。
+6. Click **Save**.
 
-|Setting|在打开文件附件之前Office警告|
+|Setting|Warn users before opening attachments of Office files|
 |---|---|
-|名称|反勒索软件规则：警告用户|
-|在 中应用此规则。 . .|任何附件 。 . . 文件扩展名匹配 。 . .|
-|指定单词或短语|添加以下文件类型： <br/> `dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm`|
-|执行以下操作。 . .|使用邮件通知收件人|
-|提供消息文本|不要从您不知道的人打开这些类型的文件，因为它们可能包含包含恶意代码的宏。|
+|Name|Anti-ransomware rule: warn users|
+|Apply this rule if . . .|Any attachment . . . file extension matches . . .|
+|Specify words or phrases|Add these file types: <br/> `dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm`|
+|Do the following . . .|Notify the recipient with a message|
+|Provide message text|Do not open these types of files from people you do not know because they might contain macros with malicious code.|
 
-有关详细信息，请参阅：
+For more information, see:
 
-- [勒索软件：如何降低风险](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
+- [Ransomware: how to reduce risk](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
-- [还原OneDrive](https://support.microsoft.com//office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
+- [Restore your OneDrive](https://support.microsoft.com//office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
-## <a name="stop-auto-forwarding-for-email"></a>停止电子邮件的自动转发
+## Stop auto-forwarding for email
 
-获取用户邮箱访问权限的黑客可以通过将邮箱设置为自动转发电子邮件来窃取您的邮件。 即使没有用户感知，也可能发生此情况。 您可以通过配置邮件流规则来防止发生这种情况。
+Hackers who gain access to a user's mailbox can steal your mail by setting the mailbox to automatically forward email. This can happen even without the user's awareness. You can prevent this from happening by configuring a mail flow rule.
 
-若要创建邮件传输规则，请观看此 [简短视频](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) 或按照以下步骤操作：
+To create a mail transport rule, either watch [this short video](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) or follow these steps:
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心</a>中，单击"**管理中心** \> **Exchange"**。
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, click **Admin centers** \> **Exchange**.
 
-2. 在" **邮件流"** 类别中，单击"规则 **"**。
+2. In the **mail flow** category, click **rules**.
 
-3. 单击 **+**，然后单击" **创建新规则"**。
+3. Click **+**, and then click **Create a new rule**.
 
-4. 单击 **对话框** 底部的"更多选项"以查看完整的选项集。
+4. Click **More options** at the bottom of the dialog box to see the full set of options.
 
-5. 应用下表中的设置。 保留其余设置为默认设置，除非您要更改它们。
+5. Apply the settings in the following table. Leave the rest of the settings at the default, unless you want to change them.
 
-6. 单击“**保存**”。
+6. Click **Save**.
 
-|Setting|在打开文件附件之前Office警告|
+|Setting|Warn users before opening attachments of Office files|
 |---|---|
-|名称|阻止电子邮件自动转发到外部域|
-|如果 ...|发件人 。 . . 是外部/内部 。 . . 组织内部|
-|添加条件|邮件属性 。 . . 包括邮件类型 。 . . 自动转发|
-|执行以下操作...|阻止邮件 。 . . 拒绝邮件并给出说明。|
-|提供消息文本|出于安全考虑，阻止在此组织外自动转发电子邮件。|
+|Name|Prevent auto forwarding of email to external domains|
+|Apply this rule if ...|The sender . . . is external/internal . . . Inside the organization|
+|Add condition|The message properties . . . include the message type . . . Auto-forward|
+|Do the following ...|Block the message . . . reject the message and include an explanation.|
+|Provide message text|Auto-forwarding email outside this organization is prevented for security reasons.|
 
-## <a name="protect-your-email-from-phishing-attacks"></a>保护电子邮件免受网络钓鱼攻击
+## Protect your email from phishing attacks
 
-如果已针对您的 Office 365 或 Microsoft 365 环境配置了一个或多个自定义域，您可以配置目标防钓鱼保护。 防钓鱼保护是 Microsoft Defender Office 365的一部分，可帮助保护组织免受基于恶意模拟的网络钓鱼攻击和其他网络钓鱼攻击。 如果尚未配置自定义域，则无需这样做。
+If you've configured one or more custom domains for your Office 365 or Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection, part of Microsoft Defender for Office 365, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you don't need to do this.
 
-我们建议你通过创建一个策略来保护最重要的用户和自定义域来开始使用此保护。
+We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain.
 
-若要在 Defender for Office 365 创建防钓鱼策略，请观看此简短培训[视频](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)，或完成以下步骤：
+To create an anti-phishing policy in Defender for Office 365, watch [this short training video](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c), or complete the following steps:
 
-1. 转到"<a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365安全&合规中心"</a>。
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a>.
 
-2. 在左侧导航窗格中的"威胁 **管理"** 下，选择"策略 **"**。
+2. In the left navigation pane, under **Threat management**, choose **Policy**.
 
-3. 在" **策略"** 页面上，选择 **"防钓鱼"**。
+3. On the **Policy** page, choose **Anti-phishing**.
 
-4. 在" **防钓鱼"页面上** ，选择" **+ 创建"**。 向导将启动，可分步定义防钓鱼策略。
+4. On the **Anti-phishing** page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
 
-5. 指定策略的名称、说明和设置，如下图所示。 有关详细信息，请参阅[了解 Microsoft Defender for Office 365 策略](../security/office-365-security/set-up-anti-phishing-policies.md)。
+5. Specify the name, description, and settings for your policy as recommended in the chart below. For more information, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/office-365-security/set-up-anti-phishing-policies.md).
 
-6. 查看设置后，请根据情况选择" **创建此** 策略"或 **"保存"**。
+6. After you've reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
 
-|设置或选项|推荐设置|
+|Setting or option|Recommended setting|
 |---|---|
-|名称|域和最有价值的员工|
-|说明|确保不会模拟最重要的员工和域。|
-|添加要保护的用户|选择 **+ 添加条件，收件人是**。 键入用户名或输入业务所有者、合作伙伴或候选人、经理和其他重要员工成员的电子邮件地址。 您最多可以添加 20 个要防止模拟的内部和外部地址。|
-|添加要保护的域|选择 **+ 添加条件，收件人域为**。 如果定义了自定义域，请输入Microsoft 365订阅关联的自定义域。 可以输入多个域。|
-|选择操作|如果电子邮件是由模拟用户发送的：选择"将邮件重定向到其他电子邮件地址"，然后键入安全管理员的电子邮件地址;例如，*Alice<span><span>@contoso.com*。 <br/> 如果电子邮件是由模拟域发送的：请选择“隔离邮件”。|
-|邮箱智能|默认情况下，创建新的反钓鱼策略时，将选择邮箱智能。 最好将此设置保留为“打开”。|
-|添加受信任的发件人和域|可以在此处添加您自己的域，或任何其他受信任域。|
-|应用于|选择“收件人域为”。 在“以下任何项”中，选择“选择”。 选择“+ 添加”。 选中域名称旁边的复选框，例如 *contoso。<span><span>com*，在列表中，然后选择"添加 **"**。 选择“完成”。|
+|Name|Domain and most valuable staff|
+|Description|Ensure most important staff and our domain are not being impersonated.|
+|Add users to protect|Select **+ Add a condition, The recipient is**. Type user names or enter the email address of the business owners, partners, or candidate, managers, and other important staff members. You can add up to 20 internal and external addresses that you want to protect from impersonation.|
+|Add domains to protect|Select **+ Add a condition, The recipient domain is**. Enter the custom domain associated with your Microsoft 365 subscription, if you defined one. You can enter more than one domain.|
+|Choose actions|If email is sent by an impersonated user: Choose **Redirect message to another email address**, and then type the email address of the security administrator; for example, *Alice<span><span>@contoso.com*. <br/> If email is sent by an impersonated domain: Choose **Quarantine message**.|
+|Mailbox intelligence|By default, mailbox intelligence is selected when you create a new anti-phishing policy. Leave this setting **On** for best results.|
+|Add trusted senders and domains|Here you can add your own domain, or any other trusted domains.|
+|Applied to|Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, *contoso.<span><span>com*, in the list, and then select **Add**. Select **Done**.|
 
-有关详细信息，请参阅在 [Defender for Office 365 中设置防钓鱼Office 365](../security/office-365-security/set-up-anti-phishing-policies.md)。
+For more information, see [Set up anti-phishing policies in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
 
-## <a name="protect-against-malicious-attachments-files-and-links-with-defender-for-office-365"></a>使用 Defender for Office 365 防止恶意附件、文件和Office 365
+## Protect against malicious attachments, files, and links with Defender for Office 365
 
-![指向 的横幅 https://aka.ms/aboutM365preview。](../media/m365admincenterchanging.png)
+![Banner that point to https://aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)
 
-首先，请确保在 <https://admin.microsoft.com> 管理中心中，你已打开新的管理中心预览。 打开文本"新建管理中心"**旁边的切换。**
+First, make sure, in the admin center at <https://admin.microsoft.com> that you have the new admin center preview turned on. Turn on the toggle next to the text **The new admin center**.
 
-   ![打开新的管理中心预览。](../media/previewon.png)
+   ![The new admin center preview on.](../media/previewon.png)
 
-如果尚未在租户中看到带卡的"安装"页面，请参阅安全与合规中心&这些步骤。 请参阅[在安全保险箱合规](#set-up-safe-attachments-in-the-security--compliance-center)&设置附件和在安全与保险箱中心中设置&[链接](#set-up-safe-links-in-the-security--compliance-center)。
+If you don't see the **Setup** page with cards in your tenant yet, see how to complete these steps in Security & Compliance Center. See [Set up Safe Attachments in the Security & Compliance Center](#set-up-safe-attachments-in-the-security--compliance-center) and [Set up Safe Links in the Security & Compliance Center](#set-up-safe-links-in-the-security--compliance-center).
 
-1. 在左侧导航中，选择"设置 **"**。
-2. 在" **设置"** 页上 **，选择"** 从高级威胁 **卡增强保护"上的"查看** "。
+1. In the left nav, choose **Setup**.
+2. On the **Setup** page, choose **View** on the **Increase protection from advanced threats** card.
 
-   ![在"增强对高级威胁的保护"上选择"查看"。](../media/startatp.png)
+   ![Choose View on the Increase protection from advanced threats.](../media/startatp.png)
 
-3. On the **Increase protection from advanced threats** page， choose **Get started**.
-4. 在打开的窗格中，选中"电子邮件中的链接和附件"、"扫描 SharePoint、**OneDrive 和 Teams** 中的文件"和"扫描 Office 桌面和 **Office Online** 应用中的链接"下的复选框，在"扫描恶意内容的项目"下。
-
-   在 **"电子邮件中的链接和附件"** 下，键入"所有用户"或要扫描其电子邮件的特定用户。
+3. On the **Increase protection from advanced threats** page, choose **Get started**.
+4. On the pane that opens, select the check boxes next to **Links and attachments in email**, **Scan files in SharePoint, OneDrive, and Teams**, and **Scan links in Office desktop and Office Online apps** under **Scan items for malicious content**.
+    
+   Under **Links and attachments in email**, Type in All Users, or the specific users whose email you want scanned.
 
    ![Select all check boxes in Increase protection from advanced threats.](../media/setatp.png)
 
-5. 选择 **"创建策略**"以打开保险箱和保险箱链接"。
+5. Choose **Create policies** to turn on Safe Attachments and Safe Links.
 
-### <a name="set-up-safe-attachments-in-the-security--compliance-center"></a>在安全保险箱合规中心&附件
+### Set up Safe Attachments in the Security & Compliance Center
 
-人们定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 通过查看电子邮件来判断附件是安全还是恶意并不总是那么容易。 Microsoft Defender for Office 365包括保险箱附件保护，但默认情况下不会启用此保护。 我们建议您创建一个新规则以开始使用此保护。 此保护扩展到 SharePoint、OneDrive 和 Microsoft Teams 中的文件。
+People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
-若要创建保险箱附件策略，请观看此[简短视频](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成以下步骤：
+To create a Safe Attachment policy, either watch [this short video](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), or complete the following steps:
 
-1. 转到Office 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">安全&中心，</a>然后使用管理员帐户登录。
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account.
 
-2. 在左侧导航窗格中的"威胁 **管理"** 下，选择"策略 **"**。
+2. In the left navigation pane, under **Threat management**, choose **Policy**.
 
-3. 在"策略"页上，选择"**保险箱附件"**。
+3. On the Policy page, choose **Safe Attachments**.
 
-4. On the 保险箱 attachments page， apply this protection broadly by selecting the **Turn on ATP for SharePoint， OneDrive， and Microsoft Teams** check box.
+4. On the Safe attachments page, apply this protection broadly by selecting the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** check box.
 
-5. 选择 **+** 以创建新策略。
+5. Select **+** to create a new policy.
 
-6. 应用下表中的设置。
+6. Apply the settings in the following table.
 
-7. 查看设置后，请根据情况 **选择"创建此** 策略 **"或"** 保存"。
+7. After you review your settings, choose **Create this policy** or **Save**, as appropriate.
 
-|设置或选项|推荐设置|
+|Setting or option|Recommended setting|
 |---|---|
-|名称|使用检测到的恶意软件阻止当前和将来的电子邮件。|
-|说明|使用检测到的恶意软件阻止当前和未来的电子邮件和附件。|
-|保存附件未知恶意软件响应|选择 **"阻止 - 阻止当前和未来包含检测到的恶意软件的电子邮件和附件"**。|
-|检测时重定向附件|启用重定向 (选中此框)  <br/> 输入管理员帐户或邮箱设置以隔离。 <br/> 如果恶意软件扫描附件出现时间过或出现错误，请应用 (选中此框) 。|
-|应用于|收件人域为 。 . . 选择你的域。|
+|Name|Block current and future emails with detected malware.|
+|Description|Block current and future emails and attachments with detected malware.|
+|Save attachments unknown malware response|Select **Block - Block the current and future emails and attachments with detected malware**.|
+|Redirect attachment on detection|Enable redirection (select this box) <br/> Enter the admin account or a mailbox setup for quarantine. <br/> Apply the above selection if malware scanning for attachments times out or error occurs (select this box).|
+|Applied to|The recipient domain is . . . select your domain.|
 
-有关详细信息，请参阅在 [Defender for Office 365 中设置防钓鱼Office 365](../security/office-365-security/set-up-anti-phishing-policies.md)。
+For more information, see [Set up anti-phishing policies in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
 
-### <a name="set-up-safe-links-in-the-security--compliance-center"></a>在安全保险箱合规中心设置&链接
+### Set up Safe Links in the Security & Compliance Center
 
-黑客有时会在电子邮件或其他文件中的链接中隐藏恶意网站。 保险箱链接是 Microsoft Defender for Office 365 的一部分，可通过提供电子邮件和 Office 文档中的 Web 地址 (URL) 点击时间验证，帮助保护你的组织。 保护通过链接保险箱定义。
+Hackers sometimes hide malicious websites in links in email or other files. Safe Links, part of Microsoft Defender for Office 365, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through Safe Links policies.
 
-我们建议您执行以下操作：
+We recommend that you do the following:
 
-- 修改默认策略以提高保护。
+- Modify the default policy to increase protection.
 
-- 添加面向域中所有收件人的新策略。
+- Add a new policy targeted to all recipients in your domain.
 
-若要设置保险箱链接，请观看此[简短培训视频](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成以下步骤：
+To set up Safe Links, watch [this short training video](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), or complete the following steps:
 
-1. 转到Office 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">安全&中心，</a>然后使用管理员帐户登录。
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account.
 
-2. 在左侧导航窗格中的"威胁 **管理"** 下，选择"策略 **"**。
+2. In the left navigation pane, under **Threat management**, choose **Policy**.
 
-3. 在"策略"页上，选择"**保险箱链接"**。
+3. On the Policy page, choose **Safe Links**.
 
-修改默认策略：
+To modify the default policy:
 
-1. 在"保险箱链接"页上，在"适用于整个组织的策略"**下**，选择"**默认策略**"。
+1. On the Safe links page, under **Policies that apply to the entire organization**, select the **Default** policy.
 
-2. 在 **设置适用于** 电子邮件以外的内容的内容下，选择"Microsoft 365 企业应用版，Office **适用于 iOS 和 Android。**
+2. Under **Settings that apply to content except email**, select **Microsoft 365 Apps for enterprise, Office for iOS and Android**.
 
-3. 单击“**保存**”。
+3. Click **Save**.
 
-要创建面向域中所有收件人的新策略，请执行：
+To create a new policy targeted to all recipients in your domain:
 
-1. 在"保险箱链接"页上，在"适用于整个组织的策略"**下****+**，单击以创建新策略。
+1. On the Safe links page, under **Policies that apply to the entire organization**, click **+** to create a new policy.
 
-2. 应用下表中列出的设置。
+2. Apply the settings listed in the following table.
 
-3. 单击“**保存**”。
+3. Click **Save**.
 
-|设置或选项|推荐设置|
+|Setting or option|Recommended setting|
 |---|---|
-|名称|保险箱域中所有收件人的链接策略|
-|为邮件中的未知潜在恶意 URL 选择操作|选择打开 - 当用户单击链接时，URL 将被重写，并针对 **已知恶意链接列表进行检查**。|
-|使用保险箱附件扫描可下载内容|选中此框。|
-|应用于|收件人域为 。 . . 选择你的域。|
+|Name|Safe links policy for all recipients in the domain|
+|Select the action for unknown potentially malicious URLs in messages|Select **On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.|
+|Use Safe Attachments to scan downloadable content|Select this box.|
+|Applied to|The recipient domain is . . . select your domain.|
 
-有关详细信息，请参阅 defender for [保险箱 中的链接Office 365](../security/office-365-security/safe-links.md)。
+For more information, see [Safe Links in Defender for Office 365](../security/office-365-security/safe-links.md).
+
+-->
 
 ## <a name="turn-on-the-unified-audit-log"></a>打开统一审核日志
 
@@ -278,6 +310,7 @@ ms.locfileid: "63330784"
 3. 在"共享"页面上的"文件和文件夹链接"下，选择"特定人员"，在"任何人"链接的高级设置下，选择"这些链接必须在此天数内过期"，然后键入 14 (或您希望将链接生存期限制为) 的另一天数。
 
    ![选择"特定人员"，将链接过期时间设置为 14 天。](../media/anyonelinks.png)
+
 
 ## <a name="activity-alerts"></a>活动警报
 
@@ -308,3 +341,4 @@ ms.locfileid: "63330784"
    ![与任何人共享日历忙/闲的屏幕截图。](../media/sharefreebusy.png)
 
 如果允许用户共享其日历，请参阅以下说明[，了解如何从](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) Outlook 网页版。
+

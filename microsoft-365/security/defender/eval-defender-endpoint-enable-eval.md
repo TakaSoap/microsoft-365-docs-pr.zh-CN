@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 846fd6854b8e2dcb408aaa55348380bb91c6b907
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: a12c81635f712dd0fac70101348d30bc1dc4f154
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172063"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754620"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>启用 Microsoft Defender for Endpoint 评估环境
 
@@ -39,7 +39,7 @@ ms.locfileid: "62172063"
 
 使用以下步骤启用 Microsoft Defender for Endpoint 评估。
 
-![在 Microsoft Defender 评估环境中启用 Microsoft Defender for Endpoint 的步骤。](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-enable-steps.png" alt-text="在 Microsoft Defender 评估环境中启用 Microsoft Defender for Endpoint 的步骤" lightbox="../../media/defender/m365-defender-endpoint-eval-enable-steps.png":::
 
 - [步骤 1.检查许可证状态](#step-1-check-license-state)
 - [步骤 2.载入终结点](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
@@ -47,26 +47,27 @@ ms.locfileid: "62172063"
 
 ## <a name="step-1-check-license-state"></a>步骤 1. 检查许可证状态
 
-首先需要检查许可证状态，以验证是否正确预配了许可证状态。 可以通过管理中心或管理门户Microsoft Azure **此操作**。
+首先需要检查许可证状态，以验证是否正确预配了许可证状态。 可以通过管理中心或管理中心门户Microsoft Azure **此操作**。
 
 
-1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. 若要查看许可证，请转到 Microsoft Azure **门户** 并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
-   ![Azure 许可页面的图像。](../../media/defender/atp-licensing-azure-portal.png)
+   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="应用商店门户中的 Azure Microsoft 365 Defender页面" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
 
-1. 或者，在管理中心中，导航到"**帐单**  >  **""订阅"。**
+1. 或者，在管理中心中，导航到 **"计费** > **""订阅"**。
 
     在屏幕上，你将看到所有预配的许可证及其当前 **状态**。
 
-    ![帐单许可证的图像。](../../media/defender/atp-billing-subscriptions.png)
+    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="客户门户中的&quot;帐单Microsoft Azure页面" lightbox="../../media/defender/atp-billing-subscriptions.png":::
+    
 
 ## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>步骤 2. 使用任何受支持的管理工具载入终结点
 
 确认许可证状态已正确预配后，你可以开始将设备载入服务。 
 
-为了评估适用于终结点的 Microsoft Defender，我们建议选择Windows执行评估的设备。
+为了评估适用于终结点的 Microsoft Defender，我们建议选择Windows一组设备进行评估。
 
-你可以选择使用任何受支持的管理工具，但 Intune 提供了最佳集成。 有关详细信息，请参阅在 Microsoft Intune 中[配置 Microsoft Defender for Endpoint。](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)
+你可以选择使用任何受支持的管理工具，但 Intune 提供了最佳集成。 有关详细信息，请参阅在 Microsoft Intune [中为终结点配置 Microsoft Defender](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)。
 
 规划 [部署](../defender-endpoint/deployment-strategy.md) 主题概述了部署 Defender for Endpoint 所需的一般步骤。  
 
@@ -80,9 +81,9 @@ ms.locfileid: "62172063"
 
 端点 | 工具选项
 :---|:---
-**Windows** | [本地脚本 (最多 10](../defender-endpoint/configure-endpoints-script.md)台设备) 、组策略[、Microsoft Endpoint Manager/](../defender-endpoint/configure-endpoints-mdm.md)移动设备[](../defender-endpoint/configure-endpoints-gp.md)管理器[、Microsoft Endpoint Configuration Manager、VDI](../defender-endpoint/configure-endpoints-sccm.md)[脚本](../defender-endpoint/configure-endpoints-vdi.md)、与[Microsoft Defender for Cloud 集成](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
-**macOS** | [本地脚本](../defender-endpoint/mac-install-manually.md)、 [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md)、 [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)、[移动设备管理](../defender-endpoint/mac-install-with-other-mdm.md)
-**Linux Server** | [本地脚本](../defender-endpoint/linux-install-manually.md)  [、安装](../defender-endpoint/linux-install-with-puppet.md)  [、Ansible](../defender-endpoint/linux-install-with-ansible.md)
+**Windows** | [本地脚本 (最多 10 台设备) ](../defender-endpoint/configure-endpoints-script.md)、组策略、[Microsoft Endpoint Manager/](../defender-endpoint/configure-endpoints-mdm.md)移动设备管理器、[Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md)、[VDI 脚本](../defender-endpoint/configure-endpoints-vdi.md)、与 [Microsoft Defender for Cloud 集成](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender) [](../defender-endpoint/configure-endpoints-gp.md)
+**macOS** | [本地脚本](../defender-endpoint/mac-install-manually.md)、[Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md)、[JAMF Pro](../defender-endpoint/mac-install-with-jamf.md) [移动设备管理](../defender-endpoint/mac-install-with-other-mdm.md)
+**Linux Server** | [本地脚本](../defender-endpoint/linux-install-manually.md)[、管理](../defender-endpoint/linux-install-with-puppet.md)[、Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **iOS** | [基于应用](../defender-endpoint/ios-install.md)
 **Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md)
 
@@ -91,6 +92,6 @@ ms.locfileid: "62172063"
 ## <a name="next-step"></a>后续步骤
 [设置适用于终结点的 Microsoft Defender 的试点](eval-defender-endpoint-pilot.md)
  
-返回到评估 Microsoft [Defender for Endpoint 的概述](eval-defender-endpoint-overview.md)
+返回到评估 [Microsoft Defender for Endpoint 的概述](eval-defender-endpoint-overview.md)
 
 返回到评估和试点[计划概述Microsoft 365 Defender](eval-overview.md)

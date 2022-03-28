@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (使用) ，Microsoft 365 Lighthouse帮助排查并解决错误消息和问题。
-ms.openlocfilehash: 49e6657815ed71476a3dc79d778f7e1fbacfa1f4
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 957177dd20817f9b3d5fbc378f22b19eeaef1f7f
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775447"
+ms.locfileid: "64403668"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>排查并解决邮件中的问题和Microsoft 365 Lighthouse
 
@@ -53,7 +53,7 @@ ms.locfileid: "63775447"
 
 **原因：** 你的客户租户不符合以下条件：
 
-  - 必须为 Managed Service Provider (MSP) 设置委派的 DAP () 才能管理客户安全*
+  - 必须为 Managed Service Provider (MSP) 设置委派的 DAP (MSP) 才能管理客户租户*
   - 必须至少有一个 Microsoft 365 商业高级版、Microsoft 365 E3 或 Windows 365 商业版许可证
   - 授权用户不能超过 1000 个 
 

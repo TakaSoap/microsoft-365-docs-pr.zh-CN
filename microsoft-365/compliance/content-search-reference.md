@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: 本文包含有关 Microsoft 365 合规中心中的内容搜索电子数据展示工具的参考信息，可帮助你了解有关内容搜索的众多详细信息。
-ms.openlocfilehash: 0688f3119b500f8e11675aa101d92942a3063e8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3f2918c378d94fd65d4a89afed50957a2da40a7d
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175403"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716367"
 ---
 # <a name="feature-reference-for-content-search"></a>内容搜索的功能参考
 
@@ -80,7 +80,7 @@ ms.locfileid: "60175403"
 
 - 若要搜索 Teams 和 Microsoft 365 组中的内容，必须指定与团队或组关联的邮箱和 SharePoint 网站。
 
-- 私人频道的内容将存储在每个用户的邮箱中，而不是团队邮箱中。 若要搜索私人频道中的内容，请参阅[私人频道的电子数据展示](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels)。
+- 私人频道的内容将存储在每个用户的邮箱中，而不是团队邮箱中。 要搜索私人频道中的内容，请参阅 [私人频道和共享频道的电子数据展示](/microsoftteams/ediscovery-investigation#ediscovery-of-private-and-shared-channels)。
 
 - 在 Exchange Online 中运行 **Get-UnifiedGroup** cmdlet，以查看团队或 Microsoft 365 组的属性。 这是一种获取与团队或组关联的网站 URL 的好方法。 例如，以下命令显示名为“高层领导团队”的 Microsoft 365 组的选定属性：
 

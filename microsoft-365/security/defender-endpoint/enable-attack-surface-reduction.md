@@ -14,15 +14,17 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 9f5d721148bdbd70347868d8e237a8454b33c346
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 14dfd8bd911be9eb3932f7664225532e493e8a80
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312091"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465368"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -156,7 +158,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 1. 打开管理Microsoft Endpoint Manager (MEM) 。 在" **主页"** 菜单中，单击  **"设备"**，选择 **"配置文件**"，然后单击" **创建配置文件"**。
 
    > [!div class="mx-imgBorder"]
-   > ![MEM 创建配置文件。](images/mem01-create-profile.png)
+   >  :::image type="content" source="images/mem01-create-profile.png" alt-text="管理中心门户Microsoft Endpoint Manager&quot;创建配置文件&quot;页" lightbox="images/mem01-create-profile.png":::
 
 2. 在 **"创建配置文件"** 中的以下两个下拉列表中，选择以下选项：
 
@@ -167,17 +169,17 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    选择 **"自定义**"，然后选择" **创建"**。
 
    > [!div class="mx-imgBorder"]
-   > ![MEM 规则配置文件属性。](images/mem02-profile-attributes.png)
+   > :::image type="content" source="images/mem02-profile-attributes.png" alt-text="管理中心门户中的规则Microsoft Endpoint Manager属性" lightbox="images/mem02-profile-attributes.png":::
 
 3. 自定义模板工具将打开到步骤 **1 基础知识**。 在 **"1 基础知识**"的 **"** 名称"中，键入模板的名称，在"说明"中，可以键入 (可选) 。
 
    > [!div class="mx-imgBorder"]
-   > ![MEM 基本属性。](images/mem03-1-basics.png)
+   > :::image type="content" source="images/mem03-1-basics.png" alt-text="管理中心门户Microsoft Endpoint Manager属性" lightbox="images/mem03-1-basics.png":::
 
 4. 单击“**下一步**”。 步骤 **2 将打开配置** 设置。 对于 OMA-URI 设置，**单击添加。** 此时将显示两个选项：" **添加"和** " **导出"**。
 
    > [!div class="mx-imgBorder"]
-   > ![MEM 配置设置。](images/mem04-2-configuration-settings.png)
+   > :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="管理中心门户Microsoft Endpoint Manager配置设置" lightbox="images/mem04-2-configuration-settings.png":::
 
 5. 再次 **单击"添加** "。 添加 **行 OMA-URI 设置** 打开。 在 **"添加行**"中，执行下列操作：
 
@@ -193,7 +195,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
      - 6： (启用 ASR 规则，但允许最终用户绕过阻止) 
 
    > [!div class="mx-imgBorder"]
-   > ![MEM OMA URI 配置。](images/mem05-add-row-oma-uri.png)
+   > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="管理中心门户中的 OMA URI Microsoft Endpoint Manager OMA URI 配置" lightbox="images/mem05-add-row-oma-uri.png":::
 
 6. 选择“保存”。 **添加行** 关闭。 在 **"自定义"** 中，选择"下一 **步"**。 在步骤 **3 范围标记中**，范围标记是可选的。 执行下列操作之一：
 
@@ -207,7 +209,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    - **添加所有设备**
 
    > [!div class="mx-imgBorder"]
-   > ![MEM 分配。](images/mem06-4-assignments.png)
+   > :::image type="content" source="images/mem06-4-assignments.png" alt-text="管理中心门户Microsoft Endpoint Manager作业" lightbox="images/mem06-4-assignments.png":::
 
 8. 在 **"已排除的** 组"中，选择要从此规则中排除的任何组，然后选择"下一步 **"**。
 
@@ -218,12 +220,12 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    - 在 **"值**"中，输入适用的值或值范围
 
    > [!div class="mx-imgBorder"]
-   > ![MEM 适用性规则。](images/mem07-5-applicability-rules.png)
+   > :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="管理中心门户Microsoft Endpoint Manager适用性规则" lightbox="images/mem07-5-applicability-rules.png":::
 
-10. 选择“**下一步**”。 在" **步骤 6 查看 + 创建**"中，查看已选择和输入的设置和信息，然后选择"创建 **"**。
+10. 选择 **下一步**。 在" **步骤 6 查看 + 创建**"中，查看已选择和输入的设置和信息，然后选择"创建 **"**。
 
     > [!div class="mx-imgBorder"]
-    > ![MEM 审阅并创建。](images/mem08-6-review-create.png)
+    > :::image type="content" source="images/mem08-6-review-create.png" alt-text="管理中心门户中的&quot;查看Microsoft Endpoint Manager创建&quot;选项" lightbox="images/mem08-6-review-create.png":::
 
     > [!NOTE]
     > 规则处于活动状态，且数分钟内有效。
@@ -295,7 +297,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    - 2：审核 (评估 ASR 规则在启用后对组织) 
    - 6： (启用 ASR 规则，但允许最终用户绕过阻止) 
 
-   :::image type="content" source="images/asr-rules-gp.png" alt-text="组策略中的 ASR 规则。":::
+   :::image type="content" source="images/asr-rules-gp.png" alt-text="组策略中的 ASR 规则" lightbox="images/asr-rules-gp.png":::
 
 5. 若要从 ASR 规则中排除文件和文件夹，请选择"从攻击 **面** 减少规则中排除文件和路径"设置，并设置该选项为 **"已启用"**。 选择 **"显示** "，在"值名称"列中 **输入每个文件或** 文件夹。 在 **"值** " **列中为** 每个项目输入 0。
 
@@ -310,7 +312,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 > 下图显示了"用户定义"选项设置。
 
 > [!div class="mx-imgBorder"]
-> ![ASR 启用"用户定义"](images/asr-user-defined.png)
+> :::image type="content" source="images/asr-user-defined.png" alt-text="凭据安全性的&quot;启用&quot;选项" lightbox="images/asr-user-defined.png":::
 
 1. 在 **"管理"中"开始"菜单 powershell**，右 **键单击"** Windows PowerShell并选择"以 **管理员角色运行"**。
 
