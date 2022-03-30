@@ -6,7 +6,7 @@ ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 关于合规性解决方案试用版。
-ms.openlocfilehash: 8cfa95b5998d78a2128e2e99ac6b23babf11f3ff
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 247080c374cd99c93e538e46ed0894ad24e501cd
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271786"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679821"
 ---
 # <a name="about-the-compliance-solutions-trial"></a>关于合规性解决方案试用版
 
@@ -53,7 +53,7 @@ Microsoft 365 合规性解决方案试用版是尝试 Microsoft 合规性解决�
 
 管理员可以通过转到合规性卡片来随时禁用试用。
 
-如果决定不注册属于合规性解决方案试用版一部分的某一功能，除非该解决方案另有说明，否则在永久删除之前，试用数据将保留一段时间（通常为 180 天）。 在该时间之前，你可以继续访问在试用期间收集的数据。
+如果决定不注册作为合规性解决方案试用版一部分的功能，除非对解决方案另有说明，否则在永久删除之前，试用数据将保留一段时间（通常为 180 天）。在此之前，你可以继续访问试用期间收集的数据。
 
 ## <a name="availability"></a>可用性
 
@@ -69,7 +69,7 @@ Microsoft 365 合规性解决方案试用版将逐步向满足特定条件（包
 
 - **通信合规性**
 
-  通信合规性可帮助你克服与内部和外部通信相关的新式合规性挑战，方法是帮助你自动捕获不适当的消息、调查可能的策略冲突，并采取措施进行修正。 详细了解 [通信合规性](communication-compliance.md)
+  通信合规性可帮助你克服与内部和外部通信相关的新式合规性挑战，方法是帮助你自动捕获不适当的消息、调查可能的策略冲突，并采取措施进行修正。详细了解 [通信合规性](communication-compliance.md)
 
 - **合规性管理器**
 

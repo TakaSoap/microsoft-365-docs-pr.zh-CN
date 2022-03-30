@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: 61d262c04d4a304506bc521d155be71f81d219ca
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: f402df53c19da78435e22717577b351fc302d0f4
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468756"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679953"
 ---
 # <a name="get-started-with-content-explorer"></a>内容资源管理器入门
 
@@ -34,15 +34,7 @@ ms.locfileid: "63468756"
 
 ## <a name="prerequisites"></a>先决条件
 
-访问和使用数据分类的每个帐户，都必须拥有从以下其中一个订阅向其分配的许可证：
-
-- Microsoft 365 (E5)
-- Office 365 (E5)
-- 高级合规性（E5）加载项
-- 高级威胁智能（E5）加载项
-- Microsoft 365 E5/A5 信息保护和管控
-- Microsoft 365 E5/A5 合规
-
+有关许可要求，请参阅[信息保护：数据分类分析：通过内容和活动资源管理器](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
 
 ### <a name="permissions"></a>权限
 

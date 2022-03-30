@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 合规中心解决方案试用版 playbook。
-ms.openlocfilehash: 896e3fe81c74cc2a594ab88807e0b9505fed1a18
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: e0d48ba9c4a5ca50869b64d6312fe845ef9bf50c
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754244"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679887"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>试用版 playbook: Microsoft 365 合规中心解决方案
 
@@ -434,6 +434,6 @@ ms.locfileid: "63754244"
 
 **包含的内容**: 有关产品层列出的 Microsoft 365 合规中心解决方案和功能的完整列表，请查看 [功能矩阵](https://go.microsoft.com/fwlink/?linkid=2139145)。
 
-**Microsoft 安全技术内容库**: 浏览此库以查找与你的需求相关的交互式指南和其他学习内容。[访问库](/security)。
+**Microsoft 安全技术内容库**: 浏览此库以查找与你的需求相关的交互式指南和其他学习内容。[访问库](/security/content-library)。
 
 **Microsoft 安全资源**: 从反恶意软件到零信任，获取所有满足组织安全需求的相关资源。[访问资源](/security/business/resources)。

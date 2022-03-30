@@ -7,21 +7,21 @@ metadata:
   ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: 开放计划联机服务激活常见问题解答
-  ms.openlocfilehash: e6175dddb97d1a752e64c6264d5d8cdd66f35bf6
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: d123714434896c559473769af30106833db83eb0
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63317230"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63679975"
 title: 开放计划联机服务激活常见问题解答
 summary: ''
 sections:
-- name: 常规
+- name: 一般信息
   questions:
   - question: >
       如何激活通过开放计划购买的联机服务 (开放、开放式值和开放式价值订阅) ？

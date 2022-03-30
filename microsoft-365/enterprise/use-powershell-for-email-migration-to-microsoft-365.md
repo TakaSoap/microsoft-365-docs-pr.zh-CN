@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 search.appverid:
@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: 了解如何使用 PowerShell 将电子邮件从现有系统Microsoft 365迁移至电子邮件。
-ms.openlocfilehash: e23f528b846f23877a08cc9b26d0985f03c3490d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4b578057a4e95d1fb835c819d547fc93a970f5f2
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201561"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675275"
 ---
 # <a name="how-to-use-powershell-to-migrate-email-to-microsoft-365"></a>如何使用 PowerShell 将电子邮件迁移到Microsoft 365
 
@@ -41,7 +41,7 @@ ms.locfileid: "60201561"
   
 [PowerShell for Microsoft 365 入门](getting-started-with-microsoft-365-powershell.md)
   
-[使用 PowerShell SharePoint管理部署](manage-sharepoint-online-with-microsoft-365-powershell.md)
+[使用 PowerShell SharePoint管理服务](manage-sharepoint-online-with-microsoft-365-powershell.md)
   
 [使用 Windows PowerShell 在 Microsoft 365 中创建报告](use-windows-powershell-to-create-reports-in-microsoft-365.md)
 

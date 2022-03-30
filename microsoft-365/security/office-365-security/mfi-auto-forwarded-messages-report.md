@@ -9,15 +9,16 @@ audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: 管理员可以在安全与合规中心的"邮件流"仪表板中了解&转发的邮件报告。
+description: 管理员可以在安全与合规中心的邮件流仪表板中了解自动转发&报告。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 734a072e23ecd77bcf1dd328c9c952387ba65c52
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 05ad934fbc7736c0cfbb86f7411a2ca73705112f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174263"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680151"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>安全与合规中心中的自动转发&见解
 
@@ -28,7 +29,7 @@ ms.locfileid: "60174263"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全 &**与** 合规中心的"邮件流 [](mail-flow-insights-v2.md)["](https://protection.office.com)仪表板中的"自动转发邮件"见解显示有关从组织自动转发给外部域中收件人的邮件的信息。
+安全 &**与** 合规中心的"邮件流 ["](https://protection.office.com)仪表板中的"自动转发邮件"见解显示有关从组织自动转发给外部域中收件人的邮件的信息。[](mail-flow-insights-v2.md)
 
 ![安全与合规中心中的"自动转发&小组件。](../../media/mfi-auto-forwarded-messages.png)
 
@@ -43,7 +44,7 @@ ms.locfileid: "60174263"
   - **通过 SMTP 转发**：此方法指示管理员可以在邮箱上配置的自动转发，如为邮箱配置 [电子邮件转发中所述](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)。
   - 指向转发 [报告的链接，](view-mail-flow-reports.md#forwarding-report) 了解更多详细信息。
 
-- **由域和用户自动转发的邮件**：
+- **域和用户自动转发的邮件**：
 
   - **转发到的前 5 个域**
   - **上周 (新域)**
